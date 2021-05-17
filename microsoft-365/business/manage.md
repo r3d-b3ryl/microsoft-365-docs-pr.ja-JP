@@ -1,5 +1,5 @@
 ---
-title: ビジネス向け Microsoft 365 の管理
+title: ビジネスMicrosoft 365を管理する
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: ビジネス関連の管理タスク、モバイル デバイス、Windows 10 PC、および多くのそのようなタスクの Microsoft 365 の管理について説明します。
+description: ビジネス関連の管理Microsoft 365、モバイル デバイス、PC、および多くのそのようなタスクWindows 10管理する方法について説明します。
 ms.openlocfilehash: 0ad2326bdcc785c0d8d1a52dee74187cdc1668e7
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -29,25 +29,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578369"
 ---
-# <a name="manage-microsoft-365-for-business"></a>ビジネス向け Microsoft 365 の管理
+# <a name="manage-microsoft-365-for-business"></a>ビジネスMicrosoft 365を管理する
 
-## <a name="general-microsoft-365-for-business-admin-tasks"></a>ビジネス管理者タスクの一般的な Microsoft 365
+## <a name="general-microsoft-365-for-business-admin-tasks"></a>ビジネスMicrosoft 365タスクの一般的な説明
 
-Microsoft 365 の管理者Officeは、ビジネス向け Microsoft 365 にも適用されます。 [](/office365/admin/admin-home)
+管理者向け[コンテンツの大部分](/office365/admin/admin-home)Office 365ビジネス向けMicrosoft 365適用されます。
 
-- [ビジネス向け Microsoft 365 にユーザーを追加する](../admin/add-users/add-users.md)
+- [ビジネス向けアプリにユーザー Microsoft 365追加する](../admin/add-users/add-users.md)
     
 - [ポリシーとデバイスの表示](view-policies-and-devices.md)
     
-- [Microsoft 365 for business security features](security-features.md)
+- [Microsoft 365セキュリティ機能の詳細](security-features.md)
     
-- [Microsoft 365 for business map to Intune 設定の保護機能の方法](map-protection-features-to-intune-settings.md)
+- [Intune の設定にビジネス マップMicrosoft 365保護機能を使用する方法](map-protection-features-to-intune-settings.md)
     
-Pc とモバイル デバイスで組織のデータを保護するために Microsoft 365 for business を使用する方法については、以下のセクションを参照してください。
+PC とモバイル デバイスで組織のデータを保護するためにビジネスMicrosoft 365を使用する方法については、以下のセクションを参照してください。
   
 ## <a name="manage-mobile-devices"></a>モバイル デバイスの管理
 
-- [ビジネス ユーザー向け Microsoft 365 用のモバイル デバイスのセットアップ](set-up-mobile-devices.md)
+- [ビジネス ユーザー向けモバイル Microsoft 365を設定する](set-up-mobile-devices.md)
     
 - [Android または iOS デバイスのアプリ保護設定を設定する](app-protection-settings-for-android-and-ios.md)
     
@@ -57,17 +57,17 @@ Pc とモバイル デバイスで組織のデータを保護するために Mic
     
 ## <a name="manage-windows-10-pcs"></a>Windows 10 PC の管理
 
-- [ビジネス ユーザー向け Microsoft 365 用の Windows デバイスのセットアップ](set-up-windows-devices.md)
+- [ビジネス ユーザー WindowsデバイスMicrosoft 365設定する](set-up-windows-devices.md)
 
-    自動 [インストールする前Office Microsoft 365 for business](prepare-for-office-client-deployment.md) によるクライアント展開の準備を参照Office。 
+    自動[インストールする前Officeビジネス](prepare-for-office-client-deployment.md)向けMicrosoft 365クライアント展開の準備」を参照Office。 
     
 - [Windows 10 デバイスのデバイス保護設定を設定する](protection-settings-for-windows-10-pcs.md)
     
-    これが機能した場合は [、「Windows 10 デバイスのデバイス保護設定](validate-settings-on-windows-10-pcs.md)を検証する」を参照してください。 
+    これが機能した場合は、「デバイスの保護設定を検証[する」を参照Windows 10してください](validate-settings-on-windows-10-pcs.md)。 
     
 - [Windows 10 デバイスのアプリケーション保護設定を設定する](protection-settings-for-windows-10-devices.md)
     
-    これが機能した場合は [、「Windows 10 PC](validate-protection-settings-on-windows-10-pcs.md)でのアプリ保護設定の検証」を参照してください。 
+    これが機能したと確認するには、「アプリの保護設定を検証する」を参照[Windows 10してください](validate-protection-settings-on-windows-10-pcs.md)。 
     
 - [デバイスから会社のデータを削除する](remove-company-data.md)
     
@@ -75,7 +75,7 @@ Pc とモバイル デバイスで組織のデータを保護するために Mic
     
 ### <a name="use-autopilot-to-deploy-windows-10-devices"></a>AutoPilot を使用し、Windows 10 デバイスを展開する
 
-次のトピックでは、Microsoft 365 for business で Windows AutoPilot を使用して Windows 10 デバイスを事前構成する方法について説明します。
+次のトピックでは、ビジネスで autoPilot Windowsを使用してMicrosoft 365デバイスを事前Windows 10します。
   
 - [ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する](add-autopilot-devices-and-profile.md)
     
@@ -91,12 +91,12 @@ Pc とモバイル デバイスで組織のデータを保護するために Mic
     
 ## <a name="set-up-and-prerequisite-information"></a>セットアップと前提条件の情報
 
-- [Microsoft 365 for business を使用してデバイス上のデータを保護するための前提条件](pre-requisites-for-data-protection.md)
+- [ビジネス向けデバイスでデータを保護するためのMicrosoft 365前提条件](pre-requisites-for-data-protection.md)
     
-- [セットアップ ウィザードを使用して Microsoft 365 for business をセットアップする](set-up.md)
+- [セットアップ ウィザードMicrosoft 365を使用してビジネス向けアプリをセットアップする](set-up.md)
     
-- [ビジネス向け Microsoft 365 への移行](migrate-to-microsoft-365-business.md)
+- [ビジネス向Microsoft 365に移行する](migrate-to-microsoft-365-business.md)
     
-- [ドメインに参加している Windows 10 デバイスをビジネス向け Microsoft 365 で管理可能にする](manage-windows-devices.md)
+- [ドメインに参加しているデバイスWindows 10、ビジネス向けドメインにMicrosoft 365有効にする](manage-windows-devices.md)
     
 - [その他のセキュリティ機能](security-features.md#additional-security-features)

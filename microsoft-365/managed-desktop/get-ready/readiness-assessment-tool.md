@@ -48,7 +48,7 @@ Microsoft Managed Desktop に登録する際に、可能な限りスムーズな
 |ビジネス向け Microsoft Store     | Microsoft Store for Business が有効で Intune と同期されているのを確認する        |
 |多要素認証 | 多要素認証が Microsoft Managed Desktop サービス アカウントに適用されていないか確認します。
 |PowerShell スクリプト     | Microsoft 管理Windows PowerShellデバイス *を* 対象とする方法で、スクリプトが割り当てられていないか確認する    |
-|Region     | 地域が Microsoft Managed Desktop でサポートされているチェック        |
+|地域     | 地域が Microsoft Managed Desktop でサポートされているチェック        |
 |セキュリティベースライン     | セキュリティ 基準プロファイルがすべてのユーザーまたはすべてのデバイスを対象としていないか確認します (セキュリティ基準ポリシーは、Microsoft 管理デスクトップ デバイスを対象とすべきではありません)。       |
 |Windows アプリ     | Microsoft Managed Desktop デバイスに割り当てるアプリを確認する      |
 |Windows Hello for Business     | Windows Hello for Business が有効になっているか確認する        |
@@ -93,12 +93,12 @@ Microsoft Managed Desktop への登録が完了したら、Intune と Azure の�
 
 ## <a name="steps-to-get-ready"></a>準備の手順
 
-1. [Microsoft Managed Desktop の前提条件を確認します](prerequisites.md)。
-2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。 (この記事)
+1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
+2. [準備状況の評価ツール](readiness-assessment-tool.md)を使用します。 (この記事)
 3. [ゲスト アカウントの前提条件](guest-accounts.md)
 4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
 5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
-6. [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](authentication.md)
+6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
 7. [Microsoft マネージド デスクトップのアプリ](apps.md)
 8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
 9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)

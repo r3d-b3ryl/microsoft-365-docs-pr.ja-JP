@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 用にネットワークをセットアップする
+title: ネットワークをセットアップMicrosoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: ネットワーク接続の概要やエンドポイントの一覧など、Microsoft 365 のネットワークのセットアップに役立つ情報が記載された記事へのリンクがあります。
+description: ネットワーク接続の概要やエンドポイントの一覧など、Microsoft 365の設定に役立つ情報を含む記事へのリンクを検索します。
 ms.openlocfilehash: f0e0499c70745d31399240372c190758285408aa
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -27,25 +27,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46691678"
 ---
-# <a name="set-up-your-network-for-microsoft-365"></a>Microsoft 365 用にネットワークをセットアップする
+# <a name="set-up-your-network-for-microsoft-365"></a>ネットワークをセットアップMicrosoft 365
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 オンボードの重要な部分は、ネットワークとインターネット接続が最適なアクセスのためにセットアップされていることを確認することです。 グローバルに分散されたソフトウェア (SaaS) クラウドにアクセスするようにオンプレミスネットワークを構成することは、社内データセンターへのトラフィック用に最適化された従来のネットワークや中央のインターネット接続とは異なります。 
+オンボーディングの重要なMicrosoft 365は、ネットワークとインターネット接続が最適化されたアクセス用にセットアップされている点です。 グローバルに分散された Software-as-a-Service (SaaS) クラウドにアクセスするためのオンプレミス ネットワークの構成は、オンプレミスデータセンターへのトラフィックと中央インターネット接続用に最適化された従来のネットワークとは異なります。 
 
 以下の記事を活用して主な違いを理解し、エッジ デバイス、クライアント コンピューター、オンプレミス ネットワークを変更して、オンプレミス ユーザーの最高のパフォーマンスを引き出します。
 
-## <a name="how-microsoft-365-networking-works"></a>Microsoft 365 ネットワークのしくみ
+## <a name="how-microsoft-365-networking-works"></a>ネットワークMicrosoft 365のしくみ
 
-Microsoft 365 の接続の概要については、次の記事を参照してください。
+次の記事を参照して、接続の概要を確認Microsoft 365。
 
 - [Microsoft 365 ネットワーク接続の概要](microsoft-365-networking-overview.md)
-- [Microsoft 365 ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)
+- [Microsoft 365接続の原則](microsoft-365-network-connectivity-principles.md)
 - [Microsoft 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
-パフォーマンスの向上に関するアドバイスについては、「 [Microsoft 365 のネットワーク計画とパフォーマンスチューニング](network-planning-and-performance.md)」を参照してください。
+パフォーマンスの向上に関するアドバイスについては、「ネットワークの計画とパフォーマンスの調整」[を参照Microsoft 365。](network-planning-and-performance.md)
 
-## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>ネットワーク機器ベンダーとしての Microsoft 365 ネットワークのサポート
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>ネットワークMicrosoft 365ベンダーとしてのネットワークのサポート
 
 ネットワーク機器業者のお客様は、[Office 365 ネットワーク パートナー プログラム](microsoft-365-networking-partner-program.md)にぜひご参加ください。ご参加いただくと、Office 365 のネットワーク接続の基本原則をお客様の会社の製品とソリューションに組み込んでいただけます。 
 
@@ -76,9 +76,9 @@ Office 365 クラウドのエンドポイントの最新の一覧を自動的に
 - [Office 2016 for Mac でのネットワーク要求](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-microsoft-365-networking"></a>Microsoft 365 ネットワークに関するその他のトピック
+## <a name="additional-topics-for-microsoft-365-networking"></a>ネットワークに関するMicrosoft 365トピック
 
-Microsoft 365 ネットワークの専門的なトピックについては、以下の記事を参照してください。
+ネットワークに関する特別なトピックについては、以下のMicrosoft 365参照してください。
 
 - [コンテンツ配信ネットワーク](content-delivery-networks.md)
 - [Office 365 サービスでの IPv6 サポート](ipv6-support.md)

@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Microsoft 365 for business を使用して、管理する Windows 10 デバイスを工場出荷時の状態にリセットし、購入時に元の設定に戻す方法について説明します。
+description: ビジネス向け Microsoft 365を使用して、管理Windows 10デバイスを工場出荷時の状態にリセットし、購入時に元の設定に戻す方法について学習します。
 ms.openlocfilehash: 29d5b8758ef7d86c7ac283460d0a1a87bffaf5f3
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,11 +33,11 @@ ms.locfileid: "51578209"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Windows 10 デバイスを出荷時の設定にリセットする
 
-この記事は、Microsoft 365 Business Premium に適用されます。
+この記事は、このMicrosoft 365 Business Premium。
 
-出荷時の設定にリセットは、デバイスを購入したときの元の設定にデバイスを戻します。 購入後にインストールしたデバイス上のすべてのアプリとデータが削除されます。 Microsoft 365 for business を使用して、管理する Windows 10 デバイスを工場出荷時の状態にリセットできます。
+出荷時の設定にリセットは、デバイスを購入したときの元の設定にデバイスを戻します。 購入後にインストールしたデバイス上のすべてのアプリとデータが削除されます。 管理するデバイスMicrosoft 365を出荷時Windows 10に使用できます。
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
     
 2. 左側のナビゲーションで、[デバイスの管理] **を** \> **選択します**。
 

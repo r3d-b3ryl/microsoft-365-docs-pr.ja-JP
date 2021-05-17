@@ -25,7 +25,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Microsoft 365 for Business アプリ保護設定がユーザーの Windows 10 デバイスに適用されたことを確認する方法について説明します。
+description: ビジネス アプリ保護の設定Microsoft 365ユーザーのデバイスに適用されたことを確認するWindows 10します。
 ms.openlocfilehash: fcb463fd98f692f7d4802689e0c03fe4e3e648a1
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,15 +37,15 @@ ms.locfileid: "51579844"
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Windows 10 デバイス ポリシーが設定されていることを確認する
 
-[デバイス ポリシーを設定](protection-settings-for-windows-10-pcs.md) した後は、ポリシーがユーザーのデバイスに影響を与えるまで最大で数時間かかる場合があります。 ユーザーのデバイス上でさまざまな Windows の設定画面を表示して、ポリシーが反映されていることを確認できます。 ユーザーは Windows Update を変更したり、Windows 10 デバイスWindows Defenderウイルス対策の設定を変更したりできないので、多くのオプションがグレー表示されます。
+[デバイス ポリシーを設定](protection-settings-for-windows-10-pcs.md) した後は、ポリシーがユーザーのデバイスに影響を与えるまで最大で数時間かかる場合があります。 ユーザーのデバイス上でさまざまな Windows の設定画面を表示して、ポリシーが反映されていることを確認できます。 ユーザーは Windows 10 デバイスの Windows Update と Windows Defender ウイルス対策 の設定を変更できないので、多くのオプションがグレー表示されます。
   
-1. [設定更新 \> **プログラムの &amp; セキュリティ]** \> **[Windows Update** \> **Restart] オプションに移動** し、すべての設定が灰色で表示されているのを確認します。 
+1. [セキュリティの **更新設定** 更新Windows]オプションに移動し、すべての設定が \> **&amp;** \>  \> 灰色で表示されているのを確認します。 
     
     ![[再起動] オプションはすべて灰色で表示されます。](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. [設定の \> **更新] &amp; セキュリティ** \> **の [Windows Update** \> **Advanced] オプションに移動** し、すべての設定がグレー表示に設定されているのを確認します。 
+2. [セキュリティの **設定** 更新Windows]オプションに移動し、すべての設定が灰色 \> **&amp;** \>  \> で表示されているのを確認します。 
     
-    ![Windows Advanced 更新プログラムのオプションはすべて灰色で表示されます。](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Windows詳細な更新プログラムのオプションはすべて灰色で表示されます。](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
@@ -59,12 +59,12 @@ ms.locfileid: "51579844"
     
     ![ウイルスと脅威の保護の設定は灰色で表示されます。](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-[Microsoft 365 for business のドキュメントとリソース](./index.yml)
+[Microsoft 365ドキュメントとリソースの詳細](./index.yml)
   
-[Microsoft 365 for business の使用を開始する](microsoft-365-business-overview.md)
+[ビジネス向けMicrosoft 365を開始する](microsoft-365-business-overview.md)
   
-[ビジネス向け Microsoft 365 の管理](manage.md)
+[ビジネスMicrosoft 365を管理する](manage.md)
   
 [Windows 10 の PC のデバイス構成を設定する](protection-settings-for-windows-10-pcs.md)

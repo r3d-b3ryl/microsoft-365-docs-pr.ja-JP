@@ -34,7 +34,7 @@ ms.locfileid: "52274810"
 Microsoft の次世代テクノロジは、Microsoft Defender ウイルス対策新しい脅威や新しい脅威に対して、ほぼ瞬時に自動化された保護を提供します。 新しい脅威を動的に識別するために、これらのテクノロジは、Microsoft インテリジェント セキュリティ グラフの相互接続された大量のデータおよび高度な機械学習モデルによって駆動される強力な人工知能 (AI) システムと連携します。  
 
 Microsoft Defender ウイルス対策は、複数の検出および防止テクノロジを使用して、正確でリアルタイムでインテリジェントな保護を提供します。 Microsoft Defender for Endpoint 次世代保護の中核となる高度なテクノロジ[を知る](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
-![Microsoft Defender AV エンジンの一覧](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+![Microsoft Defender AV エンジンのリスト](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 これらの次世代テクノロジのパワーとスピードを活用するために、Microsoft クラウド Microsoft Defender ウイルス対策シームレスに動作します。 Microsoft Advanced Protection Service (MAPS) とも呼ばれるこれらのクラウド保護サービスは、標準のリアルタイム保護を強化し、間違いなく最高のウイルス対策防御を提供します。 
 

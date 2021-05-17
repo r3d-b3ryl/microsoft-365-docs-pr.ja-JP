@@ -18,7 +18,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender for microsoft Defender for Officeできます。
+description: 管理者は、フィッシング対策の保護機能について、Exchange Online Protection (EOP) と Microsoft Defender for Office 365。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: a100e28ddee1629b2fe35e28742a43b891d13e57
@@ -28,7 +28,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51570614"
 ---
-# <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 のフィッシング対策保護
+# <a name="anti-phishing-protection-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,21 +37,21 @@ ms.locfileid: "51570614"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-*フィッシング* は、正当または信頼された送信者から送られたように見えるメッセージで、機密情報を盗もうとする電子メール攻撃です。 フィッシングには特定のカテゴリがあります。 例:
+*フィッシング* は、正当または信頼された送信者から送られたように見えるメッセージで、機密情報を盗もうとする電子メール攻撃です。 フィッシングには特定のカテゴリがあります。 以下に例を示します。
 
 - **スピアフィッシング** では、対象となる受信者に合わせて特別にカスタマイズされた、フォーカスのあるカスタマイズされたコンテンツを使用します (通常、攻撃者による受信者の偵察後)。
 
 - **捕鯨は** 、組織内の幹部または他の高価値ターゲットに対して、最大限の効果を得る方向に向けられる。
 
-- ビジネス メール侵害 **(BEC)** は、偽造された信頼できる送信者 (財務担当者、顧客、信頼できるパートナーなど) を使用して、受信者をだまして支払いの承認、資金の転送、顧客データの公開を行います。 詳しくは、このビデオ [をご覧ください](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2)。
+- ビジネス メール侵害 **(BEC)** は、偽造された信頼できる送信者 (財務担当者、顧客、信頼できるパートナーなど) を使用して、受信者をだまして支払いの承認、資金の転送、顧客データの公開を行います。 [このビデオ](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2)を見て詳細をご確認ください。
 
-- **データ** を暗号化し、暗号化解除するための支払いを要求するランサムウェアは、ほとんどの場合、フィッシング メッセージから始まります。 フィッシング対策保護は、暗号化されたファイルの暗号化を解除するのに役立ちますが、ランサムウェア キャンペーンに関連付けられている最初のフィッシング メッセージを検出するのに役立ちます。 ランサムウェア攻撃からの回復の詳細については [、「Microsoft 365](recover-from-ransomware.md)のランサムウェア攻撃から回復する」を参照してください。
+- **データ** を暗号化し、暗号化解除するための支払いを要求するランサムウェアは、ほとんどの場合、フィッシング メッセージから始まります。 フィッシング対策保護は、暗号化されたファイルの暗号化を解除するのに役立ちますが、ランサムウェア キャンペーンに関連付けられている最初のフィッシング メッセージを検出するのに役立ちます。 ランサムウェア攻撃からの回復の詳細については、「ランサムウェア攻撃から回復する」を参照[Microsoft 365。](recover-from-ransomware.md)
 
-攻撃が複雑化する中、訓練を受けたユーザーが高度なフィッシング メッセージを識別することはさらに困難です。 幸いなことに、Exchange Online Protection (EOP) と Microsoft Defender for microsoft Defender for Office機能が役立ちます。
+攻撃が複雑化する中、訓練を受けたユーザーが高度なフィッシング メッセージを識別することはさらに困難です。 幸い、Exchange Online Protection (EOP) と Microsoft Defender for microsoft Defender の追加機能Office 365役立ちます。
 
 ## <a name="anti-phishing-protection-in-eop"></a>EOP のフィッシング対策保護
 
-EOP (つまり、Microsoft Defender Office 365 を使用しない Microsoft 365 組織) には、フィッシングの脅威から組織を保護するのに役立つ機能が含まれている。
+EOP (つまり、microsoft Defender Microsoft 365を使用しない組織Office 365) には、フィッシングの脅威から組織を保護するのに役立つ機能が含まれている。
 
 - **スプーフィング インテリジェンス**: 内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については [、「EOP でスプーフィング インテリジェンスを構成する」を参照してください](learn-about-spoof-intelligence.md)。
 
@@ -63,14 +63,14 @@ EOP (つまり、Microsoft Defender Office 365 を使用しない Microsoft 365 
 
 Microsoft Defender for Office 365 には、次のより高度なフィッシング対策機能が含まれています。
 
-- **microsoft Defender for Office 365** のフィッシング対策ポリシー: 新しいカスタム ポリシーを作成し、偽装対策設定 (偽装からユーザーとドメインを保護する)、メールボックス インテリジェンス設定、および調整可能な高度なフィッシングしきい値を構成します。 詳細については、「Configure anti-フィッシング ポリシー in [Microsoft Defender for Office 365」を参照してください](configure-atp-anti-phishing-policies.md)。 EOP のフィッシング対策ポリシーと defender for Office 365 のフィッシング対策ポリシーの違いの詳細については [、「Microsoft 365](set-up-anti-phishing-policies.md)のフィッシング対策ポリシー」を参照してください。
+- **microsoft Defender for Office 365 の** フィッシング対策ポリシー: 新しいカスタム ポリシーの作成、偽装対策設定の構成 (ユーザーとドメインの偽装からの保護)、メールボックス インテリジェンス設定、および高度なフィッシングの高度なしきい値の調整が可能です。 詳細については[、「Microsoft Defender でフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)を構成する」を参照Office 365。 EOP のフィッシング対策ポリシーと Office 365 用 Defender のフィッシング対策ポリシーの違いの詳細については、「Microsoft 365 のフィッシング対策ポリシー」[を参照してください](set-up-anti-phishing-policies.md)。
 
-- **キャンペーン ビュー**: 機械学習などのヒューリスティックは、サービス全体と組織に対する協調フィッシング攻撃に関連するメッセージを特定して分析します。 詳細については、「キャンペーン ビュー in [Microsoft Defender for microsoft Defender for Office 365」を参照してください](campaigns.md)。
+- **キャンペーン ビュー**: 機械学習などのヒューリスティックは、サービス全体と組織に対する協調フィッシング攻撃に関連するメッセージを特定して分析します。 詳細については[、「Microsoft Defender for microsoft Defender のキャンペーン ビュー」を参照Office 365。](campaigns.md)
 
-- **攻撃シミュレーター**: 管理者は、偽のフィッシング メッセージを作成し、教育ツールとして内部ユーザーに送信できます。 詳細については [、「Attack Simulator in Microsoft Defender for Office 365」を参照してください](attack-simulator.md)。
+- **攻撃シミュレーター**: 管理者は、偽のフィッシング メッセージを作成し、教育ツールとして内部ユーザーに送信できます。 詳細については[、「Attack Simulator in Microsoft Defender for microsoft Defender for Office 365」 を参照してください](attack-simulator.md)。
 
 ## <a name="other-anti-phishing-resources"></a>その他のフィッシング対策リソース
 
 - エンド ユーザーの場合: フィッシング詐欺などのオンライン詐欺から身 [を守ります](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593)。
 
-- [フィッシングを防止するために、Microsoft 365 が From アドレスを検証する方法](how-office-365-validates-the-from-address.md)。
+- [フィッシングMicrosoft 365防止するために From アドレスを](how-office-365-validates-the-from-address.md)検証する方法。

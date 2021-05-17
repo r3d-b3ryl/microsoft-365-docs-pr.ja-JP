@@ -86,4 +86,4 @@ MpCmdRun.exe -Scan -ScanType 2
 - [Microsoft Defender ウイルス対策機能を構成する](configure-microsoft-defender-antivirus-features.md)
 - [ビジネスMicrosoft Defender ウイルス対策管理する](configuration-management-reference-microsoft-defender-antivirus.md)
 - [管理および構成ツールのリファレンス トピック](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

@@ -35,17 +35,17 @@ ms.locfileid: "52274882"
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
 
-Microsoft Defender for Endpoint エージェントは、ファイルスキャンなどの一部の機能について Microsoft Defender ウイルス対策に依存します。
+Microsoft Defender for Endpoint エージェントは、ファイルMicrosoft Defender ウイルス対策機能の種類によって異なります。
 
 >[!IMPORTANT]
->エンドポイントの Defender は、Microsoft Defender ウイルス対策の除外設定に従う必要があります。 
+>エンドポイントの Defender は、[除外] のMicrosoft Defender ウイルス対策に従う必要があります。 
 
-Microsoft Defender ウイルス対策がアクティブなマルウェア対策かどうかに関して、Defender for Endpoint デバイスでセキュリティ インテリジェンス更新プログラムを構成する必要があります。 詳細については [、「Manage Microsoft Defender Antivirus updates and apply baselines」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md)。
+Defender for Endpoint デバイスでセキュリティ インテリジェンスの更新プログラムを構成する必要があります。Microsoft Defender ウイルス対策がアクティブなマルウェア対策であるかどうかを指定します。 詳細については、「更新プログラムの[管理と基準Microsoft Defender ウイルス対策適用する」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md)。
 
-オンボードデバイスがサードパーティのマルウェア対策クライアントによって保護されている場合、そのエンドポイントの Microsoft Defender Antivirus はパッシブ モードになります。
+オンボードデバイスがサードパーティのマルウェア対策クライアントによって保護されている場合、そのエンドポイントのMicrosoft Defender ウイルス対策はパッシブ モードになります。
 
-Microsoft Defender ウイルス対策は引き続き更新プログラムを受け取り *、mspeng.exe* プロセスは実行中のサービスとして表示されますが、スキャンは実行されません。実行中のサードパーティのマルウェア対策クライアントは置き換えされません。
+Microsoft Defender ウイルス対策は更新プログラムを受信し続け *、mspeng.exe* プロセスは実行中のサービスとして表示されますが、スキャンは実行されません。実行中のサードパーティのマルウェア対策クライアントは置き換えされません。
 
-Microsoft Defender ウイルス対策インターフェイスは無効になり、デバイス上のユーザーは Microsoft Defender ウイルス対策を使用してオンデマンド スキャンを実行したり、ほとんどのオプションを構成したりできなくなります。
+インターフェイスMicrosoft Defender ウイルス対策無効になり、デバイス上のユーザーはオンデマンド スキャンを実行したり、ほとんどのオプションを構成したりするために Microsoft Defender ウイルス対策を使用できなくなります。
 
-詳細については、「Microsoft Defender Antivirus and Defender for Endpoint の互換性」 [を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+詳細については、「エンドポイントの互換性」Microsoft Defender ウイルス対策[Defender のトピックを参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。

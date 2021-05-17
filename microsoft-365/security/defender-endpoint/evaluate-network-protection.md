@@ -39,7 +39,7 @@ ms.locfileid: "51570926"
 
 監査モードでネットワーク保護を有効にして、ブロックされた IP アドレスとドメインを確認します。 業務用アプリに影響を与えなかったり、ブロックが発生する頻度を確認できます。
 
-1. [ **スタート] メニューに「powershell」** と入力し、[管理者 **Windows PowerShellを右** クリックし、[管理者として **実行] を選択します。**
+1. [**スタート] メニューに「powershell」** と入力し、[管理者 **Windows PowerShellを右** クリックし、[管理者として **実行] を選択します。**
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
@@ -54,9 +54,9 @@ ms.locfileid: "51570926"
 
 ネットワーク接続が許可され、テスト メッセージが表示されます。
 
-![[接続がブロックされました] という通知の例: IT 管理者が Windows Security でこのネットワーク接続をブロックしました。 IT ヘルプ デスクにお問い合わせください。](/microsoft-365/security/defender-endpoint/images/np-notif)
+![[接続がブロックされました] という通知の例: IT 管理者が、このネットワークWindows セキュリティをブロックする原因になります。 IT ヘルプ デスクにお問い合わせください。](/microsoft-365/security/defender-endpoint/images/np-notif)
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Windows イベント ビューアーでネットワーク保護イベントを確認する
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>イベント ビューアーでネットワーク保護イベントWindows確認する
 
 ブロックされているアプリを確認するには、Microsoft-Windows-Windows-Defender/Operational ログでイベント ビューアーを開き、イベント ID 1125 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
 

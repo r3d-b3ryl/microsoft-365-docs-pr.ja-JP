@@ -98,12 +98,12 @@ ms.locfileid: "52274690"
 
 ### <a name="use-group-policy-to-schedule-scans"></a>グループ ポリシーを使用してスキャンをスケジュールする
 
-|Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
+|場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 |スキャン | スケジュールされたスキャンに使用するスキャンの種類を指定する | クイック スキャン |
 |スキャン | スケジュールされたスキャンを実行する週の日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
 |スキャン | スケジュールされたスキャンを実行する時刻を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
-|ルート | スケジュールされたタスク時間をランダム化する |このMicrosoft Defender ウイルス対策、スキャンの開始時刻を 0 ~ 4 時間の任意の間隔にランダム化します。 <p>[SCEP では](/mem/intune/protect/certificates-scep-configure)、スキャンを任意の間隔にプラスまたはマイナス 30 分にランダム化します。 これは、仮想マシンまたは VDI 展開で役立ちます。 | 有効 |
+|ルート | スケジュールされたタスク時間をランダム化する |このMicrosoft Defender ウイルス対策、スキャンの開始時刻を 0 ~ 4 時間の任意の間隔にランダム化します。 <p>[SCEP では](/mem/intune/protect/certificates-scep-configure)、スキャンを任意の間隔にプラスまたはマイナス 30 分にランダム化します。 これは、仮想マシンまたは VDI 展開で役立ちます。 | Enabled |
 
 
 ### <a name="use-powershell-cmdlets-to-schedule-scans"></a>PowerShell コマンドレットを使用してスキャンをスケジュールする
@@ -143,9 +143,9 @@ RandomizeScheduleTaskTimes
 
 ### <a name="use-group-policy-to-schedule-scans"></a>グループ ポリシーを使用してスキャンをスケジュールする
 
-|Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
+|場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
-|スキャン | コンピューターがオンで、使用されていない場合にのみ、スケジュールされたスキャンを開始する | コンピューターがオンで使用されていない場合、スケジュールされたスキャンは実行されません。 | 有効 |
+|スキャン | コンピューターがオンで、使用されていない場合にのみ、スケジュールされたスキャンを開始する | コンピューターがオンで使用されていない場合、スケジュールされたスキャンは実行されません。 | Enabled |
 
 ### <a name="use-powershell-cmdlets"></a>PowerShell コマンドレットの使用
 
@@ -155,7 +155,7 @@ RandomizeScheduleTaskTimes
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-詳細については[、「Use PowerShell コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)使用して、PowerShell コマンドレットと Defender コマンドレットを構成Microsoft Defender ウイルス対策実行する」[を参照してください](/powershell/module/defender/)。
+詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender コマンドレット](/powershell/module/defender/)」を参照してください。
 
 ### <a name="use-windows-management-instruction-wmi"></a>管理Windows使用 (WMI)
 
@@ -174,7 +174,7 @@ API と許可パラメーターの詳細については[、「WMIv2 API](/previo
 
 ### <a name="use-group-policy-to-schedule-remediation-required-scans"></a>グループ ポリシーを使用して修復に必要なスキャンをスケジュールする
 
-| Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
+| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |---|---|---|---|
 |修復 | スケジュールされたフル スキャンを実行して修復を完了する日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
 |修復 | スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
@@ -208,7 +208,7 @@ RemediationScheduleTime
 
 ### <a name="use-group-policy-to-schedule-daily-scans"></a>グループ ポリシーを使用して毎日のスキャンをスケジュールする
 
-|Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
+|場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 |スキャン | 1 日あたりのクイック スキャンを実行する間隔を指定する | 次のクイック スキャンの前に経過する時間を指定します。 たとえば、2 時間ごとに実行するには **、「2」と入力し、1** 日 1 回は **24 と入力します**。 **0 と入力** すると、毎日のクイック スキャンは実行されません。 | Never |
 |スキャン | 毎日のクイック スキャンの時間を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
@@ -240,9 +240,9 @@ ScanScheduleQuickScanTime
 
 ### <a name="use-group-policy-to-schedule-scans-after-protection-updates"></a>グループ ポリシーを使用して保護の更新後にスキャンをスケジュールする
 
-|Location | Setting | 説明 | 既定の設定 (構成されていない場合)|
+|場所 | Setting | 説明 | 既定の設定 (構成されていない場合)|
 |:---|:---|:---|:---|
-|署名の更新 | セキュリティ インテリジェンスの更新後にスキャンを有効にする | 新しい保護更新プログラムがダウンロードされた直後にスキャンが実行されます | 有効 |
+|署名の更新 | セキュリティ インテリジェンスの更新後にスキャンを有効にする | 新しい保護更新プログラムがダウンロードされた直後にスキャンが実行されます | Enabled |
 
 ## <a name="see-also"></a>関連項目
 
@@ -251,4 +251,4 @@ ScanScheduleQuickScanTime
 - [Microsoft Defender ウイルス対策スキャン オプションを構成する](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [保護更新プログラムをダウンロードして適用する場合の管理](manage-protection-update-schedule-microsoft-defender-antivirus.md) 
-- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

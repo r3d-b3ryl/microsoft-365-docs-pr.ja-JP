@@ -62,7 +62,7 @@ PowerShell コマンドレットと WMI を使用して、リストの確認な�
 
 ### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>指定Microsoft Intuneによって開いたファイルをスキャンから除外するには、次のコマンドを使用します。
 
-詳細[については、「デバイス制限](/intune/device-restrictions-configure)設定の構成」を参照Microsoft Intune Intune Microsoft Defender ウイルス対策デバイス制限設定Windows 10[デバイス](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)制限設定を参照してください。
+詳細については、「[Microsoft Intune でデバイスの制限設定を構成する](/intune/device-restrictions-configure)」および「[Intune での Windows 10 の Microsoft Defender ウイルス対策デバイス制限設定](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)」を参照してください。
 
 ### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>指定Microsoft エンドポイント マネージャーによって開いたファイルをスキャンから除外するには、次のコマンドを使用します。
 
@@ -191,4 +191,4 @@ PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-a
 - [サーバー Microsoft Defender ウイルス対策の除外をWindowsする](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [除外を定義する際に避ける必要のある一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [スキャンと修復の結果をカスタマイズ、開始Microsoft Defender ウイルス対策確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

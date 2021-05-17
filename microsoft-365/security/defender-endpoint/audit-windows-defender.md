@@ -34,16 +34,16 @@ ms.locfileid: "51570974"
 
 組織での機能の動作をテストするときに、監査モードを有効にできます。 これにより、一行のアプリが影響を受けずに行うのに役立ちます。 また、一定の期間に発生する疑わしいファイル変更の試行回数を確認できます。
 
-この機能は、アプリ、スクリプト、またはファイルが変更されるのをブロックまたは防止できません。 ただし、Windows イベント ログは、機能が完全に有効になっているかのようにイベントを記録します。 監査モードでは、イベント ログを確認して、機能が有効な場合にどのような影響を与えたかを確認できます。
+この機能は、アプリ、スクリプト、またはファイルが変更されるのをブロックまたは防止できません。 ただし、イベント ログWindows機能が完全に有効になっている場合と同様にイベントが記録されます。 監査モードでは、イベント ログを確認して、機能が有効な場合にどのような影響を与えたかを確認できます。
 
-監査されたエントリを見つけるには **、「Applications and Services** Microsoft Windows Windows Defender  >    >    >  」**を**  >  **参照してください**。
+監査されたエントリを見つけるには、「Applications and Services Microsoft **Windows Windows Defender**  >    >    >    >  **します**。
 
 Defender for Endpoint を使用すると、特に攻撃表面の縮小ルールを調査するために、各イベントの詳細を取得できます。 Defender for Endpoint コンソールを使用すると、アラートタイムラインと調査シナリオの一部として問題 [を調査できます](investigate-alerts.md)。
 
 グループ ポリシー、PowerShell、および構成サービス プロバイダー (CSP) を使用して監査モードを有効にできます。
 
 > [!TIP]
-> また、テストグラウンドの [Windows Defenderにアクセス](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) して demo.wd.microsoft.com 機能を確認し、機能の動作を確認できます。
+> また、テストグラウンドのWindows Defenderに[アクセスして](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)demo.wd.microsoft.com 機能を確認し、機能の動作を確認できます。
 
  **監査オプション** | **監査モードを有効にする方法** | **イベントを表示する方法**
 |---------|---------|---------|

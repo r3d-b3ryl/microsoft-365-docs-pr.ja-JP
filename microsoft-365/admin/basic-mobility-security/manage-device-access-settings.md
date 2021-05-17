@@ -1,5 +1,5 @@
 ---
-title: Basic Mobility and Security でのデバイス アクセス設定の管理
+title: Basic Mobility and Security のデバイス アクセス設定を管理する
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,25 +25,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 01/15/2021
 ms.locfileid: "49876950"
 ---
-# <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Basic Mobility and Security でのデバイス アクセス設定の管理
+# <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Basic Mobility and Security のデバイス アクセス設定を管理する
 
-Basic Mobility and Security を使用している場合は、Basic Mobility and Security で管理できないデバイスがある可能性があります。 その場合は、Basic Mobility and Security Exchange ActiveSyncサポートされていないモバイル デバイスの Microsoft 365 メールへのアプリアクセスをブロックする必要があります。 これにより、より多くのデバイス間で組織の情報をセキュリティで保護できます。
+Basic Mobility and Security を使用している場合は、Basic Mobility and Security では管理できないデバイスがある可能性があります。 その場合は、基本モビリティとセキュリティExchange ActiveSyncサポートされていないモバイル デバイスMicrosoft 365メールへのアプリアクセスをブロックする必要があります。 これにより、より多くのデバイスで組織の情報をセキュリティで保護できます。
 
 次の手順を使用します。
 
-1. グローバル管理者アカウントで Microsoft 365 にサインインします。
+1. グローバル管理者アカウントMicrosoft 365にサインインします。
 
-2. ブラウザーで、次のコマンドを入力します  [https://protection.office.com](https://protection.office.com/) 。    
+2. ブラウザーで、次と入力します  [https://protection.office.com](https://protection.office.com/) 。    
 
     >[!IMPORTANT]
-    >Microsoft 365 Business Standard の Basic Mobility and Security を初めて使用する場合は、「基本セキュリティとモビリティをアクティブ化する」でライセンス認証 [します](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。 ライセンスをアクティブ化した後、Office [365 Security & Compliance を使用してデバイスを管理します](https://protection.office.com/)。
+    >基本モビリティとセキュリティを初めて使用する場合は、Microsoft 365 Business Standardセキュリティとモビリティのライセンス認証を[行います](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。 ライセンスをアクティブ化した後、コンプライアンスに関するセキュリティ Office 365[を&します](https://protection.office.com/)。
 
-3. [データ損失防止] > **デバイス管理デバイス** ポリシーに移動し、[組織全体のデバイス アクセス設定の管理]   >  **** **を選択します**。
+3. [デバイス管理デバイス ポリシー>データ損失防止 **]** に移動し、[組織全体のデバイス アクセス設定の管理   >  **** **] を選択します**。
 
 4. [ブロック **] を選択します**。
 
     :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="[Basic Mobility and Security block access] チェック ボックス":::
 
-5. [保存] **を選択します**。
+5. [保存 **] を選択します**。
 
-Basic Mobility and Security がサポートするデバイスについては [、「Basic Mobility and Security の機能」を参照してください](capabilities.md)。
+Basic Mobility and Security がサポートするデバイスについては、「基本モビリティとセキュリティの機能」 [を参照してください](capabilities.md)。

@@ -1,8 +1,8 @@
 ---
-title: Windows Server で Microsoft Defender ウイルス対策の除外を構成する
+title: サーバー Microsoft Defender ウイルス対策の除外をWindowsする
 ms.reviewer: ''
 manager: dansimp
-description: Windows Server には、サーバーの役割に基づく自動除外が含まれます。 カスタム除外を追加できます。
+description: Windowsサーバーには、サーバーの役割に基づく自動除外が含まれます。 カスタム除外を追加できます。
 keywords: 除外、サーバー、自動除外、自動、カスタム、スキャン、Microsoft Defender ウイルス対策
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274762"
 ---
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Windows Server で Microsoft Defender ウイルス対策の除外を構成する
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策の除外をWindowsする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "52274762"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Windows Server 2016 および Windows Server 2019 の Microsoft Defender ウイルス対策は、指定したサーバーの役割で定義されている特定の除外に自動的に登録されます。 これらの除外は、Windows セキュリティ アプリに表示される標準の除外リスト [には表示されません](microsoft-defender-security-center-antivirus.md)。
+Microsoft Defender ウイルス対策サーバー 2019 Windows Server 2016および Windowsサーバー 2019 では、指定したサーバーの役割で定義されている特定の除外に自動的に登録されます。 これらの除外は、アプリに表示される標準の除外リスト[にはWindows セキュリティされません](microsoft-defender-security-center-antivirus.md)。
 
 > [!NOTE]
 > 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 フル/クイック スキャンまたはオンデマンド スキャンでは、自動除外は適用されません。
@@ -47,27 +47,27 @@ Windows Server 2016 および Windows Server 2019 の Microsoft Defender ウイ�
 - カスタム除外は、自動除外よりも優先されます。
 - 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 フル/クイック スキャンまたはオンデマンド スキャンでは、自動除外は適用されません。
 - カスタム除外と重複除外は、自動除外と競合しない。
-- Microsoft Defender ウイルス対策は、展開イメージのサービスと管理 (DISM) ツールを使用して、コンピューターにインストールされている役割を決定します。
+- Microsoft Defender ウイルス対策展開イメージのサービスと管理 (DISM) ツールを使用して、コンピューターにインストールされている役割を特定します。
 
 ## <a name="opt-out-of-automatic-exclusions"></a>自動除外をオプトアウトする
 
-Windows Server 2016 および Windows Server 2019 では、セキュリティ インテリジェンス更新プログラムによって提供される定義済みの除外は、役割または機能の既定のパスのみを除外します。 カスタム パスに役割または機能をインストールした場合、または一連の除外を手動で制御する場合は、セキュリティ インテリジェンス更新プログラムで配信される自動除外をオプトアウトしてください。 ただし、自動的に配信される除外は、Windows Server 2016 および 2019 の役割用に最適化されています。 除外 [リストを定義する前に、「除外を](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) 定義するための推奨事項」を参照してください。
+サーバー 2019 Windows Server 2016および Windowsでは、セキュリティ インテリジェンス更新プログラムによって提供される定義済みの除外は、役割または機能の既定のパスのみを除外します。 カスタム パスに役割または機能をインストールした場合、または一連の除外を手動で制御する場合は、セキュリティ インテリジェンス更新プログラムで配信される自動除外をオプトアウトしてください。 ただし、自動的に配信される除外は、2019 年と 2019 年Windows Server 2016に最適化されています。 除外 [リストを定義する前に、「除外を](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) 定義するための推奨事項」を参照してください。
 
 > [!WARNING]
-> 自動除外をオプトアウトすると、パフォーマンスに悪影響を及ぼすか、データが破損する可能性があります。 自動的に配信される除外は、Windows Server 2016 および Windows Server 2019 の役割に最適化されます。
+> 自動除外をオプトアウトすると、パフォーマンスに悪影響を及ぼすか、データが破損する可能性があります。 自動的に配信される除外は、サーバー 2019 Windows Server 2016およびWindowsに最適化されます。
 
 定義済みの除外は既定のパスのみを除外しますので、NTDS と SYSVOL を元のパスとは異なる別のドライブまたはパスに移動する場合は、ここでの情報[](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)を使用して手動で除外を追加する必要があります。 
 
 グループ ポリシー、PowerShell コマンドレット、および WMI を使用して、自動除外リストを無効にできます。
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>グループ ポリシーを使用して、Windows Server 2016 および Windows Server 2019 で自動除外リストを無効にする
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>グループ ポリシーを使用して、サーバー 2019 およびサーバー 2019 のWindows Server 2016 Windows無効にする
 
-1. グループ ポリシー管理コンピューターで、グループ ポリシー管理 [コンソールを開きます](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))。 構成するグループ ポリシー オブジェクトを右クリックし、[編集] を **クリックします**。
+1. グループ ポリシー管理コンピューターで、[グループ ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))を開きます。 構成するグループ ポリシー オブジェクトを右クリックし、[編集] を **クリックします**。
 2. グループ ポリシー **管理エディターで 、[** コンピューターの構成] **に移動し**、[管理用テンプレート] **をクリックします**。
-3. ツリーを Windows コンポーネント **の Microsoft** Defender ウイルス対策  >  **除外に**  >  **展開します**。
+3. ツリーを展開して、[**除外Windowsコンポーネント**  >  **Microsoft Defender ウイルス対策**  >  **展開します**。
 4. [自動除外を **オフにする] をダブルクリック** し、オプションを [有効] に **設定します**。 次に、[ **OK**] をクリックします。 
 
-### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a>PowerShell コマンドレットを使用して、Windows Server 2016 および 2019 の自動除外リストを無効にする
+### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a>PowerShell コマンドレットを使用して、2019 年と 2019 年の自動除外リストWindows Server 2016無効にする
 
 次のコマンドレットを使用します。
 
@@ -77,10 +77,10 @@ Set-MpPreference -DisableAutoExclusions $true
 
 詳細については、次のリソースを参照してください。
 
-- [PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行します](use-powershell-cmdlets-microsoft-defender-antivirus.md)。
-- [Microsoft Defender ウイルス対策を使用して PowerShell を使用します](/powershell/module/defender/)。
+- [PowerShell コマンドレットを使用して、PowerShell コマンドレットを構成して実行Microsoft Defender ウイルス対策。](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [PowerShell と一緒にMicrosoft Defender ウイルス対策。](/powershell/module/defender/)
 
-### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Windows Server 2016 および Windows Server 2019 の自動除外リストを無効にするには、Windows 管理命令 (WMI) を使用します。
+### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>サーバー Windowsサーバー 2019 の自動除外リストを無効にするには、Windows管理命令 (WMI Windows Server 2016) をWindowsします。
 
 次の **プロパティ** に対して [、MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) クラスの Set メソッドを使用します。
 
@@ -89,7 +89,7 @@ DisableAutoExclusions
 ```
 
 詳細と許可されるパラメーターについては、以下を参照してください。
-- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="list-of-automatic-exclusions"></a>自動除外の一覧
 
@@ -97,17 +97,17 @@ DisableAutoExclusions
 
 ### <a name="default-exclusions-for-all-roles"></a>すべての役割の既定の除外
 
-このセクションでは、すべての Windows Server 2016 および 2019 の役割の既定の除外を示します。
+このセクションでは、すべてのユーザーロールと 2019 Windows Server 2016の除外を一覧表示します。
 
 > [!NOTE]
 > 既定の場所は、この記事に記載されている場所とは異なる場合があります。
 
-#### <a name="windows-tempedb-files"></a>Windows "temp.edb" ファイル
+#### <a name="windows-tempedb-files"></a>Windows"temp.edb" ファイル
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
 
-#### <a name="windows-update-files-or-automatic-update-files"></a>Windows Update ファイルまたは自動更新ファイル
+#### <a name="windows-update-files-or-automatic-update-files"></a>Windowsファイルの更新または自動更新ファイル
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`
@@ -115,7 +115,7 @@ DisableAutoExclusions
 - `%windir%\SoftwareDistribution\Datastore\*\Edb\*.jrs`
 - `%windir%\SoftwareDistribution\Datastore\*\Res\*.log`
 
-#### <a name="windows-security-files"></a>Windows セキュリティ ファイル
+#### <a name="windows-security-files"></a>Windows セキュリティファイル
 
 - `%windir%\Security\database\*.chk`
 - `%windir%\Security\database\*.edb`
@@ -259,9 +259,9 @@ DisableAutoExclusions
 
 - `%systemroot%\System32\dns.exe`
 
-### <a name="file-and-storage-services-exclusions"></a>ファイルサービスとストレージ サービスの除外
+### <a name="file-and-storage-services-exclusions"></a>ファイルとStorageサービスの除外
 
-このセクションでは、ファイルとストレージ サービスの役割をインストールするときに自動的に配信されるファイルとフォルダーの除外の一覧を示します。 以下に示す除外には、クラスター化の役割の除外は含めされません。
+このセクションでは、File および Storage サービスの役割をインストールするときに自動的に配信されるファイルとフォルダーの除外の一覧を示します。 以下に示す除外には、クラスター化の役割の除外は含めされません。
 
 - `%SystemDrive%\ClusterStorage`
 - `%clusterserviceaccount%\Local Settings\Temp`
@@ -342,4 +342,4 @@ or フォルダーとすべてのサブフォルダーの現在の場所は、�
 - [プロセスによって開いたファイルの除外を構成および検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [除外を定義する際に避ける必要のある一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [スキャンと修復の結果をカスタマイズ、開始Microsoft Defender ウイルス対策確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

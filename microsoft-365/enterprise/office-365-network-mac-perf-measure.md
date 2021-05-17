@@ -1,5 +1,5 @@
 ---
-title: ネットワークパフォーマンスに関する推奨事項の Office 365 の測定値
+title: Office 365パフォーマンスに関する推奨事項に関する測定値の詳細
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: ネットワークパフォーマンスに関する推奨事項の Office 365 の測定値
+description: Office 365パフォーマンスに関する推奨事項に関する測定値の詳細
 ms.openlocfilehash: 4fbd845688e2c09117b600ef8ae6c1473887499f
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -21,4 +21,4 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46696176"
 ---
-# <a name="office-365-measurements-for-network-performance-recommendations"></a>ネットワークパフォーマンスに関する推奨事項の Office 365 の測定値
+# <a name="office-365-measurements-for-network-performance-recommendations"></a>Office 365パフォーマンスに関する推奨事項に関する測定値の詳細

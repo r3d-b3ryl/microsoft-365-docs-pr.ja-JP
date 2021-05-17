@@ -29,7 +29,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: AutoPilot プロファイルは、Windows がユーザー デバイスにインストールされる方法を制御するのに役立ちます。 プロファイルには、Cortana のインストールをスキップするなど、既定とオプションの設定が含まれる。
+description: AutoPilot プロファイルは、ユーザー デバイスにインストールWindows方法を制御するのに役立ちます。 プロファイルには、Cortana のインストールをスキップするなど、既定とオプションの設定が含まれる。
 ms.openlocfilehash: 86f8718131f0a0b93e18e65e39e02e7d65aded1a
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -41,15 +41,15 @@ ms.locfileid: "51578509"
 
 ## <a name="autopilot-profile-settings"></a>AutoPilot プロファイルの設定
 
-AutoPilot プロファイルを使用して、ユーザー デバイスへの Windows のインストール方法を制御できます。 プロファイルには、次の設定が含まれています。
+AutoPilot プロファイルを使用して、ユーザー デバイスWindows方法を制御できます。 プロファイルには、次の設定が含まれています。
   
  **自動で設定される AutoPilot の既定の機能 (必須)。**
   
 |**設定**|**説明**|
 |:-----|:-----|
-|Cortana、OneDrive、OEM 登録をスキップする  <br/> |Cortana や個人用 OneDrive のようなコンシューマー アプリのインストールをスキップします。 デバイスユーザーは、ユーザーがデバイスのローカル管理者である限り、後でこれらをインストールできます。 デバイスは Microsoft 365 Business Premium によって管理されるので、元の製造元の登録はスキップされます。  <br/> |
-|会社のブランドが表示されたサインイン画面  <br/> |会社に [会社のブランドを [Microsoft 365](../admin/setup/customize-sign-in-page.md)サインインに追加する] ページがある場合、デバイス ユーザーはサインイン時にそのエクスペリエンスを取得します。  <br/> |
-|構成済み AAD アカウントを使用した MDM 自動登録  <br/> |ユーザー ID は Azure Active Directory によって管理され、ユーザーは Microsoft 365 Business Premium 資格情報を使用して Windows と Microsoft 365 にサインインします。  <br/> |
+|Cortana、OneDrive、OEM 登録をスキップする  <br/> |Cortana や個人用アプリなど、コンシューマー アプリのインストールOneDrive。 デバイスユーザーは、ユーザーがデバイスのローカル管理者である限り、後でこれらをインストールできます。 デバイスはユーザーによって管理されるので、元の製造元の登録はスキップMicrosoft 365 Business Premium。  <br/> |
+|会社のブランドが表示されたサインイン画面  <br/> |会社に [会社[](../admin/setup/customize-sign-in-page.md)のブランドをサインインに追加Microsoft 365] ページがある場合、デバイス ユーザーはサインイン時にそのエクスペリエンスを取得します。  <br/> |
+|構成済み AAD アカウントを使用した MDM 自動登録  <br/> |ユーザー ID は Azure Active Directory によって管理され、ユーザーは自分の資格情報を使用して WindowsおよびMicrosoft 365にサインインMicrosoft 365 Business Premiumされます。  <br/> |
    
  **オプションの設定:**
   

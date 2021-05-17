@@ -41,7 +41,7 @@ ms.locfileid: "52274582"
 - 既に承認されている修復アクションの監査ログを表示する。
 - 完了した修復アクションを確認する。
 
-アクション センターは、Microsoft 365 Defender の包括的なビューを提供しますので、セキュリティ運用チームは、より効果的かつ効率的に運用できます。
+アクション センターは、作業中の Defender のMicrosoft 365ビューを提供しますので、セキュリティ運用チームは、より効果的かつ効率的に運用できます。
 
 ## <a name="the-unified-action-center"></a>統合アクション センター
 
@@ -49,13 +49,13 @@ ms.locfileid: "52274582"
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Microsoft 365 Defender の統合アクション センター":::
 
-次に例を示します。 
+以下に例を示します。 
 
-- 以前に Office 365 セキュリティ & コンプライアンス センター ( ) を使用していた場合は、Microsoft 365 セキュリティ センター () の統合アクション センター [https://protection.office.com](https://protection.office.com) を試してください [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
-- Microsoft Defender セキュリティ センター ( ) でアクション センターを使用している場合は、Microsoft 365 セキュリティ センター () の統合アクション センター [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) を試してください [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
-- Microsoft 365 セキュリティ センター ( ) を既に使用していた場合は、アクション センター ( ) にいくつかの [https://security.microsoft.com](https://security.microsoft.com) 機能強化が表示されます [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
+- 以前にコンプライアンス センター ( ) Office 365 セキュリティ &を使用していた場合は、セキュリティ センター ( ) の統合アクション センター Microsoft 365 [https://protection.office.com](https://protection.office.com) してみてください [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
+- [アクション センター] () でアクション センターを使用Microsoft Defender セキュリティ センター、セキュリティ センター ( ) の統合アクション センターを [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Microsoft 365してください [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
+- セキュリティ センター ( ) をMicrosoft 365している場合は、アクション センター ( ) にいくつかの [https://security.microsoft.com](https://security.microsoft.com) 機能強化が表示されます [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
 
-統合アクション センターでは、365 用の Defender for Endpoint と Defender 全体で修復Officeされます。 すべての修復アクションの共通言語を定義し、統合された調査エクスペリエンスを提供します。 セキュリティ運用チームには、修復アクションを表示および管理するための"単一のガラス枠" エクスペリエンスがあります。  
+統合アクション センターでは、エンドポイント用の Defender と Defender の修復アクションが統合され、Office 365。 すべての修復アクションの共通言語を定義し、統合された調査エクスペリエンスを提供します。 セキュリティ運用チームには、修復アクションを表示および管理するための"単一のガラス枠" エクスペリエンスがあります。  
 
 適切なアクセス許可と次のサブスクリプションの 1 つ以上がある場合は、統合アクション センターを使用できます。
 
@@ -114,7 +114,7 @@ ms.locfileid: "52274582"
 | **デバイスの手動操作** | デバイスで手動で実行される操作。 たとえば、デバイスの[分離やファイル](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network)[の検疫が含まれます](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files)。 |
 | **手動の電子メール 操作** | 電子メールに対して手動で実行される操作。 たとえば、電子メール メッセージをソフト削除したり、 [電子メール メッセージを修復したりします](../office-365-security/remediate-malicious-email-delivered-office-365.md)。 |
 | **デバイスの自動操作** | ファイルやプロセスなど、エンティティに対して実行される自動アクション。 自動操作の例としては、ファイルを検疫に送信する、プロセスを停止する、レジストリ キーを削除するなどの操作があります。 [(「Microsoft Defender for Endpoint での修復アクション」を参照](../defender-endpoint/manage-auto-investigation.md#remediation-actions)してください。 |
-| **電子メールの自動操作** | 電子メール メッセージ、添付ファイル、URL などの電子メール コンテンツに対して実行される自動アクション。 自動化されたアクションの例としては、電子メール メッセージのソフト削除、URL のブロック、外部メール転送のオフが含まれます。 (「Microsoft [Defender の修復アクション」を参照Office 365.)](../office-365-security/air-remediation-actions.md) |
+| **電子メールの自動操作** | 電子メール メッセージ、添付ファイル、URL などの電子メール コンテンツに対して実行される自動アクション。 自動化されたアクションの例としては、電子メール メッセージのソフト削除、URL のブロック、外部メール転送のオフが含まれます。 [(「Microsoft Defender の修復アクション」を参照Office 365.)](../office-365-security/air-remediation-actions.md) |
 | **高度なハンティング アクション** | 高度な検索を使用してデバイスまたは電子メール [で実行されるアクション](./advanced-hunting-overview.md)。 |
 | **エクスプローラー アクション** | Explorer を使用して電子メール コンテンツに対して実行 [されるアクション](../office-365-security/threat-explorer.md)。 |
 | **手動のライブ応答アクション** | ライブ応答を持つデバイスで [実行されるアクション](../defender-endpoint/live-response.md)。 たとえば、ファイルの削除、プロセスの停止、スケジュールされたタスクの削除が含まれます。 |
@@ -126,8 +126,8 @@ ms.locfileid: "52274582"
 
 |修復アクション |必要な役割と権限 |
 |--|----|
-|Microsoft Defender for Endpoint 修復 (デバイス) | Azure Active Directory (AD Azure Active Directory) () () または Microsoft 365 管理センター ( ) で割り当てられたセキュリティ [https://portal.azure.com](https://portal.azure.com) 管理者の役割 [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- または ---<br/>Microsoft Defender for Endpoint **で割** り当てられたアクティブな修復アクションの役割 <br/> <br/> 詳細については、次のリソースを参照してください。 <br/>- [Azure の管理者ロールのアクセス許可AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [役割ベースのアクセス制御の役割を作成および管理する (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365 修復 (Officeメール)  |**Azure AD** ( ) または Microsoft [https://portal.azure.com](https://portal.azure.com) 365 管理センター ( ) で割り当てられたセキュリティ管理者の役割 [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- さらに --- <br/>**セキュリティ コンプライアンス センター (** ) で割り当&および削除の役割 [https://protection.office.com](https://protection.office.com) <br/><br/>**重要**: Office 365 セキュリティ & コンプライアンス センター ( ) でのみセキュリティ管理者の役割が割り当てられている場合は、アクション センターまたは Microsoft  [https://protection.office.com](https://protection.office.com) 365 Defender の機能にアクセスできます。 Azure 管理者または **Microsoft** 365 管理センターでセキュリティ管理者AD割り当てられている必要があります。 <br/><br/>詳細については、次のリソースを参照してください。 <br/>- [Azure の管理者ロールのアクセス許可AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [セキュリティ コンプライアンス センター&アクセス許可](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Endpoint 修復 (デバイス) |**セキュリティ管理者の** 役割は、Azure Active Directory (Azure AD) () または Microsoft 365 [https://portal.azure.com](https://portal.azure.com) 管理センター ( ) で割り当てられます [https://admin.microsoft.com](https://admin.microsoft.com) 。<br/>--- または ---<br/>Microsoft Defender for Endpoint **で割** り当てられたアクティブな修復アクションの役割 <br/> <br/> 詳細については、次のリソースを参照してください。 <br/>- [Azure の管理者ロールのアクセス許可AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [役割ベースのアクセス制御の役割を作成および管理する (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender for Office 365修復 (Officeメール)  |**Azure AD** ( ) または管理者センター ( ) で割りMicrosoft 365 [https://portal.azure.com](https://portal.azure.com) セキュリティ管理者の役割 [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- さらに --- <br/>**セキュリティ コンプライアンス センター (** ) で割り当&および削除の役割 [https://protection.office.com](https://protection.office.com) <br/><br/>**重要**: Office 365 セキュリティ& コンプライアンス センター ( ) でのみセキュリティ管理者の役割が割り当てられている場合は、アクション センターまたは Microsoft 365 Defender の [https://protection.office.com](https://protection.office.com) 機能にアクセスできます。 Azure 管理者または管理者 **センターで** セキュリティ管理者の役割AD割りMicrosoft 365必要があります。 <br/><br/>詳細については、次のリソースを参照してください。 <br/>- [Azure の管理者ロールのアクセス許可AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [セキュリティ コンプライアンス センター&アクセス許可](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Azure 管理者にグローバル **管理者ロール** が割り当てられているユーザー ADアクション センターで保留中のアクションを承認または拒否できます。 ただし、ベスト プラクティスとして、組織はグローバル管理者の役割が割り当てられているユーザー **の数を制限する必要** があります。 アクション センターのアクセス許可 **については、** 前の表に記載されているセキュリティ管理者、アクティブな修復アクション、および検索と削除の役割を使用することをお勧めします。 

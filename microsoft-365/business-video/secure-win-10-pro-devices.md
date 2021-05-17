@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Premium を使用して Windows 10 Pro デバイス ポリシーを管理する
+title: デバイス Windows 10 Proポリシーを管理 Microsoft 365 Business Premiumする
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 Business Premium を使用して Windows 10 Pro デバイス ポリシーを管理する方法について説明します。
+description: 詳細については、「デバイス ポリシーを使用Windows 10 Proデバイス ポリシーを管理するMicrosoft 365 Business Premium。
 ms.openlocfilehash: 0f7cfff227e1ab4ea992414b513e341adbd9ef22
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -28,24 +28,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578689"
 ---
-# <a name="manage-windows-10-pro-device-policies"></a>Windows 10 Pro デバイス ポリシーの管理
+# <a name="manage-windows-10-pro-device-policies"></a>デバイス ポリシー Windows 10 Pro管理する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSL?autoplay=false]
 
-Microsoft 365 Business を使用して、Windows 10 デバイスWindows Defenderウイルス対策がアクティブ化され、Microsoft の更新プログラムがユーザーのデバイスに自動的にダウンロードされます。
+ユーザーは、Microsoft 365 Businessを使用して、Windows Defender ウイルス対策デバイスWindows 10、Microsoft の更新プログラムがユーザーのデバイスに自動的にダウンロードされます。
 
 ## <a name="try-it"></a>お試しください!
 
 1. Microsoft 365 管理センターにサインインします。
 1. [ポリシー **] で、[** ポリシーの追加] を選択します。
-1. [ポリシーの **追加] ウィンドウ** で、[ポリシー名] に名前を入力し、[ポリシーの種類] の **[Windows 10 デバイス構成]** **を選択します**。
-1. [Windows **10 デバイスのセキュリティ保護] を選択** して、サブ設定を表示します。
-1. ウイルス対策を **使用して PC** をウイルスやその他の脅威から保護Windows Defender Windows **10** デバイスを自動的に最新の状態に保つ] がオンになっていることを確認します。
-1. [**これらの設定を取得するユーザー]** で、すべてのユーザーが既定で選択されますが、[変更] を選択して、作成したセキュリティ グループを選択できます。
+1. [ポリシーの **追加] ウィンドウ** で、[ポリシー名] に名前を入力し、[ポリシーの種類] の **[Windows 10デバイス構成]** **を選択します**。
+1. [**デバイスWindows 10を保護する] を** 選択して、サブ設定を表示します。
+1. Pc を **ウイルスやその** 他の脅威から保護するには、Windows Defender ウイルス対策デバイスを使用しWindows 10を自動的にオンにします。
+1. [Whoこれらの設定が表示されます **。** 既定ではすべてのユーザーが選択されますが、[変更] を選択して、作成したセキュリティ グループを選択できます。
 1. ポリシーの作成を完了するには、[追加] を **選択します**。
 1. [ポリシーの **追加] ページで** 、[閉じる] を **選択します**。
 1. 管理センターのホーム ページで、[ポリシー] を選択し、[ポリシー]ページでポリシーを確認して、新しいポリシーが **追加されたと確認** します。
-1. ポリシーが有効に設定されたと確認するには、ユーザーの Windows 10 デバイスで[Windows Update]に移動し、[詳細設定] を選択し、設定が灰色で表示されているのを確認します。
+1. ポリシーが有効になられたか確認するには、ユーザーの Windows 10 デバイスで、[Windows 更新] に移動し、[詳細設定] を選択し、設定がグレー表示に設定されているのを確認します。
 
     次に、[更新プログラムの配信方法を選択する] をクリックし、設定がグレー表示され、次のメッセージが表示されます。一部の設定は非表示または組織によって **管理されます**。
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 の多国籍設計原則
+title: 複数国間の設計原則 (Microsoft 365
 description: 説明
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 07/29/2020
 ms.locfileid: "46521101"
 ---
-# <a name="multi-national-design-principles-for-microsoft-365"></a>Microsoft 365 の多国籍設計原則
+# <a name="multi-national-design-principles-for-microsoft-365"></a>複数国間の設計原則 (Microsoft 365
 
 テキスト

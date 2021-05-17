@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: コンテンツ検索電子情報開示ツールを使用して、Microsoft 365 のメールボックスにインポートされたアイテムを、サードパーティのデータソースからクエリを作成して検索します。
+description: コンテンツ検索電子情報開示ツールを使用して、クエリを作成して、Microsoft 365データ ソースからメールボックスにインポートされたアイテムを検索します。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 24ca63cf78b85f7b8b5181d5babd16058b641128
 ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
@@ -24,68 +24,68 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 09/01/2020
 ms.locfileid: "47324573"
 ---
-# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>コンテンツ検索を使用して、カスタムパートナーコネクタによってインポートされたサードパーティデータを検索する
+# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>コンテンツ検索を使用して、カスタム パートナー コネクタによってインポートされたサードパーティのデータを検索する
 
-セキュリティ & コンプライアンスセンターの [コンテンツ検索電子情報開示ツール](content-search.md) を使用して、サードパーティのデータソースから Microsoft 365 のメールボックスにインポートされたアイテムを検索することができます。 インポートされたサードパーティのすべてのデータアイテムを検索するクエリを作成するか、特定のサードパーティデータアイテムを検索するためのクエリを作成することができます。 また、サードパーティのデータを保持するために、クエリベースのアイテム保持ポリシーまたはクエリベースの電子情報開示の保持を作成することもできます。
+セキュリティ &[](content-search.md)コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用して、サードパーティのデータ ソースから Microsoft 365 内のメールボックスにインポートされたアイテムを検索できます。 インポートされたサード パーティのすべてのデータ アイテムを検索するクエリを作成するか、特定のサード パーティのデータ アイテムを検索するクエリを作成できます。 また、クエリ ベースのアイテム保持ポリシーまたはクエリ ベースの電子情報開示保持を作成して、サード パーティのデータを保持することもできます。
   
-サードパーティのデータをインポートするパートナーとの作業の詳細と、Microsoft 365 にインポートできるサードパーティのデータ型の一覧については、「365 Office を使用してサードパーティのデータ [をアーカイブする](work-with-partner-to-archive-third-party-data.md)」を参照してください。
+パートナーと一緒にサード パーティ データをインポートする方法と、Microsoft 365 にインポートできるサード パーティのデータ型の一覧の詳細については、「パートナーと一緒に作業して Office 365 でサード パーティのデータをアーカイブする」[を参照してください](work-with-partner-to-archive-third-party-data.md)。
 
 > [!IMPORTANT]
-> この記事のガイダンスは、カスタムパートナーコネクタによってインポートされたサードパーティデータにのみ適用されます。 この記事は、Microsoft コンプライアンスセンターで [サードパーティのデータコネクタ](archiving-third-party-data.md#third-party-data-connectors) を使用してインポートされたサードパーティのデータには適用されません。
+> この記事のガイダンスは、カスタム パートナー コネクタによってインポートされたサードパーティのデータにのみ適用されます。 この記事は、Microsoft コンプライアンス センターでサード パーティのデータ コネクタ[](archiving-third-party-data.md#third-party-data-connectors)を使用してインポートされるサード パーティのデータには適用されません。
   
-## <a name="creating-a-query-to-search-all-third-party-data"></a>すべてのサードパーティデータを検索するクエリを作成する
+## <a name="creating-a-query-to-search-all-third-party-data"></a>すべてのサード パーティのデータを検索するためのクエリの作成
 
-Office 365 にインポートしたすべての種類のサードパーティデータを検索 (または保留) するには、[  `kind:externaldata` キーワード] ボックスで [メッセージのプロパティと値のペア] を使用して、コンテンツ検索を実行するか、クエリベースのホールドを作成します。 たとえば、インポートされたアイテムの Subject プロパティに "contoso" という単語を含む、サードパーティのデータソースからインポートされたアイテムを検索するには、次のクエリを使用します。 
+Office 365 にインポートした任意の種類のサードパーティ データを検索 (または保留) するには、コンテンツ検索のキーワード ボックスまたはクエリ ベースの保留リストを作成するときに、メッセージ プロパティと値のペアを使用できます。 `kind:externaldata` たとえば、サードパーティのデータ ソースからインポートされたアイテムを検索し、インポートしたアイテムの Subject プロパティに "contoso" という単語を含むには、次のクエリを使用します。 
   
 ```powershell
 kind:externaldata AND subject:contoso
 ```
 
-前述のキーワードクエリの例には、subject プロパティが含まれています。 キーワードクエリに含めることができるサードパーティのデータアイテムに関するその他のプロパティの一覧については、「 [partner と連携してサードパーティのデータを Office 365 でアーカイブする](work-with-partner-to-archive-third-party-data.md#more-information)」の「詳細情報」セクションを参照してください。
+前のキーワード クエリの例には、subject プロパティが含まれています。 キーワード クエリに含めるサードパーティのデータ アイテムのその他のプロパティの一覧については、「パートナーと一緒に作業して、Office 365 でサード パーティのデータをアーカイブする」の「詳細[」セクションを参照してください](work-with-partner-to-archive-third-party-data.md#more-information)。
   
-サードパーティのデータを検索して保持するためのクエリを作成するときに、条件を使用して検索結果を絞り込むこともできます。 コンテンツ検索クエリの作成の詳細については、「 [コンテンツ検索のキーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
+サードパーティのデータを検索および保持するためのクエリを作成する場合は、条件を使用して検索結果を絞り込む方法も使用できます。 コンテンツ検索クエリの作成の詳細については、「コンテンツ検索のキーワード クエリと [検索条件」を参照してください](keyword-queries-and-search-conditions.md)。
   
-## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>特定の種類のサードパーティデータを検索するためのクエリを作成する
+## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>特定の種類のサード パーティ製データを検索するためのクエリの作成
 
-すべての種類のサードパーティデータを検索するのではなく、次のメッセージ *プロパティ* を使用して、サードパーティデータの種類のみを検索するクエリを作成できます。
+すべての種類のサード パーティ製データを検索する代わりに、コンテンツ検索のキーワード ボックスの値ペアというメッセージ プロパティを使用して、指定した種類のサードパーティ データのみを検索するクエリを作成できます。
   
 ```powershell
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
-たとえば、Subject プロパティに "contoso" という単語が含まれる Facebook データを検索するには、次のクエリを使用します。
+たとえば、Subject プロパティの "contoso" という単語を含む Facebook データを検索するには、次のクエリを使用します。
   
 ```powershell
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-次の表に、検索可能なサードパーティのデータ型と、  `itemclass:` そのサードパーティデータの種類を特定するためにメッセージプロパティに対して使用する値を示します。 クエリ構文では大文字と小文字が区別されません。 
+次の表に、検索できるサード パーティのデータ型と、その種類のサード パーティ データを具体的に検索する message プロパティに使用する値  `itemclass:` を示します。 クエリ構文では大文字と小文字が区別されません。 
   
-|**サードパーティのデータ型**|**プロパティの値 `itemclass:`**|
+|**サード パーティ製のデータ型**|**プロパティの  `itemclass:` 値**|
 |:-----|:-----|
-|目的  <br/> | `ipm.externaldata.AIM*` <br/> |
+|AIM  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
 |AOL with Pivot クライアント  <br/> | `ipm.externaldata.Pivot.IM` <br/> |
 |Apple Juice  <br/> | `ipm.externaldata.AppleJuice*` <br/> |
-|アレス  <br/> | `ipm.externaldata.Ares*` <br/> |
+|Ares  <br/> | `ipm.externaldata.Ares*` <br/> |
 |Axs Encrypted  <br/> | `ipm.externaldata.AxsEncrypted*` <br/> |
 |Axs Exchange  <br/> | `ipm.externaldata.AxsExchange*` <br/> |
 |Axs Local Archive  <br/> | `ipm.externaldata.AxsLocalArchive*` <br/> |
-|を持つ (Placeholder) プレースホルダー  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
+|Axs プレースホルダー  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
 |Axs Signed  <br/> | `ipm.externaldata.AxsSigned*` <br/> |
 |Bazaarvoice  <br/> | `ipm.externaldata.Bazaarvoice*` <br/> |
 |Bearshare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
 |BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
 |Blackberry  <br/> | `ipm.externaldata.Blackberry*` <br/> |
-|BlackBerry 呼び出しログ  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
-|BlackBerry メッセンジャー  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
+|BlackBerry 通話ログ  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
+|BlackBerry Messenger  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
 |BlackBerry PIN  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
-|BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
-|Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
+|BlackBerry 携帯ショートメール  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
+|ブルームバーグ  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
 |Bloomberg メッセージ  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
-|Bloomberg Messaging  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
+|ブルームバーグ メッセージング  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |検索ボックス  <br/> | `ipm.externaldata.Box*` <br/> |
-|Cisco IM &amp; プレゼンスサーバー  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
+|Cisco IM &amp; Presence Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud for Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
 |Direct Connect  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
@@ -94,13 +94,13 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |FXConnect  <br/> | `ipm.externaldata.FXConnect.chat` <br/> |
 |Flickr  <br/> | `ipm.externaldata.Flickr*` <br/> |
 |Gnutella  <br/> | `ipm.externaldata.Gnutella*` <br/> |
-|Google +  <br/> | `ipm.externaldata.GooglePlus*` <br/> |
+|Google+  <br/> | `ipm.externaldata.GooglePlus*` <br/> |
 |Google Talk  <br/> | `ipm.externaldata.GoogleTalk*` <br/> |
 |GoToMyPC  <br/> | `ipm.externaldata.GoToMyPC*` <br/> |
 |HipChat  <br/> | `ipm.externaldata.HipChat*` <br/> |
 |Hopster  <br/> | `ipm.externaldata.Hopster*` <br/> |
 |HubConnex  <br/> | `ipm.externaldata.HubConnex*` <br/> |
-|IBM 接続  <br/> | `ipm.externaldata.Connections*` <br/> |
+|IBM Connections  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
 |IceChat  <br/> | `ipm.externaldata.conversation.Ice Chat*` <br/> |
 |Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
@@ -114,9 +114,9 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
 |MFTP  <br/> | `ipm.externaldata.MFTP*` <br/> |
 |Microsoft UC  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
-|マインド揃え  <br/> | `ipm.externaldata.MindAlign*` <br/> |
+|Mind Align  <br/> | `ipm.externaldata.MindAlign*` <br/> |
 |Mobile Guard  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
-|ウェブ  <br/> | `ipm.externaldata.MSN*` <br/> |
+|MSN  <br/> | `ipm.externaldata.MSN*` <br/> |
 |MySpace  <br/> | `ipm.externaldata.MySpace*` <br/> |
 |NEONetwork  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
 |OpenNap  <br/> | `ipm.externaldata.OpenNap*` <br/> |
@@ -132,7 +132,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Symphony  <br/> | `ipm.externaldata.Symphony*` <br/> |
 |Thomson Reuters  <br/> | `ipm.externaldata.Reuters*` <br/> |
 | Thomson Reuters Eikon Messenger  <br/> | `ipm.externaldata.ReutersEikon*` <br/> |
-|終わり  <br/> | `ipm.externaldata.Tor*` <br/> |
+|Tor  <br/> | `ipm.externaldata.Tor*` <br/> |
 |TTT  <br/> | `ipm.externaldata.TTT*` <br/> |
 |Twitter  <br/> | `ipm.externaldata.Twitter*` <br/> |
 |UBS チャット  <br/> | `ipm.externaldata.UBS*` <br/> |

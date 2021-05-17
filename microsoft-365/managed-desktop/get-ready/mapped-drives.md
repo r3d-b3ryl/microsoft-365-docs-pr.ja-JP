@@ -37,7 +37,7 @@ ms.locfileid: "51574561"
 - これらのファイル共有場所へのアクセスを必要とするユーザー グループ 
 - 割り当てる必要がある特定のドライブ文字 (必要な場合)
 
-例:
+以下に例を示します。
 
 | ドライブ文字 | UNC パス | ユーザー グループ |
 |--------------|----------|------------|
@@ -62,7 +62,7 @@ ms.locfileid: "51574561"
 3. [ゲスト アカウントの前提条件](guest-accounts.md)
 4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
 5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
-6. [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](authentication.md)
+6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
 7. [Microsoft マネージド デスクトップのアプリ](apps.md)
 8. [Microsoft Managed Desktop 用にマップされたドライブを準備する](mapped-drives.md) (この記事)
 9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)

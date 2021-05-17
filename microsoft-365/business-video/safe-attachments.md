@@ -32,7 +32,7 @@ ms.locfileid: "51578713"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 
-Microsoft Defender for Office 365 (以前は Microsoft 365 ATP、または Advanced Threat Protection) は、Outlook、OneDrive、SharePoint、Teams に悪意のあるコンテンツを含むファイルからビジネスを保護するのに役立ちます。
+microsoft Defender for Office 365 (以前は Microsoft 365 ATP、または Advanced Threat Protection) は、Outlook、OneDrive、SharePoint、および Teams の悪意のあるコンテンツを含むファイルからビジネスを保護するのに役立ちます。
 
 ## <a name="try-it"></a>お試しください!
 
@@ -47,6 +47,6 @@ Microsoft Defender for Office 365 (以前は Microsoft 365 ATP、または Advan
 
 ATP の安全な添付ファイルルールが更新されました。
 
-これで、Outlook、OneDrive、SharePoint、または Teams から悪意のあるファイルを開くことができません。 影響を受けるファイルの横に赤いシールドが表示されます。 ブロックされたファイルを開くしようとすると、警告メッセージが表示されます。
+これで保護が完了すると、悪意のあるファイルを Outlook、OneDrive、SharePoint、または Teams から開くTeams。 影響を受けるファイルの横に赤いシールドが表示されます。 ブロックされたファイルを開くしようとすると、警告メッセージが表示されます。
 
 しばらくポリシーが適用された後、[レポート] ページにアクセスして、スキャンされた情報を確認します。

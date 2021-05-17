@@ -236,7 +236,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 ****
 
-|特徴|検疫タグがサポートされていますか?|使用される既定の検疫タグ|
+|機能|検疫タグがサポートされていますか?|使用される既定の検疫タグ|
 |---|:---:|---|
 |[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** (_SpamAction_)</li><li>**高信頼スパム** (_HighConfidenceSpamAction_)</li><li>**フィッシングメール** (_PhishSpamAction_)</li><li>**高信頼フィッシング メール** (_HighConfidencePhishAction_)</li><li>**バルク メール** (_BulkSpamAction_)</li></ul>|はい|<ul><li>DefaultSpamTag (フル アクセス)</li><li>DefaultHighConfSpamTag (フル アクセス)</li><li>DefaultPhishTag (フル アクセス)</li><li>DefaultHighConfPhishTag (アクセスなし)</li><li>DefaultBulkTag (フル アクセス)</li></ul>
 |フィッシング対策ポリシー: <ul><li>[スプーフィング インテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**偽装ユーザーによって電子メールが送信** された場合 (_TargetedUserProtectionAction_)</li><li>**偽装ドメイン**_(TargetedDomainProtectionAction) によって電子メールが送信される場合_</li><li>**メールボックス インテリジェンス** \>**偽装ユーザーからメールが送信された場合**(_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|いいえ|該当なし|
@@ -245,7 +245,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 |[アクションを含む](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) メール フロー ルール (トランスポート ルールとも呼ばれる): メッセージをホストされた検疫 (検疫) **に** 配信 _します_。|いいえ|該当なし|
 |
 
-<sup>\*</sup> 偽装保護の設定は、Microsoft Defender のフィッシング対策ポリシー (365) でのみOfficeできます。
+<sup>\*</sup>偽装保護の設定は、Microsoft Defender のフィッシング対策ポリシーでのみOffice 365。
 
 既定の検疫タグによって提供されるエンド ユーザーのアクセス許可に満足している場合は、何もする必要はありません。 エンド ユーザーのスパム通知または検疫済みメッセージの詳細でエンド ユーザー機能 (使用可能なボタン) をカスタマイズする場合は、カスタム検疫タグを割り当てできます。
 
@@ -320,7 +320,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 3. 開く **検疫通知設定の** フライアウトで、次の設定の一部またはすべてを構成します。
 
-   - **[会社のロゴを使用** する]: エンド ユーザーのスパム通知の上部で使用される既定の Microsoft ロゴを置き換える場合は、このオプションを選択します。 これを行う前に、「組織の [Microsoft 365](../../admin/setup/customize-your-organization-theme.md) テーマをカスタマイズしてカスタム ロゴをアップロードする」の手順に従う必要があります。
+   - **[会社のロゴを使用** する]: エンド ユーザーのスパム通知の上部で使用される既定の Microsoft ロゴを置き換える場合は、このオプションを選択します。 これを行う前に、「カスタム ロゴをアップロードするには、組織Microsoft 365テーマをカスタマイズする」の[指示](../../admin/setup/customize-your-organization-theme.md)に従う必要があります。
 
      次のスクリーンショットは、エンドユーザーのスパム通知のカスタム ロゴを示しています。
 
@@ -465,7 +465,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 - **エンド ユーザーのスパム通知**: 次のボタンを使用できます。
   - **送信者をブロックする**
-  - **Release**
+  - **リリース**
   - **確認**
 
   ![検疫タグがユーザーにフル アクセスのアクセス許可を与える場合、エンド ユーザーのスパム通知で使用可能なボタン](../../media/quarantine-tags-esn-full-access.png)
@@ -477,7 +477,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 #### <a name="allow-sender-permission"></a>送信者のアクセス許可を許可する
 
-[ **送信者の許可** ]_(PermissionToAllowSender)_ は、検疫済みメッセージ送信者を自分の差出人セーフ リストに簡単に追加できるボタンへのアクセスを制御します。
+[**送信者の許可**]_(PermissionToAllowSender)_ はボタンへのアクセスを制御し、検疫済みメッセージ送信者を [送信者] リストに簡単に追加セーフします。
 
 - **検疫済みメッセージの詳細**:
   - **[送信者のアクセス許可** を有効にする]: [送信者 **を許可する** ] ボタンを使用できます。
@@ -485,7 +485,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 - **エンド ユーザーのスパム通知**: 無効です。
 
-差出人セーフ リストの詳細については、「信頼[](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666)できる送信者がブロックされるのを防ぐ」および[「Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)を使用してメールボックスでセーフリスト コレクションを構成する」を参照してください。
+セーフ 送信者の一覧の詳細については、「信頼できる送信者が[](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666)ブロックされるのを防ぐ」および[「use Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)を使用してメールボックスのセーフリスト コレクションを構成する」を参照してください。
 
 #### <a name="block-sender-permission"></a>送信者のアクセス許可をブロックする
 
@@ -499,7 +499,7 @@ Remove-QuarantineTag -Identity "<TagName>"
   - **[送信者のアクセス許可** を無効にする]: [ **送信者のブロック** ] ボタンは使用できません。
   - **[送信者のアクセス許可** をブロックする] を有効にする: **[送信者のブロック** ] ボタンを使用できます。
 
-[送信者のブロック] リストの詳細については、「他[](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667)のユーザーからのメッセージをブロックする」および[「Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)を使用してメールボックスでセーフリスト コレクションを構成する」を参照してください。
+[送信者のブロック] リストの詳細については、「他[](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667)のユーザーからのメッセージをブロックする」および[「Use Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)を使用してメールボックスのセーフリスト コレクションを構成する」を参照してください。
 
 #### <a name="delete-permission"></a>削除のアクセス許可
 

@@ -54,7 +54,7 @@ ms.locfileid: "52274630"
 
 2. [ウイルス **対策]** &タイル (または左側のメニュー バーのシールド アイコン) をクリックし、[ウイルス対策] &設定ラベルを **クリック** します。
 
-    ![アプリ内のウイルス&設定ラベルのスクリーンショットWindows セキュリティします。](images/defender/wdav-protection-settings-wdsc.png)
+    ![Windows セキュリティ アプリの [ウイルスと脅威の防止の設定] ラベルのスクリーンショット](images/defender/wdav-protection-settings-wdsc.png)
 
 3. [通知] セクションまで **スクロールし** 、[通知設定の **変更] をクリックします**。
 
@@ -111,5 +111,5 @@ ms.locfileid: "52274630"
 
 ## <a name="related-topics"></a>関連項目
 
-- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [ユーザーとのエンド ユーザー操作を構成Microsoft Defender ウイルス対策](configure-end-user-interaction-microsoft-defender-antivirus.md)

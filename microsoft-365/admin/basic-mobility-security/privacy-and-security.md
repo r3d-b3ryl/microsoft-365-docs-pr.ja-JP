@@ -23,6 +23,6 @@ ms.locfileid: "49876914"
 ---
 # <a name="privacy-and-security-in-basic-mobility-and-security"></a>Basic Mobility and Security のプライバシーとセキュリティ
 
-Basic Mobility and Security は、組織内のモバイル デバイスの管理とセキュリティ保護に役立つ Microsoft Intune を利用したクラウドベースのサービスです。 Basic Mobility and Security をアクティブ化した後、モバイル デバイス管理ポリシーを作成できます。 これらのポリシーは、組織内のライセンスを取得した Microsoft 365 ユーザーによって登録されているモバイル デバイスに展開できます。
+Basic Mobility and Security は、組織のモバイル デバイスの管理とセキュリティをMicrosoft Intuneするクラウド ベースのサービスです。 Basic Mobility and Security をアクティブ化した後、モバイル デバイス管理ポリシーを作成できます。 その後、これらのポリシーを、組織内のユーザーがライセンスを受Microsoft 365モバイル デバイスに展開できます。
 
-Microsoft Intune は、各管理対象デバイスのコンプライアンス状態に関する情報を Microsoft 365 に送信し、設定されたポリシーに基づいて、組織内の管理対象デバイスが準拠するかどうかを示すレポートを生成できます。 プライバシーとセキュリティに対する Microsoft の取り組みについて詳しくは [、Microsoft セキュリティ センターをご覧ください](https://www.microsoft.com/trust-center)。
+Microsoft Intuneは、Microsoft 365 に各管理対象デバイスのコンプライアンス状態に関する情報を送信し、設定されたポリシーに基づいて組織内の管理対象デバイスが準拠するかどうかを示すレポートを生成できます。 プライバシーとセキュリティに対する Microsoft の取り組みについて詳しくは [、「Microsoft Trust Center」をご覧ください](https://www.microsoft.com/trust-center)。

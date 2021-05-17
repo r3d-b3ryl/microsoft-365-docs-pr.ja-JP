@@ -108,7 +108,7 @@ Microsoft 365には、管理者のアクセス許可の悪用、マルウェア�
 
 アクセス許可は、次の表に示す役割など、特定の役割を通じて付与されます。
 
-|Task|必要な役割|
+|タスク|必要な役割|
 |---|---|
 |AIR 機能のセットアップ|次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらの役割は、コンプライアンス[センター](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Azure Active Directoryセキュリティ センター [&割り当てることができます](permissions-in-the-security-and-compliance-center.md)。|
 |自動調査の開始 <p> --- または --- <p> 推奨されるアクションを承認または拒否する|コンプライアンス センターまたはセキュリティ コンプライアンス センター [Azure Active Directory割り](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)当てられた次[&の 1 つ](permissions-in-the-security-and-compliance-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、コンプライアンス センターのセキュリティ & [割り当てられます](permissions-in-the-security-and-compliance-center.md)。 そこに新しい役割グループを作成し、その新しい役割グループに Search and Purge 役割を追加する必要がある場合があります。</li></ul>|
@@ -141,7 +141,7 @@ Microsoft Defender で既に AIR 機能を Office 365 に使用している場�
 
 次の表に、Microsoft Defender の AIR に加わる変更と改善点を示Office 365。
 
-|Item|何が変わるのか?|
+|アイテム|何が変わるのか?|
 |---|---|
 |**[調査]** ページ|更新された [ **調査] ページ** は、Microsoft Defender for Endpoint に表示 [される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
 |**[ユーザー]** タブ|[ **ユーザー]** タブが [ **メールボックス] タブ** です。ユーザーに関する詳細は、[メールボックス] タブ **に表示** されます。|

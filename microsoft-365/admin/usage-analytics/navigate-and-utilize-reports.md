@@ -65,13 +65,13 @@ ms.locfileid: "51579052"
 
 レポートを共有するには、[共有] ボタンを選択します。 ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) ページの上部に表示されます。
 
-レポートをカスタマイズする方法については [、「Microsoft 365](customize-reports.md)利用状況分析でのレポートのカスタマイズ」を参照してください。
+レポートをカスタマイズする方法については、「使用状況分析でのレポートのカスタマイズ[」をMicrosoft 365参照してください](customize-reports.md)。
 
 Power BI のヘルプドキュメントで多くの他の情報を見つけることができます。
 
-- [Power BI の基本的な概念](/power-bi/service-basic-concepts)
+- [Power BI基本的な概念](/power-bi/service-basic-concepts)
 
-    ダッシュボード、データセット、レポート、その他の Power BI の概念について説明します。
+    ダッシュボード、データセット、レポート、その他の概念Power BIします。
 
 - [Power BI の概要](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 

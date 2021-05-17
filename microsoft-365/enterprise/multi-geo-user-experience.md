@@ -44,7 +44,7 @@ Office アプリケーション (Word、Excel、PowerPoint など) は、ユー�
 
 ## <a name="onedrive-for-business-sync-client"></a>OneDrive for Business 同期クライアント
 
-OneDrive for Business 同期クライアント (バージョン 17.3.6943.0625 以降) は、ユーザーにとって適切な OneDrive for Business の地域の場所を自動的に検出します。 同期クライアントのサポートには、地域の場所に関係なくグループベースのサイトを同期する機能が含まれています。 Groove 同期クライアントは複数地域ではサポートされていません。 
+OneDrive for Business 同期クライアント (バージョン 17.3.6943.0625 以降) は、ユーザーにとって適切な OneDrive for Business の地域の場所を自動的に検出します。 同期クライアントのサポートには、地域に関係なくグループ ベースのサイトを同期する機能が含まれます。 Groove 同期クライアントは複数地域ではサポートされていません。 
 
 ## <a name="onedrive-for-business-location"></a>OneDrive for Business の場所
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ウイルス対策のクラウド配信の保護レベルを指定する
-description: Microsoft Defender ウイルス対策のクラウド配信保護のレベルを設定します。
+title: クラウド配信の保護レベルを指定Microsoft Defender ウイルス対策
+description: クラウドによる保護のレベルを設定して、Microsoft Defender ウイルス対策。
 keywords: Microsoft Defender ウイルス対策、マルウェア対策、セキュリティ、防御、クラウド、攻撃性、保護レベル
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -32,19 +32,19 @@ ms.locfileid: "52274906"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender Antivirus が提供するクラウド配信保護のレベルは、Microsoft Endpoint Manager (推奨) またはグループ ポリシーを使用して指定できます。
+グループ ポリシー (推奨) またはグループ ポリシーを使用して、Microsoft Defender ウイルス対策によって提供されるMicrosoft エンドポイント マネージャーのレベルを指定できます。
 
 > [!TIP]
-> クラウド保護は、単にクラウドに保存されているファイルの保護ではありません。 Microsoft Defender Antivirus クラウド サービスは、ネットワークとデバイス (エンドポイントとも呼ばれる) に更新された保護を提供するためのメカニズムです。 Microsoft Defender Antivirus によるクラウド保護では、分散リソースと機械学習を使用して、従来のセキュリティ インテリジェンス更新プログラムよりもはるかに高速な速度でエンドポイントに保護を提供します。 Microsoft Intune と Microsoft エンドポイント マネージャーは、Microsoft エンドポイント マネージャー [の一部です](/mem/endpoint-manager-overview)。 
+> クラウド保護は、単にクラウドに保存されているファイルの保護ではありません。 クラウド Microsoft Defender ウイルス対策は、ネットワークとデバイス (エンドポイントとも呼ばれる) に更新された保護を提供するメカニズムです。 クラウド保護はMicrosoft Defender ウイルス対策分散リソースと機械学習を使用して、従来のセキュリティ インテリジェンス更新プログラムよりもはるかに高速な速度でエンドポイントに保護を提供します。 Microsoft IntuneとMicrosoft エンドポイント マネージャーは、現在、Microsoft エンドポイント マネージャー に[含Microsoft エンドポイント マネージャー。](/mem/endpoint-manager-overview) 
 
 
-## <a name="use-microsoft-endpoint-manager-to-specify-the-level-of-cloud-delivered-protection"></a>Microsoft Endpoint Manager を使用してクラウド配信保護のレベルを指定する
+## <a name="use-microsoft-endpoint-manager-to-specify-the-level-of-cloud-delivered-protection"></a>クラウドMicrosoft エンドポイント マネージャー保護のレベルを指定するには、次の情報を使用します。
 
-1. Microsoft Endpoint Manager 管理センター ( ) に移動し [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 、サインインします。
+1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 、サインインします。
 
 2. [エンドポイント **セキュリティウイルス**  >  **対策] を選択します**。
 
-3. ウイルス対策プロファイルを選択します。 (まだプロファイルを持っていない場合、または新しいプロファイルを作成する場合は、「デバイス制限設定を Microsoft Intune で構成する」 [を参照してください](/intune/device-restrictions-configure)。
+3. ウイルス対策プロファイルを選択します。 (まだプロファイルを持っていない場合、または新しいプロファイルを作成する場合は、「デバイス制限設定を構成する」を参照[Microsoft Intune。](/intune/device-restrictions-configure)
 
 4. [プロパティ **] を選択します**。 次に、[構成設定] **の横にある**[編集] を **選択します**。
 
@@ -58,7 +58,7 @@ Microsoft Defender Antivirus が提供するクラウド配信保護のレベル
 
 > [!TIP]
 > いくつかのヘルプが必要ですか? 以下のリソースを参照してください。
-> - [エンドポイント保護の構成](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+> - [構成Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 > - [Intune でエンドポイント保護設定を追加する](/mem/intune/protect/endpoint-protection-configure)
   
 
@@ -70,7 +70,7 @@ Microsoft Defender Antivirus が提供するクラウド配信保護のレベル
 
 3.  グループ ポリシー **管理エディターで、[コンピューター** の構成 **] [管理**  >  **用テンプレート] に移動します**。
 
-4.  ツリーを **Windows コンポーネント Microsoft** Defender ウイルス対策  >    >  **MpEngine に展開します**。
+4.  MpEngine の [**コンポーネント] Windowsツリー**  >  **Microsoft Defender ウイルス対策**  >  **展開します**。
 
 5.  [クラウド保護レベルの **選択] 設定をダブルクリックし** 、[有効] に **設定します**。 保護のレベルを選択します。
     - **既定のブロック レベルは** 、正当なファイルを検出するリスクを高めることなく、強力な検出を提供します。
@@ -87,10 +87,10 @@ Microsoft Defender Antivirus が提供するクラウド配信保護のレベル
 7. 更新されたグループ ポリシー オブジェクトを展開します。 「 [グループ ポリシー管理コンソール」を参照してください。](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> オンプレミスでグループ ポリシー オブジェクトを使用していますか? クラウドでの翻訳方法を確認します。 Microsoft Endpoint Manager - Preview でグループ ポリシー分析を使用して、[オンプレミスのグループ ポリシー オブジェクトを分析します](/mem/intune/configuration/group-policy-analytics)。 
+> オンプレミスでグループ ポリシー オブジェクトを使用していますか? クラウドでの翻訳方法を確認します。 [[プレビュー] でグループ ポリシー分析を使用して、オンプレミスのグループ ポリシー Microsoft エンドポイント マネージャーを分析します](/mem/intune/configuration/group-policy-analytics)。 
   
 ## <a name="related-articles"></a>関連記事
 
-- [Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
-- [クラウドによる保護を有効にする](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
+- [クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [マルウェア対策ポリシーを作成して展開する方法: クラウド保護サービス](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

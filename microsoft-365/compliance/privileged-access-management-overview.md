@@ -1,6 +1,6 @@
 ---
 title: 特権アクセス管理の詳細
-description: この記事では、よく寄せられる質問 (FAQ) への回答など、Microsoft 365 の特権アクセス管理の概要について説明します。
+description: この記事では、よく寄せられる質問 (FAQ) に対する回答Microsoft 365の特権アクセス管理の概要について説明します。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -29,35 +29,35 @@ ms.locfileid: "50126606"
 ---
 # <a name="learn-about-privileged-access-management"></a>特権アクセス管理の詳細
 
-特権アクセスの管理では、Office 365 の特権的管理タスクを細かくアクセス制限できます。 これは、機密データや重要な構成設定への継続的なアクセス権を持つ既存の特権管理アカウントが使用される違反から組織を保護するために役立ちます。 特権アクセス管理では、ユーザーは、高度にスコープが設定され、時間にバインドされた承認ワークフローを通じて昇格されたタスクと特権タスクを完了するために、Just-In-Time アクセスを要求する必要があります。 この構成では、機密性の高いデータや重要な構成の設定を危険にさらすことなくタスクが行えるように、ユーザーに十分なアクセス権が与えられます。 Microsoft 365 で特権アクセス管理を有効にすると、組織は無防備な特権で運用し、管理アクセスの脆弱性に対する防御層を提供できます。
+特権アクセスの管理では、Office 365 の特権的管理タスクを細かくアクセス制限できます。 これは、機密データや重要な構成設定への継続的なアクセス権を持つ既存の特権管理アカウントが使用される違反から組織を保護するために役立ちます。 特権アクセス管理では、ユーザーは、高度にスコープが設定された時間にバインドされた承認ワークフローを通じて、管理者特権と特権のあるタスクを完了するために、Just-in-time アクセスを要求する必要があります。 この構成では、機密性の高いデータや重要な構成の設定を危険にさらすことなくタスクが行えるように、ユーザーに十分なアクセス権が与えられます。 特権アクセス管理を Microsoft 365有効にすると、組織はゼロの特権で動作し、永続的な管理アクセスの脆弱性に対する防御層を提供できます。
 
-統合カスタマー ロックボックスと特権アクセス管理ワークフローの簡単な概要については、このカスタマー ロックボックスと特権アクセス管理のビデオ [を参照してください](https://go.microsoft.com/fwlink/?linkid=2066800)。
+統合された Customer Lockbox と特権アクセス管理ワークフローの概要については、このカスタマー ロックボックスと特権アクセス管理ビデオ [を参照してください](https://go.microsoft.com/fwlink/?linkid=2066800)。
 
 ## <a name="layers-of-protection"></a>保護レイヤー
 
-特権アクセス管理は、Microsoft 365 セキュリティ アーキテクチャ内の他のデータとアクセス機能の保護を補完します。 セキュリティに対する統合されたレイヤー化されたアプローチの一部として特権アクセス管理を含めて、機密情報と Microsoft 365 構成設定の保護を最大化するセキュリティ モデルを提供します。 図に示すように、特権アクセス管理は、Microsoft 365 データのネイティブ暗号化と、Microsoft 365 サービスのロールベースのアクセス制御セキュリティ モデルによって提供される保護に基づいて構築されています。 [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)と一緒に使用する場合、これらの 2 つの機能は、さまざまなスコープで Just-in-Time アクセスを使用してアクセス制御を提供します。
+特権アクセス管理は、セキュリティ アーキテクチャ内の他のデータおよびアクセス機能Microsoft 365補完します。 セキュリティに対する統合的で層的なアプローチの一部として特権アクセス管理を含め、機密情報とセキュリティ構成設定の保護を最大化するMicrosoft 365提供します。 図に示すように、特権アクセス管理は、Microsoft 365 データのネイティブ暗号化と Microsoft 365 サービスの役割ベースのアクセス制御セキュリティ モデルで提供される保護に基づいて構築されています。 Azure AD Privileged Identity Management[と](/azure/active-directory/active-directory-privileged-identity-management-configure)一緒に使用する場合、これらの 2 つの機能は、さまざまなスコープで Just-in-time アクセスを使用してアクセス制御を提供します。
 
-![Microsoft 365 のレイヤー保護](../media/pam-layered-protection.png)
+![ユーザーのレイヤー Microsoft 365](../media/pam-layered-protection.png)
 
-特権アクセス管理はタスク レベルで定義およびスコープ設定され、Azure AD Privileged Identity Management は複数のタスクを実行できる役割レベルで保護を適用します。 Azure AD Privileged Identity Management では、主に AD の役割および役割グループへのアクセスを管理できます。また、Microsoft 365 の特権アクセス管理はタスク レベルにのみ適用されます。
+特権アクセス管理はタスク レベルで定義およびスコープ設定され、Azure AD Privileged Identity Management は複数のタスクを実行する機能を持つロール レベルで保護を適用します。 Azure AD Privileged Identity Management では、主に AD の役割および役割グループへのアクセスを管理できます。また、Microsoft 365 の特権アクセス管理はタスク レベルにのみ適用されます。
 
-- Azure AD Privileged Identity Management を使用している間に特権 **アクセス管理を有効にする:** 特権アクセス管理を追加すると、Microsoft 365 データへの特権アクセスに対する保護と監査機能の別の詳細なレイヤーが提供されます。
+- **Azure サーバーを既に使用している間に特権アクセスAD Privileged Identity Management。** 特権アクセス管理を追加すると、データへの特権アクセスに対する保護と監査機能の別の詳細な層Microsoft 365します。
 
-- Azure AD 365 で既に特権アクセス管理を使用している間に **Privileged Identity Management Office有効にする:** Azure AD Privileged Identity Management を特権アクセス管理に追加すると、主にユーザー ロールまたは ID によって定義される Microsoft 365 外のデータへの特権アクセスを拡張できます。  
+- **Azure AD Privileged Identity Managementを有効にし、** 既に特権アクセス管理を使用Office 365。 Azure AD Privileged Identity Managementを特権アクセス管理に追加すると、主にユーザーの役割または ID によって定義Microsoft 365外部のデータへの特権アクセスを拡張できます。  
 
 ## <a name="privileged-access-management-architecture-and-process-flow"></a>特権アクセス管理アーキテクチャとプロセス フロー
 
-次の各プロセス フローは、特権アクセスのアーキテクチャと、Microsoft 365 の基点、監査、および Exchange 管理の実行空間との対話方法の概要を示しています。
+次の各プロセス フローでは、特権アクセスのアーキテクチャと、Microsoft 365 の基体、監査、および Exchange 管理の実行空間とのやり取りについて説明します。
 
 ### <a name="step-1-configure-a-privileged-access-policy"></a>手順 1: 特権アクセス ポリシーを構成する
 
-[Microsoft 365](https://admin.microsoft.com)管理センターまたは Exchange Management PowerShell を使用して特権アクセス ポリシーを構成する場合は、Microsoft 365 の管理センターで、ポリシーと特権アクセス機能プロセス、およびポリシー属性を定義します。 アクティビティはセキュリティ コンプライアンス センターに &amp; 記録されます。 ポリシーが有効になり、承認の受信要求を処理する準備が整いました。
+Microsoft 365 管理センターまたは[Exchange](https://admin.microsoft.com)管理 PowerShell を使用して特権アクセス ポリシーを構成する場合は、ポリシーと特権アクセス機能プロセスとポリシー属性を Microsoft 365 基体で定義します。 アクティビティはセキュリティ コンプライアンス センターに &amp; 記録されます。 ポリシーが有効になり、承認の受信要求を処理する準備が整いました。
 
 ![手順 1: ポリシーの作成](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>手順 2: アクセス要求
 
-Microsoft [365](https://admin.microsoft.com) 管理センターまたは Exchange Management PowerShell を使用して、ユーザーは昇格されたタスクまたは特権タスクへのアクセスを要求できます。 特権アクセス機能は、構成された特権アクセス ポリシーに対して処理を行う要求を Microsoft 365 の基点に送信し、セキュリティ コンプライアンス センターのログにアクティビティ &amp; を記録します。
+管理者センター [Microsoft 365](https://admin.microsoft.com)管理 PowerShell を使用してExchange管理者特権タスクまたは特権タスクへのアクセスを要求できます。 特権アクセス機能は、構成された特権アクセス ポリシーに対して処理Microsoft 365要求を送信し、セキュリティ コンプライアンス センター ログにアクティビティを &amp; 記録します。
 
 ![手順 2: アクセス要求](../media/pam-step2-access-request.jpg)
 
@@ -75,29 +75,29 @@ Microsoft [365](https://admin.microsoft.com) 管理センターまたは Exchang
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="what-skus-can-use-privileged-access-in-office-365"></a>Office 365 で特権アクセスを使用できる SKU は何ですか?
+### <a name="what-skus-can-use-privileged-access-in-office-365"></a>どの SKU で特権アクセスを使用できるかOffice 365。
 
-特権アクセス管理は、Microsoft 365 および 365 サブスクリプションとアドオンOffice種類のお客様が利用できます。 詳細 [については、「特権アクセス管理の使用を開始する](privileged-access-management-configuration.md) 」を参照してください。
+特権アクセス管理は、サブスクリプションとアドオンのMicrosoft 365およびOffice 365に利用できます。 詳細については [、「特権アクセス管理の使用を開始する」](privileged-access-management-configuration.md) を参照してください。
 
-### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>特権アクセスが Exchange 以外の 365 Officeをサポートする場合
+### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>特権アクセスは、ユーザー以外のOffice 365をサポートExchange?
 
-特権アクセス管理は、他の 365 ワークロードOffice間もなく利用できます。 詳細については [、Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap) を参照してください。
+特権アクセス管理は、他のワークロードですぐにOffice 365利用できます。 詳細については[、「Microsoft 365ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)」を参照してください。
 
-### <a name="my-organization-needs-more-than-30-privileged-access-policies-will-this-limit-be-increased"></a>組織には 30 を超える特権アクセス ポリシーが必要ですが、この制限は増えますか?
+### <a name="my-organization-needs-more-than-30-privileged-access-policies-will-this-limit-be-increased"></a>組織には 30 以上の特権アクセス ポリシーが必要ですが、この制限は増えますか?
 
-はい。組織ごとに 30 の特権アクセス ポリシーの現在の制限を引き上げることは、機能ロードマップに含まれています。
+はい、組織ごとに 30 の特権アクセス ポリシーの現在の制限を引き上げることは、機能ロードマップにあります。
 
-### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Office 365 で特権アクセスを管理するには、グローバル管理者である必要がありますか?
+### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>特権アクセスを管理するには、グローバル管理者である必要Office 365?
 
-いいえ。Exchange 365 で特権アクセスを管理するアカウントには、Exchange 役割管理の役割Officeがあります。 役割管理の役割をスタンドアロン アカウントのアクセス許可として構成しない場合、グローバル管理者の役割には既定でこの役割が含まれるので、特権アクセスを管理できます。 承認者のグループに含まれるユーザーは、グローバル管理者である必要や、PowerShell で要求を確認および承認するために役割管理の役割が割り当てられている必要はありません。
+いいえ、管理者は、Exchangeの特権アクセスを管理するアカウントに割り当てられた役割の管理役割Office 365。 役割管理役割をスタンドアロン アカウントアクセス許可として構成しない場合、グローバル管理者ロールには既定でこの役割が含まれます。特権アクセスを管理できます。 承認者のグループに含まれるユーザーは、グローバル管理者である必要や、PowerShell を使用して要求を確認および承認するために役割管理役割を割り当てる必要はありません。
 
-### <a name="how-is-privileged-access-management-related-to-customer-lockbox"></a>カスタマー ロックボックスに関連する特権アクセス管理の方法
+### <a name="how-is-privileged-access-management-related-to-customer-lockbox"></a>特権アクセス管理は、Customer Lockbox に関連する方法を説明します。
 
-[カスタマー ロックボックスを使用](/office365/admin/manage/customer-lockbox-requests) すると、Microsoft がデータにアクセスするときに、組織に対してレベルのアクセス制御が可能になります。 特権アクセス管理を使用すると、組織内のすべての Microsoft 365 特権タスクに対して詳細なアクセス制御が可能になります。
+[顧客ロックボックスを使用](/office365/admin/manage/customer-lockbox-requests) すると、Microsoft がデータにアクセスするときに、組織のアクセス制御レベルを使用できます。 特権アクセス管理を使用すると、すべての権限を持つすべてのタスクに対して組織内Microsoft 365アクセス制御が可能になります。
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
-特権 [アクセス管理用に組織の構成を開始します](privileged-access-management-configuration.md)。
+特権 [アクセス管理用の組織の構成を開始します](privileged-access-management-configuration.md)。
 
 ## <a name="learn-more"></a>詳細情報
 

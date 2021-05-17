@@ -48,7 +48,7 @@ ms.locfileid: "52275410"
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>アプリでウイルスと脅威保護の設定をWindows セキュリティする
 
-![アプリ内のウイルス&設定ラベルのスクリーンショットWindows セキュリティします。](images/defender/wdav-protection-settings-wdsc.png)
+![Windows セキュリティ アプリの [ウイルスと脅威の防止の設定] ラベルのスクリーンショット](images/defender/wdav-protection-settings-wdsc.png)
 
 1. タスク バーのWindows セキュリティをクリックするか、Defender のスタート メニューを検索して、アプリを開 **きます**。
 
@@ -57,7 +57,7 @@ ms.locfileid: "52275410"
 次のセクションでは、Windows セキュリティ アプリで Microsoft Defender ウイルス対策 によって提供される脅威保護を確認または操作するときに、最も一般的なタスクの一部を実行する方法についてWindows セキュリティします。
 
 > [!NOTE]
-> これらの設定がグループ ポリシーを使用して構成および展開されている場合、このセクションで説明する設定はグレー表示され、個々のエンドポイントで使用できません。 グループ ポリシー オブジェクトを使用して行った変更は、最初に個々のエンドポイントに展開してから、その設定を新しいエンドポイントで更新するWindows 設定。 「[ユーザーとエンド ユーザー](configure-end-user-interaction-microsoft-defender-antivirus.md)の対話を構成Microsoft Defender ウイルス対策ローカル ポリシーの上書き設定を構成する方法について説明します。
+> これらの設定がグループ ポリシーを使用して構成および展開されている場合、このセクションで説明する設定はグレー表示され、個々のエンドポイントで使用できません。 グループ ポリシーを使った変更は、Windows の設定で設定を更新する前に、最初に個別のエンドポイントに展開する必要があります。 「[ユーザーとエンド ユーザー](configure-end-user-interaction-microsoft-defender-antivirus.md)の対話を構成Microsoft Defender ウイルス対策ローカル ポリシーの上書き設定を構成する方法について説明します。
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>アプリでスキャンをWindows セキュリティする
 
@@ -109,8 +109,8 @@ ms.locfileid: "52275410"
 
 |除外の種類  |によって定義される  |結果  |
 |---------|---------|---------|
-|**File** |Location <br/>例: `c:\sample\sample.test` |特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。 |
-|**Folder**    |Location <br/>例: `c:\test\sample`       |指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。         |
+|**ファイル** |場所 <br/>例: `c:\sample\sample.test` |特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。 |
+|**Folder**    |場所 <br/>例: `c:\test\sample`       |指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。         |
 |**ファイルの種類**   |ファイル拡張子 <br/>例: `.test` |デバイス上の任意 `.test` の場所に拡張子を持つすべてのファイルは、Microsoft Defender ウイルス対策。         |
 |**プロセス**     |実行可能ファイルのパス <br>例: `c:\test\process.exe`         |特定のプロセスと、そのプロセスによって開くファイルは、そのプロセスによってスキップMicrosoft Defender ウイルス対策。         |
 

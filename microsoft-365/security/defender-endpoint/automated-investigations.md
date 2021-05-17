@@ -77,7 +77,7 @@ ms.locfileid: "52274822"
 保留中か完了かの修復アクションはすべて、アクション センターで [追跡されます](auto-investigation-action-center.md)。 必要に応じて、セキュリティ運用チームは修復アクションを元に戻すことができます。 詳細については、「自動調査後 [の修復アクションの確認と承認」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 
 > [!TIP]
-> Microsoft 365 セキュリティ センターの新しい統合調査ページをご覧ください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
+> セキュリティ センターの新しい統合調査ページMicrosoft 365確認してください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
 
 
 ## <a name="requirements-for-air"></a>AIR の要件
@@ -86,9 +86,9 @@ ms.locfileid: "52274822"
 
 現在、AIR は次の OS バージョンのみをサポートしています。
 - Windows Server 2019
-- Windows 10 バージョン 1709 (OS ビルド 16299.1085 [および KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 以降
-- Windows 10 バージョン 1803 (OS ビルド 17134.704 [および KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 以降
-- Windows 10 バージョン [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) 以降
+- Windows 10バージョン 1709 (OS ビルド 16299.1085[および KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)以降
+- Windows 10バージョン 1803 (OS ビルド 17134.704[および KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)以降
+- Windows 10バージョン[1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019)以降
 
 ## <a name="next-steps"></a>次の手順
 
@@ -99,5 +99,5 @@ ms.locfileid: "52274822"
 ## <a name="see-also"></a>関連項目
 
 - [PUA 保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Microsoft Defender for Office 365 での自動調査と対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-- [Microsoft 365 Defender での自動調査と対応](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [Microsoft Defender での自動調査と対応が可能Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+- [Defender での自動調査Microsoft 365対応](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)

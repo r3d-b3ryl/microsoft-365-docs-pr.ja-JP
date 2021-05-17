@@ -1,5 +1,5 @@
 ---
-title: Windows 10 PC のデバイス保護設定を編集または作成する
+title: PC のデバイス保護設定を編集またはWindows 10する
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Windows 10 デバイスをセキュリティで保護するための Microsoft 365 for business で利用可能な設定について説明します。
+description: ビジネス向けアプリで使用できるMicrosoft 365デバイスをセキュリティで保護するWindows 10します。
 ms.openlocfilehash: acfb27b2e4592d4ed1e446a63c9495ae07d916de
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -30,19 +30,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578229"
 ---
-# <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Windows 10 PC のデバイス保護設定を編集または作成する
+# <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>PC のデバイス保護設定を編集またはWindows 10する
 
-この記事は、Microsoft 365 Business Premium に適用されます。
+この記事は、このMicrosoft 365 Business Premium。
 
-[セットアップ] ページで既定の Windows 保護設定を設定した後、すべてのユーザーまたは一連のユーザーに適用される新しい Windows 保護設定を追加できます。 作成した任意のファイルを編集できます。
+[セットアップ] ページで既定の Windows保護設定を設定した後、すべてのユーザーまたは一連のユーザーに適用される新しい保護設定を追加できます。 作成した任意のファイルを編集できます。
 
-## <a name="create-protection-settings-for-windows-10-devices"></a>Windows 10 デバイスの保護設定を作成する
+## <a name="create-protection-settings-for-windows-10-devices"></a>デバイスの保護設定をWindows 10する
 
-Microsoft 365 Business Premium を使用して Windows 10 デバイスをセキュリティで保護する方法に関するビデオを表示します。
+次の方法でデバイスをセキュリティで保護するWindows 10ビデオをMicrosoft 365 Business Premium。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 
 2. 左側のナビゲーションで、[デバイス ポリシー **の** \> **追加] を** \> **選択します**。
 3. [ **ポリシーの追加**] ウィンドウで、このポリシーの一意の名前を入力します。 
 4. [ **ポリシーの種類**] で、[ **Windows 10 デバイスの構成**] を選びます。
@@ -55,27 +55,27 @@ Microsoft 365 Business Premium を使用して Windows 10 デバイスをセキ�
 6. Next decide **Who will get these settings?** If you don't want to use the default **All users** security group, Choose **Change**, search for the security group who will get these settings \> **Select**.
 7. 最後に、[ **完了**] を選択してポリシーを保存し、それをデバイスに割り当てます。 
 
-## <a name="edit-windows-10-protection-settings"></a>Windows 10 保護設定の編集
+## <a name="edit-windows-10-protection-settings"></a>保護Windows 10の編集
  
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。     
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。     
 2. 左側のナビゲーションで、[デバイス ポリシー **]** \> **を選択します** 。
-1. 既存の Windows デバイス ポリシーを選択し、[編集] を **クリックします**。
+1. 既存のデバイス ポリシーをWindowsし、[編集] を **クリックします**。
 1. 変更 **する設定** の横にある [編集] を選択し、[保存] を **選択します**。
 
 ## <a name="available-settings"></a>利用可能な設定
 
-既定では、すべての設定が **オン** になっています。 次の設定を使用できます。
+既定では、すべての設定が **オン** になっています。次の設定を使用できます。
   
-詳細については [、「Microsoft 365](map-protection-features-to-intune-settings.md)Premium map to Intune 設定での保護機能の方法」を参照してください。 
+詳細については、「Intune の設定[にマップする方法Microsoft 365 プレミアム保護機能」を参照してください](map-protection-features-to-intune-settings.md)。 
   
 |||
 |:-----|:-----|
-|設定  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |Windows Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  <br/> |インターネットに接続されている危険から PC を保護するには、ウイルス対策をオンにする必要があります。  <br/> |
 |Microsoft Edge で PC を Web ベースの脅威から保護する  <br/> |ユーザーを悪意のあるサイトやダウンロードから保護するために役立つ、Microsoft Edge の設定をオンにします。  <br/> |
 |デバイスに対する攻撃を回避するルールを使用する  <br/> |オンにすると、攻撃の回避により、デバイス感染のためにマルウェアが通常使用するアクションやアプリをブロックすることができます。Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。詳細については、「[攻撃の回避](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)」を参照してください。  <br/> |
 |ランサムウェアなどの脅威からフォルダーを保護する  <br/> |この設定は、フォルダーへのアクセスを制御することによって、ランサムウェアなどの不審なまたは悪意のあるアプリケーションによる書き換えから会社のデータを保護します。 こうした種類のアプリケーションは、保護されているフォルダーで変更を行うことができないようにブロックされます。 Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。 詳細 [については、「フォルダー アクセスの制御を使用してフォルダーを保護する」](/mem/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) を参照してください。  <br/> |
-|インターネット上の悪意がある可能性のあるコンテンツに対するネットワーク アクセスを防止する  <br/> |この設定を使用して、フィッシング詐欺、悪用、その他の悪意のあるコンテンツをホストする可能性のある低評価のインターネットの場所への送信ユーザー接続をブロックします。 この設定は、[ウイルス対策] が Windows Defenderに設定されている場合にのみ **使用できます**。 詳細については、「ネットワークを [保護する」を参照してください](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)。  <br/> |
+|インターネット上の悪意がある可能性のあるコンテンツに対するネットワーク アクセスを防止する  <br/> |この設定を使用して、フィッシング詐欺、悪用、その他の悪意のあるコンテンツをホストする可能性のある低評価のインターネットの場所への送信ユーザー接続をブロックします。 この設定は、[オン] に設定Windows Defender ウイルス対策場合にのみ使用 **できます**。 詳細については、「ネットワークを [保護する」を参照してください](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)。  <br/> |
 |不正なアクセスから PC のファイルとフォルダーを保護するために BitLocker を使用する  <br/> |BitLocker は、コンピューターのハード ドライブを暗号化することによってデータを保護し、コンピューターの紛失や盗難時にデータの漏えいを防ぎます。 詳細については [、「Bitlocker FAQ」を参照してください](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)。  <br/> |
 |ユーザーが Microsoft Storeからアプリをダウンロードすることを許可する  <br/> |ユーザーが Microsoft Storeからアプリをダウンロードしてインストールできるようにします。アプリにはゲームから生産性向上ツールまであらゆるものが含まれるため、この設定を **オン** のままにしていますが、セキュリティを強化するためにオフにすることもできます。  <br/> |
 |ユーザーが Cortana にアクセスすることを許可する  <br/> |Cortana は非常に役に立つ場合があります。 Cortana では、設定のオンとオフを切り替え、指示を出し、予定に間に合っている必要がある場合は、この設定を **既定でオンのままに** します。  <br/> |

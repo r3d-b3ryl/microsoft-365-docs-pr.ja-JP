@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: Azure Active Directory を使用して Microsoft 365 サインイン ページをカスタマイズします。 サインイン ページに図、ロゴ、およびテキストを追加できます。
+description: '[サインイン] Microsoft 365を使用して、サインイン ページをカスタマイズAzure Active Directory。 サインイン ページに図、ロゴ、およびテキストを追加できます。'
 ms.openlocfilehash: 9947d57e4bf35ef0a3409db58f2c663959c2dd49
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -31,11 +31,11 @@ ms.locfileid: "51579124"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>[サインイン] ページに会社のブランドを追加する
 
- これで、Microsoft 365 サブスクリプションに含まれる Azure Active Directory (AD) サブスクリプションを使用して、ユーザーに表示されるサインイン ページをカスタマイズできます。 
+ これで、Azure Active Directory サブスクリプションにAzure Active Directory (AD Microsoft 365) サブスクリプションを使用して、ユーザーに表示されるサインイン ページをカスタマイズできます。 
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>会社のブランドをサインイン ページとアクセス パネル ページに追加する
 
-Microsoft 365 for business、Microsoft Dynamics CRM Online、Enterprise Mobility Suite、その他の Microsoft サービスへの有料サブスクリプションをお持ちのお客様は、Azure Active Directory への無料サブスクリプションを持っています。 Azure Active Directory を使用して、ユーザー アカウントおよびグループ アカウントを作成して管理し、会社のブランドをページに追加することができます。 このサブスクリプションを有効にして Microsoft Azure 管理ポータルにアクセスするには、1 回限りの登録プロセスを完了する必要があります。 完了すると、使用している Microsoft サービスから Azure Active Directory にアクセスできます。 Microsoft 365 サブスクリプションを登録する方法については、「無料 [の Azure Active Directory](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)サブスクリプションを登録する」および「Microsoft 365 サブスクリプションのディレクトリを Azure で管理する」を参照してください。一般的な管理手順については [、「Microsoft 365](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) サブスクリプションのディレクトリを管理する」を参照してください。 
+Microsoft 365 for business、Microsoft Dynamics CRM Online、Enterprise Mobility Suite、その他の Microsoft サービス の有料サブスクリプションをお持ちのお客様は、Azure Active Directory への無料サブスクリプションを持Azure Active Directory。 Azure Active Directory を使用して、ユーザー アカウントおよびグループ アカウントを作成して管理し、会社のブランドをページに追加することができます。 このサブスクリプションを有効にして Microsoft Azure 管理ポータルにアクセスするには、1 回限りの登録プロセスを完了する必要があります。 完了すると、使用している Microsoft サービスから Azure Active Directory にアクセスできます。 Microsoft 365 サブスクリプションを登録する方法については、「無料[の Azure Active Directory](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)サブスクリプションを登録する」および「一般的な管理手順については[、「Azure](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)で Microsoft 365 サブスクリプションのディレクトリを管理する」を参照してください。 
   
 次の図は、Azure のどのサインイン ページを変更できるかを示しています。
   

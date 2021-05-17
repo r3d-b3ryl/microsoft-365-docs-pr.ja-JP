@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ウイルス対策インターフェイスを非表示にする
-description: Windows セキュリティ アプリでウイルスと脅威の保護タイルを非表示にできます。
+title: インターフェイスをMicrosoft Defender ウイルス対策する
+description: アプリでウイルスと脅威の保護タイルをWindows セキュリティできます。
 keywords: ui lockdown, headless mode, hide app, hide settings, hide interface
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274918"
 ---
-# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーが Microsoft Defender ウイルス対策ユーザー インターフェイスを表示または操作するのを防ぐ
+# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーがユーザー インターフェイスを表示または操作Microsoft Defender ウイルス対策防止する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,26 +32,26 @@ ms.locfileid: "52274918"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-グループ ポリシーを使用すると、エンドポイント上のユーザーに Microsoft Defender ウイルス対策インターフェイスが表示されるのを防ぐことが可能です。 また、スキャンの一時停止を防止することもできます。
+グループ ポリシーを使用すると、エンドポイント上のユーザーにインターフェイスが表示Microsoft Defender ウイルス対策できます。 また、スキャンの一時停止を防止することもできます。
 
-## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Microsoft Defender ウイルス対策インターフェイスを非表示にする
+## <a name="hide-the-microsoft-defender-antivirus-interface"></a>インターフェイスをMicrosoft Defender ウイルス対策する
 
-Windows 10 バージョン 1703 では、インターフェイスを非表示にすると、Microsoft Defender ウイルス対策通知が非表示にされ、Windows セキュリティ アプリにウイルス& 脅威保護タイルが表示されるのを防ぐ。
+このWindows 10バージョン 1703 では、インターフェイスを非表示にすると、Microsoft Defender ウイルス対策 通知が非表示にされ、ウイルス & の脅威保護タイルが Windows セキュリティ アプリに表示されWindows セキュリティされます。
 
 設定を [有効] に **設定します**。
 
-![シールド アイコンとウイルスと脅威保護セクションのない Windows セキュリティのスクリーンショット](images/defender/wdav-headless-mode-1703.png)
+![シールド アイコンWindows セキュリティウイルスと脅威の保護セクションを使用しない場合のスクリーンショット](images/defender/wdav-headless-mode-1703.png)
 
 設定が [無効] または **[** 構成されていない] に設定されている場合:
 
-![シールド アイコンとウイルスと脅威の保護セクションを示す Windows セキュリティのスクリーンショット](images/defender/wdav-headless-mode-off-1703.png)
+![シールド アイコンとWindows セキュリティ脅威保護セクションを示すスクリーンショット](images/defender/wdav-headless-mode-off-1703.png)
 
 >[!NOTE]
->インターフェイスを非表示にすることで、Microsoft Defender ウイルス対策の通知がエンドポイントに表示されるのも防ぐことになります。 Microsoft Defender for Endpoint 通知は引き続き表示されます。 エンドポイントに表示 [される通知を個別に構成することもできます](configure-notifications-microsoft-defender-antivirus.md)
+>インターフェイスを非表示にすることで、Microsoft Defender ウイルス対策通知がエンドポイントに表示されるのを防ぐことも可能です。 Microsoft Defender for Endpoint 通知は引き続き表示されます。 エンドポイントに表示 [される通知を個別に構成することもできます](configure-notifications-microsoft-defender-antivirus.md)
 
-以前のバージョンの Windows 10 では、この設定によってクライアント インターフェイスWindows Defender非表示になります。 ユーザーが開くしようとすると、「システム管理者は、このアプリへのアクセスを制限しました」という警告が表示されます。
+以前のバージョンの Windows 10設定では、クライアント インターフェイスWindows Defender非表示になります。 ユーザーが開くしようとすると、「システム管理者は、このアプリへのアクセスを制限しました」という警告が表示されます。
 
-![1703 より前のバージョンの Windows 10 でヘッドレス モードが有効になっている場合の警告メッセージ](images/defender/wdav-headless-mode-1607.png)
+![1703 より前のバージョンの Windows 10でヘッドレス モードが有効になっている場合の警告メッセージ](images/defender/wdav-headless-mode-1607.png)
 
 ## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>グループ ポリシーを使用して Microsoft Defender AV インターフェイスをユーザーから非表示にする
 
@@ -61,7 +61,7 @@ Windows 10 バージョン 1703 では、インターフェイスを非表示に
 
 3. [管理 **用テンプレート] をクリックします**。
 
-4. Microsoft Defender Antivirus > **クライアント インターフェイス>ツリーを展開します**。
+4. ツリーを展開して **、Windowsインターフェイス> Microsoft Defender ウイルス対策 >コンポーネントを表示します**。
 
 5. [ヘッドレス UI モードを有効にする] **設定を** ダブルクリックし、オプションを [有効] に **設定します**。 [**OK**] をクリックします。 
 
@@ -72,7 +72,7 @@ Windows 10 バージョン 1703 では、インターフェイスを非表示に
 ユーザーがスキャンを一時停止するのを防ぐと、スケジュールされたスキャンまたはオンデマンド スキャンがユーザーによって中断されないのに役立ちます。
 
 > [!NOTE]
-> この設定は、Windows 10 ではサポートされていません。
+> この設定は、この設定ではWindows 10。
 
 ### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>グループ ポリシーを使用して、ユーザーによるスキャンの一時停止を防止する
 
@@ -82,7 +82,7 @@ Windows 10 バージョン 1703 では、インターフェイスを非表示に
 
 3. [管理 **用テンプレート] をクリックします**。
 
-4. ツリーを Windows コンポーネントの Microsoft Defender ウイルス **対策**  >  **スキャンに展開**  >  **します**。
+4. ツリーを展開して、[**スキャン] WindowsコンポーネントMicrosoft Defender ウイルス対策**  >    >  **展開します**。
 
 5. [ユーザーにスキャンの **一時停止を許可する** ] 設定をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。 
 
@@ -90,6 +90,6 @@ Windows 10 バージョン 1703 では、インターフェイスを非表示に
 
 - [エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
 
-- [Microsoft Defender ウイルス対策とのエンド ユーザー操作を構成する](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [ユーザーとのエンド ユーザー操作を構成Microsoft Defender ウイルス対策](configure-end-user-interaction-microsoft-defender-antivirus.md)
 
-- [Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

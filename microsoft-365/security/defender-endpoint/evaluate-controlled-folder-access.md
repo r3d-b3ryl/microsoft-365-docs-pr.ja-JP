@@ -31,7 +31,7 @@ ms.locfileid: "51569907"
 >Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[フォルダー アクセスの制御は](controlled-folders.md) 、疑わしいアプリや悪意のあるアプリによる変更からドキュメントやファイルを保護する機能です。 フォルダー アクセスの制御は、Windows Server 2019 および Windows 10 クライアントでサポートされます。
+[フォルダー アクセスの制御は](controlled-folders.md) 、疑わしいアプリや悪意のあるアプリによる変更からドキュメントやファイルを保護する機能です。 フォルダー アクセスの制御は、サーバー 2019 WindowsクライアントでWindows 10されます。
 
 特に、ファイルを暗号化して人質[](https://www.microsoft.com/wdsi/threats/ransomware)に保持しようとするランサムウェアから保護する場合に役立ちます。
 
@@ -52,11 +52,11 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > 組織でフォルダー アクセスの制御方法を完全に監査する場合は、管理ツールを使用して、ネットワーク内のデバイスにこの設定を展開する必要があります。
-また、グループ ポリシー、Intune、モバイル デバイス管理 (MDM)、または Microsoft Endpoint Manager を使用して、メインの管理フォルダー アクセス トピックで説明したように、設定を構成および [展開することもできます](controlled-folders.md)。
+また、グループ ポリシー、Intune、モバイル デバイス管理 (MDM)、または Microsoft エンドポイント マネージャー を使用して、メインの管理フォルダー アクセス トピックで説明したように、設定を構成および[展開することもできます](controlled-folders.md)。
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Windows イベント ビューアーでフォルダー アクセスの制御イベントを確認する
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>イベント ビューアーで管理されたフォルダー アクセス イベントWindows確認する
 
-次の制御されたフォルダー アクセス イベントは、Microsoft/Windows/Windows Defender/操作フォルダーの下の Windows イベント ビューアーに表示されます。
+次の制御されたフォルダー アクセス イベントは、Microsoft/Windows Windows/Windows Defender/操作フォルダーの下のイベント ビューアーに表示されます。
 
 イベント ID | 説明
 -|-
@@ -65,7 +65,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
  1123 | ブロックされたフォルダー アクセス イベント
 
 > [!TIP]
-> Windows イベント転送サブスクリプション [を構成して、](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription) ログを一中心に収集できます。 
+> ログを一Windows[するイベント転送](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription)サブスクリプションを構成できます。 
 
 ## <a name="customize-protected-folders-and-apps"></a>保護されたフォルダーとアプリをカスタマイズする
 

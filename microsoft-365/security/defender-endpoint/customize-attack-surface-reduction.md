@@ -34,15 +34,15 @@ ms.locfileid: "51570353"
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-[攻撃表面の縮小ルールは](enable-attack-surface-reduction.md) 、デバイスやネットワークを侵害するために悪用されるソフトウェアの動作を防ぐのに役立ちます。 たとえば、攻撃者が USB ドライブから署名されていないスクリプトを実行したり、Office ドキュメント内のマクロを使用して Win32 API を直接呼び出したりする可能性があります。 攻撃表面の縮小ルールは、このような危険な動作を制限し、組織の防御態勢を向上させる可能性があります。
+[攻撃表面の縮小ルールは](enable-attack-surface-reduction.md) 、デバイスやネットワークを侵害するために悪用されるソフトウェアの動作を防ぐのに役立ちます。 たとえば、攻撃者が署名されていないスクリプトを USB ドライブから実行したり、Office ドキュメント内のマクロで Win32 API を直接呼び出したりする可能性があります。 攻撃表面の縮小ルールは、このような危険な動作を制限し、組織の防御態勢を向上させる可能性があります。
 
 ファイルとフォルダーを除外するか、ユーザーの[](#exclude-files-and-folders)コンピューターに表示される通知[](#customize-the-notification)通知にカスタム テキストを追加して、攻撃表面の縮小ルールをカスタマイズする方法について説明します。
 
-次のエディションとバージョンの Windows を実行しているデバイスに対して攻撃表面の縮小ルールを設定できます。
-- Windows 10 Pro [バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 以降
-- Windows 10 Enterprise バージョン [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 以降
-- Windows Server バージョン [1803 (半期チャネル)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 以降
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19) グループ ポリシー、PowerShell、およびモバイル デバイス管理 (MDM) 構成サービス プロバイダー (CSP) を使用して、これらの設定を構成できます。
+次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールをWindows。
+- Windows 10 Proバージョン[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)以降
+- Windows 10 Enterpriseバージョン[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)以降
+- Windowsサーバー、[バージョン 1803 (半期チャネル)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)以降
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)グループ ポリシー、PowerShell、およびモバイル デバイス管理 (MDM) 構成サービス プロバイダー (CSP) を使用して、これらの設定を構成できます。
 
 ## <a name="exclude-files-and-folders"></a>ファイルとフォルダーを除外する
 
@@ -63,13 +63,13 @@ ms.locfileid: "51570353"
 すべてのアプリケーションOffice子プロセスの作成をブロックする | D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 難読化される可能性のあるスクリプトの実行をブロックする | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC
 Win32 API 呼び出しをブロックOfficeマクロ | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B
-実行可能Office作成するアプリケーションをブロックする | 3B576869-A4EC-4529-8536-B80A7769E899
+実行可能Office作成するアプリケーションのブロック | 3B576869-A4EC-4529-8536-B80A7769E899
 アプリケーションOffice他のプロセスへのコードの挿入をブロックする | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84
 JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする | D3E037E1-3EB8-44C8-A917-57927947596D
 メール クライアントと Web メールから実行可能なコンテンツをブロックする | BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550
 有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする | 01443614-cd74-433a-b99e-2ecdc07bfc25
 ランサムウェアに対する高度な保護の使用 | c1db55ab-c21a-4637-bb3f-a12568109d35
-Windows ローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2
+ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2
 PSExec および WMI コマンドから発生するプロセス作成をブロックする | d1e49aac-8f56-4280-b9ba-993a6d77406c
 USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4
 通信Office子プロセスの作成をブロックする | 26190899-1602-49e8-8b27-eb1d0a1ce869
@@ -80,11 +80,11 @@ WMI イベント サブスクリプションによる永続化のブロック | 
 
 ### <a name="use-group-policy-to-exclude-files-and-folders"></a>グループ ポリシーを使用してファイルとフォルダーを除外する
 
-1. グループ ポリシー管理コンピューターで、グループ ポリシー [管理](https://technet.microsoft.com/library/cc731212.aspx)コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。
+1. グループ ポリシー管理コンピューターで、[[グループ ポリシー管理コンソール]](https://technet.microsoft.com/library/cc731212.aspx) を開き、構成するグループ ポリシー オブジェクトを右クリックして、**[編集]** をクリックします。
 
 2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に移動 **し、[** 管理用 **テンプレート] をクリックします**。
 
-3. ツリーを Windows コンポーネント **に展開**  >  **します。Microsoft Defender ウイルス対策Windows Defender**  >  **エクスプロイト ガード**  >  **攻撃の表面の縮小です**。
+3. ツリーを展開して **、Exploit Guard 攻撃Windows縮小**  >    >  **Microsoft Defender ウイルス対策Windows Defenderコンポーネント**  >  **を展開します**。
 
 4. [攻撃表面の縮小 **ルールからファイル** とパスを除外する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 [ **表示] を** 選択し、[値の名前] 列に各ファイル **またはフォルダーを入力** します。 各 **アイテムの [** 値] **列に 0** を入力します。
 
@@ -93,7 +93,7 @@ WMI イベント サブスクリプションによる永続化のブロック | 
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>PowerShell を使用してファイルとフォルダーを除外する
 
-1. [ **スタート] メニューに「powershell」** と入力し、[管理者 **Windows PowerShellを右** クリックし、[管理者として **実行] を選択します。**
+1. [**スタート] メニューに「powershell」** と入力し、[管理者 **Windows PowerShellを右** クリックし、[管理者として **実行] を選択します。**
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
@@ -111,7 +111,7 @@ WMI イベント サブスクリプションによる永続化のブロック | 
 
 ## <a name="customize-the-notification"></a>通知をカスタマイズする
 
-ルールがトリガーされた場合の通知をカスタマイズし、アプリまたはファイルをブロックできます。 [「Windows セキュリティ」の記事を参照](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)してください。
+ルールがトリガーされた場合の通知をカスタマイズし、アプリまたはファイルをブロックできます。 詳しくは[、Windows セキュリティをご覧](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)ください。
 
 ## <a name="related-topics"></a>関連項目
 

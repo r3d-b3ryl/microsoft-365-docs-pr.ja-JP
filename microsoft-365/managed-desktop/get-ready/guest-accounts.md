@@ -31,12 +31,12 @@ Microsoft Managed Desktop では、ゲスト アカウント アクセス用に 
 
 ## <a name="steps-to-get-ready"></a>準備の手順
 
-1. [Microsoft Managed Desktop の前提条件を確認します](prerequisites.md)。
-2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。
+1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
+2. [準備状況の評価ツール](readiness-assessment-tool.md)を使用します。
 3. [ゲスト アカウントの前提条件](guest-accounts.md) (この記事)
 4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
 5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
-6. [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](authentication.md)
+6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
 7. [Microsoft マネージド デスクトップのアプリ](apps.md)
 8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
 9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)

@@ -24,7 +24,7 @@ landingContent:
     links:
     - text: デバイスとアプリのデータ保護オプションを確認する
       url: choose-device-security.md
-- title: Microsoft Intune でデバイスとアプリ データを管理する
+- title: デバイスとアプリ データを管理するには、Microsoft Intune
   linkLists:
   - linkListType: overview
     links:
@@ -32,13 +32,13 @@ landingContent:
       url: /mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
-    - text: Windows 10 デバイスの自動登録を設定する
+    - text: デバイスの自動登録をWindows 10する
       url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: Android 登録を設定する
       url: /mem/intune/enrollment/android-enroll
     - text: iOS/iPadOS 登録のセットアップ
       url: /mem/intune/enrollment/ios-enroll
-- title: Microsoft 365 Business Premium を使用してデバイスとアプリ データを管理する
+- title: デバイスとアプリ のデータを管理するには、Microsoft 365 Business Premium
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -46,15 +46,15 @@ landingContent:
       url: ../../business/view-policies-and-devices.md
     - text: デバイスから会社のデータを削除する
       url: ../../business/remove-company-data.md
-    - text: Windows デバイスを工場出荷時の設定にリセットする
+    - text: デバイスWindows工場出荷時の設定にリセットする
       url: ../../business/reset-devices-to-factory-settings.md
-- title: Microsoft 365 for enterprise でデバイスとアプリ データを管理する
+- title: エンタープライズ向けデバイスとアプリ データMicrosoft 365管理する
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft 365 for enterprise の概要
+    - text: エンタープライズ向けMicrosoft 365の概要
       url: ../../enterprise/microsoft-365-overview.md
-    - text: Microsoft 365 for enterprise のデバイス管理のロード マップ
+    - text: エンタープライズ向けデバイス管理Microsoft 365マップ
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
 - title: 基本モビリティとセキュリティを使用してデバイスとアプリ データを管理する
   linkLists:

@@ -1,5 +1,5 @@
 ---
-title: Basic Mobility and Security のトラブルシューティング
+title: 基本的なモビリティとセキュリティのトラブルシューティング
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,7 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: Basic Mobility and Security の問題を追跡するには、次の手順を実行します。
+description: 基本モビリティとセキュリティの問題を追跡するには、次の手順を実行します。
 ms.openlocfilehash: b8df8c17f3a2fc5b7b6cce21769ca20742dbd397
 ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
@@ -21,47 +21,47 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 01/15/2021
 ms.locfileid: "49876854"
 ---
-# <a name="troubleshoot-basic-mobility-and-security"></a>Basic Mobility and Security のトラブルシューティング
+# <a name="troubleshoot-basic-mobility-and-security"></a>基本的なモビリティとセキュリティのトラブルシューティング
 
-デバイスを Basic Mobility and Security に登録しようとするときに問題が発生している場合は、次の手順を実行して問題を追跡してください。 一般的な手順で問題が解決しない場合は、デバイスの種類に固有の手順を示す、後のセクションのいずれかを参照してください。
+デバイスを Basic Mobility and Security に登録しようとするときに問題が発生している場合は、ここでの手順を試して問題を追跡してください。 一般的な手順で問題が解決しない場合は、デバイスの種類に関する特定の手順を含む、以降のセクションのいずれかを参照してください。
 
 ## <a name="steps-to-try-first"></a>最初に試す手順
 
-開始するには、以下を確認します。
+開始するには、次の情報を確認します。
 
-- デバイスが Intune などの別のモバイル デバイス管理プロバイダーに登録されていないか確認します。
+- デバイスが Intune などの別のモバイル デバイス管理プロバイダーに既に登録されていないか確認します。
 
 - デバイスが正しい日付と時刻に設定されていることを確認します。
 
-- デバイス上の別の WIFI または携帯ネットワークに切り替えます。
+- デバイス上の別の WIFI または携帯電話ネットワークに切り替えます。
 
-- Android または iOS デバイスの場合は、Intune ポータル サイト アプリをアンインストールし、デバイスに再インストールします。 
+- Android デバイスまたは iOS デバイスの場合は、デバイス上の Intune ポータル サイトアプリをアンインストールして再インストールします。 
 
 ## <a name="ios-phone-or-tablet"></a>iOS スマートフォンまたはタブレット
 
-- 必ず APNs 証明書を設定してください。 詳しくは [、「iOS デバイス用の APNs 証明書の作成」をご覧ください](create-an-apns-certificate-for-ios-devices.md)。
+- 必ず APNs 証明書をセットアップしてください。 詳細については [、「iOS デバイス用の APNs 証明書を作成する」を参照してください](create-an-apns-certificate-for-ios-devices.md)。
 
-- [ **設定]** の [全般プロファイル] (または [デバイス管理]) で、管理プロファイルがインストール   >  ****   >  **** されていないか確認します。 削除されている場合は、削除します。
+-  **[設定** プロファイル (またはデバイスの管理) で、管理プロファイルがインストール   >  ****   >  **** されていないか確認します。 その場合は、削除します。
 
-- "デバイスの登録に失敗しました" というエラー メッセージが表示された場合は、Microsoft 365 にサインインし、デバイスにサインインしているユーザーに Exchange Online を含むライセンスが割り当てられている必要があります。
+- "デバイスの登録に失敗しました" というエラー メッセージが表示された場合は、Microsoft 365 にサインインし、Exchange Online を含むライセンスがデバイスにサインインしているユーザーに割り当てられている必要があります。
 
-- "Profile failed to install" というエラー メッセージが表示された場合は、次のいずれかを試してください。
+- "Profile がインストールに失敗しました" というエラー メッセージが表示された場合は、次のいずれかを試してください。
 
-    - Safari がデバイスの既定のブラウザーであり、Cookie が無効になされていないか確認します。
+    - Safari がデバイスの既定のブラウザーであり、Cookie が無効にされていないか確認します。
 
-    - デバイスを再起動し、デバイスに移動portal.manage.microsoft.com。 Microsoft 365 ユーザー ID とパスワードでサインインし、プロファイルを手動でインストールします。
+    - デバイスを再起動し、デバイスに移動 portal.manage.microsoft.com。 ユーザー ID とパスワードMicrosoft 365サインインし、手動でプロファイルのインストールを試みる。
 
 ## <a name="windows-rt"></a>Windows RT
 
-- ドメインが Microsoft 365 に設定され、Basic Mobility and Security と一緒に動作する必要があります。 詳細については [、「Basic Mobility and Security のセットアップ」を参照してください](set-up.md)。
+- Basic Mobility and Security を使用するには、ドメインMicrosoft 365設定してください。 詳細については、「Set [up Basic Mobility and Security 」を参照してください](set-up.md)。
     
-- [参加] を選択するのではなく、ユーザーが [ **オン]** を   選択している必要 **があります**。
+- [参加] を選択するのではなく、ユーザーが **[オン** にする] を   選択している必要 **があります**。
 
-## <a name="windows-10-pc"></a>Windows 10 PC
+## <a name="windows-10-pc"></a>Windows 10PC
 
-- ドメインが Microsoft 365 に設定され、Basic Mobility and Security と一緒に動作する必要があります。 詳細については [、「Basic Mobility and Security のセットアップ」を参照してください](set-up.md)。
+- Basic Mobility and Security を使用するには、ドメインMicrosoft 365設定してください。 詳細については、「Set [up Basic Mobility and Security 」を参照してください](set-up.md)。
     
-- Azure Active Directory Premium がない場合は、[接続] を選択 **** するのではなく、ユーザーが [デバイス管理への登録] のみを選択   するように **します**。
+- この設定がないAzure Active Directory プレミアム、ユーザーが [デバイス管理にのみ登録する] **** を選択し、[デバイスの管理] を選択   Connect。 ****
 
 ## <a name="android-phone-or-tablet"></a>Android スマートフォンまたはタブレット
 
@@ -69,6 +69,6 @@ ms.locfileid: "49876854"
 
 - Chrome が最新であり、既定のブラウザーとして設定されている必要があります。
 
-- "このデバイスを登録できなかった" というエラー メッセージが表示された場合は、Microsoft 365 にサインインし、デバイスにサインインしているユーザーに Exchange Online を含むライセンスが割り当てられている必要があります。
+- 「このデバイスを登録できなかった」というエラー メッセージが表示された場合は、Microsoft 365 にサインインし、Exchange Online を含むライセンスがデバイスにサインインしているユーザーに割り当てられている必要があります。
 
-- デバイスの通知領域を確認して、必要なエンド ユーザーの操作が保留中の場合は、操作を完了します。
+- デバイスの通知領域を確認して、必要なエンド ユーザーアクションが保留中か確認し、保留中の場合はアクションを完了します。

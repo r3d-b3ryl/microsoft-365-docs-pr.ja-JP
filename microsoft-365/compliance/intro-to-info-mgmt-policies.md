@@ -20,7 +20,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 情報管理ポリシーを使用して、コンテンツの保持期間や、そのコンテンツでユーザーが実行できるアクションなどを制御し、追跡する方法について説明します。
+description: 情報管理ポリシーを使用して、コンテンツの保持期間やユーザーがコンテンツに対して実行できるアクションを制御および追跡する方法について説明します。
 ms.openlocfilehash: dfb1aeb3dbd3a2b17f18bbd03d5f4d3e198e4c47
 ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT

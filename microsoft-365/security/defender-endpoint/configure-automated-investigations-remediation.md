@@ -43,20 +43,20 @@ ms.locfileid: "52274546"
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>自動調査と修復を有効にする
 
-1. グローバル管理者またはセキュリティ管理者として、Microsoft Defender セキュリティ センター ( ) に移動し [https://securitycenter.windows.com](https://securitycenter.windows.com) 、サインインします。
-2. ナビゲーション ウィンドウで、[設定] を **選択します**。
+1. グローバル管理者またはセキュリティ管理者として、管理者 ( ) にMicrosoft Defender セキュリティ センター [https://securitycenter.windows.com](https://securitycenter.windows.com) サインインします。
+2. ナビゲーション ウィンドウで、[次へ]**を設定。**
 3. [全般] **セクションで** 、[高度な機能 **] を選択します**。
 4. [自動調査]**と [アラートの****自動解決] の両方をオンにします**。
 
 ## <a name="set-up-device-groups"></a>デバイス グループを設定する
 
-1. Microsoft Defender セキュリティ センター ( ) の [設定] ページの [アクセス許可] で、[デバイス [https://securitycenter.windows.com](https://securitycenter.windows.com) グループ]**を選択します**。  
+1. [Microsoft Defender セキュリティ センター ] ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) の [アクセス許可]**設定** で、[デバイス グループ]**を選択します**。 
 2. [+ **デバイス グループの追加] を選択します**。
 3. 次のように、少なくとも 1 つのデバイス グループを作成します。
    - デバイス グループの名前と説明を指定します。
    - [オートメーション レベル **] ボックスの** 一覧で、[完全] などのレベルを選択し、脅威 **を自動的に修復します**。 オートメーション レベルは、修復アクションが自動的に実行されるのか、承認時にのみ実行されるのかを決定します。 詳細については、「自動調査と [修復」の「オートメーション レベル」を参照してください](automation-levels.md)。
    - [メンバー **] セクション** で、1 つ以上の条件を使用してデバイスを識別して含める。
-   - [ユーザー **アクセス] タブ** で、作成するデバイス グループにアクセスできる [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) グループを選択します。
+   - [ユーザー **アクセス] タブ** で [](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)、Azure Active Directoryするデバイス グループにアクセスする必要があるグループを選択します。
 4. デバイス **グループの** 設定が完了したら、[完了] を選択します。
 
 ## <a name="next-steps"></a>次の手順

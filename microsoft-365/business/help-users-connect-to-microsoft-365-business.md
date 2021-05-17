@@ -1,5 +1,5 @@
 ---
-title: ユーザーが Microsoft 365 Business Premium に接続するのに役立ちます
+title: ユーザーがユーザーに接続Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -35,14 +35,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578449"
 ---
-# <a name="help-users-connect-to-microsoft-365-business-premium"></a>ユーザーが Microsoft 365 Business Premium に接続するのに役立ちます
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a>ユーザーがユーザーに接続Microsoft 365 Business Premium
 
-セットアップが完了すると、既定のデバイス ポリシーが設定され、適用する準備が整います。 モバイル デバイスでは、ユーザーはアプリOfficeダウンロードします。 次に、ユーザーが自分の仕事または学校のアカウントでサインインするときにポリシーが適用されます。 一括アップグレードなど、ポリシーを Windows PC に適用する前に、さらに必要な作業があります。 ユーザーがセットアップと接続を行うのに役立つ次のトピックを参照して共有します。
+セットアップが完了すると、既定のデバイス ポリシーが設定され、適用する準備が整います。 モバイル デバイスでは、ユーザーはアプリをOfficeします。 次に、ユーザーが自分の仕事または学校のアカウントでサインインするときにポリシーが適用されます。 一括アップグレードなど、ポリシーを Windows PC に適用する前に、さらに必要な作業があります。 ユーザーがセットアップと接続を行うのに役立つ次のトピックを参照して共有します。
   
-[Microsoft 365 Business Premium ユーザー向け Windows デバイスのセットアップ](set-up-windows-devices.md)
+[ユーザーのWindowsデバイスをMicrosoft 365 Business Premiumする](set-up-windows-devices.md)
   
 [ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する](add-autopilot-devices-and-profile.md)
   
-[Microsoft 365 Business Premium ユーザー向けモバイル デバイスのセットアップ](set-up-mobile-devices.md)
+[ユーザーのモバイル デバイスをMicrosoft 365 Business Premiumする](set-up-mobile-devices.md)
   
 

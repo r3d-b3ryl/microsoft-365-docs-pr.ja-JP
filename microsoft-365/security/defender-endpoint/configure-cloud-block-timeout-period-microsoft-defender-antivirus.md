@@ -55,7 +55,7 @@ ms.locfileid: "52275311"
 
 ## <a name="related-topics"></a>関連項目
 
-- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [クラウドによる保護を通じて次世代のウイルス対策テクノロジを使用する](cloud-protection-microsoft-defender-antivirus.md)
 - [ブロックを一目で構成する](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [クラウドによる保護を有効にする](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md)

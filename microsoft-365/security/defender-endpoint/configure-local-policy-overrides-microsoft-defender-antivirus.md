@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274522"
 ---
-# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーによる Microsoft Defender ウイルス対策ポリシー設定のローカル変更を防止または許可する
+# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーがポリシー設定をローカルで変更Microsoft Defender ウイルス対策または許可する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,15 +32,15 @@ ms.locfileid: "52274522"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-既定では、グループ ポリシー オブジェクトを介してネットワーク内のエンドポイントに展開される Microsoft Defender ウイルス対策設定では、ユーザーがローカルで設定を変更できません。 これは、一部のインスタンスで変更できます。
+既定ではMicrosoft Defender ウイルス対策グループ ポリシー オブジェクトを介してネットワーク内のエンドポイントに展開される設定を使用すると、ユーザーはローカルで設定を変更できません。 これは、一部のインスタンスで変更できます。
 
 たとえば、特定のユーザー グループ (セキュリティ研究者や脅威調査者など) が、使用するエンドポイントの個々の設定をさらに制御できる必要がある場合があります。
 
-## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>Microsoft Defender ウイルス対策設定のローカルオーバーライドを構成する
+## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>ユーザー設定のローカルオーバーライドをMicrosoft Defender ウイルス対策する
 
 これらのポリシーの既定の設定は [無効] **です**。
 
-[有効] に設定 **されている** 場合、エンドポイントのユーザーは、Windows セキュリティ アプリ、ローカル グループ ポリシー設定、 [および PowerShell](microsoft-defender-security-center-antivirus.md) コマンドレット (必要に応じて) に関連付けられた設定を変更できます。
+[有効] に設定 **されている** 場合、エンドポイントのユーザーは、Windows セキュリティ アプリ、ローカル グループ ポリシー設定、および [PowerShell](microsoft-defender-security-center-antivirus.md)コマンドレット (必要に応じて) に関連付けられた設定を変更できます。
 
 次の表に、各上書きポリシー設定と、関連する機能または設定の構成手順を示します。
 
@@ -50,21 +50,21 @@ ms.locfileid: "52274522"
 
 2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に **移動し、[** 管理用 **テンプレート] をクリックします**。
 
-3. ツリーを **Microsoft Defender** ウイルス対策> Windows コンポーネントに展開し、次の表で指定した場所を展開します。
+3. ツリーを展開して **、Windowsコンポーネント> Microsoft Defender ウイルス対策** 次に、次の表で指定した **場所** を指定します。
 
 4. 下の表で指定 **したポリシー設定** をダブルクリックし、オプションを目的の構成に設定します。 **[OK] を** クリックし、他の設定を繰り返します。
 
 5. グループ ポリシー オブジェクトを通常どおり展開します。
 
-Location | Setting | 記事
+場所 | Setting | 記事
 ---|---|---|---
-MAPS | Microsoft MAPS へのレポート用にローカル設定の上書きを構成する | [クラウドによる保護を有効にする](enable-cloud-protection-microsoft-defender-antivirus.md)
+MAPS | Microsoft MAPS へのレポート用にローカル設定の上書きを構成する | [クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md)
 検疫する | 検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する | [スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md)
-リアルタイム保護 | コンピューター上のファイルとプログラムのアクティビティを監視するローカル設定の上書きを構成する | [Microsoft Defender ウイルス対策の常時オン保護と監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
-リアルタイム保護 | 受信および送信ファイルのアクティビティを監視するローカル設定の上書きを構成する | [Microsoft Defender ウイルス対策の常時オン保護と監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
-リアルタイム保護 | ダウンロードしたファイルと添付ファイルをスキャンするローカル設定の上書きを構成する | [Microsoft Defender ウイルス対策の常時オン保護と監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
-リアルタイム保護 | オンの動作監視用にローカル設定の上書きを構成する | [Microsoft Defender ウイルス対策の常時オン保護と監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
-リアルタイム保護 | ローカル設定の上書きを構成してリアルタイム保護を有効にする | [Microsoft Defender ウイルス対策の常時オン保護と監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
+リアルタイム保護 | コンピューター上のファイルとプログラムのアクティビティを監視するローカル設定の上書きを構成する | [常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
+リアルタイム保護 | 受信および送信ファイルのアクティビティを監視するローカル設定の上書きを構成する | [常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
+リアルタイム保護 | ダウンロードしたファイルと添付ファイルをスキャンするローカル設定の上書きを構成する | [常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
+リアルタイム保護 | オンの動作監視用にローカル設定の上書きを構成する | [常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
+リアルタイム保護 | ローカル設定の上書きを構成してリアルタイム保護を有効にする | [常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
 修復 | スケジュールされたフル スキャンを実行して修復を完了するために、時刻のローカル設定の上書きを構成する | [スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md)
 スキャン | CPU 使用率の最大割合に対するローカル設定の上書きを構成する | [スキャンの構成と実行](run-scan-microsoft-defender-antivirus.md)
 スキャン | スケジュール スキャン日のローカル設定の上書きを構成する | [スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
@@ -88,14 +88,14 @@ MAPS | Microsoft MAPS へのレポート用にローカル設定の上書きを�
 
 2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に **移動し、[** 管理用 **テンプレート] をクリックします**。
 
-3. ツリーを **Microsoft Defender ウイルス対策の Windows コンポーネント>展開します**。
+3. ツリーを展開して **、Windowsコンポーネント> Microsoft Defender ウイルス対策。**
 
 4. [リストのローカル **管理者の差し込み動作を構成** する] をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。
 
 > [!NOTE]
-> ローカル リストの結合を無効にすると、フォルダー アクセスの制御設定が上書きされます。 また、ローカル管理者が設定した保護されたフォルダーまたは許可されたアプリも上書きされます。 フォルダー アクセスの制御設定の詳細については [、「Windows セキュリティでブロックされたアプリを許可する」を参照してください](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security)。
+> ローカル リストの結合を無効にすると、フォルダー アクセスの制御設定が上書きされます。 また、ローカル管理者が設定した保護されたフォルダーまたは許可されたアプリも上書きされます。 フォルダー アクセスの制御設定の詳細については、「アプリでブロック[されたアプリ](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security)を許可する」を参照Windows セキュリティ。
 
 ## <a name="related-topics"></a>関連項目
 
-- [Windows 10 の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender ウイルス対策とのエンド ユーザー操作を構成する](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
+- [ユーザーとのエンド ユーザー操作を構成Microsoft Defender ウイルス対策](configure-end-user-interaction-microsoft-defender-antivirus.md)

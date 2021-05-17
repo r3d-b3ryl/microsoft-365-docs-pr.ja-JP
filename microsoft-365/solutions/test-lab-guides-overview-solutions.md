@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - Ent_Architecture
-description: テスト ラボ ガイドを使用して、開発/テスト環境で Microsoft 365 のソリューションとシナリオを構築します。
+description: テスト ラボ ガイドを使用して、開発Microsoft 365環境のソリューションとシナリオを作成します。
 ms.openlocfilehash: 10ddfc9cb9f9135b352be50c555811342ae0bd2b
 ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
@@ -34,6 +34,6 @@ TLG はモジュラーとして機能するように設計されています。T
   
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-セキュリティ [分離を使用してチームを](team-security-isolation-dev-test.md) セットアップするには、このテスト ラボ ガイドをお試しください。
+セキュリティ [分離を使用してチーム](team-security-isolation-dev-test.md) をセットアップするには、このテスト ラボ ガイドを試してください。
 
-Microsoft 365 の機能と構成に関するその他のガイドについては [、Microsoft 365 エンタープライズ](../enterprise/m365-enterprise-test-lab-guides.md)テスト ラボ ガイドを参照してください。
+この機能と構成のMicrosoft 365については、「Microsoft 365テスト ラボ[ガイド」を参照してください](../enterprise/m365-enterprise-test-lab-guides.md)。

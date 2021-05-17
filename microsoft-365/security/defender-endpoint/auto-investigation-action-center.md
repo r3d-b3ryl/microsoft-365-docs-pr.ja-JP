@@ -40,17 +40,17 @@ ms.locfileid: "52274846"
 
 新しい統合アクション センター ( )を発表します [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="Microsoft 365 セキュリティ センターのアクション センター":::
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="セキュリティ センター Microsoft 365センター":::
 
 次の表は、新しい統合アクション センターと前のアクション センターを比較します。
 
 |統合された新しいアクション センター  |前のアクション センター  |
 |---------|---------|
-|デバイスと電子メールの保留中のアクションと完了したアクションを 1 つの場所に一覧表示する <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus Microsoft Defender for Office [365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp))|デバイスの保留中のアクションと完了したアクションの一覧 <br/> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) のみ)   |
+|デバイスと電子メールの保留中のアクションと完了したアクションを 1 つの場所に一覧表示する <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus Microsoft Defender for [Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp))|デバイスの保留中のアクションと完了したアクションの一覧 <br/> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) のみ)   |
 |場所は次の場所です。<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |場所は次の場所です。<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| Microsoft 365 セキュリティ センターで、[アクション センター] **を選択します**。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Microsoft 365 セキュリティ センターのアクション センターへの移動"::: | Microsoft Defender セキュリティ センターで、[自動調査 **] アクション センター**  >  **を選択します**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Microsoft Defender セキュリティ センターからアクション センターに移動する":::  |
+| [セキュリティ センター Microsoft 365] で、[アクション センター]**を選択します**。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="セキュリティ センターのアクション センター Microsoft 365移動する"::: | [自動調査Microsoft Defender セキュリティ センター] で、[**自動調査] アクション** センター  >  **を選択します**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="[アクション] ウィンドウからアクション センターに移動Microsoft Defender セキュリティ センター":::  |
 
-統合アクション センターでは、365 用の Defender for Endpoint と Defender 全体で修復Officeされます。 すべての修復アクションの共通言語を定義し、統合された調査エクスペリエンスを提供します。 
+統合アクション センターでは、エンドポイント用の Defender と Defender の修復アクションが統合され、Office 365。 すべての修復アクションの共通言語を定義し、統合された調査エクスペリエンスを提供します。 
 
 適切なアクセス許可と次のサブスクリプションの 1 つ以上がある場合は、統合アクション センターを使用できます。
 - [Defender for Endpoint](microsoft-defender-endpoint.md)
@@ -62,8 +62,8 @@ ms.locfileid: "52274846"
 
 ## <a name="using-the-action-center"></a>アクション センターの使用
 
-強化された Microsoft 365 セキュリティ センターで統合アクション センターにアクセスするには、次の操作を行います。
-1. Microsoft 365 セキュリティ センター ( ) に移動し [https://security.microsoft.com](https://security.microsoft.com) 、サインインします。
+強化されたセキュリティ センターで統合アクション センター Microsoft 365するには、次の操作を行います。
+1. セキュリティ センター ( ) Microsoft 365に移動し [https://security.microsoft.com](https://security.microsoft.com) 、サインインします。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。 
 
 アクション センターにアクセスすると、[保留中のアクション] と [履歴] **の 2 つのタブ** が **表示されます**。 次の表に、各タブに表示される内容の概要を示します。
@@ -71,7 +71,7 @@ ms.locfileid: "52274846"
 |タブ  |説明  |
 |---------|---------|
 |**Pending**     | 注意が必要なアクションの一覧を表示します。 アクションを一度に 1 つ承認または拒否するか、同じ種類のアクション (検疫ファイルなど) がある場合は複数のアクション **を選択できます**。 <br/>**ヒント**: 保留中のアクションをできるだけ早く確認し、承認 (または拒否 [)](manage-auto-investigation.md) して、自動調査が正時に完了するようにします。 |
-|**履歴**     | 次のようなアクションの監査ログとして機能します。 <br/>- 自動調査の結果として実行された修復アクション <br>- セキュリティ運用チームによって承認された修復アクション  <br/>- Live Response セッション中に適用された、実行されたコマンドと修復アクション  <br/>- Microsoft Defender ウイルス対策の脅威保護機能によって実行された修復アクション  <p>特定のアクションを元に戻す方法を提供します (「完了した操作を元に戻[す」を参照)。](manage-auto-investigation.md#undo-completed-actions)       |
+|**履歴**     | 次のようなアクションの監査ログとして機能します。 <br/>- 自動調査の結果として実行された修復アクション <br>- セキュリティ運用チームによって承認された修復アクション  <br/>- Live Response セッション中に適用された、実行されたコマンドと修復アクション  <br/>- 脅威保護機能によって実行された修復Microsoft Defender ウイルス対策  <p>特定のアクションを元に戻す方法を提供します (「完了した操作を元に戻[す」を参照)。](manage-auto-investigation.md#undo-completed-actions)       |
 
 アクション センターでデータをカスタマイズ、並べ替え、フィルター処理、およびエクスポートできます。
 

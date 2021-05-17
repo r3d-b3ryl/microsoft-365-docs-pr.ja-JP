@@ -26,20 +26,20 @@ ms.locfileid: "49760068"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>モバイル デバイスからメールにアクセスするためのオプション
 
-組織は、メール、予定表、連絡先の仕事用アカウントへのアクセスに使用できるモバイル アプリを制御する設定を構成します。
+組織は、メール、予定表、連絡先の仕事用アカウントにアクセスするために使用できるモバイル アプリを制御する設定を構成します。
 
-Outlook for Android と Outlook for iOS モバイル アプリは、仕事用または学校用の電子メール用に設計されています。 これらのアプリは、重要[](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)なメールをフロント とセンターに保持する[集中受信トレイ[](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470)] や スケジュール アシスタント のような機能を提供します。これは、同僚と一緒に作業する会議時間を検索し、使用可能な会議室を見つけるのに役立ちます。
+Android Outlookおよび iOS Outlookアプリ用のアプリは、仕事や学校のメール用に設計されています。 これらのアプリは、重要[](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)なメールをフロントとセンターに保持するフォーカス受信トレイ、および[スケジュール アシスタント](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470)のような機能を備え、同僚と仕事をする会議の時間を見つけ、利用可能な会議室を簡単に見つけるのに役立ちます。
   
 ## <a name="end-user-experience"></a>エンド ユーザー エクスペリエンス
 
-### <a name="outlook-only"></a>Outlook のみ
+### <a name="outlook-only"></a>Outlookのみ
 
-組織では、Outlook for Android または iOS 用 Outlook モバイル アプリを使用して、会社の電子メール、予定表、連絡先にアクセスする必要があります。 Outlook for Android または Outlook for iOS をダウンロードしてインストールすると、データの同期が開始されます。
+組織では、会社の電子メール、予定表、Outlook連絡先にアクセスOutlook、iOS モバイル アプリの Android または Outlookを使用する必要があります。 Android 用または iOS 用にアプリをダウンロードOutlookインストールすると、データOutlook同期が開始されます。
 
-![Outlook を使用してメールを同期する電子メールの例](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
+![メールの同期に使用Outlookメールの例](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
 
-Outlook の [その他の機能については、「iOS](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) または Android スマートフォン用に Outlook モバイル アプリを最適化する」を参照してください。 問題が発生した [場合は、iOS](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) および Android 用の Outlook ヘルプ センターにアクセスします。
+詳細については[、「iOS Outlook Android](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890)スマートフォンのモバイル アプリを最適化する」をOutlookしてください。 問題が発生[Outlook場合は、iOS](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6)および Android ヘルプ センターの [アプリ] に移動します。
 
-### <a name="any-email-app"></a>任意のメール アプリ
+### <a name="any-email-app"></a>すべてのメール アプリ
 
-組織では、Outlook for Android または iOS モバイル アプリを使用して、メール、予定表、連絡先の仕事用または学校アカウントにアクセスする方法をお勧めします。 今後数時間以内に何もアクションを実行しない場合、メールは自動的に同期を開始します。 Outlook for Android または iOS モバイル アプリを使用する場合、データは Outlook for Android または Outlook for iOS モバイル アプリとのみ同期されます。 サード パーティ製アプリを引き続き使用する場合、データは即座に同期を開始します。
+組織では、Android または iOS モバイル アプリOutlookを使用して、メール、予定表、連絡先の仕事または学校のアカウントにアクセスしてください。 今後数時間以内に何もアクションを実行しない場合、メールは自動的に同期を開始します。 Android または iOS モバイル アプリで Outlook を使用する場合、データは Android の Outlook または iOS モバイル アプリの Outlook にのみ同期されます。 サード パーティ製アプリの使用を続行する場合、データは即座に同期を開始します。

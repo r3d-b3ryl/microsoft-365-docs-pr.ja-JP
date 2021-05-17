@@ -1204,7 +1204,7 @@ UAC </dt>
 クライアントMicrosoft Defender ウイルス対策、重大な問題が原因でこのエラーが発生しました。 エンドポイントが保護されていない可能性があります。 エラーの説明を確認し、以下の関連する <b>ユーザー アクションの手順に</b> 従います。
 <table>
 <tr>
-<th>アクション</th>
+<th>Action</th>
 <th>ユーザー操作</th>
 </tr>
 <tr>
@@ -3116,4 +3116,4 @@ Microsoft Defender ウイルス対策内で検出された脅威を修復でき�
 ## <a name="related-topics"></a>関連項目
 
 - [保護に関するMicrosoft Defender ウイルス対策レポート](report-monitor-microsoft-defender-antivirus.md)
-- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

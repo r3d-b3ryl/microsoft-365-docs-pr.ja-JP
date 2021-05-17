@@ -73,7 +73,7 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
 各ソースには、次の表で説明するように、更新プログラムを発行する頻度に加えて、ネットワークの構成方法に依存する一般的なシナリオがあります。
 
-|Location | シナリオ例 |
+|場所 | シナリオ例 |
 |---|---|
 |Windowsサーバー更新サービス | サーバー更新サービスWindows使用して、ネットワークの更新プログラムを管理しています。|
 |Microsoft Update | エンドポイントを Microsoft Update に直接接続する必要があります。 これは、エンタープライズ ネットワークに不定期に接続するエンドポイントや、Windows サーバー更新サービスを使用して更新プログラムを管理しない場合に役立ちます。|
@@ -265,4 +265,4 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
 - [最新のエンドポイントの更新プログラムを管理する](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [イベントベースの強制更新プログラムを管理する](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [モバイル デバイスと VM の更新プログラムを管理する](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

@@ -1,5 +1,5 @@
 ---
-title: Advanced eDiscovery でのエラー処理の処理
+title: エラーの処理を処理Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Advanced eDiscovery のさまざまな形式のデータの処理に関する概要。
+description: さまざまな形式のデータを処理する方法の概要をAdvanced eDiscovery。
 ms.openlocfilehash: d7969b1ef77fc161cccc85a8dee020ebe21acdb0
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
@@ -25,11 +25,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 01/05/2021
 ms.locfileid: "49751514"
 ---
-# <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Advanced eDiscovery でのエラー処理の処理
+# <a name="work-with-processing-errors-in-advanced-ediscovery"></a>エラーの処理を処理Advanced eDiscovery
 
-*処理* とは、画像ファイルのファイル識別、埋め込みドキュメントと添付ファイルの拡張、テキスト抽出、光学式文字認識 (OCR)、およびそれ以降のコンテンツのインデックス作成のプロセスです。  
+*処理* とは、画像ファイルのファイル識別、埋め込みドキュメントと添付ファイルの拡張、テキスト抽出、光学式文字認識 (OCR))、その後のコンテンツのインデックス作成のプロセスです。  
 
-カストディアンと保管担当者以外のデータ ソースを [ソース] タブのケースに追加すると、部分的にインデックスが作成された Microsoft 365 のアイテムはすべて処理され、完全に検索可能になります。 同様に、Microsoft 365 データ ソースと Microsoft 365 以外のデータ ソースの両方からレビュー セットにコンテンツを追加すると、このコンテンツも処理されます。
+保管担当者と保管担当者以外のデータ ソースを [ソース] タブのケースに追加すると、Microsoft 365 のすべての部分的にインデックス付けされたアイテムが処理され、完全に検索可能になります。 同様に、コンテンツがレビュー セットに追加される場合は、Microsoft 365データ ソースと非 Microsoft 365 データ ソースの両方から、このコンテンツも処理されます。
 
 Advanced eDiscovery の [**処理**] タブでは、さまざまな処理シナリオの高度なインデックスの状態を把握できます。
 

@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: Android または iOS デバイスで Microsoft 365 Business Premium アプリ保護設定を検証する方法について説明します。
+description: Android デバイスまたは iOS デバイスMicrosoft 365 Business Premiumアプリ保護設定を検証する方法について説明します。
 ms.openlocfilehash: a0a4a6e6cff59f66a506929e97c99d361472a68b
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -42,9 +42,9 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
   
 まず、ポリシーを検証するアプリにポリシーが適用されます。
   
-1. Microsoft 365 Business Premium [管理センター](https://portal.office.com)で、[ポリシーの編集 **] ポリシー** \> **に移動します**。
+1. 管理センターで [Microsoft 365 Business Premiumポリシーの](https://portal.office.com)**編集に** \> **移動します**。
     
-2. セットアップ **時に作成した設定** 、または作成した別のポリシーに対して [Android 用のアプリケーション ポリシー] を選択し、Outlook に適用されている例を確認します。 
+2. セットアップ **時に作成した設定**、または作成した別のポリシーに対して [Android 用のアプリケーション ポリシー] を選択し、たとえば、Outlook適用されているを確認します。 
     
     ![Shows all the apps for which this policy protects files.](../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
@@ -52,9 +52,9 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
 
 [ **ポリシーの編集**] ウィンドウで、[ **Office ドキュメントのアクセス制御**] の横の [ **編集**] を選び、[ **ユーザーによるモバイル デバイスの Office ファイルのアクセス方法を管理する**] を展開し、[ **Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある**] が **オン** に設定されていることを確認します。
   
-![[アプリにアクセスするために PIN または指紋を要求する] Officeが [オン] に設定されている必要があります。](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![[アプリにアクセスするために PIN または指紋を要求Office] が [オン] に設定されている必要があります。](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. ユーザーの Android デバイスで Outlook を開き、ユーザーの Microsoft 365 Business Premium 資格情報でサインインします。
+1. ユーザーの Android デバイスで、ユーザーのOutlook資格情報を使用してサインインMicrosoft 365 Business Premiumします。
     
 2. PIN を入力するか、指紋を使用するように求めるメッセージも表示されます。
     
@@ -62,15 +62,15 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>[PIN をリセットする試行の失敗回数] を検証する
 
-[ポリシーの編集] ウィンドウで **、[Office** ドキュメント のアクセス制御] の横にある [編集] を選択し、[ユーザーがモバイル デバイス上の **Office** ファイルにアクセスする方法を管理する] を展開し、失敗した試行回数が一部の数に設定されている場合は **、[PIN** のリセット] をオンにします。 これは既定で 5 です。 
+[ポリシーの編集] ウィンドウで **、[Office** ドキュメント のアクセス制御] の横にある [編集] を選択し、[ユーザーがモバイル デバイス上の **Office** ファイルにアクセスする方法を管理する] を展開し、失敗した試行回数が一部の数に設定された後に **PIN** をリセットするを確認します。 これは既定で 5 です。 
   
-1. ユーザーの Android デバイスで Outlook を開き、ユーザーの Microsoft 365 Business Premium 資格情報でサインインします。
+1. ユーザーの Android デバイスで、ユーザーのOutlook資格情報を使用してサインインMicrosoft 365 Business Premiumします。
     
 2. ポリシーで指定された回数だけ不正な PIN を入力します。 PIN をリセットするために PIN の試行制限に達した **というメッセージ** が表示されます。 
     
     ![After too many incorrect PIN attempts, you need to reset your PIN.](../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
-3. [ **PIN のリセット**] を押します。 ユーザーの Microsoft 365 Business Premium 資格情報でサインインするように求めるメッセージが表示され、新しい PIN を設定する必要があります。
+3. [ **PIN のリセット**] を押します。 ユーザーの資格情報を使用してサインインするように求Microsoft 365 Business Premium、新しい PIN を設定する必要があります。
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>[OneDrive for Business へすべての作業ファイルを保存するようユーザーに強制する] を検証する
 
@@ -78,7 +78,7 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
-1. ユーザーの Android デバイスで Outlook を開き、ユーザーの Microsoft 365 Business Premium 資格情報でサインインし、要求された場合は PIN を入力します。
+1. ユーザーの Android デバイスで、Outlookを開き、ユーザーの資格情報を使用Microsoft 365 Business Premiumサインインし、必要に応じて PIN を入力します。
     
 2. 添付ファイルを含むメールを開き、添付ファイルの情報の横にある下矢印アイコンをタップします。
     
@@ -95,19 +95,19 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
 
 [ポリシーの編集] ウィンドウで **、[Office** ドキュメント アクセス制御] の横にある [編集] を選択し、[ユーザーがモバイル デバイス上の **Office** ファイルにアクセスする方法を管理する] を展開し **、[Office** アプリのアイドル状態が発生した後にユーザーに再度サインインを要求する] が数分間に設定されている必要があります。 これは既定で 30 分です。 
   
-1. ユーザーの Android デバイスで Outlook を開き、ユーザーの Microsoft 365 Business Premium 資格情報でサインインし、要求された場合は PIN を入力します。
+1. ユーザーの Android デバイスで、Outlookを開き、ユーザーの資格情報を使用Microsoft 365 Business Premiumサインインし、必要に応じて PIN を入力します。
     
 2. Outlook の受信トレイが表示されます。Android デバイスを少なくとも 30 分間 (またはポリシーに設定した時間よりも長い時間) 触れずにアイドル状態にします。多くの場合、デバイスが暗くなります。
     
-3. Android デバイスで Outlook に再度アクセスします。
+3. Android Outlookにアクセスします。
     
-4. Outlook に再度アクセスする前に、PIN の入力を求めるメッセージが表示されます。
+4. もう一度アクセスする前に、PIN の入力を求Outlookされます。
     
 ### <a name="validate-protect-work-files-with-encryption"></a>暗号化で作業ファイルの保護を検証する
 
 [ **ポリシーの編集**] ウィンドウで、[ **デバイスの紛失または盗難に対する保護**] の横の [ **編集**] を選び、[ **デバイスの紛失または盗難時の作業ファイルの保護**] を展開し、[ **暗号化を使用して作業ファイルを保護する**] が **オン**、[ **OneDrive for Business へすべての作業ファイルを保存するようユーザーに強制する**] が **オフ** に設定されていることを確認します。
   
-1. ユーザーの Android デバイスで Outlook を開き、ユーザーの Microsoft 365 Business Premium 資格情報でサインインし、要求された場合は PIN を入力します。
+1. ユーザーの Android デバイスで、Outlookを開き、ユーザーの資格情報を使用Microsoft 365 Business Premiumサインインし、必要に応じて PIN を入力します。
     
 2. いくつかの画像ファイルの添付ファイルを含む電子メールを開きます。
     
@@ -131,9 +131,9 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
   
 まず、ポリシーを検証するアプリにポリシーが適用されます。
   
-1. Microsoft 365 Business Premium [管理センター](https://portal.office.com)で、[ポリシーの編集 **] ポリシー** \> **に移動します**。
+1. 管理センターで [Microsoft 365 Business Premiumポリシーの](https://portal.office.com)**編集に** \> **移動します**。
     
-2. セットアップ **時に作成した設定** 、または作成した別のポリシーの iOS 用のアプリケーション ポリシーを選択し、Outlook に適用されている例を確認します。 
+2. セットアップ **時に作成した設定**、または作成した別のポリシーに対して iOS 用のアプリケーション ポリシーを選択し、たとえば、iOS に適用Outlookします。 
     
     ![Shows all the apps for which this policy protects files.](../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
@@ -141,9 +141,9 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
 
 [ **ポリシーの編集**] ウィンドウで、[ **Office ドキュメントのアクセス制御**] の横の [ **編集**] を選び、[ **ユーザーによるモバイル デバイスの Office ファイルのアクセス方法を管理する**] を展開し、[ **Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある**] が **オン** に設定されていることを確認します。
   
-![[アプリにアクセスするために PIN または指紋を要求する] Officeが [オン] に設定されている必要があります。](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![[アプリにアクセスするために PIN または指紋を要求Office] が [オン] に設定されている必要があります。](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. ユーザーの iOS デバイスで Outlook を開き、ユーザーの Microsoft 365 Business Premium 資格情報でサインインします。
+1. ユーザーの iOS デバイスで、Outlookを開き、ユーザーの資格情報でサインインMicrosoft 365 Business Premiumします。
     
 2. PIN を入力するか、指紋を使用するように求めるメッセージも表示されます。
     
@@ -151,15 +151,15 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>[PIN をリセットする試行の失敗回数] を検証する
 
-[ポリシーの編集] ウィンドウで **、[Office** ドキュメント のアクセス制御] の横にある [編集] を選択し、[ユーザーがモバイル デバイス上の **Office** ファイルにアクセスする方法を管理する] を展開し、失敗した試行回数が一部の数に設定されている場合は **、[PIN** のリセット] をオンにします。 これは既定で 5 です。 
+[ポリシーの編集] ウィンドウで **、[Office** ドキュメント のアクセス制御] の横にある [編集] を選択し、[ユーザーがモバイル デバイス上の **Office** ファイルにアクセスする方法を管理する] を展開し、失敗した試行回数が一部の数に設定された後に **PIN** をリセットするを確認します。 これは既定で 5 です。 
   
-1. ユーザーの iOS デバイスで Outlook を開き、ユーザーの Microsoft 365 Business Premium 資格情報でサインインします。
+1. ユーザーの iOS デバイスで、Outlookを開き、ユーザーの資格情報でサインインMicrosoft 365 Business Premiumします。
     
 2. ポリシーで指定された回数だけ不正な PIN を入力します。 PIN をリセットするために PIN の試行制限に達した **というメッセージ** が表示されます。 
     
     ![After too many incorrect PIN attempts, you need to reset your PIN.](../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
-3. [ **OK**] を押します。 ユーザーの Microsoft 365 Business Premium 資格情報でサインインするように求めるメッセージが表示され、新しい PIN を設定する必要があります。
+3. [ **OK**] を押します。 ユーザーの資格情報を使用してサインインするように求Microsoft 365 Business Premium、新しい PIN を設定する必要があります。
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>[OneDrive for Business へすべての作業ファイルを保存するようユーザーに強制する] を検証する
 
@@ -167,13 +167,13 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
-1. ユーザーの iOS デバイスで Outlook を開き、ユーザーの Microsoft 365 Business Premium 資格情報でサインインし、必要に応じて PIN を入力します。
+1. ユーザーの iOS デバイスで、Outlookを開き、ユーザーの資格情報を使用Microsoft 365 Business Premiumサインインし、要求された場合は PIN を入力します。
     
 2. 添付ファイルを含むメールを開き、添付ファイルを開き、画面の下部で [ **保存**] を選びます。 
     
     ![Tap the Save option after you open an attachment to try to save it.](../media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
   
-3. OneDrive for Business のオプションのみが表示されます。 存在しない場合は、[アカウントの **追加] をタップ** し、[ストレージ アカウントの追加] 画面から **[OneDrive for Business]** **を選択** します。 プロンプトが表示されたら、エンド ユーザーの Microsoft 365 Business Premium にサインインするように指定します。 
+3. OneDrive for Business のオプションのみが表示されます。 アカウントを追加しない場合は、[アカウントの **追加]** をタップOneDrive for Business **[アカウント** の追加] 画面Storage **選択** します。 プロンプトが表示されたら、エンド ユーザー Microsoft 365 Business Premiumにサインインするように指定します。 
     
     [ **保存**] をタップして、[ **OneDrive for Business**] を選びます。
     
@@ -181,19 +181,19 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
 
 [ポリシーの編集] ウィンドウで **、[Office** ドキュメント アクセス制御] の横にある [編集] を選択し、[ユーザーがモバイル デバイス上の **Office** ファイルにアクセスする方法を管理する] を展開し **、[Office** アプリのアイドル状態が発生した後にユーザーに再度サインインを要求する] が数分間に設定されている必要があります。 これは既定で 30 分です。 
   
-1. ユーザーの iOS デバイスで Outlook を開き、ユーザーの Microsoft 365 Business Premium 資格情報でサインインし、必要に応じて PIN を入力します。
+1. ユーザーの iOS デバイスで、Outlookを開き、ユーザーの資格情報を使用Microsoft 365 Business Premiumサインインし、要求された場合は PIN を入力します。
     
 2. Outlook の受信トレイが表示されます。iOS デバイスを少なくとも 30 分間 (またはポリシーに設定した時間よりも長い時間) 触れずに放置します。多くの場合、デバイスが暗くなります。
     
-3. iOS デバイスの Outlook にもう一度アクセスします。
+3. iOS Outlookにアクセスします。
     
-4. Outlook に再度アクセスする前に、PIN の入力を求めるメッセージが表示されます。
+4. もう一度アクセスする前に、PIN の入力を求Outlookされます。
     
 ### <a name="validate-protect-work-files-with-encryption"></a>暗号化で作業ファイルの保護を検証する
 
 [ **ポリシーの編集**] ウィンドウで、[ **デバイスの紛失または盗難に対する保護**] の横の [ **編集**] を選び、[ **デバイスの紛失または盗難時の作業ファイルの保護**] を展開し、[ **暗号化を使用して作業ファイルを保護する**] が **オン**、[ **OneDrive for Business へすべての作業ファイルを保存するようユーザーに強制する**] が **オフ** に設定されていることを確認します。
   
-1. ユーザーの iOS デバイスで Outlook を開き、ユーザーの Microsoft 365 Business Premium 資格情報でサインインし、必要に応じて PIN を入力します。
+1. ユーザーの iOS デバイスで、Outlookを開き、ユーザーの資格情報を使用Microsoft 365 Business Premiumサインインし、要求された場合は PIN を入力します。
     
 2. いくつかの画像ファイルの添付ファイルを含む電子メールを開きます。
     

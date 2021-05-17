@@ -1,6 +1,6 @@
 ---
 title: Microsoft Secure Score に関する情報
-description: Microsoft 365 セキュリティ センターの Microsoft Secure Score に加わる新しい変更について説明します。
+description: セキュリティ センターで Microsoft Secure Score に加わる新しい変更Microsoft 365説明します。
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -29,7 +29,7 @@ ms.locfileid: "51569805"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score は https://security.microsoft.com/securescore [、Microsoft 365](overview-security-center.md)セキュリティ センターにあります。
+Microsoft Secure Score は、セキュリティ https://security.microsoft.com/securescore センターのMicrosoft 365[にあります](overview-security-center.md)。
 
 ## <a name="proposed-changes"></a>Proposed changes
 

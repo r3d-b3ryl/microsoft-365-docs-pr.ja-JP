@@ -48,9 +48,9 @@ PowerShell コマンドレットまたは WMI クラス[ `Set-MpPreference` を�
 
 4. 次の表を使用して場所を選択し、必要に応じてポリシーを編集します。 
 
-5. **[OK]** をクリックします。
+5. **[OK]** を選択します。
 
-|Location | Setting | 説明 | 既定の設定 (構成されていない場合) |
+|場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 |スキャン | システム復元ポイントの作成 | クリーニングまたはスキャンが試行される前に、システムの復元ポイントが毎日作成されます | 無効|
 |スキャン | スキャン履歴フォルダーからのアイテムの削除を有効にする | スキャン履歴に保持する日数を指定する | 30 日間 |
@@ -76,4 +76,4 @@ PowerShell コマンドレットまたは WMI クラス[ `Set-MpPreference` を�
 - [エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
 - [エンド ユーザー の操作をMicrosoft Defender ウイルス対策する](configure-end-user-interaction-microsoft-defender-antivirus.md)
 - [スキャンと修復の結果をカスタマイズ、開始Microsoft Defender ウイルス対策確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 共有メールボックスで問題が発生した場合は、次の解決策を試してください。
+description: 共有メールボックスに問題が発生した場合は、次の解決策を試してください。
 ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
@@ -36,19 +36,19 @@ ms.locfileid: "49926488"
 ## <a name="error-when-creating-shared-mailboxes"></a>共有メールボックスを作成するときにエラーが発生する
 <a name="bkmk_Fix"> </a>
 
-エラー メッセージが表示された場合は、プロキシ アドレス "smtp:<共有メールボックス名" が既にプロキシ アドレスまたは **\> " " の LegacyExchangeDN によって使用されています \<name> 。Please choose another proxy address**, it're trying to give the shared mailbox a name that's already in use. たとえば、info@domain1 と info@domain2 という名前の共有メールボックスが必要とします。 これを行うには 2 つの方法があります。
+エラー メッセージが表示された場合は、プロキシ アドレス "smtp:<共有メールボックス名" が既に "" のプロキシ アドレスまたは **\> LegacyExchangeDN によって使用されています。 \<name>別のプロキシ アドレスを選択** してください。これは、共有メールボックスに既に使用されている名前を付けようとしているという意味です。 たとえば、info@domain1 と info@domain2 という名前の共有メールボックスが必要とします。 これを行うには次に示す 2 つの方法があります。
 
-  - Windows PowerShell を使用します。 手順については、次のブログ投稿を参照してください。異なるドメインで同じエイリアスを持つ共有 [メールボックスを作成する](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - Windows PowerShell を使用します。 手順については、このブログの投稿を参照してください。 異なるドメインで同じエイリアスを使用 [して共有メールボックスを作成する](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
-  - 2 番目の共有メールボックスに、最初とは異なる名前を付け、エラーを回避します。 次に、管理センターで共有メールボックスの名前を変更します。
+  - エラーを回避するには、2 番目の共有メールボックスに最初とは異なる名前を付きます。 次に、管理センターで共有メールボックスの名前を変更します。
 
-## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>共有メールボックスを使用するときに送信アクセス許可を持たない場合のエラー
+## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>共有メールボックスの使用時に送信アクセス許可を持たない場合のエラー
 
-共有メールボックスを作成し、そのメールボックスからメッセージを送信すると、次のメッセージが表示されることがあります。
+共有メールボックスを作成し、そのメールボックスからメッセージを送信しようとする場合は、次の情報を取得できます。
 
-**このメッセージを送信する必要があります。指定したユーザーの代わりにメッセージを送信するアクセス許可を持っている。**
+**このメッセージを送信する必要があります。指定したユーザーに代わってメッセージを送信するアクセス許可を持つ必要があります。**
 
-このメッセージは、Microsoft 365 でレプリケーションの遅延の問題が発生している場合に表示されます。 新しい共有メールボックス (または追加されたユーザー) に関する情報がすべてのデータ センターにレプリケートされた場合は、1 時間以上後に削除されます。 1 時間待って、もう一度メッセージを送信してください。
+このメッセージは、レプリケーションMicrosoft 365が発生している場合に表示されます。 新しい共有メールボックス (または追加ユーザー) に関する情報がすべてのデータ センターにレプリケートされた場合、1 時間かそれ以上で削除する必要があります。 1 時間待って、もう一度やり直してメッセージを送信します。
 
 ## <a name="related-articles"></a>関連記事
 

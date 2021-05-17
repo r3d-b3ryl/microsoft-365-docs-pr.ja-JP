@@ -34,7 +34,7 @@ ms.locfileid: "52275266"
 > クラウド Microsoft Defender ウイルス対策は、ネットワークとエンドポイントに更新された保護を提供するためのメカニズムです。 クラウド サービスと呼ばれるが、単にクラウドに保存されているファイルの保護ではありません。むしろ、分散リソースと機械学習を使用して、従来のセキュリティ インテリジェンス更新プログラムよりもはるかに高速な速度でエンドポイントに保護を提供します。
 
 Microsoft Defender ウイルス対策は、複数の検出および防止テクノロジを使用して、正確でリアルタイムでインテリジェントな保護を提供します。 Microsoft Defender for Endpoint 次世代保護の中核となる高度なテクノロジ[を知る](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
-![Microsoft Defender AV エンジンの一覧](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+![Microsoft Defender AV エンジンのリスト](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 クラウドによる保護Microsoft Defender ウイルス対策オンまたはオフを切り替える方法は、次に示します。
 
@@ -97,7 +97,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
 
 4. ツリーを展開して **、MAPS Windowsコンポーネント> Microsoft Defender ウイルス対策 >します。**
 
-5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 **[OK]** をクリックします。
+5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 **[OK]** を選択します。
 
 6. 詳細な分析が **必要な場合は、[ファイル サンプルの送信] をダブルクリックします**。 最初のオプションが [有効] に設定 **され** 、他のオプションが次のどちらかに設定されている必要があります。
 
@@ -108,7 +108,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
         > [ **安全なサンプルを送信する** (1)] オプションは、ほとんどのサンプルが自動的に送信されるという意味です。 個人情報が含まれている可能性があるファイルは、引き続きプロンプトが表示され、追加の確認が必要です。
         > オプションを Always **Prompt** (0) に設定すると、デバイスの保護状態が低下します。 [送信しない **]** (2) に設定 [](configure-block-at-first-sight-microsoft-defender-antivirus.md)すると、Microsoft Defender for Endpoint の一目でブロック機能が機能しません。
 
-7. **[OK]** をクリックします。
+7. **[OK]** を選択します。
 
 ## <a name="use-powershell-cmdlets-to-turn-on-cloud-delivered-protection"></a>PowerShell コマンドレットを使用してクラウド配信の保護を有効にする
 
@@ -141,13 +141,13 @@ SubmitSamplesConsent
 ## <a name="turn-on-cloud-delivered-protection-on-individual-clients-with-the-windows-security-app"></a>アプリを使用して個々のクライアントでクラウド配信の保護Windows セキュリティする
 
 > [!NOTE]
-> [レポート用 **にローカル** 設定の上書きを構成する] 設定が[無効]に設定されている場合、Windows 設定 のクラウドベースの保護設定はグレー表示され、使用できなくなります。 グループ ポリシー オブジェクトを使用して行った変更は、最初に個々のエンドポイントに展開してから、その設定を新しいエンドポイントで更新するWindows 設定。
+> [レポート用 **にローカル** 設定の上書きを構成する] 設定が[無効]に設定されている場合、Windows 設定 のクラウドベースの保護設定はグレー表示され、使用できなくなります。 グループ ポリシーを使った変更は、Windows の設定で設定を更新する前に、最初に個別のエンドポイントに展開する必要があります。
 
 1. タスク バー Windows セキュリティ、または Defender のスタート メニューを検索して、アプリを開 **きます**。
 
 2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) を選択し、[ウイルス対策] &設定ラベルを **選択** します。
 
-    ![アプリ内のウイルス&設定ラベルのスクリーンショットWindows セキュリティします。](images/defender/wdav-protection-settings-wdsc.png)
+    ![Windows セキュリティ アプリの [ウイルスと脅威の防止の設定] ラベルのスクリーンショット](images/defender/wdav-protection-settings-wdsc.png)
 
 3. [クラウドベース **の保護] と [自動** サンプル **送信] が** [オン] に切り替わるか確認 **します**。
 
@@ -163,4 +163,4 @@ SubmitSamplesConsent
 - [Defender コマンドレット](/powershell/module/defender/)
 - [Microsoft クラウドによる保護を使用する方法は、Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)
 - [マルウェア対策ポリシーを作成して展開する方法: クラウド保護サービス](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

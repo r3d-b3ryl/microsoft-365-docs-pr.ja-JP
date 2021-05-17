@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ウイルス対策の診断データを収集する
-description: ツールを使用してデータを収集し、Microsoft Defender ウイルス対策のトラブルシューティングを行う
+title: データの診断データを収集Microsoft Defender ウイルス対策
+description: ツールを使用してデータを収集し、データのトラブルシューティングMicrosoft Defender ウイルス対策
 keywords: トラブルシューティング、エラー、修正、更新コンプライアンス、oms、モニター、レポート、Microsoft Defender av、グループ ポリシー オブジェクト、設定、診断データ
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -63,7 +63,7 @@ ms.locfileid: "52274786"
 > [!NOTE]
 > cab ファイルを別のパスまたは UNC 共有にリダイレクトするには、次のコマンドを使用します。 `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>詳細については、「診断データ [を UNC 共有にリダイレクトする」を参照してください](#redirect-diagnostic-data-to-a-unc-share)。
 
-5. これらのファイル.cab、Microsoft サポートからアクセスできる場所にコピーします。 たとえば、パスワードで保護された OneDrive フォルダーを使用して共有できます。
+5. これらのファイル.cab、Microsoft サポートからアクセスできる場所にコピーします。 たとえば、パスワードで保護されたフォルダー OneDrive共有できるフォルダーがあります。
 
 > [!NOTE]
 >更新コンプライアンスに問題がある場合は、更新コンプライアンス サポート メール<a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a"></a>テンプレートを使用して電子メールを送信し、テンプレートに次の情報を入力します。
@@ -120,4 +120,4 @@ SupportLogLocation パラメーターを使用すると、次のようなフォ�
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Defender ウイルス対策レポートのトラブルシューティング](troubleshoot-reporting.md)
+- [レポートのMicrosoft Defender ウイルス対策トラブルシューティング](troubleshoot-reporting.md)

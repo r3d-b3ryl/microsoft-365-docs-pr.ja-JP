@@ -32,16 +32,16 @@ ms.locfileid: "51578581"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
-多要素認証は、ユーザーと従業員が Microsoft 365 にサインインする複数の方法を提供する必要があるという意味で、ビジネスをセキュリティで保護する最も簡単な方法の 1 つです。
+多要素認証とは、ユーザーと従業員が Microsoft 365 にサインインする複数の方法を提供する必要があるという意味で、ビジネスをセキュリティで保護する最も簡単な方法の 1 つです。
 
 ## <a name="try-it"></a>お試しください!
 
-1. [https://admin.microsoft.com](https://admin.microsoft.com) で管理センターにアクセスします。
-1. [  **すべて表示] を** 選択し **、Azure Active Directory 管理センターを選択します**。
-1. [Azure **Active Directory] 、[****プロパティ] 、[セキュリティ****の管理] の既定値を選択します**。
+1. [https://admin.microsoft.com](https://admin.microsoft.com) から管理センターにアクセスします。
+1. [**すべて表示] を** 選択し、[管理センター] **Azure Active Directoryを選択します**。
+1. [セキュリティ **Azure Active Directory、****プロパティ、セキュリティ****の管理の既定値を選択します**。
 1. [セキュリティ **の既定値を有効にする] で、[** はい] **を選択し** 、[保存] **を選択します**。
 
 > [!NOTE]
 > 新しいサブスクリプションの場合、セキュリティで保護された既定値は自動的に有効になります。
 
-次に、選択した従業員がサインインすると、2 番目の形式の認証のために、自分の携帯電話に Microsoft Authenticator アプリをセットアップするメッセージが表示されます。
+次に、選択した従業員がサインインすると、2 番目の形式の認証のために携帯電話に Microsoft Authenticator アプリをセットアップする必要があります。

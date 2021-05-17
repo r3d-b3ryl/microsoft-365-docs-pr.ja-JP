@@ -69,4 +69,4 @@ PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-a
 ## <a name="related-articles"></a>関連記事
 
 - [スキャンと修復の結果をカスタマイズ、開始Microsoft Defender ウイルス対策確認する](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Microsoft Defender ウイルス対策のWindows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

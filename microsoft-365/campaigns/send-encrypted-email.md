@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Outlook を使用して暗号化されたメールを送信する方法について学習します。
+description: 電子メールを使用して暗号化された電子メールを送信するOutlook。
 ms.openlocfilehash: 209734bd52d1d97278d5632f035723758fe2e016
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -47,21 +47,21 @@ ms.locfileid: "51576975"
 
 ## <a name="set-it-up"></a>設定する
 
-定義済みのルールを満たしないメッセージや管理者がルールを設定しないメッセージを暗号化する場合は、メッセージを送信する前にさまざまな暗号化ルールを適用できます。 Outlook 2013 または 2016、または Outlook 2016 for Mac から暗号化されたメッセージを送信するには、[オプション **> アクセス** 許可] を選択し、必要な保護オプションを選択します。 また、Web 上の Outlook で [保護] ボタンを選択して、暗号化されたメッセージを送信することもできます。 詳細については、「[PC 版 Outlook での暗号化されたメッセージの送信、表示、および返信](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)」を参照してください。
+定義済みのルールを満たしないメッセージや管理者がルールを設定しないメッセージを暗号化する場合は、メッセージを送信する前にさまざまな暗号化ルールを適用できます。 Outlook 2013 または 2016、または Outlook 2016 for Mac から暗号化されたメッセージを送信するには、[オプション>**アクセス** 許可] を選択し、必要な保護オプションを選択します。 また、暗号化されたメッセージを送信するには、Web 上の [保護] Outlookを選択します。 詳細については、「[PC 版 Outlook での暗号化されたメッセージの送信、表示、および返信](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)」を参照してください。
 
 ## <a name="admin-settings"></a>管理設定
 
-電子メール暗号化の設定については [、「Microsoft 365 のメール暗号化」を参照してください](../compliance/email-encryption.md)。
+電子メール暗号化の設定については、「メール暗号化」の「Microsoft 365」[を参照してください](../compliance/email-encryption.md)。
 
 ### <a name="automatically-encrypt-email-messages"></a>電子メール メッセージを自動的に暗号化する
 
 管理者はメール フロー ルールを作成して、キャンペーンから送信および受信される電子メール メッセージを自動的に保護できます。 送信電子メール メッセージを暗号化するルールを設定し、組織内から送信される暗号化されたメッセージ、または組織から送信された暗号化されたメッセージへの返信から暗号化を削除します。
 
-メール フロー ルールを作成して、新しい 365 メッセージ暗号化 (OME) 機能Officeメール メッセージを暗号化します。 Exchange 管理センター (EAC) を使用して、新しい OME 機能を使用してメッセージの暗号化をトリガーするメール フロー ルールを定義します。 
+メール フロー ルールを作成して、新しいメール メッセージ (OME) 機能Office 365 Message Encryptionメール メッセージを暗号化します。 新しい OME 機能を使用してメッセージ暗号化をトリガーするメール フロー ルールを定義するには、Exchange管理センター (EAC) を使用します。 
 
 1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている仕事または学校のアカウントを使用してサインインします。
 2. [管理] タイルを選択します。
-3. 管理センターで、[管理センター] **を選択>します**。
+3. 管理センターで、[管理センター]**を選択> Exchange。**
 
 詳細については、「メール メッセージを暗号化 [するメール フロー ルールを定義する」を参照してください](../compliance/define-mail-flow-rules-to-encrypt-email.md)。
 

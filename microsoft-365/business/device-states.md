@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Microsoft 365 for business の管理ホームの [デバイスアクション] リストのさまざまなデバイスの状態について説明します。
+description: ビジネス向け管理ホームの [デバイスアクション] リストで、さまざまなデバイスMicrosoft 365確認します。
 ms.openlocfilehash: e6f1b428413d094e0a1ce3afb026528074038736
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -35,7 +35,7 @@ ms.locfileid: "51578469"
 ---
 # <a name="device-states"></a>デバイス状態
 
-この記事は、Microsoft 365 Business Premium に適用されます。
+この記事は、このMicrosoft 365 Business Premium。
 
 [ **デバイス アクション**] ([管理者のホーム] \> [ **デバイス アクション**]) の一覧にあるデバイスは、次のいずれかの状態になります。
   
@@ -43,9 +43,9 @@ ms.locfileid: "51578469"
   
 |**状態**|**説明**|
 |:-----|:-----|
-|Intune で管理  <br/> |Microsoft 365 Business Premium によって管理されます。  <br/> |
-|インベントリからの削除待ち  <br/> |Microsoft 365 Business Premium は、デバイスから会社のデータを削除する準備をしています。  <br/> |
-|回収を実行中です  <br/> |Microsoft 365 Business Premium は現在、デバイスから会社のデータを削除しています。  <br/> |
+|Intune で管理  <br/> |管理は、Microsoft 365 Business Premium。  <br/> |
+|インベントリからの削除待ち  <br/> |Microsoft 365 Business Premiumから会社のデータを削除する準備が整っています。  <br/> |
+|回収を実行中です  <br/> |Microsoft 365 Business Premium現在、デバイスから会社のデータを削除しています。  <br/> |
 |インベントリからの削除失敗  <br/> | 会社データの削除アクションが失敗しました。  <br/> |
 |取り消しを取り消す  <br/> |削除アクションが取り消されました。  <br/> |
 |ワイプの保留中  <br/> |出荷時のリセットを開始するのを待っています。  <br/> |
@@ -54,5 +54,5 @@ ms.locfileid: "51578469"
 |ワイプがキャンセルされました  <br/> |出荷時のワイプが取り消されました。  <br/> |
 |異常  <br/> |アクションは保留中 (または進行中) ですが、デバイスは 30 日以上チェックインされません。  <br/> |
 |削除の保留中  <br/> |削除アクションが保留中です。  <br/> |
-|検出  <br/> |Microsoft 365 Business Premium がデバイスを検出しました。  <br/> |
+|検出  <br/> |Microsoft 365 Business Premiumデバイスが検出されました。  <br/> |
    

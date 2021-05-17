@@ -21,7 +21,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Microsoft 365 のプライバシーと同意通知を使用してサインイン ページをカスタマイズします。
+description: ユーザーのプライバシーと同意通知を使用してサインイン ページをカスタマイズMicrosoft 365。
 ms.openlocfilehash: 652566ca1caf46cd224e5205da3bebfd7b25cefa
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "51579808"
 
 ビジネスやキャンペーンを使用すると、サインイン ページにプライバシーと同意通知を追加することで、法執行機関がオンライン犯罪者に対して法的告発を容易にすることができます。
 
-ブランド化を使用してサインイン ページをカスタマイズできます。 ユーザーがサインインするのに役立つテキストを追加したり、Microsoft 365 リソースにアクセスするための法的要件や制限を指摘したりできます。
+ブランド化を使用してサインイン ページをカスタマイズできます。 ユーザーがサインインしたり、リソースにアクセスするための法的要件や制限を指摘したりするために、テキストをMicrosoft 365できます。
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>サインイン ページのテキストをカスタマイズする
 

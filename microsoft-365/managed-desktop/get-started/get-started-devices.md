@@ -1,7 +1,7 @@
 ---
 title: ユーザーがデバイスを使えるようにする
 description: ''
-keywords: Microsoft マネージドデスクトップ、デバイス、はじめに Microsoft 365
+keywords: Microsoft Managed Desktop, device, get started, Microsoft 365
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -18,32 +18,32 @@ ms.locfileid: "47289449"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>ユーザーがデバイスを使えるようにする
 
-Microsoft マネージドデスクトップデバイスがユーザーの手に入ってきたら、すぐに作業を開始できます。 デバイスには、現在のバージョンの Windows が事前に構成されており、ユーザーがセットアップを完了したときに、構成とアプリがクラウドからインストールされます。 
+Microsoft Managed Desktop デバイスがユーザーの手に入った後、そのデバイスの使用を開始するのは迅速かつ簡単です。 デバイスは、現在のバージョンの Windows で事前構成され、ユーザーがセットアップを完了すると、構成とアプリがクラウドからインストールされます。 
  
-これをさらに簡単にするために、最初のセットアップについて説明するガイドを提供し、必要に応じて、セットアップと後で使用するためのヘルプリソースを用意しています。 このガイドをカスタマイズして、組織に固有の特定の詳細を含めることができます。 その後、自分のデバイスと共に、ユーザーにガイドを直接配布します。 2つのバージョンがあります。1つは Microsoft のサポートシステム (Get Help app) を使用する組織用で、もう1つはユーザーに対して別のサポートを提供するものです。
+これをさらに簡単にするために、初期セットアップをユーザーに説明し、必要に応じてセットアップと後で使用するためのヘルプ リソースを提供するガイドを提供します。 このガイドをカスタマイズして、組織固有の特定の詳細を含めることができます。 その後、ガイドをデバイスと共にユーザーに直接配布します。 Microsoft のサポート システム (Get Help app) を使用している組織用の 2 つのバージョンがあります。1 つは、ユーザーに代替サポートを提供する組織用です。
 
-## <a name="to-prepare-the-guide"></a>ガイドを準備するには
+## <a name="to-prepare-the-guide"></a>ガイドを準備する
 
 1. 組織に適したバージョンをダウンロードします。
-- [Microsoft マネージドデスクトップ-デバイスの使用を開始する (ヘルプバージョンを取得する)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) -ユーザーが Microsoft のサポートシステムを使用する場合は、このバージョンを使用してください。
-- [Microsoft マネージドデスクトップ-デバイスで](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) の使用を開始する-ユーザーが Microsoft のサポートシステムを使用し *ない* 場合は、このバージョンを使用してください。
-2. PDF ファイルを開くことができる任意のアプリを使用して、組織に関連する詳細情報を記入します。
-    - セットアップを続行するためにユーザーが接続する必要のあるネットワークの名前 (ガイドの手順 3)
-    - 組織の Azure テナントアカウントの名前 (ガイドの手順 4)
+- [Microsoft Managed Desktop - デバイス](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) の使用を開始する (ヘルプ バージョンの取得) - ユーザーが Microsoft のサポート システムを使用する場合は、このバージョンを使用します。
+- [Microsoft Managed Desktop - デバイスの使用を](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)開始する -ユーザーが Microsoft のサポート システムを使用しない場合は、このバージョンを使用します。
+2. PDF ファイルを開くことができる任意のアプリを使用して、組織に関連する詳細を入力します。
+    - セットアップを続行するためにユーザーが接続するネットワークの名前 (ガイドの手順 3)
+    - 組織の Azure テナント アカウントの名前 (ガイドの手順 4)
     - 組織の内部 IT サポートの連絡先情報 (2 ページ目の上部)
 3. 編集した PDF を保存し、ユーザーに配布します。 
 
-## <a name="ready-to-use-guide"></a>「すぐに使用できるガイド」
+## <a name="ready-to-use-guide"></a>"すぐに使用できるガイド"
 
-また、カスタマイズする必要がない組織に対して、より一般的なバージョンのガイドを提供しています。 2つのバージョンがあります。1つは Microsoft のサポートシステム (Get Help app) を使用する組織用で、もう1つはユーザーに対して別のサポートを提供するものです。 
+また、カスタマイズする必要がない組織向けガイドのより一般的なバージョンも提供しています。 Microsoft のサポート システム (Get Help app) を使用している組織用の 2 つのバージョンがあります。1 つは、ユーザーに代替サポートを提供する組織用です。 
 
-- [Microsoft マネージドデスクトップ-デバイスの使用を開始します (ヘルプバージョンの準備ができ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) ています)。ユーザーが Microsoft のサポートシステムを使用する場合は、このバージョンをご利用ください。
-- [Microsoft マネージドデスクトップ-デバイスの使用を開始します (使用可能な状態)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) 。ユーザーが Microsoft のサポートシステムを使用し *ない* 場合は、このバージョンを使用してください。
+- [Microsoft Managed Desktop - デバイス](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) の使用を開始する (ヘルプ バージョンの取得 - すぐに使用できる) - ユーザーが Microsoft のサポート システムを使用する場合は、このバージョンを使用します。
+- [Microsoft Managed Desktop - デバイスの](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf)使用を開始する (すぐに使用できます) -ユーザーが Microsoft のサポート システムを使用しない場合は、このバージョンを使用します。
 
-この時点で、アプリの展開に進むことができます。
+この時点で、アプリの展開に進む準備が整いました。
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの使用を開始する手順
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft Managed Desktop の使用を開始する手順
 
 1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)
 2. [条件付きアクセスを調整する](conditional-access.md)
@@ -51,5 +51,5 @@ Microsoft マネージドデスクトップデバイスがユーザーの手に�
 4. [Intune 会社ポータルを展開する](company-portal.md)
 5. [Enterprise State Roaming を有効にする](enterprise-state-roaming.md)
 6. [デバイスをセットアップする](set-up-devices.md)
-7. デバイスを使用できるようにユーザーを取得する (このトピック)
+7. ユーザーがデバイスを使用する準備を整える (このトピック)
 8. [アプリを展開する](deploy-apps.md)

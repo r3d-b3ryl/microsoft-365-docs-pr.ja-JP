@@ -19,21 +19,21 @@ ms.locfileid: "51574549"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、印刷リソースを準備する
 
-Microsoft Managed Desktop に登録する準備が整ったら、印刷要件を評価し、環境に適切なアプローチを決定する必要があります。 次の 3 つのオプションがあります。
+アプリケーションに登録する準備が整ったMicrosoft マネージド デスクトップ、印刷要件を評価し、環境に適切なアプローチを決定する必要があります。 次の 3 つのオプションがあります。
  
-- Microsoft ユニバーサル 印刷ソリューションを展開して、Microsoft Managed Desktop デバイスがプリンターを簡単に検出できます。 詳細については [、「What is Universal Print 」を参照してください](/universal-print/fundamentals/universal-print-whatis)。
+- Microsoft Universal Print ソリューションを展開して、デバイスからプリンター Microsoft マネージド デスクトップ簡単に見つけられます。 詳細については [、「What is Universal Print 」を参照してください](/universal-print/fundamentals/universal-print-whatis)。
 - カスタム PowerShell スクリプトを使用してプリンターを直接展開します。 「ローカル プリンターのセットアップ [」セクションの手順に従](#set-up-local-printers) います。
-- Azure Active Directory ドメインに参加している Windows 10 デバイスと互換性のある Microsoft 以外のクラウド印刷ソリューションを使用します。 ソリューションは、Microsoft Managed Desktop のソフトウェア要件を満たす必要があります。 詳細については [、「Microsoft Managed Desktop アプリの要件」を参照してください](../service-description/mmd-app-requirements.md)。
+- Microsoft 以外のクラウド印刷ソリューションを使用します。このソリューションは、Windows 10ドメインに参加しているデバイスとAzure Active Directoryします。 ソリューションは、ソフトウェア要件を満たす必要Microsoft マネージド デスクトップ。 詳細については、「アプリの要件[Microsoft マネージド デスクトップを参照してください](../service-description/mmd-app-requirements.md)。
  
-すべての場合、プリンター ドライバーが Microsoft Update または Microsoft Store から利用できない場合は、それらを取得し、Microsoft Intune を使用して Microsoft 管理デスクトップ デバイスに展開するためにパッケージ化する必要があります。 詳細については [、「Intune スタンドアロン - Win32 アプリ管理」を参照してください。](/mem/intune/apps/apps-win32-app-management)
+すべての場合、プリンター ドライバーが Microsoft Update または Microsoft Store から利用できない場合は、それらを入手し、Microsoft Intune を使用して Microsoft マネージド デスクトップ デバイスに展開するためにパッケージ化する必要があります。 詳細については [、「Intune スタンドアロン - Win32 アプリ管理」を参照してください。](/mem/intune/apps/apps-win32-app-management)
 
 ## <a name="set-up-local-printers"></a>ローカル プリンターのセットアップ
 
 カスタム PowerShell スクリプトを使用してプリンターを展開し、印刷リソースを準備した場合は、次の手順に従って共有プリンターを展開します。
 
-1.  Microsoft Managed Desktop ポータルに移動します。
+1.  ポータルに移動Microsoft マネージド デスクトップします。
 2.  次の詳細を提供 *して、管理* ポータルの [サポート >サポート要求] セクションで、プリンターの展開というラベルの付いた要求を送信します。
-    - Microsoft Managed Desktop デバイスに展開する必要がある共有プリンターの場所へのすべての UNC パス
+    - デバイスに展開する必要がある共有プリンターの場所へのすべての UNC パスMicrosoft マネージド デスクトップします。
     - これらの共有プリンターへのアクセスを必要とするユーザー グループ
 3.  管理ポータルを使用して、要求がいつ完了したのかお知らせします。 最初は、テスト展開グループ内のデバイスにのみ構成を展開します。
 4.  構成が期待通り動作するかどうかをテストして確認する必要があります。 サポート要求の [ **ディスカッション]** タブを使用して返信し、テストが完了したらお知らせします。
@@ -41,12 +41,12 @@ Microsoft Managed Desktop に登録する準備が整ったら、印刷要件を
 
 ## <a name="steps-to-get-ready"></a>準備の手順
 
-1. 「Microsoft [Managed Desktop の前提条件」を参照してください](prerequisites.md)。
+1. 詳細については[、「前提条件」をMicrosoft マネージド デスクトップ。](prerequisites.md)
 2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。
 3. [ゲスト アカウントの前提条件](guest-accounts.md)
 4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
 5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
-6. [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](authentication.md)
+6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
 7. [Microsoft マネージド デスクトップのアプリ](apps.md)
 8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
-9. [Microsoft Managed Desktop の印刷リソースを準備する](printing.md) (この記事)
+9. [印刷リソースの準備Microsoft マネージド デスクトップ](printing.md)する (この記事)

@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 でセキュリティを強化してキャンペーンやビジネスを保護する方法について説明します。
+description: アプリのセキュリティを強化してキャンペーンやビジネスを保護する方法Microsoft 365。
 ms.openlocfilehash: d2486f7160bef57a91d76fba756ff75ba319b8fa
 ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
@@ -41,7 +41,7 @@ ms.locfileid: "50044374"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
 
 
-その後、次の手順に従います。
+次に、次の手順に従います。
 
 - [マルウェアやその他の脅威から保護する](m365-campaigns-increase-protection.md)
 - [アカウントとアプリを保護して](m365-campaigns-conditional-access.md) キャンペーン データへのアクセスを保護する

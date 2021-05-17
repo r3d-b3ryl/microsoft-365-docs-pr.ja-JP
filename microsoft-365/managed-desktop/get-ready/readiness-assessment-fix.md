@@ -179,7 +179,7 @@ Windows PowerShellは、Microsoft Managed Desktop デバイスを対象とする
 
 組織の Azure Windows PowerShellスクリプトAD Microsoft Manage Desktop デバイスまたはユーザーを対象とされていないことを確認します。 すべてのユーザー、すべてのデバイス、または両方を対象とする PowerShell スクリプトを割り当てない。 ポリシーを変更して、Microsoft Managed Desktop デバイスまたはユーザーを含AD特定の Azure AD グループを対象とする割り当てを使用します。 詳細については [、「Use PowerShell scripts on Windows 10 devices in Intune」を参照してください](/mem/intune/apps/intune-management-extension)。
 
-### <a name="region"></a>Region
+### <a name="region"></a>地域
 
 地域は Microsoft Managed Desktop でサポートされている必要があります。
 

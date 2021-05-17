@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: グローバル管理者資格情報を使用してビジネス向け Microsoft 365 にサインインして、デバイス ポリシーとアクションを表示します。
+description: グローバル管理者資格情報を使用してビジネス向け Microsoft 365にサインインして、デバイス ポリシーとアクションを表示します。
 ms.openlocfilehash: 39d88e8fa84055e4bac62899a1b84bdf42f366a2
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -32,11 +32,11 @@ ms.locfileid: "51578029"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>ポリシーとデバイスの表示と管理
 
-この記事は、Microsoft 365 Business Premium に適用されます。
+この記事は、このMicrosoft 365 Business Premium。
 
 ## <a name="view-and-edit-device-policies"></a>デバイス ポリシーの表示と編集
 
-1.  <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。
+1.  <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
 2. 左側のナビゲーションで、[デバイス ポリシー **]** \> **を選択します**。
 
     このページでは、ターゲット グループを作成、編集、変更、またはポリシーを削除できます。

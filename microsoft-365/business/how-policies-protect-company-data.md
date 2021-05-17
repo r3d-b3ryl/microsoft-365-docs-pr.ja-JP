@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for business のポリシーが企業データを保護する方法
+title: ビジネス向けポリシー Microsoft 365企業データを保護する方法
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -34,18 +34,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578429"
 ---
-# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Microsoft 365 for business のポリシーが企業データを保護する方法
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>ビジネス向けポリシー Microsoft 365企業データを保護する方法
 
-この記事は、Microsoft 365 Business Premium に適用されます。
+この記事は、このMicrosoft 365 Business Premium。
 
 作成するポリシーはデバイスの種類に固有のものであり、特定のユーザーのグループに適用できます。つまり、エグゼクティブに適用されるポリシーと、他の全員に適用される別のポリシーを作成できるということです。
   
-Android と iOS デバイスでは、Office アプリと Office アプリによって使用される作業ファイルを保護する、アプリケーション ポリシーを追加または編集できます。 Windows 10 デバイスはもう少し制御できます。そのため、アプリケーション ポリシーには、ネットワークやクラウドの場所の暗号化や保護など、より多くの設定を含めできます。 ウイルス対策および自動更新などの設定を強制する、Windows 10 デバイスのデバイス ポリシーを作成することもできます。 セットアップ中に作成したポリシーに固執することをお勧めしますが、ポリシーの微調整や追加を行う場合は、次の記事を参照してください。
+Android と iOS デバイスでは、Office アプリと Office アプリによって使用される作業ファイルを保護する、アプリケーション ポリシーを追加または編集できます。 アプリケーション ポリシーには、ネットワークやクラウドの場所の暗号化や保護など、より多くの設定を含め、Windows 10デバイスを制御できます。 ウイルス対策および自動更新などの設定を強制する、Windows 10 デバイスのデバイス ポリシーを作成することもできます。 セットアップ中に作成したポリシーに固執することをお勧めしますが、ポリシーの微調整や追加を行う場合は、次の記事を参照してください。
   
 [Android または iOS デバイスのアプリの構成を設定する](app-protection-settings-for-android-and-ios.md)
   
 [Windows 10 PC 用にデバイスの構成を設定する](protection-settings-for-windows-10-pcs.md)
   
-[Windows 10 デバイスのアプリ保護設定を設定する](protection-settings-for-windows-10-devices.md)
+[デバイスのアプリ保護設定Windows 10する](protection-settings-for-windows-10-devices.md)
   
 

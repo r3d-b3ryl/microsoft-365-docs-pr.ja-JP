@@ -31,11 +31,11 @@ ms.locfileid: "51571010"
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[フォルダー アクセスの制御により](controlled-folders.md) 、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、Windows 10 および Windows Server 2019 に含まれています。
+[フォルダー アクセスの制御により](controlled-folders.md) 、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019 Windows 10およびWindowsに含まれます。
 
 次の方法を使用して、フォルダーアクセスの制御を有効にできます。
 
-* [Windows セキュリティ アプリ](#windows-security-app)
+* [Windows セキュリティアプリ](#windows-security-app)
 * [Microsoft Intune](#intune)
 * [モバイル デバイス管理 (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
@@ -51,18 +51,18 @@ ms.locfileid: "51571010"
 
 ローカル リストのマージを無効にする方法の詳細については、「ユーザーが Microsoft Defender AV ポリシー設定をローカルで変更するを防止または許可する」 [を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)。
 
-## <a name="windows-security-app"></a>Windows セキュリティ アプリ
+## <a name="windows-security-app"></a>Windows セキュリティアプリ
 
-1. タスク バーでシールド アイコンを選択して、Windows セキュリティ アプリを開きます。 スタート メニューで Defender を検索 **することもできます**。
+1. タスク バー Windows セキュリティシールド アイコンを選択して、アプリを開きます。 スタート メニューで Defender を検索 **することもできます**。
 
 2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) を選択し、[ランサムウェア保護] **を選択します**。
 
 3. [フォルダー アクセスの制御] **のスイッチを [オン]** に **設定します**。
 
 > [!NOTE]
-> グループ ポリシー、PowerShell、または MDM CSP でフォルダー アクセスの制御が構成されている場合、デバイスの再起動後に Windows セキュリティ アプリで状態が変更されます。
-> これらのツールを使用して機能が **監査** モードに設定されている場合、Windows セキュリティ アプリは状態を [オフ] と表示 **します**。
-> ユーザー プロファイル データを保護する場合は、ユーザー プロファイルを既定の Windows インストール ドライブに保存することをお勧めします。
+> グループ ポリシー、PowerShell、または MDM CSP を使用してフォルダー アクセスの制御が構成されている場合、デバイスの再起動後に Windows セキュリティ アプリで状態が変更されます。
+> これらのツールを使用して機能が **監査** モードに設定されている場合、アプリWindows セキュリティ状態が [オフ] と表示 **されます**。
+> ユーザー プロファイル データを保護する場合は、ユーザー プロファイルをインストール ドライブの既定のWindowsすることをお勧めします。
 
 ## <a name="intune"></a>Intune
 
@@ -70,11 +70,11 @@ ms.locfileid: "51571010"
 
 2. [デバイス構成 **プロファイル]**  >  **[プロファイルの**  >  **作成] に移動します**。
 
-3. プロファイルに名前を付け **、[Windows 10** 以降] と [エンドポイント保護] **を選択します**。 <br/> ![エンドポイント保護プロファイルの作成](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
+3. プロファイルに名前を付け、[Windows 10 **とエンドポイント保護**]**を選択します**。 <br/> ![エンドポイント保護プロファイルの作成](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
 
-4. 「Configure **Windows Defender**  >  **Exploit Guard**  >  **管理フォルダー アクセス を有効にする」に**  >  **移動します**。
+4. 「Configure **Windows Defender**  >  **Exploit Guard**  >  **管理フォルダー アクセスを有効にする」に**  >  **移動します**。
 
-5. 保護されたフォルダーにアクセスできる各アプリケーションへのパスと、保護が必要な追加のフォルダーへのパスを入力します。 [**追加**] を選択します。<br/> ![Intune でフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
+5. 保護されたフォルダーにアクセスできる各アプリケーションへのパスと、保護が必要な追加のフォルダーへのパスを入力します。 **[追加]** を選択します。<br/> ![Intune でフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
 
    > [!NOTE]
    > Wilcard はアプリケーションでサポートされますが、フォルダーではサポートされません。 サブフォルダーは保護されません。 許可されたアプリは、再起動するまでイベントをトリガーし続ける。
@@ -89,7 +89,7 @@ ms.locfileid: "51571010"
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. Microsoft Endpoint Configuration Manager で、[アセットとコンプライアンス エンドポイント保護] に移動 **し**、[Exploit  >    >  **Guard Windows Defenderに移動します**。
+1. この **Microsoft Endpoint Configuration Manager、Exploit** Guard の [アセットと  >  **コンプライアンス] Endpoint Protection Windows Defender**  >  **移動します**。
 
 2. [ホーム **エクスプ**  >  **ロイト ガード ポリシーの作成] を選択します**。
 
@@ -107,16 +107,16 @@ ms.locfileid: "51571010"
 
 1. グループ ポリシー管理デバイスで、グループ ポリシー [管理](https://technet.microsoft.com/library/cc731212.aspx)コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] を選択 **します**。
 
-2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に移動 **し、[** 管理用 **テンプレート] を選択します**。
+2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを Microsoft Defender ウイルス対策> Exploit Guard > Windows Defender管理> **Windows コンポーネントに展開します**。
+3. ツリーを展開して **、Exploit Guard Windowsアクセス> Microsoft Defender ウイルス対策 > Windows Defender管理>コンポーネントを表示します**。
 
 4. [フォルダー アクセスの構成 **] 設定** をダブルクリックし、オプションを [有効] に **設定します**。 [オプション] セクションで、次のいずれかのオプションを指定する必要があります。
-    * **有効** - 悪意のあるアプリや疑わしいアプリでは、保護されたフォルダー内のファイルを変更することはできません。 Windows イベント ログに通知が表示されます。
+    * **有効** - 悪意のあるアプリや疑わしいアプリでは、保護されたフォルダー内のファイルを変更することはできません。 通知は、イベント ログWindowsされます。
     * **無効 (既定)** - フォルダー アクセスの制御機能が機能しません。 すべてのアプリは、保護されたフォルダー内のファイルを変更できます。
-    * **監査モード** - 悪意のあるアプリや疑わしいアプリが保護されたフォルダー内のファイルに変更を加えた場合、変更が許可されます。 ただし、Windows イベント ログに記録され、組織への影響を評価できます。
-    * **[ディスクの変更をブロックする** ] - 信頼されていないアプリがディスク セクターに書き込む試みは、Windows イベント ログに記録されます。 これらのログは、Microsoft  > Windows > > Windows Defender > ID 1123 >で確認できます。
-    * **ディスクの変更** の監査のみ - 保護されたディスク セクターへの書き込みのみを Windows イベント ログに記録します ([アプリケーションとサービス ログ] の  >  **[Microsoft** Windows Windows Defender  >    >    >  **運用**  >  **ID 1124]** の下)。 保護されたフォルダー内のファイルを変更または削除しようとすると、記録されません。
+    * **監査モード** - 悪意のあるアプリや疑わしいアプリが保護されたフォルダー内のファイルに変更を加えた場合、変更が許可されます。 ただし、組織への影響を評価Windowsイベント ログに記録されます。
+    * **[ディスクの変更** をブロックする] - 信頼されていないアプリがディスク セクターに書き込む試みは、Windowsログに記録されます。 これらのログは、Microsoft  > のアプリケーションとサービス > Windows > Windows Defender > ID 1123 >確認できます。
+    * ディスク **の** 変更の監査のみ - 保護されたディスク セクターへの書き込みのみを Windows イベント ログに記録します([アプリケーションとサービス ログ Microsoft Windows Windows Defender  >    >    >    >  **運用**  >  **ID 1124]** の下)。 保護されたフォルダー内のファイルを変更または削除しようとすると、記録されません。
 
       ![グループ ポリシー オプションのスクリーンショット [有効] と [監査モード] がドロップダウンで選択されている](/microsoft-365/security/defender-endpoint/images/cfa-gp-enable)
 
@@ -125,7 +125,7 @@ ms.locfileid: "51571010"
 
 ## <a name="powershell"></a>PowerShell
 
-1. [ **スタート] メニューに「powershell」** と入力し、Windows PowerShellを右クリックし **、[** 管理者として **実行] を選択します**。
+1. [**スタート] メニューに「powershell」** と入力し、Windows PowerShellを右クリックし **、[** 管理者として **実行] を選択します**。
 
 2. 次のコマンドレットを入力します。
 

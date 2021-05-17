@@ -1,6 +1,6 @@
 ---
 title: 自動調査の詳細と結果
-description: Microsoft 365 Defender での自動調査の結果と主要な結果を表示する
+description: Defender の自動調査の結果と主要なMicrosoft 365する
 keywords: 自動化、調査、結果、分析、詳細、修復、autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -35,17 +35,17 @@ ms.locfileid: "52274678"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender では[](m365d-autoir.md)、自動調査が実行されると、その調査に関する詳細は、自動調査プロセス中と自動調査後の両方で利用できます。 [必要なアクセス許可](m365d-action-center.md#required-permissions-for-action-center-tasks)を持っている場合は、調査の詳細ビューでこれらの詳細を表示できます。 このビューでは、最新の状態と保留中のアクションを承認できます。 
+Defender Microsoft 365、自動調査が実行[](m365d-autoir.md)されると、その調査に関する詳細は、自動調査プロセスの間と後の両方で利用できます。 [必要なアクセス許可](m365d-action-center.md#required-permissions-for-action-center-tasks)を持っている場合は、調査の詳細ビューでこれらの詳細を表示できます。 このビューでは、最新の状態と保留中のアクションを承認できます。 
 
 ![調査の詳細](../../media/mtp-air-investdetails.png)
 
 ## <a name="new-unified-investigation-page"></a>(NEW!)統合された調査ページ
 
-調査ページが最近更新され、デバイス、電子メール、およびコラボレーション コンテンツ全体の情報が含まれます。 新しい統合された調査ページでは、共通言語が定義され [、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) および Microsoft Defender for Office 365 全体で自動調査 [を行う一元的なエクスペリエンスが](../office-365-security/defender-for-office-365.md)提供されます。 統合調査ページにアクセスするには、次の黄色のバナーにあるリンクを選択します。
+調査ページが最近更新され、デバイス、電子メール、およびコラボレーション コンテンツ全体の情報が含まれます。 新しい統合された調査ページでは、共通言語を定義し[、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)および Microsoft Defender for Office 365 全体で自動調査を行う一元[的なエクスペリエンスを提供します](../office-365-security/defender-for-office-365.md)。 統合調査ページにアクセスするには、次の黄色のバナーにあるリンクを選択します。
 
-- コンプライアンス センター ( ) Office 365 セキュリティ &の調査ページ [https://protection.office.com](https://protection.office.com)
-- Microsoft Defender セキュリティ センターの調査ページ ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Microsoft 365 セキュリティ センターでのインシデントまたはアクション センターのエクスペリエンス ( [https://security.microsoft.com](https://security.microsoft.com) )
+- コンプライアンス センター ( ) の Office 365 セキュリティ &の調査ページ [https://protection.office.com](https://protection.office.com)
+- [調査] ページの [Microsoft Defender セキュリティ センター ] ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
+- セキュリティ センター ( ) でのインシデントまたはアクション Microsoft 365エクスペリエンス [https://security.microsoft.com](https://security.microsoft.com)
 
 ## <a name="open-the-investigation-details-view"></a>調査の詳細ビューを開く
 
@@ -100,15 +100,15 @@ Microsoft 365 Defender では[](m365d-autoir.md)、自動調査が実行され�
 調査の詳細ビューでは、次の表で説明する [**Investigation graph (調査のグラフ)**]、[**Alerts (警告)**]、[**Device (デバイス)**]、[**Identities (ID)**]、[**Key findings (主な検出事項)**]、[**Entities (エンティティ)**]、[**Log (ログ)**]、[**Pending actions (保留中のアクション)**] の各タブに情報が表示されます。
 
 > [!NOTE]
-> 調査の詳細ページに表示される特定のタブは、サブスクリプションに含まれる内容によって異なります。 たとえば、サブスクリプションに Microsoft Defender for Office 365 プラン 2 が含まれる場合、[メールボックス] タブ **は表示** されません。
+> 調査の詳細ページに表示される特定のタブは、サブスクリプションに含まれる内容によって異なります。 たとえば、サブスクリプションに Microsoft Defender for Office 365プラン 2 が含まれる場合、[メールボックス] タブ **は表示** されません。
 
 | タブ | 説明 |
 |:--------|:--------|
 | **Investigation graph (調査グラフ)**   | 調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上のアイテムを選択すると、詳細を表示できます。 たとえば、[証拠]**アイコンを** 選択すると、[証拠]タブに移動し、検出されたエンティティとその評決を確認できます。 |
-| **Alerts**    | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、Office アプリ、Microsoft Cloud App Security、その他の Microsoft 365 Defender 機能の脅威保護機能から発生する可能性があります。|
+| **Alerts**    | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、アプリ、アプリ、Microsoft Cloud App Security、その他の Defender 機能Office脅威保護機能Microsoft 365発生します。|
 | **デバイス** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、 [デバイス グループのオートメーション レベルに対応します](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)。) |
 | **メールボックス** |検出された脅威の影響を受けたメールボックスを一覧表示します。  |
-| **Users**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
+| **ユーザー**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
 | **証拠** | アラートまたは調査によって発生した証拠の一部を一覧表示します。 評決 (悪意のある、*疑わしい*、*不明* な、または脅威が見 *つからない)* と修復の状態が含まれます。 |
 | **Entities**  | 各エンティティの種類 (悪意のある、疑わしい、または脅威が見つからない)の評決を含む、分析された各エンティティの詳細 *を提供します*。|
 |**Log**    | アラートがトリガーされた後に行ったすべての調査アクションの時系列的で詳細なビューを提供します。|
