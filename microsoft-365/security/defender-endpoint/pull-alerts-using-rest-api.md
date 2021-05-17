@@ -52,7 +52,7 @@ Microsoft Defender for Endpoint は、API から検出を引き出す OAuth 2.0 
 
 OAuth 仕様の詳細については [、「OAuth Web サイト」を参照してください](http://www.oauth.net)。
 
-Microsoft Defender for  Endpoint は、承認サーバーとして Azure Active Directory (AAD) を使用してプル検出へのアクセスを取得するための承認付与フローとクライアント資格情報フローをサポートしています。
+Microsoft Defender for  Endpoint では、承認許可フローとクライアント資格情報フローがサポートされ、認証サーバーとして Azure Active Directory (AAD) を使用してプル検出へのアクセスを取得できます。
 
 承認 _付与フローは、_ ユーザー資格情報を使用して承認コードを取得し、アクセス トークンを取得するために使用されます。
 
@@ -61,10 +61,10 @@ Microsoft Defender for  Endpoint は、承認サーバーとして Azure Active 
 Microsoft Defender for Endpoint API の次のメソッドを使用して、JSON 形式で検出をプルします。
 
 >[!NOTE]
->Microsoft Defender セキュリティ センターは、同様のアラート検出を 1 つのアラートにマージします。 この API は、設定したクエリ パラメーターに基づいて生の形式でアラート検出をプルし、独自のグループ化とフィルター処理を適用できます。 
+>Microsoft Defender セキュリティ センター同様のアラート検出を 1 つのアラートにマージします。 この API は、設定したクエリ パラメーターに基づいて生の形式でアラート検出をプルし、独自のグループ化とフィルター処理を適用できます。 
 
-## <a name="before-you-begin"></a>開始する前に
-- 検出をプルするために Microsoft Defender for Endpoint エンドポイントを呼び出す前に、Azure Active Directory (AAD) で SIEM 統合アプリケーションを有効にする必要があります。 詳細については [、「Enable SIEM integration in Microsoft Defender for Endpoint」を参照してください](enable-siem-integration.md)。
+## <a name="before-you-begin"></a>はじめに
+- 検出をプルするために Microsoft Defender for Endpoint エンドポイントを呼び出す前に、デバイス (AAD) で SIEM 統合アプリケーションAzure Active Directory必要があります。 詳細については [、「Enable SIEM integration in Microsoft Defender for Endpoint」を参照してください](enable-siem-integration.md)。
 
 - Azure アプリケーション登録の次の値をメモしてください。サービスまたはデーモンアプリ内に OAuth フローを構成するにはこれらの値が必要です。
   - アプリケーション ID (アプリケーションで一意)
@@ -127,7 +127,7 @@ untilTimeUtc | DateTime | 取得される上限時間のアラートを定義し
 limit | int | 取得するアラートの数を定義します。 最新のアラートは、定義された番号に基づいて取得されます。<br><br> **注**: 指定しない場合、時間範囲内で使用可能なすべてのアラートが取得されます。
 machinegroups | string | アラートをプルするデバイス グループを指定します。 <br><br> **注**: 指定しない場合、すべてのデバイス グループからのアラートが取得されます。 <br><br> 例: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | string | レジストリからの単一のデバイス タグ。
-CloudCreatedMachineTags | string | Microsoft Defender セキュリティ センターで作成されたデバイス タグ。
+CloudCreatedMachineTags | string | このページで作成されたデバイス Microsoft Defender セキュリティ センター。
 
 ### <a name="request-example"></a>要求の例
 次の例は、組織内のすべての検出を取得する方法を示しています。

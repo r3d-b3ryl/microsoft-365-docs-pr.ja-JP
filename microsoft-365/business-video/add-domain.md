@@ -56,4 +56,4 @@ ms.locfileid: "51903744"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) にドメインを追加する ( [記事)](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) DNS レコードを追加してドメインに接続する (記事) ネームサーバーを変更して、任意のドメイン レジストラーで [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) をセットアップする (記事) [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (記事)
+[Microsoft 365 にドメインを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)する[(記事](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)) DNS レコードを追加してドメインに接続する (記事) ネームサーバーを変更して[、Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar)を任意のドメイン レジストラーに設定する (記事) [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (記事)

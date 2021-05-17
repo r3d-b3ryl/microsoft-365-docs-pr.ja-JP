@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Microsoft 365 で管理されていないテナントを引き継ぐ電子メールとドメインの所有権を確認する方法について説明します。
+description: メールとドメインの所有権を確認して、管理されていないテナントを管理されていないテナントに引き継ぐ方法Microsoft 365
 ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -39,9 +39,9 @@ ms.locfileid: "50914848"
 ## <a name="step-1-verify-your-email-address"></a>手順 1: メール アドレスを確認する
 
 > [!NOTE]
-> テナントでセルフサービスが有効になっている場合、ユーザーは Power BI などの無料サービスを自分でサブスクライブできます。 これらの手順では、セルフサービス ユーザー サブスクリプションによって管理者として引き継ぐ管理されていないテナントが作成されたと仮定します。最初の手順では、管理されていないテナントにユーザー コンテキストを作成し、Power BI を使用して管理者の引き継ぎパスを説明します。
+> テナントでセルフサービスが有効になっている場合、ユーザーは無料のサービス (Power BIなど) を自分でサブスクライブできます。 これらの手順では、セルフサービス ユーザー サブスクリプションによって管理者として引き継ぐ管理されていないテナントが作成されたと仮定します。最初の手順では、管理されていないテナントにユーザー コンテキストを作成し、Power BIを使用して管理用の引き継ぎパスを説明します。
 
-1. Power BI にサインアップするには[、Power BI](https://powerbi.com)サイトに移動し、[無料開始無料試用版の開始] ([Power BI Pro と共有] ボックス)  >  を選択します。 
+1. アカウントにサインアップするには、Power BI サイトに移動し、[[](https://powerbi.com)無料Power BI無料試用版の開始]を選択します ([ユーザーと共有する]  >  ボックスPower BI Proします。 
 
 2. 組織のドメイン名 (など) を使用するユーザー アカウントにサインアップします `powerbiadmin@contoso.com` 。 アカウントが既に使用されている場合は、現在のパスワードを使用してサインインします。
 
@@ -68,10 +68,10 @@ ms.locfileid: "50914848"
   
 ## <a name="related-articles"></a>関連記事
 
-YouTube: Power BI と[Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)の IT 管理者の引き取りを行う 3 つの手順
+YouTube: [IT 管理者の引き](https://www.youtube.com/watch?v=xt5EsrQBZZk)取りを行う 3 つの手順は、Power BIとMicrosoft 365
 
 [Azure の管理者の引き取りAD](/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
 [組織でのセルフサービス サインアップの使用](self-service-sign-up.md)
   
-[Power BI Service 管理者の役割について](/power-bi/service-admin-role)
+[サービス管理者Power BIロールについて](/power-bi/service-admin-role)

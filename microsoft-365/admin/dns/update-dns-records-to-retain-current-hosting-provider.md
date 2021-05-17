@@ -34,7 +34,7 @@ ms.locfileid: "50915976"
   
  **Microsoft が DNS レコードを管理** している場合は、ドメインを Microsoft に追加した後、Microsoft の外部でホストされている既存のパブリック Web サイトにトラフィックをルーティングするには、次の手順を実行します。 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで DNS レコードを更新する
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>管理センターで DNS レコードMicrosoft 365更新する
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 2. [ドメイン **] ページで** 、ドメインを選択し、[DNS レコード] **を選択します**。

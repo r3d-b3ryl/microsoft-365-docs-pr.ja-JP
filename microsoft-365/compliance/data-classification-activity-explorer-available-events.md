@@ -1,5 +1,5 @@
 ---
-title: アクティビティ エクスプローラーで報告されたアクションのラベル付け
+title: アクティビティ エクスプローラーで報告されたラベル付けアクション
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -40,12 +40,12 @@ ms.locfileid: "51902952"
 |---------|---------|---------|
 | Word、Excel、PowerPoint|はい |
 |Outlook| はい |From Win 32 |
-|SharePoint online, OneDrive|はい | |
+|SharePointオンライン、OneDrive|はい | |
 |Exchange        |はい         | |
 |Azure Information Protection (AIP) 統合クライアントと AIP 統合スキャナー |はい |AIP の *新しいラベル* アクションは、アクティビティ エクスプローラー *に適用されるラベル* にマップされます。   |
 |Microsoft 情報保護 (MIP) SDK         |はい|AIP の *新しいラベル* アクションは、アクティビティ エクスプローラー *に適用されるラベル* にマップされます。|
 |Rights Management Service (RMS)         |該当なし         | |
-|Power BI デスクトップと Web        | no| Microsoft 365 監査ログでアクセス可能         |
+|Power BIと Web        | no| 監査ログでMicrosoft 365アクセス可能         |
 |Microsoft Cloud App Security (MCAS)         |no|         |
 
 ## <a name="sensitivity-label-changed"></a>感度ラベルの変更
@@ -56,21 +56,21 @@ ms.locfileid: "51902952"
 
 - これは、ネイティブ アプリケーションおよび Web アプリケーションOffice保存の時点でキャプチャされます。 
 - Azure Information Protection 統合クライアント アドインとスキャナーの適用で発生した時点でキャプチャされます。
-- ラベルのアップグレードとダウングレードのアクションは、[ *ラベル* イベントの種類] フィールドとフィルターを使用して監視することもできます。 また *、SharePoint* Online と OneDrive 以外の位置合わせテキストもキャプチャされます。
-- Outlook のネイティブ アプリで行Officeのラベル付けは、ファイルの保存/電子メール送信アクションの前に生成された最後のアクションを収集します。 たとえば、ユーザーが送信前にメールのラベルを複数回変更した場合、電子メールの送信時に最後に見つかったラベルは監査ログに記録され、アクティビティ エクスプローラーで報告されます。 
+- ラベルのアップグレードとダウングレードのアクションは、[ *ラベル* イベントの種類] フィールドとフィルターを使用して監視することもできます。 また *、位置合わせ* テキストは、[オンライン] および [SharePoint] 以外OneDrive。
+- ファイルの保存/電子メール送信Office前にOutlookされた最後のアクションが収集されます。 たとえば、ユーザーが送信前にメールのラベルを複数回変更した場合、電子メールの送信時に最後に見つかったラベルは監査ログに記録され、アクティビティ エクスプローラーで報告されます。 
 
 
 |ソース  |アクティビティ エクスプローラーで報告される|注  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |はい         |
 |Outlook         |はい         |Win 32|
-|SharePoint Online、OneDrive         |はい         |
+|SharePointオンライン、OneDrive         |はい         |
 |Exchange         |はい         |
 |AIP 統合クライアント         |はい         |
 |AIP 統合スキャナー         |はい         |
 |MIP SDK         |はい         |
 |RMS サービス         |該当なし         |
-|Power BI デスクトップと Web         |no         |Microsoft 365 監査ログでアクセス可能 |
+|Power BIと Web         |no         |監査ログでMicrosoft 365アクセス可能 |
 |MCAS     |no         |         |
 
 ## <a name="sensitivity-label-removed"></a>[感度ラベルの削除]
@@ -79,19 +79,19 @@ ms.locfileid: "51902952"
 
 - このイベントは、ネイティブ アプリケーションおよび web アプリケーションOffice保存時にキャプチャされます。
 - Azure Information Protection アドインで発生した時点でキャプチャされます。 
-- Outlook では、Office MIP ラベルを使用して、ファイルの保存/電子メール送信アクションの前に生成された最後のラベル付けイベントが収集されます。
+- Outlook では、Office MIP ラベルを使用して、ファイルの保存/電子メール送信アクションの前に生成された最後のラベル付けイベントを収集します。
 
 |ソース  |アクティビティ エクスプローラーで報告される | 注  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |はい         |
 |Outlook         |はい         |Win 32|
-|SharePoint Online、OneDrive         |はい         |
+|SharePointオンライン、OneDrive         |はい         |
 |Exchange         |はい         |
 |AIP 統合クライアント         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。|
 |AIP 統合スキャナー         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。 |
 |MIP SDK         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。 |
 |RMS サービス         |該当なし         |
-|Power BI デスクトップと Web         |no         |Microsoft 365 監査ログでアクセス可能 |
+|Power BIと Web         |no         |監査ログでMicrosoft 365アクセス可能 |
 |MCAS     |no         |         |
  
 
@@ -103,13 +103,13 @@ ms.locfileid: "51902952"
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |はい         |
 |Outlook         |no         |
-|SharePoint Online、OneDrive         |no         |
+|SharePointオンライン、OneDrive         |no         |
 |Exchange         |no         |
 |AIP 統合クライアント         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
 |AIP 統合スキャナー         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
 |MIP SDK         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
 |RMS サービス         |はい         |アクセス *アクションは* 、アクティビティ エクスプローラーの *ファイル読み取* りアクションにマップされます。 |
-|Power BI デスクトップと Web         |no         |Microsoft 365 監査ログでアクセス可能 |
+|Power BIと Web         |no         |監査ログでMicrosoft 365アクセス可能 |
 |MCAS     |no         |         |
 
 
@@ -121,13 +121,13 @@ ms.locfileid: "51902952"
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |該当なし         |
 |Outlook         |該当なし         |
-|SharePoint Online、OneDrive         |該当なし         |
+|SharePointオンライン、OneDrive         |該当なし         |
 |Exchange         |該当なし         |
 |AIP 統合クライアント         |該当なし       |
 |AIP 統合スキャナー         |はい         |AIP 検出 *アクション* は、アクティビティ エクスプローラーで検出 *されたファイルアクション* にマップされます。|
 |MIP SDK         |はい         |AIP 検出 *アクション* は、アクティビティ エクスプローラーで検出 *されたファイルアクション* にマップされます。|
 |RMS サービス         |該当なし         |
-|Power BI デスクトップと Web         |該当なし         |
+|Power BIと Web         |該当なし         |
 |MCAS     |該当なし         |         |
 
 
@@ -139,13 +139,13 @@ ms.locfileid: "51902952"
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |はい         |
 |Outlook         |該当なし         |
-|SharePoint Online、OneDrive         |no        |
+|SharePointオンライン、OneDrive         |no        |
 |Exchange         |該当なし         |
 |AIP 統合クライアント         |no         |
 |AIP 統合スキャナー         |no         |
 |MIP SDK         |no         |
 |RMS サービス         |no      |
-|Power BI デスクトップと Web         |no         |
+|Power BIと Web         |no         |
 |MCAS     |no         |         |
 
 
@@ -157,13 +157,13 @@ ms.locfileid: "51902952"
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |該当なし         |
 |Outlook         |該当なし         |
-|SharePoint Online、OneDrive         |該当なし           |
+|SharePointオンライン、OneDrive         |該当なし           |
 |Exchange         |該当なし         |
 |AIP 統合クライアント         |該当なし            |
 |AIP 統合スキャナー         |はい         |
 |MIP SDK         |該当なし            |
 |RMS サービス         |該当なし         |
-|Power BI デスクトップと Web         |該当なし  |
+|Power BIと Web         |該当なし  |
 |MCAS     |該当なし        |         |
 
 ### <a name="sensitivity-label-protection-applied"></a>適用される感度ラベル保護
@@ -174,13 +174,13 @@ ms.locfileid: "51902952"
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |no         |
 |Outlook         |no         |
-|SharePoint Online、OneDrive         |該当なし           |
+|SharePointオンライン、OneDrive         |該当なし           |
 |Exchange         |no       |
 |AIP 統合クライアント         |はい            |
 |AIP 統合スキャナー         |該当なし         |
 |MIP SDK         |はい            |
 |RMS サービス         |該当なし         |
-|Power BI デスクトップと Web         |該当なし            |
+|Power BIと Web         |該当なし            |
 |MCAS     |該当なし        |         |
 
 ## <a name="sensitivity-label-protection-changed"></a>ラベルの保護が変更された
@@ -191,13 +191,13 @@ ms.locfileid: "51902952"
 |---------|---------| 
 |Word、Excel、PowerPoint         |no         |
 |Outlook         |no         |
-|SharePoint Online、OneDrive         |該当なし           |
+|SharePointオンライン、OneDrive         |該当なし           |
 |Exchange         |no       |
 |AIP 統合クライアント         |はい            |
 |AIP 統合スキャナー         |該当なし         |
 |MIP SDK         |はい            |
 |RMS サービス         |該当なし         |
-|Power BI デスクトップと Web         |該当なし            |
+|Power BIと Web         |該当なし            |
 |MCAS     |該当なし        |
 
 ## <a name="sensitivity-label-protection-removed"></a>ラベルの保護が削除された
@@ -208,13 +208,13 @@ ms.locfileid: "51902952"
 |---------|---------| 
 |Word、Excel、PowerPoint         |no         |
 |Outlook         |no         |
-|SharePoint Online、OneDrive         |該当なし           |
+|SharePointオンライン、OneDrive         |該当なし           |
 |Exchange         |no       |
 |AIP 統合クライアント         |はい            |
 |AIP 統合スキャナー         |該当なし         |
 |MIP SDK         |はい            |
 |RMS サービス         |該当なし         |
-|Power BI デスクトップと Web         |該当なし            |
+|Power BIと Web         |該当なし            |
 |MCAS     |該当なし        |
 
 ## <a name="sensitivity-label-dlp-policy-matched"></a>一致した感度ラベル DLP ポリシー
@@ -232,7 +232,7 @@ ms.locfileid: "51902952"
 |オンプレミス         |no|
 |MCAS     |no        | 
 
-Windows 10 デバイス (エンドポイント DLP) のイベントは次のとおりです。
+デバイス (エンドポイント DLP) Windows 10イベントは次のとおりです。
 
 - ファイルが削除されました
 - 作成されたファイル
@@ -286,6 +286,6 @@ Windows 10 デバイス (エンドポイント DLP) のイベントは次のと�
   
 - 推奨ラベル ツール ヒントがエンド ユーザーに表示されている場合、そのヒントはキャプチャされません。 ただし、ユーザーが推奨ラベルの適用を選択した場合、ラベルは [適用方法] フィールドの下に [推奨]*として表示**されます。*  
 
-- 現在、Sharepoint と OneDrive からの感度ラベルのダウングレードでは、位置合わせテキストを使用できません。  
+- 現在、位置合わせテキストは、Sharepoint および Sharepoint および OneDrive からの感度ラベルのダウングレードでは使用OneDrive。  
 
-- 機密情報の種類は現在、Word、Excel、PowerPoint、Outlook、SharePoint Online、OneDrive の自動ラベル付けアクティビティでは使用できません。
+- 現在、機密情報の種類は、Word、Excel、PowerPoint、Outlook、および SharePoint Online、および OneDrive からの自動ラベル付けアクティビティでは使用できません。

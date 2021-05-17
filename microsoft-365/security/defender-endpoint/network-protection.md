@@ -33,9 +33,9 @@ ms.locfileid: "51861157"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-ネットワーク保護は、インターネット ベースのイベントからデバイスの攻撃表面を減らすのに役立ちます。 これは、従業員がアプリケーションを使用して、インターネット上でフィッシング詐欺、悪用、その他の悪意のあるコンテンツをホストする可能性のある危険なドメインにアクセスするのを防ぐためです。 ネットワーク保護は [、Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) の範囲を拡張して、低評価ソース (ドメインまたはホスト名に基づく) への接続を試みるすべての送信 HTTP トラフィックをブロックします。
+ネットワーク保護は、インターネット ベースのイベントからデバイスの攻撃表面を減らすのに役立ちます。 これは、従業員がアプリケーションを使用して、インターネット上でフィッシング詐欺、悪用、その他の悪意のあるコンテンツをホストする可能性のある危険なドメインにアクセスするのを防ぐためです。 ネットワーク保護は[、Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)の範囲を拡張して、低評価ソース (ドメインまたはホスト名に基づく) への接続を試みるすべての送信 HTTP トラフィックをブロックします。
 
-ネットワーク保護は、Windows 10 バージョン 1709 から Windows でサポートされています。 ネットワーク保護は他のオペレーティング システムではまだサポートされていませんが、クロムに基づく新しい Microsoft Edge を使用して Web 保護がサポートされています。 詳細については、「Web 保護」 [を参照してください](web-protection-overview.md)。
+ネットワーク保護は、Windowsバージョン 1709 Windows 10からサポートされます。 ネットワーク保護は他のオペレーティング システムではまだサポートされていませんが、Web 保護は、新しいオペレーティング システムを使用Microsoft EdgeサポートChromium。 詳細については、「Web 保護」 [を参照してください](web-protection-overview.md)。
 
 ネットワーク保護は、Web 保護の保護 [をオペレーティング](web-protection-overview.md) システム レベルまで拡張します。 Edge の Web 保護機能は、サポートされている他のブラウザーやブラウザー以外のアプリケーションに提供されます。 さらに、ネットワーク保護は、エンドポイントの検出と応答で使用する場合に、侵害の指標 (IOC) の可視性とブロック [を提供します](overview-endpoint-detection-response.md)。 たとえば、ネットワーク保護はカスタム インジケーターと [動作します](manage-indicators.md)。
 
@@ -52,11 +52,11 @@ ms.locfileid: "51861157"
 
 ## <a name="requirements"></a>要件
 
-ネットワーク保護には、Windows 10 Pro または Enterprise、および Microsoft Defender ウイルス対策のリアルタイム保護が必要です。
+ネットワーク保護には、Windows 10 ProまたはEnterprise、リアルタイムMicrosoft Defender ウイルス対策保護が必要です。
 
 | Windows バージョン | Microsoft Defender ウイルス対策 |
 |:---|:---|
-| Windows 10 バージョン 1709 以降 <p>Windows Server 1803 以降 | [Microsoft Defender ウイルス対策のリアルタイム保護と](configure-real-time-protection-microsoft-defender-antivirus.md)[クラウド配信の保護を有効](enable-cloud-protection-microsoft-defender-antivirus.md)にする必要があります |
+| Windows 10バージョン 1709 以降 <p>Windowsサーバー 1803 以降 | [Microsoft Defender ウイルス対策保護とクラウド](configure-real-time-protection-microsoft-defender-antivirus.md)[配信保護を有効](enable-cloud-protection-microsoft-defender-antivirus.md)にする必要があります |
 
 サービスを有効にした後、サービスとデバイス (エンドポイントとも呼ばれます) 間の接続を許可するために、ネットワークまたはファイアウォールを構成する必要がある場合があります。  
 
@@ -76,13 +76,13 @@ DeviceEvents
 | where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Windows イベント ビューアーでネットワーク保護イベントを確認する
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>イベント ビューアーでネットワーク保護イベントWindows確認する
 
-Windows イベント ログを確認して、ネットワーク保護が悪意のある IP またはドメインへのアクセスをブロック (または監査) するときに作成されるイベントを確認できます。
+ネットワーク保護が悪意のある IP またはドメインWindowsアクセスをブロック (または監査) するときに作成されるイベントを確認するには、次のイベント ログを確認します。
 
 1. [XML を直接コピーします](event-views.md)。
 
-2. [**OK**] を選択します。
+2. **[OK]** を選択します。
 
 この手順では、ネットワーク保護に関連する次のイベントのみを表示するためにフィルター処理するカスタム ビューを作成します。
 
@@ -92,15 +92,15 @@ Windows イベント ログを確認して、ネットワーク保護が悪意�
 | 1125 | 監査モードでネットワーク保護が発生した場合のイベント |
 | 1126 | ブロック モードでネットワーク保護が発生した場合のイベント |
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Windows 10 Enterprise Multi-Session を実行している Windows 仮想デスクトップに関する考慮事項
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>マルチ セッションをWindowsしている仮想デスクトップWindows 10 Enterpriseに関する考慮事項
 
-Windows 10 Enterprise のマルチユーザーの性質上、次の点に注意してください。
+マルチ ユーザーの性質上、Windows 10 Enterpriseに注意してください。
 
 1. ネットワーク保護はデバイス全体の機能であり、特定のユーザー セッションを対象とすることはできません。
 
 2. Web コンテンツ フィルター ポリシーもデバイス全体です。
 
-3. ユーザー グループを区別する必要がある場合は、個別の Windows Virtual Desktop ホスト プールと割り当てを作成してください。
+3. ユーザー グループを区別する必要がある場合は、仮想デスクトップ ホスト プールと割り当てのWindows作成を検討してください。
 
 4. 監査モードでネットワーク保護をテストし、展開する前に動作を評価します。 
 
@@ -108,7 +108,7 @@ Windows 10 Enterprise のマルチユーザーの性質上、次の点に注意�
 
 ### <a name="alternative-option-for-network-protection"></a>ネットワーク保護の代替オプション
 
-Windows 10 Enterprise Multi-Session 1909 以上が Azure の Windows Virtual Desktop で使用されている場合、Microsoft Edge のネットワーク保護は次の方法で有効にできます。
+Azure Windows 10 Enterprise Windows Virtual Desktop で使用されるマルチセッション 1909 以上の場合、Microsoft Edge のネットワーク保護は次の方法で有効にできます。
 
 1. [ [ネットワーク保護を有効にする] を](enable-network-protection.md) 使用し、指示に従ってポリシーを適用します。
 

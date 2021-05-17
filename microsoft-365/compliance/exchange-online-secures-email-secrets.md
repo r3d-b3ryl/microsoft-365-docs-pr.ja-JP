@@ -39,7 +39,7 @@ Office 365 のセキュリティ、プライバシー、コンプライアンス
   
 ## <a name="where-does-exchange-online-make-use-of-dkm"></a>Exchange Online は DKM をどこで利用しますか?
 
-Microsoft では、 [分散キー マネージャーを](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) 使用して Exchange Online データセンター内のシークレットを暗号化します。 次に例を示します。
+Microsoft では、 [分散キー マネージャーを](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) 使用して Exchange Online データセンター内のシークレットを暗号化します。 以下に例を示します。
   
 - 接続されたアカウントの電子メール アカウント資格情報。 接続されたアカウントは、アプリ、Gmail、Yahoo などのHotmailサード パーティのアカウントです。 メール アカウント。
 

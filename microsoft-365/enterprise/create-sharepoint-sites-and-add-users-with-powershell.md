@@ -18,7 +18,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: '概要: PowerShell を使用して新しい SharePoint Online サイトを作成し、それらのサイトにユーザーとグループを追加します。'
+description: '概要: PowerShell を使用して、オンライン サイトSharePoint新しいサイトを作成し、それらのサイトにユーザーとグループを追加します。'
 ms.openlocfilehash: eb6c2817c8760ca222da8a7c2b14cbfcda4eb4b8
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,15 +30,15 @@ ms.locfileid: "50907620"
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-PowerShell for Microsoft 365 を使用して SharePoint Online サイトを作成し、ユーザーを追加する場合、Microsoft 365 管理センターで実行できるよりもはるかに高速かつ繰り返しタスクを実行できます。 Microsoft 365 管理センターでは実行できないタスクを実行することもできます。 
+Microsoft 365 で PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する場合、Microsoft 365 管理センターでできるよりもはるかに速く、繰り返しタスクを実行できます。 管理センターで実行できないタスクを実行Microsoft 365することもできます。 
 
 ## <a name="connect-to-sharepoint-online"></a>SharePoint Online に接続する
 
-このトピックの手順では、SharePoint Online に接続する必要があります。 手順については [、「Connect to SharePoint Online PowerShell」を参照してください。](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+このトピックの手順では、オンラインのユーザーに接続SharePointします。 手順については、「オンライン[PowerShell ConnectをSharePointする」を参照してください。](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>手順 1: PowerShell を使用して新しいサイト コレクションを作成する
 
-PowerShell と、提供されているサンプル コードとメモ帳を使用して作成する .csv ファイルを使用して、複数のサイトを作成します。 この手順では、角かっこで示されているプレースホルダー情報を、独自のサイトおよびテナント固有の情報に置き換える必要があります。 このプロセスでは、1 つのファイルを作成し、そのファイルを使用する 1 つの PowerShell コマンドを実行できます。 これにより、繰り返し可能な操作と移植可能な操作の両方が実行され、長いコマンドを SharePoint Online 管理シェルに入力した場合に発生するエラーが多くなくなってくる可能性があります。 この手順には 2 つの部分があります。 最初に .csv ファイルを作成し、その .csv ファイルを PowerShell を使用して参照します。その内容を使用してサイトを作成します。
+PowerShell を使用して複数のサイトを作成し、.csvコード例を使用して作成するファイルを作成メモ帳。 この手順では、角かっこで示されているプレースホルダー情報を、独自のサイトおよびテナント固有の情報に置き換える必要があります。 このプロセスでは、1 つのファイルを作成し、そのファイルを使用する 1 つの PowerShell コマンドを実行できます。 これにより、繰り返し可能な操作と移植可能な操作の両方が実行され、長いコマンドを SharePoint Online 管理シェルに入力した場合に発生するエラーの多くが排除されます。 この手順には 2 つの部分があります。 最初に、.csv ファイルを作成し、その .csv ファイルを PowerShell を使用して参照し、その内容を使用してサイトを作成します。
 
 PowerShell コマンドレットは、.csv ファイルをインポートし、ファイルの最初の行を列ヘッダーとして読み取る中かっこ内のループにパイプ処理します。 PowerShell コマンドレットは、残りのレコードを反復処理し、レコードごとに新しいサイト コレクションを作成し、列ヘッダーに従ってサイト コレクションのプロパティを割り当てします。
 
@@ -56,7 +56,7 @@ owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,B
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
 ```
-<br/>テナント *は* テナントの名前であり、所有者はプライマリサイト コレクション管理者の役割を付与するテナントのユーザーのユーザー名です。<br/>(メモ帳を使用して一括置換を高速に行う場合は、Ctrl + H キーを押します)。<br/>
+<br/>テナント *は* テナントの名前であり、所有者はプライマリサイト コレクション管理者の役割を付与するテナントのユーザーのユーザー名です。<br/>(Ctrl キーを押しながら H キーを押すと、メモ帳置き換えの速度が速くなります)。<br/>
 
 2. デスクトップにファイルを [ファイル名] **SiteCollections.csv。**<br/>
 
@@ -82,7 +82,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 4. リスト内の新しいサイト コレクションに注意してください。 この例の CSV ファイルを使用すると、次のサイト コレクションが表示されます **。TeamSite01** **、Blog01、Project01、****および Community01** 
 
-これで完了です。 作成した .csv ファイルと 1 つのコマンドを使用して、複数のサイト コレクションWindows PowerShellしました。 これで、ユーザーを作成してこれらのサイトに割り当てる準備ができました。
+これで完了です。 作成したファイルファイルと 1 つの .csvコマンドを使用して、複数のサイト コレクションWindows PowerShellしました。 これで、ユーザーを作成してこれらのサイトに割り当てる準備ができました。
 
 ## <a name="step-2-add-users-and-groups"></a>手順 2:ユーザーおよびグループの追加
 

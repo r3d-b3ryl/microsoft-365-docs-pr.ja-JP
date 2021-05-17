@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用して Microsoft 365 ユーザー アカウントを削除する
+title: PowerShell Microsoft 365ユーザー アカウントを削除する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: PowerShell でさまざまなモジュールを使用して Microsoft 365 ユーザー アカウントを削除する方法について説明します。
+description: PowerShell でさまざまなモジュールを使用してユーザー アカウントを削除するMicrosoft 365説明します。
 ms.openlocfilehash: 32081d1ce0cbc7aac89b337cf8b5d08bc8e43dfa
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,19 +27,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919142"
 ---
-# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザー アカウントを削除する
+# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントを削除する
 
-PowerShell for Microsoft 365 を使用すると、ユーザー アカウントを削除および復元できます。
+PowerShell を使用して、ユーザー Microsoft 365を削除および復元できます。
 
 >[!Note]
->Microsoft 365 管理 [センターを](../admin/add-users/restore-user.md) 使用してユーザー アカウントを復元する方法について説明します。
+>管理者センターを[使用してユーザー](../admin/add-users/restore-user.md)アカウントを復元するMicrosoft 365説明します。
 >
 >その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 接続後、次の構文を使用して個々のユーザー アカウントを削除します。
   
@@ -79,9 +79,9 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-Microsoft Azure Active Directory モジュールを使用してユーザー アカウントを削除Windows PowerShellアカウントは完全に削除されません。 削除されたユーザー アカウントは 30 日以内であれば復元できます。
+ユーザー アカウントを削除する場合は、Microsoft Azure Active DirectoryモジュールをWindows PowerShellアカウントは完全に削除されません。 削除されたユーザー アカウントは 30 日以内であれば復元できます。
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 ユーザー アカウントを削除するには、次の構文を使用します。
   

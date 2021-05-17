@@ -19,7 +19,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: この記事では、PowerShell for Microsoft 365 を使用して SharePoint Online サイト グループを管理する手順について説明します。
+description: この記事では、PowerShell を使用してオンライン サイト グループMicrosoft 365管理SharePointを見つける。
 ms.openlocfilehash: bcc7a00a6114a6fa2ba8aa02520267bd03a0abf5
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -31,22 +31,22 @@ ms.locfileid: "50909540"
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 管理センターを使用することもできますが、PowerShell for Microsoft 365 を使用して SharePoint Online サイト グループを管理することもできます。
+管理センターで Microsoft 365することもできますが、PowerShell を使用してオンライン サイト Microsoft 365をSharePointすることもできます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-この記事の手順では、SharePoint Online に接続する必要があります。 手順については、「[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)」を参照してください。
+この記事の手順では、オンラインからオンラインに接続するSharePoint必要があります。 手順については、「[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)」を参照してください。
 
-## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Microsoft 365 用 PowerShell を使用して SharePoint Online を表示する
+## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>PowerShell SharePointを使用してオンラインを表示Microsoft 365
 
-SharePoint Online 管理センターには、サイト グループを管理するための使いやすい方法があります。 たとえば、サイトのグループとグループ メンバーを確認すると `https://litwareinc.sharepoint.com/sites/finance` します。 次の操作を実行する必要があります。
+オンラインSharePoint管理センターには、サイト グループを管理するための使いやすい方法があります。 たとえば、サイトのグループとグループ メンバーを確認すると `https://litwareinc.sharepoint.com/sites/finance` します。 次の操作を実行する必要があります。
 
-1. SharePoint 管理センターで [アクティブ なサイト] **をクリック** し、サイトの URL をクリックします。
-2. サイト ページで、[設定]アイコン (ページの右上隅にあります) をクリックし、[サイトのアクセス許可]**をクリックします**。
+1. 管理センター SharePoint[アクティブ なサイト]**を** クリックし、サイトの URL をクリックします。
+2. サイト ページで、ページ **の右上隅にある**[設定] アイコンをクリックし、[サイトのアクセス許可]**をクリックします**。
 
 参照する次のサイトでも、このプロセスを繰り返します。
 
-PowerShell for Microsoft 365 のグループの一覧を取得するには、次のコマンドを使用します。
+PowerShell を使用してグループの一覧を取得するには、Microsoft 365コマンドを使用します。
 
 ```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
@@ -59,10 +59,10 @@ foreach ($y in $x)
     }
 ```
 
-SharePoint Online 管理シェル コマンド プロンプトでこのコマンド セットを実行するには、次の 2 つの方法があります。
+[オンライン管理シェル] コマンド プロンプトでこのコマンド セットを実行SharePoint 2 つの方法があります。
 
-- メモ帳 (または別のテキスト エディター) にコマンドをコピーし **、$siteURL** 変数の値を変更し、コマンドを選択し、SharePoint Online 管理シェル コマンド プロンプトに貼り付けます。 この操作を行うと、PowerShell はプロンプトで停止 **>>** します。 Enter キーを押してコマンドを `foreach` 実行します。<br/>
-- コマンドをメモ帳 (または別のテキスト エディター) にコピーし、**$siteURL** 変数の値を変更してから、このテキスト ファイルを .ps1 という拡張子の付いた名前で適切なフォルダーに保存します。 次に、パスとファイル名を指定して、SharePoint Online 管理シェル コマンド プロンプトからスクリプトを実行します。 コマンド例を次に示します。
+- コマンドを メモ帳 (または別のテキスト エディター) にコピーし **、$siteURL** 変数の値を変更し、コマンドを選択し、SharePoint Online Management Shell コマンド プロンプトに貼り付けます。 この操作を行うと、PowerShell はプロンプトで停止 **>>** します。 Enter キーを押してコマンドを `foreach` 実行します。<br/>
+- コマンドをメモ帳 (または別のテキスト エディター) にコピーし、**$siteURL** 変数の値を変更してから、このテキスト ファイルを .ps1 という拡張子の付いた名前で適切なフォルダーに保存します。 次に、パスとファイル名を指定して、SharePoint管理シェル コマンド プロンプトからスクリプトを実行します。 コマンド例を次に示します。
 
 ```powershell
 C:\Scripts\SiteGroupsAndUsers.ps1
@@ -70,11 +70,11 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 どちらの場合も、次のように表示されるはずです。
 
-![SharePoint Online サイト グループ](../media/SPO-site-groups.png)
+![SharePointオンライン サイト グループ](../media/SPO-site-groups.png)
 
 これらは、サイト用に作成されたグループすべて、およびそれらのグループに割り当てられている `https://litwareinc.sharepoint.com/sites/finance` すべてのユーザーです。 グループ名とメンバーの見分けがつくように、グループ名は黄色で表示されます。
 
-別の例として、すべての SharePoint Online サイトのグループとすべてのグループ メンバーシップを一覧表示するコマンド セットを次に示します。
+別の例として、すべてのオンライン サイトのグループとすべてのグループ メンバーシップを一覧表示するコマンド SharePointします。
 
 ```powershell
 $x = Get-SPOSite

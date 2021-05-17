@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint の Web 脅威に対応する
-description: 悪意のある Web サイトや望ましくない Web サイトに関連するアラートに応答します。 Web 脅威保護が Web ブラウザーと Windows 通知を通じてエンド ユーザーに通知する方法を理解する
+description: 悪意のある Web サイトや望ましくない Web サイトに関連するアラートに応答します。 Web 脅威保護がエンド ユーザーに Web ブラウザーを介して通知し、通知を受け取Windows理解する
 keywords: Web 保護、Web 脅威保護、Web 閲覧、アラート、応答、セキュリティ、フィッシング、マルウェア、悪用、Web サイト、ネットワーク保護、エッジ、Internet Explorer、Chrome、Firefox、Web ブラウザー、通知、エンド ユーザー、Windows 通知、ブロック ページ、
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -66,14 +66,14 @@ Microsoft Defender for Endpoint は、悪意のある Web アクティビティ�
 
 [デバイス エンティティ ページの詳細](investigate-machines.md)
 
-## <a name="web-browser-and-windows-notifications-for-end-users"></a>エンド ユーザー向け Web ブラウザーと Windows 通知
+## <a name="web-browser-and-windows-notifications-for-end-users"></a>エンド ユーザー向Windows Web ブラウザーと通知
 
-Microsoft Defender for Endpoint の Web 保護を使用すると、エンド ユーザーが Microsoft Edge や他のブラウザーを使用して悪意のある Web サイトや望ましくない Web サイトにアクセスすることを防止できます。 ブロックはネットワーク保護によって実行されます [の](network-protection.md)で、Web ブラウザーから一般的なエラーが表示されます。 また、Windows からの通知も表示されます。
+Microsoft Defender for Endpoint の Web 保護を使用すると、エンド ユーザーが悪意のある Web サイトや望ましくない web サイトにアクセスする場合、Microsoft Edgeブラウザーを使用してアクセスできません。 ブロックはネットワーク保護によって実行されます [の](network-protection.md)で、Web ブラウザーから一般的なエラーが表示されます。 また、ユーザーからの通知も表示Windows。
 
-![403 エラーと Microsoft Edge でブロックされている Windows 通知 Web の脅威を示す ](images/wtp-browser-blocking-page.png)
- *Microsoft Edge の画像*
+![403 Microsoft Edgeを示すエラーの画像と、Windowsでブロックされた通知 Web の脅威 ](images/wtp-browser-blocking-page.png)
+ *Microsoft Edge*
 
-![Chrome でセキュリティで保護された接続警告と Windows 通知 Web の脅威がブロックされている ](images/wtp-chrome-browser-blocking-page.png)
+![Chrome でセキュリティで保護された接続の警告とブロックされた通知 Web Windowsを示す ](images/wtp-chrome-browser-blocking-page.png)
  *Chrome Web ブラウザーの画像*
 
 ## <a name="related-topics"></a>関連項目

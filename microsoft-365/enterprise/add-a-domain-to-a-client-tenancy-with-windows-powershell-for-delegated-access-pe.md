@@ -16,7 +16,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: '概要: PowerShell for Microsoft 365 を使用して、既存の顧客テナントに代替ドメイン名を追加します。'
+description: '概要: PowerShell を使用Microsoft 365既存の顧客テナントに別のドメイン名を追加します。'
 ms.openlocfilehash: b6a40f387f9fc7e513137cda4253a62be2455aad
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,12 +28,12 @@ ms.locfileid: "50905574"
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 管理センターを使用するよりも速く、新しいドメインを作成して顧客のテナントと PowerShell for Microsoft 365 に関連付けることができます。
+新しいドメインを作成し、顧客のテナントと PowerShell を関連付け、Microsoft 365管理センターを使用するよりもMicrosoft 365できます。
   
-委任アクセス許可 (DAP) パートナー とは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。 他の会社のネットワーク プロバイダーまたは通信プロバイダーであることもよくあります。 Microsoft 365 サブスクリプションを顧客に提供するサービスにバンドルします。 Microsoft 365 サブスクリプションを販売すると、顧客テナンシーに対する管理 (AOBO) アクセス許可が自動的に付与され、顧客テナンシーを管理および報告できます。
+委任アクセス許可 (DAP) パートナー とは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。 他の会社のネットワーク プロバイダーまたは通信プロバイダーであることもよくあります。 ユーザーは、Microsoft 365サービスサービスにサブスクリプションをバンドルします。 Microsoft 365 サブスクリプションを販売すると、顧客テナンシーに対する管理 (AOBO) アクセス許可が自動的に付与され、顧客テナンシーの管理と報告が可能になります。
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-このトピックの手順では、PowerShell を使用して [Microsoft 365 に接続する必要があります](connect-to-microsoft-365-powershell.md)。
+このトピックの手順では、PowerShell を使用してConnect[にMicrosoft 365する必要があります](connect-to-microsoft-365-powershell.md)。
   
 また、パートナーのテナント管理者の資格情報も必要です。
   
@@ -52,11 +52,11 @@ Microsoft 365 管理センターを使用するよりも速く、新しいドメ
  顧客から、既定の<domain>.onmicrosoft.comドメインを世界に対して自企業を表す主ドメインにしたくないため、追加のドメインを作成して顧客のテナンシーに関連付けるよう依頼される可能性があります。この手順では、ドメインを新規作成して顧客のテナンシーに関連付ける方法を順を追って説明します。
   
 > [!NOTE]
-> これらの操作の一部を実行するには、Microsoft 365 管理センターの管理アカウントの詳細にある [サポートする企業への管理アクセスの割り当て] 設定で、サインインするパートナー管理者アカウントを [完全な管理] に設定する必要があります。 パートナー管理者の役割の管理の詳細については、「パートナー: 委任された管理を提供 [する」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=532435)。 
+> これらの操作の一部を実行するには、Microsoft 365 管理センターの管理アカウントの詳細にある[サポートする企業への管理アクセスの割り当て] 設定で、サインインするパートナー管理者アカウントを [完全な管理] に設定する必要があります。 パートナー管理者の役割の管理の詳細については、「パートナー: 委任された管理を提供 [する」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=532435)。 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Azure Active Directory でドメインを作成する
 
-このコマンドは、Azure Active Directory にドメインを作成しますが、公的に登録されたドメインとは関連付けられません。 これは、企業向け Microsoft Microsoft 365 に一般に登録されたドメインを所有している場合に発生します。
+このコマンドは、Azure Active Directory にドメインを作成しますが、公的に登録されたドメインとは関連付けられません。 これは、一般に登録されたドメインを企業向け Microsoft Microsoft 365証明するときに発生します。
   
 ```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
@@ -68,7 +68,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 
 ### <a name="get-the-data-for-the-dns-txt-verification-record"></a>DNS の TXT 検証レコードのデータを取得する
 
- Microsoft 365 は、DNS TXT 検証レコードに配置する必要がある特定のデータを生成します。 データを取得するには、次のコマンドを実行します。
+ Microsoft 365 DNS TXT 検証レコードに配置する必要がある特定のデータが生成されます。 データを取得するには、次のコマンドを実行します。
   
 ```powershell
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
@@ -87,7 +87,7 @@ Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of
   
 ### <a name="add-a-txt-record-to-the-publically-registered-dns-zone"></a>公的に登録された DNS ゾーンに TXT レコードを追加する
 
-Microsoft 365 が一般に登録されたドメイン名に送信されるトラフィックの受け入れを開始する前に、自分が所有し、ドメインに対する管理者権限を持っていることを証明する必要があります。 ドメインを保有していることを証明するには、ドメインに TXT レコードを作成します。 TXT レコードは、ドメインでは何も行わず、ドメインの所有権が確立した後に削除することができます。 TXT レコードを作成するには、「DNS レコードの追加」の手順に [従ってドメインを接続します](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。 これらの手順がうまくいかない場合は、使っている DNS 登録業者用の手順を検索する必要があります。
+一Microsoft 365登録されたドメイン名に送信されるトラフィックの受け入れを開始する前に、自分が所有し、そのドメインに対する管理者権限を持っていることを証明する必要があります。 ドメインを保有していることを証明するには、ドメインに TXT レコードを作成します。 TXT レコードは、ドメインでは何も行わず、ドメインの所有権が確立した後に削除することができます。 TXT レコードを作成するには、「DNS レコードの追加」の手順に [従ってドメインを接続します](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。 これらの手順がうまくいかない場合は、使っている DNS 登録業者用の手順を検索する必要があります。
   
 TXT レコードが正常に作成されたことを、nslookup 経由で確認します。次の構文に従います。
   
@@ -103,9 +103,9 @@ nslookup -type=TXT <FQDN of registered domain>
   
  `text=MS=ms########`
   
-### <a name="validate-domain-ownership-in-microsoft-365"></a>Microsoft 365 でのドメイン所有権の検証
+### <a name="validate-domain-ownership-in-microsoft-365"></a>ドメインの所有権を検証Microsoft 365
 
-この最後の手順では、一般に登録されたドメインを所有している Microsoft 365 を検証します。 この手順の後、Microsoft 365 は新しいドメイン名にルーティングされたトラフィックの受け入れを開始します。 ドメインの作成と登録のプロセスを完了するには、次のコマンドを実行します。 
+この最後の手順では、一般にMicrosoft 365ドメインを所有しているユーザーを検証します。 この手順の後Microsoft 365新しいドメイン名にルーティングされたトラフィックの受け入れが開始されます。 ドメインの作成と登録のプロセスを完了するには、次のコマンドを実行します。 
   
 ```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>

@@ -43,7 +43,7 @@ ms.locfileid: "51860787"
 
 Defender for Endpoint は、このシナリオにパートナーシップの機会を追加し、MSSP が次のアクションを実行できます。
 
-- MSSP のお客様の Microsoft Defender セキュリティ センター ポータルへのアクセスを取得する
+- MSSP カスタマー のポータルへのアクセスMicrosoft Defender セキュリティ センターする
 - 電子メール通知を取得し、 
 - セキュリティ情報とイベント管理 (SIEM) ツールを使用してアラートを取得する
 

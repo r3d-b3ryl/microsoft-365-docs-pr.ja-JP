@@ -23,7 +23,7 @@ ms.locfileid: "50917706"
 ## <a name="desktop-background-picture"></a>デスクトップの背景画像
 組織内の Microsoft Managed Desktop デバイスのデスクトップの背景画像をカスタマイズできます。 これを使用して、会社のブランドまたはマーケティング 資料を適用できます。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要件
 
 デスクトップの背景画像では、次の要件を満たす必要があります。
 - ピクチャ ファイル形式 - .jpg、jpeg、または .png
@@ -42,7 +42,7 @@ ms.locfileid: "50917706"
 ## <a name="browser-start-pages"></a>ブラウザーの開始ページ
 ユーザーが Microsoft Edge を起動すると、ブラウザーの開始ページが個々のタブで開きます。 ユーザーが頻繁に使用する一連のサイトを簡単に開く場合は、サイトごとにブラウザーの開始ページを追加します。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要件
 
 ブラウザーのスタート ページにイントラネットまたはインターネット サイトの完全修飾ドメイン名 (FQDN) を指定する必要があります。 内部サイトが構成されている場合、これらのサイトへのアクセスは、社内ネットワークに接続されている場合、または VPN 接続に接続されている場合にのみ許可されていることをユーザーに知らせて下さい。 
 
@@ -63,7 +63,7 @@ Microsoft Edge との互換性に問題がある特定の Web サイトとアプ
 
 エンタープライズ モード サイト一覧 https:// ホストしている内部共有の場所、または場所を指定できます。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要件
 
 エンタープライズ モードのサイト 一覧ファイルでは、次の要件を満たす必要があります。
 - ファイル形式 - ファイル要件を満たす [XML ファイル](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
@@ -94,7 +94,7 @@ Microsoft Edge との互換性に問題がある特定の Web サイトとアプ
 - ゾーン 3 – インターネット ゾーン
 - ゾーン 4 – 制限付きサイト ゾーン
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要件
 
 信頼済みサイトごとにイントラネットまたはインターネット サイトの完全修飾ドメイン名 (FQDN) を指定します。 
 
@@ -126,7 +126,7 @@ Microsoft Managed Desktop ポータルに追加するプロキシ サイトの�
 > [!NOTE]
 > 既定のプロキシ例外リストの更新は、常に顧客の展開よりも優先されます。 つまり、既定のプロキシ例外リストの展開がある場合、ステージ展開は一時停止されます。  
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要件
 
 プロキシ サーバーとプロキシ サイトの例外に対して、次の要件を満たす必要があります。
 - 有効なサーバー アドレスとポート番号である必要があります

@@ -37,7 +37,7 @@ ms.locfileid: "51903930"
 
 `mkdir mdatp/files`
 
-Microsoft Defender Security Center ポータルからダウンロードできる Linux Server Onboarding zip ファイルを、この新しいファイル フォルダーに転送します。
+ポータルからダウンロードできる Linux Server Onboarding zip ファイルMicrosoft Defender セキュリティ センターこの新しいファイル フォルダーに転送します。
 
 Chef ワークステーションで、mdatp/recipes フォルダーに移動します。 このフォルダーは、クックブックが生成された時点で作成されます。 優先するテキスト エディター (vi や nano など) を使用して、default.rb ファイルの末尾に次の手順を追加します。
 -   include_recipe '::onboard_mdatp'
@@ -127,7 +127,7 @@ end
 レシピの一部としてこの手順を含めるには、include_recipeフォルダー内settings_mdatp default.rb ファイルに ':: settings_mdatp' を追加します。
 crontab を使用して自動更新をスケジュールする [Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)の更新プログラムをスケジュールできます。
 
-MDATP クックブックをアンインストールします。
+クックブックMDATPアンインストールします。
 
 ```powershell
 #Uninstall the Defender package

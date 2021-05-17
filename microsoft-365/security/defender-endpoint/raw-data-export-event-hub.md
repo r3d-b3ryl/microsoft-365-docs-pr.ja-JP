@@ -42,9 +42,9 @@ ms.locfileid: "51861049"
 
 ## <a name="enable-raw-data-streaming"></a>生データ ストリーミングを有効にする:
 
-1. [Microsoft Defender](https://securitycenter.windows.com)セキュリティ センターに ***グローバル** 管理者 _ または _* セキュリティ管理者 **_としてログイン_ します。
+1. * Global **Administrator** _ [または](https://securitycenter.windows.com)_* セキュリティ管理者 **として、Microsoft Defender セキュリティ センターに _ログイン_ します。
 
-2. Microsoft Defender セキュリティ [センターの [データエクスポート設定]](https://securitycenter.windows.com/interoperability/dataexport) ページに移動します。
+2. [データのエクスポート[設定] ページに移動Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/interoperability/dataexport)
 
 3. [データエクスポート **設定の追加] をクリックします**。
 
@@ -88,7 +88,7 @@ ms.locfileid: "51861049"
 
 イベント プロパティのデータ型を取得するには、次の操作を行います。
 
-1. Microsoft Defender セキュリティ センター [にログインし、[](https://securitycenter.windows.com) 高度な検索] [ページに移動します](https://securitycenter.windows.com/hunting-package)。
+1. ログイン[して[詳細](https://securitycenter.windows.com)Microsoft Defender セキュリティ センター]ページ[に移動します](https://securitycenter.windows.com/hunting-package)。
 
 2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。
  

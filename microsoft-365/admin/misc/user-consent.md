@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のアプリに対するユーザーの同意の管理
+title: アプリに対するユーザーの同意を管理Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: アプリに対するユーザーの同意、およびアプリを有効にし、サード パーティ製アプリがユーザーの Microsoft 365 情報にアクセスできる方法について説明します。
+description: アプリに対するユーザーの同意、およびアプリを有効にし、サード パーティ製アプリがユーザーの情報にアクセスMicrosoft 365します。
 ms.openlocfilehash: 1f6f08161d6dd85964f07ec4d48f9f2cc23a1ead
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914560"
 ---
-# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Microsoft 365 のアプリに対するユーザーの同意の管理
+# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>アプリに対するユーザーの同意を管理Microsoft 365
 
-この設定は、ユーザーがサインインおよびデータへのアクセス要求に OpenID Connect および OAuth 2.0 を使用するアプリに対してその同意を与えるかどうかを制御します。 アプリは、自分の組織内から作成するか、別の組織または 365 組織またはOfficeから作成できます。
+この設定は、ユーザーがサインインおよびデータへのアクセス要求に OpenID Connect および OAuth 2.0 を使用するアプリに対してその同意を与えるかどうかを制御します。 アプリは、自分の組織内から作成するか、別の組織またはOffice 365から作成できます。
 
 この設定を有効にすると、これらのアプリはユーザーに組織のデータへのアクセス許可を求め、ユーザーは許可するかどうかを選択できます。 この設定をオフにした場合、管理者はユーザーがアプリを使用する前に、それらのアプリに同意する必要があります。 この場合は、ユーザーがブロックされたアプリを使用する管理者の承認要求を送信できるよう、Azure portal で管理者の同意ワークフローを設定する方法を検討してください。
 
@@ -40,7 +40,7 @@ ms.locfileid: "50914560"
 
 アプリに対するユーザーの同意を有効またはオフにする方法を次に示します。
 
-1. 管理センターで、[組織の設定サービスの設定] ページに移動し、[アプリに対するユーザーの同意 \>   >  [](https://go.microsoft.com/fwlink/p/?linkid=2053743)**] を選択します**。
+1. 管理センターで、[組織の設定サービス]**ページ設定** に移動し、[アプリに対するユーザーの同意 \>   >  [](https://go.microsoft.com/fwlink/p/?linkid=2053743)**] を選択します**。
 
 2. [アプリ **に対するユーザーの同意** ] ページで、ユーザーの同意を有効または無効にするオプションを選択します。
 

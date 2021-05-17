@@ -22,17 +22,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907942"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>ゲストが特定の Microsoft 365 グループまたは Microsoft Teams チームに追加されるのを防ぐ
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>ゲストが特定のグループまたはチームにMicrosoft 365されるMicrosoft Teamsする
 
 ほとんどのグループとチームへのゲスト アクセスを許可するが、ゲスト アクセスを防止する場所がある場合は、個々のグループとチームのゲスト アクセスをブロックできます。 (チームへのゲスト アクセスをブロックするには、関連付けられたグループへのゲスト アクセスをブロックします)。これにより、新しいゲストが追加されるのを防ぎ、グループまたはチームに既に存在するゲストは削除されません。
 
-組織内で感度ラベルを使用する場合は、グループごとにゲスト アクセスを制御するために使用することをお勧めします。 これを行う方法の詳細については、「感度ラベルを使用して [Microsoft Teams、Microsoft 365](../compliance/sensitivity-labels-teams-groups-sites.md)グループ、および SharePoint サイトのコンテンツを保護する」 を参照してください。 これが推奨アプローチです。
+組織内で感度ラベルを使用する場合は、グループごとにゲスト アクセスを制御するために使用することをお勧めします。 これを行う方法については、「感度ラベルを使用して、Microsoft Teams、Microsoft 365、SharePoint サイトのコンテンツ[を保護します](../compliance/sensitivity-labels-teams-groups-sites.md)。 これが推奨アプローチです。
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Microsoft PowerShell を使用してグループ設定を変更する
 
-PowerShell を使用して、個々のグループに新しいゲストを追加することはできません。 (チームに関連付けられている SharePoint サイトには、個別の [ゲスト共有コントロールがあります](/sharepoint/change-external-sharing-site)。)
+PowerShell を使用して、個々のグループに新しいゲストを追加することはできません。 (チームに関連付けられたサイトSharePointゲスト共有[コントロールが別々に用意されています](/sharepoint/change-external-sharing-site)。)
 
-グループ レベルのゲスト アクセス設定を変更するには、プレビュー バージョンの [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2) (モジュール名 **AzureADPreview)** を使用する必要があります。
+グループ レベルのゲスト アクセス設定を変更するには、Azure Active Directory [PowerShell](/powershell/azure/active-directory/install-adv2)のプレビュー バージョン (モジュールGraph **AzureADPreview)** を使用する必要があります。
 
 - 以前に Azure AD PowerShell モジュールのいかなるバージョンもインストールしたことがない場合には、「[Installing the Azure AD Module (Azure AD モジュールのインストール)](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)」を参照し、指示に従ってパブリック プレビュー リリースをインストールしてください。
 

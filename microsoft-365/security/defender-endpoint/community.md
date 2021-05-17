@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint コミュニティ センターにアクセスする
-description: Microsoft Defender for Endpoint コミュニティ センターにアクセスして、エクスペリエンスを共有し、製品について説明します。
+description: Microsoft Defender for Endpoint Communityセンターにアクセスして、エクスペリエンスを共有し、製品について説明します。
 keywords: コミュニティ, コミュニティ センター, 技術コミュニティ, 会話, お知らせ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -34,7 +34,7 @@ ms.locfileid: "51893427"
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender for Endpoint Community Center は、コミュニティ メンバーが製品に関するエクスペリエンスを学び、共同作業し、共有できる場所です。 
+Defender for Endpoint Community センターは、コミュニティ メンバーが製品に関するエクスペリエンスを学び、共同作業し、共有できる場所です。 
 
 特定の情報について学ぶには、いくつかのスペースがあります。
 - お知らせ 
@@ -42,11 +42,11 @@ Defender for Endpoint Community Center は、コミュニティ メンバーが�
 - 脅威インテリジェンス
 
 
-コミュニティ センターにアクセスするには、いくつかの方法があります。
-- Microsoft Defender Security Center ナビゲーション ウィンドウで、[コミュニティ センター] **を選択します**。  新しいブラウザー タブが開き、[Defender for Endpoint Tech Community] ページに移動します。 
-- [[Microsoft Defender for Endpoint Tech Community] ページからコミュニティにアクセス](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)する
+このセンターにアクセスするには、いくつかのCommunityがあります。
+- [ナビゲーション] Microsoft Defender セキュリティ センターで、[中央] を **Communityします**。  新しいブラウザー タブが開き、[Defender for Endpoint Tech] ページCommunityされます。 
+- [Microsoft Defender [for Endpoint Tech] ページからコミュニティにCommunity](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)する
 
 
 コミュニティに投稿された会話を即座に表示および読み取ることができます。 
 
-投稿にコメントできるなど、コミュニティ内の完全なエクスペリエンスを得るには、コミュニティに参加する必要があります。 Microsoft Tech コミュニティの開始方法の詳細については [、「Microsoft Tech Community: Getting Started」を参照してください](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15)。
+投稿にコメントできるなど、コミュニティ内の完全なエクスペリエンスを得るには、コミュニティに参加する必要があります。 Microsoft Tech Community の開始方法の詳細については[、「Microsoft Tech Community: Getting Started 」を参照してください](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15)。

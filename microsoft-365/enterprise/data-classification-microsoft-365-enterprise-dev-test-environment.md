@@ -1,5 +1,5 @@
 ---
-title: エンタープライズ テスト環境向け Microsoft 365 のデータ分類
+title: エンタープライズ テスト環境Microsoft 365データ分類
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境用の Microsoft 365 のドキュメントに保持ラベルを作成して使用します。
+description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境のドキュメントに保持ラベルを作成Microsoft 365使用します。
 ms.openlocfilehash: 613aa3713b4d72eed1bc0b2d88f70a817d0e7cff
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,23 +21,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919190"
 ---
-# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向け Microsoft 365 のデータ分類
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境Microsoft 365データ分類
 
-*このテスト ラボ ガイドは、Microsoft 365 for enterprise と 365 Enterprise テストOffice両方に使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ環境とテスト環境Microsoft 365両方Office 365 Enterprise使用できます。*
 
-この記事では、エンタープライズ テスト環境向け Microsoft 365 で保持ラベルを使用してデータ分類を構成する方法について説明します。
+この記事では、エンタープライズ テスト環境で保持ラベルを使用してデータMicrosoft 365構成する方法について説明します。
 
 テスト環境でのデータの分類には、次の 3 つのフェーズがあります。
-- [フェーズ 1: エンタープライズ テスト環境向け Microsoft 365 を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [フェーズ 2: 保持ラベルの作成](#phase-2-create-retention-labels)
 - [フェーズ 3: ドキュメントに保持ラベルを適用する](#phase-3-apply-retention-labels-to-documents)
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Microsoft 365 for enterprise Test Lab Guide スタックのすべての記事へのビジュアル マップについては [、「Microsoft 365 for enterprise Test Lab Guide Stack」を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境向け Microsoft 365 を構築する
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する
 
 最小限の要件で保持ラベルを軽量な方法で構成する場合は、「Lightweight 基本構成」の手順 [に従ってください](lightweight-base-configuration-microsoft-365-enterprise.md)。
   
@@ -48,10 +48,10 @@ ms.locfileid: "50919190"
 
 ## <a name="phase-2-create-retention-labels"></a>フェーズ 2: 保持ラベルの作成
 
-このフェーズでは、SharePoint Online ドキュメント フォルダーの異なるレベルの保持ラベルを作成します。
+このフェーズでは、オンライン ドキュメント フォルダーに対するさまざまなレベルの保持SharePoint作成します。
 
-1. グローバル管理者アカウント [を使用して Microsoft 365](https://security.microsoft.com/homepage) セキュリティ センターにサインインします。
-1. ブラウザーの **[ホーム - Microsoft 365 セキュリティ**] タブで、[分類保持ラベル]  >  **を選択します**。
+1. グローバル管理者アカウントを[使用Microsoft 365セキュリティ センター](https://security.microsoft.com/homepage)にサインインします。
+1. ブラウザーの **[ホーム - Microsoft 365セキュリティ**] タブで、[分類の保持ラベル]  >  **を選択します**。
 1. [**ラベルを作成**] を選択します。
 1. [ラベルに **名前を付け] ウィンドウで** 、[ラベルに名前を付け] に **「内部パブリック** 」と **入力** し、[次へ] を **選択します**。
 1. [ファイルプラン **記述子] ウィンドウで、[** 次へ] を **選択します**。
@@ -74,25 +74,25 @@ ms.locfileid: "50919190"
 
 ## <a name="phase-3-apply-retention-labels-to-documents"></a>フェーズ 3: ドキュメントに保持ラベルを適用する
 
-このフェーズでは、SharePoint Online サイトの Documents フォルダー内のファイルの既定の保持ラベルの動作を検出し、ドキュメントの保持ラベルを手動で変更します。
+このフェーズでは、SharePoint Online サイトの Documents フォルダーにあるファイルの既定の保持ラベルの動作を検出し、ドキュメントの保持ラベルを手動で変更します。
 
-まず、機密レベルの SharePoint Online チーム サイトを作成します。
+まず、オンライン チーム サイトに機密レベルSharePoint作成します。
   
-1. ブラウザーのプライベート インスタンスを使用して、グローバル管理者アカウントを使用して [Microsoft 365](https://admin.microsoft.com) 管理センターにサインインします。
-1. タイルの一覧で **、[SharePoint] を選択します**。
-1. ブラウザーの新 **しい [SharePoint]** タブで、[サイトの作成] **を選択します**。
+1. ブラウザーのプライベート インスタンスを使用して、グローバル[管理者アカウントをMicrosoft 365管理センター](https://admin.microsoft.com)にサインインします。
+1. タイルの一覧で、[タイル] を **SharePoint。**
+1. ブラウザーの [新 **SharePoint]** タブで、[サイトの作成]**を選択します**。
 1. **[サイトの作成]** ページで、**[チーム サイト]** を選択します。
 1. [チーム サイト **名] ボックスに****「SensitiveFiles」と入力します**。
-1. [チーム サイト **の説明] ボックス** に、「 **機密ファイルの SharePoint サイト」と入力します**。
+1. [チーム サイト **の説明] ボックス** に、機密 **ファイルSharePointサイトを入力します**。
 1. [ **プライバシーの設定]** で、[ **プライベート] を選択し、メンバー** だけがこのサイトにアクセスし、[次へ] を **選択します**。
-1. [追加 **するユーザー] ウィンドウで、[完了]** を **選択します**。
+1. [追加 **Who] ウィンドウで、[完了]** を **選択します**。
     
 次に、SensitiveFiles チーム サイトの [ドキュメント] フォルダーを [機密性の高い保持] ラベル用に構成します。
   
 1. ブラウザーの **[SensitiveFiles]** タブで、[ドキュメント] **を選択します**。
-1. [設定] **アイコンを** 選択し、[ライブラリの設定] **を選択します**。
+1. [設定]**設定** を選択し、[ライブラリの設定]**を選択します**。
 1. [ **アクセス許可と管理] で**、[このリスト **またはライブラリ内のアイテムにラベルを適用する] を選択します**。 このオプションが表示されない場合、保持ラベルはまだ発行されません。 後でこの手順を試してください。
-1. [ **設定- ラベルの適用]** で、ドロップダウン ボックス **で [** 機密] を選択し、[保存] を **選択します**。
+1. **[設定ラベルの適用] で**、ドロップダウン ボックス **で**[機密] を選択し、[保存] を **選択します**。
 
 次に、SensitiveFiles サイトに新しいドキュメントを作成し、保持ラベルを変更します。
     

@@ -89,7 +89,7 @@ ms.locfileid: "51861577"
 
 ### <a name="antivirus-status"></a>ウイルス対策の状態
 
-ウイルス対策の状態でデバイスをフィルター処理します。 アクティブな Windows 10 デバイスにのみ適用されます。
+ウイルス対策の状態でデバイスをフィルター処理します。 アクティブなデバイスにのみWindows 10適用されます。
 
 - **無効** - ウイルス&保護がオフになっています。
 - **[報告しない** ] - ウイルス&保護が報告されていない場合。
@@ -103,9 +103,9 @@ ms.locfileid: "51861577"
 
 特定の脅威の詳細については、「Threat [analytics」を参照してください](threat-analytics.md)。 軽減策の詳細については [、「Threat &脆弱性管理」を参照してください](next-gen-threat-and-vuln-mgt.md)。
 
-### <a name="windows-10-version"></a>Windows 10 バージョン
+### <a name="windows-10-version"></a>Windows 10バージョン
 
-調査する Windows 10 バージョンのみを選択します。
+調査するWindows 10バージョンのみを選択します。
 
 ### <a name="tags--groups"></a>タグ & グループ
 

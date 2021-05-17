@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 グループと Microsoft Teams の組織とライフサイクル ガバナンスを計画する
+title: グループとグループの組織とライフサイクルのガバナンスMicrosoft 365計画Microsoft Teams
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,7 +14,7 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Microsoft 365 のコラボレーション ツールのライフサイクル ガバナンス オプションについて説明する
+description: グループ内のコラボレーション ツールのライフサイクル ガバナンス オプションに関するMicrosoft 365
 ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,19 +22,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907930"
 ---
-# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Microsoft 365 グループと Microsoft Teams の組織とライフサイクル ガバナンスを計画する
+# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>グループとグループの組織とライフサイクルのガバナンスMicrosoft 365計画Microsoft Teams
 
-Microsoft 365 グループには、組織が必要とするガバナンス機能を実装するための豊富なツールセットがあります。 
+Microsoft 365グループには、組織が必要とするガバナンス機能を実装するための豊富なツールセットがあります。 
 
 次のセクションでは、機能について説明し、ベスト プラクティスを推奨し、ガバナンスの要件とそれらを満たす方法を決定するための適切な質問をするためのガイダンスを提供します。
 
-## <a name="control-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを制御する
+## <a name="control-who-can-create-microsoft-365-groups"></a>グループを作成できるユーザー Microsoft 365する
 
-グループは、Outlook、SharePoint、Teams、その他の環境を含む複数のエンド ポイントからエンド ユーザーが作成できます。
+グループは、エンド ユーザーが複数のエンド ポイント (Outlook、SharePoint、Teamsなど) から作成できます。
 
 ![画像の説明](../media/04.png)
 
-グループの所有者に権限を与え、ユーザーが作業を簡単に行えるのを助けるために、セルフサービスを強くお勧めします。 グループとチームの作成を制限すると、サービスが機能するために多くの Microsoft 365 サービスでグループを作成する必要が生じ、ユーザーの生産性が低下する可能性があります。
+グループの所有者に権限を与え、ユーザーが作業を簡単に行えるのを助けるために、セルフサービスを強くお勧めします。 グループとチームの作成を制限すると、サービスが機能するために多Microsoft 365グループを作成する必要が生じ、ユーザーの生産性が低下する可能性があります。
 
 グループの作成には、次のガバナンス オプションを検討してください。
 
@@ -42,15 +42,15 @@ Microsoft 365 グループには、組織が必要とするガバナンス機能
 - グループの作成を、すべての正[](/azure/active-directory/users-groups-roles/groups-create-rule)社員など、動的メンバーシップを持つセキュリティ グループのメンバーに制限します。
 - グループの作成をセキュリティ グループに制限し、ユーザーがセキュリティ グループのメンバーになるために組織のグループ使用ポリシーのトレーニングを完了する必要があります。
 
-グループを作成できるユーザーを制限する場合は [、「Microsoft 365](manage-creation-of-groups.md) グループを作成できるユーザーを管理する」を参照してください。
+グループを作成できるユーザーを制限する場合は、「[](manage-creation-of-groups.md)グループを作成できるユーザー Microsoft 365を管理する」を参照してください。
 
 ## <a name="group-delete-restore-and-archiving"></a>グループの削除、復元、およびアーカイブ
 
-Microsoft 365 グループが削除された場合、既定では 30 日間保持されます。 グループを引き続き復元できるため、この 30 日の期間は "論理的な削除" と呼ばれます。 30 日後、グループおよび関連付けられているコンテンツは完全に削除され、復元することはできません。
+ユーザー グループMicrosoft 365削除された場合、既定では 30 日間保持されます。 グループを引き続き復元できるため、この 30 日の期間は "論理的な削除" と呼ばれます。 30 日後、グループおよび関連付けられているコンテンツは完全に削除され、復元することはできません。
 
 チャット、ファイル、またはメールを保持するための保持ポリシーが設定されている場合、それらのアイテムはグループが削除された後も保持されます。 詳細については [、「アイテム保持ポリシーについて」](../compliance/retention.md) を参照してください。
 
-グループを削除するが、1 つ以上のグループに接続されたサービスからコンテンツを保持する場合は、「グループ、チーム、およびグループのアーカイブ」を参照 [Yammerを参照](end-life-cycle-groups-teams-sites-yammer.md) してください。
+グループを削除するが、1 つ以上のグループに接続されたサービスからコンテンツを保持する場合は、「グループ[、](end-life-cycle-groups-teams-sites-yammer.md)チーム、およびグループのアーカイブ」を参照Yammerを参照してください。
 
 ## <a name="group-naming-policy"></a>グループの名前付けポリシー
 
@@ -61,7 +61,7 @@ Microsoft 365 グループが削除された場合、既定では 30 日間保�
 
 名前付けポリシーは、グループに接続されたサービスからグループが作成される場合に適用されます。
 
-グループに名前付けポリシーを使用する場合は [、「Microsoft 365 グループの名前付けポリシー」を参照してください](groups-naming-policy.md)。
+グループに名前付けポリシーを使用する場合は、「グループ[の名前付けMicrosoft 365」を参照してください](groups-naming-policy.md)。
 
 ## <a name="group-expiration-policy"></a>グループの有効期限ポリシー
 
@@ -73,7 +73,7 @@ Microsoft 365 グループが削除された場合、既定では 30 日間保�
 - 更新されていないグループは削除されます。
 - 削除されたグループは、グループの所有者または管理者が 30 日以内に復元できます。
 
-有効期限ポリシーは、使用されなくなったグループを確実に削除することで、グループのスプロールを制限する優れた方法です。 グループ有効期限ポリシーを作成する場合は [、「Microsoft 365 グループ有効期限ポリシー」を参照してください](microsoft-365-groups-expiration-policy.md)。
+有効期限ポリシーは、使用されなくなったグループを確実に削除することで、グループのスプロールを制限する優れた方法です。 グループ有効期限ポリシーを作成する場合は、「グループ有効期限ポリシー Microsoft 365[を参照してください](microsoft-365-groups-expiration-policy.md)。
 
 ## <a name="related-topics"></a>関連項目
 

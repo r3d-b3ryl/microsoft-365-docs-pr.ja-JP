@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 グループのメンバーを追加または削除する
+title: グループにメンバーを追加またはMicrosoft 365する
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,7 +17,7 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
-description: Microsoft 365 管理センターで、グループにメンバーを追加し、グループからメンバーを削除し、グループ所有者の状態を管理する方法について説明します。
+description: グループにメンバーを追加し、グループからメンバーを削除し、管理センターでグループ所有者の状態Microsoft 365します。
 ms.openlocfilehash: 997145b85d2990d5bf7184f5e97a0a8d1c86dae9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,12 +25,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907918"
 ---
-# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>管理センターを使用して Microsoft 365 グループのメンバーを追加または削除する
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>管理センターを使用して、Microsoft 365グループのメンバーを追加または削除する
 
-Microsoft 365 では、グループ メンバーは通常、独自のグループを作成したり、参加するグループに自分自身を追加したり、グループ所有者から招待されます。 グループの所有権が変更された場合、または管理者としてメンバーを追加または削除する必要がある場合は、その変更を行う必要があります。 これらの変更を行えるのは、グローバル管理者、Exchange 管理者、グループ管理者、またはユーザー管理者のみです。 [Microsoft 365 グループとは](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+このMicrosoft 365、グループ メンバーは通常、独自のグループを作成したり、参加するグループに自分自身を追加したり、グループの所有者から招待されます。 グループの所有権が変更された場合、または管理者としてメンバーを追加または削除する必要がある場合は、その変更を行う必要があります。 これらの変更を行Exchangeできるのは、グローバル管理者、管理者、グループ管理者、またはユーザー管理者のみです。 [グループとはMicrosoft 365ですか?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> 管理者ではない場合は、Outlook を使用して [メンバーを追加または削除できます](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)。
+> 管理者ではない場合は、管理者を使用してメンバーを追加[または削除Outlook。](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>管理センターのグループにメンバーを追加する
 
@@ -111,12 +111,12 @@ Microsoft 365 では、グループ メンバーは通常、独自のグルー�
 
 ## <a name="articles-about-managing-groups"></a>グループの管理に関する記事
 
-- [Outlook で配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
+- [配布リストを、Microsoft 365グループにアップグレードOutlook](../manage/upgrade-distribution-lists.md)
 
 - [Outlook で配布リストをグループにアップグレードする理由](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
-- [Microsoft 365 グループのゲスト アクセスを管理する](manage-guest-access-in-groups.md)
+- [グループ内のゲスト アクセスMicrosoft 365する](manage-guest-access-in-groups.md)
 
-- [PowerShell を使用して Microsoft 365](../../enterprise/manage-microsoft-365-groups-with-powershell.md)グループを管理する : この記事では、主要なコマンドレットについて説明し、例を示します。
+- [PowerShell Microsoft 365グループを](../../enterprise/manage-microsoft-365-groups-with-powershell.md)管理する : この記事では、主要なコマンドレットについて説明し、例を示します。
 
-- [Microsoft 365 グループの名前付けポリシー](../../solutions/groups-naming-policy.md)
+- [Microsoft 365グループの名前付けポリシー](../../solutions/groups-naming-policy.md)

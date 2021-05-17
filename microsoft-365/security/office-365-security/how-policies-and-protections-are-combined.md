@@ -33,7 +33,7 @@ ms.locfileid: "51930379"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない Microsoft 365 組織では、受信メールに複数の形式の保護のフラグが設定されている場合があります。 たとえば、すべての Microsoft 365 のお客様が利用できる EOP に組み込みのフィッシング対策ポリシーや、Office 365 のお客様に対して Microsoft Defender で利用できるより堅牢なフィッシング対策ポリシーなどです。 メッセージは、マルウェア、スパム、フィッシングなどの複数の検出スキャンも通過します。このすべてのアクティビティを考えると、どのポリシーが適用されるのかという混乱が生じる可能性があります。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、受信メールに複数の形式の保護のフラグが設定される場合があります。 たとえば、すべての Microsoft 365 のお客様が利用できる EOP の組み込みのフィッシング対策ポリシー、および Office 365 のお客様に対して Microsoft Defender が利用できるより堅牢なフィッシング対策ポリシーを示します。 メッセージは、マルウェア、スパム、フィッシングなどの複数の検出スキャンも通過します。このすべてのアクティビティを考えると、どのポリシーが適用されるのかという混乱が生じる可能性があります。
 
 一般に、メッセージに適用されるポリシーは **、CAT (Category)** プロパティの **X-Forefront-Antispam-Report** ヘッダーで識別されます。 詳細については、「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」を参照してください。
 
@@ -51,13 +51,13 @@ Exchange Online またはスタンドアロンの Exchange Online Protection (EO
   |2|フィッシング|CAT:PHSH|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |3|高確度スパム|CAT:HSPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |4|スプーフィング|CAT:スプーフィング|[EOP でスプーフィング インテリジェンスを構成する](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|ユーザー偽装 (保護されたユーザー)|UIMP|[Microsoft Defender でフィッシング対策ポリシーを構成する (Office 365)](configure-atp-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|ドメイン偽装 (保護されたドメイン)|DIMP|[Microsoft Defender でフィッシング対策ポリシーを構成する (Office 365)](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|ユーザー偽装 (保護されたユーザー)|UIMP|[Microsoft Defender でフィッシング対策ポリシーを構成Office 365](configure-atp-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|ドメイン偽装 (保護されたドメイン)|DIMP|[Microsoft Defender でフィッシング対策ポリシーを構成Office 365](configure-atp-anti-phishing-policies.md)|
   |7|スパム|CAT:SPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |8|バルク|CAT:BULK|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |
 
-  <sup>\*</sup> これらの機能は、365 の Microsoft Defender のフィッシング対策Officeです。
+  <sup>\*</sup>これらの機能は、Microsoft Defender のフィッシング対策ポリシーでのみOffice 365。
 
 - **ポリシー** の優先度 : ポリシーの種類 (スパム対策、マルウェア対策、フィッシング対策など) ごとに、すべてのユーザーに適用される既定のポリシーがありますが、特定のユーザーに適用されるカスタム ポリシーを作成できます。 各カスタム ポリシーには、ポリシーが適用される順序を決定する優先度の値があります。 既定のポリシーは常に最後に適用されます。
 

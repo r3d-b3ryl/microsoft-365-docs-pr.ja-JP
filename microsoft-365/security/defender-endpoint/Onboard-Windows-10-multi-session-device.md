@@ -1,7 +1,7 @@
 ---
 title: Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード
-description: Windows 仮想デスクトップでの Windows 10 マルチセッション デバイスのオンボードに関する記事の詳細
-keywords: Windows 仮想デスクトップ、WVD、microsoft Defender、エンドポイント、オンボード
+description: この記事の詳細については、「Windows 10デスクトップでのマルチセッション デバイスのオンボーディングWindows参照してください。
+keywords: Windows仮想デスクトップ、WVD、microsoft Defender、エンドポイント、オンボード
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -26,19 +26,19 @@ ms.locfileid: "51764319"
 読み取り 6 分 
 
 適用対象: 
-- Windows 仮想デスクトップで実行されている Windows 10 マルチセッション (WVD) 
+- Windows 10仮想デスクトップ (WVD) でWindowsセッションを実行する場合 
 
-Microsoft Defender for Endpoint では、VDI セッションと Windows 仮想デスクトップ セッションの両方の監視がサポートされています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Windows Virtual Desktop セッションを実装する必要がある場合があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
+Microsoft Defender for Endpoint は、VDI セッションと仮想デスクトップ セッションWindowsサポートしています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Windows Virtual Desktop セッションを実装する必要があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
  ## <a name="before-you-begin"></a>はじめに
-非永続的な [VDI の考慮事項について理解してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 [Windows Virtual Desktop には](https://docs.microsoft.com/azure/virtual-desktop/overview)永続性以外のオプションは用意されませんが、新しいホストの準備やマシンの再展開に使用できる、ゴールデン Windows イメージを使用する方法が用意されています。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
+非永続的な [VDI の考慮事項について理解してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 仮想[Windows非](https://docs.microsoft.com/azure/virtual-desktop/overview)永続化オプションは提供されませんが、新しいホストのプロビジョニングとマシンの再展開に使用できるゴールデン Windows イメージを使用する方法を提供します。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
 
 > [!NOTE]
 > オンボーディング方法の選択に応じて、デバイスは次のように Microsoft Defender for Endpoint ポータルに表示されます。 
 > - 仮想デスクトップごとに 1 つのエントリ 
 > - 仮想デスクトップごとに複数のエントリ 
 
-Microsoft では、仮想デスクトップごとに 1 つのエントリとして Windows Virtual Desktop をオンボーディングをお勧めします。 これにより、Microsoft Defender Endpoint ポータルでの調査エクスペリエンスが、コンピューター名に基づいて 1 つのデバイスのコンテキスト内に確実に表示されます。 WVD ホストを頻繁に削除および再展開する組織では、同じコンピューターの複数のオブジェクトが Microsoft Defender for Endpoint ポータルに作成されるのを防ぐため、このメソッドの使用を強く検討する必要があります。 これは、インシデントを調査するときに混乱を招く可能性があります。 テスト環境または非揮発性環境の場合は、別の方法で選択できます。 
+Microsoft では、仮想Windows 1 つのエントリとして仮想デスクトップをオンボーディングする方法をお勧めします。 これにより、Microsoft Defender Endpoint ポータルでの調査エクスペリエンスが、コンピューター名に基づいて 1 つのデバイスのコンテキスト内に確実に表示されます。 WVD ホストを頻繁に削除および再展開する組織では、同じコンピューターの複数のオブジェクトが Microsoft Defender for Endpoint ポータルに作成されるのを防ぐため、このメソッドの使用を強く検討する必要があります。 これは、インシデントを調査するときに混乱を招く可能性があります。 テスト環境または非揮発性環境の場合は、別の方法で選択できます。 
 
 Microsoft では、Microsoft Defender for Endpoint オンボーディング スクリプトを WVD ゴールデン イメージに追加する方法をお勧めします。 この方法で、このオンボーディング スクリプトが最初の起動時にすぐに実行されるのを確認できます。 これは、WVD ゴールデン イメージからプロビジョニングされたすべての WVD コンピューターで最初に起動スクリプトとして実行されます。 ただし、変更せずにギャラリー イメージのいずれかを使用している場合は、スクリプトを共有の場所に配置し、ローカル またはドメイン グループ ポリシーから呼び出します。 
 
@@ -63,14 +63,14 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 **セキュリティ センターWindowsDefenderATPOnboardingPackage.zipファイルをWindows Defenderする**
 
-1. VDI 構成パッケージ .zip ファイルを開きます (WindowsDefenderATPOnboardingPackage.zip)  
+1. VDI 構成パッケージ ファイルを開.zip (WindowsDefenderATPOnboardingPackage.zip)  
 
-    1. Microsoft Defender セキュリティ センター ナビゲーションウィンドウで、[設定オンボード]  >  **を選択します**。 
-    1. オペレーティング システムとして [Windows 10] を選択します。 
+    1. [新しいMicrosoft Defender セキュリティ センター] ウィンドウで、[オンボーディング]**設定**  >  **選択します**。 
+    1. オペレーティング システムWindows 10を選択します。 
     1. [展開方法 **] フィールド** で、永続的でないエンドポイントの VDI オンボーディング スクリプトを選択します。 
-    1. [パッケージ **のダウンロード] を** クリックし、.zip ファイルを保存します。 
+    1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。 
 
-2. .zip ファイルの内容を、デバイスがアクセスできる共有の読み取り専用の場所に展開します。 **OptionalParamsPolicy** という名前のフォルダーと **、WindowsDefenderATPOnboardingScript.cmd** とファイルが必要 **Onboard-NonPersistentMachine.ps1。**
+2. デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 **OptionalParamsPolicy** という名前のフォルダーと **、WindowsDefenderATPOnboardingScript.cmd** とファイルが必要 **Onboard-NonPersistentMachine.ps1。**
 
 **グループ ポリシー管理コンソールを使用して、仮想マシンの起動時にスクリプトを実行する**
 
@@ -78,7 +78,7 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 2. グループ ポリシー管理エディターで、[コンピューター構成の基本設定 \> **] コントロール** \> **パネルの設定に移動します**。 
 
-3. [スケジュールされたタスク **] を右クリックし**、[ **新規**] をクリックし、[ **イミディエイ** ト タスク] (少なくとも Windows 7) をクリックします。 
+3. [スケジュールされたタスク **] を右クリック** し、[**新規**] をクリックし、[イ **ミディ** エイト タスク] (少なくとも 7) をWindowsします。 
 
 4. 開く [タスク] ウィンドウで、[全般] タブ **に移動** します。[セキュリティ **オプション] で、[****ユーザーまたはグループの変更] をクリックし、「SYSTEM」** と入力します。 [名前 **の確認] をクリック** し、[OK] をクリックします。 NT AUTHORITY\SYSTEM は、タスクが実行されるユーザー アカウントとして表示されます。 
 
@@ -96,12 +96,12 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*シナリオ 3: 管理ツールを使用したオンボーディング*
 
-管理ツールを使用してコンピューターを管理する場合は、Microsoft Endpoint Configuration Manager を使用してデバイスをオンボードできます。
+管理ツールを使用してコンピューターを管理する予定の場合は、デバイスを管理ツールでオンボードMicrosoft Endpoint Configuration Manager。
 
-詳細については、「Configuration Manager を使用 [したオンボード Windows 10 デバイス」を参照してください](configure-endpoints-sccm.md)。
+詳細については、「Configuration Manager を使用[したオンボード Windows 10デバイス」を参照してください](configure-endpoints-sccm.md)。
 
 > [!WARNING]
-> 攻撃表面縮小ルールを[](attack-surface-reduction.md)使用する場合は、Microsoft Endpoint Configuration Manager による管理と互換性がありませんので[、「PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生するプロセス作成をブロックする」というルールは使用できません。 このルールは、Configuration Manager クライアントが正しく機能するために使用する WMI コマンドをブロックします。 
+> 攻撃表面縮小ルールを[](attack-surface-reduction.md)使用する場合は、ルール["PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生するプロセスの作成をブロックする" は使用できません。このルールは、Microsoft Endpoint Configuration Manager による管理と互換性がありません。 このルールは、Configuration Manager クライアントが正しく機能するために使用する WMI コマンドをブロックします。 
 
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。 
@@ -146,5 +146,5 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 #### <a name="licensing-requirements"></a>ライセンスの要件 
 
-ライセンスに関する注意: Windows 10 Enterprise マルチセッションを使用する場合、要件に応じて、すべてのユーザーが Microsoft Defender for Endpoint (ユーザーあたり)、Windows Enterprise E5、Microsoft 365 Security、または Microsoft 365 E5 を介してライセンスを取得するか、Azure Defender を介して VM ライセンスを取得するように選択できます。
+ライセンスに関する注意: Windows 10 Enterprise マルチセッションを使用する場合は、要件に応じて、Microsoft Defender for Endpoint (ユーザーあたり)、Windows Enterprise E5、Microsoft 365 Security、または Microsoft 365 E5 を介してすべてのユーザーにライセンスを取得するか、Azure Defender を介して VM のライセンスを取得するように選択できます。
 エンドポイントの Microsoft Defender のライセンス要件については、「ライセンス要件」 [を参照してください](minimum-requirements.md#licensing-requirements)。

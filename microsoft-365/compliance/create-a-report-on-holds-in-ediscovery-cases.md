@@ -41,7 +41,7 @@ ms.locfileid: "50908411"
 
 - このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。
 
-## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>手順 1: コンプライアンス センター PowerShell &に接続する
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>手順 1: コンプライアンス Connect PowerShell &にアクセスする
 
 最初の手順は、組織のセキュリティ &コンプライアンス センター PowerShell に接続します。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
 
@@ -49,7 +49,7 @@ ms.locfileid: "50908411"
 
 セキュリティ & コンプライアンス センター PowerShell に接続した後、次の手順では、組織内の電子情報開示ケースに関する情報を収集するスクリプトを作成して実行します。
 
-1. ファイル名のサフィックス .ps1 をWindows PowerShellして、次のテキストをスクリプト ファイルに保存します。たとえば、CaseHoldsReport.ps1。
+1. ファイル名のサフィックスを使用してWindows PowerShellスクリプト ファイルに次のテキストを保存.ps1。たとえば、CaseHoldsReport.ps1。
 
    ```powershell
    #script begin
@@ -162,7 +162,7 @@ ms.locfileid: "50908411"
 
    ![スクリプトの実行後のCaseHoldsReport.ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 このケースには、この記事のスクリプトを実行するときに作成されたレポートが保持されます。各保留に関する次の情報が含まれます。 前に説明したように、組織内のすべての保留に関する情報を返す電子情報開示管理者である必要があります。 ケースホールドの詳細については、「電子情報開示ケース [」を参照してください](./get-started-core-ediscovery.md)。
 
@@ -178,7 +178,7 @@ ms.locfileid: "50908411"
 
 - ケースが閉じている場合、そのケースを閉じたユーザーと、そのケースを閉じた日時。
 
-- 保留されている Exchange メールボックスと SharePoint サイトの場所。
+- 保留ExchangeメールボックスとSharePointサイトの場所を指定します。
 
 - 保留リストがクエリ ベースの場合、クエリ構文。
 

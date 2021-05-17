@@ -31,14 +31,14 @@ Microsoft コンプライアンス マネージャーは、EU 一般データ保
 この記事では、データのプライバシーを目的としてこのツールを使用する方法について説明します。
 
 >[!Note]
->コンプライアンス マネージャーの推奨事項は、コンプライアンスの保証と捉えることはできません。 規制環境ごとの顧客管理の有効性を評価および検証する必要があります。 これらのサービスは、Online Services 利用規約の条件 [に従います](https://go.microsoft.com/fwlink/?linkid=2108910)。 セキュリティと [コンプライアンスについては、「Microsoft 365 ライセンス ガイダンス」も参照してください。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+>コンプライアンス マネージャーの推奨事項は、コンプライアンスの保証と捉えることはできません。 規制環境ごとの顧客管理の有効性を評価および検証する必要があります。 これらのサービスは、Online Services 利用規約の条件 [に従います](https://go.microsoft.com/fwlink/?linkid=2108910)。 「セキュリティ[とコンプライアンスMicrosoft 365ライセンス ガイダンス」も参照してください。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 >
 
 ## <a name="getting-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
 #### <a name="what-is-compliance-manager"></a>コンプライアンス マネージャーとは
 
-[コンプライアンス マネージャー](../compliance/compliance-manager.md) は、Microsoft クラウド サービスに関連する規制コンプライアンス 活動を管理するための、Microsoft 365 コンプライアンス センターのワークフロー ベースのリスク評価ツールです。 コンプライアンス マネージャーは、Microsoft 365 または Azure Active Directory (Azure AD) サブスクリプションの一部として、Microsoft クラウド サービスの共有責任モデル内の規制コンプライアンスを管理するのに役立ちます。
+[コンプライアンス マネージャー](../compliance/compliance-manager.md)は、Microsoft クラウド サービスに関連する規制コンプライアンス 活動を管理Microsoft 365コンプライアンス センターのワークフロー ベースのリスク評価ツールです。 コンプライアンス マネージャーは、Microsoft 365 または Azure Active Directory (Azure AD) サブスクリプションの一部として、Microsoft クラウド サービスの共有責任モデル内で規制コンプライアンスを管理するのに役立ちます。
 
 **評価を使用する準備ができました**
 
@@ -66,7 +66,7 @@ Microsoft コンプライアンス マネージャーは、EU 一般データ保
     - 改善アクションの実装とテスト作業を実行して、評価のコントロールを完了する
     - さまざまなアクションがコンプライアンス スコアに与える影響を理解する
 - [スケール アップ: 高度な機能を使用してカスタム ニーズを満たす](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Microsoft 365 以外の製品を追跡するためのカスタム評価の作成
+    - カスタム評価を作成して、製品以外の製品Microsoft 365する
     - 既存のテンプレートを変更してコントロールを追加または削除する
     - 改善アクションの自動テストのセットアップ
 

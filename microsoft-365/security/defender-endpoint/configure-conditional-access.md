@@ -35,7 +35,7 @@ ms.locfileid: "51903780"
 
 このセクションでは、条件付きアクセスを適切に実装するために必要なすべての手順について説明します。
 
-### <a name="before-you-begin"></a>開始する前に
+### <a name="before-you-begin"></a>はじめに
 >[!WARNING]
 >このシナリオでは、登録されているデバイスAD Azure がサポートされていない点に注意することが重要です。</br>
 >Intune に登録されているデバイスだけがサポートされています。
@@ -44,13 +44,13 @@ ms.locfileid: "51903780"
 すべてのデバイスが Intune に登録されている必要があります。 Intune にデバイスを登録するには、次のオプションを使用できます。
 
 
-- IT 管理者: 自動登録を有効にする方法の詳細については、「Windows 登録」 [を参照してください。](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
-- エンド ユーザー: Intune に Windows 10 デバイスを登録する方法の詳細については、「Intune に Windows 10 デバイスを登録する」 [を参照してください。](https://docs.microsoft.com/intune/quickstart-enroll-windows-device)
+- IT 管理者: 自動登録を有効にする方法の詳細については、「登録」[を参照Windowsしてください。](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
+- エンド ユーザー: Intune にデバイスを登録する方法の詳細Windows 10 Intune にデバイスを登録するWindows 10[を参照してください。](https://docs.microsoft.com/intune/quickstart-enroll-windows-device)
 - エンド ユーザーの代替: Azure AD ドメインへの参加の詳細については、「How [to: Plan your Azure AD参加実装」を参照してください](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)。
 
 
 
-Microsoft Defender セキュリティ センター、Intune ポータル、Azure セキュリティ ポータルで実行するADがあります。
+Intune ポータル、Intune ポータル、および Azure Microsoft Defender セキュリティ センターポータルで実行するADがあります。
 
 これらのポータルにアクセスし、条件付きアクセスを実装するために必要な役割に注意することが重要です。
 - **Microsoft Defender セキュリティ センター** - 統合を有効にするには、グローバル管理者の役割を持つポータルにサインインする必要があります。
@@ -59,34 +59,34 @@ Microsoft Defender セキュリティ センター、Intune ポータル、Azure
 
 
 > [!NOTE]
-> Microsoft Intune 環境が必要で、Intune が管理され、Azure AD Windows 10 デバイスに参加している必要があります。
+> Intune が管理され、Azure Microsoft Intuneがデバイスに参加しているAD環境Windows 10があります。
 
 条件付きアクセスを有効にするには、次の手順を実行します。
-- 手順 1: Microsoft Defender セキュリティ センターから Microsoft Intune 接続を有効にする
+- 手順 1: デバイスからの接続Microsoft IntuneオンMicrosoft Defender セキュリティ センター
 - 手順 2: Intune で Defender for Endpoint 統合を有効にする
 - 手順 3: Intune でコンプライアンス ポリシーを作成する
 - 手順 4: ポリシーを割り当てる 
 - 手順 5: 条件付きアクセス ポリシー AD Azure を作成する
 
 
-### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>手順 1: Microsoft Intune 接続を有効にする
-1. ナビゲーション ウィンドウで、[設定] [**高度**  >  **な機能]**  >  **[Microsoft Intune 接続] を選択します**。
-2. Microsoft Intune の設定を [オン] に **切り替える**。
+### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>手順 1: 接続を有効Microsoft Intuneする
+1. ナビゲーション ウィンドウで、[接続 **の詳細設定** 設定  >  **をMicrosoft Intune**  >  **します**。
+2. [設定] Microsoft Intuneを [オン] に **切り替える**。
 3. [設定 **の保存] をクリックします**。
 
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>手順 2: Intune で Defender for Endpoint 統合を有効にする
 1. [Azure portal](https://portal.azure.com) にサインインします。
-2. [デバイス **コンプライアンス**  >  **] [Microsoft Defender ATP] を選択します**。
-3. **[Windows 10.0.15063+** デバイスの接続] を [Microsoft Defender Advanced Threat Protection] に [オン] に **設定します**。
+2. [**デバイスコンプライアンスの設定]** を  >  **Microsoft Defender ATP。**
+3. **[Connect Windows 10.0.15063+ デバイス** を [オン] Microsoft Defender Advanced Threat Protectionに設定 **します**。
 4. **[保存]** をクリックします。
 
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>手順 3: Intune でコンプライアンス ポリシーを作成する
-1. Azure portal [で、[すべてのサービス](https://portal.azure.com)] を選択 **し****、Intune** でフィルター処理し **、[Microsoft Intune] を選択します**。
+1. Azure portal [で、[すべてのサービス](https://portal.azure.com)**]** を選択し **、Intune** でフィルター処理し、[**すべてのサービス]** を選択Microsoft Intune。
 2. [デバイス **コンプライアンス ポリシー**  >  **] [ポリシー**  >  **の作成] を選択します**。
 3. [名前] **と [説明** ] を **入力します**。
-4. [**プラットフォーム] で****、[Windows 10 以降] を選択します**。
+4. [**プラットフォーム] で****、[Windows 10] を選択します**。
 5. [デバイス **の正常性] 設定** で、[デバイスの脅威レベル] または [デバイスの脅威レベル] の下にあるデバイスを希望する **レベルに設定** します。
 
    - **セキュリティ** 保護 : このレベルが最も安全です。 デバイスは、既存の脅威を持ち、会社のリソースに引き続きアクセスすることはできません。 脅威が見つかった場合、デバイスは非準拠として評価されます。
@@ -97,16 +97,16 @@ Microsoft Defender セキュリティ センター、Intune ポータル、Azure
 6. **[OK]** を選択し、[**作成]** を選択して変更を保存します (ポリシーを作成します)。
 
 ### <a name="step-4-assign-the-policy"></a>手順 4: ポリシーを割り当てる
-1. Azure portal [で、[すべてのサービス](https://portal.azure.com)] を選択 **し****、Intune** でフィルター処理し **、[Microsoft Intune] を選択します**。
+1. Azure portal [で、[すべてのサービス](https://portal.azure.com)**]** を選択し **、Intune** でフィルター処理し、[**すべてのサービス]** を選択Microsoft Intune。
 2. [**デバイス コンプライアンス ポリシー**  >  **] を選択>** Microsoft Defender for Endpoint コンプライアンス ポリシーを選択します。
 3. **[割り当て]** を選択します。
 4. ポリシーを割り当てるには、Azure ADグループを含めるか除外します。
 5. ポリシーをグループに展開するには、[保存] を **選択します**。 ポリシーの対象となるユーザー デバイスは、コンプライアンスについて評価されます。
 
 ### <a name="step-5-create-an-azure-ad-conditional-access-policy"></a>手順 5: 条件付きアクセス ポリシー AD Azure を作成する
-1. Azure portal [で、Azure](https://portal.azure.com) **Active Directory 条件付きアクセス**  >  **の新しいポリシー**  >  **を開きます**。
+1. Azure portal [で、[条件付きアクセス](https://portal.azure.com)**] Azure Active Directory**  >  **ポリシーを**  >  **開きます**。
 2. ポリシー名を入力 **し、[** ユーザーとグループ **] を選択します**。 [含める] または [除外] オプションを使用してポリシーのグループを追加し、[完了] を **選択します**。
-3. [ **クラウド アプリ] を** 選択し、保護するアプリを選択します。 たとえば、[アプリの **選択] を** 選択し **、[365 SharePoint Online] Office 365 Exchange Online** Office **を選択します**。 [**完了**] を選んで変更内容を保存します。
+3. [ **クラウド アプリ] を** 選択し、保護するアプリを選択します。 たとえば、[アプリの選択 **] を** 選択し、[オンライン] と **[Office 365 SharePoint]** **を** Office 365 Exchange Online。 [**完了**] を選んで変更内容を保存します。
 
 4. [**条件**  >  **クライアント アプリ] を** 選択して、アプリとブラウザーにポリシーを適用します。 たとえば、[はい] **を選択** し、[ **ブラウザー** とモバイル アプリと **デスクトップ クライアント] を有効にします**。 [**完了**] を選んで変更内容を保存します。
 

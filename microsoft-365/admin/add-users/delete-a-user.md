@@ -19,7 +19,7 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: ユーザー アカウントを削除する方法について説明します。 ユーザーの電子メールと OneDrive コンテンツの操作を決定します。 また、製品ライセンスを保持するか、支払いを停止するか決定します。
+description: ユーザー アカウントを削除する方法について説明します。 ユーザーの電子メールとコンテンツの管理方法をOneDriveします。 また、製品ライセンスを保持するか、支払いを停止するか決定します。
 ms.openlocfilehash: d40f70534499b08073278ffc2bed2b098ae1c4da
 ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
@@ -35,7 +35,7 @@ ms.locfileid: "51860739"
 
 - ユーザー アカウントを削除できるのは、職場や学校の [Microsoft 365 グローバル管理者](about-admin-roles.md)またはユーザー管理のアクセス許可を持っている管理者のみです。
 - 30 日後にユーザーのデータが永久に削除されるまではアカウントを[復元](restore-user.md)できます。
-- ユーザーの OneDrive データを保持する場合は、別の場所に移動します。 アカウントを削除した後、最大 30 日間データを移動することもできます。 「 [元ユーザーのデータにアクセスしてバックアップを作成する](get-access-to-and-back-up-a-former-user-s-data.md)」を参照してください。 SharePoint ファイルを移動する必要があります。引き続きアクセスできます。
+- ユーザーのデータを保持する場合OneDrive別の場所に移動します。 アカウントを削除した後、最大 30 日間データを移動することもできます。 「 [元ユーザーのデータにアクセスしてバックアップを作成する](get-access-to-and-back-up-a-former-user-s-data.md)」を参照してください。 ファイルを移動するSharePoint必要があります。引き続きアクセスできます。
 - ユーザーのメールを保持する場合は、アカウントを削除する **前に**、メールを別の場所に移動します。アカウントを既に削除した場合は、30 日以内であれば、復元してメール データを移動し、アカウントを削除できます。「[元ユーザーのデータにアクセスしてバックアップを作成する](get-access-to-and-back-up-a-former-user-s-data.md)」を参照してください。
 - Office 365 Enterprise E3 などのエンタープライズ サブスクリプションがある場合、削除したユーザー アカウントのメールボックスを *非アクティブなメールボックス* に変更することで、そのメールボックスのデータを保持できます。 詳細については、「[Exchange Online の非アクティブなメールボックスを管理する](../../compliance/inactive-mailboxes-in-office-365.md)」を参照してください。
 
@@ -66,13 +66,13 @@ ms.locfileid: "51860739"
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+ 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+ 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
@@ -127,7 +127,7 @@ ms.locfileid: "51860739"
 
 4. [ライセンス **の削除]** ウィンドウの [**新** しい数量] の [ライセンスの合計] ボックスに、このサブスクリプションに必要なライセンスの総数を入力します。 たとえば、100 のライセンスを持ち、5 つのライセンスを削除する場合は、「95」と入力します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 将来、新しいユーザーを組織のサブスクリプションに追加する手順を実行すると、ライセンスの購入を求めるメッセージが表示されるため、手間が省けます。
 

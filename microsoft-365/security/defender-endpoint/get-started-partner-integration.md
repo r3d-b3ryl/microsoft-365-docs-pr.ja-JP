@@ -39,7 +39,7 @@ Defender for Endpoint ソリューション パートナーになるためには
 [Microsoft Defender for Endpoint Developer ライセンスをサブスクライブします](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9)。 サブスクライブを使用すると、最大 10 台のデバイスを含む Microsoft Defender for Endpoint テナントを使用して、Microsoft Defender for Endpoint と統合するソリューションを開発できます。 
 
 ## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>手順 2: ソリューションの検証と認定の要件を満たす
-テクノロジ パートナーが統合が機能することを証明する最善の方法は、共同顧客に提案された統合設計を承認し (顧客は Microsoft  Defender セキュリティ センターの[](https://securitycenter.microsoft.com/interoperability/partners)[パートナー アプリケーション] ページの [パートナー アプリケーションの推奨] オプションを使用できます)、Microsoft Defender for Endpoint チームにテストしてデモを行う方法です。
+テクノロジ パートナーが統合が機能することを証明する最善の方法は、共同顧客に提案された統合設計を承認し (顧客は Microsoft Defender セキュリティ センターの [パートナー アプリケーション[](https://securitycenter.microsoft.com/interoperability/partners)] ページの [パートナー アプリケーションの推奨] オプションを使用して)、Microsoft Defender for Endpoint チームにテストしてデモを行う方法です。
 
 Microsoft Defender for Endpoint チームが統合を確認して承認したら、Microsoft インテリジェント セキュリティ協会にパートナーとして参加するように指示します。
 
@@ -56,7 +56,7 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Endpoint[](partner-
 3. 15 語の製品の説明を入力します。
 4. 顧客のための十分な情報を含む統合またはブログ投稿を完了するためのランディング ページへのリンク。 Microsoft Defender for Endpoint 製品名を含むすべてのプレスリリースは、マーケティングチームとエンジニアリング チームによって確認する必要があります。 レビュープロセスが完了するまで、少なくとも 10 日間待ちます。
 5.  マルチテナント Azure ADアプローチを使用する場合は、アプリケーションADを追跡するために Azure ADアプリケーション名が必要になります。
-6. Microsoft Defender for Endpoint User-Agent一連の API または Graph Security API に対して行われた各 API 呼び出しに、User-Agent フィールドを含める。 これは、統計的な目的、トラブルシューティング、およびパートナー認識に使用されます。 さらに、この手順は、Microsoft インテリジェント セキュリティアソシエーション (MISA) のメンバーシップの要件です。
+6. Microsoft Defender for Endpoint User-Agent一連の API またはセキュリティ API に対して行われた各 API 呼び出しに、Graphフィールドを含める。 これは、統計的な目的、トラブルシューティング、およびパートナー認識に使用されます。 さらに、この手順は、Microsoft インテリジェント セキュリティアソシエーション (MISA) のメンバーシップの要件です。
 
     次の手順を実行します。
     

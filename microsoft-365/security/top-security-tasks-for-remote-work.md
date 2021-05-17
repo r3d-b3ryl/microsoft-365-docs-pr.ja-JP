@@ -40,7 +40,7 @@ Microsoft のエンタープライズ プランを使用しているお客様は
 
 ****
 
-|手順|Task|すべてのOffice 365 Enterprise プラン|Microsoft 365 E3|Microsoft 365 E5|
+|手順|タスク|すべてのOffice 365 Enterprise プラン|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
 |1|[Azure AD多要素認証 (MFA) を有効にする](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[脅威からの保護](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -211,7 +211,7 @@ Microsoft 365 には、組織内のユーザーに通知するための次のリ
 |概念|リソース|
 |---|---|
 |Microsoft 365|[カスタマイズ可能な学習経路](/office365/customlearning/) <p>これらのリソースは、組織内のエンド ユーザー向けトレーニングをまとめるのに役立ちます。|
-|Microsoft 365 セキュリティ|[学習モジュール: Microsoft 365 の組み込みのインテリジェント なセキュリティで組織をセキュリティで保護する](/learn/modules/security-with-microsoft-365) <p>このモジュールを使用すると、Microsoft 365 のセキュリティ機能がどのように機能するのかについて説明し、これらのセキュリティ機能の利点を明確にできます。|
+|Microsoft 365 セキュリティ|[学習モジュール: 組み込みのインテリジェント なセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365) <p>このモジュールを使用すると、セキュリティ機能Microsoft 365機能を説明し、これらのセキュリティ機能の利点を明確にできます。|
 |多要素認証|[2 段階認証: 追加の検証ページとは](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>この記事は、エンド ユーザーが多要素認証とは何か、および組織で使用される理由を理解するのに役立ちます。|
 |
 
@@ -219,36 +219,36 @@ Microsoft 365 には、組織内のユーザーに通知するための次のリ
 
 - 強力なパスワードの使用
 - デバイスの保護
-- Windows 10 および Mac PC でセキュリティ機能を有効にする (管理されていないデバイスの場合)
+- デバイス PC および Mac pc Windows 10セキュリティ機能の有効化 (非管理対象デバイスの場合)
 
 Microsoft では、次の記事で推奨されるアクションを実行して、ユーザーが個人の電子メール アカウントを保護することもできます。
 
-- [電子メール アカウント Outlook.com 保護する](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Outlook.com メール アカウントの保護に役立つ](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
 - [2 段階認証で Gmail アカウントを保護する](https://go.microsoft.com/fwlink/p/?linkid=2015688)
 
-## <a name="11-get-started-with-microsoft-cloud-app-security"></a>11: Microsoft Cloud App Security の使用を開始する
+## <a name="11-get-started-with-microsoft-cloud-app-security"></a>11: ユーザー設定のMicrosoft Cloud App Security
 
-[Microsoft Cloud App Security は](/cloud-app-security) 、豊富な可視性、データ移動の制御、高度な分析を提供し、すべてのクラウド サービスでサイバー脅威を特定し、対処します。 クラウド アプリ セキュリティの使用を開始すると、異常検出ポリシーは自動的に有効になりますが、Cloud App Security の初期学習期間は 7 日間で、すべての異常検出アラートが発生する必要があります。
+[Microsoft Cloud App Security、](/cloud-app-security)豊富な可視性、データ移動の制御、高度な分析を提供し、すべてのクラウド サービスでサイバー脅威を特定し、対処します。 Cloud App Security の使用を開始すると、異常検出ポリシーは自動的に有効になりますが、Cloud App Security の初期学習期間は 7 日間で、すべての異常検出アラートが発生する必要があります。
 
-今すぐクラウド アプリ のセキュリティを使い始めましょう。 後で、より高度な監視と制御を設定できます。
+今すぐ使用Cloud App Security始めましょう。 後で、より高度な監視と制御を設定できます。
 
-- [クイック スタート: Cloud App Security の使用を開始する](/cloud-app-security/getting-started-with-cloud-app-security)
+- [クイック スタート: クイック スタートCloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
 - [瞬時の行動分析と異常検出を取得する](/cloud-app-security/anomaly-detection-policy)
-- [Microsoft Cloud App Security の詳細](/cloud-app-security/what-is-cloud-app-security)
+- [詳細については、Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
 - [新機能と機能を確認する](/cloud-app-security/release-notes)
 - [基本的なセットアップ手順を参照してください。](/cloud-app-security/general-setup)
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: 脅威を監視し、アクションを実行する
 
-Microsoft 365 には、状態を監視し、適切なアクションを実行するためのいくつかの方法が含まれています。 最適な開始点は、Microsoft 365 セキュリティ センター ( ) で、組織の Microsoft Secure Score、および注意を必要とするアラートまたはエンティティを [https://security.microsoft.com](https://security.microsoft.com) 表示できます。 [](./defender/microsoft-secure-score.md)
+Microsoft 365を監視し、適切なアクションを実行する方法がいくつか含まれています。 最適な開始点は、Microsoft 365 セキュリティ センター ( ) で、組織の Microsoft Secure Score、および注意を必要とするアラートまたはエンティティを [https://security.microsoft.com](https://security.microsoft.com) 表示できます。 [](./defender/microsoft-secure-score.md)
 
-- [Microsoft 365 セキュリティ センターの使用を開始する](./defender/overview-security-center.md)
+- [セキュリティ センターのMicrosoft 365する](./defender/overview-security-center.md)
 - [レポートを監視し、表示する](./defender/overview-security-center.md)
-- [Microsoft 365 のセキュリティ ポータルを参照する](./defender/portals.md)
+- [「セキュリティ ポータル」を参照Microsoft 365](./defender/portals.md)
 
 ## <a name="next-steps"></a>次の手順
 
-おめでとうございます。 最も重要なセキュリティ保護の一部をすばやく実装し、組織の安全性が高い。 これで、脅威保護機能 (Microsoft Defender for Endpoint を含む)、データ分類と保護機能、および管理アカウントのセキュリティ保護を行う準備ができました。 Microsoft 365 のセキュリティに関する推奨事項の詳細な方法については [、「Microsoft 365 Security for Business Decision Makers (BDM)」](Microsoft-365-security-for-bdm.md)を参照してください。
+おめでとうございます。 最も重要なセキュリティ保護の一部をすばやく実装し、組織の安全性が高い。 これで、脅威保護機能 (Microsoft Defender for Endpoint を含む)、データ分類と保護機能、および管理アカウントのセキュリティ保護を行う準備ができました。 セキュリティに関する推奨事項の詳細な方法については、「Microsoft 365セキュリティMicrosoft 365意思決定[者 (BDM)」を参照してください](Microsoft-365-security-for-bdm.md)。
 
 また、Microsoft の新しいセキュリティ センター (docs.microsoft.com/security) [にもアクセスしてください](/security)。

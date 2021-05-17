@@ -23,7 +23,7 @@ ms.locfileid: "50907688"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 社の Windows 10 Enterprise 展開
 
-エンタープライズ向け Microsoft 365 の広範な展開に先だって、Contoso 社では Windows 互換の PC とデバイスが Windows 7 (10%)、Windows 8.1 (65%)、Windows 10 (25%)の混合物を実行していた。 Contoso 社は、Windows 10 Enterprise 向け PC をアップグレードし、高度なセキュリティを活用し、更新プログラムの自動展開による IT オーバーヘッドを削減したいと考えました。 
+エンタープライズ向け Microsoft 365 の広範な展開に先だって、contoso 社では Windows 互換の PC とデバイスが Windows 7 (10%)、Windows 8.1 (65%)、Windows 10 (25%)の混合を実行していた。 Contoso 社は、高度なセキュリティを利用Windows 10 Enterprise、更新プログラムの自動展開による IT オーバーヘッドを削減するために、PC をアップグレードしたいと考えました。 
 
 インフラストラクチャとビジネス ニーズを評価した後、Contoso 社は展開に向けて、以下の重要な要件を特定しました。
 
@@ -54,7 +54,7 @@ Contoso 社には、既存の Configuration Manager (Current Branch) インフ�
 
 ## <a name="planning-process"></a>計画プロセス
 
-Contoso 社は、Windows Analytics のアップグレード準備を使用して、インストールされているアプリのセットと Windows 10 Enterprise との互換性を判断しました。
+Contoso 社は、Windows Analytics のアップグレード準備を使用して、インストールされているアプリのセットと、インストールされているアプリとの互換性をWindows 10 Enterprise。
 
 ## <a name="deployment-process"></a>展開プロセス
 
@@ -62,10 +62,10 @@ Contoso 社は、Windows 10 Enterprise の一括アップグレードの展開�
 
 1. 構成マネージャーのピア キャッシュを有効にしました。
 2. ボリューム ライセンス サービス センターからのイメージに基づくカスタムの Windows パッケージを作成しました。
-3. Configuration Manager を使用して、Windows パッケージをネットワーク全体の配布ポイントに展開し、3 つの検証および展開ステージング グループにビルドを展開しました。
+3. Configuration Manager を使用して、Windowsパッケージをネットワーク全体の配布ポイントに展開し、3 つの検証および展開ステージング グループにビルドを展開しました。
 4. Windows Analytics のデバイスの正常性および Update Compliance ソリューションを使用して、3 つの検証および展開ステージング リングで PC およびデバイスに対して成功の評価を実施しました。
-5. Windows Analytics の情報に基づいて、Contoso は広範な展開グループに展開する Windows 10 Enterprise のバージョンを決定しました。
-6. Configuration Manager 展開タスク シーケンスを実行して、選択した Windows パッケージを広範な展開グループに展開しました。
+5. Contoso 社は、Windows分析情報に基づいて、広範な展開グループに展開するWindows 10 Enterpriseのバージョンを決定しました。
+6. Configuration Manager 展開タスク シーケンスを実行して、選択した Windowsを広範な展開グループに展開しました。
 7. デバイス正常性ソリューションと更新コンプライアンス ソリューションを使用して、問題に対処するために広範な展開グループ内の監視対象の PC とデバイス。
 
 次に一括アップグレード、および進行中の更新プログラムの展開アーキテクチャを示します。
@@ -78,11 +78,11 @@ Contoso 社は、Windows 10 Enterprise の一括アップグレードの展開�
   - Microsoft Network の Microsoft ボリューム ライセンス センターから Windows 10 Enterprise パッケージのイメージを取得します。
   - 展開パッケージに対する中央の管理ポイントです。
 - 通常は Contoso 社の地域ハブ オフィスにある地域配布ポイント。
-- グループ メンバーシップに基づくインプレイス アップグレードまたは継続的な更新プログラムの展開パッケージを受信およびインストールするさまざまな場所の Windows PC とデバイス。
+- Windowsグループ メンバーシップに基づくインプレイス アップグレードまたは継続的な更新プログラムの展開パッケージを受信およびインストールするさまざまな場所の PC とデバイス。
 
 ## <a name="next-step"></a>次の手順
 
-Contoso 社が Configuration Manager インフラストラクチャを活用して、組織全体で現在の [Microsoft 365 Apps for enterprise](contoso-o365pp.md) を展開および維持する方法について説明します。 
+Contoso 社が Configuration Manager インフラストラクチャを活用して、組織全体に最新のMicrosoft 365 Apps for enterpriseを展開し、維持[する](contoso-o365pp.md)方法について説明します。 
 
 ## <a name="see-also"></a>関連項目
 

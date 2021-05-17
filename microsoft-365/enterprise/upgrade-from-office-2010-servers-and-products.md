@@ -34,21 +34,21 @@ ms.locfileid: "50909300"
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Office 2010 および Exchange 2010 は **、2020 年 10 月 13** 日にサポートの終了に達しました。
+Office 2010 年Exchange 2010 年 10 月 **13** 日にサポートが終了しました。
 
 SharePoint 2010 および Project Server 2010 は、**2021年4月13日** にサポートが終了します。
 
-アップグレードを計画する際は、Microsoft 365 への移行を検討してください。
+アップグレードを計画する際は、アップグレードへの移行を検討Microsoft 365。
 
-- Microsoft 365 には、Exchange Server や SharePoint Server などの Office 2010 サーバー製品用のクラウドベースのサービスと、Teams や OneDrive for Business などのサービスがあります。
+- Microsoft 365には、Exchange Server サーバーや SharePoint サーバーなどの Office サーバー製品用のクラウドベースのサービスと、Teams や OneDrive for Business などのサービスがあります。
 
-- Microsoft 365 E3 および E5 に含まれるエンタープライズ向け Microsoft 365 Apps for enterprise (以前は *Office 365 ProPlus)* は、ローカル デバイスにインストールする Office クライアント アプリのセットです。 Microsoft クラウドから定期的に新しい生産性とセキュリティ機能が更新されています。
+- Microsoft 365 Apps for enterprise (以前に *Office 365 ProPlus* という名前) (Microsoft 365 E3 と E5 に含まれている) は、ローカル デバイスにインストールする Office クライアント アプリのセットです。 Microsoft クラウドから定期的に新しい生産性とセキュリティ機能が更新されています。
 
-Office 2010 クライアントおよびサーバーおよび Windows 7 のアップグレード、移行、およびクラウドへの移行オプションの視覚的な概要については、サポート ポスターの最後を [参照してください](../downloads/Office2010Windows7EndOfSupport.pdf)。
+Office 2010 クライアントおよびサーバーおよび Windows 7 のアップグレード、移行、およびクラウドへの移行オプションの視覚的な概要については、サポート ポスターの末尾を[参照してください](../downloads/Office2010Windows7EndOfSupport.pdf)。
 
-[![2010 年 2010 Officeサーバーと Windows 7 ポスターのサポートの終了](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![2010 年のクライアントOfficeサーバーと 7 ポスターのWindows終了](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-この 1 ページのポスターは、Office 2010 クライアントおよびサーバー製品と Windows 7 をサポートの終了まで処理するために使用できるさまざまなパスを要約しています。 Microsoft 365 Enterprise での優先パスとオプションのサポートが強調表示されます。
+この 1 ページのポスターは、Office 2010 クライアントおよびサーバー製品、および Windows 7 のサポート終了までを処理するために使用できるさまざまなパスを要約しています。 優先パスとオプションのサポートは、Microsoft 365 Enterprise強調表示されます。
 
 また、この [ポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) をダウンロードして、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
 
@@ -64,7 +64,7 @@ Office 2010 クライアントおよびサーバーおよび Windows 7 のアッ
 
 ## <a name="im-a-home-user-what-do-i-do"></a>私はホーム ユーザーです。 どうしたらよいでしょうか。
 
-2010 Officeおよびアプリケーションを自宅で使用する場合は、この情報を [参照してください](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
+2010 Officeアプリケーションを自宅で使用する場合は、この情報を[参照してください](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
 
 ## <a name="related-topics"></a>関連項目
 

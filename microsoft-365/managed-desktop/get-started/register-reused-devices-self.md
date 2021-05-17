@@ -1,6 +1,6 @@
 ---
 title: 既存のデバイスをj自分で登録する
-description: 再利用されたデバイスを既に持っている可能性があるデバイスを登録して、Microsoft Managed Desktop で管理できます
+description: 再利用済みのデバイスを登録して、ユーザーが自分で管理Microsoft マネージド デスクトップ
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -21,11 +21,11 @@ ms.locfileid: "51893277"
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをj自分で登録する
 
 >[!NOTE]
->このトピックでは、既に持っているデバイスを再利用し、Microsoft Managed Desktop に登録する手順について説明します。 新しいデバイスを操作する場合は [、「Microsoft Managed Desktop](register-devices-self.md) で新しいデバイスを自分で登録する」の手順に従ってください。
+>このトピックでは、既に使用しているデバイスを再利用し、デバイスを既存のデバイスに登録する手順Microsoft マネージド デスクトップ。 新しいデバイスを操作する場合は、「新しいデバイスを自分で登録する」の手順に[Microsoft マネージド デスクトップ](register-devices-self.md)してください。
 
 パートナーのプロセスについては、「デバイスを登録 [するパートナー向け手順」に記載されています](register-devices-partner.md)。
 
-Microsoft Managed Desktop は、新しいデバイスを操作したり、既に持っている可能性のあるデバイスを再利用できます (再イメージ化が必要になります)。 Microsoft Endpoint Manager ポータルで、Microsoft Managed Desktop にデバイスを登録できます。
+Microsoft マネージド デスクトップ新しいデバイスを操作したり、既に持っている可能性のあるデバイスを再利用することもできます (再イメージ化が必要になります)。 デバイスの登録は、Microsoft マネージド デスクトップポータルMicrosoft エンドポイント マネージャーできます。
 
 ## <a name="prepare-to-register-existing-devices"></a>既存のデバイスを登録する準備
 
@@ -34,33 +34,33 @@ Microsoft Managed Desktop は、新しいデバイスを操作したり、既に
 
 1. [各デバイスのハードウェア ハッシュを取得します。](#obtain-the-hardware-hash)
 2. [ハッシュ データを結合する](#merge-hash-data)
-3. [Microsoft Managed Desktop にデバイスを登録します](#register-devices-by-using-the-admin-portal)。
+3. [デバイスを [デバイス] に登録Microsoft マネージド デスクトップ。](#register-devices-by-using-the-admin-portal)
 4. [画像が正しいか確認してください。](#check-the-image)
 5. [デバイスの配信](#deliver-the-device)
 
 ### <a name="obtain-the-hardware-hash"></a>ハードウェア ハッシュの取得
 
-Microsoft Managed Desktop は、ハードウェア ハッシュを参照することによって、各デバイスを一意に識別します。 既に使用しているデバイスからこの情報を取得するには、次の 4 つのオプションがあります。
+Microsoft マネージド デスクトップハードウェア ハッシュを参照して、各デバイスを一意に識別します。 既に使用しているデバイスからこの情報を取得するには、次の 4 つのオプションがあります。
 
 - ハードウェア ハッシュを含む AutoPilot 登録ファイルを OEM サプライヤーに問い合わせ。
-- Microsoft Endpoint [Configuration Manager で情報を収集します](#microsoft-endpoint-configuration-manager)。
+- で情報を[収集Microsoft Endpoint Configuration Manager。](#microsoft-endpoint-configuration-manager)
 - Active [Directory](#active-directory-powershell-script-method)をWindows PowerShell、または各デバイスで手動でスクリプト[](#manual-powershell-script-method)を実行し、結果をファイルに収集します。
-- 各デバイスを起動しますが、Windows セットアップ エクスペリエンスを完了し、リムーバブル フラッシュ ドライブのハッシュ [を収集する必要があります](#flash-drive-method)。
+- 各デバイスを起動しますが、セットアップ エクスペリエンスWindows完了して、リムーバブル フラッシュ ドライブでハッシュ[を収集する必要があります](#flash-drive-method)。
 
 #### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-Microsoft Endpoint Configuration Manager を使用して、Microsoft Managed Desktop に登録する既存のデバイスからハードウェア ハッシュを収集できます。
+ユーザーは、Microsoft Endpoint Configuration Managerを使用して、デバイスに登録する既存のデバイスからハードウェア ハッシュを収集Microsoft マネージド デスクトップ。
 
 > [!IMPORTANT]
-> この情報を取得するデバイスは、Windows 10 バージョン 1703 以降を実行している必要があります。 
+> この情報を取得するデバイスは、バージョン 1703 以降Windows 10実行している必要があります。 
 
 これらすべての前提条件を満たしている場合は、次の手順に従って情報を収集する準備が整いました。
 
 1. Configuration Manager コンソールで、[監視] を **選択します**。 
 2. [監視] ワークスペースで、[レポート] ノード **を展開し** 、[レポート] を **展開** し、[ハードウェア **- 全般] ノードを選択** します。 
-3. レポートの **Windows Autopilot デバイス情報を実行し**、結果を表示します。
+3. レポートを実行し **、[Windows情報] をクリックし**、結果を表示します。
 4. レポート ビューアーで、[エクスポート] **アイコンを** 選択し、CSV (コンマ区切り **) オプションを選択** します。
-5. ファイルを保存した後、Microsoft Managed Desktop に登録し、データを Microsoft Managed Desktop にアップロードする予定のデバイスに対して結果をフィルター処理する必要があります。 Microsoft Endpoint Manager を開き、[デバイス] メニューに移動し、[Microsoft Managed Desktop] セクションを探し、[デバイス] を **選択します**。 [+ **デバイスの登録]** を選択すると、フライインが開き、新しいデバイスが登録されます。
+5. ファイルを保存した後は、データに登録する予定のデバイスに対して結果をフィルター処理し、Microsoft マネージド デスクトップにデータをアップロードするMicrosoft マネージド デスクトップ。 [デバイスMicrosoft エンドポイント マネージャー開き、[デバイス]メニューに移動し、[デバイス] セクションMicrosoft マネージド デスクトップデバイス] を **選択します**。 [+ **デバイスの登録]** を選択すると、フライインが開き、新しいデバイスが登録されます。
 
 
 詳細については [、「管理ポータルを使用してデバイスを登録する](#register-devices-by-using-the-admin-portal) 」を参照してください。
@@ -73,11 +73,11 @@ Active Directory 環境では、PowerShell コマンドレットを使用して�
 - WinRM が有効です。
 - 登録するデバイスは、ネットワーク上でアクティブです (つまり、切断またはオフにされません)。
 - デバイスでリモートで実行するアクセス許可を持つドメイン資格情報パラメーターを持っている必要があります。
-- Windows ファイアウォールで WMI へのアクセスが許可されている必要があります。 これを行うには、次の手順を実行します。
+- [ファイアウォール] でWindows WMI へのアクセスを許可します。 そのためには、次の手順に従います。
 
-    1. [ファイアウォール] **Windows Defenderパネルを** 開き、[ファイアウォール経由でアプリまたは機能を許可 **する] をWindows Defenderします**。
+    1. [アプリ]**コントロール Windows Defender ファイアウォール** を開き、[アプリまたは機能の使用を許可する] を選択 **Windows Defender ファイアウォール。**
     
-    2. 一 **覧で Windows 管理インス** トルメンテーション (WMI) を検索し、プライベートとパブリックの両方を有効にし **、[OK] を選択します**。 
+    2. リスト **Windows管理インストルメンテーション (WMI)** を検索し、プライベートとパブリックの両方を有効にして **、[OK] を選択します**。
 
 1.  管理者権限を持つ PowerShell プロンプトを開きます。
 
@@ -94,9 +94,9 @@ Active Directory 環境では、PowerShell コマンドレットを使用して�
     Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
     ```
 
-3. デバイスのエントリがある可能性があるディレクトリにアクセスします。 Windows Server Active Directoryドメイン サービスや Azure Active Directory など、すべてのディレクトリから各デバイスのエントリを削除します。 完全に処理するには、削除に数時間かかる場合があります。
+3. デバイスのエントリがある可能性があるディレクトリにアクセスします。 すべてのディレクトリから各デバイスのエントリを *削除* します(Windows Server Active Directory ドメイン サービスとサーバーサーバー Azure Active Directory。 完全に処理するには、削除に数時間かかる場合があります。
 
-4. デバイスのエントリがある可能性がある管理サービスにアクセスします。 Microsoft Endpoint Configuration Manager、Microsoft Intune、Windows Autopilot など、すべての管理サービスから各デバイスのエントリを削除します。  完全に処理するには、削除に数時間かかる場合があります。
+4. デバイスのエントリがある可能性がある管理サービスにアクセスします。 すべての管理サービスから各デバイスのエントリを削除します(Microsoft Endpoint Configuration Manager、Microsoft Intune、Windows)。 完全に処理するには、削除に数時間かかる場合があります。
 
 これで、デバイスの登録 [に進みます](#register-devices-by-using-the-admin-portal)。
 
@@ -138,7 +138,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 ## <a name="register-devices-by-using-the-admin-portal"></a>管理者ポータルを使用してデバイスを登録する
 
-[Microsoft Endpoint Manager で、](https://endpoint.microsoft.com/)左側 **のナビゲーション ウィンドウで**[デバイス] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[デバイス] を **選択します**。 [Microsoft Managed Desktop Devices] ワークスペースで、[デバイスの登録] **を** 選択し、新しいデバイスを登録するフライインを開きます。
+[[Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)で、左側 **のナビゲーション ウィンドウ** で [デバイス] を選択します。 メニューの [Microsoft マネージド デスクトップ] セクションを探し、[デバイス] を **選択します**。 [デバイスのMicrosoft マネージド デスクトップ] ワークスペースで、[デバイスの登録]**を** 選択し、新しいデバイスを登録するフライインを開きます。
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -161,8 +161,8 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 |---------------|-------------|
 | 登録保留中 | 登録はまだ行っていません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
-| ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft Managed Desktop では、初回セットアップをガイドしますので、それ以上の準備を行う必要はありません。 |
-| Active | デバイスがユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用している場合も示します。 |
+| ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft マネージド デスクトップセットアップをガイドしますので、それ以上の準備をする必要はありません。 |
+| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用している場合も示します。 |
 | 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  | 
 
 ### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
@@ -177,7 +177,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 ## <a name="check-the-image"></a>画像を確認する
 
-デバイスが Microsoft Managed Desktop パートナー サプライヤーから提供されている場合は、イメージが正しい必要があります。
+デバイスがパートナー サプライヤーからMicrosoft マネージド デスクトップ場合、イメージは正しい必要があります。
 
 必要に応じて、自分で画像を適用することもできます。 作業を開始するには、使用している Microsoft 担当者に問い合わせ、画像を適用するための場所と手順を提供します。
 
@@ -186,7 +186,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 > [!IMPORTANT]
 > デバイスをユーザーに渡す前に、そのユーザーに適切なライセンスを取得して [適用](../get-ready/prerequisites.md) してください。
 
-すべてのライセンスが適用されている場合は、ユーザー[](get-started-devices.md)にデバイスを使用する準備を整え、ユーザーがデバイスを起動して Windows セットアップ エクスペリエンスを続行できます。
+すべてのライセンスが適用されている場合は、ユーザー[](get-started-devices.md)にデバイスを使用する準備を整え、ユーザーがデバイスを起動し、デバイスのセットアップ エクスペリエンスをWindowsできます。
 
 
 

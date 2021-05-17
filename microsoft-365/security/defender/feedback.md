@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender に関するフィードバックを提供する
-description: Microsoft 365 Defender で製品フィードバックを提供する
+title: Defender に関するフィードバックMicrosoft 365する
+description: Defender の製品フィードバックをMicrosoft 365する
 keywords: フィードバック、m365 セキュリティ、セキュリティ、365、機能
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/20/2021
 ms.locfileid: "51899342"
 ---
-# <a name="provide-feedback-on-microsoft-365-defender"></a>Microsoft 365 Defender に関するフィードバックを提供する
+# <a name="provide-feedback-on-microsoft-365-defender"></a>Defender に関するフィードバックMicrosoft 365する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

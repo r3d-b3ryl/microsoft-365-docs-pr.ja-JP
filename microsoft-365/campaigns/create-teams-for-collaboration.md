@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft Teams を使用してチームの共同作業スペースを作成します。
+description: チームの共同作業スペースを作成し、Microsoft Teams。
 ms.openlocfilehash: ddce111b758fcbd4840ca3493601779690684eeb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,9 +30,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50912224"
 ---
-# <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Microsoft Teams での共同作業のためのチームの作成
+# <a name="create-teams-for-collaboration-in-microsoft-teams"></a>グループで共同作業を行うチームをMicrosoft Teams
 
-Microsoft Teams は、どのデバイスからでも、スタッフが組織化され、会話を行う際に役立つコラボレーション アプリです。 Microsoft Teams を使用して、組織外のスタッフまたはゲストのメンバーとインスタント 会話を行います。 電話、会議の開催、ファイルの共有も可能です。
+Microsoft Teamsは、どのデバイスからでも、スタッフが組織化され、会話を行う際に役立つコラボレーション アプリです。 組織外のMicrosoft Teamsのメンバーとインスタント 会話を行う場合は、このツールを使用します。 電話、会議の開催、ファイルの共有も可能です。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
@@ -47,7 +47,7 @@ Microsoft Teams は、どのデバイスからでも、スタッフが組織化�
 1. **個々のチーム:** 小規模なグループ向けチームをセットアップして、毎日の作業に関する共同作業を行います。
 1. **外部コミュニケーション チームまたはチーム:** ベンダー、パートナー、またはクライアントを機密にすることなく、ベンダー、パートナー、またはクライアントと調整します。 特定のグループに異なるチャネルを設定します。
 
-![ビジネス内での安全なコミュニケーションとコラボレーションを可能にするための 3 つの別個のチームを含む Microsoft Teams ウィンドウの図](../media/m365-democracy-teams-business-collab.png)
+![3 つの独立したMicrosoft Teamsを使用して、ビジネス内での安全なコミュニケーションとコラボレーションを可能にするための、1 つのウィンドウの図](../media/m365-democracy-teams-business-collab.png)
 
 また、キャンペーンは、次のチームを作成して、安全にコミュニケーションと共同作業を行う可能性があります。
 
@@ -55,21 +55,21 @@ Microsoft Teams は、どのデバイスからでも、スタッフが組織化�
 2. **一般的なキャンペーン チーム:** これは、誰もが毎日のコミュニケーションと作業に使用します。 個人、グループ、または委員会は、自分の作業を行うチャネルをこのチームに設定できます。 たとえば、イベント計画のユーザーは、キャンペーン イベントのチャットとロジスティクスの調整を行うチャネルを設定できます。
 3. **パートナー チーム:** ベンダー、パートナー、またはボランティアと調整し、機密性の高い情報に組み込む必要はありません。
 
-![キャンペーン内での安全なコミュニケーションとコラボレーションを可能にするための 3 つの別々のチームを含む Microsoft Teams ウィンドウの図](../media/m365-democracy-teams-collab.png)
+![3 つのMicrosoft Teamsを使用して、キャンペーン内の安全なコミュニケーションとコラボレーションを可能にするための、1 つのウィンドウの図](../media/m365-democracy-teams-collab.png)
 
 チームを作成すると、他に作成される情報を次に示します。
 
-- 新しい [Microsoft 365 グループ](/MicrosoftTeams/office-365-groups)
-- [チーム ファイルを格納する SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact)サイトとドキュメント ライブラリ
-- [Exchange Online の共有](/MicrosoftTeams/exchange-teams-interact)メールボックスと予定表
+- 新しい[Microsoft 365グループ](/MicrosoftTeams/office-365-groups)
+- チーム[SharePointを保存](/MicrosoftTeams/sharepoint-onedrive-interact)するオンライン サイトとドキュメント ライブラリ
+- 共有[Exchange Online](/MicrosoftTeams/exchange-teams-interact)予定表
 - OneNote ノートブック
-- Planner や Power BI Office 365 の他のアプリとの関連付け
+- Planner や Office 365などの他のアプリと連携Power BI
 
-Microsoft Teams の内部には、次の情報があります。
+このMicrosoft Teamsには、次の情報があります。
 
 1. **Teams:** 所属するチャネルを検索するか、独自のチャネルを作成します。 チャネル内では、その場で会議を開催し、会話を行い、ファイルを共有できます。
-2. **会議:** 日または週の並べられたものすべてを確認します。 または、会議をスケジュールします。 この予定表は Outlook 予定表と同期されます。
-3. **呼び出し:** 組織で設定されている場合は、Microsoft Teams を使用していない場合でも、Microsoft Teams から誰でも呼び出す場合があります。
+2. **会議:** 日または週の並べられたものすべてを確認します。 または、会議をスケジュールします。 この予定表は、ユーザーの予定表Outlook同期します。
+3. **呼び出し:** 場合によっては、組織で設定されている場合、ユーザーが組織を使用していない場合でも、Microsoft Teams から誰でも呼び出Microsoft Teams。
 4. **アクティビティ:** 未読のメッセージ、メッセージ、返信@mentionsをキャッチアップします。
 
 上部のコマンド ボックスを使用して、特定のアイテムやユーザーを検索し、クイック アクションを実行し、アプリを起動します。
@@ -88,8 +88,8 @@ Microsoft Teams の内部には、次の情報があります。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Microsoft Teams の詳細については [、Microsoft Teams のテクニカル ドキュメントを参照してください。](/microsoftteams/microsoft-teams)
+詳細については、技術Microsoft Teamsドキュメント[Microsoft Teams参照してください。](/microsoftteams/microsoft-teams)
 
 ## <a name="admin-settings"></a>管理設定
 
-組織全体のチームを作成するには、管理者である必要があります。 詳細については [、「Microsoft 365 の管理者とは」を参照してください](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
+組織全体のチームを作成するには、管理者である必要があります。 詳細については、「管理者[とは」を参照Microsoft 365。](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)

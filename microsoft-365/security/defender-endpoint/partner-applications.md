@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 ![Micro Focus ArcSight ロゴの画像](images/arcsight-logo.png) | [Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548) | Micro Focus ArcSight を使用して Defender for Endpoint の検出を取得する
 ![RSA NetWitness ロゴの画像](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | Microsoft Graph セキュリティ API を使用してエンドポイントアラートの Defender を RSA NetWitness にストリーミングする
 ![SafeBreach ロゴの画像](images/safebreach-logo.png) | [SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)| SafeBreach シミュレーションと自動的に関連付ける Defender for Endpoint セキュリティ イベントを可視化する
-![Skybox の脆弱性制御のロゴの画像](images/skybox-logo.png) | [Skybox の脆弱性制御](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox の脆弱性管理は、脆弱性管理のノイズを削減し、ビジネス、ネットワーク、脅威のコンテキストを関連付け、最もリスクの高い脆弱性を明らかにします。
+![Skybox の脆弱性制御のロゴの画像](images/skybox-logo.png) | [Skybox の脆弱性制御](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox の脆弱性管理は、脆弱性の管理、ネットワーク、脅威のコンテキストを関連付け、最もリスクの高い脆弱性を明らかにします。
 ![Splunk ロゴのイメージ](images/splunk-logo.png) | [Splunk](https://go.microsoft.com/fwlink/?linkid=2129805) | Defender for Endpoint アドオンを使用すると、Splunk ユーザーは、すべてのアラートとサポート情報を Splunk に取り込む
 ![XM Cyber ロゴの画像](images/xmcyber-logo.png) | [XM Cyber](https://go.microsoft.com/fwlink/?linkid=2136700) | リスク要因と価値の高い資産に基づいてアラートへの応答の優先順位を設定する
 
@@ -76,9 +76,9 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 ![CyberSponse CyOps ロゴの画像](images/cybersponse-logo.png) | [CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943) | CyOps は Defender for Endpoint と統合し、お客様の高速インシデント対応プレイブックを自動化します
 ![デルタ リスク ActiveEye ロゴの画像](images/delta-risk-activeeye-logo.png) | [デルタ リスク ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468) | サービスとしての SOC およびセキュリティ サービスのリーディング プロバイダーであるデルタ リスクは、Defender for Endpoint とクラウドネイティブの SOAR プラットフォーム ActiveEye を統合します。
 ![Palo Alto Networks Company のロゴである Demisto のイメージ](images/demisto-logo.png) | [Demisto、Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2108414) | Demisto は Defender for Endpoint と統合し、セキュリティ チームがエンドポイントのセキュリティ監視、強化、および応答を調整および自動化できます。
-![Microsoft Flow & Azure Functions ロゴのイメージ](images/ms-flow-logo.png) | [Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300) | セキュリティ手順を自動化するには、Microsoft Flow の Azure Logic Apps & Defender for Endpoint コネクタを使用する
+![Azure Functions Microsoft Flow &のイメージ](images/ms-flow-logo.png) | [Microsoft Flow & Azure 関数](https://go.microsoft.com/fwlink/?linkid=2114300) | セキュリティ手順の自動化を行うAzure Logic Apps & Microsoft Flow Defender for Endpoint コネクタを使用する
 ![Rapid7 InsightConnect ロゴの画像](images/rapid7-logo.png) | [Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040) | InsightConnect は Defender for Endpoint と統合し、時間のかかるセキュリティ プロセスを加速、合理化、統合します。
-![ServiceNow ロゴの画像](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | Microsoft Graph API 統合に基づいて ServiceNow セキュリティ操作ソリューションにアラートを取り込む
+![ServiceNow ロゴの画像](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | Microsoft サービス API 統合に基づいて ServiceNow セキュリティ操作ソリューションGraph取り込む
 ![Swimlane ロゴの画像](images/swimlane-logo.png) | [Swimlane](https://go.microsoft.com/fwlink/?linkid=2113902) | Swimlane と Defender for Endpoint を組み合わせて利用してインシデント対応機能を最大化する
 
 
@@ -110,7 +110,7 @@ Microsoft Defender for Endpoint は、既存のセキュリティ ソリュー�
 ![Corrata ロゴの画像](images/corrata-logo.png)| [Corrata](https://go.microsoft.com/fwlink/?linkid=2081148) | モバイル ソリューション - Corrata から詳細な可視性と制御でモバイル デバイスを保護する 
 ![外観ロゴの画像](images/lookout-logo.png)| [ルックアウト](https://go.microsoft.com/fwlink/?linkid=866935)| Android および iOS モバイル デバイス用の Lookout Mobile Threat Protection テレメトリを取得する
 ![Symantec Endpoint Protection Mobile ロゴの画像](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP Mobile は、企業がモバイル デバイスのセキュリティの脅威と脆弱性を予測、検出、および防止するのに役立ちます 
-![Zimperium ロゴの画像](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|機械学習ベースのモバイル脅威防御を使用して、エンドポイント用 Defender を iOS および Android に拡張する
+![Zimperium ロゴの画像](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|モバイル ベースのモバイル脅威防御機能を使用して、エンドポイントの Defender を iOS と Android に拡張Machine Learningを拡張する
 
 
 
@@ -152,5 +152,5 @@ Defender for Endpoint を使用すると、これらのソリューションと�
 
 Defender for Endpoint は現在、ファイルインジケーターとネットワーク インジケーターの IOC 照合と修復をサポートしています。 ブロックは、ファイル インジケーターでサポートされています。  
 
-## <a name="support-for-non-windows-platforms"></a>Windows 以外のプラットフォームのサポート
-Defender for Endpoint は、モバイル デバイスを含む Windows プラットフォームと Windows 以外のプラットフォームに対して一元的なセキュリティ操作エクスペリエンスを提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートをポータルで確認し、組織のネットワークをよりよく保護することができます。 
+## <a name="support-for-non-windows-platforms"></a>非プラットフォームのWindowsサポート
+Defender for Endpoint は、モバイル デバイスを含む、Windowsおよび非Windowsプラットフォームに対して一元的なセキュリティ操作エクスペリエンスを提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートをポータルで確認し、組織のネットワークをよりよく保護することができます。 

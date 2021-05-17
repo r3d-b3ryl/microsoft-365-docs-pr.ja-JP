@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: '概要: PowerShell を使用して、ポリシーを使用して Skype for Business Online ユーザー アカウントのプロパティを管理します。'
+description: '概要: PowerShell を使用して、ポリシーを使用Skype for Business Online ユーザー アカウントのプロパティを管理します。'
 ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "50916704"
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Skype for Business Online のユーザー アカウントの多くのプロパティを管理するには、それらを PowerShell for Microsoft 365 のポリシーのプロパティとして指定する必要があります。
+Skype for Business Online のユーザー アカウントの多くのプロパティを管理するには、PowerShell を使用してポリシーのプロパティとして指定する必要Microsoft 365。
   
 ## <a name="before-you-begin"></a>はじめに
 
@@ -66,7 +66,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-このポリシー内の値は、ユーザーがフェデレーション ユーザーとの通信に関して実際にできることとできないことを示しています。 たとえば、組織外部のユーザーと通信できるようにするためには、EnableOutsideAccess プロパティを True に設定する必要があります。 このプロパティは、Microsoft 365 管理センターには表示されません。 代わりに、このプロパティはその他の選択内容に基づいて自動的に True または False に設定されます。 関心のある他の 2 つのプロパティについては、次のようになります。
+このポリシー内の値は、ユーザーがフェデレーション ユーザーとの通信に関して実際にできることとできないことを示しています。 たとえば、組織外部のユーザーと通信できるようにするためには、EnableOutsideAccess プロパティを True に設定する必要があります。 このプロパティは、管理センターにMicrosoft 365注意してください。 代わりに、このプロパティはその他の選択内容に基づいて自動的に True または False に設定されます。 関心のある他の 2 つのプロパティについては、次のようになります。
   
 - **EnableFederationAccess** は、ユーザーがフェデレーション ドメインからのユーザーと通信できるかどうかを示します。
     
@@ -88,7 +88,7 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 このコマンドでは、ユーザーに割り当てられたポリシーを探してから、そのポリシー内で有効または無効になっている機能を探します。
   
-PowerShell を使用して Skype for Business Online ポリシーを管理するには、次のコマンドレットを参照してください。
+PowerShell をSkype for Businessオンライン ポリシーを管理するには、次のコマンドレットを参照してください。
 
 - [クライアント ポリシー](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
 - [会議ポリシー](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
@@ -116,7 +116,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 ApplicableTo パラメーターは、返すデータを、指定されたユーザー (Alex Darrow など) に割り当てることが可能なポリシーに限定します。ライセンスと利用場所の制限によっては、使用可能なすべてのポリシーの一部しか表示しない場合があります。 
   
-場合によっては、ポリシーのプロパティは Microsoft 365 では使用されませんが、他のプロパティは Microsoft サポート担当者によってのみ管理できます。 
+ポリシーのプロパティを Microsoft 365 と一緒に使用しない場合や、Microsoft サポート担当者だけが管理できるプロパティもあります。 
   
 Skype for Business Online を使用している場合は、何らかのポリシーによってユーザーを管理する必要があります。有効なポリシーに関連するプロパティが空白の場合、当該ユーザーには、ユーザーごとのポリシーが割り当てられていない場合に自動的に適用されるグローバル ポリシーによって管理されていることを意味します。ユーザー アカウントではクライアント ポリシーが表示されていないため、グローバル ポリシーによって管理されています。グローバル クライアント ポリシーを設定するには次のコマンドを使用します。
   

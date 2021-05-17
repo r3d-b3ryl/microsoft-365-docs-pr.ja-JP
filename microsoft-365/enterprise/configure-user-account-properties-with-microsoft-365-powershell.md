@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用して Microsoft 365 ユーザー アカウントのプロパティを構成する
+title: PowerShell Microsoft 365ユーザー アカウントのプロパティを構成する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: Microsoft 365 の PowerShell を使用して、Microsoft 365 テナント内の個々または複数のユーザー アカウントのプロパティを構成します。
+description: PowerShell を使用して、Microsoft 365テナント内の個々または複数のユーザー アカウントのプロパティMicrosoft 365します。
 ms.openlocfilehash: 6b674641842f89fd8c8e22dc26350cdd53734b9e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,17 +25,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50911086"
 ---
-# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザー アカウントのプロパティを構成する
+# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントのプロパティを構成する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 管理センターを使用して、Microsoft 365 テナントのユーザー アカウントのプロパティを構成できます。 PowerShell では、管理センターで実行できないその他の操作も実行できます。
+管理センターをMicrosoft 365して、テナントのユーザー アカウントのプロパティMicrosoft 365できます。 PowerShell では、管理センターで実行できないその他の操作も実行できます。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-Azure Active Directory PowerShell for Graph モジュールでユーザー アカウントのプロパティを構成するには [**、Set-AzureADUser**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) コマンドレットを使用して、設定または変更するプロパティを指定します。
+Graph モジュールの Azure Active Directory PowerShell でユーザー アカウントのプロパティを構成するには [**、Set-AzureADUser**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0)コマンドレットを使用して、設定または変更するプロパティを指定します。
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
    
 ### <a name="change-properties-for-a-specific-user-account"></a>特定のユーザー アカウントのプロパティを変更する
 
@@ -149,9 +149,9 @@ Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -Usag
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-Microsoft Azure Active Directory Module for Windows PowerShell を使用してユーザー アカウントのプロパティを構成するには **、Set-MsolUser** コマンドレットを使用して、設定または変更するプロパティを指定します。
+Windows PowerShell 用の Microsoft Azure Active Directory モジュールを使用してユーザー アカウントのプロパティを構成するには **、Set-MsolUser** コマンドレットを使用して、設定または変更するプロパティを指定します。
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
 >[!Note]
 >PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。 これらのコマンドレットは、Windows PowerShell から実行します。

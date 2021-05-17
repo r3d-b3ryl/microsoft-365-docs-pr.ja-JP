@@ -33,7 +33,7 @@ ms.locfileid: "51759956"
 ![管理者の役割を示す図](../../media/roles-main-page.png)
 
 > [!TIP]
-> 役割の詳細な説明をお探しですか ? [「Azure Active Directory の管理者役割のアクセス許可」](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)および「管理者ロール[について」を参照してください](/microsoft-365/admin/add-users/about-admin-roles)。
+> 役割の詳細な説明をお探しですか ? [管理者の[役割のアクセス許可] および [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)[について] を参照してください](/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="about-the-admin-roles-page"></a>[管理者の役割] ページについて
 
@@ -43,7 +43,7 @@ ms.locfileid: "51759956"
 
 |||
 |:-----|:-----|
-|  <br/> |[ **管理リストのエクスポート]** を使用して、組織内のすべての管理者ユーザーの完全なリストを取得します。 リストは Excel の .csv ファイルに格納されます。   <br/> |
+|  <br/> |[ **管理リストのエクスポート]** を使用して、組織内のすべての管理者ユーザーの完全なリストを取得します。 リストは、ファイル内のExcel .csvされます。   <br/> |
 |  <br/> |[ **検索]** を使用して管理者ロールを検索し、その役割に割り当てられているユーザーを確認します。   <br/> |
 |  <br/> |フィルター **を使用** して、表示される管理者ロールのビューを変更します。   <br/> |
 
@@ -56,13 +56,13 @@ ms.locfileid: "51759956"
 
 ### <a name="exchange-admin"></a>Exchange 管理者
 
-ユーザーのメール メールボックス、Microsoft 365 グループ、および Exchange Online を表示および管理する必要があるユーザーに Exchange 管理者の役割を割り当てる。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 [詳細情報](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
+ユーザーのExchangeメールボックス、ユーザーグループ、およびグループを表示および管理する必要があるユーザーに管理者Microsoft 365割り当Exchange Online。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 [詳細情報](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>グローバル管理者
 
 Microsoft オンライン サービス全体のほとんどの管理機能とデータへのグローバル アクセスが必要なユーザーにグローバル管理者の役割を割り当てる。 グローバルなアクセスを多くのユーザーに許可することはセキュリティ上のリスクであるため、2 〜 4 人のグローバル管理者を配置することをお勧めします。 すべてのユーザーのパスワードをリセットし、ドメインを追加および管理できるのは、グローバル管理者のみです。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 Microsoft オンライン サービスにサインアップしたユーザーが自動的にグローバル管理者になります。詳細 [については、以下を参照してください。](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
-### <a name="global-reader"></a>グローバル閲覧者
+### <a name="global-reader"></a>グローバルリーダー
 
 グローバル管理者が表示できるすべての管理センターで管理機能と設定を表示する必要があるユーザーに、グローバル リーダー管理者の役割を割り当てる。 グローバル リーダー管理者の役割は、設定を編集できない。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
@@ -72,15 +72,15 @@ Microsoft オンライン サービス全体のほとんどの管理機能とデ
 
 ### <a name="service-admin"></a>サービス管理者
 
-Azure、Microsoft 365、および 365 サービスのサービス要求を作成する必要があるユーザーにサービス管理者Office割り当てる。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Azure、Microsoft 365、およびサービスのサービス要求を作成する必要があるユーザー Microsoft 365 Office 365割り当てる。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>SharePoint 管理者
 
-Microsoft 365 サブスクリプションを購入すると、チーム サイトが自動的に作成され、グローバル管理者がプライマリ サイト コレクション管理者として設定されます。 SharePoint 管理センターにアクセスするユーザーに SharePoint 管理役割を割り当てる。 SharePoint 管理者ロールを持つユーザーは、サイト コレクションを作成および管理し、サイト コレクション管理者を指定し、ユーザー プロファイルを管理できます。 SharePoint 管理者ロールを持つユーザーは、Microsoft サポートを通じて Microsoft 365 グループを管理し、サービス要求を開くすることもできます。 [詳細情報](/sharepoint/sharepoint-admin-role)
+サブスクリプションを購入Microsoft 365チーム サイトが自動的に作成され、グローバル管理者がプライマリ サイト コレクション管理者として設定されます。 管理者SharePointにアクセスするユーザーに管理者ロールを割り当SharePointします。 管理者ロールをSharePointユーザーは、サイト コレクションの作成と管理、サイト コレクション管理者の指定、ユーザー プロファイルの管理を行います。 管理者ロールをSharePointユーザーは、Microsoft サポートを通Microsoft 365グループを管理し、サービス要求を開くすることもできます。 [詳細情報](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Teams のサービス管理者
 
-Teams 管理者の役割を、Skype 管理センターの Teams にアクセスして管理するユーザー&割り当てる。 Teams 管理者ロールを持つユーザーは、Microsoft サポートを通じて Microsoft 365 グループを管理し、サービス要求を開くすることもできます。 [詳細情報](/MicrosoftTeams/using-admin-roles)
+管理センター Teams管理するユーザーに管理者ロールを割り当Teams & Skypeします。 管理者の役割をTeamsユーザーは、Microsoft サポートを通Microsoft 365グループを管理し、サービス要求を開くすることもできます。 [詳細情報](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>ユーザー管理者
 

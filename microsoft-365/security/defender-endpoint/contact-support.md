@@ -58,7 +58,7 @@ Defender for Endpoint は最近、サポート プロセスをアップグレー
 
     ![疑問符が選択されている場合のウィジェットのイメージ](images/support-widget.png)
 
-2. [ヘルプが必要 **] をクリックします。**  Microsoft Defender セキュリティ センターの右下にあるボタンをクリックします。
+2. [ヘルプが必要 **] をクリックします。**  ボタンをクリックしますMicrosoft Defender セキュリティ センター。
 
 
     ![[必要なヘルプ] ボタンの画像](images/need-help.png)

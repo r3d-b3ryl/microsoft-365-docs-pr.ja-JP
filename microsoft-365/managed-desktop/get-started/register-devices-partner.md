@@ -53,9 +53,9 @@ ms.locfileid: "51689235"
 > グループ名は、大文字と特殊文字を含む、表に記載されている名前と完全に一致する必要があります。 これにより、新しく登録されたデバイスに Microsoft Managed Desktop Autopilot プロファイルを割り当てることができます。
 
 >[!NOTE]
-> デバイスの購入でこの .csv ファイルを受け取っている必要があります。 .csv ファイルを受信しなかった場合は [、「Windows Autopilot](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)へのデバイスの追加」の手順に従って、自分で作成できます。 このWindows PowerShellは [、Microsoft Managed Desktop Admin](./register-devices-self.md#obtain-the-hardware-hash)ポータルで使用されるスクリプトとは異なります。 パートナーは [、Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) を使用して、Microsoft マネージ デスクトップ デバイスのデバイスをパートナー センターに登録する必要があります。
+> デバイスの購入時にこの.csvファイルを受け取っている必要があります。 ファイルを受け取らなかった [.csv、Windows Autopilot](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)にデバイスを追加するの手順に従って、自分で作成できます。 このWindows PowerShellは [、Microsoft Managed Desktop Admin](./register-devices-self.md#obtain-the-hardware-hash)ポータルで使用されるスクリプトとは異なります。 パートナーは [、Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) を使用して、Microsoft マネージ デスクトップ デバイスのデバイスをパートナー センターに登録する必要があります。
 
-.csv ファイルのアップロード中にエラー メッセージが表示される場合は、ファイルの形式を確認します。 列の順序が「新しいデバイスで [Windows Autopilot](/partner-center/autopilot#add-devices-to-a-customers-account)プロファイルを使用して顧客のアウトボックス エクスペリエンスをカスタマイズする」で説明されている順序と一致するようにします。 [デバイスの追加] の横にあるリンクから提供されるサンプルの .csv ファイルを使用 **して、デバイス** リストを作成することもできます。 
+ファイルのアップロード中にエラー メッセージが表示.csvファイルの形式を確認します。 列の順序が「新しいデバイスで [Windows Autopilot](/partner-center/autopilot#add-devices-to-a-customers-account)プロファイルを使用して顧客のアウトボックス エクスペリエンスをカスタマイズする」で説明されている順序と一致するようにします。 [デバイスの追加] の横にあるリンク.csvサンプル ファイルを使用して、デバイス リストを作成することもできます。 
 
 パートナー シナリオでの自動パイロットの詳細については、「デバイスを [顧客のアカウントに追加する」を参照してください](/partner-center/autopilot#add-devices-to-a-customers-account)。
 

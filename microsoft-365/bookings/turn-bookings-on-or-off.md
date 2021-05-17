@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
-description: Microsoft 365 で Microsoft Bookings にアクセスする方法について説明します。
+description: Microsoft Bookings にアクセスする方法については、Microsoft 365。
 ms.openlocfilehash: 7b1582a480ac4fdcd5a131febcc59450aa13e299
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,13 +21,13 @@ ms.locfileid: "50913768"
 予約は、組織全体または特定のユーザーに対して有効または無効にできます。 ユーザーの予約を有効にした場合、ユーザーは [予約] ページを作成し、予定表を作成し、他のユーザーが自分と一緒に時間を予約できます。
 
 > [!NOTE]
-> これらのセクションで説明されている管理コントロールは、21Vianet (中国) のお客様Office 365 Operated では使用できません。
+> これらのセクションで説明する管理コントロールは、21Vianet (中国) Office 365によって運用されているユーザーには使用できません。
 
-## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用して組織の予約をオンまたはオフにする
+## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>管理センターを使用して組織の予約を有効またはMicrosoft 365する
 
-1. グローバル管理者として Microsoft 365 管理センターにサインインします。
+1. 管理者センターにMicrosoft 365グローバル管理者としてサインインします。
 
-2. 管理センターで、[設定] [組織の  **設定**]   \> **に移動し、[** 予約]**を選択します**。
+2. 管理センターで、[組織] **** ページに移動   \> **設定、[設定]** **を選択します**。
 
 3. [組織で予約 **を使用して組織の予約** を有効または無効にする] チェック ボックスをオンにします。
 
@@ -38,7 +38,7 @@ ms.locfileid: "50913768"
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>PowerShell を使用して組織の予約を有効またはオフにする
 
-PowerShell コマンドレット [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)を使用して組織の予約を有効またはオフにする場合は [、Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) に接続し、次のコマンドを実行します。
+PowerShell コマンドレット[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)を使用して組織の予約を有効またはConnect [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) Exchange Online実行し、次のコマンドを実行します。
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
@@ -48,7 +48,7 @@ PowerShell コマンドレット [Set-OrganizationConfig](/powershell/module/exc
 
 個々のユーザーの予約を無効にできます。
 
-1. Microsoft 365 管理センターに移動し、[ユーザー] [アクティブユーザー **]** \> **を選択します**。
+1. 管理センターに移動Microsoft 365、[ユーザー] [アクティブな **ユーザー]** \> **を選択します**。
 
 1. 目的のユーザーを選択し、[ライセンスとアプリ **] を選択します**。
 
@@ -56,17 +56,17 @@ PowerShell コマンドレット [Set-OrganizationConfig](/powershell/module/exc
 
 ## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>空き時間情報を共有する前にスタッフの承認を要求する
 
-管理者は、予約ページを通じて予約可能になる前に、利用可能な情報を共有する前に、組織内の従業員にオプトインを要求できます。 この設定は、Microsoft 365 管理センターの[設定設定の予約] \> **で** \> **使用できます**。
+管理者は、予約ページを通じて予約可能になる前に、利用可能な情報を共有する前に、組織内の従業員にオプトインを要求できます。 この設定は、[予約] の下 **Microsoft 365管理センター** \> **設定設定** \> **使用できます**。
 
 この設定を有効にすると、予約カレンダーにスタッフとして追加された従業員は、受信した電子メール通知に [承認/拒否] リンクを見つける。
 
-この機能は、Microsoft 365 のお客様に世界全体で段階的に展開されています。 Microsoft 365 管理センターにこのオプションが表示しない場合は、すぐに確認してください。
+この機能は、世界中の顧客に徐々にMicrosoft 365されています。 管理センターでこのオプションが表示Microsoft 365、すぐに確認してください。
 
 ## <a name="block-social-sharing-options"></a>ソーシャル共有オプションをブロックする
 
-管理者は、予約ページをソーシャル ネットワーク上で共有する方法を制御できます。 この設定は、Microsoft 365 管理センターの[設定設定の予約] \> **で** \> **使用できます**。
+管理者は、予約ページをソーシャル ネットワーク上で共有する方法を制御できます。 この設定は、[予約] の下 **Microsoft 365管理センター** \> **設定設定** \> **使用できます**。
 
-この機能は、Microsoft 365 のお客様に世界全体で段階的に展開されています。 Microsoft 365 管理センターにこのオプションが表示しない場合は、すぐに確認してください。
+この機能は、世界中の顧客に徐々にMicrosoft 365されています。 管理センターでこのオプションが表示Microsoft 365、すぐに確認してください。
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>選択したユーザーにのみ予約カレンダーの作成を許可する
 
@@ -74,7 +74,7 @@ PowerShell コマンドレット [Set-OrganizationConfig](/powershell/module/exc
 
 このポリシーに含まれるユーザーは、新しい Bookings カレンダーを作成し、既存の Bookings カレンダーに任意の容量 (管理者ロールを含む) のスタッフとして追加できます。 このポリシーに含まれていないユーザーは、新しい予約カレンダーを作成できないので、新しい予約カレンダーを作成しようとしてもエラー メッセージが表示されます。
 
-Exchange Online PowerShell を使用して次のコマンドを実行する必要があります。 Exchange Online コマンドレットの実行の詳細については [、「Connect to Exchange Online PowerShell」を参照してください](/powershell/exchange/connect-to-exchange-online-powershell)。
+PowerShell を使用して次のコマンドを実行Exchange Onlineがあります。 コマンドレットの実行の詳細についてはExchange Online PowerShell のConnect[をExchange Onlineしてください](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 > [!IMPORTANT]
 > 以下の手順では、組織内に他Outlook Web App (OWA) メールボックス ポリシーが作成されていないことを前提とします。
@@ -105,6 +105,6 @@ Exchange Online PowerShell を使用して次のコマンドを実行する必�
 
 OWA メールボックス ポリシーの詳細については、次のトピックを参照してください。
 
-- [Exchange Online で Outlook on the Web メールボックス ポリシーを作成する](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [Web メールボックス ポリシー Outlookポリシーに対するポリシーを作成Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
 
-- [Exchange Online のメールボックスで Outlook on the Web メールボックス ポリシーを適用または削除する](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [サーバー内のメールボックスOutlookの Web メールボックス ポリシーに対してメールボックスを適用または削除Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)

@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: ユーザーの Microsoft 365 アカウントを削除する場合は、このチェックリストに従います。
+description: このチェックリストに従って、ユーザーのアカウントを削除Microsoft 365します。
 ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "50914764"
 
 組織からユーザーを削除する場合があります。たとえば、組織を離れたユーザーを削除することができます。ユーザーの削除を行う前と後に行うべきことがいくつかあります。このクイック チェックリストは、その手順を示します。
   
-## <a name="remove-the-microsoft-365-license-from-the-user"></a>ユーザーから Microsoft 365 ライセンスを削除する
+## <a name="remove-the-microsoft-365-license-from-the-user"></a>ユーザーからMicrosoft 365ライセンスを削除する
 
 ユーザーからライセンスを削除するには、ホーム ページでユーザーを検索するか、[アクティブ なユーザー]ページでユーザーを選択します。 [ライセンス **とアプリ] タブ** で、ユーザーから削除するライセンスのチェック ボックスをオフにします。 SharePoint チーム サイトと OneDrive for Business で割り当てられる記憶領域
   
@@ -50,7 +50,7 @@ ms.locfileid: "50914764"
   
 ## <a name="what-to-do-with-the-unassigned-license"></a>解除したライセンスの処置
 
-新しい従業員または組織に参加しているユーザーがいる場合は、Microsoft 365 を使用できるよう、このライセンスを割り当てできます。 ホーム ページで、または [ **アクティブなユーザー**] ページからユーザーを検索して選択できます。 [ライセンス **とアプリ] タブ** で、新しいユーザーに追加するライセンスのチェック ボックスをオンにします。 SharePoint チーム サイトと OneDrive for Business で割り当てられる記憶領域
+新しい従業員または組織に参加しているユーザーがいる場合は、このライセンスを割り当て、ユーザーが組織のユーザーを使用Microsoft 365。 ホーム ページで、または [ **アクティブなユーザー**] ページからユーザーを検索して選択できます。 [ライセンス **とアプリ] タブ** で、新しいユーザーに追加するライセンスのチェック ボックスをオンにします。 SharePoint チーム サイトと OneDrive for Business で割り当てられる記憶領域
   
 ## <a name="remove-license-so-you-dont-have-to-pay-for-it"></a>ライセンスを削除してライセンス料金が発生しないようにする
 

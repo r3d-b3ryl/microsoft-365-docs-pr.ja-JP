@@ -1,5 +1,5 @@
 ---
-title: エンタープライズ テスト環境用に Microsoft 365 のグローバル管理者アカウントを保護する
+title: エンタープライズ テスト環境用に、Microsoft 365管理者アカウントを保護する
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: エンタープライズ テスト環境用の Microsoft 365 のグローバル管理者アカウントを保護するには、次の手順を実行します。
+description: 次の手順を使用して、エンタープライズ テスト環境用にMicrosoft 365管理者アカウントを保護します。
 ms.openlocfilehash: 3eab538b59e460857e2fa195aaacf51051f94d6b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,24 +22,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50918884"
 ---
-# <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境用に Microsoft 365 のグローバル管理者アカウントを保護する
+# <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境用に、Microsoft 365管理者アカウントを保護する
 
-*このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ テスト環境Microsoft 365にのみ使用できます。*
 
 管理者アカウントを可能な限り安全に管理することで、組織に対するデジタル攻撃を防止できます。 
 
-この記事では、Azure Active Directory (Azure Active Directory AD) 条件付きアクセス ポリシーを使用してグローバル管理者アカウントを保護する方法について説明します。
+この記事では、グローバル管理者アカウントを保護Azure Active Directory (Azure AD) 条件付きアクセス ポリシーを使用する方法について説明します。
 
-エンタープライズ テスト環境用の Microsoft 365 でグローバル管理者アカウントを保護するには、次の 2 つのフェーズが必要です。
-- [フェーズ 1: エンタープライズ テスト環境向け Microsoft 365 を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+エンタープライズ テスト環境用にMicrosoft 365管理者アカウントを保護するには、次の 2 つのフェーズがあります。
+- [フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [フェーズ 2: 条件付きアクセス ポリシーを構成する](#phase-2-configure-conditional-access-policies)
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Microsoft 365 for enterprise Test Lab Guide スタックのすべての記事へのビジュアル マップについては [、「Microsoft 365 for enterprise Test Lab Guide Stack」を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境向け Microsoft 365 を構築する
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する
 
 最小要件でグローバル管理者アカウント保護を軽量な方法でテストする場合は、「Lightweight base [configuration」の手順に従います](lightweight-base-configuration-microsoft-365-enterprise.md)。
   
@@ -52,18 +52,18 @@ ms.locfileid: "50918884"
 
 最初に、専用のグローバル管理者として新しいユーザー アカウントを作成します。
 
-1. 別のタブで [、Microsoft 365 管理センターを開きます](https://admin.microsoft.com/)。
+1. 別のタブで、管理センター Microsoft 365[開きます](https://admin.microsoft.com/)。
 2. [ユーザー **の**  >  **アクティブなユーザー]** を選択し、[ユーザー **の追加] を選択します**。
 3. [ユーザーの **追加] ウィンドウ** で、[名]、[表示名]、および [ユーザー名] ボックスに **「DedicatedAdmin」****と** 入力します。
 4. [ **パスワード] を** 選択 **し、[パスワードを作成する**] を選択し、強力なパスワードを入力します。 この新しいアカウントのパスワードを安全な場所に記録します。
 5. **[次へ]** を選択します。
-6. [製品ライセンス **の割り当て** ] ウィンドウで **、[Microsoft 365 E5]** を選択し、[次へ] を **選択します**。
+6. [製品ライセンス **の割り当て**] ウィンドウで、[ライセンスの割 **り当て] Microsoft 365 E5** し、[次へ] を **選択します**。
 7. [オプションの **設定] ウィンドウで**、[役割管理センター **アクセス**  >  **グローバル** 管理者  >  **次へ] を**  >  **選択します**。
 8. [ほぼ **完了] ウィンドウで、[** 追加の完了] を選択し、[閉じる] を **選択します**。
 
 次に、GlobalAdmins という名前の新しいグループを作成し、そのグループに DedicatedAdmin アカウントを追加します。
 
-1. **[Microsoft 365 管理** センター]タブで、左側のナビゲーションで [グループ] を選択し、[グループ] を **選択します**。
+1. [管理 **センター Microsoft 365] タブで**、左側のナビゲーション **で**[グループ] を選択し、[グループ] を **選択します**。
 2. [グループ **の追加] を選択します**。
 3. [グループの **種類の選択] ウィンドウで** 、[セキュリティ] **を選択** し、[次へ] を **選択します**。
 4. [基本 **の設定] ウィンドウで、[グループの作成** ] を選択 **し**、[閉じる] を **選択します**。
@@ -77,7 +77,7 @@ ms.locfileid: "50918884"
 この最初のポリシーでは、すべてのグローバル管理者アカウントで MFA を使用する必要があります。
 
 1. ブラウザーの新しいタブで、 に移動します [https://portal.azure.com](https://portal.azure.com) 。
-2. [Azure **Active Directory セキュリティ**  >  **の条件付**  >  **きアクセス] をクリックします**。
+2. [セキュリティ **Azure Active Directory**  >  **アクセス]**  >  **をクリックします**。
 3. [条件付き **アクセス - ポリシー] ウィンドウで、[** 基準計画ポリシー: 管理者に MFA を **要求する (プレビュー) ] を選択します**。
 4. [基準計画 **ポリシー] ウィンドウで** 、[ポリシーを **すぐに使用する] を選択>保存します**。
 
@@ -93,7 +93,7 @@ ms.locfileid: "50918884"
 8. [新しい **] ウィンドウの** [アクセス制御] セクション **で、[** 許可] を **選択します**。
 9. [アクセス許可 **] ウィンドウで** 、[アクセス **をブロック** する] を選択し、[選択] を **選択します**。
 10. [新しい **] ウィンドウで**、[ポリシーの有効化 **] で [オン****] を** 選択し、[作成] を **選択します**。
-11. Azure portal **タブと Microsoft** **365 管理センター タブを閉** じます。
+11. Azure portal **を閉じて** Microsoft 365 **管理センター タブを開** きます。
 
 最初のポリシーをテストするには、DedicatedAdmin アカウントでサインアウトしてサインインします。 MFA の構成を求めるメッセージが表示されます。 これは、最初のポリシーが適用されているのを示しています。
 

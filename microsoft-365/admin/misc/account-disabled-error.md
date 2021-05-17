@@ -24,8 +24,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914944"
 ---
-# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Outlook on the web でアカウントが無効になっているエラーを取得する
+# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Web 上のアカウントでアカウントが無効Outlookエラーを取得する
 
-Outlook on the  web (以前は Outlook Web App と呼ばれる) を開こうとすると、アカウントが無効になっているというエラーが発生した場合、管理者が Outlook on the web へのアクセスを無効にしている可能性があります。 `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException`
+web で Outlookを開こうとすると、アカウントが無効になっているというエラーが発生した場合 (以前は Outlook Web App と呼ばれる)、管理者が web 上の Outlook へのアクセスを無効にしている可能性があります。 `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException`
 
-管理者は、メールボックスに対して有効または無効にするトピックの手順に従って、この [Outlook Web App修正できます](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)。
+管理者は、メールボックスに対して有効または無効にするトピックの手順に従って、このOutlook Web App[修正できます](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)。

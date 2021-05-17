@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: グループ メンバーの削除の追加、電子メール アドレス、グループ名、または説明の編集、グループの動作のカスタマイズなど、Microsoft 365 グループの管理について説明します。
+description: グループ メンバーのMicrosoft 365、電子メール アドレス、グループ名、または説明の編集、グループの動作のカスタマイズなど、さまざまなグループを管理する方法について説明します。
 ms.openlocfilehash: 3ba3dd36ed3929e956ce6359e678d6b684f64bb9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,11 +26,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50908712"
 ---
-# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでグループを管理する
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>管理センターでグループMicrosoft 365管理する
 
-[Microsoft 365 グループを作成](create-groups.md)し、グループ メンバーを追加したら、グループを構成できます。 グループ名または説明の編集、所有者またはメンバーの管理、外部送信者がグループにメールを送信できるかどうか、およびグループ会話のコピーをメンバーに送信するかどうかを指定できます。
+グループを[作成し、Microsoft 365メンバー](create-groups.md)を追加したら、グループを構成できます。 グループ名または説明の編集、所有者またはメンバーの管理、外部送信者がグループにメールを送信できるかどうか、およびグループ会話のコピーをメンバーに送信するかどうかを指定できます。
 
-で Microsoft 365 管理センターに移動します [https://admin.microsoft.com](https://admin.microsoft.com) 。
+[管理センター] Microsoft 365に移動します [https://admin.microsoft.com](https://admin.microsoft.com) 。
 
 ## <a name="edit-the-group-name-or-description"></a>グループ名または説明を編集する
 
@@ -56,15 +56,15 @@ ms.locfileid: "50908712"
   
 管理センターを使用してグループを作成する場合、既定では、ユーザーは受信トレイに送信されるグループメールと会議出席依頼のコピーを取得されません。 会話や会議を表示するには、グループに移動する必要があります。 管理センターでこの設定を変更できます。
 
-この設定を有効にすると、グループ メンバーは Outlook 受信トレイに送信されたグループメールと会議出席依頼のコピーを取得します。 各メンバーはメールのコピーを閲覧、削除することができますが、他のメンバーに影響を与えることはありません。 グループの受信トレイに、メールのコピーは引き続き存在します。
+この設定を有効にすると、グループ メンバーは、グループメールのコピーと、受信トレイに送信された会議出席依頼Outlookされます。 各メンバーはメールのコピーを閲覧、削除することができますが、他のメンバーに影響を与えることはありません。 グループの受信トレイに、メールのコピーは引き続き存在します。
 
-グループ メンバーは、Outlook でグループの実行を停止することを選択して、これらのメールの受信をオプトアウトできます。
+グループ メンバーは、グループ内のグループに従うのを停止することを選択して、これらのメールの受信をOutlook。
 
 1. 管理センターで、[グループ] を **展開し**、[グループ] を **クリックします**。
 
 2. 管理するグループの名前をクリックして、設定ウィンドウを開きます。
 
-3. [設定 **] タブ** で、メンバーが自分の受信トレイでグループ メッセージと予定表アイテムのコピーを受信する場合は、[グループ会話とイベントのコピーをグループ メンバーに送信する] を選択します。
+3. [グループ **メッセージ設定]** タブで、[グループの会話とイベントのコピーをグループ メンバーに送信する] を選択します。メンバーがグループ メッセージと予定表アイテムのコピーを自分の受信トレイで受信する場合。
 
 4. **[保存]** を選択します。
 
@@ -76,11 +76,11 @@ ms.locfileid: "50908712"
 
 2. 管理するグループの名前をクリックして、設定ウィンドウを開きます。
 
-3. 管理センター グループの一覧で、変更するグループの名前を選択し、[設定] タブで、[このグループにメールを送信する外部送信者を許可する]**を選択します**。
+3. 管理センター グループの一覧で、変更するグループの名前を選択し、[設定] タブ **で、[** このグループにメールを送信する外部送信者を許可する] を **選択します**。
     
 4. **[保存]** を選択します。
 
-## <a name="permanently-delete-a-microsoft-365-group"></a>Microsoft 365 グループを完全に削除する
+## <a name="permanently-delete-a-microsoft-365-group"></a>グループを完全Microsoft 365する
 
 30 日間のソフト削除期間の有効期限が切れるのを待たずに、グループを完全に削除する場合があります。 それを行うには、PowerShell を起動し、次のコマンドを実行して、グループのオブジェクト ID を取得します。
  
@@ -103,14 +103,14 @@ ms.locfileid: "50908712"
   
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft 365 グループの作成](create-groups.md)
+[グループをMicrosoft 365する](create-groups.md)
 
-[Microsoft 365 グループへのゲスト アクセスを管理する](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Microsoft 365 グループへのゲスト アクセスの管理](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Microsoft 365 グループの作成時に使用するドメインを選択する](../../solutions/choose-domain-to-create-groups.md)
+[グループの作成時に使用するドメインMicrosoft 365する](../../solutions/choose-domain-to-create-groups.md)
 
-[メンバーが Microsoft 365 グループの代理として送信または送信を許可する](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[メンバーがグループの代理として送信または送信Microsoft 365する](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
+[配布リストをグループにMicrosoft 365する](../manage/upgrade-distribution-lists.md)
 
-[PowerShell を使用して Microsoft 365 グループを管理する](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[PowerShell Microsoft 365グループを管理する](../../enterprise/manage-microsoft-365-groups-with-powershell.md)

@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint デバイスコントロールは、リムーバ
 
 ## <a name="monitor-device-control-security"></a>デバイス制御のセキュリティを監視する
 
-Microsoft Defender for Endpoint のデバイス制御により、セキュリティ管理者は、レポートを通じて組織のデバイス制御セキュリティを追跡できるツールを使用できます。 デバイス制御レポートは、Microsoft 365 セキュリティ センターで [デバイス保護のレポート] > **表示されます**。
+Microsoft Defender for Endpoint のデバイス制御により、セキュリティ管理者は、レポートを通じて組織のデバイス制御セキュリティを追跡できるツールを使用できます。 [デバイスの保護のレポート] にアクセスして、Microsoft 365セキュリティ センターでデバイス **制御レポート>確認できます**。
 
 [レポート] ダッシュボードの **[** デバイス保護] カードには、過去 180 日間にメディアの種類によって生成された監査イベントの数が表示されます。
 
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint のデバイス制御により、セキュリテ
 
 - **一般的な詳細:** 日付、アクション モード、およびこのイベントのポリシー。
 - **メディア情報:** メディア情報には、メディア名、クラス名、クラス GUID、デバイス ID、ベンダー ID、ボリューム、シリアル番号、バスの種類が含まれます。
-- **場所の詳細:** デバイス名と MDATP デバイス ID。
+- **場所の詳細:** デバイス名とMDATP ID。
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

@@ -1,5 +1,5 @@
 ---
-title: データ損失防止アラート ダッシュボードの使用を開始する
+title: データ損失防止の警告ダッシュボードを開始する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -27,9 +27,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/13/2021
 ms.locfileid: "51760769"
 ---
-# <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>データ損失防止アラート ダッシュボードの使用を開始する
+# <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>データ損失防止の警告ダッシュボードを開始する
 
-データ損失防止 (DLP) ポリシーは、機密アイテムの意図しない共有を防ぐための保護措置を取る場合があります。 機密性の高いアイテムに対してアクションが実行された場合は、DLP のアラートを構成することで通知を受け取る可能性があります。 この記事では、データ損失防止 (DLP) ポリシーにリンクされているリッチ アラート ポリシーを定義する方法について説明します。 [Microsoft 365](https://compliance.microsoft.com/)コンプライアンス センターの[DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)アラート管理ダッシュボードを使用して、DLP ポリシー違反のアラート、イベント、および関連するメタデータを表示する方法について説明します。
+データ損失防止 (DLP) ポリシーは、機密アイテムの意図しない共有を防ぐための保護措置を取る場合があります。 機密性の高いアイテムに対してアクションが実行された場合は、DLP のアラートを構成することで通知を受け取る可能性があります。 この記事では、データ損失防止 (DLP) ポリシーにリンクされているリッチ アラート ポリシーを定義する方法について説明します。 DLP ポリシー違反のアラート、イベント、および関連するメタデータを[](https://compliance.microsoft.com/)表示するには、Microsoft 365 コンプライアンス センターで[DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)アラート管理ダッシュボードを使用する方法について説明します。
 
 DLP アラートを使用する場合は、「データ損失防止アラート ダッシュボードについて [」を確認する必要があります。](dlp-alerts-dashboard-learn.md)
 
@@ -43,9 +43,9 @@ DLP アラートを使用する場合は、「データ損失防止アラート 
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP アラート管理ダッシュボードのライセンス
 
-365 DLP のOfficeテナントはすべて、DLP アラート管理ダッシュボードにアクセスできます。 開始するには、Exchange Online、SharePoint Online、および OneDrive for Business Office 365 DLP の対象となる必要があります。 Office 365 DLP のライセンス要件の詳細については、「どのライセンスがユーザーにサービスの恩恵を受ける権限を提供するのか」 [を参照してください](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
+DLP の対象となるテナントOffice 365 DLP アラート管理ダッシュボードにアクセスできます。 開始するには、オンライン、オンライン、およびOffice 365の DLP のExchange Online対象SharePoint必要OneDrive for Business。 OFFICE 365 DLP のライセンス要件の詳細については、「どのライセンスがユーザーにサービスの恩恵を受ける権利を提供するか」[を参照してください](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
 
-[Teams DLP](dlp-microsoft-teams.md)の対象[となるエンドポイント DLP](endpoint-dlp-learn-about.md)を使用しているお客様は、DLP アラート管理ダッシュボードにエンドポイント DLP ポリシーアラートと Teams DLP ポリシーアラートを表示します。
+Teams [DLP](dlp-microsoft-teams.md)の対象となるエンドポイント[DLP](endpoint-dlp-learn-about.md)を使用しているお客様は、DLP アラート管理ダッシュボードにエンドポイント DLP ポリシーアラートと Teams DLP ポリシーアラートを表示します。
 
 コンテンツ **プレビュー機能は** 、次のライセンスでのみ使用できます。
 
@@ -65,7 +65,7 @@ DLP アラートを使用する場合は、「データ損失防止アラート 
 - E1、F1、または G1 サブスクリプション、または次のいずれかの機能を含む E3 または G3 サブスクリプション。
     - Office 365 Advanced Threat Protection プラン 2
     - Microsoft 365 E5 Compliance 
-    - Microsoft 365 電子情報開示と監査アドオン ライセンス
+    - Microsoft 365証拠開示と監査アドオン ライセンス
 
 ### <a name="roles"></a>Roles
 
@@ -115,7 +115,7 @@ DLP ポリシーでアラートを構成する方法については、「デー�
 
 DLP アラート管理ダッシュボードを操作するには、次の操作を行います。
 
-1. Microsoft [365 コンプライアンス センターで、[](https://www.compliance.microsoft.com)データ損失防止 **] に移動します**。
+1. コンプライアンス センター [Microsoft 365、](https://www.compliance.microsoft.com)データ損失防止 **に移動します**。
 2. [アラート] **タブを** 選択して、DLP アラート ダッシュボードを表示します。
 3. アラートを選択して詳細を表示します。
 

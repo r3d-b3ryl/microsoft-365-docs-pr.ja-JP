@@ -1,5 +1,5 @@
 ---
-title: Office 365 エンドポイント
+title: Office 365のエンドポイント
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: この記事では、ドイツで 365 を使用しているお客様Officeエンドポイントについて説明します。
+description: この記事では、ドイツでサービスを使用しているお客様に対して到達可能Office 365説明します。
 hideEdit: true
 ms.openlocfilehash: 0d96300e77c67ac05ea18ab23d63c01d4f840dfb
 ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
@@ -31,11 +31,11 @@ ms.locfileid: "51759896"
 
  *適用対象: Office 365 Admin*
 
-Office 365 にはインターネットへの接続が必要です。 以下のエンドポイントは、ドイツの **365** プランのみを使用しているOfficeに到達できる必要があります。
+Office 365接続が必要な場合。 以下のエンドポイントは、ドイツのプランを使用しているお **客様Office 365アクセスできる** 必要があります。
 
 > [!NOTE]
-> ドイツの新しい Microsoft 365 データセンター地域に移行しているお客様の場合、エンドポイントは変更されます。
-> 詳細については [、「Microsoft Cloud Deutschland](ms-cloud-germany-transition.md)から新しいドイツのデータセンター地域Office 365 サービスへの移行」を参照してください。
+> ドイツのデータセンター地域の新しいデータ センター Microsoft 365移行中の顧客の場合、エンドポイントは変更されます。
+> 詳細については[、「Microsoft Cloud Deutschland](ms-cloud-germany-transition.md)から新しいドイツのデータセンター地域Office 365サービスへの移行」を参照してください。
   
  **Office 365 エンドポイント:** [(GCC を含む) 世界](urls-and-ip-address-ranges.md)  | [21Vianet が運営する Office 365](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 ドイツ* |  [Office 365 米国政府機関向け DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 米国政府 GCC 高](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
@@ -47,7 +47,7 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 以下のこのページに示されているデータはすべて、REST ベースの Web サービスから生成されています。 スクリプトまたはネットワーク デバイスを使用してこのデータにアクセスしている場合は、[Web サービス](microsoft-365-ip-web-service.md)に直接アクセスする必要があります。
 
-以下のエンドポイント データは、ユーザーのコンピューターから 365 への接続の要件Office示しています。 Microsoft から顧客ネットワークへのネットワーク接続 (ハイブリッドまたは受信ネットワーク接続とも呼ばれる) は含めではありません。
+以下のエンドポイント データは、ユーザーのコンピューターからコンピューターへの接続に関する要件Office 365。 Microsoft から顧客ネットワークへのネットワーク接続 (ハイブリッドまたは受信ネットワーク接続とも呼ばれる) は含めではありません。
 
 エンドポイントは 4 つのサービス領域にグループ分けされます。最初の 3 つのサービス領域は個別に接続の選択ができます。4 番目のサービス領域は共通の依存関係 ("Microsoft 365 Common および Office Online" と呼ばれる) で、常時ネットワーク接続されている必要があります。
 

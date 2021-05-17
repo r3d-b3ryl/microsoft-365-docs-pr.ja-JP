@@ -50,4 +50,4 @@ Defender for Endpoint では、高度な[](advanced-hunting-overview.md)ハン�
 ## <a name="related-topics"></a>関連項目
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [Azure Event Hubs のドキュメント](https://docs.microsoft.com/azure/event-hubs/)
-- [Azure ストレージ アカウントのドキュメント](https://docs.microsoft.com/azure/storage/common/storage-account-overview)
+- [Azure Storageアカウントのドキュメント](https://docs.microsoft.com/azure/storage/common/storage-account-overview)

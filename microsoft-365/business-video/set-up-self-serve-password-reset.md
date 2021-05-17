@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 Business Premium でユーザーが自分のパスワードをリセットする方法について説明します。
+description: ユーザーがパスワードをリセットする方法については、Microsoft 365 Business Premium。
 ms.openlocfilehash: 62f82f106327c5378310bac0d41fde8462449329
 ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
@@ -32,11 +32,11 @@ ms.locfileid: "51903708"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S?autoplay=false]
 
-ユーザーが自分のパスワードをリセットして、その度に連絡することなく行う場合は、Microsoft 365 Business Premium でセルフサービス パスワードのリセットを設定できます。
+ユーザーがユーザーに連絡を取らなくても自分のパスワードをリセットするには、ユーザーにセルフサービス パスワードのリセットを設定Microsoft 365 Business Premium。
 
 ## <a name="try-it"></a>お試しください!
 
-1. Microsoft 365 管理センターの左側のナビゲーション ウィンドウで、[設定] を選択し、[セキュリティ] &**します**。
+1. 管理センター Microsoft 365左側のナビゲーション ウィンドウで、[セキュリティ] を選択し、[セキュリティ] 設定 **プライバシーを&します**。
 1. [ **ユーザーが自分のパスワードをリセットする**] で **、[Azure ADを選択します**。
 1. 左側のナビゲーション ウィンドウで、[ **ユーザー**] を選択し、[ユーザー **-** すべてのユーザー] ページで、[パスワードのリセット] **を選択します**。
 1. [ **すべて] を** 選択してセルフサービス パスワードのリセットを有効にし、[保存] を **選択します**。

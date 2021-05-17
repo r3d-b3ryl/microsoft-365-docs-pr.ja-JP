@@ -28,13 +28,13 @@ ms.locfileid: "50909504"
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 管理センターの代わりに、PowerShell for Microsoft 365 を使用してセキュリティ グループを管理できます。 
+PowerShell を使用して、Microsoft 365管理センターの代わりにMicrosoft 365グループを管理できます。 
 
 この記事では、設定の一覧、作成、変更、およびセキュリティ グループの削除について説明します。 
 
 この記事のコマンド ブロックで変数値を指定する必要がある場合は、次の手順を使用します。
 
-1. コマンド ブロックをクリップボードにコピーし、メモ帳または PowerShell 統合スクリプト環境 (ISE) に貼り付けます。
+1. コマンド ブロックをクリップボードにコピーし、コマンド ブロックメモ帳 PowerShell 統合スクリプト環境 (ISE) に貼り付けます。
 2. 変数の値を入力し、"<" 文字と ">" 文字を削除します。
 3. PowerShell ウィンドウまたは PowerShell ISE でコマンドを実行します。
 
@@ -42,7 +42,7 @@ Microsoft 365 管理センターの代わりに、PowerShell for Microsoft 365 �
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 ### <a name="list-your-groups"></a>グループを一覧表示する
 
@@ -126,7 +126,7 @@ Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -e
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 ### <a name="list-your-groups"></a>グループを一覧表示する
 

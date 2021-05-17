@@ -129,10 +129,10 @@ Azure Virtual Network のプライベート IP アドレス空間は、仮想ネ
 |**必要な仮想マシンの数**|**必要なホスト ビット数**|**サブネットのサイズ**|
 |:-----|:-----|:-----|
 |1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4   <br/> |/28  <br/> |
-|12-27  <br/> |5   <br/> |/27  <br/> |
-|28-59  <br/> |6   <br/> |/26  <br/> |
-|60-123  <br/> |7   <br/> |/25  <br/> |
+|4-11  <br/> |4  <br/> |/28  <br/> |
+|12-27  <br/> |5  <br/> |/27  <br/> |
+|28-59  <br/> |6  <br/> |/26  <br/> |
+|60-123  <br/> |7  <br/> |/25  <br/> |
    
 ### <a name="planning-worksheet-for-configuring-your-azure-virtual-network"></a>Azure Virtual Network を構成するための計画ワークシート
 <a name="worksheet"> </a>
@@ -336,4 +336,4 @@ Azure で必要な仮想マシンを作成します。詳細については、�
   
 ## <a name="next-step"></a>次の手順
   
-[Microsoft Azure で Microsoft 365 ディレクトリ同期を展開する](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[ディレクトリMicrosoft 365を展開するMicrosoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

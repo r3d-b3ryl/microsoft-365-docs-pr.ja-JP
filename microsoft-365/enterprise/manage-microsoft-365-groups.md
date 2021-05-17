@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Microsoft 365 グループを管理する方法について説明します。
+description: グループを管理する方法Microsoft 365します。
 ms.openlocfilehash: 529bdb874661329497b103a1207b90625ad33a4b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,11 +33,11 @@ ms.locfileid: "50911009"
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-構成に応じて、さまざまな方法で Microsoft 365 グループを管理できます。 ユーザー アカウントは [、Microsoft 365](../admin/add-users/index.yml)管理センター、PowerShell、Active Directory ドメイン サービス (AD DS)、 [または Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)管理センターで管理できます。 
+構成に応じてMicrosoft 365グループを複数の方法で管理できます。 ユーザー アカウントは[、Microsoft 365](../admin/add-users/index.yml)管理センター、PowerShell、Active Directory ドメイン サービス (AD DS)、または Azure Active Directory [(Azure AD)](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)管理センターで管理できます。 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>グループを管理する場所と方法を計画する
 
-ユーザー アカウントを管理する場所と方法は、Microsoft 365 で使用する ID モデルによって異なります。 2 つの全体的なモデルは、クラウド専用とハイブリッドです。
+ユーザー アカウントを管理する場所と方法は、ユーザー アカウントに使用する id モデルによってMicrosoft 365。 2 つの全体的なモデルは、クラウド専用とハイブリッドです。
   
 ### <a name="cloud-only"></a>クラウド専用
 
@@ -49,7 +49,7 @@ ms.locfileid: "50911009"
     
 ### <a name="hybrid"></a>ハイブリッド
 
-AD DS グループは、AD DS から Microsoft 365 と同期されます。そのため、これらのグループを管理するには、オンプレミスの DS ADツールを使用する必要があります。
+AD DS グループは Microsoft 365 DS の AD と同期されます。そのため、これらのグループを管理するには、オンプレミスの DS AD ツールを使用する必要があります。
 
 また、DS グループとは別の Azure ADグループを作成および管理AD DS からのユーザーとグループを含ADすることもできます。 この場合、次のコマンドを使用できます。
 

@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
-description: Microsoft 365 のパフォーマンスを向上させる方法を示すトレーニング コース、ブログ、記事、その他のリソースへのリンク。
+description: トレーニング コース、ブログ Microsoft 365、記事、その他のリソースへのリンク。
 ms.openlocfilehash: 6e6e224eb1f08effeae6c6189f61699834897172
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,12 +26,12 @@ ms.locfileid: "50909348"
 ---
 # <a name="tune-microsoft-365-performance"></a>Microsoft 365 のパフォーマンスをチューニングする
 
-この記事では、Microsoft 365 のパフォーマンスを向上させる方法を説明するトレーニング コース、ブログ、記事、その他のリソースにリンクしています。
+この記事では、トレーニング コース、ブログ、記事、その他のリソースにリンクし、トレーニング のパフォーマンスを向上Microsoft 365。
   
-この記事は [、Microsoft 365](./network-planning-and-performance.md) プロジェクトのネットワーク計画とパフォーマンス調整の一部です。
+この記事は、プロジェクトのネットワーク[計画とパフォーマンスの調整Microsoft 365](./network-planning-and-performance.md)です。
    
-## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a>Microsoft 365 および 365 パフォーマンスのOfficeに関する記事
+## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a>パフォーマンスの微調整に関するMicrosoft 365とOffice 365記事
 
-Paul Collinge による [365](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) ネットワーク接続の最適化とトラブルシューティングに関するOffice 10 のヒントをご覧ください。 
+Paul Collinge によるネットワーク接続の最適化とトラブルシューティングに関するOffice 365 [10](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity)のヒントをご覧ください。 
   
-Microsoft 365 でネットワーク アドレス変換を使用する方法については [、「Microsoft 365 での NAT サポート」を参照してください](nat-support-with-microsoft-365.md)。
+ネットワーク アドレス変換とネットワーク アドレス変換を使用する方法Microsoft 365 NAT サポート with [Microsoft 365。](nat-support-with-microsoft-365.md)

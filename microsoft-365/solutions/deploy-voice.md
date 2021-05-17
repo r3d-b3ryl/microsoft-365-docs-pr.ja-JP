@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 での音声の展開
+title: 音声をネットワークに展開Microsoft 365
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -16,7 +16,7 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
-description: 組織に適切な Teams 音声ソリューションを選択して展開する方法について学習します。
+description: 組織に適切な音声ソリューションを選択Teams展開する方法について学習します。
 ms.openlocfilehash: ede8075767e9d0a80123ac742403f8a4d171392e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,13 +26,13 @@ ms.locfileid: "50918384"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>Teams 音声ソリューションを計画し展開する
 
-Teams 音声ソリューションを使用すると、組織内のユーザーが組織内外の両方で通話を行える。 完全な音声ソリューションは、Teams、Microsoft Phone System、および公衆交換電話網 (PSTN) に接続するためのオプションの選択肢で構成されます。
+音声Teamsを使用すると、組織内のユーザーが組織内外の両方で通話を行える。 完全な音声ソリューションは、Teams、Microsoft 電話、および公衆交換電話網 (PSTN) に接続するためのオプションの選択で構成されます。
 
-![Teams 音声ソリューションの概要](..\media\solutions-architecture-center\voice-concepts.png)
+![Teams音声ソリューションの概要](..\media\solutions-architecture-center\voice-concepts.png)
 
-電話システムは、組織に完全なプライベート ブランチ Exchange (PBX) 機能を提供します。 組織内のユーザー間の通話は、地理的な場所に関係なく、電話システム内で内部的に処理され、これらの内部通話の長距離コストが削減されます。  
+電話システム組織に完全なプライベート ブランチ Exchange (PBX) 機能を提供します。 組織内のユーザー間の呼び出し (地理的な場所に関係なく) は、電話システム 内で内部的に処理され、これらの内部通話の長距離コストが削減されます。  
 
-電話システムを公衆交換電話網 (PSTN) に接続すると、Teams ユーザーは組織外でも通話を発信できます。
+ユーザーは電話システム公衆交換電話網 (PSTN) に接続することで、ユーザー Teams組織外にも通話を発信できます。
 
 このソリューション ガイダンスは、次の場合に役立ちます。
 
@@ -49,9 +49,9 @@ Teams 音声ソリューションを使用すると、組織内のユーザー�
 
 3. 次のいずれかを選択するか、組み合わせて PSTN 接続をセットアップします。
    - [通話プラン](/microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) - MICROSOFT を PSTN キャリアとして使用する Microsoft のクラウド内すべてソリューション
-   - [ダイレクト ルーティング](/microsoftteams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) - 直接ルーティングを使用して独自の PSTN キャリアを Teams に接続する 
+   - [ダイレクト ルーティング](/microsoftteams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)- ダイレクト ルーティングを使用して、独自の PSTN キャリアを接続Teams 
 
-さらに、大規模な多国籍企業が Contoso のケース スタディで Teams 音声ソリューションに移行した方法について [説明します](/MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)。
+さらに、大規模な多国籍企業が Contoso のケース スタディで、Teams音声ソリューションに移行した方法について[説明します](/MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)。
 
 必要なライセンスの詳細については、以下を参照してください。
 

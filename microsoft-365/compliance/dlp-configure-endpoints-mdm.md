@@ -25,17 +25,17 @@ ms.locfileid: "50917993"
 
 **適用対象:**
 
-- [Microsoft 365 Endpoint データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
+- [Microsoft 365エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
 
-モバイル デバイス管理 (MDM) ソリューションを使用してデバイスを構成できます。 Microsoft 365 Endpoint データ損失防止は、デバイスを管理するためのポリシーをOMA-URIsする機能を提供することで、MDM をサポートします。
+モバイル デバイス管理 (MDM) ソリューションを使用してデバイスを構成できます。 Microsoft 365エンドポイント のデータ損失防止は、デバイスを管理するためのOMA-URIsを作成する機能を提供することで、MDM をサポートします。
 
 
 ## <a name="before-you-begin"></a>はじめに
-Microsoft Intune を使用している場合は、デバイス MDM が登録されている必要があります。 それ以外の場合、設定は正常に適用されません。 
+デバイスを使用している場合Microsoft Intune MDM が登録されている必要があります。 それ以外の場合、設定は正常に適用されません。 
 
-Microsoft Intune で MDM を有効にする方法の詳細については、「デバイス登録 [(Microsoft Intune)」を参照してください](/mem/intune/enrollment/device-enrollment)。
+MDM を有効にする方法の詳細については、「デバイスMicrosoft Intune [(Microsoft Intune) 」を参照してください](/mem/intune/enrollment/device-enrollment)。
 
-## <a name="onboard-devices-using-microsoft-intune"></a>Microsoft Intune を使用したオンボード デバイス
+## <a name="onboard-devices-using-microsoft-intune"></a>デバイスを使用したオンボード Microsoft Intune
 
 Intune の指示に [従います](/intune/advanced-threat-protection)。
 
@@ -51,21 +51,21 @@ Intune の指示に [従います](/intune/advanced-threat-protection)。
 
 1. Microsoft コンプライアンス センターからオフボード パッケージ [を取得します](https://compliance.microsoft.com/)。
 
-2. ナビゲーション ウィンドウで、[設定デバイスオン **ボーディング** オフボード]  >    >  **を選択します**。
+2. ナビゲーション ウィンドウで、[デバイスオンボーディング **設定**  >  **オフボード]**  >  **を選択します**。
 
-3. [展開 **方法] フィールドで** 、[ **モバイル デバイス管理] / [Microsoft Intune] を選択します**。
+3. [展開 **方法] フィールドで**、[**モバイル デバイスの管理/ 管理] を選択Microsoft Intune。**
     
-4. [パッケージ **のダウンロード]** をクリックし、.zip ファイルを保存します。
+4. [ **パッケージのダウンロード]** をクリックし、ファイルを.zipします。
 
-5. .zip ファイルの内容を、パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に展開します。 *"-MM-DD.offboarding DeviceCompliance_valid_until_YYYYという名前のファイルが必要です*。
+5. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 *"-MM-DD.offboarding DeviceCompliance_valid_until_YYYYという名前のファイルが必要です*。
 
-6. Microsoft Intune カスタム構成ポリシーを使用して、次のサポートされる OMA-URI 設定を展開します。
+6. 次のサポートMicrosoft Intune OMA-URI 設定を展開するには、次のカスタム構成ポリシーを使用します。
 
       OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding      
       日付の種類: 文字列      
       値: [ファイルのコンテンツから値をコピーして貼り付DeviceCompliance_valid_until_YYYY-MM-DD.offboarding ファイル]
 
-Microsoft Intune ポリシー設定の詳細については [、「Microsoft Intune の Windows 10 ポリシー設定」を参照してください](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)。
+ポリシー設定の詳細については、「Microsoft Intuneのポリシー設定[Windows 10」を参照Microsoft Intune。](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
 
 > [!NOTE]
 > オフ **ボードデバイスの正常性状態** ポリシーでは、読み取り専用プロパティが使用され、修復できません。
@@ -74,8 +74,8 @@ Microsoft Intune ポリシー設定の詳細については [、「Microsoft Int
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。
 
 ## <a name="related-topics"></a>関連項目
-- [グループ ポリシーを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-gp.md)
-- [Microsoft Endpoint Configuration Manager を使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-sccm.md)
+- [グループ ポリシー Windows 10デバイスのオンボード](dlp-configure-endpoints-gp.md)
+- [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](dlp-configure-endpoints-vdi.md)
-- [Microsoft Defender Advanced Threat Protection オンボーディングの問題のトラブルシューティング](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [オンボーディングMicrosoft Defender Advanced Threat Protectionのトラブルシューティング](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

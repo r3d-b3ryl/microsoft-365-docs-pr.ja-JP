@@ -45,7 +45,7 @@ ms.locfileid: "51893415"
  
 2.  調査する [必要があるコンピューターで](live-response.md#initiate-a-live-response-session-on-a-device) ライブ応答セッションを開始します。
 
-3.  [ライブラリ **にファイルをアップロードする] を選択します**。
+3.  [ライブラリ **アップロードファイルを選択します**。
 
     ![アップロード ファイルのイメージ](images/upload-file.png)
 

@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: PowerShell を使用して Microsoft 365 グループのメンバーシップを維持する方法について説明します。
+description: PowerShell を使用してグループ内のメンバーシップを維持するMicrosoft 365します。
 ms.openlocfilehash: 9696c9093ae6f24a2edaf544e80794bde45d18d1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,14 +29,14 @@ ms.locfileid: "50909576"
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 管理センターの代わりに、Microsoft 365 の PowerShell for Microsoft 365 を使用して、Microsoft 365 のセキュリティ グループ メンバーシップを維持できます。 
+PowerShell を管理センター Microsoft 365代わりに使用して、Microsoft 365のセキュリティ グループ メンバーシップを維持Microsoft 365。 
 
 >[!Note]
->[Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md) 管理センターで Microsoft 365 グループ メンバーシップを維持する方法について説明します。 その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
+>[管理センターでグループ Microsoft 365メンバーシップを維持](../admin/create-groups/add-or-remove-members-from-groups.md)するMicrosoft 365について学習します。 その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 ### <a name="add-or-remove-user-accounts-as-members-of-a-group"></a>グループのメンバーとしてユーザー アカウントを追加または削除する
 
@@ -74,7 +74,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>グループのメンバーとしてグループを追加または削除する
 
-セキュリティ グループには、他のグループをメンバーとして含めできます。 ただし、Microsoft 365 グループは使用できません。 このセクションには、セキュリティ グループのグループのみを追加または削除する PowerShell コマンドが含まれています。
+セキュリティ グループには、他のグループをメンバーとして含めできます。 Microsoft 365グループは使用できません。 このセクションには、セキュリティ グループのグループのみを追加または削除する PowerShell コマンドが含まれています。
 
 グループを表示名で追加するには、追加するグループの表示名と、メンバー グループを含むグループの表示名を入力し、PowerShell ウィンドウまたは PowerShell ISE でこれらのコマンドを実行します。
 
@@ -94,7 +94,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 
 ### <a name="add-or-remove-user-accounts-as-members-of-a-group"></a>グループのメンバーとしてユーザー アカウントを追加または削除する
@@ -133,7 +133,7 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayNa
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>グループのメンバーとしてグループを追加または削除する
 
-セキュリティ グループには、他のグループをメンバーとして含めできます。 ただし、Microsoft 365 グループは使用できません。 このセクションには、セキュリティ グループのグループのみを追加または削除する PowerShell コマンドが含まれています。
+セキュリティ グループには、他のグループをメンバーとして含めできます。 Microsoft 365グループは使用できません。 このセクションには、セキュリティ グループのグループのみを追加または削除する PowerShell コマンドが含まれています。
 
 グループを表示名で追加するには、追加するグループの表示名と、メンバー グループを含むグループの表示名を入力し、PowerShell ウィンドウまたは PowerShell ISE でこれらのコマンドを実行します。
 

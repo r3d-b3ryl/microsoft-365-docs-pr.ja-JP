@@ -35,9 +35,9 @@ ms.locfileid: "50909288"
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-2007 年 2007 Officeサービスを使用している場合は、これらのアプリケーションのサポートが終了しました。 Microsoft 365 から始まる Microsoft クラウドへの移行を検討してください。 この記事を開始点として使用して、オプションを確認し、アップグレードを計画します。
+2007 年 2007 Officeを使用している場合は、これらのアプリケーションのサポートが終了しました。 Microsoft クラウドへの移行を検討してください。このMicrosoft 365。 この記事を開始点として使用して、オプションを確認し、アップグレードを計画します。
       
-## <a name="office-2007-planning-roadmaps"></a>Office 2007 計画のロードマップ
+## <a name="office-2007-planning-roadmaps"></a>Office 2007 計画ロードマップ
   
 2007 年Officeサービスのサポートは終了しました。 次のロードマップは、今すぐアップグレードを計画するのに役立ちます。
 
@@ -60,7 +60,7 @@ Microsoft 製品のサポートが終了すると、次の機能が追加され�
 
 ## <a name="im-a-home-user-what-do-i-do"></a>私はホーム ユーザーです。 どうしたらよいでしょうか。
 
-自宅で 2007 Officeアプリケーションを使用している場合は、この情報を [参照してください](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
+自宅で 2007 Officeアプリケーションを使用している場合は、この情報を[参照してください](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
      
 ## <a name="related-topics"></a>関連項目
 

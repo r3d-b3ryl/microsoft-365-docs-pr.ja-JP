@@ -34,7 +34,7 @@ ms.locfileid: "51688971"
 
 >Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Microsoft Defender for Endpoint の Web 保護は [、Web](web-threat-protection.md) 脅威保護と Web コンテンツ フィルターで構成 [される機能です](web-content-filtering.md)。 Web 保護を使用すると、Web の脅威からデバイスを保護し、望ましくないコンテンツを規制できます。 Microsoft Defender セキュリティ センターで Web 保護レポートを見つけるには、Web 保護に関するレポート> **行います**。
+Microsoft Defender for Endpoint の Web 保護は [、Web](web-threat-protection.md) 脅威保護と Web コンテンツ フィルターで構成 [される機能です](web-content-filtering.md)。 Web 保護を使用すると、Web の脅威からデバイスを保護し、望ましくないコンテンツを規制できます。 Web 保護レポートは、Web 保護のレポートMicrosoft Defender セキュリティ センターにアクセスして、>**確認できます**。
 
 ![すべての Web 保護カードのイメージ](images/web-protection.png)
 

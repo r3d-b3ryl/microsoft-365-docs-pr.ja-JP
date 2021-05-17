@@ -49,7 +49,7 @@ ms.locfileid: "50915868"
 
 3. ユーザー メールボックスを選択します。 **[共有メールボックスに変換]** で **[変換]** を選択します。
 
-4. メールボックスが 50 GB より小さい場合は、ユーザー[](../manage/remove-licenses-from-users.md)からライセンスを削除し、支払いを停止できます。 ユーザーのアカウントを削除しない。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「Microsoft [365 から元従業員を削除する」を参照してください](../add-users/remove-former-employee.md)。
+4. メールボックスが 50 GB より小さい場合は、ユーザー[](../manage/remove-licenses-from-users.md)からライセンスを削除し、支払いを停止できます。 ユーザーのアカウントを削除しない。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「元[従業員を削除する」を参照Microsoft 365。](../add-users/remove-former-employee.md)
     
 > [!NOTE]
 > メールボックスの変換中にユーザーのパスワードをリセットする必要はありません。 ただし、パスワードがリセットされない場合、メールボックスの変換が終了した後も **元のユーザー名とパスワードは引き続き機能します**。
@@ -66,7 +66,7 @@ ms.locfileid: "50915868"
 
 1. [ユーザーのアカウントを復元](../add-users/restore-user.md)します。
 
-2. Microsoft 365 ライセンスが割り当てられているか確認します。
+2. ライセンスが割りMicrosoft 365ライセンスが割り当てられているか確認します。
 
 3. ユーザーのパスワードをリセットします。
     
@@ -93,14 +93,14 @@ ms.locfileid: "50915868"
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>ハイブリッド環境でユーザーのメールボックスを変換する
 
-Exchange ハイブリッド環境でユーザー メールボックスを共有メールボックスに変換する方法の詳細については、以下を参照してください。
+ハイブリッド環境でユーザー メールボックスを共有メールボックスに変換する方法のExchange参照してください。
 
- - [オンプレミスの Exchange 環境でリモート共有メールボックスを作成または変更するコマンドレット](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
- - [Exchange ハイブリッド展開でディレクトリ同期が実行された後、共有メールボックスが予期せずユーザー メールボックスに変換される](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ - [オンプレミスのユーザー環境でリモート共有メールボックスを作成または変更Exchangeコマンドレット](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
+ - [共有メールボックスは、ハイブリッド展開でディレクトリ同期を実行した後、予期Exchangeユーザー メールボックスに変換されます。](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]
-> 組織の管理または受信者の管理役割グループのメンバーである場合は、Exchange 管理シェルを使用して、ユーザー メールボックスをオンプレミスの共有メールボックスに変更できます。 たとえば、`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared` などです。
+> 組織の管理役割グループまたは受信者管理役割グループのメンバーである場合は、Exchange 管理シェルを使用して、ユーザー メールボックスをオンプレミスの共有メールボックスに変更できます。 たとえば、「 `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared` 」のように入力します。
 
 ## <a name="related-articles"></a>関連記事
 

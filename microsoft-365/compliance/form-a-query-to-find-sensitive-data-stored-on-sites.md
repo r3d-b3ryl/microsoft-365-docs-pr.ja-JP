@@ -16,7 +16,7 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: SharePoint Online のデータ損失防止 (DLP) を使用して、テナント全体に機密データを含むドキュメントを検出します。
+description: オンラインでデータ損失防止 (DLP) をSharePoint、テナント全体に機密データを含むドキュメントを検出します。
 ms.openlocfilehash: 9582974a26e0e112a6b3851494d057cad2010796
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.locfileid: "50906781"
 ユーザーのサイトには、クレジット カード番号、社会保障番号、個人の機密データが保存されることが多く、これが長期にわたると、組織が重大なデータ損失リスクにさらされる可能性があります。 サイトに保存されているドキュメント (OneDrive for Business サイトを含む) は、情報にアクセスできない組織外のユーザーと共有できます。 SharePoint Online のデータ損失防止 (DLP) を使用すると、テナント全体で機密データを含むドキュメントを検出できます。 そのドキュメントが見つかったら、ドキュメントの所有者と連携してデータを保護できます。 このトピックは、機密データを検索するクエリを形成するために役立ちます。
   
 > [!NOTE]
-> 電子検出、または電子情報開示、DLP は [、SharePoint Online プラン 2](https://go.microsoft.com/fwlink/?LinkId=510080)を必要とするプレミアム機能です。 
+> 電子的検出、または電子情報開示、DLP は、オンライン プラン 2 をSharePoint[プレミアム機能です](https://go.microsoft.com/fwlink/?LinkId=510080)。 
   
 ## <a name="forming-a-basic-dlp-query"></a>基本的な DLP クエリの形成
 
@@ -39,11 +39,11 @@ ms.locfileid: "50906781"
   
 ### <a name="sensitive-type---required"></a>機密情報の種類: 必須
 
-では、各部分はどのようなものですか。 SharePoint DLP クエリは、通常、機密情報の種類インベントリのプロパティと情報の種類の名前で始まり、で `SensitiveType:"` 終わりです[](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) `"` 。 また、組織用に [作成したカスタム](create-a-custom-sensitive-information-type.md) 機密情報の種類の名前を使用することもできます。 たとえば、クレジット カード番号が含まれているドキュメントを検索するとします。 このようなインスタンスでは、次の形式を使用します  `SensitiveType:"Credit Card Number"` 。 カウント範囲または信頼範囲を含めなかったため、クエリはクレジット カード番号が検出されたすべてのドキュメントを返します。 これは実行できる最も簡単なクエリであり、最も多くの結果を返します。 機密情報の種類のスペルと文字間隔は正確に入力する必要があります。 
+では、各部分はどのようなものですか。 SharePointDLP クエリは、通常、機密情報の種類インベントリのプロパティと情報の種類の名前で始まり、で `SensitiveType:"` 終わり[](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) `"` です。 また、組織用に [作成したカスタム](create-a-custom-sensitive-information-type.md) 機密情報の種類の名前を使用することもできます。 たとえば、クレジット カード番号が含まれているドキュメントを検索するとします。 このようなインスタンスでは、次の形式を使用します  `SensitiveType:"Credit Card Number"` 。 カウント範囲または信頼範囲を含めなかったため、クエリはクレジット カード番号が検出されたすべてのドキュメントを返します。 これは実行できる最も簡単なクエリであり、最も多くの結果を返します。 機密情報の種類のスペルと文字間隔は正確に入力する必要があります。 
   
 ### <a name="ranges---optional"></a>範囲: 省略可能
 
-次の 2 つの部分はどちらも範囲なので、範囲の外観をすばやく確認します。 SharePoint DLP クエリでは、基本的な範囲は 2 つの期間で区切られた 2 つの数値で表されます。これは次のように表示されます  `[number]..[number]` 。 たとえば、使用する  `10..20` 場合、その範囲は 10 ~ 20 の数値を取得します。 このトピックでは、さまざまな範囲の組み合わせといくつかの組み合わせについて説明します。 
+次の 2 つの部分はどちらも範囲なので、範囲の外観をすばやく確認します。 DLP SharePointでは、基本的な範囲は 2 つのピリオドで区切られた 2 つの数値で表されます。これは次のように表示されます `[number]..[number]` 。 たとえば、使用する  `10..20` 場合、その範囲は 10 ~ 20 の数値を取得します。 このトピックでは、さまざまな範囲の組み合わせといくつかの組み合わせについて説明します。 
   
 クエリにカウント範囲を追加します。 カウント範囲を使用して、クエリ結果に含める前にドキュメントに含める必要がある機密情報の発生回数を定義できます。 たとえば、正確に 5 つのクレジット カード番号を含むドキュメントのみをクエリで返す場合は、次の値を使用します  `SensitiveType:"Credit Card Number|5"` 。 カウント範囲は、リスクが高いドキュメントを識別するのにも役立ちます。 たとえば、組織では、5 つ以上のクレジット カード番号を持つドキュメントがリスクが高いと考える場合があります。 この条件に適合するドキュメントを見つけるには、次のクエリを使用します  `SensitiveType:"Credit Card Number|5.."` 。 または、次のクエリを使用して、クレジット カード番号が 5 つ以下のドキュメントを検索することもできます  `SensitiveType:"Credit Card Number|..5"` 。 
   
@@ -56,9 +56,9 @@ ms.locfileid: "50906781"
   
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>電子情報開示センターで使用できるその他のクエリ プロパティと検索演算子
 
-SharePoint の DLP では LastSensitiveContentScan プロパティも導入され、特定の時間枠内でスキャンされたファイルを検索するのに役立ちます。 プロパティのクエリ例については、次のセクションの「複雑なクエリの例 `LastSensitiveContentScan` 」を参照してください。 [](#examples-of-complex-queries) 
+また、SharePoint DLP では LastSensitiveContentScan プロパティも導入され、特定の時間枠内でスキャンされたファイルを検索するのに役立ちます。 プロパティのクエリ例については、次のセクションの「複雑なクエリの例 `LastSensitiveContentScan` 」を参照してください。 [](#examples-of-complex-queries) 
   
-DLP 固有のプロパティを使用してクエリを作成できるだけでなく、標準の SharePoint 電子情報開示検索プロパティ (またはなど) を  `Author` 作成することもできます  `FileExtension` 。 演算子を使用して、複雑なクエリを作成できます。 使用可能なプロパティと演算子の一覧については [、「Using Search Properties and Operators with eDiscovery blog post」を](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery) 参照してください。 
+DLP 固有のプロパティを使用してクエリを作成することもできますが、電子情報開示検索SharePointなどの標準のプロパティを作成 `Author` することもできます `FileExtension` 。 演算子を使用して、複雑なクエリを作成できます。 使用可能なプロパティと演算子の一覧については [、「Using Search Properties and Operators with eDiscovery blog post」を](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery) 参照してください。 
   
 ## <a name="examples-of-complex-queries"></a>例
 
@@ -74,7 +74,7 @@ DLP 固有のプロパティを使用してクエリを作成できるだけで�
    
 ## <a name="examples-of-queries-to-avoid"></a>例
 
-すべてのクエリが平等に作成されているわけではありません。 次の表に、SharePoint の DLP で動作しないクエリの例を示し、その理由について説明します。
+すべてのクエリが平等に作成されているわけではありません。 次の表に、DLP で動作しないクエリの例を示し、そのSharePoint説明します。
   
 |**サポートされていないクエリ**|**理由**|
 |:-----|:-----|

@@ -36,7 +36,7 @@ ms.locfileid: "51903684"
 
 ## <a name="try-it"></a>お試しください!
 
-1. Microsoft 365 管理センターで **、[Exchange]** **[メール** フロー]を選択し、[ルール] タブでプラス記号を選択し、[新しいルールの作成]**を選択します**。
+1. 管理センター Microsoft 365 、[メール フロー] Exchangeを選択し、[ルール] タブでプラス記号を選択し、[新しいルールの作成]**を選択します**。 
 1. [その **他のオプション] を選択します**。 新しいルールの名前を指定します。
 1. 次に、ドロップダウンを開いて、送信者を選択し、外部内部である場合にこのルール **を適用します**。
 1. [組織内 **] を選択し****、[OK] を選択します**。
@@ -50,4 +50,4 @@ ms.locfileid: "51903684"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーに](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) 別のメール エイリアスを追加する (記事) [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) でメール転送を構成する (記事) ビジネス管理者向け [Office 365](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) として電子メール配信の問題を検索して修正する (記事)
+[ユーザーに別](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user)のメール エイリアスを追加する (記事) [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding)でメール転送を構成する ([記事)](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues)ビジネス管理者向け Office 365 としてメール配信の問題を検索して修正する (記事)

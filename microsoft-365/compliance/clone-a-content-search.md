@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
-description: この記事の PowerShell スクリプトを使用して、コンプライアンス センターの既存のコンテンツ検索を Office 365 または Microsoft 365 ですばやく複製します。
+description: この記事の PowerShell スクリプトを使用して、コンプライアンス センターの既存のコンテンツ検索をすばやく複製Office 365またはMicrosoft 365。
 ms.openlocfilehash: c64cec2415819dc53f30c303c241e3902f34017d
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "50918063"
 ---
 # <a name="clone-a-content-search"></a>コンテンツ検索をコピーする
 
-Office 365 または Microsoft 365 のコンプライアンス センターで、多くのメールボックスまたは SharePoint および OneDrive for Business サイトを検索するコンテンツ検索を作成するには、しばらく時間がかかる場合があります。 URL を誤って入力すると、検索するサイトを指定すると、エラーが発生する可能性があります。 これらの問題を回避するには、この記事の Windows PowerShellスクリプトを使用して、既存のコンテンツ検索をすばやく複製できます。 検索を複製すると、元の検索と同じプロパティ (コンテンツの場所や検索クエリなど) を含む新しい検索 (名前が異なる) が作成されます。 次に、キーワード クエリまたは日付範囲を変更して新しい検索を編集し、実行できます。
+Office 365 または Microsoft 365 のコンプライアンス センターで、多くのメールボックスまたは SharePoint サイトと OneDrive for Business サイトを検索するコンテンツ検索を作成するには、しばらく時間がかかる場合があります。 URL を誤って入力すると、検索するサイトを指定すると、エラーが発生する可能性があります。 これらの問題を回避するには、この記事の Windows PowerShell スクリプトを使用して、既存のコンテンツ検索をすばやく複製できます。 検索を複製すると、元の検索と同じプロパティ (コンテンツの場所や検索クエリなど) を含む新しい検索 (名前が異なる) が作成されます。 次に、キーワード クエリまたは日付範囲を変更して新しい検索を編集し、実行できます。
   
 コンテンツ検索を複製する理由
   
@@ -53,7 +53,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターで�
 
 この手順のスクリプトでは、既存のコンテンツ検索を複製して新しいコンテンツ検索を作成します。 このスクリプトを実行すると、次の情報を求めるメッセージが表示されます。
   
-- **ユーザー資格情報** - スクリプトは資格情報を使用して、組織のセキュリティ & コンプライアンス センターに接続Windows PowerShell。 前に述べたように、スクリプトを実行するには、セキュリティ & compCompliance Center の電子情報開示マネージャー役割グループのメンバーである必要があります。 
+- **ユーザー資格情報**- スクリプトは、資格情報を使用して、組織のセキュリティ & コンプライアンス センターに接続Windows PowerShell。 前に述べたように、スクリプトを実行するには、セキュリティ & compCompliance Center の電子情報開示マネージャー役割グループのメンバーである必要があります。 
     
 - **既存の検索の名前** - 複製するコンテンツ検索です。 
     
@@ -61,7 +61,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターで�
     
 検索を複製するには、次の操作を行います。
   
-1. ファイル名のサフィックス .ps1 をWindows PowerShellして、次のテキストをスクリプト ファイルに保存します。たとえば、 `CloneSearch.ps1` .
+1. ファイル名のサフィックスを使用してWindows PowerShellスクリプト ファイルに次のテキストを保存.ps1。たとえば、 `CloneSearch.ps1` .
     
   ```powershell
   # This PowerShell script clones an existing content search in the Security &amp; Compliance Center.
@@ -121,7 +121,7 @@ Office 365 または Microsoft 365 のコンプライアンス センターで�
   }
   ```
 
-2. スクリプトWindows PowerShell開き、スクリプトを保存したフォルダーに移動します。
+2. [Windows PowerShellを開き、スクリプトを保存したフォルダーに移動します。
     
 3. スクリプトを実行します。例えば：
     

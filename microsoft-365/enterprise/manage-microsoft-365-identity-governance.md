@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 ID ガバナンスの管理
+title: ID ガバナンスMicrosoft 365管理する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Microsoft 365 ID ガバナンス機能の使い方について説明します。
+description: ID ガバナンス機能を使用するMicrosoft 365について説明します。
 ms.openlocfilehash: 6a97ca24c609724a2cab93feec9e90f25d3361e3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,11 +29,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50910956"
 ---
-# <a name="manage-microsoft-365-identity-governance"></a>Microsoft 365 ID ガバナンスの管理
+# <a name="manage-microsoft-365-identity-governance"></a>ID ガバナンスMicrosoft 365管理する
 
 Identity Governance とは、従業員の生産性を確保するのに重要な資産へのアクセスを保護、監視、監査することです。 たとえば、Identity Governance を使用すると、適切なユーザーが正しいリソースにアクセスできるようになり、時間の経過と共にアクセス権が変更されたかどうかを判断できます。
 
-詳細については、「Azure Active Directory の ID ガバナンスの概要[(Azure Active Directory)」を参照AD。](/azure/active-directory/governance/identity-governance-overview)
+詳細については、「この概要の ID[ガバナンス for Azure Active Directory (Azure AD) 」を参照してください](/azure/active-directory/governance/identity-governance-overview)。
 
 ## <a name="set-up-azure-ad-access-reviews"></a>Azure AD アクセス レビューを設定する
 
@@ -59,6 +59,6 @@ Wiht Azure AD、アクセス要求ワークフロー、アクセス割り当て�
 
 従業員は、自分の仕事を実行するために、さまざまなグループ、アプリケーション、およびサイトにアクセスする必要があります。 このアクセスの管理は、要件の変更、新しいアプリケーションの追加、またはユーザーが追加のアクセス権を必要とするために困難な場合があります。 他の組織と共同作業を行う場合、他の組織の誰が組織のリソースにアクセスする必要があるのか分からなかったり、外部のユーザーは組織が使用しているアプリケーション、グループ、またはサイトを知らない場合があります。
 
-Azure ADエンタイトルメント管理は、グループ、アプリケーション、および SharePoint サイトへのアクセスを内部および外部のユーザーに対して効率的に管理するのに役立ちます。
+Azure ADエンタイトルメント管理を使用すると、グループ、アプリケーション、および内部および外部のユーザー SharePointサイトへのアクセスを効率的に管理できます。
  
 詳細については、「Azure の権利管理 [の概要」AD参照してください](/azure/active-directory/governance/entitlement-management-overview)。

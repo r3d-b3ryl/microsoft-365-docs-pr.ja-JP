@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 試用版
+title: Microsoft Defender for Office 365試用版
 f1.keywords: ''
 ms.author: chrisda
 author: chrisda
@@ -17,7 +17,7 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
-description: 管理者は、Microsoft Defender for microsoft Defender for Office 365
+description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
 ms.openlocfilehash: ba01fa45ca9a4e2e5b3597378bf7ddafc8be3f56
 ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
@@ -25,27 +25,27 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/15/2021
 ms.locfileid: "51768748"
 ---
-# <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365 試用版
+# <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
-Microsoft Defender for Office 365 は、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによって生じ得る悪意のある脅威から組織を保護します。 Defender for Office 365 には次のものが含まれます。
+Microsoft Defender for Office 365、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによって組織が悪意のある脅威から保護します。 Defender for Office 365 には次のものが含まれます。
 
 - **脅威保護ポリシー**: 脅威保護ポリシーを定義して、組織に適切なレベルの保護を設定します。
-- **レポート**: リアルタイム レポートを表示して、組織内の 365 のパフォーマンスOffice Defender を監視します。
+- **レポート**: リアルタイム レポートを表示して、組織内のパフォーマンスOffice 365 Defender を監視します。
 - **脅威の調査および反応機能**: 最先端のツールを使用して、脅威を調査、把握、シミュレーション、および回避を行います。
 - **自動調査および対応機能**: 脅威の調査と軽減にかかる時間と労力を節約します。
 
-Office 365 試用版用の Microsoft Defender は、Office 365 の Defender の機能を試す最も簡単な方法であり、セットアップには 2 回のクリックしかかからない。 試用版のセットアップが完了すると、Office 365 プラン 1 とプラン 2 のすべての Defender 機能が組織内で最大 90 日間利用できます。
+Microsoft Defender for Office 365 試用版は、Office 365 用の Defender の機能を試す最も簡単な方法であり、セットアップには 2 回のクリックが必要です。 試用版のセットアップが完了すると、Office 365プラン 1 とプラン 2 のすべての Defender 機能が組織内で最大 90 日間利用できます。
 
 > [!NOTE]
 > この記事で説明されている自動構成は現在パブリック プレビューに含まれるので、現在の場所では使用できない場合があります。
 
 ## <a name="terms-and-conditions"></a>使用条件
 
-Defender for Office 365 試用版は 90 日間利用可能で、すべてのユーザーに対して開始できます。 詳細については [、「Microsoft Defender for Office 365 試用版&を参照してください](defender-for-office-365-trial-terms-and-conditions.md)。
+Defender for Office 365試用版は 90 日間利用可能で、すべてのユーザーに対して開始できます。 詳細については[、「Microsoft Defender for Office 365試用版&を参照してください](defender-for-office-365-trial-terms-and-conditions.md)。
 
-## <a name="set-up-a-defender-for-office-365-trial"></a>365 試用版用に Defender をOfficeする
+## <a name="set-up-a-defender-for-office-365-trial"></a>試用版用に Defender をOffice 365する
 
-試用版を使用すると、組織は 365 の機能に合Office設定および構成できます。 セットアップ中に、Office 365 の Defender 専用のポリシー (具体的には[](safe-attachments.md)、安全な[](safe-links.md)添付ファイル、セーフ リンク、スパム対策ポリシーでの偽装[保護)](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)は、事前設定されたセキュリティ[](preset-security-policies.md)ポリシー用の標準テンプレートを使用して適用されます。
+試用版を使用すると、組織は簡単に Defender を設定し、その機能をOffice 365できます。 セットアップ中に、Office 365 の Defender 専用のポリシー (具体的には[、セーフ 添付](safe-attachments.md)ファイル[、セーフ リンク](safe-links.md)、スパム対策ポリシーの偽装[保護)](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)は、事前設定されたセキュリティ ポリシー用の標準テンプレートを使用して[適用](preset-security-policies.md)されます。
 
 既定では、これらのポリシーは組織内のすべてのユーザーを対象としますが、管理者はセットアップ中またはセットアップ後にポリシーをカスタマイズして、特定のユーザーにのみ適用できます。
 
@@ -53,11 +53,11 @@ Defender for Office 365 試用版は 90 日間利用可能で、すべてのユ�
 
 ## <a name="licensing"></a>ライセンス
 
-試用版のセットアップの一環として、365 ライセンスOffice Defender が組織に自動的に適用されます。 ライセンスは、最初の 90 日間は無料です。
+試用版のセットアップの一環として、ライセンスOffice 365 Defender が組織に自動的に適用されます。 ライセンスは、最初の 90 日間は無料です。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 
-試用版を開始または終了するには、Azure Active Directory のグローバル管理者またはセキュリティ管理者の役割のメンバーである必要があります。 詳細については、「管理役割 [について」を参照してください](../../admin/add-users/about-admin-roles.md)。
+試用版を開始または終了するには、グローバル管理者またはセキュリティ管理者の役割のメンバーである必要Azure Active Directory。 詳細については、「管理役割 [について」を参照してください](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="additional-information"></a>追加情報
 
@@ -67,21 +67,21 @@ Defender for Office 365 試用版は 90 日間利用可能で、すべてのユ�
 
 ## <a name="availability"></a>可用性
 
-Office 365 の Defender 試用版は、特定の条件 (地域を含む) を満たし、Office 365 プラン 1 またはプラン 2 ライセンス (サブスクリプションまたはアドオンとして含まれる) の既存の Defender を持つ既存の顧客に徐々に展開されています。
+Office 365 の Defender 試用版は、特定の条件 (地域を含む) を満たす既存の顧客と、Office 365 プラン 1 またはプラン 2 ライセンス (サブスクリプションまたはアドオンに含まれる) の既存の Defender を持つユーザーに徐々に展開されています。
 
-## <a name="learn-more-about-defender-for-office-365"></a>Defender for Office 365 の詳細
+## <a name="learn-more-about-defender-for-office-365"></a>Defender for Office 365
 
-Defender for Office 365 は、組織が包括的な機能を提供することで企業をセキュリティで保護するのに役立ちます。
+Defender for Office 365機能の包括的なスレートを提供することで、組織が企業をセキュリティで保護するのに役立ちます。
 
-Defender for Office 365 の詳細については、この対話型ガイド [を参照してください](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189)。
+Defender for Office 365については、この対話型ガイドを[参照してください](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189)。
 
-![Microsoft Defender for Office 365 概念図](../../media/microsoft-defender-for-office-365.png)
+![Microsoft Defender for Office 365概念図](../../media/microsoft-defender-for-office-365.png)
 
 ### <a name="prevention"></a>予防
 
 堅牢なフィルター スタックにより、ビジネス メールの侵害、資格情報フィッシング、ランサムウェア、高度なマルウェアなど、さまざまなボリューム ベースの標的型攻撃を防止できます。
 
-- [フィッシング対策ポリシー: 365 の Defender Office設定](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+- [フィッシング対策ポリシー: Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 - [添付ファイル保護](safe-attachments.md)
 - [リンク保護](safe-links.md)
 
@@ -89,14 +89,14 @@ Defender for Office 365 の詳細については、この対話型ガイド [を
 
 業界をリードする AI は、悪意のあるコンテンツや疑わしいコンテンツを検出し、攻撃パターンを関連付け、保護を回避するために設計されたキャンペーンを特定します。
 
-- [Microsoft Defender for microsoft Defender for Office 365](campaigns.md)
+- [Microsoft Defender のキャンペーン ビュー (Office 365](campaigns.md)
 
 ### <a name="investigation-and-hunting"></a>調査と狩猟
 
-強力なエクスペリエンスは、脅威の特定、優先順位付け、および調査に役立ち、高度な狩猟機能を使用して、365 全体の攻撃Officeできます。
+強力なエクスペリエンスは、脅威の特定、優先順位付け、および調査に役立ち、高度な狩猟機能を使用して、攻撃を追跡Office 365。
 
 - [脅威エクスプローラーとリアルタイム検出](threat-explorer.md)
-- [Defender for Office 365 のリアルタイム レポート](view-reports-for-mdo.md)
+- [Defender for Office 365](view-reports-for-mdo.md)
 - [脅威トラッカー - 新機能とNoteworthy 機能 ](threat-trackers.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md) との統合
 
@@ -116,8 +116,8 @@ Defender for Office 365 の詳細については、この対話型ガイド [を
 
 推奨されるテンプレートと構成に関する分析情報は、お客様が安全にアクセスし、安全を確保するのに役立ちます。
 
-- [EOP および Microsoft Defender の 365 用に事前設定Officeポリシー](preset-security-policies.md)
-- EOP および Microsoft Defender の保護ポリシー用の構成[アナライザー (Office 365)](configuration-analyzer-for-security-policies.md)
+- [EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365](preset-security-policies.md)
+- [EOP および Microsoft Defender の保護](configuration-analyzer-for-security-policies.md)ポリシー用の構成Office 365。
 
 ## <a name="give-feedback"></a>フィードバックを送信
 

@@ -1,7 +1,7 @@
 ---
 title: Windows 10 デバイスのオンボード ツールと各種方法
-description: センサー データを Microsoft Defender for Endpoint センサーに送信できるよう、Windows 10 デバイスをオンボードする
-keywords: オンボード Windows 10 デバイス、グループ ポリシー、エンドポイント構成マネージャー、モバイル デバイス管理、ローカル スクリプト、gp、sccm、mdm、intune
+description: オンボード Windows 10デバイスを使用して、センサー データを Microsoft Defender for Endpoint センサーに送信できます。
+keywords: オンボード Windows 10、グループ ポリシー、エンドポイント構成マネージャー、モバイル デバイス管理、ローカル スクリプト、gp、sccm、mdm、intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -30,8 +30,8 @@ ms.locfileid: "51892831"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Microsoft 365 Endpoint データ損失防止 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [Microsoft 365 Insider リスク管理](/microsoft-365/compliance/insider-risk-management)
+- [Microsoft 365エンドポイント データ損失防止 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365Insider リスク管理](/microsoft-365/compliance/insider-risk-management)
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -47,9 +47,9 @@ Defender for Endpoint サービスがセンサー データを取得できるよ
 ## <a name="in-this-section"></a>このセクションの内容
 トピック | 説明
 :---|:---
-[グループ ポリシーを使用した Windows 10 デバイスのオンボード](configure-endpoints-gp.md) | グループ ポリシーを使用して、構成パッケージをデバイスに展開します。
-[Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md) | デバイスに構成パッケージを展開するには、Microsoft Endpoint Manager (現在のブランチ) バージョン 1606 または Microsoft Endpoint Manager (現在のブランチ) バージョン 1602 以前を使用できます。
-[モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md) | デバイスに構成パッケージを展開するには、モバイル デバイス管理ツールまたは Microsoft Intune を使用します。
+[グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md) | グループ ポリシーを使用して、構成パッケージをデバイスに展開します。
+[デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md) | Microsoft エンドポイント マネージャー (現在のブランチ) バージョン 1606 または Microsoft エンドポイント マネージャー (現在のブランチ) バージョン 1602 以前を使用して、デバイスに構成パッケージを展開できます。
+[モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md) | デバイスに構成パッケージを展開するには、Microsoft Intune管理ツールまたはモバイル デバイス管理ツールを使用します。
 [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md) | ローカル スクリプトを使用してエンドポイントに構成パッケージを展開する方法について説明します。
 [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md) | 構成パッケージを使用して VDI デバイスを構成する方法について説明します。
 

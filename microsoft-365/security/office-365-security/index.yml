@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft Defender for Office 365 ドキュメント
-summary: メールとコラボレーション ツールの保護を強化するために、Defender for Office 365 の堅牢なセキュリティ ソリューションについて学習します。
+title: Microsoft Defender のOffice 365ドキュメント
+summary: メールとコラボレーション ツールをよりよく保護するために、Defender for Office 365の堅牢なセキュリティ ソリューションについて学習します。
 metadata:
-  title: Microsoft Defender for Office 365 セキュリティ ドキュメント
-  description: メールとコラボレーション ツールの保護を強化するために、Defender for Office 365 の堅牢なセキュリティ ソリューションについて学習します。
+  title: Microsoft Defender for Office 365ドキュメント
+  description: メールとコラボレーション ツールをよりよく保護するために、Defender for Office 365の堅牢なセキュリティ ソリューションについて学習します。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -26,7 +26,7 @@ landingContent:
     links:
     - text: Office 365 セキュリティの概要
       url: overview.md
-    - text: EOP および Defender で 365 用に事前設定されたセキュリティ ポリシー Officeする
+    - text: EOP および Defender で事前設定されたセキュリティ ポリシーを使用してセットアップOffice 365
       url: preset-security-policies.md
 - title: Defender for Office 365
   linkLists:
@@ -34,7 +34,7 @@ landingContent:
     links:
     - text: 脅威から保護する
       url: protect-against-threats.md
-    - text: EOP および Microsoft Defender の 365 用に事前設定Officeポリシー
+    - text: EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
       url: preset-security-policies.md
     - text: Microsoft Defender for Office 365 の新機能
       url: whats-new-in-defender-for-office-365.md
@@ -44,7 +44,7 @@ landingContent:
     links:
     - text: Defender for Office 365 の評価
       url: office-365-evaluation.md
-    - text: Exchange Online Protection に切り替える
+    - text: '[ユーザーに切り替Exchange Online Protection'
       url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
 - title: 電子メール認証保護のセットアップ
   linkLists:
@@ -62,7 +62,7 @@ landingContent:
     links:
     - text: Exchange Online Protection の概要
       url: exchange-online-protection-overview.md
-    - text: セットアップ用の EOP および Microsoft Defender Office 365 セキュリティの推奨設定
+    - text: EOP と Microsoft Defender のセットアップOffice 365セキュリティに関する推奨設定
       url: recommended-settings-for-eop-and-office365.md
 - title: 防止
   linkLists:
@@ -70,7 +70,7 @@ landingContent:
     links:
     - text: 'セキュリティ強化のために、Office 365 テナントを構成する '
       url: tenant-wide-setup-for-increased-security.md
-    - text: EOP および Defender の構成アナライザー (Office 365)
+    - text: EOP および Defender の構成アナライザー (Office 365
       url: configuration-analyzer-for-security-policies.md
     - text: 攻撃シミュレーション トレーニングを通して洞察を得る
       url: attack-simulation-training-insights.md
@@ -90,11 +90,11 @@ landingContent:
     links:
     - text: 脅威エクスプローラーのビューとリアルタイム検出
       url: threat-explorer-views.md
-    - text: Microsoft Defender for microsoft Defender for Office 365
+    - text: Microsoft Defender のキャンペーン ビュー (Office 365
       url: campaigns.md
-    - text: 365 で配信された悪意のあるOfficeする
+    - text: メールで配信された悪意のあるメールをOffice 365
       url: investigate-malicious-email-that-was-delivered.md
-    - text: 365 レポートOffice Defender を表示する
+    - text: レポートの Defender の表示Office 365する
       url: view-reports-for-mdo.md
 - title: EOP で調査する
   linkLists:
@@ -108,11 +108,11 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 365 で配信された悪意のあるOffice修復する
+    - text: メールで配信される悪意のある電子メールを修復Office 365
       url: remediate-malicious-email-delivered-office-365.md
     - text: 侵害されたメール アカウントに対応する
       url: responding-to-a-compromised-email-account.md
-    - text: Outlook ルールとカスタム フォームインジェクション攻撃の修復
+    - text: カスタム Outlookおよびカスタム フォームインジェクション攻撃の修復
       url: detect-and-remediate-outlook-rules-forms-attack.md
     - text: False Positives/False Negatives の送信
       url: admin-submission.md
@@ -120,9 +120,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 365 の Defender での自動調査と応答 (AIR) のOffice方法
+    - text: Defender での自動調査と応答 (AIR) の動作Office 365
       url: automated-investigation-response-office.md
-    - text: 365 用 Defender の AIR のOfficeする
+    - text: はじめに Defender で AIR を使用Office 365
       url: office-365-air.md
     - text: AIR で侵害されたユーザー アカウントに対処する
       url: address-compromised-users-quickly.md

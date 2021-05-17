@@ -1,6 +1,6 @@
 ---
 title: 準拠
-description: この記事では、Microsoft Managed Desktop に関連するコンプライアンス基準の一覧を示します。
+description: この記事では、ユーザーに関連するコンプライアンスMicrosoft マネージド デスクトップ。
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -18,11 +18,11 @@ ms.locfileid: "50918432"
 ---
 # <a name="compliance"></a>コンプライアンス
 
-Microsoft Managed Desktop を使用する場合、Microsoft はコンプライアンスに関する包括的な一連のサービスを提供します。 この取り組みにより、組織はさまざまなコンプライアンス要件に準拠できます。
+Microsoft は、Microsoft マネージド デスクトップを使用すると、コンプライアンスに関する包括的な一連のサービスを提供します。 この取り組みにより、組織はさまざまなコンプライアンス要件に準拠できます。
 
 ## <a name="compliance-coverage"></a>コンプライアンス範囲
 
-Microsoft Managed Desktop は、次の認定を取得しました。
+Microsoft マネージド デスクトップは、次の認定を取得しています。
 
 - [ISO 27001 情報セキュリティ管理標準 (ISMS)](/compliance/regulatory/offering-ISO-27001)
 - [ISO 27701 プライバシー情報管理システム (PIMS)](/compliance/regulatory/offering-iso-27701)
@@ -42,10 +42,10 @@ Microsoft Managed Desktop は、次の認定を取得しました。
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>監査レポートとコンプライアンス証明書
 
-Microsoft Cloud Service 製品に関するこのような情報の中央リポジトリであるサービス信頼ポータル [(STP)](https://servicetrust.microsoft.com/)では、制御要件や技術的要件を含む関連情報を確認できます。 監査レポート、コンプライアンス証明書などについては、STP の [監査レポート] [セクションから](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) ダウンロードできます。
+管理要件や技術要件などの関連情報は、サービス信頼ポータル[(STP)](https://servicetrust.microsoft.com/)で、サービスサービスに関するそのような情報の中央リポジトリMicrosoft Cloud Serviceできます。 監査レポート、コンプライアンス証明書などについては、STP の [監査レポート] [セクションから](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) ダウンロードできます。
 
 > [!NOTE]
-> Microsoft Managed Desktop は Azure 上で実行されるので、関連するドキュメントには通常、"Microsoft Azure、Dynamics 365、その他のオンライン サービス" などのファイル名があります。 これらのドキュメントでは、通常、カテゴリ "Microsoft Online Services" または "監視 + 管理" の下に Microsoft Managed Desktop があります。
+> Azure Microsoft マネージド デスクトップ実行される場合、関連するドキュメントには通常、"Microsoft Azure、Dynamics 365、その他のオンライン サービス" などのファイル名があります。 これらのドキュメントでは、通常、カテゴリ "Microsoft マネージド デスクトップ" または "監視 + 管理" のMicrosoft Online Servicesを検索できます。
 
 ## <a name="shared-responsibility"></a>共有責任
 

@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
-description: 削除された Microsoft 365 グループを復元する方法について説明します。
+description: 削除されたグループを復元するMicrosoft 365します。
 ms.openlocfilehash: f3b6435d82d5beddf44f5920011b076b39c7dcd5
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,13 +33,13 @@ ms.locfileid: "50910548"
 
 グループを復元すると、次のコンテンツが復元されます。
   
-- Azure Active Directory (AD) Microsoft 365 Groups オブジェクト、プロパティ、およびメンバー。
+- Azure Active Directory (AD) Microsoft 365 Groups オブジェクト、プロパティ、およびメンバーを指定します。
     
 - グループの電子メール アドレス。
     
-- Exchange Online 共有受信トレイと予定表。
+- Exchange Online受信トレイと予定表を共有します。
     
-- SharePoint Online チーム サイトとファイル。
+- SharePointオンライン チーム サイトとファイル。
     
 - OneNote ノートブック
     
@@ -47,16 +47,16 @@ ms.locfileid: "50910548"
     
 - Teams
 
-- Yammerグループおよびグループ コンテンツ (Microsoft 365 グループがグループから作成されたYammer)
+- Yammerグループとグループ のコンテンツ (Microsoft 365グループがグループから作成されたYammer)
 
 > [!NOTE]
-> この記事では、Microsoft 365 グループのみを復元する方法について説明します。 他のすべてのグループは、一度削除すると復元できません。
+> この記事では、グループの復元Microsoft 365説明します。 他のすべてのグループは、一度削除すると復元できません。
 
 ## <a name="restore-a-group"></a>グループの復元
 
 # <a name="outlook"></a>[Outlook](#tab/outlook)
 
-Microsoft 365 グループの所有者である場合は、次の手順に従って Outlook on the web でグループを自分で復元できます。
+ユーザーがグループグループの所有者Microsoft 365、次の手順に従って、Outlookでグループを復元できます。
 
 1. [削除された [グループ] ページで、[](https://outlook.office.com/people/group/deleted)グループ] ノードの **[** グループの管理] オプションを選択し、[削除済み]**を選択します**。
 
@@ -66,7 +66,7 @@ Microsoft 365 グループの所有者である場合は、次の手順に従っ
 
 # <a name="admin-center"></a>[管理センター](#tab/admin-center)
 
-グローバル管理者またはグループ管理者の場合は、Microsoft 365 管理センターで削除されたグループを復元できます。
+グローバル管理者またはグループ管理者の場合は、管理センターで削除されたグループMicrosoft 365できます。
 
 1. [管理センター](https://admin.microsoft.com)にアクセスします。
 2. [グループ **] を展開** し、[削除済 **みグループ] をクリックします**。
@@ -77,13 +77,13 @@ Microsoft 365 グループの所有者である場合は、次の手順に従っ
 
 ---
 
-## <a name="got-questions-about-microsoft-365-groups"></a>Microsoft 365 グループについて質問がありますか?
+## <a name="got-questions-about-microsoft-365-groups"></a>グループに関する質問Microsoft 365しましたか?
 
-Microsoft Tech [Community にアクセスして質問](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) を投稿し、Microsoft 365 グループに関する会話に参加します。 
+質問を[投稿し、Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups)グループに関する会話に参加するには、Microsoft Tech Microsoft 365をご覧ください。 
   
 ## <a name="related-articles"></a>関連記事
 
-[PowerShell を使用して Microsoft 365 グループを管理する](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[PowerShell Microsoft 365グループを管理する](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
   
 [Remove-UnifiedGroup コマンドレットを使用してグループを削除する](/powershell/module/exchange/remove-unifiedgroup)
   

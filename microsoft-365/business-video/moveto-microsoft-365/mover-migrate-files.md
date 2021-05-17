@@ -1,5 +1,5 @@
 ---
-title: 'ビジネス向け Microsoft 365 に Google ファイルを移行する '
+title: 'Google ファイルをビジネス向Microsoft 365に移行する '
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Mover を使用して、ビジネス向け Microsoft 365 に Google ファイルを移行する方法について説明します。
+description: Mover を使用して Google ファイルをビジネス向Microsoft 365移行する方法について説明します。
 ms.openlocfilehash: 6feabff7e36e84f7dba56e74333648325cf43920
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,20 +28,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50913576"
 ---
-# <a name="migrate-google-files-to-microsoft-365-for-business"></a>ビジネス向け Microsoft 365 に Google ファイルを移行する 
+# <a name="migrate-google-files-to-microsoft-365-for-business"></a>Google ファイルをビジネス向Microsoft 365に移行する 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
-ビジネス向け Microsoft 365 に移行する場合は、Google ドライブからファイルを移行する必要があります。 Mover アプリを使用して、個人用ドライブと共有ドライブからファイルを移動できます。 詳細については [、「Mover Cloud Migration」を参照してください](/sharepointmigration/mover-plan-migration)。
+ビジネス向けMicrosoft 365に移動する場合は、ファイルを移行する必要Google ドライブ。 Mover アプリを使用して、個人用ドライブと共有ドライブからファイルを移動できます。 詳細については [、「Mover Cloud Migration」を参照してください](/sharepointmigration/mover-plan-migration)。
 
 > [!NOTE]
-> Mover はファイルのコピーを作成し、そのコピーをビジネス向け Microsoft 365 に移動します。 元のファイルは Google ドライブにも保存されます。
+> Mover はファイルのコピーを作成し、そのコピーをビジネス向Microsoft 365移動します。 元のファイルは Google ドライブにも保存されます。
 
 ## <a name="before-you-start"></a>始める前に
 
-すべてのユーザーがビジネス向け Microsoft 365 にサインインし、OneDrive for Business をセットアップしている必要があります。 これを行うには、[ビジネス資格情報[](https://office.com)office.com Microsoft 365 でサインインし、[OneDrive] を選択します。
+すべてのユーザーが、ビジネス向け Microsoft 365にサインインし、そのユーザーのOneDrive for Business。 これを行うには、[office.com][に移動](https://office.com)し、Microsoft 365資格情報を使用してサインインし、[OneDrive] を選択します。
 
-## <a name="try-it"></a>演習
+## <a name="try-it"></a>お試しください!
 
 ### <a name="install-mover"></a>Mover のインストール
 
@@ -66,21 +66,21 @@ ms.locfileid: "50913576"
 
     Mover には、検出されたチーム ドライブとユーザー ドライブの数が表示されます。 
 
-1. [ **宛先の選択] で**、[新 **しい** コネクタの承認] を選択し、[Office **365]** を見つけて、[承認] を **選択します**。
-1. Azure Active Directory の Mover アプリにアクセス許可を付与するには、次のページ[に aka.ms/Office365MoverAuth。](https://aka.ms/Office365MoverAuth)
-1. [Office **365 Mover**, **Permissions**, Grant **admin consent** for your company .
+1. [**宛先の選択] で**、[新しい **コネクタの承認]** を選択し、[Office 365]**を探し、[** 承認] を **選択します**。
+1. アプリ内の Mover アプリにアクセス許可を付与するにはAzure Active Directory[に移動](https://aka.ms/Office365MoverAuth)aka.ms/Office365MoverAuth。
+1. **[Office 365] [権限]** を選択 **し、****会社の管理者の同意を付与します**。
 1. アカウントを選択し、アクセス許可を確認し、[同意する] を **選択します**。
 1. [プロパティ **] を** 選択し、[ユーザーの **割り当てが必要か]** がオンになっていることを確認します。
 1. Mover アプリに戻り、表示 **名を変更** します 。必要に応じ、[ **承認**] を選択し、Microsoft 管理者アカウントを選択します。
 
-    Mover は、SharePoint Online (または SPO) サイトの数と検出されたユーザーについて通知します。
+    Mover は、オンライン (または SPO) サイトSharePoint検出されたユーザーの数について通知します。
 1. [ **移行セットアップの続行] を** 選択し、[ **ユーザーの追加] 、[** ユーザー **の自動検出と追加] の順に選択します**。
 
-    Mover アプリは、Google のソース パスから Microsoft 365 の移行先パスにドライブをマップします。 
+    Mover アプリは、Google のソース パスから移行先パスにドライブをマップMicrosoft 365。 
 
-    ドライブが自動的にマップしない場合は、移行先のパスを CSV ファイルに追加します。これは後で共有ドライブを SharePoint ドキュメント ライブラリに移行するために使用します。 
+    ドライブが自動的にマップしない場合は、移行先のパスを CSV ファイルに追加します。このパスは、後で共有ドライブを別のドキュメント ライブラリに移行SharePointします。 
 
-1. この場合、移行済みファイルという SharePoint サイトが追加され、ドキュメント ページの URL がメモされます。 
+1. この場合、移行済みファイルというSharePointサイトが追加され、ドキュメント ページの URL がメモされます。 
 1. 次に、ソース パス、宛先パス、およびタグの形式を使用して CSV ファイルを作成しました。 
 
     詳細については、「aka.ms/movercsv」 [を参照してください](/sharepointmigration/mover-create-migration-csv)。
