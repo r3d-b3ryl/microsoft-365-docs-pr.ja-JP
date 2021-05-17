@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender のキャンペーン ビュー for Office 365 プラン
+title: Microsoft Defender のキャンペーン ビュー for Office 365プラン
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,7 +16,7 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft Defender for Office 365 のキャンペーン ビューについて説明します。
+description: 詳細については、「Microsoft Defender for microsoft Defender for Office 365」を参照してください。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e3c84b9e6253dd813ff930314fc2c1d0a947e94e
@@ -26,14 +26,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51205086"
 ---
-# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for microsoft Defender for Office 365
+# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender のキャンペーン ビュー (Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 
-キャンペーン ビューは、Microsoft Defender for Office 365 プラン 2 の機能です (たとえば、Microsoft 365 E5 や、Office 365 プラン 2 アドオンの Defender を持つ組織など)。 セキュリティ コンプライアンス センターのキャンペーン ビュー&サービス内のフィッシング攻撃を識別して分類します。 キャンペーン ビューは、次の目的に使用できます。
+キャンペーン ビューは、Microsoft Defender for Office 365 プラン 2 の機能です (たとえば、Microsoft 365 E5 プラン 2 アドオンの Defender を持つ組織Office 365など)。 セキュリティ コンプライアンス センターのキャンペーン ビュー&サービス内のフィッシング攻撃を識別して分類します。 キャンペーン ビューは、次の目的に使用できます。
 
 - フィッシング攻撃を効率的に調査し、対処する。
 - 攻撃対象を正確に理解する。
@@ -92,7 +92,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
   - **フィッシング**: 利用可能な場合は、このキャンペーンによってフィッシングされているブランド。 たとえば `Microsoft` `365` `Unknown` 、、、、、、、 `Outlook` `DocuSign` などです。
   - **マルウェア**: たとえば、 `HTML/PHISH` または `HTML/<MalwareFamilyName>` .
 
-  利用可能な場合、このキャンペーンによってフィッシングされているブランド。 検出が Defender によって 365 テクノロジOffice場合、プレフィックス **ATP-** がサブタイプ値に追加されます。
+  利用可能な場合、このキャンペーンによってフィッシングされているブランド。 検出が Defender によって実行され、Office 365される場合は、プレフィックス **ATP-** がサブタイプ値に追加されます。
 
 - [**Recipients (受信者)**]: このキャンペーンの攻撃対象となったユーザーの数。
 
@@ -104,7 +104,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
   マルウェア キャンペーン **では** クリック率は使用されません。
 
-- **アクセス数**: ペイロード Web サイトに実際にアクセスしたユーザーの数。 クリックされた値 **があるが** 、安全なリンクが Web サイトへのアクセスをブロックしている場合、この値は 0 になります。
+- **アクセス数**: ペイロード Web サイトに実際にアクセスしたユーザーの数。 クリックされた値 **が含** まれるが、[リンクセーフ Web サイトへのアクセスがブロックされている場合、この値は 0 になります。
 
 [ **キャンペーンの発生元** ] タブには、世界の地図にメッセージ ソースが表示されます。
 
@@ -127,7 +127,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
   - **送信者**
   - **受信者**
   - **送信元ドメイン**
-  - **件名**
+  - **[件名]**
   - **添付ファイルの名前**
   - **マルウェア ファミリ**
   - **タグ**: 指定したユーザー タグが適用されているユーザーまたはグループ (優先度アカウントを含む)。 ユーザー タグの詳細については、「ユーザー タグ」 [を参照してください](user-tags.md)。
@@ -142,9 +142,9 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 - **Advanced**:
   - **インターネット メッセージ ID**: メッセージ ヘッダー **の [Message-ID** ヘッダー] フィールドで使用できます。 値の例は `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 次のようになります (角かっこに注意してください)。
-  - **ネットワーク メッセージ ID**: メッセージ ヘッダーの **X-MS-Exchange-Organization-Network-Message-Id** ヘッダー フィールドで使用できる GUID 値。
+  - **ネットワーク メッセージ ID:** メッセージ ヘッダーの **X-MS-Exchange-Organization-Network-Message-Id** ヘッダー フィールドで使用できる GUID 値。
   - [**Sender IP (送信者の IP)**]
-  - **添付ファイル SHA256**: Windows でファイルの SHA256 ハッシュ値を検索するには、コマンド プロンプトで次のコマンドを実行します `certutil.exe -hashfile "<Path>\<Filename>" SHA256` 。
+  - **添付ファイル SHA256**: ファイルの SHA256 ハッシュ値を Windows で検索するには、コマンド プロンプトで次のコマンドを実行します `certutil.exe -hashfile "<Path>\<Filename>" SHA256` 。
   - **クラスター ID**
   - **アラート ポリシー ID**
   - **ZAP URL シグナル**
@@ -168,7 +168,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 グラフまたはキャンペーンのリストをエクスポートするには、[エクスポート]をクリックし、[グラフ データのエクスポート] または [キャンペーン リスト **のエクスポート] を選択します**。
 
-Microsoft Defender for Endpoint サブスクリプションをお持ちの場合は **、[MDE** 設定] をクリックして、Microsoft Defender for Endpoint でキャンペーン情報を接続または切断できます。 詳細については [、「Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint」を参照してください](integrate-office-365-ti-with-mde.md)。
+Microsoft Defender for Endpoint サブスクリプションをお持ちの場合は **、[MDE** 設定] をクリックして、Microsoft Defender for Endpoint でキャンペーン情報を接続または切断できます。 詳細については[、「Integrate Microsoft Defender for Office 365 Microsoft Defender for Endpoint」を参照してください](integrate-office-365-ti-with-mde.md)。
 
 ## <a name="campaign-details"></a>キャンペーンの詳細
 
@@ -198,10 +198,10 @@ Microsoft Defender for Endpoint サブスクリプションをお持ちの場合
 
 ### <a name="campaign-flow"></a>キャンペーン フロー
 
-キャンペーンの詳細ビューの中央に、キャンペーンに関する重要な詳細が、水平方向のフロー図 (サンキー図と呼ばれる) の [フロー] セクション _に表示_ されます。 これらの詳細情報は、キャンペーンの要素および組織に与えている可能性のある影響を理解する上で役立ちます。
+キャンペーンの詳細ビューの中央に、キャンペーンに関する重要な詳細は、水平フロー図 (サンキー図と呼ばれる) の **Flow** セクション _に表示_ されます。 これらの詳細情報は、キャンペーンの要素および組織に与えている可能性のある影響を理解する上で役立ちます。
 
 > [!TIP]
-> フロー図に表示される情報は、前のセクションで説明したように、タイムラインの日陰の日付範囲によって制御されます。
+> グラフ図に表示される情報Flow前のセクションで説明したように、タイムラインの日陰の日付範囲によって制御されます。
 
 ![ユーザーによる URL のクリックがなかったキャンペーンの詳細](../../media/campaign-details-no-recipient-actions.png)
 
@@ -224,7 +224,7 @@ Microsoft Defender for Endpoint サブスクリプションをお持ちの場合
   |**リリース済み**|`SFV:SKQ`|メッセージは検疫から解放されたため、スパム フィルター処理をスキップしました。|
   |**テナント許可**<sup>\*</sup>|`SFV:SKA`|スパム対策ポリシーの設定のため、メッセージはスパム フィルター処理をスキップしました。 たとえば、送信者が許可されている送信者リストまたは許可されたドメイン リストに含めらたとします。|
   |**テナント ブロック**<sup>\*\*</sup>|`SFV:SKA`|スパム対策ポリシーの設定により、スパム フィルターによってメッセージがブロックされました。 たとえば、送信者が許可されている送信者リストまたは許可されたドメイン リストに含めらたとします。|
-  |**ユーザー許可**<sup>\*</sup>|`SFV:SFE`|送信者がユーザーの差出人セーフ リストに含っていたため、メッセージはスパム フィルター処理をスキップしました。|
+  |**ユーザー許可**<sup>\*</sup>|`SFV:SFE`|送信者がユーザーの [送信者] リストに含セーフスキップされました。|
   |**ユーザー ブロック**<sup>\*\*</sup>|`SFV:BLK`|送信者がユーザーの [送信者のブロック] リストに含っていたため、メッセージはスパム フィルターによってブロックされました。|
   |**ZAP**|該当なし|[ゼロ時間自動削除 (ZAP) は](zero-hour-auto-purge.md) 、配信されたメッセージを迷惑メール フォルダーまたは検疫に移動しました。 スパム対策ポリシーでアクションを構成します。|
   |
@@ -256,9 +256,9 @@ Microsoft Defender for Endpoint サブスクリプションをお持ちの場合
 ユーザーがフィッシング メッセージのペイロード URL をクリックすると、アクションがキャンペーンの詳細ビューの図の **URL** クリック領域に表示されます。
 
 - **可**
-- **BlockPage**: 受信者がペイロード URL をクリックしましたが、悪意のある Web サイトへのアクセスは、組織内の [セーフ](safe-links.md) リンク ポリシーによってブロックされました。
-- **BlockPageOverride**: 受信者はメッセージ内のペイロード URL をクリックし、セーフ リンクは停止を試みましたが、ブロックを上書きできます。 セーフ リンク [ポリシーを調べた](set-up-safe-links-policies.md) り、ユーザーがセーフ リンクの評決を上書きして悪意のある Web サイトに進むのを許可されている理由を確認します。
-- **PendingDetonationPage**: microsoft Defender for Office 365 の安全な添付ファイルは、仮想コンピューター環境でペイロード URL を開いて調査中です。
+- **BlockPage**: 受信者がペイロード URL をクリックしましたが、悪意のある Web サイトへのアクセスは、組織内の セーフ [リンク ポリシー](safe-links.md)によってブロックされました。
+- **BlockPageOverride**: 受信者はメッセージ内のペイロード URL をクリックし、セーフ Links はブロックを停止しようとしましたが、ブロックを上書きできます。 [リンク][セーフポリシー](set-up-safe-links-policies.md)を調して、ユーザーがリンクの評価を上書きして悪意のある web サイトに進セーフ許可される理由を確認します。
+- **PendingDetonationPage**: セーフ Office 365 用 Microsoft Defender の添付ファイルは、仮想コンピューター環境でペイロード URL を開いて調査中です。
 - **PendingDetonationPageOverride**: 受信者は、ペイロードのデトレーション プロセスを上書きし、結果を待たずに URL を開く許可を受け取りました。
 
 ### <a name="tabs"></a>タブ
@@ -289,7 +289,7 @@ Microsoft Defender for Endpoint サブスクリプションをお持ちの場合
   - **DKIM が渡されました**: 送信者がドメイン キー識別 [メール (DKIM) によって認証されました](support-for-validation-of-dkim-signed-messages.md)。 DKIM 検証に合格しない送信者は、認証されていない送信者、またはメッセージが正当な送信者をスプーフィングすることを示します。
   - **DMARC が渡** されました: 送信者は、ドメイン ベースのメッセージ認証、レポート、および [準拠 (DMARC) によって認証されました](use-dmarc-to-validate-email.md)。 DMARC 検証に合格しない送信者は、認証されていない送信者、またはメッセージが正当な送信者をスプーフィングすることを示します。
 
-- **添付ファイル**
+- **Attachments**
   - **Filename**
   - **SHA256**
   - **マルウェア ファミリ**

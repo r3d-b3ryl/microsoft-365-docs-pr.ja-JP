@@ -23,9 +23,9 @@ ms.locfileid: "51199551"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のクラウド専用の ID およびデバイス アクセスの前提条件
 
-*このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ テスト環境Microsoft 365にのみ使用できます。*
 
-[ID およびデバイス アクセス](../security/office-365-security/microsoft-365-policies-configurations.md) 構成は、Azure Active Directory (Azure Active Directory ) と統合されているすべてのサービスへのアクセスを保護するための一連の推奨構成と条件付きアクセス ポリシー AD。
+[ID およびデバイス アクセス](../security/office-365-security/microsoft-365-policies-configurations.md)構成は、Azure Active Directory (Azure AD) と統合されているすべてのサービスへのアクセスを保護するための、推奨される構成と条件付きアクセス ポリシーのセットです。
 
 この記事では、ID とデバイス アクセス用の[クラウド専用の前提条件構成](../security/office-365-security/identity-access-prerequisites.md#prerequisites)に関する要件を満たす Microsoft 365 テスト環境を構成する方法を説明します。
 
@@ -35,7 +35,7 @@ ms.locfileid: "51199551"
 2. 名前付きの場所を構成する
 3. セルフサービスのパスワードのリセットを構成する
 4. 多要素認証を構成する
-5. ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする
+5. ドメインに参加しているコンピューターのデバイスの自動登録Windowsする
 6. Azure ADパスワード保護を構成する 
 7. Azure AD Identity Protection を有効化する
 8. Exchange Online および Skype for Business Online に対して先進認証を有効化する
@@ -77,9 +77,9 @@ User 2 アカウントのパスワードのリセットのみテストします�
 
 User 2 アカウントの多要素認証のみテストします。
 
-## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>フェーズ 5: ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする 
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>フェーズ 5: ドメインに参加しているコンピューターのデバイスの自動登録Windowsする 
 
-ドメイン [に参加している Windows コンピューター](/azure/active-directory/devices/hybrid-azuread-join-plan) のデバイスの自動登録を有効にするには、次の手順に従います。
+ドメイン[に参加しているコンピューターの](/azure/active-directory/devices/hybrid-azuread-join-plan)デバイスの自動登録を有効にするには、次のWindows従います。
 
 ## <a name="phase-6-configure-azure-ad-password-protection"></a>フェーズ 6: Azure のパスワード保護AD構成する 
 

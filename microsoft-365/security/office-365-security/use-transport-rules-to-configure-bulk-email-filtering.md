@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Exchange Online Protection (EOP) でメール フロー ルール (トランスポート ルール) を使用してバルク メール (グレー メール) を識別してフィルター処理する方法について学習できます。
+description: 管理者は、メール フロー ルール (トランスポート ルール) を使用して、メール フロー (EOP) でバルク メール (グレー メール) を識別およびフィルター処理するExchange Online Protectionできます。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -33,15 +33,15 @@ ms.locfileid: "51206070"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online または Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織のメールボックスを持つ Microsoft 365 組織では、EOP はスパム対策ポリシー (スパム フィルター ポリシーまたはコンテンツ フィルター ポリシーとも呼ばれる) を使用して、受信メッセージをスキャンしてスパムやバルク メール (グレー メールとも呼ばれる) をスキャンします。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスのない Microsoft 365 組織では、EOP はスパム対策ポリシー (スパム フィルター ポリシーまたはコンテンツ フィルター ポリシーとも呼ばれる) を使用して、受信メッセージをスキャンしてスパムやバルク メール (グレー メールとも呼ばれる) をスキャンします。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 バルク メールをフィルター処理するオプションを増やしたい場合は、メール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、バルク メールで頻繁に見られるテキスト パターンや語句を検索し、それらのメッセージをスパムとしてマークできます。 バルク メールの詳細については [、「EOP](what-s-the-difference-between-junk-email-and-bulk-email.md) の迷惑メールとバルク メールの違い」および「バルク 苦情レベル [(BCL)」を参照してください](bulk-complaint-level-values.md)。
 
-このトピックでは、Exchange 管理センター (EAC) および PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織向け Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) でこれらのメール フロー ルールを作成する方法について説明します。
+このトピックでは、Exchange 管理センター (EAC) および PowerShell (Exchange Online にメールボックスを持つ Microsoft 365 組織用の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) でこれらのメール フロー ルールを作成する方法について説明します。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- この記事の手順を実行するには、Exchange Online または Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定では、組織の管理、コンプライアンス管理 **(グローバル** 管理者)、レコード管理の役割グループに割り当てられているトランスポート ルールの役割が必要です。 
+- この記事の手順を実行するには、Exchange OnlineまたはExchange Online Protectionにアクセス許可を割り当てる必要があります。 具体的には、既定では、組織の管理、コンプライアンス管理 **(グローバル** 管理者)、レコード管理の役割グループに割り当てられているトランスポート ルールの役割が必要です。 
 
   詳細については、次のトピックをご覧ください。
 
@@ -49,11 +49,11 @@ Exchange Online または Exchange Online メールボックスのないスタ�
   - [スタンドアロン EOP のアクセス許可](feature-permissions-in-eop.md)
   - [役割グループ内のメンバーの一覧を変更する EAC を使用する](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Exchange Online で EAC を開く方法については、「Exchange Online [の Exchange 管理センター」を参照してください](/Exchange/exchange-admin-center)。 スタンドアロン EOP で EAC を開く方法については、「 [スタンドアロン EOP の Exchange 管理センター」を参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- EAC を開く方法については、「Exchange Onlineの管理[Exchange」を参照Exchange Online。](/Exchange/exchange-admin-center) スタンドアロン EOP で EAC を開く方法については、「スタンドアロン[EOP Exchange管理センター」を参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- Exchange Online およびスタンドアロン EOP のメール フロー ルールの詳細については、次のトピックを参照してください。
+- EOP とスタンドアロン EOP のメール フロー ルールExchange Online詳細については、次のトピックを参照してください。
 
   - [Exchange Online のメール フロー ルール (トランスポート ルール)](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
@@ -98,7 +98,7 @@ Exchange Online または Exchange Online メールボックスのないスタ�
 
       エントリを編集するには、エントリを選択し、[編集] **アイコンを** ![ クリックします ](../../media/ITPro-EAC-EditIcon.png) 。 エントリを削除するには、そのエントリを選択し、[削除] **アイコンを** ![ クリックします ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
-       完了したら、 **[OK]** をクリックします。
+       完了したら、**[OK]** をクリックします。
 
      - **件名または本文** \>**件名または本文には**、これらの単語が含まれます:表示される [単語または語句の指定] ダイアログで、次のいずれかの値を入力し、[アイコンの追加] をクリックし、すべての値を入力するまで繰り返します。 ![ ](../../media/ITPro-EAC-AddIcon.png)
 
@@ -118,7 +118,7 @@ Exchange Online または Exchange Online メールボックスのないスタ�
 
       エントリを編集するには、エントリを選択し、[編集] **アイコンを** ![ クリックします ](../../media/ITPro-EAC-EditIcon.png) 。 エントリを削除するには、そのエントリを選択し、[削除] **アイコンを** ![ クリックします ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
-       完了したら、 **[OK]** をクリックします。
+       完了したら、**[OK]** をクリックします。
 
    - **[メッセージのプロパティを** 変更 **する] を選択** \> **して、スパム信頼レベル (SCL) を設定します**。 表示される **[SCL の指定** ] ダイアログで、次のいずれかの設定を構成します。
 

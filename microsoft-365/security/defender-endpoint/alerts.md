@@ -29,7 +29,7 @@ ms.locfileid: "51199623"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "51199623"
 メソッド |戻り値の型 |説明
 :---|:---|:---
 [警告の取得](get-alert-info-by-id.md) | [アラート](alerts.md) | 1 つのアラート [オブジェクトを取得](alerts.md) します。
-[警告の一覧表示](get-alerts.md) | [アラート](alerts.md) コレクション | アラート [コレクションを一覧表示](alerts.md) します。
+[アラートの一覧表示](get-alerts.md) | [アラート](alerts.md) コレクション | アラート [コレクションを一覧表示](alerts.md) します。
 [警告の更新](update-alert.md) | [アラート](alerts.md) | 特定のアラートを [更新します](alerts.md)。
 [バッチ更新の通知](batch-update-alerts.md) | | アラートのバッチを更新 [します](alerts.md)。
 [アラートの作成](create-alert-by-reference.md)|[アラート](alerts.md)|Advanced Hunting から取得したイベント データに基づいてアラート [を作成します](run-advanced-query-api.md)。
@@ -49,14 +49,14 @@ ms.locfileid: "51199623"
 [関連ファイルを一覧表示する](get-alert-related-files-info.md) | [ファイル](files.md) コレクション |  アラートに [関連](files.md) 付けられているファイル エンティティを一覧表示 [します](alerts.md)。
 [関連する IPs の一覧](get-alert-related-ip-info.md) | IP コレクション | アラートに関連付けられているリストの AP。
 [関連するコンピューターを取得する](get-alert-related-machine-info.md) | [マシン](machine.md) | アラート [に](machine.md) 関連付けられている [コンピューター](alerts.md)。
-[関連ユーザーの取得](get-alert-related-user-info.md) | [User](user.md) | アラート [に](user.md) 関連付けられている [ユーザー](alerts.md)。
+[関連ユーザーの取得](get-alert-related-user-info.md) | [ユーザー](user.md) | アラート [に](user.md) 関連付けられている [ユーザー](alerts.md)。
 
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ |    種類    |    説明
+プロパティ |    型    |    説明
 :---|:---|:---
-id | 文字列 | アラート ID。
+id | String | アラート ID。
 title | String | 警告タイトル。
 説明 | String | 警告の説明。
 alertCreationTime | Null 許容の DateTimeOffset | アラートが作成された日付と時刻 (UTC)。
@@ -72,14 +72,14 @@ severity | 列挙 | アラートの重大度。 指定できる値は、'UnSpeci
 status | 列挙 | アラートの現在の状態を指定します。 指定できる値は、'Unknown'、'New'、'InProgress'、'Resolved' です。
 classification | Null 許容列挙 | アラートの仕様。 指定できる値は、'Unknown'、'FalsePositive'、'TruePositive'です。
 決定 | Null 許容列挙 | アラートの決定を指定します。 指定できる値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
-category| 文字列 | アラートのカテゴリ。
-detectionSource | 文字列 | 検出ソース。
-threatFamilyName | 文字列 | 脅威ファミリ。
-threatName | 文字列 | 脅威の名前。
-machineId | 文字列 | アラートに [関連付](machine.md) けられているコンピューター エンティティの ID。
-computerDnsName | 文字列 | [コンピューター](machine.md) の完全修飾名。
-aadTenantId | 文字列 | Azure Active Directory ID。
-detectorId | 文字列 | アラートをトリガーした検出器の ID。
+category| String | アラートのカテゴリ。
+detectionSource | String | 検出ソース。
+threatFamilyName | String | 脅威ファミリ。
+threatName | String | 脅威の名前。
+machineId | String | アラートに [関連付](machine.md) けられているコンピューター エンティティの ID。
+computerDnsName | String | [コンピューター](machine.md) の完全修飾名。
+aadTenantId | String | ユーザー ID Azure Active Directory ID。
+detectorId | String | アラートをトリガーした検出器の ID。
 comments | アラートコメントの一覧 | Alert Comment オブジェクトには、コメント文字列、createBy 文字列、createTime 日付時刻が含まれます。
 証拠 | アラート証拠の一覧 | アラートに関連する証拠。 次の例を参照してください。
 

@@ -37,8 +37,8 @@ ms.locfileid: "51398207"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-詳細については [、「Microsoft 365 で多要素認証を設定する」を参照してください。](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+詳細については、「Set [up multifactor authentication in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
-## <a name="use-the-outlook-app-in-your-devices"></a>デバイスで Outlook アプリを使用する
+## <a name="use-the-outlook-app-in-your-devices"></a>デバイスでOutlookアプリを使用する
 
-管理者が MFA の使用を要求し、認証アプリを 2 番目の認証形式として設定した後は、Outlook アプリをインストールし、Outlook アプリのみを使用して Microsoft 365 メールにアクセスすることをお勧めします。 「 [モバイル デバイスをセットアップする](../business/set-up-mobile-devices.md) 」を参照して、Office Outlook などのアプリを携帯電話にインストールする方法を参照してください。
+管理者が MFA の使用を要求し、認証アプリを 2 番目の認証形式として設定した後は、Outlook アプリのみをインストールして、Microsoft 365 メールにアクセスすることをお勧めします。 「[モバイル デバイスのセットアップ」](../business/set-up-mobile-devices.md)を参照して、OfficeアプリをインストールするOutlookを参照してください。

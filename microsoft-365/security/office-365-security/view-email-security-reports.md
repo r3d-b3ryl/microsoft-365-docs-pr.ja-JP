@@ -35,14 +35,14 @@ ms.locfileid: "51206240"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-セキュリティ [& コンプライアンス](https://protection.office.com) センターでは、Microsoft 365 のスパム対策、マルウェア対策、暗号化機能などの電子メール セキュリティ機能が組織を保護している方法を確認できます。 必要なアクセス許可 [がある](#what-permissions-are-needed-to-view-these-reports)場合は、[レポート ダッシュボード] に移動して、セキュリティ & コンプライアンス センターでこれらのレポート **を表示** \> **できます**。 レポート ダッシュボードに直接移動するには、を開きます <https://protection.office.com/insightdashboard> 。
+セキュリティ[&](https://protection.office.com)コンプライアンス センターでは、Microsoft 365 のスパム対策、マルウェア対策、暗号化機能などの電子メール セキュリティ機能がどのように組織を保護しているかを確認するために、さまざまなレポートを利用できます。 必要なアクセス許可 [がある](#what-permissions-are-needed-to-view-these-reports)場合は、[レポート ダッシュボード] に移動して、セキュリティ & コンプライアンス センターでこれらのレポート **を表示** \> **できます**。 レポート ダッシュボードに直接移動するには、を開きます <https://protection.office.com/insightdashboard> 。
 
 ![セキュリティ 管理コンプライアンス センター&ダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="compromised-users-report"></a>侵害されたユーザー レポート
 
 > [!NOTE]
-> このレポートは、Exchange Online メールボックスを持つ Microsoft 365 組織で利用できます。 スタンドアロンの Exchange Online Protection (EOP) 組織では使用できません。
+> このレポートは、メールボックスを使用Microsoft 365組織Exchange Online使用できます。 スタンドアロン 組織 (EOP) 組織ではExchange Online Protection使用できません。
 
 [**侵害されたユーザー] レポート** には、過去 7 日以内に[疑わしい] または [制限付き] とマークされたユーザー アカウントの数が表示されます。 これらの状態のどちらかのアカウントは、問題が発生したり、侵害された場合もあります。 頻繁に使用すると、レポートを使用して、疑わしいアカウントや制限付きアカウントのスパイクや傾向を見つけるのに使用できます。 侵害されたユーザーの詳細については、「侵害されたメール アカウントへの [応答」を参照してください](responding-to-a-compromised-email-account.md)。
 
@@ -66,15 +66,15 @@ ms.locfileid: "51206240"
 
 - **作成時間**
 - **[ユーザー ID]**
-- **操作**
+- **Action**
 
 レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
 
 ## <a name="encryption-report"></a>暗号化レポート
 
-暗号化 **レポートは** 、EOP (Exchange Online のメールボックスがあるサブスクリプション、または Exchange Online メールボックスのないスタンドアロン EOP) で使用できます。 組織のセキュリティ チームは、このレポートの情報を使用してパターンを特定し、機密性の高い電子メール メッセージのポリシーを積極的に適用または調整できます。 以下に例を示します。
+暗号化 **レポートは**、EOP で使用できます (サブスクリプションは、Exchange Onlineまたはスタンドアロンの EOP に含Exchange Online使用できます。 組織のセキュリティ チームは、このレポートの情報を使用してパターンを特定し、機密性の高い電子メール メッセージのポリシーを積極的に適用または調整できます。 以下に例を示します。
 
-- ユーザーによって暗号化された電子メール メッセージの数が多い場合は、暗号化ポリシーを追加して、特定の使用例の暗号化を自動化することができます。 詳細については [、「Microsoft 365 でメール メッセージを暗号化する](../../compliance/define-mail-flow-rules-to-encrypt-email.md)メール フロー ルールを定義する」を参照してください。
+- ユーザーによって暗号化された電子メール メッセージの数が多い場合は、暗号化ポリシーを追加して、特定の使用例の暗号化を自動化することができます。 詳細については、「メール フロー ルールを[定義して](../../compliance/define-mail-flow-rules-to-encrypt-email.md)メール メッセージを暗号化する」を参照Microsoft 365。
 
 - 使用可能な暗号化テンプレートが多数あるが、使用しているユーザーがいない場合は、ユーザーが機能トレーニングを必要とするかどうかを確認できます。
 
@@ -82,7 +82,7 @@ ms.locfileid: "51206240"
 
 レポートを表示するには、コンプライアンス センターのセキュリティ &[開き、[](https://protection.office.com)レポート **ダッシュボード]** に移動し、[暗号化レポート] \> **を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=EncryptionReport> 。
 
-暗号化の詳細については [、「Microsoft 365 でのメール暗号化」を参照してください](../../compliance/email-encryption.md)。
+暗号化の詳細については、「メール暗号化」[を参照Microsoft 365。](../../compliance/email-encryption.md)
 
 ### <a name="report-view-for-the-encryption-report"></a>暗号化レポートのレポート ビュー
 
@@ -122,16 +122,16 @@ ms.locfileid: "51206240"
 
 - **[詳細]: [暗号化方法] または** [ **詳細: 暗号化テンプレート]**: 次の情報が表示されます。
 
-  - **日付**
+  - **Date**
   - **[送信者のアドレス]**
   - **暗号化テンプレート**
   - **暗号化方法**
   - **受信者のアドレス**
-  - **件名**
+  - **[件名]**
 
 - **データの表示方法: 上位 5 つの受信者ドメイン**:
 
-  - **日付**
+  - **Date**
   - **受信者ドメイン**
   - **メッセージ数**
 
@@ -149,7 +149,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 ## <a name="malware-detections-in-email-report"></a>電子メール レポートのマルウェア検出
 
-電子 **メール レポートのマルウェア検出** には、受信および送信電子メール メッセージ (Exchange Online Protection または EOP によって検出されたマルウェア) のマルウェア検出に関する情報が表示されます。 EOP のマルウェア保護の詳細については、「EOP の [マルウェア対策保護」を参照してください](anti-malware-protection.md)。
+電子 **メール レポートのマルウェア検出** には、受信および送信電子メール メッセージ (マルウェアが電子メール または EOP によって検出されたマルウェア) のマルウェア検出に関するExchange Online Protection表示されます。 EOP のマルウェア保護の詳細については、「EOP の [マルウェア対策保護」を参照してください](anti-malware-protection.md)。
 
  集計ビュー フィルターでは 90 日間、詳細テーブル フィルターでは 10 日間のみ許可されます。
 
@@ -167,11 +167,11 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 [詳細テーブルの **表示] をクリック** すると、次の詳細が表示されます。
 
-- **日付**
+- **Date**
 - **[送信者のアドレス]**
 - **受信者のアドレス**
 - **メッセージ ID**: メッセージ ヘッダーの **[Message-ID** ヘッダー] フィールドで使用できます。一意である必要があります。 値の例は `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 次のようになります (角かっこに注意してください)。
-- **件名**
+- **[件名]**
 - **Filename**
 - **マルウェア名**
 
@@ -229,12 +229,12 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 レポート ビューで **[詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
 
-- **日付**
+- **Date**
 - **[送信者のアドレス]**
 - **受信者のアドレス**
 - **イベントの種類**
-- **操作**
-- **件名**
+- **Action**
+- **[件名]**
 
 詳細テーブルで **[フィルター]** をクリックすると、次のフィルターを使用して結果を変更できます。
 
@@ -268,26 +268,26 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 [詳細テーブルの **表示] をクリック** すると、次の詳細が表示されます。
 
-- **日付**
+- **Date**
 - **スプーフィングされた送信者**
 - **True の送信者**
 - [**Sender IP (送信者の IP)**]
-- **操作**
+- **Action**
 - **メッセージ数**
 
 レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
-脅威 **保護の状態レポート** は、EOP と Microsoft Defender の両方Office 365 です。ただし、レポートには異なるデータが含まれる。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが [、SharePoint、OneDrive、および Microsoft Teams](mdo-for-spo-odb-and-teams.md)の安全な添付ファイルによって検出された悪意のあるファイルに関する情報は表示できません。
+脅威 **保護の状態レポート** は、EOP と Microsoft Defender の両方Office 365。ただし、レポートには異なるデータが含まれる。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが[、SharePoint、OneDrive、](mdo-for-spo-odb-and-teams.md)および Microsoft Teams の セーフ 添付ファイルによって検出された悪意のあるファイルに関する情報は表示できません。
 
-このレポートには、マルウェア対策エンジンによってブロックされたファイルや Web サイト のアドレス (URL)、ゼロ時間自動削除[(ZAP)、](zero-hour-auto-purge.md)および Defender for Office 365 機能 (セーフ リンク、安全な添付ファイル、[](safe-attachments.md)フィッシング対策など)[](set-up-anti-phishing-policies.md)などの悪意のあるコンテンツを含む電子メール メッセージの数が提供されます。 [](safe-links.md) この情報を使用して、傾向を特定したり、組織のポリシーで調整が必要かどうかを判断できます。
+このレポートには、マルウェア対策エンジンによってブロックされたファイルや Web サイト のアドレス (URL)、ゼロ時間自動削除[(ZAP)、セーフ](zero-hour-auto-purge.md)[リンク、セーフ](safe-links.md)[添付](safe-attachments.md)ファイル、フィッシング対策などの Office 365 機能の Defender などの悪意のあるコンテンツを含む電子メール[](set-up-anti-phishing-policies.md)メッセージの数が提供されます。 この情報を使用して、傾向を特定したり、組織のポリシーで調整が必要かどうかを判断できます。
 
 **注**: メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージではなく 5 つの異なるメッセージとしてカウントされます。
 
 レポートを表示するには、コンプライアンス センターでセキュリティ &[を](https://protection.office.com)開き、[レポート **ダッシュボード]** に移動し、[脅威保護の状態 \> ]**を選択します**。 レポートに直接移動するには、次のいずれかの URL を開きます。
 
-- Microsoft Defender for Office 365: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- Microsoft Defender for Office 365:<https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![レポート ダッシュボードの脅威保護状態ウィジェット](../../media/threat-protection-status-report-widget.png)
@@ -306,10 +306,10 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
   ![脅威保護の状態レポートの概要ビュー](../../media/threat-protection-status-report-overview-view.png)
 
-- **データの表示方法: コンテンツ \> マルウェア**<sup>1</sup>: 365 組織の Microsoft Defender にOffice示されています。
+- **データの表示方法: コンテンツ \>マルウェア**<sup>1:</sup>組織の Microsoft Defender に関する次のOffice 365示されています。
 
-  - **マルウェア対策エンジン**: [Microsoft 365](virus-detection-in-spo.md)で組み込みのウイルス検出によって Sharepoint、OneDrive、および Microsoft Teams で検出された悪意のあるファイル。
-  - **ファイルの削除**: [SharePoint、OneDrive、および Microsoft Teams](mdo-for-spo-odb-and-teams.md)の安全な添付ファイルによって検出された悪意のあるファイル。
+  - **マルウェア対策エンジン**: Sharepoint、OneDrive、および Microsoft Teams で組み込みのウイルス検出によって検出された悪意のある [Microsoft 365。](virus-detection-in-spo.md)
+  - **ファイルの削除**: 添付ファイルによって検出された悪意のある [セーフ、SharePoint、OneDrive、](mdo-for-spo-odb-and-teams.md)およびMicrosoft Teams。
 
   ![脅威保護状態レポートのコンテンツ マルウェア ビュー](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -329,7 +329,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 - **[検出テクノロジ] と [****データの表示方法: メール \> フィッシング:** 次の情報が表示されます。
 
-  - **ATP で生成された URL 評価**<sup>1</sup>: 他の Microsoft 365 のお客様の 365 回のOfficeに対して Defender から生成された悪意のある URL レピュテーション。
+  - **ATP で生成された URL 評価**<sup>1</sup>: Defender から生成された悪意のある URL レピュテーションOffice 365他のユーザー Microsoft 365です。
   - **高度なフィッシング フィルター**: 機械学習に基づくフィッシングシグナル。
   - **スプーフィング対策 - DMARC エラー**: メッセージに対する DMARC 認証エラー。
   - **スプーフィング対策 - 組織内**: 送信者が受信者ドメインをスプーフィングしようとしている。
@@ -347,10 +347,10 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 - **[検出テクノロジ] と [****データの表示方法: メール \> マルウェア]**: 次の情報が表示されます。
 
-  - **ATP で生成されたファイル評価**<sup>1</sup>: 365 回のOfficeが Defender によって生成されます。
+  - **ATP で生成されたファイル評価**<sup>1:</sup>Defender によって生成された悪意のあるファイル評価Office 365します。
   - **マルウェア対策エンジン**<sup>1</sup>: マルウェア対策エンジンからの検出。
   - **マルウェア対策ポリシー ファイルの種類ブロック**: これらは、メッセージで識別された悪意のあるファイルの種類によってフィルター処理された電子メール メッセージです。
-  - **ファイルの削除**<sup>1</sup>: 安全な添付ファイルによる検出。
+  - **ファイルの削除**<sup>1</sup>: 添付ファイルセーフ検出。
   - **悪意のあるファイル評価**
   - **マルウェア ZAP**<sup>2</sup>
   - **Others**
@@ -360,7 +360,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 - **[ポリシーの種類] と** [データの表示方法 **]: \>** [メールフィッシング] または [データの表示 **方法: メール \> マルウェア**] : 次の情報が表示されます。
 
   - **マルウェア対策**
-  - **安全な添付**<sup>ファイル 1</sup>
+  - **セーフ添付ファイル**<sup>1</sup>
   - **フィッシング対策**
   - **スパム対策**
   - **メール フロー ルール** (トランスポート ルールとも呼ばれる)
@@ -382,9 +382,9 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
   ![脅威保護状態レポートのフィッシングメールの配信状態ビュー](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-<sup>1</sup> Defender for Office 365 のみ
+<sup>1</sup> Defender for Office 365のみ
 
-<sup>2</sup> ゼロ時間自動削除 (ZAP) はスタンドアロン EOP では使用できません (Exchange Online メールボックスでのみ機能します)。
+<sup>2</sup>ゼロ時間自動削除 (ZAP) はスタンドアロン EOP では使用できません (これは、既定のメールボックスでのみExchange Onlineします)。
 
 [フィルター] **をクリック** すると、使用可能なフィルターは、表示していたグラフによって異なります。
 
@@ -413,7 +413,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 - **データの表示方法: コンテンツ \> マルウェア**:
 
-  - **日付**
+  - **Date**
   - **Location**
   - **監督者**
   - **マルウェア名**
@@ -422,8 +422,8 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 - **データの表示方法: メッセージの上書き**:
 
-  - **日付**
-  - **件名**
+  - **Date**
+  - **[件名]**
   - **送信者**
   - **受信者**
   - **によって検出される**
@@ -441,8 +441,8 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 - その他のすべてのグラフ:
 
-  - **日付**
-  - **件名**
+  - **Date**
+  - **[件名]**
   - **送信者**
   - **受信者**
   - **によって検出される**
@@ -454,7 +454,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
   - **開始日と****終了日**
   - **検出**
-  - **Protected by**: **Defender for Office 365** or **EOP**
+  - **Protected by**: **Defender for Office 365** **EOP**
   - **タグ**: 指定したユーザー タグが適用されているユーザーまたはグループ (優先度アカウントを含む) によって結果をフィルター処理します。 ユーザー タグの詳細については、「ユーザー タグ」 [を参照してください](user-tags.md)。
   - **ドメイン**
   - **受信者** (このフィルター可能なプロパティは、詳細テーブル ビューでのみ使用できます)
@@ -480,7 +480,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 ## <a name="url-threat-protection-report"></a>URL 脅威保護レポート
 
-URL **の脅威保護レポートは** 、Microsoft Defender で 365 Officeできます。 詳細については、「URL 脅威保護 [レポート」を参照してください](view-reports-for-mdo.md#url-threat-protection-report)。
+URL **の脅威保護レポートは**、Microsoft Defender で使用できるOffice 365。 詳細については、「URL 脅威保護 [レポート」を参照してください](view-reports-for-mdo.md#url-threat-protection-report)。
 
 ## <a name="user-reported-messages-report"></a>ユーザーが報告したメッセージ レポート
 
@@ -499,7 +499,7 @@ URL **の脅威保護レポートは** 、Microsoft Defender で 365 Officeで�
 ![コンプライアンス センターのセキュリティ &で、[脅威の管理] \> [ユーザーが報告 \> したメッセージの確認] を選択します。](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> ユーザーが報告したメッセージ レポートが正しく機能するには、365 環境で監査ログOffice必要があります。  これは通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。 詳細については [、「Turn Microsoft 365 audit log search on or off」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
+> ユーザーが報告したメッセージ レポートが正しく機能するには、ユーザーが報告した環境で監査ログを有効Office 365があります。 これは通常、監査ログの役割が管理者に割り当てられているユーザー Exchange Online。 詳細については、「監査ログの[検索を有効またはMicrosoft 365を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>これらのレポートを表示するために必要なアクセス許可
 
@@ -512,7 +512,7 @@ URL **の脅威保護レポートは** 、Microsoft Defender で 365 Officeで�
 
 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンスセンターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
+**注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンス センターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 
@@ -526,4 +526,4 @@ URL **の脅威保護レポートは** 、Microsoft Defender で 365 Officeで�
 
 [セキュリティ コンプライアンス センターでメール フロー レポート&表示する](view-mail-flow-reports.md)
 
-[Defender for Office 365 のレポートを表示する](view-reports-for-mdo.md)
+[Defender for Office 365](view-reports-for-mdo.md)

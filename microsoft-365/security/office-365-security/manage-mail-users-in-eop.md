@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
-description: ディレクトリ同期、EAC、PowerShell を使用してユーザーを管理する方法など、Exchange Online Protection (EOP) でメール ユーザーを管理する方法について説明します。
+description: ディレクトリ同期、EAC、PowerShell を使用してユーザーを管理するExchange Online Protection (EOP) でメール ユーザーを管理する方法について説明します。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -26,12 +26,12 @@ ms.locfileid: "51205046"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
+-  [Exchange Online Protectionスタンドアロン](exchange-online-protection-overview.md)
 
-Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、メール ユーザーは基本的な種類のユーザー アカウントです。 メール ユーザーは、スタンドアロンの EOP 組織にアカウント資格情報を持ち、リソースにアクセスできます (アクセス許可が割り当て済み)。 メール ユーザーの電子メール アドレスは外部 (オンプレミスのメール環境など) です。
+メールボックスをExchange Online Protectionスタンドアロン Exchange Online (EOP) 組織では、メール ユーザーは基本的な種類のユーザー アカウントです。 メール ユーザーは、スタンドアロンの EOP 組織にアカウント資格情報を持ち、リソースにアクセスできます (アクセス許可が割り当て済み)。 メール ユーザーの電子メール アドレスは外部 (オンプレミスのメール環境など) です。
 
 > [!NOTE]
-> メール ユーザーを作成すると、対応するユーザー アカウントが Microsoft 365 管理センターで利用できます。 Microsoft 365 管理センターでユーザー アカウントを作成する場合、そのアカウントを使用してメール ユーザーを作成することはできません。
+> メール ユーザーを作成すると、対応するユーザー アカウントが管理センター Microsoft 365できます。 管理センターでユーザー アカウントをMicrosoft 365、そのアカウントを使用してメール ユーザーを作成することはできません。
 
 スタンドアロン EOP でメール ユーザーを作成および管理する推奨される方法は、この記事の[](#use-directory-synchronization-to-manage-mail-users)後半の「ディレクトリ同期を使用してメール ユーザーを管理する」セクションで説明されているディレクトリ同期を使用する方法です。
 
@@ -39,26 +39,26 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- Exchange 管理センター (EAC) を開く場合は、「 [スタンドアロン EOP の Exchange 管理センター」を参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 管理センター (EAC Exchange開く場合は、「スタンドアロン[EOP Exchange管理センター」を参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - EOP PowerShell でメール ユーザーを作成すると、調整が発生する可能性があります。 また、EOP PowerShell コマンドレットはバッチ処理メソッドを使用して、コマンドの結果が表示される数分前に伝達遅延が発生します。
 
-- この記事の手順を実行するには、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織 **管理 (グローバル** 管理者) および受信者管理役割グループに割り当てられているメール受信者の **作成 (作成**) およびメール受信者 **(変更**) の役割が必要です。 詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「役割グループのメンバーの一覧を [変更する EAC](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)を使用する」を参照してください。
+- この記事の手順を実行するには、Exchange Online Protectionにアクセス許可を割り当てる必要があります。 具体的には、既定で組織 **管理 (グローバル** 管理者) および受信者管理役割グループに割り当てられているメール受信者の **作成 (作成**) およびメール受信者 **(変更**) の役割が必要です。 詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「役割グループのメンバーの一覧を [変更する EAC](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)を使用する」を参照してください。
 
-- この記事の手順に適用されるキーボード ショートカットの詳細については、「Exchange Online の Exchange 管理センターのキーボード ショートカット」 [を参照してください](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- この記事の手順 Exchangeに適用されるキーボード ショートカットの詳細については、「Exchange Online の管理センターのキーボード ショートカット」[を参照Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> 問題がある場合は、 Exchange のフォーラムで質問してください。 Exchange [Online Protection フォーラムにアクセス](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) します。
+> 問題がある場合は、 Exchange のフォーラムで質問してください。 [ユーザー][フォーラムExchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)アクセスします。
 
-## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Exchange 管理センターを使用してメール ユーザーを管理する
+## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>メール ユーザーを管理Exchange管理センターを使用する
 
 ### <a name="use-the-eac-to-create-mail-users"></a>EAC を使用してメール ユーザーを作成する
 
 1. EAC で、[受信者の **連絡先] に移動** \> **します。**
 
-2. [新 **しい新規]** ![ アイコンをクリック ](../../media/ITPro-EAC-AddIcon.png) します。 開く **[新しいメール ユーザー]** ページで、次の設定を構成します。 マークが付いた設定 <sup>\*</sup> が必要です。
+2. [新 **しい新規]** ![ アイコンをクリック ](../../media/ITPro-EAC-AddIcon.png) します。 開く **[新しいメール ユーザー]** ページで、次の設定を構成します。 <sup>\*</sup> の付いた設定は必須項目です。
 
    - **名**
 
@@ -100,7 +100,7 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
 - **表示名**: この名前は、組織のアドレス帳、電子メールの [To:] 行と [From:] 行、および EAC の連絡先の一覧に表示されます。 この名前は、表示名の前または後に空のスペースを含めることはできません。
 
-- **ユーザー ID**: これは Microsoft 365 のユーザーのアカウントです。 この値はここで変更できます。
+- **ユーザー ID**: このアカウントは、ユーザーのアカウントMicrosoft 365。 この値はここで変更できます。
 
 #### <a name="contact-information"></a>連絡先情報
 
@@ -119,7 +119,7 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
   - **Office**
   - **自宅電話**
   - **Web ページ**
-  - **メモ**
+  - **注**
 
 #### <a name="organization"></a>組織
 
@@ -253,15 +253,15 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
 ## <a name="use-directory-synchronization-to-manage-mail-users"></a>ディレクトリ同期を使用してメール ユーザーを管理する
 
-スタンドアロン EOP では、オンプレミスの Active Directory をお持ちのお客様にディレクトリ同期を利用できます。 これらのアカウントを Azure Active Directory (Azure Active Directory AD) に同期して、アカウントのコピーをクラウドに保存できます。 既存のユーザー アカウントを Azure Active Directory に同期すると、それらのユーザーをExchange 管理センター (EAC) の [受信者] ウィンドウまたはスタンドアロンの EOP PowerShell で表示できます。
+スタンドアロン EOP では、オンプレミスの Active Directory をお持ちのお客様にディレクトリ同期を利用できます。 これらのアカウントをクラウドにAzure Active Directory (Azure AD) に同期できます。 既存のユーザー アカウントを Azure Active Directory に同期すると、それらのユーザーを Exchange 管理センター  (EAC) の [受信者] ウィンドウまたはスタンドアロンの EOP PowerShell で表示できます。
 
 **注**:
 
-- ディレクトリ同期を使用して受信者を管理する場合でも、Microsoft 365 管理センターでユーザーを追加および管理できますが、オンプレミスの Active Directory と同期されません。 これは、ディレクトリ同期では社内 Active Directory からクラウドへの受信者の同期だけが実行されるためです。
+- ディレクトリ同期を使用して受信者を管理する場合でも、Microsoft 365 管理センターでユーザーを追加および管理できますが、ユーザーはオンプレミスの Active Directory と同期されません。 これは、ディレクトリ同期では社内 Active Directory からクラウドへの受信者の同期だけが実行されるためです。
 
 - 次の機能によるディレクトリ同期の使用をお勧めします。
 
-  - **Outlook の差出人** セーフ リストと受信拒否リスト : サービスに同期すると、これらのリストはサービスのスパム フィルター処理よりも優先されます。 これにより、ユーザーは個々の送信者とドメイン エントリを使用して、自分の差出人セーフ リストと受信拒否リストを管理できます。 詳細については、「[Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
+  - **Outlook セーフ送信者リスト** と受信拒否リスト : サービスに同期すると、これらのリストはサービスのスパム フィルター処理よりも優先されます。 これにより、ユーザーは個々の送信者とセーフを使用して、送信者リストと受信拒否リストを管理できます。 詳細については、「[Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
   - **ディレクトリ ベースのエッジ ブロック (DBEB)**: DBEB の詳細については、「Use Directory Based Edge Blocking to [reject messages to invalid recipients](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」 を参照してください。
 
@@ -269,15 +269,15 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
   - **メール フロー** ルール (トランスポート ルールとも呼ばれる) : ディレクトリ同期を使用すると、既存の Active Directory ユーザーとグループがクラウドに自動的にアップロードされ、サービスに手動で追加することなく、特定のユーザーまたはグループを対象とするメール フロー ルールを作成できます。 動的配布 [グループはディレクトリ](/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) 同期では同期できない点に注意してください。
 
-「Azure Active Directory とのハイブリッド ID とは」の説明に従って、必要なアクセス許可を取得し、ディレクトリ同期 [の準備を行います](/azure/active-directory/hybrid/whatis-hybrid-identity)。
+必要なアクセス許可を取得し、ディレクトリ同期の準備を行います(「ハイブリッド ID とハイブリッド ID は何ですか[Azure Active Directory?](/azure/active-directory/hybrid/whatis-hybrid-identity)
 
-### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a>ディレクトリを Azure Active Directory Connect (AAD Connect) と同期する
+### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a>ディレクトリを Azure Active Directory Connectと同期する (AAD Connect)
 
-1. Azure AD接続同期: 同期の理解とカスタマイズで説明されているディレクトリ同期 [をアクティブ化します](/azure/active-directory/hybrid/how-to-connect-sync-whatis)。
+1. Azure の同期の説明に従ってディレクトリ[同期AD Connect同期を確認し、カスタマイズします](/azure/active-directory/hybrid/how-to-connect-sync-whatis)。
 
-2. 「Azure AD Connect の前提条件」の説明に従って、AAD Connect を実行するようにオンプレミス [コンピューターをインストールADします](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)。
+2. 「Azure の前提条件」の説明に従って、AAD Connectを実行するようにオンプレミス コンピューターをインストールして[構成AD Connect。](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
-3. [Azure の接続に使用するインストール](/azure/active-directory/hybrid/how-to-connect-install-select-installation)の種類をADします。
+3. [Azure アプリケーションで使用するインストールの種類を選択AD Connect。](/azure/active-directory/hybrid/how-to-connect-install-select-installation)
 
    - [Express](/azure/active-directory/hybrid/how-to-connect-install-express)
 
@@ -288,4 +288,4 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 > [!IMPORTANT]
 > Azure Active Directory 同期ツール構成ウィザードを終了すると、Active Directory フォレストに **MSOL_AD_SYNC** アカウントが作成されます。このアカウントは、社内 Active Directory 情報の読み取りと同期に使われます。ディレクトリ同期が正しく行われるように、ローカル ディレクトリ同期サーバー上の TCP 443 が開いていることを確認してください。
 
-同期を構成したら、AAD Connect が正しく同期されていることを確認してください。 EAC で、 **[受信者]** \> **[連絡先]** に移動し、ユーザーの一覧が社内環境から同期されていることを確認します。
+同期を構成したら、AAD が正しく同期Connect確認してください。 EAC で、 **[受信者]** \> **[連絡先]** に移動し、ユーザーの一覧が社内環境から同期されていることを確認します。

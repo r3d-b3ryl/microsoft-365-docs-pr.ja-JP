@@ -35,7 +35,7 @@ ms.locfileid: "51206500"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Exchange Online メールボックスを使用している組織の管理者の場合は、セキュリティ コンプライアンス センターの申請ポータルを使用&勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
+> ユーザーがメールボックスを使用している組織の管理者Exchange Online、コンプライアンス センターのセキュリティ &ポータルを使用することをお勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 
 組織内のユーザーが受信トレイで迷惑メール (スパム) またはフィッシング メッセージを受信した場合や、迷惑メールとしてマークされた正当な電子メール メッセージを受信しない場合は、イライラする可能性があります。 スパム フィルターの精度を高め、常に微調整を行っています。
 
@@ -47,7 +47,7 @@ ms.locfileid: "51206500"
 ## <a name="submit-false-negatives-to-microsoft"></a>False negatives を Microsoft に送信する
 
 > [!TIP]
-> Outlook と Outlook on the web (以前は Outlook Web App と呼ばれる) のユーザーは、次の手順を使用して誤検知を報告する代わりに、レポート メッセージ アドインまたはレポート フィッシング アドインを使用できます。 これらのツールをインストールして使用する方法の詳細については、「[](enable-the-report-message-add-in.md)レポート メッセージ アドインを有効にする」および「レポート フィッシング アドインを有効にする」[を参照してください](enable-the-report-phish-add-in.md)。
+> 次の手順を使用して誤検知を報告する代わりに、Outlook および Outlook の web (以前は Outlook Web App) のユーザーは、レポート メッセージ アドインまたはレポート フィッシング アドインを使用できます。 これらのツールをインストールして使用する方法の詳細については、「[](enable-the-report-message-add-in.md)レポート メッセージ アドインを有効にする」および「レポート フィッシング アドインを有効にする」[を参照してください](enable-the-report-phish-add-in.md)。
 
 スパムまたはフィッシングとして識別されている必要があるスパム フィルターを通過したメッセージを受信した場合は、必要に応じて Microsoft Spam Analysis チームと Microsoft フィッシング分析チームにメッセージを送信できます。 アナリストはメッセージを確認し、分類条件を満たす場合はサービス全体のフィルターに追加します。
 
@@ -65,7 +65,7 @@ ms.locfileid: "51206500"
    >
    > - 新しいメッセージの本文は空のままにします。
    >
-   > - 添付メッセージには、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web 形式) 形式を使用します。
+   > - 添付メッセージには、.msg (既定Outlook形式) または .eml (Web 形式の既定のOutlook) 形式を使用します。
 
 3. 完了したら、[送信] を **クリックします**。
 
@@ -75,7 +75,7 @@ ms.locfileid: "51206500"
 ## <a name="submit-false-positives-to-microsoft"></a>Microsoft に誤検知を送信する
 
 > [!TIP]
-> 次の手順を使用して誤検知を報告する代わりに、Outlook と Outlook on the web (以前は Outlook Web App と呼ばれる) のユーザーは、レポート メッセージ アドインまたはレポート フィッシング アドインを使用できます。 これらのツールをインストールして使用する方法の詳細については、「[](enable-the-report-message-add-in.md)レポート メッセージ アドインを有効にする」および「レポート フィッシング アドインを有効にする」[を参照してください](enable-the-report-phish-add-in.md)。
+> 次の手順を使用して誤検知を報告する代わりに、Outlook と Outlook のユーザーが web (以前は Outlook Web App) でレポート メッセージ アドインまたはレポート フィッシング アドインを使用できます。 これらのツールをインストールして使用する方法の詳細については、「[](enable-the-report-message-add-in.md)レポート メッセージ アドインを有効にする」および「レポート フィッシング アドインを有効にする」[を参照してください](enable-the-report-phish-add-in.md)。
 
 
 メッセージがスパムとして誤って識別された場合は、Microsoft スパム分析チームにメッセージを送信できます。 アナリストはメッセージを評価し、(分析の結果に応じて) サービス全体のフィルターを調整してメッセージを通過できます。
@@ -90,7 +90,7 @@ ms.locfileid: "51206500"
    >
    > - 新しいメッセージの本文は空のままにします。
    >
-   > - 添付メッセージには、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web 形式) 形式を使用します。
+   > - 添付メッセージには、.msg (既定Outlook形式) または .eml (Web 形式の既定のOutlook) 形式を使用します。
 
 3. 完了したら、[送信] を **クリックします**。
 
@@ -99,7 +99,7 @@ ms.locfileid: "51206500"
 
 ## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>申請から Microsoft へのデータはどこに保存されますか?
 
-データは、北米のデータ センター Office 365 コンプライアンス境界に存在します。 データは、フィルターの有効性を向上させるために、エンジニアリング チームのアナリストによって確認されます。
+データは、北米のデータ センター Office 365コンプライアンス境界に存在します。 データは、フィルターの有効性を向上させるために、エンジニアリング チームのアナリストによって確認されます。
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Microsoft に報告されたメッセージのコピーを受信するメール フロー ルールを作成する
 

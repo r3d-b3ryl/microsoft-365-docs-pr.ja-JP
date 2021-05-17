@@ -35,11 +35,11 @@ ms.locfileid: "51205296"
 
 ![セキュリティ コンプライアンス センターの [メール フロー] ダッシュボードの送信および受信メール フロー &ウィジェット](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
 
-ウィジェット内の情報は、Microsoft 365 のコネクタと TLS メッセージ保護に関連しています。 詳細については、以下のトピックを参照してください。
+ウィジェット内の情報は、コネクタと TLS メッセージ保護に関連Microsoft 365。 詳細については、以下のトピックを参照してください。
 
 - [コネクタを使用してメール フローを構成する](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 - [メール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
-- [Microsoft 365 での暗号化に関するテクニカル リファレンスの詳細](../../compliance/technical-reference-details-about-encryption.md)
+- [データの暗号化に関するテクニカル リファレンスMicrosoft 365](../../compliance/technical-reference-details-about-encryption.md)
 
 ## <a name="message-protected-in-transit-by-tls"></a>転送中に保護されたメッセージ (TLS によって)
 
@@ -47,18 +47,18 @@ ms.locfileid: "51205296"
 
 ![送信メール ウィジェットと受信メール ウィジェットの [詳細の表示] をクリックした後に表示される転送中 (TLS) フライアウトで保護されたメッセージ](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
 
-現在、TLS 1.2 は Microsoft 365 によって提供される TLS の最も安全なバージョンです。 多くの場合、コンプライアンス監査に使用されている TLS 暗号化を知る必要があります。 ほとんどの送信元および宛先の電子メール サーバー (所有していない、Microsoft は所有していない) と直接関係がない可能性があります。そのため、これらのサーバーで使用される TLS 暗号化を改善するためのオプションは多くはありません。
+現在、TLS 1.2 は、ユーザーが提供する TLS の最も安全なMicrosoft 365。 多くの場合、コンプライアンス監査に使用されている TLS 暗号化を知る必要があります。 ほとんどの送信元および宛先の電子メール サーバー (所有していない、Microsoft は所有していない) と直接関係がない可能性があります。そのため、これらのサーバーで使用される TLS 暗号化を改善するためのオプションは多くはありません。
 
-ただし、コネクタを使用 [して](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) 、電子メール サーバーと Microsoft 365 の間で送信されるメッセージに対して最適な TLS 保護を確保できます。 Microsoft 365 とパートナーに属する独自の電子メール サーバーまたはサーバー間のメール フローは、通常のメッセージよりも重要で機密性が高い場合が多いので、それらのメッセージにセキュリティと注意を追加する必要があります。
+ただし、コネクタを使用[して](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)、電子メール サーバーとメール サーバー間で送信されるメッセージに対して最適な TLS 保護をMicrosoft 365。 Microsoft 365 とパートナーに属する独自の電子メール サーバーまたはサーバー間のメール フローは、通常のメッセージよりも重要で機密性が高い場合が多いので、それらのメッセージにセキュリティと注意を追加する必要があります。
 
-自分のメール サーバーをアップグレードまたは修正して、使用されている TLS 暗号化を向上させるか、パートナーに連絡して同じことを行います。 コネクタ **レポートには、Microsoft** 365 コネクタを使用するメッセージのメール フロー ボリュームと TLS 暗号化の両方が表示されます。
+自分のメール サーバーをアップグレードまたは修正して、使用されている TLS 暗号化を向上させるか、パートナーに連絡して同じことを行います。 コネクタ **レポートには、** メール フロー ボリュームと TLS 暗号化の両方が、ユーザーのコネクタを使用するメッセージMicrosoft 365表示されます。
 
 [コネクタ レポート] リンク **をクリックすると** 、コネクタ レポートに [移動できます](view-mail-flow-reports.md#connector-report)。 関連付けられた条件が検出された場合は、[ **コネクタ** ] レポート ページで次の分析情報を使用できます。
 
 - **重要な TLS1.0 メール フローが表示される受信パートナー コネクタ**
 - **重要な TLS1.0 メール フローが表示される受信 OnPremises コネクタ**
 
-TLS 1.0 接続の場合、MICROSOFT 365 で TLS 1.0 のサポートが最終的に非推奨になった場合に、問題を回避するために、メール サーバーまたはパートナーのサーバーをアップグレードまたは修正する必要があります。
+TLS 1.0 接続の場合、Microsoft 365 で TLS 1.0 のサポートが最終的に非推奨になった場合に、問題を回避するために、メール サーバーまたはパートナーのサーバーをアップグレードまたは修正する必要があります。
 
 ## <a name="see-also"></a>関連項目
 

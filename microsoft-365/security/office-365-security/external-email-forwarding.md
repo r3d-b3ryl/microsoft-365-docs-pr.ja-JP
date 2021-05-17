@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51205413"
 ---
-# <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Microsoft 365 での外部メールの自動転送を制御する
+# <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>外部メールの自動転送を制御Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51205413"
 管理者として、自動的に転送されるメッセージを外部受信者 (組織外の受信者) に制限または制御する会社の要件がある場合があります。 電子メールの転送は便利ですが、情報の漏えいによるセキュリティ リスクを引き起す可能性があります。 攻撃者は、この情報を使用して組織またはパートナーを攻撃する可能性があります。
 
 
-Microsoft 365 では、次の種類の自動転送を利用できます。
+自動転送の次の種類は、次のMicrosoft 365。
 
 - ユーザーは受信 [トレイ ルールを](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) 構成して、メッセージを外部の送信者に自動的に転送できます (意図的に、またはアカウントが侵害された結果)。
 
@@ -62,7 +62,7 @@ Microsoft 365 では、次の種類の自動転送を利用できます。
 
 - [一部またはすべての](/exchange/mail-flow-best-practices/remote-domains/remote-domains) 外部ドメインへの自動メール転送を許可またはブロックするリモート ドメイン。
 
-- [Exchange](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)メール フロー ルール (トランスポート ルールとも呼ばれる) の条件とアクションで、自動的に転送されたメッセージを検出して外部受信者にブロックします。
+- メール フロー ルール (トランスポート[Exchangeとも](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)呼ばれる) で、自動的に転送されたメッセージを検出して外部受信者にブロックする条件とアクション。
 
 リモート ドメイン設定とメール フロー ルールは、送信スパム フィルター ポリシーの設定とは独立しています。 以下に例を示します。
 

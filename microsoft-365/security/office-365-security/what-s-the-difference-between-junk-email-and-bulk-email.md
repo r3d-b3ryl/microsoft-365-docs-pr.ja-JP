@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) の迷惑メール (スパム) とバルク メール (グレー メール) の違いについて説明します。
+description: 管理者は、迷惑メール (スパム) とバルク メール (グレー メール) の違いについて、電子メール (EOP) Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: fc9c94946c3da2f9a14f45070a86c557a5c7dc85
@@ -35,7 +35,7 @@ ms.locfileid: "51206975"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスのない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織のメールボックスを持つ Microsoft 365 組織では、お客様は「迷惑メールとバルク メールの違いは何ですか」と尋ねる場合があります。 このトピックでは、その違いと、EOP で使用できるコントロールについて説明します。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、顧客は「迷惑メールとバルク メールの違いは何ですか」と尋ねる場合があります。 このトピックでは、その違いと、EOP で使用できるコントロールについて説明します。
 
 - **迷惑メール** はスパムです。これは、迷惑なメッセージで、普遍的に必要とされないメッセージ (正常に識別される) です。 既定では、EOP は、ソースメールサーバーの評価に基づいてスパムを拒否します。 メッセージが送信元 IP の検査を通過した場合は、スパムフィルタリングに送信されます。 迷惑メールフィルターによってメッセージがスパムとして分類された場合、メッセージは (既定では) 対象の受信者に配信されて、[迷惑メール] フォルダーに移動します。
 

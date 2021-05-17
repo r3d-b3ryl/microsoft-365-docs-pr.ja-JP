@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: 一部の個々のユーザー パスワードを有効期限が切れなWindows PowerShell。
+description: 一部の個々のユーザー パスワードに有効期限を設定する方法については、Windows PowerShell。
 ms.openlocfilehash: c70fce1c3ea9cb1dea66982a27ddb24e2b2de255
 ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
@@ -39,12 +39,12 @@ ms.locfileid: "51222066"
 
 これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
 
-Microsoft クラウド サービスのグローバル管理者は [、Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) を使用して、特定のユーザーに対して有効期限が切れないパスワードを設定できます。 AzureAD コマンドレット [を使用して](/powershell/module/Azuread) 、有効期限が切れない構成を削除したり、有効期限が切れないユーザー パスワードを確認することもできます。
+Microsoft クラウド サービスのグローバル管理者は、Azure Active Directory [PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)を使用して、Graphユーザーに対して有効期限が切れないパスワードを設定できます。 AzureAD コマンドレット [を使用して](/powershell/module/Azuread) 、有効期限が切れない構成を削除したり、有効期限が切れないユーザー パスワードを確認することもできます。
 
 このガイドは、Intune や Microsoft 365 などの他のプロバイダーにも適用されます。これは、Azure AD ID およびディレクトリ サービスにも依存します。 パスワードの有効期限は、変更できるポリシーの唯一の部分です。
 
 > [!NOTE]
-> ディレクトリ同期によって同期されないユーザー アカウントのパスワードのみ、有効期限が切れない状態に構成できます。 ディレクトリ同期の詳細については [、「Connect AD Azure AD」 を参照してください](/azure/active-directory/connect/active-directory-aadconnect)。
+> ディレクトリ同期によって同期されないユーザー アカウントのパスワードのみ、有効期限が切れない状態に構成できます。 ディレクトリ同期の詳細については[、「Azure](/azure/active-directory/connect/active-directory-aadconnect)Connect ADを使用AD。
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>パスワードの有効期限ポリシーを確認する方法
 

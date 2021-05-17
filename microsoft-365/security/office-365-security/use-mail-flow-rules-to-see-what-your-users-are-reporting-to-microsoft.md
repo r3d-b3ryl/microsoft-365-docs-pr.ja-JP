@@ -32,15 +32,15 @@ ms.locfileid: "51206099"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスのない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織のメールボックスを持つ Microsoft 365 組織では、「メッセージと[](report-junk-email-messages-to-microsoft.md)ファイルを Microsoft に報告する」で説明したように、ユーザーが分析のために Microsoft にメッセージを報告する方法は複数あります。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織の Exchange Online メールボックスのない組織では、「メッセージとファイルを Microsoft に報告する」の説明に従って、ユーザーが分析のために Microsoft[](report-junk-email-messages-to-microsoft.md)にメッセージを報告する方法は複数あります。
 
 ユーザーが Microsoft に報告するメッセージを探すメール フロー ルール (トランスポート ルールとも呼ばれる) を作成し、これらの報告されたメッセージのコピーを受信する BCC 受信者を構成できます。
 
-メール フロー ルールは、Exchange 管理センター (EAC) と PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織向け Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) に作成できます。
+メール フロー ルールは、Exchange 管理センター (EAC) および PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織用の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) に作成できます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- この記事の手順を実行するには、Exchange Online または Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定では、組織の管理、コンプライアンス管理 **(グローバル** 管理者)、レコード管理の役割グループに割り当てられているトランスポート ルールの役割が必要です。 
+- この記事の手順を実行するには、Exchange OnlineまたはExchange Online Protectionにアクセス許可を割り当てる必要があります。 具体的には、既定では、組織の管理、コンプライアンス管理 **(グローバル** 管理者)、レコード管理の役割グループに割り当てられているトランスポート ルールの役割が必要です。 
 
   詳細については、次のトピックをご覧ください。
 
@@ -48,11 +48,11 @@ Exchange Online メールボックスのない Exchange Online またはスタ�
   - [スタンドアロン EOP のアクセス許可](feature-permissions-in-eop.md)
   - [役割グループ内のメンバーの一覧を変更する EAC を使用する](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Exchange Online で EAC を開く方法については、「Exchange Online [の Exchange 管理センター」を参照してください](/Exchange/exchange-admin-center)。 スタンドアロン EOP で EAC を開く方法については、「 [スタンドアロン EOP の Exchange 管理センター」を参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- EAC を開く方法については、「Exchange Onlineの管理[Exchange」を参照Exchange Online。](/Exchange/exchange-admin-center) スタンドアロン EOP で EAC を開く方法については、「スタンドアロン[EOP Exchange管理センター」を参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- Exchange Online およびスタンドアロン EOP のメール フロー ルールの詳細については、次のトピックを参照してください。
+- EOP とスタンドアロン EOP のメール フロー ルールExchange Online詳細については、次のトピックを参照してください。
   - [Exchange Online のメール フロー ルール (トランスポート ルール)](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
   - [Exchange Online のメール フロー ルールでの条件と例外 (述語)](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
   - [Exchange Online でのメール フロー ルールの処理](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
@@ -78,9 +78,9 @@ Exchange Online メールボックスのない Exchange Online またはスタ�
 
      エントリを編集するには、エントリを選択し、[編集] **アイコンを** ![ クリックします ](../../media/ITPro-EAC-EditIcon.png) 。 エントリを削除するには、そのエントリを選択し、[削除] **アイコンを** ![ クリックします ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
-     完了したら、 **[OK]** をクリックします。
+     完了したら、**[OK]** をクリックします。
 
-   - **[Bcc] ボックス** に **[受信者を追加** \> **する] を選択します**。 表示されるダイアログで、追加する受信者を見つけて選択します。 完了したら、 **[OK]** をクリックします。
+   - **[Bcc] ボックス** に **[受信者を追加** \> **する] を選択します**。 表示されるダイアログで、追加する受信者を見つけて選択します。 完了したら、**[OK]** をクリックします。
 
 4. 追加の選択を行って、ルールの監査、ルールのテスト、特定の期間中のルールのアクティブ化、その他の設定を行います。 ルールを適用する前に、ルールをテストすることをお勧めします。
 

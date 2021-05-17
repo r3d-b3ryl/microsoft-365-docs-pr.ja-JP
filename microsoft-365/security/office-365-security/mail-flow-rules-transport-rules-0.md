@@ -29,21 +29,21 @@ ms.locfileid: "51206270"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、メール フロー ルール (トランスポート ルールとも呼ばれる) を使用して、組織を流れるメッセージを識別して処理できます。
+Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織では、メール フロー ルール (トランスポート ルールとも呼ばれる) を使用して、組織を流れるメッセージを識別してアクションを実行できます。
 
 このトピックでは、メール フロー ルールのコンポーネントと、その動作について説明します。
 
-メール フロー ルールを作成、コピー、および管理する手順については、「Exchange Online でメール フロー ルールを管理する」 [を参照してください](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。 ルールごとに、ルールを適用、ルールをテスト、ルールをテストして送信者に通知するという、いずれかのオプションを選択できます。 テスト オプションの詳細については、「Test [mail flow rules and](/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) [Policy Tips in Exchange Online」を参照してください](/exchange/security-and-compliance/data-loss-prevention/policy-tips)。
+メール フロー ルールを作成、コピー、および管理する手順については、「メール フロー ルールの管理」を参照[Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) ルールごとに、ルールを適用、ルールをテスト、ルールをテストして送信者に通知するという、いずれかのオプションを選択できます。 テスト オプションの詳細については、「Test [mail flow rules and](/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) Policy[ヒント」をExchange Online。](/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 
 メール フロー ルールに一致したメッセージに関する概要と詳細レポートについては、「メール保護レポートを使用してマルウェア、スパム、およびルールの検出に関するデータを表示する」を [参照してください](/exchange/monitoring/use-mail-protection-reports)。
 
 メール フロー ルールを使用して特定のメッセージング ポリシーを実装するには、次のトピックを参照してください。
 
-- [メール フロー ルールを使用して Exchange Online でメッセージ添付ファイルを検査する](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+- [メール フロー ルールを使用して、メール フロー内のメッセージ添付ファイルをExchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [Office 365 Enterprise で暗号化を設定する](../../compliance/set-up-encryption.md)
 
-- [Exchange Online での組織全体のメッセージの免責事項、署名、フッター、またはヘッダー](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+- [組織全体のメッセージの免責事項、署名、フッター、またはヘッダー Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
 
 - [メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
@@ -51,7 +51,7 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
 - [Exchange Online Protection でファイルの添付のブロックを通じてマルウェアの脅威を削減する](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [365 で電子メール メッセージを暗号化または暗号化解除するOfficeする](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
+- [メール メッセージを暗号化または暗号化解除するためのルールを定義Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
 
 次のビデオでは、スタンドアロン EOP でメール フロー ルールを設定するデモンストレーションを示します。
 
@@ -63,13 +63,13 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
 - **条件**: アクションを適用するメッセージを識別します。 一部の条件は、メッセージ ヘッダー フィールド (例、宛先、差出人、または CC フィールド) を確認します。 その他の条件はメッセージ プロパティ (例、メッセージの件名、本文、添付ファイル、メッセージ サイズ、またはメッセージ分類) を確認します。 ほとんどの条件は、比較演算子 (例、次と一致する、次と一致しない、または次が含まれる) と一致する値を指定する必要があります。 条件または例外が 1 つもない場合、ルールはすべてのメッセージに適用されます。
 
-スタンドアロン EOP のメール フロー ルール条件の詳細については、「Exchange Online のメール フロー ルールの条件と例外 [(述語)」を参照してください](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+スタンドアロン EOP のメール フロー ルール条件の詳細については、「メール フロー ルールの条件と例外[(述語)」](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)を参照Exchange Online。
 
 - **例外**: 必要に応じて、アクションを適用しないメッセージを識別します。 条件で使用可能なメッセージ識別子と同じものが、例外でも使用可能です。 例外は条件より優先され、メッセージが構成されているすべての条件に一致していても、そのメッセージにルール アクションが適用されないようにします。
 
 - **Actions**: ルール内の条件に一致し、例外と一致しないメッセージに対して実行する処理を指定します。 例外は条件より優先され、メッセージが構成されているすべての条件に一致していても、そのメール メッセージにアクションが適用されないようにします。
 
-スタンドアロン EOP で使用可能なメール フロー ルールアクションの詳細については、「Exchange Online のメール [フロー ルールアクション」を参照してください](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+スタンドアロン EOP で使用できるメール フロー ルールアクションの詳細については、「メール フロー ルールアクション」を参照[Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
 - **プロパティ**: 条件、例外、またはアクションではない他のルール設定を指定します。 たとえば、いつルールを適用するか、ルールを強制するか、あるいはテストするかどうか、およびルールを有効化する期間などです。
 
@@ -122,7 +122,7 @@ Use a transport rule so messages can bypass Clutter
 |組織を通過するメッセージにはいくつかの種類があります。次の表に、トランスポート ルールで処理できるメッセージの種類を示します。|メッセージの種類|
 |---|---|
 |**通常の** メッセージ : 1 つのリッチ テキスト形式 (RTF)、HTML、またはプレーン テキスト メッセージ本文、またはマルチパートまたは代替メッセージ本文のセットを含むメッセージ。|はい|
-|**Office 365 メッセージ** の暗号化: 365 で 365 メッセージOffice暗号化されたメッセージOfficeします。 詳細については、「[Office 365 での暗号化](../../compliance/encryption.md)」をご覧ください。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <p> 暗号化されたメッセージの内容を検査または変更するルールの場合は、トランスポート復号化が有効になっている (必須または省略可能、既定値は省略可能) を確認する必要があります。 詳細については、「Define rules to encrypt or decrypt email messages in Office [365](../../compliance/define-mail-flow-rules-to-encrypt-email.md)」 を参照してください。|
+|**Office 365 Message Encryption**: Office 365 Message Encryptionで暗号化Office 365。 詳細については、「[Office 365 での暗号化](../../compliance/encryption.md)」をご覧ください。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <p> 暗号化されたメッセージの内容を検査または変更するルールの場合は、トランスポート復号化が有効になっている (必須または省略可能、既定値は省略可能) を確認する必要があります。 詳細については、「メール メッセージを暗号化または暗号化解除するためのルールを定義する」[を参照Office 365。](../../compliance/define-mail-flow-rules-to-encrypt-email.md)|
 |**S/MIME 暗号化されたメッセージ**|ルールは、エンベロープ ヘッダーにのみアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <p> メッセージ コンテンツの検査を必要とする条件を使用したルール、またはメッセージのコンテンツを変更するアクションを処理することはできません。|
 |**RMS で保護されたメッセージ**: RMS (RMS) Active Directory Rights Management サービス (AD RMS) ポリシーが適用されたメッセージ。|ルールは常にエンベロープ ヘッダーにアクセスでき、それらのヘッダーを検査する条件に基づいてメッセージを処理できます。 <p> RMS で保護されたメッセージの内容を検査または変更するルールの場合は、トランスポート復号化が有効になっている (必須または省略可能、既定値は省略可能) を確認する必要があります。|
 |**クリア署名されたメッセージ**: 署名されているが暗号化されていないメッセージ。|はい|
@@ -133,13 +133,13 @@ Use a transport rule so messages can bypass Clutter
 
 ## <a name="what-else-should-i-know"></a>その他の注意事項
 
-- Exchange **Online** Protection では、ルールの Version プロパティまたは **RuleVersion** プロパティの値は重要ではありません。
+- ルール **の Version** プロパティまたは **RuleVersion** プロパティの値は、Exchange Online Protection。
 
 - メール フロー ルールを作成または変更した後に、新規または更新されたルールがメッセージに適用されるまで、最大で 30 分かかります。
 
 ## <a name="for-more-information"></a>詳細情報
 
-[メール フロー ルールを使用して Exchange Online でメッセージ添付ファイルを検査する](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+[メール フロー ルールを使用して、メール フロー内のメッセージ添付ファイルをExchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 [Office 365 での電子メールの暗号化](../../compliance/email-encryption.md)
 

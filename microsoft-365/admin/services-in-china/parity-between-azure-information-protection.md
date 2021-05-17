@@ -1,5 +1,5 @@
 ---
-title: 21Vianet がOffice 365 に対する Azure Information Protection のサポート
+title: 21Vianet がOffice 365 Azure Information Protection のサポート
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: 21Vianet が運用する 365 Office Azure Information Protection (AIP) の詳細と、中国の顧客向け構成方法について説明します。
+description: 21Vianet が運用する 21Vianet Office 365 Azure Information Protection (AIP) の詳細と、中国の顧客向け構成方法について説明します。
 monikerRange: o365-21vianet
 ms.openlocfilehash: bddba69ecc8b7b80d2b2c7c48d820ec22d293362
 ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
@@ -27,25 +27,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/30/2021
 ms.locfileid: "51418034"
 ---
-# <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet がOffice 365 に対する Azure Information Protection のサポート
+# <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet がOffice 365 Azure Information Protection のサポート
 
-この記事では、21Vianet と商用製品が運用する Office 365 の Azure Information Protection (AIP) サポートの違い、および AIP オンプレミス スキャナーをインストールしてコンテンツ スキャン ジョブを管理する方法など、中国の顧客向け AIP を構成するための具体的な手順について説明します。 &mdash;
+この記事では、21Vianet と商用製品が運用する Office 365 の Azure Information Protection (AIP) サポートの違い、および AIP オンプレミス スキャナーのインストール方法やコンテンツ スキャン ジョブの管理方法など、中国のお客様向け AIP を構成するための具体的な手順について説明します。 &mdash;
 
-## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>21Vianet Office 365 の AIP と商用サービスの違い
+## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>21Vianet がOffice 365する AIP と商用サービスの違い
 
-21Vianet オファーが運営する Office 365 の AIP を使用して、中国のすべての商用機能と機能を中国のお客様に提供しますが、強調表示する機能が不足しています。
+21Vianet オファーが運用する Office 365 の AIP を使用して、中国のすべての商用機能と機能を中国のお客様に提供しますが、強調表示する機能が不足しています。
 
-次の一覧には、21Vianet が運営する Office 365 の AIP と 2021 年 1 月の商用製品の間の既存のギャップが含まれます。
+次の一覧には、21Vianet が運用する 2021 Office 365の AIP と 2021 年 1 月の商用製品との間の既存のギャップが含まれます。
 
-- Information Rights Management (IRM) は、Microsoft 365 Apps for enterprise (ビルド 11731.100000 以上) でのみサポートされます。 Office 2010、Office 2013、その他Office 2016 バージョンはサポートされていません。
+- Information Rights Management (IRM) は、Microsoft 365 Apps for enterprise (ビルド 11731.10000 以上) でのみサポートされます。 Office 2010、Office 2013、その他Office 2016 バージョンはサポートされていません。
 
 - 現在、Active Directory Rights Management サービス (AD RMS) から AIP への移行は使用できません。
   
 - 商用クラウド内のユーザーとの保護されたメールの共有がサポートされています。
   
-- 現在、商用クラウド内のユーザーとのドキュメントと電子メールの添付ファイルの共有は利用できません。 これには、商用クラウドOffice 21Vianet ユーザーが運用する Office 365、商用クラウドで 21Vianet ユーザーが運用する非 Office 365、個人向け RMS ライセンスを持つユーザーが含まれます。
+- 現在、商用クラウド内のユーザーとのドキュメントと電子メールの添付ファイルの共有は利用できません。 これには、Office 365クラウド内の 21Vianet ユーザーが運用するユーザー、商用クラウド内の 21Vianet ユーザーが運用する Office 365 以外のユーザー、および RMS for Individuals ライセンスを持つユーザーが含まれます。
   
-- 現在、SharePoint を使用した IRM (IRM で保護されたサイトとライブラリ) は使用できません。
+- IRM と SharePoint (IRM で保護されたサイトとライブラリ) は現在使用できません。
   
 - 現在、RMS のモバイル AD拡張機能は使用できません。
 
@@ -62,7 +62,7 @@ ms.locfileid: "51418034"
 
 3. [AIP 統合ラベル 付けクライアントをインストールして構成します](#step-3-install-and-configure-the-aip-unified-labeling-client)。
 
-4. [Windows で AIP アプリを構成します](#step-4-configure-aip-apps-on-windows)。
+4. [アプリで AIP アプリを構成Windows。](#step-4-configure-aip-apps-on-windows)
 
 5. [AIP オンプレミス スキャナーをインストールし、コンテンツ スキャン ジョブを管理します](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs)。 
 
@@ -75,7 +75,7 @@ ms.locfileid: "51418034"
     1. 管理者として PowerShell を起動します。
     2. AIPService モジュールがインストールされていない場合は、実行します `Install-Module AipService` 。
     3. を使用してモジュールをインポート `Import-Module AipService` します。
-    4. を使用してサービスに接続します `Connect-AipService -environmentname azurechinacloud` 。
+    4. Connectを使用してサービスにアクセスします `Connect-AipService -environmentname azurechinacloud` 。
     5. 状態 `(Get-AipServiceConfiguration).FunctionalState` が . `Enabled`
 
 2. 機能状態がである場合は `Disabled` 、実行します `Enable-AipService` 。
@@ -92,7 +92,7 @@ ms.locfileid: "51418034"
 
     1. 管理者として PowerShell を起動します。
     2. AIPService モジュールがインストールされていない場合は、実行します `Install-Module AipService` 。
-    3. を使用してサービスに接続します `Connect-AipService -environmentname azurechinacloud` 。
+    3. Connectを使用してサービスにアクセスします `Connect-AipService -environmentname azurechinacloud` 。
     4. RMS `(Get-AipServiceConfiguration).RightsManagementServiceId` ID を取得するために実行します。
 
 2. DNS プロバイダーにログインし、ドメインの DNS 設定に移動し、新しい SRV レコードを追加します。
@@ -105,7 +105,7 @@ ms.locfileid: "51418034"
 
 3. Azure portal のテナントにカスタム ドメインを関連 [付ける](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)。 これにより、DNS のエントリが追加され、DNS 設定に値を追加した後に検証に数分かかる場合があります。
 
-4. 対応するグローバル管理者資格情報を使用して Microsoft 365 管理センターにログインし、ユーザー作成用のドメイン (たとえば `contoso.cn` ) を追加します。 検証プロセスでは、追加の DNS 変更が必要になる場合があります。 検証が完了すると、ユーザーを作成できます。
+4. 対応するグローバル管理者資格情報Microsoft 365管理センターにログインし、ユーザー作成用のドメイン (たとえば `contoso.cn` ) を追加します。 検証プロセスでは、追加の DNS 変更が必要になる場合があります。 検証が完了すると、ユーザーを作成できます。
 
 #### <a name="configure-dns-encryption---mac-ios-android"></a>DNS 暗号化の構成 - Mac、iOS、Android
 
@@ -130,11 +130,11 @@ AIP 統合ラベル 付けクライアントを Microsoft ダウンロード セ
 - [AIP クイック スタート: AIP クライアントを展開する](/azure/information-protection/quickstart-deploy-client)
 - [AIP 管理者ガイド](/azure/information-protection/rms-client/clientv2-admin-guide)
 - [AIP ユーザー ガイド](/azure/information-protection/rms-client/clientv2-user-guide)
-- [Microsoft 365 の感度ラベルの詳細](../../compliance/sensitivity-labels.md)
+- [感度ラベルMicrosoft 365する](../../compliance/sensitivity-labels.md)
 
-### <a name="step-4-configure-aip-apps-on-windows"></a>手順 4: Windows で AIP アプリを構成する
+### <a name="step-4-configure-aip-apps-on-windows"></a>手順 4: アプリで AIP アプリを構成Windows
 
-Windows 上の AIP アプリでは、Azure China の正しいソブリン クラウドをポイントするために、次のレジストリ キーが必要です。
+Azure China のWindowsソブリン クラウドをポイントするには、次のレジストリ キーが必要です。
 
 - レジストリ ノード = `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP`
 - Name = `CloudEnvType`

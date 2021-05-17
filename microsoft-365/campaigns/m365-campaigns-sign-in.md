@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 にサインインする
+title: サインインしてサインインMicrosoft 365
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -22,7 +22,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Microsoft 365 にサインインします。 電子メール、データ、コミュニケーションに対するサイバーセキュリティの脅威から、ビジネス、プラクティス、またはキャンペーンを保護します。
+description: サインインしてMicrosoft 365。 電子メール、データ、コミュニケーションに対するサイバーセキュリティの脅威から、ビジネス、プラクティス、またはキャンペーンを保護します。
 ms.openlocfilehash: eff81da84853130da2f2dcc0aaaf2a9834477a85
 ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
@@ -30,14 +30,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/27/2021
 ms.locfileid: "51398176"
 ---
-# <a name="sign-in-to-microsoft-365"></a>Microsoft 365 にサインインする
+# <a name="sign-in-to-microsoft-365"></a>サインインしてサインインMicrosoft 365
 
 ## <a name="for-business-or-campaign-admins"></a>ビジネス管理者またはキャンペーン管理者向け
 
-Microsoft 365 にサインアップした場合は、Microsoft 365 管理者です。サインインする方法を次に示します。
+アカウントにサインアップしたMicrosoft 365は、管理者Microsoft 365です。サインインする方法を次に示します。
 
 1. サインアップする手順 2 の手順 2 で、メール アドレスに送信したユーザー名とパスワード [を確認します](m365-campaigns-sign-up.md#steps-to-sign-up)。
-2. ブラウザーで、Microsoft 365 管理センターに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 。
+2. ブラウザーで、[管理センター] の [Microsoft 365に移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 。
 3. ユーザー名とパスワードを入力します。 **[サインイン]** を選びます。
 4. ページの上部にある [プレビュー] コントロール **を探** します。 [ **プレビューオン] を** 選択すると、「バンプアップ保護」で説明されているすべての [コントロールをキャンペーンで使用できます](m365-campaigns-security-overview.md)。
 

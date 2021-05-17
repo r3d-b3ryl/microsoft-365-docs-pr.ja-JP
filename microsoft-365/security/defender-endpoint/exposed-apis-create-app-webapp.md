@@ -30,7 +30,7 @@ ms.locfileid: "51200007"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,10 +38,10 @@ ms.locfileid: "51200007"
 
 このページでは、ユーザーなしで Defender for Endpoint へのプログラムによるアクセスを取得するアプリケーションを作成する方法について説明します。 ユーザーに代わって Defender for Endpoint へのプログラムによるアクセスが必要な場合は、「ユーザー コンテキストでアクセスを取得する」 [を参照してください](exposed-apis-create-app-nativeapp.md)。 必要なアクセス権が分からない場合は、「開始する」 [を参照してください](apis-intro.md)。
 
-Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、Defender for Endpoint の機能に基づいてワークフローを自動化し、革新するのに役立ちます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については [、「OAuth 2.0 Authorization Code Flow」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、Defender for Endpoint の機能に基づいてワークフローを自動化し、革新するのに役立ちます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については[、「OAuth 2.0 Authorization Code Flow」 を参照してください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般に、API を使用するには、次の手順を実行する必要があります。
-- Azure Active Directory (Azure Active Directory AD) アプリケーションを作成します。
+- アプリケーション (azure Azure Active Directory) AD作成します。
 - このアプリケーションを使用してアクセス トークンを取得します。
 - トークンを使用して Defender for Endpoint API にアクセスします。
 
@@ -51,9 +51,9 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 1. グローバル管理者の [役割を](https://portal.azure.com) 持つユーザーを使用して **Azure にログオン** します。
 
-2. **[Azure Active Directory アプリの**  >  **登録] [新規登録**  >  **] に移動します**。 
+2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。 
 
-   ![Microsoft Azure のイメージとアプリケーション登録へのナビゲーション](images/atp-azure-new-app2.png)
+   ![アプリケーション登録Microsoft Azureナビゲーションのイメージ](images/atp-azure-new-app2.png)
 
 3. 登録フォームで、アプリケーションの名前を選択し、[登録] を **選択します**。
 
@@ -141,10 +141,10 @@ $token = $authResponse.access_token
 
 ### <a name="use-c"></a>次のC#使用します。
 
-次のコードは、NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8 でテストされました。
+次のコードは、Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8 NuGetでテストされました。
 
 1. 新しいコンソール アプリケーションを作成します。
-1. NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory をインストールします](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)。
+1. [Microsoft.IdentityModel.clients.ActiveDirectory をインストールNuGet Microsoft.IdentityModel.Clients.ActiveDirectory をインストールします](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)。
 1. 次の項目を追加します。
 
     ```
@@ -175,7 +175,7 @@ $token = $authResponse.access_token
 ### <a name="use-curl"></a>Curl を使用する
 
 > [!NOTE]
-> 次の手順では、Windows 用のカールが既にコンピューターにインストールされていることを前提とします。
+> 次の手順では、コンピューターにWindowsの Curl が既にインストールされていることを前提とします。
 
 1. コマンド プロンプトを開き、Azure CLIENT_ID ID に設定します。
 1. Azure CLIENT_SECRETシークレットに設定します。
@@ -222,5 +222,5 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 ```
 
 ## <a name="see-also"></a>関連項目
-- [サポートされている Microsoft Defender for Endpoint API](exposed-apis-list.md)
+- [サポート対象 Microsoft Defender for Endpoint API](exposed-apis-list.md)
 - [ユーザーに代わって Microsoft Defender for Endpoint にアクセスする](exposed-apis-create-app-nativeapp.md)

@@ -39,17 +39,17 @@ ms.locfileid: "51398293"
 
 2019 年 10 月 22 日以降にサブスクリプションが作成された場合は、セキュリティの既定値が自動的に有効になっている可能性があります。確認するには、設定を確認する &mdash; 必要があります。
 
-Azure Active Directory (Azure Active Directory AD) でセキュリティの既定値を有効にするか、既に有効になっているか確認するには、次の方法を使用します。
+セキュリティの既定値を Azure Active Directory (Azure AD) で有効にするか、既に有効になっているか確認するには、次の方法を使用します。
 
-1. グローバル管理者資格情報を <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">使用して Microsoft 365</a> 管理センターにサインインします。
+1. グローバル管理者資格情報を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">使用Microsoft 365管理センター</a>にサインインします。
 
-2. 左側のウィンドウで、[すべて表示] を選択し **、[** 管理センター] で **[Azure Active Directory] を選択します**。
+2. 左側のウィンドウで、[すべて表示]**を選択し、[** 管理センター] の下の **[表示****]** をAzure Active Directory。
 
-3. Azure Active Directory 管理センターの左側のウィンドウ **で、[Azure Active Directory]** **を選択します**。
+3. 管理センターの左側のウィンドウ **で、[Azure Active Directory]** **を** Azure Active Directory。
 
 4. ダッシュボードの左側のメニューの [管理] セクション **で** 、[プロパティ] を **選択します**。
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="[プロパティ] メニュー項目の場所を示す Azure Active Directory 管理センターのスクリーンショット。":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="[プロパティ] メニュー Azure Active Directory場所を示す管理センターのスクリーンショット。":::
 
 5. [プロパティ] ページの下部 **で、[** セキュリティの既定の **管理] を選択します**。
 
@@ -68,10 +68,10 @@ Azure Active Directory (Azure Active Directory AD) でセキュリティの既�
 
 セキュリティの既定値は、すべてのお客様が使用できます。条件付きアクセスには、次のいずれかのプランのライセンスが必要です。
 
-- Azure Active Directory Premium P1 または P2
+- Azure Active Directory プレミアム P1 または P2
 - Microsoft 365 Business Premium
 - Microsoft 365 E3 または E5
-- エンタープライズ モビリティ & E3 または E5
+- Enterpriseモビリティ & E3 または E5
 
 条件付きアクセスを使用して、セキュリティの既定値で有効になっているポリシーと同等のポリシーを構成する場合は、次の手順ガイドを参照してください。
 
@@ -79,7 +79,7 @@ Azure Active Directory (Azure Active Directory AD) でセキュリティの既�
 - [Azure 管理に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [すべてのユーザーに対して MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Azure AD MFA](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) ADする - Azure Active Directory Premium P2 の一部である Azure AD ID 保護が必要です。
+- [Azure AD MFA の登録を](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)要求する - Azure AD ID 保護が必要です。これは P2 のAzure Active Directory プレミアムです。
 
 条件付きアクセスの詳細については、「条件付きアクセス [とは」を参照してください。](/azure/active-directory/conditional-access/overview) 条件付きアクセス ポリシーの作成の詳細については、「条件付きアクセス ポリシー [の作成」を参照してください](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。
 

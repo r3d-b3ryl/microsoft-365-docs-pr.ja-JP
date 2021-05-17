@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
-description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) で管理者監査ログを表示および検索する方法について説明します。
+description: 管理者は、スタンドアロン 監査ログ (EOP) で管理者監査ログを表示およびExchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 5ed1d1eb121c06e6f5727e8782ba1d8bc8d23a99
@@ -23,12 +23,12 @@ ms.locfileid: "51205043"
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>スタンドアロン EOP で管理者監査ログを表示する
 
 **適用対象**
-- [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
+- [Exchange Online Protectionスタンドアロン](exchange-online-protection-overview.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、Exchange 管理センター (EAC) またはスタンドアロン EOP PowerShell を使用して、管理監査ログ内のエントリを検索および表示できます。
+Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織では、Exchange 管理センター (EAC) またはスタンドアロン EOP PowerShell を使用して、管理監査ログ内のエントリを検索および表示できます。
 
 管理者監査ログには、管理者および管理者特権が割り当てられているユーザーによって実行されるスタンドアロン EOP PowerShell コマンドレットに基づいて、特定のアクションが記録されます。 管理者監査ログのエントリには、実行されたコマンドレット、使用されたパラメーター、コマンドレットを実行したユーザー、および影響を受けたオブジェクトに関する情報が提供されます。
 
@@ -42,13 +42,13 @@ Exchange Online メールボックスのないスタンドアロンの Exchange 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- Exchange 管理センターを開く方法については、「 [スタンドアロン EOP の Exchange 管理センター」を参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 管理センターを開Exchange、スタンドアロン[EOP Exchange管理センターを参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- この記事の手順を実行するには、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理、コンプライアンス管理、およびセキュリティ管理者の役割グループに割り当てられている監査ログまたはビュー専用監査ログの役割が必要です。  詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「役割グループのメンバーの一覧を [変更する EAC](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)を使用する」を参照してください。
+- この記事の手順を実行するには、Exchange Online Protectionにアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理、コンプライアンス管理、およびセキュリティ管理者の役割グループに割り当てられている監査ログまたはビュー専用監査ログの役割が必要です。  詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「役割グループのメンバーの一覧を [変更する EAC](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)を使用する」を参照してください。
 
-- この記事の手順に適用されるキーボード ショートカットの詳細については、「Exchange Online の Exchange 管理センターのキーボード ショートカット」 [を参照してください](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- この記事の手順 Exchangeに適用されるキーボード ショートカットの詳細については、「Exchange Online の管理センターのキーボード ショートカット」[を参照Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
 > 問題が発生する場合 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) フォーラムでサポートをご依頼ください。
@@ -87,7 +87,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
 - _ObjectIds パラメーターは_、コマンドレットによって変更されたオブジェクトによって結果をフィルター処理します。 有効な値は、オブジェクトが監査ログでどのように表されるのかによって異なります。 以下に例を示します。
 
-  - Name
+  - 名前
   - 標準の識別名 (たとえば、al-Zuhairi contoso.com/Users/Akia)
 
   このコマンドレットで他のフィルター パラメーターを使用して結果を絞り込み、対象のオブジェクトの種類を特定する必要があります。

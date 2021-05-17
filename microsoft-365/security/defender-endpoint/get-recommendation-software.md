@@ -1,7 +1,7 @@
 ---
 title: ソフトウェアによる推奨事項の取得
 description: 特定のソフトウェアに関連するセキュリティ推奨事項を取得します。
-keywords: apis、graph api、サポートされている API、get、セキュリティ推奨事項、ソフトウェアのセキュリティ推奨事項、脅威と脆弱性の管理、脅威と脆弱性管理 API
+keywords: apis、graph api、サポートされている api、get、セキュリティ推奨事項、ソフトウェアのセキュリティ推奨事項、脅威と脆弱性の管理、脅威と脆弱性の管理 API
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ ms.locfileid: "51199503"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -53,9 +53,9 @@ GET /api/recommendations/{id}/software
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 
 
 ## <a name="request-body"></a>要求本文

@@ -27,15 +27,15 @@ ms.locfileid: "51206555"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
+-  [Exchange Online Protectionスタンドアロン](exchange-online-protection-overview.md)
 
 次のサンプル スクリプトでは、複数のテナント (企業) を管理する Microsoft Exchange Online Protection (EOP) 管理者が Exchange Online PowerShell を使用して、テナントに構成設定を表示および/または適用できます。
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>複数のテナントでスクリプトまたはコマンドレットを実行するには
 
-1. まだインストールしていない場合は [、Exchange Online V2 モジュールをインストールします](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
+1. まだインストールしていない場合は[、V2 モジュールExchange Onlineインストールします](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
 
-2. スプレッドシート アプリ (Excel など) を使用して、次の詳細を含む .csv ファイルを作成します。
+2. スプレッドシート アプリ (たとえば、Excel) を使用して、次.csvファイルを作成します。
 
    - [UserName] 列: 接続に使用するアカウント (たとえば `admin@contoso.onmicrosoft.com` )。
    - コマンドレット列: 実行するコマンドレットまたはコマンド (たとえば、 `Get-AcceptedDomain` または `Get-AcceptedDomain | FT Name` )。
@@ -48,9 +48,9 @@ ms.locfileid: "51206555"
    admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
    ```
 
-3. .csv ファイルを見つけやすい場所に保存します (たとえば、c:\scripts\inputfile.csv)。
+3. ファイルを.csv簡単に見つけることができる場所に保存します (たとえば、c:\scripts\inputfile.csv)。
 
-4. メモ帳 [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) スクリプトをコピーし、ファイルを見つけやすい場所 (c:\scripts など) に保存します。
+4. RunCmdletOnMultipleTenants.ps1スクリプト[を](#runcmdletonmultipletenantsps1)メモ帳にコピーし、ファイルを見つけやすい場所 (c:\scripts など) に保存します。
 
 5. 次の構文を使用して、スクリプトを実行します。
 
@@ -69,7 +69,7 @@ ms.locfileid: "51206555"
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> 環境に合わせてスクリプト内 `Connect-IPPSSession` の行を変更する必要がある場合があります。 たとえば、Office 365 ドイツでは、スクリプトの現在の値とは異なる _ConnectionUri_ 値が必要です。 詳細については、「Connect to [Exchange Online Powershell」を参照してください](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+> 環境に合わせてスクリプト内 `Connect-IPPSSession` の行を変更する必要がある場合があります。 たとえば、ドイツOffice 365スクリプトの現在の値とは異なる _ConnectionUri_ 値が必要です。 詳細については、「Powershell のConnectをExchange Online[する」を参照してください](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

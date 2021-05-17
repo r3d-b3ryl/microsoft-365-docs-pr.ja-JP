@@ -31,15 +31,15 @@ ms.locfileid: "51205722"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスのない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織のメールボックスを持つ Microsoft 365 組織では、EOP は組織の全体的な状態と正常性を判断するのに役立つさまざまなレポートを提供します。 特定イベント (目的の受信者に届かなかったメッセージなど) のトラブルシューティングを支援するツール、さらに法令遵守の要件のための監査レポートもあります。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、EOP は組織の全体的な状態と正常性を判断するのに役立つさまざまなレポートを提供します。 特定イベント (目的の受信者に届かなかったメッセージなど) のトラブルシューティングを支援するツール、さらに法令遵守の要件のための監査レポートもあります。
 
 ## <a name="usage-reports"></a>利用状況レポート
 
-**Microsoft 365 グループ アクティビティ**: 作成および使用される Microsoft 365 グループの数に関する情報を表示します。
+**Microsoft 365グループ アクティビティ**: 作成および使用されるグループMicrosoft 365の数に関する情報を表示します。
 
 **電子メール アクティビティ**: 組織全体で、および特定のユーザーによって送信、受信、読み取られたメッセージの数に関する情報を表示します。
 
-**メール アプリの使用状況**: 使用するメール アプリに関する情報を表示します。 これには、各アプリの接続の総数と、接続している Outlook のバージョンが含まれます。
+**メール アプリの使用状況**: 使用するメール アプリに関する情報を表示します。 これには、各アプリの接続の総数と、接続しているアプリのOutlookが含まれます。
 
 **メールボックスの使用状況**: メールボックスの使用ストレージ、クォータ消費、アイテム数、および最後のアクティビティ (送信または読み取りアクティビティ) に関する情報を表示します。
 
@@ -47,25 +47,25 @@ Exchange Online メールボックスのない Exchange Online またはスタ�
 
 - [管理センターでの Microsoft 365 レポート - Microsoft 365 グループ](../../admin/activity-reports/office-365-groups.md)
 
-- [管理センターの Microsoft 365 レポート - メール アクティビティ](../../admin/activity-reports/email-activity.md)
+- [Microsoft 365管理センターのレポート - メール アクティビティ](../../admin/activity-reports/email-activity.md)
 
-- [管理センターの Microsoft 365 レポート - メール アプリの使用状況](../../admin/activity-reports/email-apps-usage.md)
+- [Microsoft 365管理センターのレポート - メール アプリの使用状況](../../admin/activity-reports/email-apps-usage.md)
 
-- [管理センターの Microsoft 365 レポート - メールボックスの使用状況](../../admin/activity-reports/mailbox-usage.md)
+- [Microsoft 365管理センターのレポート - メールボックスの使用状況](../../admin/activity-reports/mailbox-usage.md)
 
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 &センターのセキュリティ とコンプライアンス レポート
+## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>セキュリティ &管理センターのコンプライアンス Microsoft 365レポート
 
 これらの拡張されたレポートは EOP 管理者向けの対話型レポート エクスペリエンスを提供します。これには概要情報、および詳細についてドリルダウンする機能が含まれます。
 
-**Defender for Office 365**: Microsoft Defender for Office 365 の一部である安全なリンクと安全な添付ファイルに関する情報を表示します。
+**Defender for Office 365**: Microsoft Defender for セーフの一部セーフリンクと添付ファイルに関する情報をOffice 365。
 
 **EOP**: 組織のマルウェア検出、スプーフィングメール、スパム検出、メール フローに関する情報を表示します。
 
-[Defender for Office 365 のレポートを表示する](view-reports-for-mdo.md)
+[Defender for Office 365](view-reports-for-mdo.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Microsoft Graph を使用したカスタム レポート
 
-Microsoft Graph を使用して管理センターで使用できるレポートをプログラムで作成します。 詳細については [、「Microsoft Graph の概要」および「Microsoft Graph](/graph/overview) での [365](/graph/api/resources/report)使用状況Officeの操作」を参照してください。
+Microsoft サーバーを使用して管理センターで使用できるレポートをプログラムGraph。 詳細については[、「Microsoft Graphの](/graph/overview)概要」および「Microsoft Office 365での使用状況レポートの操作」[を参照Graph。](/graph/api/resources/report)
 
 ## <a name="message-trace"></a>メッセージの追跡
 
@@ -85,7 +85,7 @@ EOP のレポート機能とメッセージ トレース データが使用可�
 
 ****
 
-|レポートの種類|データ使用可能期間 (遡及期間)|遅延|
+|レポートの種類|データ使用可能期間 (遡及期間)|Latency|
 |---|---|---|
 |メール保護概要レポート|90 日|メッセージ データの集計は 24 ～ 48 時間以内にほぼ完了します。最大 5 日間のマイナーな増分集計変更が実施される場合があります。|
 |メール保護詳細レポート|90 日|生成後 7 日未満の詳細データに関しては、24 時間以内に表示されるはずですが、48 時間まで完成しない場合があります。最大 5 日分のマイナーな増分変更が実施される場合があります。 <p> 7 日以上前のメッセージに関する詳細レポートを表示するには、結果が出るまでに最大で数時間かかる場合があります。|

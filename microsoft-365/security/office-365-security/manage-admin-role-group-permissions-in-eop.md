@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
-description: 管理者は、Exchange Online Protection の Exchange 管理センター (EAC) でアクセス許可を割り当てる方法または削除する方法について学習できます。
+description: 管理者は、管理者管理センター (EAC) でアクセス許可を割り当てるExchange削除する方法についてExchange Online Protection。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 5e712c47d49508934ec7dd2438beff00eb6e1a20
@@ -25,21 +25,21 @@ ms.locfileid: "51206275"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
+-  [Exchange Online Protectionスタンドアロン](exchange-online-protection-overview.md)
 
-Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、Exchange 管理センター (EAC) を使用してユーザーを役割グループに追加できます。 役割グループにユーザーを追加すると、特定の管理タスクを実行するためのアクセス許可がユーザーに付与されます。 役割グループからユーザーを削除することもできます。
+Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織では、Exchange 管理センター (EAC) を使用してユーザーを役割グループに追加できます。 役割グループにユーザーを追加すると、特定の管理タスクを実行するためのアクセス許可がユーザーに付与されます。 役割グループからユーザーを削除することもできます。
 
 役割と役割グループの詳細については、「スタンドアロン [EOP のアクセス許可」を参照してください](feature-permissions-in-eop.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- Exchange 管理センター (EAC) を開く場合は、「 [スタンドアロン EOP の Exchange 管理センター」を参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 管理センター (EAC Exchange開く場合は、「スタンドアロン[EOP Exchange管理センター」を参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- スタンドアロン EOP PowerShell を開く方法については [、「Connect to Exchange Online Protection PowerShell」を参照してください](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- スタンドアロン EOP PowerShell を開く方法については[、「PowerShell ConnectをExchange Online Protectionする」を参照してください](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- この記事の手順を実行するには、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織 **の管理** 役割グループに割り当てられている役割 **の管理** 役割が必要です。 詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「役割グループのメンバーの一覧を [変更する EAC](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)を使用する」を参照してください。
+- この記事の手順を実行するには、Exchange Online Protectionにアクセス許可を割り当てる必要があります。 具体的には、既定で組織 **の管理** 役割グループに割り当てられている役割 **の管理** 役割が必要です。 詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「役割グループのメンバーの一覧を [変更する EAC](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)を使用する」を参照してください。
 
-- この記事の手順に適用されるキーボード ショートカットの詳細については、「Exchange Online の Exchange 管理センターのキーボード ショートカット」 [を参照してください](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- この記事の手順 Exchangeに適用されるキーボード ショートカットの詳細については、「Exchange Online の管理センターのキーボード ショートカット」[を参照Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
 > 問題が発生する場合 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) フォーラムでサポートをご依頼ください。
@@ -94,7 +94,7 @@ EAC で、[アクセス許可の管理者の役割] に移動し、変更する�
 
 2. 開く役割グループのプロパティ ページの [メンバー] **セクションで、** 次のいずれかの手順を実行します。
 
-   - [追加 **] アイコンを** ![ クリックします ](../../media/ITPro-EAC-AddIcon.png) 。 表示されるページで、追加するユーザーを見つけて、[追加] をクリックして **[->] をクリックします**。 ユーザーを選択し、 **必要に応じて [->** 追加] をクリックします。 完了したら、 **[OK]** をクリックします。
+   - [追加 **] アイコンを** ![ クリックします ](../../media/ITPro-EAC-AddIcon.png) 。 表示されるページで、追加するユーザーを見つけて、[追加] をクリックして **[->] をクリックします**。 ユーザーを選択し、 **必要に応じて [->** 追加] をクリックします。 完了したら、**[OK]** をクリックします。
 
    - 削除するユーザーを選択し、[削除] アイコン **を** ![ クリックします ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
@@ -246,7 +246,7 @@ Remove-RoleGroup -Identity "Training Administrators"
 
 - EAC で、[アクセス許可の管理者 **の** 役割] に移動し、役割グループが一覧表示 (または一覧に表示されていない \> ) を確認します。 役割グループを選択し、[詳細] ウィンドウで設定を確認するか、[編集] アイコンをクリックして設定 ![ ](../../media/ITPro-EAC-EditIcon.png) を確認します。
 
-- Exchange Online PowerShell で、役割グループの名前に置き換え、次のコマンドを実行して役割グループが存在する (または存在しない) か確認し、設定 \<Role Group Name\> を確認します。
+- PowerShell Exchange Online、役割グループの名前に置き換え、次のコマンドを実行して役割グループが存在する (または存在しない) か確認し、設定を \<Role Group Name\> 確認します。
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

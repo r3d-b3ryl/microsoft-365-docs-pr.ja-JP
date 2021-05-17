@@ -16,7 +16,7 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: 管理者は、検出されたファイルのアラートを設定する方法など、SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイルを有効にする方法について説明します。
+description: 管理者は、セーフ SharePoint、OneDrive、Microsoft Teams、Microsoft Teams の添付ファイルを有効にする方法について説明します。検出されたファイルのアラートを設定する方法も含まれます。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -35,33 +35,33 @@ ms.locfileid: "51206140"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender for Office 365 for SharePoint、OneDrive、および Microsoft Teams は、悪意のあるファイルを誤って共有する組織を保護します。 詳細については [、「SharePoint、OneDrive、Microsoft Teams](mdo-for-spo-odb-and-teams.md)の安全な添付ファイル」を参照してください。
+Microsoft Defender for Office 365、SharePoint、OneDrive、Microsoft Teamsファイルを誤って共有する組織を保護します。 詳細については、「添付ファイル[のセーフ、SharePoint、OneDrive」を](mdo-for-spo-odb-and-teams.md)参照Microsoft Teams。
 
-この記事では、SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイルを有効および構成するための手順について説明します。
+この記事では、添付ファイルの有効化と構成セーフ、SharePoint、OneDrive、およびMicrosoft Teams。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com> でセキュリティ/コンプライアンス センターを開きます。 ATP の [安全な添付ファイル] ページ **に直接移動するには** 、 を開きます <https://protection.office.com/safeattachmentv2> 。
+- <https://protection.office.com> でセキュリティ/コンプライアンス センターを開きます。 [ATP ファイルの添付ファイル] ページ **に直接移動セーフ開** きます <https://protection.office.com/safeattachmentv2> 。
 
-- SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイルを有効にするには、セキュリティ& コンプライアンスセンターの組織の管理またはセキュリティ管理者の役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+- SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルを有効にするには、セキュリティ & コンプライアンス センターの組織の管理またはセキュリティ管理者の役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-- SharePoint Online PowerShell を使用して悪意のあるファイルをダウンロードするユーザーを防ぐには[](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)、Azure AD のグローバル管理者または[SharePoint 管理者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator)の役割のメンバーである必要があります。
+- SharePoint Online PowerShell を使用して悪意のあるファイルをダウンロードするユーザーを防ぐには、Azure [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) AD のグローバル管理者または[SharePoint 管理者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator)の役割のメンバーである必要があります。
 
 - 組織で監査ログが有効になっているか確認します。 詳細については、「[監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」をご覧ください。
 
 - 設定を有効にするには、最大 30 分かかります。
 
-## <a name="step-1-use-the-security--compliance-center-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>手順 1: セキュリティ & コンプライアンス センターを使用して、SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイルを有効にする
+## <a name="step-1-use-the-security--compliance-center-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>手順 1: セキュリティ & コンプライアンス センターを使用して、セーフ、SharePoint、OneDriveのMicrosoft Teams
 
-1. セキュリティ コンプライアンス センターで&管理ポリシー  ATP の安全な添付ファイルに移動し、[ \>  \> グローバル設定]**をクリックします**。
+1. セキュリティ コンプライアンス センターで&に移動し、[脅威 **管理ポリシー** ATP セーフ添付ファイル] に移動し、[グローバル設定] \>  \> **をクリックします**。
 
-2. 表示される **[グローバル設定** ] フライアウトで **、[SharePoint、OneDrive、および Microsoft Teams** の Office 365 の Defender を有効にする] に移動します。 トグルを右に移動し、[トグル オン] を ![ ](../../media/scc-toggle-on.png) オンにし、SharePoint、OneDrive、Microsoft Teams の安全な添付ファイルを有効にします。
+2. 表示される **[グローバル設定**] の [Defender を有効にする] Office 365、SharePoint、OneDrive、および **Microsoft Teamsします。** トグルを右に移動し、[トグル] をオンに ![ ](../../media/scc-toggle-on.png) し、セーフ、SharePoint、OneDrive、Microsoft Teams。
 
    完了したら、**[保存]** をクリックします。
 
-### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Exchange Online PowerShell を使用して SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイルを有効にする
+### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>PowerShell Exchange Onlineを使用して、セーフ、SharePoint、OneDriveの添付ファイルMicrosoft Teams
 
-PowerShell を使用して SharePoint、OneDrive、Microsoft Teams の安全な添付ファイルを有効にする場合は [、Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) に接続し、次のコマンドを実行します。
+SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルを有効にする場合は[、Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)に接続し、次のコマンドを実行します。
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
@@ -69,11 +69,11 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 
 構文とパラメーターの詳細については [、「Set-AtpPolicyForO365」を参照してください](/powershell/module/exchange/set-atppolicyforo365)。
 
-## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>手順 2: (推奨) SharePoint Online PowerShell を使用して、ユーザーが悪意のあるファイルをダウンロードすることを防止する
+## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>手順 2: (推奨) オンライン PowerShell SharePointを使用して、ユーザーが悪意のあるファイルをダウンロードすることを防止する
 
 既定では、ユーザーは ATP によって検出された悪意のあるファイルを開く、移動、コピー、または共有できます。 ただし、悪意のあるファイルを削除してダウンロードできます。
 
-ユーザーが悪意のあるファイルをダウンロードできない場合は [、SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) に接続し、次のコマンドを実行します。
+ユーザーが悪意のあるファイルをダウンロードできない場合は、オンライン[powerShell SharePointに](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)接続し、次のコマンドを実行します。
 
 ```powershell
 Set-SPOTenant -DisallowInfectedFileDownload $true
@@ -88,7 +88,7 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 ## <a name="step-3-recommended-use-the-security--compliance-center-to-create-an-alert-policy-for-detected-files"></a>手順 3 (推奨) コンプライアンス センターでセキュリティ &を使用して、検出されたファイルのアラート ポリシーを作成する
 
-SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイルが悪意のあるファイルを検出したときに、自分と他の管理者に通知するアラート ポリシーを作成できます。 アラートの詳細については、「セキュリティ コンプライアンス センターでアクティビティアラートを作成する [&する」を参照してください](../../compliance/create-activity-alerts.md)。
+SharePoint、OneDrive、および Microsoft Teams の添付ファイルが悪意のあるファイルを検出したときに、セーフ 管理者に通知するアラート ポリシーを作成できます。 アラートの詳細については、「セキュリティ コンプライアンス センターでアクティビティアラートを作成する [&する」を参照してください](../../compliance/create-activity-alerts.md)。
 
 1. セキュリティ コンプライアンス [センターで&アラート](https://protection.office.com)ポリシーに移動するか \> **、** 開きます <https://protection.office.com/alertpolicies> 。
 
@@ -97,7 +97,7 @@ SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイル
 3. 新 **しいアラート ポリシー ウィザード** がフライアウトで開きます。[アラートに **名前を付け] ページ** で、次の設定を構成します。
 
    - **名前**: 一意でわかりやすい名前を入力します。 たとえば、ライブラリ内の悪意のあるファイル。
-   - **説明**: オプションの説明を入力します。 たとえば、SharePoint Online、OneDrive、または Microsoft Teams で悪意のあるファイルが検出された場合に管理者に通知します。
+   - **説明**: オプションの説明を入力します。 たとえば、悪意のあるファイルがオンライン、SharePoint、またはOneDriveで検出Microsoft Teams。
    - **重大度 :** 既定値 [低]**を選択** のままにするか、[中] または [高]**を****選択します**。
    - **カテゴリを選択する**: [脅威の **管理] を選択します**。
 
@@ -137,11 +137,11 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
-- SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイルが正常に有効になっていることを確認するには、次のいずれかの手順を使用します。
+- SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルが正常に有効になっていることを確認するには、次のいずれかの手順を実行します。
 
-  - セキュリティ [](https://protection.office.com)& コンプライアンス センターで、[脅威管理ポリシー  ATP の安全な添付ファイル] に移動し、[グローバル設定] を選択し \>  \> **、[SharePoint、OneDrive、Microsoft Teams の Office 365** の Defender を有効にする] 設定の値を確認します。
+  - セキュリティ [](https://protection.office.com)& コンプライアンス センターで、[脅威管理ポリシー ATP セーフ 添付ファイル] に移動し、[グローバル設定] を選択し \>  \> **、[SharePoint、OneDrive、** および Microsoft Teams の Office 365 の Defender を有効にする] 設定の値を確認します。
 
-  - Exchange Online PowerShell で、次のコマンドを実行してプロパティ設定を確認します。
+  - PowerShell Exchange Onlineで、次のコマンドを実行してプロパティ設定を確認します。
 
     ```powershell
     Get-AtpPolicyForO365 | Format-List EnableATPForSPOTeamsODB
@@ -169,4 +169,4 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
     構文とパラメーターの詳細については [、「Get-ActivityAlert」を参照してください](/powershell/module/exchange/get-activityalert)。
 
-- [SharePoint、OneDrive、](view-email-security-reports.md#threat-protection-status-report)および Microsoft Teams で検出されたファイルに関する情報を表示するには、脅威保護状態レポートを使用します。 具体的には、[データの表示方法: コンテンツ マルウェア **] ビュー \> を使用** できます。
+- 脅威保護[の状態レポートを使用](view-email-security-reports.md#threat-protection-status-report)して、検出されたファイルに関する情報を、SharePoint、OneDrive、およびMicrosoft Teams。 具体的には、[データの表示方法: コンテンツ マルウェア **] ビュー \> を使用** できます。

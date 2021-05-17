@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、特定のスプーフィング送信者を許可またはブロックできる Exchange Online Protection (EOP) でスプーフィング インテリジェンスについて説明します。
+description: 管理者は、特定のスプーフィングされた送信者を許可またはブロックできる Exchange Online Protection (EOP) でスプーフィング インテリジェンスについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c13c080829236b9a27b6a1a82e1c27256749b5c2
@@ -36,7 +36,7 @@ ms.locfileid: "51205463"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスのない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織のメールボックスを持つ Microsoft 365 組織では、受信電子メール メッセージは 2018 年 10 月現在、EOP によるスプーフィングから自動的に保護されます。 EOP は、フィッシングに対する組織の全体的な防御の一環としてスプーフィング インテリジェンスを使用します。 詳細については、「EOP でのスプーフィング防止 [保護」を参照してください](anti-spoofing-protection.md)。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、受信電子メール メッセージは 2018 年 10 月現在、EOP によるスプーフィングから自動的に保護されます。 EOP は、フィッシングに対する組織の全体的な防御の一環としてスプーフィング インテリジェンスを使用します。 詳細については、「EOP でのスプーフィング防止 [保護」を参照してください](anti-spoofing-protection.md)。
 
 送信者が電子メール アドレスをスプーフィングすると、その送信者は組織のドメインの 1 つのユーザー、または組織に電子メールを送信する外部ドメインのユーザーのように見える。 送信者をスプーフィングしてスパムメールやフィッシングメールを送信する攻撃者をブロックする必要があります。 しかし、正当な送信者がスプーフィングを行うシナリオがあります。 以下に例を示します。
 
@@ -78,7 +78,7 @@ Exchange Online メールボックスのない Exchange Online またはスタ�
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>セキュリティ コンプライアンス センター&を使用して、スプーフィングされた送信者を管理する
 
 > [!NOTE]
-> Microsoft 365 Enterprise E5 サブスクリプションを持っている場合、または Office 365 アドオン用の Microsoft Defender を個別に購入している場合は、スプーフィング インテリジェンス[](walkthrough-spoof-intelligence-insight.md)の分析情報を使用してドメインをスプーフィングしている送信者を管理できます。
+> Microsoft 365 Enterprise E5 サブスクリプションを持っている場合、または Office 365 アドオン用の Microsoft Defender を個別に購入している場合は、スプーフィング インテリジェンスの分析情報を使用してドメインをスプーフィングしている送信者を[管理](walkthrough-spoof-intelligence-insight.md)できます。
 
 1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
 
@@ -181,7 +181,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 - [EOP でフィッシング対策ポリシーを構成します](configure-anti-phishing-policies-eop.md)。
 
-- [Microsoft Defender でフィッシング対策ポリシーを構成して、Office 365 に設定します](configure-atp-anti-phishing-policies.md)。
+- [Microsoft Defender でフィッシング対策ポリシーを構成して](configure-atp-anti-phishing-policies.md)、Office 365。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
@@ -209,7 +209,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
   - 一覧からポリシーを選択します。 表示されるフライアウトで、[スプーフィング] セクションの値を **確認** します。
   - [既定 **のポリシー] をクリックします**。 表示されるフライアウトで、[スプーフィング] セクションの値を **確認** します。
 
-- Exchange Online PowerShell で、Office365 AntiPhish Default またはカスタム ポリシーの名前に置き換え、次のコマンドを実行して設定 \<Name\> を確認します。
+- PowerShell Exchange Online Office365 AntiPhish Default またはカスタム ポリシーの名前に置き換え、次のコマンドを実行して設定 \<Name\> を確認します。
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableSpoofIntelligence,EnableUnauthenticatedSender,AuthenticationFailAction
@@ -223,6 +223,6 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 - 送信者ポリシー フレームワーク (SPF) 構成を確認します。 SPF の概要と SPF を迅速に構成する方法については、「[スプーフィングを防止するために Microsoft 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。 Office 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)」をご確認ください。
 
-- DomainKeys Identified Mail (DKIM) 構成を確認します。 SPF と DMARC に加えて DKIM を使用して、攻撃者が自分のドメインから送信されたようなメッセージを送信するのを防ぐ必要があります。 DKIM では、電子メール メッセージのメッセージ ヘッダー内にデジタル署名を追加することができます。 詳細については [、「Use DKIM to validate outbound email](use-dkim-to-validate-outbound-email.md)from your custom domain in your custom domain in Office 365 .
+- DomainKeys Identified Mail (DKIM) 構成を確認します。 SPF と DMARC に加えて DKIM を使用して、攻撃者が自分のドメインから送信されたようなメッセージを送信するのを防ぐ必要があります。 DKIM では、電子メール メッセージのメッセージ ヘッダー内にデジタル署名を追加することができます。 詳細については[、「DKIM を使用して、](use-dkim-to-validate-outbound-email.md)カスタム ドメインから送信された送信メールを検証する」を参照Office 365。
 
-- ドメイン ベースのメッセージ認証、レポート、および準拠 (DMARC) 構成を確認します。 SPF および DKIM と共に DMARC を実装すると、メールのスプーフィングやフィッシングに対抗する追加の保護が得られます。 DMARC は、電子メールを受信するシステムが、ドメインから送信された SPF チェックまたは DKIM チェックに失敗したメッセージに対して、どのように対応するかを判断する際に役に立ちます。 詳細については [、「Use DMARC to validate email in Office 365」を参照してください](use-dmarc-to-validate-email.md)。
+- ドメイン ベースのメッセージ認証、レポート、および準拠 (DMARC) 構成を確認します。 SPF および DKIM と共に DMARC を実装すると、メールのスプーフィングやフィッシングに対抗する追加の保護が得られます。 DMARC は、電子メールを受信するシステムが、ドメインから送信された SPF チェックまたは DKIM チェックに失敗したメッセージに対して、どのように対応するかを判断する際に役に立ちます。 詳細については[、「DMARC を使用してメールを検証する」を参照Office 365。](use-dmarc-to-validate-email.md)

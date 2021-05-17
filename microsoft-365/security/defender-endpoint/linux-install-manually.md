@@ -408,5 +408,5 @@ Options:
 
 クライアント デバイス [から Linux](linux-resources.md#uninstall) 上の Defender for Endpoint を削除する方法の詳細については、「アンインストール」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
-- [エージェントの正常性の問題を調査する](health-status.md)
+## <a name="see-also"></a>関連項目
+- [エージェントの正常性に関する問題の調査](health-status.md)

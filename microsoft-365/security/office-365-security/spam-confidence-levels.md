@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) でメッセージに適用されたスパム信頼レベル (SCL) について学習できます。
+description: 管理者は、電子メール (EOP) 内のメッセージに適用されるスパム信頼度 (SCL) Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 951bbcb5fcbcc7b7916ee1c34c4ab489d54b6667
@@ -35,7 +35,7 @@ ms.locfileid: "51205163"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Exchange Online メールボックスのない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織のメールボックスを持つ Microsoft 365 組織では、受信メッセージは EOP のスパム フィルターを通過し、スパム スコアが割り当てられます。 このスコアは、X ヘッダー内のメッセージに追加される個々のスパム信頼レベル (SCL) にマップされます。 SCL が高いほど、メッセージがスパムである可能性が高くなります。 EOP は、SCL に基づいてメッセージに対してアクションを実行します。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、受信メッセージは EOP のスパム フィルターを通過し、スパム スコアが割り当てられます。 このスコアは、X ヘッダー内のメッセージに追加される個々のスパム信頼レベル (SCL) にマップされます。 SCL が高いほど、メッセージがスパムである可能性が高くなります。 EOP は、SCL に基づいてメッセージに対してアクションを実行します。
 
 次の表に、SCL の意味とメッセージに対して実行される既定のアクションについて説明します。 スパム フィルターの評決に基づいてメッセージに対して実行できるアクションの詳細については [、「EOP](configure-your-spam-filter-policies.md)でスパム対策ポリシーを構成する」を参照してください。
 
@@ -57,4 +57,4 @@ SCL と同様に、バルク 苦情レベル (BCL) は、不良バルク メー�
 
 ****
 
-![LinkedIn Learning New ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **to Microsoft 365** のショート アイコン LinkedIn Learning が提供する **Microsoft 365** 管理者と IT プロ向け無料のビデオ コースをご覧ください。
+![LinkedIn Learning New ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **to Microsoft 365** LinkedIn Learning によって提供される、Microsoft 365管理者と **IT** プロ向け無料のビデオ コースをご覧ください。

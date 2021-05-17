@@ -28,14 +28,14 @@ ms.locfileid: "51200211"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API の説明
-デバイスで Microsoft Defender ウイルス対策スキャンを開始します。
+デバイスMicrosoft Defender ウイルス対策スキャンを開始します。
 
 
 ## <a name="limitations"></a>制限事項
@@ -64,18 +64,18 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 Content-Type | string | application/json
 
 ## <a name="request-body"></a>要求本文
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 種類    | 説明
+パラメーター | 型    | 説明
 :---|:---|:---
 コメント |   文字列 | アクションに関連付けるコメント。 **必須**
-ScanType|   文字列  | スキャンの種類を定義します。 **必須**
+ScanType|   String  | スキャンの種類を定義します。 **必須**
 
 **ScanType** は、実行するスキャンの種類を制御し、次のいずれかを指定できます。
 

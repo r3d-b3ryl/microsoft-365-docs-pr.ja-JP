@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Exchange Online Protection ハイブリッド環境のユーザー迷惑メール フォルダーにスパムをルーティングする方法について説明します。
+description: 管理者は、ハイブリッド環境でスパムをユーザー迷惑メール フォルダーにルーティングするExchange Online Protectionできます。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -30,14 +30,14 @@ ms.locfileid: "51205518"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
+-  [Exchange Online Protectionスタンドアロン](exchange-online-protection-overview.md)
 
 > [!IMPORTANT]
-> このトピックは、ハイブリッド環境のスタンドアロン EOP のお客様専用です。 このトピックは、Exchange Online メールボックスを使用している Microsoft 365 のお客様には適用されません。
+> このトピックは、ハイブリッド環境のスタンドアロン EOP のお客様専用です。 このトピックは、メールボックスを使用しているMicrosoft 365にはExchange Onlineされません。
 
-ハイブリッド環境でスタンドアロンの Exchange Online Protection (EOP) のお客様である場合は、EOP のスパム フィルターの評決を認識して翻訳するようにオンプレミスの Exchange 組織を構成する必要があります。そのため、オンプレミスメールボックスの迷惑メール ルールはメッセージを迷惑メール フォルダーに移動できます。
+ハイブリッド環境でスタンドアロンの Exchange Online Protection (EOP) 顧客である場合は、EOP のスパム フィルターの評決を認識して翻訳するようにオンプレミス Exchange 組織を構成する必要があります。そのため、オンプレミスメールボックスの迷惑メール ルールはメッセージを迷惑メール フォルダーに移動できます。
 
-具体的には、次の EOP スパム対策ヘッダーと値を含むメッセージを検索する条件、およびこれらのメッセージのスパム信頼レベル (SCL) を 6 に設定するアクションを使用して、オンプレミスの Exchange 組織にメール フロー ルール (トランスポート ルールとも呼ばれる) を作成する必要があります。
+具体的には、以下の EOP スパム対策ヘッダーと値を含むメッセージを検索する条件と、それらのメッセージのスパム信頼レベル (SCL) を 6 に設定するアクションを使用して、オンプレミス Exchange 組織にメール フロー ルール (トランスポート ルールとも呼ばれる) を作成する必要があります。
 
 - `X-Forefront-Antispam-Report: SFV:SPM` (スパム フィルターによってスパムとしてマークされたメッセージ)
 
@@ -47,28 +47,28 @@ ms.locfileid: "51205518"
 
 これらのヘッダー値の詳細については、「スパム対策メッセージ [ヘッダー」を参照してください](anti-spam-message-headers.md)。
 
-このトピックでは、Exchange 管理センター (EAC) およびオンプレミス Exchange 組織の Exchange 管理シェル (Exchange PowerShell) で、これらのメール フロー ルールを作成する方法について説明します。
+このトピックでは、Exchange 管理センター (EAC) およびオンプレミス Exchange 組織の Exchange 管理シェル (Exchange PowerShell) でこれらのメール フロー ルールを作成する方法について説明します。
 
 > [!TIP]
 > メッセージをオンプレミスユーザーの迷惑メール フォルダーに配信する代わりに、EOP でスパムメッセージを検疫するスパム対策ポリシーを EOP で構成できます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- これらの手順を実行するには、オンプレミスの Exchange 環境でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理、コンプライアンス管理、およびレコード管理の役割に割り当てられているトランスポート ルールの役割を割り当てる必要があります。  詳細については、「役割グループに [メンバーを追加する」を参照してください](/Exchange/permissions/role-group-members#add-members-to-a-role-group)。
+- これらの手順を実行するには、オンプレミス環境でアクセス許可Exchange割り当てる必要があります。 具体的には、既定で組織の管理、コンプライアンス管理、およびレコード管理の役割に割り当てられているトランスポート ルールの役割を割り当てる必要があります。  詳細については、「役割グループに [メンバーを追加する」を参照してください](/Exchange/permissions/role-group-members#add-members-to-a-role-group)。
 
-- オンプレミスの Exchange 組織の迷惑メール フォルダーにメッセージが配信される場合と配信される場合は、次の設定の組み合わせによって制御されます。
+- 組織内の迷惑メール フォルダーにメッセージが配信される場合Exchangeは、次の設定の組み合わせによって制御されます。
 
-  - Exchange 管理シェルの [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)コマンドレットの _SCLJunkThreshold_ パラメーター値。 既定値は 4 です。つまり、SCL が 5 以上の場合は、ユーザーの迷惑メール フォルダーにメッセージを配信する必要があります。
+  - 管理シェルの [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)コマンドレットの _SCLJunkThreshold_ パラメーター値Exchangeします。 既定値は 4 です。つまり、SCL が 5 以上の場合は、ユーザーの迷惑メール フォルダーにメッセージを配信する必要があります。
 
-  - Exchange 管理シェルの [Set-Mailbox](/powershell/module/exchange/set-mailbox)コマンドレットの _SCLJunkThreshold_ パラメーター値。 既定値は空白 ($null) で、組織の設定が使用されます。
+  - 管理シェルの [Set-Mailbox](/powershell/module/exchange/set-mailbox)コマンドレットの _SCLJunkThreshold_ パラメーター値Exchangeします。 既定値は空白 ($null) で、組織の設定が使用されます。
 
-  詳細については [、「Exchange スパム信頼レベル (SCL) のしきい値」を参照してください](/Exchange/antispam-and-antimalware/antispam-protection/scl)。
+  詳細については、「スパム[信頼Exchange (SCL)](/Exchange/antispam-and-antimalware/antispam-protection/scl)のしきい値」を参照してください。
 
-  - メールボックスで迷惑メール ルールが有効になっているかどうか (Exchange管理シェルの[Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration)コマンドレットの Enabled パラメーター値は $true です)。 配信後にメッセージを迷惑メール フォルダーに実際に移動する迷惑メール ルールです。 既定では、迷惑メール ルールはメールボックスで有効になっています。 詳細については、「[Configure Exchange antispam settings on mailboxes](/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)」を参照してください。
+  - メールボックスで迷惑メール ルールが有効になっているかどうか (Exchange管理シェルの[Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration)コマンドレットの Enabled パラメーター値が $true です)。 配信後にメッセージを迷惑メール フォルダーに実際に移動する迷惑メール ルールです。 既定では、迷惑メール ルールはメールボックスで有効になっています。 詳細については、「[Configure Exchange antispam settings on mailboxes](/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)」を参照してください。
 
-- EAC を開く方法については、「Exchange Server Exchange[管理センター」を参照Exchange Server。](/Exchange/architecture/client-access/exchange-admin-center) Exchange 管理シェル を開くには、「[Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell)」を参照してください。
+- EAC を開く方法については、Exchange Serverの管理[Exchangeを参照Exchange Server。](/Exchange/architecture/client-access/exchange-admin-center) Exchange 管理シェル を開くには、「[Open the Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell)」を参照してください。
 
-- オンプレミス Exchange のメール フロー ルールの詳細については、次のトピックを参照してください。
+- オンプレミス のメール フロー ルールの詳細については、Exchangeトピックを参照してください。
 
   - [Exchange Server のメール フロー ルール](/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules)
 
@@ -110,7 +110,7 @@ ms.locfileid: "51205518"
 
 残りの EOP スパムの評決値 **(SFV:SPM、SFV:SKS、****または SFV:SKB)** に対して、次の手順を繰り返します。 
 
-## <a name="use-the-exchange-management-shell-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>Exchange 管理シェルを使用して、EOP スパム メッセージの SCL を設定するメール フロー ルールを作成する
+## <a name="use-the-exchange-management-shell-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>EOP スパム Exchange SCL を設定するメール フロー ルールを作成するには、次の管理シェルを使用します。
 
 次の構文を使用して、3 つのメール フロー ルールを作成します。
 
@@ -140,7 +140,7 @@ New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-F
 
 - EAC で、[メールフロールール] に移動し、ルールを選択し、[編集] アイコンをクリックして設定 \>  ![ ](../../media/ITPro-EAC-EditIcon.png) を確認します。
 
-- Exchange 管理シェルで、メール フロー ルールの名前に置き換え、次のコマンドを実行して設定 \<RuleName\> を確認します。
+- [管理Exchangeで、メール フロー ルールの名前に置き換え、次のコマンドを実行して設定 \<RuleName\> を確認します。
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

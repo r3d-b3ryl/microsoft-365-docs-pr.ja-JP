@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender でフィッシング対策ポリシーを構成する (Office 365)
+title: Microsoft Defender でフィッシング対策ポリシーを構成Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Microsoft Defender for microsoft Defender for Office 365 で使用できる高度なフィッシング対策ポリシーを作成、変更、および削除する方法について説明します。
+description: 管理者は、Microsoft Defender を使用している組織で利用可能な高度なフィッシング対策ポリシーを作成、変更、および削除する方法をOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 1c8d61aee9afb332a8426890560ad221a9c87c7d
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51218821"
 ---
-# <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender でフィッシング対策ポリシーを構成する (Office 365)
+# <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender でフィッシング対策ポリシーを構成Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -30,13 +30,13 @@ ms.locfileid: "51218821"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[microsoft Defender for Office 365](defender-for-office-365.md)のフィッシング対策ポリシーは、悪意のある偽装ベースのフィッシング攻撃や他の種類のフィッシング攻撃から組織を保護するのに役立ちます。 Exchange Online Protection (EOP) のフィッシング対策ポリシーと Microsoft Defender for Office 365 のフィッシング対策ポリシーの違いの詳細については、「フィッシング対策保護[](anti-phishing-protection.md)」を参照してください。
+[Microsoft Defender for Office 365](defender-for-office-365.md)のフィッシング対策ポリシーは、悪意のある偽装ベースのフィッシング攻撃や他の種類のフィッシング攻撃から組織を保護するのに役立ちます。 Exchange Online Protection (EOP) のフィッシング対策ポリシーと microsoft Defender for Office 365 のフィッシング対策ポリシーの違いの詳細については、「フィッシング対策保護」を参照[してください](anti-phishing-protection.md)。
 
 管理者は、既定のフィッシング対策ポリシーを表示、編集、および構成できます (ただし、削除はされません)。 さらに細分化するために、組織内の特定のユーザー、グループ、またはドメインに適用されるカスタムフィッシング対策ポリシーを作成することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (実行順序) を変更できます。
 
-フィッシング対策ポリシーは、セキュリティ コンプライアンス センターまたは Exchange Online PowerShell &構成できます。
+フィッシング対策ポリシーは、セキュリティ コンプライアンス センターまたは PowerShell &構成Exchange Onlineできます。
 
-Exchange Online Protection 組織 (つまり、Microsoft Defender for Office 365 の組織) で使用できるフィッシング対策ポリシーの構成の詳細については [、「EOP](configure-anti-phishing-policies-eop.md)でフィッシング対策ポリシーを構成する」を参照してください。
+Exchange Online Protection 組織 (つまり、Office 365 用 Microsoft Defender のない組織) で利用可能なフィッシング対策ポリシーの構成の詳細については[、「EOP](configure-anti-phishing-policies-eop.md)でフィッシング対策ポリシーを構成する」を参照してください。
 
 フィッシング対策ポリシーの基本的な要素は次のとおりです。
 
@@ -49,15 +49,15 @@ Exchange Online Protection 組織 (つまり、Microsoft Defender for Office 365
 - ポリシーを変更すると、名前、優先度、有効または無効、受信者フィルターに関連する設定によってフィッシング対策ルールが変更されます。 その他の設定はすべて、関連付けられたフィッシング対策ポリシーを変更します。
 - ポリシーを削除すると、フィッシング対策ルールと関連付けられたフィッシング対策ポリシーが削除されます。
 
-Exchange Online PowerShell では、ポリシーとルールを個別に管理します。 詳細については、この記事の後半の「Exchange Online PowerShell を使用して Microsoft Defender for Office [365](#use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365) のフィッシング対策ポリシーを構成する」を参照してください。
+PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理します。 詳細については、この記事の後半Exchange Online「Microsoft Defender for Office 365フィッシング対策ポリシーを構成するために[PowerShell](#use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365)を使用する」を参照してください。
 
-すべての Microsoft Defender for Office 365 組織には、次のプロパティを持つ Office365 AntiPhish Default という名前のフィッシング対策ポリシーが組み込みされています。
+すべての Microsoft Defender for Office 365には、次のプロパティを持つ Office365 AntiPhish Default という名前のフィッシング対策ポリシーが組み込みされています。
 
 - ポリシーは、ポリシーに関連付けられたフィッシング対策ルール (受信者フィルター) がない場合でも、組織内のすべての受信者に適用されます。
 - ポリシーにはカスタムの優先順位の値 **Lowest** が設定されており、変更することはできません (このポリシーは常に最後に適用されます)。 作成するどのカスタム ポリシーも、より高い優先順位を持ちます。
 - ポリシーは既定のポリシー (**IsDefault** のプロパティが `True` の値になっている) であり、既定のポリシーを削除することはできません。
 
-microsoft Defender for Office 365 のフィッシング対策保護の有効性を高めるには、特定のユーザーまたはユーザー グループに適用されるより厳しい設定でカスタムフィッシング対策ポリシーを作成できます。
+Office 365 の Microsoft Defender でのフィッシング対策保護の有効性を高めるには、特定のユーザーまたはユーザー グループに適用されるより厳密な設定でカスタムフィッシング対策ポリシーを作成できます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -74,16 +74,16 @@ microsoft Defender for Office 365 のフィッシング対策保護の有効性�
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) **の [組織の管理の** 表示のみ] 役割グループは、この機能への読み取り専用アクセスも提供します <sup>\*</sup> 。
+  - [**組織の管理の表示のみ**][](/Exchange/permissions-exo/permissions-exo#role-groups)役割グループは、Exchange Online機能への読み取り専用アクセスも提供します <sup>\*</sup> 。
   - <sup>\*</sup> セキュリティ コンプライアンス センター&読み取り専用アクセスを使用すると、ユーザーはカスタムフィッシング対策ポリシーの設定を表示できます。 読み取り専用のユーザーは、既定のフィッシング対策ポリシーの設定を表示できます。
 
-- microsoft Defender for Office 365 のフィッシング対策ポリシーの推奨設定については、「Defender for Office [365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)の設定」を参照してください。
+- Microsoft Defender for microsoft Defender for Office 365のフィッシング対策ポリシーに関する推奨設定については、「Defender for Office 365 設定」[を参照してください](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。
 
 - 新しいポリシーまたは更新されたポリシーを適用するには、最大 30 分かかります。
 
 - フィルター 処理パイプラインでフィッシング対策ポリシーが適用される場所については、「メール保護の順序と優先順位」 [を参照してください](how-policies-and-protections-are-combined.md)。
 
-## <a name="use-the-security--compliance-center-to-create-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>セキュリティ コンプライアンス センター&を使用して、Microsoft Defender for microsoft Defender for Office 365
+## <a name="use-the-security--compliance-center-to-create-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>セキュリティ コンプライアンス センター&使用して、Microsoft Defender でフィッシング対策ポリシーを作成Office 365
 
 セキュリティ & コンプライアンス センターでカスタムフィッシング対策ポリシーを作成すると、両方に同じ名前を使用して、フィッシング対策ルールと関連付けられたフィッシング対策ポリシーが同時に作成されます。
 
@@ -133,7 +133,7 @@ microsoft Defender for Office 365 のフィッシング対策保護の有効性�
 
 これらの一般的な設定を使用してフィッシング対策ポリシーを作成した後、次のセクションの手順を使用して、ポリシーの保護設定を構成します。
 
-## <a name="use-the-security--compliance-center-to-modify-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender & 365 のフィッシング対策ポリシーを変更するには、セキュリティ Officeを使用します。
+## <a name="use-the-security--compliance-center-to-modify-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>コンプライアンス センターのセキュリティ &を使用して、Microsoft Defender のフィッシング対策ポリシーを変更Office 365
 
 フィッシング対策ポリシー (作成した新しいポリシー、または既にカスタマイズした既存のポリシー) を変更するには、次の手順を使用します。
 
@@ -156,7 +156,7 @@ microsoft Defender for Office 365 のフィッシング対策保護の有効性�
 
    完了したら、任意のページで **[保存]** をクリックします。
 
-5. **偽装 :**[編集 **]** をクリックして、ポリシー内の保護された送信者と保護されたドメインを変更します。 これらの設定は、受信メッセージの差出人アドレスでスプーフィングされた送信者が (個別に、またはドメインごとに) 探すポリシーの条件です。 詳細については、「Microsoft Defender for microsoft Defender for Office [365」の「フィッシング対策ポリシーの偽装設定」を参照してください](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
+5. **偽装 :**[編集 **]** をクリックして、ポリシー内の保護された送信者と保護されたドメインを変更します。 これらの設定は、受信メッセージの差出人アドレスでスプーフィングされた送信者が (個別に、またはドメインごとに) 探すポリシーの条件です。 詳細については、「Microsoft Defender for Office 365」の「フィッシング対策ポリシーの偽装[設定」を参照してください](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
 
    - **保護するユーザーを追加する**: 既定値は Off **です**。 オンにするには、トグルを **[オン**] にスライドし、表示される [ユーザーの **追加]** ボタンをクリックします。
 
@@ -253,14 +253,14 @@ microsoft Defender for Office 365 のフィッシング対策保護の有効性�
 
    完了したら、任意のページで **[保存]** をクリックします。
 
-6. **ス** プーフィング : **[編集** ] をクリックしてスプーフィング インテリジェンスをオンまたはオフにし、Outlook で認証されていない送信者 ID をオンまたはオフにし、ブロックされたスプーフィングされた送信者からのメッセージに適用するアクションを構成します。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md#spoof-settings)。
+6. **ス** プーフィング : [編集] をクリックしてスプーフィング インテリジェンスをオンまたはオフにし、Outlook で認証されていない送信者 ID をオンまたはオフにし、ブロックされたスプーフィングされた送信者からのメッセージに適用するアクションを構成します。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md#spoof-settings)。
 
    これらの同じ設定は、EOP のフィッシング対策ポリシーでも使用できます。
 
    - **スプーフィング フィルターの** 設定 : 既定値は **On** で、オンのままにすることをお勧めします。 オフにする場合は、トグルを [オフ] に **スライドします**。 詳細については [、「EOP でスプーフィング インテリジェンスを構成する」を参照してください](learn-about-spoof-intelligence.md)。
 
      > [!NOTE]
-     > MX レコードが Microsoft 365 をポイントしない場合は、スプーフィング防止保護を無効にする必要があります。代わりに、コネクタの拡張フィルターを有効にできます。 手順については [、「Enhanced Filtering for Connectors in Exchange Online」を参照してください](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+     > MX レコードがスプーフィング対策保護を無効にする必要Microsoft 365。代わりに、コネクタの拡張フィルターを有効にできます。 手順については、「拡張フィルタリング[for Connectors in Exchange Online」 を参照してください](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
    - **認証されていない送信者機能を有効にする**: 既定値は On **です**。 オフにする場合は、トグルを [オフ] に **スライドします**。
 
@@ -280,7 +280,7 @@ microsoft Defender for Office 365 のフィッシング対策保護の有効性�
 
    完了したら、任意のページで **[保存]** をクリックします。
 
-7. **詳細設定:**[編集] **をクリック** して、高度なフィッシングしきい値を構成します。 詳細については [、「Microsoft Defender for microsoft Defender for Office 365」](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)の「フィッシング対策ポリシーの高度なフィッシングしきい値」を参照してください。
+7. **詳細設定:**[編集] **をクリック** して、高度なフィッシングしきい値を構成します。 詳細については、「Microsoft Defender for Office 365」の「フィッシング対策ポリシーの高度[なフィッシングのしきい値」を参照してください](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
 
    - **高度なフィッシングのしきい値**: 次のいずれかの値を選択します。
 
@@ -295,9 +295,9 @@ microsoft Defender for Office 365 のフィッシング対策保護の有効性�
 
 8. [ポリシーの編集 **] \<Name\> ページに戻り**、設定を確認し、[閉じる] を **クリックします**。
 
-### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy-in-microsoft-defender-for-office-365"></a>セキュリティ コンプライアンス センター&使用して、Microsoft Defender for microsoft Defender の既定のフィッシング対策ポリシーを変更Office 365
+### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy-in-microsoft-defender-for-office-365"></a>セキュリティ コンプライアンス センター&使用して、Microsoft Defender の既定のフィッシング対策ポリシーを変更Office 365
 
-Office 365 の Microsoft Defender の既定のフィッシング対策ポリシーは Office365 AntiPhish Default という名前で、ポリシーの一覧には表示されません。 既定のフィッシング対策ポリシーを変更するには、次の手順を実行します。
+microsoft Defender for Office 365 の既定のフィッシング対策ポリシーは Office365 AntiPhish Default という名前で、ポリシーの一覧には表示されません。 既定のフィッシング対策ポリシーを変更するには、次の手順を実行します。
 
 1. [セキュリティ & コンプライアンス センター] で、[**脅威管理ポリシー** ] ATP の \>  \> **フィッシング対策に移動します**。
 
@@ -317,7 +317,7 @@ Office 365 の Microsoft Defender の既定のフィッシング対策ポリシ�
 
 4. [ポリシー **の編集] [Office365 AntiPhish Default]** ページで、設定を確認し、[閉じる] を **クリックします**。
 
-### <a name="enable-or-disable-custom-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender でユーザー設定のフィッシング対策ポリシーを有効または無効にする (Office 365)
+### <a name="enable-or-disable-custom-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender でユーザー設定のフィッシング対策ポリシーを有効または無効にOffice 365
 
 1. [セキュリティ & コンプライアンス センター] で、[**脅威管理ポリシー** ] ATP の \>  \> **フィッシング対策に移動します**。
 
@@ -329,7 +329,7 @@ Office 365 の Microsoft Defender の既定のフィッシング対策ポリシ�
 
 既定のフィッシング対策ポリシーを無効にできない。
 
-### <a name="set-the-priority-of-custom-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender のカスタムフィッシング対策ポリシーの優先度を設定する (Office 365)
+### <a name="set-the-priority-of-custom-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender でユーザー設定のフィッシング対策ポリシーの優先度を設定Office 365
 
 既定では、フィッシング対策ポリシーには、作成された順序に基づく優先度が与えられる (新しいポリシーは、以前のポリシーよりも優先度が低くなります)。 優先度番号が小さいほど、ポリシーの優先度が高くなる (0 が最優先) ことを意味し、ポリシーは優先順位に従って処理されます (優先度の高いポリシーは、優先度の低いポリシーよりも先に処理されます)。 2つのポリシーが同じ優先順位を持つことはできません。最初のポリシーが適用されると、ポリシーの処理は停止します。
 
@@ -357,7 +357,7 @@ Office 365 の Microsoft Defender の既定のフィッシング対策ポリシ�
 
 5. 完了したら、**[閉じる]** をクリックします。
 
-## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender & 365 のフィッシング対策ポリシーを表示するには、セキュリティ Officeコンプライアンス センターを使用します。
+## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>セキュリティ コンプライアンス センター&使用して、Microsoft Defender のフィッシング対策ポリシーを表示Office 365
 
 1. [セキュリティ & コンプライアンス センター] で、[脅威 **管理ポリシー** ATP のフィッシング対策] \>  \> **に移動します**。
 
@@ -379,11 +379,11 @@ Office 365 の Microsoft Defender の既定のフィッシング対策ポリシ�
 
 既定のポリシーは削除できません。
 
-## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Exchange Online PowerShell を使用して、365 の Microsoft Defender でフィッシング対策ポリシー Officeする
+## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>PowerShell Exchange Onlineを使用して、Microsoft Defender でフィッシング対策ポリシーを構成Office 365
 
 前述したように、スパム対策ポリシーはフィッシング対策ポリシーとフィッシング対策ルールで構成されています。
 
-Exchange Online PowerShell では、フィッシング対策ポリシーとフィッシング対策ルールの違いが明らかです。 -AntiPhishPolicy コマンドレットを使用してフィッシング対策ポリシーを管理し **\* 、-AntiPhishRule** コマンドレットを使用してフィッシング対策ルールを管理します。 **\***
+PowerShell Exchange Online、フィッシング対策ポリシーとフィッシング対策ルールの違いは明らかです。 -AntiPhishPolicy コマンドレットを使用してフィッシング対策ポリシーを管理し **\* 、-AntiPhishRule** コマンドレットを使用してフィッシング対策ルールを管理します。 **\***
 
 - PowerShell では、最初にフィッシング対策ポリシーを作成してから、そのルールが適用されるポリシーを識別するフィッシング対策ルールを作成します。
 - PowerShell では、フィッシング対策ポリシーとフィッシング対策ルールの設定を個別に変更します。
@@ -619,14 +619,14 @@ Remove-AntiPhishRule -Identity "Marketing Department"
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
-Microsoft Defender for Office 365 でフィッシング対策ポリシーが正常に構成されたことを確認するには、次の手順を実行します。
+Microsoft Defender でフィッシング対策ポリシーが正常に構成されたことを確認するには、次Office 365手順を実行します。
 
 - [セキュリティ & コンプライアンス センター] で、[**脅威管理ポリシー** ] ATP の \>  \> **フィッシング対策に移動します**。 ポリシー、その状態の値、および **優先度** の値の一覧を **確認** します。 詳細を表示するには、次のいずれかの手順を実行します。
 
   - 一覧からポリシーを選択し、詳細をフライアウトで表示します。
   - [既定 **のポリシー] を** クリックし、詳細をフライアウトで表示します。
 
-- Exchange Online PowerShell で、ポリシーまたはルールの名前に置き換え、次のコマンドを \<Name\> 実行して設定を確認します。
+- PowerShell Exchange Online、ポリシーまたはルールの名前に置き換え、次のコマンドを \<Name\> 実行して設定を確認します。
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

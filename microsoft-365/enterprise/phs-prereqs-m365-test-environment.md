@@ -23,11 +23,11 @@ ms.locfileid: "51199443"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワード ハッシュ同期に必要な ID およびデバイス アクセスの前提条件
 
-*このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ テスト環境Microsoft 365にのみ使用できます。*
 
-[ID およびデバイス](../security/office-365-security/microsoft-365-policies-configurations.md) アクセス構成は、Azure Active Directory (Azure Active Directory )と統合されたエンタープライズ向け Microsoft 365 のすべてのサービスへのアクセスを保護するための一連の構成と条件付きアクセス ポリシーです。AD。
+[ID およびデバイス アクセス](../security/office-365-security/microsoft-365-policies-configurations.md)構成は、Azure Active Directory (Azure AD) と統合されたエンタープライズ向け Microsoft 365 のすべてのサービスへのアクセスを保護するための一連の構成と条件付きアクセス ポリシーです。
 
-この記事では、ID およびデバイス アクセス用のパスワード ハッシュ同期認証前提条件構成を使用して、[](../security/office-365-security/identity-access-prerequisites.md#prerequisites)ハイブリッドの要件を満たす Microsoft 365 テスト環境を構成する方法について説明します。
+この記事では、ID およびデバイス アクセス用のパスワード ハッシュ同期認証前提条件構成を使用して[](../security/office-365-security/identity-access-prerequisites.md#prerequisites)、ハイブリッドMicrosoft 365要件を満たすテスト環境を構成する方法について説明します。
 
 このテスト環境をセットアップするには、10 のフェーズがあります。
 
@@ -37,7 +37,7 @@ ms.locfileid: "51199443"
 4. パスワードの書き戻しを構成する
 5. すべてのユーザー アカウントのセルフ サービスによるパスワードのリセットを構成する
 6. すべてのユーザー アカウントに対する多要素認証を構成する
-7. ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする
+7. ドメインに参加しているコンピューターのデバイスの自動登録Windowsする
 8. Azure ADパスワード保護を構成する 
 9. Azure AD Identity Protection を有効化する
 10. Exchange Online および Skype for Business Online に対して先進認証を有効化する
@@ -87,9 +87,9 @@ User 2 アカウントのパスワードのリセットのみテストします�
 
 User 2 アカウントの多要素認証のみテストします。
 
-## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>フェーズ 7: ドメインに参加している Windows コンピューターのデバイスの自動登録を有効にする 
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>フェーズ 7: ドメインに参加しているコンピューターのデバイスの自動登録Windowsする 
 
-ドメイン [に参加している Windows コンピューター](/azure/active-directory/devices/hybrid-azuread-join-plan) のデバイスの自動登録を有効にするには、次の手順に従います。
+ドメイン[に参加しているコンピューターの](/azure/active-directory/devices/hybrid-azuread-join-plan)デバイスの自動登録を有効にするには、次のWindows従います。
 
 ## <a name="phase-8-configure-azure-ad-password-protection"></a>フェーズ 8: Azure のパスワード保護AD構成する 
 
@@ -99,7 +99,7 @@ User 2 アカウントの多要素認証のみテストします。
 
 [テスト ラボ ガイドの「Azure AD Identity Protection」のフェーズ 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) に説明されている手順に従います。 
 
-## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>フェーズ 10: Exchange Online と Skype for Business Online のモダン認証を有効にする
+## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>フェーズ 10: オンラインとオンラインの最新Exchange OnlineをSkype for Businessする
 
 Exchange Online については、[こちら](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)で説明されている手順に従います。 
 

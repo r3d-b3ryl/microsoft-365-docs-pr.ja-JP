@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 グループの Azure Active Directory 分類と感度ラベル
+title: Azure Active Directoryグループの分類とMicrosoft 365ラベル
 ms.reviewer: vijagan
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -9,7 +9,7 @@ f1.keywords: NOCSH
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-description: この記事では、従来の Azure Active Directory 分類ラベルと感度ラベルについて説明します。
+description: この記事では、従来の分類Azure Active Directoryラベルについて説明します。
 ms.openlocfilehash: 07bc09afb3e490961a8cc5a88857ec49dd962856
 ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
@@ -17,24 +17,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/26/2021
 ms.locfileid: "51221752"
 ---
-# <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Microsoft 365 グループの Azure Active Directory 分類と感度ラベル
+# <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Azure Active Directoryグループの分類とMicrosoft 365ラベル
 
-この記事では、従来の Azure Active Directory 分類ラベルと感度ラベルについて説明します。
+この記事では、従来の分類Azure Active Directoryラベルについて説明します。
 
 感度ラベルは、これらのサービス [でサポートされています](./sensitivity-labels-teams-groups-sites.md)。
 
 感度ラベルの詳細については、「感度ラベルについて [」を参照してください](sensitivity-labels.md)。
 
-サイトおよび Microsoft 365 グループの感度ラベルとその動作の詳細については、「感度ラベルを使用して [Microsoft Teams、Microsoft 365](sensitivity-labels-teams-groups-sites.md)グループ、および SharePoint サイトのコンテンツを保護する」を参照してください。
+サイトと Microsoft 365 グループの感度ラベルとその動作の詳細については、「感度ラベルを使用して[Microsoft Teams、Microsoft 365](sensitivity-labels-teams-groups-sites.md)グループ、および SharePoint サイトのコンテンツを保護する」を参照してください。
 
 従来の AAD 分類から感度ラベルに移行する場合のベスト プラクティスについては、次のシナリオを参照してください。
 
 ## <a name="scenario-1-tenant-never-used-classic-aad-classifications-or-sensitivity-labels-for-documents-and-emails"></a>シナリオ 1: テナントは、従来の AAD 分類またはドキュメントおよび電子メールの感度ラベルを使用したことがない
 
 - テナント管理者は、AAD powershell コマンドレットを介してテナント フラグ "EnableMIPLabels" を true に設定することにより、グループの感度ラベルを有効にします。
-- テナント管理者は [、Microsoft 365](https://compliance.microsoft.com)コンプライアンス センターに感度ラベルを作成します。
+- テナント管理者は、コンプライアンス センターにMicrosoft 365[を作成します](https://compliance.microsoft.com)。
     - テナント管理者は、暗号化や透かし付けなど、ファイルと電子メールに関連するアクションを選択できます。
-    - テナント管理者は、感度ラベルに対して Microsoft 365 グループと SharePoint Online サイト関連のアクションを選択できます。
+    - テナント管理者は、[グループ] Microsoft 365を選択しSharePointラベルに対するオンライン サイト関連のアクションを選択できます。
 - テナント管理者がポリシーを発行します。
 - **互換性のあるワークロードは、** 感度ラベルを表示します。 グループを作成するには、感度ラベルを使用します。 互換性のあるワークロードは、感度ラベルをサポートするサービスです。
 - **互換性がないワークロードは** 、まだ感度ラベルをサポートしていないサービスです。 ただし、グループを作成することもできますが、互換性がないワークロードを使用して、そのグループを感度ラベルに関連付けすることはできません。 このようなグループを感度ラベルに関連付ける場合、テナント管理者は PowerShell コマンドレットを実行できます。
@@ -49,17 +49,17 @@ ms.locfileid: "51221752"
 > [!NOTE]
 > Outlook デスクトップ クライアント (Win 32) の場合、管理者がテナントで感度ラベルを有効にした後、ユーザーは Outlook デスクトップ クライアントの古いバージョン (Win 32) に配置されます。
 >
-> - ユーザーは、以前のバージョンの Outlook デスクトップ クライアントに感度ラベルが表示されるのを確認します。
+> - ユーザーは、以前のバージョンのデスクトップ クライアントに表示されるOutlook表示されます。
 > - ただし、ユーザーがグループを編集し、グループを感度ラベルで保存すると、選択したプライバシー設定は、適用された感度ラベルのプライバシー設定によって上書きされます。
 >
-> 古いバージョンの Outlook クライアントのユーザーが新しいバージョンにアップグレードすることをお勧めします。
+> 古いバージョンのユーザーが新しいバージョンOutlookアップグレードすることをお勧めします。
 
 ## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>シナリオ 2: テナントが従来の AAD 分類を既に [使用している](../enterprise/manage-microsoft-365-groups-with-powershell.md)
 
 ### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>ケース A: テナントがドキュメントと電子メールの感度ラベルを使用したことがない
 
-1. Microsoft [365 コンプライアンス](https://compliance.microsoft.com)センターでは、既存の従来の Azure コンプライアンス ラベルと同じ名前のAD勧めします。
-2. 名前マッピングを使用して、PowerShell コマンドレットを使用して、これらの感度ラベルを既存の Microsoft 365 グループおよび SharePoint サイトに適用します。
+1. コンプライアンス センター [Microsoft 365、](https://compliance.microsoft.com)既存の従来の Azure サーバー ラベルと同じ名前のAD勧めします。
+2. PowerShell コマンドレットを使用して、名前マッピングを使用して既存の Microsoft 365およびSharePointにこれらの感度ラベルを適用します。
 3. 管理者は、従来の Azure ドメイン ラベルをADできます。
     - 互換性のあるワークロードでは、これらの感度ラベルとグループが一緒に作成されます。
     - 互換性がないワークロードは、グループを作成するときに機能しますが、感度ラベルは関連付けされません。
@@ -79,16 +79,16 @@ ms.locfileid: "51221752"
 > [!NOTE]
 > Outlook デスクトップ クライアント (Win 32) の場合、管理者がテナントで感度ラベルを有効にした後、ユーザーは Outlook デスクトップ クライアントの古いバージョン (Win 32) に配置されます。
 >
-> - ユーザーは、以前のバージョンの Outlook デスクトップ クライアントに感度ラベルが表示されるのを確認します。
+> - ユーザーは、以前のバージョンのデスクトップ クライアントに表示されるOutlook表示されます。
 > - ただし、ユーザーがグループを編集し、グループを感度ラベルで保存すると、選択したプライバシー設定は、適用された感度ラベルのプライバシー設定によって上書きされます。
 >
-> 古いバージョンの Outlook クライアントのユーザーが新しいバージョンにアップグレードすることをお勧めします。
+> 古いバージョンのユーザーが新しいバージョンOutlookアップグレードすることをお勧めします。
 
 ### <a name="case-b-tenant-used-sensitivity-labels-for-documents-and-emails"></a>ケース B: テナントがドキュメントと電子メールの感度ラベルを使用した
 
 1. 管理者がテナントフラグ 'EnableMIPLabels' を true に設定してテナントの感度ラベル機能を有効にすると、グループ/サイト/チームのドキュメントと電子メールの感度ラベルが表示され、ダイアログ ボックスが表示されます。
 2. 管理者は、関連するグループ設定を指定することで、同じドキュメントと電子メールの感度ラベルを使用して、グループ/サイト/チームにプライバシーと外部ユーザー アクセスを適用できます。
-    1. Microsoft [365 コンプライアンス センターで、[](https://compliance.microsoft.com)サイトとグループ **] タブを選択** します。
+    1. [コンプライアンス センター [Microsoft 365で、[](https://compliance.microsoft.com)サイトとグループ **] タブを選択** します。
     2. ドキュメントまたは電子メールの感度ラベルを編集します。
 
 ## <a name="sample-script"></a>サンプル スクリプト

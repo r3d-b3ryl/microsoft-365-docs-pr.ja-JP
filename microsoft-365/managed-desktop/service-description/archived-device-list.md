@@ -1,5 +1,5 @@
 ---
-title: Microsoft Managed Desktop アーカイブ デバイス
+title: Microsoft マネージド デスクトップされたデバイス
 description: 引き続き登録できるが、サポート期間が短縮される退職に近いデバイス
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
@@ -18,23 +18,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51218738"
 ---
-# <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop アーカイブ デバイス
+# <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft マネージド デスクトップされたデバイス
 
-最高のユーザー エクスペリエンスを保証するために、Microsoft Managed Desktop は特定の時点でデバイスのサポートを廃止します。 この記事では、今後数年間で退職が近付くデバイスを一覧表示します。これは"アーカイブ済み" と呼んでいます。 既に使用しているデバイスを使用して Microsoft Managed Desktop を使い始める場合は、この一覧を注意深く確認する必要があります。
+最高のユーザー エクスペリエンスを保証するために、Microsoft マネージド デスクトップデバイスのサポートは終了します。 この記事では、今後数年間で退職が近付くデバイスを一覧表示します。これは"アーカイブ済み" と呼んでいます。 既に使用しているデバイスを使用してMicrosoft マネージド デスクトップを開始する場合は、この一覧を注意深く確認する必要があります。
 
 >[!IMPORTANT]
->これらのデバイスは現在でも登録できますが、Microsoft Managed Desktop を使用すると、サービス寿命が短くなります。 新しいデバイスを購入する場合は、アクティブなデバイスの一覧から [モデルを使用する必要があります](./device-list.md)。
+>これらのデバイスは現在でも登録できますが、デバイスの使用期間は短くなりますMicrosoft マネージド デスクトップ。 新しいデバイスを購入する場合は、アクティブなデバイスの一覧から [モデルを使用する必要があります](./device-list.md)。
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Microsoft Managed Desktop に登録するには、デバイスが次のモデルの 1 つで、RAM、プロセッサ ファミリ、およびディスク領域の一覧に記載されている仕様を満たすか超過している必要があります。 他のカスタマイズはサポートされていません。
+Microsoft マネージド デスクトップに登録するには、デバイスが次のいずれかのモデルで、RAM、プロセッサ ファミリ、およびディスク領域の一覧に記載されている仕様を満たすか、超えている必要があります。 他のカスタマイズはサポートされていません。
 
 
 
 >[!NOTE]
->この表では、"退職日" は、このモデルが Microsoft マネージ デスクトップでサポートされなくなる日付です。 この日付で、このモデルのすべての登録済みデバイスは、いつ登録されたかに関係なく、Microsoft Managed Desktop から削除されます。
+>この表では、"退職日" は、このモデルがサポートされなくなった日付Microsoft マネージド デスクトップです。 この日付に、このモデルのすべての登録デバイスは、いつ登録されたかに関係なく、Microsoft マネージド デスクトップから削除されます。
 
-#### <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop アーカイブ デバイス
+#### <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft マネージド デスクトップされたデバイス
 
 | モデル  | 最小仕様  | 追加要件   | 退職日 |
 |---------|---------|---------|---------|
@@ -76,9 +76,9 @@ Microsoft Managed Desktop に登録するには、デバイスが次のモデル
 
 さらに、デバイスは次の機能も必要です。
 
-- Microsoft Managed Desktop によって承認されたイメージを持っている。 デバイスを注文する場合は、Microsoft Managed Desktop で使用されているデバイスを指定してください。
-- Windows の初回実行エクスペリエンスが完了していない。
-- デバイス登録機能を使用して Microsoft Managed [Desktop に登録](../get-started/register-devices-self.md) する
+- 画像をユーザーが承認Microsoft マネージド デスクトップ。 デバイスを注文する場合は、デバイスがデバイスと一緒に使用Microsoft マネージド デスクトップ。
+- 初回実行エクスペリエンスWindows完了していない。
+- デバイス登録機能をMicrosoft マネージド デスクトップデバイスに[登録](../get-started/register-devices-self.md)する
 
 #### <a name="more-help"></a>その他のヘルプ
 

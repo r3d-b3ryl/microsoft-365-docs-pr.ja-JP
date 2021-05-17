@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51205063"
 ---
-# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP および Microsoft Defender の保護ポリシー用の構成アナライザー (Office 365)
+# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP および Microsoft Defender の保護ポリシー用の構成Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -38,25 +38,25 @@ ms.locfileid: "51205063"
 
 次の種類のポリシーは、構成アナライザーによって分析されます。
 
-- **Exchange Online Protection (EOP)** ポリシー : これには、Exchange Online メールボックスを持つ Microsoft 365 組織と、Exchange Online メールボックスのないスタンドアロン EOP 組織が含まれます。
+- **Exchange Online Protection (EOP)** ポリシー : これには、Microsoft 365メールボックスを持Exchange Onlineスタンドアロンの EOP 組織が含Exchange Onlineされます。
 
   - [スパム対策ポリシー](configure-your-spam-filter-policies.md)。
   - [マルウェア対策ポリシー](configure-anti-malware-policies.md)。
   - [EOP フィッシング対策ポリシー](set-up-anti-phishing-policies.md#spoof-settings)。
 
-- **Microsoft Defender for Office 365** ポリシー: これには、Microsoft 365 E5 または Defender が 365 アドオン サブスクリプションの組織Office含まれます。
+- **Microsoft Defender for Office 365 ポリシー**: これには、アドオン サブスクリプションの Microsoft 365 E5または Defender をOffice 365組織が含まれます。
 
-  - Microsoft Defender for Office 365 のフィッシング対策ポリシー。
+  - Microsoft Defender のフィッシング対策ポリシーは、次Office 365含まれます。
 
     - EOP [フィッシング対策](set-up-anti-phishing-policies.md#spoof-settings) ポリシーで使用できるスプーフィング設定と同じです。
     - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高度なフィッシングのしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [セーフ リンク ポリシー](set-up-safe-links-policies.md)。
+  - [セーフリンク ポリシー](set-up-safe-links-policies.md)。
 
-  - [安全な添付ファイル ポリシー](set-up-safe-attachments-policies.md)。
+  - [セーフ添付ファイル ポリシー](set-up-safe-attachments-policies.md)。
 
-基準 **として使用** される Standard および **Strict** ポリシー設定の値については、「EOP および Microsoft Defender for Office [365 セキュリティの推奨設定」を参照してください](recommended-settings-for-eop-and-office365.md)。
+基準 **として使用** される標準ポリシーと **厳密** なポリシー設定の値については [、「EOP](recommended-settings-for-eop-and-office365.md)および Microsoft Defender のセキュリティに関する推奨設定Office 365されています。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -84,7 +84,7 @@ ms.locfileid: "51205063"
 
 構成アナライザーには、次の 2 つの主なタブがあります。
 
-- **設定と推奨事項**: [標準] または [厳密] を選択し、それらの設定を既存のセキュリティ ポリシーと比較します。 結果では、設定の値を調整して、Standard または Strict と同じレベルに設定できます。
+- **設定推奨事項**: [標準] または [厳密] を選択し、それらの設定を既存のセキュリティ ポリシーと比較します。 結果では、設定の値を調整して、Standard または Strict と同じレベルに設定できます。
 
 - **構成ドリフトの分析と履歴**: このビューでは、時間の流れによってポリシーの変更を追跡できます。
 
@@ -92,15 +92,15 @@ ms.locfileid: "51205063"
 
 既定では、標準保護プロファイルとの比較でタブが開きます。 [厳密な推奨事項の表示] をクリックすると、厳密な保護プロファイルの **比較に切り替えます**。 切り替えるには、[標準の **推奨事項の表示] を選択します**。
 
-![構成アナライザーの [設定と推奨事項] ビュー](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![設定アナライザーの [推奨事項] ビューの設定と推奨事項](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
 既定では、[ **ポリシー グループ/** 設定名] 列には、さまざまな種類のセキュリティ ポリシーの折りたたまれているビューと、改善が必要な設定の数 (必要な場合) が含まれる。 ポリシーの種類は次のとおりです。
 
 - **スパム対策**
 - **フィッシング対策**
 - **マルウェア対策**
-- **ATP の安全な添付** ファイル (サブスクリプションに Microsoft Defender for Office 365)
-- **ATP セーフ リンク** (サブスクリプションに Microsoft Defender for Office 365)
+- **ATP セーフ添付ファイル**(サブスクリプションに Microsoft Defender が含Office 365)
+- **ATP セーフ リンク**(サブスクリプションに Microsoft Defender for Office 365)
 
 既定のビューでは、すべてが折りたためます。 各ポリシーの横には、ポリシー (変更できる) と、Standard または Strict Protection プロファイルの対応するポリシー (変更できない) の設定の比較結果の概要があります。 比較している保護プロファイルに関する次の情報が表示されます。
 
@@ -134,13 +134,13 @@ ms.locfileid: "51205063"
 - **変更者**
 - **設定名**
 - **Policy**
-- **型**
+- **Type**
 
 結果をフィルター処理するには、**[フィルター]** をクリックします。 表示される **[フィルター** ] フライアウトで、次のフィルターから選択できます。
 
 - **開始時刻** と **終了時刻** (日付)
 - **標準保護または****厳密な保護**
 
-結果を .csv ファイルにエクスポートするには、[エクスポート] を **クリックします**。
+結果をファイルにエクスポートするには、[エクスポート] .csvクリック **します**。
 
 ![Configuration Analyzer の構成ドリフト分析と履歴ビュー](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

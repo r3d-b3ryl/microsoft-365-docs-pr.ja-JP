@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Exchange Online Protection (EOP) によって受け入れまたは拒否される電子メール アドレスの種類と、フィッシング Outlook.com に役立つメール アドレスについて説明します。
+description: 管理者は、Exchange Online Protection (EOP) および Outlook.com で受け入れまたは拒否される電子メール アドレスの種類について説明し、フィッシングを防止できます。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -124,16 +124,16 @@ From アドレスは、複数の RFC (たとえば、RFC 5322 セクション 3.
 noreply.contoso.com IN MX .
 ```
 
-MX レコードの設定の詳細については [、「Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)の任意の DNS ホスティング プロバイダーで DNS レコードを作成する」を参照してください。
+MX レコードの設定の詳細については、「任意の DNS ホスティング プロバイダーで DNS レコードを作成する」[を](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)参照Microsoft 365。
 
 NULL MX の発行の詳細については [、「RFC 7505」を参照してください](https://tools.ietf.org/html/rfc7505)。
 
 ## <a name="override-from-address-enforcement"></a>Override From address enforcement
 
-受信メールの差出人アドレス要件をバイパスするには [、「Microsoft 365](create-safe-sender-lists-in-office-365.md)で差出人セーフ リストを作成する」の説明に従って、IP 許可一覧 (接続フィルター) またはメール フロー ルール (トランスポート ルールとも呼ばれる) を使用できます。
+受信メールの差出人アドレス要件をバイパスするには、「Microsoft 365 で差出人セーフ リストを作成する」の説明に従って、IP 許可一覧 (接続フィルター) またはメール フロー ルール (トランスポート ルールとも呼ばれる)[を使用できます](create-safe-sender-lists-in-office-365.md)。
 
-Microsoft 365 から送信する送信メールの From アドレス要件を上書きできない。 また、サポート Outlook.com を通じても、任意の種類の上書きを許可しない場合があります。
+メールから送信する送信メールの From アドレス要件を上書きMicrosoft 365。 さらに、Outlook.com は、サポートを通じても、いかなる種類のオーバーライドも許可しない。
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Microsoft 365 のサイバー犯罪を防止して保護するその他の方法
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>サイバー犯罪を防止し、保護するその他のMicrosoft 365
 
-フィッシング、スパム、データ侵害、その他の脅威に対して組織を強化する方法の詳細については、「ビジネス プラン向け [Microsoft 365](../../admin/security-and-compliance/secure-your-business-data.md)をセキュリティで保護する上位 10 の方法」を参照してください。
+フィッシング、スパム、データ侵害、その他の脅威に対して組織を強化する方法の詳細については、「ビジネス プランのセキュリティで保護するためのトップ[10](../../admin/security-and-compliance/secure-your-business-data.md)Microsoft 365方法」を参照してください。

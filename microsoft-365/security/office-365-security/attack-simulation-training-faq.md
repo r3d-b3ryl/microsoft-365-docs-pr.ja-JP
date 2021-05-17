@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織での攻撃シミュレーションとトレーニングに関する展開に関する考慮事項とよく寄せられる質問について説明します。
+description: 管理者は、Microsoft 365 E5 または Microsoft Defender for Office 365 プラン 2 組織の攻撃シミュレーションとトレーニングに関する展開に関する考慮事項とよく寄せられる質問について説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
@@ -29,7 +29,7 @@ ms.locfileid: "51205213"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
 
-攻撃シミュレーションのトレーニングが [一般提供されました](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)。 攻撃シミュレーショントレーニングを使用すると、Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織は、実際の、武器化されたフィッシング ペイロードを利用したフィッシング シミュレーションの作成と管理を可能にすることで、ソーシャル エンジニアリング リスクを測定および管理できます。 テラノバ のセキュリティと提携して提供されるハイパーターゲットトレーニングは、知識の向上と従業員の行動の変更に役立ちます。
+攻撃シミュレーションのトレーニングが [一般提供されました](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)。 Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 組織は、実際の武器化されたフィッシング ペイロードを利用したフィッシング シミュレーションの作成と管理を可能にすることで、ソーシャル エンジニアリング リスクを測定および管理できます。 テラノバ のセキュリティと提携して提供されるハイパーターゲットトレーニングは、知識の向上と従業員の行動の変更に役立ちます。
 
 攻撃シミュレーション トレーニングの開始方法の詳細については、「攻撃シミュレーション トレーニングの使用を開始する [」を参照してください](attack-simulation-training-get-started.md)。
 
@@ -37,15 +37,15 @@ ms.locfileid: "51205213"
 
 ## <a name="issues-with-end-user-experiences"></a>エンド ユーザー エクスペリエンスに関する問題
 
-### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Google セーフ ブラウズによってブロックされたフィッシング シミュレーション URL
+### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Google セーフ ブラウズによってブロックされるフィッシング シミュレーション URL
 
-URL レピュテーション サービスは、攻撃シミュレーション トレーニングで使用される 1 つ以上の URL を安全でないと識別する場合があります。 Google Chrome の Google セーフ ブラウジングは、詐欺サイトの先行メッセージを使用して、シミュレートされたフィッシング URL の一部 **をブロック** します。 多くの URL レピュテーション ベンダーと一緒にシミュレーション URL を常に許可しますが、必ずしも完全にカバーできるとは限らない。
+URL レピュテーション サービスは、攻撃シミュレーション トレーニングで使用される 1 つ以上の URL を安全でないと識別する場合があります。 Google セーフ Chrome での閲覧は、詐欺サイトの先行メッセージを使用して、シミュレートされたフィッシング URL の一部 **をブロック** します。 多くの URL レピュテーション ベンダーと一緒にシミュレーション URL を常に許可しますが、必ずしも完全にカバーできるとは限らない。
 
 ![Google Chrome でのサイト先行警告の欺瞞](../../media/attack-sim-chrome-deceptive-site-message.png)
 
-この問題は Microsoft Edge には影響しない点に注意してください。
+この問題は、この問題に影響Microsoft Edge。
 
-計画フェーズの一環として、フィッシング キャンペーンで URL を使用する前に、サポートされている Web ブラウザーの URL の可用性を確認してください。 Url が Google セーフ ブラウズによってブロックされている場合[](https://support.google.com/chrome/a/answer/7532419)は、Google からこのガイダンスに従って URL へのアクセスを許可します。
+計画フェーズの一環として、フィッシング キャンペーンで URL を使用する前に、サポートされている Web ブラウザーの URL の可用性を確認してください。 Google セーフ ブラウズによって URL がブロックされている場合は、Google からこのガイダンスに従って URL へのアクセスを許可します。 [](https://support.google.com/chrome/a/answer/7532419)
 
 現在攻撃 [シミュレーション トレーニングで](attack-simulation-training-get-started.md) 使用されている URL の一覧については、「攻撃シミュレーション トレーニングの使用を開始する」を参照してください。
 
@@ -70,9 +70,9 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 - 受信者の電子メール アドレスが無効です。
 - ゲスト ユーザー。
-- Azure Active Directory (Azure Active Directory) でアクティブでなくなったAD。
+- 現在アクティブでなくなったユーザー (Azure Azure Active Directory) AD。
 
-有効なメールボックスを持つゲスト以外のユーザーだけがシミュレーションに含まれます。 配布グループまたはメールが有効なセキュリティ グループを使用してユーザーをターゲットにする場合は[、Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)の[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember)コマンドレットを使用して、配布グループのメンバーを表示および検証できます。
+有効なメールボックスを持つゲスト以外のユーザーだけがシミュレーションに含まれます。 配布グループまたはメールが有効なセキュリティ グループを使用してユーザーを対象とする場合は[、Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)の[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember)コマンドレットを使用して配布グループメンバーを表示および検証できます。
 
 ## <a name="issues-with-attack-simulation-training-reporting"></a>攻撃シミュレーショントレーニングレポートの問題
 
@@ -124,7 +124,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 - 資格情報を渡したユーザー。
 - メッセージをフィッシングとして報告したユーザー。
 
-ユーザーがフィッシングとして報告したメッセージが攻撃シミュレーション シミュレーション レポートでキャプチャされない場合、報告されたメッセージの Microsoft への配信をブロックしている Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) が含まれます。 メール フロー ルールが次のメール アドレスへの配信をブロックしていないか確認します。
+ユーザーがフィッシングとして報告したメッセージが攻撃シミュレーション シミュレーション レポートでキャプチャされない場合、報告されたメッセージの Microsoft への配信をブロックしている Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) がある可能性があります。 メール フロー ルールが次のメール アドレスへの配信をブロックしていないか確認します。
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
@@ -160,7 +160,7 @@ A: 現在、5 つのローカライズされたペイロードを使用できま
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>Q: 管理ポータルとトレーニング エクスペリエンスのために他の言語に切り替える方法を教えてください。
 
-A: Microsoft 365 または Office 365 では、言語の構成はユーザー アカウントごとに固有で集中管理されています。 言語設定を変更する方法については [、「Microsoft 365 for Business](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)の表示言語とタイム ゾーンを変更する」を参照してください。
+A: ユーザー アカウントMicrosoft 365またはOffice 365、言語の構成はユーザー アカウントごとに固有で集中管理されています。 言語の設定を変更する方法については、「ビジネス向けページで表示言語とタイム ゾーンを変更する[Microsoft 365を参照してください](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
 
 すべてのサービス間で同期するには、構成の変更に最大で 30 分かかる場合があります。
 

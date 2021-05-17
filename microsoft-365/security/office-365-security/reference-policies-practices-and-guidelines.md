@@ -39,15 +39,15 @@ Microsoft は、Web 上におけるユーザー エクスペリエンスの信�
 
 ## <a name="general-microsoft-policies"></a>一般的な Microsoft ポリシー
 
-Microsoft 365 ユーザーに送信される電子メールは、電子メールの送信と Microsoft 365 の使用を管理する Microsoft のすべてのポリシーに準拠している必要があります。
+ユーザーが電子メールMicrosoft 365、電子メールの送信と使用を管理する Microsoft のすべてのポリシーに準拠している必要Microsoft 365。
 
-- Microsoft 365 に適用されるサービスの条件。特に、スパムやマルウェアの配布にサービスを使用する禁止。
+- ユーザーに適用されるサービスMicrosoft 365。特に、スパムやマルウェアの配布にサービスを使用する禁止。
 
 - [Microsoft サービス規約](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>政府の規制
 
-Microsoft 365 ユーザーに送信される電子メールは、該当する管轄区域の電子メール通信を管理する適用される法律および規制に従う必要があります。
+ユーザーに送信Microsoft 365は、該当する管轄区域の電子メール通信を管理する適用される法律および規制を遵守する必要があります。
 
 - [CAN-SPAM 法:ビジネスのためのコンプライアンス ガイド](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -55,13 +55,13 @@ Microsoft 365 ユーザーに送信される電子メールは、該当する管
 
 ## <a name="technical-guidelines"></a>テクニカル ガイドライン
 
-Microsoft 365 に送信される電子メールは、以下のドキュメントに記載されている該当する推奨事項に準拠している必要があります (一部のリンクは英語でのみ利用可能です)。
+メールは、Microsoft 365に記載されている推奨事項に準拠している必要があります (一部のリンクは英語でのみ利用可能です)。
 
 - [RFC 2505:SMTP MTA のスパム対策の推奨事項](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920:コマンド パイプラインの SMTP サービス拡張機能](https://www.ietf.org/rfc/rfc2920.txt)
 
-さらに、Microsoft 365 に接続する電子メール サーバーは、次の要件に従う必要があります。
+さらに、サーバーに接続する電子メール Microsoft 365は、次の要件に従う必要があります。
 
 - 送信者は、インターネット協会のインターネット技術標準化委員会 (IETF) が発行しているインターネット電子メールの送信に関する技術的な標準 (RFC 5321、RFC 5322 など) すべてに準拠していなければなりません。
 
@@ -81,9 +81,9 @@ Microsoft 365 に送信される電子メールは、以下のドキュメント
 
 送信者、ISP、およびその他のサービス プロバイダーは、積極的に、外部 IP アドレスの評価を管理する必要があります。
 
-## <a name="microsoft-365-limits"></a>Microsoft 365 の制限
+## <a name="microsoft-365-limits"></a>Microsoft 365制限
 
-送信者は、Exchange Online Protection Limits に記載されている Microsoft 365 [の制限に従う必要があります](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
+送信者は、[制限] にMicrosoft 365されている制限にExchange Online Protection[する必要があります](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
 
 ## <a name="email-delivery-resources-and-organizations"></a>電子メール配信リソースと組織
 

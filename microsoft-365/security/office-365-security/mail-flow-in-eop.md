@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) でメール フローとルーティングを構成するためのオプションについて説明します。
+description: 管理者は、メール フローとルーティングを構成するためのオプションについて、メール フロー (EOP) でExchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 7cd5bfcc95227c59f645422d4939ea6ff77bee1e
@@ -31,7 +31,7 @@ ms.locfileid: "51206365"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスを持つ Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、組織に送信されたメッセージはすべて、ワーカーが EOP を表示する前に EOP を通過します。 処理のために EOP を通過するメッセージをワーカー受信トレイにルーティングする方法に関するオプションがあります。
+Microsoft 365 Exchange Online メールボックスまたはスタンドアロン Exchange Online Protection (EOP) 組織が Exchange Online メールボックスを持つ組織では、組織に送信されたメッセージはすべて、ワーカーが EOP を表示する前に EOP を通過します。 処理のために EOP を通過するメッセージをワーカー受信トレイにルーティングする方法に関するオプションがあります。
 
 ## <a name="working-with-messages-and-message-access-options"></a>メッセージとメッセージ アクセス オプションの操作
 
@@ -41,7 +41,7 @@ EOP は、メッセージのルーティング方法に柔軟性を提供しま�
 
 「[View or Edit Managed Domains in EOP](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)」では、EOP サービスに関連付けられたドメインの管理方法について説明します。
 
-組織にサブドメインを追加する場合にも、それらの管理に EOP サービスを活用できます。 サブドメインの詳細については、「Exchange Online でサブドメインのメール フローを有効 [にする」を参照してください](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
+組織にサブドメインを追加する場合にも、それらの管理に EOP サービスを活用できます。 サブドメインの詳細については、「メール のサブドメインのメール フローを有効にする」[を参照Exchange Online。](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)
 
 [コネクタを使用してメール フロー](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) を構成すると、コネクタが導入され、それらを使用してメール ルーティングをカスタマイズする方法が示されます。 シナリオには、パートナー組織との安全な通信の保証とスマート ホストのセットアップが含まれます。
 
@@ -53,4 +53,4 @@ EOP は、メッセージのルーティング方法に柔軟性を提供しま�
 
 コネクタ構成を含む EOP セットアップが正しく機能していることを確認するには、「[EOP サービスを設定する](set-up-your-eop-service.md)」の「このタスクの検証方法」セクションを参照してください。
 
-[Microsoft 365](/exchange/mail-flow-best-practices/test-mail-flow) コネクタを検証してメール フローをテストすると、メール フローが正しく設定されていることをテストするための手順が提供されます。
+[メール フローをテストするには](/exchange/mail-flow-best-practices/test-mail-flow)、Microsoft 365コネクタを検証して、メール フローが正しく設定されていることをテストする手順を示します。

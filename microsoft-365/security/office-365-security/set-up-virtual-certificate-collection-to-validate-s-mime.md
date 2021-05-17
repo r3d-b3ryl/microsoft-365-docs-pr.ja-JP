@@ -12,7 +12,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
-description: 管理者は、Exchange Online で S/MIME 証明書を検証するために使用される仮想証明書コレクションを作成する方法について説明します。
+description: 管理者は、S/MIME 証明書の検証に使用する仮想証明書コレクションを作成する方法をExchange Online。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -23,16 +23,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51206805"
 ---
-# <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>Exchange Online で仮想証明書コレクションをセットアップして S/MIME を検証する
+# <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>S/MIME を検証するExchange Onlineで仮想証明書コレクションを設定する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-管理者は、S/MIME 証明書の検証に使用される Exchange Online で仮想証明書コレクションを構成する必要があります。 この仮想証明書コレクションは、SST ファイル名の拡張子を持つ証明書ストアとして設定されます。 SST ファイルには、S/MIME 証明書の検証時に使用されるすべてのルート証明書と中間証明書が含まれます。
+管理者は、S/MIME 証明書の検証に使用Exchange Online仮想証明書コレクションを構成する必要があります。 この仮想証明書コレクションは、SST ファイル名の拡張子を持つ証明書ストアとして設定されます。 SST ファイルには、S/MIME 証明書の検証時に使用されるすべてのルート証明書と中間証明書が含まれます。
 
 ## <a name="create-and-save-an-sst"></a>SST を作成して保存する
 
-この SST 証明書ストア ファイルを作成するには、Windows PowerShell の **Export-Certificate** コマンドレットを使用して信頼できるコンピューターから証明書をエクスポートし、Type 値を SST として指定します。  手順については [、「Export-Certificate」を参照してください](/powershell/module/pkiclient/export-certificate)。
+この SST 証明書ストア ファイルを作成するには、Windows PowerShell の **Export-Certificate** コマンドレットを使用して信頼済みコンピューターから証明書をエクスポートし、Type 値を SST として指定します。 手順については [、「Export-Certificate」を参照してください](/powershell/module/pkiclient/export-certificate)。
 
 SST 証明書ストア ファイルを取得したら、Exchange Online PowerShell で次の構文を使用して、SST ファイルの内容を Exchange Online 仮想証明書ストアに保存します。 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -50,7 +50,7 @@ Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exporte
 
 ## <a name="ensuring-a-certificate-is-valid"></a>証明書が有効なことを確認する
 
-Exchange Online では、SST だけが証明書の検証に使用されます。
+このExchange Online、SST だけが証明書の検証に使用されます。
 
 ## <a name="more-information"></a>詳細情報
 

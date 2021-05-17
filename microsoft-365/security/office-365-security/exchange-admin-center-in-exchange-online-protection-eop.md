@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: スタンドアロンの Exchange Online Protection (EOP) の Web 管理インターフェイスについて説明します。
+description: スタンドアロン インターフェイス (EOP) の web 管理Exchange Online Protection説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ab834d14673370a39e148aefa568591ff4c50b8f
@@ -29,27 +29,27 @@ ms.locfileid: "51206785"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
+-  [Exchange Online Protectionスタンドアロン](exchange-online-protection-overview.md)
 
-Exchange 管理センター (EAC) は、スタンドアロンの Exchange Online Protection (EOP) 用の Web ベースの管理コンソールです。
+管理者Exchange (EAC) は、スタンドアロン 管理 (EOP) 用の web Exchange Online Protection管理コンソールです。
 
-このトピックの Exchange Online バージョンについては、 「[Exchange Online の Exchange 管理センター](/exchange/exchange-admin-center)」を参照してください。
+このトピックの Exchange Online バージョンについては、「[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)」を参照してください。
 
 ## <a name="open-the-eac-in-eop"></a>EOP で EAC を開く
 
 スタンドアロン EOP のお客様は、次の方法を使用して EAC にアクセスできます。
 
-- **Microsoft 365 管理センターから**:
+- **管理センター Microsoft 365:**
 
   1. [すべて表示 <https://admin.microsoft.com> ] に移動し **、[すべて表示] をクリックします**。
 
-     ![Microsoft 365 管理センターで [すべて表示] をクリックします。](../../media/m365-center-show-all.png)
+     ![管理センターで [すべて表示Microsoft 365する] をクリックします。](../../media/m365-center-show-all.png)
 
   2. 表示される **[管理センター]** セクションで、[すべての管理 **センター] をクリックします**。
 
-     ![[Microsoft 365 管理センターのすべての管理センター] をクリックします。](../../media/m365-center-select-all-admin-centers.png)
+     ![[管理センター内のすべての管理センター Microsoft 365クリックします。](../../media/m365-center-select-all-admin-centers.png)
 
-  3. 表示される **[すべての管理センター] ページ** で **、[Exchange Online Protection] をクリックします**。
+  3. 表示される **[すべての管理センター] ページ** で、[管理センター] をクリック **Exchange Online Protection。**
 
 - に直接移動します `https://admin.protection.outlook.com/ecp/` 。
 
@@ -57,7 +57,7 @@ Exchange 管理センター (EAC) は、スタンドアロンの Exchange Online
 
 ここでは、EAC のユーザー インターフェイス要素について説明します。
 
-![Exchange Online Protection の Exchange 管理センター](../../media/EOP-AdminCenter.png)
+![Exchangeの管理センター Exchange Online Protection](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>機能ウィンドウ
 
@@ -74,9 +74,9 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
   > [!NOTE]
   > マルウェア対策ポリシーと既定の接続フィルター ポリシーは、セキュリティ コンプライアンス センターで&する必要があります。 詳細については [、「EOP でマルウェア対策ポリシーを構成する」および「EOP](configure-anti-malware-policies.md) で接続フィルターを構成する」 [を参照してください](configure-the-connection-filter-policy.md)。
 
-- **メール フロー**: ここでは、メール フロー ルール (トランスポート ルールとも呼ばれる)、受け入れドメイン、コネクタを管理し、メッセージ 追跡を実行できる場所を管理します。
+- **メール Flow:** ここでは、メール フロー ルール (トランスポート ルールとも呼ばれる)、受け入れドメイン、およびコネクタを管理し、メッセージ トレースを実行する場所を管理します。
 
-- **ハイブリッド**: ハイブリッド構成ウィザードを実行 [](/Exchange/hybrid-configuration-wizard)できる場所と [、Exchange Online PowerShell](/powershell/exchange/mfa-connect-to-exchange-online-powershell)モジュールをインストールできる場所です。
+- **ハイブリッド**: ハイブリッド構成ウィザードを実行 [](/Exchange/hybrid-configuration-wizard)できる場所と、PowerShell モジュールをインストールできるExchange Online [です](/powershell/exchange/mfa-connect-to-exchange-online-powershell)。
 
 ### <a name="tabs"></a>タブ
 
@@ -88,7 +88,7 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 
 ****
 
-|Icon|Name|アクション|
+|Icon|名前|Action|
 |---|---|---|
 |![[追加] アイコン](../../media/ITPro-EAC-AddIcon.gif)|追加、新規|このアイコンを使用して、新しいオブジェクトを作成します。これらの一部のアイコンには下方向キーが関連付けられており、これをクリックして、作成可能な追加のオブジェクトを表示できます。|
 |![編集アイコン](../../media/ITPro-EAC-EditIcon.gif)|編集|このアイコンを使用してオブジェクトを編集します。|
@@ -114,13 +114,13 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 
 - **ヘルプ**: ![ヘルプ アイコン](../../media/ITPro-EAC-HelpIcon.gif)をクリックして、オンライン ヘルプ コンテンツを表示します。
 - **フィードバック**: フィードバックを残します。
-- **コミュニティ**: コミュニティ フォーラムで回答を検索する質問を投稿します。
+- **Community**: コミュニティ フォーラムで回答を検索する質問を投稿します。
 - **ヘルプ バブルを無効にする**: ヘルプ バブルは、オブジェクトを作成または編集する際に、フィールドのコンテキスト ヘルプを表示します。 ヘルプ バブルをオフにしたり、無効になっている場合はオンにすることができます。
 - **コマンド ログの表示**: EAC で構成した結果に基づいて、同等の PowerShell コマンドを表示する新しいウィンドウが開きます。
 
 ## <a name="supported-browsers"></a>サポートされているブラウザー
 
-EAC を最大限に活用できるように、常に最新のブラウザー、Office クライアント、アプリを使用することをお勧めします。 また、ソフトウェア更新プログラムも、利用可能になり次第インストールすることをお勧めします。 サービスでサポートされているブラウザーとシステム要件の詳細については、「サービスのシステム要件」 [を参照](https://products.office.com/office-system-requirements)Office。
+EAC を最大限に活用できるように、常に最新のブラウザー、Office クライアント、アプリを使用することをお勧めします。 また、ソフトウェア更新プログラムも、利用可能になり次第インストールすることをお勧めします。 サービスでサポートされているブラウザーとシステム要件の詳細については、「サービスのシステム要件」[を参照](https://products.office.com/office-system-requirements)Office。
 
 ## <a name="supported-languages"></a>サポートされている言語
 

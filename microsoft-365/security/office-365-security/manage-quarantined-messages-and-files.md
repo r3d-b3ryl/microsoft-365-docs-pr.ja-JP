@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) のすべてのユーザーの検疫済みメッセージを表示および管理する方法について学習できます。 Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫済みファイルを管理することもできます。
+description: 管理者は、ユーザー (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理Exchange Online Protectionできます。 Microsoft Defender for Office 365組織の管理者は、SharePoint Online、OneDrive for Business、およびMicrosoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
@@ -39,9 +39,9 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 管理者は、すべてのユーザーの検疫済みメッセージのすべての種類を表示、解放、および削除できます。 マルウェア、高信頼フィッシング、またはメール フロー ルール (トランスポート ルールとも呼ばれる) の結果として検疫されたメッセージを管理できるのは、管理者だけです。 管理者は、誤検知を Microsoft に報告できます。
 
-Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫済みファイルを表示、ダウンロード、および削除することもできます。
+Microsoft Defender for Office 365 組織の管理者は、SharePoint Online、OneDrive for Business、および Microsoft Teams で検疫済みファイルを表示、ダウンロード、および削除Microsoft Teams。
 
-検疫済みメッセージは、セキュリティ & コンプライアンス センターまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) で表示および管理します。
+検疫済みメッセージは、セキュリティ & コンプライアンス センターまたは PowerShell (Exchange Online 内のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) で表示および管理します。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
@@ -59,12 +59,12 @@ Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online�
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
-  - <sup>\*</sup>また、Exchange  Online PowerShell で検疫手順を実行するには、検疫管理者役割グループのメンバーが[Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の衛生管理役割グループのメンバーである必要があります。
+  - <sup>\*</sup>また、検疫管理者 **役割** グループのメンバーは [、Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)で検疫手順を実行するために、Exchange Online Exchange Online の衛生管理役割グループのメンバーである必要があります。
 
 - 検疫済みメッセージは、自動的に削除される前に既定の期間保持されます。
   - スパム対策ポリシー (スパム、フィッシング、バルク メール) によって検疫されたメッセージの 30 日間。 これは既定値と最大値です。 この値を (低く) 構成するには、「スパム対策ポリシーを構成 [する」を参照してください](configure-your-spam-filter-policies.md)。
   - マルウェアを含むメッセージの場合は 15 日間。
-  - SharePoint、OneDrive、Microsoft Teams の安全な添付ファイルによって検疫されたファイルが 365 の場合、Defender で 15 日間Officeされます。
+  - Defender セーフ の添付ファイル、SharePoint、OneDrive、Microsoft Teamsによって検疫Office 365。
 
   検疫からメッセージの有効期限が切れると、メッセージを回復できません。
 
@@ -113,7 +113,7 @@ Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online�
 
    - **ポリシーの種類**: 次のポリシーの種類ごとに、メッセージをフィルター処理します。
      - **マルウェア対策ポリシー**
-     - **安全な添付ファイル ポリシー**
+     - **セーフ添付ファイルポリシー**
      - **フィッシング対策ポリシー**
      - **ホストされているコンテンツ フィルター ポリシー** (スパム対策ポリシー)
      - **トランスポート ルール**
@@ -196,7 +196,7 @@ Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online�
 
 - **[メッセージをダウンロード]**: 表示されるポップアップ ウィンドウで、**[このメッセージをダウンロードするリスクを理解しています]** を選択して、メッセージのローカル コピーを .eml 形式で保存します。
 
-- **[送信者のブロック**]: メールボックスの [受信拒否] リストに送信者を追加します。 詳細については、「メール送信者を [ブロックする」を参照してください](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
+- **送信者のブロック**: メールボックスの [ブロックされた送信者] リストに送信者を追加します。 詳細については、「[メール送信者をブロックする](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)」を参照してください。
 
 - **送信メッセージ**: 表示されるフライアウト ウィンドウで、次のオプションを選択します。
 
@@ -225,12 +225,12 @@ Microsoft Defender for Office 365 の組織の管理者は、SharePoint Online�
 
 完了したら、**[閉じる]** をクリックします。
 
-## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Microsoft Defender for Office 365 のみ: セキュリティ コンプライアンス センターを使用して&ファイルを管理する
+## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Microsoft Defender for Office 365のみ: セキュリティ コンプライアンス センター&を使用して検疫済みファイルを管理する
 
 > [!NOTE]
-> このセクションの検疫済みファイルの手順は、Microsoft Defender Office 365 プラン 1 およびプラン 2 サブスクライバーでのみ使用できます。
+> このセクションの検疫済みファイルの手順は、プラン 1 およびプラン 2 Office 365 Microsoft Defender でのみ使用できます。
 
-Defender for Office 365 の組織では、管理者は SharePoint Online、OneDrive for Business、Microsoft Teams で検疫済みファイルを管理できます。 これらのファイルの保護を有効にするには [、「SharePoint、OneDrive、Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)の安全な添付ファイルを有効にする」を参照してください。
+Defender for Office 365組織では、管理者は SharePoint Online、OneDrive for Business、および Microsoft Teams で検疫済みファイルを管理できます。 これらのファイルの保護を有効にするには、「添付ファイルを有効にする[セーフ」をSharePoint、OneDrive、](turn-on-mdo-for-spo-odb-and-teams.md)およびMicrosoft Teams。
 
 ### <a name="view-quarantined-files"></a>検疫済みファイルの表示
 
@@ -268,10 +268,10 @@ Defender for Office 365 の組織では、管理者は SharePoint Online、OneDr
 一覧でファイルを選択すると、[詳細] フライアウト ウィンドウに次のファイル **の詳細** が表示されます。
 
 - **ファイル名**
-- **ファイル URL**: ファイルの場所を定義する URL (SharePoint Online など)。
+- **ファイル URL**: ファイルの場所を定義する URL (たとえば、[オンライン] SharePointします)。
 - **悪意のあるコンテンツが検出された** ファイルが検疫された日付/時刻。
 - **有効期限**: ファイルが検疫から削除される日付。
-- **検出者**: Defender for Office 365 または Microsoft のマルウェア対策エンジン。
+- **Detected By**: Defender for Office 365 Microsoft のマルウェア対策エンジン。
 - **[解放済み?]**
 - **マルウェア名**
 - **ドキュメント ID**: ドキュメントの一意の識別子。
@@ -298,7 +298,7 @@ Defender for Office 365 の組織では、管理者は SharePoint Online、OneDr
 - **ファイルを解放する**
 - **ファイルの削除**: 表示される **警告で [は** い] をクリックすると、ファイルはすぐに削除されます。
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Exchange Online PowerShell またはスタンドアロン EOP PowerShell を使用して、検疫済みメッセージとファイルを表示および管理する
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>PowerShell Exchange Onlineスタンドアロン EOP PowerShell を使用して、検疫済みメッセージとファイルを表示および管理する
 
 検疫内のメッセージとファイルを表示および管理するコマンドレットは、次のとおりです。
 
@@ -308,6 +308,6 @@ Defender for Office 365 の組織では、管理者は SharePoint Online、OneDr
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): このコマンドレットはメッセージ専用であり、SharePoint、OneDrive、および Microsoft Teams の安全な添付ファイルから検疫されたファイルではありません。
+- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): このコマンドレットはメッセージ専用であり、セーフ 添付ファイルから SharePoint、OneDrive、および Microsoft Teams のファイルを検疫Microsoft Teams。
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)

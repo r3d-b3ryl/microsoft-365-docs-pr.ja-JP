@@ -283,5 +283,5 @@ ms.locfileid: "52280995"
 
 - [apt-packages の管理](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
-## <a name="see-also"></a>こちらもご覧ください
-- [エージェントの正常性の問題を調査する](health-status.md)
+## <a name="see-also"></a>関連項目
+- [エージェントの正常性に関する問題の調査](health-status.md)

@@ -1,5 +1,5 @@
 ---
-title: エージェントの正常性の問題を調査する
+title: エージェントの正常性に関する問題の調査
 description: mdatp 正常性コマンドを実行するときに返される値について説明します。
 keywords: mdatp の正常性、コマンド、正常性、状態、コマンド、オンボーディングの状態
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52281178"
 ---
-# <a name="investigate-agent-health-issues"></a>エージェントの正常性の問題を調査する
+# <a name="investigate-agent-health-issues"></a>エージェントの正常性に関する問題の調査
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: エンドポイント API で Microsoft Defender を使用する
 ms.reviewer: ''
-description: ユーザーなしで Microsoft Defender for Endpoint へのプログラムによるアクセスを取得するネイティブ Windows アプリを設計する方法について説明します。
+description: ユーザーなしで Microsoft Defender for Endpoint にプログラムWindowsアクセスを取得するネイティブ アプリを設計する方法について説明します。
 keywords: apis, graph api, サポートされている API, アクター, アラート, デバイス, ユーザー, ドメイン, IP, ファイル, 高度なハンティング, クエリ
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -31,7 +31,7 @@ ms.locfileid: "51198921"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "51198921"
 
 必要なアクセスが分からない場合は、[概要] ページをお [読みください](apis-intro.md)。
 
-Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API を使用すると、Microsoft Defender for Endpoint の機能に基づいてワークフローを自動化し、革新することができます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については [、「OAuth 2.0 Authorization Code Flow」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API を使用すると、Microsoft Defender for Endpoint の機能に基づいてワークフローを自動化し、革新することができます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については[、「OAuth 2.0 Authorization Code Flow」 を参照してください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般に、API を使用するには、次の手順を実行する必要があります。
 - AAD アプリケーションの作成
@@ -63,9 +63,9 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 1. グローバル管理者の [役割を](https://portal.azure.com) 持つユーザー アカウントを使用して **Azure にログオン** します。
 
-2. **[Azure Active Directory アプリの**  >  **登録] [新規登録**  >  **] に移動します**。 
+2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。 
 
-   ![Microsoft Azure のイメージとアプリケーション登録へのナビゲーション](images/atp-azure-new-app2.png)
+   ![アプリケーション登録Microsoft Azureナビゲーションのイメージ](images/atp-azure-new-app2.png)
 
 3. [**アプリケーションの登録**] ページが表示されたら、以下のアプリケーションの登録情報を入力します。
 

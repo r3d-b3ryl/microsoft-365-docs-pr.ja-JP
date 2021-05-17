@@ -10,7 +10,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理者は、Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを 365 用に作成Officeできます。
+description: 管理者は、Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法をOffice 365。
 ms.technology: mdo
 ms.openlocfilehash: 6cc5dd4a48ab89193133cfaf823d0a1b1868fa79
 ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
@@ -21,7 +21,7 @@ ms.locfileid: "51205193"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>攻撃シミュレーショントレーニングのカスタム ペイロードを作成する
 
-Microsoft は、攻撃シミュレーション トレーニングと組み合わせ、さまざまなソーシャル エンジニアリング手法の堅牢なペイロード カタログを提供しています。 ただし、組織に合ったカスタム ペイロードを作成することもできます。 この記事では、365 用 Microsoft Defender での攻撃シミュレーション トレーニングでペイロードを作成するOffice説明します。
+Microsoft は、攻撃シミュレーション トレーニングと組み合わせ、さまざまなソーシャル エンジニアリング手法の堅牢なペイロード カタログを提供しています。 ただし、組織に合ったカスタム ペイロードを作成することもできます。 この記事では、Microsoft Defender の攻撃シミュレーション トレーニングでペイロードを作成する方法についてOffice 365。
 
 ペイロードを作成するには、[専用のペイロード]タブまたはシミュレーション作成ウィザードで [ペイロードの作成[] をクリックします](attack-simulation-training.md#selecting-a-payload)。 [  ](https://security.microsoft.com/attacksimulator?viewid=payload)
 
@@ -40,7 +40,7 @@ Microsoft は、攻撃シミュレーション トレーニングと組み合わ
 
 リッチ テキスト エディターを使用してペイロードを作成できます。 事前に作成したメールをインポートできます。 電子メールの本文を作成する場合は、動的タグを利用して、メールをターゲットに合ってカスタマイズします。 [ **フィッシング] リンクをクリック** して、以前に選択したフィッシング URL をメッセージの本文に追加します。
 
-![365 の Microsoft Defender のペイロード作成で強調表示されているフィッシング リンクと動的Office](../../media/attack-sim-preview-payload-email-body.png)
+![Microsoft Defender のペイロードの作成で強調表示されているフィッシング リンクと動的Office 365](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > 時間を節約するには、電子メール メッセージ内のすべてのリンクをフィッシング リンクに置き換える **オプションをオンにします**。

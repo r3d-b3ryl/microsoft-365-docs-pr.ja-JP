@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Exchange Online メールボックスを持つ組織または Exchange Online メールボックスを使用しない組織で使用できるフィッシング対策ポリシーを作成、変更、および削除する方法について説明します。
+description: 管理者は、Exchange Online Protection (EOP) 組織で使用できるフィッシング対策ポリシーを作成、変更、および削除する方法について説明します(Exchange Online メールボックスを使用する場合と使用しない場合)。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c277558bad32e1926030483d202b70ae3c910315
@@ -29,13 +29,13 @@ ms.locfileid: "51206210"
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-Exchange Online または Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織のメールボックスを持つ Microsoft 365 組織では、既定で有効になっているスプーフィング対策機能の数が制限されている既定のフィッシング対策ポリシーがあります。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md#spoof-settings)。
+Exchange Online Microsoft 365 またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない Microsoft 365 組織では、既定で有効になっているスプーフィング対策機能の数が制限されている既定のフィッシング対策ポリシーがあります。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md#spoof-settings)。
 
 管理者は、既定のフィッシング対策ポリシーを表示、編集、および構成できます (ただし、削除はされません)。 さらに細分化するために、組織内の特定のユーザー、グループ、またはドメインに適用されるカスタムフィッシング対策ポリシーを作成することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (実行順序) を変更できます。
 
-Exchange Online メールボックスを持つ組織は、セキュリティ コンプライアンス センターまたは Exchange Online PowerShell &フィッシング対策ポリシーを構成できます。 スタンドアロン EOP 組織は、コンプライアンス センター&使用できます。
+メールボックスがExchange Online組織は、セキュリティ コンプライアンス センターまたは PowerShell でフィッシング&ポリシーをExchange Onlineできます。 スタンドアロン EOP 組織は、コンプライアンス センター&使用できます。
 
-Office 365 の Defender で使用できる Microsoft Defender for Office 365 のより高度なフィッシング対策ポリシーを作成および変更する方法については、「Configure anti-フィッシング ポリシー in [Microsoft Defender for Office 365」](configure-atp-anti-phishing-policies.md)を参照してください。
+Office 365 の Defender で使用できる Microsoft Defender for Office 365 で、より高度なフィッシング対策ポリシーを作成および変更する方法については、「Configure anti-フィッシング ポリシー in [Microsoft Defender for Office 365」を参照してください](configure-atp-anti-phishing-policies.md)。
 
 フィッシング対策ポリシーの基本的な要素は次のとおりです。
 
@@ -48,7 +48,7 @@ Office 365 の Defender で使用できる Microsoft Defender for Office 365 の
 - フィッシング対策ポリシーを変更すると、名前、優先度、有効または無効、および受信者フィルターに関連する設定によって、フィッシング対策ルールが変更されます。 その他の設定はすべて、関連付けられたフィッシング対策ポリシーを変更します。
 - フィッシング対策ポリシーを削除すると、フィッシング対策ルールと関連付けられたフィッシング対策ポリシーが削除されます。
 
-Exchange Online PowerShell では、ポリシーとルールを個別に管理します。 詳細については、この記事の後半にある [「Exchange Online PowerShell](#use-exchange-online-powershell-to-configure-anti-phishing-policies) を使用してフィッシング対策ポリシーを構成する」セクションを参照してください。
+PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理します。 詳細については、この記事の[後半Exchange Online「PowerShell](#use-exchange-online-powershell-to-configure-anti-phishing-policies)を使用してフィッシング対策ポリシーを構成する」を参照してください。
 
 すべての組織には、次のプロパティを持つ Office365 AntiPhish Default という名前の組み込みのフィッシング対策ポリシーがあります。
 
@@ -75,10 +75,10 @@ Exchange Online PowerShell では、ポリシーとルールを個別に管理�
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) **の [組織の管理の** 表示のみ] 役割グループは、この機能への読み取り専用アクセスも提供します <sup>\*</sup> 。
+  - [**組織の管理の表示のみ**][](/Exchange/permissions-exo/permissions-exo#role-groups)役割グループは、Exchange Online機能への読み取り専用アクセスも提供します <sup>\*</sup> 。
   - <sup>\*</sup> セキュリティ コンプライアンス センター&読み取り専用アクセスを使用すると、ユーザーはカスタムフィッシング対策ポリシーの設定を表示できます。 読み取り専用のユーザーは、既定のフィッシング対策ポリシーの設定を表示できます。
 
-- スタンドアロン EOP でフィッシング対策ポリシーを作成および変更するには、テナントに水和が必要な _操作を行う_ 必要があります。 たとえば、Exchange 管理センター (EAC) で、[アクセス許可]タブに移動し、既存の役割グループを選択し、[編集] アイコンをクリックし、役割を削除します (最終的に追加し戻します ![ ](../../media/ITPro-EAC-EditIcon.png) )。 テナントが水和されたことがない場合は、[組織の設定の更新] という名前のダイアログが表示され、進行状況バーが表示され、正常に完了します。 ハイドレーションの詳細については [、「Enable-OrganizationCustomization](/powershell/module/exchange/enable-organizationcustomization) コマンドレット (スタンドアロン EOP PowerShell またはセキュリティ & コンプライアンス センターでは使用できません)」を参照してください。
+- スタンドアロン EOP でフィッシング対策ポリシーを作成および変更するには、テナントに水和が必要な _操作を行う_ 必要があります。 たとえば、Exchange 管理センター (EAC) で、[アクセス許可] タブに移動し、既存の役割グループを選択し、[編集] アイコンをクリックし、役割を削除します (最終的に追加します ![ ](../../media/ITPro-EAC-EditIcon.png) )。 テナントが水和されたことがない場合は、[組織の更新]という名前のダイアログ ボックスが表示設定進行状況バーが表示され、正常に完了する必要があります。 ハイドレーションの詳細については [、「Enable-OrganizationCustomization](/powershell/module/exchange/enable-organizationcustomization) コマンドレット (スタンドアロン EOP PowerShell またはセキュリティ & コンプライアンス センターでは使用できません)」を参照してください。
 
 - フィッシング対策ポリシーの推奨設定については、「EOP の既定のフィッシング対策 [ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings)。
 
@@ -159,14 +159,14 @@ Exchange Online PowerShell では、ポリシーとルールを個別に管理�
 
    完了したら、任意のページで **[保存]** をクリックします。
 
-5. **ス** プーフィング : **[編集** ] をクリックしてスプーフィング インテリジェンスをオンまたはオフにし、Outlook で認証されていない送信者 ID をオンまたはオフにし、ブロックされたスプーフィングされた送信者からのメッセージに適用するアクションを構成します。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md#spoof-settings)。
+5. **ス** プーフィング : [編集] をクリックしてスプーフィング インテリジェンスをオンまたはオフにし、Outlook で認証されていない送信者 ID をオンまたはオフにし、ブロックされたスプーフィングされた送信者からのメッセージに適用するアクションを構成します。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md#spoof-settings)。
 
-   これらの同じ設定は、Defender for Office 365 のフィッシング対策ポリシーでも使用できます。
+   これらの同じ設定は、Defender のフィッシング対策ポリシーでも使用Office 365。
 
    - **スプーフィング フィルターの** 設定 : 既定値は **On** で、オンのままにすることをお勧めします。 オフにする場合は、トグルを [オフ] に **スライドします**。 詳細については [、「EOP でスプーフィング インテリジェンスを構成する」を参照してください](learn-about-spoof-intelligence.md)。
 
      > [!NOTE]
-     > MX レコードが Microsoft 365 をポイントしない場合は、スプーフィング防止保護を無効にする必要があります。代わりに、コネクタの拡張フィルターを有効にできます。 手順については [、「Enhanced Filtering for Connectors in Exchange Online」を参照してください](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+     > MX レコードがスプーフィング対策保護を無効にする必要Microsoft 365。代わりに、コネクタの拡張フィルターを有効にできます。 手順については、「拡張フィルタリング[for Connectors in Exchange Online」 を参照してください](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
    - **認証されていない送信者機能を有効にする**: 既定値は On **です**。 オフにする場合は、トグルを [オフ] に **スライドします**。
 
@@ -273,18 +273,18 @@ Exchange Online PowerShell では、ポリシーとルールを個別に管理�
 
 既定のポリシーは削除できません。
 
-## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>Exchange Online PowerShell を使用してフィッシング対策ポリシーを構成する
+## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>PowerShell Exchange Onlineを使用してフィッシング対策ポリシーを構成する
 
 前述したように、フィッシング対策ポリシーは、フィッシング対策ポリシーとフィッシング対策ルールで構成されています。
 
-Exchange Online PowerShell では、フィッシング対策ポリシーとフィッシング対策ルールの違いが明らかです。 -AntiPhishPolicy コマンドレットを使用してフィッシング対策ポリシーを管理し **\* 、-AntiPhishRule** コマンドレットを使用してフィッシング対策ルールを管理します。 **\***
+PowerShell Exchange Online、フィッシング対策ポリシーとフィッシング対策ルールの違いは明らかです。 -AntiPhishPolicy コマンドレットを使用してフィッシング対策ポリシーを管理し **\* 、-AntiPhishRule** コマンドレットを使用してフィッシング対策ルールを管理します。 **\***
 
 - PowerShell では、最初にフィッシング対策ポリシーを作成してから、そのルールが適用されるポリシーを識別するフィッシング対策ルールを作成します。
 - PowerShell では、フィッシング対策ポリシーとフィッシング対策ルールの設定を個別に変更します。
 - PowerShell からフィッシング対策ポリシーを削除すると、対応するフィッシング対策ルールは自動的には削除されません。その逆も同様です。
 
 > [!NOTE]
-> 次の PowerShell 手順は、Exchange Online Protection PowerShell を使用するスタンドアロン EOP 組織では使用できません。
+> 次の PowerShell 手順は、PowerShell を使用してスタンドアロンの EOP 組織ではExchange Online Protectionできません。
 
 ### <a name="use-powershell-to-create-anti-phishing-policies"></a>PowerShell を使用してフィッシング対策ポリシーを作成する
 
@@ -511,14 +511,14 @@ Remove-AntiPhishRule -Identity "Marketing Department"
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
-Microsoft Defender for Office 365 でフィッシング対策ポリシーが正常に構成されたことを確認するには、次の手順を実行します。
+Microsoft Defender でフィッシング対策ポリシーが正常に構成されたことを確認するには、次Office 365手順を実行します。
 
 - [セキュリティ & コンプライアンス センター] で、[**脅威管理ポリシー** のフィッシング \>  \> **対策] に移動します**。 ポリシー、その状態の値、および **優先度** の値の一覧を **確認** します。 詳細を表示するには、次のいずれかの手順を実行します。
 
   - 一覧からポリシーを選択し、詳細をフライアウトで表示します。
   - [既定 **のポリシー] を** クリックし、詳細をフライアウトで表示します。
 
-- Exchange Online PowerShell で、ポリシーまたはルールの名前に置き換え、次のコマンドを \<Name\> 実行し、設定を確認します。
+- PowerShell Exchange Online、ポリシーまたはルールの名前に置き換え、次のコマンドを実行 \<Name\> し、設定を確認します。
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

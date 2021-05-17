@@ -20,7 +20,7 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: 365 Office管理者が暗号化ポータルのコンテンツに暗号化された電子メール メッセージに組織&を適用する方法について学習します。
+description: グローバル管理者Office 365、暗号化ポータルのコンテンツに暗号化された電子メール メッセージに組織&を適用する方法について学習します。
 ms.openlocfilehash: 2898e12ad00d11cd9eb2f3be5d817ef113607e79
 ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/26/2021
 ms.locfileid: "51394715"
 ---
-# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>組織のブランドを Microsoft 365 for business Message Encryption 暗号化メッセージに追加する
+# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>組織のブランドをビジネス メッセージ暗号化Microsoft 365メッセージに追加する
 
 会社のブランド化を適用して、組織の電子メール メッセージと暗号化ポータルの外観をカスタマイズできます。 作業を始める前に、グローバル管理者のアクセス許可を仕事または学校のアカウントに適用する必要があります。 これらのアクセス許可を取得したら、Get-OMEConfigurationおよびSet-OMEConfiguration Windows PowerShellコマンドレットを使用して、暗号化された電子メール メッセージの次の部分をカスタマイズします。
   
@@ -46,7 +46,7 @@ ms.locfileid: "51394715"
 
 いつでも既定のルック アンド フィールに戻すこともできます。
 
-より詳細な制御が必要な場合は、Office 365 Advanced Message Encryption を使用して、組織から送信される暗号化された電子メール用の複数のテンプレートを作成します。 これらのテンプレートを使用して、エンド ユーザー エクスペリエンスの一部を制御します。 たとえば、受信者が Google、Yahoo、Microsoft アカウントを使用して暗号化ポータルにサインインできるかどうかを指定します。 テンプレートを使用して、次のようないくつかの使用例を満たします。
+より詳細な制御が必要な場合は、Office 365 Advanced Message Encryptionを使用して、組織から送信される暗号化された電子メール用の複数のテンプレートを作成します。 これらのテンプレートを使用して、エンド ユーザー エクスペリエンスの一部を制御します。 たとえば、受信者が Google、Yahoo、Microsoft アカウントを使用して暗号化ポータルにサインインできるかどうかを指定します。 テンプレートを使用して、次のようないくつかの使用例を満たします。
 
 - 財務、営業など、個々の部署。
 
@@ -58,7 +58,7 @@ ms.locfileid: "51394715"
 
 - 指定した日数を過ぎると、外部の受信者に送信されるメールの有効期限が切れるかどうかを指定します。
 
-テンプレートを作成したら、Exchange メール フロー ルールを使用して、暗号化されたメールにテンプレートを適用できます。 365 Office高度なメッセージ暗号化を使用している場合は、これらのテンプレートを使用してブランド化したメールを取り消します。
+テンプレートを作成したら、メール フロー ルールを使用して、暗号化されたExchange適用できます。 このテンプレートをOffice 365 Advanced Message Encryption、これらのテンプレートを使用してブランド化したメールを取り消します。
 
 ## <a name="work-with-ome-branding-templates"></a>OME ブランド テンプレートを使用する
 
@@ -70,9 +70,9 @@ ms.locfileid: "51394715"
   
 ## <a name="modify-an-ome-branding-template"></a>OME ブランド テンプレートの変更
 
-[Windows PowerShellを使用して、一度に 1 つのブランド 化テンプレートを変更します。 高度なメッセージ暗号化を使用している場合は、カスタム テンプレートを作成、変更、および削除することもできます。
+ブランドWindows PowerShell一度に 1 つのブランド テンプレートを変更するには、次のコマンドを使用します。 高度なメッセージ暗号化を使用している場合は、カスタム テンプレートを作成、変更、および削除することもできます。
 
-1. 組織でグローバル管理者のアクセス許可を持つ仕事または学校のアカウントを使用して、Windows PowerShellセッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration)の説明に従って、Set-OMEConfigurationコマンドレットを使用するか、ガイダンスとして次の図と表を使用します。
 
@@ -93,11 +93,11 @@ ms.locfileid: "51394715"
 
 ## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>OME ブランド テンプレートの作成 (高度なメッセージ暗号化)
 
-365 Office高度なメッセージ暗号化を使用している場合は [、New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) コマンドレットを使用して、組織のカスタム ブランド テンプレートを作成できます。 テンプレートを作成したら、「OME ブランド テンプレートの変更」の説明に従って、Set-OMEConfiguration コマンドレットを使用してテンプレート [を変更します](#modify-an-ome-branding-template)。 複数のテンプレートを作成できます。
+このコマンドレットを[Office 365 Advanced Message Encryption、New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration)コマンドレットを使用して、組織のカスタム ブランド 化テンプレートを作成できます。 テンプレートを作成したら、「OME ブランド テンプレートの変更」の説明に従って、Set-OMEConfiguration コマンドレットを使用してテンプレート [を変更します](#modify-an-ome-branding-template)。 複数のテンプレートを作成できます。
 
 新しいカスタム ブランド テンプレートを作成するには、次の方法を実行します。
 
-1. 組織でグローバル管理者のアクセス許可を持つ仕事または学校のアカウントを使用して、Windows PowerShellセッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. [New-OMEConfiguration コマンドレットを使用して](/powershell/module/exchange/new-omeconfiguration)、新しいテンプレートを作成します。
 
@@ -115,7 +115,7 @@ ms.locfileid: "51394715"
 
 ブランドのカスタマイズなど、既定のテンプレートからすべての変更を削除するには、次の手順を実行します。
   
-1. 組織でグローバル管理者のアクセス許可を持つ仕事または学校のアカウントを使用して、Windows PowerShellセッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. **Set-OMEConfiguration** の説明に従って [、Set-OMEConfiguration コマンドレットを使用します](/powershell/module/exchange/Set-OMEConfiguration)。 DisclaimerText、EmailText、PortalText の各値から組織のブランド化されたカスタマイズを削除するには、値を空の文字列に設定します `""` 。 Logo などのすべての画像値に対して、値をに設定します  `"$null"` 。
 
@@ -135,7 +135,7 @@ ms.locfileid: "51394715"
 
 カスタム ブランド テンプレートを削除するには、次の方法を実行します。
   
-1. 組織でグローバル管理者のアクセス許可を持つ仕事または学校のアカウントを使用して、Windows PowerShellセッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. 次のように **Remove-OMEConfiguration** コマンドレットを使用します。
 
@@ -151,23 +151,23 @@ ms.locfileid: "51394715"
 
    詳細については [、「Remove-OMEConfiguration」を参照してください](/powershell/module/exchange/remove-omeconfiguration)。
 
-## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>暗号化されたメールにカスタム ブランドを適用する Exchange メール フロー ルールを作成する
+## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>カスタム ブランドExchange暗号化されたメールに適用するメール フロー ルールを作成する
 
 既定のテンプレートを変更するか、新しいブランド 化テンプレートを作成したら、Exchange メール フロー ルールを作成して、特定の条件に基づいてカスタム ブランドを適用できます。 このようなルールは、次のシナリオでカスタム ブランド化を適用します。
 
-- Outlook または Outlook on the web を使用してエンド ユーザーが電子メールを手動で暗号化した場合は、以前はOutlook Web App
+- 電子メールが Web 上のユーザーまたはユーザーを使用してエンド Outlook手動Outlook暗号化された場合は、以前はOutlook Web App
 
-- Exchange メール フロー ルールまたはデータ損失防止ポリシーによって電子メールが自動的に暗号化された場合
+- メール フロー ルールまたはデータ損失防止ポリシー Exchangeによって電子メールが自動的に暗号化された場合
 
-暗号化を適用する Exchange メール フロー ルールを作成する方法については、「Define mail flow rules to encrypt email messages in Office [365」を参照](define-mail-flow-rules-to-encrypt-email.md)してください。
+暗号化を適用するメール フロー ルールExchange作成する方法については、「メール フロー ルールを定義してメール メッセージを暗号化する」を参照[Office 365。](define-mail-flow-rules-to-encrypt-email.md)
 
-1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている仕事または学校のアカウントを使用して [、365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)にサインインOfficeします。
+1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている仕事または学校のアカウントを使用して、管理者に[サインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)Office 365。
 
 2. [管理] **タイルを選択** します。
 
 3. Microsoft 365 管理センター で、**[管理センター]** \> **[Exchange]** の順に選択します。
 
-4. EAC で、[メールフロー ルール] に移動し、[新しい新しい] アイコン [ \>  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しいルールの作成] を選択します**。 EAC の使用の詳細については [、「Exchange Online の Exchange 管理センター」を参照してください](/exchange/exchange-admin-center)。
+4. EAC で、[メールフロー ルール] に移動し、[新しい新しい] アイコン [ \>  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しいルールの作成] を選択します**。 EAC の使用の詳細については、「Exchange[管理センター」を参照](/exchange/exchange-admin-center)Exchange Online。
 
 5. [ **名前]** に、営業部門のブランド化などのルールの名前を入力します。
 
@@ -179,9 +179,9 @@ ms.locfileid: "51394715"
 
 7. [ **次の操作を行う**] で、[メッセージ セキュリティ **の変更]** [カスタム ブランドを \> **OME メッセージに適用する] を選択します**。 次に、ドロップダウンからブランド テンプレートを選択します。
 
-8. (省略可能)暗号化とカスタム ブランド化を適用するメール フロー ルールを構成できます。 [**次の操作を行う****]** で、[メッセージ セキュリティの変更] を選択し **、[365** メッセージの暗号化と権限の保護] Office適用] を選択します。 一覧から RMS テンプレートを選択し、[保存]**を選択し****、[OK] を選択します**。
+8. (省略可能)暗号化とカスタム ブランド化を適用するメール フロー ルールを構成できます。 [**次の操作を行う**] で、[メッセージ セキュリティ **の** 変更] を選択し、[セキュリティと **Office 365 Message Encryptionを適用する] を選択します**。 一覧から RMS テンプレートを選択し、[保存]**を選択し****、[OK] を選択します**。
   
-   テンプレートの一覧には、既定のテンプレートとオプション、および作成するカスタム テンプレートが含まれます。 リストが空の場合は、新しい機能を使用して 365 message Encryption Office設定してください。 手順については [、「Set up new Office 365 Message Encryption capabilitis」を参照してください](set-up-new-message-encryption-capabilities.md)。 既定のテンプレートの詳細については、「Azure Information Protection 用テンプレートの構成と管理 [」を参照してください](/information-protection/deploy-use/configure-policy-templates)。 [転送しない] **オプションの詳細** については、「メールの [転送しないオプション」を参照してください](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 [暗号化のみ] オプション **の詳細については** 、「 [メールの暗号化のみオプション」を参照してください](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
+   テンプレートの一覧には、既定のテンプレートとオプション、および作成するカスタム テンプレートが含まれます。 リストが空の場合は、新しい機能を使用してOffice 365 Message Encryption設定してください。 手順については、「新しい機能を[セットアップする」をOffice 365 Message Encryptionしてください](set-up-new-message-encryption-capabilities.md)。 既定のテンプレートの詳細については、「Azure Information Protection 用テンプレートの構成と管理 [」を参照してください](/information-protection/deploy-use/configure-policy-templates)。 [転送しない] **オプションの詳細** については、「メールの [転送しないオプション」を参照してください](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 [暗号化のみ] オプション **の詳細については** 、「 [メールの暗号化のみオプション」を参照してください](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
    別の **アクションを指定** する場合は、[アクションの追加] を選択します。
 

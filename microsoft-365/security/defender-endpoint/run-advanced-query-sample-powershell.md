@@ -23,13 +23,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51198673"
 ---
-# <a name="advanced-hunting-using-powershell"></a>PowerShell を使用した高度なハンティング
+# <a name="advanced-hunting-using-powershell"></a>PowerShell を使用した高度な追求
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -129,4 +129,4 @@ $results | ConvertTo-Json | Set-Content file1.json
 ## <a name="related-topic"></a>関連トピック
 - [エンドポイント API 用 Microsoft Defender](apis-intro.md)
 - [高度な追及 API](run-advanced-query-api.md)
-- [Python を使用した高度なハンティング](run-advanced-query-sample-python.md)
+- [Python を使用した高度な追求](run-advanced-query-sample-python.md)

@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: Microsoft 365 でドメイン名を購入する方法について説明します。
+description: ドメイン名を購入する方法については、Microsoft 365。
 ms.openlocfilehash: eb0520f605715c3403e1ce0134aa60abed0f6751
 ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
@@ -36,7 +36,7 @@ ms.locfileid: "51470513"
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして [設定] ドメイン \> に移動ドメイン \> を購入する
+### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして[ドメインを購入する設定 \> に \> 移動する
 
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
@@ -72,9 +72,9 @@ ms.locfileid: "51470513"
 ドメインを購入すると、無料のドメイン プライバシー サブスクリプションが提供されます。 これにより、ICANN プライベートを使用してドメインの登録に関連付けられた連絡先情報が保持されます。 [詳細情報](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>別のドメイン レジストラーからドメインを購入する
-[GoDaddy](https://www.godaddy.com)以外のドメイン レジストラーからドメインを購入する場合は、自動セットアップ (Domain Connect) をサポートする以下のドメインレジストラーを使用することをお勧めします。 
+[GoDaddy](https://www.godaddy.com)以外のドメイン レジストラーからドメインを購入する場合は、自動セットアップ (Domain Connect) をサポートするドメインレジストラーを使用することをお勧めします。 
   
-- [1 &amp; 1 IONOS](https://www.1and1.com/)
+- [1&amp;1 IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    
@@ -94,17 +94,17 @@ ms.locfileid: "51470513"
 
 専用ドメインをまだ持っていない場合は、ドメイン名レジストラー、ドメイン リセラー、現在のインターネット プロバイダーなどからオンラインで簡単に購入できます。21Vianet が運営する Office 365 にサインアップすると、たとえば、contoso.partner.onmschina.cn のようなドメイン名を与えられますが、fourthcoffee.com のようなカスタム ドメイン名を使うこともできます。
   
-Microsoft 365 でドメインを設定するには、ドメインを所有し、ドメインの DNS レコードの一部を変更する必要があります。
+ドメインを Microsoft 365するには、ドメインを所有し、ドメインの DNS レコードの一部を変更する必要があります。
   
 > [!CAUTION]
-> 一部のドメイン レジストラーまたは DNS ホスティング プロバイダーでは、Microsoft 365 で必要なすべての DNS レコードを作成できない場合があります。 必要なすべてのレコードをサポートしているホスティング プロバイダーの一覧を次に示します。 別のホスティング プロバイダーの使用を考えている場合は、 [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)してください。 
+> 一部のドメイン レジストラーまたは DNS ホスティング プロバイダーでは、ユーザーが必要とする DNS レコードの作成を許可Microsoft 365。 必要なすべてのレコードをサポートしているホスティング プロバイダーの一覧を次に示します。 別のホスティング プロバイダーの使用を考えている場合は、 [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)してください。 
   
-ドメインを (ドメイン レジストラーで) 登録した後、管理者として Microsoft 365 にサインインし、ドメインをセットアップして、電子メール アドレスや他のサービスで使用できます。
+ドメインを (ドメイン レジストラーで) 登録した後、Microsoft 365 に管理者としてサインインし、ドメインをセットアップして、電子メール アドレスや他のサービスで使用できます。
   
 > [!NOTE]
-> この記事の SharePoint Online パブリック Web サイト情報は、組織が 2015 年 3 月 9 日より前に Microsoft 365 を購入した場合にのみ適用されます。 
+> このSharePointオンラインパブリック Web サイトの情報は、組織が 2015 年 3 月 9 日より前Microsoft 365購入した場合にのみ適用されます。 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Microsoft 365 に必要なすべての DNS レコードをサポートするドメイン レジストラー
+## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>ユーザーに必要なすべての DNS レコードをサポートするドメイン レジストラー Microsoft 365
 
 - [Oray](https://oray.com/)
     

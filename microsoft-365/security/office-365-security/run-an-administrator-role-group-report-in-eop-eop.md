@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) で管理者役割グループ レポートを実行する方法について説明します。 管理者が管理者役割グループにメンバーを追加または削除すると、このレポートはログに記録されます。
+description: 管理者は、スタンドアロン ユーザー (EOP) で管理者役割グループ レポートをExchange Online Protectionできます。 管理者が管理者役割グループにメンバーを追加または削除すると、このレポートはログに記録されます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 0281dcb13f5cee0ba8db8c4faed5054f481337cf
@@ -27,19 +27,19 @@ ms.locfileid: "51206590"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
+-  [Exchange Online Protectionスタンドアロン](exchange-online-protection-overview.md)
 
-Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、管理者が管理役割グループにメンバーを追加または削除すると、サービスは発生ごとにログを記録します。 スタンドアロン EOP の役割グループの詳細については、「 [スタンドアロン EOP のアクセス許可」を参照してください](feature-permissions-in-eop.md)。
+Exchange Online Exchange Online Protectionメールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織では、管理者が管理役割グループにメンバーを追加または削除すると、サービスは発生ごとにログを記録します。 スタンドアロン EOP の役割グループの詳細については、「 [スタンドアロン EOP のアクセス許可」を参照してください](feature-permissions-in-eop.md)。
 
 Exchange 管理センター (EAC) で管理者役割グループ レポートを実行すると、エントリは検索結果として表示され、影響を受ける役割グループ、役割グループのメンバーシップを変更したユーザー、およびメンバーシップの更新が行われたものも含まれます。 このレポートを使用して、組織内のユーザーに割り当てられた管理アクセス許可の変更を監視します。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- Exchange 管理センターを開く方法については、「 [スタンドアロン EOP の Exchange 管理センター」を参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 管理センターを開Exchange、スタンドアロン[EOP Exchange管理センターを参照してください](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- この記事の手順を実行するには、Exchange Online Protection でアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理、コンプライアンス管理、およびセキュリティ管理者の役割グループに割り当てられている監査ログまたはビュー専用監査ログの役割が必要です。  詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「役割グループのメンバーの一覧を [変更する EAC](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)を使用する」を参照してください。
+- この記事の手順を実行するには、Exchange Online Protectionにアクセス許可を割り当てる必要があります。 具体的には、既定で組織の管理、コンプライアンス管理、およびセキュリティ管理者の役割グループに割り当てられている監査ログまたはビュー専用監査ログの役割が必要です。  詳細については、「スタンドアロン [EOP のアクセス](feature-permissions-in-eop.md) 許可」および「役割グループのメンバーの一覧を [変更する EAC](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)を使用する」を参照してください。
 
-- この記事の手順に適用されるキーボード ショートカットの詳細については、「Exchange Online の Exchange 管理センターのキーボード ショートカット」 [を参照してください](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- この記事の手順 Exchangeに適用されるキーボード ショートカットの詳細については、「Exchange Online の管理センターのキーボード ショートカット」[を参照Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
 > 問題が発生する場合 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) フォーラムでサポートをご依頼ください。
@@ -77,9 +77,9 @@ Exchange 管理センター (EAC) で管理者役割グループ レポートを
 - 2018 年 2 月 6 日に、ユーザー tonip が追加されました。
 - 2018 年 2 月 19 日に、ユーザー pilarp が削除されました。
 
-## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>スタンドアロンの Exchange Online PowerShell を使用して監査ログ エントリを検索する
+## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>監査ログ エントリExchange Onlineを検索するには、スタンドアロン の PowerShell を使用する
 
-Exchange Online PowerShell を使用して、指定した条件を満たす監査ログ エントリを検索できます。 検索条件の一覧については [、「Search-AdminAuditLog 検索条件」を参照してください](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)。 この手順では **、Search-AdminAuditLog コマンドレット** を使用し、検索結果を Exchange Online PowerShell に表示します。 このコマンドレットは、 **New-AdminAuditLogSearch** コマンドレットまたは EAC 監査レポートのレポートで定義されている制限値を超える結果セットを返す必要がある場合に使用できます。
+PowerShell をExchange Onlineして、指定した条件を満たす監査ログ エントリを検索できます。 検索条件の一覧については [、「Search-AdminAuditLog 検索条件」を参照してください](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)。 この手順では **、Search-AdminAuditLog** コマンドレットを使用し、PowerShell で検索結果Exchange Onlineします。 このコマンドレットは、 **New-AdminAuditLogSearch** コマンドレットまたは EAC 監査レポートのレポートで定義されている制限値を超える結果セットを返す必要がある場合に使用できます。
 
 指定した条件で監査ログを検索するには、次の構文を使用します。
 
@@ -112,7 +112,7 @@ Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohibit
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
 ```
 
-検索で多数のログ エントリが返される場合は **、「Exchange Online PowerShell** を使用する」の手順を使用して監査ログ エントリを検索し、この記事の後半で受信者に結果を送信することをお勧めします。 その手順を実行すると、指定した受信者に XML ファイルが電子メールの添付ファイルとして送信されるため、目的のデータをより簡単に抽出することができます。
+検索で多数のログ エントリが返される場合は **、「Exchange Online PowerShell** を使用して監査ログ エントリを検索し、後で受信者に結果を送信する」に示す手順を使用することをお勧めします。 その手順を実行すると、指定した受信者に XML ファイルが電子メールの添付ファイルとして送信されるため、目的のデータをより簡単に抽出することができます。
 
 構文およびパラメーターの詳細については、「[Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)」を参照してください。
 
@@ -120,7 +120,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 **Search-AdminAuditLog コマンドレットは、「** 監査ログの内容」で説明されている [フィールドを返します](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)。 コマンドレットによって返されるフィールドのうち、 **CmdletParameters** と **ModifiedProperties** の 2 つのフィールドには、既定では表示できない追加情報が含まれます。
 
-**CmdletParameters** フィールドと **ModifiedProperties** フィールドの内容を表示するには、次の手順を実行します。 または **、「Exchange Online PowerShell** を使用する」の手順を使用して監査ログ エントリを検索し、この記事の後半で受信者に結果を送信して XML ファイルを作成することもできます。
+**CmdletParameters** フィールドと **ModifiedProperties** フィールドの内容を表示するには、次の手順を実行します。 または **、「Use Exchange Online PowerShell」** の手順を使用して監査ログ エントリを検索し、この記事の後半で受信者に結果を送信して XML ファイルを作成することもできます。
 
 この手順では、次の概念を使用します。
 

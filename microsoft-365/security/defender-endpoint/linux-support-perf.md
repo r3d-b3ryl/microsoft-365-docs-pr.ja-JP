@@ -149,5 +149,5 @@ ms.locfileid: "52281019"
 
     詳細については [、「Configure and validate exclusions for Microsoft Defender for Endpoint on Linux」を参照してください](linux-exclusions.md)。
 
-## <a name="see-also"></a>こちらもご覧ください
-- [エージェントの正常性の問題を調査する](health-status.md)
+## <a name="see-also"></a>関連項目
+- [エージェントの正常性に関する問題の調査](health-status.md)

@@ -27,13 +27,13 @@ ms.locfileid: "51206685"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
+-  [Exchange Online Protectionスタンドアロン](exchange-online-protection-overview.md)
 
 ビジネス要件が変化すると、1 つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) を 2 つの別個の組織に分割したり、2 つの組織を 1 つに併合したり、ドメインや EOP の設定を 1 つの組織から別の組織へ移動したりする必要が生じることがあります。1 つの EOP 組織から別の EOP 組織へ移動するのは難しい作業ですが、いくつかの基本的なリモート Windows PowerShell スクリプトを用意し、少しの準備作業を行えば、比較的短いメンテナンス期間で完了できます。
 
 > [!NOTE]
 >
-> - 設定を確実に移動できるのは、EOP スタンドアロン (Standard) 組織から別の EOP Standard または Exchange Enterprise CAL with Services (EOP Premium) 組織のいずれかへの移動、または EOP Premium 組織から別の EOP Premium 組織への移動だけです。 一部のプレミアム機能は EOP Standard 組織ではサポートされていないので、EOP Premium 組織から EOP Standard 組織への移動が成功しない場合があります。
+> - 設定を確実に移動できるのは、EOP スタンドアロン (Standard) 組織から別の EOP Standard または Exchange Enterprise CAL with Services (EOP Premium) 組織のいずれかへの移動、または EOP Premium 組織から別の EOP Premium 組織への移動だけです。 一部のプレミアム機能は EOP Standard 組織ではサポートされていないので、EOP 標準組織から EOP プレミアム組織への移動が成功しない場合があります。
 >
 > - この記事の指示は、EOP フィルターのみの組織を対象にしています。1 つの Exchange Online 組織から別の Exchange Online 組織への移動には、追加の考慮事項があります。Exchange Online 組織は、この記事の指示の適用範囲外です。
 
@@ -59,7 +59,7 @@ ms.locfileid: "51206685"
 - メール フロー ルール (トランスポート ルールとも呼ばれます)
 
   > [!NOTE]
-  > メール フロー ルール コレクションのエクスポートとインポートに対するコマンドレットのサポートは、現在 EOP Premium サブスクリプション プランでのみサポートされています。
+  > メール フロー ルール コレクションのエクスポートとインポートに対するコマンドレットのサポートは、現在、サブスクリプション プランの EOP プレミアムサポートされています。
 
 すべての設定を収集する最も簡単な方法は、PowerShell を使用する方法です。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -181,7 +181,7 @@ Foreach ($domain in $Domains) {
 
 これで、ターゲット組織の Microsoft 365 管理センターから情報を確認して収集し、次の時期にドメインをすばやく確認できます。
 
-1. で Microsoft 365 管理センターにサインインします <https://portal.office.com> 。
+1. で管理センター Microsoft 365サインインします <https://portal.office.com> 。
 
 2. **[ドメイン]** をクリックします。
 
@@ -193,7 +193,7 @@ Foreach ($domain in $Domains) {
 
 5. ドメインの検証に使用する MX レコードまたは TXT レコードを記録し、セットアップ ウィザードを終了します。
 
-6. 検証 TXT レコードを DNS レコードに追加します。 これにより、移動元の組織からドメインを削除した後、移動先の組織でドメインを迅速に検証できます。 DNS の構成の詳細については [、「Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)の任意の DNS ホスティング プロバイダーで DNS レコードを作成する」を参照してください。
+6. 検証 TXT レコードを DNS レコードに追加します。 これにより、移動元の組織からドメインを削除した後、移動先の組織でドメインを迅速に検証できます。 DNS の構成の詳細については、「任意の DNS ホスティング プロバイダーで[DNS](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)レコードを作成する」を参照Microsoft 365。
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>手順 3: 送信者がメールをキューに格納するように強制する
 
@@ -203,14 +203,14 @@ Foreach ($domain in $Domains) {
 
 別の方法として、自分のドメインに対する DNS レコードが保持されている各ドメイン (DNS ホスティング サービスとも呼ばれる) に無効な MX レコード置く方法もあります。このようにすると、送信元ではメールをキューに格納し、再試行します (通常は 48 時間にわたって再試行しますが、プロバイダーによって異なります)。無効な MX 宛先としては、invalid.outlook.com を使用できます。MX レコードの有効時間 (TTL) 値を 5 分に短縮すれば、変更が各 DNS プロバイダーに伝達されるまでの時間を短縮できます。
 
-DNS の構成の詳細については [、「Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)の任意の DNS ホスティング プロバイダーで DNS レコードを作成する」を参照してください。
+DNS の構成の詳細については、「任意の DNS ホスティング プロバイダーで[DNS](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)レコードを作成する」を参照Microsoft 365。
 
 > [!IMPORTANT]
 > メールをキューに保持する時間はプロバイダーごとに異なります。キューに格納する時間が満了して送信者に配信不能レポート (NDR) が送信されるのを避けるため、新しいテナントを迅速に設定し、DNS 設定を元に戻す必要があります。
 
 ## <a name="step-4-remove-users-groups-and-domains-from-the-source-organization"></a>手順 4: 移動元の組織からユーザー、グループ、およびドメインを削除する
 
-次のスクリプトは、Azure Active Directory PowerShell を使用して、ソース テナントからユーザー、グループ、およびドメインを削除します。 次のテキストをコピーしてメモ帳などのテキスト エディターに貼り付け、ファイルを C:\EOP\Export\Remove_Users_and_Groups.ps1 として保存し、次のコマンドを実行してください。
+次のスクリプトは、PowerShell を使用して、ソース テナントからユーザー、グループ、およびドメインAzure Active Directoryします。 次のテキストをコピーしてメモ帳などのテキスト エディターに貼り付け、ファイルを C:\EOP\Export\Remove_Users_and_Groups.ps1 として保存し、次のコマンドを実行してください。
 
 ```PowerShell
 & "C:\EOP\Export\Remove_Users_and_Groups.ps1"
@@ -933,4 +933,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>手順 8: DNS 設定を元に戻し、メールをキューに格納する処置を停止する
 
-移行中に送信者がメールをキューに入れ替える無効なアドレスに MX レコードを設定する場合は、管理センターで指定された正しい値に戻す [必要があります](https://admin.microsoft.com)。 DNS の構成の詳細については [、「Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)の任意の DNS ホスティング プロバイダーで DNS レコードを作成する」を参照してください。
+移行中に送信者がメールをキューに入れ替える無効なアドレスに MX レコードを設定する場合は、管理センターで指定された正しい値に戻す [必要があります](https://admin.microsoft.com)。 DNS の構成の詳細については、「任意の DNS ホスティング プロバイダーで[DNS](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)レコードを作成する」を参照Microsoft 365。

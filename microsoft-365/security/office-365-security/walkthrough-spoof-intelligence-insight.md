@@ -26,7 +26,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51206775"
 ---
-# <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>ウォークスルー - Microsoft Defender for microsoft Defender for Office 365
+# <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>チュートリアル - Microsoft Defender のスプーフィング インテリジェンス Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51206775"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Defender for Office 365 の Microsoft 365 組織では、スプーフィング インテリジェンスインサイトを使用して、認証されていないメール (SPF、DKIM、または DMARC チェックに合格しないドメインからのメッセージ) を正当に送信している外部送信者をすばやく特定できます。
+Microsoft 365 Defender for Office 365 の組織では、スプーフィング インテリジェンスインサイトを使用して、認証されていないメール (SPF、DKIM、DMARC チェックに合格しないドメインからのメッセージ) を正当に送信している外部送信者をすばやく特定できます。
 
 既知の外部送信者が既知の場所からスプーフィングされたメッセージを送信できるようにすることで、誤検知を減らします (良いメールは悪いとマークされています)。 許可されたスプーフィングされた送信者を監視することで、セキュリティの層を追加して、安全でないメッセージが組織に到着することを防止します。
 
@@ -43,7 +43,7 @@ Defender for Office 365 の Microsoft 365 組織では、スプーフィング �
 このチュートリアルは、コンプライアンス センターのセキュリティ &の 1 つです。 レポートと分析情報のナビゲーションについては、「関連トピック」セクションのチュートリアル [を参照](#related-topics) してください。
 
 > [!NOTE]
-> スプーフィング インテリジェンスの分析情報には、過去 7 日間のデータが表示されます。 Exchange Online PowerShell [の](learn-about-spoof-intelligence.md) スプーフィング インテリジェンス ポリシーと対応する [Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy) コマンドレットには、過去 30 日間のデータが表示されます。 [Get-SpoofMailReport には](/powershell/module/exchange/get-spoofmailreport)、最大 90 日間のデータが表示されます。
+> スプーフィング インテリジェンスの分析情報には、過去 7 日間のデータが表示されます。 PowerShell[のス](learn-about-spoof-intelligence.md)プーフィング インテリジェンス ポリシーと対応する[Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy)コマンドレットExchange Online過去 30 日間のデータが表示されます。 [Get-SpoofMailReport には](/powershell/module/exchange/get-spoofmailreport)、最大 90 日間のデータが表示されます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -59,11 +59,11 @@ Defender for Office 365 の Microsoft 365 組織では、スプーフィング �
 
   詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-  **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンスセンターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンス センターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
-- 365 の Microsoft Defender のフィッシング対策ポリシーでスプーフィング インテリジェンスを有効Officeします。 スプーフィング インテリジェンスは既定で有効になっています。 詳細については、「Configure anti-フィッシング ポリシー in [Microsoft Defender for Office 365」を参照してください](configure-atp-anti-phishing-policies.md)。
+- Microsoft Defender のフィッシング対策ポリシーでスプーフィング インテリジェンスを有効または無効にOffice 365。 スプーフィング インテリジェンスは既定で有効になっています。 詳細については[、「Microsoft Defender でフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)を構成する」を参照Office 365。
 
-- スプーフィング インテリジェンスを使用して、認証されていないメッセージを送信している送信者を監視および管理するには、「Configure スプーフィング インテリジェンス in [Microsoft 365」を参照してください](learn-about-spoof-intelligence.md)。
+- スプーフィング インテリジェンスを使用して、認証されていないメッセージを送信している送信者を監視および管理するには、「Configure スプーフィング インテリジェンス in Microsoft 365」[を参照してください](learn-about-spoof-intelligence.md)。
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでスプーフィング インテリジェンス&開く
 
@@ -106,7 +106,7 @@ Defender for Office 365 の Microsoft 365 組織では、スプーフィング �
      - **は** い : スプーフィングされたユーザーのドメインと送信インフラストラクチャの組み合わせからのメッセージは許可され、スプーフィングされた電子メールとして扱われるのではありません。
      - **いいえ**: スプーフィングされたユーザーのドメインと送信インフラストラクチャの組み合わせからのメッセージは、スプーフィングとしてマークされます。 アクションは、既定のフィッシング対策ポリシーまたはカスタムのフィッシング対策ポリシーによって制御されます (既定値は [メッセージを迷惑メール フォルダーに移動する] **です**)。
 
-     詳細については、「Configure anti-フィッシング ポリシー in [Microsoft Defender for Office 365」を参照してください](configure-atp-anti-phishing-policies.md)。
+     詳細については[、「Microsoft Defender でフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)を構成する」を参照Office 365。
 
 2. リスト内のアイテムを選択して、フライアウトのドメイン/送信インフラストラクチャ ペアに関する詳細を表示します。 この情報には、次の情報が含まれます。
    - なぜこれをキャッチしたのか。
@@ -132,4 +132,4 @@ Defender for Office 365 の Microsoft 365 組織では、スプーフィング �
 
 ## <a name="related-topics"></a>関連項目
 
-[Microsoft 365 でのスプーフィング防止保護](anti-spoofing-protection.md)
+[ユーザーのスプーフィング防止Microsoft 365](anti-spoofing-protection.md)

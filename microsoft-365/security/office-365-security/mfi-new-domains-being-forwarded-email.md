@@ -44,7 +44,7 @@ ms.locfileid: "51205136"
 
 [レポート ダッシュボード] または [ おすすめ] 領域の[トップ インサイト] 領域で [すべて表示] をクリックした後で&を選択すると、**この詳細** ページに \> **アクセス** することもできます <https://protection.office.com/insightdashboard> 。
 
-外部ドメインへのメッセージの自動転送を防止するには、一部またはすべての外部ドメインにリモート ドメインを構成します。 詳細については [、「Exchange Online でリモート ドメインを管理する」を参照してください](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)。
+外部ドメインへのメッセージの自動転送を防止するには、一部またはすべての外部ドメインにリモート ドメインを構成します。 詳細については、「リモート ドメインを[管理する」を参照Exchange Online。](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)
 
 ## <a name="related-topics"></a>関連項目
 

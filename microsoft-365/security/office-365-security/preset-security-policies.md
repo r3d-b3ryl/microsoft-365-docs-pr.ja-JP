@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender for microsoft Defender for Office 365 の保護機能全体に標準ポリシー設定と厳密なポリシー設定を適用する方法について説明します。
+description: 管理者は、標準ポリシーと厳密なポリシー設定を、Exchange Online Protection (EOP) と Microsoft Defender の保護機能全体に適用する方法をOffice 365
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 7579b2d2a47135ab9628d2ec8990f53c3917514b
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51205806"
 ---
-# <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP および Microsoft Defender の 365 用に事前設定Officeポリシー
+# <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -60,35 +60,35 @@ ms.locfileid: "51205806"
 
 - **受信者は、組織内** のメールボックス、メール ユーザー、またはメール連絡先です。
 - **受信者は、組織内の**: グループのメンバーです。
-- **受信者ドメインは、Microsoft** 365 で構成されている受け入れドメインです。
+- **受信者のドメインは、** 次のとおりです。このドメインで構成されているMicrosoft 365。
 
 ### <a name="policies-in-preset-security-policies"></a>事前設定されたセキュリティ ポリシーのポリシー
 
-事前設定されたセキュリティ ポリシーでは、EOP および Microsoft Defender の各種保護機能の対応するポリシーを、Office使用します。 これらのポリシーは、Standard Protection _または_ **Strict Protection** の事前設定されたセキュリティ ポリシーを **ユーザー** に割り当てると作成されます。 これらのポリシーは変更できない。
+事前設定されたセキュリティ ポリシーでは、EOP および Microsoft Defender の各種保護機能の対応するポリシーを使用Office 365。 これらのポリシーは、Standard Protection _または_ **Strict Protection** の事前設定されたセキュリティ ポリシーを **ユーザー** に割り当てると作成されます。 これらのポリシーは変更できない。
 
-- **Exchange Online Protection (EOP)** ポリシー : これには、Exchange Online メールボックスを持つ Microsoft 365 組織と、Exchange Online メールボックスのないスタンドアロン EOP 組織が含まれます。
+- **Exchange Online Protection (EOP)** ポリシー : これには、Microsoft 365メールボックスを持Exchange Onlineスタンドアロンの EOP 組織が含Exchange Onlineされます。
 
   - [Standard](configure-your-spam-filter-policies.md) Preset Security Policy と **Strict Preset Security Policy という** 名前の **スパム対策ポリシー**。
   - [Standard](configure-anti-malware-policies.md) Preset Security Policy と **Strict Preset Security Policy という** 名前の **マルウェア対策ポリシー**。
   - [標準プリセット セキュリティ ポリシーと](set-up-anti-phishing-policies.md#spoof-settings)厳密な事前設定セキュリティ ポリシー (スプーフィング設定) という EOP フィッシング **対策** ポリシー。
 
-- **Microsoft Defender for Office 365** ポリシー: これには、Microsoft 365 E5 または Defender が 365 アドオン サブスクリプションの組織Office含まれます。
+- **Microsoft Defender for Office 365 ポリシー**: これには、アドオン サブスクリプションの Microsoft 365 E5または Defender をOffice 365組織が含まれます。
 
-  - Microsoft Defender のフィッシング対策ポリシーは、標準Officeセキュリティ ポリシーと厳密な事前設定セキュリティ ポリシーという名前の 365 を使用します。このポリシーには、次のものが含まれます。
+  - Microsoft Defender のフィッシング対策ポリシーは、標準Office 365セキュリティポリシーと厳密な事前設定セキュリティ ポリシーと呼び、次のものが含まれます。
 
     - EOP [フィッシング対策](set-up-anti-phishing-policies.md#spoof-settings) ポリシーで使用できるスプーフィング設定と同じです。
     - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高度なフィッシングのしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Standard Preset Security Policy と](set-up-safe-links-policies.md) Strict Preset Security Policy **という** 名前のセーフ リンク **ポリシー**。
+  - [セーフセキュリティ ポリシーと](set-up-safe-links-policies.md)厳密 **な** 事前設定セキュリティ ポリシーという名前 **のリンク ポリシー**。
 
-  - [Standard Preset Security](set-up-safe-attachments-policies.md) Policy と **Strict Preset Security Policy という** 名前の **安全な添付ファイル ポリシー**。
+  - [セーフセキュリティ ポリシーと](set-up-safe-attachments-policies.md)**厳密な** 事前設定セキュリティ ポリシーという名前の **添付ファイル ポリシー**。
 
-365 保護の場合は、Microsoft Defender とは異なるユーザーに EOP Office適用できます。
+EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護Office 365注意してください。
 
 ### <a name="policy-settings-in-preset-security-policies"></a>事前設定されたセキュリティ ポリシーのポリシー設定
 
-保護プロファイルでポリシー設定を変更できない。 標準 **ポリシーと****厳密なポリシー** 設定の値については、「EOP および Microsoft Defender の [365](recommended-settings-for-eop-and-office365.md)セキュリティに関する推奨Office説明されています。
+保護プロファイルでポリシー設定を変更できない。 標準 **ポリシーと****厳密なポリシー設定** の値については [、「EOP](recommended-settings-for-eop-and-office365.md)および Microsoft Defender のセキュリティに関する推奨設定Office 365説明されています。
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>事前設定されたセキュリティ ポリシーおよび他のポリシーの優先順位
 
@@ -115,7 +115,7 @@ ms.locfileid: "51205806"
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
-  **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与されます。 詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>コンプライアンス センターのセキュリティ &を使用して、ユーザーに事前設定されたセキュリティ ポリシーを割り当てる
 
@@ -143,7 +143,7 @@ ms.locfileid: "51205806"
 
    完了したら、**[次へ]** をクリックします。
 
-4. 組織に microsoft Defender for Office 365 がある場合は **、ATP** 保護が適用される手順に進み、microsoft Defender for [Office 365](#policies-in-preset-security-policies) 保護が適用される内部受信者を特定します。
+4. 組織に microsoft Defender for Office 365 がある場合は **、ATP** 保護が適用される手順に進み [、microsoft Defender](#policies-in-preset-security-policies) for Office 365 保護が適用される内部受信者を特定します。
 
    設定と動作は **、EOP 保護が手順に適用されるのとまったく同** じです。
 

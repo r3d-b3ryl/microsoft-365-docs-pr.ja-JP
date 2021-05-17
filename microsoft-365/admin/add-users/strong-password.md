@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: ユーザーに対して強力なパスワード要件を設定する方法については、Windows PowerShell。
+description: ユーザーに強力なパスワード要件を設定する方法については、Windows PowerShell。
 ms.openlocfilehash: de2f47bb88fe4cb3d00e45698fe006035faa4e5c
 ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
@@ -30,17 +30,17 @@ ms.locfileid: "51222075"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>ユーザーの強力なパスワード要件をオフにする
 
-この記事では、ユーザーの強力なパスワード要件をオフにする方法について説明します。 強力なパスワード要件は、ビジネス組織向け Microsoft 365 で既定で有効になっています。 組織には、強力なパスワードを無効にする必要がある場合があります。 強力なパスワード要件をオフにするには、以下の手順に従います。 PowerShell を使用してこれらの手順を実行する必要があります。
+この記事では、ユーザーの強力なパスワード要件をオフにする方法について説明します。 強力なパスワード要件は、ビジネス組織向けMicrosoft 365既定で有効になっています。 組織には、強力なパスワードを無効にする必要がある場合があります。 強力なパスワード要件をオフにするには、以下の手順に従います。 PowerShell を使用してこれらの手順を実行する必要があります。
 
 ## <a name="before-you-begin"></a>はじめに
 
 この記事は、ビジネス、学校、または非営利団体のパスワード ポリシーを管理するユーザー向けです。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
 
-また、PowerShell を使用して Microsoft 365 に接続する必要があります。
+PowerShell を使用して、Microsoft 365接続する必要があります。
 
 ## <a name="set-strong-passwords"></a>強力なパスワードを設定する
 
-1. [PowerShell を使用して Microsoft 365 に接続します](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+1. [Connect PowerShell をMicrosoft 365する方法を説明します](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 2. PowerShell を使用すると、次のコマンドを使用して、すべてのユーザーの強力なパスワード要件をオフにできます。
 

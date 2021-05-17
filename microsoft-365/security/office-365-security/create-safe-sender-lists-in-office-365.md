@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) で受信メッセージを許可するための利用可能なオプションと優先オプションについて説明します。
+description: 管理者は、受信メッセージ (EOP) で受信メッセージを許可するための使用可能なオプションと優先Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e5473f8c37b4edcf6c2451cf995b430edbe09533
@@ -33,12 +33,12 @@ ms.locfileid: "51205986"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online のメールボックスを持つ Microsoft 365 のお客様、または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) のお客様の場合、EOP は、ユーザーが信頼できる送信者からメールを受信できるよう、複数の方法を提供します。 これらのオプションには、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる)、Outlook の差出人セーフ リスト、IP 許可一覧 (接続フィルター)、スパム対策ポリシーで許可される送信者リストまたは許可されたドメイン リストが含まれます。 総称して、これらのオプションは、差出人セーフ リスト _と考えて使用できます_。
+Exchange Online のメールボックスまたは Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 顧客を持つ Microsoft 365 顧客の場合、EOP は、ユーザーが信頼できる送信者からメールを受信するための複数の方法を提供します。 これらのオプションには、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる)、Outlook セーフ Senders、IP 許可一覧 (接続フィルター)、スパム対策ポリシーで許可される送信者リストまたは許可されたドメイン リストが含まれます。 総称して、これらのオプションは、差出人セーフ リスト _と考えて使用できます_。
 
 使用可能な差出人セーフ リストについては、最も推奨される順に次の一覧を参照してください。
 
 1. メール フロー ルール
-2. Outlook の差出人セーフ リスト
+2. Outlook セーフ送信者
 3. IP 許可一覧 (接続フィルター)
 4. 許可された送信者リストまたは許可されたドメイン リスト (スパム対策ポリシー)
 
@@ -52,13 +52,13 @@ Exchange Online のメールボックスを持つ Microsoft 365 のお客様、�
 >
 > - ドメインが認証されていない電子メールを送信する (スプーフィング防止をバイパスする) が、スパム対策とマルウェア対策チェックをバイパスしない場合は[、AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)セーフ 送信者リストに追加できます。
 >
-> - EOP と Outlook は、さまざまなメッセージ プロパティを検査して、メッセージの送信者を特定します。 詳細については、この記事の後半 [の「一括メールに関する](#considerations-for-bulk-email) 考慮事項」セクションを参照してください。
+> - EOP と Outlookさまざまなメッセージ プロパティを検査して、メッセージの送信者を特定します。 詳細については、この記事の後半 [の「一括メールに関する](#considerations-for-bulk-email) 考慮事項」セクションを参照してください。
 
 これに対し、ブロックされた送信者リストを使用して特定のソースからの電子メールをブロックする _オプションもいくつか用意されています_。 詳細については、「[EOP での受信拒否リストの作成](create-block-sender-lists-in-office-365.md)」を参照してください。
 
 ## <a name="recommended-use-mail-flow-rules"></a>(推奨)メール フロー ルールの使用
 
-Exchange Online およびスタンドアロン EOP のメール フロー ルールでは、条件と例外を使用してメッセージを識別し、それらのメッセージに対して実行する処理を指定します。 詳細については、「[Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)」を参照してください。
+EOP およびスタンドアロン EOP Exchange Onlineフロー ルールでは、メッセージを識別するための条件と例外、およびそれらのメッセージに対して実行する必要がある処理を指定します。 詳細については、「[Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)」を参照してください。
 
 次の例では、スパム フィルターをスキップするために、contoso.com メールが必要だと仮定しています。 これを行うには、次の設定を構成します。
 
@@ -94,20 +94,20 @@ Exchange Online およびスタンドアロン EOP のメール フロー ルー
 
    b. **メッセージのプロパティを変更する** \>**メッセージ ヘッダーを設定する**:**メッセージ ヘッダーを値** \<CustomHeaderName\> **に設定します** \<CustomHeaderValue\> 。
 
-      たとえば、`X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'` などです。 ルールに複数のドメインがある場合は、必要に応じてヘッダー テキストをカスタマイズできます。
+      たとえば、「 `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'` 」のように入力します。 ルールに複数のドメインがある場合は、必要に応じてヘッダー テキストをカスタマイズできます。
 
       メール フロー ルールが原因でメッセージがスパム フィルター処理をスキップすると、値は `SFV:SKN` **X-Forefront-Antispam-Report** ヘッダーにスタンプされます。 メッセージが IP 許可一覧上のソースからのメッセージである場合は、値 `IPV:CAL` も追加されます。 これらの値は、トラブルシューティングに役立ちます。
 
 ![スパム フィルターをバイパスする EAC のメール フロー ルール設定。](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
-## <a name="use-outlook-safe-senders"></a>Outlook の差出人セーフ リストを使用する
+## <a name="use-outlook-safe-senders"></a>送信者Outlook セーフ使用する
 
 > [!CAUTION]
-> この方法では、攻撃者が受信トレイにメールを正常に配信するリスクが高く、それ以外の場合はフィルター処理されます。ただし、ユーザーの [差出人セーフ リスト] または [セーフ ドメイン] リストは、マルウェアや高信頼のフィッシング メッセージがフィルター処理されるのを防ぐわけではありません。
+> この方法では、攻撃者が受信トレイにメールを正常に配信するリスクが高く、それ以外の場合はフィルター処理されます。ただし、ユーザーの送信者またはセーフドメインセーフのリストでは、マルウェアや信頼性の高いフィッシング メッセージがフィルター処理されるのを防ぐわけではありません。
 
-組織の設定の代わりに、ユーザーまたは管理者はメールボックスの差出人セーフ リストに送信者の電子メール アドレスを追加できます。 手順については [、「Configure junk email settings on Exchange Online mailboxs in Office 365」を参照してください](configure-junk-email-settings-on-exo-mailboxes.md)。 送信者はフィルター 処理スタックの一部をバイパスしますので、ほとんどの場合、これは望ましくありません。 送信者を信頼しますが、送信者は引き続き侵害され、悪意のあるコンテンツを送信できます。 すべてのメッセージを確認するために必要な処理をフィルターで実行し、フィルターが間違っている場合は [、誤検知/](report-junk-email-messages-to-microsoft.md) 陰性を Microsoft に報告する必要があります。 フィルター スタックをバイパスすると [、ZAP も妨げになります](zero-hour-auto-purge.md)。
+組織の設定の代わりに、ユーザーまたは管理者は、メールボックス内の [送信者] セーフに送信者の電子メール アドレスを追加できます。 手順については、「迷惑メールの設定を構成する」[を参照Exchange OnlineメールボックスにOffice 365。](configure-junk-email-settings-on-exo-mailboxes.md) 送信者はフィルター 処理スタックの一部をバイパスしますので、ほとんどの場合、これは望ましくありません。 送信者を信頼しますが、送信者は引き続き侵害され、悪意のあるコンテンツを送信できます。 すべてのメッセージを確認するために必要な処理をフィルターで実行し、フィルターが間違っている場合は [、誤検知/](report-junk-email-messages-to-microsoft.md) 陰性を Microsoft に報告する必要があります。 フィルター スタックをバイパスすると [、ZAP も妨げになります](zero-hour-auto-purge.md)。
 
-ユーザーの差出人セーフ リストが原因でメッセージがスパム フィルター処理をスキップすると **、X-Forefront-Antispam-Report** ヘッダー フィールドには、スパム、スプーフィング、フィッシングのフィルター処理がバイパスされたことを示す値が含まれます。 `SFV:SFE`
+ユーザーの セーフ Senders リストによるスパム フィルター処理をスキップすると **、X-Forefront-Antispam-Report** ヘッダー フィールドには、スパム、スプーフィング、フィッシングのフィルター処理がバイパスされたことを示す値が含まれます。 `SFV:SFE`
 
 ## <a name="use-the-ip-allow-list"></a>IP 許可一覧を使用する
 
@@ -150,13 +150,13 @@ Exchange Online およびスタンドアロン EOP のメール フロー ルー
 
 - アドレス `5321.MailFrom` は blueyonder.airlines@margiestravel.com。
 
-- アドレス `5322.From` は blueyonder@news.blueyonderairlines.com Outlook に表示されます。
+- アドレス `5322.From` は blueyonder@news.blueyonderairlines.com に表示されるOutlook。
 
-EOP のスパム対策ポリシーのセーフ 送信者リストとセーフ ドメイン リストは、アドレスのみを検査します。これは、アドレスを使用する Outlook セーフ 送信者と `5322.From` 似 `5322.From` ています。
+セーフメール対策ポリシーの送信者リストとセーフ ドメイン リストは、アドレスのみを検査します。これは、アドレスを使用する Outlook セーフ `5322.From` 送信者に似 `5322.From` ています。
 
 このメッセージがフィルター処理されるのを防ぐために、次の手順を実行できます。
 
-- Outlook blueyonder@news.blueyonderairlines.com 差出 `5322.From` 人としてユーザー (アドレス) を追加します。
+- 送信者 blueyonder@news.blueyonderairlines.com ( `5322.From` アドレス) を追加Outlook セーフします。
 
 - [メール フロー ルールを使用](#recommended-use-mail-flow-rules) して、メッセージ (アドレス、blueyonder@news.blueyonderairlines.com (the)、または両方) を blueyonder.airlines@margiestravel.com `5322.From` `5321.MailFrom` する条件を指定します。
 

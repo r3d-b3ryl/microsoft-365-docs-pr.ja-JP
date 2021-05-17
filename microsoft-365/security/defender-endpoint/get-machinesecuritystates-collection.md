@@ -29,7 +29,7 @@ ms.locfileid: "51200367"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "51200367"
 
 デバイスのセキュリティ状態のコレクションを取得します。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 ユーザーには読み取りアクセス許可が必要です。
 
 ## <a name="http-request"></a>HTTP 要求

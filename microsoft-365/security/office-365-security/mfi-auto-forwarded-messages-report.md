@@ -53,7 +53,7 @@ ms.locfileid: "51206405"
 
 ![セキュリティ コンプライアンス センターの自動転送メッセージ レポートの詳細&飛び出し](../../media/mfi-auto-forwarded-messages-details.png)
 
-## <a name="insights"></a>洞察力
+## <a name="insights"></a>分析情報
 
 レポート データに基づいて 2 つの分析情報が生成されます。
 

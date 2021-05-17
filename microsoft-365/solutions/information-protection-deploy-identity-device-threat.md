@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Microsoft 365 の ID、デバイス、および脅威保護サービスによる個人データ侵害を防止します。
+description: ユーザーの ID、デバイス、および脅威保護サービスによる個人データ侵害をMicrosoft 365。
 ms.openlocfilehash: 5e08ef574e199769e572b3836b3323dc88fc4bbd
 ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "51199467"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>データプライバシー規制に ID、デバイス、および脅威保護を使用する
 
-Microsoft 365 には、組織がデータプライバシー関連のコンプライアンス規制に準拠するために使用できる ID、デバイス、および脅威保護機能が多数提供されています。 この記事では、これらの分野で必要なデータプライバシー規制について説明し、実装要件に対処するために役立つ詳細な情報へのリンクを含む、関連する Microsoft 365 の機能とサービスの一覧を提供します。
+Microsoft 365は、データプライバシーに関連するコンプライアンス規制の遵守に役立つ、組織が採用できる多数の ID、デバイス、および脅威保護機能を提供します。 この記事では、これらの分野で必要なデータプライバシー規制について説明し、実装要件に対処するための詳細へのリンクを含む関連する Microsoft 365 機能とサービスの一覧を提供します。
 
 ## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>ID、デバイス、および脅威保護がデータプライバシー規制とどのように関連付けるか
 
@@ -46,43 +46,43 @@ Microsoft 365 には、組織がデータプライバシー関連のコンプラ
  
 これらが 4 つの主要なデータ プライバシー規制のサンプル セット全体で選択されている場合、コンプライアンス マネージャーは 90 の改善アクションを指定します。そのほとんどが "27" と評価されます。 このような大きな数は、これらのカテゴリのコンプライアンス マネージャーによって呼び出されるので、参照のために、より一般的な一部がここに一覧表示されます。
 
-ID およびコントロール アクセス カテゴリAD Azure Active **Directory** [(Azure AD)](https://azure.microsoft.com/services/active-directory/)を使用して、次の操作を実行できます。
+ID [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/)を使用して、次の操作を実行できます。
 
 - 再生に強い認証を実装する ("Man in the middle" 攻撃を防ぐため)
 - レガシ認証をブロックする
 - ユーザー リスクとユーザー サインイン リスク ポリシーを構成します。
 - 管理者および管理者以外のユーザーに対して条件付きアクセスと多要素認証 (MFA) を有効にします。
 - パスワード ポリシーを構成して適用します。
-- Azure の特権 ID 管理を使用して、特権ADへのアクセスを制限します。
+- Azure アカウントを使用して特権アカウントへのアクセスをAD Privileged Identity Management。
 - 終了時にアクセスを無効にします。
 - ユーザー アカウントと状態の変更を監査します。
 - 役割グループと管理上の変更を確認します。
 
-デバイス [と [デバイスの管理](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) ] カテゴリに Microsoft Endpoint Manager を **使用すると、** 次の機能を使用できます。
+デバイス[Microsoft エンドポイント マネージャー[](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)デバイスの管理] カテゴリで、次の機能を使用できます。
 
 - 壊れた、根ざしたモバイル デバイスの脱獄をブロックします。
 - モバイル デバイス管理用に Intune を構成します。
-- Android、iOS、macOS、Windows デバイスのコンプライアンス ポリシーを作成します。
-- Android、iOS、macOS、Windows デバイスのデバイス構成プロファイルを作成します。
-- iOS と Windows のアプリ保護ポリシーを作成します。
+- Android、iOS、macOS、Windowsポリシーを作成します。
+- Android、iOS、macOS、およびデバイスのデバイス構成プロファイルをWindowsします。
+- iOS とアプリのアプリ保護ポリシーを作成Windows。
 - ロック画面で情報を隠す。
 - モバイル デバイスのパスワード ポリシーを実装します。
 - 非アクティブ時にモバイル デバイスをロックする必要があります。
 - 複数のサインインエラーでモバイル デバイスにワイプを要求する。
 
-[[脅威に対する保護] カテゴリOffice Exchange](../security/office-365-security/defender-for-office-365.md) Online Protectionおよび Microsoft Defender を 365 に使用すると、次の機能を使用できます。
+[[脅威Exchange Online Protection保護] カテゴリOffice 365](../security/office-365-security/defender-for-office-365.md) Microsoft Defender と **Microsoft** Defender を使用すると、次の機能を使用できます。
 
 - 送信者認証 (SPF、DMARC、DKIM) を有効にします。
-- 365 のフィッシングOfficeポリシー用に Microsoft Defender をセットアップします。
-- 安全な添付ファイルを実装します。
-- 安全なリンクを実装します。
+- フィッシング対策ポリシー Office 365 Microsoft Defender をセットアップします。
+- 添付ファイルセーフ実装します。
+- [リンクセーフ実装します。
 - マルウェア検出ポリシーと応答ポリシーを実装します。
 - 送信スパム ポリシーと受信スパム ポリシーを実装します。
 
 ### <a name="references"></a>参照:
 
 - [共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)
-- [365 の脅威からOfficeする](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
+- [脅威から保護Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
 - [添付ファイル保護](../security/office-365-security/safe-attachments.md)
 - [リンク保護](../security/office-365-security/safe-links.md)
 - [安全なドキュメント](../security/office-365-security/safe-docs.md)

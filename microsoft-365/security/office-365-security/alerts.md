@@ -17,7 +17,7 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Office 365 セキュリティ & コンプライアンス センターのアラート機能を使用して、高度なアラートの管理を含むアラートを表示および管理する方法について学習します。
+description: Office 365 セキュリティ Office 365 コンプライアンス センターのアラート機能を使用して、高度なアラートの管理を含む&を表示および管理する方法について学習します。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -36,7 +36,7 @@ ms.locfileid: "51205523"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
-セキュリティ & コンプライアンス センターのアラート機能を使用して [、Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)の概要の一部として高度なアラートを管理するなどの組織のアラートを表示および管理します。
+セキュリティ & コンプライアンス センターのアラート機能を使用して、組織のアラートを表示および管理します。詳細な通知は、組織の概要の一部としてMicrosoft Cloud App Security[します](/cloud-app-security/what-is-cloud-app-security)。
 
 ## <a name="how-to-get-to-the-alerts-features"></a>アラート機能を取得する方法
 
@@ -68,6 +68,6 @@ ms.locfileid: "51205523"
 
 |ツール|説明|
 |---|---|
-|[アラートの管理](../../compliance/create-activity-alerts.md)|アクティビティ通知を使用して、ユーザーが Microsoft 365 で特定のアクティビティを実行するときに、自分または他の管理者に電子メール通知を送信します。 アクティビティアラートは、イベントの監査ログの検索に似ていますが、アラートを作成したイベントが発生すると電子メール メッセージが送信される点を除きます。|
-|[高度なアラートの管理](/cloud-app-security/what-is-cloud-app-security)|Microsoft  365 Cloud App Security の高度なアラートの管理機能を使用して、Microsoft 365 で疑わしいアクティビティや異常なアクティビティを警告するポリシーを設定します。 警告が表示された後は、問題が発生する可能性がある状況を調査し、必要に応じてセキュリティの問題に対処するアクションを実行できます。|
+|[アラートの管理](../../compliance/create-activity-alerts.md)|アクティビティ通知を使用して、ユーザーが特定のアクティビティを実行するときに、ユーザーまたは他の管理者に電子メール通知を送信Microsoft 365。 アクティビティアラートは、イベントの監査ログの検索に似ていますが、アラートを作成したイベントが発生すると電子メール メッセージが送信される点を除きます。|
+|[高度なアラートの管理](/cloud-app-security/what-is-cloud-app-security)|Microsoft 365 Cloud App Security **の** 高度なアラートの管理機能を使用して、疑わしいアクティビティや異常なアクティビティを通知するポリシーをMicrosoft 365。 警告が表示された後は、問題が発生する可能性がある状況を調査し、必要に応じてセキュリティの問題に対処するアクションを実行できます。|
 |

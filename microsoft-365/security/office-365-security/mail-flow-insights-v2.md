@@ -69,12 +69,12 @@ ms.locfileid: "51206290"
 
 - **コンプライアンス センター** (グローバル管理者) &の組織の管理。
 
-- **[Azure Active](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Directory の Exchange 管理者。
+- **[Exchangeの管理者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Azure Active Directory。
 
-- **コンプライアンス センターの** セキュリティ & MailFlow 管理者。 アカウントが組織の管理役割グループまたは Exchange 管理者役割グループのメンバーでない場合は、次の問題を検討してください。
+- **コンプライアンス センターの** セキュリティ & MailFlow 管理者。 アカウントが組織の管理または管理者役割グループのメンバーでExchange場合は、次の問題を検討してください。
   - ユーザーは、コンプライアンス センターのセキュリティ &に直接サインインする必要があります <https://protection.office.com> 。
   - ユーザーは、メール フロー ダッシュボードに対する読み取り専用のアクセス許可のみを持つ。
-  - ユーザーは Microsoft 365 管理センターにアクセスできます。
+  - ユーザーは管理センターにアクセスMicrosoft 365使用します。
 
 アクセス許可の詳細については、「Security [&](permissions-in-the-security-and-compliance-center.md) コンプライアンス センターのアクセス許可」および「セキュリティ コンプライアンス センターへのアクセス許可をユーザーに付与する」 [を参照&してください](grant-access-to-the-security-and-compliance-center.md)。
 

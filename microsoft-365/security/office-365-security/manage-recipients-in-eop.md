@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) でさまざまな種類の受信者オブジェクトについて学習できます。
+description: 管理者は、スタンドアロン ドメイン (EOP) でさまざまな種類の受信者Exchange Online Protection学習できます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 045146b0c8676398482e813d6986fd64dda3aa6d
@@ -27,9 +27,9 @@ ms.locfileid: "51205343"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
--  [Exchange Online Protection スタンドアロン](exchange-online-protection-overview.md)
+-  [Exchange Online Protectionスタンドアロン](exchange-online-protection-overview.md)
 
-Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織では、次の種類の受信者がサポートされます。
+スタンドアロン Exchange Online Protection (EOP) 組織で、メールボックスExchange Online次の種類の受信者をサポートします。
 
 - **メール ユーザー**: メール ユーザーは、スタンドアロン EOP 組織の基本的な種類のユーザー アカウントです。 メール ユーザーは EOP 組織にログオン資格情報を持っていますが、外部の電子メール アドレス (メールボックスは EOP 組織の外部にある) を持ちます。
 

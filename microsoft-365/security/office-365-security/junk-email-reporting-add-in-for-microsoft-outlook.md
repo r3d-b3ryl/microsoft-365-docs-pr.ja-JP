@@ -1,5 +1,5 @@
 ---
-title: Microsoft Outlook の迷惑メール レポート アドインをインストールして使用する
+title: Microsoft の迷惑メール レポート アドインをインストールして使用Outlook
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51205466"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft Outlook の迷惑メール レポート アドインをインストールして使用する
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft の迷惑メール レポート アドインをインストールして使用Outlook
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51205466"
 > [!NOTE]
 > 現在迷惑メール レポート アドインを使用していない場合は、代わりにレポート メッセージ アドイン[](enable-the-report-message-add-in.md)またはレポート フィッシング[アドインをお](enable-the-report-phish-add-in.md)勧めします。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-Microsoft Outlook の迷惑メール レポート アドインを使用すると、ユーザーは誤検知 (スパムとしてマークされた良いメール)、誤検知 (悪いメールが許可されている)、フィッシング メッセージを Microsoft に送信できます。 組織で Exchange Online Protection (たとえば、Exchange Online 以外のオンプレミス Exchange または電子メール サービス) を使用しない場合、迷惑メール レポートの送信はスパム フィルター処理に影響を与えかねない。
+Microsoft Outlook の迷惑メール レポート アドインを使用すると、ユーザーは誤検知 (スパムとしてマークされた良いメール)、偽陰性 (悪いメールが許可されている)、フィッシング メッセージを Microsoft に送信できます。 組織で Exchange Online Protection (たとえば、Exchange Online 以外のオンプレミス Exchange または電子メール サービス) を使用しない場合、迷惑メール レポートの送信はスパム フィルター処理に影響を与えかねない。
 
 このトピックでは、迷惑メール レポート アドインをインストールして使用する方法について説明します。
 
@@ -42,10 +42,10 @@ Microsoft Outlook の迷惑メール レポート アドインを使用すると
 
 - 迷惑メール レポート アドインをインストールするには、この記事の後半にある「迷惑 [メール](#install-the-junk-email-reporting-add-in) レポート アドインのインストール」セクションを参照してください。
 
-- 迷惑メール レポート アドインは、次のバージョンの Outlook で動作します。
+- 迷惑メール レポート アドインは、次のバージョンのユーザーとOutlook。
 
   - Outlook 2013 以降
-  - エンタープライズ向け Microsoft 365 Apps に含まれる Outlook
+  - Outlookに含まれるMicrosoft 365 Apps for enterprise
 
 - Microsoft へのメッセージの報告の詳細については、「メッセージとファイルを Microsoft に報告 [する」を参照してください](report-junk-email-messages-to-microsoft.md)。
 
@@ -111,20 +111,20 @@ Microsoft Outlook の迷惑メール レポート アドインを使用すると
 
 - アドインをインストールするコンピューターに管理者権限が必要です。
 
-- ファイルのバージョンに適した .msi ファイルOffice簡単に <https://www.microsoft.com/download/details.aspx?id=18275> 見つけることができる場所に移動してダウンロードします。
+- 次の場所に移動して、.msiのバージョンにOfficeファイルを簡単 <https://www.microsoft.com/download/details.aspx?id=18275> にダウンロードします。
 
   - **32 ビット**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
   - **64 ビット**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-- Outlook 2013 以降の場合、唯一の前提条件は Microsoft .NET Framework 2.0 です。 Windows 10 では、ダウンロードから .NET Framework 2.0 をインストールする必要があります。
+- 2013 Outlook以降の場合、唯一の前提条件は Microsoft .NET Framework 2.0 です。 このWindows 10、ダウンロードから 2.0 .NET Frameworkをインストールする必要があります。
 
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>セットアップ ウィザードを使用して迷惑メール レポート アドインをインストールする
 
 1. お使いのコンピューターで Outlook を終了します。
 
-2. Windows 10 で、2.0 .NET Frameworkが有効になっているか確認します。 手順については、「コントロール パネル [で .NET Framework 3.5 を有効にする」を参照してください](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)。
+2. [Windows 10 2.0 が有効.NET Frameworkを確認します。 手順については、「コントロール パネル[で .NET Framework 3.5 を有効にする」を参照してください](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)。
 
-3. ダウンロードした .msi ファイルを見つけてダブルクリックします。
+3. ダウンロードした.msiファイルを見つけてダブルクリックします。
 
 4. **[Microsoft 迷惑メール報告アドイン セットアップにようこそ]** ページで **[次へ]** をクリックします。
 
@@ -142,7 +142,7 @@ Microsoft にフィッシング詐欺メールを報告する場合は、 **[迷
 
 1. お使いのコンピューターで Outlook を終了します。
 
-2. Windows 10 で、次のコマンド.NET Framework 2.0 をインストールします。
+2. 次Windows 10を実行して、.NET Framework 2.0 をインストールします。
 
    ```dos
    DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
@@ -175,7 +175,7 @@ Microsoft にフィッシング詐欺メールを報告する場合は、 **[迷
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
-迷惑メール レポート アドインが正常にインストールされたことを確認するには、Outlook で次の手順を実行します。
+迷惑メール レポート アドインが正常にインストールされたことを確認するには、次の手順を実行Outlook。
 
 - メッセージを選択するか、メッセージを開きます。 リボンの **[ホーム]** タブ **または [メッセージ** ] タブで、[迷惑 **メール]** をクリックし、次のオプションが使用できると確認します。
 
@@ -212,21 +212,21 @@ Microsoft にフィッシング詐欺メールを報告する場合は、 **[迷
 
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>迷惑メール報告アドインをアンインストールする
 
-Outlook を閉じると、次の手順を使用して迷惑メール レポート アドインをアンインストールします。
+メール を閉Outlook、次の手順を使用して迷惑メール レポート アドインをアンインストールします。
 
-- **コントロール パネル**: Windows キー + R キーを押します。開く **[ファイル名を指定** して実行] ダイアログで `control appwiz.cpl` 、[OK] を入力し **、[OK] をクリックします**。
+- **コントロール パネル**: キー + R Windows押します。開く **[ファイル名を指定** して実行] ダイアログで `control appwiz.cpl` 、[OK] を入力し **、[OK] をクリックします**。
 
   リストで **Microsoft 迷惑メール レポート アドイン** を検索して選択し、[アンインストール] を **クリックします**。
 
-- **Windows インストーラー パッケージ**: 適切な .msi ファイルを検索またはダウンロードし、ダブルクリックします。
+- **Windows インストーラー パッケージ**: 適切なファイルを検索またはダウンロード.msi、そのファイルをダブルクリックします。
 
   - **32 ビット**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
   - **64 ビット**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  表示されるダイアログで **、[Outlook** 用 Microsoft 迷惑メール レポート アドインの削除] を選択し、[次へ] を **クリックします**。
+  表示されるダイアログで、[Microsoft 迷惑メール レポート アドインの削除] を選択して、[次 **Outlook]** を **クリックします**。
 
-- **サイレント モード**: 適切な .msi ファイルを検索またはダウンロードします。 コマンド プロンプト ウィンドウで、.msi ファイルの場所に置き換え、 \<PathToFile\> 次のいずれかのコマンドを実行します。
+- **サイレント モード**: 適切なファイルを検索または.msiします。 [コマンド プロンプト] ウィンドウで、コマンド ファイルの場所.msiし、 \<PathToFile\> 次のいずれかのコマンドを実行します。
 
   - **32 ビット**:
 
@@ -240,11 +240,11 @@ Outlook を閉じると、次の手順を使用して迷惑メール レポー�
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-アンインストール後に Outlook を開いた場合は、迷惑メールではなく迷惑メールやフィッシング報告のオプションがなくなります。
+アンインストール後にOutlookを開いた場合、迷惑メールではなく迷惑メールやフィッシング報告のオプションがなくなります。
 
 ## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>迷惑メール レポート アドインのトラブルシューティング
 
-迷惑メール レポート アドインを追加した後で Outlook で問題が発生する場合があります。 このセクションでは、発生する可能性のある問題と、これらの問題を解決するためのヒントについて説明します。
+迷惑メール レポート アドインを追加したOutlookに問題が発生する場合があります。 このセクションでは、発生する可能性のある問題と、これらの問題を解決するためのヒントについて説明します。
 
 ### <a name="troubleshooting-for-users"></a>ユーザーのトラブルシューティング
 
@@ -256,7 +256,7 @@ Outlook を閉じると、次の手順を使用して迷惑メール レポー�
 
 この問題を解決するには、次の手順を実行します。
 
-1. Outlook を閉じて再起動します。
+1. サーバーを閉じてOutlook。
 2. テスト メッセージを作成して送信し、受信者がメッセージを受信したと確認します。
 3. 問題が解決しない場合は、管理者に問い合わせください。
 
@@ -268,7 +268,7 @@ Microsoft にメッセージを送信するために使用できるその他の�
 
 1. レジストリ キーを `LoggingLevel` "Verbose" という値に設定します。
 
-   - **32 ビット Windows の 32 ビット Outlook:**
+   - **32 ビット Outlookの 32 ビット Windows:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -277,7 +277,7 @@ Microsoft にメッセージを送信するために使用できるその他の�
      "LoggingLevel"="Verbose"
      ```
 
-   - **64 ビット Windows の 32 ビット Outlook:**
+   - **64 ビット Outlookの 32 ビット Windows:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -286,7 +286,7 @@ Microsoft にメッセージを送信するために使用できるその他の�
      "LoggingLevel"="Verbose"
      ```
 
-   - **64 ビット Outlook**:
+   - **64 ビット Outlook:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -295,7 +295,7 @@ Microsoft にメッセージを送信するために使用できるその他の�
      "LoggingLevel"="Verbose"
      ```
 
-2. Outlook を再起動し、エラー メッセージが表示されたユーザーに報告を求める。
+2. 再起動Outlook、エラー メッセージが表示された場合は、ユーザーに報告を求める。
 
 3. 次の場所にあるログ情報を収集します。
 

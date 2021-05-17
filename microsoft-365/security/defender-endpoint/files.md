@@ -29,7 +29,7 @@ ms.locfileid: "51199983"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,24 +48,24 @@ Defender for Endpoint のファイル エンティティを表します。
 
 
 ## <a name="properties"></a>プロパティ
-|プロパティ | 種類    |   説明 |
+|プロパティ | 型    |   説明 |
 |:---|:---|:---|
-|sha1 | 文字列 | ファイル コンテンツの Sha1 ハッシュ |
-|sha256 | 文字列 | ファイル コンテンツの Sha256 ハッシュ |
+|sha1 | String | ファイル コンテンツの Sha1 ハッシュ |
+|sha256 | String | ファイル コンテンツの Sha256 ハッシュ |
 |globalPrevalence | Null 許容長 | 組織全体でのファイルの普及率 |
 |globalFirstObserved | DateTimeOffset | ファイルが初めて観察された場合 |
 |globalLastObserved | DateTimeOffset | ファイルが最後に観察された時刻 |
 |size | Null 許容長 | ファイルのサイズ |
-|fileType | 文字列 | ファイルの種類 |
+|fileType | String | ファイルの種類 |
 |isPeFile | Boolean | ファイルが移植可能な実行可能ファイルの場合は true ("DLL"、"EXE"など) |
-|filePublisher | 文字列 | ファイル発行元 |
-|fileProductName | 文字列 | 製品名 |
-|署名者 | 文字列 | ファイル署名者 |
-|issuer | 文字列 | ファイル発行者 |
-|signerHash | 文字列 | 署名証明書のハッシュ |
+|filePublisher | String | ファイル発行元 |
+|fileProductName | String | 製品名 |
+|署名者 | String | ファイル署名者 |
+|issuer | String | ファイル発行者 |
+|signerHash | String | 署名証明書のハッシュ |
 |isValidCertificate | Boolean | Microsoft Defender for Endpoint エージェントによって証明書の署名が正常に確認されました |
-|determinationType | 文字列 | ファイルの決定の種類 |
-|determinationValue | 文字列 | 判定値 |
+|determinationType | String | ファイルの決定の種類 |
+|determinationValue | String | 判定値 |
 
 
 ## <a name="json-representation"></a>Json 表記
