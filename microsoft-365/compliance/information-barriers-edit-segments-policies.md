@@ -27,7 +27,7 @@ ms.locfileid: "50925553"
 
 |**操作**|**説明**|
 |:---------|:--------------|
-| [ユーザー アカウントの属性を編集する](#edit-user-account-attributes) | セグメントの定義に使用できる Azure Active Directory の属性を入力します。<br/>ユーザーアカウントの属性を編集して、ユーザーがセグメントに含まれていない場合、ユーザーが所属するセグメントを変更したり、異なる属性を使用してセグメントを定義したりする場合。 |
+| [ユーザー アカウントの属性を編集する](#edit-user-account-attributes) | セグメントの定義にAzure Active Directory属性を入力します。<br/>ユーザーアカウントの属性を編集して、ユーザーがセグメントに含まれていない場合、ユーザーが所属するセグメントを変更したり、異なる属性を使用してセグメントを定義したりする場合。 |
 | [セグメントを編集する](#edit-a-segment) | セグメントの定義方法を変更する場合は、セグメントを編集します。 <br/>たとえば、Department を使用して最初にセグメントを定義し *、MemberOf* などの別の属性を使用 *する場合があります*。 |
 | [ポリシーを編集する](#edit-a-policy) | ポリシーの動作方法を変更する場合は、情報バリア ポリシーを編集します。<br/>たとえば、2 つのセグメント間の通信をブロックする代わりに、特定のセグメント間でのみ通信を行う必要がある場合があります。 |
 | [ポリシーを非アクティブな状態に設定する](#set-a-policy-to-inactive-status) |ポリシーを変更する場合、またはポリシーを有効にしない場合は、ポリシーを非アクティブ状態に設定します。 |
@@ -37,7 +37,7 @@ ms.locfileid: "50925553"
 | [情報バリアのトラブルシューティング](information-barriers-troubleshooting.md) | 情報バリアで予期しない問題が発生した場合は、この記事を参照してください。 |
 
 > [!IMPORTANT]
-> この記事で説明するタスクを実行するには、次のいずれかの適切な役割を割り当てる必要があります。<br/>- Microsoft 365 Enterprise Global Administrator<br/>- グローバル管理者<br/>- コンプライアンス管理者<br/>- IB コンプライアンス管理 (これは新しい役割です!<br><br>情報バリアの前提条件の詳細については、「前提条件 (情報バリア ポリシーの場合 [)」を参照してください](information-barriers-policies.md#prerequisites)。<br><br> コンプライアンス センター [PowerShell のセキュリティ &接続してください](/powershell/exchange/connect-to-scc-powershell)。
+> この記事で説明するタスクを実行するには、次のいずれかの適切な役割を割り当てる必要があります。<br/>- Microsoft 365 Enterpriseグローバル管理者<br/>- グローバル管理者<br/>- コンプライアンス管理者<br/>- IB コンプライアンス管理 (これは新しい役割です!<br><br>情報バリアの前提条件の詳細については、「前提条件 (情報バリア ポリシーの場合 [)」を参照してください](information-barriers-policies.md#prerequisites)。<br><br> コンプライアンス センター [PowerShell のセキュリティ &接続してください](/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="edit-user-account-attributes"></a>ユーザー アカウントの属性を編集する
 
@@ -47,15 +47,15 @@ ms.locfileid: "50925553"
 
     |**構文**|**例**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 名前、エイリアス、識別名、標準ドメイン名、電子メール アドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 <p> (このコマンドレットは、1 人のユーザーにも使用できます `Get-InformationBarrierRecipientStatus -Identity <value>` 。 |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> この例では、365 の 2 つのユーザー アカウントを参照Office meganb for *Megan、alexw* を *示します*。   |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 名前、エイリアス、識別名、標準ドメイン名、電子メール アドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 <p> (このコマンドレットは、1 人のユーザーにも使用できます `Get-InformationBarrierRecipientStatus -Identity <value>` 。 |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> この例では、次の 2 つのユーザー アカウントを参照Office 365 *meganb* for *Megan、Alex* の alexw *です。*  |
 
 2. ユーザー アカウント プロファイルに対して編集する属性を決定します。 詳細については、「情報バリア ポリシー [の属性」を参照してください](information-barriers-attributes.md)。 
 
 3. 1 つ以上のユーザー アカウントを編集して、前の手順で選択した属性の値を含める。 このアクションを実行するには、次のいずれかの手順を使用します。
 
-    - 1 つのアカウントを編集するには、「Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する [」を参照してください](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+    - 1 つのアカウントを編集するには、「ユーザープロファイルを使用してユーザーのプロファイル情報を追加または更新する」[を参照](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)Azure Active Directory。
 
-    - 複数のアカウントを編集する (または PowerShell を使用して 1 つのアカウントを編集する) には、「Configure user account properties with [Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)」を参照してください。
+    - 複数のアカウントを編集する (または PowerShell を使用して 1 つのアカウントを編集する) には、「PowerShell を使用してユーザー アカウントのプロパティを構成する[Office 365参照してください](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
 
 ## <a name="edit-a-segment"></a>セグメントを編集する
 
@@ -166,8 +166,8 @@ ms.locfileid: "50925553"
 
 - [情報バリアの概要を取得する](information-barriers.md)
 - [情報バリアのポリシーを定義する](information-barriers-policies.md)
-- [Microsoft Teams の情報バリアの詳細](/MicrosoftTeams/information-barriers-in-teams)
-- [SharePoint Online の情報バリアの詳細](/sharepoint/information-barriers)
-- [OneDrive の情報バリアの詳細](/onedrive/information-barriers)
+- [詳細については、Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [オンラインでの情報バリアの詳細SharePointする](/sharepoint/information-barriers)
+- [詳細については、「情報バリア」を参照OneDrive](/onedrive/information-barriers)
 - [情報障壁ポリシーの属性](information-barriers-attributes.md)
 - [情報障壁のトラブルシューティング](information-barriers-troubleshooting.md)

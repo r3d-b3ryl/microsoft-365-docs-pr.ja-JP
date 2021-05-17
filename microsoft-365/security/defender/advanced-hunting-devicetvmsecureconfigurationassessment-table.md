@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceTvmSecureConfigurationAssessment テーブル
-description: 高度なハンティング スキーマの DeviceTvmSecureConfigurationAssessment テーブルのセキュリティ評価イベントについて説明します。 これらの脅威&管理イベントによって、デバイス情報、セキュリティ構成の詳細、影響、コンプライアンス情報が提供されます。
-keywords: 高度なハンティング、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、threat & の脆弱性管理、TVM、デバイス管理、セキュリティ構成、DeviceTvmSecureConfigurationAssessment
+description: 高度なハンティング スキーマの DeviceTvmSecureConfigurationAssessment テーブルのセキュリティ評価イベントについて説明します。 これらの脅威& 脆弱性の管理イベントは、デバイス情報、セキュリティ構成の詳細、影響、コンプライアンス情報を提供します。
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、threat & 脆弱性の管理、TVM、デバイス管理、セキュリティ構成、DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -45,17 +45,17 @@ ms.locfileid: "52024219"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `DeviceId` | string | サービス内のデバイスの一意の識別子 |
-| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。|
+| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
+| `OSPlatform` | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。|
 | `Timestamp` | datetime | レコードが作成された日付と時刻 |
 | `ConfigurationId` | 文字列 | 特定の構成の一意の識別子 |
-| `ConfigurationCategory` | 文字列 | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
-| `ConfigurationSubcategory` | 文字列 | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
+| `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
+| `ConfigurationSubcategory` | string | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
 | `ConfigurationImpact` | 文字列 | 構成の評価が全体の構成スコア (1-10) に及ぼす影響 |
 | `IsCompliant` | ブール値 | 構成やポリシーが正しく構成されているかどうかを示します |
-| `IsApplicable` | ブール値 | 構成またはポリシーがデバイスに適用されるかどうかを示します。 |
-| `Context` | 文字列 | 構成またはポリシーに関するその他のコンテキスト情報 |
-| `IsExpectedUserImpact` | ブール値 | 構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。 |
+| `IsApplicable` | boolean | 構成またはポリシーがデバイスに適用されるかどうかを示します。 |
+| `Context` | string | 構成またはポリシーに関するその他のコンテキスト情報 |
+| `IsExpectedUserImpact` | boolean | 構成またはポリシーが適用された場合にユーザーに影響を与えるかどうかを示します。 |
 
 ## <a name="related-topics"></a>関連項目
 

@@ -78,21 +78,21 @@ DLP ポリシーでユーザーがそれを上書きすることを許可して�
 
 セキュリティ コンプライアンス センターで DLP レポートを&するには、次の情報を割り当てる必要があります。
 
-- Exchange **管理センター** のセキュリティ リーダーの役割。 既定では、この役割は Exchange 管理センターの組織の管理およびセキュリティ リーダーの役割グループに割り当てられます。
+- **管理者センター** のセキュリティ リーダー Exchange役割。 既定では、この役割は管理センターの組織の管理およびセキュリティ リーダーの役割グループExchangeされます。
 
 - **セキュリティ コンプライアンス センターの [表示のみ] DLP** コンプライアンス&役割。 既定では、この役割は、コンプライアンス 管理者、組織の管理、セキュリティ管理者、セキュリティ リーダーの各役割グループに割り当て&されます。
 
-- **Exchange 管理センターの [受信者** のみ表示] 役割。 既定では、この役割は Exchange 管理センターのコンプライアンス管理、組織View-Only、組織の管理役割グループに割り当てられます。
+- **管理センターの [受信者** の表示のみ] Exchange役割。 既定では、この役割は、コンプライアンス管理、組織の管理、View-Only管理センターの組織の管理役割グループExchange割り当てられます。
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>DLP レポートのコマンドレットを検索する
 
 セキュリティ &amp; コンプライアンス センターのほとんどのコマンドレットを使用するには、次のようにする必要があります。
   
-1. [リモート PowerShell を使用 &amp; してセキュリティ コンプライアンス センターに接続する](/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
+1. [Connect PowerShell を使用 &amp; してセキュリティ コンプライアンス センターにアクセスする](/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
     
 2. これらのセキュリティ コンプライアンス センター [のコマンドレット &amp; を使用する](/powershell/exchange/exchange-online-powershell)
     
-ただし、DLP レポートは、Exchange Online を含む Office 365 全体からデータを取り込む必要があります。 このため、DLP レポートのコマンドレットは、セキュリティ コンプライアンス センター Powershell ではなく、Exchange Online &amp; Powershell で使用できます。 したがって、DLP レポートのコマンドレットを使用するには、次の操作を行う必要があります。
+ただし、DLP レポートは、Exchange Online を含む Office 365 全体からデータを取り込む必要があります。 このため、DLP レポートのコマンドレットは、セキュリティ コンプライアンス センター Powershell ではなく、Exchange Online Powershell &amp; で使用できます。 したがって、DLP レポートのコマンドレットを使用するには、次の操作を行う必要があります。
   
 1. [リモート PowerShell で Exchange Online に接続する](/powershell/exchange/connect-to-exchange-online-powershell)
     

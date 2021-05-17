@@ -21,18 +21,18 @@ ms.locfileid: "52023263"
 ---
 # <a name="localize-the-user-experience"></a>ユーザー エクスペリエンスをローカライズ
 
-Microsoft Managed Desktop デバイスのユーザーは、セットアップ プロセス ("すぐに使用できる") または後で、選択した言語を選択できます。
+デバイスのMicrosoft マネージド デスクトップは、セットアップ プロセス ("すぐに使用できる") または後で、選択した言語を選択できます。
 
 ## <a name="during-setup-the-out-of-box-experience"></a>セットアップ中 ("アウト オブ ボックス エクスペリエンス")
 
 セットアップの完了プロセス中に、ユーザーは選択した言語を選択できます。 この選択は、次の属性に影響します。
 
-- Windows 10 言語の機能:
+- Windows 10機能:
     - 表示言語
     - キーボード言語
     - 言語関連のオンデマンド機能
 
-- Microsoft 365 Apps for Enterprise 言語機能:
+- Microsoft 365 Apps機能Enterprise次の情報を参照してください。
     - 表示言語
     - 校正ツールとオーサリング ツール
 
@@ -41,17 +41,17 @@ Microsoft Managed Desktop デバイスのユーザーは、セットアップ �
 
 ## <a name="after-completing-setup"></a>セットアップが完了した後
 
-ユーザーは、セットアップ プロセスが完了した後、いつでも Windows 10 および Microsoft 365 Apps for Enterprise の言語を選択できます。 具体的には次のとおりです。
+ユーザーは、セットアップ プロセスが完了した後Windows 10、Microsoft 365 AppsのEnterprise言語を選択できます。 具体的には次のとおりです。
 
-- Windows 10 言語の機能:
+- Windows 10機能:
     - 表示言語
     - キーボード言語
 
-- Microsoft 365 Apps for Enterprise 言語機能:
+- Microsoft 365 Apps機能Enterprise次の情報を参照してください。
     - 表示言語
     - 校正ツールとオーサリング ツール
 
-ユーザーがインストール [](#supported-languages)できる Microsoft 365 Apps for Enterprise のサポート言語を使用するには、モダン **Workplace-Office-Language_Packs** グループにユーザーを追加します。 言語は Intune ポータル サイトで使用できます。
+ユーザーがインストール [できる](#supported-languages)Microsoft 365 Apps Microsoft 365 Apps Enterprise のサポートされている言語を使用するには、モダン **Workplace-Office-Language_Packs** グループにユーザーを追加します。 言語は、次のIntune ポータル サイト。
 
 
 ## <a name="supported-languages"></a>サポートされている言語
@@ -60,7 +60,7 @@ Microsoft Managed Desktop デバイスのユーザーは、セットアップ �
 
 既存のデバイスを再利用する場合は、適切なイメージを取得するために Microsoft アカウント担当者と作業する必要がある場合があります。 詳細については、「デバイス イメージ [」を参照してください](../service-description/device-images.md)。
 
-Microsoft [Managed](../service-description/device-images.md#universal-image) Desktop によって提供されるユニバーサル イメージには、次の言語と Windows 10 用が含まれます。
+ユーザー[が提供する](../service-description/device-images.md#universal-image)ユニバーサル Microsoft マネージド デスクトップには、次の言語と次のWindows 10。
 
 - アラビア語
 - ブルガリア語
@@ -100,18 +100,18 @@ Microsoft [Managed](../service-description/device-images.md#universal-image) Des
 - ウクライナ語
 - ベトナム語
 
-Microsoft 365 Apps for Enterprise では、若干異なるリストがサポートされている場合があります。
+Microsoft 365 AppsのEnterprise、少し異なるリストをサポートしている場合があります。
 
 ユーザーがここに示す言語以外の言語が必要な場合は、管理ポータル[](../working-with-managed-desktop/admin-support.md)を使用してサポート要求を[送信します](access-admin-portal.md)。
 
 ## <a name="languages-for-support-and-operations"></a>サポートと操作の言語
 
 ### <a name="user-support"></a>ユーザー サポート
-Microsoft Managed Desktop は英語でのみサポートを提供します。 ユーザーがヘルプ アプリで別の言語を選択した場合、Microsoft Managed Desktop から直接サポートするのではなく、一般的な Microsoft サポート チャネルからサポートを受け取る必要があります。 詳細については [、「Getting help for users 」を参照してください](../working-with-managed-desktop/end-user-support.md)。
+Microsoft マネージド デスクトップは英語でのみサポートされます。 ユーザーがアプリで別の言語を問い合わせ場合、ユーザーは一般的な Microsoft サポート チャネルから直接サポートするのではなく、サポートを受Microsoft マネージド デスクトップ。 詳細については [、「Getting help for users 」を参照してください](../working-with-managed-desktop/end-user-support.md)。
 
 ユーザーが他の言語でサポートを必要とする場合は、Microsoft 以外のサポート ソースまたは独自の組織からサポートを提供する必要があります。
 
 ### <a name="admin-support-and-operations"></a>管理者のサポートと操作
-Microsoft Managed Desktop は、英語でのみ管理者サポートを提供します。 これには、管理ポータルと Microsoft Managed Desktop Operations とのすべての通信が含まれます。 特に指定がない限り、すべての管理者関連の操作とインターフェイスは英語で行われます。
+Microsoft マネージド デスクトップは英語でのみ管理者サポートを提供します。 これには、管理ポータルと、管理操作との通信Microsoft マネージド デスクトップ含まれます。 特に指定がない限り、すべての管理者関連の操作とインターフェイスは英語で行われます。
 
 

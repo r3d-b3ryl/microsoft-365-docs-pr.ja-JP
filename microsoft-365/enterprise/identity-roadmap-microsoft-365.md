@@ -41,14 +41,14 @@ Microsoft 365 for enterprise では、十分に計画され、実行された ID
 
 また、この [ポスターをダウンロードして](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) 、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
 
-## <a name="plan"></a>プラン
+## <a name="plan"></a>計画
 
 ID の実装を計画するには、次の方法を実行します。
 
 - [さまざまな ID モデルを理解する](about-microsoft-365-identity.md)
 - [ハイブリッド ID とディレクトリ同期を計画する](plan-for-directory-synchronization.md)
 
-## <a name="deploy"></a>展開する
+## <a name="deploy"></a>展開
 
 ID 実装を展開するには、次の方法を実行します。
 

@@ -26,11 +26,11 @@ ms.locfileid: "50927218"
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-個々の顧客Windows PowerShellからMicrosoft Exchange Onlineを取得するには、リモート サーバーを使用します。
+個々の顧客Windows PowerShellからMicrosoft Exchange Onlineレポートを取得するには、リモート サーバーを使用します。
   
-シンジケーションおよびクラウド ソリューション プロバイダー (CSP) パートナーは、Exchange Online PowerShell 用のリモート サーバー経由で顧客テナント レポートを直接構成するデータWindows PowerShellアクセスできます。 これにより、パートナーはレポートのデータを収集および保存してから、その他の操作を実行できます。 リモート接続を開いた後、顧客テナンシーに関するレポート データを取得することは、顧客テナンシーに対してなんらかのコマンドレットを実行することと同じです。
+シンジケーションとクラウド ソリューション プロバイダー (CSP) パートナーは、PowerShell のリモート サーバー経由で顧客テナント レポートを直接構成するWindows PowerShellアクセスExchange Onlineできます。 これにより、パートナーはレポートのデータを収集および保存してから、その他の操作を実行できます。 リモート接続を開いた後、顧客テナンシーに関するレポート データを取得することは、顧客テナンシーに対してなんらかのコマンドレットを実行することと同じです。
   
-この記事では、Exchange Online のリモート Windows PowerShellを使用して、単一の顧客テナントに接続し、レポートを取得します。 既定では、Windows PowerShell は複数の顧客テナンシーからレポート データを集約することをサポートしていません。 この手順で取得するレポートは、接続先の  _DelegatedOrg_ のレポートのみです。
+この記事では、リモート Windows PowerShellをExchange Online単一の顧客テナントに接続し、レポートを取得します。 既定では、Windows PowerShell は複数の顧客テナンシーからレポート データを集約することをサポートしていません。 この手順で取得するレポートは、接続先の  _DelegatedOrg_ のレポートのみです。
   
  
 ## <a name="before-you-begin"></a>はじめに

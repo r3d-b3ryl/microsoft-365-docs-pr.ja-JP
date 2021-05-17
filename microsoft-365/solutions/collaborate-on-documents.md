@@ -16,7 +16,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: この記事では、SharePoint と OneDrive のドキュメントでゲストと共同作業する方法について説明します。
+description: この記事では、ドキュメントのゲストと共同作業を行う方法について、SharePointおよびOneDrive。
 ms.openlocfilehash: 9158ec7692ef90eb2e270242472fceb10d0e60b7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -36,7 +36,7 @@ SharePoint または OneDrive のドキュメントで組織外のユーザー�
 
 ## <a name="azure-external-collaboration-settings"></a>Azure の外部コラボレーション設定
 
-Microsoft 365 での共有は、[Azure Active Directory における B2B 外部コラボレーションの設定](/azure/active-directory/external-identities/delegate-invitations) によって最高レベルで管理されます。 Azure AD でゲスト共有が無効または制限されている場合、この設定は Microsoft 365 で構成した共有設定を上書きします。
+Microsoft 365 での共有は、[Azure Active Directory における B2B 外部コラボレーションの設定](/azure/active-directory/external-identities/delegate-invitations) によって最高レベルで管理されます。 Azure AD でゲスト共有が無効または制限されている場合、この設定は、ユーザー設定で構成する共有設定Microsoft 365。
 
 B2B 外部コラボレーション設定を確認して、ゲストとの共有がブロックされないか確認します。
 
@@ -55,15 +55,15 @@ B2B 外部コラボレーション設定を確認して、ゲストとの共有�
 
 複数の組織のゲストと連携する場合は、ディレクトリ データにアクセスするゲストの機能を制限することをお勧めします。 これにより、他に誰がディレクトリ内のゲストであるかを確認できなくなります。 これを行うには、**[ゲスト ユーザーのアクセス制限]** で、**[ゲスト ユーザーはディレクトリ オブジェクト設定のプロパティとメンバーシップに制限付きアクセス権が付与されている]** または **[ゲスト ユーザーのアクセスは自分のディレクトリ オブジェクトのプロパティとメンバーシップに制限されている]** を選択します。
 
-## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 組織レベルの共有設定
+## <a name="sharepoint-organization-level-sharing-settings"></a>SharePointレベルの共有設定
 
 組織外のユーザーが SharePoint または OneDrive のドキュメントにアクセスするには、SharePoint と OneDrive の組織レベルの共有設定で組織外のユーザーとの共有を許可する必要があります。
 
-SharePoint の組織レベルの設定によって、個々の SharePoint サイトで使用できる設定が決定されます。 サイトの設定は、組織レベルの設定よりも制限を緩和することはできません。 OneDrive の組織レベルの設定では、ユーザーの OneDrive ライブラリで使用できる共有のレベルを決定します。
+組織レベルの設定は、SharePointサイトで使用できる設定をSharePointします。 サイトの設定は、組織レベルの設定よりも制限を緩和することはできません。 ユーザーの組織レベルの設定OneDrive、ユーザーの共有ライブラリで使用できる共有のOneDriveします。
 
-SharePoint と OneDrive の場合、認証されていないファイルとフォルダーの共有を許可する場合は、[すべてのユーザー] を **選択します**。 組織外のユーザーが認証する必要がある場合は、[新規ゲストと既存のゲスト] **を選択します**。 *誰* でもリンクを共有するのが最も簡単な方法です。組織外のユーザーは、認証なしでリンクを開き、それを他のユーザーに自由に渡します。
+[SharePointとOneDrive、認証されていないファイルとフォルダーの共有を許可する場合は、[すべてのユーザー] を **選択します**。 組織外のユーザーが認証する必要がある場合は、[新規ゲストと既存のゲスト] **を選択します**。 *誰* でもリンクを共有するのが最も簡単な方法です。組織外のユーザーは、認証なしでリンクを開き、それを他のユーザーに自由に渡します。
 
-SharePoint の場合は、組織内の任意のサイトで必要になる最も制限の多い設定を選択します。
+たとえばSharePoint、組織内の任意のサイトで必要になる最も制限の多い設定を選択します。
 
 ![SharePoint 組織レベルの共有設定のスクリーンショット](../media/sharepoint-organization-external-sharing-controls.png)
 
@@ -71,15 +71,15 @@ SharePoint の場合は、組織内の任意のサイトで必要になる最も
 SharePoint 組織レベルの共有設定を設定するには
 
 1. Microsoft 365 管理センターの左側のナビゲーション ウィンドウの **[管理センター]** で、**[SharePoint]** をクリックします。
-2. SharePoint 管理センターの左側のナビゲーション ウィンドウの [ポリシー] で、[ **共有]** を **クリックします**。
-3. SharePoint または OneDrive の外部共有が[すべてのユーザー] または [新規および既存のゲスト]**に設定されている必要があります**。 (OneDrive の設定は、SharePoint 設定よりも透過的に設定できないことに注意してください)。
+2. 管理センター SharePoint左側のナビゲーション ウィンドウの [ポリシー] で、[**共有]** を **クリックします**。
+3. ユーザーまたはユーザーの外部SharePoint共有OneDrive[すべてのユーザー] または [新しいゲストと既存のゲスト **] に設定します**。 (この設定は、OneDriveの設定よりもSharePoint注意してください。
 4. 変更を加えた場合は、**[保存]** をクリックします。
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 組織レベルの既定のリンク設定
 
 既定のファイルとフォルダーのリンク設定により、ファイルまたはフォルダーを共有するときに既定でユーザーに表示されるリンク オプションが決まります。 ユーザーは、必要に応じて、共有する前に他のオプションのいずれかにリンクの種類を変更できます。
 
-この設定は、OneDrive だけでなく、組織内の SharePoint サイトにも影響します。
+この設定は、組織SharePointサイトに影響を及ぼすOneDrive。
 
 ユーザーがファイルとフォルダーを共有するときに既定で選択される次の種類のリンクを選択します。
 
@@ -90,7 +90,7 @@ SharePoint 組織レベルの共有設定を設定するには
 ![SharePoint 組織レベルのファイルとフォルダーの共有設定のスクリーンショット](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
-SharePoint および OneDrive 組織レベルの既定のリンク設定を設定するには
+組織レベルの既定SharePointのOneDriveのリンク設定を設定するには
 
 1. SharePoint 管理センターの共有ページに移動します。
 2. **ファイルとフォルダーのリンク** で、使用する既定の共有リンクを選択します。
@@ -131,7 +131,7 @@ SharePoint サイト内のファイルとフォルダーを共有する場合は
 
 ## <a name="invite-users"></a>ユーザーを招待する
 
-ゲスト共有の設定が構成されています。これで、ユーザーは組織外のユーザーとファイルやフォルダーを共有できます。 詳細 [については、「Share OneDrive ファイルとフォルダー、Share](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) [SharePoint ファイルまたはフォルダー」](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) を参照してください。
+ゲスト共有の設定が構成されています。これで、ユーザーは組織外のユーザーとファイルやフォルダーを共有できます。 詳細[については、「OneDriveファイルとフォルダーの共有](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)」および[「SharePointフォルダーの共有」](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

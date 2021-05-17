@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 管理センターに管理者の役割を割り当てる
+title: 管理者の役割を管理センター Microsoft 365割り当てる
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -78,7 +78,7 @@ Microsoft Business サブスクリプションを購入したユーザーは、�
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [アクティブ **なユーザー] ページ** で、管理者ロールを変更するユーザーを選択します。 フライアウト ウィンドウの [ロール] の横にある **[編集**] を **選択します**。 
 
@@ -90,7 +90,7 @@ Microsoft Business サブスクリプションを購入したユーザーは、�
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [アクティブ **なユーザー] ページ** で、管理者ロールを変更するユーザーを選択します。 フライアウト ウィンドウの [ロール] の横にある **[編集**] を **選択します**。
 

@@ -30,7 +30,7 @@ ms.locfileid: "50929422"
 > [!NOTE]
 > 移動はサービスごとに、異なる時間に行われます。結果として、サービスごとに異なる時間に、説明されているような機能制限がかかります。 
   
-Exchange Online、SharePoint Online、Teams の各チャット サービスが完了したら、Microsoft 365 メッセージ センターで確認を確認してください。 次の表に示すように、登録期間が終了した後、最大 24 か月かかる場合、保存中の主要な顧客データが新しいデータセンター geo に移行します。   
+各チャット サービスMicrosoft 365、オンライン、およびチャット サービスの完了時にExchange Onlineメッセージ センター SharePoint確認Teams確認してください。 次の表に示すように、登録期間が終了した後、最大 24 か月かかる場合、保存中の主要な顧客データが新しいデータセンター geo に移行します。   
 
 |**サインアップ国を持つお客様**|**完了したすべての移動**|
 |:-----|:-----|
@@ -59,7 +59,7 @@ Exchange Online、SharePoint Online、Teams の各チャット サービスが�
 |**構成**|**説明**|
 |:-----|:-----|
 |別のメールボックスへのメールボックス フォルダー アクセス許可があるユーザー  <br/> |制限される可能性があります。  <br/> テナントの移動中にユーザー A とメールボックス B が同じ geo になく、ユーザー A が持っているアクセス許可がメールボックス B の特定のフォルダーに対してのみの場合、ユーザー A は Outlook Web Access でメールボックス B のフォルダーを開くことができません。  <br/> 共有フォルダーを追加するには、左側のナビゲーション ウィンドウでユーザー名を右クリックし、 **[共有フォルダーの追加]** を選択します。  <br/> |
-|別のメールボックスへのメールボックス フル アクセス許可があるユーザー  <br/> |完全にサポートされます。  <br/> ユーザー A がメールボックス B に対する "フル アクセス" 権限を持っている場合、ユーザー A は Outlook Web Access の左側のナビゲーション パネルにある共有フォルダーをクリックして、メールボックス B を示すウィンドウを開きます。 ユーザーは、移動中に Outlook Web Access を使用して共有メールボックスを開き、悪影響を及ぼさずに実行できます。 制限は、メールボックス内のフォルダー レベルの共有だけに適用されます。           |
+|別のメールボックスへのメールボックス フル アクセス許可があるユーザー  <br/> |完全にサポートされます。  <br/> ユーザー A がメールボックス B に対する "フル アクセス" 権限を持っている場合、ユーザー A は Outlook Web Access の左側のナビゲーション パネルで共有フォルダーをクリックして、メールボックス B を示すウィンドウを開きます。 ユーザーは、移動中に Web Access Outlookを使用して共有メールボックスを開き、悪影響を及ぼさずに実行できます。 制限は、メールボックス内のフォルダー レベルの共有だけに適用されます。           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
@@ -67,17 +67,17 @@ SharePoint Online を移行すると、以下のサービスのデータも移�
   
 - One Drive for Business
     
-- Microsoft 365 ビデオ サービス
+- Microsoft 365ビデオ サービス
     
 - Officeで使用する
     
-- エンタープライズ向け Microsoft  365 アプリ
+- Microsoft 365 Apps for enterprise
     
-- Visio Pro for Microsoft 365
+- Visio ProのMicrosoft 365
     
 SharePoint Online データの移行が完了すると、次に示す影響が現れる可能性があります。
   
-### <a name="microsoft-365-video-services"></a>Microsoft 365 ビデオ サービス
+### <a name="microsoft-365-video-services"></a>Microsoft 365ビデオ サービス
 
 - ビデオのデータの移動は、SharePoint Online にある残りのコンテンツの移動より時間がかかります。
     
@@ -105,16 +105,16 @@ SharePoint Online データを移行する過程で、検索インデックス�
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Exchange Online、SharePoint Online、OneDrive for Business に加えて、Microsoft は Teams チャット サービス データをローカル データセンターに移行します。
+Microsoft は、Exchange Online、SharePoint、OneDrive for Businessに加えて、Teams サービス データをローカル データセンターに移行します。
 
-- Teams チャット メッセージ (プライベート メッセージやチャネル メッセージを含む)。
-- チャットで使用される Teams イメージ。
+- Teams、プライベート メッセージやチャネル メッセージを含むチャット メッセージを作成します。
+- Teamsで使用される画像を表示します。
 
-Teams ファイルは SharePoint Online に保存され、Teams チャット ファイルは OneDrive for Business に保存されます。 ボイスメール、予定表、チャット履歴、連絡先は Exchange Online に保存されます。 多くの場合、Exchange Online、SharePoint Online、OneDrive for Business は、お客様がローカル データセンター geo で既に使用し、対象となる顧客国向け Microsoft 365 移行プログラムの一部です。
+TeamsファイルはオンラインにSharePointされTeamsチャット ファイルはオンラインにOneDrive for Business。 ボイスメール、予定表、チャット履歴、連絡先は、Exchange Online。 多くの場合、Exchange Online、SharePoint Online、OneDrive for Business は、ローカル データセンター geo の顧客によって既に使用され、対象となる顧客国の Microsoft 365 移行プログラムの一部です。
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Skype for Business の移動は使用できなくなりました。  [Skype for Business Online は](/lifecycle/announcements/skype-for-business-online-retirement) 2021 年 7 月 31 日に廃止されます。 その後、サービスにアクセスできなくなりました。 
+Skype for Business移動は使用できなくなりました。  [Skype for Businessオンラインは](/lifecycle/announcements/skype-for-business-online-retirement)2021 年 7 月 31 日に廃止されます。 その後、サービスにアクセスできなくなりました。 
   
 ## <a name="related-topics"></a>関連項目 
  

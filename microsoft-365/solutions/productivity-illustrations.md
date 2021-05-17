@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 の生産性図
-description: これらの図 (Teams アーキテクチャ図など) を使用して、Microsoft 365 生産性ソリューションを実装するためのアーキテクチャの基本を理解します。
+description: これらの図 (アーキテクチャ図Teams使用して、生産性ソリューションを実装するためのアーキテクチャMicrosoft 365理解します。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -22,18 +22,18 @@ ms.locfileid: "52029093"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
-Microsoft 365 エンタープライズ ソリューション シリーズは、Microsoft 365 の機能を実装するためのガイダンスを提供します。特に Teams アーキテクチャ図を含む機能がテクノロジをまたがっている場合。
+エンタープライズ Microsoft 365 シリーズでは、特に、アーキテクチャ図などのテクノロジ間で機能が交差する場合に、Microsoft 365機能を実装するためのガイダンスTeams提供されます。
 
 ## <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 の Microsoft Teams と関連生産性サービス
 Microsoft Teamsをリードする Microsoft 365 での生産性サービスの論理的なアーキテクチャ。
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![Teams 論理アーキテクチャのポスター](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2021 年 1 月更新   |マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <br/> <br/>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
+|[![Teamsアーキテクチャのポスター](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2021 年 1 月更新   |マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <br/> <br/>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
 
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 のグループ
-この図には、Microsoft 365 グループに関する IT アーキテクト向け情報が含まれています。 組織での共同作業のために Microsoft 365 グループとチームを構成および管理する方法については [、「Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) との安全なコラボレーションをセットアップする」および「コラボレーション ガバナンスとは」を [参照してください](/microsoft-365/solutions/collaboration-governance-overview)。
+この図には、IT アーキテクト向け情報がMicrosoft 365されています。 組織内のグループとチームをMicrosoft 365管理する方法については、「Microsoft 365 との安全なコラボレーションをセットアップする」および[「](/microsoft-365/solutions/setup-secure-collaboration-with-teams)コラボレーション ガバナンスとは」を[参照してください](/microsoft-365/solutions/collaboration-governance-overview)。
 
 | アイテム | 説明 |
 |:-----|:-----|
@@ -41,15 +41,15 @@ Microsoft Teamsをリードする Microsoft 365 での生産性サービスの�
 
 ## <a name="migrate-to-microsoft-365"></a>Microsoft 365 に移行する
 
-Microsoft は、移行中にコンテンツのセキュリティを保護し、確保するために重点を置いて、オンプレミスのネットワーク ファイル共有と SharePoint Server サイトを Microsoft 365 に移行するためのツールを提供しています。 この一連の図は、コンテンツを SharePoint、Teams、OneDrive に移動するために使用できるさまざまな方法と、データがプロセスを流れる方法を示しています。 
+Microsoft では、移行中のコンテンツのセキュリティの保護と確保に重点を置いて、オンプレミスのネットワーク ファイル共有と SharePoint Server サイトを Microsoft 365 に移行するためのツールを提供しています。 この一連の図は、SharePoint、Teams、OneDrive にコンテンツを移動するために使用できるさまざまな方法と、プロセスを通じてデータがどのように流れるのかを示しています。 
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![モデル ポスター: Microsoft 365 への移行](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/> [PDF としてダウンロードする](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) \|[Visio としてダウンロードする](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.vsdx)   <br/> 2021 年 3 月更新 |含まれる内容: <ul><li>  ファイル共有の移行</li><li>SharePoint Server の移行 </li> </ul><br> 詳細については、「コンテンツを [Microsoft 365 に移行する」を参照してください](/sharepointmigration/migrate-to-sharepoint-online)。|
+|[![モデル ポスター: [モデルに移行Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/> [PDF としてダウンロードする](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.vsdx) <br/> 2021 年 3 月更新 |含まれる内容: <ul><li>  ファイル共有の移行</li><li>SharePoint サーバーの移行 </li> </ul><br> 詳細については、「コンテンツを[移行する」を参照Microsoft 365。](/sharepointmigration/migrate-to-sharepoint-online)|
 
-## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 の情報保護とコンプライアンス機能
+## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365保護とコンプライアンス機能
 
-Microsoft 365 には、情報保護とコンプライアンス機能の広範なセットが含まれています。 Microsoft の生産性向上ツールと共に、これらの機能は、厳しい規制コンプライアンス フレームワークを遵守しながら、組織がリアルタイムで共同作業を行うのを支援するように設計されています。 
+Microsoft 365情報保護とコンプライアンス機能の幅広いセットが含まれています。 Microsoft の生産性向上ツールと共に、これらの機能は、厳しい規制コンプライアンス フレームワークを遵守しながら、組織がリアルタイムで共同作業を行うのを支援するように設計されています。 
 
 この一連の図では、最も規制の厳しい業界の 1 つである金融サービスを使用して、一般的な規制要件に対応するためにこれらの機能を適用する方法を示します。 これらのイラストを自分の用途に合わせて自由にアレンジしてください。 
 
@@ -60,7 +60,7 @@ Microsoft 365 には、情報保護とコンプライアンス機能の広範な
 
 
 ## <a name="security-and-information-protection-for-multi-region-organizations"></a>多地域組織向けのセキュリティと情報保護
-単一の Microsoft 365 テナントを使用する複数地域組織のセキュリティと情報保護
+1 つのテナントを使用する複数地域組織のセキュリティとMicrosoft 365保護
 
 | アイテム | 説明 |
 |:-----|:-----|
@@ -77,22 +77,22 @@ Microsoft 365 には、情報保護とコンプライアンス機能の広範な
 
 
 <a name="BKMK_O365IDP"></a>
-## <a name="identity-and-device-protection-for-microsoft-365"></a>Microsoft 365 の ID とデバイス保護
+## <a name="identity-and-device-protection-for-microsoft-365"></a>ユーザーの ID とデバイス保護Microsoft 365
 
-Azure AD アプリケーション プロキシで公開されている Microsoft 365、その他の SaaS サービス、およびオンプレミス アプリケーションにアクセスする ID とデバイスを保護するための推奨機能。
+Azure AD アプリケーション プロキシで公開された、Microsoft 365、その他の SaaS サービス、およびオンプレミス アプリケーションにアクセスする ID とデバイスを保護するための推奨機能。
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![モデルポスター: Microsoft 365 の ID とデバイス保護](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [PDF として表示する](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[Visio としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020 年 9 月更新|データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 このモデルは、ID とデバイスを保護する機能の詳細と比較できる機能を示します。  <br/> |
+|[![モデルポスター: ID とデバイス保護のMicrosoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [PDF として表示する](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[アプリとしてダウンロードVisio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020 年 9 月更新|データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 このモデルは、ID とデバイスを保護する機能の詳細と比較できる機能を示します。  <br/> |
  
 <a name="BKMK_ediscovery"></a>
-## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示アーキテクチャ
+## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscoveryのアーキテクチャMicrosoft 365
 
-Microsoft 365 Multi-Geo 環境内を含む、高度な電子情報開示のエンドツーエンドのワークフローとデータ フロー。 
+Advanced eDiscovery環境内を含む、エンドツーエンドのワークフローとMicrosoft 365フローを提供します。 
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![モデル ポスター: Microsoft 365 の高度な電子情報開示アーキテクチャ](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [画像として表示する](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \|[PDF としてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[Visio としてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 2020 年 10 月更新|含まれる内容: <ul><li>  単一の環境でのエンドツーエンドのワークフロー</li><li>Microsoft 365 Multi-Geo 環境でのエンドツーエンドのワークフロー </li><li>EDRM ワークフローをサポートするエンドツーエンドのデータ フロー</li> |
+|[![モデル ポスター: Advanced eDiscovery アーキテクチャ Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [画像として表示する](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \|[PDF としてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[アプリとしてダウンロードVisio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 更新日: 2020 年 10 月|含まれる内容: <ul><li>  単一の環境でのエンドツーエンドのワークフロー</li><li>複数地域環境でのエンド Microsoft 365ワークフロー </li><li>EDRM ワークフローをサポートするエンドツーエンドのデータ フロー</li> |
   
 
 
@@ -102,22 +102,22 @@ Microsoft では、Microsoft クラウド内の Teams の使用を開始する�
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![Microsoft テレフォニー ソリューションのポスター](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021 年 3 月更新 | 詳細については、「Plan [your Teams voice solution 」を参照してください](/microsoftteams/cloud-voice-landing-page)。|
+|[![Microsoft テレフォニー ソリューションのポスター](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021 年 3 月更新 | 詳細については、「Plan [your your Teams 音声ソリューション」を参照してください](/microsoftteams/cloud-voice-landing-page)。|
 
 
 ## <a name="empower-remote-workers"></a>リモート ワーカーの支援
 
-Microsoft 365 および他の Microsoft クラウド テクノロジを使用すると、従業員に、組織内のオンプレミスおよびクラウドベースの情報、ツール、およびリソースへの安全なアクセスを提供できます。 
+ユーザー Microsoft 365その他の Microsoft クラウド テクノロジを使用すると、従業員に、組織のオンプレミスおよびクラウドベースの情報、ツール、およびリソースへの安全なアクセスを提供できます。 
 
 [![リモート ワーカーを支援するポスター](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)  | [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) <br>
 2020 年 7 月更新
 
-詳細については、このポスターの記事 [「Microsoft 365](empower-people-to-work-remotely.md)を使用してリモート ワーカーに権限を与える」を参照してください。
+詳細については、このポスターの記事「リモート ワーカーに権限を与える」を参照[Microsoft 365。](empower-people-to-work-remotely.md)
 
-## <a name="microsoft-teams-with-security-isolation"></a>セキュリティの分離を備え、Microsoft Teams
+## <a name="microsoft-teams-with-security-isolation"></a>Microsoft Teams分離を使用する方法
 
-Microsoft 365 では、Microsoft Teams でプライベート チームを構成し、SharePoint サイトのセキュリティ設定と一意の秘密度ラベルを使用してファイルを暗号化し、チーム メンバーだけが暗号化を解除できます。
+Microsoft 365を使用すると、Microsoft Teams でプライベート チームを構成し、SharePoint サイトのセキュリティ設定と一意の秘密度ラベルを使用してファイルを暗号化し、チーム メンバーだけが暗号化を解除できます。
 
 [![セキュリティの分離ポスター を使用した Microsoft Teams](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  | [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br> 2020 年 8 月更新

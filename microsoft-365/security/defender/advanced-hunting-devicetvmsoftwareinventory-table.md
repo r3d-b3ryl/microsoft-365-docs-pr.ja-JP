@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの DeviceTvmSoftwareInventory テーブル
 description: 高度なハンティング スキーマの DeviceTvmSoftwareInventory テーブルで、デバイス内のソフトウェアのインベントリについて説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、脅威 & 脆弱性管理、TVM、デバイス管理、ソフトウェア、インベントリ、脆弱性、CVE ID、OS DeviceTvmSoftwareInventoryVulnerabilities
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、列、データ型、説明、脅威& 脆弱性の管理、TVM、デバイス管理、ソフトウェア、インベントリ、脆弱性、CVE ID、OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -50,15 +50,15 @@ ms.locfileid: "52024231"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `DeviceId` | string | コンピューターの一意識別子 |
-| `DeviceName` | 文字列 | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | 文字列 | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
+| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
 | `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |
 | `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
 | `SoftwareVendor` | string | ソフトウェア ベンダーの名前 |
 | `SoftwareName` | string | ソフトウェア製品の名前 |
 | `SoftwareVersion` | string | ソフトウェア製品のバージョン番号 |
 | `EndOfSupportStatus` | string | 指定したサポート終了日 (EOS) または終了日 (EOL) を基準にしたソフトウェア製品のライフサイクル ステージを示します。 |
-| `EndOfSupportDate` | 文字列 | ソフトウェア製品のサポート終了日 (EOS) または終了日 (EOL) |
+| `EndOfSupportDate` | string | ソフトウェア製品のサポート終了日 (EOS) または終了日 (EOL) |
 
 
 

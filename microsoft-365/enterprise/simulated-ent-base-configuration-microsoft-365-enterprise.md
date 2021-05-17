@@ -17,7 +17,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: このテスト ラボ ガイドを使用して、Microsoft 365 for enterprise 用のシミュレートされたエンタープライズ テスト環境を作成します。
+description: このテスト ラボ ガイドを使用して、エンタープライズ向けシミュレーションエンタープライズ テストMicrosoft 365作成します。
 ms.openlocfilehash: 8df63e1a580b57aa263c11dccaed947f46f2cbb9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.locfileid: "50926046"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>シミュレートされたエンタープライズ基本構成
 
-*このテスト ラボ ガイドは、Microsoft 365 for enterprise と 365 Enterprise テストOffice両方に使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ環境とテスト環境Microsoft 365両方Office 365 Enterprise使用できます。*
 
-この記事では、以下を含む Microsoft 365 for enterprise 用の簡略化された環境を作成する方法について説明します。
+この記事では、以下を含むエンタープライズ向けMicrosoft 365環境を作成する方法について説明します。
 
 - Microsoft 365 E5 の試用版または有料サブスクリプション。
 - Azure 仮想ネットワーク上の 3 つの仮想マシン (DC1、APP1、および CLIENT1) で構成される、インターネットに接続された簡略化された組織イントラネット。
@@ -40,18 +40,18 @@ ms.locfileid: "50926046"
 - [フェーズ 1: シミュレートされたイントラネットを作成する](#phase-1-create-a-simulated-intranet)
 - [フェーズ 2: Microsoft 365 E5 サブスクリプションを作成する](#phase-2-create-your-microsoft-365-e5-subscription)
 
-結果の環境を使用して[、Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise)の機能をテストし[](m365-enterprise-test-lab-guides.md)、追加のテスト ラボ ガイドを使用するか、独自にテストできます。
+結果の環境を使用して、追加のテスト ラボ ガイド[を](https://www.microsoft.com/microsoft-365/enterprise)使用して、Microsoft 365の機能を[](m365-enterprise-test-lab-guides.md)テストできます。
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Microsoft 365 for enterprise Test Lab Guide スタックのすべての記事へのビジュアル マップについては [、「Microsoft 365 for enterprise Test Lab Guide Stack」を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>フェーズ 1: シミュレートされたイントラネットを作成する
 
 このフェーズでは、Active Directory ドメイン サービス (AD DS) ドメイン コントローラー、アプリケーション サーバー、およびクライアント コンピューターを含むシミュレートされたイントラネットを Azure インフラストラクチャ サービスに構築します。
 
-これらのコンピューターは、 [追加の Microsoft 365 for](m365-enterprise-test-lab-guides.md) enterprise Test Lab Guides で使用して、ハイブリッド ID などの機能を構成およびデモンストレーションします。
+これらのコンピューターは、エンタープライズ テスト[](m365-enterprise-test-lab-guides.md)ラボ ガイドのMicrosoft 365で使用して、ハイブリッド ID などの機能を構成およびデモンストレーションします。
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>方法 1: Azure Resource Manager テンプレートを使用して、シミュレートされたイントラネットを構築する
 
@@ -160,19 +160,19 @@ DC1 のローカル管理者アカウントのユーザー名とパスワード�
   
 次に、DC1 仮想マシンに接続します。
   
-1. Azure portal [で、[リソース](https://portal.azure.com)グループ] を選択 > <新しいリソース グループ _  dc1 Connect> > _ **名を指定**  >  **します**。
+1. Azure portal [で、[リソース](https://portal.azure.com)グループ] を **選択 > <新** しいリソース グループ ***の名前 _> > _* DC1 Connect。**  >  
     
-2. 開いているウィンドウで、[RDP ファイルのダウンロード **] を選択します**。 ダウンロードした DC1.rdp ファイルを開き、[接続] を **選択します**。
+2. 開いているウィンドウで、[RDP ファイルのダウンロード **] を選択します**。 ダウンロードされた DC1.rdp ファイルを開き、[ファイル] を **Connect。**
     
 3. DC1 のローカル管理者アカウント名を指定します。
     
    - Windows 7 の場合:
     
-     [Windows セキュリティ **] ダイアログ ボックスで** 、[別のアカウントを **使用する] を選択します**。 [**ユーザー名] に****、「DC1 \\** ローカル管理者アカウント名」と < *入力>。*
+     [別の **アカウントWindows セキュリティ]** ダイアログ ボックスで、[別のアカウント **を使用する] を選択します**。 [**ユーザー名] に****、「DC1 \\** ローカル管理者アカウント名」と < *入力>。*
     
    - Windows 8 または Windows 10 の場合:
     
-     **[Windows** セキュリティ] ダイアログ ボックスで、[その **他の選択肢**] を選択し、[別のアカウントを使用 **する] を選択します**。 [**ユーザー名] に****、「DC1 \\** ローカル管理者アカウント名」と < *入力>。*
+     [別の **Windows セキュリティ]** ダイアログ ボックスで、[その他の選択肢]**を選択し**、[別のアカウントを使用 **する] を選択します**。 [**ユーザー名] に****、「DC1 \\** ローカル管理者アカウント名」と < *入力>。*
     
 4. [ **パスワード]** で、ローカル管理者アカウントのパスワードを入力し **、[OK] を選択します**。
     
@@ -184,7 +184,7 @@ DC1 のローカル管理者アカウントのユーザー名とパスワード�
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-次に **testlab.**\<*your public domain*> ドメインのドメイン コントローラーおよび DNS サーバーとして DC1 を構成します。 パブリック ドメイン名を指定し、角かっこを削除してから、DC1 の管理者レベルのコマンド プロンプトWindows PowerShell実行します。
+次に **testlab.**\<*your public domain*> ドメインのドメイン コントローラーおよび DNS サーバーとして DC1 を構成します。 パブリック ドメイン名を指定し、角かっこを削除してから、DC1 の管理者レベルのコマンド プロンプトでWindows PowerShell実行します。
   
 ```powershell
 $yourDomain="<your public domain>"
@@ -197,11 +197,11 @@ Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -Sysv
   
 DC1 の再起動後に、DC1 仮想マシンに再接続します。
   
-1. Azure portal [で、[リソース](https://portal.azure.com)グループ]**を選択** > <**DC1** Connect の> > をクリック  >  **します**。
+1. Azure portal [で、[リソース](https://portal.azure.com)グループ]を **選択 > <** DC1 のリソース グループ> > **をConnect。**  >  
     
-2. ダウンロードされた DC1.rdp ファイルを実行し、[接続] を **選択します**。
+2. ダウンロードした DC1.rdp ファイルを実行し、[ファイル] を選択 **Connect。**
     
-3. **Windows セキュリティで、[別** のアカウントを **使用する] を選択します**。 [**ユーザー名] に****、「TESTLAB \\** ローカル管理者アカウント < *名」と入力>。*
+3. [アカウント **Windows セキュリティ]** で、[別の **アカウントを使用する] を選択します**。 [**ユーザー名] に****、「TESTLAB \\** ローカル管理者アカウント < *名」と入力>。*
     
 4. [パスワード **] ボックス** に、ローカル管理者アカウントのパスワードを入力し **、[OK] を選択します**。
     
@@ -379,13 +379,13 @@ Azure portal から、CORP\User1 アカウントを使用して CLIENT1 に接�
 
 #### <a name="using-an-office-365-e5-test-environment"></a>Office 365 E5 のテスト環境を使用する
 
-365 テスト環境Office必要な場合は、この記事の残りの部分を読む必要があります。
+テスト環境のOffice 365場合は、この記事の残りの部分を読む必要があります。
 
-Microsoft 365 と Office 365 の両方に適用される追加のテスト ラボ ガイドについては [、「Microsoft 365 for enterprise Test Lab Guides」を参照してください](m365-enterprise-test-lab-guides.md)。
+テスト ラボ ガイドとテスト ラボ ガイドの両方に適用Microsoft 365 Office 365、エンタープライズ テスト ラボ ガイドのMicrosoft 365[を参照してください](m365-enterprise-test-lab-guides.md)。
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Microsoft 365 E5 の試用版サブスクリプションを追加する
 
-Microsoft 365 E5 試用版サブスクリプションを追加し、ライセンスを使用してユーザー アカウントを構成するには、「軽量基本構成テスト ラボ ガイド」のフェーズ [3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) の手順を実行します。
+試用版サブスクリプションMicrosoft 365 E5し、ライセンスを使用してユーザー アカウントを構成するには、「軽量基本構成テスト ラボ ガイド」のフェーズ[3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription)の手順を実行します。
 
   
 ## <a name="results"></a>結果
@@ -400,7 +400,7 @@ Microsoft 365 E5 試用版サブスクリプションを追加し、ライセン
   
 ![シミュレートされたエンタープライズ基本構成のフェーズ 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-これで、エンタープライズ向け [Microsoft 365 の追加機能を試す準備ができました](https://www.microsoft.com/microsoft-365/enterprise)。
+これで、エンタープライズ向けアプリケーションの追加機能をMicrosoft 365[準備ができました](https://www.microsoft.com/microsoft-365/enterprise)。
   
 ## <a name="next-steps"></a>次の手順
 

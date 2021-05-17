@@ -1,5 +1,5 @@
 ---
-title: 高度な電子情報開示の CJK/Double Byte のサポート
+title: CJK/Double Byte のサポートは、Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Microsoft 365 の Advanced eDiscovery が、2 バイト文字セットを使用する中国語、日本語、韓国語 (CJK) 言語をサポートする方法について説明します。
+description: 2 Advanced eDiscovery文字セットMicrosoft 365使用する中国語、日本語、韓国語 (CJK) 言語をサポートする方法について学習します。
 ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,9 +23,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50926603"
 ---
-# <a name="cjk-language-support-for-advanced-ediscovery"></a>高度な電子情報開示の CJK 言語サポート
+# <a name="cjk-language-support-for-advanced-ediscovery"></a>CJK 言語サポートのAdvanced eDiscovery
 
-Advanced eDiscovery では、レビュー セット内の次の高度なシナリオについて、2 バイト文字セット言語 (簡体字中国語、繁体字中国語、日本語、韓国語を総称して *CJK* 言語と呼ばれる) がサポートされています。
+Advanced eDiscoveryでは、レビュー セットで次の高度なシナリオに対応する 2 バイト文字セット言語 (簡体字中国語、繁体字中国語、日本語、韓国語を総称して *CJK* 言語と呼ばれる) をサポートしています。
 
 - レビュー セット [のデータをクエリする場合](review-set-search.md)。
 
@@ -37,7 +37,7 @@ Advanced eDiscovery では、レビュー セット内の次の高度なシナ�
 
 **CJK 文字を含むアイテムを収集する検索を作成する方法**
 
-高度な電子情報開示でコンテンツを[](building-search-queries.md#keyword-searches)検索する場合は[](keyword-queries-and-search-conditions.md)、キーワード検索、キーワード クエリ、検索条件に CJK 文字を使用できます。 コア電子情報開示とコンテンツ検索でコンテンツを検索する場合は、CJK 文字の検索もサポートされています。
+CJK 文字は、キーワード[](building-search-queries.md#keyword-searches)検索、キーワード[](keyword-queries-and-search-conditions.md)クエリ、および検索条件に Advanced eDiscovery使用できます。 コア電子情報開示とコンテンツ検索でコンテンツを検索する場合は、CJK 文字の検索もサポートされています。
 
 ブール演算子 AND  [](keyword-queries-and-search-conditions.md#search-operators) **、OR、NOT、NEAR** など、すべての検索演算子と検索条件に対して CJK サポートを **提供します**。 [](keyword-queries-and-search-conditions.md#search-conditions)
 
@@ -47,13 +47,13 @@ Advanced eDiscovery では、レビュー セット内の次の高度なシナ�
 
 検索シナリオによって異なります。
 
-- Advanced eDiscovery [でレビュー セットのデータ](review-set-search.md) をクエリすると、複数の言語を検索できます。
+- レビュー セット[内のデータをクエリ](review-set-search.md)するときに、Advanced eDiscovery言語を検索できます。
 
 - データを [収集する検索を作成する場合](create-search-to-collect-data.md)は、ターゲットとする言語ごとに個別の検索を作成します。 たとえば、中国語と韓国語の両方を含むドキュメントを検索する場合は、最初のクエリで [中国語] を選択し、2 番目のクエリに [韓国語] を選択します。
 
 **レビュー セット内のクエリの言語を選択するクエリ言語と国/地域のアイコンが表示されます。レビュー セット検索でクエリ言語を指定する方法**
 
-レビュー セットのクエリでは、ドキュメント言語を指定する必要があります。 Advanced eDiscovery は、レビュー セットにコンテンツを追加すると、ドキュメント言語を自動的に検出します。 これにより、レビュー セットでクエリ結果を最適化できます。
+レビュー セットのクエリでは、ドキュメント言語を指定する必要があります。 Advanced eDiscoveryにコンテンツを追加すると、ドキュメント言語が自動的に検出されます。 これにより、レビュー セットでクエリ結果を最適化できます。
 
 **ファイル メタデータで検出された言語を [確認できますか](view-documents-in-review-set.md#file-metadata)?**
 
@@ -69,7 +69,7 @@ Advanced eDiscovery では、レビュー セット内の次の高度なシナ�
 
 **表示言語を中国語、日本語、韓国語に変更する方法**
 
-表示言語とタイム ゾーンを変更する方法については [、「365](/office365/troubleshoot/access-management/set-language-and-region)の言語と地域の設定を設定する方法」を参照Officeしてください。
+表示言語とタイム ゾーンを変更する方法については、「言語と地域の設定を設定する方法」を参照[Office 365。](/office365/troubleshoot/access-management/set-language-and-region)
 
 ## <a name="known-issues"></a>既知の問題
 

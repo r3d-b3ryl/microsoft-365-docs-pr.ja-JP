@@ -33,7 +33,7 @@ ms.locfileid: "51995083"
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-Microsoft Defender for Endpoint のリアルタイム保護サービスに関連する CPU 使用率やパフォーマンスの問題がシステムで高い場合は、Microsoft サポートにチケットを提出できます。 「Microsoft Defender ウイルス対策診断 [データの収集」の手順に従います](collect-diagnostic-data.md)。
+Microsoft Defender for Endpoint のリアルタイム保護サービスに関連する CPU 使用率やパフォーマンスの問題がシステムで高い場合は、Microsoft サポートにチケットを提出できます。 「診断データの収集[」のMicrosoft Defender ウイルス対策に従います](collect-diagnostic-data.md)。
 
 管理者は、これらの問題を自分でトラブルシューティングできます。 
 
@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
 
 次の手順に従って、Microsoft サポートへの申請に追加のログを提供することもできます。
 - [プロセス モニターを使用してプロセス ログをキャプチャする](#capture-process-logs-using-process-monitor)
-- [Windows Performance Recorder を使用してパフォーマンス ログをキャプチャする](#capture-performance-logs-using-windows-performance-recorder) 
+- [パフォーマンス レコーダーを使用してパフォーマンス ログWindowsキャプチャする](#capture-performance-logs-using-windows-performance-recorder) 
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>ウイルス対策の除外をベンダーに確認する
 
@@ -67,9 +67,9 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
 | MaxTimeFile | 期間の最長スキャンが記録されたこのプロセスによってアクセスされるファイル `MaxTime` のパス |
 | EstimatedImpact | このプロセスでスキャンアクティビティが発生した期間からこのプロセスによってアクセスされたファイルのスキャンに費やされた時間の割合 |
 
-パフォーマンスへの影響が大きい場合は [、「Microsoft Defender ウイルス](collect-diagnostic-data.md)対策スキャンの除外の構成と検証」の手順に従って、パス/プロセスの除外にプロセスを追加してみてください。
+パフォーマンスへの影響が大きい場合は、「スキャンの除外を構成して検証する」の手順に従って、パス/プロセスの除外にプロセスを追加[Microsoft Defender ウイルス対策してみてください](collect-diagnostic-data.md)。
 
-前の手順で問題が解決しない場合は、次のセクションのプロセス モニター[](#capture-process-logs-using-process-monitor)または Windows[パフォーマンス](#capture-performance-logs-using-windows-performance-recorder)レコーダーを使用して詳細を収集できます。
+前の手順で問題が解決しない場合は、プロセス モニターまたは次のセクション[](#capture-process-logs-using-process-monitor)の Windows[パフォーマンス](#capture-performance-logs-using-windows-performance-recorder)レコーダーを使用して詳細を収集できます。
      
 ## <a name="capture-process-logs-using-process-monitor"></a>プロセス モニターを使用してプロセス ログをキャプチャする
 
@@ -87,7 +87,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
 
 3. フォルダー のパスがに `C:\temp` なじむファイルを解凍します `C:\temp\ProcessMonitor` 。 
 
-4. トラブルシューティング **ProcMon.exe**  Windows クライアントまたは Windows サーバーにコピーします。  
+4. トラブルシューティング **ProcMon.exe** クライアントまたはWindowsサーバー Windowsコピーします。  
 
 5. ProcMon を実行する前に、CPU 使用率の高い問題に関連しない他のすべてのアプリケーションが閉じられます。 これにより、チェックするプロセスの数が最小限になります。
 
@@ -122,7 +122,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
         > 
         >![Procmon の最小化](images/procmon-minimize.png)
     
-7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 [**OK**] を選択します。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
+7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 **[OK]** を選択します。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
  
     ![[フィルター処理名] は [システム除外]](images/procmon-filter-options.png) 
 
@@ -150,11 +150,11 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
 13. .pml ファイルを圧縮し、Microsoft サポートに提出します。
 
 
-## <a name="capture-performance-logs-using-windows-performance-recorder"></a>Windows Performance Recorder を使用してパフォーマンス ログをキャプチャする
+## <a name="capture-performance-logs-using-windows-performance-recorder"></a>パフォーマンス レコーダーを使用してパフォーマンス ログWindowsキャプチャする
 
-Windows Performance Recorder (WPR) を使用して、Microsoft サポートへの申請に追加情報を含めさせることができます。 WPR は、Windows レコーディング用のイベント トレースを作成する強力なレコーディング ツールです。 
+Microsoft サポートへのWindowsに追加情報を含めるには、パフォーマンス レコーダー (WPR) を使用できます。 WPR は、イベント トレースを作成する強力な記録ツールで、Windowsです。 
 
-WPR は Windows アセスメントと展開キット (Windows ADK) の一部であり、Windows ADK のダウンロードと [インストールからダウンロードできます](/windows-hardware/get-started/adk-install)。 また [、Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)10 SDK で Windows 10 ソフトウェア開発キットの一部としてダウンロードすることもできます。
+WPR は、Windows 評価と展開キット (Windows ADK) の一部であり[、ADK](/windows-hardware/get-started/adk-install)からダウンロードしてインストールWindowsできます。 また、ソフトウェア開発キットの一部としてダウンロードWindows 10 SDK で[Windows 10できます](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)。
 
 WPR ユーザー インターフェイスを使用するには、「WPR UI を使用してパフォーマンス ログをキャプチャする」 [の手順に従います](#capture-performance-logs-using-the-wpr-ui)。 
 
@@ -168,7 +168,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
 1. WPR をダウンロードしてインストールします。
 
-2. *[Windows キット] で*、[Windows パフォーマンス レコーダー **] を右クリックします**。 
+2. *[Windows] で*、[パフォーマンス レコーダー] Windows **を右クリックします**。 
 
     ![[スタート] メニュー](images/wpr-01.png)
 
@@ -191,7 +191,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
     ![in-file](images/wpr-infile.png)
 
     >[!WARNING]
-    >Windows Server に 64 GB 以上の RAM がある場合は、代わりにカスタム測定値 `Microsoft Defender for Endpoint analysis for large servers` を使用します `Microsoft Defender for Endpoint analysis` 。 それ以外の場合、システムが大量の非ページ プール メモリまたはバッファーを消費し、システムが不安定な場合があります。 [リソース分析] を展開して、追加するプロファイル **を選択できます**。 このカスタム プロファイルは、詳細なパフォーマンス分析に必要なコンテキストを提供します。
+    >サーバーにWindows RAM が 64 GB 以上の場合は、代わりにカスタム測定値 `Microsoft Defender for Endpoint analysis for large servers` を使用します `Microsoft Defender for Endpoint analysis` 。 それ以外の場合、システムが大量の非ページ プール メモリまたはバッファーを消費し、システムが不安定な場合があります。 [リソース分析] を展開して、追加するプロファイル **を選択できます**。 このカスタム プロファイルは、詳細なパフォーマンス分析に必要なコンテキストを提供します。
  
 8. WPR UI でカスタム測定 Microsoft Defender for Endpoint 詳細分析プロファイルを使用するには、次の操作を行います。
 
@@ -245,7 +245,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
 ### <a name="capture-performance-logs-using-the-wpr-cli"></a>WPR CLI を使用してパフォーマンス ログをキャプチャする
 
-コマンド ライン ツール *は* 、wpr.exeから始まるオペレーティング システムの一部Windows 8。 コマンド ライン ツールを使用して WPR トレースを収集するには、次wpr.exe。
+コマンド ライン ツール *は*、wpr.exeから始まるオペレーティング システムの一部Windows 8。 コマンド ライン ツールを使用して WPR トレースを収集するには、次wpr.exe。
 
 1. Microsoft **[Defender for Endpoint analysis profile for performance](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** traces for a download a file named in a local directory ( `WD.wprp` `C:\traces` .
 
@@ -260,7 +260,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
     ```
     
     >[!WARNING]
-    >Windows Server に 64 GB 以上の RAM がある場合は、プロファイルと、それぞれプロファイルの代わりに `WDForLargeServers.Light` `WDForLargeServers.Verbose` `WD.Light` `WD.Verbose` プロファイルを使用します。 それ以外の場合、システムが大量の非ページ プール メモリまたはバッファーを消費し、システムが不安定な場合があります。
+    >サーバーにWindows 64 GB 以上の RAM がある場合は、プロファイルと 、それぞれプロファイルの代わりに `WDForLargeServers.Light` `WDForLargeServers.Verbose` `WD.Light` `WD.Verbose` プロファイルを使用します。 それ以外の場合、システムが大量の非ページ プール メモリまたはバッファーを消費し、システムが不安定な場合があります。
 
 6. 問題を再現します。
 
@@ -277,7 +277,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
 9. ファイルとフォルダーの両方を Microsoft サポートへの申請に含める。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
-- [Microsoft Defender ウイルス対策診断データの収集](collect-diagnostic-data.md)
-- [Microsoft Defender ウイルス対策スキャンの除外を構成および検証する](configure-exclusions-microsoft-defender-antivirus.md)
+- [診断Microsoft Defender ウイルス対策収集する](collect-diagnostic-data.md)
+- [スキャンの除外を構成およびMicrosoft Defender ウイルス対策する](configure-exclusions-microsoft-defender-antivirus.md)

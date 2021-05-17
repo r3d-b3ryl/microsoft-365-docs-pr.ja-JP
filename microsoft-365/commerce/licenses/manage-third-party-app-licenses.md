@@ -1,5 +1,5 @@
 ---
-title: 管理センターでサード パーティ製のアプリ ライセンスMicrosoft 365管理する
+title: Microsoft 365 管理センターでサード パーティ製のアプリ ライセンスを管理する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,7 +18,7 @@ ms.custom:
 ms.reviewer: argani
 search.appverid:
 - MET150
-description: 管理者センターでサード パーティ製アプリのライセンスを管理するMicrosoft 365します。
+description: Microsoft 365 管理センターでサード パーティ製アプリのライセンスを管理する方法について説明します。
 ms.openlocfilehash: 91c2a75aefe28b3525996522f7fdd55d22524d43
 ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/30/2021
 ms.locfileid: "52107724"
 ---
-# <a name="manage-third-party-app-licenses-in-the-microsoft-365-admin-center"></a>管理センターでサード パーティ製のアプリ ライセンスMicrosoft 365管理する
+# <a name="manage-third-party-app-licenses-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでサード パーティ製のアプリ ライセンスを管理する
 
 サード パーティ製アプリは、Microsoft 以外のソフトウェア ベンダーから購入するアプリです。
 
@@ -36,7 +36,7 @@ ms.locfileid: "52107724"
 
 ## <a name="assign-third-party-app-licenses-to-users-or-groups"></a>サードパーティのアプリ ライセンスをユーザーまたはグループに割り当てる
 
-1. 管理センター Microsoft 365、[課金ライセンス]**ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">に移動</a>します。
+1. Microsoft 365 管理センターで、[課金ライセンス]**ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">に移動</a>します。
 2. ライセンスを割り当てるアプリを選択します。
 3. [ライセンスの詳細] ページで、[ライセンスの割り当て **] を選択します**。
 4. [ライセンスの **割り当** て] ウィンドウで、ユーザーまたはグループの名前の入力を開始し、結果から選択してリストに追加します。

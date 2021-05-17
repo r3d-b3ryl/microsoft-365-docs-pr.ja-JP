@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceTvmSecureConfigurationAssessmentKB テーブル
 description: 高度な検索スキーマの DeviceTvmSecureConfigurationAssessmentKB テーブルに記載される、脅威および脆弱性管理により評価されるさまざまなセキュリティ構成について説明します。
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、脅威 & 脆弱性管理、TVM、デバイス管理、セキュリティ構成、MITRE ATT&CK フレームワーク、ナレッジ ベース、KB、DeviceTvmSecureConfigurationAssesmentKBSmentKB
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、脅威& 脆弱性の管理、TVM、デバイス管理、セキュリティ構成、MITRE ATT&CK フレームワーク、ナレッジ ベース、KB、DeviceTvmSecureConfigurationAssessmentKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -45,15 +45,15 @@ ms.locfileid: "52024243"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `ConfigurationId` | string | 特定の構成の一意の識別子 |
-| `ConfigurationImpact` | 文字列 | 構成が全体の構成スコアに与える影響の評価 (1-10) |
+| `ConfigurationImpact` | string | 構成が全体の構成スコアに与える影響の評価 (1-10) |
 | `ConfigurationName` | string | 構成の表示名 |
 | `ConfigurationDescription` | string | 構成の説明 |
 | `RiskDescription` | string | 関連するリスクの説明 |
 | `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|
-| `ConfigurationSubcategory` | 文字列 |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
+| `ConfigurationSubcategory` | string |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
 | `ConfigurationBenchmarks` | string | 同じ構成または類似した構成を推奨する業界ベンチマークの一覧 |
 | `Tags` | string | セキュリティ構成を識別または分類するために使用されるさまざまな属性を表すラベル |
-| `RemediationOptions` | 文字列 | 関連するリスクを軽減または対処するために推奨されるアクション |
+| `RemediationOptions` | string | 関連するリスクを軽減または対処するために推奨されるアクション |
 
 ## <a name="related-topics"></a>関連項目
 

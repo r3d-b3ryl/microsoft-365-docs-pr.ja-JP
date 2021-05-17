@@ -60,7 +60,7 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 次の表に示すさまざまな種類のモバイル デバイスでサポートされているアプリは、ユーザーのデバイスに適用される新しいモバイル デバイス管理ポリシーが作成され、ユーザーがデバイスを以前に登録しなかった場合に、Basic Mobility and Security に登録するようユーザーに求めるメッセージを表示します。 ポリシーの設定方法によっては、ユーザーのデバイスがポリシーに準拠しない場合、ユーザーがこれらのアプリの Microsoft 365 リソースにアクセスできないか、アクセス権を持っている可能性がありますが、Microsoft 365 はポリシー違反を報告します。
 
-|**Product**|**iOS 10.0 以降**|**Android 5.0 以降**|
+|**製品**|**iOS 10.0 以降**|**Android 5.0 以降**|
 |:-----|:-----|:-----|
 |**Exchange** Exchange ActiveSyncには、バージョン 14.1 以降を使用する組み込みの電子メールアプリと、TouchDown Exchange ActiveSyncサード パーティ製アプリが含まれます。 |メール |メール |
 |**Office**   **および OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**電話とタブレットの場合**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **電話のみ:** <br/> Office Mobile |
@@ -185,11 +185,11 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 |SystemSecurityTLS  |はい|いいえ|
 |WLANEnabled  |いいえ|いいえ|
 
-## <a name="settings-supported-by-windows"></a>Windows でサポートされる設定
+## <a name="settings-supported-by-windows"></a>設定によってサポートWindows
 
-Windows 10 デバイスは、モバイル デバイスとして登録することで管理できます。 該当するポリシーが展開された後、Windows 10 デバイスを使用するユーザーは、組み込みの電子メール アプリを初めて使用して Microsoft 365 メールにアクセスする際に、Basic Mobility and Security に登録する必要があります (Azure AD プレミアム サブスクリプションが必要です)。
+モバイル デバイスとして登録Windows 10デバイスを管理できます。 該当するポリシーが展開された後、Windows 10 デバイスを持つユーザーは、組み込みの電子メール アプリを初めて使用して Microsoft 365 メールにアクセスする際に、Basic Mobility and Security に登録する必要があります (Azure AD プレミアム サブスクリプションが必要です)。
 
-モバイル デバイスとして登録されている Windows 10 デバイスでは、次の設定がサポートされています。 これらの設定では、ユーザーが Microsoft 365 リソースにアクセスできない場合があります。
+次の設定は、モバイル Windows 10登録されているデバイスでサポートされています。 これらの設定では、ユーザーがリソースにアクセスMicrosoft 365は使用されます。
 
 ### <a name="security-settings"></a>セキュリティの設定
 
@@ -206,7 +206,7 @@ Windows 10 デバイスは、モバイル デバイスとして登録するこ�
 - パスワードの履歴を記憶して再利用を防止
 
 >[!NOTE]
->パスワードを調整する次の設定では、ローカル Windows アカウントのみを制御します。 ドメインまたは Azure Active Directory に参加して提供される Windows アカウントは、これらの設定の影響を受け取らない。
+>パスワードを調整する次の設定では、ローカル アカウントWindows制御します。 Windowsまたはドメインに参加して提供Azure Active Directoryアカウントは、これらの設定の影響を受け取らない。
 
 ### <a name="system-settings"></a>システムの設定
 
@@ -234,12 +234,12 @@ PowerShell コマンドレットを使用して、次の追加のポリシー設
 
 ## <a name="remotely-wipe-a-mobile-device"></a>モバイル デバイスをリモートからワイプする
 
-デバイスが紛失または盗難に遭った場合は、機密の組織データを削除し、セキュリティ & コンプライアンス センター > データ損失防止デバイス管理からワイプを行って、Microsoft 365 組織リソースへのアクセスを防止できます。   >   個別のワイプで組織のデータのみを削除することも、全体のワイプでデバイスからすべての情報を削除して出荷時の設定に戻すこともできます。
+デバイスが紛失または盗難に遭った場合は、機密の組織データを削除し、セキュリティ & コンプライアンス センター > データ損失防止デバイス管理からワイプを行って、Microsoft 365 組織リソースへのアクセスを防ぐのに役立ちます。  >   個別のワイプで組織のデータのみを削除することも、全体のワイプでデバイスからすべての情報を削除して出荷時の設定に戻すこともできます。
 
 詳細については、「Basic [Mobility and Security」でモバイル デバイスをワイプするを参照してください](wipe-mobile-device.md)。
 
 ## <a name="related-topics"></a>関連項目
 
-[Microsoft 365 の基本モビリティとセキュリティの概要](overview.md)
+[基本モビリティとセキュリティの概要 (Microsoft 365](overview.md)
 
 [Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する](create-device-security-policies.md)

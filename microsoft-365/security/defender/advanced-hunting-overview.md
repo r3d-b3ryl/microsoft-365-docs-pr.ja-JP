@@ -28,7 +28,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2021
 ms.locfileid: "52073963"
 ---
-# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Microsoft 365 Defender で高度な狩猟を行って脅威を積極的に探す
+# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Defender で高度な狩猟を行って脅威を積極的にMicrosoft 365する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -46,14 +46,14 @@ ms.locfileid: "52073963"
 
 同じ脅威を捜索しているクエリを使用して、カスタムの検出ルールを作成できます。 これらのルールは自動的に実行され、侵害の疑いのあるアクティビティ、正しく構成されていないコンピューター、その他の結果を確認し、それに対応します。
 
-この機能は [、Microsoft Defender for Endpoint の高度な検索に似ています](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。 Microsoft 365 セキュリティ センターで使用できるこの機能は、以下のより広範なデータ セットをチェックするクエリをサポートします。
+この機能は [、Microsoft Defender for Endpoint の高度な検索に似ています](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。 セキュリティ センターでMicrosoft 365この機能は、次の場所からより広範なデータ セットをチェックするクエリをサポートします。
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
 - Microsoft Cloud App Security
 - Microsoft Defender for Identity
 
-高度な検索を使用するには [、Microsoft 365 Defender をオンにしてください](m365d-enable.md)。
+高度な検索を使用するには[、Defender のMicrosoft 365します](m365d-enable.md)。
 
 ## <a name="get-started-with-advanced-hunting"></a>高度な捜索を開始する
 
@@ -69,9 +69,9 @@ ms.locfileid: "52073963"
 | **検出ルールの作成** | 高度な検索クエリを使用してアラートをトリガーし、応答アクションを自動的に実行する方法について説明します。 | - [カスタム検出の概要](custom-detections-overview.md) <br />- [カスタム検出ルール](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>アクセス権の取得
-高度なハンティングまたは他の [Microsoft 365 Defender](microsoft-365-defender.md) 機能を使用するには、Azure Active Directory で適切な役割が必要です。 [高度な検索に必要な役割とアクセス許可についてお読みください](custom-roles.md)。
+高度な検索や他の Defender 機能を[Microsoft 365するには](microsoft-365-defender.md)、この機能で適切な役割がAzure Active Directory。 [高度な検索に必要な役割とアクセス許可についてお読みください](custom-roles.md)。
 
-また、エンドポイント データへのアクセスは、Microsoft Defender for Endpoint の役割ベースのアクセス制御 (RBAC) 設定によって決まります。 [Microsoft 365 Defender へのアクセスの管理について説明します](m365d-permissions.md)。
+また、エンドポイント データへのアクセスは、Microsoft Defender for Endpoint の役割ベースのアクセス制御 (RBAC) 設定によって決まります。 [Defender へのアクセスの管理についてMicrosoft 365します](m365d-permissions.md)。
 
 
 ## <a name="data-freshness-and-update-frequency"></a>データの鮮度と更新頻度

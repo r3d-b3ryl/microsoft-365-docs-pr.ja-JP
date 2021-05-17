@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 暗号化チェーン - DOD と GCC High
+title: Microsoft 365暗号化チェーン - DOD と GCC High
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -16,7 +16,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: Microsoft 365 の DOD および GCC ハイ ルート証明書と証明機関 (CA) の完全な一覧を表示します。
+description: DOD と証明書の完全な一覧をGCCの高ルート証明書と証明機関 (CA) をMicrosoft 365。
 ms.openlocfilehash: 016c7d6b4c5557b7930763c2628525cc3c2c409f
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,24 +24,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927807"
 ---
-# <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 暗号化チェーン - DOD と GCC High
+# <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365暗号化チェーン - DOD と GCC High
 
-Microsoft 365 は、さまざまな証明書プロバイダーを活用しています。 次に、Microsoft 365 にアクセスするときに DOD および **GCC High** のお客様が遭遇する可能性がある既知の Microsoft 365 ルート証明書の完全な一覧について説明します。 独自のインフラストラクチャにインストールする必要がある証明書の詳細については [、「Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md)のサード パーティ SSL 証明書を計画する」を参照してください。
+Microsoft 365さまざまな証明書プロバイダーを活用します。 次に **、DOD** と高Microsoft 365ユーザーがアクセスするときに発生する可能性GCC既知のルート証明書の完全な一覧Microsoft 365。 独自のインフラストラクチャにインストールする必要がある場合がある証明書の詳細については、「Plan [for third-party SSL certificates for](../enterprise/plan-for-third-party-ssl-certificates.md)Microsoft 365」 を参照してください。
 
-次の証明書情報は、すべての **DOD および GCC High のお客様に適用されます**。
+次の証明書情報は、すべての DOD および高い **顧客にGCC適用されます**。
 
 最終更新日: **2020/10/16**
 
 >[!NOTE]
->世界中のお客様に適用される証明書情報 **については**[、「Microsoft 365](encryption-office-365-certificate-chains.md)暗号化チェーン」を参照してください。
+>世界中のお客様に適用される証明書 **情報については**、「暗号化 [チェーンMicrosoft 365参照してください](encryption-office-365-certificate-chains.md)。
 
 | **証明書の種類** | **P7b ダウンロード** | **CRL エンドポイント** | **OCSP エンドポイント** |
 | --- | --- | --- | --- | --- |
-| パブリックに信頼されたルート証明書と中間証明書 | [Microsoft 365 ITAR 証明書バンドル (P7B)](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
+| パブリックに信頼されたルート証明書と中間証明書 | [Microsoft 365ITAR 証明書バンドル (P7B)](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
 
 以下のルートセクションと中間セクションを展開して、証明書プロバイダーに関するその他の詳細を確認します。
 
-## <a name="microsoft-365-certificate-details"></a>**Microsoft 365 証明書の詳細**
+## <a name="microsoft-365-certificate-details"></a>**Microsoft 365証明書の詳細**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
@@ -146,7 +146,7 @@ Microsoft 365 は、さまざまな証明書プロバイダーを活用してい
 | **署名アルゴリズム** | sha256RSA |
 | **検証前でない** | Oct 22 00:00:00 2013 UTC |
 | **有効性が後でない** | Oct 22 00:00:00 2028 UTC |
-| **サブジェクト キー識別子** | 3D:D3:50:A5:D6:A0:AD:EE:F3:F3:4A:60:0A:65:D3:21:D4:F8:F8:D6:0F |
+| **サブジェクト キー識別子** | 3D:D3:50:A5:D6:A0:AD:Enterprise Edition:F3:4A:60:0A:65:D3:21:D4:F8:F8:D6:0F |
 | **Authority Key Identifier** | keyID:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
 | **拇印 (SHA-1)** | 7E2F3A4F8FE8FA8A5730AECA029696637E986F3F |
 | **拇印 (SHA-256)** | 403E062A2653059113285BAF80A0D4AE422C848C9F78FAD01FC94BC5B87FEF1A |
@@ -314,9 +314,9 @@ Microsoft 365 は、さまざまな証明書プロバイダーを活用してい
 | **CRL URL** | http://crl.entrust.net/g2ca.crl |
 | **OCSP URL** | http://ocsp.entrust.net |
 
-### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft Azure TLS Issuing CA 01**
+### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft AzureTLS 発行 CA 01**
 
-| **[件名]** | CN=Microsoft Azure TLS Issuing CA 01<br>O=Microsoft Corporation<br>C=US |
+| **[件名]** | CN=Microsoft Azure TLS 発行 CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 0A:AF:A6:C5:CA:63:C4:51:41:EA:3B:E1:F7:C7:53:17 |
@@ -331,9 +331,9 @@ Microsoft 365 は、さまざまな証明書プロバイダーを活用してい
 | **CRL URL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URL** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft Azure TLS 発行 CA 02**
+### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft AzureTLS 発行 CA 02**
 
-| **[件名]** | CN=Microsoft Azure TLS Issuing CA 02<br>O=Microsoft Corporation<br>C=US |
+| **[件名]** | CN=Microsoft Azure TLS 発行 CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 0C:6A:E9:7C:CE:D5:99:83:86:90:A0:0A:9E:A5:32:14 |
@@ -348,9 +348,9 @@ Microsoft 365 は、さまざまな証明書プロバイダーを活用してい
 | **CRL URL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URL** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft Azure TLS 発行 CA 05**
+### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft AzureTLS 発行 CA 05**
 
-| **[件名]** | CN=Microsoft Azure TLS Issuing CA 05<br>O=Microsoft Corporation<br>C=US |
+| **[件名]** | CN=Microsoft Azure TLS 発行 CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 0D:7B:ED:E9:7D:82:09:96:7A:52:63:1B:8B:DD:18:BD |
@@ -365,9 +365,9 @@ Microsoft 365 は、さまざまな証明書プロバイダーを活用してい
 | **CRL URL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URL** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS 発行 CA 06**
+### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft AzureTLS 発行 CA 06**
 
-| **[件名]** | CN=Microsoft Azure TLS Issuing CA 06<br>O=Microsoft Corporation<br>C=US |
+| **[件名]** | CN=Microsoft Azure TLS 発行 CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **発行者** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **シリアル番号** | 02:E7:91:71:FB:80:21:E9:3F:E2:D9:83:83:4C:50:C0 |

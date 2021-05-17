@@ -47,19 +47,19 @@ ms.locfileid: "51995059"
 
 ファイルのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
-- この機能は、組織で **Microsoft Defender ウイルス** 対策 (アクティブ モード) を使用し、クラウドベースの保護が有効になっている **場合に使用できます**。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+- この機能は、組織が (アクティブ モードで **)** Microsoft Defender ウイルス対策を使用し、クラウドベースの保護が有効 **になっている場合に使用できます**。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 
 - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。 「 [月次プラットフォームとエンジンのバージョン」を参照してください。](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Windows 10 バージョン 1703 以降の Windows Server 2016 および 2019 のデバイスでサポートされます。
+- 2019 年Windows 10バージョン 1703 以降のデバイスWindows Server 2016サポートされています。
 
-- ファイルのブロックを開始するには、まず [設定] の [ブロックまたは許可 [] 機能を](advanced-features.md) 有効にする必要があります。
+- ファイルのブロックを開始するには、まず、ファイルのブロックまたは許可 [機能](advanced-features.md)を有効にする設定。
 
-この機能は、疑わしいマルウェア (または悪意のある可能性のあるファイル) が Web からダウンロードされるのを防ぐために設計されています。 現在、.exe ファイルや .dll ファイルを含むポータブル実行可能ファイル (PE) ファイルがサポートされています。 対象範囲は時間の長い期間延長されます。
+この機能は、疑わしいマルウェア (または悪意のある可能性のあるファイル) が Web からダウンロードされるのを防ぐために設計されています。 現在、ポータブル実行可能ファイル (PE) ファイルがサポートされています 。このファイルには、.exeファイル.dllがあります。 対象範囲は時間の長い期間延長されます。
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>設定ページからファイルのインジケーターを作成する
 
-1. ナビゲーション ウィンドウで、[インジケーターの設定 **] >選択します**。
+1. ナビゲーション ウィンドウで、[インジケーター] **を設定 >します**。
 
 2. [ファイル ハッシュ **] タブを選択**   します。
 
@@ -89,7 +89,7 @@ ms.locfileid: "51995059"
 
 Cert および File IoC ポリシー処理の競合は、次の順序に従います。
 
-- アプリケーションコントロールと AppLocker でファイルが許可Windows Defenderモード ポリシー/ポリシーが適用されない場合は、[**ブロック**]
+- アプリケーションコントロールと AppLocker の強制モード ポリシー/Windows Defenderによってファイルが許可されていない場合は、[**ブロック**]
 
 - それ以外の場合は、Defender ウイルス対策除外でファイルが許可されている場合は、[ **許可]**
 
@@ -99,11 +99,11 @@ Cert および File IoC ポリシー処理の競合は、次の順序に従い�
 
 - それ以外の場合は、ASR ルール、CFA、AV、SmartScreen、その後ブロックによってファイルがブロック **されます**。  
 
-- Else **Allow** (AppLocker Windows Defenderアプリケーション&を渡し、IoC ルールは適用されません)
+- Else **Allow** (アプリケーション制御Windows Defender AppLocker &に渡す場合、IoC ルールは適用されません)
 
 同じ適用の種類とターゲットを持つファイル IoC ポリシーが競合している場合は、より安全な (長い) ハッシュのポリシーが適用されます。 たとえば、SHA-256 ファイル ハッシュ IoC ポリシーは、両方のハッシュの種類が同じファイルを定義している場合、MD5 ファイル ハッシュ IoC ポリシーに勝ちます。
 
-脅威と脆弱性管理のブロック脆弱なアプリケーション機能は、ファイル IoC を適用に使用し、上記の競合処理順序に従います。
+このブロック脅威と脆弱性の管理脆弱なアプリケーション機能は、ファイル IoC を適用に使用し、上記の競合処理順序に従います。
 
 ### <a name="examples"></a>例
 
@@ -113,9 +113,9 @@ Cert および File IoC ポリシー処理の競合は、次の順序に従い�
 |攻撃表面の縮小ルール |ブロック |許可 |許可
 |Windows Defender Application Control |許可 |ブロック |許可 |
 |Windows Defender Application Control |ブロック |許可 |ブロック
-|Microsoft Defender ウイルス対策の除外 |許可 |ブロック |許可
+|Microsoft Defender ウイルス対策除外 |許可 |ブロック |許可
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [インジケーターの作成](manage-indicators.md)
 - [IP および URL/ドメインのインジケーターを作成](indicator-ip-domain.md)

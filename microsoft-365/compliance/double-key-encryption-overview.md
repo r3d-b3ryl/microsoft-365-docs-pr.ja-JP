@@ -1,6 +1,6 @@
 ---
 title: ダブル キー暗号化の概要と FAQ
-description: Microsoft 365 のダブル キー暗号化に関するよく寄せられる質問。
+description: 2 つのキーの暗号化に関するよく寄せられる質問は、Microsoft 365。
 author: kccross
 ms.author: krowley
 manager: laurawi
@@ -23,25 +23,25 @@ ms.locfileid: "50922051"
 
 ダブル キー暗号化の仕組みについて質問がありますか? ここで答えを確認してください。
 
-## <a name="what-is-double-key-encryption-for-microsoft-365-dke"></a>Microsoft 365 (DKE) のダブル キー暗号化とは
+## <a name="what-is-double-key-encryption-for-microsoft-365-dke"></a>DKE (DKE) のMicrosoft 365キー暗号化とは
 
-Microsoft 365 のダブル キー暗号化を使用すると、お客様は機密性の高いデータを保護して、特別な要件を満たします。 これにより、お客様は暗号化キーの完全な制御を維持できます。 2 つのキーを使用してデータを保護します。コントロール内の 1 つのキーと、Microsoft Azure に安全に格納された 2 番目のキー。 ダブル キー暗号化で保護されたデータを表示するには、両方のキーにアクセスする必要があります。 Microsoft ではこれらのキーの 1 つしかアクセスできないので、保護されたデータは Microsoft にアクセスできなくなり、データのプライバシーとセキュリティを完全に制御できます。  
+Double Key Encryption for Microsoft 365、お客様は機密性の高いデータを保護して、特別な要件を満たします。 これにより、お客様は暗号化キーの完全な制御を維持できます。 2 つのキーを使用してデータを保護します。コントロール内の 1 つのキーと、コントロール内に安全に格納された 2 番目Microsoft Azure。 ダブル キー暗号化で保護されたデータを表示するには、両方のキーにアクセスする必要があります。 Microsoft ではこれらのキーの 1 つしかアクセスできないので、保護されたデータは Microsoft にアクセスできなくなり、データのプライバシーとセキュリティを完全に制御できます。  
 
 選択した場所 (オンプレミスのキー管理サーバーまたはクラウド内) で、キーを要求するために使用する Double Key Encryption サービスをホストできます。 他のアプリケーションと同じ方法でサービスを維持します。 ダブル キー暗号化を使用すると、ダブル キー暗号化サービスへのアクセスを制御できます。 機密性の高いデータは、オンプレミスに保存するか、クラウドに移動できます。 キーの完全な制御を維持するために、サード パーティ製のアクセスを防ぐことに自信を持って取り組む必要があります。 ダブル キー暗号化を使用すると、データとキーを同じ場所に格納できます。
 
 DKE は、一般データ保護規則 (GDPR)、健康保険の移植性および説明責任法 (HIPAA)、Gramm-Leach-Bliley 法 (GLBA)、ロシアのデータローカライズ法 - 連邦法番号など、いくつかの規制および基準に関する規制要件を満たすのに役立ちます。 242-FZ、オーストラリアの連邦プライバシー法 1988、およびニュージーランドのプライバシー法 1993。
 
-## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>組み込みの感度ラベル付Microsoft Officeキー暗号化を使用できますか?
+## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>組み込みの感度ラベル付Microsoft Office二重キー暗号化を使用できますか?
 
 Azure Information Protection 統合ラベル付けクライアントを使用して、ダブル キー暗号化を使用してドキュメントを保護する必要があります。 現在、組み込みのMicrosoft Officeラベルを使用することはできません。
 
-## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>DKE で使用できる Microsoft 365 アプリ
+## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>DKE Microsoft 365 Apps使用できる機能は何ですか?
 
-Windows のデスクトップ バージョンの Word、Excel、および PowerPoint を使用して、DKE ラベルを使用してドキュメントを保護できます。 Windows で *.12711 以降 (デスクトップ バージョンの Word、PowerPoint、Excel) を使用している必要があります。
+DKE ラベルを使用すると、デスクトップ バージョンの Word、Excel、および PowerPointを使用Windows。 オンラインで *.12711 以降 (デスクトップ バージョンの Word、PowerPoint、Excel) を使用Windows。
 
 ## <a name="how-is-double-key-encryption-different-from-the-existing-hold-your-own-key-hyok-solution"></a>ダブル キー暗号化と既存のホールド 独自のキー (HYOK) ソリューションの違い
 
-ダブル キー暗号化は、2 つのキーを使用してデータを暗号化します。 暗号化キーはコントロールに格納され、2 番目のキーは Microsoft Azure に保存され、暗号化されたデータをクラウドに移動できます。 HYOK は 1 つのキーでのみコンテンツを保護し、キーは常にオンプレミスにあります。  
+ダブル キー暗号化は、2 つのキーを使用してデータを暗号化します。 暗号化キーはコントロールに格納され、2 番目のキーは Microsoft Azureに格納され、暗号化されたデータをクラウドに移動できます。 HYOK は 1 つのキーでのみコンテンツを保護し、キーは常にオンプレミスにあります。  
 
 ## <a name="can-double-key-encrypted-documents-be-shared-externally"></a>Double Key Encrypted documents を外部で共有できますか?
 
@@ -49,7 +49,7 @@ Double Key Encrypted documents は、次のユーザーである限り、別の�
 
 - ダブル キー暗号化サービスでキーにアクセスするために必要なアクセス許可を持つ。
 
-- Microsoft Azure でキーにアクセスするために必要なアクセス許可を持っている。
+- キーにアクセスするために必要なアクセス許可を持Microsoft Azure。
 
 ## <a name="what-happens-to-documents-that-are-protected-with-hyok"></a>HYOK で保護されているドキュメントは何が起こりますか?
 
@@ -57,11 +57,11 @@ Double Key Encrypted documents は、次のユーザーである限り、別の�
 
 ## <a name="can-i-run-double-key-encryption-in-my-non-microsoft-air-gapped-environment"></a>Microsoft 以外の空きモード環境でダブル キー暗号化を実行できますか?
 
-DKE は、サービスが Microsoft Azure へのアクセスを必要とするために、これらの環境をサポートしません。
+DKE は、サービスがこれらの環境にアクセスする必要Microsoft Azure。
 
 ## <a name="where-can-i-store-double-key-encrypted-documents"></a>Double Key Encrypted ドキュメントはどこに保存できますか?
 
-Double Key Encrypted ドキュメントは、オンプレミスまたはクラウドに保存できます。 クラウドでは、暗号化されたコンテンツを SharePoint Online および OneDrive for Business に移動できます。 Microsoft はプライベート キーにアクセスできないので、暗号化されたデータは Microsoft に対して不透明なままです。 つまり、暗号化されたドキュメントを Web Apps でオンラインOffice表示できません。
+Double Key Encrypted ドキュメントは、オンプレミスまたはクラウドに保存できます。 クラウドでは、暗号化されたコンテンツを [オンライン] および [SharePoint] にOneDrive for Business。 Microsoft はプライベート キーにアクセスできないので、暗号化されたデータは Microsoft に対して不透明なままです。 つまり、暗号化されたドキュメントを Web Apps でオンラインOffice表示できません。
 
 ## <a name="what-regions-and-languages-is-double-key-encryption-available-in-is-double-key-encryption-available-worldwide"></a>利用可能な二重キー暗号化とは、どの地域と言語ですか? ダブル キー暗号化は世界中で利用できますか?
 

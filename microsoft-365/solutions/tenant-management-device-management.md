@@ -1,5 +1,5 @@
 ---
-title: 手順 5.  エンタープライズ テナント向け Microsoft 365 のデバイスとアプリの管理
+title: 手順 5.  エンタープライズ テナント用のデバイスMicrosoft 365管理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - Ent_Solutions
-description: Microsoft 365 テナントのデバイスとアプリの管理に適切なオプションを展開します。
+description: デバイスとアプリの管理に適切なオプションを展開し、Microsoft 365します。
 ms.openlocfilehash: 0351f6be3f191e1a131da5b0b665a205a0abda8c
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -23,26 +23,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51050996"
 ---
-# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>手順 5.  エンタープライズ テナント向け Microsoft 365 のデバイスとアプリの管理
+# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>手順 5.  エンタープライズ テナント用のデバイスMicrosoft 365管理
 
-Microsoft 365 for enterprise には、モバイル デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) を使用して、組織内のデバイスとそれらのデバイスでのアプリの使用を管理するのに役立つ機能が含まれています。 iOS、Android、macOS、Windows デバイスを管理して、データを含む組織のリソースへのアクセスを保護できます。 たとえば、組織外のユーザーに電子メールが送信されるのを防ぐか、組織のデータを作業者の個人デバイス上の個人データから分離できます。
+Microsoft 365には、モバイル デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) を使用して、デバイスを管理し、組織内のそれらのデバイスでアプリを使用するための機能が含まれています。 iOS、Android、macOS、および Windowsデバイスを管理して、データを含む組織のリソースへのアクセスを保護できます。 たとえば、組織外のユーザーに電子メールが送信されるのを防ぐか、組織のデータを作業者の個人デバイス上の個人データから分離できます。
 
-ユーザー、デバイス、および Microsoft Teams のようなローカルおよびクラウドの生産性アプリの使用の検証と管理の例を次に示します。
+ユーザー、デバイスの検証と管理、およびローカルおよびクラウドの生産性アプリの使用例を次に示Microsoft Teams。
 
 ![ユーザー、デバイス、アプリの検証と管理](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
-組織のリソースをセキュリティで保護するために、Microsoft 365 for enterprise には、デバイスとアプリへのアクセスを管理するための機能が含まれています。 デバイス管理には、次の 2 つのオプションがあります。
+組織のリソースの保護と保護を支援するために、Microsoft 365デバイスとアプリへのアクセスを管理するための機能が含まれています。 デバイス管理には、次の 2 つのオプションがあります。
 
-- Microsoft Intune は、企業向け包括的なデバイスおよびアプリ管理ソリューションです。
-- 基本的なモビリティとセキュリティは、組織内のデバイスを管理するためのすべての Microsoft 365 製品に含まれる Intune サービスのサブセットです。 詳細については、「基本モビリティと [セキュリティの機能」を参照してください](../admin/basic-mobility-security/capabilities.md)。
+- Microsoft Intune、企業向け包括的なデバイスおよびアプリ管理ソリューションです。
+- Basic Mobility and Security ( Basic Mobility and Security) は、組織内のデバイスを管理するためのすべてのMicrosoft 365に含まれる Intune サービスのサブセットです。 詳細については、「基本モビリティと [セキュリティの機能」を参照してください](../admin/basic-mobility-security/capabilities.md)。
 
-Microsoft 365 E3 または E5 を使用している場合は、Intune を使用する必要があります。
+E5 または Microsoft 365 E3がある場合は、Intune を使用する必要があります。
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Microsoft [Intune を使用して、MDM](/mem/intune/fundamentals/planning-guide) または MAM を使用して組織へのアクセスを管理します。 MDM とは、ユーザーが Intune でデバイスを "登録" する場合です。 デバイスが登録された後、デバイスは管理対象デバイスであり、組織のポリシー、ルール、および設定を受け取る可能性があります。 たとえば、特定のアプリのインストール、パスワード ポリシーの作成、VPN 接続のインストールなどです。
+MDM または[MAM Microsoft Intune](/mem/intune/fundamentals/planning-guide)を使用して組織へのアクセスを管理するには、次の情報を使用します。 MDM とは、ユーザーが Intune でデバイスを "登録" する場合です。 デバイスが登録された後、デバイスは管理対象デバイスであり、組織のポリシー、ルール、および設定を受け取る可能性があります。 たとえば、特定のアプリのインストール、パスワード ポリシーの作成、VPN 接続のインストールなどです。
 
-自分の個人用デバイスを持つユーザーは、自分のデバイスを登録したり、Intune と組織のポリシーで管理したりしたくない場合があります。 ただし、組織のリソースとデータを保護する必要があります。 このシナリオでは、MAM を使用してアプリを保護できます。 たとえば、ユーザーがデバイス上の SharePoint にアクセスするときに PIN を入力する必要がある MAM ポリシーを使用できます。
+自分の個人用デバイスを持つユーザーは、自分のデバイスを登録したり、Intune と組織のポリシーで管理したりしたくない場合があります。 ただし、組織のリソースとデータを保護する必要があります。 このシナリオでは、MAM を使用してアプリを保護できます。 たとえば、ユーザーがデバイス上のユーザーにアクセスするときに PIN を入力する必要がある MAM SharePoint使用できます。
 
 また、個人用デバイスと組織が所有するデバイスを管理する方法も決定します。 デバイスの使い方に応じて、デバイスの扱い方を変えてほしい場合があります。
 
@@ -51,11 +51,11 @@ Microsoft [Intune を使用して、MDM](/mem/intune/fundamentals/planning-guide
 Microsoft は、安全で生産性の高い従業員を確保するために [、ID](../security/defender-365-security/microsoft-365-policies-configurations.md) とデバイス アクセスのための一連の構成を提供します。 これらの構成には、次の使用が含まれます。
 
 - Azure AD 条件付きアクセス ポリシー
-- Microsoft Intune デバイスのコンプライアンスとアプリ保護ポリシー
+- Microsoft Intuneコンプライアンスポリシーとアプリ保護ポリシー
 - Azure AD Id Protection ユーザー リスク ポリシー
 - クラウド アプリの追加ポリシー
 
-ユーザー、デバイス、Microsoft Teams のようなローカルおよびクラウドの生産性アプリの使用を検証および制限するこれらの設定とポリシーのアプリケーションの例を次に示します。
+ユーザー、デバイス、およびローカルおよびクラウドの生産性アプリ (Microsoft Teams など) の使用を検証および制限するこれらの設定とポリシーのアプリケーションの例を次に示します。
 
 ![ユーザー、デバイス、およびアプリの使用に関する要件と制限に関する ID とデバイス アクセスの構成](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 

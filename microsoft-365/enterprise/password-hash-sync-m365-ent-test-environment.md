@@ -28,11 +28,11 @@ ms.locfileid: "50921506"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワード ハッシュ同期
 
-*このテスト ラボ ガイドは、Microsoft 365 for enterprise と 365 Enterprise テストOffice両方に使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ環境とテスト環境Microsoft 365両方Office 365 Enterprise使用できます。*
 
 多くの組織では、Azure AD Connect とパスワード ハッシュ同期を使用して、オンプレミスの Active Directory Domain Services (AD DS) フォレスト内のアカウント セットを、Microsoft 365 サブスクリプションの Azure AD テナント内のアカウント セットに同期します。 
 
-この記事では、Microsoft 365 テスト環境にパスワード ハッシュ同期を追加する方法について説明します。この構成は次の結果になります。
+この記事では、テスト環境にパスワード ハッシュ同期を追加する方法Microsoft 365説明します。この構成になります。
   
 ![パスワード ハッシュ同期を実装するシミュレーション エンタープライズ テスト環境](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -42,11 +42,11 @@ ms.locfileid: "50921506"
 - [フェーズ 3: APP1 に Azure AD Connect をインストールする](#phase-3-install-azure-ad-connect-on-app1)
     
 > [!TIP]
-> Microsoft 365 for enterprise Test Lab Guide スタックのすべての記事へのビジュアル マップについては [、「Microsoft 365 for enterprise Test Lab Guide Stack」を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 のシミュレートされたエンタープライズ テスト環境を作成する
 
-[Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md)のシミュレートされたエンタープライズ ベース構成の手順に従います。 結果の構成は次のように表示されます。
+シミュレーションされたエンタープライズ ベース構成[の手順に](simulated-ent-base-configuration-microsoft-365-enterprise.md)従って、Microsoft 365。 結果の構成は次のように表示されます。
   
 ![シミュレートされたエンタープライズ基本構成](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
@@ -61,7 +61,7 @@ ms.locfileid: "50921506"
 
 まず、パブリック DNS 登録プロバイダーと一緒に、現在のドメイン名に基DNS ドメイン新しいパブリック ドメイン名を作成し、サブスクリプションに追加します。 パブリック ドメインに **testlab.<*を使用することをお勧めします* >**。 たとえば、パブリック ドメイン名が **<span>contoso</span>.com** の場合は、パブリック ドメイン名 **<span>testlab</span>.contoso.com を追加します**。
   
-次に、ドメイン登録プロセスを<して、パブリック ドメイン ドメインの **testlab.< >** を Microsoft 365 試用版または有料サブスクリプションに追加します。 これは、パブリック ドメイン ドメインの **testlab.<DNS レコードを追加 *することで構成* >** されます。 詳細については [、「Add a domain to Microsoft 365」を参照してください](../admin/setup/add-domain.md)。
+次に、ドメイン登録プロセスを<して、パブリック ドメイン ドメインの **testlab.Microsoft 365 >** 試用版または有料サブスクリプションに追加します。 これは、パブリック ドメイン ドメインの **testlab.<DNS レコードを追加 *することで構成* >** されます。 詳細については、「Add [a domain to Microsoft 365」 を参照してください](../admin/setup/add-domain.md)。
 
 結果の構成は次のように表示されます。
   
@@ -69,7 +69,7 @@ ms.locfileid: "50921506"
   
 この構成は、次の内容で成立します。
 
-- microsoft 365 E5 試用版または有料サブスクリプションで、DNS ドメイン testlab.<ドメイン名が>されます。
+- testlab.Microsoft 365 E5の試用版または有料サブスクリプションDNS ドメイン、<ドメイン名が>されます。 
 - Azure 仮想ネットワークのサブネット上の DC1、APP1、および CLIENT1 仮想マシンで構成される、インターネットに接続された簡略化された組織イントラネット。
 
 testlab.<*パブリック* ドメイン>に注意してください。
@@ -80,9 +80,9 @@ testlab.<*パブリック* ドメイン>に注意してください。
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>フェーズ 3: APP1 に Azure AD Connect をインストールする
 
-このフェーズでは、APP1 に Azure AD接続ツールをインストールして構成し、動作を確認します。
+このフェーズでは、APP1 に Azure AD Connectツールをインストールして構成し、動作を確認します。
   
-まず、APP1 で Azure AD接続をインストールして構成します。
+最初に、APP1 に Azure AD Connectをインストールして構成します。
 
 1. [Azure portal](https://portal.azure.com) から、全体管理者アカウントでサインインします。その後、TESTLAB\\User1 アカウントで APP1 に接続します。
     
@@ -96,15 +96,15 @@ testlab.<*パブリック* ドメイン>に注意してください。
 
 3. タスク バーで 、[タスク バー] **をInternet Explorer** に移動します [https://aka.ms/aadconnect](https://aka.ms/aadconnect) 。
     
-4. [Microsoft Azure Active Directory 接続] ページで、[ダウンロード] **を選択し**、[実行] を **選択します**。
+4. [ファイルのMicrosoft Azure Active Directory Connect] ページで、[**ダウンロード] を選択し**、[実行] を **選択します**。
     
-5. [Azure **の接続へようこそ] ページAD同意** する] を選択し、[続行] を **選択します**。
+5. [Azure **へのようこそ] ページAD Connect** 同意する] を選択し、[続行] を **選択します**。
     
-6. [Express **Settings] ページで** 、[Express Settings を **使用する] を選択します**。
+6. [Express 設定]**ページで、[** 高速設定を **使用する] を選択します**。
     
-7. [Azure **への接続] ページ** AD[ユーザー名] にグローバル管理者アカウント名を入力し、[パスワード] にパスワードを入力し、[次へ] を選択 **します**。
+7. [Azure **ConnectにAD]** ページで、[ユーザー名] にグローバル管理者アカウント名を入力し、[パスワード]にパスワードを入力し、[次へ] を選択 **します**。
     
-8. [DS **に接続AD]** ページで、[ユーザー名] に **「TESTLAB \\ User1」** と入力し、[パスワード] にパスワードを入力し、[次へ] を **選択します**。  
+8. [DS の **ConnectするADで**、[ユーザー名] に **「TESTLAB \\ User1」** と入力し、[パスワード] にパスワードを入力し、[次へ] を選択 **します**。 
     
 9. [構成の **準備完了] ページで、[** インストール] を **選択します**。
     
@@ -118,7 +118,7 @@ testlab.<*パブリック* ドメイン>に注意してください。
     
 13. **[User1] アカウントを選択** し、[ライセンスとアプリ **] を選択します**。
     
-14. [ **製品ライセンス]** で、場所 (必要に応じて) を選択し、Office **365 E5** ライセンスを無効にしてから **、Microsoft 365 E5 ライセンスを有効** にします。 
+14. [**製品ライセンス]** で、場所 (必要に応じて) を選択し **、E5** ライセンスOffice 365無効にしてから、ライセンスを有効 **Microsoft 365 E5します。** 
 
 15. ページ **の下部** にある [保存] を選択し、[閉じる] を **選択します**。
     
@@ -136,8 +136,8 @@ User1 は、TESTLAB AD DS ドメインのドメイン管理者のアクセス許
 
 この構成は、次の内容で成立します。 
   
-- Microsoft 365 E5 または Office 365 E5 試用版または有料サブスクリプションで、DNS ドメイン TESTLAB.<ドメイン名が>されます。
-- Azure 仮想ネットワークのサブネット上の DC1、APP1、および CLIENT1 仮想マシンで構成される、インターネットに接続された簡略化された組織イントラネット。 Azure AD Connect は APP1 で実行され、TESTLAB AD DS ドメインを Microsoft 365 サブスクリプションの Azure AD テナントに定期的に同期します。
+- Microsoft 365 E5、Office 365のドメイン名が登録されている E5 試用版または有料サブスクリプションDNS ドメイン TESTLAB.<を>します。 
+- Azure 仮想ネットワークのサブネット上の DC1、APP1、および CLIENT1 仮想マシンで構成される、インターネットに接続された簡略化された組織イントラネット。 AZURE AD Connect APP1 で実行され、TESTLAB AD DS ドメインを、ADサブスクリプションの Azure ADテナントにMicrosoft 365します。
 - TESTLAB AD DS ドメインの User1 アカウントは、Azure AD テナントと同期されています。
 
 ## <a name="next-step"></a>次の手順

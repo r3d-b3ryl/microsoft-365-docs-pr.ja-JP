@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 グループの名前付けポリシー
+title: Microsoft 365グループの名前付けポリシー
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,7 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Microsoft 365 グループの名前付けポリシーを作成する方法について説明します。
+description: ユーザー グループの名前付けポリシーを作成するMicrosoft 365します。
 ms.openlocfilehash: 7fd2ea36b536924d85c7ca09b55593161a24dbe4
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,14 +24,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50921050"
 ---
-# <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 グループの名前付けポリシー
+# <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365グループの名前付けポリシー
 
 グループの名前付けポリシーを使用して、組織内のユーザーが作成したグループに一貫性のある名前付け戦略を適用できます。 名前付けポリシーにより、お客様とユーザーがグループの機能、メンバーシップ、地域、グループの作成者を特定できるようになります。 名前付けポリシーは、アドレス帳のグループの分類にも役立ちます。 ポリシーを使用して、特定の単語をグループの名前やエイリアスで使われないようにブロックすることができます。
 
-名前付けポリシーは、すべてのグループワークロード (Outlook、Microsoft Teams、SharePoint、Planner、Yammerなど) で作成されるグループに適用されます。 グループ名とグループのエイリアスの両方に適用されます。 また、ユーザーがグループを作成し、既存のグループのグループ名、エイリアス、説明、またはアバターを編集するときにも適用されます。
+名前付けポリシーは、すべてのグループワークロード (Outlook、Microsoft Teams、SharePoint、Planner、Yammer など) で作成されるグループに適用されます。 グループ名とグループのエイリアスの両方に適用されます。 また、ユーザーがグループを作成し、既存のグループのグループ名、エイリアス、説明、またはアバターを編集するときにも適用されます。
 
 > [!TIP]
-> Microsoft 365 グループの名前付けポリシーは、Microsoft 365 グループにのみ適用されます。 Exchange Online で作成された配布グループには適用されません。 配布グループの名前付けポリシーを作成するには、「 [配布グループの名前付けポリシーを作成する」を参照してください](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
+> グループMicrosoft 365名前付けポリシーは、特定のグループにのみMicrosoft 365されます。 この設定は、グループ内で作成された配布グループにはExchange Online。 配布グループの名前付けポリシーを作成するには、「 [配布グループの名前付けポリシーを作成する」を参照してください](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
 
 グループの名前付けポリシーは、次の機能で構成されています。
 
@@ -41,7 +41,7 @@ ms.locfileid: "50921050"
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
-Microsoft 365 グループに Azure AD 名前付けポリシーを使用するには、1 つ以上の Microsoft 365 グループのメンバーである一意のユーザー (ゲストを含む) ごとに Azure Active Directory Premium P1 ライセンスまたは Azure AD Basic EDU ライセンスを割り当てる必要がありますが、必ずしも割り当てる必要があります。
+Microsoft 365 グループに Azure AD 名前付けポリシーを使用するには、1 つ以上の Microsoft 365 グループのメンバーである一意のユーザー (ゲストを含む) ごとに Azure Active Directory プレミアム P1 ライセンスまたは Azure AD Basic EDU ライセンスを割り当てる必要がありますが、必ずしも割り当てる必要があります。
 
 これは、グループの名前付けポリシーを作成する管理者にも必要です。
 
@@ -63,7 +63,7 @@ Microsoft 365 グループに Azure AD 名前付けポリシーを使用する�
 - User's department = Engineering
 - Created group name = "GRP My Group Engineering"
 
-サポートされている Azure Active Directory (Azure AD) 属性は、[部署]、[会社]、[Office]、[StateOrProvince]、[CountryOrRegion]、および [Title] です。
+サポートAzure Active Directory (Azure AD) 属性は、[Department]、[Company]、[Office]、[StateOrProvince]、[CountryOrRegion]、および [Title] です。
 
 - サポートされていないユーザー属性は、固定文字列 ([postalCode] など) と見なされます。
 
@@ -80,7 +80,7 @@ Microsoft 365 グループに Azure AD 名前付けポリシーを使用する�
   > [!NOTE]
   > ピリオド (.) またはハイフン (-) は、名前の先頭または末尾を除き、グループ名の任意の場所で許可されます。 アンダースコア (_) は、名前の先頭または末尾を含め、グループ名内の任意の場所で許可されます。
 
-- 365 の接続Yammer Office使用している場合は、名前付けポリシーで次の文字を使用しないようにします。 \# \[ \] \<, and \> これらの文字が名前付けポリシーに含Yammerユーザーはグループを作成できません。
+- 接続されているグループでYammer Office 365する場合は、名前付けポリシーで次の文字を使用しないようにします。 \# \[ \] \<, and \> これらの文字が名前付けポリシーに含Yammerユーザーはグループを作成できません。
 
 > [!Tip]
 > - 短い文字列をサフィックスとして使用します。
@@ -120,14 +120,14 @@ Microsoft 365 グループに Azure AD 名前付けポリシーを使用する�
 
 名前付けポリシーを設定するには、次の方法を使用します。
 
-1. [Azure Active Directory の [管理]](https://aad.portal.azure.com)で **、[グループ**] を **クリックします**。
-2. [設定 **] で**、[名前付 **けポリシー] をクリックします**。
+1. [[Azure Active Directory]](https://aad.portal.azure.com)の [管理]**で、[グループ**] を **クリックします**。
+2. [名前 **設定]** で、[名前付けポリシー **] をクリックします**。
 3. [グループの **名前付けポリシー] タブを選択** します。
 4. [ **現在のポリシー]** で、プレフィックスまたはサフィックスまたは両方を必要とするか選択し、適切なチェック ボックスをオンにします。
 5. 行ごとに **[属性]** **と [文字列** ] の間を選択し、属性または文字列を指定します。
 6. 必要なプレフィックスとサフィックスを追加した場合は、[保存] を **クリックします**。
 
-![Azure Active Directory のグループ名前付けポリシー設定のスクリーンショット](../media/groups-naming-policy-azure.png)
+![グループの名前付けポリシー設定のスクリーンショット (Azure Active Directory](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>関連項目
 

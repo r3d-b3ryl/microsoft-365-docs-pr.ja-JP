@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceInfo テーブル
 description: 高度な検索スキーマの DeviceInfo テーブルで、OS、コンピューター名、その他のコンピューター情報について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、machineinfo、DeviceInfo、デバイス、マシン、OS、プラットフォーム、ユーザー
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、machineinfo、DeviceInfo、デバイス、マシン、OS、プラットフォーム、ユーザー
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -45,21 +45,21 @@ ms.locfileid: "52023131"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `DeviceId` | 文字列 | コンピューターの一意識別子 |
-| `DeviceName` | 文字列 | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ClientVersion` | 文字列 | コンピューターで実行されているエンドポイント エージェントまたはセンサーのバージョン |
-| `PublicIP` | 文字列 | オンボード コンピューターが Microsoft Defender for Endpoint サービスに接続するために使用するパブリック IP アドレス。 これは、コンピューター自体の IP アドレス、NAT デバイス、またはプロキシである可能性があります。 |
+| `DeviceId` | string | コンピューターの一意識別子 |
+| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `ClientVersion` | string | コンピューターで実行されているエンドポイント エージェントまたはセンサーのバージョン |
+| `PublicIP` | string | オンボード コンピューターが Microsoft Defender for Endpoint サービスに接続するために使用するパブリック IP アドレス。 これは、コンピューター自体の IP アドレス、NAT デバイス、またはプロキシである可能性があります。 |
 | `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
-| `OSPlatform` | 文字列 | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 など、同じファミリ内のバリエーションを含む特定のオペレーティング システムを示します。 |
-| `OSBuild` | 文字列 | コンピューターで実行されているオペレーティング システムのバージョンをビルドする |
-| `IsAzureADJoined` | ブール値 | コンピューターが Azure Active Directory に参加するかどうかを示すブール値インジケーター |
-| `AadObjectId` | 文字列 | Azure のデバイスの一意の識別子AD |
-| `LoggedOnUsers` | 文字列 | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
-| `RegistryDeviceTag` | 文字列 | レジストリを介して追加されたコンピューター タグ |
+| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 10および Windows 7 など) を示します。 |
+| `OSBuild` | string | コンピューターで実行されているオペレーティング システムのバージョンをビルドする |
+| `IsAzureADJoined` | boolean | コンピューターがコンピューターに参加しているかどうかを示すブールAzure Active Directory |
+| `AadObjectId` | string | Azure のデバイスの一意の識別子AD |
+| `LoggedOnUsers` | string | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
+| `RegistryDeviceTag` | string | レジストリを介して追加されたコンピューター タグ |
 | `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |
 | `MachineGroup` | string | コンピューターのコンピューター グループ。 このグループは、役割ベースのアクセス制御によってコンピューターへのアクセスを決定するために使用されます。 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
-|`AdditionalFields` | 文字列 | JSON 配列形式のイベントに関する追加情報 |
+|`AdditionalFields` | string | JSON 配列形式のイベントに関する追加情報 |
 
 この表は、定期的なレポートまたはデバイスからの信号であるハートビートに基づくデバイス `DeviceInfo` 情報を提供します。 15 分ごとに、デバイスは頻繁に変更される属性を含む部分的なハートビートを送信します `LoggedOnUsers` 。 1 日に 1 回、デバイスの属性を含む完全なハートビートが送信されます。
 

@@ -26,7 +26,7 @@ ms.locfileid: "50928426"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>組織内のデータ プライバシー インシデントの監視と対応
 
-Microsoft 365 の機能を使用すると、関連する機能を運用する組織内のデータ プライバシー インシデントを監視、調査、および対応できます。 これらの各ドキュメントのプロセス、手順、その他のドキュメントを持つことは、規制機関へのコンプライアンスを実証する上でも重要な場合があります。
+Microsoft 365機能を運用する場合、組織内のデータ プライバシー インシデントの監視、調査、対応に役立つ機能を利用できます。 これらの各ドキュメントのプロセス、手順、その他のドキュメントを持つことは、規制機関へのコンプライアンスを実証する上でも重要な場合があります。
 
 これには、次のものが含まれます。 
 
@@ -56,7 +56,7 @@ Microsoft 365 の機能を使用すると、関連する機能を運用する組
 
 組織は、他のコンプライアンスニーズやビジネス上の理由など、他の目的で監視および対応活動を実行することもできます。 データプライバシーの監視と対応のスキームを確立するには、全体的な監視と対応の計画、実装、および管理の一環として行う必要があります。
 
-データ プライバシー規制に関する Microsoft 365 の監視と対応のスキームを開始するために、次のような質問に答える Microsoft 365 の便利な機能を示します。 
+データ プライバシー規制に関する Microsoft 365 の監視と対応のスキームを開始するために、この記事では、Microsoft 365 で次のような質問に答えるのに役立つ機能を一覧表示します。 
 
 - さまざまなデータ型とソースに対して、どのような種類の監視、調査、レポートの手法が利用できますか?
 - データ主体要求 (DSR) と、匿名化、やり直し、削除などの修復アクションを処理するために必要なメカニズム。
@@ -72,12 +72,12 @@ Microsoft 365 の機能を使用すると、関連する機能を運用する組
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR と CCPA のデータ主体要求
 
-Microsoft 365 での DSR への応答の詳細については [、「GDPR](/compliance/regulatory/gdpr-dsr-Office365) および CCPA のデータ主体要求」を参照してください。
+詳細[については、「GDPR](/compliance/regulatory/gdpr-dsr-Office365)および CCPA のデータ 主体要求」を参照してください。このサイトの DSR へのMicrosoft 365。
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Microsoft Stream で削除されたユーザーを管理する
 
-Microsoft Stream の場合、ユーザーが Azure Active Directory (Azure AD) から削除された場合、その時点より前に投稿された Stream ビデオに名前が関連付けられている場合、そのユーザーの電子メール アドレスはビデオに関連付けられたままです。 「 [削除したユーザーを Microsoft Stream から管理して削除](/stream/managing-deleted-users) する」を参照してください。
+Microsoft Stream の場合、ユーザーが Azure Active Directory (Azure AD) から削除された場合、その時点より前に投稿された Stream ビデオに自分の名前が関連付けられている場合、そのユーザーの電子メール アドレスはビデオに関連付けられたままです。 「 [削除したユーザーを Microsoft Stream から管理して削除](/stream/managing-deleted-users) する」を参照してください。
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>調査ツールとしてのインサイダー リスク管理
 
-[Microsoft 365](../compliance/insider-risk-management.md) の Insider リスク管理は、組織内の危険なアクティビティを検出、調査、および実行することで、内部リスクを最小限に抑えるための Microsoft コンプライアンス管理センターの機能です。
+[Microsoft 365](../compliance/insider-risk-management.md)の Insider リスク管理は、組織内の危険なアクティビティを検出、調査、および実行することで、内部リスクを最小限に抑えるための Microsoft コンプライアンス管理センターの機能です。

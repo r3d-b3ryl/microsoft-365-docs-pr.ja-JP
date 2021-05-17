@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 でディレクトリ同期の状態を表示する
+title: '[ディレクトリ同期の状態を表示する] Microsoft 365'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
-description: この記事では、365 でディレクトリ同期の状態を確認するOfficeします。
+description: この記事では、ディレクトリ同期の状態を確認する方法について、Office 365。
 ms.openlocfilehash: cbaae8bbd31f6124c2b0f4984b9a625ffbde538f
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,31 +28,31 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924662"
 ---
-# <a name="view-directory-synchronization-status-in-microsoft-365"></a>Microsoft 365 でディレクトリ同期の状態を表示する
+# <a name="view-directory-synchronization-status-in-microsoft-365"></a>[ディレクトリ同期の状態を表示する] Microsoft 365
 
-オンプレミスの Active Directory ドメイン サービス (AD DS) を Azure Active Directory (Azure AD) と統合した場合は、オンプレミス環境を Microsoft 365 と同期することで、同期の状態を確認できます。
+オンプレミスの Active Directory ドメイン サービス (AD DS) を Azure Active Directory (Azure AD) と統合した場合は、オンプレミス環境と Microsoft 365 を同期することで、同期の状態を確認できます。
   
 ## <a name="view-directory-synchronization-status"></a>ディレクトリ同期の状態を表示する
 
-- [Microsoft 365](https://admin.microsoft.com)管理センターにサインインし、ホーム ページで **[DirSync Status]** を選択します。
+- 管理センターにサインイン [Microsoft 365ホーム](https://admin.microsoft.com)ページで **[DirSync Status]** を選択します。
 - または、[ユーザー] [アクティブな **ユーザー]** に移動し、[アクティブなユーザー] ページで [その他のディレクトリ \> 同期] \> **を選択します**。 [ディレクトリ同期 **] ウィンドウで****、[DirSync 管理に移動] を選択します**。
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>[ディレクトリ同期の管理] ページの情報
 
 次の表に、ページで情報を取得できる機能の一覧を示します。
   
-ディレクトリ同期に問題がある場合は、このページにもエラーが表示されます。 発生する可能性のあるさまざまなエラーの詳細については [、「Microsoft 365 でディレクトリ同期エラーを識別する」を参照してください](identify-directory-synchronization-errors.md)。
+ディレクトリ同期に問題がある場合は、このページにもエラーが表示されます。 発生する可能性のあるさまざまなエラーの詳細については、「ディレクトリ同期エラーを特定する」を参照[Microsoft 365。](identify-directory-synchronization-errors.md)
   
 |アイテム|目的|
 |:-----|:-----|
-|**ドメインが検証済み** | 自分が所有している検証済みの Microsoft 365 テナント内のドメインの数。 |
+|**ドメインが検証済み** | ユーザーが所有しているMicrosoft 365しているドメインの数。 |
 |**ドメインが検証されていない** | 追加したが、検証されていないドメイン。 |
 |**ディレクトリ同期が有効** |True または False。 ディレクトリ同期を有効にしたかどうかを指定します。 |
 |**最新のディレクトリ同期** | ディレクトリ同期が実行された最後の時間。 前回の同期が 3 日以上前の場合は、警告とトラブルシューティング ツールへのリンクが表示されます。 |
-|**パスワード同期が有効** | True または False。 オンプレミスと Microsoft 365 テナントの間でパスワード ハッシュ同期を行うかどうかを指定します。 |
+|**パスワード同期が有効** | True または False。 オンプレミステナントとテナント間でパスワード ハッシュ同期を行うかどうかをMicrosoft 365します。 |
 |**最後のパスワード同期** | 前回のパスワード ハッシュ同期が実行された時間。 前回の同期が 3 日以上前の場合は、警告とトラブルシューティング ツールへのリンクが表示されます。 |
-|**ディレクトリ同期クライアントのバージョン** | Connect の新しいバージョンの Azure ADリンクが含まれる。 |
-|**ディレクトリ同期サービス アカウント** | Microsoft 365 ディレクトリ同期サービス アカウントの名前を表示します。 |
+|**ディレクトリ同期クライアントのバージョン** | 新しいバージョンの Azure アプリケーションがリリースされている場合はAD Connectリンクが含まれる。 |
+|**ディレクトリ同期サービス アカウント** | ディレクトリ同期サービス アカウントMicrosoft 365を表示します。 |
 |||
 
 ## <a name="monitor-synchronization-health"></a>同期の状態を監視する

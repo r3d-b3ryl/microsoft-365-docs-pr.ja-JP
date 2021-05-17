@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 グループ、Teams、および SharePoint でのアクセスの管理
+title: グループ、グループ、Microsoft 365、およびTeamsのアクセスを管理SharePoint
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,7 +14,7 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Microsoft 365 グループ、Teams、および SharePoint でのアクセスの管理について説明します。
+description: グループ、グループ、グループ、Microsoft 365、およびTeamsアクセスの管理SharePoint。
 ms.openlocfilehash: 44b90e461c81875fa5ccf728c890d5eaebf7d613
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,25 +22,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50922282"
 ---
-# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Microsoft 365 グループ、Teams、および SharePoint でのアクセスの管理
+# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>グループ、グループ、Microsoft 365、およびTeamsのアクセスを管理SharePoint
 
-ユーザーがグループ、チーム、および SharePoint のリソースにアクセスする方法を管理できる多くのコントロールがあります。 これらのオプションを確認し、ビジネス ニーズ、データの感度、ユーザーが共同作業に必要なユーザーの範囲にマップする方法を検討します。
+ユーザーがグループ、チーム、およびグループ内のリソースにアクセスする方法を管理できる多くのコントロールSharePoint。 これらのオプションを確認し、ビジネス ニーズ、データの感度、ユーザーが共同作業に必要なユーザーの範囲にマップする方法を検討します。
 
-次の表に、Microsoft 365 で使用できるアクセス制御のクイック リファレンスを示します。 詳細については、次のセクションで説明します。
+次の表は、次の表で使用できるアクセス制御のクイック リファレンスを示Microsoft 365。 詳細については、次のセクションで説明します。
 
-|カテゴリ|説明|Reference|
+|カテゴリ|説明|参照|
 |:-------|:----------|:--------|
 |メンバーシップ|||
-||プライベート チームの検出|[Microsoft Teams でプライベート チームの検出を管理する](/microsoftteams/manage-discovery-of-private-teams)|
-||ルールに基づく動的グループ メンバーシップ|[Azure Active Directory で動的グループを作成または更新する](/azure/active-directory/users-groups-roles/groups-create-rule)|
+||プライベート チームの検出|[プライベート チームの検出を管理Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)|
+||ルールに基づく動的グループ メンバーシップ|[グループ内で動的グループを作成または更新Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||ファイル、フォルダー、サイトを共有できるユーザーを制御します。|[アクセス要求の設定と管理](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |条件付きアクセス|||
 ||多要素認証|[Azure AD 多要素認証](/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||グループ、チーム、またはサイトの感度に基づいてデバイス アクセスを制御します。|[秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||管理されていないデバイスのサイト アクセスを制限します。|[管理されていないデバイスからの SharePoint アクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)|
+||管理されていないデバイスのサイト アクセスを制限します。|[管理SharePointデバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)|
 ||場所に基づいてサイト アクセスを制御する|[ネットワークの場所に基づいて SharePoint と OneDrive のデータへのアクセスを制御する](/sharepoint/control-access-based-on-network-location)|
 |ゲスト アクセス|||
-||指定したドメインからの SharePoint 共有を許可またはブロックします。|[ドメイン別の SharePoint および OneDrive コンテンツの共有を制限する](/sharepoint/restricted-domains-sharing)|
+||指定したドメインSharePoint共有を許可またはブロックします。|[ドメイン別の SharePoint および OneDrive コンテンツの共有を制限する](/sharepoint/restricted-domains-sharing)|
 ||指定したドメインからチームまたはグループのメンバーシップを許可またはブロックします。|[特定の組織からの B2B ユーザーへの招待を許可またはブロックする](/azure/active-directory/b2b/allow-deny-list)|
 ||匿名共有を防止します。|[[すべてのユーザー] リンクをオフにする](./share-limit-accidental-exposure.md#turn-off-anyone-links)|
 ||匿名アクセス リンクのアクセス許可を制御します。|[[ユーザー] リンクのリンクのアクセス許可を設定する](./best-practices-anonymous-sharing.md#set-link-permissions)|
@@ -52,26 +52,26 @@ ms.locfileid: "50922282"
 |ユーザーの管理|||
 ||チームとグループのメンバーシップを定期的に確認します。|[Azure ADレビューとは?](/azure/active-directory/governance/access-reviews-overview)|
 ||グループとチームへのアクセス管理を自動化します。|[Azure のライセンスADとは?](/azure/active-directory/governance/entitlement-management-overview)|
-||Teams でプライベート チャネルを作成するユーザーを許可またはブロックします。|[Microsoft Teams のプライベート チャネルのライフ サイクルを管理する](/MicrosoftTeams/private-channels-life-cycle-management)|
+||ユーザーによるプライベート チャネルの作成を許可またはブロックTeams。|[プライベート チャネルのライフ サイクルを管理Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>メンバーシップ
 
 チームとグループのメンバーシップは、所有者によって制御されます。 メンバーは他のユーザーを招待できますが、招待は承認のために所有者に送信されます。 パブリック チームとグループは組織内の誰でも見つけられますが、プライベート チームとグループを検出できるかどうかを制御できます。
 
-- [Microsoft Teams でプライベート チームの検出を管理する](/microsoftteams/manage-discovery-of-private-teams)
+- [プライベート チームの検出を管理Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)
 
-グループまたはチームのメンバーシップは、部署などの一部の条件に基づいて動的に管理できます。 この場合、メンバーと所有者はチームにユーザーを招待できません。 動的グループは、Azure Active Directory で定義したメタデータを使用して、グループのメンバーを制御します。 使用しているメタデータが完全で、メタデータが正しくないと、ユーザーがグループから抜け出したり、正しくないユーザーが追加される可能性があります。
+グループまたはチームのメンバーシップは、部署などの一部の条件に基づいて動的に管理できます。 この場合、メンバーと所有者はチームにユーザーを招待できません。 動的グループは、グループ内で定義したメタデータAzure Active Directoryグループのメンバーを制御します。 使用しているメタデータが完全で、メタデータが正しくないと、ユーザーがグループから抜け出したり、正しくないユーザーが追加される可能性があります。
 
-- [Azure Active Directory で動的グループを作成または更新する](/azure/active-directory/users-groups-roles/groups-create-rule)
+- [グループ内で動的グループを作成または更新Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
-SharePoint サイトは、グループまたはチーム のメンバーシップとは別に、所有者、メンバー、および訪問者を追加する機能を提供します。 要件に応じて、ユーザーをサイトに招待できるユーザーを制限できます。 また、特定のサイト内の情報の感度に応じて、ファイルとフォルダーを共有できるユーザーを制限することもできます。 これらの制限は、チーム、グループ、またはサイトの所有者によって構成されます。
+SharePointサイトでは、グループまたはチームのメンバーシップとは別に、所有者、メンバー、および訪問者を追加できます。 要件に応じて、ユーザーをサイトに招待できるユーザーを制限できます。 また、特定のサイト内の情報の感度に応じて、ファイルとフォルダーを共有できるユーザーを制限することもできます。 これらの制限は、チーム、グループ、またはサイトの所有者によって構成されます。
 
 - [アクセス要求の設定と管理](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)
 
 
 ## <a name="conditional-access"></a>条件付きアクセス
 
-Microsoft 365 では、組織内外の両方のユーザーに多要素認証を要求できます。 ユーザーに認証の第 2 の要素を求めるメッセージが表示される状況には、多くのオプションがあります。 組織に多要素認証を展開することを強くお勧めします。
+このMicrosoft 365、組織内外の両方のユーザーに多要素認証を要求できます。 ユーザーに認証の第 2 の要素を求めるメッセージが表示される状況には、多くのオプションがあります。 組織に多要素認証を展開することを強くお勧めします。
 
 - [Azure AD 多要素認証](/azure/active-directory/authentication/concept-mfa-howitworks)
 
@@ -79,7 +79,7 @@ Microsoft 365 では、組織内外の両方のユーザーに多要素認証を
 
 - [秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)
 
-SharePoint では、指定したネットワークの場所からサイトへのアクセスを制限できます。
+このSharePoint、指定したネットワークの場所からのサイトへのアクセスを制限できます。
 
 - [ネットワークの場所に基づいて SharePoint と OneDrive のデータへのアクセスを制御する](/sharepoint/control-access-based-on-network-location)
 
@@ -88,20 +88,20 @@ SharePoint では、指定したネットワークの場所からサイトへの
 
 - [条件付きアクセスの展開を計画する](/azure/active-directory/conditional-access/plan-conditional-access)
 
-- [Microsoft Intune の概要](/mem/intune/fundamentals/what-is-intune)
+- [Microsoft Intune概要](/mem/intune/fundamentals/what-is-intune)
 
-- [管理されていないデバイスからの SharePoint アクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)
+- [管理SharePointデバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)
 
 
 ## <a name="guest-access"></a>ゲスト アクセス
 
-電子メール アドレスのドメインに基づいてゲストを制限できます。 SharePoint は、組織全体およびサイト固有のドメイン制限設定を提供します。 グループと Teams は、Azure のドメイン許可リストと拒否リストを使用AD。 望ましくない共有を避け、一貫性のあるユーザー エクスペリエンスを確保するために、両方の設定を必ず構成してください。
+電子メール アドレスのドメインに基づいてゲストを制限できます。 SharePointは、組織全体およびサイト固有のドメイン制限設定を提供します。 グループとグループTeams Azure サーバーでドメイン許可リストと拒否リストを使用AD。 望ましくない共有を避け、一貫性のあるユーザー エクスペリエンスを確保するために、両方の設定を必ず構成してください。
 
 - [ドメイン別の SharePoint および OneDrive コンテンツの共有を制限する](/sharepoint/restricted-domains-sharing)
 
 - [特定の組織からの B2B ユーザーへの招待を許可またはブロックする](/azure/active-directory/b2b/allow-deny-list)
 
-Microsoft 365 では、すべての共有リンクを使用してファイルとフォルダーを匿名 *で* 共有できます。 *リンク* は誰でも転送可能で、リンクを持つユーザーは共有アイテムにアクセスできます。 データの感度に応じて、リンクを完全にオフにしたり、リンクのアクセス許可を読み取り専用に制限したり、そのリンクの有効期限を設定したりなど、すべてのユーザーのリンクの使用方法を管理する方法を検討してください。
+Microsoft 365リンクを使用して、ファイルとフォルダーの匿名共有 *を* 許可します。 *リンク* は誰でも転送可能で、リンクを持つユーザーは共有アイテムにアクセスできます。 データの感度に応じて、リンクを完全にオフにしたり、リンクのアクセス許可を読み取り専用に制限したり、そのリンクの有効期限を設定したりなど、すべてのユーザーのリンクの使用方法を管理する方法を検討してください。
 
 - [[すべてのユーザー] リンクをオフにする](./share-limit-accidental-exposure.md#turn-off-anyone-links)
 
@@ -117,7 +117,7 @@ Microsoft 365 では、すべての共有リンクを使用してファイルと
 
 - [外部共有を指定したセキュリティ グループに制限する](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
 
-グループと Teams には、ゲスト アクセスを許可または拒否する組織レベルの設定があります。 [Microsoft PowerShell を使用](per-group-guest-access.md)して、特定のチームまたはグループへのゲスト アクセスを制限することができますが、これを行う際には、感度ラベルを使用することをお勧めします。 感度ラベルを使用すると、適用されたラベルに基づいてゲスト アクセスを自動的に許可または拒否できます。
+グループとグループTeams、ゲスト アクセスを許可または拒否する組織レベルの設定があります。 [Microsoft PowerShell を使用](per-group-guest-access.md)して、特定のチームまたはグループへのゲスト アクセスを制限することができますが、これを行う際には、感度ラベルを使用することをお勧めします。 感度ラベルを使用すると、適用されたラベルに基づいてゲスト アクセスを自動的に許可または拒否できます。
 
 - [秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)
 
@@ -125,13 +125,13 @@ Microsoft 365 では、すべての共有リンクを使用してファイルと
 
 - [ゲスト アクセス レビューを設定する](/microsoft-365/solutions/create-secure-guest-sharing-environment#set-up-guest-access-reviews)
 
-Microsoft 365 は、情報を共有するさまざまな方法を提供しています。 機密情報を持ち、共有方法を制限する場合は、共有を制限するためのオプションを確認します。
+Microsoft 365は、情報を共有するさまざまな方法を提供します。 機密情報を持ち、共有方法を制限する場合は、共有を制限するためのオプションを確認します。
 
 - [Microsoft 365 の共有を制限する](./microsoft-365-limit-sharing.md)
 
 追加情報:
 
-- [Microsoft 365 とセキュリティで保護された共同作業を設定する](./setup-secure-collaboration-with-teams.md)
+- [Microsoft 365 を使用してセキュリティで保護された共同作業を設定する](./setup-secure-collaboration-with-teams.md)
 
 - [認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](./best-practices-anonymous-sharing.md)
 
@@ -151,15 +151,15 @@ Microsoft 365 は、情報を共有するさまざまな方法を提供してい
 
 - [Azure のライセンスADとは?](/azure/active-directory/governance/entitlement-management-overview)
 
-Teams のプライベート チャネルを使用すると、チーム メンバーのサブセット間でスコープ設定された会話とファイル共有が可能になります。 特定のビジネス ニーズに応じて、この機能を許可またはブロックできます。
+プライベート チャネルは、Teamsメンバーのサブセット間のスコープ付き会話とファイル共有を可能にします。 特定のビジネス ニーズに応じて、この機能を許可またはブロックできます。
 
 - [Microsoft Teams のプライベート チャネル](/MicrosoftTeams/private-channels)
 
-- [Microsoft Teams のプライベート チャネルのライフ サイクルを管理する](/MicrosoftTeams/private-channels-life-cycle-management)
+- [プライベート チャネルのライフ サイクルを管理Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)
 
 追加情報:
 
-- [Azure Active Directory ID ガバナンス](/azure/active-directory/governance)
+- [Azure Active DirectoryID ガバナンス](/azure/active-directory/governance)
 
 ## <a name="related-topics"></a>関連項目
 
@@ -169,7 +169,7 @@ Teams のプライベート チャネルを使用すると、チーム メンバ
 
 [Microsoft Teams のセキュリティとコンプライアンス](/microsoftteams/security-compliance-overview)
 
-[SharePoint で共有設定を管理する](/sharepoint/turn-external-sharing-on-or-off)
+[[共有設定の管理] SharePoint](/sharepoint/turn-external-sharing-on-or-off)
 
 [Yammer で外部ネットワークを作成して管理する](/yammer/work-with-external-users/create-and-manage-an-external-network)
 

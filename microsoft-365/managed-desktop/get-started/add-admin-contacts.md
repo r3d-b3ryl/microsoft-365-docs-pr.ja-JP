@@ -18,40 +18,40 @@ ms.locfileid: "50925894"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>管理ポータルで、管理者の連絡先を、追加および確認する
 
-Microsoft Managed Desktop サービスが顧客と通信する方法は複数あります。 コミュニケーションを合理化し、適切なユーザーと確認するには、一連の管理者連絡先を提供する必要があります。 Microsoft Managed Desktop IT Operations は、テナントのトラブルシューティングに関する問題についてこれらのユーザーに問い合わせています。
+サービスが顧客とMicrosoft マネージド デスクトップする方法は複数あります。 コミュニケーションを合理化し、適切なユーザーと確認するには、一連の管理者連絡先を提供する必要があります。 Microsoft マネージド デスクトップIT 運用は、テナントのトラブルシューティングに関する問題について、これらのユーザーに問い合わせています。
 
 > [!IMPORTANT]
-> 管理ポータルにこれらの連絡先を既に追加している可能性があります。 その場合は、重大なインシデントが発生した場合に Microsoft Managed **Desktop** が連絡先リストにアクセスできる必要がありますので、連絡先リストが正確か確認してください。
+> 管理ポータルにこれらの連絡先を既に追加している可能性があります。 その場合は、重大なインシデントが発生した場合Microsoft マネージド デスクトップ連絡先 **リストが正確** である必要があります。
 
-## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Microsoft Managed Desktop Admin ポータルの Azure Active Directory アクセス
+## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory管理ポータルMicrosoft マネージド デスクトップアクセス権
 
-Microsoft Managed Desktop Admin ポータルでは、ポータルにアクセスするユーザーが次の Azure Active Directory (AD) の役割のいずれかを持っている必要があります。
+Microsoft マネージド デスクトップ管理ポータルでは、ポータルにアクセスするユーザーに次のいずれかの役割 (Azure Active Directory) AD必要があります。
 - グローバル管理者
 - Intune サービス管理者
 - グローバル閲覧者
 - サービス サポート管理者
 
-組織を Microsoft Managed Desktop に登録するには、グローバル管理者が必要です。 5 つの役割はすべて、タスクを開始および表示するための管理ポータル内で同じアクセス権を持ちます。 Azure Active Directory でのこれらのロールの割り当てAD詳細については [、「Administrator role permissions in Azure Active Directory」を参照してください](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
+グローバル管理者は、組織を登録する管理者である必要Microsoft マネージド デスクトップ。 5 つの役割はすべて、タスクを開始および表示するための管理ポータル内で同じアクセス権を持ちます。 Azure AD でこれらのロールを割り当てる方法の詳細については、「管理者ロールのアクセス許可」を[参照](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)Azure Active Directory。 
 
 ## <a name="admin-contact-areas-of-focus"></a>管理者の連絡先のフォーカス領域
 
-管理者の連絡先は、質問に答え、さまざまな分野で決定を下す最適な人物またはグループである必要があります。 **Microsoft Managed Desktop Operations は、お客様から送信されたサポート要求に関する質問について、管理者の連絡先に問い合わせします。** これらの管理者の連絡先は、サポート要求の更新と新しいメッセージに関する通知を受け取る。 これらの領域には、次のものが含まれます。
+管理者の連絡先は、質問に答え、さまざまな分野で決定を下す最適な人物またはグループである必要があります。 **Microsoft マネージド デスクトップ操作は、顧客が要求したサポート要求に関する質問について、これらの管理者の連絡先に連絡します。** これらの管理者の連絡先は、サポート要求の更新と新しいメッセージに関する通知を受け取る。 これらの領域には、次のものが含まれます。
 
 フォーカス領域 | に関する質問
 --- | ---
 アプリのパッケージ化 | アプリのパッケージ化のトラブルシューティング
-デバイス | デバイスの正常性、Microsoft Managed Desktop デバイスでのトラブルシューティング
-セキュリティ | Microsoft Managed Desktop デバイスに関するセキュリティの問題のトラブルシューティング
-IT ヘルプ デスク | Microsoft Managed Desktop サポート領域外でサポート スタッフがユーザー チケットを引き渡す場合 
+デバイス | デバイスの正常性、デバイスとデバイスMicrosoft マネージド デスクトップトラブルシューティング
+セキュリティ | デバイスのセキュリティに関するMicrosoft マネージド デスクトップトラブルシューティング
+IT ヘルプ デスク | サポートスタッフがサポートエリア外でユーザーチケットを引き渡Microsoft マネージド デスクトップ場合 
 その他 | 他の領域でカバーされていない問題の場合
 
-**これらの連絡先を選択するユーザーは、Microsoft Managed Desktop 環境に関する意思決定を行う知識と権限を持っている必要があります。** Microsoft Managed Desktop 環境をオンボードすると、ローカルのヘルプデスクとセキュリティの連絡先を追加するように求めるメッセージが表示されます。 
+**これらの連絡先に対して選択するユーザーは、自分の環境に関する意思決定を行う知識と権限を持Microsoft マネージド デスクトップです。** アプリ環境をオンボードMicrosoft マネージド デスクトップ、ローカル のヘルプデスクとセキュリティの連絡先を追加するように求めるメッセージが表示されます。 
 
 サポート要求を送信する場合は、 [管理者の連絡先が必要です](../service-description/support.md)。 サポート要求のフォーカス領域の管理者連絡先が必要です。 
 
 **管理者連絡先を追加するには**
 
-1.  [Microsoft Managed Desktop 管理ポータルにサインインします](https://aka.ms/mwaasportal)。 
+1.  管理者ポータルに[Microsoft マネージド デスクトップします](https://aka.ms/mwaasportal)。 
 
 2.  [サポート **] で**、[管理者連絡先] **を選択します**。 
 
@@ -67,7 +67,7 @@ IT ヘルプ デスク | Microsoft Managed Desktop サポート領域外でサ�
 
 5. フォーカス領域ごとに繰り返します。 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft Managed Desktop の使用を開始する手順
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
 
 1. 管理ポータルで管理者連絡先を追加して確認する (このトピック)
 2. [条件付きアクセスを調整する](conditional-access.md)

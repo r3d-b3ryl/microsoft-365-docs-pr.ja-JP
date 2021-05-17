@@ -1,5 +1,5 @@
 ---
-title: PowerShell で Microsoft 365 ユーザー アカウントを表示する
+title: PowerShell Microsoft 365ユーザー アカウントを表示する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: PowerShell を使用してさまざまな方法で Microsoft 365 ユーザー アカウントを表示、一覧表示、または表示する方法について説明します。
+description: PowerShell を使用して、さまざまな方法でユーザー アカウントMicrosoft 365表示、一覧表示、または表示する方法について説明します。
 ms.openlocfilehash: de91195afeb8480bf231d9536e4b3a94502a6da1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924650"
 ---
-# <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell で Microsoft 365 ユーザー アカウントを表示する
+# <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントを表示する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 管理センターを使用して、Microsoft 365 テナントのアカウントを表示できます。 Microsoft 365 用 PowerShell を使用すると、これを有効にできますが、追加の機能も提供します。
+管理センターの Microsoft 365を使用して、テナントのアカウントMicrosoft 365できます。 PowerShell for Microsoft 365これを有効にし、追加の機能も提供します。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 ### <a name="view-all-accounts"></a>すべてのアカウントを表示する
 
@@ -76,7 +76,7 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 **既定では、Get-AzureADUser コマンドレット** は、アカウントの *ObjectID、DisplayName、* および *UserPrincipalName* プロパティのみを表示します。 
 
-表示するプロパティの詳細を選択するには **、Select** コマンドレットを **Get-AzureADUser** コマンドレットと組み合わせて使用します。 2 つのコマンドレットを組み合わせるには、"pipe" 文字 ("|") を使用して、Azure Active Directory PowerShell for Graph に 1 つのコマンドの結果を取得し、次のコマンドに送信するように指示します。 すべてのユーザー アカウントの DisplayName、Department、UsageLocation を表示する *コマンド* の例を次に示します。  
+表示するプロパティの詳細を選択するには **、Select** コマンドレットを **Get-AzureADUser** コマンドレットと組み合わせて使用します。 2 つのコマンドレットを組み合わせるには、"パイプ" 文字 ("|") を使用して、Azure Active Directory PowerShell に Graph のコマンドの結果を取得し、次のコマンドに送信します。 すべてのユーザー アカウントの DisplayName、Department、UsageLocation を表示する *コマンド* の例を次に示します。  
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
@@ -104,9 +104,9 @@ Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayNam
 
 ユーザー アカウントには、次の 2 つのソースがあります。 
 
-- Windows Server Active Directory (AD) は、オンプレミスのユーザーからクラウドAD同期するアカウントです。
+- Windowsサーバー Active Directory (AD) は、オンプレミスのサーバーからクラウドAD同期するアカウントです。
 
-- Azure Active Directory (Azure AD) ADアカウントは、クラウドに直接作成されます。
+- Azure Active Directory (Azure AD) AD、クラウドに直接作成されるアカウントです。
 
 
 次のコマンドは、属性 *DirSyncEnabled* を True に設定しているすべてのユーザーを取得するように PowerShell に指示 *します*。 この機能を使用して、オンプレミスのアカウントから同期しているアカウントをAD。
@@ -123,13 +123,13 @@ Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
 
 ### <a name="view-accounts-based-on-a-common-property"></a>共通プロパティに基づいてアカウントを表示する
 
-表示するアカウントの一覧を選択するには **、Get-AzureADUser** コマンドレットと組み合わせて Where コマンドレットを使用できます。 2 つのコマンドレットを組み合わせるには、"pipe" 文字 ("|") を使用して、Azure Active Directory PowerShell for Graph に 1 つのコマンドの結果を取得し、次のコマンドに送信するように指示します。 使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を次に示します。
+表示するアカウントの一覧を選択するには **、Get-AzureADUser** コマンドレットと組み合わせて Where コマンドレットを使用できます。 2 つのコマンドレットを組み合わせるには、"パイプ" 文字 ("|") を使用して、Azure Active Directory PowerShell に Graph のコマンドの結果を取得し、次のコマンドに送信します。 使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を次に示します。
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-このコマンドは、Azure Active Directory PowerShell for Graph に次の指示を行います。
+このコマンドは、次Azure Active Directory PowerShell にGraph指示します。
   
 1. ユーザー アカウント **(Get-AzureADUser)** のすべての情報を取得し、次のコマンド ( ) に送信します **|** 。
     
@@ -153,7 +153,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 ### <a name="view-all-accounts"></a>すべてのアカウントを表示する
 
@@ -259,7 +259,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
     
 - isLicensed
     
-ユーザーが働く部署、Microsoft 365 サービスを使用する国/地域などの追加のプロパティが必要な場合は **、Get-MsolUser** を **Select** コマンドレットと組み合わせて実行して、ユーザー アカウントのプロパティの一覧を指定できます。 次に例を示します:
+ユーザーが働く部署、Microsoft 365 サービスを使用する国/地域などの追加のプロパティが必要な場合は **、Get-MsolUser** を Select コマンドレットと組み合わせて実行して、ユーザー アカウントのプロパティの一覧を指定できます。 次に例を示します:
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
@@ -313,9 +313,9 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-ディレクトリ同期を使用して Microsoft 365 ユーザーを作成および管理する場合は、Microsoft 365 ユーザーが投影されたローカル アカウントを表示できます。 次の例では、以下を前提とします。
+ディレクトリ同期を使用して、Microsoft 365 ユーザーを作成および管理する場合は、Microsoft 365 ユーザーが投影されたローカル アカウントを表示できます。 次の例では、以下を前提とします。
 
-- Azure AD接続は、ObjectGUID の既定のソース アンカーを使用するように構成されています。 (ソース アンカーの構成の詳細については、「Azure AD [Connect: Design concepts」を参照してください](/azure/active-directory/hybrid/plan-connect-design-concepts)。
+- Azure AD Connect ObjectGUID の既定のソース アンカーを使用するように構成されています。 (ソース アンカーの構成の詳細については[、「Azure AD Connect: デザインの概念」を参照してください](/azure/active-directory/hybrid/plan-connect-design-concepts)。
 - PowerShell 用の Active Directory ドメイン サービス モジュールがインストールされています [(「RSAT ツール」を参照](https://www.microsoft.com/en-gb/download/details.aspx?id=45520))。
 
 ```powershell

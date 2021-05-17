@@ -1,5 +1,5 @@
 ---
-title: SharePoint Online のページ診断ツールを使用する
+title: オンラインのページ診断ツールを使用SharePointする
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,7 +18,7 @@ search.appverid:
 - BSA160
 f1.keywords:
 - NOCSH
-description: SharePoint のページ診断ツールを使用して、SharePoint Online モダン ポータルとクラシック発行ページを事前に定義されたパフォーマンス条件のセットに対して分析します。
+description: Web サイトのページ診断ツールSharePoint使用して、SharePointのモダン ポータルページとクラシック発行ページを事前に定義されたパフォーマンス条件のセットに対して分析します。
 ms.openlocfilehash: b55e5c04f56bac4e6313284de60753d1beaaaed1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,64 +26,64 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50921632"
 ---
-# <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint のページ診断ツールを使用する
+# <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>[ページ診断] ツールを使用SharePointする
 
-この記事では **、SharePoint** のページ診断ツールを使用して、SharePoint Online のモダン サイトページとクラシック サイト ページを、あらかじめ定義された一連のパフォーマンス条件に対して分析する方法について説明します。
+この記事では、SharePoint ツールのページ診断を使用して、SharePoint Online のモダン およびクラシック サイト ページを事前に定義されたパフォーマンス条件のセットに対して分析する方法について説明します。
 
-SharePoint のページ診断ツールは、次の場合にインストールできます。
+[ページ診断] SharePointツールをインストールできます。
 
-- **Microsoft Edge** [(Edge extension)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
+- **Microsoft Edge** [(エッジ拡張機能)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
 - **Chrome** [(Chrome 拡張機能)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
 >バージョン **2.0.0** 以降には、従来のサイト ページに加えてモダン ページのサポートが含まれています。 使用しているツールのバージョンが不明な場合は、[バージョン情報] リンクまたは省略記号 (...) を選択してバージョンを確認できます。 **ツールを使用する場合は、常に** 最新バージョンに更新してください。
 
-SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://www.microsoft.com/edge) と Chrome のブラウザー拡張機能であり、SharePoint Online の最新ポータルと従来の発行サイト ページの両方を分析します。 このツールは SharePoint Online でのみ機能し、SharePoint システム ページでは使用できません。
+SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://www.microsoft.com/edge) と Chrome のブラウザー拡張機能であり、SharePoint Online の最新ポータルと従来の発行サイト ページの両方を分析します。 このツールは、SharePointオンラインでのみ機能し、システム ページSharePoint使用できません。
 
-このツールは、定義済みのルールセットに対してページがどのように実行されるのかを示す分析された各ページのレポートを生成し、テストの結果が基準値を外れた場合の詳細情報を表示します。 SharePoint Online の管理者および設計者は、このツールを使用してパフォーマンスの問題をトラブルシューティングし、発行前に新しいページが最適化されるのを確認できます。
+このツールは、定義済みのルールセットに対してページがどのように実行されるのかを示す分析された各ページのレポートを生成し、テストの結果が基準値を外れた場合の詳細情報を表示します。 SharePointオンライン管理者とデザイナーは、このツールを使用してパフォーマンスの問題をトラブルシューティングし、発行前に新しいページが最適化されるのを確認できます。
 
-ページ診断ツールは *、allitems.aspx や sharepoint.aspx* などのシステム ページではなく、SharePoint サイト ページのみを *分析するように設計されています*。 システム ページまたは他のサイト以外のページでツールを実行しようとすると、その種類のページでツールを実行できないことを通知するエラー メッセージが表示されます。
+ページ診断ツールは *、allitems.aspx* や *sharepoint.aspx* などのシステム ページではなく、SharePoint ページのみを分析するように設計されています。 システム ページまたは他のサイト以外のページでツールを実行しようとすると、その種類のページでツールを実行できないことを通知するエラー メッセージが表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![SharePoint ページで実行する必要があります](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
+> ![ページ上でSharePointする必要があります](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
 
-ライブラリやシステム ページを評価する際に価値が無い場合、これはツールのエラーではありません。 ツールを使用するには、SharePoint サイト ページに移動してください。 このエラーが SharePoint ページで発生した場合は、マスター ページで SharePoint メタタグが削除されていないか確認してください。
+ライブラリやシステム ページを評価する際に価値が無い場合、これはツールのエラーではありません。 ツールを使用するには、SharePointページに移動してください。 このエラーが [SharePoint] ページで発生した場合は、マスター ページを調SharePointメタタグが削除されていないか確認してください。
 
 ツールに関するフィードバックを提供するには、ツールの右上隅にある省略記号を選択し、[フィードバックを与える] [を選択します](https://go.microsoft.com/fwlink/?linkid=874109)。
 
 > [!div class="mx-imgBorder"]
 > ![フィードバックを提供する](../media/page-diagnostics-for-spo/pagediag-feedback.png)
   
-## <a name="install-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint 用ページ診断ツールのインストール
+## <a name="install-the-page-diagnostics-for-sharepoint-tool"></a>ページ診断ツールのインストールSharePointする
 
-このセクションのインストール手順は、Chrome ブラウザーと Microsoft Edge ブラウザーの両方で機能します。
+このセクションのインストール手順は、Chrome ブラウザーとブラウザーの両方Microsoft Edgeします。
 
 > [!IMPORTANT]
-> Microsoft は、SharePoint 用ページ診断ツールによって分析されたデータやページ コンテンツを読み取りません。また、個人情報、Web サイト、ダウンロード情報は取得されません。 ツールによって Microsoft に記録される識別可能な情報は、テナント名、失敗したルールの数、およびツールが実行された日時のみです。 この情報は、最新のポータルと発行サイトの使用状況の傾向と一般的なパフォーマンスの問題をよりよく理解するために Microsoft によって使用されます。
+> Microsoft は、SharePoint ツールのページ診断によって分析されたデータやページ コンテンツを読み取り、個人情報、Web サイト、またはダウンロード情報を取得したりは行いません。 ツールによって Microsoft に記録される識別可能な情報は、テナント名、失敗したルールの数、およびツールが実行された日時のみです。 この情報は、最新のポータルと発行サイトの使用状況の傾向と一般的なパフォーマンスの問題をよりよく理解するために Microsoft によって使用されます。
 
-1. Microsoft Edge (Edge 拡張機能) または Chrome [(Chrome 拡張機能)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)用 **の SharePoint** 用 **ページ** 診断 [ツールをインストールします](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)。 ストアの説明ページで提供されているユーザー プライバシー ポリシーを確認してください。 ブラウザーにツールを追加すると、次のアクセス許可に関する通知が表示されます。
+1. [ページ診断] ツールを SharePoint (Microsoft Edge拡張機能) または **Chrome (Chrome** 拡張機能 [)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) [にインストールします](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)。 ストアの説明ページで提供されているユーザー プライバシー ポリシーを確認してください。 ブラウザーにツールを追加すると、次のアクセス許可に関する通知が表示されます。
 
     > [!div class="mx-imgBorder"]
     > ![拡張機能のアクセス許可](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
-    この通知は、ページ上の Web パーツとカスタマイズに応じて、ページに SharePoint 外部の場所からのコンテンツが含まれている可能性があるためです。 つまり、スタート ボタンをクリックすると、ツールは要求と応答を読み取り、ツールが実行されているアクティブな SharePoint タブに対してのみ読み取りを行います。 この情報は Web ブラウザーによってローカルにキャプチャされ、ツールの [ネットワーク トレース] タブの **[JSON** にエクスポート]または **[HAR** にエクスポート] ボタンを使用して使用できます。情報は **Microsoft** に送信またはキャプチャされません。 (このツールは、ここでアクセス可能な Microsoft プライバシー ポリシーを [尊重します](https://go.microsoft.com/fwlink/p/?linkid=857875)。)
+    この通知は、ページの Web パーツとカスタマイズに応じて、SharePoint外部の場所のコンテンツがページに含まれている可能性があるためです。 つまり、スタート ボタンをクリックすると、ツールは要求と応答を読み取り、ツールが実行されているアクティブな [SharePoint] タブにのみ表示されます。 この情報は Web ブラウザーによってローカルにキャプチャされ、ツールの [ネットワーク トレース] タブの **[JSON** にエクスポート]または **[HAR** にエクスポート] ボタンを使用して使用できます。情報は **Microsoft** に送信またはキャプチャされません。 (このツールは、ここでアクセス可能な Microsoft プライバシー ポリシーを [尊重します](https://go.microsoft.com/fwlink/p/?linkid=857875)。)
 
     [ _ダウンロードの管理] アクセス_ 許可は、ツールの JSON へのエクスポート機能 **の使用について** 説明します。 結果には URL が含まれているので、PII (個人を特定できる情報) として分類できる JSON ファイルを組織外で共有する前に、会社独自のプライバシー ガイドラインに従って下さい。
 1. Incognito モードまたは InPrivate モードでツールを使用する場合は、ブラウザーの手順に従います。
-    1. Microsoft Edge で、[拡張機能] **に移動** するか、URL バーに edge://extensions _を入力_ し、拡張機能の [ **詳細]** を選択します。 拡張機能の設定で **、InPrivate で許可のチェック ボックスをオンにします**。
+    1. [Microsoft Edgeに移動 **するか、URL** バーに edge://extensions _を入力_ し、拡張機能の [**詳細]** を選択します。 拡張機能の設定で **、InPrivate で許可のチェック ボックスをオンにします**。
     1. Chrome で、[拡張機能] に移動 **するか** 、URL バーに chrome://extensions _を入力_ し、拡張機能の **[詳細]** を選択します。 拡張機能の設定で **、Incognito で許可するスライダーを選択します**。
-1. 確認する SharePoint Online の SharePoint サイト ページに移動します。 ページ上のアイテムの "遅延読み込み" を許可しました。したがって、ツールは自動的に停止しません (これは、すべてのページ読み込みシナリオに対応するように設計されています)。 コレクションを停止するには、[停止] を **選択します**。 データ収集を停止する前に、または部分的なトレースのみをキャプチャする前に、ページの読み込み完了を確認してください。
-1. 拡張機能のツール バー ボタンをクリックする ![SharePoint ロゴのページ診断](../media/page-diagnostics-for-spo/pagediag-icon32.png) ツールを読み込むには、次の拡張機能ポップアップ ウィンドウが表示されます。
+1. 確認する SharePointオンラインの [SharePoint] ページに移動します。 ページ上のアイテムの "遅延読み込み" を許可しました。したがって、ツールは自動的に停止しません (これは、すべてのページ読み込みシナリオに対応するように設計されています)。 コレクションを停止するには、[停止] を **選択します**。 データ収集を停止する前に、または部分的なトレースのみをキャプチャする前に、ページの読み込み完了を確認してください。
+1. 拡張機能のツール バー ボタンをクリックする ![ロゴのページSharePoint](../media/page-diagnostics-for-spo/pagediag-icon32.png) ツールを読み込むには、次の拡張機能ポップアップ ウィンドウが表示されます。
 
     ![ページ診断ツール ポップアップ](../media/page-diagnostics-for-spo/pagediag-Landing.png)
 
 [開始 **] を** 選択して、分析用のデータの収集を開始します。
 
-## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint のページ診断ツールに表示される情報
+## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>[ページ診断] ツールに表示されるSharePoint
 
 1. ツールの右上隅にある省略記号 (...)をクリックして、次のリンクを検索します。
    1. [ **その他のリソース** ] リンクには、この記事へのリンクを含むツールに関する一般的なガイダンスと詳細が表示されます。
-   1. [ **フィードバックの送信]** リンクは _、SharePoint サイトとコラボレーション ユーザーボイス サイトへのリンクを提供_ します。
+   1. [**フィードバックの送信]** リンクには、[サイト] および [グループSharePoint _音声] サイトへのリンクが表示_ されます。
    1. [ **バージョン情報** ] リンクには、現在インストールされているバージョンのツールと、ツールのサード パーティの通知への直接リンクが含まれます。  
 1. 相関 **ID、SPRequestDuration、SPIISLatency、****ページ** 読み込み時間、**および URL** の詳細は情報であり、いくつかの目的で使用できます。
 
@@ -91,8 +91,8 @@ SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://ww
     > ![ページ診断の詳細](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
    - **CorrelationID** は、特定のページの追加の診断データを収集できる Microsoft サポートを操作する際に重要な要素です。
-   - **SPRequestDuration は** 、SharePoint がページを処理するために必要な時間です。 構造ナビゲーション、大きな画像、多くの API 呼び出しは、すべて長い期間に貢献する可能性があります。
-   - **SPIISLatency は** 、SharePoint Online がページの読み込みを開始するまでのミリ秒単位の時間です。 この値には、Web アプリケーションが応答するために必要な時間は含めではありません。
+   - **SPRequestDuration は**、ページの処理にSharePoint時間です。 構造ナビゲーション、大きな画像、多くの API 呼び出しは、すべて長い期間に貢献する可能性があります。
+   - **SPIISLatency は**、オンラインがページの読み込みを開始SharePointミリ秒単位の時間です。 この値には、Web アプリケーションが応答するために必要な時間は含めではありません。
    - **ページ読み込** み時間は、要求時からブラウザーで応答が受信およびレンダリングされた時間までのページによって記録された合計時間です。 この値は、ネットワークの待機時間、コンピューターのパフォーマンス、ブラウザーがページを読み込むのにかかる時間など、さまざまな要因によって影響を受ける。
    - ページ **URL** (Uniform Resource Locator) は、現在のページの Web アドレスです。
 
@@ -111,7 +111,7 @@ SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://ww
 
 ## <a name="how-to-use-the-diagnostic-tests-tab"></a>[診断テスト] タブの使い方
 
-SharePoint モダン ポータル ページまたは従来の発行サイト ページを SharePoint 用ページ診断ツールで分析すると、結果がベースライン値と比較され、[診断テスト] タブに表示される定義済みのルールを使用して分析されます。特定のテストのルールでは、2 つのパフォーマンス特性の違いによって、最新のポータルサイトと従来の発行サイトで異なる基準値を使用する場合があります。
+SharePoint のページ診断ツールを使用して SharePoint モダン ポータル ページまたは従来の発行サイト ページを分析すると、結果は、ベースライン値と結果を比較し、[診断テスト] タブに表示される定義済みのルールを使用して分析されます。特定のテストのルールでは、2 つのパフォーマンス特性の違いによって、最新のポータルサイトと従来の発行サイトで異なる基準値を使用する場合があります。
 
 [改善の機会]または [注意が必要なカテゴリ] に表示されるテスト結果は、推奨されるプラクティスに対して確認する必要がある領域を示し、結果に関する追加情報を表示するために選択できます。 各アイテムの詳細には、テスト _に関連する_ 適切なガイダンスに直接アクセスできる [詳細情報] リンクが含まれます。 [アクション不要] カテゴリに表示されるテスト結果 **は** 、関連するルールへの準拠を示し、選択した場合は追加の詳細は表示されません。
 
@@ -120,14 +120,14 @@ SharePoint モダン ポータル ページまたは従来の発行サイト ペ
 赤または黄色の結果は、データを頻繁に更新する Web パーツを示す場合もあります。 たとえば、企業のニュースは 1 秒ごとに更新されるのではなく、ユーザー エクスペリエンス全体を向上させるキャッシュ要素を実装するのではなく、1 秒ごとに最新のニュースを取得するためにカスタム Web パーツが構築される場合が多い。 Web パーツをページに含め、使用可能な各パラメーターの値を評価して、目的に合った適切な設定を行って、パフォーマンスへの影響を軽減する簡単な方法が多い場合に備えておきます。
 
 >[!NOTE]
->発行機能が有効になっていない従来のチーム サイトでは、CDN を利用できません。 これらのサイトでツールを実行すると、CDN テストは失敗すると予想され、無視できますが、残りのテストはすべて適用可能です。 SharePoint 発行機能の追加機能により、ページの読み込み時間が増加する可能性があります。CDN 機能を許可する場合にだけ有効にすることはできません。
+>発行機能が有効になっていない従来のチーム サイトでは、CDN を利用できません。 これらのサイトでツールを実行すると、CDNテストは失敗すると予想され、無視できますが、残りのテストはすべて適用可能です。 発行機能の追加機能SharePointページの読み込み時間が増える可能性があります。そのため、ページの読み込み機能を許可CDNすることはできません。
 
 >[!IMPORTANT]
 >テスト ルールは定期的に追加および更新されますので、現在のルールとテスト結果に含まれる特定の情報の詳細については、ツールの最新バージョンを参照してください。 拡張機能を管理することでバージョンを確認できます。拡張機能は更新プログラムが利用可能かどうかを示します。
 
 ## <a name="how-to-use-the-network-trace-tab-and-how-to-export-a-har-file"></a>[ネットワーク トレース] タブの使い方と HAR ファイルのエクスポート方法
 
-[ **ネットワーク トレース]** タブには、ページの作成要求と SharePoint から受信した応答の両方に関する詳細情報が表示されます。
+[**ネットワーク トレース]** タブには、ページをビルドするための要求と、ページから受信した応答の両方に関する詳細情報SharePoint。
 
 1. **赤のフラグが設定されたアイテムの読み込み時間を探します**。 各要求と応答は、次の待機時間メトリックを使用してページ全体のパフォーマンスに与える影響を示す色分けされています。
     - 緑: \< 500ms
@@ -162,7 +162,7 @@ SharePoint モダン ポータル ページまたは従来の発行サイト ペ
 
 ### <a name="to-enable-the-microsoft-support-level-feature"></a>Microsoft サポート レベルの機能を有効にするには
 
-1. SharePoint のページ診断ツールを開きます。
+1. [ページ診断] ツールを開SharePointします。
 2. キーボードで **ALT-Shift-L キーを押します**。 [サポート ログを有効 **にする] チェック ボックスが** 表示されます。
 3. チェック ボックスをオンにし、[スタート] **をクリック** してページを再読み込みし、詳細ログを生成します。
 

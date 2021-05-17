@@ -114,7 +114,7 @@ ms.locfileid: "51994999"
 
 ## <a name="1010723"></a>101.07.23
 
-- パッシブ モードと EDR グループ ID の状態を確認する新しいフィールドを出力 `mdatp --health` に追加しました
+- パッシブ モードとグループ ID の状態を確認するために、新しいフィールド `mdatp --health` EDR追加しました
 
   > [!NOTE]
   > `mdatp --health` は、将来の製品 `mdatp health` 更新プログラムに置き換えられる予定です。
@@ -178,9 +178,9 @@ ms.locfileid: "51994999"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> macOS デバイスの保護を最も完全に行い、Apple が [current – 2] より古い OS バージョンへの macOS ネイティブ セキュリティ更新プログラムの配信を停止するに合わせ、MDATP for Mac の展開と更新プログラムは macOS Sierra [10.12] ではサポートされなくなりました。 MDATP for Mac の更新プログラムと拡張機能は、バージョン Catalina [10.15]、Mojave [10.14]、High Sierra [10.13] を実行しているデバイスに配信されます。 
+> macOS デバイスに対して最も完全な保護を確保し、Apple が [current – 2] より古い OS バージョンへの macOS ネイティブ セキュリティ更新プログラムの配信を停止するに合わせ、macOS Sierra [10.12] で mac の展開と更新プログラムの MDATP がサポートされなくなりました。 MDATP Mac の更新プログラムと拡張機能は、バージョン Catalina [10.15]、Mojave [10.14]、High Sierra [10.13] を実行しているデバイスに配信されます。 
 >
-> MDATP for Mac がシエラ [10.12] デバイスに既に展開されている場合は、保護を失うリスクを排除するために最新の macOS バージョンにアップグレードしてください。
+> シエラ [10.12] デバイスに Mac 用のMDATPが既に展開されている場合は、最新の macOS バージョンにアップグレードして、保護を失うリスクを排除してください。
 
 - バグ修正&パフォーマンスの向上
 
@@ -231,6 +231,6 @@ ms.locfileid: "51994999"
   > この同意を付与するメカニズムは、Microsoft Defender for Endpoint の展開方法によって異なります。
   >
   > - 手動展開については、「手動展開」の「更新された手順」 [を参照](mac-install-manually.md#how-to-allow-full-disk-access) してください。
-  > - 管理展開については [、「JAMF](mac-install-with-jamf.md) ベースの展開」および「Microsoft Intune ベースの展開に関するトピック」の更新 [された手順を参照](mac-install-with-intune.md#create-system-configuration-profiles) してください。
+  > - 管理展開については[、「JAMF](mac-install-with-jamf.md)ベースの展開」および「Microsoft Intune展開」の更新された手順[を参照](mac-install-with-intune.md#create-system-configuration-profiles)してください。
 
 - バグ修正&パフォーマンスの向上

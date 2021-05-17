@@ -1,5 +1,5 @@
 ---
-title: 考慮すべき SharePoint 2007 移行オプション
+title: SharePoint 2007 の移行オプションを検討する
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -26,7 +26,7 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、SharePoint Server 2007 を使用してアップグレードを計画するユーザー向け情報について説明します。
+description: この記事では、アップグレードの計画に役立SharePointサーバー 2007 を使用しているユーザー向け情報を示します。
 ms.openlocfilehash: 38c4713b7dfb705c99d970c5f68a37b031c951a5
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -34,15 +34,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924882"
 ---
-# <a name="sharepoint-2007-migration-options-to-consider"></a>考慮すべき SharePoint 2007 移行オプション
+# <a name="sharepoint-2007-migration-options-to-consider"></a>SharePoint 2007 の移行オプションを検討する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft SharePoint 2007 と SharePoint Server 2007 はサポートの終了に達しました。 アップグレードの時期です! この記事では、移行オプションに関する情報を提供します。
+Microsoft SharePoint 2007 および SharePoint Server 2007 はサポートの終了に達しました。 アップグレードの時期です! この記事では、移行オプションに関する情報を提供します。
   
-## <a name="common-upgrade-strategies-for-sharepoint"></a>SharePoint の一般的なアップグレード戦略
+## <a name="common-upgrade-strategies-for-sharepoint"></a>アップグレードに関する一般的なSharePoint
 
-SharePoint Server 環境をアップグレードするには、複数の方法があります。 SharePoint Server 2007 ファームMicrosoft Office場合、アップグレード方法の例を次に示します。
+サーバー環境をアップグレードするには、複数SharePointがあります。 サーバー 2007 ファームMicrosoft Office SharePointアップグレード方法の例を次に示します。
   
 - データベース接続
     
@@ -52,54 +52,54 @@ SharePoint Server 環境をアップグレードするには、複数の方法�
     
 - ハイブリッド アップグレード (デタッチされたデータベースを含むインプレイス/個別のデータベース接続)
     
-- SharePoint ハイブリッド (オンラインでオンプレミスの SharePoint に接続する)
+- SharePointハイブリッド (オンプレミス のサーバーにオンラインで接続SharePoint)
     
 - サイト コレクションまたはライブラリ間でデータを手動で移動する
     
-- FastTrack ウィザードを Microsoft 365 にアップグレードする ([SharePoint Online 展開アドバイザー](https://aka.ms/spoguidance))
+- FastTrack ウィザードを Microsoft 365 ( SharePoint 展開アドバイザー )[にアップグレードする](https://aka.ms/spoguidance)
     
-- Microsoft 365 の SharePoint Online (SPO) への移行 API
+- 移行 API から SharePoint Online (SPO) への移行Microsoft 365
     
 最適な機能は何ですか?
   
-ファームの動作と使用に関する知識は、アップグレードに関する戦術的な強みです。 ユーザーが SharePoint ファームを使用する方法は、オプションから選ぶのに役立ちます。
+ファームの動作と使用に関する知識は、アップグレードに関する戦術的な強みです。 ユーザーがファームファームをSharePoint方法は、オプションから選ぶのに役立ちます。
   
 > [!TIP]
-> Microsoft Office SharePoint Server 2007 には、ここでは説明しない段階的なアップグレードも含まれています。 ステップ固有のアップグレード記事の一覧については [、「SharePoint Server 2007 End of support Roadmap」を参照してください](sharepoint-2007-end-of-support.md)。 
+> Microsoft Office SharePoint Server 2007 には、ここでは段階的なアップグレードも含まれています。 手順固有のアップグレード記事の一覧については、「SharePoint [Server 2007](sharepoint-2007-end-of-support.md)のサポート ロードマップ」を参照してください。 
   
-アップグレードする [SharePoint](https://support.microsoft.com/lifecycle/search) のバージョンについては、製品ライフサイクルとシステム要件を確認してください。 そのため、次のアップグレードが必要になる時期を認識できます (たとえば、SharePoint Server 2010 などの従来の製品でアップグレードを計画する場合は、サポート終了日を確認してください)、計画をサポートするハードウェアが確実に用意されている必要があります。 
+アップグレードする製品のバージョン[については](https://support.microsoft.com/lifecycle/search)、製品ライフサイクルとシステム要件SharePoint確認してください。 そのため、次のアップグレードが必要になる時期を認識できます (たとえば、SharePoint Server 2010 などの従来の製品でアップグレードを計画する場合は、そのサポート終了日を確認してください)、計画をサポートするハードウェアが確実に用意されている必要があります。 
   
-SharePoint サイトの一部またはすべてをクラウドの Microsoft 365 に移行する予定の場合は [、Microsoft 365 および Office 365](/office365/servicedescriptions/office-365-service-descriptions-technet-library)サービスの説明へのリンクをブックマークする必要があります。 SharePoint Online の機能とオンプレミスの SharePoint Server との違いについて説明するには、サービスの説明が必要です。 SharePoint Server 2007 Microsoft Office機能をアップグレードします。 インストールに壊れたサイトがある場合は、アップグレード前に修正してください。
+SharePoint サイトの一部またはすべてをクラウドの Microsoft 365 に移行する予定の場合は、Microsoft 365 および Office 365 サービスの説明へのリンクをブックマーク[する必要](/office365/servicedescriptions/office-365-service-descriptions-technet-library)があります。 オンライン機能の詳細と、SharePointサーバーとの違いについて説明するには、サービスのSharePointがあります。 サーバー 2007 Microsoft Office SharePoint機能をアップグレードします。 インストールに壊れたサイトがある場合は、アップグレード前に修正してください。
   
 ## <a name="a-note-about-managing-risk"></a>リスクの管理に関するメモ
 
-アップグレード ロジックのスキームでは、"サイド バイ サイド" のようなメソッドが重要です。 サイド バイ サイドでアップグレードする場合は、Microsoft Office SharePoint Server 2007 ファームを維持しますが、新しいハードウェアで次のバージョンのファーム (SharePoint Server 2010) を構築します。 これは、次の 3 つの方法で役立ちます。
+アップグレード ロジックのスキームでは、"サイド バイ サイド" のようなメソッドが重要です。 サイド バイ サイドでアップグレードする場合は、Microsoft Office SharePoint Server 2007 ファームを維持しますが、新しいハードウェアでファームから次のバージョン (SharePoint Server 2010) を構築します。 これは、次の 3 つの方法で役立ちます。
   
-1. SharePoint Server 2007 データベースのバックアップをMicrosoft Officeデータベース接続を使用して個別にアップグレードする場所があります。
+1. データベース接続を使用して、サーバー 2007 データベースMicrosoft Office SharePointバックアップを取って個別にアップグレードする場所があります。
     
 2. Microsoft Office SharePoint Server 2007 ファームで使用されている重要なドキュメント ライブラリや他の情報の数が少ない場合は、Microsoft Office SharePoint Server 2007 から SharePoint Server 2010 に手動でデータを移動するか、特定のサイトと Web のみを次のバージョンに移動するか (作業を容易にすることができます)。
     
-3. SharePoint Server 2007 サーバー Microsoft Officeを直接実行するほど、アップグレード時にファームに含まれるデータが安全になります。
+3. サーバー 2007 サーバー Microsoft Office SharePointに対して行う操作が少なMicrosoft Office SharePoint、アップグレード時にファームに含まれるデータが安全になります。
     
 In-Place アップグレードのような方法は、Microsoft Office SharePoint Server 2007 ファームで直接機能し、パスを放棄して元の環境から再び開始する簡単なオプションを少なくできます。 可能な限り、いくつかの安全対策 (元の環境のバックアップの取得とテストなど) を組み込む必要があります。 たとえば、Microsoft Office SharePoint Server 2007 ファームが仮想であり、バックアップと復元の目的で複製されている場合は、アップグレードのサービス ウィンドウの前に最新のデータベースをバックアップして復元します。 データベース バックアップを復元するオプションがある場合は、フェールセーフを与えるだけでなく、安心できます。
   
 > [!TIP]
-> アップグレードのベスト プラクティス ドキュメントは[、Microsoft Office SharePoint Server 2007、SharePoint Server](/previous-versions/office/sharepoint-2007-products-and-technologies/cc261992(v=office.12)) [2010、SharePoint Server 2013、](/previous-versions/office/sharepoint-server-2010/cc261992(v=office.14))[および SharePoint Server 2016](/SharePoint/upgrade-and-update/best-practices-for-upgrade)に対して存在します。 [](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013) アップグレードまたは [Microsoft](https://partnercenter.microsoft.com/pcv/search) 365 の移行に関する経験を持つ Microsoft パートナーを検索できます。 
+> アップグレードのベスト プラクティス ドキュメントは[、Microsoft Office SharePoint Server 2007、SharePoint](/previous-versions/office/sharepoint-2007-products-and-technologies/cc261992(v=office.12)) [Server 2010、SharePoint](/previous-versions/office/sharepoint-server-2010/cc261992(v=office.14)) [Server 2013、](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013)および SharePoint Server [2016](/SharePoint/upgrade-and-update/best-practices-for-upgrade)に存在します。 アップグレードや移行の経験[がある Microsoft パートナー](https://partnercenter.microsoft.com/pcv/search) Microsoft 365できます。 
   
 ## <a name="make-your-plan"></a>計画を立て
 
-アップグレードする必要がある場合は、プランが必要であり、1 つのサイズがこのような場合にすべて収まらない場合があります。 プランは、「SharePoint Online で Microsoft 365 サブスクリプションを作成し、ドメインを登録し、そこにファイルを保存するユーザーをリダイレクトする」という単純な方法です。 そうではない場合があります。 この決定はユーザーの判断であり、ユーザーが本当に必要としているものに影響します。
+アップグレードする必要がある場合は、プランが必要であり、1 つのサイズがこのような場合にすべて収まらない場合があります。 プランは、「SharePoint Microsoft 365 Online で Microsoft 365 サブスクリプションを作成し、ドメインを登録し、そこにファイルを保存するユーザーをリダイレクトする」という単純な方法です。 そうではない場合があります。 この決定はユーザーの判断であり、ユーザーが本当に必要としているものに影響します。
   
 > [!NOTE]
 > ライフサイクルが終了したソフトウェアで実行することは危険です。 サポートが終了している製品は、問題が見つかったときに修正プログラムが適用されなくなりました。 また、新しいセキュリティ上の脅威が発生した場合、ライフサイクルの終了製品がサポートされなくなったため、セキュリティパッチや修正プログラムが存在しなくなるという意味です。 その状況は避けて下さい! 
   
 ### <a name="first-know-your-farm"></a>まず、ファームを知る
 
-アップグレード時の意思決定は、ファームが組織に対して何をしているかに基づいて行う必要があります。 どのようなニーズを満たす必要がありますか? その役割は何ですか? 会社の各ファームの役割は異なる場合があります。 一部の SharePoint ファームは重要な場合があります。ファイル アーカイブである場合があります。安全に管理できる場合があります。 または、ファームが一度に多くの役割を満たしている場合は、サイト コレクション、Web、またはドキュメント ライブラリの機能、カスタマイズ、および重要な役割を知る必要があります。 このレベルでデータを分析すると、多くの作業に見えるかもしれませんが、アップグレードまたは移行する前にドメインをマスターするための時間と労力を節約できます。 すべての移動部分と最も重要なビットを知った後は、自分が何を生き残り、取り残すのかを知る必要があります。 この知識は、今後のメリットにしかならな 
+アップグレード時の意思決定は、ファームが組織に対して何をしているかに基づいて行う必要があります。 どのようなニーズを満たす必要がありますか? その役割は何ですか? 会社の各ファームの役割は異なる場合があります。 一部のSharePointファームは重要な場合があります。ファイル アーカイブである場合があります。安全に管理できます。 または、ファームが一度に多くの役割を満たしている場合は、サイト コレクション、Web、またはドキュメント ライブラリの機能、カスタマイズ、および重要な役割を知る必要があります。 このレベルでデータを分析すると、多くの作業に見えるかもしれませんが、アップグレードまたは移行する前にドメインをマスターするための時間と労力を節約できます。 すべての移動部分と最も重要なビットを知った後は、自分が何を生き残り、取り残すのかを知る必要があります。 この知識は、今後のメリットにしかならな 
   
-では、ユーザーが SharePoint Server ファームについて最も重要と言っていることは何ですか?
+では、ユーザーがサーバー ファームについて最も重要SharePointは何ですか?
   
-- 組み込みの SharePoint 機能
+- 組み込みのSharePoint機能
     
 - 大きなデータコーパス (ファイルのアーカイブなど)
     
@@ -111,23 +111,23 @@ In-Place アップグレードのような方法は、Microsoft Office SharePoin
     
 - カスタマイズ
     
-SharePoint ファームからビジネスに不可欠な何かを実行する場合は、クライアント サービス要件に関する重要なデータの大規模なカタログのように動作すると、"クリティカル アプリ" の横にチェックを入れるだけでなく、"可用性" を設定することもできます。つまり、SharePoint をしばらく使用できなかった場合、ビジネスは影響を受け取る可能性があります。 同様に、ファームが提供する重要なサービスは、カスタム コード、サイト定義、または一緒に動作する多数のカスタマイズに基づくため、「カスタマイズ」をチェックできます。
+SharePoint ファームからビジネスに不可欠な何かを実行する場合は、クライアント サービス要件に関する重要なデータの大規模なカタログのように動作すると、"重要なアプリ" の横にチェックを入れるだけでなく、"可用性" を設定することもできます。つまり、しばらくの間 SharePoint を使用できなかった場合、ビジネスは影響を受け取る可能性があります。 同様に、ファームが提供する重要なサービスは、カスタム コード、サイト定義、または一緒に動作する多数のカスタマイズに基づくため、「カスタマイズ」をチェックできます。
   
-SharePoint がソフトウェアに組み込まれる機能を使用する以外に何もせずにこれらのニーズを満たした場合、一般的に更新して通常の管理とメンテナンスを実行する場合は、「組み込み SharePoint」を選択している可能性があります。これは、以前のバージョンの SharePoint に座っている理由にもなります。 つまり、既に必要なことを行い、Microsoft Office SharePoint Server 2007 のサポート終了時点でアップグレードする必要はなかったのです。
+SharePointがソフトウェアに組み込まれる機能を使用する以外に何もせずにこれらのニーズを満たした場合、通常は更新して通常の管理とメンテナンスを実行している場合は、'組み込み SharePoint' を選択している可能性があります。これは、以前のバージョンの SharePoint に座る理由にもなっている可能性があります。 つまり、既に必要な機能を実行し、Microsoft Office SharePoint Server 2007 のサポート終了時点でアップグレードする必要がなかったのです。
   
 これらの項目の箇条書きを行う場合は、アップグレードの条件を作成します。 つまり、アップグレードを行う場合は、このバーを満たす必要があります。 これにより、現在ニーズに合わないメソッドを排除できます。
   
 ### <a name="a-simple-sample-plan"></a>簡単なサンプル プラン
 
-SharePoint アップグレードのパスに関して、リーダーシップや他の管理者との合意が広がる必要がある場合があります。 SharePoint Server 管理者は、多くの場合、管理者Microsoft SQL Server、ネットワークチームやセキュリティ チームなどと協力します。 関係者が多い場合は、アップグレードと移行計画に関する契約を作成するか、調整する必要があります。 たとえば、会社の一部が Microsoft 365 で SharePoint Online を使用するためにデータを移行する場合、ネットワーク内でパフォーマンスの調整やテストが必要になる可能性があります。 影響を受けるチームには事前に通知する必要があります。
+アップグレードのパスに関して、リーダーシップや他の管理者とのSharePoint必要があります。 SharePointサーバー管理者は、多くの場合、Microsoft SQL Server、ネットワークチームやセキュリティ チームなどと協力します。 関係者が多い場合は、アップグレードと移行計画に関する契約を作成するか、調整する必要があります。 たとえば、Microsoft 365 で会社の一部が SharePoint Online を使用するデータを移行する場合、ネットワーク内でパフォーマンス調整やテストが必要になる可能性があります。 影響を受けるチームには事前に通知する必要があります。
   
-簡単なサンプルでは、SharePoint 管理者の提案を表示し、すべての関係者が同意した計画を一覧表示します。 明確にするために、契約と決定を文書化します。
+簡単なサンプルでは、管理者SharePoint提案を表示し、すべての関係者が合意した計画を一覧表示します。 明確にするために、契約と決定を文書化します。
   
-この計画は、ファームの詳細な分析の後に開始され、一部のアップグレード オプションの絞り込みにつながるファーム、痛みポイント、その他の重要な情報の役割を特定します。 その後、SharePoint 管理者がアップグレード提案を行い、関係者はアクション プランに同意します。
+この計画は、ファームの詳細な分析の後に開始され、一部のアップグレード オプションの絞り込みにつながるファーム、痛みポイント、その他の重要な情報の役割を特定します。 その後、アップグレード提案は管理者SharePoint行い、関係者はアクション プランに同意します。
   
 "最も重要な" 箇条書きリスト:
   
-- 可用性、SharePoint に組み込みの機能、およびコンプライアンス標準。
+- 可用性、ユーザーに組み込SharePoint、コンプライアンス標準。
     
 - ほとんどのデータは 3 つのサイト コレクションに含まれており、開発チームが使用する会議ワークスペースは 1 つであり、世界中の複数のタイム ゾーンで特に重要で多用されています。
     
@@ -147,37 +147,37 @@ SharePoint アップグレードのパスに関して、リーダーシップや
 |:-----|:-----|
 |データベース接続を使用してデータベースをアップグレードする  <br/> |一括アップグレード  <br/> |
 |ファームを並べてアップグレードする  <br/> |ハイブリッド アップグレード  <br/> |
-|Microsoft 365 の SPO への移行 API (個人用サイト データの場合)  <br/> |SharePoint ハイブリッド (まだ必要ありません)  <br/> |
-|重要なデータの SharePoint Online への手動データ移行  <br/> |FastTrack ウィザードを Microsoft 365 にアップグレードする  <br/> |
+|サイト内の SPO へのMicrosoft 365 API (個人用サイト データの場合)  <br/> |SharePointハイブリッド (まだ必要ありません)  <br/> |
+|重要なデータに対するSharePointオンラインへの手動データの移行  <br/> |FastTrack ウィザードをサーバーにアップグレードMicrosoft 365  <br/> |
    
  **私の提案された計画:**
   
-最初にデータベースをアップグレードできるよう、一部の仮想化された SharePoint のバージョンを使用して、オンプレミスをアップグレードします。 SharePoint 2007 から SharePoint 2010 に移動します。 管理者と開発者は、結果のファームをテストします。 ユーザーは、結果のファームをテストします。 この期間中に、表示停止の問題を修正します。 ここでも、SharePoint 2010 データベースを SharePoint 2013 に並べてアップグレードします。 テストします。 ユーザー のテスト/パイロット。 この期間中に、表示停止の問題を修正します。
+最初にデータベースをアップグレードSharePoint、一部の仮想化されたバージョンのオンプレミスをアップグレードします。 2007 SharePointから 2010 SharePointに移動します。 管理者と開発者は、結果のファームをテストします。 ユーザーは、結果のファームをテストします。 この期間中に、表示停止の問題を修正します。 繰り返しますが、2010 データベースSharePoint 2013 にSharePointします。 テストします。 ユーザー のテスト/パイロット。 この期間中に、表示停止の問題を修正します。
   
 - SPO を含む検索フェデレーション ハイブリッドがニーズを満たした場合を検討します。
     
-- [ここから SharePoint](https://fasttrack.microsoft.com) Online にアップグレードする場合は、FastTrack のサポートを検討してください。 
+- ここから[FastTrack のサポート](https://fasttrack.microsoft.com)を利用して、SharePointにアップグレードする場合を検討してください。 
     
-- サイト コレクションを Microsoft 365 サブスクリプションにオフロードできるかどうかを判断します。 (Microsoft 365 は多くのコンプライアンス標準 [を満たしています](/compliance/regulatory/offering-home)。 Microsoft 365 は [電子情報開示を持ち](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) 、コンプライアンス [センターを通](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) じて保留を実行できます。 
+- 任意のサイト コレクションをサブスクリプションにオフロードMicrosoft 365します。 (Microsoft 365多くのコンプライアンス基準[を満たしています](/compliance/regulatory/offering-home)。 Microsoft 365持[ち、](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)コンプライアンス センターを[通](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E)じて保留を実行できます)。 
     
-それ以外の場合は、SharePoint Server 2016 へのサイド バイ サイド アップグレードを続行します。
+それ以外の場合は、サーバー 2016 へのサイド バイ サイド アップグレードSharePoint続行します。
   
 > [!NOTE]
 > アップグレードを計画している管理者が行った推奨事項と実際のプロセスの間で、アップグレードが依存している他の関係者との会話が行います。 たとえば、経済的に管理者に計画の変更を強制する場合があります。 最終的な決定が何であれ、今後、合意された計画が何かを文書化する必要があります。 次のような場合があります。 
   
  **自分のアクション プラン:**
   
-オンプレミスでは、仮想環境を使用して既定の SharePoint Server 2010 および 2013 を構築します。 SharePoint Server 2016 は、2016 のシステム要件を満たす新しいハードウェア上に構築されます。 SharePoint 2007 から SharePoint Server 2016 の間のすべてのバージョンを介してデータベースをアップグレードするためにデータベース接続を行います。 現時点では、SharePoint Server 2016 環境で、ネイティブ機能がニーズを満たしていない場合に、コアカスタマイズが再作成され、テストされています。 成功した場合は、アップグレードされたデータベースを含む新しいハードウェア上にオンプレミス ファームを作成し、カスタマイズを少なくします。 アップグレードされたコンテンツ データベースを SharePoint Server 2013 の新しいサイト コレクションに接続し、テスト、ユーザー テスト/パイロットを行い、ライブで使用するために新しい SharePoint Server 2016 環境に DNS カットオーバーを実行します。
+オンプレミスでは、仮想環境を使用して、サーバー 2010 および 2013 SharePoint既定の環境を構築します。 SharePointサーバー 2016 は、2016 のシステム要件を満たす新しいハードウェア上に構築されます。 データベース接続は、2007 年から 2016 年SharePointサーバー 2016 との間のすべてのバージョンSharePointします。 この時点で、SharePoint Server 2016 環境では、ネイティブ機能がニーズを満たしていない場合に、コアカスタマイズが再作成され、テストされています。 成功した場合は、アップグレードされたデータベースを含む新しいハードウェア上にオンプレミス ファームを作成し、カスタマイズを少なくします。 アップグレードされたコンテンツ データベースを SharePoint Server 2013 の新しいサイト コレクションに接続し、テスト、ユーザーテスト/パイロットを行い、ライブで使用するために新しい SharePoint Server 2016 環境に DNS カットオーバーを実行します。
   
-- 現在、SharePoint Server 2016 と SharePoint Online のフェデレーション ハイブリッドは検討しません。
+- 現在、サーバー 2016 と SharePointオンライン間のフェデレーション ハイブリッドSharePoint検討しません。
     
-- サイトの推定 35% が、バニティ ドメインを持つ新しい SPO サイトに変わったり、最終的には OneDrive for Business ストレージに変わったりすることができます。 サイトを変換したり、新しいサイトを SPO にルーティングする他の機会を探しています。
+- サイトの推定 35% が、バニティ ドメインを持つ新しい SPO サイトに変わったり、最終的にはストレージOneDrive for Businessすることができます。 サイトを変換したり、新しいサイトを SPO にルーティングする他の機会を探しています。
     
-- 移行のこの部分の一部は、OneDrive for Business 個人用サイトにドラッグ アンド ドロップして手動で、一部は移行 API によって行います。
+- 移行のこの部分の一部は手動で、個人用サイトにドラッグ アンド OneDrive for Business、一部は移行 API によって行います。
     
-詳細な手順、または特定のアップグレード方法へのリンクの数は、計画に従う必要があります。 MOSS 2007 コンピューターを使用停止にし、比較のために仮想環境を維持する必要があります。ただし、ユーザーが SharePoint Server 2016 にリダイレクトされた場合、アップグレードは完了します。
+詳細な手順、または特定のアップグレード方法へのリンクの数は、計画に従う必要があります。 MOSS 2007 コンピューターを使用停止にし、比較のために仮想環境を維持する必要があります。ただし、アップグレードは、ユーザーがサーバー 2016 にリダイレクトSharePoint完了します。
   
-多くの場合、方法を選択する際の主な要因は、アップグレードの総コストと時間のコストです (詳細については、「SharePoint 移行ロードマップ」の記事をご覧ください)。 ただし、先に計画を立てていると、期待を設定し、賢明に選択し、成功の見た目をフレーミングする際に大きなメリットがあります。
+多くの場合、方法を選択する際の主な要因は、アップグレードの総コストと時間のコストです (詳細については、「SharePoint 移行ロードマップ」の記事を参照してください)。 ただし、先に計画を立てていると、期待を設定し、賢明に選択し、成功の見た目をフレーミングする際に大きなメリットがあります。
   
 ## <a name="related-links"></a>関連リンク
 

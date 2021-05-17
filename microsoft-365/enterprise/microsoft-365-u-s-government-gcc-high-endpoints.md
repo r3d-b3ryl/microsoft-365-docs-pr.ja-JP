@@ -1,5 +1,5 @@
 ---
-title: Office 365 米国政府機関 GCC High エンドポイント
+title: Office 365米国政府機関の高GCCエンドポイント
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
-description: この記事では、365 米国政府機関 GCC High プランを使用しているOfficeに到達可能なエンドポイントについて説明します。
+description: この記事では、米国政府機関の高いプランを使用しているOffice 365エンドポイントGCC見つける予定です。
 hideEdit: true
 ms.openlocfilehash: 4089be4e3e28493afc27972d77f30bca81364f37
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -27,11 +27,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923876"
 ---
-# <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 米国政府機関 GCC High エンドポイント
+# <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365米国政府機関の高GCCエンドポイント
 
  *適用対象: Office 365 Admin*
 
-Office 365 にはインターネットへの接続が必要です。 以下のエンドポイントは、365 米国政府機関 GCC High プランOffice使用しているお客様に対して到達可能である必要があります。
+Office 365接続が必要な場合。 以下のエンドポイントは、米国政府機関および高Office 365プランのみを使用しているGCCアクセスできる必要があります。
   
  **Office 365 エンドポイント:** [(GCC を含む) 世界](urls-and-ip-address-ranges.md) | [21Vianet が運営する Office 365](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 ドイツ](microsoft-365-germany-endpoints.md)  |  [Office 365 米国政府機関向け DoD](microsoft-365-u-s-government-dod-endpoints.md) | *Office 365 米国政府 GCC 高* |
   
@@ -51,7 +51,7 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 - **カテゴリ**: エンドポイントのセットが「最適化」、「許可」または「既定」のどれに分類されているかを示します。これらのカテゴリとその管理ガイダンスについては、[https://aka.ms/pnc](./microsoft-365-network-connectivity-principles.md) を参照してください。この列には、ネットワーク接続に必要なエンドポイントのセットが表示されます。ネットワーク接続が必要ないエンドポイントのセットの場合、このコラムには、エンドポイントのセットがブロックされた場合に使えなくなる機能に関する注意書きが書かれます。サービス領域全体を除外する場合は、ネットワーク接続が必要と記載されているエンドポイントのセットの接続は不要です。
 
-- **ER**: エンドポイント **セットが** Azure ExpressRoute でサポートされ、365 ルート プレフィックスOfficeはい。 表示されるルート プレフィックスを含む BGP コミュニティは、一覧表示されているサービス エリアに合わせて配置されます。 ER が **No の場合**、このエンドポイント セットでは ExpressRoute はサポートされません。 ただし、ER が No であるエンドポイント セットに対してアドバタイズされるルートは含めずに使用する **必要があります**。 Azure AD Connect を使用する場合は、「特別な[](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)考慮事項」セクションを参照して、適切な Azure AD Connect 構成を確認してください。
+- **ER**: エンドポイント セットが **Azure** ExpressRoute でサポートされている場合は、ルート プレフィックスOffice 365です。 表示されるルート プレフィックスを含む BGP コミュニティは、一覧表示されているサービス エリアに合わせて配置されます。 ER が **No の場合**、このエンドポイント セットでは ExpressRoute はサポートされません。 ただし、ER が No であるエンドポイント セットに対してアドバタイズされるルートは含めずに使用する **必要があります**。 Azure AD Connectを使用する場合は、「特別な考慮事項[](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)」セクションを参照して、適切な Azure AD Connectしてください。
 
 - **アドレス**: FQDN またはワイルドカードを含むドメイン名と、エンドポイントのセットの IP アドレス範囲を一覧表示します。IP アドレスの範囲は CIDR 形式となり、指定されたネットワークの個別の IP アドレスが多数含まれる場合があることに注意してください。
  
@@ -61,6 +61,6 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 この表に関するメモ :
 
-- セキュリティとコンプライアンス センター (SCC) は、Azure ExpressRoute for Office 365 を提供します。 レポート、監査、高度な電子情報開示、統合 DLP、データ ガバナンスなど、SCC を通じて公開される多くの機能にも同様です。 PST インポートと電子情報開示のエクスポートという 2 つの特定の機能は、現在、Azure Blob Storage への依存関係のため、Office 365 ルート フィルターのみを使用する Azure ExpressRoute をサポートしていない。 これらの機能を使用するには、サポート可能な Azure 接続オプション (インターネット接続または Azure パブリック ルート フィルターを使用した Azure ExpressRoute を含む) を使用して、Azure Blob Storage への個別の接続が必要です。 これらの両方の機能に対するこのような接続の確立を評価する必要があります。 Office 365 情報保護チームは、この制限を認識し、これらの両方の機能に対して Office 365 ルート フィルターに限定される Office 365 の Azure ExpressRoute のサポートを積極的に提供しています。
+- セキュリティとコンプライアンス センター (SCC) は、Azure ExpressRoute のサポートを提供Office 365。 レポート、監査、監査、統合 DLP、データ ガバナンスなど、SCC を通じて公開Advanced eDiscovery機能も同様です。 PST インポートと電子情報開示のエクスポートという 2 つの特定の機能は、現在、Azure Blob Storage への依存により、Office 365 ルート フィルターのみを使用する Azure ExpressRoute をサポートStorage。 これらの機能を使用するには、サポート可能な Azure 接続オプション (インターネット接続や Azure パブリック ルート フィルターを使用した Azure ExpressRoute など) を使用して、Azure Blob Storage への個別の接続が必要です。 これらの両方の機能に対するこのような接続の確立を評価する必要があります。 Office 365情報保護チームは、この制限を認識し、これらの両方の機能の Office 365 ルート フィルターに限定される Office 365 の Azure ExpressRoute のサポートを積極的に提供しています。
 
-- Microsoft 365 Apps for enterprise 用の追加のオプション エンドポイントは一覧に記載されていないので、ユーザーがエンタープライズ アプリケーション用 Microsoft 365 Apps を起動し、ドキュメントを編集する必要はありません。 オプションのエンドポイントは Microsoft データセンターでホストされ、顧客データの処理、送信、または保存は行ないます。 これらのエンドポイントへのユーザー接続は、既定のインターネット出力境界に転送することをお勧めします。
+- 一覧に表示されない、Microsoft 365 Apps for enterpriseアプリケーションを起動してドキュメントを編集するためにユーザーに必要Microsoft 365 Apps for enterpriseオプションのエンドポイントが追加されています。 オプションのエンドポイントは Microsoft データセンターでホストされ、顧客データの処理、送信、または保存は行ないます。 これらのエンドポイントへのユーザー接続は、既定のインターネット出力境界に転送することをお勧めします。

@@ -60,7 +60,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 |送信者の指定のプロパティが次の単語のいずれかを含む|condition: *SenderADAttributeContainsWords* <br/> 例外: *ExceptIfSenderADAttributeContainsWords*|First プロパティ: `ADAttribute` <p> 2 番目のプロパティ: `Words`|送信者の指定した Active Directory 属性に、指定された単語が含まれているメッセージ。|
 |送信者の指定のプロパティが次のテキスト パターンと一致する|condition: *SenderADAttributeMatchesPatterns* <br/> 例外: *ExceptIfSenderADAttributeMatchesPatterns*|First プロパティ: `ADAttribute` <p> 2 番目のプロパティ: `Patterns`|送信者の指定した Active Directory 属性に、指定した正規表現に一致するテキスト パターンが含まれるメッセージ。|
 
-### <a name="recipients"></a>受信者
+### <a name="recipients"></a>Recipients
 
 |**DLP の条件または例外**| **PowerShell の condition/exception パラメーター Microsoft 365** |    **プロパティの種類** | **説明**|
 |---------|---------|---------|---------|

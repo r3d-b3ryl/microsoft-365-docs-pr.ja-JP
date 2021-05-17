@@ -302,7 +302,7 @@ Contoso には、人事、営業、マーケティング、リサーチ、製造
 
 Contoso 社は、Azure Active Directory の Department 属性を使用して、次のようにセグメントを定義します。
 
-| Department | セグメント定義 |
+| 部署 | セグメント定義 |
 |:-------------|:---------------------|
 | 人事 | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` |
 | 営業 | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"` |

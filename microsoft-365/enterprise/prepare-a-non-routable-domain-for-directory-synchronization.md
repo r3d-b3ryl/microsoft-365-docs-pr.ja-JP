@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: Microsoft 365 テナントと同期する前に、展開できないドメインがオンプレミスのユーザー アカウントに関連付けられている場合の操作について説明します。
+description: 展開できないドメインがオンプレミスのユーザー アカウントに関連付けられている場合の操作を、テナントと同期する前にMicrosoft 365します。
 ms.openlocfilehash: e4d0e020c5792c610d501c33e8f3d5131b7a1ff0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -31,25 +31,25 @@ ms.locfileid: "50927398"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
 
-オンプレミス ディレクトリを Microsoft 365 と同期する場合は、Azure Active Directory (Azure Active Directory) に検証済みのドメインをAD。 オンプレミスの Active Directory ドメイン サービス (DS) ドメインに関連付けられているユーザー プリンシパル名 (UPN) AD同期されます。 ただし、.local など、アウトできないドメインを含む UPN (例: billa@contoso.local) は、.onmicrosoft.com ドメイン (例: billa@contoso.onmicrosoft.com) に同期されます。 
+オンプレミス のディレクトリを Microsoft 365 と同期する場合は、Azure Active Directory (Azure AD) に確認済みドメインを持っている必要があります。 オンプレミスの Active Directory ドメイン サービス (DS) ドメインに関連付けられているユーザー プリンシパル名 (UPN) AD同期されます。 ただし、.local など、アウトできないドメインを含む UPN (例: billa@contoso.local) は、.onmicrosoft.com ドメイン (例: billa@contoso.onmicrosoft.com) に同期されます。 
 
 現在、AD DS のユーザー アカウントに .local" ドメインを使用している場合は、Microsoft 365 ドメインと適切に同期するために、billa@contoso.com などの検証済みドメインを使用するドメインを変更してください。
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>オンプレミスドメインが .local の場合は、どうしますか?
 
-Azure AD Connect を使用して、Microsoft 365 ADの Azure ADテナントに DS を同期します。 詳細については、「オンプレミス ID と Azure ID の統合」を[参照AD。](/azure/architecture/reference-architectures/identity/azure-ad)
+Azure AD ConnectをADテナントの Azure ADテナントに同期Microsoft 365します。 詳細については、「オンプレミス ID と Azure ID の統合」を[参照AD。](/azure/architecture/reference-architectures/identity/azure-ad)
   
-Azure AD Connect は、ユーザーの UPN とパスワードを同期し、ユーザーがオンプレミスで使用するのと同じ資格情報でサインインできます。 ただし、Azure AD Connect は、Microsoft 365 によって検証されたドメインにのみユーザーを同期します。 つまり、Microsoft 365 ID は Azure ADによって管理されるので、ドメインは Azure AD。 つまり、ドメインは有効なインターネット ドメイン (.com、.org、.net、.us など) である必要があります。 内部の AD DS で使用するドメインが、ラウトできないドメイン (".local"など) のみを使用している場合、Microsoft 365 テナントの検証済みドメインと一致しない可能性があります。 この問題を解決するには、オンプレミスのドメイン DS でプライマリ ドメインAD、または 1 つ以上の UPN サフィックスを追加します。
+Azure AD Connectユーザーの UPN とパスワードを同期して、ユーザーがオンプレミスで使用するのと同じ資格情報でサインインできます。 ただし、Azure AD Connectは、ユーザーによって検証されるドメインにのみ同期Microsoft 365。 つまり、ドメインは Azure ADによってAD、Microsoft 365によって管理AD。 つまり、ドメインは有効なインターネット ドメイン (.com、.org、.net、.us など) である必要があります。 内部の AD DS で使用されているドメインが、ラウトできないドメイン (".local"など) のみを使用している場合は、Microsoft 365 テナントの検証済みドメインと一致する可能性があります。 この問題を解決するには、オンプレミスのドメイン DS でプライマリ ドメインAD、または 1 つ以上の UPN サフィックスを追加します。
   
 ### <a name="change-your-primary-domain"></a>プライマリ ドメインを変更する
 
-プライマリ ドメインを Microsoft 365 で確認したドメインに変更します (たとえば、contoso.com。 その後、ドメイン contoso.local を持つすべてのユーザーが、contoso.com。 ただし、これは非常に複雑なプロセスであり、より簡単なソリューションについては、次のセクションで説明します。
+プライマリ ドメインを、たとえば、Microsoft 365で確認したドメインに contoso.com。 その後、ドメイン contoso.local を持つすべてのユーザーが、contoso.com。 ただし、これは非常に複雑なプロセスであり、より簡単なソリューションについては、次のセクションで説明します。
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>UPN サフィックスを追加してユーザーを更新する
 
-microsoft 365 で確認したドメイン (またはドメイン) に一致する新しい UPN サフィックスまたはサフィックスを AD DS に登録することで、.local の問題を解決できます。 新しいサフィックスを登録した後、ユーザー の UPN を更新して、ユーザー アカウントが新しいドメイン名に置き換 billa@contoso.com。
+"ローカル" の問題を解決するには、AD DS に新しい UPN サフィックスまたはサフィックスを登録して、Microsoft 365 で確認したドメイン (またはドメイン) と一致します。 新しいサフィックスを登録した後、ユーザー の UPN を更新して、ユーザー アカウントが新しいドメイン名に置き換 billa@contoso.com。
   
-確認済みドメインを使用するために UPN を更新した後、オンプレミスのドメイン DS を Microsoft 365 とADする準備が整いました。
+確認済みドメインを使用するために UPN を更新した後、オンプレミスの DS と ADを同期Microsoft 365。
   
 #### <a name="step-1-add-the-new-upn-suffix"></a>手順 1: 新しい UPN サフィックスを追加する**
   

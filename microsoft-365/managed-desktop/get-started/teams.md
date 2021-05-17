@@ -23,7 +23,7 @@ ms.locfileid: "50920658"
 
 ## <a name="initial-deployment"></a>初期展開
 
-ほとんどのハードウェア ベンダーは、イメージの一部として Teams をまだ含めないので、Microsoft Managed Desktop は Microsoft Intune を使用して Teams をデバイスに展開します。 すべての管理対象デバイスに [Teams .msi](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) パッケージがインストールされ、デバイスにサインインしているすべてのユーザーが Microsoft Teams を使用できる状態にできます。 パッケージのインストールが最初に完了すると、Teams は自動的に起動し、デスクトップにショートカットを追加します。
+ほとんどのハードウェア ベンダーは、イメージの一部として Teams をまだ含めないので、Microsoft Managed Desktop は Microsoft Intune を使用して Teams をデバイスに展開します。 すべての管理対象デバイスには Teams .msi [パッケージ](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) がインストールされ、デバイスにサインインしているすべてのユーザーが Microsoft Teams を使用できる状態にできます。 パッケージのインストールが最初に完了すると、Teams は自動的に起動し、デスクトップにショートカットを追加します。
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune の変更点
 

@@ -55,4 +55,4 @@ Basic Mobility and Security を効果的にオフにするには、セキュリ�
 3.  [警告] ダイアログ ボックスで、[はい] を **選択します**。
 
 >[!NOTE]
->組織のデバイスがまだブロック状態にある場合にデバイスのブロックを解除する手順については、ブログ記事「モバイル デバイス管理からアクセス制御を削除する」を参照Office [365.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)
+>組織のデバイスがまだブロック状態にある場合にデバイスのブロックを解除する手順については、ブログの投稿「アクセス制御をブロックから削除する」を[参照Mobile Device Management for Office 365。](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)

@@ -1,6 +1,6 @@
 ---
 title: 情報バリア ポリシーの属性
-description: この記事は、情報バリア セグメントの定義に使用できる Azure Active Directory ユーザー アカウント属性のリファレンスです。
+description: この記事は、情報バリア Azure Active Directory定義するために使用できるユーザー アカウント属性のリファレンスです。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -22,12 +22,12 @@ ms.locfileid: "50919733"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>情報バリア ポリシーの属性
 
-Azure Active Directory の特定の属性を使用して、ユーザーをセグメント化できます。 セグメントを定義すると、これらのセグメントを情報バリア ポリシーのフィルターとして使用できます。 たとえば、部門を使用して組織内の部署別にユーザーのセグメントを定義できます (2 つの部門で同時に 1 人の従業員が働かされていないと仮定します)。
+ユーザーをセグメント化Azure Active Directory特定の属性を使用できます。 セグメントを定義すると、これらのセグメントを情報バリア ポリシーのフィルターとして使用できます。 たとえば、部門を使用して組織内の部署別にユーザーのセグメントを定義できます (2 つの部門で同時に 1 人の従業員が働かされていないと仮定します)。
 
 この記事では、情報バリアで属性を使用する方法について説明し、使用できる属性の一覧を提供します。 情報バリアの詳細については、次のリソースを参照してください。
 
 - [情報障壁](information-barriers.md)
-- [Microsoft Teams で情報バリアのポリシーを定義する](information-barriers-policies.md)
+- [情報バリアのポリシーを定義Microsoft Teams](information-barriers-policies.md)
 - [情報バリア ポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>情報バリア ポリシーで属性を使用する方法
@@ -38,9 +38,9 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
 
 2. 手順 1 で選択した属性の値がユーザー アカウントに入力されている必要があります。 ユーザー アカウントの詳細を表示し、必要に応じてユーザー アカウントを編集して属性値を含めます。 
 
-    - 複数のアカウントを編集する (または PowerShell を使用して 1 つのアカウントを編集する) には、「Configure user account properties with [Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)」を参照してください。
+    - 複数のアカウントを編集する (または PowerShell を使用して 1 つのアカウントを編集する) には、「PowerShell を使用してユーザー アカウントのプロパティを構成する[Office 365参照してください](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
 
-    - 1 つのアカウントを編集するには、「Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する [」を参照してください](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+    - 1 つのアカウントを編集するには、「ユーザープロファイルを使用してユーザーのプロファイル情報を追加または更新する」[を参照](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)Azure Active Directory。
 
 3. [次の例に似た PowerShell](information-barriers-policies.md#define-segments-using-powershell)を使用してセグメントを定義します。
 
@@ -53,14 +53,14 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
     > [!TIP]
     > セグメントを定義する場合は、すべてのセグメントに同じ属性を使用します。 たとえば、Department を使用して一部のセグメントを定義する場合は *、Department* を使用してすべてのセグメントを *定義します*。 MemberOf を使用して、Department および *他のセグメントを使用* して一部のセグメント *を定義しない*。 セグメントが重ならないようにします。各ユーザーは、1 つのセグメントに割り当てる必要があります。
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>参照
 
 次の表に、情報バリアで使用できる属性を示します。
 
-|**Azure Active Directory プロパティ名 <br/> (LDAP 表示名)**|**Exchange プロパティ名**|
+|**Azure Active Directoryプロパティ名 <br/> (LDAP 表示名)**|**Exchangeプロパティ名**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
-| Company | Company |
+| 会社名 | 会社名 |
 | Department | Department |
 | ExtensionAttribute1 | CustomAttribute1 |
 | ExtensionAttribute2 | CustomAttribute2 |
@@ -96,6 +96,6 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
 
 ## <a name="resources"></a>リソース
 
-- [Microsoft Teams で情報バリアのポリシーを定義する](information-barriers-policies.md)
+- [情報バリアのポリシーを定義Microsoft Teams](information-barriers-policies.md)
 - [情報バリアのトラブルシューティング](information-barriers-troubleshooting.md)
 - [情報障壁](information-barriers.md)

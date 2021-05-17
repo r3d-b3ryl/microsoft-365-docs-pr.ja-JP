@@ -26,7 +26,7 @@ ms.locfileid: "50926034"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 テスト環境でのシミュレートされたクロスプレミスの仮想ネットワーク
 
-*このテスト ラボ ガイドは、Microsoft 365 for enterprise と 365 Enterprise テストOffice両方に使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ環境とテスト環境Microsoft 365両方Office 365 Enterprise使用できます。*
 
 この記事では、2 つの Azure 仮想ネットワークを使用した、Microsoft Azure でのシミュレートされたハイブリッド クラウド環境の作成について順を追って説明します。最終的な構成は、次のようになります。 
   
@@ -59,12 +59,12 @@ ms.locfileid: "50926034"
 > [!NOTE]
 > この構成では、有料版の Azure サブスクリプションが必要です。 
 
-結果の環境を使用して[、Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise)の機能をテストし[](m365-enterprise-test-lab-guides.md)、追加のテスト ラボ ガイドを使用するか、独自にテストできます。
+結果の環境を使用して、追加のテスト ラボ ガイド[を](https://www.microsoft.com/microsoft-365/enterprise)使用して、Microsoft 365の機能を[](m365-enterprise-test-lab-guides.md)テストできます。
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Microsoft [365 for enterprise Test Lab](../downloads/Microsoft365EnterpriseTLGStack.pdf) Guide Stack に移動し、Microsoft 365 for enterprise Test Lab Guide stack のすべての記事にビジュアル マップを表示します。
+> エンタープライズ テスト[Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)ガイド スタックに移動し、エンタープライズ テスト ラボ ガイド スタックの Microsoft 365記事のビジュアル マップを表示します。
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>フェーズ 1: TestLab 仮想ネットワークを構成する
 
@@ -205,7 +205,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
   
 シミュレートされた Azure ハイブリッド クラウド環境をテストする準備ができました。
   
-これで、エンタープライズ向け [Microsoft 365 の追加機能を試す準備ができました](https://www.microsoft.com/microsoft-365/enterprise)。
+これで、エンタープライズ向けアプリケーションの追加機能をMicrosoft 365[準備ができました](https://www.microsoft.com/microsoft-365/enterprise)。
   
 ## <a name="next-steps"></a>次の手順
 

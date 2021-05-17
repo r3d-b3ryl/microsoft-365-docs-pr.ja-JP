@@ -17,7 +17,7 @@ ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: OneDrive for Business および SharePoint Online のデータ セキュリティの暗号化の基本的な要素について説明します。
+description: オンラインおよびオンラインでのデータ セキュリティの暗号化の基本的なOneDrive for BusinessについてSharePointします。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: ca93d04fa21487ad054cd9cb924dff1fc15abfbd
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -28,11 +28,11 @@ ms.locfileid: "50922631"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business および SharePoint Online におけるデータ暗号化
 
-OneDrive for Business および SharePoint Online のデータ セキュリティの暗号化の基本的な要素について説明します。
+オンラインおよびオンラインでのデータ セキュリティの暗号化の基本的なOneDrive for BusinessについてSharePointします。
   
-## <a name="security-and-data-encryption-in-office-365"></a>セキュリティとデータの暗号化 (Office 365)
+## <a name="security-and-data-encryption-in-office-365"></a>セキュリティとデータの暗号化 (Office 365
 
-Microsoft 365 は、物理データ センターのセキュリティ、ネットワーク セキュリティ、アクセス セキュリティ、アプリケーション セキュリティ、データ セキュリティなど、複数の層で広範な保護を提供する高度に安全な環境です。 この記事では、OneDrive for Business および SharePoint Online のデータ セキュリティの転送中および保存時の暗号化側に特に焦点を当てします。
+Microsoft 365は、物理データ センター のセキュリティ、ネットワーク セキュリティ、アクセス セキュリティ、アプリケーション セキュリティ、データ セキュリティなど、複数の層で広範な保護を提供する高度にセキュリティの高い環境です。 この記事では、オンラインおよびオンラインのデータ セキュリティの転送中および保存時の暗号化OneDrive for BusinessにSharePointします。
   
 データの暗号化の仕組みについて、次のビデオをご覧ください。
   
@@ -40,9 +40,9 @@ Microsoft 365 は、物理データ センターのセキュリティ、ネッ�
   
 ## <a name="encryption-of-data-in-transit"></a>転送中データの暗号化
 
-OneDrive for Business と SharePoint Online では、データがデータセンターに入り、データを終了する 2 つのシナリオがあります。
+オンラインOneDrive for Businessおよび SharePointでは、データがデータセンターに入り、データセンターを終了する 2 つのシナリオがあります。
   
-- **サーバーとのクライアント通信** インターネット上の OneDrive for Business への通信では、SSL/TLS 接続が使用されます。 すべての SSL 接続は、2048 ビット キーを使用して確立されます。
+- **サーバーとのクライアント通信** インターネット上OneDrive for Business通信では、SSL/TLS 接続が使用されます。 すべての SSL 接続は、2048 ビット キーを使用して確立されます。
 
 - **データセンター間のデータ移動** データセンター間でデータを移動する主な理由は、障害復旧を有効にする geo レプリケーションです。 たとえば、トランザクション ログSQL Server BLOB ストレージデルタは、このパイプに沿って移動します。 このデータは既にプライベート ネットワークを使用して送信されていますが、クラス最高の暗号化によってさらに保護されます。 
 
@@ -50,13 +50,13 @@ OneDrive for Business と SharePoint Online では、データがデータセン
 
 保管中の暗号化には、ユーザー コンテンツの BitLocker ディスク レベル暗号化と、ファイル単位暗号化が関係しています。
   
-BitLocker は、OneDrive for Business および SharePoint Online 用にサービス全体に展開されます。 ファイルごとの暗号化は、Microsoft 365 マルチテナントの OneDrive for Business と SharePoint Online にも含まれます。マルチテナントテクノロジ上に構築された新しい専用環境も使用できます。
+BitLockerは、サービス全体OneDrive for BusinessオンラインSharePoint展開されます。 ファイルごとの暗号化は、OneDrive for Business および SharePoint Online Microsoft 365 マルチテナントテクノロジ上に構築された新しい専用環境にも含まれます。
   
 BitLocker 暗号化はディスク上のすべてのデータを暗号化し、ファイル単位暗号化の場合にはファイルごとに固有の暗号化キーを含めてさらに細かく暗号化を行えます。 つまり、各ファイルを更新するたびに独自の暗号化キーを使用して暗号化されます。 暗号化されたコンテンツのキーは、格納される前に、コンテンツとは物理的に別の場所に格納されます。 この暗号化の各ステップでは、256 ビット キーによる高度暗号化標準 (Advanced Encryption Standard: AES) が使用され、Federal Information Processing Standard (FIPS) 140-2 に準拠しています。 暗号化されたコンテンツは、データセンターにある多数のコンテナーに配布され、各コンテナーでは固有の資格情報が使用されます。 これらの資格情報はコンテンツまたはコンテンツ キーとは物理的に別の場所に格納されます。
   
 FIPS 140-2 コンプライアンスの詳細については [、「FIPS 140-2 コンプライアンス」を参照してください](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105))。
   
-ファイル レベルでの保管中の暗号化では Blob ストレージを活用し、事実上無制限のストレージ拡張を行ったり、前例のないレベルの保護機能を提供したりできます。 OneDrive for Business および SharePoint Online のすべての顧客コンテンツが BLOB ストレージに移行されます。 データをセキュリティで保護する方法を次に示します。
+ファイル レベルでの保管中の暗号化では Blob ストレージを活用し、事実上無制限のストレージ拡張を行ったり、前例のないレベルの保護機能を提供したりできます。 [オンライン] および [OneDrive for Business] SharePointのすべての顧客コンテンツは、BLOB ストレージに移行されます。 データをセキュリティで保護する方法を次に示します。
   
 1. すべてのコンテンツが暗号化されます。その場合、複数のキーを使用して暗号化されることもあります。暗号化されたデータはデータセンターで分散されます。格納される各ファイルはサイズに応じて 1 つ以上のチャンクに分けられます。その後、各チャンクは固有のキーを使用して暗号化されます。更新作業も同様に処理されます。つまり、ユーザーによって送信された一連の変更または差分がチャンクに分けられ、それぞれが独自のキーで暗号化されます。
 

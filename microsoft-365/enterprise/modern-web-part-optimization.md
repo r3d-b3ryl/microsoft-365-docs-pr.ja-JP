@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: ページ診断を使用して SharePoint Online モダン サイト ページの Web パーツのパフォーマンスを最適化する方法について説明します。
+description: ページ診断を使用して、Web パーツのパフォーマンスを最適化する方法については、「オンラインモダン サイト SharePointページ」を参照してください。
 ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT

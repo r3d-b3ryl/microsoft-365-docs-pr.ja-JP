@@ -1,5 +1,5 @@
 ---
-title: ユーザー ライセンスの割り当て中に Microsoft 365 サービスへのアクセスを無効にする
+title: ユーザー ライセンスの割り当Microsoft 365サービスへのアクセスを無効にする
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,7 +17,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
-description: PowerShell for Microsoft 365 を使用して、ユーザー アカウントにライセンスを割り当て、特定のサービス プランを同時に無効にする方法について説明します。
+description: PowerShell を使用してユーザー アカウントにライセンスを割り当て、特定のサービス プランを同時に無効にする方法Microsoft 365。
 ms.openlocfilehash: 7486968f6f4822047a1697ee1e05129277fd11a8
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,15 +25,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50929434"
 ---
-# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>ユーザー ライセンスの割り当て中に Microsoft 365 サービスへのアクセスを無効にする
+# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>ユーザー ライセンスの割り当Microsoft 365サービスへのアクセスを無効にする
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 サブスクリプションには、個々のサービスのサービス プランが用意されています。 Microsoft 365 管理者は、多くの場合、ユーザーにライセンスを割り当てるときに特定のプランを無効にする必要があります。 この記事の手順では、Microsoft 365 ライセンスを割り当てながら、個々のユーザー アカウントまたは複数のユーザー アカウントに PowerShell を使用して特定のサービス プランを無効にできます。
+Microsoft 365には、個々のサービスのサービス プランが用意されています。 Microsoft 365管理者は、ユーザーにライセンスを割り当てる際に、特定のプランを無効にする必要があります。 この記事の手順では、個々のユーザー アカウントまたは複数のユーザー アカウントに対して PowerShell を使用して特定のサービス プランを無効にしながら、Microsoft 365 ライセンスを割り当てできます。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 
 次に、このコマンドを使用してテナントのライセンス プランを一覧表示します。
@@ -67,7 +67,7 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-まず [、Microsoft 365 テナントに接続します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 次に、このコマンドを実行して現在のサブスクリプションを確認します。
   
@@ -81,7 +81,7 @@ Get-MsolAccountSku
 
 `Get-MsolAccountSku` コマンドの出力に関して次に説明します。
   
-- **AccountSkuId** は、次の形式で組織 \<OrganizationName> のサブスクリプション \<Subscription> です。 これは、Microsoft 365 に登録するときに指定した値であり、組織 \<OrganizationName> に固有の値です。 値 \<Subscription> は、特定のサブスクリプションの値です。 たとえば、litwareinc:ENTERPRISEPACK の場合、組織名は litwareinc、サブスクリプション名は ENTERPRISEPACK (Office 365 Enterprise E3) です。
+- **AccountSkuId** は、次の形式で組織 \<OrganizationName> のサブスクリプション \<Subscription> です。 この値は、ユーザーが組織に登録したMicrosoft 365、組織 \<OrganizationName> に固有の値です。 値 \<Subscription> は、特定のサブスクリプションの値です。 たとえば、litwareinc:ENTERPRISEPACK の場合、組織名は litwareinc で、サブスクリプション名は ENTERPRISEPACK (E3 Office 365 Enterpriseです。
     
 - **ActiveUnits** は、サブスクリプションで購入したライセンス数です。
     
@@ -89,9 +89,9 @@ Get-MsolAccountSku
     
 - **ConsumedUnits** は、このサブスクリプションでユーザーに割り当てたライセンスの数です。
     
-ライセンスを取得するユーザーを含む Microsoft 365 サブスクリプションの AccountSkuId に注意してください。 また、割り当てるのに十分なライセンスが存在する **(ActiveUnits から ConsumedUnits** を減算する) **必要があります** 。
+ライセンスを取得するユーザーをMicrosoft 365サブスクリプションの AccountSkuId に注意してください。 また、割り当てるのに十分なライセンスが存在する **(ActiveUnits から ConsumedUnits** を減算する) **必要があります** 。
   
-次に、このコマンドを実行して、すべてのサブスクリプションで利用可能な Microsoft 365 サービス プランの詳細を確認します。
+次に、このコマンドを実行して、すべてのサブスクリプションで利用可能Microsoft 365サービス プランの詳細を確認します。
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
@@ -99,9 +99,9 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 このコマンドの出力に基づいて、ユーザーにライセンスを割り当てるときに無効にするサービス プランを判別します。
   
-サービス プランとそれに対応する Microsoft 365 サービスの一部を次に示します。
+ここでは、サービス プランとそれに対応するサービスの一覧Microsoft 365示します。
 
-次の表に、最も一般的なサービスの Microsoft 365 サービス プランとその親しみ名を示します。 実際のサービス プランの一覧とは、異なる場合があります。 
+次の表に、最も一Microsoft 365サービスプランの名前と、その親近名を示します。 実際のサービス プランの一覧とは、異なる場合があります。 
   
 |**サービス プラン**|**説明**|
 |:-----|:-----|
@@ -109,7 +109,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise (以前は Office *365 ProPlus)*  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(以前に名前が付Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
@@ -186,7 +186,7 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
     
 ## <a name="see-also"></a>関連項目
 
-[PowerShell を使用して Microsoft 365 サービスへのアクセスを無効にする](disable-access-to-services-with-microsoft-365-powershell.md)
+[PowerShell を使用してMicrosoft 365サービスへのアクセスを無効にする](disable-access-to-services-with-microsoft-365-powershell.md)
   
 [PowerShell を使用して Sway へのアクセスを無効にする](disable-access-to-sway-with-microsoft-365-powershell.md)
   

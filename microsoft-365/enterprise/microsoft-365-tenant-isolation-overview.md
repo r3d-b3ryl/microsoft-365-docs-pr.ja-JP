@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 でのテナントの分離
+title: テナントの分離 (Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: この記事では、Microsoft 365 のようなクラウド サービスでテナント分離を適用する方法の概要について説明します。
+description: この記事では、Microsoft がクラウド サービス (クラウド サービスなど) でテナントの分離を強制する方法の概要をMicrosoft 365。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 7c5be65186b75f6056a64b776e4f0d25bcd55eb1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923078"
 ---
-# <a name="tenant-isolation-in-microsoft-365"></a>Microsoft 365 でのテナントの分離
+# <a name="tenant-isolation-in-microsoft-365"></a>テナントの分離 (Microsoft 365
 
 クラウド コンピューティングの主な利点の 1 つは、多数の顧客間で同時に共有される共通のインフラストラクチャの概念で、規模の経済性につながる点です。 この概念は、マルチ *テナンシーと呼ばれる。* Microsoft は、クラウド サービスのマルチテナント アーキテクチャによって、エンタープライズレベルのセキュリティ、機密性、プライバシー、完全性、可用性の基準をサポートするため、継続的に取り組んでいます。
 
@@ -34,12 +34,12 @@ ms.locfileid: "50923078"
 1.    テナント間の顧客コンテンツの漏洩または不正アクセスの防止。そして
 2.    あるテナントのアクションが別のテナントのサービスに悪影響を及ぼすのを防ぐ
 
-Microsoft 365 のサービスやアプリケーションを侵害したり、他のテナントや Microsoft 365 システム自体の情報に対する不正アクセスを防止したりするために、Microsoft 365 全体に複数の保護が実装されています。
+Microsoft 365 では、Microsoft 365 サービスやアプリケーションを侵害したり、他のテナントや Microsoft 365 システム自体の情報に対する不正アクセスを防止したりするために、Microsoft 365 全体で複数の保護が実装されています。
 
-- Microsoft 365 サービスの各テナント内の顧客コンテンツの論理的な分離は、Azure Active Directory の承認と役割ベースのアクセス制御によって実現されます。
-- SharePoint Online は、ストレージ レベルでデータ分離メカニズムを提供します。
-- Microsoft では、厳密な物理的セキュリティ、バックグラウンド スクリーニング、多層暗号化戦略を使用して、顧客コンテンツの機密性と整合性を保護します。 すべての Microsoft 365 データセンターには生体認証アクセス制御が備わっています。ほとんどの場合、物理的なアクセスを得るために手のひらの印刷が必要です。 さらに、米国に拠点を置く Microsoft のすべての従業員は、採用プロセスの一環として標準のバックグラウンド チェックを正常に完了する必要があります。 Microsoft 365 の管理アクセスに使用されるコントロールの詳細については [、「Microsoft 365 管理アクセス制御」を参照してください](/compliance/assurance/assurance-administrative-access-controls-overview)。
-- Microsoft 365 では、BitLocker、ファイルごとの暗号化、トランスポート層セキュリティ (TLS)、インターネット プロトコル セキュリティ (IPsec) など、保存中および転送中の顧客コンテンツを暗号化するサービス側テクノロジを使用します。 Microsoft 365 での暗号化の詳細については [、「Microsoft 365 のデータ暗号化テクノロジ」を参照してください](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)。
+- 各テナント内の顧客コンテンツの論理的な分離は、Microsoft 365アクセス制御とロールベースAzure Active Directoryによって実現されます。
+- SharePointOnline は、ストレージ レベルでのデータ分離メカニズムを提供します。
+- Microsoft では、厳密な物理的セキュリティ、バックグラウンド スクリーニング、多層暗号化戦略を使用して、顧客コンテンツの機密性と整合性を保護します。 すべてのMicrosoft 365は生体認証アクセス制御を備え、ほとんどの場合、物理的なアクセスを得るために手のひらの印刷が必要です。 さらに、米国に拠点を置く Microsoft のすべての従業員は、採用プロセスの一環として標準のバックグラウンド チェックを正常に完了する必要があります。 管理アクセスに使用されるコントロールの詳細については、「Microsoft 365アクセス制御」を[参照Microsoft 365してください](/compliance/assurance/assurance-administrative-access-controls-overview)。
+- Microsoft 365は、BitLocker、ファイルごとの暗号化、トランスポート層セキュリティ (TLS)、インターネット プロトコル セキュリティ (IPsec) など、保存中および転送中の顧客コンテンツを暗号化するサービス側テクノロジを使用します。 暗号化の詳細については、「Microsoft 365 のデータ暗号化テクノロジ」[を参照Microsoft 365。](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)
 
 上記の保護を組み合わせて、物理的な分離によって提供されるのと同等の脅威保護と軽減策を提供する堅牢な論理分離制御を提供します。
 

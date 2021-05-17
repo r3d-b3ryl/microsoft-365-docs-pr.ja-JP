@@ -27,11 +27,11 @@ ms.locfileid: "50921482"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードの書き戻し
 
-*このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ テスト環境Microsoft 365にのみ使用できます。*
 
-ユーザーはパスワードの書き戻しを使用して、Azure Active Directory (Azure AD) を使用してパスワードを更新し、ローカルの Active Directory ドメイン サービス (AD DS) にレプリケートできます。 パスワードの書き戻しを使用すると、ユーザーは、元のユーザー アカウントが保存されているオンプレミスの DS ADパスワードを更新する必要はありません。 これにより、オンプレミス ネットワークへのリモート アクセス接続を持たなかったローミングユーザーまたはリモート ユーザーが役立ちます。
+ユーザーはパスワード の書き戻しを使用して、Azure Active Directory (Azure AD) を使用してパスワードを更新し、ローカルの Active Directory ドメイン サービス (AD DS) にレプリケートできます。 パスワードの書き戻しを使用すると、ユーザーは、元のユーザー アカウントが保存されているオンプレミスの DS ADパスワードを更新する必要はありません。 これにより、オンプレミス ネットワークへのリモート アクセス接続を持たなかったローミングユーザーまたはリモート ユーザーが役立ちます。
 
-この記事では、パスワードライトバック用に Microsoft 365 テスト環境を構成する方法について説明します。
+この記事では、パスワードの書き戻しMicrosoft 365テスト環境を構成する方法について説明します。
 
 パスワード ライトバック用にテスト環境を構成するには、次の 2 つのフェーズが必要です。
 - [フェーズ 1: Microsoft 365 テスト環境のパスワード ハッシュ同期を構成する](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -40,7 +40,7 @@ ms.locfileid: "50921482"
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Microsoft 365 for enterprise Test Lab Guide スタックのすべての記事へのビジュアル マップについては [、「Microsoft 365 for enterprise Test Lab Guide Stack」を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>フェーズ 1: Microsoft 365 テスト環境のパスワード ハッシュ同期を構成する
 
@@ -109,9 +109,9 @@ ms.locfileid: "50921482"
 
 4. [追加タスク **] ページで** 、[同期オプションの **カスタマイズ] を選択し**、[次へ] を **選択します**。
 
-5. [Azure **への接続] ページAD、** グローバル管理者アカウントの資格情報を入力し、[次へ] を **選択します**。
+5. [Azure **Connect] ページで** AD管理者アカウントの資格情報を入力し、[次へ] を選択 **します**。
 
-6. [ディレクトリの **接続] ページと** **[ドメイン/OU フィルター] ページで、[** 次へ] を **選択します**。
+6. [ディレクトリ] **Connect[****ドメイン/OU フィルター] ページで、[** 次へ] を **選択します**。
 
 7. [オプション機能 **] ページで** 、[パスワードの書き **戻し] を選択し**、[次へ] を **選択します**。
 
@@ -127,7 +127,7 @@ ms.locfileid: "50921482"
 
 この構成は、次の内容で成立します。
 
-- MICROSOFT 365 E5 試用版または有料サブスクリプションで、テストラボDNS ドメイン使用します。\<*your domain name*> が登録されている Microsoft 365 E5 または Office 365 E5 の試用版サブスクリプションまたは有料サブスクリプション。
+- TESTLAB Microsoft 365 E5試用版または有料サブスクリプションをDNS ドメインします。\<*your domain name*> が登録されている Microsoft 365 E5 または Office 365 E5 の試用版サブスクリプションまたは有料サブスクリプション。
 - Azure 仮想ネットワークのサブネット上の DC1、APP1、および CLIENT1 仮想マシンで構成される、インターネットに接続された簡略化された組織イントラネット。
 - Azure AD Connect が APP1 上で実行され、Microsoft 365 サブスクリプションの Azure AD テナントから、アカウントおよびグループのリストが TESTLAB AD DS ドメインに同期されます。
 - パスワードの書き戻しが有効になっているため、ユーザーは簡略化されたイントラネットに接続せずに、Azure AD 経由でパスワードを変更できます。

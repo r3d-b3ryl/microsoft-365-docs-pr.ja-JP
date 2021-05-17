@@ -27,11 +27,11 @@ ms.locfileid: "50921494"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードのリセット
 
-*このテスト ラボ ガイドは、エンタープライズ テスト環境の Microsoft 365 でのみ使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ テスト環境Microsoft 365にのみ使用できます。*
 
 Azure Active Directory (Azure AD) のセルフサービスによるパスワードのリセット (SSPR) によって、ユーザーは自分のパスワードまたはアカウントをリセットまたはロック解除することができます。
 
-この記事では、Microsoft 365 テスト環境でパスワードのリセットを構成およびテストする方法について説明します。
+この記事では、テスト環境でパスワードのリセットを構成およびテストするMicrosoft 365説明します。
 
 SSPR のセットアップには、次の 3 つのフェーズがあります。
 - [フェーズ 1: Microsoft 365 テスト環境のパスワード ハッシュ同期を構成する](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -41,7 +41,7 @@ SSPR のセットアップには、次の 3 つのフェーズがあります。
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Microsoft 365 for enterprise Test Lab Guide スタックのすべての記事へのビジュアル マップについては [、「Microsoft 365 for enterprise Test Lab Guide Stack」を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>フェーズ 1: Microsoft 365 テスト環境のパスワード ハッシュ同期を構成する
 
@@ -70,11 +70,11 @@ SSPR のセットアップには、次の 3 つのフェーズがあります。
 最初に、特定の Azure AD グループ内のアカウントのパスワードのリセットを有効にします。
 
 1. ブラウザーのプライベート インスタンスから [https://portal.azure.com](https://portal.azure.com) を開き、全体管理者アカウントの資格情報でサインインします。
-2. Azure ポータルで、[Azure **Active Directory グループ]**  >  **[新しいグループ**  >  **] を選択します**。
+2. Azure portal で、[グループ] [新しい  >  **Azure Active Directory]**  >  **を選択します**。
 3. **[グループの種類]** を **[セキュリティ]**、**[グループ名]** を **[PWReset]**、**[メンバーシップの種類]** を **[割り当て済み]** に設定します。
 4. [ **メンバー] を** 選択し、[ **ユーザー 3] を** 見つけて選択し、[選択] **を選択し**、[作成] を **選択します**。
 5. **[グループ]** ウィンドウを閉じます。
-6. [Azure Active Directory] ウィンドウで、左側 **のナビゲーションで [パスワード** のリセット] を選択します。
+6. [パスワードのAzure Active Directory] ウィンドウで、**左側のナビゲーションで**[パスワードのリセット] を選択します。
 7. **[パスワードのリセット - プロパティ]** ページの **[セルフサービスによるパスワードのリセットの有効化]** オプションで **[選択済み]** を選択します。
 8. [**グループの選択]** を選択し **、PWReset グループを選択** し、[保存の選択]**を**  >  **選択します**。
 9. プライベート ブラウザー インスタンスを閉じます。

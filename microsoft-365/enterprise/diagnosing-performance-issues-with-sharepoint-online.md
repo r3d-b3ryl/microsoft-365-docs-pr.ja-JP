@@ -18,7 +18,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
-description: この記事では、開発者ツールを使用して SharePoint Online サイトの一般的な問題を診断Internet Explorer示します。
+description: この記事では、開発者ツールを使用してオンライン サイトで一般的なSharePointを診断Internet Explorer示します。
 ms.openlocfilehash: 6a29b8b2df54d74d8237418828a7aa89efdbcfaf
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,19 +28,19 @@ ms.locfileid: "50927614"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>SharePoint Online のパフォーマンスの問題の診断
 
-この記事では、開発者ツールを使用して SharePoint Online サイトの一般的な問題を診断Internet Explorer示します。
+この記事では、開発者ツールを使用してオンライン サイトで一般的なSharePointを診断Internet Explorer示します。
   
-SharePoint Online サイトのページにカスタマイズのパフォーマンス上の問題がある場合は、3 つの異なる方法で識別できます。
+オンライン サイト上のページにカスタマイズのパフォーマンス上SharePoint、3 つの異なる方法があります。
   
 - F12 ツール バー ネットワーク モニター
 
 - カスタマイズされていないベースラインとの比較
 
-- SharePoint Online 応答ヘッダーのメトリック
+- SharePointオンライン応答ヘッダーのメトリック
 
-このトピックでは、これらの各メソッドを使用してパフォーマンスの問題を診断する方法について説明します。 問題の原因を把握したら、SharePoint のパフォーマンス向上に関する記事を使用してソリューションに取り組む必要があります https://aka.ms/tune 。
+このトピックでは、これらの各メソッドを使用してパフォーマンスの問題を診断する方法について説明します。 問題の原因を把握したら、見つけ出すパフォーマンスの向上に関する記事をSharePointソリューションに取り組む必要があります https://aka.ms/tune 。
   
-## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>F12 ツール バーを使用して SharePoint Online のパフォーマンスを診断する
+## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>F12 ツール バーを使用してオンラインでのパフォーマンスをSharePointする
 <a name="F12ToolInfo"> </a>
 
 この記事では、11 Internet Explorer使用します。 他のブラウザーの F12 開発者ツールのバージョンは、若干異なって見える場合があります。同様の機能があります。 F12 開発者ツールの詳細については、以下を参照してください。
@@ -63,17 +63,17 @@ SharePoint Online サイトのページにカスタマイズのパフォーマ�
   
 これにより、ファイルの読み込み時間が視覚的に表示されます。 緑の線は、ページをブラウザーでレンダリングする準備が整った状態を表します。 これにより、サイトのページ読み込み速度が遅くなる可能性があるさまざまなファイルを簡単に確認できます。
   
-## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>SharePoint Online のカスタマイズされていないベースラインの設定
+## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>オンライン用にカスタマイズされていないベースラインをSharePointする
 <a name="F12ToolInfo"> </a>
 
-サイトのパフォーマンスの弱点を特定する最善の方法は、SharePoint Online で完全に使用できるサイト コレクションをセットアップすることです。 この方法では、サイトのさまざまな側面と、ページ上のカスタマイズを行う必要がないものとを比較できます。 OneDrive for Business ホーム ページは、カスタマイズを行う可能性が低い別のサイト コレクションの良い例です。
+サイトのパフォーマンスの弱点を特定する最善の方法は、オンラインで完全に使い切れたサイト コレクションをSharePointすることです。 この方法では、サイトのさまざまな側面と、ページ上のカスタマイズを行う必要がないものとを比較できます。 ホーム OneDrive for Businessは、カスタマイズを行う可能性が低い別のサイト コレクションの良い例です。
   
-## <a name="viewing-sharepoint-response-header-information"></a>SharePoint 応答ヘッダー情報の表示
+## <a name="viewing-sharepoint-response-header-information"></a>応答SharePoint情報の表示
 <a name="F12ToolInfo"> </a>
 
-SharePoint Online では、各ファイルの応答ヘッダーでブラウザーに送り返される情報にアクセスできます。 パフォーマンスの問題を診断する最も有用な値は **SPRequestDuration** です。これは、要求が処理されるサーバーにかかった時間を表示します。 これは、要求が非常に重く、リソースが多いかどうかを判断するのに役立ちます。 これは、サーバーがページにサービスを提供するために実行している作業の量に関する最良の洞察です。
+[SharePointオンライン] では、各ファイルの応答ヘッダーでブラウザーに返される情報にアクセスできます。 パフォーマンスの問題を診断する最も有用な値は **SPRequestDuration** です。これは、要求が処理されるサーバーにかかった時間を表示します。 これは、要求が非常に重く、リソースが多いかどうかを判断するのに役立ちます。 これは、サーバーがページにサービスを提供するために実行している作業の量に関する最良の洞察です。
 
-### <a name="to-view-sharepoint-response-header-information"></a>SharePoint 応答ヘッダー情報を表示するには
+### <a name="to-view-sharepoint-response-header-information"></a>応答ヘッダー SharePointを表示するには
   
 1. F12 ツールがインストールされていることを確認します。 これらのツールのダウンロードとインストールの詳細については [、「F12 ツールの新機能」を参照してください](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))。
 
@@ -87,10 +87,10 @@ SharePoint Online では、各ファイルの応答ヘッダーでブラウザ�
 
     ![応答ヘッダーの URL を示す図](../media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
   
-## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>SharePoint Online のパフォーマンスの問題の原因は何ですか?
+## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>オンラインでのパフォーマンスの問題の原因SharePoint?
 <a name="F12ToolInfo"> </a>
 
-[記事「SharePoint Online](navigation-options-for-sharepoint-online.md)のナビゲーション オプション」では、SPRequestDuration 値を使用して、複雑な構造ナビゲーションが原因でページがサーバー上で処理に長い時間がかかると判断する例を示します。 ベースライン サイトの値を取得することで (カスタマイズなし)、特定のファイルの読み込みに時間がかかっているかどうかを判断できます。 [SharePoint Online のナビゲーション オプションで使用される例](navigation-options-for-sharepoint-online.md)は、メインの .aspx ファイルです。 このファイルには、ページの読み込 ASP.NET 実行されるコードのほとんどが含まれている。 使用するサイト テンプレートに応じて、ホーム ページをカスタマイズする場合は、start.aspx、home.aspx、default.aspx、または別の名前を使用できます。 この数がベースライン サイトよりかなり高い場合は、パフォーマンスの問題を引き起こしている複雑な問題がページに発生しているという良い兆候です。
+SharePoint [Online](navigation-options-for-sharepoint-online.md)のナビゲーション オプションの記事では、SPRequestDuration 値を使用して、複雑な構造ナビゲーションが原因でページがサーバー上で処理に長い時間がかかると判断する例を示します。 ベースライン サイトの値を取得することで (カスタマイズなし)、特定のファイルの読み込みに時間がかかっているかどうかを判断できます。 オンラインのナビゲーション オプションで[使用SharePointは](navigation-options-for-sharepoint-online.md)、メインの .aspx ファイルです。 このファイルには、ページの読み込み ASP.NET 実行されるコードのほとんどが含まれている。 使用するサイト テンプレートに応じて、ホーム ページをカスタマイズする場合は、start.aspx、home.aspx、default.aspx、または別の名前を使用できます。 この数がベースライン サイトよりかなり高い場合は、パフォーマンスの問題を引き起こしている複雑な問題がページに発生しているという良い兆候です。
   
 サイト固有の問題を特定したら、パフォーマンスの低下の原因を把握するために推奨される方法は、ページのカスタマイズなど、考えられるすべての原因を排除し、それらをサイトに 1 つ 1 つ追加し戻すことです。 ページがうまく機能する十分なカスタマイズを削除したら、特定のカスタマイズを 1 つ 1 つ追加できます。
   

@@ -81,7 +81,7 @@ Content-Type | 文字列 | application/json. **必須**
 プロパティ | 型 | 説明
 -|-|-
 status | 列挙 | インシデントの現在の状態を指定します。 使用できる値は ```Active``` ```Resolved``` 、、、および ```Redirected``` です。
-assignedTo | 文字列 | インシデントの所有者。
+assignedTo | string | インシデントの所有者。
 classification | 列挙 | インシデントの仕様。 可能な値は、```Unknown```、```FalsePositive```、```TruePositive``` です。
 決定 | 列挙 | インシデントの決定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
 tags | string List | インシデント タグの一覧。

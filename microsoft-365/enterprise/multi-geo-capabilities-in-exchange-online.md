@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: 機能の制限やメールボックスの配置など、Exchange Online の複数地域機能について説明します。
+description: 機能の制限やメールボックスの配置など、Exchange Onlineの複数地域機能について説明します。
 ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT

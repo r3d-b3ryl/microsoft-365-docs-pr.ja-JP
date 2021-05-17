@@ -1,5 +1,5 @@
 ---
-title: Windows および Office展開ラボ キット
+title: WindowsおよびOffice展開ラボ キット
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -22,11 +22,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/27/2021
 ms.locfileid: "52060875"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Windows および Office展開ラボ キット
+# <a name="windows-and-office-deployment-lab-kit"></a>WindowsおよびOffice展開ラボ キット
 
-Windows および Office 展開ラボ キットは、Windows 10 Enterprise および Microsoft 365 Apps for enterprise を実行しているデスクトップの展開と管理を計画、テスト、検証するために設計されています。 このキットのラボでは、Microsoft Endpoint Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などをご覧ください。
+展開WindowsおよびOfficeの展開ラボ キットは、展開とテストを実行しているデスクトップの展開と管理を計画、テスト、および検証Windows 10 Enterprise設計Microsoft 365 Apps for enterprise。 このキットのラボでは、Microsoft Endpoint Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows オートパイロットなどWindowsを使用します。
 
-このキットは、Windows 10 への Windows 8.1 アップグレードを準備している組織に強くお勧めします。 また、現在 Windows 10、Microsoft 365 Apps for enterprise (旧 Office 365 ProPlus)、または 2019 年Office適用されます。 分離された環境として、結果のラボは展開ツールの更新を探索し、展開関連の自動化をテストするのに最適です。
+このキットは、アップグレードを実行する準備をしている組織Windows 8.1強くお勧Windows 10。 また、2019 年に現在 Windows 10、Microsoft 365 Apps for enterprise (以前はOffice 365 ProPlus)、またはOffice適用されます。 分離された環境として、結果のラボは展開ツールの更新を探索し、展開関連の自動化をテストするのに最適です。
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
@@ -34,9 +34,9 @@ Windows および Office 展開ラボ キットは、Windows 10 Enterprise お�
 
 このキットでは、ドメインに参加しているデスクトップ クライアント、ドメイン コントローラー、インターネット ゲートウェイ、完全に構成された Configuration Manager インスタンスなど、自動的にプロビジョニングされた仮想ラボ環境が提供されます。 このキットには、次の製品の最新の評価バージョンが含まれています。
 
-  - 新機能 Windows 10 Enterprise バージョン 20H2
+  - 新機能 Windows 10 Enterpriseバージョン 20H2
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager バージョン 2010*
+  - Microsoft Endpoint Configuration Managerバージョン 2010*
   - Windows 10 用 Windows アセスメント & デプロイメント キット
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -47,7 +47,7 @@ Windows および Office 展開ラボ キットは、Windows 10 Enterprise お�
 結果のラボは、次の試験に接続するように設計されています。 
 
   - Microsoft 365 E5
-  - Office 365 E5 エンタープライズ モビリティ + セキュリティ (EMS)
+  - Office 365E5 with Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>ステップ バイ ステップ ラボ
 
@@ -61,12 +61,12 @@ Windows および Office 展開ラボ キットは、Windows 10 Enterprise お�
 
 ### <a name="prepare-configuration"></a>構成の準備   
 
-- Windows 10 更新プログラムの配信を最適化する   
-- グループ ポリシーを使用した Windows 10 のサービス
-- Microsoft Intune を使用した Windows 10 のサービス   
-- Configuration Manager を使用した Windows 10 のサービス   
-- Configuration Manager を使用した Microsoft 365 Apps for enterprise のサービス   
-- Intune を使用したエンタープライズ向け Microsoft 365 アプリのサービス  
+- 更新Windows 10の最適化   
+- グループ ポリシー Windows 10サービス サービス
+- サービス Windows 10を使用Microsoft Intune   
+- Configuration Manager Windows 10サービス サービス   
+- Configuration Manager をMicrosoft 365 Apps for enterpriseサービス サービス   
+- Intune をMicrosoft 365 Apps for enterpriseサービスサービス  
 - セキュリティとコンプライアンス   
 
 ### <a name="prepare-applications"></a>アプリケーションの準備    
@@ -79,23 +79,23 @@ Windows および Office 展開ラボ キットは、Windows 10 Enterprise お�
 - Configuration Manager の OS 展開タスク シーケンス
 - Microsoft Deployment Toolkit (MDT) の OS 展開タスク シーケンス
 - Windows Autopilot
-- 新しい Microsoft Edge の展開と管理  
+- 新しいサーバーを展開して管理Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise を展開する    
 
 - クラウド管理の展開  
 - ローカルで管理された展開    
-- Microsoft 365 Apps for enterprise Deployment on non-ADデバイス 
-- Configuration Manager を使用したエンタープライズ管理展開
-- Microsoft Intune を使用したエンタープライズ管理展開  
-- Microsoft Intune での LOB の展開と管理
-- Microsoft Teams の展開
+- Microsoft 365 Apps for enterprise非参加デバイスAD展開 
+- Enterpriseを使用した管理展開の管理
+- Enterpriseを使用した管理展開Microsoft Intune  
+- LOB の展開と管理とMicrosoft Intune
+- 展開Microsoft Teams
 
-### <a name="deploy-windows-virtual-desktop"></a>Windows 仮想デスクトップの展開  
+### <a name="deploy-windows-virtual-desktop"></a>仮想Windowsを展開する  
 
 - 準備、展開、最適化
  
-## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>展開ラボ キットの Windows とOffice場所
+## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>展開ラボ キットWindows Office場所
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 

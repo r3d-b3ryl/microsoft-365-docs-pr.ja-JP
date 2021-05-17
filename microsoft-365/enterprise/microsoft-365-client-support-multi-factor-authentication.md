@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 クライアント アプリのサポート: 多要素認証'
+title: 'Microsoft 365クライアント アプリのサポート: 多要素認証'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: この記事では、Microsoft 365 の多要素認証をサポートするプラットフォーム、クライアント、および PowerShell モジュールについて説明します。
+description: この記事では、複数要素認証をサポートするプラットフォーム、クライアント、および PowerShell モジュールについてMicrosoft 365。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 80ee370526d17d472cd048cd4d89b862e158b631
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927565"
 ---
-# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 クライアント アプリのサポート: 多要素認証
+# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365クライアント アプリのサポート: 多要素認証
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
@@ -36,7 +36,7 @@ ms.locfileid: "50927565"
 
 ## <a name="supported-clients--platforms"></a>サポートされているクライアント&プラットフォーム
 
-次のクライアントとプラットフォームの最新バージョンでは、多要素認証がサポートされています。 Microsoft 365 でのプラットフォームサポートの詳細については [、「Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)のシステム要件」を参照してください。
+次のクライアントとプラットフォームの最新バージョンでは、多要素認証がサポートされています。 プラットフォームサポートの詳細については、「Microsoft 365のシステム要件」[を参照Microsoft 365。](/microsoft-365/microsoft-365-and-office-resources)
 <br>
 <br>
 
@@ -44,6 +44,6 @@ ms.locfileid: "50927565"
 
 ## <a name="supported-powershell-modules"></a>サポートされている PowerShell モジュール
 
-- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active DirectoryPowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
 - [Exchange Online の PowerShell](/powershell/exchange/exchange-online-powershell)
-- [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+- [SharePointオンライン PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

@@ -19,7 +19,7 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: 一元展開 PowerShell コマンドレットを使用して、Microsoft 365 組織Officeアドインを展開および管理できます。
+description: 一元展開 PowerShell コマンドレットを使用して、組織のOfficeアドインを展開およびMicrosoft 365します。
 ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.locfileid: "50924674"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>集中展開 PowerShell コマンドレットを使用してアドインを管理する
 
-Microsoft 365 のグローバル管理者は、集中展開機能を使用して Office アドインをユーザーに展開できます (「管理センターで Office アドインを展開する」を [参照](../admin/manage/manage-deployment-of-add-ins.md)してください)。 Microsoft 365 管理センター Officeアドインを展開する以外にも、Microsoft PowerShell を使用できます。 [O365 の一元化されたAdd-In展開モジュールをインストールWindows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
+グローバル管理者Microsoft 365、集中展開機能を使用して Office アドインをユーザーに展開できます (「管理センターに Office アドインを展開する」を[参照](../admin/manage/manage-deployment-of-add-ins.md)してください)。 管理センターを介Officeアドインを展開するMicrosoft 365、Microsoft PowerShell を使用できます。 [O365 一元化Add-In展開モジュールをインストールWindows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
 
 モジュールをダウンロードした後、通常のウィンドウを開Windows PowerShell次のコマンドレットを実行します。
 
@@ -37,19 +37,19 @@ Microsoft 365 のグローバル管理者は、集中展開機能を使用して
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a>管理者資格情報を使用して接続する
+## <a name="connect-using-your-admin-credentials"></a>Connect資格情報を使用する方法
 
 集中展開コマンドレットを使用する前に、サインインする必要があります。
   
 1. PowerShell を起動します。
     
-2. 会社の管理者資格情報を使用して PowerShell に接続します。 次のコマンドレットを実行します。
+2. Connect管理者の資格情報を使用して PowerShell にアクセスします。 次のコマンドレットを実行します。
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. [資格情報 **の入力] ページ** で、Microsoft 365 グローバル管理者資格情報を入力します。 または、資格情報をコマンドレットに直接入力することもできます。 
+3. [資格情報 **の入力] ページ** で、グローバル管理者Microsoft 365を入力します。 または、資格情報をコマンドレットに直接入力することもできます。 
     
     会社の管理者資格情報を PSCredential オブジェクトとして指定する次のコマンドレットを実行します。
     
@@ -60,9 +60,9 @@ Microsoft 365 のグローバル管理者は、集中展開機能を使用して
   ```
 
 > [!NOTE]
-> PowerShell の使用の詳細については、「Connect [to Microsoft 365 with PowerShell」を参照してください](./connect-to-microsoft-365-powershell.md)。 
+> PowerShell の使用の詳細については、「PowerShell Connect[をMicrosoft 365する」を参照してください](./connect-to-microsoft-365-powershell.md)。 
   
-## <a name="upload-an-add-in-manifest"></a>アドイン マニフェストのアップロード
+## <a name="upload-an-add-in-manifest"></a>アップロード マニフェストを作成する
 
 **New-OrganizationAdd-In** コマンドレットを実行して、ファイルの場所または URL のいずれかであるパスからアドイン マニフェストをアップロードします。 次の例は  _、ManifestPath_ パラメーターの値のファイルの場所を示しています。 
   
@@ -76,7 +76,7 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>アドインをストアからOfficeする
+## <a name="upload-an-add-in-from-the-office-store"></a>アップロードストアからアドインをOfficeする
 
 **New-OrganizationAddIn コマンドレットを実行** して、新しい組織のストアからOfficeします。
   

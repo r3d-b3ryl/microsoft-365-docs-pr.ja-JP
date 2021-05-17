@@ -15,7 +15,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 管理者として、およびメッセージ送信者として、365 Advanced Message Encryption で暗号化された特定のOffice取り消しできます。
+description: 管理者として、およびメッセージ送信者として、ユーザーが暗号化された特定の電子メールを取り消Office 365 Advanced Message Encryption。
 ms.openlocfilehash: 340a9e73dba50e28223ee561db749a089c649df6
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -25,25 +25,25 @@ ms.locfileid: "51051719"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>高度なメッセージ暗号化によって暗号化された電子メールを取り消す
 
-電子メールの失効は、365 Advanced Message Encryption Officeの一部として提供されます。 Office 365 Advanced Message Encryption は [、Microsoft 365 Enterprise E5、Office](https://www.microsoft.com/microsoft-365/enterprise/home)365 E5、Microsoft 365 E5 (非営利スタッフ価格)、Office 365 Enterprise E5 (非営利スタッフ価格)、および Office 365 Education A5 に含まれています。 組織に 365 Advanced Message Encryption をOfficeサブスクリプションがある場合は、 Microsoft 365 E3、Microsoft 365 E3 (非営利スタッフの価格設定) 用の Microsoft 365 E5 コンプライアンス SKU アドオン、または Microsoft 365 E3、Microsoft 365 E3 (非営利スタッフ価格)、または Office 365 SKU の Office 365 Advanced Compliance SKU アドオンで購入できます。
+電子メールの失効は、電子メールの一部Office 365 Advanced Message Encryption。 Office 365 Advanced Message Encryptionは[、Microsoft 365 Enterprise E5、Office 365](https://www.microsoft.com/microsoft-365/enterprise/home)E5、Microsoft 365 E5 (非営利スタッフ価格)、Office 365 Enterprise E5 (非営利スタッフ価格)、および Office 365 Education A5 に含まれています。 組織に Office 365 Advanced Message Encryption を含めないサブスクリプションがある場合は、Microsoft 365 E3、Microsoft 365 E3 (非営利スタッフ価格) の Microsoft 365 E5 Compliance SKU アドオン、または Microsoft 365 E3、Microsoft 365 E3 (非営利スタッフ価格)、または Office 365 SKU の Office 365 Advanced Compliance SKU アドオンを使用して購入できます。
 
-この記事は、365 Message Encryption に関する大規模 [なOfficeの一部です](ome.md)。
+この記事は、この記事に関する一連の[記事の一](ome.md)部Office 365 Message Encryption。
 
-Office 365 Advanced Message Encryption を使用してメッセージが暗号化され、Microsoft 365 管理者である場合、またはメッセージの送信者である場合は、特定の条件下でメッセージを取り消します。 管理者は PowerShell を使用してメッセージを取り消します。 送信者として、Outlook on the web から直接送信したメッセージを取り消します。 この記事では、失効が可能な状況と取り消し方法について説明します。
+Office 365 Advanced Message Encryption を使用してメッセージが暗号化され、Microsoft 365 管理者である場合、またはメッセージの送信者である場合は、特定の条件下でメッセージを取り消します。 管理者は PowerShell を使用してメッセージを取り消します。 送信者として、Web 上のユーザーから直接送信したOutlook取り消します。 この記事では、失効が可能な状況と取り消し方法について説明します。
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>取り消し可能な暗号化されたメール
 
-受信者がリンクベースのブランド化された暗号化メールを受信した場合、管理者とメッセージ送信者は暗号化された電子メールを取り消す可能性があります。 受信者がサポートされている Outlook クライアントでネイティブ インライン エクスペリエンスを受け取った場合、メッセージを取り消す事はできません。
+受信者がリンクベースのブランド化された暗号化メールを受信した場合、管理者とメッセージ送信者は暗号化された電子メールを取り消す可能性があります。 受信者がサポートされているクライアントでネイティブ インライン エクスペリエンスをOutlook場合、メッセージを取り消す事はできません。
 
 受信者がリンク ベースのエクスペリエンスまたはインライン エクスペリエンスを受け取るかどうかは、受信者 ID の種類によって異なります。Office 365 および Microsoft アカウントの受信者 (outlook.com ユーザーなど) は、サポートされている Outlook クライアントでインライン エクスペリエンスを取得します。 Gmail や Yahoo 受信者などの他のすべての受信者の種類は、リンク ベースのエクスペリエンスを取得します。
 
-管理者とメッセージ送信者は、Outlook on the web から直接適用された暗号化を使用して暗号化されたメッセージを取り消す可能性があります。 たとえば、[暗号化のみ] オプションで暗号化されたメッセージ。
+管理者とメッセージ送信者は、Web 上のユーザーから直接適用された暗号化を使用して暗号化されたOutlook取り消す可能性があります。 たとえば、[暗号化のみ] オプションで暗号化されたメッセージ。
 
-:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Outlook on the web で [暗号化のみ] オプションを示すスクリーンショット。":::
+:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Web 上の [暗号化のみ] オプションをOutlookスクリーンショット。":::
 
 ## <a name="recipient-experience-for-revoked-encrypted-emails"></a>失効した暗号化された電子メールの受信者エクスペリエンス
 
-電子メールが取り消された後、受信者は Office 365 メッセージ暗号化ポータルを介して暗号化された電子メールにアクセスするときにエラーを受け取ります。"メッセージは送信者によって取り消されました"。
+電子メールが取り消された後、受信者は Office 365 Message Encryption ポータルを介して暗号化された電子メールにアクセスするときにエラーを受け取ります。"メッセージは送信者によって取り消されました"。
 
 ![失効した暗号化された電子メールを示すスクリーンショット。](../media/revoked-encrypted-email.png)
 
@@ -51,25 +51,25 @@ Office 365 Advanced Message Encryption を使用してメッセージが暗号�
 
 1 人の受信者に送信したメールを取り消して、ソーシャル アカウントを使用 gmail.com、yahoo.com。 つまり、リンク ベースのエクスペリエンスを受け取った 1 人の受信者に送信された電子メールを取り消す可能性があります。
 
-Office 365 または Microsoft 365 から仕事または学校のアカウントを使用する受信者、または microsoft アカウントを使用するユーザー (outlook.com アカウントなど) に送信したメールを取り消す必要があります。 
+Office 365 または Microsoft 365 の仕事または学校のアカウントを使用する受信者、または Microsoft アカウントを使用するユーザー (outlook.com アカウントなど) に送信したメールを取り消 outlook.com できません。 
 
 送信した暗号化されたメッセージを取り消す場合は、次の手順を実行します。
 
-1. Outlook on the web の [送信] **フォルダーで** 、取り消すメッセージを参照します。
+1. Web Outlook送信フォルダーで、取り消すメッセージを参照します。
 
    メールが失効可能な場合は、メッセージの上部に [外部アクセスの削除] リンクが表示されます。
 
-    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Outlook on the web で取り消す暗号化されたメールを示すスクリーンショット。":::
+    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Web 上で無効にしたい暗号化されたメールを示Outlookスクリーンショット。":::
 
 2. [外部 **アクセスの削除] をクリック** して、メッセージを取り消します。
 
    メッセージは、その状態が取り消された状態を示しています。
 
-   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="Outlook on the web で失効した暗号化されたメッセージを示すスクリーンショット。":::
+   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="Web 上で無効にされた暗号化されたメッセージOutlook示すスクリーンショット。":::
 
 ## <a name="how-to-revoke-an-encrypted-message-as-an-administrator"></a>管理者として暗号化されたメッセージを取り消す方法
 
-Microsoft 365 管理者は、次の一般的な手順に従って、適格な暗号化された電子メールを取り消します。
+Microsoft 365管理者は、次の一般的な手順に従って、適格な暗号化された電子メールを取り消します。
 
 - 電子メールのメッセージ ID を取得します。
 - メッセージを取り消す可能性を確認します。
@@ -89,7 +89,7 @@ Microsoft 365 管理者は、次の一般的な手順に従って、適格な暗
 
 2. 電子メールを見つから選択すると、[メッセージ 追跡の詳細] **ウィンドウが表示** されます。 [詳細 **] を展開** してメッセージ ID を探します。
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>セキュリティ コンプライアンス センターの [メッセージ暗号化] レポートを使用して、Officeのメッセージ ID を &amp; 識別するには
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>セキュリティ コンプライアンス センターの [メッセージ暗号化] レポートを使用してOfficeのメッセージ ID を &amp; 識別するには
 
 1. セキュリティ コンプライアンス センター &amp; で、[メッセージの暗号化] **レポートに移動します**。 このレポートの詳細については、「セキュリティ コンプライアンス センター [で電子メール セキュリティ レポートを表示する」を &amp; 参照してください](../security/defender-365-security/view-email-security-reports.md)。
 
@@ -103,7 +103,7 @@ Microsoft 365 管理者は、次の一般的な手順に従って、適格な暗
 
 メール メッセージを使用して特定の電子メール メッセージを取り消Windows PowerShell、次の手順を実行します。
 
-1. 組織でグローバル管理者のアクセス許可を持つ仕事または学校のアカウントを使用して、Windows PowerShellセッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. 次のようにGet-OMEMessageStatusコマンドレットを実行します。
 
@@ -121,7 +121,7 @@ Microsoft 365 管理者は、次の一般的な手順に従って、適格な暗
 
 ### <a name="step-3-revoke-the-mail"></a>手順 3. メールを取り消す
 
-取り消す電子メールのメッセージ ID がわかって、メッセージが失効可能なと確認したら、セキュリティ コンプライアンス センターまたは Windows PowerShell を使用して電子 &amp; メールを取り消Windows PowerShell。
+取り消す電子メールのメッセージ ID がわかり、メッセージが失効可能かどうか確認したら、セキュリティ コンプライアンス センターまたは Windows PowerShell を使用して電子 &amp; メールを取り消Windows PowerShell。
 
 セキュリティ コンプライアンス センターを使用してメッセージを &amp; 取り消す方法
 
@@ -129,9 +129,9 @@ Microsoft 365 管理者は、次の一般的な手順に従って、適格な暗
 
 2. [暗号化] **レポートの** メッセージの [ **詳細]** テーブルで、[メッセージの取り消し] **を選択します**。
 
-メールを使用してメールを取り消Windows PowerShell、このコマンドレットSet-OMEMessageRevocationします。
+メールを使用してメールを取り消Windows PowerShell、Set-OMEMessageRevocationします。
 
-1. 組織内でグローバル管理者アクセス許可を持つ仕事または学校のアカウントを使用して [、Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
+1. 組織でグローバル管理者のアクセス許可を持つ仕事または学校のアカウントを使用して[、PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)ConnectをExchange Onlineします。
 
 2. 次のようにSet-OMEMessageRevocationコマンドレットを実行します。
 
@@ -151,7 +151,7 @@ Microsoft 365 管理者は、次の一般的な手順に従って、適格な暗
      Revoked: True
      ```
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>365 Advanced message Encryption Officeの詳細
+## <a name="more-information-about-office-365-advanced-message-encryption"></a>詳細については、Office 365 Advanced Message Encryption
 
 - [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md)
 

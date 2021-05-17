@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 サービスへのセキュリティで保護されたアクセスを構成する
+title: サービスへのセキュリティで保護されたアクセスMicrosoft 365構成する
 description: ベースライン、機密性の高い、機密性の高い 3 つの保護層に対して MFA、条件付きアクセス、および関連するポリシーを実装するための基準ガイダンスを見つける。
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51050888"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a>Microsoft 365 サービスへのセキュリティで保護されたアクセスを構成する
+# <a name="configure-secure-access-to-microsoft-365-services"></a>サービスへのセキュリティで保護されたアクセスMicrosoft 365構成する
 
 このソリューションは、ベースライン、機密性の高い、機密性の高い 3 つの保護層に対して MFA、条件付きアクセス、および関連するポリシーを実装するための[、"M365 ゴールデン](../security/defender-365-security/microsoft-365-policies-configurations.md)構成" に基づいて作成されています。

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 のデバイス管理ロードマップ
-keywords: Microsoft 365、Microsoft 365 for enterprise、Microsoft 365 ドキュメント、モバイル デバイス管理、Intune
+keywords: Microsoft 365、Microsoft 365、Microsoft 365、モバイル デバイス管理、Intune
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -14,7 +14,7 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-description: Microsoft 365 のデバイス管理をセットアップするためのロードマップ。
+description: デバイス管理をセットアップするためのロードマップは、Microsoft 365。
 ms.openlocfilehash: ec284a96fc8e7285f89e8a909b76c782b4469ce1
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "51051462"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 のデバイス管理ロードマップ
 
-Microsoft 365 for enterprise には、組織内のデバイスとそのアプリを管理するための機能が含まれています。 モバイル デバイスの管理は、組織のリソースをセキュリティで保護し、保護するのに役立ちます。
+Microsoft 365には、組織内のデバイスとアプリの管理に役立つ機能が含まれています。 モバイル デバイスの管理は、組織のリソースをセキュリティで保護し、保護するのに役立ちます。
 
 デバイス管理には、次の 2 つのオプションがあります。
 
@@ -33,15 +33,15 @@ Microsoft 365 for enterprise には、組織内のデバイスとそのアプリ
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Microsoft Intune を使用して、モバイル デバイス管理またはモバイル アプリケーション管理を使用して組織へのアクセスを管理できます。 モバイル デバイスの管理は、ユーザーが Intune でデバイスを "登録" する場合です。 デバイスが登録された後は、管理対象デバイスです。したがって、組織のポリシー、ルール、および設定を受け取る可能性があります。 たとえば、特定のアプリのインストール、パスワード ポリシーの作成、VPN 接続のインストールなどです。
+モバイル デバイス管理またはモバイル Microsoft Intune管理を使用して組織へのアクセスを管理するには、このツールを使用します。 モバイル デバイスの管理は、ユーザーが Intune でデバイスを "登録" する場合です。 デバイスが登録された後は、管理対象デバイスです。したがって、組織のポリシー、ルール、および設定を受け取る可能性があります。 たとえば、特定のアプリのインストール、パスワード ポリシーの作成、VPN 接続のインストールなどです。
 
-自分の個人用デバイスを持つユーザーは、自分のデバイスを登録したり、Intune と組織のポリシーで管理したりしたくない場合があります。 ただし、組織のリソースとデータを保護する必要があります。 このシナリオでは、モバイル アプリケーション管理を使用してアプリを保護できます。 たとえば、モバイル アプリケーション管理ポリシーを使用すると、ユーザーがデバイス上の SharePoint Online にアクセスするときに PIN を入力する必要があります。
+自分の個人用デバイスを持つユーザーは、自分のデバイスを登録したり、Intune と組織のポリシーで管理したりしたくない場合があります。 ただし、組織のリソースとデータを保護する必要があります。 このシナリオでは、モバイル アプリケーション管理を使用してアプリを保護できます。 たとえば、モバイル アプリケーション管理ポリシーを使用すると、ユーザーがデバイス上のオンラインのアカウントにアクセスするときに PIN を入力SharePointを使用できます。
 
 また、個人用デバイスと組織が所有するデバイスを管理する方法も決定します。 デバイスの使い方に応じて、デバイスの扱い方を変えてほしい場合があります。
 
 ## <a name="basic-mobility-and-security"></a>基本的なモビリティとセキュリティ
 
-これは Microsoft 365 に組み込まれるので、ユーザーのモバイル デバイス (iPhone、iPad、Android、Windows 電話など) のセキュリティ保護と管理に役立ちます。 デバイスのセキュリティ ポリシーを作成および管理したり、リモートでデバイスをワイプしたり、詳細なデバイス レポートを参照できます。
+これは、Microsoft 365に組み込まれるので、ユーザーのモバイル デバイス (iPhone、iPad、Android、携帯電話など) のセキュリティ保護と管理Windows役立ちます。 デバイスのセキュリティ ポリシーを作成および管理したり、リモートでデバイスをワイプしたり、詳細なデバイス レポートを参照できます。
 
 ## <a name="choose-between-the-two-options"></a>2 つのオプションの中から選択する
 
@@ -59,6 +59,6 @@ Microsoft では、セキュアで生産性の高い労働力を確保するた�
 - [前提条件](../security/defender-365-security/identity-access-prerequisites.md)
 - [共通 ID とデバイスのアクセス ポリシー](../security/defender-365-security/identity-access-policies.md)
 
-## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 社が Microsoft 365 のデバイス管理を行った方法
+## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 社がデバイス管理を行ったMicrosoft 365
 
-架空の代表的な多国籍企業が、Microsoft 365 クラウド サービスを使用してモバイル デバイス管理インフラストラクチャを展開した方法については、「Contoso のモバイル デバイス管理」を [参照してください](contoso-mdm.md)。
+架空の代表的な多国籍企業が、Microsoft 365 クラウド サービスを使用してモバイル デバイス管理インフラストラクチャを展開した方法については、「Contoso のモバイル デバイス管理」を[参照してください](contoso-mdm.md)。

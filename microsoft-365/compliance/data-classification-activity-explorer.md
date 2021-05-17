@@ -115,4 +115,4 @@ ms.locfileid: "52114009"
 - [秘密度ラベルの詳細](sensitivity-labels.md)
 - [アイテム保持ポリシーと保持ラベルの詳細](retention.md)
 - [機密情報の種類に関する詳細情報](sensitive-information-type-learn-about.md)
-- [データ分類の詳細](data-classification-overview.md)
+- [データ分類について](data-classification-overview.md)

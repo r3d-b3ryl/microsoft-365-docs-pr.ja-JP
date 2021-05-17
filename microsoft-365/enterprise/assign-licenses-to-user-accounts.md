@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 ライセンスをユーザー アカウントに割り当てる
+title: ユーザー アカウントMicrosoft 365ライセンスを割り当てる
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,7 +25,7 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Microsoft 365 ライセンスを個別に、またはグループ メンバーシップに基づいてユーザー アカウントに割り当てる方法について説明します。
+description: ユーザー アカウントにライセンスを割りMicrosoft 365個別に、またはグループ メンバーシップに基づいて割り当てる方法について説明します。
 ms.openlocfilehash: 2fe1e2f959fae8b0bc82a7dcd4f65f33b21c368a
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -33,19 +33,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51051534"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Microsoft 365 ライセンスをユーザー アカウントに割り当てる
+# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>ユーザー アカウントMicrosoft 365ライセンスを割り当てる
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-クラウド専用 ID モデルの場合は、作成方法に応じて、作成時に Microsoft 365 ライセンスをユーザー アカウントに割り当てできます。
+クラウド専用 ID モデルの場合、作成方法に応じて、Microsoft 365ライセンスを作成時にユーザー アカウントに割り当てできます。
 
-ハイブリッド ID モデルでは、Active Directory ドメイン サービス (AD DS) ユーザー アカウントが初めて同期された場合、場所または Microsoft 365 ライセンスが自動的に割り当てられていない。 **ライセンスの割り当て前または割り当てと共に、ユーザーの場所を使用して各ユーザー アカウントを構成する必要があります。**
+ハイブリッド ID モデルの場合、Active Directory ドメイン サービス (AD DS) ユーザー アカウントが初めて同期された場合、場所または Microsoft 365 ライセンスが自動的に割り当てられていない。 **ライセンスの割り当て前または割り当てと共に、ユーザーの場所を使用して各ユーザー アカウントを構成する必要があります。**
 
-いずれの場合も、ユーザーが電子メールや Microsoft Teams などの Microsoft 365 サービスにアクセスできるよう、ユーザー アカウントにライセンスを割り当てる必要があります。
+いずれの場合も、ユーザーが電子メールやメールサービスなどのサービスにアクセスMicrosoft 365ユーザー アカウントにライセンスを割り当てるMicrosoft Teams。
 
 ユーザー アカウントにライセンスを割り当てるには、グループ メンバーシップを使用して個別にまたは自動的に割り当てできます。
 
-Microsoft 365 ライセンスを個々のユーザー アカウントに割り当てるには、次のコマンドを使用できます。
+個々のユーザー Microsoft 365にライセンスを割り当てるには、次のコマンドを使用できます。
 
 - [Microsoft 365 管理センター](../admin/manage/assign-licenses-to-users.md)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
@@ -68,6 +68,6 @@ Azure ADのセキュリティ グループを構成して、一連のサブス�
 ライセンスが割り当てられている適切な一連のユーザー アカウントを使用して、次の準備ができました。
 
 - [セキュリティの実装](../security/defender-365-security/security-roadmap.md)
-- [Microsoft 365 Apps などのクライアント ソフトウェアを展開する](/DeployOffice/deployment-guide-microsoft-365-apps)
+- [クライアント ソフトウェア (クライアント ソフトウェアなど) を展開Microsoft 365 Apps](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [デバイス管理のセットアップ](device-management-roadmap-microsoft-365.md)
 - [サービスとアプリケーションの構成](configure-services-and-applications.md)

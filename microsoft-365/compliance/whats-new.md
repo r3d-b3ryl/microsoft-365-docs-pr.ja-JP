@@ -211,7 +211,7 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 - 米国政府機関のテナント (GCC および GCC-H) では、GCCラベルがサポートされています。
 - macOS [の新しい自動](sensitivity-labels-office-apps.md) ラベル付けサポート。
 
-## <a name="december-2020"></a>2020年12月
+## <a name="december-2020"></a>2020 年 12 月
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>スポットライト: インサイダー リスク ソリューションの新しいコンテンツ
 

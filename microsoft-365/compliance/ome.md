@@ -42,11 +42,11 @@ Office 365 Message Encryption は、Azure Information Protection の一部であ
 
 管理者は、この保護を適用するメール フロー ルールを定義することもできます。 たとえば、特定の受信者宛てのすべてのメッセージや件名行に特定の言葉が含まれるメッセージの暗号化を要求したり、受信者はメッセージのコンテンツのコピーや印刷の禁止を規定したりするルールを作成できます。
 
-以前のバージョンの OME とは異なり、新しい機能は、組織内でメールを送信する場合でも、Microsoft 365 以外の受信者に送信する場合でも、統一された送信者エクスペリエンスを提供します。 さらに、Outlook 2016 または Outlook on the web で Microsoft 365 アカウントに送信された保護された電子メール メッセージを受信する受信者は、メッセージを表示するために他のアクションを実行する必要はありません。 シームレスに動作します。 また、他のメール クライアントやメール サービス プロバイダーを使用している受信者の操作性も向上しました。 詳細については、「[Office 365 の保護されたメッセージについて](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67)」および「[保護されたメッセージを開く方法を教えてください](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098)」を参照してください。
+以前のバージョンの OME とは異なり、新しい機能は、組織内でメールを送信する場合でも、Microsoft 365 以外の受信者にメールを送信する場合でも、統一された送信者エクスペリエンスを提供します。 さらに、Outlook 2016 または web 上の Outlook の Microsoft 365 アカウントに送信された保護された電子メール メッセージを受信する受信者は、メッセージを表示するために他のアクションを実行する必要はありません。 シームレスに動作します。 また、他のメール クライアントやメール サービス プロバイダーを使用している受信者の操作性も向上しました。 詳細については、「[Office 365 の保護されたメッセージについて](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67)」および「[保護されたメッセージを開く方法を教えてください](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098)」を参照してください。
 
 以前のバージョンの OME と新しい OME の間での機能の違いの詳細一覧は、「[OME のバージョンを比較する](ome-version-comparison.md)」をご覧ください。
 
-暗号化メール フロー ルールに一致するメール メッセージを誰かが送信すると、メッセージは送信される前に暗号化されます。 Outlook クライアントを使用してメールを読み取るすべての Microsoft 365 エンド ユーザーは、送信者と同じ組織にいなくても、暗号化された権限で保護されたメールのネイティブのファースト クラスの読み取りエクスペリエンスを受信します。 サポートされている Outlook クライアントには、Outlook デスクトップ、Outlook Mac、iOS および Android の Outlook Mobile、Outlook on the web (旧称: Outlook Web App) が含まれます。
+暗号化メール フロー ルールに一致するメール メッセージを誰かが送信すると、メッセージは送信される前に暗号化されます。 Outlook Microsoft 365 クライアントを使用してメールを読み取るすべてのエンド ユーザーは、送信者と同じ組織にいなくても、暗号化された権限で保護されたメールのネイティブのファースト クラスの読み取りエクスペリエンスを受信します。 サポートされている Outlook クライアントには、Outlook デスクトップ、Outlook Mac、iOS および Android の Outlook Mobile、Outlook on the web (旧称: Outlook Web App) が含まれます。
 
 Outlook.com、Gmail、および Yahoo アカウントに送られた暗号化され権限で保護されたメッセージを受信する暗号化されたメッセージの受信者には、Microsoft アカウント、Gmail、または Yahoo の資格情報を使用してすばやく認証を行える OME ポータルにユーザーをリダイレクトするラッパー メールが送信されます。
 
@@ -60,7 +60,7 @@ OME を使用して暗号化できるメッセージおよび添付ファイル�
 
 Office 365 Advanced Message Encryption を使用すると、複数のブランド テンプレートを作成することができます。これにより、受信者のメールの制御を細かく調整し、さまざまな組織構造をサポートするためのカスタム ブランド エクスペリエンスを作成できます。
 
-Microsoft 365 の高度なメッセージ暗号化は、暗号化された電子メールへの外部受信者のアクセスを柔軟に制御する必要があるコンプライアンスの義務を満たすのに役立ちます。 Office 365 の高度なメッセージ暗号化を使用すると、管理者として、機密情報の種類 (PII、財務、正常性の ID など) やキーワードを検出する自動ポリシーを使用して組織外で共有される機密メールを制御し、セキュリティで保護された Web ポータルから暗号化された電子メールへのアクセスを期限切れにすることで保護を強化できます。 管理者は、いつでも電子メールへのアクセスを取りやめ、Microsoft 365 Web ポータルからアクセスされる暗号化されたメールをさらに制御できます。
+暗号化された電子メールMicrosoft 365外部受信者のアクセスを柔軟に制御する必要があるコンプライアンスの義務を満たすのに役立ちます。 Office 365 の高度なメッセージ暗号化を使用すると、管理者として、機密情報の種類 (PII、財務、正常性の ID など) やキーワードを検出する自動ポリシーを使用して組織外で共有される機密メールを制御し、セキュリティで保護された Web ポータルから暗号化された電子メールへのアクセスを期限切れにすることで保護を強化できます。 管理者は、いつでも電子メールへのアクセスを取りMicrosoft 365 Web ポータルを介してアクセスされる暗号化された電子メールをさらに制御できます。
 
 メッセージの失効と有効期限は、ユーザーが組織外の受信者に送信するメールでのみ機能します。 また、受信者は Web ポータル経由でメールにアクセスする必要があります。 受信者がメールを受信するのにポータルを使用するよう、ラッパーを適用するカスタム ブランド テンプレートを設定します。 次に、メール フロー ルールでブランド テンプレートを適用します。 Advanced Message Encryption の詳細については、「[Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md)」を参照してください。
 
@@ -78,17 +78,17 @@ Office 365 Message Encryption の新機能を有効にする方法の 1 つと�
 
 ## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>暗号化されたメール メッセージの送信、表示、および返信
 
-Office 365 Message Encryption では、Outlook と Outlook on the web から暗号化されたメールを送信できます。 さらに、管理者は Microsoft 365 でメール フロー ルールを設定して、キーワードの一致などの条件に基づいて電子メールを自動的に暗号化できます。
+Office 365 Message Encryption では、Outlook と Outlook on the web から暗号化されたメールを送信できます。 さらに、管理者は、キーワードの一致や他の条件に基Microsoft 365メールを自動的に暗号化するメール フロー ルールを設定できます。
 
-組織の暗号化されたメッセージの受信者は、Outlook for PC、Outlook for Mac、Outlook on the web、Outlook for iOS、Outlook for Android など、任意のバージョンの Outlook でそれらのメッセージをシームレスに読み取る事が可能です。 他のメール クライアントで暗号化されたメッセージを受信するユーザーは、OME ポータルでメッセージを表示できます。
+組織の暗号化されたメッセージの受信者は、pc、Outlook for Mac、web 上の Outlook、iOS の Outlook、Android 用 Outlook など、任意のバージョン Outlook Outlook でそれらのメッセージをシームレスに読み取る事が可能です。 他のメール クライアントで暗号化されたメッセージを受信するユーザーは、OME ポータルでメッセージを表示できます。
 
 暗号化されたメッセージを送信および表示する方法の詳細なガイダンスについては、次の記事を参照してください。
 
 |関連記事|記事の対象となるユーザーの種類|
 |:-----|:-----|
 |[Office 365 の保護されたメッセージについて](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx)|暗号化されたメッセージの仕組みや利用できるオプションについて詳しく知りたいエンド ユーザー。|
-|[保護されたメッセージを開く方法を教えてください](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|自分宛てに送信された保護されたメッセージを読みたいエンド ユーザー。 この記事には、複数のバージョンの Outlook および Gmail や Yahoo! などの Microsoft 365 以外のアカウントを含むさまざまな電子メール アカウントからのメッセージの読み取りに関する情報が含まれています。 。|
-|[Outlook での暗号化されたメッセージの送信、表示、および返信](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|暗号化されたメッセージの送信、表示、返信を Outlook で行うエンド ユーザー。 組織のメンバーではない場合でも、Outlook で送信された暗号化されたメッセージの通知を受け取ります。 Office 365 から送信された暗号化メッセージを表示して返信する方法については、こちらの記事を参照してください。|
+|[保護されたメッセージを開く方法を教えてください](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|自分宛てに送信された保護されたメッセージを読みたいエンド ユーザー。 この記事には、gmail や Yahoo など、Outlook 以外のアカウントを含む複数のバージョンのメール アカウントからメッセージを読み取Microsoft 365情報が含まれています。 。|
+|[Outlook での暗号化されたメッセージの送信、表示、および返信](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|暗号化されたメッセージの送信、表示、返信を Outlook で行うエンド ユーザー。 組織のメンバーではない場合でも、組織で送信された暗号化されたメッセージの通知を受け取Outlook。 Office 365 から送信された暗号化メッセージを表示して返信する方法については、こちらの記事を参照してください。|
 |[デジタル署名または暗号化されたメッセージを送信する](https://support.microsoft.com/office/send-a-digitally-signed-or-encrypted-message-a18ecf7f-a7ac-4edd-b02e-687b05eff547)|暗号化されたメッセージの送信、表示、または返信を Outlook for Mac で行うエンド ユーザー。 この記事では、OME 以外の暗号化方法 (S/MIME など) の使用についても説明します。|
 |[暗号化されたメッセージを Android デバイスで表示する](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb)|Office 365 Message Encryption で暗号化されたメッセージを Android デバイスで受信したエンド ユーザーは、無料の OME Viewer アプリを使用してメッセージを表示し、暗号化された返信を送信できます。 この記事では、その方法について説明します。|
 |[iPhone または iPad で暗号化されたメッセージを表示する](https://support.microsoft.com/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|Office 365 Message Encryption で暗号化されたメッセージを iPhone または iPad で受信したエンド ユーザーは、無料の OME Viewer アプリを使用してメッセージを表示し、暗号化された返信を送信できます。 この記事では、その方法について説明します。|

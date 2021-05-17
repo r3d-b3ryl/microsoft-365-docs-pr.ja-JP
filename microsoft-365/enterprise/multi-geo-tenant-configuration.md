@@ -110,10 +110,10 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive のプロビジョニングと PDL の効果
 
-テナントに ユーザーの OneDrive サイトが既に作成されている場合は、そのユーザーの PDL を設定しても既存の OneDrive は自動的に移動されません。 ユーザーの OneDrive を移動するには [、「OneDrive for Business Geo Move」を参照してください](move-onedrive-between-geo-locations.md)。
+テナントに ユーザーの OneDrive サイトが既に作成されている場合は、そのユーザーの PDL を設定しても既存の OneDrive は自動的に移動されません。 ユーザーのデータを移動するにはOneDrive Geo Move [OneDrive for Businessを参照してください](move-onedrive-between-geo-locations.md)。
 
 > [!NOTE]
-> PLD が変更され、MailboxRegion がメールボックス データベースの地理的場所コードと一致しなくなった場合、Exchange Online はユーザーのメールボックスを自動的に再配置します。 詳細については、「複数地域環境での Exchange Online メールボックスの管理 [」を参照してください](./administering-exchange-online-multi-geo.md)。
+> Exchange Online PLD が変更され、MailboxRegion がメールボックス データベース地域の場所コードと一致しなくなった場合、ユーザーのメールボックスが自動的に再配置されます。 詳細については、「複数地域[環境Exchange Onlineメールボックスの管理」を参照してください](./administering-exchange-online-multi-geo.md)。
 
 テナント内に OneDrive サイトを持っていないユーザーの場合、ユーザーの PDL が会社のサテライトの場所のいずれかと一致すれば、ユーザーの OneDrive は PDL 値に基づいてプロビジョニングされます。
 
