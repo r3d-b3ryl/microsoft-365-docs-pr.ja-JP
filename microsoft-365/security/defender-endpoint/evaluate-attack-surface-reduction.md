@@ -86,7 +86,7 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 グループ [ポリシーと](customize-attack-surface-reduction.md) MDM CSP ポリシーを含む管理ツールを使用して機能を構成する方法については、「攻撃表面の縮小ルールをカスタマイズする」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 * [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
 * [監査モードを使用して、監査Windows Defender](audit-windows-defender.md)

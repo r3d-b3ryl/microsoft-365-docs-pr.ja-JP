@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender Security Center MSSP カスタマー ポータルにアクセスする
-description: Microsoft Defender Security Center MSSP カスタマー ポータルにアクセスする
+title: MSSP カスタマー Microsoft Defender セキュリティ センターにアクセスする
+description: MSSP カスタマー Microsoft Defender セキュリティ センターにアクセスする
 keywords: マネージド セキュリティ サービス プロバイダー、mssp、構成、統合
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51164859"
 ---
-# <a name="access-the-microsoft-defender-security-center-mssp-customer-portal"></a>Microsoft Defender Security Center MSSP カスタマー ポータルにアクセスする
+# <a name="access-the-microsoft-defender-security-center-mssp-customer-portal"></a>MSSP カスタマー Microsoft Defender セキュリティ センターにアクセスする
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -36,7 +36,7 @@ ms.locfileid: "51164859"
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 
 
@@ -44,7 +44,7 @@ ms.locfileid: "51164859"
 >[!NOTE] 
 >これらの一連の手順は、MSSP に向けて指示されます。 
 
-既定では、MSSP のお客様は、次の URL を使用して Microsoft Defender セキュリティ センター テナントにアクセスします `https://securitycenter.windows.com` 。
+既定では、MSSP のお客様は次の URL Microsoft Defender セキュリティ センターテナントにアクセスします `https://securitycenter.windows.com` 。
  
 
 ただし、MSSP は、MSSP カスタマー ポータルにアクセスするには、テナント固有の URL を次の形式で  `https://securitycenter.windows.com?tid=customer_tenant_id` 使用する必要があります。 
@@ -58,12 +58,12 @@ ms.locfileid: "51164859"
 
 2. ディレクトリを MSSP 顧客のテナントに切り替えます。
 
-3.  [Azure **Active Directory >プロパティ] を選択します**。 [ディレクトリ ID] フィールドにテナント ID があります。 
+3.  [プロパティ **Azure Active Directory >] を選択します**。 [ディレクトリ ID] フィールドにテナント ID があります。 
 
 4. 次の URL の値を置き換え、MSSP カスタマー ポータル `customer_tenant_id` にアクセスします `https://securitycenter.windows.com?tid=customer_tenant_id` 。
 
 
 ## <a name="related-topics"></a>関連項目
 - [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
-- [アラート通知の構成](configure-mssp-notifications.md)
+- [アラート通知を構成する](configure-mssp-notifications.md)
 - [顧客テナントからアラートを取得する](fetch-alerts-mssp.md)

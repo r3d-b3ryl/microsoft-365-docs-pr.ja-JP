@@ -33,7 +33,7 @@ ms.locfileid: "51066083"
 
 
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-threatindicator-abovefoldlink) 
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-threatindicator-abovefoldlink) 
 
 高度なサイバーセキュリティ攻撃は、複数の複雑な悪意のあるイベント、属性、コンテキスト情報で構成されます。 これらのアクティビティの中で疑わしいと見なされるアクティビティを特定して決定すると、困難な作業になる可能性があります。 業界固有の既知の属性と異常なアクティビティに関する知識は、観測された動作を疑わしいと呼ぶ場合を知る上で基本的です。
 
@@ -64,12 +64,12 @@ IOC は、アラート定義と多対 1 の関係を持ち、アラート定義�
 トピック | 説明
 :---|:---
 [SIEM ツールへの検出のプル](configure-siem.md)| 検出をプルするさまざまな方法について学習します。
-[エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)| サポートされている SIEM ツールを構成するために必要な情報を使用して生成できるよう、ポータルの [設定] ページで SIEM 統合機能を有効にする方法について学習します。
+[エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)| サポートされている SIEM ツールを構成するために必要な情報を使用して生成できるよう、ポータルの **設定** ページで SIEM 統合機能を有効にする方法について学習します。
 [エンドポイント検出用の Microsoft Defender をプルする Splunk の構成](configure-siem.md)| REST API モジュラ入力アプリなどの構成設定をインストールして、Splunk が Microsoft Defender for Endpoint の検出を取得する方法について説明します。
 [エンドポイント検出用の Microsoft Defender をプルする HP ArcSight の構成](configure-arcsight.md)| HP ArcSight REST FlexConnector パッケージのインストールと、Microsoft Defender for Endpoint 検出を取得するために ArcSight を構成するために必要なファイルについて説明します。
-[Microsoft Defender for Endpoint Detection フィールド](api-portal-mapping.md) | アラート API の一部として公開されるデータ フィールドと、Microsoft Defender セキュリティ センターへのマップ方法について説明します。
+[Microsoft Defender for Endpoint Detection フィールド](api-portal-mapping.md) | アラート API の一部として公開されるデータ フィールドと、そのデータ フィールドがアラート API にマップMicrosoft Defender セキュリティ センター。
 [REST API を使用したエンドポイント検出用の Microsoft Defender のプル](pull-alerts-using-rest-api.md) | REST API を使用して Microsoft Defender for Endpoint から検出を取得するには、クライアント資格情報 OAuth 2.0 フローを使用します。
-[SIEM ツールの統合に関する問題のトラブルシューティング](troubleshoot-siem.md) | SIEM 統合機能を使用するときに発生する可能性がある問題に対処します。
+[SIEM ツール統合に関する問題のトラブルシューティング](troubleshoot-siem.md) | SIEM 統合機能を使用するときに発生する可能性がある問題に対処します。
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: ユーザーに代わって Microsoft 365 Defender API にアクセスするアプリを作成する
-description: ユーザーに代わって Microsoft 365 Defender API にアクセスする方法について説明します。
+title: ユーザーに代わって Defender API Microsoft 365アクセスするアプリを作成する
+description: ユーザーに代わって、Microsoft 365 Defender API にアクセスする方法について説明します。
 keywords: access, 代理ユーザー, api, application, user, access token, token,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51068667"
 ---
-# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>ユーザーに代わって Microsoft 365 Defender API にアクセスするアプリを作成する
+# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>ユーザーに代わって Defender API Microsoft 365アクセスするアプリを作成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,26 +38,26 @@ ms.locfileid: "51068667"
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-このページでは、1 人のユーザーに代わって Microsoft 365 Defender へのプログラムによるアクセスを取得するアプリケーションを作成する方法について説明します。
+このページでは、1 人のユーザーに代わって Defender にプログラムでアクセスMicrosoft 365アプリケーションを作成する方法について説明します。
 
-定義済みのユーザーなしで Microsoft 365 Defender にプログラムでアクセスする必要がある場合 (たとえば、バックグラウンド アプリやデーモンを作成する場合)、「ユーザーなしで [Microsoft 365 Defender](api-create-app-web.md)にアクセスするアプリを作成する」を参照してください。 大規模な組織や顧客グループにサービスを提供する場合など、複数のテナントにアクセス権を提供する必要がある場合は [、「Microsoft 365 Defender API](api-partner-access.md)へのパートナー アクセスを持つアプリを作成する」を参照してください。必要なアクセスの種類が不明な場合は、「開始する」 [を参照してください](api-access.md)。
+定義されたユーザーなしで Microsoft 365 Defender にプログラムでアクセスする必要がある場合 (たとえば、バックグラウンド アプリやデーモンを作成する場合)、「ユーザーなしで[Microsoft 365 Defender](api-create-app-web.md)にアクセスするアプリを作成する」を参照してください。 大規模な組織や顧客グループにサービスを提供する場合など、複数のテナントにアクセス権を提供する必要がある場合は[、「Microsoft 365 Defender API](api-partner-access.md)へのパートナー アクセスを持つアプリを作成する」を参照してください。必要なアクセスの種類が不明な場合は、「開始する」[を参照してください](api-access.md)。
 
-Microsoft 365 Defender は、一連のプログラム API を使用して、そのデータとアクションの多くを公開します。 これらの API は、ワークフローを自動化し、Microsoft 365 Defender の機能を利用するのに役立ちます。 この API アクセスには、OAuth2.0 認証が必要です。 詳細については [、「OAuth 2.0 Authorization Code Flow」を参照してください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft 365Defender は、一連のプログラム API を使用して、そのデータとアクションの多くを公開します。 これらの API は、ワークフローを自動化し、Defender の機能Microsoft 365活用するのに役立ちます。 この API アクセスには、OAuth2.0 認証が必要です。 詳細については[、「OAuth 2.0 Authorization Code Flow」 を参照してください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般に、これらの API を使用するには、次の手順を実行する必要があります。
 
-- Azure Active Directory (Azure Active Directory AD) アプリケーションを作成します。
+- アプリケーション (azure Azure Active Directory) AD作成します。
 - このアプリケーションを使用してアクセス トークンを取得します。
-- トークンを使用して Microsoft 365 Defender API にアクセスします。
+- トークンを使用して、Defender API Microsoft 365アクセスします。
 
 この記事では、次の方法について説明します。
 
 - Azure AD アプリケーションを作成する
-- Microsoft 365 Defender へのアクセス トークンを取得する
+- Defender へのアクセス トークンをMicrosoft 365する
 - トークンを検証する
 
 > [!NOTE]
-> ユーザーの代わりに Microsoft 365 Defender API にアクセスする場合は、適切なアプリケーションのアクセス許可とユーザーのアクセス許可が必要です。
+> ユーザーに代Microsoft 365 Defender API にアクセスする場合は、適切なアプリケーションのアクセス許可とユーザーのアクセス許可が必要です。
 
 > [!TIP]
 > ポータルでアクションを実行するアクセス許可がある場合は、API でアクションを実行するアクセス許可を持つ必要があります。
@@ -66,9 +66,9 @@ Microsoft 365 Defender は、一連のプログラム API を使用して、そ�
 
 1. グローバル管理者ロール [を持](https://portal.azure.com) つユーザーとして Azure **にサインイン** します。
 
-2. **[Azure Active Directory アプリの**  >  **登録] [新規登録**  >  **] に移動します**。
+2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。
 
-   ![Microsoft Azure のイメージとアプリケーション登録へのナビゲーション](../../media/atp-azure-new-app2.png)
+   ![アプリケーション登録Microsoft Azureナビゲーションのイメージ](../../media/atp-azure-new-app2.png)
 
 3. フォームで、アプリケーションの名前を選択し、リダイレクト URI の次の情報を入力し、[登録] を **選択します**。
 
@@ -77,10 +77,10 @@ Microsoft 365 Defender は、一連のプログラム API を使用して、そ�
    - **アプリケーションの種類:** パブリック クライアント
    - **リダイレクト URI:**https://portal.azure.com
 
-4. アプリケーション ページで **、[API アクセス** 許可] [アクセス許可の追加] を選択し、組織で使用するアクセス許可 API > Microsoft Threat Protection と入力し  >    >  **、[Microsoft** Threat **Protection] を選択します**。 これで、アプリは Microsoft 365 Defender にアクセスできます。
+4. アプリケーション ページで **、[API アクセス** 許可] [アクセス許可の追加] を選択し、組織で使用するアクセス許可 API >、Microsoft Threat Protectionを入力し、[Microsoft Threat Protection]  >    >  **を選択します**。  これで、アプリは Defender にMicrosoft 365できます。
 
    > [!TIP]
-   > *Microsoft Threat Protection* は、Microsoft 365 Defender の以前の名前であり、元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
+   > *Microsoft Threat Protection* Defender の元の名前Microsoft 365元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
 
    ![API アクセス許可の選択のイメージ](../../media/apis-in-my-org-tab.PNG)
 
@@ -103,7 +103,7 @@ Microsoft 365 Defender は、一連のプログラム API を使用して、そ�
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-Azure Active Directory トークンの詳細については、「Azure Active Directory トークン」のチュートリアル [ADしてください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
+トークンの詳細については、「Azure Azure Active Directoryチュートリアル」[をADしてください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 ### <a name="get-an-access-token-using-powershell"></a>PowerShell を使用してアクセス トークンを取得する
 
@@ -132,9 +132,9 @@ $response.AccessToken
 
 ![トークン検証のイメージ](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>トークンを使用して Microsoft 365 Defender API にアクセスする
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>トークンを使用して Defender API Microsoft 365アクセスする
 
-1. 使用する API (インシデント、高度な検索) を選択します。 詳細については、「サポートされている [Microsoft 365 Defender API」を参照してください](api-supported.md)。
+1. 使用する API (インシデント、高度な検索) を選択します。 詳細については[、「Supported Microsoft 365 Defender API」を参照してください](api-supported.md)。
 2. 送信する http 要求で、認証ヘッダーを 、承認スキームであるベアラー、検証済みトークンである `"Bearer" <token>` トークンに設定します。 
 3. トークンは 1 時間以内に期限切れになります。 同じトークンを使用して、この期間中に複数の要求を送信できます。
 
@@ -151,11 +151,11 @@ $response.AccessToken
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 Defender API の概要](api-overview.md)
-- [Microsoft 365 Defender API へのアクセス](api-access.md)
+- [Microsoft 365Defender API の概要](api-overview.md)
+- [Defender API Microsoft 365アクセスする](api-access.md)
 - ['Hello world' アプリを作成する](api-hello-world.md)
-- [ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成する](api-create-app-web.md)
-- [Microsoft 365 Defender API へのマルチテナント パートナー アクセスでアプリを作成する](api-partner-access.md)
+- [ユーザーなしで Defender にアクセスMicrosoft 365アプリを作成する](api-create-app-web.md)
+- [複数テナントパートナーが Defender API にアクセスできるアプリMicrosoft 365作成する](api-partner-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)
 - [エラー コードについて](api-error-codes.md)
 - [ユーザー サインインと API アクセスの OAuth 2.0 承認](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

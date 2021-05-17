@@ -36,7 +36,7 @@ ms.locfileid: "51064972"
 ## <a name="in-this-section"></a>このセクションの内容
 トピック | 説明 
 :---|:---
-[アラート キュー](alerts-queue-endpoint-detection-response.md)| Microsoft Defender セキュリティ センターに表示されるアラートを表示します。
+[アラート キュー](alerts-queue-endpoint-detection-response.md)| [通知] で表示される通知をMicrosoft Defender セキュリティ センター。
 [デバイスの一覧](machines-view-overview.md) | デバイス リストの表示と管理、デバイス グループの管理、デバイス関連のアラートの調査を行う方法について学習します。 
-[応答アクションの実行](respond-machine-alerts.md)| デバイスとファイルに対して応答アクションを実行して、検出された攻撃に迅速に対応し、脅威を含めます。
+[対応措置を講じる](respond-machine-alerts.md)| デバイスとファイルに対して応答アクションを実行して、検出された攻撃に迅速に対応し、脅威を含めます。
 [高度な検索を使用してデータをクエリする](advanced-hunting-query-language.md)| 強力な検索およびクエリ ツールを使用して、組織全体で可能性のある脅威を積極的に探します。

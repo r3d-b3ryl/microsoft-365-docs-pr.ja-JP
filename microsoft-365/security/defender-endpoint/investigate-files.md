@@ -35,7 +35,7 @@ ms.locfileid: "51186067"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
 
 特定のアラート、動作、またはイベントに関連付けられたファイルの詳細を調査して、ファイルに悪意のあるアクティビティが発生したかどうかを判断し、攻撃の動機を特定し、侵害の潜在的な範囲を理解します。
 
@@ -46,10 +46,10 @@ ms.locfileid: "51186067"
 ファイル ビューでは、次のセクションから情報を取得できます。
 
 - ファイルの詳細, マルウェアの検出, ファイルの普及率
-- 深い分析
+- 詳細分析
 - アラート
 - 組織内で観察される
-- 深い分析
+- 詳細分析
 - ファイル名
 
 このページからファイルに対してアクションを実行することもできます。
@@ -61,7 +61,7 @@ ms.locfileid: "51186067"
 - 停止と検疫
 - インジケーターの追加および編集
 - ファイルをダウンロードする
-- 脅威の専門家に相談する
+- 脅威のエキスパートに相談する
 - アクション センター
 
 これらのアクションの詳細については、「ファイルに [対して応答アクションを実行する」を参照してください](respond-file-alerts.md)。
@@ -96,7 +96,7 @@ ms.locfileid: "51186067"
 
 スライダーまたは範囲セレクターを使用して、ファイルに関連するイベントを確認する期間をすばやく指定します。 タイム ウィンドウは、1 日に限り小さく指定できます。 これにより、その時点でその IP アドレスと通信したファイルだけが表示され、不要なスクロールと検索が大幅に削減されます。
 
-## <a name="deep-analysis"></a>深い分析
+## <a name="deep-analysis"></a>詳細分析
 
 [**深い分析**] タブ [](respond-file-alerts.md#deep-analysis)を使用すると、ファイルを詳細に分析するためにファイルを提出し、ファイルの動作の詳細と、ファイルが組織に与える影響を明らかにできます。 ファイルを送信すると、結果が得られたら、このタブに詳細分析レポートが表示されます。 深い分析で何も見つからなかった場合、レポートは空で、結果領域は空白のままです。
 
@@ -117,4 +117,4 @@ ms.locfileid: "51186067"
 - [Microsoft Defender for Endpoint アラートに関連付けられている IP アドレスを調査する](investigate-ip.md)
 - [Microsoft Defender for Endpoint アラートに関連付けられているドメインを調査する](investigate-domain.md)
 - [Microsoft Defender for Endpoint のユーザー アカウントを調査する](investigate-user.md)
-- [ファイルに対して応答アクションを実行する](respond-file-alerts.md)
+- [ファイルの対応措置を講じる](respond-file-alerts.md)

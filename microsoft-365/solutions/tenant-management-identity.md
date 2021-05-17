@@ -1,5 +1,5 @@
 ---
-title: 手順 3. エンタープライズ テナント用の Microsoft 365 の ID
+title: 手順 3. エンタープライズ テナントのMicrosoft 365 ID
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - Ent_Solutions
-description: Microsoft 365 テナントに適切な ID モデルを展開し、強力なユーザー サインインを適用します。
+description: テナントに適切な ID モデルMicrosoft 365展開し、強力なユーザー サインインを適用します。
 ms.openlocfilehash: 57e84b38715c4fbe29f9aa362e363663b0401f91
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -23,39 +23,39 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51052364"
 ---
-# <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>手順 3. エンタープライズ テナント用の Microsoft 365 の ID
+# <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>手順 3. エンタープライズ テナントのMicrosoft 365 ID
 
-Microsoft 365 テナントには、サインインの ID と認証を管理するための Azure Active Directory (Azure AD) テナントが含まれています。組織の Microsoft 365 ユーザー アクセスとアクセス許可を管理するには、ID インフラストラクチャを正しく構成する必要があります。
+ユーザー Microsoft 365には、サインインAzure Active Directory ID と認証を管理AD (Azure AD) テナントが含まれています。ID インフラストラクチャを正しく構成することは、組織のユーザー アクセスMicrosoft 365アクセス許可を管理する上で重要です。
 
 ## <a name="cloud-only-vs-hybrid"></a>クラウド専用とハイブリッド
 
 ID モデルの 2 種類と、最適な適合と利点を次に示します。
 
 
-| モデル | 説明 | Microsoft 365 がユーザー資格情報を認証する方法 | 最適シナリオ | 最大のメリット |
+| モデル | 説明 | ユーザー Microsoft 365認証方法 | 最適シナリオ | 最大のメリット |
 |:-------|:-----|:-----|:-----|:-----|
-| クラウド専用 | ユーザー アカウントは、Microsoft 365 テナントの Azure ADテナントにのみ存在します。 | Microsoft 365 ADの Azure クライアント テナントは、クラウド ID アカウントを使用して認証を実行します。 | DS を使用するオンプレミスの組織または必要AD組織。 | 使いやすい。 追加のディレクトリ ツールやサーバーは必要ありません。 |
-| ハイブリッド |  ユーザー アカウントはオンプレミスの Active Directory ドメイン サービス (AD DS) に存在し、コピーは Microsoft 365 テナントの Azure AD テナントにも存在します。 Azure AD接続は、オンプレミス サーバー上で実行され、DS ADを Azure ADテナントに同期します。 Azure ADのユーザー アカウントには、既にハッシュされた DS ユーザー アカウント のパスワードADが含まれる場合があります。 | Microsoft 365 ADの Azure クライアント テナントは、認証プロセスを処理するか、ユーザーを別の ID プロバイダーにリダイレクトします。 | DS または別AD ID プロバイダーを使用している組織。 | ユーザーは、オンプレミスまたはクラウドベースのリソースにアクセスするときに同じ資格情報を使用できます。 |
+| クラウド専用 | ユーザー アカウントは、Azure ADテナントにのみMicrosoft 365されます。 | Azure ADテナントMicrosoft 365クラウド ID アカウントで認証を実行します。 | DS を使用するオンプレミスの組織または必要AD組織。 | 使いやすい。 追加のディレクトリ ツールやサーバーは必要ありません。 |
+| ハイブリッド |  ユーザー アカウントはオンプレミスの Active Directory ドメイン サービス (AD DS) に存在し、コピーは azure AD テナントMicrosoft 365にあります。 Azure AD Connectオンプレミス サーバー上で実行して、DS の変更AD Azure サーバーテナントADします。 Azure ADのユーザー アカウントには、既にハッシュされた DS ユーザー アカウント のパスワードADが含まれる場合があります。 | Azure ADテナントMicrosoft 365認証プロセスを処理するか、ユーザーを別の ID プロバイダーにリダイレクトします。 | DS または別AD ID プロバイダーを使用している組織。 | ユーザーは、オンプレミスまたはクラウドベースのリソースにアクセスするときに同じ資格情報を使用できます。 |
 ||||||
 
 クラウド専用 ID の基本的なコンポーネントを次に示します。
  
 ![クラウド専用 ID の基本的なコンポーネント](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-この図では、オンプレミスユーザーとリモート ユーザーは、Microsoft 365 テナントの Azure ADアカウントでサインインします。
+この図では、オンプレミスユーザーとリモート ユーザーは、自分のテナントの Azure ADテナントでアカウントMicrosoft 365します。
 
 ハイブリッド ID の基本的なコンポーネントを次に示します。
 
 ![ハイブリッド ID の基本的なコンポーネント](../media/about-microsoft-365-identity/hybrid-identity.png)
 
-AD この図では、オンプレミスユーザーとリモート ユーザーは、オンプレミスの DS からコピーされた Azure AD テナントのアカウントを使用して Microsoft 365 テナントにサインインします。
+この図では、オンプレミスユーザーとリモート ユーザーは、オンプレミスの Microsoft 365 テナントからコピーされた Azure AD テナントのアカウントを使用して Microsoft 365 テナントにサインイン ADします。
 
 ## <a name="synchronizing-your-on-premises-ad-ds"></a>オンプレミスの DS のADする
 
-ビジネス ニーズと技術的要件に応じて、ハイブリッド ID モデルとディレクトリ同期は、Microsoft 365 を採用している企業のお客様にとって最も一般的な選択肢です。 ディレクトリ同期を使用すると、AD DS の ID を管理し、ユーザー アカウント、グループ、連絡先に対する更新はすべて、Microsoft 365 テナントの Azure AD テナントに同期されます。
+ビジネス ニーズと技術的要件に応じて、ハイブリッド ID モデルとディレクトリ同期は、ハイブリッド ID モデルとディレクトリ同期を採用している企業のお客様にとって最も一般的な選択肢Microsoft 365。 ディレクトリ同期を使用すると、AD DS の ID を管理し、ユーザー アカウント、グループ、連絡先に対する更新はすべて、Microsoft 365 テナントの Azure AD テナントに同期されます。
 
 >[!Note]
->DS ADが初めて同期される場合、Microsoft 365 ライセンスが自動的に割り当てられるのではなく、電子メールなどの Microsoft 365 サービスにアクセスできません。 最初に使用場所を割り当てる必要があります。 次に、グループ メンバーシップを使用して、個別または動的にこれらのユーザー アカウントにライセンスを割り当てる。
+>DS ADアカウントが初めて同期された場合、ds ユーザー アカウントには Microsoft 365 ライセンスが自動的に割り当てられるのではなく、電子メールなどの Microsoft 365 サービスにアクセスできません。 最初に使用場所を割り当てる必要があります。 次に、グループ メンバーシップを使用して、個別または動的にこれらのユーザー アカウントにライセンスを割り当てる。
 >
 
 ハイブリッド ID モデルを使用する場合の 2 種類の認証を次に示します。
@@ -74,18 +74,18 @@ AD この図では、オンプレミスユーザーとリモート ユーザー�
 
 | 機能 | 説明 | 詳細情報 | ライセンスの要件 |
 |:-------|:-----|:-----|:-----|:-----|
-| Windows Hello for Business | Windows デバイスに署名するときに、パスワードを強力な 2 要素認証に置き換える。 この 2 要素認証は、デバイスと生体認証または PIN に関連付けられる新しい種類のユーザー資格情報です。 | [Windows Hello for Business の概要](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 または E5 |
+| Windows Hello for Business | デバイスにサインインするときに、パスワードを強力な 2 要素認証Windowsします。 この 2 要素認証は、デバイスと生体認証または PIN に関連付けられる新しい種類のユーザー資格情報です。 | [Windows Hello for Business の概要](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 または E5 |
 | Azure AD パスワード保護 | 既知の脆弱なパスワードとそのバリアントを検出してブロックし、組織に固有の追加の弱い用語をブロックすることもできます。 | [Azure ADパスワード保護を構成する](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 または E5 |
-| 多要素認証 (MFA) を使用する | MFA では、ユーザー サインインは、スマートフォン アプリでの検証やスマートフォンに送信されるテキスト メッセージなど、ユーザー アカウントのパスワードを超えた追加の検証の対象となる必要があります。 ユーザー [が MFA を](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) 設定する方法については、このビデオを参照してください。 | [エンタープライズ向け Microsoft 365 の MFA](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 または E5 |
-| ID とデバイスのアクセス構成 | 推奨される前提条件機能とその設定と条件付きアクセス、Intune、Azure AD Identity Protection ポリシーを組み合わせて構成される設定とポリシー。  | [ID とデバイスのアクセス構成](../security/defender-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 または E5 |
-| Azure AD Identity Protection | 資格情報の侵害から保護します。攻撃者がユーザーのアカウント名とパスワードを決定して、組織のクラウド サービスとデータにアクセスします。 | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 または Microsoft 365 E3 &脅威防止アドオン |
+| 多要素認証 (MFA) を使用する | MFA では、ユーザー サインインは、スマートフォン アプリでの検証やスマートフォンに送信されるテキスト メッセージなど、ユーザー アカウントのパスワードを超えた追加の検証の対象となる必要があります。 ユーザー [が MFA を](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) 設定する方法については、このビデオを参照してください。 | [エンタープライズ向けMicrosoft 365 MFA](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 または E5 |
+| ID とデバイスのアクセス構成 | 設定の前提条件機能と設定と条件付きアクセス、Intune、Azure AD Identity Protection ポリシーを組み合わせて構成されるポリシーとポリシーを使用して、特定のアクセス要求をどの条件で付与するか判断します。  | [ID とデバイスのアクセス構成](../security/defender-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 または E5 |
+| Azure AD Identity Protection | 資格情報の侵害から保護します。攻撃者がユーザーのアカウント名とパスワードを決定して、組織のクラウド サービスとデータにアクセスします。 | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5脅威Microsoft 365 E3アドオンを使用&または変更する |
 |  |  |  |
 
 
 
 ## <a name="results-of-step-3"></a>手順 3 の結果
 
-Microsoft 365 テナントの ID については、次の点を決定しました。
+テナントの ID についてはMicrosoft 365決定しました。
 
 - 使用する ID モデル。
 - ユーザーとデバイスへの強力なアクセスを強制する方法。
@@ -96,7 +96,7 @@ Microsoft 365 テナントの ID については、次の点を決定しまし�
 
 この図では、テナントには次の機能があります。
 
-- DirSync ADおよび Azure AD Connect を使用して Azure ADテナントと同期されている DS フォレストをADします。
+- DirSync ADおよび Azure サーバーを使用して Azure AD テナントと同期されている DS フォレストAD Connect。
 - DS フォレストからAD DS ユーザー アカウントおよび他のオブジェクトADコピー。
 - ユーザー アカウントに基づいてセキュリティで保護されたユーザー サインインとアクセスを強制するための一連の条件付きアクセス ポリシー。 
 
@@ -104,11 +104,11 @@ Microsoft 365 テナントの ID については、次の点を決定しまし�
 
 継続的に、次の必要が生じ得る場合があります。
 
-- ユーザー アカウントとグループを追加または変更します。 クラウド専用 ID の場合は、Microsoft 365 管理センターや PowerShell などの Azure AD ツールを使用して、クラウドベースのユーザーとグループを維持します。 ハイブリッド ID の場合は、DS ツールを使用してオンプレミスのユーザーとグループAD維持します。
+- ユーザー アカウントとグループを追加または変更します。 クラウド専用 ID の場合は、クラウド ベースのユーザーとグループを Azure AD管理センターや PowerShell などのMicrosoft 365管理します。 ハイブリッド ID の場合は、DS ツールを使用してオンプレミスのユーザーとグループAD維持します。
 - サインイン セキュリティ要件を適用するために、ID とデバイス アクセス構成を追加または変更します。
 
 ## <a name="next-step"></a>次の手順
 
 [![手順 4.オンプレミスのサーバーとデータOffice移行する](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
 
-移行を [続行して](tenant-management-migration.md) 、オンプレミスのサーバーとそのOffice Microsoft 365 に移行します。
+移行を[続行して](tenant-management-migration.md)、オンプレミスのサーバーとそのOfficeデータを移行して、Microsoft 365。

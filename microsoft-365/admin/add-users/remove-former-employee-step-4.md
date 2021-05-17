@@ -1,5 +1,5 @@
 ---
-title: 手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする
+title: 手順 4 - 別の従業員に OneDrive および Outlook データへのアクセス権を与える
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 次の手順に従って、別の従業員に元従業員のデータとOneDriveアクセスOutlookします。
+description: 次の手順に従って、別の従業員に元従業員の OneDrive および Outlook データへのアクセス権を与える。
 ms.openlocfilehash: 451f8f7f50098c280e3925ef4efe5ad491ac54fa
 ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
@@ -31,13 +31,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52244211"
 ---
-# <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする
+# <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>手順 4 - 別の従業員に OneDrive および Outlook データへのアクセス権を与える
 
-従業員が組織を離れる場合は、OneDrive および Outlook データにアクセスし、バックアップし、別の従業員に渡すかどうかを選択します。
+従業員が組織を離れる場合は、OneDrive データと Outlook データにアクセスし、そのデータをバックアップし、別の従業員に渡すかどうかを選択します。
   
 ## <a name="access-a-former-users-onedrive-documents"></a>元のユーザーの OneDrive ドキュメントにアクセスする
 
-ユーザーのライセンスを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツへのアクセス権を自分に与えることができます。 ユーザーのアカウントを削除すると、既定で 30 日間、以前のユーザーのデータにアクセスOneDriveがあります。 [削除されたユーザーに OneDrive の保持を設定する方法を学習します](/onedrive/set-retention)。 この時間内に[ユーザー アカウントを復元](/office365/admin/add-users/restore-user)しない場合、OneDrive コンテンツは削除されます。
+ユーザーのライセンスを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツへのアクセス権を自分に与えることができます。 ユーザーのアカウントを削除すると、既定で 30 日間、元のユーザーの OneDrive データにアクセスできます。 [削除されたユーザーに OneDrive の保持を設定する方法を学習します](/onedrive/set-retention)。 この時間内に[ユーザー アカウントを復元](/office365/admin/add-users/restore-user)しない場合、OneDrive コンテンツは削除されます。
 
 元のユーザーの OneDrive ファイルを保存するには、まず自分の OneDrive にアクセスしてから、保持するファイルを移動します。
 
@@ -53,17 +53,17 @@ ms.locfileid: "52244211"
 > 一度に最大 500 MB のファイルとフォルダーを移動またはコピーできます。<br/>
 > バージョン履歴のあるドキュメントを移動またはコピーすると、最新バージョンのみ移動されます。  
 
-### <a name="revoke-admin-access-to-a-users-onedrive"></a>ユーザーのアカウントへの管理者アクセスを取り消OneDrive
+### <a name="revoke-admin-access-to-a-users-onedrive"></a>ユーザーの OneDrive への管理者アクセスを取り消す
 
-ユーザーのサイト内のコンテンツへのアクセス権をユーザーに与OneDrive、不要になったときにアクセス権を削除することもできます。
+ユーザーの OneDrive 内のコンテンツに自分でアクセス権を与え、不要になったときにアクセス権を削除することもできます。
 
-1. グローバル管理者または<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理者として</a>管理センターにサインインSharePointします。
+1. 全体管理者または<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>SharePoint 管理者として管理センターにサインインします。
 
     管理者センターにアクセスする権限がないというメッセージが表示される場合は、組織には管理者権限がありません。
 
 2. 左側のウィンドウで、[**管理センター**] \> [**SharePoint**] の順に選択します。 (場合によっては、管理センターのリストを表示するために **[すべて表示]** を選択する必要があります。)
 
-3. 従来の管理センター SharePoint表示される場合は、ページの上部にある [今すぐ開く] を選択して、管理センター SharePoint開きます。
+3. 従来の SharePoint 管理センターが表示される場合は、ページの上部にある [今すぐ開く] を選択して SharePoint 管理センターを開きます。
 
 4. ウィンドウの左側で [**その他の機能**] を選択します。
 
@@ -156,7 +156,7 @@ Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファ�
 9. [**完了**] を選択します。
 
 > [!NOTE]
-> 既存のユーザーのデータと電子メール データにアクセスする場合OneDrive手順は変わりません。
+> 手順は、既存のユーザーの OneDrive および電子メール データにアクセスする場合と同じです。
 
 > [!TIP]
 > Outlook データ ファイル (.pst) からいくつかのアイテムのみをインポートまたは復元する場合は、Outlook データ ファイルを開くことができます。 次に、ナビゲーション ウィンドウで、Outlook データ ファイル フォルダーから既存の Outlook フォルダーにアイテムをドラッグします。 

@@ -33,7 +33,7 @@ ms.locfileid: "51165167"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Microsoft Defender for Endpoint を展開して、企業が予防保護、侵害後の検出、自動調査、および対応を活用する方法について説明します。 
 
@@ -85,7 +85,7 @@ Microsoft Defender for Endpoint には多くの機能が備え付けられます
 
 ### <a name="in-scope"></a>スコープ内
 
--   Microsoft Endpoint Manager と Microsoft Endpoint Manager を使用してエンドポイントをサービスにオンボードし、機能を構成する
+-   サービスへのMicrosoft エンドポイント マネージャーとMicrosoft エンドポイント マネージャーの使用と機能の構成
 
 -   Defender for Endpoint エンドポイントの検出と応答 (EDR) 機能の有効化
 
@@ -109,6 +109,6 @@ Microsoft Defender for Endpoint には多くの機能が備え付けられます
 
 ## <a name="see-also"></a>関連項目
 - [フェーズ 1: 準備](prepare-deployment.md)
-- [フェーズ 2: セットアップ](production-deployment.md)
+- [フェーズ 2: 設定](production-deployment.md)
 - [フェーズ 3: オンボード](onboarding.md)
 - [展開を計画する](deployment-strategy.md)

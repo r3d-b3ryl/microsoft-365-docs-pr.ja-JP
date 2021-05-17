@@ -1,7 +1,7 @@
 ---
-title: Microsoft Cloud App Security の統合の概要
+title: Microsoft Cloud App Security 統合の概要
 ms.reviewer: ''
-description: Microsoft Defender for Endpoint は、すべてのクラウド アプリのネットワーク アクティビティを転送することで、クラウド アプリ セキュリティと統合します。
+description: Microsoft Defender for Endpoint は、すべてのクラウド Cloud App Securityアクティビティを転送することで、ユーザーと統合します。
 keywords: クラウド、アプリ、ネットワーク、可視性、使用状況
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185601"
 ---
-# <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Defender for Endpoint の Microsoft Cloud App Security の概要
+# <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Microsoft Cloud App Security Defender for Endpoint の概要の詳細
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,25 +36,25 @@ ms.locfileid: "51185601"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Cloud App Security (Cloud App Security) は、クラウド アプリへのアクセスを制御および制限しながら、クラウドに保存されているデータに対するコンプライアンス要件を適用することで、クラウド アプリとサービスを可視化する包括的なソリューションです。 詳細については [、「Cloud App Security」を参照してください](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)。
+Microsoft Cloud App Security (Cloud App Security) は、クラウド アプリへのアクセスを制御および制限しながら、クラウドに保存されているデータに対するコンプライアンス要件を適用することで、クラウド アプリとサービスを可視化する包括的なソリューションです。 詳細については、「Cloud App Security」[を参照してください](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)。
 
 >[!NOTE]
->この機能は、Windows 10 バージョン 1809 以降を実行しているデバイスのエンタープライズ モビリティ [+](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) セキュリティの E5 ライセンスで使用できます。
+>この機能は、バージョン 1809 以降で実行Enterprise Mobility + SecurityデバイスWindows 10 E5 ライセンスで使用できます。 [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-## <a name="microsoft-defender-for-endpoint-and-cloud-app-security-integration"></a>Microsoft Defender for Endpoint and Cloud App Security の統合 
+## <a name="microsoft-defender-for-endpoint-and-cloud-app-security-integration"></a>Microsoft Defender for Endpoint and Cloud App Security統合 
 
-Cloud App Security の検出は、エンタープライズ ファイアウォールおよびプロキシ サーバーからクラウド トラフィック ログに転送されるログに依存します。 Microsoft Defender for Endpoint は、すべてのクラウド アプリ のネットワーク アクティビティを収集および転送することで、クラウド アプリのセキュリティと統合し、クラウド アプリの使用状況を比類のない可視性を提供します。 監視機能はデバイスに組み込み、ネットワーク アクティビティを完全にカバーします。
+Cloud App Security検出は、エンタープライズ ファイアウォールおよびプロキシ サーバーから転送されるクラウド トラフィック ログに依存します。 Microsoft Defender for Endpoint は、すべてのクラウド Cloud App Securityアクティビティを収集して転送することで、クラウド アプリの使用状況を他に類を見ない可視性を提供することで、クラウド アプリと統合します。 監視機能はデバイスに組み込み、ネットワーク アクティビティを完全にカバーします。
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yQ]
 
 
-この統合は、既存のクラウド アプリ セキュリティ検出に次のような大きな改善点を提供します。 
+この統合により、既存の検出に対して次の主なCloud App Security提供されます。 
 
 - すべての場所で利用できる - ネットワーク アクティビティはエンドポイントから直接収集されます。企業ネットワークのオンとオフのデバイスは、エンタープライズ ファイアウォールまたはプロキシ サーバー経由でルーティングされるトラフィックに依存しなくなったので、デバイスがオンまたはオフの場所で利用できます。 
 
-- クラウド トラフィック ログを Cloud App Security に転送するには、ファイアウォールとプロキシ サーバーの構成が必要です。 Defender for Endpoint と Cloud App Security の統合により、構成は不要です。 Microsoft Defender セキュリティ センターの設定でオンにし、行くのが良いです。 
+- 構成は不要です。クラウド トラフィック ログをファイアウォールとプロキシ サーバーの構成が必要Cloud App Securityクラウド トラフィック ログを転送します。 Defender for Endpoint and Cloud App Security統合により、構成は不要です。 [設定] でMicrosoft Defender セキュリティ センターオンにし、行くのが良い方法です。 
 
 - デバイス コンテキスト - クラウド トラフィック ログにデバイス コンテキストが不足しています。 Defender for Endpoint ネットワーク アクティビティは、デバイス コンテキスト (クラウド アプリにアクセスしたデバイス) で報告されます。そのため、ネットワーク アクティビティが行われた場所 (デバイス) と、ネットワーク アクティビティを実行したユーザー (ユーザー) を正確に理解できます。 
 
@@ -62,4 +62,4 @@ Cloud App Security の検出は、エンタープライズ ファイアウォー
 
 ## <a name="related-topic"></a>関連トピック
 
-- [Microsoft Cloud App Security の統合を構成する](microsoft-cloud-app-security-config.md)
+- [Microsoft Cloud App Security との統合を構成する](microsoft-cloud-app-security-config.md)

@@ -41,6 +41,6 @@ ms.locfileid: "52244239"
 2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
 3. ユーザーを選択し、[モバイル デバイス] **で、[** 詳細の表示] **を選択します**。
 4. [モバイル デバイス **の詳細]** ページの [モバイル デバイス] で、モバイル デバイスを選択し、[データ ワイプ デバイスのワイプ] を選択し、[ブロック] ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) を **選択します**。
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
    > [!TIP]
    > オンプレミスの Blackberry Enterprise サービスからユーザーを削除またはEnterpriseしてください。 さらに、そのユーザーのすべての Blackberry デバイスを無効にする必要もあります。 ユーザーを無効にする具体的な手順については、「Blackberry Business Cloud Services Administration Guide」 (Blackberry Business Cloud Services 管理ガイド) を参照してください。

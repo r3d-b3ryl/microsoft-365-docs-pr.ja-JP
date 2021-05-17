@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51165251"
 ---
-# <a name="configure-managed-security-service-provider-integration"></a>管理セキュリティ サービス プロバイダーの統合を構成する
+# <a name="configure-managed-security-service-provider-integration"></a>マネージド セキュリティ サービス プロバイダーの統合を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "51165251"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
  
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "51165251"
 
 統合により、MSSP は次のアクションを実行できます。
 
-- MSSP のお客様の Microsoft Defender セキュリティ センター ポータルへのアクセスを取得する
+- MSSP カスタマー のポータルへのアクセスMicrosoft Defender セキュリティ センターする
 - 電子メール通知を取得し、 
 - セキュリティ情報とイベント管理 (SIEM) ツールを使用してアラートを取得する
 
@@ -57,7 +57,7 @@ MSSP がこれらのアクションを実行する前に、MSSP のお客様は�
 一般に、次の構成手順を実行する必要があります。
 
 
-- **Microsoft Defender セキュリティ センターへの MSSP アクセスを許可する** <br>
+- **MSSP にアクセス権を付与Microsoft Defender セキュリティ センター** <br>
 このアクションは、MSSP のお客様が行う必要があります。 MSSP のお客様の Defender for Endpoint テナントへの MSSP アクセスを許可します。
  
 
@@ -77,6 +77,6 @@ MSSP がこれらのアクションを実行する前に、MSSP のお客様は�
 ## <a name="related-topics"></a>関連項目
 - [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
-- [アラート通知の構成](configure-mssp-notifications.md)
+- [アラート通知を構成する](configure-mssp-notifications.md)
 - [顧客テナントからアラートを取得する](fetch-alerts-mssp.md)
 

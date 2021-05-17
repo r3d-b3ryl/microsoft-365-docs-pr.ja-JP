@@ -95,4 +95,4 @@ ms.locfileid: "52245066"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365トレーニング ビデオの詳細](../business-video/index.yml)(リンク ページ)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](../business-video/index.yml) (リンク ページ)

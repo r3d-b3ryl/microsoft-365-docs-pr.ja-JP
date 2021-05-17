@@ -1,5 +1,5 @@
 ---
-title: インシデント対応に優先順位を付ける場合は、感度ラベルを使用する
+title: 秘密度ラベルを使用してインシデント対応に優先順位を付ける
 description: インシデントの優先順位付けと調査に感度ラベルを使用する方法について学習する
 keywords: 情報、保護、データ、損失、防止、ラベル、dlp、インシデント、調査、調査
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51186127"
 ---
-# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>インシデント対応に優先順位を付ける場合は、感度ラベルを使用する  
+# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>秘密度ラベルを使用してインシデント対応に優先順位を付ける  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "51186127"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 一般的な高度な永続的な脅威ライフサイクルには、データの取り込みが含まれる。 セキュリティ インシデントでは、機密ファイルが危険にさらされる可能性がある調査に優先順位を付け、企業のデータと情報を保護することが重要です。
@@ -41,9 +41,9 @@ Defender for Endpoint は、セキュリティ インシデントの事前設定
 データの感度ラベルを使用してインシデント調査の優先順位を設定する方法について学習します。
 
 >[!NOTE]
->ラベルは、Windows 10 バージョン 1809 以降で検出されます。
+>バージョン 1809 以降Windows 10ラベルが検出されます。
 
-1. Microsoft Defender セキュリティ センターで、[インシデント] **を選択します**。 
+1. [インシデントMicrosoft Defender セキュリティ センター] を **選択します**。 
 
 2. 右にスクロールすると、[データの感度 **] 列が表示** されます。 この列は、インシデントに関連するデバイスで観察された機密ラベルを反映し、機密ファイルがインシデントの影響を受ける可能性があるかどうかを示します。
 

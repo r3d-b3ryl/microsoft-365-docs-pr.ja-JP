@@ -1,5 +1,5 @@
 ---
-title: アラート関連の AP 情報を取得する
+title: アラート関連の IP 情報を取得する
 description: Microsoft Defender for Endpoint を使用して、特定のアラートに関連するすべての AP を取得します。
 keywords: apis、graph api、サポートされている API、アラート情報の取得、アラート情報、関連 IP
 search.product: eADQiWindows 10XVcnh
@@ -30,7 +30,7 @@ ms.locfileid: "51167056"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -67,9 +67,9 @@ GET /api/alerts/{id}/ips
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 
 
 ## <a name="request-body"></a>要求本文

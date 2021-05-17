@@ -1,5 +1,5 @@
 ---
-title: 基本的なアクセス許可を使用して Microsoft Defender セキュリティ センターにアクセスする
+title: 基本的なアクセス許可を使用してアクセスMicrosoft Defender セキュリティ センター
 description: 基本的なアクセス許可を使用して Microsoft Defender for Endpoint ポータルにアクセスする方法について説明します。
 keywords: ユーザー ロールの割り当て、読み取りおよび書き込みアクセスの割り当て、読み取り専用アクセスの割り当て、ユーザー、ユーザー の役割、役割
 search.product: eADQiWindows 10XVcnh
@@ -32,7 +32,7 @@ ms.locfileid: "51163673"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-basicaccess-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-basicaccess-abovefoldlink)
 
 基本的なアクセス許可管理を使用するには、以下の手順を参照してください。
 
@@ -42,19 +42,19 @@ ms.locfileid: "51163673"
 
 アクセス許可を詳細に制御するには [、役割ベースのアクセス制御に切り替えます](rbac.md)。
 
-## <a name="assign-user-access-using-azure-powershell"></a>Azure PowerShell を使用してユーザー アクセスを割り当てる
+## <a name="assign-user-access-using-azure-powershell"></a>ユーザー アクセスを割り当てるには、Azure PowerShell
 次のいずれかのレベルのアクセス許可を持つユーザーを割り当てできます。
 - フル アクセス (読み取りおよび書き込み)
 - 読み取り専用アクセス
 
 ### <a name="before-you-begin"></a>はじめに
 
-- Azure PowerShell をインストールします。 詳細については [、「Azure PowerShell をインストールして構成する方法」を参照してください](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)。<br>
+- Azure PowerShell をインストールします。 詳細については、「How to install and configure Azure PowerShell」[を参照してください](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)。<br>
 
     > [!NOTE]
     > 管理者特権のコマンド ラインで PowerShell コマンドレットを実行する必要があります。
 
-- Azure Active Directory に接続します。 詳細については [、「Connect-MsolService」を参照してください](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)。
+- ConnectにAzure Active Directory。 詳細については[、「Connect-MsolService」を参照してください](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)。
 
 **フル アクセス** <br>
 フル アクセスのユーザーは、ログインし、すべてのシステム情報を表示し、アラートを解決し、ファイルを送信して詳細な分析を行い、オンボーディング パッケージをダウンロードできます。
@@ -79,11 +79,11 @@ ms.locfileid: "51163673"
   Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
-詳細については [、「Azure Active Directory を使用してグループ メンバーを追加または削除する」を参照してください](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)。
+詳細については、「グループ メンバーを使用してグループ メンバーを追加または削除する」[を参照Azure Active Directory。](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>Azure portal を使用してユーザー アクセスを割り当てる
 
-詳細については、「Azure Active Directory を使用して管理者と管理者以外の役割をユーザーに割り [当てる」を参照してください](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
+詳細については、「管理者と管理者以外の役割[を](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)ユーザーに割り当てる」を参照Azure Active Directory。
 
 ## <a name="related-topic"></a>関連トピック
 

@@ -84,7 +84,7 @@ title | String | この修復アクティビティのタイトル
 type | String | 修復の種類
 vendorId | String | 関連ベンダー名
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [ID による 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
 

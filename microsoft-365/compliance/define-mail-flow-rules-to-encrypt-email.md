@@ -122,7 +122,7 @@ EAC を使用して、新しい OME 機能を使用してメッセージの削�
 
 組織を新しい OME 機能にまだ移動していない場合は、組織に妥当な場合は、すぐに新しい OME 機能に移行する計画を立てをお勧めします。 手順については、「Azure Information Protection の上にOffice [365](set-up-new-message-encryption-capabilities.md)メッセージ暗号化機能をセットアップする」を参照してください。 それ以外の場合は、「新しい OME 機能を使用しない Office [365 Message Encryption](legacy-information-for-message-encryption.md#defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities)のメール フロー ルールの定義」を参照してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 での暗号化](encryption.md)
 

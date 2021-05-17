@@ -28,7 +28,7 @@ ms.locfileid: "51165659"
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>ADから移行するための FS 移行手順の詳細
 
 この構成変更は、フェーズ 2 が開始される前にいつでも適用する必要があります。
-フェーズ 2 が完了すると、構成の変更が機能し、次のような 365 グローバル Office経由でサインインできます `https://portal.office.com` 。 フェーズ 2 より前に構成変更を実装する場合、Office 365 グローバル エンドポイントはまだ動作しませんが、新しい証明書利用者信頼は Active Directory フェデレーション サービス (AD FS) 構成の一部です。
+フェーズ 2 が完了すると、構成の変更が機能し、次のようなグローバル Office 365経由でサインインできます `https://portal.office.com` 。 フェーズ 2 より前に構成変更を実装する場合、Office 365 Global エンドポイントはまだ動作しませんが、新しい証明書利用者信頼は Active Directory フェデレーション サービス (AD FS) 構成の一部です。
 
 Active Directory フェデレーション サービス (AD FS) でフェデレーション認証を使用しているお客様は、移行中にオンプレミスの Active Directory ドメイン サービス (AD DS) を使用するすべての認証に使用される発行者 URI を変更する必要があります。 発行者 URI を変更すると、ドメイン内のユーザーの認証エラーが発生します。 発行者 URI は、FS またはドメインAD管理からフェデレーションに変換される場合、またはその逆に直接変更できます。 移行された Azure のフェデレーション ドメインを追加、削除、または変換ADすることをお勧めします。 発行者 URI は、移行が完全に完了した後で変更できます。
 
@@ -37,7 +37,7 @@ Microsoft Cloud Deutschland からの移行AD FS ファームを準備するに�
 1. 次の手順AD、既存の Microsoft Cloud Deutschland 証明書利用者信頼を含む FS 設定を [バックアップします](#backup)。 バックアップに **MicrosoftCloudDeutschlandOnly** という名前を付け、Microsoft Cloud Deutschland テナント情報のみを持つ必要があります。
 
    > [!NOTE]
-   > バックアップには、Microsoft Cloud Deutschland の既存の Office 365 証明書利用者信頼だけでなく、それぞれの AD FS ファームに存在する他のすべての証明書利用者信頼も含まれる。
+   > バックアップには、Microsoft Cloud Deutschland の既存の証明書利用者信頼Office 365が含まれるだけでなく、それぞれの FS ファームに存在する他のすべての証明書利用者信頼ADされます。
 
 2. MicrosoftCloudDeutschlandOnly バックアップを使用して復元をテストします。FS ファームAD Microsoft Cloud Deutschland のみとして動作し続ける必要があります。
 
@@ -53,9 +53,9 @@ FS バックアップを完了してテストしたらAD手順を実行して、
 
 5. [データ **ソースの選択] ページ** で、[オンラインまたはローカル ネットワークで発行された証明書利用者に関するデータのインポート **] を選択します**。 フェデレーション **メタデータ アドレス (ホスト名または URL)** の値をに設定する必要があります `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 **[次へ]** をクリックします。
 
-6. [表示 **名の指定] ページ** で、365 Identity Platform WorldWide などのMicrosoft Office **を入力します**。 **[次へ]** をクリックします。
+6. [表示 **名の指定] ページ** で、Id プラットフォーム **WorldWide などの表示Microsoft Office 365入力します**。 **[次へ]** をクリックします。
 
-7. ADFS を Windows Server 2012 で使用している場合は、ウィザード ページの [多要素認証を今すぐ構成する **]** で、認証要件に応じて適切な選択肢を選択します。 既定に固執する場合は、[この証明書利用者信頼の多要素認証設定をこの時点で構成しない] **を選択します**。 必要に応じ、後でこの設定を変更できます。
+7. ADFS を使用している場合Windows Server 2012ウィザード ページの [多要素認証を今すぐ構成する **] で**、認証要件に応じて適切な選択肢を選択します。 既定に固執する場合は、[この証明書利用者信頼の多要素認証設定をこの時点で構成しない] **を選択します**。 必要に応じ、後でこの設定を変更できます。
 
 8. [AD FS 2012: 発行承認ルールの選択]で、[すべてのユーザーにこの証明書利用者へのアクセスを許可する] を選択し、[次へ] をクリック **します**。
 
@@ -65,12 +65,12 @@ FS バックアップを完了してテストしたらAD手順を実行して、
 
 11. [完了 **] ページで** [ **閉じる] をクリック** します。
 
-ウィザードを閉じると、証明書利用者信頼と証明書利用者Office 365 グローバル サービスが確立されます。 ただし、発行変換ルールはまだ構成されていません。
+ウィザードを閉じると、証明書利用者信頼とグローバル サービスOffice 365証明書利用者信頼が確立されます。 ただし、発行変換ルールはまだ構成されていません。
 
 FS ヘルプを [ADして、](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 正しい発行変換ルールを生成できます。 AD FS ヘルプで作成された生成されたクレーム ルールは、AD FS 管理コンソールまたは PowerShell を使用して手動で追加できます。 AD FS ヘルプは、実行する必要がある必要がある PowerShell スクリプトを生成します。  
 
 > [!NOTE]
-> [AD FS ヘルプは](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 、製品に含む標準の発行変換ルールを生成します。 ただし、カスタム発行変換ルールが Microsoft Cloud Deutschland 証明書利用者信頼 (カスタム発行者 URI、非標準不変の ID、その他のカスタマイズなど) に適用されている場合、AD FS ヘルプによって生成されるルールは、Microsoft Cloud Deutschland 証明書利用者信頼に対して現在適用されているカスタム ロジックに適合する方法で変更する必要があります。 これらのカスタマイズが AD FS ヘルプを介して生成されたルールに統合されていない場合 [、Microsoft Office](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) **365 Identity Platform WorldWide** への認証は、フェデレーション ID では機能しない可能性が高い。
+> [AD FS ヘルプは](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 、製品に含む標準の発行変換ルールを生成します。 ただし、カスタム発行変換ルールが Microsoft Cloud Deutschland 証明書利用者信頼 (カスタム発行者 URI、非標準不変の ID、その他のカスタマイズなど) に適用されている場合、AD FS ヘルプによって生成されるルールは、Microsoft Cloud Deutschland 証明書利用者信頼に対して現在適用されているカスタム ロジックに適合する方法で変更する必要があります。 これらのカスタマイズが AD FS ヘルプを介して生成されたルールに統合されていない場合 [、Microsoft Office 365](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) **Identity Platform WorldWide** への認証は、フェデレーション ID では機能しない可能性が高い。
 
 1. FS **ヘルプで** クレーム [AD実行](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)し、スクリプトの右上隅にある [コピー]オプションを使用して PowerShell スクリプトをコピーします。
 
@@ -88,7 +88,7 @@ FS ヘルプを [ADして、](https://adfshelp.microsoft.com/AadTrustClaims/Clai
    Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
    ```
 
-3. 2 つの証明書利用者Ttrustsが存在するを確認します。1 つは Microsoft Cloud Deutschland 用、1 つは Office 365 Global サービス用です。 次のコマンドをチェックに活用できます。 2 つの行と、それぞれの名前と識別子を返す必要があります。
+3. 2 つの証明書利用者Ttrustsが存在するを確認します。1 つは Microsoft Cloud Deutschland 用、もう 1 つはグローバル Office 365サービス用です。 次のコマンドをチェックに活用できます。 2 つの行と、それぞれの名前と識別子を返す必要があります。
 
    ```powershell
    Get-AdfsRelyingPartyTrust | Where-Object {$_.Identifier -like 'urn:federation:MicrosoftOnline*'} | Select-Object Name, Identifier
@@ -136,11 +136,11 @@ FS ヘルプを [ADして、](https://adfshelp.microsoft.com/AadTrustClaims/Clai
 
 3. 新しい DNS レコードまたはロード バランサーを FS サーバーの新しいADポイントします。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 
-- [新しいドイツのデータセンター地域Office 365 サービスへの Microsoft Cloud Deutschland からの移行](ms-cloud-germany-transition.md)
+- [Microsoft Cloud Deutschland から新しいドイツのデータセンター地域Office 365サービスへの移行](ms-cloud-germany-transition.md)
 - [Microsoft Cloud Deutschland 移行アシスタント](https://aka.ms/germanymigrateassist)
 - [移行のオプトイン方法](ms-cloud-germany-migration-opt-in.md)
 - [移行中のカスタマー エクスペリエンス](ms-cloud-germany-transition-experience.md)

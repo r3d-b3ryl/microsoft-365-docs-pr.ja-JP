@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender Antivirus によるモバイル デバイスの更新方法を定義する
-description: Microsoft Defender ウイルス対策保護の更新プログラムを使用して、ラップトップなどのモバイル デバイスを更新する方法を管理します。
+title: モバイル デバイスの更新方法を定義Microsoft Defender ウイルス対策
+description: ラップトップなどのモバイル デバイスを保護更新プログラムで更新する方法Microsoft Defender ウイルス対策管理します。
 keywords: 更新プログラム、保護、スケジュールの更新、バッテリー、モバイル デバイス、ノート PC、ノートブック、オプトイン、microsoft update、wsus、override
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -45,7 +45,7 @@ ms.locfileid: "52269542"
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>WSUS 接続のないモバイル コンピューターで Microsoft Update にオプトインする
 
-Microsoft Update を使用すると、Microsoft Defender ウイルス対策を実行しているモバイル デバイスが企業ネットワークに接続されていない場合や、WSUS 接続がない場合にセキュリティ インテリジェンスを最新の状態に保つ必要があります。 
+Microsoft Update を使用すると、Microsoft Defender ウイルス対策 が企業ネットワークに接続されていない場合、または WSUS 接続がない場合に、モバイル デバイスのセキュリティ インテリジェンスを最新の状態に保つ必要があります。 
 
 つまり、Microsoft Update を上書きする WSUS を設定している場合でも、保護更新プログラムを (Microsoft Update 経由で) デバイスに配信できます。
 
@@ -53,7 +53,7 @@ Microsoft Update を使用すると、Microsoft Defender ウイルス対策を�
 
 - グループ ポリシーで設定を変更します。
 - VBScript を使用してスクリプトを作成し、ネットワーク内の各コンピューターで実行します。
-- [設定] メニューを使用して、ネットワーク上のすべてのコンピューターを手動 **でオプトイン** します。
+- [ネットワーク上のすべてのコンピューターを手動で選択する]**メニュー設定します**。
 
 ### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>グループ ポリシーを使用して Microsoft Update にオプトインする
 
@@ -63,7 +63,7 @@ Microsoft Update を使用すると、Microsoft Defender ウイルス対策を�
 
 3. [ポリシー **] を選択し** 、[ **管理用テンプレート] を選択します**。
 
-4. ツリーを Windows コンポーネント **の Microsoft** Defender ウイルス対策  >  **署名更新プログラム**  >  **に展開します**。
+4. ツリーを展開して **、Windows更新Microsoft Defender ウイルス対策**  >    >  **コンポーネントを表示します**。
 
 5. [Microsoft **Update からのセキュリティ インテリジェンス更新プログラムを許可** する] を **[有効] に設定** し  **、[OK] を選択します**。
 
@@ -76,15 +76,15 @@ Microsoft Update を使用すると、Microsoft Defender ウイルス対策を�
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>Microsoft Update に手動でオプトインする
 
-1. [ **更新プログラム] で** **Windows Update &する** コンピューターのセキュリティ設定を開きます。
+1. オ **プトWindowsコンピューター** の **[更新&の** セキュリティ設定] で [更新] を開きます。
 
 2. [詳細設定 **] を** 選択します。
 
-3. [Windows の更新時に他の Microsoft 製品の更新 **プログラムを提供する] のチェック ボックスをオンにします**。
+3. [更新プログラムを更新するときに他の Microsoft 製品の更新プログラムを提供する] のチェック **ボックスをオンWindows。**
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>バッテリーの電源で実行するときにセキュリティ インテリジェンスの更新を防止する
 
-Pc が有線電源に接続されている場合にのみ保護更新プログラムをダウンロードする Microsoft Defender ウイルス対策を構成できます。 
+PC が有線Microsoft Defender ウイルス対策接続されている場合にのみ保護更新プログラムをダウンロードする構成を構成できます。 
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>グループ ポリシーを使用してバッテリーの電源に関するセキュリティ インテリジェンスの更新を防止する
 
@@ -94,11 +94,11 @@ Pc が有線電源に接続されている場合にのみ保護更新プログ�
 
 3.  [ポリシー **] を選択し** 、[ **管理用テンプレート] を選択します**。
 
-4.  ツリーを Windows コンポーネント **の Microsoft** Defender ウイルス対策署名更新プログラムに展開し、[バッテリ電源で実行する場合にセキュリティ インテリジェンス更新プログラムを許可する] を [無効]  >    >  に **設定します**。  次に **[OK]** を選択します。 
+4.  ツリーを展開して **、Windows** 更新Microsoft Defender ウイルス対策を実行し、[バッテリー電源で実行する場合にセキュリティ インテリジェンス更新プログラムを許可する] を [無効]  >    >  に **設定します**。  次に **[OK]** を選択します。 
 
 この操作により、PC がバッテリ電源をオンにしている場合に保護更新プログラムがダウンロードされなかから保護されます。
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft Defender ウイルス対策の更新プログラムを管理し、ベースラインを適用する](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Windows 10 で Microsoft Defender ウイルス対策を更新および管理する](deploy-manage-report-microsoft-defender-antivirus.md)
+- [更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [更新し、Microsoft Defender ウイルス対策のWindows 10](deploy-manage-report-microsoft-defender-antivirus.md)

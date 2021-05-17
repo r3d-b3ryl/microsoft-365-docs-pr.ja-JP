@@ -177,7 +177,7 @@ ASR ルールによって通知がローカルでトリガーされるたびに�
 
 このルールを有効にすると [、LSA](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) 保護も有効になっている場合、追加の保護は提供されません。 ルールと LSA 保護の両方が同じ方法で動作し、両方を同時に実行すると冗長になります。 ただし、LSA 保護を有効にできない場合があります。 このような場合は、このルールを有効にして、マルウェアを対象とするマルウェアに対して同等の保護lsass.exe。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 * [攻撃表面の縮小の概要](attack-surface-reduction.md)
 * [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)

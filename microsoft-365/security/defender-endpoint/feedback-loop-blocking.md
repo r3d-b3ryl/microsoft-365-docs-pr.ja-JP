@@ -38,7 +38,7 @@ ms.locfileid: "51068572"
 
 ## <a name="how-feedback-loop-blocking-works"></a>フィードバック ループのブロックのしくみ
 
-[Microsoft Defender ウイルス](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)対策など、疑わしい動作やファイルが検出されると、その成果物に関する情報が複数の分類子に送信されます。 高速保護ループ エンジンは、情報を検査し、他の信号と関連付け、ファイルをブロックするかどうかを決定します。 アーティファクトのチェックと分類は、迅速に行います。 その結果、確認されたマルウェアが急速にブロックされ、エコシステム全体の保護が強化されます。 
+不審な動作やファイルが検出された場合 (Microsoft Defender ウイルス対策など[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10))、その成果物に関する情報が複数の分類子に送信されます。 高速保護ループ エンジンは、情報を検査し、他の信号と関連付け、ファイルをブロックするかどうかを決定します。 アーティファクトのチェックと分類は、迅速に行います。 その結果、確認されたマルウェアが急速にブロックされ、エコシステム全体の保護が強化されます。 
 
 迅速な保護を実施すると、攻撃が足場を広げろとして、デバイス、組織内の他のデバイス、および他の組織のデバイスで攻撃を停止できます。
 
@@ -53,13 +53,13 @@ ms.locfileid: "51068572"
 
 - [ブロック モードの EDR](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 
-- [攻撃面の縮小](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+- [攻撃面の減少](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 
 - [次世代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (ウイルス対策)
 
 ## <a name="related-articles"></a>関連記事
 
-- [動作のブロックと格納](behavioral-blocking-containment.md)
+- [動作ブロックと封じ込め](behavioral-blocking-containment.md)
 
 - [(ブログ)動作のブロックと格納: 光学を保護に変換する](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
 

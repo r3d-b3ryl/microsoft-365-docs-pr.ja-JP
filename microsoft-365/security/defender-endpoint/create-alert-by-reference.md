@@ -30,7 +30,7 @@ ms.locfileid: "51167068"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -72,25 +72,25 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 Content-Type | 文字列 | application/json. **必須**
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、次の値を指定します (すべて必須)。
 
-プロパティ | 種類 | 説明
+プロパティ | 型 | 説明
 :---|:---|:---
 eventTime | DateTime(UTC) | 高度な検索から取得したイベントの正確な時刻を文字列として指定します。 例: ```2018-08-03T16:45:21.7115183Z``` **必須です**。
-reportId | 文字列 | 高度な狩猟から取得したイベントの reportId。 **必須**
-machineId | 文字列 | イベントが識別されたデバイスの ID。 **必須**
-severity | 文字列 | アラートの重大度。 プロパティの値は、'Low'、'Medium'、および 'High' です。 **必須**
+reportId | String | 高度な狩猟から取得したイベントの reportId。 **必須**
+machineId | String | イベントが識別されたデバイスの ID。 **必須**
+severity | String | アラートの重大度。 プロパティの値は、'Low'、'Medium'、および 'High' です。 **必須**
 title | String | アラートのタイトル。 **必須**
 説明 | String | アラートの説明。 **必須**
-recommendedAction| 文字列 | アラートの分析時にセキュリティ担当者が実行するアクションを推奨します。 **必須**
-category| 文字列 | アラートのカテゴリ。 プロパティの値は、"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"エクスプロイト"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" が必要です。
+recommendedAction| String | アラートの分析時にセキュリティ担当者が実行するアクションを推奨します。 **必須**
+category| String | アラートのカテゴリ。 プロパティの値は、"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"エクスプロイト"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" が必要です。
 
 ## <a name="response"></a>応答
 

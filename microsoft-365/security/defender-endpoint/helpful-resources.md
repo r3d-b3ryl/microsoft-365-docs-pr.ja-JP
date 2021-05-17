@@ -1,7 +1,7 @@
 ---
 title: エンドポイントのリソースに役立つ Microsoft Defender
 description: ブログへのリンクや、Microsoft Defender for Endpoint に関連するその他のリソースなどの有用なリソースにアクセスする
-keywords: Microsoft Defender Security Center、製品概要、簡潔、機能、ライセンス
+keywords: Microsoft Defender セキュリティ センター、製品概要、簡潔、機能、ライセンス
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -32,7 +32,7 @@ ms.locfileid: "51165443"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 ブログへのリンクや、Microsoft Defender for Endpoint に関連するその他のリソースなどの有用なリソースにアクセスします。
 
@@ -61,4 +61,4 @@ ms.locfileid: "51165443"
 
 - [自動化がセキュリティ チームに価値をもたらす方法](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297)
 
-- [エンドポイント向け Microsoft Defender で誤検知/負に対処する](defender-endpoint-false-positives-negatives.md)
+- [Microsoft Defender for Endpoint での誤検出/検出漏れに対処する](defender-endpoint-false-positives-negatives.md)

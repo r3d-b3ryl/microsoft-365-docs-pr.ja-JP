@@ -30,7 +30,7 @@ ms.locfileid: "51068571"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 >[!NOTE]
 >このアクションは MSSP によって実行されます。
@@ -48,15 +48,15 @@ SIEM システムにアラートをフェッチするには、次の手順を実
 
 手順 2: 顧客のテナントからアクセストークンと更新トークンを取得する
  
-手順 3: Microsoft Defender セキュリティ センターでアプリケーションを許可する
+手順 3: アプリケーションのインストールを許可Microsoft Defender セキュリティ センター
  
-### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>手順 1: Azure Active Directory でアプリケーションを作成する (Azure AD)
+### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>手順 1: アプリケーションを作成する (AD Azure Azure Active Directory)
  
 アプリケーションを作成し、顧客の Microsoft Defender for Endpoint テナントからアラートを取得するためのアクセス許可を付与する必要があります。
 
 1. Azure AD [ポータルにサインインします](https://aad.portal.azure.com/)。
 
-2. [Azure **Active Directory アプリ**  >  **の登録] を選択します**。
+2. [アプリ  >  **Azure Active Directory] を選択します**。
  
 3. [新規 **登録] をクリックします**。
 
@@ -85,7 +85,7 @@ SIEM システムにアラートをフェッチするには、次の手順を実
  
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>手順 2: 顧客のテナントからアクセストークンと更新トークンを取得する
-このセクションでは、PowerShell スクリプトを使用して顧客のテナントからトークンを取得する方法について説明します。 このスクリプトでは、前の手順のアプリケーションを使用して、OAuth 承認コード フローを使用してアクセス トークンと更新トークンを取得します。
+このセクションでは、PowerShell スクリプトを使用して顧客のテナントからトークンを取得する方法について説明します。 このスクリプトでは、前の手順のアプリケーションを使用して、OAuth 認証コード を使用してアクセス トークンと更新トークンを取得Flow。
 
 資格情報を指定した後、アプリケーションが顧客のテナントにプロビジョニングされるので、アプリケーションに同意を与える必要があります。
 
@@ -159,14 +159,14 @@ SIEM システムにアラートをフェッチするには、次の手順を実
 
 8. PowerShell ウィンドウで、アクセス トークンと更新トークンを受け取ります。 SIEM コネクタを構成するには、更新トークンを保存します。 
  
-### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>手順 3: Microsoft Defender セキュリティ センターでアプリケーションを許可する
-Microsoft Defender セキュリティ センターで作成したアプリケーションを許可する必要があります。
+### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>手順 3: アプリケーションのインストールを許可Microsoft Defender セキュリティ センター
+アプリケーションで作成したアプリケーションを許可する必要Microsoft Defender セキュリティ センター。
  
 アプリケーションを許可するには、ポータル システム設定の **管理** 権限が必要です。 それ以外の場合は、アプリケーションを許可する顧客を要求する必要があります。
 
 1. に移動 `https://securitycenter.windows.com?tid=<customer_tenant_id>` します ( \<customer_tenant_id\> 顧客のテナント ID に置き換えてください。
 
-2. [設定 **SIEM] を**  >  **クリックします**。 
+2. [SIEM  >  **設定] をクリックします**。 
 
 3. **[MSSP] タブを選択** します。
 
@@ -189,4 +189,4 @@ REST API を使用してアラートをフェッチする方法については�
 ## <a name="see-also"></a>関連項目
 - [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
-- [アラート通知の構成](configure-mssp-notifications.md)
+- [アラート通知を構成する](configure-mssp-notifications.md)

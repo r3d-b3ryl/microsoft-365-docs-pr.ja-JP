@@ -38,7 +38,7 @@ ms.locfileid: "52245650"
 - [データ損失防止ポリシー](dlp-learn-about-dlp.md) 
 - [機密ラベル](sensitivity-labels.md)
 - [保持ラベル](retention.md)
-- [Insider リスク管理](insider-risk-management.md)
+- [インサイダー リスクの管理](insider-risk-management.md)
 - [通信コンプライアンス](communication-compliance.md)
 - [自動ラベル付けポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 

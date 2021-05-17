@@ -1,5 +1,5 @@
 ---
-title: オンボーディングまたはオフボード通知ルールの作成
+title: オンボーディングまたはオフボーディングの通知ルールを作成する
 description: ローカルオンボーディングスクリプトまたはオフボード スクリプトが使用されている場合に通知を取得します。
 keywords: オンボーディング、オフボード、ローカル、スクリプト、通知、ルール
 search.product: eADQiWindows 10XVcnh
@@ -33,7 +33,7 @@ ms.locfileid: "51187233"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "51187233"
 
 ## <a name="before-you-begin"></a>はじめに
 次のアクセス権が必要です。
- - Microsoft Flow (少なくともフロー プラン 1)。 詳細については、「Flow の価格ページ [」を参照してください](https://flow.microsoft.com/pricing/)。
+ - Microsoft Flow (Flowプラン 1 を使用します)。 詳細については、「価格設定[」Flowを参照してください](https://flow.microsoft.com/pricing/)。
  - Azure Table または SharePoint リストまたはライブラリ / SQL DB
 
 ## <a name="create-the-notification-flow"></a>通知フローの作成
@@ -63,7 +63,7 @@ ms.locfileid: "51187233"
 
     ![通知フローのイメージ](images/build-flow.png)
 
-4. +ボタンを選択して新しいアクションを追加します。 新しいアクションは、Defender for Endpoint セキュリティ センター デバイス API への HTTP 要求です。 また、既定の "WDATP Connector" (アクション: "Machines - Get list of machines") に置き換えすることもできます。 
+4. +ボタンを選択して新しいアクションを追加します。 新しいアクションは、Defender for Endpoint セキュリティ センター デバイス API への HTTP 要求です。 また、既定の "WDATP Connector&quot; (アクション: &quot;Machines - Get list of machines") に置き換えすることもできます。 
 
     ![繰り返しのイメージとアクションの追加](images/recurrence-add.png)
 
@@ -73,11 +73,11 @@ ms.locfileid: "51187233"
    - メソッド: デバイスの一覧を取得する値として "GET" を指定します。
    - URI: を入力します `https://api.securitycenter.microsoft.com/api/machines` 。
    - 認証: [Active Directory OAuth] を選択します。
-   - テナント: アプリの登録にサインインして https://portal.azure.com Azure Active Directory **>に** 移動し、テナント ID の値を取得します。
+   - テナント: サインインし、[アプリの登録 https://portal.azure.com ] Azure Active Directory >**に移動し**、テナント ID の値を取得します。
    - 対象ユーザー: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - クライアント ID: アプリ登録にサインインし https://portal.azure.com **、Azure Active Directory** >に移動し、クライアント ID の値を取得します。
+   - クライアント ID: アプリ登録にサインインして、Azure Active Directory >に移動し、クライアント https://portal.azure.com ID の値を取得します。 
    - 資格情報の種類: [シークレット] を選択します。
-   - シークレット: サインインして Azure Active Directory >に移動し、テナント ID の値 https://portal.azure.com を取得します。 
+   - シークレット: サインインして、アプリの登録Azure Active Directory >に移動し、テナント https://portal.azure.com ID の値を取得します。 
 
     ![HTTP 条件のイメージ](images/http-conditions.png)
 
@@ -176,9 +176,9 @@ ms.locfileid: "51187233"
 
     ```
 
-10.  JSON 呼び出しから値を抽出し、オンボードデバイスが /が SharePoint リストに登録済みか確認します。
+10.  JSON 呼び出しから値を抽出し、オンボードデバイスが /が既に登録されている場合は、SharePointリストに登録されています。
 - はいの場合、通知はトリガーされません
-- いいえの場合、新しいオンボード デバイスが SharePoint リストに登録され、Defender for Endpoint 管理者に通知が送信されます。
+- いいえの場合は、新しいオンボード デバイスが [SharePoint] リストに登録され、Defender for Endpoint 管理者に通知が送信されます。
 
     ![それぞれの適用イメージ](images/flow-apply.png)
 

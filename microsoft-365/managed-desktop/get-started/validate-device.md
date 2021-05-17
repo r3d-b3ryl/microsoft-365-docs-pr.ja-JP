@@ -1,5 +1,5 @@
 ---
-title: 新しいデバイスの検証
+title: 新しいデバイスを検証する
 description: デバイスを注文する前に、各モデルの 1 つを取得してテストします。
 ms.service: m365-md
 author: jaimeo
@@ -18,7 +18,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52246197"
 ---
-# <a name="validate-new-devices"></a>新しいデバイスの検証
+# <a name="validate-new-devices"></a>新しいデバイスを検証する
 
 Microsoft マネージド デスクトップ を初めて使用する場合でも、長時間の購読者でも、サービスに初めて登録するデバイス モデルの例をテストしてください。 これは、ブランドの新しいデバイスを注文する場合でも、既存のデバイスを再利用する場合でも当てはめ、ビジネス デバイス サイトの shop Microsoft マネージド デスクトップに推奨Windows 10 Proデバイスを含むデバイスも[含](https://www.microsoft.com/windowsforbusiness/view-all-devices)めて有効です。 そのサイトで、[フィルター] 領域で [機能] を展開し、[サービス] を選択して、サービスで使用する推奨 **デバイスMicrosoft マネージド デスクトップ。** デバイスを検証すると、期待するユーザー エクスペリエンスが確実に提供されます。
 

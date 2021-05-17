@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender API のライセンスと使用条件
-description: Microsoft 365 Defender での API のライセンスと使用条件の説明
+title: Microsoft 365Defender API のライセンスと使用条件
+description: Defender での API のライセンスと使用条件Microsoft 365説明
 keywords: api、apis、ライセンス、条項、API、法律、通知、行動規範
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51062035"
 ---
-# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender API のライセンスと使用条件
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365Defender API のライセンスと使用条件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,13 +40,13 @@ ms.locfileid: "51062035"
 
 ## <a name="official-terms"></a>公式の用語
 
-Microsoft 365 Defender API は、Microsoft API ライセンスと使用条件 [によって管理されます](/legal/microsoft-apis/terms-of-use)。
+Microsoft 365Defender API は、Microsoft API ライセンスと使用条件[によって管理されます](/legal/microsoft-apis/terms-of-use)。
 
 ## <a name="legal-notices"></a>法的通知
 
 Microsoft および任意の投稿者は、このリポジトリ内の Microsoft ドキュメントおよび[](https://github.com/MicrosoftDocs/microsoft-365-docs)他のコンテンツに対して、クリエイティブ コモンズアトリビューション 4.0 国際公開ライセンスの下でライセンスを付与します。 詳細については、「LICENSE ファイル」 [を参照](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE) してください。
 
-Microsoft、Windows、Microsoft Azure、および/またはドキュメントで参照されているその他の Microsoft 製品およびサービスは、米国およびその他の国における Microsoft の商標または登録商標です。
+Microsoft、Windows、Microsoft Azure、またはドキュメントで参照されているその他の Microsoft 製品およびサービスは、米国およびその他の国における Microsoft の商標または登録商標です。
 
 このプロジェクトのライセンスは、Microsoft の名前、ロゴ、または商標を使用する権利を付与しません。 Microsoft の一般的な商標ガイドラインは [、Microsoft の商標に記載されています](https://go.microsoft.com/fwlink/?LinkID=254653)。
 
@@ -63,7 +63,7 @@ Microsoft および投稿者は、それぞれの著作権、特許、または�
 
 ### <a name="quotas-and-resource-allocation"></a>クォータとリソース割り当て
 
-Microsoft 365 Defender API には調整しきい値があります。
+Defender api Microsoft 365調整のしきい値があります。
 
 - **インシデント API**: 1 分あたり最大 50 回の呼び出し、または 1 時間あたり 1500 回の呼び出し。
 - **高度なハンティング API**: 1 分あたり最大 15 回の通話、1 時間あたり 10 分の実行時間、1 日あたり 4 時間の実行時間。
@@ -74,6 +74,6 @@ Microsoft 365 Defender API には調整しきい値があります。
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 Defender API の概要](api-overview.md)
+- [Microsoft 365Defender API の概要](api-overview.md)
 - [サポートされている Microsoft 365 Defender API](api-supported.md)
-- [Microsoft 365 Defender API へのアクセス](api-access.md)
+- [Defender API Microsoft 365アクセスする](api-access.md)

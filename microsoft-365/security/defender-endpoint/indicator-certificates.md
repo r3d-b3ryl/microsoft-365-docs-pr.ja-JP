@@ -34,7 +34,7 @@ ms.locfileid: "51164683"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 証明書のインジケーターを作成できます。 一般的な使用例には、次のようなものがあります。
 
@@ -46,9 +46,9 @@ ms.locfileid: "51164683"
 
 証明書のインジケーターを作成する前に、次の要件を理解することが重要です。
 
-- この機能は、組織でウイルス対策とクラウドベースWindows Defenderが有効になっている場合に使用できます。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+- この機能は、組織でクラウド ベースのWindows Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。
-- Windows 10 バージョン 1703 以降の Windows Server 2016 および 2019 のコンピューターでサポートされます。
+- サーバー 2016 および 2019 Windows 10バージョン 1703 以降のコンピューター Windowsサポートされています。
 - ウイルスおよび脅威保護の定義は最新である必要があります。
 - この機能は現在、 の入力をサポートしています。CER または .PEM ファイル拡張子。
 
@@ -62,7 +62,7 @@ ms.locfileid: "51164683"
 >[!IMPORTANT]
 > 証明書 IoC を作成および削除するには、最大 3 時間かかる場合があります。
 
-1. ナビゲーション ウィンドウで、[設定インジケーター]**を**  >  **選択します**。  
+1. ナビゲーション ウィンドウで、[インジケーター]**を設定**  >  **します**。  
 
 2. [証明書] **タブを選択** します。
 
@@ -77,6 +77,6 @@ ms.locfileid: "51164683"
 
 ## <a name="related-topics"></a>関連項目
 - [インジケーターの作成](manage-indicators.md)
-- [ファイルのインジケーターを作成する](indicator-file.md)
-- [IPs と URL/ドメインのインジケーターを作成する](indicator-ip-domain.md)
+- [ファイルのインジケーターを作成 ](indicator-file.md)
+- [IP および URL/ドメインのインジケーターを作成](indicator-ip-domain.md)
 - [インジケーターの管理](indicator-manage.md)

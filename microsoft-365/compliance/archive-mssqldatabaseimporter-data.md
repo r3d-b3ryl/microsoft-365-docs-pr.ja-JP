@@ -1,5 +1,5 @@
 ---
-title: MS データベースからデータをアーカイブするコネクタをSQLする
+title: MS サーバーからデータをアーカイブするコネクタをSQL Database
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、MS データベースからデータをインポートおよびアーカイブするコネクタをSQLできます。 このコネクタを使用すると、Microsoft 365 のサードパーティデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
+description: 管理者は、MS サーバーからデータをインポートおよびアーカイブするコネクタをSQL Database。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
 ms.openlocfilehash: 494e91085494ba027a80480faba3cfb189cbd928
 ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
@@ -19,39 +19,39 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51164218"
 ---
-# <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>MS データベースからデータをアーカイブするコネクタをSQLする
+# <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>MS サーバーからデータをアーカイブするコネクタをSQL Database
 
-Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、MS SQL Database から Microsoft 365 組織のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas は、XML 構成ファイルを使用してデータベースからアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された MS SQL データベース インポート コネクタを提供します。 コネクタは、MS SQL データベースから電子メール メッセージ形式にコンテンツを変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
+コンプライアンス センターの Veritas コネクタをMicrosoft 365して、MS SQL Database から組織のユーザー メールボックスにデータをMicrosoft 365します。 Veritas は、XML 構成ファイルを使用してデータベースからアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された MS SQL Database Importer コネクタを提供します。 コネクタは、MS ファイルからメール メッセージSQL Database形式にコンテンツを変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
 
-ユーザー メールボックスに格納されている MS SQL Database のコンテンツの後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルなどの Microsoft 365 コンプライアンス機能を適用できます。 Ms SQLデータベース コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
+ユーザー メールボックスに保存されている MS SQL Databaseコンテンツの後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルなどのMicrosoft 365コンプライアンス機能を適用できます。 MS SQL Databaseコネクタを使用して、Microsoft 365のデータをインポートおよびアーカイブすると、組織が政府と規制のポリシーに準拠しつ付けるのに役立ちます。
 
 ## <a name="overview-of-archiving-the-ms-sql-data"></a>MS データのアーカイブSQL概要
 
-次の概要では、コネクタを使用して Microsoft 365 の MS SQLをアーカイブするプロセスについて説明します。
+次の概要では、コネクタを使用して MS データをアーカイブするプロセスSQL説明Microsoft 365。
 
 ![MS データのアーカイブ ワークフロー SQLする](../media/MSSQLDatabaseConnectorWorkflow.png)
 
-1. 組織は MS データベース プロバイダーとSQLして、MS データベース サイトをセットアップSQL構成します。
+1. 組織は、MS SQL DatabaseプロバイダーとSQL Databaseします。
 
-2. 24 時間に 1 回、MS SQLデータベース アイテムが Veritas Merge1 サイトにコピーされます。 コネクタは、このコンテンツを電子メール メッセージ形式に変換します。
+2. 24 時間に 1 回、MS SQL Databaseは Veritas Merge1 サイトにコピーされます。 コネクタは、このコンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成する MS SQL データベース インポート コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage の場所にメッセージを転送します。
+3. Microsoft 365 コンプライアンス センターで作成する MS SQL Database Importer コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage 場所にメッセージを転送します。
 
-4. コネクタは、ステップ [3](#step-3-map-users-and-complete-the-connector-setup)で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換された MS SQL データベース アイテムを特定のユーザーのメールボックスにインポートします。 MS という名前の受信トレイ フォルダー **SQLデータベース** インポートツールがユーザー メールボックスに作成され、そのフォルダーにアイテムがインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 MS データベースのすべてのアイテムSQLこのプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
+4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換された MS SQL Database アイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 MS という名前の受信トレイ フォルダーのサブフォルダー **SQL Databaseユーザー** メールボックスにインポートツールが作成され、そのフォルダーにアイテムがインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 MS サーバーからのすべてのアイテムSQL Databaseこのプロパティが含まれる。このプロパティには、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
 - Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 アカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
 
-- 手順 1 で MS SQL データベース インポート コネクタを作成し (および手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 Microsoft 365 コンプライアンス センターの [データ コネクタ] ページにコネクタを追加するには、この役割が必要です。 既定では、この役割は Exchange Online の任意の役割グループに割り当てられていない。 Exchange Online の [組織の管理] 役割グループにメールボックスインポートエクスポート役割を追加できます。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「Exchange Online[で役割](/Exchange/permissions-exo/role-groups#create-role-groups)グループ[](/Exchange/permissions-exo/role-groups#modify-role-groups)を管理する」の記事の「役割グループの作成」または「役割グループの変更」セクションを参照してください。
+- 手順 1 で MS SQL Database Importer コネクタを作成し (および手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、コンプライアンス センターの [データ コネクタ] ページにコネクタMicrosoft 365必要です。 既定では、この役割は、グループ内の任意の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
 
-## <a name="step-1-set-up-the-ms-sql-database-importer-connector"></a>手順 1: データベース インポート コネクタの MS SQL設定する
+## <a name="step-1-set-up-the-ms-sql-database-importer-connector"></a>手順 1: MS インポート コネクタをSQL Databaseする
 
-最初の手順は、Microsoft365 コンプライアンス センターの [データ コネクタ] ページにアクセスし、MS SQL作成します。 
+最初の手順は、Microsoft365 コンプライアンス センターの [データ コネクタ] ページにアクセスし、MS サーバーのコネクタを作成SQL Database。 
 
-1. [データベース インポート] に移動し、[データ コネクタ [https://compliance.microsoft.com](https://compliance.microsoft.com)   >  **] [MS SQL] をクリックします**。
+1. に移動し [https://compliance.microsoft.com](https://compliance.microsoft.com) 、[データ コネクタ]   >  **[MS SQL Database] をクリックします**。
 
-2. [MS データベース **インポートSQLの説明]** ページで、[新しいコネクタの追加 **] をクリックします**。
+2. **[MS ファイルのインポートSQL Database] ページ** で、[新しいコネクタの追加 **] をクリックします**。
 
 3. [サービス条件 **] ページで、[** 同意する] を **クリックします**。
 
@@ -59,27 +59,27 @@ Microsoft 365 コンプライアンス センターの Veritas コネクタを�
 
 5. コネクタを構成するには、Merge1 アカウントにサインインします。
 
-## <a name="step-2-configure-the-ms-sql-database-importer-connector-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトSQL MS データベース インポート コネクタを構成する
+## <a name="step-2-configure-the-ms-sql-database-importer-connector-on-the-veritas-merge1-site"></a>手順 2: Veritas Merge1 サイトで MS SQL Databaseインバー コネクタを構成する
 
-2 番目の手順は、Merge1 サイトSQL MS データ インポート コネクタを構成することです。 データベース インバーの MS SQL構成方法については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20MS%20SQL%20Database%20Importer%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
+2 番目の手順は、Merge1 サイトSQL Database MS コネクタを構成することです。 MS コネクタ を Importer で構成するSQL Databaseについては[、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20MS%20SQL%20Database%20Importer%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 
-[ファイルの **保存と&完了**] をクリックすると、Microsoft 365 コンプライアンス センターのコネクタ ウィザードの [ユーザー マッピング] ページが表示されます。
+[ファイルの **保存と&完了**] をクリックすると、コンプライアンス センターのコネクタ ウィザードの [ユーザー Microsoft 365] ページが表示されます。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
 ユーザーをマップし、コネクタのセットアップを完了するには、次の手順を実行します。
 
-1. [ **データベース インポートユーザー SQL Microsoft 365** ユーザーにマップする] ページで、自動ユーザー マッピングを有効にします。 [MS SQL データベース] アイテムには、組織内のユーザーの電子メール アドレスを含む *Email* というプロパティが含まれます。 コネクタでこのアドレスを Microsoft 365 ユーザーに関連付ける場合、アイテムはユーザーのメールボックスにインポートされます。
+1. [**ユーザーをユーザーにSQL Databaseする MS** Microsoft 365マップ] ページで、自動ユーザー マッピングを有効にします。 MS SQL Databaseには、組織内のユーザーの電子メール アドレスを含む *Email* というプロパティが含まれます。 コネクタでこのアドレスをユーザーに関連付Microsoft 365、アイテムはユーザーのメールボックスにインポートされます。
 
 2. [**次へ**] をクリックし、設定を確認し、[データ コネクタ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 
-## <a name="step-4-monitor-the-ms-sql-database-importer-connector"></a>手順 4: データベース インポート コネクタの MS SQL監視する
+## <a name="step-4-monitor-the-ms-sql-database-importer-connector"></a>手順 4: MS データ インポートSQL Database監視する
 
-データベース インポート コネクタの MS SQL作成した後、Microsoft 365 コンプライアンス センターでコネクタの状態を表示できます。
+Ms SQL Database Importer コネクタを作成した後、コンプライアンス センターでコネクタのMicrosoft 365できます。
 
 1. 左側の <https://compliance.microsoft.com/> ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
 
-2. [コネクタ **] タブを** クリックし **、MS**  SQL データベース インポート コネクタを選択して、コネクタのプロパティと情報を含むフライアウト ページを表示します。
+2. [コネクタ **] タブを** クリックし **、MS** SQL Database **Importer** コネクタを選択して、コネクタのプロパティと情報を含むフライアウト ページを表示します。
 
 3. [**ソースを含むコネクタの状態**] で、[ログのダウンロード] リンクをクリックして、コネクタの状態ログを開く (または保存) します。  このログには、Microsoft クラウドにインポートされたデータが含まれます。
 

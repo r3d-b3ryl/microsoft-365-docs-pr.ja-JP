@@ -30,7 +30,7 @@ ms.locfileid: "51187257"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -63,26 +63,26 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 Content-Type | string | application/json. **必須**
 
 ## <a name="request-body"></a>要求本文
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 種類    | 説明
+パラメーター | 型    | 説明
 :---|:---|:---
-indicatorValue | 文字列 | Indicator エンティティ [の](ti-indicator.md) ID。 **必須**
-indicatorType | 列挙 | インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"IpAddress"、"DomainName" および "Url" です。 **必須**
-action | 列挙 | インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"AlertAndBlock"、"Allowed" です。 **必須**
-アプリケーション | 文字列 | インジケーターに関連付けられているアプリケーション。 **Optional**
-title | String | インジケーターアラートのタイトル。 **必須**
-説明 | String | インジケーターの説明。 **必須**
+indicatorValue | String | Indicator エンティティ [の](ti-indicator.md) ID。 **Required**
+indicatorType | 列挙 | インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"IpAddress"、"DomainName" および "Url" です。 **Required**
+action | 列挙 | インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"AlertAndBlock"、"Allowed" です。 **Required**
+アプリケーション | String | インジケーターに関連付けられているアプリケーション。 **Optional**
+title | String | インジケーターアラートのタイトル。 **Required**
+説明 | String | インジケーターの説明。 **Required**
 expirationTime | DateTimeOffset | インジケーターの有効期限。 **Optional**
 severity | 列挙 | インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。 **Optional**
-recommendedActions | 文字列 | TI インジケーターアラート推奨アクション。 **Optional**
-rbacGroupNames | 文字列 | インジケーターが適用される RBAC グループ名のコンマ区切りのリスト。 **Optional**
+recommendedActions | String | TI インジケーターアラート推奨アクション。 **Optional**
+rbacGroupNames | String | インジケーターが適用される RBAC グループ名のコンマ区切りのリスト。 **Optional**
 
 
 ## <a name="response"></a>応答

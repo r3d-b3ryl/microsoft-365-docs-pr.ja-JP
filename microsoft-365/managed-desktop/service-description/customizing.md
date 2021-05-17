@@ -31,7 +31,7 @@ Microsoft マネージド デスクトップは、ユーザーに安全で生産
 |デジタル エクスペリエンスの監視     |  IT に報告するためにユーザーのデバイス上のデータを追跡するために使用されるソフトウェア       |
 |ハードウェアドライバーまたはソフトウェア ドライバー     |   アプリケーション要件によって制限されるデバイス [ドライバー](mmd-app-requirements.md)      |
 |ポリシー     | Windows 10デバイスMicrosoft 365 Apps for enterpriseの設定を変更または変更する        |
-|Devices     | デバイスリストに含Microsoft マネージド デスクトップ[デバイス](device-list.md)        |
+|デバイス     | デバイスリストに含Microsoft マネージド デスクトップ[デバイス](device-list.md)        |
 |その他     |  他の領域でカバーされていないもの       |
  
 ## <a name="request-an-exception"></a>例外を要求する

@@ -1,5 +1,5 @@
 ---
-title: オートメーション ファイルのアップロードを管理する
+title: 自動化ファイルのアップロードを管理する
 description: コンテンツ分析を有効にし、分析用に送信されるファイル拡張子とメール添付ファイル拡張機能を構成する
 keywords: オートメーション、ファイル、アップロード、コンテンツ、分析、ファイル、拡張子、電子メール、添付ファイル
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185851"
 ---
-# <a name="manage-automation-file-uploads"></a>オートメーション ファイルのアップロードを管理する
+# <a name="manage-automation-file-uploads"></a>自動化ファイルのアップロードを管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "51185851"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationefileuploads-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationefileuploads-abovefoldlink)
 
 コンテンツ分析機能を有効にして、特定のファイルと電子メールの添付ファイルをクラウドに自動的にアップロードして、自動調査で追加の検査を行うことができます。
 
@@ -41,7 +41,7 @@ ms.locfileid: "51185851"
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>ファイル拡張子名と添付ファイル拡張名を追加します。
 
-1. ナビゲーション ウィンドウで、[設定オートメーション ファイル  >  **のアップロード] を選択します**。 
+1. ナビゲーション ウィンドウで、[オートメーション ファイルの **アップロード設定**  >  **選択します**。 
 
 2. コンテンツ分析の設定を [オン] と [オフ]**の間で切り****替えます**。
 
@@ -50,4 +50,4 @@ ms.locfileid: "51185851"
   
 
 ## <a name="related-topics"></a>関連項目
-- [オートメーション フォルダーの除外を管理する](manage-automation-folder-exclusions.md)
+- [自動化フォルダーの除外を管理する](manage-automation-folder-exclusions.md)

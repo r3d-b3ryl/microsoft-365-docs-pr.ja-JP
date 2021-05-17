@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: 'Exchange Online 管理者は、組織の電子メールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。 '
+description: 'Exchange管理者が組織のメールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。 '
 ms.openlocfilehash: 4dc1f435571650ae4a805198782c3c24a92024fb
 ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
@@ -30,9 +30,9 @@ ms.locfileid: "51197651"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 
-Microsoft 365 の管理を支援するために[](assign-admin-roles.md)、Exchange 管理センターから組織のメールとメールボックスを管理するためのアクセス許可をユーザーに割[り当てできます](/exchange/exchange-admin-center)。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
+管理者の管理に役立Microsoft 365、管理者センターから組織[](assign-admin-roles.md)のメールとメールボックスを管理するためのアクセス許可をユーザーに割り[当Exchangeできます](/exchange/exchange-admin-center)。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
   
- **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 これにより、Exchange Online サービスの正常性、変更およびリリース通知など、Microsoft 365 管理センターで重要な情報を確認できます。
+ **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 この方法では、Microsoft 365 Exchange Online サービスの正常性、変更およびリリース通知など、Microsoft 365 管理センターに重要な情報を表示できます。
   
 ## <a name="before-you-begin"></a>はじめに
 
@@ -66,4 +66,4 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
 
 - [Skype for Business 管理者の役割について](/skypeforbusiness/skype-for-business-online)
 
-- [Microsoft Teams 管理者の役割を使用する](/MicrosoftTeams/using-admin-roles)
+- [管理者Microsoft Teamsを使用する](/MicrosoftTeams/using-admin-roles)

@@ -32,7 +32,7 @@ ms.locfileid: "51187003"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 Defender for Endpoint は、悪意のあるイベント、属性、コンテキスト情報の可能性を通知します。 新しいアラートの概要がセキュリティ操作ダッシュボードに表示され、アラート キュー内のすべてのアラートに **アクセスできます**。
 
@@ -50,7 +50,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 
 ## <a name="suppress-alerts"></a>アラートを抑制する
-Microsoft Defender セキュリティ センターにアラートが表示されるのを抑制する必要がある場合があります。 Defender for Endpoint を使用すると、組織内の既知のツールやプロセスなど、無実と知られている特定のアラートに対して抑制ルールを作成できます。
+警告が表示されるのを抑制する必要があるシナリオMicrosoft Defender セキュリティ センター。 Defender for Endpoint を使用すると、組織内の既知のツールやプロセスなど、無実と知られている特定のアラートに対して抑制ルールを作成できます。
 
 抑制ルールは、既存のアラートから作成できます。 必要に応じて無効にし、再び有効にできます。
 
@@ -98,7 +98,7 @@ Microsoft Defender セキュリティ センターにアラートが表示され
 
 #### <a name="view-the-list-of-suppression-rules"></a>抑制ルールの一覧を表示する
 
-1. ナビゲーション ウィンドウで、[設定アラートの抑制 **]**  >  **を選択します**。
+1. ナビゲーション ウィンドウで、[アラートの抑制]**設定**  >  **選択します**。
 
 2. 抑制ルールの一覧には、組織内のユーザーが作成したすべてのルールが表示されます。
 

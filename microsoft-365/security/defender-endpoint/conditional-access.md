@@ -31,7 +31,7 @@ ms.locfileid: "51166199"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
 
 条件付きアクセスは、セキュリティで保護されたデバイスだけがアプリケーションにアクセスし、ユーザーとエンタープライズ情報をより適切に保護するのに役立つ機能です。
 
@@ -41,7 +41,7 @@ ms.locfileid: "51166199"
 
 ポリシーを適用して、デバイスが準拠状態に戻るまでアプリケーションの実行を停止することで、デバイスとアプリケーションがネットワークから情報を実行およびアクセスできるセキュリティ条件を定義できます。 
 
-Defender for Endpoint での条件付きアクセスの実装は、Microsoft Intune (Intune) デバイス コンプライアンス ポリシーと Azure Active Directory (Azure Active Directory AD) 条件付きアクセス ポリシーに基づいて行います。 
+Defender for Endpoint での条件付きアクセスの実装は、Microsoft Intune (Intune) デバイス コンプライアンス ポリシーと Azure Active Directory (Azure AD) 条件付きアクセス ポリシーに基づいて行います。 
 
 コンプライアンス ポリシーは、条件付きアクセスと一緒に使用して、1 つ以上のデバイス コンプライアンス ポリシー ルールを満たすデバイスだけがアプリケーションにアクセスできます。 
 

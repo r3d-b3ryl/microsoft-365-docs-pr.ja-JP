@@ -30,7 +30,7 @@ ms.locfileid: "51167187"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -62,13 +62,13 @@ GET /api/ips/{ip}/stats
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 
 ## <a name="request-uri-parameters"></a>要求 URI パラメーター
 
-Name | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
 lookBackHours | Int32 | 統計を取得するために検索する時間を定義します。 既定値は 30 日です。 **オプション**。
 
@@ -105,7 +105,7 @@ GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats?lookBac
 ```
 
 
-| Name | 説明 |
+| 名前 | 説明 |
 | :--- | :---------- |
 | 組織の普及率 | この IP へのネットワーク接続を開いたデバイスの個別の数。 |
 | 組織が最初に見られた | 組織内のこの IP の最初の接続。 |

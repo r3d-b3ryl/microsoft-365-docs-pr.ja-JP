@@ -32,7 +32,7 @@ ms.locfileid: "51187838"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -70,18 +70,18 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/isolate
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 Content-Type | string | application/json. **必須**
 
 ## <a name="request-body"></a>要求本文
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 種類    | 説明
+パラメーター | 型    | 説明
 :---|:---|:---
 コメント |   文字列 |    アクションに関連付けるコメント。 **必須**
-IsolationType   | 文字列 |  分離の種類。 使用できる値は、'Full' または '選択的' です。
+IsolationType   | String |  分離の種類。 使用できる値は、'Full' または '選択的' です。
 
 **IsolationType** は、実行する分離の種類を制御し、次のいずれかを指定できます。
 - 完全 – 完全分離

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Security Center Security operations dashboard
+title: Microsoft Defender セキュリティ センターセキュリティ操作ダッシュボード
 description: ダッシュボードを使用して、危険にさらされているデバイスを特定し、サービスの状態を追跡し、デバイスとアラートに関する統計情報と情報を確認します。
 keywords: ダッシュボード、アラート、新規、進行中、解決済み、リスク、リスクのあるデバイス、感染、レポート、統計、グラフ、グラフ、正常性、アクティブなマルウェア検出、脅威カテゴリ、カテゴリ、パスワード盗用、ランサムウェア、悪用、脅威、重要度の低い、アクティブ なマルウェア
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51064915"
 ---
-# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender Security Center Security operations dashboard
+# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender セキュリティ センターセキュリティ操作ダッシュボード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "51064915"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
 セキュリティ **操作ダッシュボードでは** 、エンドポイントの検出および応答機能が表示されます。 検出がどこで見られたかの概要と、応答アクションが必要な場所を強調表示します。 
 
@@ -122,7 +122,7 @@ ms.locfileid: "51064915"
 
 ユーザー アカウントをクリックすると、ユーザー アカウントの詳細が表示されます。 詳細については、「ユーザー アカウント [の調査」を参照してください](investigate-user.md)。
 
->Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
+>Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
 ## <a name="related-topics"></a>関連項目
 - [Microsoft Defender for Endpoint ポータルについて](use.md)

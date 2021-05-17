@@ -46,7 +46,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 ![Secure Score のホームページ](../../media/secure-score/secure-score-home-page.png)
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>メカニズム
 
 次のアクションのポイントが与えられる。
 

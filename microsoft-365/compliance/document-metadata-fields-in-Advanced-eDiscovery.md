@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: この記事では、レビュー セット内のドキュメントのメタデータ フィールドを、レビュー セット内の Advanced eDiscovery定義Microsoft 365。
-ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: この記事では、Microsoft 365 の Advanced eDiscovery のケースで、レビュー セット内のドキュメントのメタデータ フィールドを定義します。
+ms.openlocfilehash: e801f60b69c796dfcd2cb6d83cc4fbc721dc7658
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244602"
+ms.locfileid: "52259465"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Advanced eDiscovery のドキュメントメタデータフィールド
 
-次の表に、レビュー セット内のドキュメントのメタデータ フィールドを、次の表に示Advanced eDiscovery。 表に、次の情報を示します。
+次の表に、Advanced eDiscovery のケースのレビュー セット内のドキュメントのメタデータ フィールドを示します。 表に、次の情報を示します。
 
 - **フィールド名** と **表示** フィールド名: レビュー セットで選択したドキュメントのファイル メタデータを表示するときに表示されるメタデータ フィールドの名前とフィールドの名前。 ドキュメントのファイル メタデータを表示するときに、一部のメタデータ フィールドは含まれません。 これらのフィールドはアスタリスク (*)で強調表示されます。
 
@@ -45,7 +45,7 @@ ms.locfileid: "52244602"
 |Author|Author|Doc_authors|ドキュメント メタデータから作成者を作成します。|
 |BCC|Bcc|Email_bcc|メッセージの種類の BCC フィールド。 形式は **DisplayName です \<SMTPAddress>**。|
 |CC|Cc|Email_cc|メッセージの種類の Cc フィールド。 形式は **DisplayName です \<SMTPAddress>**。|
-|コンプライアンス ラベル|ComplianceLabels|Compliance_labels|[コンテンツに](retention.md)適用される保持ラベルは、Office 365。|
+|コンプライアンス ラベル|ComplianceLabels|Compliance_labels|[365](retention.md) のコンテンツに適用Officeラベル。|
 |複合パス|CompoundPath|Compound_path|アイテムのソースを記述する人間が読み取り可能なパス。|
 |Content*|コンテンツ||アイテムの抽出されたテキスト。|
 |会話本文|会話本文||アイテムの会話本文。|
@@ -57,7 +57,7 @@ ms.locfileid: "52244602"
 |||Converted_file_path|変換されたエクスポート ファイルのパス。 内部 Microsoft の場合のみ使用します。|
 |ドキュメントの作成日|CreatedTime|Doc_date_created|ドキュメント メタデータから日付を作成します。|
 |カストディアン|カストディアン|カストディアン|アイテムが関連付けられた保管担当者の名前。|
-|日付|日付|日付|Date は、ファイルの種類に依存する計算フィールドです。<br /><br />メール: 送信日<br />電子メールの添付ファイル: ドキュメントの最終変更日。使用できない場合は、親の送信日<br />埋め込みドキュメント: ドキュメントの最終変更日。使用できない場合は、親の最終変更日<br />SPO ドキュメント (最新の添付ファイルを含む): SharePoint最終変更日;使用できない場合は、ドキュメントの最終変更日<br />非更新Office 365: 最終変更日<br />会議: 会議の開始日<br />VoiceMail: 送信日<br />IM: 送信日|
+|日付|日付|日付|Date は、ファイルの種類に依存する計算フィールドです。<br /><br />メール: 送信日<br />電子メールの添付ファイル: ドキュメントの最終変更日。使用できない場合は、親の送信日<br />埋め込みドキュメント: ドキュメントの最終変更日。使用できない場合は、親の最終変更日<br />SPO ドキュメント (最新の添付ファイルを含む): SharePoint の最終更新日。使用できない場合は、ドキュメントの最終変更日<br />非更新Office 365 ドキュメント: 最終変更日<br />会議: 会議の開始日<br />VoiceMail: 送信日<br />IM: 送信日|
 |その他のパス|Dedupedcompoundpath|Deduped_compound_path|完全に重複するドキュメントの複合パスの一覧 (電子メール: コンテンツに基づく、ドキュメント: ハッシュに基づく)。|
 |その他の保管担当者|DedupedCustodians|Deduped_custodians|完全に重複するドキュメントの保管担当者の一覧 (電子メール、コンテンツに基づく、ドキュメント、ハッシュに基づく)。|
 |その他のファイルの ID|DedupedFileIds|Deduped_file_IDs|完全に重複するドキュメントのファイル ID の一覧 (電子メール、コンテンツに基づく、ドキュメント、ハッシュに基づく)。|
@@ -118,19 +118,19 @@ ms.locfileid: "52244602"
 |代理人としてマーク|MarkAsRepresentative||正確な重複の各セットから 1 つのドキュメントが代表者としてマークされます。|
 |会議の終了日|MeetingEndDate|Meeting_end_date|会議の会議終了日。|
 |会議の開始日|MeetingStartDate|Meeting_start_date|会議の会議の開始日。|
-|メッセージの種類|MessageKind|Message_kind|検索するメッセージの種類。 可能な値: 連絡先ドキュメントメール外部データ FAX im journals 会議 **<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> microsoftteams** (Microsoft Teams のチャット、会議、通話からアイテムを返す) メモ投稿 **<br /> <br /> <br /> rssfeeds <br /> タスク <br /> ボイス** メール| 
-|ModernAttachment_ParentId||ModernAttachment_ParentId||
+|メッセージの種類|MessageKind|Message_kind|検索するメッセージの種類。 可能な値: 連絡先ドキュメントメール外部データ FAX im journals 会議 **<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> microsoftteams (Microsoft** Teams のチャット、会議、通話からアイテムを返します) メモは **<br /> <br /> <br /> rssfeeds タスクボイスメール <br /> を投稿 <br />** します| 
+|モダン添付ファイルの親 ID||ModernAttachment_ParentId|ドキュメントの親の変更できない ID。|
 |ネイティブ拡張機能|NativeExtension|Native_extension|アイテムのネイティブ拡張。|
 |ネイティブ ファイル名|NativeFileName|Native_file_name|アイテムのネイティブ ファイル名。|
 |NativeMD5||Native_MD5|ファイル ストリームの MD5 ハッシュ (128 ビット ハッシュ値)。|
 |NativeSHA256||Native_SHA_256|ファイル ストリームの SHA256 ハッシュ (256 ビット ハッシュ値)。|
 |ND/ET 並べ替え: 添付ファイルを除外する|NdEtSortExclAttach|ND_ET_sort_excl_attach|電子メール スレッド (ET) セットと Near-duplicate (ND) セットの連結。 このフィールドは、レビュー時に効率的な並べ替えに使用されます。 **D は ND** セットの先頭に付き **、E** は ET セットのプレフィックスです。|
 |ND/ET 並べ替え: 添付ファイルを含む|NdEtSortInclAttach|ND_ET_sort_incl_attach|電子メール スレッド (ET) セットとほぼ重複 (ND) セットの連結。 このフィールドは、レビュー時に効率的な並べ替えに使用されます。 **D は ND** セットの先頭に付き **、E** は ET セットのプレフィックスです。 ET セット内の各電子メール アイテムの後に適切な添付ファイルが続きます。|
-|O365 作成者||O365_authors|[作成者] SharePoint。|
-|によって作成された O365||O365_created_by|ユーザーが作成SharePoint。|
-|O365 作成日||O365_date_created|作成された日付は、SharePoint。|
-|O365 日付の変更||O365_date_modified|日付の最後に変更SharePoint。|
-|によって変更された O365||O365_modified_by|変更された値は、SharePoint。|
+|O365 作成者||O365_authors|SharePoint の作成者。|
+|によって作成された O365||O365_created_by|SharePoint から作成されます。|
+|O365 作成日||O365_date_created|SharePoint から作成された日付。|
+|O365 日付の変更||O365_date_modified|SharePoint からの最終変更日。|
+|によって変更された O365||O365_modified_by|SharePoint から変更されました。|
 |親 ID|ParentId|Container_ID|アイテムの親の ID。|
 |ParentNode||Parent_node|電子メール スレッド内の最も近い先行する電子メール メッセージ。|
 |参加者ドメイン|ParticipantDomains|Email_participant_domains|メッセージの参加者のすべてのドメインの一覧。|
@@ -157,13 +157,14 @@ ms.locfileid: "52244602"
 |Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|並べ替えフィールド - 電子メールと添付ファイル: カウンター時系列。ドキュメント: 最初にピボットし、類似度スコアを降順に指定します。|
 |SimilarityPercent||Similarity_percent|近くの重複セットのピボットに対するドキュメントの類似点を示します。|
 |ネイティブ ファイル サイズ|Size|Native_size|ネイティブ アイテムのバイト数。|
-|件名|件名|Email_subject|メッセージの件名。|
+|Subject|Subject|Email_subject|メッセージの件名。|
 |件名/タイトル|SubjectTitle||アイテムの件名またはタイトルで構成される計算フィールド。|
 |タグ|タグ|タグ|レビュー セットに適用されるタグ。|
 |テーマリスト|ThemesList|Themes_list|分析用に計算されたテーマの一覧。|
 |タイトル|タイトル|Doc_title|ドキュメント メタデータのタイトル。|
 |へ|へ|Email_to|メッセージの種類をフィールドに指定します。 Format is **DisplayName \<SmtpAddress>**|
 |メール セットで一意|UniqueInEmailSet||**メール** セットに添付ファイルが重複している場合は False。|
+|バージョン グループ ID||Version_Group_Id|同じドキュメントの異なるバージョンをグループ分けします。|
 |修復された|WasRemediated|Was_Remediated|**True** の場合は、アイテムが修復され、それ以外の場合は **False です**。|
 |文字カウント|WordCount|Word_count|アイテム内の単語の数。|
 |||||

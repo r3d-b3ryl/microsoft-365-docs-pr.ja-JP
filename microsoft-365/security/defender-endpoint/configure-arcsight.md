@@ -1,6 +1,6 @@
 ---
 title: エンドポイント検出用の Microsoft Defender を取得する Micro Focus ArcSight を構成する
-description: Microsoft Defender セキュリティ センターから検出を受信およびプルする Micro Focus ArcSight を構成する
+description: Micro Focus ArcSight を構成して、検出を受信およびプルMicrosoft Defender セキュリティ センター
 keywords: Micro Focus ArcSight、セキュリティ情報とイベント管理ツール、arcsight を構成する
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -32,7 +32,7 @@ ms.locfileid: "51166187"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
 
 エンドポイント検出用の Defender を取得するために、Micro Focus ArcSight を使用する一部のファイルとツールをインストールして構成する必要があります。
 
@@ -42,11 +42,11 @@ ms.locfileid: "51166187"
 
 ## <a name="before-you-begin"></a>はじめに
 
-Micro Focus ArcSight Connector ツールを構成するには、Azure Active Directory (AAD) アプリケーションから検出をプルして解析するために、いくつかの構成ファイルが必要です。
+Micro Focus ArcSight Connector ツールを構成するには、アプリケーション (AAD) アプリケーションから検出をプルして解析するために、いくつかの構成ファイルAzure Active Directory必要があります。
 
 このセクションでは、必要な構成ファイルを正しく設定して使用するために必要な情報を取得する方法について説明します。
 
-- [設定] メニューから SIEM 統合機能を有効に **してください** 。 詳細については、「Defender [for Endpoint で SIEM 統合を有効にする」を参照してください](enable-siem-integration.md)。
+- [SIEM 統合] 機能が [既定] メニューから有効 **設定** します。 詳細については、「Defender [for Endpoint で SIEM 統合を有効にする」を参照してください](enable-siem-integration.md)。
 
 - SIEM 統合機能を有効にしたファイルを準備します。 次の値を取得する必要があります。
   - OAuth 2.0 トークン更新 URL
@@ -57,7 +57,7 @@ Micro Focus ArcSight Connector ツールを構成するには、Azure Active Dir
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
-    組織で使用する SIEM の種類として [Micro Focus ArcSight] を選択すると、これら 2 つのファイルを含む .zip ファイルが保存されているはずです。
+    組織で使用する SIEM の.zip Micro Focus ArcSight を選択した場合、これらの 2 つのファイルを含むファイルを保存している必要があります。
 
 - 次のトークンを生成し、準備ができていることを確認します。
   - アクセス トークン
@@ -69,10 +69,10 @@ Micro Focus ArcSight Connector ツールを構成するには、Azure Active Dir
 
 次の手順では、「開始する前に」で必要なすべての手順を完了 [したと仮定します](#before-you-begin)。
 
-1. 最新の 32 ビット Windows FlexConnector インストーラーをインストールします。 この情報は、HPE ソフトウェア センターで確認できます。 ツールは通常、次の既定の場所にインストールされます `C:\Program Files\ArcSightFlexConnectors\current\bin` 。</br></br>ツールを保存する場所を選択できます (たとえば、C: \\ \current\bin folder_location\current\bin などfolder_location場所を表します。 
+1. FlexConnector インストーラーに最新の 32 ビット Windowsインストールします。 この情報は、HPE ソフトウェア センターで確認できます。 ツールは通常、次の既定の場所にインストールされます `C:\Program Files\ArcSightFlexConnectors\current\bin` 。</br></br>ツールを保存する場所を選択できます (たとえば、C: \\ \current\bin folder_location\current\bin などfolder_location場所を表します。 
 
 2. インストール ウィザードに従って、次のタスクを実行します。
-   - 概要
+   - はじめに
    - [フォルダーのインストール] を選択する
    - [インストール セット] の選択
    - ショートカット フォルダーの選択
@@ -105,7 +105,7 @@ Micro Focus ArcSight Connector ツールを構成するには、Azure Active Dir
     </tr>
     <tr>
     <td>構成ファイル</td>
-    <td>クライアント プロパティ ファイルの名前を入力します。 名前は、ダウンロードした .zip で指定されたファイルと一致している必要があります。
+    <td>クライアント プロパティ ファイルの名前を入力します。 名前は、ダウンロードしたファイルに含.zip一致する必要があります。
 たとえば、flexagent ディレクトリの構成ファイルの名前がWDATP-Connector.jsonparser.properties の場合は、クライアント プロパティ ファイルの名前として &quot; &quot; &quot; &quot; &quot; WDATP-Connector と入力 &quot; する必要があります。</td>
     </tr>
     <td>イベント URL</td>
@@ -116,7 +116,7 @@ Micro Focus ArcSight Connector ツールを構成するには、Azure Active Dir
     <td>OAuth 2</td>
     </tr>
     <td>OAuth 2 クライアント プロパティ ファイル</td>
-    <td><em>wdatp-connector.properties ファイルの場所を参照</em>します。 名前は、ダウンロードした .zip で指定されたファイルと一致している必要があります。</td>
+    <td><em>wdatp-connector.properties ファイルの場所を参照</em>します。 名前は、ダウンロードしたファイルに含.zip一致する必要があります。</td>
     <tr>
     <td>更新トークン</td>
     <td>更新トークンは <b>、SIEM</b> 設定ページから更新トークンを生成するか、restutil ツールを使用する方法の 2 つの方法で取得できます。 <br><br> Preferences セットアップから更新トークンを生成する方法<b></b>の詳細については、「Defender for Endpoint で SIEM 統合を有効<a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)">にする」を参照してください</a>。 </br> </br><b>restutil ツールを使用して更新トークンを取得します。</b> </br> a. コマンド プロンプトを開きます。 ツールをインストールした場所<em>folder_location\current\bin</em>folder_location C:\ に移動します。 <em></em> </br></br> b. Type: <code>arcsight restutil token -config</code> from the bin directory.たとえば <b>、arcsight restutil boxtoken -proxy proxy.location.hp.com:8080</b> Web ブラウザー ウィンドウが開きます。 </br> </br>c. 資格情報を入力し、パスワード フィールドをクリックしてページをリダイレクトします。 ログイン プロンプトで、資格情報を入力します。 </br> </br>d. 更新トークンがコマンド プロンプトに表示されます。 </br></br> e. [トークンの更新] フィールドに <b>コピーして貼り付</b> けます。
@@ -154,7 +154,7 @@ Micro Focus ArcSight Connector ツールを構成するには、Azure Active Dir
 ## <a name="install-and-configure-the-micro-focus-arcsight-console"></a>Micro Focus ArcSight コンソールのインストールと構成
 
 1. インストール ウィザードに従って、次のタスクを実行します。
-   - 概要
+   - はじめに
    - 使用許諾契約書
    - 特別な通知
    - [ArcSight インストール ディレクトリの選択]
@@ -177,7 +177,7 @@ Micro Focus ArcSight Connector ツールを構成するには、Azure Active Dir
 
 9. [アクティブ なチャネル **セット] [**  >  **新しい条件**  >  **デバイスデバイス製品]**  >  **に移動します**。
 
-10. デバイス **製品を設定する = Microsoft Defender ATP**. イベントがツールに流れ込むのを確認した場合は、もう一度プロセスを停止して Windows Services に移動し、ArcSight FlexConnector REST を開始します。
+10. デバイス **製品を設定する = Microsoft Defender ATP。** イベントがツールに流れ込むのを確認した後、プロセスを再度停止し、[Windows サービス] に移動し、ArcSight FlexConnector REST を開始します。
 
 これで、Micro Focus ArcSight コンソールでクエリを実行できます。
 
@@ -209,4 +209,4 @@ Defender for Endpoint detections は個別のイベントとして表示され�
 - [Defender for Endpoint で SIEM 統合を有効にする](enable-siem-integration.md)
 - [SIEM ツールへの検出のプル](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)
 - [REST API を使用したエンドポイント検出用の Defender のプル](pull-alerts-using-rest-api.md)
-- [SIEM ツールの統合に関する問題のトラブルシューティング](troubleshoot-siem.md)
+- [SIEM ツール統合に関する問題のトラブルシューティング](troubleshoot-siem.md)

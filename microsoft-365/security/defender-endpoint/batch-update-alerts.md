@@ -29,7 +29,7 @@ ms.locfileid: "51167091"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -67,9 +67,9 @@ POST /api/alerts/batchUpdate
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**
+Authorization | String | ベアラー {token}。 **必須**
 Content-Type | 文字列 | application/json. **必須**
 
 
@@ -78,13 +78,13 @@ Content-Type | 文字列 | application/json. **必須**
 <br>要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 
 <br>最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-プロパティ | 種類 | 説明
+プロパティ | 型 | 説明
 :---|:---|:---
-alertIds | リスト &lt; 文字列&gt;| 更新するアラートの一覧。 **必須**
+alertIds | リスト &lt; 文字列&gt;| 更新するアラートの一覧。 **Required**
 status | String | 指定したアラートの更新された状態を指定します。 プロパティの値は、'New'、'InProgress'、および 'Resolved' です。
 assignedTo | String | 指定したアラートの所有者
 classification | String | 指定したアラートの仕様を指定します。 プロパティの値は、'Unknown'、'FalsePositive'、'TruePositive'です。 
-決定 | 文字列 | 指定したアラートの決定を指定します。 プロパティの値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
+決定 | String | 指定したアラートの決定を指定します。 プロパティの値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
 comment | String | 指定したアラートに追加するコメント。
 
 ## <a name="response"></a>応答

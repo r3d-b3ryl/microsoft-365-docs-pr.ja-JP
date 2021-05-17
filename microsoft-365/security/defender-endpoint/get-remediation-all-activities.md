@@ -82,7 +82,7 @@ requesterEmail | String | 作成者の電子メール アドレス | globaladmin
 requesterId | String | Creator オブジェクト ID | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | String | この修復アクティビティに作成者が追加したメモ (フリー テキスト) | null
 scid | String | 関連するセキュリティ推奨事項の SCID | null
-status | String | 修復アクティビティの状態 (アクティブ/完了) | Active
+status | String | 修復アクティビティの状態 (アクティブ/完了) | 有効
 statusLastModifiedOn | DateTime | 状態フィールドが更新された日付 | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | この修復が適用される公開デバイスの数 | 43
 title | String | この修復アクティビティのタイトル | Microsoft Silverlight の更新
@@ -140,7 +140,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 }
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [修復方法とプロパティ](get-remediation-methods-properties.md)
 

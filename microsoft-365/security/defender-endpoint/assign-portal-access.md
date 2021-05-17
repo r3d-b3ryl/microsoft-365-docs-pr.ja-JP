@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender セキュリティ センターへのユーザー アクセスの割り当て
+title: ユーザー アクセスをユーザー に割り当Microsoft Defender セキュリティ センター
 description: Microsoft Defender for Endpoint ポータルへの読み取りおよび書き込みまたは読み取り専用アクセスを割り当てる。
 keywords: ユーザー ロールの割り当て、読み取りおよび書き込みアクセスの割り当て、読み取り専用アクセスの割り当て、ユーザー、ユーザー の役割、役割
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51164771"
 ---
-# <a name="assign-user-access-to-microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センターへのユーザー アクセスの割り当て
+# <a name="assign-user-access-to-microsoft-defender-security-center"></a>ユーザー アクセスをユーザー に割り当Microsoft Defender セキュリティ センター
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51164771"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint では、アクセス許可を管理する 2 つの方法がサポートされています。
 

@@ -1,5 +1,5 @@
 ---
-title: オートメーション フォルダーの除外を管理する
+title: 自動化フォルダーの除外を管理する
 description: 自動化フォルダーの除外を追加して、自動調査から除外されるファイルを制御します。
 keywords: 管理, 自動化, 除外, ブロック, クリーン, 悪意のある
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185839"
 ---
-# <a name="manage-automation-folder-exclusions"></a>オートメーション フォルダーの除外を管理する 
+# <a name="manage-automation-folder-exclusions"></a>自動化フォルダーの除外を管理する 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "51185839"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
 オートメーション フォルダーの除外を使用すると、自動調査がスキップするフォルダーを指定できます。 
 
@@ -59,13 +59,13 @@ ms.locfileid: "51185839"
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>オートメーション フォルダーの除外を追加する
-1. ナビゲーション ウィンドウで、[設定オートメーション]**フォルダー**  >  **の除外を選択します**。  
+1. ナビゲーション ウィンドウで、[オートメーション]**フォルダー設定**  >  **を選択します**。  
 
 2. [新 **しいフォルダーの除外] をクリックします**。  
 
 3. フォルダーの詳細を入力します。
 
-    - フォルダー
+    - Folder
     - 拡張機能
     - ファイル名
     - 説明
@@ -77,17 +77,17 @@ ms.locfileid: "51185839"
 > 除外されたファイルを収集または調べる Live Response コマンドは、"ファイルが除外されました" というエラーで失敗します。 さらに、自動調査では除外されたアイテムは無視されます。
 
 ## <a name="edit-an-automation-folder-exclusion"></a>オートメーション フォルダーの除外を編集する 
-1. ナビゲーション ウィンドウで、[設定オートメーション]**フォルダー**  >  **の除外を選択します**。 
+1. ナビゲーション ウィンドウで、[オートメーション]**フォルダー設定**  >  **を選択します**。 
 
 2. フォルダーの **除外で** [編集] をクリックします。  
 
 3. ルールの詳細を更新し、[保存] を **クリックします**。
 
 ## <a name="remove-an-automation-folder-exclusion"></a>オートメーション フォルダーの除外を削除する 
-1. ナビゲーション ウィンドウで、[設定オートメーション]**フォルダー**  >  **の除外を選択します**。  
+1. ナビゲーション ウィンドウで、[オートメーション]**フォルダー設定**  >  **を選択します**。  
 2. [除外 **の削除] をクリックします**。 
 
 
 ## <a name="related-topics"></a>関連項目
 - [許可/ブロックされたリストの自動化を管理する](manage-indicators.md)
-- [オートメーション ファイルのアップロードを管理する](manage-automation-file-uploads.md)
+- [自動化ファイルのアップロードを管理する](manage-automation-file-uploads.md)

@@ -96,7 +96,7 @@ Microsoft Defender for Endpoint では **、Techniques は** イベント タイ
 
 
 ## <a name="see-also"></a>関連項目
-- [[デバイス] リストの表示と整理](machines-view-overview.md)
+- [デバイスの一覧を表示および整理する](machines-view-overview.md)
 - [Microsoft Defender for Endpoint デバイスのタイムライン イベント フラグ](device-timeline-event-flag.md) 
 
 

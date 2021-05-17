@@ -30,7 +30,7 @@ ms.locfileid: "51165155"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint デバイス タイムラインのイベント フラグは、潜在的な攻撃を調査するときに特定のイベントをフィルター処理して整理するのに役立ちます。
 
@@ -53,6 +53,6 @@ Defender for Endpoint デバイスのタイムラインは、デバイスで観�
 
 ## <a name="view-flagged-events"></a>フラグが設定されたイベントを表示する  
 1. [タイムライン のフィルター **] セクション** で、[フラグ付 **きイベント] を有効にします**。
-2. [**適用**] をクリックします。 フラグが設定されたイベントだけが表示されます。
+2. **[適用]** をクリックします。 フラグが設定されたイベントだけが表示されます。
 タイム バーをクリックすると、追加のフィルターを適用できます。 これにより、フラグが設定されたイベントより前のイベントだけが表示されます。  
 ![フィルターがオンのデバイス タイムライン フラグのイメージ](images/device-flag-filter.png)

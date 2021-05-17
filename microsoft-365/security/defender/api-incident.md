@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender インシデント API とインシデント リソースの種類
-description: Microsoft 365 Defender のインシデント リソースの種類のメソッドとプロパティについて説明します。
+title: Microsoft 365Defender インシデント API とインシデント リソースの種類
+description: Defender のインシデント リソースの種類のメソッドとプロパティMicrosoft 365する
 keywords: インシデント、インシデント、API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51060817"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365 Defender インシデント API とインシデント リソースの種類
+# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365Defender インシデント API とインシデント リソースの種類
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51060817"
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-インシデント [とは](incidents-overview.md) 、攻撃の説明に役立つ関連アラートのコレクションです。 組織内の異なるエンティティからのイベントは、Microsoft 365 Defender によって自動的に集計されます。 インシデント API を使用して、組織のインシデントと関連するアラートにプログラムでアクセスできます。
+インシデント [とは](incidents-overview.md) 、攻撃の説明に役立つ関連アラートのコレクションです。 組織内の異なるエンティティからのイベントは、Defender によって自動的にMicrosoft 365されます。 インシデント API を使用して、組織のインシデントと関連するアラートにプログラムでアクセスできます。
 
 ## <a name="quotas-and-resource-allocation"></a>クォータとリソース割り当て
 
@@ -46,7 +46,7 @@ ms.locfileid: "51060817"
 
 HTTP 応答コードは、送信された要求の数または割り当てられた実行時間のいずれかによって、クォータに達 `429` したかどうかを示します。 応答本文には、到達したクォータがリセットされるまでの時間が含まれます。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 
 インシデント API では、それぞれのメソッドに対してさまざまな種類のアクセス許可が必要です。 必要なアクセス許可の詳細については、それぞれのメソッドの記事を参照してください。
 
@@ -63,7 +63,7 @@ HTTP 応答コードは、送信された要求の数または割り当てられ
 
 ## <a name="common-properties"></a>共通プロパティ
 
-プロパティ | 種類 | 説明
+プロパティ | 型 | 説明
 -|-|-
 incidentId | long | インシデントの一意の ID。
 redirectIncidentId | null 許容長 | 現在のインシデントが結合されたインシデント ID。
@@ -80,7 +80,7 @@ tags | string List | インシデント タグの一覧。
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 Defender API の概要](api-overview.md)
+- [Microsoft 365Defender API の概要](api-overview.md)
 - [インシデントの概要](incidents-overview.md)
 - [インシデント API の一覧表示](api-list-incidents.md)
 - [インシデント API の更新](api-update-incidents.md)
