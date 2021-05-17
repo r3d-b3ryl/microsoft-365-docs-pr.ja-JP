@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft Teams でゲストとチームを作成する方法について説明します。
+description: ゲストと一緒にチームを作成する方法については、Microsoft Teams。
 ms.openlocfilehash: a6d30684bed3a750a11e311f4e47d88940adbd0f
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,21 +27,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578593"
 ---
-# <a name="create-a-team-with-guests"></a><span data-ttu-id="7d9e9-103">チームを作成してゲストを追加する</span><span class="sxs-lookup"><span data-stu-id="7d9e9-103">Create a team with guests</span></span>
+# <a name="create-a-team-with-guests"></a><span data-ttu-id="d4408-103">チームを作成してゲストを追加する</span><span class="sxs-lookup"><span data-stu-id="d4408-103">Create a team with guests</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp?autoplay=false]
 
-## <a name="try-it"></a><span data-ttu-id="7d9e9-104">お試しください!</span><span class="sxs-lookup"><span data-stu-id="7d9e9-104">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="d4408-104">お試しください!</span><span class="sxs-lookup"><span data-stu-id="d4408-104">Try it!</span></span>
 
-<span data-ttu-id="7d9e9-105">Microsoft Teams を使用して、従業員や社外のユーザー (クライアントなど) とプロジェクトで一緒に作業できます。</span><span class="sxs-lookup"><span data-stu-id="7d9e9-105">You can use Microsoft Teams to work together on a project with your employees and people outside the business, like your clients.</span></span>
+<span data-ttu-id="d4408-105">クライアントなど、Microsoft Teamsを使用して、従業員や社外のユーザーとプロジェクトを一緒に作業できます。</span><span class="sxs-lookup"><span data-stu-id="d4408-105">You can use Microsoft Teams to work together on a project with your employees and people outside the business, like your clients.</span></span>
 
-1. <span data-ttu-id="7d9e9-106">Teams で、左側の  **ナビゲーションで [Teams]**  を選択し、[チームの作成]  **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="7d9e9-106">In Teams, choose  **Teams**  in the left navigation, and then choose  **Create team**.</span></span>
-2. <span data-ttu-id="7d9e9-107">[チーム  **の作成] ボックス**  にチーム名を入力し、簡単な説明を入力し、プライバシー設定を選択し、[次へ] を選択  **します**。</span><span class="sxs-lookup"><span data-stu-id="7d9e9-107">In the  **Create your team**  box, enter a team name, provide a short description, choose a privacy setting, and then choose  **Next**.</span></span>
-3. <span data-ttu-id="7d9e9-108">[メンバー  **の追加]**  ボックスに、組織内の他の従業員の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="7d9e9-108">In the  **Add members**  box, enter the names of other employees in your organization.</span></span> <span data-ttu-id="7d9e9-109">外部ゲストの場合は、自分のメール アドレスを入力します。</span><span class="sxs-lookup"><span data-stu-id="7d9e9-109">For outside guests, enter their email address.</span></span>
+1. <span data-ttu-id="d4408-106">[Teams]**でTeams** ナビゲーションで [チームの作成] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="d4408-106">In Teams, choose  **Teams**  in the left navigation, and then choose  **Create team**.</span></span>
+2. <span data-ttu-id="d4408-107">[チーム  **の作成] ボックス**  にチーム名を入力し、簡単な説明を入力し、プライバシー設定を選択し、[次へ] を選択  **します**。</span><span class="sxs-lookup"><span data-stu-id="d4408-107">In the  **Create your team**  box, enter a team name, provide a short description, choose a privacy setting, and then choose  **Next**.</span></span>
+3. <span data-ttu-id="d4408-108">[メンバー  **の追加]**  ボックスに、組織内の他の従業員の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="d4408-108">In the  **Add members**  box, enter the names of other employees in your organization.</span></span> <span data-ttu-id="d4408-109">外部ゲストの場合は、自分のメール アドレスを入力します。</span><span class="sxs-lookup"><span data-stu-id="d4408-109">For outside guests, enter their email address.</span></span>
 
-    <span data-ttu-id="7d9e9-110">ゲストを追加できないというメッセージが表示された場合は、Teams と Skype 管理センターにアクセスしてゲスト アクセスを有効にしてください。</span><span class="sxs-lookup"><span data-stu-id="7d9e9-110">If you get a message that you can't add a guest, visit the Teams and Skype admin center to turn on guest access.</span></span>
+    <span data-ttu-id="d4408-110">ゲストを追加できないというメッセージが表示された場合は、ゲスト アクセスを有効Teams管理センター Skypeにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="d4408-110">If you get a message that you can't add a guest, visit the Teams and Skype admin center to turn on guest access.</span></span>
 
-1. <span data-ttu-id="7d9e9-111">[追加  **] を** 選択し、[閉じる]  **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="7d9e9-111">Choose  **Add** , and then choose  **Close**.</span></span>
+1. <span data-ttu-id="d4408-111">[追加  **] を** 選択し、[閉じる]  **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="d4408-111">Choose  **Add** , and then choose  **Close**.</span></span>
 2. ページの下部で、新しいチームに短いウェルカム メッセージを入力し、[送信] を選択 **します** :::image type="icon" source="../media/teams-send-icon.png" border="false"::: 。   
 
-<span data-ttu-id="7d9e9-113">クライアントは Teams からメールの招待を受け取り、チームに参加するには無料の Microsoft アカウントが必要です。</span><span class="sxs-lookup"><span data-stu-id="7d9e9-113">Your client will receive an email invitation from Teams, which will inform them that they need a free Microsoft account to join the team.</span></span> <span data-ttu-id="7d9e9-114">既存のメール アドレスを使用してアカウントを作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="7d9e9-114">They can create an account using their existing email address by following the instructions provided.</span></span> <span data-ttu-id="7d9e9-115">その後、Web 上で Teams を使用するか、自分のコンピューターに Teams アプリをインストールできます。</span><span class="sxs-lookup"><span data-stu-id="7d9e9-115">They can then use Teams on the web or install the Teams app on their computer.</span></span>
+<span data-ttu-id="d4408-113">クライアントは、チームに参加するために無料の Microsoft アカウントTeams必要と通知する電子メール招待状をメールで受信します。</span><span class="sxs-lookup"><span data-stu-id="d4408-113">Your client will receive an email invitation from Teams, which will inform them that they need a free Microsoft account to join the team.</span></span> <span data-ttu-id="d4408-114">既存のメール アドレスを使用してアカウントを作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="d4408-114">They can create an account using their existing email address by following the instructions provided.</span></span> <span data-ttu-id="d4408-115">その後、Web 上Teamsを使用するか、コンピューターにTeamsアプリをインストールできます。</span><span class="sxs-lookup"><span data-stu-id="d4408-115">They can then use Teams on the web or install the Teams app on their computer.</span></span>

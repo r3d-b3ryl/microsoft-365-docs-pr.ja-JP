@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 の多国籍設計原則
+title: 複数国間の設計原則 (Microsoft 365
 description: 説明
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 07/29/2020
 ms.locfileid: "46521101"
 ---
-# <a name="multi-national-design-principles-for-microsoft-365"></a><span data-ttu-id="11567-103">Microsoft 365 の多国籍設計原則</span><span class="sxs-lookup"><span data-stu-id="11567-103">Multi-national design principles for Microsoft 365</span></span>
+# <a name="multi-national-design-principles-for-microsoft-365"></a><span data-ttu-id="05c2d-103">複数国間の設計原則 (Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="05c2d-103">Multi-national design principles for Microsoft 365</span></span>
 
-<span data-ttu-id="11567-104">テキスト</span><span class="sxs-lookup"><span data-stu-id="11567-104">Text</span></span>
+<span data-ttu-id="05c2d-104">テキスト</span><span class="sxs-lookup"><span data-stu-id="05c2d-104">Text</span></span>

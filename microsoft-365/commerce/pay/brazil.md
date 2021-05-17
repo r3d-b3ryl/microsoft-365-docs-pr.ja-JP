@@ -19,8 +19,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274114"
 ---
-# <a name="payment-information-for-brazil"></a><span data-ttu-id="e720f-103">ブラジルのお支払い情報</span><span class="sxs-lookup"><span data-stu-id="e720f-103">Payment information for Brazil</span></span>
+# <a name="payment-information-for-brazil"></a><span data-ttu-id="25b0a-103">ブラジルのお支払い情報</span><span class="sxs-lookup"><span data-stu-id="25b0a-103">Payment information for Brazil</span></span>
 
-<span data-ttu-id="e720f-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="e720f-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="25b0a-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="25b0a-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="e720f-105">請求書に記載の支払い方法に従い、お支払い送金の際に請求書番号をご記入ください。</span><span class="sxs-lookup"><span data-stu-id="e720f-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  
+<span data-ttu-id="25b0a-105">請求書に記載の支払い方法に従い、お支払い送金の際に請求書番号をご記入ください。</span><span class="sxs-lookup"><span data-stu-id="25b0a-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  

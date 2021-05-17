@@ -1,5 +1,5 @@
 ---
-title: ユーザーが Microsoft 365 Business Premium に接続するのに役立ちます
+title: ユーザーがユーザーに接続Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -35,14 +35,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578449"
 ---
-# <a name="help-users-connect-to-microsoft-365-business-premium"></a><span data-ttu-id="b2d88-103">ユーザーが Microsoft 365 Business Premium に接続するのに役立ちます</span><span class="sxs-lookup"><span data-stu-id="b2d88-103">Help users connect to Microsoft 365 Business Premium</span></span>
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a><span data-ttu-id="d94c7-103">ユーザーがユーザーに接続Microsoft 365 Business Premium</span><span class="sxs-lookup"><span data-stu-id="d94c7-103">Help users connect to Microsoft 365 Business Premium</span></span>
 
-<span data-ttu-id="b2d88-104">セットアップが完了すると、既定のデバイス ポリシーが設定され、適用する準備が整います。</span><span class="sxs-lookup"><span data-stu-id="b2d88-104">After you complete setup, your default device policies are in place and ready to apply.</span></span> <span data-ttu-id="b2d88-105">モバイル デバイスでは、ユーザーはアプリOfficeダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="b2d88-105">On mobile devices, users download Office apps.</span></span> <span data-ttu-id="b2d88-106">次に、ユーザーが自分の仕事または学校のアカウントでサインインするときにポリシーが適用されます。</span><span class="sxs-lookup"><span data-stu-id="b2d88-106">Policies are then applied when the user signs in with their work or school account.</span></span> <span data-ttu-id="b2d88-107">一括アップグレードなど、ポリシーを Windows PC に適用する前に、さらに必要な作業があります。</span><span class="sxs-lookup"><span data-stu-id="b2d88-107">There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade.</span></span> <span data-ttu-id="b2d88-108">ユーザーがセットアップと接続を行うのに役立つ次のトピックを参照して共有します。</span><span class="sxs-lookup"><span data-stu-id="b2d88-108">See and share the following topics to help users get set up and connected:</span></span>
+<span data-ttu-id="d94c7-104">セットアップが完了すると、既定のデバイス ポリシーが設定され、適用する準備が整います。</span><span class="sxs-lookup"><span data-stu-id="d94c7-104">After you complete setup, your default device policies are in place and ready to apply.</span></span> <span data-ttu-id="d94c7-105">モバイル デバイスでは、ユーザーはアプリをOfficeします。</span><span class="sxs-lookup"><span data-stu-id="d94c7-105">On mobile devices, users download Office apps.</span></span> <span data-ttu-id="d94c7-106">次に、ユーザーが自分の仕事または学校のアカウントでサインインするときにポリシーが適用されます。</span><span class="sxs-lookup"><span data-stu-id="d94c7-106">Policies are then applied when the user signs in with their work or school account.</span></span> <span data-ttu-id="d94c7-107">一括アップグレードなど、ポリシーを Windows PC に適用する前に、さらに必要な作業があります。</span><span class="sxs-lookup"><span data-stu-id="d94c7-107">There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade.</span></span> <span data-ttu-id="d94c7-108">ユーザーがセットアップと接続を行うのに役立つ次のトピックを参照して共有します。</span><span class="sxs-lookup"><span data-stu-id="d94c7-108">See and share the following topics to help users get set up and connected:</span></span>
   
-[<span data-ttu-id="b2d88-109">Microsoft 365 Business Premium ユーザー向け Windows デバイスのセットアップ</span><span class="sxs-lookup"><span data-stu-id="b2d88-109">Set up Windows devices for Microsoft 365 Business Premium users</span></span>](set-up-windows-devices.md)
+[<span data-ttu-id="d94c7-109">ユーザーのWindowsデバイスをMicrosoft 365 Business Premiumする</span><span class="sxs-lookup"><span data-stu-id="d94c7-109">Set up Windows devices for Microsoft 365 Business Premium users</span></span>](set-up-windows-devices.md)
   
-[<span data-ttu-id="b2d88-110">ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="b2d88-110">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
+[<span data-ttu-id="d94c7-110">ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="d94c7-110">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
   
-[<span data-ttu-id="b2d88-111">Microsoft 365 Business Premium ユーザー向けモバイル デバイスのセットアップ</span><span class="sxs-lookup"><span data-stu-id="b2d88-111">Set up mobile devices for Microsoft 365 Business Premium users</span></span>](set-up-mobile-devices.md)
+[<span data-ttu-id="d94c7-111">ユーザーのモバイル デバイスをMicrosoft 365 Business Premiumする</span><span class="sxs-lookup"><span data-stu-id="d94c7-111">Set up mobile devices for Microsoft 365 Business Premium users</span></span>](set-up-mobile-devices.md)
   
 
