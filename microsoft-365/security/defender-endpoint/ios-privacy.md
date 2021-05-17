@@ -62,7 +62,7 @@ iOS のエンドポイント用 Defender は、構成済みの iOS デバイス�
 
     - Azure Active Directory (AD) デバイス ID と Azure ユーザー ID - デバイスを一意に識別します。ユーザーは、それぞれ Azure Active directory にあります。 
 
-    - Azure テナント ID - Azure Active Directory 内の組織を識別する GUID。 
+    - Azure テナント ID - 組織内の組織を識別する GUID Azure Active Directory。 
 
     - Microsoft Defender for Endpoint org ID - デバイスが属する企業に関連付けられた一意の識別子。 Microsoft は、企業の選択セットと影響を受ける企業の数に影響を与える問題が発生した場合の識別を許可します。 
 

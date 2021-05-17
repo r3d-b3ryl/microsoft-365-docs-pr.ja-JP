@@ -61,19 +61,19 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 > リソース構成が低い環境では、VDI ブート手順によって Defender for Endpoint センサーのオンボーディングが遅くなる可能性があります。 
 
 
-### <a name="for-windows-10-or-windows-server-2019"></a>Windows 10 または Windows Server 2019 の場合
+### <a name="for-windows-10-or-windows-server-2019"></a>サーバー Windows 10またはWindowsサーバー 2019 の場合
 
-1.  サービス オンボーディング ウィザードからダウンロードした VDI *構成パッケージ*.zip ファイル (WindowsDefenderATPOnboardingPackage.zip) を開きます。 Microsoft Defender セキュリティ センターからパッケージ [を取得できます](https://securitycenter.windows.com/)。
+1.  サービス オンボーディング ウィザードから.zipした VDI *構成パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは次の方法で取得[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
 
-    1.  ナビゲーション ウィンドウで、[設定オンボーディング]  >  **を選択します**。
+    1.  ナビゲーション ウィンドウで、[オンボーディング]**設定**  >  **選択します**。
 
-    1. オペレーティング システムとして [Windows 10] を選択します。
+    1. オペレーティング システムWindows 10を選択します。
 
     1.  [展開方法 **] フィールドで** 、[永続的でないエンドポイントの VDI オンボーディング **スクリプト] を選択します**。
 
-    1. [パッケージ **のダウンロード] を** クリックし、.zip ファイルを保存します。
+    1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
-2. .zip ファイルから抽出された WindowsDefenderATPOnboardingPackage フォルダーからパスの下の `golden/master` イメージにファイルをコピーします `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 。 
+2. windowsDefenderATPOnboardingPackage フォルダーからファイルをコピーし、.zip ファイルからパスの `golden/master` 下のイメージにコピーします `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 。 
 
     1. デバイスごとに 1 つのエントリを実装していない場合は、WindowsDefenderATPOnboardingScript.cmd をコピーします。
 
@@ -82,7 +82,7 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
     > [!NOTE]
     > フォルダーが表示しない場合 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` は、非表示になる可能性があります。 エクスプローラーから [非表示のファイル **とフォルダーを** 表示する] オプションを選択する必要があります。
 
-3. [ローカル グループ ポリシー エディター] ウィンドウを開き、[コンピューター **構成**  >  **] [Windows 設定スクリプト**  >  **の起動] に**  >  **移動します**。
+3. [ローカル グループ ポリシー エディター] ウィンドウを開き、[コンピューター **の構成**] Windows 設定  >    >  **に**  >  **移動します**。
 
    > [!NOTE]
    > ドメイン グループ ポリシーは、永続的でない VDI デバイスのオンボーディングにも使用できます。
@@ -91,11 +91,11 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 
    - デバイスごとに 1 つのエントリの場合:
    
-     **[PowerShell スクリプト] タブを選択** し、[追加] を **クリックします**(Windows エクスプローラーは、以前にオンボーディング スクリプトをコピーしたパスで直接開きます)。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1` 。 他のファイルは自動的にトリガーされますので、指定する必要はありません。
+     **[PowerShell スクリプト]** タブを選択し、[追加] **(Windows** オンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます) をクリックします。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1` 。 他のファイルは自動的にトリガーされますので、指定する必要はありません。
    
    - 各デバイスの複数のエントリの場合:
    
-     [スクリプト **] タブを** 選択し、[追加] を **クリックします** (Windows エクスプローラーは、以前にオンボーディング スクリプトをコピーしたパスで直接開きます)。 オンボーディング bash スクリプトに移動します `WindowsDefenderATPOnboardingScript.cmd` 。
+     [スクリプト **] タブを** 選択し、[追加]**をクリック** します (Windows、以前にオンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます)。 オンボーディング bash スクリプトに移動します `WindowsDefenderATPOnboardingScript.cmd` 。
 
 5. ソリューションをテストします。
 
@@ -111,11 +111,11 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
    
       - デバイスごとに 1 つのエントリの場合: 
     
-        Microsoft Defender セキュリティ センターで 1 つのエントリのみを確認します。
+        1 つのエントリのみをチェックMicrosoft Defender セキュリティ センター。
 
       - 各デバイスの複数のエントリの場合: 
        
-        Microsoft Defender セキュリティ センターで複数のエントリを確認します。
+        複数のエントリを確認Microsoft Defender セキュリティ センター。
 
 6. [ナビゲーション **] ウィンドウの [** デバイス] リストをクリックします。
 
@@ -155,9 +155,9 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 DISM コマンドとオフライン サービスの詳細については、以下の記事を参照してください。
-- [DISM を使用して Windows イメージを変更する](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [DISM を使用Windowsイメージを変更する](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [DISM イメージ管理Command-Lineオプション](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [オフライン Windows イメージのコンポーネント ストアのサイズを小さい](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [オフライン イメージ内のコンポーネント ストアのサイズを小Windowsする](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 非永続的な VDI 環境でオフライン サービスが実行可能なオプションでない場合は、一貫性とセンサーの正常性を確保するために次の手順を実行する必要があります。
 
@@ -184,8 +184,8 @@ DISM コマンドとオフライン サービスの詳細については、以�
 5. 通常と同じ方法で、ゴールデン/マスター イメージを再シールします。
 
 ## <a name="related-topics"></a>関連項目
-- [グループ ポリシーを使用した Windows 10 デバイスのオンボード](configure-endpoints-gp.md)
-- [Microsoft Endpoint Configuration Manager を使用した Windows 10 デバイスのオンボード](configure-endpoints-sccm.md)
+- [グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)
+- [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

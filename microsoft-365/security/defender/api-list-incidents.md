@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender でインシデント API を一覧表示する
-description: Microsoft 365 Defender でインシデント API を一覧表示する方法について説明します。
+title: Defender でインシデント API をMicrosoft 365する
+description: Defender でインシデント API を一覧表示するMicrosoft 365する
 keywords: リスト, インシデント, インシデント, API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935739"
 ---
-# <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defender でインシデント API を一覧表示する
+# <a name="list-incidents-api-in-microsoft-365-defender"></a>Defender でインシデント API をMicrosoft 365する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -57,7 +57,7 @@ API では、次の **OData 演算子がサポート** されています。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Access Microsoft 365 Defender API」を参照してください。](api-access.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「Access Microsoft 365 [Defender API」を参照してください。](api-access.md)
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 -|-|-
@@ -107,7 +107,7 @@ lastUpdateTime | バックエンドでインシデントが最後に更新され
 assignedTo | インシデントの所有者、または所有者 *が割り当* てられていない場合は null。 | secop2@contoso.com
 classification | インシデントの仕様。 プロパティの値は次 *のとおりです。不明**、FalsePositive、TruePositive*  | 不明
 決定 | インシデントの決定を指定します。 プロパティの値は次 *のとおりです。 NotAvailable*、 *Apt*、 *Malware*、 *SecurityPersonnel*、 *SecurityTesting*、 *UnwantedSoftware*、*その* 他 | NotAvailable
-status | インシデント (アクティブ *、または解決* 済み) *を分類します*。 インシデントに対する対応を整理および管理するのに役立ちます。 | Active
+status | インシデント (アクティブ *、または解決* 済み) *を分類します*。 インシデントに対する対応を整理および管理するのに役立ちます。 | 有効
 severity | アセットへの影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高い項目では、最も迅速な注意が必要です。<br /><br />次のいずれかの値: Informational、Low、*Medium、High です。   | 中
 tags | インシデントに関連付けられたカスタム タグの配列 。たとえば、共通の特性を持つインシデントのグループにフラグを設定します。 | \[\]
 アラート | インシデントに関連するアラートのすべてと、重大度、アラートに関係していたエンティティ、アラートのソースなどのその他の情報を含む配列。 | \[\] (以下のアラート フィールドの詳細を参照してください)
@@ -118,7 +118,7 @@ tags | インシデントに関連付けられたカスタム タグの配列 �
 -|-|-
 alertId | アラートを表す一意の識別子 | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId | このアラートが関連付けられているインシデントを表す一意の識別子 | 924565
-serviceSource | Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365 など、アラートの発生元となるサービス。 | MicrosoftCloudAppSecurity
+serviceSource | Microsoft Defender for Endpoint、microsoft Defender for Endpoint、Microsoft Cloud App Security Id、Microsoft Defender for Identity など、アラートの発生元となるサービスOffice 365。 | MicrosoftCloudAppSecurity
 creationTime | アラートが最初に作成された時刻。 | 2020-09-06T14:46:55.7182276Z
 lastUpdatedTime | バックエンドでアラートが最後に更新された時刻。 | 2020-09-06T14:46:57.243333Z
 resolvedTime | アラートが解決された時刻。 | 2020-09-10T05:22:59Z
@@ -143,14 +143,14 @@ mitreTechniques | 攻撃手法は [、MITRE ATT](https://attack.mitre.org/)お�
 フィールド名 | 説明 | 値の例
 -|-|-
 DeviceId | Microsoft Defender for Endpoint で指定されているデバイス ID。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId |  Azure Active Directory で指定されている[デバイス ID。](/azure/active-directory/fundamentals/active-directory-whatis) ドメインに参加しているデバイスでのみ使用できます。 | null
+aadDeviceId |  デバイス ID は、デバイス ID で指定[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-whatis) ドメインに参加しているデバイスでのみ使用できます。 | null
 deviceDnsName | デバイスの完全修飾ドメイン名。 | user5cx.middleeast.corp.contoso.com
 osPlatform | デバイスが実行されている OS プラットフォーム。| WindowsServer2016
 osBuild | デバイスが実行されている OS のビルド バージョン。 | 14393
 rbacGroupName | デバイス [に関連付けられた役割ベース](/azure/role-based-access-control/overview) のアクセス制御 (RBAC) グループ。 | WDATP-Ring0
 firstSeen | デバイスが最初に表示された時刻。 | 2020-02-06T14:16:01.9330135Z
-healthStatus | デバイスの正常性状態。 | Active
-riskScore | デバイスのリスク スコア。 | 高
+healthStatus | デバイスの正常性状態。 | 有効
+riskScore | デバイスのリスク スコア。 | 高い
 エンティティ | 特定のアラートの一部として、または関連付けと識別されたすべてのエンティティ。 | \[\] (以下のエンティティ フィールドの詳細を参照してください)
 
 ### <a name="entity-format"></a>エンティティの形式
@@ -714,7 +714,7 @@ GET https://api.security.microsoft.com/api/incidents
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 Defender API へのアクセス](api-access.md)
+- [Defender API Microsoft 365アクセスする](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)
 - [エラー コードについて](api-error-codes.md)
 - [インシデントの概要](incidents-overview.md)

@@ -1,7 +1,7 @@
 ---
 title: その他のセキュリティおよび脅威保護 API
 description: Microsoft セキュリティおよび脅威保護製品に関連する API の一覧を表示します。
-keywords: api、 security, threat protection, mde, Microsoft Defender for Endpoint, Microsoft Defender for microsoft Defender for Office 365, cloud app security
+keywords: api, セキュリティ, 脅威保護, mde, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, クラウド アプリ のセキュリティ
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -33,12 +33,12 @@ ms.locfileid: "51935751"
 
 **適用対象:**
 
-- Microsoft 365 Defender API
+- Microsoft 365Defender API
 
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-次のリソースは、Microsoft 365 Defender API 以外の他の Microsoft セキュリティ ソリューションで使用可能な API の詳細を提供します。
+次のリソースは、Defender API 以外の他の Microsoft セキュリティ ソリューションで使用可能な API のMicrosoft 365提供します。
 
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
 - [Microsoft Defender for Office 365](/office/office-365-management-api/)

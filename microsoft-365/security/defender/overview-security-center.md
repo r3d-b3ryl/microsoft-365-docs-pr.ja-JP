@@ -1,5 +1,5 @@
 ---
-title: MDO、MDE、MDI、MCAS を組み合わせた Microsoft 365 セキュリティ センターの概要
+title: Microsoft 365センターの概要、MDO、MDE、MDI、MCAS の組み合わせ
 description: Microsoft Defender for Office 365 (MDO) と Microsoft Defender for Endpoint (MDE) を、Microsoft Defender for Identity (MDI) と Microsoft Cloud App Security (MCAS) と組み合わせた、Microsoft 365 セキュリティ センターの利点。 この記事では、管理者向けの Microsoft 365 セキュリティ センターの進展について概説します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティ センター、モニター、レポート、ID、データ、デバイス、アプリ
 ms.prod: m365-security
@@ -52,13 +52,13 @@ Office 365 セキュリティ/コンプライアンス センターまたは Mic
 - [Microsoft 365 セキュリティ センターの Defender for Endpoint](microsoft-365-security-center-mde.md)
 
 > [!NOTE]
-> Microsoft 365 セキュリティ ポータルは、既存の役割ベースのアクセスを使用して適用し、各セキュリティ モデルを統合ポータルに移動します。 統合された各ワークロード (MDO や MDE など) には、独自の役割ベースのアクセス権があります。 製品に既に存在する役割は、Microsoft 365 セキュリティ ポータルに自動的に統合されます。 ただし、MCAS の役割とアクセス許可は MCAS で引き続き処理されます。
+> セキュリティ Microsoft 365は、既存の役割ベースのアクセスを使用して適用し、各セキュリティ モデルを統合ポータルに移動します。 統合された各ワークロード (MDO や MDE など) には、独自の役割ベースのアクセス権があります。 製品に既に存在する役割は、セキュリティ ポータルのMicrosoft 365自動的に統合されます。 ただし、MCAS の役割とアクセス許可は MCAS で引き続き処理されます。
 
 ## <a name="what-to-expect"></a>想定される変化
 
 Office 365 セキュリティ/コンプライアンス センター (protection.office.com) および Microsoft Defender セキュリティ センター (securitycenter.microsoft.com) で使用するすべてのセキュリティ コンテンツは、*Microsoft 365 セキュリティ センター* にあります。
 
-Microsoft 365 セキュリティ センターは、さまざまなワークロードからのシグナルを一連の統合エクスペリエンスに取り込み、セキュリティ チームが攻撃を調査して対応するのに役立ちます。
+Microsoft 365セキュリティ センターは、さまざまなワークロードからのシグナルを一連の統合エクスペリエンスに取り込み、セキュリティ チームが攻撃を調査して対応するのに役立ちます。
 
 - インシデントとアラート
 - 検索
@@ -73,27 +73,27 @@ Microsoft 365 セキュリティ センターは、Microsoft Defender for Office
 - 他のワークロードとの機能のパリティ
 
 > [!NOTE]
-> 統合された Microsoft 365 セキュリティ センターには、移行手順を実行したり、新しいライセンスを購入する必要なしにアクセスできます。 たとえば、この新しいポータルは、Office 365 プラン 1 とプラン 2 の Microsoft Defender を使用する場合と同様に、E3 サブスクリプションを持つ管理者がアクセスできます。ただし、Exchange Online Protection または MDO Plan 1 のお客様には、サブスクリプション ライセンスでサポートされているセキュリティ機能だけが表示されます。 新しいセンターの目的は、セキュリティを一元化する方法です。
+> 統合セキュリティ センター Microsoft 365移行手順を実行したり、新しいライセンスを購入したりすることなくアクセスできます。 たとえば、この新しいポータルは、Microsoft Defender for Office 365 プラン 1 とプラン 2 と同様に、E3 サブスクリプションを持つ管理者がアクセスできます。ただし、Exchange Online Protectionまたは MDO プラン 1 のお客様には、サブスクリプション ライセンスでサポートされているセキュリティ機能だけが表示されます。 新しいセンターの目的は、セキュリティを一元化する方法です。
 
 ## <a name="unified-investigations"></a>統一された調査
 
-セキュリティ センターを統合すると、Microsoft 365 全体でセキュリティ インシデントを調査する 1 つの場所が作成されます。 主な例は **、[** インシデント]  & Microsoft 365 セキュリティ センターのクイック 起動時のアラートです。
+セキュリティ センターを統合すると、複数のセキュリティ インシデントを調査する場所が 1 つMicrosoft 365。 主な例は **、[インシデント**] の [インシデント] **&** セキュリティ センターのクイック起動時のMicrosoft 365です。
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Microsoft 365 セキュリティ センターの [インシデント] ページ。":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="セキュリティ センターの [インシデントMicrosoft 365] ページ。":::
 
 インシデント名を選択すると、収束セキュリティ センターの値を示すページが表示されます。
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Microsoft 365 セキュリティ センターのインシデントの概要ページの例":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="セキュリティ センターのインシデントの概要ページMicrosoft 365例":::
 
 <!--
 ![Example of the Summary page for an incident in the Microsoft 365 security center](../../media/converged-incident-info-3.png)
 --> 
 
-インシデント ページの上部には、[概要] タブ、[通知] 、[**デバイス**] 、[**ユーザー**] 、[メールボックス] 、[調査]、および **[証拠**] タブが **表示** されます。 詳細については、次のタブを選択します。 たとえば、[ユーザー]タブには、統合ワークロード (Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Cloud App Security) のユーザーの情報と、オンプレミスの Active Directory ドメイン サービス (AD DS)、Azure Active Directory (Azure AD)、サードパーティ ID プロバイダーなどのさまざまなソースが表示されます。 詳細については、「ユーザーの調査 [」を参照してください](investigate-users.md)。
+インシデント ページの上部には、[概要] タブ、[通知] 、[**デバイス**] 、[**ユーザー**] 、[メールボックス] 、[調査]、および **[証拠**] タブが **表示** されます。 詳細については、次のタブを選択します。 たとえば、[ユーザー]タブには、統合ワークロード (Microsoft Defender for Endpoint、Microsoft Defender for Identity、および Microsoft Cloud App Security) のユーザーの情報と、オンプレミスの Active Directory ドメイン サービス (AD DS)、Azure Active Directory (Azure AD)、サードパーティ ID プロバイダーなどのさまざまなソースが表示されます。 詳細については、「ユーザーの調査 [」を参照してください](investigate-users.md)。
 
 環境内のインシデントを確認し、これらのタブをドリルダウンし、さまざまな種類の脅威に対してインシデントに提供された情報にアクセスする方法について理解を深める方法を実践してください。
 
-詳細については [、「Microsoft 365 セキュリティ センターでのインシデント」を参照してください](incidents-overview.md)。
+詳細については、「セキュリティ センター[でのインシデント」をMicrosoft 365してください](incidents-overview.md)。
 
 ## <a name="improved-processes"></a>改善されたプロセス
 
@@ -157,7 +157,7 @@ Microsoft 365 セキュリティ センターには、Microsoft セキュリテ�
 > 製品フィルターに沿って、現在のトピック、リソースの種類 (ビデオからウェビナーまで)、セキュリティ領域に関する知識または経験のレベル、セキュリティの役割、および製品の機能が一覧表示されます。
 
 > [!TIP]
-> [Microsoft Learn](https://docs.microsoft.com/e/learn/)には他にも多くの学習機会があります。 コース [MS-500T02-A: Microsoft 365](https://docs.microsoft.com/learn/certifications/courses/ms-500t02)Threat Protection の実装などの認定トレーニングがあります。
+> [Microsoft Learn](https://docs.microsoft.com/e/learn/)には他にも多くの学習機会があります。 コース[MS-500T02-A: 脅威保護の実装など、認定Microsoft 365があります](https://docs.microsoft.com/learn/certifications/courses/ms-500t02)。
 
 ## <a name="send-us-your-feedback"></a>フィードバックの送信
 

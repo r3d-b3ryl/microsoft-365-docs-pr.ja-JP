@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 セキュリティ ポータルのデバイス プロファイル
+title: セキュリティ ポータルのMicrosoft 365プロファイル
 description: 組織内のデバイスのリスクと露出レベルを表示します。 過去および現在の脅威を分析し、最新の更新プログラムを使用してデバイスを保護します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、Microsoft 365 Defender、セキュリティ センター、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Identity、デバイス ページ、デバイス プロファイル、コンピューター ページ、コンピューター プロファイル
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.locfileid: "51935667"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Microsoft 365 セキュリティ ポータルでは、デバイス プロファイル ページが提供され、ネットワーク上のデバイスの正常性と状態をすばやく評価できます。
+セキュリティ Microsoft 365は、デバイス プロファイル ページを提供します。そのため、ネットワーク上のデバイスの正常性と状態をすばやく評価できます。
 
 > [!IMPORTANT]
 > デバイス プロファイル ページは、デバイスが Microsoft Defender for Endpoint、Microsoft Defender for Identity、または両方に登録されているかどうかによって、若干異なって表示される場合があります。
@@ -75,10 +75,10 @@ Microsoft 365 セキュリティ ポータルでは、デバイス プロファ�
 デバイス プロファイル ページで使用できるアクションは次のとおりです。
 
 * **タグの管理** - このデバイスに適用したカスタム タグを更新します。
-* **デバイスの分離** - デバイスを Microsoft Defender for Endpoint に接続しながら、組織のネットワークからデバイスを分離します。 通信の目的で、デバイスの分離中に Outlook、Teams、Skype for Business の実行を許可できます。
+* **デバイスの分離** - デバイスを Microsoft Defender for Endpoint に接続しながら、組織のネットワークからデバイスを分離します。 通信の目的で、Outlook、Teams、Skype for Businessの実行を許可できます。
 * **アクション センター** - 送信されたアクションの状態を表示します。 別のアクションが既に選択されている場合にのみ使用できます。
 * **アプリの実行を制限** する - Microsoft によって署名されていないアプリケーションが実行されるのを防ぐ。
-* **ウイルス対策スキャンの実行** - ウイルスWindows Defender定義を更新し、すぐにウイルス対策スキャンを実行します。 [クイック スキャン] または [フル スキャン] の間で選択します。
+* **ウイルス対策スキャンを実行** する - Windows Defender ウイルス対策定義を更新し、すぐにウイルス対策スキャンを実行します。 [クイック スキャン] または [フル スキャン] の間で選択します。
 * **調査パッケージの収集** - デバイスに関する情報を収集します。 調査が完了したら、ダウンロードできます。
 * **ライブ応答セッションの開始** - デバイスにリモート シェルを読み込んで、詳細なセキュリティ [調査を行います](/microsoft-365/security/defender-endpoint/live-response)。
 * **自動調査の開始** - 脅威 [を自動的に調査および修復します](../office-365-security/office-365-air.md)。 このページから自動調査を手動で実行することもできますが、特定のアラート[](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies)ポリシーによって独自に自動調査がトリガーされます。
@@ -180,7 +180,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 ## <a name="related-topics"></a>関連項目
 
-* [Microsoft 365 Defender の概要](microsoft-365-defender.md)
+* [Microsoft 365Defender の概要](microsoft-365-defender.md)
 * [Microsoft 365 Defender を有効にする](m365d-enable.md)
 * [ライブ応答を使用して、デバイス上のエンティティを調査する](../defender-endpoint/live-response.md)
 * [Office 365 での自動調査および対応 (AIR)](../office-365-security/office-365-air.md)

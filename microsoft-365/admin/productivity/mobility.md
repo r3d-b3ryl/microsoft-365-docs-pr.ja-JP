@@ -147,7 +147,7 @@ Microsoft 365 では、Microsoft Outlook、Word、Excel、PowerPoint、OneNote�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 アプリの正常性 – テクノロジ エクスペリエンス](apps-health.md) (記事)\
+[Microsoft 365アプリの正常性 – テクノロジ エクスペリエンス](apps-health.md)(記事)\
 [コミュニケーション – ユーザー エクスペリエンス](communication.md) (記事)\
 [コンテンツのコラボレーション – ユーザー エクスペリエンス](content-collaboration.md) (記事)\
 [会議 – ユーザー エクスペリエンス](meetings.md) (記事)\

@@ -35,14 +35,14 @@ ms.locfileid: "51935463"
 **適用対象:**
 - Microsoft 365 Defender
 
-高度 `EmailUrlInfo` な検索スキーマの [表](advanced-hunting-overview.md) には、Microsoft Defender によって 365 用に処理された電子メールと添付ファイルの URL に関する情報Officeされています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。 
+高度 `EmailUrlInfo` な検索スキーマの[表](advanced-hunting-overview.md)には、Microsoft Defender によって処理された電子メールと添付ファイルの URL に関する情報が含Office 365。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。 
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | string | Microsoft 365 によって生成された電子メールの一意の識別子 |
+| `NetworkMessageId` | string | ユーザーが生成する電子メールの一意Microsoft 365 |
 | `Url` | 文字列型 | メールの件名、本文、または添付ファイル内の完全な URL |
 | `UrlDomain` | string | URL のドメイン名またはホスト名 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |

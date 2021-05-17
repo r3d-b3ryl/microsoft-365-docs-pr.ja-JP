@@ -35,7 +35,7 @@ ms.locfileid: "51935823"
 **適用対象:**
 - Microsoft 365 Defender
 
-高度 `IdentityInfo` な検索スキーマの [表](advanced-hunting-overview.md) には、Azure Active Directory を含むさまざまなサービスから取得したユーザー アカウントに関する情報が含まれます。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度 `IdentityInfo` な検索スキーマの[表](advanced-hunting-overview.md)には、さまざまなサービスから取得したユーザー アカウントに関する情報が含Azure Active Directory。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!NOTE]
 >このテーブルはから名前が変更されました `AccountInfo` 。 名前の変更中に、ポータルに保存されているクエリはすべて自動的に更新されます。 他の場所に保存したクエリを確認します。
@@ -59,7 +59,7 @@ ms.locfileid: "51935823"
 | `SipProxyAddress` | string | アカウントのボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) アドレス |
 | `City` | string | アカウント ユーザーが保存されている都市 |
 | `Country` | string | アカウント ユーザーが保存されている国/地域 |
-| `IsAccountEnabled` | ブール値 | アカウントが有効になっているかどうかを示します。 |
+| `IsAccountEnabled` | boolean | アカウントが有効になっているかどうかを示します。 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)

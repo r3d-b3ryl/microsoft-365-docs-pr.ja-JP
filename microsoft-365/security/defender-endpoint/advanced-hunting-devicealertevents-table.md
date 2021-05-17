@@ -35,7 +35,7 @@ ms.locfileid: "51939650"
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-高度 `DeviceAlertEvents` な検索スキーマの [表](advanced-hunting-overview.md) には、Microsoft Defender セキュリティ センターのアラートに関する情報が含まれている。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
+高度 `DeviceAlertEvents` な検索スキーマの[表](advanced-hunting-overview.md)には、このスキーマのアラートに関する情報Microsoft Defender セキュリティ センター。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 
 高度なハンティング スキーマの他のテーブルの詳細については、高度なハンティング [スキーマリファレンスを参照してください](advanced-hunting-schema-reference.md)。
 

@@ -58,9 +58,9 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 この例では、実際の理由の先頭に . が付く `[ERROR]` 。
 これらのバージョン間のダウングレードがサポートされていないため、インストールに失敗しました。
 
-## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP インストール ログが見つからないか更新されない
+## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATPログが見つからないか更新されていない場合
 
-まれに、インストールは MDATP の /Library/Logs/Microsoft/mdatp/install.log ファイルにトレースを残しません。
+まれに、インストールでは、MDATPの /Library/Logs/Microsoft/mdatp/install.log ファイルにトレースが残りありません。
 macOS ログを照会することで、インストールが発生したことを確認し、考えられるエラーを分析できます (これは、クライアント UI がない場合、MDM の展開に役立ちます)。 細いタイム ウィンドウを使用してクエリを実行し、膨大な量の情報が含むので、ログ プロセス名でフィルター処理することをお勧めします。
 
 ```bash

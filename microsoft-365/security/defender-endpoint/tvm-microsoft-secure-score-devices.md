@@ -1,7 +1,7 @@
 ---
 title: デバイス向けの Microsoft セキュア スコア
 description: デバイスのスコアは、アプリケーション、オペレーティング システム、ネットワーク、アカウント、およびセキュリティ制御全体にわたるデバイスの一括セキュリティ構成状態を示します。
-keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, threat and vulnerability management, security controls, improvement opportunitis, security configuration score over time, security configuration score, baseline
+keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, 脅威と脆弱性の管理, security controls, improvement opportunitis, security configuration score over time, security posture, baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -39,9 +39,9 @@ ms.locfileid: "51934083"
 
 
 >[!NOTE]
-> 構成スコアは、Microsoft Secure Score for Devices として脅威と脆弱性管理の一部です。
+> 構成スコアは、Microsoft Secure Score 脅威と脆弱性の管理デバイスの一部です。
 
-デバイスのスコアは、Microsoft Defender[](tvm-dashboard-insights.md)セキュリティ センターの脅威と脆弱性管理ダッシュボードに表示されます。 デバイスの Microsoft セキュア スコアが高いということは、エンドポイントがサイバー セキュリティの脅威攻撃に対してより回復力があることを意味します。 これは、次のカテゴリにわたるデバイスの一括セキュリティ構成状態を反映します。
+デバイスのスコアは、デバイスの脅威と脆弱性の管理[ダッシュボード](tvm-dashboard-insights.md)に表示Microsoft Defender セキュリティ センター。 デバイスの Microsoft セキュア スコアが高いということは、エンドポイントがサイバー セキュリティの脅威攻撃に対してより回復力があることを意味します。 これは、次のカテゴリにわたるデバイスの一括セキュリティ構成状態を反映します。
 
 - アプリケーション
 - オペレーティング システム
@@ -57,7 +57,7 @@ Microsoft Defender for Endpoint シグナルを転送し、Microsoft Secure Scor
 
 変更は、ダッシュボードに反映するために数時間かかる場合があります。
 
-1. ナビゲーション ウィンドウで、[設定] [高度な  >  **機能] に移動します。** 
+1. ナビゲーション ウィンドウで、[高度な **機能設定**  >  **に移動します。** 
 
 2. 下にスクロールして **Microsoft Secure Score に移動** し、設定を [オン] に **切り替える**。
 
@@ -79,7 +79,7 @@ Microsoft Secure Score for Devices カードのデータは、細心の注意を
 
 セキュリティの推奨事項の一覧から問題を修復して、セキュリティ構成を改善します。 そうすると、Microsoft Secure Score for Devices が向上し、組織はサイバーセキュリティの脅威や脆弱性に対してより回復力が高くなります。
 
-1. 脅威と脆弱性管理ダッシュボードの Microsoft Secure Score for Devices カードから、カテゴリのいずれかを選択します。 そのカテゴリに関連する推奨事項の一覧が表示されます。 [セキュリティの推奨事項] [**ページに移動**](tvm-security-recommendation.md) します。 すべてのセキュリティ推奨事項を表示する場合は、[セキュリティの推奨事項] ページに移動したら、検索フィールドをクリアします。
+1. ダッシュボードの Microsoft Secure Score for Devices カード脅威と脆弱性の管理、カテゴリのいずれかを選択します。 そのカテゴリに関連する推奨事項の一覧が表示されます。 [セキュリティの推奨事項] [**ページに移動**](tvm-security-recommendation.md) します。 すべてのセキュリティ推奨事項を表示する場合は、[セキュリティの推奨事項] ページに移動したら、検索フィールドをクリアします。
 
 2. リストでアイテムを選択します。 フライアウト パネルが開き、推奨事項に関連する詳細が表示されます。 [修復 **オプション] を選択します**。
 
@@ -110,7 +110,7 @@ Microsoft Secure Score for Devices カードのデータは、細心の注意を
 
 ## <a name="related-topics"></a>関連項目
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)
 - [暴露スコア](tvm-exposure-score.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

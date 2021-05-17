@@ -51,8 +51,8 @@ ms.locfileid: "51935883"
 ネットワーク保護は、次の条件を持つデバイスでのみ機能します。
 
 >[!div class="checklist"]
-> - エンドポイントは、Windows 10 Pro または Enterprise Edition バージョン 1709 以上を実行しています。
-> - エンドポイントは、Microsoft Defender Antivirus を唯一のウイルス対策保護アプリとして使用しています。 [Microsoft 以外のウイルス対策ソリューションを使用している場合の問題を確認します](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+> - エンドポイントは、バージョン 1709 Windows 10 ProまたはEnterpriseバージョン 1709 以上で実行されています。
+> - エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [Microsoft 以外のウイルス対策ソリューションを使用している場合の問題を確認します](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 > - [リアルタイム保護が](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 有効になっています。
 > - [クラウド配信の保護が](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 有効になっています。
 > - 監査モードが有効になっていません。 グループ [ポリシーを使用して](enable-network-protection.md#group-policy) ルールを無効 **(値** : **0) に設定します**。
@@ -79,7 +79,7 @@ ms.locfileid: "51935883"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>誤検知または偽陰性を報告する
 
-デモ サイトと監査モードで機能をテストし、ネットワーク保護が事前構成されたシナリオで動作しているが、特定の接続で期待通りには機能しない場合は [、Windows Defender Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) Web ベースの申請フォームを使用して、ネットワーク保護に対して誤検知または誤検知を報告します。 E5 サブスクリプションを使用すると、関連 [付けられたアラートへのリンクを提供できます](alerts-queue.md)。
+デモ サイトと監査モードで機能をテストし、ネットワーク保護が事前構成されたシナリオで動作しているが、特定の接続で期待通りには動作しない場合は[、Windows Defender Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) Web ベースの申請フォームを使用して、ネットワーク保護に対して誤検知または誤検知を報告します。 E5 サブスクリプションを使用すると、関連 [付けられたアラートへのリンクを提供できます](alerts-queue.md)。
 
 「Address [false positives/negatives in Microsoft Defender for Endpoint」を参照してください](defender-endpoint-false-positives-negatives.md)。
 
@@ -120,10 +120,10 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
-レジストリ キーは、PowerShell、Microsoft Endpoint Manager、またはグループ ポリシーを使用して構成できます。 以下に役立つリソースを示します。
+レジストリ キーは、PowerShell、Microsoft エンドポイント マネージャーグループ ポリシーを使用して構成できます。 以下に役立つリソースを示します。
 - [レジストリ キーの操作](/powershell/scripting/samples/working-with-registry-keys)
-- [エンドポイント保護のカスタム クライアント設定を構成する](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
-- [グループ ポリシー設定を使用してエンドポイント保護を管理する](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
+- [ユーザー設定のカスタム クライアント設定を構成Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [グループ ポリシー設定を使用してグループ ポリシーをEndpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
 
 ## <a name="see-also"></a>関連項目
 

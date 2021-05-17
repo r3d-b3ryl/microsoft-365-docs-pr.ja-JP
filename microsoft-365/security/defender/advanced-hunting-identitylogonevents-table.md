@@ -35,13 +35,13 @@ ms.locfileid: "51935811"
 **適用対象:**
 - Microsoft 365 Defender
 
-高度な検索スキーマの表には、Microsoft Defender for Identity によってキャプチャされたオンプレミスの Active Directory を介して行われた認証アクティビティと、Microsoft Cloud App Security によってキャプチャされた Microsoft オンライン サービスに関連する認証アクティビティに関する情報が含まれます。 `IdentityLogonEvents` [](advanced-hunting-overview.md) このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度 `IdentityLogonEvents` な検索スキーマ[](advanced-hunting-overview.md)の表には、Microsoft Defender for Identity によってキャプチャされたオンプレミスの Active Directory を介して行われた認証アクティビティと、Microsoft Cloud App Security によってキャプチャされた Microsoft オンライン サービスに関連する認証アクティビティに関する情報が含まれます。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
 > テーブルでサポートされるイベントの種類 (値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ参照 `ActionType` を使用します。
 
 >[!NOTE]
->この表では、Cloud App Security によって追跡される Azure Active Directory (AD) ログオン アクティビティ、特に ActiveSync などのレガシ プロトコルを使用した対話型サインインと認証アクティビティについて説明します。 この表では使用できない非対話型ログオンは、Azure 監査ログADできます。 [Cloud App Security を Microsoft 365 に接続する方法の詳細](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>次の表は、Cloud App Security Azure Active Directory (AD) ログオン アクティビティ 、特に ActiveSync や他のレガシ プロトコルを使用した対話型サインインと認証アクティビティについて説明します。 この表では使用できない非対話型ログオンは、Azure 監査ログADできます。 [詳細については、「アプリを接続するCloud App Security」をMicrosoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 

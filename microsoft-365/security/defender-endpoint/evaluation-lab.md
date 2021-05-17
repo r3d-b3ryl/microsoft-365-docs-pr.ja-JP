@@ -45,14 +45,14 @@ Microsoft Defender for Endpoint 評価ラボは、プラットフォームの機
 
 自動調査、高度な狩猟、脅威分析など、プラットフォームの強力な機能に完全にアクセスでき、Defender for Endpoint が提供する包括的な保護スタックをテストできます。 
 
-最新の OS バージョンと適切なセキュリティ コンポーネント、および Office 2019 Standard をインストールするように事前構成された Windows 10 または Windows Server 2019 デバイスを追加できます。
+Windows 10 または Windows Server 2019 デバイスを追加して、最新の OS バージョンと適切なセキュリティ コンポーネントがインストールされ、Office 2019 Standard がインストールされます。
 
 また、脅威シミュレーターをインストールできます。 Defender for Endpoint は、業界をリードする脅威シミュレーション プラットフォームと提携し、ポータルから出ることなく Defender for Endpoint の機能をテストするのに役立ちます。
 
  お好みのシミュレーターをインストールし、評価ラボ内でシナリオを実行し、プラットフォームのパフォーマンスを即座に確認できます。 また、さまざまなシミュレーションにアクセスして、シミュレーション カタログから実行できます。
     
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 評価ラボにアクセスするには、ライセンス[](minimum-requirements.md#licensing-requirements)要件を満たすか、Microsoft Defender for Endpoint への試用版アクセス権が必要です。
 
 次のセキュリティ設定 **の管理権限** が必要です。
@@ -109,7 +109,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 
 ## <a name="add-devices"></a>デバイスの追加
-環境にデバイスを追加すると、Defender for Endpoint は接続の詳細を示す構成済みのデバイスをセットアップします。 Windows 10 または Windows Server 2019 デバイスを追加できます。
+環境にデバイスを追加すると、Defender for Endpoint は接続の詳細を示す構成済みのデバイスをセットアップします。 サーバー 2019 Windows 10またはWindows追加できます。
 
 デバイスは、OS および Office 2019 Standard の最新バージョンと、Java、Python、SysIntenals などの他のアプリで構成されます。 
 
@@ -118,7 +118,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 ラボのセットアップ中に脅威シミュレーターの追加を選択した場合、すべてのデバイスに追加するデバイスに脅威シミュレーター エージェントがインストールされます。
 
-デバイスは、推奨される Windows セキュリティ コンポーネントをオンにし、監査モードでテナントに自動的にオンボードされます。作業は不要です。 
+デバイスは自動的にテナントにオンボードされ、推奨されるセキュリティ Windowsオンおよび監査モードになります。作業は不要です。 
 
 次のセキュリティ コンポーネントは、テスト デバイスで事前に構成されています。
 
@@ -132,7 +132,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 - [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender ウイルス対策はオンになります (監査モードではありません)。 Microsoft Defender Antivirus でシミュレーションの実行がブロックされている場合は、Windows セキュリティを使用してデバイスのリアルタイム保護を無効にできます。 詳細については、「Configure [always-on protection」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
+> Microsoft Defender ウイルス対策オンになります (監査モードではありません)。 シミュレーションMicrosoft Defender ウイルス対策ブロックする場合は、デバイスでリアルタイム保護をオフWindows セキュリティ。 詳細については、「Configure [always-on protection」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
 自動調査の設定は、テナントの設定に依存します。 既定では半自動で構成されます。 詳細については、「自動調査 [の概要」を参照してください](automated-investigations.md)。
 
@@ -141,7 +141,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 1. ダッシュボードで、[デバイスの追加 **] を選択します**。 
 
-2. 追加するデバイスの種類を選択します。 Windows 10 または Windows Server 2019 の追加を選択できます。
+2. 追加するデバイスの種類を選択します。 サーバー 2019 にWindows 10またはWindows選択できます。
 
     ![デバイス オプションを使用したラボセットアップのイメージ](images/add-machine-options.png)
 
@@ -184,11 +184,11 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 >[!NOTE]
 >テスト デバイスへの接続は RDP を使用して行われます。 ファイアウォールの設定で RDP 接続が許可されている必要があります。
 
-1. [接続] を選択して、デバイスに接続し、攻撃シミュレーションを **実行します**。 
+1. Connectを選択して、デバイスにアクセスし、攻撃シミュレーション **をConnect。** 
 
     ![テスト デバイスの接続ボタンのイメージ](images/test-machine-table.png)
 
-2. RDP ファイルを保存し、[接続] を選択して起動 **します**。
+2. RDP ファイルを保存し、[開く] を選択して **起動Connect。**
 
     ![リモート デスクトップ接続のイメージ](images/remote-connection.png)
 

@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: Microsoft 365 for business を使用して、ユーザーがデバイスまたは Windows PC に持っている会社のデータを削除する方法について説明します。
+description: ユーザーが自分のデバイスMicrosoft 365 PC に持っている会社のデータを削除するには、ビジネス向けアプリをWindowsしてください。
 ms.openlocfilehash: 2e1af384d83937d65fd5c8ae655d228df48422cd
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,13 +33,13 @@ ms.locfileid: "51579996"
 ---
 # <a name="remove-company-data-from-devices"></a>デバイスから会社のデータを削除する
 
-この記事は、Microsoft 365 Business Premium に適用されます。
+この記事は、このMicrosoft 365 Business Premium。
 
 ## <a name="remove-company-data"></a>会社データを削除する
 
-Microsoft 365 for business を使用して、ユーザーが自分のデバイス[](app-protection-settings-for-android-and-ios.md)に持っている会社のデータや[、Microsoft](protection-settings-for-windows-10-devices.md) 365 で保護されている Windows PC を削除できます。 **デバイスから会社データを削除すると、後でデータを復元することはできません** 。 
+ビジネス向けMicrosoft 365を使用して、ユーザーが自分のデバイス上に持っている会社の[](app-protection-settings-for-android-and-ios.md)データや[](protection-settings-for-windows-10-devices.md)、Windowsによって保護されている pc を削除Microsoft 365。 **デバイスから会社データを削除すると、後でデータを復元することはできません** 。 
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
     
 2. 左側のナビゲーションで、[デバイスの管理]**を** \> **選択します**。  
   

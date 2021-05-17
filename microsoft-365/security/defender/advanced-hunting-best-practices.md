@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender での高度な検索クエリのベスト プラクティス
+title: Microsoft 365 Defender の高度な検索クエリのベスト プラクティス
 description: 高度な検索を使用して、高速、効率的、エラーフリーの脅威ハンティング クエリを作成する方法について説明します。
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ、kusto、回避タイムアウト、コマンド ライン、プロセス ID、最適化、ベスト プラクティス、解析、参加、要約
 search.product: eADQiWindows 10XVcnh
@@ -61,7 +61,7 @@ ms.locfileid: "51952694"
 - **解析、抽出しない**—可能な場合は、parse [演算子](/azure/data-explorer/kusto/query/parseoperator) または [parse_json() のような解析関数を使用します](/azure/data-explorer/kusto/query/parsejsonfunction)。 文字列演算子 `matches regex` または [extract() 関数は避け、](/azure/data-explorer/kusto/query/extractfunction)どちらも正規表現を使用します。 より複雑なシナリオでは、正規表現の使用を予約します。 [解析関数の詳細](#parse-strings)
 - **式ではなくテーブルをフィルター** 処理する -テーブル列でフィルター処理できる場合は、計算列でフィルター処理を行う必要があります。
 - **3 文字の用語はありません**。用語を 3 文字以下で比較またはフィルター処理しないようにします。 これらの用語はインデックス付けされていないので、一致する場合は、より多くのリソースが必要になります。
-- **選択的にプロジェクトを** 実行する —必要な列のみを投影することで、結果を理解しやすくなります。 結合または類似の操作を実行[](/azure/data-explorer/kusto/query/joinoperator)する前に特定の列を投影すると、パフォーマンスが向上します。
+- **Project選択 —** 必要な列のみを投影することで、結果を理解しやすくなります。 結合または類似の操作を実行[](/azure/data-explorer/kusto/query/joinoperator)する前に特定の列を投影すると、パフォーマンスが向上します。
 
 ## <a name="optimize-the-join-operator"></a>演算子を最適化 `join` する
 結合 [演算子は、](/azure/data-explorer/kusto/query/joinoperator) 指定した列の値と一致して、2 つのテーブルの行を結合します。 この演算子を使用するクエリを最適化するには、次のヒントを適用します。
@@ -254,7 +254,7 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>文字列の解析
 解析または変換が必要な文字列を効率的に処理するために使用できるさまざまな関数があります。 
 
-| String | 関数 | 使用例 |
+| String | 機能 | 使用例 |
 |--|--|--|
 | コマンド ライン | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | コマンドとすべての引数を抽出します。 | 
 | Paths | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | ファイルパスまたはフォルダー パスのセクションを抽出します。 |
@@ -265,7 +265,7 @@ SHA256,ThreatTypes,DetectionMethods
 サポートされている解析関数の詳細については [、「Kusto 文字列関数」を参照してください](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)。 
 
 >[!NOTE]
->この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [Microsoft 365 Defender をオンに](m365d-enable.md) し、より多くのデータ ソースを使用して脅威を検出します。 「Advanced [Hunting queries](advanced-hunting-migrate-from-mde.md)from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動できます。
+>この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [Defender を有効Microsoft 365、](m365d-enable.md)より多くのデータ ソースを使用して脅威を探します。 「Advanced Hunting queries from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に[移動できます](advanced-hunting-migrate-from-mde.md)。
 
 ## <a name="related-topics"></a>関連項目
 - [Kusto クエリ言語のドキュメント](/azure/data-explorer/kusto/query/)

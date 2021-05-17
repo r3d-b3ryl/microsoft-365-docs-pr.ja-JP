@@ -1,5 +1,5 @@
 ---
-title: アプリケーションのセットアップMicrosoft 365 Business Premium
+title: Microsoft 365 Business Premium のセットアップの概要
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: キャンペーンや他のMicrosoft 365 Business Premiumの設定の概要
+description: キャンペーンなどのビジネス向け Microsoft 365 Business Premium のセットアップの概要
 ms.openlocfilehash: 08fe74e519c2efab14e4362e35b89128a8442cfb
 ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
@@ -32,25 +32,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297382"
 ---
-# <a name="set-up-microsoft-365"></a>設定Microsoft 365
+# <a name="set-up-microsoft-365"></a>Microsoft 365 のセットアップ
 
-この記事では、ユーザー設定のプロセスについてMicrosoft 365。 このガイダンスをMicrosoft 365 Business Premium、セキュリティを強化できます。
+この記事では、Microsoft 365 のセットアッププロセスについて説明します。 Microsoft 365 Business Premium を使用しているユーザーは、このガイダンスを使用してセキュリティを強化できます。
 
-## <a name="admins-set-up-microsoft-365"></a>管理者: 管理者のMicrosoft 365
+## <a name="admins-set-up-microsoft-365"></a>管理者: Microsoft 365 のセットアップ
 
-次の図は、管理者がシステム管理者をセットアップする方法Microsoft 365。
+次の図は、管理者が Microsoft 365 をセットアップする方法を示しています。
 
-![システムをセットアップするMicrosoft 365](../media/M365-democracy-SetUpProcess.png)
+![Microsoft 365 をセットアップする手順](../media/M365-democracy-SetUpProcess.png)
 
-特別価格の対象となるキャンペーンの場合は[、Microsoft](https://m365forcampaigns.microsoft.com/)からの招待を要求してから、キャンペーンのMicrosoft 365[を開始します](m365-campaigns-sign-up.md)。 セットアップを完了するには、 [セットアップ ウィザードを実行して](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) コア設定を構成します。
+特別価格の対象となるキャンペーンの場合は [、Microsoft](https://m365forcampaigns.microsoft.com/)からの招待を要求してから [、Microsoft 365 for Campaigns](m365-campaigns-sign-up.md)にサインアップします。 セットアップを完了するには、 [セットアップ ウィザードを実行して](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) コア設定を構成します。
 
-他のすべての組織では、Microsoft 365 Business Premiumにサインアップした後、セットアップ[ウィザード](../business/sign-up.md)を実行してコア設定を[](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)構成してセットアップを完了します。
+他のすべての組織では[、Microsoft 365 Business Premium](../business/sign-up.md)にサインアップした後、セットアップ[](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)ウィザードを実行してコア設定を構成してセットアップを完了します。
 
 すべての組織で、管理者アカウントの保護、メール[](m365-campaigns-protect-admin-accounts.md)とデータへのアクセスの[](m365-campaigns-conditional-access.md)保護、脅威の保護の強化など、セキュリティ保護[を強化します](m365-campaigns-increase-protection.md)。
 
 ## <a name="everyone-set-up-your-devices"></a>すべてのユーザー: デバイスをセットアップする
 
-ユーザーは、この環境で動作するデバイスをセットアップするために数分かかる必要があります。 主要なユーザー (ハッカーの最も価値の高いターゲットであるユーザー) の場合は、新しいデバイスを設定して事前構成できます。 これにより、ユーザーは自分の資格情報を使用してサインインするときにMicrosoft 365できます。
+ユーザーは、この環境で動作するデバイスをセットアップするために数分かかる必要があります。 主要なユーザー (ハッカーの最も価値の高いターゲットであるユーザー) の場合は、新しいデバイスを設定して事前構成できます。 これにより、Microsoft 365 資格情報でサインインするときに開始できます。
 
 ![ユーザー デバイスのセットアップ プロセス](../media/m365-democracy-user-device-setup.png)
   
@@ -65,4 +65,4 @@ ms.locfileid: "52297382"
 
  **サポートに連絡する場合:**
   
-管理者はMicrosoft 365、カスタマー サポート チームへのアクセス権を持っています。ビジネス製品のサポートに問い合わせ **[- 管理者ヘルプ](../business-video/get-help-support.md)**
+Microsoft 365 管理者は、カスタマー サポート チームへのアクセス権を持っています。ビジネス製品のサポートに問い合わせ **[- 管理者ヘルプ](../business-video/get-help-support.md)**

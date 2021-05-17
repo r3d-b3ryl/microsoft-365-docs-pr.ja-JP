@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint は、高度な永続的な脅威から防御するのに役立つエンタープライズ エンドポイント セキュリティ プラットフォームです。
-keywords: Microsoft Defender for Endpoint の概要、エンドポイント向け Microsoft Defender の概要、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、マシンの動作センサー、クラウド セキュリティ、分析、脅威インテリジェンス、攻撃表面の縮小、次世代保護、自動調査と修復、Microsoft 脅威の専門家、セキュリティスコア、高度な狩猟、Microsoft 365 Defender、サイバー脅威ハンティング
+keywords: Microsoft Defender for Endpoint の概要、Microsoft Defender for Endpoint の概要、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、マシンの動作センサー、クラウド セキュリティ、分析、脅威インテリジェンス、攻撃表面の縮小、次世代保護、自動調査と修復、Microsoft 脅威の専門家、セキュリティ スコア、高度な検出、Microsoft 365 Defender、サイバー脅威の検出
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -33,19 +33,19 @@ ms.locfileid: "51935931"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> Windows 10 Enterprise Edition の機能の詳細については [、「Windows 10 Enterprise Edition」を参照してください](https://www.microsoft.com/WindowsForBusiness/buy)。
+> Windows 10 Enterprise エディションの機能の詳細については、「Windows 10 Enterprise[エディション」を参照してください](https://www.microsoft.com/WindowsForBusiness/buy)。
 
 Microsoft Defender for Endpoint は、エンタープライズ ネットワークが高度な脅威を防止、検出、調査、および対応するために設計されたエンタープライズ エンドポイント セキュリティ プラットフォームです。
 <p></p>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
-Defender for Endpoint では、Windows 10 に組み込むテクノロジと Microsoft の堅牢なクラウド サービスの組み合わせを使用します。
+Defender for Endpoint では、Microsoft の堅牢なクラウド サービスWindows 10組み込みのテクノロジの組み合わせを使用します。
 
--   **エンドポイントの** 動作センサー : Windows 10 に埋め込まれたこれらのセンサーは、オペレーティング システムから動作信号を収集および処理し、このセンサー データを Microsoft Defender for Endpoint のプライベートで分離されたクラウド インスタンスに送信します。
+-   エンドポイント **の** 動作センサー: Windows 10 に埋め込まれたこれらのセンサーは、オペレーティング システムから動作信号を収集および処理し、このセンサー データを Microsoft Defender for Endpoint のプライベートで分離されたクラウド インスタンスに送信します。
 
 
--   クラウド セキュリティ **分析:** Windows エコシステム、エンタープライズ クラウド製品 (Office 365 など)、オンライン資産全体でビッグ データ、デバイスラーニング、および独自の Microsoft 光ファイバーを活用すると、行動シグナルは高度な脅威に対する洞察、検出、推奨応答に変換されます。
+-   クラウド セキュリティ **分析:** Windows エコシステム、エンタープライズ クラウド製品 (Office 365 など)、オンライン資産全体で、ビッグ データ、デバイスラーニング、および独自の Microsoft 光ファイバーを活用することで、行動シグナルは高度な脅威に対する洞察、検出、推奨応答に変換されます。
 
 -   **脅威インテリジェンス**: Microsoft のハンター、セキュリティ チームによって生成され、パートナーによって提供される脅威インテリジェンスによって強化された脅威インテリジェンスにより、Defender for Endpoint は攻撃者のツール、テクニック、手順を識別し、収集されたセンサー データで監視されるとアラートを生成できます。
 
@@ -57,14 +57,14 @@ Defender for Endpoint では、Windows 10 に組み込むテクノロジと Micr
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>次世代の保護</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>エンドポイントの検出と応答</b></a></center></td>
 <td><center><a href="#ai"><img src="images/air-icon.png" alt="Automated investigation and remediation"><br> <b>自動調査と修復</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft 脅威エキスパート</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
 <a href="#apis"><center><b>一元的な構成と管理、API</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365Defender</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -114,8 +114,8 @@ Defender for Endpoint には、エンタープライズ ネットワークのセ
 Microsoft Defender for Endpoint の新しい管理された脅威検出サービスは、予防的な狩猟、事前設定、追加のコンテキストと分析情報を提供し、セキュリティ運用センター (SOC) が脅威を迅速かつ正確に特定して対応する権限をさらに強化します。
 
 >[!IMPORTANT]
->Defender for Endpoint のお客様は、プロアクティブな標的型攻撃通知を取得し、必要に応じて専門家と共同作業を行う場合は、Microsoft Threat Experts マネージ脅威ハンティング サービスに申請する必要があります。 オンデマンドのエキスパートは、アドオン サービスです。 標的型攻撃通知は、Microsoft Threat Experts マネージ 脅威検出サービスに受け入れられると、常に含まれます。<p>
-><p>まだ登録されていない場合で、その利点を体験する場合は、「設定全般の高度<b></b>> <b></b>> <b></b>な機能> <b>Microsoft Threat Experts」</b>にアクセスして適用してください。 一度受け入れられると、ターゲット攻撃通知のメリットを受け取り、90 日間の Experts on Demand の試用版を開始します。 Microsoft 担当者に問い合わせ、完全な Experts on Demand サブスクリプションを取得してください。
+>Defender for Endpoint のお客様は、プロアクティブな標的型攻撃通知をMicrosoft 脅威エキスパート専門家とオンデマンドで共同作業を行う場合は、セキュリティ管理された脅威検出サービスに申請する必要があります。 オンデマンドのエキスパートは、アドオン サービスです。 ターゲット攻撃通知は、管理された脅威検出サービスに受け入Microsoft 脅威エキスパート常に含まれます。<p>
+><p>まだ登録されていない場合で、その利点を体験する場合は、「一般高度<b></b>> <b></b>> <b></b>設定」Microsoft 脅威エキスパート> <b>を参照</b>してください。 一度受け入れられると、ターゲット攻撃通知のメリットを受け取り、90 日間の Experts on Demand の試用版を開始します。 Microsoft 担当者に問い合わせ、完全な Experts on Demand サブスクリプションを取得してください。
 
 <a name="apis"></a>
 
@@ -135,7 +135,7 @@ Defender for Endpoint は、以下を含むさまざまな Microsoft ソリュ�
 - Skype for Business
 
 **[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
-Microsoft 365 Defender では、Defender for Endpoint とさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、アプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応します。
+Microsoft 365 Defender を使用すると、Defender for Endpoint とさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応します。
 
 
 ## <a name="related-topic"></a>関連トピック

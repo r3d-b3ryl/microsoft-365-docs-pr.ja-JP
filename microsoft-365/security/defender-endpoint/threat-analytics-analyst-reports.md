@@ -67,18 +67,18 @@ _脅威分析レポートのアナリスト レポート セクション_
 [軽減策] タブ **を使用** して脅威に対するセキュリティの態勢を評価することもできますが、これらの推奨事項を使用すると、セキュリティ態勢の改善に向けて追加の手順を実行できます。 アナリスト レポートのすべての軽減ガイダンスを注意深く読み、可能な限り適用します。
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>各脅威の検出方法を理解する
-アナリスト レポートでは、Microsoft Defender for Endpoint ウイルス対策およびエンドポイント検出および応答 (EDR) 機能からの検出も提供します。
+アナリスト レポートには、Microsoft Defender for Endpoint ウイルス対策機能とエンドポイント検出および応答 (EDR) 機能も提供されます。
 
 ### <a name="antivirus-detections"></a>ウイルス対策の検出
-これらの検出は、Microsoft Defender ウイルス対策が有効 [になっているデバイスで](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) 使用できます。 これらの検出が Microsoft Defender for Endpoint にオンボードされているデバイスで発生すると、レポート内のグラフを点灯するアラートもトリガーされます。
+これらの検出は、デバイスで有効になっているデバイス[Microsoft Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)使用できます。 これらの検出が Microsoft Defender for Endpoint にオンボードされているデバイスで発生すると、レポート内のグラフを点灯するアラートもトリガーされます。
 
 >[!NOTE]
 >アナリスト レポートには、 **追跡される** 脅威に固有のコンポーネントや動作に加えて、広範囲の脅威を識別できる一般的な検出も一覧表示されます。 これらの一般的な検出は、グラフには反映されません。
 
-### <a name="endpoint-detection-and-response-edr-alerts"></a>エンドポイント検出と応答 (EDR) アラート
-EDR アラートは、Microsoft Defender for Endpoint にオンボードされている [デバイスに対して発生します](onboard-configure.md)。 これらのアラートは、通常、Microsoft Defender for Endpoint センサーによって収集されるセキュリティ信号と、強力な信号源として機能するウイルス対策、ネットワーク保護、改ざん防止などの他のエンドポイント機能に依存します。
+### <a name="endpoint-detection-and-response-edr-alerts"></a>エンドポイントの検出と応答 (EDR) アラート
+EDRは、Microsoft Defender for Endpoint にオンボードされている[デバイスに対して発生します](onboard-configure.md)。 これらのアラートは、通常、Microsoft Defender for Endpoint センサーによって収集されるセキュリティ信号と、強力な信号源として機能するウイルス対策、ネットワーク保護、改ざん防止などの他のエンドポイント機能に依存します。
 
-ウイルス対策の検出の一覧と同様に、一部の EDR アラートは、追跡された脅威に関連付けされない疑わしい動作に一般的にフラグを設定するように設計されています。 このような場合、レポートはアラートを "汎用" として明確に識別し、レポート内のグラフには影響を与えかねない。
+ウイルス対策の検出の一覧と同様EDR一部のアラートは、追跡された脅威に関連付けされない疑わしい動作に一般的にフラグを設定するように設計されています。 このような場合、レポートはアラートを "汎用" として明確に識別し、レポート内のグラフには影響を与えかねない。
 
 ## <a name="find-subtle-threat-artifacts-using-advanced-hunting"></a>高度な検索を使用して、微妙な脅威のアーティファクトを検索する
 検出では追跡された脅威を自動的に特定して停止することができますが、多くの攻撃アクティビティでは、追加の検査が必要な微妙な痕跡が残っています。 攻撃アクティビティの中には、通常の動作を示すものがあります。そのため、動的に検出すると、運用上のノイズや誤検知が発生する可能性があります。

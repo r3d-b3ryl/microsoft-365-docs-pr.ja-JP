@@ -1,7 +1,7 @@
 ---
 title: すべての推奨事項を一覧表示する
 description: 組織に影響を与えるすべてのセキュリティ推奨事項の一覧を取得します。
-keywords: apis、 graph api、 supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, Threat and vulnerability management, threat and vulnerability management api
+keywords: apis、 graph api, supported api, get, security recommendations, Microsoft Defender for Endpoint tvm api, 脅威と脆弱性の管理, 脅威と脆弱性の管理 api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy

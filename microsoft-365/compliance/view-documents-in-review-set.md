@@ -1,5 +1,5 @@
 ---
-title: '[高度な電子情報開示] でレビュー セット内のドキュメントを表示する'
+title: '[ドキュメント] でレビュー セット内のドキュメントを表示Advanced eDiscovery'
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: テキスト、注釈、変換、ネイティブ ビューなど、Advanced eDiscovery でコンテンツを表示する方法を選択します。
+description: テキスト、注釈、変換、ネイティブ Advanced eDiscoveryなど、コンテンツの表示方法を選択します。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: aa8e8e9ea22469ab6d0b223c1bcc9285e2c2ef40
 ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 03/31/2021
 ms.locfileid: "51471070"
 ---
-# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>[高度な電子情報開示] でレビュー セット内のドキュメントを表示する
+# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>[ドキュメント] でレビュー セット内のドキュメントを表示Advanced eDiscovery
 
 Advanced eDiscovery では、それぞれ異なる目的を持つ複数のビューアーを使用してコンテンツを表示します。 さまざまなビューアーを使用するには、レビュー セット内の任意のドキュメントをクリックします。 現在提供されている閲覧者は次のとおりです。
 

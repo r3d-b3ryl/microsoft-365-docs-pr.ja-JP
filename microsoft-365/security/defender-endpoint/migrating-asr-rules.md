@@ -41,7 +41,7 @@ ms.locfileid: "51933783"
 - **適用対象**- すべてのプロセス
 - **プロセス**- N/A
 - **操作**- レジストリの変更
-- **ファイル/フォルダー、レジストリ キー/値、プロセス、サービスの例** - *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs\StartExe,*HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image* File Execution Options \Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\\MonitorProcessExit*\MonitorProcess
+- **ファイル/フォルダー、レジストリ キー/値、プロセス、サービスの例** - *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs\StartExe,*HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image* File Execution Options \Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\\MonitorProcess
 - **攻撃表面の縮小ルール**- ASR ルールは、侵害のインジケーター (IOC) ではなく、攻撃手法をブロックします。 特定のファイル拡張子をブロックしても、デバイスが侵害されるのを防ぐとは限らないため、必ずしも役に立つとは限らない。 攻撃者がペイロードの新しい種類の拡張機能を作成するまで、攻撃を部分的に警告します。
 - **その他の推奨機能**- Microsoft Defender AV を有効にし、クラウド保護と動作分析を強くお勧めします。 ASR ルール "ランサムウェアに対する高度な保護を使用する" などの追加の防止を使用することをお勧めします。 これにより、ランサムウェア攻撃に対するより高いレベルの保護が提供されます。 さらに、これらのレジストリ キーのいくつかは、特定のアラートをトリガーする ASEP 手法など、Microsoft Defender for Endpoint によって監視されます。 さらに、使用するレジストリ キーには、少なくともローカル管理者特権または信頼できるインストーラー特権を変更する必要があります。 最小限の管理アカウントまたは権限を持つ、ロックダウンされた環境の使用をお勧めします。 その他のシステム構成は、より広範なセキュリティ推奨事項の一部である"必須ではない役割に対して SeDebug を無効にする" など、有効にできます。
 
@@ -60,16 +60,16 @@ ms.locfileid: "51933783"
 - **プロセス**- mshta.exe
 - **操作**- プロセスの実行
 - **ファイル/フォルダー、レジストリ キー/** 値、プロセス、サービス - powershell.exe、cmd.exe、regsvr32.exe
-- **攻撃表面の縮小ルール**- ASR ルールには、子プロセスが "削除" されるのを防ぐための特定のmshta.exe。 このコントロールは、Exploit Protection またはアプリケーションコントロールのWindows Defender内です。
-- **その他の推奨機能**- アプリケーションWindows Defenderを有効にして、mshta.exeが完全に実行されるのを防ぐ。 組織で一行のビジネス アプリに対して "mshta.exe" が必要な場合は、特定の Windows Defender Exploit Protection ルールを構成して、mshta.exeプロセスを起動mshta.exe防止します。
+- **攻撃表面の縮小ルール**- ASR ルールには、子プロセスが "削除" されるのを防ぐための特定のmshta.exe。 このコントロールは、Exploit Protection またはアプリケーション コントロールのWindows Defender内です。
+- **その他の推奨機能**- アプリケーションWindows Defenderを有効にして、アプリケーションmshta.exe完全に実行されるのを防ぐ。 組織で業務用アプリの "mshta.exe" が必要な場合は、特定の Windows Defender Exploit Protection ルールを構成して、mshta.exeプロセスの起動を防止します。
 
-### <a name="block-outlook-from-launching-child-processes"></a>Outlook の子プロセスの起動をブロックする
+### <a name="block-outlook-from-launching-child-processes"></a>子Outlookの起動をブロックする
 
-- **適用対象**- Outlook
+- **に適用される**- Outlook
 - **プロセス**- outlook.exe
 - **操作**- プロセスの実行
 - **ファイル/フォルダー、レジストリ キー/値、プロセス、サービス** の例 - powershell.exe
-- 攻撃 **表面** の縮小ルール - ASR ルールには、Office 通信アプリ (Outlook、Skype、Teams) が子プロセスを起動するのを防ぐための組み込みのルールがあります。"Office 通信アプリケーションによる子プロセスの作成をブロックする"、GUID "26190899-1602-49e8-8b27-eb1d0a1ce869"
+- 攻撃 **表面** 縮小ルール - ASR ルールには、Office 通信アプリ (Outlook、Skype、および Teams) が子プロセスを起動するのを防ぐ組み込みのルールがあります。"Office 通信アプリケーションによる子プロセスの作成をブロックする"、GUID "26190899-1602-49e8-8b27-eb1d0a1869"
 - **その他の推奨機能**- PowerShell の攻撃表面を最小限に抑えるために、PowerShell の制約付き言語モードを有効にすることをお勧めします。
 
 
@@ -79,7 +79,7 @@ ms.locfileid: "51933783"
 - **プロセス**- winword.exe、powerpnt.exe、excel.exe
 - **操作**- プロセスの実行
 - **ファイル/フォルダー、レジストリ キー/** 値、プロセス、サービス - powershell.exe、cmd.exe、wscript.exe、mshta.exe、EQNEDT32.EXE、regsrv32.exe
-- 攻撃 **表面の縮小** ルール - ASR ルールには、Office アプリによる子プロセスの起動を防止する組み込みのルールがあります。"すべての Office アプリケーションによる子プロセスの作成をブロックする"、GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A"。
+- 攻撃 **表面** の縮小ルール - ASR ルールには、Office アプリによる子プロセスの起動を防止する組み込みのルールがあります。"すべての Office アプリケーションによる子プロセスの作成をブロックする"、GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A"。
 - **その他の推奨機能**- N/A
     
 ### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>アプリOfficeプロセスの起動と実行可能コンテンツの作成をブロックする
@@ -87,7 +87,7 @@ ms.locfileid: "51933783"
 - **に適用される**- Office
 - **プロセス**- winword.exe、powerpnt.exe、excel.exe
 - **操作**- ファイルの作成
-- ファイル/フォルダー、レジストリ キー **/** 値、プロセス、サービスの例 - C:\Users *\AppData **.exe、C:\ProgramData**.exe、C:\ProgramData**.com、C:\Users* AppData\Local\Temp **.com、C:\Users*\Downloads**.exe、C:\Users *\AppData **.scf、C:\ProgramData**.scf、C:\Users\Public.exe、C:\Users\Desktop\exe*
+- **ファイル/フォルダー、レジストリ キー/値の例** プロセス、サービス - C:\Users ***\AppData.exe、C:\ProgramData**.exe、C:\ProgramData**.com、C:\Users* AppData\Local\Temp **.com、C:\Users*\Downloads**.exe、C:\Users ***\AppData .scf、C:\ProgramData .scf、C**.exe:\Users\Users\Desktop***.exe*
 - **攻撃表面の縮小ルール**- N/A。
 
 ### <a name="block-wscript-from-reading-certain-types-of-files"></a>Wscript が特定の種類のファイルを読み取るのをブロックする
@@ -95,9 +95,9 @@ ms.locfileid: "51933783"
 - **適用対象**- Wscript
 - **プロセス**- wscript.exe
 - **操作**- ファイルの読み取り
-- **ファイル/** フォルダー、レジストリ キー/値、プロセス、サービスの例 -*C:\Users \AppData**.js、C:\Users*\Downloads**.js
+- **ファイル/** フォルダー、レジストリ キー/値、プロセス、サービスの例 - C:\Users *\AppData**.js、C:\Users*\Downloads**.js
 - **攻撃表面の縮小** ルール - 信頼性とパフォーマンスの問題により、ASR ルールは特定のプロセスが特定のスクリプト ファイルの種類を読み取るのを防ぐ機能を持っていません。 これらのシナリオから発生する可能性がある攻撃ベクトルを防止するルールがあります。 ルール名は"JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする" です (GUID "D3E037E1-3EB8-44C8-A917-57927947596D" ") および "難読化される可能性のあるスクリプトの実行をブロックする" (GUID " 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC")。
-- その他の推奨機能 **-** これらのシナリオには特定の攻撃ベクトルを軽減する特定の ASR ルールが含まれていますが、AV は既定でマルウェア対策スキャン インターフェイス (AMSI) を介してスクリプト (PowerShell、Windows スクリプト ホスト、JavaScript、VBScript など) をリアルタイムで検査できる点に言及することが重要です。 詳しくは、マルウェア対策スキャン インターフェイス [(AMSI) をご覧ください](/windows/win32/amsi/antimalware-scan-interface-portal)。
+- その他の推奨機能 **-** これらのシナリオ内には特定の攻撃ベクトルを軽減する特定の ASR ルールが含まれていますが、AV は既定でマルウェア対策スキャン インターフェイス (AMSI) を介してスクリプト (PowerShell、Windows スクリプト ホスト、JavaScript、VBScript など) をリアルタイムで検査できる点に言及することが重要です。 詳しくは、マルウェア対策スキャン インターフェイス [(AMSI) をご覧ください](/windows/win32/amsi/antimalware-scan-interface-portal)。
 
 ### <a name="block-launch-of-child-processes"></a>子プロセスの起動をブロックする
 
@@ -114,8 +114,8 @@ ms.locfileid: "51933783"
 - **適用対象**- CertUtil: 実行可能ファイルのダウンロードまたは作成をブロックする 
 - **プロセス**- certutil.exe
 - **操作**- ファイルの作成
-- **ファイル/フォルダー、レジストリ キー/値、プロセス、サービスの例**- *.exe
-- **攻撃表面の縮小ルール**- ASR ルールは Microsoft Defender ウイルス対策保護の一部なので、これらのシナリオをサポートしません。
+- **ファイル/フォルダー、レジストリ キー/** 値、プロセス、サービスの例 - *.exe
+- **攻撃表面の縮小ルール**- ASR ルールは、セキュリティ保護の一部なので、これらのシナリオをMicrosoft Defender ウイルス対策しません。
 - **その他の推奨機能**- Microsoft Defender AV では、CertUtil が実行可能なコンテンツを作成またはダウンロードできません。
 
 
@@ -125,7 +125,7 @@ ms.locfileid: "51933783"
 - **プロセス**- *
 - **操作**- プロセスの終了
 - **ファイル/** フォルダー、レジストリ キー/値、プロセス、サービス - MsSense.exe、MsMpEng.exe、NisSrv.exe、svchost.exe*、services.exe、csrss.exe、smss.exe、wininit.exe など。
-- **攻撃表面の縮小ルール**- ASR ルールは Windows 10 組み込みのセキュリティ保護で保護されているため、これらのシナリオをサポートしません。
+- **攻撃表面の縮小ルール**- ASR ルールは、組み込みのセキュリティ保護で保護Windows 10シナリオをサポートしません。
 - **その他の推奨** 機能 - ELAM (早期起動マルウェア対策)、PPL (Protection Process Light)、PPL AntiMalware Light、System Guard。
 
 ### <a name="block-specific-launch-process-attempt"></a>特定の起動プロセスの試行をブロックする
@@ -135,9 +135,9 @@ ms.locfileid: "51933783"
 - **操作**- プロセスの実行
 - **ファイル/フォルダー、レジストリ** キー/値、プロセス、サービス - tor.exe、bittorrent.exe、cmd.exe、powershell.exe など
 - **攻撃表面の縮小ルール**- 全体的に、ASR ルールはアプリケーション マネージャーとして機能するように設計されていない。
-- **その他の推奨機能**- ユーザーが特定のプロセスやプログラムを起動しに行かねない場合は、アプリケーションコントロールを使用Windows Defender勧めします。 Microsoft Defender for Endpoint File および Cert インジケーターは、インシデント対応シナリオで使用できます (アプリケーション制御メカニズムとして見るべきではない)。
+- **その他の推奨機能**- ユーザーが特定のプロセスまたはプログラムを起動Windows Defender勧めします。 Microsoft Defender for Endpoint File および Cert インジケーターは、インシデント対応シナリオで使用できます (アプリケーション制御メカニズムとして見るべきではない)。
     
-### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Microsoft Defender ウイルス対策の構成に対する未承認の変更をブロックする
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>構成に対する承認されていないMicrosoft Defender ウイルス対策ブロックする
 
 - **適用対象**- すべてのプロセス
 - **プロセス**- *

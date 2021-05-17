@@ -73,21 +73,21 @@ _脅威分析レポートのアナリスト レポート セクション_
 [軽減策] タブ **を使用** して脅威に対するセキュリティの態勢を評価することもできますが、これらの推奨事項を使用すると、セキュリティ態勢の改善に向けて追加の手順を実行できます。 アナリスト レポートのすべての軽減ガイダンスを注意深く読み、可能な限り適用します。
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>各脅威の検出方法を理解する
-アナリスト レポートでは、Microsoft Defender for Endpoint ウイルス対策およびエンドポイント検出および応答 (EDR) 機能からの検出も提供します。
+アナリスト レポートには、Microsoft Defender for Endpoint ウイルス対策機能とエンドポイント検出および応答 (EDR) 機能も提供されます。
 
 ### <a name="antivirus-detections"></a>ウイルス対策の検出
-これらの検出は、Microsoft Defender ウイルス対策が有効 [になっているデバイスで](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) 使用できます。 これらの検出が Microsoft Defender for Endpoint にオンボードされているデバイスで発生すると、レポート内のグラフを点灯するアラートもトリガーされます。
+これらの検出は、デバイスで有効になっているデバイス[Microsoft Defender ウイルス対策](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)使用できます。 これらの検出が Microsoft Defender for Endpoint にオンボードされているデバイスで発生すると、レポート内のグラフを点灯するアラートもトリガーされます。
 
 >[!NOTE]
 >アナリスト レポートには、 **追跡される** 脅威に固有のコンポーネントや動作に加えて、広範囲の脅威を識別できる一般的な検出も一覧表示されます。 これらの一般的な検出は、グラフには反映されません。
 
-### <a name="endpoint-detection-and-response-edr-alerts"></a>エンドポイント検出と応答 (EDR) アラート
-EDR アラートは、Microsoft Defender for Endpoint にオンボードされている [デバイスに対して発生します](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。 これらのアラートは、通常、Microsoft Defender for Endpoint センサーによって収集されるセキュリティ信号と、強力な信号源として機能するウイルス対策、ネットワーク保護、改ざん防止などの他のエンドポイント機能に依存します。
+### <a name="endpoint-detection-and-response-edr-alerts"></a>エンドポイントの検出と応答 (EDR) アラート
+EDRは、Microsoft Defender for Endpoint にオンボードされている[デバイスに対して発生します](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。 これらのアラートは、通常、Microsoft Defender for Endpoint センサーによって収集されるセキュリティ信号と、強力な信号源として機能するウイルス対策、ネットワーク保護、改ざん防止などの他のエンドポイント機能に依存します。
 
-ウイルス対策の検出の一覧と同様に、一部の EDR アラートは、追跡された脅威に関連付けされない疑わしい動作に一般的にフラグを設定するように設計されています。 このような場合、レポートはアラートを "汎用" として明確に識別し、レポート内のグラフには影響を与えかねない。
+ウイルス対策の検出の一覧と同様EDR一部のアラートは、追跡された脅威に関連付けされない疑わしい動作に一般的にフラグを設定するように設計されています。 このような場合、レポートはアラートを "汎用" として明確に識別し、レポート内のグラフには影響を与えかねない。
 
 ### <a name="email-related-detections-and-mitigations"></a>電子メール関連の検出と軽減策
-Office 365 の Microsoft Defender からの電子メール関連の検出と軽減策は、Microsoft Defender for Endpoint から既に利用可能なエンドポイント データに加えて、アナリスト レポートに含まれています。 
+Microsoft Defender for Office 365 からの電子メール関連の検出と軽減策は、Microsoft Defender for Endpoint から既に利用可能なエンドポイント データに加えて、アナリスト レポートに含まれています。 
 
 メールの試行を防止する情報は、配信前に攻撃が効果的にブロックされた場合や迷惑メール フォルダーに配信された場合でも、アナリスト レポートで取り組む脅威の対象として組織がいたかどうかについての分析情報を提供します。
 
@@ -100,7 +100,7 @@ Office 365 の Microsoft Defender からの電子メール関連の検出と軽�
 
 
 >[!NOTE]
-> 脅威分析は [、Microsoft Defender for Endpoint でも利用できます](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。 ただし、Microsoft 365 Defender の脅威分析が持つ microsoft Defender for Officeエンドポイントと Microsoft Defender の間にはデータ統合はありません。
+> 脅威分析は [、Microsoft Defender for Endpoint でも利用できます](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。 ただし、Microsoft Defender for Office と Defender の脅威分析に含Microsoft 365エンドポイントのデータ統合はありません。
 
 
 ## <a name="related-topics"></a>関連項目

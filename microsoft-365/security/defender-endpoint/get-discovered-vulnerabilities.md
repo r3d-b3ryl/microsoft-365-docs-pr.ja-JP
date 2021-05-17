@@ -1,7 +1,7 @@
 ---
 title: 検出された脆弱性を取得する
 description: 特定のデバイス ID に関連する検出された脆弱性のコレクションを取得します。
-keywords: apis、 graph api, supported apis, get, list, file, information, discovered vulnerabilits, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
+keywords: apis、 graph api、 supported apis, get, list, file, information, discovered vulnerabilits, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy

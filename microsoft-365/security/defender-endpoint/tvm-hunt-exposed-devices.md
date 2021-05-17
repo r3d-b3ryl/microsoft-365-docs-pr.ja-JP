@@ -1,6 +1,6 @@
 ---
 title: 露出したデバイスの追求
-description: セキュリティ管理者、IT 管理者、および SecOps の共同作業に脅威と脆弱性の管理を使用する方法について説明します。
+description: セキュリティ管理者脅威と脆弱性の管理 It 管理者、および SecOps の共同作業を支援する方法について学習します。
 keywords: Microsoft Defender for Endpoint-tvm シナリオ、Microsoft Defender for Endpoint、tvm、tvm シナリオ、脅威& の脆弱性の暴露を減らし、脅威と脆弱性を軽減し、セキュリティ構成を改善し、デバイスの Microsoft Secure Score を増やし、デバイスの脅威 & の脆弱性を高める Microsoft Secure Score、Microsoft Secure Score for Devices、露出スコア、セキュリティコントロール
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934095"
 ---
-# <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>公開されているデバイスを探す - 脅威と脆弱性の管理
+# <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>公開されているデバイスのハント - 脅威と脆弱性の管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,13 +49,13 @@ ms.locfileid: "51934095"
 
 - [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - 悪用コードが一般に公開されているかどうかを含む、一般に公開された脆弱性のナレッジ ベース。
 
-- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - デバイス上のさまざまなセキュリティ構成の状態を示す脅威および脆弱性管理評価イベント。
+- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - デバイス上のさまざまなセキュリティ構成の状態を示す、脆弱性の管理およびセキュリティ評価イベント。
 
 - [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) - Threat & 脆弱性管理でデバイスを評価するために使用されるさまざまなセキュリティ構成のナレッジ ベース。さまざまな標準とベンチマークへのマッピングが含まれています
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>重大度の高いアラートに関係するデバイスを確認する
 
-1. Microsoft Defender **セキュリティ センターの** 左側のナビゲーション ウィンドウから [高度な検索] に移動します。
+1. [高度 **な検索] に** 移動するには、アプリの左側のナビゲーション ウィンドウMicrosoft Defender セキュリティ センター。
 
 2. TVM 高度なハンティング スキーマまで下にスクロールして、列名を理解します。
 
@@ -77,9 +77,9 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 
 ## <a name="related-topics"></a>関連項目
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)
 - [API](next-gen-threat-and-vuln-mgt.md#apis)
-- [脅威と脆弱性管理の役割のデータ アクセスを構成する](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [ユーザー ロールのデータ アクセス脅威と脆弱性の管理構成する](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [高度な追求の概要](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [すべての高度な検索テーブル](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)

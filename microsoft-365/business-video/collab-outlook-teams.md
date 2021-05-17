@@ -1,5 +1,5 @@
 ---
-title: Outlook と Teams を使用した共同作業
+title: ユーザーとユーザーを使用Outlook共同作業Teams
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Outlook と Microsoft Teams を使用して共同作業を行う方法について説明します。
+description: コラボレーションに使用するOutlookとMicrosoft Teamsについて学習します。
 ms.openlocfilehash: dc0eaf1b47796becf62222fb93ccd071cc197a1c
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.locfileid: "51580668"
 ---
 # <a name="use-outlook-and-teams-together"></a>Outlook と Teams を同時に使用する
 
-小規模ビジネスの従業員、パートナー、クライアント、その他のユーザーと通信する場合は、Microsoft 365 で Outlook と Teams を使用します。 Outlook では、電子メール、予定表、連絡先、タスクを見つけ、Teams では会話、ファイル、会議、Microsoft およびサード パーティ製アプリへのクイック アクセスを見つけるでしょう。 ビジネスでそれぞれの使い方の概要を次に示します。
+小規模ビジネスの従業員、パートナー、クライアント、その他のユーザーとコミュニケーションを取る場合は、OutlookとTeamsをMicrosoft 365。 Outlookでは、電子メール、予定表、連絡先、タスクを見つけ、Teams には会話、ファイル、会議、Microsoft およびサード パーティ製アプリへのクイック アクセスがあります。 ビジネスでそれぞれの使い方の概要を次に示します。
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
@@ -45,13 +45,13 @@ ms.locfileid: "51580668"
 - チームとリッチでリアルタイムの会話を行い、クライアントまたはゲストを会話に招待します。
 - プライベート チャットや通話を行い、画面を共有します。
 - 従業員とゲストとの会議をスケジュールし、参加します。
-- 関連付けられた SharePoint サイトまたは OneDrive for Business からファイルを追加または共有します。
-- Planner、Power BI、GitHub など、他のアプリを Teams に追加します。
+- 関連付けられたサイトまたはサイトからファイルをSharePointまたは共有OneDrive for Business。
+- Planner、Power BI、GitHubなど、Teams。
 
-:::image type="content" source="../media/teams-model.png" alt-text="Microsoft Teams のホーム ページのスタイライズされたイメージ。"::: 
+:::image type="content" source="../media/teams-model.png" alt-text="ホーム ページのMicrosoft Teams画像。"::: 
 
 ## <a name="related-articles"></a>関連記事
 
-[Outlook とは](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
+[何がOutlook?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Teams の概要](/MicrosoftTeams/Teams-overview)
+[Teams概要](/MicrosoftTeams/Teams-overview)

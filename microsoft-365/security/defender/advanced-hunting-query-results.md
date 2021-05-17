@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender で高度な検索クエリ結果を処理する
-description: Microsoft 365 Defender での高度な検索によって返されるクエリ結果を利用する
+title: Defender で高度な検索クエリ結果をMicrosoft 365する
+description: Defender の高度な検索によって返されるクエリ結果をMicrosoft 365する
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、カスタム検出、スキーマ、kusto、視覚化、グラフ、フィルター、ドリルダウン
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -122,7 +122,7 @@ AppFileEvents
 ## <a name="export-tables-and-charts"></a>表とグラフのエクスポート
 クエリを実行した後、[エクスポート] **を選択** して、結果をローカル ファイルに保存します。 選択したビューは、結果のエクスポート方法を決定します。
 
-- **テーブル ビュー** - クエリ結果は表形式で Microsoft Excel ブックとしてエクスポートされます。
+- **テーブル ビュー** - クエリ結果が表形式でブックとしてエクスポートMicrosoft Excelされます。
 - **任意のグラフ** - クエリ結果は、レンダリングされたグラフの JPEG イメージとしてエクスポートされます。
 
 ## <a name="drill-down-from-query-results"></a>クエリ結果からドリルダウンする
@@ -155,7 +155,7 @@ AppFileEvents
 フィルターを適用してクエリを変更し、クエリを実行すると、結果がそれに応じて更新されます。
 
 >[!NOTE]
->この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [Microsoft 365 Defender をオンに](m365d-enable.md) し、より多くのデータ ソースを使用して脅威を検出します。 「Advanced [Hunting queries](advanced-hunting-migrate-from-mde.md)from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動できます。
+>この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [Defender を有効Microsoft 365、](m365d-enable.md)より多くのデータ ソースを使用して脅威を探します。 「Advanced Hunting queries from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に[移動できます](advanced-hunting-migrate-from-mde.md)。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)

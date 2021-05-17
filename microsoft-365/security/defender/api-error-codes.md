@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender REST API の一般的なエラー コード
-description: Microsoft 365 Defender REST API の一般的なエラー コードについて説明します。
-keywords: api、エラー、コード、一般的なエラー、Microsoft 365 Defender、API エラー コード
+title: Defender REST API Microsoft 365コードの一般的な説明
+description: Defender REST API エラー コードMicrosoft 365一般的な方法について説明します。
+keywords: api、 error, codes, common error, Microsoft 365 Defender, API エラー コード
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932883"
 ---
-# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Microsoft 365 Defender REST API の一般的なエラー コード
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Defender REST API Microsoft 365コードの一般的な説明
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51932883"
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-エラー コードは、Microsoft 365 Defender API の操作によって返される場合があります。 すべてのエラー応答にエラー メッセージが含まれるので、問題の解決に役立ちます。 テーブル セクションのエラー メッセージ列には、いくつかのサンプル メッセージが表示されます。 実際のメッセージの内容は、応答をトリガーした要因によって異なります。 変数の内容は、表に角かっこで示されます。
+エラー コードは、任意の Defender API 上の操作Microsoft 365返される場合があります。 すべてのエラー応答にエラー メッセージが含まれるので、問題の解決に役立ちます。 テーブル セクションのエラー メッセージ列には、いくつかのサンプル メッセージが表示されます。 実際のメッセージの内容は、応答をトリガーした要因によって異なります。 変数の内容は、表に角かっこで示されます。
 
 ## <a name="error-codes"></a>エラー コード
 
@@ -99,7 +99,7 @@ InternalServerError | 内部サーバー エラー (500) | *注: エラー メ�
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 Defender API の概要](api-overview.md)
+- [Microsoft 365Defender API の概要](api-overview.md)
 - [サポートされている Microsoft 365 Defender API](api-supported.md)
-- [Microsoft 365 Defender API へのアクセス](api-access.md)
+- [Defender API Microsoft 365アクセスする](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)

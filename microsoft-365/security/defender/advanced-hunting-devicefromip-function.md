@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender の高度な検索での DeviceFromIP() 関数
+title: DeviceFromIP() 関数は、Defender の高度なMicrosoft 365します。
 description: DeviceFromIP() 関数を使用して、特定の IP アドレスが割り当てられているデバイスを取得する方法について説明します。
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、device、devicefromIP、function、enrichment
 search.product: eADQiWindows 10XVcnh

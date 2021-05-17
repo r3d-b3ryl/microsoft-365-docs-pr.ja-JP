@@ -33,7 +33,7 @@ ms.locfileid: "51933603"
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-セキュリティ 基準は、セキュリティ専門家と Windows システム管理者の専門家の両方からのガイダンスに従ってセキュリティ機能が構成されていることを確認します。 展開すると、Defender for Endpoint セキュリティ ベースラインは、最適な保護を提供するために Defender for Endpoint セキュリティ コントロールを設定します。
+セキュリティ ベースラインは、セキュリティ専門家とシステム管理者の専門家の両方からのガイダンスに従ってセキュリティ機能がWindowsします。 展開すると、Defender for Endpoint セキュリティ ベースラインは、最適な保護を提供するために Defender for Endpoint セキュリティ コントロールを設定します。
 
 構成プロファイルを使用して Intune でセキュリティ基準がどのように割り当てられているかについて理解するには、この [FAQ を参照してください](https://docs.microsoft.com/intune/security-baselines#q--a)。
 
@@ -41,20 +41,20 @@ ms.locfileid: "51933603"
 - [Intune 管理にデバイスを登録する](configure-machines.md#enroll-devices-to-intune-management)
 - [必要なアクセス許可を持っている必要があります。](configure-machines.md#obtain-required-permissions)
 
-## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Microsoft Defender for Endpoint と Windows Intune のセキュリティ ベースラインを比較する
-Windows Intune のセキュリティ ベースラインには、ブラウザー設定、PowerShell 設定、Microsoft Defender ウイルス対策などの一部のセキュリティ機能の設定など、Windows を実行しているデバイスを安全に構成するために必要な、一連の推奨設定が提供されています。 これに対し、Defender for Endpoint ベースラインには、エンドポイント検出と応答 (EDR) の設定、Windows Intune のセキュリティ ベースラインにある設定など、Defender for Endpoint スタック内のすべてのセキュリティ コントロールを最適化する設定が用意されています。 各ベースラインの詳細については、以下を参照してください。
+## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Microsoft Defender for Endpoint と Intune のセキュリティ ベースラインWindows比較する
+Windows Intune のセキュリティ ベースラインには、ブラウザー設定、PowerShell 設定、Microsoft Defender ウイルス対策 などの一部のセキュリティ機能の設定など、Windows を実行しているデバイスを安全に構成するために必要な、一連の推奨設定が提供されています。 これに対し、Defender for Endpoint ベースラインには、エンドポイント検出と応答 (EDR) の設定、Windows Intune のセキュリティ ベースラインにある設定など、Defender for Endpoint スタック内のすべてのセキュリティ コントロールを最適化する設定が用意されています。 各ベースラインの詳細については、以下を参照してください。
 
-- [Intune の Windows セキュリティ基準の設定](https://docs.microsoft.com/intune/security-baseline-settings-windows)
+- [Windows Intune のセキュリティ基準設定の詳細](https://docs.microsoft.com/intune/security-baseline-settings-windows)
 - [Intune のエンドポイント基準設定用 Microsoft Defender](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
-理想的には、Defender for Endpoint にオンボードされているデバイスは、Windows を最初にセキュリティ保護するための Windows Intune セキュリティ ベースラインと、Defender for Endpoint セキュリティ 基準を上に重ね、Defender for Endpoint セキュリティコントロールを最適に構成するための両方のベースラインを展開します。 リスクと脅威に関する最新のデータを利用し、ベースラインの進化に伴う競合を最小限に抑えるために、リリース後すぐにすべての製品に最新バージョンのベースラインを適用してください。
+理想的には、Defender for Endpoint にオンボードされたデバイスは、Windows を最初にセキュリティで保護するための Windows Intune セキュリティ ベースラインと、Defender for Endpoint セキュリティ コントロールを最適に構成するために上に層化された Defender for Endpoint セキュリティ ベースラインの両方を展開します。 リスクと脅威に関する最新のデータを利用し、ベースラインの進化に伴う競合を最小限に抑えるために、リリース後すぐにすべての製品に最新バージョンのベースラインを適用してください。
 
 >[!NOTE]
 >Defender for Endpoint セキュリティ ベースラインは物理デバイス用に最適化されています。現在、仮想マシン (VM) または VDI エンドポイントでの使用は推奨されていません。 一部の基準設定は、仮想化環境でのリモート 対話型セッションに影響を与える可能性があります。
 
 ## <a name="monitor-compliance-to-the-defender-for-endpoint-security-baseline"></a>Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを監視する
 
-デバイス **構成管理の** セキュリティ [基準](configure-machines.md) カードは、Defender for Endpoint セキュリティ ベースラインが割り当てられている Windows 10 デバイス全体のコンプライアンスの概要を示します。
+デバイス **構成管理の** セキュリティ [](configure-machines.md)基準カードは、Defender for Endpoint セキュリティ ベースラインが割り当てられているWindows 10デバイス全体のコンプライアンスの概要を示します。
 
 ![セキュリティ ベースライン カード](images/secconmgmt_baseline_card.png)<br>
 *Defender for Endpoint セキュリティ ベースラインへの準拠を示すカード*
@@ -73,12 +73,12 @@ Windows Intune のセキュリティ ベースラインには、ブラウザー�
 
 ## <a name="review-and-assign-the-microsoft-defender-for-endpoint-security-baseline"></a>Microsoft Defender for Endpoint セキュリティ ベースラインの確認と割り当て
 
-デバイス構成管理は、Microsoft Defender for Endpoint セキュリティ ベースラインが特別に割り当てられている Windows 10 デバイスの基準準拠のみを監視します。 ベースラインを簡単に確認し、Intune デバイス管理のデバイスに割り当てできます。
+デバイス構成管理は、Microsoft Defender for Endpoint セキュリティ ベースラインWindows 10割り当てられているデバイスの基準準拠のみを監視します。 ベースラインを簡単に確認し、Intune デバイス管理のデバイスに割り当てできます。
 
 1. [ **セキュリティ ベースライン カードのセキュリティ** 基準を構成する] **を選択** して、Intune デバイス管理に移動します。 ベースラインコンプライアンスの同様の概要が表示されます。
 
    >[!TIP]
-   > または、Microsoft Defender ATP ベースラインのすべてのサービス > Intune > デバイス セキュリティ > セキュリティ ベースライン> Microsoft Azure ポータルの Defender for Endpoint セキュリティ ベースライン **に移動することもできます**。
+   > または、[すべてのサービス] > Intune > デバイス セキュリティ > セキュリティ ベースライン > Microsoft Defender ATP ベースラインから Microsoft Azure ポータルの Defender for Endpoint セキュリティ ベースライン **に移動することもできます**。
 
 
 2. 新しいプロファイルを作成します。

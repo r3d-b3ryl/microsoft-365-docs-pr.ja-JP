@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender セキュリティ センターのタイム ゾーン設定
-description: ここに示す情報を使用して、Microsoft Defender セキュリティ センターのタイム ゾーン設定を構成し、ライセンス情報を表示します。
+title: Microsoft Defender セキュリティ センターの設定
+description: ここに示す情報を使用して、タイム ゾーンのMicrosoft Defender セキュリティ センターを構成し、ライセンス情報を表示します。
 keywords: 設定, Microsoft Defender, サイバーセキュリティ脅威インテリジェンス, エンドポイント用 Microsoft Defender, タイム ゾーン, utc, 現地時間, ライセンス
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932633"
 ---
-# <a name="microsoft-defender-security-center-time-zone-settings"></a>Microsoft Defender セキュリティ センターのタイム ゾーン設定
+# <a name="microsoft-defender-security-center-time-zone-settings"></a>Microsoft Defender セキュリティ センターの設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -68,12 +68,12 @@ Microsoft Defender for Endpoint タイム ゾーンは、既定では UTC に設
 3. [ **タイム ゾーン UTC]** またはローカル タイム ゾーン (-7:00 など) を選択します。
 
 ### <a name="regional-settings"></a>地域の設定
-Microsoft Defender for Endpoint に異なる日付形式を適用するには、Microsoft Defender (IE) と Microsoft Edge (Edge) の地域Internet Explorer設定を使用します。 Google Chrome などの別のブラウザーを使用している場合は、必要な手順に従って、そのブラウザーの時刻と日付の設定を変更します。 
+Microsoft Defender for Endpoint に異なる日付形式を適用するには、MICROSOFT Defender (IE) と Internet Explorer (Edge) の地域Microsoft Edge使用します。 Google Chrome などの別のブラウザーを使用している場合は、必要な手順に従って、そのブラウザーの時刻と日付の設定を変更します。 
 
 
 **Internet Explorer (IE) と Microsoft Edge**
 
-IE と Microsoft Edge では、コントロール **パネルの** [時計、言語、地域] オプションで構成された **地域** 設定を使用します。 
+IE とMicrosoft Edgeコントロール パネルの[時計、言語、地域] オプションで構成された地域設定を使用します。 
 
 
 #### <a name="known-issues-with-regional-formats"></a>地域の形式に関する既知の問題

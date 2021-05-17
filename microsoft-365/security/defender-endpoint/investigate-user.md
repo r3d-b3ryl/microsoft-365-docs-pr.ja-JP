@@ -60,7 +60,7 @@ ms.locfileid: "51935067"
 
 ### <a name="user-details"></a>ユーザーの詳細
 
-左側の **[** ユーザーの詳細] ウィンドウには、関連する開いているインシデント、アクティブなアラート、SAM 名、SID、Microsoft Defender for Identity アラート、ユーザーがログオンしているデバイスの数、ユーザーが最初と最後に表示された時間、役割、ログオンの種類など、ユーザーに関する情報が表示されます。 有効にした統合機能に応じて、その他の詳細が表示されます。 たとえば、Skype for business integration を有効にした場合、ポータルからユーザーに連絡できます。 **[Azure ATP アラート**] セクションには、Microsoft Defender for Identity 機能を有効にし、ユーザーに関連するアラートがある場合は、[Microsoft Defender for Identity] ページに移動するリンクが含まれている。 Microsoft Defender for Identity ページには、アラートに関する詳細が表示されます。
+左側の **[** ユーザーの詳細] ウィンドウには、関連する開いているインシデント、アクティブなアラート、SAM 名、SID、Microsoft Defender for Identity アラート、ユーザーがログオンしているデバイスの数、ユーザーが最初と最後に表示された時間、役割、ログオンの種類など、ユーザーに関する情報が表示されます。 有効にした統合機能に応じて、その他の詳細が表示されます。 たとえば、ビジネス統合のSkype有効にした場合は、ポータルからユーザーに連絡できます。 **[Azure ATP アラート**] セクションには、Microsoft Defender for Identity 機能を有効にし、ユーザーに関連するアラートがある場合は、[Microsoft Defender for Identity] ページに移動するリンクが含まれている。 Microsoft Defender for Identity ページには、アラートに関する詳細が表示されます。
 
 >[!NOTE]
 >この機能を使用するには、Microsoft Defender for Identity と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。

@@ -1,8 +1,8 @@
 ---
-title: Power BI へのエンドポイント API 接続用 Microsoft Defender
+title: Microsoft Defender for Endpoint API 接続とエンドポイント API Power BI
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint API の上に Power Business Intelligence (BI) レポートを作成します。
-keywords: apis、サポートされている API、Power BI、レポート
+keywords: apis、サポートされている api、Power BI、レポート
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935043"
 ---
-# <a name="create-custom-reports-using-power-bi"></a>Power BI を使用してカスタム レポートを作成する
+# <a name="create-custom-reports-using-power-bi"></a>ユーザー設定を使用してカスタム レポートをPower BI
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,13 +38,13 @@ ms.locfileid: "51935043"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-このセクションでは、Defender for Endpoint API の上に Power BI レポートを作成する方法について説明します。
+このセクションでは、Defender for Endpoint API の上にPower BIレポートを作成する方法について説明します。
 
 最初の例は、Power BI を Advanced Hunting API に接続する方法を示し、2 番目の例では、マシン アクションやアラートなどの OData API への接続を示しています。
 
-## <a name="connect-power-bi-to-advanced-hunting-api"></a>Power BI を高度なハンティング API に接続する
+## <a name="connect-power-bi-to-advanced-hunting-api"></a>Connect Power BI高度なハンティング API へのアクセス
 
-- Microsoft Power BI を開く
+- Microsoft ファイルを開Power BI
 
 - [データ **の空のクエリ**  >  **の取得] をクリックします。**
 
@@ -107,7 +107,7 @@ ms.locfileid: "51935043"
 
 - 資格情報を入力し、サインインを待つ
 
-- [接続 **] をクリックします。**
+- [次 **Connect**
 
     ![set credentials2 のイメージ](images/power-bi-set-credentials-organizational-cont.png)
 
@@ -115,7 +115,7 @@ ms.locfileid: "51935043"
 
 - このテーブルを複製し、名前を変更し、高度な検索クエリを内部で編集して、必要なデータを取得できます。
 
-## <a name="connect-power-bi-to-odata-apis"></a>Power BI を OData API に接続する
+## <a name="connect-power-bi-to-odata-apis"></a>Connect Power BI OData API へのアクセス
 
 - 上記の例との唯一の違いは、エディター内のクエリです。 
 
@@ -137,11 +137,11 @@ ms.locfileid: "51935043"
 - クエリ フィルターに OData クエリを使用することもできます [。「Using OData Queries」を参照してください。](exposed-apis-odata-samples.md)
 
 
-## <a name="power-bi-dashboard-samples-in-github"></a>GitHub の Power BI ダッシュボードのサンプル
-詳細については、「Power BI レポート テンプレート [」を参照してください](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
+## <a name="power-bi-dashboard-samples-in-github"></a>Power BIダッシュボードのサンプルをGitHub
+詳細については、「レポート テンプレートのPower BI[を参照してください](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
 
 ## <a name="sample-reports"></a>サンプル レポート
-Microsoft Defender for Endpoint Power BI レポートサンプルを表示します。 詳細については、「Browse [code samples 」を参照してください](https://docs.microsoft.com/samples/browse/?products=mdatp)。
+レポート サンプルの Microsoft Defender for Endpoint Power BI表示します。 詳細については、「Browse [code samples 」を参照してください](https://docs.microsoft.com/samples/browse/?products=mdatp)。
 
 
 ## <a name="related-topic"></a>関連トピック

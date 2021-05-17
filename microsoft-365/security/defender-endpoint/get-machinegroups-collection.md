@@ -39,7 +39,7 @@ ms.locfileid: "51932777"
 
 RBAC デバイス グループのコレクションを取得します。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 ユーザーには読み取りアクセス許可が必要です。
 
 ## <a name="http-request"></a>HTTP 要求

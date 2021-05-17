@@ -50,7 +50,7 @@ Defender for Endpoint からのオフボード デバイス。
 [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 >[!Note]
-> この API は、Windows 10 バージョン 1703 以降、または Windows Server 2019 以降でサポートされます。 この API は、MacOS デバイスまたは Linux デバイスではサポートされていません。
+> この API は、Windows 10バージョン 1703 以降、またはサーバー 2019 以降Windowsサポートされています。 この API は、MacOS デバイスまたは Linux デバイスではサポートされていません。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については [、「Use Defender for Endpoint API」を参照してください。](apis-intro.md)

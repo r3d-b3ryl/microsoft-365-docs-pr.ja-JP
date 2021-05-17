@@ -1,6 +1,6 @@
 ---
 title: Microsoft Secure Score の新機能
-description: Microsoft 365 セキュリティ センターの Microsoft Secure Score に加えた新しい変更について説明します。
+description: セキュリティ センターの Microsoft Secure Score に加えた新しい変更Microsoft 365説明します。
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -34,21 +34,21 @@ ms.locfileid: "51933867"
 
 Microsoft Secure Score をセキュリティの姿勢をより良くするために、いくつかの変更を加えた。 今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
 
-Microsoft Secure Score は https://security.microsoft.com/securescore [、Microsoft 365](overview-security-center.md)セキュリティ センターにあります。
+Microsoft Secure Score は、セキュリティ https://security.microsoft.com/securescore センターのMicrosoft 365[にあります](overview-security-center.md)。
     
 ## <a name="february-2021"></a>2021 年 2 月
 
-### <a name="compatibility-with-graph-api"></a>Graph API との互換性
+### <a name="compatibility-with-graph-api"></a>API とのGraph互換性
 
-Graph API を介して配信される Microsoft Secure Score の推奨事項は、Microsoft 365 セキュリティ センターに現在表示されている推奨事項と同じように表示され、重み付けされます。
+Microsoft Secure Score の推奨事項は、Graph API を介して配信され、セキュリティ センターで現在表示されている推奨事項と同じようにMicrosoft 365されます。
 
 ## <a name="january-2021"></a>2021 年 1 月
 
-### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>Microsoft Teams の最初のセキュリティ推奨事項を追加しました
+### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>セキュリティに関する最初の推奨事項を追加Microsoft Teams
 
-Microsoft Teams のお客様は、Secure Score の新しい改善アクションとして「匿名ユーザーによる会議への参加を制限する」と表示されます。
+Microsoft Teamsユーザーは、Secure Score の新しい改善アクションとして「匿名ユーザーの会議への参加を制限する」と表示されます。
 
-## <a name="december-2020"></a>2020年12月
+## <a name="december-2020"></a>2020 年 12 月
 
 ### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に 6 つのアカウント関連の改善アクションを追加しました。
 
@@ -67,7 +67,7 @@ Microsoft Teams のお客様は、Secure Score の新しい改善アクション
 
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に 3 つのサービス関連の改善アクションを追加しました。
 
-- Windows サービスのクォートされていないサービス パスを修正する
+- サービスの引用されていないサービス パスをWindowsする
 - サービスの実行可能パスを共通の保護された場所に変更する
 - Windows レジストリにキャッシュされたパスワードを回避するためにサービス アカウントを変更する
 
@@ -75,11 +75,11 @@ Microsoft Teams のお客様は、Secure Score の新しい改善アクション
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に関連する改善アクションを削除する
 
-- Microsoft Defender SmartScreen Windows Store アプリの Web コンテンツ チェックを警告に設定する
+- ストア Microsoft Defender SmartScreen Windows Web コンテンツ チェックを警告に設定する
 
 ## <a name="august-2020"></a>2020 年 8 月
 
-### <a name="updated-improvement-action-for-azure-active-directory"></a>Azure Active Directory の改善アクションを更新しました
+### <a name="updated-improvement-action-for-azure-active-directory"></a>ユーザーの改善アクションを更新Azure Active Directory
 
 - レガシ認証をブロックするポリシーを有効にする
 
@@ -91,7 +91,7 @@ Microsoft Secure Score の最近のリリースでは、スコアリング モ�
 
 ## <a name="updated-improvement-actions"></a>更新された改善アクション
 
-- Azure Active Directory の改善アクションを追加しました
+- 改善Azure Active Directory追加
 - Microsoft Defender for Identity の改善アクションを追加しました
 - Microsoft Defender for Endpoint [Threat &のセキュリティ](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 推奨事項のサポート
     - TVM によって提供されるリリース済みセキュリティ推奨事項が利用可能にな

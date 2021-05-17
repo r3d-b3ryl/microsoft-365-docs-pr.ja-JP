@@ -1,6 +1,6 @@
 ---
 title: 手順 3. 最初のインシデントのインシデント後レビューを実行する
-description: Defender で最初のインシデントのレビューを実行Microsoft 365します。
+description: Microsoft 365 Defender で最初のインシデントのレビューを実行する方法。
 keywords: インシデント、アラート、調査、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -38,7 +38,7 @@ ms.locfileid: "52297154"
 
 国立標準技術研究所 (NIST) は、攻撃から回復するためにすべての手順が実行された後、組織はインシデントを確認して、そこから学び、セキュリティの態勢やプロセスを学び、改善する必要があります。 インシデント処理のさまざまな側面を評価することが、次のインシデントの準備において重要になります。
 
-Microsoft 365Defender は[、MITRE ATT](https://attack.mitre.org/)および CK Framework に合ったアラートを組織に提供することで、インシデント発生後の&支援できます。 すべての Microsoft Defender ソリューションは、CK の戦術または手法に基&攻撃をラベル付けします。 
+Microsoft 365 Defender は [、MITRE ATT](https://attack.mitre.org/)および CK Framework に合ったアラートを組織に提供することで、インシデント発生後のアクティビティの&できます。 すべての Microsoft Defender ソリューションは、CK の戦術または手法に基&攻撃をラベル付けします。 
 
 この業界フレームワークにアラートをマッピングすると、次の機能を使用できます。
 
@@ -46,7 +46,7 @@ Microsoft 365Defender は[、MITRE ATT](https://attack.mitre.org/)および CK F
 - 敵対者とキャンペーンの属性を決定します。
 - 傾向分析を実行します。
 - 攻撃方法の認識におけるスキルのギャップを特定します。
-- 修復を高速化Power Automate Playbook を作成します。 
+- Power Automate Playbook を作成して、より迅速な修復を実現します。 
 
 インシデント後のレビュー アクティビティによって、セキュリティ構成とセキュリティ チームのプロセスを微調整し、組織の対応機能を強化することもできます。
 

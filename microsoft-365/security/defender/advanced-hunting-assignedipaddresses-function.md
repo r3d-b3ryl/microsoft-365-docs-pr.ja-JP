@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender の高度な狩猟での AssignedIPAddresses() 関数
+title: Defender の高度な検索での AssignedIPAddresses() Microsoft 365
 description: AssignedIPAddresses() 関数を使用してデバイスに割り当てられた最新の IP アドレスを取得する方法について学習する
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、FileProfile、ファイル プロファイル、関数、エンリッチメント
 search.product: eADQiWindows 10XVcnh

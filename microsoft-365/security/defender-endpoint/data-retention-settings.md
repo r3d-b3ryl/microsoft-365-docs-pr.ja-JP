@@ -33,7 +33,7 @@ ms.locfileid: "51471103"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
 
 オンボーディング プロセス中に、ウィザードによって Defender for Endpoint のデータストレージと保持設定が表示されます。 
 
@@ -42,13 +42,13 @@ ms.locfileid: "51471103"
 ## <a name="verify-data-storage-location"></a>データストレージの場所を確認する
 セットアップ フェーズ [中に](production-deployment.md)、データを保存する場所を選択したとします。 
 
-[設定データの保持] に移動すると、データの **場所**  >  **を確認できます**。
+[データの保持] に移動して、データ **設定**  >  **確認できます**。
 
 ## <a name="update-data-retention-settings"></a>データ保持設定の更新
 
 データ保持設定を更新できます。 既定では、保持期間は 180 日です。 
 
-1. ナビゲーション ウィンドウで、[設定データ保持 **]**  >  **を選択します**。
+1. ナビゲーション ウィンドウで、[データ保持]**設定**  >  **選択します**。
 
 2. ドロップダウン リストからデータ保持期間を選択します。
 

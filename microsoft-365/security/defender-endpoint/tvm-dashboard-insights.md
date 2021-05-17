@@ -1,7 +1,7 @@
 ---
 title: ダッシュボードの分析情報 - 脅威と脆弱性の管理
-description: 脅威と脆弱性管理ダッシュボードは、SecOps とセキュリティ管理者がサイバーセキュリティの脅威に対処し、組織のセキュリティの回復力を構築するのに役立ちます。
-keywords: Microsoft Defender for Endpoint-tvm、Microsoft Defender for Endpoint-tvm ダッシュボード、脅威 & の脆弱性管理、脅威と脆弱性の管理、リスクベースの脅威 & の脆弱性管理、セキュリティ構成、Microsoft Secure Score for Devices、露出スコア
+description: この脅威と脆弱性の管理は、SecOps とセキュリティ管理者がサイバーセキュリティの脅威に対処し、組織のセキュリティの回復力を構築するのに役立ちます。
+keywords: Microsoft Defender for Endpoint-tvm, Microsoft Defender for Endpoint-tvm ダッシュボード, Threat & 脆弱性の管理, 脅威と脆弱性の管理, リスクベースの脅威 & 脆弱性の管理, セキュリティ構成, Microsoft Secure Score for Devices, exposure score
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -42,19 +42,19 @@ ms.locfileid: "51934143"
 
 - エンドポイントの脆弱性に関連したリアルタイムのエンドポイント検出と応答（EDR）の分析
 - インシデント調査中の貴重なデバイスの脆弱性コンテキスト
-- Microsoft Intune と Microsoft Endpoint Configuration Manager による組み込みの修復プロセス  
+- 組み込みの修復プロセスは、Microsoft IntuneとMicrosoft Endpoint Configuration Manager  
   
-Microsoft Defender セキュリティ センターの脅威と脆弱性の管理機能を使用すると、次の [機能を使用](https://securitycenter.windows.com/) できます。
+次のコマンドで[脅威と脆弱性の管理機能Microsoft Defender セキュリティ センター](https://securitycenter.windows.com/)使用できます。
 
 - 露出スコアと Microsoft Secure Score for Devices を、セキュリティ上の推奨事項、ソフトウェアの脆弱性、修復アクティビティ、公開されたデバイスと共に表示する
-- EDR インサイトとエンドポイントの脆弱性を関連付け、それらを処理する
+- 分析情報EDRエンドポイントの脆弱性と関連付け、それらを処理する
 - 修復オプションを選択して修復タスクをトリアージおよび追跡する
 - 例外オプションを選択し、アクティブな例外を追跡する
 
 > [!NOTE]
-> 過去 30 日間にアクティブではないデバイスは、組織の脅威と脆弱性管理の露出スコアと Microsoft Secure Score for Devices を反映するデータには考慮されません。
+> 過去 30 日間にアクティブではないデバイスは、組織の 脅威と脆弱性の管理 露出スコアと Microsoft Secure Score for Devices を反映するデータには考慮されません。
 
-脅威と脆弱性管理ダッシュボードの概要については、このビデオをご覧ください。
+このビデオでは、ダッシュボードに表示される機能の概要を脅威と脆弱性の管理してください。
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r1nv]
 
@@ -64,7 +64,7 @@ Microsoft Defender セキュリティ センターの脅威と脆弱性の管理
 
 分野 | 説明
 :---|:---
-**選択したデバイス グループ (#/#)**   | ダッシュボードに表示する脅威と脆弱性の管理データを、デバイス グループ別にフィルター処理します。 フィルターで選択した項目は、脅威と脆弱性の管理ページ全体に適用されます。
+**選択したデバイス グループ (#/#)**   | ダッシュボードに脅威と脆弱性の管理するデータをフィルター処理し、デバイス グループ別にカードをフィルター処理します。 フィルターで選択した項目は、ページ全体に脅威と脆弱性の管理されます。
 [**暴露スコア**](tvm-exposure-score.md)   | 組織のデバイスが脅威や脆弱性にさらされている現在の状態を確認します。 デバイスで検出された弱点、デバイスが侵害される可能性、組織に対するデバイスの価値、デバイスで検出された関連アラートなど、組織の露出スコアに影響を与える要因がいくつかあります。 目標は、組織の露出スコアを下げ、より安全に行う方法です。 スコアを減らすには、セキュリティに関する推奨事項に記載されている関連するセキュリティ構成の問題を修復する必要があります。
 [**デバイス向けの Microsoft セキュア スコア**](tvm-microsoft-secure-score-devices.md) | 組織のオペレーティング システム、アプリケーション、ネットワーク、アカウント、およびセキュリティ制御のセキュリティ体制を参照してください。 目標は、関連するセキュリティ構成の問題を修復して、デバイスのスコアを上げです。 バーを選択すると、[セキュリティの推奨事項] **ページに移動** します。
 **デバイスの露出の分布** | 露出レベルに基づいて公開されるデバイスの数を確認します。 ドーナツ グラフのセクションを選択して、[デバイス] リストページに移動し、影響を受けるデバイス名、露出レベル、リスク レベル、その他の詳細 (ドメイン、オペレーティング システム プラットフォーム、正常性状態、最後に表示された状態、タグなど) を表示します。
@@ -78,7 +78,7 @@ Microsoft Defender セキュリティ センターの脅威と脆弱性の管理
 
 ## <a name="related-topics"></a>関連項目
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [暴露スコア](tvm-exposure-score.md)
 - [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

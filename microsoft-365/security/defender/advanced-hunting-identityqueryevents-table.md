@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの IdentityQueryEvents テーブル
 description: 高度なハンティング スキーマの IdentityQueryEvents テーブルの Active Directory クエリ イベントについて説明します。
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、IdentityQueryEvents、Azure AD、Active Directory、Microsoft Defender for Identity、IDENTITY、LDAP クエリ
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、IdentityQueryEvents、Azure AD、Active Directory、Microsoft Defender for Identity、IDENTITY、LDAP クエリ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

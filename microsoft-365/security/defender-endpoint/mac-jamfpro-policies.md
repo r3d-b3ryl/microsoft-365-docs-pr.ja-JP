@@ -1,6 +1,6 @@
 ---
-title: Jamf Pro の macOS ポリシーで Microsoft Defender for Endpoint をセットアップする
-description: Jamf Pro の macOS ポリシーで Microsoft Defender for Endpoint をセットアップする方法について説明します。
+title: Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
+description: Jamf サーバーで macOS ポリシーで Microsoft Defender for Endpoint をセットアップするPro
 keywords: ポリシー、microsoft、Defender、Microsoft Defender for Endpoint、Mac、インストール、展開、アンインストール、intune、jamfpro、macos、catalina、mojave、high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934683"
 ---
-# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf Pro の macOS ポリシーで Microsoft Defender for Endpoint をセットアップする
+# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,13 +34,13 @@ ms.locfileid: "51934683"
 
 - [Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 
-このページでは、Jamf Pro で macOS ポリシーを設定するために必要な手順について説明します。
+このページでは、Jamf ポリシーで macOS ポリシーをセットアップするために必要な手順をPro。
 
 次の手順を実行する必要があります。
 
 1. [Microsoft Defender for Endpoint オンボーディング パッケージの取得](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
 
-2. [オンボーディング パッケージを使用して Jamf Pro で構成プロファイルを作成する](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
+2. [オンボード パッケージを使用して Jamf Pro構成プロファイルを作成する](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 
 3. [エンドポイントの Microsoft Defender の設定を構成する](#step-3-configure-microsoft-defender-for-endpoint-settings)
 
@@ -63,11 +63,11 @@ ms.locfileid: "51934683"
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>手順 1: Microsoft Defender for Endpoint オンボーディング パッケージを取得する
 
-1. [Microsoft Defender セキュリティ センターで、[](https://securitycenter.microsoft.com )オンボーディングの **設定] >移動します**。 
+1. [[Microsoft Defender セキュリティ センター]](https://securitycenter.microsoft.com )で、[オンボーディング]**設定 >移動します**。 
 
-2. 展開方法として、オペレーティング システムとして macOS、モバイル デバイス管理 / Microsoft Intune を選択します。
+2. オペレーティング システムとして macOS を、展開方法として [モバイル デバイスMicrosoft Intuneを選択します。
 
-    ![Microsoft Defender セキュリティ センターのイメージ](images/onboarding-macos.png)
+    ![画像のMicrosoft Defender セキュリティ センター](images/onboarding-macos.png)
 
 3. [ **オンボード パッケージのダウンロード] (WindowsDefenderATPOnboardingPackage.zip)** を選択します。
 
@@ -76,31 +76,31 @@ ms.locfileid: "51934683"
 5. ファイルを好みの場所にコピーします。 例: `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`。
 
 
-## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>手順 2: オンボード パッケージを使用して Jamf Pro で構成プロファイルを作成する
+## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>手順 2: オンボード パッケージを使用して Jamf Pro構成プロファイルを作成する
 
 1. 前のセクション `WindowsDefenderATPOnboarding.plist` からファイルを探します。
 
    ![WindowsDefenderATPOnboarding ファイルのイメージ](images/plist-onboarding-file.png)
 
  
-2. Jamf Pro ダッシュボードで、[新規] を **選択します**。
+2. Jamf Proで、[新規] を **選択します**。
 
-    ![新しい Jamf Pro ダッシュボードの作成イメージ](images/jamf-pro-configure-profile.png)
+    ![新しい Jamf ダッシュボードを作成Pro画像](images/jamf-pro-configure-profile.png)
 
 3. 次の詳細を入力します。
 
    **全般**
-   - 名前: macOS の MDATP オンボーディング
-   - 説明: mDATP EDR オンボーディング for macOS
+   - 名前: macOS MDATPオンボーディング
+   - 説明: macOS MDATP EDRオンボーディングの詳細
    - カテゴリ: なし
    - 配布方法: 自動的にインストールする
    - レベル: コンピューター レベル
 
-4. [**アプリケーションの設定] &[構成] を****選択します**。
+4. [**アプリケーション の設定&カスタム 設定** 構成] を **選択します**。
 
     ![アプリの構成とカスタム設定のイメージ](images/jamfpro-mac-profile.png)
 
-5. [ファイル **のアップロード (PLIST ファイル) を選択し、[基本設定ドメイン]** **に次を** 入力します `com.microsoft.wdav.atp` 。 
+5. **[アップロードファイル (PLIST ファイル) を選択し、[基本設定ドメイン]** **に次を** 入力します `com.microsoft.wdav.atp` 。 
 
     ![jamfpro plist アップロード ファイルのイメージ](images/jamfpro-plist-upload.png)
 
@@ -110,7 +110,7 @@ ms.locfileid: "51934683"
 
     ![オンボード ファイルのイメージ](images/jamfpro-plist-file-onboard.png)
 
-8. [アップロード **] を選択します**。 
+8. [アップロード]**を選択します**。 
 
     ![plist ファイルのアップロードのイメージ](images/jamfpro-upload-plist.png)
 
@@ -131,7 +131,7 @@ ms.locfileid: "51934683"
 
     ![選択したターゲット コンピューターのイメージ](images/jamfpro-target-selected.png)
 
-12. [**完了**] を選択します。
+12. **[完了]** を選択します。
 
     ![ターゲット グループ コンピューターのイメージ](images/jamfpro-target-group.png)
 
@@ -271,31 +271,31 @@ ms.locfileid: "51934683"
 2. ファイルをとして保存します `MDATP_MDAV_configuration_settings.plist` 。
 
 
-3.  Jamf Pro ダッシュボードで、[全般] を **選択します**。
+3.  Jamf のダッシュボードでPro [全般] を **選択します**。
 
-    ![新しい Jamf Pro ダッシュボードのイメージ](images/644e0f3af40c29e80ca1443535b2fe32.png)
+    ![新しい Jamf ダッシュボードPro](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
 4. 次の詳細を入力します。
 
     **全般**
     
-    - 名前: MDATP MDAV 構成設定
+    - 名前: MDAV MDATP設定
     - 説明:\<blank\>
     - カテゴリ: なし (既定)
     - 配布方法: 自動インストール(既定)
     - Level: Computer Level(default)
 
-    ![MDATP MDAV 構成設定のイメージ](images/3160906404bc5a2edf84d1d015894e3b.png)
+    ![MDAV 構成MDATPのイメージ](images/3160906404bc5a2edf84d1d015894e3b.png)
 
-5. [**アプリケーションの設定] &[構成] を****選択します**。
+5. [**アプリケーション の設定&カスタム 設定** 構成] を **選択します**。
 
     ![アプリとカスタム設定のイメージ](images/e1cc1e48ec9d5d688087b4d771e668d2.png)
 
-6. [ファイル **のアップロード] (PLIST ファイル) を選択します**。
+6. [**ファイルアップロード (PLIST ファイル) を選択します**。
 
     ![構成設定 plist ファイルのイメージ](images/6f85269276b2278eca4bce84f935f87b.png)
 
-7. [ **基本設定ドメイン] で、「PLIST** `com.microsoft.wdav` ファイルのアップロード  **」と入力し、[アップロード] を選択します**。
+7. [**基本設定ドメイン] で** `com.microsoft.wdav` 、「PLIST ファイル」と入力アップロード **選択します**。
 
     ![構成設定の基本設定ドメインのイメージ](images/db15f147dd959e872a044184711d7d46.png)
 
@@ -307,7 +307,7 @@ ms.locfileid: "51934683"
 
     ![mdatpmdav 構成設定のイメージ](images/98acea3750113b8dbab334296e833003.png)
 
-10. [アップロード **] を選択します**。
+10. [アップロード]**を選択します**。
 
     ![構成設定のアップロードのイメージ](images/0adb21c13206861ba9b30a879ade93d3.png)
 
@@ -340,7 +340,7 @@ ms.locfileid: "51934683"
 
     ![構成設定の保存のイメージの追加](images/6f093e42856753a3955cab7ee14f12d9.png)
 
-16. [**完了**] を選択します。 新しい構成プロファイルが **表示されます**。
+16. **[完了]** を選択します。 新しい構成プロファイルが **表示されます**。
 
     ![構成設定の構成プロファイル イメージのイメージ](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
@@ -349,12 +349,12 @@ ms.locfileid: "51934683"
 
 これらの手順は、macOS 10.15 (Catalina) 以降に適用できます。
 
-1. Jamf Pro ダッシュボードで、[コンピューター] 、[ **構成** プロファイル **] の順に選択します**。
+1. Jamf Proで、[コンピューター] 、[**構成** プロファイル]**の順に選択します**。
 
 2. [ **新規] を** クリックし、[オプション] に次の詳細を **入力します**。
     
     - タブ **全般**: 
-        - **名前**: MDATP MDAV 通知の設定
+        - **名前**: MDAV MDATP設定
         - **説明**: macOS 10.15 (Catalina) 以降
         - **カテゴリ**: なし *(既定)*
         - **配布方法**: 自動的にインストール *する (既定)*
@@ -373,7 +373,7 @@ ms.locfileid: "51934683"
 
         ![構成設定 mdatpmdav 通知トレイのイメージ](images/7f9138053dbcbf928e5182ee7b295ebe.png)
 
-    - [タブ **通知]** の [ **もう 1** 回追加] をクリックし、[新しい通知の設定 **] まで下にスクロールします。**
+    - Tab **Notifications**, Click **Add more time,** scroll down to **new Notifications** 設定
         - **バンドル ID**: `com.microsoft.autoupdate2`
         - 残りの設定を上記と同じ値に構成する
 
@@ -393,7 +393,7 @@ ms.locfileid: "51934683"
     
     ![構成設定のイメージの保存の追加](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
-6. [**完了**] を選択します。 新しい構成プロファイルが **表示されます**。
+6. **[完了]** を選択します。 新しい構成プロファイルが **表示されます**。
     ![構成設定完了 img のイメージ](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
 ## <a name="step-5-configure-microsoft-autoupdate-mau"></a>手順 5: Microsoft AutoUpdate (MAU) を構成する
@@ -421,7 +421,7 @@ ms.locfileid: "51934683"
 
 2. として保存します `MDATP_MDAV_MAU_settings.plist` 。
 
-3. Jamf Pro ダッシュボードで、[全般] を **選択します**。 
+3. Jamf のダッシュボードでPro [全般] を **選択します**。 
 
     ![構成設定の一般的なイメージのイメージ](images/eaba2a23dd34f73bf59e826217ba6f15.png)
 
@@ -429,21 +429,21 @@ ms.locfileid: "51934683"
 
     **全般** 
     
-    - 名前: MDATP MDAV MAU の設定
-    - 説明: MacOS 用 MDATP の Microsoft AutoUpdate 設定
+    - Name: MDATP MDAV MAU の設定
+    - 説明: macOS 用の Microsoft AutoUpdate MDATP設定
     - カテゴリ: なし (既定)
     - 配布方法: 自動インストール(既定)
     - Level: Computer Level(default)
 
-5. [**アプリケーションの設定] &[構成] を****選択します**。
+5. [**アプリケーション の設定&カスタム 設定** 構成] を **選択します**。
 
     ![構成設定アプリとカスタム設定のイメージ](images/1f72e9c15eaafcabf1504397e99be311.png)
 
-6. [ファイル **のアップロード] (PLIST ファイル) を選択します**。
+6. [**ファイルアップロード (PLIST ファイル) を選択します**。
 
     ![構成設定 plist のイメージ](images/1213872db5833aa8be535da57653219f.png)  
 
-7. [基本 **設定ドメイン]** に「:」 `com.microsoft.autoupdate2` と入力し **、[PLIST ファイルのアップロード] を選択します**。
+7. [**基本設定ドメイン]** に次 `com.microsoft.autoupdate2` を入力し、[PLIST **ファイルアップロードを選択します**。
 
     ![構成設定のプリフェッチ ドメインのイメージ](images/1213872db5833aa8be535da57653219f.png)
 
@@ -455,7 +455,7 @@ ms.locfileid: "51934683"
 
     ![構成設定 mdatpmdavmau 設定のイメージ](images/a26bd4967cd54bb113a2c8d32894c3de.png)
 
-10. [アップロード **] を選択します**。
+10. [アップロード]**を選択します**。
     ![構成設定 uplimage のイメージ](images/4239ca0528efb0734e4ca0b490bfb22d.png)
 
     ![構成設定 uplimg のイメージ](images/4ec20e72c8aed9a4c16912e01692436a.png)
@@ -476,13 +476,13 @@ ms.locfileid: "51934683"
 
     ![構成設定 addimg3 のイメージ](images/321ba245f14743c1d5d51c15e99deecc.png)
 
-14. [**完了**] を選択します。
+14. **[完了]** を選択します。
     
     ![構成設定 doneimage のイメージ](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
 
 ## <a name="step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint"></a>手順 6: エンドポイント用 Microsoft Defender へのフル ディスク アクセスを許可する
 
-1. Jamf Pro ダッシュボードで、[構成プロファイル **] を選択します**。
+1. Jamf Proダッシュボードで、[**構成プロファイル] を選択します**。
 
     ![構成設定構成プロファイルのイメージ](images/264493cd01e62c7085659d6fdc26dc91.png)
 
@@ -491,7 +491,7 @@ ms.locfileid: "51934683"
 3. 次の詳細を入力します。
 
     **全般** 
-    - 名前: MDATP MDAV - EDR および AV へのフル ディスク アクセスを許可する
+    - 名前: MDATP MDAV - ディスクと AV へのフル ディスク アクセスEDR付与する
     - 説明: macOS Catalina 以降では、新しいプライバシー設定ポリシーコントロール
     - カテゴリ: なし
     - 配布方法: 自動的にインストールする
@@ -563,13 +563,13 @@ ms.locfileid: "51934683"
 
 16. **[保存]** を選択します。 
     
-17. [**完了**] を選択します。
+17. **[完了]** を選択します。
     
     ![構成設定 donimg のイメージ](images/809cef630281b64b8f07f20913b0039b.png)
     
     ![構成設定 donimg2 のイメージ](images/6c8b406ee224335a8c65d06953dc756e.png)
 
-または、「Jamf Pro を使用したカスタム構成プロファイルの展開」の説明に従って [、fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) をダウンロードして JAMF 構成プロファイルに [アップロードできます|方法 2: Jamf Pro に構成プロファイルをアップロードします](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
+または、「Jamf を使用したカスタム構成プロファイルの展開」の説明に従って[、fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)をダウンロードして JAMF 構成プロファイル[にアップロードPro|方法 2: アップロードプロファイルを Jamf ファイルにPro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
 ## <a name="step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint"></a>手順 7: Microsoft Defender for Endpoint のカーネル拡張機能を承認する
 
@@ -584,8 +584,8 @@ ms.locfileid: "51934683"
 
     **全般** 
     
-    - 名前: MDATP MDAV カーネル拡張機能
-    - 説明: MDATP カーネル拡張機能 (kext)
+    - Name: MDATP MDAV カーネル拡張機能
+    - 説明: MDATPカーネル拡張機能 (kext)
     - カテゴリ: なし
     - 配布方法: 自動的にインストールする
     - レベル: コンピューター レベル
@@ -620,11 +620,11 @@ ms.locfileid: "51934683"
 
     ![構成設定の saveimag のイメージ](images/0add8019b85a453b47fa5c402c72761b.png)
 
-10. [**完了**] を選択します。
+10. **[完了]** を選択します。
 
     ![doneimag の構成設定のイメージ](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
-または、「Jamf Pro を使用したカスタム構成プロファイルの展開」の説明に従って [、kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) をダウンロードして JAMF 構成プロファイルにアップロード [できます|方法 2: Jamf Pro に構成プロファイルをアップロードします](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
+または、「Jamf を使用したカスタム構成プロファイルの展開」の説明に従って[、kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig)をダウンロードして JAMF 構成プロファイルに[アップロードPro|方法 2: アップロードプロファイルを Jamf ファイルにPro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
 ## <a name="step-8-approve-system-extensions-for-microsoft-defender-for-endpoint"></a>手順 8: エンドポイント用 Microsoft Defender のシステム拡張機能を承認する
 
@@ -636,8 +636,8 @@ ms.locfileid: "51934683"
 
     **全般**
     
-    - 名前: MDATP MDAV システム拡張機能
-    - 説明: MDATP システム拡張機能
+    - 名前: MDAV MDATP拡張機能
+    - 説明: MDATP拡張機能
     - カテゴリ: なし
     - 配布方法: 自動的にインストールする
     - レベル: コンピューター レベル
@@ -675,22 +675,22 @@ ms.locfileid: "51934683"
 
    ![構成設定 sysext スコープのイメージ](images/sysext-scope.png)
 
-10. [**完了**] を選択します。
+10. **[完了]** を選択します。
 
     ![構成設定 sysext-final のイメージ](images/sysext-final.png)
 
 ## <a name="step-9-configure-network-extension"></a>手順 9: ネットワーク拡張機能を構成する
 
-エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報をポータルMicrosoft Defender セキュリティ センターします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
 これらの手順は、macOS 10.15 (Catalina) 以降に適用できます。
 
-1. Jamf Pro ダッシュボードで、[コンピューター] 、[ **構成** プロファイル **] の順に選択します**。
+1. Jamf Proで、[コンピューター] 、[**構成** プロファイル]**の順に選択します**。
 
 2. [ **新規] を** クリックし、[オプション] に次の詳細を **入力します**。
 
     - タブ **全般**: 
-        - **名前**: Microsoft Defender ATP ネットワーク拡張機能
+        - **名前**: Microsoft Defender ATPネットワーク拡張機能
         - **説明**: macOS 10.15 (Catalina) 以降
         - **カテゴリ**: なし *(既定)*
         - **配布方法**: 自動的にインストール *する (既定)*
@@ -725,11 +725,11 @@ ms.locfileid: "51934683"
 
     ![構成設定のイメージ savimg netextscop](images/netext-scope.png)
 
-8. [**完了**] を選択します。
+8. **[完了]** を選択します。
 
     ![構成設定 netextfinal のイメージ](images/netext-final.png)
 
-または、「Jamf Pro を使用したカスタム構成プロファイルの展開」の説明に従って [、netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) をダウンロードして JAMF 構成プロファイル [にアップロードできます|方法 2: Jamf Pro に構成プロファイルをアップロードします](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
+または、「Jamf を使用したカスタム構成プロファイルの展開」の説明に従って[、netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)をダウンロードして JAMF 構成プロファイル[にアップロードPro|方法 2: アップロードプロファイルを Jamf ファイルにPro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
 
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>手順 10: macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする
@@ -746,7 +746,7 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
 
     ![エクスプローラー 1 wdavmdmpkg のイメージ](images/fb2220fed3a530f4b3ef36f600da0c27.png)
 
-3. Jamf Pro ダッシュボードを開きます。
+3. Jamf ダッシュボードをProします。
 
     ![構成設定 jamfpro のイメージ](images/990742cd9a15ca9fdd37c9f695d1b9f4.png)
 
@@ -770,7 +770,7 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
     
     ![コンピューター画面のスクリーンショット 説明が自動的に生成される](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
-7. [**開く**]を選択します。 [表示名 **] を** **[Microsoft Defender Advanced Threat Protection] および [Microsoft Defender ウイルス対策] に設定します**。
+7. [**開く**]を選択します。 [表示名 **] を [** 表示名]**にMicrosoft Defender Advanced Threat ProtectionおよびMicrosoft Defender ウイルス対策。**
 
     **マニフェスト ファイル** は必須ではありません。 Microsoft Defender for Endpoint はマニフェスト ファイルなしで動作します。
     
@@ -780,7 +780,7 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
     
      ![[構成設定の制限] タブのイメージ](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
-8. **[保存]** を選択します。 パッケージは Jamf Pro にアップロードされます。 
+8. **[保存]** を選択します。 パッケージは Jamf ファイルにアップロードPro。 
 
    ![構成設定パック upl jamf pro のイメージ](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -814,9 +814,9 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
  
     ![構成設定パック構成のイメージ](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
-15. [Microsoft **Defender Advanced Threat** Protection] と [Microsoft Defender ウイルス対策] の横にある **[追加] ボタンを選択します**。
+15. [追加]**ボタンの** 横にある [追加] **Microsoft Defender Advanced Threat ProtectionをMicrosoft Defender ウイルス対策。**
 
-    ![構成設定 MDATP と MDA の追加のイメージ](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
+    ![MDA の追加MDATP設定のイメージ](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
 16. **[保存]** を選択します。
 
@@ -842,7 +842,7 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
     
     ![構成設定セルフサービスのイメージ](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
 
-19. [**完了**] を選択します。 
+19. **[完了]** を選択します。 
 
     ![構成設定 do1img のイメージ](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 

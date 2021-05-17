@@ -32,7 +32,7 @@ ms.locfileid: "51935163"
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft Endpoint Configuration Manager current branch
+- Microsoft Endpoint Configuration Manager現在のブランチ
 - System Center 2012 R2 構成マネージャー
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
@@ -43,7 +43,7 @@ ms.locfileid: "51935163"
 
 #### <a name="configuration-manager-version-1910-and-prior"></a>Configuration Manager バージョン 1910 以前
 
-- Windows 10 を実行しているクライアント コンピューター 
+- クライアント を実行しているWindows 10 
 
 #### <a name="configuration-manager-version-2002-and-later"></a>Configuration Manager バージョン 2002 以降
 
@@ -53,42 +53,42 @@ Configuration Manager バージョン 2002 から、次のオペレーティン�
 - Windows 10
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Server 2016 バージョン 1803 以降
+- Windows Server 2016バージョン 1803 以降
 - Windows Server 2019
 
 >[!NOTE]
->R2 Windows Server 2012、Windows Server 2016、および Windows Server 2019 をオンボードする方法の詳細については、「オンボード Windows サーバー」 [を参照してください](configure-server-endpoints.md)。
+>R2、Windows Server 2012、Windows Server 2016、および Windows Server 2019 をオンボードする方法の詳細については、「オンボード Windows サーバー」を[参照してください](configure-server-endpoints.md)。
 
 
 
-### <a name="onboard-devices-using-system-center-configuration-manager"></a>System Center Configuration Manager を使用したオンボード デバイス
+### <a name="onboard-devices-using-system-center-configuration-manager"></a>デバイスを使用したオンボード System Center Configuration Manager
 
 
 [![さまざまな展開パスを示す PDF のイメージ](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
 
-MICROSOFT Defender for [](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) Endpoint の展開のさまざまなパスを確認するには[、PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)または Visio を参照してください。 
+[MICROSOFT](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) Defender for Endpoint[の展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)Visioパスを確認するには、PDF またはドキュメントを参照してください。 
 
 
 
-1. サービス オンボーディング ウィザードからダウンロードした Configuration Manager 構成 *パッケージ*.zip ファイル (WindowsDefenderATPOnboardingPackage.zip) を開きます。 Microsoft Defender セキュリティ センターからパッケージ [を取得できます](https://securitycenter.windows.com/)。
+1. サービス オンボーディング ウィザードからダウンロード *.zipファイル*(WindowsDefenderATPOnboardingPackage.zip) の Configuration Manager 構成パッケージを開きます。 パッケージは次の方法で取得[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
 
-    1. ナビゲーション ウィンドウで、[設定オンボーディング]  >  **を選択します**。
+    1. ナビゲーション ウィンドウで、[オンボーディング]**設定**  >  **選択します**。
     
-    1. オペレーティング システムとして [Windows 10] を選択します。
+    1. オペレーティング システムWindows 10を選択します。
 
-    1. [展開方法 **] フィールドで****、[System Center Configuration Manager 2012/2012 R2/1511/1602] を選択します**。
+    1. [展開方法 **] フィールド** で、[System Center Configuration Manager **2012/2012 R2/1511/1602] を選択します**。
     
-    1. [ **パッケージのダウンロード]** を選択し、.zip ファイルを保存します。
+    1. [ **パッケージのダウンロード]** を選択し、ファイルを.zipします。
 
-2. .zip ファイルの内容を、パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に展開します。 *WindowsDefenderATPOnboardingScript.cmd という名前のファイルが必要です*。
+2. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 *WindowsDefenderATPOnboardingScript.cmd という名前のファイルが必要です*。
 
-3. 「System [Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) のパッケージとプログラム」の記事の手順に従ってパッケージを展開します。
+3. [2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))の「パッケージとプログラム」の記事の手順に従ってSystem Centerパッケージを展開します。
 
     a. パッケージを展開する定義済みのデバイス コレクションを選択します。
 
 > [!NOTE]
-> Defender for Endpoint は、アウトオブボックス エクスペリエンス [(OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) フェーズ中のオンボーディングをサポートしない。 Windows のインストールまたはアップグレードを実行した後、ユーザーが OOBE を完了してください。
+> Defender for Endpoint は、アウトオブボックス エクスペリエンス [(OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) フェーズ中のオンボーディングをサポートしない。 インストールまたはアップグレードの実行後にユーザーが OOBE をWindows確認します。
 
 >[!TIP]
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint デバイスで検出テストを実行 [する」を参照してください](run-detection-test.md)。
@@ -98,11 +98,11 @@ MICROSOFT Defender for [](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
 > 
 > この動作は、"OnboardingState" レジストリ値 (タイプ REG_DWORD) が 1 の場合に検出ルールチェックを作成することで実現できます。
 > このレジストリ値は、"HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status" の下にあります。
-詳細については [、「Configure Detection Methods in System Center 2012 R2 Configuration Manager」を参照してください](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)。
+詳細については[、「Configure Detection Methods in System Center 2012 R2 Configuration Manager」を参照してください](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)。
 
 ### <a name="configure-sample-collection-settings"></a>サンプル コレクション設定の構成
 
-デバイスごとに構成値を設定して、Microsoft Defender Security Center を介して詳細分析用のファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかを示します。
+デバイスごとに構成値を設定して、Microsoft Defender セキュリティ センター から詳細分析用にファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかを示します。
 
 >[!NOTE]
 >これらの構成設定は、通常、Configuration Manager を介して行われます。 
@@ -127,7 +127,7 @@ Value: 0 or 1
 
 レジストリ キーが存在しない場合の既定値は 1 です。
 
-System Center Configuration Manager コンプライアンスの詳細については、「System Center [2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))のコンプライアンス設定の概要」を参照してください。
+コンプライアンスの詳細については、「System Center Configuration Manager [System Center 2012 R2](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))Configuration Manager のコンプライアンス設定の概要」を参照してください。
 
 
 ## <a name="other-recommended-configuration-settings"></a>その他の推奨構成設定
@@ -173,25 +173,25 @@ System Center Configuration Manager コンプライアンスの詳細につい�
 > [!NOTE]
 > オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。
 
-### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Microsoft Endpoint Manager カレント ブランチを使用するオフボード デバイス
+### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>現在のブランチを使用Microsoft エンドポイント マネージャーオフボード デバイス
 
-Microsoft Endpoint Manager カレント ブランチを使用する場合は、「 [オフボード構成ファイルを作成する」を参照してください](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
+現在のブランチでMicrosoft エンドポイント マネージャー場合は、「[オフボード構成ファイルを作成する」を参照してください](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>System Center 2012 R2 Configuration Manager を使用するオフボード デバイス
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>2012 R2 Configuration Manager System Centerを使用するオフボード デバイス
 
-1. Microsoft Defender セキュリティ センターからオフボード パッケージ [を取得します](https://securitycenter.windows.com/)。
+1. 次の方法でオフボード[パッケージを取得Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
 
-    1. ナビゲーション ウィンドウで、[設定] [**オフボード]**  >   **を選択します**。
+    1. ナビゲーション ウィンドウで、[オフボーディング]**設定**  >   **選択します**。
 
-    1. オペレーティング システムとして [Windows 10] を選択します。
+    1. オペレーティング システムWindows 10を選択します。
 
-    1. [展開方法 **] フィールドで****、[System Center Configuration Manager 2012/2012 R2/1511/1602] を選択します**。
+    1. [展開方法 **] フィールド** で、[System Center Configuration Manager **2012/2012 R2/1511/1602] を選択します**。
     
-    1. [ **パッケージのダウンロード]** を選択し、.zip ファイルを保存します。
+    1. [ **パッケージのダウンロード]** を選択し、ファイルを.zipします。
 
-2. .zip ファイルの内容を、パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に展開します。 *-MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
+2. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 *-MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
 
-3. 「System [Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) のパッケージとプログラム」の記事の手順に従ってパッケージを展開します。
+3. [2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))の「パッケージとプログラム」の記事の手順に従ってSystem Centerパッケージを展開します。
 
     a. パッケージを展開する定義済みのデバイス コレクションを選択します。
 
@@ -201,9 +201,9 @@ Microsoft Endpoint Manager カレント ブランチを使用する場合は、�
 
 ## <a name="monitor-device-configuration"></a>デバイス構成の監視
 
-Microsoft Endpoint Manager の現在のブランチを使用している場合は、Configuration Manager コンソールの組み込みの Defender for Endpoint ダッシュボードを使用します。 詳細については [、「Defender for Endpoint - Monitor」を参照してください](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
+現在のブランチでMicrosoft エンドポイント マネージャー場合は、Configuration Manager コンソールの組み込みの Defender for Endpoint ダッシュボードを使用します。 詳細については [、「Defender for Endpoint - Monitor」を参照してください](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
-System Center 2012 R2 Configuration Manager を使用している場合、監視は次の 2 つの部分で構成されます。
+2012 R2 Configuration Manager System Center使用している場合、監視は次の 2 つの部分で構成されます。
 
 1. 構成パッケージが正しく展開され、ネットワーク内のデバイスで実行 (または正常に実行) されていることを確認します。
 
@@ -225,7 +225,7 @@ System Center 2012 R2 Configuration Manager を使用している場合、監視
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>デバイスが Microsoft Defender for Endpoint サービスに準拠しているのを確認する
 
-System Center 2012 R2 Configuration Manager で構成アイテムのコンプライアンス ルールを設定して、展開を監視できます。
+2012 R2 Configuration Manager で構成アイテムのコンプライアンス System Center設定して、展開を監視できます。
 
 このルールは *、対象となる* デバイスのレジストリ キーの値を監視する、修復されていないコンプライアンス ルール構成アイテムである必要があります。
 
@@ -237,10 +237,10 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-詳細については [、「System Center 2012 R2 Configuration Manager のコンプライアンス設定の概要」を参照してください](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
+詳細については[、「2012 R2](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))Configuration Manager のコンプライアンスSystem Center概要」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
-- [グループ ポリシーを使用した Windows 10 デバイスのオンボード](configure-endpoints-gp.md)
+- [グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)

@@ -45,15 +45,15 @@ Defender for Endpoint on Linux の望ましくない可能性のあるアプリ�
 
 Defender for Endpoint on Linux では、PUA ファイルを検出してレポートできます。 ブロック モードで構成すると、PUA ファイルは検疫に移動されます。
 
-エンドポイントで PUA が検出されると、Defender for Endpoint on Linux は脅威履歴に感染の記録を保持します。 履歴は、Microsoft Defender セキュリティ センター ポータルまたはコマンド ライン ツール `mdatp` を使用して視覚化できます。 脅威名には"Application" という単語が含まれる。
+エンドポイントで PUA が検出されると、Defender for Endpoint on Linux は脅威履歴に感染の記録を保持します。 履歴は、ポータルまたはコマンド ライン Microsoft Defender セキュリティ センターから `mdatp` 視覚化できます。 脅威名には"Application" という単語が含まれる。
 
 ## <a name="configure-pua-protection"></a>PUA 保護の構成
 
 Defender for Endpoint on Linux の PUA 保護は、次のいずれかの方法で構成できます。
 
 - **Off**: PUA 保護は無効です。
-- **監査**: PUA ファイルは製品ログに報告されますが、Microsoft Defender セキュリティ センターでは報告されません。 感染の記録は脅威の履歴に保存され、製品によるアクションは実行されません。
-- **ブロック**: PUA ファイルは、製品ログと Microsoft Defender セキュリティ センターで報告されます。 感染の記録は脅威の履歴に保存され、製品によってアクションが実行されます。
+- **監査**: PUA ファイルは製品ログに報告されますが、このログMicrosoft Defender セキュリティ センター。 感染の記録は脅威の履歴に保存され、製品によるアクションは実行されません。
+- **ブロック**: PUA ファイルは、製品ログと一覧でMicrosoft Defender セキュリティ センター。 感染の記録は脅威の履歴に保存され、製品によってアクションが実行されます。
 
 >[!WARNING]
 >既定では、監査モードで PUA 保護 **が構成** されています。

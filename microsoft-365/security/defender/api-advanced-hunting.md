@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender advanced hunting API
-description: Microsoft 365 Defender の高度な狩猟 API を使用して高度な狩猟クエリを実行する方法について説明します。
-keywords: 高度なハンティング、API、API、M365 Defender、Microsoft 365 Defender
+title: Microsoft 365Defender advanced hunting API
+description: Defender の高度な狩猟 API を使用して高度なMicrosoft 365を実行する方法について説明します。
+keywords: Advanced Hunting, API, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932895"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced hunting API
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365Defender Advanced hunting API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51932895"
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-[高度な検索](advanced-hunting-overview.md)は、Microsoft 365 Defender の過去 30 日間のイベント データを調べるために特別に構築されたクエリを使用する脅威検索ツールです。 [](advanced-hunting-query-language.md) 高度な検索クエリを使用して、異常なアクティビティを検査し、可能な脅威を検出し、攻撃にも対応できます。 高度な検索 API を使用すると、イベント データをプログラムでクエリできます。
+[高度な検索](advanced-hunting-overview.md)は、特別に構築されたクエリ[](advanced-hunting-query-language.md)を使用して、Defender の過去 30 日間のイベント データを調べる脅威Microsoft 365です。 高度な検索クエリを使用して、異常なアクティビティを検査し、可能な脅威を検出し、攻撃にも対応できます。 高度な検索 API を使用すると、イベント データをプログラムでクエリできます。
 
 ## <a name="quotas-and-resource-allocation"></a>クォータとリソース割り当て
 
@@ -55,9 +55,9 @@ ms.locfileid: "51932895"
 > [!NOTE]
 > 上記のすべてのクォータ (たとえば、1 分あたり 15 回の呼び出し) はテナント サイズごとに設定されます。 これらのクォータは最小です。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 
-高度な検索 API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Access the Microsoft 365 Defender Protection API」を参照してください。](api-access.md)
+高度な検索 API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については[、「Access the Defender Protection API Microsoft 365」を参照してください。](api-access.md)
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 -|-|-
@@ -180,7 +180,7 @@ Content-Type | application/json
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 Defender API へのアクセス](api-access.md)
+- [Defender API Microsoft 365アクセスする](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)
 - [エラー コードについて](api-error-codes.md)
 - [高度な追求の概要](advanced-hunting-overview.md)

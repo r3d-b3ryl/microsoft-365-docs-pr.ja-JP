@@ -1,5 +1,5 @@
 ---
-title: Defender でインシデントをMicrosoft 365する
+title: Microsoft 365 Defender でのインシデントの管理
 description: 状態の割り当てと更新を行う方法について説明します。
 keywords: インシデント、インシデント、分析、応答、アラート、相関アラート、割り当て、更新、状態、管理、分類、microsoft、365、m365
 search.product: eADQiWindows 10XVcnh
@@ -29,7 +29,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52300003"
 ---
-# <a name="manage-incidents-in-microsoft-365-defender"></a>Defender でインシデントをMicrosoft 365する
+# <a name="manage-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でのインシデントの管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "52300003"
 
 インシデント管理は、脅威を確実に含め、対処する上で重要です。
 
-インシデント &**アラート>** インシデントを管理するには、Microsoft 365 セキュリティ センター (security.microsoft.com) を [security.microsoft.com。](https://security.microsoft.com) 次に例を示します。
+Microsoft 365 セキュリティ センター (& >) のクイック 起動時に、インシデント とアラートのインシデントを[管理 security.microsoft.com。](https://security.microsoft.com)  次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例":::
 
@@ -65,7 +65,7 @@ ms.locfileid: "52300003"
 
 ## <a name="edit-the-incident-name"></a>インシデント名を編集する
 
-Microsoft 365Defender は、影響を受けるエンドポイントの数、影響を受けるユーザー、検出ソース、カテゴリなどのアラート属性に基づいて名前を自動的に割り当てる。 これにより、インシデントの範囲をすばやく理解できます。 たとえば、複数 *のソースによって報告された複数のエンドポイントに対するマルチステージ インシデント。*
+Microsoft 365 Defender は、影響を受けるエンドポイントの数、影響を受けるユーザー、検出元、カテゴリなどのアラート属性に基づいて名前を自動的に割り当てる。 これにより、インシデントの範囲をすばやく理解できます。 たとえば、複数 *のソースによって報告された複数のエンドポイントに対するマルチステージ インシデント。*
 
 インシデント名は、[インシデントの管理] ウィンドウの **[インシデント名** ] フィールド **から編集** できます。
 

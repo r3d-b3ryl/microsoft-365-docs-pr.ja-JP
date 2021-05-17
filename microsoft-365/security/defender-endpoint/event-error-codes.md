@@ -42,11 +42,11 @@ ms.locfileid: "51933843"
 
 **イベント ビューアーを開き、Microsoft Defender for Endpoint サービス イベント ログを検索します。**
 
-1. **[Windows] メニューの**[スタート] をクリックし、「イベント ビューアー」**と入力し**、Enter キーを **押します**。
+1. [スタート **] メニュー** の [Windows] をクリックし、「イベント ビューアー」と **入力し**、Enter キーを **押します**。
 
-2. ログ リストの [ログの概要 **] で****、Microsoft-Windows-SENSE/Operational が表示されるまでスクロールします**。 アイテムをダブルクリックしてログを開きます。
+2. ログ リストの [ログの概要 **] で****、Microsoft-Windows-SENSE/操作が表示されるまでスクロールします**。 アイテムをダブルクリックしてログを開きます。
 
-   a.  [アプリケーションとサービス ログ] Microsoft Windows SENSE を展開して [操作] をクリックして、ログ  >    >    >  に **アクセスすることもできます**。
+   a.  [アプリケーションとサービス ログ] を展開してログにアクセスすることもできます。Microsoft Windows SENSE をクリックし、[操作  >    >    >  ] を **クリックします**。
 
    > [!NOTE]
    > SENSE は、Microsoft Defender for Endpoint をサポートする動作センサーを参照するために使用される内部名です。
@@ -99,14 +99,14 @@ ms.locfileid: "51933843"
 <td>デバイスが正しくオンボードされていないので、ポータルに報告されません。</td>
 <td>サービスを開始する前にオンボーディングを実行する必要があります。<br>
 オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください</a>。</td>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
 </tr>
 <tr>
 <td>7</td>
 <td>Microsoft Defender for Endpoint service では、オンボーディング パラメーターの読み取りが失敗しました。 失敗: <code>variable</code> .</td>
 <td>変数 = 詳細なエラーの説明。 デバイスが正しくオンボードされていないので、ポータルに報告されません。</td>
 <td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください</a>。</td>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
 </tr>
 <tr>
 <td>8</td>
@@ -114,21 +114,21 @@ ms.locfileid: "51933843"
 <td><b>オンボーディング中:</b> サービスは、オンボーディング中に構成のクリーンアップに失敗しました。 オンボーディング プロセスは続行されます。 <br><br> <b>オフボード中:</b> サービスは、オフボード中に構成のクリーンアップに失敗しました。 オフボード プロセスは終了しましたが、サービスは実行を続ける。
  </td>
 <td><b>オンボーディング:</b> アクションは不要です。 <br><br> <b>オフボード:</b> システムを再起動します。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください</a>。</td>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
 </tr>
 <tr>
 <td>9</td>
 <td>Microsoft Defender for Endpoint service は、開始の種類を変更できなかった。 エラー コード: <code>variable</code> .</td>
 <td><b>オンボーディング中:</b> デバイスが正しくオンボードされていないので、ポータルに報告されません。 <br><br><b>オフボード中:</b> サービスの開始の種類を変更できなかった。 オフボードプロセスは続行されます。 </td>
 <td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください</a>。</td>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
 </tr>
 <tr>
 <td>10</td>
 <td>Microsoft Defender for Endpoint Service は、オンボーディング情報を保持できなかった。 エラー コード: <code>variable</code> .</td>
 <td>デバイスが正しくオンボードされていないので、ポータルに報告されません。</td>
 <td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください</a>。</td>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
 </tr>
 <tr>
 <td>11</td>
@@ -159,29 +159,29 @@ ms.locfileid: "51933843"
 <tr>
 <td>17 </td>
 <td>Microsoft Defender for Endpoint service は、接続されたユーザー エクスペリエンスとテレメトリ サービスの場所を変更できなかった。 エラー コード: <code>variable</code> .</td>
-<td>Windows テレメトリ サービスでエラーが発生しました。</td>
+<td>テレメトリ サービスでエラー Windows発生しました。</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">診断データ サービスが有効になっているか確認します</a>。<br>
 オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください</a>。</td>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
 </tr>
 <tr>
 <td>18 </td>
-<td>OOBE (Windows ようこそ) が完了しました。</td>
-<td>サービスは、Windows 更新プログラムのインストールが完了した後にのみ開始されます。</td>
+<td>OOBE (Windows) が完了しました。</td>
+<td>サービスは、更新プログラムのインストールWindows後にのみ開始されます。</td>
 <td>通常の動作通知。アクションは必要ありません。</td>
 </tr>
 <tr>
 <td>19</td>
-<td>OOBE (Windows ようこそ) がまだ完了していません。</td>
-<td>サービスは、Windows 更新プログラムのインストールが完了した後にのみ開始されます。</td>
+<td>OOBE (Windows) がまだ完了していません。</td>
+<td>サービスは、更新プログラムのインストールWindows後にのみ開始されます。</td>
 <td>通常の動作通知。アクションは必要ありません。<br>
-システムの再起動後もこのエラーが解決しない場合は、すべての Windows 更新プログラムが完全にインストールされていることを確認します。</td>
+システムの再起動後もこのエラーが解決しない場合は、すべての更新プログラムWindowsインストールされていることを確認します。</td>
 </tr>
 <tr>
 <td>20</td>
-<td>OOBE (Windows ようこそ) が完了するのを待つ必要があります。 エラー コード: <code>variable</code> .</td>
+<td>OOBE (ようこそ) がWindows待機できません。 エラー コード: <code>variable</code> .</td>
 <td>内部エラー。</td>
-<td>システムの再起動後もこのエラーが解決しない場合は、すべての Windows 更新プログラムが完全にインストールされていることを確認します。</td>
+<td>システムの再起動後もこのエラーが解決しない場合は、すべての更新プログラムWindowsインストールされていることを確認します。</td>
 </tr>
 <tr>
 <td>25</td>
@@ -189,7 +189,7 @@ ms.locfileid: "51933843"
 <td>デバイスが正しくオンボードされませんでした。
 ポータルに報告しますが、サービスが SCCM またはレジストリに登録されていない場合があります。</td>
 <td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください</a>。</td>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
 </tr>
 <tr>
 <td>26</td>
@@ -197,23 +197,23 @@ ms.locfileid: "51933843"
 <td>デバイスが正しくオンボードされませんでした。<br>
 ポータルに報告しますが、サービスが SCCM またはレジストリに登録されていない場合があります。</td>
 <td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください</a>。</td>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
 </tr>
 <tr>
 <td>27</td>
-<td>Microsoft Defender for Endpoint Service は、Microsoft Defender ウイルス対策で SENSE 対応モードを有効にできなかった。 オンボーディング プロセスに失敗しました。 エラー コード: <code>variable</code> .</td>
-<td>通常、別のリアルタイムマルウェア対策製品がデバイスで適切に実行され、デバイスが Defender for Endpoint に報告されている場合、Microsoft Defender ウイルス対策は特別なパッシブ状態になります。</td>
+<td>Microsoft Defender for Endpoint service は、ユーザーのアカウントで SENSE 対応モードを有効Microsoft Defender ウイルス対策。 オンボーディング プロセスに失敗しました。 エラー コード: <code>variable</code> .</td>
+<td>通常、Microsoft Defender ウイルス対策別のリアルタイムマルウェア対策製品がデバイスで適切に実行され、デバイスが Defender for Endpoint に報告されている場合は、特別なパッシブ状態になります。</td>
 <td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください</a>。<br>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。<br>
 リアルタイムのマルウェア対策保護が正しく実行されていることを確認します。</td>
 </tr>
 <tr>
 <td>28</td>
 <td>Microsoft Defender for Endpoint Connected User Experiences and Telemetry service registration failed. エラー コード: <code>variable</code> .</td>
-<td>Windows テレメトリ サービスでエラーが発生しました。</td>
+<td>テレメトリ サービスでエラー Windows発生しました。</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">診断データ サービスが有効になっているか確認します</a>。<br>
 オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください</a>。</td>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
 </tr>
 <tr>
 <td>29</td>
@@ -223,17 +223,17 @@ ms.locfileid: "51933843"
 </tr>
 <tr>
 <td>30</td>
-<td>Microsoft Defender for Endpoint Service は、Microsoft Defender ウイルス対策で SENSE 対応モードを無効にできなかった。 エラー コード: <code>variable</code> .</td>
-<td>通常、別のリアルタイムマルウェア対策製品がデバイスで適切に実行され、デバイスが Defender for Endpoint に報告されている場合、Microsoft Defender ウイルス対策は特別なパッシブ状態になります。</td>
+<td>Microsoft Defender for Endpoint service は、このサービスで SENSE 対応モードを無効Microsoft Defender ウイルス対策。 エラー コード: <code>variable</code> .</td>
+<td>通常、Microsoft Defender ウイルス対策別のリアルタイムマルウェア対策製品がデバイスで適切に実行され、デバイスが Defender for Endpoint に報告されている場合は、特別なパッシブ状態になります。</td>
 <td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください。</a><br>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください。</a><br>
 リアルタイムのマルウェア対策保護が正しく実行されていることを確認します。</td>
 </tr>
 <tr>
 <td>31</td>
 <td>Microsoft Defender for Endpoint Connected User Experiences and Telemetry service unregistration failed. エラー コード: <code>variable</code> .</td>
-<td>オンボード中に Windows テレメトリ サービスでエラーが発生しました。 オフボードプロセスは続行されます。</td>
-<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">Windows テレメトリ サービスのエラーを確認します</a>。</td>
+<td>オンボーディング中に、Windowsテレメトリ サービスでエラーが発生しました。 オフボードプロセスは続行されます。</td>
+<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">テレメトリ サービスのエラー Windows確認します</a>。</td>
 </tr>
 <tr>
 <td>32</td>
@@ -251,17 +251,17 @@ ms.locfileid: "51933843"
 <tr>
 <td>34</td>
 <td>Microsoft Defender for Endpoint Service は、接続されたユーザー エクスペリエンスとテレメトリ サービスへの依存関係として自分自身を追加できなかったので、オンボーディング プロセスが失敗しました。 エラー コード: <code>variable</code> .</td>
-<td>Windows テレメトリ サービスでエラーが発生しました。</td>
+<td>テレメトリ サービスでエラー Windows発生しました。</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">診断データ サービスが有効になっているか確認します</a>。<br>
 オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード Windows 10 デバイス」を参照してください</a>。</td>
+「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
 </tr>
 <tr>
 <td>35</td>
 <td>Microsoft Defender for Endpoint Service は、接続されたユーザー エクスペリエンスとテレメトリ サービスへの依存関係として削除に失敗しました。 エラー コード: <code>variable</code> .</td>
-<td>オフボード中に Windows テレメトリ サービスでエラーが発生しました。 オフボードプロセスは続行されます。
+<td>オフボード中に、Windowsテレメトリ サービスでエラーが発生しました。 オフボードプロセスは続行されます。
 </td>
-<td>Windows 診断データ サービスのエラーを確認します。</td>
+<td>診断データ サービスのエラー Windows確認します。</td>
 </tr>
 <tr>
 <td>36</td>
@@ -412,7 +412,7 @@ ms.locfileid: "51933843"
    <td>62</td>
    <td>接続ユーザー エクスペリエンスとテレメトリ サービスの開始に失敗しました。 エラー コード: %1</td>
    <td>接続されたユーザー エクスペリエンスとテレメトリ (diagtrack) サービスの開始に失敗しました。 Microsoft Defender for Endpoint テレメトリ以外は、このコンピューターから送信されません。</td>
-   <td>イベント ログのトラブルシューティング のヒントを探します。Microsoft-Windows-UniversalTelemetryClient/Operational。</td>
+   <td>イベント ログのトラブルシューティング ヒントの詳細については、「Microsoft-Windows-UniversalTelemetryClient/Operational」を参照してください。</td>
 </tr>
 <tr>
    <td>63</td>
@@ -494,7 +494,7 @@ ms.locfileid: "51933843"
 </tr>
 <tr>
    <td>84</td>
-   <td>ウイルス対策Windows Defenderモードを設定します。 強制パッシブ モード: %1、結果コード: %2。</td>
+   <td>実行中Windows Defender ウイルス対策を設定します。 強制パッシブ モード: %1、結果コード: %2。</td>
    <td>Defender の実行モード (アクティブまたはパッシブ) を設定します。</td>
    <td>通常の動作通知。アクションは必要ありません。</td>
 </tr>

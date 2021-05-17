@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business の Azure AD参加デバイスからオンプレミス リソースにアクセスする
+title: Azure に参加しているデバイスからオンプレミスADにアクセスMicrosoft 365 Business
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
-description: Azure Active Directory に参加している Windows 10 デバイスから、一行のビジネス アプリ、ファイル共有、プリンターなど、オンプレミスのリソースにアクセスする方法について説明します。
+description: ビジネス アプリの回線、ファイル共有、プリンターなど、オンプレミスのリソースにアクセスする方法について、Azure Active DirectoryデバイスWindows 10します。
 ms.openlocfilehash: 27549d6c3b03413f2f05c69845caad155333ca97
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -28,34 +28,34 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580316"
 ---
-# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の Azure AD参加デバイスからオンプレミス リソースにアクセスする
+# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Azure に参加しているデバイスからオンプレミスADにアクセスMicrosoft 365 Business Premium
 
-この記事は、Microsoft 365 Business Premium に適用されます。
+この記事は、このMicrosoft 365 Business Premium。
 
-Azure Active Directory に参加している Windows 10 デバイスは、Microsoft 365 アプリなど、すべてのクラウドベースのリソースにアクセスできます。Microsoft 365 Business Premium によって保護できます。 また、業務 (LOB) アプリ、ファイル共有、プリンターなど、オンプレミスのリソースへのアクセスを許可することもできます。 アクセスを許可するには [、Azure AD接続](/azure/active-directory/connect/active-directory-aadconnect) を使用して、オンプレミスの Active Directory と Azure Active Directory を同期します。 
+参加Windows 10デバイスAzure Active Directory、Microsoft 365 アプリなど、すべてのクラウドベースのリソースにアクセスできます。Microsoft 365 Business Premium。 また、業務 (LOB) アプリ、ファイル共有、プリンターなど、オンプレミスのリソースへのアクセスを許可することもできます。 アクセスを許可するには[、Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect)を使用して、オンプレミスの Active Directory と同期Azure Active Directory。 
 
-詳細については [、「Azure Active Directory でのデバイス管理の概要」を参照してください](/azure/active-directory/device-management-introduction)。
+詳細については、「デバイス管理の概要」を参照[Azure Active Directory。](/azure/active-directory/device-management-introduction)
 手順は、次のセクションでも要約されています。
  
-## <a name="run-azure-ad-connect"></a>Azure AD接続を実行する
+## <a name="run-azure-ad-connect"></a>Azure の実行AD Connect
 
 以下の手順を実行して、組織の Azure ADに参加しているデバイスがオンプレミス のリソースにアクセスできます。
   
-1. ローカル Active Directory から Azure Active Directory にユーザー、グループ、連絡先を同期するには、「Office [365](../enterprise/set-up-directory-synchronization.md)のディレクトリ同期のセットアップ」の説明に従って、ディレクトリ同期ウィザードと Azure AD Connect を実行します。
+1. ローカル Active Directory から Azure Active Directory にユーザー、グループ、連絡先を同期するには、「ディレクトリ同期のセットアップ」の説明に従って、ディレクトリ同期ウィザードと Azure AD Connect[を](../enterprise/set-up-directory-synchronization.md)実行Office 365。
     
-2. ディレクトリ同期が完了したら、組織の Windows 10 デバイスが Azure デバイスADしてください。 この手順は、各 Windows 10 デバイスで個別に実行されます。 詳細 [については、「Microsoft 365 Business Premium](set-up-windows-devices.md) ユーザー向け Windows デバイスのセットアップ」を参照してください。 
+2. ディレクトリ同期が完了したら、組織のデバイスが Azure Windows 10参加ADしてください。 この手順は、デバイスごとに個別Windows 10されます。 詳細[については、「ユーザー WindowsデバイスをMicrosoft 365 Business Premiumする」](set-up-windows-devices.md)を参照してください。 
     
-3. Windows 10 デバイスが Azure AD参加したら、各ユーザーはデバイスを再起動し、Microsoft 365 Business Premium 資格情報でサインインする必要があります。 これで、すべてのデバイスがオンプレミスのリソースにもアクセスできます。
+3. デバイスが Azure Windows 10参加ADしたら、各ユーザーはデバイスを再起動し、ユーザーの資格情報を使用Microsoft 365 Business Premium必要があります。 これで、すべてのデバイスがオンプレミスのリソースにもアクセスできます。
     
-Azure に参加しているデバイスのオンプレミス リソースにアクセスするには、追加AD必要ありません。 この機能は Windows 10 に組み込まれる。 
+Azure に参加しているデバイスのオンプレミス リソースにアクセスするには、追加AD必要ありません。 この機能は、Windows 10。 
 
 パスワード以外の AADJ デバイスにログインする計画がある場合 WHFB 資格情報ログインを介して PIN/Bio-metric のようにし、オンプレミスのリソース (共有、プリンター.) にアクセスします。など)、フォローしてください https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 組織が上記の Azure AD参加デバイス構成に展開する準備ができていない場合は、ハイブリッド Azure AD [参加デバイス構成のセットアップを検討してください](manage-windows-devices.md)。
   
-### <a name="considerations-when-you-join-windows-devices-to-azure-ad"></a>Windows デバイスを Azure デバイスに参加する場合の考慮事項AD
+### <a name="considerations-when-you-join-windows-devices-to-azure-ad"></a>Azure デバイスにデバイスをWindowsする際の考慮事項AD
 
-Azure-AD参加した Windows デバイスが以前にドメインに参加しているか、ワークグループに参加している場合は、次の制限事項を考慮してください。
+Azure-Windows参加しているADが以前にドメインに参加しているか、ワークグループに参加している場合は、次の制限を考慮してください。
   
 - デバイス Azure が参加AD、既存のプロファイルを参照せずに新しいユーザーを作成します。 プロファイルは手動で移行する必要があります。 ユーザー プロファイルには、お気に入り、ローカル ファイル、ブラウザー設定、スタート メニュー設定のような情報が含まれる。 最適な方法は、既存のファイルと設定を新しいプロファイルにマップするサード パーティ製のツールを見つける方法です。
 
@@ -67,4 +67,4 @@ Azure-AD参加した Windows デバイスが以前にドメインに参加して
 
 ### <a name="related-articles"></a>関連記事
 
-[Azure AD Connect の前提条件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
+[Azure サーバーの前提条件AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)

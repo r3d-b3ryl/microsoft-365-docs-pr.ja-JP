@@ -1,7 +1,7 @@
 ---
-title: 脅威と脆弱性の管理によるセキュリティに関する推奨事項
-description: 脅威、侵害される可能性、および脅威と脆弱性の管理における価値によって優先順位付けされた、アクション可能なセキュリティの推奨事項を取得します。
-keywords: 脅威と脆弱性の管理、Microsoft Defender for Endpoint tvm セキュリティ推奨事項、サイバーセキュリティの推奨事項、アクション可能なセキュリティの推奨事項
+title: ユーザーによるセキュリティ脅威と脆弱性の管理
+description: 脅威、侵害される可能性、および価値によって優先順位付けされた、アクション可能なセキュリティの推奨事項を、脅威と脆弱性の管理。
+keywords: 脅威と脆弱性の管理、Microsoft Defender for Endpoint tvm セキュリティ推奨事項、サイバーセキュリティの推奨事項、アクション可能なセキュリティ推奨事項
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -39,7 +39,7 @@ ms.locfileid: "51933735"
 
 組織内で特定されたサイバーセキュリティの弱点は、アクション可能なセキュリティ推奨事項にマップされ、影響によって優先順位が付けされます。 優先順位付けされた推奨事項は、脆弱性を軽減または修復し、コンプライアンスを推進する時間を短縮するのに役立ちます。
 
-各セキュリティ推奨事項には、アクション可能な修復手順が含まれています。 タスク管理を支援するために、Microsoft Intune と Microsoft Endpoint Configuration Manager を使用して推奨事項を送信することもできます。 脅威の状況が変化すると、環境から情報を継続的に収集する際に、推奨事項も変更されます。
+各セキュリティ推奨事項には、アクション可能な修復手順が含まれています。 タスクの管理を支援するために、推奨事項は、タスクの管理と管理を使用Microsoft Intune送信Microsoft Endpoint Configuration Manager。 脅威の状況が変化すると、環境から情報を継続的に収集する際に、推奨事項も変更されます。
 
 >[!TIP]
 >新しい脆弱性イベントに関する電子メールを取得するには [、「Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
@@ -58,8 +58,8 @@ ms.locfileid: "51933735"
 
 [セキュリティの推奨事項] ページにアクセスするには、次のいくつかの方法があります。
 
-- Microsoft Defender セキュリティ センターの脅威と脆弱性 [の管理ナビゲーション メニュー](portal-overview.md)
-- 脅威と脆弱性管理ダッシュボードのセキュリティ [に関する推奨事項の上位](tvm-dashboard-insights.md)
+- [脅威と脆弱性の管理] ナビゲーション メニューが表示[Microsoft Defender セキュリティ センター](portal-overview.md)
+- ダッシュボードのセキュリティに[関する脅威と脆弱性の管理おすすめ](tvm-dashboard-insights.md)
 
 関連するセキュリティに関する推奨事項を次の場所で表示します。
 
@@ -68,11 +68,11 @@ ms.locfileid: "51933735"
 
 ### <a name="navigation-menu"></a>ナビゲーション メニュー
 
-[脅威と脆弱性の管理] ナビゲーション メニューに移動し、[セキュリティの推奨事項 **] を選択します**。 このページには、組織で見つかった脅威と脆弱性に関するセキュリティ推奨事項の一覧が含まれている。
+[セキュリティ] ナビゲーション 脅威と脆弱性の管理に移動し、[セキュリティの推奨事項 **] を選択します**。 このページには、組織で見つかった脅威と脆弱性に関するセキュリティ推奨事項の一覧が含まれている。
 
-### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>脅威と脆弱性管理ダッシュボードのセキュリティに関する推奨事項の上位
+### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>ダッシュボードのセキュリティに関する脅威と脆弱性の管理おすすめ
 
-セキュリティ管理者として特定の日に、脅威と脆弱性管理ダッシュボードを見て[](tvm-dashboard-insights.md)[、Microsoft Secure Score for](tvm-microsoft-secure-score-devices.md) [](tvm-exposure-score.md) Devices と並べて露出スコアを確認できます。 目標は、組織の脆弱性による露出を低くし、組織のデバイス セキュリティを強化して、サイバーセキュリティの脅威攻撃に対する回復力を高める方法です。 セキュリティに関する推奨事項の上位一覧は、その目標を達成するのに役立ちます。
+セキュリティ管理者として特定の日に[、脅威と脆弱性の管理](tvm-dashboard-insights.md)ダッシュボードを見て、露出スコアを Microsoft Secure Score [](tvm-exposure-score.md) for Devices と並べて[確認できます](tvm-microsoft-secure-score-devices.md)。 目標は、組織の脆弱性による露出を低くし、組織のデバイス セキュリティを強化して、サイバーセキュリティの脅威攻撃に対する回復力を高める方法です。 セキュリティに関する推奨事項の上位一覧は、その目標を達成するのに役立ちます。
 
 ![4 つのセキュリティ推奨事項を含むトップ セキュリティ推奨事項カードの例。](images/top-security-recommendations350.png)
 
@@ -85,7 +85,7 @@ ms.locfileid: "51933735"
 露出デバイスグラフの **色は** 、傾向の変化に合って変化します。 公開されているデバイスの数が増えている場合、色は赤に変わります。 公開されているデバイスの数が減った場合、グラフの色は緑に変わります。
 
 >[!NOTE]
->脅威と脆弱性の管理では、最大 **30** 日前に使用していたデバイスが表示されます。 これは、他の Microsoft Defender for Endpoint とは異なります。デバイスが 7 日間以上使用されていない場合は、"非アクティブ" 状態になっています。
+>脅威と脆弱性の管理は、30 日前まで使用していた **デバイスを示** します。 これは、他の Microsoft Defender for Endpoint とは異なります。デバイスが 7 日間以上使用されていない場合は、"非アクティブ" 状態になっています。
 
 ![セキュリティに関する推奨事項のランディング ページの例。](images/tvmsecrec-updated.png)
 
@@ -106,7 +106,7 @@ ms.locfileid: "51933735"
 
 - **[ソフトウェア ページを開** く] - ソフトウェア ページを開いて、ソフトウェアのコンテキストと配布方法を確認します。 この情報には、脅威コンテキスト、関連する推奨事項、検出された弱点、公開されたデバイスの数、検出された脆弱性、ソフトウェアがインストールされているデバイスの名前と詳細、バージョンの配布が含まれます。
 
-- [**修復オプション**](tvm-remediation.md) - 修復要求を送信して、IT 管理者がピックアップしてアドレス指定するためのチケットを Microsoft Intune で開きます。 [修復] ページで修復アクティビティを追跡します。
+- [**修復オプション**](tvm-remediation.md)- 修復要求を送信して、IT 管理者がMicrosoft Intuneアドレスを設定するためのチケットを開きます。 [修復] ページで修復アクティビティを追跡します。
 
 - [**例外オプション**](tvm-exception.md) - まだ問題を修復できない場合は、例外を送信し、正当化を提供し、例外期間を設定します。
 
@@ -123,7 +123,7 @@ ms.locfileid: "51933735"
 
 ## <a name="request-remediation"></a>修復の要求
 
-脅威と脆弱性管理の修復機能は、修復要求ワークフローを通じて、セキュリティ管理者と IT 管理者の間のギャップを埋め合わせています。 IT 管理者に対して、セキュリティの推奨事項ページから Intune への脆弱性の修復を要求できるセキュリティ管理者。 [修復オプションの詳細](tvm-remediation.md)
+修復脅威と脆弱性の管理機能は、修復要求ワークフローを通じてセキュリティ管理者と IT 管理者の間のギャップを埋め合わせています。 IT 管理者に対して、セキュリティの推奨事項ページから Intune への脆弱性の修復を要求できるセキュリティ管理者。 [修復オプションの詳細](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>修復を要求する方法
 
@@ -157,11 +157,11 @@ ms.locfileid: "51933735"
 
 3. フライアウト ウィンドウで、ドロップダウン メニューから不正確なカテゴリを選択し、電子メール アドレスを入力し、不正確に関する詳細を入力します。
 
-4. [**送信**] を選択します。 フィードバックは、脅威と脆弱性管理の専門家に直ちに送信されます。
+4. [**送信**] を選択します。 フィードバックはすぐに専門家に脅威と脆弱性の管理されます。
 
 ## <a name="related-articles"></a>関連記事
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)
 - [暴露スコア](tvm-exposure-score.md)
 - [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)

@@ -41,17 +41,17 @@ ms.locfileid: "51932943"
 
 ## <a name="discover-and-track-unprotected-devices"></a>保護されていないデバイスの検出と追跡
 
-**オンボーディング** カードは、実際に Defender for Endpoint にオンボードされた Windows 10 デバイスの数と Intune で管理される Windows 10 デバイスの総数を比較することで、オンボーディング レートの概要を示します。
+オンボーディング カードは、実際に Defender for Endpoint にオンボードされた Windows 10 デバイスの数と Intune で管理された Windows 10 デバイスの総数を比較することで、オンボーディング レートの概要を提供します。
 
 ![デバイス構成管理オンボード カード](images/secconmgmt_onboarding_card.png)<br>
-*Intune で管理されている Windows 10 デバイスの総数と比較したオンボード デバイスを示すカード*
+*オンボード デバイスと Intune で管理されているデバイスの合計数と比較Windows 10カード*
 
 >[!NOTE]
 >セキュリティ センター構成マネージャー、オンボーディング スクリプト、または Intune プロファイルを使用しないその他のオンボーディング 方法を使用した場合、データの不一致が発生する可能性があります。 これらの不一致を解決するには、Defender for Endpoint オンボーディングに対応する Intune 構成プロファイルを作成し、そのプロファイルをデバイスに割り当てる必要があります。
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>Intune プロファイルを使用して他のデバイスをオンボードする
 
-Defender for Endpoint は [、Windows 10 デバイスのオンボードに便利ないくつかのオプションを提供します](onboard-configure.md)。 ただし、Intune で管理されるデバイスの場合は、Intune プロファイルを活用して Defender for Endpoint センサーを便利に展開してデバイスを選択し、これらのデバイスをサービスに効果的にオンボーディングできます。
+Defender for Endpoint には、デバイスをオンボーディングするための便利な[Windows 10があります](onboard-configure.md)。 ただし、Intune で管理されるデバイスの場合は、Intune プロファイルを活用して Defender for Endpoint センサーを便利に展開してデバイスを選択し、これらのデバイスをサービスに効果的にオンボーディングできます。
 
 [オンボード] **カードで、[** その他のデバイス **の** オンボード] を選択して、Intune でプロファイルを作成して割り当てる。 このリンクを使用すると、Intune のデバイス コンプライアンス ページに移動し、オンボーディング状態の同様の概要を示します。
 
@@ -59,7 +59,7 @@ Defender for Endpoint は [、Windows 10 デバイスのオンボードに便利
    *Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ*
 
 >[!TIP]
->または、Microsoft Defender ATP のすべてのサービス > Intune > デバイス コンプライアンス> Microsoft [Azure](https://portal.azure.com/) ポータルの [Defender for Endpoint オンボーディング コンプライアンス] **ページに** 移動することもできます。
+>または、[すべてのサービス] から Microsoft Azure ポータルの [[Defender](https://portal.azure.com/) for Endpoint オンボーディング コンプライアンス] ページに移動> Intune >**デバイス** コンプライアンス > Microsoft Defender ATP。
 
 >[!NOTE]
 > 最新のデバイス データを表示する場合は、[ATP センサーのないデバイスの一覧 **] をクリックします**。

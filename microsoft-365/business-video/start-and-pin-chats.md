@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams でのチャットの開始とピン留め
+title: チャットを開始してピン留めMicrosoft Teams
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft Teams でチャットを開始およびピン留めする方法について説明します。
+description: チャットを開始してピン留めする方法については、Microsoft Teams。
 ms.openlocfilehash: 8755abfa3e961ef5408ab612f6712dbeef948074
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT

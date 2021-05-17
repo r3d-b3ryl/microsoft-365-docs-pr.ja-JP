@@ -34,14 +34,14 @@ ms.locfileid: "51957619"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Defender for Endpoint センサーでは、センサー データを報告し、Defender for Endpoint サービスと通信するために Microsoft Windows HTTP (WinHTTP) が必要です。
+Defender for Endpoint センサーでは、センサー データWindowsレポートし、Defender for Endpoint サービスと通信するために Microsoft Windows HTTP (WinHTTP) が必要です。
 
-埋め込み Defender for Endpoint センサーは、LocalSystem アカウントを使用してシステム コンテキストで実行されます。 センサーは、Microsoft Windows HTTP Services (WinHTTP) を使用して、Defender for Endpoint クラウド サービスとの通信を有効にしています。
+埋め込み Defender for Endpoint センサーは、LocalSystem アカウントを使用してシステム コンテキストで実行されます。 センサーは Microsoft Windows HTTP Services (WinHTTP) を使用して、Defender for Endpoint クラウド サービスとの通信を有効にしています。
 
 >[!TIP]
 >インターネットへのゲートウェイとして転送プロキシを使用する組織では、ネットワーク保護を使用してプロキシの背後を調査できます。 詳細については、「[転送プロキシの背後で発生する接続イベントの調査](investigate-behind-proxy.md)」を参照してください。
 
-WinHTTP 構成設定は、Windows Internet (WinINet) インターネット ブラウズ プロキシ設定とは独立し、次の検出方法を使用してのみプロキシ サーバーを検出できます。
+WinHTTP 構成設定は、Windows インターネット (WinINet) インターネット閲覧プロキシ設定とは独立し、次の検出方法を使用してのみプロキシ サーバーを検出できます。
 
 - 自動検出の方法:
   - 透過プロキシ
@@ -59,18 +59,18 @@ WinHTTP 構成設定は、Windows Internet (WinINet) インターネット ブ�
 コンピューターがインターネットへの接続を許可されていない場合、Defender for Endpoint センサーだけが診断データを報告し、Defender for Endpoint サービスと通信できるレジストリ ベースの静的プロキシを構成します。
 
 > [!NOTE]
-> - Windows 10 または Windows Server 2019 でこのオプションを使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。</br>
-> Windows 10 バージョン 1809 または Windows Server 2019 - https://support.microsoft.com/kb/5001384 <br>
-> Windows 10 バージョン 1909 - https://support.microsoft.com/kb/4601380</br>
-> Windows 10 バージョン 2004 - https://support.microsoft.com/kb/4601382</br>
-> Windows 10 バージョン 20H2 - https://support.microsoft.com/kb/4601382</br>
+> - このオプションを Windows 10 または Windows Server 2019 で使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。</br>
+> Windows 10バージョン 1809 または Windows Server 2019 -https://support.microsoft.com/kb/5001384 <br>
+> Windows 10バージョン 1909 -https://support.microsoft.com/kb/4601380</br>
+> Windows 10バージョン 2004 -https://support.microsoft.com/kb/4601382</br>
+> Windows 10バージョン 20H2 -https://support.microsoft.com/kb/4601382</br>
 > これらの更新プログラムは、CnC (Command and Control) チャネルの接続性と信頼性を向上します。</br>
 
 静的プロキシは、グループ ポリシー (GP) を使用して構成できます。 グループ ポリシーは次の場所にあります。
 
-- 管理用> Windows コンポーネント>データ収集とプレビュー ビルド> 接続されたユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用を構成する
+- 管理用> Windows コンポーネント>データ収集とプレビュー ビルド>接続されたユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用を構成する
   - [有効] **に設定し** 、[ **認証されたプロキシの使用を** 無効にする: ![ グループ ポリシーのイメージ設定 1] を選択します。](images/atp-gpo-proxy1.png)
-- **管理用テンプレート > Windows コンポーネント**>データ収集とプレビュー ビルド>接続されたユーザー エクスペリエンスと利用統計情報を構成する:
+- **管理用テンプレート > Windows コンポーネント**>およびプレビュー ビルド > 接続されたユーザー エクスペリエンスとテレメトリを構成する:
   - プロキシを構成します。<br>
     ![グループ ポリシー設定 2 のイメージ](images/atp-gpo-proxy2.png)
 
@@ -131,21 +131,21 @@ netsh winhttp reset proxy
 プロキシまたはファイアウォールで HTTPS スキャン (SSL 検査) が有効になっている場合は、上記の表に示されているドメインを HTTPS スキャンから除外します。
 
 > [!NOTE]
-> settings-win.data.microsoft.com は、バージョン 1803 以前を実行している Windows 10 デバイスがある場合にのみ必要です。<br>
+> settings-win.data.microsoft.com は、バージョン 1803 以前Windows 10デバイスを使用している場合にのみ必要です。<br>
 
 
 > [!NOTE]
-> v20 を含む URL は、バージョン 1803 以降を実行している Windows 10 デバイスがある場合にのみ必要です。 たとえば、バージョン 1803 以降を実行し、米国のデータ ストレージ領域にオンボードされている ```us-v20.events.data.microsoft.com``` Windows 10 デバイスに必要です。
+> v20 を含む URL は、バージョン 1803 以降をWindows 10デバイスを使用している場合にのみ必要です。 たとえば、バージョン 1803 以降をWindows 10しているデバイスで、米国のデータ 転送地域にオンボードされている場合 ```us-v20.events.data.microsoft.com``` Storageです。
 
 
 > [!NOTE]
-> 環境で Microsoft Defender ウイルス対策を使用している場合は、「Microsoft Defender ウイルス対策クラウド サービスへのネットワーク接続を構成する」 [を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
+> 環境でネットワーク 接続をMicrosoft Defender ウイルス対策する場合は、「Configure network connections to the [Microsoft Defender ウイルス対策 クラウド サービス」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
 
 Defender for Endpoint センサーがシステム コンテキストから接続している場合、プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合は、以前にリストした URL で匿名トラフィックが許可されている必要があります。
 
-### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) - 以前のバージョンの Windows クライアントまたは Windows Server のプロキシとファイアウォールの要件
+### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) - クライアントまたはサーバーの古いバージョンのプロキシおよびファイアウォールWindows要件Windowsします。
 
-以下の情報は、Windows 7 SP1、Windows 8.1、Windows Server 2008 R2、Windows Server 2012 R2、Windows Server 2016 などの以前のバージョンの Windows の Log Analytics エージェント (Microsoft Monitoring Agent と呼ばれます) との通信に必要なプロキシおよびファイアウォール構成情報を示しています。
+以下の情報は、Windows 7 SP1、Windows 8.1、Windows Server 2008 R2、Windows Server 2012 R2、Windows Server 2016 など、以前のバージョンの Windows の Log Analytics エージェント (多くの場合、Microsoft Monitoring Agent と呼ばれます) と通信するために必要なプロキシとファイアウォールの構成情報を示しています。
 
 |エージェント リソース|ポート |Direction |HTTPS 検査のバイパス|
 |------|---------|--------|--------|   
@@ -158,13 +158,13 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 > [!NOTE]
 > クラウドベースのソリューションとして、IP 範囲が変更される可能性があります。 DNS 解決設定に移動する必要があります。
 
-## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>Microsoft 監視エージェント (MMA) サービス URL の要件を確認する 
+## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>[Microsoft Monitoring Agent (MMA) サービス URL の要件を確認する 
 
-以前のバージョンの Windows で Microsoft Monitoring Agent (MMA) を使用する場合、特定の環境のワイルドカード (*) 要件を排除するには、次のガイダンスを参照してください。
+以前のバージョンのアプリケーションに対して Microsoft Monitoring Agent (MMA) を使用する場合は、特定の環境のワイルドカード (*) 要件を排除するために、以下のガイダンスを参照Windows。
 
-1.  Microsoft Monitoring Agent (MMA) を使用して以前のオペレーティング システムを Defender for Endpoint にオンボードします (詳細については、「Defender [on Defender](https://go.microsoft.com/fwlink/p/?linkid=2010326) およびオンボード Windows サーバーの以前のバージョンの Windows のオンボード」を [参照してください](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)。
+1.  Microsoft Monitoring Agent (MMA) を使用して以前のオペレーティング システムを Defender for Endpoint にオンボードします (詳細については、「Defender for Endpoint および Onboard Windows サーバーでの以前のバージョンの[Windows](https://go.microsoft.com/fwlink/p/?linkid=2010326)のオンボード」[を参照](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)してください。
 
-2.  コンピューターが Microsoft Defender セキュリティ センター ポータルに正常に報告されたことを確認します。
+2.  コンピューターがポータルに正常に報告Microsoft Defender セキュリティ センターします。
 
 3.  "C:\Program Files\Microsoft Monitoring Agent\Agent" の TestCloudConnection.exe ツールを実行して、接続を検証し、特定のワークスペースに必要な URL を確認します。
 
@@ -172,7 +172,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 ![管理者のWindows PowerShell](images/admin-powershell.png)
 
-*.ods.opinsights.azure.com、*.oms.opinsights.azure.com、および *.agentsvc.azure-automation.net URL エンドポイントで使用されるワイルドカード (*) は、特定の Workspace ID に置き換えます。 ワークスペース ID は環境とワークスペースに固有の ID で、Microsoft Defender セキュリティ センター ポータル内のテナントの [オンボーディング] セクションにあります。
+*.ods.opinsights.azure.com、*.oms.opinsights.azure.com、および *.agentsvc.azure-automation.net URL エンドポイントで使用されるワイルドカード (*) は、特定の Workspace ID に置き換えます。 ワークスペース ID は環境とワークスペースに固有の ID で、テナントの [オンボーディング] セクションで、Microsoft Defender セキュリティ センターできます。
 
 *.blob.core.windows.net URL エンドポイントは、テスト結果の 「ファイアウォール ルール: *.blob.core.windows.net」セクションに示されている URL に置き換え可能です。 
 
@@ -183,7 +183,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 プロキシ構成が正常に完了したことを確認します。WinHTTP は環境内のプロキシ サーバーを介して検出および通信でき、プロキシ サーバーは Defender for Endpoint サービス URL へのトラフィックを許可します。
 
-1. エンドポイント センサーの Defender が実行されている PC に [MDATP](https://aka.ms/mdatpanalyzer) クライアント アナライザー ツールをダウンロードします。
+1. Defender for [Endpoint MDATPが](https://aka.ms/mdatpanalyzer)実行されている PC にクライアント アナライザー ツールをダウンロードします。
 
 2. デバイス上に MDATPClientAnalyzer.zip のコンテンツを抽出します。
 
@@ -207,7 +207,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 5. *HardDrivePath**でMDATPClientAnalyzerResult.zip* フォルダーにツールによって作成されたファイルを抽出します。
 
-6. *MDATPClientAnalyzerResult.txt* を開き、プロキシ構成の手順を実行して、サーバーの検出とサービス URL へのアクセスを有効にしたことを確認します。 <br><br>
+6. *MDATPClientAnalyzerResult.txt* を開き、プロキシ構成の手順を実行して、サーバーの検出とサービス URL へのアクセスを有効にしたことを確認します。<br><br>
    このツールは、Defender for Endpoint クライアントが相互作用するように構成されている Defender for Endpoint サービス URL の接続を確認します。 次に、Defender for Endpoint サービスとの通信に使用できる URL ごとに、結果を *MDATPClientAnalyzerResult.txt* ファイルに出力します。 次に例を示します。
 
    ```text

@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: Microsoft 365 Business Premium を使用すると、ユーザーがすべての Windows 10 デバイスで最新バージョンのOfficeを自動的に確認する方法について説明します。
+description: ユーザーがすべてのデバイスMicrosoft 365 Business Premiumに最新バージョンのデバイスをOfficeする方法をWindows 10します。
 ms.openlocfilehash: d3c62eb42ea73c7af6df6012dbc9488828cd1ba8
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,6 +37,6 @@ ms.locfileid: "51580176"
 
 ![を指す https://aka.ms/aboutM365preview バナー。](../media/m365admincenterchanging.png)
 
-この設定は既定でオフになっています。 ユーザーがすべての Windows 10 デバイスで最新バージョンの Office を使用していることを確認するために有効にできますが、まずすべての前提条件が満たされていることを確認します。 Microsoft 365 Business Premium による Office クライアント展開の準備で説明されている他の要件に加えて、この設定でソフトウェアをデバイスにプッシュするには、Microsoft [365](prepare-for-office-client-deployment.md)Business Premium のライセンスが必要です。
+この設定は既定でオフになっています。 ユーザーがすべての Windows 10 デバイスで最新バージョンの Office を持っているが、最初にすべての前提条件が満たされていることを確認するためにオンにできます。 この設定でソフトウェアをデバイスにプッシュするには、Microsoft 365 Business Premium のライセンスをユーザーに与える必要があります。また、「Office クライアントの展開の準備」で説明されているその他の要件[Microsoft 365 Business Premium。](prepare-for-office-client-deployment.md)
   
 セットアップ時に既定の設定を受け入れすることをお勧めします。

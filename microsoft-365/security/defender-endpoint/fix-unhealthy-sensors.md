@@ -45,7 +45,7 @@ ms.locfileid: "51935367"
 何らかの理由でデバイスが 7 日間以上使用されていない場合は、ポータルの [非アクティブ] 状態のままです。
 
 ### <a name="device-was-reinstalled-or-renamed"></a>デバイスが再インストールまたは名前の変更された
-再インストールまたは名前が変更されたデバイスは、Microsoft Defender セキュリティ センターに新しいデバイス エンティティを生成します。 前のデバイス エンティティは、ポータルの "非アクティブ" 状態のままです。 デバイスを再インストールして Defender for Endpoint パッケージを展開した場合は、新しいデバイス名を検索して、デバイスが正常に報告されているのを確認します。
+再インストールまたは名前の変更されたデバイスは、新しいデバイス エンティティを新しいデバイス エンティティMicrosoft Defender セキュリティ センター。 前のデバイス エンティティは、ポータルの "非アクティブ" 状態のままです。 デバイスを再インストールして Defender for Endpoint パッケージを展開した場合は、新しいデバイス名を検索して、デバイスが正常に報告されているのを確認します。
 
 ### <a name="device-was-offboarded"></a>デバイスがオフボードされた
 デバイスがオフボードされている場合は、デバイスの一覧に表示されます。 7 日後、デバイスの正常性状態は非アクティブに変更されます。
@@ -86,8 +86,8 @@ ms.locfileid: "51935367"
 - [診断データ サービスが有効になっているか確認する](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
 デバイスが正しく報告されていない場合は、Windows 10 診断データ サービスが自動的に開始するように設定され、エンドポイントで実行されていることを確認する必要があります。
 
-- [ポリシーによって Microsoft Defender ウイルス対策が無効にされていないか確認する](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-デバイスでサードパーティのマルウェア対策クライアントを実行している場合、Defender for Endpoint エージェントでは、Microsoft Defender ウイルス対策早期起動マルウェア対策 (ELAM) ドライバーを有効にする必要があります。
+- [ポリシーによってMicrosoft Defender ウイルス対策が無効にされていないか確認する](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
+デバイスでサードパーティのマルウェア対策クライアントを実行している場合、Defender for Endpoint エージェントは Microsoft Defender ウイルス対策 早期起動マルウェア対策 (ELAM) ドライバーを有効にする必要があります。
 
 修正アクションを実行してもデバイスの状態が正しく構成されていない場合は、サポート [チケットを開きます](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)。
 

@@ -1,7 +1,7 @@
 ---
 title: Windows における情報保護の概要
 ms.reviewer: ''
-description: 機密情報を特定して保護するために Windows で情報保護がどのように機能するのかについて説明します。
+description: 機密情報の特定と保護を行うWindows保護の仕組みについて説明します。
 keywords: 情報、保護、dlp、データ、損失、防止、保護
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -37,16 +37,16 @@ ms.locfileid: "51933351"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-情報保護は、Microsoft 365 Enterprise スイートの不可欠な部分で、機密性の高いデータを安全に保ちながら、職場での生産性を実現するためのインテリジェントな保護を提供します。
+情報保護は、Microsoft 365 Enterpriseの生産性を可能にしながら、機密データを安全に保つインテリジェントな保護を提供する、Microsoft 365 Enterpriseスイートの不可欠な部分です。
 
 
 >[!TIP]
-> Microsoft Defender for Endpoint が Microsoft Information Protection と統合して Windows デバイス上の機密データを検出、保護、監視する方法に関するブログ記事 [をお読みください](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
+> Microsoft Defender for Endpoint と Microsoft Information Protection の統合方法に関するブログ記事を参照して、デバイス上の機密データを検出、保護、監視[Windowsしてください](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
 
 Defender for Endpoint は、データの検出、分類、および保護に次のメソッドを適用します。
 
-- **データ検出** - 危険にさらされている Windows デバイス上の機密データを特定する
-- **データの分類** - コンプライアンス センターで管理される一般的な Microsoft Information Protection (MIP) ポリシーに基づいてデータOffice自動的&分類します。 自動分類を使用すると、エンド ユーザーが手動で分類していなくても、機密データを保護できます。
+- **データ検出**- 危険にさらされているデバイスWindowsデータを特定する
+- **データ分類**- コンプライアンス センターで管理される一般的な Microsoft Information Protection (MIP) ポリシーに基づいてデータOffice 365自動的&分類します。 自動分類を使用すると、エンド ユーザーが手動で分類していなくても、機密データを保護できます。
 
 
 ## <a name="data-discovery-and-data-classification"></a>データ検出とデータ分類
@@ -55,7 +55,7 @@ Defender for Endpoint は、機密ラベルを持つファイルと機密情報�
 
 機密ラベルは機密コンテンツを分類し、保護するのに役立ちます。
 
-365 データ損失防止 (DLP) Office実装の機密情報の種類は、次の 2 つのカテゴリに分類されます。
+データ損失防止 (DLP) Office 365の機密情報の種類は、次の 2 つのカテゴリに分類されます。
 
 - 既定値
 - Custom
@@ -64,7 +64,7 @@ Defender for Endpoint は、機密ラベルを持つファイルと機密情報�
 
 カスタム型は、ユーザーが定義する種類であり、異なる種類の機密情報 (従業員の ID やプロジェクト番号など) を保護するように設計されています。 詳細については、「カスタム機密情報の [種類を作成する」を参照してください](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type)。
 
-Windows デバイスでファイルが作成または編集されると、Defender for Endpoint はコンテンツをスキャンして、機密情報が含まれているか評価します。
+デバイス上でファイルが作成または編集Windows Defender for Endpoint はコンテンツをスキャンして、機密情報が含まれているか評価します。
 
 ラベルまたは情報の種類を使用して Defender for Endpoint によって機密情報を含むファイルが検出された場合、デバイスから Azure Information Protection に自動的に転送するように、Azure Information Protection 統合を有効にします。
 
@@ -103,8 +103,8 @@ InformationProtectionLogs_CL
 **前提条件:**
 
 - お客様は Azure Information Protection のサブスクリプションを持っている必要があります。
-- Microsoft Defender セキュリティ センターで Azure Information Protection の統合を有効にする:
-    - [Microsoft Defender **セキュリティ センターの** 設定] に移動し、[全般] の [**詳細設定] を****クリックします**。
+- Azure Information Protection の統合を次のMicrosoft Defender セキュリティ センター。
+    - [詳細]**設定** に移動Microsoft Defender セキュリティ センター、[全般] の [**詳細設定] 設定** を **クリックします**。
 
 
 

@@ -1,7 +1,7 @@
 ---
-title: テスト Microsoft 365 Defender アラートの生成
-description: テストアラートを生成して、Microsoft 365 Defender ラボ環境の動作を試す
-keywords: Microsoft 365 Defender シミュレーション、Microsoft 365 Defender の試用、Microsoft 365 Defender でのテストアラートの生成、Microsoft 365 Defender 評価ラボでのテストアラートの生成
+title: Defender アラートのテストMicrosoft 365生成する
+description: テストアラートを生成して、Defender ラボ環境Microsoft 365試す
+keywords: Microsoft 365Defender シミュレーション、 try try Microsoft 365 Defender、 generate test alert in Microsoft 365 Defender、 test alert in Microsoft 365 Defender 評価ラボ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935655"
 ---
-# <a name="generate-a-test-alert-in-your-microsoft-365-defender-evaluation-lab"></a>Microsoft 365 Defender 評価ラボでテストアラートを生成する  
+# <a name="generate-a-test-alert-in-your-microsoft-365-defender-evaluation-lab"></a>Defender 評価ラボでテストアラートMicrosoft 365生成する  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,9 +38,9 @@ ms.locfileid: "51935655"
 Microsoft 365 Defender 評価ラボのセットアップと構成が完了したら、脅威攻撃シミュレーションを実行して、統合セキュリティ ソリューションの検出、アラートの相関関係、および自己修復修復機能を体験できます。  
 
 1. ログオンする https://security.microsoft.com
-2. [ホーム] ページで、[シミュレーション] というタイトルのタイルを **探します**。  Microsoft 365 Defender でテスト インシデントを作成する手順については、チュートリアル ガイドを参照してください。
-<br>![Microsoft 365 セキュリティ ダッシュボードのシミュレーション カードのイメージ](../../media/mtp-eval-73.png) <br>
+2. [ホーム] ページで、[シミュレーション] というタイトルのタイルを **探します**。  Defender でテスト インシデントを作成する手順については、チュートリアル ガイドMicrosoft 365してください。
+<br>![[セキュリティ] ダッシュボードのシミュレーション Microsoft 365イメージ](../../media/mtp-eval-73.png) <br>
 
 ## <a name="next-steps"></a>次の手順
 
-[Microsoft 365](../../solutions/index.yml)ソリューションとアーキテクチャ センターを参照して、組織に合ったソリューションとアーキテクチャを設計する方法を理解します。
+組織にMicrosoft 365[ソリューション](../../solutions/index.yml)とアーキテクチャを設計する方法を理解するには、ソリューションとアーキテクチャ センターを参照してください。

@@ -102,6 +102,6 @@ macOS デバイスで起動されたデーモンを使用 *してスキャン* �
 
 ## <a name="schedule-a-scan-with-intune"></a>Intune でスキャンをスケジュールする
 
-Microsoft Intune でスキャンをスケジュールすることもできます。 Microsoft [Defender](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) [for Endpoint runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh)使用可能なシェル スクリプトは、デバイスがスリープ モードから再開しても保持されます。 
+また、スキャンをスケジュールすることもできます。Microsoft Intune。 Microsoft [Defender](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) [for Endpoint runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh)使用可能なシェル スクリプトは、デバイスがスリープ モードから再開しても保持されます。 
 
 エンタープライズ [でこのスクリプトを使用する](https://docs.microsoft.com/mem/intune/apps/macos-shell-scripts) 方法の詳細については、「Intune の macOS デバイスでシェル スクリプトを使用する」を参照してください。

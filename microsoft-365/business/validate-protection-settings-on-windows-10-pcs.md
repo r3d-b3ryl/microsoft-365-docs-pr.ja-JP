@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Windows 10 デバイスで Microsoft 365 Business Premium アプリ保護設定を検証し、ユーザーが会社のデータを個人用ファイルまたは管理されていないアプリにコピーできないことを確認します。
+description: デバイスMicrosoft 365 Business Premiumアプリ保護設定Windows 10検証し、ユーザーが会社のデータを個人用ファイルまたは管理されていないアプリにコピーできないことを確認します。
 ms.openlocfilehash: e319ffa5149f055b5de45078facc8899acffc223
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -34,11 +34,11 @@ ms.locfileid: "51579864"
 
 ## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a>ユーザーが会社データを企業のデバイスの個人用ファイルにコピーできないことを確認する
 
-[アプリの保護ポリシーを設定](protection-settings-for-windows-10-devices.md) した後は、ポリシーがユーザーのデバイスに影響を与えるまで最大で数時間かかる場合があります。 [ユーザーが会社のデータを個人用ファイルにコピーし、会社所有のデバイスの **OneDrive for Business** に作業ファイルを強制的に保存する] 設定をオンにした場合は、Azure AD に接続してサインインした後、ユーザーのデバイスでこれを確認できます。 
+[アプリの保護ポリシーを設定](protection-settings-for-windows-10-devices.md) した後は、ポリシーがユーザーのデバイスに影響を与えるまで最大で数時間かかる場合があります。 [ユーザーが会社のデータを個人用ファイルにコピーし、会社所有のデバイスの作業ファイルを **OneDrive for Business** に保存するように強制する] 設定をオンにした場合は、Azure AD に接続してサインインした後、ユーザーのデバイスでこれを確認できます。 
   
  **接続の設定を確認する**
   
-1. 「Microsoft 365 Business Premium ユーザー向け Windows デバイスのセットアップ」の説明に [](set-up-windows-devices.md)従って、Microsoft 365 Business Premium 資格情報を使用してサインインし、Azure AD に接続した後は **、「Windows Settings** Accounts Access work or \>  \> **school」を参照** してください。 [Azure **に接続] \<tenant name\> をAD** し、[情報] を **選択します**。
+1. Microsoft 365 Business Premium 資格情報を使用してサインインし、「Microsoft 365 Business Premium ユーザー用 [の Windows](set-up-windows-devices.md)デバイスのセットアップ」の説明に従って Azure AD に接続した後、[Windows 設定アカウント アクセスの仕事または学校] に \>  \> **移動します**。 [Azure **に接続] \<tenant name\> をAD** し、[情報] を **選択します**。
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
@@ -48,7 +48,7 @@ ms.locfileid: "51579864"
   
  **管理されていないアプリに会社のデータを貼り付けできないことを確認する**
   
-1. Microsoft 365 Business Premium によってインストールされた Outlook 2016 を開きます。
+1. ユーザー Outlook 2016によってインストールされたファイルを開Microsoft 365 Business Premium。
     
 2. メールを開き、そこから一部のコンテンツをコピーします。
     
@@ -64,11 +64,11 @@ ms.locfileid: "51579864"
 
  **接続の設定を確認する**
   
-1. ローカル ユーザーとしてログインしている Windows 10 個人用デバイスで **、[Windows** 設定] に移動し、[アカウントアクセスの仕事または学校] をクリックまたは \> **タップします**。
+1. ローカル ユーザー Windows 10ログインしている個人用デバイスで、[Windows 設定] に移動し、[アカウントアクセスの仕事または学校] をクリックまたは \> **タップします**。
     
 2. [ **職場または学校にアクセスする**] の下で [ **接続**] を選びます。
     
-3. [仕事または学校のアカウントの設定] ダイアログに Microsoft 365 Business Premium 資格情報を入力 **して** \> **サインインします**。
+3. [仕事Microsoft 365 Business Premiumアカウントの設定] ダイアログに資格情報を入力 **します** \> 。サインイン **します**。
     
 4. [ **職場または学校にアクセスする**] ページで、[ **職場または学校アカウント**] を選んで、[ **情報**] を選びます。
     
@@ -80,7 +80,7 @@ ms.locfileid: "51579864"
   
  **管理されていないアプリに会社のデータを貼り付けできないことを確認する**
   
-1. Outlook 2016 を開き、必要に応じて Microsoft 365 Business Premium アカウントを追加し、Microsoft 365 Business Premium 資格情報でサインインします。
+1. アカウントOutlook 2016開き、必要に応Microsoft 365 Business Premiumアカウントを追加し、資格情報を使用Microsoft 365 Business Premiumします。
     
 2. メールを開き、そこから一部のコンテンツをコピーします。
     

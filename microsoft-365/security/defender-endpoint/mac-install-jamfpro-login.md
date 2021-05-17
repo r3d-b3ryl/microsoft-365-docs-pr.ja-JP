@@ -1,6 +1,6 @@
 ---
-title: Jamf Pro にログインする
-description: Jamf Pro にログインする
+title: Jamf にログインPro
+description: Jamf にログインPro
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935583"
 ---
-# <a name="log-in-to-jamf-pro"></a>Jamf Pro にログインする
+# <a name="log-in-to-jamf-pro"></a>Jamf にログインPro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,17 +37,17 @@ ms.locfileid: "51935583"
 
 1. 資格情報を入力します。
 
-    ![Jamf Pro ダッシュボード 1 のイメージ](images/jamf-pro-portal1.png)
+    ![Jamf ダッシュボードのPro 1](images/jamf-pro-portal1.png)
 
 2. [コンピューター **] を選択します**。
 
-    ![Jamf Pro ダッシュボード 2 のイメージ](images/jamf-pro-dashboard.png)
+    ![Jamf ダッシュボードのPro 2](images/jamf-pro-dashboard.png)
 
 3. 使用可能な設定が表示されます。
 
-     ![Jamf Pro ダッシュボード 3 のイメージ](images/jamfpro-settings.png)
+     ![ダッシュボード 3 の Jamf Proイメージ](images/jamfpro-settings.png)
 
 
 ## <a name="next-step"></a>次の手順
-[Jamf Pro でデバイス グループをセットアップする](mac-jamfpro-device-groups.md)
+[Jamf グループでデバイス グループをセットアップPro](mac-jamfpro-device-groups.md)
 

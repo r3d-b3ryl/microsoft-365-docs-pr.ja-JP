@@ -35,7 +35,7 @@ ms.locfileid: "51935391"
 
 このセクションでは、Defender for Endpoint のプライバシーとデータ処理に関してよく寄せられる質問について説明します。
 > [!NOTE]
-> このドキュメントでは、Defender for Endpoint に関連するデータストレージとプライバシーの詳細について説明します。 Defender for Endpoint および Microsoft Defender Antivirus や Windows 10 などの他の製品およびサービスに関連する詳細については [、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=827576)。 詳細については [、「Windows 10 プライバシーに関するよく](https://go.microsoft.com/fwlink/?linkid=827577) 寄せられる質問」も参照してください。
+> このドキュメントでは、Defender for Endpoint に関連するデータストレージとプライバシーの詳細について説明します。 Defender for Endpoint および他の製品およびサービス (Microsoft Defender ウイルス対策 および Windows 10に関する詳細については[、「Microsoft Privacy Statement」を参照してください](https://go.microsoft.com/fwlink/?linkid=827576)。 詳細については[、「Windows 10 FAQ」](https://go.microsoft.com/fwlink/?linkid=827577)を参照してください。
 
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Microsoft Defender for Endpoint が収集するデータは何ですか?
@@ -44,7 +44,7 @@ Microsoft Defender for Endpoint は、管理、追跡、およびレポートの
 
 収集される情報には、ファイル データ (ファイル名、サイズ、ハッシュなど)、プロセス データ (実行中のプロセス、ハッシュ)、レジストリ データ、ネットワーク接続データ (ホスト IP とポート)、デバイスの詳細 (デバイス識別子、名前、オペレーティング システムのバージョンなど) が含まれます。
 
-Microsoft は、このデータを Microsoft Azure に安全に保存し、Microsoft のプライバシープラクティスと Microsoft Trust Center ポリシーに従 [ってデータを保持します](https://go.microsoft.com/fwlink/?linkid=827578)。
+Microsoft は、このデータをセキュリティで保護Microsoft Azure、Microsoft のプライバシープラクティスと Microsoft Trust Center ポリシーに従[って管理します](https://go.microsoft.com/fwlink/?linkid=827578)。
 
 このデータを使用すると、Defender for Endpoint は次の操作を実行できます。
 - 組織内の攻撃の指標 (IOA) を積極的に特定する
@@ -54,7 +54,7 @@ Microsoft は、このデータを Microsoft Azure に安全に保存し、Micro
 Microsoft は広告にデータを使用しない。
 
 ## <a name="data-protection-and-encryption"></a>データ保護と暗号化
-Defender for Endpoint サービスは、Microsoft Azure インフラストラクチャに基づく最新のデータ保護テクノロジを利用します。 
+Defender for Endpoint サービスは、最新のデータ保護テクノロジを利用し、最新のインフラストラクチャに基Microsoft Azureします。 
 
 弊社のサービスが管理するデータ保護に関連するさまざまな側面があります。 暗号化は最も重要な 1 つであり、保存時のデータ暗号化、飛行中の暗号化、Key Vault によるキー管理が含まれます。 Defender for Endpoint サービスで使用される他のテクノロジの詳細については、「Azure 暗号化の [概要」を参照してください](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)。 
 
@@ -63,7 +63,7 @@ Defender for Endpoint サービスは、Microsoft Azure インフラストラク
 
 ## <a name="data-storage-location"></a>データの保存場所
 
-Defender for Endpoint は、欧州連合、英国、または米国の Microsoft Azure データセンターで動作します。 サービスによって収集された顧客データは、(a) プロビジョニング中に特定されたテナントの地理的位置、または (b) Defender for Endpoint が別の Microsoft オンライン サービスを使用してそのようなデータを処理する場合、その他のオンライン サービスのデータストレージ ルールで定義される地理的位置に格納されます。
+Defender for Endpoint は、Microsoft Azure、英国、または米国のデータセンターで動作します。 サービスによって収集された顧客データは、(a) プロビジョニング中に特定されたテナントの地理的位置、または (b) Defender for Endpoint が別の Microsoft オンライン サービスを使用してそのようなデータを処理する場合、その他のオンライン サービスのデータストレージ ルールで定義される地理的位置に格納されます。
 
 仮名化された形式の顧客データは、米国の中央ストレージおよび処理システムに保存される場合があります。
 
@@ -82,7 +82,7 @@ Microsoft の開発者と管理者は、設計上、サービスの運用と進�
 
 さらに、Microsoft は特定の運用担当者のバックグラウンド検証チェックを実施し、バックグラウンド検証のレベルに応じてアプリケーション、システム、およびネットワーク インフラストラクチャへのアクセスを制限します。 運用担当者は、業務の遂行中に顧客のアカウントまたは関連情報にアクセスする必要がある場合、正式なプロセスに従います。
 
-Microsoft Azure Government データ センターに展開されているサービスのデータへのアクセスは、FedRAMP、NIST 800.171 (DIB)、ITAR、IRS 1075、DoD L4、CJIS などの特定の政府の規制および要件の対象となるデータを処理するために、画面表示および承認を受け、承認された運用担当者にのみ付与されます。
+Microsoft Azure Government データ センターに展開されるサービスのデータへのアクセスは、FedRAMP、NIST 800.171 (DIB)、ITAR、IRS 1075、DoD L4、CJIS など、特定の政府の規制および要件の対象となるデータの処理を承認された運用担当者にのみ付与されます。
 
 
 ## <a name="is-data-shared-with-other-customers"></a>データは他の顧客と共有されていますか?

@@ -35,7 +35,7 @@ ms.locfileid: "51932585"
 **適用対象:**
 - Microsoft 365 Defender
 
-高度な検索スキーマの表には `AlertEvidence` 、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、Microsoft Defender for Identity からのアラートに関連付けられたさまざまなエンティティ (ファイル、IP アドレス、URL、[](advanced-hunting-overview.md)ユーザー、またはデバイス) に関する情報が含まれます。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度な検索スキーマの表には `AlertEvidence` 、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、および Microsoft Defender for Identity からのアラートに関連付けられたさまざまなエンティティ (ファイル[](advanced-hunting-overview.md)、IP アドレス、URL、ユーザー、またはデバイス) に関する情報が含まれます。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -58,7 +58,7 @@ ms.locfileid: "51932585"
 | `AccountName` | 文字列 | アカウントのユーザー名 |
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | string | Azure Active Directory のアカウントの一意識別子 |
+| `AccountObjectId` | string | アカウントの一意の識別子は、Azure Active Directory |
 | `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
 | `DeviceId` | string | サービス内のデバイスの一意の識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |

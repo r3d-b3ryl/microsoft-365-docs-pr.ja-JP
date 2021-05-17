@@ -1,6 +1,6 @@
 ---
 title: 高度な検索スキーマの AADSignInEventsBeta テーブル
-description: 高度なハンティング スキーマの Azure Active Directory サインイン イベント テーブルに関連付けられている情報について説明します。
+description: 高度なハンティング スキーマAzure Active Directoryサインイン イベント テーブルに関連付けられている情報について説明します。
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、説明、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -34,12 +34,12 @@ ms.locfileid: "51932609"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> この `AADSignInEventsBeta` 表は現在ベータ版で、Azure Active Directory (AAD) サインイン イベントをハントするために短期的に提供されています。 最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。<br><br>
-> Azure Defender の統合された Microsoft Defender for Endpoint ソリューションを通じて Microsoft 365 Defender にアクセスできますが、microsoft Defender for Office、Microsoft Defender for Identity、または Microsoft Cloud App Security のライセンスを持ってないお客様は、このスキーマを表示できません。 
+> この表は現在ベータ版で、短期的に提供され、Azure Active Directory (AAD) サインイン イベントを `AADSignInEventsBeta` ハントできます。 最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。<br><br>
+> Azure Defender の統合された Microsoft Defender for Endpoint ソリューションを通じて Microsoft 365 Defender にアクセスできますが、Microsoft Defender for Office、Microsoft Defender for Identity、または Microsoft Cloud App Security のライセンスを持ってないお客様は、このスキーマを表示できません。 
 
  
 
-高度 `AADSignInEventsBeta` な検索スキーマの表には、Azure Active Directory 対話型サインインと非対話型サインインに関する情報が含まれます。Azure Active Directory サインイン アクティビティ レポートのサインインについて詳 [しくは、「プレビュー」をご覧ください](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
+高度 `AADSignInEventsBeta` な検索スキーマの表には、対話型および非対話型Azure Active Directoryに関する情報が含まれている。詳細については、「サインイン アクティビティ レポート - プレビュー Azure Active Directory[サインイン」を参照してください](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
 
 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)」 を参照してください。
@@ -61,7 +61,7 @@ ms.locfileid: "51932609"
 | `AccountObjectId`                 | string        | Azure アカウントのアカウントの一意AD                                                                                                                                       |
 | `AccountUpn`                      | string        | アカウントのユーザー プリンシパル名 (UPN)                                                                                                                                            |
 | `IsExternalUser`                  | int        | サインインしたユーザーが外部かどうかを示します。 指定できる値: -1 (設定されていない) 、0 (外部ではない)、1 (外部)。                                                                   |
-| `IsGuestUser`                     | ブール値       | サインインしたユーザーがテナントのゲストかどうかを示します。                                                                                                                  |
+| `IsGuestUser`                     | boolean       | サインインしたユーザーがテナントのゲストかどうかを示します。                                                                                                                  |
 | `AlternateSignInName`             | string        | Azure サーバーにサインインするユーザーのオンプレミス ユーザー プリンシパル名 (UPN) AD                                                                                                            |
 | `LastPasswordChangeTimestamp`     | 日付型        | 最後にサインインしたユーザーがパスワードを変更した日時                                                                                                              |
 | `ResourceDisplayName`             | string        | アクセスされたリソースの表示名                                                                                                                                               |
@@ -75,7 +75,7 @@ ms.locfileid: "51932609"
 | `IsCompliant`                     | int       | サインインを開始したデバイスが準拠 (1) か非準拠 (0) かを示します。                                                                                       |
 | `AuthenticationProcessingDetails` | string        | 認証プロセッサの詳細                                                                                                                                          |
 | `AuthenticationRequirement`       | string        | サインインに必要な認証の種類。 指定できる値: multiFactorAuthentication (MFA が必要でした) と singleFactorAuthentication (MFA は必要ありません)。                |
-| `TokenIssuerType`                 | int        | トークン発行者が Azure Active Directory (0) または Active Directory フェデレーション サービス (1) かどうかを示します。                                                                             |
+| `TokenIssuerType`                 | int        | トークン発行者が (0) Azure Active Directory Active Directory フェデレーション サービス (1) かどうかを示します。                                                                             |
 | `RiskLevelAggregated`                       | int        | サインイン中の集計されたリスク レベル。 指定できる値: 0 (集計リスク レベルが設定されていない)、1 (なし)、10 (低)、50 (中程度)、または 100 (高) です。                               |
 | `RiskDetails`                      | int        | サインインしたユーザーの危険な状態の詳細                                                                                                                            |
 | `RiskState`                       | int        | 危険なユーザー状態を示します。 指定できる値は、0 (なし)、1 (安全確認済み)、2 (修復済み)、3 (却下)、4 (危険にさらされている)、または 5 (確認済み侵害) です。                                |

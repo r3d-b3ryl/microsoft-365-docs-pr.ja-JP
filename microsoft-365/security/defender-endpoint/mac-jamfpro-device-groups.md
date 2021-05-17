@@ -1,6 +1,6 @@
 ---
-title: Jamf Pro でデバイス グループを設定する
-description: MacOS のエンドポイント向け Microsoft Defender 用 Jamf Pro でデバイス グループを設定する方法について説明します。
+title: Jamf グループでデバイス グループをPro
+description: MacOS 上の Microsoft Defender for Endpoint Pro Jamf Proデバイス グループをセットアップする方法について説明します。
 keywords: device, group, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933807"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Jamf Pro の macOS デバイス グループで Microsoft Defender for Endpoint をセットアップする
+# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Jamf デバイス グループの macOS デバイス グループで Microsoft Defender for Endpoint をセットアップPro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51933807"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-グループ ポリシー組織単位 (OUs)、Microsoft Endpoint Configuration Manager のデバイス コレクション、Intune のデバイス グループに似たデバイス グループを設定します。
+グループ ポリシーの組織単位 (OUs)、Microsoft Endpoint Configuration Managerコレクション、Intune のデバイス グループに似たデバイス グループを設定します。
 
 1. [静的コンピューター **グループ] に移動します**。
 
@@ -52,4 +52,4 @@ ms.locfileid: "51933807"
     ![Jamf Pro3 の画像](images/contoso-machine-group.png)
 
 ## <a name="next-step"></a>次の手順
-- [Jamf Pro の macOS ポリシーで Microsoft Defender for Endpoint をセットアップする](mac-jamfpro-policies.md)
+- [Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro](mac-jamfpro-policies.md)

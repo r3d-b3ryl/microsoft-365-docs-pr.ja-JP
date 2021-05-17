@@ -1,7 +1,7 @@
 ---
 title: インストールされたソフトウェアを取得する
 description: 特定のデバイス ID に関連するインストール済みソフトウェアのコレクションを取得します。
-keywords: apis、 graph api, supported apis, get, list, file, information, software inventory, installed software per device, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
+keywords: apis、 graph api, supported apis, get, list, file, information, software inventory, installed software per device, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy

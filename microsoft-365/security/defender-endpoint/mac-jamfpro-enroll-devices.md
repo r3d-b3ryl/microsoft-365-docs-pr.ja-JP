@@ -1,6 +1,6 @@
 ---
-title: MacOS デバイスの Microsoft Defender for Endpoint を Jamf Pro に登録する
-description: MacOS デバイスの Microsoft Defender for Endpoint を Jamf Pro に登録する
+title: MacOS デバイス上の Microsoft Defender for Endpoint を Jamf デバイスに登録Pro
+description: MacOS デバイス上の Microsoft Defender for Endpoint を Jamf デバイスに登録Pro
 keywords: microsoft、 defender、 Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933099"
 ---
-# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>MacOS デバイスの Microsoft Defender for Endpoint を Jamf Pro に登録する 
+# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>MacOS デバイス上の Microsoft Defender for Endpoint を Jamf デバイスに登録Pro 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,7 +50,7 @@ JamF に登録するには、複数の方法があります。
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>登録方法 1: 登録の招待
 
-1. Jamf Pro ダッシュボードで、[登録の招待] **に移動します**。
+1. Jamf Proで、[登録の招待]**に移動します**。
 
     ![構成設定のイメージ1](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
@@ -80,7 +80,7 @@ JamF に登録するには、複数の方法があります。
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>登録方法 2: 事前登録
 
-1. Jamf Pro ダッシュボードで、[Prestage 登録 **] に移動します**。
+1. Jamf Proで **、[Prestage 登録] に移動します**。
 
     ![構成設定のイメージ 9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
@@ -90,24 +90,24 @@ JamF に登録するには、複数の方法があります。
 
 1. [ **続行] を** 選択し、[システムの基本設定] ウィンドウから **CA 証明書をインストール** します。
 
-    ![Jamf Pro 登録のイメージ1](images/jamfpro-ca-certificate.png)
+    ![Jamf の登録Pro 1](images/jamfpro-ca-certificate.png)
 
 2. CA 証明書がインストールされた後、ブラウザー ウィンドウに戻り、[続行] を **選択して** MDM プロファイルをインストールします。 
 
-    ![Jamf Pro 登録のイメージ2](images/jamfpro-install-mdm-profile.png)
+    ![Jamf の登録Pro 2](images/jamfpro-install-mdm-profile.png)
 
 3. [JAMF **からの** ダウンロードを許可する] を選択します。
 
-    ![Jamf Pro 登録のイメージ3](images/jamfpro-download.png)
+    ![Jamf の登録Pro 3](images/jamfpro-download.png)
 
 4. [続行 **] を** 選択して MDM プロファイルのインストールを続行します。 
 
-    ![Jamf Pro 登録のイメージ 4](images/jamfpro-install-mdm.png)
+    ![Jamf ファイルの登録Pro 4](images/jamfpro-install-mdm.png)
 
 5. [続行 **] を** 選択して MDM プロファイルをインストールします。
 
-    ![Jamf Pro 登録のイメージ5](images/jamfpro-mdm-unverified.png)
+    ![Jamf の登録Pro 5](images/jamfpro-mdm-unverified.png)
 
 6. [続行 **] を**  選択して構成を完了します。 
 
-    ![Jamf Pro 登録のイメージ6](images/jamfpro-mdm-profile.png)
+    ![Jamf ファイルの登録Pro 6](images/jamfpro-mdm-profile.png)

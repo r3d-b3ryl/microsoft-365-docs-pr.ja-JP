@@ -37,25 +37,25 @@ ms.locfileid: "51933915"
 > [!IMPORTANT]
 > このスクリプトは、最大 10 台のデバイスで使用するために最適化されています。
 >
-> 大規模に展開するには、他の [展開オプションを使用します](configure-endpoints.md)。 たとえば、グループ ポリシーを使用してオンボード Windows 10 デバイスで使用可能なスクリプトを使用して、オンボーディング スクリプトを実稼働 [環境の 10](configure-endpoints-gp.md)台以上のデバイスに展開できます。
+> 大規模に展開するには、他の [展開オプションを使用します](configure-endpoints.md)。 たとえば、オンボーディング スクリプトを 10 台以上のデバイスに展開し、グループ ポリシーを使用してオンボード Windows 10 デバイスで使用[できます](configure-endpoints-gp.md)。
 
 ## <a name="onboard-devices"></a>デバイスのオンボード 
 
 [![さまざまな展開パスを示す PDF のイメージ](images/onboard-script.png)](images/onboard-script.png#lightbox)
 
 
-PDF または[Visio を参照](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)[して、Defender](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) for Endpoint の展開のさまざまなパスを確認してください。 
+[[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。 
 
 
-1.  サービス オンボーディング ウィザードからダウンロードした GP *構成パッケージ*.zip ファイル (WindowsDefenderATPOnboardingPackage.zip) を開きます。 Microsoft Defender セキュリティ センターからパッケージ [を取得できます](https://securitycenter.windows.com/)。
+1.  サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは次の方法で取得[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
 
-    1. ナビゲーション ウィンドウで、[設定オンボーディング]  >  **を選択します**。
+    1. ナビゲーション ウィンドウで、[オンボーディング]**設定**  >  **選択します**。
 
-    1. オペレーティング システムとして [Windows 10] を選択します。
+    1. オペレーティング システムWindows 10を選択します。
 
     1. [展開方法 **] フィールドで** 、[ローカル スクリプト] **を選択します**。
 
-    1. [パッケージ **のダウンロード] を** クリックし、.zip ファイルを保存します。
+    1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
   
 2.  構成パッケージの内容を、オンボードするデバイスの場所 (デスクトップなど) に展開します。 *WindowsDefenderATPOnboardingScript.cmd という名前のファイルが必要です*。
@@ -79,7 +79,7 @@ PDF または[Visio を参照](https://github.com/MicrosoftDocs/microsoft-365-do
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint エンドポイントで検出テストを実行する [」を参照してください](run-detection-test.md)。
 
 ## <a name="configure-sample-collection-settings"></a>サンプル コレクション設定の構成
-デバイスごとに構成値を設定して、Microsoft Defender Security Center を介して詳細分析用のファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかを示します。
+デバイスごとに構成値を設定して、Microsoft Defender セキュリティ センター から詳細分析用にファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかを示します。
 
 regedit を使用するか *、.reg* ファイルを作成して実行することで、デバイスのサンプル共有設定 *を手動で構成* できます。  
 
@@ -105,17 +105,17 @@ Value: 0 or 1
 > [!NOTE]
 > オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。
 
-1. Microsoft Defender セキュリティ センターからオフボード パッケージ [を取得します](https://securitycenter.windows.com/)。
+1. 次の方法でオフボード[パッケージを取得Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
 
-    1. ナビゲーション ウィンドウで、[設定] [**オフボード]**  >  **を選択します**。
+    1. ナビゲーション ウィンドウで、[オフボーディング]**設定**  >  **選択します**。
 
-    1. オペレーティング システムとして [Windows 10] を選択します。
+    1. オペレーティング システムWindows 10を選択します。
 
     1. [展開方法 **] フィールドで** 、[ローカル スクリプト] **を選択します**。
 
-    1. [パッケージ **のダウンロード] を** クリックし、.zip ファイルを保存します。
+    1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
-2. .zip ファイルの内容を、デバイスがアクセスできる共有の読み取り専用の場所に展開します。 *-MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
+2. デバイスがアクセスできる共有.zipファイルの内容を読み取り専用の場所に抽出します。 *-MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
 
 3.  デバイスで管理者特権のコマンド ライン プロンプトを開き、スクリプトを実行します。
 
@@ -139,7 +139,7 @@ Value: 0 or 1
 監視は、ポータルまたはさまざまな展開ツールを使用して直接実行することもできます。
 
 ### <a name="monitor-devices-using-the-portal"></a>ポータルを使用してデバイスを監視する
-1. [Microsoft Defender セキュリティ センター] に移動します。
+1. [次へ] Microsoft Defender セキュリティ センター。
 
 2. [デバイス **] リストをクリックします**。
 
@@ -147,8 +147,8 @@ Value: 0 or 1
 
 
 ## <a name="related-topics"></a>関連項目
-- [グループ ポリシーを使用した Windows 10 デバイスのオンボード](configure-endpoints-gp.md)
-- [Microsoft Endpoint Configuration Manager を使用した Windows 10 デバイスのオンボード](configure-endpoints-sccm.md)
+- [グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)
+- [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
 - [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)

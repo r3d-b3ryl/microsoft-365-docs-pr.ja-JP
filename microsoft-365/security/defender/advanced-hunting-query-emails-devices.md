@@ -1,7 +1,7 @@
 ---
 title: 高度な検索機能を使用して、デバイス、電子メール、アプリ、および ID 間の脅威を検出する
 description: デバイス、電子メール、アプリ、および ID をカバーする一般的な検索シナリオとサンプル クエリを調査します。
-keywords: 高度なハンティング、Office365 データ、Windows デバイス、Office365 メール正規化、電子メール、アプリ、ID、脅威ハンティング、サイバー脅威ハンティング、検索、クエリ、テレメトリ、Microsoft 365、Microsoft 365 Defender
+keywords: 高度な検索、Office365 データ、Windows デバイス、Office365 メールの正規化、電子メール、アプリ、ID、脅威の検出、サイバー脅威の検出、検索、クエリ、テレメトリ、Microsoft 365、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,10 +35,10 @@ ms.locfileid: "51932967"
 **適用対象:**
 - Microsoft 365 Defender
 
-[](advanced-hunting-overview.md) Microsoft 365 Defender での高度な検索を使用すると、次の脅威を積極的に検索できます。
+[Defender での](advanced-hunting-overview.md)高度なMicrosoft 365を使用すると、次に示す脅威を積極的に検索できます。
 - Microsoft Defender for Endpoint によって管理されるデバイス
-- Microsoft 365 によって処理されるメール
-- Microsoft Cloud App Security および Microsoft Defender for Identity によって追跡されるクラウド アプリアクティビティ、認証イベント、ドメイン コントローラーアクティビティ
+- ユーザーが処理するメールMicrosoft 365
+- クラウド アプリのアクティビティ、認証イベント、およびドメイン コントローラーのアクティビティは、Microsoft Cloud App Security Microsoft Defender for Identity によって追跡されます。
 
 このレベルの可視性により、電子メールや Web に届く高度な侵入、ローカル特権の昇格、特権ドメイン資格情報の取得、デバイス間の横方向への移動など、ネットワークのセクションを横断する脅威をすばやく探し出す可能性があります。 
 

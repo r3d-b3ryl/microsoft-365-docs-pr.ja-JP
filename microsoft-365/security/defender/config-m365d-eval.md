@@ -1,7 +1,7 @@
 ---
-title: 試用版ラボまたはパイロット環境用に Microsoft 365 Defender の柱を構成する
-description: Microsoft 365 Defender の柱 (microsoft Defender for Office 365、Microsoft Defender for Identity、Microsoft Cloud App Security、Microsoft Defender for Endpoint など) を、試用版ラボまたはパイロット環境用に構成します。
-keywords: Microsoft 365 Defender 試用版、Microsoft 365 Defender 試用版の構成、Microsoft 365 Defender パイロット プロジェクトの構成、Microsoft 365 Defender の柱の構成、Microsoft 365 Defender の柱の構成
+title: 試用版Microsoft 365パイロット環境用に Defender の柱を構成する
+description: Microsoft 365ラボまたはパイロット環境用に、Microsoft Defender for Office 365、Microsoft Defender for Identity、Microsoft Cloud App Security、Microsoft Defender for Endpoint などの Defender の柱を構成します。
+keywords: Defender 試用版Microsoft 365の構成、Microsoft 365 Defender 試用版の構成、Microsoft 365 Defender パイロット プロジェクトの構成、Defender の柱の構成、Defender のMicrosoft 365、Defender のMicrosoft 365の柱
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,7 +28,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933507"
 ---
-# <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>試用版ラボまたはパイロット環境用に Microsoft 365 Defender の柱を構成する
+# <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>試用版Microsoft 365パイロット環境用に Defender の柱を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "51933507"
 - Microsoft 365 Defender
 
 
-Microsoft 365 Defender 試用版ラボまたはパイロット環境を作成し、それを展開するには、次の 3 段階のプロセスを実行します。
+Defender 試用版Microsoft 365を作成し、展開するには、次の 3 段階のプロセスを実行します。
 
 |[![フェーズ 1: 準備](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[フェーズ 1: 準備](prepare-m365d-eval.md) |[![フェーズ 2: 設定](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[フェーズ 2: 設定](setup-m365deval.md) |![フェーズ 3: オンボード](../../media/phase-diagrams/onboard.png)<br/>フェーズ 3: オンボード | [![パイロットに戻る](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[パイロット プレイブックに戻る](m365d-pilot.md) |
 |--|--|--|--|
@@ -48,10 +48,10 @@ Microsoft 365 Defender 試用版ラボまたはパイロット環境を作成し
 展開が成功するには、準備が重要です。 この記事では、Microsoft Defender for Endpoint の展開を準備する際に考慮する必要がある点について説明します。
 
 
-## <a name="microsoft-365-defender-pillars"></a>Microsoft 365 Defender の柱
-Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱は既にネットワーク組織のセキュリティに価値を提供することができますが、4 つの Microsoft 365 Defender の柱を有効にすると、組織に最も価値があります。
+## <a name="microsoft-365-defender-pillars"></a>Microsoft 365ディフェンダーの柱
+Microsoft 365Defender は 4 つの柱で構成されます。 1 つの柱は既にネットワーク組織のセキュリティに価値を提供することができますが、Defender の 4 つの柱を有効にすると、Microsoft 365が最も大きな価値を与える可能性があります。
 
-![イメージ of_Microsoftユーザー向け 365 Defender ソリューション、Microsoft Defender for Identity、エンドポイント用 Microsoft Defender for Endpoint、クラウド アプリ、Microsoft Cloud App Security、およびデータの場合、Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
+![イメージ of_Microsoftユーザー向け 365 Defender ソリューション、Microsoft Defender for Identity、エンドポイント用 Microsoft Defender for Endpoint、クラウド アプリ、Microsoft Cloud App Security、データの場合は Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
 
 このセクションでは、次の構成について説明します。
 -   Microsoft Defender for Office 365
@@ -63,22 +63,22 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 ## <a name="configure-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
 >[!NOTE]
->365 の Defender を既に有効にしている場合は、このOfficeスキップします。 
+>Defender for Office 365 を既に有効にしている場合は、この手順を省略Office 365。 
 
-これらの設定の一部を特定するのに役立つ Office 365 Advanced Threat Protection Recommended *Configuration Analyzer (ORCA)* と呼ばれる PowerShell モジュールがあります。 テナントで管理者として実行すると、get-ORCAReport はスパム対策、フィッシング対策、その他のメッセージ衛生設定の評価を生成するのに役立ちます。 このモジュールは、 からダウンロードできます https://www.powershellgallery.com/packages/ORCA/ 。 
+これらの設定の一部を特定するのに役立つ Office 365 Advanced *Threat Protection Recommended Configuration Analyzer (ORCA)* と呼ばれる PowerShell モジュールがあります。 テナントで管理者として実行すると、get-ORCAReport はスパム対策、フィッシング対策、その他のメッセージ衛生設定の評価を生成するのに役立ちます。 このモジュールは、 からダウンロードできます https://www.powershellgallery.com/packages/ORCA/ 。 
 
-1. [365 セキュリティ Officeコンプライアンス センター&管理ポリシーに](https://protection.office.com/homepage)  >  **移動**  >  **します**。
+1. [コンプライアンス センター [Office 365管理&セキュリティ ポリシー](https://protection.office.com/homepage)  >  **] に移動**  >  **します**。
 
    ![Image of_Office 365 セキュリティ & コンプライアンス センターの脅威管理ポリシー ページ](../../media/mtp-eval-32.png)
  
-2. [ **フィッシング対策] をクリックし**、[ポリシー **名と説明を作成** して入力する] を選択します。 [ **次へ**] をクリックします。
+2. [ **フィッシング対策] をクリックし**、[ポリシー **名と説明を作成** して入力する] を選択します。 **[次へ]** をクリックします。
 
    ![ポリシーに名前Officeできる 365 セキュリティ & コンプライアンス センターのフィッシング対策ポリシー ページの画像](../../media/mtp-eval-33.png)
 
    > [!NOTE]
-   > Microsoft Defender の高度なフィッシング対策ポリシーを編集して、Office 365 に設定します。 [高度 **なフィッシングのしきい値] を** **2 - アグレッシブ に変更します**。
+   > Microsoft Defender で高度なフィッシング対策ポリシーを編集し、Office 365。 [高度 **なフィッシングのしきい値] を** **2 - アグレッシブ に変更します**。
 
-3. [条件 **の追加] ドロップダウン メニュー** をクリックし、ドメインを受信者ドメインとして選択します。 [ **次へ**] をクリックします。
+3. [条件 **の追加] ドロップダウン メニュー** をクリックし、ドメインを受信者ドメインとして選択します。 **[次へ]** をクリックします。
 
    ![Image of_Office 365 Security & コンプライアンス センターのフィッシング対策ポリシー ページで、アプリケーションの条件を追加できます。](../../media/mtp-eval-34.png)
  
@@ -86,31 +86,31 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 
    ![Image of_Office 365 Security & コンプライアンス センターのフィッシング対策ポリシー ページで、設定を確認し、[このポリシーの作成] ボタンをクリックします。](../../media/mtp-eval-35.png)
  
-5. [ **安全な添付ファイル]** を **選択し、[SharePoint、OneDrive、および Microsoft Teams** の ATP を有効にする] オプションを選択します。
+5. **[セーフ添付ファイル]** を選択し、[ATP を有効にする] オプション **をSharePoint、OneDrive、Microsoft Teams** します。
 
-   ![SharePoint、oneDrive、および Microsoft Teams Office ATP を有効にできる & コンプライアンス センター ページの Image of_Office 365 セキュリティ センター](../../media/mtp-eval-36.png)
+   ![Image of_Office 365 セキュリティ & コンプライアンス センター] ページで、ATP を有効にし、SharePoint、OneDrive、およびMicrosoft Teams](../../media/mtp-eval-36.png)
 
 6. [+] アイコンをクリックして新しい安全な添付ファイル ポリシーを作成し、ドメインに受信者ドメインとして適用します。 **[保存]** をクリックします。
 
    ![Image of_Office 365 セキュリティ & コンプライアンス センター] ページで、新しい安全な添付ファイル ポリシーを作成できます](../../media/mtp-eval-37.png)
  
-7. 次に、[安全な **リンク] ポリシーを** 選択し、鉛筆アイコンをクリックして既定のポリシーを編集します。
+7. 次に、[リンク] セーフ **を** 選択し、鉛筆アイコンをクリックして既定のポリシーを編集します。
 
-8. 残りのオプション **が選択** されている間は、[ユーザーが安全なリンクをクリックしても追跡しない] オプションが選択されていないことを確認します。 詳細については [、「セーフ リンクの設定」](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) を参照してください。 **[保存]** をクリックします。 
+8. 残りのオプション **が選択** されている間は、[ユーザーが安全なリンクをクリックしても追跡しない] オプションが選択されていないことを確認します。 詳細については[セーフリンクの設定を](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365)参照してください。 **[保存]** をクリックします。 
 
    ![Image of_Office 365 セキュリティ & コンプライアンス センター] ページで、[ユーザーが安全をクリックしても追跡しない] オプションが選択されていないことを示します。](../../media/mtp-eval-38.png)
 
 9. 次に、マルウェア **対策ポリシーを** 選択し、既定を選択し、鉛筆アイコンを選択します。
 
-10. [設定 **] をクリック** し、[はい] を選択し、既定 **の通知テキストを使用して** マルウェア検出応答 **を有効にします**。 [共通の **添付ファイルの種類] フィルターを有効** にする。 **[保存]** をクリックします。
+10. [マルウェア **設定]** をクリックし、[はい] を **選択し**、既定の通知テキストを使用してマルウェア検出応答 **を有効にします**。 [共通の **添付ファイルの種類] フィルターを有効** にする。 **[保存]** をクリックします。
 
     ![Image of_Office 365 Security & コンプライアンス センター] ページで、マルウェア検出応答が既定の通知でオンになっていて、一般的な添付ファイルの種類フィルターがオンになっていることを示します。](../../media/mtp-eval-39.png)
   
-11. コンプライアンス センター[検索Office 365 セキュリティ](https://protection.office.com/homepage)&に移動し、[監査  >    >  ] をオンにします。
+11. コンプライアンス センター[のOffice 365監査ログ&に](https://protection.office.com/homepage)移動し、[監査  >    >  ] をオンにしてください。
 
     ![監査ログOffice有効&コンプライアンス センター ページの image of_Office 365 Security](../../media/mtp-eval-40.png)
 
-12. Microsoft Defender for Office 365 と Microsoft Defender for Endpoint を統合します。 [365 セキュリティ Officeコンプライアンス](https://protection.office.com/homepage)センター&管理エクスプローラーに移動し、画面の右上隅にある [エンドポイントの設定] で  >    >  **[Microsoft Defender for Endpoint Settings]** を選択します。 [Defender for Endpoint 接続] ダイアログ ボックスで、[エンドポイント用 **Microsoft Defender に接続する] をオンにします**。
+12. Microsoft Defender for Office 365 Microsoft Defender for Endpoint に統合します。 [コンプライアンス センター [Office 365セキュリティ&管理](https://protection.office.com/homepage)エクスプローラー] に移動し、画面の右上隅にある [エンドポイント設定  >    >  Microsoft Defender **for Endpoint** 設定] を選択します。 [Defender for Endpoint 接続] ダイアログ ボックスで、[エンドポイント用 Microsoft Defender Connect **を有効にします**。
 
     ![Image of_Office 365 Security & コンプライアンス センター] ページで、Microsoft Defender for Endpoint 接続をオンにできます](../../media/mtp-eval-41.png)
 
@@ -119,7 +119,7 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 >[!NOTE]
 >Microsoft Defender for Identity を既に有効にしている場合は、この手順を省略します。
 
-1. [Microsoft [365 セキュリティ](https://security.microsoft.com/info)センター] に移動し、[> Microsoft Defender for  >  **Identity] を選択します**。
+1. [セキュリティ センター] [Microsoft 365に移動>](https://security.microsoft.com/info) Microsoft Defender for Identity の  >  **その他のリソース] を選択します**。
 
    ![[of_Microsoft 365 セキュリティ センター] ページで、Microsoft Defender for Identity を開くオプションがあるイメージ](../../media/mtp-eval-42.png)
 
@@ -164,12 +164,12 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
     ![[of_theの設定] ページの [Microsoft Defender for Endpoint] トグルをオンにする必要があるイメージ](../../media/mtp-eval-52.png)
 
 
-## <a name="configure-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の構成
+## <a name="configure-microsoft-cloud-app-security"></a>構成Microsoft Cloud App Security
 
 > [!NOTE]
-> Microsoft Cloud App Security を既に有効にしている場合は、この手順を省略します。 
+> この手順は、既に有効にしている場合はMicrosoft Cloud App Security。 
 
-1. [Microsoft [365 セキュリティ センター] [](https://security.microsoft.com/info)その他の  >  **リソース**  >  **] Microsoft Cloud App Security に移動します**。
+1. [セキュリティ センターの [Microsoft 365リソース]](https://security.microsoft.com/info)  >  **ページに移動**  >  **Microsoft Cloud App Security。**
 
    ![イメージ of_Microsoft 365 セキュリティ センター ページで、Microsoft Cloud App カードを表示し、[開く] ボタンをクリックする必要があります。](../../media/mtp-eval-53.png)
 
@@ -180,7 +180,7 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
    > [!NOTE]
    > このプロンプトが表示されていない場合は、Microsoft Defender for Identity データ統合が既に有効になっている可能性があります。 ただし、確認できない場合は、IT 管理者に問い合わせて確認してください。 
 
-3. [設定] **に移動** し **、[Microsoft Defender for Identity 統合** ] トグルをオンにし、[保存] を **クリックします**。 
+3. [ユーザー]**設定、Microsoft** **Defender for Identity 統合** トグルをオンにし、[保存] を **クリックします**。 
 
    ![[of_the設定] ページで、Microsoft Defender for Identity 統合トグルをオンにし、[保存] をクリックします。](../../media/mtp-eval-55.png)
    
@@ -191,9 +191,9 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 
    ![Image of_the Microsoft Defender for Endpoint ページで、[Microsoft Defender for Endpoint の統合] の下にある [ブロックが許可されていないアプリ] チェック ボックスがオンです。 [保存] をクリックします。](../../media/mtp-eval-56.png)
 
-5. [クラウド検出の設定] で、[ **ユーザーエンリッチメント] を選択** し、Azure Active Directory との統合を有効にします。
+5. [クラウド検出の設定] で、[**ユーザーのエンリッチメント]** を選択し、次に[クラウド検出] Azure Active Directory。
 
-   ![[Azure Active Directory ユーザー名を使用して検出されたユーザー識別子を強化する] チェック ボックスがオンの [ユーザー エンリッチメントのイメージ] セクション](../../media/mtp-eval-57.png)
+   ![[ユーザー名を使用して検出されたユーザー識別子を強化する] チェック ボックスがオンAzure Active Directory[ユーザーエンリッチメント] セクションのイメージ](../../media/mtp-eval-57.png)
 
 
 ## <a name="configure-microsoft-defender-for-endpoint"></a>エンドポイント用の Microsoft Defender の構成
@@ -201,11 +201,11 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 >[!NOTE]
 >Microsoft Defender for Endpoint を既に有効にしている場合は、この手順を省略します。
 
-1. [Microsoft [365 セキュリティ センター] [](https://security.microsoft.com/info)その他の  >  **リソース**  >  **] [Microsoft Defender セキュリティ センター] に移動します**。 [ **開く**] をクリックします。
+1. [セキュリティ センターの [Microsoft 365リソース]](https://security.microsoft.com/info)  >  **ページに移動**  >  **Microsoft Defender セキュリティ センター。** [ **開く**] をクリックします。
 
-   ![[Of_Microsoft 365 セキュリティ センター] ページの [Defender セキュリティ センター] オプションのイメージ](../../media/mtp-eval-58.png)
+   ![[of_Microsoft センター] ページの [Defender セキュリティ センター] Microsoft 365オプションのイメージ](../../media/mtp-eval-58.png)
  
-2. Microsoft Defender for Endpoint ウィザードに従います。 [ **次へ**] をクリックします。 
+2. Microsoft Defender for Endpoint ウィザードに従います。 **[次へ]** をクリックします。 
 
    ![イメージ of_the Microsoft Defender セキュリティ センターウェルカム ウィザード ページ](../../media/mtp-eval-59.png)
 
@@ -216,13 +216,13 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
    > [!NOTE]
    > 後で、データストレージの場所など、一部の設定を変更することはできません。 
 
-   [ **次へ**] をクリックします。 
+   **[次へ]** をクリックします。 
 
 4. [ **続行] を** クリックすると、Microsoft Defender for Endpoint テナントがプロビジョニングされます。
 
    ![[of_the] ボタンをクリックしてクラウド インスタンスを作成するように求める画像のページ](../../media/mtp-eval-61.png)
 
-5. グループ ポリシー、Microsoft Endpoint Manager、または Microsoft Defender for Endpoint にローカル スクリプトを実行して、エンドポイントをオンボードします。 わかりやすくするために、このガイドではローカル スクリプトを使用します。
+5. グループ ポリシー、グループ ポリシー、または Microsoft Defender for Endpoint Microsoft エンドポイント マネージャーローカル スクリプトを実行して、エンドポイントをオンボードします。 わかりやすくするために、このガイドではローカル スクリプトを使用します。
 
 6. [ **パッケージのダウンロード]** をクリックし、オンボーディング スクリプトをエンドポイントにコピーします。
 
@@ -248,21 +248,21 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 
     ![ウィザードof_the確認メッセージが表示されたら、[Microsoft Defender for Endpoint の使用を開始する] をクリックする必要があります。](../../media/mtp-eval-67.png)
  
-12. Microsoft [Defender セキュリティ センターにアクセスします](https://securitycenter.windows.com/)。 [設定] に **移動し** 、[高度な機能 **] を選択します**。 
+12. ページにアクセス[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/) [詳細] に **設定** し、[高度な機能]**を選択します**。 
 
-    ![[Of_Microsoftセキュリティ センターの設定] メニューの [詳細機能] を選択する必要があります。](../../media/mtp-eval-68.png)
+    ![[詳細of_Microsoftを選択する設定 Defender Security Center のイメージ メニュー](../../media/mtp-eval-68.png)
 
 13. Microsoft Defender for Identity との統合 **を有効にする**。  
 
     ![イメージ of_Microsoft Defender Security Center Advanced 機能、有効にする必要がある Microsoft Defender for Identity オプショントグル](../../media/mtp-eval-69.png)
 
-14. 365 脅威インテリジェンス **とのOfficeを有効にする**。
+14. 脅威インテリジェンスとの統合を有効Office 365 **します**。
 
-    ![[of_Microsoft Defender Security Center Advanced 機能のイメージOffice 365 Threat Intelligence オプショントグルを有効にする必要がある場合](../../media/mtp-eval-70.png)
+    ![Defender security Center of_Microsoft高度な機能のイメージ、Office 365が有効にする必要がある脅威インテリジェンス オプショントグル](../../media/mtp-eval-70.png)
 
-15. Microsoft Cloud App Security との **統合を有効にする**。
+15. ユーザーとの統合を **有効Microsoft Cloud App Security。**
 
-    ![イメージ of_Microsoft Defender Security Center Advanced 機能、有効にする必要がある Microsoft Cloud App Security オプショントグル](../../media/mtp-eval-71.png)
+    ![イメージ of_Microsoft Defender Security Center Advanced の機能、Microsoft Cloud App Securityする必要があるオプショントグル](../../media/mtp-eval-71.png)
 
 16. 下にスクロールし、[ **基本設定の保存] をクリックして** 、新しい統合を確認します。
 
@@ -271,16 +271,16 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 ## <a name="start-the-microsoft-365-defender-service"></a>Microsoft 365 Defender サービスを開始する
 
 >[!NOTE]
->2020 年 6 月 1 日から、Microsoft は対象となるすべてのテナントに対して Microsoft 365 Defender 機能を自動的に有効にします。 詳細については [、ライセンスの適格性に関する Microsoft Tech Community の記事を](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) 参照してください。 
+>2020 年 6 月 1 日から、Microsoft は、対象Microsoft 365の Defender 機能を自動的に有効にします。 詳細については[、この Microsoft Tech Communityのライセンスの適格性に関する記事](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426)を参照してください。 
 
 
-[Microsoft [365 セキュリティ センター] に移動します](https://security.microsoft.com/homepage)。 [設定] **に移動** し **、[Microsoft 365 Defender] を選択します**。
+[セキュリティ センター [Microsoft 365] に移動します](https://security.microsoft.com/homepage)。 [ユーザー] に **設定** し、[Defender] を **Microsoft 365します**。
 
-![Microsoft 365 of_Microsoftの [セキュリティ センターの設定] ページのイメージ of_Microsoft 365 Defender オプションのスクリーンショット ](../../media/mtp-eval-72b.png) <br>
+![[of_Microsoft センター] ページのイメージ Microsoft 365 365 Defender 設定スクリーンショット ](../../media/mtp-eval-72b.png) <br>
 
-より包括的なガイダンスについては [、「Turn On Microsoft 365 Defender」を参照してください](m365d-enable.md)。 
+より包括的なガイダンスについては[、「Defender を有効にする」をMicrosoft 365してください](m365d-enable.md)。 
 
-お疲れさまでした。 Microsoft 365 Defender 試用版ラボまたはパイロット環境を作成しました。 これで、Microsoft 365 Defender ユーザー インターフェイスについて理解できます。 次の Microsoft 365 Defender 対話型ガイドから学習できる情報を参照し、各ダッシュボードを毎日のセキュリティ操作タスクに使用する方法について説明します。
+お疲れさまでした。 Defender 試用版ラボまたはパイロット環境Microsoft 365作成しました。 これで、Defender ユーザー インターフェイスのMicrosoft 365理解できます。 Defender 対話型ガイドの次のMicrosoft 365を参照し、各ダッシュボードを毎日のセキュリティ操作タスクに使用する方法について説明します。
 
 [対話型のガイドをチェックしてください](https://aka.ms/MTP-Interactive-Guide)
 
@@ -288,4 +288,4 @@ Microsoft 365 Defender は 4 つの柱で構成されています。 1 つの柱
 
 ## <a name="next-step"></a>次の手順
 
-- [テストアラートの生成](generate-test-alert.md) - Microsoft 365 Defender 試用版ラボで攻撃シミュレーションを実行します。
+- [テストアラートの生成](generate-test-alert.md)- Defender 試用版ラボで攻撃シミュレーションMicrosoft 365実行します。

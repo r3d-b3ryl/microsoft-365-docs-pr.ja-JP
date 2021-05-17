@@ -90,7 +90,7 @@ Outlook または Outlook on the web を使って自動拡張アーカイブに�
 
 - 自動拡張記憶域に移動されたものも含め、アーカイブ メールボックスの任意のフォルダーにアクセスできます。
 
-- 自動拡張アーカイブの検索は、Outlook for the web (OWA) で使用できます。 オンライン アーカイブと同様に、追加の記憶域に移動されたアイテムを検索できます。 OWA で検索範囲としてアーカイブを選択すると、すべてのアーカイブ (自動拡張アーカイブを含む) と、それに対応するサブフォルダーが検索されます。
+- 自動拡張アーカイブの検索は、web Outlook (OWA) で使用できます。 オンライン アーカイブと同様に、追加の記憶域に移動されたアイテムを検索できます。 OWA で検索範囲としてアーカイブを選択すると、すべてのアーカイブ (自動拡張アーカイブを含む) と、それに対応するサブフォルダーが検索されます。
 
 - 自動拡張アーカイブの検索は、Outlook デスクトップの最新チャネル (プレビュー) で利用できます。 このプレビューでは、「現在のメールボックス」範囲が利用可能で、自動拡張アーカイブを検索することができます。 この機能やその他の Microsoft Search サポート機能の詳細については、「[Microsoft Search を活用して Windows 版 Outlook を Exchange Online に接続する方法](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)」を参照してください。 
 

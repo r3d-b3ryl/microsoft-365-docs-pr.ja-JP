@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: ビジネス向け Microsoft 365 のお支払い方法を更新する方法について説明します。
+description: ビジネス向け支払い方法を更新する方法Microsoft 365説明します。
 ms.openlocfilehash: 3b659da6745c92d777629b2912114ee214582623
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "51580356"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-Microsoft 365 Business サブスクリプションの支払い方法を簡単に更新できます。 使用するクレジット カード、名前、住所などの詳細を変更できます。
+サブスクリプションの支払い方法を簡単にMicrosoft 365 Businessできます。 使用するクレジット カード、名前、住所などの詳細を変更できます。
 
 ## <a name="try-it"></a>お試しください!
 

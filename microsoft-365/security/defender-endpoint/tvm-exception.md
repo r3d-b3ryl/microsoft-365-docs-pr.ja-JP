@@ -1,7 +1,7 @@
 ---
-title: セキュリティに関する推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
-description: 脅威と脆弱性管理のセキュリティに関する推奨事項の例外を作成および監視します。
-keywords: Microsoft Defender for Endpoint tvm 修復、Microsoft Defender for Endpoint tvm、脅威と脆弱性管理、脅威 & 脆弱性管理、脅威 & 脆弱性管理修復、tvm 修復 intune、tvm 修復 sccm
+title: セキュリティ推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
+description: セキュリティに関する推奨事項に関する例外を作成および監視脅威と脆弱性の管理。
+keywords: エンドポイント tvm 修復用 Microsoft Defender、Microsoft Defender for Endpoint tvm、脅威と脆弱性の管理、脅威 & 脆弱性の管理、脅威& 脆弱性の管理 修復、tvm 修復 intune、tvm 修復 sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933747"
 ---
-# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>セキュリティに関する推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
+# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>セキュリティ推奨事項の例外を作成して表示する - 脅威と脆弱性の管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "51933747"
 
 推奨事項に対して例外が作成されると、例外期間が終了するまで、推奨事項はアクティブにされません。 推奨事項の状態が [完全な例外] **または [部分的な** 例外] (デバイス **グループ** 別) に変更されます。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>権限
 
 "例外処理" 権限を持つユーザーだけが例外を管理できます (作成またはキャンセルを含む)。 [RBAC の役割について詳しくは、次のページを参照してください](user-roles.md)。
 
@@ -62,9 +62,9 @@ ms.locfileid: "51933747"
 
 #### <a name="filtered-views"></a>フィルター処理されたビュー
 
-脅威と脆弱性の管理ページでデバイス グループでフィルター処理した場合、フィルター処理されたデバイス グループだけがオプションとして表示されます。
+任意のページでデバイス グループでフィルター処理した脅威と脆弱性の管理、フィルター処理されたデバイス グループだけがオプションとして表示されます。
 
-これは、脅威と脆弱性の管理ページでデバイス グループでフィルター処理するボタンです。 
+これは、デバイス グループ別にフィルター処理を行うボタンで、次のページ脅威と脆弱性の管理します。 
 
 ![選択したデバイス グループ フィルターを表示する。](images/tvm-selected-device-groups.png)
 
@@ -140,7 +140,7 @@ ms.locfileid: "51933747"
 
 ## <a name="related-topics"></a>関連項目
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [脆弱性を修復する](tvm-remediation.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)
 - [暴露スコア](tvm-exposure-score.md)

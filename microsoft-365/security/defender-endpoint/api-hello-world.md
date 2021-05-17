@@ -47,15 +47,15 @@ ms.locfileid: "51939614"
 - 使用例: 短い PowerShell スクリプトのコピー/貼り付けだけが必要
 
 ### <a name="do-i-need-a-permission-to-connect"></a>接続するアクセス許可が必要ですか?
-アプリケーション登録ステージでは、Azure Active Directory  (Azure Active Directory) テナントにグローバル管理者AD必要があります。
+アプリケーション登録ステージでは、ユーザー Azure Active Directory (Azure AD) テナントにグローバル管理者の役割が必要です。 
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a>手順 1 - Azure Active Directory でアプリを作成する
+### <a name="step-1---create-an-app-in-azure-active-directory"></a>手順 1 - アプリを作成Azure Active Directory
 
 1. グローバル管理者ユーザー [を使用](https://portal.azure.com) して Azure **にログオン** します。
 
-2. **[Azure Active Directory アプリの**  >  **登録] [新規登録**  >  **] に移動します**。 
+2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。 
 
-   ![Microsoft Azure のイメージとアプリケーション登録へのナビゲーション](images/atp-azure-new-app2.png)
+   ![アプリケーション登録Microsoft Azureナビゲーションのイメージ](images/atp-azure-new-app2.png)
 
 3. 登録フォームで、アプリケーションの名前を選択し、[登録] を **クリックします**。
 

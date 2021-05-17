@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 電話に Microsoft 365 Admin モバイル アプリをインストールする方法について説明します。
+description: スマートフォンに管理者用モバイル Microsoft 365をインストールする方法について学習します。
 ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580704"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>電話に Microsoft 365 Admin モバイル アプリをインストールする
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>電話に Microsoft 365管理者モバイル アプリをインストールする
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-Microsoft 365 Admin モバイル アプリを使用して、ユーザーの管理、サービスの正常性の監視、電話からのその他の管理タスクの実行を行うことができます。
+管理者モバイル アプリMicrosoft 365使用して、ユーザーの管理、サービスの正常性の監視、その他の管理タスクを携帯電話から実行できます。
 
 ## <a name="try-it"></a>お試しください!
 
-1. Microsoft 365 Admin モバイル アプリを取得するには、デバイスのアプリ ストアで  **Microsoft 365 Admin**  を検索してインストールします。
+1. 管理者モバイル Microsoft 365を取得するには、デバイスMicrosoft 365 **アプリ** ストアで管理者を検索してインストールします。
 2. グローバル管理者の電子メール アドレスでサインインし、ダッシュボードを表示してサービスの正常性を確認し、ユーザー ライセンスを監視し、メッセージとサービス要求を確認します。
 3. アプリで実行できる一般的なタスクを次に示します。
 
@@ -56,6 +56,6 @@ Microsoft 365 Admin モバイル アプリを使用して、ユーザーの管�
 
 ### <a name="turn-on-notifications"></a>通知を有効にする
 
-1. メイン メニューで、[設定] を  **選択します**。
+1. メイン メニューで、[次設定]**を選択します**。
 2. [アプリ  **の設定] で**、[通知]  **を選択します**。
 3. [サービスの正常性] と [メッセージ センター  **] の横にあるチェック**  ボックス  **をオンにします**。

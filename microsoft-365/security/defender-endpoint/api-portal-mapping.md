@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint detections API フィールド
-description: 検出 API フィールドが Microsoft Defender セキュリティ センターの値にマップされる方法を理解する
+description: '[検出] API フィールドが、アプリ内の値にマップされるMicrosoft Defender セキュリティ センター'
 keywords: 検出、検出フィールド、フィールド、API、フィールド、プル検出、rest api、要求、応答
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -33,11 +33,11 @@ ms.locfileid: "51933639"
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
-検出 API の一部として公開されるデータ フィールドと、そのデータ フィールドが Microsoft Defender セキュリティ センターにマップされる方法について説明します。
+検出 API の一部として公開されるデータ フィールドと、そのデータ フィールドが検出 API にマップMicrosoft Defender セキュリティ センター。
 
 >[!Note]
 >- [Defender for Endpoint Alert](alerts.md) は、1 つ以上の検出から構成されます。
->- **Microsoft Defender ATP 検出は** 、デバイスで発生した疑わしいイベントとその関連するアラートの詳細から **構成** されます。
+>- **Microsoft Defender ATP検出は**、デバイスとその関連するアラートの詳細で発生した疑わしいイベント **から構成** されます。
 >- Microsoft Defender for Endpoint Alert API は、アラートの使用に関する最新の API であり、各アラートに関連する証拠の詳細な一覧を含む。 詳細については、「Alert メソッドと[プロパティ」および「List alerts」](alerts.md)[を参照してください](get-alerts.md)。
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>検出 API フィールドとポータル マッピング
@@ -52,7 +52,7 @@ ms.locfileid: "51933639"
 > | ポータル ラベル   | SIEM フィールド名           | ArcSight フィールド      | 値の例                                                                      | 説明                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | name                | Microsoft Defender AV が 「ミカッツ」 の重大度の高いマルウェアを検出しました | すべての検出で使用可能な値。                                                                                                                                               |
-> | 2                | 重要度                  | deviceSeverity      | 高                                                                             | すべての検出で使用可能な値。                                                                                                                                               |
+> | 2                | 重要度                  | deviceSeverity      | 高い                                                                             | すべての検出で使用可能な値。                                                                                                                                               |
 > | 3                | カテゴリ                  | deviceEventCategory | マルウェア                                                               | すべての検出で使用可能な値。                                                                                                                                               |
 > | 4                | 検出ソース                    | sourceServiceName   | ウイルス対策                                                                 | Microsoft Defender ウイルス対策または Defender for Endpoint。 すべての検出で使用可能な値。                                                                                         |
 > | 5                | MachineName               | sourceHostName      | desktop-4a5ngd6                                                                           | すべての検出で使用可能な値。                                                                                                                                               |
@@ -74,7 +74,7 @@ ms.locfileid: "51933639"
 > |  21               | MachineDomain             | sourceDnsDomain     | contoso.com                                                                        | AAD 参加デバイスに関連しないドメイン名。 すべての検出で使用可能な値。                                                                                           |
 > | 22               | Actor                     | deviceCustomString4 | ボロン                                                                                   | 既知のアクター グループに関連するアラートで使用できます。                                                                                                                         |
 > | 21+5             | ComputerDnsName           | マッピングなし          | liz-bean.contoso.com                                                               | デバイスの完全修飾ドメイン名。 すべての検出で使用可能な値。                                                                                                    |
-> |                  | LogOnUsers                | sourceUserId        | contoso\liz-Bean;  contoso\jay-hardee                                             | イベント時の対話型ログオン ユーザーのドメインとユーザー。 注: Windows 10 バージョン 1607 のデバイスの場合、ドメイン情報は使用できません。 |
+> |                  | LogOnUsers                | sourceUserId        | contoso\liz-Bean;  contoso\jay-hardee                                             | イベント時の対話型ログオン ユーザーのドメインとユーザー。 注: バージョン 1607 Windows 10デバイスの場合、ドメイン情報は使用できません。 |
 > |                  | InternalIPv4List          | マッピングなし          | 192.168.1.7, 10.1.14.1                                                             | アクティブ なネットワーク インターフェイスの IPV4 内部 IPV4 の一覧。                                                                                                                                                                               |
 > |                  | InternalIPv6List          | マッピングなし          | fd30:0000:0000:0001:ff4e:003e:0009:000e, FE80:CD00:0000:0CDE:1257:0000:211E:729C | アクティブ なネットワーク インターフェイスの IPV6 内部 IPV6 の一覧。                                                                                                                                                                               |
 | | LinkToMTP | マッピングなし | `https://security.microsoft.com/alert/da637370718981685665_16349121` | すべての検出で使用可能な値。

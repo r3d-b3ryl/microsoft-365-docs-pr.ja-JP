@@ -43,7 +43,7 @@ ms.locfileid: "51933411"
 - OData ```$filter``` は、すべてのプロパティでサポートされています。
 
 >[!Tip]
->これは、Power BI 統合のための [素晴らしい API です](api-power-bi.md)。
+>これは、統合のための素晴らしい API [Power BIです](api-power-bi.md)。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint サービスのオフボード デバイス
-description: Microsoft Defender for Endpoint サービスのオンボード Windows 10 デバイス、サーバー、Windows 以外のデバイス
+description: オンボード Windows 10、サーバー、Microsoft Defender for Endpoint サービスWindowsデバイス以外のデバイス
 keywords: offboarding, Microsoft Defender for Endpoint offboarding, offboarding
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -45,7 +45,7 @@ ms.locfileid: "51934155"
 >[!NOTE]
 > オフボード後、デバイスの状態 [は非アクティブ](fix-unhealthy-sensors.md#inactive-devices) 7 日に切り替えられます。 <br> オフボードされたデバイスのデータ (タイムライン、アラート、脆弱性など) は、構成された保持期間が経過するまでポータル [に](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) 残ります。 <br>
 > デバイスのプロファイル (データなし) は、デバイス[](machines-view-overview.md)リストに 180 日間以上残ります。
-> さらに、過去 30 日間にアクティブではないデバイスは、組織の脅威と脆弱性管理の露出スコアと Microsoft Secure Score for Devices[](tvm-exposure-score.md)を反映するデータには考慮されません。 <br>
+> また、過去 30 日間にアクティブではないデバイスは、組織の 脅威と脆弱性の管理 露出スコアと Microsoft Secure Score for Devices[](tvm-exposure-score.md)を反映するデータには考慮されません。 <br>
 > アクティブなデバイスのみを表示するには、正常性状態、[](machines-view-overview.md#health-state)デバイス タグ、または[コンピューター グループで](machine-tags.md)[フィルター処理できます](machine-groups.md)。 
 
 ## <a name="offboard-windows-10-devices"></a>Windows 10 デバイスをオフボードする
@@ -56,6 +56,6 @@ ms.locfileid: "51934155"
 ## <a name="offboard-servers"></a>オフボード サーバー
 - [オフボード サーバー](configure-server-endpoints.md#offboard-windows-servers)
 
-## <a name="offboard-non-windows-devices"></a>Windows 以外のオフボード デバイス
-- [Windows 以外のオフボード デバイス](configure-endpoints-non-windows.md#offboard-non-windows-devices)
+## <a name="offboard-non-windows-devices"></a>オフボードの非Windowsデバイス
+- [オフボードの非Windowsデバイス](configure-endpoints-non-windows.md#offboard-non-windows-devices)
 

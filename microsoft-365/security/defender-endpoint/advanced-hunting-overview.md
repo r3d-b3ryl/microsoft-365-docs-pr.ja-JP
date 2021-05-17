@@ -43,8 +43,8 @@ ms.locfileid: "51939662"
 同じ脅威を捜索しているクエリを使用して、カスタムの検出ルールを作成できます。 これらのルールは自動的に実行され、侵害の疑いのあるアクティビティ、正しく構成されていないコンピューター、その他の結果を確認し、それに対応します。
 
 >[!TIP]
->[Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview)の高度な検索を使用して、Defender for Endpoint、microsoft Defender for Office 365、Microsoft Cloud App Security、Microsoft Defender for Identity のデータを使用して脅威を探します。 [Microsoft 365 Defender を有効にする](/microsoft-365/security/defender/m365d-enable)。<br><br>
-高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動する方法については、「Advanced Hunting [queries](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)を Microsoft Defender for Endpoint から移行する」を参照してください。
+>Microsoft 365 Defender で高度な検索[を](/microsoft-365/security/defender/advanced-hunting-overview)使用して、Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、Microsoft Defender for Identity のデータを使用して脅威を検出します。 [Defender を有効Microsoft 365します](/microsoft-365/security/defender/m365d-enable)。<br><br>
+高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動する方法については、「Advanced Hunting queries を Microsoft Defender for Endpoint から移行する」を[参照してください](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)。
 
 ## <a name="get-started-with-advanced-hunting"></a>高度な捜索を開始する
 

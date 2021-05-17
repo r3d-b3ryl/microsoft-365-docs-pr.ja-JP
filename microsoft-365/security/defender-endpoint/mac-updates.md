@@ -48,7 +48,7 @@ macOS のエンドポイント用 Microsoft Defender を更新するには、Mic
 
 ## <a name="use-msupdate"></a>Msupdate の使用
 
-MAU には *msupdate* と呼ばれるコマンド ライン ツールが含まれています。このツールは、IT 管理者向けに設計され、更新プログラムの適用時間を正確に制御できます。 このツールの使い方については、「msupdate を使用した更新プログラムOffice for Mac [を参照してください](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)。
+MAU には *msupdate* と呼ばれるコマンド ライン ツールが含まれています。このツールは、IT 管理者向けに設計され、更新プログラムの適用時間を正確に制御できます。 このツールの使い方については、「msupdate を使用した更新プログラムOffice for Mac[を参照してください](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)。
 
 MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプリケーション識別子は *WDAV00 です*。 macOS の Microsoft Defender for Endpoint の最新の更新プログラムをダウンロードしてインストールするには、ターミナル ウィンドウから次のコマンドを実行します。
 

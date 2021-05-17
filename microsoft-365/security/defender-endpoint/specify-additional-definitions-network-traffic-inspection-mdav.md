@@ -1,6 +1,6 @@
 ---
-title: ネットワーク トラフィック検査用の追加の定義セットを指定Microsoft Defender ウイルス対策
-description: ネットワーク トラフィック検査用の追加の定義セットを指定Microsoft Defender ウイルス対策。
+title: Microsoft Defender ウイルス対策のネットワーク トラフィック検査用の追加の定義セットを指定する
+description: Microsoft Defender ウイルス対策のネットワーク トラフィック検査用の追加の定義セットを指定します。
 keywords: Microsoft Defender ウイルス対策、マルウェア対策、セキュリティ、防御者、ネットワーク トラフィック検査
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -37,7 +37,7 @@ ms.locfileid: "52300197"
 
 1. グループ ポリシー管理エンドポイントで、グループ ポリシー管理 [コンソールを開きます](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
 
-2. [ネットワーク検査 **システムWindowsコンポーネントMicrosoft Defender ウイルス対策**  >    >  **に移動します**。 
+2. **[Windows** コンポーネント]  >  **[Microsoft Defender ウイルス対策**  >  **ネットワーク検査システム] に移動します**。 
 
 3. [ネットワーク **トラフィック検査の追加の定義セットを指定する] を選択します**。 既定では、このポリシーは [構成されていません] **に設定されています**。 
 
@@ -52,7 +52,7 @@ ms.locfileid: "52300197"
 7. **[OK] を** 選択し、更新されたグループ ポリシー オブジェクトを展開します。 「 [グループ ポリシー管理コンソール」を参照してください](/windows/win32/srvnodes/group-policy)。
 
 > [!TIP]
-> オンプレミスでグループ ポリシー オブジェクトを使用していますか? クラウドでの翻訳方法を確認します。 [[プレビュー] でグループ ポリシー分析を使用して、オンプレミスのグループ ポリシー Microsoft エンドポイント マネージャーを分析します](/mem/intune/configuration/group-policy-analytics)。 
+> オンプレミスでグループ ポリシー オブジェクトを使用していますか? クラウドでの翻訳方法を確認します。 Microsoft Endpoint Manager - Preview でグループ ポリシー分析を使用して、[オンプレミスのグループ ポリシー オブジェクトを分析します](/mem/intune/configuration/group-policy-analytics)。 
   
 ## <a name="related-articles"></a>関連記事
 

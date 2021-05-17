@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 利用状況分析のレポートをカスタマイズする
+title: 使用状況分析でレポートMicrosoft 365カスタマイズする
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
-description: ブラウザーと Power BI Desktop でレポートをカスタマイズする方法について学習します。
+description: ブラウザーとブラウザーでレポートをカスタマイズする方法についてPower BI Desktop。
 ms.openlocfilehash: 0ef2364c82318dfea93e8df4e64d53a66caa8d74
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580776"
 ---
-# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析のレポートをカスタマイズする
+# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>使用状況分析でレポートMicrosoft 365カスタマイズする
 
-Microsoft 365 使用状況分析は、ユーザーが Microsoft 365 を採用して使用する方法に関する分析情報を提供する、Power BI のダッシュボードを提供します。 このダッシュボードは、利用状況データを利用するための開始点に過ぎません。 レポートをカスタマイズし、洞察機能を個人に合わせて調整できます。
+Microsoft 365利用状況分析は、ユーザーがデータをPower BIして使用する方法に関する分析情報を提供するダッシュボードを提供Microsoft 365。 このダッシュボードは、利用状況データを利用するための開始点に過ぎません。 レポートをカスタマイズし、洞察機能を個人に合わせて調整できます。
   
 また、Power BI デスクトップを使用し、レポートをさらにカスタマイズできます。レポートを他のデータ ソースに接続することで事業に関してさらに深い洞察が得られます。
   
@@ -43,7 +43,7 @@ Microsoft 365 使用状況分析は、ユーザーが Microsoft 365 を採用し
   
 1. [ライセンス認証 **/ライセンス] レポートで** 、[ライセンス認証] タブ **を選択** します。
     
-2. 上部にある [Power BI]ボタンの [その他のページ] ボタンから [編集] ボタン ![ を選択して、編集モードを入力 ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) します。 
+2. 上部の [編集] ボタンをクリックして、編集モードを入力します。[編集] ボタンの [その他] ![ Power BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) します。 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -61,11 +61,11 @@ Microsoft 365 使用状況分析は、ユーザーが Microsoft 365 を採用し
 
 次の例は、新しい Yammer ユーザーを月単位で追跡記録する新しいビジュアルの作成方法を示しています。
   
-1. 左側のナビゲーションを **使用して [** 製品の使用状況] レポートに移動し、[製品の使用状況] **タブYammer** します。
+1. 左側のナビゲーションを **使用して [** 製品の使用状況] レポートに移動し、[製品の使用状況]**タブYammer** します。
     
-2. [Power BI] と [編集] の [その他の ![ ページ] ボタンを選択して編集モード ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) に **切り替えます**。 
+2. [編集] と [編集] の [その他のページ] ボタンを ![ 選択してPower BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) モードに **切り替えます**。 
     
-3. ページの下部で、 ![Power BI の [ページの追加] ボタン](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) をクリックして、新しいページを作成します。
+3. ページの下部で、 ![[ページの追加] ボタンをクリックPower BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) をクリックして、新しいページを作成します。
   
 4. 右側の **[視覚化]** 領域で、[積 **み上** げ棒グラフ] (左上から最初の行) を選択します。
 
@@ -89,7 +89,7 @@ Microsoft 365 使用状況分析は、ユーザーが Microsoft 365 を採用し
 
     ![[選択Yammer] チェック ボックス](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 視覚化の一覧の下にある ![ [Power BI Visualizaions] の [書式] アイコン [書式] アイコンを選択します ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。
+12. 視覚化の一覧の下で、[Visualizaions] の [書式] アイコンPower BI ![ 選択します ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。
 
 13. [タイトル] を展開し、[ **タイトル テキスト**] 値を [ **月別の新規 Yammer ユーザー**] に変更します。
     
@@ -105,7 +105,7 @@ Microsoft 365 使用状況分析は、ユーザーが Microsoft 365 を採用し
   
 ### <a name="use-the-reporting-apis"></a>レポート API を使用する
 
-まず、これらのレポートに電力を供給する Microsoft 365 の ODATA レポート API に直接接続します。
+まず、これらのレポートに電力を供給する ODATA レポート API に直接接続Microsoft 365から開始できます。
   
 1. Go to **get data** \> **Other** \> **ODATA Feed** \> **Connect**.
     
@@ -115,23 +115,23 @@ Microsoft 365 使用状況分析は、ユーザーが Microsoft 365 を採用し
   
     ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
-3. メッセージが表示されたら、Microsoft 365 (組織または学校) の管理者資格情報を入力して、Microsoft 365 に対して認証します。
+3. プロンプトが表示Microsoft 365に認証する管理者資格情報 (組織または学校) Microsoft 365入力します。
     
-    Microsoft [](usage-analytics.md#faq) 365 導入テンプレート アプリ レポートにアクセスできるユーザーの詳細については、「FAQ」を参照してください。 
+    導入テンプレート[アプリ レポート](usage-analytics.md#faq)にアクセスできるユーザーの詳細については、「FAQ Microsoft 365参照してください。 
     
 4. 接続が承認されると、[ナビゲーター] ウィンドウが表示されます。このウィンドウに、接続先として利用できるデータセットが表示されます。
     
     すべて選択し、[読み込み] **を選択します**。
     
-    これで Power BI デスクトップにデータがダウンロードされます。 このファイルを保存すれば、必要なレポートの作成を開始できます。
+    これで Power BI デスクトップにデータがダウンロードされます。このファイルを保存すれば、必要なレポートの作成を開始できます。
     
     ![レポート API で使用できる ODATA 値](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
-### <a name="use-the-microsoft-365-usage-analytics-template"></a>Microsoft 365 利用状況分析テンプレートの使用
+### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用状況分析テンプレートMicrosoft 365使用する
 
-また、データに接続するための開始点として、Microsoft 365 利用状況分析レポートに対応する Power BI テンプレート ファイルを使用することもできます。 pbit ファイルを利用することの長所は、接続文字列が既に確立されていることです。 基本スキーマが返すデータに加え、作成されたあらゆるカスタム メジャーを活用し、基本スキーマの上にさらに構築することもできます。
+また、Power BI利用状況分析レポートに対応する Microsoft 365 テンプレート ファイルをデータに接続する開始点として使用することもできます。 pbit ファイルを利用することの長所は、接続文字列が既に確立されていることです。 基本スキーマが返すデータに加え、作成されたあらゆるカスタム メジャーを活用し、基本スキーマの上にさらに構築することもできます。
   
-Power BI テンプレート ファイルは、Microsoft ダウンロード センター [からダウンロードできます](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。 Power BI テンプレート ファイルをダウンロードした後、次の手順に従って開始します。
+Microsoft ダウンロード センターからPower BIテンプレート ファイル[をダウンロードできます](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。 テンプレート ファイルをダウンロードしたPower BI、次の手順に従って開始します。
   
 1. pbit ファイルを開きます。
     
@@ -139,9 +139,9 @@ Power BI テンプレート ファイルは、Microsoft ダウンロード セ�
     
     ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
-3. プロンプトが表示されたら、管理者資格情報を入力して Microsoft 365 に認証します。
+3. プロンプトが表示されたら、管理者資格情報を入力してMicrosoft 365認証します。
     
-     Microsoft 365 利用状況分析レポートにアクセスできるユーザーの詳細については、次の情報を参照してください。 
+     利用状況分析レポートにアクセスできるユーザーのMicrosoft 365詳細については、次の情報を参照してください。 
     
     承認された後に、Power BI ファイルのデータが更新されます。
     

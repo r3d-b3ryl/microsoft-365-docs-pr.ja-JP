@@ -69,7 +69,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
 
 ### <a name="network-extension-policy"></a>ネットワーク拡張ポリシー
 
-エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報をポータルMicrosoft Defender セキュリティ センターします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
 >[!NOTE]
 >JAMF には、コンテンツ フィルター ポリシーの組み込みのサポートが用意されていません。これは、macOS 上の Microsoft Defender for Endpoint がデバイスにインストールするネットワーク拡張機能を有効にするための前提条件です。 さらに、JAMF は展開するポリシーの内容を変更する場合があります。
@@ -170,7 +170,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
     
-5. JAMF ポータルから [構成プロファイル] に移動 **し、[** アップロード] ボタン **をクリック** します。 ファイル `com.microsoft.network-extension.signed.mobileconfig` の入力を求めるメッセージが表示されたら選択します。
+5. JAMF ポータルから [構成プロファイル] に移動 **し、[** 設定] ボタン **アップロード** クリックします。 ファイル `com.microsoft.network-extension.signed.mobileconfig` の入力を求めるメッセージが表示されたら選択します。
 
 ## <a name="intune"></a>Intune
 
@@ -308,7 +308,7 @@ sysext.xml: OK
 1.  Intune で、[デバイス構成の **管理**  >  **] を開きます**。 [プロファイル **の**  >  **管理] [プロファイルの**  >  **作成] を選択します**。
 2. プロファイルの名前を選択します。 **Platform=macOS と** **Profile type=Custom を変更します**。 [構成 **] を選択します**。
 3.  構成プロファイルを開 **き、sysext.xml。** このファイルは、前の手順で作成されました。
-4.  [**OK**] を選択します。
+4.  **[OK]** を選択します。
 
     ![Intune のスクリーンショットのシステム拡張機能](images/mac-system-extension-intune.png)
 

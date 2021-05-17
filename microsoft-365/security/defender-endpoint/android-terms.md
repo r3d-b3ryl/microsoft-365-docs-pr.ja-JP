@@ -105,7 +105,7 @@ ms.locfileid: "51934623"
 
     2.  それぞれのアプリケーション ストア プロバイダーとその子会社は、本規約の第三者受益者であり、本規約に同意した場合、アプリケーション ストア プロバイダーは、特典または権利を付与する本規約の条項を直接適用し、利用する権利を有します。
 
-9.  **商標に関する通知。** Microsoft、Microsoft Defender for Endpoint、Microsoft 365 は、米国およびその他の国における Microsoft Corporation の登録または共通の法律上の商標です。
+9.  **商標に関する通知。** Microsoft、Microsoft Defender for Endpoint、および Microsoft 365は、米国およびその他の国における Microsoft Corporation の登録または共通の法律上の商標です。
 
 10. **ENTIRE AGREEMENT.** この契約と、お客様が使用する補足、更新プログラム、インターネット ベースのサービス、およびサポート サービスに関する条項は、アプリケーションおよびサポート サービスの完全な契約です。
 

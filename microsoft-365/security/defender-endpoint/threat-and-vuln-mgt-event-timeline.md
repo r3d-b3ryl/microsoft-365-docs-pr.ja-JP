@@ -1,7 +1,7 @@
 ---
-title: 脅威と脆弱性管理のイベント タイムライン
+title: イベントタイムライン (脅威と脆弱性の管理
 description: イベントタイムラインは、リスクが組織に導入される方法と、リスクを軽減するために発生した軽減策を解釈するのに役立つリスクニュースフィードです。
-keywords: イベント タイムライン, Microsoft Defender for Endpoint イベント タイムライン, Microsoft Defender for Endpoint tvm イベント タイムライン, 脅威と脆弱性管理, Microsoft Defender for Endpoint
+keywords: イベント タイムライン, Microsoft Defender for Endpoint イベント タイムライン, Microsoft Defender for Endpoint tvm イベント タイムライン, 脅威と脆弱性の管理, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -45,7 +45,7 @@ ms.locfileid: "51933483"
 
 ## <a name="navigate-to-the-event-timeline-page"></a>[イベント タイムライン] ページに移動する
 
-脅威と脆弱性の管理ダッシュボードには、次の [3 つのエントリ ポイントがあります](tvm-dashboard-insights.md)。
+また、ダッシュボードから 3 つの[脅威と脆弱性の管理があります](tvm-dashboard-insights.md)。
 
 - **組織の露出スコア カード**: [時間の間の露出スコア] グラフのイベント ドットにカーソルを合わせると、[この日のすべてのイベントを表示する] を選択します。 このイベントは、ソフトウェアの脆弱性を表します。
 - **デバイスの Microsoft Secure Score**: [デバイスの時間のスコア] グラフのイベント ドットにカーソルを合わせると、[この日のすべてのイベントを表示する] を選択します。 イベントは、新しい構成評価を表します。
@@ -53,7 +53,7 @@ ms.locfileid: "51933483"
 
 ### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>デバイスの露出スコアと Microsoft Secure Score のグラフ
 
-脅威と脆弱性管理ダッシュボードで、露出スコア グラフにカーソルを合わせると、デバイスに影響を与えたその日のソフトウェアの脆弱性の上位イベントが表示されます。 Microsoft Secure Score for Devices グラフにカーソルを合わせると、スコアに影響する新しいセキュリティ構成評価が表示されます。
+このダッシュボード脅威と脆弱性の管理[露出スコア] グラフにカーソルを合わせると、デバイスに影響を与えたその日のソフトウェアの脆弱性の上位イベントが表示されます。 Microsoft Secure Score for Devices グラフにカーソルを合わせると、スコアに影響する新しいセキュリティ構成評価が表示されます。
 
 デバイスやデバイスのスコアに影響するイベントがない場合は、何も表示されません。
 
@@ -84,7 +84,7 @@ ms.locfileid: "51933483"
 
 ![イベント タイムライン ページ](images/tvm-event-timeline-overview-mixed-type.png)
 
-### <a name="columns"></a>段組み
+### <a name="columns"></a>Columns
 
 - **日付**: 月、日、年
 - **イベント**: 影響を受けのあるイベント (コンポーネント、種類、影響を受け取ったデバイスの数を含む)
@@ -120,7 +120,7 @@ ms.locfileid: "51933483"
 
 ## <a name="view-event-timelines-in-software-pages"></a>ソフトウェア ページでイベントのタイムラインを表示する
 
-ソフトウェア ページを開く場合は、イベント > を選択し、フライアウトの "関連コンポーネント" というセクションでハイパーリンクされたソフトウェア名 (Visual Studio 2017 など) を選択します。 [ソフトウェア ページの詳細](tvm-software-inventory.md#software-pages)
+ソフトウェア ページを開く場合は、イベント > を選択し、フライアウトの 「関連コンポーネント」というセクションでハイパーリンクされたソフトウェア名 (Visual Studio 2017 など) を選択します。 [ソフトウェア ページの詳細](tvm-software-inventory.md#software-pages)
 
 特定のソフトウェアのすべての詳細が表示された完全なページが表示されます。 グラフの上にマウスを移動すると、その特定のソフトウェアのイベントのタイムラインが表示されます。
 
@@ -132,7 +132,7 @@ ms.locfileid: "51933483"
 
 ## <a name="related-topics"></a>関連項目
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)
 - [暴露スコア](tvm-exposure-score.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

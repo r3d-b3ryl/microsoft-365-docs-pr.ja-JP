@@ -2,7 +2,7 @@
 title: 脅威の分析を使用して、新たな脅威を追跡し対応する
 ms.reviewer: ''
 description: 新たな脅威と攻撃の手法と、それらを停止する方法について説明します。 組織への影響を評価し、組織の回復力を評価します。
-keywords: 脅威分析、リスク評価、Microsoft 365 Defender、M365D、軽減状態、セキュリティで保護された構成、Microsoft Defender for Office 365、Microsoft Defender for Office 365 脅威分析、MDO 脅威分析、統合 MDE および MDO 脅威分析データ、脅威分析データ統合、統合 Microsoft 365 Defender 脅威分析
+keywords: 脅威分析、リスク評価、Microsoft 365 Defender、M365D、軽減状態、セキュリティで保護された構成、Microsoft Defender for Office 365、Microsoft Defender for Office 365 脅威分析、MDO 脅威分析、統合 MDE および MDO 脅威分析データ、脅威分析データ統合、Microsoft 365 Defender 脅威分析の統合
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -53,7 +53,7 @@ ms.locfileid: "51501214"
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-脅威分析には、Microsoft 365 セキュリティ ポータルのナビゲーション バーの左上から、または組織の上位の脅威を示す専用のダッシュボード カードからアクセスできます。アクティブなキャンペーンや進行中のキャンペーンを可視化し、脅威分析を通じて何を行うのかを知ることにより、セキュリティ運用チームに情報に基づいた意思決定を行う際に役立ちます。 
+脅威分析には、Microsoft 365 セキュリティ ポータルのナビゲーション バーの左上から、または組織の上位脅威を示す専用のダッシュボード カードからアクセスできます。アクティブなキャンペーンや進行中のキャンペーンを可視化し、脅威分析を通じて何を行うのかを知ることにより、セキュリティ運用チームに情報に基づいた意思決定を行う際に役立ちます。 
 
 ![脅威分析ダッシュボードのイメージ](../../media/threat-analytics/ta_inlandingpage_mtp.png)
 
@@ -131,16 +131,16 @@ _脅威分析レポートの関連インシデント セクション_
 ### <a name="impacted-assets-get-list-of-impacted-devices-and-mailboxes"></a>影響を受け取ったアセット: 影響を受け取ったデバイスとメールボックスの一覧を取得する
 アセットは、アクティブで未解決のアラートの影響を受けた場合に影響を受けたと見なされます。 [ **影響を受け取ったアセット]** タブには、影響を受け取るアセットの次の種類が一覧表示されます。
 - **影響を受け**、Microsoft Defender for Endpoint アラートが未解決のエンドポイント。 これらのアラートは、通常、既知の脅威インジケーターとアクティビティの目撃情報に対して発生します。
-- **影響を受けたメールボックス**—Microsoft Defender が 365 件の通知を受け取Officeメールボックス。 通常、アラートをトリガーするほとんどのメッセージはブロックされますが、ユーザーレベルまたは組織レベルのポリシーはフィルターを上書きできます。
+- **影響を受けたメールボックス**—Microsoft Defender が警告を受け取った電子メール メッセージを受信したメールボックスOffice 365します。 通常、アラートをトリガーするほとんどのメッセージはブロックされますが、ユーザーレベルまたは組織レベルのポリシーはフィルターを上書きできます。
 
 ![脅威分析レポートの影響を受け取ったアセット セクションのイメージ](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
 _脅威分析レポートの影響を受け取ったアセット セクション_
 
 ### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>電子メールの試行を防止する: ブロックまたは迷惑メールの脅威メールを表示する
-Microsoft Defender for Office 365 は、通常、悪意のあるリンクや添付ファイルを含む既知の脅威インジケーターを含む電子メールをブロックします。 場合によっては、疑わしいコンテンツをチェックするプロアクティブ フィルターメカニズムによって、脅威メールが迷惑メール フォルダーに送信される場合があります。 いずれの場合も、デバイス上で脅威がマルウェア コードを起動する可能性が低くなります。
+Microsoft Defender for Office 365、悪意のあるリンクや添付ファイルを含む既知の脅威インジケーターを含む電子メールをブロックします。 場合によっては、疑わしいコンテンツをチェックするプロアクティブ フィルターメカニズムによって、脅威メールが迷惑メール フォルダーに送信される場合があります。 いずれの場合も、デバイス上で脅威がマルウェア コードを起動する可能性が低くなります。
 
-[ **メールの試行の** 防止] タブには、配信前にブロックされたメール、または Microsoft Defender が 365 の迷惑メール フォルダーに送信したメールOffice表示されます。 
+[**メールの試行を** 防止する] タブには、配信前にブロックされたメール、または Microsoft Defender によって迷惑メール フォルダーに送信されたメールOffice 365。 
 
 ![脅威分析レポートの [電子メール試行の防止] セクションのイメージ](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
@@ -155,7 +155,7 @@ _脅威分析レポートの [メールの試行の防止] セクション_
   - 望ましくない可能性のあるアプリケーション (PUA) 保護
   - リアルタイム保護
  
-このセクションの軽減情報には、脅威と[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)脆弱性管理のデータが組み込まれており、レポート内のさまざまなリンクからの詳細なドリルダウン情報も提供します。
+このセクションの軽減情報には、脅威と脆弱性の管理からの[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)データが組み込まれており、レポート内のさまざまなリンクからの詳細なドリルダウン情報も提供します。
 
 ![セキュリティで保護された構成の詳細を示す脅威分析レポートの軽減セクションの画像 脆弱性の詳細を示す脅威分析レポートの軽減セクション ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ の画像](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -164,19 +164,19 @@ _脅威分析レポートの [軽減策] セクション_
 
 ## <a name="additional-report-details-and-limitations"></a>その他のレポートの詳細と制限事項
 >[!NOTE]
->統合セキュリティ エクスペリエンスの一環として、Microsoft Defender for Endpoint だけでなく、E5 ライセンス所有者向け Microsoft Defender でも脅威分析Office利用できます。
->Microsoft 365 セキュリティ ポータル (Microsoft 365 Defender) を使用していない場合は、Microsoft Defender セキュリティ センター ポータル (Microsoft Defender for Endpoint) のレポートの詳細 (microsoft Defender for Office データなし) も確認できます。 
+>統合セキュリティ エクスペリエンスの一環として、脅威分析は Microsoft Defender for Endpoint だけでなく、E5 ライセンス所有者向け Microsoft Defender Officeも利用できます。
+>Microsoft 365 セキュリティ ポータル (Microsoft 365 Defender) を使用していない場合は、Microsoft Defender セキュリティ センター ポータル (Microsoft Defender for Endpoint) でレポートの詳細 (microsoft Defender for Office データなし) も確認できます。 
 
-脅威分析レポートにアクセスするには、特定の役割とアクセス許可が必要です。 詳細 [については、「Microsoft 365 Defender](custom-roles.md) の役割ベースのアクセス制御におけるカスタム ロール」を参照してください。
+脅威分析レポートにアクセスするには、特定の役割とアクセス許可が必要です。 詳細[については、「Defender の役割ベースのアクセス制御のカスタム ロールMicrosoft 365」](custom-roles.md)を参照してください。
   - アラート、インシデント、または影響を受けたアセット データを表示するには、Office または Microsoft Defender for Endpoint アラート データ、または両方に対する Microsoft Defender へのアクセス許可が必要です。
-  - 電子メールの試行が防止されたのを表示するには、Microsoft Defender に対するアクセス許可を持っている必要があります。Office必要があります。 
-  - 軽減策を表示するには、Microsoft Defender for Endpoint の脅威および脆弱性管理データに対するアクセス許可が必要です。
+  - 電子メールの試行が防止されたのを表示するには、Microsoft Defender に対するアクセス許可を持ち、Officeする必要があります。 
+  - 軽減策を表示するには、Microsoft Defender for Endpoint でデータ脅威と脆弱性の管理アクセス許可を持っている必要があります。
 
 脅威分析データを見る場合は、次の要素を覚えておいてください。
 - グラフには、追跡される軽減策だけが反映されます。 グラフに表示されない追加の軽減策については、レポートの概要を確認してください。
 - 軽減策は、完全な復元を保証するものではありません。 提供される軽減策は、回復性を向上させるために必要な最善のアクションを反映しています。
 - デバイスは、サービスにデータを送信していない場合は、"使用不可" としてカウントされます。
-- ウイルス対策関連の統計情報は、Microsoft Defender ウイルス対策の設定に基づいて行います。 サードパーティのウイルス対策ソリューションを使用するデバイスは、"公開" として表示されます。
+- ウイルス対策関連の統計情報は、ユーザー設定Microsoft Defender ウイルス対策されます。 サードパーティのウイルス対策ソリューションを使用するデバイスは、"公開" として表示されます。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検索で脅威を事前に検出する](advanced-hunting-overview.md) 

@@ -1,7 +1,7 @@
 ---
 title: サポートされている Microsoft 365 Defender API
 description: サポートされている Microsoft 365 Defender API
-keywords: Microsoft 365 Defender、API、API
+keywords: Microsoft 365Defender、API、API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -58,7 +58,7 @@ ms.locfileid: "51935727"
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365 Defender API の概要](api-overview.md)
-- [Microsoft 365 Defender API へのアクセス](api-access.md)
+- [Microsoft 365Defender API の概要](api-overview.md)
+- [Defender API Microsoft 365アクセスする](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)
 - [エラー コードについて](api-error-codes.md)

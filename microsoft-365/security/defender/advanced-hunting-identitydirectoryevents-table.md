@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの IdentityDirectoryEvents テーブル
 description: 高度なハンティング スキーマの IdentityDirectoryEvents テーブルのドメイン コントローラーイベントと Active Directory イベントについて説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、IdentityDirectoryEvents、ドメイン コントローラー、Active Directory、Microsoft Defender for Identity、ID
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、IdentityDirectoryEvents、ドメイン コントローラー、Active Directory、Microsoft Defender for Identity、IDENTITY
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -58,7 +58,7 @@ ms.locfileid: "51933003"
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountUpn` | string | アカウントのユーザー プリンシパル名 (UPN) |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | string | Azure Active Directory のアカウントの一意識別子 |
+| `AccountObjectId` | string | アカウントの一意の識別子は、Azure Active Directory |
 | `AccountDisplayName` | string | アドレス帳に表示されるアカウント ユーザーの名前。 通常、指定または名、ミドル イニシエーション、姓または姓の組み合わせ。 |
 | `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
 | `IPAddress` | string | 通信中にデバイスに割り当てられた IP アドレス |

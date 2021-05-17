@@ -1,7 +1,7 @@
 ---
 title: デバイス値の割り当て - 脅威と脆弱性の管理
 description: 低、通常、または高い値をデバイスに割り当て、資産の優先順位を区別する方法について学習します。
-keywords: Microsoft Defender for Endpoint デバイスの値、脅威と脆弱性管理デバイスの値、価値の高いデバイス、デバイス値の露出スコア
+keywords: Microsoft Defender for Endpoint デバイス値、脅威と脆弱性の管理値、高価値デバイス、デバイス値の露出スコア
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -39,15 +39,15 @@ ms.locfileid: "51935199"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-デバイスの値を定義すると、資産の優先順位を区別できます。 デバイスの値は、個々の資産のリスクアペタイトを脅威と脆弱性管理の露出スコアの計算に組み込むのに使用されます。 "高い値" として割り当てられたデバイスは、より多くの重みを受け取る。
+デバイスの値を定義すると、資産の優先順位を区別できます。 デバイスの値は、個々のアセットのリスクアペタイトを露出スコアの計算脅威と脆弱性の管理に組み込むのに使用されます。 "高い値" として割り当てられたデバイスは、より多くの重みを受け取る。
 
 デバイス値の設定 [API を使用することもできます](set-device-value.md)。
 
 デバイス値のオプション:
 
-- 低
+- 低い
 - 標準 (既定値)
-- 高
+- 高い
 
 高い値を割り当てる必要があるデバイスの例を次に示します。
 
@@ -78,6 +78,6 @@ ms.locfileid: "51935199"
 
 ## <a name="related-topics"></a>関連項目
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [露出スコア](tvm-exposure-score.md)
 - [API](next-gen-threat-and-vuln-mgt.md#apis)

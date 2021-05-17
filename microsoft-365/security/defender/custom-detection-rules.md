@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender でカスタム検出ルールを作成および管理する
+title: Defender でカスタム検出ルールを作成およびMicrosoft 365する
 description: 高度な検索クエリに基づいてカスタム検出ルールを作成および管理する方法について説明します。
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、カスタム検出、ルール、スキーマ、kusto、RBAC、permissions、Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
@@ -42,14 +42,14 @@ ms.locfileid: "51952562"
 
 カスタム検出を管理するには、次のいずれかの役割を割り当てる必要があります。
 
-- **セキュリティ管理者**:この [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) ロールを持つユーザーは、Microsoft 365 セキュリティ センターおよび他のポータルおよびサービスのセキュリティ設定を管理できます。
+- **セキュリティ管理者**:この役割を持Azure Active Directory [ユーザーは](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)、セキュリティ センターや他のポータルMicrosoft 365サービスでセキュリティ設定を管理できます。
 
-- **セキュリティ オペレーター**:この [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) ロールを持つユーザーは、アラートを管理し、Microsoft 365 セキュリティ センターのすべての情報を含む、セキュリティ関連の機能へのグローバルな読み取り専用アクセス権を持つ。 この役割は、Microsoft Defender for Endpoint で役割ベースのアクセス制御 (RBAC) がオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC が構成されている場合は、Defender **for** Endpoint のセキュリティ設定の管理アクセス許可も必要です。
+- **セキュリティ オペレーター**-このセキュリティ Azure Active Directory [ロール](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)を持つユーザーは、アラートを管理し、セキュリティ センター内のすべての情報を含む、セキュリティ関連の機能に対するグローバルな読み取り専用Microsoft 365できます。 この役割は、Microsoft Defender for Endpoint で役割ベースのアクセス制御 (RBAC) がオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC が構成されている場合は、Defender **for** Endpoint のセキュリティ設定の管理アクセス許可も必要です。
 
 必要なアクセス許可を管理するには、グローバル **管理者は次の機能を使用** できます。
 
-- [役割の **セキュリティ管理者] の** 下にある [Microsoft 365 管理](https://admin.microsoft.com/)センターでセキュリティ管理者またはセキュリティオペレーター **の役割**  >  **を割り当てます**。
-- Microsoft Defender セキュリティ センターの [設定のアクセス許可の役割] で [、Microsoft Defender](https://securitycenter.windows.com/) for Endpoint の RBAC  >  **設定を確認**  >  **します**。 対応する役割を選択して、セキュリティ設定の **管理権限を割り当** てる。
+- [役割の **セキュリティ管理者] の****下の** 管理センターでMicrosoft 365 [管理者または](https://admin.microsoft.com/)セキュリティオペレーター **の役割**  >  **を割り当てます**。
+- [アクセス許可の役割] の下にある [Microsoft Defender for Endpoint [Microsoft Defender セキュリティ センター](https://securitycenter.windows.com/) RBAC 設定  >  **を**  >  **確認します**。 対応する役割を選択して、セキュリティ設定の **管理権限を割り当** てる。
 
 > [!NOTE]
 > カスタム検出を管理 **するには、RBAC** が有効になっている場合、セキュリティオペレーターは Microsoft Defender for Endpoint のセキュリティ設定の管理権限を必要とします。
@@ -57,7 +57,7 @@ ms.locfileid: "51952562"
 ## <a name="create-a-custom-detection-rule"></a>カスタム検出ルールの作成
 ### <a name="1-prepare-the-query"></a>1. クエリを準備します。
 
-Microsoft 365 セキュリティ センターで、[高度な検索] に **移動し、** 既存のクエリを選択するか、新しいクエリを作成します。 新しいクエリを使用する場合は、クエリを実行してエラーを特定し、考えられる結果を理解します。
+セキュリティ Microsoft 365で、[高度な検索] に **移動し、** 既存のクエリを選択するか、新しいクエリを作成します。 新しいクエリを使用する場合は、クエリを実行してエラーを特定し、考えられる結果を理解します。
 
 >[!IMPORTANT]
 >サービスがあまりにも多くのアラートを返さなすぎ防止するために、各ルールは、実行されるたびに 100 件のアラートのみを生成するに制限されます。 ルールを作成する前に、クエリを調整して、通常の毎日のアクティビティに対する警告を回避してください。
@@ -145,7 +145,7 @@ DeviceEvents
 これらのアクションは、クエリ結果の列 `DeviceId` のデバイスに適用されます。
 - **デバイスの分離**—Microsoft Defender for Endpoint を使用して完全なネットワーク分離を適用し、デバイスが任意のアプリケーションまたはサービスに接続できません。 [Microsoft Defender for Endpoint マシンの分離の詳細](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **調査パッケージの収集**— ZIP ファイル内のデバイス情報を収集します。 [Microsoft Defender for Endpoint 調査パッケージの詳細](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **ウイルス対策スキャンの実行**-デバイスでWindows Defenderウイルス対策スキャンを実行します。
+- **ウイルス対策スキャンの実行**- デバイスでWindows Defender ウイルス対策スキャンを実行します。
 - **調査を開始** する -デバイス [で自動調査](m365d-autoir.md) を開始する
 - **アプリの実行を制限** する :Microsoft 発行の証明書で署名されたファイルのみを実行できるデバイスの制限を設定します。 [Microsoft Defender for Endpoint でのアプリ制限の詳細](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
@@ -153,10 +153,10 @@ DeviceEvents
 選択すると、クエリ結果の 、または列のファイルに対して [ファイルの検疫] `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` アクションを適用できます。 このアクションでは、ファイルを現在の場所から削除し、コピーを検疫に入れる。
 
 #### <a name="actions-on-users"></a>ユーザーに対するアクション
-選択すると、クエリ結果の **、、** または列のユーザーに対してユーザーに対して [侵害されたユーザーとしてマーク] `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` アクションが実行されます。 このアクションは、Azure Active Directory でユーザーのリスク レベルを "高" に設定し、対応する ID 保護 [ポリシーをトリガーします](/azure/active-directory/identity-protection/overview-identity-protection)。
+選択すると、クエリ結果の **、、** または列のユーザーに対してユーザーに対して [侵害されたユーザーとしてマーク] `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` アクションが実行されます。 このアクションは、ユーザーのリスク レベルをユーザーのリスク レベルを Azure Active Directoryに設定し、対応する ID 保護[ポリシーをトリガーします](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
-> カスタム検出ルールの許可またはブロックアクションは、Microsoft 365 Defender では現在サポートされていません。
+> カスタム検出ルールの許可またはブロックアクションは、現在、Defender でMicrosoft 365されていません。
 
 ### <a name="5-set-the-rule-scope"></a>5. ルールスコープを設定します。
 スコープを設定して、ルールの対象となるデバイスを指定します。 このスコープは、デバイスをチェックするルールに影響を与え、メールボックスとユーザー アカウントまたは ID のみをチェックするルールには影響を与えます。
@@ -181,7 +181,7 @@ DeviceEvents
 既存のカスタム検出ルールの一覧を表示し、以前の実行を確認し、トリガーしたアラートを確認できます。 必要に応じてルールを実行して変更できます。
 
 >[!TIP]
-> カスタム検出によって発生したアラートは、アラートとインシデント API で利用できます。 詳細については、「サポートされている [Microsoft 365 Defender API」を参照してください](api-supported.md)。
+> カスタム検出によって発生したアラートは、アラートとインシデント API で利用できます。 詳細については[、「Supported Microsoft 365 Defender API」を参照してください](api-supported.md)。
 
 ### <a name="view-existing-rules"></a>既存のルールの表示
 
@@ -222,7 +222,7 @@ DeviceEvents
 >テーブル内のアイテムに関する情報をすばやく表示し、アクションを実行するには、表の左側にある [&#10003;] の選択列を使用します。
 
 >[!NOTE]
->この記事の一部の列は、Microsoft Defender for Endpoint では使用できない場合があります。 [Microsoft 365 Defender をオンに](m365d-enable.md) し、より多くのデータ ソースを使用して脅威を検出します。 「Advanced [Hunting queries](advanced-hunting-migrate-from-mde.md)from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動できます。
+>この記事の一部の列は、Microsoft Defender for Endpoint では使用できない場合があります。 [Defender を有効Microsoft 365、](m365d-enable.md)より多くのデータ ソースを使用して脅威を探します。 「Advanced Hunting queries from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に[移動できます](advanced-hunting-migrate-from-mde.md)。
 
 ## <a name="see-also"></a>関連項目
 - [カスタム検出の概要](custom-detections-overview.md)

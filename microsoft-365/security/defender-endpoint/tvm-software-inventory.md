@@ -1,7 +1,7 @@
 ---
-title: 脅威と脆弱性管理のソフトウェア インベントリ
-description: Microsoft Defender for Endpoint の脅威と脆弱性管理のソフトウェア インベントリ ページには、ソフトウェアで検出された脆弱性と脆弱性の数が表示されます。
-keywords: 脅威と脆弱性の管理, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint ソフトウェア インベントリ, Microsoft Defender for Endpoint threat & の脆弱性管理, Microsoft Defender for Endpoint Threat & の脆弱性管理ソフトウェア インベントリ, Microsoft Defender for Endpoint tvm software inventory, tvm software inventory
+title: ソフトウェア インベントリ (脅威と脆弱性の管理
+description: Microsoft Defender for Endpoint のソフトウェア インベントリ ページ脅威と脆弱性の管理ソフトウェアで検出された弱点と脆弱性の数を示します。
+keywords: 脅威と脆弱性の管理、Microsoft Defender for Endpoint、Microsoft Defender for Endpoint ソフトウェア インベントリ、Microsoft Defender for Endpoint Threat & 脆弱性の管理、Microsoft Defender for Endpoint Threat & 脆弱性の管理 ソフトウェア インベントリ、Microsoft Defender for Endpoint tvm ソフトウェア インベントリ、tvm ソフトウェア インベントリ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -36,7 +36,7 @@ ms.locfileid: "51933723"
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-脅威と脆弱性管理のソフトウェア インベントリは、公式の共通プラットフォーム列挙 [(CPE)](https://nvd.nist.gov/products/cpe)を持つ組織内の既知のソフトウェアの一覧です。 公式 CPE のないソフトウェア製品には、脆弱性が公開されません。 また、ベンダーの名前、弱点の数、脅威、公開されているデバイスの数などの詳細も含まれています。
+ソフトウェア インベントリは、脅威と脆弱性の管理共通プラットフォーム列挙[(CPE)](https://nvd.nist.gov/products/cpe)を使用して組織内の既知のソフトウェアの一覧です。 公式 CPE のないソフトウェア製品には、脆弱性が公開されません。 また、ベンダーの名前、弱点の数、脅威、公開されているデバイスの数などの詳細も含まれています。
 
 ## <a name="how-it-works"></a>メカニズム
 
@@ -46,12 +46,12 @@ ms.locfileid: "51933723"
 
 ## <a name="navigate-to-the-software-inventory-page"></a>[ソフトウェア インベントリ] ページに移動します。
 
-Microsoft Defender セキュリティ センターの[脅威と脆弱性管理] ナビゲーション メニューから [ソフトウェア インベントリ] を選択して、[ソフトウェア インベントリ][ページにアクセスします](portal-overview.md)。
+[ソフトウェア インベントリ] ページにアクセスするには、脅威と脆弱性の管理メニューから [ソフトウェア インベントリ] を[Microsoft Defender セキュリティ センター。](portal-overview.md)
 
 デバイスリストから個々のデバイス ページ内の特定のデバイス上のソフトウェア [を表示します](machines-view-overview.md)。
 
 >[!NOTE]
->Microsoft Defender for Endpoint グローバル検索を使用してソフトウェアを検索する場合は、スペースの代わりにアンダースコアを付けなければなりません。 たとえば、最適な検索結果については、「Windows 10」ではなく「windows_10」と記述します。
+>Microsoft Defender for Endpoint グローバル検索を使用してソフトウェアを検索する場合は、スペースの代わりにアンダースコアを付けなければなりません。 たとえば、最適な検索結果の場合は、"windows_10" ではなく "Windows 10" と記述します。
 
 ## <a name="software-inventory-overview"></a>ソフトウェア インベントリの概要
 
@@ -65,7 +65,7 @@ Microsoft Defender セキュリティ センターの[脅威と脆弱性管理] 
 
 ### <a name="software-that-isnt-supported"></a>サポートされていないソフトウェア
 
-脅威と脆弱性管理で現在サポート&ソフトウェアは、[ソフトウェア インベントリ] ページに表示される可能性があります。 サポートされていないので、限られたデータしか使用できません。 [弱さ] セクションの [使用できない] オプションを使用して、サポートされていないソフトウェアでフィルター処理します。
+脅威によって現在サポートされていないソフトウェア& 脆弱性の管理[ソフトウェア インベントリ] ページに表示される場合があります。 サポートされていないので、限られたデータしか使用できません。 [弱さ] セクションの [使用できない] オプションを使用して、サポートされていないソフトウェアでフィルター処理します。
 
 ![サポートされていないソフトウェア フィルター。](images/tvm-unsupported-software-filter.png)
 
@@ -80,9 +80,9 @@ Microsoft Defender セキュリティ センターの[脅威と脆弱性管理] 
 
 ## <a name="software-inventory-on-devices"></a>デバイス上のソフトウェア インベントリ
 
-Microsoft Defender Security Center ナビゲーション パネルから、[デバイス] リスト **[に移動します](machines-view-overview.md)**。 デバイスページ (Computer1 など) を開くデバイスの名前を選択し、[ソフトウェア インベントリ] タブを選択して、デバイスに存在する既知のすべてのソフトウェアの一覧を表示します。 詳細については、特定のソフトウェア エントリを選択してフライアウトを開きます。
+[デバイス] Microsoft Defender セキュリティ センターから、[デバイス] リスト **[に移動します](machines-view-overview.md)**。 デバイスページ (Computer1 など) を開くデバイスの名前を選択し、[ソフトウェア インベントリ] タブを選択して、デバイスに存在する既知のすべてのソフトウェアの一覧を表示します。 詳細については、特定のソフトウェア エントリを選択してフライアウトを開きます。
 
-ソフトウェアは、脅威と脆弱性の管理で現在サポートされていない場合でも、デバイス レベルで表示される場合があります。 ただし、使用できるデータは制限付きのみです。 ソフトウェアがサポートされていないかどうかは、[弱さ] 列に "使用できません" と表示されます。
+ソフトウェアは、現在デバイス でサポートされていない場合でも、デバイス レベルで表示脅威と脆弱性の管理。 ただし、使用できるデータは制限付きのみです。 ソフトウェアがサポートされていないかどうかは、[弱さ] 列に "使用できません" と表示されます。
 
 CPE がないソフトウェアは、このデバイス固有のソフトウェア インベントリの下に表示することもできます。
 
@@ -92,7 +92,7 @@ CPE がないソフトウェアは、このデバイス固有のソフトウェ�
 
 ソフトウェア名を選択して、フライアウトを開き、"Software Evidence" というセクションを探します。
 
-![デバイスの一覧から Windows 10 のソフトウェア証拠の例を示し、ソフトウェア証拠レジストリ パスを示します。](images/tvm-software-evidence.png)
+![デバイスの一覧からWindows 10証拠の例を示し、ソフトウェア証拠レジストリ パスを示します。](images/tvm-software-evidence.png)
 
 ## <a name="software-pages"></a>ソフトウェア ページ
 
@@ -100,7 +100,7 @@ CPE がないソフトウェアは、このデバイス固有のソフトウェ�
 
 - ソフトウェア インベントリ ページ >ソフトウェア名を選択 **>で** [ソフトウェアを開く] ページを選択します。
 - [[セキュリティに関する推奨事項>](tvm-security-recommendation.md) 選択] **>で** [ソフトウェアを開く] ページを選択します。
-- [[イベント タイムライン](threat-and-vuln-mgt-event-timeline.md) ] ページ > イベントを選択する > フライアウトの [関連コンポーネント] というセクションで、ハイパーリンクされたソフトウェア名 (Visual Studio 2017 など) を選択します。
+- [イベント タイムライン](threat-and-vuln-mgt-event-timeline.md)ページ > イベントを選択する > フライアウトの [関連コンポーネント] というセクションで、ハイパーリンクされたソフトウェア名 (Visual Studio 2017 など) を選択します。
 
  特定のソフトウェアのすべての詳細と次の情報が表示される完全なページ。
 
@@ -121,11 +121,11 @@ CPE がないソフトウェアは、このデバイス固有のソフトウェ�
 1. [ソフトウェア インベントリ] ページでソフトウェア フライアウトを開きます。
 2. [ **不正確なレポート] を選択します**。
 3. フライアウト ウィンドウで、ドロップダウン メニューから不正確なカテゴリを選択し、電子メール アドレスを入力し、不正確な情報の詳細を入力します。
-4. [**送信**] を選択します。 フィードバックは、脅威と脆弱性管理の専門家に直ちに送信されます。
+4. [**送信**] を選択します。 フィードバックはすぐに専門家に脅威と脆弱性の管理されます。
 
 ## <a name="related-articles"></a>関連記事
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)
 - [イベントのタイムライン](threat-and-vuln-mgt-event-timeline.md)
 - [Microsoft Defender for Endpoint Devices リストの表示と整理](machines-view-overview.md)

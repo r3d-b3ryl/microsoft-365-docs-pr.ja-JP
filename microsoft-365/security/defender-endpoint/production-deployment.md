@@ -35,7 +35,7 @@ ms.locfileid: "51476312"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
@@ -52,13 +52,13 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 
 >[!NOTE]
->一般的な展開を案内する目的で、このシナリオでは Microsoft Endpoint Configuration Manager の使用のみを説明します。 Defender for Endpoint は、他のオンボーディング ツールの使用をサポートしていますが、展開ガイドではこれらのシナリオについては説明しません。 詳細については、「デバイスを [Microsoft Defender for Endpoint にオンボードする」を参照してください](onboard-configure.md)。
+>一般的な展開を案内する目的で、このシナリオでは、このシナリオでは、ユーザーの使用のみをMicrosoft Endpoint Configuration Manager。 Defender for Endpoint は、他のオンボーディング ツールの使用をサポートしていますが、展開ガイドではこれらのシナリオについては説明しません。 詳細については、「デバイスを [Microsoft Defender for Endpoint にオンボードする」を参照してください](onboard-configure.md)。
 
 ## <a name="check-license-state"></a>ライセンスの状態を確認する
 
-ライセンスの状態を確認し、適切にプロビジョニングされたかどうかを確認するには、管理センターまたは **Microsoft Azure portal を使用します**。
+ライセンスの状態を確認し、適切にプロビジョニングされたかどうかを確認するには、管理センターまたはポータルMicrosoft Azure **できます**。
 
-1. ライセンスを表示するには **、Microsoft Azure ポータル** に移動し、[Microsoft Azure portal ライセンス] セクション [に移動します](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. ライセンスを表示するには、Microsoft Azureポータルに **移動** し、[Microsoft Azure][セクションに移動します](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
    ![[Azure ライセンス] ページのイメージ](images/atp-licensing-azure-portal.png)
 
@@ -73,7 +73,7 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 会社にプロビジョニングされるライセンスにアクセスし、ライセンスの状態を確認するには、管理センターに移動します。
 
-1. パートナー ポータル **で、[サービス** の管理 **] を選択> Office 365.**
+1. パートナー ポータルで **、[サービス** の管理]**を選択> Office 365。**
 
 2. [パートナー ポータル]**リンクをクリック** すると、[代理として管理者] オプションが開き、顧客管理センターにアクセスできます。
 
@@ -83,7 +83,7 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 ## <a name="tenant-configuration"></a>テナント構成
 
-Microsoft Defender Security Center に初めてアクセスする場合は、最初の手順を説明するウィザードを使用します。 セットアップ ウィザードの最後に、Defender for Endpoint の専用クラウド インスタンスが作成されます。 最も簡単な方法は、Windows 10 クライアント デバイスからこれらの手順を実行することです。
+初めてMicrosoft Defender セキュリティ センターアクセスする場合は、最初の手順を説明するウィザードを使用します。 セットアップ ウィザードの最後に、Defender for Endpoint の専用クラウド インスタンスが作成されます。 最も簡単な方法は、クライアント デバイスからこれらの手順Windows 10実行します。
 
 1. Web ブラウザーからに移動します <https://securitycenter.windows.com> 。
 
@@ -116,7 +116,7 @@ Microsoft Defender Security Center に初めてアクセスする場合は、最
 ## <a name="network-configuration"></a>ネットワーク構成
 組織がプロキシを使用してインターネットにアクセスするためにエンドポイントを必要としない場合は、このセクションをスキップします。
 
-Microsoft Defender ATP センサーでは、センサー データをレポートし、Microsoft Defender for Endpoint service サービスと通信するために、Microsoft Windows HTTP (WinHTTP) が必要になります。 埋め込まれた Microsoft Defender for Endpoint センサーは、LocalSystem アカウントを使用してシステム コンテキストで実行されます。 センサーは Microsoft Windows HTTP サービス (WinHTTP) を使用して、Microsoft Defender for Endpoint クラウド サービスとの通信を有効にします。 WinHTTP 構成設定は、Windows インターネット (WinINet) インターネットブラウズ プロキシ設定とは独立しています。次の検出方法を使用してのみプロキシ サーバーを検出できます。
+Microsoft Defender ATP センサーでは、センサー データをレポートし、Microsoft Defender for Endpoint service サービスと通信するために、Microsoft Windows HTTP (WinHTTP) が必要になります。 埋め込まれた Microsoft Defender for Endpoint センサーは、LocalSystem アカウントを使用してシステム コンテキストで実行されます。 センサーは Microsoft Windows HTTP サービス (WinHTTP) を使用して、Microsoft Defender for Endpoint クラウド サービスとの通信を有効にします。 WinHTTP 構成設定は、Windows インターネット (WinINet) インターネット閲覧プロキシ設定とは独立し、次の検出方法を使用してのみプロキシ サーバーを検出できます。
 
 **自動検出メソッド:**
 
@@ -136,18 +136,18 @@ Microsoft Defender ATP センサーでは、センサー データをレポー�
 
 コンピューターがインターネットへの接続を許可されていない場合、Microsoft Defender for Endpoint センサーだけが診断データを報告し、Microsoft Defender for Endpoint サービスと通信できるレジストリ ベースの静的プロキシを構成します。 静的プロキシは、グループ ポリシー (GP) を使用して構成できます。 グループ ポリシーは次の場所にあります。
 
- - 管理用テンプレート Windows コンポーネント のデータ収集とプレビュー ビルド 接続されたユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用 \> \> \> を構成する
+ - 管理用Windows コンポーネント データ収集とプレビュー ビルド接続ユーザー エクスペリエンスおよびテレメトリ サービスの認証プロキシの使用 \> \> \> を構成する
      - [有効] に **設定し、[** 認証された **プロキシの使用を無効にする] を選択します。**
 
 1. グループ ポリシー管理コンソールを開きます。
 2. 組織のプラクティスに基づいてポリシーを作成するか、既存のポリシーを編集します。
-3. グループ ポリシーを編集し、[管理用テンプレート] [Windows コンポーネント データコレクション] および [プレビュー ビルド] [接続されたユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用を構成する] **\> \> \> に移動します**。 
+3. グループ ポリシーを編集し、[管理用テンプレート] Windows コンポーネント データ収集とプレビュー ビルド接続ユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用を **\> \> \> 構成します**。 
     ![グループ ポリシー構成のイメージ](images/atp-gpo-proxy1.png)
 
 4. **[有効]** を選択します。
 5. [認証 **されたプロキシの使用を無効にする] を選択します**。
    
-6. [管理用テンプレート] [Windows コンポーネント データコレクション] および [プレビュー ビルド] [接続されたユーザー エクスペリエンスと利用統計情報を **\> 構成する] \> \> に移動します**。
+6. [管理用テンプレート] Windows コンポーネント データ収集とプレビュー ビルド 接続されたユーザー エクスペリエンスとテレメトリを **\> \> \> 構成します**。
     ![グループ ポリシー構成設定のイメージ](images/atp-gpo-proxy2.png)
 7. **[有効]** を選択します。
 8. プロキシ サーバー **名を入力します**。
@@ -189,17 +189,17 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 
 ###  <a name="proxy-configuration-for-down-level-devices"></a>ダウンレベル デバイスのプロキシ構成
 
-Down-Levelには、Windows 7 SP1 および Windows 8.1 ワークステーション、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、Windows Server CB 1803 より前の Windows Server 2016 のバージョンが含まれます。 これらのオペレーティング システムでは、エンドポイントから Azure への通信を処理するために、Microsoft 管理エージェントの一部としてプロキシが構成されます。 これらのデバイスでのプロキシの構成方法については、「Microsoft Management Agent Fast Deployment Guide」を参照してください。
+Down-Level には、Windows 7 SP1 および Windows 8.1 ワークステーション、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 Windows サーバー CB 1803 より前の Windows Server 2016 のバージョンが含まれます。 これらのオペレーティング システムでは、エンドポイントから Azure への通信を処理するために、Microsoft 管理エージェントの一部としてプロキシが構成されます。 これらのデバイスでのプロキシの構成方法については、「Microsoft Management Agent Fast Deployment Guide」を参照してください。
 
 ### <a name="proxy-service-urls"></a>プロキシ サービスの URL
-v20 を含む URL は、Windows 10 バージョン 1803 以降のデバイスがある場合にのみ必要です。 たとえば、 ```us-v20.events.data.microsoft.com``` デバイスが Windows 10 バージョン 1803 以降の場合にのみ必要です。
+v20 を含む URL は、バージョン 1803 以降のデバイスWindows 10場合にのみ必要です。 たとえば、 ```us-v20.events.data.microsoft.com``` デバイスがバージョン 1803 以降Windows 10場合にのみ必要です。
  
 
 プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合、Microsoft Defender for Endpoint センサーがシステム コンテキストから接続している場合は、一覧の URL で匿名トラフィックが許可されている必要があります。
 
 次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールの作成が必要な場合があります。
 
-|**ドメインリストのスプレッドシート**|**Description**|
+|**ドメインリストのスプレッドシート**|**説明**|
 |:-----|:-----|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>[ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 

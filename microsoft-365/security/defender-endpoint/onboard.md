@@ -45,9 +45,9 @@ Defender for Endpoint の機能を構成および管理し、組織に最適な�
 
 トピック | 説明
 :---|:---
-[Microsoft Defender セキュリティ センターの設定を構成する](preferences-setup.md) | 一般的な設定、高度な機能などのポータル関連の設定を構成するか、プレビュー エクスペリエンスを有効にします。
+[ユーザー設定Microsoft Defender セキュリティ センター構成する](preferences-setup.md) | 一般的な設定、高度な機能などのポータル関連の設定を構成するか、プレビュー エクスペリエンスを有効にします。
 [攻撃表面の縮小機能を構成する](configure-attack-surface-reduction.md) | 攻撃表面の縮小機能を構成し、設定が適切に適用され、悪用の軽減方法が設定されていることを確認します。
 [次世代の保護を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | 次世代の保護を構成して、すべての種類の新しい脅威をキャッチします。
-[Microsoft Threat Experts の機能を構成する](configure-microsoft-threat-experts.md) | Microsoft Threat Experts のサイバーセキュリティ脅威インテリジェンスを構成および管理します。
-[Microsoft 365 Defender 統合の構成](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Defender for Endpoint と統合する他のソリューションを構成します。
-[管理と API のサポート](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | セキュリティ情報とイベント管理 (SIEM) にアラートをプルするか、API を使用してカスタム アラートを作成します。 Power BI レポートを作成およびビルドします。
+[機能Microsoft 脅威エキスパート構成する](configure-microsoft-threat-experts.md) | セキュリティ脅威インテリジェンスを構成および管理するには、Microsoft 脅威エキスパート。
+[Defender 統合Microsoft 365構成する](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Defender for Endpoint と統合する他のソリューションを構成します。
+[管理と API のサポート](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | セキュリティ情報とイベント管理 (SIEM) にアラートをプルするか、API を使用してカスタム アラートを作成します。 レポートを作成Power BI作成します。

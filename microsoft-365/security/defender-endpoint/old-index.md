@@ -30,19 +30,19 @@ ms.locfileid: "51934935"
 <center><h2>エンドポイント用 Microsoft Defender</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>脅威&の管理</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>脅威& 脆弱性の管理</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="attack surface reduction icon"> <br><b>攻撃表面の縮小</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="next generation protection icon"><br> <b>次世代の保護</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="endpoint detection and response icon"><br> <b>エンドポイントの検出と応答</b></a></center></td>
 <td><center><a href="#ai"><img src="images/air-icon.png" alt="automated investigation and remediation icon"><br> <b>自動調査と修復</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="microsoft threat experts icon"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><center><a href="#mte"><img src="images/mte-icon.png" alt="microsoft threat experts icon"><br> <b>Microsoft 脅威エキスパート</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
 <a href="#apis"><center><b>一元的な構成と管理、API</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365Defender</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -55,7 +55,7 @@ ms.locfileid: "51934935"
 **[脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)**<br>
 この組み込み機能では、エンドポイントの脆弱性と誤った構成の検出、事前設定、修復に対して、ゲームを変えるリスクベースのアプローチを使用します。
 
-- [脅威&の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威& 脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [概要](tvm-prerequisites.md)
 - [セキュリティの姿勢にアクセスする](tvm-dashboard-insights.md)
 - [セキュリティの態勢を改善し、リスクを軽減する](tvm-security-recommendation.md)
@@ -112,17 +112,17 @@ Microsoft Defender for Endpoint は、ネットワークのセキュリティ境
 <a name="mte"></a>
 
 **[Microsoft 脅威エキスパート](microsoft-threat-experts.md)**<br>
-Microsoft Defender for Endpoint の新しい管理された脅威検出サービスは、プロアクティブな狩猟、事前承認、追加のコンテキストと分析情報を提供します。 Microsoft Threat Experts は、セキュリティ オペレーション センター (SOC) が脅威を迅速かつ正確に特定して対応する権限をさらに強化します。
+Microsoft Defender for Endpoint の新しい管理された脅威検出サービスは、プロアクティブな狩猟、事前承認、追加のコンテキストと分析情報を提供します。 Microsoft 脅威エキスパートオペレーション センター (SOC) が脅威を迅速かつ正確に特定して対応する権限をさらに強化します。
 
 - [標的型攻撃の通知](microsoft-threat-experts.md)
 - [エキスパートオンデマンド](microsoft-threat-experts.md)
-- [Microsoft 365 Defender マネージ ハンティング サービスを構成する](configure-microsoft-threat-experts.md)
+- [Defender 管理Microsoft 365サービスを構成する](configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 
 **[一元的な構成と管理、API](management-apis.md)**<br>
 Microsoft Defender for Endpoint を既存のワークフローに統合します。
-- [オンボード](onboard-configure.md)
+- [オンボーディング](onboard-configure.md)
 - [API と SIEM の統合](configure-siem.md)
 - [公開された API](apis-intro.md)
 - [役割ベースのアクセス制御 (RBAC)](rbac.md)
@@ -139,5 +139,5 @@ Microsoft Defender for Endpoint を既存のワークフローに統合します
 - Microsoft Cloud App Security
 
 <a name="mtp"></a>
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
- Microsoft 365 Defender を使用すると、Microsoft Defender for Endpoint およびさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、アプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応します。
+**[Microsoft 365Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+ Microsoft 365 Defender を使用すると、Microsoft Defender for Endpoint とさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応します。

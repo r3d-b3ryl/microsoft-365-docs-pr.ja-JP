@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: 仕事または学校のアカウントにサインインすると、Windows 10 デバイスが受け取る既定のデバイス ポリシーの設定を構成する方法について説明します。
+description: 仕事または学校のアカウントにサインインすると、Windows 10デバイスが受け取る既定のデバイス ポリシーの設定を構成する方法について説明します。
 ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -36,9 +36,9 @@ ms.locfileid: "51579976"
 ---
 # <a name="secure-windows-10-devices"></a>Windows 10 デバイスをセキュリティで保護する
 
-この記事は、Microsoft 365 Business Premium に適用されます。
+この記事は、このMicrosoft 365 Business Premium。
 
-ここで構成する設定は、Windows 10 の既定のデバイス ポリシーの一部です。 モバイル デバイスや PC を含む Windows 10 デバイスを自分の仕事用アカウントでサインインして接続するユーザーはすべて、これらの設定を自動的に受信します。 セットアップ時は既定のポリシーを受け入れて、ユーザーの特定のグループを対象にするポリシーは後で追加することをお勧めします。
+ここで構成する設定は、Windows 10 の既定のデバイス ポリシーの一部です。 モバイル デバイスや PC など、Windows 10ユーザーが自分の仕事用アカウントでサインインすると、これらの設定が自動的に受信されます。 セットアップ時は既定のポリシーを受け入れて、ユーザーの特定のグループを対象にするポリシーは後で追加することをお勧めします。
   
 ## <a name="settings-to-secure-windows-10-devices"></a>Windows 10 デバイスをセキュリティで保護する設定
 
@@ -46,7 +46,7 @@ ms.locfileid: "51579976"
   
 |||
 |:-----|:-----|
-|設定  <br/> |説明  <br/> |
+|Setting  <br/> |説明  <br/> |
 |Windows Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  <br/> |インターネットに接続されている危険から PC を保護するには、ウイルス対策をオンにする必要があります。  <br/> |
 |Microsoft Edge で PC を Web ベースの脅威から保護する  <br/> |ユーザーを悪意のあるサイトやダウンロードから保護するために役立つ、Microsoft Edge の設定をオンにします。  <br/> |
 |不正なアクセスから PC のファイルとフォルダーを保護するために BitLocker を使用する  <br/> |BitLocker は、コンピューターのハード ドライブを暗号化することによってデータを保護し、コンピューターの紛失や盗難時にデータの漏えいを防ぎます。 詳細については [、「Bitlocker FAQ」を参照してください](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)。  <br/> |

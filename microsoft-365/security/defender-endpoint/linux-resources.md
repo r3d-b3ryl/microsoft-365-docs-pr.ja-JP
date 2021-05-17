@@ -52,7 +52,7 @@ ms.locfileid: "51933327"
 
 2. 問題を再現します。
 
-3. 次のコマンドを実行して、Defender for Endpoint のログをバックアップします。 ファイルは .zip アーカイブ内に格納されます。
+3. 次のコマンドを実行して、Defender for Endpoint のログをバックアップします。 ファイルは、アーカイブ内に.zipされます。
 
    ```bash
    sudo mdatp diagnostic create
@@ -79,7 +79,7 @@ ms.locfileid: "51933327"
 
 詳細ログはに保存されます `/var/log/microsoft/mdatp_install.log` 。 インストール中に問題が発生した場合は、このファイルを送信して、原因の診断に役立ちます。
 
-## <a name="uninstall"></a>Uninstall
+## <a name="uninstall"></a>アンインストール
 
 Linux で Defender for Endpoint をアンインストールするには、いくつかの方法があります。 Puppet などの構成ツールを使用している場合は、構成ツールのパッケージのアンインストール手順に従います。
 
@@ -101,7 +101,7 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 
 次の表に、最も一般的なシナリオの一部のコマンドを示します。 ターミナル `mdatp help` から実行して、サポートされているコマンドの完全な一覧を表示します。
 
-|Group                 |シナリオ                                                |コマンド                                                                |
+|Group                 |シナリオ                                                |command                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |構成         |リアルタイム保護のオン/オフ                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
 |構成         |動作監視のオン/オフを切り替えます                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
@@ -163,8 +163,8 @@ Defender for Endpoint ポータルには、次の 2 つのカテゴリの情報�
 
 ### <a name="known-issues"></a>既知の問題
 
-- 製品が期待通り動作している場合でも、Microsoft Defender Security Center ポータルのコンピューター情報ページに「センサー データなし、通信障害」が表示される場合があります。 この問題の解決に取り組み中です。
-- ログオンしているユーザーは、Microsoft Defender セキュリティ センター ポータルに表示されません。
+- 製品が期待通り動作している場合でも、Microsoft Defender セキュリティ センター ポータルのコンピューター情報ページに「センサー データなし、通信障害」が表示される場合があります。 この問題の解決に取り組み中です。
+- ログオンしているユーザーは、ポータルにMicrosoft Defender セキュリティ センターされません。
 - SUSE ディストリビューションで *、libatomic1* のインストールが失敗した場合は、OS が登録されているのを検証する必要があります。
 
    ```bash

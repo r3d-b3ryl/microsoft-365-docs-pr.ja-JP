@@ -1,7 +1,7 @@
 ---
 title: 高度な検索でランサムウェアを検索する
 description: 高度な検索を使用して、ランサムウェアの影響を受ける可能性のあるデバイスを見つける。
-keywords: 高度な狩猟, ランサムウェア, 脅威の狩猟, サイバー脅威の狩猟, 検索, クエリ, テレメトリ, Microsoft 365, Microsoft 365 Defender
+keywords: 高度な狩猟、ランサムウェア、脅威狩り、サイバー脅威の狩猟、検索、クエリ、テレメトリ、Microsoft 365、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -38,7 +38,7 @@ ms.locfileid: "51934815"
 
 > [人が操作するランサムウェアについて読む](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-Microsoft [](advanced-hunting-overview.md) 365 Defender での高度な検索を使用すると、ランサムウェア アクティビティに関連付けられた個々のアーティファクトを検索するクエリを作成できます。 また、より高度なクエリを実行して、アクティビティの兆候を探し、それらの兆候の重さを量って、すぐに注意を必要とするデバイスを見つけられます。
+Defender[で高度](advanced-hunting-overview.md)なMicrosoft 365を使用すると、ランサムウェア アクティビティに関連付けられている個々のアーティファクトを検索するクエリを作成できます。 また、より高度なクエリを実行して、アクティビティの兆候を探し、それらの兆候の重さを量って、すぐに注意を必要とするデバイスを見つけられます。
 
 ## <a name="signs-of-ransomware-activity"></a>ランサムウェアアクティビティの兆候
 Microsoft のセキュリティ研究者は、高度な侵入者によって立ち上げられた多くのランサムウェア キャンペーンで、さまざまな一般的でありながら微妙なアーティファクトを観察しています。 これらの兆候は、主にシステム ツールを使用して暗号化の準備、検出の防止、および明らかな法医学証拠を含む。

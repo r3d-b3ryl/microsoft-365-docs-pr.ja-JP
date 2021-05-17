@@ -1,7 +1,7 @@
 ---
 title: セキュリティ上の推奨事項を取得する
 description: 特定のデバイス ID に関連するセキュリティ推奨事項のコレクションを取得します。
-keywords: apis、graph api、サポートされている API、get、list、file、information、デバイスごとのセキュリティ推奨事項、脅威 & 脆弱性管理 API、Microsoft Defender for Endpoint tvm api
+keywords: apis、 graph api, supported apis, get, list, file, information, security recommendation per device, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -1,6 +1,6 @@
 ---
-title: 脅威と脆弱性の管理における露出スコア
-description: 脅威と脆弱性管理の暴露スコアは、組織がサイバーセキュリティの脅威に対してどのように脆弱かを反映しています。
+title: ユーザーの露出スコア脅威と脆弱性の管理
+description: この脅威と脆弱性の管理は、組織がサイバーセキュリティの脅威に対してどのように脆弱かを反映しています。
 keywords: 露出スコア、Microsoft Defender for Endpoint 露出スコア、Microsoft Defender for Endpoint tvm 露出スコア、組織の露出スコア、tvm 組織の露出スコア、脅威と脆弱性の管理、Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -37,7 +37,7 @@ ms.locfileid: "51934107"
 
 >Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-露出スコアは、Microsoft Defender[](tvm-dashboard-insights.md)セキュリティ センターの脅威と脆弱性の管理ダッシュボードに表示されます。 これは、組織がサイバーセキュリティの脅威に対してどのように脆弱かを反映しています。 露出スコアが低いということは、デバイスが悪用の影響を受けやすいという意味です。
+露出スコアは、ユーザーの脅威と脆弱性の管理[ダッシュボード](tvm-dashboard-insights.md)に表示Microsoft Defender セキュリティ センター。 これは、組織がサイバーセキュリティの脅威に対してどのように脆弱かを反映しています。 露出スコアが低いということは、デバイスが悪用の影響を受けやすいという意味です。
 
 - 組織のセキュリティの状態に関する高レベルのテイクアウトを迅速に理解し、特定します。
 - 現在の状態を改善するために調査またはアクションが必要な領域を検出して対応します。
@@ -59,11 +59,11 @@ ms.locfileid: "51934107"
 
 ## <a name="reduce-your-threat-and-vulnerability-exposure"></a>脅威と脆弱性の暴露を減らす
 
-セキュリティに関する推奨事項を修正することで、脅威と脆弱性の暴露 [を削減します](tvm-security-recommendation.md)。 脅威と脆弱性の管理ダッシュボードで確認できる、セキュリティに関する上位の推奨事項を修正することで、露出スコアに最も影響 [を与えます](tvm-dashboard-insights.md)。
+セキュリティに関する推奨事項を修正することで、脅威と脆弱性の暴露 [を削減します](tvm-security-recommendation.md)。 最も重要なセキュリティ推奨事項を修復して、露出スコアに最も大きな影響を与えます。これは、脅威と脆弱性の管理[ダッシュボードで確認できます](tvm-dashboard-insights.md)。
 
 ## <a name="related-topics"></a>関連項目
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)
 - [イベントのタイムライン](threat-and-vuln-mgt-event-timeline.md)

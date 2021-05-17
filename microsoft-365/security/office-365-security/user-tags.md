@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender のユーザー タグ (Office 365)
+title: Microsoft Defender のユーザー タグ (Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Microsoft Defender で 365 プラン 2 のユーザー タグを持つ特定のOfficeを識別する方法について説明します。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別するために、Office 365 で使用できます。
+description: 管理者は、プラン 2 の Microsoft Defender でユーザー タグを持つユーザーの特定のグループOffice 365学習できます。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別Office 365に使用できます。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
@@ -23,17 +23,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/22/2021
 ms.locfileid: "51943013"
 ---
-# <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365)
+# <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365
 
 > [!NOTE]
-> ユーザー タグ機能はプレビュー機能であり、すべてのユーザーが利用できるとは言え、変更される可能性があります。 リリース スケジュールの詳細については [、「Microsoft 365 ロードマップ」を参照してください](https://www.microsoft.com/microsoft-365/roadmap)。
+> ユーザー タグ機能はプレビュー機能であり、すべてのユーザーが利用できるとは言え、変更される可能性があります。 リリース スケジュールの詳細については、次のロードマップ[をMicrosoft 365してください](https://www.microsoft.com/microsoft-365/roadmap)。
 
-ユーザー タグは [、Microsoft Defender 365](defender-for-office-365.md)の特定のグループのユーザー Officeです。 ユーザー タグには次の 2 種類があります。
+ユーザー タグは、Microsoft [Defender](defender-for-office-365.md)のユーザーの特定のグループの識別子Office 365。 ユーザー タグには次の 2 種類があります。
 
 - **システム タグ**: 現在、 [優先度アカウント](../../admin/setup/priority-accounts.md) はシステム タグの唯一の種類です。
 - **カスタム タグ**: これらのユーザー タグは、自分で作成します。
 
-組織に Office 365 プラン 2 の Defender (サブスクリプションまたはアドオンとして含まれる) がある場合は、優先度のアカウント タグを使用する以外に、カスタム ユーザー タグを作成できます。
+組織に Defender for Office 365 プラン 2 (サブスクリプションまたはアドオンとして含まれる) がある場合は、優先度アカウント タグの使用に加えて、カスタム ユーザー タグを作成できます。
 
 > [!NOTE]
 > 現時点では、メールボックス ユーザーにのみユーザー タグを適用できます。
@@ -44,14 +44,14 @@ ms.locfileid: "51943013"
 - [脅威エクスプローラーとリアルタイム検出](threat-explorer.md)
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
 - [キャンペーン ビュー](campaigns.md)
-- 優先度アカウントの場合は、Exchange[](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)管理センター (EAC) の [優先度アカウントの電子メールの問題] レポートを使用できます。
+- 優先度アカウントの場合は、管理センター [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) (EAC) の [優先アカウントの電子メールExchangeレポートを使用できます。
 
 この記事では、セキュリティ コンプライアンス センターでユーザー タグを構成する&説明します。 ユーザー タグを管理するセキュリティ &コンプライアンス センターにはコマンドレットはありません。
 
-影響の大きなユーザー アカウントを保護するための戦略の一部であるユーザー タグの詳細については [、「Microsoft 365](security-recommendations-for-priority-accounts.md)の優先アカウントのセキュリティに関する推奨事項」を参照してください。
+影響の大きなユーザー アカウントを保護するための戦略の一部であるユーザー タグの詳細については、「セキュリティに関する推奨事項」を参照[Microsoft 365。](security-recommendations-for-priority-accounts.md)
 
 > [!NOTE]
-> 統合 Microsoft 365 セキュリティ センターを使用する場合は、次のタグを設定できます https://security.microsoft.com/userTags 。
+> 統合セキュリティ センターを使用Microsoft 365、次のタグを設定できます https://security.microsoft.com/userTags 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -69,7 +69,7 @@ ms.locfileid: "51943013"
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - ユーザー タグ管理は、タグ リーダーと **タグ マネージャー** の **役割によって制御** されます。
 
-- また、Microsoft 365 管理センターで優先度アカウントを管理および監視することもできます。 手順については、「優先度アカウントの [管理と監視」を参照してください](../../admin/setup/priority-accounts.md)。
+- また、管理センターで優先度アカウントを管理Microsoft 365監視することもできます。 手順については、「優先度アカウントの [管理と監視」を参照してください](../../admin/setup/priority-accounts.md)。
 
 - 特権アカウント (管理者アカウント) _のセキュリティ保護の詳細については_ 、このトピックを [参照してください](/azure/architecture/framework/security/critical-impact-accounts)。
 

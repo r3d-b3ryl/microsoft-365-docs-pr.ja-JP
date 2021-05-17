@@ -1,5 +1,5 @@
 ---
-title: ID でソフトウェアを取得する
+title: Id でソフトウェアを取得する
 description: デバイス グループ別の露出スコアの一覧を取得します。
 keywords: apis, graph api, supported api, get, software, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934311"
 ---
-# <a name="get-software-by-id"></a>ID でソフトウェアを取得する
+# <a name="get-software-by-id"></a>Id でソフトウェアを取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

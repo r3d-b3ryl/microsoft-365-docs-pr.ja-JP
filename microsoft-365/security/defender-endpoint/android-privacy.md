@@ -47,7 +47,7 @@ Defender for Endpoint on Android は、構成済みの Android デバイスか�
 デバイス上 **の** 悪意のある Android アプリケーション パッケージ (APK) に関する情報 (以下を含む)
 
 -  ソースのインストール
--  APK の保存場所 (ファイル パス)
+-  Storageの場所 (ファイル パス)
 -  インストールの時間、APK のサイズ、およびアクセス許可
 
 ### <a name="web-page--network-information"></a>Web ページ / ネットワーク情報
@@ -66,9 +66,9 @@ Defender for Endpoint on Android は、構成済みの Android デバイスか�
     - ランダムに生成されたグローバル一意識別子 (GUID)
 
 - テナント、デバイス、およびユーザー情報
-    -   Azure Active Directory (AD) デバイス ID と Azure ユーザー ID: デバイスを一意に識別します。ユーザーは、それぞれ Azure Active directory にあります。
+    -   Azure Active Directory (AD) デバイス ID と Azure ユーザー ID: デバイスを一意に識別します。ユーザーは、それぞれ Azure Active ディレクトリにあります。
 
-    -   Azure テナント ID - Azure Active Directory 内の組織を識別する GUID
+    -   Azure テナント ID - 組織内の組織を識別する GUID Azure Active Directory
 
     -   Microsoft Defender for Endpoint org ID - デバイスが属する企業に関連付けられた一意の識別子。 Microsoft は、問題が企業の選択セットに影響を与えるかどうか、および影響を受け取る企業の数を特定できます。 
 

@@ -1,7 +1,7 @@
 ---
 title: サポート終了のソフトウェアとソフトウェアのバージョンを計画する
 description: サポートされなくなった、セキュリティ更新プログラムを受け取らないソフトウェアとソフトウェアのバージョンを検出して計画します。
-keywords: 脅威と脆弱性の管理、Microsoft Defender for Endpoint tvm セキュリティ推奨事項、サイバーセキュリティの推奨事項、アクション可能なセキュリティの推奨事項
+keywords: 脅威と脆弱性の管理、Microsoft Defender for Endpoint tvm セキュリティ推奨事項、サイバーセキュリティの推奨事項、アクション可能なセキュリティ推奨事項
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934131"
 ---
-# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>脅威と脆弱性の管理を使用して、サポート終了のソフトウェアとソフトウェアのバージョンを計画する
+# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>サポート終了のソフトウェアとソフトウェアのバージョンを計画する場合は、脅威と脆弱性の管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "51934131"
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>サポートされなくなったソフトウェアまたはソフトウェアのバージョンを検索する
 
-1. [脅威と脆弱性の管理] メニューから、[セキュリティの推奨事項 [**] に移動します**](tvm-security-recommendation.md)。
+1. [セキュリティ] メニュー脅威と脆弱性の管理[セキュリティの推奨事項 [**] に移動します**](tvm-security-recommendation.md)。
 2. [フィルター] **パネルに移動** し、[タグ] セクションを探します。 1 つ以上の EOS タグ オプションを選択します。 次に **、適用します**。
 
     ![EOS ソフトウェア、EOS バージョン、および今後の EOS バージョンを示すスクリーンショット タグ。](images/tvm-eos-tag.png)
@@ -72,6 +72,6 @@ ms.locfileid: "51934131"
 
 ## <a name="related-topics"></a>関連項目
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)
 - [ソフトウェア インベントリ](tvm-software-inventory.md)

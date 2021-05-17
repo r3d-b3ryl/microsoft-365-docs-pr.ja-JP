@@ -41,7 +41,7 @@ Defender for Endpoint は、お客様がプラットフォームを簡単に採�
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>エンドポイントのオンボーディングとポータル アクセス 
 
-デバイスオンボーディングは、クライアント デバイス用の Microsoft Endpoint Manager と Microsoft Intune、およびサーバー デバイス用の Azure Defender に完全に統合され、構成、展開、および監視の完全なエンドツーエンドエクスペリエンスを提供します。 さらに、Microsoft Defender for Endpoint では、デバイス管理に使用されるグループ ポリシーや他のサード パーティ製ツールもサポートしています。
+デバイスオンボーディングは、クライアント デバイス用の Microsoft エンドポイント マネージャー と Microsoft Intune、サーバー デバイス用の Azure Defender に完全に統合され、構成、展開、監視の完全なエンドツーエンドエクスペリエンスを提供します。 さらに、Microsoft Defender for Endpoint では、デバイス管理に使用されるグループ ポリシーや他のサード パーティ製ツールもサポートしています。
 
 Defender for Endpoint は、役割ベースのアクセス制御 (RBAC) の柔軟性を通じて、ポータルにアクセスできるユーザーが見て実行できる機能を詳細に制御します。 RBAC モデルは、セキュリティ チーム構造のすべての機能をサポートします。
 - グローバルに分散した組織とセキュリティ チーム
@@ -80,7 +80,7 @@ Defender for Endpoint イベント情報は、長期的なデータ保持のた�
 
 
 ## <a name="siem-api"></a>SIEM API
-セキュリティ情報とイベント管理 (SIEM) 統合を有効にした場合、SIEM ソリューションを使用するか、検出 REST API に直接接続することで、Microsoft Defender Security Center から検出を取得できます。 これにより、値が事前に入力された SIEM コネクタ アクセスの詳細セクションがアクティブ化され、アプリケーションが Azure Active Directory (Azure Active Directory) テナントのADされます。 詳細については [、「SIEM 統合」を参照してください](enable-siem-integration.md)。
+セキュリティ情報とイベント管理 (SIEM) 統合を有効にした場合、SIEM ソリューションを使用するか、検出 REST API に直接接続することで、Microsoft Defender セキュリティ センター から検出を取得できます。 これにより、値が事前に設定された SIEM コネクタ アクセスの詳細セクションがアクティブ化され、アプリケーションが Azure Active Directory (Azure AD) テナントの下に作成されます。 詳細については [、「SIEM 統合」を参照してください](enable-siem-integration.md)。
 
 ## <a name="related-topics"></a>関連項目
 - [エンドポイント API 用 Microsoft Defender にアクセスする ](apis-intro.md)

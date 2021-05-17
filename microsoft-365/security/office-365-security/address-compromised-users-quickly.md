@@ -12,7 +12,7 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: Microsoft Defender for Office 365 Plan 2 で、侵害されたユーザー アカウントを検出して対処するプロセスを高速化する方法について説明します。
+description: Microsoft Defender for Office 365 プラン 2 の自動調査と対応機能を使用して、侵害されたユーザー アカウントを検出して対処するプロセスをスピードアップする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
@@ -32,7 +32,7 @@ ms.locfileid: "51934695"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-[Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) には、強力な自動調査と応答 [(AIR)](office-365-air.md) 機能が含まれています。 このような機能により、セキュリティ運用チームが脅威に対処するために多くの時間と労力を節約できます。 Microsoft は引き続きセキュリティ機能を強化しています。 最近、AIR の機能が強化され、セキュリティが侵害されたユーザー セキュリティ プレイブック (現在プレビュー中) が含まれます。 侵害されたユーザー セキュリティ プレイブックの詳細については、この記事を参照してください。 詳細については、「Microsoft Defender for microsoft Defender for Office [365」](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) を参照してください。
+[Microsoft Defender for Office 365プラン 2 には](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)、強力な自動調査と応答[(AIR)](office-365-air.md)機能が含まれています。 このような機能により、セキュリティ運用チームが脅威に対処するために多くの時間と労力を節約できます。 Microsoft は引き続きセキュリティ機能を強化しています。 最近、AIR の機能が強化され、セキュリティが侵害されたユーザー セキュリティ プレイブック (現在プレビュー中) が含まれます。 侵害されたユーザー セキュリティ プレイブックの詳細については、この記事を参照してください。 また、詳細については、[ブログの投稿「Microsoft Defender](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)を使用してユーザーの侵害を検出して対応する時間をOffice 365を参照してください。
 
 ![侵害されたユーザーの自動調査](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -46,7 +46,7 @@ ms.locfileid: "51934695"
 
 ## <a name="compromised-user-alerts"></a>侵害されたユーザー通知
 
-ユーザー アカウントが侵害された場合、異常または異常な動作が発生します。 たとえば、フィッシングメッセージとスパム メッセージは、信頼できるユーザー アカウントから内部的に送信される場合があります。 365 Office 365 の Defender は、365 内の電子メール パターンやコラボレーション アクティビティでこのような異常をOfficeできます。 この場合、アラートがトリガーされ、脅威の軽減プロセスが開始されます。
+ユーザー アカウントが侵害された場合、異常または異常な動作が発生します。 たとえば、フィッシングメッセージとスパム メッセージは、信頼できるユーザー アカウントから内部的に送信される場合があります。 Defender for Office 365は、メール パターンやグループ内での共同作業のアクティビティでこのような異常をOffice 365。 この場合、アラートがトリガーされ、脅威の軽減プロセスが開始されます。
 
 たとえば、疑わしいメール送信のためにトリガーされたアラートを次に示します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "51934695"
 
    これにより、制限付きユーザーの一覧が開きます。
 
-   ![365 の制限付きユーザー Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
+   ![ユーザーの制限付きOffice 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
 
 4. リストでユーザー アカウントを選択して詳細を表示し、制限付きユーザーを解放するなどの [アクションを実行します](removing-user-from-restricted-users-portal-after-spam.md)。
 
@@ -103,7 +103,7 @@ ms.locfileid: "51934695"
 
 - [AIR 機能を使用するために必要なアクセス許可を確認する](office-365-air.md#required-permissions-to-use-air-capabilities)
 
-- [365 で悪意のあるメールを検索Officeする](investigate-malicious-email-that-was-delivered.md)
+- [悪意のあるメールを検索して調査Office 365](investigate-malicious-email-that-was-delivered.md)
 
 - [エンドポイント向け Microsoft Defender の AIR について説明します。](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

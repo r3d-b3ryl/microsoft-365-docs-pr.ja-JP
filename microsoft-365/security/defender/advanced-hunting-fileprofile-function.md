@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender の高度な検索での FileProfile() 関数
+title: Defender の高度な検索での FileProfile() Microsoft 365
 description: FileProfile() を使用して高度な検索クエリ結果のファイルに関する情報を強化する方法について説明します。
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、FileProfile、ファイル プロファイル、関数、エンリッチメント
 search.product: eADQiWindows 10XVcnh
@@ -49,10 +49,10 @@ ms.locfileid: "51935847"
 | `Signer` | string | ファイルの署名者に関する情報 |
 | `Issuer` | string | 発行元証明機関 (CA) に関する情報 |
 | `SignerHash` | string | 署名者を識別する一意のハッシュ値 |
-| `IsCertificateValid` | ブール値 | ファイルの署名に使用する証明書が有効かどうか |
-| `IsRootSignerMicrosoft` | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
+| `IsCertificateValid` | boolean | ファイルの署名に使用する証明書が有効かどうか |
+| `IsRootSignerMicrosoft` | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
 | `SignatureState` | string | ファイル署名の状態: SignedValid - ファイルは有効な署名で署名されています。SignedInvalid - ファイルは署名されますが、証明書は無効です。Signeded - ファイルは署名されていない、不明 - ファイルに関する情報を取得できません
-| `IsExecutable` | ブール値 | ファイルがポータブル実行可能ファイル (PE) ファイルかどうか |
+| `IsExecutable` | boolean | ファイルがポータブル実行可能ファイル (PE) ファイルかどうか |
 | `ThreatName` | string | マルウェアまたは検出された他の脅威の検出名 |
 | `Publisher` | string | ファイルを発行した組織の名前 |
 | `SoftwareName` | string | ソフトウェア製品の名前 |
@@ -74,7 +74,7 @@ invoke FileProfile(x,y)
 
 ## <a name="examples"></a>例
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>SHA1 列のみを投影してエンリッチする
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>Project SHA1 列のみを選択してエンリッチする
 
 ```kusto
 DeviceFileEvents

@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの EmailEvents テーブル
-description: 高度なハンティング スキーマの EmailEvents テーブルで、Microsoft 365 メールに関連付けられているイベントについて説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、EmailEvents、ネットワーク メッセージ ID、送信者、受信者、添付ファイル ID、添付ファイル ID、添付ファイル名、マルウェアの評決、フィッシングの評決、添付ファイル数、リンクカウント、URL カウント
+description: 高度な検索スキーマの emailEvents Microsoft 365メールに関連付けられているイベントについて説明します。
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、列、データ型、説明、EmailEvents、ネットワーク メッセージ ID、送信者、受信者、添付ファイル ID、添付ファイル名、マルウェアの評決、フィッシングの評決、添付ファイル数、リンク数、URL カウント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "51935487"
 
 - Microsoft 365 Defender
 
-高度 `EmailEvents` なハンティング スキーマ [の表](advanced-hunting-overview.md) には、Microsoft Defender for Office 365 の電子メールの処理に関するイベントに関する情報が含まれている。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度 `EmailEvents` な検索スキーマの[表](advanced-hunting-overview.md)には、Microsoft Defender の電子メールの処理に関連するイベントに関する情報が含Office 365。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
 > テーブルでサポートされるイベントの種類 (値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ参照 `ActionType` を使用します。
@@ -45,7 +45,7 @@ ms.locfileid: "51935487"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | string | Microsoft 365 によって生成された電子メールの一意の識別子 |
+| `NetworkMessageId` | string | ユーザーが生成する電子メールの一意Microsoft 365 |
 | `InternetMessageId` | string | 送信メール システムにより設定された、メールの一般向けの識別子 |
 | `SenderMailFromAddress` | string | MAIL FROM ヘッダーの送信者メール アドレス (エンベロープ送信者またはリターン パス アドレスとも呼ばれる) |
 | `SenderFromAddress` | string | 受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス |

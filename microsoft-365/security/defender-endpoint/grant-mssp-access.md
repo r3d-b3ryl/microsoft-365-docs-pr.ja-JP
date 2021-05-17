@@ -58,7 +58,7 @@ ms.locfileid: "51932753"
 
 2. エンドポイントの Customer Defender で適切なアクセス レベルの Defender for Endpoint ロールを作成します。
 
-    お客様の Microsoft Defender セキュリティ センターで RBAC を有効にするには、グローバル管理者またはセキュリティ管理者の権限を持つユーザー アカウントから、[設定] > アクセス許可 **>** ロールと "ロールを有効にする" にアクセスします。
+    カスタマー Microsoft Defender セキュリティ センター で RBAC を有効にするには、グローバル管理者またはセキュリティ管理者の権限を持つユーザー アカウントから 設定 > アクセス許可 **>** ロールと "ロールを有効にする" にアクセスします。
 
     ![MSSP アクセスのイメージ](images/mssp-access.png)
 
@@ -132,7 +132,7 @@ ms.locfileid: "51932753"
     例:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. UI の [承認] セクション **で要求を** 承認または拒否します。
 
-    この時点で、アナリスト アクセスが準備され、各アナリストが顧客の Microsoft Defender セキュリティ センターにアクセスできる必要があります。 `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    この時点で、アナリスト アクセスが準備され、各アナリストが顧客のサービスにアクセスMicrosoft Defender セキュリティ センター。`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>関連項目
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)

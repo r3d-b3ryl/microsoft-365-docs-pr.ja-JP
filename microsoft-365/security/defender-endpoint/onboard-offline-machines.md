@@ -39,12 +39,12 @@ ms.locfileid: "51934923"
 インターネット にアクセスせずにデバイスをオンボードするには、次の一般的な手順を実行する必要があります。
 
 > [!IMPORTANT] 
-> 以下の手順は、以前のバージョンの Windows を実行しているデバイス (Windows Server 2016 以前または Windows 8.1 以前) にのみ適用されます。
+> 以下の手順は、以前のバージョンのデバイス (Windows以前または以前のバージョンWindows Server 2016デバイスWindows 8.1適用されます。
 
 > [!NOTE]
-> - OMS ゲートウェイ サーバーは、"TelemetryProxyServer" レジストリまたは GPO を介して構成されている場合、切断された Windows 10 デバイスまたは Windows Server 2019 デバイスのプロキシとして使用できません。
-> - Windows 10 または Windows Server 2019 の場合- TelemetryProxyServer を使用する場合は、標準のプロキシ デバイスまたはアプライアンスを指している必要があります。
-> - さらに、切断された環境の Windows 10 または Windows Server 2019 では、内部ファイルまたは Web サーバーを介して証明書信頼リストをオフラインで更新できる必要があります。
+> - 「TelemetryProxyServer」レジストリまたは GPO を使用して構成されている場合、接続されていない Windows 10 または Windows Server 2019 デバイスのプロキシとして OMS ゲートウェイ サーバーを使用することはできません。
+> - サーバー 2019 Windows 10またはWindowsサーバー 2019 では、TelemetryProxyServer を使用する場合は、標準のプロキシ デバイスまたはアプライアンスを指している必要があります。
+> - さらに、接続Windows 10環境Windowsサーバー 2019 の証明書信頼リストを、内部ファイルまたは Web サーバーを介してオフラインで更新できる必要があります。
 > - オフラインでの CTL の更新の詳細については、「CTL ファイルをダウンロードするファイルまたは Web サーバーを構成する [」を参照してください](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)。
 
 オンボーディング方法の詳細については、次の記事を参照してください。
@@ -56,7 +56,7 @@ ms.locfileid: "51934923"
 
 - プロキシまたはハブとして機能するように Azure Log Analytics (以前は OMS Gateway と呼ばれる) をセットアップします。
   - [Azure Log Analytics エージェント](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [Microsoft Monitoring Agent (MMA) ポイント](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) を Defender for Endpoint Workspace キー id にインストールして&する
+  - エンドポイント ワークスペースキー id Microsoft Monitoring Agent Defender をポイントするコンピューター [(MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)ポイントをインストール&する
 
 - Azure Log Analytics の同じネットワーク内のオフライン デバイス
   -  次の点を示す MMA を構成します。
@@ -68,7 +68,7 @@ ms.locfileid: "51934923"
 
     - プロキシまたはハブとして機能するように Azure Log Analytics Gateway (以前は OMS ゲートウェイと呼ばれる) をセットアップします。
       - [Azure Log Analytics Gateway](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-      - [Microsoft Monitoring Agent (MMA) ポイント](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) を Defender for Endpoint Workspace キー id にインストールして&する
+      - エンドポイント ワークスペースキー id Microsoft Monitoring Agent Defender をポイントするコンピューター [(MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)ポイントをインストール&する
     - OMS ゲートウェイの同じネットワーク内のオフライン Azure VM
       - Azure Log Analytics IP をプロキシとして構成する
       - Azure Log Analytics Workspace Key & ID

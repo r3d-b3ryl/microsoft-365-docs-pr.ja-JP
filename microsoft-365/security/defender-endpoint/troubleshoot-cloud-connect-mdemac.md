@@ -73,7 +73,7 @@ Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 
 > [!WARNING]
 > 認証されたプロキシはサポートされていません。 PAC、WPAD、または静的プロキシだけが使用されている必要があります。 SSL 検査および代行受信プロキシも、セキュリティ上の理由からサポートされていません。 SSL インスペクションとプロキシ サーバーの例外を構成して、macOS 上の Microsoft Defender for Endpoint のデータを、傍受なしで関連する URL に直接渡します。 インターセプト証明書をグローバル ストアに追加すると、傍受は許可されない。
-接続がブロックされていないとテストするには:Microsoft Edge for Mac や Safari などのブラウザーで開き https://x.cp.wd.microsoft.com/api/report 、 を開きます https://cdn.x.cp.wd.microsoft.com/ping 。
+接続がブロックされていないとテストするには:Mac または Safari の接続Microsoft Edgeなどのブラウザーで開 https://x.cp.wd.microsoft.com/api/report きます https://cdn.x.cp.wd.microsoft.com/ping 。
 
 必要に応じて、ターミナルで次のコマンドを実行します。
 

@@ -44,7 +44,7 @@ ms.locfileid: "51932813"
 ![[セキュリティ構成管理] ページ](images/secconmgmt_main.png)<br>
 *デバイス構成管理ページ*
 
-Microsoft Intune および Microsoft 365 セキュリティ センターのデバイス管理ページへの直接の詳細なリンクを通じて、組織レベルで構成状態を追跡し、オンボーディングのカバレッジの低下、コンプライアンスの問題、および最適化の不十分な攻撃表面の軽減策に対応して迅速にアクションを実行できます。
+Microsoft Intune および Microsoft 365 セキュリティ センターのデバイス管理ページへの直接の深いリンクを通じて、組織レベルで構成状態を追跡し、オンボーディングカバレッジの不十分、コンプライアンスの問題、および最適化の不十分な攻撃表面の軽減に対応して迅速にアクションを実行できます。
 
 そうすることで、次の利点があります。
 - デバイス上のイベントの包括的な可視性
@@ -54,12 +54,12 @@ Microsoft Intune および Microsoft 365 セキュリティ センターのデ�
 
 ## <a name="enroll-devices-to-intune-management"></a>Intune 管理へのデバイスの登録
 
-デバイス構成管理は、Intune デバイス管理と密接に関係して、組織内のデバイスのインベントリとベースライン セキュリティ構成を確立します。 Intune で管理されている Windows 10 デバイスで構成の問題を追跡および管理できます。
+デバイス構成管理は、Intune デバイス管理と密接に関係して、組織内のデバイスのインベントリとベースライン セキュリティ構成を確立します。 Intune で管理されているデバイス上の構成の問題を追跡およびWindows 10できます。
 
-デバイスが適切に構成されていることを確認する前に、デバイスを Intune 管理に登録します。 Intune の登録は堅牢で、Windows 10 デバイスのいくつかの登録オプションがあります。 Intune 登録オプションの詳細については、「Windows デバイスの登録 [の設定」を参照してください](https://docs.microsoft.com/intune/windows-enroll)。
+デバイスが適切に構成されていることを確認する前に、デバイスを Intune 管理に登録します。 Intune の登録は堅牢で、デバイスに対して複数Windows 10があります。 Intune 登録オプションの詳細については、「デバイスの登録の設定」[を参照Windowsしてください](https://docs.microsoft.com/intune/windows-enroll)。
 
 >[!NOTE]
->Windows デバイスを Intune に登録するには、管理者に既にライセンスが割り当てられている必要があります。 [デバイス登録のライセンスの割り当てに関する記事をご覧ください](https://docs.microsoft.com/intune/licenses-assign)。
+>Intune にWindows登録するには、管理者にライセンスが既に割り当てられている必要があります。 [デバイス登録のライセンスの割り当てに関する記事をご覧ください](https://docs.microsoft.com/intune/licenses-assign)。
 
 >[!TIP] 
 >Intune を使用してデバイス管理を最適化するには [、Intune を Defender for Endpoint に接続します](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
@@ -85,6 +85,6 @@ Microsoft Intune および Microsoft 365 セキュリティ センターのデ�
 :---|:---
 [Defender for Endpoint にオンボードされているデバイスを取得する](configure-machines-onboarding.md)| Intune で管理されているデバイスのオンボーディング状態を追跡し、Intune を介してその他のデバイスをオンボードします。 
 [Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを強化する](configure-machines-security-baseline.md) | ベースラインのコンプライアンスと非準拠を追跡します。 セキュリティ ベースラインを Intune で管理されるその他のデバイスに展開します。
-[ASR ルールの展開と検出を最適化する](configure-machines-asr.md) | Microsoft 365 セキュリティ センターの影響分析ツールを使用して、ルールの展開を確認し、検出を調整します。
+[ASR ルールの展開と検出を最適化する](configure-machines-asr.md) | ルールの展開を確認し、セキュリティ センターで影響分析ツールを使用Microsoft 365調整します。
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

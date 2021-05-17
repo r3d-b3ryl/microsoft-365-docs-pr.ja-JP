@@ -1,7 +1,7 @@
 ---
-title: 脅威と脆弱性の管理による脆弱性の修復
-description: セキュリティの推奨事項によって検出されたセキュリティの弱点を修復し、必要に応じて脅威と脆弱性の管理で例外を作成します。
-keywords: Microsoft Defender for Endpoint tvm 修復、Microsoft Defender for Endpoint tvm、脅威と脆弱性管理、脅威 & 脆弱性管理、脅威 & 脆弱性管理修復、tvm 修復 intune、tvm 修復 sccm
+title: 脆弱性を修復脅威と脆弱性の管理
+description: セキュリティ推奨事項によって検出されたセキュリティの弱点を修復し、必要に応じて例外を作成脅威と脆弱性の管理。
+keywords: エンドポイント tvm 修復用 Microsoft Defender、Microsoft Defender for Endpoint tvm、脅威と脆弱性の管理、脅威 & 脆弱性の管理、脅威& 脆弱性の管理 修復、tvm 修復 intune、tvm 修復 sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934071"
 ---
-# <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>脅威と脆弱性の管理による脆弱性の修復
+# <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>脆弱性を修復脅威と脆弱性の管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,11 +38,11 @@ ms.locfileid: "51934071"
 
 ## <a name="request-remediation"></a>修復の要求
 
-Microsoft Defender for Endpoint の脅威と脆弱性管理機能は、修復要求ワークフローを通じてセキュリティ管理者と IT 管理者の間のギャップを埋め合わせています。 IT 管理者に対してセキュリティの推奨事項ページから Intune への脆弱性の修復を要求できるセキュリティ管理者。
+Microsoft Defender for Endpoint 脅威と脆弱性の管理機能は、修復要求ワークフローを通じてセキュリティ管理者と IT 管理者の間のギャップを埋め合わせています。 IT 管理者に対してセキュリティの推奨事項ページから Intune への脆弱性の修復を要求できるセキュリティ管理者。
 
-### <a name="enable-microsoft-intune-connection"></a>Microsoft Intune 接続を有効にする
+### <a name="enable-microsoft-intune-connection"></a>接続Microsoft Intune有効にする
 
-この機能を使用するには、Microsoft Intune 接続を有効にします。 Microsoft Defender セキュリティ センターで、[設定] [全般高度な  >  **機能]**  >  **に移動します**。 下にスクロールして **、Microsoft Intune 接続を探します**。 既定では、トグルはオフになっています。 Microsoft **Intune 接続トグルをオン****にします**。
+この機能を使用するには、接続を有効Microsoft Intuneします。 [一般Microsoft Defender セキュリティ センター] で、[**全般設定**  >  **機能]**  >  **に移動します**。 下にスクロールして、接続 **Microsoft Intuneします**。 既定では、トグルはオフになっています。 [接続] **Microsoft Intuneをオン****にします**。
 
 **注**: Intune 接続が有効になっている場合は、修復要求を作成するときに Intune セキュリティ タスクを作成するオプションを取得します。 接続が設定されていない場合、このオプションは表示されません。
 
@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint の脅威と脆弱性管理機能は、修復要
 
 ### <a name="remediation-request-steps"></a>修復要求の手順
 
-1. Microsoft Defender セキュリティ センターの [脅威と脆弱性管理] ナビゲーション メニューに移動し、[セキュリティの推奨事項] [**を選択します**](tvm-security-recommendation.md)。
+1. [セキュリティ] ウィンドウ脅威と脆弱性の管理メニューに移動し、[セキュリティMicrosoft Defender セキュリティ センターを [**選択します**](tvm-security-recommendation.md)。
 
 2. 修復を要求するセキュリティ推奨事項を選択し、[修復オプション] **を選択します**。
 
@@ -68,13 +68,13 @@ Intune でチケットがどのように表示されるのか確認する場合�
 >[!NOTE]
 >要求で 10,000 台を超えるデバイスの修復が必要な場合は、Intune に修復のために 10,000 台のデバイスのみを送信できます。
 
-組織のサイバーセキュリティの弱点が特定され、アクション可能なセキュリティ推奨事項にマップされた後、[](tvm-security-recommendation.md)セキュリティ タスクの作成を開始します。 修復チケットが作成される Microsoft Intune との統合を通じてタスクを作成できます。
+組織のサイバーセキュリティの弱点が特定され、アクション可能なセキュリティ推奨事項にマップされた後、[](tvm-security-recommendation.md)セキュリティ タスクの作成を開始します。 修復チケットが作成される場所をMicrosoft Intuneを使用してタスクを作成できます。
 
 セキュリティに関する推奨事項を修復することで、組織の脆弱性による露出を低くし、セキュリティ構成を強化します。
 
 ## <a name="view-your-remediation-activities"></a>修復アクティビティの表示
 
-[セキュリティの推奨事項] ページから修復要求を送信すると、修復アクティビティが開始されます。 脅威と脆弱性管理の修復ページで追跡できるセキュリティ タスクが作成され、修復チケットが Microsoft Intune に作成されます。
+[セキュリティの推奨事項] ページから修復要求を送信すると、修復アクティビティが開始されます。 [修復] ページで追跡できるセキュリティ タスクが脅威と脆弱性の管理、修復チケットが [修復] ページにMicrosoft Intune。
 
 [注意が必要] 修復オプションを選択した場合は、監視できる実際のアクションが行われなかから、進行状況バー、チケットの状態、または期限はありません。
 
@@ -96,12 +96,12 @@ Intune でチケットがどのように表示されるのか確認する場合�
 
 ### <a name="top-remediation-activities-in-the-dashboard"></a>ダッシュボードの上位修復アクティビティ
 
-脅威 **と脆弱性管理ダッシュボードで** 上位 [の修復アクティビティを表示します](tvm-dashboard-insights.md)。 [修復] ページに移動するエントリを **選択** します。 IT 管理者チームがタスクを修復した後、修復アクティビティを完了としてマークできます。
+[ダッシュボード **] ダッシュボードで [** 上位修復アクティビティ [脅威と脆弱性の管理表示します](tvm-dashboard-insights.md)。 [修復] ページに移動するエントリを **選択** します。 IT 管理者チームがタスクを修復した後、修復アクティビティを完了としてマークできます。
 
 ![セキュリティの推奨事項から生成された上位のアクティビティを一覧表示するテーブルを持つトップ修復アクティビティ カードの例。](images/tvm-remediation-activities-card.png)
 
 ## <a name="related-articles"></a>関連記事
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

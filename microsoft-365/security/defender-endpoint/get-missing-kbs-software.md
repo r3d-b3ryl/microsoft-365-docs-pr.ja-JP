@@ -1,7 +1,7 @@
 ---
 title: ソフトウェア ID で不足している KB を取得する
 description: ソフトウェア ID によって不足しているセキュリティ更新プログラムを取得します。
-keywords: apis、 graph api, supported apis, get, list, file, information, software id, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
+keywords: apis、 graph api, supported apis, get, list, file, information, software id, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

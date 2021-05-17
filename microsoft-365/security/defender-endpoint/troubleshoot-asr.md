@@ -56,9 +56,9 @@ ms.locfileid: "51935223"
 
 攻撃表面の縮小ルールは、次の条件を持つデバイスでのみ機能します。
 
-- エンドポイントは、Windows 10 Enterprise バージョン 1709 (Fall Creators Update とも呼ばれる) を実行しています。
+- エンドポイントは、Windows 10 Enterpriseバージョン 1709 (Fall Creators Update とも呼ばれる) で実行されています。
 
-- エンドポイントは、Microsoft Defender Antivirus を唯一のウイルス対策保護アプリとして使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender AV がそれ自体を無効にします](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+- エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender AV がそれ自体を無効にします](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
 - [リアルタイム保護が](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 有効になっています。
 
@@ -68,7 +68,7 @@ ms.locfileid: "51935223"
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>監査モードを使用してルールをテストする
 
-demo.wd.microsoft.com の [Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) テスト グラウンド Web サイトにアクセスして、攻撃表面の縮小ルールが一般的にデバイス上の事前構成されたシナリオとプロセスで機能しているか、または監査モードを使用して、レポートのルールのみを有効にできます。
+demo.wd.microsoft.com の[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)テスト グラウンド Web サイトにアクセスして、攻撃表面の縮小ルールが一般的にデバイス上の事前構成されたシナリオおよびプロセスで機能しているか、または監査モードを使用して、レポートのルールのみを有効にできます。
 
 「デモ ツールを使用 [する」の](evaluate-attack-surface-reduction.md) 手順に従って、問題が発生している特定のルールをテストするために攻撃表面の縮小ルールがどのように機能するのか確認します。
 
@@ -100,7 +100,7 @@ demo.wd.microsoft.com の [Windows Defender](https://demo.wd.microsoft.com?ocid=
 
 ## <a name="report-a-false-positive-or-false-negative"></a>誤検知または偽陰性を報告する
 
-ネットワーク保護用 [Windows Defender偽](https://www.microsoft.com/wdsi/filesubmission) 陰性または誤検知を報告するには、[セキュリティ インテリジェンス] Web ベースの送信フォームを使用します。 Windows E5 サブスクリプションを使用すると、関連付けられたアラート [へのリンクを提供できます](alerts-queue.md)。
+ネットワーク保護Windows Defender[偽陰](https://www.microsoft.com/wdsi/filesubmission)性または誤検知を報告するには、[セキュリティ インテリジェンス] Web ベースの送信フォームを使用します。 E5 サブスクリプションWindows、関連付けられたアラート[へのリンクを提供できます](alerts-queue.md)。
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>ファイル提出の診断データを収集する
 

@@ -45,6 +45,6 @@ ms.locfileid: "51933615"
 
 Microsoft および投稿者は、クリエイティブ コモンズ アトリビューション 4.0 インターナショナル パブリック ライセンスの下で、このリポジトリ内の Microsoft ドキュメントおよび他のコンテンツに対してライセンスを付与します。LICENSE ファイルを参照してください。
 
-Microsoft、Windows、Microsoft Azure、および/またはドキュメントで参照されているその他の Microsoft 製品およびサービスは、米国およびその他の国における Microsoft の商標または登録商標です。 このプロジェクトのライセンスは、Microsoft の名前、ロゴ、または商標を使用する権利を付与しません。 Microsoft の一般的な商標ガイドラインは、 を参照してください https://go.microsoft.com/fwlink/?LinkID=254653 。
+Microsoft、Windows、Microsoft Azure、またはドキュメントで参照されているその他の Microsoft 製品およびサービスは、米国およびその他の国における Microsoft の商標または登録商標です。 このプロジェクトのライセンスは、Microsoft の名前、ロゴ、または商標を使用する権利を付与しません。 Microsoft の一般的な商標ガイドラインは、 を参照してください https://go.microsoft.com/fwlink/?LinkID=254653 。
 
 プライバシー情報は Microsoft で確認できます。また、投稿者は、それぞれの著作権、特許権、または商標の下で、意味、estoppel、その他の方法で、他のすべての権利を有します。 https://privacy.microsoft.com/en-us/

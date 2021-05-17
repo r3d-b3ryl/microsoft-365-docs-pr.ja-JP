@@ -68,7 +68,7 @@ Microsoft Defender for Endpoint on macOS は、ベンダー固有の機能に依
 
 ### <a name="package"></a>パッケージ
 
-Microsoft Defender [](mac-install-with-jamf.md)Security Center からダウンロードしたインストール パッケージ (wdav.pkg) を使用して、必要なアプリケーション パッケージの展開[を構成します](mac-install-with-jamf.md)。
+インストール パッケージ[](mac-install-with-jamf.md)(wdav.pkg) をインストール パッケージからダウンロードして、必要なアプリケーション パッケージの展開[Microsoft Defender セキュリティ センター。](mac-install-with-jamf.md)
 
 パッケージを企業に展開するには、MDM ソリューションに関連付けられている手順を使用します。
 
@@ -76,9 +76,9 @@ Microsoft Defender [](mac-install-with-jamf.md)Security Center からダウン�
 
 システム構成 [プロファイルを設定します](mac-install-with-jamf.md)。 
 
-MDM ソリューションは、macOS 上の Microsoft Defender for Endpoint が macOS の一部ではなされていないので、それを "カスタム設定プロファイル" と呼ぶ場合があります。
+macOS 上の Microsoft Defender for Endpoint は macOS の一部では設定、MDM ソリューションは"Custom 設定 プロファイル" と呼ぶ場合があります。
 
-プロパティ リスト jamf/WindowsDefenderATPOnboarding.plist を使用します。これは [、Microsoft Defender](mac-install-with-jamf.md)セキュリティ センターからダウンロードしたオンボーディング パッケージから抽出できます。
+プロパティ リスト jamf/WindowsDefenderATPOnboarding.plist を使用します。これは、Microsoft Defender セキュリティ センター からダウンロードされたオンボーディング パッケージ[から抽出できます](mac-install-with-jamf.md)。
 システムが XML 形式の任意のプロパティ リストをサポートしている場合があります。 その場合は、jamf/WindowsDefenderATPOnboarding.plist ファイルを as-is でアップロードできます。
 または、最初にプロパティ リストを別の形式に変換する必要があります。
 
@@ -116,7 +116,7 @@ KEXT またはカーネル拡張ポリシーを設定します。 Microsoft が�
 
 ### <a name="network-extension-policy"></a>ネットワーク拡張ポリシー
 
-エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報をポータルMicrosoft Defender セキュリティ センターします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
 - フィルターの種類: プラグイン
 - プラグイン バンドル識別子: `com.microsoft.wdav`

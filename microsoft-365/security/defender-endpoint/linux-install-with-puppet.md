@@ -51,13 +51,13 @@ ms.locfileid: "51934575"
 
 ## <a name="download-the-onboarding-package"></a>オンボーディング パッケージをダウンロードする
 
-Microsoft Defender セキュリティ センターからオンボーディング パッケージをダウンロードします。
+次の方法でオンボーディング パッケージをMicrosoft Defender セキュリティ センター。
 
-1. Microsoft Defender セキュリティ センターで、[デバイス管理とオンボード **>設定>移動します**。
+1. [Microsoft Defender セキュリティ センター] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
 2. 最初のドロップダウン メニューで、オペレーティング システム **として [Linux Server]** を選択します。 2 番目のドロップダウン メニューで、展開 **方法として [優先する Linux 構成管理ツール** ] を選択します。
 3. [オンボード **パッケージのダウンロード] を選択します**。 ファイルを [ファイル名] WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft Defender セキュリティ センターのスクリーンショット](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft Defender セキュリティ センタースクリーンショット](images/atp-portal-onboarding-linux-2.png)
 
 4. コマンド プロンプトから、ファイルが存在するように確認します。 
 

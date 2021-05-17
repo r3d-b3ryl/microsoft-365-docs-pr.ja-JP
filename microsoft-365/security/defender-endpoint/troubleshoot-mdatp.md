@@ -41,7 +41,7 @@ ms.locfileid: "51933759"
 Cookie を許可するブラウザーを構成します。
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>ポータルに存在する要素またはデータ
-一部の要素やデータが Microsoft Defender セキュリティ センターで見つからない場合は、プロキシ設定でブロックされている可能性があります。
+一部の要素やデータがMicrosoft Defender セキュリティ センタープロキシ設定によってブロックされている可能性があります。
 
 プロキシ許可リスト `*.securitycenter.windows.com` が含まれているか確認します。
 
@@ -55,9 +55,9 @@ Microsoft [](event-error-codes.md) Defender for Endpoint サービスによっ�
 
 ## <a name="microsoft-defender-for-endpoint-service-fails-to-start-after-a-reboot-and-shows-error-577"></a>Microsoft Defender for Endpoint service が再起動後に開始に失敗し、エラー 577 が表示される
 
-オンボード デバイスが正常に完了したが、再起動後に Microsoft Defender for Endpoint が起動し、エラー 577 が表示される場合は、Windows Defender がポリシーによって無効にされていないか確認します。
+デバイスのオンボードが正常に完了したが、再起動後に Microsoft Defender for Endpoint が起動し、エラー 577 が表示される場合は、Windows Defender がポリシーによって無効にされていないか確認します。
 
-詳細については、「ポリシーによって Microsoft Defender ウイルス対策が無効にされていないか確認 [する」を参照してください](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
+詳細については、「ポリシーによって[無効Microsoft Defender ウイルス対策を確認する」を参照してください](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
 ## <a name="known-issues-with-regional-formats"></a>地域の形式に関する既知の問題
 

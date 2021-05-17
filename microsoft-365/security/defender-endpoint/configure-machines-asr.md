@@ -38,21 +38,21 @@ ms.locfileid: "51932849"
 ![攻撃表面管理カード](images/secconmgmt_asr_card.png)<br>
 *攻撃表面管理カード*
 
-攻撃 *表面管理カードは* 、Microsoft 365 セキュリティ センターのツールのエントリ ポイントで、次の使用が可能です。
+攻撃 *表面管理カードは*、セキュリティ センターのツールMicrosoft 365ポイントで、次の場合に使用できます。
 
 * ASR ルールが現在組織に展開されている方法について説明します。
 * ASR 検出を確認し、誤った検出の可能性を特定します。
 * 除外の影響を分析し、除外するファイル パスの一覧を生成します。
 
-[Go **to attack surface management**  >  **Monitoring] &レポート>[除外の>追加] を選択します**。 そこから、Microsoft 365 セキュリティ センターの他のセクションに移動できます。
+[Go **to attack surface management**  >  **Monitoring] &レポート>[除外の>追加] を選択します**。 そこから、セキュリティ センターの他のセクションMicrosoft 365移動できます。
 
-![Microsoft 365 セキュリティ センターの [攻撃表面の縮小ルール] ページの [除外] タブを追加する](images/secconmgmt_asr_m365exlusions.png)<br>
-Microsoft 365 セキュリティ センターの [攻撃表面縮小ルール] ページの [*除外の追加] タブ*
+![セキュリティ センターの [攻撃表面の縮小ルール] ページの [除外Microsoft 365追加する](images/secconmgmt_asr_m365exlusions.png)<br>
+セキュリティ ***センターの [** 攻撃表面縮小ルール] ページの [除外のMicrosoft 365]*
 
 > [!NOTE]
-> Microsoft 365 セキュリティ センターにアクセスするには、Microsoft 365 E3 または E5 ライセンスと、Azure Active Directory で特定の役割を持つアカウントが必要です。 [必要なライセンスとアクセス許可についてお読みください](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+> セキュリティ センター Microsoft 365アクセスするには、Microsoft 365 E3または E5 ライセンスと、ユーザーに対して特定の役割を持つアカウントAzure Active Directory。 [必要なライセンスとアクセス許可についてお読みください](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
-Microsoft 365 セキュリティ センターでの ASR ルールの展開の詳細については [、「ASR](https://docs.microsoft.com/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)ルールの展開と検出の監視と管理」を参照してください。
+セキュリティ センターでの ASR ルールの展開のMicrosoft 365、ASR ルールの展開と検出の監視と[管理を参照してください](https://docs.microsoft.com/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
 
 **関連トピック**
 

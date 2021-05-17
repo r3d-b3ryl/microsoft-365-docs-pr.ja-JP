@@ -47,14 +47,14 @@ ms.locfileid: "51935331"
 
 ## <a name="download-installation-and-onboarding-packages"></a>インストール パッケージとオンボーディング パッケージのダウンロード
 
-Microsoft Defender セキュリティ センターからインストールパッケージとオンボーディング パッケージをダウンロードします。
+インストールパッケージとオンボーディング パッケージを次の手順でダウンロードMicrosoft Defender セキュリティ センター。
 
-1. Microsoft Defender セキュリティ センターで、[デバイス管理とオンボード **>設定>移動します**。
+1. [Microsoft Defender セキュリティ センター] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
 2. ページのセクション 1 で、オペレーティング システムを **macOS** に設定し、Deployment メソッドをローカル スクリプト **に設定します**。
 3. ページのセクション 2 で、[インストール パッケージのダウンロード **] を選択します**。 wdav.pkg としてローカル ディレクトリに保存します。
 4. ページのセクション 2 で、[オンボーディング パッケージの **ダウンロード] を選択します**。 同じディレクトリWindowsDefenderATPOnboardingPackage.zipとして保存します。
 
-    ![Microsoft Defender セキュリティ センターのスクリーンショット](images/atp-portal-onboarding-page.png)
+    ![Microsoft Defender セキュリティ センタースクリーンショット](images/atp-portal-onboarding-page.png)
 
 5. コマンド プロンプトから、2 つのファイルが存在するように確認します。
     
@@ -107,11 +107,11 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 5. Microsoft Defender for Endpoint on Mac で配布&すべてのシステム拡張機能について、手順 3 から 4 を繰り返します。
 
-6. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint on Mac はソケット トラフィックを検査し、この情報を Microsoft Defender セキュリティ センター ポータルに報告します。 ネットワーク トラフィックをフィルター処理するための Microsoft Defender for Endpoint アクセス許可の付与を求めるメッセージが表示されたら、[許可] を **選択します**。
+6. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint on Mac はソケット トラフィックを検査し、この情報をポータルにMicrosoft Defender セキュリティ センターします。 ネットワーク トラフィックをフィルター処理するための Microsoft Defender for Endpoint アクセス許可の付与を求めるメッセージが表示されたら、[許可] を **選択します**。
 
     ![システム拡張機能のセキュリティの基本設定2](images/big-sur-install-4.png)
 
-7. [System **Preferences** Security & プライバシー] を開き、[プライバシー] タブに移動します。Microsoft Defender ATP および Microsoft Defender ATP Endpoint Security Extension にフル ディスク アクセスのアクセス許可を  >  **付与します**。   
+7. [System **Preferences** Security & プライバシー] を開き、[プライバシー] タブに移動します。[エンドポイント セキュリティ拡張機能] および [エンドポイント セキュリティ拡張機能] に対するフル  >  **Microsoft Defender ATP** アクセスMicrosoft Defender ATP **を付与します**。  
 
     ![ディスクへのフル アクセス](images/big-sur-install-5.png)
 
@@ -170,11 +170,11 @@ Microsoft Defender セキュリティ センターからインストールパッ
         mdatp threat list
         ```
 
-3. EDR 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
+3. デバイスが適切EDRオンボーディングされ、サービスに報告されていることを確認するには、デバイス検出テストを実行します。 新しくオンボードされたデバイスで次の手順を実行します。
 
-   1. Microsoft Edge for Mac や Safari などのブラウザーで。
+   1. Mac や Safari のMicrosoft Edgeブラウザーで使用します。
 
-   1. MDATP MacOS ファイルをダウンロードDIY.zip抽出 https://aka.ms/mdatpmacosdiy します。
+   1. MacOS MDATPをダウンロードDIY.zip抽出 https://aka.ms/mdatpmacosdiy します。
 
       次のメッセージが表示される場合があります。
 
@@ -185,40 +185,40 @@ Microsoft Defender セキュリティ センターからインストールパッ
 
 5. [ **ダウンロード] を開きます**。
 
-6. **MDATP MacOS DIY が表示されます**。
+6. MacOS **DIY のMDATPが表示されます**。
 
    > [!TIP]
    > ダブルクリックすると、次のメッセージが表示されます。
    > 
-   > > **開発者が検証者になれませんので、"MDATP MacOS DIY" を開くことができません。**<br/>
+   > > **"MDATP MacOS DIY" は、開発者が検証者になれませんので開くことができません。**<br/>
    > > macOS は、このアプリがマルウェアから解放されているのを確認できません。<br/>
    > > **\[ ごみ箱の \] 取り消しに****\[ 移動する \]** 
   
 7. [ **キャンセル**] をクリックします。
 
-8. **MDATP MacOS DIY を右クリックし**、[開く] を **クリックします**。 
+8. **MacOS DIY を右MDATPクリックし**、[開く] を **クリックします**。 
 
     システムは、次のメッセージを表示する必要があります。
 
-    > **macOS は **MDATP MacOS DIY の開発者を確認できません**。本当に開く必要がありますか?**<br/>
+    > **macOS では、MacOS DIY の **開発者MDATP確認できません**。本当に開く必要がありますか?**<br/>
     > このアプリを開いて、コンピューターと個人情報を Mac に害を与えるマルウェアやプライバシーを侵害する可能性のあるシステム セキュリティを上書きします。
 
 10. [ **開く**] をクリックします。
 
     システムは、次のメッセージを表示する必要があります。
 
-    > エンドポイント用 Microsoft Defender - macOS EDR DIY テスト ファイル<br/>
-    > 対応するアラートは、MDATP ポータルで使用できます。
+    > Microsoft Defender for Endpoint - macOS EDR DIY テスト ファイル<br/>
+    > 対応するアラートは、ポータルでMDATPされます。
 
 11. [ **開く**] をクリックします。
 
-    数分で"macOS EDR テスト アラート" という名前のアラートが発生する必要があります。
+    数分後に、"macOS EDRテスト アラート" という名前のアラートが発生する必要があります。
 
-12. [Microsoft Defender セキュリティ センター] ( に移動します https://SecurityCenter.microsoft.com) 。
+12. [次のMicrosoft Defender セキュリティ センター ] に移動 https://SecurityCenter.microsoft.com) します。
 
 13. [アラート キュー] に移動します。
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="重大度、カテゴリ、検出元、およびアクションの折りたたみメニューを示す macOS EDR テストアラートの例。":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="重大度、カテゴリ、検出EDRアクションの折りたたみメニューを示す macOS テスト アラートの例。":::
     
     アラートの詳細とデバイスのタイムラインを確認し、通常の調査手順を実行します。
 

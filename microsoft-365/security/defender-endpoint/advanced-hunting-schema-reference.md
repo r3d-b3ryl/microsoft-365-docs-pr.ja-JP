@@ -54,11 +54,11 @@ ms.locfileid: "51939638"
 
 次の参照では、高度な検索スキーマのすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。
 
-テーブル名と列名は、高度な検索画面のスキーマ表現の Microsoft Defender セキュリティ センター内にも表示されます。
+テーブル名と列名は、高度な検索Microsoft Defender セキュリティ センタースキーマ表現のフィールド内にも表示されます。
 
 | テーブル名 | 説明 |
 |------------|-------------|
-| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Microsoft Defender セキュリティ センターに関する通知 |
+| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | ユーザーに関するMicrosoft Defender セキュリティ センター |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | OS 情報を含むデバイス情報 |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | アダプター、IP アドレス、MAC アドレス、接続されたネットワークおよびドメインを含むデバイスのネットワーク プロパティ |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | プロセスの作成と関連イベント |
@@ -67,7 +67,7 @@ ms.locfileid: "51939638"
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | レジストリ エントリの作成と変更 |
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | サインインとその他の認証イベント |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL の読み込みイベント |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Microsoft Defender ウイルス対策やエクスプロイト保護などのセキュリティ制御によってトリガーされるイベントを含む、複数のイベントの種類 |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | 複数のイベントの種類 (セキュリティ制御によってトリガーされるイベントを含む)(Microsoft Defender ウイルス対策悪用防止など) |
 | **[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)** | エンドポイント上の証明書検証イベントから取得した署名済みファイルの証明書情報 |
 | **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | デバイスにインストールされているソフトウェアのインベントリ (バージョン情報とサポート終了の状態を含む) |
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | デバイスで見つかったソフトウェアの脆弱性と、各脆弱性に対処する利用可能なセキュリティ更新プログラムの一覧 |
@@ -76,8 +76,8 @@ ms.locfileid: "51939638"
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | 脅威および脆弱性管理によってデバイスを評価するために使用されるさまざまなセキュリティ構成に関するサポート技術情報 (さまざまな標準およびベンチマークへのマッピングを含む)　 |
 
 >[!TIP]
->[Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview)の高度な検索を使用して、Defender for Endpoint、microsoft Defender for Office 365、Microsoft Cloud App Security、Microsoft Defender for Identity のデータを使用して脅威を探します。 [Microsoft 365 Defender を有効にする](/microsoft-365/security/defender/m365d-enable)<br><br>
-高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動する方法については、「Advanced Hunting [queries](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)を Microsoft Defender for Endpoint から移行する」を参照してください。
+>Microsoft 365 Defender で高度な検索[を](/microsoft-365/security/defender/advanced-hunting-overview)使用して、Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、Microsoft Defender for Identity のデータを使用して脅威を検出します。 [Microsoft 365 Defender を有効にする](/microsoft-365/security/defender/m365d-enable)<br><br>
+高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動する方法については、「Advanced Hunting queries を Microsoft Defender for Endpoint から移行する」を[参照してください](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)

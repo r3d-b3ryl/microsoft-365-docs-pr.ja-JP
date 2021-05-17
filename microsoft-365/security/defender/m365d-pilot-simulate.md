@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender 攻撃シミュレーションを実行する
-description: Microsoft 365 Defender パイロット プロジェクトの攻撃シミュレーションを実行して、それがどのように展開され、すぐに修復されるかを確認します。
-keywords: Microsoft 365 Defender パイロット攻撃シミュレーション、Microsoft 365 Defender パイロット攻撃シミュレーションの実行、Microsoft 365 Defender、Microsoft 365 Defender パイロット プロジェクト、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
+title: Defender 攻撃シミュレーションMicrosoft 365実行する
+description: Defender パイロット プロジェクトに対してMicrosoft 365シミュレーションを実行して、どのように展開され、すぐに修復されるかを確認します。
+keywords: Microsoft 365Defender パイロット攻撃シミュレーション、Microsoft 365 Defender パイロット攻撃シミュレーションの実行、Microsoft 365 Defender、Microsoft 365 Defender パイロット プロジェクトでの攻撃のシミュレート、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な狩猟
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,7 +28,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934479"
 ---
-# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Microsoft 365 Defender 攻撃シミュレーションを実行する
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Defender 攻撃シミュレーションMicrosoft 365実行する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934479"
 
 現在、攻撃シミュレーション フェーズに入っている。
 
-パイロット環境を準備した後、Microsoft 365 Defender インシデント管理と自動調査と修復機能をテストします。 高度な手法を活用して検出を非表示にする高度な攻撃をシミュレートするのに役立ちます。 この攻撃は、ドメイン コントローラーで開いたサーバー メッセージ ブロック (SMB) セッションを列挙し、ユーザーのデバイスの最近の IP アドレスを取得します。 攻撃のこのカテゴリには、通常、被害者のデバイスにドロップされたファイルは含めされません。これらはメモリ内でのみ発生します。 既存のシステムツールと管理ツールを使用して"土地から離れ"、コードをシステム プロセスに挿入して実行を非表示にします。このような動作により、検出を回避し、デバイス上で保持できます。
+パイロット環境を準備した後は、Defender インシデント管理とMicrosoft 365の調査と修復機能をテストします。 高度な手法を活用して検出を非表示にする高度な攻撃をシミュレートするのに役立ちます。 この攻撃は、ドメイン コントローラーで開いたサーバー メッセージ ブロック (SMB) セッションを列挙し、ユーザーのデバイスの最近の IP アドレスを取得します。 攻撃のこのカテゴリには、通常、被害者のデバイスにドロップされたファイルは含めされません。これらはメモリ内でのみ発生します。 既存のシステムツールと管理ツールを使用して"土地から離れ"、コードをシステム プロセスに挿入して実行を非表示にします。このような動作により、検出を回避し、デバイス上で保持できます。
 
 このシミュレーションでは、サンプル シナリオは PowerShell スクリプトから始まります。 ユーザーがスクリプトの実行を騙される可能性があります。 または、以前に感染したデバイスから別のコンピューターへのリモート接続からスクリプトが実行される場合があります。攻撃者がネットワーク内で横方向に移動しようとした場合。 管理者は、さまざまな管理アクティビティを実行するためにリモートでスクリプトを実行する場合も多いので、これらのスクリプトの検出が困難になる場合があります。
 
@@ -54,22 +54,22 @@ ms.locfileid: "51934479"
 
 準備フェーズ中にパイロット環境が既に構成済みである場合は、このシナリオに 2 つのデバイス (テスト デバイスとドメイン コントローラー) が存在するようにします。
 
-1. テナントで [Microsoft 365 Defender が有効になっているか確認します](m365d-enable.md#confirm-that-the-service-is-on)。
+1. テナントが Defender を有効[にMicrosoft 365します](m365d-enable.md#confirm-that-the-service-is-on)。
 
 2. テスト ドメイン コントローラーの構成を確認します。
 
-   - デバイスは、Windows Server 2008 R2以降のバージョンで実行されます。
+   - デバイスは、Windows Server 2008 R2 以降のバージョンで実行されます。
    - Microsoft Defender for Identity へのテスト ドメイン コントローラー [で、](/azure/security-center/security-center-wdatp) リモート管理 [を有効にします](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)。
-   - Microsoft [Defender for Identity と Microsoft Cloud App Security の統合が](/cloud-app-security/mdi-integration) 有効になっているか確認します。
+   - Microsoft [Defender for Identity and Microsoft Cloud App Securityが有効](/cloud-app-security/mdi-integration)になっているか確認します。
    - テスト ユーザーはドメインに作成されます。管理者のアクセス許可は不要です。
 
 3. テスト デバイスの構成を確認します。
 
-   1. デバイスは、Windows 10 バージョン 1903 以降のバージョンで実行されます。
+   1. デバイスは、Windows 10バージョン 1903 以降で実行されます。
 
    1. テスト デバイスはテスト ドメインに参加しています。
 
-   1. [[ウイルス対策] Windows Defenderをオンにする](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)。 ウイルス対策の有効化に問題があるWindows Defender、このトラブルシューティング トピック [を参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
+   1. [[オンにする] をWindows Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)します。 問題が発生した場合は、このトラブルシューティング Windows Defender ウイルス対策を[参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
 
    1. テスト デバイスが Microsoft Defender for Endpoint にオンボードされている[のを確認します。](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 
@@ -99,9 +99,9 @@ ms.locfileid: "51934479"
 4. プロンプトで、コピーしたスクリプトを貼り付け、実行します。
 
 > [!NOTE]
-> リモート デスクトップ プロトコル (RDP) を使用して PowerShell を実行している場合は **、CTRL-V** ホットキーまたは右クリック貼り付けメソッドが機能しないので、RDP クライアントで [クリップボード テキストの種類] コマンドを使用します。 PowerShell の最近のバージョンでは、そのメソッドを受け入れれなく場合があります。最初にメモリ内のメモ帳にコピーし、仮想マシンにコピーしてから PowerShell に貼り付ける必要があります。
+> リモート デスクトップ プロトコル (RDP) を使用して PowerShell を実行している場合は **、CTRL-V** ホットキーまたは右クリック貼り付けメソッドが機能しないので、RDP クライアントで [クリップボード テキストの種類] コマンドを使用します。 PowerShell の最近のバージョンでは、そのメソッドを受け入れれなく場合があります。最初にメモリ内の メモ帳 にコピーし、仮想マシンにコピーしてから PowerShell に貼り付ける必要があります。
 
-数秒後 <i> 、notepad.exe開 </i> きます。 シミュレートされた攻撃コードは、そのコードにnotepad.exe。 完全なシナリオを体験するために、自動的に生成されたメモ帳インスタンスを開いた状態に保ちます。
+数秒後 <i> 、notepad.exe開 </i> きます。 シミュレートされた攻撃コードは、そのコードにnotepad.exe。 完全なシナリオを体験するためにメモ帳自動的に生成されたインスタンスを開いた状態に保ちます。
 
 シミュレートされた攻撃コードは、外部 IP アドレス (C2 サーバーのシミュレート) に通信し、SMB を介してドメイン コントローラーに対する偵察を試みる。
 
@@ -111,7 +111,7 @@ ms.locfileid: "51934479"
 ran NetSessionEnum against [DC Name] with return code result 0
 ```
 
-[インシデントと応答の自動化] 機能が動作しているのを確認するには、プロセスを開notepad.exe保持します。 「自動インシデントと応答がメモ帳プロセスを停止する」が表示されます。
+[インシデントと応答の自動化] 機能が動作しているのを確認するには、プロセスを開notepad.exe保持します。 [インシデントと応答の自動停止] プロセスが表示メモ帳表示されます。
 
 ## <a name="investigate-an-incident"></a>インシデントの調査
 
@@ -120,13 +120,13 @@ ran NetSessionEnum against [DC Name] with return code result 0
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-SOC アナリストの視点に切り替えて、Microsoft 365 セキュリティ センター ポータルで攻撃の調査を開始できます。
+SOC アナリストの視点に切り替えて、セキュリティ センター ポータルで攻撃の調査Microsoft 365開始できます。
 
-1. 任意の [デバイスから Microsoft 365 セキュリティ センター ポータル](https://security.microsoft.com/incidents) インシデント キューを開きます。
+1. 任意の[デバイスMicrosoft 365セキュリティ センター ポータル インシデント](https://security.microsoft.com/incidents)キューを開きます。
 
 2. メニューから **[インシデント]** に移動します。
 
-    ![Microsoft 365 セキュリティ センターの左側のメニューに表示されるインシデントのスクリーンショット](../../media/mtp/fig1.png)
+    ![セキュリティ センターの左側のMicrosoft 365に表示されるインシデントのスクリーンショット](../../media/mtp/fig1.png)
 
 3. シミュレートされた攻撃の新しいインシデントがインシデント キューに表示されます。
 
@@ -134,7 +134,7 @@ SOC アナリストの視点に切り替えて、Microsoft 365 セキュリテ�
 
 ### <a name="investigate-the-attack-as-a-single-incident"></a>攻撃を 1 つのインシデントとして調査する
 
-Microsoft 365 Defender は分析を関連付け、異なる製品からのすべての関連するアラートと調査を 1 つのインシデント エンティティに集約します。 これにより、Microsoft 365 Defender は、より広範な攻撃ストーリーを示し、SOC アナリストは複雑な脅威を理解して対応できます。
+Microsoft 365Defender は分析を関連付け、異なる製品のすべての関連するアラートと調査を 1 つのインシデント エンティティに集約します。 これにより、Microsoft 365 Defender は、より広範な攻撃ストーリーを示し、SOC アナリストは複雑な脅威を理解して対応できます。
 
 このシミュレーション中に生成されたアラートは同じ脅威に関連付けられるので、その結果、1 つのインシデントとして自動的に集計されます。
 
@@ -148,7 +148,7 @@ Microsoft 365 Defender は分析を関連付け、異なる製品からのすべ
 
    ![シミュレーション中に生成されたアラートが集計されるインシデント ページのスクリーンショット](../../media/mtp/fig4.png)
 
-   ダッシュボードに表示されるアラートは、サービス リソース (Microsoft Defender for Identity、Microsoft Cloud App Security、Microsoft Defender for Endpoint、Microsoft 365 Defender、Microsoft Defender for Office 365) に基づいてフィルター処理できます。
+   ダッシュボードに表示されるアラートは、サービス リソース (Microsoft Defender for Identity、Microsoft Cloud App Security、Microsoft Defender for Endpoint、Microsoft 365 Defender、および microsoft Defender for Office 365 に基づいてフィルター処理できます。
 
 3. インシデント **の詳細を取得するには、[** インシデント ページを開く] を選択します。
 
@@ -165,11 +165,11 @@ Microsoft 365 Defender は分析を関連付け、異なる製品からのすべ
 シミュレートされた攻撃中に生成されたアラートの一部を見てみよ。
 
 > [!NOTE]
-> シミュレートされた攻撃中に生成されたアラートの一部のみを実行します。 テスト デバイスで実行されている Windows および Microsoft 365 Defender 製品のバージョンによっては、少し異なる順序で表示されるアラートが増える場合があります。
+> シミュレートされた攻撃中に生成されたアラートの一部のみを実行します。 テスト デバイスで実行されている Windows および Microsoft 365 Defender 製品のバージョンによっては、少し異なる順序で表示されるアラートが多く表示される場合があります。
 
 ![生成されたアラートのスクリーンショット](../../media/mtp/fig6.png)
 
-#### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint-edr"></a>アラート: 疑わしいプロセスの挿入が観察されました (ソース: エンドポイント EDR 用 Microsoft Defender)
+#### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint-edr"></a>アラート: 疑わしいプロセスの挿入が観察されました (ソース: Microsoft Defender for Endpoint EDR)
 
 高度な攻撃者は、高度でステルス性の高い方法を使用してメモリを保持し、検出ツールから隠します。 一般的な手法の 1 つは、悪意のある実行可能ファイルではなく、信頼できるシステム プロセス内から操作し、検出ツールやセキュリティ操作が悪意のあるコードを見つけるのを難しくする方法です。
 
@@ -177,7 +177,7 @@ SOC アナリストがこれらの高度な攻撃をキャッチできるよう�
 
 ![悪意のある可能性のあるコードの挿入に関する警告のスクリーンショット](../../media/mtp/fig7.png)
 
-#### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint-edr"></a>アラート: コマンド ライン引数を使用しないプロセス実行で予期しない動作が発生します (ソース: Microsoft Defender for Endpoint EDR)
+#### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint-edr"></a>アラート: コマンド ライン引数を使用しないプロセス実行で予期しない動作が発生する (ソース: エンドポイントの Microsoft Defender EDR)
 
 Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な属性をターゲットにしている場合が多い。 このメソッドは、耐久性を確保し、攻撃者が新しい戦術に切り替えるバーを上げる。
 
@@ -227,7 +227,7 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 ユーザー名を選択して、ユーザーのプロファイル ページを開き、詳細な調査を行います。 [リスクの高いユーザーの調査について詳しくは、以下の記事を参照してください](/cloud-app-security/tutorial-ueba#identify)。
 
-![Cloud App Security ユーザー ページのスクリーンショット](../../media/mtp/fig13.png)
+![ユーザー ページCloud App Securityスクリーンショット](../../media/mtp/fig13.png)
 
 ## <a name="automated-investigation-and-remediation"></a>調査と修復の自動化
 
@@ -236,7 +236,7 @@ Microsoft Defender for Endpoint の検出は、攻撃手法の最も一般的な
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Microsoft 365 セキュリティ センター ポータルでインシデントに戻る。 [**インシデント] ページの****[調査**] タブには、Microsoft Defender for Identity と Microsoft Defender for Endpoint によってトリガーされた自動調査が表示されます。 次のスクリーンショットは、Defender for Endpoint によってトリガーされた自動調査のみを表示します。 既定では、Defender for Endpoint はキュー内にあるアーティファクトを自動的に修復します。修復が必要です。
+セキュリティ センター ポータルでインシデントMicrosoft 365戻します。 [**インシデント] ページの****[調査**] タブには、Microsoft Defender for Identity と Microsoft Defender for Endpoint によってトリガーされた自動調査が表示されます。 次のスクリーンショットは、Defender for Endpoint によってトリガーされた自動調査のみを表示します。 既定では、Defender for Endpoint はキュー内にあるアーティファクトを自動的に修復します。修復が必要です。
 
 ![インシデントに関連する自動調査のスクリーンショット](../../media/mtp/fig14.png)
 
@@ -262,7 +262,7 @@ Microsoft 365 セキュリティ センター ポータルでインシデント�
 
 [インシデント **の管理] を選択します**。 状態を [インシデントの解決 **] に設定し** 、関連する分類を選択します。
 
-インシデントが解決すると、Microsoft 365 セキュリティ センターおよび関連するポータルで関連付けられているすべてのアラートが閉じます。
+インシデントが解決すると、セキュリティ センターと関連するポータルMicrosoft 365関連付けられているすべてのアラートが閉じます。
 
 ![[インシデントの管理] パネルを開いたインシデント ページのスクリーンショットで、スイッチをクリックしてインシデントを解決できます。](../../media/mtp/fig16.png)
 
@@ -279,17 +279,17 @@ Microsoft 365 セキュリティ センター ポータルでインシデント�
 
 このシナリオでは、1 つの内部メールボックスとデバイスが必要です。 テスト メッセージを送信するには、外部メール アカウントも必要です。
 
-1. テナントで Microsoft [365 Defender が有効になっているか確認します](m365d-enable.md#confirm-that-the-service-is-on)。
+1. テナントが Defender を有効[にMicrosoft 365します](m365d-enable.md#confirm-that-the-service-is-on)。
 2. 電子メールの受信に使用するターゲット メールボックスを特定します。
-    a. このメールボックスは、Microsoft Defender が 365 b Office監視する必要があります。 要件 3 のデバイスは、このメールボックスにアクセスする必要があります
-3. テスト デバイスを構成します。a. Windows 10 バージョン 1903 以降のバージョンを使用している必要があります。
+    a. このメールボックスは、Microsoft Defender によって監視され、Office 365必要があります。 要件 3 のデバイスは、このメールボックスにアクセスする必要があります
+3. テスト デバイスを構成します。a. バージョン 1903 以降Windows 10を使用してください。
     b. テスト デバイスをテスト ドメインに参加します。
-    c. [[ウイルス対策] Windows Defenderをオンにする](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)。 ウイルス対策の有効化に問題があるWindows Defender、このトラブルシューティング [のトピックを参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
+    c. [[オンにする] をWindows Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)します。 問題が発生した場合は、このトラブルシューティング Windows Defender ウイルス対策を[参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
     d. [エンドポイント用 Microsoft Defender にオンボードします](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 ### <a name="run-the-simulation"></a>シミュレーションを実行する
 
-1. 外部メール アカウントから、テスト環境の要件セクションの手順 2 で識別されたメールボックスに電子メールを送信します。 既存の電子メール フィルター ポリシーで許可される添付ファイルを含める。 このファイルは、悪意のあるファイルや実行可能ファイルである必要があります。 推奨されるファイルの種類は<i>、.pdf、.exe</i> (許可されている場合)、または Word ファイルなどのOfficeドキュメントです。 <i></i>
+1. 外部メール アカウントから、テスト環境の要件セクションの手順 2 で識別されたメールボックスに電子メールを送信します。 既存の電子メール フィルター ポリシーで許可される添付ファイルを含める。 このファイルは、悪意のあるファイルや実行可能ファイルである必要があります。 推奨されるファイルの種類は<i>、.pdf、.exe</i> <i>(許可</i>されている場合)、または Word ファイルなどのOfficeドキュメントです。
 2. テスト環境の要件セクションの手順 3 で定義されているデバイスから送信された電子メールを開きます。 添付ファイルを開くか、ファイルをデバイスに保存します。
 
 #### <a name="go-hunting"></a>Go hunting
@@ -432,20 +432,20 @@ Microsoft 365 セキュリティ センター ポータルでインシデント�
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>その他の高度な狩猟ウォークスルー演習
 
-高度な検索の詳細については、次の Web キャストで Microsoft 365 Defender 内の高度な検索機能について説明し、クロスピラー クエリを作成し、エンティティにピボットし、カスタム検出と修復アクションを作成します。
+高度な検索の詳細については、次の Web キャストで、Microsoft 365 Defender 内の高度な狩猟の機能について説明し、クロスピラー クエリを作成し、エンティティにピボットし、カスタム検出と修復アクションを作成します。
 
 > [!NOTE]
-> パイロット テスト ラボ環境でハンティング クエリを実行するには、独自の GitHub アカウントを準備してください。
+> パイロット テスト ラボ環境でGitHubクエリを実行するには、独自のアカウントを使用して準備してください。
 
 |タイトル|説明|MP4 をダウンロードする|YouTube で視聴する|使用する CSL ファイル|
 |---|---|---|---|---|
-|エピソード 1: KQL の基本|Microsoft 365 Defender の高度な狩猟機能の基本について説明します。 使用可能な高度な検索データと基本的な KQL 構文と演算子について説明します。|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[エピソード 1: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
+|エピソード 1: KQL の基本|Defender の高度な狩猟機能の基本Microsoft 365します。 使用可能な高度な検索データと基本的な KQL 構文と演算子について説明します。|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[エピソード 1: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |エピソード 2: 参加|高度な検索のデータと、テーブルを一緒に結合する方法について引き続き学習します。 内部、外側、一意、および半結合、および既定の Kusto innerunique 結合のニュアンスについて説明します。|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[エピソード 2: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
 |エピソード 3: データの要約、ピボット、および視覚化|データのフィルター処理、操作、結合ができたので、データの要約、定量化、ピボット、視覚化を開始します。 このエピソードでは、要約演算子と、高度な狩猟スキーマの追加テーブルに飛び込む間に実行できる計算の一部について説明します。 分析の改善に役立つグラフにデータセットを変換します。|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[エピソード 3: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|エピソード 4: ハントしましょう! インシデント追跡への KQL の適用|攻撃者のアクティビティを追跡する時間! このエピソードでは、攻撃を追跡するために、Microsoft 365 Defender での KQL と高度な狩猟に関する理解を深める方法を使用します。 サイバーセキュリティの ABC やインシデント対応に適用する方法など、攻撃者のアクティビティを追跡するためにフィールドで使用されるヒントとコツについて説明します。|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[エピソード 4: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
+|エピソード 4: ハントしましょう! インシデント追跡への KQL の適用|攻撃者のアクティビティを追跡する時間! このエピソードでは、攻撃を追跡するために、KQL と高度なMicrosoft 365を使用します。 サイバーセキュリティの ABC やインシデント対応に適用する方法など、攻撃者のアクティビティを追跡するためにフィールドで使用されるヒントとコツについて説明します。|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[エピソード 4: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
 |
 
 ## <a name="next-step"></a>次の手順
 
-|![閉じると概要のフェーズ](../../media/mtp/close.png) <br>[閉じると概要のフェーズ](m365d-pilot-close.md)|Microsoft 365 Defender パイロットの結果を分析し、関係者に提示し、次の手順を実行します。
+|![閉じると概要のフェーズ](../../media/mtp/close.png) <br>[閉じると概要のフェーズ](m365d-pilot-close.md)|Defender パイロットMicrosoft 365結果を分析し、関係者に提示し、次の手順を実行します。
 |:-----|:-----|

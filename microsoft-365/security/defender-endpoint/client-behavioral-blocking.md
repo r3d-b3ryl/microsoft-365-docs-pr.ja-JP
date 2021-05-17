@@ -46,15 +46,15 @@ ms.locfileid: "51933423"
 
 ## <a name="how-client-behavioral-blocking-works"></a>クライアントの動作のブロックのしくみ
 
-[Microsoft Defender ウイルス対策では](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) 、デバイス上で疑わしい動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃を検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策は、疑わしい動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと適切な動作をミリ秒単位で区別し、各成果物を分類します。 ほぼリアルタイムで、アーティファクトが悪意のあると判明すると、デバイス上でブロックされます。 
+[Microsoft Defender ウイルス対策、](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)不審な動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃など、デバイスで検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと適切な動作をミリ秒単位で区別し、各成果物を分類します。 ほぼリアルタイムで、アーティファクトが悪意のあると判明すると、デバイス上でブロックされます。 
 
-疑わしい動作が検出されると、 [アラートが生成](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts-queue) され、Microsoft Defender セキュリティ センター () に表示されます [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
+疑わしい動作が検出されると、アラートが生成[](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts-queue)され、メッセージ () にMicrosoft Defender セキュリティ センターされます [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
 
 クライアントの動作ブロックは、攻撃の開始を防ぐだけでなく、実行を開始した攻撃を停止するのに役立つため、効果的です。 また、フィードバック [ループブロック](feedback-loop-blocking.md) (別の動作ブロックと格納機能) を使用すると、組織内の他のデバイスに対する攻撃が防止されます。
 
 ## <a name="behavior-based-detections"></a>動作ベースの検出
 
-動作ベースの検出の名前は [、MITRE ATT](https://attack.mitre.org/matrices/enterprise)&CK Matrix for Enterprise に従います。 名前付け規則は、悪意のある動作が観察された攻撃段階を特定するのに役立ちます。
+動作ベースの検出の名前は[、MITRE ATT](https://attack.mitre.org/matrices/enterprise)&CK マトリックスに従Enterprise。 名前付け規則は、悪意のある動作が観察された攻撃段階を特定するのに役立ちます。
 
 
 |戦術 |   検出の脅威名 |

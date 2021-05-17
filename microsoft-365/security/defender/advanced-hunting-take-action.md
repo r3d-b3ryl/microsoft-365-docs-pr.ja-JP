@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender で高度な検索クエリ結果に対してアクションを実行する
+title: Defender で高度な検索クエリの結果に対してMicrosoft 365する
 description: 高度な検索クエリ結果の脅威と影響を受けるアセットにすばやく対処する
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、アクションの実行
 search.product: eADQiWindows 10XVcnh
@@ -46,7 +46,7 @@ ms.locfileid: "51952610"
 ## <a name="required-permissions"></a>必要なアクセス許可
 高度な検索を通じてアクションを実行するには、デバイスに修復アクションを送信するためのアクセス許可を持つ Microsoft Defender for Endpoint の役割 [が必要です](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)。 アクションを実行できない場合は、次のアクセス許可を取得する方法について、グローバル管理者に問い合わせてください。
 
-*脅威と脆弱性管理>アクティブな修復アクション - 修復処理*
+*脅威と脅威に対>アクティブな脆弱性の管理アクション - 修復処理*
 
 ## <a name="take-various-actions-on-devices"></a>デバイスでさまざまなアクションを実行する
 クエリ結果の列で識別されるデバイスに対して、次 `DeviceId` のアクションを実行できます。
@@ -81,7 +81,7 @@ ms.locfileid: "51952610"
 各アクションは、アクション センターの[](m365d-action-center.md)[履歴] ([アクション センター履歴] ( [ security.microsoft.com/action-center/history] の下のアクション センター  >  [に個別に記録されます](https://security.microsoft.com/action-center/history)。 アクション センターに移動して、各アクションの状態を確認します。
  
 >[!NOTE]
->この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [Microsoft 365 Defender をオンに](m365d-enable.md) し、より多くのデータ ソースを使用して脅威を検出します。 「Advanced [Hunting queries](advanced-hunting-migrate-from-mde.md)from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動できます。
+>この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [Defender を有効Microsoft 365、](m365d-enable.md)より多くのデータ ソースを使用して脅威を探します。 「Advanced Hunting queries from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に[移動できます](advanced-hunting-migrate-from-mde.md)。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
