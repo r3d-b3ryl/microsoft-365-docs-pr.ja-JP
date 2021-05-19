@@ -1,23 +1,24 @@
 ---
 title: エルサルバドルのお支払い情報
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 41b6fac752446756116183f1ccf2ed35b40f49af
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: b7492e412133152834c24864fac20376255eb2ad
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273862"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535580"
 ---
 # <a name="payment-information-for-el-salvador"></a>エルサルバドルのお支払い情報
 
@@ -31,4 +32,4 @@ ms.locfileid: "52273862"
 **ブランチ:** ダラス  
 **SWIFT コード:** BOFAUS3N  
 **アカウント番号:** 4426587954  
-**アカウント名:** Microsoft  
+**アカウント名:** Microsoft

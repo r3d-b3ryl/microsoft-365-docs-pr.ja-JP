@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。 '
-ms.openlocfilehash: c20b0d070c4c4ca28ee681e560c4a91c412241fc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: dcaeb9588f50d1e12bdff5164f5f41a0beee2e47
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244541"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535880"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 Microsoft のビジネス プランの 1 つを使用している小規模または中規模の組織で、組織の種類がサイバー犯罪者やハッカーによってターゲットにされている場合は、この記事のガイダンスを使用して組織のセキュリティを強化してください。 このガイダンスは、組織が「ハーバード 大学ケネディ学校サイバーセキュリティ キャンペーン ハンドブック」に記載されている目標を [達成するのに役立ちます](https://go.microsoft.com/fwlink/p/?linkid=2015598)。
 
@@ -57,7 +50,7 @@ Microsoft では、サービス プランに適用される次の表に示すタ
 
 Microsoft Business Premium を使用している場合、以下のライブラリのガイダンスに従うと、最も手早くセキュリティ設定を行い安全に共同作業ができるでしょう: [中小企業向け Microsoft 365 およびキャンペーン ](../../campaigns/index.md)。 このガイダンスは、Microsoft Defending Democracy チームと協力して開発され、高度なハッカーによるサイバー攻撃から中小企業のユーザーを保護します。
 
-開始する前に、セキュリティ[センター Microsoft 365の](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)セキュリティ スコアをMicrosoft 365してください。 一元化されたダッシュボードから、ID、データ、アプリ、デバイス、インフラストラクチャMicrosoft 365のセキュリティを監視および改善できます。 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティのアプリケーションやソフトウェアを使用して推奨事項に対処したりするためのポイントが与えられる。 Microsoft 製品とサービスの広範なセットに対する追加の分析情報と可視性を活用すると、組織のセキュリティ正常性に関する自信を持って報告できます。
+開始する前に、セキュリティ[センター Microsoft 365の](../../security/defender/microsoft-secure-score.md)セキュリティ スコアをMicrosoft 365してください。 一元化されたダッシュボードから、ID、データ、アプリ、デバイス、インフラストラクチャMicrosoft 365のセキュリティを監視および改善できます。 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティのアプリケーションやソフトウェアを使用して推奨事項に対処したりするためのポイントが与えられる。 Microsoft 製品とサービスの広範なセットに対する追加の分析情報と可視性を活用すると、組織のセキュリティ正常性に関する自信を持って報告できます。
 
 ![Microsoft Secure Score のスクリーンショット](../../media/secure-score.png)
 

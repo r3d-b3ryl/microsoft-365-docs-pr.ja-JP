@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: ビジネスに大きな影響を与えるアカウントとの間で送信される、失敗したメールメッセージと遅延メール メッセージを監視します。
-ms.openlocfilehash: f67b9c6f0eaa229b650026670cf1b2adf88ab3c0
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 2a58f4090244fc6d68be69cf6b3c8ab6e00874fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632182"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535808"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>優先アカウントを管理および監視する
 
@@ -37,7 +37,7 @@ ms.locfileid: "51632182"
 
 優先度アカウントのセキュリティのベスト プラクティスについては、「優先度アカウント [のセキュリティに関する推奨事項」を参照してください](../../security/office-365-security/security-recommendations-for-priority-accounts.md)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 この **トピックで説明する** 優先度アカウント保護機能は、次の要件を満たす組織でのみ使用できます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "51632182"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
 
-2. [ユーザー ]  >  **[アクティブなユーザー** ] に移動し、ページの上部にある **[...]** を選択します。 [優先度 **アカウントの管理] を選択します**。
+2. [ユーザー ]  >  **[アクティブなユーザー** ] に移動し、ページの上部にある 3 つのドット (その他のアクション) を選択します。 [優先度 **アカウントの管理] を選択します**。
 
 3. [**アカウントの追加]** を選択し、[優先度アカウントの追加] ページの検索フィールドに、優先度アカウントリストに追加するユーザーの名前を入力します。
 

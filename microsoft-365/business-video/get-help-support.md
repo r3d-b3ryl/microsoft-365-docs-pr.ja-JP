@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 Business Premium で管理者向けヘルプやサポートを受ける方法について説明します。
-ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: HT
+description: 管理者のヘルプまたはオンラインまたは電話でのサポートを受けるためには、ビジネス サブスクリプションの管理者である必要Microsoft 365 Business Premium。
+ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327188"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535712"
 ---
 # <a name="get-support"></a>サポートを受ける
 
@@ -252,3 +252,12 @@ Office 365 Germany の管理者は、知識の豊富なサポート担当者に�
 [Microsoft 365 for business コミュニティ フォーラム](https://go.microsoft.com/fwlink/p/?LinkId=518605)を検索して、既知の問題や最近の傾向に関する話題を検索したり、新しい質問を投稿したりすることもできます。コミュニティ フォーラムはユーザーの問題を解決できるよう訓練を受けた Microsoft サポート エージェントが監視しています。
 
 ::: moniker-end
+
+
+## <a name="related-content"></a>関連コンテンツ
+
+[ドキュメントとトレーニングの検索](find-help-answers.md) (記事)
+
+[従業員のクイック セットアップ](employee-quick-setup.md) (記事)
+
+[セットアップのMicrosoft 365 Business Premium (](setup-overview.md)ビデオ)

@@ -20,17 +20,17 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス サブスクリプションのユーザーからのライセンス要求を確認および承認またはMicrosoft 365する方法について学習します。
 ms.date: 08/07/2020
-ms.openlocfilehash: 06ee210b39c19c1f2c8a2041c463568e55001b6e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 6cbfd81f4f6deba642729f1fef0b826b07a99f56
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331552"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535676"
 ---
 # <a name="manage-license-requests"></a>ライセンス要求の管理
 
 > [!NOTE]
-> この記事の情報は、セルフサービス購入製品にのみ適用されます。 詳細については、「セルフサービス購入 [に関するよく寄せられる質問」を参照してください](../subscriptions/self-service-purchase-faq.md)。
+> この記事の情報は、セルフサービス購入製品にのみ適用されます。 詳細については、「セルフサービス購入 [に関するよく寄せられる質問」を参照してください](../subscriptions/self-service-purchase-faq.yml)。
 
 組織内でセルフサービス購入を無効にした場合は、ライセンス要求を使用してユーザーのライセンス要求プロセスを管理できます。 ユーザーがブロックした製品のセルフサービス購入を試みる場合は、管理者からライセンスの要求を送信できます。要求を行う場合は、製品のライセンスも必要とする他のユーザーの名前を追加できます。
 
@@ -39,7 +39,7 @@ ms.locfileid: "52331552"
 
 ライセンス要求を表示および管理するために、管理者は[ライセンス] ページの [要求] タブ **を使用** します。 一覧には、要求された製品の名前、ライセンスを要求するユーザーの名前、要求された日付、要求の状態が表示されます。 管理者はリストをフィルター処理して、保留中または完了した要求を表示できます。 要求は 30 日間保持されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 この記事のタスクを実行するには、グローバル管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
@@ -79,6 +79,6 @@ ms.locfileid: "52331552"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md)(記事)\
+[ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md) (記事)\
 [ユーザーを別のサブスクリプションに移動](../subscriptions/move-users-different-subscription.md) する (記事)\
 [サブスクリプション ライセンスを購入または削除する](buy-licenses.md) (記事)

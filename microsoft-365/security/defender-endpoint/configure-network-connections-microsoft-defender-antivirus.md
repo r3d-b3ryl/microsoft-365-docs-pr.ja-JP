@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/28/2020
+ms.date: 05/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8c049a7301cc651dbf2621d0baa398117856b925
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 5e754c2f4b5406d4b91ef624415f3819d3171305
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274642"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536024"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 
@@ -32,25 +32,23 @@ ms.locfileid: "52274642"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-クラウド配信Microsoft Defender ウイルス対策正常に動作するには、エンドポイントと特定の Microsoft サーバー間の接続を許可するネットワークを構成する必要があります。
-
-この記事では、ファイアウォール ルールの使用など、許可する必要がある接続の一覧と、接続の検証手順を示します。 保護を適切に構成すると、クラウド配信の保護サービスから最高の価値を確実に受け取るのに役立ちます。
+クラウド配信Microsoft Defender ウイルス対策正常に動作するには、エンドポイントと特定の Microsoft サーバー間の接続を許可するネットワークを構成する必要があります。 この記事では、ファイアウォール ルールの使用など、許可する必要がある接続の一覧と、接続の検証手順を示します。 保護を適切に構成すると、クラウド配信の保護サービスから最高の価値を確実に受け取るのに役立ちます。
 
 ネットワーク接続の詳細については [、「Microsoft Active Protection Services](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) エンドポイントの重要な変更点」を参照してください。
 
->[!TIP]
->Microsoft Defender for Endpoint のデモ Web サイトにアクセス [して、demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 機能が動作しているのを確認できます。
+> [!TIP]
+> Microsoft Defender for Endpoint のデモ Web サイトにアクセス [して、demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 機能が動作しているのを確認できます。
 >
->- クラウドによる保護
->- 高速学習 (一目でブロックを含む)
->- 望ましくない可能性があるアプリケーションのブロック
+> - クラウドによる保護
+> - 高速学習 (一目でブロックを含む)
+> - 望ましくない可能性があるアプリケーションのブロック
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>クラウド サービスへの接続Microsoft Defender ウイルス対策する
 
 クラウド Microsoft Defender ウイルス対策は、エンドポイントに高速で強力な保護を提供します。 クラウド配信保護サービスの有効化はオプションですが、エンドポイントやネットワーク全体のマルウェアに対する重要な保護を提供しますので、強くお勧めします。
 
->[!NOTE]
->クラウド Microsoft Defender ウイルス対策は、ネットワークとエンドポイントに更新された保護を提供するためのメカニズムです。 クラウド サービスと呼ばれるのはクラウド サービスですが、クラウドに保存されているファイルの保護ではなく、分散リソースと機械学習を使用して、従来のセキュリティ インテリジェンス更新プログラムよりもはるかに高速な速度でエンドポイントに保護を提供します。
+> [!NOTE]
+> クラウド Microsoft Defender ウイルス対策は、ネットワークとエンドポイントに更新された保護を提供するためのメカニズムです。 クラウド サービスと呼ばれるのはクラウド サービスですが、クラウドに保存されているファイルの保護ではなく、分散リソースと機械学習を使用して、従来のセキュリティ インテリジェンス更新プログラムよりもはるかに高速な速度でエンドポイントに保護を提供します。
 
 [Intune、Microsoft Endpoint Configuration Manager、](enable-cloud-protection-microsoft-defender-antivirus.md)グループ ポリシー、PowerShell コマンドレット、または Windows セキュリティ アプリ内の個々のクライアントでサービスを有効にする方法の詳細については、「クラウドによる保護を有効にする」を参照してください。 
 
@@ -65,7 +63,7 @@ ms.locfileid: "52274642"
 | :--: | :-- | :-- |
 | Microsoft Defender ウイルス対策 (MAPS) とも呼ばれるクラウド配信Microsoft Active Protection Service保護サービス|クラウドによるMicrosoft Defender ウイルス対策を提供するために、ユーザーが使用する|`*.wdcp.microsoft.com` <br/> `*.wdcpalt.microsoft.com` <br/> `*.wd.microsoft.com`|
 | Microsoft Update Service (MU) <br/> WindowsUpdate Service (WU)|  セキュリティ インテリジェンスと製品の更新   |`*.update.microsoft.com` <br/> `*.delivery.mp.microsoft.com`<br/> `*.windowsupdate.com` <br/><br/> 詳細については、「[接続エンドポイント for Windows Update」を参照してください。](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
-|セキュリティ インテリジェンスの更新代替ダウンロード場所 (ADL)|   インストールされているセキュリティ インテリジェンスMicrosoft Defender ウイルス対策が更新された場合のセキュリティ インテリジェンス更新プログラムの代替場所 (7 日以上後)|    `*.download.microsoft.com`  </br> `*.download.windowsupdate.com`</br> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+|セキュリティ インテリジェンスの更新代替ダウンロード場所 (ADL)|   インストールされているセキュリティ インテリジェンスMicrosoft Defender ウイルス対策が更新された場合のセキュリティ インテリジェンス更新プログラムの代替場所 (7 日以上後)|    `*.download.microsoft.com`  </br> `*.download.windowsupdate.com`</br>  `go.microsoft.com`</br> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 | マルウェアの送信ストレージ|アップロードフォームまたは自動サンプル送信を介して Microsoft に送信されたファイルの場所を指定する    | `ussus1eastprod.blob.core.windows.net` <br/>    `ussus2eastprod.blob.core.windows.net` <br/>    `ussus3eastprod.blob.core.windows.net` <br/>    `ussus4eastprod.blob.core.windows.net` <br/>    `wsus1eastprod.blob.core.windows.net` <br/>    `wsus2eastprod.blob.core.windows.net` <br/>    `ussus1westprod.blob.core.windows.net` <br/>    `ussus2westprod.blob.core.windows.net` <br/>    `ussus3westprod.blob.core.windows.net` <br/>    `ussus4westprod.blob.core.windows.net` <br/>    `wsus1westprod.blob.core.windows.net` <br/>    `wsus2westprod.blob.core.windows.net` <br/>    `usseu1northprod.blob.core.windows.net` <br/>    `wseu1northprod.blob.core.windows.net` <br/>    `usseu1westprod.blob.core.windows.net` <br/>    `wseu1westprod.blob.core.windows.net` <br/>    `ussuk1southprod.blob.core.windows.net` <br/>    `wsuk1southprod.blob.core.windows.net` <br/>    `ussuk1westprod.blob.core.windows.net` <br/>    `wsuk1westprod.blob.core.windows.net` |
 | 証明書失効リスト (CRL)|CRL を更新Windowsマップへの SSL 接続を作成するときに、ユーザーが使用します。   | `http://www.microsoft.com/pkiops/crl/` <br/> `http://www.microsoft.com/pkiops/certs` <br/>   `http://crl.microsoft.com/pki/crl/products` <br/> `http://www.microsoft.com/pki/certs` |
 | シンボル ストア|修復フロー中Microsoft Defender ウイルス対策特定の重要なファイルを復元するために使用されるファイル  | `https://msdl.microsoft.com/download/symbols` |
@@ -94,8 +92,8 @@ ms.locfileid: "52274642"
 
 にアクセスしてファイルをダウンロードします [https://aka.ms/ioavtest](https://aka.ms/ioavtest) 。
 
->[!NOTE]
->このファイルは、実際のマルウェアではありません。 これは、クラウドに適切に接続されている場合にテストするように設計された偽のファイルです。
+> [!NOTE]
+> このファイルは、実際のマルウェアではありません。 これは、クラウドに適切に接続されている場合にテストするように設計された偽のファイルです。
 
 適切に接続されている場合は、警告メッセージが表示Microsoft Defender ウイルス対策表示されます。
 

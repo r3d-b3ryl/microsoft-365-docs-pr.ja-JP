@@ -1,23 +1,24 @@
 ---
 title: フィジーのお支払い情報
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ca8b6d68095b45e17b94127d999f325097ba78ab
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7544bed1de9c4d5d9a6a202ab8395dd31ff0e404
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273814"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535520"
 ---
 # <a name="payment-information-for-fiji"></a>フィジーのお支払い情報
 
@@ -30,4 +31,4 @@ ms.locfileid: "52273814"
 **Bank:** シティバンク(シンガポール)  
 **SWIFT コード:** CITISGSG  
 **アカウント番号:** 0-817543-138  
-**アカウント名:** MICROSOFT REGIONAL SALE CORP  
+**アカウント名:** MICROSOFT REGIONAL SALE CORP

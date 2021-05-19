@@ -21,12 +21,12 @@ search.appverid:
 description: AllowSelfServicePurchase PowerShell コマンドレットを使用してセルフサービス購入をオンまたはオフにする方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 09161f69e72babe8270b339243d73444b93d9959
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333376"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536132"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する
 
@@ -42,13 +42,14 @@ ms.locfileid: "52333376"
 
 **MSCommerce PowerShell モジュール** を使用するには、次が必要です。
 
-- Windows 10 デバイス
+- デバイスWindows 10デバイス
+- PowerShell 5 以下。 現在、PowerShell 6.x/7.x は、このモジュールではサポートされていません。
 - デバイスの管理者のアクセス許可
 - テナントのグローバルまたは課金管理者の役割
 
 ## <a name="install-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールのインストール
 
-WINDOWS 10 デバイスに **MSCommerce** PowerShell モジュールを 1 回インストールし、開始する各 PowerShell セッションにインポートします。 **PowerShell ギャラリーから MSCommerce** [PowerShell モジュールをダウンロードします](https://aka.ms/allowselfservicepurchase-powershell-gallery)。
+**MSCommerce** PowerShell モジュールは、Windows 10デバイスに 1 回インストールし、開始する各 PowerShell セッションにインポートします。 **PowerShell ギャラリーから MSCommerce** [PowerShell モジュールをダウンロードします](https://aka.ms/allowselfservicepurchase-powershell-gallery)。
 
 **PowerShellGet を使用して MSCommerce** PowerShell モジュールをインストール **するには、** 次のコマンドを実行します。
 
@@ -58,13 +59,13 @@ Install-Module -Name MSCommerce
 
 ## <a name="import-mscommerce-into-the-powershell-session"></a>MsCommerce を PowerShell セッションにインポートする
 
-Windows 10 デバイスにモジュールをインストールした後、開始する各 PowerShell セッションにモジュールをインポートします。 PowerShell セッションにインポートするには、次のコマンドを実行します。
+モジュールをデバイスにインストールしたWindows 10、開始する各 PowerShell セッションにモジュールをインポートします。 PowerShell セッションにインポートするには、次のコマンドを実行します。
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>資格情報を使用して MSCommerce に接続する
+## <a name="connect-to-mscommerce-with-your-credentials"></a>Connectを使用して MSCommerce にアクセスする
 
 資格情報を使用して PowerShell モジュールに接続するには、次のコマンドを実行します。
 
@@ -72,7 +73,7 @@ Import-Module -Name MSCommerce
 Connect-MSCommerce
 ```
 
-このコマンドは、現在の PowerShell セッションを Azure Active Directory テナントに接続します。 接続するテナントのユーザー名とパスワードを求めるメッセージが表示されます。 資格情報に対して多要素認証が有効になっている場合は、対話型オプションを使用してログインします。
+このコマンドは、現在の PowerShell セッションを新しいテナントAzure Active Directoryします。 接続するテナントのユーザー名とパスワードを求めるメッセージが表示されます。 資格情報に対して多要素認証が有効になっている場合は、対話型オプションを使用してログインします。
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>AllowSelfServicePurchase の詳細を表示する
 
@@ -94,9 +95,9 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 
 | 製品 | ProductId |
 |-----------------------------|--------------|
-| ユーザーごとの Power Apps | CFQ7TTC0KP0P |
-| ユーザーごとの Power Automate | CFQ7TTC0KP0N |
-| Power Automate RPA | CFQ7TTC0KXG6  |
+| Power Apps 1 人あたりのユーザー数 | CFQ7TTC0KP0P |
+| Power Automate 1 人あたりのユーザー数 | CFQ7TTC0KP0N |
+| Power AutomateRPA | CFQ7TTC0KXG6  |
 | Power BI Premium (スタンドアロン) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
 | Project Plan 1 | CFQ7TTC0KXND |
@@ -161,3 +162,9 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 ```powershell
 Uninstall-Module -Name MSCommerce
 ```-->
+
+## <a name="related-content"></a>関連コンテンツ
+
+[セルフサービス購入の管理 (管理者) (](manage-self-service-purchases-admins.md) 記事)
+
+[セルフサービス購入に関する FAQ](self-service-purchase-faq.yml) (記事)

@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Microsoft 365 管理センターで配布グループまたはリストを作成して、各受信者の名前を入力せずにグループにメールを送信する方法について説明します。
-ms.openlocfilehash: 5c4781653a5f18b7a41dc20212771368132801cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bd5e246caa8d1b56a33db21d70eb5cbdb7b5ed92
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914248"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535820"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>管理センターで配布グループをMicrosoft 365する
   
@@ -70,6 +70,6 @@ ms.locfileid: "50914248"
     
 6. 配布リストにユーザーを追加するには、「 [ユーザーまたは連絡先を配布グループに追加する」を参照してください](../email/add-user-or-contact-to-distribution-list.md)。
     
-「連絡先グループを使用する (以前は配布リストを使用するOutlook 2016」トピックの「Outlook 2016 Outlookおよび web 上のグループOutlookする方法」[を参照](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)してください。 
+[連絡先グループ (以前の配布リスト[)](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)を使用する] Outlook 2016および web 上Outlookグループを使用する方法を確認Outlook。 
   
 配布リスト [の問題に関するヘルプ](/office365/troubleshoot/groups/distribution-list-issues) については、「配布グループの問題」を参照してください。 

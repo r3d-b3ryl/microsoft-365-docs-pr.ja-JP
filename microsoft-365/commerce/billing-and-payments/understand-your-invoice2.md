@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 for Business の課金内容または請求書の請求内容および課金情報についての詳細、および発注書番号を変更する方法について説明します。
 ms.date: 05/04/2021
-ms.openlocfilehash: 3b183c219e25bcef21add70e2c704a7a0f3fe354
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: febcbdee563c18b3f17ee35b98f2d68b15f456d8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331960"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535688"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 
@@ -128,5 +128,12 @@ ms.locfileid: "52331960"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 for business サブスクリプションの支払](pay-for-your-subscription.md) い (記事)\
+[請求書または請求書を見つけて表示する方法](view-your-bill-or-invoice.md) (記事)
+
+[請求先住所の変更](change-your-billing-addresses.md) (記事)
+
+[組織のアドレス、技術的な](../../admin/manage/change-address-contact-and-more.md) 連絡先メール、その他の情報を変更する (記事)
+
+[ビジネス サブスクリプションのMicrosoft 365支払い](pay-for-your-subscription.md)(記事)\
+
 [Minecraft: Education Edition の支払いオプション](/education/windows/school-get-minecraft) (記事) \

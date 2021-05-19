@@ -19,15 +19,15 @@ ms.collection:
 - m365solution-symantecmigrate
 - m365solution-overview
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/14/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 3e3a30ac4d03a40157fd7ec7f06e6e2a82c685a0
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 62a916fcf89432a512ada1b85002cce401e4dd23
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327392"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530900"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>Symantec から Microsoft Defender for Endpoint への移行
 Symantec Endpoint Protection (シマンテック) から Microsoft Defender for [Endpoint](microsoft-defender-endpoint.md) (Microsoft Defender for Endpoint) に切り替える予定の場合は、適切な場所にいます。 この記事をガイドとして使用します。
@@ -48,9 +48,9 @@ Symantec Endpoint Protection (シマンテック) から Microsoft Defender for 
 
 |段階 |説明 |
 |--|--|
-|[移行の準備](symantec-to-microsoft-defender-atp-prepare.md) |準備フェーズ **では**、Microsoft Defender for Endpoint を取得し、役割とアクセス許可を計画し、ユーザーにアクセス権を付与Microsoft Defender セキュリティ センター。 また、デバイス プロキシとインターネット設定を構成して、組織のデバイスと Microsoft Defender for Endpoint 間の通信を有効にします。 |
-|[エンドポイント用 Microsoft Defender のセットアップ](symantec-to-microsoft-defender-atp-setup.md) |セットアップ フェーズ **中** に、設定と除外を構成して、Microsoft Defender ウイルス対策および Symantec Endpoint Protection。 デバイス グループ、コレクション、および組織単位も作成します。 最後に、マルウェア対策ポリシーとリアルタイム保護設定を構成します。|
-|[エンドポイント用 Microsoft Defender にオンボード](symantec-to-microsoft-defender-atp-onboard.md) |オンボード フェーズ **中に** 、デバイスを Microsoft Defender for Endpoint にオンボードし、それらのデバイスが Microsoft Defender for Endpoint と通信しているのを確認します。 最後に、Symantec をアンインストールし、Microsoft Defender for Endpoint を通じた保護がアクティブ モードに設定されています。 |
+|[移行の準備](symantec-to-microsoft-defender-atp-prepare.md) |準備フェーズ **では**、組織のデバイスを更新し、Microsoft Defender for Endpoint を取得し、役割とアクセス許可を計画し、組織のデバイスへのアクセスを許可Microsoft Defender セキュリティ センター。 また、デバイス プロキシとインターネット設定を構成して、組織のデバイスと Defender for Endpoint 間の通信を有効にします。 |
+|[エンドポイント用 Microsoft Defender のセットアップ](symantec-to-microsoft-defender-atp-setup.md) |セットアップ フェーズ **中に**、ユーザー設定を有効Microsoft Defender ウイルス対策パッシブ モードに設定します。 また、ユーザーとシマンテック&の除外Microsoft Defender ウイルス対策設定を構成Endpoint Protection。 次に、デバイス グループ、コレクション、および組織単位を作成します。 最後に、マルウェア対策ポリシーとリアルタイム保護設定を構成します。|
+|[エンドポイント用 Microsoft Defender にオンボード](symantec-to-microsoft-defender-atp-onboard.md) |オンボード フェーズ **では** 、デバイスを Microsoft Defender for Endpoint にオンボードし、Microsfot Defender Antivirus がパッシブ モードで実行され、エンドポイントが Defender for Endpoint と通信中か確認します。 次に、Symantec をアンインストールし、Defender for Endpoint が正しく動作するようにします。 |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に含まれるもの
 

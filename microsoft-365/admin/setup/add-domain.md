@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Microsoft 365 管理センターで Microsoft 365 にドメインを追加するには、 DNS ホストで DNS レコードを追加します。 これらの手順を案内するウィザードがあります。
-ms.openlocfilehash: 747de5f61dc9fce53f82f52b65f701572a56f8d4
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
-ms.translationtype: HT
+description: セットアップ ウィザードを使用して、DNS ホストに DNS レコードMicrosoft 365追加Microsoft 365管理センターにドメインを追加します。
+ms.openlocfilehash: 96849e90a420dc31dbde8c55d5a1108f73f85978
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470883"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535832"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
@@ -39,17 +39,9 @@ ms.locfileid: "51470883"
   
  *追加、変更またはドメインを削除するには、[ビジネスまたはエンタープライズ プラン](https://products.office.com/business/office)の **グローバル管理者** である **必要** があります。これらの変更は、テナント全体、*カスタマイズ管理者* または *正規ユーザー* に影響を与え、変更を加えることはできません。*  
 
- 以下の手順に従って、ドメインの追加、セットアップ、またはセットアップの続行を行います。 
+ ## <a name="add-a-domain"></a>ドメインの追加
 
-::: moniker range="o365-worldwide"
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/dda6df6d-37b0-41ff-905b-089448355a31?autoplay=false]
-  
-::: moniker-end
+以下の手順に従って、ドメインの追加、セットアップ、またはセットアップの続行を行います。 
 
 ::: moniker range="o365-worldwide"
 
@@ -142,12 +134,12 @@ ms.locfileid: "51470883"
   
 ビジネスで使用している Web サイトがある場合は、そのままの場所で稼働し続けます。 ドメイン接続 のセットアップ手順は、自分の Web サイトには影響しません。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[ドメイン FAQ](domains-faq.yml)
+[ドメインに関する FAQ](domains-faq.yml) (記事)
 
-[ドメインとは](../get-help-with-domains/what-is-a-domain.md)
+[ドメインとは](../get-help-with-domains/what-is-a-domain.md) (記事)
 
-[Microsoft 365 でドメイン名を購入する](../get-help-with-domains/buy-a-domain-name.md)
+[ドメイン名を購入する (Microsoft 365)](../get-help-with-domains/buy-a-domain-name.md)
 
-[ドメインを設定する (ホストに固有の手順)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
+[ドメインを設定する](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (記事)

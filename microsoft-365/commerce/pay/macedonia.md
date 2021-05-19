@@ -1,27 +1,28 @@
 ---
 title: マケドニアの旧ユーゴスラビア共和国の支払い情報
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 121cb3ea0420177f6cc9684e6458de38467da41f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 84e6f58fb9506a1a8c05e759b1273fa3fa97d7ab
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273346"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535460"
 ---
 # <a name="payment-information-for-macedonia-former-yugoslav-republic-of"></a>マケドニアの旧ユーゴスラビア共和国の支払い情報
 
-[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。 
+[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
 お支払いは USD のみであり、請求書の送金に関する請求書番号を参照してください。
 
@@ -31,4 +32,4 @@ ms.locfileid: "52273346"
 **SWIFT コード:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **アカウント番号:** 12510049  
-**アカウント名:** MICROSOFT  
+**アカウント名:** MICROSOFT

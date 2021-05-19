@@ -1,23 +1,24 @@
 ---
 title: セント ビンセントとグレナディーン諸島の支払い情報
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bc2a39a5fe87d376b55686b2332773cec991849a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7e4042b0323500bdfc5b212abdd7902fbdd75efb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272950"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535208"
 ---
 # <a name="payment-information-for-saint-vincent-and-the-grenadines"></a>セント ビンセントとグレナディーン諸島の支払い情報
 
@@ -31,4 +32,4 @@ ms.locfileid: "52272950"
 **ブランチ** ダラス  
 **SWIFT コード:** BOFAUS3N  
 **アカウント番号:** 4426587954  
-**アカウント名:** Microsoft  
+**アカウント名:** Microsoft

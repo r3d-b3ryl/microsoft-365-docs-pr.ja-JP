@@ -2,22 +2,23 @@
 title: フランスの支払い情報
 f1.keywords:
 - NOCSH
-author: cmcatee-MSFT
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a96e2160ea7dd3a9ed5dd4ca9d967f5028aa1d29
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 71f165611f59c45dd2c6d8fa5a5980264c03ba21
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273790"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535496"
 ---
 # <a name="payment-information-for-france"></a>フランスの支払い情報
 
@@ -29,19 +30,19 @@ ms.locfileid: "52273790"
 
 Microsoft Ireland Operations **Limited** が請求する請求書がある場合は、次の銀行情報を使用します。
 
-Bank: Citibank, London\
-SWIFT コード: CITIGB2L\
-IBAN コード: GB31CITI18500812207591\
-SORT コード: 185008\
-アカウント番号: 12207591\
-アカウント名: MICROSOFT
+**Bank:** シティバンク(ロンドン)  
+**SWIFT コード:** CITIGB2L  
+**IBAN コード:** GB31CITI18500812207591  
+**SORT コード:** 185008  
+**アカウント番号:** 12207591  
+**アカウント名:** MICROSOFT
 
 Microsoft France **SAS** が 2021 年 3 月 1 日から注文と消費に対して請求する請求書がある場合は、次の銀行情報を使用します。
 
-Bank: Citibank Europe plc\
-SWIFT コード: CITIIE2X\
-IBAN コード: IE11CITI99005170000123\
-アカウント番号: 70000123\
-アカウント名: MICROSOFT
+**Bank:** シティバンク ヨーロッパ plc  
+**SWIFT コード:** CITIIE2X  
+**IBAN コード:** IE11CITI99005170000123  
+**アカウント番号:** 70000123  
+**アカウント名:** MICROSOFT
 
 現地の Microsoft 子会社から発行された請求書は、VAT/売上税/GST の標準税率で発行され、VAT/売上税/GST の目的で国内のサービス供給と見なされます。

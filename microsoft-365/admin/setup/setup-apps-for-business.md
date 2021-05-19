@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Apps for business サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9c973866a3bf1008a8c8062e2a5b9e101494d5f9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244481"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535736"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Microsoft 365 Apps for business をセットアップする
 
@@ -39,19 +39,19 @@ ms.locfileid: "52244481"
 
  ::: moniker range="o365-worldwide"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Office 365 Germany を使用している場合は、[この管理センター](https://go.microsoft.com/fwlink/p/?linkid=848041)に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> から管理センターにアクセスします。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 21Vianet が運営する Office 365 を使用している場合は、[この管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> から管理センターにアクセスします。
 
 ::: moniker-end 
 

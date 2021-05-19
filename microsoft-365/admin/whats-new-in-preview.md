@@ -21,12 +21,12 @@ description: 管理者Microsoft 365 - 今月追加された機能について学
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: b75c6be901dfe2bcfe9a0d8fad8fbb56eecd34d6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077313"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535748"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>管理センターの新機能Microsoft 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "52077313"
 
 ::: moniker-end
 
-管理センターに継続的に新機能を追加[](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)し、Microsoft 365問題を解決し、フィードバックに基づいて変更を加えます。 以下を見て、今日利用可能な機能を確認してください。 一部の機能は、お客様に異なる速度で展開されます。 まだ機能が表示されない場合は、ターゲットリリース [に自分自身を追加してみてください](manage/release-options-in-office-365.md)。
+管理センターに継続的に新機能を追加[](../business-video/admin-center-overview.md)し、Microsoft 365問題を解決し、フィードバックに基づいて変更を加えます。 以下を見て、今日利用可能な機能を確認してください。 一部の機能は、お客様に異なる速度で展開されます。 まだ機能が表示されない場合は、ターゲットリリース [に自分自身を追加してみてください](manage/release-options-in-office-365.md)。
 
 他の Microsoft クラウド サービスの新機能を知りたい場合は、次の手順を実行します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "52077313"
 - [Microsoft 365 Defender の新機能](../security/mtp/whats-new.md)
 - [SharePoint 管理センターの新機能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新プログラム](/OfficeUpdates/)
-- [リリースの正常性をWindowsする方法](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+- [リリースの正常性をWindowsする方法](/windows/deployment/update/check-release-health)
 
 ## <a name="april-2021"></a>2021 年 4 月
 
@@ -123,7 +123,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 
 開始するには、次の 2 つの方法があります。
 
-- [ユーザー] **に移動** し、[その他の操作] メニューの [ **優先度アカウントの** 管理] を選択して、ユーザーをリストに追加します。
+- [ユーザー]**に移動** し、3 つの点 (その他のアクション) メニューで [優先度アカウントの管理] を選択して、ユーザーをリストに追加します。
 - [セットアップ] **に移動し**、セットアップ タスクを見 **つけて、最** も重要なアカウントを監視し、[作業を開始する] **を選択します**。
 
 優先度アカウントの詳細については、「優先度アカウントの監視 [」を参照してください](./setup/priority-accounts.md)。
@@ -135,7 +135,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 - [検索] ボックスがヘッダー領域に移動し、"Microsoft 365管理センター" と表示されたので、ホーム ページではなく、任意のページから検索します。 Alt + S というショートカット **も追加しました**。
 - 検索の方がスマートで、より良い結果が得られます。さらに速くなります。 「2fa」と入力して開始してください。
 - 検索結果は、実行できるアイテムまたはアクションの種類によって整理されます。
-  - **[** ユーザー] : ユーザーの名前を選択すると、そのユーザーを編集できます。 名前の横にある [その他の操作] メニューを選択すると、パスワードをリセットできます。 表示名、名、名、ユーザー名またはプライマリ メール アドレス、および電子メール エイリアスで検索できます。 ただし、完全一致を取得するには、プライマリ メール アドレスまたはユーザー名で検索します。
+  - **[** ユーザー] : ユーザーの名前を選択すると、そのユーザーを編集できます。 名前の横にある 3 つのドット (その他のアクション) メニューを選択すると、パスワードをリセットできます。 表示名、名、名、ユーザー名またはプライマリ メール アドレス、および電子メール エイリアスで検索できます。 ただし、完全一致を取得するには、プライマリ メール アドレスまたはユーザー名で検索します。
   - **グループ**: 任意のページからグループを編集し、メンバーを追加し、所有者を割り当てる。
   - **アクション**: ユーザーを検索してパスワードをリセットする方法と同様に、任意のページから "パスワードをリセット" を検索し、ユーザーのパスワードを 1 つ以上リセットすることもできます。
   - **ナビゲーション**: [ナビゲーション] の下の結果は、管理センターのページにすばやくアクセスするのに役立ちます。 たとえば、"roles" を検索すると、Azure の [ロール] ページが表示ADされます。
