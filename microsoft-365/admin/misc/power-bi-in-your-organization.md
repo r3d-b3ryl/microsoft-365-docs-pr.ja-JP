@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 組織のユーザー Power BIこのビジネス分析サービスを使用する方法について詳しくは、こちらをご覧ください。
-ms.openlocfilehash: c2f07c4e1e6da814eb31186ba0c132021479ad4a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 34a48ed6ee854f0057e79ba86dbd888a65b41c5e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914704"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537429"
 ---
 # <a name="power-bi-in-your-organization"></a>組織内の Power BI
 
@@ -167,46 +167,30 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 ## <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>既にサインアップしたユーザーの Power BI を削除する方法
 
 ユーザーが Power BI にサインアップしたが、Power BI へのアクセス権を持たなくなった場合は、そのユーザーの Power BI ライセンスを削除できます。
-
-::: moniker range="o365-worldwide"
   
+::: moniker range="o365-worldwide"
+
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+
+::: moniker-end
 
 2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
 
 3. [ライセンスと **アプリ] タブで****、[Microsoft** のライセンスとアプリ] チェック Power BIをオフにします。
 
 4. [**変更の保存**] を選択します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
-
-3. [製品ライセンス **] の横にある**[編集] **を選択します**。
-
-4. [Microsoft の設定] オプション **をオフPower BI** します。
-
-5. [**保存**] を選択します。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
-
-3. [製品ライセンス **] の横にある**[編集] **を選択します**。
-
-4. [Microsoft の設定] オプション **をオフPower BI** します。
-
-5. **[保存]** を選択します。
-
-::: moniker-end
 
 ## <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>新しいユーザーがテナントに参加したことは、どのようにしてわかりますか?
 

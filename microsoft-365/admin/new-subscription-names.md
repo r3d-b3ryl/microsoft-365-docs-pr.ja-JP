@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: サブスクリプション名の新しいMicrosoft 365を確認します。
-ms.openlocfilehash: f9726f8860e25b800a253899b5c2f561325e5ca2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 43496015eeaa680abbdf8f9ed43f83e1a072c825
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579208"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537417"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 は Microsoft 365 になりました
 
@@ -33,3 +33,13 @@ Microsoft では、Office 365 と Microsoft 365 のサブスクリプション�
 - **Office 365 ProPlus** が表示 **Microsoft 365 Apps for enterprise**
 
 [詳細情報！](https://go.microsoft.com/fwlink/?linkid=2120533)
+
+## <a name="related-content"></a>関連コンテンツ
+
+[サブスクリプションと課金](../commerce/index.yml) (リンク)
+
+[請求書または請求書を表示する](../commerce/billing-and-payments/view-your-bill-or-invoice.md) (記事)
+
+[サブスクリプションの支払い](../commerce/billing-and-payments/pay-for-your-subscription.md) (記事)
+
+[請求先住所の変更](../commerce/billing-and-payments/change-your-billing-addresses.md) (記事)

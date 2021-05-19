@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS レコードが正しく設定されていることを確認して、カスタム ドメインのセットアップ中に発生した問題を追跡する方法について説明します。
-ms.openlocfilehash: dfb3c93c169a3d31c14d912ddd2cc94fb1e4ace1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5959cae02b87cf481fc06edd941a6da284b71736
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915640"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537549"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>ドメインまたは DNS レコードを追加後に問題を特定して解決する
 
@@ -38,7 +38,7 @@ ms.locfileid: "50915640"
 ドメインをセットアップしてユーザーと一緒にMicrosoft 365は難しい場合があります。 DNS システムは、操作するには細かい設定があり、ドメインに対する DNS のセットアップ内容は、メールなどの重要な業務活動にも影響を与えます。
 
 > [!NOTE]
-> ドメインの状態を確認することで、ドメインに関する問題を確認できます。 [ドメインの **セットアップ**  >  **] に移動** し、[状態] 列に通知 **を表示** します。 問題が発生した場合は、[その他のアクション (3 つのドット) を選択し、[正常性の確認] **を選択します**。 開くウィンドウは、ドメインで発生する問題について説明します。
+> ドメインの状態を確認することで、ドメインに関する問題を確認できます。 [ドメインの **セットアップ**  >  **] に移動** し、[状態] 列に通知 **を表示** します。 問題が発生した場合は、3 つのドット (その他のアクション) を選択し、[正常性の確認] **を選択します**。 開くウィンドウは、ドメインで発生する問題について説明します。
   
 ## <a name="whats-going-on"></a>何が起こっているのでしょうか?
 

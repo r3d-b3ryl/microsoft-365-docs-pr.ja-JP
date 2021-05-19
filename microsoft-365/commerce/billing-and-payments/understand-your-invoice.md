@@ -22,12 +22,12 @@ search.appverid: MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
 ms.date: 05/04/2021
-ms.openlocfilehash: dc83db458d1d91942352795c9b67578e9f1a2fc2
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d173df1eac827eb835b8544f64858c28ccf0fb75
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331937"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537309"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 
@@ -144,7 +144,18 @@ Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 3
 
 Azure の前払いは、対象となる Azure 製品およびサービスのお支払い方法としてのみ利用できます。
 
-## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートに連絡
+## <a name="related-content"></a>関連コンテンツ
+
+[ビジネス向け請求書または請求書をMicrosoft 365する](understand-your-invoice2.md)(記事)
+
+[Microsoft Customer Agreement Azure クレジット 残高の追跡](/azure/billing/billing-mca-check-azure-credits-balance) (記事)
+
+[Microsoft カスタマー 契約の請求書を確認する](/azure/cost-management-billing/understand/review-customer-agreement-bill) (記事)
+
+[Microsoft Customer Agreement 請求アカウントの使用を開始する](/azure/billing/billing-mca-overview) (記事)
+
+
+## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートにお問い合せください
 
 Azure クレジットについて質問がある場合、またはサポートが必要な場合は、<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Azure サポートを使用してサポート要求を作成してください</a>。
 

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: サブスクリプション アドバイザー パートナーを、サブスクリプションの購入時、Microsoft 365変更時、またはサブスクリプションからパートナーを削除した時点で、レコードのパートナーとして追加する方法について学習します。
-ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579232"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537477"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>サブスクリプション アドバイザー パートナーを追加、変更、または削除する
 
@@ -110,7 +110,7 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
 
 1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 2. 複数のサブスクリプションがある場合は、編集するサブスクリプションを選択します。
-3. 右側のサブスクリプション コストの下で、[その他のアクション レコード **の** > **パートナーを追加する] を選択します**。
+3. 右側のサブスクリプション コストの下で、[レコードのパートナーの追加] の 3 つの点 (>) を **選択します**。
 4. 追加するパートナーの Microsoft パートナー ID を入力し、[ **ID の確認**]、[ **送信**] の順に選びます。パートナーの Microsoft パートナー ID は、パートナーにたずねることで入手できます。
 5. パートナー ID が [ **サブスクリプション**] ページに表示されます。
 

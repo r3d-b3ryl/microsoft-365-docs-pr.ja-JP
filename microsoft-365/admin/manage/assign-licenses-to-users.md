@@ -21,14 +21,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: ユーザーにライセンスを割り当てる方法を説明します。
+description: 製品ライセンスを特定のユーザーに割り当てるのか、またはユーザー ライセンスを特定の製品に割り当てるのかによって、ライセンスを割り当てます。
 ms.date: 04/26/2021
-ms.openlocfilehash: ef8169658c6aef03cf8ff0cf9714c980ce63b060
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332488"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537537"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 
@@ -53,20 +53,22 @@ ms.locfileid: "52332488"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**課金**] > [**ライセンス**] ページに移動します。
+ 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金**] > [**ライセンス**] ページに移動します。
+ 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
+
 
 2. 製品を選択します。
 3. 製品の詳細ページで、[**ライセンスの割り当て**] を選択します。
@@ -80,21 +82,22 @@ ms.locfileid: "52332488"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**課金**] > [**ライセンス**] ページに移動します。
+ 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金**] > [**ライセンス**] ページに移動します。
+ 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
 
 ::: moniker-end
+
 
 2. [**ライセンス**] ページで、特定のユーザーの行を選択します。
 3. 右側のウィンドウで、アクセスを許可または削除するアプリとサービスを選択または選択解除します。
@@ -114,18 +117,19 @@ ms.locfileid: "52332488"
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**課金**] > [**アクティブなユーザー**] の順に選択します。
+ 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金**] > [**アクティブなユーザー**] の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
+
 2. ライセンスを割り当てるユーザー名の横にある円を選択します。
-3. 上部で [**その他のオプション (...)**] を選択し、[**製品ライセンスの管理**] を選択します。
+3. 上部で 3 つのドット (その他のアクション) を選択し、[**製品ライセンスの管理**] を選択します。
 4. [**製品ライセンスの管理**] ウィンドウで、[**既存の製品ライセンス割り当てに追加する**] \> [**次へ**] の順に選択します。
 5. [**既存の製品に追加**] ウィンドウで、選択したユーザーに付与するライセンスのトグルを [**オン**] の位置に切り替えます。\
     既定では、それらのライセンスに関連付けられているすべてのサービスがユーザーに自動的に割り当てられます。 ユーザーが利用できるサービスを制限できます。 ユーザーに設定しないサービスのトグルを [**オフ**] の位置に切り替えます。
@@ -145,15 +149,16 @@ ms.locfileid: "52332488"
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**課金**] > [**アクティブなユーザー**] の順に選択します。
+ 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**課金**] > [**アクティブなユーザー**] の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
+
 
 2. ライセンスを割り当てるユーザーの行を選択します。
 3. 右側のウィンドウで、[**ライセンスとアプリ**] を選択します。

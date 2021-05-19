@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理センターで検索機能を使用して、より良い結果と迅速な結果を得る方法について学習します。
-ms.openlocfilehash: 4faf761c1bb478dbdd578f3acec4fb108ca7269a
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: 87e7fb78e9d7ce535f481151515791c20c115836
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50054156"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537513"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで検索する
 
@@ -34,7 +34,7 @@ ms.locfileid: "50054156"
 
 次のセクションでは、検索可能な管理センターのさまざまな領域とカテゴリについて説明します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 管理センターで検索するには、管理者である必要があります。 検索結果の範囲は、ログインしているユーザーが持つ管理者のアクセス許可です。 たとえば、管理者SharePointが管理センターに領域またはカテゴリを表示しない場合、その領域は検索で表示されます。
 
@@ -44,7 +44,7 @@ ms.locfileid: "50054156"
 
 :::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="スクリーンショット: Felix Henderson ユーザーを検索する":::
 
-名前の横にある [その他の操作] メニューを選択すると、パスワードをリセットできます。
+名前の横にある 3 つのドット (その他のアクション) メニューを選択すると、パスワードをリセットできます。
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="スクリーンショット: 検索結果からパスワードをリセットするオプションを使用したユーザー検索":::
 
