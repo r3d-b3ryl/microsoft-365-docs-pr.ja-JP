@@ -49,7 +49,7 @@
       items:
         - name: Outlook と Teams を使用する
           href: collab-outlook-teams.md
-        - name: 小規模ビジネスで Microsoft Teams を開始する
+        - name: Teams の使用を開始する
           href: get-started-teams-small-business.md
         - name: グループのメール アドレスを作成する
           href: group-email.md
