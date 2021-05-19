@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、ユーザー (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理Exchange Online Protectionできます。 Microsoft Defender for Office 365組織の管理者は、SharePoint Online、OneDrive for Business、およびMicrosoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 508866fd66e4cbd00f559446d4ce52a4be063c94
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272206"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539109"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -72,7 +72,7 @@ Microsoft Defender for Office 365 組織の管理者は、SharePoint Online、On
 
 ### <a name="view-quarantined-email"></a>検疫済みメールの表示
 
-1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[レビュー]** \> **[検疫]** の順に移動します。
+1. セキュリティ 管理コンプライアンス センター&、脅威管理 **レビュー検疫に** \> **移動** \> **します**。
 
 2. [**検疫済みを表示**] が既定値の [**メール**] に設定されていることを確認します。
 
@@ -234,7 +234,7 @@ Defender for Office 365組織では、管理者は SharePoint Online、OneDrive 
 
 ### <a name="view-quarantined-files"></a>検疫済みファイルの表示
 
-1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[レビュー]** \> **[検疫]** の順に移動します。
+1. セキュリティ 管理コンプライアンス センター&、脅威管理 **レビュー検疫に** \> **移動** \> **します**。
 
 2. [検疫 **済みビュー] を値** ファイルに **変更します**。 使用可能な列ヘッダーをクリックすると、フィールドの並べ替えを行います。
 

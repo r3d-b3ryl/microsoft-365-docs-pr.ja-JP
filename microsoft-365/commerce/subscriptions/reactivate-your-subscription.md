@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: サブスクリプションが期限切れになったり、無効になったり、キャンセルされた場合にサブスクリプションを再アクティブ化する方法について学習します。
 ms.date: 04/07/2021
-ms.openlocfilehash: 902be48b32acdff5173a0dd5cc84dbd5972e1ba9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 63c65e90d01bfd2c67d1d2ecfed32a4d4ff8d27a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345144"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538461"
 ---
 # <a name="reactivate-your-subscription"></a>サブスクリプションを再度有効にする
 
@@ -58,7 +58,7 @@ ms.locfileid: "52345144"
 
 ::: moniker-end
 
-2. **[製品]** タブで、再アクティブにするサブスクリプションを見つけます。 [ **その他のアクション** (3 つのドット) を選択し、[このサブスクリプション **を再アクティブ化する**] を選択します。\
+2. **[製品]** タブで、再アクティブにするサブスクリプションを見つけます。 3 つのドット (その他のアクション) を選択し、[ **このサブスクリプションを再アクティブ化する]を** 選択します。\
     [このサブスクリプションの再アクティブ化] **が表示しない場合は**、サポート [にお問い合わせください](../../business-video/get-help-support.md)。
 3. **[このサブスクリプションを再アクティブ化する]** ウィンドウで、ドロップダウン リストから支払い方法を選択するか、**[支払い方法を追加する]** を選択します。
 4. **[保存]** を選択します。

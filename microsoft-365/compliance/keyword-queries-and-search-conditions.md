@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Microsoft 365 の電子情報開示検索ツールを使用して検索できる電子メールとファイルのプロパティについて説明します。
-ms.openlocfilehash: cbd3969e9936df3dc82c364d804dbcd366b0e07a
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: 電子情報開示検索ツールを使用して検索できる電子メールとファイルのプロパティについてMicrosoft 365。
+ms.openlocfilehash: 390477012c6a2a57c5e305641ba5b79ff10f4ea7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326596"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538437"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>電子情報開示のキーワード クエリと検索条件
 
-このトピックでは、Exchange Online の電子メール アイテムと Microsoft Teams チャットの会話で検索できる電子メールおよびドキュメントのプロパティ、および Microsoft 365 コンプライアンス センターの電子情報開示検索ツールを使用して SharePoint および OneDrive for Business サイトに保存されているドキュメントについて説明します。 これには、コンテンツ検索、Core eDiscovery、Advanced eDiscovery (Advanced eDiscovery での電子情報開示検索はコレクションと呼ばれる) が *含まれます*。 また、セキュリティ/コンプライアンス センター PowerShell の **\*-ComplianceSearch** コマンドレットを使用してこれらのプロパティを検索することもできます。 このトピックでは以下についても説明します。
+このトピックでは、Exchange Online の電子メール アイテムと Microsoft Teams チャットの会話で検索できる電子メールおよびドキュメントのプロパティと、Microsoft 365 コンプライアンス センターの電子情報開示検索ツールを使用して SharePoint および OneDrive for Business サイトに保存されているドキュメントについて説明します。 これには、コンテンツ検索、Core eDiscovery、および Advanced eDiscovery (Advanced eDiscoveryと呼ばれる電子情報開示検索) が *含まれます*。 また、セキュリティ/コンプライアンス センター PowerShell の **\*-ComplianceSearch** コマンドレットを使用してこれらのプロパティを検索することもできます。 このトピックでは以下についても説明します。
   
 - ブール検索演算子、検索条件、およびその他の検索クエリ技法を使用して、検索結果を絞り込む。
 
@@ -45,10 +45,10 @@ ms.locfileid: "52326596"
 
 - [コア電子情報開示でコンテンツを検索する](search-for-content-in-core-ediscovery.md)
 
-- [Advanced eDiscovery で下書きコレクションを作成する](create-draft-collection.md)
+- [下書きコレクションを作成Advanced eDiscovery](create-draft-collection.md)
 
 > [!NOTE]
-> Microsoft 365 コンプライアンス センターの電子情報開示検索と、セキュリティ & コンプライアンス センター PowerShell の対応する **\* -ComplianceSearch** コマンドレットでは、キーワード クエリ言語 (KQL) を使用します。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
+> 電子情報開示は、Microsoft 365 コンプライアンス センターで検索し、セキュリティ & コンプライアンス センター PowerShell の対応する **\* -ComplianceSearch** コマンドレットでは、キーワード クエリ言語 (KQL) を使用します。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
   
 ## <a name="searchable-email-properties"></a>検索可能なメール プロパティ
 
@@ -59,7 +59,7 @@ ms.locfileid: "52326596"
   
 | プロパティ | プロパティの説明 | 例 | 例で返される検索結果 |
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|メール メッセージに添付されているファイルの名前。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |annualreport.ppt という名前の添付ファイルのあるメッセージ。 2 番目の例では、ワイルドカードを使用して、添付ファイルのファイル名に「annual」の語が含まれるメッセージを返します。 3　番目の例は、ファイルの拡張子が pptx のすべての添付ファイルを返します。|
+|AttachmentNames|メール メッセージに添付されているファイルの名前。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |annualreport.ppt という名前の添付ファイルのあるメッセージ。 2 番目の例では、ワイルドカード文字 ( * ) を使用すると、添付ファイルのファイル名に "annual" という単語が含まれているメッセージが返されます。 3　番目の例は、ファイルの拡張子が pptx のすべての添付ファイルを返します。|
 |Bcc|メール メッセージの Bcc フィールド。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|どの例も Bcc フィールドに「Pilar Pinilla」が含まれているメッセージを返します。|
 |カテゴリ| 検索するカテゴリ。 カテゴリは、ユーザーが Outlook または Outlook on the web (旧称: Outlook Web App) を使用して定義できます。 値は次のいずれかです。  <br/><br/>  青  <br/>  green  <br/>  orange  <br/>  purple  <br/>  red  <br/>  yellow|`category:"Red Category"`|元のメールボックスで「red」のカテゴリが割り当てられているメッセージ。|
 |Cc|メール メッセージの Cc フィールド。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|どちらの例も、Cc フィールドに "Pilar Pinilla" が指定されたメッセージ。|
@@ -68,7 +68,7 @@ ms.locfileid: "52326596"
 |HasAttachment|メッセージに添付ファイルがあるかどうかを示します。 値 **true** または **false** を使用します。|`from:pilar@contoso.com AND hasattachment:true`|指定したユーザーによって送信された添付ファイルを含むメッセージ。|
 |Importance|送信者がメッセージを送信するときに指定できる電子メール メッセージの重要度。既定では、送信者が重要度を **high** または **low** に設定していない限り、メッセージは普通の重要度で送信されます。|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|高重要度、中重要度、または低重要度とマークされているメッセージ。|
 |IsRead|メッセージが既読か未読かを示します。 値 **true** または **false** を使用します。|`isread:true`  <br/> `isread:false`|最初の例では、IsRead プロパティを **True** に設定されているメッセージが返されます。 2 番目の例では、IsRead プロパティが **False** に設定されているメッセージが返されます。|
-|ItemClass|このプロパティは、組織が Office 365 にインポートした特定のサード パーティのデータ型を検索するときに使います。 このプロパティでは、次の構文を使います:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|最初の例では、Subject プロパティに "contoso" という単語が含まれる Facebook アイテムが返されます。 2 番目の例では、Ann Beebe によって投稿された、"Northwind Traders" というキーワード語句を含む Twitter アイテムが返されます。  <br/> ItemClass プロパティのサード パーティのデータ型に使用する値の完全な一覧については、「コンテンツ検索を使用して [、365](use-content-search-to-search-third-party-data-that-was-imported.md)にインポートされたサード パーティのデータを検索する」を参照Officeしてください。|
+|ItemClass|このプロパティは、組織が Office 365 にインポートした特定のサード パーティのデータ型を検索するときに使います。 このプロパティでは、次の構文を使います:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|最初の例では、Subject プロパティに "contoso" という単語が含まれる Facebook アイテムが返されます。 2 番目の例では、Ann Beebe によって投稿された、"Northwind Traders" というキーワード語句を含む Twitter アイテムが返されます。  <br/> ItemClass プロパティのサード パーティのデータ型に使用する値の完全な一覧については、「コンテンツ検索を使用して、コンテンツ にインポートされたサード パーティのデータを検索する」を[参照](use-content-search-to-search-third-party-data-that-was-imported.md)Office 365。|
 |Kind| 検索するメール メッセージの種類。 可能な値:  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (Microsoft Teams のチャット、会議、通話のアイテムが返されます)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|最初の例では、検索条件に一致するメール メッセージが返されます。 2 番目の例では、検索条件に一致するメール メッセージ、インスタント メッセージ、会話 (Skype for Business の会話と Microsoft Teams のチャットを含みます) ボイス メッセージが返されます。 3 番目の例は、サード パーティのデータ ソース (Twitter、Facebook、Cisco Jabber など) から Office 365 のメールボックスにインポートされたアイテムのうち、検索条件に一致して、返されたアイテムです。 詳細については、「[Office 365 でサードパーティのデータをアーカイブする](https://www.microsoft.com/?ref=go)」を参照してください。|
 |Participants|メール メッセージのすべての送受信者フィールド。 すなわち、[差出人]、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|garthf@contoso.com が送信元または送信先のメッセージ。2 番目の例は、contoso.com ドメイン内のユーザーが送信元または送信先のすべてのメッセージを返します。|
 |Received|電子メール メッセージが受信者によって受信された日付。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016 年 4 月 15 日に受信したメッセージ。 2 番目の例は、2016 年 1 月 1 日から 2016 年 3 月 31 日までの間に受信したすべてのメッセージを返します。|
@@ -200,7 +200,7 @@ Microsoft 365 コンプライアンス センターの eDiscovery 検索機能�
 |\>=|property\>=value|検索対象のプロパティが特定の値以上であることを意味します。<sup>1</sup>|
 |..|property:value1..value2|検索対象のプロパティが value1 以上で value2 以下であることを意味します。<sup>1</sup>|
 |"  "|"fair value"  <br/> subject:"Quarterly Financials"|二重引用符 ("  ") は、キーワードや  `property:value` 検索クエリで、完全一致する語句を検索するために使用します。|
-|\*|cat\*  <br/> subject:set\*|前方一致ワイルドカード検索 (アスタリスクが語尾にある) は、キーワードや  `property:value` クエリで、0 個以上の文字に一致します。 たとえば、 `title:set*` は、ドキュメント タイトルに単語 set、setup、setting (および "set" で始まるその他の単語) が含まれているドキュメントを返します。  <br/><br/> **注** プレフィックス ワイルドカード検索 (**cat\**_または_* set\**_) のみが使用できます。サフィックス検索 (_*\*cat** )、インフィックス検索 (**c\*t**)、および部分文字列検索 (**\*cat\***) はサポートされていません。<br/><br/>また、ピリオド( \. の追加 ) をプレフィックス ワイルドカード検索に行うと、返される結果が変更されます。 これは、ピリオドが停止語として扱われるためです。 たとえば、**cat\**_ と   _* cat.\*** 検索では、異なる結果が返されます。 プレフィックス ワイルド カード検索ではピリオドを使用することをお勧めします。 |
+|\*|cat\*  <br/> subject:set\*|キーワードまたはクエリの単語の末尾にワイルドカード文字 ( * *)* が配置されるプレフィックス検索 (プレフィックス一致とも `property:value` 呼ばれる)。 プレフィックス検索では、検索は、単語の後に 0 個以上の文字が続く用語を含む結果を返します。 たとえば、 `title:set*` 文書のタイトルに"set"、"setup"、"setting" という単語 (および "set" で始まる他の単語) を含むドキュメントを返します。  <br/><br/> **注:** プレフィックス検索のみを使用できます。たとえば **、cat \* *_ または _* set \* *_.サフィックス検索 (_* \* cat** ) 、infix 検索 (**c \* t**)、およびサブ文字列検索 (**\* cat \***) はサポートされていません。<br/><br/>また、ピリオド( \. の追加 ) をプレフィックス検索に設定すると、返される結果が変更されます。 これは、ピリオドが停止語として扱われるためです。 たとえば、**cat\**_ と   _* cat.\*** 検索では、異なる結果が返されます。 プレフィックス検索でピリオドを使用しない方法をお勧めします。 |
 |(  )|(fair OR free) AND from:contoso.com  <br/> (IPO OR initial) AND (stock OR shares)  <br/> (quarterly financials)|括弧は、ブール演算子の文字列、 `property:value` アイテム、およびキーワードをグループにまとめます。たとえば、  `(quarterly financials)` は quarterly および financials の語を含むアイテムを返します。  |
 |||||
    
@@ -321,7 +321,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
   
 #### <a name="example-1"></a>例 1
 
-この例では、クレジット カード番号を含み、2021 年 1 月 1 日より前に最後に変更された SharePoint サイトおよび OneDrive for Business サイトのドキュメントを返します。
+この例では、クレジット カード番号SharePoint、OneDrive for Business 2021 年 1 月 1 日より前に最後に変更されたサイトのドキュメントを返します。
   
  **GUI**
   
@@ -446,19 +446,19 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 ## <a name="character-limits-for-searches"></a>検索の文字制限
 
-SharePoint サイトと OneDrive アカウントでコンテンツを検索する場合、検索クエリには 4,000 文字の制限があります。  
+検索クエリには、サイトおよびアカウント内のコンテンツを検索するときに 4,000 文字SharePoint制限OneDriveがあります。  
 検索クエリの合計文字数の計算方法を次に示します。
 
 - キーワード検索クエリの文字 (ユーザー フィールドとフィルター フィールドの両方を含む) は、この制限に対してカウントされます。
 
-- 任意の場所プロパティの文字 (すべての SharePoint サイトの URL、検索する OneDrive の場所など) は、この制限に対してカウントされます。
+- 任意の場所プロパティの文字 (すべてのサイトまたは検索SharePoint場所OneDrive URL など) は、この制限に対してカウントされます。
 
 - 検索カウントを実行しているユーザーに適用される、すべての検索アクセス許可フィルター内の文字が制限に対してカウントされます。
 
 文字制限の詳細については、「電子情報開示の検索制限 [」を参照してください](limits-for-content-search.md#search-limits)。
 
 > [!NOTE]
-> 4,000 文字の制限は、コンテンツ検索、コア電子情報開示、および高度な電子情報開示に適用されます。
+> 4,000 文字の制限は、コンテンツ検索、Core 電子情報開示、および電子情報開示にAdvanced eDiscovery。
 
 ## <a name="search-tips-and-tricks"></a>検索のヒントと秘訣
 
@@ -472,7 +472,7 @@ SharePoint サイトと OneDrive アカウントでコンテンツを検索す�
 
 - To、From、Cc、Recipients などの受信者プロパティを検索するとき、SMTP アドレス、別名、または表示名を使用して受信者を指定できます。たとえば、pilarp@contoso.com、pilarp、または "Pilar Pinilla" を使用できます。
 
-- プレフィックス ワイルドカード検索 (**cat\**または* set\**_) のみが使用できます。サフィックス検索  (_*\*cat**)、インフィックス検索 (**c\*t**)、および部分文字列検索 (**\*cat\***) はサポートされていません。
+- プレフィックス検索のみを使用できます。たとえば **、cat \* *_ または _* set \* *_.サフィックス検索 (_* \* cat**) 、infix 検索 (**c \* t**)、およびサブ文字列検索 (**\* cat \***) はサポートされていません。
 
 - 検索プロパティを検索するとき、検索値が複数の単語で構成される場合は、二重引用符 ("  ") を使用します。 たとえば、 `subject:budget Q1` は、件名行に **budget** を含み、メッセージ内またはいずれかのメッセージ プロパティ内のいずれかの場所に **Q1** を含むメッセージを返します。 `subject:"budget Q1"` を使用すると、件名行に **budget Q1** を含むすべてのメッセージが返されます。
 

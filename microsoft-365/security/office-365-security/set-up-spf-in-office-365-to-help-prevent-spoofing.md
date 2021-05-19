@@ -19,12 +19,12 @@ ms.custom:
 description: Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d200c4cf17a3d42ddafca301fecbf18c249ac37
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 828d76b95a1e3f8d1a1851121d28603a1922f486
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245686"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538989"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
@@ -45,6 +45,13 @@ ms.locfileid: "52245686"
 この記事では、Office 365 で Sender Policy Framework (SPF) のメール認証をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
 
 SPF は、カスタム ドメイン(実際の送信元) から来た送信メールを *検証* するのに役立ちます。  これは、全体的に推奨している SPF、 [DKIM](use-dkim-to-validate-outbound-email.md)、[DMARC](use-dmarc-to-validate-email.md) 認証において電子メール認証方法を設定する最初の手順です。
+
+- [前提条件](#prerequisites)
+- [SPF TXT レコードを作成または更新する](#create-or-update-your-spf-txt-record)
+  - [サブドメインの処理方法](#how-to-handle-subdomains)
+- [SPF メール認証で実際に行う操作](#what-does-spf-email-authentication-actually-do)
+  - [SPF のトラブルシューティング](#troubleshooting-spf)
+- [SPF の詳細情報](#more-information-about-spf)
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -118,7 +125,6 @@ Office 365 の SPF TXT レコードは、カスタム ドメインまたはサ�
 ## <a name="troubleshooting-spf"></a>SPF のトラブルシューティング
 
 SPF TXT レコードで問題が発生している場合「[トラブルシューティング:Office 365 における SPF のベスト プラクティス](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)」をお読みください。
-
 
 ## <a name="what-does-spf-email-authentication-actually-do"></a>SPF メール認証では、実際に何が行われますか?
 

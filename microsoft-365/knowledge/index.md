@@ -1,7 +1,7 @@
 ---
 title: Microsoft Viva トピックの概要
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: ''
@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Microsoft Viva トピックに関するリソースの検索方法について説明します。
-ms.openlocfilehash: 31031697b7825b725c020952a6217b278aa09f02
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 4596f703f86465e4d2d37e2744493bcaef440b7b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454125"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538917"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva トピックの概要
 
@@ -29,13 +29,13 @@ ms.locfileid: "50454125"
 </br>
 
 
-Viva トピックは、組織が情報を知識に変換するのに役立つ Office 365 サービスです。
+Viva Topics は、組織がMicrosoft 365情報を知識に変換するのに役立つ、最新のサービスです。
 
 このページに記載されているリソースでは、組織でのViva トピックの学習と使い方について説明します。
 
 ## <a name="get-started"></a>概要
 
-このセクションのリソースでは、Viva トピックの概要とそれがどのように役立つかについて説明します。
+このセクションのリソースは、ビバ トピックとは何か、またどのように役立つのかについて説明します。
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|

@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Microsoft Defender の脅威フィルター スタックを通じて受信メッセージのパスに従って、Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0760bd7a67f175e4af114324ccc729355ad5f593
-ms.sourcegitcommit: 4e05f19c00e172b65f637f19ca461db5b21dff4e
+ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51601391"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538689"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
 
@@ -61,7 +61,7 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
     - **DMARC を** 使用すると、管理者は SPF と DKIM をドメイン内で必要に応じてマークし、これら 2 つのテクノロジの結果を調整します。
     - **ARC** は顧客が構成されていませんが、DMARC 上に構築され、認証チェーンを記録しながら、メール リストの転送を操作します。
 
-3. **ス** プーフィング インテリジェンスは、組織または既知の外部ドメインを模倣する悪意のあるスプーフィングから、"スプーフィング" (つまり、別のアカウントに代わってメールを送信するユーザー、またはメーリングリストの転送) を許可されるスプーフィングをフィルタリングできます。 正当な 「代理」 メールと送信者のスプーフィングを分離して、スパムやフィッシング メッセージを配信します。 
+3. **ス** プーフィング インテリジェンスは、組織または既知の外部ドメインを模倣する悪意のある送信者から 、スプーフィングを許可されたユーザー (つまり、別のアカウントに代わってメールを送信するユーザー、またはメーリングリストの転送) をフィルター処理できます。 これは、スパムやフィッシング メッセージを配信するためにスプーフィングを行う送信者から正当な 「代理」 メールを分離します。
 
     **組織内のスプーフィング インテリジェンスは** 、組織内のドメインからスプーフィングの試行を検出してブロックします。
 

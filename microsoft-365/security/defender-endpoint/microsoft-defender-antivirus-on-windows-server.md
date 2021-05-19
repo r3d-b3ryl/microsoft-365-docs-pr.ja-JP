@@ -14,13 +14,13 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 04/23/2021
-ms.openlocfilehash: 175b06738b8c1508dab68c1e19648aa5385a7137
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/13/2021
+ms.openlocfilehash: 1a1083d15698eb5bbdf2f6080b152b6f326c689a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269494"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539277"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -131,9 +131,9 @@ sc query Windefend
 
 |メソッド  |説明  |
 |---------|---------|
-|**Windowsの更新** プログラム     |- **更新プログラムをインストールすると**、セキュリティ インテリジェンスの更新プログラムを含むすべての更新Windows Defender自動的にインストールされます。 <br/>- **更新プログラムをダウンロードします** が、セキュリティ インテリジェンス更新プログラムを自動的にダウンロードWindows Defenderインストールできるかどうかを選択しますが、他の更新プログラムは自動的にインストールされません。       |
+|**Windowsの更新** プログラム     | **更新プログラムをインストールすると**、セキュリティ インテリジェンスの更新プログラムを含むすべての更新Windows Defender自動的にインストールされます。 <p>**更新プログラムをダウンロードします** が、セキュリティ インテリジェンス更新プログラムを自動的にダウンロードWindows Defenderインストールできるかどうかを選択しますが、他の更新プログラムは自動的にインストールされません。       |
 |**グループ ポリシー**     | グループ ポリシーで使用可能な設定を使用して、Windows Update をセットアップおよび管理できます。管理用テンプレート **\Windows コンポーネント\Windows Update\Configure 自動更新**         |
-|**AUOptions** レジストリ キー     |次の 2 つの値を使用するとWindowsセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできます。 <br/>- **4**  - **更新プログラムを自動的にインストールします**。 この値を指定すると、セキュリティ インテリジェンス更新プログラムを含むすべての更新Windows Defender自動的にインストールされます。 <br/>- **3**  - **更新プログラムをダウンロードしますが、インストールするかどうかを選択します**。  この値を使用Windows Defenderセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできますが、他の更新プログラムは自動的にインストールされません。         |
+|**AUOptions** レジストリ キー     | 次の 2 つの値を使用するとWindowsセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできます。 <p>**4**  - **更新プログラムを自動的にインストールします**。 この値を指定すると、セキュリティ インテリジェンス更新プログラムを含むすべての更新Windows Defender自動的にインストールされます。 <p>**3**  - **更新プログラムをダウンロードしますが、インストールするかどうかを選択します**。  この値を使用Windows Defenderセキュリティ インテリジェンス更新プログラムを自動的にダウンロードしてインストールできますが、他の更新プログラムは自動的にインストールされません。         |
 
 マルウェアからの保護を確実に維持するには、次のサービスを有効にすることをお勧めします。
 
@@ -185,16 +185,6 @@ Windows Server で Microsoft 以外のウイルス対策製品をプライマリ
 - サーバー Windowsバージョン 1803 以降、または Windows Server 2019 では、Microsoft Defender ウイルス対策パッシブ モードに設定できます。  
 
 - このWindows Server 2016、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策/マルウェア対策製品と共にサポートされていません。 このような場合は、無効モードにMicrosoft Defender ウイルス対策する必要があります。
-
-### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-powershell"></a>PowerShell をMicrosoft Defender ウイルス対策パッシブ モードに設定する
-
-Windows Server バージョン 1803 または Windows Server 2019 を使用している場合は、次の PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策 をパッシブ モードに設定できます。
-
-`CMDLET NEEDED`
-
-### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-group-policy"></a>グループ Microsoft Defender ウイルス対策を使用してパッシブ モードに設定する
-
-プロシージャが必要
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key"></a>レジストリ Microsoft Defender ウイルス対策を使用してパッシブ モードに設定する
 

@@ -20,12 +20,12 @@ description: 管理者は、組織の脅威保護Microsoft 365、組織で使用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b55391247bf7d21c68c67e29f93bac1b7088b035
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3381ce66433f1f4e32f0251c45601e3cb84865b6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687089"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538725"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -106,7 +106,7 @@ Defender for Office 365 ポリシーを構成するには、セキュリティ �
 
 次の手順では、Microsoft Defender でフィッシング対策ポリシーを構成する方法について説明Office 365。 EOP でフィッシング対策ポリシーを構成する手順は似ています。
 
-1. [セキュリティ [& コンプライアンス センター](https://protection.office.com)] で、[脅威 **管理** ポリシー ATP のフィッシング対策] \>  \> **を選択します**。
+1. [セキュリティ [管理&コンプライアンス センター] で、[](https://protection.office.com)脅威 **管理ポリシー** \> **の** \> **フィッシング対策] を選択します**。
 
 2. [既定 **のポリシー] をクリックします**。
 

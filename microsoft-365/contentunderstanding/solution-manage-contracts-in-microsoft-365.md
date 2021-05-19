@@ -13,12 +13,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Syntex、Microsoft 365、およびSharePointのソリューションをMicrosoft Teams契約を管理するPower Automate。
-ms.openlocfilehash: 806ea9fd048dec198a19fa79f3b60f3f3cb81018
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 057c581559aa2e5cfd6e98b379783a7d73e0bccc
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281186"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538569"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>ソリューションを使用して契約Microsoft 365する
 
@@ -67,6 +67,10 @@ ms.locfileid: "52281186"
 4. 契約を使用Power Automate、契約は、契約チャネルの承認プロセスをTeamsされます。 メンバーが契約を承認すると、契約の状態が承認に変更され、すべてのメンバーに Teams 投稿を通じて通知され、契約が支払いの準備ができていることを示す行アイテムが作成されます。 このプロセスは、支払いのためにサードパーティの金融アプリケーションに直接書き込むまで拡張できます。
 
 5.  メンバーが契約を拒否すると、ステータスが拒否に変更され、すべてのメンバーに通知が投稿Teamsされます。
+
+6. このソリューションの最後の結果は、組織の自動化されたビジネス プロセスです。 従業員は、ドキュメントの承認ワークフローを開始Teamsカスタム タイル ビューを簡単に使用できます。 
+
+     ![[契約] タブ。](../media/content-understanding/tile-view.png)
 
 ## <a name="create-the-solution"></a>ソリューションの作成
 

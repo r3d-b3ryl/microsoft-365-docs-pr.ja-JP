@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: コア電子情報開示の保管担当者および非保管データ ソースに適用される法的ホールドに関連するエラーのトラブルシューティングを行います。
-ms.openlocfilehash: 3bd417f2eb6bfb8de8d4b5ccaeb48e6ae1c888eb
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b101bf92c6a304262b3886a4ce0280f427a4a847
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860388"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538473"
 ---
 # <a name="troubleshoot-ediscovery-hold-errors"></a>電子情報開示の保持エラーのトラブルシューティング
 
@@ -33,12 +33,25 @@ ms.locfileid: "51860388"
 
 - 保留配布がまだ保留中の場合は、保留配布が完了するまで待機してから、それ以上の更新 `On (Pending)` `Off (Pending)` を行います。
 
+- 保留ポリシーが保留中であるかどうかを確認してから、保留ポリシーを更新します。 次のコマンドを実行するか、PowerShell スクリプトに保存します。
+
+    ```powershell
+    $status = Get-CaseHoldPolicy -Identity <policyname> 
+    if($status.DistributionStatus -ne "Pending"){
+        # policy no longer pending
+        Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation $user1
+    }else{
+        # policy still pending
+        Write-Host "Hold policy still pending."
+    }
+   ```
+
 - トランザクションごとに保持ポリシーを繰り返し更新するのではなく、1 つの一括要求で更新プログラムを電子情報開示保留にマージします。 [たとえば、Set-CaseHoldPolicy](/powershell/module/exchange/set-caseholdpolicy)コマンドレットを使用して既存の保持ポリシーに複数のユーザー メールボックスを追加するには、コマンドを実行 (またはスクリプトにコード ブロックとして追加) して、複数のユーザーを追加するために 1 回だけ実行します。
 
   **正しい例**
 
     ```powershell
-    Set-CaseHoldPolicy -AddExchangeLocation {$user1, $user2, $user3, $user4, $user5}
+    Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation {$user1, $user2, $user3, $user4, $user5}
     ```
 
    **正しくない例**
@@ -47,7 +60,7 @@ ms.locfileid: "51860388"
     $users = {$user1, $user2, $user3, $user4, $user5}
     ForEach($user in $users)
     {
-        Set-CaseHoldPolicy -AddExchangeLocation $user
+        Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation $user
     }
     ```
 
@@ -83,12 +96,36 @@ ms.locfileid: "51860388"
    Set-CaseHoldPolicy <policyname> -RetryDistribution
    ```
 
+## <a name="error-the-sharepoint-site-is-read-only-or-not-accessible"></a>エラー: SharePointが読み取り専用か、アクセスできない
+
+保管担当者とデータ ソースを保留にするときに次のエラー メッセージが表示される場合は、組織のグローバル管理者または[SharePoint](/sharepoint/sharepoint-admin-role)管理者がサイトをロックしているという意味です。 ロックされたサイトは、電子情報開示がサイトに保留を設定するのをブロックします。
+
+> サイトSharePoint読み取り専用またはアクセスできない。 サイトを書き込み可能にし、このポリシーを再展開するには、サイト管理者に問い合わせてください。
+
+### <a name="resolution"></a>解決方法
+
+この問題を解決するには、サイトのロックを解除します (または管理者にロック解除を求める)。 サイトのロック状態を変更する方法の詳細については、「サイトのロックとロック解除 [」を参照してください](/sharepoint/manage-lock-status)。
+
+## <a name="error-the-mailbox-or-sharepoint-site-may-not-exist"></a>エラー: メールボックスまたはサイトSharePoint存在しない可能性があります
+
+保管担当者とデータ ソースを保留にするときに次のエラー メッセージが表示される場合は、解決手順を使用して問題のトラブルシューティングを行います。
+
+> メールボックスまたはサイトSharePoint存在しない可能性があります。  これが正しくない場合は、Microsoft サポートにお問い合わせください。  それ以外の場合は、このポリシーから削除してください。
+
+### <a name="resolution"></a>解決方法
+
+- PowerShell[で Get-Mailbox](/powershell/module/exchange/get-mailbox)をExchange Online、ユーザー メールボックスが組織内に存在するかどうかを確認します。
+
+- オンライン[PowerShell で Get-SPOSite](/powershell/module/sharepoint-online/get-sposite)コマンドレットをSharePoint組織にサイトが存在するかどうかを確認します。
+
+- サイトの URL が変更された場合に確認します。
+
 ## <a name="more-information"></a>詳細情報
 
-- 「推奨されるプラクティス」セクションの複数のユーザーの保留ポリシーの更新に関するガイダンスは、システムが保留ポリシーへの同時更新をブロックしているという事実から生じます。 つまり、更新された保留ポリシーが新しいコンテンツの場所に適用され、保留ポリシーが保留中の状態である場合、追加のコンテンツの場所を保留ポリシーに追加できない。 この問題の軽減に役立ついくつかの注意が必要な情報を次に示します。
+「推奨されるプラクティス」セクションの複数のユーザーの保留ポリシーの更新に関するガイダンスは、システムが保留ポリシーへの同時更新をブロックしているという事実から生じます。 つまり、更新された保留ポリシーが新しいコンテンツの場所に適用され、保留ポリシーが保留中の状態である場合、追加のコンテンツの場所を保留ポリシーに追加できない。 この問題の軽減に役立ついくつかの注意が必要な情報を次に示します。
   
-  - 更新された保留が更新されるたび、保留状態に直ちに入ります。 保留中の状態は、保留がコンテンツの場所に適用されている状態を意味します。
+- 更新された保留が更新されるたび、保留状態に直ちに入ります。 保留中の状態は、保留がコンテンツの場所に適用されている状態を意味します。
   
-  - ループを実行し、ポリシーに場所を 1 つ 1 つ追加するスクリプトがある場合 (「推奨されるプラクティス」セクションに示されている不適切な例と同様)、最初のコンテンツの場所 (ユーザー メールボックスなど) が、保留中の状態をトリガーする同期プロセスを開始します。 つまり、後続のループでポリシーに追加された他のユーザーはエラーになります。
+- ループを実行し、ポリシーに場所を 1 つ 1 つ追加するスクリプトがある場合 (「推奨されるプラクティス」セクションに示されている不適切な例と同様)、最初のコンテンツの場所 (ユーザー メールボックスなど) が、保留中の状態をトリガーする同期プロセスを開始します。 つまり、後続のループでポリシーに追加された他のユーザーはエラーになります。
   
-  - 組織がループを実行して保留ポリシーのコンテンツの場所を更新するスクリプトを使用している場合は、スクリプトを更新して、単一の一括操作で場所を更新する必要があります (「推奨されるプラクティス」セクションの正しい例に示すように)。
+- 組織がループを実行して保留ポリシーのコンテンツの場所を更新するスクリプトを使用している場合は、スクリプトを更新して、単一の一括操作で場所を更新する必要があります (「推奨されるプラクティス」セクションの正しい例に示すように)。

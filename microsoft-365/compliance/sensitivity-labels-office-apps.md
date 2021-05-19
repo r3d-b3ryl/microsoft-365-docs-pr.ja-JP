@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345766"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532052"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -170,7 +170,7 @@ Azure Information Protection 統合ラベル付けクライアントは、Open X
 
 - ユーザーが **社外秘 \ すべての従業員** ラベルをドキュメントに適用し、このラベルは組織内のすべてのユーザーに暗号化設定を適用するように構成されています。 次に、このユーザーは IRM 設定を手動で構成して、組織外のユーザーへのアクセスを制限します。 最終結果は、**社外秘 \ すべての従業員** というラベルが付けられ、暗号化されたドキュメントですが、組織内のユーザーは期待どおりに開くことができません。
 
-- ユーザーが **社外秘 \ 受信者のみ** ラベルをメールに適用し、このメールは **転送不可** の暗号化設定を適用するように構成されています。 次に、Outlook アプリでは、このユーザーはメールが制限されないように IRM 設定を手動で構成します。 最終的に、**社外秘 \ 受信者のみ** ラベルが付いていても、受信者はメールを転送できます。
+- ユーザーが **社外秘 \ 受信者のみ** ラベルをメールに適用し、このメールは **転送不可** の暗号化設定を適用するように構成されています。 Outlook アプリでは、このユーザーが手動で暗号化のみの IRM 設定を選択します。 最終的に、**社外秘 \ 受信者のみ** ラベルが付いていても、暗号化が保持される間は受信者はメールを転送できます。
     
     例外として、Outlook on the web の場合、現在選択されているラベルが暗号化を適用する場合、ユーザーは **[暗号化]** メニューのオプションを選択できません。
 
@@ -178,13 +178,23 @@ Azure Information Protection 統合ラベル付けクライアントは、Open X
 
 ドキュメントまたはメールにすでにラベルが付けられている場合、コンテンツがまだ暗号化されていないか、「エクスポート」または「フル コントロール」の[使用権限](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)があるなら、ユーザーはこれらのアクションのいずれかを実行できます。 
 
-意味のあるレポートでより一貫性のあるラベル エクスペリエンスを実現するには、ドキュメントを保護するためにラベルを適用するように、ユーザーに適切なラベルとガイダンスを提供します。以下のような例があります。
+意味のあるレポートでより一貫性のあるラベル エクスペリエンスを実現するには、ドキュメントとメールを保護するためにラベルを適用するように、ユーザーに適切なラベルとガイダンスを提供します。以下のような例があります。
 
 - ユーザーが独自のアクセス許可を割り当てる必要がある例外的なケースでは、[ユーザーが独自のアクセス許可を割り当てることができる](encryption-sensitivity-labels.md#let-users-assign-permissions)以下のようなラベルを提供します。 
 
 - ユーザーが暗号化を適用するラベルを選んだ後に手動で暗号化を削除する代わりに、ユーザーが同じ分類の暗号化なしのラベルを必要とする場合は、以下のようなサブラベルの代替手段を提供します。
     - **社外秘 \ すべての従業員**
     - **社外秘 \ すべてのユーザー (暗号化なし)**
+
+- 以下のように IRM 設定を無効化してユーザーが選択しないようにすることを検討します。
+    - Outlook for Windows: 
+        - HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM からのレジストリ キー (DWORD:00000001) *DisableDNF* および *DisableEO*
+        - グループ ポリシー設定では、**[暗号化] ボタン向けに既定の暗号化オプションを構成する** は構成されないことを確認してください。
+    - Outlook for Mac: 
+        - キー *DisableEncryptOnly* および *DisableDoNotForward* セキュリティ設定は、[Outlook for Mac 向けの環境設定の設定](/DeployOffice/mac/preferences-outlook)で文書化されます
+    - Outlook on the web: 
+        - パラメーター *SimplifiedClientAccessDoNotForwardDisabled* および *SimplifiedClientAccessEncryptOnlyDisabled* は、[Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) 向けに文書化されます
+        - iOS および Android 用の Outlook: これらのアプリでは、ユーザーがラベルなしの暗号化を適用することをサポートされていないため、すべて無効です。
 
 > [!NOTE]
 > ユーザーが SharePoint または OneDrive に保存されているラベル付きドキュメントから暗号化を手動で削除し、[SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にした](sensitivity-labels-sharepoint-onedrive-files.md)場合、ラベルの暗号化は、次にドキュメントがアクセスまたはダウンロードされたときに、自動的に復元します。 
@@ -413,7 +423,7 @@ PowerShell の例。ラベルポリシーの名前は **Global** です。
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>詳細設定を指定するための PowerShell のヒント
 
-Outlook に別のデフォルトのラベルを指定するには、ラベル GUID を指定する必要があります。 この値を見つけるには、次のコマンドを使用できます。
+Outlook に別のデフォルトのラベルを指定するには、その GUID でラベルを特定します。 この値を見つけるには、次のコマンドを使用できます。
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid

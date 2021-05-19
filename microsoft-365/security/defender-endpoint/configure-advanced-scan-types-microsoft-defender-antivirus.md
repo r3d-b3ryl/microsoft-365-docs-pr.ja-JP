@@ -14,13 +14,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 1efa72d5b8d204b6aec1cef05fe3c8afe1ca82f7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/06/2021
+ms.topic: how-to
+ms.openlocfilehash: 1942531b77df1c2bd9408815d3ad54b4b7211e8b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275308"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538401"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Microsoft Defender ウイルス対策スキャン オプションを構成する
 
@@ -51,19 +52,19 @@ ms.locfileid: "52275308"
 
 4. 下の表で指定 **したポリシー設定** をダブルクリックし、オプションを目的の構成に設定します。 **[OK] を** クリックし、他の設定を繰り返します。
 
-説明 | 場所と設定 | 既定の設定 (構成されていない場合) | クラスの PowerShell `Set-MpPreference` パラメーターまたは WMI `MSFT_MpPreference` プロパティ
----|---|---|---
-電子メール のスキャン 電子メール [スキャンの制限を参照してください。](#ref1)| スキャン>電子メール スキャンを有効にする | 無効 | `-DisableEmailScanning`
-再 [解析ポイントのスキャン](/windows/win32/fileio/reparse-points) | スキャン >再解析ポイント スキャンを有効にする | 無効 | 利用不可
-マップされたネットワーク ドライブをスキャンする | スキャン > マップされたネットワーク ドライブでフル スキャンを実行する | 無効 | `-DisableScanningMappedNetworkDrivesForFullScan`
- アーカイブ ファイルをスキャンする (.zipファイル.rarします。 拡張機能 [の除外リストは、](configure-extension-file-exclusions-microsoft-defender-antivirus.md) この設定よりも優先されます。 | [スキャン> アーカイブ ファイルのスキャン] | Enabled | `-DisableArchiveScanning`
-ネットワーク上のファイルをスキャンする | ネットワーク ファイル>スキャンする | 無効 | `-DisableScanningNetworkFiles`
-パックされた実行可能ファイルをスキャンする | スキャン>パックされた実行可能ファイルをスキャンする | Enabled | 利用不可
-フル スキャン時にのみリムーバブル ドライブをスキャンする | [スキャン>リムーバブル ドライブのスキャン] | 無効 | `-DisableRemovableDriveScanning`
-スキャンするアーカイブ フォルダー内のサブフォルダーのレベルを指定する | [スキャン> アーカイブ ファイルをスキャンする最大深度を指定します。 | 0 | 利用不可
- スキャン中の CPU の最大負荷 (パーセンテージ) を指定します。 注: これはハードリミットではなく、スキャン エンジンが平均してこの最大値を超えないようにするガイダンスです。 | スキャン>スキャン中の CPU 使用率の最大割合を指定します。 | 50 |  `-ScanAvgCPULoadFactor`
- スキャンするアーカイブ ファイルの最大サイズ (キロバイト単位) を指定します。 既定値の **0** は、制限なしを適用します。 | スキャン>スキャンするアーカイブ ファイルの最大サイズを指定します。 | 制限なし | 利用不可
- スケジュールされたスキャンの CPU 優先度が低い構成 | スキャン >スケジュールされたスキャンの CPU 優先度が低いを構成する | 無効 | 利用不可
+| 説明 | 場所と設定 | 既定の設定 (構成されていない場合) | クラスの PowerShell `Set-MpPreference` パラメーターまたは WMI `MSFT_MpPreference` プロパティ |
+|---|---|---|---|
+| 電子メール のスキャン 電子メール [スキャンの制限を参照してください。](#ref1)| スキャン>電子メール スキャンを有効にする | 無効 | `-DisableEmailScanning` |
+|再 [解析ポイントのスキャン](/windows/win32/fileio/reparse-points) | スキャン >再解析ポイント スキャンを有効にする | 無効 | 利用不可 |
+| マップされたネットワーク ドライブをスキャンする | スキャン > マップされたネットワーク ドライブでフル スキャンを実行する | 無効 | `-DisableScanningMappedNetworkDrivesForFullScan`|
+ アーカイブ ファイルをスキャンする (.zipファイル.rarします。 拡張機能 [の除外リストは、](configure-extension-file-exclusions-microsoft-defender-antivirus.md) この設定よりも優先されます。 | [スキャン> アーカイブ ファイルのスキャン] | Enabled | `-DisableArchiveScanning` |
+| ネットワーク上のファイルをスキャンする | ネットワーク ファイル>スキャンする | 無効 | `-DisableScanningNetworkFiles` |
+| パックされた実行可能ファイルをスキャンする | スキャン>パックされた実行可能ファイルをスキャンする | Enabled | 利用不可 |
+| フル スキャン時にのみリムーバブル ドライブをスキャンする | [スキャン>リムーバブル ドライブのスキャン] | 無効 | `-DisableRemovableDriveScanning` |
+| スキャンするアーカイブ フォルダー内のサブフォルダーのレベルを指定する | [スキャン> アーカイブ ファイルをスキャンする最大深度を指定します。 | 0 | 利用不可 |
+| スキャン中の CPU の最大負荷 (パーセンテージ) を指定します。 注: これはハードリミットではなく、スキャン エンジンが平均してこの最大値を超えないようにするガイダンスです。 手動でスキャンを実行すると、この設定は無視され、CPU 制限なしで実行されます。 | スキャン>スキャン中の CPU 使用率の最大割合を指定します。 | 50 |  `-ScanAvgCPULoadFactor` |
+| スキャンするアーカイブ ファイルの最大サイズ (キロバイト単位) を指定します。 既定値の **0** は、制限なしを適用します。 | スキャン>スキャンするアーカイブ ファイルの最大サイズを指定します。 | 制限なし | 利用不可 |
+| スケジュールされたスキャンの CPU 優先度が低い構成 | スキャン >スケジュールされたスキャンの CPU 優先度が低いを構成する | 無効 | 利用不可 |
  
 > [!NOTE]
 > リアルタイム保護が有効になっている場合、ファイルにアクセスして実行する前にファイルがスキャンされます。 スキャンスコープには、マウントされたリムーバブル メディア上のファイル (USB ドライブなど) を含むすべてのファイルが含まれます。 スキャンを実行するデバイスでリアルタイム保護またはオンアクセス保護が有効になっている場合、スキャンにはネットワーク共有も含まれます。

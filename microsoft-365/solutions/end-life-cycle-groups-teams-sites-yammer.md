@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: グループ、チーム、およびグループのライフサイクルのYammer。
-ms.openlocfilehash: 468f41df747b6cf12d3f6619d79cb97248eba1d1
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346428"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538833"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>グループ、チーム、およびグループのライフサイクルのYammer
 
@@ -197,7 +198,7 @@ Power BIとワークスペースは、グループやチームとは独立して
 
 代わりに、レポートをアクティブにする必要がなくなったが、データを保持する必要がある場合は、レポートをアクティブに[エクスポートExcel。](/power-bi/visuals/power-bi-visualization-export-data)
 
-## <a name="project"></a>プロジェクト
+## <a name="project"></a>Project
 
 web 用に Project で作成されたプロジェクトとロードマップは、Microsoft 365 グループに関連付けられるので、Power BI と同様のオフボーディングの方法があります。
 
@@ -265,3 +266,7 @@ Microsoft TeamsのMicrosoft Teams、Yammerユーザーと管理者の両方が�
 **ネットワーク データのエクスポート**
 
 Yammer管理者がネットワーク[データをエクスポートします](/yammer/manage-security-and-compliance/export-yammer-enterprise-data)。 ただし、そうすると、ネットワーク全体のすべての会話がエクスポートされます。 結果のエクスポートには、グループ ID が一覧表示されます。 この ID に基づいて会話をフィルター処理できます。
+
+## <a name="related-topics"></a>関連項目
+
+[元従業員を削除し、データをセキュリティで保護する](/microsoft-365/admin/add-users/remove-former-employee)

@@ -20,12 +20,12 @@ ms.custom:
 description: このトピックでは、テナント環境のセキュリティに影響を与えるテナント全体の設定に対する推奨構成Microsoft 365説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efcc468dc9b6a41af79ecf2f22a6ad58a410e08f
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 686768d05e37a4e103640c2973fd30abaa25630b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650328"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538941"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する 
 
@@ -50,20 +50,20 @@ Office 365Secure Score は、通常のアクティビティとセキュリティ
 
 |分野|既定のポリシーを含む|推奨事項|
 |---|---|---|
-|**フィッシング対策**|はい|カスタム ドメインがある場合は、CEO などの最も価値のあるユーザーのメール アカウントを保護し、ドメインを保護するために、既定のフィッシング対策ポリシーを構成します。 <p> Office 365 のフィッシング対策ポリシーを確認し[、「EOP](configure-anti-phishing-policies-eop.md)でフィッシング対策ポリシーを構成する」または「Microsoft Defender for [Office 365](set-up-anti-phishing-policies.md)でフィッシング対策ポリシー[を構成する」を参照してください](configure-atp-anti-phishing-policies.md)。|
+|**フィッシング対策**|はい|<ul><li>偽装保護 - Defender for Office 365 とカスタム ドメインがある場合は、既定のフィッシング対策ポリシーで偽装保護設定を構成して、CEO などの最も価値のあるユーザーの電子メール アカウントを保護し、ドメインを保護します。 詳細: [フィッシング対策ポリシーの](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 偽装設定と [偽装の分析情報](impersonation-insight.md)</li><li>スプーフィング インテリジェンス : ドメインをスプーフィングしている送信者を確認します。 これらの送信者をブロックまたは許可します。 詳細: [EOP のスプーフィン](learn-about-spoof-intelligence.md) グ インテリジェンスインサイトと [テナント許可/ブロック一覧の管理](tenant-allow-block-list.md)。</li></ul>|
 |**マルウェア対策エンジン**|はい| 既定のポリシーを編集します。 <ul><li>共通の添付ファイルの種類フィルター: [オン] を選択します。</li></ul> <p> カスタム マルウェア フィルター ポリシーを作成し、組織内の指定したユーザー、グループ、またはドメインに適用することもできます。 <p> 詳しくは、以下の資料を参照してください。 <ul><li>[マルウェア対策保護](anti-malware-protection.md)</li><li>[マルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)</li></ul>|
 |**セーフMicrosoft Defender の添付ファイル (Office 365**|いいえ|[添付ファイル] のメイン ページセーフ[グローバル設定]**をクリックし**、次の設定をオンにします。 <ul><li>**SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365 を有効にする**</li></ul> <p> 次の設定セーフ添付ファイル ポリシーを作成します。 <ul><li> **[ブロック**]: 不明 **なマルウェア応答** として [ブロック] を選択します。</li><li>**リダイレクトを有効** にする: このボックスをオンにして、管理者アカウントや検疫アカウントなどの電子メール アドレスを入力します。</li><li>**添付ファイルのマルウェア スキャンがタイム アウト** またはエラーが発生した場合は、上記の選択を適用します。このボックスをオンにします。</li><li>**_適用:_***受信者ドメインがドメイン** \> を選択します。</li></ul> <p> 詳細:[セーフ、SharePoint、OneDrive、Microsoft Teams](mdo-for-spo-odb-and-teams.md)の添付ファイルポリシーセーフ[設定](set-up-safe-attachments-policies.md)|
 |**セーフMicrosoft Defender for Office 365**|はい|[リンク] のメイン ページセーフ[グローバル設定]**をクリックします**。 <ul><li>**[セーフを使用する: Office 365**: この設定がオンになっていることを確認します。</li><li>**ユーザーが [リンク] をクリックセーフ追跡** しない: ユーザーのクリックを追跡するには、この設定をオフにします。</li></ul> <p> 次の設定セーフリンク ポリシーを作成します。 <ul><li>**メッセージ内の不明な潜在的に悪意** のある URL のアクションを選択します。この設定が [オン] である必要 **があります**。</li><li>**[この設定が [オン**] に設定されている場合は、Microsoft Teamsまたは悪意のある可能性のある URL のアクションを選択 **します**。</li><li>**ファイルを指す疑わしいリンク** やリンクに対してリアルタイムの URL スキャンを適用する: このボックスをオンにします。</li><li>**メッセージを配信する前に URL** のスキャンが完了するのを待ちます。このボックスをオンにします。</li><li>**[セーフ組織内で送信された電子メール メッセージ** へのリンクを適用する: このボックスをオンにします。</li><li>**ユーザーに元の URL へのクリックを** 許可しない: このボックスをオンにします。</li><li>**適用先**: **受信者ドメインがドメイン** \> を選択します。</li></ul> <p> 詳細:[リンク ポリシーセーフ設定します](set-up-safe-links-policies.md)。|
-|**スパム対策 (メール フィルター)**|はい| 何を見守る: <ul><li>スパムが多すぎます - カスタム設定を選択し、既定のスパム フィルター ポリシーを編集します。</li><li>スプーフィング インテリジェンス : ドメインをスプーフィングしている送信者を確認します。 これらの送信者をブロックまたは許可します。</li></ul> <p> 詳細: Microsoft 365[スパム対策の保護](anti-spam-protection.md)。|
+|**スパム対策 (メール フィルター)**|はい| 監視する内容: スパムが多すぎます - カスタム設定を選択し、既定のスパム フィルター ポリシーを編集します。 詳細: Microsoft 365[スパム対策の保護](anti-spam-protection.md)。|
 |***電子メール認証***|はい|電子メール認証では、ドメイン ネーム システム (DNS) を使用して、電子メールの送信者に関する電子メール メッセージに検証可能な情報を追加します。 Microsoft 365 (onmicrosoft.com) の電子メール認証を設定しますが、Microsoft 365管理者はカスタム ドメインに電子メール認証を使用できます。 3 つの認証方法が使用されます。 <ul><li>送信者ポリシー フレームワーク (または SPF)。</li><ul><li>セットアップについては、「スプーフィング[を防止するために、Microsoft 365 SPF をセットアップする」を参照してください](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>DomainKeys Identified Mail (DKIM)。</li><ul><li>[「DKIM を使用してカスタム ドメインから送信される送信メールを検証する」を参照してください](use-dkim-to-validate-outbound-email.md)。</li><li>DKIM を構成した後、セキュリティ センターで有効にしてください。</li></ul><li>ドメイン ベースのメッセージ認証、レポート、および準拠 (DMARC)</li><ul><li>DMARC セットアップでは[、DMARC を使用してメールを検証](use-dmarc-to-validate-email.md)Microsoft 365。</li></ul></ul>|
 |
 
 > [!NOTE]
 > SPF、ハイブリッド展開、およびトラブルシューティングの非標準展開の場合: Microsoft 365 がスプーフィングを防止するために Sender [Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md)を使用する方法。
 
-## <a name="view-dashboards-and-reports-in-the-security-and-compliance-centers"></a>セキュリティ センターとコンプライアンス センターでダッシュボードとレポートを表示する
+## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでダッシュボードとレポート&表示する
 
-環境の正常性の詳細については、これらのレポートとダッシュボードをご覧ください。 これらのレポートのデータは、組織がサービスを使用するOffice 365されます。 今のところ、監視およびアクションを実行できる機能について理解してください。 詳細については、「セキュリティとコンプライアンス センターのレポート : [Microsoft 365」を参照してください](../../compliance/reports-in-security-and-compliance.md)。
+環境の正常性の詳細については、これらのレポートとダッシュボードをご覧ください。 これらのレポートのデータは、組織がサービスを使用するOffice 365されます。 今のところ、監視およびアクションを実行できる機能について理解してください。 詳細については、「セキュリティ コンプライアンス [センターのレポート」を&してください](../../compliance/reports-in-security-and-compliance.md)。
 
 ****
 

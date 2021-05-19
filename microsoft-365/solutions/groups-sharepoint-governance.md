@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: グループとグループ間の設定のMicrosoft 365についてSharePoint
-ms.openlocfilehash: e1aeaca792fb551de503bd4c68256ccf14f45022
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 23e9553ce07514b18bafada5c93bcadab19806fe
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921038"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538161"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>設定グループとグループ間Microsoft 365の相互作用SharePoint
 

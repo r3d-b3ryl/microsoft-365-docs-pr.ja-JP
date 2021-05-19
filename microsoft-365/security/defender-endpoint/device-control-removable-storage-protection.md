@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Device Control リムーバブル 記憶域保護
+title: Microsoft Defender for Endpoint Device Control リムーバブル Storage保護
 description: ユーザーまたはコンピューター、または両方が未承認のリムーバブル 記憶域メディアを使用できない '機能を理解する
 keywords: リムーバブル 記憶域メディア
 search.product: eADQiWindows 10XVcnh
@@ -16,32 +16,90 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ec5cfa78852d65db808c4e853f90f5639df25d6f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: c9b97c2157ba8090628af23b2ab54cf38f04d8c6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300206"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538389"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control リムーバブル 記憶域保護
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage保護
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Defender for Endpoint Device Control Removable Storage Protection を使用すると、ユーザーまたはコンピューター、あるいはその両方が未承認のリムーバブル 記憶域メディアを使用できません。
+Microsoft Defender for Endpoint Device Control Removable Storage Protection を使用すると、ユーザーまたはコンピューター、または両方が未承認のリムーバブル 記憶域メディアを使用できません。
 
-**Microsoft Defender for Endpoint リムーバブル 記憶域保護**
+## <a name="protection-policies"></a>保護ポリシー
 
+### <a name="device-installation"></a>デバイスのインストール
 
-|ポリシー  |機能 |説明  |
-|---------|---------|---------|
-|デバイスのインストール    |  除外の付きまたは除外なしのインストールを防止する - さまざまなプロパティに基づいて特定のデバイスを許可します。詳細については、以下の「 [デバイスのプロパティ」セクションを](#device-properties) 参照してください。        |    コンピューター上で動作します。 同じコンピューターにログインするユーザーは、同じポリシーによって制限されます。 詳細については、「Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法 [」を参照してください](control-usb-devices-using-intune.md)。     |
-|リムーバブル 記憶域アクセス制御      | (1) 監査 読み取りまたは書き込みまたはさまざまなデバイスのプロパティに基づいてリムーバブル 記憶域へのアクセスを実行します。例外の場合と例外なし。 詳細については、以下の「 [デバイスのプロパティ」セクションを](#device-properties) 参照してください。 (2) 読み取りまたは書き込み、または除外なしのアクセスの実行を防止する - さまざまなデバイスプロパティに基づいて特定のデバイスを許可する。デバイスのプロパティの詳細については、以下の「 [デバイスのプロパティ」セクションを](#device-properties) 参照してください。     |     コンピューターまたはユーザーのどちらかまたは両方で動作します。特定のコンピューター上の特定のリムーバブル 記憶域への読み取り/書き込み/実行アクセスを実行する特定のユーザーのみを許可します。Windows の機能については、「リムーバブル 記憶域 [アクセス制御」を参照してください](device-control-removable-storage-access-control.md)。Mac の機能については、「macOS の [デバイス コントロール」を参照してください](mac-device-control-overview.md)。     |
-|エンドポイント DLP リムーバブル ストレージ      |    ユーザーがアイテムまたは情報をリムーバブル メディアまたは USB デバイスにコピーする監査または警告を表示または防止します。     |  詳細については [、「Microsoft Endpoint DLP」を参照してください](/compliance/endpoint-dlp-learn-about.md)。       |
-|BitLocker    |     BitLocker で保護されていないリムーバブル ドライブに書き込まれるデータをブロックする: 組織が所有するコンピューターで暗号化されていない限り、リムーバブル ドライブへのアクセスをブロックします。    |   詳細については、「BitLocker - リムーバブル [ドライブの設定」を参照してください](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings#bitlocker---removable-drive-settings.md)。      |
+**機能 -** さまざまなデバイスプロパティに基づいて除外の設定または除外なしでインストールを防止します。
+
+**説明**
+- コンピューター レベルで適用: ログオンしているユーザーに対して同じポリシーが適用されます。
+- MEM と GPO をサポートします。
+- 一覧に示[されている [デバイスのプロパティ](#device-properties)] がサポートされています。
+- デバイス の詳細については、「Windows Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法」[を参照してください](control-usb-devices-using-intune.md)。
+
+**サポートされているプラットフォーム**- Windows 10
+
+**説明**
+- コンピューター レベルで適用: ログオンしているユーザーに対して同じポリシーが適用されます
+- macOS 固有の情報については [、「macOS のデバイス コントロール」を参照してください](mac-device-control-overview.md)。
+ 
+**サポートされているプラットフォーム** - macOS Catalina 10.15.4+ (システム拡張機能が有効な場合)
+
+### <a name="removable-storage-access-control"></a>リムーバブル 記憶域アクセス制御
+
+**Capabilities**
+- *監査* さまざまなデバイス プロパティに基づくリムーバブル 記憶域への読み取りまたは書き込みまたは実行アクセス。除外の付きまたは除外なし。
+- *[防止]* 読み取りまたは書き込みまたは除外なしのアクセスを実行する - さまざまなデバイスプロパティに基づいて特定のデバイスを許可します。
+
+**説明**
+- コンピューターまたはユーザーのどちらかまたは両方で適用されます。特定のユーザーが特定のコンピューター上の特定のリムーバブル 記憶域への読み取り/書き込み/実行アクセスを実行できる唯一の許可。
+- MEM OMA-URI と GPO をサポートします。
+- 一覧に示[されている [デバイスのプロパティ](#device-properties)] がサポートされています。
+- この機能については、「リムーバブル Windows[アクセス制御」を参照してください](device-control-removable-storage-access-control.md)。
+
+**サポートされているプラットフォーム**- Windows 10
+
+**説明**
+- コンピューター レベルで適用: ログオンしているユーザーに対して同じポリシーが適用されます。
+- macOS 固有の情報については [、「macOS のデバイス コントロール」を参照してください](mac-device-control-overview.md)。
+ 
+**サポートされているプラットフォーム** - macOS Catalina 10.15.4+ (システム拡張機能が有効な場合)
+
+### <a name="windows-portable-device-access-control"></a>Windowsポータブル デバイス アクセス制御
+
+**機能**- ポータブル デバイスへの読み取りまたは書き [Windows](/windows-hardware/drivers/portable/)アクセスを拒否します 。たとえば、タブレット、iPhone。
+
+**説明**
+- コンピューターまたはユーザー、または両方で適用されます。
+- MEM OMA-URI と GPO をサポートします。
+
+**サポートされているプラットフォーム**- Windows 10
+
+### <a name="endpoint-dlp-removable-storage"></a>エンドポイント DLP リムーバブル ストレージ
+
+**機能** - ユーザーがアイテムまたは情報をリムーバブル メディアまたは USB デバイスにコピーするのを監査または警告または防止します。
+
+**説明**- エンドポイントデータ損失防止のWindows詳細 [については、「Microsoft 365」を参照してください](../../compliance/endpoint-dlp-learn-about.md)。
+
+**サポートされているプラットフォーム**- Windows 10
+
+### <a name="bitlocker"></a>BitLocker 
+
+**Capabilities**
+- 保護されていないリムーバブル ドライブに書き込まれるデータをBitLockerします。
+- 組織が所有するコンピューターで暗号化されていないリムーバブル ドライブへのアクセスをブロックする
+ 
+**説明**- 詳細については、「Windows – リムーバブル ドライブ [BitLocker」を参照設定。](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings)
+
+**サポートされているプラットフォーム**- Windows 10
 
 ## <a name="device-properties"></a>デバイスのプロパティ
 
-Microsoft Defender for Endpoint Device Control Removable Storage Protection を使用すると、以下の表に示すプロパティに基づいてリムーバブル 記憶域アクセスを制限できます。
+Microsoft Defender for Endpoint Device Control リムーバブル Storage保護を使用すると、以下の表に示すプロパティに基づいてリムーバブル 記憶域へのアクセスを制限できます。
 
 
 |プロパティ名  |適用可能なポリシー  |オペレーティング システムに適用される  |説明  |
@@ -52,9 +110,10 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection を�
 |ハードウェア ID     |     [Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法](control-usb-devices-using-intune.md)。リムーバブル 記憶域アクセス制御    |     Windows    |    システム内のデバイスを識別する文字列 (たとえば、USBSTOR\DiskGeneric_Flash_Disk______8.07)。 **注**: ハードウェア ID は一意ではありません。異なるデバイスが同じ値を共有する場合があります。|
 |インスタンス ID    | デバイスのインストール。リムーバブル 記憶域アクセス制御     |     Windows    |   文字列は、システム内のデバイスを一意に識別します (たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0      |
 |フレンドリ名     |     リムーバブル 記憶域アクセス制御    |   Windows      |    デバイスに接続されている文字列 (汎用フラッシュ ディスク USB デバイスなど)     |
-|ベンダー ID / 製品 ID     |  リムーバブル 記憶域アクセス制御       |   Windows Mac      |     ベンダー ID は、USB 委員会がベンダーに割り当てる 4 桁のベンダー コードです。 製品 ID は、ベンダーがデバイスに割り当てる 4 桁の製品コードです。ワイルドカードをサポートします。    |
-|シリアル番号Id     |     リムーバブル 記憶域アクセス制御    |      Windows Mac   |     たとえば <SerialNumberId>、002324B534BCB431B000058A</SerialNumberId>    |
+|ベンダー ID / 製品 ID     |  リムーバブル 記憶域アクセス制御       |   WindowsMac      |     ベンダー ID は、USB 委員会がベンダーに割り当てる 4 桁のベンダー コードです。 製品 ID は、ベンダーがデバイスに割り当てる 4 桁の製品コードです。ワイルドカードをサポートします。    |
+|シリアル番号Id     |     リムーバブル 記憶域アクセス制御    |      WindowsMac   |     たとえば <SerialNumberId>、002324B534BCB431B000058A</SerialNumberId>    |
 
 ## <a name="related-topic"></a>関連トピック
 
-- [Microsoft Defender for Endpoint Device Control リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)
+- [Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御](device-control-removable-storage-access-control.md)
+

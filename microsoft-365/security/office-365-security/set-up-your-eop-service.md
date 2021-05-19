@@ -15,12 +15,12 @@ ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 管理者は、オンプレミスの電子メール環境を保護するためにスタンドアロン Exchange Online Protection (EOP) をセットアップする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bbad39475f87be27a83edc0c27e2bbe46f8e39ac
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 63504dd2d729674fd84eff2fd5548c8d077cd1f1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206830"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538977"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>スタンドアロン EOP サービスのセットアップ
 
@@ -66,7 +66,7 @@ EOP サービスとの間のメール フローを設定する前に、受信者
 
 Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプレミスのメール サーバー間のメール フローを有効にします。 詳細な手順については、「コネクタをセットアップして、ユーザーと自分の電子メール Microsoft 365間でメールをルーティングする」[を参照してください](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。
 
-### <a name="how-do-you-know-this-task-worked"></a>このタスクの検証方法
+### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
 サービスと環境の間のメール フローを確認します。 詳細については、「Test [mail flow by validating your](/exchange/mail-flow-best-practices/test-mail-flow)Microsoft 365 コネクタ 」 を参照してください。
 
@@ -101,6 +101,6 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 - 送信電子メールのテストを実行する場合は、組織内のユーザーから Web ベースの電子メール アカウントに電子メールを送信し、メッセージが受信されたかを確認できます。
 
 > [!TIP]
-> セットアップが完了したら、EOP でスパムやマルウェアを削除するための追加の手順を実行する必要がなされません。 EOP はスパムやマルウェアを自動的に削除します。 ただし、ビジネス要件に基づいて設定を微調整できます。 詳細については、「スパム対策とマルウェア対策の保護」および「スプーフィング インテリジェンスの構成[」Office 365](anti-spam-and-anti-malware-protection.md)を[参照してください](learn-about-spoof-intelligence.md)。
+> セットアップが完了したら、EOP でスパムやマルウェアを削除するための追加の手順を実行する必要がなされません。 EOP はスパムやマルウェアを自動的に削除します。 ただし、ビジネス要件に基づいて設定を微調整できます。 詳細については[、「EOP](anti-spam-and-anti-malware-protection.md)でのスパム対策とマルウェア対策の保護」および「フィッシング対策保護」を参照[Microsoft 365。](anti-phishing-protection.md)
 >
 > サービスが実行されたので [、EOP](best-practices-for-configuring-eop.md)を設定した後の推奨設定と考慮事項について説明する EOP の構成に関するベスト プラクティスを参照することをお勧めします。

@@ -58,7 +58,7 @@
               href: m365d-pilot-simulate.md
             - name: 閉じて要約する
               href: m365d-pilot-close.md
-    - name: 作業の開始
+    - name: 概要
       items:
         - name: 概要
           href: get-started.md
@@ -88,55 +88,55 @@
           items:
             - name: 概要
               href: incidents-overview.md
-            - name: インシデントの優先度を設定する
+            - name: 優先度設定
               href: incident-queue.md
-            - name: インシデントを管理する
+            - name: 管理
               href: manage-incidents.md
-            - name: インシデント対応
+            - name: 調査
               items:
-                - name: インシデントを調査する
+                - name: 概要
                   href: investigate-incidents.md
-                - name: アラートを調査する
+                - name: アラート
                   href: investigate-alerts.md
-                - name: ユーザーを調査する
+                - name: ユーザー
                   href: investigate-users.md
-                - name: インシデント対応プレイブック
-                  href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
-                - name: 最初のインシデントに対応する
+            - name: 最初のインシデントに対応する
+              items:
+                - name: はじめに
+                  href: first-incident-overview.md
+                - name: 準備
+                  href: first-incident-prepare.md
+                - name: 手順 1. トリアージと分析
+                  href: first-incident-analyze.md
+                - name: 手順 2. 修復する
+                  href: first-incident-remediate.md
+                - name: 手順 3. 確認
+                  href: first-incident-post.md
+                - name: その他のインシデントの例
                   items:
-                    - name: はじめに
-                      href: first-incident-overview.md
-                    - name: 準備
-                      href: first-incident-prepare.md
-                    - name: 手順 1. トリアージと分析
-                      href: first-incident-analyze.md
-                    - name: 手順 2. 修復する
-                      href: first-incident-remediate.md
-                    - name: 手順 3. 確認
-                      href: first-incident-post.md
-                    - name: その他のインシデントの例
-                      items:
-                        - name: フィッシング詐欺メール
-                          href: first-incident-path-phishing.md
-                        - name: ID
-                          href: first-incident-path-identity.md
-            - name: メール通知を取得する
+                    - name: フィッシング詐欺メール
+                      href: first-incident-path-phishing.md
+                    - name: ID
+                      href: first-incident-path-identity.md
+            - name: インシデント対応プレイブック
+              href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
+            - name: メール通知
               href: get-incident-notifications.md
         - name: 自動調査および対応
           items:
-            - name: 自動調査および対応の概要
+            - name: 概要
               href: m365d-autoir.md
-            - name: 自動調査および対応機能の構成
+            - name: 機能の構成
               href: m365d-configure-auto-investigation-response.md
             - name: 修復アクション
               href: m365d-remediation-actions.md
-            - name: アクション センターにアクセスする
+            - name: アクション センターを使用する
               href: m365d-action-center.md
             - name: 修復アクションの表示と管理
               href: m365d-autoir-actions.md
-            - name: 自動調査の詳細と結果を表示する
+            - name: 詳細と結果の表示
               href: m365d-autoir-results.md
-            - name: 誤検知/負のアドレス
+            - name: 誤検知と陰性に対処する
               href: m365d-autoir-report-false-positives-negatives.md
         - name: 高度な検出
           items:

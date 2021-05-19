@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/11/2021
+ms.date: 05/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 265f32f5a24b982933ac6a876b244b10802cdd60
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 6d3f1e2b0986fe12f0bf318b53100ca31f1ed700
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345814"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538377"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
 
@@ -38,13 +38,13 @@ ms.locfileid: "52345814"
 |--|--|--|
 |*お前はここにいる!*| | |
 
-**エンドポイント用 Microsoft Defender への切 [り替えの準備フェーズへようこそ](switch-to-microsoft-defender-migration.md#the-migration-process)**。 
+**Defender for Endpoint への切り [替えの準備フェーズへようこそ](switch-to-microsoft-defender-migration.md#the-migration-process)**。 
 
 この移行フェーズには、次の手順が含まれます。
 
 1. [組織のデバイス全体で更新プログラムを取得して展開する](#get-and-deploy-updates-across-your-organizations-devices)
 
-2. [エンドポイントの Microsoft Defender を取得します](#get-microsoft-defender-for-endpoint)。
+2. [エンドポイントの Defender を取得します](#get-microsoft-defender-for-endpoint)。
 
 3. [サーバーへのアクセスを許可Microsoft Defender セキュリティ センター。](#grant-access-to-the-microsoft-defender-security-center)
 
@@ -52,7 +52,7 @@ ms.locfileid: "52345814"
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>組織のデバイス全体で更新プログラムを取得して展開する
 
-ベスト プラクティスとして、組織のデバイスとエンドポイントを最新の状態に保ちます。 既存のエンドポイント保護とウイルス対策ソリューションが最新であり、組織のオペレーティング システムとアプリにも最新の更新プログラムが含まれています。 これで、後で Microsoft Defender for Endpoint に移行して問題を回避Microsoft Defender ウイルス対策。
+ベスト プラクティスとして、組織のデバイスとエンドポイントを最新の状態に保ちます。 既存のエンドポイント保護とウイルス対策ソリューションが最新であり、組織のオペレーティング システムとアプリにも最新の更新プログラムが含まれています。 これで、Defender for Endpoint に移行した後で問題が発生し、問題が発生Microsoft Defender ウイルス対策。
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>既存のソリューションが最新の情報を提供する
 
@@ -74,24 +74,24 @@ ms.locfileid: "52345814"
 
 ## <a name="get-microsoft-defender-for-endpoint"></a>エンドポイントの Microsoft Defender を取得する
 
-組織のデバイスを更新したので、次の手順は、Microsoft Defender for Endpoint を取得し、ライセンスを割り当て、サービスがプロビジョニングされているのを確認します。
+組織のデバイスを更新したので、次の手順では、Defender for Endpoint を取得し、ライセンスを割り当て、サービスがプロビジョニングされているのを確認します。
 
-1. Microsoft Defender for Endpoint を今すぐ購入または試してみてください。 [無料試用版を開始するか、見積もりを要求します](https://aka.ms/mdatp)。 
+1. Defender for Endpoint を今すぐ購入または試してみてください。 [無料試用版を開始するか、見積もりを要求します](https://aka.ms/mdatp)。 
 
 2. ライセンスが適切にプロビジョニングされていることを確認します。 [ライセンスの状態を確認します](production-deployment.md#check-license-state)。
 
-3. グローバル管理者またはセキュリティ管理者として、Microsoft Defender for Endpoint の専用クラウド インスタンスをセットアップします。 「Microsoft [Defender for Endpoint setup: Tenant configuration」を参照してください](production-deployment.md#tenant-configuration)。
+3. グローバル管理者またはセキュリティ管理者として、Defender for Endpoint の専用クラウド インスタンスをセットアップします。 「Defender [for Endpoint setup: Tenant configuration」を参照してください](production-deployment.md#tenant-configuration)。
 
-4. 組織内のエンドポイント (デバイスなど) がプロキシを使用してインターネットにアクセスする場合は [、「Microsoft Defender for Endpoint setup: Network configuration」を参照してください](production-deployment.md#network-configuration)。
+4. 組織内のエンドポイント (デバイスなど) がプロキシを使用してインターネットにアクセスする場合は [、「Defender for Endpoint setup: Network configuration」を参照してください](production-deployment.md#network-configuration)。
  
 この時点で、セキュリティ管理者 Microsoft Defender セキュリティ センターとセキュリティオペレーターにアクセス権を付与する準備が整いました。 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 
 
 > [!NOTE]
-> このMicrosoft Defender セキュリティ センター Microsoft Defender for Endpoint ポータルと呼ばれる場合があります。. [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 
+> このMicrosoft Defender セキュリティ センター Defender for Endpoint ポータルと呼ばれる場合があります。 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 
 
 ## <a name="grant-access-to-the-microsoft-defender-security-center"></a>サーバーへのアクセスを許可Microsoft Defender セキュリティ センター
 
-このMicrosoft Defender セキュリティ センター ( ) は、Microsoft Defender for Endpoint の機能にアクセスして構成 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) する場所です。 詳細については、「概要」[を参照Microsoft Defender セキュリティ センター。](use.md)
+このMicrosoft Defender セキュリティ センター ( ) は、Defender for Endpoint の機能にアクセスして [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 構成する場所です。 詳細については、「概要」[を参照Microsoft Defender セキュリティ センター。](use.md)
 
 アクセス許可は、Microsoft Defender セキュリティ センターアクセス許可または役割ベースのアクセス制御 (RBAC) を使用して付与できます。 アクセス許可を細かく制御するには、RBAC を使用することをお勧めします。
 
@@ -111,19 +111,19 @@ ms.locfileid: "52345814"
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
-デバイスと Microsoft Defender for Endpoint 間の通信を有効にするには、プロキシとインターネットの設定を構成します。 次の表に、さまざまなオペレーティング システムと機能のプロキシとインターネット設定を構成するために使用できるリソースへのリンクを示します。
+デバイスと Defender for Endpoint 間の通信を有効にするには、プロキシとインターネットの設定を構成します。 次の表に、さまざまなオペレーティング システムと機能のプロキシとインターネット設定を構成するために使用できるリソースへのリンクを示します。
 
-|機能  | オペレーティング システム | 関連情報 |
+|機能  | オペレーティング システム | リソース |
 |--|--|--|
 |[エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR) |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)  |[コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md) |
 |EDR |[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-|EDR  |macOS: <br/>- 11.3.1 (Big Sur)<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)   |[macOS のエンドポイント用 Microsoft Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)  |
+|EDR  |macOS: <p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave)   |[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)  |
 |[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md) |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) |[Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
-|ウイルス対策 |macOS: <br/>- 11.3.1 (Big Sur)<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave) |[macOS のエンドポイント用 Microsoft Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections) |
-|ウイルス対策 |Linux: <br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS 以上の LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Microsoft Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections) |
+|ウイルス対策 |macOS: <p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave) |[macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections) |
+|ウイルス対策 |Linux: <p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS 以上の LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections) |
 
 ## <a name="next-step"></a>次の手順
 
-**おめでとう** ございます! エンドポイント用 Microsoft **Defender** への切り替えの [準備フェーズが完了しました](switch-to-microsoft-defender-migration.md#the-migration-process)。
+**おめでとう** ございます! Defender for Endpoint への **切** り替えの [準備フェーズが完了しました](switch-to-microsoft-defender-migration.md#the-migration-process)。
 
-- [[エンドポイント用 Microsoft Defender のセットアップ] に進みます](switch-to-microsoft-defender-setup.md)。
+- [[Defender for Endpoint] のセットアップに進みます](switch-to-microsoft-defender-setup.md)。

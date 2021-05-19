@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: be508e646a67f01887814a0e72170e438ee86212
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2c746a74899a34827e089f4c9c2f6ecc396bb69c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933063"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538773"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>ゼロデイの脆弱性を軽減する - 脅威と脆弱性の管理
 
@@ -44,6 +44,9 @@ ms.locfileid: "51933063"
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>ゼロデイの脆弱性に関する情報を検索する
 
 ゼロデイの脆弱性が見つかったら、この脆弱性に関する情報は、次のエクスペリエンスを通じてMicrosoft Defender セキュリティ センター。
+
+>[!NOTE]
+> 現在、0 日間の機能は、Windows製品 (Mac、Linux) では使用できません。ただし、今後追加される予定です。
 
 ### <a name="threat-and-vulnerability-management-dashboard"></a>脅威と脆弱性の管理ダッシュボード
 

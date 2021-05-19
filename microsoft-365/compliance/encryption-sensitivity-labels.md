@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
-ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
+ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52079260"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532088"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -65,7 +65,9 @@ ms.locfileid: "52079260"
 
 4.  ウィザードの **[暗号化]** ページで、次のいずれかのオプションを選択します。
     
-    - **ファイルが暗号化されている場合は暗号化を削除する**: このシナリオの詳細については、「[ラベルが適用された場合の既存の暗号化への影響](#what-happens-to-existing-encryption-when-a-labels-applied)」セクションを参照してください。 この設定により、ユーザーが十分な権限を持っていない場合に適用できない機密度ラベルが作成される可能性があることを理解することが重要です。
+    - **ファイルが暗号化されている場合は暗号を削除します**: このオプションは、Azure Information Protection の統合ラベル付けクライアントでのみでサポートされています。 このオプションを選択して組み込みのラベル付けを使用すると、そのラベルがアプリに表示されないか、表示されても暗号の変更は行われないことがあります。
+        
+        このシナリオの詳細については、[ をご覧ください。ラベルが適用された場合の既存の暗号化への影響については ](#what-happens-to-existing-encryption-when-a-labels-applied) のセクションをご覧ください。 この設定により、ユーザーが十分な権限を持っていない場合に適用できない機密度ラベルが作成される可能性があることを理解することが重要です。
     
     - **暗号化設定の構成**: 暗号化をオンにして、暗号化設定を表示します。
         
@@ -85,13 +87,17 @@ ms.locfileid: "52079260"
 
 そのコンテンツに秘密度ラベルが適用された際の既存の暗号への影響を次の表に示します:
 
-| | 暗号化: 選択されていない | 暗号化: 構成されている | 暗号化: 削除 |
+| | 暗号化: 選択されていない | 暗号化: 構成されている | 暗号化: <sup>\*</sup> を削除します。 |
 |:-----|:-----|:-----|:-----|
 |**ユーザーによって指定されたアクセス許可**|元の暗号化が維持されます|新しいラベルの暗号化が適用されます|元の暗号化が削除されます|
 |**保護テンプレート**|元の暗号化が維持されます|新しいラベルの暗号化が適用されます|元の暗号化が削除されます|
 |**管理者定義によるアクセス許可が適用されたラベル**|元の暗号化が削除されます|新しいラベルの暗号化が適用されます|元の暗号化が削除されます|
 
-新しいラベルの暗号化が適用された場合、または元の暗号化が削除された場合にそれが実際に実行されるのは、このアクションをサポートする次の使用権限または役割が、ラベルの適用を行うユーザーに付与されている場合のみです。
+**脚注:**
+
+<sup>\*</sup> Azure Information Protection の統合ラベル付けクライアントでのみサポートされています
+
+新しいラベルの暗号化が適用された場合、または元の暗号化が削除された場合、それが実際に実行されるのは、このアクションをサポートする使用権限または役割が、ラベルの適用を行うユーザーに付与されている場合のみです。
 
 - 「エクスポート」または「フル コントロール」の[使用権限](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。
 - [Rights Management 発行者または Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)の役割、または[スーパー ユーザー](/azure/information-protection/configure-super-users)。
@@ -206,7 +212,7 @@ ms.locfileid: "52079260"
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>常にフル コントロールを持つ Rights Management 発行者 (機密ラベルを適用するユーザー)
 
-秘密度ラベルの暗号化では、Azure Information Protection の Azure Rights Management サービスが使用されます。 ドキュメントやメールを保護するためにユーザーが暗号化を使用して秘密度ラベルを適用すると、そのユーザーはそのコンテンツに対する Rights Management 発行者になります。
+機密ラベルに対する暗号化にはMicrosoft Azure Information Protection から Microsoft Azure AD Rights Management サービスが使用されます。ユーザーがドキュメントやメールを保護するために暗号化を使用して機密ラベルを適用すると、そのユーザーはそのコンテンツに対する Rights Management 発行者になります。
 
 Rights Management 発行者には、ドキュメントまたはメールに対するフル コントロールのアクセス許可が必ず付与されます。これに加え、次のことが可能になります。
 
@@ -269,11 +275,11 @@ Outlook では、ユーザーがメッセージにアクセス許可を割り当
 
 - **[転送不可]**：受信者はそれを転送したり、印刷したり、コピーしたりすることができなくなります。 たとえば、Outlook クライアントでは、[転送] ボタン、[名前を付けて保存] および [印刷] メニュー オプションは使用できず、[宛先]、[CC]、または [BCC] ボックスで受信者を追加または変更することはできません。
     
-    このオプションの機能の詳細については、[メールで[転送しない] オプションを使ってを転送しないでください](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)を参照してください。
+    このオプションの機能の詳細については、[メールで[転送しない] オプションを使ってを転送しないでください](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)を参照してください。
 
 - **暗号化のみ使用**: 受信者には、[名前を付けて保存]、[エクスポート]、および [フル コントロール] を除くすべての使用権があります。 この利用権の組み合わせは、受信者に保護を解除できないという制限がないという意味です。 たとえば、受信者はメールからコピーし、印刷して、転送することができます。
     
-    このオプションの機能の詳細については、[メールで[暗号化のみ] オプションを使ってを転送しないでください](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)を参照してください。
+    このオプションの機能の詳細については、[メールで[暗号化のみ] オプションを使ってを転送しないでください](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)を参照してください。
 
 メールに添付されている暗号化されていない Office ドキュメントでは、自動的に同じ制限が継承されます。 [転送不可]のドキュメントに適用される使用権は、[コンテンツの編集]、[編集]、[保存]、[表示]、[開く]、[読み取り]、および [マクロの許可] です。 ユーザーが添付ファイルに別の使用権を要求する場合、または添付ファイルがこの継承された保護をサポートする Office ドキュメントでない場合は、メールに添付する前にファイルを暗号化する必要があります。
 

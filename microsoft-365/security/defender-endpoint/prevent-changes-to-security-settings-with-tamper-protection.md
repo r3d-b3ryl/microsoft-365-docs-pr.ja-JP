@@ -16,17 +16,15 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 9a2f37aa0a2a17646862a7a7e1bd8b34685e76b8
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/17/2021
+ms.openlocfilehash: ed9eb425d718a2dbdaa2cdb3ab1e6899c9870124
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274714"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538897"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
@@ -62,14 +60,12 @@ ms.locfileid: "52274714"
 
 改ざん防止では、セキュリティ設定を表示できない場合があります。 また、改ざん防止は、サードパーティのウイルス対策アプリがアプリに登録する方法Windows セキュリティではありません。 組織が E5 のWindows 10 Enterprise場合、個々のユーザーは改ざん防止の設定を変更できます。このような場合、改ざん防止はセキュリティ チームによって管理されます。
 
-
-
 ### <a name="what-do-you-want-to-do"></a>目的に合ったトピックをクリックしてください
 
 | このタスクを実行するには... | このセクションを参照してください。 |
 |:---|:---|
-| タンパープロテクションをオン (またはオフ) にMicrosoft Defender セキュリティ センター <p>テナント全体の改ざん防止を管理する | [サーバーを使用して組織の改ざん防止を管理Microsoft Defender セキュリティ センター](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) |
-| Intune を使用して組織のすべてまたは一部のタンパープロテクションをオン (またはオフ) にする <p>組織内の改ざん防止設定を微調整する | [Intune を使用して組織の改ざん防止を管理する](#manage-tamper-protection-for-your-organization-using-intune) |
+| テナント全体の改ざん防止を管理する <p>タンパープロテMicrosoft Defender セキュリティ センターオン/オフを切り替えます。 | [サーバーを使用して組織の改ざん防止を管理Microsoft Defender セキュリティ センター](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) |
+| 組織内の改ざん防止設定を微調整する <p>Intune (Microsoft エンドポイント マネージャー) を使用して、タンパープロテクションのオンとオフを切り替えます。 この方法では、一部またはすべてのユーザーに対して改ざん防止を構成できます。 | [Intune を使用して組織の改ざん防止を管理する](#manage-tamper-protection-for-your-organization-using-intune) |
 | Configuration Manager を使用して組織の改ざん防止を有効 (または無効にする) | [Configuration Manager バージョン 2006 でテナント接続を使用して組織の改ざん防止を管理する](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006) |
 | 個々のデバイスのタンパープロテクションをオン (またはオフ) にする | [個々のデバイスで改ざん防止を管理する](#manage-tamper-protection-on-an-individual-device) |
 | デバイスでの改ざんの試みについての詳細を表示する | [改ざんの試行に関する情報を表示する](#view-information-about-tampering-attempts) |
@@ -80,29 +76,24 @@ ms.locfileid: "52274714"
 
 次の表に、メソッド、ツール、依存関係の詳細を示します。
 
-
-
-|     タンパープロテクションを有効にする方法                                         |     MAPS への依存 (クラウドによる保護)    |
-|------------------------------------------------------------------------------|--------------------------------------------------------|
-|     Microsoft Intune                                                         |     いいえ                                                 |
-| Microsoft Endpoint Configuration Manager + テナント接続                     |     いいえ                                                 |
-|     Microsoft Defender for Endpoint portal (securitycenter.microsoft.com)    |     はい                                                |
-|     Microsoft 365Defender ポータル (security.microsoft.com)                   |     はい                                                |
+| タンパープロテクションを有効にする方法  | MAPS への依存 (クラウドによる保護)    |
+|:----|:----|
+| Microsoft Intune  | いいえ |
+| Microsoft Endpoint Configuration Manager + テナント接続  |     いいえ  |
+| Microsoft Defender セキュリティ センター ( [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) )    |     はい |
+| Microsoft 365 セキュリティ センター ( [https://security.microsoft.com](https://security.microsoft.com) )  |     はい  |
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>サーバーを使用して組織の改ざん防止を管理Microsoft Defender セキュリティ センター
 
 タンパープロテクションは、テナントのパスワード () を使用してオンまたはMicrosoft Defender セキュリティ センターできます [https://securitycenter.windows.com](https://securitycenter.windows.com) 。 以下に注意点を示します。
 
-- 現時点では、新しい展開では、Microsoft Defender セキュリティ センターでタンパープロテクションを管理するオプションがオンになっています。 既存の展開では、改ざん防止はオプトインベースで利用できます。近い将来、この方法を既定の方法にする予定です。 (オプトインするには、Microsoft Defender セキュリティ センターを選択 **設定**  > **高度な機能**  > **タンパープロテクション**.) 
+- 現時点では、新しい展開では、Microsoft Defender セキュリティ センターでタンパープロテクションを管理するオプションがオンになっています。 既存の展開では、改ざん防止はオプトインベースで利用できます。近い将来、既定の方法でオプトインを行う予定です。 (オプトインするには、Microsoft Defender セキュリティ センターを選択 **設定**  > **高度な機能**  > **タンパープロテクション**.) 
 
 - 改ざん防止を管理Microsoft Defender セキュリティ センター、Intune またはテナント接続方法を使用する必要があります。
 
 - Microsoft Defender セキュリティ センター でタンパープロテクションを管理すると、この設定はテナント全体に適用され、Windows 10、Windows Server 2016、または Windows Server 2019 を実行しているすべてのデバイスに影響します。 タンパープロテクションを微調整するには (一部のデバイスではタンパープロテクションをオンにし、他のデバイスではオフにするなど [)、Intune](#manage-tamper-protection-for-your-organization-using-intune) または Configuration Manager をテナント接続で [使用します](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)。
 
 - ハイブリッド環境がある場合、Intune で構成されたタンパープロテクション設定は、Intune で構成された設定よりも優先Microsoft Defender セキュリティ センター。 
-
-
-
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-defender-security-center"></a>ユーザーの改ざん防止を管理するための要件Microsoft Defender セキュリティ センター
 
@@ -133,7 +124,7 @@ ms.locfileid: "52274714"
 
 ## <a name="manage-tamper-protection-for-your-organization-using-intune"></a>Intune を使用して組織の改ざん防止を管理する
 
-組織のセキュリティ チームの一員であり、サブスクリプションに[Intune](/intune/fundamentals/what-is-intune)が含まれる場合は、Microsoft エンドポイント マネージャー 管理センター ポータルで組織の改ざん防止を有効または[無効](https://endpoint.microsoft.com)にできます。 タンパープロテクションの設定を微調整する場合は、Intune を使用します。 たとえば、一部のデバイスでタンパープロテクションを有効にするが、すべてではない場合は、Intune を使用します。
+組織のセキュリティ チームの一員であり、サブスクリプションに[Intune](/intune/fundamentals/what-is-intune)が含まれる場合は、Microsoft エンドポイント マネージャー 管理センター ( ) で組織の改ざん防止をオン (またはオフ) にできます [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 。 タンパープロテクションの設定を微調整する場合は、Intune を使用します。 たとえば、一部のデバイスでタンパープロテクションを有効にするが、すべてではない場合は、Intune を使用します。
 
 ### <a name="requirements-for-managing-tamper-protection-in-intune"></a>Intune でタンパープロテクションを管理するための要件
 
@@ -179,12 +170,12 @@ WINDOWS 10 OS  [1709、1803、](/windows/release-health/status-windows-10-1709)�
 
 Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)を使用している場合は、テナント接続というメソッドを使用して、Windows 10、Windows Server 2016、および Windows Server 2019 のタンパープロテクション設定を *管理できます*。 テナント接続を使用すると、オンプレミス専用の Configuration Manager デバイスを Microsoft エンドポイント マネージャー 管理センターに同期し、エンドポイント セキュリティ構成ポリシーを & デバイスのオンプレミス コレクションに配信できます。
 
-![Windowsのセキュリティ エクスペリエンスエンドポイント マネージャー](images/win-security- exp-policy-endpt-security.png)
+:::image type="content" source="images/win-security- exp-policy-endpt-security.png" alt-text="Windows セキュリティの経験エンドポイント マネージャー":::
 
 > [!NOTE]
 > この手順を使用して、サーバー 2019 で実行されているデバイスWindows 10、Windowsを拡張できます。 この手順で説明されているリソースの前提条件と他の情報を必ず確認してください。
 
-1. テナント接続を設定します。 このヘルプについては、「テナント接続: [Microsoft エンドポイント マネージャー同期とデバイスアクション」を参照してください](/mem/configmgr/tenant-attach/device-sync-actions)。
+1. テナント接続を設定します。 詳細については、「テナント接続Microsoft エンドポイント マネージャー:デバイスの同期と[デバイスの操作」を参照してください](/mem/configmgr/tenant-attach/device-sync-actions)。
 
 2. 管理センター [でMicrosoft エンドポイント マネージャー[](https://go.microsoft.com/fwlink/?linkid=2109431)**エンドポイント** セキュリティ ウイルス対策] に移動し、[+ ポリシーの作成  >  **] を選択します**。<br/> 
    - [プラットフォーム **] ボックスの** 一覧で、[Windows 10] **Windows (ConfigMgr) を選択します**。  
@@ -219,8 +210,6 @@ Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/
 2. [**ウイルス対策&ウイルス**  >  **対策] を選択&の設定を選択します**。
 
 3. タン **パープロテクションを** **On または** Off に **設定します**。
-
-
 
 ## <a name="view-information-about-tampering-attempts"></a>改ざんの試行に関する情報を表示する
 

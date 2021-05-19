@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: グループ内のコラボレーション ツールのライフサイクル ガバナンス オプションに関するMicrosoft 365
-ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7d88618b75ef731bf38df029970efdc05f3eea5a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907930"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538821"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>グループとグループの組織とライフサイクルのガバナンスMicrosoft 365計画Microsoft Teams
 
@@ -80,3 +81,5 @@ Microsoft 365グループには、組織が必要とするガバナンス機能�
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
+
+[元従業員を削除し、データをセキュリティで保護する](/microsoft-365/admin/add-users/remove-former-employee)

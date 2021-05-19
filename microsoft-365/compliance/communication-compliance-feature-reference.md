@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1921c0985128b49e3f8e11a29df8bc75cdbda829
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: dcae50150eb3b21e65e68a5cea376a0cdef31a65
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114383"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538449"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信コンプライアンス機能リファレンス
 
@@ -482,7 +482,7 @@ OCR が有効になっているポリシーの保留中のアラートを確認�
 場合によっては、ユーザーアクティビティとコミュニケーションの監督を証明するために、規制またはコンプライアンス監査人に情報を提供する必要があります。 この情報は、定義済みの組織ポリシーに関連付けられているすべてのアクティビティの概要、または通信コンプライアンス ポリシーが変更された場合にいつでも使用できます。 通信コンプライアンス ポリシーには、内部または外部の監査に対する完全な準備を行う組み込みの監査証跡があります。 作成、編集、および削除の各アクションの詳細な監査履歴は、監督手順の証明を提供するために、通信ポリシーによってキャプチャされます。
 
 >[!Important]
->通信コンプライアンス イベントが記録される前に、組織で監査を有効にする必要があります。 監査を有効にするには、「監査ログ [を有効にする」を参照してください](communication-compliance-configure.md#step-2-required-enable-the-audit-log)。
+>通信コンプライアンス イベントが記録される前に、組織で監査を有効にする必要があります。 監査を有効にするには、「監査ログ [を有効にする」を参照してください](communication-compliance-configure.md#step-2-required-enable-the-audit-log)。 アクティビティが Microsoft 365 監査ログにキャプチャされたイベントをトリガーする場合、これらのイベントを通信コンプライアンス ポリシーで表示するには、最大で 48 時間かかる場合があります。
 
 通信コンプライアンス ポリシー更新アクティビティを表示するには、任意の **ポリシーのメイン** ページで [ポリシー更新プログラムのエクスポート] コントロールを選択します。 更新アクティビティをエクスポートするには、 *グローバル管理者* または *通信コンプライアンス管理者* の役割を割り当てる必要があります。 このアクションは、次の情報を含む.csv形式で監査ファイルを生成します。
 

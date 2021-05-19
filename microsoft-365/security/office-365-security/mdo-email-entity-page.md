@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5 および P1 および P2 のお客様は、電子メール エンティティ ページを含む各電子メールの 360 度のビューを取得できます。
-ms.openlocfilehash: 8b531980852336679aad5f2013d63269c238e49c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933363"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539097"
 ---
 # <a name="the-email-entity-page"></a>メール エンティティ ページ
 
@@ -34,7 +34,7 @@ microsoft Defender for Office 365 (または MDO) E5、および MDO P1 と P2 �
 
 ## <a name="reach-the-email-entity-page"></a>電子メール エンティティ ページにアクセスする
 
-既存の Office セキュリティとコンプライアンス センター (protection.office.com) または新しい Microsoft 365 セキュリティ センター (security.microsoft.com) のいずれかを使用すると、電子メール エンティティ ページを表示して使用できます。
+既存のセキュリティ & コンプライアンス センター (protection.office.com) または新しい Microsoft 365 セキュリティ センター (security.microsoft.com) のいずれかを使用すると、電子メール エンティティ ページを表示して使用できます。
 
 |中央|URL|ナビゲーション|
 |---|---|---|

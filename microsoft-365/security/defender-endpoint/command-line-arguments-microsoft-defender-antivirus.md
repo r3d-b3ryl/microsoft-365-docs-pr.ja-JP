@@ -12,20 +12,17 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ksarens
 manager: dansimp
-ms.date: 03/19/2021
+ms.date: 05/17/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 85fb60d8d4504ba3a4aa8744c1183d094da01a9b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: eb7fa7fdf5b88bd9361176003817116bcbb1a087
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274750"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538905"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>コマンド ライン Microsoft Defender ウイルス対策を使用してmpcmdrun.exeを構成および管理する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
@@ -35,13 +32,15 @@ ms.locfileid: "52274750"
 
 > [!NOTE]
 > 管理者レベルのバージョンのコマンド プロンプトを開く必要がある場合があります。 [スタート] メニューの **[コマンド プロンプト]** を検索する場合は、[管理者として **実行] を選択します**。
-> 更新された Microsoft Defender プラットフォーム バージョンを実行している場合は、次 `**MpCmdRun**` の場所から実行します `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` 。
+> 更新された Microsoft Defender プラットフォーム バージョンを実行している場合は、次 `**MpCmdRun**` の場所から実行します `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` 。
+> マルウェア対策プラットフォームの詳細については、「更新プログラムとベースラインMicrosoft Defender ウイルス対策[を参照してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
-ユーティリティには、次のコマンドがあります。
+MpCmdRun ユーティリティは、次の構文を使用します。
 
 ```console
 MpCmdRun.exe [command] [-options]
 ```
+
 次に例を示します:
 
 ```console
@@ -51,7 +50,7 @@ MpCmdRun.exe -Scan -ScanType 2
 | コマンド  | 説明   |
 |:----|:----|
 | `-?` **または** `-h`   | このツールで使用可能なすべてのオプションを表示する |
-| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | 悪意のあるソフトウェアをスキャンします。 **ScanType の値** は **、構成** に応じて 0 **Default、-1** クイック スキャン **、-2** フル スキャン **、-3** ファイルおよびディレクトリ のカスタム スキャンです。  CpuThrottling は、ポリシーから構成された CPU 調整を受け入れ |
+| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | 悪意のあるソフトウェアをスキャンします。 **ScanType の値は次** のとおりです。<p>**0** 構成に応じて既定<p>**-1** クイック スキャン<p>**-2** フル スキャン<p>**-3** ファイルとディレクトリのカスタム スキャン。<p>CpuThrottling は、ポリシーから構成された CPU 調整を受け入れ |
 | `-Trace [-Grouping #] [-Level #]` | 診断トレースを開始する |
 | `-GetFiles [-SupportLogLocation <path>]` | サポート情報を収集します。 「診断[データの収集」を参照](collect-diagnostic-data.md)してください。  |
 | `-GetFilesDiagTrack`  | と同 `-GetFiles` じですが、一時的な DiagTrack フォルダーへの出力 |
@@ -71,7 +70,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 |エラー メッセージ | 考えられる理由
 |:----|:----|
-| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | サービスMicrosoft Defender ウイルス対策無効になっています。 サービスを有効にし、もう一度やり直してください。 <br>   **注:** 1909 Windows 10以前、および Windows Server 2019 以前の場合、このサービスは "Windows Defender ウイルス対策" サービスと呼ばされました。|
+| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | サービスMicrosoft Defender ウイルス対策無効になっています。 サービスを有効にし、もう一度やり直してください。 <br>   **注:** 1909 Windows 10以前で、サーバー 2019 Windows以前の場合、サービスは以前は Windows Defender ウイルス対策 サービス *と呼* ばばされています。|
 | `0x80070667` | このコマンドは、バージョン 1607 以前Windows 10または以前のコンピューター `-ValidateMapsConnection` Windows Server 2016実行しています。 バージョン 1703 以降Windows 10サーバー 2019 以降Windowsコマンドを実行します。|
 | `'MpCmdRun' is not recognized as an internal or external command, operable program or batch file.` | ツールは、次のいずれかから実行する必要があります (プラットフォームの更新プログラムは 3 月を除いて毎月行うので、異なる `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` `2012.4-0` 場合があります)|
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070005 httpcode=450)` | 十分な特権ではありません。 管理者としてコマンド プロンプト (cmd.exe) を使用します。|

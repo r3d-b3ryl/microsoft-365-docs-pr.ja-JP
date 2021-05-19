@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、フィッシング対策の保護機能について、Exchange Online Protection (EOP) と Microsoft Defender for Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a100e28ddee1629b2fe35e28742a43b891d13e57
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 290f5f7797d987fb65a99e3f9e656bfec4cf83f3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570614"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538341"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -53,9 +53,11 @@ ms.locfileid: "51570614"
 
 EOP (つまり、microsoft Defender Microsoft 365を使用しない組織Office 365) には、フィッシングの脅威から組織を保護するのに役立つ機能が含まれている。
 
-- **スプーフィング インテリジェンス**: 内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については [、「EOP でスプーフィング インテリジェンスを構成する」を参照してください](learn-about-spoof-intelligence.md)。
+- **スプーフィン** グ インテリジェンス: スプーフィング インテリジェンスインサイトを使用して、外部ドメインおよび内部ドメインからのメッセージで検出されたスプーフィングされた送信者を確認し、検出された送信者を手動で許可またはブロックします。 詳細については [、「EOP のスプーフィング インテリジェンスインサイト」を参照してください](learn-about-spoof-intelligence.md)。
 
-- **EOP** のフィッシング対策ポリシー : スプーフィング インテリジェンスをオンまたはオフにし、Outlook で認証されていない送信者 ID をオンまたはオフにし、ブロックされたスプーフィングされた送信者のアクションを指定します (迷惑メール フォルダーまたは検疫に移動)。 詳細については [、「EOP でフィッシング対策ポリシーを構成する」を参照してください](configure-anti-phishing-policies-eop.md)。
+- **EOP** のフィッシング対策ポリシー : スプーフィング インテリジェンスをオンまたはオフにし、Outlook で認証されていない送信者 ID をオンまたはオフにし、ブロックされたスプーフィングされた送信者のアクションを指定します。 詳細については [、「EOP でフィッシング対策ポリシーを構成する」を参照してください](configure-anti-phishing-policies-eop.md)。
+
+- **テナント許可/** ブロック一覧でスプーフィングされた送信者を許可またはブロックする : スプーフィング インテリジェンスインサイトの評決を上書きすると、スプーフィングされた送信者は、テナント許可/ブロック一覧の [スプーフィング] タブにのみ表示される手動許可またはブロックエントリになります。 スプーフィング インテリジェンスによってスプーフィング送信者が検出される前に、スプーフィング送信者の許可エントリまたはブロックエントリを手動で作成することもできます。 詳細については [、「Manage the Tenant Allow/Block List in EOP」を参照してください](tenant-allow-block-list.md)。
 
 - **暗黙的な** 電子メール認証 : EOP は、送信者評価、送信者履歴、受信者の履歴、行動分析などの高度な手法を使用して、受信メール [(SPF、DKIM、](set-up-spf-in-office-365-to-help-prevent-spoofing.md)および [DMARC)](use-dmarc-to-validate-email.md)の標準的な電子メール認証チェックを強化し、偽造された送信者を識別するのに役立ちます。 [](use-dkim-to-validate-outbound-email.md) 詳細については、「[Microsoft 365 でのメール認証](email-validation-and-authentication.md)」をご覧ください。
 
@@ -63,7 +65,7 @@ EOP (つまり、microsoft Defender Microsoft 365を使用しない組織Office 
 
 Microsoft Defender for Office 365 には、次のより高度なフィッシング対策機能が含まれています。
 
-- **microsoft Defender for Office 365 の** フィッシング対策ポリシー: 新しいカスタム ポリシーの作成、偽装対策設定の構成 (ユーザーとドメインの偽装からの保護)、メールボックス インテリジェンス設定、および高度なフィッシングの高度なしきい値の調整が可能です。 詳細については[、「Microsoft Defender でフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)を構成する」を参照Office 365。 EOP のフィッシング対策ポリシーと Office 365 用 Defender のフィッシング対策ポリシーの違いの詳細については、「Microsoft 365 のフィッシング対策ポリシー」[を参照してください](set-up-anti-phishing-policies.md)。
+- **microsoft Defender for Office 365** のフィッシング対策ポリシー: 特定のメッセージ送信者と送信者ドメイン、メールボックス インテリジェンス設定、および調整可能な高度なフィッシングしきい値に対する偽装保護設定を構成します。 詳細については[、「Microsoft Defender でフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)を構成する」を参照Office 365。 EOP のフィッシング対策ポリシーと Office 365 用 Defender のフィッシング対策ポリシーの違いの詳細については、「Microsoft 365 のフィッシング対策ポリシー」[を参照してください](set-up-anti-phishing-policies.md)。
 
 - **キャンペーン ビュー**: 機械学習などのヒューリスティックは、サービス全体と組織に対する協調フィッシング攻撃に関連するメッセージを特定して分析します。 詳細については[、「Microsoft Defender for microsoft Defender のキャンペーン ビュー」を参照Office 365。](campaigns.md)
 
