@@ -120,6 +120,10 @@
  
 ##### [構成]()
 ###### [iOS 機能の構成](ios-configure-features.md)
+
+##### [トラブルシューティング]()
+###### [問題のトラブルシューティング](ios-troubleshoot.md)
+
 ##### [プライバシー](ios-privacy.md)
  
  
