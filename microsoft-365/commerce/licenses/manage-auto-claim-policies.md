@@ -165,4 +165,4 @@ ms.locfileid: "52331648"
 
 [ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md) (記事)\
 [サブスクリプション ライセンスを購入または削除する](buy-licenses.md) (記事)\
-[サブスクリプションとライセンスを理解する](subscriptions-and-licenses.md) (記事)\
+[サブスクリプションとライセンスを理解する](subscriptions-and-licenses.md) (記事)

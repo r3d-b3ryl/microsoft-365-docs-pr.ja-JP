@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: ユーザー アカウントを削除する方法について説明します。 ユーザーの電子メールとコンテンツの管理方法をOneDriveします。 また、製品ライセンスを保持するか、支払いを停止するか決定します。
-ms.openlocfilehash: d40f70534499b08073278ffc2bed2b098ae1c4da
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: f4b1e0b1fb591d369cc09010db86dd995d7d4896
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860739"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535976"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
@@ -87,7 +87,7 @@ ms.locfileid: "51860739"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。  
 
-2. 削除するユーザーの名前を選択し、[**その他のオプション**] (**...**) を選択し、[**ユーザー の削除**] を選択します。
+2. 削除するユーザーの名前を選択し、3 つのドット (その他のアクション) を選択し、[ユーザーの削除]  **を選択します**。
 
    これによりユーザーのアカウントは削除されますが、**ライセンスの支払いは継続します**。 ライセンスの支払いを停止するには、次の手順を参照してください。  または、ライセンスを別のユーザーに割り当てることができます。 ライセンスが自動的に別のユーザーに割り当てられることはありません。
 
@@ -155,7 +155,7 @@ ms.locfileid: "51860739"
 
 ## <a name="delete-many-users-at-the-same-time"></a>多数のユーザーを同時に削除する
 
-[Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser) PowerShell コマンドレットを参照してください。
+[Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell コマンドレットを参照してください。
 
 ## <a name="fix-issues-with-deleting-a-user"></a>ユーザーの削除に関する問題を解決する
 

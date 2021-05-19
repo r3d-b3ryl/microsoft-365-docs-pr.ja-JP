@@ -1,23 +1,24 @@
 ---
 title: プエルトリコの支払い情報
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e34ca304ffe9c59440dac2e24d18a8c040323e41
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1fdcbba41155eecf4842a7dad76635195e9e58f7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273034"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536312"
 ---
 # <a name="payment-information-for-puerto-rico"></a>プエルトリコの支払い情報
 
@@ -31,4 +32,4 @@ ms.locfileid: "52273034"
 **ブランチ:** ダラス  
 **SWIFT コード:** BOFAUS3N  
 **アカウント番号:** 4426587954  
-**アカウント名:** Microsoft  
+**アカウント名:** Microsoft

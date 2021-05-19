@@ -20,12 +20,12 @@ search.appverid: MET150
 description: サブスクリプションを手動で変更するには、新しいサブスクリプションを購入し、両方のサブスクリプションがリストされアクティブに設定されます。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 4935301c6d2a530f34d628f946032b7007e5c907
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345180"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536108"
 ---
 # <a name="change-plans-manually"></a>手動でプランを変更する
 
@@ -94,7 +94,7 @@ OR
 
 2. 既存のライセンスを置き換えるユーザーの名前の横にある円を選択します。
 
-3. 上部の [その **他のオプション** ] (**... ) を** 選択し、[製品ライセンスの **管理] を選択します**。
+3. 上部で 3 つのドット (その他のアクション) を選択し、[製品ライセンスの管理 **] を選択します**。
 
 4. Select **Replace existing product license assignments** \> **Next**.
 

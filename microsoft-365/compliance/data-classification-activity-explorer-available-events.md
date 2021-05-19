@@ -17,19 +17,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: アクティビティ エクスプローラーで使用できるラベル付けアクションの一覧。
-ms.openlocfilehash: ed51c908d6968e3aeae0adbe06d9ba55887bcf83
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+description: アクティビティ エクスプローラーで使用できるラベル付けアクティビティの一覧。
+ms.openlocfilehash: d4f6884ad39b16aeb0345f0c976d6ad87f03c05a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51902952"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532256"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>アクティビティ エクスプローラーで使用できるアクティビティのラベル付け
 
 ## <a name="sensitivity-label-applied"></a>適用される感度ラベル
 
-このイベントは、ラベル付けされていないドキュメントにラベルが付いた場合や、ラベル付きメールが送信される度に生成されます。 
+このイベントは、ラベル付けされていないドキュメントにラベルが付いた場合や、電子メールが感度ラベル付きで送信されるごとに生成されます。 
 
 - これは、ネイティブ アプリケーションおよび Web アプリケーションOffice保存時にキャプチャされます。 
 - Azure Information Protection アドインで発生した時点でキャプチャされます。 
@@ -50,7 +50,7 @@ ms.locfileid: "51902952"
 
 ## <a name="sensitivity-label-changed"></a>感度ラベルの変更
 
-このイベントは、ドキュメントまたは電子メールでラベルが更新されるごとに生成されます。
+このイベントは、ドキュメントまたは電子メールで感度ラベルが更新されるごとに生成されます。
 
 - AIP Unified クライアント、Unified Scanner、MIP SDK ソースの場合 *、AIP* アップグレード ラベルとダウングレード ラベル アクションはアクティビティ エクスプローラー ラベルに *マップされます*。 
 
@@ -75,7 +75,7 @@ ms.locfileid: "51902952"
 
 ## <a name="sensitivity-label-removed"></a>[感度ラベルの削除]
 
-このイベントは、ファイルまたはドキュメントからラベルが削除されるごとに生成されます。
+このイベントは、ファイルまたはドキュメントから感度ラベルが削除されるごとに生成されます。
 
 - このイベントは、ネイティブ アプリケーションおよび web アプリケーションOffice保存時にキャプチャされます。
 - Azure Information Protection アドインで発生した時点でキャプチャされます。 
@@ -97,7 +97,7 @@ ms.locfileid: "51902952"
 
 ## <a name="sensitivity-label-file-read"></a>感度ラベル ファイルの読み取り
 
-このイベントは、ラベル付きまたは保護されたドキュメントが開くごとに生成されます。
+このイベントは、ラベル付きまたは保護されたドキュメントが開く度に生成されます。
 
 |ソース  |アクティビティ エクスプローラーで報告される | 注  |
 |---------|---------|---------| 
@@ -113,7 +113,7 @@ ms.locfileid: "51902952"
 |MCAS     |no         |         |
 
 
-## <a name="sensitivity-label-files-discovered"></a>検出された感度ラベル ファイル
+## <a name="files-discovered"></a>検出されたファイル
 
 このイベントは、AIP スキャナーを使用してさまざまな場所で機密データをスキャンし、ファイルを検索するときに、ファイルが検出される度に生成されます。
 
@@ -149,7 +149,7 @@ ms.locfileid: "51902952"
 |MCAS     |no         |         |
 
 
-## <a name="sensitivity-label-file-removed"></a>感度ラベル ファイルが削除されました
+## <a name="file-removed"></a>削除されたファイル
 
 このイベントは、AIP スキャナーが以前にスキャンしたファイルが削除されたと検出する度に生成されます。
 
@@ -166,7 +166,7 @@ ms.locfileid: "51902952"
 |Power BIと Web         |該当なし  |
 |MCAS     |該当なし        |         |
 
-### <a name="sensitivity-label-protection-applied"></a>適用される感度ラベル保護
+### <a name="protection-applied"></a>適用される保護
 
 このイベントは、ラベルを持つアイテムに手動で追加される初めての保護が生成されます。
 
@@ -183,7 +183,7 @@ ms.locfileid: "51902952"
 |Power BIと Web         |該当なし            |
 |MCAS     |該当なし        |         |
 
-## <a name="sensitivity-label-protection-changed"></a>ラベルの保護が変更された
+## <a name="protection-changed"></a>保護の変更
 
 このイベントは、ラベルのないドキュメントの保護が手動で変更される度に生成されます。
 
@@ -200,7 +200,7 @@ ms.locfileid: "51902952"
 |Power BIと Web         |該当なし            |
 |MCAS     |該当なし        |
 
-## <a name="sensitivity-label-protection-removed"></a>ラベルの保護が削除された
+## <a name="protection-removed"></a>保護が削除されました
 
 このイベントは、ラベルのないドキュメントの保護が手動で変更される度に生成されます。
 
@@ -217,9 +217,9 @@ ms.locfileid: "51902952"
 |Power BIと Web         |該当なし            |
 |MCAS     |該当なし        |
 
-## <a name="sensitivity-label-dlp-policy-matched"></a>一致した感度ラベル DLP ポリシー
+## <a name="dlp-policy-matched"></a>DLP ポリシーの一致
 
-このイベントは、DLP ポリシーが一致する度に生成されます。
+このイベントは、ドキュメントまたは電子メールで DLP ポリシーが一致する度に生成されます。
 
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
@@ -247,9 +247,9 @@ ms.locfileid: "51902952"
 
 ## <a name="retention-label-applied"></a>アイテム保持ラベルの適用 
 
-このイベントは、ラベル付けされていないドキュメントにラベルが付いた場合や、ラベル付きメールが送信される度に生成されます。
+このイベントは、ラベル付けされていないドキュメントにラベルが付いた場合や、保持ラベル付きメールが送信されるごとに生成されます。
 
-- これは、ネイティブ アプリケーションおよび Web アプリケーションOffice保存時にキャプチャされます。
+- ドキュメントの保存時と電子メールの送信時にキャプチャされます。
 
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
@@ -261,7 +261,7 @@ ms.locfileid: "51902952"
 
 このイベントは、ドキュメントまたは電子メールでラベルが更新されるごとに生成されます。
 
-- 保存時にキャプチャされます。
+- ドキュメントの保存時と電子メールの送信時にキャプチャされます。
 
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
@@ -273,7 +273,7 @@ ms.locfileid: "51902952"
 
 このイベントは、ファイルまたはドキュメントからラベルが削除されるごとに生成されます。
 
-- 保存時にキャプチャされます。
+- ドキュメントの保存時と電子メールの送信時にキャプチャされます。
 
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 

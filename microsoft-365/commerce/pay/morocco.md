@@ -1,23 +1,24 @@
 ---
 title: モロッコのお支払い情報
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0ff87182dd8fc458581fa451c200de48f803ee87
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 92fdffa086e467c7f5fa4fdbefcbf9749095feec
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273238"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536408"
 ---
 # <a name="payment-information-for-morocco"></a>モロッコのお支払い情報
 
@@ -31,4 +32,4 @@ ms.locfileid: "52273238"
 **SWIFT コード:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **アカウント番号:** 12510049  
-**アカウント名:** MICROSOFT  
+**アカウント名:** MICROSOFT

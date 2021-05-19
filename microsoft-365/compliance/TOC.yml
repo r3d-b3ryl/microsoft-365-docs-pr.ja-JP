@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 作業の開始
+- name: 概要
   items:
     - name: コンプライアンスを開始するためのクイック タスク
       href: compliance-quick-tasks.md
@@ -785,7 +785,7 @@
     - name: 基本的な監査
       items:
         - name: 基本的な監査の設定
-          href: set-up-basic-auditing.md
+          href: set-up-basic-audit.md
         - name: 監査ログの検索
           href: search-the-audit-log-in-security-and-compliance.md
         - name: PowerShell スクリプトを使用して監査ログを検索する

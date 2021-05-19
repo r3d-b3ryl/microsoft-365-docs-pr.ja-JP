@@ -24,16 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 description: 元従業員のログインをブロックし、サービスへのアクセスMicrosoft 365します。
-ms.openlocfilehash: 60f4cf6b5c9a0b5dc2023b3ef7b6460685142d07
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 8eb41c3b449e63284371aaf168262307a4c21941
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244249"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535952"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>手順 1 - 元従業員のログインを防止し、サービスへのアクセスMicrosoft 365する
 
 ユーザーのサインイン アクセスを直ちに防止する必要がある場合は、パスワードをリセットする必要があります。 この手順では、ユーザーから強制的にサインアウトMicrosoft 365。
+
+> [!NOTE]
+> サインアウトを開始するには、グローバル管理者である必要があります。
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 2. ユーザーの名前の横にあるボックスを選択し、[パスワードのリセット] **を選択します**。

@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: 一般法人向け Microsoft 365 または有料版サブスクリプションをキャンセルする方法について説明します。
+description: ユーザー ライセンスが 25 未満の場合は、いつでも管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをキャンセルできます。
 ms.date: 04/08/2021
-ms.openlocfilehash: 022981e91abc985a0540acccccd6f211b39620a4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 583433e2c2cc939724f772c1cd699cc5763cb21c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333316"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536120"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -46,7 +46,7 @@ ms.locfileid: "52333316"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
-2. キャンセルするサブスクリプションを見つけます。 **[その他の操作]** (3 つのドット) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
+2. キャンセルするサブスクリプションを見つけます。 3 つのドット(他のアクション) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
 3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。 必要に応じて、フィードバックを提供します。
 4. **[保存]** を選択します。
 
@@ -69,7 +69,7 @@ ms.locfileid: "52333316"
 ::: moniker-end
 
 2. **[製品]** タブを選択します。
-3. キャンセルするサブスクリプションを見つけます。 **[その他の操作]** (3 つのドット) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
+3. キャンセルするサブスクリプションを見つけます。 3 つのドット(他のアクション) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
 4. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。 必要に応じて、フィードバックを提供します。
 5. **[保存]** を選択します。
 

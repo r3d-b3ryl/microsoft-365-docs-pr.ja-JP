@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: 3133e468ef99114b1c89e16fbd0f4b5170af30d0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
+ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759812"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530972"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -63,7 +63,7 @@ ms.locfileid: "51759812"
 
 次の権限を持っているユーザー:
   
-- グローバル管理者: このロールを持つのは、社内の少数のユーザーのみにすることをお勧めします。 これで、業務上のリスクが軽減されます。
+- グローバル管理者: このロールを持つのは、社内の少数のユーザーのみにすることをお勧めします。それにより業務上のリスクが軽減されます。
     
 - Exchange の管理者
     
@@ -199,6 +199,10 @@ ms.locfileid: "51759812"
   
 ただし、現在の日付から最大 28 日間の特定の日 (番号 3 を参照) を選択すると、その日のユーザーの使用状況が [ユーザーの詳細] テーブル (番号 2を参照) に表示されます。
   
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[セキュリティ センター&amp;コンプライアンス センターのレポート](../../compliance/reports-in-security-and-compliance.md)
+[セキュリティ &amp;コンプライアンス センターのレポート](../../compliance/reports-in-security-and-compliance.md) (記事)
+
+[Microsoft 365 利用状況分析](../usage-analytics/usage-analytics.md) (記事)
+
+[Microsoft 365 利用状況分析をカスタマイズする](../usage-analytics/customize-reports.md) (記事)

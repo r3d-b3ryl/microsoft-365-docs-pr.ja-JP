@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、調整する方法について学習します。
-ms.openlocfilehash: bd4857a2baefb22d789fc713a537d7e4a656718d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e252c7328c59c246f739caf4b70acd44de010e42
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052085"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532520"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
 
@@ -50,7 +50,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 [表示のみ **] DLP コンプライアンス管理** 役割を使用して、DLP ポリシーおよび DLP レポートに対する表示専用の権限を持つ役割グループを作成します。
 
-詳細については、「[Give users access to the Office 365 Security & Compliance Center (Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する)](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+詳細については、「[Give users access to the Office 365 Security & Compliance Center (Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する)](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
   
 ポリシーを適用しない DLP ポリシーを作成して適用するには、これらのアクセス許可が必要です。
 
@@ -152,7 +152,7 @@ DLP ポリシー内のルールを編集する際、以下を変更できます�
 - ルールをトリガーする機密データのインスタンスの種類および数を含む条件。
 - コンテンツへのアクセス制限などの、実行されるアクション。
 - ユーザー通知。メール クライアントまたは Web ブラウザーでユーザーに表示されるポリシー ヒントです。
-- ユーザーによる上書き。ユーザーがメールまたはファイル共有を続行するかどうかを決定します。
+- ユーザーの上書きは、ユーザーが電子メールまたはファイル共有の続行を選択できるかどうかを決定します。
 - 管理者に通知するためのインシデント レポート。
 
 ![ルールの一部を編集するオプション](../media/DLP-create-test-tune-editing-options.png)
@@ -199,14 +199,12 @@ DLP ポリシー テンプレートは、そのままでは完璧ではありま
 
 
 1 つのオプションは、オーストラリアの運転免許証の情報の種類をポリシーから削除することです。 DLP ポリシー テンプレートの一部なのでそこに含まれていますが、強制的に使用する必要はありません。 運転免許証ではなくタックス ファイル ナンバーのみに関心がある場合には、削除して構いません。 たとえば、ポリシーの低ボリューム ルールからそれを削除しながらも、複数の運転免許証のリストがまだ検出されるように高ボリューム ルールにはそのままそれを残しておくことができます。
-
-![機密情報の種類をルールから削除するオプション](../media/DLP-create-test-tune-delete-low-volume-rule.png)
  
-別のオプションとしては、単純にインスタンス数を増やすことが挙げられます。これにより、複数のインスタンスがある場合にのみ少量の運転免許証が検出されます。
+もう 1 つのオプションは、インスタンス数を増やして、少ないボリュームのドライバーのライセンスが複数のインスタンスがある場合にのみ検出される方法です。
 
 ![インスタンス数を編集するオプション](../media/DLP-create-test-tune-edit-instance-count.png)
 
-インスタンス数の変更に加えて、一致の精度 (または信頼レベル) を調整することもできます。 機密情報の種類に複数のパターンがある場合、ルールが特定のパターンのみに一致するように、ルールの一致の精度を調整できます。 たとえば、誤検出を減らすためにルールの一致の精度を設定して、最も高い信頼レベルを持つパターンのみと一致するようにできます。 信頼レベルの計算方法を理解することは少し難しい (そしてこの投稿の範囲を超えている) のですが、ここに[信頼レベルを使用してルールを調整する方法](data-loss-prevention-policies.md#match-accuracy)の良い説明があります。
+インスタンス数の変更に加えて、一致の精度 (または信頼レベル) を調整することもできます。 機密情報の種類に複数のパターンがある場合、ルールが特定のパターンのみに一致するように、ルールの一致の精度を調整できます。 たとえば、誤検出を減らすためにルールの一致の精度を設定して、最も高い信頼レベルを持つパターンのみと一致するようにできます。 信頼度の詳細については、「信頼度を使用してルールを調整する方法 [」を参照してください](data-loss-prevention-policies.md#match-accuracy)。
 
 最後に、もう少し高度な情報を取得する場合は、機密情報の種類をカスタマイズできます 。たとえば、オーストラリアの運転免許証番号のキーワードのリストから "Sydney NSW" を削除して、上記でトリガーされた誤検知を排除できます。 [](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) XML と PowerShell を使用してこれを行う方法については、「組み込みの機密情報の種類をカスタマイズする [」を参照してください](customize-a-built-in-sensitive-information-type.md)。
 

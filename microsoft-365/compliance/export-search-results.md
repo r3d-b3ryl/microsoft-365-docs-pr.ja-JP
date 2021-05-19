@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: コンプライアンス センターのコンテンツ検索からMicrosoft 365ローカル コンピューターにエクスポートします。 電子メールの結果は PST ファイルとしてエクスポートされます。 サイトおよびSharePointサイトOneDrive for Businessコンテンツは、ネイティブ ドキュメントとしてOfficeされます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5e900d44e59c2c37263c1162a7e631b1635cb06
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311978"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536060"
 ---
 # <a name="export-content-search-results"></a>コンテンツ検索結果のエクスポート
 
@@ -37,7 +37,7 @@ ms.locfileid: "52311978"
   
 ## <a name="before-you-export-search-results"></a>検索結果をエクスポートする前に
 
-- 検索結果をエクスポートするには、セキュリティ コンプライアンス センターで [エクスポート管理] 役割を割り&必要があります。 この役割は、組み込みの電子情報開示マネージャーの役割グループに割り当てられます。 既定では、Organization Management 役割グループには割り当てられません。 詳細については、「Assign [eDiscovery permissions 」を参照してください](assign-ediscovery-permissions.md)。
+- 検索結果をエクスポートするには、セキュリティ コンプライアンス センターで [エクスポート管理] 役割を割り&必要があります。 この役割は、組み込みの電子情報開示マネージャーの役割グループに割り当てられます。 既定では、Organization Management 役割グループには割り当てられません。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
 
 - 検索結果をエクスポートする際に使用するコンピューターは、次のシステム要件を満たす必要があります。
   
@@ -122,7 +122,7 @@ ms.locfileid: "52311978"
   
 5. 次の追加オプションを構成します。
 
-   ![Exchange のオプション](../media/OtherExportOptions.png)
+   ![その他のエクスポート オプションを構成する](../media/OtherExportOptions.png)
 
    1. 重複する **メッセージを除外するには、[コンテンツの重複Exchangeを有効** にする] チェック ボックスをオンにします。
   

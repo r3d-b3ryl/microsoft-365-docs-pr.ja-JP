@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学習できます。
 ms.date: 03/17/2021
-ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333256"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536084"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
@@ -34,7 +34,7 @@ ms.locfileid: "52333256"
 
 ::: moniker-end
 
-ユーザーは、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てできます。 セルフサービス購入の支払いは、お客様が行う責任があります。 サブスクリプションは、Microsoft 365 管理センター (microsoft 365 管理センター)<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">で admin.microsoft.com。</a>
+ユーザーは、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てできます。 セルフサービス購入の支払いは、お客様が行う責任があります。 サブスクリプションは、管理センターの Microsoft 365で管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com。</a>
 
 管理者は、購入したサブスクリプションに対する読み取り専用ビューを持っています。 購入したサブスクリプションごとに、製品、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーを確認できます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "52333256"
 ## <a name="cancel-a-subscription"></a>サブスクリプションをキャンセルする
 
 1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
-2. **[製品]** タブで、キャンセルするサブスクリプションを見つけます。 **[その他の操作]** (3 つのドット) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
+2. **[製品]** タブで、キャンセルするサブスクリプションを見つけます。 3 つのドット (その他のアクション) を選択し、[サブスクリプションのキャンセル] **を選択します**。
 3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。 必要に応じて、フィードバックを提供します。
 4. **[保存]** を選択します。
 
@@ -108,6 +108,6 @@ ms.locfileid: "52333256"
 
 ## <a name="need-help-contact-us"></a>サポートが必要な場合 お問い合わせください。
 
-セルフサービス購入に関する一般的な質問については、「セルフサービス購入に関する [よく寄せられる質問」を参照してください](self-service-purchase-faq.md)。
+セルフサービス購入に関する一般的な質問については、「セルフサービス購入に関する [よく寄せられる質問」を参照してください](self-service-purchase-faq.yml)。
 
 セルフサービス購入に関するご質問やサポートが必要な場合は、サポート [にお問い合わせください](../../business-video/get-help-support.md)。

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 組織の無料セルフサービス サインアップ サブスクリプションを管理する方法について学習します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 9c29d36ff28e312fa3782b60f89fa755d4df9bf3
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 741c9e0b45f127ffc0753b34982073f90c525d5b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345132"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536072"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>セルフサービス サインアップ サブスクリプションの管理
 
@@ -39,7 +39,7 @@ ms.locfileid: "52345132"
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>これらのサブスクリプションとセルフサービス購入サブスクリプションの違いは何ですか?
 
-セルフサービス サインアップ サブスクリプションは無料で、セルフサービス購入サブスクリプションよりも大きな製品リストで利用できます。 ユーザーがセルフサービス購入サブスクリプションに登録すると、ユーザーは支払いを行う責任があります。 セルフサービス購入サブスクリプションは、Power Platform 製品 (Power BI、Power Apps、および Power Automate)、Project、および Visio でのみ利用できます。 詳細については、「セルフサービス購入 [に関するよく寄せられる質問」を参照してください](self-service-purchase-faq.md)。
+セルフサービス サインアップ サブスクリプションは無料で、セルフサービス購入サブスクリプションよりも大きな製品リストで利用できます。 ユーザーがセルフサービス購入サブスクリプションに登録すると、ユーザーは支払いを行う責任があります。 セルフサービス購入サブスクリプションは、Power Platform 製品 (Power BI、Power Apps、および Power Automate)、Project、および Visio でのみ利用できます。 詳細については、「セルフサービス購入 [に関するよく寄せられる質問」を参照してください](self-service-purchase-faq.yml)。
 
 ## <a name="block-users-from-signing-up"></a>ユーザーのサインアップをブロックする
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 次の手順に従って、元従業員のユーザー アカウントを削除します。
-ms.openlocfilehash: 0afa9b112919d2668d7553ac5bcf08e664bc1749
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244236"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535940"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>手順 7 - 元従業員のユーザー アカウントを削除する
 
@@ -43,7 +43,13 @@ ms.locfileid: "52244236"
 3. ユーザーの名前の下で、[ユーザーの削除] **を選択します**。 このユーザーに必要なオプションを選択し、[ユーザーの削除] **を選択します**。 既に別のユーザーにこのユーザーの電子メールへのアクセス権を与え、OneDrive場合は、ここでもう一度行う必要はありません。
 
 ユーザーを削除するとき、約 30 日間アカウントが無効になります。30 日後に永久に削除されるまではアカウントを復元できます。
-  
+
+## <a name="watch-delete-a-former-employees-user-account"></a>ウォッチ: 元従業員のユーザー アカウントを削除する
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
+
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+
 ## <a name="does-your-organization-use-active-directory"></a>組織では Active Directory を使用していますか。
 
 組織がローカルの Active Directory 環境Microsoft 365にユーザー アカウントを同期する場合は、ローカルの Active Directory サービスでそれらのユーザー アカウントを削除して復元する必要があります。 ユーザー アカウントを Office 365 で削除または復元することはできません。
@@ -81,3 +87,5 @@ Active Directory でユーザー アカウントを削除および復元する�
 ## <a name="related-articles"></a>関連記事
 
 [ユーザーを復元する](restore-user.md)
+
+[パスワードをリセットする](reset-passwords.md)

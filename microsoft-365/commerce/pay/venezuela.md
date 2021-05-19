@@ -1,23 +1,24 @@
 ---
 title: ベネズエラのお支払い情報
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cda38b1d7190c3ec20edae90cb7f5e78e24863bd
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 434c48a4347ecafa685e76dddda3918e9c862f6b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272242"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536204"
 ---
 # <a name="payment-information-for-venezuela"></a>ベネズエラのお支払い情報
 
@@ -31,4 +32,4 @@ ms.locfileid: "52272242"
 **ブランチ:** ダラス  
 **SWIFT コード:** BOFAUS3N  
 **アカウント番号:** 4426587954  
-**アカウント名:** Microsoft  
+**アカウント名:** Microsoft
