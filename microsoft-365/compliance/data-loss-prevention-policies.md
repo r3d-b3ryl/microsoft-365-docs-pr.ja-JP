@@ -1,5 +1,5 @@
 ---
-title: データ損失防止のリファレンス
+title: データ損失防止リファレンス
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: データ損失防止の参考資料
+description: データ損失防止リファレンス 資料
 ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -29,10 +29,10 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572563"
 ---
-# <a name="data-loss-prevention-reference"></a>データ損失防止のリファレンス
+# <a name="data-loss-prevention-reference"></a>データ損失防止リファレンス
  
 > [!IMPORTANT]
-> これは、参照トピックでは、データ損失防止 (DLP) 情報Microsoft 365の主なリソースではなくなりました。 DLP コンテンツ セットを更新および再構築しています。 この記事で取り上げるトピックは、更新された新しい記事に移ります。 DLP の詳細については、「 [データ損失防止の詳細」](dlp-learn-about-dlp.md)を参照してください。
+> これは、データ損失防止 (DLP) 情報のMicrosoft 365参照トピックではなくなりました。 DLP コンテンツ セットが更新され、再構築されています。 この記事で説明するトピックは、新しい更新された記事に移動します。 DLP の詳細については、「データ損失 [防止について」を参照してください](dlp-learn-about-dlp.md)。
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -385,7 +385,7 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>DLP ポリシーで秘密度ラベルを条件として使用する
 
-DLP ポリシーでの条件として感度ラベルを使用する[方法について説明します](./dlp-sensitivity-label-as-condition.md)。
+[DLP ポリシーの](./dlp-sensitivity-label-as-condition.md) 条件として Sensitivity ラベルを使用する方法について説明します。
   
 ### <a name="how-this-feature-relates-to-other-features"></a>この機能と他の機能の関係
 
@@ -520,7 +520,7 @@ DLP は、(単純なテキスト スキャンだけでなく) 詳細なコンテ
 DLP は、インデックスを作成できるすべてのコンテンツを評価します。 既定でクロールされるファイルの種類の詳細については、「[SharePoint Server での既定のクロール対象ファイルのファイル名拡張子および解析対象ファイルの種類](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)」を参照してください。
 
 > [!NOTE]
-> DLP ポリシーでドキュメントを分析する機会が得られる前にドキュメントが共有されないようにするために、SharePoint内の新しいファイルの共有は、そのコンテンツにインデックスが付くまでブロックできます。 詳細については、「[新しいファイルを既定で機密としてマークする](/sharepoint/sensitive-by-default)」をご覧ください。 
+> DLP ポリシーでドキュメントを分析する前にドキュメントが共有されるのを防ぐため、SharePoint の新しいファイルの共有は、そのコンテンツがインデックス化されるまでブロックできます。 詳細については、「[新しいファイルを既定で機密としてマークする](/sharepoint/sensitive-by-default)」をご覧ください。 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、Outlook、Outlook on the web でのポリシーの評価
 

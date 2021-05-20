@@ -26,7 +26,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: ビジネス サブスクリプションのユーザーのパスワードをリセットするには、Microsoft 365管理者アカウントでサインインMicrosoft 365。
+description: 管理者アカウントでサインインMicrosoft 365、ビジネス サブスクリプションのユーザーのパスワードMicrosoft 365リセットします。
 ms.openlocfilehash: 8d4666eb70b1d5349f71c906f05510a8a54ded74
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -36,13 +36,13 @@ ms.locfileid: "52571975"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
-この記事では、ビジネス サブスクリプションのMicrosoft 365がある場合に、自分とユーザーのパスワードをリセットする方法について説明します。
+この記事では、ビジネス サブスクリプション用のパスワードを使用している場合に、自分とユーザーのパスワードMicrosoft 365説明します。
 
 ## <a name="before-you-begin"></a>開始する前に
 
 この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../../business-video/admin-center-overview.md)。
 
-これらの手順を実行するには、 [グローバル管理者またはパスワード管理者](about-admin-roles.md) である必要があります。
+これらの手順を実行するには [、グローバル管理者またはパスワード](about-admin-roles.md) 管理者である必要があります。
 
 ## <a name="watch-reset-a-business-password-for-a-user"></a>ウォッチ: ユーザーのビジネス パスワードをリセットする
 
@@ -68,13 +68,13 @@ ms.locfileid: "52571975"
 
 ## <a name="reset-my-admin-password"></a>管理者パスワードをリセットする
 
-パスワードを忘れたが、Microsoft 365にサインインできる場合は、次の手順を実行します。
+パスワードを忘れたが、Microsoft 365 にサインインできる場合は、次の手順を実行します。たとえば、パスワードはブラウザーに保存されます。
 
-1. 右上の [**マイ アカウント** 個人情報] >自分の名前(アイコン)  >  を選択します。
+1. [個人用アカウントの個人情報] の右上隅にある> **(アイコン)**  >  **を選択します**。
 
-2. [ **連絡先の詳細**] で **、代替メール** が正確であること、および携帯電話番号が入力されていることを再確認します。 正しくない場合は、この場で変更します。
+2. [**連絡先の詳細]** で、代替メールが正確で、携帯電話番号が入力済みである場合は、もう一度確認します。 正しくない場合は、この場で変更します。
 
-3. サインアウト: 右上の [サインアウト] で自分の名前を選択 \> します。
+3. サインアウト: 右上隅で自分の名前を選択します \> **。サインアウトします**。
 
 4. もう一度サインインします: ユーザー名を入力し \> [**次へ**] \> [**パスワードを忘れた場合**] の順に選択します。
 
@@ -84,14 +84,14 @@ ms.locfileid: "52571975"
 
 - 社内の別のグローバル管理者にパスワードのリセットを依頼します。
 
-- 携帯電話番号を含む別の連絡先情報を入力したことを確認します。
+- 携帯電話番号を含む代替連絡先情報が提供されている必要があります。
 
 - または、[Microsoft サポートにお電話ください](../../business-video/get-help-support.md)。
 
-## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>組織内のすべてのユーザーのすべてのビジネス パスワードを同時にリセットする
+## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>組織内のすべてのユーザーのビジネス パスワードを同時にリセットする
 <a name="bkmk_forgot"> </a>
 
-次の手順は、数十のユーザーを抱える会社を対象にしています。 数百または数千のユーザーがいる場合は、パスワードを一括でリセットする方法 (一度に最大 40 ユーザー) の次のセクションを参照してください。
+次の手順は、数十のユーザーを抱える会社を対象にしています。 数百人または数千人のユーザーがある場合は、パスワードの一括リセットに関する次のセクション (一度に最大 40 人のユーザー) を参照してください。
   
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
@@ -103,20 +103,20 @@ ms.locfileid: "52571975"
 
 5. 一時パスワードを受信できるメール アドレスを入力します。 ユーザーの一時パスワードをユーザーに通知する必要があります。
   
-## <a name="reset-business-passwords-in-bulk"></a>ビジネス パスワードを一括してリセットする
+## <a name="reset-business-passwords-in-bulk"></a>ビジネス パスワードを一括でリセットする
 <a name="bkmk_forgot"> </a>
 
 PowerShell を使用しましょう。Eyal Doron による次の投稿を確認してください: [PowerShell でパスワードを管理する](https://go.microsoft.com/fwlink/?linkid=853696)
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-概要については、「 [PowerShell を使用したMicrosoft 365の管理](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)」を参照してください。
+概要については[、「Manage Microsoft 365 PowerShell 」を参照してください](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>社内のすべてのユーザーに対してパスワードの変更を強制する
 
 Vasil Michev (Microsoft MVP) による次のブログ投稿を確認してください: [Office 365 のすべてのユーザーのパスワードの変更を強制する](https://go.microsoft.com/fwlink/?linkid=853693)
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>ビジネス サブスクリプションのMicrosoft 365がありません
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>ビジネス サブスクリプションのMicrosoft 365を持ってない
 
 この記事、「[Office で使用するアカウントまたはパスワードを忘れてしまった](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)」を参照してください。
   

@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: ドメインとは何か、ドメインを購入する方法、またはビジネスの既定のドメインを使用してOneDriveと Microsoft アプリを使い始める方法について説明します。
+description: ドメインとは何か、ドメインを購入する方法、またはビジネスの既定のドメインを使用して、ドメインと Microsoft OneDriveを開始する方法について説明します。
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
@@ -63,8 +63,8 @@ Microsoft サポートに連絡する - [ドメインの設定についてサポ
 
 [ドメインを購入する](buy-a-domain-name.md) (記事)
 
-[Microsoft 365にドメインを追加する](../setup/add-domain.md)(記事)
+[ドメインをドメインに追加Microsoft 365](../setup/add-domain.md)する (記事)
 
-[カスタム ドメインからのパイロット Microsoft 365](../misc/pilot-microsoft-365-from-my-custom-domain.md) (記事)
+[カスタム Microsoft 365からのパイロット テスト (](../misc/pilot-microsoft-365-from-my-custom-domain.md)記事)
 
 

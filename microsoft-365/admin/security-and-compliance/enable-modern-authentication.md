@@ -45,7 +45,7 @@ Microsoft Office 2013 がインストールされている Windows を実行し�
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-レジストリ キーを設定したら、2013 デバイス アプリOffice、Microsoft 365で[多要素認証 (MFA) を](set-up-multi-factor-authentication.md)使用するように設定できます。 
+レジストリ キーを設定したら、2013 デバイス アプリで複数要素認証[(MFA)](set-up-multi-factor-authentication.md)を使用Office 2013 デバイス アプリをMicrosoft 365。 
   
 現在、クライアント アプリのいずれかを使ってサインインしている場合、変更を有効にするには、サインアウトしてサインインし直す必要があります。それ以外の場合は、ADAL ID が確立されるまで、MRU とローミングの設定が無効になります。
   
@@ -59,7 +59,7 @@ Microsoft Office 2013 がインストールされている Windows を実行し�
    
 ## <a name="related-content"></a>関連コンテンツ
 
-[2 番目の検証方法で 2013 Officeにサインイン](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)する (記事)
+[2 番目の検証Office 2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)にサインインする (記事)
 
-[Outlookパスワードの入力を求められ、Office 365への接続にモダン認証を使用しない](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)(記事)
+[Outlookを求めるメッセージ](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)が表示され、モダン認証を使用してパスワードに接続Office 365しない (記事)
 

@@ -23,7 +23,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
-description: Microsoft 365管理センターに管理者アクセス許可を付与してサインインし、クラウドで組織を設定し、ユーザーとサブスクリプションを管理します。
+description: 管理者センターに管理者のアクセス許可Microsoft 365サインインして、クラウドで組織をセットアップし、ユーザーとサブスクリプションを管理します。
 ms.openlocfilehash: 1d8afaf8c63124fc0dde40002214ba99d4d1a4a0
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
