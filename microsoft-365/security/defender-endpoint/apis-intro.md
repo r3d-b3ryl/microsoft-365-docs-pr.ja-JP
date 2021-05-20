@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender for Endpoint API にアクセスする
 ms.reviewer: ''
-description: API を使用してワークフローを自動化し、Microsoft Defender for Endpoint の機能に基づいて革新する方法について説明します。
-keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, microsoft Defender atp, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
+description: API を使用してワークフローを自動化し、エンドポイント用 Microsoft Defender 機能に基づく革新を行う方法を学びます。
+keywords: apis, api, wdatp, オープン API, エンドポイント API 用マイクロソフトディフェンダー, マイクロソフトディフェンダー atp, パブリック API, サポートされている API, アラート, デバイス, ユーザー, ドメイン, IP, ファイル, 高度な狩猟, クエリ
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 843bd953b97f29a5b9c80fc44a9b19fae60a6fa7
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: a91a401d5d57c7757bc043178c95dc42e7733b41
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939768"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571831"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender for Endpoint API にアクセスする 
 
@@ -39,47 +39,47 @@ ms.locfileid: "51939768"
 
 
 
-Defender for Endpoint は、一連のプログラム API を使用して、そのデータとアクションの多くを公開します。 これらの API を使用すると、Defender for Endpoint の機能に基づいてワークフローを自動化し、革新することができます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については[、「OAuth 2.0 Authorization Code Flow」 を参照してください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+エンドポイントの Defender は、プログラム API のセットを通じてデータとアクションの多くを公開します。 これらの API を使用すると、ワークフローを自動化し、Endpoint 用 Defender 機能に基づいてイノベーションを起こします。 API アクセスには OAuth2.0 認証が必要です。 詳細については[、「OAuth 2.0 認証コード Flow」](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)を参照してください。
 
-Defender for Endpoint の API の概要については、このビデオをご覧ください。 
+エンドポイントの API の Defender の概要については、このビデオをご覧ください。 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
 
 一般に、API を使用するには、次の手順を実行する必要があります。
-- AAD アプリケーションの作成
+- [AAD アプリケーション](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)を作成する
 - このアプリケーションを使用してアクセス トークンを取得する
-- トークンを使用して Defender for Endpoint API にアクセスする
+- トークンを使用してエンドポイント API の Defender にアクセスする
 
 
-アプリケーション コンテキストまたはユーザー コンテキストを使用して Defender for Endpoint API **にアクセスできます**。
+**アプリケーション コンテキスト** または **ユーザー** コンテキスト を使用して、Endpoint API の Defender にアクセスできます。
 
-- **アプリケーション コンテキスト: (推奨)** <br>
-    サインインしているユーザーが存在せずに実行されるアプリで使用されます。 たとえば、バックグラウンド サービスまたはデーモンとして実行されるアプリ。
+- **アプリケーションコンテキスト: (推奨)** <br>
+    サインインしているユーザーが存在しないまま実行されるアプリで使用されます。 たとえば、バックグラウンド サービスまたはデーモンとして実行されるアプリなどです。
 
-    アプリケーション コンテキストを使用して Defender for Endpoint API にアクセスするために必要な手順は次のとおりです。
+    アプリケーションコンテキストを持つエンドポイントAPIのDefenderにアクセスするために実行する必要がある手順:
 
-  1. AAD Web-Application を作成します。
-  2. 目的のアクセス許可をアプリケーションに割り当てる (たとえば、「アラートの読み取り」、"コンピューターの分離" など)。 
+  1. AAD Web アプリケーションを作成します。
+  2. 「アラートの読み取り」「マシンの分離」など、アプリケーションに必要なアクセス許可を割り当てます。 
   3. このアプリケーションのキーを作成します。
-  4. キーを使用してアプリケーションを使用してトークンを取得します。
-  5. トークンを使用して Microsoft Defender for Endpoint API にアクセスする
+  4. アプリケーションをキーと共に使用してトークンを取得します。
+  5. エンドポイント API の Microsoft Defender にアクセスするトークンを使用します。
 
-     詳細については、「Get [access with application context 」を参照してください](exposed-apis-create-app-webapp.md)。
+     詳細については、「アプリケーション [コンテキストを使用したアクセスの取得](exposed-apis-create-app-webapp.md)」を参照してください。
 
 
 - **ユーザー コンテキスト:** <br>
-    ユーザーに代わって API でアクションを実行するために使用します。
+    ユーザーの代わりに API でアクションを実行するために使用します。
 
-    アプリケーション コンテキストを使用して Defender for Endpoint API にアクセスするための手順は次のとおりです。
+    アプリケーションコンテキストを使用してエンドポイントAPIのDefenderにアクセスするための手順:
 
   1. AAD ネイティブ アプリケーションを作成します。
-  2. 目的のアクセス許可をアプリケーションに割り当てる (「アラートの読み取り」、"コンピューターの分離" など)。 
-  3. ユーザー資格情報を使用してアプリケーションを使用してトークンを取得します。
-  4. トークンを使用して Microsoft Defender for Endpoint API にアクセスする
+  2. 「アラートの読み取り」「マシンの分離」など、アプリケーションに必要なアクセス許可を割り当てます。 
+  3. ユーザーの資格情報を持つアプリケーションを使用してトークンを取得します。
+  4. エンドポイント API の Microsoft Defender にアクセスするトークンを使用します。
 
-     詳細については、「ユーザー コンテキストで [アクセスを取得する」を参照してください](exposed-apis-create-app-nativeapp.md)。
+     詳細については、「ユーザー [コンテキストを使用したアクセスの取得](exposed-apis-create-app-nativeapp.md)」を参照してください。
 
 
 ## <a name="related-topics"></a>関連項目
-- [エンドポイント API 用 Microsoft Defender](exposed-apis-list.md)
-- [アプリケーション コンテキストを使用して Microsoft Defender for Endpoint にアクセスする](exposed-apis-create-app-webapp.md)
-- [ユーザー コンテキストを使用して Microsoft Defender for Endpoint にアクセスする](exposed-apis-create-app-nativeapp.md)
+- [エンドポイント API のマイクロソフト ディフェンダー](exposed-apis-list.md)
+- [アプリケーション コンテキストを使用してエンドポイント用の Microsoft Defender にアクセスする](exposed-apis-create-app-webapp.md)
+- [ユーザー コンテキストを使用してエンドポイント用の Microsoft Defender にアクセスする](exposed-apis-create-app-nativeapp.md)

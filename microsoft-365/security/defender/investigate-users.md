@@ -1,7 +1,7 @@
 ---
-title: Defender でユーザーをMicrosoft 365する
-description: セキュリティ センターでインシデントをMicrosoft 365します。
-keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティ センター、監視、レポート、ID、データ、デバイス、アプリ、インシデント、分析、応答
+title: Microsoft 365 Defender でユーザーを調査する
+description: Microsoft 365 セキュリティ センターでのインシデントのユーザーを調査します。
+keywords: セキュリティ, マルウェア, Microsoft 365, M365, セキュリティセンター, モニター, レポート, ID, データ, デバイス, アプリ, インシデント, 分析, 応答
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7084b9370a0dd83265b37ff1d152e2164fe32813
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 72eb111da2f342b78aa6161c7334a7252314b4a5
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539133"
+ms.locfileid: "52572803"
 ---
-# <a name="investigate-users-in-microsoft-365-defender"></a>Defender でユーザーをMicrosoft 365する
+# <a name="investigate-users-in-microsoft-365-defender"></a>Microsoft 365 Defender でユーザーを調査する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,43 +34,43 @@ ms.locfileid: "52539133"
 
 - Microsoft 365 Defender
 
-インシデント調査の一部には、ユーザー アカウントを含めできます。 [インシデント]**からインシデント** の [ユーザー] タブから開始し、&**ユーザー** >*通知>***します**。 
+インシデント調査の一部には、ユーザー アカウントを含めることができます。 & インシデントの警告>インシデント>**ユーザー**]**のインシデント** の [**ユーザー** ] タブから開始します。 
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="インシデントの [ユーザー] ページの例":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="インシデントのユーザー ページの例":::
 
 インシデントのユーザー アカウントの概要を簡単に取得するには、ユーザー アカウント名の横にあるチェック マークを選択します。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="セキュリティ センターのインシデントのユーザー アカウントの概要ウィンドウMicrosoft 365例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Microsoft 365 セキュリティ センターのインシデントのユーザー アカウントの概要ウィンドウの例":::
 
 > [!NOTE]
-> [ユーザー] ページにはAzure Active Directory (AD) 組織とグループが表示され、ユーザーに関連付けられているグループとアクセス許可を理解できます。
+> [ユーザー] ページには、グループとAzure Active Directory (Azure AD) 組織が表示され、ユーザーに関連付けられているグループとアクセス許可を理解するのに役立ちます。
 
-このフライアウト ページでは、現在のインシデント、アクティブなアラート、リスク レベル、ユーザーの露出、アカウント、デバイスなど、ユーザーの脅威情報を確認できます。
+このフライアウト ページでは、現在のインシデント、アクティブなアラート、およびリスク レベル、ユーザーの露出、アカウント、デバイスなど、ユーザーの脅威情報を確認できます。
 
-さらに、Microsoft 365 セキュリティ センターで直接アクションを実行して、侵害されたユーザーに対処し、ユーザーが侵害されたか、再度サインインする必要があります。
+さらに、侵害されたユーザーに対処するために、Microsoft 365 セキュリティ センターで直接アクションを実行したり、ユーザーが侵害されたことを確認したり、再度サインインを要求したりできます。
 
-ここから、[ユーザー に移動] **ページを選択して** 、ユーザー アカウントの詳細を表示できます。 次に例を示します。
+ここから[ **ユーザー ページへ移動** ]を選択すると、ユーザー アカウントの詳細を表示できます。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="セキュリティ センター内のインシデントのユーザー アカウント ページMicrosoft 365例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Microsoft 365 セキュリティ センターのインシデントのユーザー アカウント ページの例":::
 
-[ユーザー] ページの一覧からユーザー アカウントの名前を選択すると、このページを **確認** することもできます。
+このページは、[ユーザー] ページの一覧からユーザー アカウントの名前を **選択** して表示することもできます。
 
-[Microsoft 365 セキュリティ センターのユーザー ページには、Microsoft Defender for Endpoint、Microsoft Defender for Identity、および Microsoft Cloud App Security (ライセンスに応じて) の情報が組み合わせ込まれています。 
+Microsoft 365 セキュリティ センターのユーザー ページは、エンドポイントの Microsoft Defender、Id 用 Microsoft Defender、およびMicrosoft Cloud App Security (お持ちのライセンスに応じて) からの情報を組み合わせています。 
 
-このページには、ユーザー アカウントのセキュリティ リスクに固有の情報が表示されます。 これには、ユーザーの全体的なリスクに寄与したリスクと最近のイベントやアラートを評価するのに役立つスコアが含まれます。
+このページには、ユーザー アカウントのセキュリティ リスクに固有の情報が表示されます。 これには、リスクと、ユーザーの全体的なリスクに寄与した最近のイベントとアラートを評価するのに役立つスコアが含まれます。
 
-このページでは、次の追加アクションを実行できます。 
+このページから、次の追加アクションを実行できます。 
 
 - ユーザー アカウントを侵害済みとしてマークする
-- ユーザーにもう一度サインインを要求する
+- ユーザーに再びサインインを要求する
 - ユーザー アカウントを中断する
-- ユーザー アカウントAzure Active Directory (Azure AD) の設定を参照してください。
+- Azure Active Directory (Azure AD) ユーザー アカウント設定を参照してください。
 - ユーザー アカウントが所有するファイルを表示する
 - このユーザーと共有されているファイルを表示します。 
 
 次に例を示します。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="セキュリティ センターのインシデントに対するユーザー アカウントMicrosoft 365例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Microsoft 365 セキュリティ センターでのインシデントに対するユーザー アカウントのアクションの例":::
 
 
 <!--
@@ -82,7 +82,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 ## <a name="next-steps"></a>次の手順
 
-インプロセス インシデントの必要に応じて、調査を続行 [します](investigate-incidents.md)。
+インプロセス インシデントの必要に応じて、 [調査](investigate-incidents.md)を続行します。
 
 ## <a name="see-also"></a>関連項目
 

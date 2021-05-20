@@ -1,23 +1,24 @@
 ---
 title: ウガンダのお支払い情報
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 12b4a215daf4542633b6068bdf43fe5949539899
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 85bfd081ea971c2e38a95791da762cbbe89a884e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272674"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537681"
 ---
 # <a name="payment-information-for-uganda"></a>ウガンダのお支払い情報
 
@@ -31,4 +32,4 @@ ms.locfileid: "52272674"
 **SWIFT コード:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **アカウント番号:** 12510049  
-**アカウント名:** MICROSOFT  
+**アカウント名:** MICROSOFT

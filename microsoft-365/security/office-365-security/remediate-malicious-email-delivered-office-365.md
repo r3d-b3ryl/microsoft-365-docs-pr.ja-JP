@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 202ebc8b79368c8d41fd3727b67359ddcb8a08fa
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a59b24cd29ab8bf3b9b08c7818813a7ab89f7ce2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206615"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537885"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>メールで配信される悪意のある電子メールを修復Office 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "51206615"
 修復とは、脅威に対して所定のアクションを実行する方法を意味します。 組織に送信される悪意のある電子メールは、システム、ゼロ時間自動削除 (ZAP)、または受信トレイへの移動、迷惑メールへの移動、削除済みアイテムへの移動、削除済みアイテムへの移動、削除の一時削除などの修復アクションを通じてセキュリティ チームによってクリーンアップできます。  Microsoft Defender for Office 365 P2/E5 を使用すると、セキュリティ チームは手動および自動化された調査を通じて、電子メールやコラボレーション機能の脅威を修復できます。
 
 > [!NOTE]
-> 悪意のある電子メールを修復するには、セキュリティ チームに割り当 *てられた検索と削除* の役割が必要です。 役割の割り当ては、セキュリティとコンプライアンス センターのアクセス許可を介して行われます。
+> 悪意のある電子メールを修復するには、セキュリティ チームに割り当 *てられた検索と削除* の役割が必要です。 役割の割り当て [は、セキュリティ コンプライアンス センターの&によって行われます](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>開始する前に知る必要がある情報
 

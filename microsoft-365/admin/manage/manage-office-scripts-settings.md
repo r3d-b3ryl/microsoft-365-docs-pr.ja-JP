@@ -15,23 +15,23 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: 組織内のユーザーのスクリプトOffice設定を管理する方法について学習します。
-ms.openlocfilehash: 75d0a9d9e98652fc11eab7e8a7d6c826be031f6e
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+description: 組織内のユーザーのOfficeスクリプト設定を管理する方法について説明します。
+ms.openlocfilehash: e0cb52c4a8f48ff2310c83ffce61e08a0236ed59
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058425"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572311"
 ---
 # <a name="manage-office-scripts-settings"></a>Office スクリプトの設定を管理する
 
-Officeスクリプトを使用すると、ユーザーは Web 上でスクリプトを記録、編集、実行することでExcelを自動化できます。 Officeスクリプトは、Power Automateと機能し、ユーザーはオンライン (Business) コネクタを使用してブックExcelスクリプトを実行します。 Microsoft 365管理者は、Office管理センターからスクリプト設定Microsoft 365管理できます。
+[Officeスクリプト](/office/dev/scripts)を使用すると、ユーザーは Web 上のExcelでスクリプトを記録、編集、実行することでタスクを自動化できます。 OfficeスクリプトはPower Automateと連携し、ユーザーはオンライン (ビジネス) コネクタを使用してワークブックでスクリプトを実行Excel。 Microsoft 365管理者は、Microsoft 365管理センターからOfficeスクリプト設定を管理できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
-- スクリプト設定Office管理するには、グローバル管理者である必要があります。詳細については、「管理者ロール[について」を参照してください](../add-users/about-admin-roles.md)。
+- Officeスクリプト設定を管理するには、グローバル管理者である必要があります。詳細については、「[管理者ロールについて](../add-users/about-admin-roles.md)」を参照してください。
 
-- 組織内のユーザーが、Microsoft 365 または Office 365 の商用プランまたは EDU プランに対して有効なライセンスを持ち、Office デスクトップ アプリ (以下のいずれかのプランなど) にアクセスできます。
+- 組織内のユーザーが、次のいずれかのプランなど、Office デスクトップ アプリへのアクセスを含む、Microsoft 365またはOffice 365の商用または EDU プランの有効なライセンスを持っていることを確認します。
 
     - Microsoft 365 Business Standard
     - Microsoft 365 Apps for business
@@ -41,68 +41,68 @@ Officeスクリプトを使用すると、ユーザーは Web 上でスクリプ
     - Office 365 A3
     - Office 365 A5
 
-## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>スクリプトの可用性Officeスクリプトの共有を管理する
+## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>Officeスクリプトの可用性とスクリプトの共有を管理する
 
-1. 管理センター Microsoft 365、[組織設定サービス] タブ設定 \> **に** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">移動</a>します。
+1. Microsoft 365管理センターで、[組織設定のサービス **] タブ設定** \>  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"></a>します。
 
-2. [スクリプト **Office選択します**。
+2. [**スクリプトOffice] を** 選択します。
 
-3. Office既定ではスクリプトが有効になっているので、組織のすべてのユーザーが機能にアクセスして使用し、スクリプトを共有できます。 組織のスクリプトOfficeをオフにする場合は、[ユーザーが組織のタスクを自動化 **Excel on the webオフにします**。
+3. Officeスクリプトは既定で有効になっており、組織内の全員が機能にアクセスして使用したり、スクリプトを共有したりできます。 組織のOfficeスクリプトをオフにするには、[**ユーザーがExcel on the webでタスクを自動化できるようにする**] チェック ボックスをオフにします。
 
-4. 以前に組織の Office スクリプトをオフにし、そのスクリプトを有効に戻す場合は **、[Excel on the web** でユーザーがタスクを自動化する] を選択し、この機能にアクセスして使用できるユーザーを指定します。
+4. 以前に組織のスクリプトOfficeをオフにして、それをオンに戻す場合は、[**ユーザーがExcel on the webでタスクを自動化できるようにする**] をオンにし、その機能にアクセスして使用できるユーザーを指定します。
 
-    - 組織内のすべてのユーザーがスクリプトにアクセスして使用Officeするには、[すべてのユーザー] **(既定**) を選択のままにします。
+    - 組織内のすべてのユーザーが Officeスクリプトにアクセスして使用できるようにするには、[**すべてのユーザー** ](既定値)を選択したままにします。
 
-    - 特定のグループのメンバーだけが Office スクリプトにアクセスして使用するには、[特定のグループ] を選択し、グループの名前または電子メール エイリアスを入力して許可リストに追加します。 許可リストに追加できるグループは 1 つのみであり、次のいずれかの種類である必要があります。
-        - Microsoft 365 グループ
-        - 配布グループ
+    - 特定のグループのメンバーのみがOfficeスクリプトにアクセスして使用できるようにするには、[特定の **グループ**] を選択し、グループの名前または電子メール エイリアスを入力して許可リストに追加します。 許可一覧に追加できるグループは 1 つだけで、次のいずれかの種類である必要があります。
+        - Microsoft 365グループ
+        - 配送グループ
         - セキュリティ グループ
         - メールが有効なセキュリティ グループ
     
-        さまざまな種類のグループの詳細については、「グループの比較」 [を参照してください](../create-groups/compare-groups.md)。
+        さまざまな種類のグループの詳細については、「グループの [比較](../create-groups/compare-groups.md)」を参照してください。
 
-5. Office スクリプトへのアクセス権を持つユーザーが組織内の他のユーザーとスクリプトを共有するには **、[Office スクリプト** にアクセスできるユーザーが組織内の他のユーザーとスクリプトを共有する] を選択します。 組織外でのスクリプトの共有は許可されません。
+5. Office スクリプトへのアクセス権を持つユーザーが組織内の他のユーザーとスクリプトを共有できるようにするには **、[Office スクリプトへのアクセス権を持つユーザーが組織内の他のユーザーとスクリプトを共有できるようにする**] チェック ボックスをオンにします。 組織外でのスクリプトの共有は許可されていません。
  
     > [!NOTE]
-    > 後で組織のスクリプト共有をオフにした場合でも、ユーザーは以前に共有したスクリプトを実行できます。
+    > 後で組織のスクリプト共有を無効にしても、ユーザーは以前に共有されたスクリプトを実行できます。
  
-6. スクリプトでスクリプトを共有できるユーザー Officeを指定します。
+6. スクリプトを共有できるOfficeスクリプトにアクセスできるユーザーを指定します。
     
-    - スクリプトへのアクセス権を持つすべてのOfficeスクリプトを共有するには、[すべての **ユーザー]** (既定) を選択のままにします。
+    - Officeスクリプトへのアクセス権を持つすべてのユーザーがスクリプトを共有できるようにするには、[**すべてのユーザー** ](デフォルト)を選択したままにします。
 
-    - Office スクリプトへのアクセス権を持つ特定のグループのメンバーだけがスクリプトを共有するには、[特定のグループ] を選択し、グループの名前または電子メール エイリアスを入力して許可リストに追加します。 許可リストに追加できるグループは 1 つのみであり、次のいずれかの種類である必要があります。
-        - Microsoft 365 グループ
-        - 配布グループ
+    - Officeスクリプトへのアクセス権を持つ特定のグループのメンバーのみがスクリプトを共有できるようにするには、[**特定のグループ**] を選択し、グループの名前または電子メール エイリアスを入力して許可リストに追加します。 許可一覧に追加できるグループは 1 つだけで、次のいずれかの種類である必要があります。
+        - Microsoft 365グループ
+        - 配送グループ
         - セキュリティ グループ
         - メールが有効なセキュリティ グループ
     
-        さまざまな種類のグループの詳細については、「グループの比較」 [を参照してください](../create-groups/compare-groups.md)。
+        さまざまな種類のグループの詳細については、「グループの [比較](../create-groups/compare-groups.md)」を参照してください。
 
-7. ユーザーが Power Automate フロー内で Office スクリプトを実行するには、[Office スクリプトへのアクセス権を持つユーザーにスクリプトを実行 **Power Automate。** これにより、ユーザーは[オンライン] ([ビジネス) コネクタExcel実行](/connectors/excelonlinebusiness)スクリプト オプションを使用してフロー ステップ **を追加** できます。
+7. ユーザーがPower Automateフロー内でOfficeスクリプトを実行できるようにするには **、[OfficeスクリプトにアクセスできるユーザーがPower Automateでスクリプトを実行できるようにする**] を選択します。 これにより、ユーザーは [、オンライン (ビジネス) コネクタ](/connectors/excelonlinebusiness)の **スクリプトの実行** オプションExcelを使用してフロー ステップを追加できます。
 
-    - スクリプトにアクセスできるすべてのユーザー Officeフローでスクリプトを使用するには、[すべての **ユーザー]** (既定) を選択したままにしてください。
+    - Officeスクリプトへのアクセス権を持つすべてのユーザーがフローでスクリプトを使用できるようにするには **、Everyone** (デフォルト) を選択したままにします。
 
-    - Office スクリプトにアクセスできる特定のグループのメンバーだけがフローでスクリプトを使用するには、[特定のグループ]を選択し、グループの名前または電子メール エイリアスを入力して許可リストに追加します。 許可リストに追加できるグループは 1 つのみであり、次のいずれかの種類である必要があります。
-        - Microsoft 365 グループ
-        - 配布グループ
+    - Officeスクリプトへのアクセス権を持つ特定のグループのメンバーのみがフローでスクリプトを使用できるようにするには、[**特定のグループ**] を選択し、グループの名前または電子メール エイリアスを入力して許可リストに追加します。 許可一覧に追加できるグループは 1 つだけで、次のいずれかの種類である必要があります。
+        - Microsoft 365グループ
+        - 配送グループ
         - セキュリティ グループ
         - メールが有効なセキュリティ グループ
 
-        さまざまな種類のグループの詳細については、「グループの比較」 [を参照してください](../create-groups/compare-groups.md)。
+        さまざまな種類のグループの詳細については、「グループの [比較](../create-groups/compare-groups.md)」を参照してください。
 
-    - Power Automate で Office スクリプトを使用する方法 (データ損失防止ポリシーの影響など) の詳細については、「run Office Scripts with Power Automate」を[参照してください](/office/dev/scripts/develop/power-automate-integration)。
+    - Power AutomateでOfficeスクリプトを使用する方法の詳細については[、「Power AutomateでOfficeスクリプトを実行](/office/dev/scripts/develop/power-automate-integration)する」を参照してください。
 
 8. **[保存]** を選択します。
 
-    スクリプト設定の変更が有効になOffice最大 48 時間かかる場合があります。
+    Officeスクリプトの設定の変更が有効になるためには、最大 48 時間かかることがあります。
 
 ## <a name="next-steps"></a>次の手順
 
-Office スクリプトは Power Automate で動作しますので、ユーザーが Office スクリプトを使用している間に組織のデータが保護されたままになるために、既存のデータ損失防止 (DLP) ポリシーを確認することをお勧めします。 詳細については、「データ損失 [防止 (DLP) ポリシー」を参照してください](/power-automate/prevent-data-loss)。
+OfficeスクリプトはPower Automateと連携するため、既存のデータ損失防止 (DLP) ポリシーを確認して、ユーザーがOffice スクリプトを使用している間も組織のデータが保護されたままであることを確認することをお勧めします。 詳細については、「 [データ損失防止 (DLP) ポリシー](/power-automate/prevent-data-loss)」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Officeスクリプトの技術ドキュメント](/office/dev/scripts/)(リンク ページ)\
-[[スクリプトOfficeの概要 (](https://support.microsoft.com/office/9fbe283d-adb8-4f13-a75b-a81c6baf163a)記事Excel)\
-[Web OfficeスクリプトExcel共有](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b)する (記事)\
-[スクリプトを記録、編集、およびOfficeする (Excel on the web)](/office/dev/scripts/tutorials/excel-tutorial)
+[Office スクリプトのテクニカル ドキュメント](/office/dev/scripts/)(リンク ページ)\
+[ExcelのOfficeスクリプトの概要](https://support.microsoft.com/office/9fbe283d-adb8-4f13-a75b-a81c6baf163a)(記事)\
+[Web 用ExcelでOfficeスクリプトを共有](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b)する (記事)\
+[Excel on the webでOfficeスクリプトを記録、編集、作成](/office/dev/scripts/tutorials/excel-tutorial)する (記事)

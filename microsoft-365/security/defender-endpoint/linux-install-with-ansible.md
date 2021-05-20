@@ -1,8 +1,8 @@
 ---
-title: Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
+title: Linux でエンドポイント用のマイクロソフト ディフェンダーを展開する
 ms.reviewer: ''
-description: Ansible を使用して Microsoft Defender for Endpoint を Linux に展開する方法について説明します。
-keywords: microsoft、 defender、 Microsoft Defender for Endpoint, Linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+description: Ansible を使用して Linux 上にエンドポイント用のマイクロソフト ディフェンダーを展開する方法について説明します。
+keywords: マイクロソフト, ディフェンダー, エンドポイント用マイクロソフトディフェンダー, Linux, インストール, 展開, アンインストール, 人形, アンシブル, Linux, Redhat, ubuntu, Debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cd544ca3d714ea46c74e10f8aba5e46dc0e1b35
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 36095f14ad3ed71c6a8d4707522c08c07ea738c4
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280995"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572731"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Linux でエンドポイント用のマイクロソフト ディフェンダーを展開する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,28 +34,28 @@ ms.locfileid: "52280995"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> エンドポイントのディフェンダーを体験したいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-この記事では、Ansible を使用して Defender for Endpoint を Linux に展開する方法について説明します。 展開が成功するには、次のすべてのタスクを完了する必要があります。
+この記事では、Ansible を使用して Linux 上のエンドポイント用の Defender をデプロイする方法について説明します。 展開が正常に完了するには、次のすべてのタスクを完了する必要があります。
 
-- [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)
-- [Ansible YAML ファイルの作成](#create-ansible-yaml-files)
+- [オンボード パッケージのダウンロード](#download-the-onboarding-package)
+- [アンシブル YAML ファイルの作成](#create-ansible-yaml-files)
 - [展開](#deployment)
 - [References](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
-開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、メインの [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) ページを参照してください。
+開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については [、Linux のエンドポイントのメイン Defender](microsoft-defender-endpoint-linux.md) ページを参照してください。
 
-さらに、Ansible 展開では、Ansible 管理タスクを理解し、Ansible を構成し、プレイブックとタスクを展開する方法を理解する必要があります。 Ansible には、同じタスクを実行する多くの方法があります。 これらの手順では、パッケージの展開に役立つ *apt* や *unarchive* など、サポートされている Ansible モジュールの可用性を前提とします。 組織で別のワークフローを使用する場合があります。 詳細については [、Ansible のドキュメント](https://docs.ansible.com/) を参照してください。
+さらに、Ansible 展開では、Ansible 管理タスクを理解し、Ansible を構成し、プレイブックとタスクの展開方法を知っている必要があります。 Ansible には、同じタスクを完了する多くの方法があります。 以下の手順では、パッケージの展開に役立つ *apt* や *アンアーカイブ* など、サポートされている Ansible モジュールの可用性を前提としています。 組織で別のワークフローを使用している場合があります。 詳細については [、Ansible のドキュメント](https://docs.ansible.com/) を参照してください。
 
-- Ansible は少なくとも 1 つのコンピューターにインストールする必要があります (Ansible はこれをコントロール ノードと呼び出します)。
-- コントロール ノードとすべての管理ノード (Defender for Endpoint がインストールされているデバイス) の間の管理者アカウント用に SSH を構成する必要があります。公開キー認証を使用して構成する必要があります。
-- 次のソフトウェアをすべての管理ノードにインストールする必要があります。
-  - curl
-  - python-apt
+- 少なくとも 1 台のコンピュータに Ansible をインストールする必要があります (Ansible はこれをコントロール ノードと呼びます)。
+- SSH は、コントロール ノードとすべての管理対象ノード (Endpoint 用 Defender がインストールされるデバイス) との間の管理者アカウント用に構成する必要があり、公開キー認証を使用して構成することをお勧めします。
+- すべての管理対象ノードに次のソフトウェアをインストールする必要があります。
+  - カール
+  - パイソン・アプト
 
-- すべての管理ノードは、関連するファイルに次の形式 `/etc/ansible/hosts` で一覧表示する必要があります。
+- すべての管理対象ノードは、以下の形式で `/etc/ansible/hosts` 、または関連ファイルにリストされている必要があります。
 
     ```bash
     [servers]
@@ -63,23 +63,23 @@ ms.locfileid: "52280995"
     host2 ansible_ssh_host=51.143.50.51
     ```
 
-- Ping テスト:
+- ping テスト:
 
     ```bash
     ansible -m ping all
     ```
 
-## <a name="download-the-onboarding-package"></a>オンボーディング パッケージをダウンロードする
+## <a name="download-the-onboarding-package"></a>オンボード パッケージのダウンロード
 
-次の方法でオンボーディング パッケージをMicrosoft Defender セキュリティ センター。
+Microsoft Defender セキュリティ センターからオンボーディング パッケージをダウンロードします。
 
-1. [Microsoft Defender セキュリティ センター] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
-2. 最初のドロップダウン メニューで、オペレーティング システム **として [Linux Server]** を選択します。 2 番目のドロップダウン メニューで、展開 **方法として [優先する Linux 構成管理ツール** ] を選択します。
-3. [オンボード **パッケージのダウンロード] を選択します**。 ファイルを [ファイル名] WindowsDefenderATPOnboardingPackage.zip。
+1. Microsoft Defender セキュリティ センターで、[**デバイス管理設定 >オンボード] >に移動** します。
+2. 最初のドロップダウン メニューで、オペレーティング システムとして **[Linux サーバー]** を選択します。 2 番目のドロップダウン メニューで、デプロイメント方法として **[好みの Linux 構成管理ツール** ]を選択します。
+3. [ **オンボード パッケージのダウンロード] を** 選択します。 ファイルをWindowsDefenderATPOnboardingPackage.zipとして保存します。
 
     ![Microsoft Defender セキュリティ センタースクリーンショット](images/atp-portal-onboarding-linux-2.png)
 
-4. コマンド プロンプトから、ファイルが存在するように確認します。 アーカイブの内容を抽出します。
+4. コマンド プロンプトで、ファイルがあることを確認します。 アーカイブの内容を抽出します。
 
     ```bash
     ls -l
@@ -96,11 +96,11 @@ ms.locfileid: "52280995"
     inflating: mdatp_onboard.json
     ```
 
-## <a name="create-ansible-yaml-files"></a>Ansible YAML ファイルの作成
+## <a name="create-ansible-yaml-files"></a>アンシブル YAML ファイルの作成
 
-プレイブックまたはタスクに貢献するサブタスクまたは役割ファイルを作成します。
+プレイブックまたはタスクに貢献するサブタスクまたはロール ファイルを作成します。
 
-- オンボーディング タスクを作成します `onboarding_setup.yml` 。
+- オンボーディング タスクを作成 `onboarding_setup.yml` します。
 
     ```bash
     - name: Create MDATP directories
@@ -127,23 +127,23 @@ ms.locfileid: "52280995"
       when: not mdatp_onboard.stat.exists
     ```
 
-- Defender for Endpoint リポジトリとキーを追加します。
+- エンドポイントリポジトリとキーの防御を追加 `add_apt_repo.yml` します。
 
-    Defender for Endpoint on Linux は、以下のいずれかのチャネル *([channel]* と示す) から展開できます。insiders-fast *、insiders-slow、**または prod* です。 これらの各チャネルは、Linux ソフトウェア リポジトリに対応します。
+    Linux 上のエンドポイントの防御者は、次のいずれかのチャネル (以下に *[channel]* と示す ) から展開できます: *内部関係者の高速*、 *内部の遅い*、または *prod*.これらのチャネルは、Linux ソフトウェア リポジトリに対応します。
 
-    チャネルの選択によって、デバイスに提供される更新プログラムの種類と頻度が決されます。 *insiders-fast* のデバイスは、更新プログラムと新機能を受け取る最初のデバイスで、後で *insiders-slow* と最後に *prod が続きます*。
+    チャンネルの選択によって、デバイスに提供される更新の種類と頻度が決まります。 *インサイダー・ファスト* のデバイスは、アップデートや新機能を受け取る最初のデバイスで、後に *インサイダースロー* と最後に *prod*.
 
-    新機能をプレビューし、早期のフィードバックを提供するために、インサイダー高速またはインサイダー低速のいずれかを使用するために、企業の一部のデバイスを構成をお *勧めします*。
+    新機能をプレビューし、早期にフィードバックを提供するために、企業内の一部のデバイスを *、インサイダー高速* または *インサイダースロー* のいずれかを使用するように設定することをお勧めします。
 
     > [!WARNING]
-    > 最初のインストール後にチャネルを切り替える場合は、製品を再インストールする必要があります。 製品チャネルを切り替える: 既存のパッケージをアンインストールし、新しいチャネルを使用するデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
+    > 初期インストール後にチャネルを切り替える場合は、製品を再インストールする必要があります。 製品チャネルを切り替えるには:既存のパッケージをアンインストールし、新しいチャネルを使用するようにデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
 
-    配布とバージョンをメモし、その下の最も近いエントリを識別します `https://packages.microsoft.com/config/` 。
+    ディストリビューションとバージョンをメモし、 の下で最も近いエントリを特定 `https://packages.microsoft.com/config/` します。
 
-    次のコマンドで *、[distro]* と *[version]* を、特定した情報に置き換える必要があります。
+    次のコマンドでは *、[distro]* と *[version] を* 、指定した情報に置き換えます。
 
     > [!NOTE]
-    > Oracle Linux の場合 *、[distro] を "rhel"* に置き換える。
+    > Oracle Linuxの場合は *、[distro]を"rhel"* に置き換えてください。
 
   ```bash
   - name: Add Microsoft APT key
@@ -179,7 +179,7 @@ ms.locfileid: "52280995"
 
 - Ansible インストールを作成し、YAML ファイルをアンインストールします。
 
-    - apt ベースの配布では、次の YAML ファイルを使用します。
+    - apt ベースのディストリビューションの場合は、次の YAML ファイルを使用します。
 
         ```bash
         cat install_mdatp.yml
@@ -208,7 +208,7 @@ ms.locfileid: "52280995"
                 state: absent
         ```
 
-    - dnf ベースの配布では、次の YAML ファイルを使用します。
+    - dnf ベースのディストリビューションの場合は、次の YAML ファイルを使用します。
 
         ```bash
         cat install_mdatp_dnf.yml
@@ -239,16 +239,16 @@ ms.locfileid: "52280995"
 
 ## <a name="deployment"></a>展開
 
-次に、タスク ファイルを下または関連 `/etc/ansible/playbooks/` するディレクトリで実行します。
+次に、タスク ファイルを `/etc/ansible/playbooks/` または関連するディレクトリで実行します。
 
-- インストール:
+- 取り付け：
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
     ```
 
 > [!IMPORTANT]
-> 製品が初めて起動すると、最新のマルウェア対策定義がダウンロードされます。 インターネット接続によっては、数分かかる場合があります。
+> 製品が初めて起動すると、最新のマルウェア対策定義がダウンロードされます。 インターネット接続によっては、この処理に数分かかる場合があります。
 
 - 検証/構成:
 
@@ -265,23 +265,23 @@ ms.locfileid: "52280995"
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## <a name="log-installation-issues"></a>ログ インストールの問題
+## <a name="log-installation-issues"></a>ログのインストールに関する問題
 
-エラー [が発生した場合](linux-resources.md#log-installation-issues) にインストーラーによって作成される自動的に生成されたログを検索する方法の詳細については、「Log installation issues」を参照してください。
+エラーが発生したときにインストーラーによって自動的に生成されたログを検索する方法の詳細については、「 [ログのインストールに関](linux-resources.md#log-installation-issues) する問題」を参照してください。
 
 ## <a name="operating-system-upgrades"></a>オペレーティング システムのアップグレード
 
-オペレーティング システムを新しいメジャー バージョンにアップグレードする場合は、まず、Linux 上の Defender for Endpoint をアンインストールし、アップグレードをインストールし、最後にデバイス上で Defender for Endpoint on Linux を再構成する必要があります。
+オペレーティングシステムを新しいメジャーバージョンにアップグレードする場合は、まずLinux上でエンドポイント用のDefenderをアンインストールし、アップグレードをインストールし、最後にデバイス上のLinux上でエンドポイント用のDefenderを再設定する必要があります。
 
 ## <a name="references"></a>関連情報
 
 - [YUM リポジトリの追加または削除](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
 
-- [dnf パッケージ マネージャーを使用してパッケージを管理する](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html)
+- [dnf パッケージマネージャーを使用してパッケージを管理する](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html)
 
 - [APT リポジトリの追加と削除](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
-- [apt-packages の管理](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
+- [apt-パッケージの管理](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
 ## <a name="see-also"></a>関連項目
 - [エージェントの正常性に関する問題の調査](health-status.md)

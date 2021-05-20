@@ -15,12 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: de739ca3c6a4ab305b575fa7e2f419d044d997a8
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/17/2021
+ms.openlocfilehash: d10343538c995534878196cc57092c37fd2dcf7b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274973"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538065"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>除外を定義する際に避ける必要のある一般的な間違い
 
@@ -36,11 +37,223 @@ ms.locfileid: "52274973"
 
 特定のファイル、ファイルの種類、フォルダー、またはプロセスは、悪意のあるものではないと信頼している場合でも、スキャンから除外する必要があります。 
 
-次の表に示すフォルダーの場所、ファイル拡張子、およびプロセスの除外を定義しない。
+次のセクションに記載されているフォルダーの場所、ファイル拡張子、およびプロセスの除外を定義しない。
+- フォルダーの場所
+- ファイル拡張子
+- プロセス
 
-| フォルダーの場所 | ファイル拡張子 | プロセス |
-|:--|:--|:--|
-| `%systemdrive%` <br/> `C:`<br/> `C:\` <br/> `C:\*` <br/> `%ProgramFiles%\Java` <br/> `C:\Program Files\Java` <br/> `%ProgramFiles%\Contoso\` <br/> `C:\Program Files\Contoso\` <br/> `%ProgramFiles(x86)%\Contoso\` <br/> `C:\Program Files (x86)\Contoso\` <br/> `C:\Temp` <br/> `C:\Temp\` <br/> `C:\Temp\*` <br/> `C:\Users\` <br/> `C:\Users\*` <br/> `C:\Users\<UserProfileName>\AppData\Local\Temp\` <br/> `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\` <br/> `C:\Users\<UserProfileName>\AppData\Roaming\Temp\` <br/> `%Windir%\Prefetch` <br/> `C:\Windows\Prefetch` <br/> `C:\Windows\Prefetch\` <br/> `C:\Windows\Prefetch\*` <br/> `%Windir%\System32\Spool` <br/> `C:\Windows\System32\Spool` <br/> `C:\Windows\System32\CatRoot2` <br/> `%Windir%\Temp` <br/> `C:\Windows\Temp` <br/> `C:\Windows\Temp\` <br/> `C:\Windows\Temp\*` | `.7z` <br/> `.bat` <br/> `.bin` <br/> `.cab` <br/> `.cmd` <br/> `.com` <br/> `.cpl` <br/> `.dll` <br/> `.exe` <br/> `.fla` <br/> `.gif` <br/> `.gz` <br/> `.hta` <br/> `.inf` <br/> `.java` <br/> `.jar` <br/> `.job` <br/> `.jpeg` <br/> `.jpg` <br/> `.js` <br/> `.ko` <br/> `.ko.gz` <br/> `.msi` <br/> `.ocx` <br/> `.png` <br/> `.ps1` <br/> `.py` <br/> `.rar` <br/> `.reg` <br/> `.scr` <br/> `.sys` <br/> `.tar` <br/> `.tmp` <br/> `.url` <br/> `.vbe` <br/> `.vbs` <br/> `.wsf` <br/> `.zip` | `AcroRd32.exe` <br/> `bitsadmin.exe` <br/> `excel.exe` <br/> `iexplore.exe` <br/> `java.exe` <br/> `outlook.exe` <br/> `psexec.exe` <br/> `powerpnt.exe` <br/> `powershell.exe` <br/> `schtasks.exe`  <br/> `svchost.exe` <br/>`wmic.exe` <br/> `winword.exe` <br/> `wuauclt.exe` <br/> `addinprocess.exe` <br/> `addinprocess32.exe` <br/> `addinutil.exe` <br/> `bash.exe` <br/> `bginfo.exe`[1] <br/>`cdb.exe` <br/> `csi.exe` <br/> `dbghost.exe` <br/> `dbgsvc.exe` <br/> `dnx.exe` <br/> `fsi.exe` <br/> `fsiAnyCpu.exe` <br/> `kd.exe` <br/> `ntkd.exe` <br/> `lxssmanager.dll` <br/> `msbuild.exe`[2] <br/> `mshta.exe` <br/> `ntsd.exe` <br/> `rcsi.exe` <br/> `system.management.automation.dll` <br/> `windbg.exe` |
+### <a name="folder-locations"></a>フォルダーの場所
+
+一般に、次のフォルダーの場所に対して除外を定義しない。
+
+`%systemdrive%` 
+
+`C:`
+
+`C:\`
+
+`C:\*`
+
+`%ProgramFiles%\Java`
+
+`C:\Program Files\Java` 
+
+`%ProgramFiles%\Contoso\` 
+
+`C:\Program Files\Contoso\` 
+
+`%ProgramFiles(x86)%\Contoso\` 
+
+`C:\Program Files (x86)\Contoso\`
+
+`C:\Temp`
+
+`C:\Temp\`
+
+`C:\Temp\*`
+
+`C:\Users\`
+
+`C:\Users\*`
+
+`C:\Users\<UserProfileName>\AppData\Local\Temp\`**次の例外に注意してください:SharePoint** でファイル レベルのウイルス対策保護を使用する場合 `C:\Users\ServiceAccount\AppData\Local\Temp` [は除外SharePoint。](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
+
+`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`**次の例外に注意してください:SharePoint** でファイル レベルのウイルス対策保護を使用する場合 `C:\Users\Default\AppData\Local\Temp` [は除外SharePoint。](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
+
+`%Windir%\Prefetch`
+
+`C:\Windows\Prefetch`
+
+`C:\Windows\Prefetch\`
+
+`C:\Windows\Prefetch\*`
+
+`%Windir%\System32\Spool`
+
+`C:\Windows\System32\Spool`
+
+`C:\Windows\System32\CatRoot2`
+`%Windir%\Temp`
+
+`C:\Windows\Temp`
+
+`C:\Windows\Temp\`
+
+`C:\Windows\Temp\*`
+
+### <a name="file-extensions"></a>ファイル拡張子
+
+一般に、次のファイル拡張子の除外は定義しない。
+
+`.7z`
+
+`.bat`
+
+`.bin`
+
+`.cab`
+
+`.cmd`
+
+`.com` 
+
+`.cpl`
+
+`.dll`
+
+`.exe`
+
+`.fla`
+
+`.gif`
+
+`.gz`
+
+`.hta`
+
+`.inf`
+
+`.java`
+
+`.jar`
+
+`.job`
+
+`.jpeg`
+
+`.jpg`
+
+`.js`
+
+`.ko`
+
+`.ko.gz`
+
+`.msi`
+
+`.ocx`
+
+`.png`
+
+`.ps1`
+
+`.py`
+
+`.rar`
+
+`.reg`
+
+`.scr`
+
+`.sys`
+
+`.tar`
+
+`.tmp`
+
+`.url`
+
+`.vbe`
+
+`.vbs`
+
+`.wsf`
+
+`.zip`
+
+### <a name="processes"></a>プロセス 
+
+一般に、次のプロセスの除外を定義しない。
+
+`AcroRd32.exe`  
+
+`bitsadmin.exe`  
+
+`excel.exe`  
+
+`iexplore.exe`  
+
+`java.exe`  
+
+`outlook.exe`  
+
+`psexec.exe`  
+
+`powerpnt.exe`  
+
+`powershell.exe`  
+
+`schtasks.exe`
+
+`svchost.exe` 
+
+`wmic.exe`  
+
+`winword.exe`  
+
+`wuauclt.exe`  
+
+`addinprocess.exe`  
+
+`addinprocess32.exe`  
+
+`addinutil.exe`  
+
+`bash.exe`  
+
+`bginfo.exe` 
+
+`cdb.exe`  
+
+`csi.exe`  
+
+`dbghost.exe`  
+
+`dbgsvc.exe`  
+
+`dnx.exe`  
+
+`fsi.exe`  
+
+`fsiAnyCpu.exe`  
+
+`kd.exe`  
+
+`ntkd.exe`  
+
+`lxssmanager.dll`  
+
+`msbuild.exe` 
+
+`mshta.exe`  
+
+`ntsd.exe`  
+
+`rcsi.exe`  
+
+`system.management.automation.dll`  
+
+`windbg.exe`
 
 > [!NOTE]
 > ファイルの種類 (、など) を除外するか、環境に最新の最新のソフトウェアを適用し、厳密な更新ポリシーを使用して脆弱性を処理する場合に `.gif` `.jpg` `.jpeg` `.png` 選択できます。

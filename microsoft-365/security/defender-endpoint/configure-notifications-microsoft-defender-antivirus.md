@@ -1,7 +1,7 @@
 ---
-title: 通知Microsoft Defender ウイルス対策構成する
-description: エンドポイントの標準通知と追加の通知の両方を構成Microsoft Defender ウイルス対策する方法について説明します。
-keywords: 通知, Defender, ウイルス対策, エンドポイント, 管理, 管理者
+title: Microsoft Defender ウイルス対策通知の構成
+description: エンドポイントで標準通知と追加Microsoft Defender ウイルス対策通知の両方を構成およびカスタマイズする方法について説明します。
+keywords: 通知, 擁護者, ウイルス対策, エンドポイント, 管理, 管理者
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,105 +11,100 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 05/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6e11c9394f250a6f3882183224f53954b1390a23
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f885b6d7991e4175cd14be5bbe9e0a7c96b1580f
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274630"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572347"
 ---
 # <a name="configure-the-notifications-that-appear-on-endpoints"></a>エンドポイントに表示される通知を構成する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-このWindows 10、マルウェアの検出と修復に関するアプリケーション通知は、より堅牢で一貫性があり、簡潔です。
+Windows 10では、マルウェアの検出と修復に関するアプリケーション通知がより堅牢で、一貫性があり、簡潔になります。
 
-手動でトリガーされ、スケジュールされたスキャンが完了し、脅威が検出されると、エンドポイントに通知が表示されます。 これらの通知は通知センター **にも表示** され、スキャンと脅威検出の概要は一定の間隔で表示されます。
+手動でトリガーされ、スケジュールされたスキャンが完了し、脅威が検出されると、エンドポイントに通知が表示されます。 これらの通知は **通知センター** にも表示され、スキャンと脅威検出の概要は一定の間隔で表示されます。
 
-また、再起動の通知や脅威が検出され修復された場合など、エンドポイントでの標準通知の表示方法を構成することもできます。
+また、再起動の通知や脅威が検出および修復された場合など、エンドポイントでの標準通知の表示方法を構成することもできます。
 
 ## <a name="configure-the-additional-notifications-that-appear-on-endpoints"></a>エンドポイントに表示される追加の通知を構成する
 
-最近の脅威検出の概要など、追加の通知の表示は、Windows セキュリティグループ ポリシー[で](microsoft-defender-security-center-antivirus.md)構成できます。
+最新の脅威検出の概要などの追加の通知の表示は[、Windows セキュリティ アプリ](microsoft-defender-security-center-antivirus.md)とグループ ポリシーで構成できます。
 
 > [!NOTE]
-> このWindows 10バージョン 1607 では、この機能は拡張通知と呼ばされ、[更新プログラムの更新] Windows 設定で&  >  **構成**  >  Windows Defender。 すべてのバージョンのグループ ポリシー設定で、Windows 10拡張通知 **と呼ばれる。**
+> Windows 10 バージョン 1607 では、この機能は **拡張通知** と呼ばれ  >  **、Windows 設定 Update & セキュリティ**  >  **Windows Defender** で構成できます。 すべてのバージョンのWindows 10のグループ ポリシー設定では、**拡張通知** と呼ばれます。
 
 > [!IMPORTANT]
-> 追加の通知を無効にすると、脅威の検出や修復アラートなどの重要な通知は無効にされません。
+> 追加の通知を無効にしても、脅威の検出や修復のアラートなどの重要な通知は無効にされません。
 
-**追加の通知Windows セキュリティ無効にするには、次のアプリを使用します。**
+**Windows セキュリティ アプリを使用して、追加の通知を無効にします。**
 
-1. タスク バーのWindows セキュリティをクリックするか、Defender のスタート メニューを検索して、アプリを開 **きます**。
+1. タスク バーの盾アイコンをクリックするか、または [**セキュリティ**] の [スタート] メニューを検索して、Windows セキュリティ アプリを開きます。
 
-2. [ウイルス **対策]** &タイル (または左側のメニュー バーのシールド アイコン) をクリックし、[ウイルス対策] &設定ラベルを **クリック** します。
+2. [**ウイルス&脅威対策** タイル(または左側のメニュー バーの盾アイコン)を選択し、[**ウイルス&脅威対策の設定**] を選択します。
 
-    ![Windows セキュリティ アプリの [ウイルスと脅威の防止の設定] ラベルのスクリーンショット](images/defender/wdav-protection-settings-wdsc.png)
+3. [ **通知** ] セクションまでスクロールし、[ **通知設定の変更**] をクリックします。
 
-3. [通知] セクションまで **スクロールし** 、[通知設定の **変更] をクリックします**。
+4. スイッチを **[オフ]** または **[オン] に** スライドして、追加の通知を無効または有効にします。
 
-4. スイッチを Off または **On にスライド****して**、追加の通知を無効または有効にします。
+**グループ ポリシーを使用して、追加の通知を無効にする:**
 
-**グループ ポリシーを使用して、追加の通知を無効にします。**
+1. グループ ポリシー管理コンピュータで、[グループ [ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))] を開き、構成するグループ ポリシー オブジェクトを右クリックして 、[ **編集**] をクリックします。
 
-1. グループ ポリシー管理コンピューターで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] をクリック **します**。
+2. グループ **ポリシー管理エディタ** で、[ **コンピュータの構成]** に移動します。
 
-2. グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動します**。
+3. [ **管理用テンプレート**] をクリックします。
 
-3. [管理 **用テンプレート] をクリックします**。
+4. ツリーを展開して **コンポーネントをWindows> Microsoft Defender ウイルス対策 >レポート** を作成します。
 
-4. ツリーを展開して、[**レポートWindowsコンポーネント> Microsoft Defender ウイルス対策 >展開します**。
+5. [ **拡張通知をオフにする** ] をダブルクリックし、オプションを **[有効]** に設定します。 [**OK**] をクリックします。 これにより、追加の通知が表示されなくなります。
 
-5. [拡張通知を **オフにする] をダブルクリック** し、オプションを [有効] に **設定します**。 [**OK**] をクリックします。 これにより、追加の通知が表示されません。
+## <a name="configure-standard-notifications-on-endpoints"></a>エンドポイントでの標準通知の構成
 
-## <a name="configure-standard-notifications-on-endpoints"></a>エンドポイントの標準通知を構成する
+グループ ポリシーを使用すると、次のことができます。
 
-グループ ポリシーを使用すると、次の場合に使用できます。
-
-- ユーザーがアクションを実行する必要がある場合に、エンドポイントに追加のカスタマイズされたテキストを表示する
+- ユーザーがアクションを実行する必要がある場合にエンドポイントに追加のカスタマイズテキストを表示する
 - エンドポイントのすべての通知を非表示にする
-- エンドポイントで再起動通知を非表示にする
+- エンドポイントでの再起動通知を非表示にする
 
-通知の非表示は、インターフェイス全体を非表示にできない状況Microsoft Defender ウイルス対策があります。 詳細[については、「ユーザーがユーザー](prevent-end-user-interaction-microsoft-defender-antivirus.md)インターフェイスを表示または操作Microsoft Defender ウイルス対策する」を参照してください。 
+通知を非表示にすると、Microsoft Defender ウイルス対策インターフェイス全体を非表示にできない場合に便利です。 詳細については[、「Microsoft Defender ウイルス対策ユーザー インターフェイスをユーザーが表示したり、操作したりできないように](prevent-end-user-interaction-microsoft-defender-antivirus.md)する」を参照してください。 
 
 > [!NOTE]
-> 通知の非表示は、ポリシーが展開されたエンドポイントでのみ発生します。 実行する必要があるアクション (再起動など) に関連する通知は、監視ダッシュボードとレポートMicrosoft エンドポイント マネージャー Endpoint Protection[表示されます](/configmgr/protect/deploy-use/monitor-endpoint-protection)。 
+> 通知を非表示にするのは、ポリシーが展開されているエンドポイントでのみ発生します。 実行する必要があるアクションに関連する通知 (再起動など) は[、Microsoft エンドポイント マネージャー Endpoint Protection監視ダッシュボードとレポート](/configmgr/protect/deploy-use/monitor-endpoint-protection)に表示されます。 
 
-ユーザー[がコンピューターにWindows セキュリティ](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)通知にカスタム連絡先情報を追加する手順については、「組織のアプリをカスタマイズする」を参照してください。
+ユーザーが自分のコンピューターに表示される通知にカスタム連絡先情報を追加する手順については、「[組織のWindows セキュリティアプリをカスタマイズ](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)する」をご覧ください。
 
 **グループ ポリシーを使用して通知を非表示にする:**
 
-1. グループ ポリシー管理コンピューターで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] をクリック **します**。
+1. グループ ポリシー管理コンピュータで、グループ [ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))を開き、構成するグループ ポリシー オブジェクトを右クリックして、[ **編集**] をクリックします。
 
-2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に **移動し、[** 管理用 **テンプレート] をクリックします**。
+2. グループ **ポリシー管理エディタ** で[ **コンピュータの構成]** に移動し、[ **管理用テンプレート**]をクリックします。
 
-3. ツリーを展開して **、Windowsインターフェイス> Microsoft Defender ウイルス対策 >コンポーネントを表示します**。 
+3. ツリーを展開して **、クライアント インターフェイス> Microsoft Defender ウイルス対策 >コンポーネントをWindows** します。 
 
-4. [すべての通知を **非表示にする] をダブルクリック** し、オプションを [有効] に **設定します**。 [**OK**] をクリックします。 これにより、追加の通知が表示されません。
+4. [ **すべての通知を抑制** する] をダブルクリックし、オプションを **[有効]** に設定します。 [**OK**] をクリックします。 これにより、追加の通知が表示されなくなります。
 
-**グループ ポリシーを使用して再起動通知を非表示にします。**
+**グループ ポリシーを使用して再起動通知を非表示にする:**
 
-1. グループ ポリシー管理コンピューターで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] をクリック **します**。
+1. グループ ポリシー管理コンピュータで、[グループ [ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))] を開き、構成するグループ ポリシー オブジェクトを右クリックして 、[ **編集**] をクリックします。
 
-2. グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動します**。
+2. グループ **ポリシー管理エディタ** で、[ **コンピュータの構成]** に移動します。
 
-3. [管理 **用テンプレート] をクリックします**。
+3. [ **管理用テンプレート**] をクリックします。
 
-4. ツリーを展開して **、Windowsインターフェイス> Microsoft Defender ウイルス対策 >コンポーネントを表示します**。
+4. ツリーを展開して **、クライアント インターフェイス> Microsoft Defender ウイルス対策 >コンポーネントをWindows** します。
 
-5. [再起動通知を **抑制する] をダブルクリックし** 、オプションを [有効] に **設定します**。 [**OK**] をクリックします。 これにより、追加の通知が表示されません。
+5. [ **再起動通知を抑制する** ] をダブルクリックし、オプションを **[有効]** に設定します。 [**OK**] をクリックします。 これにより、追加の通知が表示されなくなります。
 
 ## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
-- [ユーザーとのエンド ユーザー操作を構成Microsoft Defender ウイルス対策](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策とのエンド ユーザーの対話を構成する](configure-end-user-interaction-microsoft-defender-antivirus.md)

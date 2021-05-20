@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 03/03/2021
+ms.date: 05/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 3d26e2c134f5f9794f7acd41e49c27bd9f331153
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 5bbcf885ec160204916507aee60398aee35e470b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932645"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538053"
 ---
 # <a name="migrate-from-mcafee-to-microsoft-defender-for-endpoint"></a>McAfee から Microsoft Defender for Endpoint への移行
 
@@ -35,7 +35,7 @@ ms.locfileid: "51932645"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-McAfee Endpoint Security (McAfee) から Microsoft [Defender for](https://docs.microsoft.com/windows/security/threat-protection) Endpoint (Microsoft Defender for Endpoint) に切り替える予定の場合は、適切な場所にいます。 この記事をガイドとして使用します。
+McAfee Endpoint Security (McAfee) から Microsoft [Defender for](microsoft-defender-endpoint.md) Endpoint (Microsoft Defender for Endpoint) に切り替える予定の場合は、適切な場所にいます。 この記事をガイドとして使用します。
 
 
 :::image type="content" source="images/mcafee-mde-migration.png" alt-text="McAfee から Defender for Endpoint への移行の概要":::
@@ -51,25 +51,25 @@ McAfee から Microsoft Defender for Endpoint に切り替える場合は、準�
 |段階 |説明 |
 |--|--|
 |[移行の準備](mcafee-to-microsoft-defender-prepare.md) |準備フェーズ [**では**](mcafee-to-microsoft-defender-prepare.md)、組織のデバイスを更新し、Microsoft Defender for Endpoint を取得し、役割とアクセス許可を計画し、組織のデバイスへのアクセスを許可Microsoft Defender セキュリティ センター。 また、デバイス プロキシとインターネット設定を構成して、組織のデバイスと Microsoft Defender for Endpoint 間の通信を有効にします。 |
-|[エンドポイント用 Microsoft Defender のセットアップ](mcafee-to-microsoft-defender-setup.md) |セットアップ[](mcafee-to-microsoft-defender-setup.md)フェーズでは、Microsoft Defender ウイルス対策 を有効にしてパッシブ モードに設定し、Microsoft Defender ウイルス対策、Microsoft Defender for Endpoint、McAfee の設定 & 除外を構成します。 デバイス グループ、コレクション、および組織単位も作成します。 最後に、マルウェア対策ポリシーとリアルタイム保護設定を構成します。|
-|[エンドポイント用 Microsoft Defender にオンボード](mcafee-to-microsoft-defender-onboard.md) |オンボード フェーズ [**中に**](mcafee-to-microsoft-defender-onboard.md) 、デバイスを Microsoft Defender for Endpoint にオンボードし、それらのデバイスが Microsoft Defender for Endpoint と通信しているのを確認します。 最後に、McAfee をアンインストールし、Microsoft Defender for Endpoint Microsoft Defender ウイルス対策 &を使用した保護がアクティブ モードに設定されています。 |
+|[エンドポイント用 Microsoft Defender のセットアップ](mcafee-to-microsoft-defender-setup.md) |セットアップ フェーズ [**中に**](mcafee-to-microsoft-defender-setup.md)、ユーザー設定を有効Microsoft Defender ウイルス対策パッシブ モードに設定します。 また、既存のエンドポイント&ソリューションMicrosoft Defender ウイルス対策の設定を構成します。 次に、デバイス グループ、コレクション、および組織単位を作成します。 最後に、マルウェア対策ポリシーとリアルタイム保護設定を構成します。|
+|[エンドポイント用 Microsoft Defender にオンボード](mcafee-to-microsoft-defender-onboard.md) |オンボード フェーズ [**中**](mcafee-to-microsoft-defender-onboard.md)に、デバイスを Microsoft Defender for Endpoint にオンボードし、Microsoft Defender ウイルス対策 がパッシブ モードで実行されているのを確認し、エンドポイントが Defender for Endpoint と通信しているのを確認します。 次に、McAfee をアンインストールし、Defender for Endpoint が正しく動作するようにします。 |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に含まれるもの
 
-この移行ガイドでは、Microsoft Defender [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) for Endpoint[](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)への移行の開始点として、次世代の保護とエンドポイントの検出および応答機能に重点を置いています。 ただし、Microsoft Defender for Endpoint には、ウイルス対策やエンドポイント保護以外の機能が含まれています。 Microsoft Defender for Endpoint は、予防的な保護、侵害後の検出、自動調査、対応のための統一されたプラットフォームです。 次の表に、Microsoft Defender for Endpoint の機能の概要を示します。 
+この移行ガイドでは、Microsoft Defender [](microsoft-defender-antivirus-in-windows-10.md) for Endpoint[](overview-endpoint-detection-response.md)への移行の開始点として、次世代の保護とエンドポイントの検出および応答機能に重点を置いています。 ただし、Microsoft Defender for Endpoint には、ウイルス対策やエンドポイント保護以外の機能が含まれています。 Microsoft Defender for Endpoint は、予防的な保護、侵害後の検出、自動調査、対応のための統一されたプラットフォームです。 次の表に、Microsoft Defender for Endpoint の機能の概要を示します。 
 
 | 機能/機能 | 説明 |
 |---|---|
-| [脅威と脆弱性の管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | 脅威& 脆弱性の管理機能は、エンドポイント (デバイスなど) 全体の弱点を特定、評価、修復するのに役立ちます。 |
-| [攻撃面の減少](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) | 攻撃表面の縮小ルールは、組織のデバイスとアプリケーションをサイバー脅威や攻撃から保護するのに役立ちます。 |
-| [次世代の保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | 次世代の保護には、脅威Microsoft Defender ウイルス対策マルウェアをブロックする機能が含まれています。 |
-| [エンドポイントでの検出と対応](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | エンドポイントの検出および応答機能は、侵入の試みとアクティブな侵害を検出、調査、および対応します。  |
+| [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md) | 脅威& 脆弱性の管理機能は、エンドポイント (デバイスなど) 全体の弱点を特定、評価、修復するのに役立ちます。 |
+| [攻撃面の減少](overview-attack-surface-reduction.md) | 攻撃表面の縮小ルールは、組織のデバイスとアプリケーションをサイバー脅威や攻撃から保護するのに役立ちます。 |
+| [次世代の保護](microsoft-defender-antivirus-in-windows-10.md) | 次世代の保護には、脅威Microsoft Defender ウイルス対策マルウェアをブロックする機能が含まれています。 |
+| [エンドポイントでの検出と対応](overview-endpoint-detection-response.md) | エンドポイントの検出および応答機能は、侵入の試みとアクティブな侵害を検出、調査、および対応します。  |
 | [高度な追求](advanced-hunting-overview.md) | 高度な検出機能により、セキュリティ運用チームは既知または潜在的な脅威のインジケーターとエンティティを検索できます。 |
-| [動作ブロックと封じ込め](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | 動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作に基づいて脅威を特定し、停止し、ツリーを処理するのに役立ちます。 |
-| [調査と修復の自動化](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) | 自動調査および応答機能は、アラートを調べ、侵害を解決するために直ちに修復アクションを実行します。 |
-| [脅威の検出サービス](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts)(Microsoft 脅威エキスパート) | 脅威検出サービスは、セキュリティ運用チームに専門家レベルの監視と分析を提供し、重要な脅威を見逃しなくするために役立ちます。 |
+| [動作ブロックと封じ込め](behavioral-blocking-containment.md) | 動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作に基づいて脅威を特定し、停止し、ツリーを処理するのに役立ちます。 |
+| [調査と修復の自動化](automated-investigations.md) | 自動調査および応答機能は、アラートを調べ、侵害を解決するために直ちに修復アクションを実行します。 |
+| [脅威の検出サービス](microsoft-threat-experts.md)(Microsoft 脅威エキスパート) | 脅威検出サービスは、セキュリティ運用チームに専門家レベルの監視と分析を提供し、重要な脅威を見逃しなくするために役立ちます。 |
 
-**詳細については、次の情報を参照してください。「Microsoft [Defender for Endpoint」を参照してください](https://docs.microsoft.com/windows/security/threat-protection)。**
+**詳細については、次の情報を参照してください。「Microsoft [Defender for Endpoint」を参照してください](microsoft-defender-endpoint.md)。**
 
 ## <a name="next-step"></a>次の手順
 

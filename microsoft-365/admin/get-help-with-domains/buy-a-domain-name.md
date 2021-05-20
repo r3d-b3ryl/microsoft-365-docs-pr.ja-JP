@@ -23,20 +23,23 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: ドメイン名を購入する方法については、Microsoft 365。
-ms.openlocfilehash: eb0520f605715c3403e1ce0134aa60abed0f6751
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 53c71796c09f08d1f50c58704b8dd95c1a241518
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470513"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537573"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
+
+> [!NOTE]
+> 組織が中国で 21Vianet がOffice 365している場合は、「How to buy a domain for Office 365 [21Vianet](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md)in China 」を参照してください。
 
  *追加、変更またはドメインを削除するには、[ビジネスまたはエンタープライズ プラン](https://products.office.com/business/office)の **グローバル管理者** である **必要** があります。これらの変更は、テナント全体、*カスタマイズ管理者* または *正規ユーザー* に影響を与え、変更を加えることはできません。*  
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして[ドメインを購入する設定 \> に \> 移動する
+## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして[ドメインを購入する設定 \> に \> 移動する
 
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
@@ -68,23 +71,21 @@ ms.locfileid: "51470513"
 > [!NOTE]
 > [ドメインの **購入] を** 選択すると、テナントが Microsoft パートナーを通じて購入または管理されている場合、Microsoft パートナーの Web サイトにリダイレクトされる場合があります。
 
-### <a name="domain-privacy"></a>ドメインのプライバシー
+## <a name="domain-privacy"></a>ドメインのプライバシー
 ドメインを購入すると、無料のドメイン プライバシー サブスクリプションが提供されます。 これにより、ICANN プライベートを使用してドメインの登録に関連付けられた連絡先情報が保持されます。 [詳細情報](https://whois.icann.org/en/privacy-and-proxy-services)
   
-### <a name="buy-a-domain-from-another-domain-registrar"></a>別のドメイン レジストラーからドメインを購入する
+## <a name="buy-a-domain-from-another-domain-registrar"></a>別のドメイン レジストラーからドメインを購入する
 [GoDaddy](https://www.godaddy.com)以外のドメイン レジストラーからドメインを購入する場合は、自動セットアップ (Domain Connect) をサポートするドメインレジストラーを使用することをお勧めします。 
   
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    
-### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>ドメインを別のドメイン レジストラーに移行する
+## <a name="transfer-your-domain-to-a-different-domain-registrar"></a>ドメインを別のドメイン レジストラーに移行する
 
 必要な DNS レコードの一部をサポートしていないプロバイダーがドメインを管理している場合は、ドメインを別のレジストラーに移行することができます。ドメインを移行するときには、ドメイン名の更新と保持のために支払先を変更します。
   
 ドメインの移行先レジストラーに移行をリクエストします。 **DNS の移行** などのオプションについては、そのレジストラーの Web サイトでお確かめください。レジストラーでの変更後、インターネットに更新が行き渡るまでには数日かかることがあります。
- 
-
 
 
 ::: moniker range="o365-21vianet"
@@ -104,7 +105,7 @@ ms.locfileid: "51470513"
 > [!NOTE]
 > このSharePointオンラインパブリック Web サイトの情報は、組織が 2015 年 3 月 9 日より前Microsoft 365購入した場合にのみ適用されます。 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>ユーザーに必要なすべての DNS レコードをサポートするドメイン レジストラー Microsoft 365
+### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>ユーザーに必要なすべての DNS レコードをサポートするドメイン レジストラー Microsoft 365
 
 - [Oray](https://oray.com/)
     
@@ -116,10 +117,10 @@ ms.locfileid: "51470513"
     
 ::: moniker-end
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 にドメインを追加する](../setup/add-domain.md)
+[ドメインをドメインに追加Microsoft 365](../setup/add-domain.md)する (記事)
 
-[ドメイン FAQ](../setup/domains-faq.yml)
+[ドメインに関する FAQ](../setup/domains-faq.yml) (記事)
 
-[DNS レコードを更新して、Web サイトを現在のホスティング プロバイダーに保持します](../dns/update-dns-records-to-retain-current-hosting-provider.md)。
+[現在のホスティング プロバイダーを使用して Web サイトを保持するために DNS レコードを更新する](../dns/update-dns-records-to-retain-current-hosting-provider.md) (記事)

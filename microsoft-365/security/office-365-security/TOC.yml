@@ -118,8 +118,6 @@
           href: configure-junk-email-settings-on-exo-mailboxes.md
         - name: 送信スパム フィルターを構成する
           href: configure-the-outbound-spam-policy.md
-        - name: スプーフィング インテリジェンスを構成する
-          href: learn-about-spoof-intelligence.md
         - name: 受信拒否リストの作成
           href: Create-block-sender-lists-in-office-365.md
         - name: 信頼できる差出人リストの作成
@@ -150,10 +148,6 @@
           href: support-for-anonymous-inbound-email-messages-over-ipv6.md
         - name: Application Guard for Office をインストールする
           href: install-app-guard.md
-        - name: 選挙運動の開発/テスト環境用にグループとユーザーを作成する
-          href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-        - name: 選挙運動用の開発/テスト環境でチーム サイトを作成する
-          href: create-team-sites-in-a-political-campaign-dev-test-environment.md
     - name: 移行
       items:
         - name: Google Postini、Barracuda Spam、Virus Firewall、Cisco IronPort から EOP に切り替える
@@ -226,13 +220,13 @@
           href: campaigns.md
         - name: 悪意のあるメールを調査する
           href: investigate-malicious-email-that-was-delivered.md
-        - name: セキュリティ/コンプライアンス センターで Office 365 Defender のレポートを表示する
-          href: view-reports-for-mdo.md
         - name: 自動調査の詳細と結果を表示する
           href: air-view-investigation-results.md
-        - name: セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
+        - name: Microsoft Defender for Office 365 レポートを表示する
+          href: view-reports-for-mdo.md
+        - name: メール セキュリティ レポートを表示する
           href: view-email-security-reports.md
-        - name: セキュリティ/コンプライアンス センターのメールフローレポートを表示
+        - name: メール フロー レポートを表示する
           href: view-mail-flow-reports.md
         - name: スタンドアロン EOP で管理者監査ログを表示する
           href: view-the-admin-audit-log-eop.md
@@ -240,6 +234,8 @@
           href: reporting-and-message-trace-in-exchange-online-protection.md
         - name: 自動転送されたメッセージの分析情報
           href: mfi-auto-forwarded-messages-report.md
+        - name: 偽装に関する分析情報
+          href: impersonation-insight.md
         - name: メール フローのマップ
           href: mfi-mail-flow-map-report.md
         - name: メッセージを手動で Microsoft に送信する
@@ -256,6 +252,8 @@
           href: mfi-outbound-and-inbound-mail-flow.md
         - name: SMTP Auth クライアントの分析情報とレポート
           href: mfi-smtp-auth-clients-report.md
+        - name: スプーフィング インテリジェンス分析
+          href: learn-about-spoof-intelligence.md
         - name: マルウェアとマルウェアでないファイルを Microsoft に送信する
           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
         - name: トップ ドメインのメール フローの状態の分析情報
@@ -266,8 +264,6 @@
           href: use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
         - name: キューの分析情報
           href: mfi-queue-alerts-and-queues.md
-        - name: スプーフィング インテリジェンス分析のチュートリアル
-          href: walkthrough-spoof-intelligence-insight.md
     - name: 対応
       items:
         - name: 侵害されたユーザー アカウントをすばやく検出して対処する

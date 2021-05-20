@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、Exchange Online Protection (EOP) 組織で使用できるフィッシング対策ポリシーを作成、変更、および削除する方法について説明します(Exchange Online メールボックスを使用する場合と使用しない場合)。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c277558bad32e1926030483d202b70ae3c910315
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bc3c15d2a652e9acd3407ecb91fc99b7ef295c7e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206210"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537921"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -159,18 +159,20 @@ PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理し
 
    完了したら、任意のページで **[保存]** をクリックします。
 
-5. **ス** プーフィング : [編集] をクリックしてスプーフィング インテリジェンスをオンまたはオフにし、Outlook で認証されていない送信者 ID をオンまたはオフにし、ブロックされたスプーフィングされた送信者からのメッセージに適用するアクションを構成します。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md#spoof-settings)。
+5. **ス** プーフィング : [編集] をクリックしてスプーフィング インテリジェンスをオンまたはオフにし、Outlook で認証されていない送信者 ID をオンまたはオフにし、ブロックされたスプーフィングされた送信者からのメッセージに適用するアクションを構成します。 これらの設定の詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md#spoof-settings)。
 
    これらの同じ設定は、Defender のフィッシング対策ポリシーでも使用Office 365。
 
-   - **スプーフィング フィルターの** 設定 : 既定値は **On** で、オンのままにすることをお勧めします。 オフにする場合は、トグルを [オフ] に **スライドします**。 詳細については [、「EOP でスプーフィング インテリジェンスを構成する」を参照してください](learn-about-spoof-intelligence.md)。
+   - **スプーフィング フィルター設定**: スプーフィング **インテリジェンスを** 有効または無効にするには、[スプーフィング インテリジェンスを有効にする] 設定を使用します。 既定値は **On で**、オンのままにすることをお勧めします。 オフにする場合は、トグルを Off トグル **オフにスライド** ![ します ](../../media/scc-toggle-off.png) 。
 
      > [!NOTE]
-     > MX レコードがスプーフィング対策保護を無効にする必要Microsoft 365。代わりに、コネクタの拡張フィルターを有効にできます。 手順については、「拡張フィルタリング[for Connectors in Exchange Online」 を参照してください](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+     > MX レコードがスプーフィング対策保護をオフにする必要Microsoft 365。代わりに、コネクタの拡張フィルターを有効にできます。 手順については、「拡張フィルタリング[for Connectors in Exchange Online」 を参照してください](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-   - **認証されていない送信者機能を有効にする**: 既定値は On **です**。 オフにする場合は、トグルを [オフ] に **スライドします**。
+   - **認証されていない送信者の設定**: 次の設定を構成できます。
+     - 認証されていない送信者の疑問符 **(?)** 記号を有効にする: この設定は、メッセージが SPF または DKIM チェックに合格しない場合に、メッセージが DMARC または複合認証に合格しない場合に、Outlook [](email-validation-and-authentication.md#composite-authentication)の [差出人] ボックスの送信者の写真に疑問符を追加します。 既定値は [**オン**] です。 オフにする場合は、トグルを Off トグル **オフにスライド** ![ します ](../../media/scc-toggle-off.png) 。
+     - **"via" タグを有効にする:** この設定では、DKIM 署名または **MAIL FROM** アドレスのドメインとは異なる via タグ (chris@contoso.com 経由で fabrikam.com) が追加されます。 既定値は [**オン**] です。 オフにする場合は、トグルを Off トグル **オフにスライド** ![ します ](../../media/scc-toggle-off.png) 。
 
-   - **Actions**: スプーフィング インテリジェンスに失敗したメッセージに対して実行するアクションを指定します。
+   - **アクション**: ブロックされたスプーフィングされた送信者からのメッセージに対して実行するアクションを指定します。
 
      **ドメインのスプーフィングが許可されていない** ユーザーからメールが送信された場合:
 
@@ -181,9 +183,9 @@ PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理し
 
      - 各セクションで **[編集]** をクリックすると、関連するページに戻ります。
      - このページでは、次の設定 **をオン** または **オフに** 直接切り替えます。
-
-       - **スパム対策の保護を有効にする**
-       - **認証されていない送信者機能を有効にする**
+       - **スプーフィング フィルターの設定**
+       - **認証されていない送信者の設定**
+       - **Actions**
 
    完了したら、任意のページで **[保存]** をクリックします。
 
@@ -197,11 +199,7 @@ PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理し
 
 2. [フィッシング **対策] ページで、[** 既定のポリシー] **をクリックします**。
 
-3. [ **ポリシーの編集] [Office365 AntiPhish Default] ページ** が表示されます。 カスタム ポリシーを変更する場合と同じ設定を含む、次の [セクションを使用できます](#use-the-security--compliance-center-to-modify-anti-phishing-policies)。
-
-   - **偽装**
-   - **スプーフィング**
-   - **詳細設定**
+3. [ **ポリシーの編集] [Office365 AntiPhish Default] ページ** が表示されます。 カスタム ポリシー **を変更** するときに同じ設定を含むスプーフィング セクション [のみを使用できます](#use-the-security--compliance-center-to-modify-anti-phishing-policies)。
 
    既定のポリシーを変更すると、次の設定を使用できません。
 
@@ -217,9 +215,9 @@ PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理し
 
 2. [状態] 列の値 **に注意** してください。
 
-   - トグルを [オフ] **にスライドして** ポリシーを無効にします。
+   - トグルを [オフ] に **スライドして** ![ 、 ](../../media/scc-toggle-off.png) ポリシーを無効にします。
 
-   - トグルを [オン] **にスライドして** ポリシーを有効にします。
+   - トグルを [オン] **に** ![ スライドして ](../../media/scc-toggle-on.png) 、ポリシーを有効にします。
 
 既定のフィッシング対策ポリシーを無効にできない。
 
@@ -235,7 +233,7 @@ PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理し
 
 ポリシーの優先度を変更するには、ポリシーのプロパティで [優先度の引き上げ] または [優先度の下げ]をクリックします (セキュリティ & コンプライアンス センターで優先度番号を直接変更することはできません)。  ポリシーの優先度を変更すると、複数のポリシーがある場合にのみ有効です。
 
-1. [セキュリティ & コンプライアンス センター] で、[**脅威管理ポリシー** ] ATP の \>  \> **フィッシング対策に移動します**。
+1. [セキュリティ & コンプライアンス センター] で、[**脅威管理ポリシー** のフィッシング \>  \> **対策] に移動します**。
 
 2. 変更するポリシーを選択します。 既に選択されている場合は、選択を解除してもう一度選択します。
 
@@ -309,7 +307,7 @@ PowerShell でフィッシング対策ポリシーを作成するには、次の
 フィッシング対策ポリシーを作成するには、次の構文を使用します。
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>]
 ```
 
 この例では、次の設定を使用して、Research Quarantine という名前のフィッシング対策ポリシーを作成します。

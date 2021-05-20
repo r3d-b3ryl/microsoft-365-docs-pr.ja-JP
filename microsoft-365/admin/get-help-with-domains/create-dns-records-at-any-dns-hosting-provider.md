@@ -16,16 +16,16 @@ ms.collection:
 - Adm_O365_Setup
 search.appverid:
 - MET150
-description: 任意の DNS ホスティング プロバイダーで Microsoft 365 用のドメインを確認し、DNS レコードを作成する方法について説明します。
+description: ドメインを確認して、レジストラーのアカウントの DNS レコードを更新することで、任意の DNS ホスティング プロバイダーでドメインを Microsoft 365 に接続します。
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 06a5e7d081a16cd8d5aae28268b3aaf737981a43
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: facdd460bd3197e39dd6d4d9f4a5450dc972bf03
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051044"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537561"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 
@@ -127,9 +127,9 @@ CNAME レコードの情報は、管理センターのドメイン セットア�
 
 SPF レコードを検証するには、[SPF 検証ツール](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)のいずれかを使用します。
 
-SPF はスプーフィングの防止に役立ちますが、SPF では保護できないスプーフィング方法があります。 これらから保護するために、SPF をセットアップした後、Microsoft 365 のために DKIM と DMARC も構成する必要があります。 
+SPF はスプーフィングの防止に役立ちますが、SPF では保護できないスプーフィング方法があります。それらから保護するには、SPF のセットアップ後に、DKIM と DMARC を Microsoft 365 用に構成する必要もあります。 
 
-使用を開始する場合は、「[DKIM を使用して、Microsoft 365 のドメインから送信される送信電子メールを検証する](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md)」、「[DMARC を使用して Microsoft 365 のメールを検証する](../../security/defender-365-security/use-dmarc-to-validate-email.md)」を参照してください。
+使用を開始する場合は、「[DKIM を使用して、Microsoft 365 のドメインから送信される送信電子メールを検証する](../../security/office-365-security/use-dkim-to-validate-outbound-email.md)」、「[DMARC を使用して Microsoft 365 のメールを検証する](../../security/office-365-security/use-dmarc-to-validate-email.md)」を参照してください。
 
 ### <a name="add-srv-records-for-communications-services-teams-skype-for-business"></a>コミュニケーション サービス用の SRV レコードを追加する (Teams、Skype for Business) 
 
@@ -166,3 +166,11 @@ SPF はスプーフィングの防止に役立ちますが、SPF では保護で
 
 - 例 1: `100 1 443 sipdir.online.lync.com.`
 - 例 2: `100 1 443 sipdir.online.lync.com`
+
+## <a name="related-content"></a>関連コンテンツ
+
+[任意のドメイン レジストラーで Microsoft 365 をセットアップするためにネームサーバーを変更する](change-nameservers-at-any-domain-registrar.md) (記事)
+
+[ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)
+
+[ドメインの管理](index.yml) (リンク ページ)

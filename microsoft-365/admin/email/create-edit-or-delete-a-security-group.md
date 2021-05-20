@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: セキュリティ グループの作成、編集、削除について説明します。
-ms.openlocfilehash: 03e391727f9a61b1fc8e819e92d5a119017c38e0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8f76b5fa803ea43e53e89cf6479eb7572a2857c2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579340"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537597"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでセキュリティ グループを作成、編集、削除する
 
@@ -49,8 +49,6 @@ ms.locfileid: "51579340"
 4. 手順に従って、グループの作成を完了します。 
  
 ### <a name="add-members-to-a-security-group"></a>メンバーをセキュリティ グループに追加する
-
-::: moniker range="o365-worldwide"
     
 1. [**グループ**] ページでセキュリティ グループ名を選択し、[**メンバー**] タブで [**すべてのメンバーの表示と管理**] を選択します。 
     
@@ -58,65 +56,13 @@ ms.locfileid: "51579340"
     
     メンバーを削除するには、そのメンバー名の横にある [X] を選択します。 
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. [**グループ**] ページでセキュリティ グループ名を選択し、[**メンバー**] の横にある [**編集**] を選択します。 
-    
-2. グループ ウィンドウで、[**メンバーの追加**] を選択し、リストから人を選択するか、[**検索**] ボックスに追加する人の名前を入力して、[**保存**] を選択します。
-    
-    メンバーを削除するには、そのメンバー名の横にある [X] を選択します。 
-  
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-
-1. [**グループ**] ページでセキュリティ グループ名を選択し、[**メンバー**] の横にある [**編集**] を選択します。 
-    
-2. グループ ウィンドウで、[**メンバーの追加**] を選択し、リストから人を選択するか、[**検索**] ボックスに追加する人の名前を入力して、[**保存**] を選択します。
-    
-    メンバーを削除するには、そのメンバー名の横にある [X] を選択します。
-
-::: moniker-end
-
 ### <a name="edit-a-security-group"></a>セキュリティ グループを編集する
-
-::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**グループ**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] ページの順に移動します。
   
 2. [**グループ**] ページで、グループ名を選択します。 
     
 3. [設定] ウィンドウで、[**全般**] タブまたは [**メンバー**] タブを選択し、グループの詳細またはメンバーを編集します。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>グループ グループ] **ページ** \> **に移動** します。  
-  
-2. [**グループ**] ページで、グループ名を選択します。 
-    
-3. [セキュリティ グループ] ウィンドウで、[**名前**] タブまたは [**メンバー**] タブの横にある [**編集**] を選択し、グループの詳細またはメンバーを編集します。
-    
-4. 変更が完了したら、[**保存**] \> [**閉じる**] の順に選択します。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>グループ グループ] **ページ** \> **に移動** します。
-  
-2. [**グループ**] ページで、グループ名を選択します。 
-    
-3. [セキュリティ グループ] ウィンドウで、[**名前**] タブまたは [**メンバー**] タブの横にある [**編集**] を選択し、グループの詳細またはメンバーを編集します。
-    
-4. 変更が完了したら、[**保存**] > [**閉じる**] の順に選択します。
-
-::: moniker-end
-
 
 ### <a name="delete-a-security-group"></a>セキュリティ グループを削除する
 

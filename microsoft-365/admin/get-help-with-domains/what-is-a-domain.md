@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: ドメインとは何か、ドメインを購入する方法、またはビジネスの既定のドメインを使用する方法を理解します。
+description: ドメインとは何か、ドメインを購入する方法、またはビジネスの既定のドメインを使用してOneDriveと Microsoft アプリを使い始める方法について説明します。
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eac7de88e6d4c09e6807edbbd35d6ccc4718c671
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: b69881d72b91bd2cd36255d87444588166458c8c
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464335"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571879"
 ---
 # <a name="what-is-a-domain"></a>ドメインとは
 
@@ -63,8 +63,8 @@ Microsoft サポートに連絡する - [ドメインの設定についてサポ
 
 [ドメインを購入する](buy-a-domain-name.md) (記事)
 
-[ドメインをドメインに追加Microsoft 365](../setup/add-domain.md)する (記事)
+[Microsoft 365にドメインを追加する](../setup/add-domain.md)(記事)
 
-[カスタム Microsoft 365からのパイロット テスト (](../misc/pilot-microsoft-365-from-my-custom-domain.md)記事)
+[カスタム ドメインからのパイロット Microsoft 365](../misc/pilot-microsoft-365-from-my-custom-domain.md) (記事)
 
 
