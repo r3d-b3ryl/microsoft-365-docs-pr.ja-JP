@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
-description: 削除されたグループを復元するMicrosoft 365します。
-ms.openlocfilehash: f3b6435d82d5beddf44f5920011b076b39c7dcd5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 削除されたグループは 30 日間保持され、グループを復元できます。 30 日後、グループとそのコンテンツは完全に削除されます。
+ms.openlocfilehash: 285796ec45b1e6d77d46d7a0c39706f566bb8cf6
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910548"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582682"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>削除された Microsoft 365 グループを復元する
 
@@ -81,12 +81,12 @@ ms.locfileid: "50910548"
 
 質問を[投稿し、Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups)グループに関する会話に参加するには、Microsoft Tech Microsoft 365をご覧ください。 
   
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[PowerShell Microsoft 365グループを管理する](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[PowerShell Microsoft 365グループの管理](../../enterprise/manage-microsoft-365-groups-with-powershell.md)(記事)
   
-[Remove-UnifiedGroup コマンドレットを使用してグループを削除する](/powershell/module/exchange/remove-unifiedgroup)
+[Remove-UnifiedGroupコマンドレットを使用してグループを](/powershell/module/exchange/remove-unifiedgroup) 削除する (記事)
   
-[グループに接続されたチーム サイトの設定を管理する](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42)
+[グループに接続されたチーム サイトの設定を管理する](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (記事)
   
-[Outlook でグループを削除する](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)
+[グループを削除する (Outlook)](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)

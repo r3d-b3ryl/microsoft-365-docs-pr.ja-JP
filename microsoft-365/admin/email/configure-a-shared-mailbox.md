@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 共有メールボックスを作成したら、電子メール転送や自動返信など、ユーザーに対していくつかの設定を構成する必要があります。 後で、メールボックス名やメンバーなどの他の設定を変更することもできます。
-ms.openlocfilehash: 01d5aaa686e1d64c9ea7d89913d8208f779dcfd1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 共有メールボックスを作成し、電子メール転送や自動返信など、ユーザーの設定を構成します。
+ms.openlocfilehash: ab23353f07a24f06d43172e8087819dd915ab720
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52243974"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582670"
 ---
 # <a name="configure-shared-mailbox-settings"></a>共有メールボックスの設定を構成する
 
@@ -146,7 +146,7 @@ ms.locfileid: "52243974"
 
 [共有メールボックスについて](about-shared-mailboxes.md) (記事)
 
-[共有メールボックスの作成](create-a-shared-mailbox.md) (記事)
+[共有メールボックス GWT を作成する](create-a-shared-mailbox.md) (記事)
 
 [ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md) (記事)
 

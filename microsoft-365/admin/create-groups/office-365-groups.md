@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: グループについてMicrosoft 365します。
-ms.openlocfilehash: 18cb37a4aae7a163d2e198194251abc727b48848
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: グループMicrosoft 365グループを使用すると、グループのユーザーに共有リソースのコレクションへのアクセス権を与えることによって、Microsoft 365全体のチームワークを促進できます。
+ms.openlocfilehash: bfcd2d27bc1d63fcc8b306267efe21c3f9564522
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910608"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582742"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -117,14 +117,14 @@ Microsoft 365グループは、グループをAzure Active Directory。 取得�
 > すべてのグループ機能について、Azure AD プレミアム サブスクリプションがある場合、ユーザーは AAD P1 ライセンスが割り当てられているかどうかに関してグループに参加できます。 ライセンスは適用されません。
 > Microsoft では、定期的に利用状況レポートを生成し、ライセンスのないユーザーと、ライセンス要件に準拠するためにそのユーザーにライセンスを割り当てる必要があることをお知らせします。 たとえば、ユーザーがライセンスを持っておらず、名前付けポリシーが適用されているグループに追加されるとします。 この場合、そのユーザーにライセンスが必要であることを示すフラグがレポートで設定されます。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[グループの詳細Microsoft 365する](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[グループの詳細Microsoft 365 (](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)記事)
 
-[配布リストをグループにMicrosoft 365する](../manage/upgrade-distribution-lists.md)
+[配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)(記事)
 
-[PowerShell Microsoft 365グループを管理する](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[PowerShell Microsoft 365グループの管理](../../enterprise/manage-microsoft-365-groups-with-powershell.md)(記事)
 
-[SharePoint Online の制限](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[SharePoint制限 (](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)記事)
 
-[Microsoft Stream のグループとチャネルを整理する](/stream/groups-channels-organization)
+[Microsoft Stream でグループとチャネルを整理](/stream/groups-channels-organization) する (記事)

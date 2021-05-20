@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
-description: ユーザーが会議や予定の予定表を外部ユーザーと共有する方法について学習します。
-ms.openlocfilehash: 5fc80965ae277e66dfbf73de80618dec03d26759
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理者センターで予定表の共有Microsoft 365有効にして、組織の内部または外部のユーザーと予定表を共有できます。
+ms.openlocfilehash: 6f4c215403e16ac6658619e50e6115606f106397
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915052"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582718"
 ---
 # <a name="share-calendars-with-external-users"></a>予定表を外部ユーザーと共有する
 
@@ -51,3 +51,11 @@ ms.locfileid: "50915052"
 ## <a name="invite-people-to-access-calendars"></a>予定表にアクセスできるようにユーザーを招待する
 
 共有が有効になると、予定表の所有者は特定のユーザーに招待を拡張できます。 手順については、「[予定表を共有する](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)」を参照してください。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[サイトの外部共有をオンまたはオフにする](/sharepoint/change-external-sharing-site) (記事)
+
+[Microsoft 365 管理センターの概要](../../business-video/admin-center-overview.md) (ビデオ)
+
+[メールと予定表の管理](../email/index.yml) (リンク ページ)

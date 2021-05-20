@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: ビジネス サブスクリプションのライセンス数を増やしたり、ライセンス数を減らMicrosoft 365を確認します。
+description: 以下の手順を使用して、ライセンスを購入したり、ビジネス サブスクリプションのライセンス数Microsoft 365減らしたりします。
 ms.date: 04/07/2021
-ms.openlocfilehash: a20e89ff28c582018c55281a85dbe115b58f9d74
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 144adbd9c21253bd0a8e47205c72e09062fe6552
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537273"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582706"
 ---
 # <a name="buy-or-remove-licenses"></a>「ライセンスの購入または削除」
 
@@ -54,18 +54,18 @@ ms.locfileid: "52537273"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
 
 2. **[製品]** タブで、ライセンスを購入または削除するサブスクリプションを見つけます。 3 つのドット (その他のアクション) を選択し、[ライセンスの購入 **] を選択します**。 [[ライセンスの購入] または [ライセンスの削除] ボタンが表示できない場合は、](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)

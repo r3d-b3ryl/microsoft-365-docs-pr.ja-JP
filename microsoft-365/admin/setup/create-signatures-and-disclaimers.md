@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: 組織を入力または退出するすべての電子メール メッセージに関する法的免責事項や開示ステートメントを含む、電子メール署名の管理について説明します。
-ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 組織を入力または退出するすべての電子メール メッセージに関する法的免責事項や開示ステートメントを含む電子メール署名を管理します。
+ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244529"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582754"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 
@@ -115,4 +115,13 @@ ms.locfileid: "52244529"
   
 ## <a name="more-resources"></a>その他のリソース
 
-- PowerShell[の使用の詳細については](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)、「組織全体のメッセージの免責事項、署名、フッター、またはヘッダー」を参照Exchange Onlineを参照してください。
+PowerShell の使用の詳細については、「組織全体のメッセージの免責事項、署名、フッター、またはヘッダー」を参照[Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+
+## <a name="related-content"></a>関連コンテンツ
+
+[メールと連絡先をユーザーにMicrosoft 365](migrate-email-and-contacts-admin.md)する (ビデオ)
+
+[ユーザーのメール設定](../email/office-365-user-email-settings.md) (記事)
+
+[Microsoft 365 管理センターの概要](../../business-video/admin-center-overview.md) (ビデオ)
+
