@@ -68,7 +68,7 @@
       href: billing-and-payments/psd2.md
 - name: 請求アカウント
   items:
-    - name: 請求アカウントを管理する
+    - name: 請求アカウントを理解する
       href: manage-billing-accounts.md
     - name: テナントと自分の請求アカウントを関連付ける
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
