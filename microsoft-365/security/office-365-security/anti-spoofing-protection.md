@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291033"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537969"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -44,17 +44,28 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 EOP では、次のスプーフィング対策テクノロジを使用できます。
 
-- **スプーフィング インテリジェンス**: 内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については、「[Microsoft 365 でのスプーフィング インテリジェンスの構成](learn-about-spoof-intelligence.md)」を参照してください。
-
-- **フィッシング詐欺対策ポリシー**: EOP では、フィッシング詐欺対策ポリシーにより、スプーフィング インテリジェンスを有効または無効にしたり、Outlook の認証されていない送信者識別情報を有効または無効にしたり、スプーフィングされた送信者をブロックするときのアクション ([迷惑メール] フォルダーまたは [検疫] に移動する) を指定したりすることができます。 Microsoft Defender for Office 365 で使用可能な高度なフィッシング詐欺対策ポリシーには、偽装対策設定 (送信者とドメインの保護)、メールボックス インテリジェンス設定、および調整可能な高度なフィッシングしきい値も含まれています。 詳細については、「[Microsoft 365 でのフィッシング詐欺対策ポリシー](set-up-anti-phishing-policies.md)」を参照してください。
-
 - **メール認証**: スプーフィング対策の不可欠な部分は、DNS のSPF、DKIM、DMARC レコードによるメール認証 (メール検証とも呼ばれます) を使用することです。 ドメインのこれらのレコードを構成して、送信先のメール システムがドメインの送信者からのものであると主張するメッセージの有効性をチェックできるようにすることができます。 受信メッセージの場合、Microsoft 365 では送信者のドメインのメール認証が必要です。 詳細については、「[Microsoft 365 でのメール認証](email-validation-and-authentication.md)」をご覧ください。
 
-2018 年 10 月以降、スプーフィング対策保護は EOP で提供されています。
+  EOP は、標準のメール認証方法と送信者評価手法の組み合わせによって認証されないメッセージを分析してブロックします。
 
-EOP は、標準のメール認証方法と送信者評価手法の組み合わせによって認証されないメッセージを分析してブロックします。
+  ![EOP のスプーフィング対策チェック](../../media/eop-anti-spoofing-protection.png)
 
-![EOP のスプーフィング対策チェック](../../media/eop-anti-spoofing-protection.png)
+- **スプーフィング インテリジェンス分析**: 7 日間で内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については、「[EOP でのスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。
+
+- **テナント許可/ブロック リストでなりすましされた送信者を許可またはブロックする**: スプーフィング インテリジェンス分析の判定を上書きすると、なりすましされた送信者は、手動で許可またはブロックするエントリとなり、「テナント許可/ブロックリスト」の **[なりすまし]** タブにのみ表示されます。 また、スプーフィング インテリジェンスで検出される前に、手動でなりすまし送信者の許可またはブロック エントリを作成することもできます。 詳細については、「[EOP でテナント許可/ブロック リストを管理する](tenant-allow-block-list.md)」を参照してください。
+
+- **フィッシング詐欺対策ポリシー**: EOP では、フィッシング詐欺対策ポリシーに以下のなりすまし対策の設定が含まれます。
+  - スプーフィング インテリジェンスのオン/オフを切り替える。
+  - Outlook の認証されていない送信者の特定をオンまたはオフにする。
+  - なりすまし送信者をブロックするアクションを指定する。
+
+  詳細については、「[フィッシング詐欺対策ポリシーでのなりすまし設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。
+
+  **注**: Microsoft Defender for Office 365 のフィッシング対策ポリシーには、**なりすまし** 保護などの保護機能が追加されています。 詳細については、「[Microsoft Defender for Office 365 のフィッシング対策ポリシーにおける排他的な設定](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)」を参照してください。
+
+- **スプーフィング検出レポート**: 詳細については、「[スプーフィング検出レポート](view-email-security-reports.md#spoof-detections-report)」を参照してください。
+
+  **注**: Microsoft Defender for Office 365 の組織は、「リアルタイム検出」(プラン 1) または「Threat Explorer」(プラン 2) を使用して、フィッシングの試行に関する情報を表示することもできます。 詳細については、「[Microsoft 365 脅威の調査と対応](office-365-ti.md)」をご覧ください。
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>フィッシング攻撃でスプーフィングが使用される方法
 
@@ -127,12 +138,6 @@ Microsoft では、2 種類のスプーフィングされたメッセージを�
 
 DMARC の詳細については、「[DMARC を使用して Microsoft 365 でメールを検証する](use-dmarc-to-validate-email.md)」を参照してください。
 
-## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>スプーフィングのマークが付けられたメッセージの数量に関するレポート
-
-EOP 組織は、セキュリティ/コンプライアンス センターのレポート ダッシュボードの **スプーフィング検出** レポートを利用できます。 詳細については、「[スプーフィング検出レポート](view-email-security-reports.md#spoof-detections-report)」を参照してください。
-
-Microsoft Defender for Office 365 組織は、セキュリティ/コンプライアンス センターで脅威エクスプローラーを使用して、フィッシング詐欺に関する情報を表示できます。 詳細については、「[Microsoft 365 脅威の調査および対応](office-365-ti.md)」をご覧ください。
-
 ## <a name="problems-with-anti-spoofing-protection"></a>スプーフィング対策保護の問題
 
 メーリング リスト (ディスカッション リストとも呼ばれます) では、メッセージの転送方法と変更方法が原因で、スプーフィング対策に関する問題があることがわかっています。
@@ -161,7 +166,7 @@ Microsoft Defender for Office 365 組織は、セキュリティ/コンプライ
 
     ドメインの所有者に対して相当数の送信者が電子メール認証レコードの設定が必要なことを返信することで、ドメインの所有者の行動を促します。 Microsoft は必要なレコードを公開するためにドメインの所有者と協力しますが、個々のユーザーの要求が大きな支援になります。
 
-  - メール クライアントで、メッセージを受信トレイに移動する受信トレイ ルールを作成してください。 「[スプーフィング インテリジェンスを使用して、認証されていないメールの許可された送信者を構成する](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email)」で説明されているように、管理者にオーバーライドの構成を依頼することもできます。
+  - メール クライアントで、メッセージを受信トレイに移動する受信トレイ ルールを作成してください。 また、「[EOP でのスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」や「[テナントの許可/ブロック リストを管理する](tenant-allow-block-list.md)」で説明しているように、管理者に上書きの構成を依頼することもできます。
 
   - Microsoft 365 でサポート チケットを作成して、メーリング リストを正当なものとして扱うためのオーバーライドを作成します。 詳細については、「[一般法人向けサポートへのお問い合わせ - 管理者向けヘルプ](../../business-video/get-help-support.md)」を参照してください。
 

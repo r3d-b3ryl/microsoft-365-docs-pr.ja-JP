@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860876"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531044"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -34,9 +34,10 @@ ms.locfileid: "51860876"
 - 外部ユーザーのアクセス
 - SharePoint サイトからの外部共有
 - 非管理対象デバイスからのアクセス
+- 認証コンテキスト (プレビュー段階)
 
 > [!IMPORTANT]
-> **[管理されていないデバイスからのアクセス]** 設定は、SharePoint機能と連動して、[管理されていないデバイスからのアクセスを制御します](/sharepoint/control-access-from-unmanaged-devices)。 テナントがこの設定が構成されている機密ラベルを使用するには、この依存 SharePoint 機能を構成する必要があります。 追加情報については、以下の手順を参照してください。
+> 非管理対象デバイスと認証コンテキストの設定は、Azure Active Directory の条件付きアクセスと連動しています。 これらの設定に秘密度ラベルを使用したい場合は、この依存機能を設定する必要があります。 追加情報については、以下の手順を参照してください。
 
 サポートされているコンテナーにこの秘密度ラベルを適用すると、分類および構成された保護の設定がサイトまたはグループに自動的に適用されます。
 
@@ -47,7 +48,7 @@ ms.locfileid: "51860876"
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Microsoft Teams、Microsoft 365 グループ、およびSharePoint サイトで秘密度ラベルを使用する
 
-コンテナーの秘密度ラベルを有効化し、新しい設定の秘密度ラベルを構成する前に、ユーザーはアプリで秘密度ラベルを表示および適用できました。 たとえば、Word から: 
+コンテナーの秘密度ラベルを有効化し、新しい設定の秘密度ラベルを構成する前に、ユーザーはアプリで秘密度ラベルを表示および適用できます。たとえば、Word では次のようなことができます。
 
 ![Word デスクトップ アプリに表示される機密ラベル](../media/sensitivity-label-word.png)
 
@@ -56,6 +57,8 @@ ms.locfileid: "51860876"
 ![SharePoint でチーム サイトを作成するときの機密ラベル](../media/sensitivity-labels-new-team-site.png)
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>コンテナーの秘密度ラベルを有効化してラベルを同期する方法
+
+まだコンテナーの秘密度ラベルを有効にしていない場合は、以下の一連の手順を一度だけ実行してください。
 
 1. この機能は Azure AD 機能を使用するため、Azure AD のドキュメント [「Azure Active Directory で Microsoft 365 グループに秘密度ラベルを割り当てる」](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) の指示に従い、秘密度ラベルのサポートを有効にします。
 
@@ -71,7 +74,7 @@ ms.locfileid: "51860876"
 
 ## <a name="how-to-configure-groups-and-site-settings"></a>グループとサイト設定を構成する方法
 
-コンテナの秘密度レベルを有効にすると、秘密度レベル ウィザードでグループとサイトの保護設定を構成できるようになります。 このサポートを有効にするまで、設定はウィザードに表示されますが、構成することはできません。
+前のセクションで説明したとおり、コンテナーの秘密度レベルを有効にすると、秘密度レベル ウィザードでグループとサイトの保護設定を構成できるようになります。 コンテナーの秘密度ラベルが有効になるまでは、ウィザードに設定が表示されますが、構成することはできません。
 
 1. 一般的な手順に従って、[秘密度レベルを作成または編集](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)し、ラベルのスコープとして **[グループとサイト]** を選択していることを確認します。 
     
@@ -84,7 +87,7 @@ ms.locfileid: "51860876"
 2. 次に、**[グループとサイトの保護設定の定義]** ページで、使用可能なオプションの 1 つまたは両方を選択します。
     
     - **[プライバシーと外部ユーザーのアクセス設定]** を使用して、**[プライバシー]** と **[外部ユーザーのアクセス]** 設定を構成します。 
-    - **[デバイス アクセスと外部共有設定]** を使用して、**[ラベル付き SharePoint サイトから外部共有を制御]** 設定 と **[非管理対象デバイスからのアクセス]** 設定を構成します。
+    - **[外部共有および条件付きアクセスの設定]** で、**[ラベル付けされた SharePoint サイトからの外部共有を制御する]** および **[Azure AD 条件付きアクセスを使用して、ラベル付き SharePoint サイトを保護]** 設定を構成します。
 
 3. **[プライバシーと外部ユーザー アクセス設定]** を選択した場合は、次の設定を構成します。
     
@@ -98,13 +101,25 @@ ms.locfileid: "51860876"
     
     - **外部ユーザー アクセス**: グループの所有者が [ゲストをグループに追加](/office365/admin/create-groups/manage-guest-access-in-groups)できるかどうかを制御します。
 
-4. **[デバイス アクセスと外部共有設定]** を選択した場合は、次の設定を構成します。
+4. **[デバイスの外部共有とデバイス アクセスの設定]** を選択した場合は、次の設定を構成します。
     
     - **[ラベル付き SharePoint サイトからの外部共有を制御]**: このオプションを選択して、すべてのユーザー、新規および既存のゲストを選択するか、組織内のユーザのみを選択します。 この構成と設定の詳細については、「SharePoint ドキュメント」で [サイトへのの外部共有を有効または無効にする](/sharepoint/change-external-sharing-site) を参照します。
     
-    - **非管理対象デバイスからのアクセス**: このオプションでは、Azure ADの条件付きアクセスを使用して、管理されていないデバイスからの SharePoint および OneDrive コンテンツへのアクセスをブロックまたは制限する SharePoint 機能を使用します。 詳細については、SharePoint ドキュメントの「[非管理対象デバイスからのアクセスの制御](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。 このラベル設定を指定するオプションは、SharePoint の手順から「[特定の SharePoint サイトまたは OneDrive からのアクセスをブロックまたは制限する](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)」セクションの手順 3 - 5 で説明しているように、サイトの PowerShell コマンドを実行することと同じです。
-        
-        追加情報については、このセクションの最後にある「[非管理対象デバイス オプションの依存関係に関する詳細情報](#more-information-about-the-dependencies-for-the-unmanaged-devices-option)」を参照してください。
+    - **Azure AD 条件付きアクセスを使用して、ラベル付き SharePoint サイトを保護**: [Azure Active Directory の条件付きアクセス](/azure/active-directory/conditional-access/overview)を構成して使用している場合のみ、このオプションを選択します。 次に、次のいずれかの設定を選択します。
+    
+        - **ユーザーが管理外のデバイスから SharePoint サイトにアクセスできるかどうかを決定する**: このオプションでは、Azure ADの条件付きアクセスを使用して、管理されていないデバイスからの SharePoint および OneDrive コンテンツへのアクセスをブロックまたは制限する SharePoint 機能を使用します。 詳細については、SharePoint ドキュメントの「[非管理対象デバイスからのアクセスの制御](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。 このラベル設定を指定するオプションは、SharePoint の手順から「[特定の SharePoint サイトまたは OneDrive からのアクセスをブロックまたは制限する](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)」セクションの手順 3 - 5 で説明しているように、サイトの PowerShell コマンドを実行することと同じです。
+            
+            追加の構成情報については、このセクションの最後にある「[非管理対象デバイス オプションの依存関係に関する詳細情報](#more-information-about-the-dependencies-for-the-unmanaged-devices-option)」を参照してください。
+            
+        - **既存の認証コンテキストを選択する**: 現在プレビュー版ですが、このラベルが適用されている SharePoint サイトにユーザーがアクセスする場合に、より厳しいアクセス条件を適用することができます。 これらの条件は、組織の条件付きアクセスを展開するために作成され、公開された既存の認証コンテキストを選択した場合に適用されます。 ユーザーが構成された条件を満たさない場合や、認証コンテキストをサポートしていないアプリを使用している場合は、アクセスが拒否されます。
+            
+            追加の構成情報については、このセクションの最後にある「[認証コンテキスト オプションの依存関係に関する詳細情報](#more-information-about-the-dependencies-for-the-authentication-context-option)」を参照してください。
+            
+            このラベルの構成例は、以下のとおりです。
+            
+             - [多要素認証 (MFA)](/azure/active-directory/conditional-access/untrusted-networks) を必要とするように構成された認証コンテキストを選択します。 このラベルは、非常に機密性の高い社外秘のアイテムを含む SharePoint サイトに適用されます。 その結果、信頼されていないネットワークのユーザーがこのサイトのドキュメントにアクセスしようとすると、ドキュメントにアクセスする前に完了する必要がある MFA プロンプトが表示されます。
+             
+             - [使用条件 (ToU) ポリシー](/azure/active-directory/conditional-access/terms-of-use)に基づいて構成された認証コンテキストを選択します。 このラベルは、法務上またはコンプライアンス上の理由から使用条件の承認が必要なアイテムを含む SharePoint サイトに適用されます。 その結果、ユーザーがこのサイト内の文書にアクセスしようとすると、使用条件のドキュメントが表示され、それに同意しないと元の文書にアクセスできないようになっています。
 
 > [!IMPORTANT]
 > チーム、グループ、またはサイトにラベルを適用すると、それらのサイトとグループの設定のみが有効になります。 [ラベルのスコープ](sensitivity-labels.md#label-scopes)にファイルとメールが含まれている場合、暗号化やコンテンツ マーキングなどのその他のラベル設定は、チーム、グループ、またはサイト内のコンテンツに適用されません。
@@ -118,6 +133,43 @@ ms.locfileid: "51860876"
 たとえば、テナントが [**制限されたWebのみのアクセスを許可する**] に構成されている場合、フルアクセスを許可するラベル設定は制限が少ないため、効果がありません。 このテナントレベルの設定では、アクセスをブロックするためのラベル設定 (より制限的) または制限付きアクセスのためのラベル設定 (テナント設定と同じ) を選択します。
 
 SharePoint 設定はラベル構成とは別に構成できるため、秘密度ラベル ウィザードで依存関係が設定されているかどうかのチェックは行われません。 これらの依存関係は、ラベルが作成および公開された後、およびラベルが適用された後でも構成できます。 ただし、ラベルがすでに適用されている場合、ラベル設定は、ユーザーが次に認証するまで有効になりません。
+
+##### <a name="more-information-about-the-dependencies-for-the-authentication-context-option"></a>認証コンテキスト オプションの依存関係に関する詳細情報
+
+ドロップダウン リストに表示して選択するには、Azure Active Directory 条件付きアクセスの構成の一部として、認証コンテキストを作成し、構成して公開する必要があります。 詳細および手順については、Azure AD 条件付きアクセス ドキュメントの[[認証コンテキストの構成]](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) セクションを参照してください。
+
+すべてのアプリが認証コンテクストをサポートするわけではありません。 サポートされていないアプリを使用しているユーザーが、認証コンテキストを構成済みのサイトにアクセスすると、アクセス拒否のメッセージが表示されるか、認証を求められるものの拒否される問題が発生します。 現在、認証コンテクストをサポートするアプリは以下のとおりです。
+
+- Office for the Web (Web 用 Office を含む)
+
+- Microsoft Planner
+
+- Microsoft 365 Apps for Word、Excel、PowerPoint の最小バージョンは以下のとおりです。
+    - Windows: 2103
+    - macOS: 16.45.1202
+    - iOS: 2.48.303
+    - Android: 16.0.13924.10000
+
+- Microsoft 365 Apps for Outlook の最小バージョンは以下のとおりです。
+    - Windows: 2103
+    - macOS: 16.45.1202
+    - iOS: 4.2109.0
+    - Android: 4.2025.1
+
+- OneDrive 同期アプリの最小バージョンは以下のとおりです。
+    - Windows: 21.002
+    - macOS: 21.002
+    - iOS: 12 月 30 日にロールアウト
+    - Android: まだサポートされていません
+
+このプレビューでの既知の制限事項は以下のとおりです。
+
+- OneDrive 同期アプリについては、OneDrive のみサポートし、他のサイトはサポートしていません。
+
+- 次の機能やアプリは、認証コンテキストとの互換性がない場合があるため、ユーザーが認証コンテキストを使用してサイトへのアクセスに成功した後、これらの機能が継続して動作するかどうかを確認することをお勧めします。
+    
+    - PowerApps や Power Automate を使用したワークフロー
+    - サードパーティ製アプリ
 
 ## <a name="sensitivity-label-management"></a>機密ラベルの管理
 

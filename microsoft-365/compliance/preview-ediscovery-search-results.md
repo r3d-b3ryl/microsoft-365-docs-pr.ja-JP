@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 コンプライアンス センターのコンテンツ検索またはコア電子情報開示検索によって返される結果サンプルをプレビューします。
-ms.openlocfilehash: ebe4aa0d5f08ab97376cfde63eb59351fccd1911
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: a89c8c9ed2500b4e2a859c75be3da177203d1406
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314308"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538599"
 ---
 # <a name="preview-ediscovery-search-results"></a>電子情報開示検索結果をプレビューする
 
@@ -39,9 +39,25 @@ ms.locfileid: "52314308"
 
 3. ポップアップ ページの下部で、**[サンプルのレビュー]** をクリックします。
 
+   ![ポップアップ ページで [サンプルのレビュー] をクリックして結果をプレビューする](../media/PreviewSearchResults1.png)
+
    検索結果のサンプルを含むページが表示されます。
 
 4. 閲覧ウィンドウでアイテムを選んで内容を表示します。
+
+   ![閲覧ウィンドウでアイテムをプレビュー](../media/PreviewSearchResults2.png)
+
+   前述のスクリーンショットでは、アイテムをプレビューする場合に、検索クエリのキーワードが強調表示されていることがわかります。
+
+## <a name="how-the-search-result-samples-are-selected"></a>検索結果のサンプルを選択する方法
+
+最大 1,000 個のランダムに選ばれたアイテムをプレビューすることができます。 プレビューで利用可能なアイテムは、無作為に選ばれたものに加えて、以下の条件を満たすものです。
+
+- 単一のコンテンツの場所 (メールボックスまたはサイト) で最大 100 個のアイテムをプレビューすることができます。 つまり、1,000 個未満のアイテムをプレビューできる可能性があるということです。 たとえば、4 つのメールボックスを検索して 1,500 件の推定値が返ってきた場合、各メール ボックスから 100 件しかプレビューできないため、400 件のみプレビュー可能になります。
+
+- メールボックス アイテムの場合、プレビューできるのはメールのメッセージのみです。 タスク、予定表のアイテム、連絡先などのアイテムは、プレビューできません。
+
+- サイト アイテムの場合は、ドキュメントのみプレビューできます。 フォルダー、リスト、リストの添付ファイルなどのアイテムはプレビューできません。
 
 ## <a name="file-types-supported-when-previewing-search-results"></a>検索結果をプレビューする場合にサポートされるファイルの種類
 

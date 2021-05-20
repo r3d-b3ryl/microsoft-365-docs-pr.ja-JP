@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 組織内のユーザーや管理者のアクティビティを監査する方法をご紹介します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 214ea43348a4a33e6ce1b754cbaf9be6a43b2c70
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: d8686a2cd7b1fc6e9082e85b18ba352c1fd7f830
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314330"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538520"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 での監査ソリューション
 
@@ -34,7 +34,9 @@ Microsoft 365 監査ソリューションは、セキュリティ イベント�
 
 Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソリューションが用意されています。
 
-### <a name="basic-auditing"></a>基本的な監査
+![基本的な監査と高度な監査の主な機能](..\media\AuditingSolutionsComparison.png)
+
+### <a name="basic-audit"></a>基本的な監査
 
 基本的な監査では、監査されたアクティビティのログや検索を行い、フォレンジック調査、IT 調査、コンプライアンス調査、法務調査などに役立てることができます。
 
@@ -46,12 +48,12 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 
 - **Search-UnifiedAuditLog コマンドレット**。 Exchange Online PowerShell の **Search-UnifiedAuditLog** コマンドレット (検索ツールの基礎となるコマンドレット) を使用して、監査イベントを検索したり、スクリプトで使用したりすることができます。 詳細については、以下を参照してください。
 
-  - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
+  - [Search-UnifiedAuditLog コマンドレットのリファレンス](/powershell/module/exchange/search-unifiedauditlog)
   - [PowerShell スクリプトを使用して監査ログを検索する](audit-log-search-script.md)
 
 - **監査記録を CSV ファイルにエクスポートします**。 コンプライアンス センターで監査ログ検索ツールを実行した後、検索で返された監査記録を CSV ファイルにエクスポートすることができます。 これにより、Microsoft Excel を使用して、異なる監査レコードのプロパティで並べ替えやフィルター処理を行うことができます。 また、Excel Power Query の変換機能を使って、AuditData JSON オブジェクトの各プロパティを個別の列に分割することもできます。 これにより、異なるイベントの類似データを効果的に表示し、比較することができます。 詳細については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。
 
-- **Office 365 マネージメント アクティビティ API を介した監査ログにアクセスします**。 監査記録にアクセスして取得する 3 つ目の方法は、Office 365 マネージメント アクティビティ API を使用することです。 これにより、企業は監査データを既定の 90 日よりも長い期間保持し、監査データを SIEM ソリューションにインポートすることができます。 詳細については、「[Office 365 マネージメント アクティビティ API の参照](/office/office-365-management-api/office-365-management-activity-api-reference)」を参照してください。
+- **Office 365 マネージメント アクティビティ API を介した監査ログにアクセスします**。 監査記録にアクセスして取得する 3 つ目の方法は、Office 365 マネージメント アクティビティ API を使用することです。 これにより、企業は監査データを既定の 90 日よりも長い期間保持し、監査データを SIEM ソリューションにインポートすることができます。 詳細については、「[Office 365 管理アクティビティ API のリファレンス](/office/office-365-management-api/office-365-management-activity-api-reference)」を参照してください。
 
 - **90 日間の監査ログの保持**。 監査されたアクティビティがユーザーや管理者によって実行されると、監査記録が生成され、組織の監査ログに保存されます。 基本的な監査では、記録は 90 日間保持されるため、過去 3 か月以内に発生したアクティビティを検索することができます。
 
@@ -61,7 +63,7 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 
 - **監査ログの保持ポリシー**。 カスタマイズした監査ログの保持ポリシーを作成すれば、最大 1 年間 (必要なアドオン ライセンスを持つユーザーは最大 10 年間)、長期にわたって監査レコードを保持できます。 監査されたアクティビティが発生するサービス、特定の監査されたアクティビティ、または監査されたアクティビティを実行するユーザーに基づいて、監査記録を保持するポリシーを作成することができます。
 
-- **監査記録の長期保持**。 Exchange、SharePoint、および Azure Active Directory の監査レコードは、既定で 1 年間保持されます。 その他のアクティビティの監査記録は、デフォルトでは 90 日間保持されますが、監査ログの保持ポリシーを使用して、より長い保持期間を設定することができます。
+- **監査記録の長期保持**。 Exchange、SharePoint、および Azure Active Directory の監査レコードは、既定で 1 年間保持されます。 その他のアクティビティの監査記録は、既定では 90 日間保持されますが、監査ログの保持ポリシーを使用して、より長い保持期間を構成することができます。
 
 - **価値の高い、重要なイベント**。 重要なイベントの監査記録は、いつメール項目がアクセスされたか、いつメール項目が返信されたか、または転送されたか、ユーザーがいつ何を Exchange Online や SharePoint Online で検索したかなどの可視性を提供することで、組織によるフォレンジック調査やコンプライアンス調査の実施をサポートします。 これらの重要なイベントは、起こりうる侵害を調査し、侵害の範囲を決定するのに役立ちます。
 
@@ -78,7 +80,7 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 |既定で有効|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
 |検索可能な数千件の監査イベント|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
 |Microsoft 365 コンプライアンス センターの監査検索ツール|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|**Search-UnifiedAuditLog** コマンドレット|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
+|Search-UnifiedAuditLog コマンドレット|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
 |監査記録を CSV ファイルにエクスポートします|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
 |Office 365 マネージメント アクティビティ API <sup>1</sup> を介した監査ログにアクセスする|![サポート](../media/check-mark.png)|![サポート対象](../media/check-mark.png)</sup>|
 |90 日間の監査ログの保持|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
@@ -94,7 +96,7 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 
 以下のセクションでは、基本的な監査と高度な監査のライセンス要件を特定します。 基本的な監査機能は高度な監査に含まれています。
 
-### <a name="basic-auditing"></a>基本的な監査
+### <a name="basic-audit"></a>基本的な監査
 
 - Microsoft 365 Enterprise E3 サブスクリプション
 - Microsoft 365 Business Premium
@@ -125,17 +127,19 @@ Microsoft 365 には、基本的な監査と高度な監査の 2 つの監査ソ
 
 Microsoft 365 の監査ソリューションの使用を開始するには、以下のセットアップ ガイダンスを参照してください。
 
-### <a name="set-up-basic-auditing"></a>基本的な監査の設定
+### <a name="set-up-basic-audit"></a>基本的な監査の設定
 
 最初の手順は、基本的な監査を設定し、監査ログ検索を開始します。
 
-![基本的な監査を設定するためのワークフロー](../media/BasicAuditingWorkflow.png)
+![高度な監査を設定するためのワークフロー](../media/BasicAuditingWorkflow.png)
 
 1. 基本的な監査をサポートするサブスクリプションと、必要に応じて高度な監査をサポートするサブスクリプションが組織にあることを確認します。
 
 2. Microsoft 365 コンプライアンス センターの監査ログ検索ツールまたは **Search-UnifiedAuditLog** コマンドレットを使用する組織内のユーザーに、Exchange Online でアクセス許可を割り当てます。 具体的には、ユーザーは Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。
 
-3. 監査ログを検索します。 手順 1 と手順 2 が完了したら、組織内のユーザーは監査ログ検索ツール (または対応するコマンドレット) を使用して、監査されたアクティビティを検索することができます。
+3. 監査ログを検索します。手順 1 と手順 2 が完了したら、組織内のユーザーは監査ログ検索ツール (または対応するコマンドレット) を使用して、監査されたアクティビティを検索することができます。
+
+詳しい説明は、「[基本的な監査の設定](set-up-basic-audit.md)」をご覧ください。
 
 ### <a name="set-up-advanced-audit"></a>高度な監査の設定
 
@@ -153,9 +157,11 @@ Microsoft 365 の監査ソリューションの使用を開始するには、以
 
 2. ユーザーが Exchange Online や SharePoint Online で検索を行った場合に、重要なイベントをログに記録することができます。
 
-3. 監査ログの保持ポリシーを設定します。 Exchange、SharePoint、および Azure AD の監査記録を 1 年間保持する既定のポリシーに加えて、組織のセキュリティ運用チーム、IT チーム、およびコンプライアンス チームの要件に合わせて、監査ログの保持ポリシーを追加で作成することができます。
+3. 監査ログの保持ポリシーを設定します。Exchange、SharePoint、および Azure AD の監査記録を 1 年間保持する既定のポリシーに加えて、組織のセキュリティ運用チーム、IT チーム、およびコンプライアンス チームの要件に合わせて、監査ログの保持ポリシーを追加で作成することができます。
 
-4. フォレンジック調査を行う場合、重要なイベントやその他のアクティビティを検索することができます。 手順 1 と手順 2 が完了したら、侵害されたアカウントのフォレンジック調査や、その他の種類のセキュリティ調査やコンプライアンス調査を行う場合に、重要なイベントやその他のアクティビティを監査ログで検索することができます。
+4. フォレンジック調査を行う場合、重要なイベントやその他のアクティビティを検索することができます。手順 1 と手順 2 が完了したら、侵害されたアカウントのフォレンジック調査や、その他の種類のセキュリティ調査やコンプライアンス調査を行う場合に、重要なイベントやその他のアクティビティを監査ログで検索することができます。
+
+詳しい説明は、「[高度な監査の設定](set-up-advanced-audit.md)」をご覧ください。
 
 ## <a name="training"></a>トレーニング
 

@@ -19,12 +19,12 @@ localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用してスプーフィング、フィッシング、およびスパムを防ぐ方法を確認できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 633494717ad7cf68319a2332f435fd8b56fc8aeb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4815924714845b641819021ea793baa465cfc812
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205907"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538293"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 
@@ -39,9 +39,7 @@ ms.locfileid: "51205907"
 メール認証 (メール検証とも呼ばれます) は、スプーフィング (偽造された差出人からのメール メッセージ) を阻止しようとする標準のグループです。 すべての Microsoft 365 組織では、EOP は次の基準を使用して受信メールを検証します。
 
 - [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
-
 - [DKIM](use-dkim-to-validate-outbound-email.md)
-
 - [DMARC](use-dmarc-to-validate-email.md)
 
 メール認証では、差出人 (laura@contoso.com など) からのメール メッセージが正当であり、そのメール ドメイン (contoso.com など) の期待される送信元からのものであることを確認します。
@@ -58,7 +56,7 @@ DMARC では、メッセージの **差出人** アドレスを調べること�
 
 ![Fortune 500 企業の DMARC ポリシー](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
-強力なメール認証ポリシーを公開している中小規模企業の割合は、より小さくなります。 北米や西ヨーロッパ以外のメールドメインの場合、この数字はさらに小さくなります。
+中小規模の企業で強力なメール認証ポリシーを公開している割合はさらに少なくなり、北米と西ヨーロッパ以外のメール ドメインでは、その数はさらに少なくなります。
 
 強力なメール認証ポリシーがないことは、大きな問題です。 組織はメール認証のしくみについて理解していない場合がありますが、攻撃者は完全に理解していて、それを利用します。 フィッシングは大きな問題でありながら、強力なメール認証ポリシーの導入は限られているため、Microsoft は受信メールをチェックするために *暗黙的なメール認証* を使用しています。
 
@@ -89,7 +87,7 @@ Authentication-Results:
 
 複合認証は、メール認証チェックに失敗するメッセージをパスさせることで、これらの制限に対処できます。
 
-簡単にするために、次の例では、メール認証の結果に焦点を置いています。 他のバックエンド インテリジェンス要因は、メール認証にパスするメッセージをなりすましとして識別したり、メール認証に失敗したメッセージを正当として識別したりする可能性があります。
+簡単にするために、次の例では、メール認証の結果に焦点を置いています。他のバックエンド インテリジェンス要因は、メール認証にパスするメッセージをなりすましとして識別したり、メール認証に失敗したメッセージを正当として識別したりする可能性があります。
 
 たとえば、fabrikam.com ドメインには、SPF、DKIM、または DMARC レコードがありません。 fabrikam.com ドメインの送信者からのメッセージは、複合認証に失敗する可能性があります (`compauth` の値と理由に注意してください)。
 
@@ -102,7 +100,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-fabrikam.com で DKIM レコードがない SPF が構成されている場合、メッセージは複合認証をパスできます。 SPF チェックをパスしたドメインは、差出人アドレスのドメインに一致します。
+fabrikam.com が DKIM レコードなしで SPF を構成する場合、SPF チェックをパスしたドメインは差出人アドレスのドメインと一致しているため、メッセージは複合認証にパスできます。
 
 ```text
 Authentication-Results: spf=pass (sender IP is 10.2.3.4)
@@ -113,7 +111,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-fabrikam.com で SPF レコードがない DKIM レコードが構成されている場合、メッセージは複合認証をパスできます。 DKIM 署名のドメインは、差出人アドレスのドメインに一致します。
+fabrikam.com が SPF レコードなしで DKIM レコードを構成する場合、メッセージは複合認証にパスできます。DKIM 署名のドメインは差出人アドレスのドメインと一致しています。
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -146,9 +144,7 @@ Microsoft 365 は、認証されていないメールを組織に送信してい
 この方法は、組織内スプーフィングの解決に使用できます。また、複数のテナントを所有している場合や複数のテナントとやり取りする場合のクロスドメイン スプーフィングの解決にも使用できます。 さらに、Microsoft 365 内の別のユーザー、または別のプロバイダーによりホストされているサード パーティに送信する場合のクロスドメイン スプーフィングを解決する際にも役立ちます。
 
 - ドメインの [SPF レコードを構成します](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。
-
 - プライマリ ドメインの [DKIM レコードを構成します](use-dkim-to-validate-outbound-email.md)。
-
 - 正当な送信者を判断するために、ドメインに [DMARC レコードを設定することを検討します](use-dmarc-to-validate-email.md)。
 
 Microsoft は、SPF、DKIM、および DMARC レコードの詳細な実装ガイドラインを提供しません。 ただし、オンラインで利用できる大量の情報があります。 また、組織がメール認証レコードを設定する際の支援を専門とするサード パーティ企業もあります。
@@ -167,17 +163,11 @@ Microsoft 365 は、会社のインフラストラクチャからの受信メー
 
 `?all` の SPF フォールバック ポリシーの使用を開始したら、メッセージのメール送信元を徐々に見つけて含めることができ、より厳しいポリシーを使用して SPF レコードを更新できます。
 
-### <a name="use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>スプーフィング インテリジェンスを使用して、認証されていないメールが許可された送信者を構成する
+### <a name="configure-permitted-senders-of-unauthenticated-email"></a>認証されていないメールが許可された送信者を構成する
 
-認証されていないメッセージを組織に送信する送信者を許可するために、[スプーフィング インテリジェンス](learn-about-spoof-intelligence.md)を使用することもできます。
+また、[スプーフィング インテリジェンス](learn-about-spoof-intelligence.md)や[テナントの許可/ブロック リスト](tenant-allow-block-list.md)を使用して、送信者が認証されていないメッセージを組織に送信することを許可することもできます。
 
 外部ドメインの場合、スプーフィングされたユーザーは差出人アドレスのドメインですが、送信側インフラストラクチャは、送信元 IP アドレス (最大 /24 CIDR 範囲に分割)、または逆引き DNS (PTR) レコードの組織ドメインのいずれかになります。
-
-以下のスクリーンショットでは、送信元 IP は PTR レコード outbound.mail.protection.outlook.com を使用して 131.107.18.4 となる可能性があります。 これは、送信側インフラストラクチャの outlook.com として表示されます。
-
-この送信者に認証されていない電子メールの送信を許可するには、**[いいえ]** を **[はい]** に変更します。
-
-![スプーフィング対策の許可された送信者の設定](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>送信者/受信者ペアの許可エントリを作成する
 
@@ -189,7 +179,7 @@ Microsoft 365 は、会社のインフラストラクチャからの受信メー
 
 - 過去にメール認証レコードを公開する必要がなかった場合でも、Microsoft にメールを送信する場合は公開する必要があります。
 
-- SPF を設定してドメインの送信側 IP アドレスを公開します。DKIM (使用可能な場合) を設定してメッセージにデジタル署名します。 また、DMARC レコードの設定も検討する必要があります。
+- SPF を設定してドメインの送信側 IP アドレスを公開します。DKIM (使用可能な場合) を設定してメッセージにデジタル署名します。また、DMARC レコードの設定も検討する必要があります。
 
 - 一括送信者を使用してメールを送信する場合は、(アドレスが属する場合) 差出人アドレスのドメインが、SPF または DMARC にパスするドメインに一致していることを確認します。
 
