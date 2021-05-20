@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'ユーザーの DNS レコードを作成するために必要な値/情報をMicrosoft 365。 '
-ms.openlocfilehash: 45994139b11a2fd5a03b2e979dd6af334bc1f00b
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+description: ドメインをサブスクリプションに接続するために DNS レコードを作成するために必要な値Microsoft 365します。
+ms.openlocfilehash: c8ff30c27e67c8a29b7122ea80a6a33f0594b1b9
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126373"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582958"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードを作成するために必要な情報を収集する
 
@@ -97,3 +97,11 @@ ms.locfileid: "50126373"
 4. [任意の DNS ホスティング プロバイダーで [DNS](create-dns-records-at-any-dns-hosting-provider.md)レコードを作成する] に移動し、レジストラーの一覧から DNS ホストを選択すると、その DNS ホストの Web サイトでレコードを追加する手順が詳細に表示されます。
     
 5. 手順に従って、DNS ホストでレコードを作成します。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[ドメインに関する FAQ](../setup/domains-faq.yml) (記事)
+
+[ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)
+
+[ドメインの管理](index.yml) (リンク ページ)

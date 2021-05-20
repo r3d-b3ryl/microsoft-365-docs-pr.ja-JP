@@ -5,8 +5,7 @@ keywords: セキュリティ ソリューション, セットアップ, 構成, 
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.audience: ITPro
-audience: Admin
+audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
@@ -17,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a0c728e5f273752792f851c72df2dfe243116221
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: daa85b406b0fcb56dee55d9f49d39e247d0b6264
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650220"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583702"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>脅威保護機能を全体にわたって構成Microsoft 365
 
@@ -35,8 +34,8 @@ ms.locfileid: "51650220"
 Microsoft は、すべての SaaS アプリケーションへのアクセスを保護するための条件付きアクセスと関連するポリシーの特定のセットをテストし、推奨Microsoft 365。 ポリシーは、ベースライン保護、機密性の高い保護、および高度に規制された保護に推奨されます。 まず、ベースライン保護のポリシーを実装します。 
 
 
-[ ![ ID とデバイス アクセスを構成するための一般的な](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)ポリシー 
- [このイメージのより大きなバージョンを見る](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[ ![ ID とデバイス アクセスを構成するための一般的な](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)ポリシー 
+ [このイメージのより大きなバージョンを見る](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>ユーザーのベースライン保護を実装Microsoft 365
 
@@ -162,12 +161,12 @@ Microsoft Defender for Office 365を使用すると、組織全体のユーザ�
 ![Microsoft 365 セキュリティ センター](../media/solutions-architecture-center/m365-security-center.png)
 
 セキュリティ Microsoft 365は、セキュリティ管理者とセキュリティ運用チームを対象とします。 セキュリティ センター Microsoft 365次の機能を使用できます。
-- Secure Score を使用して組織の全体的なセキュリティ正常性 [を表示します](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)。
+- Secure Score を使用して組織の全体的なセキュリティ正常性 [を表示します](/microsoft-365/security/defender/microsoft-secure-score)。
 - [ID、データ、](../security/defender-endpoint/threat-protection-reports.md) デバイス、アプリ、インフラストラクチャの状態に関するレポートを監視および表示します。
-- Connectを通じてアラートにドットを[表示します](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue)。
+- Connectを通じてアラートにドットを[表示します](/microsoft-365/security/defender/incident-queue)。
 - 自動化 [された調査と修復を使用して](../security/defender/m365d-autoir.md) 、脅威に対処します。
-- [電子メール、データ、デバイス](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview)、および ID に影響を与える侵入の試みや侵害アクティビティなど、脅威を積極的に探します。
-- [脅威分析を使用して、最新の](https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns) 攻撃キャンペーンと手法を理解します。
+- [電子メール、データ、デバイス](/microsoft-365/security/defender/advanced-hunting-overview)、および ID に影響を与える侵入の試みや侵害アクティビティなど、脅威を積極的に探します。
+- [脅威分析を使用して、最新の](/microsoft-365/security/defender/latest-attack-campaigns) 攻撃キャンペーンと手法を理解します。
 - ...その他!
 
 ### <a name="more-information-about-the-microsoft-365-security-center"></a>セキュリティ センターのMicrosoft 365詳細

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Microsoft Viva のプラントピックを計画する方法について説明します。
-ms.openlocfilehash: d64e4b341fe96d7aa3636f58bffe3dd8f388838e
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957541"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583114"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Microsoft Viva のトピックの計画
 
@@ -31,6 +31,8 @@ ms.locfileid: "51957541"
 - トピック センターに与える名前
 
 データのセキュリティとプライバシーが尊重され、トピック エクスペリエンスはユーザーに権限を持たなかったファイルへの追加のアクセス権をユーザーに付与しない。 計画プロセスの一環として [、Microsoft Viva Topics のセキュリティと](topic-experiences-security-privacy.md) プライバシーも確認することをお勧めします。
+
+ビバ トピックスの背後にある AI テクノロジの詳細については [、「Microsoft Viva Topics:](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)ビッグ データからビッグ ナレッジまで」の「アレクサンドリア」を参照してください。
 
 ## <a name="requirements"></a>要件
 

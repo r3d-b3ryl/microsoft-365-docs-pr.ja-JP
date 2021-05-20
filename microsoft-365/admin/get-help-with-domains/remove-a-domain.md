@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: ユーザーから古いドメインを削除し、Microsoft 365グループを別のドメインに移動する方法について学習します。
-ms.openlocfilehash: 3586cc8b288b77725c0dd3484629688e98e0a218
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: ユーザーから古いドメインを削除し、Microsoft 365別のドメインに移動するか、サブスクリプションをキャンセルする方法について学習します。
+ms.openlocfilehash: 089f0378109dd2a5abdf922694390bfdc943693a
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572119"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582934"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
   
@@ -218,10 +218,10 @@ Microsoft 365 がセキュリティ グループ、配布リスト、ユーザ�
   
 ::: moniker-end
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[ドメイン FAQ](../setup/domains-faq.yml)
+[ドメインに関する FAQ](../setup/domains-faq.yml) (記事)
 
-[ビジネス プランの別のMicrosoft 365に切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[ビジネス プランの別のMicrosoft 365に切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)(記事)
 
-[サブスクリプションをキャンセルする](../../commerce/subscriptions/cancel-your-subscription.md)
+[サブスクリプションをキャンセルする](../../commerce/subscriptions/cancel-your-subscription.md) (記事)

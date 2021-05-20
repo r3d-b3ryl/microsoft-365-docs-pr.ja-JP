@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 93735ee3bf8d9b95ab320c2bc158d6ebfe27186c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 704752951c453a3fe872b814e7364ef1699226bf
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932609"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582982"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -34,8 +34,7 @@ ms.locfileid: "51932609"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> この表は現在ベータ版で、短期的に提供され、Azure Active Directory (AAD) サインイン イベントを `AADSignInEventsBeta` ハントできます。 最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。<br><br>
-> Azure Defender の統合された Microsoft Defender for Endpoint ソリューションを通じて Microsoft 365 Defender にアクセスできますが、Microsoft Defender for Office、Microsoft Defender for Identity、または Microsoft Cloud App Security のライセンスを持ってないお客様は、このスキーマを表示できません。 
+> この表は現在ベータ版で、短期的に提供され、Azure Active Directory (AAD) サインイン イベントを `AADSignInEventsBeta` ハントできます。 最終的に、すべてのサインイン スキーマ情報をテーブルに移動 `IdentityLogonEvents` します。
 
  
 

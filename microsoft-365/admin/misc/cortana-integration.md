@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: 有効な仕事用アカウントまたは学校アカウントでサインインすると、Office 365 のエンタープライズ レベルのプライバシー、セキュリティ、コンプライアンスの約束を満たす Microsoft 365 エクスペリエンスで、Cortana でクラウドベースのアシスタンス サービスを利用できます。
-ms.openlocfilehash: dd00972f6e84f5d430ad860ea9cbf637bd7c790f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 有効な仕事用アカウントまたは学校アカウントを持つユーザーは、企業Microsoft 365のセキュリティOffice 365を満たすエクスペリエンスで Cortana を取得できます。
+ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537465"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582778"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -183,3 +183,12 @@ Cortana が企業でどのように機能するのかについて考える 2 つ
 3. [**変更の保存**] を選択します。
 
 Microsoft Services Agreement および [Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=2109174)  [Privacy Statement](https://privacy.microsoft.com/privacystatement)に準拠するサービスの場合、Microsoft はデータ 管理者です。 データ管理者として、Microsoft はデータを使用して、Microsoft プライバシーに関する声明に従って製品および [サービスを改善します](https://privacy.microsoft.com/privacystatement)。
+
+
+## <a name="related-content"></a>関連コンテンツ
+
+[Cortana 音声サポート (Teams)](/microsoftteams/cortana-in-teams)
+
+[Cortana を Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)する (記事)
+
+[Cortana からマイ メールを再生すると、何ができますか?](https://support.microsoft.com/help/4558256)

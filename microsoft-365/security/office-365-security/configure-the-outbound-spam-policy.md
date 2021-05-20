@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、電子メール (EOP) で送信スパム ポリシーを表示、作成、変更、および削除するExchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ead8aa75c0218dd2c4cad96e50e37ed3ddc12815
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331672"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583210"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパム フィルターを構成する
 
@@ -78,10 +78,10 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
-  **注**:
-
-  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > [!NOTE]
+  > - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > 
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 送信スパム ポリシーの推奨設定については、「EOP 送信スパム フィルター ポリシー [設定」を参照してください](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings)。
 
@@ -163,7 +163,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
      - **アクションなし、アラートのみ**: 電子メール通知が送信されます。
 
-6. (省略可能)[ **自動転送] セクションを** 展開して、ユーザーによる外部送信者への自動メール転送を制御します。 詳細については [、「Microsoft 365](external-email-forwarding.md)で外部メールの自動転送を制御する」を参照してください。
+6. (省略可能)[ **自動転送] セクションを** 展開して、ユーザーによる外部送信者への自動メール転送を制御します。 詳細については、「Control automatic external email forwarding in Microsoft 365 」[を参照してください](external-email-forwarding.md)。
 
    > [!NOTE]
    >
@@ -271,11 +271,11 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 既定のポリシーは削除できません。
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>Exchange Online PowerShell またはスタンドアロン EOP PowerShell を使用して送信スパム ポリシーを構成する
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>PowerShell Exchange Onlineスタンドアロン EOP PowerShell を使用して送信スパム ポリシーを構成する
 
 前述したように、送信スパム ポリシーは、送信スパム フィルター ポリシーと送信スパム フィルター ルールで構成されます。
 
-Exchange Online PowerShell またはスタンドアロン EOP PowerShell では、送信スパム フィルター ポリシーと送信スパム フィルター ルールの違いが明らかです。 **\* -HostedOutboundSpamFilterPolicy** コマンドレットを使用して送信スパム フィルター ポリシーを管理し **\* 、-HostedOutboundSpamFilterRule** コマンドレットを使用して送信スパム フィルター ルールを管理します。
+PowerShell Exchange Onlineスタンドアロン EOP PowerShell では、送信スパム フィルター ポリシーと送信スパム フィルター ルールの違いが明らかです。 **\* -HostedOutboundSpamFilterPolicy** コマンドレットを使用して送信スパム フィルター ポリシーを管理し **\* 、-HostedOutboundSpamFilterRule** コマンドレットを使用して送信スパム フィルター ルールを管理します。
 
 - PowerShell では、最初に送信スパム フィルター ポリシーを作成してから、ルールが適用されるポリシーを識別する送信スパム フィルター ルールを作成します。
 - PowerShell では、送信スパム フィルター ポリシーの設定と送信スパム フィルター ルールを個別に変更します。
@@ -288,16 +288,15 @@ PowerShell で送信スパム ポリシーを作成するには、次の 2 つ�
 1. 送信スパム フィルター ポリシーを作成します。
 2. ルールが適用される送信スパム フィルター ポリシーを指定する送信スパム フィルター ルールを作成します。
 
- **注**:
-
-- 新しい送信スパム フィルター ルールを作成し、関連付けされていない既存の送信スパム フィルター ポリシーを割り当てできます。 送信スパム フィルター ルールを複数の送信スパム フィルター ポリシーに関連付けできない。
-
-- ポリシーを作成するまで、セキュリティ & コンプライアンス センターで使用できない PowerShell の新しい送信スパム フィルター ポリシーに対して、次の設定を構成できます。
-
-  - 無効として新しいポリシーを作成 _します_ `$false` **(New-HostedOutboundSpamFilterRule コマンドレットで有効** )。
-  -  _\<Number\>_ **New-HostedOutboundSpamFilterRule** コマンドレットの作成時のポリシーの優先度 (優先度) を設定します。
-
-- PowerShell で作成した新しい送信スパム フィルター ポリシーは、ポリシーをスパム フィルター ルールに割り当てるまで、セキュリティ & コンプライアンス センターには表示されません。
+> [!NOTE]
+> - 新しい送信スパム フィルター ルールを作成し、関連付けされていない既存の送信スパム フィルター ポリシーを割り当てできます。 送信スパム フィルター ルールを複数の送信スパム フィルター ポリシーに関連付けできない。
+> 
+> - ポリシーを作成するまで、セキュリティ & コンプライアンス センターで使用できない PowerShell の新しい送信スパム フィルター ポリシーに対して、次の設定を構成できます。
+> 
+>   - 無効として新しいポリシーを作成 _します_ `$false` **(New-HostedOutboundSpamFilterRule コマンドレットで有効** )。
+>   -  _\<Number\>_ **New-HostedOutboundSpamFilterRule** コマンドレットの作成時のポリシーの優先度 (優先度) を設定します。
+> 
+> - PowerShell で作成した新しい送信スパム フィルター ポリシーは、ポリシーをスパム フィルター ルールに割り当てるまで、セキュリティ & コンプライアンス センターには表示されません。
 
 #### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a>手順 1: PowerShell を使用して送信スパム フィルター ポリシーを作成する
 
@@ -309,7 +308,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 この例では、Contoso Executives という名前の新しい送信スパム フィルター ポリシーを次の設定で作成します。
 
-- 受信者レートの制限は、既定値の小さい値に制限されます。 詳細については [、「Sending limits across Microsoft 365 options」を参照してください](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。
+- 受信者レートの制限は、既定値の小さい値に制限されます。 詳細については[、「Sending limits across Microsoft 365」 を参照してください](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。
 
 - 制限の 1 つに達すると、ユーザーはメッセージを送信できません。
 

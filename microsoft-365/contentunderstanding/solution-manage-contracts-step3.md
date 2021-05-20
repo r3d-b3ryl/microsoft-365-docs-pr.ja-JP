@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: カスタム ソリューションを使用してPower Automateを作成して契約を処理する方法についてMicrosoft 365します。
-ms.openlocfilehash: d9892110d6aebd3eaae6fbc21d453b7eb14d7f7e
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54e92f36b19cefde92111cdbc960fad7715cf8b0
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281235"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583102"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>手順 3. 契約Power Automate処理するフローを作成するには、次の情報を使用します。
 
@@ -36,11 +36,11 @@ ms.locfileid: "52281235"
 
 ## <a name="prepare-your-contract-for-review"></a>レビューのために契約を準備する
 
-契約が Syntex ドキュメント理解モデルSharePoint識別され、分類されると、Power Automate フローは最初に状態を "レビュー中" に変更します。
+契約が Syntex ドキュメント理解モデルSharePoint識別され、分類されると、Power Automate フローは最初に状態を [確認中]**に変更します**。
 
 ![更新の状態。](../media/content-understanding/flow-overview.png)
 
-ファイルをチェックアウトした後、状態の値を "レビュー中" に変更します。
+ファイルをチェックアウトした後、状態の値を [確認中] **に変更します**。
 
 ![レビューの状態です。](../media/content-understanding/in-review.png)
 
@@ -141,7 +141,7 @@ ms.locfileid: "52281235"
 
    ![カードの状態が承認されました。](../media/content-understanding/approved-contracts-tab.png)
 
-- フローで、状態が "承認済み" に変更されます。
+- フローで、状態が [承認済み] **に変更されます**。
 
    ![Flowの状態が承認されました。](../media/content-understanding/status-approved.png)
 

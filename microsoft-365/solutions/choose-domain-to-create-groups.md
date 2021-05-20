@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: PowerShell を使用して電子メール アドレス ポリシーを構成して、Microsoft 365グループを作成するときに使用するドメインを選択する方法について説明します。
-ms.openlocfilehash: a0142ea5f5aa088c4be79fc8699a616d9cdd9390
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4d620c3344f83f56afd05c00d78615331dd413ed
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538221"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583150"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>グループの作成時に使用するドメインMicrosoft 365する
 
@@ -119,10 +119,10 @@ EAP を変更しても、プロビジョニング済みのグループには影�
     
 - 1 つの組織につき最大で 100 のメール アドレス ポリシーを構成できます。
     
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) (記事)
 
-[コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md)
+[コラボレーション ガバナンス 計画の作成](collaboration-governance-first.md) (記事)
 
-[管理センター Microsoft 365グループを作成する](../admin/create-groups/create-groups.md)
+[管理センター Microsoft 365グループを作成する](../admin/create-groups/create-groups.md)(記事)

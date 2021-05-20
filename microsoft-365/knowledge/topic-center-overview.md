@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 2e7152530dc3221eb3ab01047416993178193732
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333820"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583594"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva Topics のトピック センターの概要
 
-Microsoft Viva Topics では、トピック センターは、組織の知識の中心として機能する最新の SharePoint サイトです。 Microsoft 365 管理 [センターの Viva Topics](set-up-topic-experiences.md) セットアップ中に作成されます。
+Microsoft Viva Topics では、トピック センターは、組織SharePoint知識の中心として役立つ最新のサイトです。 これは、管理センター[でビ](set-up-topic-experiences.md)バ トピックのセットアップ中Microsoft 365作成されます。
 
 トピック センターには、ライセンスを取得したユーザー全員が、接続先のトピックを表示できる Topics Web パーツを含む既定のホーム ページがあります。 
 
@@ -34,12 +34,12 @@ Microsoft Viva Topics では、トピック センターは、組織の知識の
 トピック センターは、Viva Topics のセットアップ中に作成されます。 セットアップが完了すると、管理者は [トピック センターの管理] ページで URL [を検索できます](./topic-experiences-administration.md#to-access-topics-management-settings)。
 
 
-1. Microsoft 365 管理センターで、[設定] を選択し、[組織の設定]**を選択します**。
+1. 管理センターでMicrosoft 365を選択し、[組織設定]**を選択します**。 
 2. [サービス] **タブで** 、[トピック エクスペリエンス] **を選択します**。
 
-    ![ユーザーをナレッジに接続する](../media/admin-org-knowledge-options-completed.png) 
+    ![Connectを知る](../media/admin-org-knowledge-options-completed.png) 
 
-3. [トピック センター **] タブを選択** します。[ **サイト アドレス]** の下に、トピック センターへのリンクがあります。
+3. [トピック センター **] タブを選択** します。[ **サイト アドレス]** の下にトピック センターへのリンクがあります。
 
     ![ナレッジ ネットワーク設定](../media/knowledge-network-settings-topic-center.png) 
 
@@ -69,7 +69,7 @@ Microsoft Viva Topics では、トピック センターは、組織の知識の
 
 ## <a name="manage-topics-page"></a>[トピックの管理] ページ
 
-トピック センターの [トピック **の管理]** ページで作業するには、ナレッジ マネージャーの役割に必要な [トピックの管理] アクセス許可が必要です。 管理者は、ナレッジ管理のセットアップ中にこれらの[](set-up-topic-experiences.md)アクセス許可をユーザーに割り当て[](topic-experiences-knowledge-rules.md)、または Microsoft 365 管理センターを通じて管理者が後で新しいユーザーを追加できます。
+トピック センターの [トピック **の管理]** ページで作業するには、ナレッジ マネージャーの役割に必要な [トピックの管理] アクセス許可が必要です。 管理者は、ナレッジ管理のセットアップ中にこれらの[](set-up-topic-experiences.md)アクセス許可をユーザーに割り当て[](topic-experiences-knowledge-rules.md)、新しいユーザーを管理者が管理センターから後で追加Microsoft 365できます。
 
 [トピック **の管理]** ページで、トピック ダッシュボードには、指定したソースの場所から識別された、アクセス権を持つすべてのトピックが表示されます。 各トピックには、トピックが検出された日付が表示されます。 [トピックの管理] アクセス許可が割り当てられたユーザーは、未確認のトピックを確認し、次の項目を選択できます。
 
@@ -79,7 +79,7 @@ Microsoft Viva Topics では、トピック センターは、組織の知識の
  
 - トピックを削除する: トピックをエンド ユーザーに検出不可にする。 トピックは [削除済み] **タブに移動** され、必要に応じて後で確認できます。 
 
-[トピックの管理] ページでトピックを管理する方法の詳細については、「トピックの管理」 [を参照してください](manage-topics.md)。
+トピックの管理ページでトピックを管理する方法の詳細 **については、「トピック** の管理」 [を参照してください](manage-topics.md)。
 
 ## <a name="create-or-edit-a-topic"></a>トピックを作成または編集する
 

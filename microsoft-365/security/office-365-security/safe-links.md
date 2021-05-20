@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: この記事では、管理者は、フィッシングや悪意のある URL を使用する他の攻撃から組織を保護するために、Office 365 用 Defender の セーフ リンク保護について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86ecea1e250821f6a7f08d204586db0e60052e5c
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 573fd5b92400996fa595b5953028e20fcecec976
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274438"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583582"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフMicrosoft Defender for Office 365
 
@@ -52,6 +52,9 @@ ms.locfileid: "52274438"
 - **電子メール** メッセージ : セーフのリンク保護は、リンク ポリシーによって制御セーフされます。 既定のリンク ポリシーセーフないので、電子メール メッセージで セーフ リンクの保護を取得するには、1 つ以上の セーフ **リンク ポリシーを作成する必要があります**。 手順については、「Microsoft Defender for セーフのリンク ポリシーをセットアップする[」を参照Office 365。](set-up-safe-links-policies.md)
 
   電子メール メッセージのリンク保護セーフ詳細については、この記事の「セーフのリンク[設定](#safe-links-settings-for-email-messages)」セクションを参照してください。
+  
+  > [!NOTE]
+  > メールが有効なパブリック フォルダーでは、販売リンクは機能しません。
 
 - **Microsoft Teams** (現在 TAP プレビュー): セーフ 会話、グループ チャット、またはチャネルからのリンクに対する Teams セーフ リンク保護は、セーフ リンク ポリシーによっても制御されます。 既定の セーフ リンク ポリシーはないので、Teams で セーフ リンクの保護を取得するには、1 つ以上の セーフ **リンク ポリシーを作成する必要があります**。
 
@@ -135,7 +138,7 @@ ms.locfileid: "52274438"
 - **優先度**: 複数のポリシーを作成する場合は、適用する順序を指定できます。 2つのポリシーが同じ優先順位を持つことはできません。最初のポリシーが適用されると、ポリシーの処理は停止します。
 
   優先順位と複数のポリシーを評価し適用する方法の詳細については、「[メール保護の優先順位](how-policies-and-protections-are-combined.md)」を参照してください。
-
+  
 ### <a name="how-safe-links-works-in-email-messages"></a>電子メール セーフリンクの動作方法
 
 電子メール メッセージ内の URL に対するリンクセーフの仕組みについて、大まかに説明します。

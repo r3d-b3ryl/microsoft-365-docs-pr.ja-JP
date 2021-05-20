@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 電子メールやオンラインのようなサービスが独自のドメインMicrosoft 365使用するために、Skype for Businessドメインを追加して設定する方法について説明します。
-ms.openlocfilehash: 1348beb09fcbc5c12d01dbf197b1cb1240decded
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 447cc69aa2c4c3edcf1c4c6a2435cdc27fc22cd2
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332644"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582994"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>ネームサーバーを変更して、ドメイン レジストラー Microsoft 365をセットアップする
 
@@ -196,3 +196,10 @@ Microsoft 365 で正しい TXT レコードが見つかった場合、ドメイ�
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. その後、Microsoft の電子メールと他のサービスはすべて、ドメインで動作する設定に設定されます。 
   
+## <a name="related-content"></a>関連コンテンツ
+
+[ドメインに接続するための DNS レコードの追加](create-dns-records-at-any-dns-hosting-provider.md) (記事)
+
+[ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)
+
+[ドメインの管理](index.yml) (リンク ページ)
