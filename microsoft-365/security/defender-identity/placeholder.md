@@ -1,6 +1,6 @@
 ---
-title: 削除するマスターフォルダーを作成するプレースホルダートピック
-description: 削除するマスターフォルダーを作成するプレースホルダートピック
+title: 削除する master-to でフォルダーを作成するプレースホルダー トピック
+description: 削除する master-to でフォルダーを作成するプレースホルダー トピック
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -29,5 +29,5 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572822"
 ---
-# <a name="placeholder-topic-to-create-the-folder-in-master-to-be-deleted"></a><span data-ttu-id="d17ba-103">削除するマスターフォルダーを作成するプレースホルダートピック</span><span class="sxs-lookup"><span data-stu-id="d17ba-103">Placeholder topic to create the folder in master-to be deleted</span></span>
+# <a name="placeholder-topic-to-create-the-folder-in-master-to-be-deleted"></a><span data-ttu-id="13d69-103">削除する master-to でフォルダーを作成するプレースホルダー トピック</span><span class="sxs-lookup"><span data-stu-id="13d69-103">Placeholder topic to create the folder in master-to be deleted</span></span>
 
