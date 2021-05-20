@@ -15,10 +15,10 @@ metadata:
 productDirectory:
   title: Microsoft 365 Business Premium でリモート ワークのセキュリティ保護をする
   items:
-    - title: Read
+    - title: 視聴する
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
-      summary: Microsoft 365 Business Premium でリモート ワークのセキュリティ保護をする最良な方法。
-      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623'
+      summary: Microsoft 365 Business Premium の 5 つの主な利点。
+      url: 'https://aka.ms/M365BPvideo'
     - title: 無料のパートナー キットを入手
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
       summary: リモート ワークのセキュリティを保護するための、パートナー向けの実践的なガイダンスと市場投入のリソースです。
