@@ -19,14 +19,14 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-description: 小売店で購入した Microsoft 365 Busines sStandard のプロダクト キーを利用する方法を学びます。
+description: 小売店からMicrosoft 365 Business Standard購入した場合は、プロダクト キーを引き換え、サブスクリプションをアクティブ化する方法について学習します。
 ms.date: 11/13/2020
-ms.openlocfilehash: b313b38fbb4fff332bb13402dc5af5db4e0bf676
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: bc2b07b5a98c13a919596bdbf85a21bdc6c8d2bf
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331722"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593395"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクト キーを入力する
 
@@ -66,3 +66,11 @@ Microsoft 365 for Business を初めて使用する場合は、[Microsoft 365 �
 一般的なエラーと解決策の一覧については、「[一般法人向け Microsoft 365 プロダクト キーの問題](product-key-errors-and-solutions.md)」を参照してください。
   
 または、[Microsoft サポートにお電話ください](../business-video/get-help-support.md)。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[別のプランにアップグレードする](./subscriptions/upgrade-to-different-plan.md) (記事)
+
+[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](./subscriptions/what-if-my-subscription-expires.md) (記事)
+
+[ビジネス向けサブスクリプションとライセンスMicrosoft 365理解](./licenses/subscriptions-and-licenses.md)する (記事)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a3b6edda36d2872177d9a88f3259220dcf2e76f3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: dba96a43f976353251b5530233667933088f6f29
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291317"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594087"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Defender でのインシデントのMicrosoft 365する
 
@@ -87,7 +87,7 @@ Microsoft 365Defender は相関分析を適用し、関連するアラートと�
 
 優先度が最も高いインシデントを決定した後、そのインシデントを選択し、次の操作を行います。
 
-- [タグ](manage-incidents.md) 、セキュリティ アナリストへの割り当て、コメントのインシデントのプロパティを管理します。
+- [タグ](manage-incidents.md) 、割り当て、誤検知インシデントの即時解決、およびコメントのインシデントのプロパティを管理します。
 - 調査を開始 [します](investigate-incidents.md)。
 
 ## <a name="see-also"></a>関連項目

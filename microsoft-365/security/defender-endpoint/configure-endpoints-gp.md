@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b8f56c8f2ba92073ea7ae9464f199d9c900b932f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 81a3b41fb8e38a224a030571093b2145d2efb3d4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933963"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593431"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>グループ ポリシー Windows 10デバイスのオンボード 
 
@@ -103,7 +103,7 @@ ms.locfileid: "51933963"
 
 4.  [ポリシー **] をクリックし**、[管理 **用テンプレート] をクリックします**。
 
-5.  [コンポーネント **Windows] をクリック** し **、[ATP] Windows Defenderをクリックします**。
+5.  [Windows **コンポーネント] をクリック** し **、[SmartScreen] Windows Defenderをクリックします**。
 
 6.  デバイスからのサンプル共有を有効または無効にする場合に選択します。
 
@@ -119,34 +119,34 @@ ms.locfileid: "51933963"
 
 すべてのポリシーは 、 の下に位置します `Computer Configuration\Policies\Administrative Templates` 。
 
-**ポリシーの場所:** \Windows コンポーネント\atp Windows Defender
+**ポリシーの場所:** \Windows コンポーネント\Windows Defender SmartScreen*
 
-ポリシー | Setting 
+ポリシー | 設定 
 :---|:---
 Enable\Disable Sample collection|   [有効] - [コンピューターでサンプル コレクションを有効にする] チェック ボックスをオンにします。
 
 <br/>
 
-**ポリシーの場所:** \Windows Components\Windows Defender ウイルス対策
+**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策
 
-ポリシー | Setting 
+ポリシー | 設定 
 :---|:---
 望ましくない可能性があるアプリケーションの検出を構成する | 有効、ブロック
 
 <br/>
 
-**ポリシーの場所:** \Windows コンポーネント\Windows Defender ウイルス対策\MAPS
+**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\MAPS
 
-ポリシー | Setting 
+ポリシー | 設定 
 :---|:---
 Microsoft MAPS に参加する | 有効、高度なマップ
 詳細な分析が必要な場合にファイル サンプルを送信する | 有効、安全なサンプルの送信
 
 <br/>
 
-**ポリシーの場所:** \Windows コンポーネント\Windows Defender ウイルス対策\リアルタイム保護
+**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\リアルタイム保護
 
-ポリシー | Setting 
+ポリシー | 設定 
 :---|:---
 リアルタイム保護をオフにする|無効
 動作の監視を有効にする|Enabled
@@ -155,18 +155,18 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 
 <br/>
 
-**ポリシーの場所:** \Windows Components\Windows Defender ウイルス対策\Scan
+**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender AntivirusScan
 
 これらの設定は、エンドポイントの定期的なスキャンを構成します。 毎週のクイック スキャンを実行することをお勧めします。パフォーマンスが許容されます。
 
-ポリシー | Setting 
+ポリシー | 設定 
 :---|:---
 スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |Enabled
 
 
 <br/>
 
-**ポリシーの場所:** \Windows コンポーネント\Windows Defender ウイルス対策\Windows Defender Exploit Guard\Attack Surface Reduction
+**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
 [攻撃表面の縮小ルールのカスタマイズ] から攻撃表面の縮小 GUID [の現在のリストを取得する](customize-attack-surface-reduction.md)
 
@@ -184,7 +184,7 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 
 
 
-ポリシー | Setting 
+ポリシー | 設定 
 :---|:---
 フォルダー アクセスの制御を構成する| 有効、監査モード
 

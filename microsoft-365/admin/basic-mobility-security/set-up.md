@@ -17,13 +17,13 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 基本モビリティとセキュリティをセットアップして、ユーザーのモバイル デバイスをセキュリティで保護および管理します。
-ms.openlocfilehash: 2f74307d41d83dd2e6fce2b68283ce0966e850e8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: デバイスをリモートでワイプするなどのアクションを実行して、ユーザーのモバイル デバイスをセキュリティで保護および管理するための基本モビリティとセキュリティを設定します。
+ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906242"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593419"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの設定
 
@@ -127,7 +127,8 @@ MFA を設定した後、セキュリティ & コンプライアンス センタ
 
 Android または iOS デバイスを使用しているユーザーは、登録プロセスのポータル サイトアプリをインストールする必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-content"></a>関連コンテンツ
 
-[基本的なモビリティとセキュリティの機能](capabilities.md)<br/>
-[Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する](create-device-security-policies.md)
+[基本モビリティとセキュリティの機能](capabilities.md) (記事)
+
+[Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する](create-device-security-policies.md) (記事)

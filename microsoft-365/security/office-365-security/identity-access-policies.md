@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 42ab124f3026cf0b7441edf44c0e6433be5f0ecd
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e7148e666b7d96d6de328089fccc4bb444b9f502
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583670"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594007"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 
@@ -63,9 +63,9 @@ ms.locfileid: "52583670"
 ||[アプリケーション保護ポリシー (APP) データ保護の適用](#apply-app-data-protection-policies)|プラットフォームごとに 1 つの Intune アプリ保護ポリシー (Windows iOS/iPadOS、Android)。|Microsoft 365 E3 または E5|
 ||[承認済みアプリとアプリ保護を要求する](#require-approved-apps-and-app-protection)|iOS、iPadOS、または Android を使用して携帯電話とタブレットに対してモバイル アプリ保護を適用します。|Microsoft 365 E3 または E5|
 ||[デバイス コンプライアンス ポリシーの定義](#define-device-compliance-policies)|プラットフォームごとに 1 つのポリシー。|Microsoft 365 E3 または E5|
-||[準拠 PC が必要](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|アプリまたは MacOS を使用して PC の Intune Windows適用します。|Microsoft 365 E3 または E5|
+||[準拠 PC が必要](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|アプリまたは macOS を使用して PC の Intune Windows適用します。|Microsoft 365 E3 または E5|
 |**機密**|[サインイン リスクが低い、中程度、または高い場合に MFA *を要求**する*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5またはMicrosoft 365 E3 E5 セキュリティ アドオンを使用する|
-||[準拠している PC とモバイル *デバイスを* 要求する](#require-compliant-pcs-and-mobile-devices)|Pc (Windows MacOS) と電話またはタブレット (iOS、iPadOS、または Android) の両方に Intune 管理を適用します。|Microsoft 365 E3 または E5|
+||[準拠している PC とモバイル *デバイスを* 要求する](#require-compliant-pcs-and-mobile-devices)|Pc (Windows macOS) と電話またはタブレット (iOS、iPadOS、または Android) の両方に Intune 管理を適用します。|Microsoft 365 E3 または E5|
 |**厳しく規制**|[*常に* MFA を要求する](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 または E5|
 |
 

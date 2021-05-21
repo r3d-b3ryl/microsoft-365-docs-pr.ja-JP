@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: テナントのデータ収集を開始する方法については、Microsoft 365 Usage Analytics テンプレート アプリを使用Power BI。
-ms.openlocfilehash: d9cadcc8258478fd1d5dbc0d9ae6bf4e814a8435
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 329878365aa07da4615a849ad04cde7f75a07872
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957517"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593371"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする
 
@@ -96,3 +96,11 @@ Microsoft 365の使用状況分析は、米国政府機関向けMicrosoft 365ま
 2. [ **レポート] を** 選択し、[匿名識別子の **表示] を選択します**。 この設定は、使用状況レポートとテンプレート アプリの両方に適用されます。
   
 3. [**変更の保存**] を選択します。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[利用状況分析について](usage-analytics.md) (記事)
+
+[使用状況分析の最新バージョンを取得する](get-the-latest-version-of-usage-analytics.md) (記事)
+
+[使用状況分析のレポートを移動Microsoft 365活用する](navigate-and-utilize-reports.md)(記事)

@@ -19,19 +19,19 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: ユーザー アカウントを削除する方法について説明します。 ユーザーの電子メールとコンテンツの管理方法をOneDriveします。 また、製品ライセンスを保持するか、支払いを停止するか決定します。
-ms.openlocfilehash: f4b1e0b1fb591d369cc09010db86dd995d7d4896
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: ユーザー アカウントを削除する方法と、ユーザーの電子メールとコンテンツをOneDriveする方法、および製品ライセンスを保持するかどうかを説明します。
+ms.openlocfilehash: c30edb598f659337778ec956737934da5fedad18
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535976"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593407"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
 **職場または学校で使用する *自分の* Microsoft 365 ユーザー アカウントを削除する方法をお探しの場合は、職場または大学のテクニカル サポートにこれらの手順の実行を依頼してください。**
 
-## <a name="what-you-need-to-know-about-deleting-users"></a>ユーザーの削除について知っておくべきこと
+## <a name="before-you-begin"></a>始める前に
 
 - ユーザー アカウントを削除できるのは、職場や学校の [Microsoft 365 グローバル管理者](about-admin-roles.md)またはユーザー管理のアクセス許可を持っている管理者のみです。
 - 30 日後にユーザーのデータが永久に削除されるまではアカウントを[復元](restore-user.md)できます。
@@ -66,13 +66,13 @@ ms.locfileid: "52535976"
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
@@ -169,14 +169,14 @@ ms.locfileid: "52535976"
 
 **自分のコンピューターから Microsoft 365 を削除する場合は、[サブスクリプションのキャンセル](../../commerce/subscriptions/cancel-your-subscription.md)に移動します。**
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーを復元する](restore-user.md)
+[ユーザーの復元](restore-user.md) (記事)
   
-[メールボックスを完全に削除する](/exchange/permanently-delete-a-mailbox-exchange-2013-help)
+[メールボックスを完全に削除する](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (記事)
 
-[Office 365 から元従業員を削除する](remove-former-employee.md)
+[元従業員を削除する (Office 365)](remove-former-employee.md)
 
-[Office 365 に新しい従業員を追加する](add-new-employee.md)
+[新しい従業員を新しいOffice 365](add-new-employee.md)する (記事)
 
-[ユーザー アカウントを削除する](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)):Azure AD と同期している **Active Directory** を組織で使用している場合は、この手順を使用します。 Office 365 からこの操作を行うことはできません。
+[ユーザー アカウントを削除する](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)):Azure AD と同期している **Active Directory** を組織で使用している場合は、この手順を使用します。 Office 365 からこの操作を行うことはできません。 (記事)
