@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8f25b924109823951c331fe744b548d372eaf11
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 0de55eefe2f7dd8c9f891fbe126a68a49699ecd3
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957619"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594099"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -44,14 +44,18 @@ Defender for Endpoint センサーでは、センサー データWindowsレポ�
 WinHTTP 構成設定は、Windows インターネット (WinINet) インターネット閲覧プロキシ設定とは独立し、次の検出方法を使用してのみプロキシ サーバーを検出できます。
 
 - 自動検出の方法:
+
   - 透過プロキシ
+
   - Web プロキシ自動発見プロトコル (WPAD)
 
     > [!NOTE]
     > ネットワーク トポロジで透過プロキシまたは WPAD を使用している場合は、特別な構成設定は必要ない。 プロキシの Defender for Endpoint URL 除外の詳細については、「プロキシ サーバーで Defender for Endpoint Service URL へのアクセスを有効にする」 [を参照してください](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 
 - 手動の静的プロキシの構成:
+
   - レジストリ ベースの構成
+
   - netsh コマンドを使用して構成された WinHTTP – 安定したトポロジのデスクトップ (同じプロキシの背後にある企業ネットワークのデスクトップなど) だけに適しています。
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>レジストリ ベースの静的プロキシを使用して、プロキシ サーバーを手動で構成します。
@@ -59,32 +63,40 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) インター�
 コンピューターがインターネットへの接続を許可されていない場合、Defender for Endpoint センサーだけが診断データを報告し、Defender for Endpoint サービスと通信できるレジストリ ベースの静的プロキシを構成します。
 
 > [!NOTE]
-> - このオプションを Windows 10 または Windows Server 2019 で使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。</br>
-> Windows 10バージョン 1809 または Windows Server 2019 -https://support.microsoft.com/kb/5001384 <br>
-> Windows 10バージョン 1909 -https://support.microsoft.com/kb/4601380</br>
-> Windows 10バージョン 2004 -https://support.microsoft.com/kb/4601382</br>
-> Windows 10バージョン 20H2 -https://support.microsoft.com/kb/4601382</br>
-> これらの更新プログラムは、CnC (Command and Control) チャネルの接続性と信頼性を向上します。</br>
+> このオプションを Windows 10 または Windows Server 2019 で使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。
+>
+> - Windows 10バージョン 1809 または Windows Server 2019 -https://support.microsoft.com/kb/5001384
+> - Windows 10バージョン 1909 -https://support.microsoft.com/kb/4601380
+> - Windows 10バージョン 2004 -https://support.microsoft.com/kb/4601382
+> - Windows 10バージョン 20H2 -https://support.microsoft.com/kb/4601382
+>
+> これらの更新プログラムは、CnC (Command and Control) チャネルの接続性と信頼性を向上します。
 
 静的プロキシは、グループ ポリシー (GP) を使用して構成できます。 グループ ポリシーは次の場所にあります。
 
-- 管理用> Windows コンポーネント>データ収集とプレビュー ビルド>接続されたユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用を構成する
-  - [有効] **に設定し** 、[ **認証されたプロキシの使用を** 無効にする: ![ グループ ポリシーのイメージ設定 1] を選択します。](images/atp-gpo-proxy1.png)
+- **管理用> Windows コンポーネント>データ収集とプレビュー ビルド>接続されたユーザー エクスペリエンスとテレメトリ サービスの認証プロキシの使用を構成する**
+
+  [有効] に **設定し、[認証** された **プロキシの使用を無効にする] を選択します**。
+
+  ![グループ ポリシー設定 1 のイメージ](images/atp-gpo-proxy1.png)
+
 - **管理用テンプレート > Windows コンポーネント**>およびプレビュー ビルド > 接続されたユーザー エクスペリエンスとテレメトリを構成する:
-  - プロキシを構成します。<br>
-    ![グループ ポリシー設定 2 のイメージ](images/atp-gpo-proxy2.png)
 
-    このポリシーは、レジストリ キー `HKLM\Software\Policies\Microsoft\Windows\DataCollection` の下に 2 つのレジストリ値 `TelemetryProxyServer` を REG_SZ として、`DisableEnterpriseAuthProxy` を REG_DWORD として設定します。
+  プロキシを構成する
 
-    レジストリ値は、 `TelemetryProxyServer` 次の文字列形式を取ります。
+  ![グループ ポリシー設定 2 のイメージ](images/atp-gpo-proxy2.png)
 
-    ```text
-    <server name or ip>:<port>
-    ```
+  ポリシーは、レジストリ キーの下に、REG_SZとREG_DWORDの 2 つのレジストリ値 `TelemetryProxyServer` `DisableEnterpriseAuthProxy` を設定します `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 。
 
-    例: 10.0.0.6:8080
+  レジストリ値は、 `TelemetryProxyServer` 次の文字列形式を取ります。
 
-    レジストリ値 `DisableEnterpriseAuthProxy` を 1に設定する必要があります。
+  ```text
+  <server name or ip>:<port>
+  ```
+
+  例: 10.0.0.6:8080
+
+  レジストリ値 `DisableEnterpriseAuthProxy` を 1に設定する必要があります。
 
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>netsh コマンドを使用してプロキシ サーバーを手動で構成する
 
@@ -96,9 +108,9 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 
 1. 管理者特権でのコマンド ラインを開きます。
 
-    a. **[スタート]** をクリックし、「**cmd**」と入力します。
+   1. **[スタート]** をクリックし、「**cmd**」と入力します。
 
-    b. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
+   1. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
 2. 次のコマンドを入力して、**Enter** キーを押します。
 
@@ -106,15 +118,15 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
    netsh winhttp set proxy <proxy>:<port>
    ```
 
-   例: netsh winhttp set proxy 10.0.0.6:8080
+   例: `netsh winhttp set proxy 10.0.0.6:8080`
 
-winhttp プロキシをリセットするには、次のコマンドを入力して Enter キーを押 **します。**
+winhttp プロキシをリセットするには、次のコマンドを入力し、**Enter** キーを押します。
 
 ```PowerShell
 netsh winhttp reset proxy
 ```
 
-詳細については、「[Netsh コマンドの構文、コンテキスト、およびフォーマット](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts)」を参照してください。
+詳細については、「[Netsh コマンドの構文、コンテキスト、およびフォーマット](/windows-server/networking/technologies/netsh/netsh-contexts)」を参照してください。
 
 ## <a name="enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server"></a>プロキシ サーバーで Microsoft Defender for Endpoint サービス URL へのアクセスを有効にする
 
@@ -123,7 +135,7 @@ netsh winhttp reset proxy
 次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールを作成する必要があります。 
 
 
-|**ドメインリストのスプレッドシート**|**説明**|
+| ドメインリストのスプレッドシート | 説明 |
 |:-----|:-----|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>[ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
@@ -135,11 +147,11 @@ netsh winhttp reset proxy
 
 
 > [!NOTE]
-> v20 を含む URL は、バージョン 1803 以降をWindows 10デバイスを使用している場合にのみ必要です。 たとえば、バージョン 1803 以降をWindows 10しているデバイスで、米国のデータ 転送地域にオンボードされている場合 ```us-v20.events.data.microsoft.com``` Storageです。
+> v20 を含む URL は、バージョン 1803 以降をWindows 10デバイスを使用している場合にのみ必要です。 たとえば、バージョン 1803 以降をWindows 10しているデバイスで、米国のデータ 転送地域にオンボードされている場合 `us-v20.events.data.microsoft.com` Storageです。
 
 
 > [!NOTE]
-> 環境でネットワーク 接続をMicrosoft Defender ウイルス対策する場合は、「Configure network connections to the [Microsoft Defender ウイルス対策 クラウド サービス」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
+> 環境でネットワーク 接続をMicrosoft Defender ウイルス対策する場合は、「Configure network connections to the [Microsoft Defender ウイルス対策 クラウド サービス」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
 
 Defender for Endpoint センサーがシステム コンテキストから接続している場合、プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合は、以前にリストした URL で匿名トラフィックが許可されている必要があります。
 
@@ -170,7 +182,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 4.  Microsoft Defender for Endpoint URL リストで、地域の要件の完全な一覧を確認します (「サービス URL スプレッドシート」を参照 [してください](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx))。
 
-![管理者のWindows PowerShell](images/admin-powershell.png)
+    ![管理者のWindows PowerShell](images/admin-powershell.png)
 
 *.ods.opinsights.azure.com、*.oms.opinsights.azure.com、および *.agentsvc.azure-automation.net URL エンドポイントで使用されるワイルドカード (*) は、特定の Workspace ID に置き換えます。 ワークスペース ID は環境とワークスペースに固有の ID で、テナントの [オンボーディング] セクションで、Microsoft Defender セキュリティ センターできます。
 
@@ -189,9 +201,9 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 3. 管理者特権でのコマンド ラインを開きます。
 
-    a. **[スタート]** をクリックし、「**cmd**」と入力します。
+   1. **[スタート]** をクリックし、「**cmd**」と入力します。
 
-    b.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
+   1.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
 4. 次のコマンドを入力して、**Enter** キーを押します。
 
@@ -199,7 +211,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
     HardDrivePath\MDATPClientAnalyzer.cmd
     ```
 
-    *HardDrivePath* を、たとえば MDATPClientAnalyzer ツールがダウンロードされたパスに置き換えます
+    *HardDrivePath を*、次のような MDATPClientAnalyzer ツールがダウンロードされたパスに置き換える。
 
     ```PowerShell
     C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
@@ -207,7 +219,8 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 5. *HardDrivePath**でMDATPClientAnalyzerResult.zip* フォルダーにツールによって作成されたファイルを抽出します。
 
-6. *MDATPClientAnalyzerResult.txt* を開き、プロキシ構成の手順を実行して、サーバーの検出とサービス URL へのアクセスを有効にしたことを確認します。<br><br>
+6. *MDATPClientAnalyzerResult.txt* を開き、プロキシ構成の手順を実行して、サーバーの検出とサービス URL へのアクセスを有効にしたことを確認します。
+
    このツールは、Defender for Endpoint クライアントが相互作用するように構成されている Defender for Endpoint サービス URL の接続を確認します。 次に、Defender for Endpoint サービスとの通信に使用できる URL ごとに、結果を *MDATPClientAnalyzerResult.txt* ファイルに出力します。 次に例を示します。
 
    ```text
@@ -219,12 +232,12 @@ Defender for Endpoint センサーがシステム コンテキストから接続
    5 - Command line proxy: Doesn't exist
    ```
 
-少なくとも 1 つの接続オプションが (200) ステータスを返した場合、Defender for Endpoint クライアントはこの接続方法を使用してテスト済み URL と正しく通信できます。 <br><br>
+少なくとも 1 つの接続オプションが (200) ステータスを返した場合、Defender for Endpoint クライアントはこの接続方法を使用してテスト済み URL と正しく通信できます。
 
 ただし、接続を確認した結果が失敗を示している場合は、HTTP エラーが表示されます (「HTTP ステータス コード」を参照)。 次に、「プロキシ サーバーの Defender for Endpoint サービス URL へのアクセスを有効にする」に示されている表の [URL を使用できます](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。 使用する URL は、オンボーディング手順で選択された地域によって異なります。
 
 > [!NOTE]
->  接続アナライザー ツールは、ASR ルールと互換性がありません [PSExec および WMI コマンドから発生するプロセスの作成をブロックします](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。
+>  接続アナライザー ツールは、ASR ルールと互換性がありません [PSExec および WMI コマンドから発生するプロセスの作成をブロックします](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。
 
 
 > [!NOTE]

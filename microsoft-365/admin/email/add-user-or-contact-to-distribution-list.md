@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
-description: ユーザーまたは連絡先Microsoft 365配布グループに追加する方法について学習します。 たとえば、従業員、パートナー、またはベンダーをメール配布グループに追加できます。
-ms.openlocfilehash: f4ca52b02ce3b403fb318a9e092f883e8492d003
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 従業員、パートナー、Microsoft 365などのユーザーまたは連絡先をメール配布グループに追加する方法について学習します。
+ms.openlocfilehash: 69dea710554b344de4bc221b17d5d8f929b964a5
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52243962"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593491"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>配布グループにユーザーまたは連絡先を追加する
 
-組織の管理者として、1 人のユーザーまたは連絡先を配布グループに追加する必要がある場合があります (「組織で配布グループを作成する」[を](../setup/create-distribution-lists.md)Microsoft 365.)たとえば、従業員または外部パートナーまたはベンダーを電子メール配布グループに追加できます。
+組織の管理者として、ユーザーまたは連絡先の 1 つを配布グループに追加する必要がある場合があります (「組織で配布グループを作成する」[をMicrosoft 365)。](../setup/create-distribution-lists.md) たとえば、従業員または外部パートナーまたはベンダーを電子メール配布グループに追加できます。
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>配布グループにユーザーまたは連絡先を追加する
 
@@ -44,9 +44,18 @@ ms.locfileid: "52243962"
     ![配布グループにメンバーを追加する](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. [保存 **] を選択** し、[閉じる] **を選択します**。
+
+## <a name="watch-add-a-user-to-a-distribution-list"></a>ウォッチ: 配布リストにユーザーを追加する
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-メールを配布[グループとして送信する方法については、Microsoft 365。](../manage/send-email-as-distribution-list.md)
-  
+## <a name="next-steps"></a>次の手順
+
+メールを[配布グループとして送信する方法については、Microsoft 365。](../manage/send-email-as-distribution-list.md)
+
+## <a name="related-content"></a>関連コンテンツ
+
+[組織の混乱を管理する](configure-clutter.md) (記事)
+
+[共有メールボックス GWT を作成する](create-a-shared-mailbox.md) (記事)
 

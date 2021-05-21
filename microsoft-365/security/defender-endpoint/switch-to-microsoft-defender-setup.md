@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: e8abf10bd036b5e6e76d08e86ab4963629d2f994
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2ea8cc323220024406a49eda8d6a7c0b42ca71a4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537993"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594051"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>エンドポイントの Microsoft Defender に切り替える - フェーズ 2: セットアップ
 
@@ -41,35 +41,31 @@ ms.locfileid: "52537993"
 **Defender for Endpoint への切 [り替えのセットアップ フェーズへようこそ](switch-to-microsoft-defender-migration.md#the-migration-process)**。 このフェーズには、次の手順が含まれます。
 
 1. [エンドポイントでMicrosoft Defender ウイルス対策の再インストール/有効化を行います](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。
-
 2. [エンドポイントの Defender を構成します](#configure-defender-for-endpoint)。
-
 3. [既存のソリューションの除外リストに](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution)Defender for Endpoint を追加します。
-
 4. [既存のソリューションを、既存のソリューションの除外リストに追加Microsoft Defender ウイルス対策。](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus)
-
 5. [デバイス グループ、デバイス コレクション、および組織単位を設定します](#set-up-your-device-groups-device-collections-and-organizational-units)。
-
 6. [マルウェア対策ポリシーとリアルタイム保護を構成します](#configure-antimalware-policies-and-real-time-protection)。
 
 
 ## <a name="reinstallenable-microsoft-defender-antivirus-on-your-endpoints"></a>エンドポイントの再インストールMicrosoft Defender ウイルス対策有効にする
 
-特定のバージョンのウイルス対策Windows、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策/マルウェア対策ソリューションがインストールされている場合は、アプリがアンインストールまたは無効化される可能性があります。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](microsoft-defender-antivirus-compatibility.md)。
+特定のバージョンのウイルス対策Windows、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策/マルウェア対策ソリューションがインストールされている場合、Microsoft Defender ウイルス対策がアンインストールまたは無効になっている可能性があります。 デバイスが Defender for Endpoint にオンボードされるまで、Microsoft Defender ウイルス対策非 Microsoft ウイルス対策ソリューションと共にアクティブ モードで実行されません。 詳細については、「互換性[Microsoft Defender ウイルス対策」を参照してください](microsoft-defender-antivirus-compatibility.md)。
 
-クライアントWindows、Microsoft 以外のウイルス対策/マルウェア対策ソリューションがインストールされている場合、これらのデバイスが Defender for Endpoint にオンボードされるまで、Microsoft Defender ウイルス対策 は自動的に無効になります。 クライアント エンドポイントが Defender for Endpoint にオンボードされている場合Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策ソリューションがアンインストールされるまでパッシブ モードになります。 Microsoft Defender ウイルス対策インストールする必要がありますが、移行プロセスのこの時点で無効になっている可能性があります。 アンインストールMicrosoft Defender ウイルス対策しない限り、クライアントに対して何もWindowsはありません。
+Defender for Endpoint に切り替える予定の場合は、一定の手順を実行して、エンドポイントを再インストールまたは有効にする必要Microsoft Defender ウイルス対策。 
 
-サーバー Windows Microsoft 以外のウイルス対策/マルウェア対策がインストールされている場合、Microsoft Defender ウイルス対策 (アンインストールされていない場合) は手動で無効になります。 次のタスクは、Microsoft Defender ウイルス対策サーバーにパッシブ モードがインストールされ、Windowsできます。
 
-- [サーバーで DisableAntiSpyware を false にWindowsする](#set-disableantispyware-to-false-on-windows-server)(必要な場合のみ)
+| エンドポイントの種類  | 操作  |
+|---------|---------|
+| Windowsクライアント (エンドポイントが実行されているWindows 10)     | 一般に、クライアントに対して何もWindowsする必要はありません (Microsoft Defender ウイルス対策場合を含む)。 その理由は次の理由です。 <p>Microsoft Defender ウイルス対策インストールする必要がありますが、移行プロセスのこの時点で無効になっている可能性が最も高い。<p> Microsoft 以外のウイルス対策/マルウェア対策ソリューションがインストールされ、クライアントがまだ Defender for Endpoint にオンボードされていない場合、Microsoft Defender ウイルス対策は自動的に無効になります。 <p>その後、クライアント エンドポイントが Defender for Endpoint にオンボードされている場合、それらのエンドポイントが Microsoft 以外のウイルス対策ソリューションを実行している場合、Microsoft Defender ウイルス対策パッシブ モードになります。 <p>Microsoft 以外のウイルス対策ソリューションをアンインストールすると、Microsoft Defender ウイルス対策アクティブ モードになります。  |
+|Windows サーバー     | サーバー Windows、サーバーを再インストールし、Microsoft Defender ウイルス対策パッシブ モードに手動で設定する必要があります。 その理由は次の理由です。 <p>サーバー Windows、Microsoft 以外のウイルス対策/マルウェア対策がインストールされている場合、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策ソリューションと一緒に実行することはできません。 このような場合、手動でMicrosoft Defender ウイルス対策またはアンインストールされます。 <p>サーバーでサーバーを再Microsoft Defender ウイルス対策またはWindowsするには、次の taks を実行します。 <p>- [サーバーで DisableAntiSpyware を false にWindowsする](#set-disableantispyware-to-false-on-windows-server)(必要な場合のみ)<br/>- [サーバー Microsoft Defender ウイルス対策再インストールWindowsする](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [サーバー Microsoft Defender ウイルス対策パッシブ モードに設定Windowsする](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)       |
 
-- [サーバー Microsoft Defender ウイルス対策再インストールWindowsする](#reinstall-microsoft-defender-antivirus-on-windows-server) 
 
-- [サーバー Microsoft Defender ウイルス対策パッシブ モードに設定Windowsする](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
+Microsoft 以外のウイルス対策保護Microsoft Defender ウイルス対策の状態の詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](microsoft-defender-antivirus-compatibility.md)。
 
 ### <a name="set-disableantispyware-to-false-on-windows-server"></a>サーバーで DisableAntiSpyware を false にWindowsする
 
-[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)レジストリ キーは、Microsoft Defender ウイルス対策 を無効にし、McAfee、Symantec などの別のウイルス対策製品を展開するために、過去に使用されています。 一般に、デバイスとエンドポイントにこのレジストリ キー Windowsする必要があります。ただし、構成済みの場合は、その値を false `DisableAntiSpyware` に設定する方法を次に示します。
+[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)レジストリ キーは、Microsoft Defender ウイルス対策 を無効にし、McAfee、Symantec などの別のウイルス対策製品を展開するために、過去に使用されています。 **一般に、デバイスとエンドポイントにこのレジストリ キーをWindowsする必要があります**。ただし、構成 *済みの* 場合は、その値を false `DisableAntiSpyware` に設定する方法を次に示します。
 
 1. サーバー デバイスWindowsレジストリ エディターを開きます。
 
@@ -100,11 +96,11 @@ ms.locfileid: "52537993"
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <p>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
-    > [!NOTE]
-    > PS を実行しているタスク シーケンス内で DISM コマンドを使用する場合は、次のパスを使用cmd.exe必要です。
-    > 例:<br/>
-    > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
-    > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   > [!NOTE]
+   > PS を実行しているタスク シーケンス内で DISM コマンドを使用する場合は、次のパスを使用cmd.exe必要です。
+   > 例:<br/>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. 実行中のMicrosoft Defender ウイルス対策確認するには、次の PowerShell コマンドレットを使用します。 <br/>
    `Get-Service -Name windefend`
@@ -127,11 +123,14 @@ ms.locfileid: "52537993"
 
 アプリを実行しているエンドポイントWindows Server 2016、Microsoft 以外Microsoft Defender ウイルス対策ウイルス対策/マルウェア対策ソリューションと一緒に実行することはできません。 Microsoft Defender ウイルス対策のパッシブ モードでは実行Windows Server 2016。 この場合は、Microsoft 以外のウイルス対策/マルウェア対策ソリューションをアンインストールし、代わりにインストールおよびMicrosoft Defender ウイルス対策必要があります。 詳細については、「Defender [for Endpoint とのウイルス対策ソリューションの互換性」を参照してください](microsoft-defender-antivirus-compatibility.md)。
 
-サーバーを使用している場合Windows Server 2016有効にMicrosoft Defender ウイルス対策 PowerShell コマンドレットを使用します。
+アプリを使用している場合Windows Server 2016を有効にMicrosoft Defender ウイルス対策手順を実行します。
 
-`mpcmdrun -wdenable`
+1. デバイスで、管理者として PowerShell を開きます。
 
-詳細については、「Microsoft Defender ウイルス対策[サーバー Windows」 を参照してください](microsoft-defender-antivirus-on-windows-server.md)。
+2. 次の PowerShell コマンドレットを入力します。 `mpcmdrun -wdenable`
+
+> [!TIP]
+> 詳細については、「Microsoft Defender ウイルス対策[サーバー Windows」 を参照してください](microsoft-defender-antivirus-on-windows-server.md)。
 
 ## <a name="configure-defender-for-endpoint"></a>エンドポイントの Defender を構成する
 
@@ -171,14 +170,13 @@ ms.locfileid: "52537993"
 
 ### <a name="keep-the-following-points-about-exclusions-in-mind"></a>除外に関する以下の点を念頭に置く
 
-スキャンに除外[を追加するMicrosoft Defender ウイルス対策パス](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)とプロセスの除外を追加する必要があります。 次の点に注意してください。
+スキャンに除外[を追加するMicrosoft Defender ウイルス対策パス](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)とプロセスの除外を追加する必要があります。 
+
+次の点に注意してください。
 
 - *パスの除外は* 、特定のファイルと、それらのファイルにアクセスするファイルを除外します。
-
 - *プロセスの除外は* 、プロセスが触れたものも除外しますが、プロセス自体は除外しません。
-
 - 完全なパスを使用してプロセスの除外をリストし、その名前でのみリストします。 (名前専用メソッドの安全性が低い)。
-
 - 各実行可能ファイル (.exe) をパスの除外とプロセスの除外の両方として一覧表示すると、プロセスと、その実行可能ファイルが触れるものは除外されます。
 
 
@@ -197,7 +195,6 @@ ms.locfileid: "52537993"
 Configuration Manager とデバイス コレクションを使用して、マルウェア対策ポリシーを構成します。
 
 - Configuration [Manager の「マルウェア対策ポリシーの作成と展開Endpoint Protection」を参照してください](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies)。
-
 - マルウェア対策ポリシーを作成して構成する場合は、リアルタイムの保護設定を確認[](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings)し、一目でブロック[を有効にします](configure-block-at-first-sight-microsoft-defender-antivirus.md)。
 
 > [!TIP]

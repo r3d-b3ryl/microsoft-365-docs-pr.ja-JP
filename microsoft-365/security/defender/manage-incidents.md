@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 725e6226a56b3aae3670cde18969afdda1ec1940
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9cb3cc67c3992773897ea8178f261d25dcd87da0
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530840"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594154"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Defender でインシデントをMicrosoft 365する
 
@@ -47,7 +47,7 @@ ms.locfileid: "52530840"
 
 - [インシデント名を編集する](#edit-the-incident-name)
 - [インシデント タグを追加する](#add-incident-tags)
-- [インシデントをユーザー アカウントに割り当てる](#assign-incidents)
+- [インシデントを自分に割り当てる](#assign-incidents)
 - [それらを解決する](#resolve-an-incident)
 - [分類と決定を設定する](#set-the-classification-and-determination)
 - [コメントを追加する](#add-comments)
@@ -80,7 +80,15 @@ Microsoft 365Defender は、影響を受けるエンドポイントの数、影�
 
 ## <a name="assign-incidents"></a>インシデントを割り当てる
 
-インシデントがまだ割り当てられていない場合は、[割り当て] **を選択して** ユーザー アカウントを指定できます。 これにより、インシデントの所有権と、インシデントに関連付けられているすべてのアラートが割り当てされます。
+インシデントを割り当てるには、[割り当て **] を選択します**。 これにより、インシデントの所有権と、インシデントに関連付けられているすべてのアラートがユーザー アカウントに割り当てされます。
+
+インシデント キューをフィルター処理することで、割り当てられたインシデントの一覧を取得できます。 
+
+1. インシデント キューから、[フィルター] を **選択します**。
+2. [インシデントの **割り当て** ] セクションで、[すべて選択] **をオフに** し、[割 **り当て済み] を選択します**。
+3. [適用 **] を** 選択し、[フィルター] ウィンドウ **を閉** じます。
+
+その後、ブラウザーに結果の URL をブックマークとして保存し、割り当てられたインシデントの一覧をすばやく表示できます。
 
 ## <a name="resolve-an-incident"></a>インシデントの解決
 

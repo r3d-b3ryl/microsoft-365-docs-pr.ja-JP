@@ -21,13 +21,13 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Microsoft 365 のセットアップが完了しましたので、Mac、PC、モバイル デバイスに個々の Office アプリケーションをインストールする方法と、Outlook でメールを設定する方法について説明します。
-ms.openlocfilehash: c1d88aa1e754424e7a4ef3e486efc8a9618d3e9b
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+description: 新しいアプリケーションをセットアップMicrosoft 365、Mac、PC、またはモバイル デバイスにOfficeアプリケーションをインストールする方法について学習します。
+ms.openlocfilehash: 47f6a04e8fe42f03de0cd2008f15fd1f6f5617f3
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766357"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593819"
 ---
 # <a name="install-office-applications"></a>Office アプリケーションをインストールする
 
@@ -51,6 +51,6 @@ Azure Active Directory Premium (AADP) プラン 1 またはプラン 2 を購入
 
 ::: moniker-end
 
-問題が起こる場合次のトラブルシューティングのリソースが役立ちます。
+## <a name="related-content"></a>関連コンテンツ
   
-- [Office と Microsoft 365 を両方インストールする場合のトラブルシューティング](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)
+[インストールのトラブルシューティング OfficeとMicrosoft 365 (](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)記事)

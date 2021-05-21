@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: ビジネス向けサービスの請求先住所を更新するMicrosoft 365を確認します。 請求通知の受信に使用するメール アドレスを更新することもできます。
+description: ビジネス向け請求通知の受信に使用する請求先住所または電子メール アドレスを更新Microsoft 365します。
 ms.date: 04/07/2021
-ms.openlocfilehash: 8bff090353c409f4364aed63e3b48a831608be2b
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 77ccb7b7ff9927736c1adaadfd2dea6b64a084f0
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332172"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594111"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
@@ -95,19 +95,19 @@ ms.locfileid: "52332172"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
     中国の 21Vianet が運営する Office 365 を使用している場合は、「[21Vianet で運用されている Office 365 での請求書の表示または Fapiaos の取得](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md)」を参照してください。
 
@@ -161,7 +161,7 @@ ms.locfileid: "52332172"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[請求書または請求書を表示する](view-your-bill-or-invoice.md)\
-[請求書または請求書を理解する](understand-your-invoice2.md)\
-[サブスクリプションの支払い](pay-for-your-subscription.md)\
-[サブスクリプションと課金 - 管理者向けヘルプ](../index.yml)
+[課金内容または請求書を表示する](view-your-bill-or-invoice.md) (article)\
+[請求書または請求書](understand-your-invoice2.md) (記事) を理解する\
+[サブスクリプションの支払い](pay-for-your-subscription.md) (記事)\
+[サブスクリプションと課金 - 管理者ヘルプ](../index.yml) (リンク ページ)

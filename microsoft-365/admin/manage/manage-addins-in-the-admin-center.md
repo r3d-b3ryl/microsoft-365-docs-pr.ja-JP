@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 集中型アドインを使用して組織内のユーザーとグループにアドインを展開する方法について学習します。
-ms.openlocfilehash: 76bfa6272ec784518f045a50299fc7cda719eec8
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: c103cfc4e3e7b404ea4d31d81bc30d7990a922dc
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327200"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593971"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>管理センターでアドインを管理する
 
@@ -155,14 +155,14 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
   
 2. 左側のナビゲーションで、**[管理者が管理]** を選びます。 
 
-## <a name="learn-more"></a>詳細情報
+## <a name="related-content"></a>関連コンテンツ
 
-[管理センターでアドインを展開する](./manage-deployment-of-add-ins.md)
+[管理センターにアドインを展開する](./manage-deployment-of-add-ins.md) (記事)
 
-[Office アドイン](/office/dev/add-ins/overview/office-add-ins)の作成と構築の詳細情報を表示します。
+アドインの作成と構築の[Office詳細 (](/office/dev/add-ins/overview/office-add-ins)記事)
   
-[アドインを管理するには、集中展開 PowerShell コマンドレットを使用します](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)。
+[集中展開 PowerShell コマンドレットを使用してアドインを管理](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) する (記事)
   
-[トラブルシューティング: アドインが表示されないユーザー](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[トラブルシューティング: アドインが表示されないユーザー](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (記事)
 
-[未成年者とアドインをユーザーから取得Microsoft Store](./minors-and-acquiring-addins-from-the-store.md)
+[未成年者とアドインの](./minors-and-acquiring-addins-from-the-store.md)取得 (Microsoft Store)

@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: '会社の既定のテーマを変更しMicrosoft 365会社のロゴや色に合わせてカスタマイズする方法について学習します。 '
-ms.openlocfilehash: b7a0b142b8bd465a9e3258aaaeb951b72bc53fc7
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+description: ナビゲーション バーの上部の既定のテーマを変更し、Microsoft 365ロゴや色に合わせてカスタマイズする方法について学習します。
+ms.openlocfilehash: b2177eebc31f34f7067c8464724623e4bf7d4870
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060936"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593831"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>組織のMicrosoft 365テーマをカスタマイズする
 
@@ -154,8 +154,8 @@ ms.locfileid: "52060936"
 
 すべてのテーマは、グループ スイート ヘッダーの一部として、組織内のすべてのユーザーのトップ ナビゲーション Microsoft 365表示されます。  
   
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[カスタム タイルをアプリ起動ツールに追加する](../manage/customize-the-app-launcher.md)
+[[マイ アプリ] ページとアプリ 起動ツールにカスタム タイルを追加する](../manage/customize-the-app-launcher.md) (記事)
 
-[管理者向け Microsoft 365 グループの概要](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups)
+[管理者向Microsoft 365グループの概要](../create-groups/office-365-groups.md)(記事)

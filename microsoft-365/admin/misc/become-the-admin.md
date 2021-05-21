@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: メールとドメインの所有権を確認して、管理されていないテナントを管理されていないテナントに引き継ぐ方法Microsoft 365
-ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 電子メールとドメインの所有権を確認して、セルフサービス ユーザーサインアップによって作成された管理されていないテナントを引き継ぐ方法についてMicrosoft 365。
+ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914848"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593935"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>内部管理者の引き取りを実行する
 
@@ -66,12 +66,12 @@ ms.locfileid: "50914848"
 > [!NOTE]
 > シャドウ テナントを引き継ぐと、既存の情報やサービスに影響はありません。 ただし、ドメイン内のユーザーがライセンスを必要とするサービスにサインアップしている場合は、管理者ロールの引き継ぎの一環として、ライセンスの購入を求めるメッセージが表示されます。 管理者のセットアップ プロセスが完了したら、ライセンスを購入または削除できます。
   
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-YouTube: [IT 管理者の引き](https://www.youtube.com/watch?v=xt5EsrQBZZk)取りを行う 3 つの手順は、Power BIとMicrosoft 365
+YouTube: IT 管理者の引き取りを行う[3](https://www.youtube.com/watch?v=xt5EsrQBZZk)つのPower BIとMicrosoft 365 (ビデオ)
 
-[Azure の管理者の引き取りAD](/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[Azure AD管理者の引きAD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (記事)
 
-[組織でのセルフサービス サインアップの使用](self-service-sign-up.md)
+[組織でのセルフサービス サインアップの使用](self-service-sign-up.md) (記事)
   
-[サービス管理者Power BIロールについて](/power-bi/service-admin-role)
+[サービス管理者Power BIロールについて](/power-bi/service-admin-role)(記事)

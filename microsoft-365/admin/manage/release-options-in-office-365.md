@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 新しい製品と機能の更新プログラムのリリース オプションを管理センターで設定するMicrosoft 365します。
-ms.openlocfilehash: d3692f2e1cca58fec81f2ad492b9232d5576f99b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 5060e2dc99355d89928ec91c96b7d25e2016c7c4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579256"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593947"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準リリースオプションまたはターゲット リリース オプションを設定する
 
@@ -104,13 +104,11 @@ ms.locfileid: "51579256"
 8. [**ユーザーを一度** に 1 人追加するユーザーを選択する] を選択するか、アップロード **ユーザー** を一括で追加します。
     
 9. ユーザーの追加が完了したら、[変更の保存] **を選択します**。
-
-
   
-## <a name="learn-more"></a>詳細情報
+## <a name="next-steps"></a>次の手順
 
 メッセージ センターで[メッセージ](/office365/admin/manage/message-center)を管理して、Microsoft 365[更新](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)プログラムとリリースに関する通知Microsoft 365確認します。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[Office Insider](https://insider.office.com/join/windows)
+[インサイダー プログラムOffice参加する](https://insider.office.com/join/windows)(記事)

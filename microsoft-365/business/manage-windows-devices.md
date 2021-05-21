@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: ローカルの Active-Directory に参加Microsoft 365デバイスを保護するために、Windows 10をわずか数ステップで有効にする方法について説明します。
-ms.openlocfilehash: c9f5a21d993200abcf9ecf1fa236879245e1c153
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: f16962dd3c33c3c228da507bc5c4a902d76a8a08
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939504"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593895"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>ドメインに参加しているデバイスWindows 10デバイスをユーザーが管理Microsoft 365 Business Premium
 
@@ -119,4 +119,8 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドメイン ユーザーを](manage-domain-users.md)Microsoft 365に同期する ([記事)](../admin/create-groups/create-groups.md)管理センターでグループを作成する (記事) チュートリアル[:](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md)管理ドメインのハイブリッド Azure Active Directory参加を構成する (記事)
+[ドメイン ユーザーをユーザーとMicrosoft 365](manage-domain-users.md)する (記事)
+
+[管理センターでグループを作成する](../admin/create-groups/create-groups.md) (記事)
+
+[チュートリアル: 管理ドメインAzure Active Directoryハイブリッド ドメインへの参加を構成する](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md)(記事)
