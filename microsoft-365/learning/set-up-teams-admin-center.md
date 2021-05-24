@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: 05/24/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: 管理センターで Microsoft Viva Learning (プレビュー) を構成するTeams説明します。
-ms.openlocfilehash: e5af676752064738e26f9b934a60973cb9b0200d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a96a2f3ecf7d4e1ee0c136ae155868218f08aaf4
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625300"
+ms.locfileid: "52636136"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>管理センターで Microsoft Viva Learning (プレビュー) をTeamsする
 
@@ -29,7 +29,7 @@ ms.locfileid: "52625300"
 
 管理者Teamsビバ ラーニング (プレビュー) をインストールし、管理者センターからアクセス許可ポリシー Teams適用します。
 
-1. パブリック プレビューの場合は、まず更新ポリシーを設定する必要があります。 詳細については、「パブリック プレビュー」TeamsをMicrosoft Teams[してください](/MicrosoftTeams/public-preview-doc-updates)。
+1. ビバ ラーニング (プレビュー) の場合は、最初に [更新] ポリシーを [更新] で設定Teams。 詳細については、「パブリック プレビューの[Microsoft Teamsを参照してください](/MicrosoftTeams/public-preview-doc-updates)。
 
     1. 管理者センターにサインインTeamsします。
 
@@ -41,15 +41,15 @@ ms.locfileid: "52625300"
 
 2. 管理者は、ポリシー更新プログラムをユーザーに通知して、ビルドをパブリック プレビューに移動Teams。 
 
-    1. ユーザーは、プロファイル イメージ --> -->を選択する必要があります。
+    1. ユーザーは、[パブリック プレビューについて]でプロファイル >  >  **を選択する必要があります**。
    
         ![ユーザーのプロファイルをTeamsアプリケーションの上部ナビゲーション](../media/learning/learning-app-select-profile-teams.png)
     
-    2. ユーザーはパブリック プレビューの条項に同意する必要があります。
+    2. ユーザーはパブリック プレビューの **条件に同意** する必要があります。
 
         ![パブリック プレビュー ビルドに切り替える](../media/learning/learning-app-switch-to-public-preview.png)
  
-3. 制限的なポリシーを持ち、Viva Learning を有効にする必要がある組織の場合は、次のセクションの手順に従います。
+3. 制限的なポリシーを持ち、ビバ ラーニング (プレビュー) を有効にする必要がある組織の場合は、次のセクションのプロセスに従います。
 
 ## <a name="manage-settings-for-viva-learning-preview"></a>ビバラーニングの設定を管理する (プレビュー)
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: デバイスをリモートでワイプするなどのアクションを実行して、ユーザーのモバイル デバイスをセキュリティで保護および管理するための基本モビリティとセキュリティを設定します。
-ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593419"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634294"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの設定
 
@@ -129,6 +129,5 @@ Android または iOS デバイスを使用しているユーザーは、登録�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[基本モビリティとセキュリティの機能](capabilities.md) (記事)
-
+[基本モビリティとセキュリティの機能](capabilities.md) (記事)\
 [Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する](create-device-security-policies.md) (記事)

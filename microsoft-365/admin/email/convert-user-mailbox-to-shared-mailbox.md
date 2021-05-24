@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'プライベート メールボックスを、1 人ではなく複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0beb85e5a69b72bcd244cd654c399e91ded06ba7
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537621"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635476"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
 ユーザーのメールボックスを共有メールボックスに変換した場合、すべての既存のメールと予定表は保持されます。現在は、1 人のユーザーのみではなく何人かのユーザーがアクセスできる共有メールボックスにそれらが入っています。
+
+## <a name="before-you-begin"></a>始める前に
 
 **知っておく必要がある重要な点事項を次に示します**
 
@@ -59,7 +61,6 @@ ms.locfileid: "52537621"
 > [!NOTE]
 > 共有メールボックスには、別途ライセンスが必要ではありません。 ただし、In-Place アーカイブを有効にするか、共有メールボックスに In-Place 保留または訴訟ホールドを設定する場合は、Exchange Online Archiving または Exchange Online プラン 2 ライセンスを持つ Exchange Online プラン 1 をメールボックスに割り当てる必要があります。
 
-
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>削除済みユーザーのメールボックスを変換する
 
 削除したユーザー アカウントの古いメールボックスを共有メールボックスに変換したいとします。これには、次を行う必要があります。
@@ -77,7 +78,6 @@ ms.locfileid: "52537621"
 6. 終了したら、ユーザーのメールボックスからライセンスを削除します。 ユーザーの古いメールボックスは削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。
     
 7. 共有メールボックスにメンバーを追加します。
-
 
 ## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>共有メールボックスを変換して、ユーザーの (プライベート) メールボックスに戻す
 
@@ -100,16 +100,12 @@ ms.locfileid: "52537621"
  
 
 > [!NOTE]
-> 組織の管理役割グループまたは受信者管理役割グループのメンバーである場合は、Exchange 管理シェルを使用して、ユーザー メールボックスをオンプレミスの共有メールボックスに変更できます。 たとえば、「 `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared` 」のように入力します。
+> 組織の管理役割グループまたは受信者管理役割グループのメンバーである場合は、Exchange 管理シェルを使用して、ユーザー メールボックスをオンプレミスの共有メールボックスに変更できます。 たとえば、`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared` などです。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[共有メールボックスについて](about-shared-mailboxes.md) (記事)
-
-[共有メールボックスの作成](create-a-shared-mailbox.md) (記事)
-
-[共有メールボックスの構成](configure-a-shared-mailbox.md) (記事)
-
-[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md) (記事)
-
-[共有メールボックスの問題を解決する](resolve-issues-with-shared-mailboxes.md) (記事)
+[共有メールボックスについて](about-shared-mailboxes.md) (記事)\
+[共有メールボックスの作成](create-a-shared-mailbox.md) (記事)\
+[共有メールボックスの構成](configure-a-shared-mailbox.md) (記事)\
+[共有メールボックスからライセンスを削除](remove-license-from-shared-mailbox.md) する (記事)\
+[共有メールボックスに関する問題を解決する](resolve-issues-with-shared-mailboxes.md) (記事)

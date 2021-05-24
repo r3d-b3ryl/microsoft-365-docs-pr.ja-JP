@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 管理者センターで予定表の共有Microsoft 365有効にして、組織の内部または外部のユーザーと予定表を共有できます。
-ms.openlocfilehash: 6f4c215403e16ac6658619e50e6115606f106397
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582718"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635812"
 ---
 # <a name="share-calendars-with-external-users"></a>予定表を外部ユーザーと共有する
 
@@ -50,12 +50,10 @@ ms.locfileid: "52582718"
 
 ## <a name="invite-people-to-access-calendars"></a>予定表にアクセスできるようにユーザーを招待する
 
-共有が有効になると、予定表の所有者は特定のユーザーに招待を拡張できます。 手順については、「[予定表を共有する](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)」を参照してください。
+共有が有効になると、予定表の所有者は特定のユーザーに招待を拡張できます。 手順については、「カレンダーを[共有する」を参照Outlook Web App。](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[サイトの外部共有をオンまたはオフにする](/sharepoint/change-external-sharing-site) (記事)
-
-[Microsoft 365 管理センターの概要](../../business-video/admin-center-overview.md) (ビデオ)
-
+[サイトの外部共有をオンまたはオフにする](/sharepoint/change-external-sharing-site) (記事)\
+[管理センター Microsoft 365の概要](../../business-video/admin-center-overview.md)(ビデオ)\
 [メールと予定表の管理](../email/index.yml) (リンク ページ)

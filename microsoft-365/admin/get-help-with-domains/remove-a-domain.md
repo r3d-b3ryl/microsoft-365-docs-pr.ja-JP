@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: ユーザーから古いドメインを削除し、Microsoft 365別のドメインに移動するか、サブスクリプションをキャンセルする方法について学習します。
-ms.openlocfilehash: 089f0378109dd2a5abdf922694390bfdc943693a
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a8e636059a84a2086844a8ff139d240268ee5b19
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582934"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635704"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
   
@@ -207,7 +207,7 @@ Microsoft 365 がセキュリティ グループ、配布リスト、ユーザ�
   
 数百から数千のユーザーがいる場合は、PowerShell を使用してすべてのユーザーに対するクエリを実行してから、別のドメインに移動してください。これを行わないと、一部のユーザーが UI に表示されない可能性があり、ドメインを削除しようとしてもなぜか失敗します。詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。
   
-## <a name="still-need-help"></a>さらにサポートが必要な場合
+## <a name="still-need-help"></a>さらにヘルプが必要ですか?
 
 ::: moniker range="o365-worldwide"
 
@@ -220,8 +220,6 @@ Microsoft 365 がセキュリティ グループ、配布リスト、ユーザ�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドメインに関する FAQ](../setup/domains-faq.yml) (記事)
-
-[ビジネス プランの別のMicrosoft 365に切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)(記事)
-
+[ドメインに関する FAQ](../setup/domains-faq.yml) (記事)\
+[ビジネス プランの別のMicrosoft 365に切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)(記事)\
 [サブスクリプションをキャンセルする](../../commerce/subscriptions/cancel-your-subscription.md) (記事)

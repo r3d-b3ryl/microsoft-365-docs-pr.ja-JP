@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: 従業員、パートナー、Microsoft 365などのユーザーまたは連絡先をメール配布グループに追加する方法について学習します。
-ms.openlocfilehash: 69dea710554b344de4bc221b17d5d8f929b964a5
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: c512e1da805fca5e46d7978620f34b825d0289a0
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593491"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635548"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>配布グループにユーザーまたは連絡先を追加する
 
@@ -55,7 +55,6 @@ ms.locfileid: "52593491"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[組織の混乱を管理する](configure-clutter.md) (記事)
-
+[組織の混乱を管理](configure-clutter.md) する (記事)\
 [共有メールボックス GWT を作成する](create-a-shared-mailbox.md) (記事)
 

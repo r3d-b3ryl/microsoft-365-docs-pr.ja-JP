@@ -29,22 +29,22 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: ストレージとファイル共有をOneDrive共有するために、Microsoft 365サイトとチーム Microsoft 365する方法について学習します。
-ms.openlocfilehash: 9e739b1f90296167fc47bdd5f19bacd73c43f9e2
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572179"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635644"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>ファイルストレージと共有を設定する方法は、Microsoft 365
 
 ビジネス用にファイル ストレージと共有をセットアップする最善の方法の 1 つは、OneDriveとチーム サイトを一緒に使用することです。 これは、従業員数の少ない中小企業に最適です。
 
-クラウドにファイルを保存する方法に関する短いMicrosoft 365見る。<br><br>
+## <a name="watch-where-to-store-files-in-office-365"></a>ウォッチ: ファイルを格納する場所をOffice 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365ストレージと管理
 
@@ -207,8 +207,6 @@ Microsoft 365 のユーザーが、Microsoft 365 やチーム サイトに加え
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[サブスクリプションの記憶域を追加する](../../commerce/add-storage-space.md) (記事)
-
-[ファイルとフォルダーを共有する (Microsoft 365 Business)](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
-
+[サブスクリプションの記憶域を追加](../../commerce/add-storage-space.md) する (記事)\
+[ファイルとフォルダーを共有する Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (ビデオ)\
 [ファイルの保存と共有のためにチーム サイトをカスタマイズする](customize-team-site.md) (記事)

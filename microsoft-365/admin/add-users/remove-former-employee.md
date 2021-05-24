@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: このソリューションの手順に従って、組織のデータを保護Microsoft 365元の従業員を削除します。
-ms.openlocfilehash: 44741382a84cca15277308a44b3fd20470aa3a08
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: a613d4931c730dffe195954da97af86c683041bf
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572047"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634246"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概要: 元従業員とセキュリティで保護されたデータを削除する
 
@@ -61,4 +61,7 @@ ms.locfileid: "52572047"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーの復元](restore-user.md) (記事)
+[ユーザーの復元](restore-user.md) (記事)\
+[Microsoft 365 に新しい従業員を追加する](add-new-employee.md) (記事)\
+[ユーザーにライセンスを割り当てる](../manage/assign-licenses-to-users.md)(記事)\
+[ユーザーからのライセンスの割り当てを解除する](../manage/remove-licenses-from-users.md) (記事)

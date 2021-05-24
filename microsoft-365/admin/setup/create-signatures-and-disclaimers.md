@@ -25,22 +25,22 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 組織を入力または退出するすべての電子メール メッセージに関する法的免責事項や開示ステートメントを含む電子メール署名を管理します。
-ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f72d522c7dc592a7f719d716e22ecf726d00a6de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582754"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635656"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 
  電子メール署名を管理するには、組織を入力または退出する電子メール メッセージに電子メール署名、法的免責事項、または開示ステートメントを追加します。 以下に示すように、すべての送受信メッセージに適用されるように設定できます。 または、特定の単語やテキスト パターンを含むメッセージなど、特定のメッセージに適用することができます。
 
- 会社全体の電子メール署名の作成に関する短いビデオをご覧ください。 <br><br>
+## <a name="watch-create-a-company-wide-email-signature"></a>ウォッチ: 会社全体のメール署名を作成する
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>すべてのメッセージに適用される署名を作成する
 
@@ -119,9 +119,7 @@ PowerShell の使用の詳細については、「組織全体のメッセージ
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[メールと連絡先をユーザーにMicrosoft 365](migrate-email-and-contacts-admin.md)する (ビデオ)
-
-[ユーザーのメール設定](../email/office-365-user-email-settings.md) (記事)
-
+[メールと連絡先をメール (ビデオ) Microsoft 365](migrate-email-and-contacts-admin.md)に移行する
+[ユーザーのメール設定](../email/office-365-user-email-settings.md) (記事)\
 [Microsoft 365 管理センターの概要](../../business-video/admin-center-overview.md) (ビデオ)
 

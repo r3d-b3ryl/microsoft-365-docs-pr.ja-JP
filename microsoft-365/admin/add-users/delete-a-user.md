@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: ユーザー アカウントを削除する方法と、ユーザーの電子メールとコンテンツをOneDriveする方法、および製品ライセンスを保持するかどうかを説明します。
-ms.openlocfilehash: c30edb598f659337778ec956737934da5fedad18
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ff10d3289eae87f84685c22b81db03798ca9d7eb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593407"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634210"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
@@ -66,13 +66,13 @@ ms.locfileid: "52593407"
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 ::: moniker-end
 
@@ -171,12 +171,8 @@ ms.locfileid: "52593407"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーの復元](restore-user.md) (記事)
-  
-[メールボックスを完全に削除する](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (記事)
-
-[元従業員を削除する (Office 365)](remove-former-employee.md)
-
-[新しい従業員を新しいOffice 365](add-new-employee.md)する (記事)
-
+[ユーザーの復元](restore-user.md) (記事)\
+[メールボックスを完全に削除](/exchange/permanently-delete-a-mailbox-exchange-2013-help) する (記事)\
+[元従業員を会社から削除Office 365](remove-former-employee.md) (記事)\
+[新しい従業員を新しいOffice 365](add-new-employee.md) (記事)\
 [ユーザー アカウントを削除する](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)):Azure AD と同期している **Active Directory** を組織で使用している場合は、この手順を使用します。 Office 365 からこの操作を行うことはできません。 (記事)

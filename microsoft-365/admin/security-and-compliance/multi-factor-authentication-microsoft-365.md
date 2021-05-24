@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 多要素認証 (MFA) は、強力なパスワードと追加の検証方法の両方を使用します。
-ms.openlocfilehash: 84d26d0a9908e51ce734e71961d4643a2df3471b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 6e1c43bdd66849a0043c0a1a927f48d925e0806e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623691"
+ms.locfileid: "52635776"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 の多要素認証
 
@@ -170,7 +170,7 @@ Azure ポータルでは、次のことができます。
 
 Microsoft 365 管理センターでは、ユーザー単位およびサービス用の MFA 設定を構成できます。
 
-## <a name="your-next-step"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Microsoft 365 の MFA を設定する](set-up-multi-factor-authentication.md)
 

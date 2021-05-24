@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービス のパスワードリセット ツールを使用して、ユーザーが自分のパスワードをリセットできるポリシーを設定する方法について学習します。
-ms.openlocfilehash: 2c79d5611ab2db00f4de5f227b0ec2f411955558
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 81fbe1949b8d5e4a601411703d86165f95cc7b7f
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571855"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634270"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
@@ -52,7 +52,7 @@ ms.locfileid: "52571855"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="steps-let-people-reset-their-own-passwords"></a>手順: ユーザーが自分のパスワードをリセットする
 
@@ -74,8 +74,6 @@ ms.locfileid: "52571855"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[組織のパスワード有効期限ポリシーを設定する](../manage/set-password-expiration-policy.md) (記事)
-
-[個別のユーザーのパスワードを無期限に設定する](set-password-to-never-expire.md) (記事)
-
+[組織のパスワード有効期限ポリシーを設定する](../manage/set-password-expiration-policy.md) (記事)\
+[個々のユーザーのパスワードを有効期限が切れることはありません](set-password-to-never-expire.md) (記事)\
 [Microsoft 365 Businessトレーニング ビデオ](../../business-video/index.yml)(リンク ページ)

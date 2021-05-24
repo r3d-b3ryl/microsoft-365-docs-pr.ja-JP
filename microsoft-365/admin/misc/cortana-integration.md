@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な仕事用アカウントまたは学校アカウントを持つユーザーは、企業Microsoft 365のセキュリティOffice 365を満たすエクスペリエンスで Cortana を取得できます。
-ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582778"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635800"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -187,8 +187,6 @@ Microsoft Services Agreement および [Microsoft](https://go.microsoft.com/fwli
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Cortana 音声サポート (Teams)](/microsoftteams/cortana-in-teams)
-
-[Cortana を Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)する (記事)
-
+[Cortana 音声サポート (Teams)\](/microsoftteams/cortana-in-teams)
+[Cortana の構成 (Windows 10)\](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 [Cortana からマイ メールを再生すると、何ができますか?](https://support.microsoft.com/help/4558256)

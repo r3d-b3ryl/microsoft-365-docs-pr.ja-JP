@@ -20,22 +20,22 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 管理センターの詳細Microsoft 365確認してください。
-ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 一般的なタスクやダッシュボード ビュー Microsoft 365、より複雑な設定とタスクを管理するには、ビューの簡略化されたビューを使用します。
+ms.openlocfilehash: bca3aa7bb071d9334f7a5162a78db89690421f1a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537393"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635892"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
-- [簡易表示の管理センター](#the-admin-center-in-simplified-view)
-- [ダッシュボード ビューの管理センター](#the-admin-center-in-dashboard-view)
+- [簡易表示の管理センター](#watch-the-admin-center-in-simplified-view)
+- [ダッシュボード ビューの管理センター](#watch-the-admin-center-in-dashboard-view)
 
 管理Microsoft 365には 2 つのビューがあります。簡略化されたビューは、小規模な組織が最も一般的なタスクを管理するのに役立ちます。 ダッシュボード ビューには、より複雑な設定とタスクが含まれます。 管理センターの上部にあるボタンから切り替えできます。
 
-## <a name="the-admin-center-in-simplified-view"></a>簡易表示の管理センター
+## <a name="watch-the-admin-center-in-simplified-view"></a>ウォッチ: 簡略化されたビューの管理センター
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
@@ -57,7 +57,7 @@ ms.locfileid: "52537393"
 
 サポートが必要な場合は、[ヘルプ] **を選択&します**。 ヘルプが必要なトピックを検索し、推奨されるソリューションを表示するか、サポートに連絡するヘッドセットを選択し、質問と連絡先情報を入力します。 
 
-## <a name="the-admin-center-in-dashboard-view"></a>ダッシュボード ビューの管理センター
+## <a name="watch-the-admin-center-in-dashboard-view"></a>ウォッチ: ダッシュボード ビューの管理センター
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
@@ -188,4 +188,10 @@ Microsoft 365 管理センターは、Microsoft 365 を管理するすべての�
 |ベトナム語 | vi |
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |
+
+## <a name="related-content"></a>関連コンテンツ
+
+[管理者とはMicrosoft 365ですか?](what-is-admin.md) (ビデオ)\
+[管理者を追加](add-admin.md) する (ビデオ)\
+[組織のMicrosoft 365テーマをカスタマイズする](../admin/setup/customize-your-organization-theme.md)(記事)
   

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 6b49565c45c1f38d0d2ce71b097af079782ba4de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476312"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636196"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開をセットアップする
 
@@ -82,36 +82,9 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 
 ## <a name="tenant-configuration"></a>テナント構成
+エンドポイント用 Microsoft Defender へのオンボーディングは簡単です。 ナビゲーション メニューから、[エンドポイント] セクションの下の任意のアイテムを選択するか、インシデント、ハンティング、アクション センター、脅威分析などの Microsoft 365 Defender 機能を選択してオンボーディング プロセスを開始します。
 
-初めてMicrosoft Defender セキュリティ センターアクセスする場合は、最初の手順を説明するウィザードを使用します。 セットアップ ウィザードの最後に、Defender for Endpoint の専用クラウド インスタンスが作成されます。 最も簡単な方法は、クライアント デバイスからこれらの手順Windows 10実行します。
-
-1. Web ブラウザーからに移動します <https://securitycenter.windows.com> 。
-
-    ![Image of Set up your permissions for Microsoft Defender for Endpoint](images/atp-setup-permissions-wdatp-portal.png)
-
-2. 試用版ライセンスを使用する場合は、リンク ( ) に移動 <https://signup.microsoft.com/Signup?OfferId=6033e4b5-c320-4008-a936-909c2825d83c&dl=WIN_DEF_ATP&pc=xxxxxxx-xxxxxx-xxx-x> します。
-
-    承認手順が完了すると、[ようこそ] **画面** が表示されます。
-3. 認証手順を実行します。
-
-    ![ポータルセットアップのウェルカム画面の画像](images/welcome1.png)
-
-4. 基本設定を設定します。
-
-   **データストレージの場所** - これを正しく設定することが重要です。 顧客が主にホストする場所 (米国、EU、英国) を決定します。 この設定後は場所を変更できないので、Microsoft は指定した位置情報からデータを転送しない。 
-
-    **データ保持** - 既定値は 6 か月です。
-
-    **プレビュー機能を有効** にする - 既定値はオンで、後で変更できます。
-
-    ![セットアップ中の地理的位置のイメージ](images/setup-preferences.png)
-
-5. **[次へ]** を選択します。
-
-     ![最終的な基本設定のイメージ](images/setup-preferences2.png)
-
-6. [続行 **] を選択します**。
-
+Web ブラウザーから、[セキュリティ センター] Microsoft 365[に移動します](https://security.microsoft.com)。
 
 ## <a name="network-configuration"></a>ネットワーク構成
 組織がプロキシを使用してインターネットにアクセスするためにエンドポイントを必要としない場合は、このセクションをスキップします。

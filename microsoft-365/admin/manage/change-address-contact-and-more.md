@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 組織のプロファイル (組織名、住所、電話、技術的な連絡先、電子メールなど) を変更します。
 ms.date: 03/30/2021
-ms.openlocfilehash: 9fc985f640f1544bf30ea1a6ccdd5c1ca19aa81f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 2646d2d83c72caa8a56f6658f005812f087101cb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572131"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635404"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>組織の住所およびその他のプロファイル情報を変更する
   
@@ -82,8 +82,6 @@ ms.locfileid: "52572131"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[別のアドレスからメールを送信する](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (記事)
-
-[ユーザー名とメール アドレスを変更する](../add-users/change-a-user-name-and-email-address.md) (記事)
-
+[別のアドレスからメールを送信](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) する (記事)\
+[ユーザー名とメール アドレスを変更](../add-users/change-a-user-name-and-email-address.md) する (記事)\
 [Microsoft 365 でメールの転送を構成する](../email/configure-email-forwarding.md) (記事)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245950"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636244"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -62,7 +62,7 @@ Microsoft Defender for Endpoint は、デバイス検出機能を提供し、追
 
 
 > [!IMPORTANT]
-> 検出は基本モードに設定されます。 この構成は、[設定] ページから保持できます。 標準検出は、2021 年 5 月 10 日から始まるすべてのプレビューユーザーの既定のモードになります 。この日付より前の設定ページで変更しない限り。
+> 検出は基本モードに設定されます。 この構成は、[設定] ページから保持できます。 2021 年 7 月 19 日から始まるすべてのお客様の既定のモードは、この日付より前の設定ページで変更されていない限り、標準検出です。
 
 ### <a name="basic-discovery"></a>基本的な検出 
 
@@ -76,7 +76,7 @@ Standard モードを有効にすると、検出センサーによって生成�
 
  このモードを有効にしない場合は、ネットワーク内の管理されていないエンドポイントの表示が制限されます。
 
-標準検出では、さまざまな PowerShell スクリプトを使用して、ネットワーク内のデバイスをアクティブにプローブします。 これらの PowerShell スクリプトは Microsoft 署名済みで、次の場所から実行されます `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` 。 たとえば、「 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1` 」のように入力します。
+標準検出では、さまざまな PowerShell スクリプトを使用して、ネットワーク内のデバイスをアクティブにプローブします。 これらの PowerShell スクリプトは Microsoft 署名済みで、次の場所から実行されます `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` 。 たとえば、`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1` などです。
 
 詳細については、「デバイス検出の構成」を参照[してください。](configure-device-discovery.md)
 

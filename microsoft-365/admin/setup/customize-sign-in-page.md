@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: '[サインイン] Microsoft 365を使用して、サインイン ページをカスタマイズAzure Active Directory。 サインイン ページに図、ロゴ、およびテキストを追加できます。'
-ms.openlocfilehash: dba75d5178f3c4a879ae2cdc9694697df45f6b8b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 6c873409a06d824c7b63f5ea02e178e22337a345
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624443"
+ms.locfileid: "52635940"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>[サインイン] ページに会社のブランドを追加する
 
@@ -49,6 +49,8 @@ Microsoft 365 for business、Microsoft Dynamics CRM Online、Enterprise Mobility
     
 サインイン ページの他に、Azure のアクセス パネル ページもカスタマイズできます。
   
+## <a name="next-steps"></a>次の手順
+
 ブランドを追加する準備ができたら、Azure コンテンツ セット内のカスタマイズ オプションをご覧ください。[Add company branding to your Sign-in and Access Panel pages (会社のブランドをサインイン ページとアクセス パネル ページに追加する)](/azure/active-directory/fundamentals/customize-branding)
 
 ## <a name="related-content"></a>関連コンテンツ

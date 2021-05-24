@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織がコミュニケーションと共同作業を行うMicrosoft 365サービスを採用する方法の概要を確認します。
-ms.openlocfilehash: f641e2b99e2d61881eb86506a1770f4401cb98bc
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: db61ed4d4c087b76895d08e43f6b1a2c00ed8172
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572335"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635392"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 
@@ -213,8 +213,6 @@ pbit ファイルには、Microsoft ダウンロード センター [からア�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 利用状況分析を有効にする](enable-usage-analytics.md) (記事)
-
-[使用状況分析のレポートを移動Microsoft 365活用する](navigate-and-utilize-reports.md)(記事)
-
+[Microsoft 365 利用状況分析を有効にする](enable-usage-analytics.md) (記事)\
+[使用状況分析のレポートを移動Microsoft 365活用](navigate-and-utilize-reports.md)する (記事)\
 [[ビデオ] で利用状況Microsoft 365](../../business-video/act-on-report.md)を確認する

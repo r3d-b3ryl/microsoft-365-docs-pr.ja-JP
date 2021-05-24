@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスは、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。 共有メールボックスを作成する前に知っておくべきことを説明します。
-ms.openlocfilehash: 156ba100cb2c51d1e54a2ee82c45db20845931f9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 601636f03bee93224025d286b7a74fa0f24782fb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535856"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635536"
 ---
 # <a name="about-shared-mailboxes"></a>共有メールボックスについて
 
@@ -67,12 +67,8 @@ ms.locfileid: "52535856"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[共有メールボックスの作成](create-a-shared-mailbox.md) (記事)
-
-[共有メールボックスの構成](configure-a-shared-mailbox.md) (記事)
-
-[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md) (記事)
-
-[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md) (記事)
-
-[共有メールボックスの問題を解決する](resolve-issues-with-shared-mailboxes.md) (記事)
+[共有メールボックスの作成](create-a-shared-mailbox.md) (記事)\
+[共有メールボックスの構成](configure-a-shared-mailbox.md) (記事)\
+[ユーザー メールボックスを共有メールボックスに変換](convert-user-mailbox-to-shared-mailbox.md) する (記事)\
+[共有メールボックスからライセンスを削除](remove-license-from-shared-mailbox.md) する (記事)\
+[共有メールボックスに関する問題を解決する](resolve-issues-with-shared-mailboxes.md) (記事)

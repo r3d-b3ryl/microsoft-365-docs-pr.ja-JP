@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理者のヘルプまたはオンラインまたは電話でのサポートを受けるためには、ビジネス サブスクリプションの管理者である必要Microsoft 365 Business Premium。
-ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535712"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635904"
 ---
 # <a name="get-support"></a>サポートを受ける
+
+## <a name="watch-get-help-or-support"></a>ウォッチ: ヘルプまたはサポートを受ける 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -256,8 +258,6 @@ Office 365 Germany の管理者は、知識の豊富なサポート担当者に�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドキュメントとトレーニングの検索](find-help-answers.md) (記事)
-
-[従業員のクイック セットアップ](employee-quick-setup.md) (記事)
-
+[ドキュメントとトレーニングを検索](find-help-answers.md) する (記事)\
+[従業員のクイック セットアップ](employee-quick-setup.md) (記事)\
 [セットアップのMicrosoft 365 Business Premium (](setup-overview.md)ビデオ)

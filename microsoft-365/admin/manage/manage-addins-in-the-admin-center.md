@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 集中型アドインを使用して組織内のユーザーとグループにアドインを展開する方法について学習します。
-ms.openlocfilehash: c103cfc4e3e7b404ea4d31d81bc30d7990a922dc
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: d678755b28daea1578ce2a5d2e387492cf32d368
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593971"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636060"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>管理センターでアドインを管理する
 
@@ -157,12 +157,8 @@ Officeアドインを使用すると、ドキュメントをカスタマイズ�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理センターにアドインを展開する](./manage-deployment-of-add-ins.md) (記事)
-
-アドインの作成と構築の[Office詳細 (](/office/dev/add-ins/overview/office-add-ins)記事)
-  
-[集中展開 PowerShell コマンドレットを使用してアドインを管理](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) する (記事)
-  
-[トラブルシューティング: アドインが表示されないユーザー](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (記事)
-
+[管理センターにアドインを展開](./manage-deployment-of-add-ins.md) する (記事)\
+アドインの作成と構築Office[詳細](/office/dev/add-ins/overview/office-add-ins)(記事)\
+[集中展開 PowerShell コマンドレットを使用してアドイン](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) を管理する (記事)\
+[トラブルシューティング: アドインが表示されないユーザー](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (記事)\
 [未成年者とアドインの](./minors-and-acquiring-addins-from-the-store.md)取得 (Microsoft Store)

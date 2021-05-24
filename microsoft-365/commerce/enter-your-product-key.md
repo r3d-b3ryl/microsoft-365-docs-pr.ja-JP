@@ -21,12 +21,12 @@ ms.custom:
 - commerce_purchase
 description: 小売店からMicrosoft 365 Business Standard購入した場合は、プロダクト キーを引き換え、サブスクリプションをアクティブ化する方法について学習します。
 ms.date: 11/13/2020
-ms.openlocfilehash: bc2b07b5a98c13a919596bdbf85a21bdc6c8d2bf
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: e075a9d06b45f823540a3a99a1943caa9d116954
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593395"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636124"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクト キーを入力する
 
@@ -57,11 +57,9 @@ ms.locfileid: "52593395"
 
 有効期限を延長したり、既存の Microsoft 365 Business Standard サブスクリプションにライセンスを追加したりするには、同じ Microsoft 365 プランの新しい未使用のキーを使用します。 以前使用したキーの再利用はできないため、元の Microsoft 365 プロダクト キーを入力することはできません。 「[プロダクト キーを使用するための有料のサブスクリプションにライセンスを追加するか、サブスクリプションを延長する](licenses/add-licenses-using-product-key.md)」を参照してください。
 
-## <a name="whats-next"></a>次の手順
+## <a name="next-steps"></a>次の手順
 
 Microsoft 365 for Business を初めて使用する場合は、[Microsoft 365 のセットアップ](../admin/setup/setup.md)方法を学習してください。
-  
-## <a name="still-having-trouble-with-product-keys"></a>プロダクト キーの問題が解決しない場合
 
 一般的なエラーと解決策の一覧については、「[一般法人向け Microsoft 365 プロダクト キーの問題](product-key-errors-and-solutions.md)」を参照してください。
   
@@ -69,8 +67,6 @@ Microsoft 365 for Business を初めて使用する場合は、[Microsoft 365 �
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[別のプランにアップグレードする](./subscriptions/upgrade-to-different-plan.md) (記事)
-
-[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](./subscriptions/what-if-my-subscription-expires.md) (記事)
-
+[別のプランにアップグレード](./subscriptions/upgrade-to-different-plan.md) する (記事)\
+[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](./subscriptions/what-if-my-subscription-expires.md) (記事)\
 [ビジネス向けサブスクリプションとライセンスMicrosoft 365理解](./licenses/subscriptions-and-licenses.md)する (記事)

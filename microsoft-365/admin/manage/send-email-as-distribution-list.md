@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: メールを配布リストとして送信Microsoft 365、メンバーがメッセージに返信すると、そのメールは配布リストから送信されたと思われる。
-ms.openlocfilehash: 01bff7e1d2515670c5a6faa199355e7de591f1fb
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: eb5ce4a08fae13ee0d2631499a8df1724ef3ef66
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624539"
+ms.locfileid: "52635716"
 ---
 # <a name="send-email-as-a-distribution-list"></a>配布リストとして電子メールを送信する
 
@@ -66,4 +66,4 @@ ms.locfileid: "52624539"
 
 [管理センターでセキュリティ グループを作成、編集、またはMicrosoft 365する](../email/create-edit-or-delete-a-security-group.md)(記事)\
 [電子メールの共同作業](../email/email-collaboration.md) (記事)\
-[配布グループにユーザーまたは連絡先を追加する](../email/add-user-or-contact-to-distribution-list.md)
+[配布グループにユーザーまたは連絡先を追加する](../email/add-user-or-contact-to-distribution-list.md) (記事)

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: グループにメンバーを追加し、グループからメンバーを削除し、管理センターでグループ所有者の状態Microsoft 365します。
-ms.openlocfilehash: 3ab3ebe21caa2d9d3dfa381dd3b68c9d2512cb79
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: b5b0a398a5ebb47a5f27066f1daea1a822adbff2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593383"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635608"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>管理センターを使用して、Microsoft 365グループのメンバーを追加または削除する
 
@@ -101,7 +101,7 @@ ms.locfileid: "52593383"
 
 5. **[保存]** を選択します。
 
-## <a name="more-on-managing-membership"></a>メンバーシップの管理に関する詳細
+## <a name="next-steps"></a>次の手順
 
 - [Azure Active Directory におけるグループの管理](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal): 「グループのメンバーシップを動的に管理する方法」セクションを参照してください。
 
@@ -111,12 +111,8 @@ ms.locfileid: "52593383"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[配布リストを、Microsoft 365グループにOutlook](../manage/upgrade-distribution-lists.md)する (記事)
-
-[Outlook で配布リストをグループにアップグレードする理由](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (記事)
-
-[グループ内のゲスト アクセスMicrosoft 365管理](manage-guest-access-in-groups.md)する (記事)
-
-[PowerShell Microsoft 365グループを](../../enterprise/manage-microsoft-365-groups-with-powershell.md)管理する : この記事では、主要なコマンドレットについて説明し、例を示します (記事)
-
+[配布リストを Microsoft 365グループにOutlook](../manage/upgrade-distribution-lists.md)する (記事)\
+[配布リストをサイト内](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)のグループにアップグレードするOutlook (記事)\
+[グループ内のゲスト アクセスMicrosoft 365管理](manage-guest-access-in-groups.md)する (記事)\
+[PowerShell Microsoft 365グループを](../../enterprise/manage-microsoft-365-groups-with-powershell.md)管理する : この記事では、主要なコマンドレットについて説明し、例 (記事)\ を提供します。
 [Microsoft 365グループの名前付けポリシー](../../solutions/groups-naming-policy.md) (記事)

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: この記事の手順に従って、別の従業員に元従業員のデータとOneDriveアクセスOutlookします。
-ms.openlocfilehash: cb5c27cbc7f1c184af8f0d1ad32b822660e93791
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582694"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634258"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする
 
@@ -163,8 +163,6 @@ Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファ�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザー アカウントで管理者を追加およびOneDriveする](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)(記事)
-
-[削除済みファイルのOneDrive](/onedrive/restore-deleted-onedrive)する (記事)
-  
+[管理者アカウントに管理者を追加OneDriveする](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)(記事)\
+[削除されたファイルを復元OneDrive](/onedrive/restore-deleted-onedrive) (記事)\
 [OneDrive保持と削除 (](/onedrive/retention-and-deletion)記事)

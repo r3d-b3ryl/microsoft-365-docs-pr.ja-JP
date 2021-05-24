@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: テナントのデータ収集を開始する方法については、Microsoft 365 Usage Analytics テンプレート アプリを使用Power BI。
-ms.openlocfilehash: 329878365aa07da4615a849ad04cde7f75a07872
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 01923887b4af143d1490e14d59a6174700e6ae93
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593371"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635416"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする
 
 Microsoft 365の使用状況分析は、米国政府機関向けMicrosoft 365まだCommunity。
   
-## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする手順
+## <a name="before-you-begin"></a>始める前に
 
 使用状況分析をMicrosoft 365するには、まず、Microsoft 365 管理センターでデータを利用し、Power BI でテンプレート アプリを開始する必要があります。
   
-### <a name="get-power-bi"></a>Power BI を取得する
+## <a name="get-power-bi"></a>Power BI を取得する
 
 まだインストールしていない場合は[Power BIにサインアップ](https://go.microsoft.com/fwlink/p/?linkid=845347)Power BI Pro。 [**無料で試** 用] を選択して試用版にサインアップするか、[今すぐ購入] を選択して、Power BI Pro。
   
@@ -47,7 +47,7 @@ Microsoft 365の使用状況分析は、米国政府機関向けMicrosoft 365ま
 
 データを共有するには、ユーザーとデータを共有するユーザー、Power BI Pro ライセンスが必要、またはコンテンツが Power BI プレミアム サービスの[ワークスペースにある必要があります](/power-bi/service-premium-what-is)。 
   
-### <a name="enable-the-template-app"></a>テンプレート アプリを有効にする
+## <a name="enable-the-template-app"></a>テンプレート アプリを有効にする
 
 テンプレート アプリを有効にするには、グローバル管理者である **必要があります**。
   
@@ -61,7 +61,7 @@ Microsoft 365の使用状況分析は、米国政府機関向けMicrosoft 365ま
   
 データ収集プロセスは、テナントのサイズに応じて 2 ~ 48 時間で完了します。 データ **収集が完了Power BI[** 移動] ボタンが有効になります (灰色は表示されません)。 
     
-### <a name="start-the-template-app"></a>テンプレート アプリを起動する
+## <a name="start-the-template-app"></a>テンプレート アプリを起動する
 
 テンプレート アプリを起動するには、グローバル管理者、レポートリーダー、Exchange管理者、Skype for Business管理者、または管理者SharePoint **する必要があります**。  
   
@@ -99,8 +99,6 @@ Microsoft 365の使用状況分析は、米国政府機関向けMicrosoft 365ま
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[利用状況分析について](usage-analytics.md) (記事)
-
-[使用状況分析の最新バージョンを取得する](get-the-latest-version-of-usage-analytics.md) (記事)
-
+[利用状況分析について](usage-analytics.md) (記事)\
+[使用状況分析の最新バージョンを取得](get-the-latest-version-of-usage-analytics.md) する (記事)\
 [使用状況分析のレポートを移動Microsoft 365活用する](navigate-and-utilize-reports.md)(記事)

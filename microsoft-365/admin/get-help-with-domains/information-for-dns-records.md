@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: ドメインをサブスクリプションに接続するために DNS レコードを作成するために必要な値Microsoft 365します。
-ms.openlocfilehash: c8ff30c27e67c8a29b7122ea80a6a33f0594b1b9
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e65d53269f5fb8625b12c4eb22f78516818045be
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582958"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635728"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードを作成するために必要な情報を収集する
 
@@ -100,8 +100,6 @@ ms.locfileid: "52582958"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドメインに関する FAQ](../setup/domains-faq.yml) (記事)
-
-[ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)
-
+[ドメインに関する FAQ](../setup/domains-faq.yml) (記事)\
+[ドメインまたは DNS レコードを追加した後で問題を](find-and-fix-issues.md) 見つけて修正する (記事)\
 [ドメインの管理](index.yml) (リンク ページ)

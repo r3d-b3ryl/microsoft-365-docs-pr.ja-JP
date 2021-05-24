@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 管理者アカウントでサインインMicrosoft 365、ビジネス サブスクリプションのユーザーのパスワードMicrosoft 365リセットします。
-ms.openlocfilehash: 8d4666eb70b1d5349f71c906f05510a8a54ded74
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571975"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635572"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
@@ -122,12 +122,8 @@ Vasil Michev (Microsoft MVP) による次のブログ投稿を確認してくだ
   
 ## <a name="related-content"></a>関連コンテンツ
   
-[ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md) (記事)
-
-[パスワードをリセットする](../add-users/reset-passwords.md) (記事)
-
-[個別のユーザーのパスワードを無期限に設定する](set-password-to-never-expire.md) (記事)
-
-[組織のパスワード有効期限ポリシーを設定する](../manage/set-password-expiration-policy.md) (記事)
-
+[ユーザーが自分のパスワードをリセットする](../add-users/let-users-reset-passwords.md) (記事)\
+[パスワードのリセット](../add-users/reset-passwords.md) (記事)\
+[個々のユーザーのパスワードを有効期限が切れることはありません](set-password-to-never-expire.md) (記事)\
+[組織のパスワード有効期限ポリシーを設定する](../manage/set-password-expiration-policy.md) (記事)\
 [一般法人向け Microsoft 365 のトレーニング ビデオ](../../business-video/index.yml) (リンク ページ)

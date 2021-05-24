@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 管理センターに配布グループまたはリストMicrosoft 365作成して、各受信者の名前を入力せずにグループに電子メールを送信できます。
-ms.openlocfilehash: 7c04ca3e17959afd4138a6ddf9d9cbcd6c4dbafb
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572251"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635668"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>管理センターで配布グループをMicrosoft 365する
   
@@ -76,8 +76,6 @@ ms.locfileid: "52572251"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーのメール設定](../email/office-365-user-email-settings.md) (記事)
-
-[管理センターでセキュリティ グループを作成、編集、またはMicrosoft 365する](../email/create-edit-or-delete-a-security-group.md)(記事)
-
+[ユーザーのメール設定](../email/office-365-user-email-settings.md) (記事)\
+[管理センターでセキュリティ グループを作成、編集、またはMicrosoft 365する](../email/create-edit-or-delete-a-security-group.md)(記事)\
 [共有メールボックス GWT を作成する](../email/create-a-shared-mailbox.md) (記事)

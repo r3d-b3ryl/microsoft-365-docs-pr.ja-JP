@@ -21,17 +21,17 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス請求書または請求書の請求、請求、支払Microsoft 365支払い情報、および発注書番号の変更方法を解釈します。
 ms.date: 05/04/2021
-ms.openlocfilehash: aa898f570fb17f2d9e2ebba769e285cb9d507c31
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 63d532ddfb86eb80a1cdeb6001fff683c5999146
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593527"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635836"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 
 > [!IMPORTANT]
-> 2021 年 1 月 26 日より、ベルギー、フランス、イタリア、ルクセンブルク、ポルトガル、スペイン、米国のお客様の新しい銀行口座はサポートされなくなりました。 いずれかの国にお住まいのお客様は、既存の銀行口座でサブスクリプションの支払いを行い、新しいサブスクリプションを追加することができますが、銀行口座が有効な場合に限ります。
+> 2021 年 1 月 26 日をもって、ベルギー、フランス、イタリア、ルクセンブルグ、ポルトガル、スペイン、および米国のお客様に、新しい銀行口座をサポートしなくなりました。 これらの国のいずれかの既存のお客様である場合、既存の銀行口座で引き続きサブスクリプションの支払いを行い、新しいサブスクリプションを追加できますが、銀行口座が良好な状態である場合に限ります。
 
 月次または年次 (サブスクリプションの購入時に選択したオプションに応じて) のいずれかで、新しい請求明細が管理センターで利用可能であることを通知するメールを受信します。 「[一般法人向け Office 365 の課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
   
@@ -128,12 +128,8 @@ ms.locfileid: "52593527"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[請求書または請求書を見つけて表示する方法](view-your-bill-or-invoice.md) (記事)
-
-[請求先住所の変更](change-your-billing-addresses.md) (記事)
-
-[組織のアドレス、技術的な](../../admin/manage/change-address-contact-and-more.md) 連絡先メール、その他の情報を変更する (記事)
-
-[ビジネス サブスクリプションMicrosoft 365支払う](pay-for-your-subscription.md)(記事)
-
+[請求書または請求書を検索して表示する](view-your-bill-or-invoice.md) 方法 (記事)\
+[請求先住所を変更](change-your-billing-addresses.md) する (記事)\
+[組織のアドレス、技術的な](../../admin/manage/change-address-contact-and-more.md) 連絡先メール、その他の情報を変更する (記事)\
+[ビジネス サブスクリプションのMicrosoft 365支払い](pay-for-your-subscription.md)(記事)\
 [Minecraft: Education Edition の支払いオプション](/education/windows/school-get-minecraft) (記事) \

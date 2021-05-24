@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: 12bdb9f12c1b0d3072a4c84c006787c26050cc8b
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: b274bb6bcdf71641ff8b196921a501bae9cbba28
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582802"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635964"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法
 
@@ -256,7 +256,7 @@ Defender for Office 365でフィッシング対策ポリシーを作成するに
 |設定またはオプション|推奨される設定値|
 |---|---|
 |名前|ドメインと最も価値のあるキャンペーン スタッフ|
-|説明|最も重要なスタッフとドメインが偽装されていないか確認します。|
+|Description|最も重要なスタッフとドメインが偽装されていないか確認します。|
 |保護対象のユーザーの追加|[+**条件の追加] を選択します。受信者は .** ユーザー名を入力するか、候補者、キャンペーン マネージャー、その他の重要なスタッフ メンバーのメール アドレスを入力します。 偽装から保護する最大 20 の内部アドレスと外部アドレスを追加できます。|
 |保護対象のドメインの追加|Select **+ Add a condition, the recipient domain is**. サブスクリプションを定義している場合は、Microsoft 365に関連付けられているカスタム ドメインを入力します。 複数のドメインを入力できます。|
 |処理の選択|偽装ユーザーによって電子メールが送信される場合は、[メッセージを別の電子メール アドレスにリダイレクトする] を選択し、セキュリティ管理者の電子メール アドレスを入力します。たとえば、securityadmin@contoso.com。 <br/> 偽装ドメインから電子メールが送信される場合は、[検疫メッセージ] **を選択します**。|
@@ -291,7 +291,7 @@ Defender for Office 365でフィッシング対策ポリシーを作成するに
 |設定またはオプション|推奨される設定値|
 |---|---|
 |名前|検出されたマルウェアを使用して、現在および将来のメールをブロックします。|
-|説明|検出されたマルウェアを使用して、現在および将来の電子メールと添付ファイルをブロックします。|
+|Description|検出されたマルウェアを使用して、現在および将来の電子メールと添付ファイルをブロックします。|
 |添付ファイルの不明なマルウェアの応答を保存する|[ **ブロック] を選択します。 検出されたマルウェアを使用して現在および将来のメールと添付ファイルをブロックします**。|
 |検出時に添付ファイルをリダイレクトする|リダイレクトを有効にする (このボックスを選択) <br/> 検疫用の管理者アカウントまたはメールボックスのセットアップを入力します。 <br/> 添付ファイルのマルウェア スキャンが時間切れまたはエラーが発生した場合は、上記の選択項目を適用します (このボックスを選択します)。|
 |適用先|受信者ドメインはです。 . . ドメインを選択します。|
@@ -348,8 +348,6 @@ Defender for Office 365でフィッシング対策ポリシーを作成するに
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーの多要素認証 (Microsoft 365)](multi-factor-authentication-microsoft-365.md)
-
-[優先度アカウントの管理と監視](../setup/priority-accounts.md) (記事)
-
+[ユーザーの多要素認証](multi-factor-authentication-microsoft-365.md)(Microsoft 365)\
+[優先度アカウントの管理と監視](../setup/priority-accounts.md) (記事)\
 [Microsoft 365管理センターの [レポート]](../activity-reports/activity-reports.md) (ビデオ)

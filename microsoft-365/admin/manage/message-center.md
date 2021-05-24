@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: メッセージ センターの概要Microsoft 365、新機能や変更された機能、その他の重要なアナウンスを追跡する役割について説明します。
-ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 51cdf1924b3aaa507a6b41f903a6aea5d81d68f1
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593959"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636048"
 ---
 # <a name="message-center"></a>メッセージ センター
 
@@ -303,8 +303,6 @@ Microsoft 365 サービスの変更に関する実践的な情報の多くは、
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[標準リリースまたはターゲットリリース オプションの設定](../manage/release-options-in-office-365.md) (記事)
-
-[新機能にOffice機能を管理する](../manage/show-hide-new-features.md)(記事)
-
-[ビジネス サブスクリプションと請求に関するドキュメント](../../commerce/index.yml) (リンク)
+[標準リリースオプションまたは対象リリース オプションの設定](../manage/release-options-in-office-365.md) (記事)\
+[What's New (Office) に表示される](../manage/show-hide-new-features.md)機能を管理する
+[ビジネス サブスクリプションと請求に関するドキュメント](../../commerce/index.yml) (リンク ページ)

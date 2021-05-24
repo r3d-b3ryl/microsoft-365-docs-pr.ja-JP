@@ -22,12 +22,12 @@ search.appverid: MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
 ms.date: 05/04/2021
-ms.openlocfilehash: d173df1eac827eb835b8544f64858c28ccf0fb75
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 64ccf82549bb85ba803693eb3e7c15939940d45c
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537309"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635848"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 
@@ -142,21 +142,17 @@ Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 3
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>お支払い方法として Azure の前払いが表示されないのはなぜですか?
 
-Azure の前払いは、対象となる Azure 製品およびサービスのお支払い方法としてのみ利用できます。
-
-## <a name="related-content"></a>関連コンテンツ
-
-[ビジネス向け請求書または請求書をMicrosoft 365する](understand-your-invoice2.md)(記事)
-
-[Microsoft Customer Agreement Azure クレジット 残高の追跡](/azure/billing/billing-mca-check-azure-credits-balance) (記事)
-
-[Microsoft カスタマー 契約の請求書を確認する](/azure/cost-management-billing/understand/review-customer-agreement-bill) (記事)
-
-[Microsoft Customer Agreement 請求アカウントの使用を開始する](/azure/billing/billing-mca-overview) (記事)
-
+Azure 前払は、対象となる Azure 製品およびサービスの支払い方法としてのみ利用できます。
 
 ## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートにお問い合せください
 
 Azure クレジットについて質問がある場合、またはサポートが必要な場合は、<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Azure サポートを使用してサポート要求を作成してください</a>。
 
 Microsoft 365 管理センターの請求書について質問がある場合、またはサポートが必要な場合は、[ビジネス製品のサポートにお問い合わせください](../../business-video/get-help-support.md)。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[ビジネス向け請求書または請求書Microsoft 365を理解](understand-your-invoice2.md)する (記事)\
+[Microsoft Customer Agreement Azure クレジット 残高の追跡](/azure/billing/billing-mca-check-azure-credits-balance) (記事)\
+[Microsoft カスタマー 契約請求書](/azure/cost-management-billing/understand/review-customer-agreement-bill) (記事)を確認する\
+[Microsoft Customer Agreement 請求アカウントの使用を開始する](/azure/billing/billing-mca-overview) (記事)

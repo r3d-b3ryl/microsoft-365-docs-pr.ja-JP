@@ -24,24 +24,26 @@ search.appverid:
 - BCS160
 - MET150
 description: ローカルの Active-Directory に参加Microsoft 365デバイスを保護するために、Windows 10をわずか数ステップで有効にする方法について説明します。
-ms.openlocfilehash: f16962dd3c33c3c228da507bc5c4a902d76a8a08
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593895"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636088"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>ドメインに参加しているデバイスWindows 10デバイスをユーザーが管理Microsoft 365 Business Premium
 
 組織で Windows Server Active Directory をオンプレミスで使用している場合は、Microsoft 365 Business Premium をセットアップして Windows 10 デバイスを保護しながら、ローカル認証を必要とするオンプレミス リソースへのアクセスを維持できます。
 この保護を設定するには、参加しているデバイスに **ハイブリッド Azure AD実装できます**。 これらのデバイスは、オンプレミスの Active Directory とユーザーの両方に参加Azure Active Directory。
 
+## <a name="watch-configure-hybrid-azure-active-directory-join"></a>ウォッチ: ハイブリッド サーバーへの参加Azure Active Directory構成する
+
 このビデオでは、最も一般的なシナリオでこれを設定する手順について説明します。この手順については、以下の手順でも説明します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
+## <a name="before-you-begin"></a>始める前に
 
-## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>開始する前に、次の手順を実行してください。
 - ユーザーを Azure AD Azure AD Connect。
 - 組織単位 (OU) AD Connect Azure 組織単位 (OU) の同期を完了します。
 - 同期するドメイン ユーザー全員にライセンスが割り当てMicrosoft 365 Business Premium。
@@ -119,8 +121,6 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドメイン ユーザーをユーザーとMicrosoft 365](manage-domain-users.md)する (記事)
-
-[管理センターでグループを作成する](../admin/create-groups/create-groups.md) (記事)
-
+[ドメイン ユーザーを他のユーザー Microsoft 365](manage-domain-users.md)同期する (記事)\
+[管理センターでグループを作成](../admin/create-groups/create-groups.md) する (記事)\
 [チュートリアル: 管理ドメインAzure Active Directoryハイブリッド ドメインへの参加を構成する](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md)(記事)

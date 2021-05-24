@@ -27,26 +27,26 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理センターで特定のタスクを実行できるよう、管理者の役割をビジネス内のユーザーまたは複数のユーザーに割り当てる方法について説明します。
-ms.openlocfilehash: f23a30cfd1be53982572d745d476558c3be615e6
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8a9da12a8ebc01a02e4362f09ccaa9e92c21b7e9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571867"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634174"
 ---
 # <a name="assign-admin-roles"></a>管理者ロールを割り当てる
 
 Microsoft Business サブスクリプションを購入したユーザーは、グローバル管理者です。つまり、サブスクリプション内の製品を無制限に制御し、ほとんどのデータにアクセスできます。
 
-詳細については、「[管理者の役割について](about-admin-roles.md)」を参照してください。
+詳細については、「[管理者ロールについて](about-admin-roles.md)」を参照してください。
 
 新しいユーザーを追加する場合、管理者ロールを割り当てない場合は、ユーザーロールに含め、Microsoft 管理センターに管理者特権はありません。 ただし、ヘルプが必要な場合は、管理者の役割をユーザーに割り当てできます。 たとえば、パスワードのリセットを支援する必要がある場合は、グローバル管理者の役割を割り当ててはいけない場合は、パスワード管理者の役割を割り当てる必要があります。 データやオンライン ビジネスに無制限にアクセスできるグローバル管理者が多すぎると、セキュリティ リスクが生じます。
 
-## <a name="watch-add-an-adminbrbr"></a>ウォッチ: 管理者を追加します。<br><br>
+## <a name="watch-add-an-adminbrbr"></a>ウォッチ: 管理者を追加する<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="assign-admin-roles"></a>管理者ロールを割り当てる 
 
@@ -78,7 +78,7 @@ Microsoft Business サブスクリプションを購入したユーザーは、�
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. [アクティブ **なユーザー] ページ** で、管理者ロールを変更するユーザーを選択します。 フライアウト ウィンドウの [ロール] の横にある **[編集**] を **選択します**。 
 
@@ -90,7 +90,7 @@ Microsoft Business サブスクリプションを購入したユーザーは、�
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. [アクティブ **なユーザー] ページ** で、管理者ロールを変更するユーザーを選択します。 フライアウト ウィンドウの [ロール] の横にある **[編集**] を **選択します**。
 
@@ -121,10 +121,7 @@ PowerShell を知っている場合は [、「PowerShell を使用して役割�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理者Microsoft 365について](about-admin-roles.md)(記事)
-
-[管理者ロールのアクセス許可 (Azure Active Directory)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-
-[PowerShell を使用して役割をユーザー アカウントに割り当](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) てる (記事)
-
+[管理者Microsoft 365について](about-admin-roles.md)(記事)\
+[管理者ロールのアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)(Azure Active Directory)\
+[PowerShell を使用してユーザー アカウントに役割を割り当てる](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (記事)\
 [パートナー関係の承認または削除](../misc/add-partner.md) (記事)

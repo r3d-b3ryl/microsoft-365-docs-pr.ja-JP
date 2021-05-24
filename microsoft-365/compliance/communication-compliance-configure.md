@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 60b9577c2a42ef080fa6a734e0207225bf197cab
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: eed486120673abc513490f4892069ee8fd9bba21
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624271"
+ms.locfileid: "52636160"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信コンプライアンスを使用して開始する
 
@@ -128,7 +128,7 @@ ms.locfileid: "52624271"
 
 | **ポリシー メンバー** | **サポートされているグループ** | **サポートされていないグループ** |
 |:-----|:-----|:-----|
-|監督対象ユーザー <br> 非監督対象ユーザー | 配布グループ <br> Microsoft 365 グループ | 動的配布グループ <br> 入れ子になった配布グループ <br> メールが有効なセキュリティ グループ <br> Microsoft 365メンバーシップを持つグループ |
+|監督対象ユーザー <br> 除外されたユーザー | 配布グループ <br> Microsoft 365 グループ | 動的配布グループ <br> 入れ子になった配布グループ <br> メールが有効なセキュリティ グループ <br> Microsoft 365メンバーシップを持つグループ |
 | レビュー担当者 | なし | 配布グループ <br> 動的配布グループ <br> 入れ子になった配布グループ <br> メールが有効なセキュリティ グループ |
   
 ポリシーで配布グループを割り当てると、ポリシーは配布グループ内Teamsのすべての電子メールとチャットを監視します。 ポリシーで Microsoft 365 グループを割り当てると、ポリシーは、各グループ メンバーが受信した個々の電子メールやチャットではなく、そのグループに送信された電子メールと Teams チャットを監視します。

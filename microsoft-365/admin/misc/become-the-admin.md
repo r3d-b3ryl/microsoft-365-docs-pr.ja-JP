@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 電子メールとドメインの所有権を確認して、セルフサービス ユーザーサインアップによって作成された管理されていないテナントを引き継ぐ方法についてMicrosoft 365。
-ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: aa44023ffdc2b59e4db024706323c5b872566260
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593935"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635988"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>内部管理者の引き取りを実行する
 
@@ -68,10 +68,7 @@ ms.locfileid: "52593935"
   
 ## <a name="related-content"></a>関連コンテンツ
 
-YouTube: IT 管理者の引き取りを行う[3](https://www.youtube.com/watch?v=xt5EsrQBZZk)つのPower BIとMicrosoft 365 (ビデオ)
-
-[Azure AD管理者の引きAD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (記事)
-
-[組織でのセルフサービス サインアップの使用](self-service-sign-up.md) (記事)
-  
+YouTube: IT 管理者の引き取りを行う[3](https://www.youtube.com/watch?v=xt5EsrQBZZk) Power BIとMicrosoft 365 (ビデオ)\
+[Azure での管理者の引き](/azure/active-directory/users-groups-roles/domains-admin-takeover) AD (記事)\
+[組織でセルフサービス サインアップを使用](self-service-sign-up.md) する (記事)\
 [サービス管理者Power BIロールについて](/power-bi/service-admin-role)(記事)

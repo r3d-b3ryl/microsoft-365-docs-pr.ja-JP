@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: グループMicrosoft 365グループを使用すると、グループのユーザーに共有リソースのコレクションへのアクセス権を与えることによって、Microsoft 365全体のチームワークを促進できます。
-ms.openlocfilehash: bfcd2d27bc1d63fcc8b306267efe21c3f9564522
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f940872a3e4ba2aeeb62247c2898d5a4c0dec85f
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582742"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635752"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -119,12 +119,8 @@ Microsoft 365グループは、グループをAzure Active Directory。 取得�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[グループの詳細Microsoft 365 (](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)記事)
-
-[配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)(記事)
-
-[PowerShell Microsoft 365グループの管理](../../enterprise/manage-microsoft-365-groups-with-powershell.md)(記事)
-
-[SharePoint制限 (](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)記事)
-
+[グループの詳細Microsoft 365 (](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)記事)\
+[配布リストを Microsoft 365 グループにアップグレード](../manage/upgrade-distribution-lists.md)する (記事)\
+[PowerShell Microsoft 365グループの管理](../../enterprise/manage-microsoft-365-groups-with-powershell.md)(記事)\
+[SharePoint制限](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)(記事)\
 [Microsoft Stream でグループとチャネルを整理](/stream/groups-channels-organization) する (記事)

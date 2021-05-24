@@ -28,12 +28,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Gmail や他のメール プロバイダーから連絡先、予定表、メールをインポートし、Microsoft 365 に移行する方法について説明します。
-ms.openlocfilehash: 56075c19e15621755a1500d37513430842ac99e8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 9f775135e739c91a0fb48a060136728f901159f5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297046"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635916"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Microsoft 365 へのメールと連絡先の移行
 
@@ -52,6 +52,8 @@ Microsoft 365 でメール、連絡先、予定表を Gmail から Outlook に�
 - [Outlook に連絡先をインポートする](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
 - [Google カレンダーをインポートする](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
+
+## <a name="watch-import-calendars"></a>ウォッチ: 予定表のインポート
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
@@ -90,3 +92,9 @@ Outlook にアカウント (個人用 Gmail アカウントなど) を追加し�
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>メールボックスが複数の場合: 管理者は Microsoft 365 にメール、連絡先、予定表を一括インポートすることが可能です
 
 ソースのメール システムによっては、いくつかの一括移行処理方法を選択できます。 どの方法が適切かを判断するには、「[複数のメール アカウントを Microsoft 365 に移行する方法](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[ビジネス向けMicrosoft 365のセットアップを](plan-your-setup.md)計画する (記事)\
+[アプリケーションOfficeインストール](install-applications.md)(リンク ページ)\
+[Microsoft 365 管理センターの概要](../../business-video/admin-center-overview.md) (ビデオ)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループの作成と削除、Microsoft 365メンバーの追加と削除、グループの動作のカスタマイズについて説明します。
-ms.openlocfilehash: b3fb637867229489a3e3abe93373cc46fbce365f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b8cbd194825ef114fa8e4ce999355248a61e7830
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241726"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635584"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>管理センターでグループMicrosoft 365する
   
@@ -44,11 +44,11 @@ ms.locfileid: "52241726"
   
 3. [グループの **種類の選択] ページで**、[グループの種類]**をOffice 365し、[次** へ] を **選択します**。
 
-4. [基本 **] ページ** で、グループの名前を入力し、必要に応じて説明を入力します。 **[次へ]** を選択します。
+4. [基本 **] ページ** で、グループの名前を入力し、必要に応じて説明を入力します。 [**次へ**] を選択します。
     
 5. [設定 **の編集]** ページで、グループの一意の電子メール アドレスを入力し、プライバシー オプションを選択し、グループを追加するかどうかをMicrosoft Teams、[次へ] を選択 **します**。
     
-6. [所有者 **]** で、グループの管理に指定される 1 人または複数のユーザーの名前を選択します。 グループの所有者のみが、グループの受信トレイからメールを削除できます。 他のメンバーはグループの受信トレイからメールを削除することはできません。 **[次へ]** を選択します。
+6. [所有者 **]** で、グループの管理に指定される 1 人または複数のユーザーの名前を選択します。 グループの所有者のみが、グループの受信トレイからメールを削除できます。 他のメンバーはグループの受信トレイからメールを削除することはできません。 [**次へ**] を選択します。
     
 7. 設定を確認して変更を加えた後、[グループの作成] **を選択します**。
 
@@ -80,14 +80,12 @@ ms.locfileid: "52241726"
   
 グループ メールボックスからメールが削除された場合、そのメールはグループ メンバーの個人用メールボックスから削除されません。
 
-## <a name="next-step-manage-your-group"></a>次の手順: グループを管理する
+## <a name="next-steps"></a>次の手順
 
 新しいグループを作成してメンバーを追加した後、グループ名や説明の編集、所有者またはメンバーの変更、外部送信者がグループにメールを送信できるかどうか、グループ会話のコピーをメンバーに送信するかどうかを指定するなどのグループをさらに構成できます。 詳細については[、「グループMicrosoft 365管理する](manage-groups.md)」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[グループへのゲスト アクセスMicrosoft 365管理](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)する (記事)
-
-[グループを作成するときに使用するドメインをMicrosoft 365する](../../solutions/choose-domain-to-create-groups.md)(記事)
-
+[グループへのゲスト アクセスMicrosoft 365管理](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)する (記事)\
+[グループの作成時に使用するドメインMicrosoft 365選択](../../solutions/choose-domain-to-create-groups.md)する (記事)\
 [配布リストを他のグループMicrosoft 365アップグレードする](../manage/upgrade-distribution-lists.md)(記事)

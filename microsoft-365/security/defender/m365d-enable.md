@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2d69ae70b137c9e5378958721f7f9958e57c0306
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3d7564b5d509190c8c8e799c541bb0ca583097f1
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935643"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636232"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender を有効にする
 
@@ -56,7 +56,7 @@ Microsoft 365Defender は、既に展開したさまざまなサポートされ�
 最適な保護を得て、Defender Microsoft 365最適化するには、該当するサポートされているサービスをネットワークに展開することをお勧めします。 詳細については、「サポート [されているサービスの展開」を参照してください](deploy-supported-services.md)。
 
 ## <a name="onboard-to-the-service"></a>サービスにオンボードする
-Defender へのオンボーディングMicrosoft 365簡単です。 ナビゲーション メニューから、[エンドポイント] セクションの下のアイテム (インシデント、ハンティング、アクション センター、脅威分析など) を選択してオンボーディング プロセスを開始します。 
+Defender へのオンボーディングMicrosoft 365簡単です。 ナビゲーション メニューから、インシデント、ハンティング、アクション センター Microsoft 365脅威分析など、すべての Defender アイテムを選択してオンボーディング プロセスを開始します。 
 
 ### <a name="data-center-location"></a>データ センターの場所
 

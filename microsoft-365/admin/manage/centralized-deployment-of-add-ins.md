@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593923"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635452"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -160,11 +160,8 @@ web 用の Office アプリ (Word、Excel など) の使用中にアドインの
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理センターにアドインを展開する](../manage/manage-deployment-of-add-ins.md) (記事)
-
-[管理センターでアドインを管理する](manage-addins-in-the-admin-center.md) (記事)
-
-[集中展開に関する FAQ](../manage/centralized-deployment-faq.md) (記事)
-
+[管理センターにアドインを展開](../manage/manage-deployment-of-add-ins.md) する (記事)\
+[管理センターでアドインを管理](manage-addins-in-the-admin-center.md) する (記事)\
+[集中展開に関する FAQ](../manage/centralized-deployment-faq.md) (記事)\
 [ビジネス ユーザー Microsoft 365最新の Officeクライアント](../setup/upgrade-users-to-latest-office-client.md)にアップグレードする (記事)
  
