@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: 'グローバル管理者によって行われる、ユーザーのメール アドレスと表示名の変更方法について説明します。 '
-ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: 'Microsoft 365 のグローバル管理者が、ユーザー名が変更されるときにユーザーのメール アドレスと表示名を変更する方法について説明します。 '
+ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291021"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535988"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
@@ -251,8 +251,10 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
   
 Windows Server 2003 以前のバージョンで Active Directory を使用して他のユーザーのユーザー名を変更する方法については、[ユーザー アカウントの名前の変更](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10))に関するページを参照してください。
   
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[管理者: 1 人または複数のユーザーのパスワードを再設定する](reset-passwords.md)
+[管理者: 1 人または複数のユーザーのパスワードを再設定する](reset-passwords.md) (記事)
   
-[ユーザーに別のメール アドレスを追加する](../email/add-another-email-alias-for-a-user.md)
+[ユーザーに別のメール アドレスを追加する](../email/add-another-email-alias-for-a-user.md) (記事)
+
+[共有メールボックス GWT を作成する](../email/create-a-shared-mailbox.md) (記事)

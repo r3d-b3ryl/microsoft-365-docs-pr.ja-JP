@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Microsoft 365 管理センターで支払方法を管理する方法を説明します。
+description: Microsoft 365 管理センターでは、既存の支払方法を使用したり、新しい支払方法を追加したりして、Microsoft からビジネス製品やサービスを購入できます。
 ms.date: 04/02/2021
-ms.openlocfilehash: b6fe62a70d478a98eb13a17fafb4320afc6b5952
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332008"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537321"
 ---
 # <a name="manage-payment-methods"></a>支払方法を管理する
 
@@ -87,7 +87,7 @@ Microsoft からビジネス製品またはサービスを購入する場合、�
 
 1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
 2. **[製品]** タブで、別の支払い方法で支払いたいサブスクリプションを見つけます。
-3. **[その他の操作]** (3 つのドット) を選択してから、**[お支払い方法を置換]** を選択します。
+3. 3 つのドット (その他の操作) を選択してから、**[支払い方法を置換]** を選択します。
 4. **お支払い方法を置換** ウィンドウのドロップダウン リストから、別の支払方法を選択するか、支払方法の追加を選択します。
 5. 支払方法を追加する場合は、カードまたは口座の詳細を入力し、**[保存]** を選択します。
 6. 選択した支払方法が正しいことを確認し、**[置換]** を選択します。

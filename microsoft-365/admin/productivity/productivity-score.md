@@ -18,13 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+description: Microsoft 生産性スコアには、ユーザーやテクノロジのエクスペリエンス測定がどのように反映されているか、同規模の組織との比較をご覧ください。
+ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345240"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593843"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -44,35 +44,9 @@ ms.locfileid: "52345240"
 
 - **テクノロジ エクスペリエンス**: 組織は、信頼性が高くパフォーマンスの高いテクノロジと、Microsoft 365 の効率的な使用に大きく左右されます。 [エンドポイント分析](https://aka.ms/endpointanalytics): ハードウェアとソフトウェアのパフォーマンスと正常性の問題が組織にどのように影響するかを理解するのに役立ちます。 Microsoft 365 アプリの正常性は、組織内のデバイスが推奨されているチャネルで Microsoft 365 アプリを実行しているかどうかを知るのに役立ちます。
 
+## <a name="before-you-begin"></a>始める前に
+
 概要と前提条件の詳細については、「[エンドポイント分析とは](/mem/analytics/overview)」を参照してください。 Microsoft 365 ネットワーク接続のインサイトの詳細については、「[ネットワーク接続の概要](../../enterprise/microsoft-365-networking-overview.md)」をお読みください。
-  
-
-## <a name="how-the-score-is-calculated"></a>スコアの計算方法
-
-生産性スコアは、ユーザー エクスペリエンスおよびテクノロジ エクスペリエンスのカテゴリを組み合わせたスコアに基づいています。 各カテゴリの比率は同じで、合計 100 ポイントです。 生産性スコアの最高得点は 800 です。
-
-### <a name="score-categories"></a>スコア カテゴリ 
-
-- コミュニケーション (100 ポイント)
-- 会議 (100 ポイント)
-- コンテンツの共同作業 (100 ポイント)
-- チームワーク (100 ポイント)
-- モビリティ (100 ポイント)
-- エンドポイントの分析 (100 ポイント)
-- ネットワーク接続 (100 ポイント)
-- Microsoft 365 アプリの正常性 (100 ポイント)
-- **最高合計得点 = 800 ポイント**
- 
-各スコア カテゴリで、組織がデジタル変革への過程において Microsoft 365 をどのように使用しているかに関するキー インジケーターを定量化します。 主要な活動の 28 日と 180 日のビューを提供します。 また、スコア計算には含まれないものの、対処すべき基本的な使用状況の統計や構成を特定するのに役立つ重要な指標も提供します。
-
-### <a name="products-included-in-productivity-score"></a>生産性スコアに含まれる製品 
-
-生産性スコアには、Exchange、SharePoint、OneDrive、Teams、Word、Excel、PowerPoint、OneNote、Outlook、Yammer、および Skype のデータが含まれます。
-
-組織のスコアは毎日更新され、過去 28 日 (当日を含む) に完了したユーザーの操作を反映します。
-
-
-## <a name="prerequisites"></a>前提条件 
 
 ユーザーがデータを体験するには、Microsoft 365 for Business または Office 365 for enterprise サブスクリプションが必要です。 テナントのエンドポイント分析データについては、サブスクリプションに Microsoft Intune を追加する必要があります。 Intune を使用してデバイスとアプリを管理することで、組織のデータを保護できます。 Intune を入手したら、Intune エクスペリエンス内でエンドポイント分析を有効にできます。 Microsoft Intune の詳細については、「[Microsoft Intune documentation](/mem/intune/)」 を参照してください。 
 
@@ -98,6 +72,30 @@ ms.locfileid: "52345240"
 Microsoft は個々のユーザーのプライバシーを保護します。 この[プライバシー ドキュメント](privacy.md)では、Microsoft に寄せていただいている信頼を損なうことなく、組織の IT 管理者に実践的な情報を確実に提供するために Microsoft が提供する管理策について説明しています。
 
 Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** からエクスペリエンスにアクセスできます。
+  
+## <a name="how-the-score-is-calculated"></a>スコアの計算方法
+
+生産性スコアは、ユーザー エクスペリエンスおよびテクノロジ エクスペリエンスのカテゴリを組み合わせたスコアに基づいています。 各カテゴリの比率は同じで、合計 100 ポイントです。 生産性スコアの最高得点は 800 です。
+
+### <a name="score-categories"></a>スコア カテゴリ 
+
+- コミュニケーション (100 ポイント)
+- 会議 (100 ポイント)
+- コンテンツの共同作業 (100 ポイント)
+- チームワーク (100 ポイント)
+- モビリティ (100 ポイント)
+- エンドポイントの分析 (100 ポイント)
+- ネットワーク接続 (100 ポイント)
+- Microsoft 365 アプリの正常性 (100 ポイント)
+- **最高合計得点 = 800 ポイント**
+ 
+各スコア カテゴリで、組織がデジタル変革への過程において Microsoft 365 をどのように使用しているかに関するキー インジケーターを定量化します。 主要な活動の 28 日と 180 日のビューを提供します。 また、スコア計算には含まれないものの、対処すべき基本的な使用状況の統計や構成を特定するのに役立つ重要な指標も提供します。
+
+### <a name="products-included-in-productivity-score"></a>生産性スコアに含まれる製品 
+
+生産性スコアには、Exchange、SharePoint、OneDrive、Teams、Word、Excel、PowerPoint、OneNote、Outlook、Yammer、および Skype のデータが含まれます。
+
+組織のスコアは毎日更新され、過去 28 日 (当日を含む) に完了したユーザーの操作を反映します。
 
 ## <a name="interpreting-your-organizations-productivity-score"></a>組織の生産性スコアを解釈する 
 
@@ -161,6 +159,6 @@ Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** �
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[レポートを使用して Microsoft 365 のアクティビティを監視する](/microsoft-365/admin/activity-reports/activity-reports) (記事)\
-[Microsoft 365 利用状況分析を有効にする](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (記事)\
-[Microsoft 365 管理センターの概要](/microsoft-365/business-video/admin-center-overview) (ビデオ)
+[レポートを使用して Microsoft 365 のアクティビティを監視する](../../admin/activity-reports/activity-reports.md) (記事)\
+[Microsoft 365 利用状況分析を有効にする](../../admin/usage-analytics/enable-usage-analytics.md) (記事)\
+[Microsoft 365 管理センターの概要](../../business-video/admin-center-overview.md) (ビデオ)

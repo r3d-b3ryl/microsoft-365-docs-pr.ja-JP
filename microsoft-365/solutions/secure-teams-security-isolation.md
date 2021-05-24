@@ -14,13 +14,14 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: 4d305e952d48d42afffe91466121c67621aa9d85
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 4ed8b3a7476e11cdf2341b0a98af690ed3f33c7e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113404"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539073"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 
@@ -111,7 +112,7 @@ ms.locfileid: "52113404"
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)を開きます。
 2. **[ソリューション]** で、**[情報保護]** をクリックします。
 3. **[ラベルの作成]** をクリックします。
-4. ラベルに名前を付けます。 使用するチームにちなんで名前を付けることをお勧めします。
+4. ラベルに名前を付けます。使用するチームにちなんで名前を付けることをお勧めします。
 5. 表示名と説明を追加し、**[次へ]** をクリックします。
 6. **Define the scope for this label** (このラベルの範囲の定義) ページで、**[Files & emails]** (ファイルとメール) と **[Groups & sites]** (グループとサイト) を選択し、**[次へ]** をクリックします。
 7. **[ファイルとメールの保護設定の選択]** ページで、**[ファイルとメールの暗号化]** を選択し、**[次へ]** をクリックします。
@@ -148,7 +149,7 @@ ms.locfileid: "52113404"
 6. [ユーザーとグループに発行] ページで、**[ユーザーとグループの選択]** をクリックします。
 7. **[追加]** をクリックし、作成したチームを選びます。
 8. **[追加]** をクリックし、**[完了]** をクリックします。
-9. [**次へ**] をクリックします。
+9. **[次へ]** をクリックします。
 10. [ポリシーの設定] ページで、**[ユーザーはラベルを削除するか、分類ラベルを下げるために正当な理由を提供する必要がある]** チェック ボックスをオンにし、**[次へ]** をクリックします。
 11. ポリシーの名前を入力し、**[次へ]** をクリックします。
 12. **[送信]** をクリックしてから、**[完了]** をクリックします。

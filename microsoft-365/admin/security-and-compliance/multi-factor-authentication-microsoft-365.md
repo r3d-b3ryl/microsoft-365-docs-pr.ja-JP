@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: Microsoft 365 の多要素認証について説明します。
-ms.openlocfilehash: 080251efa7d7d3bda6ad89e95960e43dd38d076d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: 多要素認証 (MFA) は、強力なパスワードと追加の検証方法の両方を使用します。
+ms.openlocfilehash: 84d26d0a9908e51ce734e71961d4643a2df3471b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050668"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623691"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 の多要素認証
 
@@ -127,7 +127,7 @@ Microsoft 365 Business Premium を使用している小規模企業の場合、�
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-Azure AD Identity Protection を使用すると、追加の条件付きアクセス ポリシーを作成して、[サインインのリスクが中以上のとき MFA を要求する](../../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)ことができます。
+Azure AD Identity Protection を使用すると、追加の条件付きアクセス ポリシーを作成して、[サインインのリスクが中以上のとき MFA を要求する](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)ことができます。
 
 Azure AD Identity Protection とリスク ベースの条件付きアクセス ポリシーは、次のプランで使用できます。
 
@@ -174,8 +174,7 @@ Microsoft 365 管理センターでは、ユーザー単位およびサービス
 
 [Microsoft 365 の MFA を設定する](set-up-multi-factor-authentication.md)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-content"></a>関連コンテンツ
 
-[ビデオ: 多要素認証をオンにする](../../business-video/turn-on-mfa.md)
-
-[ビデオ: スマートフォンの多要素認証をオンにする](../../business-video/set-up-mfa.md)
+[多要素認証 (ビデオ)](../../business-video/turn-on-mfa.md) を有効にする\
+[スマートフォンの多要素認証をオンにする](../../business-video/set-up-mfa.md) (ビデオ)

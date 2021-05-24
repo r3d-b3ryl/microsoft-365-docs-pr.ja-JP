@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fc811fb513935645fa596c5a9d2e3e552b50324
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2cd04911e3663bb6b9fa00d4946b26086dc8094d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245362"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538269"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -59,7 +59,7 @@ ms.locfileid: "52245362"
 > [!NOTE]
 > Microsoft 365 では、初期ドメインの 'onmicrosoft.com' に対応する DKIM が自動的にセットアップされます。 つまり、初期ドメイン名に対応する DKIM のセットアップに関して、ユーザーは何もする必要がないということです (例: litware.onmicrosoft.com)。 ドメインの詳細については、「[ドメインに関する FAQ](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)」を参照してください。
 
-DKIM は、あたかもユーザー本人のドメインから来たかのようにメッセージを送信するスプーフィング攻撃を防止するために役立つ 3 つの認証方法 (SPF、DKIM、DMARC) の 1 つです。
+DKIM は、あたかもユーザー本人のドメインから送信されたかのようにメッセージを送信する攻撃の防止に役立つ 3 つの認証方法 (SPF、DKIM、DMARC) の 1 つです。
 
 DKIM を使用すると、送信メールのメッセージ ヘッダー部にデジタル署名を追加できます。 DKIM を設定すると、暗号認証を使用してドメイン名を電子メール メッセージに関連付ける（署名する）ことをドメインに許可します。 ドメインから電子メールを受信する電子メール システムは、このデジタル署名を使用して、受信する電子メールが正当かどうかを確認できます。
 

@@ -245,6 +245,10 @@
               href: dlp-chrome-learn-about.md
             - name: データ損失防止の警告ダッシュボードについて
               href: dlp-alerts-dashboard-learn.md
+        - name: DLP を計画する
+          items:
+            - name: データ損失防止ポリシーのサポート
+              href: dlp-overview-plan-for-dlp.md
         - name: DLP の使用を開始する
           items:
             - name: 既定の DLP ポリシーの使用を開始する

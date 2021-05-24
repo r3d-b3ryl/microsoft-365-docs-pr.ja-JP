@@ -23,13 +23,13 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: ドメイン管理に役立つドメインとそれに関連する DNS レコードについて説明します。
-ms.openlocfilehash: f8d8171e306a0206facec1621bf2b1a9f8085757
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: ドメイン ネーム システムは、コンピューターのホスト名を IP アドレスにマップします。DNS とドメイン レジストラーの基礎を理解することはドメインを管理するうえで役立ちます。
+ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915664"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582946"
 ---
 # <a name="dns-basics"></a>DNS の基本
 
@@ -53,7 +53,7 @@ contoso.com のようなドメイン名は、ドメイン レジストラーの�
 
 ::: moniker range="o365-21vianet"
 
-contoso.com のようなドメイン名は、ドメイン レジストラーの世界中のシステムとデータベースを使って管理されています。 ドメイン ネーム システム (DNS) は、人間が判読できるコンピューター ホスト名とネットワーク機器によって使用される IP アドレス間のマッピングを提供します。 DNS とドメイン レジストラーの基本を理解することで、管理者はドメインを管理できます。
+contoso.com のようなドメイン名は、ドメイン レジストラーの世界中のシステムとデータベースを使って管理されています。ドメイン ネーム システム (DNS) は、人間が判読できるコンピューター ホスト名とネットワーク機器によって使用される IP アドレス間のマッピングを提供します。DNS とドメイン レジストラーの基礎を理解することは、管理者がドメインを管理するうえで役立ちます。
   
 ::: moniker-end
 
@@ -122,7 +122,7 @@ Web サイトのアドレス (例: www.contoso.com) を入力すると、DNS サ
 
 ::: moniker range="o365-21vianet"
 
-contoso.com の NS レコードに「hichina.com」と記載するとします。 これで、インターネットは、hichina.com が contoso.com の他のすべての DNS レコードを一覧表示したゾーン ファイルを探す場所であることを認識できます。 それらの DNS レコードには、contoso.com 宛てのメールの送信先を指定する MX レコードと他のレコードが含まれます。 たとえば、MX レコードに "メールを Office 365 に送信する" という意味の値が含まれている場合は、contoso.com のメール アドレス (joe@contoso.com など) に送信されるすべてのメール メッセージが Microsoft 365 に送信されます。 そして、その場所に "joe" というメールボックスがある場合は、メールが配信されます。
+たとえば、contoso.com に対する NS レコードに "hichina.com" という値があるとします。それにより、インターネット上で、contoso.com に対する他のすべての DNS レコードのリストを含むゾーン ファイルが hichina.com にあることがわかります。それらの DNS レコードには、contoso.com 宛てのメールの送信先を指定する MX レコードと他のレコードが含まれます。たとえば、MX レコードに "メールを Microsoft 365 に送信する" という意味の値が含まれている場合は、contoso.com のメール アドレス (joe@contoso.com など) に送信されるすべてのメール メッセージが送信されます。そして、その場所に "joe" というメールボックスがある場合は、メールが配信されます。
 
 ::: moniker-end
 
@@ -142,7 +142,7 @@ contoso.com の NS レコードに「hichina.com」と記載するとします�
 
 ::: moniker range="o365-21vianet"
 
-ドメインのゾーン ファイルがドメイン レジストラー以外の場所にあるのはなぜですか? HiChina のようなドメイン レジストラーでドメイン名を登録することもできますが、DNS レコードは別の DNS ホスティング会社や Web ホスティング会社で管理されているかもしれません。 ドメインの NS レコードには、その情報が格納されます。これにより、すべての DNS サーバーが検索対象を把握できます。
+自分のドメイン レジストラー以外の場所に自分のドメインのゾーン ファイルがある理由はなんでしょうか。 ドメイン名を HiChina のようなドメイン レジストラーに登録しても、自分の DNS レコードは別の場所 (別の DNS をホストする会社や Web をホストする会社) で管理できます。 ドメインに対する NS レコードにはその情報が格納されているため、どこを探すべきかすべての DNS サーバーにわかるのです。
 
 ::: moniker-end
 
@@ -196,5 +196,13 @@ Microsoft 365 では、ドメイン名をメール、一般向け Web サイト�
 
 次のいずれかを確認してください。 
   
-- ドメインが登録されている場所がわからない場合 [ドメイン レジストラーの検索に関するヘルプをご覧ください。](find-your-domain-registrar.md)
-- Microsoft 365 でドメインを使う前に、[ウィザードのステップの完了が必要な理由](../setup/add-domain.md)を確認してください。
+- ドメインが登録されている場所を確認するには、「[ドメイン レジストラーの検索方法](find-your-domain-registrar.md)」を参照してください。
+- Microsoft 365 でドメインを使う前に、「[ウィザードの手順の完了が必要な理由](../setup/add-domain.md)」を確認してください。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[ドメインの FAQ](../setup/domains-faq.yml) (記事)
+
+[ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)
+
+[ドメインの管理](index.yml) (リンク ページ)

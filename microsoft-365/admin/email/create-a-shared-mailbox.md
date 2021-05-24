@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 共有メールボックスを作成すると、社内の複数のユーザーが 1 つのメール アドレスに送付されたメールを閲覧したり、回答したりできます。
-ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915880"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537609"
 ---
 # <a name="create-a-shared-mailbox"></a>共有メールボックスを作成する 
 
@@ -38,7 +38,7 @@ ms.locfileid: "50915880"
 
 共有メールボックスの作成は簡単なので、ユーザーのグループが共通のメール アドレス (info@contoso.com など) を監視して、そこからメールを送信することができます。共有メールボックスに送信されたメッセージにグループのユーザーが返信すると、そのメールは、個別のユーザーからではなく共有メールボックスから送信されたように表示されます。
 
-共有メールボックスには共有の予定表も含まれています。 全員が予定を入力できる場所として共有の予定表を利用したい小規模な企業は多数あります。 たとえば、客先に訪問する社員が 3 人いる場合、全員で共有の予定表を使用して予定を入力できます。 これで、誰がどこにいるのかが常にわかるようになります。
+共有メールボックスには共有の予定表も含まれています。全員が予定を入力できる場所として、共有の予定表を利用したい小規模企業は数多くあります。たとえば、客先に訪問する社員が 3 人いる場合、全員で共有の予定表を使用して予定を入力できます。これで、誰がどこにいるのかが常にわかるようになります。
 
 共有メールボックスを作成する前に、「[共有メールボックスについて](about-shared-mailboxes.md)」を読んで詳細をご確認ください。
 
@@ -190,7 +190,7 @@ Outlook の共有メールボックスの詳細については、次を参照し
 
 ## <a name="use-the-shared-calendar"></a>共有の予定表を使う
 
-共有メールボックスを作成すると、共有の予定表が自動的に作成されます。 共有メールボックスの予定表は SharePoint の予定表に比べて、予定や他の人の場所を把握するのに便利です。 共有の予定表は Outlook と統合されており、SharePoint の予定表よりずっと簡単に使用できます。
+共有メールボックスを作成すると、共有予定表が自動的に作成されます。SharePoint の予定表と比較して、予定や他の人の居場所を把握するのに便利です。共有予定表は Outlook に統合され、SharePoint の予定表に比べてはるかに簡単に利用することができます。
 
 1. Outlook アプリで予定表ビューに移動し、共有メールボックスを選択します。
 
@@ -198,14 +198,14 @@ Outlook の共有メールボックスの詳細については、次を参照し
 
 3. 共有メールボックスのすべてのメンバーは、予定表での予定の作成、表示、および管理を、個人的な予定の場合と同様に行えます。 共有メールボックスのメンバーになっているすべてのユーザーは、共有の予定表に加えられた変更を確認できます。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
 [共有メールボックスについて](about-shared-mailboxes.md)
 
-[共有メールボックスを構成する](configure-a-shared-mailbox.md)
+[共有メールボックスを構成する](configure-a-shared-mailbox.md) (記事)
 
-[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md)
+[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md) (記事)
 
-[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md)
+[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md) (記事)
 
-[共有メールボックスの問題を解決する](resolve-issues-with-shared-mailboxes.md)
+[共有メールボックスに関する問題を解決する](resolve-issues-with-shared-mailboxes.md) (記事)

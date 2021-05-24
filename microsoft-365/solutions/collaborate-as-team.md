@@ -16,13 +16,14 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: Teams のゲストとのタスク、会話、ドキュメントの共同作業を行うためチームをセットアップするのに必要な Microsoft 365 の構成手順について説明します。
-ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c17732705c1d88ff70e56f5d26d9e268e3ff7c19
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904662"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539265"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同作業する
 
@@ -61,7 +62,7 @@ B2B 外部コラボレーションの設定をチェックして、ゲストと�
 
 Teams には、ゲスト アクセス用のマスター オン/オフ スイッチと、ゲストがチームで実行できる操作を制御するために利用できるさまざまな設定があります。 Teams でゲスト アクセスを機能させるには、マスター スイッチである **[Teams でゲスト アクセスを許可する]** を **[オン]** にする必要があります。
 
-Teams でゲスト アクセスが有効になっていることを確認し、ビジネス ニーズに応じてゲスト設定を調整します。 これらの設定はすべてのチームに影響することに注意してください。
+Teams でゲスト アクセスが有効になっていることを確認し、ビジネス ニーズに応じてゲスト設定を調整します。これらの設定はすべてのチームに影響を与えますのでご注意ください。
 
 ![Teams ゲスト アクセスのトグルのスクリーンショット](../media/teams-guest-access-toggle-on.png)
 
@@ -81,7 +82,7 @@ Teams のゲスト アクセスがオンになっている場合、機密度ラ�
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 グループのゲスト設定
 
-Teams は、チームのメンバーシップに Microsoft 365 グループを使用します。 Teams でゲスト アクセスを機能させるには、Microsoft 365 グループのゲスト設定をオンにする必要があります。
+Teams は、チームのメンバーシップに Microsoft 365 グループを使用します。Teams でゲスト アクセスを機能させるには、Microsoft 365 グループのゲスト設定をオンにする必要があります。
 
 ![Microsoft 365 管理センターにおける Microsoft 365 グループのゲスト設定のスクリーンショット](../media/office-365-groups-guest-settings.png)
 
@@ -146,7 +147,7 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 5. チームの名前と説明を入力し、**[作成]** をクリックします。
 6. **[スキップ]** をクリックします。
 
-後でユーザーを招待します。 次に、チームに関連付けられている SharePoint サイトのサイトレベルの共有設定を確認することが重要です。
+ユーザーは後ほど招待します。次に、チームに関連付けられている SharePoint サイトのサイトレベル共有設定の確認が重要となります。
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint のサイト レベル共有設定のスクリーンショット
 

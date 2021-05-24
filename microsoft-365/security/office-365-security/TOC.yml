@@ -164,6 +164,8 @@
           href: attack-simulation-training-insights.md
         - name: 攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
           href: attack-simulation-training-faq.md
+        - name: サード パーティ製のフィッシング詐欺シミュレーションと SecOps メールボックスの配信を構成する
+          href: configure-advanced-delivery.md
         - name: EOP および Defender for Office 365 のセキュリティを構成するための推奨設定
           href: recommended-settings-for-eop-and-office365.md
         - name: EOP を構成するためのベスト プラクティス

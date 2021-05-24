@@ -17,19 +17,20 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 03f10c91461d440413ace418a3b6fdd84da1660a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a775727882dd71a168f4049d2af6a9feb20f944c
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916228"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572719"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
 この記事では、機密レベルの保護機能を使用してチームをセットアップする方法について説明します。 この記事の手順を実行する前に、「[基本保護機能を使用してチームを展開する](configure-teams-baseline-protection.md)」の手順を完了していることを確認してください。 機密層は、基本層の上に次のような追加保護機能を実現します。
 
-- ゲスト共有を有効または無効にし、管理されていないデバイスの SharePoint コンテンツへのアクセスを Web のみに制限するチームの秘密度ラベル。 このラベルは、ファイルを分類するためにも使用できます。
+- ゲスト共有を有効または無効にし、管理されていないデバイスの SharePoint コンテンツへのアクセスを Web のみに制限するチームの秘密度ラベル。このラベルは、ファイルの分類にも使用できます。
 - より制限の厳しい既定の共有リンクの種類
 - チーム所有者のみがプライベート チャネルを作成できます。
 
@@ -104,7 +105,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 
 秘密度ラベルを使用して新しいチームを作成するたびに、SharePoint で次の 2 つの手順を実行します。
 
-- ラベルを作成したときに選択したものと一致するように、SharePoint 管理センターでサイトのゲスト共有設定を更新し、*特定のユーザー* に対して、既定の共有リンクを更新します。
+- SharePoint 管理センターでサイトのゲスト共有設定を更新して、*特定のユーザー* に対して既定の共有リンクを更新します。
 - サイト自体の共有の設定を更新し、メンバーがサイトを共有できないようにします。
 
 ### <a name="site-guest-sharing-settings"></a>サイトのゲスト共有設定
