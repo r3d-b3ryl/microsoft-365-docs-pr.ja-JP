@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 04/13/2021
   localization_priority: Priority
-  ms.openlocfilehash: a646d52b903a1ab16d2f552b456793492462c44b
-  ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+  ms.openlocfilehash: b379b42ae3c01c8359003407f3fb58834a8c074e
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/14/2021
-  ms.locfileid: "51760262"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52623567"
 landingContent:
 - title: Defender for Office 365 & Exchange Online Protection
   linkLists:
@@ -78,8 +78,8 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: スタンドアロン EOP のメール フロー ルール (トランスポート ルール)
-      url: mail-flow-rules-transport-rules-0.md
+    - text: Exchange Online のメール フロー ルール (トランスポート ルール)
+      url: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
     - text: 脅威トラッカー
       url: threat-trackers.md
     - text: セキュリティ/コンプライアンス センターのスマート レポートと分析情報
@@ -94,7 +94,7 @@ landingContent:
       url: campaigns.md
     - text: メールで配信された悪意のあるメールをOffice 365
       url: investigate-malicious-email-that-was-delivered.md
-    - text: レポートの Defender の表示Office 365する
+    - text: Microsoft Defender for Office 365 レポートを表示する
       url: view-reports-for-mdo.md
 - title: EOP で調査する
   linkLists:
@@ -102,8 +102,8 @@ landingContent:
     links:
     - text: EOP でのレポートとメッセージの追跡
       url: reporting-and-message-trace-in-exchange-online-protection.md
-    - text: スタンドアロン EOP で管理者監査ログを表示する
-      url: view-the-admin-audit-log-eop.md
+    - text: 管理者監査ログの表示
+      url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
 - title: 対応
   linkLists:
   - linkListType: overview
