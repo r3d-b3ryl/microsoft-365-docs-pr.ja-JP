@@ -6,52 +6,52 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/19/2021
+ms.date: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: ''
 description: カスタム ソリューションを使用してPower Automateを作成して契約を処理する方法についてMicrosoft 365します。
-ms.openlocfilehash: 54e92f36b19cefde92111cdbc960fad7715cf8b0
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 0ddcbeff6c8bd119850e3e4ea45db2513e774433
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583102"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636256"
 ---
-# <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a><span data-ttu-id="dfe1e-104">手順 3.</span><span class="sxs-lookup"><span data-stu-id="dfe1e-104">Step 3.</span></span> <span data-ttu-id="dfe1e-105">契約Power Automate処理するフローを作成するには、次の情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-105">Use Power Automate to create your flow to process your contracts</span></span>
+# <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a><span data-ttu-id="10b3d-104">手順 3.</span><span class="sxs-lookup"><span data-stu-id="10b3d-104">Step 3.</span></span> <span data-ttu-id="10b3d-105">契約Power Automate処理するフローを作成するには、次の情報を使用します。</span><span class="sxs-lookup"><span data-stu-id="10b3d-105">Use Power Automate to create your flow to process your contracts</span></span>
 
-<span data-ttu-id="dfe1e-106">契約管理チャネルを作成し、ドキュメント ライブラリにSharePointしました。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-106">You've created your Contract Management channel and have attached your SharePoint document library.</span></span> <span data-ttu-id="dfe1e-107">次の手順では、Syntex モデルPower Automate識別して分類するコントラクトを処理するSharePointフローを作成します。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-107">The next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies.</span></span> <span data-ttu-id="dfe1e-108">この手順を実行するには、[ドキュメント ライブラリにPower Automateフロー SharePoint作成します](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-108">You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).</span></span>
+<span data-ttu-id="10b3d-106">契約管理チャネルを作成し、ドキュメント ライブラリにSharePointしました。</span><span class="sxs-lookup"><span data-stu-id="10b3d-106">You've created your Contract Management channel and have attached your SharePoint document library.</span></span> <span data-ttu-id="10b3d-107">次の手順では、Syntex モデルPower Automate識別して分類するコントラクトを処理するSharePointフローを作成します。</span><span class="sxs-lookup"><span data-stu-id="10b3d-107">The next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies.</span></span> <span data-ttu-id="10b3d-108">この手順を実行するには、[ドキュメント ライブラリにPower Automateフロー SharePoint作成します](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)。</span><span class="sxs-lookup"><span data-stu-id="10b3d-108">You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).</span></span>
 
-<span data-ttu-id="dfe1e-109">契約管理ソリューションでは、次のアクションを実行Power Automateフローを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-109">For your contracts management solution, you want to create a Power Automate flow to do the following actions:</span></span>
+<span data-ttu-id="10b3d-109">契約管理ソリューションでは、次のアクションを実行Power Automateフローを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="10b3d-109">For your contracts management solution, you want to create a Power Automate flow to do the following actions:</span></span>
 
--  <span data-ttu-id="dfe1e-110">契約が Syntex モデルによって分類SharePoint、契約の状態を [確認中]**に変更します**。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-110">After a contract has been classified by your SharePoint Syntex model, change the contract status to **In review**.</span></span>
-- <span data-ttu-id="dfe1e-111">その後、契約が確認され、承認または却下されます。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-111">The contract is then reviewed and is either approved or rejected.</span></span>
-- <span data-ttu-id="dfe1e-112">承認された契約の場合、契約情報は支払い処理用のタブに投稿されます。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-112">For approved contracts, the contract information is posted to a tab for payment processing.</span></span>
-- <span data-ttu-id="dfe1e-113">却下された契約の場合、チームは詳細な分析を行う通知を受け取る。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-113">For rejected contracts, the team is notified for further analysis.</span></span> 
+-  <span data-ttu-id="10b3d-110">契約が Syntex モデルによって分類SharePoint、契約の状態を [確認中]**に変更します**。</span><span class="sxs-lookup"><span data-stu-id="10b3d-110">After a contract has been classified by your SharePoint Syntex model, change the contract status to **In review**.</span></span>
+- <span data-ttu-id="10b3d-111">その後、契約が確認され、承認または却下されます。</span><span class="sxs-lookup"><span data-stu-id="10b3d-111">The contract is then reviewed and is either approved or rejected.</span></span>
+- <span data-ttu-id="10b3d-112">承認された契約の場合、契約情報は支払い処理用のタブに投稿されます。</span><span class="sxs-lookup"><span data-stu-id="10b3d-112">For approved contracts, the contract information is posted to a tab for payment processing.</span></span>
+- <span data-ttu-id="10b3d-113">却下された契約の場合、チームは詳細な分析を行う通知を受け取る。</span><span class="sxs-lookup"><span data-stu-id="10b3d-113">For rejected contracts, the team is notified for further analysis.</span></span> 
 
-<span data-ttu-id="dfe1e-114">次の図は、契約Power Automateのフローを示しています。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-114">The following diagram shows the Power Automate flow for the contract management solution.</span></span>
+<span data-ttu-id="10b3d-114">次の図は、契約Power Automateのフローを示しています。</span><span class="sxs-lookup"><span data-stu-id="10b3d-114">The following diagram shows the Power Automate flow for the contract management solution.</span></span>
 
 ![Flow全体を示す図を示します。](../media/content-understanding/flow-entire-process.png)
 
-## <a name="prepare-your-contract-for-review"></a><span data-ttu-id="dfe1e-116">レビューのために契約を準備する</span><span class="sxs-lookup"><span data-stu-id="dfe1e-116">Prepare your contract for review</span></span>
+## <a name="prepare-your-contract-for-review"></a><span data-ttu-id="10b3d-116">レビューのために契約を準備する</span><span class="sxs-lookup"><span data-stu-id="10b3d-116">Prepare your contract for review</span></span>
 
-<span data-ttu-id="dfe1e-117">契約が Syntex ドキュメント理解モデルSharePoint識別され、分類されると、Power Automate フローは最初に状態を [確認中]**に変更します**。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-117">When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will first change the status to **In review**.</span></span>
+<span data-ttu-id="10b3d-117">契約が Syntex ドキュメント理解モデルSharePoint識別され、分類されると、Power Automate フローは最初に状態を [確認中]**に変更します**。</span><span class="sxs-lookup"><span data-stu-id="10b3d-117">When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will first change the status to **In review**.</span></span>
 
 ![更新の状態。](../media/content-understanding/flow-overview.png)
 
-<span data-ttu-id="dfe1e-119">ファイルをチェックアウトした後、状態の値を [確認中] **に変更します**。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-119">After checking out the file, change the status value to **In review**.</span></span>
+<span data-ttu-id="10b3d-119">ファイルをチェックアウトした後、状態の値を [確認中] **に変更します**。</span><span class="sxs-lookup"><span data-stu-id="10b3d-119">After checking out the file, change the status value to **In review**.</span></span>
 
 ![レビューの状態です。](../media/content-understanding/in-review.png)
 
-<span data-ttu-id="dfe1e-121">次の手順では、契約がレビューを待ち、それを契約管理チャネルに投稿することを示すアダプティブ カードを作成します。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-121">The next step is to create an adaptive card stating that the contract is waiting for review and posting it to the Contract Management channel.</span></span>
+<span data-ttu-id="10b3d-121">次の手順では、契約がレビューを待ち、それを契約管理チャネルに投稿することを示すアダプティブ カードを作成します。</span><span class="sxs-lookup"><span data-stu-id="10b3d-121">The next step is to create an adaptive card stating that the contract is waiting for review and posting it to the Contract Management channel.</span></span>
 
 ![契約レビュー投稿。](../media/content-understanding/contract-approval-post.png)
 
 
 ![レビュー用のアダプティブ カードを作成します。](../media/content-understanding/adaptive-card.png)
 
-<span data-ttu-id="dfe1e-124">次のコードは、この手順で使用される JSON を示Power Automateします。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-124">The following code is the JSON used for this step in the Power Automate flow.</span></span>
+<span data-ttu-id="10b3d-124">次のコードは、この手順で使用される JSON を示Power Automateします。</span><span class="sxs-lookup"><span data-stu-id="10b3d-124">The following code is the JSON used for this step in the Power Automate flow.</span></span>
 
 ```JSON
 {
@@ -127,40 +127,40 @@ ms.locfileid: "52583102"
 ```
 
 
-## <a name="conditional"></a><span data-ttu-id="dfe1e-125">条件付き</span><span class="sxs-lookup"><span data-stu-id="dfe1e-125">Conditional</span></span>
+## <a name="conditional"></a><span data-ttu-id="10b3d-125">条件付き</span><span class="sxs-lookup"><span data-stu-id="10b3d-125">Conditional</span></span>
 
-<span data-ttu-id="dfe1e-126">フローでは、次に、契約が承認または却下される条件を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-126">In your flow, next you need to create a condition in which your contract will be either  approved or rejected.</span></span>
+<span data-ttu-id="10b3d-126">フローでは、次に、契約が承認または却下される条件を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="10b3d-126">In your flow, next you need to create a condition in which your contract will be either  approved or rejected.</span></span>
 
 ![条件付き。](../media/content-understanding/condition.png)
 
-## <a name="if-the-contract-is-approved"></a><span data-ttu-id="dfe1e-128">契約が承認された場合</span><span class="sxs-lookup"><span data-stu-id="dfe1e-128">If the contract is approved</span></span>
+## <a name="if-the-contract-is-approved"></a><span data-ttu-id="10b3d-128">契約が承認された場合</span><span class="sxs-lookup"><span data-stu-id="10b3d-128">If the contract is approved</span></span>
 
-<span data-ttu-id="dfe1e-129">契約が承認されると、次のことが発生します。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-129">When a contract has been approved, the following things occur:</span></span>
+<span data-ttu-id="10b3d-129">契約が承認されると、次のことが発生します。</span><span class="sxs-lookup"><span data-stu-id="10b3d-129">When a contract has been approved, the following things occur:</span></span>
 
-- <span data-ttu-id="dfe1e-130">[契約 **] タブ** で、契約カードの状態が [承認済み] **に変更されます**。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-130">On the **Contracts** tab, the status in the contract card will change to **Approved**.</span></span>
+- <span data-ttu-id="10b3d-130">[契約 **] タブ** で、契約カードの状態が [承認済み] **に変更されます**。</span><span class="sxs-lookup"><span data-stu-id="10b3d-130">On the **Contracts** tab, the status in the contract card will change to **Approved**.</span></span>
 
    ![カードの状態が承認されました。](../media/content-understanding/approved-contracts-tab.png)
 
-- <span data-ttu-id="dfe1e-132">フローで、状態が [承認済み] **に変更されます**。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-132">In your flow, the status is changed to **Approved**.</span></span>
+- <span data-ttu-id="10b3d-132">フローで、状態が [承認済み] **に変更されます**。</span><span class="sxs-lookup"><span data-stu-id="10b3d-132">In your flow, the status is changed to **Approved**.</span></span>
 
    ![Flowの状態が承認されました。](../media/content-understanding/status-approved.png)
 
-- <span data-ttu-id="dfe1e-134">このソリューションでは、契約データが [支払い]タブに追加され、支払いを管理できます。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-134">In this solution, the contract data will be added to the **For Payout** tab so that the payouts can be managed.</span></span> <span data-ttu-id="dfe1e-135">このプロセスを拡張して、フローがサードパーティの金融アプリケーション (Dynamics CRM など) による支払いのための契約を提出できるよう拡張できます。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-135">This process can be extended to allow the flow to submit the contracts for payment by a third-party financial application (for example, Dynamics CRM).</span></span>
+- <span data-ttu-id="10b3d-134">このソリューションでは、契約データが [支払い]タブに追加され、支払いを管理できます。</span><span class="sxs-lookup"><span data-stu-id="10b3d-134">In this solution, the contract data will be added to the **For Payout** tab so that the payouts can be managed.</span></span> <span data-ttu-id="10b3d-135">このプロセスを拡張して、フローがサードパーティの金融アプリケーション (Dynamics CRM など) による支払いのための契約を提出できるよう拡張できます。</span><span class="sxs-lookup"><span data-stu-id="10b3d-135">This process can be extended to allow the flow to submit the contracts for payment by a third-party financial application (for example, Dynamics CRM).</span></span>
 
    ![契約が [支払い] に移動しました。](../media/content-understanding/for-payout.png)
 
-- <span data-ttu-id="dfe1e-137">フローで、次のアイテムを作成して、承認済み契約を [支払い] タブ **に移動** します。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-137">In the flow, you create the following item to move approved contracts to the **For Payout** tab.</span></span>
+- <span data-ttu-id="10b3d-137">フローで、次のアイテムを作成して、承認済み契約を [支払い] タブ **に移動** します。</span><span class="sxs-lookup"><span data-stu-id="10b3d-137">In the flow, you create the following item to move approved contracts to the **For Payout** tab.</span></span>
 
    ![Flowに移動するアイテムを選択します。](../media/content-understanding/ready-for-payout.png)
 
-- <span data-ttu-id="dfe1e-139">契約が承認されたことを示すアダプティブ カードが作成され、契約管理チャネルに投稿されます。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-139">An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.</span></span>
+- <span data-ttu-id="10b3d-139">契約が承認されたことを示すアダプティブ カードが作成され、契約管理チャネルに投稿されます。</span><span class="sxs-lookup"><span data-stu-id="10b3d-139">An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.</span></span>
 
    ![契約の承認が投稿されました。](../media/content-understanding/adaptive-card-approval.png)
 
    ![アダプティブ カードの承認。](../media/content-understanding/adaptive-card.png)
 
 
-   <span data-ttu-id="dfe1e-142">次のコードは、この手順で使用される JSON を示Power Automateします。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-142">The following code is the JSON used for this step in the Power Automate flow.</span></span>
+   <span data-ttu-id="10b3d-142">次のコードは、この手順で使用される JSON を示Power Automateします。</span><span class="sxs-lookup"><span data-stu-id="10b3d-142">The following code is the JSON used for this step in the Power Automate flow.</span></span>
 
 ```JSON
 { 
@@ -240,23 +240,23 @@ ms.locfileid: "52583102"
 }
 ```
 
-## <a name="if-the-contract-is-rejected"></a><span data-ttu-id="dfe1e-143">契約が拒否された場合</span><span class="sxs-lookup"><span data-stu-id="dfe1e-143">If the contract is rejected</span></span>
+## <a name="if-the-contract-is-rejected"></a><span data-ttu-id="10b3d-143">契約が拒否された場合</span><span class="sxs-lookup"><span data-stu-id="10b3d-143">If the contract is rejected</span></span>
 
-<span data-ttu-id="dfe1e-144">契約が拒否された場合、次の処理が行われます。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-144">When a contract has been rejected, the following things occur:</span></span>
+<span data-ttu-id="10b3d-144">契約が拒否された場合、次の処理が行われます。</span><span class="sxs-lookup"><span data-stu-id="10b3d-144">When a contract has been rejected, the following things occur:</span></span>
 
-- <span data-ttu-id="dfe1e-145">[契約 **] タブで** 、契約カードの状態が [拒否済み] に **変更されます**。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-145">On the **Contracts** tab, the status in the contract card will change to **Rejected**.</span></span>
+- <span data-ttu-id="10b3d-145">[契約 **] タブで** 、契約カードの状態が [拒否済み] に **変更されます**。</span><span class="sxs-lookup"><span data-stu-id="10b3d-145">On the **Contracts** tab, the status in the contract card will change to **Rejected**.</span></span>
 
    ![カードの状態が拒否されました。](../media/content-understanding/rejected-contracts-tab.png)
 
-- <span data-ttu-id="dfe1e-147">フローで、コントラクト ファイルをチェックアウトし、状態を [拒否] に変更し、ファイルを再びチェックインします。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-147">In your flow, you check out the contract file, change the status to **Rejected**, and then check the file back in.</span></span>
+- <span data-ttu-id="10b3d-147">フローで、コントラクト ファイルをチェックアウトし、状態を [拒否] に変更し、ファイルを再びチェックインします。</span><span class="sxs-lookup"><span data-stu-id="10b3d-147">In your flow, you check out the contract file, change the status to **Rejected**, and then check the file back in.</span></span>
 
    ![Flow状態が拒否されました。](../media/content-understanding/reject-flow.png)
 
-- <span data-ttu-id="dfe1e-149">フローで、契約が拒否されたことを示すアダプティブ カードを作成します。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-149">In your flow, you create an adaptive card stating that the contract has been rejected.</span></span>
+- <span data-ttu-id="10b3d-149">フローで、契約が拒否されたことを示すアダプティブ カードを作成します。</span><span class="sxs-lookup"><span data-stu-id="10b3d-149">In your flow, you create an adaptive card stating that the contract has been rejected.</span></span>
 
    ![Flow状態が拒否されました。](../media/content-understanding/reject-flow-item.png)
 
-<span data-ttu-id="dfe1e-151">次のコードは、この手順で使用される JSON を示Power Automateします。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-151">The following code is the JSON used for this step in the Power Automate flow.</span></span>
+<span data-ttu-id="10b3d-151">次のコードは、この手順で使用される JSON を示Power Automateします。</span><span class="sxs-lookup"><span data-stu-id="10b3d-151">The following code is the JSON used for this step in the Power Automate flow.</span></span>
 
 ```JSON
 { 
@@ -336,6 +336,6 @@ ms.locfileid: "52583102"
 }
 ```
 
-- <span data-ttu-id="dfe1e-152">カードは契約管理チャネルに投稿されます。</span><span class="sxs-lookup"><span data-stu-id="dfe1e-152">The card is posted in the Contract Management channel.</span></span>
+- <span data-ttu-id="10b3d-152">カードは契約管理チャネルに投稿されます。</span><span class="sxs-lookup"><span data-stu-id="10b3d-152">The card is posted in the Contract Management channel.</span></span>
 
    ![Flowアダプティブ カードを拒否します。](../media/content-understanding/rejected.png)
