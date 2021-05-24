@@ -27,6 +27,11 @@
 #### [サポート対象デバイスのオンボード](onboard-configure.md)
 
 ## [移行ガイド](migration-guides.md)
+### [Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint に切り替える]()
+#### [移行の概要](switch-to-microsoft-defender-migration.md)
+#### [フェーズ 1: 準備](switch-to-microsoft-defender-prepare.md)
+#### [フェーズ 2: セットアップ](switch-to-microsoft-defender-setup.md)
+#### [フェーズ 3: オンボード](switch-to-microsoft-defender-onboard.md)
 ### [McAfee から Microsoft Defender for Endpoint に切り替える]()
 #### [移行の概要](mcafee-to-microsoft-defender-migration.md)
 #### [フェーズ 1: 準備](mcafee-to-microsoft-defender-prepare.md) 
@@ -37,11 +42,6 @@
 #### [フェーズ 1: 準備](symantec-to-microsoft-defender-atp-prepare.md)
 #### [フェーズ 2: セットアップ](symantec-to-microsoft-defender-atp-setup.md)
 #### [フェーズ 3: オンボード](symantec-to-microsoft-defender-atp-onboard.md)
-### [Microsoft 以外のエンドポイント セキュリティ ソリューションから Microsoft Defender for Endpoint に切り替える]()
-#### [移行の概要](switch-to-microsoft-defender-migration.md)
-#### [フェーズ 1: 準備](switch-to-microsoft-defender-prepare.md)
-#### [フェーズ 2: セットアップ](switch-to-microsoft-defender-setup.md)
-#### [フェーズ 3: オンボード](switch-to-microsoft-defender-onboard.md)
 ### [移行後の Microsoft Defender for Endpoint の管理]()
 #### [Microsoft Defender for Endpoint の管理の概要](manage-atp-post-migration.md)
 #### [Intune (推奨)](manage-atp-post-migration-intune.md)
@@ -73,7 +73,7 @@
 ### [他のオペレーティング システム上の Microsoft Defender for Endpoint]()
 #### [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)
 
-#### [macOS 用 Microsoft Defender for Endpoint]()
+#### [macOS 用 Microsoft Defender for Endpoint]()
 ##### [macOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-mac.md)
 ##### [新機能](mac-whatsnew.md)
  
@@ -111,7 +111,7 @@
 ##### [リソース](mac-resources.md)
 
 
-#### [iOS 用 Microsoft Defender for Endpoint API]()
+#### [iOS 用 Microsoft Defender for Endpoint API]()
 ##### [iOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-ios.md)
 ##### [新機能](ios-whatsnew.md)
  
@@ -456,16 +456,16 @@
 ### [管理と API]()
 #### [管理と API の概要](management-apis.md)
 #### [API リリースノート](api-release-notes.md)
-#### [Microsoft Defender for Endpoint API]()
+#### [Microsoft Defender for Endpoint API]()
 ##### [概要]()
-###### [Microsoft Defender for Endpoint API ライセンスと条件](api-terms-of-use.md)
-###### [Microsoft Defender for Endpoint API にアクセスする](apis-intro.md)
+###### [Microsoft Defender for Endpoint API ライセンスと条件](api-terms-of-use.md)
+###### [Microsoft Defender for Endpoint API にアクセスする](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [アプリケーション コンテキストでアクセスする](exposed-apis-create-app-webapp.md)
 ###### [ユーザー コンテキストでアクセスする](exposed-apis-create-app-nativeapp.md)
 ###### [パートナー アプリケーションへのアクセスを取得する](exposed-apis-create-app-partners.md)
-##### [Microsoft Defender for Endpoint API スキーマ]()
-###### [サポート対象 Microsoft Defender for Endpoint API](exposed-apis-list.md)
+##### [Microsoft Defender for Endpoint API スキーマ]()
+###### [サポート対象 Microsoft Defender for Endpoint API](exposed-apis-list.md)
 ###### [一般的な REST API エラー コード](common-errors.md)
 ###### [高度な追求](run-advanced-query-api.md)
 
@@ -624,17 +624,17 @@
 ### [パートナー統合シナリオ]()
 #### [テクニカル パートナーの機会](partner-integration.md)
 #### [マネージド セキュリティ サービス プロバイダーの機会](mssp-support.md)
-#### [Microsoft Defender for Endpoint パートナーになる](get-started-partner-integration.md)
+#### [Microsoft Defender for Endpoint パートナーになる](get-started-partner-integration.md)
 
 ### [統合]()
-#### [Microsoft Defender for Endpoint 統合](threat-protection-integration.md)
+#### [Microsoft Defender for Endpoint 統合](threat-protection-integration.md)
 #### [条件付きアクセスでユーザー、データ、デバイスを保護する](conditional-access.md)
 #### [Microsoft Cloud App Security 統合の概要](microsoft-cloud-app-security-integration.md)
 
 ### [Windows における情報保護の概要]()
 #### [Windows 統合](information-protection-in-windows-overview.md)
 
-### [Microsoft Defender for Endpoint コミュニティ センターにアクセスする](community.md)
+### [Microsoft Defender for Endpoint コミュニティ センターにアクセスする](community.md)
 
 ### [役に立つリソース](helpful-resources.md)
 
@@ -649,7 +649,7 @@
 #### [Microsoft Defender for Endpoint サービスに関する問題のトラブルシューティング]()
 ##### [サービスに関する問題のトラブルシューティング](troubleshoot-mdatp.md)
 ##### [サービス正常性の確認](service-status.md)
-##### [Microsoft Defender for Endpoint サポートに連絡する](contact-support.md)
+##### [Microsoft Defender for Endpoint サポートに連絡する](contact-support.md)
 
 #### [ライブ応答に関する問題のトラブルシューティング](troubleshoot-live-response.md)
 

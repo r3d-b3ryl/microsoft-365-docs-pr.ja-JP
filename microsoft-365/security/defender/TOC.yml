@@ -58,7 +58,7 @@
               href: m365d-pilot-simulate.md
             - name: 閉じて要約する
               href: m365d-pilot-close.md
-    - name: 概要
+    - name: 作業の開始
       items:
         - name: 概要
           href: get-started.md
@@ -282,42 +282,42 @@
               items:
                 - name: ServiceNow 統合の概要
                   href: ./tickets.md
-            - name: Microsoft 365 Defender API (プレビュー)
+        - name: Microsoft 365 Defender API (プレビュー)
+          items:
+            - name: Microsoft 365 Defender API の概要 (プレビュー)
+              href: api-overview.md
+            - name: Microsoft 365 Defender API の使用を開始する (プレビュー)
               items:
-                - name: Microsoft 365 Defender API の概要 (プレビュー)
-                  href: api-overview.md
-                - name: Microsoft 365 Defender API の使用を開始する (プレビュー)
+                - name: Microsoft 365 Defender API のライセンスと使用条件
+                  href: api-terms.md
+                - name: Microsoft 365 Defender API にアクセスする
+                  href: api-access.md
+                - name: Hello World の例
+                  href: api-hello-world.md
+                - name: アプリケーション コンテキストでアクセスする
+                  href: api-create-app-web.md
+                - name: ユーザー コンテキストでアクセスする
+                  href: api-create-app-user-context.md
+                - name: パートナー アプリケーションへのアクセスを取得する
+                  href: api-partner-access.md
+                - name: その他の API リソース
+                  href: api-articles.md
+            - name: Microsoft 365 Defender API とスキーマ (プレビュー)
+              items:
+                - name: サポートされている Microsoft 365 Defender API
+                  href: api-supported.md
+                - name: 一般的な REST API エラー コード
+                  href: api-error-codes.md
+                - name: 高度な追及 API
+                  href: api-advanced-hunting.md
+                - name: インシデント API
                   items:
-                    - name: Microsoft 365 Defender API のライセンスと使用条件
-                      href: api-terms.md
-                    - name: Microsoft 365 Defender API にアクセスする
-                      href: api-access.md
-                    - name: Hello World の例
-                      href: api-hello-world.md
-                    - name: アプリケーション コンテキストでアクセスする
-                      href: api-create-app-web.md
-                    - name: ユーザー コンテキストでアクセスする
-                      href: api-create-app-user-context.md
-                    - name: パートナー アプリケーションへのアクセスを取得する
-                      href: api-partner-access.md
-                    - name: その他の API リソース
-                      href: api-articles.md
-                - name: Microsoft 365 Defender API とスキーマ (プレビュー)
-                  items:
-                    - name: サポートされている Microsoft 365 Defender API
-                      href: api-supported.md
-                    - name: 一般的な REST API エラー コード
-                      href: api-error-codes.md
-                    - name: 高度な追及 API
-                      href: api-advanced-hunting.md
-                    - name: インシデント API
-                      items:
-                        - name: インシデントの方法とプロパティ
-                          href: api-incident.md
-                        - name: インシデントを一覧表示する
-                          href: api-list-incidents.md
-                        - name: インシデントを更新する
-                          href: api-update-incidents.md
+                    - name: インシデントの方法とプロパティ
+                      href: api-incident.md
+                    - name: インシデントを一覧表示する
+                      href: api-list-incidents.md
+                    - name: インシデントを更新する
+                      href: api-update-incidents.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint
