@@ -15,12 +15,12 @@ ms.custom:
 description: この記事では、EOP (EOP) 管理者が使用できるレポートとトラブルシューティング Microsoft Exchange Onlineについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5e5493925a17725bfb9d6698b3f94050960ccc7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ae55ded9d907754161813c9f7bfa7eeb14c558a8
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205722"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625031"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP でのレポートとメッセージの追跡
 
@@ -77,7 +77,7 @@ EOP を通過する電子メール メッセージを追跡します。電子メ
 
 ## <a name="audit-logging"></a>監査ログ
 
-組織の管理者によって行われた特定の変更を追跡します。 これらのレポートの構成に関する問題のトラブルシューティングを行うか、セキュリティやコンプライアンス関連の問題の原因を見つけることができます。 [「EOP でのレポートの監査」を参照してください](auditing-reports-in-eop.md)。
+組織の管理者によって行われた特定の変更を追跡します。 これらのレポートの構成に関する問題のトラブルシューティングを行うか、セキュリティやコンプライアンス関連の問題の原因を見つけることができます。 「[監査レポート」を参照Exchange Online。](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)
 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>レポート機能とメッセージ トレース データの使用可能性と遅延
 

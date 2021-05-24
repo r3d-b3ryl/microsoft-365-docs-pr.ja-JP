@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3711018034bcabdde10c21b3c968c3e813d0565
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6f2b9a1365a27bb7397aea51dcd5bc9e2631afe2
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245259"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624707"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS での Microsoft Defender for Endpoint の展開
 
@@ -35,13 +35,13 @@ ms.locfileid: "52245259"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-このトピックでは、登録されているデバイス上の iOS での Defender for Endpoint の展開Intune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
+このトピックでは、登録されているデバイス上の iOS での Defender for Endpoint の展開Intune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - Microsoft Endpoint Manager 管理センター [へのアクセス権を持っている必要があります](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-- ユーザーに対して iOS 登録が行われたことを確認します。 iOS で Defender for Endpoint を使用するには、Defender for Endpoint ライセンスが割り当てられている必要があります。 ライセンスの割 [り当て方法については、「ユーザー](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) にライセンスを割り当てる」を参照してください。
+- ユーザーに対して iOS 登録が行われたことを確認します。 iOS で Defender for Endpoint を使用するには、Defender for Endpoint ライセンスが割り当てられている必要があります。 ライセンスの割 [り当て方法については、「ユーザー](/azure/active-directory/users-groups-roles/licensing-groups-assign) にライセンスを割り当てる」を参照してください。
 
 > [!NOTE]
 > iOS 上のエンドポイント用 Microsoft Defender が [Apple App Store で利用可能になります](https://aka.ms/mdatpiosappstore)。
@@ -83,7 +83,7 @@ iOS 上の Defender for Endpoint を展開するには、Intune ポータル サ
 
 管理者は VPN プロファイルの自動セットアップを構成できます。 これにより、オンボーディング中にユーザーに設定せずに Defender for Endpoint VPN プロファイルが自動的にセットアップされます。 Web Protection 機能を提供するために VPN が使用されます。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。
 
-1. [Microsoft Endpoint manager 管理センターで、[](https://go.microsoft.com/fwlink/?linkid=2109431)デバイス構成プロファイル iOS ストア アプリの作成] に移動し、[  ->    ->    ->  選択] を **クリックします**。
+1. [Microsoft Endpoint manager 管理センターで、[デバイス](https://go.microsoft.com/fwlink/?linkid=2109431)構成プロファイル  ->  **の作成プロファイル**]  ->  **に移動します**。
 1. **[iOS/iPadOS としてプラットフォーム] を選択し、[VPN** **としてプロファイルの種類**] を **選択します**。 **[作成]** をクリックします。
 1. プロファイルの名前を入力し、[次へ] を **クリックします**。
 1. [ **接続の種類]** で [カスタム VPN] を選択し、[ **基本 VPN]** セクションで、次の値を入力します。
@@ -148,7 +148,7 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
 
 1. [次 **へ] を** クリックして [スコープ タグ **] ページを** 開きます。 スコープ タグはオプションです。 続行するには、**[次へ]** をクリックします。
 
-1. [割り **当て] ページ** で、このプロファイルを受け取るグループを選択します。 このシナリオでは、すべてのデバイスをターゲットに設定するベスト **プラクティスです**。 プロファイルの割り当ての詳細については、「Assign [user and device profiles」を参照してください](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)。
+1. [割り **当て] ページ** で、このプロファイルを受け取るグループを選択します。 このシナリオでは、すべてのデバイスをターゲットに設定するベスト **プラクティスです**。 プロファイルの割り当ての詳細については、「Assign [user and device profiles」を参照してください](/mem/intune/configuration/device-profile-assign)。
 
    ユーザー グループに展開する場合、ユーザーはポリシーが適用される前にデバイスにサインインする必要があります。
 

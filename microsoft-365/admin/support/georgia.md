@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5d73b54a60b22ac74a55c301b3bd9344ee83352f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ec66115bc5ad0c8031be7117d2d8282e5c7d5041
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298820"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623883"
 ---
 # <a name="contact-support-for-georgia"></a>ジョージア州のサポートに問い合わせ
 
@@ -26,11 +26,9 @@ ms.locfileid: "52298820"
 ## <a name="phone-number"></a>電話番号
 032 297 0124
 
-オプション 2 を選択する
+ビジネス向け 2 キーを押す
 
-オプション 9 を選択する
-
-コード 7700 を入力する
+1 キーを押してMicrosoft 365
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:

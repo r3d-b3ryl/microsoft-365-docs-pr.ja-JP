@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
-description: 管理センターで管理者の電話番号とメール アドレスを更新します。 自分の管理者パスワードをリセットする場合は、この情報が必要です。
-ms.openlocfilehash: 49e3cd3e861499d41107b9c76da175a95e74bb0e
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+description: 自分の管理者パスワードをリセットする場合は、管理センターで管理者の電話番号とメール アドレスを更新します。
+ms.openlocfilehash: ab4e200ae680e40dea7ca7cc4d095be0690ad375
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073779"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624515"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>管理者の電話番号とメール アドレスを更新する
 
@@ -58,10 +58,7 @@ ms.locfileid: "52073779"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザー名とメール アドレスの変更](../add-users/change-a-user-name-and-email-address.md) (ビデオ)
-
-[新入社員の追加](../add-users/add-new-employee.md) (ビデオ)
-
-[元従業員を削除する](../add-users/remove-former-employee.md) (ビデオ)
-
+[ユーザー名と電子メール アドレス (ビデオ](../add-users/change-a-user-name-and-email-address.md) ) を変更する\
+[新入社員の追加](../add-users/add-new-employee.md) (ビデオ)\
+[元従業員を削除](../add-users/remove-former-employee.md) する (ビデオ)\
 [以前のユーザーのデータにアクセスしてバックアップ](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) する (記事)

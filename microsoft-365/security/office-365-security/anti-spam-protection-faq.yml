@@ -20,12 +20,12 @@ metadata:
   description: 管理者は、迷惑メール対策 (EOP) でスパム対策に関するよく寄せられる質問とExchange Online Protection表示できます。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: e632ab1183c43cd50da7c2cf7832a5a18fa64d50
-  ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+  ms.openlocfilehash: b15e7409c275810a9d5e70d1376a9c3accd07ab9
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/20/2021
-  ms.locfileid: "52583618"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52624911"
 title: スパム対策保護に関する FAQ
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > EOP がオンプレミスのメールボックスを保護するハイブリッド展開では、メッセージに追加される EOP スパム フィルター ヘッダーを検出するために、オンプレミス Exchange 組織で 2 つの Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
+      > EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド展開では、メッセージに追加される EOP スパム フィルター ヘッダーを検出するために、2 つの Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) をオンプレミス Exchange 組織に構成する必要があります。 詳細については、「ハイブリッド環境の迷惑メール フォルダーにスパムを配信する [EOP の構成」を参照してください](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
        **送信メッセージの場合:** メッセージは、リスクの高い配信 [](high-risk-delivery-pool-for-outbound-messages.md)プールを経由するか、配信不可レポート (NDR またはバウンス メッセージとも呼ばれる) で送信者に返されます。 送信スパム保護の詳細については、「送信スパムコントロール [」を参照してください](outbound-spam-controls.md)。
   - question: >

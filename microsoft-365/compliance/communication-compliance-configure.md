@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3e84c3266dd802fb6cab12db0c20773838b4e2a9
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: 60b9577c2a42ef080fa6a734e0207225bf197cab
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077190"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624271"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信コンプライアンスを使用して開始する
 
@@ -202,7 +202,7 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
     - ポリシーに適用する限られた条件フィールド (通常は機密情報の種類またはキーワード 辞書) を選択します。
 
     >[!NOTE]
-    >光学式文字認識[(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview)を有効にして、ポリシー条件に一致する印刷テキストまたは手書きテキストのメッセージに埋め込まれた画像または添付画像をスキャンする場合は、[ポリシーの条件と割合をカスタマイズする] を選択し、[評価のために画像から印刷または手書きのテキストを抽出する] を有効にするを選択します。  >   
+    >光学式文字認識[(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr)を有効にして、ポリシー条件に一致する印刷テキストまたは手書きテキストのメッセージに埋め込まれた画像または添付画像をスキャンする場合は、[ポリシーの条件と割合をカスタマイズする] を選択し、[評価のために画像から印刷または手書きのテキストを抽出する] を有効にするを選択します。  >   
 
     ポリシー ウィザードを使用してカスタム ポリシーを作成する場合は、次の手順を実行します。
 
@@ -222,7 +222,7 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
 
     - 分類子を有効にする場合に選択します。 分類子は、電子メール メッセージまたは他の種類のテキストの本文で送信または受信した不適切な言語や画像を検出できます。 次の組み込みの分類子を選択 *できます**。*    
 
-    - 光学 [式文字認識 (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) を有効にして、メッセージ内の埋め込みまたは添付された画像をスキャンして、ポリシー条件に一致する印刷または手書きのテキストを検索します。 カスタム ポリシーの場合、光学式文字認識スキャンの選択を有効にするには、ポリシーでテキスト、キーワード、分類子、または機密情報の種類に関連付けられた 1 つ以上の条件付き設定を構成する必要があります。
+    - 光学 [式文字認識 (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) を有効にして、メッセージ内の埋め込みまたは添付された画像をスキャンして、ポリシー条件に一致する印刷または手書きのテキストを検索します。 カスタム ポリシーの場合、光学式文字認識スキャンの選択を有効にするには、ポリシーでテキスト、キーワード、分類子、または機密情報の種類に関連付けられた 1 つ以上の条件付き設定を構成する必要があります。
 
     - レビューする通信の割合を定義します。
 

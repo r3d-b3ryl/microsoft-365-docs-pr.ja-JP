@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: データ移動は、Microsoft がテナントのサービスと関連データを新しいデータセンター geo に移動するときに発生するバック エンド操作です。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14563a695e5c092f9bddfbdfdcb758f90cea32c0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3d44ffc1650989e5c39f5f79cb6a07065f9e9f1
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929422"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625259"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -102,6 +102,8 @@ SharePoint Online データを移行する過程で、検索インデックス�
 - 電子情報開示:移行中に変更されたアイテムは、クロールで変更が反映されるまでは表示されません。
     
 - データ損失防止 (DLP):クロールで変更が反映されるまで、変更されたアイテムに対してポリシーは適用されません。
+
+移行の一環として、既定の地域が変更され、すべての新しいコンテンツが新しい既定の領域に保存されます。 既存のコンテンツは、管理センターの SharePoint Online データの場所に最初に変更された後、最大 90 日間、バックグラウンドで移動します。
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 

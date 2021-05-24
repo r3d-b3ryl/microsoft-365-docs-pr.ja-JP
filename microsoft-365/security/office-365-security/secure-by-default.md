@@ -17,12 +17,12 @@ ms.collection:
 description: セキュリティ保護 (EOP) の既定の設定Exchange Online Protection詳細
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 957ca3b563d4f1466dd537c3ae974a4fd61aa6f2
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346318"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624051"
 ---
 # <a name="secure-by-default-in-office-365"></a>既定ではセキュリティで保護Office 365
 
@@ -77,7 +77,7 @@ Microsoft は既定で顧客のセキュリティを維持したいと考えて�
 > [!NOTE]
 > 2021 年 7 月には、既定でセキュリティで保護されたメール フロー Exchange (トランスポート ルールとも呼ばれる) に拡張されます。 メール フロー ルールを使用して、サード パーティのフィッシング シミュレーションやセキュリティ操作メールボックスへのフィルター処理されていない配信を許可する場合、最終的には、これらのルールを排除し、[](configure-advanced-delivery.md)機能が利用可能なときに高度な配信ポリシーの使用に切り替える必要があります。
 
-信頼度の高いフィッシング メッセージがフィルター処理をバイパスできる唯一のオーバーライドは、メール フロー ルールです。 メール フロー ルールを使用してフィルター処理をバイパスするには、「メール フロー ルールを使用してメッセージに [SCL を設定する」を参照してください](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
+信頼度の高いフィッシング メッセージがフィルター処理をバイパスできる唯一のオーバーライドは、メール フロー ルールです。 メール フロー ルールを使用してフィルター処理をバイパスするには、「メール フロー ルールを使用してメッセージに [SCL を設定する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
 
 次のシナリオでは、オーバーライドの使用のみを検討する必要があります。
 

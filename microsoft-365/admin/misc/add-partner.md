@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: サブスクリプション アドバイザー パートナーを、サブスクリプションの購入時、Microsoft 365変更時、またはサブスクリプションからパートナーを削除した時点で、レコードのパートナーとして追加する方法について学習します。
-ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: サブスクリプションからパートナーを購入、変更、またはMicrosoft 365の時点でレコードのパートナーを追加します。
+ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537477"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624527"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>サブスクリプション アドバイザー パートナーを追加、変更、または削除する
 
@@ -42,6 +42,8 @@ ms.locfileid: "52537477"
 サブスクリプション アドバイザーとなっている Microsoft の認定パートナーは、サブスクリプションのセットアップと保守を行うために必要な販売、サポート、技術専門分野の知識を提供します。 サブスクリプション アドバイザー パートナーは、サブスクリプション を購入するときに、または別のMicrosoft 365パートナーとして追加できます。 また、現在パートナーがいない場合は、[Microsoft Pinpoint](https://pinpoint.microsoft.com) の Web サイトで見つけることもできます。
 
 ::: moniker-end
+
+## <a name="before-you-begin"></a>始める前に
 
 ::: moniker range="o365-worldwide"
 
@@ -99,7 +101,7 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 2. [製品 **] タブ** で、編集するサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの [パートナー情報] **で**、パートナー ネットワーク **ID を入力します**。 パートナーの Microsoft パートナー ネットワーク ID を取得するには、パートナーに確認を求める必要があります。
 4. **[追加]** を選択します。
@@ -133,7 +135,7 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 2. [サブスクリプションの詳細] ページの [パートナー情報] **で**、[削除] を **選択します**。
 3. 新しい **パートナーの Microsoft パートナー ネットワーク ID** を入力します。 パートナーに Microsoft パートナー ID についてたずね、パートナー ID を取得します。
 4. **[追加]** を選択します。
@@ -168,7 +170,7 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 2. [製品 **] タブ** で、編集するサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの [パートナー情報] **で、[** 削除] を **選択します**。
 
@@ -218,6 +220,7 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
   
 ::: moniker-end
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[パートナーまたはリセラー Microsoft 365検索する](../manage/find-your-partner-or-reseller.md)
+[パートナーまたはリセラー Microsoft 365探す](../manage/find-your-partner-or-reseller.md)(記事)\
+[ビジネス向けMicrosoft 365のセットアップを計画](../setup/plan-your-setup.md)する (記事)

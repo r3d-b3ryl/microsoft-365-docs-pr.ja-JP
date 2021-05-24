@@ -20,12 +20,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender の セーフ添付ファイル機能について説明Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab3fd89c02186dfbdb6c9a3d754a4902d8b945f8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc5fabf7b0bb4a649aeb7c4e09155037fc09e9f9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246382"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625007"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>セーフMicrosoft Defender の添付ファイル (Office 365
 
@@ -124,7 +124,7 @@ ms.locfileid: "52246382"
 - 削除されたメッセージ。
 - ユーザーのメールボックス検索フォルダーがエラー状態です。
 - Exchange Online Exclaimer が有効になっている組織。 この問題を解決するには [、「KB4014438」を参照してください](https://support.microsoft.com/help/4014438)。
-- [S/MIME)](s-mime-for-message-signing-and-encryption.md) 暗号化されたメッセージ。
+- [S/MIME)](/exchange/security-and-compliance/smime-exo/smime-exo) 暗号化されたメッセージ。
 - セーフ 添付ファイル ポリシーで動的配信アクションを構成しましたが、受信者が動的配信をサポートしない (たとえば、受信者がオンプレミスの Exchange 組織内のメールボックス)。 ただし[、Office 365](set-up-safe-links-policies.md)用 Microsoft Defender の セーフ リンクは、URL を含む Office ファイル添付ファイルをスキャンできます (セーフ リンクのグローバル[設定の構成](configure-global-settings-for-safe-links.md)方法に応じて)。
 
 ## <a name="submitting-files-for-malware-analysis"></a>マルウェア分析用にファイルを送信する

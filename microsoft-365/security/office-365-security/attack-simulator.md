@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、攻撃シミュレーターを使用して、Microsoft 365 E5 または Microsoft Defender for Office 365 プラン 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 637e84281b85e8c859207ae81342a3c6ab3d00be
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205426"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624827"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender の攻撃Office 365
 
@@ -43,7 +43,7 @@ ms.locfileid: "51205426"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- セキュリティ/コンプライアンス センターを開くには、<https://protection.office.com/> へ移動します。 攻撃シミュレーターは、脅威管理 **攻撃シミュレーター** \> **で利用できます**。 直接攻撃シミュレーターに移動し、開きます <https://protection.office.com/attacksimulator> 。
+- セキュリティ/コンプライアンス センターを開くには、<https://protection.office.com/> へ移動します。 攻撃シミュレーターは、脅威管理 **攻撃シミュレーター** \> **で利用できます**。 攻撃シミュレーターに直接移動するには、を開きます <https://protection.office.com/attacksimulator> 。
 
 - 異なるサブスクリプション間での攻撃シミュレーターの可用性の詳細については、「microsoft Defender for Microsoft 365 サービスの説明[」Office 365 を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 

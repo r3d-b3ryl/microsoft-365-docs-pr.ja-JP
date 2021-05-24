@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: a775727882dd71a168f4049d2af6a9feb20f944c
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0590e63aa0feb5b699eca98c0056604fe09b77f5
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572719"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583654"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -106,30 +106,20 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 秘密度ラベルを使用して新しいチームを作成するたびに、SharePoint で次の 2 つの手順を実行します。
 
 - SharePoint 管理センターでサイトのゲスト共有設定を更新して、*特定のユーザー* に対して既定の共有リンクを更新します。
-- サイト自体の共有の設定を更新し、メンバーがサイトを共有できないようにします。
+- サイト自体の共有設定を更新し、メンバーがサイトを共有できないようにします。
 
-### <a name="site-guest-sharing-settings"></a>サイトのゲスト共有設定
+### <a name="site-default-sharing-link-settings"></a>サイトの既定の共有リンク設定
 
-ラベルを作成したときに選択したゲスト共有設定 (チーム メンバーシップのみに影響します) は、以下のように関連付けられている SharePoint サイトのゲスト共有設定と一致します。
+サイトの既定の共有リンクの種類を更新するには
 
-|ラベルの設定|SharePoint サイトの設定|
-|:------------|:----------------------|
-|**Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする** が選択されている|**新規および既存のゲスト** (新規チームの既定値)|
-|**Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする** が選択されていない|**組織内のユーザーのみ**|
-
-サイトの設定を更新するには
 1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
 2. **[サイト]** で、**[アクティブなサイト]** をクリックします。
 3. チームに関連付けられているサイトをクリックします。
 4. **[ポリシー]** タブで、**[外部共有]** の下側にある **[編集]** をクリックします。
-5. 秘密度ラベルを作成したときにゲスト共有が許可されていた場合は、**[新規および既存のゲスト]** が選択されていることを確認します。 秘密度ラベルを作成したときにゲスト共有が許可されていなかった場合は、**[組織内のユーザーのみ]** を選びます。
-6. [既定の共有リンクの種類] で、**[組織レベルの設定と同じ]** チェック ボックスをオフにして、**[特定のユーザー (ユーザーが指定したユーザー人物のみ)]** を選びます。
-7. **[保存]** をクリックします。
+5. [既定の共有リンクの種類] で、**[組織レベルの設定と同じ]** チェック ボックスをオフにして、**[特定のユーザー (ユーザーが指定したユーザー人物のみ)]** を選びます。
+6. **[保存]** をクリックします。
 
-これをチーム作成プロセスの一部としてスクリプト化する場合は、次のパラメーターを指定して [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) を使用します。
-
-- `-SharingCapability Disabled` ゲスト共有を無効にするには (既定では有効です)
-- `-DefaultSharingLinkType Internal` 既定の共有リンクを *特定のユーザー* に変更するには
+チーム作成プロセスの一環としてスクリプトを実行する場合は、`-DefaultSharingLinkType Direct` パラメーターで [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) を使用して、既定の共有リンクを *特定のユーザー* に変更することができます。
 
 #### <a name="private-channels"></a>プライベート チャネル
 

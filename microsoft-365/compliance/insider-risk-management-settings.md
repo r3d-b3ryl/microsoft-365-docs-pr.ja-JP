@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7592b92b74173e77e7937151ba88c23163363fde
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259513"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624695"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>インサイダーリスク管理設定の使用を開始する
 
@@ -60,7 +60,7 @@ Insider リスク ポリシー テンプレートは、検出して調査する�
 ポリシー インジケーターは、次の領域に分割されます。 インサイダー リスク ポリシーの作成時に、インジケーター レベルごとにインジケーター イベントの制限をアクティブ化およびカスタマイズするインジケーターを選択できます。
 
 - **Office :** これには、サイト、SharePoint、電子メール メッセージングMicrosoft Teamsポリシー インジケーターが含まれます。
-- **デバイス インジケーター**: ネットワーク上やデバイスでファイルを共有するなどのアクティビティのポリシー インジケーターが含まれます。 インジケーターには、Microsoft Office、.csv (コンマ区切り) ファイル、.pdf (ポータブル ドキュメント形式) ファイルに関するアクティビティが含まれます。 [デバイスインジケーター **] を** 選択した場合、アクティビティは Windows 10 ビルド 1809 以上のデバイスでのみ処理され、最初にデバイスをコンプライアンス センターにオンボードする必要があります。 インサイダー リスクとの統合のためにデバイスを構成する方法の詳細については、この記事の「デバイス インジケーターとオンボード デバイスを有効にする [」セクションを](insider-risk-management-settings.md#OnboardDevices) 参照してください。
+- **デバイス インジケーター**: ネットワーク上やデバイスでファイルを共有するなどのアクティビティのポリシー インジケーターが含まれます。 インジケーターには、実行可能ファイル (.exe) および動的リンク ライブラリ (.dll) ファイル アクティビティを除く、すべてのファイルの種類に関するアクティビティが含まれます。 [デバイスインジケーター **] を** 選択した場合、アクティビティは Windows 10 ビルド 1809 以上のデバイスでのみ処理され、最初にデバイスをコンプライアンス センターにオンボードする必要があります。 インサイダー リスクとの統合のためにデバイスを構成する方法の詳細については、この記事の「デバイス インジケーターとオンボード デバイスを有効にする [」セクションを](insider-risk-management-settings.md#OnboardDevices) 参照してください。
 - **セキュリティ ポリシー違反インジケーター (プレビュー)**: 未承認または悪意のあるソフトウェアのインストールまたはセキュリティ制御のバイパスに関連する Microsoft Defender for Endpoint のインジケーターが含まれます。 インサイダー リスク管理でアラートを受信するには、アクティブな Defender for Endpoint ライセンスとインサイダー リスク統合が有効になっている必要があります。 Insider リスク管理統合のための Defender for Endpoint の構成の詳細については、「Configure Advanced features [in Microsoft Defender for Endpoint」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 - **物理アクセス インジケーター (プレビュー)**: 機密資産への物理的なアクセスに関するポリシー インジケーターが含まれます。 たとえば、物理的な不良システム ログ内の制限領域へのアクセスの試行は、インサイダー リスク管理ポリシーと共有できます。 インサイダー リスク管理でこれらの種類のアラートを受信するには、インサイダー リスク管理で有効になっている優先度の物理資産と、構成されている物理不良データ コネクタが [必要](import-physical-badging-data.md) です。 物理アクセスの構成の詳細については、この記事の [「Priority physical access」セクション](#priority-physical-assets-preview) を参照してください。
 - **Microsoft Cloud App Securityインジケーター (プレビュー)**: これらには、共有アラートからのポリシー インジケーターが含Cloud App Security。 ネットワークで自動的に有効にされた異常検出Cloud App Securityすぐに結果の検出と照合が開始され、ユーザーとネットワークに接続されているコンピューターとデバイス全体で多数の異常行動を対象とします。 これらのアクティビティをインサイダー リスク管理ポリシーアラートに含めるには、このセクションで 1 つ以上のインジケーターを選択します。 分析と異常の検出Cloud App Security詳細については[、「Get behavioral analytics and anomaly detection」を参照してください](/cloud-app-security/anomaly-detection-policy)。

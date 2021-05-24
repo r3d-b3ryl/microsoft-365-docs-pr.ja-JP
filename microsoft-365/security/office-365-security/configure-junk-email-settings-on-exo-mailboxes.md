@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーのメールボックスで迷惑メール設定を構成するExchange Onlineできます。 これらの設定の多くは、Web 上のユーザー OutlookまたはOutlook使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7e5d99198e539a46c240fadd2a7a8201236026f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5a401321645530d3d66ebcccd6b8aea27ce21d6e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204983"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624803"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Exchange Online メールボックスで迷惑メール設定を構成する
 
@@ -52,13 +52,13 @@ ms.locfileid: "51204983"
 > [!NOTE]
 > ユーザーが自分の送信者リストに追加した送信者からのメッセージセーフ送信者リストは、EOP の一部として接続フィルター処理をスキップします (SCL は -1)。 ユーザーが Outlook の セーフ Senders リストにエントリを追加し込むのを防ぐには、この記事の後半の[「Outlook](#about-junk-email-settings-in-outlook)の迷惑メール設定について」に記載されているグループ ポリシーを使用します。 ポリシー フィルター、コンテンツ フィルター、および Defender Office 365チェックは引き続きメッセージに適用されます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - この記事の手順を実行Exchange Online PowerShell を使用できるのは、PowerShell のみです。 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 - この記事の手順を実行するには、Exchange Onlineにアクセス許可を割り当てる必要があります。 具体的には、メール受信者の役割 (既定では[組織の管理]、[受信者の管理]、および [カスタム メール受信者] 役割グループに割り当てられている)、または [ユーザーオプション] 役割 (既定では [組織の管理] 役割グループと [ヘルプ デスク] 役割グループに割り当てられている) が必要です。     ユーザーをグループ内の役割グループに追加するにはExchange Onlineで役割グループを変更[するを参照Exchange Online。](/Exchange/permissions-exo/role-groups#modify-role-groups) 既定のアクセス許可を持つユーザーは、PowerShell にアクセスできる限り、自分のメールボックスでこれらの同じ[手順Exchange Online注意してください](/powershell/exchange/disable-access-to-exchange-online-powershell)。
 
-- EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
+- EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド環境では、迷惑メール ルールがメッセージを迷惑メール フォルダーに移動できるよう、EOP スパム フィルターの評決を変換するために、オンプレミス Exchange でメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「ハイブリッド環境の迷惑メール フォルダーにスパムを配信する [EOP の構成」を参照してください](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
 - セーフ共有メールボックスの送信者は、Azure ADおよび EOP に設計によって同期されません。
 

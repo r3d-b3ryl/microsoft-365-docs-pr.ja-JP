@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、スパム対策 (EOP) でスパムを防止するのに役立つスパム対策設定とフィルター Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6a4113925956c67e80a5239b8f9823acaf7f75b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 52e891a86e75309dadd445736738a3f25584823e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538317"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624863"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP でのスパム対策保護
 
@@ -60,7 +60,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 - **スパム フィルター (** コンテンツ フィルター) : EOP は、スパム フィルターの評決スパム、高信頼スパム、**バルク** メール、フィッシング メール、高信頼フィッシング メールを使用してメッセージを分類します。 これらの評決に基づいて実行するアクションを構成し、配信ではなく検疫されたメッセージのエンドユーザー通知オプションを構成できます。 詳細については、「スパム対策ポリシーを[構成する」を参照Microsoft 365。](configure-your-spam-filter-policies.md)
 
   > [!NOTE]
-  > 既定では、スパムフィルターは、スパムとしてマークされたメッセージを受信者の迷惑メール フォルダーに送信するように構成されています。 ただし、EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド環境では、メッセージに追加される EOP スパム ヘッダーを認識するために、オンプレミス Exchange 組織で 2 つのメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
+  > 既定では、スパムフィルターは、スパムとしてマークされたメッセージを受信者の迷惑メール フォルダーに送信するように構成されています。 ただし、EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド環境では、メッセージに追加される EOP スパム ヘッダーを認識するために、オンプレミス Exchange 組織で 2 つのメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「ハイブリッド環境の迷惑メール フォルダーにスパムを配信する [EOP の構成」を参照してください](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
 - **送信スパム フィルター**: EOP は、ユーザーが送信メッセージコンテンツまたは送信メッセージの制限を超えてスパムを送信しないかも確認します。 詳細については、「Configure [outbound spam filtering in Microsoft 365 」 を参照してください](configure-the-outbound-spam-policy.md)。
 
@@ -100,7 +100,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
 - **バルク メールからの登録解除** メッセージがユーザーがサインアップしたメッセージ (ニュースレター、製品のお知らせなど) で、評判の良いソースからの購読解除リンクが含まれている場合は、単に購読解除を求めるのを検討してください。
 
-- スタンドアロン **EOP: EOP** スパム フィルターの評決に対してオンプレミス Exchange でメール フロー ルールを作成する : EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、EOP スパム フィルター処理の評決を変換して迷惑メール ルールが迷惑メール フォルダーにメッセージを移動できるよう、オンプレミス Exchange でメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
+- スタンドアロン **EOP: EOP** スパム フィルターの評決に対してオンプレミス Exchange にメール フロー ルールを作成する : EOP がオンプレミスの Exchange メールボックスを保護する EOP 環境では、迷惑メール ルールが迷惑メール フォルダーにメッセージを移動できるよう、EOP スパム フィルター処理の評決を変換するために、オンプレミス Exchange でメール フロー ルール (トランスポート ルールとも呼ばれる) を構成する必要があります。 詳細については、「ハイブリッド環境の迷惑メール フォルダーにスパムを配信する [EOP の構成」を参照してください](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>優れたメールがスパムとして識別されるのを防ぐ
 
@@ -118,7 +118,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
 - **「サービスの説明」の**「受信と送信の制限」の説明 [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)に従って、ユーザーが送受信制限内Exchange Online確認します。
 
-- **スタンドアロン EOP: ディレクトリ** 同期を使用する: スタンドアロン EOP を使用してオンプレミスの Exchange 組織を保護する場合は、ディレクトリ同期を使用してユーザー設定をサービスと同期する必要があります。 こうすることで、ユーザーの信頼できる差出人のリストが EOP に適用されます。 詳しくは、「[ディレクトリ同期を使用してメール ユーザーを管理する](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users)」 を参照してください。
+- **スタンドアロン EOP: ディレクトリ** 同期を使用する: スタンドアロン EOP を使用してオンプレミスの Exchange 組織を保護する場合は、ディレクトリ同期を使用してユーザー設定をサービスと同期する必要があります。 こうすることで、ユーザーの信頼できる差出人のリストが EOP に適用されます。 詳しくは、「[ディレクトリ同期を使用してメール ユーザーを管理する](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect)」 を参照してください。
 
 ## <a name="anti-spam-legislation"></a>スパム対策の法律
 

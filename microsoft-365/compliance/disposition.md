@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 処理確認を利用する場合や、レコードとしてマークされたアイテムが構成した設定に従って自動的に削除される場合、コンテンツの処理を監視および管理します。
-ms.openlocfilehash: 3c5d178b4eab267759506dcd86d66fb2bf4d93ee
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583474"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594075"
 ---
 # <a name="disposition-of-content"></a>コンテンツの処理
 
@@ -30,7 +30,7 @@ ms.locfileid: "52583474"
 Microsoft 365 コンプライアンス センターの **レコード管理** の [**処理**] タブを使用して、処理確認を管理し、保持期間の終了時に自動的に削除された [レコード](records-management.md#records)のメタデータを表示します。
 
 > [!NOTE]
-> プレビューでのロール アウト: **マルチステージの処理確認**
+> プレビューで: **マルチステージの処理確認**
 > 
 > 管理者は保持ラベルに最大 5 つの連続する処理確認ステージを追加し、確認担当者は他のユーザーを処理確認ステージに追加できます。 メールの通知とアラームをカスタマイズすることもできます。 次のセクションでは、このプレビューでの変更点を詳しく説明します。
 >

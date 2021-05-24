@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体に対して、Outlookおよび web Outlookレポート フィッシング アドインを有効にする方法について説明します。
-ms.openlocfilehash: 12543364943321689d0efa2c2942351b3d3ec6f9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44fa55a82462de336982d3af2e3996c14699fd7c
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206200"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625391"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>レポート フィッシング アドインを有効にする
 
@@ -43,7 +43,7 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 グローバル管理者または Exchange Online 管理者で、Exchange が OAuth 認証を使用するように構成されている場合は、組織のレポート フィッシング アドインを[有効にできます](#get-and-enable-the-report-phishing-add-in-for-your-organization)。 [レポートフィッシング] Add-Inは、集中展開 [を通じて利用できます](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - レポート フィッシング アドインは、ほとんどのサブスクリプションとMicrosoft 365製品で動作します。
 
@@ -150,4 +150,4 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 - 管理者申請ポータルを使用します。 詳細については [、「Microsoft へのユーザー申請の表示」を参照してください](admin-submission.md#view-user-submissions-to-microsoft)。
 
-- 報告されたメッセージのコピーを送信するメール フロー ルール (トランスポート ルールとも呼ばれる) を作成します。 手順については、「メール フロー ルールを使用して、ユーザーが Microsoft に報告している [情報を確認する」を参照してください](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。
+- 報告されたメッセージのコピーを送信するメール フロー ルール (トランスポート ルールとも呼ばれる) を作成します。 手順については、「メール フロー ルールを使用して、ユーザーが Microsoft に報告している [情報を確認する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)。

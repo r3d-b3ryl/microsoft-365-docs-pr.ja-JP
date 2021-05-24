@@ -20,12 +20,12 @@ description: 管理者は、組織の脅威保護Microsoft 365、組織で使用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3381ce66433f1f4e32f0251c45601e3cb84865b6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538725"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624623"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -41,7 +41,7 @@ ms.locfileid: "52538725"
 > [!IMPORTANT]
 > **最初の推奨設定は** ポリシーの種類ごとに含まれていますが、多くのオプションを使用できます。また、特定の組織のニーズに合わせて設定を調整することもできます。 ポリシーまたは変更がデータセンター経由で動作するには、約 30 分かかります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>サブスクリプション
 
@@ -277,7 +277,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 - スパムアクションは、スパム **対策ポリシーの [メッセージを迷惑** メール フォルダーに移動 [する] に設定されています](anti-spam-protection.md)。
 
-- ユーザーは既定の迷惑メール設定 [を保持](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)し、迷惑メール保護を無効にしていない。
+- ユーザーは既定の迷惑メール設定 [を保持](configure-junk-email-settings-on-exo-mailboxes.md)し、迷惑メール保護を無効にしていない。
 
 詳細については、「ゼロ時間自動削除 - スパムとマルウェアに対 [する保護」を参照してください](zero-hour-auto-purge.md)。
 

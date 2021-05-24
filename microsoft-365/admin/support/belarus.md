@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c536987035743f9a640d427375efaedfce21fbb8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 455959c8b11a3cfaf293052d2c23251771ac7456
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296553"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623579"
 ---
 # <a name="contact-support-for-belarus"></a>ベラルーシのサポートに問い合わせ
 
@@ -26,9 +26,9 @@ ms.locfileid: "52296553"
 ## <a name="phone-number"></a>電話番号
 8 820 0071 0003
 
-オプション 9 を選択する
+ビジネス向け 2 キーを押す
 
-コード 7707 を入力する
+1 キーを押してMicrosoft 365
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:

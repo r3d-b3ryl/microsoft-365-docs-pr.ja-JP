@@ -27,21 +27,19 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 保護ポリシーによって管理されるデバイスから会社のデータを削除する方法と、デバイスを工場出荷時のWindows 10にリセットする方法について説明します。
-ms.openlocfilehash: fdd92e797774a47455d6b4163dfe399bf74d41f3
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0b757172ed337e9b2b68b4fcbdf5b102a8c76710
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580156"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624287"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>保護されたデバイスを管理するには、Microsoft 365 Business Premium
 
 ユーザーが自分の仕事用アカウントでデバイスにサインインするか、デバイス上の Office アプリにサインインしてデバイスを組織に接続した後、セットアップしたポリシーでデバイスを保護できます。 接続されているデバイスは、[デバイス] ページ **に表示** されます。 デバイスが紛失または盗難に遭った場合は、このページからデバイスを管理して、会社のデータを削除できます。 また、デバイスのWindows 10工場出荷時の設定にリセットして、カスタム設定を消去することもできます。 
 
-デバイスの管理に使用できるタスクの詳細については、次の記事を参照してください。 
+## <a name="related-content"></a>関連コンテンツ
   
-[デバイスから会社のデータを削除する](remove-company-data.md)
-  
-[Windows 10 デバイスを出荷時の設定にリセットする](reset-devices-to-factory-settings.md)
-
-[管理対象デバイスの追加](./app-protection-settings-for-android-and-ios.md)
+[デバイスから会社のデータを削除](remove-company-data.md) する (記事)\
+[デバイスWindows 10工場出荷時の設定にリセット](reset-devices-to-factory-settings.md)する (記事)\
+[管理対象デバイスの追加](./app-protection-settings-for-android-and-ios.md) (記事)

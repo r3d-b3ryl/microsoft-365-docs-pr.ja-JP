@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: ''
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: オンプレミスのスキャナーで Microsoft 365 データ損失防止を使用して、保存されているデータをスキャンし、オンプレミスのファイル共有とオンプレミスの SharePoint フォルダーとドキュメント ライブラリに保護アクションを実装する方法について説明します。
-ms.openlocfilehash: e81b48560a8011e955e6508daf27e96f9fdb70fa
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8247315721041c3d5be5e4548bfe080b69375ed4
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538089"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623859"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) を使用する
 

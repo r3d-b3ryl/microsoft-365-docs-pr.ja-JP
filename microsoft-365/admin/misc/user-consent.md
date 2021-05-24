@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: アプリに対するユーザーの同意、およびアプリを有効にし、サード パーティ製アプリがユーザーの情報にアクセスMicrosoft 365します。
-ms.openlocfilehash: 1f6f08161d6dd85964f07ec4d48f9f2cc23a1ead
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8f65b50e50b0e0b4d978388463bbd380ca60d4e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914560"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624503"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>アプリに対するユーザーの同意を管理Microsoft 365
 
@@ -44,9 +44,8 @@ ms.locfileid: "50914560"
 
 2. [アプリ **に対するユーザーの同意** ] ページで、ユーザーの同意を有効または無効にするオプションを選択します。
 
-## <a name="more-info"></a>詳細情報
+## <a name="related-content"></a>関連コンテンツ 
 <a name="__toc379982114"> </a>
 
-Azure active directory で同意設定を構成する方法については、「管理者の同意ワークフローを構成 [する」を参照してください](/azure/active-directory/manage-apps/configure-admin-consent-workflow)。
-
-アプリに対するユーザーの同意を管理する方法については、「アプリケーションに対する同意の管理」と「同意要求 [の評価」を参照してください](/azure/active-directory/manage-apps/manage-consent-requests)。
+[管理者の同意ワークフローを構成](/azure/active-directory/manage-apps/configure-admin-consent-workflow) する (記事)\
+[アプリケーションへの同意の管理と同意要求の評価](/azure/active-directory/manage-apps/manage-consent-requests) (記事)

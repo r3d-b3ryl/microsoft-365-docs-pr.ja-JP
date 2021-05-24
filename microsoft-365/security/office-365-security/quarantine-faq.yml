@@ -16,16 +16,16 @@ metadata:
   ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-  description: 管理者は、Exchange Online Protection (EOP) で検疫済みメッセージに関するよく寄せられる質問と回答を表示できます。
+  description: 管理者は、検疫済みメッセージに関するよく寄せられる質問と回答を、Exchange Online Protection (EOP) で表示できます。
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: f146cd9eba6e333376bcfeb6e8c74b3378387b5b
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: 42e848309589fa8786346b5921d1cade0ed074b9
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334057"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52625415"
 title: 検疫済みメッセージに関するよく寄せられる質問
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -40,7 +40,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  このトピックでは、Exchange Online のメールボックスを持つ Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織の検疫済み電子メール メッセージに関するよく寄せられる質問と回答を提供します。
+  このトピックでは、Exchange Online のメールボックスを持つ Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織の検疫済み電子メール メッセージに関するよく寄せられる質問と回答を提供します。
 
 
   スパム対策保護に関する質問と回答については、「スパム対策保護に関する [よく寄せられる質問」を参照してください](anti-spam-protection-faq.yml)。
@@ -64,7 +64,7 @@ sections:
   - question: >
       検疫へのアクセス権をユーザーに与える方法
     answer: >
-      検疫で自分のメッセージにアクセスするには、有効なアカウントが必要です。 スタンドアロン EOP では、ユーザーが EOP でメール ユーザーとして表される必要があります (手動で作成またはディレクトリ同期によって作成されます)。 スタンドアロン EOP 環境でのユーザーの管理の詳細については、「EOP でメール ユーザーを管理する」 [を参照してください](manage-mail-users-in-eop.md)。
+      検疫で自分のメッセージにアクセスするには、有効なアカウントが必要です。 スタンドアロン EOP では、ユーザーが EOP でメール ユーザーとして表される必要があります (手動で作成またはディレクトリ同期によって作成されます)。 スタンドアロン EOP 環境でのユーザーの管理の詳細については、「スタンドアロン EOP でメール ユーザーを管理する [」を参照してください](/exchange/standalone-eop/manage-mail-users-in-eop)。
   - question: >
       検疫でエンド ユーザーがアクセスできるメッセージ
     answer: >
@@ -85,17 +85,17 @@ sections:
       セキュリティ コンプライアンス センター&、一度に最大 100 件のメッセージを選択して解放できます。
 
 
-      管理者は、Exchange Online PowerShell またはスタンドアロン EOP PowerShell の [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) コマンドレットと [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) コマンドレットを使用して、検疫済みメッセージを一括で検索および解放し、誤検知を一括して報告できます。
+      管理者は、Exchange Online PowerShell またはスタンドアロン EOP PowerShell の[Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)コマンドレットと[Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)コマンドレットを使用して、検疫済みメッセージを一括で検索および解放し、誤検知を一括して報告できます。
   - question: >
       隔離されたメッセージを検索する場合にワイルドカードはサポートされますか。 特定のドメインの隔離されたメッセージを検索できますか。
     answer: >-
-      ワイルドカードは、セキュリティ コンプライアンス センター&サポートされていません。 たとえば、送信者を検索する場合は、完全な電子メール アドレスを指定する必要があります。 ただし、Exchange Online PowerShell またはスタンドアロン EOP PowerShell ではワイルドカードを使用できます。
+      ワイルドカードは、セキュリティ コンプライアンス センター&サポートされていません。 たとえば、送信者を検索する場合は、完全な電子メール アドレスを指定する必要があります。 ただし、PowerShell またはスタンドアロン EOP PowerShell ではExchange Onlineワイルドカードを使用できます。
 
 
       たとえば、次の PowerShell コードを NotePad にコピーし、ファイルを簡単に見つけることができる場所 (たとえば、.ps1) に保存C:\Data\QuarantineRelease.ps1。
 
 
-      次に [、Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) または [Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)に接続した後、次のコマンドを実行してスクリプトを実行します。
+      次に[、PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)または[PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)Exchange Onlineに接続Exchange Online Protection、次のコマンドを実行してスクリプトを実行します。
 
 
       ```powershell

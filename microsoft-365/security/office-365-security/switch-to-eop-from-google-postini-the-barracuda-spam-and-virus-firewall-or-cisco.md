@@ -15,12 +15,12 @@ ms.custom:
 description: この記事では、オンプレミスの電子メール衛生アプライアンスまたはクラウドベースの保護サービスから Exchange Online Protection (EOP) に切り替える方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1a5df0b11c258ebe633868bb5abca5b20552a33
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dfbbc44ebfed6cafb97e36b18a4fc34c91840d9b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206455"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624015"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Google Postini、Barracuda Spam、Virus Firewall、Cisco IronPort から EOP に切り替える
 
@@ -45,7 +45,7 @@ EOP に切り替える前に、Exchange Online、社内、またはハイブリ�
 
 ## <a name="switch-to-eop-standalone"></a>EOP スタンドアロンに切り替える
 
-現在、メールボックスを社内でホストし、社内保護アプライアンスまたはクラウド メッセージング保護サービスを使用している場合は、EOP に切り替えて、その保護機能と可用性を活かすことができます。スタンドアロン シナリオ、つまり、社内でメールボックスをホストし EOP を使用して電子メール保護を提供するように EOP を設定するには、「[EOP サービスを設定する](set-up-your-eop-service.md)」で概説されている手順に従います。このトピックでは、サインアップ、ドメインの追加、コネクタとのメール フローの設定などの、EOP 保護の設定に関する手順を概説しています。
+現在、メールボックスを社内でホストし、社内保護アプライアンスまたはクラウド メッセージング保護サービスを使用している場合は、EOP に切り替えて、その保護機能と可用性を活かすことができます。スタンドアロン シナリオ、つまり、社内でメールボックスをホストし EOP を使用して電子メール保護を提供するように EOP を設定するには、「[EOP サービスを設定する](/exchange/standalone-eop/set-up-your-eop-service)」で概説されている手順に従います。このトピックでは、サインアップ、ドメインの追加、コネクタとのメール フローの設定などの、EOP 保護の設定に関する手順を概説しています。
 
 ## <a name="switch-to-exchange-online"></a>Exchange Online に切り替える
 
@@ -63,7 +63,7 @@ EOP に切り替える前に、Exchange Online、社内、またはハイブリ�
 
 EOP への切り替えを決定したら、特に次の分野について考慮する必要があります。
 
-- **カスタム フィルター ルール**: 特定のスパムをキャッチするカスタム フィルタールールまたはビジネス ポリシー ルールがある場合は、ルールを移行する前に、一期間既定の設定で EOP を試することをお勧めします。 EOP は既定の設定でエンタープライズ レベルのスパム対策を提供しているため、一部のルールを EOP に移行する必要がない場合があります。 当然、特定のカスタム ビジネス ポリシーを適用するルールがある場合には、それらを作成できます。 [EOP でメール フロー ルール](mail-flow-rules-transport-rules-0.md)を作成Exchange Online Protectionメール フロー ルール (トランスポート ルール) は、メール フロー ルールを作成するための詳細な手順を示します。
+- **カスタム フィルター ルール**: 特定のスパムをキャッチするカスタム フィルタールールまたはビジネス ポリシー ルールがある場合は、ルールを移行する前に、一期間既定の設定で EOP を試することをお勧めします。 EOP は既定の設定でエンタープライズ レベルのスパム対策を提供しているため、一部のルールを EOP に移行する必要がない場合があります。 当然、特定のカスタム ビジネス ポリシーを適用するルールがある場合には、それらを作成できます。 詳細については、「[Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)」を参照してください。
 
 - **IP 許可リストと IP** ブロック リスト : ユーザーごとの許可リストとブロック リストがある場合は、セットアップ プロセスの一環としてリストを EOP にコピーする時間を割り当てします。 IP 許可一覧と IP ブロック 一覧の詳細については、「接続フィルター ポリシーの構成 [」を参照してください](configure-the-connection-filter-policy.md)。
 

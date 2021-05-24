@@ -13,12 +13,12 @@ ms.collection:
 description: レポート メッセージ機能を使用して、誤検知と誤Outlookを報告する方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e848595035501f5da7b6099efd2700ebac6f17e3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6f8c4fc327bfd467cdd1d0043c454e222e84125c
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291165"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625115"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Outlook の誤検出と検出漏れを報告する
 
@@ -34,7 +34,7 @@ ms.locfileid: "52291165"
 
 ハイブリッドモダン認証を使用して Exchange Online Microsoft 365 またはオンプレミスのメールボックスにメールボックスを持つ Microsoft 365 組織では、誤検知 (ブロックまたは迷惑メール フォルダーに送信された良いメール) と誤検知 (受信トレイに配信された不要な電子メールまたはフィッシング) を Exchange Online Protection (EOP) に送信できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - 最適なユーザー申請エクスペリエンスを得る場合は、レポート メッセージ アドインまたはレポート フィッシング アドインを使用します。
 
@@ -55,7 +55,7 @@ ms.locfileid: "52291165"
 迷惑メール以外の受信トレイまたは他のメール フォルダー内のメッセージの場合は、次の方法を使用してスパムメッセージとフィッシング メッセージを報告します。
 
 1. 選択した **メッセージの右上隅** にある [その他の操作] 楕円をクリックし、ドロップダウン メニューから [メッセージの報告] をクリックし、[迷惑メール] または [フィッシング]**を選択します**。
-  
+
    > [!div class="mx-imgBorder"]
    > ![レポート メッセージ - その他のアクション](../../media/report-message-more-actions.png)
 
@@ -67,10 +67,10 @@ ms.locfileid: "52291165"
    - 迷惑メールとして報告された場合は、迷惑メール フォルダーに移動しました。
 
    - フィッシングとして報告された場合に削除されます。
-   
+
 ### <a name="report-messages-that-are-not-junk"></a>迷惑メールではないメッセージを報告する
 
-1. 選択した **メッセージの右上隅** にある [その他のアクションの省略記号] をクリックし、ドロップダウン メニューから [メッセージの報告] をクリックし、[迷惑メールではない] を **クリックします**。  
+1. 選択した **メッセージの右上隅** にある [その他のアクションの省略記号] をクリックし、ドロップダウン メニューから [メッセージの報告] をクリックし、[迷惑メールではない] を **クリックします**。
 
    > [!div class="mx-imgBorder"]
    > ![レポート メッセージ - その他のアクション](../../media/report-message-more-actions.png)
@@ -86,4 +86,4 @@ ms.locfileid: "52291165"
 
 - 管理者申請ポータルを使用します。 詳細については [、「Microsoft へのユーザー申請の表示」を参照してください](admin-submission.md#view-user-submissions-to-microsoft)。
 
-- 報告されたメッセージのコピーを送信するメール フロー ルール (トランスポート ルールとも呼ばれる) を作成します。 手順については、「メール フロー ルールを使用して、ユーザーが Microsoft に報告している [情報を確認する」を参照してください](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。
+- 報告されたメッセージのコピーを送信するメール フロー ルール (トランスポート ルールとも呼ばれる) を作成します。 手順については、「メール フロー ルールを使用して、ユーザーが Microsoft に報告している [情報を確認する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)。

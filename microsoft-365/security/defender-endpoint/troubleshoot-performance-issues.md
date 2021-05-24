@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 1a969b6430914eb2dd667a906dc071d3cd49be8b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995083"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625331"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング
 
@@ -58,7 +58,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
     
 `Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%`
 
-| フィールド名 | 説明 |
+| フィールド名 | Description |
 |---|---|
 |ProcessImageName | プロセス イメージ名 |
 | TotalTime | このプロセスによってアクセスされたファイルのスキャンに費やされた累積時間 (ミリ秒単位) |
@@ -178,13 +178,13 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
     ![UAC](images/wpt-yes.png)
 
-4. 次に [、Microsoft Defender for Endpoint 分析プロファイルをダウンロード](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) し、次のような `WD.wprp` フォルダーに保存します `C:\temp` 。 
+4. 次に [、Microsoft Defender for Endpoint 分析プロファイルをダウンロード](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) し、次のような `MDAV.wprp` フォルダーに保存します `C:\temp` 。 
      
 5. [WPR] ダイアログ ボックスで、[その他のオプション] **を選択します**。
 
     ![その他のオプションを選択する](images/wpr-03.png)
 
-6. [ **プロファイルの追加...] を選択し** 、ファイルのパスを参照 `WD.wprp` します。
+6. [ **プロファイルの追加...] を選択し** 、ファイルのパスを参照 `MDAV.wprp` します。
 
 7. その後、その下に Microsoft Defender  *for Endpoint* Analysis という名前のカスタム測定値の下に新しいプロファイル セットが表示されます。
 
@@ -247,7 +247,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 
 コマンド ライン ツール *は*、wpr.exeから始まるオペレーティング システムの一部Windows 8。 コマンド ライン ツールを使用して WPR トレースを収集するには、次wpr.exe。
 
-1. Microsoft **[Defender for Endpoint analysis profile for performance](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** traces for a download a file named in a local directory ( `WD.wprp` `C:\traces` .
+1. Microsoft **[Defender for Endpoint analysis profile for performance](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** traces for a download a file named in a local directory ( `MDAV.wprp` `C:\traces` .
 
 3. [スタート] メニュー **アイコンを右クリック** し、[管理者] Windows PowerShellまたはコマンド プロンプト **(Admin)** を選択して、[管理者] コマンド プロンプト ウィンドウを開きます。 
 
@@ -256,7 +256,7 @@ WPR ユーザー インターフェイスを使用するには、「WPR UI を�
 5. 管理者特権のプロンプトで、次のコマンドを実行して Microsoft Defender for Endpoint のパフォーマンス トレースを開始します。
 
     ```console
-    wpr.exe -start C:\traces\WD.wprp!WD.Verbose -filemode
+    wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
     ```
     
     >[!WARNING]

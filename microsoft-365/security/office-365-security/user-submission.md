@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a23f27478d01092705a47d49884f200478348182
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583714"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624611"
 ---
 # <a name="user-submissions-policy"></a>ユーザー申請ポリシー
 
@@ -39,22 +39,18 @@ ms.locfileid: "52583714"
 
 - [レポートフィッシング アドイン](enable-the-report-phish-add-in.md)
 
-- [Web 上の Outlookに](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)組み込みのレポート (以前は Outlook Web App)
+- [サードパーティのレポート ツール](#third-party-reporting-tools)
 
-- [iOS と Android Outlookの組み込みレポート](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
+Microsoft に直接ではなく、ユーザーが報告したメッセージをカスタム メールボックスに配信すると、管理者は管理者申請を使用してメッセージを選択的および手動で Microsoft に [報告できます](admin-submission.md)。
 
   > [!NOTE]
   > web 上の[](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)Outlook でレポートが無効になっている場合、ここでユーザーの申請を有効にすると、その設定が上書きされ、ユーザーは web 上の Outlookでメッセージを報告できます。
-
-指定したメールボックスにメッセージを転送するサード パーティ製のメッセージ レポート ツールを構成することもできます。
-
-Microsoft に直接ではなく、ユーザーが報告したメッセージをカスタム メールボックスに配信すると、管理者は管理者申請を使用してメッセージを選択的および手動で Microsoft に [報告できます](admin-submission.md)。
 
 ## <a name="custom-mailbox-prerequisites"></a>カスタム メールボックスの前提条件
 
 ユーザーが報告したメッセージがカスタム メールボックスに移動するために必要な前提条件を構成するには、次の記事を使用します。
 
-- スパム信頼度を設定する Exchange メール フロー ルールを作成して、カスタム メールボックスのスパム フィルターをスキップします。 [「EAC を使用してメッセージの SCL を設定し、SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)を [スパム フィルターのバイパス] に設定するメール フロー ルールを **作成する」を参照してください**。
+- スパム信頼度を設定する Exchange メール フロー ルールを作成して、カスタム メールボックスのスパム フィルターをスキップします。 [「EAC を使用してメッセージの SCL を設定し、SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)を [スパム フィルターのバイパス] に設定するメール フロー ルールを **作成する」を参照してください**。
 
 - カスタム メールボックス内のマルウェアの添付ファイルのスキャンを無効にします。 [Defender [for セーフ](set-up-safe-attachments-policies.md)の添付ファイル ポリシーの設定Office 365を使用して、セーフ 添付ファイルポリシーを作成し、[添付ファイルの不明なマルウェアの応答] の [セーフ]**を設定します**。
 
@@ -141,9 +137,17 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
 
        完了したら、[確認] を **クリックします**。
 
+## <a name="third-party-reporting-tools"></a>サードパーティのレポート ツール
+
+サード パーティ製のメッセージ レポート ツールを構成して、報告されたメッセージをカスタム メールボックスに送信できます。 唯一の要件は、元のメッセージがカスタム メールボックスに送信されるメッセージの添付ファイルとして含まれる場合です (元のメッセージをカスタム メールボックスに転送するだけではない)。
+
+メッセージの書式設定の要件については、次のセクションで説明します。
+
 ## <a name="message-submission-format"></a>メッセージ送信形式
 
-カスタム メールボックスに送信されるメッセージは、特定の送信メール形式に従う必要があります。 申請の件名 (封筒のタイトル) は、次の形式である必要があります。
+元の添付メッセージを正しく識別するには、カスタム メールボックスに送信されるメッセージには、特定の書式が必要です。 メッセージでこの形式を使用しない場合、添付された元のメッセージは常にフィッシング申請として識別されます。
+
+元の添付メッセージを正しく識別するために、カスタム メールボックスに送信されるメッセージは、Subject (Envelope Title) に次の構文を使用する必要があります。
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
@@ -153,7 +157,7 @@ SafetyAPIAction は次のいずれかの整数値です。
 - 2: 迷惑メールではない
 - 3: フィッシング
 
-次の例では、次の手順を実行します。
+この例では、次の値を使用します。
 
 - メッセージがフィッシングとして報告されています。
 - ネットワーク メッセージ ID は 49871234-6dc6-43e8-abcd-08d797f20abe です。
@@ -163,4 +167,4 @@ SafetyAPIAction は次のいずれかの整数値です。
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
-この形式に従ってないメッセージは、申請ポータルに正しく表示されません。
+この形式に従らないメッセージは、申請ポータルに正しく表示されません。

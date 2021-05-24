@@ -30,14 +30,16 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: ドメインとユーザーの追加Microsoft 365 Business Premiumセキュリティ ポリシーの設定など、ユーザーのセットアップ手順について説明します。
-ms.openlocfilehash: 37607b483686fc12ac6253ae9f693ec86c073c4e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245046"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624391"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>セットアップ ウィザードMicrosoft 365 Business Premiumの設定
+
+## <a name="watch-overview-of-microsoft-365-setup"></a>ウォッチ: ユーザー設定Microsoft 365概要
 
 このビデオでは、セットアップの概要をMicrosoft 365 Business Premiumしてください。<br><br>
 
@@ -131,6 +133,6 @@ ms.locfileid: "52245046"
 
 また、個別にOfficeインストールできます。 手順[については、「pc Office Mac にインストールする」](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="related-content"></a>関連コンテンツ
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](../business-video/index.yml)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](../business-video/index.yml) (リンク ページ)

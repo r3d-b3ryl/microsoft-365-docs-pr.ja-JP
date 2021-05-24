@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: 'カスタム タイルをアプリ 起動ツールに追加して、メール、ドキュメント、アプリ、SharePoint サイト、外部サイト、その他のリソースへのクイック リンクを作成します。 '
-ms.openlocfilehash: 598cfeb75fc811c87519c4479fa8fcab450466c3
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: カスタム タイルをアプリ 起動ツールに追加して、メール、ドキュメント、アプリ、SharePointサイト、外部サイト、その他のリソースへのクイック リンクを作成します。
+ms.openlocfilehash: 47f871d66f180225e877a521ef159fc745960507
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327212"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623775"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 
-Microsoft 365 では、アプリ 起動ツールを使用して、メール、予定表、ドキュメント、アプリをすばやく簡単に取得できます (詳細[を参照)。](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) これらは、Microsoft 365 で取得するアプリと[、SharePoint ストア](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43)または Azure サーバーから追加するカスタム アプリ[AD。](/previous-versions/office/office-365-api/)
+このMicrosoft 365、アプリ 起動ツールを使用してメール、予定表、ドキュメント、アプリにすばやく簡単にアクセスできます (詳細[を参照)。](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) これらのアプリは、Microsoft 365 [SharePoint](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43)ストアまたは Azure AD から追加するカスタム アプリと[AD。](/previous-versions/office/office-365-api/)
   
 SharePoint サイト、外部サイト、レガシー アプリなどをポイントするカスタム タイルをアプリ起動ツールに追加できます。カスタム タイルは、アプリ起動ツールの [ **すべて**] のアプリの下に表示されますが、[ **ホーム**] アプリにピン留めしたり、同じ操作を行うようにユーザーに指示したりできます。この操作により、関連サイト、アプリ、仕事に必要なリソースへのアクセスが容易になります。以下の例では、"Contoso Portal" と呼ばれるカスタム タイルを使って、組織の SharePoint イントラネット サイトにアクセスします。 
   
@@ -40,7 +40,7 @@ SharePoint サイト、外部サイト、レガシー アプリなどをポイ�
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 
-1. グローバル管理者として管理センターにサインインし、[設定] [組織の設定] に移動し、[組織プロファイル]  >  **タブを選択** します。
+1. グローバル管理者として管理センターにサインインし、[組織] 設定に移動設定、[組織プロファイル] タブ  >  **を選択** します。
     
 2. [組織プロファイル **] タブで** 、[カスタム アプリ起動 **ツールのタイル] を選択します**。
   
@@ -65,11 +65,11 @@ SharePoint サイト、外部サイト、レガシー アプリなどをポイ�
     これでカスタム タイルは、管理者とユーザー用にアプリ起動ツールの [ **すべて**] のタブに表示されるようになります。 
 
     > [!NOTE]
-    > 前の手順で作成したカスタム タイルが表示されない場合は、Exchange Online メールボックスが自分に割り当てられていること、およびメールボックスに最低一度はサインインしていることを確認します。 これらの手順は、Microsoft 365 のカスタム タイルに必要です。 
+    > 前の手順で作成したカスタム タイルが表示されない場合は、Exchange Online メールボックスが自分に割り当てられていること、およびメールボックスに最低一度はサインインしていることを確認します。 これらの手順は、ユーザー設定のタイルに必要Microsoft 365。 
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. 管理センターで、[設定] [組織 **の設定**] [組織  >    >  **プロファイル] タブに移動** します。
+1. 管理センターで、[組織プロファイル]タブ  >  **設定[組織**  >  **設定] タブに移動** します。
     
 2. [組織プロファイル **] ページの** [組織の   **カスタム** タイルの追加] の横にある [編集] を **選択します**。
 
@@ -79,6 +79,12 @@ SharePoint サイト、外部サイト、レガシー アプリなどをポイ�
     
 カスタム タイルを削除するには、[カスタム タイル]**ウィンドウから** タイルを選択し、[削除] タイル **を選択**  >  **します**。 
   
-## <a name="whats-next"></a>次の手順
+## <a name="next-steps"></a>次の手順
 
-アプリ起動ツールにタイルを追加する以外に、ナビゲーション バーにアプリ 起動ツールタイルを追加できます (詳細[については、以下を参照してください](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985))。 組織のブランドに合わせて Microsoft 365 の外観をカスタマイズするには [、「Microsoft 365](../setup/customize-your-organization-theme.md)テーマのカスタマイズ」を参照してください。
+アプリ起動ツールにタイルを追加する以外に、ナビゲーション バーにアプリ 起動ツールタイルを追加できます (詳細[については、以下を参照してください](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985))。 組織のブランドに合わせてMicrosoft 365の外観をカスタマイズするには、「テーマをカスタマイズする」[をMicrosoft 365してください](../setup/customize-your-organization-theme.md)。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[ユーザーのアプリ 起動ツールにアプリをピン留め](pin-apps-to-app-launcher.md) する (記事)\
+[ビジネス ユーザー Microsoft 365クライアント (](../setup/upgrade-users-to-latest-office-client.md)記事)にOfficeアップグレードする (記事)\
+[管理センターでアドインを管理する](../manage/manage-addins-in-the-admin-center.md) (記事)

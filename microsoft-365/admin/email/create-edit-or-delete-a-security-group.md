@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: セキュリティ グループの作成、編集、削除について説明します。
-ms.openlocfilehash: 8f76b5fa803ea43e53e89cf6479eb7572a2857c2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7887a6371287ebef3a91cc1a37f2ed696df1948d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537597"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624003"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでセキュリティ グループを作成、編集、削除する
 
@@ -99,3 +99,9 @@ ms.locfileid: "52537597"
 ## <a name="can-i-send-email-to-a-security-group"></a>セキュリティ グループにメールを送信できますか?
 
 はい。 ただし、メールと共同作業にグループを使用する場合は、代わりにグループを作成[Microsoft 365](../create-groups/create-groups.md)勧めします。 
+
+## <a name="related-content"></a>関連コンテンツ
+
+[管理センターでグループをMicrosoft 365する](../create-groups/create-groups.md)(記事)\
+[ユーザー Microsoft 365グループの説明](../create-groups/explain-groups-knowledge-worker.md)(記事)\
+[管理センターでグループをMicrosoft 365する](../create-groups/manage-groups.md)(記事)

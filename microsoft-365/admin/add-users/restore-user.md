@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: 削除されたユーザー アカウントと関連付けられているすべてのデータを復元する方法について学習します。
-ms.openlocfilehash: b7d98c1f49f8252ea9fdda2d863b5b77ac5bea9d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: ユーザー アカウントを削除した後 30 日以内に、アカウントとすべてのデータを復元し、ユーザーは同じアカウントでサインインできます。
+ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291069"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623823"
 ---
 # <a name="restore-a-user"></a>ユーザーを復元する
    
@@ -91,6 +91,8 @@ ms.locfileid: "52291069"
     
 4. 結果を確認し、[ **閉じる**] を選びます。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーの削除](delete-a-user.md)
+[ユーザーを削除](delete-a-user.md) する (記事)\
+[管理者ロールの割り当](assign-admin-roles.md) て (ビデオ)\
+[ユーザーにライセンスを割り当てる](../manage/assign-licenses-to-users.md) (記事)

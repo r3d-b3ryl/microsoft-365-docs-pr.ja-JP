@@ -19,12 +19,12 @@ ms.collection:
 description: セキュリティ設定に関する Exchange Online Protection (EOP) と Defender のベスト Office 365は何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳密にしたい場合は、何を使用する必要がありますか? また、Defender をユーザーに使用する場合、どのような追加Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a2f65db0934c585210827299d46737040df8efb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 04668932747462d2636b466d87c2655d97569657
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537897"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624084"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP と Microsoft Defender のセキュリティに関するOffice 365設定
 
@@ -155,7 +155,7 @@ ms.locfileid: "52537897"
 |セキュリティ機能名|既定値|標準|Strict|コメント|
 |---|:---:|:---:|:---:|---|
 |**スプーフィング対策の保護を有効にする** <p> _EnableSpoofIntelligence_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
-|**認証されていない送信者を有効にする** <p> _EnableUnauthenticatedSender_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|未確認のスプーフィングされた送信者の場合は、Outlookに疑問符 (?) を追加します。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md)。|
+|**認証されていない送信者を有効にする** <p> _EnableUnauthenticatedSender_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|未確認のスプーフィングされた送信者の場合は、Outlookに疑問符 (?) を追加します。 詳細については、「[フィッシング詐欺対策ポリシーでのなりすまし設定](set-up-anti-phishing-policies.md)」を参照してください。|
 |**ドメインのスプーフィングが許可されていないユーザーからメールが送信された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、スプーフィング インテリジェンスの分析情報に示すように自動的に[](learn-about-spoof-intelligence.md)ブロックされたスプーフィングされた送信者、またはテナント許可/ブロック一覧で手動でブロックされた送信者に[適用されます](tenant-allow-block-list.md)。|
 |
 
@@ -213,7 +213,7 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 |セキュリティ機能名|既定値|標準|Strict|コメント|
 |---|---|---|---|---|
 |**スプーフィング対策の保護を有効にする** <p> _EnableSpoofIntelligence_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
-|**認証されていない送信者を有効にする** <p> _EnableUnauthenticatedSender_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|未確認のスプーフィングされた送信者の場合は、Outlookに疑問符 (?) を追加します。 詳細については、「フィッシング対策ポリシー [のスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md)。|
+|**認証されていない送信者を有効にする** <p> _EnableUnauthenticatedSender_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|未確認のスプーフィングされた送信者の場合は、Outlookに疑問符 (?) を追加します。 詳細については、「[フィッシング詐欺対策ポリシーでのなりすまし設定](set-up-anti-phishing-policies.md)」を参照してください。|
 |**ドメインのスプーフィングが許可されていないユーザーからメールが送信された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、スプーフィング インテリジェンスの分析情報に示すように自動的に[](learn-about-spoof-intelligence.md)ブロックされたスプーフィングされた送信者、またはテナント許可/ブロック一覧で手動でブロックされた送信者に[適用されます](tenant-allow-block-list.md)。|
 |
 
@@ -322,6 +322,6 @@ PowerShell では、これらの設定に [New-SafeAttachmentPolicy](/powershell
 
 - 管理者とユーザーは、誤検知 (良い電子メールが不良とマークされている) と誤検知 (悪いメールが許可されている) を分析のために Microsoft に提出できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-- これらのリンクを使用して[、EOP](set-up-your-eop-service.md)サービスをセットアップし、Microsoft  Defender for  [Office 365。](defender-for-office-365.md) 「脅威に対する保護」の「脅威に対[する保護」](protect-against-threats.md)の役に立つ指示を忘Office 365してください。
+- これらのリンクを使用して[、EOP](/exchange/standalone-eop/set-up-your-eop-service)サービスをセットアップし、Microsoft  Defender for  [Office 365。](defender-for-office-365.md) 「脅威に対する保護」の「脅威に対[する保護」](protect-against-threats.md)の役に立つ指示を忘Office 365してください。
 
 - **Windows** のセキュリティ基準については、GPO/オンプレミス オプション [](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)のセキュリティ 基準を取得できる場所と [、Intune](/intune/protect/security-baselines)ベースのセキュリティ用に Intune で Windows 10 デバイスを構成するためのセキュリティ 基準を使用します。 最後に、Microsoft Defender for Endpoint と Microsoft Intune セキュリティ ベースラインの比較については[、「Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)と Intune のセキュリティ ベースラインの比較Windows参照してください。

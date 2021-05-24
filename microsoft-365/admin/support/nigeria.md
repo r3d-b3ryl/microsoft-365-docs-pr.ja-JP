@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eef1b091b2b705a5ae83cba8dc7d5c22bd021856
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: bc500ff4418787648ee213d6f0f28bdda194e2ca
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297934"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623847"
 ---
 # <a name="contact-support-for-nigeria"></a>ナイジェリアのサポートに問い合わせ
 
@@ -26,9 +26,9 @@ ms.locfileid: "52297934"
 ## <a name="phone-number"></a>電話番号
 01 912 5070
 
-オプション 9 を選択する
+ビジネス向け 2 キーを押す
 
-コード 7705 を入力する
+1 キーを押してMicrosoft 365
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:

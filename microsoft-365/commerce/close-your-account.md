@@ -18,14 +18,14 @@ ms.custom:
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
 search.appverid: MET150
-description: Microsoft でアカウントを閉じる方法について説明します。
+description: Microsoft でアカウントを閉じると、アカウントに関連する情報 (ライセンス、ユーザー、ユーザー データなど) が削除されます。
 ms.date: 04/02/2021
-ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537297"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624327"
 ---
 # <a name="close-your-account"></a>アカウントの使用を停止する
 
@@ -52,8 +52,8 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 ## <a name="step-2-cancel-all-active-subscriptions"></a>手順 2: すべてのアクティブなサブスクリプションをキャンセルする
 
 1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
-2. [製品 **] タブ** で、アクティブなサブスクリプションを探します。 3 つのドット (その他のアクション) を選択し、[サブスクリプションのキャンセル] **を選択します**。
-3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。 必要に応じて、フィードバックを提供します。
+2. [製品 **] タブ** で、アクティブなサブスクリプションを探します。 3 つのドット(他のアクション) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
+3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。必要に応じて、フィードバックを提供します。
 4. **[保存]** を選択します。
 5. 手順 1 ~ 4 を繰り返して、アクティブなすべてのサブスクリプションを取り消します。
 
@@ -88,3 +88,9 @@ PowerShell を [使用して、複数のユーザーの多要素認証を無効�
 5. 組織で 1 つ以上のチェックに失敗した場合は、チェックに合格する方法の詳細へのリンクが表示されます。 すべてのチェックに合格したら、[削除] **を選択して** プロセスを完了します。
 
 この最後の手順を完了すると、Microsoft のアカウントは閉じ、削除されます。
+
+## <a name="related-content"></a>関連コンテンツ 
+
+[ビジネス向け請求書または請求書Microsoft 365を理解](./billing-and-payments/understand-your-invoice2.md)する (記事)\
+[サブスクリプションをキャンセルする](./subscriptions/cancel-your-subscription.md) (記事)
+

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS レコードが正しく設定されていることを確認して、カスタム ドメインのセットアップ中に発生した問題を追跡する方法について説明します。
-ms.openlocfilehash: 5959cae02b87cf481fc06edd941a6da284b71736
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 70beb877251c333766a0963316287796eb81d595
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537549"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623967"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>ドメインまたは DNS レコードを追加後に問題を特定して解決する
 
@@ -103,5 +103,6 @@ DNS の問題を解決しても、引き続き問題が発生する場合は、�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[トラブルシューティング: 検証済みのドメイン変更に関するデータの監査](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+[トラブルシューティング: 検証済みのドメイン変更に関するデータの監査](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain) (記事)\
+[ドメインの FAQ](../setup/domains-faq.yml) (記事)
 

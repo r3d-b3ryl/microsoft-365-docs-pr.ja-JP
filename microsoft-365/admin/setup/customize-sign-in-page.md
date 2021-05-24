@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: '[サインイン] Microsoft 365を使用して、サインイン ページをカスタマイズAzure Active Directory。 サインイン ページに図、ロゴ、およびテキストを追加できます。'
-ms.openlocfilehash: 9947d57e4bf35ef0a3409db58f2c663959c2dd49
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: dba75d5178f3c4a879ae2cdc9694697df45f6b8b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579124"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624443"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>[サインイン] ページに会社のブランドを追加する
 
@@ -50,3 +50,9 @@ Microsoft 365 for business、Microsoft Dynamics CRM Online、Enterprise Mobility
 サインイン ページの他に、Azure のアクセス パネル ページもカスタマイズできます。
   
 ブランドを追加する準備ができたら、Azure コンテンツ セット内のカスタマイズ オプションをご覧ください。[Add company branding to your Sign-in and Access Panel pages (会社のブランドをサインイン ページとアクセス パネル ページに追加する)](/azure/active-directory/fundamentals/customize-branding)
+
+## <a name="related-content"></a>関連コンテンツ
+
+[組織のMicrosoft 365テーマをカスタマイズ](customize-your-organization-theme.md)する (記事)\
+[セットアップ ウィザードとセットアップ ページの違](o365-setup-wizard-and-setup-page.md) い (記事)\
+[ビジネス ユーザー用のモバイル Microsoft 365を設定する](../../business/set-up-mobile-devices.md)(ビデオ)

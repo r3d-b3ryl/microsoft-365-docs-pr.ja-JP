@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、電子メール (EOP) 内のメッセージに適用されるスパム信頼度 (SCL) Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 951bbcb5fcbcc7b7916ee1c34c4ab489d54b6667
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 55e64c72cc472e98baa8eb71e23dafb6b276ba01
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205163"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625283"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP のスパム信頼レベル (SCL)
 
@@ -51,7 +51,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 SCL 2、3、4、7、8 はスパム フィルター処理では使用されません。
 
-メール フロー ルール (トランスポート ルールとも呼ばれる) を使用して、メッセージに SCL をスタンプできます。 メール フロー ルールを使用して SCL を設定すると、値 5 または 6 がSpam のスパム フィルター アクションをトリガーし、値 7、8、または 9 が信頼度の高いスパムのスパム フィルター 処理をトリガーします。 詳細については、「メール フロー ルール [を使用してメッセージのスパム信頼レベル (SCL) を設定する」を参照してください](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
+メール フロー ルール (トランスポート ルールとも呼ばれる) を使用して、メッセージに SCL をスタンプできます。 メール フロー ルールを使用して SCL を設定すると、値 5 または 6 がSpam のスパム フィルター アクションをトリガーし、値 7、8、または 9 が信頼度の高いスパムのスパム フィルター 処理をトリガーします。 詳細については、「メール フロー ルール [を使用してメッセージのスパム信頼レベル (SCL) を設定する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
 
 SCL と同様に、バルク 苦情レベル (BCL) は、不良バルク メール (グレー メールとも呼ばれる) _を識別します_。 BCL が高いほど、バルク メール メッセージが好ましくない内容である可能性が高い (したがって、スパムである可能性が高い) ことを示します。 スパム対策ポリシーで BCL しきい値を構成します。 詳細については [、「EOP](configure-your-spam-filter-policies.md)でスパム対策ポリシーを構成する」、EOP のバルク 苦情レベル [(BCL)、](bulk-complaint-level-values.md)迷惑メールとバルク メールの違いを [参照してください](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
