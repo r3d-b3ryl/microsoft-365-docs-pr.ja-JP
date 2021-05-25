@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 1085b54a4b879a316b57cad89e138a73c871370e
-  ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+  ms.openlocfilehash: b10d9eebf8ed98e06e98c1e73722f7b3b0d7ba87
+  ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/20/2021
-  ms.locfileid: "51904178"
+  ms.lasthandoff: 05/25/2021
+  ms.locfileid: "52639393"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -28,7 +28,7 @@ landingContent:
       url: ../defender/microsoft-365-defender.md
   - linkListType: whats-new
     links:
-    - text: iMicrosoft 365 Defender の新機能
+    - text: Defender の新機能Microsoft 365
       url: ../defender/whats-new.md
   - linkListType: video
     links:
@@ -42,7 +42,7 @@ landingContent:
       url: m365d-evaluation.md
     - text: 実稼働環境でパイロット プロジェクトを実行する
       url: m365d-pilot.md
-- title: 開始する
+- title: 概要
   linkLists:
   - linkListType: get-started
     links:
@@ -114,7 +114,7 @@ landingContent:
       url: m365d-autoir.md
     - text: 脅威を探す
       url: advanced-hunting-overview.md
-- title: 参照
+- title: リファレンス
   linkLists:
   - linkListType: reference
     links:
