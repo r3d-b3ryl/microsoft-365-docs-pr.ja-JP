@@ -18,73 +18,77 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 21eaf1c0e0d3f61bb5798c8a4de6fe8f97ce4a0b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0adcecefc19c681ef68498a3e7c375913d85985d
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538797"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651130"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="ed585-104">Microsoft Defender for Endpoint on Linux の新機能</span><span class="sxs-lookup"><span data-stu-id="ed585-104">What's new in Microsoft Defender for Endpoint on Linux</span></span>
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="91fde-104">Microsoft Defender for Endpoint on Linux の新機能</span><span class="sxs-lookup"><span data-stu-id="91fde-104">What's new in Microsoft Defender for Endpoint on Linux</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-## <a name="1012964-30121042129640"></a><span data-ttu-id="ed585-105">101.29.64 (30.121042.12964.0)</span><span class="sxs-lookup"><span data-stu-id="ed585-105">101.29.64 (30.121042.12964.0)</span></span>
+## <a name="1012964-30121042129640"></a><span data-ttu-id="91fde-105">101.29.64 (30.121042.12964.0)</span><span class="sxs-lookup"><span data-stu-id="91fde-105">101.29.64 (30.121042.12964.0)</span></span>
 
-- <span data-ttu-id="ed585-106">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="ed585-106">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="91fde-106">このバージョンから、コマンド ライン クライアントを介してトリガーされるオンデマンド ウイルス対策スキャン中に検出された脅威は自動的に修復されます。</span><span class="sxs-lookup"><span data-stu-id="91fde-106">Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated.</span></span> <span data-ttu-id="91fde-107">ユーザー インターフェイスを介してトリガーされるスキャン中に検出された脅威には、手動操作が必要です。</span><span class="sxs-lookup"><span data-stu-id="91fde-107">Threats detected during scans triggered through the user interface still require manual action.</span></span>
+- <span data-ttu-id="91fde-108">`mdatp diagnostic real-time-protection-statistics` 2 つの追加スイッチがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="91fde-108">`mdatp diagnostic real-time-protection-statistics` now supports two additional switches:</span></span>
+  - <span data-ttu-id="91fde-109">`--sort`: スキャンされたファイルの総数で降順に出力を並べ替える</span><span class="sxs-lookup"><span data-stu-id="91fde-109">`--sort`: sorts the output descending by total number of files scanned</span></span>
+  - <span data-ttu-id="91fde-110">`--top N`: 上位 N の結果を表示します (指定されている `--sort` 場合にのみ機能します)</span><span class="sxs-lookup"><span data-stu-id="91fde-110">`--top N`: displays the top N results (only works if `--sort` is also specified)</span></span>
+- <span data-ttu-id="91fde-111">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="91fde-111">Performance improvements & bug fixes</span></span>
 
-## <a name="1012572-30121022125630"></a><span data-ttu-id="ed585-107">101.25.72 (30.121022.12563.0)</span><span class="sxs-lookup"><span data-stu-id="ed585-107">101.25.72 (30.121022.12563.0)</span></span>
+## <a name="1012572-30121022125630"></a><span data-ttu-id="91fde-112">101.25.72 (30.121022.12563.0)</span><span class="sxs-lookup"><span data-stu-id="91fde-112">101.25.72 (30.121022.12563.0)</span></span>
 
-- <span data-ttu-id="ed585-108">Microsoft Defender for Endpoint on Linux は、米国政府機関のお客様向けプレビューで利用できます。</span><span class="sxs-lookup"><span data-stu-id="ed585-108">Microsoft Defender for Endpoint on Linux is now available in preview for US Government customers.</span></span> <span data-ttu-id="ed585-109">詳細については [、「Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。</span><span class="sxs-lookup"><span data-stu-id="ed585-109">For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).</span></span>
-- <span data-ttu-id="ed585-110">FUSE ファイルシステムを使用するシステムで Linux 上の Microsoft Defender for Endpoint を使用すると OS がハングする問題を修正しました</span><span class="sxs-lookup"><span data-stu-id="ed585-110">Fixed an issue where usage of Microsoft Defender for Endpoint on Linux on systems with FUSE filesystems was leading to OS hang</span></span>
-- <span data-ttu-id="ed585-111">他のバグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="ed585-111">Performance improvements & other bug fixes</span></span>
+- <span data-ttu-id="91fde-113">Microsoft Defender for Endpoint on Linux は、米国政府機関のお客様向けプレビューで利用できます。</span><span class="sxs-lookup"><span data-stu-id="91fde-113">Microsoft Defender for Endpoint on Linux is now available in preview for US Government customers.</span></span> <span data-ttu-id="91fde-114">詳細については [、「Microsoft Defender for Endpoint for US Government customers」を参照してください](gov.md)。</span><span class="sxs-lookup"><span data-stu-id="91fde-114">For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).</span></span>
+- <span data-ttu-id="91fde-115">FUSE ファイルシステムを使用するシステムで Linux 上の Microsoft Defender for Endpoint を使用すると OS がハングする問題を修正しました</span><span class="sxs-lookup"><span data-stu-id="91fde-115">Fixed an issue where usage of Microsoft Defender for Endpoint on Linux on systems with FUSE filesystems was leading to OS hang</span></span>
+- <span data-ttu-id="91fde-116">他のバグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="91fde-116">Performance improvements & other bug fixes</span></span>
 
-## <a name="1012563-30121022125630"></a><span data-ttu-id="ed585-112">101.25.63 (30.121022.12563.0)</span><span class="sxs-lookup"><span data-stu-id="ed585-112">101.25.63 (30.121022.12563.0)</span></span>
+## <a name="1012563-30121022125630"></a><span data-ttu-id="91fde-117">101.25.63 (30.121022.12563.0)</span><span class="sxs-lookup"><span data-stu-id="91fde-117">101.25.63 (30.121022.12563.0)</span></span>
 
-- <span data-ttu-id="ed585-113">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="ed585-113">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="91fde-118">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="91fde-118">Performance improvements & bug fixes</span></span>
 
-## <a name="1012364-30121021123640"></a><span data-ttu-id="ed585-114">101.23.64 (30.121021.12364.0)</span><span class="sxs-lookup"><span data-stu-id="ed585-114">101.23.64 (30.121021.12364.0)</span></span>
+## <a name="1012364-30121021123640"></a><span data-ttu-id="91fde-119">101.23.64 (30.121021.12364.0)</span><span class="sxs-lookup"><span data-stu-id="91fde-119">101.23.64 (30.121021.12364.0)</span></span>
 
-- <span data-ttu-id="ed585-115">マウント ポイント全体がウイルス対策除外リストに追加される状況のパフォーマンスが向上しました。</span><span class="sxs-lookup"><span data-stu-id="ed585-115">Performance improvement for the situation where an entire mount point is added to the antivirus exclusion list.</span></span> <span data-ttu-id="ed585-116">このバージョンより前のバージョンでは、マウント ポイントから発生したファイル アクティビティは、製品によって引き続き処理されました。</span><span class="sxs-lookup"><span data-stu-id="ed585-116">Prior to this version, file activity originating from the mount point was still processed by the product.</span></span> <span data-ttu-id="ed585-117">このバージョンでは、除外されたマウント ポイントのファイル アクティビティが抑制され、製品のパフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="ed585-117">Starting with this version, file activity for excluded mount points is suppressed, leading to better product performance</span></span>
-- <span data-ttu-id="ed585-118">コマンド ライン ツールに、前回のオンデマンド スキャンに関する情報を表示する新しいオプションが追加されました。</span><span class="sxs-lookup"><span data-stu-id="ed585-118">Added a new option to the command-line tool to view information about the last on-demand scan.</span></span> <span data-ttu-id="ed585-119">最後のオンデマンド スキャンに関する情報を表示するには、次のコマンドを実行します。 `mdatp health --details antivirus`</span><span class="sxs-lookup"><span data-stu-id="ed585-119">To view information about the last on-demand scan, run `mdatp health --details antivirus`</span></span>
-- <span data-ttu-id="ed585-120">バグ修正に関するその他&改善点</span><span class="sxs-lookup"><span data-stu-id="ed585-120">Other performance improvements & bug fixes</span></span>
+- <span data-ttu-id="91fde-120">マウント ポイント全体がウイルス対策除外リストに追加される状況のパフォーマンスが向上しました。</span><span class="sxs-lookup"><span data-stu-id="91fde-120">Performance improvement for the situation where an entire mount point is added to the antivirus exclusion list.</span></span> <span data-ttu-id="91fde-121">このバージョンより前のバージョンでは、マウント ポイントから発生したファイル アクティビティは、製品によって引き続き処理されました。</span><span class="sxs-lookup"><span data-stu-id="91fde-121">Prior to this version, file activity originating from the mount point was still processed by the product.</span></span> <span data-ttu-id="91fde-122">このバージョンでは、除外されたマウント ポイントのファイル アクティビティが抑制され、製品のパフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="91fde-122">Starting with this version, file activity for excluded mount points is suppressed, leading to better product performance</span></span>
+- <span data-ttu-id="91fde-123">コマンド ライン ツールに、前回のオンデマンド スキャンに関する情報を表示する新しいオプションが追加されました。</span><span class="sxs-lookup"><span data-stu-id="91fde-123">Added a new option to the command-line tool to view information about the last on-demand scan.</span></span> <span data-ttu-id="91fde-124">最後のオンデマンド スキャンに関する情報を表示するには、次のコマンドを実行します。 `mdatp health --details antivirus`</span><span class="sxs-lookup"><span data-stu-id="91fde-124">To view information about the last on-demand scan, run `mdatp health --details antivirus`</span></span>
+- <span data-ttu-id="91fde-125">バグ修正に関するその他&改善点</span><span class="sxs-lookup"><span data-stu-id="91fde-125">Other performance improvements & bug fixes</span></span>
 
-## <a name="1011853"></a><span data-ttu-id="ed585-121">101.18.53</span><span class="sxs-lookup"><span data-stu-id="ed585-121">101.18.53</span></span>
+## <a name="1011853"></a><span data-ttu-id="91fde-126">101.18.53</span><span class="sxs-lookup"><span data-stu-id="91fde-126">101.18.53</span></span>
 
-- <span data-ttu-id="ed585-122">EDR Linux の一般[提供が可能](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)</span><span class="sxs-lookup"><span data-stu-id="ed585-122">EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)</span></span>
-- <span data-ttu-id="ed585-123">カスタム スキャン中に AV の除外を無視する新しいコマンド ライン スイッチ ( `--ignore-exclusions` ) を追加しました ( `mdatp scan custom` )</span><span class="sxs-lookup"><span data-stu-id="ed585-123">Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)</span></span>
-- <span data-ttu-id="ed585-124">診断ログを別のディレクトリに保存できる新しいパラメーター `mdatp diagnostic create` ( `--path [directory]` ) を使用して拡張</span><span class="sxs-lookup"><span data-stu-id="ed585-124">Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory</span></span>
-- <span data-ttu-id="ed585-125">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="ed585-125">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="91fde-127">EDR Linux の一般[提供が可能](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)</span><span class="sxs-lookup"><span data-stu-id="91fde-127">EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)</span></span>
+- <span data-ttu-id="91fde-128">カスタム スキャン中に AV の除外を無視する新しいコマンド ライン スイッチ ( `--ignore-exclusions` ) を追加しました ( `mdatp scan custom` )</span><span class="sxs-lookup"><span data-stu-id="91fde-128">Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)</span></span>
+- <span data-ttu-id="91fde-129">診断ログを別のディレクトリに保存できる新しいパラメーター `mdatp diagnostic create` ( `--path [directory]` ) を使用して拡張</span><span class="sxs-lookup"><span data-stu-id="91fde-129">Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory</span></span>
+- <span data-ttu-id="91fde-130">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="91fde-130">Performance improvements & bug fixes</span></span>
 
-## <a name="1011299"></a><span data-ttu-id="ed585-126">101.12.99</span><span class="sxs-lookup"><span data-stu-id="ed585-126">101.12.99</span></span>
+## <a name="1011299"></a><span data-ttu-id="91fde-131">101.12.99</span><span class="sxs-lookup"><span data-stu-id="91fde-131">101.12.99</span></span>
 
-- <span data-ttu-id="ed585-127">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="ed585-127">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="91fde-132">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="91fde-132">Performance improvements & bug fixes</span></span>
 
-## <a name="1010476"></a><span data-ttu-id="ed585-128">101.04.76</span><span class="sxs-lookup"><span data-stu-id="ed585-128">101.04.76</span></span>
+## <a name="1010476"></a><span data-ttu-id="91fde-133">101.04.76</span><span class="sxs-lookup"><span data-stu-id="91fde-133">101.04.76</span></span>
 
-- <span data-ttu-id="ed585-129">バグ修正</span><span class="sxs-lookup"><span data-stu-id="ed585-129">Bug fixes</span></span>
+- <span data-ttu-id="91fde-134">バグ修正</span><span class="sxs-lookup"><span data-stu-id="91fde-134">Bug fixes</span></span>
 
-## <a name="1010348"></a><span data-ttu-id="ed585-130">101.03.48</span><span class="sxs-lookup"><span data-stu-id="ed585-130">101.03.48</span></span>
+## <a name="1010348"></a><span data-ttu-id="91fde-135">101.03.48</span><span class="sxs-lookup"><span data-stu-id="91fde-135">101.03.48</span></span>
 
-- <span data-ttu-id="ed585-131">バグ修正</span><span class="sxs-lookup"><span data-stu-id="ed585-131">Bug fixes</span></span>
+- <span data-ttu-id="91fde-136">バグ修正</span><span class="sxs-lookup"><span data-stu-id="91fde-136">Bug fixes</span></span>
 
-## <a name="1010255"></a><span data-ttu-id="ed585-132">101.02.55</span><span class="sxs-lookup"><span data-stu-id="ed585-132">101.02.55</span></span>
+## <a name="1010255"></a><span data-ttu-id="91fde-137">101.02.55</span><span class="sxs-lookup"><span data-stu-id="91fde-137">101.02.55</span></span>
 
-- <span data-ttu-id="ed585-133">再起動/アップグレード後に製品が起動しない問題を修正しました</span><span class="sxs-lookup"><span data-stu-id="ed585-133">Fixed an issue where the product sometimes does not start following a reboot / upgrade</span></span>
-- <span data-ttu-id="ed585-134">製品のアップグレードでプロキシ設定が保持されない問題を修正しました</span><span class="sxs-lookup"><span data-stu-id="ed585-134">Fixed an issue where proxy settings are not persisted across product upgrades</span></span>
+- <span data-ttu-id="91fde-138">再起動/アップグレード後に製品が起動しない問題を修正しました</span><span class="sxs-lookup"><span data-stu-id="91fde-138">Fixed an issue where the product sometimes does not start following a reboot / upgrade</span></span>
+- <span data-ttu-id="91fde-139">製品のアップグレードでプロキシ設定が保持されない問題を修正しました</span><span class="sxs-lookup"><span data-stu-id="91fde-139">Fixed an issue where proxy settings are not persisted across product upgrades</span></span>
 
-## <a name="1010075"></a><span data-ttu-id="ed585-135">101.00.75</span><span class="sxs-lookup"><span data-stu-id="ed585-135">101.00.75</span></span>
+## <a name="1010075"></a><span data-ttu-id="91fde-140">101.00.75</span><span class="sxs-lookup"><span data-stu-id="91fde-140">101.00.75</span></span>
 
-- <span data-ttu-id="ed585-136">次のファイル システムの種類のサポートが `ecryptfs` 追加されました。 `fuse` `fuseblk` `jfs` `nfs` `overlay` `ramfs` `reiserfs` `udf``vfat`</span><span class="sxs-lookup"><span data-stu-id="ed585-136">Added support for the following file system types: `ecryptfs`, `fuse`, `fuseblk`, `jfs`, `nfs`, `overlay`, `ramfs`, `reiserfs`, `udf`, and `vfat`</span></span>
-- <span data-ttu-id="ed585-137">コマンド ライン ツールの [新しい構文](linux-resources.md#configure-from-the-command-line)。</span><span class="sxs-lookup"><span data-stu-id="ed585-137">New syntax for the [command-line tool](linux-resources.md#configure-from-the-command-line).</span></span>
-- <span data-ttu-id="ed585-138">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="ed585-138">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="91fde-141">次のファイル システムの種類のサポートが `ecryptfs` 追加されました。 `fuse` `fuseblk` `jfs` `nfs` `overlay` `ramfs` `reiserfs` `udf``vfat`</span><span class="sxs-lookup"><span data-stu-id="91fde-141">Added support for the following file system types: `ecryptfs`, `fuse`, `fuseblk`, `jfs`, `nfs`, `overlay`, `ramfs`, `reiserfs`, `udf`, and `vfat`</span></span>
+- <span data-ttu-id="91fde-142">コマンド ライン ツールの [新しい構文](linux-resources.md#configure-from-the-command-line)。</span><span class="sxs-lookup"><span data-stu-id="91fde-142">New syntax for the [command-line tool](linux-resources.md#configure-from-the-command-line).</span></span>
+- <span data-ttu-id="91fde-143">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="91fde-143">Performance improvements & bug fixes</span></span>
 
-## <a name="1009070"></a><span data-ttu-id="ed585-139">100.90.70</span><span class="sxs-lookup"><span data-stu-id="ed585-139">100.90.70</span></span>
+## <a name="1009070"></a><span data-ttu-id="91fde-144">100.90.70</span><span class="sxs-lookup"><span data-stu-id="91fde-144">100.90.70</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="ed585-140">インストール済みパッケージを 100.90.70 より前の製品バージョンからアップグレードすると、Red Hat ベースおよび SLES ディストリビューションで更新が失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="ed585-140">When upgrading the installed package from a product version earlier than 100.90.70, the update may fail on Red Hat-based and SLES distributions.</span></span> <span data-ttu-id="ed585-141">これは、ファイル パスの大きな変更のためです。</span><span class="sxs-lookup"><span data-stu-id="ed585-141">This is because of a major change in a file path.</span></span> <span data-ttu-id="ed585-142">一時的な解決策として、古いパッケージを削除し、新しいパッケージをインストールします。</span><span class="sxs-lookup"><span data-stu-id="ed585-142">A temporary solution is to remove the older package, and then install the newer one.</span></span> <span data-ttu-id="ed585-143">この問題は、新しいバージョンには存在しません。</span><span class="sxs-lookup"><span data-stu-id="ed585-143">This issue does not exist in newer versions.</span></span>
+> <span data-ttu-id="91fde-145">インストール済みパッケージを 100.90.70 より前の製品バージョンからアップグレードすると、Red Hat ベースおよび SLES ディストリビューションで更新が失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="91fde-145">When upgrading the installed package from a product version earlier than 100.90.70, the update may fail on Red Hat-based and SLES distributions.</span></span> <span data-ttu-id="91fde-146">これは、ファイル パスの大きな変更のためです。</span><span class="sxs-lookup"><span data-stu-id="91fde-146">This is because of a major change in a file path.</span></span> <span data-ttu-id="91fde-147">一時的な解決策として、古いパッケージを削除し、新しいパッケージをインストールします。</span><span class="sxs-lookup"><span data-stu-id="91fde-147">A temporary solution is to remove the older package, and then install the newer one.</span></span> <span data-ttu-id="91fde-148">この問題は、新しいバージョンには存在しません。</span><span class="sxs-lookup"><span data-stu-id="91fde-148">This issue does not exist in newer versions.</span></span>
 
-- <span data-ttu-id="ed585-144">ウイルス [対策の除外でワイルドカードがサポートされる](linux-exclusions.md#supported-exclusion-types)</span><span class="sxs-lookup"><span data-stu-id="ed585-144">Antivirus [exclusions now support wildcards](linux-exclusions.md#supported-exclusion-types)</span></span>
-- <span data-ttu-id="ed585-145">コマンド ライン ツールを使用して [パフォーマンスの問題を](linux-support-perf.md) トラブルシューティング `mdatp` する機能が追加されました</span><span class="sxs-lookup"><span data-stu-id="ed585-145">Added the ability to [troubleshoot performance issues](linux-support-perf.md) through the `mdatp` command-line tool</span></span>
-- <span data-ttu-id="ed585-146">パッケージのインストールをより堅牢にする改善点</span><span class="sxs-lookup"><span data-stu-id="ed585-146">Improvements to make the package installation more robust</span></span>
-- <span data-ttu-id="ed585-147">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="ed585-147">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="91fde-149">ウイルス [対策の除外でワイルドカードがサポートされる](linux-exclusions.md#supported-exclusion-types)</span><span class="sxs-lookup"><span data-stu-id="91fde-149">Antivirus [exclusions now support wildcards](linux-exclusions.md#supported-exclusion-types)</span></span>
+- <span data-ttu-id="91fde-150">コマンド ライン ツールを使用して [パフォーマンスの問題を](linux-support-perf.md) トラブルシューティング `mdatp` する機能が追加されました</span><span class="sxs-lookup"><span data-stu-id="91fde-150">Added the ability to [troubleshoot performance issues](linux-support-perf.md) through the `mdatp` command-line tool</span></span>
+- <span data-ttu-id="91fde-151">パッケージのインストールをより堅牢にする改善点</span><span class="sxs-lookup"><span data-stu-id="91fde-151">Improvements to make the package installation more robust</span></span>
+- <span data-ttu-id="91fde-152">バグ修正&パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="91fde-152">Performance improvements & bug fixes</span></span>
