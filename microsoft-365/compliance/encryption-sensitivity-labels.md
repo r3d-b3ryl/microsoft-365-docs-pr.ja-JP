@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f6fff2bc595e9317ef037929a8a6828935b15bbf
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532088"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624683"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -427,6 +427,10 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 - Azure Information Protection の保護を有効にする
     
     秘密度ラベルが暗号化を適用するには、Azure Information Protection の保護サービス (Azure Rights Management) をテナントに対して有効にする必要があります。  新しいテナントの場合はこれが既定の設定になっていますが、サービスを手動で有効にする必要がある場合があります。 詳細については、「[Azure Information Protection の保護サービスのアクティブ化](/azure/information-protection/activate-service)」を参照してください。
+
+- ネットワーク エラーを確認
+    
+    ファイアウォールなど、ネットワーク デバイスへ一部の変更を加える必要があることがあります。 詳細については、Azure Information Protection ドキュメントにある [ファイアウォールとネットワーク インフラストラクチャ](/azure/information-protection/requirements#firewalls-and-network-infrastructure) を参照してください。
 
 - Azure Information Protection 用に Exchange を構成する
     
