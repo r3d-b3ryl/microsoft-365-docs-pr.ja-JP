@@ -58,7 +58,7 @@
               href: m365d-pilot-simulate.md
             - name: 閉じて要約する
               href: m365d-pilot-close.md
-    - name: 作業の開始
+    - name: 概要
       items:
         - name: 概要
           href: get-started.md
@@ -93,13 +93,11 @@
             - name: 管理
               href: manage-incidents.md
             - name: 調査
-              items:
-                - name: 概要
-                  href: investigate-incidents.md
-                - name: アラート
-                  href: investigate-alerts.md
-                - name: ユーザー
-                  href: investigate-users.md
+              href: investigate-incidents.md
+            - name: インシデントアラート
+              href: investigate-alerts.md
+            - name: インシデント ユーザー
+              href: investigate-users.md
             - name: 最初のインシデントに対応する
               items:
                 - name: はじめに
@@ -108,7 +106,7 @@
                   href: first-incident-prepare.md
                 - name: 手順 1. トリアージと分析
                   href: first-incident-analyze.md
-                - name: 手順 2. 修復する
+                - name: 手順 2. 修復
                   href: first-incident-remediate.md
                 - name: 手順 3. 確認
                   href: first-incident-post.md
