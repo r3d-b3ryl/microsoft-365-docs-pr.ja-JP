@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: bad31160bb27c79f672ddd28a5fced3bf8c2ee1b
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: e7cecd645d857a5c2d5e7a98c78bd3f39b68449d
+ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943043"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639409"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 
@@ -35,6 +35,28 @@ ms.locfileid: "51943043"
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+
+## <a name="quick-reference"></a>クイック リファレンス
+
+次の図と表に、セキュリティ センターとセキュリティ センターの間Microsoft Defender セキュリティ センター変更点Microsoft 365示します。
+
+> [!div class="mx-imgBorder"]
+> ![移動先のイメージ](../../media/mde-m3d-security-center.png)
+
+| Microsoft Defender セキュリティ センター | Microsoft 365 セキュリティ センター |
+|---------|---------|
+| ダッシュボード <ul><li>セキュリティ操作</li><li>脅威の分析</li></ul>  |ホーム <ul><li>脅威の分析</li></ul>   |
+| インシデント | インシデントとアラート |
+| デバイス一覧 | デバイス一覧 |
+| アラート キュー | インシデントとアラート |
+| 自動化された調査 | アクション センター |
+| 高度な検出 | 検索 |
+| レポート | レポート |
+| パートナー& API | パートナー& API |
+| 脅威&の管理 | 脆弱性管理 |
+| 評価とチュートリアル | 評価&チュートリアル |
+| 構成管理環境 | 構成管理環境 |
+| 設定 | 設定 | 
 
 セキュリティ センター Microsoft 365[強化](overview-security-center.md)され、電子メール、コラボレーション、ID、デバイスの脅威を保護、検出、調査、および対応するセキュリティ機能 [https://security.microsoft.com](https://security.microsoft.com) が組み合わせ込みされています。 このセキュリティ センターは、既存の Microsoft セキュリティ ポータル (Microsoft Defender セキュリティ センター および Office 365 セキュリティ &機能を統合します。
 
@@ -65,7 +87,7 @@ Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 
 ### <a name="alerts-and-actions"></a>アラートとアクション
 
-|**領域**  |**変更の説明** |
+| 分野 | 変更の説明 |
 |---------|---------|
 | [インシデント&アラート](incidents-overview.md)  | セキュリティ センター Microsoft 365、すべてのエンドポイント、電子メール、および ID でインシデントとアラートを管理できます。 関連するイベントを簡単に見つけ出すのに役立つエクスペリエンスを統合しました。 詳細については、「インシデントの [概要」を参照してください](incidents-overview.md)。   |
 | [検索](advanced-hunting-overview.md)  |  Microsoft Defender for Endpoint で作成されたカスタム検出ルールを変更して、ID テーブルと電子メール テーブルを含める場合は、自動的に Id テーブルと電子メール テーブルMicrosoft 365されます。 対応するアラートは、Defender のMicrosoft 365されます。 これらの変更の詳細については、「カスタム検出ルールの移行 [」を参照してください](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules)。 <br><br>高度 `DeviceAlertEvents` な検索のテーブルは、Defender ではMicrosoft 365できません。 Microsoft 365 Defender でデバイス固有のアラート情報を照会するには、and テーブルを使用して、さまざまなソース セットからのさらに多くの情報に `AlertInfo` `AlertEvidence` 対応できます。 [DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)なしで書き込みクエリを実行して、次のデバイス関連のクエリを作成します。|
@@ -74,7 +96,7 @@ Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 
 ### <a name="endpoints"></a>エンドポイント
 
-|**領域**  |**変更の説明**  |
+| 分野 | 変更の説明 |
 |---------|---------|
 |検索   |  見出しの代わりに、Microsoft Defender for Endpoint 検索バーが [エンドポイント] セクションの下を移動しています。 引き続きデバイス、ファイル、ユーザー、URL、IPs、脆弱性、ソフトウェア、推奨事項を検索できます。  |
 |[ダッシュボード](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  これは、セキュリティ操作ダッシュボードです。 アクティブなアラートがトリガーされた数、どのデバイスが危険にさらされているか、どのユーザーが危険にさらされているのか、アラート、デバイス、およびユーザーの重大度レベルの概要を参照してください。 また、センサーの問題が発生したデバイス、サービス全体の正常性、未解決のアラートが検出された方法も確認できます。 |
@@ -92,7 +114,7 @@ Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 
 ### <a name="access-and-reporting"></a>アクセスとレポート
 
-|**領域**  |**変更の説明**  |
+| 分野 | 変更の説明 |
 |---------|---------|
 | レポート  | 脅威の保護、デバイスの正常性とコンプライアンス、脆弱な&など、エンドポイントと電子メール のコラボレーションに関するレポートを参照してください。 |
 | 正常性  |  現在、管理センターの [サービス正常性][ページMicrosoft 365リンクします](https://admin.microsoft.com/)。 |
@@ -122,7 +144,7 @@ Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 
 アクション センターには、自動調査と自動応答機能によって作成された調査が表示されます。 この Microsoft 365 Defender の自動自己修復機能は、特定のイベントに自動的に応答することでセキュリティ チームを支援します。
 
-[アクション センターの詳細](m365d-action-center.md)
+[アクション センターの詳細については、以下を参照してください](m365d-action-center.md)。
 
 ### <a name="threat-analytics"></a>脅威の分析
 
@@ -134,7 +156,7 @@ Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 
 脅威分析には、Microsoft 365 セキュリティ センターの左上のナビゲーション バーから、または組織の上位の脅威を示す専用のダッシュボード カードからアクセスできます。
 
-[[脅威の分析を使用して、新たな脅威を追跡し対応する]](./threat-analytics.md)の詳細説明
+脅威分析を使用して新たな脅威を追跡して対応する [方法について詳しくは、次のページをご覧ください](./threat-analytics.md)。
 
 ### <a name="endpoints-section"></a>[エンドポイント] セクション
 

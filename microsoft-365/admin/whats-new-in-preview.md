@@ -21,12 +21,12 @@ description: 管理者Microsoft 365 - 今月追加された機能について学
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b75c6be901dfe2bcfe9a0d8fad8fbb56eecd34d6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 964689c431b45671a92dda62ccf8a083291213a3
+ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535748"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639543"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>管理センターの新機能Microsoft 365
 
@@ -49,6 +49,24 @@ ms.locfileid: "52535748"
 - [SharePoint 管理センターの新機能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新プログラム](/OfficeUpdates/)
 - [リリースの正常性をWindowsする方法](/windows/deployment/update/check-release-health)
+
+## <a name="may-2021"></a>2021 年 5 月
+
+### <a name="admin-mobile-app"></a>Admin モバイル アプリ
+
+### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>管理モバイル アプリを使用してサポート チケットの更新を追跡する
+
+テナントで作成されたサービス要求すべてについて、チケットの状態を追跡し、チケットの詳細を表示し、添付ファイルにメモを追加して追加情報を提供/要求&できます。 
+
+:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="スクリーンショット: サポート チケットの更新を追跡する":::
+
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>アプリとサブスクリプションに関する主要な更新プログラムのMicrosoft 365する 
+
+- メッセージ センタープッシュ通知 (既定で有効) を使用して、Microsoft 365サブスクリプションに対する主要な更新プログラムの上に残ります。 
+
+- [新機能] セクションを使用して、アプリで利用可能な最新 **の機能を追跡** します。 [新 **しい**  >  **設定] に移動します。**
+
+:::image type="content" source="../media/whats-new-updates.png" alt-text="スクリーンショット: 主要な更新プログラムと機能を追跡する":::
 
 ## <a name="april-2021"></a>2021 年 4 月
 
@@ -195,7 +213,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 
 ![「リモート ワーカーに権限を与Microsoft 365ソリューションドキュメント」の新しいランディング ページ。](../media/MAC-WN-M365Docspage.png)
 
-## <a name="july-2020"></a>2020 年 7 月
+## <a name="july-2020"></a>2020 年7 月
 
 ### <a name="getting-ready-for-ignite-2020"></a>Ignite 2020 の準備
 
