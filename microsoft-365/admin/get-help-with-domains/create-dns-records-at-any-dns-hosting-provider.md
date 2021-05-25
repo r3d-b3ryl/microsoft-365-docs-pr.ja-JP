@@ -20,12 +20,12 @@ description: ドメインを確認して、レジストラーのアカウント�
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: facdd460bd3197e39dd6d4d9f4a5450dc972bf03
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 62b6793dd97e146b703c82e0ba23f4d7414025b6
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537561"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623979"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 
@@ -169,8 +169,6 @@ SPF はスプーフィングの防止に役立ちますが、SPF では保護で
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[任意のドメイン レジストラーで Microsoft 365 をセットアップするためにネームサーバーを変更する](change-nameservers-at-any-domain-registrar.md) (記事)
-
-[ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)
-
+[任意のドメイン レジストラーで Microsoft 365 をセットアップするためにネームサーバーを変更する](change-nameservers-at-any-domain-registrar.md) (記事)\
+[ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)\
 [ドメインの管理](index.yml) (リンク ページ)

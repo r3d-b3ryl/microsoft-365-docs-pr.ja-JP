@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5cd6a1a2ce1ca6c6ce3741674945a1e2a43694b7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1241e6ebb838938f82fce5dc08ea93a3038f4ace
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206022"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624235"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -125,7 +125,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
      > <sup>1</sup> Exchange Online では、受信トレイで迷惑メール ルールが有効になっている場合、メッセージは [迷惑メール] フォルダーに移動されます (既定では有効)。 詳細については、「[Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
      >
-     > EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
+     > EOP がオンプレミスの Exchange メールボックスを保護するハイブリット環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するように EOP を構成する](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)」を参照してください。
      >
      > <sup>2</sup> この値をメール フロー ルールの条件として、フィルターやルールに使用することができます。
 
@@ -185,7 +185,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
    - **ドメインを許可**: **[編集]** をクリックします。 表示される **[許可されているドメイン一覧]** ポップアップで、以下の手順を実行します。
 
-      a. ドメインを入力します。 複数のドメインをセミコロン (;) で区切って指定できます。
+      a. ドメインを入力します。複数のドメインをセミコロン (;) で区切って指定できます。
 
       b. Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) をクリックしてドメインを追加します。
 
@@ -639,7 +639,7 @@ Remove-HostedContentFilterRule -Identity "Marketing Department"
 ### <a name="send-a-gtube-message-to-test-your-spam-policy-settings"></a>GTUBE メッセージを送信して迷惑メール対策ポリシーの設定をテストする
 
 > [!NOTE]
-> これらの手順は、GTUBE メッセージを送信している電子メール組織が、送信スパムをスキャンしない場合にのみ機能します。 送信スパムをスキャンしている場合には、テスト メッセージは送信されません。
+> これらの手順は、GTUBE メッセージを送信している電子メール組織が、送信スパムをスキャンしない場合にのみ機能します。送信スパムをスキャンしている場合には、テスト メッセージは送信されません。
 
 Generic Test for Unsolicited Bulk Email (GTUBE) は、テスト メッセージに組み込んで組織のスパム対策設定を検証するための文字列です。 GTUBE メッセージは、マルウェア設定をテストするための European Institute for Computer Antivirus Research (EICAR) テキスト ファイルと似ています。
 

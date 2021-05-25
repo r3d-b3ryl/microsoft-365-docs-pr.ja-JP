@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 2つのテストアカウントのみを使用して、カスタムドメインから Microsoft 365 メールボックスに電子メール機能をパイロットする方法について説明します。
-ms.openlocfilehash: bdcf86474a7f2edb458075e884c20e56d231df6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2017da30aba3b48b51de26b7907167dc5dd3e6e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197841"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623647"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>カスタムドメインから Microsoft 365 をパイロットする
 
@@ -60,7 +60,7 @@ ms.locfileid: "51197841"
 
 3. 電子メールやインスタントメッセージなど、ドメインでテストするサービスを選択します。
 
-5. [**ドメインの確認**]ページで、手順バイ手順の指示に従い、次に[**確認**]を選択します。
+4. [**ドメインの確認**]ページで、手順バイ手順の指示に従い、次に[**確認**]を選択します。
 
     DNS の変更が有効になるまで数分から 72 時間かかります。
 
@@ -70,7 +70,7 @@ ms.locfileid: "51197841"
 
 1. Exchange 管理センターの[**メールフロー**]セクションで、[**承認済みドメイン**]を選択してから、変更するドメインを選択します。
 
-2. ダブルクリックしてウィンドウを開き、[**内部リレー**]を選択します。 
+2. ダブルクリックしてウィンドウを開き、[**内部リレー**]を選択します。
 
 3. [**保存**] を選択します。
 
@@ -85,7 +85,7 @@ Microsoft 365 では、スパム保護に Exchange Online Protection（EOP） �
 
 1. Exchange 管理センターのナビゲーションウィンドウで、[**保護**]を選択し、[**接続フィルタ**]を選択します。
 
-2. [**IP許可リスト**]で **+** を選択し、現在の電子メールプロバイダのメールサーバー IP アドレスを追加します。 
+2. [**IP許可リスト**]で **+** を選択し、現在の電子メールプロバイダのメールサーバー IP アドレスを追加します。
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>手順 5: ユーザー アカウントを作成して主要な (返信先) アドレスを設定する
 
@@ -97,9 +97,9 @@ Microsoft 365 では、スパム保護に Exchange Online Protection（EOP） �
 
     ユーザーの電子メールアドレスが同じであることを確認するには、[**ユーザー名**]フィールドがユーザーの現在の電子メールアドレスと一致していなければなりません。
 
-3. 適切なライセンスを選択し、[**次へ**]をクリックして、[**追加の終了**]をクリックします。 
+3. 適切なライセンスを選択し、[**次へ**]をクリックして、[**追加の終了**]をクリックします。
 
-4. [**ユーザー名**] の隣の、ドロップダウン リストからカスタム ドメイン名を選択します。 
+4. [**ユーザー名**] の隣の、ドロップダウン リストからカスタム ドメイン名を選択します。
 
 5. **を選択し、** > **を作成し、** を閉じます。
 
@@ -115,7 +115,7 @@ Microsoft 365 では、スパム保護に Exchange Online Protection（EOP） �
 
 Microsoft 365 または Office365 で次の手順が完了したことを確認してください。
 
-1. コネクタを設定するには、開始する前にアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「[EOP の機能のアクセス許可](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop)」トピックの「Microsoft 365 および Office 365 コネクタ」の項目を参照してください。
+1. コネクタを設定するには、開始する前にアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「[Exchange Online の機能のアクセス許可](/exchange/permissions-exo/feature-permissions)」トピックの「Microsoft 365 および Office 365 コネクタ」の項目を参照してください。
 
 2. EOP か ExchangeOnline でメール サーバーからインターネットにメールを中継する場合は、次のいずれかの方法を実行します。
 
@@ -156,7 +156,7 @@ DNS ホスティングプロバイダーの Web サイトにサインインし�
 
     例えば、「v=spf1 mx include:adatum.com include:spf.protection.outlook.com ~all」です。
 
-    SPFレコードがない場合は、Microsoft 365 で推奨されているレコードを変更して、現在の電子メールプロバイダーのドメインを含め、spf.protection.outlook.com を追加します。 これにより、両方の電子メールシステムからの送信メッセージが承認されます。
+    SPF レコードがない場合は、Microsoft 365 が推奨するレコードに変更を加えて現在のメール プロバイダー用のドメインを含め、spf.protection.outlook.com も含めます。両方のメール システムからの送信メッセージが承認されます。
 
 ### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>手順 8: 現在のプロバイダーで電子メールの転送をセットアップする
 

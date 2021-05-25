@@ -23,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Microsoft 365 Business Standard サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: ce45b4869000892b5640730e765dbfc9c21386ed
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Microsoft 365 Business Standard を購入するときに、所有するドメインを使用するか、サインアップ時に購入するかを選択することができます。
+ms.openlocfilehash: cee91edaab09506dca90cf5ed64ee9bc669c98cf
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244457"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624419"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Microsoft Business Standard をセットアップする
 
@@ -139,4 +139,7 @@ Microsoft 365 には、ビジネスに使用するための一般向け Web サ�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-詳細については、「[一般向け Web サイトを使用する](../../business-video/create-web-site.md)」を参照してください。
+## <a name="related-content"></a>関連コンテンツ
+
+[Web サイトを作成](../../business-video/create-web-site.md) (ビデオ)\
+[一般法人向け Microsoft 365](../../business-video/index.yml) (リンク ページ)

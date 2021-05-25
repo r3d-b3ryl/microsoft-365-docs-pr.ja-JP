@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 2695d34e29492a88da86c2511ce32e4036031e9d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572659"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625223"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -368,7 +368,7 @@ Office 365 セキュリティ/コンプライアンス センターには、**�
 
 保管ロックが適用されていない保持に関するポリシーの場合は、いつでもポリシーを削除できます。それにより、以前に適用された保持設定は事実上無効になります。 ポリシーを保持することもできますが、SharePoint サイトまたは OneDrive のアカウントを削除するか、場所のステータスをオフに変更するか、ポリシーを無効にします。
  
-これらのアクションのいずれかを実行すると、ポリシーからの保持の対象となる SharePoint または OneDrive コンテンツは、不注意によるデータの損失を防ぐために 30 日間保持され続けます。 この 30 日間の猶予期間中、サイトを削除することはできません。削除されたファイルは引き続き保持されます (ファイルは引き続き保存保留ライブラリに追加されます) が、定期的に保存保留ライブラリをクリーンアップするタイマー ジョブはこれらのために中断されます。 必要に応じてファイルを復元できるようにします。
+これらのアクションのいずれかを実行すると、ポリシーからの保持の対象となる SharePoint または OneDrive コンテンツは、不注意によるデータの損失を防ぐために 30 日間保持され続けます。 この 30 日間の猶予期間中、削除されたファイルは引き続き保持されます (ファイルは引き続き保存保留ライブラリに追加されます) が、定期的に保存保留ライブラリをクリーンアップするタイマー ジョブはこれらのために中断されます。 必要に応じてファイルを復元できるようにします。
 
 保存保持ライブラリの詳細については、「[SharePoint と OneDrive の保持のしくみ](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)」を参照してください。
 

@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
-description: '組織のすべてのユーザーまたは特定のユーザー用に優先受信トレイを構成する方法について説明します。 '
-ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+description: すべてのユーザー用のメール設定の構築を担当している場合は、この記事でユーザー用の優先受信トレイの設定方法が確認できます。
+ms.openlocfilehash: ddd0886988072139a199bfc3f6e8adbbf25ad58b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644514"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623703"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>組織内のすべてのユーザー用に優先受信トレイを構成する
 
@@ -169,7 +169,7 @@ Microsoft では、一部のユーザーの低優先メールの動作が突然�
   
 ### <a name="is-the-focused-inbox-feature-only-available-for-office-2016-clients"></a>優先受信トレイ機能を使用できるのは Office 2016 クライアントのみですか。
 
-はい、Office 2016 のユーザーのみが利用できます。 Outlook 2013 以前にこの機能を移植する予定はありません。
+はい、Office 2016 のユーザーのみが利用できます。Outlook 2013 以前にこの機能を移植する予定はありません。
   
 ### <a name="how-long-does-it-take-for-focused-inbox-changes-to-take-place-in-outlook"></a>優先受信トレイの変更が Outlook で反映されるまでどれくらいかかりますか。
 
@@ -181,7 +181,7 @@ Microsoft では、一部のユーザーの低優先メールの動作が突然�
   
 [Tony Redmond](https://www.petri.com/author/tony-redmond) (Microsoft MVP) による投稿「 [How the Focused Inbox Replaces Clutter Inside Office 365](https://www.petri.com/focused-inbox-office-365)」 (Office 365 内の低優先メールを優先受信トレイに置き換える方法) を参照してください。
   
-### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>低優先メールのユーザーを保持できますか。 低優先メールと優先受信トレイの使用に関する Microsoft の推奨事項は何ですか。
+### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>低優先メールのユーザーを保持できますか。低優先メールと優先受信トレイの使用に関する Microsoft の推奨事項は何ですか。
 
 はい、低優先メールのユーザーを保持し、優先受信トレイを無効にすることはできます。ただし、最終的に低優先メールは優先受信トレイに完全に置き換えられるため、Microsoft ではすぐに優先受信トレイに移動することをお勧めします。Exchange Online で低優先メールを使用する場合の詳細については、次のブログの投稿を参照してください。[優先受信トレイに対する更新プログラムと低優先メールに関する Microsoft のプラン](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
@@ -207,5 +207,10 @@ Outlook は、最終タイムスタンプを持つコマンドレットを選択
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>スクリプトを実行して優先受信トレイを有効にしているユーザーを確認することはできますか。
 
-いいえ。これは仕様です。 優先受信トレイを有効にするのはクライアント側の設定なので、コマンドレットが実行できるのは、ユーザーのメールボックスがクライアントの操作環境に適しているかどうかを伝えることのみです。 一部のクライアントで有効にして、それと同時に、その他のクライアントで無効にすることができます。たとえば、Outlook アプリと Outlook Mobile で有効にして、Outlook on the web で無効にすることが可能です。
+いいえ。これは仕様です。優先受信トレイを有効にするのはクライアント側の設定なので、コマンドレットが実行できるのは、ユーザーのメールボックスがクライアントの操作環境に適しているかどうかを伝えることのみです。一部のクライアントで有効にして、それと同時に、その他のクライアントで無効にすることができます。たとえば、Outlook アプリと Outlook Mobile で有効にして、Outlook on the web で無効にすることが可能です。
 
+## <a name="related-content"></a>関連コンテンツ
+
+[組織での低優先メールを構成](../email/configure-clutter.md) (記事)\
+[共有メールボックスの設定を構成](../email/configure-a-shared-mailbox.md) (記事)\
+[署名と免責事項を作成](create-signatures-and-disclaimers.md) (ビデオ)
