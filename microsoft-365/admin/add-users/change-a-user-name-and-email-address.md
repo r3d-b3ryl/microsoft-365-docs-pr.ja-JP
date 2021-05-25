@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Microsoft 365 のグローバル管理者が、ユーザー名が変更されるときにユーザーのメール アドレスと表示名を変更する方法について説明します。 '
-ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535988"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634222"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
 ユーザーが結婚し、姓が変わった場合など、メール アドレスと表示名を変更する必要が生じることがあります。
 
-ユーザーのメール アドレスの変更に関する短いビデオをご覧ください。 <br><br>
+## <a name="watch-change-a-users-name-or-email-address"></a>視聴: ユーザー名またはメール アドレスを変更する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
@@ -253,8 +253,6 @@ Windows Server 2003 以前のバージョンで Active Directory を使用して
   
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理者: 1 人または複数のユーザーのパスワードを再設定する](reset-passwords.md) (記事)
-  
-[ユーザーに別のメール アドレスを追加する](../email/add-another-email-alias-for-a-user.md) (記事)
-
+[管理者: 1 人または複数のユーザーのパスワードを再設定する](reset-passwords.md) (記事)\
+[ユーザーに別のメール アドレスを追加する](../email/add-another-email-alias-for-a-user.md) (記事)\
 [共有メールボックス GWT を作成する](../email/create-a-shared-mailbox.md) (記事)

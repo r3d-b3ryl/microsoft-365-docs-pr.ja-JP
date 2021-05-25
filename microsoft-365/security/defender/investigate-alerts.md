@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender でアラートを調査する
+title: Defender でアラートをMicrosoft 365する
 description: デバイス、ユーザー、メールボックス間で表示されるアラートを調査します。
 keywords: インシデント、アラート、調査、調査、分析、応答、相関関係、攻撃、コンピューター、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b9bbe058042a49586e8515fde85371b1487e8d25
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297130"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651353"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを調査する
+# <a name="investigate-alerts-in-microsoft-365-defender"></a>Defender でアラートをMicrosoft 365する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,15 +38,15 @@ ms.locfileid: "52297130"
 
 アラートは、すべてのインシデントの基礎であり、環境内で悪意のあるイベントや不審なイベントが発生したかどうかを示します。 アラートは通常、より広範な攻撃の一部であり、インシデントに関する手がかりを提供します。
 
-Microsoft 365 Defender では、関連するアラートがまとめて集計され、インシデント [が発生します](incidents-overview.md)。 インシデントは常に攻撃の広範なコンテキストを提供しますが、アラートの分析は、より深い分析が必要な場合に有用です。 
+Defender Microsoft 365関連するアラートは、インシデントを形成するために[まとめて集計されます](incidents-overview.md)。 インシデントは常に攻撃の広範なコンテキストを提供しますが、アラートの分析は、より深い分析が必要な場合に有用です。 
 
-アラート **キューには、** 現在の一連のアラートが表示されます。 Microsoft 365セキュリティ センター (& >) のクイック 起動時に[インシデント] から通知キューに[security.microsoft.com。](https://security.microsoft.com)
+アラート **キューには、** 現在の一連のアラートが表示されます。 [インシデント] からアラートキューにアクセスし&>セキュリティ センター (security.microsoft.com) のMicrosoft 365アラートを[security.microsoft.com。](https://security.microsoft.com)
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="アラート キューの例":::
 
-Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft 365 Defender など、さまざまな Microsoft セキュリティ ソリューションからのアラートがここに表示されます。
+Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Defender など、さまざまな Microsoft Microsoft 365からの通知がここに表示されます。
 
-既定では、Microsoft 365 セキュリティ センターのアラート キューには、過去 30 日間の新しいアラートと進行中のアラートが表示されます。 最新のアラートはリストの一番上に表示されます。最初に確認できます。 
+既定では、セキュリティ センターのMicrosoft 365キューには、過去 30 日間の新しいアラートと進行中のアラートが表示されます。 最新のアラートはリストの一番上に表示されます。最初に確認できます。 
 
 既定のアラート キューから [フィルター] を選択 **すると、[** フィルター] ウィンドウが表示され、そこからアラートのサブセットを指定できます。 次に例を示します。
 
@@ -66,26 +66,24 @@ Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft 
 
 メインのアラート ページを表示するには、アラートの名前を選択します。 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 セキュリティ センターのアラートの詳細ページの例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="セキュリティ センターのアラートの詳細ページMicrosoft 365例":::
 
 [警告の管理] ウィンドウ **から [メインのアラート ページを開** く] **アクションを選択** することもできます。
 
 アラート ページは、次のセクションで構成されます。 
 
-- アラート ストーリー
-- 実行されたアクション (影響を受け取ったアセットを含む)
-- 関連イベント
+- アラート ストーリー(このアラートに関連するイベントとアラートの連鎖を時系列順に示す)
 - 概要の詳細
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 セキュリティ センターのアラートの詳細ページの例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="セキュリティ センターのアラートの詳細ページMicrosoft 365例":::
 
-アラート ページ全体で、任意のエンティティの横にある省略記号 (**...**) を選択すると、特定のアセット ページを開く、または特定の修復手順を実行するなどの使用可能なアクションを確認できます。
+アラート ページ全体で、任意のエンティティの横にある省略記号 (**...**) を選択して、アラート ページを開く、またはアラートを別のインシデントにリンクするなどの使用可能なアクションを表示できます。
 
 ### <a name="analyze-affected-assets"></a>影響を受けるアセットを分析する
 
 [ **実行されたアクション** ] セクションには、このアラートの影響を受けるメールボックス、デバイス、ユーザーなど、影響を受けるアセットの一覧があります。 
 
-[アクション センターで **表示] を選択して**、Microsoft 365 セキュリティ センターの [アクション センター] の [履歴] タブを表示することもできます。   
+[アクション センターで **表示] を選択して**、セキュリティ センターの [アクション センター] の [履歴] タブMicrosoft 365することもできます。  
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>アラート ストーリー内のアラートの役割を追跡する
 
@@ -114,7 +112,7 @@ Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft 
 - アラートに関するコメント。
 
 > [!NOTE]
-> タグを使用してアラートを管理する方法の 1 つ。 Microsoft Defender for Office 365 のタグ付け機能は段階的に展開され、現在プレビュー中です。 <br>
+> タグを使用してアラートを管理する方法の 1 つ。 Microsoft Defender for microsoft Defender for Office 365段階的に展開中で、現在プレビュー中です。 <br>
 > 現在、変更されたタグ名は、更新後に作成された *アラートにのみ* 適用されます。 変更前に生成されたアラートには、更新されたタグ名は反映されません。 
 
 このウィンドウから、次の追加アクションを実行することもできます。 
@@ -128,7 +126,7 @@ Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft 
 
 次に例を示します。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Microsoft 365 セキュリティ センターでのアラートに対するアクションの例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="セキュリティ センターのアラートに対するアクションMicrosoft 365例":::
 
 追加のアクションの一覧は、アラートの種類によって異なります。
 
@@ -136,7 +134,7 @@ Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft 
 
 アラートの分析が完了し、解決したら、[アラートの管理] ウィンドウに移動し、その状態を [解決済み] としてマークし、False アラートまたは **True** アラートとして分類します。 true アラートの場合は、[決定] フィールドにアラートの脅威の種類 **を指定** します。
 
-アラートを分類し、その決定を指定すると、Microsoft 365 Defender を調整して、より真のアラートと誤ったアラートを減らします。
+アラートを分類し、その決定を指定すると、Defender Microsoft 365を調整して、より多くの真のアラートと少ない誤ったアラートを提供できます。
 
 ## <a name="next-steps"></a>次の手順
 

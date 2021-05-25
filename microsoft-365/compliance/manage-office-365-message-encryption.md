@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: OME (OME) のOffice 365 Message Encryptionしたら、いくつかの方法で展開をカスタマイズする方法について説明します。
-ms.openlocfilehash: 06e9d22d51c05fe9f7bc4c1a014607feafbf2dba
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a2b3dde44ea541deb41eeb9d55d5ed745fa6c719
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908187"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52650986"
 ---
 # <a name="manage-office-365-message-encryption"></a>Office 365 Message Encryption
 
@@ -67,7 +67,7 @@ OME で暗号化されたメッセージの受信者が、受信者が使用す�
 2. OTPEnabled Set-OMEConfigurationを使用して、次のコマンドレットを実行します。
 
    ```powershell
-   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter"> -OTPEnabled <$true|$false>
    ```
 
    たとえば、1 回のパス コードを無効にするには、次のコマンドを実行します。

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 21eaf1c0e0d3f61bb5798c8a4de6fe8f97ce4a0b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0adcecefc19c681ef68498a3e7c375913d85985d
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538797"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651130"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux の新機能
 
@@ -31,6 +31,10 @@ ms.locfileid: "52538797"
 
 ## <a name="1012964-30121042129640"></a>101.29.64 (30.121042.12964.0)
 
+- このバージョンから、コマンド ライン クライアントを介してトリガーされるオンデマンド ウイルス対策スキャン中に検出された脅威は自動的に修復されます。 ユーザー インターフェイスを介してトリガーされるスキャン中に検出された脅威には、手動操作が必要です。
+- `mdatp diagnostic real-time-protection-statistics` 2 つの追加スイッチがサポートされます。
+  - `--sort`: スキャンされたファイルの総数で降順に出力を並べ替える
+  - `--top N`: 上位 N の結果を表示します (指定されている `--sort` 場合にのみ機能します)
 - バグ修正&パフォーマンスの向上
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)

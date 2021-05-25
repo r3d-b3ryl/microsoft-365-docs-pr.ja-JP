@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで、管理者がビジネス、学校、または非営利団体のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: 5469d4dcd75bee2e6f8a188aa6f50d18ce6e06c4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7f12918211718b91313c0c89b11eaeb0a8cc3181
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537489"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635824"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -36,7 +36,7 @@ ms.locfileid: "52537489"
 
 この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../../business-video/admin-center-overview.md)。
 
-管理者は、ユーザー パスワードを一定の日数が経過したら期限切れにするか、パスワードの有効期限が切れないように設定することができます。 既定では、パスワードが組織へ設定されているので、有効期限が切れることはありません。
+管理者として、ユーザー パスワードを特定の日数が経過したら期限切れにするか、パスワードの有効期限が切れないように設定することができます。既定では、組織でパスワードは有効期限が切れないように設定されています。
 
 最近の研究では、強制的なパスワードの変更はメリットよりデメリットの方が大きいことが強く示唆されています。 ハッカーが簡単に推測できる方法で、より弱いパスワードの選択、パスワードの再利用、または古いパスワードの更新をユーザーに促します。 [多要素認証](../security-and-compliance/set-up-multi-factor-authentication.md) を有効にすることをおすすめします。 パスワード ポリシーの詳細については、[パスワード ポリシーの推奨事項](../misc/password-policy-recommendations.md)を確認してください。
 
@@ -57,13 +57,13 @@ ms.locfileid: "52537489"
   
 4. ユーザーがパスワードを変更する必要がないようにするには、[**数日後にユーザーのパスワードが期限切れになるように設定する**] の横にあるチェックボックスをオフにします。
   
-5. パスワードの有効期限が切れる頻度を入力します。 14 〜 730 の日数を選択します。
+5. パスワードの有効期限が切れる頻度を入力します。14 〜 730 の日数を選択します。
   
 6. 2 つ目のボックスに、パスワードが期限切れになる前にユーザーに通知する日数を入力して、[ **保存** ] を選択します。 日数を 1 から 30 から選びます。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>パスワードの有効期限機能に関する重要事項
   
-- Outlook アプリのみを使用するユーザーには、キャッシュで有効期限が切れるまで Microsoft 365 パスワードのリセットは強制されません。これは、実際に期限が切れた日から数日経過することがあります。管理者レベルでは、これに対する回避策はありません。
+Outlook アプリのみを使用するユーザーには、キャッシュで有効期限が切れるまで Microsoft 365 パスワードのリセットは強制されません。これは、実際に期限が切れた日から数日経過することがあります。管理者レベルでは、これに対する回避策はありません。
 
 ## <a name="prevent-last-password-from-being-used-again"></a>最後に使用したパスワードの再使用を禁止する
 
@@ -89,6 +89,5 @@ Set-MsolPasswordPolicy コマンドレットは特定のドメインまたはテ
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md) (記事)
-
+[ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md) (記事)\
 [パスワードをリセットする](../add-users/reset-passwords.md) (記事)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a1e07ac2e2e544605f04e9090177004db64d2f04
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994999"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651274"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
@@ -37,6 +37,14 @@ ms.locfileid: "51994999"
 
 > [!IMPORTANT]
 > macOS 11 (Big Sur) では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存の顧客の場合は、このページに記載されている追加の構成プロファイルを [必ず展開してください](mac-sysext-policies.md)。
+
+## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0)
+
+- このバージョンから、コマンド ライン クライアントを介してトリガーされるオンデマンド ウイルス対策スキャン中に検出された脅威は自動的に修復されます。 ユーザー インターフェイスを介してトリガーされるスキャン中に検出された脅威には、手動操作が必要です。
+- `mdatp diagnostic real-time-protection-statistics` 2 つの追加スイッチがサポートされます。
+  - `--sort`: スキャンされたファイルの総数で降順に出力を並べ替える
+  - `--top N`: 上位 N の結果を表示します (指定されている `--sort` 場合にのみ機能します)
+- パフォーマンスの向上 (特に YARN を使用する場合) &修正
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
 

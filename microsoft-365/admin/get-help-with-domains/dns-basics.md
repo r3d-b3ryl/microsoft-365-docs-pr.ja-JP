@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: ドメイン ネーム システムは、コンピューターのホスト名を IP アドレスにマップします。DNS とドメイン レジストラーの基礎を理解することはドメインを管理するうえで役立ちます。
-ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 19fc444c056bbf3e1ea1f601d20a9b9cbd75bec8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582946"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635428"
 ---
 # <a name="dns-basics"></a>DNS の基本
 
@@ -38,6 +38,8 @@ ms.locfileid: "52582946"
 ::: moniker range="o365-worldwide"
 
 contoso.com のようなドメイン名は、ドメイン レジストラーの世界中のシステムとデータベースを使って管理されています。ドメイン ネーム システム (DNS) は、人間が判読できるコンピューター ホスト名とネットワーク機器によって使用される IP アドレス間のマッピングを提供します。DNS とドメイン レジストラーの基礎を理解することは、管理者がドメインを管理するうえで役立ちます。
+
+## <a name="watch-domains--dns-an-overview"></a>視聴する: ドメインと DNS の概要
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -46,6 +48,8 @@ contoso.com のようなドメイン名は、ドメイン レジストラーの�
 ::: moniker range="o365-germany"
 
 contoso.com のようなドメイン名は、ドメイン レジストラーの世界中のシステムとデータベースを使って管理されています。ドメイン ネーム システム (DNS) は、人間が判読できるコンピューター ホスト名とネットワーク機器によって使用される IP アドレス間のマッピングを提供します。DNS とドメイン レジストラーの基礎を理解することは、管理者がドメインを管理するうえで役立ちます。
+
+## <a name="watch-domains--dns-an-overview"></a>視聴する: ドメインと DNS の概要
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -190,9 +194,9 @@ Microsoft 365 では、ドメイン名をメール、一般向け Web サイト�
   
 ドメインをセットアップするには、Microsoft 365 管理センターの[値の一覧を参照](information-for-dns-records.md)してください。 
   
-また、展開を予定している場合は、Microsoft 365 に必要なすべての DNS レコードの一覧、それぞれのレコードの機能、値の例も確認してください。 「[Microsoft 365 の外部ドメイン ネーム システムのレコード](../../enterprise/external-domain-name-system-records.md)」を確認してください。
+また、展開を予定している場合は、Microsoft 365 に必要なすべての外部ドメイン ネーム システムの レコードの一覧、それぞれのレコードの機能、値の例も確認してください。 「[Microsoft 365 の外部ドメイン ネーム システムのレコード](../../enterprise/external-domain-name-system-records.md)」を確認してください。
   
-## <a name="how-can-i-learn-more"></a>さらに詳しく知るには
+## <a name="next-steps"></a>次の手順
 
 次のいずれかを確認してください。 
   
@@ -201,8 +205,6 @@ Microsoft 365 では、ドメイン名をメール、一般向け Web サイト�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドメインの FAQ](../setup/domains-faq.yml) (記事)
-
-[ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)
-
+[ドメインの FAQ](../setup/domains-faq.yml) (記事)\
+[ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)\
 [ドメインの管理](index.yml) (リンク ページ)

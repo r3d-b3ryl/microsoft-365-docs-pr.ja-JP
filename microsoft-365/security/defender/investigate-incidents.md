@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender のインシデントを調査する
+title: Defender でインシデントをMicrosoft 365する
 description: デバイス、ユーザー、メールボックスに関連するインシデントを調査します。
 keywords: インシデント、インシデント、分析、応答、コンピューター、デバイス、ユーザー、ID、メール、メール、メールボックス、調査、グラフ、証拠
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7abc99a14ec538afea8cdbd4d8f3b4940bcccd9f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 865aa9dc34a91be251d6f7772da5cc686f9641a4
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300087"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651317"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender のインシデントを調査する
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Defender でインシデントをMicrosoft 365する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "52300087"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender は、デバイス、ユーザー、およびメールボックス全体からのすべての関連するアラート、資産、調査、および証拠をインシデントに集約し、攻撃の幅広い全体を総合的に調査します。
+Microsoft 365Defender は、デバイス、ユーザー、およびメールボックス全体からのすべての関連するアラート、資産、調査、および証拠をインシデントに集約し、攻撃の幅広い全体を総合的に調査します。
 
 インシデント内では、ネットワークに影響を与えるアラートを分析し、その意味を理解し、証拠を照合して、効果的な修復計画を策定できます。
 
@@ -61,9 +61,9 @@ Microsoft 365 Defender は、デバイス、ユーザー、およびメールボ
 
 [ **概要] ページ** では、インシデントに関する一番上の情報をスナップショットで確認できます。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 セキュリティ センターのインシデントの概要ページの例":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="セキュリティ センターのインシデントの概要ページMicrosoft 365例":::
 
-攻撃カテゴリを使用すると、キル チェーンに対する攻撃の進行状況を視覚的および数値的に確認できます。 他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender は[MITRE ATT &trade; ](https://attack.mitre.org/)と CK フレームワーク&揃っています。
+攻撃カテゴリを使用すると、キル チェーンに対する攻撃の進行状況を視覚的および数値的に確認できます。 他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender は CK フレームワークの[MITRE ATT &trade;&揃](https://attack.mitre.org/)っています。
 
 範囲セクションでは、このインシデントの一部である最も影響を受ける資産の一覧が表示されます。 この資産に関する特定の情報 (リスク レベル、調査の優先順位、資産のタグ付けなど) がある場合は、その情報もこのセクションに表示されます。
 
@@ -79,14 +79,26 @@ Microsoft 365 Defender は、デバイス、ユーザー、およびメールボ
 
 - 重大度。
 - アラートに関与したエンティティ。
-- アラートのソース (Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365)。
+- アラートのソース (Microsoft Defender for Identity、 Microsoft Defender for Endpoint、 Microsoft Defender for Office 365)。
 - リンクされた理由。
 
 次に例を示します。
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="インシデントのアラート ページの例":::
 
-既定では、アラートは時系列的に順序付けされ、インシデントが時間の間にどのように再生されたのか確認できます。 各アラートを選択すると、アラートのメイン ページに移動し、アラートの詳細な分析を実行できます。 
+既定では、アラートは時系列的に順序付けされ、インシデントが時間の間にどのように再生されたのか確認できます。 インシデント内でアラートを選択すると、Microsoft 365のコンテキストに固有のアラート情報が表示されます。 
+
+アラートのイベント、その他のトリガーされたアラートによって現在のアラートが発生したイベント、およびファイル、ユーザー、メールボックスなど、攻撃に関連する影響を受けるすべてのエンティティとアクティビティを確認できます。
+
+次に例を示します。
+
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="インシデント内のアラートの詳細ページの例":::
+
+このインシデント アラート ページは、次のセクションで構成されます。
+
+- アラート ストーリー(発生した内容の概要を含む)
+- 関連するイベントとアラート
+- 概要の詳細
 
 アラートの調査でアラート キューとアラート ページを使用する方法 [について説明します](investigate-alerts.md)。
 
@@ -103,7 +115,7 @@ Microsoft 365 Defender は、デバイス、ユーザー、およびメールボ
 デバイス ページから、すべての通知、タイムライン、セキュリティに関する推奨事項など、デバイスに関する追加情報を収集できます。 たとえば、[タイムライン]タブから、コンピューターのタイムラインをスクロールして、発生したアラートと一緒に、コンピューター上で観察されたイベントと動作を時系列順に表示できます。
 
 > [!TIP]
-> デバイス ページでオンデマンド スキャンを実行できます。 Microsoft 365 セキュリティ センターで、[エンドポイント] > **を選択します**。 通知があるデバイスを選択し、ウイルス対策スキャンを実行します。 ウイルス対策スキャンなどのアクションは追跡され、[デバイス インベントリ] ページ **に表示** されます。 詳細については、「デバイスで [Microsoft Defender ウイルス対策スキャンを実行する」を参照してください](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
+> デバイス ページでオンデマンド スキャンを実行できます。 セキュリティ センターでMicrosoft 365デバイス インベントリの **[エンドポイント] >を選択します**。 通知があるデバイスを選択し、ウイルス対策スキャンを実行します。 ウイルス対策スキャンなどのアクションは追跡され、[デバイス インベントリ] ページ **に表示** されます。 詳細については、「デバイスでスキャン[を実行Microsoft Defender ウイルス対策」を参照してください](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
 
 ## <a name="users"></a>ユーザー
 
@@ -113,13 +125,16 @@ Microsoft 365 Defender は、デバイス、ユーザー、およびメールボ
 
 ユーザーのチェック マークを選択すると、ユーザー アカウントの脅威、露出、連絡先情報の詳細を確認できます。 ユーザー名を選択すると、追加のユーザー アカウントの詳細が表示されます。
 
+ユーザーの調査で追加のユーザー情報を表示し、インシデントのユーザーを管理する方法 [について学習します](investigate-users.md)。
+
+
 ## <a name="mailboxes"></a>メールボックス
 
 [ **メールボックス] タブ** には、インシデントの一部または関連付けとして識別されたすべてのメールボックスが一覧表示されます。 次に例を示します。
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="インシデントのメールボックス ページの例":::
 
-メールボックスのチェック マークを選択すると、アクティブなアラートの一覧を表示できます。 メールボックス名を選択すると、Microsoft Defender for microsoft Defender for microsoft Defender 365 の [エクスプローラー] ページに追加Office表示されます。
+メールボックスのチェック マークを選択すると、アクティブなアラートの一覧を表示できます。 メールボックス名を選択すると、Microsoft Defender for microsoft Defender の [エクスプローラー] ページに追加のメールボックスの詳細が表示Office 365。
 
 ## <a name="investigations"></a>調査
 
@@ -129,7 +144,7 @@ Microsoft 365 Defender は、デバイス、ユーザー、およびメールボ
 
 調査を選択して [調査の詳細] ページに移動すると、調査と修復状況に関する詳細情報が表示されます。 調査の一環として承認待ちアクションがある場合は、[保留中のアクション] タブに表示されます。インシデント修復の一環としてアクションを実行します。
 
-詳細については [、「Microsoft 365 Defender](m365d-autoir.md)での自動調査と対応」を参照してください。
+詳細については、「Defender の自動調査と対応」[をMicrosoft 365してください](m365d-autoir.md)。
 
 ## <a name="evidence-and-response"></a>証拠と対応
 
@@ -137,13 +152,13 @@ Microsoft 365 Defender は、デバイス、ユーザー、およびメールボ
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="インシデントの証拠と応答ページの例":::
 
-Microsoft 365 Defender は、インシデントがサポートしているすべてのイベントと、アラート内の不審なエンティティを自動的に調査し、重要な電子メール、ファイル、プロセス、サービス、IP アドレスなどの情報を提供します。 これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。
+Microsoft 365Defender は、アラート内のすべてのインシデントでサポートされているイベントと不審なエンティティを自動的に調査し、重要な電子メール、ファイル、プロセス、サービス、IP アドレスなどの情報を提供します。 これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。
 
 分析された各エンティティには、評決 (悪意のある、疑わしい、クリーン) と修復状態がマークされます。 これにより、インシデント全体の修復状態と、次に実行できる手順を理解できます。
 
-## <a name="graph-in-preview"></a>グラフ (プレビュー)
+## <a name="graph-in-preview"></a>Graph (プレビューで)
 
-新しい **[グラフ] タブ** (プレビュー) を使用すると、次の情報を確認できます。
+新しい **[Graph]** タブ (プレビュー) を使用すると、次の情報を確認できます。
 
 - 組織内の影響を受け取ったアセットへのアラートの接続。
 - どのエンティティが、どのアラートに関連付け、どのエンティティが攻撃のストーリーの一部であるのか。
@@ -151,7 +166,7 @@ Microsoft 365 Defender は、インシデントがサポートしているすべ
 
 次に例を示します。
 
-:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="インシデントのグラフ ページの例":::
+:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="インシデントのGraphページの例":::
 
 インシデント グラフを使用すると、攻撃の一部であるさまざまな不審なエンティティを、ユーザー、デバイス、メールボックスなどの関連資産と接続することで、攻撃の範囲全体をすばやく把握できます。 
 

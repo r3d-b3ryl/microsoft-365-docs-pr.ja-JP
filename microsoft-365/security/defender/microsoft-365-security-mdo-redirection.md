@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40d86f9f3a4896bbe788f0a9894a7e08efe3a690
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 2a4b122b3ef3a1ddaf61d8f9373bec3e721db177
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301730"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651382"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-office-365-to-the-microsoft-365-security-center"></a>Microsoft Defender からセキュリティ センター Office 365アカウントMicrosoft 365リダイレクトする
 
@@ -64,13 +64,13 @@ ms.locfileid: "52301730"
 > リダイレクトを有効にすると、この設定が適用されている間、アクティブなセッションのアカウントはセッションから取り出されません。現在のセッションを終了して再度サインインした後にのみ、Microsoft 365 セキュリティ センターにルーティングされます。
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>以前のポータルを使用して戻ってみませんか?
-何かが機能していない場合、または Microsoft 365 セキュリティ センター ポータルで完了できない場合は、ポータル フィードバック オプションを使用してその情報を確認します。 リダイレクトに関する問題が発生した場合は、プライベート プレビューを通じて PM バディに直接連絡するか、[フィードバックの送信] フォームから連絡してください。
+何かが機能していない場合、または Microsoft 365 セキュリティ センター ポータルで完了できない場合は、ポータル フィードバック オプションを使用してその情報を確認します。 リダイレクトに関する問題が発生した場合は、お知らせください。
 
 以前のポータルに戻すには、次の操作を行います。
 
 1. [Azure](https://security.microsoft.com/) Active directory で、Microsoft 365管理者として、またはセキュリティ管理者のアクセス許可を持つアカウントを使用して、セキュリティ センターにサインインします。
 
-2. [エンドポイントの全般 **設定**  >  **リダイレクト**  >  **]**  >  **に移動します**。  
+2. [電子 **メール**  >  **設定] &に**  >  **移動します**。   
 
 3. [自動リダイレクト] 設定を [オフ] に **切り替えます**。
 

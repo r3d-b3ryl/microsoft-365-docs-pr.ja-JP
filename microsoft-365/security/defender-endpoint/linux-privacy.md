@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4be0960e8ba868df2acb313b171a08f667c287a7
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933339"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651334"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender のプライバシー
 
@@ -135,6 +135,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 | cloud_service.service_uri                           | クラウドとの通信に使用される URI。 |
 | cloud_service.diagnostic_level                      | デバイスの診断レベル (必須、省略可能)。 |
 | cloud_service.automatic_sample_submission           | デバイスの自動サンプル提出レベル (なし、安全、すべて)。 |
+| cloud_service.automatic_definition_update_enabled   | 自動定義更新を有効にするかどうか。 |
 | edr.early_preview                                   | デバイスを早期プレビュー機能でEDRするかどうか。 |
 | edr.group_id                                        | 検出および応答コンポーネントで使用されるグループ識別子。 |
 | edr.tags                                            | ユーザー定義のタグ。 |
@@ -207,6 +208,7 @@ IT 管理者の場合は、エンタープライズ レベルでこれらのコ�
 | antivirus_engine.scan_cache_maximum                | 製品キャッシュのサイズ。 |
 | antivirus_engine.maximum_scan_threads              | スキャンに使用されるスレッドの最大数。 |
 | antivirus_engine.threat_restoration_exclusion_time | 検疫から復元されたファイルが再び検出される前に、タイム アウトします。 |
+| antivirus_engine.threat_type_settings              | 製品によるさまざまな脅威の種類の処理方法の構成。 |
 | filesystem_scanner.full_scan_directory             | フル スキャン ディレクトリ。 |
 | filesystem_scanner.quick_scan_directories          | クイック スキャンで使用されるディレクトリの一覧。 |
 | edr.latency_mode                                   | 検出および応答コンポーネントで使用される待機時間モード。 |

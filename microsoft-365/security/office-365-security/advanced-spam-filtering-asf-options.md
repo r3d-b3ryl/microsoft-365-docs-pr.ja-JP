@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、スパム対策ポリシー (EOP) で使用できる高度なスパム フィルター (ASF) 設定Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5ade36086d1503b89b506730b98ac7965845e86b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3639b12c0003c958681671fce6bb2b857b3931b8
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206725"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651202"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP の高度なスパム フィルター (ASF) 設定
 
@@ -81,6 +81,8 @@ ASF 設定ごとに、スパム対策ポリシーで次のオプションを使�
 
 次の ASF 設定では、検出されたメッセージのスパム信頼レベル (SCL) を 5 または 6 に設定します。これはスパム フィルターの評決とスパム対策ポリシーの対応するアクションに対応します。 
 
+<br>
+
 ****
 
 |スパム対策ポリシー設定|説明|X ヘッダーの追加|
@@ -94,6 +96,8 @@ ASF 設定ごとに、スパム対策ポリシーで次のオプションを使�
 ## <a name="mark-as-spam-settings"></a>スパム設定としてマークする
 
 次の ASF 設定では、検出されたメッセージの SCL を 9に設定します。これは、高信頼スパム フィルターの評決とスパム対策ポリシーの対応するアクションに対応します。
+
+<br>
 
 ****
 

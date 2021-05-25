@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: サード パーティ製のデータ Microsoft 365 API を使用してコンプライアンス ソリューションを拡張する方法Graph説明します。
-ms.openlocfilehash: 676c0ba41e517dd0c3692fec29a1d4034641b634
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1fed5ac72c7dbfa4b1be370ec03678e1beecdcd2
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919723"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651058"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365の拡張性
 
@@ -94,3 +94,8 @@ Advanced eDiscovery および API のライセンス要件については、「M
 Enterprise情報アーカイブ (EIA) Microsoft Teamsは、規制要件を解決できる重要なシナリオです。 Microsoft Teams のコンテンツをアーカイブするための組み込みの機能に加えて、顧客とパートナーは Teams Export API を使用してカスタム アプリケーションと統合のシナリオを解決できます。 この Teams エクスポート API は、メッセージとメッセージの添付ファイルの一括エクスポート (アプリごとに 1 秒/1 テナントあたり最大 200 要求) をサポートTeamsします。 削除されたメッセージは、削除後最大 30 日間 API からアクセスすることもできます。 これらのエクスポート API の詳細Teamsアプリケーションで使用する方法については、「Export content with the Microsoft Teams [API」を参照してください](/microsoftteams/export-teams-content)。
 
 エクスポート API の使用に関するライセンス要件については、「Teamsコンプライアンスに関するMicrosoft 365ライセンス[ガイダンス」を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+
+### <a name="microsoft-graph-connector-apis-preview"></a>Microsoft Graph コネクタ API (プレビュー)
+
+[Microsoft Graphコネクタを使用](/microsoftsearch/connectors-overview)すると、組織はサードパーティのデータをインデックス化して、Microsoft 検索結果に表示できます。 この機能は、生産性アプリとより広範な Microsoft エコシステムで検索Microsoft 365コンテンツ ソースの種類を拡張します。 サード パーティのデータは、オンプレミスまたはパブリック クラウドまたはプライベート クラウドでホストできます。 このAdvanced eDiscovery、接続されたアプリに組み込みのコンプライアンス値を開発者Microsoft 365しています。 これにより、シームレスなコンプライアンス エクスペリエンスをユーザーに提供Microsoft 365エコシステムに統合するアプリのコンプライアンスが可能となります。 Microsoft Graph コネクタ API をアプリ ビューに組み込む方法の詳細については、「Microsoft Graph で接続を作成、更新、および削除する」[を参照してください](/graph/search-index-manage-connections)。
+

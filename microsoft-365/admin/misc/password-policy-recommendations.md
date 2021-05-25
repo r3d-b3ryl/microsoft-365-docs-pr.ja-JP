@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: パスワード攻撃に対する組織のセキュリティを強化し、一般的なパスワードを禁止し、リスク ベースの多要素認証を有効にします。
-ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593911"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635976"
 ---
 # <a name="password-policy-recommendations"></a>パスワード ポリシーの推奨事項
 
@@ -129,7 +129,9 @@ Microsoft 365 パスワードの詳細については、以下を参照してく
 
 リスク ベースの多要素認証では、Microsoft のシステムで不審な動作が検出されたときに、正当なアカウント所有者であることを確認するためにユーザーに対してチャレンジを実行することができます。 
   
-## <a name="want-to-know-more-recommended-reading"></a>詳細については、以下のお勧めの資料を参照してください。
+## <a name="next-steps"></a>次の手順
+
+パスワードの管理についてさらに詳しい情報が必要な場合は、 以下でおすすめの記事をお読みください:
 
 - [Do Strong Web Passwords Accomplish Anything?](https://go.microsoft.com/fwlink/p/?linkid=861008) (強力な Web パスワードでできること)
 
@@ -145,10 +147,7 @@ Microsoft 365 パスワードの詳細については、以下を参照してく
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[パスワードをリセットする](../add-users/reset-passwords.md) (記事)
-
-[個別のユーザーのパスワードを無期限に設定する](../add-users/set-password-to-never-expire.md) (記事)
-
-[ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md) (記事)
-
+[パスワードをリセットする](../add-users/reset-passwords.md) (記事)\
+[個別のユーザーのパスワードを無期限に設定する](../add-users/set-password-to-never-expire.md) (記事)\
+[ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md) (記事)\
 [ユーザーのパスワードを再送信する - 管理者向けヘルプ](../add-users/resend-user-password.md) (記事)

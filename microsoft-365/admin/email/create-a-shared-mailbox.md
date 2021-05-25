@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 共有メールボックスを作成すると、社内の複数のユーザーが 1 つのメール アドレスに送付されたメールを閲覧したり、回答したりできます。
-ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e628d72482ed7ff32a204eaf9503fdd9a271844a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537609"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635500"
 ---
 # <a name="create-a-shared-mailbox"></a>共有メールボックスを作成する 
 
@@ -200,12 +200,8 @@ Outlook の共有メールボックスの詳細については、次を参照し
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[共有メールボックスについて](about-shared-mailboxes.md)
-
-[共有メールボックスを構成する](configure-a-shared-mailbox.md) (記事)
-
-[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md) (記事)
-
-[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md) (記事)
-
+[共有メールボックスについて](about-shared-mailboxes.md) (記事)\
+[共有メールボックスを構成する](configure-a-shared-mailbox.md) (記事)\
+[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md) (記事)\
+[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md) (記事)\
 [共有メールボックスに関する問題を解決する](resolve-issues-with-shared-mailboxes.md) (記事)

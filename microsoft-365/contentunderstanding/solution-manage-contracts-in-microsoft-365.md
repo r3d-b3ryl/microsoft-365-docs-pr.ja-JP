@@ -12,17 +12,19 @@ ms.collection: m365solution-managecontracts
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Syntex、Microsoft 365、およびSharePointのソリューションをMicrosoft Teams契約を管理するPower Automate。
-ms.openlocfilehash: 18866425cb331b01525dd488a6688608a3d1e559
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Syntex、Microsoft 365 リスト、SharePoint、SharePoint Microsoft Teams、およびPower Automateのソリューションを使用して契約を管理する方法についてPower Automate。
+ms.openlocfilehash: 219ab13eb5787bef566ede0c5dc856da29d96837
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636220"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651286"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>ソリューションを使用して契約Microsoft 365する
 
 この記事では、Syntex と組織のコンポーネントを使用して、組織の契約管理SharePointする方法についてMicrosoft 365。 独自のビジネス ニーズに合ったソリューションの計画と作成に役立つフレームワークを提供します。 このソリューションがビジネス ニーズ全体に合わない場合でも、カスタム契約管理ソリューションを作成する計画で、その一部を採用できます。
+
+*このコンテンツ セットは、Microsoft 365モダン ワーク ソリューション戦略チームと一緒に、Thomas Molbach が開発したソリューションを文書化しています。*
 
 ## <a name="identify-the-business-problem"></a>ビジネス上の問題を特定する
 

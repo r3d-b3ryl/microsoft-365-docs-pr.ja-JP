@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: サービス管理者などの管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。
-ms.openlocfilehash: 7ba8b6fd483901fde31a9bceca189797b4f2e16d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3163b7a4037a923122d2da170ac5ea9e8c2d0185
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536012"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634198"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 
-Microsoft 365 または Office 365 サブスクリプションには、Microsoft 365 管理センターを使用して組織内のユーザーに割り当てることができる管理者ロールセットがあります。 各管理者ロールは、一般的なビジネス機能にマップされ、組織内のユーザーに管理センターで特定のタスクを実行する許可を与えます。
+Microsoft 365 または Office 365 のサブスクリプションには、Microsoft 365 管理センターを使用して組織内のユーザーに割り当てることができる一連の管理者ロールがあります。各管理者ロールは一般的なビジネス機能に対応し、組織のユーザーに、管理センターで特定のタスクを実行するためのアクセス許可を付与します。
 
 Microsoft 365 管理センターでは、Azure AD の役割およびMicrosoft Intune の役割を管理できます。 ただし、これらの役割は、Azure ポータルおよびIntune 管理センターで使用可能な役割のサブセットです。
 
@@ -83,7 +83,7 @@ Microsoft 365 管理センターで、[**役割**] に移動し、任意の役�
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Microsoft パートナーの代理管理
 
-Microsoft パートナーと連携している場合、パートナーに管理者ロールを割り当てることができます。 次に、彼らはあなたの会社のユーザーまたはその会社の管理者ロールを割り当てることができます。 たとえば、彼らがあなたのためにオンライン組織をセットアップし管理している場合、彼らにして欲しいのはこれかもしれません。
+Microsoft パートナーと連携している場合、パートナーに管理者ロールを割り当てることができます。同様にパートナーは、お客様の会社 (またはパートナー会社) のユーザーに管理者ロールを割り当てることができます。たとえば、彼らがあなたのためにオンライン組織をセットアップして管理している場合、彼らにして欲しいのはこれかもしれません。
   
 パートナーは、次の役割を割り当てることができます。
   
@@ -95,10 +95,6 @@ Microsoft パートナーと連携している場合、パートナーに管理�
   
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理者の役割を割り当てる](assign-admin-roles.md) (記事)
-
-[Microsoft 365 管理センターの Azure AD の役割](azure-ad-roles-in-the-mac.md) (記事)
-
-[Exchange Online 管理者の役割](about-exchange-online-admin-role.md) (記事)
-  
-[Microsoft 365 管理センターのアクティビティ レポート](../activity-reports/activity-reports.md) (記事)
+[管理者の役割を割り当てる](assign-admin-roles.md) (記事)\
+[Microsoft 365 管理センターの Azure AD の役割](azure-ad-roles-in-the-mac.md) (記事)\
+[Exchange Online 管理者の役割](about-exchange-online-admin-role.md) (記事)\ [Microsoft 365 管理センターのアクティビティ レポート](../activity-reports/activity-reports.md) (記事)
