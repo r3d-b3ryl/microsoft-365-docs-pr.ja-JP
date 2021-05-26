@@ -122,7 +122,7 @@
 ###### [iOS 機能の構成](ios-configure-features.md)
 
 ##### [トラブルシューティング]()
-###### [問題のトラブルシューティング](ios-troubleshoot.md)
+###### [FAQ と問題のトラブルシューティング](ios-troubleshoot.md)
 
 ##### [プライバシー](ios-privacy.md)
  
@@ -481,6 +481,12 @@
 ####### [アラート関連の IP 情報を取得する](get-alert-related-ip-info.md)
 ####### [アラート関連のデバイス情報を取得する](get-alert-related-machine-info.md)
 ####### [アラート関連のユーザー情報を取得する](get-alert-related-user-info.md)
+
+###### [脆弱性と安全な構成の評価]()
+####### [評価方法とプロパティのエクスポート](get-assessmnt-1methods-properties.md)
+####### [安全な構成評価のエクスポート](get-assessmnt-secure-cfg.md)
+####### [ソフトウェア在庫評価のエクスポート](get-assessmnt-software-inventory.md)
+####### [ソフトウェアの脆弱性評価のエクスポート](get-assessmnt-software-vulnerabilities.md)
 
 ###### [自動調査]()
 ####### [調査メソッドとプロパティ](investigation.md)
