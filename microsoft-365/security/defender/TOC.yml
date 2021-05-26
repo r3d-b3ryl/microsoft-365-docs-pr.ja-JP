@@ -58,7 +58,7 @@
               href: m365d-pilot-simulate.md
             - name: 閉じて要約する
               href: m365d-pilot-close.md
-    - name: 概要
+    - name: 作業の開始
       items:
         - name: 概要
           href: get-started.md
@@ -82,6 +82,10 @@
               href: microsoft-secure-score-whats-coming.md
             - name: 新機能
               href: microsoft-secure-score-whats-new.md
+        - name: ID を保護する
+          items:
+            - name: セキュリティアラートの管理
+              href: ../defender-identity/manage-security-alerts.md
     - name: 脅威の調査と対応
       items:
         - name: インシデント
@@ -120,6 +124,12 @@
               href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
             - name: メール通知
               href: get-incident-notifications.md
+        - name: 脅威の分析
+          items:
+            - name: 新たな脅威の追跡と対応
+              href: threat-analytics.md
+            - name: アナリスト レポートについて
+              href: threat-analytics-analyst-reports.md
         - name: 自動調査および対応
           items:
             - name: 概要
