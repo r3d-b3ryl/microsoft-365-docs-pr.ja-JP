@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: 組織外のユーザーとの共有に影響を与える可能性がある、Microsoft 365 で使用できるゲスト共有設定について説明します。
-ms.openlocfilehash: 60ebff4f564e7046a54cb707781acc0151aa8ad9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b209477e2fa205ebb6b298b7fa9f37c21e2b3d7e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538113"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625440"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -38,7 +38,7 @@ Azure Active Directory は、Microsoft 365 により使用されるディレク�
 > [!NOTE]
 > これらの設定は、[SharePoint および OneDrive の Azure AD B2B との統合](/sharepoint/sharepoint-azureb2b-integration-preview)が構成された場合にのみ、SharePoint に反映されます。 次の表では、この設定が構成されていることを前提としています。
 
-### <a name="organizational-relationships-settings"></a>組織の関係の設定
+### <a name="external-collaboration-settings"></a>外部コラボレーションの設定
 
 **ナビゲーション:** [[Azure Active Directory 管理センター]](https://aad.portal.azure.com) > [Azure Active Directory] > [外部 ID] > [外部コラボレーションの設定]
 
@@ -46,11 +46,9 @@ Azure Active Directory は、Microsoft 365 により使用されるディレク�
 
 | 設定 | 既定値 | 説明 |
 |:-----|:-----|:-----|
-|ゲスト ユーザーのアクセス許可が制限されている|はい|この設定は、ゲストが実行できるディレクトリ タスクに影響します。|
-|管理者と、ゲストの招待元ロールのユーザーが招待できる|はい|**[はい]** に設定すると、管理者は、Azure AD と Teams や SharePoint などの Microsoft 365 共有エクスペリエンスを使用してゲストを招待できます。**[いいえ]** に設定するとゲストを招待できません。|
-|メンバーが招待できる|はい|**[はい]** に設定すると、Azure AD メンバーは Azure AD を使用してゲストを招待できます。**[いいえ]** に設定すると招待できません。 **[はい]** に設定すると、Microsoft 365 グループのメンバーは所有者の承認を受けているゲストを招待できます。**[いいえ]** に設定すると、Microsoft 365 グループのメンバーは所有者の承認を受けているゲストを招待できますが、所有者が承認するにはグローバル管理者でなければなりません。 <br><br>**[メンバーが招待できる]** は、(ゲストではなく) Azure AD のメンバーを参照し、Microsoft 365 のサイトまたはグループ メンバーを参照しない点に注意してください。 <br><br>これは、Microsoft 365 セキュリティとプライバシーの **[ユーザーが組織に新しいゲストを追加できるようにする]** 設定と同じです。|
-|ゲストが招待できる|はい|**[はい]** に設定すると、ディレクトリ内のゲストは他のゲストを招待して、Azure AD リソースおよび SharePoint と OneDrive のファイルとフォルダーで共同作業を行うことができます。**[いいえ]** に設定するとこれができません。 <br><br>SharePoint 管理センターでは、**[一致する電子メール アドレスを正確に入力して外部ユーザーによるディレクトリ内のユーザー アカウントの検索を許可する]** を有効にする必要があることに注意してください。|
-|ゲストの電子メール ワンタイム パスコードを有効にする (プレビュー)|いいえ|**[はい]** に設定すると、MSA、職場または学校のアカウントを持っていないゲストは、[ワンタイム パスコードを使用して Azure AD で認証](/azure/active-directory/b2b/one-time-passcode)できます。**[いいえ]** に設定すると、ユーザーは認証を行うために Microsoft アカウントを作成する必要があります。 [SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](/sharepoint/sharepoint-azureb2b-integration-preview)を機能させるには、この設定を **[はい]** に設定する必要があります。|
+|ゲスト ユーザー アクセス|ゲスト ユーザーは、ディレクトリ オブジェクトのプロパティとメンバーシップへのアクセスが制限されています|[ゲストが Azure Active Directory で持つアクセス許可](/azure/active-directory/fundamentals/users-default-permissions)を決定します。|
+|ゲスト招待設定|組織内のあらゆるユーザーが、ゲストや管理者以外のユーザーを含むゲスト ユーザーを招待できます|ゲスト、メンバー、および管理者がゲストを組織に招待できるかどうかを決定します。<br><br> この設定は、Teams や SharePoint などの Microsoft 365 共有エクスペリエンスに影響します。|
+|ユーザー フロー経由でゲストのセルフ サービスのサインアップを有効にする|いいえ|作成したアプリに誰かがサインアップして新しいゲスト アカウントを作成できるようにするユーザー フローを作成できるかどうかを決定します。|
 |共同作業における制限事項|招待を任意のドメインに送信することを許可する|この設定では、共有するドメインの許可またはブロックのリストを指定できます。 許可されたドメインを指定すると、共有の招待をそのドメインにのみ送信できます。 拒否されたドメインを指定すると、共有の招待はそのドメインに送信できません。<br><br> この設定は、Teams や SharePoint などの Microsoft 365 共有エクスペリエンスに影響します。 SharePoint と Teams でドメインのフィルタリングを使用して、より詳細にドメインを許可したりブロックしたりできます。|
 
 これらの設定は、ユーザーがディレクトリに招待される方法に影響します。 ディレクトリにすでに存在しているゲストとの共有には影響しません。
