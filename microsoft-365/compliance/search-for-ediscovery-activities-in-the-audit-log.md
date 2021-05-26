@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 電子情報開示アクセス許可が割り当てられたユーザーがコンテンツ検索、コア電子情報開示、およびコンプライアンス センターでAdvanced eDiscoveryタスクを実行するときに記録されるイベントMicrosoft 365します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce0dcc50c13ad705cb36f065639a4e971d032f22
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 8b1f3f235f3411e2f637e4e32104c6179643757d
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653501"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657695"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>監査ログで電子情報開示アクティビティを検索する
 
@@ -112,7 +112,7 @@ Microsoft 365 コンプライアンス センターで実行するか、対応�
 |コンテンツ検索のエクスポートが開始されました  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |ユーザーがコンテンツ検索の結果をエクスポートしました。  <br/> |
 |レポートのエクスポートが開始されました  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |ユーザーがコンテンツ検索レポートをエクスポートしました。  <br/> |
 |コンテンツ検索が停止されました  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |ユーザーがコンテンツ検索を停止しました。  <br/> |
-|(なし)|CaseViewed|Get-ComplianceCase|ユーザーは、コンプライアンス センターの [ **コア** 電子情報開示] ページまたはセキュリティ コマンドレットを実行して、ケースの一覧Get-ComplianceCaseしました。|
+|(なし)|CaseViewed|Get-ComplianceCase|ユーザーは、コンプライアンス センターの [コア電子情報開示] ページまたは **Advanced eDiscovery** ページまたは Get-ComplianceCase コマンドレットを実行してケースの一覧をGet-ComplianceCaseしました。|
 |(なし)|SearchViewed|Get-ComplianceSearch|ユーザーは、コンプライアンス センターのコンテンツ検索 ([検索]タブに表示) またはコマンドレットを実行してリストを表示しました。 このアクティビティは、ユーザーが電子情報開示ケースに関連付けられたコンテンツ検索リストを表示した場合 (ケースの [**検索**] タブをクリックした場合)、または **Get-ComplianceSearch -Case** コマンドを実行した場合にも記録されます。|
 |(なし)|ViewedSearchExported|Get-ComplianceSearchAction -Export|ユーザーは、コンプライアンス センターまたはコマンドレットを実行して、コンテンツ検索エクスポートジョブの一覧 ([エクスポート] タブに表示) を表示しました。 このアクティビティは、ユーザーが電子情報開示ケースのエクスポート ジョブのリストを表示した場合 (ケースの [**エクスポート**] タブに表示] タブをクリックした場合)、または **Get-ComplianceSearchAction -Case -Export** コマンドを実行した場合にも記録されます。|
 |(なし)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|ユーザーは、コンプライアンス センターまたはコマンドレットを実行して、コンテンツ検索の結果をプレビューします。|

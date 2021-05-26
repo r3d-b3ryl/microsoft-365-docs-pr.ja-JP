@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: ケースが閉じたり削除された場合に、調査または法的ケースがサポートAdvanced eDiscoveryどうなるかを確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 7b11faa2ccdb44fca916b2f602d5120adadf1739
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419063"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657653"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>ケースを閉じるAdvanced eDiscovery削除する
 
@@ -46,7 +46,9 @@ ms.locfileid: "44419063"
 
 2. [**設定**] タブの [**ケース情報**] で、[**選択**] をクリックします。
 
-3. [**ケースを閉じる**] をクリックします。
+3. [ケース情報] フライアウト **ページ** の下部で、[( ... ) を **クリックします。****[その他のオプション**] をクリックし、[ケースを **閉じる] をクリックします**。
+
+   ![[その他のオプション] メニューのオプションを使用してケースAdvanced eDiscoveryします。](..\Media\CloseAdvancedeDiscoveryCase.png)
 
    閉じられるには最大で 60 分かかります。
 
@@ -60,7 +62,9 @@ ms.locfileid: "44419063"
 
 2. [**設定**] タブの [**ケース情報**] で、[**選択**] をクリックします。
 
-3. [**ケースを再度開く**] をクリックします。
+3. [ケース情報] フライアウト **ページ** の下部で、[( ... ) を **クリックします。****その他のオプション** を選択し、[大文字と小文字を **再度開く] をクリックします**。
+
+   ![[その他のオプション] メニューのオプションを使用して、Advanced eDiscoveryします。](..\Media\ReopenAdvancedeDiscoveryCase.png)
 
    再開プロセスが完了するには、最大で 60 分かかる場合があります。
 
@@ -87,4 +91,6 @@ ms.locfileid: "44419063"
 
 2. [**設定**] タブの [**ケース情報**] で、[**選択**] をクリックします。
 
-3. [**ケースを削除する**] をクリックします。
+3. [ケース情報] フライアウト **ページ** の下部で、[( ... ) を **クリックします。****[その他のオプション**] をクリックし、[大文字と小文字 **の削除] をクリックします**。
+
+   ![[その他のオプション] メニューのオプションで、大文字と小文字をAdvanced eDiscoveryする](..\Media\DeleteAdvancedeDiscoveryCase.png)

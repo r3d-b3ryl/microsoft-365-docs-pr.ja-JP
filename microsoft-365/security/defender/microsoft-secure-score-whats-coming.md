@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d23ec690194f87046e6c5f2ab859201bbf2dede9
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 8880f045202fd1c4374e9cec3076144f81eb68d2
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569805"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657719"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft Secure Score に関する情報
 
@@ -35,9 +35,11 @@ Microsoft Secure Score は、セキュリティ https://security.microsoft.com/s
 
 Microsoft [Secure Score](microsoft-secure-score.md) をセキュリティの姿勢をより良くし、使いやすさを向上させるために、近い将来、いくつかの変更を加えています。 スコアと可能な最大スコアが変更される場合があります。
 
-### <a name="no-planned-changes"></a>計画変更なし
+### <a name="june-2021"></a>2021 年 6 月
 
-現時点では、計画された変更はありません。
+#### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>ユーザーに関連する改善アクションを削除Microsoft Cloud App Security
+
+- 異常なCloud App Securityを検出するには、次の情報を使用します。
 
 ## <a name="related-resources"></a>関連リソース
 
