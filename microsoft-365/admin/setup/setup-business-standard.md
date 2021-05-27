@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Standard を購入するときに、所有するドメインを使用するか、サインアップ時に購入するかを選択することができます。
-ms.openlocfilehash: cee91edaab09506dca90cf5ed64ee9bc669c98cf
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ca9cc359aaabfc16a5d0c57a75362c7826dea0db
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624419"
+ms.locfileid: "52635632"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Microsoft Business Standard をセットアップする
 
@@ -69,7 +69,7 @@ Microsoft 365 Business Standard を購入するときに、所有するドメイ
 
 1. Microsoft 365 Business Basic のサブスクリプションに既存ユーザーがいる場合 (たとえば、Azure AD Connect を使用した場合)、すぐにこれらのユーザーにライセンスを割り当てるオプションが表示されます。続行して、これらのユーザーにもライセンスを追加します。
 
-2. ユーザーを追加すると、追加した新しいユーザーと資格情報を共有するためのオプションも表示されます。 それらを印刷したり、メールで送信したり、ダウンロードしたりすることができます。
+2. ユーザーを追加した後、資格証明書をそれらの新規ユーザーに共有するオプションが提供されます。それらをプリントアウトや電子メールで通知、またはダウンロードすることができます。
 
 ## <a name="connect-your-domain"></a>ドメインを接続する
 
@@ -103,6 +103,8 @@ Microsoft 365 Business Standard を購入するときに、所有するドメイ
 
 3. Microsoft のメール アドレスを入力して、**[接続]** を選択します。
 
+## <a name="watch-set-up-outlook-for-email"></a>注目 : Outlook を電子メール用にセットアップして下さい。
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
 詳細については、「[メール用に Outlook をセットアップする](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f)」を参照してください。
@@ -123,6 +125,8 @@ Microsoft 365 Business Standard を購入するときに、所有するドメイ
 
     今度は、[**他のプログラムまたはファイルからのインポート**] を選択し、古いメールをエクスポートしたときに作成したバックアップ ファイルを手順に従ってインポートします。
 
+## <a name="watch-import-and-redirect-email"></a>注目 : 電子メールをインポートして再配置しましょう。
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
   
 詳細については、「[Outlook でメールをインポートする](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de)」を参照してください。
@@ -136,6 +140,8 @@ Microsoft 365 には、ビジネスに使用するための一般向け Web サ�
 1. 管理センターから、[**リソース**] に移動し、[**一般向け Web サイト**] を選択します。
 
 2. いずれかのオプションの [**詳細情報**] を選択して、Web サイト パートナーにサインアップし、ツールを使用してサイトをセットアップおよびデザインします。
+
+## <a name="watch-create-your-business-website"></a>注目 : ビジネス用のWebサイト を作成しましょう。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
