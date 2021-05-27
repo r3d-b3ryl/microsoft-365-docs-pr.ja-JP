@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 34355a25283207929a12a7bc504b929fbf3041a0
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651010"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683657"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
@@ -104,7 +104,6 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 4. すべてのデバイスは、次のいずれかを満たしている必要があります。
 - [Azure Active Directory (Azure AD) への参加](/azure/active-directory/devices/concept-azure-ad-join)
-- AD への参加
 - [Hybrid Azure AD への参加](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 - [AAD の登録](/azure/active-directory/user-help/user-help-register-device-on-network)
 
