@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 概要
+- name: 作業の開始
   items:
     - name: コンプライアンスを開始するためのクイック タスク
       href: compliance-quick-tasks.md
@@ -798,7 +798,7 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: 監査ログ レコードをエクスポート、構成、表示する
           href: export-view-audit-log-records.md
-        - name: 監査ログ検索を有効または無効にする
+        - name: 監査のオンとオフを切り替える
           href: turn-audit-log-search-on-or-off.md
         - name: 監査ログを使用して一般的な問題を調査する
           href: auditing-troubleshooting-scenarios.md

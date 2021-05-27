@@ -22,204 +22,169 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: ユーザーから古いドメインを削除し、Microsoft 365別のドメインに移動するか、サブスクリプションをキャンセルする方法について学習します。
-ms.openlocfilehash: a8e636059a84a2086844a8ff139d240268ee5b19
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: deec298dda037009e2c66f1b686396c689ecd883
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635704"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683357"
 ---
-# <a name="remove-a-domain"></a><span data-ttu-id="d9ae4-103">ドメインを削除する</span><span class="sxs-lookup"><span data-stu-id="d9ae4-103">Remove a domain</span></span>
+# <a name="remove-a-domain"></a><span data-ttu-id="b99a0-103">ドメインを削除する</span><span class="sxs-lookup"><span data-stu-id="b99a0-103">Remove a domain</span></span>
   
- <span data-ttu-id="d9ae4-104">探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="b99a0-104">探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b99a0-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
   
-<span data-ttu-id="d9ae4-105">別のサブスクリプション プランにドメインを追加する場合、ドメインをMicrosoft 365しますか?</span><span class="sxs-lookup"><span data-stu-id="d9ae4-105">Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan?</span></span> <span data-ttu-id="d9ae4-106">それとも、サブスクリプションをキャンセルするためですか?</span><span class="sxs-lookup"><span data-stu-id="d9ae4-106">Or do you just want to cancel your subscription?</span></span> <span data-ttu-id="d9ae4-107">[プランやサブスクリプションを変更する](../../commerce/subscriptions/switch-to-a-different-plan.md)ことも、[サブスクリプションをキャンセル](../../commerce/subscriptions/cancel-your-subscription.md)することもできます。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-107">You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).</span></span>
+<span data-ttu-id="b99a0-105">別のサブスクリプション プランにドメインを追加する場合、ドメインをMicrosoft 365しますか?</span><span class="sxs-lookup"><span data-stu-id="b99a0-105">Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan?</span></span> <span data-ttu-id="b99a0-106">それとも、サブスクリプションをキャンセルするためですか?</span><span class="sxs-lookup"><span data-stu-id="b99a0-106">Or do you just want to cancel your subscription?</span></span> <span data-ttu-id="b99a0-107">[プランやサブスクリプションを変更する](../../commerce/subscriptions/switch-to-a-different-plan.md)ことも、[サブスクリプションをキャンセル](../../commerce/subscriptions/cancel-your-subscription.md)することもできます。</span><span class="sxs-lookup"><span data-stu-id="b99a0-107">You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).</span></span>
   
-### <a name="step-1-move-users-to-another-domain"></a><span data-ttu-id="d9ae4-108">手順 1: ユーザーを別のドメインに移動する</span><span class="sxs-lookup"><span data-stu-id="d9ae4-108">Step 1: Move users to another domain</span></span>
+### <a name="step-1-move-users-to-another-domain"></a><span data-ttu-id="b99a0-108">手順 1: ユーザーを別のドメインに移動する</span><span class="sxs-lookup"><span data-stu-id="b99a0-108">Step 1: Move users to another domain</span></span>
 
-#### <a name="move-users"></a><span data-ttu-id="d9ae4-109">ユーザーの移動</span><span class="sxs-lookup"><span data-stu-id="d9ae4-109">Move users</span></span>
+#### <a name="move-users"></a><span data-ttu-id="b99a0-109">ユーザーの移動</span><span class="sxs-lookup"><span data-stu-id="b99a0-109">Move users</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="d9ae4-110"><a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-110">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.</span></span>
-
-2. <span data-ttu-id="d9ae4-111">[ユーザー **] [** > **アクティブなユーザー] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-111">Select **Users** > **Active users**.</span></span>
-
-3. <span data-ttu-id="d9ae4-112">移動するすべてのユーザーの名前の横にあるボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-112">Select the boxes next to the names of all the users you want to move.</span></span>
-
-4. <span data-ttu-id="d9ae4-113">ページの上部で、[ドメインの変更] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-113">At the top of the page, and then choose **Change domains**.</span></span>
-
-5. <span data-ttu-id="d9ae4-114">[ドメイン **の変更] ウィンドウで** 、別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-114">In the **Change domains** pane, select a different domain.</span></span>
-
-<span data-ttu-id="d9ae4-p102">削除するドメインを自分も使っている場合は、自分自身についてもこの操作を行う必要があります。自分のアカウントのドメインを編集する場合は、いったんログアウトし、選んだ新しいドメインでログインし直して、続ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-p102">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+1. <span data-ttu-id="b99a0-110"><a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="b99a0-110">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="d9ae4-117"><a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-117">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.</span></span>  
-
-2. <span data-ttu-id="d9ae4-118">[ユーザー **] [** > **アクティブなユーザー] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-118">Select **Users** > **Active users**.</span></span>
-
-3. <span data-ttu-id="d9ae4-119">移動するすべてのユーザーの名前の横にあるボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-119">Select the boxes next to the names of all the users you want to move.</span></span>
-
-4. <span data-ttu-id="d9ae4-120">ページの上部で、[その他の編集ドメイン > **] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-120">At the top of the page, choose **More** > **Edit domains**.</span></span>
-
-5. <span data-ttu-id="d9ae4-121">[ドメイン **の編集] ウィンドウで** 、別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-121">In the **Edit domains** pane, select a different domain.</span></span>
-  
-<span data-ttu-id="d9ae4-p103">削除するドメインを自分も使っている場合は、自分自身についてもこの操作を行う必要があります。自分のアカウントのドメインを編集する場合は、いったんログアウトし、選んだ新しいドメインでログインし直して、続ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-p103">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+1. <span data-ttu-id="b99a0-111"><a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="b99a0-111">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.</span></span>  
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="d9ae4-124"><a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-124">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>  
-
-2. <span data-ttu-id="d9ae4-125">[ユーザー **] [** > **アクティブなユーザー] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-125">Select **Users** > **Active users**.</span></span>
-
-3. <span data-ttu-id="d9ae4-126">移動するすべてのユーザーの名前の横にあるボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-126">Select the boxes next to the names of all the users you want to move.</span></span>
-
-4. <span data-ttu-id="d9ae4-127">ページの上部で、[その他の編集ドメイン > **] を選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-127">At the top of the page, choose **More** > **Edit domains**.</span></span>
-
-5. <span data-ttu-id="d9ae4-128">[ドメイン **の編集] ウィンドウで** 、別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-128">In the **Edit domains** pane, select a different domain.</span></span>
-  
-<span data-ttu-id="d9ae4-p104">削除するドメインを自分も使っている場合は、自分自身についてもこの操作を行う必要があります。自分のアカウントのドメインを編集する場合は、いったんログアウトし、選んだ新しいドメインでログインし直して、続ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-p104">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+1. <span data-ttu-id="b99a0-112"><a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="b99a0-112">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>  
 
 ::: moniker-end
 
-#### <a name="move-yourself"></a><span data-ttu-id="d9ae4-131">自分を移動する</span><span class="sxs-lookup"><span data-stu-id="d9ae4-131">Move yourself</span></span>
+2. <span data-ttu-id="b99a0-113">**[ユーザー]** > **[アクティブ ユーザー]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-113">Select **Users** > **Active users**.</span></span>
+
+3. <span data-ttu-id="b99a0-114">移動するすべてのユーザーの名前の横にあるボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-114">Select the boxes next to the names of all the users you want to move.</span></span>
+
+4. <span data-ttu-id="b99a0-115">ページの上部で、[ドメインの変更] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="b99a0-115">At the top of the page, and then choose **Change domains**.</span></span>
+
+5. <span data-ttu-id="b99a0-116">[ドメイン **の変更] ウィンドウで** 、別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-116">In the **Change domains** pane, select a different domain.</span></span>
+
+<span data-ttu-id="b99a0-p102">削除するドメインを自分も使っている場合は、自分自身についてもこの操作を行う必要があります。自分のアカウントのドメインを編集する場合は、いったんログアウトし、選んだ新しいドメインでログインし直して、続ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="b99a0-p102">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+
+#### <a name="move-yourself"></a><span data-ttu-id="b99a0-119">自分を移動する</span><span class="sxs-lookup"><span data-stu-id="b99a0-119">Move yourself</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="d9ae4-132"><a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-132">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>
-
-2. <span data-ttu-id="d9ae4-133">[ユーザーの **アクティブ** \> **なユーザー]** に移動し、一覧からアカウントを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-133">Go to **Users** \> **Active Users**, and select your account from the list.</span></span>
-
-3. <span data-ttu-id="d9ae4-134">[アカウント **] タブで** 、[ユーザー名の **管理] を選択** し、別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-134">On the **Account** tab, select **Manage username**, and then choose a different domain.</span></span>
-  
-4. <span data-ttu-id="d9ae4-135">上部でアカウント名を選択し、[サインアウト] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-135">At the top, select your account name, then select **Sign Out**.</span></span>
-
-5. <span data-ttu-id="d9ae4-136">新しいドメインと同じパスワードでサインインします。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-136">Sign in with the new domain and your same password.</span></span>
-
-<span data-ttu-id="d9ae4-p105">また、PowerShell を使用してユーザーを別のドメインに移動することもできます。詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-p105">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+1. <span data-ttu-id="b99a0-120"><a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="b99a0-120">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="d9ae4-140">[ユーザーの **アクティブ** \> **なユーザー]** に移動し、一覧で自分の名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-140">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
-
-2. <span data-ttu-id="d9ae4-141">[ユーザー名 **/ メール] セクションで** 、[編集] **を選択** し、別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-141">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
-
-3. <span data-ttu-id="d9ae4-142">[保存 **閉じる] をプライマリ** > **として設定を** > **選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-142">Select **Set as primary** > **Save** > **Close**.</span></span>
-  
-4. <span data-ttu-id="d9ae4-143">上部でアカウント名を選択し、[サインアウト] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-143">At the top, select your account name, then select **Sign Out**.</span></span>
-
-5. <span data-ttu-id="d9ae4-144">新しいドメインと同じパスワードでサインインします。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-144">Sign in with the new domain and your same password.</span></span>
-
-<span data-ttu-id="d9ae4-p106">また、PowerShell を使用してユーザーを別のドメインに移動することもできます。詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-p106">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+1. <span data-ttu-id="b99a0-121"><a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="b99a0-121">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.</span></span>  
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="d9ae4-148">[ユーザーの **アクティブ** \> **なユーザー]** に移動し、一覧で自分の名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-148">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
-
-2. <span data-ttu-id="d9ae4-149">[ユーザー名 **/ メール] セクションで** 、[編集] **を選択** し、別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-149">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
-
-3. <span data-ttu-id="d9ae4-150">[保存 **閉じる] をプライマリ** > **として設定を** > **選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-150">Select **Set as primary** > **Save** > **Close**.</span></span>
-  
-4. <span data-ttu-id="d9ae4-151">上部でアカウント名を選択し、[サインアウト] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-151">At the top, select your account name, then select **Sign Out**.</span></span>
-
-5. <span data-ttu-id="d9ae4-152">新しいドメインと同じパスワードでサインインします。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-152">Sign in with the new domain and your same password.</span></span>
-
-<span data-ttu-id="d9ae4-p107">また、PowerShell を使用してユーザーを別のドメインに移動することもできます。詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-p107">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+1. <span data-ttu-id="b99a0-122"><a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="b99a0-122">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>  
 
 ::: moniker-end
 
-### <a name="step-2-move-groups-to-another-domain"></a><span data-ttu-id="d9ae4-156">手順 2: グループを別のドメインに移動する</span><span class="sxs-lookup"><span data-stu-id="d9ae4-156">Step 2: Move groups to another domain</span></span>
+2. <span data-ttu-id="b99a0-123">[ユーザーの **アクティブ** \> **なユーザー]** に移動し、一覧からアカウントを選択します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-123">Go to **Users** \> **Active Users**, and select your account from the list.</span></span>
+
+3. <span data-ttu-id="b99a0-124">[アカウント **] タブで** 、[ユーザー名の **管理] を選択** し、別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-124">On the **Account** tab, select **Manage username**, and then choose a different domain.</span></span>
+  
+4. <span data-ttu-id="b99a0-125">上部でアカウント名を選択し、[サインアウト] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="b99a0-125">At the top, select your account name, then select **Sign Out**.</span></span>
+
+5. <span data-ttu-id="b99a0-126">新しいドメインと同じパスワードでサインインします。</span><span class="sxs-lookup"><span data-stu-id="b99a0-126">Sign in with the new domain and your same password.</span></span>
+
+<span data-ttu-id="b99a0-p103">また、PowerShell を使用してユーザーを別のドメインに移動することもできます。詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true) を使用します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-p103">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true).</span></span>
+
+### <a name="step-2-move-groups-to-another-domain"></a><span data-ttu-id="b99a0-130">手順 2: グループを別のドメインに移動する</span><span class="sxs-lookup"><span data-stu-id="b99a0-130">Step 2: Move groups to another domain</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="d9ae4-157">管理センターで、[**グループ**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-157">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="b99a0-131">管理センターで、[**グループ**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-131">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+
+::: moniker-end
+::: moniker range="o365-germany"
+
+1. <span data-ttu-id="b99a0-132">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>グループ グループ] **ページ** > **に移動** します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-132">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. <span data-ttu-id="b99a0-133">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>グループ グループ] **ページ** > **に移動** します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-133">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
+
+::: moniker-end
   
-2. <span data-ttu-id="d9ae4-158">グループ名を選択し、[メール アドレス] の [全般] タブの **[** プライマリ] で、[編集] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-158">Select the group name, and then on the **General** tab under **Email address, Primary**, select **Edit**.</span></span>
+2. <span data-ttu-id="b99a0-134">グループ名を選択し、[メール アドレス] の [全般] タブの **[** プライマリ] で、[編集] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="b99a0-134">Select the group name, and then on the **General** tab under **Email address, Primary**, select **Edit**.</span></span>
 
-3. <span data-ttu-id="d9ae4-159">ドロップダウン リストを使用して別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-159">Use the drop-down list to choose another domain.</span></span>
+3. <span data-ttu-id="b99a0-135">ドロップダウン リストを使用して別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-135">Use the drop-down list to choose another domain.</span></span>
 
-4. <span data-ttu-id="d9ae4-160">[**保存**]、[**閉じる**] の順に選びます。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-160">Select **Save**, then **Close**.</span></span> <span data-ttu-id="d9ae4-161">削除するドメインに関連付けられているすべてのグループまたは配布リストについて、この処理を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-161">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+4. <span data-ttu-id="b99a0-136">[**保存**]、[**閉じる**] の順に選びます。</span><span class="sxs-lookup"><span data-stu-id="b99a0-136">Select **Save**, then **Close**.</span></span> <span data-ttu-id="b99a0-137">削除するドメインに関連付けられているすべてのグループまたは配布リストについて、この処理を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-137">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+
+### <a name="step-3-remove-the-old-domain"></a><span data-ttu-id="b99a0-138">手順 3: 古いドメインを削除する</span><span class="sxs-lookup"><span data-stu-id="b99a0-138">Step 3: Remove the old domain</span></span>
+
+::: moniker range="o365-worldwide"
+
+1. <span data-ttu-id="b99a0-139">管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-139">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="d9ae4-162">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">で、[</a>グループ グループ] **ページ** > **に移動** します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-162">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
-
-2. <span data-ttu-id="d9ae4-163">グループ名を選択し、[名前] の横にある **[編集** ] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-163">Select the group name, and then select **Edit** next to **Name**.</span></span>
-
-3. <span data-ttu-id="d9ae4-164">ドロップダウン リストを使用して別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-164">Use the drop-down list to choose another domain.</span></span>
-
-4. <span data-ttu-id="d9ae4-165">[**保存**]、[**閉じる**] の順に選びます。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-165">Select **Save**, then **Close**.</span></span> <span data-ttu-id="d9ae4-166">削除するドメインに関連付けられているすべてのグループまたは配布リストについて、この処理を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-166">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+1. <span data-ttu-id="b99a0-140">管理センターで、[セットアップ ドメイン] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">に移動</a> します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-140">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="d9ae4-167">管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">で、[</a>グループ グループ] **ページ** > **に移動** します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-167">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
-
-2. <span data-ttu-id="d9ae4-168">グループ名を選択し、[名前] の横にある **[編集** ] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-168">Select the group name, and then select **Edit** next to **Name**.</span></span>
-
-3. <span data-ttu-id="d9ae4-169">ドロップダウン リストを使用して別のドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-169">Use the drop-down list to choose another domain.</span></span>
-
-4. <span data-ttu-id="d9ae4-170">[**保存**]、[**閉じる**] の順に選びます。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-170">Select **Save**, then **Close**.</span></span> <span data-ttu-id="d9ae4-171">削除するドメインに関連付けられているすべてのグループまたは配布リストについて、この処理を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-171">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
-
-::: moniker-end
-
-### <a name="step-3-remove-the-old-domain"></a><span data-ttu-id="d9ae4-172">手順 3: 古いドメインを削除する</span><span class="sxs-lookup"><span data-stu-id="d9ae4-172">Step 3: Remove the old domain</span></span>
-
-::: moniker range="o365-worldwide"
-
-1. <span data-ttu-id="d9ae4-173">管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-173">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <span data-ttu-id="d9ae4-174">管理センターで、[セットアップ ドメイン] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">に移動</a> します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-174">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <span data-ttu-id="d9ae4-175">管理センターで、[セットアップ ドメイン] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">に移動</a> します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-175">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="b99a0-141">管理センターで、[セットアップ ドメイン] **ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">に移動</a> します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-141">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
   
-2. <span data-ttu-id="d9ae4-176">[ドメイン **] ページ** で、削除するドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-176">On the **Domains** page, select the domain that you want to remove.</span></span>
+2. <span data-ttu-id="b99a0-142">[ドメイン **] ページ** で、削除するドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-142">On the **Domains** page, select the domain that you want to remove.</span></span>
 
-3. <span data-ttu-id="d9ae4-177">右側のウィンドウで、[削除] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-177">In the right pane, select **Remove**.</span></span>
+3. <span data-ttu-id="b99a0-143">右側のウィンドウで、[削除] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="b99a0-143">In the right pane, select **Remove**.</span></span>
 
-4. <span data-ttu-id="d9ae4-178">追加のプロンプトに従って、[閉じる] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-178">Follow any additional prompts, and then select **Close**.</span></span>
+4. <span data-ttu-id="b99a0-144">追加のプロンプトに従って、[閉じる] を **選択します**。</span><span class="sxs-lookup"><span data-stu-id="b99a0-144">Follow any additional prompts, and then select **Close**.</span></span>
 
-## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a><span data-ttu-id="d9ae4-179">ドメインが削除されるまで、どれくらいかかりますか?</span><span class="sxs-lookup"><span data-stu-id="d9ae4-179">How long does it take for a domain to be removed?</span></span>
+## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a><span data-ttu-id="b99a0-145">ドメインが削除されるまで、どれくらいかかりますか?</span><span class="sxs-lookup"><span data-stu-id="b99a0-145">How long does it take for a domain to be removed?</span></span>
 
-<span data-ttu-id="d9ae4-180">Microsoft 365 がセキュリティ グループ、配布リスト、ユーザー、Microsoft 365 グループなどの多くの場所で参照されていない場合、ドメインを削除するにはわずか 5 分かかります。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-180">It can take as little as 5 minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Microsoft 365 groups.</span></span> <span data-ttu-id="d9ae4-181">ドメインを使用する参照が多い場合、ドメインが削除されるまでに数時間 (1 日) 程度かかることもあります。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-181">If there are many references that use the domain it can take several hours (a day) for the domain to be removed.</span></span>
+<span data-ttu-id="b99a0-146">Microsoft 365 がセキュリティ グループ、配布リスト、ユーザー、Microsoft 365 グループなどの多くの場所で参照されていない場合、ドメインを削除するにはわずか 5 分かかります。</span><span class="sxs-lookup"><span data-stu-id="b99a0-146">It can take as little as 5 minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Microsoft 365 groups.</span></span> <span data-ttu-id="b99a0-147">ドメインを使用する参照が多い場合、ドメインが削除されるまでに数時間 (1 日) 程度かかることもあります。</span><span class="sxs-lookup"><span data-stu-id="b99a0-147">If there are many references that use the domain it can take several hours (a day) for the domain to be removed.</span></span>
   
-<span data-ttu-id="d9ae4-p112">数百から数千のユーザーがいる場合は、PowerShell を使用してすべてのユーザーに対するクエリを実行してから、別のドメインに移動してください。これを行わないと、一部のユーザーが UI に表示されない可能性があり、ドメインを削除しようとしてもなぜか失敗します。詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-p112">If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="b99a0-p106">数百から数千のユーザーがいる場合は、PowerShell を使用してすべてのユーザーに対するクエリを実行してから、別のドメインに移動してください。これを行わないと、一部のユーザーが UI に表示されない可能性があり、ドメインを削除しようとしてもなぜか失敗します。詳細については、「[Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true) を使用します。</span><span class="sxs-lookup"><span data-stu-id="b99a0-p106">If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true).</span></span>
   
-## <a name="still-need-help"></a><span data-ttu-id="d9ae4-186">さらにヘルプが必要ですか?</span><span class="sxs-lookup"><span data-stu-id="d9ae4-186">Still need help?</span></span>
+## <a name="still-need-help"></a><span data-ttu-id="b99a0-152">さらにヘルプが必要ですか?</span><span class="sxs-lookup"><span data-stu-id="b99a0-152">Still need help?</span></span>
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> <span data-ttu-id="d9ae4-187">アカウントから [".onmicrosoft.com"](../setup/domains-faq.yml) ドメインを削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-187">You can't remove the [".onmicrosoft.com"](../setup/domains-faq.yml) domain from your account.</span></span> <span data-ttu-id="d9ae4-188">ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".onmicrosoft.com" アドレスに戻されます。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-188">When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.</span></span>
+> <span data-ttu-id="b99a0-153">アカウントから [".onmicrosoft.com"](../setup/domains-faq.yml) ドメインを削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="b99a0-153">You can't remove the [".onmicrosoft.com"](../setup/domains-faq.yml) domain from your account.</span></span> <span data-ttu-id="b99a0-154">ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".onmicrosoft.com" アドレスに戻されます。</span><span class="sxs-lookup"><span data-stu-id="b99a0-154">When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.</span></span>
   
-<span data-ttu-id="d9ae4-p114">それでもうまくいかない場合、ドメインを手動で削除する必要があります。[ご連絡いただければ](../../business-video/get-help-support.md)、お手伝いいたします。</span><span class="sxs-lookup"><span data-stu-id="d9ae4-p114">Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md) and we'll help you take care of it!</span></span>
+<span data-ttu-id="b99a0-p108">それでもうまくいかない場合、ドメインを手動で削除する必要があります。[ご連絡いただければ](../../business-video/get-help-support.md)、お手伝いいたします。</span><span class="sxs-lookup"><span data-stu-id="b99a0-p108">Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md) and we'll help you take care of it!</span></span>
   
 ::: moniker-end
 
-## <a name="related-content"></a><span data-ttu-id="d9ae4-192">関連コンテンツ</span><span class="sxs-lookup"><span data-stu-id="d9ae4-192">Related content</span></span>
+::: moniker range="o365-germany"
 
-<span data-ttu-id="d9ae4-193">[ドメインに関する FAQ](../setup/domains-faq.yml) (記事)</span><span class="sxs-lookup"><span data-stu-id="d9ae4-193">[Domains FAQ](../setup/domains-faq.yml) (article)</span></span>\
-<span data-ttu-id="d9ae4-194">[ビジネス プランの別のMicrosoft 365に切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)(記事)</span><span class="sxs-lookup"><span data-stu-id="d9ae4-194">[Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)</span></span>\
-<span data-ttu-id="d9ae4-195">[サブスクリプションをキャンセルする](../../commerce/subscriptions/cancel-your-subscription.md) (記事)</span><span class="sxs-lookup"><span data-stu-id="d9ae4-195">[Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md) (article)</span></span>
+> [!NOTE]
+> <span data-ttu-id="b99a0-158">アカウントから [".onmicrosoft.de"](../setup/domains-faq.yml) ドメインを削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="b99a0-158">You can't remove the [".onmicrosoft.de"](../setup/domains-faq.yml) domain from your account.</span></span> <span data-ttu-id="b99a0-159">ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".onmicrosoft.de" アドレスに戻されます。</span><span class="sxs-lookup"><span data-stu-id="b99a0-159">When you remove a domain, user accounts will revert back to the ".onmicrosoft.de" address as the Primary SMTP/UserprincipalName.</span></span>
+  
+<span data-ttu-id="b99a0-p110">それでもうまくいかない場合、ドメインを手動で削除する必要があります。[ご連絡いただければ](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true)、お手伝いいたします。</span><span class="sxs-lookup"><span data-stu-id="b99a0-p110">Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true) and we'll help you take care of it!</span></span>
+  
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> <span data-ttu-id="b99a0-163">アカウントから [".partner.onmschina.cn"](../setup/domains-faq.yml) ドメインを削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="b99a0-163">You can't remove the [".partner.onmschina.cn"](../setup/domains-faq.yml) domain from your account.</span></span> <span data-ttu-id="b99a0-164">ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".partner.onmschina.cn" アドレスに戻されます。</span><span class="sxs-lookup"><span data-stu-id="b99a0-164">When you remove a domain, user accounts will revert back to the ".partner.onmschina.cn" address as the Primary SMTP/UserprincipalName.</span></span>
+  
+<span data-ttu-id="b99a0-p112">それでもうまくいかない場合、ドメインを手動で削除する必要があります。[ご連絡いただければ](../../business-video/get-help-support.md?view=o365-21vianet&preserve-view=true)、お手伝いいたします。</span><span class="sxs-lookup"><span data-stu-id="b99a0-p112">Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md?view=o365-21vianet&preserve-view=true) and we'll help you take care of it!</span></span>
+  
+::: moniker-end
+
+## <a name="related-content"></a><span data-ttu-id="b99a0-168">関連コンテンツ</span><span class="sxs-lookup"><span data-stu-id="b99a0-168">Related content</span></span>
+
+<span data-ttu-id="b99a0-169">[ドメインの FAQ](../setup/domains-faq.yml) (記事)</span><span class="sxs-lookup"><span data-stu-id="b99a0-169">[Domains FAQ](../setup/domains-faq.yml) (article)</span></span>\
+<span data-ttu-id="b99a0-170">[ビジネス プランの別のMicrosoft 365に切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)(記事)</span><span class="sxs-lookup"><span data-stu-id="b99a0-170">[Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)</span></span>\
+<span data-ttu-id="b99a0-171">[サブスクリプションをキャンセルする](../../commerce/subscriptions/cancel-your-subscription.md) (記事)</span><span class="sxs-lookup"><span data-stu-id="b99a0-171">[Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md) (article)</span></span>
