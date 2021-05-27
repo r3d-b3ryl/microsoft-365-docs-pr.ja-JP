@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: ユーザー アカウントを削除する方法と、ユーザーの電子メールとコンテンツをOneDriveする方法、および製品ライセンスを保持するかどうかを説明します。
-ms.openlocfilehash: ff10d3289eae87f84685c22b81db03798ca9d7eb
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 43a57a69ce0d810af2b029f49c15d32d75a4dc33
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634210"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683141"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
 **職場または学校で使用する *自分の* Microsoft 365 ユーザー アカウントを削除する方法をお探しの場合は、職場または大学のテクニカル サポートにこれらの手順の実行を依頼してください。**
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - ユーザー アカウントを削除できるのは、職場や学校の [Microsoft 365 グローバル管理者](about-admin-roles.md)またはユーザー管理のアクセス許可を持っている管理者のみです。
 - 30 日後にユーザーのデータが永久に削除されるまではアカウントを[復元](restore-user.md)できます。
@@ -66,13 +66,13 @@ ms.locfileid: "52634210"
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+ 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+ 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
@@ -87,19 +87,11 @@ ms.locfileid: "52634210"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。  
 
-2. 削除するユーザーの名前を選択し、3 つのドット (その他のアクション) を選択し、[ユーザーの削除]  **を選択します**。
-
-   これによりユーザーのアカウントは削除されますが、**ライセンスの支払いは継続します**。 ライセンスの支払いを停止するには、次の手順を参照してください。  または、ライセンスを別のユーザーに割り当てることができます。 ライセンスが自動的に別のユーザーに割り当てられることはありません。
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-2. 削除するユーザーの名前を選択し、[**一括操作**] ウィンドウで [**ユーザー の削除**] を選択します。
-
-   これによりユーザーのアカウントは削除されますが、**ライセンスの支払いは継続します**。 ライセンスの支払いを停止するには、次の手順を参照してください。  または、ライセンスを別のユーザーに割り当てることができます。 ライセンスが自動的に別のユーザーに割り当てられることはありません。
 
 ::: moniker-end
 
@@ -107,11 +99,11 @@ ms.locfileid: "52634210"
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
-2. 削除するユーザーの名前を選択し、[**一括操作**] ウィンドウで [**ユーザー の削除**] を選択します。
+::: moniker-end
+
+2. 削除するユーザーの名前を選択し、3 つのドット (その他のアクション) を選択し、[ユーザーの削除]  **を選択します**。
 
    これによりユーザーのアカウントは削除されますが、**ライセンスの支払いは継続します**。 ライセンスの支払いを停止するには、次の手順を参照してください。  または、ライセンスを別のユーザーに割り当てることができます。 ライセンスが自動的に別のユーザーに割り当てられることはありません。
-
-::: moniker-end
 
 ### <a name="stop-paying-for-the-license"></a>ライセンスの支払いを停止する
 
@@ -119,7 +111,19 @@ ms.locfileid: "52634210"
   
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。 このオプションが表示されない場合は、グローバル管理者または請求管理者ではないことを意味します。この場合、この手順を実行することはできません。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+::: moniker-end
 
 2. [製品 **] タブ** で、ライセンスを削除するサブスクリプションを選択します。
 
@@ -130,28 +134,6 @@ ms.locfileid: "52634210"
 5. **[保存]** を選択します。
 
 将来、新しいユーザーを組織のサブスクリプションに追加する手順を実行すると、ライセンスの購入を求めるメッセージが表示されるため、手間が省けます。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。 このオプションが表示されない場合は、グローバル管理者または請求管理者ではないことを意味します。この場合、この手順を実行することはできません。
-
-2. (サブスクリプションが複数ある場合は) サブスクリプションを選択し、[**ライセンスの追加/削除**] を選択してライセンスを削除します。こうすることで、新しい従業員を採用するまでライセンスの支払いを停止できます。  
-
-   将来、新しいユーザーを組織のサブスクリプションに追加する手順を実行すると、ライセンスの購入を求めるメッセージが表示されるため、手間が省けます。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。 このオプションが表示されない場合は、グローバル管理者または請求管理者ではないことを意味します。この場合、この手順を実行することはできません。
-
-2. (サブスクリプションが複数ある場合は) サブスクリプションを選択し、[**ライセンスの追加/削除**] を選択してライセンスを削除します。こうすることで、新しい従業員を採用するまでライセンスの支払いを停止できます。  
-
-   将来、新しいユーザーを組織のサブスクリプションに追加する手順を実行すると、ライセンスの購入を求めるメッセージが表示されるため、手間が省けます。
-
-::: moniker-end
 
 ## <a name="delete-many-users-at-the-same-time"></a>多数のユーザーを同時に削除する
 

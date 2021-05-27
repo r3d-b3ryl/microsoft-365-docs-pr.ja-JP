@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c746a74899a34827e089f4c9c2f6ecc396bb69c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ec8dd97a563edc487008d028a7cdc9f6ef3d17c1
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538773"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689087"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>ゼロデイの脆弱性を軽減する - 脅威と脆弱性の管理
 
@@ -46,7 +46,7 @@ ms.locfileid: "52538773"
 ゼロデイの脆弱性が見つかったら、この脆弱性に関する情報は、次のエクスペリエンスを通じてMicrosoft Defender セキュリティ センター。
 
 >[!NOTE]
-> 現在、0 日間の機能は、Windows製品 (Mac、Linux) では使用できません。ただし、今後追加される予定です。
+> 現在、0 日間の脆弱性機能は、特定の製品でのみWindowsできます。
 
 ### <a name="threat-and-vulnerability-management-dashboard"></a>脅威と脆弱性の管理ダッシュボード
 
@@ -108,7 +108,7 @@ ms.locfileid: "52538773"
 
 ![新しいパッチ ラベルを使用して "Microsoft Windows 10 を更新する" に関する推奨事項。](images/tvm-zero-day-patch.jpg)
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

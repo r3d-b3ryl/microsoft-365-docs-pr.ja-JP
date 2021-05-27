@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: be21be07758c1123cdde38e3750cafe739bfb66a
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 951f78ba361a12e404a5cce2071f931eab30c43f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653655"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689215"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>デバイスごとのソフトウェアの脆弱性評価のエクスポート
 
@@ -37,21 +37,23 @@ ms.locfileid: "52653655"
 [!include[Prerelease information](../../includes/prerelease.md)]
 >
 >
-既知のすべての脆弱性とその詳細をデバイスごとに返します。
+すべての既知のソフトウェアの脆弱性と、すべてのデバイスの詳細をデバイスごとに返します。
 
 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 データの量が非常に多い場合は、次の 2 つの方法で取得できます。
 
-- **OData**  API は、OData プロトコルに従って、組織内のすべてのデータを Json 応答として取得します。 この方法は _、100K 未満_ のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から \@ odata.nextLink フィールドを使用して次の結果を取得できます。
+- [ソフトウェアの脆弱性評価 OData のエクスポート](#1-export-software-vulnerabilities-assessment-odata)  API は、OData プロトコルに従って、組織内のすべてのデータを Json 応答として取得します。 この方法は _、100 K 未満_ のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から \@ odata.nextLink フィールドを使用して次の結果を取得できます。
 
-- **ファイル経由** この API ソリューションを使用すると、大量のデータを高速かつ確実に取得できます。 そのため、100K を超えるデバイスを持つ大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとして取得します。 応答には、すべてのデータをダウンロードする URL が含Azure Storage。 この API を使用すると、すべてのデータを次のようにAzure Storageダウンロードできます。
+- [ファイルを使用してソフトウェアの脆弱性評価をエクスポートする](#2-export-software-vulnerabilities-assessment-via-files) この API ソリューションを使用すると、大量のデータを高速かつ確実に取得できます。 そのため、100 K を超えるデバイスを使用する大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとして取得します。 応答には、すべてのデータをダウンロードする URL が含Azure Storage。 この API を使用すると、すべてのデータを次のようにAzure Storageダウンロードできます。
 
   - API を呼び出して、すべての組織データを含むダウンロード URL の一覧を取得します。
 
   - ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
 
-収集されるデータ _(OData_ またはファイル経由 _)_ は、現在の状態の現在のスナップショットであり、古いデータは含まれておりません。 過去のデータを収集するには、ユーザーがデータを独自のデータ ストレージに保存する必要があります。
+収集されるデータ _(OData_ またはファイル _経由)_ は、現在の状態の現在のスナップショットであり、古いデータは含まれておりません。 過去のデータを収集するには、ユーザーがデータを独自のデータ ストレージに保存する必要があります。
 
-特に示されていない限り、一覧表示されているエクスポート評価方法はすべて、**** 完全なエクスポートと **_デバイス別_**(デバイス単位とも **_呼_** ばれます) です。
+> [!Note]
+>
+> 特に示されていない限り、一覧表示されているエクスポート評価方法はすべて、**** 完全なエクスポートと **_デバイス別_**(デバイス単位とも **_呼_** ばれます) です。
 
 ## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. ソフトウェア脆弱性評価のエクスポート (OData)
 
@@ -93,10 +95,10 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >
 >- 応答で追加の列が返される場合があります。 これらの列は一時的なもので、削除される場合があります。文書化された列のみを使用してください。
 >
->- 次の表で定義されているプロパティは、プロパティ ID 別に英数字で一覧表示されます。  この API を実行する場合、結果の出力は必ずしもこれらの表に示されているのと同じ順序で返されるとは限りません。
+>- 次の表で定義されているプロパティは、プロパティ ID によってアルファベット順に一覧表示されます。  この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
 >
 
-プロパティ (id) | データ型 | 説明 | 返される値の例
+プロパティ (ID) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
 CveId | string | 共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。 | CVE-2020-15992
 CvssScore | string | CVE の CVSS スコア。 | 6.2
@@ -270,7 +272,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
 
 ### <a name="22-permissions"></a>2.2 アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください](apis-intro.md)。
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 ---|---|---
@@ -304,10 +306,8 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 >
 >- 応答で追加の列が返される場合があります。 これらの列は一時的なもので、削除される場合があります。文書化された列のみを使用してください。
 >
->- 次の表で定義されているプロパティは、プロパティ ID によってアルファベット順に一覧表示されます。  この API を実行する場合、結果の出力は必ずしもこれらの表に示されているのと同じ順序で返されるとは限りません。
->
 
-プロパティ (id) | データ型 | 説明 | 返される値の例
+プロパティ (ID) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
 ファイルのエクスポート | 配列 \[ 文字列\]  | 組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧。 | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
 GeneratedTime | string | エクスポートが生成された時刻。 | 2021-05-20T08:00:00Z

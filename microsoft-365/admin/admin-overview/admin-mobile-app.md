@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理者アプリMicrosoft 365取得し、携帯電話またはタブレットからオンライン組織を管理する方法について学習します。
-ms.openlocfilehash: 2f6b27b409dd456a88a17a9825fae3ec24d787a4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f8834aca0835a209a4df32a934eca736c5f7808f
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244022"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683237"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>管理者Microsoft 365アプリについて
 
@@ -50,6 +50,10 @@ ms.locfileid: "52244022"
   
 > [!IMPORTANT]
 > iOS または Android の管理モバイル アプリを使用して問題が発生した場合は、feedback365@microsoft.com にお問 [い合](mailto:feedback365@microsoft.com) わせください。
+
+## <a name="before-you-begin"></a>はじめに
+
+管理者モバイル アプリを使用するには、Microsoft 365組織の管理者である必要があります。
   
 ## <a name="download-the-admin-mobile-app"></a>管理者のモバイル アプリをダウンロードする
 
@@ -115,7 +119,11 @@ ms.locfileid: "52244022"
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>質問の回答がない場合はどうすればよいですか?
 
 メール [feedback365@microsoft.com](mailto:feedback365@microsoft.com) アプリに関する問題を報告します。 または、この記事の下部でフィードバックを提供できます。
-  
-## <a name="related-content"></a>関連コンテンツ 
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](../../business-video/index.yml) (リンク ページ)
+## <a name="next-steps"></a>次の手順
+
+管理モバイルをダウンロードしたら、ユーザーを追加して開始できます。
+  
+## <a name="related-content"></a>関連コンテンツ
+
+[一般法人向け Microsoft 365 のトレーニング ビデオ](../../business-video/index.yml)

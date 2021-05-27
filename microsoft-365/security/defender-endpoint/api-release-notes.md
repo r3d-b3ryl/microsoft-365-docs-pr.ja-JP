@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5c8e9d8e1c8ec020b4d742f61d276c93f6730bec
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4f9d3b365fb735805644f33b3a843ad66e777ce4
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245554"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684125"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Microsoft Defender for Endpoint API リリース ノート
 
@@ -38,6 +38,10 @@ ms.locfileid: "52245554"
 > ```
 
 ## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a>リリース ノート - 最新から最も古い (dd.mm.yyyy)
+
+### <a name="05252021"></a>05.25.2021
+
+- デバイスごとに新しい API [Export の評価方法とプロパティを追加しました](get-assessmnt-1methods-properties.md)。
 
 ### <a name="03052021"></a>03.05.2021
 

@@ -2,8 +2,8 @@
 title: 管理者センターのゲスト Microsoft 365ユーザー
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 管理者センターでゲストとチームを作成するMicrosoft 365ゲストとしてチームに参加する方法について学習します。
-ms.openlocfilehash: b458aaba464121e2e408013d4c8f32cd8a6852c5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: ゲスト ユーザーの一覧が管理センターにMicrosoft 365します。
+ms.openlocfilehash: 7c0fbfb57c9710103d1b670eb09024501071d602
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634186"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683393"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>管理者センター Microsoft 365ゲスト ユーザー
 
@@ -34,35 +34,38 @@ ms.locfileid: "52634186"
 
 ゲスト ユーザーを表示するには、管理者センター Microsoft 365左側のナビゲーションで、[ユーザー] を展開し、[ゲスト ユーザー]**を選択します**。
 
-## <a name="watch-create-a-team-with-guests"></a>ウォッチ: ゲストとチームを作成する
+## <a name="before-you-begin"></a>はじめに
 
-ゲストを他のユーザーに追加するTeams、次のビデオを参照してください。 <br><br>
+このタスクを実行するには、グローバル管理者である必要があります。
+
+## <a name="watch-add-guests-to-teams"></a>ウォッチ: ゲストを他のユーザーにTeams
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
 ## <a name="watch-join-a-team-as-a-guest"></a>ウォッチ: チームにゲストとして参加する
 
-チームにゲストとして参加するには、次のビデオを参照してください。<br><br>
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
 
-## <a name="add-guests-in-azure-active-directory"></a>ゲストを追加Azure Active Directory
+## <a name="steps-add-guests-in-azure-active-directory"></a>手順: ゲストをユーザーに追加Azure Active Directory
 
-ゲストを追加するには、「ゲスト ユーザー Azure Active Directoryする[」を参照してください](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
+ゲストを追加するには、「ゲスト ユーザー Azure Active Directoryする[」を参照してください](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
 
 ユーザーを追加した後、ユーザーをグループに割り当てるか、組織内のアプリにアクセス権を与えすることもできます。 Azure AD ポータルにユーザーを追加すると、そのユーザーは管理センターの [ゲスト ユーザー]ページMicrosoft 365されます。
 ユーザーが [ゲスト ユーザー]リストに追加された後は[](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center)、管理センターの [グループ] Microsoft 365できます。
 
-複数 [のゲストを組織との共同作業](/azure/active-directory/b2b/tutorial-bulk-invite) に招待するには、「ゲストを一括で追加する」を参照してください。
+複数 [のゲストを組織との共同作業](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) に招待するには、「ゲストを一括で追加する」を参照してください。
 
-## <a name="remove-a-guest"></a>ゲストを削除する
+## <a name="next-steps-remove-a-guest"></a>次の手順: ゲストを削除する
+
+ゲスト ユーザーとの共同作業が完了したら、それらを削除でき、組織にアクセスできなくなりました。
 
 1. 管理センターでMicrosoft 365を展開し **、[ゲスト** ユーザー]**を選択します**。
-1. [ゲスト **ユーザー] ページ** で、削除するユーザーを選択し、[ユーザーの削除 **] を選択します**。 
+1. [ゲスト **ユーザー] ページ** で、削除するユーザーを選択し、[ユーザーの削除 **] を選択します**。
 
-Azure AD ポータルでユーザーを削除するには、「ゲスト [ユーザーとリソースを削除する」を参照してください](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。
+Azure AD ポータルでユーザーを削除するには、「ゲスト [ユーザーとリソースを削除する」を参照してください](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[グループ内のゲスト アクセスMicrosoft 365管理](../create-groups/manage-guest-access-in-groups.md)する (記事)\
-[ゲストが特定のグループまたはチームにMicrosoft 365されるの](../../solutions/per-group-guest-access.md)をMicrosoft Teamsする (記事)
+[Microsoft 365 管理センターのゲスト ユーザー](about-guest-users.md)
+
+[ゲストが特定の Microsoft 365 グループまたは Microsoft Teams チームに追加されるのを防ぐ](../../solutions/per-group-guest-access.md)

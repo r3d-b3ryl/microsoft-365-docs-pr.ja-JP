@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb436cbd2d0fa453872760c1d2656585e02d1767
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1800cfdabd402321c49b737eff7f9d67639eb300
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538869"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689003"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>サポート終了のソフトウェアとソフトウェアのバージョンを計画する場合は、脅威と脆弱性の管理
 
@@ -42,7 +42,7 @@ ms.locfileid: "52538869"
 セキュリティと IT 管理者が一緒に作業し、最適な結果、コンプライアンス、および健全なネットワーク エコシステムのために組織のソフトウェア インベントリが構成されていることを確認することが重要です。 サポートが終了し、サポートされなくなったバージョンを更新したアプリを削除または置き換えるオプションを確認する必要があります。 サポート終了日前に計画を作成して実装するのが最善です。
 
 >[!NOTE]
-> EOS 機能は、現在、製品以外のWindows (Mac、Linux) では使用できません。ただし、今後追加される予定です。
+> 現在、サポート終了機能は、現在、一部の製品Windowsできます。
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>サポートされなくなったソフトウェアまたはソフトウェアのバージョンを検索する
 

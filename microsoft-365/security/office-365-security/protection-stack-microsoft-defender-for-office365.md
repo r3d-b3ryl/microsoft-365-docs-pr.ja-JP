@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Microsoft Defender の脅威フィルター スタックを通じて受信メッセージのパスに従って、Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538689"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683297"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
 
@@ -111,13 +111,13 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Defender for Office 365のフェーズ 4 は、配信後の保護です。":::
 
-1. **セーフリンクは**、MDO のクリック時保護です。 すべてのメッセージのすべての URL は、Microsoft のリンク サーバーをポイントセーフされます。 URL をクリックすると、ユーザーがターゲット サイトにリダイレクトされる前に、最新の評価に対してチェックされます。 URL は、評判を更新するために非同期的にサンドボックス化されます。
+1. **セーフリンクは**、Office 365のクリック時の保護のための Defender です。 すべてのメッセージのすべての URL は、Microsoft のリンク サーバーをポイントセーフされます。 URL をクリックすると、ユーザーがターゲット サイトにリダイレクトされる前に、最新の評価に対してチェックされます。 URL は、評判を更新するために非同期的にサンドボックス化されます。
 
-2. **フィッシング Zero-Hour自動パージ (ZAP)** は、既にメールボックスに配信されている悪意のあるフィッシング メッセージをさかのぼって検出Exchange Onlineします。
+2. **ゼロアワー自動削除 (ZAP)** によるフィッシング詐欺は、既にメールボックスに配信されている悪意のあるフィッシング メッセージを遡及的に検出Exchange Onlineします。
 
-3. **マルウェア ZAP は**、既にメールボックスに配信されている悪意のあるマルウェア メッセージをさかのぼって検出Exchange Onlineします。
+3. **マルウェアの ZAP は**、既にメールボックスに配信されている悪意のあるマルウェア メッセージをさかのぼって検出Exchange Onlineします。
 
-4. **Spam ZAP は**、既にメールボックスに配信されている悪意のあるスパム メッセージをさかのぼって検出Exchange Onlineします。
+4. **フィッシングの ZAP は**、既にメールボックスに配信されている悪意のあるスパム メッセージをさかのぼって検出Exchange Onlineします。
 
 5. **キャンペーン ビューを** 使用すると、管理者は自動化を行わずに、どのチームよりも速く、より完全に攻撃の大きな画像を見ることができます。 Microsoft は、サービス全体で膨大な量のフィッシング対策、スパム対策、マルウェア対策データを活用してキャンペーンを特定し、管理者がターゲット、影響、フローなど、ダウンロード可能なキャンペーンの書き込みにも使用できるデータを最初から最後まで調査できます。
 
@@ -129,14 +129,13 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
 
 9. ファイルをポイントする URL が配信後に選択されている場合、リンクされたコンテンツの削除は、ファイルのサンドボックスが完了し、URL が安全である場合まで警告ページを表示します。
 
-
 ## <a name="the-filtering-stack-diagram"></a>フィルター スタックの図
 
 最終的な図 (構成するダイアグラムのすべての部分と同様) は、製品の成長と開発に応じて *変更される可能性があります*。 このページをブックマーク **し、更新** 後に確認する必要がある場合は、下部にあるフィードバック オプションを使用します。 レコードの場合、これはすべてのフェーズを順番に持つスタックです。
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="MDO で 1 ~ 4 の順序でフィルター処理のすべてのフェーズ。":::
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 Microsoft Defender for Office 365 * 今すぐ _を **設定する必要** がありますか? このスタック (_now*) を使用して[](protect-against-threats.md)、組織の保護を開始します。
 

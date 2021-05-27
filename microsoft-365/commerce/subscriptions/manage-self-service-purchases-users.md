@@ -18,21 +18,14 @@ search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学習できます。
 ms.date: 03/17/2021
-ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536084"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683669"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 ユーザーは、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てできます。 セルフサービス購入の支払いは、お客様が行う責任があります。 サブスクリプションは、管理センターの Microsoft 365で管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com。</a>
 
@@ -42,12 +35,42 @@ ms.locfileid: "52536084"
 
 購入したセルフサービス購入サブスクリプションの一覧を表示できます。
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+::: moniker-end
 2. [製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>ライセンスを購入または減らす方法
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+::: moniker-end
 2. [製品 **] タブ** で、購入するサブスクリプションを選択するか、ライセンスを減らします。
 3. [ライセンス **の購入] または** [ライセンス **の削除] を選択します**。
 4. 右側のウィンドウの [ライセンスの合計] ボックスに、このサブスクリプションに必要なライセンスの総数を入力し、[保存] を **選択します**。 たとえば、ライセンス数が 100 で、さらに 5 を追加する場合は、「105」と入力します。
@@ -56,7 +79,23 @@ ms.locfileid: "52536084"
 
 ### <a name="to-assign-licenses"></a>ライセンスを割り当てるには
 
-1. 管理センターで、[課金ライセンス]**ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">に移動</a>します。
+:: モニカー range="o365-worldwide"
+
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
+
+::: moniker-end
 2. ライセンスを割り当てるサブスクリプションを選択します。
 3. [ライセンスの **割り当て] を選択します**。
 4. [**ユーザーにライセンスを割り当てる**] ウィンドウで、名前の入力を開始し、結果から名前を選択して一覧に追加します。 最大 20 人のユーザーを同時に追加することができます。
@@ -66,7 +105,23 @@ ms.locfileid: "52536084"
 
 ### <a name="to-unassign-licenses"></a>ライセンスの割り当てを解除するには
 
-1. 管理センターで、[課金ライセンス]**ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">に移動</a>します。
+:: モニカー range="o365-worldwide"
+
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">ライセンス</a>] ページに移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">ライセンス</a>] ページに移動します。
+
+::: moniker-end
 2. ライセンスの割り当てを解除する製品を選択します。
 3. ライセンスの割り当てを解除するユーザーを選択します。
 4. [ライセンス **の割り当て解除] を選択します**。
@@ -74,8 +129,23 @@ ms.locfileid: "52536084"
 
 ## <a name="cancel-a-subscription"></a>サブスクリプションをキャンセルする
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
-2. **[製品]** タブで、キャンセルするサブスクリプションを見つけます。 3 つのドット (その他のアクション) を選択し、[サブスクリプションのキャンセル] **を選択します**。
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+::: moniker-end
+2. **[製品]** タブで、キャンセルするサブスクリプションを見つけます。 3 つのドット(他のアクション) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
 3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。 必要に応じて、フィードバックを提供します。
 4. **[保存]** を選択します。
 

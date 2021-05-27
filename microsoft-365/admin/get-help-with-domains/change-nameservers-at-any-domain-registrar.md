@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 電子メールやオンラインのようなサービスが独自のドメインMicrosoft 365使用するために、Skype for Businessドメインを追加して設定する方法について説明します。
-ms.openlocfilehash: c6394b505e025c565713aae753879601f5a6aecf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635440"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683129"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>ネームサーバーを変更して、ドメイン レジストラー Microsoft 365をセットアップする
 
@@ -43,7 +43,6 @@ ms.locfileid: "52635440"
 - DNS レコードMicrosoft 365管理する必要があります。 (必要に応じて、独自 [の DNS レコードを管理できます](../setup/add-domain.md)。)
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>確認のため TXT レコードまたは MX レコードを追加する
-<a name="BKMK_verify"> </a>
 
 > [!NOTE]
 > これらのレコードのいずれか一方を作成します。推奨されるレコードの種類は TXT ですが、一部の DNS ホスティング プロバイダーではサポートしていないため、代わりに MX レコードを作成してもかまいません。 
@@ -94,17 +93,13 @@ Microsoft 365 で正しい TXT レコードが見つかった場合、ドメイ�
   
 3. **[セットアップ]** ページで、**[セットアップの開始]** を選択します。
  
-    
   
 4. **[ドメインの確認]** ページで、**[確認]** を選択します。
-    
-    
   
 > [!NOTE]
 >  通常、DNS の変更が有効になるのに 15 分ほどかかります。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加でメール フローなどに問題が発生した場合は、「[ドメイン名または DNS レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>ドメインのネーム サーバー (NS) レコードを変更する
-<a name="BKMK_nameservers"> </a>
 
 ドメイン セットアップ ウィザードの最後の手順に進み、Microsoft 365タスクが 1 つ残っています。 メールなど、Microsoft 365 サービスを使用してドメインを設定するには、ドメイン レジストラーでドメインのネームサーバー (または NS) レコードを変更して、Microsoft 365 プライマリ ネームサーバーとセカンダリ ネームサーバーをポイントします。 次に、DNS Microsoft 365ホストしている場合、サービスに必要な DNS レコードが自動的に設定されます。 ネーム サーバー レコード自体は、ドメイン レジストラーが Web サイトのヘルプで説明している手順に従って更新できます。 DNS が不明である場合は、ドメイン レジストラーのサポートに問い合わせてください。
 
@@ -199,5 +194,5 @@ Microsoft 365 で正しい TXT レコードが見つかった場合、ドメイ�
 ## <a name="related-content"></a>関連コンテンツ
 
 [DNS レコードを追加してドメインに接続](create-dns-records-at-any-dns-hosting-provider.md) する (記事)\
-[ドメインまたは DNS レコードを追加した後で問題を](find-and-fix-issues.md) 見つけて修正する (記事)\
+[ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)\
 [ドメインの管理](index.yml) (リンク ページ)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f97947c2c9f02720facae4f0c3c29ff702416261
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 99a07b1517058b0e5ab241aaae9c6899e2994432
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023131"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689111"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -59,7 +59,17 @@ ms.locfileid: "52023131"
 | `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |
 | `MachineGroup` | string | コンピューターのコンピューター グループ。 このグループは、役割ベースのアクセス制御によってコンピューターへのアクセスを決定するために使用されます。 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
+| `OnboardingStatus` | string | デバイスが現在オンボードされているかどうかを示す Microsoft Defender For Endpoint またはデバイスがサポートされていない場合 |
 |`AdditionalFields` | string | JSON 配列形式のイベントに関する追加情報 |
+|`DeviceCategory` | string | 特定のデバイスの種類を次のカテゴリにグループ化する広範な分類: エンドポイント、ネットワーク デバイス、IoT、不明 |
+|`DeviceType` | string | 目的と機能に基づくデバイスの種類 (ネットワーク デバイス、ワークステーション、サーバー、モバイル、ゲーム コンソール、プリンターなど) |
+|`DeviceSubType` | string | 特定の種類のデバイスの追加修飾子 (たとえば、モバイル デバイスはタブレットまたはスマートフォンなど) |
+|`Model` | string | ベンダーまたは製造元の製品のモデル名または番号 |
+|`Vendor` | string | 製品ベンダーまたは製造元の名前 |
+|`OSDistribution` | string | Linux プラットフォーム用の Ubuntu や RedHat などの OS プラットフォームの配布 |
+|`OSVersionInfo` | string | OS バージョンに関する追加情報 (一般的な名前、コード名、バージョン番号など) |
+|`MergedDeviceIds` | string | 同じデバイスに割り当てられている以前のデバイス ID |
+|`MergedToDeviceId` | string | デバイスに割り当てられた最新のデバイス ID |
 
 この表は、定期的なレポートまたはデバイスからの信号であるハートビートに基づくデバイス `DeviceInfo` 情報を提供します。 15 分ごとに、デバイスは頻繁に変更される属性を含む部分的なハートビートを送信します `LoggedOnUsers` 。 1 日に 1 回、デバイスの属性を含む完全なハートビートが送信されます。
 

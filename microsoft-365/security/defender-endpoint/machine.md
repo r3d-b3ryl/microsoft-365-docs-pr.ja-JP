@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f96cfd56cb8d61bc62c34e2b1ee08d6313c6a8ad
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 43a136bb3432adcd47589d29aa5de8f8f6299ba8
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186643"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683069"
 ---
 # <a name="machine-resource-type"></a>コンピューター リソースの種類
 
@@ -57,14 +57,14 @@ ms.locfileid: "51186643"
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ |   型   |   説明
+プロパティ |   種類   |   説明
 :---|:---|:---
 id | String | [マシン](machine.md) ID。
 computerDnsName | String | [コンピューター](machine.md) の完全修飾名。
 firstSeen | DateTimeOffset | Microsoft Defender for [](machine.md) Endpoint によってコンピューターが観測された最初の日付と時刻。
 lastSeen | DateTimeOffset |最後に受信した完全なデバイス レポートの時刻と日付。 通常、デバイスは 24 時間ごとに完全なレポートを送信します。
 osPlatform | String | オペレーティング システム プラットフォーム。
-osProcessor | String | オペレーティング システム プロセッサ。
+osProcessor | String | オペレーティング システム プロセッサ。 代わりに osArchitecture プロパティを使用します。
 version | String | オペレーティング システムのバージョン。
 osBuild | Null 許容長 | オペレーティング システムのビルド番号。
 lastIpAddress | String | コンピューター上のローカル NIC の最後の[IP。](machine.md)
@@ -78,5 +78,6 @@ machineTags | String collection | コンピューター タグ [の](machine.md)
 exposureLevel | Null 許容列挙 | Microsoft Defender for Endpoint によって評価される露出レベル。 指定できる値は、'None'、'Low'、'Medium'、および 'High' です。
 deviceValue | Null 許容列挙 | デバイス [の値](tvm-assign-device-value.md)です。 指定できる値は、'Normal'、'Low'、および 'High' です。
 ipAddresses | IpAddress コレクション | ***IpAddress オブジェクトの*** セット。 「Get [machines API」を参照してください](get-machines.md)。
+osArchitecture | String | オペレーティング システムのアーキテクチャ。 指定できる値は、"32 ビット"、"64 ビット" です。 osProcessor の代わりにこのプロパティを使用します。
 
 

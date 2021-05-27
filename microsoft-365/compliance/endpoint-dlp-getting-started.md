@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332812"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651010"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
@@ -102,7 +102,11 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
     - Windows 10 2004 の場合 - KB4568831、KB4577063
     - Office 2016 を実行しているデバイスの場合 (他の Office バージョンではない) - KB4577063 
 
-4. すべてのデバイスは [Azure Active Directory (Azure AD) に参加する](/azure/active-directory/devices/concept-azure-ad-join)か、AD に参加するか、Hybrid Azure AD に参加するか、AAD に登録する必要があります。
+4. すべてのデバイスは、次のいずれかを満たしている必要があります。
+- [Azure Active Directory (Azure AD) への参加](/azure/active-directory/devices/concept-azure-ad-join)
+- AD への参加
+- [Hybrid Azure AD への参加](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+- [AAD の登録](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. エンドポイント デバイスに Microsoft Chromium Edge ブラウザーをインストールして、クラウドへのアップロード アクティビティのポリシー アクションを適用します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。
 

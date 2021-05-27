@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 4957c92cb95464213cce4a81ded07de166468c73
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651353"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689015"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Defender でアラートをMicrosoft 365する
 
@@ -78,6 +78,23 @@ Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Defender �
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="セキュリティ センターのアラートの詳細ページMicrosoft 365例":::
 
 アラート ページ全体で、任意のエンティティの横にある省略記号 (**...**) を選択して、アラート ページを開く、またはアラートを別のインシデントにリンクするなどの使用可能なアクションを表示できます。
+
+### <a name="alert-sources"></a>アラート ソース
+Microsoft 365Defender アラートは、Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security。 警告の先頭に文字が付加されたアラートが表示されることがあります。 次の表は、アラートの先頭に付加された文字に基づくアラート ソースのマッピングを理解するのに役立つガイダンスを示しています。
+
+> [!NOTE]
+> - 付加された GUID は、統合アラート キュー、統合アラート ページ、統合調査、統合インシデントなどの統合エクスペリエンスにのみ固有です。<br>
+> - 先頭に付加された文字は、アラートの GUID を変更しない。 GUID に対する唯一の変更は、先頭に追加されたコンポーネントです。<br>
+
+
+アラート ソース | 先頭文字 
+:---|:---
+Microsoft Defender for Office 365 | `fa{GUID}` <br> 例: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender for Endpoint | `da` または `ed` カスタム検出アラートの場合 <br> 
+Microsoft Defender for Identity | `aa{GUID}` <br> 例: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> 例: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+
+
 
 ### <a name="analyze-affected-assets"></a>影響を受けるアセットを分析する
 

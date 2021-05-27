@@ -1,5 +1,5 @@
 ---
-title: サポート対象 Microsoft Defender for Endpoint API
+title: サポート対象 Microsoft Defender for Endpoint API
 ms.reviewer: ''
 description: API 呼び出しを作成できる特定のサポートされている Microsoft Defender for Endpoint エンティティについて説明します。
 keywords: apis、サポートされている API、アクター、アラート、デバイス、ユーザー、ドメイン、IP、ファイル、高度なクエリ、高度な検索
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+ms.openlocfilehash: f7a620ad56496b1a26e193a18fa93f4d217431df
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073831"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684149"
 ---
-# <a name="supported-microsoft-defender-for-endpoint-apis"></a>サポート対象 Microsoft Defender for Endpoint API
+# <a name="supported-microsoft-defender-for-endpoint-apis"></a>サポート対象 Microsoft Defender for Endpoint API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -61,6 +61,7 @@ API 呼び出しを実行できる個々のサポートされるエンティテ�
 :---|:---
 [高度な追求](run-advanced-query-api.md) | API からクエリを実行します。
 [アラート メソッドとプロパティ](alerts.md) | アラートの取得、アラートの作成、アラートの更新などの API \- 呼び出しを実行します。
+[デバイスごとの評価方法とプロパティのエクスポート](get-assessmnt-1methods-properties.md) | 安全な構成評価のエクスポート、ソフトウェア インベントリ評価のエクスポート、ソフトウェアの脆弱性評価のエクスポートなどの API \- 呼び出しを実行します。
 [自動調査の方法とプロパティ](investigation.md) | 調査のコレクションを取得する \- などの API 呼び出しを実行します。
 [ドメイン関連のアラートを取得する](get-domain-related-alerts.md) | ドメイン関連デバイスの取得、ドメイン統計などの API 呼び出 \- しを実行します。
 [ファイル メソッドとプロパティ](files.md) | ファイル情報の取得、ファイル関連の通知、ファイル関連デバイス、ファイル統計などの API 呼び出し \- を実行します。
@@ -69,12 +70,13 @@ API 呼び出しを実行できる個々のサポートされるエンティテ�
 [マシン メソッドとプロパティ](machine.md) | デバイスの取得、ID によるデバイスの取得、ログオンしているユーザーに関する情報、タグの編集などの API 呼び出 \- しを実行します。
 [マシン アクション メソッドとプロパティ](machineaction.md) | 分離、ウイルス対策スキャンの実行などの API 呼び出し \- を実行します。
 [推奨メソッドとプロパティ](recommendation.md) | ID による推奨事項の取得などの \- API 呼び出しを実行します。
+[修復アクティビティのメソッドとプロパティ](get-remediation-methods-properties.md) | すべての修復タスクの取得、公開されたデバイス修復タスクの取得、ID による 1 つの修復タスクの取得などの API \- 呼び出しを実行します。
 [スコア メソッドとプロパティ](score.md) | 露出スコアの取得やデバイス \- のセキュリティで保護されたスコアの取得などの API 呼び出しを実行します。
 [ソフトウェア メソッドとプロパティ](software.md) | ソフトウェアによるリストの脆弱性などの API \- 呼び出しを実行します。
 [ユーザー メソッド](user.md) | ユーザー関連の通知やユーザー関連 \- デバイスの取得などの API 呼び出しを実行します。
 [脆弱性メソッドとプロパティ](vulnerability.md) | 脆弱性によるリスト デバイスなどの API \- 呼び出しを実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [エンドポイント API 用 Microsoft Defender](apis-intro.md)
 

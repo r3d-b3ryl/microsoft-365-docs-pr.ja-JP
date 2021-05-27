@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 886195de38856306d69932446eae34212fe4bb0d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e08781455888595d57bd8a9e6f792796ea1853cd
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934503"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684209"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 
@@ -32,7 +32,7 @@ ms.locfileid: "51934503"
 
 **適用対象:**
 
-- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -81,7 +81,7 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 | **ドメイン** | `com.microsoft.autoupdate2` |
 | **Key** | ChannelName |
 | **データ型** | String |
-| **指定可能な値** | ベータ版 <br/> Preview <br/> Current |
+| **指定可能な値** | ベータ版 <br/> プレビュー <br/> Current |
 |||
 
 >[!WARNING]
@@ -155,10 +155,17 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 ## <a name="example-configuration-profile"></a>構成プロファイルの例
 
 次の構成プロファイルを使用して、次の構成プロファイルを使用します。
-- ベータ チャネルにデバイスを配置する
+- デバイスを実稼働チャネルに配置する
 - 更新プログラムを自動的にダウンロードしてインストールする
 - ユーザー インターフェイスで [更新プログラムの確認] ボタンを有効にする
 - デバイス上のユーザーが Insider チャネルに登録を許可する
+
+
+>[!WARNING]
+>次の構成は構成の例であり、設定の適切な確認と構成の調整なしに実稼働環境で使用する必要があります。
+
+>[!TIP]
+>新機能をプレビューし、早期のフィードバックを提供するには、企業内の一部のデバイスを構成するか、またはに構成をお `Beta` 勧めします `Preview` 。
 
 ### <a name="jamf"></a>JAMF
 
@@ -168,7 +175,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 <plist version="1.0">
 <dict>
     <key>ChannelName</key>
-    <string>Beta</string>
+    <string>Production</string>
     <key>HowToCheck</key>
     <string>AutomaticDownload</string>
     <key>EnableCheckForUpdatesButton</key>
@@ -228,7 +235,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
             <key>PayloadEnabled</key>
             <true/>
             <key>ChannelName</key>
-            <string>Beta</string>
+            <string>Production</string>
             <key>HowToCheck</key>
             <string>AutomaticDownload</string>
             <key>EnableCheckForUpdatesButton</key>

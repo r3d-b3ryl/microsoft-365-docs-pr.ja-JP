@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: フィルターを使用してカスタム ユーザー ビューを作成、編集、または削除する方法については、Microsoft 365。
-ms.openlocfilehash: 4bd4ea351612c2ae5175cd27fa7a689d671a8b62
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: b4177a561d13d76f6d5a0a1077fe8037d469ee48
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759932"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683225"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>カスタム ユーザー ビューを作成、編集、削除する
 
@@ -83,40 +83,44 @@ ms.locfileid: "51759932"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に移動します。
-    
-2. [アクティブ な **ユーザー] ページで** 、[フィルター] **を選択し** 、[新しいフィルター **] を選択します**。
   
-3. [カスタム フィルター **] ページ** で、フィルターの名前を入力し、カスタム フィルターの条件を選択し、[追加] を **選択します**。 これで、カスタム ビューがフィルターのドロップダウン リストに含まれます。
-    
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に移動します。  
-
-2. [アクティブ な **ユーザー] ページで** 、[ビュー] **を選択し** 、[カスタム **ビューの追加] を選択します**。
-  
-3. [カスタム ビュー **] ページ** で、フィルターの名前を入力し、カスタム フィルターの条件を選択し、[追加] を **選択します**。 これで、カスタム ビューがフィルターのドロップダウン リストに含まれます。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に移動します。 
 
 ::: moniker-end
-
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に移動します。 
-
-2. [アクティブ な **ユーザー] ページで** 、[ビュー] **を選択し** 、[カスタム **ビューの追加] を選択します**。
-  
-3. [カスタム ビュー **] ページ** で、フィルターの名前を入力し、カスタム フィルターの条件を選択し、[追加] を **選択します**。 これで、カスタム ビューがフィルターのドロップダウン リストに含まれます。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に移動します。  
 
 ::: moniker-end
     
+2. [アクティブ な **ユーザー] ページで** 、[フィルター] **を選択し** 、[新しいフィルター **] を選択します**。
+  
+3. [カスタム フィルター **] ページ** で、フィルターの名前を入力し、カスタム フィルターの条件を選択し、[追加] を **選択します**。 これで、カスタム ビューがフィルターのドロップダウン リストに含まれます。
 
 ## <a name="edit-or-delete-a-custom-user-view"></a>カスタム ユーザー ビューの編集または削除
 
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に移動します。 
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に移動します。 
+
+::: moniker-end 
     
 2. [アクティブ な **ユーザー] ページで** 、[ **フィルター**] を選択し、変更するフィルターを選択し、[フィルターの編集] **を選択します**。 
     
@@ -124,34 +128,12 @@ ms.locfileid: "51759932"
     > 編集できるのはカスタム ビューだけです。 
   
 3. [カスタム フィルター **] ページで** 、必要に応じて情報を編集し、[保存] を **選択します**。 または、フィルターを削除するには、ページの下部にある [削除] を **選択します**。 
-    
-::: moniker-end
 
-::: moniker range="o365-germany"
+## <a name="related-content"></a>関連コンテンツ
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に移動します。  
-
-2. [アクティブ な **ユーザー] ページで** 、[ **ビュー]** を選択し、変更するフィルターを選択し、[このビューの編集 **] を選択します**。 
-    
-    > [!TIP]
-    > 編集できるのはカスタム ビューだけです。 
-  
-3. [カスタム ビュー **] ページで** 、必要に応じて情報を編集し、[保存] を **選択します**。 または、フィルターを削除するには、ページの下部にある [カスタム ビューの削除 **] を選択します**。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に移動します。 
-
-2. [アクティブ な **ユーザー] ページで** 、[ **ビュー]** を選択し、変更するフィルターを選択し、[このビューの編集 **] を選択します**。 
-    
-    > [!TIP]
-    > 編集できるのはカスタム ビューだけです。 
-  
-3. [カスタム ビュー **] ページで** 、必要に応じて情報を編集し、[保存] を **選択します**。 または、フィルターを削除するには、ページの下部にある [カスタム ビューの削除 **] を選択します**。 
-
-::: moniker-end
+[管理センター Microsoft 365の概要](../../business-video/admin-center-overview.md)(ビデオ)\
+[管理者の役割](../add-users/about-admin-roles.md) (ビデオ)\
+[組織のMicrosoft 365テーマをカスタマイズする](../setup/customize-your-organization-theme.md)(記事)
 
 
      

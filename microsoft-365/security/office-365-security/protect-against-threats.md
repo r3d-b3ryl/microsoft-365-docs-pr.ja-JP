@@ -20,12 +20,12 @@ description: 管理者は、組織の脅威保護Microsoft 365、組織で使用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624623"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683333"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -41,7 +41,7 @@ ms.locfileid: "52624623"
 > [!IMPORTANT]
 > **最初の推奨設定は** ポリシーの種類ごとに含まれていますが、多くのオプションを使用できます。また、特定の組織のニーズに合わせて設定を調整することもできます。 ポリシーまたは変更がデータセンター経由で動作するには、約 30 分かかります。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 ### <a name="subscriptions"></a>サブスクリプション
 
@@ -78,27 +78,26 @@ Defender for Office 365 ポリシーを構成するには、セキュリティ �
 
 詳細については、「セキュリティ コンプライアンス センターのアクセス許可 [」&参照してください](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>開始する前に、[レポートと調査の監査ログ] をオンにします。
+### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>レポートと調査の監査ログを有効にする
 
-監査ログを早期に開始します。 次の手順の特定の場合は、 **監査をオン** にする必要があります。 監査ログは、監査ログを含むサブスクリプション[Exchange Online。](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) セキュリティ ダッシュボード、電子メール セキュリティ レポート、エクスプローラーなどの脅威保護レポート [](view-email-security-reports.md)のデータを表示するには [](threat-explorer.md)、監査ログをオンにする必要 *があります*。 [](security-dashboard.md) 詳細については、「監査ログ検索 [を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
+- 監査ログを早期に開始します。 次の手順の一部について **、監査を ON** にする必要があります。 監査ログは、監査ログを含むサブスクリプション[Exchange Online。](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) セキュリティ ダッシュボード、電子メール セキュリティ レポート、エクスプローラーなどの脅威保護レポート [](view-email-security-reports.md)のデータを表示するには [](threat-explorer.md)、監査ログをオンにする必要 *があります*。 [](security-dashboard.md) 詳細については、「監査ログ検索 [を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 ## <a name="part-1---anti-malware-protection"></a>パート 1 - マルウェア対策保護
 
-[マルウェア対策保護は、EOP](anti-malware-protection.md) を含むサブスクリプションで [利用できます](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+マルウェア対策の推奨設定の詳細については [、「EOP マルウェア対策ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)。
 
-1. [セキュリティ と [コンプライアンス &] で、[](https://protection.office.com)脅威 **管理** ポリシーマルウェア \> **対策** \> **] を選択します**。
+1. を <https://security.microsoft.com/antimalwarev2> 開きます。
 
-2. [既定のポリシー] を **ダブルクリック** し、[設定] を **選択します**。
+2. ポリシーの名前をクリックして、[既定のポリシー] を選択します。
 
-3. 次の設定を指定します。
+3. 開くポリシーの詳細フライアウトで、[保護設定の編集] を **クリック** し、次の設定を構成します。
+   - [共通 **の添付ファイル フィルターを有効** にする] を選択して、共通の添付ファイル フィルターを有効にします。 [ファイル **の種類のカスタマイズ] を** クリックして、ファイルの種類を追加します。
+   - [マルウェアに **対して 0 時間自動削除を有効にする] が** 選択されている点を確認します。
+   - [通知] セクションの設定が **選択** されなかっているのを確認します。
 
-    - [マルウェア **検出応答] セクション** で、既定の設定を **[いいえ**] のままにします。
+   完了したら、[保存] を **クリックします。**
 
-    - [共通の **添付ファイルの種類フィルター] セクションで** 、[オン] を **選択します**。
-
-4. **[保存]** をクリックします。
-
-マルウェア対策ポリシー オプションの詳細については、「マルウェア対策ポリシーを構成 [する」を参照してください](configure-anti-malware-policies.md)。
+マルウェア対策ポリシーを構成する手順の詳細については、「EOP でマルウェア対策ポリシーを構成する」 [を参照してください](configure-anti-malware-policies.md)。
 
 ## <a name="part-2---anti-phishing-protection"></a>パート 2 - フィッシング対策の保護
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、コア電子情報開示ケースを管理する方法について説明します。 これには、ケースの終了、閉じたケースの再オープン、ケースの削除が含まれます。
-ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d729c91d4e81ad12d0b4b16574aa4edad8e239a3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532448"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684101"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Core 電子情報開示ケースを閉じる、再度開く、削除する
 
@@ -92,7 +92,7 @@ ms.locfileid: "52532448"
 
 電子情報開示ホールドを削除するには、次の方法を実行します。
 
-1. 削除 **する場合** は、[保持] タブを移動します。
+1. 削除する **場合は** 、[保持] タブに移動します。
 
 2. 削除する保留リストを選択します。
 

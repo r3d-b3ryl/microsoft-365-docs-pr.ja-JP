@@ -9,20 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
+description: セキュリティ コンプライアンス センターで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする&説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36238d14d3d6a1f84b0fdcae62635922f62b58d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.openlocfilehash: 911d2dc3a4adeb79e2b41f3a450bbc446feee916
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908491"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683845"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>カスタムの機密情報の種類を使用する前に
 
@@ -61,10 +61,10 @@ ms.locfileid: "50908491"
 2. **[名前]** および **[説明]** の値を入力し、**[次へ]** を選択します。
 3. **[パターンの作成]** を選択します。 新しい機密情報の種類を定義するときに、それぞれ異なる要素と信頼度レベルを持つ複数のパターンを作成できます。
 4. パターンの既定の信頼度レベルを選択します。 値は、**[低い信頼度]**、**[中程度の信頼度]**、および **[高い信頼度]** です。
-5. **[主要要素]** を選択して定義します。 主要要素は、オプションの検証を使用した **[正規表現]**、**[キーワード リスト]**、**[キーワード辞書]**、または事前構成の **[関数]** のいずれかです。 DLP 関数の詳細については、「[DLP 関数で探索する内容](what-the-dlp-functions-look-for.md)」を参照してください。
+5. **[主要要素]** を選択して定義します。 主要要素は、オプションの検証を使用した **[正規表現]**、**[キーワード リスト]**、**[キーワード辞書]**、または事前構成の **[関数]** のいずれかです。 DLP 関数の詳細については、「[DLP 関数で探索する内容](what-the-dlp-functions-look-for.md)」を参照してください。 日付とチェックサム検証ツールの詳細については、「正規表現検証ツールの詳細 [」を参照してください](#more-information-on-regular-expression-validators)。
 6. **[文字の近接度]** の値を入力します。
-7. (省略可能) サポート要素がある場合は追加します。 サポート要素は、オプションの検証、キーワード リスト、キーワード辞書、または事前定義された関数のいずれかを使用する正規表現です。 
-8.  (省略可能) 使用可能なチェックのリストから [**追加チェック**](#more-information-on-additional-checks)を追加します。
+7. (省略可能) サポート要素がある場合は追加します。 サポート要素は、オプションの検証、キーワード リスト、キーワード辞書、または事前定義された関数のいずれかを使用する正規表現です。 サポート要素は、独自の **Character 近接構成を持つ場合** があります。 
+8. (省略可能) 使用可能なチェックのリストから [**追加チェック**](#more-information-on-additional-checks)を追加します。
 9. **[作成]** を選択します。
 10. **[次へ]** を選択します。
 11. この機密情報の種類に対して、**推奨される信頼度レベル** を選択します。
@@ -122,6 +122,47 @@ ms.locfileid: "50908491"
 PowerShell および Exact Data Match の機能を使用して、カスタムの機密情報の種類を作成することもできます。 これらの方法の詳細については、次を参照してください。
 - [セキュリティ/コンプライアンス センター PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Exact Data Match (EMD) を使用して、DPL 向けのカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+
+## <a name="more-information-on-regular-expression-validators"></a>正規表現検証ツールの詳細
+
+### <a name="checksum-validator"></a>チェックサム検証ツール
+
+正規表現で数字にチェックサムを実行する必要がある場合は、チェックサム検証ツール *を使用できます*。 たとえば、最後の数字が mod 9 計算を使用して検証されるチェックサム桁である 8 桁のライセンス番号に対して SIT を作成する必要があるとします。 チェックサム アルゴリズムは次のように設定しました。
+ 
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * Weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
+
+1. 次の正規表現を使用してプライマリ要素を定義します。
+
+`\d{8}`
+
+2. 次に、チェックサム検証ツールを追加します。
+3. 重み値をコンマで区切って追加し、チェック桁の位置と Mod 値を追加します。 Modulo 操作の詳細については、「Modulo 操作 [」を参照してください](https://en.wikipedia.org/wiki/Modulo_operation)。
+
+> [!NOTE]
+> チェック桁がチェックサム計算の一部ではない場合は、チェック桁の重みとして 0 を使用します。 たとえば、上記の場合、チェック桁を使用してチェック桁を計算しない場合、重み 8 は 0 に等しくなります。  Modulo_operation)。
+
+![構成済みのチェックサム検証ツールのスクリーンショット](../media/checksum-validator.png)
+
+### <a name="date-validator"></a>日付検証
+
+正規表現に埋め込まれた日付値が、作成する新しいパターンの一部である場合は、日付検証ツールを使用して、条件を満たした日付をテストできます。 たとえば、9 桁の従業員 ID 番号の SIT を作成するとします。 最初の 6 桁は DDMMYY 形式の採用日であり、最後の 3 桁はランダムに生成された数値です。 最初の 6 桁の数字が正しい形式で表示されていることを検証します。 
+
+1. 次の正規表現を使用してプライマリ要素を定義します。
+
+`\d{9}`
+
+2. 次に、日付検証機能を追加します。
+3. 日付形式と開始オフセットを選択します。 日付文字列は最初の 6 桁の数字で、オフセットは `0` .
+
+![構成済みの日付検証ツールのスクリーンショット](../media/date-validator.png)
+
+### <a name="functional-processors-as-validators"></a>バリデーターとしての機能プロセッサ
+
+関数プロセッサは、最も一般的に使用される一部の SIT に対してバリデーターとして使用できます。 これにより、独自の正規表現を定義しながら、SIT で必要な追加のチェックに合格することができます。 たとえば、Func_India_Aadharによって定義されたカスタム正規表現が、インドの Aadhar カードに必要な検証ロジックを渡す必要があります。 検証機能として使用できる DLP 関数の詳細については、「DLP 関数が探す [情報」を参照してください](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for)。 
+
+### <a name="luhn-check-validator"></a>Luhn check validator
+
+Luhn アルゴリズムを渡す必要がある正規表現を含むカスタムの機密情報の種類がある場合は、Luhn チェック検証ツール [を使用できます](https://en.wikipedia.org/wiki/Luhn_algorithm)。
 
 ## <a name="more-information-on-additional-checks"></a>その他のチェックの詳細情報
 

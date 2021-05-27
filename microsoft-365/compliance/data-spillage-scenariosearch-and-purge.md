@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 電子情報開示と検索ツールを使用して、組織内のデータ流出インシデントを管理して対応します。
-ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: f92887018a7ab1cec35526c2a36cce4b0889172e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653525"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683777"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューション シリーズ: データ流出シナリオ - 検索と削除
 
@@ -52,7 +52,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
 
 - メールボックスが保持されている場合、保持期間が切れるか保留が解放されるまで、削除されたメッセージは [回復可能なアイテム] フォルダーに残ります。 [手順 6 では](#step-6-prepare-the-mailboxes) 、メールボックスから保留リストを削除する方法について説明します。 保留リストを削除する前に、レコード管理部門または法務部門に確認してください。 組織には、メールボックスを保留にするか、データ流出インシデントが優先されるのかを定義するポリシーがある場合があります。 
     
-- データ流出調査担当者がケースにアクセスできるユーザーを検索および管理できるユーザー メールボックスを制御するには、コンプライアンスの境界を設定し、手順 [1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)で説明するカスタム役割グループを作成できます。 これを行うには、組織の管理役割グループのメンバーになるか、役割管理役割を割り当てる必要があります。 組織の管理者または管理者がコンプライアンスの境界を既に設定している場合は、手順 1 をスキップできます。
+- データ流出調査担当者がケースにアクセスできるユーザーを検索および管理できるユーザー メールボックスを制御するには、コンプライアンスの境界を設定し、手順 [1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)で説明するカスタム役割グループを作成できます。 これを行うには、組織の管理役割グループのメンバーになるか、役割管理役割を割り当てる必要があります。 組織の管理者がコンプライアンスの境界を既に設定している場合は、手順 1 をスキップできます。
     
 - ケースを作成するには、電子情報開示マネージャー役割グループのメンバーである必要があります。またはケース管理役割が割り当てられているカスタム役割グループのメンバーである必要があります。 メンバーではない場合は、電子情報開示マネージャーの役割グループにMicrosoft 365管理者に問[い合わせてください](assign-ediscovery-permissions.md)。
     
@@ -64,7 +64,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
 
 組織のプラクティスに応じて、データ流出インシデントを調査し、コンプライアンスの境界を設定するために使用する電子情報開示ケースにアクセスできるユーザーを制御する必要があります。 これを行う最も簡単な方法は、セキュリティ & コンプライアンス センターに調査担当者を既存の役割グループのメンバーとして追加し、その役割グループを電子情報開示ケースのメンバーとして追加する方法です。 組み込みの電子情報開示役割グループと、電子情報開示ケースにメンバーを追加する方法については、「Assign [eDiscovery permissions 」を参照してください](assign-ediscovery-permissions.md)。
   
-組織のニーズに合わせて新しい役割グループを作成することもできます。 たとえば、組織内のデータ流出調査員のグループが、すべてのデータ流出ケースにアクセスして共同作業を行う場合があります。 これを行うには、"Data Spillage Investigator" 役割グループを作成し、適切な役割 (Export、RMS Decrypt、Review、Preview、Compliance Search、Case Management) を割り当て、データ流出調査担当者を役割グループに追加し、その役割グループをデータ流出電子情報開示ケースのメンバーとして追加します。 これを[行う方法の詳細な手順](tagging-and-assessment-in-advanced-ediscovery.md)については、「Office 365の電子情報開示調査のコンプライアンス境界を設定する」を参照してください。 
+組織のニーズに合わせて新しい役割グループを作成することもできます。 たとえば、組織内のデータ流出調査員のグループが、すべてのデータ流出ケースにアクセスして共同作業を行う場合があります。 これを行うには、"Data Spillage Investigator" 役割グループを作成し、適切な役割 (Export、RMS Decrypt、Review、Preview、Compliance Search、Case Management) を割り当て、データ流出調査担当者を役割グループに追加し、その役割グループをデータ流出電子情報開示ケースのメンバーとして追加します。 これを[行う方法の詳細な手順](set-up-compliance-boundaries.md)については、「Office 365の電子情報開示調査のコンプライアンス境界を設定する」を参照してください。 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>手順 2: 電子情報開示ケースを作成する
 
@@ -123,7 +123,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
   
 - [セキュリティとコンプライアンス センターのメッセージ追跡](../security/office-365-security/message-trace-scc.md)
     
-- [セキュリティ コンプライアンス センターの新&トレース](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [セキュリティ コンプライアンス センターの新&トレース](https://techcommunity.microsoft.com/t5/exchange-team-blog/new-message-trace-in-office-365-security-038-compliance-center/ba-p/607893)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>手順 6: メールボックスを準備する
 

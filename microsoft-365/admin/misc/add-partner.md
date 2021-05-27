@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: サブスクリプションからパートナーを購入、変更、またはMicrosoft 365の時点でレコードのパートナーを追加します。
-ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 4cebbce41cbd2a500cc502b808734f6056271d12
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624527"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683345"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>サブスクリプション アドバイザー パートナーを追加、変更、または削除する
 
@@ -43,17 +43,17 @@ ms.locfileid: "52624527"
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>始める前に
+::: moniker range="o365-germany"
+
+サブスクリプション アドバイザーとなっている Microsoft の認定パートナーは、サブスクリプションのセットアップと保守を行うために必要な販売、サポート、技術専門分野の知識を提供します。サブスクリプション アドバイザー パートナーは、Office 365 の購入時などに、レコードのパートナーとして追加できます。また、現在パートナーがいない場合は、[Microsoft Pinpoint](https://pinpoint.microsoft.com) の Web サイトで見つけることもできます。
+
+::: moniker-end
+
+## <a name="before-you-begin"></a>はじめに
 
 ::: moniker range="o365-worldwide"
 
 選択するパートナーは、使用Microsoft サービスサービスを使用する国または地域によって異なります。 サブスクリプションのパートナーを追加、またはパートナーを変更する場合は、最初にパートナーの Microsoft Partner ID をパートナーにたずねて入手する必要があります。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-サブスクリプション アドバイザーとなっている Microsoft の認定パートナーは、サブスクリプションのセットアップと保守を行うために必要な販売、サポート、技術専門分野の知識を提供します。サブスクリプション アドバイザー パートナーは、Office 365 の購入時などに、レコードのパートナーとして追加できます。また、現在パートナーがいない場合は、[Microsoft Pinpoint](https://pinpoint.microsoft.com) の Web サイトで見つけることもできます。
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
 
 ## <a name="add-a-partner-at-the-time-of-purchase"></a>購入時にパートナーを追加する
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">サービスを購入する</a>] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**サービスを購入する**</a>] ページに移動します。
 2. 購入する製品を選択し、[購入] を **選択します**。
 3. 新しいパートナーを追加するには、[注文に関するサポート **が必要ですか?** ] を展開し **、[Microsoft パートナーからサポートを受ける] を選択します**。<br>
 [プロバイダー] ページの手順に従って、パートナーを検索するか、パートナーと一致します。
@@ -136,30 +136,22 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
-2. [サブスクリプションの詳細] ページの [パートナー情報] **で**、[削除] を **選択します**。
-3. 新しい **パートナーの Microsoft パートナー ネットワーク ID** を入力します。 パートナーに Microsoft パートナー ID についてたずね、パートナー ID を取得します。
-4. **[追加]** を選択します。
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
-2. 複数のサブスクリプションがある場合は、編集するサブスクリプションの名前を選択します。
-3. [ **パートナー ID**] の下で、[ **レコードのパートナーの編集**] を選びます。
-4. 追加するパートナーの新しい Microsoft パートナー ID を入力し、[ **ID の確認**]、[ **送信**] の順に選びます。パートナーの Microsoft パートナー ID は、パートナーにたずねることで入手できます。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
-2. 複数のサブスクリプションがある場合は、編集するサブスクリプションの名前を選択します。
-3. [ **パートナー ID**] の下で、[ **レコードのパートナーの編集**] を選びます。
-4. 追加するパートナーの新しい Microsoft パートナー ID を入力し、[ **ID の確認**]、[ **送信**] の順に選びます。パートナーの Microsoft パートナー ID は、パートナーにたずねることで入手できます。
-
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
-
+2. [サブスクリプションの詳細] ページの [パートナー情報] **で**、[削除] を **選択します**。
+3. 新しい **パートナーの Microsoft パートナー ネットワーク ID** を入力します。 パートナーに Microsoft パートナー ID についてたずね、パートナー ID を取得します。
+4. **[追加]** を選択します。
+  
 ## <a name="view-your-partner-relationships"></a>パートナー リレーションシップを表示する
 
 - 管理センターで、[パートナーの関係]**ページ設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">移動</a>します。 パートナーは、このページに表示されます。
@@ -171,50 +163,38 @@ Office 365 の管理者は、ユーザーの作成または編集、ユーザー
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+::: moniker-end
 2. [製品 **] タブ** で、編集するサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの [パートナー情報] **で、[** 削除] を **選択します**。
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
-2. 複数のサブスクリプションがある場合は、編集するサブスクリプションの名前を選択します。
-3. [ **パートナー ID**] の下で、[ **レコードのパートナーの編集**] を選びます。
-4. [ **パートナー情報**] ページの [ **パートナー ID**] チェック ボックスをオフにし、[ **送信**] をクリックします。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
-2. 複数のサブスクリプションがある場合は、編集するサブスクリプションの名前を選択します。
-3. [ **パートナー ID**] の下で、[ **レコードのパートナーの編集**] を選びます。
-4. [ **パートナー情報**] ページの [ **パートナー ID**] チェック ボックスをオフにし、[ **送信**] をクリックします。
-
-::: moniker-end
-
 ## <a name="remove-a-reseller-relationship"></a>再販業者関係を削除する
 
-::: moniker range="o365-worldwide"
-
 再販業者関係を自分で削除することはできません。
+
+::: moniker range="o365-worldwide"
   
 再販業者の関係を削除している場合、[ **削除** ] オプションが淡色表示されるため、再販業者パートナーに依頼して次の手順に従う必要があります。 [顧客との再販業者関係の削除](/partner-center/remove-a-relationship)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
-再販業者関係を自分で削除することはできません。
   
 再販業者の関係を削除している場合、[ **削除** ] オプションが淡色表示されるため、再販業者パートナーに依頼して次の手順に従う必要があります。 [顧客との再販業者関係の削除](/partner-center/remove-a-relationship)。
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
-再販業者関係を自分で削除することはできません。
   
 次の手順に従ってリセラー パートナーに問い合わせする必要があります。 パートナーとのリセラー [関係を削除します](/partner-center/remove-a-relationship)。
   

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da82b24b8a6bb6aa22028615bb3dd0c9d45acfa1
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 5aeffdaff39c2f10dfa5164764bff38e99c00010
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345986"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684221"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
 
@@ -31,7 +31,7 @@ ms.locfileid: "52345986"
 
 **適用対象:**
 
-- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 
 このトピックでは、Intune を介して macOS に Microsoft Defender for Endpoint を展開する方法について説明します。 展開が成功するには、次のすべての手順を完了する必要があります。
 
@@ -52,10 +52,10 @@ ms.locfileid: "52345986"
 | 手順 | サンプル ファイル名 | BundleIdentifier |
 |-|-|-|
 | [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
-| [エンドポイント用 Microsoft Defender のシステム拡張機能を承認する](#approve-system-extensions) | MDATP_SysExt.xml | 該当なし |
-| [Microsoft Defender for Endpoint のカーネル拡張機能の承認](#download-the-onboarding-package) | MDATP_KExt.xml | 該当なし |
+| [エンドポイント用 Microsoft Defender のシステム拡張機能を承認する](#approve-system-extensions) | MDATP_SysExt.xml | N/A |
+| [Microsoft Defender for Endpoint のカーネル拡張機能の承認](#download-the-onboarding-package) | MDATP_KExt.xml | N/A |
 | [Microsoft Defender for Endpoint へのフル ディスク アクセスを許可する](#full-disk-access) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
-| [ネットワーク拡張ポリシー](#network-filter) | MDATP_NetExt.xml | 該当なし |
+| [ネットワーク拡張ポリシー](#network-filter) | MDATP_NetExt.xml | N/A |
 | [Microsoft AutoUpdate (MAU) の構成](mac-updates.md#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
 | [Microsoft Defender for Endpoint 構成設定](mac-preferences.md#intune-profile-1)<br/><br/> **注:** macOS 用のサード パーティ製 AV の実行を計画している場合は、 に設定 `passiveMode` します `true` 。 | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [エンドポイントおよび MS AutoUpdate (MAU) 通知の Microsoft Defender の構成](mac-updates.md) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 または com.microsoft.wdav.tray |
@@ -170,7 +170,7 @@ ms.locfileid: "52345986"
    >
    > この構成プロファイルは、エンドポイント用 Microsoft Defender へのフル ディスク アクセスを許可します。 以前に Intune を使用して Microsoft Defender for Endpoint を構成した場合は、この構成プロファイルを使用して展開を更新することをお勧めします。
 
-[**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig)を [、GitHubリポジトリからダウンロードします](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)。
+[**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)を [、GitHubリポジトリからダウンロードします](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)。
 
 プロファイル名として "MDATP フル ディスク アクセス" を使用し、fulldisk.mobileconfig を構成プロファイル名としてダウンロードして、上記の 「オンボード BLOB」の手順に従います。 [](#onboarding-blob)
 
@@ -178,7 +178,7 @@ ms.locfileid: "52345986"
 
 エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報をポータルMicrosoft Defender セキュリティ センターします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
-[**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig)を [、GitHubリポジトリからダウンロードします](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)。
+[**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)を [、GitHubリポジトリからダウンロードします](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)。
 
 プロファイル名として "MDATP ネットワーク フィルター" を使用し、構成プロファイル名としてダウンロードした **netfilter.mobileconfig** を使用して、上記の 「オンボード BLOB」の手順に従います。 [](#onboarding-blob)
 
@@ -186,7 +186,7 @@ ms.locfileid: "52345986"
 
 このプロファイルは、macOS 上の Microsoft Defender for Endpoint と Microsoft Auto Update が macOS 10.15 (Catalina) 以降の UI で通知を表示するために使用されます。
 
-ダウンロード [**notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) from [our GitHub リポジトリ](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
+ダウンロード [**notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) from [our GitHub リポジトリ](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
 プロファイル名として "MDATP ネットワーク フィルター" を使用し、構成プロファイル名として **notif.mobileconfig** をダウンロードして、上記の 「オンボード BLOB」の手順に従います。 [](#onboarding-blob)
 

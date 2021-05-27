@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 セキュリティ/コンプライアンス センターでキーワード ディクショナリを作成する基本的な手順について説明します。
-ms.openlocfilehash: 94bacc2a2fe91fdc35aad753cc2e7db80a374e29
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 24f6bb636c702438be8ca9520c6523031f297410
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876078"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683765"
 ---
 # <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
 
@@ -126,99 +126,6 @@ Remove-Item $rawFile
     ```powershell
     New-DlpKeywordDictionary -Name <name> -Description <description> -FileData $fileData
     ```
-
-## <a name="modifying-an-existing-keyword-dictionary"></a>既存のキーワード ディクショナリを変更する
-
-キーワード ディクショナリのいずれかでキーワードを変更したり、組み込みのディクショナリのいずれかを変更したりする必要が生じることがあります。 現在のところ、PowerShell を使用してのみ、カスタム キーワード ディクショナリを更新できます。 
-
-たとえば、PowerShell で用語をいくつか変更し、ローカル環境のエディターで用語を変更できる場所に用語を保存して、元の用語をそこで更新します。 
-
-最初に、ディクショナリ オブジェクトを取得します。
-  
-```powershell
-$dict = Get-DlpKeywordDictionary -Name "Diseases"
-```
-
-`$dict` を印刷すると、さまざまな変数が表示されます。 キーワード自体はバックエンドのオブジェクトに保存されますが、`$dict.KeywordDictionary` にはその文字列表現が含まれ、ディクショナリを変更するために使用します。 
-
-ディクショナリを変更する前に、`.split(',')` メソッドを使用して、用語の文字列を配列に戻す必要があります。 使用するキーワードだけを残し、`.trim()` メソッドでキーワード間の不要なスペースを取り除きます。 
-  
-```powershell
-$terms = $dict.KeywordDictionary.split(',').trim()
-```
-
-ここでは、辞書から一部の用語を削除します。例の辞書には少しのキーワードしかないので、辞書のエクスポートとノートパッドでの編集に簡単にスキップすることができますが、通常、辞書には大量のテキストが含まれているので PowerShell で簡単に編集を行うこの方法をまず確認しておいてください。
-  
-最後の手順で、キーワードを配列に保存しました。[配列から項目を削除する](/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10))にはいくつか方法がありますが、簡単なのは、ディクショナリから削除する用語の配列を作成して、削除する用語のリストには含まれないディクショナリの用語だけをそこにコピーする方法です。
-  
-コマンド `$terms` を実行して、現在の用語のリストを表示します。コマンドの出力は次のようになります。 
-  
-`aarskog's syndrome`
-`abandonment`
-`abasia`
-`abderhalden-kaufmann-lignac`
-`abdominalgia`
-`abduction contracture`
-`abetalipoproteinemia`
-`abiotrophy`
-`ablatio`
-`ablation`
-`ablepharia`
-`abocclusion`
-`abolition`
-`aborter`
-`abortion`
-`abortus`
-`aboulomania`
-`abrami's disease`
-
-このコマンドを実行して、削除する用語を指定します。
-  
-```powershell
-$termsToRemove = @('abandonment', 'ablatio')
-```
-
-リストから用語を実際に削除するには、このコマンドを実行します。
-  
-```powershell
-$updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
-```
-
-コマンド `$updatedTerms` を実行して、更新された用語のリストを表示します。コマンドの出力は次のようになります (指定した用語は削除されています)。 
-  
-`aarskog's syndrome`
-`abasia`
-`abderhalden-kaufmann-lignac`
-`abdominalgia`
-`abduction contracture`
-`abetalipo proteinemia`
-`abiotrophy`
-`ablation`
-`ablepharia`
-`abocclusion`
-`abolition`
-`aborter`
-`abortion`
-`abortus`
-`aboulomania`
-`abrami's disease`
-```
-
-Now save the dictionary locally and add a few more terms. You could add the terms right here in PowerShell, but you'll still need to export the file locally to ensure it's saved with Unicode encoding and contains the BOM.
-  
-Save the dictionary locally by running the following:
-  
-```powershell
-Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
-```
-
-次にファイルを開いて、その他の用語を追加し、Unicode エンコード (UTF-16) で保存します。それから更新した用語をアップロードして、辞書を所定の場所で更新します。
-  
-```powershell
-PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
-```
-
-辞書はその場で更新されます。 `Identity` フィールドは、辞書の名前を受け取ります。 また、`set-` コマンドレットを使用して辞書の名前も変更するには、上述の内容に新しい辞書名と共に `-Name` パラメーターを追加する必要があるだけです。 
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>カスタムの機密情報の種類と DLP ポリシーでキーワード ディクショナリを使う
 

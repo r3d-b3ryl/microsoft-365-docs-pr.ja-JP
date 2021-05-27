@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 906048609ce70c761bb014961e02c86f912cd638
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624611"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683501"
 ---
 # <a name="user-submissions-policy"></a>ユーザー申請ポリシー
 
@@ -141,7 +141,7 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
 
 サード パーティ製のメッセージ レポート ツールを構成して、報告されたメッセージをカスタム メールボックスに送信できます。 唯一の要件は、元のメッセージがカスタム メールボックスに送信されるメッセージの添付ファイルとして含まれる場合です (元のメッセージをカスタム メールボックスに転送するだけではない)。
 
-メッセージの書式設定の要件については、次のセクションで説明します。
+メッセージの書式設定の要件については、次のセクションで説明します。 書式設定は省略可能ですが、指定された形式に従う場合、レポートは常にフィッシングとして送信されます。
 
 ## <a name="message-submission-format"></a>メッセージ送信形式
 

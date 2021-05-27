@@ -7,26 +7,27 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 localization_priority: Normal
-ms.assetid: 298c529b-407b-4a2b-b2c5-6e77a9d1f07f
 description: このページを使用して、スタッフ リストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。
-ms.openlocfilehash: 11d62cc34522de21e63b8bdf6e7e15729ac73dc1
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7fd19e3281b3dc075b5f72ca0471f5c66f93752d
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399195"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683321"
 ---
 # <a name="add-staff-to-bookings"></a>Bookings にスタッフを追加する
 
 Bookings の [スタッフ] ページでは、スタッフリストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。 また、ここから各スタッフの勤務時間を設定できます。
 
-## <a name="add-staff"></a>スタッフの追加
+## <a name="before-you-begin"></a>はじめに
 
 Bookings は、Microsoft 365の機能ですが、すべてのスタッフがアカウントを持つ必要Microsoft 365ではありません。 予約を受け取り、変更をスケジュールするには、すべてのスタッフが有効な電子メール アドレスを持っている必要があります。
 
-このビデオを見る、または以下の手順に従ってスタッフを追加します。
+## <a name="watch-add-your-staff-in-microsoft-bookings"></a>ウォッチ: Microsoft Bookings にスタッフを追加する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
+
+## <a name="steps"></a>手順
 
 1. [スタッフの管理] [ページに移動し、[](https://outlook.office.com/bookings/staff) スタッフの追加 **] を選択します。**
 
@@ -65,3 +66,15 @@ Bookings は、Microsoft 365の機能ですが、すべてのスタッフがア�
 
     > [!NOTE]
     > スタッフ ページに追加した最初の 31 人のスタッフ メンバーだけが、サービスにスタッフ メンバーを割り当てるときに表示されます。
+
+## <a name="next-steps"></a>次の手順
+
+スタッフ メンバーを追加した後、休業 [日](schedule-closures-time-off-vacation.md) と休み時間をスケジュールし、スケジュール [ポリシーを設定できます](set-scheduling-policies.md)。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[Microsoft Bookings](bookings-overview.md)
+
+[休業、休暇、休暇期間のスケジュール](schedule-closures-time-off-vacation.md)
+
+[スケジュール ポリシーを設定する](set-scheduling-policies.md)
