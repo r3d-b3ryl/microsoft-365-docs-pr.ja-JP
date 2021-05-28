@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: c87289fc7017e75db3b8a5b84a8af3a42dc16a10
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302114"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689123"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -102,7 +102,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 - 組み込みのラベル付けの場合: **[詳細]** メニュー オプション。
 - Azure Information Protection 統合ラベル付けクライアントの場合: **[ヘルプとフィードバック]** メニュー オプション > [Microsoft Azure Information Protection] ダイアログ ボックスの **[詳細情報]** リンク。
 
-カスタマイズされたドキュメントの作成のサポートには、ユーザーのトレーニングと導入の促進に使用できるダウンロード パッケージに関する次のブログ記事を参照してください: 「[M365 の秘密度ラベルのエンド ユーザー トレーニング – 導入を加速する方法](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880)」。 
+カスタマイズしたドキュメントの提供に役立てるために、次のページを表示して、ユーザーのトレーニングに使用できるアイテムをダウンロードします。[秘密度ラベルのエンド ユーザー トレーニング](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/)。 
 
 基本的な手順については、次のリソースを使用することもできます:
 
