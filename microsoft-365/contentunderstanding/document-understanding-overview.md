@@ -1,8 +1,9 @@
 ---
 title: ドキュメント理解の概要
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でのドキュメント理解の概要を説明します。
-ms.openlocfilehash: 73e217e458fb9e1ccad8b64ffc81a6c9522a04f4
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7e5818a929fa0f4554a7ee4ece460b4fe0d691aa
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222757"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683825"
 ---
 # <a name="document-understanding-overview"></a>ドキュメント理解の概要
 
@@ -48,16 +49,40 @@ ms.locfileid: "51222757"
 
 モデルを公開したら、コンテンツセンターを使用して、アクセスできる SharePoint ドキュメントライブラリにモデルを適用します。  
 
-### <a name="file-limitations"></a>ファイルの制限事項
+## <a name="file-limitations"></a>ファイルの制限事項
 
 ドキュメント理解モデルは、光学式文字認識 (OCR) テクノロジーを使用して、PDF、画像、および TIFF ファイルをスキャンします。これは、サンプル ファイルを使用してモデルをトレーニングする場合と、ドキュメント ライブラリ内のファイルに対してモデルを実行する場合の両方です。
 
 Microsoft Office のテキストベース ファイルと OCR スキャン ファイル (PDF、画像、または TIFF) に関して、次の違いに注意してください。
 
-- Office ファイル: 64K 文字を切り捨てます (トレーニング時およびドキュメント ライブラリ内のファイルに対して実行する場合)。
+- Office ファイル: 64,000 文字を切り捨てます (トレーニング時およびドキュメント ライブラリ内のファイルに対して実行する場合)。
+
 - OCR スキャン ファイル: 20 ページの制限があります。  
 
-#### <a name="supported-file-types"></a>サポートされているファイルの種類
+### <a name="requirements"></a>要件
+
+OCR 処理は、次の要件を満たすドキュメントで最適に機能します。
+
+- JPG、PNG、または PDF 形式 (テキストまたはスキャン)。 文字の抽出と場所にエラーが発生しないため、テキストが埋め込まれた PDF の方が優れています。
+
+- PDF がパスワードでロックされている場合は、送信する前にロックを解除する必要があります。
+
+- コレクションごとのトレーニングに使用されるドキュメントの合計ファイル サイズは 50 MB を超えてはならず、PDF ドキュメントは 500 ページを超えてはなりません。
+
+- 画像の場合、サイズは 50×50 ピクセルと 10,000×10,000 ピクセルの間である必要があります。
+   > [!NOTE]
+   > 非常に幅が広い画像やサイズが奇数の画像 (平面図など) は、OCR プロセスで切り捨てられ、精度が低下する可能性があります。
+ 
+- PDF ファイルの場合、サイズは最大 17 x 17 インチで、リーガルまたは A3 の用紙サイズ以下に対応する必要があります。
+
+- 紙の文書からスキャンする場合、スキャンは高品質の画像である必要があります。
+
+- ラテン アルファベット (英語の文字) を使用する必要があります。
+
+> [!NOTE]
+> AI ビルダーは現在、次の種類のフォーム処理入力データをサポートしていません。<br>- チェック ボックスまたはラジオ ボタン<br>- 署名<br>- 入力可能な PDF
+
+### <a name="supported-file-types"></a>サポートされているファイルの種類
 
 ドキュメント理解モデルでは、次のファイルの種類がサポートされます。
 

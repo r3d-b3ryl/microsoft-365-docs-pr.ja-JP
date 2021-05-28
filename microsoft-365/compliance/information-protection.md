@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Microsoft Information Protection (MIP) を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
-ms.openlocfilehash: a68f8dee00117af1fa4d7be5f459ed5c850a5100
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 2de9b1e4a3901477df883287a1ee350885de5513
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332752"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683693"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 の Microsoft Information Protection
 
@@ -41,9 +41,6 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 
 > [!NOTE]
 > Azure Purview でのデータの分類およびラベル付けの詳細については、現在プレビューですが、「[Azure Purviewにあるコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)」を参照し てください。
-> 
-> Azure Purview のリリースの発表については、次のブログ投稿を参照してください。「[Microsoft Information Protection および Microsoft Azure Purview: 相乗効果](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481)」および「[Spring Ignite 2021 での Azure Purview](https://techcommunity.microsoft.com/t5/azure-purview/azure-purview-at-spring-ignite-2021/ba-p/2175919)」。
-
 
 データの状況を把握し、ハイブリッド環境全体にわたって重要なデータを識別するには、次の機能を使用します:
  
@@ -83,3 +80,7 @@ MIP 機能は Microsoft 365 コンプライアンスに含まれており、[デ
 |[Microsoft Compliance Extension (プレビュー)](dlp-chrome-learn-about.md) | Chrome ブラウザーに DLP 機能を拡張します | [Microsoft Compliance Extension (プレビュー) を開始する](dlp-chrome-get-started.md)|
 |[Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー)](dlp-on-premises-scanner-learn.md)|ファイル アクティビティの DLP 監視とそれらのファイルの保護アクションを、オンプレミスのファイル共有と SharePoint フォルダーおよびドキュメント ライブラリに拡張します。|[Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) の使用を開始する](dlp-on-premises-scanner-get-started.md)|
 |[Microsoft Teams のチャットやチャネル メッセージでの機密情報の保護](dlp-microsoft-teams.md) | 一部の DLP 機能を Teams のチャットおよびチャネル メッセージに拡張します | [Microsoft Teams の既定のデータ損失防止ポリシーについての詳細情報 (プレビュー)](dlp-teams-default-policy.md)|
+
+## <a name="licensing-requirements"></a>ライセンスの要件
+
+MIP のライセンス要件は、このページにリストされている各機能のライセンス要件を設定するのではなく、使用するシナリオと機能によって異なります。 MIP のライセンス要件とオプションを理解するには、Microsoft 365 ライセンス ドキュメントの「[情報保護](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)」セクションを参照し、関連する PDF または Excel をダウンロードしてください。
