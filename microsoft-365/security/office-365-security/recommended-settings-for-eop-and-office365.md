@@ -19,12 +19,12 @@ ms.collection:
 description: セキュリティ設定に関する Exchange Online Protection (EOP) と Defender のベスト Office 365は何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳密にしたい場合は、何を使用する必要がありますか? また、Defender をユーザーに使用する場合、どのような追加Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: b6661c31d0cc05a1bdfd51de986af1e7b22c9d70
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683273"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696528"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP と Microsoft Defender のセキュリティに関するOffice 365設定
 
@@ -44,7 +44,7 @@ ms.locfileid: "52683273"
 > [!NOTE]
 > フィルター処理が適切に機能するには、メールボックスで迷惑メール ルールを有効にする必要があります。 既定では有効になっていますが、フィルター処理が機能していないように見える場合は、チェックする必要があります。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
-この記事では、既定の設定と、ユーザーを保護するために推奨される Standard と Strict の設定について説明します。
+この記事では、既定の設定と、ユーザーを保護するために推奨される Standard と Strict の設定について説明します。 この表には、Microsoft 365 セキュリティ センターと PowerShell (Exchange Online PowerShell またはスタンドアロン Exchange Online Protection PowerShell (メールボックスのない組織) の設定Exchange Online含まれています。
 
 > [!TIP]
 > PowerShell Office 365高度な脅威保護推奨構成アナライザー (ORCA) モジュールを使用すると、(管理者) これらの設定の現在の値を見つけるのに役立ちます。 具体的には **、Get-ORCAReport** コマンドレットは、スパム対策、フィッシング対策、その他のメッセージの衛生設定の評価を生成します。 ORCA モジュールは、 からダウンロードできます <https://www.powershellgallery.com/packages/ORCA/> 。
@@ -65,26 +65,26 @@ ms.locfileid: "52683273"
 |---|:---:|:---:|:---:|---|
 |**スパム** 検出アクション <p> _SpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
 |**信頼度の高いスパム** 検出アクション <p> _HighConfidenceSpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
-|**フィッシングメール検出** アクション <p> _PhishSpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
-|**信頼度の高いフィッシングメール検出** アクション <p> _HighConfidencePhishAction_|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
-|**一括メール検出** アクション <p> _BulkSpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
-|バルク メールのしきい値 <p> _BulkThreshold_|7|6|4|詳細については、「一括苦情レベル[(BCL)」を参照Office 365。](bulk-complaint-level-values.md)|
-|検疫の保持期間 <p> _QuarantineRetentionPeriod_|15 日|30 日間|30 日間||
-|**安全ヒント** <p> _InlineSafetyTipsEnabled_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
+|**フィッシング検出** アクション <p> _PhishSpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
+|**高信頼フィッシング検出** アクション <p> _HighConfidencePhishAction_|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
+|**一括** 検出アクション <p> _BulkSpamAction_|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**メッセージを迷惑メール フォルダーに移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
+|**バルク メールのしきい値** <p> _BulkThreshold_|7|6|4|詳細については、「一括苦情レベル[(BCL)」を参照Office 365。](bulk-complaint-level-values.md)|
+|_MarkAsSpamBulkMail_|オン|オン|オン|この設定は PowerShell でのみ使用できます。|
+|**この数日間、検疫にスパムを保持する** <p> _QuarantineRetentionPeriod_|15 日|30 日間|30 日間||
+|**スパムの安全に関するヒントを有効にする** <p> _InlineSafetyTipsEnabled_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |許可されている送信者 <p> _AllowedSenders_|なし|なし|なし||
-|許可される送信者ドメイン <p> _AllowedSenderDomains_|なし|なし|なし|許可された送信者リストにドメインを追加すると、非常に悪い考えです。 攻撃者は、それ以外の場合はフィルター処理される電子メールを送信できます。 <p> セキュリティ[](learn-about-spoof-intelligence.md)& コンプライアンス センターのスプーフィング インテリジェンスインサイトとテナント許可[/](tenant-allow-block-list.md)ブロック一覧を使用して、組織の電子メール ドメイン内の送信者の電子メール アドレスをスプーフィングしているすべての送信者または外部ドメインの送信者の電子メール アドレスのスプーフィングを確認します。|
+|許可されている送信者ドメイン <p> _AllowedSenderDomains_|なし|なし|なし|許可された送信者リストにドメインを追加すると、非常に悪い考えです。 攻撃者は、それ以外の場合はフィルター処理される電子メールを送信できます。 <p> スプー [フィン](learn-about-spoof-intelligence.md) グ インテリジェンスインサイトとテナント許可 [/](tenant-allow-block-list.md) ブロックリストを使用して、組織の電子メール ドメイン内の送信者の電子メール アドレスをスプーフィングしているすべての送信者、または外部ドメインの送信者の電子メール アドレスをスプーフィングしているすべての送信者を確認します。|
 |受信拒否の送信者 <p> _BlockedSenders_|なし|なし|なし||
 |受信拒否ドメイン <p> _BlockedSenderDomains_|なし|なし|なし||
 |**[エンド ユーザーのスパム通知を有効にする]**  このポリシーでエンド ユーザーのスパム通知を有効にするには、このチェック ボックスをオンにします。 <p> _EnableEndUserSpamNotifications_|無効 <p> `$false`|有効 <p> `$true`|有効 <p> `$true`||
 |**エンド ユーザーのスパム通知を 1 日ごとに送信する** <p> _EndUserSpamNotificationFrequency_|3 日間|3 日間|3 日間||
-|**スパム ZAP** <p> _SpamZapEnabled_|有効 <p> `$true`|有効 <p> `$true`|有効 <p> `$true`||
-|**フィッシング ZAP** <p> _PhishZapEnabled_|有効 <p> `$true`|有効 <p> `$true`|有効 <p> `$true`||
-|_MarkAsSpamBulkMail_|オン|オン|オン|この設定は PowerShell でのみ使用できます。|
+|フィッシング メッセージに対してゼロ時間自動削除 (ZAP) を有効にする <p> _PhishZapEnabled_|有効 <p> `$true`|有効 <p> `$true`|有効 <p> `$true`||
+|スパム メッセージの ZAP を有効にする <p> _SpamZapEnabled_|有効 <p> `$true`|有効 <p> `$true`|有効 <p> `$true`||
 |
 
-スパム対策ポリシーには、非推奨のプロセスにある他のいくつかの高度なスパム フィルター (ASF) 設定があります。 これらの機能の減価償却のタイムラインの詳細については、この記事の外部で伝達されます。
+非推奨のプロセスにあるスパム対策ポリシーには、多くの高度なスパム フィルター (ASF) 設定があります。 これらの機能の減価償却のタイムラインの詳細については、この記事の外部で伝達されます。
 
-標準レベルと厳密レベルの両方でこれらの ASF 設定 **を****オフにすることをお****勧** めします。 ASF 設定の詳細については、「詳細スパム フィルター [(ASF)](advanced-spam-filtering-asf-options.md)の設定」を参照Office 365。
+標準レベルと厳密レベルの両方で、次の ASF 設定 **をオフ****のままにすることをお****勧** めします。 ASF 設定の詳細については、「詳細スパム フィルター [(ASF)](advanced-spam-filtering-asf-options.md)の設定」を参照Office 365。
 
 <br>
 
@@ -137,7 +137,7 @@ ms.locfileid: "52683273"
 
 |セキュリティ機能名|既定値|標準|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**メッセージがマルウェアとして検疫された場合に受信者に通知する** <p> _Action_|いいえ <p> _DeleteMessage_|いいえ <p> _DeleteMessage_|いいえ <p> _DeleteMessage_|電子メールの添付ファイルでマルウェアが検出された場合、メッセージは検疫され、管理者だけが解放できます。|
+|**メッセージがマルウェアとして検疫された場合に受信者に通知する** <p> _Action_|不要 <p> _DeleteMessage_|不要 <p> _DeleteMessage_|不要 <p> _DeleteMessage_|電子メールの添付ファイルでマルウェアが検出された場合、メッセージは検疫され、管理者だけが解放できます。|
 |**共通の添付ファイル フィルターを有効にする** <p> _EnableFileFilter_|オフ <p> `$false`|オン <p> `$true`|オン <p> `$true`|この設定は、添付ファイルの内容に関係なく、ファイルの種類に基づいて実行可能な添付ファイルを含むメッセージを検疫します。|
 |**マルウェアに対して 0 時間自動削除を有効にする** <p> _ZapEnabled_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |**メッセージがマルウェアとして検疫された場合に内部送信者に通知する** <p> _EnableInternalSenderNotifications_|無効 <p> `$false`|無効 <p> `$false`|無効 <p> `$false`||

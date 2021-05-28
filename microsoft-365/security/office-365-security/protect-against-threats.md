@@ -20,12 +20,12 @@ description: 管理者は、組織の脅威保護Microsoft 365、組織で使用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683333"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696552"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -50,6 +50,8 @@ ms.locfileid: "52683333"
 > [!TIP]
 > 監査を有効にする指示を超えて、手順によってマルウェア対策、フィッシング対策、スパム対策が開始され、Office 365 Exchange Online Protection (**EOP)** の一部としてマークされます。 これは、(Defender **for Office 365**) に EOP が含まれているとビルドされるまで、Office 365 の Defender の記事では奇妙に思えます。
 
+<br>
+
 ****
 
 |保護の種類|サブスクリプションの要件|
@@ -67,6 +69,8 @@ ms.locfileid: "52683333"
 
 Defender for Office 365 ポリシーを構成するには、セキュリティ コンプライアンス センターで適切な役割を割[り&必要があります](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。 これらのアクションを実行できるロールについては、以下の表を参照してください。
 
+<br>
+
 ****
 
 |役割または役割グループ|詳細については、次の情報を参照してください。|
@@ -82,20 +86,22 @@ Defender for Office 365 ポリシーを構成するには、セキュリティ �
 
 - 監査ログを早期に開始します。 次の手順の一部について **、監査を ON** にする必要があります。 監査ログは、監査ログを含むサブスクリプション[Exchange Online。](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) セキュリティ ダッシュボード、電子メール セキュリティ レポート、エクスプローラーなどの脅威保護レポート [](view-email-security-reports.md)のデータを表示するには [](threat-explorer.md)、監査ログをオンにする必要 *があります*。 [](security-dashboard.md) 詳細については、「監査ログ検索 [を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-## <a name="part-1---anti-malware-protection"></a>パート 1 - マルウェア対策保護
+## <a name="part-1---anti-malware-protection-in-eop"></a>パート 1 - EOP のマルウェア対策保護
 
 マルウェア対策の推奨設定の詳細については [、「EOP マルウェア対策ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)。
 
 1. を <https://security.microsoft.com/antimalwarev2> 開きます。
 
-2. ポリシーの名前をクリックして、[既定のポリシー] を選択します。
+2. [マルウェア対策 **] ページで** 、名前をクリックして **[既定** のポリシー] という名前のポリシーを選択します。
 
 3. 開くポリシーの詳細フライアウトで、[保護設定の編集] を **クリック** し、次の設定を構成します。
    - [共通 **の添付ファイル フィルターを有効** にする] を選択して、共通の添付ファイル フィルターを有効にします。 [ファイル **の種類のカスタマイズ] を** クリックして、ファイルの種類を追加します。
    - [マルウェアに **対して 0 時間自動削除を有効にする] が** 選択されている点を確認します。
    - [通知] セクションの設定が **選択** されなかっているのを確認します。
 
-   完了したら、[保存] を **クリックします。**
+   完了したら、**[保存]** をクリックします。
+
+4. ポリシーの詳細のフライアウトに戻り、[閉じる] を **クリックします**。
 
 マルウェア対策ポリシーを構成する手順の詳細については、「EOP でマルウェア対策ポリシーを構成する」 [を参照してください](configure-anti-malware-policies.md)。
 
@@ -135,23 +141,23 @@ Defender for Office 365 ポリシーを構成するには、セキュリティ �
 
 フィッシング対策ポリシー オプションの詳細については[、「Microsoft Defender for microsoft Defender for Office 365」を参照してください](configure-atp-anti-phishing-policies.md)。
 
-## <a name="part-3---anti-spam-protection"></a>パート 3 - スパム対策保護
+## <a name="part-3---anti-spam-protection-in-eop"></a>パート 3 - EOP のスパム対策保護
 
-[スパム対策保護は、EOP](anti-spam-protection.md) を含むサブスクリプション [で利用できます](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+スパム対策の推奨設定の詳細については、「EOP スパム対策ポリシー設定 [」を参照してください](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)。
 
-1. セキュリティ 管理 [コンプライアンス センター&で、[](https://protection.office.com)脅威 **管理** ポリシースパム \> **対策** \> **] を選択します**。
+1. を <https://security.microsoft.com/antispam> 開きます。
 
-2. **[カスタム]** タブで、[カスタム] 設定をオンにします。
+2. [スパム **対策ポリシー]** ページで、名前をクリックして、リストから [スパム対策受信ポリシー] という名前のポリシーを選択します。
 
-3. [既定 **のスパム フィルター ポリシー] を展開** し、[ポリシー **の編集**] をクリックし、次の設定を指定します。
+3. 表示されるポリシーの詳細フライアウトで、[バルクメールのしきい値] セクションの [スパムのしきい値とプロパティの編集&**クリック** します。
 
-   - **[迷惑メールおよびバルク メールの処理**] セクションで、しきい値を 5 または 6 に設定します。
+4. 表示される **スパムしきい値とプロパティ の** フライアウトで、[バルクメールのしきい値] の値を 5 (Strict) または 6 (Standard) に設定します。 完了したら、[保存] を **クリックします。**
 
-   - [許可 **リスト] セクション** で、許可されている送信者とドメインを確認 (および/または編集) します。
+5. ポリシーの詳細フライアウトに戻り、[許可された送信者とブロックされた送信者とドメイン] セクションに移動し、許可されている送信者と許可されたドメインを確認または編集します。
 
-4. **[保存]** をクリックします。
+6. 完了したら、**[閉じる]** をクリックします。
 
-スパム対策ポリシー オプションの詳細については、「EOP でスパム対策ポリシーを構成する」 [を参照してください](configure-your-spam-filter-policies.md)。
+スパム対策ポリシーを構成する詳細な手順については、「EOP でスパム対策ポリシーを構成する」 [を参照してください](configure-your-spam-filter-policies.md)。
 
 ## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>パート 4 - 悪意のある URL とファイルからの保護 (セーフ Defender セーフの添付ファイルOffice 365)
 

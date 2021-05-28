@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c9cd9ef649ec60fc8d880ae525469980a00f69b2
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7632efb2014af9f55e9cad700bceeeabe555fb8b
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275002"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696576"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -78,9 +78,9 @@ Microsoft Defender for Office 365修復アクションは自動的に実行さ�
 ポリシーとアラートが構成されている場合[、AIR 機能](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)Office 365 Microsoft Defender に含まれています。 いくつかのヘルプが必要ですか? 「脅威から保護 [する」のガイダンスに](protect-against-threats.md) 従って、次の保護設定を設定または構成します。
 
 - [監査ログ](../../compliance/turn-audit-log-search-on-or-off.md) (有効にする必要があります)
-- [マルウェア対策ポリシー](protect-against-threats.md#part-1---anti-malware-protection)
-- [アンチフィッシュ保護](protect-against-threats.md#part-2---anti-phishing-protection)
-- [スパム対策保護](protect-against-threats.md#part-3---anti-spam-protection)
+- [マルウェア対策ポリシー](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [フィッシング対策保護](protect-against-threats.md#part-2---anti-phishing-protection)
+- [スパム対策保護](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [セーフリンクとセーフ添付ファイル](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [電子メールの 0 時間自動削除](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
@@ -141,7 +141,7 @@ Microsoft Defender で既に AIR 機能を Office 365 に使用している場�
 
 次の表に、Microsoft Defender の AIR に加わる変更と改善点を示Office 365。
 
-|アイテム|何が変わるのか?|
+|Item|何が変わるのか?|
 |---|---|
 |**[調査]** ページ|更新された [ **調査] ページ** は、Microsoft Defender for Endpoint に表示 [される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
 |**[ユーザー]** タブ|[ **ユーザー]** タブが [ **メールボックス] タブ** です。ユーザーに関する詳細は、[メールボックス] タブ **に表示** されます。|
