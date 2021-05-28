@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: セキュリティと共同作業の簡便さのバランスを取りながら、3 つの階層の保護を使用して、ファイル共有セキュリティを強化するために、Teams を構成する方法について説明します。
-ms.openlocfilehash: ab2dd4cbf2b9cfc7b285f049eeaa876371574202
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539217"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683405"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>3 層の保護を使ってチームを構成する
 
@@ -117,6 +117,14 @@ Teams には読み取り専用のアクセス許可オプションはありま�
 機密層および高機密層では、秘密度ラベルを使用して SharePoint コンテンツへのアクセスを制限します。 Azure AD の条件付きアクセスには、場所、リスク、デバイスのコンプライアンス、およびその他の要因に基づく制限を含む、ユーザーが Microsoft 365 にアクセスする方法を決定する多くのオプションが用意されています。 [条件付きアクセスとは?](/azure/active-directory/conditional-access/overview) を読み、組織にとって、どのような追加ポリシーが適切であるかを検討することをお勧めします。
 
 ゲストは、多くの場合、組織で管理されているデバイスを持たされていないことに注意してください。いずれかの層でゲストを許可する場合、Teans やサイトへのアクセスに使用するデバイスの種類を検討し、それに合わせて被管理対象デバイスのポリシーを設定します。
+
+### <a name="control-device-access-across-microsoft-365"></a>Microsoft 365 間でデバイス アクセスを制御する
+
+秘密度ラベルにある管理対象ではないデバイス設定は、SharePoint アクセスだけに影響します。 管理対象ではないデバイスの制御を SharePoint 以外で拡張する場合は、代わりに[組織にあるすべてのアプリとサービスに Azure Active Directory 条件付きアクセス ポリシーを作成](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) することができます。 [Microsoft 365 サービス](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365)専用にこのポリシーを構成するには、**クラウド アプリまたは操作** で **Office 365** クラウド アプリを選択します。
+
+![Azure Active Directory 条件付きアクセス ポリシーにある Office 365 クラウド アプリのスクリーンショット](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+
+すべての Microsoft 365 サービスに関連するポリシーを使用すれば、セキュリティが向上し、ユーザー環境を改善することができるようになります。 たとえば、SharePoint だけで管理対象ではないデバイスへのアクセスをブロックすると、ユーザーは管理対象ではないデバイスを使用してチーム内のチャットにアクセスできますが、**[ファイル]** タブにアクセスしようとするとアクセスできなくなります。Office 365 クラウド アプリを使用すると、[サービスの依存関係](/azure/active-directory/conditional-access/service-dependencies) に関する問題を回避できます。
 
 ## <a name="next-step"></a>次の手順
 
