@@ -10,24 +10,24 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: bbf679a01716fc48d37b241d69740f50a985f048
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d29b9d6bdc30d981b273d95925ba740bc92304c4
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574609"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694247"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>ゲスト アカウントの前提条件
 
-Microsoft Managed Desktop では、ゲスト アカウント アクセス用に Azure AD設定が必要です。 これらの設定は [、Azure portal](https://portal.azure.com) の [外部 **ID/ 外部コラボレーション] で調整できます**。
+Microsoft マネージド デスクトップアカウントアクセスには、Azure ADの設定が必要です。 これらの設定は [、Azure portal](https://portal.azure.com) の [外部 **ID/ 外部コラボレーション設定] で調整できます**。
 
--   **ゲスト 招待者ロールの管理者とユーザーは、[はい** ] に設定して招待 **できます**
+-   [ **ゲスト招待の制限] を** [メンバー ユーザー] に設定し、特定の管理者ロールに割り当てられたユーザーは、メンバーのアクセス許可を持つゲストを含むゲスト ユーザー **を招待できます。**
 -   [ **コラボレーションの制限] で**、次のオプションを選択します。
     -   [任意の **ドメインへの招待の** 送信を許可する ( 最も包括的な) ] を選択した場合、他の構成は必要ありません。
     -   [指定した **ドメインへの** 招待を拒否する] を選択した場合は、Microsoft.com ドメインに一覧が表示されません。
     -   [指定した **ドメインへの** 招待のみを許可する ] (最も制限の厳しい) を *選択した場合* は、Microsoft.com がターゲット ドメインに表示されます。
 
-これらの設定を操作する制限を設定する場合は、必ず Azure Active Directory Modern **Workplace Service アカウントを除外してください**。 たとえば、ゲスト アカウントによる Intune ポータルへのアクセスを妨げる条件付きアクセス ポリシーがある場合は、このポリシーからモダン **Workplace サービス** アカウント グループを除外します。
+これらの設定を操作する制限を設定する場合は、必ずモダン Workplace サービス Azure Active Directory **を除外してください**。 たとえば、ゲスト アカウントによる Intune ポータルへのアクセスを妨げる条件付きアクセス ポリシーがある場合は、このポリシーからモダン **Workplace サービス** アカウント グループを除外します。
 
 ## <a name="steps-to-get-ready"></a>準備の手順
 

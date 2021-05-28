@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 機能の制限やメールボックスの配置など、Exchange Onlineの複数地域機能について説明します。
-ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923734"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694307"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online の Multi-Geo 機能
 
@@ -43,7 +43,7 @@ Exchange online は、**PreferredDataLocation** プロパティを、Azure AD �
 
 - **PreferredDataLocation** がユーザーに指定されていない場合、メールボックスは中央の地理的位置にプロビジョニングされます。
 
-- **PreferredDataLocation** コードが誤っている場合 (たとえば、NAMでなくNANと入力した場合)、メールボックスは中央の 地理的位置にプロビジョニングされます。
+- **PreferredDataLocation** コードが正しくない場合 (NAM ではなく NAN の入力ミスなど)、メールボックスは中央地理的な場所にプロビジョニングされます。
 
 **注**: 複数地域の機能と Skype for Business Online が地域的にホストする会議のいずれの場合も、ユーザーオブジェクトの **PreferredDataLocation** プロパティがサービスを見つけます。 地域でホストされる会議用のユーザー オブジェクトに **PreferredDataLocation** の値を構成すると、そのユーザーのメールボックスは、Microsoft 365 テナントで複数地域が有効になった後、指定した地理的位置に自動的に移動します。
 

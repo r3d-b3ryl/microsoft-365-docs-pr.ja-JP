@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d69c7dc30a4cf6a3078f510a02e5572fe8b36cbb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a4ebb360bc606845bfd3f80f31082c836b896477
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530912"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694259"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint のパフォーマンスの問題のトラブルシューティング
 
@@ -32,7 +32,7 @@ ms.locfileid: "52530912"
 
 **適用対象:**
 
-- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -94,7 +94,7 @@ ms.locfileid: "52530912"
       現在の統計情報を収集するには、次のコマンドを実行します。
 
       ```bash
-      mdatp config real-time-protection-statistics --output json > real_time_protection.json
+      mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
       ```
 
       > [!NOTE]

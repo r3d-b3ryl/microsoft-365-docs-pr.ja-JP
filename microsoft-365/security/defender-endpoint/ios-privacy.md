@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934287"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694475"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>プライバシー情報 - Microsoft Defender for Endpoint on iOS
 
@@ -39,6 +39,9 @@ ms.locfileid: "51934287"
 iOS のエンドポイント用 Defender は、構成済みの iOS デバイスから情報を収集し、Defender for Endpoint を持つ同じテナントに格納します。 この情報は、IOS の Defender for Endpoint をセキュリティで保護し、最新の状態に保ち、期待通り実行し、サービスをサポートするために収集されます。
 
 データ ストレージの詳細については [、「Microsoft Defender for Endpoint data storage and privacy」を参照してください](data-storage-privacy.md)。
+
+
+Android および iOS モバイル デバイスの Microsoft Defender for Endpoint に関する最も一般的なプライバシーに関する質問の詳細については [、「Microsoft Defender for Endpoint and your](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)privacy on Android and iOS mobile devices」を参照してください。
 
 ## <a name="required-data"></a>必須データ 
 

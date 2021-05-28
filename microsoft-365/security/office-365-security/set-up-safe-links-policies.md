@@ -18,12 +18,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender for microsoft Defender の セーフ リンク ポリシーとグローバル セーフ リンクの設定を表示、作成、変更、および削除する方法をOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8b2cb8b57dcf630b3e07ac387e96ab099ca7403
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 61cb4746289a8acbdd9af7f668010604de511902
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205619"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694499"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender セーフのリンク ポリシーを設定Office 365
 
@@ -49,6 +49,9 @@ ms.locfileid: "51205619"
 
 - 安全なリンク **ポリシー:** セーフ リンク保護を有効にし、リアルタイム URL スキャンを有効にし、メッセージを配信する前にリアルタイム スキャンが完了するのを待つかどうかを指定し、内部メッセージのスキャンをオンにし、URL のユーザークリックを追跡するかどうかを指定し、ユーザーが元の URL へのトラフをクリックできるかどうかを指定します。
 - **安全なリンクルール**: 優先度と受信者のフィルター (ポリシーが適用されるユーザー) を指定します。
+
+> [!IMPORTANT]
+> 管理者は、SafeLinks の異なる構成設定を検討する必要があります。 使用できるオプションの 1 つは、ユーザー識別可能な情報を SafeLinks に含める方法です。 この機能により *、セキュリティ Ops チームは* 、潜在的なユーザー侵害を調査し、是正措置を取り、コストのかかる侵害を制限できます。
 
 これらの 2 つの要素の違いは、セキュリティ セーフ コンプライアンス センターでリンクポリシーを管理&ではありません。
 

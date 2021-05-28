@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1aaae2970cfb2f6da82507eefa87c8d0e2227661
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: c72e9491303d3f14ddb184e6a302a518643f709d
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939626"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694343"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 用 Microsoft Defender for Endpoint - プライバシー情報
 
@@ -37,6 +37,8 @@ Defender for Endpoint on Android は、構成済みの Android デバイスか�
 データ ストレージの詳細については [、「Microsoft Defender for Endpoint data storage and privacy」を参照してください](data-storage-privacy.md)。
 
 情報は、Defender for Endpoint for Android のセキュリティを確保し、最新の状態に保ち、期待通り実行し、サービスをサポートするために収集されます。
+
+Android および iOS モバイル デバイスの Microsoft Defender for Endpoint に関する最も一般的なプライバシーに関する質問の詳細については [、「Microsoft Defender for Endpoint and your](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)privacy on Android and iOS mobile devices」を参照してください。
 
 ## <a name="required-data"></a>必須データ 
 

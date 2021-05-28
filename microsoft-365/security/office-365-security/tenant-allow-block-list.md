@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 270e38d65857de2f4d06460fb3bb77f72a165ecf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 636114180a1814f5ef842b2a704f2df98488f46e
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538965"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694487"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの URL を管理する
 
@@ -44,7 +44,6 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 - ブロックする URL。
 - ブロックするファイル。
-- 許可するメール送信者ドメインを一括送信します。 バルク メール、バルク信頼レベル (BCL)、スパム対策ポリシーによるバルク メール フィルターの詳細については、「EOP のバルク 苦情レベル [(BCL)」を参照してください](bulk-complaint-level-values.md)。
 - 許可またはブロックするスプーフィングされた送信者。 スプーフィング インテリジェンスインサイトで許可またはブロックの[](learn-about-spoof-intelligence.md)評決を上書きすると、スプーフィングされた送信者は、テナント許可/ブロック一覧の [スプーフィング] タブにのみ表示される手動の許可またはブロックエントリになります。 スプーフィング インテリジェンスによって検出される前に、スプーフィングされた送信者のエントリを手動で作成またはブロックすることもできます。
 
 この記事では、セキュリティ & コンプライアンス センターまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) のテナント許可/ブロック一覧のエントリを構成する方法について説明します。
@@ -76,7 +75,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - この記事の手順を実行する際には、あらかじめExchange Online でアクセス許可を割り当てる必要があります。
-  - **URL、ファイル、および一括送信者の許可**:
+  - **URL とファイル**:
     - テナント許可/ブロック一覧の値を追加および削除するには、組織の管理またはセキュリティ管理者の役割グループのメンバー **である** 必要があります。
     - テナント許可/ブロック一覧への読み取り専用アクセスでは、グローバル リーダーまたはセキュリティリーダーの役割グループの **メンバーである** 必要があります。
   - **スプーフィン** グ: 次のいずれかの組み合わせ。
@@ -135,26 +134,6 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 4. 完了したら、**[追加]** をクリックします。
 
-## <a name="use-the-security--compliance-center-to-create-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>コンプライアンス センターのセキュリティ &を使用して、テナントの許可/ブロック一覧にバルク メール送信者ドメイン エントリを作成する
-
-1. セキュリティ 管理コンプライアンス センター&、[**脅威管理ポリシー** ] [テナントの許可 \>  \> **/ブロックリスト] に移動します**。
-
-2. [テナントの **許可/ブロック一覧** ] ページで **、[BCL** バイパスの送信者ドメイン] タブを選択し、[追加] を **クリックします**。
-
-3. 表示される **BCL バイパス フライアウトの送信者** ドメインの追加で、次の設定を構成します。
-
-   - **BCL バイパスの送信者ドメインを** 追加する: 1 行に 1 つの適切なバルク メールのソース ドメインを 1 つ入力し、最大 20 まで入力します。
-
-   - **有効期限が切れる** ことはありません: 次のいずれかの手順を実行します。
-
-     - 設定がオフ (トグルオフ) になっていることを確認し、[有効期限] ボックスを使用してエントリの有効期限 ![ ](../../media/scc-toggle-off.png) を指定します。 
-
-     または
-
-     - 切り替えボタンを右に移動して、有効期限が切れなきエントリを構成します。 ![オンに切り替え](../../media/scc-toggle-on.png).
-
-4. 完了したら、**[追加]** をクリックします。
-
 ## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>セキュリティ コンプライアンス センター&使用して、テナント許可/ブロック一覧でスプーフィングされた送信者エントリを作成またはブロックする
 
 **注**:
@@ -198,11 +177,6 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
      - **最終更新日**
      - **有効期限**
      - **注**
-
-   - **BCL バイパスの送信者ドメイン**
-     - **値**: バルク メール送信者のドメイン。
-     - **最終更新日**
-     - **有効期限**
 
    - 「**スプーフィング**」
      - **スプーフィングされたユーザー**
@@ -312,23 +286,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 構文とパラメーターの詳細については [、「New-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/new-tenantallowblocklistitems)。
 
-### <a name="use-powershell-to-add-allow-bulk-mail-sender-domain-entries-to-the-tenant-allowblock-list"></a>PowerShell を使用して、一括メール送信者ドメイン エントリをテナント許可/ブロックリストに追加する
-
-テナント許可/ブロック一覧にバルク メール送信者ドメイン エントリを追加するには、次の構文を使用します。
-
-```powershell
-New-TenantAllowBlockListItems -ListType BulkSender -Block:$false -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-
-次の使用例は、有効期限が切れることはありません、指定したドメインの許可された一括送信者エントリを追加します。
-
-```powershell
-New-TenantAllowBlockListItem -ListType BulkSender -Block:$false -Entries contosodailydeals.com
-New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-構文とパラメーターの詳細については [、「New-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/new-tenantallowblocklistitems)。
-
 ### <a name="use-powershell-to-add-allow-or-block-spoofed-sender-entries-to-the-tenant-allowblock-list"></a>PowerShell を使用して、スプーフィングされた送信者エントリをテナント許可/ブロックリストに追加またはブロックする
 
 テナント許可/ブロック一覧にスプーフィングされた送信者エントリを追加するには、次の構文を使用します。
@@ -357,28 +314,6 @@ Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -Block
-```
-
-構文とパラメーターの詳細については [、「Get-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/get-tenantallowblocklistitems)。
-
-### <a name="use-powershell-to-view-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用して、テナント許可/ブロック一覧でバルク メール送信者ドメイン エントリを表示する
-
-テナント許可/ブロック一覧でバルク メール送信者ドメイン エントリを表示するには、次の構文を使用します。
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender [-Entry <BulkSenderDomainValue>] [<-ExpirationDate Date | -NoExpiration>]
-```
-
-次の使用例は、許可されている一括メール送信者ドメインを返します。
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender
-```
-
-次の使用例は、指定された一括送信者ドメインの情報を返します。
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "contosodailydeals.com"
 ```
 
 構文とパラメーターの詳細については [、「Get-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/get-tenantallowblocklistitems)。
@@ -427,22 +362,6 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 構文とパラメーターの詳細については [、「Set-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/set-tenantallowblocklistitems)。
 
-### <a name="use-powershell-to-modify-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用して、テナント許可/ブロック一覧のバルク メール送信者ドメイン エントリを変更する
-
-テナント許可/ブロック一覧のバルク メール送信者ドメイン エントリを変更するには、次の構文を使用します。
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-次の使用例は、指定した許可バルク メール送信者ドメイン エントリの有効期限を変更します。
-
-```powershell
-Set-TenantAllowBlockListItems -ListType BulkSender -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -NoExpiration
-```
-
-構文とパラメーターの詳細については [、「Get-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/get-tenantallowblocklistitems)。
-
 ### <a name="use-powershell-to-modify-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用して、テナント許可/ブロック一覧のスプーフィングされた送信者エントリを変更またはブロックする
 
 テナント許可/ブロック一覧でスプーフィングされた送信者エントリの許可またはブロックを変更するには、次の構文を使用します。
@@ -459,12 +378,12 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 構文とパラメーターの詳細については [、「Set-TenantAllowBlockListSpoofItems」を参照してください](/powershell/module/exchange/set-tenantallowblocklistspoofitems)。
 
-### <a name="use-powershell-to-remove-bulk-mail-sender-domain-file-and-domain-entries-from-the-tenant-allowblock-list"></a>PowerShell を使用して、一括メール送信者ドメイン、ファイル、およびドメイン エントリをテナント許可/ブロック一覧から削除する
+### <a name="use-powershell-to-remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>PowerShell を使用してテナント許可/ブロック一覧から URL またはファイル エントリを削除する
 
-一括メール送信者ドメイン エントリの許可、ファイル エントリのブロック、およびテナント許可/ブロックリストからの URL エントリのブロックを削除するには、次の構文を使用します。
+テナント許可/ブロック一覧からファイルエントリと URL エントリを削除するには、次の構文を使用します。
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <BulkSender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 次の使用例は、指定したブロック URL エントリをテナント許可/ブロック一覧から削除します。

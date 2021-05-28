@@ -18,16 +18,21 @@ description: 支払った源泉徴収税のアカウントでクレジットを�
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 68afdd9c5dddc071faa96a78981c68cc2c20e1ed
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689027"
+ms.locfileid: "52694223"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>アカウントの源泉徴収税のクレジットを要求する (インドのお客様)
+
+> [!NOTE]
+>
+> 組織がインドに拠点を置かされていない場合は、「アカウントに源泉徴収税のクレジットを要求する (グローバルユーザー)」 [を参照してください](withholding-tax-credit-global.md)。
 
 インドのお客様は、Microsoft Regional Sales Pte Ltd. シンガポール (MRS) が請求する Web ダイレクト (Azure および Microsoft 365) の請求書を受け取り、請求書を決済するためにシンガポールへのクロスボーダー支払いを行います。 支払いを実行するときに税金を差し控える場合、この記事では、MRS を使用してアカウントで源泉徴収税 (WHT) のクレジットを請求するプロセスについて説明します。
 
