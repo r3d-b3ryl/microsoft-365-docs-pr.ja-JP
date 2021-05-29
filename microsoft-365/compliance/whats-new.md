@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698954"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706620"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
@@ -48,7 +48,7 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 
 ### <a name="data-connectors"></a>データ コネクタ
 
-- [Oracle データで Cisco Jabber をアーカイブするコネクタをセットアップする]/microsoft-365/compliance/archive-ciscojabberonoracle-data)
+- [Oracle データで Cisco Jabber をアーカイブするコネクタをセットアップする](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
 - [PostgreSQL データで Cisco Jabber をアーカイブするコネクタをセットアップする](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
 
 ### <a name="data-loss-prevention"></a>データ損失防止
@@ -59,14 +59,15 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 
 ### <a name="retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーと保持ラベル ポリシー
 
-- Microsoft 365 グループの場所では、Applications パラメーターを使用して[Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy)コマンドレットを使用して、Microsoft 365 メールボックスまたは接続された SharePoint サイトへの保持設定の適用がサポートされています。
+- Microsoft 365 グループの場所では *、Applications* パラメーターで [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy)コマンドレットを使用して、保持設定を Microsoft 365 メールボックスまたは接続された SharePoint サイトに適用できます。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
 Outlookと更新プログラム:
-- 以前は AIP 統合ラベル付けクライアントでのみサポートされ、組み込みのラベル付けは既定のラベルと必須ラベル付けの異なる設定 [をサポートしています](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
-- Encrypt-Only macOS、iOS、Android でサポートされる
-- [Office](/microsoft-365/compliance/sensitivity-labels-office-apps)アプリのトピックで、Outlook 機能テーブルの [既定のラベルの異なる設定] の新[](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling)しいエントリで更新され、組み込みのラベル付け用の新しい[Outlook](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook)機能リリースの必須ラベル付けが更新され、別の既定のラベルをサポートし、必須ラベル付けが適用されません。 さらに、Encrypt-Only オプションは macOS/iOS/Android でサポートされ、変数を含むすべての動的マーキングがすべての Outlook クライアントでサポートされています。 現在、必須のラベル付けは残りのプラットフォームに展開されています。
+- [既定のラベルと必須のラベル付けの](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) 設定が、組み込みのラベル付けでサポートされています。 以前は、これらの設定は AIP 統合ラベル 付けクライアントでのみサポートされました。
+- [暗号化のみは](encryption-sensitivity-labels.md#let-users-assign-permissions) 、macOS、iOS、Android でサポートされています。
+- [必須のラベル付](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) けは、残りのプラットフォームに展開されます。
+- [すべての変数を含む動的なマーキングは](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)、すべてのクライアントでOutlookされます。
 
 ## <a name="march-2021"></a>2021 年 3 月
 

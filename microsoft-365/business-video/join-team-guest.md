@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: チームにゲストとして参加する方法については、Microsoft Teams。
-ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 04ee1a32e63c6cbff1f6352362ed04b06a9791fa
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903720"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706240"
 ---
 # <a name="join-a-team-as-a-guest"></a>ゲストとしてチームに参加
+
+## <a name="watch-join-a-team-as-a-guest"></a>ウォッチ: チームにゲストとして参加する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys?autoplay=false]
 
@@ -47,8 +49,10 @@ ms.locfileid: "51903720"
     組織で既に Teamsアプリを使用している場合は、チームにゲストとして参加する方が非常に簡単です。
 
 1. アプリをMicrosoft Teams開き、[**は** い] を選択して招待されたチームに切り替えます。  これで、プロジェクトで共同作業を行Teams。
-2. 会社のチームに切り替える場合は、[組織] ドロップダウン  **から選択します**  。
+1. 会社のチームに切り替える場合は、[組織] ドロップダウン  **から選択します**  。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Teams](https://docs.microsoft.com/microsoftteams/guest-experience)でのゲスト エクスペリエンス ([記事)](https://docs.microsoft.com/microsoftteams/enable-features-office-365)組織の Microsoft Teams 設定の管理 (記事[)](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations)組織外のユーザーとの共同作業にゲスト アクセスと外部アクセスを使用する (記事)
+[ゲスト エクスペリエンス (Teams)\](/microsoftteams/guest-experience)
+[組織Microsoft Teams設定を管理する](/microsoftteams/enable-features-office-365)(記事)\
+[ゲスト アクセスと外部アクセスを使用して組織外](/microsoftteams/communicate-with-users-from-other-organizations) のユーザーと共同作業する (記事)

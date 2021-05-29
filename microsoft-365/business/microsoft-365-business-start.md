@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: ビジネス向けMicrosoft 365、セットアップ方法、ユーザーのデバイスと PC を準備して、ユーザーがビジネス向けデバイスで保護Microsoft 365します。
-ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293709"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706460"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>ビジネス向けMicrosoft 365を開始する
 
@@ -41,7 +41,7 @@ ms.locfileid: "52293709"
 
 Microsoft 365は、常に最新の Outlook、Word、Excel、その他の Office 製品などのビジネス生産性とコラボレーション ツールの包括的なセットです。 管理が簡単なエンタープライズ レベルのセキュリティを使用して、すべての iOS、Android、Windows 10 デバイスで作業ファイルを保護できます。
 
-ビジネス向けサービスの概要については、このMicrosoft 365ご覧ください。<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>ウォッチ: その他のMicrosoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -61,11 +61,11 @@ Microsoft 365は、最大 300 ライセンスを使用します。 ライセン�
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-このビデオでは、ビジネスセットアップに関するMicrosoft 365説明します。<br><br>
+## <a name="watch-set-up-microsoft-365-business"></a>ウォッチ: 設定Microsoft 365 Business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../business-video/index.yml)」をご覧ください。
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: ビジネス向Microsoft 365を設定する (管理者)
@@ -99,7 +99,7 @@ Microsoft 365は、最大 300 ライセンスを使用します。 ライセン�
 一部のオンプレミス リソース (ファイル共有やプリンターなど) を含むローカル Active Directory を保持する場合は、Azure AD に参加しているデバイスにこれらのリソースへのアクセス権を与えることができます。次の手順を実行します。ビジネス向け Microsoft 365 で [Azure](access-resources.md) **AD** に参加しているデバイスからオンプレミス リソースにアクセスします。
   
   
-## <a name="contact-support"></a>サポートに連絡
+## <a name="contact-support"></a>サポートに連絡する
 
  **サポートに連絡する場合:**
   
@@ -109,8 +109,7 @@ Microsoft 365は、最大 300 ライセンスを使用します。 ライセン�
     
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365ドキュメントとリソースの詳細](./index.yml)
-  
-[ビジネスMicrosoft 365管理](manage.md)[ビジネス向けMicrosoft 365移行する](migrate-to-microsoft-365-business.md)
-
-[一般法人向け Microsoft 365 のトレーニング ビデオ](../business-video/index.yml)
+[Microsoft 365ドキュメントとリソースの詳細](./index.yml)(リンク ページ)\
+[ビジネスMicrosoft 365管理](manage.md)(記事)\
+[ビジネス向Microsoft 365に移行](migrate-to-microsoft-365-business.md)する (記事)\
+[一般法人向け Microsoft 365 のトレーニング ビデオ](../business-video/index.yml) (リンク ページ)

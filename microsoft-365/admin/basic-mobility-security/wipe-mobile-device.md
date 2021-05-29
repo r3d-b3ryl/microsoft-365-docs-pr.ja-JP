@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 組み込みの Basic Mobility and Security を使用して、登録済みデバイスから情報を削除します。
-ms.openlocfilehash: 7830a0f4ef609f6465c171ecab2c9e3c48198424
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023859"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706144"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Basic Mobility and Security でモバイル デバイスをワイプする
 
@@ -88,7 +88,3 @@ Microsoft 365 の組み込みの Basic Mobility and Security を使用して、�
 |Basic Mobility and Security によって作成されたメール プロファイルが削除され、デバイス上のキャッシュされたメールが削除されます。|はい|該当なし|
 >[!NOTE]
 >ポータル サイトアプリは、iOS 用アプリ ストアと Android デバイス向け Play ストアで利用できます。
-
-## <a name="related-topics"></a>関連項目
-
-[基本的なモビリティとセキュリティの設定](set-up.md)

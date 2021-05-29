@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'PowerShell を使用して、組織内のすべてのユーザーまたは特定のユーザーに対してクラッター機能を有効または無効Exchangeします。 '
-ms.openlocfilehash: ac68893bc0aeea5ab214698c54524921e2b1921d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 059fb8e626a0b05e0224fc89931453aaae43be0b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915904"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706115"
 ---
 # <a name="configure-clutter-for-your-organization"></a>組織での低優先メールの構成
 
@@ -96,11 +96,8 @@ PowerShell を使用してユーザーを一括作成する場合、各ユーザ
     
   - 低優先メールの設定は表示されます。
     
-## <a name="related-articles"></a>関連記事
-<a name="bkmk_onoff"> </a>
+## <a name="related-content"></a>関連コンテンツ
 
-[Outlook で低優先メール機能を使って優先度の低いメッセージを並べ替える](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
-    
-[低優先度のメッセージを OWA で並べ替える場合は、クラッターを使用する](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
-    
-[Outlook の低優先メール機能をオフにする](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
+[低優先度のメッセージを並べ替える場合は、クラッターを使用Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) (記事)\
+[低優先度のメッセージを OWA で並べ替える](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) 場合は、クラッターを使用します (記事)\
+[[クラッター] をOutlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)する (記事)

@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 電子メールの自動転送を停止する方法について学習します。
-ms.openlocfilehash: f8bd599c7c8bca8d4789188acbcd3574b7473dcb
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: 独自の情報の盗難を回避するためにメール フロー ルールを作成して、電子メールの自動転送を停止する方法について説明します。
+ms.openlocfilehash: 82e4c80b0edc501889e0fc4dc28f1ec1ad703568
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903684"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706476"
 ---
 # <a name="stop-email-auto-forward"></a>電子メールの自動転送を停止する
+
+## <a name="watch-stop-auto-forwarding-emails"></a>ウォッチ: 自動転送メールを停止する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
@@ -50,4 +52,6 @@ ms.locfileid: "51903684"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーに別](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user)のメール エイリアスを追加する (記事) [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding)でメール転送を構成する ([記事)](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues)ビジネス管理者向け Office 365 としてメール配信の問題を検索して修正する (記事)
+[ユーザーに別のメール エイリアスを追加する](../admin/email/add-another-email-alias-for-a-user.md) (記事)
+[Microsoft 365 でメールの転送を構成する](../admin/email/configure-email-forwarding.md) (記事)
+[ビジネス管理者向けメール配信の問題Office 365検索して修正](/exchange/troubleshoot/email-delivery/email-delivery-issues)する (記事)

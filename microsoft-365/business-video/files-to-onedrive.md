@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: ファイルを別のファイルに移動するOneDrive。
-ms.openlocfilehash: b955895d48853e73a5f2f73e6c6f49d8806e735f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 68d4b08fa0704279a36c32c8b6688009b08fa50f
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578917"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706252"
 ---
 # <a name="move-files-to-onedrive"></a>ファイルをファイルに移動OneDrive
+
+## <a name="watch-move-your-files-to-onedrive-for-business"></a>ウォッチ: ファイルをファイルに移動OneDrive for Business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 

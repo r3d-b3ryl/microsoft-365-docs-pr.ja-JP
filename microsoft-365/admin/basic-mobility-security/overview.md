@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本モビリティとセキュリティを使用して、デバイス のセキュリティ ポリシーとアクセス ルールを設定します。
-ms.openlocfilehash: e74a5df6d10f8f3fb7b420e428380af97ba75597
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 37be420a4b9499da3d1290b8b6a898b9fcb09c5b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906254"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706312"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>基本モビリティとセキュリティの概要 (Microsoft 365
 
@@ -59,12 +59,9 @@ Basic Mobility and Security がセットアップされ、ユーザーがデバ�
 
 モバイル アプリ管理 (MAM) が必要な場合(おそらく、ユーザーが自分のデバイスで作業プロジェクトを更新する場合)、Intune にはデバイスの登録と管理以外に別のオプションがあります。 Intune サブスクリプションを使用すると、ユーザーのデバイスが Intune に登録されていない場合でも、Azure ポータルを使用して MAM ポリシーを設定できます。 詳細については、「アプリ保護 [ポリシーの概要」を参照してください](/mem/intune/apps/app-protection-policy)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-content"></a>関連コンテンツ
 
-[基本的なモビリティとセキュリティの設定](set-up.md)
-
-[基本モビリティとセキュリティを使用してモバイル デバイスを登録する](enroll-your-mobile-device.md)
-
-[モバイル デバイス管理に登録されているデバイスを管理Microsoft 365](manage-enrolled-devices.md)
-
-[Basic Mobility and Security が管理するデバイスの詳細を取得する](get-details-about-managed-devices.md)
+[基本モビリティとセキュリティのセットアップ](set-up.md) (記事)\
+[基本モビリティとセキュリティを使用してモバイル デバイスを登録](enroll-your-mobile-device.md) する (記事)\
+[モバイル デバイス管理に登録されているデバイスを管理する](manage-enrolled-devices.md)(Microsoft 365)\
+[Basic Mobility and Security が管理するデバイスの詳細を取得](get-details-about-managed-devices.md) する (記事)

@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 多要素認証を有効にする方法について学習します。
-ms.openlocfilehash: 64e054defb407a3b2c1e4d124767d1d68f78452a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 多要素認証 (2 要素認証とも呼ばれる) を有効にする方法について学習します。
+ms.openlocfilehash: 7d491ac88ab928dea9b5a5316a51151b8df63eab
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578581"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706444"
 ---
 # <a name="turn-on-multi-factor-authentication"></a>多要素認証を有効にする
+
+## <a name="watch-turn-on-multi-factor-authentication"></a>ウォッチ: 多要素認証を有効にする
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 

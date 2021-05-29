@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 共有メールボックスに問題が発生した場合は、次の解決策を試してください。
-ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 共有メールボックスをセットアップすると、エラーが発生する可能性があります。 共有メールボックスに問題が発生した場合は、次の解決策を試してください。
+ms.openlocfilehash: 89cdfbe29ab035b1eb6c3a0183629eef59d67477
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926488"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706132"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>共有メールボックスの問題を解決する
 
@@ -50,17 +50,13 @@ ms.locfileid: "49926488"
 
 このメッセージは、レプリケーションMicrosoft 365が発生している場合に表示されます。 新しい共有メールボックス (または追加ユーザー) に関する情報がすべてのデータ センターにレプリケートされた場合、1 時間かそれ以上で削除する必要があります。 1 時間待って、もう一度やり直してメッセージを送信します。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[共有メールボックスについて](about-shared-mailboxes.md)
-
-[共有メールボックスを作成する](create-a-shared-mailbox.md)
-
-[共有メールボックスを構成する](configure-a-shared-mailbox.md)
-
-[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md)
-
-[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md)
+[共有メールボックスについて](about-shared-mailboxes.md) (記事)\
+[共有メールボックスの作成](create-a-shared-mailbox.md) (記事)\
+[共有メールボックスを構成する](configure-a-shared-mailbox.md) (記事)\
+[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md) (記事)\
+[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md) (記事)
 
 
     

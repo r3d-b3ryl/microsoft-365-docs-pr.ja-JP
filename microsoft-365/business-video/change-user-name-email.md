@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: ユーザーの名前または電子メール アドレスを変更する方法について説明します。
-ms.openlocfilehash: 0f2a378cccf2def9cd951483b23a11c2a414607d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: 表示名、エイリアス、または電子メール アドレスを変更して、ユーザーの名前または電子メール アドレスを変更する方法について説明します。
+ms.openlocfilehash: e012923ebe12a04b07c9236f5ebbd30623cd2dd5
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903732"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706420"
 ---
 # <a name="change-a-users-name-or-email-address"></a>ユーザーの名前または電子メール アドレスを変更する
+
+## <a name="watch-change-a-users-name-or-email-address"></a>視聴: ユーザー名またはメール アドレスを変更する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
@@ -63,4 +65,6 @@ ms.locfileid: "51903732"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[メールボックスのアクセス許可を別のユーザー](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) に付与する (記事) [ユーザー](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) メールボックスを共有メールボックスに変換する (記事) [ユーザーの電子メール設定](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) (記事)
+[メールボックスのアクセス許可を別のユーザーに付与](../admin/add-users/give-mailbox-permissions-to-another-user.md) する (記事)\
+[ユーザー メールボックスを共有メールボックスに変換する](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (記事)\
+[ユーザーのメール設定](../admin/email/office-365-user-email-settings.md) (記事)

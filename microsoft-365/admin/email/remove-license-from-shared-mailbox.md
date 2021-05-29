@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: '共有メールボックスからライセンスを削除して、別のユーザーに割り当てる。 '
-ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: '共有メールボックスからライセンスを削除して、別のユーザーに割り当てるか、ライセンスを返して支払いを行わない。 '
+ms.openlocfilehash: d33487879506402c5f0de2f7942c3299c5698b73
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537585"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706288"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>共有メールボックスからライセンスを削除する
 
@@ -74,14 +74,10 @@ ms.locfileid: "52537585"
 
 6. ライセンスの支払いは引き続き行います。 支払いを停止するには、 [サブスクリプションからライセンスを削除します](../../commerce/licenses/buy-licenses.md)。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[共有メールボックスについて](about-shared-mailboxes.md)
-
-[共有メールボックスを作成する](create-a-shared-mailbox.md)
-
-[共有メールボックスを構成する](configure-a-shared-mailbox.md)
-
-[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md)
-
-[共有メールボックスの問題を解決する](resolve-issues-with-shared-mailboxes.md)
+[共有メールボックスについて](about-shared-mailboxes.md) (記事)\
+[共有メールボックスの作成](create-a-shared-mailbox.md) (記事)\
+[共有メールボックスを構成する](configure-a-shared-mailbox.md) (記事)\
+[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md) (記事)\
+[共有メールボックスに関する問題を解決する](resolve-issues-with-shared-mailboxes.md) (記事)

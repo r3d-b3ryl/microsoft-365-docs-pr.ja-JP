@@ -18,16 +18,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
-ms.openlocfilehash: 60de4e3f36427a69ecf0bf52e5dfd34f089991f3
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 41df5bfba7362d9c2b3a47deca4e4586902bbd98
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994975"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706180"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
-Basic Mobility and Security は、組織内のライセンスを取得した Microsoft 365 ユーザーが使用する iPhone、iPad、Android、Windows Phone など、モバイル デバイスのセキュリティ保護と管理に役立ちます。 組織の Microsoft 365 メールへのアクセスを制御するのに役立つ設定と、サポートされているモバイル デバイスとアプリのドキュメントを使用して、モバイル デバイス管理ポリシーを作成できます。 デバイスの紛失または盗難時には、リモートからデバイスをワイプして、組織の機密情報を削除できます。
+Basic Mobility and Security は、組織内のライセンスを持つ Microsoft 365 ユーザーが使用する iPhone、iPad、Android、Windows Phone など、モバイル デバイスのセキュリティ保護と管理に役立ちます。 モバイル デバイス管理ポリシーを作成し、サポートされているモバイル デバイスとアプリの組織の Microsoft 365 メールやドキュメントへのアクセスを制御するのに役立つ設定を使用できます。 デバイスの紛失または盗難時には、リモートからデバイスをワイプして、組織の機密情報を削除できます。
 
 ## <a name="supported-devices"></a>サポート対象のデバイス
 
@@ -39,49 +39,49 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 - Windows 8.1<sup>1</sup>
 
-- Windows 8.1 RT<sup>1</sup>
+- Windows 8.1RT<sup>1</sup>
 
 - Windows 10<sup>2</sup>
 
 - Windows 10 Mobile<sup>2</sup>
 
-<sup>1</sup>Windows 8.1 RT デバイスのアクセス制御は、1 つの RT デバイスExchange ActiveSync。
+<sup>1</sup>RT デバイスWindows 8.1アクセス制御は、1 つの RT デバイスExchange ActiveSync。
 
-<sup>2</sup>Windows 10 のアクセス制御には、Azure AD Premium を含むサブスクリプションが必要で、デバイスを Azure Active Directory に参加する必要があります。
+<sup>2</sup>ユーザーのアクセス制御Windows 10 Azure AD プレミアムを含むサブスクリプションが必要で、デバイスをそのサブスクリプションに参加Azure Active Directory。
 
 <sup>3</sup>2020 年 6 月以降、9 より後の Android バージョンでは、Samsung Knox デバイス以外のパスワード設定を管理できません。
 
 >[!NOTE]
 >以前の OS バージョンで既に登録されているデバイスは引き続き機能しますが、機能は予告なしに変更される可能性があります。
 
-組織内のユーザーが基本モビリティとセキュリティでサポートされていないモバイル デバイスを使用している場合は、組織のデータをより安全にするために、これらのデバイスの Microsoft 365 メールへの Exchange ActiveSync アプリアクセスをブロックできます。 デバイスアクセスをブロックするExchange ActiveSync、「Basic Mobility and Security」の「デバイス アクセス設定の [管理」を参照してください](manage-device-access-settings.md)。
+組織内のユーザーが、Basic Mobility and Security でサポートされていないモバイル デバイスを使用している場合は、Exchange ActiveSync アプリによるこれらのデバイスの Microsoft 365 メールへのアクセスをブロックして、組織のデータの安全性を高めることができます。 デバイスアクセスをブロックするExchange ActiveSync、「Basic Mobility and Security」の「デバイス アクセス設定の[管理」を参照してください](manage-device-access-settings.md)。
 
-## <a name="access-control-for-microsoft-365-email-and-documents"></a>Microsoft 365 の電子メールとドキュメントのアクセス制御
+## <a name="access-control-for-microsoft-365-email-and-documents"></a>電子メールとドキュメントMicrosoft 365アクセス制御
 
 次の表に示すさまざまな種類のモバイル デバイスでサポートされているアプリは、ユーザーのデバイスに適用される新しいモバイル デバイス管理ポリシーが作成され、ユーザーがデバイスを以前に登録しなかった場合に、Basic Mobility and Security に登録するようユーザーに求めるメッセージを表示します。 ポリシーの設定方法によっては、ユーザーのデバイスがポリシーに準拠しない場合、ユーザーがこれらのアプリの Microsoft 365 リソースにアクセスできないか、アクセス権を持っている可能性がありますが、Microsoft 365 はポリシー違反を報告します。
 
 |**製品**|**iOS 10.0 以降**|**Android 5.0 以降**|
 |:-----|:-----|:-----|
-|**Exchange** Exchange ActiveSyncには、バージョン 14.1 以降を使用する組み込みの電子メールアプリと、TouchDown Exchange ActiveSyncサード パーティ製アプリが含まれます。 |メール |メール |
-|**Office**   **および OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**電話とタブレットの場合**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **電話のみ:** <br/> Office Mobile |
+|**Exchange Exchange ActiveSync** バージョン 14.1 以降を使用する、組み込みの電子 Exchange ActiveSyncメールアプリとサードパーティ製アプリ (TouchDown など) が含まれています。 |メール |メール |
+|**Office**  と  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**電話とタブレットの場合**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **電話のみ:** <br/> Office Mobile |
 
 >[!NOTE]
-- >iOS 10.0 以降のバージョンのサポートには、iPhone デバイスと iPad デバイスが含まれます。
+- >iOS 10.0 以降のバージョンのサポートには、iPhoneデバイスiPadがあります。
 - >BlackBerry OS デバイスの管理は、Basic Security および Mobility ではサポートされていません。 BlackBerry の BlackBerry Business Cloud Services (BBCS) を使用して、BlackBerry OS デバイスを管理します。 Android OS を実行している Blackberry デバイスは、標準の Android デバイスとしてサポートされています
-- >モバイル ブラウザーを使用して Microsoft 365 SharePoint サイト、Office Online のドキュメント、または Outlook Web App の電子メールにアクセスする場合、ユーザーは登録を求めるメッセージが表示され、ポリシー違反に対してブロックまたは報告されません。
+- >モバイル ブラウザーを使用して Microsoft 365 SharePoint サイト、Office Online のドキュメント、Outlook Web App の電子メールにアクセスする場合、ユーザーは登録を求めるメッセージが表示され、ポリシー違反に対してブロックまたは報告されません。
 
-次の図は、新しいデバイスを持つユーザーが、Basic Mobility and Security によるアクセス制御をサポートするアプリにサインインした場合の処理を示しています。 ユーザーがデバイスを登録するまで、アプリ内の Microsoft 365 リソースへのアクセスがブロックされます。
+次の図は、新しいデバイスを持つユーザーが、Basic Mobility and Security によるアクセス制御をサポートするアプリにサインインした場合の処理を示しています。 ユーザーは、デバイスを登録するまでMicrosoft 365リソースへのアクセスをブロックされます。
 
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="基本的なモビリティとセキュリティ アクセス制御":::
 
 > [!NOTE]
-> Microsoft 365 Business Standard の Basic Mobility and Security で作成されたポリシーとアクセス ルールは、Exchange 管理センターで作成された Exchange ActiveSync モバイル デバイス メールボックス ポリシーとデバイス アクセス ルールを上書きします。 デバイスが Microsoft 365 Business Standard の Basic Mobility and Security に登録されると、デバイスに適用される Exchange ActiveSync モバイル デバイス メールボックス ポリシーまたはデバイス アクセス ルールは無視されます。 このページの詳細については、「Exchange ActiveSync Exchange [Online Exchange ActiveSync」を参照してください](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)。
+> Microsoft 365 Business Standard の Basic Mobility and Security で作成されたポリシーとアクセス ルールは、Exchange ActiveSync 管理センターで作成された Exchange ActiveSync Exchange モバイル デバイス メールボックス ポリシーとデバイス アクセス ルールを上書きします。 デバイスが Basic Mobility and Security for Microsoft 365 Business Standard に登録されると、Exchange ActiveSync に適用されたモバイル デバイス メールボックス ポリシーまたはデバイス アクセス ルールは無視されます。 詳細については、「Exchange ActiveSync」の [Exchange ActiveSyncをExchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
 
 ## <a name="policy-settings-for-mobile-devices"></a>モバイル デバイス用のポリシー設定
 
-特定の設定を有効にした状態でアクセスをブロックするポリシーを作成すると [、Microsoft 365](capabilities.md)の電子メールとドキュメントのアクセス制御に記載されているサポートされているアプリを使用すると、ユーザーは Microsoft 365 リソースへのアクセスをブロックされます。 
+特定の設定を有効にした状態でアクセスをブロックするポリシーを作成すると[、Microsoft 365](capabilities.md)の電子メールとドキュメントのアクセス制御に記載されているサポートされているアプリを使用している場合、ユーザーは Microsoft 365 リソースへのアクセスをブロックされます。 
 
-ユーザーが Microsoft 365 リソースにアクセスをブロックできる設定は、次のセクションに示されています。
+ユーザーがリソースにアクセスMicrosoft 365できる設定は、次のセクションに示されています。
 
 - セキュリティ
 
@@ -91,11 +91,11 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 - 管理された電子メール プロファイル  
 
-例として次の図は、登録済みデバイスを使用しているユーザーが、そのデバイスに適用されるモバイル デバイス管理ポリシーのセキュリティ設定を満たしていない場合の動作を示しています。 ユーザーは、Basic Mobility and Security を使用してアクセス制御をサポートするアプリにサインインします。 デバイスがセキュリティ設定に準拠するまで、アプリ内の Microsoft 365 リソースへのアクセスがブロックされます。
+例として次の図は、登録済みデバイスを使用しているユーザーが、そのデバイスに適用されるモバイル デバイス管理ポリシーのセキュリティ設定を満たしていない場合の動作を示しています。 ユーザーは、Basic Mobility and Security を使用してアクセス制御をサポートするアプリにサインインします。 デバイスがセキュリティ設定に準拠するまでMicrosoft 365リソースへのアクセスがブロックされます。
 
 :::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Basic Mobility and Security compliance message":::
 
-次のセクションでは、Microsoft 365 組織リソースに接続するモバイル デバイスのセキュリティ保護と管理に使用できるポリシー設定を示します。
+以下のセクションでは、組織のリソースに接続するモバイル デバイスのセキュリティ保護と管理に使用できるポリシー Microsoft 365示します。
 
 ## <a name="security-settings"></a>セキュリティの設定
 
@@ -126,7 +126,7 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 ## <a name="managed-email-profile-option"></a>管理された電子メール プロファイルのオプション 
 
-次のオプションは、手動で作成したメール プロファイルを使用している場合、ユーザーが Microsoft 365 メールにアクセスできません。 iOS デバイスを使用しているユーザーは、電子メールにアクセスする前に、手動で作成した電子メール プロファイルを削除しておく必要があります。 プロファイルを削除すると、新しいプロファイルがデバイスに自動的に作成されます。 エンド ユーザーが準拠を取得する方法については、「既存の電子メール アカウントが見つかりました [」を参照してください](/intune-user-help/existing-company-email-account-found)。
+次のオプションは、手動で作成されたメール プロファイルをMicrosoft 365ユーザーが自分のメールにアクセスするのをブロックできます。 iOS デバイスを使用しているユーザーは、電子メールにアクセスする前に、手動で作成した電子メール プロファイルを削除しておく必要があります。 プロファイルを削除すると、新しいプロファイルがデバイスに自動的に作成されます。 エンド ユーザーが準拠を取得する方法については、「既存の電子メール アカウントが見つかりました [」を参照してください](/intune-user-help/existing-company-email-account-found)。
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -238,8 +238,7 @@ PowerShell コマンドレットを使用して、次の追加のポリシー設
 
 詳細については、「Basic [Mobility and Security」でモバイル デバイスをワイプするを参照してください](wipe-mobile-device.md)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-content"></a>関連コンテンツ
 
-[基本モビリティとセキュリティの概要 (Microsoft 365](overview.md)
-
-[Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する](create-device-security-policies.md)
+[基本モビリティとセキュリティの](overview.md)概要 (Microsoft 365)\
+[Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する](create-device-security-policies.md) (記事)

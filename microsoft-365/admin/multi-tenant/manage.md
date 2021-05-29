@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: テナント スイッチを使用する方法と、マルチテナント ビューについて学習します。
-ms.openlocfilehash: d59760b8a143acc33747aff9f7deaa0b6dd3e711
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+description: 1 つの場所からテナントを管理する機能を提供するテナント スイッチアビューとマルチテナント ビューを使用する方法について学習します。
+ms.openlocfilehash: e0bf6c872d4998c0cd0263fd8474ac5e9c99ef14
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943031"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706156"
 ---
 # <a name="multi-tenant-management"></a>マルチテナント管理
 

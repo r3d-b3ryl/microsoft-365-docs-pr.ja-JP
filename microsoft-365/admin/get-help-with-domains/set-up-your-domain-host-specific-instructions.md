@@ -22,23 +22,23 @@ search.appverid:
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: 独自の DNS レコードを管理する方法、または Microsoft が自分の DNS レコードを管理する方法について説明します。
-ms.openlocfilehash: 475e2c13a1b73a58cfb9f72e9d335a2d1c8b4da5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 454a3c95556d52e9ca2b45f82531839a557a0d8c
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332476"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706384"
 ---
 # <a name="set-up-your-domain"></a>ドメインを設定する
 
-Microsoft 365 でカスタム ドメイン (contoso.com) の使用を開始するには、ドメインを確認し、ドメインの DNS レコードを構成する必要があります。 
+カスタム ドメイン (contoso.com) Microsoft 365を使用するには、ドメインを確認し、ドメインの DNS レコードを構成する必要があります。 
   
 ドメイン ホストの管理ツールを使用して DNS レコードを追加および管理したり、ドメイン レコードを Microsoft で制御したりして、ドメイン レコードをセットアップします。
 
-## <a name="let-microsoft-365-manage-your-dns-records"></a>Microsoft 365 で DNS レコードを管理する 
+## <a name="let-microsoft-365-manage-your-dns-records"></a>DNS Microsoft 365を管理する 
 
-任意のドメイン レジスト [ラーで Microsoft 365](change-nameservers-at-any-domain-registrar.md)をセットアップするためにネーム サーバーを変更する方法について説明します。
+ネームサーバーを変更して、任意のドメイン レジストラー Microsoft 365[設定する方法について説明します](change-nameservers-at-any-domain-registrar.md)。
 
 ## <a name="manage-your-own-dns-records"></a>独自の DNS レコードを管理する
 
-手順については [、「ny DNS ホスティング プロバイダーで DNS レコードを作成する」を参照してください。](create-dns-records-at-any-dns-hosting-provider.md)
+手順については、「任意の [DNS ホスティング プロバイダーで DNS レコードを作成する」を参照してください。](create-dns-records-at-any-dns-hosting-provider.md)

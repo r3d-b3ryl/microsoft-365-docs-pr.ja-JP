@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: サブスクリプションに別のドメインを追加する方法について学習します。
-ms.openlocfilehash: a641005913f7dfd866366f0f8065019dd5c17fe8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: 組織では、複数のドメインが必要になる場合があります。 サブスクリプションに別のドメインを追加する方法について学習します。
+ms.openlocfilehash: 13fc3cf73a112945db4372231cce70c1837c1321
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903744"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706432"
 ---
 # <a name="add-another-domain"></a>別のドメインを追加する
 
@@ -56,4 +56,7 @@ ms.locfileid: "51903744"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 にドメインを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)する[(記事](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)) DNS レコードを追加してドメインに接続する (記事) ネームサーバーを変更して[、Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar)を任意のドメイン レジストラーに設定する (記事) [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (記事)
+[ドメインをドメインに追加Microsoft 365](../admin/setup/add-domain.md) (記事)\
+[DNS レコードを追加してドメインに接続](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) する (記事)\
+[任意のドメイン レジストラーで Microsoft 365 をセットアップするためにネームサーバーを変更する](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (記事)\
+[ドメインの FAQ](../admin/setup/domains-faq.yml) (記事)

@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: ビジネス ファイルを外部で簡単に共有する方法について説明します。
-ms.openlocfilehash: 469e4b16277b048a539767f6fc9fd54d2ea2e6cf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: ビジネス ファイルを外部で簡単に共有するために、Microsoft 365リンクを使用する方法について説明します。
+ms.openlocfilehash: cbe6a12fd8d0c2b2ec16db32178f9c2559a08c22
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578629"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706500"
 ---
 # <a name="easily-share-files-externally"></a>ファイルを外部と簡単に共有する
+
+## <a name="watch-share-files-with-an-anyone-link"></a>ウォッチ: [ユーザー] リンクとファイルを共有する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 

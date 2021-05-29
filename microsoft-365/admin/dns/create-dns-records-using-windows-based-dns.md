@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: ドメインを確認し、Microsoft の電子メール、Skype for Business、その他のサービスWindows DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: fd7c56b6db9fe5f5dbb0637ad5abcb40a64bef8f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876351"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706116"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Microsoft の DNS レコードを作成するには、Windowsベースの DNS を使用します。
 
@@ -76,14 +76,14 @@ SIP CNAME レコードを追加します。
     - ホスト名: sip
     - 種類: CNAME
     - アドレス: sipdir.online.lync.com
-- **[OK]** を選択します。
+- [**OK**] を選択します。
 
 オンライン自動Skype for Business CNAME レコードを追加します。  
 - ドメインの [DNS マネージャー] ページで、[アクション \> **CNAME] (CNAME) に移動します**。 [新しい **リソース レコード]** ダイアログ ボックスで、フィールドが次の値に正確に設定されている必要があります。  
     - ホスト名: lyncdiscover
     - 種類: CNAME
     - アドレス: webdir.online.lync.com
-- **[OK]** を選択します。
+- [**OK**] を選択します。
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Microsoft のモバイル デバイス管理 (MDM) に 2 つの CNAME レコードを追加する
 
@@ -97,7 +97,7 @@ MDM Enterpriseregistration CNAME レコードを追加します。
 - ホスト名: enterpriseregistration
 - 種類: CNAME
 - アドレス: enterpriseregistration.windows.net
-- **[OK]** を選択します。 
+- [**OK**] を選択します。 
 
 MDM Enterpriseenrollment CNAME レコードを追加します。 
 -  ドメインの [DNS マネージャー] ページで、[アクション \> **CNAME] (CNAME) に移動します**。 
@@ -105,7 +105,7 @@ MDM Enterpriseenrollment CNAME レコードを追加します。
     - ホスト名: enterpriseenrollment
     - 種類: CNAME
     - アドレス: enterpriseenrollment-s.manage.microsoft.com
-- **[OK]** を選択します。
+- [**OK**] を選択します。
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 <a name="BKMK_add_TXT"> </a>
@@ -125,7 +125,7 @@ MDM Enterpriseenrollment CNAME レコードを追加します。
 -  レコードの種類: TXT
 -  アドレス: v=spf1 include:spf.protection.outlook.com -all 
          
--  **[OK]** を選択します。
+-  [**OK**] を選択します。
    
 ## <a name="add-srv-records"></a>SRV レコードの追加
 <a name="BKMK_add_SRV"> </a>
@@ -142,7 +142,7 @@ Microsoft に必要な 2 つの SRV レコードを追加します。
     -  重み: 1
     -  ポート: 443
     -  ターゲット (ホスト名): sipdir.online.lync.com
--  **[OK]** を選択します。 
+-  [**OK**] を選択します。 
 
 
 オンライン フェデレーションの SIP SRV レコードSkype for Business追加します。  
@@ -155,7 +155,7 @@ Microsoft に必要な 2 つの SRV レコードを追加します。
     -  重み: 1
     -  ポート: 5061
     -  ターゲット (ホスト名): sipfed.online.lync.com
--  **[OK]** を選択します。 
+-  [**OK**] を選択します。 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>まだドメインを所有していない場合は、レコードを追加してドメインを所有している必要があります。
 <a name="BKMK_verify"> </a>
@@ -208,8 +208,6 @@ Microsoft でドメインを確認します。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Micrsoft 365 から別のホストにドメインを転送](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) する (記事)
-
-[カスタム Microsoft 365からのパイロット テスト (](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain)記事)
-
-[ドメインに関する FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (記事)
+[Micrsoft 365 から別のホストにドメインを](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) 転送する (記事)\
+[カスタム Microsoft 365からのパイロット テスト](../misc/pilot-microsoft-365-from-my-custom-domain.md)(記事)\
+[ドメインの FAQ](../setup/domains-faq.yml) (記事)

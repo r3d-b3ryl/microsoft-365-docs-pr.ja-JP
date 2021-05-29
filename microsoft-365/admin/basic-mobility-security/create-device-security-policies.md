@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security を使用して、組織情報を保護するデバイス ポリシーを作成します。
-ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 5519351db428faa837a63eedb384b42c8d8ee07c
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023907"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706324"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する
 
 Basic Mobility and Security を使用すると、承認されていないアクセスから組織の情報を保護するデバイス Microsoft 365作成できます。 ポリシーは、デバイスのユーザーが該当する Microsoft 365 ライセンスを持ち、デバイスを Basic Mobility and Security に登録している組織内の任意のモバイル デバイスに適用できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 > [!IMPORTANT]
 > モバイル デバイス ポリシーを作成する前に、Basic Mobility and Security をアクティブ化してセットアップする必要があります。 詳細については、「Basic Mobility and Security の概要」を参照してください。
@@ -148,8 +148,7 @@ Basic Mobility and Security を使用すると、承認されていないアク�
 
 デバイスを完全にワイプするか、デバイスから組織情報を選択的にワイプすることもできます。 詳細については、「Basic [Mobility and Security でモバイル デバイスをワイプする」を参照してください](wipe-mobile-device.md)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-content"></a>関連コンテンツ
 
-[基本的なモビリティとセキュリティの概要](overview.md)
-
-[基本的なモビリティとセキュリティの機能](capabilities.md)
+[基本モビリティとセキュリティの概要](overview.md) (記事)\
+[基本モビリティとセキュリティの機能](capabilities.md) (記事)
