@@ -66,6 +66,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: 支払サービス ディレクティブ 2 および強力な顧客認証について
       href: billing-and-payments/psd2.md
+    - name: アカウントに係る源泉徴収税のためのクレジットを要求する
+      href: billing-and-payments/withholding-tax-credit-global.md
 - name: 請求アカウント
   items:
     - name: 請求アカウントを理解する
