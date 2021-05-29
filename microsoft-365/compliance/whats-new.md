@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 11055e6f27df08a1726fb3ba65a5accafbf93723
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029041"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698954"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
@@ -34,7 +34,39 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 
 > [!TIP]
 > 他の管理センターで何が起こっているのか興味がありますか? 次の記事を参照してください。<br>[管理センターの新機能Microsoft 365](/office365/admin/whats-new-in-preview)<br>[SharePoint 管理センターの新機能](/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender の新機能](../security/defender/whats-new.md)<br><br>
-また、「Microsoft 365[](https://www.microsoft.com/en-us/microsoft-365/roadmap)ロードマップ」を参照して、Microsoft 365、展開中、開発中、キャンセル済み、または以前にリリースされた機能について説明します。
+また、「Microsoft 365[](https://www.microsoft.com/microsoft-365/roadmap)ロードマップ」を参照して、Microsoft 365、展開中、開発中、キャンセル済み、または以前にリリースされた機能について説明します。
+
+## <a name="april-2021"></a>2021 年 4 月
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+- [Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set)の制限。 組織は、レビュー セットからアイテムを 1 回エクスポートする場合に、最大 500 万アイテムまたは 500 MB をエクスポートできます(小さい方)。
+
+### <a name="data-classification"></a>データ分類
+
+- [アクティビティ エクスプローラーで使用できるアクティビティのラベル付け](/microsoft-365/compliance/data-classification-activity-explorer-available-events)
+
+### <a name="data-connectors"></a>データ コネクタ
+
+- [Oracle データで Cisco Jabber をアーカイブするコネクタをセットアップする]/microsoft-365/compliance/archive-ciscojabberonoracle-data)
+- [PostgreSQL データで Cisco Jabber をアーカイブするコネクタをセットアップする](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
+
+### <a name="data-loss-prevention"></a>データ損失防止
+
+- データ損失防止ポリシー [のヒントリファレンスの新しいトピック](/microsoft-365/compliance/dlp-policy-tips-reference)です。
+- 「データ損失 [防止について」の新しいトピックを参照してください](/microsoft-365/compliance/dlp-learn-about-dlp)。
+- 「データ損失 [防止アラート ダッシュボードの使用を開始する」の新しいトピック](/microsoft-365/compliance/dlp-alerts-dashboard-get-started)です。
+
+### <a name="retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーと保持ラベル ポリシー
+
+- Microsoft 365 グループの場所では、Applications パラメーターを使用して[Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy)コマンドレットを使用して、Microsoft 365 メールボックスまたは接続された SharePoint サイトへの保持設定の適用がサポートされています。
+
+### <a name="sensitivity-labels"></a>秘密度ラベル
+
+Outlookと更新プログラム:
+- 以前は AIP 統合ラベル付けクライアントでのみサポートされ、組み込みのラベル付けは既定のラベルと必須ラベル付けの異なる設定 [をサポートしています](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
+- Encrypt-Only macOS、iOS、Android でサポートされる
+- [Office](/microsoft-365/compliance/sensitivity-labels-office-apps)アプリのトピックで、Outlook 機能テーブルの [既定のラベルの異なる設定] の新[](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling)しいエントリで更新され、組み込みのラベル付け用の新しい[Outlook](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook)機能リリースの必須ラベル付けが更新され、別の既定のラベルをサポートし、必須ラベル付けが適用されません。 さらに、Encrypt-Only オプションは macOS/iOS/Android でサポートされ、変数を含むすべての動的マーキングがすべての Outlook クライアントでサポートされています。 現在、必須のラベル付けは残りのプラットフォームに展開されています。
 
 ## <a name="march-2021"></a>2021 年 3 月
 
@@ -42,27 +74,27 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- **Advanced eDiscoveryコレクションは、新** しいコレクション ツール [とワークフローをサポートしています](https://docs.microsoft.com/microsoft-365/compliance/collections-overview)。 その他の新しいトピックには、下書きコレクションの [作成](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)、 [下](https://docs.microsoft.com/microsoft-365/compliance/commit-draft-collection)書きコレクションをレビュー セットにコミットする、コレクションの統計情報 [とレポートが含まれます](https://docs.microsoft.com/microsoft-365/compliance/collection-statistics-reports)。
-- **レビュー セット内の** ドキュメントをユーザーアカウントに [Azure Storage](https://docs.microsoft.com/microsoft-365/compliance/download-export-jobs)します。
-- **予測コーディング モジュール (Advanced eDiscovery)** まず、廃止された関連性 [モジュール](https://docs.microsoft.com/microsoft-365/compliance/predictive-coding-overview) に代わる新しい予測コーディング機能について説明します。
+- **Advanced eDiscoveryコレクションは、新** しいコレクション ツール [とワークフローをサポートしています](/microsoft-365/compliance/collections-overview)。 その他の新しいトピックには、下書きコレクションの [作成](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)、 [下](/microsoft-365/compliance/commit-draft-collection)書きコレクションをレビュー セットにコミットする、コレクションの統計情報 [とレポートが含まれます](/microsoft-365/compliance/collection-statistics-reports)。
+- **レビュー セット内の** ドキュメントをユーザーアカウントに [Azure Storage](/microsoft-365/compliance/download-export-jobs)します。
+- **予測コーディング モジュール (Advanced eDiscovery)** まず、廃止された関連性 [モジュール](/microsoft-365/compliance/predictive-coding-overview) に代わる新しい予測コーディング機能について説明します。
 
 ### <a name="data-classification"></a>データの分類
 
-- **データ分類エクスプローラー**。 [データ分類](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer) エクスプローラーの使用を開始します。
+- **データ分類エクスプローラー**。 [データ分類](/microsoft-365/compliance/data-classification-activity-explorer) エクスプローラーの使用を開始します。
 
 ### <a name="data-connectors"></a>データ コネクタ
 
-- **プライベート キー**。 ブルームバーグ メッセージ データ[、ICE](https://docs.microsoft.com/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) [](https://docs.microsoft.com/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys)チャット データ、インスタント ブルームバーグ データ コネクタに、プライベート キーのサポート[が](https://docs.microsoft.com/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys)追加されました。
+- **プライベート キー**。 ブルームバーグ メッセージ データ[、ICE](/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) [](/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys)チャット データ、インスタント ブルームバーグ データ コネクタに、プライベート キーのサポート[が](/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys)追加されました。
 
 ### <a name="data-loss-prevention"></a>データ損失防止
 
-- **Microsoft Teamsサポート**. データ損失防止のサポートは、データ損失[Microsoft Teams。](https://docs.microsoft.com/microsoft-365/compliance/dlp-teams-default-policy)
-- **Microsoft Compliance extension**. Microsoft コンプライアンス拡張機能 [の使用を開始します](https://docs.microsoft.com/microsoft-365/compliance/dlp-chrome-get-started)。
+- **Microsoft Teamsサポート**. データ損失防止のサポートは、データ損失[Microsoft Teams。](/microsoft-365/compliance/dlp-teams-default-policy)
+- **Microsoft Compliance extension**. Microsoft コンプライアンス拡張機能 [の使用を開始します](/microsoft-365/compliance/dlp-chrome-get-started)。
 
 ### <a name="encryption"></a>暗号化
 
-- **顧客キーのMicrosoft 365。** [テナント レベル (パブリック プレビュー](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level) ) Microsoft 365顧客キーの概要。
-- **二重キー暗号化**. ラベル付き[ドキュメントと](https://docs.microsoft.com/microsoft-365/compliance/double-key-encryption)保護されたドキュメントのサポートを有効にする方法の詳細については、SharePointおよびOneDrive for Business。
+- **顧客キーのMicrosoft 365。** [テナント レベル (パブリック プレビュー](/microsoft-365/compliance/customer-key-tenant-level) ) Microsoft 365顧客キーの概要。
+- **二重キー暗号化**. ラベル付き[ドキュメントと](/microsoft-365/compliance/double-key-encryption)保護されたドキュメントのサポートを有効にする方法の詳細については、SharePointおよびOneDrive for Business。
 
 ### <a name="insider-risk-management"></a>インサイダー リスクの管理
 
@@ -82,16 +114,16 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 
 次のトピックは、これらの新機能をサポートするために更新または追加されました。
 
-- [インサイダー リスク管理の詳細](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management)
-- [インサイダー リスク管理のための計画](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-plan)
-- [インサイダーリスク管理設定の使用を開始する](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings)
-- [インサイダー リスクの管理の概要](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
-- [インサイダー リスク ポリシーを作成して管理する](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-policies)
-- [インサイダー リスクのアラートを調査する](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-alerts)
-- [インサイダー リスクのケースに対処する](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-cases)
-- [インサイダーリスク監査ログを使用してアクティビティを確認する](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-audit-log)
-- [インサイダー リスク コンテンツ エクスプローラーを使用してデータを確認する](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-content-explorer)
-- [ユーザー ダッシュボードを使用してワークフローを管理する](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-users)
+- [インサイダー リスク管理の詳細](/microsoft-365/compliance/insider-risk-management)
+- [インサイダー リスク管理のための計画](/microsoft-365/compliance/insider-risk-management-plan)
+- [インサイダーリスク管理設定の使用を開始する](/microsoft-365/compliance/insider-risk-management-settings)
+- [インサイダー リスクの管理の概要](/microsoft-365/compliance/insider-risk-management-configure)
+- [インサイダー リスク ポリシーを作成して管理する](/microsoft-365/compliance/insider-risk-management-policies)
+- [インサイダー リスクのアラートを調査する](/microsoft-365/compliance/insider-risk-management-alerts)
+- [インサイダー リスクのケースに対処する](/microsoft-365/compliance/insider-risk-management-cases)
+- [インサイダーリスク監査ログを使用してアクティビティを確認する](/microsoft-365/compliance/insider-risk-management-audit-log)
+- [インサイダー リスク コンテンツ エクスプローラーを使用してデータを確認する](/microsoft-365/compliance/insider-risk-management-content-explorer)
+- [ユーザー ダッシュボードを使用してワークフローを管理する](/microsoft-365/compliance/insider-risk-management-users)
 
 ### <a name="records-management"></a>レコード管理
 
@@ -102,13 +134,13 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 
 次のトピックでコンテンツが追加または更新されました。
 
-- [カスタム機密情報の種類の使用を開始する](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type)
-- [機密情報の種類に関する詳細情報](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [完全なデータ一致アクティビティの通知を作成する](https://docs.microsoft.com/microsoft-365/compliance/sit-edm-notifications-activities)
-- [機密情報の種類エンティティ定義](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
-- [PowerShell を使用してカスタム機密情報の種類を作成する](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [キーワード辞書を作成する](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary)
+- [カスタム機密情報の種類の使用を開始する](/microsoft-365/compliance/create-a-custom-sensitive-information-type)
+- [機密情報の種類に関する詳細情報](/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [完全なデータ一致アクティビティの通知を作成する](/microsoft-365/compliance/sit-edm-notifications-activities)
+- [機密情報の種類エンティティ定義](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [PowerShell を使用してカスタム機密情報の種類を作成する](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [キーワード辞書を作成する](/microsoft-365/compliance/create-a-keyword-dictionary)
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
@@ -122,15 +154,15 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 
 ### <a name="auditing"></a>監査
 
-- **監査ログ保持ポリシーを管理します**。 新しい監査保持ポリシー [ダッシュボードの詳細については、以下を参照してください](https://docs.microsoft.com/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1)。
-- **監査ログを検索します**。 [PowerShell スクリプトを使用して監査ログを検索します](https://docs.microsoft.com/microsoft-365/compliance/audit-log-search-script)。
+- **監査ログ保持ポリシーを管理します**。 新しい監査保持ポリシー [ダッシュボードの詳細については、以下を参照してください](/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1)。
+- **監査ログを検索します**。 [PowerShell スクリプトを使用して監査ログを検索します](/microsoft-365/compliance/audit-log-search-script)。
 
 ### <a name="data-classification-content-explorer"></a>データ分類コンテンツ エクスプローラー
 
 次のトピックでコンテンツが追加または更新されました。
 
-- [コンテンツ エクスプローラーの使用を開始する](https://docs.microsoft.com/microsoft-365/compliance/data-classification-content-explorer)
-- [データ分類のリリース ノート](https://docs.microsoft.com/microsoft-365/compliance/data-classification-pub-preview-relnotes)
+- [コンテンツ エクスプローラーの使用を開始する](/microsoft-365/compliance/data-classification-content-explorer)
+- [データ分類のリリース ノート](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>データ損失防止
 
@@ -211,7 +243,7 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 - 米国政府機関のテナント (GCC および GCC-H) では、GCCラベルがサポートされています。
 - macOS [の新しい自動](sensitivity-labels-office-apps.md) ラベル付けサポート。
 
-## <a name="december-2020"></a>2020 年 12 月
+## <a name="december-2020"></a>2020年12月
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>スポットライト: インサイダー リスク ソリューションの新しいコンテンツ
 
@@ -256,46 +288,3 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 
 - [Azure Purview のデータに自動的にラベルを付け (プレビュー) します](/azure/purview/create-sensitivity-label)。 これで、Azure Purview のアセット (Azure BLOB ストレージ内のファイルや、Azure の Blob ストレージ内のデータベース列など) に対して、感度ラベルを作成して自動的に適用SQL Server。
 - [ユーザーがアイテムにラベルを適用する必要があります](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。 "必須ラベル付け" とも呼ばれるこの新しいオプションでは、ユーザーが特定のシナリオで感度ラベルを選択して適用する必要があります。
-
-## <a name="november-2020"></a>2020 年 11 月
-プレビュー状態で新しい機能や更新された機能をリリースする場合が多いので、一般公開にリリースする前に、機能を磨いて改善することができます。 プレビュー中 (以降) はフィードバックが重要なので、コンプライアンス センターの右下にあるフィードバック カードを開いて、お客様の考えをお知らせください。
-
-![feedback](../media/Feedback_card_MCC.JPG)
-
-### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>Spotlight: エンドポイント データ損失防止 (DLP) がリリースされました
-
-[エンドポイント DLP は](endpoint-dlp-learn-about.md)、DLP のアクティビティ監視および保護機能を、デバイス上の機密情報Windows 10します。 デバイスがコンプライアンス[センターに](dlp-configure-endpoints.md)オンボードMicrosoft 365、DLP ポリシーをセットアップして、それらのデバイスの機密情報を保護できます。
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-電子情報開示ワークフローで暗号化されたコンテンツを簡単に管理するために、Microsoft 365 電子情報開示ツールは、電子メール メッセージ[](ediscovery-decryption.md)に添付され、Exchange で送信される暗号化されたファイルの暗号化解除を組み込むになりました。 さらに、暗号化されたドキュメントは、SharePointおよびOneDriveで暗号化解除Advanced eDiscovery。
-
-### <a name="compliance-manager"></a>コンプライアンス マネージャー
-
-- [政府機関のサブスクリプションMicrosoft 365サポート](compliance-manager.md)。 コンプライアンス マネージャーは、米国政府機関 (Community) GCCユーザーが利用できます。
-- [コンプライアンス マネージャー用の Microsoft コンプライアンス構成アナライザー](compliance-manager-mcca.md)。 組織の現在の構成をスキャンし、推奨されるベスト プラクティスに対して検証することで、コンプライアンス マネージャーの使用を開始するのに役立つ新しい PowerShell ベースMicrosoft 365ツールです。
-- [新しいテンプレート](compliance-manager-templates-list.md)。 56 の新しいテンプレートが追加され、コンプライアンス マネージャー テンプレートの合計が 230 を超えました。
-
-### <a name="data-connectors"></a>データ コネクタ
-
-[プレビューの 5 つの新しい Veritas コネクタ](archiving-third-party-data.md#third-party-data-connectors)。 新しいコネクタには、Reuters Dealing、Reuters FX、CellTrust、XIP、汎用 MS データSQL Database含まれます。
-
-### <a name="retention-labels-disposition-review"></a>保持ラベル (廃棄レビュー)
-
-廃棄レビュー中にアイテムを表示するには、ユーザーが Content Explorer コンテンツ ビューアーおよびコンテンツ エクスプローラー リスト ビューアーの役割グループのメンバーである [必要があります](disposition.md#permissions-for-disposition)。 アイテムを確認する必要は生まれますが、廃棄レビューを完了するためにこれらの役割グループは必要ありません。
-
-### <a name="sensitivity-labels"></a>秘密度ラベル
-
-- [(プレビュー) サイトの外部共有SharePointします](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings)。 グループとサイトに使用するラベルを作成する場合、ラベルが適用されているサイトの外部共有SharePointを制御するオプションが表示されます。 すべてのユーザー、新規および既存のゲスト、既存のゲスト、または組織内のユーザーに対して共有を許可できます。 ラベルを適用すると、管理センターで構成された外部共有設定がラベル設定[SharePoint置き換されます](/sharepoint/change-external-sharing-site)。
-- [ラベル付きドキュメントからラベルと暗号化を削除します](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document)。 ラベルと、ラベルが適用する暗号化の両方を SharePoint のラベル付きドキュメントから削除するには、グローバル管理者と SharePoint 管理者が新しいコマンドレットを実行 `Unlock-SPOSensitivityLabelEncryptedFile` できます。 このコマンドレットは、管理者がサイトまたはファイルへのアクセス許可を持っていなくても、Azure Rights Management サービスが利用できない場合でも実行されます。
-
-## <a name="october-2020"></a>2020 年 10 月
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-[CJK 言語のサポート](ediscovery-cjk-support.md)。 Advanced eDiscoveryは、CJK 言語 (簡体字中国語、繁体字中国語、日本語、韓国語を含む) と総称される 2 バイト文字セット言語をサポートしています。 これらは、いくつかの高度なレビュー セットシナリオで使用できます。
-
-### <a name="sensitivity-labels"></a>秘密度ラベル
-
-- [ラベル スコープ](sensitivity-labels.md#label-scopes)。 感度ラベルを作成するときに、ラベルの範囲を定義する新しいオプションが表示されます。 このオプションを使用すると、ファイルと電子メール、コンテナー (SharePointサイトTeams)、または両方のラベルを構成できます。
-- [動的なコンテンツ マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)。 感度ラベルのコンテンツ マーキングを構成するときに、ヘッダー、フッター、透かしのテキスト文字列などの動的 `${Item.Label}` 変数 `${Item.Location}` を使用できます。

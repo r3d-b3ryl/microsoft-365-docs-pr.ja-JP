@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 1 つ以上の配布リストを Outlook の Microsoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: 7e1fc4e971a22ec785662f684a4f9e08970c808a
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: d4686e7f2ec305194130b60fbacab24c9cf7f4e9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636012"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698942"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>配布リストを、Microsoft 365グループにアップグレードOutlook
 
@@ -86,10 +86,10 @@ PowerShell の使用経験がある場合は、UI ではなく、この手順を
 単一の DL をアップグレードするには、次のコマンドを実行します。
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>
+Upgrade-DistributionGroup -DlIdentities <Dl SMTP address>
 ```
 
-たとえば、SMTP アドレスが dl1@contoso.com の DL をアップグレードする場合は、次のコマンドを実行します。
+たとえば、SMTP アドレスを使用して DL をアップグレードする場合は dl1@contoso.com コマンドを実行します。
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
@@ -103,8 +103,8 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
 複数の DL をバッチとして渡し、まとめてアップグレードすることもできます。
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-\< DL SMTP address3\>, \< DL SMTP address 4\>
+Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
+<DL SMTP address3>, <DL SMTP address4>
 ```
 
 たとえば、SMTP アドレスを使用して 5 つの DLL をアップグレードする場合 `dl1@contoso.com` 、および `dl2@contoso.com` `dl3@contoso.com` 、 `dl4@contoso.com` `dl5@contoso.com` 次のコマンドを実行します。
@@ -159,7 +159,7 @@ Get-DistributionGroup| Foreach-Object{
 
 ある DL がアップグレード対象かどうかを確認するには、次のコマンドを実行します。
 
-`Get-DistributionGroup \<DL SMTP address\> | Get-EligibleDistributionGroupForMigration`
+`Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration`
 
 アップグレード対象の DL を確認する場合は、次のコマンドを実行します。
 
