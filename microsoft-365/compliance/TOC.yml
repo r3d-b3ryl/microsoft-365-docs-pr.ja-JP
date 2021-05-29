@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 作業の開始
+- name: 概要
   items:
     - name: コンプライアンスを開始するためのクイック タスク
       href: compliance-quick-tasks.md
@@ -110,12 +110,14 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Exact Data Match アクティビティの通知を作成する (プレビュー)
           href: sit-edm-notifications-activities.md
-        - name: カスタムの機密情報の種類を作成する -セキュリティ/コンプライアンス センター
+        - name: カスタム機密情報タイプを作成 - コンプライアンス センター
           href: create-a-custom-sensitive-information-type.md
         - name: カスタムの機密情報の種類を作成する - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: キーワード 辞書を作成する
           href: create-a-keyword-dictionary.md
+        - name: キーワード 辞書を変更する
+          href: sit-modify-keyword-dictionary.md
         - name: ドキュメント フィンガープリンティング
           href: document-fingerprinting.md
     - name: トレーニング可能な分類子
@@ -124,8 +126,6 @@
           href: classifier-learn-about.md
         - name: トレーニング可能な分類子の使用を開始する
           href: classifier-get-started-with.md
-        - name: 通信コンプライアンスで分類子を再トレーニングする方法
-          href: classifier-how-to-retrain-comms-compliance.md
         - name: コンテンツ エクスプローラーで分類子を再トレーニングする方法
           href: classifier-how-to-retrain-content-explorer.md
     - name: データの分類
