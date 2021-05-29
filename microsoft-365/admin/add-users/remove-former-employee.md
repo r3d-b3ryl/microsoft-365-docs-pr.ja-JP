@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: このソリューションの手順に従って、組織のデータを保護Microsoft 365元の従業員を削除します。
-ms.openlocfilehash: a613d4931c730dffe195954da97af86c683041bf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3fb41ea393e98c1492553941a2b6208524377166
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634246"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698930"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概要: 元従業員とセキュリティで保護されたデータを削除する
 
@@ -37,7 +37,7 @@ ms.locfileid: "52634246"
 
 :::image type="content" source="../../media/delete-user-overview.png" alt-text="スクリーンショット: 元従業員を削除するための概要手順":::
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 このソリューションの手順を完了するには、グローバル管理者である必要があります。
 
@@ -54,8 +54,8 @@ ms.locfileid: "52634246"
 |[手順 1 - 元従業員のログインを防止し、サービスへのアクセスMicrosoft 365する](remove-former-employee-step-1.md) <br/> |これにより、元従業員がユーザーにログインMicrosoft 365し、ユーザーがサービスにアクセスMicrosoft 365します。 <br/> |
 |[手順 2 - 元従業員のメールボックスの内容を保存する](remove-former-employee-step-2.md) <br/> |これは、従業員の仕事を引き継ぐ人や訴訟がある場合に便利です。 <br/> |
 |[手順 3 - 元従業員のメールを別の従業員に転送するか、共有メールボックスに変換する](remove-former-employee-step-3.md) <br/> |この操作を行うと、元従業員のメール アドレスはアクティブなままとなります。顧客やパートナーが元従業員のアドレスにメールを引き続き送信する場合は、この手順を行うと、仕事を引き継ぐユーザーに転送されます。 <br/> |
-|[手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする](remove-former-employee-step-6.md) <br/> |ユーザーのライセンスのみを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツには 30 日後でもアクセスできます。 <br/><br/> アカウントを削除する前に、ユーザーのアカウントにアクセス権を与OneDrive、Outlookユーザーにアクセスする必要があります。 従業員のアカウントを削除すると、従業員のアカウントOneDrive Outlook **30** 日間保持されます。 ただし、その 30 日間は、ユーザーのアカウントを復元し、そのユーザーのコンテンツにアクセスできます。 ユーザーのアカウントを復元した場合、OneDriveおよびOutlookは 30 日後でもユーザーがアクセスできます。 <br/> |
-|[手順 5 - 元従業員のモバイル デバイスをワイプしてブロックする](remove-former-employee-step-4.md) <br/> |携帯電話またはタブレットからビジネス データを削除します。  <br/> |
+|[手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする](remove-former-employee-step-4.md) <br/> |ユーザーのライセンスのみを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツには 30 日後でもアクセスできます。 <br/><br/> アカウントを削除する前に、ユーザーのアカウントにアクセス権を与OneDrive、Outlookユーザーにアクセスする必要があります。 従業員のアカウントを削除すると、従業員のアカウントOneDrive Outlook **30** 日間保持されます。 ただし、その 30 日間は、ユーザーのアカウントを復元し、そのユーザーのコンテンツにアクセスできます。 ユーザーのアカウントを復元した場合、OneDriveおよびOutlookは 30 日後でもユーザーがアクセスできます。 <br/> |
+|[手順 5 - 元従業員のモバイル デバイスをワイプしてブロックする](remove-former-employee-step-5.md) <br/> |携帯電話またはタブレットからビジネス データを削除します。  <br/> |
 |[手順 6 - 元従業員からMicrosoft 365ライセンスを削除および削除する](remove-former-employee-step-7.md) <br/> |ライセンスを削除すると、別のユーザーに割り当てることができます。または、他のユーザーを採用するまで支払うことがないように、ライセンスを削除することもできます。  <br/><br/> ライセンスを削除すると、ユーザーの古いメール、連絡先、および予定表は **30 日間** 保持され、その後、完全に削除されます。 ライセンスのみを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツには 30 日後でもアクセスできます。  <br/> |
 |[手順 7 - 元従業員のユーザー アカウントを削除する](remove-former-employee-step-7.md) <br/> |これにより、管理センターからアカウントが削除されます。 これできれいになります。 <br/> |
 

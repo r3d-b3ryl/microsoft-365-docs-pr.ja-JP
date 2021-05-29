@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: メール転送を使用すると、ユーザー メールボックスに送信Microsoft 365メール メッセージを組織の内部または外部の別のメールボックスに転送できます。
-ms.openlocfilehash: eb72204211a8eff929c024fbcede66dfe1f4b879
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 1d16a44749b51b582b7198cb331edf7faf3cf1f8
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635488"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698918"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>メール転送の構成 (Microsoft 365
 
@@ -40,6 +40,8 @@ ms.locfileid: "52635488"
 ## <a name="configure-email-forwarding"></a>メール転送を構成する
 
 メール転送を設定する前に、次の点に注意してください。
+
+- リモート ドメイン上のユーザーに自動的に転送されたメッセージの送信を許可します。 詳細については [、「リモート ドメインの管理」](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains) を参照してください。
 
 - メール転送を設定すると **、受信メールボックス** に送信された新しいメールだけが転送されます。
 
@@ -104,4 +106,3 @@ ms.locfileid: "52635488"
 [共有メールボックスの作成](../email/create-a-shared-mailbox.md) (記事)\
 [別のアドレスからメールを送信](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) する (記事)\
 [ユーザー名とメール アドレスを変更する](../add-users/change-a-user-name-and-email-address.md) (記事)
-
