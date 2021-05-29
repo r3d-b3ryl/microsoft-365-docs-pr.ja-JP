@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス サブスクリプションの請求頻度を変更する方法について学習します。
 ms.date: 04/02/2021
-ms.openlocfilehash: 010857d9092ef62d11e1b7c6019f2fe0eaafb58f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 529003210e37897f8c1e0d30a692a6f3a1464a80
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537345"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705572"
 ---
 # <a name="change-your-billing-frequency"></a>請求頻度の変更
 
@@ -39,10 +39,7 @@ ms.locfileid: "52537345"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[請求書または請求書を表示する](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (記事)
-
-[サブスクリプションの支払い](../../commerce/billing-and-payments/pay-for-your-subscription.md) (記事)
-
-[請求書または請求書を見つけて表示する方法](view-your-bill-or-invoice.md) (記事)
-
+[課金内容または請求書を表示する](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\
+[サブスクリプションの支払](../../commerce/billing-and-payments/pay-for-your-subscription.md) い (記事)\
+[請求書または請求書を検索して表示する](view-your-bill-or-invoice.md) 方法 (記事)\
 [請求先住所の変更](change-your-billing-addresses.md) (記事)

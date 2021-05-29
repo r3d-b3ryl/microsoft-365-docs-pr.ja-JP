@@ -28,13 +28,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Office の生産性向上アプリと、サイバーの脅威に対応をするビジネスの高度な保護を含むサブスクリプション サービスの、Microsoft 365 Business Premium について説明します。
-ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: アプリとMicrosoft 365 Business Premium高度な保護を含むサブスクリプション Officeサービスについて学習します。
+ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244858"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705524"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の概要
 
@@ -42,7 +42,7 @@ ms.locfileid: "52244858"
 
 Microsoft 365 Business Premium (旧称 Microsoft 365 Business) は、従業員が300人未満の企業向けの包括的なサブスクリプションサービスです。 使い慣れた Office の生産性向上アプリとサービス、Microsoft Teams のような共同作業ツールが組み込まれており、高度なセキュリティとデバイス管理機能で統合します。
 
-このビデオでは、Microsoft 365 Business Premium の概要について説明します。<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>ウォッチ: その他のMicrosoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -105,7 +105,7 @@ Microsoft 365 Business Premium を使用すると、次のような **脅威か�
 
 セキュリティ機能の完全な一覧については、[「Microsoft 365 Business Premium のセキュリティ機能」](security-features.md)を参照してください。 [Microsoft 365 Business Premiumをセットアップ](set-up.md)した後、[「驚異の保護を強化する」](increase-threat-protection.md)と[「コンプライアンス機能を設定」](set-up-compliance.md)を参照して、ガイド付きセットアップの一部として含まれていないセキュリティ機能の使用を開始します。 サイバー犯罪およびハッカーに対する保護を設定する方法の概要については、[Office 365 と Microsoft 365 Business Premium プランを保護するトップ 10 の方法](/office365/admin/security-and-compliance/secure-your-business-data)もお読みください。
 
-## <a name="get-microsoft-365-business-premium"></a>Microsoft 365 Business Premiumを取得する
+## <a name="next-steps"></a>次の手順
 
 - パートナーがいる場合、パートナーがMicrosoft 365 Business Premium を取得します: [Microsoft パートナー センターから Microsoft 365 Business Premium を取得する。](get-microsoft-365-business.md)
 

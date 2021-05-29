@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: ドキュメント ライブラリ、リスト、ハブを使用して、SharePointサイトをカスタマイズ、整理、および管理する方法について説明します。
-ms.openlocfilehash: aca2b2ff147fdb030540712133b27eba706b0985
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244517"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706348"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>ファイルの保存と共有のためにチーム サイトをカスタマイズする
 
@@ -103,15 +103,15 @@ SharePointには、リンク、予定表、連絡先、タスクのリストな�
 
 チーム サイトを管理する場合は、ユーザーを追加または削除する必要があります。 チーム サイトのユーザーの理解、追加、管理に役立つ情報を次に示します。
   
-グループを理解して管理するグループの [ビデオを表示します](https://docs.microsoft.com/learn/m365/)。 
+グループを理解して管理するグループの [ビデオを表示します](/learn/m365/)。 
   
 ユーザーをグループに追加Microsoft 365、同時にユーザー[の追加とライセンスの割り当てに関するページを参照してください](../add-users/add-users.md)。
   
 アクセス要求の設定と管理を使用してアクセス要求を処理 [する方法について学習します](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)。
   
-## <a name="here-are-more-articles-you-might-be-interested-in"></a>興味のある記事を次に示します。
+## <a name="next-steps"></a>次の手順
 
-- **タブレットとスマートフォンで Office アプリをセットアップします。** チーム サイトに保存されているファイルをタブレットや携帯電話から編集するには、これを行う必要があります。 Office アプリをタブレットやスマートフォンにインストールしない場合、チーム サイトのファイルを表示することはできますが、編集はできません。 
+チーム サイトに保存されているOfficeをタブレットや携帯電話から編集するには、デバイスにアプリを設定する必要があります。 Office アプリをタブレットやスマートフォンにインストールしない場合、チーム サイトのファイルを表示することはできますが、編集はできません。 
     
   - [アプリを使用して Android OfficeをインストールしてセットアップMicrosoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

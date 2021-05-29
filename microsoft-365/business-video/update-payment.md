@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向け支払い方法を更新する方法Microsoft 365説明します。
-ms.openlocfilehash: 3b659da6745c92d777629b2912114ee214582623
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b0ed8541068fe02e0bd1f005a5a9c7ee8f50ae1b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580356"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705540"
 ---
-# <a name="update-yor-payment-method-for-your-subscription"></a>サブスクリプションの支払い方法を更新する
+# <a name="update-the-payment-method-for-your-subscription"></a>サブスクリプションの支払い方法を更新する
+
+## <a name="watch-update-your-payment-method"></a>ウォッチ: 支払い方法を更新する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 

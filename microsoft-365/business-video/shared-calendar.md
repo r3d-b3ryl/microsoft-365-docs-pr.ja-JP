@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有予定表を作成する方法について学習します。
-ms.openlocfilehash: 21b594d1d5f28cc38c907cb8e85085a296ef20b8
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: cbc84523b52b7a38e25a35670abf6758a73d0a70
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464359"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705644"
 ---
 # <a name="create-a-shared-calendar"></a>共有予定表を作成する
+
+## <a name="watch-create-a-shared-calendar"></a>ウォッチ: 共有予定表を作成する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWm?autoplay=false]
 
@@ -43,8 +45,6 @@ ms.locfileid: "52464359"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[予定表と連絡先を管理する (Outlook)](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d)
-
-[メールの共同作業](../admin/email/email-collaboration.md) (記事)
-
+[カレンダーと連絡先を管理する](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d)(Outlook)\
+[電子メールの共同作業](../admin/email/email-collaboration.md) (記事)\
 [管理センター Microsoft 365概要](admin-center-overview.md)(記事)

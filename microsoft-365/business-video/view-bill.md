@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 請求書を表示、ダウンロード、または印刷する方法について学習します。
-ms.openlocfilehash: 81b8e2551b7c5cfe1ade205d5b1b82b481e04273
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 請求書を表示、ダウンロード、または印刷Microsoft 365 Business月次サブスクリプションを確認する方法について学習します。
+ms.openlocfilehash: 0d323ca79153920fd4b20361729994d4162c2d98
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580344"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705508"
 ---
 # <a name="view-download-or-print-your-bill-for-microsoft-365"></a>請求書の表示、ダウンロード、印刷を行Microsoft 365
+
+## <a name="watch-view-download-or-print-your-bill"></a>ウォッチ: 請求書の表示、ダウンロード、印刷
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 
