@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: この記事では、管理者は、フィッシングや悪意のある URL を使用する他の攻撃から組織を保護するために、Office 365 用 Defender の セーフ リンク保護について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 675de13410ac98e18a8b72125c2226d2c9c62821
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593571"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698990"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフMicrosoft Defender for Office 365
 
@@ -74,7 +74,7 @@ ms.locfileid: "52593571"
   - [セーフリンクの設定Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - [リンク ポリシーの 「次の URL を書き換セーフしない」](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **グローバル セーフ リンクの設定**: これらの設定は、リンク ポリシーではなく、グローバルセーフ構成されます。 ただし、この設定は、アクティブなリンク ポリシーに含まれるユーザーセーフ適用されます。 これには、以下の設定が含まれます。
+- **グローバル セーフ リンクの設定**: これらの設定は、リンク ポリシーではなく、グローバルセーフ構成されます。 これには、以下の設定が含まれます。
 
   - [セーフアプリのリンクOffice 365設定](#safe-links-settings-for-office-365-apps)
   - [[リンク] の [次の URL をブロックする] セーフします。](#block-the-following-urls-list-for-safe-links)
