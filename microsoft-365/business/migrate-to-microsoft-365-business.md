@@ -46,7 +46,7 @@ ms.locfileid: "52705492"
 
 これら 2 つのプランのサイド バイ サイド比較を、サービスの説明にMicrosoft 365 Business Premium[しました](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - **アップグレードの選択が必要な場合** 1 つのプランに割り当てられているすべてのユーザーをアップグレードする場合は、アップグレードが適切な選択です。 アップグレードを選択すると、すべてのプラン ユーザーが同時に別のプランに切り替えます。 1 つのプランに割り当てられているすべてのユーザーをアップグレードしない場合は、新しいプランのライセンス (この場合は Microsoft 365 Business Premium)[](../admin/manage/assign-licenses-to-users.md)を購入し、アップグレードする各ユーザーにライセンスを個別に割り当てる必要があります。
 

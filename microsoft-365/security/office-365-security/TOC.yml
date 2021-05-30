@@ -20,8 +20,6 @@
           items:
             - name: Exchange Online Protection の概要
               href: exchange-online-protection-overview.md
-            - name: EOP の機能
-              href: eop-features.md
             - name: EOP のメール フロー
               href: mail-flow-in-eop.md
             - name: 検疫する

@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 電話で多要素認証を設定する方法について学習します。
-ms.openlocfilehash: 4a4041777b055b03e2ab5efede72eca56afdf589
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 電話で多要素認証 (2 要素認証とも呼ばれる) をセットアップする方法について学習します。
+ms.openlocfilehash: 16997961c4bbe405792c40d1f1d93c511e10e740
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578665"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705656"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>電話で多要素認証を設定する
+
+## <a name="watch-set-up-multi-factor-authentication-with-a-mobile-device"></a>ウォッチ: モバイル デバイスで多要素認証を設定する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 

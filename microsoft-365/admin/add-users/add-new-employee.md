@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 に新しい従業員を追加する
+title: 新しい従業員を新しい従業員にMicrosoft 365
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,37 +21,37 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
-description: Microsoft 365 for business for email、Skype、Officeアプリに新入社員を追加します。
-ms.openlocfilehash: 572f49170aecba0e8cbb57f9e365b286ee18cb67
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: 新入社員をメール、Microsoft 365、およびアプリのビジネスSkypeにOfficeします。
+ms.openlocfilehash: 2dbdb9cb931b95241b0bd3599fdae154ab72ea24
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023715"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706192"
 ---
-# <a name="add-a-new-employee-to-microsoft-365"></a>Microsoft 365 に新しい従業員を追加する
+# <a name="add-a-new-employee-to-microsoft-365"></a>新しい従業員を新しい従業員にMicrosoft 365
 
-この記事は、ビジネス向け Microsoft 365 に新入社員をオンボードする場合に役立ちます。 管理者であり、既に [Microsoft 365](../setup/setup.md)のセットアップを完了済みであり、新しいユーザーが会社に入社したと仮定します。
+この記事では、新入社員をオンボーディングしてビジネスMicrosoft 365役立ちます。 管理者であり、既にセットアップが完了Microsoft 365、新しい[](../setup/setup.md)ユーザーが会社に入社したとします。
   
-新入社員が Microsoft 365 を必要とする場合、Word や Excel のような Office アプリをコンピューターにインストールできる [Microsoft 365](https://products.office.com/business/compare-office-365-for-business-plans) プランを使用している場合は、適切な場所にいます。 
+新入社員が Microsoft 365 を必要とする場合に、Word や Excel のような Office アプリをコンピューターにインストールできる[Microsoft 365](https://products.office.com/business/compare-office-365-for-business-plans)プランを使用している場合は、適切な場所にいます。 
   
- **管理者ではない場合**: [Microsoft 365 を使用して](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) 、ビジネス ユーザーとホーム ユーザーがセットアップを支援する方法について説明します。 
+ **管理者ではない場合**: [ビジネス ユーザーとホーム ユーザー Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)セットアップを支援する方法について学習します。 
   
- **プランOfficeアプリはありませんか?** 以下の手順に従いますが、アプリのインストールに関するセクションは省略します。 代わりに [、オンライン バージョンのOffice](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804) 使用します。 
+ **プランOfficeアプリはありませんか?** 以下の手順に従いますが、アプリのインストールに関するセクションは省略します。 代わりに[、オンライン バージョンのOffice](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804)使用します。 
   
 簡単な概要を次に示します。 
   
 |**手順**|**なぜこれを行うのですか?**|
 |:-----|:-----|
-|[手順 1: 従業員の Microsoft 365 アカウントを作成する](#step-1-create-a-microsoft-365-account-for-the-employee) <br/> |新しい従業員がビジネスに参加する度に、アカウントを作成して Microsoft 365 の使用を開始できます。  <br/> |
+|[手順 1: 従業員Microsoft 365アカウントを作成する](#step-1-create-a-microsoft-365-account-for-the-employee) <br/> |新しい従業員がビジネスに参加する度に、アカウントを作成して、新しい従業員がビジネスのMicrosoft 365。  <br/> |
 |[手順 2: 従業員にユーザー ID とパスワードを与える](#step-2-give-the-employee-their-user-id-and-password) <br/> |アカウントを作成すると、従業員がサインインできるよう、従業員に渡す ID とパスワードが取得されます。  <br/> |
 |[手順 3: サインインする場所を説明する](#step-3-explain-where-to-sign-in) <br/> |サインインの場所は次の場所です。 [https://www.office.com](https://www.office.com) <br/> |
-|[手順 4: 従業員の開始に役立つ](#step-4-help-your-employee-get-started) <br/> |OneDrive または組織内の任意のチーム サイトを使用する方法を従業員に知らせる。  <br/> |
+|[手順 4: 従業員の開始に役立つ](#step-4-help-your-employee-get-started) <br/> |組織のチーム サイトまたはチーム OneDriveを使用する方法を従業員に知らせる。  <br/> |
    
-## <a name="step-1-create-a-microsoft-365-account-for-the-employee"></a>手順 1: 従業員の Microsoft 365 アカウントを作成する
+## <a name="step-1-create-a-microsoft-365-account-for-the-employee"></a>手順 1: 従業員Microsoft 365アカウントを作成する
 
 
-手順については、「ユーザーの追加 [とライセンスの同時割り当て」を参照してください](add-users.md)。 新しい従業員を設定すると、ログインの詳細を従業員の個人アカウントに送信できます。 これにより、Microsoft Online サービス チームから Microsoft 365 にログインする方法を伝えるメールが届きます。
+手順については、「ユーザーの追加 [とライセンスの同時割り当て」を参照してください](add-users.md)。 新しい従業員を設定すると、ログインの詳細を従業員の個人アカウントに送信できます。 この方法では、Microsoft Online Service Team からメールを受け取り、Microsoft Online サービス チームにログインする方法をMicrosoft 365。
   
 ## <a name="step-2-give-the-employee-their-user-id-and-password"></a>手順 2: 従業員にユーザー ID とパスワードを与える
 
@@ -63,7 +63,7 @@ ms.locfileid: "52023715"
 ## <a name="step-3-explain-where-to-sign-in"></a>手順 3: サインインする場所を説明する 
 
 
-Facebook、Amazon、Gmail と同様に、従業員は Microsoft 365 を使用するためにサインインします。 次のサインイン情報を提供します。
+Facebook、Amazon、Gmail と同様に、従業員はサインインしてアプリを使用Microsoft 365。 次のサインイン情報を提供します。
   
 - でサインインします [https://www.office.com](https://www.office.com) 。
     
@@ -72,22 +72,21 @@ Facebook、Amazon、Gmail と同様に、従業員は Microsoft 365 を使用す
 ## <a name="step-4-help-your-employee-get-started"></a>手順 4: 従業員の開始に役立つ
 
 
-Microsoft [365](../../business-video/employee-quick-setup.md) の従業員クイック セットアップを共有して、サインイン、ソフトウェアのインストール、電子メールのセットアップを行います。 
+サインイン、ソフトウェアのインストール、電子メールのセットアップ[Microsoft 365](../../business-video/employee-quick-setup.md)従業員のクイック セットアップを共有します。 
   
 そして、それらを始めるのに役立つクイック リファレンスを次に示します。
   
 |**タスク**|**詳細を見つける**|
 |:-----|:-----|
 |Office にサインインする  <br/> |に移動し [https://www.office.com](https://www.office.com) 、[ **サインイン] を** 選択し、ユーザー ID とパスワードを入力します。  <br/> |
-|コンピューター Officeアプリをインストールします。  <br/><br/> |サインインすると、ホーム ページに Word や Outlook のようなアプリをダウンロードしてインストールするリンクがあります。  [**Office のインストール**] を選択します。         手順については、「インストール方法[」を参照Office。](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)  <br/> |
-|Outlook 2016 でメールを設定します。  <br/> |アプリOfficeコンピューターにインストールしたら、メールを設定します。 手順については [、「Outlook をセットアップする方法」を参照してください](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)。  <br/> |
-|Skype for Business をセットアップして、会社や世界中の同僚やビジネス パートナーと接続できます。 IM、音声、またはビデオ通話で会話を開始できます。  <br/> |[コンピューターに Skype for Business をインストールします](https://support.microsoft.com/office/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)。  <br/> <br/>Skype for Business の使い方については、ビデオ [をご覧ください。](https://support.microsoft.com/office/3a21eca4-434d-41f1-ab06-3d4a268573b7) <br/> <br/>無料の Skype アプリを使用しているビジネスの外部のユーザーに従業員が連絡できるよう、Skype for Business をセットアップしましたか? 使用しない場合は、Skype for Business を使用するときに期待する内容を新入社員に伝えてください。  <br/> |
-|メールを受け取る場合や、携帯電話で Skype for Business を使用する場合は、モバイル デバイスにアプリをインストールします。  <br/> |Outlook モバイル アプリをセットアップして、携帯電話からメールを受け取る場合。 手順については [、「iOS](https://support.microsoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234) [、Android、Windows](https://support.microsoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872) [Phone」を参照してください。](https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>モバイル デバイスで Skype for Business を使用する場合は、モバイル アプリをダウンロードしてインストールします。 手順については [、「iOS](https://support.microsoft.com/office/3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS) [、Android、Windows](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android) [Phone」を参照してください。](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
-|OneDrive for Business トレーニングを完了して、ドキュメント、プレゼンテーション、スプレッドシートをクラウドに保存して整理する方法を学ぶのに役立ちます。  <br/> |OneDrive for Business を使用して、ビジネス関連のドキュメントをクラウドに保持します。 別のコンピューターで Microsoft 365 にサインインしている場合でも、いつでもコンテンツにアクセスできます。 [ビデオを見て、OneDrive for Business の使い方を学ぶ](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **トレーニング:** [OneDrive for Business トレーニング](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (Select OneDrive for Business)。  <br/> |
-|SharePoint Online トレーニングを完了して、同僚と共同作業を行い、コンテンツを共有するのに役立ちます。  <br/> |同僚がアクセスするドキュメントを保持する最適な場所は、SharePoint Online です。  <br/> <br/>**トレーニング:** [ビデオ: SharePoint Online を使用してチーム コンテンツと共同作業する](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **次の情報を見つける:** SharePoint Online を使用している組織と、そこに保存されるドキュメントの種類。 また、どのドキュメントが OneDrive for Business に格納されています。  <br/> |
+|コンピューター Officeアプリをインストールします。  <br/><br/> |サインインすると、ホーム ページに Word やアプリなどアプリをダウンロードしてインストールするリンクOutlook。  [**Office のインストール**] を選択します。         手順については、「インストール方法[」を参照Office。](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)  <br/> |
+|[メール] でメールをOutlook 2016。  <br/> |アプリOfficeコンピューターにインストールしたら、メールを設定します。 手順については、「How [to set up Outlook」 を参照してください](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)。  <br/> |
+|会社またはSkype for Businessの同僚やビジネス パートナーと接続できる環境を設定します。 IM、音声、またはビデオ通話で会話を開始できます。  <br/> |[コンピューター Skype for Businessインストールします](https://support.microsoft.com/office/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)。  <br/> <br/>ビデオを使用する方法についてはSkype for Business[ビデオをご覧ください。](https://support.microsoft.com/office/3a21eca4-434d-41f1-ab06-3d4a268573b7) <br/> <br/>無料のアプリをSkype for Businessしているビジネスの外部のユーザーに従業員が連絡できるよう、ユーザーにSkypeしましたか? 使用しない場合は、新しい従業員に、新しい従業員に対して、新しいユーザーの使用に何を期待Skype for Business。  <br/> |
+|メールを受け取る場合や携帯電話でアプリを使用する場合は、モバイル Skype for Businessインストールします。  <br/> |モバイル アプリでメールをOutlookする場合は、携帯電話からメールを受け取る必要があります。 手順については[](https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417)[、「iOS](https://support.microsoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234) [、Android、Windows Phone](https://support.microsoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872) <br/> <br/>モバイル デバイスでモバイル Skype for Businessを使用する場合は、モバイル アプリをダウンロードしてインストールします。 手順については[](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone)[、「iOS](https://support.microsoft.com/office/3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS) [、Android、Windows Phone](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android) <br/> |
+|ドキュメント、プレゼンテーションOneDrive for Businessスプレッドシートをクラウドに保存して整理する方法を学ぶには、このトレーニングを完了します。  <br/> |ビジネス関連のドキュメントをクラウドに保持するには、次のOneDrive for Business。 別のコンピューターでユーザーにサインインしている場合でも、いつでもMicrosoft 365を取得できます。 [ビデオを見て、アプリの使い方をOneDrive for Business](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **トレーニング: OneDrive for Business**[トレーニング](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132)([選択] OneDrive for Business)。  <br/> |
+|オンライン トレーニングSharePoint完了して、同僚と共同作業を行い、コンテンツを共有できます。  <br/> |同僚がアクセスするドキュメントを保持する最適な場所は、オンラインSharePointです。  <br/> <br/>**トレーニング:** [ビデオ: オンラインを使用してチーム コンテンツ](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121)とSharePointする <br/><br/> **次の情報を見つける:** 組織はオンラインでどのようにSharePointし、どのような種類のドキュメントがそこに保存されます。 また、どのドキュメントがドキュメントに保存OneDrive for Business。  <br/> |
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 から元従業員を削除する](remove-former-employee.md)
-  
-[ユーザーを追加し、同時にライセンスを割り当てる 65](add-users.md)
+[元従業員を従業員から削除Microsoft 365](remove-former-employee.md) (記事)\
+[ユーザーを追加し、同時にライセンスを割り当てる65](add-users.md) (記事)
