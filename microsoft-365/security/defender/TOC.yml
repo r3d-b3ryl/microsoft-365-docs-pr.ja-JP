@@ -18,6 +18,8 @@
           href: microsoft-365-security-mde-redirection.md
         - name: Defender for Office 365 を Microsoft 365 セキュリティ センターにリダイレクトする
           href: microsoft-365-security-mdo-redirection.md
+        - name: Microsoft 365Defender と Azure Sentinel の統合
+          href: microsoft-365-defender-integration-with-azure-sentinel.md
         - name: プレビュー機能
           href: preview.md
         - name: 問題のトラブルシューティング
@@ -58,7 +60,7 @@
               href: m365d-pilot-simulate.md
             - name: 閉じて要約する
               href: m365d-pilot-close.md
-    - name: 作業の開始
+    - name: 概要
       items:
         - name: 概要
           href: get-started.md
