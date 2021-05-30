@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: アイテム保持ポリシーおよび保持ラベル ポリシーのポリシーおよびポリシーごとの項目の最大数を把握する
-ms.openlocfilehash: 007ca6eec50b243e1b820938ffa67553d7882c7b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107659"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698966"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーとアイテム保持ラベルの制限
 
@@ -33,13 +33,15 @@ ms.locfileid: "52107659"
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>テナントごとのポリシーの最大数
 
-1 つのテナントに最大 10,000 のポリシー (任意の構成) を含めることができます。 この最大数には、保持に関するさまざまなポリシーと、DLP ポリシーなどのコンプライアンスに関するその他のポリシーが含まれます。
+1 つのテナントに最大 10,000 のポリシー (任意の構成) を含めることができます。 この最大値はデータ保持のため複数の異なるポリシーを包含します。またコンプライアンスのための他のポリシー、例えばDLP、情報バリア、電子情報開示、機密度ラベル等も同様です。
 
-ワークロードごとの保持に関するポリシーの最大数:
+この ポリシー 10,000個の制限内では、ワークロード毎のデータ保持ポリシーの最大数にもいくつかの制限があります。
 
 - Exchange Online (任意の構成): 1,800
 - SharePoint または OneDrive: (自動的に含まれるすべてのサイト): 13
 - SharePoint または OneDrive (含まれるまたは除外される特定の場所): 2,600
+
+Microsoft Teams と Yammer のデータ保持ポリシーでは、データ保持目的でメールボックスを使用しますが、Exchange Online のポリシーの最大数は、Teams と Yammer のデータ保持ポリシーを含みません。
 
 ## <a name="maximum-number-of-items-per-policy"></a>ポリシーごとのアイテムの最大数
 
