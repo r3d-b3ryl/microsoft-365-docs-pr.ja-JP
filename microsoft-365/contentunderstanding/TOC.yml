@@ -32,6 +32,8 @@
       href: create-a-form-processing-model.md
     - name: 保持ラベルを適用する
       href: apply-a-retention-label-to-a-model.md
+    - name: 秘密度ラベルを適用する
+      href: apply-a-sensitivity-label-to-a-model.md
     - name: モデルの利用分析
       href: model-usage-analytics.md
     - name: 抽出子の作成時に用語ストアの分類を活用する
