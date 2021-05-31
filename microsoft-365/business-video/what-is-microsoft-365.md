@@ -17,20 +17,21 @@ ms.custom:
 - adminvideo
 search.appverid:
 - MET150
-description: Microsoft 365 Business Premium の機能について説明します。
+description: IT 部分をケアするサブスクリプション サービス、Microsoft 365 Business Premium について説明します。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 336d206b3853baa2bdde5d925113dc0887919da7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3f0c184cd0e0e6392f66d049b46930031e054bbe
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245182"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705668"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
+## <a name="watch-what-is-microsoft-365-business-premium"></a>ご覧ください: Microsoft 365 Business Premium とは
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 
 Microsoft 365 Business Premium は、Microsoft が IT の管理をお客様の代わりに行い、お客様がクラウドで組織を実行できるようにするサブスクリプションサービスです。お客様の IT デバイスの管理、実際の脅威に対する保護、組織に最新のビジネスソフトウェアを提供します。
 

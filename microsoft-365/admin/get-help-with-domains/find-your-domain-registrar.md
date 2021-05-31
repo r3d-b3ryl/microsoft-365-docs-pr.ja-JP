@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: InterNIC 検索を使用して、ドメイン レジストラーと DNS ホスティング プロバイダーを探す方法を説明します。
-ms.openlocfilehash: 434e30709b112cf591159a1692540b8ef2b6bb65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: af883f53c8c45aee2594b0f5b8b9da57e5717f9e
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655544"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706396"
 ---
 # <a name="find-your-domain-registrar"></a>ドメイン レジストラーを検索する
 
@@ -40,11 +40,11 @@ ms.locfileid: "49655544"
 >[!NOTE]
 > *.COM*、*.NET*、および *.EDU* で終わるドメインのみがこのツールで動作します。
   
-1. [InterNIC の検索ページ](https://go.microsoft.com/fwlink/p/?LinkId=402770)の [**Whois Search**] ボックスに、ドメインを入力します。 たとえば、 *contoso.com のように入力します。* 
+1. [InterNIC の検索ページ](https://go.microsoft.com/fwlink/p/?LinkId=402770)の [**Whois Search**] ボックスに、ドメインを入力します。たとえば、*contoso.com のように入力します。* 
     
-2. [**Domain**] オプションを選択し、[ **Submit**] を選択します。
+2. [**Domain**] オプションを選択し、[**Submit**] を選択します。
     
-3. [ **Whois Search Results**] ページで [ **Registrar**] エントリを探します。 このエントリには、ドメインに対してレジストラー サービスを提供している組織が表示されます。 
+3. [**Whois Search Results**] ページで [**Registrar**] エントリを探します。このエントリには、ドメインに対してレジストラー サービスを提供している組織が表示されます。 
     
 ## <a name="dns-hosting-provider"></a>DNS ホスティング プロバイダー
   
@@ -53,13 +53,13 @@ ms.locfileid: "49655544"
 >[!NOTE]
 > *.COM*、*.NET*、および *.EDU* で終わるドメインのみがこのツールで動作します。
   
-1. [InterNIC の検索ページ]( https://go.microsoft.com/fwlink/p/?LinkId=402770)の [ **Whois Search**] ボックスに、ドメインを入力します。 たとえば contoso.com です。 
+1. [InterNIC の検索ページ]( https://go.microsoft.com/fwlink/p/?LinkId=402770)の [**Whois Search**] ボックスに、ドメインを入力します。たとえば、contoso.com のように入力します。 
     
 2. [**Domain**] オプションを選択し、[ **Submit**] を選択します。
     
 3. [**Whois Search Results**] ページで最初の [**Name Server**] エントリを探します。 
     
-4. コロン (:) の後に表示されるネーム サーバー (NS) 情報をコピーし、ページの先頭にある [ **Search**] ボックスに貼り付けます。 [**Nameserver**] を選択し、[ **Submit**] を選択します。
+4. コロン (:) の後に表示されるネーム サーバー (NS) 情報をコピーし、ページの先頭にある [**Search**] ボックスに貼り付けます。[**Nameserver**] を選択し、[**Submit**] を選択します。
     
 5. [**Whois Search Results**] ページで [**Registrar**] エントリを探します。このエントリには、DNS ホスティング プロバイダー (ドメインのネーム サーバーを所有している DNS プロバイダー) が表示されます。 
     

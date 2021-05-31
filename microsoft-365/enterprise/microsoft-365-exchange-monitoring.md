@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Exchange Online の監視を使用して、Microsoft 365 でのメールのインシデントや勧告の情報について確認します。
-ms.openlocfilehash: 53dc7f990f57fd8d4da68bd424947676cbf0e85d
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: ee31f8e152d7c54e37b850563bea57971e07f61c
+ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572877"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52707298"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 の Exchange Online の監視
 
@@ -49,9 +49,9 @@ Microsoft 365 管理センターで Exchange Online の監視を使用して、�
 
 このプレビューは、次の要件を満たしているお客様に対して有効になっています。 
 
-- 組織に Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 の製品のいずれか 1 つまたは組み合わせから 10,000 個以上のライセンス数が必要です。 
+- 組織に Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 の製品のいずれか 1 つまたは組み合わせから 5,000 個以上のライセンス数が必要です。 
 
-  たとえば、組織は Office 365 E3 のライセンスを 3,000 個と Microsoft 365 E5 のライセンスを 8,500 個持つことで、条件を満たす製品から合計 11,500 個のライセンスを持つことができます。
+  たとえば、組織は Office 365 E3 のライセンスを 3,000 個と Microsoft 365 E5 のライセンスを 2,500 個持つことで、条件を満たす製品から合計 5,500 個のライセンスを持つことができます。
 
 - 組織に月間 50 人以上のアクティブな Exchange Online ユーザーが必要です。
 
@@ -95,10 +95,10 @@ Exchange Online の監視で、次のメール クライアントの正常性を
 
 次に、次の両方の要件を満たしていることを確認してください。 
 
-- 組織に Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 の製品のいずれか 1 つまたは組み合わせから 10,000 個以上のライセンス数が必要です。 
+- 組織に Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 の製品のいずれか 1 つまたは組み合わせから 5,000 個以上のライセンス数が必要です。 
 - 組織に月間 50 人以上のアクティブな Exchange Online ユーザーが必要です。
 
-組織のライセンス数が 10,000 ユーザー未満であり、月間アクティブ ユーザー数が 50 未満である場合、この要件が満たされるまで Exchange Online の監視は有効になりません。
+組織のライセンス数が 5,000 ユーザー未満であり、月間アクティブ ユーザー数が 50 未満である場合、この要件が満たされるまで Exchange Online の監視は有効になりません。
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. 各クライアントのダッシュボードのアクティブ ユーザー数が少なく表示されます。 しかし、多くの有効なライセンスがユーザーにアサインされています。 これはどういうことですか? 
 
@@ -132,5 +132,5 @@ Microsoft は、Exchange Online の監視を Microsoft 365 管理センターの
 
 #### <a name="7-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>7. アクティビティの傾向を示すシナリオのインストルメント化されたデータはどこにありますか?
 
-データは Exchange Online サービスにインストルメント化されています。 要求が Exchange Online に到達する前に障害が発生するか、Exchange Online に障害がある場合、アクティビティ信号の降下が確認できます。
+データは Exchange Online サービスにインストルメント化されています。要求が Exchange Online に到達する前に障害が発生するか、Exchange Online に障害がある場合、アクティビティ信号の降下が確認できます。
 
