@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625223"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710720"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -116,7 +116,7 @@ ms.locfileid: "52625223"
 - チームのチャネル メッセージ
 - Teams のチャット
 - Yammer コミュニティのメッセージ
-- Yammer の個人用メッセージ
+- Yammer ユーザーのメッセージ
 
 複数の場所にも特定の場所やユーザーにも、1 つのポリシーを非常に効率的に適用できます。
 
@@ -308,7 +308,7 @@ Office 365 セキュリティ/コンプライアンス センターには、**�
     
     この マーケティング SharePoint サイトのドキュメントは、最長の保持期間である 10 年間保持されます。
 
-3. **明示的の方が、黙示的よりも優先されます。** アイテムが削除される時期を決定するために、次のように適用されます。 
+3. **削除操作において、明示的の方が黙示的よりも優先されます。** 保持の競合が解決されたら、削除の競合のみが残ります: 
     
     1. 保持ラベルは (適用されている場合でも) アイテム保持ポリシーと比較して明示的な保持を提供します。これは、保持設定がコンテナーから黙示的に割り当てられるのではなく、個々のアイテムに対して適用されるためです。 つまり、保持ラベルからの削除アクションは、アイテム保持ポリシーからの削除アクションよりも常に優先されます。
         
