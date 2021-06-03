@@ -17,69 +17,69 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用してレコードを宣言する。
-ms.openlocfilehash: fd88858c8d5cd1870f594050607b784a9dc5b78c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925663"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730548"
 ---
-# <a name="declare-records-by-using-retention-labels"></a><span data-ttu-id="99ae1-103">保持ラベルを使用してレコードを宣言する</span><span class="sxs-lookup"><span data-stu-id="99ae1-103">Declare records by using retention labels</span></span>
+# <a name="declare-records-by-using-retention-labels"></a><span data-ttu-id="77de3-103">保持ラベルを使用してレコードを宣言する</span><span class="sxs-lookup"><span data-stu-id="77de3-103">Declare records by using retention labels</span></span>
 
-><span data-ttu-id="99ae1-104">*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*</span><span class="sxs-lookup"><span data-stu-id="99ae1-104">*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*</span></span>
+><span data-ttu-id="77de3-104">*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*</span><span class="sxs-lookup"><span data-stu-id="77de3-104">*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*</span></span>
 
-<span data-ttu-id="99ae1-105">ドキュメントとメールを [レコード](records-management.md#records)として宣言するには、コンテンツを **レコード** または **規制レコード** としてマークする [保持ラベル](retention.md#retention-labels)を使用します。</span><span class="sxs-lookup"><span data-stu-id="99ae1-105">To declare documents and emails as [records](records-management.md#records), you use [retention labels](retention.md#retention-labels) that mark the content as a **record** or a **regulatory record**.</span></span>
+<span data-ttu-id="77de3-105">ドキュメントとメールを [レコード](records-management.md#records)として宣言するには、コンテンツを **レコード** または **規制レコード** としてマークする [保持ラベル](retention.md#retention-labels)を使用します。</span><span class="sxs-lookup"><span data-stu-id="77de3-105">To declare documents and emails as [records](records-management.md#records), you use [retention labels](retention.md#retention-labels) that mark the content as a **record** or a **regulatory record**.</span></span>
 
-<span data-ttu-id="99ae1-106">レコードと規制レコードのどちらを使用すればよいかわからない場合は、「[許可またはブロックされているアクションの制限を比較する](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="99ae1-106">If you're not sure whether to use a record or a regulatory record, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).</span></span> <span data-ttu-id="99ae1-107">規制レコードを使用する必要がある場合は、次のセクションで説明するように、まず PowerShell コマンドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="99ae1-107">If you need to use regulatory records, you must first run a PowerShell command, as described in the next section.</span></span>
+<span data-ttu-id="77de3-106">レコードと規制レコードのどちらを使用すればよいかわからない場合は、「[許可またはブロックされているアクションの制限を比較する](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="77de3-106">If you're not sure whether to use a record or a regulatory record, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).</span></span> <span data-ttu-id="77de3-107">規制レコードを使用する必要がある場合は、次のセクションで説明するように、まず PowerShell コマンドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="77de3-107">If you need to use regulatory records, you must first run a PowerShell command, as described in the next section.</span></span>
 
-<span data-ttu-id="99ae1-108">その後、ユーザーや管理者がラベルをコンテンツに適用できるように保持ラベル ポリシーでラベルを公開するか、アイテムをレコード (規制レコードではない) としてマークするラベルの場合は、レコードとして宣言するコンテンツにラベルを自動適用することができます。</span><span class="sxs-lookup"><span data-stu-id="99ae1-108">You can then either publish those labels in a retention label policy so that users and administrators can apply them to content, or for labels that mark items as records (but not regulatory records), auto-apply those labels to content that you want to declare a record.</span></span>
+<span data-ttu-id="77de3-108">その後、ユーザーや管理者がラベルをコンテンツに適用できるように保持ラベル ポリシーでラベルを公開するか、アイテムをレコード (規制レコードではない) としてマークするラベルの場合は、レコードとして宣言するコンテンツにラベルを自動適用することができます。</span><span class="sxs-lookup"><span data-stu-id="77de3-108">You can then either publish those labels in a retention label policy so that users and administrators can apply them to content, or for labels that mark items as records (but not regulatory records), auto-apply those labels to content that you want to declare a record.</span></span>
 
-## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a><span data-ttu-id="99ae1-109">規制レコードとしてコンテンツをマークするオプションを表示する方法</span><span class="sxs-lookup"><span data-stu-id="99ae1-109">How to display the option to mark content as a regulatory record</span></span>
+## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a><span data-ttu-id="77de3-109">規制レコードとしてコンテンツをマークするオプションを表示する方法</span><span class="sxs-lookup"><span data-stu-id="77de3-109">How to display the option to mark content as a regulatory record</span></span>
 
 >[!NOTE] 
-> <span data-ttu-id="99ae1-110">次の手順は、監査ログの [[アイテム保持ポリシーと保持ラベルのアクティビティ](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)] セクションの [**保持ラベルの規制レコード オプションを有効にする**] をログに記録する監査可能なアクションです。</span><span class="sxs-lookup"><span data-stu-id="99ae1-110">The following procedure is an auditable action, logging **Enabled regulatory record option for retention labels** in the [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) section of the audit log.</span></span>
+> <span data-ttu-id="77de3-110">次の手順は、監査ログの [[アイテム保持ポリシーと保持ラベルのアクティビティ](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)] セクションの [**保持ラベルの規制レコード オプションを有効にする**] をログに記録する監査可能なアクションです。</span><span class="sxs-lookup"><span data-stu-id="77de3-110">The following procedure is an auditable action, logging **Enabled regulatory record option for retention labels** in the [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) section of the audit log.</span></span>
 
-<span data-ttu-id="99ae1-111">既定では、コンテンツを規制レコードとしてマークするための保持ラベル オプションは、保持ラベル ウィザードには表示されません。</span><span class="sxs-lookup"><span data-stu-id="99ae1-111">By default, the retention label option to mark content as a regulatory record isn't displayed in the retention label wizard.</span></span> <span data-ttu-id="99ae1-112">このオプションを表示するには、まず PowerShell コマンドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="99ae1-112">To display this option, you must first run a PowerShell command:</span></span>
+<span data-ttu-id="77de3-111">既定では、コンテンツを規制レコードとしてマークするための保持ラベル オプションは、保持ラベル ウィザードには表示されません。</span><span class="sxs-lookup"><span data-stu-id="77de3-111">By default, the retention label option to mark content as a regulatory record isn't displayed in the retention label wizard.</span></span> <span data-ttu-id="77de3-112">このオプションを表示するには、まず PowerShell コマンドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="77de3-112">To display this option, you must first run a PowerShell command:</span></span>
 
-1. <span data-ttu-id="99ae1-113">[Office 365 セキュリティ センターとコンプライアンス センターの PowerShell への接続](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。</span><span class="sxs-lookup"><span data-stu-id="99ae1-113">[Connect to the Office 365 Security & Compliance Center Powershell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span></span>
+1. <span data-ttu-id="77de3-113">[Office 365 セキュリティ センター/コンプライアンス センターの PowerShell への接続](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。</span><span class="sxs-lookup"><span data-stu-id="77de3-113">[Connect to the Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span></span>
 
-2. <span data-ttu-id="99ae1-114">次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="99ae1-114">Run the following cmdlet:</span></span>
+2. <span data-ttu-id="77de3-114">次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="77de3-114">Run the following cmdlet:</span></span>
     
     ```powershell
     Set-RegulatoryComplianceUI -Enabled $true
     ````
-    <span data-ttu-id="99ae1-115">確認のためのメッセージが表示されることはなく、設定はすぐに有効になります。</span><span class="sxs-lookup"><span data-stu-id="99ae1-115">There is no prompt to confirm and the setting takes effect immediately.</span></span>
+    <span data-ttu-id="77de3-115">確認のためのメッセージが表示されることはなく、設定はすぐに有効になります。</span><span class="sxs-lookup"><span data-stu-id="77de3-115">There is no prompt to confirm and the setting takes effect immediately.</span></span>
 
-<span data-ttu-id="99ae1-116">保持ラベル ウィザードでのこのオプションの表示に関して気が変わった場合には、同じコマンドレットを **False** 値で実行することで、このオプションを再び非表示にすることができます: `Set-RegulatoryComplianceUI -Enabled $false` </span><span class="sxs-lookup"><span data-stu-id="99ae1-116">If you change your mind about seeing this option in the retention label wizard, you can hide it again by running the same cmdlet with the **false** value: `Set-RegulatoryComplianceUI -Enabled $false`</span></span> 
+<span data-ttu-id="77de3-116">保持ラベル ウィザードでのこのオプションの表示に関して気が変わった場合には、同じコマンドレットを **False** 値で実行することで、このオプションを再び非表示にすることができます: `Set-RegulatoryComplianceUI -Enabled $false` </span><span class="sxs-lookup"><span data-stu-id="77de3-116">If you change your mind about seeing this option in the retention label wizard, you can hide it again by running the same cmdlet with the **false** value: `Set-RegulatoryComplianceUI -Enabled $false`</span></span> 
 
-## <a name="configuring-retention-labels-to-declare-records"></a><span data-ttu-id="99ae1-117">保持ラベルを構成してレコードを宣言する</span><span class="sxs-lookup"><span data-stu-id="99ae1-117">Configuring retention labels to declare records</span></span>
+## <a name="configuring-retention-labels-to-declare-records"></a><span data-ttu-id="77de3-117">保持ラベルを構成してレコードを宣言する</span><span class="sxs-lookup"><span data-stu-id="77de3-117">Configuring retention labels to declare records</span></span>
 
-<span data-ttu-id="99ae1-118">Microsoft 365 コンプライアンス センターの **レコード管理** ソリューションから保持ラベルを作成または編集する場合、アイテムをレコードとしてマークするオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="99ae1-118">When you create or edit a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you have the option to mark items as a record.</span></span> <span data-ttu-id="99ae1-119">前のセクションで実行した PowerShell コマンドを実行した場合、代わりに規制レコードとしてアイテムをマークすることができます。</span><span class="sxs-lookup"><span data-stu-id="99ae1-119">If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.</span></span>
+<span data-ttu-id="77de3-118">Microsoft 365 コンプライアンス センターの **レコード管理** ソリューションから保持ラベルを作成する場合、アイテムをレコードとしてマークするオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="77de3-118">When you create a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you have the option to mark items as a record.</span></span> <span data-ttu-id="77de3-119">前のセクションで実行した PowerShell コマンドを実行した場合、代わりに規制レコードとしてアイテムをマークすることができます。</span><span class="sxs-lookup"><span data-stu-id="77de3-119">If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.</span></span>
 
-<span data-ttu-id="99ae1-120">例:</span><span class="sxs-lookup"><span data-stu-id="99ae1-120">For example:</span></span>
+<span data-ttu-id="77de3-120">例:</span><span class="sxs-lookup"><span data-stu-id="77de3-120">For example:</span></span>
 
 ![保持ラベルを構成して、コンテンツをレコードまたは規制レコードとしてマークする](../media/recordversioning6.png)
 
-<span data-ttu-id="99ae1-122">この保持ラベルを使用することで、ラベルを必要に応じて SharePoint や OneDrive のドキュメントまたは Exchange のメールに適用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="99ae1-122">Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed.</span></span> 
+<span data-ttu-id="77de3-122">この保持ラベルを使用することで、ラベルを必要に応じて SharePoint や OneDrive のドキュメントまたは Exchange のメールに適用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="77de3-122">Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed.</span></span> 
 
-<span data-ttu-id="99ae1-123">詳細な手順については、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="99ae1-123">For full instructions:</span></span>
+<span data-ttu-id="77de3-123">詳細な手順については、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="77de3-123">For full instructions:</span></span>
 
-- [<span data-ttu-id="99ae1-124">アイテム保持ラベルを作成してアプリに適用する</span><span class="sxs-lookup"><span data-stu-id="99ae1-124">Create retention labels and apply them in apps</span></span>](create-apply-retention-labels.md)
+- [<span data-ttu-id="77de3-124">アイテム保持ラベルを作成してアプリに適用する</span><span class="sxs-lookup"><span data-stu-id="77de3-124">Create retention labels and apply them in apps</span></span>](create-apply-retention-labels.md)
 
-- <span data-ttu-id="99ae1-125">[保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md) (規制レコードはサポート対象外です)</span><span class="sxs-lookup"><span data-stu-id="99ae1-125">[Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)</span></span>
+- <span data-ttu-id="77de3-125">[保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md) (規制レコードはサポート対象外です)</span><span class="sxs-lookup"><span data-stu-id="77de3-125">[Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)</span></span>
 
 
-## <a name="applying-the-configured-retention-label-to-content"></a><span data-ttu-id="99ae1-126">コンテンツに構成した保持ラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="99ae1-126">Applying the configured retention label to content</span></span>
+## <a name="applying-the-configured-retention-label-to-content"></a><span data-ttu-id="77de3-126">コンテンツに構成した保持ラベルを適用する</span><span class="sxs-lookup"><span data-stu-id="77de3-126">Applying the configured retention label to content</span></span>
 
-<span data-ttu-id="99ae1-127">アイテムをレコードや規制レコードとしてマークする保持ラベルをユーザーがアプリ内で適用できるようにする場合:</span><span class="sxs-lookup"><span data-stu-id="99ae1-127">When retention labels that mark items as a record or regulatory record are made available for users to apply them in apps:</span></span>
+<span data-ttu-id="77de3-127">アイテムをレコードや規制レコードとしてマークする保持ラベルをユーザーがアプリ内で適用できるようにする場合:</span><span class="sxs-lookup"><span data-stu-id="77de3-127">When retention labels that mark items as a record or regulatory record are made available for users to apply them in apps:</span></span>
 
-- <span data-ttu-id="99ae1-128">Exchange の場合、メールボックスへの書き込みアクセス権を持つすべてのユーザーは、これらのラベルを適用できます。</span><span class="sxs-lookup"><span data-stu-id="99ae1-128">For Exchange, any user with write-access to the mailbox can apply these labels.</span></span> 
-- <span data-ttu-id="99ae1-129">SharePoint および OneDrive の場合、既定のメンバー グループ (投稿アクセス許可レベル) のすべてのユーザーがこれらのラベルを適用できます。</span><span class="sxs-lookup"><span data-stu-id="99ae1-129">For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply these labels.</span></span>
+- <span data-ttu-id="77de3-128">Exchange の場合、メールボックスへの書き込みアクセス権を持つすべてのユーザーは、これらのラベルを適用できます。</span><span class="sxs-lookup"><span data-stu-id="77de3-128">For Exchange, any user with write-access to the mailbox can apply these labels.</span></span> 
+- <span data-ttu-id="77de3-129">SharePoint および OneDrive の場合、既定のメンバー グループ (投稿アクセス許可レベル) のすべてのユーザーがこれらのラベルを適用できます。</span><span class="sxs-lookup"><span data-stu-id="77de3-129">For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply these labels.</span></span>
 
-<span data-ttu-id="99ae1-130">保持ラベルを使用してレコードとしてマークされたドキュメントの例は、以下のとおりです。</span><span class="sxs-lookup"><span data-stu-id="99ae1-130">Example of a document marked as record by using a retention label:</span></span>
+<span data-ttu-id="77de3-130">保持ラベルを使用してレコードとしてマークされたドキュメントの例は、以下のとおりです。</span><span class="sxs-lookup"><span data-stu-id="77de3-130">Example of a document marked as record by using a retention label:</span></span>
 
 ![レコードとしてタグ付けされたドキュメントの詳細ウィンドウ](../media/recordversioning7.png)
 
-## <a name="next-steps"></a><span data-ttu-id="99ae1-132">次の手順</span><span class="sxs-lookup"><span data-stu-id="99ae1-132">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="77de3-132">次の手順</span><span class="sxs-lookup"><span data-stu-id="77de3-132">Next steps</span></span>
 
-<span data-ttu-id="99ae1-133">レコード管理でサポートされているシナリオの一覧については、「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios-for-records-management)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="99ae1-133">For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).</span></span>
+<span data-ttu-id="77de3-133">レコード管理でサポートされているシナリオの一覧については、「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios-for-records-management)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="77de3-133">For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).</span></span>

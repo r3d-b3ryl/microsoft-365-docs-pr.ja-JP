@@ -147,14 +147,6 @@
           items:
             - name: デバイス一覧レポート
               href: working-with-managed-desktop/device-inventory-report.md
-            - name: 使用状況の分析情報
-              href: working-with-managed-desktop/usage-insights.md
-            - name: 信頼性の分析情報
-              href: working-with-managed-desktop/reliability-insights.md
-            - name: バッテリーの分析情報
-              href: working-with-managed-desktop/battery-insights.md
-            - name: Windows セキュリティ更新プログラムの分析情報
-              href: working-with-managed-desktop/security-update-insights.md
         - name: 管理者サポート
           href: working-with-managed-desktop/admin-support.md
         - name: ユーザー サポート
