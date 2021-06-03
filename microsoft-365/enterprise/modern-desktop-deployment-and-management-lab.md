@@ -1,5 +1,5 @@
 ---
-title: WindowsおよびOffice展開ラボ キット
+title: Windows 10およびOffice 365展開ラボ キット
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: c0cf3ce239ed91261bd6e53cf317a7053168509a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: da51e0e3509ac2be60b9961dc2a0532d29f4f137
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060875"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736350"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>WindowsおよびOffice展開ラボ キット
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10およびOffice 365展開ラボ キット
 
-展開WindowsおよびOfficeの展開ラボ キットは、展開とテストを実行しているデスクトップの展開と管理を計画、テスト、および検証Windows 10 Enterprise設計Microsoft 365 Apps for enterprise。 このキットのラボでは、Microsoft Endpoint Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows オートパイロットなどWindowsを使用します。
+このWindows 10およびOffice 365展開ラボ キットは、展開とテストを実行しているデスクトップの展開と管理を計画、テスト、検証するのに役立Windows 10 Enterprise Microsoft 365 Apps for enterprise。 このキットのラボでは、Microsoft Endpoint Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows オートパイロットなどWindowsを使用します。
 
 このキットは、アップグレードを実行する準備をしている組織Windows 8.1強くお勧Windows 10。 また、2019 年に現在 Windows 10、Microsoft 365 Apps for enterprise (以前はOffice 365 ProPlus)、またはOffice適用されます。 分離された環境として、結果のラボは展開ツールの更新を探索し、展開関連の自動化をテストするのに最適です。
 
@@ -34,9 +34,9 @@ ms.locfileid: "52060875"
 
 このキットでは、ドメインに参加しているデスクトップ クライアント、ドメイン コントローラー、インターネット ゲートウェイ、完全に構成された Configuration Manager インスタンスなど、自動的にプロビジョニングされた仮想ラボ環境が提供されます。 このキットには、次の製品の最新の評価バージョンが含まれています。
 
-  - 新機能 Windows 10 Enterpriseバージョン 20H2
+  - 新機能 Windows 10 Enterpriseバージョン 21H1
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Managerバージョン 2010*
+  - 新機能! Microsoft Endpoint Configuration Managerバージョン 2103*
   - Windows 10 用 Windows アセスメント & デプロイメント キット
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -47,6 +47,7 @@ ms.locfileid: "52060875"
 結果のラボは、次の試験に接続するように設計されています。 
 
   - Microsoft 365 E5
+  - Microsoft 365 Apps for enterprise
   - Office 365E5 with Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>ステップ バイ ステップ ラボ
@@ -95,11 +96,12 @@ ms.locfileid: "52060875"
 
 - 準備、展開、最適化
  
-## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>展開ラボ キットWindows Office場所
+## <a name="where-to-find-the-windows-10-and-office-365-deployment-lab-kit"></a>展開ラボ キットWindows 10 Office 365場所
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
-* インストールされているベースライン バージョン 2002 は、コンソール内の更新プログラムを使用してバージョン 2010 に更新できます。 このコンテンツをダウンロードするには、広帯域幅のインターネット接続を使用し、自動プロビジョニングに 30 ~ 45 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを得る場合は、32 GB の使用可能なメモリと 300 GB の空き領域をお勧めします。 キットの有効期限は 2021 年 7 月 22 日です。 有効期限が切る前に、新しいバージョンが発行されます。
+> [!NOTE]
+> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに 30 ~ 45 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを得る場合は、32 GB の使用可能なメモリと 300 GB の空き領域をお勧めします。 キットの有効期限は 2021 年 8 月 23 日です。 有効期限が切る前に、新しいバージョンが発行されます。
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 

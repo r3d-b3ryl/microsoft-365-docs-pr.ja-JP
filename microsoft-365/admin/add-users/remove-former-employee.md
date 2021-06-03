@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: このソリューションの手順に従って、組織のデータを保護Microsoft 365元の従業員を削除します。
-ms.openlocfilehash: 3fb41ea393e98c1492553941a2b6208524377166
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 5f7dc257b55ae75efec84f845cc28bb943fafa81
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698930"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730176"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概要: 元従業員とセキュリティで保護されたデータを削除する
 
@@ -56,7 +56,7 @@ ms.locfileid: "52698930"
 |[手順 3 - 元従業員のメールを別の従業員に転送するか、共有メールボックスに変換する](remove-former-employee-step-3.md) <br/> |この操作を行うと、元従業員のメール アドレスはアクティブなままとなります。顧客やパートナーが元従業員のアドレスにメールを引き続き送信する場合は、この手順を行うと、仕事を引き継ぐユーザーに転送されます。 <br/> |
 |[手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする](remove-former-employee-step-4.md) <br/> |ユーザーのライセンスのみを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツには 30 日後でもアクセスできます。 <br/><br/> アカウントを削除する前に、ユーザーのアカウントにアクセス権を与OneDrive、Outlookユーザーにアクセスする必要があります。 従業員のアカウントを削除すると、従業員のアカウントOneDrive Outlook **30** 日間保持されます。 ただし、その 30 日間は、ユーザーのアカウントを復元し、そのユーザーのコンテンツにアクセスできます。 ユーザーのアカウントを復元した場合、OneDriveおよびOutlookは 30 日後でもユーザーがアクセスできます。 <br/> |
 |[手順 5 - 元従業員のモバイル デバイスをワイプしてブロックする](remove-former-employee-step-5.md) <br/> |携帯電話またはタブレットからビジネス データを削除します。  <br/> |
-|[手順 6 - 元従業員からMicrosoft 365ライセンスを削除および削除する](remove-former-employee-step-7.md) <br/> |ライセンスを削除すると、別のユーザーに割り当てることができます。または、他のユーザーを採用するまで支払うことがないように、ライセンスを削除することもできます。  <br/><br/> ライセンスを削除すると、ユーザーの古いメール、連絡先、および予定表は **30 日間** 保持され、その後、完全に削除されます。 ライセンスのみを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツには 30 日後でもアクセスできます。  <br/> |
+|[手順 6 - 元従業員からMicrosoft 365ライセンスを削除および削除する](remove-former-employee-step-6.md) <br/> |ライセンスを削除すると、別のユーザーに割り当てることができます。または、他のユーザーを採用するまで支払うことがないように、ライセンスを削除することもできます。  <br/><br/> ライセンスを削除すると、ユーザーの古いメール、連絡先、および予定表は **30 日間** 保持され、その後、完全に削除されます。 ライセンスのみを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツには 30 日後でもアクセスできます。  <br/> |
 |[手順 7 - 元従業員のユーザー アカウントを削除する](remove-former-employee-step-7.md) <br/> |これにより、管理センターからアカウントが削除されます。 これできれいになります。 <br/> |
 
 ## <a name="related-content"></a>関連コンテンツ

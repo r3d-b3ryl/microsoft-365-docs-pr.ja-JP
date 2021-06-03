@@ -60,7 +60,7 @@
               href: m365d-pilot-simulate.md
             - name: 閉じて要約する
               href: m365d-pilot-close.md
-    - name: 概要
+    - name: 作業の開始
       items:
         - name: 概要
           href: get-started.md
@@ -296,6 +296,8 @@
           items:
             - name: Microsoft 365 Defender API の概要 (プレビュー)
               href: api-overview.md
+            - name: サポートされている Microsoft 365 Defender API
+              href: api-supported.md
             - name: Microsoft 365 Defender API の使用を開始する (プレビュー)
               items:
                 - name: Microsoft 365 Defender API のライセンスと使用条件
@@ -314,19 +316,25 @@
                   href: api-articles.md
             - name: Microsoft 365 Defender API とスキーマ (プレビュー)
               items:
-                - name: サポートされている Microsoft 365 Defender API
-                  href: api-supported.md
                 - name: 一般的な REST API エラー コード
                   href: api-error-codes.md
+                - name: ストリーミング API
+                  items:
+                    - name: Microsoft 365ストリーミング API
+                      href: ../defender-endpoint/raw-data-export.md
+                    - name: 高度な追求イベントを Azure イベント ハブにストリーミングする
+                      href: ../defender-endpoint/raw-data-export-event-hub.md
+                    - name: 高度な追求イベントをストレージ アカウントにストリーミングする
+                      href: ../defender-endpoint/raw-data-export-storage.md
                 - name: 高度な追及 API
                   href: api-advanced-hunting.md
                 - name: インシデント API
                   items:
-                    - name: インシデントの方法とプロパティ
+                    - name: インシデントのメソッドとプロパティ
                       href: api-incident.md
                     - name: インシデントを一覧表示する
                       href: api-list-incidents.md
-                    - name: インシデントを更新する
+                    - name: インシデントの更新
                       href: api-update-incidents.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml

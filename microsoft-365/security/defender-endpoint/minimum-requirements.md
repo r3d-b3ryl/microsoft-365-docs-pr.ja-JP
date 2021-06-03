@@ -16,18 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ed9b8648630428c6da347252d077521d859482
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6607d5029e45c77754a431c87eb61cd281e013c1
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245710"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730728"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender の最小要件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -41,12 +42,13 @@ ms.locfileid: "52245710"
 > - Defender for Endpoint は、最近の MITRE 評価で業界をリードする光学機能と検出機能を実証しました。 読み取り: [MITRE ATT および CK&評価からの分析情報](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
-エンドポイント用 Microsoft Defender には、次のいずれかの Microsoft ボリューム ライセンスオファーが必要です。
 
-- Windows 10 EnterpriseE5
+Microsoft Defender for Endpoint を使用するには、次のいずれかの Microsoft ボリューム ライセンス製品が必要です。
+
+- Windows 10 Enterprise E5
 - Windows 10 Education A5
-- Microsoft 365 E5 E5 を含む Microsoft 365 E5 (M365 E5 Windows 10 Enterprise)
-- Microsoft 365A5 (M365 A5)
+- Windows 10 Enterprise E5 が含まれている Microsoft 365 E5 (M365 E5)
+- Microsoft 365 A5 (M365 A5)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 Security
 - Microsoft Defender for Endpoint
@@ -76,6 +78,7 @@ Microsoft Defender for Endpoint for servers には、次のいずれかのライ
 製品版比較の詳細な比較Windows 10、比較 PDF を[参照してください](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf)。
 
 ## <a name="browser-requirements"></a>ブラウザー要件
+
 Defender for Endpoint へのアクセスはブラウザーを介して行われ、次のブラウザーをサポートします。
 
 - Microsoft Edge
@@ -88,8 +91,9 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 ## <a name="hardware-and-software-requirements"></a>ハードウェア要件とソフトウェア要件
 
 ### <a name="supported-windows-versions"></a>サポートされているWindowsバージョン
-- Windows 7 SP1 Enterprise ([サポートには ESU が必要です](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq))。
-- Windows 7 SP1 Pro ([サポートには ESU が必要です](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq))。
+
+- Windows 7 SP1 Enterprise ([サポートには ESU が必要です](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq))。
+- Windows 7 SP1 Pro ([サポートには ESU が必要です](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq))。
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
 - Windows 10 Enterprise
@@ -118,17 +122,19 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
 
 ### <a name="other-supported-operating-systems"></a>その他のサポートされているオペレーティング システム
+
 - [Android](microsoft-defender-endpoint-android.md)
 - [iOS](microsoft-defender-endpoint-ios.md)
 - [ Linux ](microsoft-defender-endpoint-linux.md)
 - [macOS](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
-> 統合が機能するには、Defender for Endpoint と互換性がある Android、iOS、macOS の Linux ディストリビューションとバージョンを確認する必要があります。
+> 統合が機能するには、Android、iOS、および macOS の Linux ディストリビューションとバージョンが Defender for Endpoint と互換性を持つ必要があります。
 
 
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>ネットワークとデータのストレージと構成の要件
+
 オンボーディング ウィザードを初めて実行する場合は、Microsoft Defender for Endpoint 関連情報の保存場所 (欧州連合、英国、または米国のデータセンター) を選択する必要があります。
 
 > [!NOTE]
@@ -188,6 +194,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
 
 #### <a name="internet-connectivity"></a>インターネット接続
+
 デバイス上のインターネット接続は、直接またはプロキシ経由で必要です。
 
 Defender for Endpoint センサーは、1 日の平均帯域幅 5 MB を使用して Defender for Endpoint クラウド サービスと通信し、サイバー データを報告できます。 ファイルのアップロードや調査パッケージ コレクションなどの 1 回限りでのアクティビティは、この 1 日の平均帯域幅には含まれません。
@@ -198,26 +205,29 @@ Defender for Endpoint センサーは、1 日の平均帯域幅 5 MB を使用�
 
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender ウイルス対策構成要件
+
 Defender for Endpoint エージェントは、ファイルをMicrosoft Defender ウイルス対策情報を提供する機能に依存します。
 
-Defender for Endpoint デバイスでセキュリティ インテリジェンスの更新プログラムを構成Microsoft Defender ウイルス対策マルウェア対策が有効かどうかを指定します。 詳細については、「更新プログラムの[管理と基準Microsoft Defender ウイルス対策適用する」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
+Defender for Endpoint デバイスでセキュリティ インテリジェンスの更新プログラムを構成Microsoft Defender ウイルス対策マルウェア対策が有効かどうかを指定します。 詳細については、「更新プログラムの[管理と基準Microsoft Defender ウイルス対策適用する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
 
 ユーザー Microsoft Defender ウイルス対策が組織のアクティブなマルウェア対策ではない場合、Defender for Endpoint サービスを使用すると、Microsoft Defender ウイルス対策モードになります。
 
 組織がグループ ポリシーまたは他のMicrosoft Defender ウイルス対策を使用して無効になっている場合は、オンボードされているデバイスをこのグループ ポリシーから除外する必要があります。
 
-サーバーをオンボーディングしている場合、Microsoft Defender ウイルス対策 がサーバー上のアクティブなマルウェア対策ではない場合は、Microsoft Defender ウイルス対策 をパッシブ モードにするかアンインストールするように構成する必要があります。 構成はサーバーのバージョンに依存します。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)。
+サーバーをオンボーディングしている場合、Microsoft Defender ウイルス対策 がサーバー上のアクティブなマルウェア対策ではない場合は、Microsoft Defender ウイルス対策 をパッシブ モードにするかアンインストールするように構成する必要があります。 構成はサーバーのバージョンに依存します。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/security/defender-endpoint/microsoft-defender-antivirus-compatibility)。
 
 > [!NOTE]
 > 通常のグループ ポリシーはタンパープロテクションには適用されません。タンパープロテクションがオンの場合、Microsoft Defender ウイルス対策設定への変更は無視されます。
 
 
 ## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Microsoft Defender ウイルス対策早期起動マルウェア対策 (ELAM) ドライバーが有効になっている
+
 デバイスでマルウェア対策Microsoft Defender ウイルス対策として実行している場合、Defender for Endpoint エージェントは正常にオンボードされます。
 
 サードパーティのマルウェア対策クライアントを実行し、モバイル デバイス管理ソリューションまたは Microsoft エンドポイント マネージャー (現在のブランチ) を使用する場合は、Microsoft Defender ウイルス対策 ELAM ドライバーが有効になっている必要があります。 詳細については、「ポリシーによって[無効Microsoft Defender ウイルス対策を確認する」を参照してください](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
 
 ## <a name="related-topics"></a>関連項目
+
 - [Microsoft Defender for Endpoint の展開をセットアップする](production-deployment.md)
 - [デバイスのオンボード](onboard-configure.md)

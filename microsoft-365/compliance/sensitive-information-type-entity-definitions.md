@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: セキュリティ コンプライアンス センターのデータ損失防止 (DLP) には、DLP ポリシーで使用できる 200 を超える機密情報の種類 &amp; が含まれています。 この記事では、これらすべての機密情報の種類を一覧表示し、DLP ポリシーが各種類を検出するときに検索する情報漏えい対策ポリシーを示します。
-ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: ff976389e75e96d0a018d7c5379e2831313388dc
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086730"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730476"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -38,18 +38,17 @@ ms.locfileid: "52086730"
 
 ### <a name="pattern"></a>パターン
 
-書式設定:
-- 0、1、2、3、6、7、または 8 で始まる 4 桁の数字
-- ハイフン
+- 00 ~ 12、21~32、61~72、または 80 の範囲の 2 桁
+- 2 桁
+- オプションのハイフン
 - 4 桁
-- ハイフン
+- オプションのハイフン
 - 数字
 
-書式設定されていない: 0、1、2、3、6、7、または 8 で始まる 9 桁の連続する数字 
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+はい
 
 ### <a name="definition"></a>定義
 
@@ -427,12 +426,12 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 2 桁 
 - 5 桁または 1 文字 (大文字と小文字は区別されません)
 
-OR
+または
 
 - 1 ~ 2 文字の省略可能な文字 (大文字と小文字を区別しない) 
 - 4 ~ 9 桁
 
-OR
+または
 
 - 9 桁の数字または文字 (大文字と小文字を区別しない)
 
@@ -619,11 +618,12 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 ### <a name="format"></a>Format
 
-1 桁の文字の後に 7 桁の数字
+8 文字または 9 文字の英数字 
 
 ### <a name="pattern"></a>パターン
 
-文字 (大文字と小文字を区別しない) の後に 7 桁の数字を付け
+- 1 文字 (N、E、D、F、A、C、U、X) の後に 7 桁の数字または
+- 2 文字 (PA、PB、PC、PD、PE、PF、PU、PW、PX、PZ) の後に 7 桁の数字が続きます。
 
 ### <a name="checksum"></a>チェックサム
 
@@ -632,60 +632,48 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。
-- 正規表現 Regex_australia_passport_number がパターンに一致するコンテンツを検出した。
-- ユーザーまたはユーザーのKeyword_passportキーワードKeyword_australia_passport_number見つかりました。
+- 正規表現は、 `Regex_australia_passport_number` パターンに一致するコンテンツを検索します。
+- キーワードが `Keyword_australia_passport_number` 見つかりました。
+
+DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという信頼性が低いです。
+- 正規表現は、 `Regex_australia_passport_number` パターンに一致するコンテンツを検索します。
 
 ```xml
-<!-- Australia Passport Number -->
-<Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- Australia Passport Number -->
+    <Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_australia_passport_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_passport" />
-          <Match idRef="Keyword_australia_passport_number" />
-        </Any>
-   </Pattern>
-</Entity>   
+        <Match idRef="Keyword_australia_passport_number" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Regex_australia_passport_number" />
+      </Pattern>
+    </Entity>  
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keyword_passport"></a>Keyword_passport
-
-- Passport Number
-- Passport No
-- Passport #
-- Passport#
-- PassportID
-- Passportno
-- passportnumber
-- パスポート
-- パスポート番号
-- [万]Num
-- パスポート ＃ 
-- Numéro de passeport
-- Passeport n °
-- Passeport Non
-- Passeport #
-- パスポート#
-- PasseportNon
-- Passeportn °
-
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
+- パスポート#
+- パスポート#
+- passportid
 - パスポート
+- passportno
+- パスポートなし
+- passportnumber
+- passport number
+- passportnumbers
+- パスポート番号
 - passport details
 - immigration and citizenship
 - commonwealth of australia
 - department of immigration
-- residential address
-- department of immigration and citizenship
-- visa
 - national identity card
-- passport number
 - travel document
 - issuing authority
-   
+
+
 ## <a name="australia-tax-file-number"></a>オーストラリアの税ファイル番号
 
 ### <a name="format"></a>Format
@@ -8665,7 +8653,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 
 国ごとに形式が若干異なります。 IBAN の機密情報の種類は、次の 60 か国を対象とします。
 
-ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, sk, sk, sm, tvg, trvg
+ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cz, de, dk, do, ee, ee, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, lb, li, lt, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, sk, si, si、sm、tn、tr、vg
 
 ### <a name="checksum"></a>チェックサム
 
@@ -16772,7 +16760,7 @@ DLP ポリシーは、次の 300 文字に近い場合に、この種類の機�
 - 6 桁
 - 'A'、'B'、'C'、または 'D' のどちらか (プレフィックスと同様に、サフィックスでは特定の文字のみを使用できます。大文字と小文字は区別されません)
 
-OR
+または
 
 - 2 文字
 - スペースまたはダッシュ

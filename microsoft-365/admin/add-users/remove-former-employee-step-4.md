@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: この記事の手順に従って、別の従業員に元従業員のデータとOneDriveアクセスOutlookします。
-ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: abcad87498f6670fe7fe2f5457321f1b3f6e0930
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634258"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730200"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする
 
@@ -52,6 +52,30 @@ ms.locfileid: "52634258"
 > [!NOTE]
 > 一度に最大 500 MB のファイルとフォルダーを移動またはコピーできます。<br/>
 > バージョン履歴のあるドキュメントを移動またはコピーすると、最新バージョンのみ移動されます。  
+
+また、別のユーザーにアクセス権を付与して、元従業員のアカウントにアクセスOneDrive。
+
+1. グローバル管理者または<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理者として</a>管理センターにサインインSharePointします。
+
+    管理者センターにアクセスする権限がないというメッセージが表示される場合は、組織には管理者権限がありません。
+
+2. 左側のウィンドウで、[**管理センター**] \> [**SharePoint**] の順に選択します。 (場合によっては、管理センターのリストを表示するために **[すべて表示]** を選択する必要があります。)
+
+3. 従来の管理センター SharePoint表示される場合は、ページの上部にある [今すぐ開く] を選択して、管理センター SharePoint開きます。
+
+4. ウィンドウの左側で [**その他の機能**] を選択します。
+
+5. [**ユーザー プロファイル**] で、[**開く**] を選択します。
+
+6. [**人**] の [**ユーザー プロファイルの管理**] を選択します。
+
+7. 元従業員の名前を入力し、[検索] を **選択します**。
+
+8. ユーザーを右クリックし、[**サイト コレクションの所有者の管理**] を選択します。
+
+9. サイト コレクション管理者にユーザー **を追加し、[OK]** を **選択します**。
+
+10. これで、ユーザーは元の従業員のアカウントにアクセスし、OneDrive URL をOneDriveできます。 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>ユーザーのアカウントへの管理者アクセスを取り消OneDrive
 

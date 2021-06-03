@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: この記事では、PowerShell のグループに対して一般的な管理Microsoft 365する方法について説明します。
-ms.openlocfilehash: adf796ad2f2ee7a304c578cd42c700f2b44e7a5b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 22bf4d1f3187746483d8d904378e675562a62142
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911052"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730560"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>PowerShell Microsoft 365グループを管理する
 
@@ -39,7 +39,7 @@ ms.locfileid: "50911052"
 
 ユーザーが [Outlook でグループを作成または編集](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx)するときに、組織での使用に関するガイドラインへのリンクをそのユーザーに表示することができます。 たとえば、グループ名に特定のプレフィックスまたはサフィックスを追加する必要がある場合があります。
 
-ユーザーをAzure Active Directory (Azure AD) PowerShell を使用して、ユーザーが組織のグループの使用ガイドラインをMicrosoft 365します。 「[グループの設定を構成するための Azure Active Directory コマンドレット](/azure/active-directory/enterprise-users/groups-settings-cmdlets)」の「**ディレクトリ レベルでの設定の作成**」の手順に従って、使用ガイドラインのハイパーリンクを定義します。 AAD コマンドレットを実行すると、ユーザーが Outlook でグループを作成または編集するときに、ガイドラインへのリンクが表示されます。
+ユーザーをAzure Active Directory (Azure AD) PowerShell を使用して、ユーザーが組織のグループの使用ガイドラインをMicrosoft 365します。 「[グループの設定を構成するための Azure Active Directory コマンドレット](/azure/active-directory/enterprise-users/groups-settings-cmdlets)」の「**ディレクトリ レベルでの設定の作成**」の手順に従って、使用ガイドラインのハイパーリンクを定義します。 AAD コマンドレットを実行すると、ユーザーがグループを作成または編集するときにガイドラインへのリンクが表示Outlook。
 
 ![使用ガイドラインのリンクがある新しいグループを作成する](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
 

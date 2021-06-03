@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e3f3919d067078ef1fd1e116dc52e8a73c0726d9
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: e3b445b2f9612f0113f353450ca7bf0b8a1a2bb2
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571783"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730860"
 ---
-# <a name="update-incident-api"></a>インシデント API の更新
+# <a name="update-incidents-api"></a>インシデント API の更新
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
@@ -125,7 +125,7 @@ comment | string | インシデントに追加するコメント。
 }
 ```
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [Defender API Microsoft 365アクセスする](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)

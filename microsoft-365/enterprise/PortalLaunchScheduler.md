@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、ポータル起動スケジューラを使用してポータルを起動する方法について説明します。
-ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694355"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730260"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>ポータル起動スケジューラを使用してSharePointを起動する
 
@@ -120,7 +120,7 @@ ms.locfileid: "52694355"
 
 ### <a name="launch-portal-with-over-100k-users"></a>100k を超えるユーザーがポータルを起動する
 
-100 TB を超える移行を計画している場合は、以下の手順に従ってサポート リクエストを送信してください。 必要な情報がすべて含まれていることを確認します。
+100,000 人を超えるユーザーを含むポータルを起動する予定の場合は、以下の手順に従ってサポート要求を送信してください。 必要な情報がすべて含まれていることを確認します。
 
 次の手順を実行します。
 1. https://admin.microsoft.com に移動します。

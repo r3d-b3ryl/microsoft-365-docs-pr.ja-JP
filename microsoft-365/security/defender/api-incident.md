@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5cc149668e49e21b38b5fb95ae3f40db6c296e1d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 587d6107b0c09b2178311d8da6606968e7fda083
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572587"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730932"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365Defender インシデント API とインシデント リソースの種類
+# <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365Defender インシデント API とインシデント リソースの種類
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
@@ -79,7 +79,7 @@ tags | string List | インシデント タグの一覧。
 comments | インシデント コメントの一覧 | インシデント コメント オブジェクトには、コメント文字列、createBy 文字列、createTime 日付時刻が含まれます。
 アラート | アラート リスト | 関連するアラートの一覧。 「List Incidents [API」のドキュメントの例](api-list-incidents.md) を参照してください。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [Microsoft 365Defender API の概要](api-overview.md)
 - [インシデントの概要](incidents-overview.md)

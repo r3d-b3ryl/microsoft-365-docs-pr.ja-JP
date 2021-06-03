@@ -1,5 +1,5 @@
 ---
-title: Microsoft Compliance Extension (プレビュー) を開始する
+title: Microsoft Compliance Extension を開始する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113865"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730512"
 ---
-# <a name="get-started-with-microsoft-compliance-extension-preview"></a>Microsoft Compliance Extension (プレビュー) を開始する
+# <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft Compliance Extension を開始する
 
 以下の手順を使用して、Microsoft Compliance Extension をロールアウトします。
 
@@ -261,9 +261,8 @@ Microsoft エンドポイント マネージャーを使用しない場合は、
 
 ### <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
-1. フォルダーのアップロードに対するドラッグ アンド ドロップの適用はサポートされていません。
-2. クラウド エグレスに対する上書きのブロックの適用はサポートされていません。
-3. シークレット モードはサポートされていないため、無効にする必要があります。
+1. クラウド エグレスに対する上書きのブロックの適用はサポートされていません。
+2. シークレット モードはサポートされていないため、無効にする必要があります。
 
 ## <a name="next-steps"></a>次の手順
 デバイスがオンボードされ、Activity Explorer でアクティビティデータを表示できるようになりました。次の手順に進み、機密アイテムを保護する DLP ポリシーを作成します。

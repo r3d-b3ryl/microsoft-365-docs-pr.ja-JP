@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 171f449a8b73ff42113358d50dbe8bde909f5d4d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 42ac45fcea72d0ccdae69f6b7315cf31d38121d7
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625187"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730248"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -182,7 +182,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
 - **ラベルを表示させるユーザーとグループを選択する。** Azure AD の特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([動的メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を使用できる) にラベルを発行することができます。
 
-- ラベル ポリシーに含まれるユーザーとグループによって作成されたすべての新しいドキュメントとラベルのないメールに **既定のラベルを適用** し、コンテナーに同じまたは異なる既定のラベルを適用します ([Microsoft Teams、Microsoft 365 グループ、SharePoint サイトの秘密度ラベルを有効にしている場合](sensitivity-labels-teams-groups-sites.md))。 この設定により、Azure Information Protection 統合ラベル付けクライアントでは、ラベルのない既存のドキュメントにも既定のラベルが適用されます。 既定のラベルがドキュメントまたはメールに適切でない場合、ユーザーはいつでも変更できます。
+- 新規ドキュメント、ラベルのないメール、および新規コンテナーに **既定のラベルを指定** します ([Microsoft Teams、Microsoft 365 グループ、および SharePoint サイトの秘密度ラベルを有効にしている場合](sensitivity-labels-teams-groups-sites.md))。 3 種類のアイテムすべてに同じラベルを指定することも、異なるラベルを指定することもできます。 ドキュメントに既定のラベルを指定した場合、Azure Information Protection 統合ラベル付けクライアントでは、ラベルのない既存のドキュメントにもこのラベルが適用されます。 既定のラベルがドキュメントまたはメールに適切でない場合、ユーザーはいつでも変更できます。
     
     既定ラベル使用して、すべてのコンテンツに適用する保護設定の基本レベルを設定することを検討してください。 ただし、ユーザーのとレーニングや他の制御を実施しない場合、この設定は不正確なラベル付けにつながる可能性もあります。 通常、ドキュメントの既定のラベルとして暗号化を適用するラベルを選択することはお勧めできません。 たとえば、多くの組織は、暗号化をサポートするアプリを所有していないか、認証可能なアカウントを使用していない可能性がある外部ユーザーとドキュメントを送信して共有する必要があります。 このシナリオの詳細については、「[Sharing encrypted documents with external users (外部ユーザーと暗号化されたドキュメントを共有する)](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)」を参照してください。
 
@@ -190,7 +190,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
     ![ユーザーに正当性を入力するように求めるダイアログ](../media/Sensitivity-label-justification-required.png)
 
-- メールとドキュメント用に 1 つのオプション、コンテナー用に別のオプションを使用して **ラベルを適用するようにユーザーに要求** します。 必須のラベル付けとも呼ばれるこれらのオプションにより、ユーザーがドキュメントを保存してメールを送信したり、新しいグループやサイトを作成したりする前に、ラベルを適用する必要があります。
+- ドキュメントとメール、文書のみ、コンテナーに **ラベルを適用することをユーザーに要求** します。 必須のラベル付けとも呼ばれるこれらのオプションにより、ユーザーがドキュメントを保存してメールを送信したり、新しいグループやサイトを作成したりする前に、ラベルを適用する必要があります。
     
     ドキュメントやメールの場合、ラベルはユーザーが手動で割り当てることも、構成した条件に従って自動的に適用することも、既定 (前述の既定のラベルのオプション) で適用することもできます。ユーザーがラベルを割り当てる必要がある場合に Outlook に表示されるプロンプトの例:
 

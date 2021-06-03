@@ -22,12 +22,12 @@ ms.custom:
 description: 管理者は、ゼロ時間自動削除 (ZAP) が Exchange Online メールボックス内の配信済みメッセージを迷惑メール フォルダーまたは検疫にさかのぼって移動し、スパムやフィッシングと見なされる方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee5a3fee8e189ff9cc08f187971e728670766d6d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9612f6267a0786b6f81f1c9a3f2ac270e344d0a8
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684197"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730680"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>ゼロ時間自動削除 (ZAP) (Exchange Online
 
@@ -72,6 +72,12 @@ ZAP アクションはユーザーにシームレスです。メッセージが�
 既定では、スパム対策ポリシーでフィッシングの ZAP が有効にされ、フィッシングメール フィルターの既定のアクションは検疫メッセージです。つまり、フィッシング検疫の ZAP は既定でメッセージを検疫します。
 
 スパム フィルターの評決を構成する方法の詳細については、「[スパム](configure-your-spam-filter-policies.md)対策ポリシーを構成する」を参照Microsoft 365。
+
+### <a name="zap-for-high-confidence-phishing"></a>高信頼フィッシングの ZAP 
+
+配信 **後に高信頼** フィッシングとして識別される読み取りメッセージまたは未読メッセージの場合、ZAP はメッセージを検疫します。 検疫からの信頼度の高いフィッシング メッセージを表示および管理できるのは管理者のみです。 
+
+信頼度の高いフィッシングの ZAP は既定で有効になっています。 詳細については、「Secure [by Default in Office 365」を参照してください](secure-by-default.md)。
 
 ### <a name="zap-for-spam"></a>スパムの ZAP
 
@@ -119,6 +125,6 @@ ZAP は、メッセージが削除されていない限り、または同じ、�
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP は、保留メールボックスにどのような影響を与えるのですか?
 
-ZAP は、保留のメールボックスからメッセージを検疫しません。 ZAP は、スパム対策ポリシーでスパムまたはフィッシングの評決用に構成されたアクションに基づいて、メッセージを迷惑メール フォルダーに移動できます。
+ZAP は、保留のメールボックスからメッセージを検疫します。 ZAP は、スパム対策ポリシーでスパムまたはフィッシングの評決用に構成されたアクションに基づいて、メッセージを迷惑メール フォルダーに移動できます。
 
 インプレイス 保持と訴訟ホールドの詳細Exchange Online、インプレイス保持と訴訟ホールドを参照[Exchange Online。](/Exchange/security-and-compliance/in-place-and-litigation-holds)

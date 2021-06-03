@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd3f1e7329612755a1806b5d9af8e13f07790cd6
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a7ac7415ce5e7f88b21128846b7cff957e388fd5
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625127"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730380"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -387,54 +387,24 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>既定ラベルと必須ラベルの Outlook 固有のオプション
 
-組み込みのラベル付けの場合は、このページの [Outlook の機能テーブル](#sensitivity-label-capabilities-in-outlook)と、**既定ラベルと必須ラベル付けのさまざまな設定の行を使用** して、これらの機能をサポートする Outlook の最小バージョンを特定します。
+組み込みのラベル付けの場合は、このページの [Outlook の機能テーブル](#sensitivity-label-capabilities-in-outlook)と、**既定ラベルと必須ラベル付けのさまざまな設定の行を使用** して、これらの機能をサポートする Outlook の最小バージョンを特定します。 Azure Information Protection 統合ラベル付けクライアントのすべてのバージョンは、これらの Outlook 固有のオプションをサポートします。
 
-既定では、ラベル ポリシー設定を選択した場合、**既定でこのラベルをドキュメントとメールに適用し**、**ユーザーにメールまたはドキュメントにラベルを適用するように要求する** と、構成の選択はメールとドキュメントに適用されます。
+Outlook アプリが、ドキュメントの既定のラベル設定と異なる既定のラベル設定をサポートしている場合は、以下のようになります。
 
-電子メールにさまざまな設定を適用するには、PowerShell の以下の詳細設定を使用します。
+- ラベル ポリシー ウィザードで、**[メールに既定のラベルを適用する]** ページでは、ラベルなしのすべてのメールに適用される秘密度ラベルを選択するか、既定のラベルをなしにするかを指定できます。 この設定は、ウィザードの以前の **[ドキュメント向けポリシー設定]** ページの **[既定でドキュメントにこのラベルを適用する]** 設定とは独立しています。
 
-- **OutlookDefaultLabel**: Outlook で別の既定のラベルを適用する場合、またはラベルを適用しない場合は、この設定を使用します。
+Outlook アプリが、ドキュメント向けの既定のラベル設定と異なる既定のラベル設定をサポートしていない場合: Outlook は、ラベル ポリシー ウィザードの **[ドキュメント向けポリシー設定]** ページで **[既定でドキュメントにこのラベルを適用する]** に指定した値を常に使用します。
 
-- **DisableMandatoryInOutlook**: Outlook で、ラベルのないメール メッセージのラベルを選択するようにユーザーに求めるメッセージを除外する場合は、この設定を使用します。
+Outlook アプリが、必須のラベル付けをオフすることをサポートする場合は、以下のようになります。
 
-PowerShell を使用してこれらの設定を構成する方法の詳細については、次のセクションを参照してください。
+- ラベル ポリシー ウィザードの **[ポリシーの設定]** ページで、**[メールやドキュメントへのラベルの適用をユーザーに要求する]** を選択します。 次に **[次へ]** > 、**[次へ]** の順に選択し、**[メールへのラベルの適用をユーザーに要求する]** チェックボックスをオフにします。 ドキュメントに加えて、メールにもラベル付けを必須にすることを適用する場合は、チェックボックスをオンにしたままにしておきます。
 
-### <a name="powershell-advanced-settings-outlookdefaultlabel-and-disablemandatoryinoutlook"></a>PowerShell の詳細設定 OutlookDefaultLabel および DisableMandatoryInOutlook
+Outlook アプリが必須のラベル付けをオフにすることをサポートしていない場合。ポリシー設定で **Require users to apply a label to their email or documents** を選択した場合、Outlookはラベルのない電子メールに対して常にユーザーにラベルの選択を促すようになります。
 
-これらの設定は、PowerShell を *AdvancedSettings* パラメーターとともに使用し、[セキュリティ センターとコンプライアンス センターの PowerShell](/powershell/exchange/scc-powershell) の [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) および [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) コマンドレットを使用することでサポートされます。 以前は Azure Information Protection 統合ラベリング クライアントでのみサポートされていましたが、これら 2 つの詳細設定が組み込みのラベリングでサポートされるようになりました。
-
-PowerShell の例。ラベルポリシーの名前は **Global** です。
-
-- Outlook を既定ラベルから除外するには:
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
-    ````
-
-- Outlook を必須のラベル付けから除外するには:
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
-    ````
-
-現在、OutlookDefaultLabel と DisableMandatoryInOutlook は、組み込みのラベル付けと Azure Information Protection クライアントの両方でサポートされている唯一の PowerShell 詳細設定です。
-
-その他の PowerShell の詳細設定は、Azure Information Protection クライアントでのみサポートされたままです。 Azure Information Protection クライアントの詳細設定の使用の詳細については、「[管理者ガイド: Azure Information Protection 統合ラベル付けクライアントのカスタム構成](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell)」を参照してください。
-
-#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>詳細設定を指定するための PowerShell のヒント
-
-Outlook に別のデフォルトのラベルを指定するには、その GUID でラベルを特定します。 この値を見つけるには、次のコマンドを使用できます。
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-これらの詳細設定のいずれかをラベル ポリシーから削除するには、同じ AdvancedSettings パラメータ構文を使用しますが、null 文字列値を指定します。例:
-
-````powershell
-Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
-````
-
+> [!NOTE]
+> [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) コマンドレットまたは [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) コマンドレットを使用して、PowerShell の詳細設定 **OutlookDefaultLabel** および **DisableMandatoryInOutlook** を設定している場合は、このコマンドレットを使用してください。
+> 
+> これらの PowerShell 設定で選択した値は、ラベル ポリシー ウィザードに反映され、これらの設定をサポートする Outlook アプリで自動的に機能します。 その他の PowerShell の詳細設定は、Azure Information Protection 統合ラベル付けクライアントでのみサポートされたままです。
 
 ## <a name="end-user-documentation"></a>エンド ユーザー向けのドキュメント
 

@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 22ff42cb399b3d07c0ebd8ec4f947352eb6f44aa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9b7699b1a24e7e1d74a48389d02518e814911ecc
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934767"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730872"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Microsoft Defender for Endpoint (Linux) の更新をスケジュールする
 
-Microsoft Defender for Endpoint on Linux で更新プログラムを実行するには [、「Deploy updates for Endpoint on Linux」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)。
+Microsoft Defender for Endpoint on Linux で更新プログラムを実行するには [、「Deploy updates for Endpoint on Linux」を参照してください](/microsoft-365/security/defender-endpoint/linux-updates)。
 
 Linux (および Unix) には、スケジュールされたタスクを実行できる **crontab** (タスク スケジューラと同様) というツールがあります。
 
@@ -84,7 +84,7 @@ CRON_TZ=America/Los_Angeles
 
 > #<a name="ubuntu-and-debian-systems"></a>!Ubuntu システムと Debian システム
 
-`06**sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
+`0 6 * * sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
 
 > [!NOTE]
 > 上記の例では、00 分、24 時間形式の 6.m.(hour)、月の任意の日、任意の月、日曜日に設定しています。[$(date + \% d) -le 15] == 15 日 (3 週目) 以下の場合は実行されません。 つまり、月の第 3 日曜日(7) ごとに 6:00 に実行されます。 太平洋 (UTC -8)。

@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5 または Microsoft Defender でシミュレートされたフィッシング攻撃とパスワード攻撃を実行して、Office 365プラン 2 組織に対して実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e344153ef433bc13b16136e584ec4da73fcef6a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a5986bbeebd49223ebfd74773346f27fc5297243
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205216"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730920"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>攻撃シミュレーション トレーニングの使用を開始する
 
@@ -36,7 +36,7 @@ ms.locfileid: "51205216"
 > [!NOTE]
 > 攻撃シミュレーション トレーニングは、Microsoft [Defender](attack-simulator.md)の攻撃シミュレーターで説明されている古い攻撃シミュレーター v1 エクスペリエンスに代わるOffice 365。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - Microsoft セキュリティ センターを開くには、 に移動します <https://security.microsoft.com/> 。 攻撃シミュレーション のトレーニングは、メールと **コラボレーションの攻撃シミュレーション** \> **トレーニングで利用できます**。 攻撃シミュレーション のトレーニングに直接移動するには、を開きます <https://security.microsoft.com/attacksimulator> 。
 
@@ -51,6 +51,11 @@ ms.locfileid: "51205216"
 - 攻撃シミュレーション トレーニングに対応する PowerShell コマンドレットはありません。
 
 - 攻撃シミュレーションとトレーニング関連データは、他の顧客データと一緒に保存され、Microsoft 365されます。 詳細については、「データ[の場所Microsoft 365を参照してください](../../enterprise/o365-data-locations.md)。 攻撃シミュレーションは、NAM、APC、EUR、IND、CAN、AUS、FRA、GBR、JPN、および KOR の領域で使用できます。
+
+- 2021 年 6 月 15 日現在、攻撃シミュレーション のトレーニングは、GCC。 組織に Office 365 G5 GCC または Microsoft Defender for Office 365 (プラン 2) がある場合は、この記事で説明するように、Microsoft セキュリティ センターの攻撃シミュレーション トレーニングを使用して、組織で現実的な攻撃シナリオを実行できます。 攻撃シミュレーションのトレーニングは、High 環境または DoD 環境GCCまだ利用できません。
+
+> [!NOTE]
+> 攻撃シミュレーショントレーニングは、E3 のお客様に試用版として機能のサブセットを提供します。 試用版には、Credential Harvest ペイロードを使用する機能と、'ISA フィッシング' または 'マス マーケット フィッシング' トレーニング エクスペリエンスを選択する機能が含まれています。 他の機能は、E3 試用版の一部です。
 
 ## <a name="simulations"></a>シミュレーション
 

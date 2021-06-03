@@ -1,5 +1,5 @@
 ---
-title: Microsoft Compliance Extension (プレビュー) の詳細情報
+title: Microsoft Compliance Extension の詳細情報
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension は、ファイル アクティビティの監視と制御、および保護措置を Google Chrome ブラウザーに拡張します。
-ms.openlocfilehash: c8a5795b3be8b393fd3a934504449bf6db0c2f01
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: b8d9be88f42cce736cdbf66a97f4363106fa5820
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113383"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730488"
 ---
-# <a name="learn-about-the-microsoft-compliance-extension-preview"></a>Microsoft Compliance Extension (プレビュー) の詳細情報
+# <a name="learn-about-the-microsoft-compliance-extension"></a>Microsoft Compliance Extension の詳細情報
 
 [エンドポイントデータ損失防止 (エンドポイント DLP)](endpoint-dlp-learn-about.md) は、Windows 10 デバイスにある機密アイテムについて、[Microsoft 365 data loss prevention (DLP)](dlp-learn-about-dlp.md) のアクティビティの監視と保護機能を拡張します。 デバイスが、 Microsoft 365 コンプライアンス ソリューションに オンボードすると、機密アイテムを使用してユーザーが行っていることに関する情報が[Activity Explorer](data-classification-activity-explorer.md)に表示され、[DLPポリシー](create-test-tune-dlp-policy.md)を通して、それらのアイテムに保護アクションを適用できます。
 

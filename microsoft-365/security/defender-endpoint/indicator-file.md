@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 103f5d0ad9d12a37f3a3b8065f39c24d592cc252
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995059"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730536"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -91,11 +91,11 @@ Cert および File IoC ポリシー処理の競合は、次の順序に従い�
 
 - アプリケーションコントロールと AppLocker の強制モード ポリシー/Windows Defenderによってファイルが許可されていない場合は、[**ブロック**]
 
-- それ以外の場合は、Defender ウイルス対策除外でファイルが許可されている場合は、[ **許可]**
+- それ以外の場合は、ファイルが除外によって許可されている場合Microsoft Defender ウイルス対策許可する
 
 - それ以外の場合、ファイルがブロックまたは警告ファイル IoC によってブロックまたは警告される場合は、ブロック **/警告**
 
-- それ以外の場合は、ファイルが許可ファイル IOC ポリシーで許可されている場合は、[**許可**]
+- それ以外の場合は、ファイルが許可ファイルの IoC ポリシーで許可されている場合は、[**許可**]
 
 - それ以外の場合は、ASR ルール、CFA、AV、SmartScreen、その後ブロックによってファイルがブロック **されます**。  
 

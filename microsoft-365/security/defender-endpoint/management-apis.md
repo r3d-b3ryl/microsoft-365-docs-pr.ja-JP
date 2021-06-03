@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 78ab364f8a261b1201fad17ebf86adc1a7456a46
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934459"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730841"
 ---
 # <a name="overview-of-management-and-apis"></a>管理と API の概要 
 
@@ -71,12 +71,13 @@ Investigation **API** は、Defender for Endpoint の豊富さを公開します
 
 応答 **API** では、サービスとデバイスでアクションを実行する機能が公開され、顧客はインジケーターの取り込み、設定の管理、アラートの状態の管理、デバイスの応答アクション (ネットワークからのデバイスの分離、ファイルの検疫など) をプログラムで実行できます。 
 
-## <a name="raw-data-streaming-api"></a>生データ ストリーミング API 
-Defender for Endpoint raw data streaming API は、お客様が単一のデータ ストリーム内で発生するリアルタイム イベントとアラートをインスタンスから出荷する機能を提供し、低遅延で高スループットの配信メカニズムを提供します。
+## <a name="streaming-api"></a>ストリーミング API 
+ストリーミング API は、1 つのデータ ストリーム内で発生するインスタンスからのリアルタイム イベントとアラートを顧客が出荷する機能を提供し、低遅延で高スループットの配信メカニズムを提供します。
 
-Defender for Endpoint イベント情報は、長期的なデータ保持のために Azure ストレージに直接プッシュされ、視覚化サービスや追加のデータ処理エンジンによって使用される Azure Event Hubs にプッシュされます。 
+イベント情報は、長期的なデータ保持のために Azure ストレージに直接、または視覚化サービスまたは追加のデータ処理エンジンによって使用される Azure Event Hubs に直接プッシュされます。 
 
-詳細については、「Raw [data streaming API」を参照してください](raw-data-export.md)。
+>[!NOTE]
+>ストリーミング API が Defender にMicrosoft 365されました。 詳細については、「ストリーミング [API」を参照してください](raw-data-export.md)。
 
 
 ## <a name="siem-api"></a>SIEM API

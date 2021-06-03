@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 945645e0f20f316c094f746adb6ba193f6806f86
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 7ed7390f67747d176145bb051d8b1633a7146a23
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861361"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730812"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 
@@ -78,7 +78,7 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
     > 7 SP1 および 7 SP1 Windows 7 SP1 EnterpriseおよびWindowsにのみPro。
     > 上記のインストールを.NET Framework 4.0.x にはインストールしない。
 
-- Azure Log Analytics エージェントの最小システム要件を満たします。 詳細については、「Log Analytics を使用して環境内のコンピューターからデータ [を収集する」を参照してください。](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
+- Azure Log Analytics エージェントの最小システム要件を満たします。 詳細については [、「Log Analytics を使用して環境内のコンピューターからデータを収集する」を参照してください](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)。
 
 
 
@@ -111,4 +111,3 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 オフボードには、エンドポイントから MMA エージェントをアンインストールするか、レポートから Defender for Endpoint ワークスペースに切り離します。 エージェントのオフボード後、エンドポイントはセンサー データを Defender for Endpoint に送信しなくなりました。 
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink)。
-

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 496ad5695d9cd491817bad5daf3c76a02addefd1
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: b19a6072be5f97b90c117f053ccae4593587c43d
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904190"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730898"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Defender API Microsoft 365の概要
 
@@ -45,6 +45,9 @@ Defender API Microsoft 365使用して、共有インシデントテーブルと
 - **[複合インシデント キュー](api-incident.md)** - インシデント API の下で、攻撃スコープ全体と影響を受けたすべてのアセットをグループ化して、重要な機能に重点を置きます。
 
 - **[製品間の](api-advanced-hunting.md)** 脅威の検出 - セキュリティ チームの組織の知識を活用して、複数の保護製品で収集された生データをふるいにかけ、独自のカスタム クエリを作成することで、侵害の兆候を探します。
+
+ストリーミング API [を使用して](../defender-endpoint/raw-data-export.md) 、1 つのデータ ストリーム内で発生するインスタンスからのリアルタイム イベントとアラートを配信します。
+
 
 Defender 固有の API Microsoft 365に加え、他の各セキュリティ製品は、独自[](api-articles.md)の機能を利用するために追加の API を公開します。
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6f0c92371e7e9b7a3348f90df788ee8c3a46374b
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572155"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730884"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Defender でインシデント API をMicrosoft 365する
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572155"
 
 **適用対象:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
@@ -124,7 +124,7 @@ creationTime | アラートが最初に作成された時刻。 | 2020-09-06T14:
 lastUpdatedTime | バックエンドでアラートが最後に更新された時刻。 | 2020-09-06T14:46:57.243333Z
 resolvedTime | アラートが解決された時刻。 | 2020-09-10T05:22:59Z
 firstActivity | アクティビティがバックエンドで更新されたとアラートが最初に報告された時刻。| 2020-09-04T05:22:59Z
-title | 各アラートで使用できる文字列値を簡単に識別します。 | ランサムウェアのアクティビティ
+タイトル | 各アラートで使用できる文字列値を簡単に識別します。 | ランサムウェアのアクティビティ
 説明 | 各アラートを表す文字列値。 | ユーザー Test User2 (testUser2@contoso.com) は、複数の拡張子を持つ 99 ファイルを操作し、珍しい拡張子 *herunterladen で終わらせた*。 これは、ファイル操作の異常な数であり、潜在的なランサムウェア攻撃を示しています。
 category | キル チェーンに沿って攻撃がどこまで進んでいるかの視覚的および数値的なビュー。 CK の [MITRE ATT&に™します](https://attack.mitre.org/)。 | 影響
 status | アラートを分類する (*新規、**アクティブ*、*または解決済み*)。 アラートに対する応答を整理および管理するのに役立ちます。 | 新規
@@ -158,7 +158,7 @@ riskScore | デバイスのリスク スコア。 | 高い
 
 フィールド名 | 説明 | 値の例
 -|-|-
-entityType | 特定のアラートの一部または関連付けと識別されたエンティティ。<br>プロパティの値は次 *のとおりです*。 ユーザー 、 *Ip*、 *Url*、*ファイル*、*プロセス*、 MailBox 、 *MailMessage*、  *MailCluster*、*レジストリ* | User
+entityType | 特定のアラートの一部または関連付けと識別されたエンティティ。<br>プロパティの値は次 *のとおりです*。 ユーザー 、 *Ip*、 *Url*、*ファイル*、*プロセス*、 MailBox 、 *MailMessage*、  *MailCluster*、*レジストリ* | ユーザー
 sha1 | entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル ハッシュ。 | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
 sha256 | entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル ハッシュ。 | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
 fileName | entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル名 | Detector.UnitTests.dll
@@ -722,7 +722,7 @@ GET https://api.security.microsoft.com/api/incidents
 }
 ```
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [Defender API Microsoft 365アクセスする](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)

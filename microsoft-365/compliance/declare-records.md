@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用してレコードを宣言する。
-ms.openlocfilehash: fd88858c8d5cd1870f594050607b784a9dc5b78c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925663"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730548"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>保持ラベルを使用してレコードを宣言する
 
@@ -41,7 +41,7 @@ ms.locfileid: "50925663"
 
 既定では、コンテンツを規制レコードとしてマークするための保持ラベル オプションは、保持ラベル ウィザードには表示されません。 このオプションを表示するには、まず PowerShell コマンドを実行する必要があります。
 
-1. [Office 365 セキュリティ センターとコンプライアンス センターの PowerShell への接続](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [Office 365 セキュリティ センター/コンプライアンス センターの PowerShell への接続](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 次のコマンドレットを実行します。
     
@@ -54,7 +54,7 @@ ms.locfileid: "50925663"
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>保持ラベルを構成してレコードを宣言する
 
-Microsoft 365 コンプライアンス センターの **レコード管理** ソリューションから保持ラベルを作成または編集する場合、アイテムをレコードとしてマークするオプションがあります。 前のセクションで実行した PowerShell コマンドを実行した場合、代わりに規制レコードとしてアイテムをマークすることができます。
+Microsoft 365 コンプライアンス センターの **レコード管理** ソリューションから保持ラベルを作成する場合、アイテムをレコードとしてマークするオプションがあります。 前のセクションで実行した PowerShell コマンドを実行した場合、代わりに規制レコードとしてアイテムをマークすることができます。
 
 例:
 
