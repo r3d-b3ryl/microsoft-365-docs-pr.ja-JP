@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域のOffice 365サービスに移行する場合の事前作業。'
-ms.openlocfilehash: 244a784b0e28f9d5629f5af242a6cf8227abdb01
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5eefa56b96eb616c694b26c374b235ccd95c3ee9
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770381"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796020"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行前アクティビティ
 
@@ -201,7 +201,7 @@ Office 365 と統合されたサード パーティのサービスまたは業�
 Microsoft Cloud Deutschland インスタンスで Office 365 と Microsoft Azure に同じ Azure Active Directory ID パーティションを使用している場合は、Microsoft Azure サービスの顧客による移行の準備を行っている必要があります。
 
 > [!NOTE]
-> Office 365 テナントが移行フェーズ 9 に達する前に Microsoft Azure サービスの移行が開始されない場合があります。移行フェーズ 10 が完了する前に完了する必要があります。
+> Office 365 テナントが移行フェーズ 9 に達する前に、Microsoft Azure サービスの移行が開始されない場合があります。移行フェーズ 10 が開始される前に完了する必要があります。
 
 Office 365 Azure リソース (ネットワーク、コンピューティング、ストレージなど) を使用しているお客様は、リソースの Office 365 サービス インスタンスへの移行を実行します。 この移行は、お客様の責任です。 メッセージ センターの投稿は開始を示します。 移行は、Azure ADサービス環境でOffice 365する必要があります。 Azure 移行については、「Azure 移行プレイブック」、「Azure Germany の移行 [ガイダンスの概要」を参照してください](https://docs.microsoft.com/azure/germany/germany-migration-main)。
 
@@ -230,7 +230,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

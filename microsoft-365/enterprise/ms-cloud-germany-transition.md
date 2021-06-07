@@ -19,19 +19,19 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: ad6c81f04b9e8551ad6eeb6521f7562243df53e9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 4162e51164120cecaa431ad6883d3ee112ad4880
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346306"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796008"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Deutschland から新しいドイツのデータセンター地域Office 365サービスへの移行
 
 > [!NOTE]
 > この記事は、対象となる Microsoft Cloud Deutschland のお客様にのみ適用されます。
 
-2018 年 8 月、Microsoft は、お客様のデジタル変換をより良く実現するために、ドイツの新しいクラウド地域から完全な Microsoft クラウド (Azure、Office 365、Dynamics 365、および Power Platform) を提供する意向を発表しました。 2019 年 8 月に、ドイツで新しいクラウド リージョンを開設する準備を進めていることを発表しました。 その後、Azure、Office 365、Dynamics 365、および Power プラットフォームの可用性を発表しました。
+2018 年 8 月、Microsoft は、お客様のデジタル変換をより良く実現するために、ドイツの新しいクラウド地域から完全な Microsoft クラウド (Azure、Office 365、Dynamics 365、Power Platform) を提供する意向を発表しました。 2019 年 8 月に、ドイツで新しいクラウド リージョンを開設する準備を進めていることを発表しました。 その後、Azure、Office 365、Dynamics 365、および Power プラットフォームの可用性を発表しました。
 
 新しい地域は、より柔軟に、最新のインテリジェント クラウド サービス、Microsoft 365 サービス クラウド ネットワークへの完全な接続、およびドイツ内の顧客データ常駐により、ドイツのお客様の進化するニーズに対応するように設計されています。
 
@@ -64,7 +64,7 @@ Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 
 
 この図は、新しいドイツのデータセンターへの移行の 10 フェーズを示しています。
 
-![新しいドイツのデータセンターへの移行の 10 フェーズ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+:::image type="content" alt-text="新しいドイツのデータセンターへの移行の 10 フェーズ" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
 移行をオプトイン [すると、これらのフェーズが開始されます](./ms-cloud-germany-migration-opt-in.md)。 移行フェーズの大部分は、最小限の顧客とのやり取りが必要なバック エンド サービス操作として実行され、その後に 1 つのフェーズが実行されます。 追加の顧客主導のタスクと全体的な移行状態の開始は、移行プロセス中に、Microsoft 365管理センターのメッセージ センターを通じて伝達されます。 タスクの例としては、顧客が管理する DNS 更新プログラム、ハイブリッド顧客向けハイブリッド セットアップの再構成、Exchange Azure 移行などがあります。
 
@@ -180,7 +180,7 @@ Microsoft Cloud Deutschland クラウド サービスでは、次の 15 のサ�
 23. Web 用 Office
 24. Planner
 25. Sway
-26. Microsoft 365 アプリ
+26. Microsoft 365 Apps
 27. Outlook モバイル
 28. Enterprise Mobility + Security (EMS) E3 (Azure AD プレミアム P1、Intune、および Rights Management Service)
 29. Yammer Enterprise
@@ -201,7 +201,7 @@ Microsoft Cloud Deutschland クラウド サービスでは、次の 15 のサ�
 
 Azure のお客様のみである場合は、Azure[](/azure/germany/germany-migration-main)リソースの別の地域への移行を今日から開始できます。 
 
-Office 365、Dynamics 365、または Power BI を使用して Azure を使用している場合は、移行プロセスに従って、AzureAD の移行を成功に向け、その前に AzureAD の自動移行を開始する必要があります。 AzureAD と組織で Azure ワークロードを維持するには、サービスの終了前に Azure 移行をOffice 365があります。
+azure に Office 365、Dynamics 365、または Power BI がある場合は、まず Office 365 サービスの移行プロセスに従って、Azure AD の移行を成功に向け、その前に Azure AD の自動移行を開始する必要があります。 Azure の移行を完了してからテナント移行を完了し、Azure のワークロードを Azure AD組織Office 365があります。 詳細については [、「移行フェーズのアクションと Microsoft Cloud Deutschland](ms-cloud-germany-transition-phases.md) からの移行に対する影響」を参照してください。
 
 **Office 365**
 
@@ -303,7 +303,7 @@ Microsoft Cloud Deutschland から Office 365 サービスへの移行中に、�
 
 ### <a name="which-customers-are-affected-by-the-azure-active-directory-migration"></a>移行の影響を受けるお客様Azure Active Directoryですか? 
 
-Office365 のすべてのお客様は、Microsoft Azure Active Directoryの運用に必要な重要なサービス コンポーネントの認証と保存を行う必要があります。 
+すべてのお客様Office 365、Microsoft ホストAzure Active Directory運用に必要な重要なサービス コンポーネントの認証と保存を行う必要があります。 
 
 
 ### <a name="what-are-the-impacts-of-the-azure-active-directory-migration"></a>移行の影響Azure Active Directory?
