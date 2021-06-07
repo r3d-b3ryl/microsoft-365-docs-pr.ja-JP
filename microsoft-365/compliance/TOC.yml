@@ -6,10 +6,14 @@
       href: compliance-quick-tasks.md
     - name: Microsoft 365 コンプライアンスの新機能
       href: whats-new.md
-    - name: Microsoft 365 コンプライアンス センター
-      href: microsoft-365-compliance-center.md
     - name: Microsoft 365 ソリューション カタログ
       href: microsoft-365-solution-catalog.md
+    - name: Microsoft 365 コンプライアンス センター
+      href: microsoft-365-compliance-center.md
+    - name: Microsoft 365 コンプライアンス センターでのアクセス許可
+      href: microsoft-365-compliance-center-permissions.md
+    - name: Microsoft 365 コンプライアンス センターにユーザーをリダイレクトする
+      href: microsoft-365-compliance-center-redirection.md
     - name: 無料の Azure Active Directory Domain Services サブスクリプションを使用する
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Office 365 でセキュリティとコンプライアンスを計画する

@@ -14,20 +14,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 82479b0248ceee95321d269e3f48a4eeea3ad193
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 68bc53f2ae0b44567530cc1dd733c9dd37d380ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199503"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769595"
 ---
-# <a name="get-recommendation-by-software"></a><span data-ttu-id="8164b-104">ソフトウェアによる推奨事項の取得</span><span class="sxs-lookup"><span data-stu-id="8164b-104">Get recommendation by software</span></span>
+# <a name="get-recommendation-by-software"></a><span data-ttu-id="7bdfa-104">ソフトウェアによる推奨事項の取得</span><span class="sxs-lookup"><span data-stu-id="7bdfa-104">Get recommendation by software</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="8164b-105">**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="8164b-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="7bdfa-105">**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="7bdfa-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-> <span data-ttu-id="8164b-106">Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="8164b-106">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="8164b-107">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="8164b-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="7bdfa-106">Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="7bdfa-106">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="7bdfa-107">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="7bdfa-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -36,48 +38,48 @@ ms.locfileid: "51199503"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-<span data-ttu-id="8164b-108">特定のソフトウェアに関連するセキュリティ推奨事項を取得します。</span><span class="sxs-lookup"><span data-stu-id="8164b-108">Retrieves a security recommendation related to a specific software.</span></span>
+<span data-ttu-id="7bdfa-108">特定のソフトウェアに関連するセキュリティ推奨事項を取得します。</span><span class="sxs-lookup"><span data-stu-id="7bdfa-108">Retrieves a security recommendation related to a specific software.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8164b-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8164b-109">Permissions</span></span>
-<span data-ttu-id="8164b-110">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="8164b-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="8164b-111">アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8164b-111">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7bdfa-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7bdfa-109">Permissions</span></span>
+<span data-ttu-id="7bdfa-110">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="7bdfa-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="7bdfa-111">アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7bdfa-111">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.</span></span>
 
-<span data-ttu-id="8164b-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8164b-112">Permission type</span></span> |   <span data-ttu-id="8164b-113">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8164b-113">Permission</span></span>  |   <span data-ttu-id="8164b-114">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="8164b-114">Permission display name</span></span>
+<span data-ttu-id="7bdfa-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7bdfa-112">Permission type</span></span> |   <span data-ttu-id="7bdfa-113">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7bdfa-113">Permission</span></span>  |   <span data-ttu-id="7bdfa-114">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="7bdfa-114">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="8164b-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8164b-115">Application</span></span> |   <span data-ttu-id="8164b-116">SecurityRecommendation.Read.All</span><span class="sxs-lookup"><span data-stu-id="8164b-116">SecurityRecommendation.Read.All</span></span> |   <span data-ttu-id="8164b-117">'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'</span><span class="sxs-lookup"><span data-stu-id="8164b-117">'Read Threat and Vulnerability Management security recommendation information'</span></span>
-<span data-ttu-id="8164b-118">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8164b-118">Delegated (work or school account)</span></span> | <span data-ttu-id="8164b-119">SecurityRecommendation.Read</span><span class="sxs-lookup"><span data-stu-id="8164b-119">SecurityRecommendation.Read</span></span> |  <span data-ttu-id="8164b-120">'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'</span><span class="sxs-lookup"><span data-stu-id="8164b-120">'Read Threat and Vulnerability Management security recommendation information'</span></span>
+<span data-ttu-id="7bdfa-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7bdfa-115">Application</span></span> |   <span data-ttu-id="7bdfa-116">SecurityRecommendation.Read.All</span><span class="sxs-lookup"><span data-stu-id="7bdfa-116">SecurityRecommendation.Read.All</span></span> |   <span data-ttu-id="7bdfa-117">'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'</span><span class="sxs-lookup"><span data-stu-id="7bdfa-117">'Read Threat and Vulnerability Management security recommendation information'</span></span>
+<span data-ttu-id="7bdfa-118">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7bdfa-118">Delegated (work or school account)</span></span> | <span data-ttu-id="7bdfa-119">SecurityRecommendation.Read</span><span class="sxs-lookup"><span data-stu-id="7bdfa-119">SecurityRecommendation.Read</span></span> |  <span data-ttu-id="7bdfa-120">'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'</span><span class="sxs-lookup"><span data-stu-id="7bdfa-120">'Read Threat and Vulnerability Management security recommendation information'</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="8164b-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8164b-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7bdfa-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7bdfa-121">HTTP request</span></span>
 ```
 GET /api/recommendations/{id}/software
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8164b-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8164b-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7bdfa-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7bdfa-122">Request headers</span></span>
 
-<span data-ttu-id="8164b-123">名前</span><span class="sxs-lookup"><span data-stu-id="8164b-123">Name</span></span> | <span data-ttu-id="8164b-124">型</span><span class="sxs-lookup"><span data-stu-id="8164b-124">Type</span></span> | <span data-ttu-id="8164b-125">説明</span><span class="sxs-lookup"><span data-stu-id="8164b-125">Description</span></span>
+<span data-ttu-id="7bdfa-123">名前</span><span class="sxs-lookup"><span data-stu-id="7bdfa-123">Name</span></span> | <span data-ttu-id="7bdfa-124">種類</span><span class="sxs-lookup"><span data-stu-id="7bdfa-124">Type</span></span> | <span data-ttu-id="7bdfa-125">説明</span><span class="sxs-lookup"><span data-stu-id="7bdfa-125">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="8164b-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="8164b-126">Authorization</span></span> | <span data-ttu-id="8164b-127">String</span><span class="sxs-lookup"><span data-stu-id="8164b-127">String</span></span> | <span data-ttu-id="8164b-128">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="8164b-128">Bearer {token}.</span></span> <span data-ttu-id="8164b-129">**必須**</span><span class="sxs-lookup"><span data-stu-id="8164b-129">**Required**.</span></span>
+<span data-ttu-id="7bdfa-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="7bdfa-126">Authorization</span></span> | <span data-ttu-id="7bdfa-127">String</span><span class="sxs-lookup"><span data-stu-id="7bdfa-127">String</span></span> | <span data-ttu-id="7bdfa-128">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="7bdfa-128">Bearer {token}.</span></span> <span data-ttu-id="7bdfa-129">**必須**</span><span class="sxs-lookup"><span data-stu-id="7bdfa-129">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="8164b-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="8164b-130">Request body</span></span>
-<span data-ttu-id="8164b-131">Empty</span><span class="sxs-lookup"><span data-stu-id="8164b-131">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="7bdfa-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="7bdfa-130">Request body</span></span>
+<span data-ttu-id="7bdfa-131">Empty</span><span class="sxs-lookup"><span data-stu-id="7bdfa-131">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="8164b-132">応答</span><span class="sxs-lookup"><span data-stu-id="8164b-132">Response</span></span>
-<span data-ttu-id="8164b-133">成功した場合、このメソッドは、本文のセキュリティ推奨事項に関連付けられたソフトウェアで 200 OK を返します。</span><span class="sxs-lookup"><span data-stu-id="8164b-133">If successful, this method returns 200 OK with the software associated with the security recommendations in the body.</span></span>
+## <a name="response"></a><span data-ttu-id="7bdfa-132">応答</span><span class="sxs-lookup"><span data-stu-id="7bdfa-132">Response</span></span>
+<span data-ttu-id="7bdfa-133">成功した場合、このメソッドは、本文のセキュリティ推奨事項に関連付けられたソフトウェアで 200 OK を返します。</span><span class="sxs-lookup"><span data-stu-id="7bdfa-133">If successful, this method returns 200 OK with the software associated with the security recommendations in the body.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="8164b-134">例</span><span class="sxs-lookup"><span data-stu-id="8164b-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7bdfa-134">例</span><span class="sxs-lookup"><span data-stu-id="7bdfa-134">Example</span></span>
 
-<span data-ttu-id="8164b-135">**要求**</span><span class="sxs-lookup"><span data-stu-id="8164b-135">**Request**</span></span>
+<span data-ttu-id="7bdfa-135">**要求**</span><span class="sxs-lookup"><span data-stu-id="7bdfa-135">**Request**</span></span>
 
-<span data-ttu-id="8164b-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="8164b-136">Here is an example of the request.</span></span>
+<span data-ttu-id="7bdfa-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7bdfa-136">Here is an example of the request.</span></span>
 
 ```
 GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome/software 
 ```
 
-<span data-ttu-id="8164b-137">**応答**</span><span class="sxs-lookup"><span data-stu-id="8164b-137">**Response**</span></span>
+<span data-ttu-id="7bdfa-137">**応答**</span><span class="sxs-lookup"><span data-stu-id="7bdfa-137">**Response**</span></span>
 
-<span data-ttu-id="8164b-138">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="8164b-138">Here is an example of the response.</span></span>
+<span data-ttu-id="7bdfa-138">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="7bdfa-138">Here is an example of the response.</span></span>
 
 ```json
 {
@@ -93,6 +95,6 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
 }
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="8164b-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="8164b-139">Related topics</span></span>
-- [<span data-ttu-id="8164b-140">リスクベースの脅威&の管理</span><span class="sxs-lookup"><span data-stu-id="8164b-140">Risk-based Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [<span data-ttu-id="8164b-141">脅威&脆弱性のセキュリティに関する推奨事項</span><span class="sxs-lookup"><span data-stu-id="8164b-141">Threat & Vulnerability security recommendation</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+## <a name="related-topics"></a><span data-ttu-id="7bdfa-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="7bdfa-139">Related topics</span></span>
+- [<span data-ttu-id="7bdfa-140">リスクベースの脅威&の管理</span><span class="sxs-lookup"><span data-stu-id="7bdfa-140">Risk-based Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="7bdfa-141">脅威&脆弱性のセキュリティに関する推奨事項</span><span class="sxs-lookup"><span data-stu-id="7bdfa-141">Threat & Vulnerability security recommendation</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

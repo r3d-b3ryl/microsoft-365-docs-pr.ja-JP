@@ -244,17 +244,14 @@
 
 ### [攻撃面の減少]()
 #### [攻撃面の減少の概要](overview-attack-surface-reduction.md)
+#### [攻撃面の減少機能を構成する](configure-attack-surface-reduction.md)
+#### [攻撃面の減少ルールの詳細](attack-surface-reduction.md)
 #### [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
-#### [攻撃面の減少の構成設定](configure-attack-surface-reduction.md)
+#### [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
+#### [攻撃面の減少ルールをカスタマイズする](customize-attack-surface-reduction.md)
 #### [攻撃面の減少の FAQ](attack-surface-reduction-faq.md)
-
-#### [攻撃面の減少の制御]()
-##### [攻撃面の減少ルール](attack-surface-reduction.md)
-##### [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
-##### [攻撃面の減少ルールをカスタマイズする](customize-attack-surface-reduction.md)
-##### [攻撃面の減少イベントを表示する](event-views.md)
-
-#### [監査モードを使用する](audit-windows-defender.md)
+#### [攻撃面の減少イベントを表示する](event-views.md)
+#### [攻撃面の減少に監査モードを使用する](audit-windows-defender.md)
 
 ### 次世代の保護
 #### [Microsoft Defender ウイルス対策の概要](microsoft-defender-antivirus-in-windows-10.md)
@@ -592,6 +589,13 @@
 ###### [Python を使用した高度な追求](run-advanced-query-sample-python.md)
 ###### [PowerShell を使用した高度な追求](run-advanced-query-sample-powershell.md)
 ###### [OData クエリの使用](exposed-apis-odata-samples.md)
+
+
+#### [生データ ストリーミング API]()
+##### [生データ ストリーミング](raw-data-export.md)
+##### [高度な追求イベントを Azure イベント ハブにストリーミングする](raw-data-export-event-hub.md)
+##### [高度な追求イベントをストレージ アカウントにストリーミングする](raw-data-export-storage.md)
+
 
 #### [SIEM 統合]()
 ##### [脅威インテリジェンスの概念を理解する](threat-indicator-concepts.md)
