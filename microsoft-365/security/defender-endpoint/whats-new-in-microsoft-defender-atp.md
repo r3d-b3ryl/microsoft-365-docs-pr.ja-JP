@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3336abf516fbd848ae52b1a8734a99d173c692e3
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 28d956e11b4ea26cbc816c4c3c0d915ec18c5810
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246479"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782971"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -36,7 +36,7 @@ ms.locfileid: "52246479"
 
 Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) と、Windows 10 および Windows Server のセキュリティ機能が提供されています。
 
-プレビュー機能の詳細については、「プレビュー機能」 [を参照してください](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection)。
+プレビュー機能の詳細については、「プレビュー機能」 [を参照してください](preview.md)。
 
 
 > [!TIP]
@@ -46,13 +46,15 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 > https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
+## <a name="march-2021"></a>2021 年 3 月
+- [アプリケーションを使用して改ざん防止を管理Microsoft Defender セキュリティ センター](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> テナント接続というメソッドを使用して、Windows 10、Windows Server 2016、Windows サーバー 2019 の改ざん防止設定 *を管理できます*。 
 
 ## <a name="january-2021"></a>2021 年 1 月
 
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint では、仮想デスクトップのサポートWindows追加しました。
 
-## <a name="december-2020"></a>2020 年 12 月
-- [iOS 用 Microsoft Defender for Endpoint API](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint が iOS のサポートを追加しました。 iOS で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
+## <a name="december-2020"></a>2020年12月
+- [iOS 用 Microsoft Defender for Endpoint API](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint が iOS のサポートを追加しました。 iOS で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
 ## <a name="september-2020"></a>2020 年 9 月
 - [Android 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint が Android のサポートを追加しました。 Android 上で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
@@ -63,7 +65,7 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 - [Android 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint が Android のサポートを追加しました。 Android で Microsoft Defender for Endpoint をインストール、構成、および使用する方法について説明します。
 
 
-## <a name="july-2020"></a>2020 年 7 月
+## <a name="july-2020"></a>2020 年7 月
 - [証明書のインジケーターを作成 ](manage-indicators.md) <br> 証明書を許可またはブロックするインジケーターを作成します。 
 
 ## <a name="june-2020"></a>2020 年 6 月
@@ -74,17 +76,17 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 ## <a name="april-2020"></a>2020 年 4 月
 
-- [脅威&管理 API のサポート](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-list) <BR>脅威&脆弱性管理関連の API 呼び出し (組織の脅威暴露スコアまたはデバイスのセキュリティで保護されたスコアを取得する、ソフトウェアとデバイスの脆弱性インベントリ、ソフトウェアバージョンの配布、デバイスの脆弱性情報、セキュリティの推奨事項情報を取得する)を実行します。 詳細については、[この Microsoft Tech のブログCommunityを参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)。
+- [脅威&管理 API のサポート](exposed-apis-list.md) <BR>脅威&脆弱性管理関連の API 呼び出し (組織の脅威暴露スコアまたはデバイスのセキュリティで保護されたスコアを取得する、ソフトウェアとデバイスの脆弱性インベントリ、ソフトウェアバージョンの配布、デバイスの脆弱性情報、セキュリティの推奨事項情報を取得する)を実行します。 詳細については、[この Microsoft Tech のブログCommunityを参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)。
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint on macOS では、次世代の保護を Mac デバイスに提供します。 統合エンドポイント セキュリティ プラットフォームのコア コンポーネントは、エンドポイントの検出と応答を含む Mac デバイス [で使用できます](microsoft-defender-endpoint-mac.md)。
+- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint on macOS では、次世代の保護を Mac デバイスに提供します。 統合エンドポイント セキュリティ プラットフォームのコア コンポーネントは、エンドポイントの検出と応答を含む Mac デバイス [で使用できます](microsoft-defender-endpoint-mac.md)。
  
-- [脅威&脆弱性管理アプリケーションとアプリケーション バージョンの終末情報](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>使用期限に達したアプリケーションとアプリケーションのバージョンはタグ付けまたはラベル付けされ、サポートされなくなったことを認識し、アンインストールまたは置換を行うアクションを実行できます。 これにより、パッチが適用されていないアプリケーションによるさまざまな脆弱性の暴露に関連するリスクが軽減されます。
+- [脅威&脆弱性管理アプリケーションとアプリケーション バージョンの終末情報](tvm-security-recommendation.md) <BR>使用期限に達したアプリケーションとアプリケーションのバージョンはタグ付けまたはラベル付けされ、サポートされなくなったことを認識し、アンインストールまたは置換を行うアクションを実行できます。 これにより、パッチが適用されていないアプリケーションによるさまざまな脆弱性の暴露に関連するリスクが軽減されます。
 
-- [脅威&脆弱性管理高度なハンティング スキーマ](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-schema-reference) <BR>高度な&の脅威管理テーブルを使用して、ソフトウェア インベントリ、脆弱性ナレッジベース、セキュリティ構成評価、およびセキュリティ構成ナレッジベースに関するクエリを実行します。 
+- [脅威&脆弱性管理高度なハンティング スキーマ](advanced-hunting-schema-reference.md) <BR>高度な&の脅威管理テーブルを使用して、ソフトウェア インベントリ、脆弱性ナレッジベース、セキュリティ構成評価、およびセキュリティ構成ナレッジベースに関するクエリを実行します。 
  
- - [脅威&の管理の役割ベースのアクセス制御](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>新しいアクセス許可を使用して、SecOps 指向の役割、Threat & の脆弱性管理指向の役割、またはハイブリッド ロールを最大限に柔軟に作成し、承認されたユーザーのみが特定のデータにアクセスしてタスクを実行できます。 また、Threat & の脆弱性管理の役割が脆弱性に関連するデータのみを表示できるかどうか、または修復と例外を作成および管理できるかどうかを指定することで、さらに細分化できます。
+ - [脅威&の管理の役割ベースのアクセス制御](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>新しいアクセス許可を使用して、SecOps 指向の役割、Threat & の脆弱性管理指向の役割、またはハイブリッド ロールを最大限に柔軟に作成し、承認されたユーザーのみが特定のデータにアクセスしてタスクを実行できます。 また、Threat & の脆弱性管理の役割が脆弱性に関連するデータのみを表示できるかどうか、または修復と例外を作成および管理できるかどうかを指定することで、さらに細分化できます。
 
 - [デバイスの正常性とコンプライアンス レポート](machine-reports.md) <br/> デバイスの正常性とコンプライアンス レポートは、組織内のデバイスに関する高レベルの情報を提供します。
 
@@ -102,13 +104,13 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [Intune を使用したタンパープロテクションの設定](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>デバイス管理ポータル (Intune) で、組織のタンパープロテクションをオン (またはオフ) Microsoft 365有効にできます。
+- [Intune を使用したタンパープロテクションの設定](prevent-changes-to-security-settings-with-tamper-protection.md)<br/>デバイス管理ポータル (Intune) で、組織のタンパープロテクションをオン (またはオフ) Microsoft 365有効にできます。
 
 - [ライブ応答](live-response.md)<BR> リモート シェル接続を使用してデバイスに瞬時にアクセスします。 詳細な調査作業を行い、迅速に特定された脅威 (リアルタイム) を含む即時対応アクションを実行します。
 
 - [評価ラボ](evaluation-lab.md) <BR> Microsoft Defender for Endpoint 評価ラボは、プラットフォームの機能の評価、シミュレーションの実行、予防、検出、修復機能の実行に集中できるよう、デバイスと環境構成の複雑さを排除するように設計されています。
 
-- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016) <BR> これで、サーバー 2008 R2 SP1 Windowsオンボードできます。
+- [WindowsServer 2008 R2 SP1](configure-server-endpoints.md) <BR> これで、サーバー 2008 R2 SP1 Windowsオンボードできます。
 
 
 ## <a name="june-2019"></a>2019 年 6 月
@@ -119,64 +121,64 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 ## <a name="may-2019"></a>2019 年 5 月
 
-- [脅威に対する保護のレポート](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>脅威保護レポートは、組織で生成されたアラートに関する高レベルの情報を提供します。 
+- [脅威に対する保護のレポート](threat-protection-reports.md)<BR>脅威保護レポートは、組織で生成されたアラートに関する高レベルの情報を提供します。 
 
 
-- [Microsoft 脅威エキスパート](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft 脅威エキスパートは、Microsoft Defender for Endpoint の新しい管理された脅威検出サービスで、予防的な狩猟、事前設定、追加のコンテキストと分析情報を提供し、セキュリティ 運用センター (SOC) が脅威を迅速かつ正確に特定して対応する権限をさらに強化します。 Microsoft のお客様がセキュリティ運用機能を強化するために利用できる専門知識と光学の層が追加Microsoft 365。  
+- [Microsoft 脅威エキスパート](microsoft-threat-experts.md)<BR> Microsoft 脅威エキスパートは、Microsoft Defender for Endpoint の新しい管理された脅威検出サービスで、予防的な狩猟、事前設定、追加のコンテキストと分析情報を提供し、セキュリティ 運用センター (SOC) が脅威を迅速かつ正確に特定して対応する権限をさらに強化します。 Microsoft のお客様がセキュリティ運用機能を強化するために利用できる専門知識と光学の層が追加Microsoft 365。  
 
-- [インジケーター](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicator) <BR> インジケーターの API が一般提供されています。 
+- [インジケーター](ti-indicator.md) <BR> インジケーターの API が一般提供されています。 
 
 
-- [相互運用性](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/partner-applications) <BR> Microsoft Defender for Endpoint は、プラットフォームの検出、調査、および脅威インテリジェンス機能の強化に役立つサード パーティ製アプリケーションをサポートしています。
+- [相互運用性](partner-applications.md) <BR> Microsoft Defender for Endpoint は、プラットフォームの検出、調査、および脅威インテリジェンス機能の強化に役立つサード パーティ製アプリケーションをサポートしています。
 
 
 ## <a name="april-2019"></a>2019 年 4 月
-- [Microsoft 脅威エキスパートターゲット攻撃通知機能](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts#targeted-attack-notification) <BR> Microsoft 脅威エキスパートの標的型攻撃通知アラートは、組織に合わせて調整され、迅速に配信できる限り多くの情報を提供するため、タイムライン、侵害の範囲、侵入方法など、ネットワーク内の重大な脅威に注意を払います。
+- [Microsoft 脅威エキスパートターゲット攻撃通知機能](microsoft-threat-experts.md) <BR> Microsoft 脅威エキスパートの標的型攻撃通知アラートは、組織に合わせて調整され、迅速に配信できる限り多くの情報を提供するため、タイムライン、侵害の範囲、侵入方法など、ネットワーク内の重大な脅威に注意を払います。
 
-- [Microsoft Defender for Endpoint API](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) <BR> Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API を使用すると、Microsoft Defender for Endpoint の機能に基づいてワークフローを自動化し、革新することができます。 
+- [Microsoft Defender for Endpoint API](apis-intro.md) <BR> Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API を使用すると、Microsoft Defender for Endpoint の機能に基づいてワークフローを自動化し、革新することができます。 
 
 
 
 ## <a name="february-2019"></a>2019 年 2 月
-- [インシデント](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> インシデントは、Microsoft Defender for Endpoint の新しいエンティティであり、関連するすべてのアラートと関連エンティティをまとめ、より広範な攻撃ストーリーをナレーションし、アナリストが複雑な脅威の観点をよりよく理解します。 
+- [インシデント](view-incidents-queue.md) <BR> インシデントは、Microsoft Defender for Endpoint の新しいエンティティであり、関連するすべてのアラートと関連エンティティをまとめ、より広範な攻撃ストーリーをナレーションし、アナリストが複雑な脅威の観点をよりよく理解します。 
 
-- [以前のバージョンの Windows をオンボードする](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Microsoft Defender for Endpoint センサー Windowsセンサー データを送信できるよう、オンボードでサポートされているバージョンのデバイスを使用します。
+- [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)<BR> Microsoft Defender for Endpoint センサー Windowsセンサー データを送信できるよう、オンボードでサポートされているバージョンのデバイスを使用します。
 
 
 ## <a name="october-2018"></a>2018 年 10 月
-- [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>すべての攻撃表面の縮小ルールは、サーバー 2019 Windowsサポートされています。
+- [攻撃面の減少ルール](attack-surface-reduction.md)<BR>すべての攻撃表面の縮小ルールは、サーバー 2019 Windowsサポートされています。
 
-- [制御されたフォルダー アクセス](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR> フォルダー アクセスの制御が、サーバー 2019 Windowsサポートされています。
+- [制御されたフォルダー アクセス](enable-controlled-folders.md)<BR> フォルダー アクセスの制御が、サーバー 2019 Windowsサポートされています。
 
-- [カスタム検出](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>カスタム検出を使用すると、カスタム クエリを作成して、疑わしい脅威や新しい脅威などの任意の種類の動作についてイベントを監視できます。 これは、カスタム検出ルールの作成を通じて高度な狩猟の力を活用することで実行できます。 
+- [カスタム検出](manage-indicators.md)<BR>カスタム検出を使用すると、カスタム クエリを作成して、疑わしい脅威や新しい脅威などの任意の種類の動作についてイベントを監視できます。 これは、カスタム検出ルールの作成を通じて高度な狩猟の力を活用することで実行できます。 
 
-- [AAzure Defender との統合](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<BR> Microsoft Defender for Endpoint は Azure Defender と統合して、包括的なサーバー保護ソリューションを提供します。 この統合により、Azure Defender は Microsoft Defender for Endpoint の機能を活用して、サーバーの脅威検出を強化Windowsできます。
+- [Azure Defender との統合](configure-server-endpoints.md)<BR> Microsoft Defender for Endpoint は Azure Defender と統合して、包括的なサーバー保護ソリューションを提供します。 この統合により、Azure Defender は Microsoft Defender for Endpoint の機能を活用して、サーバーの脅威検出を強化Windowsできます。
 
-- [マネージド セキュリティ サービス プロバイダー (MSSP) のサポート](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<BR> Microsoft Defender for Endpoint は、MSSP 統合を提供することで、このシナリオのサポートを追加します。 この統合により、MSSP は MSSP のお客様の Microsoft Defender セキュリティ センター ポータルへのアクセス、電子メール通知のフェッチ、セキュリティ情報とイベント管理 (SIEM) ツールを使用してアラートをフェッチする、というアクションを実行できます。
+- [マネージド セキュリティ サービス プロバイダー (MSSP) のサポート](mssp-support.md)<BR> Microsoft Defender for Endpoint は、MSSP 統合を提供することで、このシナリオのサポートを追加します。 この統合により、MSSP は MSSP のお客様の Microsoft Defender セキュリティ センター ポータルへのアクセス、電子メール通知のフェッチ、セキュリティ情報とイベント管理 (SIEM) ツールを使用してアラートをフェッチする、というアクションを実行できます。
 
 - [リムーバブル デバイスコントロール](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/19/windows-defender-atp-has-protections-for-usb-and-removable-devices/)<BR>Microsoft Defender for Endpoint には、特定のハードウェアの ID を許可またはブロックするための新しい設定を含む、リムーバブル デバイスからの脅威を防止するための複数の監視および制御機能が提供されています。
 
-- [iOS デバイスと Android デバイスのサポート](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection#turn-on-third-party-integration)<BR> iOS デバイスと Android デバイスがサポートされ、サービスにオンボードできます。
+- [iOS デバイスと Android デバイスのサポート](configure-endpoints-non-windows.md)<BR> iOS デバイスと Android デバイスがサポートされ、サービスにオンボードできます。
 
-- [脅威の分析](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics)<BR>
+- [脅威の分析](threat-analytics.md)<BR>
 Threat Analytics は、新たな脅威やアウトブレイクが特定されるとすぐに Microsoft Defender for Endpoint リサーチ チームが発行する一連の対話型レポートです。 このレポートは、セキュリティ運用チームが環境への影響を評価し、組織の回復力を高め、特定の脅威を防ぐための推奨アクションを提供するのに役立ちます。
 
 - 新しいWindows 10バージョン 1809 では、次の 2 つの新しい攻撃表面縮小ルールがあります。 
   - Adobe Reader の子プロセスの作成をブロックする
   - 通信アプリケーションOffice子プロセスの作成をブロックします。
   
-- [Microsoft Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
+- [Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
     - マルウェア対策スキャン インターフェイス (AMSI) は、VBA マクロOfficeに拡張されました。 [Office VBA + AMSI: 悪意のあるマクロにベールを分けます](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/)。
     - Microsoft Defender ウイルス対策バージョン 1809 Windows 10の新機能で、サンドボックス[(プレビュー](https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox) ) 内で実行し、セキュリティを強化しました。
-    - [スキャンの CPU 優先度設定](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)をMicrosoft Defender ウイルス対策します。
+    - [スキャンの CPU 優先度設定](configure-advanced-scan-types-microsoft-defender-antivirus.md)をMicrosoft Defender ウイルス対策します。
 
 
   
 ## <a name="march-2018"></a>2018 年 3 月
-- [高度な追求](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
+- [高度な追求](advanced-hunting-overview.md) <BR>
 Microsoft Defender for Endpoint の高度な検索を使用してデータをクエリします。
 
-- [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
+- [攻撃面の減少ルール](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
     新しい攻撃表面の縮小ルール: 
   - ランサムウェアに対する高度な保護の使用
   - ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)
@@ -184,29 +186,29 @@ Microsoft Defender for Endpoint の高度な検索を使用してデータをク
   - USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする
   - メール クライアントと Web メールから実行可能なコンテンツをブロックする
 
-- [調査と修復の自動化](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)<BR> 自動調査を使用して、脅威を調査および修復します。
+- [自動調査と修復](automated-investigations.md)<BR> 自動調査を使用して、脅威を調査および修復します。
 
     >[!NOTE]
     >バージョン 1803 Windows 10以降のバージョンから使用できます。
 
-- [条件付きアクセス](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection) <br> 条件付きアクセスを有効にして、ユーザー、デバイス、およびデータをより良く保護します。
+- [条件付きアクセス](conditional-access.md) <br> 条件付きアクセスを有効にして、ユーザー、デバイス、およびデータをより良く保護します。
 
-- [Microsoft Defender for Endpoint Community センター](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/community-windows-defender-advanced-threat-protection)<BR> 
+- [Microsoft Defender for Endpoint Community センター](community.md)<BR> 
     Microsoft Defender for Endpoint Community センターは、コミュニティ メンバーが製品に関するエクスペリエンスを学び、共同作業し、共有できる場所です。 
 
-- [制御されたフォルダー アクセス](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR>
+- [制御されたフォルダー アクセス](enable-controlled-folders.md)<BR>
 フォルダー アクセスの制御を使用して、信頼されていないプロセスがディスク セクターに書き込むのをブロックできます。
 
-- [Windows 以外のデバイスをオンボードする](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
+- [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)<BR>
     Microsoft Defender for Endpoint は、セキュリティ プラットフォームだけでなく、Windowsプラットフォームにも一元的なセキュリティWindows提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートを、組織のネットワークMicrosoft Defender セキュリティ センター保護することができます。
 
-- [役割ベースのアクセス制御 (RBAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)<BR>
+- [役割ベースのアクセス制御 (RBAC)](rbac.md)<BR>
     役割ベースのアクセス制御 (RBAC) を使用して、セキュリティ運用チーム内に役割とグループを作成して、ポータルへの適切なアクセスを許可できます。
 
 
-- [Microsoft Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)<BR>
-Microsoft Defender ウイルス対策 M365 サービス間で検出状態を共有し、Microsoft Defender for Endpoint と相互運用を行う必要があります。 詳細については、「クラウドで提供される保護を通じて、Microsoft Defender ウイルス対策[に次世代テクノロジを使用する」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)。
+- [Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)<BR>
+Microsoft Defender ウイルス対策サービス間で検出状態を共有Microsoft 365 Microsoft Defender for Endpoint との相互運用が可能になります。 詳細については、「クラウドで提供される保護を通じて、Microsoft Defender ウイルス対策[に次世代テクノロジを使用する」を参照してください](cloud-protection-microsoft-defender-antivirus.md)。
 
-    一目でブロックすると、移植できない実行可能ファイル (JS、VBS、マクロなど) と実行可能ファイルをブロックできます。 詳細については、「一目で [ブロックを有効にする」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)。
+    一目でブロックすると、移植できない実行可能ファイル (JS、VBS、マクロなど) と実行可能ファイルをブロックできます。 詳細については、「一目で [ブロックを有効にする」を参照してください](configure-block-at-first-sight-microsoft-defender-antivirus.md)。
 
 

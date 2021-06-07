@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、プラン 2 の Microsoft Defender でユーザー タグを持つユーザーの特定のグループOffice 365学習できます。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別Office 365に使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 44b925840700c00c6b2d28c445ac26abd6624d1c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943013"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782863"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365
 
@@ -51,7 +51,7 @@ ms.locfileid: "51943013"
 影響の大きなユーザー アカウントを保護するための戦略の一部であるユーザー タグの詳細については、「セキュリティに関する推奨事項」を参照[Microsoft 365。](security-recommendations-for-priority-accounts.md)
 
 > [!NOTE]
-> 統合セキュリティ センターを使用Microsoft 365、次のタグを設定できます https://security.microsoft.com/userTags 。
+> 統合セキュリティ センターを使用Microsoft 365、次のタグを設定できます https://security.microsoft.com/securitysettings/userTags 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -64,10 +64,11 @@ ms.locfileid: "51943013"
 
   詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-  **注**:
-
-  - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - ユーザー タグ管理は、タグ リーダーと **タグ マネージャー** の **役割によって制御** されます。
+  > [!NOTE]
+  >
+  > - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  >
+  > - ユーザー タグ管理は、タグ リーダーと **タグ マネージャー** の **役割によって制御** されます。
 
 - また、管理センターで優先度アカウントを管理Microsoft 365監視することもできます。 手順については、「優先度アカウントの [管理と監視」を参照してください](../../admin/setup/priority-accounts.md)。
 
@@ -126,7 +127,8 @@ ms.locfileid: "51943013"
 
 ## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>コンプライアンス センターのセキュリティ &を使用してユーザー タグを削除する
 
-**注**: 組み込みの Priority アカウント タグ **は削除** できません。
+> [!NOTE]
+> 組み込みの Priority アカウント タグ **は削除** できません。
 
 1. セキュリティ コンプライアンス センター&、脅威管理 **のユーザー タグに** \> **移動します**。
 

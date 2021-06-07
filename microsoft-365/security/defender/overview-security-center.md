@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f9bb0690cf48c4cc694c0d563ba7d4203953358a
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 3f71e5aa37ad9184a21bf92232951d8884ee2577
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943055"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782515"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>統合された Microsoft 365 セキュリティ センターの概要
 

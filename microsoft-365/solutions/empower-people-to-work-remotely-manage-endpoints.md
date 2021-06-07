@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft エンドポイント マネージャーを使用して、管理デバイス、PC、その他のエンドポイントを管理します。
-ms.openlocfilehash: 116f2a92ccae43a36a8a4ceafcd598c532a852c3
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ef43f447b819a6e5d9d0de1d979d7d30887e30fb
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028994"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789109"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>手順 4. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 
-リモート ワーカーは、増え続ける個人用デバイスをサポートする必要があります。 エンドポイント管理は、デバイスでのリソースへのアクセスを許可する前に特定の基準に準拠する必要があるセキュリティに対するポリシーベースのアプローチです。 Microsoft エンドポイント マネージャーは、クラウドとオンプレミスでデータを安全に保つための最新の管理機能を提供します。 
+ハイブリッド ワーカーは、増え続ける個人用デバイスをサポートする必要があります。 エンドポイント管理は、デバイスでのリソースへのアクセスを許可する前に特定の基準に準拠する必要があるセキュリティに対するポリシーベースのアプローチです。 Microsoft エンドポイント マネージャーは、クラウドとオンプレミスでデータを安全に保つための最新の管理機能を提供します。 
 
 [Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)は、モバイル デバイス、デスクトップ コンピューター、仮想マシン、組み込みデバイス、およびサーバーを管理できるサービスおよびツールを提供します。これは、すでに使用している可能性のある次のサービスを組み合わせて使用します。
 
@@ -38,7 +38,7 @@ Microsoft Intune は、Microsoft 365 に付属しているモバイル デバイ
 
 - **MDM:** 組織所有のデバイスについては、設定、機能、およびセキュリティを含むフル コントロールを行うことができます。 デバイスは、ルールと設定で Intune ポリシーを受信するようにすることで 「登録」 されます。 たとえば、パスワードや PIN の要件を設定したり、VPN 接続を作成したり、脅威の保護を設定したりできます。
 
-- **MAM:** リモート ワーカーは個人のデバイス、いわゆる、「Bring-Your-Own Device (BYOD)」 にフル コントロールが必要でないかもしれません。 リモート ワーカーに選択肢を提示しながら、組織を保護することができます。 たとえば、リモート ワーカーが組織のリソースにフル アクセスすることを希望する場合、使用するデバイスを登録することができます。 または、これらのユーザーが電子メールや Microsoft Teams にのみアクセスできるようにする場合は、これらのアプリを使用できるように多要素認証 (MFA) を必要とするアプリ保護ポリシーを使用します。
+- **MAM:** リモート ワーカーは個人のデバイス、いわゆる、「Bring-Your-Own Device (BYOD)」 にフル コントロールが必要でないかもしれません。 ハイブリッド ワーカーに選択肢を提示しながら、組織を保護することができます。 たとえば、ハイブリッド ワーカーが組織のリソースにフル アクセスすることを希望する場合、使用するデバイスを登録することができます。 または、これらのユーザーが電子メールや Microsoft Teams にのみアクセスできるようにする場合は、これらのアプリを使用できるように多要素認証 (MFA) を必要とするアプリ保護ポリシーを使用します。
 
 詳細については、「[Microsoft Intune の概要](/intune/fundamentals/what-is-intune)」をご覧ください。
 
@@ -95,4 +95,4 @@ Windows Autopilot で、IT 部門は管理するインフラストラクチャ�
 
 [![手順 5: リモート ワーカー向けの生産性向上アプリとサービスを展開する](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
-リモート ワーカーが、Microsoft Teams などの Microsoft 365 の生産性を高めるアプリを使用する方法については [手順 5](empower-people-to-work-remotely-teams-productivity-apps.md) を続けてください。
+ハイブリッド ワーカーが、Microsoft Teams などの Microsoft 365 の生産性を高めるアプリを使用する方法については [手順 5](empower-people-to-work-remotely-teams-productivity-apps.md) を続けてください。

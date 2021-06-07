@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee2a5e1815dd552753ac7f3dee30df11ac4332e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.custom: api
+ms.openlocfilehash: 456507533265bc085adc1008f3264e123569a6ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068571"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770771"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>MSSP カスタマー テナントからのアラートの取得
 

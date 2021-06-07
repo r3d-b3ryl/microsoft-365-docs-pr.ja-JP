@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4bdbfbb20f3abb9829b2c8be83b9eaa6ec92cde7
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: b7a6a3e7f6f705f322ee3eb1c1b561bc01c55d29
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187225"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770891"
 ---
 # <a name="start-investigation-api"></a>調査 API の開始
 
@@ -68,7 +69,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/startInvestigati
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 Content-Type | string | application/json. **必須**
@@ -76,7 +77,7 @@ Content-Type | string | application/json. **必須**
 ## <a name="request-body"></a>要求本文
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 型    | 説明
+パラメーター | 種類    | 説明
 :---|:---|:---
 コメント |   文字列 |    アクションに関連付けるコメント。 **必須**
 

@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: セキュリティ とコンプライアンス センターのOffice 365コンプライアンス センターに自動的にリダイレクトする方法Microsoft 365します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fb667e8f19b26cbe229b3aceffe194a86133c261
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b51b2e225c833ac499379bbee119f8cb6f4216e9
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772481"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782839"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>セキュリティ/コンプライアンス センター Office 365コンプライアンス センターからコンプライアンス センターにユーザー Microsoft 365リダイレクトする
 
@@ -51,7 +51,7 @@ ms.locfileid: "52772481"
 1. グローバル管理者として[、Microsoft 365](https://compliance.microsoft.com)コンプライアンス センターにサインインするか、Azure Active directory でコンプライアンス管理者のアクセス許可を持つ任意のアカウントを使用します。
 2. コンプライアンス センターの **設定**  >  **に移動します**。
 3. [自動リダイレクト] 設定を [オフ] に **切り替えます**。
-4. プロンプトが **表示されたら、[** フィードバックを無効にして共有する] を選択します。
+4. メッセージが **表示されたら、[** オフにし、フィードバックを共有する] を選択します。
 
 無効にすると、ユーザーは compliance.microsoft.com にルーティングされ、Office 365 セキュリティ とコンプライアンス センター (protection.microsoft.com) に protection.microsoft.com。 この設定は、グローバル管理者またはコンプライアンス管理者がいつでも再度有効にできます。
 

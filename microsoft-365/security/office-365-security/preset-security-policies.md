@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、標準ポリシーと厳密なポリシー設定を、Exchange Online Protection (EOP) と Microsoft Defender の保護機能全体に適用する方法をOffice 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca65f003b0c206b0f7e23f3498a4ef0d0bc03fa6
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788981"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771227"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
 
@@ -103,7 +103,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
 ## <a name="assign-preset-security-policies-to-users"></a>ユーザーに事前設定されたセキュリティ ポリシーを割り当てる
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+### <a name="what-do-you-need-to-know-before-you-begin"></a>事前に必要な知識
 
 - [セキュリティ センター] Microsoft 365開きます <https://security.microsoft.com/> 。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
 
@@ -115,11 +115,11 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
-  **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+  **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>セキュリティ センターを使用して、ユーザーに事前設定されたセキュリティ ポリシーを割り当てる
 
-1. セキュリティ センターで、[メールの送信] **&[** ルールの脅威ポリシー&ポリシー] セクションの [セキュリティ ポリシーの事前設定] \>  \>  \>  \> **に移動します**。
+1. セキュリティ センターで、[メール] グループ **&[** ルールの脅威ポリシー&セキュリティ ポリシー] に \>  \>  \> **移動します**。
 
 2. [標準 **保護] または [****厳密な保護] で、[** 編集] を **クリックします**。
 

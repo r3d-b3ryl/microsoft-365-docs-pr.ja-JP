@@ -21,12 +21,12 @@ description: 管理者Microsoft 365 - 今月追加された機能について学
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 654f8de8d931f26efbcba5b60d730a9d9e477e65
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d4bd7d02b8c14f8b57b6f2e3eef99c2233d820fe
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769078"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779893"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>管理センターの新機能Microsoft 365
 
@@ -49,6 +49,18 @@ ms.locfileid: "52769078"
 - [SharePoint 管理センターの新機能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新プログラム](/OfficeUpdates/)
 - [リリースの正常性をWindowsする方法](/windows/deployment/update/check-release-health)
+
+## <a name="june-2021"></a>2021 年 6 月
+
+### <a name="microsoft-365-admin-center-search"></a>Microsoft 365センター検索
+
+検索機能にいくつかの新しいカテゴリが追加されました。
+
+- グローバル検索で管理者Microsoft 365を検索し、任意のページから役割の割り当てをすばやく表示および管理できます。 たとえば、Intune 管理者 **を検索します**。
+
+- グローバル検索を使用して、簡単なセットアップ エクスペリエンスを見つける方法が追加されました。 これにより、新しい機能の使い方を簡単に始めることができます。 たとえば、有効期限が切 **れることはありませんに設定されたパスワードを検索します**。
+
+管理センターでの検索の詳細については、「管理センターの検索[」を参照Microsoft 365してください](manage/search-in-the-mac.md)。
 
 ## <a name="may-2021"></a>2021 年 5 月
 

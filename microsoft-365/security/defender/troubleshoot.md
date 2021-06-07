@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0c933edfe80275dbfa60464ff862a7609b269332
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 81da6c6ef46798ac656e7d5f0f374bf2c722583d
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933399"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782743"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Defender サービスMicrosoft 365のトラブルシューティング
 

@@ -1,5 +1,5 @@
 ---
-title: スプーフィング インテリジェンスの分析情報
+title: スプーフィング インテリジェンス分析
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、スプーフィング インテリジェンスの分析情報について、Exchange Online Protection (EOP) で学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37c5bcb6f2c15c3814fafa198f2905e23b12ba01
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 45ecbe68072441b40477d1b27953b957aeffa9e3
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538749"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793174"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP でのスプーフィング インテリジェンスの分析情報
 
@@ -63,7 +63,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 > [!NOTE]
 >
-> - スプーフィング インテリジェンスによって検出されたスプーフィングされた送信者だけがスプーフィング インテリジェンスの分析情報に表示されます。 インサイトで許可またはブロックの評決を上書きすると、スプーフィングされた送信者は、テナント許可/ブロック一覧の [スプーフィング] タブにのみ表示される手動の許可またはブロック エントリになります。 スプーフィング インテリジェンスによって検出される前に、スプーフィングされた送信者の許可エントリまたはブロック エントリを手動で作成することもできます。 詳細については [、「Manage the Tenant Allow/Block List in EOP」を参照してください](tenant-allow-block-list.md)。
+> - スプーフィング インテリジェンスによって検出されたスプーフィングされた送信者だけがスプーフィング インテリジェンスの分析情報に表示されます。 インサイトで許可またはブロックの評決を上書きすると、スプーフィングされた送信者は、テナント許可/ブロック一覧の [スプーフィング] タブにのみ表示される手動の許可またはブロック エントリになります。 スプーフィング インテリジェンスによって検出される前に、スプーフィングされた送信者の許可エントリまたはブロック エントリを手動で作成することもできます。 詳細については、「[EOP でテナント許可/ブロック リストを管理する](tenant-allow-block-list.md)」を参照してください。
 >
 > - [テナントの許可/ブロック] リストのスプーフィング インテリジェンスインサイトと [スプーフィング] タブは、セキュリティ & コンプライアンス センターのスパム対策ポリシー ページで使用できるスプーフィング インテリジェンス ポリシーの機能を置き換えます。
 >
@@ -88,7 +88,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 - EOP および Microsoft Defender のフィッシング対策ポリシーでスプーフィング インテリジェンスを有効または無効にOffice 365。 スプーフィング インテリジェンスは既定で有効になっています。 詳細については[、「EOP で](configure-anti-phishing-policies-eop.md)フィッシング対策ポリシーを構成する」または「Microsoft Defender for Office 365 でフィッシング対策ポリシー[を構成する」を参照してください](configure-atp-anti-phishing-policies.md)。
 
-- スプーフィング インテリジェンスの推奨設定については [、「EOP の既定のフィッシング対策ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
+- スプーフィング インテリジェンスの推奨設定については [、「EOP フィッシング対策ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)。
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでスプーフィング インテリジェンス&開く
 

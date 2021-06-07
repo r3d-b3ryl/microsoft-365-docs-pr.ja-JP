@@ -1,5 +1,5 @@
 ---
-title: ソリューションを使用して契約Microsoft 365する
+title: Microsoft 365 ソリューションを使用して契約を管理する
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,14 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Syntex、Microsoft 365 リスト、SharePoint、SharePoint Microsoft Teams、およびPower Automateのソリューションを使用して契約を管理する方法についてPower Automate。
-ms.openlocfilehash: 219ab13eb5787bef566ede0c5dc856da29d96837
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: d12ccd2d4bc777b05489556f0d96ce9de80954a8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651286"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770819"
 ---
-# <a name="manage-contracts-using-a-microsoft-365-solution"></a>ソリューションを使用して契約Microsoft 365する
+# <a name="manage-contracts-using-a-microsoft-365-solution"></a>Microsoft 365 ソリューションを使用して契約を管理する
 
 この記事では、Syntex と組織のコンポーネントを使用して、組織の契約管理SharePointする方法についてMicrosoft 365。 独自のビジネス ニーズに合ったソリューションの計画と作成に役立つフレームワークを提供します。 このソリューションがビジネス ニーズ全体に合わない場合でも、カスタム契約管理ソリューションを作成する計画で、その一部を採用できます。
 
@@ -73,6 +73,14 @@ ms.locfileid: "52651286"
 6. このソリューションの最後の結果は、組織の自動化されたビジネス プロセスです。 従業員は、ドキュメントの承認ワークフローを開始Teamsカスタム タイル ビューを簡単に使用できます。 
 
      ![[契約] タブ。](../media/content-understanding/tile-view.png)
+
+### <a name="licensing-requirements"></a>ライセンスの要件
+
+このソリューションは、Microsoft 365 Enterprise (E1、E3、E5、F3) または Business (Basic、Standard、または プレミアム) ライセンスの一部として利用できる次の機能に依存します。
+
+-   Microsoft SharePoint Syntex
+-   Microsoft Teams
+-   Power Automate
 
 ## <a name="create-the-solution"></a>ソリューションの作成
 

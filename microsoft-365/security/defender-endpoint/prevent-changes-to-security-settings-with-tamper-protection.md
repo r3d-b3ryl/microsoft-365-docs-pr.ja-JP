@@ -17,12 +17,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 05/17/2021
-ms.openlocfilehash: ed9eb425d718a2dbdaa2cdb3ab1e6899c9870124
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2d212bedf9033b0824d32e7f42afea3944d9ca67
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538897"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782815"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -257,7 +257,7 @@ Microsoft Defender for [Endpoint](/microsoft-365/security/defender-endpoint)を�
 
 - [Intune を使用して改ざん防止を管理する](#manage-tamper-protection-for-your-organization-using-intune)
 - [Configuration Manager バージョン 2006 を使用して改ざん防止を管理する](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- [アプリを使用して改ざんMicrosoft Defender セキュリティ センター](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center)管理する (現在プレビュー中)
+- [アプリケーションを使用して改ざん防止を管理Microsoft Defender セキュリティ センター](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) 
 
 ### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-through-my-group-policy"></a>Intune でタンパープロテクションを構成すると、グループ ポリシーを通Microsoft Defender ウイルス対策管理する方法にどのような影響がありますか?
 

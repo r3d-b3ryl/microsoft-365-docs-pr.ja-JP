@@ -1,5 +1,5 @@
 ---
-title: 攻撃表面の縮小を構成する
+title: 攻撃表面の縮小機能を構成する
 description: 攻撃Microsoft Intune、Microsoft Endpoint Configuration Manager、PowerShell コマンドレット、およびグループ ポリシーを使用して、攻撃表面の縮小を構成します。
 keywords: asr, 攻撃表面の縮小, Windows Defender, microsoft Defender, ウイルス対策, av
 search.product: eADQiWindows 10XVcnh
@@ -8,45 +8,57 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: deniseb
+author: denisebmsft
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6129fb889e2bd42f177c4e3be30f676854119f91
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.date: 06/02/2021
+ms.openlocfilehash: d2f984e21338e2f9a4ed579cde2d74339031d649
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166167"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770963"
 ---
-# <a name="configure-attack-surface-reduction"></a>攻撃表面の縮小を構成する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# <a name="configure-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能を構成する
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
-攻撃表面の縮小は、以下を含む多くのツールで構成できます。
+Defender for Endpoint には、攻撃表面の縮小機能がいくつか含まれています。 詳細については、「攻撃表面 [の縮小機能の概要」を参照してください](overview-attack-surface-reduction.md)。 環境で攻撃表面の縮小を構成するには、次の手順を実行します。 
 
-* Microsoft Intune
-* Microsoft Endpoint Configuration Manager
-* グループ ポリシー
-* PowerShell コマンドレット
+1. [ハードウェア ベースの分離を有効にMicrosoft Edge。](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)
 
-記事 | 説明
--|-
-[デバイスのハードウェア ベースの分離を有効Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard) | ハードウェア要件とソフトウェア要件を含む Application Guard の準備とインストール方法
-[アプリケーション制御を有効にする](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)|ユーザーが実行するアプリケーションを制御し、カーネル モード プロセスを保護する方法
-[エクスプロイト保護](./enable-exploit-protection.md)|オペレーティング システム プロセスと個々のアプリの両方に悪用軽減手法を自動的に適用する方法
-[ネットワーク保護](./enable-network-protection.md)|ユーザーが危険なドメインにアクセスするためにアプリを使用するのを防ぐ方法
-[制御されたフォルダー アクセス](./enable-controlled-folders.md)|悪意のあるアプリから貴重なデータを保護する方法
-[攻撃面の減少](./enable-attack-surface-reduction.md)|悪用を求めるマルウェアによって通常使用されるアクションとアプリを防止する方法
-[ネットワーク ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)|ネットワーク全体のデバイスとデータを保護する方法
+2. アプリケーション制御を有効にする。 
 
+   1. [基本ポリシー] を [Windows] で確認します。 基本 [ポリシーの例を参照してください](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)。
+   2. アプリケーション コントロール [の設計ガイドを参照してください](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)。
+   3. アプリケーション コントロールの [設計ガイドを参照してください](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
+
+3. [フォルダー アクセスの制御を有効にする](enable-controlled-folders.md)。
+
+4. [[ネットワーク保護] をオンにする](enable-network-protection.md)。
+
+5. [エクスプロイト保護を有効にする](enable-exploit-protection.md)。
+
+6. [攻撃表面の縮小ルールを構成します](enable-attack-surface-reduction.md)。
+
+7. ネットワーク ファイアウォールを設定します。
+
+   1. 高度なセキュリティを備Windows Defender ファイアウォール[の概要を確認します](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
+   2. ファイアウォール ポリシー [Windows Defender ファイアウォールする方法](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide)を決定するには、次の設計ガイドを使用します。
+   3. 高度な[セキュリティWindows Defender ファイアウォール組織](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)のファイアウォールをセットアップするには、次の展開ガイドを使用します。 
+
+> [!TIP]
+> ほとんどの場合、攻撃表面の縮小機能を構成する場合、次の方法から選択できます。
+> - Microsoft エンドポイント マネージャー (現在は、Microsoft IntuneとMicrosoft Endpoint Configuration Manager)
+> - グループ ポリシー
+> - PowerShell コマンドレット

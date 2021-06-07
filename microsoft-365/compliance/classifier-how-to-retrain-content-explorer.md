@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーでトレーニング可能な分類子にフィードバックを提供する方法について学習します。
-ms.openlocfilehash: d61437634dcad7f01a6737947b0f32f42de2818e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ef0539a3d474ffecaeac8633b4a58aa068a5c182
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918103"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793066"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>コンテンツ エクスプローラーで分類子を再トレーニングする方法
 
@@ -37,7 +37,7 @@ ms.locfileid: "50918103"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
 
 
-## <a name="permissions"></a>権限
+## <a name="permissions"></a>アクセス許可
 
 コンプライアンス センターで分類子にMicrosoft 365するには、次のMicrosoft 365使用します。
 
@@ -96,7 +96,7 @@ ms.locfileid: "50918103"
 
 12. 推奨されるアクションと、再トレーニング済みおよび現在公開されているバージョンの分類子の予測比較を確認します。
 13. 再トレーニングの結果に満足している場合は、[再発行] **を選択します**。
-14. 再トレーニングの結果に満足できない場合は、コミュニケーション コンプライアンス インターフェイスで分類子に追加のフィードバックを提供し、別の再トレーニング サイクルを開始するか、現在公開されているバージョンの分類子を引き続き使用します。 
+14. 再トレーニングの結果に満足できない場合は、Content Explorer インターフェイスで分類子に追加のフィードバックを提供し、別の再トレーニング サイクルを開始するか、現在公開されているバージョンの分類子が引き続き使用されます。 
 
 ## <a name="details-on-republishing-recommendations"></a>推奨事項の再発行の詳細
 

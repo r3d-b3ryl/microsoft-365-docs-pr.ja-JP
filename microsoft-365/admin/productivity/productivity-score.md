@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアには、ユーザーやテクノロジのエクスペリエンス測定がどのように反映されているか、同規模の組織との比較をご覧ください。
-ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: af0e8583bec00b1ddfd62145a4757a4e568108e8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779676"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789041"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -118,11 +118,11 @@ Microsoft 365 管理ホームの **[レポート]** > **[生産性スコア]** �
 
 スコア履歴には、過去 6 か月間の各カテゴリのスコアの変化が表示されます。
 
-**ユーザー エクスペリエンス** と **テクノロジ エクスペリエンス** の領域には、これらの領域のカテゴリに関する主要な分析情報が含まれています。 各カテゴリをクリックすると、さらに詳細な分析情報が表示されます。
+**ユーザー エクスペリエンス** と **テクノロジ エクスペリエンス** の領域には、これらの領域のカテゴリに関する主要な分析情報が含まれています。 各カテゴリを選択すると、さらに詳細な分析情報が表示されます。
 
 ## <a name="category-details-pages"></a>カテゴリ詳細ページ
 
-各カテゴリの詳細ページには、主要な分析情報とサポート指標、および組織の変化を促進するために実行できる、関連する調査とアクションが表示されます。 リサーチは、各カテゴリの主要な分析情報の背後にある重要性と理論的根拠をサポートしています。 詳細については、[Forrester のレポート](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)を参照してください。
+各カテゴリの詳細ページには、主要な分析情報とサポート指標、および組織の変化を促進するために実行できる、関連する調査とアクションが表示されます。 リサーチは、各カテゴリの主要な分析情報の背後にある重要性と理論的根拠をサポートしています。 詳細については、[Forrester のレポート](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb)を参照してください。
 
 詳細ページは次の通りです。
 - [コンテンツの共同作業 – ユーザー エクスペリエンス](content-collaboration.md)

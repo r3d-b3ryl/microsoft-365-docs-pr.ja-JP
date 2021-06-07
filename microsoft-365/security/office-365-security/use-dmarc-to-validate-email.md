@@ -18,12 +18,12 @@ ms.collection:
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、組織から送信されたメッセージを検証する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9beada6e0fb61e503392b0bd379f02bd1c025464
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a92c6ec50fb60d15e027a11163aad6b2186e5304
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538677"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779905"
 ---
 # <a name="use-dmarc-to-validate-email"></a>DMARC を使用してメールを検証する
 
@@ -178,7 +178,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-レコードの作成後には、ドメイン レジストラーでレコードを更新する必要があります。DMARC TXT レコードを Microsoft 365 の DNS レコードに追加する手順の詳細については、「[DNS レコードを管理するときに Microsoft 365 の DNS レコードを作成する](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)」を参照してください。
+レコードの作成後には、ドメイン レジストラーでレコードを更新する必要があります。
 
 ## <a name="dmarc-mail-public-preview-feature"></a>DMARC メール (パブリック プレビュー機能)
 > [!CAUTION]
@@ -256,7 +256,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 すべて、またはほとんどのメールは、最初にプライマリ MX である mail.contoso.com にルーティングされてから、EOP にルーティングされます。 場合によっては、MX レコードとして EOP をリストすることさえなく、単にメールをルーティングするようにコネクタを接続していることもあります。 EOP は、DMARC 検証を行うための最初のエントリである必要はありません。 検証は、オンプレミスまたは O365 以外のすべてのサーバーが DMARC チェックを行うわけではないため、検証だけを行います。  DMARC TXT レコードを設定するときに顧客のドメイン (サーバーではなく) に対して DMARC を強制できますが、実際に強制するのは受信サーバーだけです。  EOP を受信サーバーとして設定すると、EOP は DMARC 強制を行います。
 
-![DMARC のトラブルシューティング グラフィック、Daniel Mande 提供](../../media/Tp_DMARCTroublehoot.png)
+:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="DMARC のトラブルシューティング グラフィック、Daniel Mande 提供" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
 ## <a name="for-more-information"></a>詳細情報
 

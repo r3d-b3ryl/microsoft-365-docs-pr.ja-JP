@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/03/2021
-ms.openlocfilehash: e67f783552cca5cc36c1563f5e5557796028ea18
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.date: 06/04/2021
+ms.openlocfilehash: 264a3b7a4a24c446048d6cfc6863f1ae9765566f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772019"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789185"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -83,6 +83,21 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 - 統合の改善 (クラウド、Microsoft 365 Defender)。
 <br/>
 <details>
+<summary> May-2021 (プラットフォーム: 4.18.2105.4 |エンジン: 1.1.18200.4)</summary>
+
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.341.8.0**  
+&ensp;リリース: **2021 年 6 月 4 日**  
+&ensp;プラットフォーム: **4.18.2105.4**  
+&ensp;エンジン: **1.1.18200.4**  
+&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**
+    
+### <a name="whats-new"></a>新機能
+- 動作監視の改善 
+
+### <a name="known-issues"></a>既知の問題
+既知の問題はありません  
+<br/>
+</details><details>
 <summary> 2021 年 4 月 (プラットフォーム: 4.18.2104.14 |エンジン: 1.1.18100.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.337.2.0**  
@@ -98,9 +113,7 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  
 <br/>
-</details>
-
-<details>
+</details><details>
 <summary> 2021 年 3 月 (プラットフォーム: 4.18.2103.7 |エンジン: 1.1.18000.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.335.36.0**  
@@ -118,14 +131,20 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
+
+新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。 
+<br/><br/>
+<details>
 <summary> 2021 年 2 月 (プラットフォーム: 4.18.2102.3 |エンジン: 1.1.17900.7)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.333.7.0**  
 &ensp;リリース: **2021** 年 3 月 9 日  
 &ensp;プラットフォーム: **4.18.2102.3**  
 &ensp;エンジン: **1.1.17900.7**  
-&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**
+&ensp;サポート フェーズ: **テクニカル アップグレード のサポート (のみ)**
     
 ### <a name="whats-new"></a>新機能
 
@@ -135,13 +154,7 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
-
-新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。 
-<br/><br/>
-<details>
+</details><details>
 <summary> 2021 年 1 月 (プラットフォーム: 4.18.2101.9 |エンジン: 1.1.17800.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.327.1854.0**  

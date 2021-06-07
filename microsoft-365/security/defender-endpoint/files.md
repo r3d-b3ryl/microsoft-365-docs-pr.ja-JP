@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9079a47dcc078b582586370b322502b74ce3838c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c4d392c9c7777a5ab5435d70e36822e11aa39dae
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199983"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771191"
 ---
 # <a name="file-resource-type"></a>ファイル リソースの種類
 
@@ -48,7 +49,7 @@ Defender for Endpoint のファイル エンティティを表します。
 
 
 ## <a name="properties"></a>プロパティ
-|プロパティ | 型    |   説明 |
+|プロパティ | 種類    |   説明 |
 |:---|:---|:---|
 |sha1 | String | ファイル コンテンツの Sha1 ハッシュ |
 |sha256 | String | ファイル コンテンツの Sha256 ハッシュ |

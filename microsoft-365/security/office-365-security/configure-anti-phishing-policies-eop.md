@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、Exchange Online Protection (EOP) 組織で使用できるフィッシング対策ポリシーを作成、変更、および削除する方法について説明します(Exchange Online メールボックスを使用する場合と使用しない場合)。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f074596f0391e98735b07d17390cd058fd6fcafe
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: c329edc517476cfb184bfa4b70c2f2c9542b6e33
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793018"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789065"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -77,7 +77,7 @@ PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理し
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - [**組織の管理の表示のみ**][](/Exchange/permissions-exo/permissions-exo#role-groups)役割グループは、Exchange Online機能への読み取り専用アクセスも提供します <sup>\*</sup> 。
 
-- フィッシング対策ポリシーの推奨設定については、「EOP フィッシング対策ポリシー設定」 [を参照してください](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)。
+- フィッシング対策ポリシーの推奨設定については、「EOP の既定のフィッシング対策 [ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings)。
 
 - 更新されたポリシーを適用するには、最大 30 分かかります。
 
@@ -137,7 +137,7 @@ PowerShell Exchange Onlineでは、ポリシーとルールを個別に管理し
 
    完了したら、**[次へ]** をクリックします。
 
-7. 表示された **[レビュー]** ページで、設定を確認します。 各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 または、[戻る] **をクリック** するか、ウィザードで特定のページを選択します。
+7. 表示された **[レビュー]** ページで、設定を確認します。 各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。
 
    完了したら、[送信] を **クリックします**。
 

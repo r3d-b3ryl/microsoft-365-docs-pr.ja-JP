@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 受け取るアプリケーションとサービスは、購入Microsoft 365製品によって異Microsoft 365 Apps for business。
 ms.date: 07/01/2020
-ms.openlocfilehash: 4e93a84df106475417289da168ca472ed5a07475
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 817ea454bf471fdc2f175658af9030925d29189a
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582730"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779881"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>ビジネス向けサブスクリプションとライセンスMicrosoft 365理解する
 
@@ -67,8 +67,6 @@ ms.locfileid: "52582730"
 - [共有メールボックスを作成する](../../admin/email/create-a-shared-mailbox.md)
 - [共有メールボックスからライセンスを削除する](../../admin/email/remove-license-from-shared-mailbox.md)
 - [他のすべてのプランExchange Online](/exchange/collaboration-exo/shared-mailboxes)共有メールボックスMicrosoft 365します。
-- [会議室メールボックスの作成と管理](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
-- [備品用メールボックスの管理](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
 
 ## <a name="who-can-assign-licenses"></a>Who割り当て可能ですか?
 
@@ -85,6 +83,6 @@ ms.locfileid: "52582730"
 ## <a name="related-content"></a>関連コンテンツ
 
 [ビジネス サブスクリプションのライセンスを購入または削除](buy-licenses.md) する (記事)\
-[ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md) (記事)\
+[ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md)(記事)\
 [ユーザーからライセンスの割り当てを解除する](../../admin/manage/remove-licenses-from-users.md) (記事)\
 [共有メールボックスからライセンスを削除する](../../admin/email/remove-license-from-shared-mailbox.md) (記事)

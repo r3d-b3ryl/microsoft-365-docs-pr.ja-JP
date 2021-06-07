@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: 531281eba6accfb2e1ffdab1e662a03b077869bd
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 63775ed6bab2d595ae87085e1607be5818b355e2
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779760"
+ms.locfileid: "52782489"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -121,7 +121,7 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
 - サポートされているメールボックス - OAuth 対応メールボックスを使用している場合
 
 > [!NOTE]
-> サーバーの全体展開 PowerShell モジュールを使用する場合、多要素認証はサポートされません。
+> サーバーの全体展開 PowerShell モジュールを使用する場合、多要素認証はサポートされません。 モジュールは基本認証でのみ動作します。
   
 ## <a name="user-and-group-assignments"></a>ユーザーとグループの割り当て
 

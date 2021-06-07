@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Microsoft SharePoint Syntex の説明の種類について説明します。
-ms.openlocfilehash: 515fd8af289ec7c64e14eb6d54b236ba3a8aa9f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Microsoft SharePoint Syntex のフレーズ リスト、正規表現、および類似性の説明の種類についてご覧ください。
+ms.openlocfilehash: 8748b2fd33e20cf7e402d499db05f1f6722e735a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706578"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770867"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の説明の種類
 
@@ -114,6 +114,15 @@ ms.locfileid: "52706578"
    テンプレートを使用して正規表現を追加すると、名前と正規表現がテキスト ボックスに自動的に追加されます。 たとえば、[**メール アドレス**] テンプレートを選択すると、[**説明の作成**] パネルが表示されます。
 
    ![[メール アドレス] テンプレートが適用された [説明の作成] パネルを示すスクリーンショット。](../media/content-understanding/create-regular-expression-email.png)
+
+### <a name="limitations"></a>制限事項
+
+次の表は、現在正規表現パターンで使用できないインライン文字オプションを示しています。 
+
+|オプション  |状態  |最新機能  |
+|---------|---------|---------|
+|大文字と小文字の区別 | 現時点ではサポートされていません。 | 実行されるすべての一致では、大文字と小文字が区別されません。  |
+|ライン アンカー     | 現時点ではサポートされていません。 | 一致する必要がある文字列内の特定の位置を指定できません。   |
 
 ## <a name="proximity"></a>類似性 
 

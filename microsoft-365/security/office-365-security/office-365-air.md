@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7632efb2014af9f55e9cad700bceeeabe555fb8b
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696576"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793162"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -78,8 +78,8 @@ Microsoft Defender for Office 365修復アクションは自動的に実行さ�
 ポリシーとアラートが構成されている場合[、AIR 機能](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)Office 365 Microsoft Defender に含まれています。 いくつかのヘルプが必要ですか? 「脅威から保護 [する」のガイダンスに](protect-against-threats.md) 従って、次の保護設定を設定または構成します。
 
 - [監査ログ](../../compliance/turn-audit-log-search-on-or-off.md) (有効にする必要があります)
-- [マルウェア対策ポリシー](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-- [フィッシング対策保護](protect-against-threats.md#part-2---anti-phishing-protection)
+- [マルウェア対策保護](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [フィッシング対策保護](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [スパム対策保護](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [セーフリンクとセーフ添付ファイル](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
@@ -141,7 +141,7 @@ Microsoft Defender で既に AIR 機能を Office 365 に使用している場�
 
 次の表に、Microsoft Defender の AIR に加わる変更と改善点を示Office 365。
 
-|Item|何が変わるのか?|
+|項目|何が変わるのか?|
 |---|---|
 |**[調査]** ページ|更新された [ **調査] ページ** は、Microsoft Defender for Endpoint に表示 [される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
 |**[ユーザー]** タブ|[ **ユーザー]** タブが [ **メールボックス] タブ** です。ユーザーに関する詳細は、[メールボックス] タブ **に表示** されます。|

@@ -1,7 +1,7 @@
 ---
 title: アクション センターに移動して、自動化された調査および修復タスクを表示および承認する
-description: アクション センターを使用して、自動化された調査の詳細を表示し、保留中のアクションを承認する
-keywords: アクション センター、脅威の防止、調査、アラート、保留、自動化、検出
+description: アクション センターを使用して、自動調査の詳細を表示し、保留中のアクションを承認する
+keywords: アクション センター、脅威保護、調査、アラート、保留中、自動化、検出
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 7bea9a1632e7a9ed9d394c2c411123d0601a9397
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: df3ea2d4df0b7a5bedbbabf19e97d4fddc4c2646
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274582"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782983"
 ---
 # <a name="the-action-center"></a>アクション センター
 
@@ -49,10 +49,10 @@ ms.locfileid: "52274582"
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Microsoft 365 Defender の統合アクション センター":::
 
-以下に例を示します。 
+例: 
 
 - 以前にコンプライアンス センター ( ) Office 365 セキュリティ &を使用していた場合は、セキュリティ センター ( ) の統合アクション センター Microsoft 365 [https://protection.office.com](https://protection.office.com) してみてください [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
-- [アクション センター] () でアクション センターを使用Microsoft Defender セキュリティ センター、セキュリティ センター ( ) の統合アクション センターを [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Microsoft 365してください [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
+- [アクション センター] () でアクション センターを使用Microsoft Defender セキュリティ センター、セキュリティ センター ( ) の統合アクション センター Microsoft 365 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) してみてください [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
 - セキュリティ センター ( ) をMicrosoft 365している場合は、アクション センター ( ) にいくつかの [https://security.microsoft.com](https://security.microsoft.com) 機能強化が表示されます [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。
 
 統合アクション センターでは、エンドポイント用の Defender と Defender の修復アクションが統合され、Office 365。 すべての修復アクションの共通言語を定義し、統合された調査エクスペリエンスを提供します。 セキュリティ運用チームには、修復アクションを表示および管理するための"単一のガラス枠" エクスペリエンスがあります。  

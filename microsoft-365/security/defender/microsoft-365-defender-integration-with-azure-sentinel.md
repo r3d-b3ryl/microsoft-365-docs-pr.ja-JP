@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b5a53131733d1c7c539676c1d45abe7eabbe2de7
-ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
+ms.openlocfilehash: 7d9cff584f35c39544034501c607b7156a0f1bf2
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52707339"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782923"
 ---
 # <a name="microsoft-365-defender-integration-with-azure-sentinel"></a>Microsoft 365Defender と Azure Sentinel の統合
 
@@ -48,7 +48,7 @@ Azure Sentinel では、インシデントは Microsoft 365 Defender と双方�
 
 ## <a name="next-steps"></a>次の手順
 
-1. Defender と[Azure Sentinel との統合Microsoft 365理解を深める](/azure/sentinel/microsoft-365-defender-sentinel-integration)。
+1. Defender と Azure [Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)との統合Microsoft 365理解を深める。
 2. [Connect Defender から Azure Sentinel Microsoft 365データを取得します](/azure/sentinel/connect-microsoft-365-defender)。
 
 ## <a name="see-also"></a>関連項目

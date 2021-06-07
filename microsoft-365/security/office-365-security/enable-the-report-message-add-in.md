@@ -17,12 +17,12 @@ ms.collection:
 description: Web 上の Outlook および Outlook、個々のユーザー、または組織全体に対して、レポート メッセージまたはレポート フィッシング アドインを有効にする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc54c5b74697ac41a1d4ff0818467dba662b31f5
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 25c4f7d67fd4fa876544a17df0f4bc1abfd7b3e7
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295821"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782935"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>レポート メッセージまたはレポートフィッシング アドインを有効にする
 
@@ -48,9 +48,9 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 個々のユーザーの場合は、両方のアドインを自分で有効にできます。
 
-f グローバル管理者または Exchange Online 管理者であり、Exchange が OAuth 認証を使用するように構成されている場合は、組織のレポート メッセージ アドインとレポート フィッシング アドインを有効にできます。 どちらのアドインも、集中展開を [通じて利用できます](../../admin/manage/centralized-deployment-of-add-ins.md)。
+グローバル管理者または Exchange Online 管理者で、Exchange が OAuth 認証を使用するように構成されている場合は、組織のレポート メッセージ アドインとレポート フィッシング アドインを有効にできます。 どちらのアドインも、集中展開を [通じて利用できます](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>事前に必要な知識
 
 - レポート メッセージ アドインとレポート フィッシング アドインの両方が、ほとんどのサブスクリプションおよびMicrosoft 365製品で動作します。
 

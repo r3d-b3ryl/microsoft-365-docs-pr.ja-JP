@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 62a917b36355335c8eb52d83caecdbba691f8175
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242134"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770980"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの Microsoft Defender for Office 365
 
@@ -33,7 +33,33 @@ ms.locfileid: "52242134"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-[https://security.microsoft.com](https://security.microsoft.com) で強化された[Microsoft 365 セキュリティ センター](./overview-security-center.md) は、Microsoft Defender セキュリティ センターや Office 365 セキュリティ/コンプライアンス センターなどの既存の Microsoft セキュリティ ポータルのセキュリティ機能を組み合わせた製品です。 この強化されたセンターは、セキュリティ チームが脅威から組織を効果的かつ効率的に保護するのに役立ちます。
+## <a name="quick-reference"></a>クイック リファレンス
+
+次の図と表に、コンプライアンス センターとセキュリティ センター Office 365セキュリティ センター&ナビゲーションMicrosoft 365示します。
+
+> [!div class="mx-imgBorder"]
+> ![移動先のイメージ](../../media/mdo-m3d-security-center.png)
+
+<br>
+
+****
+
+|Office 365 セキュリティ/コンプライアンス|Microsoft 365 セキュリティ センター|Microsoft 365 コンプライアンス センター|Exchange 管理センター|
+|---|---|---|---|
+|アラート|メールと共同作業|||
+|分類||コンプライアンス[センター Microsoft 365する](https://compliance.microsoft.com/homepage)||
+|データ損失防止||コンプライアンス[センター Microsoft 365する](https://compliance.microsoft.com/homepage)||
+|レコード管理||コンプライアンス[センター Microsoft 365する](https://compliance.microsoft.com/homepage) ||
+|情報ガバナンス||コンプライアンス[センター Microsoft 365する](https://compliance.microsoft.com/homepage)||
+|脅威の管理|メールと共同作業|||
+|メール フロー|||「[管理Exchange」を参照してください。](https://admin.exchange.microsoft.com/#/)|
+|データのプライバシー||コンプライアンス[センター Microsoft 365する](https://compliance.microsoft.com/homepage)||
+|検索|検索|||
+|レポート|レポート|||
+|サービス アシュアランス|Settings|||
+|
+
+<https://security.microsoft.com> で強化された[Microsoft 365 セキュリティ センター](./overview-security-center.md) は、Microsoft Defender セキュリティ センターや Office 365 セキュリティ/コンプライアンス センターなどの既存の Microsoft セキュリティ ポータルのセキュリティ機能を組み合わせた製品です。 この強化されたセンターは、セキュリティ チームが脅威から組織を効果的かつ効率的に保護するのに役立ちます。
 
 この記事では、Office 365 セキュリティ/コンプライアンス ポータル (protection.office.com) を使い慣れたユーザーに、Microsoft 365 セキュリティ センターで行った変更と改善点について説明します。
 
@@ -69,7 +95,7 @@ ms.locfileid: "52242134"
 また、この記事の下にある **関連情報** セクションを確認します。
 
 > [!IMPORTANT]
-> Microsoft 365 セキュリティ ポータル (https://security.microsoft.com) は、https://securitycenter.windows.comとhttps://protection.office.comにあるキュリティ機能を組合わせています。 ただし、表示される内容はサブスクリプションによって異なります。 たとえば、Microsoft Defender for Office 365 Plan 1 または 2 をスタンドアロン サブスクリプションとしてお持ちの場合、Security for Endpoints 関連の機能は表示されません。また Defender for Office Plan 1 のお客様の場合、Threat Analytics などのアイテムは表示されません。
+> [Microsoft 365 セキュリティ ポータル ( <https://security.microsoft.com> ) は、 および でセキュリティ機能 <https://securitycenter.windows.com> を組み合わせたものになります <https://protection.office.com> 。 ただし、表示される内容はサブスクリプションによって異なります。 たとえば、Microsoft Defender for Office 365 Plan 1 または 2 をスタンドアロン サブスクリプションとしてお持ちの場合、Security for Endpoints 関連の機能は表示されません。また Defender for Office Plan 1 のお客様の場合、Threat Analytics などのアイテムは表示されません。
 
 > [!TIP]
 > EOP は Exchange Online Protectionの Defender のコア要素であるMicrosoft 365セキュリティ センターに含まれるすべてのOffice 365。
@@ -147,15 +173,15 @@ ms.locfileid: "52242134"
 
 [Microsoft Defender for Office 365の記事](/microsoft-365/security/office-365-security/defender-for-office-365)の「[使用を開始する](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started)」セクションには、次のような論理的な早期構成用の単位があります。
 
-1. 名前に "anti (対策)" を使用してすべてを構成します。
+1. 名前に 'Anti' を含むすべてを構成します。
    - マルウェア対策
-   - フィッシング詐欺対策
+   - フィッシング対策
    - スパム対策
-2. 名前に "安全" を使用してすべてを設定します。
+2. 名前に 'セーフ' を含むすべてを設定します。
    - 安全なリンク
    - 安全な添付ファイル
-3. ワークロードを保護する (例: OSharePoint Online、OneDrive と Teams)
-4. ゼロアワー自動消去を使用して保護する
+3. ワークロードを保護する (例: SharePointオンライン、OneDrive、およびTeams)。
+4. 0 時間自動削除で保護します。
 
 [リンク](../office-365-security/protect-against-threats.md)をクリックすると、一気にジャンプして、第 1 日目から使用できる構成を入手できます。
 
@@ -181,7 +207,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="[クエリ] パネルの上部で [クエリ] が選択された状態で [高度な検出] ページ ([検出] の下) で、過去 7 日間の ZAP アクションをキャプチャするために、Kusto クエリを実行中。":::
+:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="クエリ パネルの上部で [クエリ] を選択し、過去 7 日間の ZAP アクションをキャプチャするために Kusto クエリを実行した [高度な検索] ページ ([ハンティング] の下)。":::
 
 このクエリのデータは、クエリ自体の下の結果パネルに表示されます。 結果には、カスタマイズ可能な結果セットに 'DeviceName', 'AccountDisplayName'、および 'ZapTime' が含まれています。 ユーザーの記録用に、結果をエクスポートすることもできます。 クエリがもう一度必要な場合は、**[保存する]** > **[以下の名前で保存する]** の順に選択し、クエリ、共有クエリ、またはコミュニティ クエリの一覧にそのクエリを追加します。
 

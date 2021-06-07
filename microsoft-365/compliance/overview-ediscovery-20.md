@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 description: 詳細については、Advanced eDiscoveryのソリューションMicrosoft 365。 この記事では、内部および外部Advanced eDiscovery Microsoft 365を管理するためのツールである、Microsoft 365の概要を説明します。 また、法的調査を管理するために、Advanced eDiscoveryを使用するビジネス上の理由も枠に入ります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16d18d04c0bb45f0a9328dcebae866c16a575812
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ec5ea7b32abb03edd31ab69abc7b8d3044b1d353
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860966"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782791"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概要 Microsoft 365 Advanced eDiscovery
 
-このAdvanced eDiscoveryソリューションMicrosoft 365既存の Microsoft 電子情報開示と分析機能に基付けされています。 Advanced eDiscoveryは、組織の内部および外部調査に対応するコンテンツを保存、収集、分析、レビュー、分析、エクスポートするためのエンドツーエンドのワークフローを提供します。 また、法務チームが法的ホールド通知ワークフロー全体を管理して、ケースに関係する保管担当者と通信できます。
+このAdvanced eDiscoveryソリューションMicrosoft 365既存の Microsoft 電子情報開示と分析機能に基付けされています。 Advanced eDiscoveryは、組織の内部および外部調査に対応するコンテンツを保存、収集、分析、レビュー、エクスポートするためのエンドツーエンドのワークフローを提供します。 また、法務チームが法的ホールド通知ワークフロー全体を管理して、ケースに関係する保管担当者と通信できます。
 
 ## <a name="advanced-ediscovery-capabilities"></a>Advanced eDiscovery機能
 

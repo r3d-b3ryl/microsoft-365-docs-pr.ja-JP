@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63e38d5c9cfe50d1fa4cda1f7ae9c7df55a45083
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 61c7c8022ed89a4d10e5737e2dcdf92a4375bedd
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788837"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770411"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>サポート対象 Microsoft Defender for Endpoint API
 
@@ -62,7 +62,7 @@ API 呼び出しを実行できる個々のサポートされるエンティテ�
 :---|:---
 [高度な追求](run-advanced-query-api.md) | API からクエリを実行します。
 [アラート メソッドとプロパティ](alerts.md) | アラートの取得、アラートの作成、アラートの更新などの API \- 呼び出しを実行します。
-[デバイスごとの評価方法とプロパティのエクスポート](get-assessment-methods-properties.md) | 安全な構成評価のエクスポート、ソフトウェア インベントリ評価のエクスポート、ソフトウェアの脆弱性評価のエクスポートなどの API \- 呼び出しを実行します。
+[デバイスごとの評価方法とプロパティのエクスポート](get-assessmnt-1methods-properties.md) | 安全な構成評価のエクスポート、ソフトウェア インベントリ評価のエクスポート、ソフトウェアの脆弱性評価のエクスポートなどの API \- 呼び出しを実行します。
 [自動調査の方法とプロパティ](investigation.md) | 調査のコレクションを取得する \- などの API 呼び出しを実行します。
 [ドメイン関連のアラートを取得する](get-domain-related-alerts.md) | ドメイン関連デバイスの取得、ドメイン統計などの API 呼び出 \- しを実行します。
 [ファイル メソッドとプロパティ](files.md) | ファイル情報の取得、ファイル関連の通知、ファイル関連デバイス、ファイル統計などの API 呼び出し \- を実行します。

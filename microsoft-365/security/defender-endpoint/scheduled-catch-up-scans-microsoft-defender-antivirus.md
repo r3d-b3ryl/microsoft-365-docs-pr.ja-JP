@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 1748a33be2c27123eb0437784dcdb2cb7905616a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f1344026878b7fbd6242d82b1afb0e6671c32073
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274690"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789270"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>スケジュールされたクイックまたは完全な Microsoft Defender ウイルス スキャンを構成する
 
@@ -73,8 +73,8 @@ ms.locfileid: "52274690"
 |シナリオ  |推奨されるスキャンの種類  |
 |---------|---------|
 |定期的なスケジュールされたスキャンを設定する     | クイック スキャン <p>クイック スキャンは、デバイス上のプロセス、メモリ、プロファイル、および特定の場所をチェックします。 常時オン [のリアルタイム保護と](configure-real-time-protection-microsoft-defender-antivirus.md)組み合わせると、クイック スキャンによって、システムから始まるマルウェアとカーネル レベルのマルウェアの両方に強力な範囲を提供できます。 リアルタイム保護は、ファイルを開いて閉じたときに、およびユーザーがフォルダーに移動するたびに、ファイルを確認します。         |
-|マルウェアなどの脅威がデバイスで検出される     | フル スキャン <p>完全スキャンは、より完全なクリーンアップを必要とする非アクティブなコンポーネントが含されているかどうかを特定するのに役立ちます。         |
-|オンデマンド スキャンを [実行する](run-scan-microsoft-defender-antivirus.md)     | フル スキャン  <p>フル スキャンでは、デバイス ディスク上のすべてのファイル (古いファイル、アーカイブ済みファイル、毎日アクセスされていないファイルなど) が検索されます。      |
+|マルウェアなどの脅威が個々のデバイスで検出される     | クイック スキャン <p>ほとんどの場合、クイック スキャンは検出されたマルウェアをキャッチしてクリーンアップします。   |
+|オンデマンド スキャンを [実行する](run-scan-microsoft-defender-antivirus.md)     | クイック スキャン       |
 | USB ドライブなどのポータブル デバイスにマルウェアが含まれているのを確認する | カスタム スキャン <p>カスタム スキャンを使用すると、特定の場所、フォルダー、またはファイルを選択し、クイック スキャンを実行できます。 |
 
 ### <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>クイック スキャンとフル スキャンについて他に何を知る必要がありますか?
@@ -98,7 +98,7 @@ ms.locfileid: "52274690"
 
 ### <a name="use-group-policy-to-schedule-scans"></a>グループ ポリシーを使用してスキャンをスケジュールする
 
-|場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
+|Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 |スキャン | スケジュールされたスキャンに使用するスキャンの種類を指定する | クイック スキャン |
 |スキャン | スケジュールされたスキャンを実行する週の日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
@@ -143,7 +143,7 @@ RandomizeScheduleTaskTimes
 
 ### <a name="use-group-policy-to-schedule-scans"></a>グループ ポリシーを使用してスキャンをスケジュールする
 
-|場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
+|Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 |スキャン | コンピューターがオンで、使用されていない場合にのみ、スケジュールされたスキャンを開始する | コンピューターがオンで使用されていない場合、スケジュールされたスキャンは実行されません。 | Enabled |
 
@@ -174,7 +174,7 @@ API と許可パラメーターの詳細については[、「WMIv2 API](/previo
 
 ### <a name="use-group-policy-to-schedule-remediation-required-scans"></a>グループ ポリシーを使用して修復に必要なスキャンをスケジュールする
 
-| 場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
+| Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
 |---|---|---|---|
 |修復 | スケジュールされたフル スキャンを実行して修復を完了する日を指定する | スキャンを実行する日 (または実行しない) を指定します。 | Never |
 |修復 | スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
@@ -208,7 +208,7 @@ RemediationScheduleTime
 
 ### <a name="use-group-policy-to-schedule-daily-scans"></a>グループ ポリシーを使用して毎日のスキャンをスケジュールする
 
-|場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
+|Location | 設定 | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|
 |スキャン | 1 日あたりのクイック スキャンを実行する間隔を指定する | 次のクイック スキャンの前に経過する時間を指定します。 たとえば、2 時間ごとに実行するには **、「2」と入力し、1** 日 1 回は **24 と入力します**。 **0 と入力** すると、毎日のクイック スキャンは実行されません。 | Never |
 |スキャン | 毎日のクイック スキャンの時間を指定する | 午前 0 時以降の分数を指定します (たとえば、 **午前 1 時に 60** と入力します)。 | 2 a.m. |
@@ -240,7 +240,7 @@ ScanScheduleQuickScanTime
 
 ### <a name="use-group-policy-to-schedule-scans-after-protection-updates"></a>グループ ポリシーを使用して保護の更新後にスキャンをスケジュールする
 
-|場所 | Setting | 説明 | 既定の設定 (構成されていない場合)|
+|Location | 設定 | 説明 | 既定の設定 (構成されていない場合)|
 |:---|:---|:---|:---|
 |署名の更新 | セキュリティ インテリジェンスの更新後にスキャンを有効にする | 新しい保護更新プログラムがダウンロードされた直後にスキャンが実行されます | Enabled |
 

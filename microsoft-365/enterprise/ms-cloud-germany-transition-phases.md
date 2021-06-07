@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: df2407deeaa3cd6e0b0925b48f888a25c0435042
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 6778248b127894102d15d4d94e3d2f099e3bfa37
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651114"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771203"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -36,7 +36,7 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 Global サー�
 > [!NOTE]
 > Azure サービスの移行は、このドキュメントの一部ではありません。 その情報については [、「Azure Germany の移行ガイダンス」を参照してください](/azure/germany/germany-migration-main)。
 
-|手順|Duration|責任ある当事者|説明|
+|手順|期間|責任ある当事者|説明|
 |:--------|:--------|:--------|:--------|
 |Opt-In|時間|顧客|組織に移行を選択します。|
 |プレワーク|Days|顧客|ユーザー、ワークステーション、およびネットワークを移行用に準備するために必要な作業を完了します。|
@@ -80,7 +80,7 @@ Microsoft Cloud Deutschland インスタンスで Office 365 および Azure に
 
 **適用時**: フェーズ 2 が開始される前
 
-Active Directory フェデレーション サービス (AD FS) を使用している場合は、フェーズ 2 の開始前に、Office 365 Global サービスの証明書利用者信頼を追加する前と後に[、ADFS](ms-cloud-germany-transition-azure-ad.md)構成をバックアップしてください。
+Active Directory フェデレーション サービス (AD FS) を使用している場合は、フェーズ 2 の開始前に、Office 365 Global サービスの証明書利用者信頼を追加する前と後に[、ADFS](ms-cloud-germany-transition-add-adfs.md)構成をバックアップしてください。
 
 ## <a name="phase-2-azure-ad-migration"></a>フェーズ 2: Azure AD移行
 このフェーズでは、Azure Active Directory新しいデータセンター領域に移行され、アクティブになります。 古い Azure ADエンドポイントは引き続き使用できます。

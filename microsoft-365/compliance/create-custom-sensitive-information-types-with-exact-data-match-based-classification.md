@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c6db9df115020902b80328a341606cca2b1c735
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b729cb8a4c30ec13e22f36f9721cb55ecc93942d
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769463"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779869"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -377,7 +377,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 > 完全一致スキーマと機密情報の種類ウィザードを使用してスキーマ ファイルおよびパターン ファイルの作成する場合、この手順のスキーマをダウンロードする ***必要があります***。
 
 > [!NOTE]
-> 組織が[テナント レベル (パブリック プレビュー) で Microsoft 365 のカスタマー キー](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview)を設定している場合、完全一致では暗号化機能が自動的に使用されます。 この機能を利用できるのは、商用クラウド内の E5 ライセンスが割り当てられたテナントのみです。
+> 組織がテナント レベルで[](customer-key-overview.md)顧客キーをMicrosoft 365場合、完全なデータ一致は暗号化機能を自動的に利用します。 この機能を利用できるのは、商用クラウド内の E5 ライセンスが割り当てられたテナントのみです。
 
 #### <a name="prerequisites"></a>前提条件
 

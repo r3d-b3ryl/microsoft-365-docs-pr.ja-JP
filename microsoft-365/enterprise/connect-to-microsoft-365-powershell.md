@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Microsoft 365 テナントに接続するには、Microsoft 365 用 PowerShell を使用して、コマンド ラインから管理センターのタスクを実行します。
-ms.openlocfilehash: 08005ba1cbdcbfec14585d22614129a9b33352b9
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 70d6aa1373daf2322319d21e385fc1498af3351e
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445758"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782803"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>PowerShell を使用して Microsoft 365 に接続する
 
@@ -35,14 +35,14 @@ Microsoft 365 および管理者のユーザー アカウント、グループ�
 - コマンドレット名に *AzureAD* が含まれる Graph 用 Azure Active Directory PowerShell
 - コマンドレット名に *Msol* が含まれる Windows PowerShell 用 Microsoft Azure Active Directory モジュール
 
-現時点で、Graph 用 Azure Active Directory PowerShell モジュールは、ユーザー、グループ、およびライセンスの管理について Windows PowerShell 用 Microsoft Azure Active Directory モジュールの機能に完全に置き換わるものではありません。 場合によっては、両方のバージョンを使用する必要があります。 両バージョンを同じコンピューターに安全にインストールすることができます。
+現時点で、Graph 用 Azure Active Directory PowerShell モジュールは、ユーザー、グループ、およびライセンスの管理について Windows PowerShell 用 Microsoft Azure Active Directory モジュールの機能に完全に置き換わるものではありません。時には、両方のバージョンを使用する必要があります。同じコンピューターに両方のバージョンを安全にインストールできます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 
 **オペレーティング システム**
 
-64 ビット版の Windows を使用する必要があります。 Microsoft PowerShell 用 Microsoft Azure Active Directory モジュール の 32 ビット 版のサポートは、2014 年で終了しました。
+64 ビット バージョンの Windows を使用する必要があります。Windows PowerShell 用の Microsoft Azure Active Directory モジュールの 32 ビット バージョンのサポートは 2014 年に終了しました。
 
 次の Windows のバージョンを使用できます。
     
@@ -57,7 +57,7 @@ Microsoft 365 および管理者のユーザー アカウント、グループ�
 
 - Graph 用 Azure Active Directory PowerShell モジュールでは、PowerShell バージョン 5.1 以降を使用する必要があります。
 
-- Windows PowerShell 用 Microsoft Azure Active Directory モジュールでは、PowerShell バージョン 5.1 から PowerShell バージョン 6 までを使用する必要があります。 PowerShell バージョン 7 は使用できません。
+- Windows PowerShell 用 Microsoft Azure Active Directory モジュールでは、PowerShell バージョン 5.1 から PowerShell バージョン 6 までを使用する必要があります。PowerShell バージョン 7 は使用できません。
        
 >[!Note]
 >これらの手順は、Microsoft 365 の管理者の役割を持つユーザーを対象としています。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
@@ -101,7 +101,7 @@ Are you sure you want to install the modules from 'PSGallery'?
 
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>手順 2: Microsoft 365 サブスクリプション用の Azure AD に接続する
 
-アカウント名とパスワードまたは多要素認証を使用して Microsoft 365 サブスクリプション用の Azure Active Directory (Azure AD) に接続するには、Windows PowerShell コマンド プロンプトから次のいずれかのコマンドを実行します。 (昇格する必要はありません。)
+アカウント名とパスワードまたは多要素認証 (MFA) を使用して Microsoft 365 サブスクリプション用の Azure Active Directory (Azure AD) に接続するには、Windows PowerShell コマンド プロンプトから次のいずれかのコマンドを実行します (昇格する必要はありません)。
 
 | Office 365 のクラウド | コマンド |
 |:-------|:-----|
@@ -130,7 +130,7 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
 
 これらの手順は、お使いのコンピューターで一度だけ行う必要があります。 ただし、定期的にソフトウェアを更新する必要があります。
   
-1.  Windows 10を実行中でない場合は、Microsoft Online Services サインイン アシスタントの 64 ビット版をインストールします: [IT プロフェッショナル用 Microsoft Online Services サインイン アシスタント RTW](https://www.microsoft.com/Download/details.aspx?id=28177)。
+1.  Windows 10を実行中でない場合は、Microsoft Online Services サインイン アシスタントの 64 ビット版をインストールします: [IT プロフェッショナル用 Microsoft Online Services サインイン アシスタント RTW](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)。
     
 2. 以下の手順に従って、Windows PowerShell の Microsoft Azure Active Directory モジュールをインストールします。
     
@@ -141,7 +141,7 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
     
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>手順 2: Microsoft 365 サブスクリプション用の Azure AD に接続する
 
-アカウント名とパスワードまたは多要素認証を使用して Microsoft 365 サブスクリプション用の Azure AD に接続するには、Windows PowerShell コマンド プロンプトから次のいずれかのコマンドを実行します。 (昇格する必要はありません。)
+アカウント名とパスワードまたは多要素認証 (MFA) を使用して Microsoft 365 サブスクリプション用の Azure AD に接続するには、Windows PowerShell コマンド プロンプトから次のいずれかのコマンドを実行します (昇格する必要はありません)。
 
 | Office 365 のクラウド | コマンド |
 |:-------|:-----|

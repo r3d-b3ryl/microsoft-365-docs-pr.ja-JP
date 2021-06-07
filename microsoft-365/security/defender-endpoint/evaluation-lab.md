@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6ef1d3dbc111e5d10bf4d3c42dfd08e5e9d63e3
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: c785dbb759afe77b14f41985b9f451a4ec52e29f
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730631"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778235"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評価ラボ
 
@@ -118,17 +118,17 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 次のセキュリティ コンポーネントは、テスト デバイスで事前に構成されています。
 
-- [攻撃面の減少](attack-surface-reduction.md)
-- [一目でブロックする](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [制御されたフォルダー アクセス](controlled-folders.md)
-- [エクスプロイト保護](enable-exploit-protection.md)
-- [ネットワーク保護](network-protection.md)
-- [望ましくない可能性のあるアプリケーションの検出](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-- [クラウドによる保護](cloud-protection-microsoft-defender-antivirus.md)
-- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+- [攻撃面の減少](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [一目でブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [制御されたフォルダー アクセス](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [エクスプロイト保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [ネットワーク保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
+- [望ましくない可能性のあるアプリケーションの検出](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
+- [クラウドによる保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender ウイルス対策オンになります (監査モードではありません)。 シミュレーションMicrosoft Defender ウイルス対策ブロックする場合は、デバイスでリアルタイム保護をオフWindows セキュリティ。 詳細については、「Configure [always-on protection」を参照してください](configure-real-time-protection-microsoft-defender-antivirus.md)。
+> Microsoft Defender ウイルス対策オンになります (監査モードではありません)。 シミュレーションMicrosoft Defender ウイルス対策ブロックする場合は、デバイスでリアルタイム保護をオフWindows セキュリティ。 詳細については、「Configure [always-on protection」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
 自動調査の設定は、テナントの設定に依存します。 既定では半自動で構成されます。 詳細については、「自動調査 [の概要」を参照してください](automated-investigations.md)。
 
@@ -190,7 +190,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 - ["Do It Yourself" 攻撃のシナリオ](https://securitycenter.windows.com/tutorials)
 - 脅威シミュレーター
 
-高度な検索を使用[してデータ](advanced-hunting-overview.md)をクエリし[](threat-analytics.md)、脅威分析を使用して、新たな脅威に関するレポートを表示することもできます。
+高度な検索を使用[してデータ](advanced-hunting-query-language.md)をクエリし[](threat-analytics.md)、脅威分析を使用して、新たな脅威に関するレポートを表示することもできます。
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Do-it-yourself 攻撃のシナリオ
 事前に作成されたシミュレーションを探している場合は、"Do It [Yourself" 攻撃シナリオを使用できます](https://securitycenter.windows.com/tutorials)。 これらのスクリプトは安全で文書化され、使いやすいです。 これらのシナリオは、Defender for Endpoint の機能を反映し、調査のエクスペリエンスについて説明します。

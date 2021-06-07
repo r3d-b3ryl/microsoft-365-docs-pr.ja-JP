@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理者は、ランサムウェア攻撃から回復する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 242a4a2f43bd91d75caeaeaa0488f23a5ba4319d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 473591a02b78043153d505dda6dd7ef5ac6e3961
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205763"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789053"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>ユーザーのランサムウェア攻撃から回復Microsoft 365
 
@@ -89,7 +89,7 @@ ms.locfileid: "51205763"
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>手順 5: ファイルを復元する方法OneDrive for Business
 
-[ファイルの復元] OneDrive for Businessを使用すると、過去 30 日以内OneDrive以前の時点に復元できます。 詳細については、「Restore [your OneDrive」 を参照してください](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
+[ファイルの復元] OneDrive for Businessを使用すると、過去 30 日以内OneDrive以前の時点に復元できます。 詳細については、「[OneDrive を復元する](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)」を参照してください。
 
 ## <a name="step-6-recover-deleted-email"></a>手順 6: 削除されたメールを復元する
 
@@ -128,6 +128,8 @@ ms.locfileid: "51205763"
 - アイルランド: [ガルダ Síochána](http://www.garda.ie/)
 
 - ニュージーランド: [消費者問題詐欺](http://www.consumeraffairs.govt.nz/scams)
+
+- スイス [ナナレス Zentrum für Cybersicherheit NCSC](https://www.ncsc.admin.ch/ncsc/de/home.html)
 
 - 英国: [アクション詐欺](http://www.actionfraud.police.uk/)
 

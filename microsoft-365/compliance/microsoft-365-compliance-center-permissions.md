@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: コンプライアンス センターでのアクセス許可の管理についてMicrosoft 365します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 72575fce5f7d43354715c77016a8f444e539887f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7038863c0cbcaf99cf07072445a3b001e7b8ca0b
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772484"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782851"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>コンプライアンス センター Microsoft 365アクセス許可
 
@@ -26,7 +26,7 @@ Microsoft 365 コンプライアンスセンターの [アクセス許可] タ�
 
 ![コンプライアンス センターのMicrosoft 365ページ](../media/m365-compliance-center-permissions.png)
 
-コンプライアンス センター Microsoft 365アクセス許可は、役割ベースのアクセス制御 (RBAC) アクセス許可モデルに基づいて行います。 RBAC は、ほとんどの Microsoft 365 サービスで使用されるのと同じアクセス許可モデルなので、これらのサービスのアクセス許可構造に精通している場合は、Microsoft 365 コンプライアンス センターでアクセス許可を付与する方法が分かっています。 Microsoft 365 コンプライアンス センターで管理されるアクセス許可は、個々のサービスで必要なすべてのアクセス許可の管理をカバーしているという点に注意することが重要です。 特定のサービスの管理センターで特定のサービス固有のアクセス許可を管理する必要があります。 たとえば、アーカイブ、監査、および保持ポリシーのアクセス許可を割り当てる必要がある場合は、Exchange 管理センターでこれらのアクセス許可を管理する必要があります。
+コンプライアンス センター Microsoft 365アクセス許可は、役割ベースのアクセス制御 (RBAC) アクセス許可モデルに基づいて行います。 RBAC は、ほとんどの Microsoft 365 サービスで使用されるのと同じアクセス許可モデルなので、これらのサービスのアクセス許可構造に精通している場合は、Microsoft 365 コンプライアンス センターでアクセス許可を付与する方法が分かっています。 Microsoft 365 コンプライアンス センターで管理されるアクセス許可は、個々のサービスで必要なすべてのアクセス許可の管理をカバーしているという点に注意することが重要です。 特定のサービスの管理センターで特定のサービス固有のアクセス許可を管理する必要があります。 たとえば、アーカイブ、監査、および MRM 保持ポリシーのアクセス許可を割り当てる必要がある場合は、Exchange 管理センターでこれらのアクセス許可を管理する必要があります。
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>メンバー、役割、役割グループの関係
 
@@ -55,8 +55,8 @@ Microsoft 365 コンプライアンス センターで使用可能なすべて�
 |**セキュリティ閲覧者**|このロールを持つユーザーは、Microsoft 365 のユーザー、デバイス、コンテンツに対するアクティブな脅威を表示、調査ができますが、セキュリティ オペレーターとは異なり、アクションを実行するアクセス許可はありません。 詳細については、「[セキュリティ 閲覧者](/azure/active-directory/roles/permissions-reference#security-reader)」を参照してください。|
 |**セキュリティ管理者**|このロールを持つユーザーは、セキュリティ ポリシーを管理し、Microsoft 365 製品全体のセキュリティ分析とレポートを確認し、脅威の情勢を十分に把握し迅速に対処して、組織の全体的なセキュリティを制御します。 詳細については、「[セキュリティ 管理者](/azure/active-directory/roles/permissions-reference#security-administrator)」を参照してください。|
 |**グローバル閲覧者**|読み取り専用バージョンの **グローバル閲覧者** のロール。 Microsoft 365 のすべての設定と管理情報を表示します。 詳細については、「[グローバル閲覧者](/azure/active-directory/roles/permissions-reference#global-reader)」を参照してください。|
-|**攻撃シミュレーション管理者**|攻撃シミュレーションの作成、シミュレーションの起動/スケジュール設定、シミュレーション結果のレビューのすべての側面を作成および管理します。 詳細については、「Attack [Simulation Administrator」を参照してください](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)。|
-|**攻撃ペイロードの作成者**|攻撃ペイロードを作成しますが、実際には起動またはスケジュールを設定しません。 詳細については、「Attack [Payload Author」を参照してください](/azure/active-directory/roles/permissions-reference#attack-payload-author)。|
+|**攻撃のシミュレーションの管理者**|攻撃シミュレーションの作成、シミュレーションの開始/スケジューリング、シミュレーション結果の確認のすべての側面を作成および管理します。 詳細については、「[攻撃のシミュレーションの管理者](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)」を参照してください。|
+|**攻撃のペイロードの作成者**|攻撃のペイロードを作成しますが、実際に起動することやスケジュールすることはしません。 詳細については、「[攻撃のペイロードの作成者](/azure/active-directory/roles/permissions-reference#attack-payload-author)」を参照してください。|
 |
 
 ## <a name="add-users-to-a-compliance-role-group"></a>コンプライアンス 役割グループにユーザーを追加する

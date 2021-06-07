@@ -18,12 +18,12 @@ ms.collection:
 description: 管理者は、構成アナライザーを使用して、標準保護と厳密な保護の事前設定されたセキュリティ ポリシーの下にあるセキュリティ ポリシーを見つけて修正する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd0cf4f3194a7a8eec39f2d0c447dca2dae5948b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0d2ad1449730f392adc27c8ed2a8fc8e9ecc7a04
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537933"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789318"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP および Microsoft Defender の保護ポリシー用の構成Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "52537933"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-セキュリティ & コンプライアンス センターの構成アナライザーは、設定が事前設定されたセキュリティ ポリシーの標準保護および厳密な保護プロファイル設定の下にあるセキュリティ ポリシーを見つけて修正するための中心的な場所を [提供します](preset-security-policies.md)。
+Microsoft 365 セキュリティ センターの構成アナライザーは、設定が事前設定されたセキュリティ ポリシーの標準保護および厳密な保護プロファイル設定の下にあるセキュリティ ポリシーを見つけて修正するための中心的な場所を[提供します](preset-security-policies.md)。
 
 次の種類のポリシーは、構成アナライザーによって分析されます。
 
@@ -47,50 +47,44 @@ ms.locfileid: "52537933"
 - **Microsoft Defender for Office 365 ポリシー**: これには、アドオン サブスクリプションの Microsoft 365 E5または Defender をOffice 365組織が含まれます。
 
   - Microsoft Defender のフィッシング対策ポリシーは、次Office 365含まれます。
-
     - EOP [フィッシング対策](set-up-anti-phishing-policies.md#spoof-settings) ポリシーで使用できるスプーフィング設定と同じです。
     - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高度なフィッシングのしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-
   - [セーフリンク ポリシー](set-up-safe-links-policies.md)。
-
   - [セーフ添付ファイル ポリシー](set-up-safe-attachments-policies.md)。
 
 基準 **として使用** される標準ポリシーと **厳密** なポリシー設定の値については [、「EOP](recommended-settings-for-eop-and-office365.md)および Microsoft Defender のセキュリティに関する推奨設定Office 365されています。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [構成アナライザー] ページに直接 **移動するには、** を使用します <https://protection.office.com/configurationAnalyzer> 。
+- <https://security.microsoft.com> でセキュリティ センターを開きます。 [構成アナライザー] ページに直接 **移動するには、** を使用します <https://security.microsoft.com/configurationAnalyzer> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-- この記事に記載の手順を行うには、セキュリティ/コンプライアンス センターのアクセス許可が割り当てられている必要があります:
+- この記事の手順を実行するには、セキュリティ センターでアクセス許可を割り当てる必要があります。
   - 構成アナライザーを使用してセキュリティ ポリシーを更新するには、組織の管理役割グループまたはセキュリティ管理者役割グループの **メンバーである** 必要があります。
   - 構成アナライザーへの読み取り専用アクセスでは、グローバル リーダーまたはセキュリティ リーダーの役割グループ **のメンバーである** 必要があります。
 
-  詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+  詳細については、「セキュリティ センター[のアクセス許可Microsoft 365参照してください](permissions-microsoft-365-security-center.md)。
 
   > [!NOTE]
   >  
-  > - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、セキュリティ/コンプライアンス センター の必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > - ユーザーを対応する Azure Active Directory ロールに追加すると、セキュリティ センターで必要なアクセス許可と、セキュリティ センター内の他の機能に対するアクセス許可Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
-## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの構成&使用する
+## <a name="use-the-configuration-analyzer-in-the-security-center"></a>セキュリティ センターで構成アナライザーを使用する
 
-セキュリティ 管理コンプライアンス センター&、脅威管理 **ポリシー** \> **構成アナライザーに** \> **移動します**。
-
-![[脅威管理ポリシー] ページの構成 \> アナライザー ウィジェット](../../media/configuration-analyzer-widget.png)
+セキュリティ センターで、[メール] グループ **&[** 脅威&ポリシー] セクションの [構成アナライザー] \>  \>  \>  \> **に移動します**。
 
 構成アナライザーには、次の 2 つの主なタブがあります。
 
-- **設定推奨事項**: [標準] または [厳密] を選択し、それらの設定を既存のセキュリティ ポリシーと比較します。 結果では、設定の値を調整して、Standard または Strict と同じレベルに設定できます。
-
+- **設定推奨事項**: Standard または **Strict** を選択し、それらの設定を既存のセキュリティ ポリシーと比較します。  結果では、設定の値を調整して、Standard または Strict と同じレベルに設定できます。
 - **構成ドリフトの分析と履歴**: このビューでは、時間の流れによってポリシーの変更を追跡できます。
 
 ### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>構成アナライザーの [設定と推奨事項] タブ
 
-既定では、標準保護プロファイルとの比較でタブが開きます。 [厳密な推奨事項の表示] をクリックすると、厳密な保護プロファイルの **比較に切り替えます**。 切り替えるには、[標準の **推奨事項の表示] を選択します**。
+既定では、標準保護プロファイルとの比較でタブが開きます。 [厳密な推奨事項の表示] を選択して、厳密な保護プロファイルの **比較に切り替えます**。 切り替えるには、[標準の **推奨事項の表示] を選択します**。
 
 ![設定アナライザーの [推奨事項] ビューの設定と推奨事項](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
@@ -99,8 +93,8 @@ ms.locfileid: "52537933"
 - **スパム対策**
 - **フィッシング対策**
 - **マルウェア対策**
-- **ATP セーフ添付ファイル**(サブスクリプションに Microsoft Defender が含Office 365)
-- **ATP セーフ リンク**(サブスクリプションに Microsoft Defender for Office 365)
+- **セーフ添付ファイル**(サブスクリプションに Microsoft Defender for Office 365)
+- **セーフ リンク**(サブスクリプションに Microsoft Defender for Office 365)
 
 既定のビューでは、すべてが折りたためます。 各ポリシーの横には、ポリシー (変更できる) と、Standard または Strict Protection プロファイルの対応するポリシー (変更できない) の設定の比較結果の概要があります。 比較している保護プロファイルに関する次の情報が表示されます。
 
@@ -114,16 +108,11 @@ ms.locfileid: "52537933"
 
 比較に改善の推奨事項がない場合 (緑)、ポリシーを展開すると何も表示しません。 改善に関する推奨事項 (オレンジまたは赤) が多数ある場合は、注意が必要な設定が表示され、対応する情報が次の列に表示されます。
 
-- 注意が必要な設定の名前。 たとえば、前のスクリーンショットでは、スパム **対策ポリシーの** バルク メールしきい値です。
-
+- **ポリシー グループ/設定名**: 注意が必要な設定の名前。 たとえば、前のスクリーンショットでは、既定のスパム対策ポリシーの設定です。
 - **ポリシー**: 設定を含む影響を受けるポリシーの名前。
-
 - **適用:** 影響を受けるポリシーが適用されるユーザーの数。
-
-- **現在の構成**: 設定の現在の値。
-
+- **現在の構成**: 設定の現在の値。 すべての受信者に適用されるその種類の既定のポリシーでは、この値は空白です。
 - **最終更新日 :** ポリシーが最後に変更された日付。
-
 - **推奨事項**: Standard または Strict Protection プロファイルの設定の値。 ポリシーの設定の値を保護プロファイルの推奨値と一致する値に変更するには、[採用] を **クリックします**。 変更が成功した場合は、「推奨事項が正常に採用されました」 **というメッセージが表示されます**。 [ **最新の情報** に更新] をクリックすると、推奨事項の数が減り、結果から特定の設定/ポリシー行が削除されます。
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>構成アナライザーの [構成ドリフト分析と履歴] タブ
@@ -133,8 +122,10 @@ ms.locfileid: "52537933"
 - **最終更新日時**
 - **変更者**
 - **設定名**
-- **Policy**
-- **Type**
+- **ポリシー**
+- **型**
+- **構成の変更**
+- **構成ドリフト**:**値の増減****。**
 
 結果をフィルター処理するには、**[フィルター]** をクリックします。 表示される **[フィルター** ] フライアウトで、次のフィルターから選択できます。
 
