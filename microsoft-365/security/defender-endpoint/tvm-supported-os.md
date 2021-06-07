@@ -1,5 +1,5 @@
 ---
-title: サポートされているオペレーティング システム のプラットフォームと機能
+title: サポート対象オペレーティング システムのプラットフォームと機能
 description: すべてのデバイスのアクティビティが適切に考慮される脅威と脆弱性の管理のオペレーティング システムまたはプラットフォームの要件を満たしてください。
 keywords: threat & 脆弱性の管理, 脅威と脆弱性の管理, オペレーティング システム, プラットフォーム要件, 前提条件, Microsoft Defender for Endpoint-tvm サポート os, Microsoft Defender for Endpoint-tvm, サポートされるオペレーティング システム, サポートされるプラットフォーム, Linux サポート, mac サポート
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 72dc9d448a6170cbacc71d37a60bdd059ef6ec3e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a037b9070fff2a208e7ee0a0602ce60cf3e042bf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333796"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770015"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>サポートされているオペレーティング システム、プラットフォーム、および機能 - 脅威と脆弱性の管理
 
@@ -48,9 +48,9 @@ ms.locfileid: "52333796"
 
 サポートされている OS またはプラットフォーム | OS の脆弱性 | ソフトウェア製品の脆弱性 | OS 構成の評価 | セキュリティ制御の構成評価 | ソフトウェア製品構成の評価
 :---|:---|:---|:---|:---|:---
-Windows 7 | はい | 非サポート | 非サポート | 非サポート | 非サポート
+Windows 7 | はい | サポート対象外 | サポート対象外 | サポート対象外 | 非サポート
 Windows 8.1 | はい | はい | はい | はい| はい
-Windows 10バージョン 1607-1703 | はい  | 非サポート | 非サポート | 非サポート | 非サポート
+Windows 10バージョン 1607-1703 | はい  | サポート対象外 | サポート対象外 | サポート対象外 | サポート対象外
 Windows 10バージョン 1709 以降 | はい | はい | はい | はい | はい
 Windows Server 2008 R2 | はい | はい | はい | はい | はい
 Windows Server 2012 R2 | はい | はい | はい | はい | はい
@@ -60,11 +60,12 @@ macOS 10.14 "Mojave" 以上 | はい | はい | はい (プレビュー) | は�
 Red Hat Enterprise Linux 7.2 以上 **(プレビュー) (** \* 以下の「重要な」通知を参照) | はい | はい | はい | はい | はい
 CentOS 7.2 以上 **(プレビュー)** | はい | はい | はい | はい | はい
 Ubuntu 16.04 LTS 以上の LTS **(プレビュー)** | はい | はい | はい | はい | はい
+Oracle Linux 7.2 以上 | はい | はい | はい | はい | はい
 
 >[!IMPORTANT]
 > \*Red Hat Enterprise Linux: "Microsoft Defender for Endpoint サービスの一部として提供され、表示される脆弱性データは、Red Hat, Inc.から"AS IS" という生の形式で提供され、最新の状態ではない可能性があります。 Red Hat Security Data API でアクセス可能なデータは、クリエイティブ コモンズ アトリビューション 4.0 インターナショナル ライセンスの下でライセンスされています。 このデータを使用する場合は、リスクを負います。 Microsoft およびサード パーティのサプライヤーは、非侵害、商品性、特定の目的への適性に関する黙示の保証を含む、結果的および他の間接的損害に対する一切の責任および黙示的保証を否認します。 © 2020 Red Hat. All rights reserved。 © 2020 Microsoft。 すべての権限が予約されています。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
-- [脅威と脆弱性の管理の概要](next-gen-threat-and-vuln-mgt.md)
+- [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [前提条件&アクセス許可](tvm-prerequisites.md)

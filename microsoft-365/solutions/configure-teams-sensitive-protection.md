@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 0590e63aa0feb5b699eca98c0056604fe09b77f5
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a3f715cb05ad1d5acf3c93c58959f12ebec46978
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583654"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788344"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -33,6 +33,13 @@ ms.locfileid: "52583654"
 - ゲスト共有を有効または無効にし、管理されていないデバイスの SharePoint コンテンツへのアクセスを Web のみに制限するチームの秘密度ラベル。このラベルは、ファイルの分類にも使用できます。
 - より制限の厳しい既定の共有リンクの種類
 - チーム所有者のみがプライベート チャネルを作成できます。
+
+## <a name="video-demonstration"></a>ビデオ デモンストレーション
+
+この記事で説明されている手続きのチュートリアルに関するビデオを見ます。
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NMS6]
 
 ## <a name="guest-sharing"></a>ゲスト共有
 

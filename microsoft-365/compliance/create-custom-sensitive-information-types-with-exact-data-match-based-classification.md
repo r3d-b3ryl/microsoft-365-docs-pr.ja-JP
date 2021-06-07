@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0bb75db5b6bb1f3a3b18033b5327f014748f6512
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: 7c6db9df115020902b80328a341606cca2b1c735
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464395"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769463"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -611,10 +611,6 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - DLP for SharePoint (ファイル)
 - Microsoft Cloud App Security DLP ポリシー
 - サーバー側の自動ラベル付けポリシー
-
-次のシナリオでは、EDM の機密情報の種類は現在開発中で、まだご利用いただけません。
-
-- 機密度ラベルと保持ラベルの自動分類
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>EDM を使用して DLP ポリシーを作成する
 

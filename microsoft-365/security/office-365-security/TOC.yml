@@ -66,6 +66,8 @@
           href: protect-against-threats.md
         - name: Defender for Office 365 を Defender for Endpoint と統合する
           href: integrate-office-365-ti-with-mde.md
+        - name: Microsoft 365 セキュリティ センターのアクセス許可
+          href: permissions-microsoft-365-security-center.md
         - name: セキュリティ/コンプライアンス センターのアクセス許可
           href: permissions-in-the-security-and-compliance-center.md
         - name: SIEM サーバーの統合

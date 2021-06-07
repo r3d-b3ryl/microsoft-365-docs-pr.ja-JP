@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d20d9c3839cf72d1e99a185186d0716d9a513c5f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 205fd5cd40d187eada4f6b87edf64c0d35f7e3b3
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537861"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788417"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -133,7 +133,7 @@ EOP および Microsoft Defender のフィッシング対策ポリシーでは�
 - **"via"** タグを有効にする: この設定を有効にすると、差出人アドレス (電子メール クライアントに表示されるメッセージ送信者) のドメインが DKIM 署名のドメインまたは MAIL FROM アドレスと異なる場合は、[差出人] ボックスに via タグ (chris@contoso.com 経由で <sup>\*</sup> fabrikam.com)<u></u>が追加されます。 これらのアドレスの詳細については、「電子メール [メッセージ標準の概要」を参照してください](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
 > [!NOTE]
-> 現在、すべての **組織で ["via" タグを有効にする]** 設定は使用できません。 ["via" タグを有効にする] 設定が設定されていない場合、疑問符と via タグの両方は、組織内の [認証されていない送信者の疑問符 **(?)** 記号を有効にする] 設定によって制御されます。
+> 現在、すべての **組織で ["via" タグを有効にする]** 設定は使用できません。 ["via" タグを有効にする] 設定が設定されていない場合、疑問符と via タグは、組織の [認証されていない送信者の質問マーク **(?)** を有効にする] 記号によって制御されます。
 
 疑問符またはタグ経由で特定の送信者からのメッセージに追加されるのを防ぐには、次のオプションがあります。
 

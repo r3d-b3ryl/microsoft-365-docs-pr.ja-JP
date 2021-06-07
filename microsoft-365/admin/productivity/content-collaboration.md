@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: コンテンツ コラボレーションの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: 43a5fbc3b1c4b6227cd29d79bfb0928a3b4b8ac9
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: cca218d15af98925bf61bbb314cfd4d35aa0711a
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903324"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779736"
 ---
 # <a name="content-collaboration--people-experiences"></a>コンテンツのコラボレーション – ユーザー エクスペリエンス
 
@@ -44,7 +44,7 @@ ms.locfileid: "51903324"
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>組織でコンテンツ&#39;スコアが重要な理由
 
-デジタル変換の重要な側面は、ユーザーがファイルで共同作業を行う方法です。 コンテンツをオンにMicrosoft 365ユーザーは、任意の場所から他のユーザーとコンテンツにアクセス、作成、変更、および共同作業を行います。 調査によると、ユーザーがオンライン ファイルを使用して共同作業を行う場合、各ユーザーは週平均 100 分を節約できます。 [証拠を参照してください](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+デジタル変換の重要な側面は、ユーザーがファイルで共同作業を行う方法です。 コンテンツをオンにMicrosoft 365ユーザーは、任意の場所から他のユーザーとコンテンツにアクセス、作成、変更、および共同作業を行います。 調査によると、ユーザーがオンライン ファイルを使用して共同作業を行う場合、各ユーザーは週平均 100 分を節約できます。
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>コンテンツ コラボレーション スコアの計算方法
 

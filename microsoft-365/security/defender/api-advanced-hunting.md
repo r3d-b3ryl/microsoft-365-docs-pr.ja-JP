@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932895"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769588"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365Defender Advanced hunting API
 
@@ -47,15 +47,14 @@ ms.locfileid: "51932895"
 1. クエリは、過去 30 日間のデータを探索して返します。
 2. 結果は、最大 100,000 行を返す場合があります。
 3. テナントごとに 1 分あたり最大 15 回の呼び出しを行います。
-4. テナントごとに 1 時間あたり 10 分の実行時間があります。
-5. テナントごとに 1 日に 4 時間の合計実行時間があります。
-6. 1 つの要求が 10 分以上実行された場合、その要求はタイム アウトし、エラーを返します。
-7. HTTP 応答コードは、送信された要求の数または割り当てられた実行時間のいずれかによって、クォータに達 `429` したかどうかを示します。 応答本文を読んで、到達した制限を理解します。 
+4. テナントが次の 15 分のサイクルの後まで 100% に達した場合、クエリはブロックされます。
+5. 1 つの要求が 10 分以上実行された場合、その要求はタイム アウトし、エラーを返します。
+6. HTTP 応答コードは、送信された要求の数または割り当てられた実行時間のいずれかによって、クォータに達 `429` したかどうかを示します。 応答本文を読んで、到達した制限を理解します。 
 
 > [!NOTE]
 > 上記のすべてのクォータ (たとえば、1 分あたり 15 回の呼び出し) はテナント サイズごとに設定されます。 これらのクォータは最小です。
 
-## <a name="permissions"></a>権限
+## <a name="permissions"></a>Permissions
 
 高度な検索 API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については[、「Access the Defender Protection API Microsoft 365」を参照してください。](api-access.md)
 
@@ -87,7 +86,7 @@ Content-Type | application/json
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 型 | 説明
+パラメーター | 種類 | 説明
 -|-|-
 クエリ | テキスト | 実行するクエリ。 **注: 必須**
 
@@ -178,7 +177,7 @@ Content-Type | application/json
 }
 ```
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [Defender API Microsoft 365アクセスする](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)

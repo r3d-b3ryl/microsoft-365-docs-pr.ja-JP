@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.topic: article
+ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569745"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769331"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
@@ -28,7 +29,8 @@ ms.locfileid: "51569745"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> [!TIP]
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
 イベント ビューアーで攻撃表面の縮小イベントを確認し、動作しているルールや設定を監視します。 また、設定が "ノイズ" すぎるか、毎日のワークフローに影響を与えるかどうかを判断することもできます。
 
@@ -36,7 +38,7 @@ ms.locfileid: "51569745"
 
 この記事では、すべてのイベント、関連する機能または設定を一覧表示し、特定のイベントにフィルター処理するカスタム ビューを作成する方法について説明します。
 
-E5 サブスクリプションを持ち、Microsoft Defender for Endpoint を使用する場合Windows セキュリティの一部としてイベントやブロックに関する詳細なレポート[を取得します](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)。
+E5 サブスクリプションを持ち、Microsoft Defender for Endpoint を使用する場合Windows セキュリティの一部としてイベントやブロックに関する詳細なレポート[を取得します](microsoft-defender-endpoint.md)。
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>カスタム ビューを使用して攻撃表面の縮小機能を確認する
 
@@ -76,7 +78,7 @@ E5 サブスクリプションを持ち、Microsoft Defender for Endpoint を使
 
 4. イベントをフィルター処理する機能の XML コードを XML セクションに貼り付けます。
 
-5. **[OK]** を選択します。 フィルターの名前を指定します。
+5. [**OK**] を選択します。 フィルターの名前を指定します。
 
 6. その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
 
@@ -161,7 +163,7 @@ E5 サブスクリプションを持ち、Microsoft Defender for Endpoint を使
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 12  | [Code integrity guard] (コードの整合性の保護) ブロック
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 13 | EAF の監査
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 14  | EAF の実施
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 15  | EAF+ の監査
+エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 15 | EAF+ の監査
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 16  | EAF+ の実施
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 17  | IAF の監査
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 18  | IAF の実施

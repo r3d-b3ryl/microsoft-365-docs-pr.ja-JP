@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空ではあるが代表的なグローバル組織が、Microsoft 365 ソリューションをどのように展開してきたか。
-ms.openlocfilehash: 74eacd4a7de2cf60eb2f1f388f3690496c6cc0e1
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 3112dc452ff03fbd661ffff80b6b25b1f38f8a66
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028929"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788333"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 ソリューション
 
@@ -32,7 +32,7 @@ Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、ク�
 
 次に、Contoso が次のようなソリューションとシナリオに Microsoft 365 を使用している方法について説明します。
 
-- [リモート ワークやオンサイト ワーク向けの Contoso の COVID-19 対応とインフラストラクチャ](contoso-remote-onsite-work.md)
+- [ハイブリッド ワーク向けの Contoso の COVID-19 対応とインフラストラクチャ](contoso-remote-onsite-work.md)
 
 - [極秘プロジェクト向けの独立したチーム](contoso-team-for-top-secret-project.md)
 

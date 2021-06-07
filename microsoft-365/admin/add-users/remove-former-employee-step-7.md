@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 次の手順に従って、元従業員のユーザー アカウントを削除します。
-ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e9f87f68650394a81c735346db929bf592e91d18
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782383"
+ms.locfileid: "52779833"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>手順 7 - 元従業員のユーザー アカウントを削除する
 
@@ -84,6 +84,8 @@ Active Directory でユーザー アカウントを削除および復元する�
   
  **オンプレミスおよび Exchange データ センターにプレゼンスがあるユーザーの場合、迅速な応答**: Azure Active Directory 管理センター/Exchange 管理センターを使用してセッションを終了し、オンプレミスの環境でも変更を加えます。そうしないと、Azure Active Directory 管理センター/Exchange 管理センターでの変更は、DirSync によって上書きされます。
   
-## <a name="related-content"></a>関連コンテンツ
+## <a name="related-articles"></a>関連記事
 
-[ユーザーの復元](restore-user.md) (記事)/ [パスワードのリセット](reset-passwords.md) (記事)
+[ユーザーを復元する](restore-user.md)
+
+[パスワードをリセットする](reset-passwords.md)

@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、Exchange Online の web (Outlook Web App) の Outlook の組み込みの迷惑メール、迷惑メール、フィッシングメール報告オプション、およびユーザーに対してこれらのレポート オプションを無効にする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 933387dd32a6c1ca1e27ee11e4a9384615e8fdec
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 1139871f5929ff9fef29e980b7614e5bc7b92570
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615214"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788309"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>迷惑メールとフィッシングメールを web Outlookで報告するExchange Online
 
@@ -35,9 +35,10 @@ ms.locfileid: "51615214"
 
 ハイブリッドモダン認証を使用して Exchange Online またはオンプレミスのメールボックスにメールボックスを持つ Microsoft 365[](../../enterprise/hybrid-modern-auth-overview.md)組織では、誤検知 (スパムとしてマークされた良い電子メール)、偽陰性 (悪い電子メールが許可されている)、フィッシング メッセージを Exchange Online Protection (EOP) に送信できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- 最適なユーザー申請エクスペリエンスを得る場合は、レポート メッセージとレポート フィッシング アドインを使用することをお勧めします。詳細 [については、「レポート メッセージ アドインを有効](./enable-the-report-message-add-in.md) にする」および「レポート フィッシング アドインを [有効にする」](./enable-the-report-phish-add-in.md) を参照してください。
+> [!IMPORTANT]
+> ユーザー申請には、レポート メッセージ アドインまたはレポート フィッシング アドインをお勧めします。 詳細については、「レポート メッセージまたはレポート フィッシング アドインを有効にする[」を参照してください](./enable-the-report-message-add-in.md)。ユーザー申請ポリシーを使用できないので、Outlookの組み込みレポート エクスペリエンス[はお勧めしません](./user-submission.md)。
 
 - ユーザーがメールボックスを使用している組織の管理者Exchange Online、コンプライアンス センターのセキュリティ &ポータルを使用することをお勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 
@@ -51,7 +52,7 @@ ms.locfileid: "51615214"
 
 既定では、ユーザーはスパムの誤検知、誤検知、およびフィッシング メッセージを Microsoft に報告して、web 上Outlook分析できます。 管理者は、Outlook PowerShell の Exchange Online Web メールボックス ポリシーでユーザーがスパムの誤検知やスパムの誤検知を Microsoft に報告し、そのポリシーを構成できます。 ユーザーがフィッシング メッセージを Microsoft に報告する機能を無効にできない。
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+### <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 

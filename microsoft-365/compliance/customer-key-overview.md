@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: この記事では、サービスの暗号化が顧客キーとどのように機能するのかについてMicrosoft 365。
-ms.openlocfilehash: 3d0c86dbca02a66547f0ade643b745ecfc8f92cd
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: d12a5d2f80de11a69fc4a36146a511c5f9a306f8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344772"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769451"
 ---
 # <a name="service-encryption-with-customer-key"></a>カスタマー キーによるサービスの暗号化
 
@@ -52,8 +52,11 @@ Microsoft 365、分散キー マネージャー (DKM) を使用して有効BitLo
 - Teams状態メッセージ
 - ユーザーとシグナルの情報をExchange Online
 - Exchange Online DEP によってまだ暗号化されていないメールボックス
-- MIP 完全データ一致 (EDM) データ – (データ ファイル スキーマ、ルール パッケージ、および機密データのハッシュに使用される塩)。
-  MIP 完全データ一致 (EDM) と Microsoft Teams の場合、マルチワークロード DEP は、DEP をテナントに割り当てる時から新しいデータを暗号化します。 たとえばExchange Online、顧客キーは既存のデータと新しいデータを暗号化します。
+- Microsoft Information Protection:
+
+  - データ ファイル スキーマ、ルール パッケージ、機密データのハッシュに使用される塩を含む、完全なデータ一致 (EDM) データ。 EDM および Microsoft Teams、マルチワークロード DEP は、DEP をテナントに割り当てる時から新しいデータを暗号化します。 たとえばExchange Online、顧客キーは既存のデータと新しいデータを暗号化します。
+
+  - 感度ラベルのラベル構成
 
 複数ワークロード DEP は、次の種類のデータを暗号化しない。 代わりに、Microsoft 365他の種類の暗号化を使用してこのデータを保護します。
 
@@ -98,7 +101,7 @@ Microsoft 365、分散キー マネージャー (DKM) を使用して有効BitLo
 
 ![オンライン顧客キー SharePoint暗号化暗号](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [顧客キーの設定](customer-key-set-up.md)
 

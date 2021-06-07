@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアには、ユーザーやテクノロジのエクスペリエンス測定がどのように反映されているか、同規模の組織との比較をご覧ください。
-ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593843"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779676"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 
@@ -40,7 +40,7 @@ ms.locfileid: "52593843"
 
 - **ユーザー エクスペリエンス**: コンテンツの共同作業、モビリティ、コミュニケーション、会議、チームワークなどの Microsoft 365 のカテゴリを組織が仕事でどのように使用しているかを定量化します。  
 
-    これらの各カテゴリについて公的研究を参照し、組織の効率性におけるベスト プラクティスと関連する特徴を特定します。 たとえば、[Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) のリサーチによると、ユーザーが共同作業をして (メール添付ではなく) クラウド上でコンテンツを共有するとき、1 週間あたり最大 100 分を削減できます。 さらに、Microsoft では組織内のこれらのベスト プラクティスの使用を定量化して、デジタル変革の行程のどの段階にあるかを知ることができるようサポートしています。 
+    これらの各カテゴリについて公的研究を参照し、組織の効率性におけるベスト プラクティスと関連する特徴を特定します。 たとえば、Forrester のリサーチによると、ユーザーが共同作業をして (メール添付ではなく) クラウド上でコンテンツを共有するとき、1 週間あたり最大 100 分を削減できます。 さらに、Microsoft では組織内のこれらのベスト プラクティスの使用を定量化して、デジタル変革の行程のどの段階にあるかを知ることができるようサポートしています。 
 
 - **テクノロジ エクスペリエンス**: 組織は、信頼性が高くパフォーマンスの高いテクノロジと、Microsoft 365 の効率的な使用に大きく左右されます。 [エンドポイント分析](https://aka.ms/endpointanalytics): ハードウェアとソフトウェアのパフォーマンスと正常性の問題が組織にどのように影響するかを理解するのに役立ちます。 Microsoft 365 アプリの正常性は、組織内のデバイスが推奨されているチャネルで Microsoft 365 アプリを実行しているかどうかを知るのに役立ちます。
 

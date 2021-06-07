@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 会議の詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: 803173fbbd8489802b3a3c9c11473918e0d7a858
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 47a29ee208f9c6957a3fcf7d1a4b0c71518c680b
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579184"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779724"
 ---
 # <a name="meetings--people-experiences"></a>会議 - ユーザー エクスペリエンス
 
@@ -42,7 +42,7 @@ ms.locfileid: "51579184"
 
 ## <a name="why-your-organizations-meetings-score-matters"></a>組織の会議スコアが重要な理由
 
-アイデアの探索、問題の計画、解決、意思決定を行う会議は、組織の生産性の基本的な柱です。 調査によると、オンライン会議ツールを効果的に使用する場合、週に最大 104 分節約する傾向があります。 証拠を [参照してください](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+アイデアの探索、問題の計画、解決、意思決定を行う会議は、組織の生産性の基本的な柱です。 調査によると、オンライン会議ツールを効果的に使用する場合、週に最大 104 分節約する傾向があります。
 
 ## <a name="how-we-calculate-the-meetings-score"></a>会議のスコアの計算方法
 

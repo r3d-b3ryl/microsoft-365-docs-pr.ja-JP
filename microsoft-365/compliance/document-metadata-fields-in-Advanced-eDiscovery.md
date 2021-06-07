@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、レビュー セット内のドキュメントのメタデータ フィールドを、レビュー セット内の Advanced eDiscovery定義Microsoft 365。
-ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 42f349bf01d5a777535dd04096b860a0165f1edf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730500"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769571"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Advanced eDiscovery のドキュメントメタデータフィールド
 
@@ -75,6 +75,7 @@ ms.locfileid: "52730500"
 |EmailAction*||Email_action|値は **None、Reply、** または **Forward です**。 メッセージの件名に基づいて指定します。|
 |要求された電子メール配信の受信||Email_delivery_receipt|配信の受信用にインターネット ヘッダーで提供される電子メール アドレス。|
 |Importance|EmailImportance|Email_importance|メッセージの重要度: **0** - 低。 **1** - 標準。 **2** - 高|
+|無視された処理エラー|ErrorIgnored|Error_Ignored|エラーは無視され、修復されません。|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|電子メール メッセージからの電子メール ヘッダーの完全なセット|
 |EmailLevel*||Email_level|メッセージが属する電子メール スレッド内のメッセージのレベルを示します。添付ファイルは親メッセージの値を継承します。|
 |電子メール メッセージ ID||Email_message_ID|メッセージのインターネット メッセージ ID。|
@@ -88,14 +89,14 @@ ms.locfileid: "52730500"
 |||Extracted_text_path|エクスポートで抽出されたテキスト ファイルへのパス。|
 |ExtractedTextLength*||Extracted_text_length|抽出されたテキスト内の文字数。|
 |FamilyDuplicateSet*||Family_duplicate_set|互いに完全に重複するファミリの数値識別子 (同じコンテンツとすべての同じ添付ファイル)。|
-|ファミリ ID|FamilyId|Family_ID|ファミリ ID は、すべてのアイテムをグループ分けします。電子メールの場合、これにはメッセージとすべての添付ファイルが含まれます。ドキュメントの場合、これにはドキュメントと埋め込みアイテムが含まれます。|
+|ファミリ ID|FamilyId|Family_ID|メールのすべてのアイテムをグループ分けします。 これには、メッセージとすべての添付ファイルと抽出されたアイテムが含まれます。|
 |ファミリ サイズ||Family_size|ファミリ内のドキュメントの数。|
 |ファイル クラス|FileClass|File_class|ドキュメントおよびドキュメントSharePointコンテンツOneDrive: **Document**;メールまたは添付ファイルExchangeの **コンテンツ****の場合**。|
 |ファイル ID|FileId|File_ID|ケース内で一意のドキュメント識別子。|
 |ファイル システムの作成日||File_system_date_created|ファイル システムから作成された日付 (データ以外のデータにのみOffice 365されます)。|
 |ファイル システムの日付が変更されました||File_system_date_modified|ファイル システムからの変更日 (データ以外のデータにのみOffice 365されます)。|
 |ファイルの種類|FileType||ファイル拡張子に基づくアイテムのファイルの種類。|
-|グループ ID|GroupID||グループ化されたコンテンツのグループ ID。|
+|グループ ID|グループ ID|Group_ID|メールとドキュメントのすべてのアイテムをグループ分けします。 電子メールの場合、これにはメッセージとすべての添付ファイルと抽出されたアイテムが含まれます。 ドキュメントの場合、これにはドキュメントと埋め込みアイテムが含まれます。|
 |添付ファイルを持つ|HasAttachment|Email_has_attachment|メッセージに添付ファイルが含されているかどうかを示します。|
 |弁護士を持つ|HasAttorney||**True** の場合は、少なくとも 1 人の参加者が弁護士リストに表示されます。それ以外の場合、値は **False です**。|
 |HasText*||Has_text|アイテムにテキストが含されているかどうかを示します。可能な値は **True と** **False です**。|
@@ -126,6 +127,7 @@ ms.locfileid: "52730500"
 |NativeSHA256||Native_SHA_256|ファイル ストリームの SHA256 ハッシュ (256 ビット ハッシュ値)。|
 |ND/ET 並べ替え: 添付ファイルを除外する|NdEtSortExclAttach|ND_ET_sort_excl_attach|電子メール スレッド (ET) セットと Near-duplicate (ND) セットの連結。 このフィールドは、レビュー時に効率的な並べ替えに使用されます。 **D は ND** セットの先頭に付き **、E** は ET セットのプレフィックスです。|
 |ND/ET 並べ替え: 添付ファイルを含む|NdEtSortInclAttach|ND_ET_sort_incl_attach|電子メール スレッド (ET) セットとほぼ重複 (ND) セットの連結。 このフィールドは、レビュー時に効率的な並べ替えに使用されます。 **D は ND** セットの先頭に付き **、E** は ET セットのプレフィックスです。 ET セット内の各電子メール アイテムの後に適切な添付ファイルが続きます。|
+|[重複セットの近く]||ND_set|ピボット ドキュメントに似たアイテムは、同じアイテムを共有ND_set。|
 |O365 作成者||O365_authors|[作成者] SharePoint。|
 |によって作成された O365||O365_created_by|ユーザーが作成SharePoint。|
 |O365 作成日||O365_date_created|作成された日付は、SharePoint。|
@@ -155,6 +157,7 @@ ms.locfileid: "52730500"
 |送信者ドメイン|SenderDomain|Email_sender_domain|送信者のドメイン。|
 |送信日時|送信日時|Email_date_sent|メッセージの送信日。|
 |Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|並べ替えフィールド - 電子メールと添付ファイル: カウンター時系列。ドキュメント: 最初にピボットし、類似度スコアを降順に指定します。|
+|ID の設定||Set_ID|同じメール スレッド (ND_set) 内の類似コンテンツ (ND_set) または電子メールのドキュメントは、同じEmail_set共有Set_ID。|
 |SimilarityPercent||Similarity_percent|近くの重複セットのピボットに対するドキュメントの類似点を示します。|
 |ネイティブ ファイル サイズ|Size|Native_size|ネイティブ アイテムのバイト数。|
 |Subject|Subject|Email_subject|メッセージの件名。|

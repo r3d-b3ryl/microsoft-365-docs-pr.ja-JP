@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで集中展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 796517ba13a4718c38d5200fcf9cbe38b5dc62d0
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636024"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779640"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>管理センターでアドインを展開する
 
@@ -38,7 +38,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
 展開後のアドインの管理の詳細については、「管理センターでアドインを管理する」 [を参照してください。](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  Word の場合、Excel と PowerPoint は[SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)アプリ カタログを使用して、Microsoft 365 に接続したり、SharePoint アドインをサポートしたりする必要がないオンプレミス環境のユーザーにアドインを展開します。 たとえばOutlookコントロール Exchangeを使用して、ユーザーに接続せずにオンプレミス環境に展開Microsoft 365。
+>  Word の場合、Excel と PowerPoint は[SharePoint](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)アプリ カタログを使用して、Microsoft 365 に接続したり、SharePoint アドインをサポートしたりする必要がないオンプレミス環境のユーザーにアドインを展開します。 たとえばOutlookコントロール Exchangeを使用して、ユーザーに接続せずにオンプレミス環境に展開Microsoft 365。
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Office アドインを展開する際に推奨される方法
 
@@ -84,7 +84,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
     > [!NOTE]
     > アプリ リボンにアドイン アイコンをOfficeするには、ユーザーがアプリを再起動する必要がある場合があります。 Outlookアドインがアプリ リボンに表示するには、最大で 24 時間かかる場合があります。
 
-8. 完了したら、[次へ] を **選択します**。 自分にだけ展開した場合は、[アドインへのアクセス権を持つユーザーを変更する] を選択して、より多くのユーザーに展開できます。
+8. 完了したら、[**次へ**] を選択します。 自分にだけ展開した場合は、[アドインへのアクセス権を持つユーザーを変更する] を選択して、より多くのユーザーに展開できます。
 
     組織の他のメンバーにアドインを展開した場合は、手順に従ってアドインの展開をアナウンスします。 <br/>
   

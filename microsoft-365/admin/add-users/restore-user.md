@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: ユーザー アカウントを削除した後 30 日以内に、アカウントとすべてのデータを復元し、ユーザーは同じアカウントでサインインできます。
-ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f849fe8e403aa9a72eccb4dd65665ec9f33618d1
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623823"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779652"
 ---
 # <a name="restore-a-user"></a>ユーザーを復元する
    
@@ -38,7 +38,7 @@ ms.locfileid: "52623823"
   
 - アカウントに割り当て可能なライセンスを確認します。
     
-- Active Directory を使用している場合、ユーザー アカウントを復元する手順については、「[Office 365、Azure、Intune で削除済みのユーザー アカウントをトラブルシューティングする方法](/office365/troubleshoot/active-directory/restore-deleted-user-accounts.md)」を参照してください。 
+- ビジネスで Active Directory を使用している場合、ユーザー アカウントの復元に関するインストルトションについては、「How to troubleshoot deleted user account in Office 365 」[を参照してください](/office365/troubleshoot/active-directory/restore-deleted-user-accounts)。 
     
 ## <a name="restore-one-or-more-user-accounts"></a>1 つ以上のユーザー アカウントを復元する
 

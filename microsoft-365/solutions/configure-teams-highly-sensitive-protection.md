@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 7c5485a008434b351eebbec3ea1f20b10d82278a
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583690"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788357"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -38,6 +38,13 @@ ms.locfileid: "52583690"
 - より制限の厳しい既定の共有リンクの種類
 - チーム所有者のみがプライベート チャネルを作成できます。
 - 関連付けられた SharePoint サイトへのアクセス要求はオフになっています。
+
+## <a name="video-demonstration"></a>ビデオ デモンストレーション
+
+この記事で説明されている手続きのチュートリアルに関するビデオを見ます。
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NzI7]
 
 ## <a name="guest-sharing"></a>ゲスト共有
 

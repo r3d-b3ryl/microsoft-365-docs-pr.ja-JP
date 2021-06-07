@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: コミュニケーションの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: 6ecde5fbbffe65a80c980c70f8195b8e31507f03
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b744f9631deabb9c7bc97ab6a0cf1ba8fc61c5dd
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579196"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779748"
 ---
 # <a name="communication--people-experiences"></a>コミュニケーション – ユーザー エクスペリエンス
 
@@ -44,7 +44,7 @@ ms.locfileid: "51579196"
 
 ## <a name="why-your-organizations-communication-score-matters"></a>組織のコミュニケーション スコアが重要な理由 
 
-Microsoft は、ユーザーが異なる通信ニーズを持っているのを理解しています。 質問に対する迅速な回答を得る場合は、インスタント メッセージの送信を選択できます。 リーダーシップにステータス更新プログラムを送信する場合は、電子メール メッセージを選択できます。 より幅広いユーザーにリーチするには、コミュニティ メッセージを投稿できます。 Microsoft 365のニーズに合わせて、通信モードでこの柔軟性を実現できます。 調査によると、リアルタイムコミュニケーション ツールを使用すると、場所に関係なく、より統合された組織が作成され、士気が構築されます。 [証拠を参照してください](https://go.microsoft.com/fwlink/?linkid=2127669)。
+Microsoft は、ユーザーが異なる通信ニーズを持っているのを理解しています。 質問に対する迅速な回答を得る場合は、インスタント メッセージの送信を選択できます。 リーダーシップにステータス更新プログラムを送信する場合は、電子メール メッセージを選択できます。 より幅広いユーザーにリーチするには、コミュニティ メッセージを投稿できます。 Microsoft 365のニーズに合わせて、通信モードでこの柔軟性を実現できます。 調査によると、リアルタイムコミュニケーション ツールを使用すると、場所に関係なく、より統合された組織が作成され、士気が構築されます。
 
 ## <a name="how-we-calculate-the-communication-score"></a>通信スコアの計算方法
 

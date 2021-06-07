@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 7b23ed2b45a24e8999785909f9357043bef731e5
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710696"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769429"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -221,11 +221,11 @@ Microsoft 365 グループ (以前の Office 365 グループ) のコンテン�
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business の構成情報
 
-Exchange メールとは異なり Skype の場所の状態をオンに切り替えて自動的にすべてのユーザーを含めることはできませんが、そのロケーションをオンにしてから、会話を保持するユーザーを手動で選択する必要があります。
+他の場所とは異なり、Skype の場所の状態を切り替えて、すべてのユーザーを自動的に含めることはできません。 代わりに、その場所を有効にするときは、**[編集]** オプションを選択して、会話を保持したいユーザーを手動で選択する必要があります。
 
-![アイテム保持ポリシーの Skype の場所を選択する](../media/skype-location-retention-policies.png)
+![アイテム保持ポリシーの Skype の場所を編集する](../media/skype-location-retention-policies.png)
 
-[**ユーザーの選択**] を選択すると、[**すべて選択する**] ボックスを選択して、すべてのユーザーをすばやく含めることができます。 ただし、各ユーザーはポリシーの特定のインクルージョンとしてカウントされることを理解することが重要です。 したがって、[**すべて選択**] ボックスを選択して 1,000 人のユーザーを含める場合、含める 1,000 人のユーザーを手動で選択した場合と同じです。これは、Skype for Business でサポートされる最大数です。
+この **[編集]** オプションを選択した後、**[Skype for Business]** ウィンドウで、**[名前]** 列の前にある非表示のボックスを選択することで、すべてのユーザーをすばやく含めることができます。 ただし、各ユーザーはポリシーの特定のインクルージョンとしてカウントされることを理解することが重要です。 したがって、このボックスを選択して 1,000 人のユーザーを含める場合、含める 1,000 人のユーザーを手動で選択した場合と同じです。これは、Skype for Business でサポートされる最大数です。
 
 [**会話履歴**] (Outlook のフォルダー) は、Skype のアーカイブとは関係のない機能です。 [**会話履歴**] は、エンドユーザーが無効にすることができます。しかし、Skype のアーカイブの場合は、ユーザーによるアクセスは不可能ですが、電子情報開示で利用できる非表示フォルダーに Skype の会話のコピーが保存されます。
 

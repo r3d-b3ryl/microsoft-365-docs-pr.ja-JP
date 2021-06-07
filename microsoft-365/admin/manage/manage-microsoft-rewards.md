@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 個人用 Microsoft アカウントを持つユーザーは、リンク AAD with Rewards 機能が有効になっている場合、仕事の検索に関連して Microsoft リワード ポイントを獲得できます。
-ms.openlocfilehash: 8cbd88de530ec4aa566962bb74715dc9c417f296
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: 581a7a044ef1b3508591778c9da416ffc3afac2e
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464344"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779664"
 ---
 # <a name="manage-microsoft-rewards"></a>Microsoft Rewards を管理する
 
@@ -36,10 +36,10 @@ ms.locfileid: "52464344"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft Search のセットアップ](/microsoftsearch/setup-microsoft-search.md) (記事)
+[Microsoft Search のセットアップ](/microsoftsearch/setup-microsoft-search) (記事)
 
 [自宅での作業をサポートするセキュリティ](../../security/top-security-tasks-for-remote-work.md) チームの上位 12 のタスク (記事)
 
-[新しい機能 (Microsoft 365)](https://support.microsoft.com/en-us/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426)
+[新しい機能 (Microsoft 365)](https://support.microsoft.com/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426)
 
 

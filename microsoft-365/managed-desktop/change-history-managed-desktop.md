@@ -13,16 +13,44 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: bc04059d3ec63dd9395ed8f7a0e02b948e5cead1
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 6b18de29b339c3367bfacb8bdc8ec9725481e3e4
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730740"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779857"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
 この記事では、ドキュメントの新しい記事と更新された[Microsoft マネージド デスクトップします](index.yml)。 「更新された」記事には、重要な追加や修正が含め、誤字、スタイル、書式設定の問題の修正などのマイナーな修正は一覧に表示されません。 特定のコミットの履歴 (変更の詳細を含む) を表示するには、常にリポジトリにアクセス[GitHub。](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+
+## <a name="may-2021"></a>2021 年 5 月
+新しい記事または変更された記事 | 説明
+--- | ---
+[Microsoft マネージド デスクトップのデバイスをセットアップする](get-started/set-up-devices.md) | 更新された記事
+[デバイス一覧レポート](working-with-managed-desktop/device-inventory-report.md) | 更新された記事
+[Microsoft マネージド デスクトップのネットワーク構成](get-ready/network.md) | 更新された記事
+[診断ログ](service-description/diagnostic-logs.md) | 新しい記事
+[Microsoft マネージド デスクトップのテクノロジ](intro/technologies.md) | 更新された記事
+[ゲスト アカウントの前提条件](get-ready/guest-accounts.md) | 更新された記事
+[レポートを操作する](working-with-managed-desktop/reports.md) | 更新された記事
+
+## <a name="april-2021"></a>2021 年 4 月
+新しい記事または変更された記事 | 説明
+--- | ---
+[デバイス プロファイル](service-description/profiles.md) | 新しい記事
+[デバイスを登録するためのパートナー向け手順](get-started/register-devices-partner.md) | 更新された記事
+[新しいデバイスをユーザー自身が登録する](get-started/register-devices-self.md) | 更新された記事
+[既存のデバイスをユーザー自身が登録する](get-started/register-reused-devices-self.md) | 更新された記事
+[アドレス デバイス名の依存関係](get-ready/address-device-names.md) | 新しい記事
+[デバイス名](service-description/device-names.md) | 新しい記事
+[デバイスの削除](working-with-managed-desktop/remove-devices.md) | 新しい記事
+[Microsoft マネージド デスクトップの前提条件](get-ready/prerequisites.md) | 更新された記事
+[Microsoft マネージド デスクトップのアプリ](get-ready/apps.md) | 更新された記事
+[新しいデバイスを検証する](get-started/validate-device.md) | 新しい記事
+[Microsoft マネージド デスクトップのデバイスをセットアップする](get-started/set-up-devices.md) | 更新された記事
+[Microsoft マネージド デスクトップライフサイクル](service-description/device-lifecycle.md) | 更新された記事
+[Microsoft マネージド デスクトップデバイス](service-description/device-list.md) |更新された記事
 
 ## <a name="march-2021"></a>2021 年 3 月
 新しい記事または変更された記事 | 説明

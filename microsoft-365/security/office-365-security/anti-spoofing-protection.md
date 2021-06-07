@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17228f634dc4aee9cfd416ca676920a5b4e0fba2
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537969"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779496"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -54,14 +54,14 @@ EOP では、次のスプーフィング対策テクノロジを使用できま�
 
 - **テナント許可/ブロック リストでなりすましされた送信者を許可またはブロックする**: スプーフィング インテリジェンス分析の判定を上書きすると、なりすましされた送信者は、手動で許可またはブロックするエントリとなり、「テナント許可/ブロックリスト」の **[なりすまし]** タブにのみ表示されます。 また、スプーフィング インテリジェンスで検出される前に、手動でなりすまし送信者の許可またはブロック エントリを作成することもできます。 詳細については、「[EOP でテナント許可/ブロック リストを管理する](tenant-allow-block-list.md)」を参照してください。
 
-- **フィッシング詐欺対策ポリシー**: EOP では、フィッシング詐欺対策ポリシーに以下のなりすまし対策の設定が含まれます。
+- **フィッシング詐欺対策ポリシー**: EOP と Microsoft Defender for Office 365 では、フィッシング詐欺対策ポリシーに以下のなりすまし対策の設定が含まれます。
   - スプーフィング インテリジェンスのオン/オフを切り替える。
   - Outlook の認証されていない送信者の特定をオンまたはオフにする。
   - なりすまし送信者をブロックするアクションを指定する。
 
   詳細については、「[フィッシング詐欺対策ポリシーでのなりすまし設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。
 
-  **注**: Microsoft Defender for Office 365 のフィッシング対策ポリシーには、**なりすまし** 保護などの保護機能が追加されています。 詳細については、「[Microsoft Defender for Office 365 のフィッシング対策ポリシーにおける排他的な設定](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)」を参照してください。
+  **注**: Defender for Office 365 のフィッシング対策ポリシーには、**なりすまし** 保護などの保護機能が追加されています。 詳細については、「[Microsoft Defender for Office 365 のフィッシング対策ポリシーにおける排他的な設定](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)」を参照してください。
 
 - **スプーフィング検出レポート**: 詳細については、「[スプーフィング検出レポート](view-email-security-reports.md#spoof-detections-report)」を参照してください。
 

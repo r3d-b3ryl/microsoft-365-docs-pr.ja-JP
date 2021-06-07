@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 54b3e0cd63189e67de0aa101634508ff8833dc6a
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 71daccdbcb223ac48d80721bf0a296d9c1a7c98c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500244"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770099"
 ---
 # <a name="list-exposure-score-by-device-group"></a>デバイス グループ別の露出スコアの一覧表示
 
@@ -56,7 +58,7 @@ GET /api/exposureScore/ByMachineGroups
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前        | 型 | 説明
+| 名前        | 種類 | 説明
 |:--------------|:-------|:--------------|
 | Authorization | String | ベアラー {token}。**必須**。
 

@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: e820875a3350761824c3e4e67311e55507a9cb6f
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689203"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778402"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>デバイスごとの評価方法とプロパティのエクスポート
 
@@ -70,7 +70,7 @@ ms.locfileid: "52689203"
 
 ### <a name="11-methods"></a>1.1 メソッド
 
-メソッド | データ型 | 説明
+Method | データ型 | 説明
 :---|:---|:---
 セキュリティで保護された構成評価 **のエクスポート (OData)** | デバイス コレクションによる構成をセキュリティで保護します。 参照: [1.2 プロパティ (OData)](#12-properties-odata) | DeviceId、 ConfigurationId のすべての一意の組み合わせのエントリを含むテーブルを返します。 API は、OData プロトコルに従って、組織内のすべてのデータを Json 応答として取得します。 この方法は、100 K 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から @odata.nextLink フィールドを使用して次の結果をフェッチできます。
 セキュリティで保護された構成評価 **をエクスポートする (ファイル経由)** | デバイス コレクションによる構成をセキュリティで保護します。 参照: [1.2 プロパティ (OData)](#12-properties-odata) | DeviceId、 ConfigurationId のすべての一意の組み合わせのエントリを含むテーブルを返します。 この API ソリューションを使用すると、大量のデータを高速かつ確実に取得できます。 そのため、100 K を超えるデバイスを使用する大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとして取得します。 応答には、すべてのデータをダウンロードする URL が含Azure Storage。 この API を使用すると、次のように、すべてのデータAzure Storageダウンロードできます。1。  API を呼び出して、すべての組織データを含むダウンロード URL の一覧を取得します。 2。  ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
@@ -107,7 +107,7 @@ GeneratedTime | string | エクスポートが生成された時刻。
 
 ### <a name="21-methods"></a>2.1 メソッド
 
-メソッド | データ型 | 説明
+Method | データ型 | 説明
 :---|:---|:---
 ソフトウェア インベントリ評価 **のエクスポート (OData)** | デバイス コレクション別のソフトウェア インベントリ。 参照: [2.2 プロパティ (OData)](#22-properties-odata) | DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion のすべての一意の組み合わせのエントリを含むテーブルを返します。 API は、OData プロトコルに従って、組織内のすべてのデータを Json 応答として取得します。 この方法は、100 K 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から @odata.nextLink フィールドを使用して次の結果をフェッチできます。
 ソフトウェア インベントリ評価のエクスポート **(ファイル経由)** | デバイス ファイル別のソフトウェア インベントリ。 参照: [2.3 プロパティ (ファイル経由)](#23-properties-via-files) | DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion のすべての一意の組み合わせのエントリを含むテーブルを返します。 この API ソリューションを使用すると、大量のデータを高速かつ確実に取得できます。 そのため、100 K を超えるデバイスを使用する大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとして取得します。 応答には、すべてのデータをダウンロードする URL が含Azure Storage。 この API を使用すると、次のように、すべてのデータAzure Storageダウンロードできます。1。  API を呼び出して、すべての組織データを含むダウンロード URL の一覧を取得します。 2。  ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
@@ -144,7 +144,7 @@ GeneratedTime | string | エクスポートが生成された時刻。
 
 ### <a name="31-methods"></a>3.1 メソッド
 
-メソッド | データ型 | 説明
+Method | データ型 | 説明
 :---|:---|:---
 ソフトウェアの脆弱性評価のエクスポート **(OData)** | 調査コレクション See: [3.2 Properties (OData)](#32-properties-odata) | DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId のすべての一意の組み合わせのエントリを含むテーブルを返します。 API は、OData プロトコルに従って、組織内のすべてのデータを Json 応答として取得します。 この方法は、100 K 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から @odata.nextLink フィールドを使用して次の結果をフェッチできます。
 ソフトウェアの脆弱性評価のエクスポート **(ファイル経由)** | 調査エンティティ参照: [3.3 プロパティ (ファイル経由)](#33-properties-via-files) | DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId のすべての一意の組み合わせのエントリを含むテーブルを返します。 この API ソリューションを使用すると、大量のデータを高速かつ確実に取得できます。 そのため、100 K を超えるデバイスを使用する大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとして取得します。 応答には、すべてのデータをダウンロードする URL が含Azure Storage。 この API を使用すると、次のように、すべてのデータAzure Storageダウンロードできます。1。  API を呼び出して、すべての組織データを含むダウンロード URL の一覧を取得します。 2。  ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。

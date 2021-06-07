@@ -17,12 +17,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b8d0d991e46464bae3b4d21d6218b9b3b2d2b4cb
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.custom: api
+ms.openlocfilehash: 6a5684d71d34b3efdfe915ae674b4fcb90342154
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930115"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769799"
 ---
 # <a name="api-explorer"></a>API エクスプローラー
 
@@ -63,7 +64,7 @@ API エクスプローラーは、Defender for Endpoint によって提供され
 
 一部のサンプルでは、URL にパラメーター ({machine- ID} など) を指定する必要があります。
 
-## <a name="faq"></a>よくあるご質問 (FAQ)
+## <a name="faq"></a>FAQ
 
 **API エクスプローラーを使用するには、API トークンが必要ですか?** <br>
 API にアクセスするための資格情報は必要とされません。 API エクスプローラーは、要求を行うたびに Defender for Endpoint 管理ポータル トークンを使用します。

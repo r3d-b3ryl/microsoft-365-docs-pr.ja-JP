@@ -9,19 +9,21 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 7ce652d58be2d9ff28d82c088d5471a7bffdf6dc
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.date: 06/02/2021
+ms.topic: article
+ms.openlocfilehash: 10351d97ba72945f929e042dc72a37724a1df291
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570974"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769607"
 ---
-# <a name="test-how-microsoft-defender-for-endpoint-features-work-in-audit-mode"></a>Microsoft Defender for Endpoint の機能が監査モードで動作する方法をテストする
+# <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender の攻撃表面の縮小をテストする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,8 +31,7 @@ ms.locfileid: "51570974"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-監査モードでは、攻撃表面の縮小ルール、エクスプロイト保護、ネットワーク保護、およびフォルダー アクセスの制御を有効にできます。 監査モードでは、機能を有効にした場合に何が起こったかの記録を確認できます。
+組織のセキュリティ チームの一員である場合は、監査モードで実行する攻撃表面の縮小機能を構成して、組織での動作を確認できます。 特に、監査モードで攻撃表面の縮小ルール、エクスプロイト保護、ネットワーク保護、およびフォルダー アクセスの制御を有効にできます。 監査モードでは、機能を有効にした場合に何が起こったかの記録を確認できます。
 
 組織での機能の動作をテストするときに、監査モードを有効にできます。 これにより、一行のアプリが影響を受けずに行うのに役立ちます。 また、一定の期間に発生する疑わしいファイル変更の試行回数を確認できます。
 
@@ -52,9 +53,4 @@ Defender for Endpoint を使用すると、特に攻撃表面の縮小ルール�
 | 監査はすべてのイベントに適用されます | [ネットワーク保護を有効にする](enable-network-protection.md) | [ネットワーク保護イベント](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
 | 監査は個々の軽減策に適用されます | [エクスプロイト保護を有効にする](enable-exploit-protection.md) | [エクスプロイト保護イベント](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
 
-## <a name="related-topics"></a>関連項目
 
-* [エクスプロイトからデバイスを保護する](exploit-protection.md)
-* [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
-* [ネットワークを保護する](network-protection.md)
-* [重要なフォルダーを保護する](controlled-folders.md)

@@ -23,17 +23,17 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: ドメイン名を購入する方法については、Microsoft 365。
-ms.openlocfilehash: 3d5a5568a0e75a06f0880d82ea8e4a1a8d003689
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c4b3b0ac88671e72ed567998ad9d97486dfb6342
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635464"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779688"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
 
 > [!NOTE]
-> 組織が中国で 21Vianet がOffice 365している場合は、「How to buy a domain for Office 365 [21Vianet](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md)in China 」を参照してください。
+> 組織が中国で 21Vianet がOffice 365している場合は、「How to buy a domain for Office 365 [21Vianet](#how-to-buy-a-domain-for-office-365-operated-by-21vianet)in China 」を参照してください。
 
  *追加、変更またはドメインを削除するには、[ビジネスまたはエンタープライズ プラン](https://products.office.com/business/office)の **グローバル管理者** である **必要** があります。これらの変更は、テナント全体、*カスタマイズ管理者* または *正規ユーザー* に影響を与え、変更を加えることはできません。*  
 
@@ -89,9 +89,8 @@ ms.locfileid: "52635464"
 
 
 ::: moniker range="o365-21vianet"
+
 ## <a name="how-to-buy-a-domain-for-office-365-operated-by-21vianet"></a>21Vianet が運営する Office 365 のドメインを購入する方法
-
-
 
 専用ドメインをまだ持っていない場合は、ドメイン名レジストラー、ドメイン リセラー、現在のインターネット プロバイダーなどからオンラインで簡単に購入できます。21Vianet が運営する Office 365 にサインアップすると、たとえば、contoso.partner.onmschina.cn のようなドメイン名を与えられますが、fourthcoffee.com のようなカスタム ドメイン名を使うこともできます。
   
@@ -120,5 +119,5 @@ ms.locfileid: "52635464"
 ## <a name="related-content"></a>関連コンテンツ
 
 [ドメインをドメインに追加Microsoft 365](../setup/add-domain.md) (記事)\
-[ドメインに関する FAQ](../setup/domains-faq.yml) (記事)\
+[ドメインの FAQ](../setup/domains-faq.yml) (記事)\
 [現在のホスティング プロバイダーを使用して Web サイトを保持するために DNS レコードを更新する](../dns/update-dns-records-to-retain-current-hosting-provider.md) (記事)
