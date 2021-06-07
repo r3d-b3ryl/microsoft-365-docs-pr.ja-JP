@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 27d1b36f3e49112a2da95f9268c0e05fcaa72c89
-ms.sourcegitcommit: f0118e61e490496cb23189cc5c73b23e2ba939be
+ms.custom: api
+ms.openlocfilehash: c8403dee11070dcf0825fad2502d8d21d54933fd
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780143"
+ms.locfileid: "52782755"
 ---
 # <a name="raw-data-streaming-api"></a>Raw Data Streaming API
 
@@ -34,7 +35,8 @@ ms.locfileid: "52780143"
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>高度なハンティング イベントをイベント ハブまたは Azure ストレージ アカウントにストリーミングします。
 
-Defender for Endpoint では、高度な[](advanced-hunting-overview.md)ハンティングを通じて使用可能なすべてのイベントを[イベント](/azure/event-hubs/)ハブや Azure ストレージ アカウント[にストリーミングできます](/azure/event-hubs/)。
+
+Microsoft Defender for Endpoint は[](../defender/advanced-hunting-overview.md)、高度なハン[](/azure/event-hubs/)ティングを通じてイベント ハブや Azure ストレージ アカウントに利用可能な[ストリーミング イベントをサポートしています](/azure/storage/common/storage-account-overview)。
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
