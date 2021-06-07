@@ -17,12 +17,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 06/04/2021
-ms.openlocfilehash: 264a3b7a4a24c446048d6cfc6863f1ae9765566f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: a1b7891e9e397e7345eb73a94d6298a9da781d98
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789185"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795984"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -80,7 +80,7 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 すべての更新プログラムに含まれるもの 
 - パフォーマンスの向上。
 - サービスの改善。そして 
-- 統合の改善 (クラウド、Microsoft 365 Defender)。
+- 統合の改善 (Cloud、Microsoft 365 [Defender)。](/microsoft-365/security/defender/microsoft-365-defender)
 <br/>
 <details>
 <summary> May-2021 (プラットフォーム: 4.18.2105.4 |エンジン: 1.1.18200.4)</summary>
@@ -92,7 +92,8 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**
     
 ### <a name="whats-new"></a>新機能
-- 動作監視の改善 
+- 動作監視 [の改善](client-behavioral-blocking.md) 
+- 固定 [ネットワーク保護通知](network-protection.md) フィルター機能
 
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  

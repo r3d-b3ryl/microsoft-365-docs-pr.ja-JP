@@ -19,16 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c58c81cd4623ec03850c167cad285e052413174c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4e416aa9484f251280649035247a59dcc82ce750
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933423"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795960"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -38,7 +36,7 @@ ms.locfileid: "51933423"
 
 ## <a name="overview"></a>概要
 
-クライアントの動作ブロックは、Defender [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) for Endpoint の動作ブロックと格納機能のコンポーネントです。 デバイス (クライアントまたはエンドポイントとも呼ばれます) で疑わしい動作が検出されると、アーティファクト (ファイルやアプリケーションなど) が自動的にブロック、チェック、修復されます。 
+クライアントの動作ブロックは、Defender [](behavioral-blocking-containment.md) for Endpoint の動作ブロックと格納機能のコンポーネントです。 デバイス (クライアントまたはエンドポイントとも呼ばれます) で疑わしい動作が検出されると、アーティファクト (ファイルやアプリケーションなど) が自動的にブロック、チェック、修復されます。 
 
 :::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="クラウドとクライアントの保護":::
 
@@ -46,9 +44,9 @@ ms.locfileid: "51933423"
 
 ## <a name="how-client-behavioral-blocking-works"></a>クライアントの動作のブロックのしくみ
 
-[Microsoft Defender ウイルス対策、](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)不審な動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃など、デバイスで検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと適切な動作をミリ秒単位で区別し、各成果物を分類します。 ほぼリアルタイムで、アーティファクトが悪意のあると判明すると、デバイス上でブロックされます。 
+[Microsoft Defender ウイルス対策、](microsoft-defender-antivirus-in-windows-10.md)不審な動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃など、デバイスで検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと適切な動作をミリ秒単位で区別し、各成果物を分類します。 ほぼリアルタイムで、アーティファクトが悪意のあると判明すると、デバイス上でブロックされます。 
 
-疑わしい動作が検出されると、アラートが生成[](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts-queue)され、メッセージ () にMicrosoft Defender セキュリティ センターされます [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
+疑わしい動作が検出されると、アラートが生成[](alerts-queue.md)され、メッセージ () にMicrosoft Defender セキュリティ センターされます [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
 
 クライアントの動作ブロックは、攻撃の開始を防ぐだけでなく、実行を開始した攻撃を停止するのに役立つため、効果的です。 また、フィードバック [ループブロック](feedback-loop-blocking.md) (別の動作ブロックと格納機能) を使用すると、組織内の他のデバイスに対する攻撃が防止されます。
 
@@ -59,19 +57,19 @@ ms.locfileid: "51933423"
 
 |戦術 |   検出の脅威名 |
 |----|----|
-|初期アクセス | 動作:Win32/InitialAccess.*!ml |
-|実行  | 動作:Win32/Execution.*!ml |
-|永続性    | 動作:Win32/Persistence.*!ml |
-|特権エスカレーション   | 動作:Win32/PrivilegeEscalation.*!ml |
-|Defense Evasion    | 動作:Win32/DefenseEvasion.*!ml |
-|資格情報アクセス  | 動作:Win32/CredentialAccess.*!ml |
-|Discovery  | 動作:Win32/Discovery.*!ml |
-|横方向の動き | 動作:Win32/LateralMovement.*!ml |
-|Collection |   動作:Win32/Collection.*!ml |
-|コマンドとコントロール | 動作:Win32/CommandAndControl.*!ml |
-|Exfiltration   | 動作:Win32/Exfiltration.*!ml |
-|影響 | 動作:Win32/Impact.*!ml |
-|未分類  | 動作:Win32/Generic.*!ml |
+|初期アクセス | `Behavior:Win32/InitialAccess.*!ml` |
+|実行  | `Behavior:Win32/Execution.*!ml` |
+|永続性    | `Behavior:Win32/Persistence.*!ml` |
+|特権エスカレーション   | `Behavior:Win32/PrivilegeEscalation.*!ml` |
+|Defense Evasion    | `Behavior:Win32/DefenseEvasion.*!ml` |
+|資格情報アクセス  | `Behavior:Win32/CredentialAccess.*!ml` |
+|Discovery  | `Behavior:Win32/Discovery.*!ml` |
+|横方向の動き | `Behavior:Win32/LateralMovement.*!ml` |
+|Collection |   `Behavior:Win32/Collection.*!ml` |
+|コマンドとコントロール | `Behavior:Win32/CommandAndControl.*!ml` |
+|Exfiltration   | `Behavior:Win32/Exfiltration.*!ml` |
+|影響 | `Behavior:Win32/Impact.*!ml` |
+|未分類  | `Behavior:Win32/Generic.*!ml` |
 
 > [!TIP]
 > 特定の脅威の詳細については、「最近のグローバル脅威 **[アクティビティ」を参照してください](https://www.microsoft.com/wdsi/threats)**。
@@ -81,22 +79,13 @@ ms.locfileid: "51933423"
 
 組織で Defender for Endpoint を使用している場合、クライアントの動作ブロックは既定で有効になっています。 ただし、動作ブロックや格納を含むすべての Defender [](behavioral-blocking-containment.md)for Endpoint 機能を利用するには、Defender for Endpoint の次の機能が有効で構成されていることを確認してください。
 
-- [Defender for Endpoint baselines](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-security-baseline)
+- [Defender for Endpoint baselines](configure-machines-security-baseline.md)
 
-- [Defender for Endpoint にオンボードされているデバイス](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-configure)
+- [Defender for Endpoint にオンボードされているデバイス](onboard-configure.md)
 
-- [ブロック モードの EDR](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
+- [ブロック モードの EDR](edr-in-block-mode.md)
 
-- [攻撃面の減少](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+- [攻撃面の減少](attack-surface-reduction.md)
 
-- [次世代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (ウイルス対策)
+- [次世代保護](configure-microsoft-defender-antivirus-features.md) (ウイルス対策、マルウェア対策、その他の脅威保護機能)
 
-## <a name="related-articles"></a>関連記事
-
-- [動作ブロックと封じ込め](behavioral-blocking-containment.md)
-
-- [フィードバック ループのブロック](feedback-loop-blocking.md)
-
-- [(ブログ)動作のブロックと格納: 光学を保護に変換する](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
-
-- [エンドポイントのリソースに役立つ Defender](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/helpful-resources)

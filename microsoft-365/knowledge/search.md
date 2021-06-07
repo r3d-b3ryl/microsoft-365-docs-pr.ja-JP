@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Microsoft Viva でトピックを検索する方法について説明します。
-ms.openlocfilehash: 54a143ea0960bf56a0d1c5224658bea404c7621e
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301718"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795996"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Microsoft Search を使用して Microsoft Viva のトピックを検索する
 
@@ -55,8 +55,5 @@ Viva Topics では、トピックを手動で編集して、トピックの頭�
 - 一般的に "旅行" を検索するユーザーの場合は、「旅行」に関するトピックを作成します。そのトピックには、表示される情報が含されます。 トピックの説明で Concur 外部サイトへのリンクを追加する方法を検討してください。 代わりに、Microsoft 365 テナントでホストされている内部旅行予約サイトへのリンクである場合は、"ピン留めされたリソース" に追加できます。
  
 ### <a name="search-results-priority"></a>検索結果の優先度 
- 
-ユーザー検索エクスペリエンスでは、ユーザーが "旅行" のような用語を検索すると、検索結果は Microsoft Search で次の優先度で表示されます。
-1. 発行済みトピックまたは確認済みトピック 
-2. ブックマーク
-3. 推奨されるトピック
+
+ユーザーの検索エクスペリエンスでは、ユーザーが "旅行" のような用語を検索すると、ブックマークが使用可能な場合、ブックマークがトピックの前に表示されます。

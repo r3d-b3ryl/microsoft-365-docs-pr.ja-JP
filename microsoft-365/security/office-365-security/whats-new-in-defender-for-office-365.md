@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4bb1450790883deec295f554ddf9614c0f01fe2d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2895598c8d891b08229f072b7bff6b6549639093
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930485"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796068"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -42,6 +42,12 @@ ms.locfileid: "51930485"
 > [!TIP]
 > Microsoft Defender for Office 365ありませんか? [試用版を開始するために販売に問い合わせ。](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
+## <a name="aprilmay-2021"></a>2021 年 4 月/5 月 
+
+- [[電子メール](mdo-email-entity-page.md)エンティティ] ページ : 脅威、認証と検出、発発の詳細、および新しい電子メール プレビュー エクスペリエンスに関する情報が充実した電子メールの統合された 360 度ビュー。
+- [Office 365管理 API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): 配信アクション、元の配信場所と最新の配信場所、および更新された検出の詳細を追加する EmailEvents (RecordType 28) の更新。
+- [脅威分析 for Defender for Office 365](/microsoft-365/security/defender/threat-analytics): アクティブな脅威アクター、一般的な手法、攻撃表面を表示し、進行中のキャンペーンに関する Microsoft の研究者からの広範な報告を表示します。 
+
 ## <a name="februarymarch-2021"></a>2021 年 2 月/3 月 
 
 - 検索エクスペリエンスでのアラート ID の統合 (アラート ID とAlert-Explorerナビゲーションを使用[した検索](threat-explorer.md))
@@ -49,7 +55,7 @@ ms.locfileid: "51930485"
 - 試用版テナントのエクスプローラー (およびリアルタイム検出) データの保持と検索の制限を 7 (前の制限) から 30 日間のハンティング エクスペリエンス [に拡張する](threat-explorer.md)
 - 保護されたユーザーまたはドメインに対する偽装攻撃を検索するための、エクスプローラー内の偽装ドメインと偽装ユーザー (およびリアルタイムの検出) と呼ばれる新しい検索ピボット。 詳細については、「詳細」を [参照してください](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。 (Microsoft Defender for Office 365プラン 1 またはプラン 2)
 
-## <a name="december-2020"></a>2020 年 12 月
+## <a name="december-2020"></a>2020年12月
 
 - [既定ではセキュリティで保護Office 365](secure-by-default.md)
 - 自動調査の機能強化: 手動でトリガーされた電子メール調査に関する一般的なアラート、メールボックスの変更を別のエンティティ カテゴリとして扱い、冗長な URL ブロック アクションを削除し、ユーザーが侵害された調査のために送信メール クラスターを作成します。

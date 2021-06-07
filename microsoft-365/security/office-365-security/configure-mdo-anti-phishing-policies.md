@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender を使用している組織で利用可能な高度なフィッシング対策ポリシーを作成、変更、および削除する方法をOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8cbe517ef2a702e3e4fd7f6af4ee1d7ed1dd13d2
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 9af3824b245cd976d1e859d6ebc4efcda47325e0
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789163"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793090"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender でフィッシング対策ポリシーを構成Office 365
 
@@ -164,7 +164,7 @@ Office 365 の Defender でのフィッシング対策保護の有効性を高�
 
        偽装用の **カスタム ドメイン** の管理フライアウトに戻り、リストから 1 つ以上のエントリを選択してエントリを削除できます。 [検索] アイコンの [検索] ボックスを ![ 使用してエントリ ](../../media/m365-cc-sc-create-icon.png) **を検索** できます。
 
-       少なくとも 1 つのエントリを選択すると、[削除] アイコンが表示され、選択したエントリを ![ ](../../media/m365-cc-sc-delete-icon.png) 削除できます。
+       少なくとも 1 つのエントリを選択すると、[ドメインの削除] アイコンが表示され、選択したエントリを ![ ](../../media/m365-cc-sc-delete-icon.png) 削除できます。
 
    - **信頼できる送信者と** ドメインを追加する : : [管理] **(nn)** 信頼できる送信者とドメインをクリックして、ポリシーの偽装保護の例外を指定します。 表示される **偽装保護用** のカスタム ドメインの管理フライアウトで、次の設定を構成します。
       - **[送信者**] : [送信者] **タブが** 選択され、[送信者の追加] アイコン ![ をクリックします ](../../media/m365-cc-sc-create-icon.png) 。 [信頼 **できる送信者の追加]** フライアウトが表示されたら、ボックスに電子メール アドレスを入力し、[追加] を **クリックします**。 必要な回数だけこの手順を繰り返します。 既存のエントリを削除するには、エントリの ![ [削除] ](../../media/m365-cc-sc-close-icon.png) アイコンをクリックします。
@@ -243,7 +243,7 @@ Office 365 の Defender でのフィッシング対策保護の有効性を高�
 
    完了したら、**[次へ]** をクリックします。
 
-7. 表示された **[レビュー]** ページで、設定を確認します。 各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。
+7. 表示された **[レビュー]** ページで、設定を確認します。 各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 または、[戻る] **をクリック** するか、ウィザードで特定のページを選択します。
 
    完了したら、[送信] を **クリックします**。
 

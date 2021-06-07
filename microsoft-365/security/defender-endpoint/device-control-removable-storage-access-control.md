@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Device Control リムーバブル 記憶域アクセス制御
+title: Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 description: Microsoft Defender for Endpoint の概要
 keywords: リムーバブル 記憶域メディア
 search.product: eADQiWindows 10XVcnh
@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 46ea74d11f9c54cd1d967058433a74ef4c1ead19
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 018bc3549cd7a25df5bdd86d98d351e19027c31f
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300174"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796032"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル 記憶域アクセス制御
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Defender for Endpoint Device Control リムーバブル 記憶域アクセス制御を使用すると、次のタスクを実行できます。
+Microsoft Defender for Endpoint Device Control リムーバブル Storageアクセス制御を使用すると、次のタスクを実行できます。
 - 除外の付いたリムーバブル 記憶域への読み取り、書き込み、または実行アクセスの監査、許可、または防止
 
 |特権 |アクセス許可  |
@@ -41,7 +41,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル 記憶域ア�
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
-マルウェア対策クライアント バージョン **4.18.2103.3** 以降の Windows 10 デバイスにリムーバブル 記憶域アクセス制御を展開します。
+マルウェア対策クライアント Storageバージョン **4.18.2103.3** 以降の Windows 10 デバイスにリムーバブル アクセス制御を展開します。
 1. **4.18.2104** 以降: SerialNumberId の追加、VID_PIDパス ベースの GPO のサポート
 
 2. **4.18.2105** 以降 : HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId のワイルドカード サポートの追加、特定のコンピューター上の特定のユーザーの組み合わせ、削除可能な SSD (SanDisk Extreme SSD)/USB Attached SCSI (UAS) のサポート
@@ -68,7 +68,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル 記憶域ア�
         - CdRomDevices
     - DeviceId
     - HardwareId
-    - InstancePathId
+    - InstancePathId: InstancePathId は、システム内のデバイスを一意に識別する文字列です (たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0)。 末尾の番号 (たとえば、&**0)** は、使用できるスロットを表し、デバイス間で変更される場合があります。 最適な結果を得る場合は、末尾にワイルドカードを使用します。 たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
     - FriendlyNameId
     - SerialNumberId
     - VID
@@ -156,14 +156,14 @@ Microsoft Defender for Endpoint Device Control リムーバブル 記憶域ア�
     - 6: 書き込みと実行
     - 7: 読み取りおよび書き込みと実行
 
-## <a name="common-removable-storage-access-control-scenarios"></a>一般的なリムーバブル 記憶域アクセス制御のシナリオ
+## <a name="common-removable-storage-access-control-scenarios"></a>一般的なリムーバブル Storage アクセス制御のシナリオ
 
-Microsoft Defender for Endpoint リムーバブル 記憶域アクセス制御について理解するために、一般的なシナリオをまとめました。
+Microsoft Defender for Endpoint Removable Storageアクセス制御について理解するために、一般的なシナリオをまとめました。
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>シナリオ 1: すべてのユーザーへの書き込みおよび実行アクセスを防止するが、特定の承認済み USB を許可する
 
 1. グループを作成する
-    1. グループ 1: リムーバブル 記憶域と CD/DVD。 リムーバブル 記憶域と CD/DVD の例は、グループ **9b28fae8-72f7-4267-a1a5-685f747a7146** のサンプルの Any Removable Storage および [CD-DVD Group.xmlファイル](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) です。
+    1. グループ 1: リムーバブル 記憶域と CD/DVD。 リムーバブル ストレージと CD/DVD の例として、グループ **9b28fae8-72f7-4267-a1a5-685f747a7146** のサンプル (Any Removable Storage および [CD-DVD Group.xmlファイル](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)) があります。
     
     2. グループ 2: デバイスのプロパティに基づく承認済み USB。 この使用例の例は、サンプル承認済み [USB Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ファイルのインスタンス ID – グループ **65fa649a-a111-4912-9294-fb6337a25038** です。
 
@@ -192,11 +192,11 @@ Microsoft Defender for Endpoint リムーバブル 記憶域アクセス制御�
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>グループ ポリシーによるポリシーの展開と管理
 
-リムーバブル 記憶域アクセス制御機能を使用すると、グループ ポリシーを使用してユーザーまたはデバイス、または両方にポリシーを適用できます。
+リムーバブル アクセスStorage機能を使用すると、グループ ポリシー経由でユーザーまたはデバイス、または両方にポリシーを適用できます。
 
 ### <a name="licensing"></a>ライセンス
 
-リムーバブル 記憶域アクセス制御を開始する前に [、Microsoft 365 サブスクリプションを確認する必要があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 リムーバブル 記憶域アクセス制御にアクセスして使用するには、Microsoft 365 E5 が必要です。
+リムーバブル アクセス制御の使用を開始するStorage、サブスクリプションを確認 [するMicrosoft 365があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 リムーバブル アクセス制御にアクセスして使用Storage、アクセス制御が必要Microsoft 365 E3。
 
 ### <a name="deploying-policy-via-group-policy"></a>グループ ポリシーによるポリシーの展開
 
@@ -214,7 +214,7 @@ Microsoft Defender for Endpoint リムーバブル 記憶域アクセス制御�
     
     :::image type="content" source="images/usage-sid-property.png" alt-text="SID プロパティ属性の使用法を示すコードを表示する画面":::
 
-3. ルールとグループ XML ファイルの両方をネットワーク共有フォルダーに保存し、ネットワーク共有フォルダー パスを [グループ ポリシー] 設定に格納します。[コンピューターの構成] -> [管理用テンプレート] -> Windows コンポーネント **-> Microsoft Defender Antivirus -> Device Control: 'Define** device control policy groups' and 'Define device control policy rules' 。
+3. ルールとグループ XML ファイルの両方をネットワーク共有フォルダーに保存し、ネットワーク共有フォルダー パスを [グループ ポリシー] 設定に格納します。[コンピューターの構成] -> [管理用テンプレート] -> Windows コンポーネント **-> Microsoft Defender ウイルス対策 ->** Device Control: 'デバイス コントロール ポリシー グループの定義' と [デバイス制御ポリシー ルールの定義] です。
 
     - ポリシーを持つには、ターゲット コンピューターがネットワーク共有にアクセスできる必要があります。 ただし、ポリシーを読み取った後は、コンピューターの再起動後も、ネットワーク共有接続は不要になります。
 
@@ -222,11 +222,11 @@ Microsoft Defender for Endpoint リムーバブル 記憶域アクセス制御�
 
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>Intune OMA-URI によるポリシーの展開と管理
 
-リムーバブル 記憶域アクセス制御機能を使用すると、OMA-URI を介してユーザーまたはデバイス、または両方にポリシーを適用できます。
+リムーバブル アクセスStorage機能を使用すると、OMA-URI を介してユーザーまたはデバイス、または両方にポリシーを適用できます。
 
 ### <a name="licensing"></a>ライセンス
 
-リムーバブル 記憶域アクセス制御を開始する前に [、Microsoft 365 サブスクリプションを確認する必要があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 リムーバブル 記憶域アクセス制御にアクセスして使用するには、Microsoft 365 E3 が必要です。
+リムーバブル アクセス制御の使用を開始するStorage、サブスクリプションを確認 [するMicrosoft 365があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 リムーバブル アクセス制御にアクセスして使用Storage、アクセス制御が必要Microsoft 365 E3。
 
 ### <a name="permission"></a>アクセス許可
 
@@ -238,12 +238,12 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
 
 ### <a name="deploying-policy-via-oma-uri"></a>OMA-URI によるポリシーの展開
 
-**Microsoft Endpoint Manager 管理センター ( https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 以降 & プロファイル: Custom**
+**Microsoft エンドポイント マネージャー 管理センター ( https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 以降 & プロファイル: Custom**
 
 1. グループごとに、OMA-URI ルールを作成します。
     - OMA-URI: 
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b **GroupGUID**%7d/GroupData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b **GroupGUID**%7d/GroupData
 
       たとえば、サンプル **内のリムーバブル 記憶域と CD/DVD** グループの場合、リンクは次のようになります。
 
@@ -257,7 +257,7 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
 
     - OMA-URI: 
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
 
       たとえば、ブロック書き込みおよび実行アクセスの場合、サンプルで承認 **された USB** ルールを許可するには、次のリンクが必要です。 
 
@@ -271,11 +271,11 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
 
 この機能はまだ使用できません。 
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でデバイスコントロールリムーバブル 記憶域アクセス制御データを表示する
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint Storageデバイス コントロールリムーバブル アクセス制御データを表示する
 
-Microsoft 365 セキュリティ ポータルには、Device Control リムーバブル 記憶域アクセス制御によってブロックされたリムーバブル 記憶域が表示されます。 Microsoft 365 セキュリティにアクセスするには、次のサブスクリプションが必要です。
+セキュリティ ポータルMicrosoft 365、Device Control リムーバブル アクセス制御によってブロックされたリムーバブル ストレージStorage表示されます。 セキュリティにアクセスするにはMicrosoft 365サブスクリプションが必要です。
 
-- Microsoft 365 for E5 レポート
+- Microsoft 365 E5 レポートの詳細
 
 ```
 //events triggered by RemovableStoragePolicyTriggered

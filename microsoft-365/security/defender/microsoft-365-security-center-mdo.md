@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ec5d22caa52ffaa061637cb8c510a0efaf566b6a
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770980"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782899"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの Microsoft Defender for Office 365
 
@@ -56,7 +56,7 @@ ms.locfileid: "52770980"
 |データのプライバシー||コンプライアンス[センター Microsoft 365する](https://compliance.microsoft.com/homepage)||
 |検索|検索|||
 |レポート|レポート|||
-|サービス アシュアランス|Settings|||
+|サービス アシュアランス|設定|||
 |
 
 <https://security.microsoft.com> で強化された[Microsoft 365 セキュリティ センター](./overview-security-center.md) は、Microsoft Defender セキュリティ センターや Office 365 セキュリティ/コンプライアンス センターなどの既存の Microsoft セキュリティ ポータルのセキュリティ機能を組み合わせた製品です。 この強化されたセンターは、セキュリティ チームが脅威から組織を効果的かつ効率的に保護するのに役立ちます。

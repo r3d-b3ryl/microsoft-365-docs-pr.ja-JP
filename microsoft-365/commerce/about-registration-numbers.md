@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: Microsoft 製品またはサービスを購入する際の登録番号とレビュー中の通知について説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 8ec97356f9859e928a8ee435f406c15f4f17a4c4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 93cba6c1eebf0b41a94d6a6e3aac83693218f407
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332224"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795972"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>登録番号とレビュー中の通知について
 
@@ -86,7 +86,7 @@ ms.locfileid: "52332224"
 | **ポーランド**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – 税の識別番号<br>[PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – ポーランドで使用される国民識別番号 (ポーランド Powszechny Elektroniczny System Ewidencji Ludności, Universal Electronic System for registration of the Population) |  |  |  |  |
 | **Russia**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) – 納税者番号 (ロシア語 "Individualiy Nomer Nalogoplatelshika") |  |  |  |  |
 | **サウジアラビア** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) – 税の識別番号 |  |  |  |  |
-| **南アフリカ** | TRN – トラフィック登録番号 |  |  |  |  |
+| **南アフリカ** | TRN – 税の参照番号 |  |  |  |  |
 | **南スーダン** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税の識別番号 |  |  |  |  |
 | **Tajikistan**  | INN – 税の識別番号<br>EIN – 雇用主の識別番号<br>KPP – これは、組織登録の理由を反映するコードです。 |  |  |  |  |
 | **タイ** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税の識別番号 |  |  |  |  |

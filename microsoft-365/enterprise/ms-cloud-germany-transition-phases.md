@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 6778248b127894102d15d4d94e3d2f099e3bfa37
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3a5b95bac74ae405f4e1d6fa91ba4ab51e4a9d05
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771203"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796044"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -50,8 +50,7 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 Global サー�
 |Power BI & Dynamics 365|15 日以上|Microsoft|ユーザー Power BI Dynamics 365 コンテンツを移行します。|
 |Azure の最終AD|1~ 2 日|Microsoft|テナントを世界中に切り替えます。|
 |Clean-Up|1~ 2 日|顧客|Active Directory フェデレーション サービス (AD FS) 証明書利用者信頼、Azure AD Connect、および Office クライアントの再起動など、Microsoft Cloud Deutschland への従来の接続をクリーンアップします。|
-|エンドポイントが無効|30 日間|Microsoft|Azure AD の最終決定から 30 日後、Microsoft Cloud Deutschland Azure AD サービスは移行された組織のエンドポイント アクセスを停止します。 認証などのエンドポイント要求は、Microsoft Cloud Deutschland サービスに対してこの時点から順方向に失敗します。 |
-
+|エンドポイントが無効|30 日間|Microsoft|Azure AD の最終決定から 30 日後、Microsoft Cloud Deutschland Azure AD サービスは移行された組織のエンドポイント アクセスを停止します。 認証などのエンドポイント要求は、Microsoft Cloud Deutschland サービスに対してこの時点から順方向に失敗します。 Microsoft Cloud Deutschland の Office 365 サービスにリンクされているインスタンスで Azure ワークロードを実行しているお客様は、後で最終移行フェーズに移行されます。 |
 
 フェーズとそのアクションにより、重要なデータとエクスペリエンスがグローバル サービスのOffice 365されます。 テナントが移行キューに追加されると、各ワークロードは、バックエンド サービスで実行される一連の手順として完了します。 一部のワークロードでは、管理者 (またはユーザー) によるアクションが必要な場合や、移行が実行および説明されているフェーズの使用状況に影響を与える場合があります。「移行の整理方法」を [参照してください。](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -136,6 +135,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 - 組織で引き続き 2010 SharePoint使用している場合、2021 年 12 月 31 日以降は機能しなくなりました。 SharePoint 2013 ワークフローは引き続きサポートされます。ただし、2020 年 11 月 1 日から新しいテナントでは既定でオフになっています。 オンライン サービスへの移行SharePoint、サポートされている他のソリューションに移動Power Automate勧めします。
  - SharePoint Online インスタンスがまだ移行されていない Microsoft Cloud Deutschland のお客様は、SharePoint Online PowerShell モジュール/Microsoft.SharePointOnline.CSOM バージョン 16.0.20616.12000 以下に滞在する必要があります。 それ以外の場合、powerShell SharePointクライアント側のオブジェクト モデルを使用してオンラインに接続できない場合があります。
 - このフェーズでは、URL の背後にある IP SharePointが変更されます。 Office 365 グローバル サービスに移行すると、保持されているテナント URL (およびなど) のアドレスがワールドワイド Microsoft 365 URL と IP アドレス範囲 (SharePoint Online および `contoso.sharepoint.de` `contoso-my.sharepoint.de` [OneDrive for Business) に変更](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)されます。
+- サービスSharePointサービスOneDrive移行中、Officeが期待通り動作しない場合があります。 
 
 > [!NOTE]
 > 電子情報開示を使用している場合は、電子情報開示の移行エクスペリエンスを [認識してください](ms-cloud-germany-transition-add-scc.md)。
@@ -169,7 +169,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **PowerShell を使用Exchange Online** 管理者Exchange Online適用されます。
 
-移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 例:
+移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 以下に例を示します。
 
 ```powershell
 New-PSSession 
@@ -256,7 +256,7 @@ Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| Microsoft Dynamics リソース | Microsoft Dynamics をお持ちのお客様は、Microsoft Engineering または Microsoft FastTrack が Microsoft Dynamics 365 をグローバル サービス インスタンスOffice 365移行します。* |<ul><li>移行後、管理者は組織を検証します。 <</li><li>管理者は、必要に応じてワークフローを変更します。 </li><li>管理者は、必要に応じて AdminOnly モードをクリアします。</li><li>管理者は、必要に応じて _サンドボックスから組織_ の種類を変更します。</li><li>インスタンス (org) にアクセスする新しい URL をエンド ユーザーに通知します。</li><li>新しいエンドポイント URL への受信接続を更新します。 </li><li>移行中は、ユーザーが Dynamics サービスを利用できません。 </li><li>ユーザーは、各組織の移行後に組織の正常性と機能を検証する必要があります。</li></ul>|
+| Microsoft Dynamics リソース | Microsoft Dynamics をお持ちのお客様は、Microsoft Engineering または Microsoft FastTrack が Microsoft Dynamics 365 をグローバル サービス インスタンスOffice 365移行します。* |<ul><li>移行後、管理者は組織を検証します。 </li><li>管理者は、必要に応じてワークフローを変更します。 </li><li>管理者は、必要に応じて AdminOnly モードをクリアします。</li><li>管理者は、必要に応じて _サンドボックスから組織_ の種類を変更します。</li><li>インスタンス (org) にアクセスする新しい URL をエンド ユーザーに通知します。</li><li>新しいエンドポイント URL への受信接続を更新します。 </li><li>移行中は、ユーザーが Dynamics サービスを利用できません。 </li><li>ユーザーは、各組織の移行後に組織の正常性と機能を検証する必要があります。</li></ul>|
 ||||
 
 \* (i) Microsoft Dynamics 365 をお持ちのお客様は、提供される移行プロセスで定義されているこの移行シナリオでアクションを実行する必要があります。 (ii) お客様がアクションを実行できなかった場合、Microsoft は移行を完了できません。 (iii) お客様の不作為により Microsoft が移行を完了できない場合、お客様のサブスクリプションは 2021 年 10 月 29 日に期限切れになります。
