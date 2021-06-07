@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/13/2021
-ms.openlocfilehash: 17a76b39b51293de82cf9b3e5f0e323ec3d28844
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/03/2021
+ms.openlocfilehash: e67f783552cca5cc36c1563f5e5557796028ea18
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538041"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772019"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -465,6 +465,20 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 詳細については、「Microsoft Defender update for Windows オペレーティング システムのインストール[イメージ」を参照してください](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
 <details>
+<summary>1.1.2106.01</summary>
+
+&ensp;パッケージ のバージョン: **1.1.2106.01**    
+&ensp;プラットフォーム のバージョン: **4.18.2104.14**   
+&ensp;エンジンのバージョン: **1.1.18100.6**  
+&ensp;署名バージョン: **1.339.1923.0**    
+    
+### <a name="fixes"></a>修正プログラム
+- なし
+
+### <a name="additional-information"></a>追加情報
+- なし  
+<br/>
+</details><details>
 <summary>1.1.2105.01</summary>
 
 &ensp;パッケージのバージョン: **1.1.2105.01**    

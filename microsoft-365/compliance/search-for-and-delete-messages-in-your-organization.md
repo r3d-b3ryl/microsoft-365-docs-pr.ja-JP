@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: セキュリティ/コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: 629b236be3f857da47674cda9350d8b89e6f3445
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Microsoft 365 コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
+ms.openlocfilehash: 95683ed5dc6cce8ff109976ebb0d13215593f046
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537645"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770711"
 ---
 # <a name="search-for-and-delete-email-messages"></a>メール メッセージを検索して削除する
 
@@ -46,19 +46,23 @@ ms.locfileid: "52537645"
   > [!NOTE]
   > **組織の管理** の役割グループは、Exchange Online とセキュリティ/コンプライアンス センターの両方にあります。 これらは、異なる権限を持つ個別の役割グループです。 Exchange Online で **組織の管理** のメンバーであっても、メール メッセージを削除するために必要なアクセス許可は付与されません。 セキュリティ/コンプライアンス センターで **検索と消去** の役割が (直接、または **組織の管理** などの役割グループを通じて) 割り当てられていない場合、手順 3 で [**New-ComplianceSearchAction**] コマンドレットを実行し、"パラメーター名 'Purge' と一致するパラメーターが見つかりません" というメッセージが表示されます。
 
-- メッセージを削除するには、セキュリティ/コンプライアンス センターの PowerShell を使用する必要があります。 接続方法については、「[手順 2](#step-2-connect-to-security--compliance-center-powershell)」を参照してください。
+- メッセージを削除するには、セキュリティ/コンプライアンス センターの PowerShell を使用する必要があります。 接続方法については、[手順 1](#step-1-connect-to-security--compliance-center-powershell) を参照してください。
 
 - メールボックスごとに最大 10 個のアイテムを一度に削除できます。 メッセージを検索し削除するための機能はインシデント対応ツールを意図したものなので、この制限により、メールボックスからすばやくかつ確実にメッセージを削除できます。 これは、ユーザーのメールボックスをクリーンアップするための機能ではありません。
 
-- コンテンツ検索で検索と削除アクションを実行してアイテムを削除するために使用できるメールボックスの最大数は 50,000 個です。 検索 ([手順 1](#step-1-create-a-content-search-to-find-the-message-to-delete) で作成) で 50,000 個を超えるメールボックスを検索する場合、削除アクション (手順 3 で作成) は失敗します。 1 回の検索で 50,000 個を超えるメールボックスを検索するのは、通常、組織内のすべてのメールボックスを検索に含めるように構成した場合です。 この制限は、検索クエリに一致するアイテムが 50,000 個未満のメールボックスに含まれている場合でも適用されます。 検索のアクセス許可を使用して 50,000 個を超えるメールボックスからアイテムを検索および消去する方法については、「[詳細情報](#more-information)」セクションを参照してください。
+- コンテンツ検索で検索と削除アクションを実行してアイテムを削除するために使用できるメールボックスの最大数は 50,000 個です。 検索 ([手順 2](#step-2-create-a-content-search-to-find-the-message-to-delete) で作成) で 50,000 個を超えるメールボックスを検索する場合、削除アクション (手順 3 で作成) は失敗します。 1 回の検索で 50,000 個を超えるメールボックスを検索するのは、通常、組織内のすべてのメールボックスを検索に含めるように構成した場合です。 この制限は、検索クエリに一致するアイテムが 50,000 個未満のメールボックスに含まれている場合でも適用されます。 検索のアクセス許可を使用して 50,000 個を超えるメールボックスからアイテムを検索および消去する方法については、「[詳細情報](#more-information)」セクションを参照してください。
 
 - この記事の手順は、Exchange Online のメールボックスとパブリック フォルダーにあるアイテムを削除する場合にのみ使用できます。 SharePoint や OneDrive for Business のサイトからコンテンツを削除する場合には使用できません。
 
 - Advanced eDiscovery ケースのレビュー セット内のメール アイテムは、この記事の手順で削除することはできません。 これは、レビュー セット内のアイテムはライブ サービスではなく、Azure ストレージの場所に保存されるからです。 これは、手順 1 で作成したコンテンツ検索では返されないことを意味します。 レビュー セット内のアイテムを削除するには、レビュー セットが含まれている Advanced eDiscovery ケースを削除する必要があります。 詳細については、「[Close or delete an Advanced eDiscovery case (Advanced eDiscovery ケースを閉じるか、または削除する)](close-or-delete-case.md)」を参照してください。
 
-## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>手順 1: コンテンツ検索を作成して、削除するメッセージを探す
+## <a name="step-1-connect-to-security--compliance-center-powershell"></a>手順 1: セキュリティ/コンプライアンス センターの PowerShell に接続する
 
-最初の手順は、組織のメールボックスから削除するメッセージを見つけるコンテンツ検索を作成し、実行することです。 セキュリティ/コンプライアンス センターを使用するか、**New-ComplianceSearch** コマンドレットと **Start-ComplianceSearch** コマンドレットを実行すると、検索を作成できます。 [手順 3](#step-3-delete-the-message) で **New-ComplianceSearchAction -Purge** コマンドを実行すると、この検索のクエリに一致するメッセージは削除されます。 コンテンツ検索を作成し、検索クエリを構成する方法については、次のトピックを参照してください。
+最初の手順は、組織のセキュリティ/コンプライアンス センターの PowerShell に接続することです。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
+
+## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>手順 2: コンテンツ検索を作成して、削除するメッセージを探す
+
+2 番目の手順は、組織のメールボックスから削除するメッセージを見つけるコンテンツ検索を作成し、実行することです。 Microsoft 365 コンプライアンス センターを使用するか、セキュリティ/コンプライアンス PowerShell の **New-ComplianceSearch** コマンドレットと **Start-ComplianceSearch** コマンドレットを実行すると、検索を作成できます。 [手順 3](#step-3-delete-the-message) で **New-ComplianceSearchAction -Purge** コマンドを実行すると、この検索のクエリに一致するメッセージは削除されます。 コンテンツ検索を作成し、検索クエリを構成する方法については、次のトピックを参照してください。
 
 - [Office 365 のコンテンツ検索](content-search.md)
 
@@ -83,7 +87,7 @@ ms.locfileid: "52537645"
 
 - 検索結果をプレビューして、検索が、削除を希望するメッセージだけを返したことを確認します。
 
-- 検索見積もりの統計情報 (セキュリティ/コンプライアンス センターの検索の詳細ウィンドウや、[Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) コマンドレットを使用して表示される情報) を使用して、結果の合計数のカウントを取得します。
+- 検索見積もりの統計情報 (Microsoft 365 コンプライアンス センターの検索の詳細ウィンドウや、[Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) コマンドレットを使用して表示される情報) を使用して、結果の合計数のカウントを取得します。
 
 不審な電子メール メッセージを検索するクエリの 2 つの例を次に示します。
 
@@ -106,17 +110,11 @@ $Search=New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation A
 Start-ComplianceSearch -Identity $Search.Identity
 ```
 
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>手順 2: セキュリティ/コンプライアンス センターの PowerShell に接続する
-
-次に、組織のセキュリティ/コンプライアンス センターの PowerShell に接続します。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
-
-セキュリティ/コンプライアンス センターの PowerShell に接続したら、前の手順で準備した **New-ComplianceSearch** コマンドレットおよび **Start-ComplianceSearch** コマンドレットを実行します。
-
-## <a name="step-3-delete-the-message"></a>手順 3:メッセージを削除する
+## <a name="step-3-delete-the-message"></a>手順 3: メッセージを削除する
 
 削除するメッセージを返すコンテンツ検索を作成して検索条件を絞り、セキュリティ/コンプライアンス センターの PowerShell に接続したら、最後に **New-ComplianceSearchAction** コマンドレットを実行して、メッセージを削除します。 メッセージは、論理的に削除することも、物理的に削除することもできます。 論理的に削除したアイテムは、ユーザーの [回復可能なアイテム] フォルダーに移動され、削除済みアイテムの保持期間が切れるまで保持されます。 物理的に削除したメッセージは、メールボックスから完全に削除するようにマークされ、管理フォルダー用アシスタントによって次回そのメールボックスが処理される際に完全に削除されます。 そのメールボックスで単一アイテムの回復が有効になっている場合、物理的に削除したアイテムは、削除済みアイテムの保持期間が切れると完全に削除されます。 メールボックスが保留中になっている場合は、削除したメッセージは、そのアイテムの保留期間が切れるか、その保留がメールボックスから削除されるまで保持されます。
 
-次の例では、"Remove Phishing Message"(フィッシング メッセージの削除) という名前のコンテンツ検索によって返された検索結果がコマンドによって論理的に削除されます。
+次の例では、"Remove Phishing Message" (フィッシング メッセージの削除) という名前のコンテンツ検索によって返された検索結果がコマンドによって論理的に削除されます。
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b578436522998ba88cb58f29c5e303ebe0b1ce45
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 226fc389aab24dda2425a17f5fb8d49da93e35d8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166103"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770663"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Microsoft 脅威エキスパートの機能を構成および管理する
 
@@ -67,8 +67,8 @@ Defender for Endpoint のお客様が既に存在する場合は、アプリケ�
 Microsoft 脅威エキスパートから、以下の媒体を通じて、標的型攻撃通知を受信できます。  
 - Defender for Endpoint portal's **Incidents page** 
 - Defender for Endpoint ポータルの **アラート** ダッシュボード  
-- OData アラート [API と](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-alerts) REST [API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
-- [高度な検索の DeviceAlertEvents](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) テーブル
+- OData アラート [API と](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) REST [API](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- [高度な検索の DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) テーブル
 - ユーザーのメール(構成することにした場合) 
 
 メールにて標的型攻撃通知を受信するには、メール通知ルールを作成します。
@@ -159,3 +159,4 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 
 ## <a name="related-topic"></a>関連トピック
 - [Microsoft 脅威エキスパートの概要](microsoft-threat-experts.md)
+- [Microsoft 脅威エキスパートのMicrosoft 365概要](/microsoft-365/security/mtp/microsoft-threat-experts)

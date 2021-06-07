@@ -1,5 +1,5 @@
 ---
-title: 手順 1. MFA を使用してリモート ワーカーのサインイン セキュリティを強化する
+title: 手順 1. MFA を使用してハイブリッド ワーカーのサインイン セキュリティを強化する
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,21 +16,21 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: リモート ワーカーが多要素認証 (MFA) でサインインすることを要求します。
-ms.openlocfilehash: 1c69f2ee7520a554a726bc0ffd9e2d7ebca64261
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+description: ハイブリッド ワーカーが多要素認証 (MFA) でサインインすることを要求します。
+ms.openlocfilehash: 105c2f7170b4bea648427b0fda57ad081cb99a86
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028970"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788964"
 ---
-# <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>手順 1. MFA を使用してリモート ワーカーのサインイン セキュリティを強化する
+# <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>手順 1. MFA を使用してハイブリッド ワーカーのサインイン セキュリティを強化する
 
-リモート ワーカーのサインインのセキュリティを強化するには、多要素認証 (MFA) を使用します。 MFA では、ユーザーのサインインは、ユーザー アカウントのパスワード以外に追加の検証を受ける必要があります。 悪意のあるユーザーがユーザー アカウントのパスワードを決定した場合でも、アクセスが許可される前にスマートフォンに送信されるテキスト メッセージなど、追加の検証に応答できる必要があります。
+ハイブリッド ワーカーのサインインのセキュリティを強化するには、多要素認証 (MFA) を使用します。 MFA では、ユーザーのサインインは、ユーザー アカウントのパスワード以外に追加の検証を受ける必要があります。 悪意のあるユーザーがユーザー アカウントのパスワードを決定した場合でも、アクセスが許可される前にスマートフォンに送信されるテキスト メッセージなど、追加の検証に応答できる必要があります。
 
 ![正しいパスワードと追加認証によりサインインが成功する](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-リモート ワーカー、特に管理者を含むすべてのユーザーに対して、Microsoft は MFA を強くお勧めします。
+ハイブリッド ワーカー、特に管理者を含むすべてのユーザーに対して、Microsoft は MFA を強くお勧めします。
 
 Microsoft 365 プランに基づいてユーザーに MFA の使用を要求する方法は 3 つあります。
 
@@ -101,7 +101,7 @@ Azure AD Identity Protection を使用すると、ユーザーに MFA への登�
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Azure AD で SaaS アプリにサインインする
 
-クラウド認証をユーザーに提供するだけでなく、Azure AD はすべてのアプリをオンプレミスにしているか、Microsoft のクラウドにあるか、または別のクラウドにあるかどうかに関係なく、全てのアプリを保護する中心的な方法にもなります。 [アプリケーションを Azure AD - Microsoft Azure Actuve Directoryに統合する](/azure/active-directory/manage-apps/plan-an-application-integration)と、リモートワーカーが必要なアプリケーションを見つけて安全にサインインするのが簡単になります。
+クラウド認証をユーザーに提供するだけでなく、Azure AD はすべてのアプリをオンプレミスにしているか、Microsoft のクラウドにあるか、または別のクラウドにあるかどうかに関係なく、全てのアプリを保護する中心的な方法にもなります。 [アプリケーションを Azure AD - Microsoft Azure Actuve Directoryに統合する](/azure/active-directory/manage-apps/plan-an-application-integration)と、ハイブリッド ワーカーが必要なアプリケーションを見つけて安全にサインインするのが簡単になります。
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>MFA と ID のための管理技術リソース
 

@@ -1,5 +1,5 @@
 ---
-title: '手順 3: リモート ワーカーのためのセキュリティとコンプライアンスの展開'
+title: '手順 3: ハイブリッド ワーカーのためのセキュリティとコンプライアンスの展開'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,30 +16,30 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: Microsoft 365 のセキュリティとコンプライアンスのサービスを使用して、リモート ワーカー向けにお客様のアプリケーション、データ、およびデバイスを保護します。
-ms.openlocfilehash: eb558b276b5e8fe828f62930eb977cc87ce3134f
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+description: Microsoft 365 のセキュリティ センターとコンプライアンスのサービスを使用して、ハイブリッド ワーカー向けにご使用のアプリケーション、データ、およびデバイスを保護します。
+ms.openlocfilehash: fc5a83bfc6c8ec2dcb801e6063514c0a90c83de8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029112"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788942"
 ---
-# <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>手順 3: リモート ワーカーのためのセキュリティとコンプライアンスの展開
+# <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>手順 3: ハイブリッド ワーカーのためのセキュリティとコンプライアンスの展開
 
-リモート ワーカーの中にはオフィスを利用することが一切ない人や、利用頻度が低い人がいますが、セキュリティとコンプライアンスは、全体的なソリューションにおける重要な部分を占めています。 それらのリモート ワーカーのコミュニケーションが組織のイントラネットに限定されることはなく、すべてインターネットを介して行われます。 
+ハイブリッド ワーカーの中にはオフィスを利用することが一切ない人や、利用頻度が低い人がいますが、セキュリティとコンプライアンスは、全体的なソリューションにおける重要な部分を占めています。 それらのリモート ワーカーのコミュニケーションが組織のイントラネットに限定されることはなく、すべてインターネットを介して行われます。 
 
 サイバーセキュリティのリスクを低減し、内部ポリシーやデータ規制へのコンプライアンスを管理しながら生産性を維持するために、お客様や作業者ができることがあります。
 
 リモート ワークには、次のセキュリティやコンプライアンスの要素が必要です。
 
-- Microsoft Teams などの、リモート ワーカーが使用する生産性アプリに対するアクセスの制御 
-- チャットの会話や共有ファイルなど、リモート ワーカーが作成して使用するデータに対するアクセスや保護の制御
+- Microsoft Teams などの、ハイブリッド ワーカーが使用する生産性アプリに対する制御されたアクセス 
+- チャットの会話や共有ファイルなど、ハイブリッド ワーカーが作成して使用するデータに対する制御されたアクセスや保護
 - マルウェアやその他の種類のサイバー攻撃からの Windows 10 デバイスの保護
 - 秘密度や保護のレベルに応じた一貫性のあるラベル付けを使用したメール、ファイル、サイトの保護
 - 情報の漏洩の防止
 - 地域のデータ規制への準拠
 
-リモート ワーカーにセキュリティとコンプライアンス サービスを提供する Microsoft 365 の機能は次のとおりです。
+ハイブリッド ワーカーにセキュリティとコンプライアンス サービスを提供する Microsoft 365 の機能は次のとおりです。
 
 ![これらの Microsoft 365 サービスを使用して、セキュリティによる保護とコンプライアンスを維持します](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
@@ -49,14 +49,18 @@ Microsoft 365 のこれらのセキュリティ機能を使用して、アプリ
 
 | 機能 | なぜそれが必要なのか | ライセンス |
 |:-------|:-----|:-------|
-| Microsoft Defender for Office 365 | メール メッセージ、Office ドキュメント、共同作業のツールなど、Microsoft 365 のアプリやデータを攻撃から保護します。 <br><br> Microsoft Defender for Office 365 はアプリからのシグナルを収集して分析し、セキュリティ リスクの検出、調査、修復を行い、メール メッセージ、リンク (URL)、共同作業のツールによってもたらされる悪意のある脅威から組織を保護します。 また、標準および厳格なセキュリティ体制のための自動化されたテナント構成評価および構成ツールも提供します。 | Microsoft 365 E3 または E5 | 
-| マルウェア対策 | Microsoft Defender ウイルス対策と Device Guard は、デバイスベースのマルウェア対策を提供します。 <br><br> SharePoint Online では、既知のマルウェアのファイル アップロードを自動的にスキャンします。 ‎<br><br> Exchange Online Protection (EOP) は、クラウド メールボックスを保護します。 | Microsoft 365 E3 または E5 |
+| Microsoft Defender for Office 365 | メール メッセージ、Office ドキュメント、共同作業のツールなど、Microsoft 365 のアプリやデータを攻撃から保護します。 <br><br> Microsoft Defender for Office 365 は、セキュリティ リスクの検出、調査、修復のためにアプリからのシグナルを収集して分析し、電子メール メッセージ、リンク (URL)、コラボレーション ツールによってもたらされる悪意のある脅威から組織を保護します。また、標準および厳格なセキュリティ体制のための自動化されたテナント構成評価と構成ツールも提供します。 | Microsoft 365 E3 または E5 | 
+| マルウェア対策 | Microsoft Defender ウイルス対策と Device Guard は、デバイスベースのマルウェア対策を提供します。 <br><br> SharePoint Online では、既知のマルウェアのファイル アップロードを自動的にスキャンします。<br><br> Exchange Online Protection (EOP) は、クラウド メールボックスを保護します。 | Microsoft 365 E3 または E5 |
 | Microsoft Defender for Endpoint | サイバー攻撃の脅威やデータ侵害から組織のデバイスを保護し、高度な脅威を検出し、調査し、それらに対応します。 | Microsoft 365 E5 |
 | Cloud App Security | Microsoft 365 やその他の SaaS アプリなどのクラウドベースのサービスを攻撃から保護します。 | Microsoft 365 E5 または個別のクラウド アプリのセキュリティ ライセンス |
 | Azure AD Identity Protection  | ID ベースのリスクを自動的に検出して修正します。 <br><br>リスクベースの条件付きアクセス ポリシーを作成し、危険なサインインに対して多要素認証 (MFA) を要求します。 | Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3 |
 ||||
 
+最初の手順は、[Microsoft セキュア スコア ](/microsoft-365/security/defender/microsoft-secure-score)について学習し、使用することです。
+
 詳細については、「[在宅勤務をサポートするセキュリティ チームのための最も重要な 12 のタスク](../security/top-security-tasks-for-remote-work.md)」を参照してください。
+
+Microsoft 365 全体のセキュリティ センターの詳細については、「[Microsoft 365 セキュリティ センターに関するドキュメント](/microsoft-365/security)」を参照してください。
 
 ## <a name="compliance"></a>コンプライアンス
 
@@ -79,10 +83,10 @@ Microsoft 365 のこれらのコンプライアンス機能を使用して、内
 
 ## <a name="results-of-step-3"></a>手順 3 の結果
 
-リモートワーカーのために、次のものを実装しました。
+ハイブリッド ワーカー のために、次を実装しました。
 
 - セキュリティ
-  - リモート ワーカーがコミュニケーションや共同作業を行うために使用するアプリやデータへのアクセス制御
+  - ハイブリッド ワーカーがコミュニケーションや共同作業を行うために使用するアプリやデータへの制御されたアクセス
   - クラウド サービスのデータ、メール、Windows 10 デバイスのマルウェア対策 
 - コンプライアンス
   - 秘密度や保護のレベルに応じた一貫性のあるラベル付け

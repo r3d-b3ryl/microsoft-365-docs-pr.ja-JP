@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 7293c8ced43332f84ced56908ea5203ba867e600
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2facd506497cbdab42f2d8b051fbd50f82432927
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925906"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770603"
 ---
 # <a name="access-the-admin-portal"></a>管理ポータルへのアクセス
 
@@ -24,7 +24,6 @@ ms.locfileid: "50925906"
 > [!NOTE]
 > この[Microsoft エンドポイント マネージャー、](https://endpoint.microsoft.com/)次のブラウザーがサポートされています。
 > - Microsoft Edge (最新バージョン)
-> - Microsoft Internet Explorer 11
 > - Safari (最新バージョン、Mac のみ)
 > - Chrome (最新バージョン)
 > - Firefox (最新バージョン)
@@ -33,7 +32,7 @@ ms.locfileid: "50925906"
 
 ## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directoryアクセス権を持つMicrosoft マネージド デスクトップロール
 
-|Azure ADロール  |Microsoft マネージド デスクトップアクセス許可  |
+|Azure AD ロール  |Microsoft マネージド デスクトップアクセス許可  |
 |---------|---------|
 |グローバル管理者     | この役割を持つ **管理者には、** 管理者ポータル内のすべての機能に対する読み取りおよびMicrosoft マネージド デスクトップがあります。         |
 |グローバル閲覧者     | この役割を持つ管理者には **、管理者** ポータル内のすべての機能に対する読み取りMicrosoft マネージド デスクトップがあります。         |

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域のOffice 365サービスに移行する場合の事前作業。'
-ms.openlocfilehash: 66f23d33e9e55c432c33e9d90549d33ea42536db
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 244a784b0e28f9d5629f5af242a6cf8227abdb01
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651022"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770381"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行前アクティビティ
 
@@ -98,16 +98,12 @@ OCCT は、フェーズ 9 の前Windowsクライアントに展開できます�
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory フェデレーション サービス (AD FS)
 
-<!-- before phase 4 -->
-
 **適用対象**: オンプレミスの FS ADを使用して、ユーザーに接続するユーザーを認証Microsoft Office 365<br>
-**適用時**: フェーズ 4 が開始される前の任意の時間
+**適用時**: フェーズ 2 が開始される前の任意の時間
 
 [ADFS 移行手順の読み取りと適用](ms-cloud-germany-transition-add-adfs.md)
 
 ## <a name="sharepoint-online"></a>SharePoint Online
-
-<!-- before phase 4 -->
 
 **適用対象 :** 2013 SharePointオンプレミスを使用しているお客様<br>
 **適用時**: フェーズ 4 が開始される前の任意の時間

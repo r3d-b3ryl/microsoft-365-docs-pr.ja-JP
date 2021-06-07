@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 を使用したリモート ワーク用のインフラストラクチャを設定する
+title: Microsoft 365 を使用したハイブリッドワーク用のインフラストラクチャを設定する
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -18,27 +18,27 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 keywords: 在宅勤務、在宅勤務、ハイブリッド、リモート ワーカー、ハイブリッド ワーク、リモート従業員、ハイブリッド接続、リモート アクセス、在宅勤務、テレワーク、テレワーク、モバイル ワーク、リモート ジョブ、どこからでも作業、柔軟な職場
-description: リモート ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
-ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: ハイブリッド ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
+ms.openlocfilehash: 55f1cf5c922166e1fe3932b6fe89fbdfcbfba466
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246322"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788887"
 ---
-# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>Microsoft 365 を使用したリモート ワーク用のインフラストラクチャを設定する
+# <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Microsoft 365 を使用したハイブリッドワーク用のインフラストラクチャを設定する
 
-リモート ワーカーの生産性とコラボレーションを保護および最適化するには、IT とクラウドのインフラストラクチャを構成して、リモート ワークを可能にし、組織のオンプレミスおよびクラウドベースの情報、ツール、およびリソースへのアクセスを提供する必要があります。 このソリューションは、従業員がどこにいても最高の仕事を行えるようにするインフラストラクチャの主要なレイヤーの展開を段階的に実行します。
+従業員の生産性とコラボレーションをセキュリティで保護して最適化するには、オンプレミスとリモートのワーカーが組織のオンプレミスおよびクラウドベースの情報、ツール、リソースに簡単かつ安全にアクセスできるようにする必要があります。 このソリューションは、従業員がどこにいても最高の仕事を行えるようにするインフラストラクチャの主要なレイヤーの展開を段階的に実行します。
 
-多くの組織にとって、ワーカーがオフィスから離れて仕事ができるようにすることは、以下のために重要です。
+ハイブリッドワーカーは、場所を組み合わせてオンサイトまたはリモートで作業できます。 多くの組織にとって、ワーカーが伝統的なオフィスから離れて仕事ができるようにすることは、以下のために重要です。
 
-- オフィス スペースの節約。
-- 配置転換を望まないワーカーを雇用し、維持する。
+- 再配置を望まない、または柔軟な作業環境を必要とする従業員を雇用および維持する。
 - ワーカーの通勤時間を減らして、生産的な時間を確保し、仕事以外でのストレス軽減のための時間を確保する。
+- オフィス スペースの節約。
 
-Microsoft 365 には、ワーカーがリモートで作業できるようにするための機能があります。
+Microsoft 365 には、ハイブリッド ワーカーがオンサイトまたはリモートで作業できるようにする機能があります。
 
-![Microsoft 365 でリモート ワーカーを支援する](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
+![Microsoft 365 を使用してハイブリッド ワーカーを強化する](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 >[!Note]
 >Microsoft 365 を初めて使用する場合は、[こちらのリソース](https://www.microsoft.com/microsoft-365) を参照してください。
@@ -49,11 +49,11 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-オンサイトおよびクラウド ベースのインフラストラクチャを管理して従業員の生産性を向上させる IT プロフェッショナル向けに、このソリューションは次の主要な機能を提供します。
+オンサイトおよびクラウド ベースのインフラストラクチャを管理してハイブリッド ワーカーの生産性を向上させる IT プロフェッショナル向けに、このソリューションは次の主要な機能を提供します。
 
 - 接続しました
 
-  世界中のどこからでも、いつでも、リモート ワーカーは以下にアクセスできます。 
+  世界中のどこからでも、いつでも、ワーカーたちは以下にアクセスできます。 
 
   - Microsoft 365 サブスクリプションのクラウドベースのサービスとデータ。 
 
@@ -65,11 +65,11 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 
 - 管理対象
 
-  リモート ワーカーのデバイスは、許可されたアプリを介して、セキュリティ設定を備えたクラウドから管理され、システム正常性への準拠を要求します。
+  ハイブリッド ワーカーのデバイスは、、システム正常性への準拠を要求するために、セキュリティ設定を備えた許可されたアプリを介して、クラウドから管理されます。
 
 - 共同作業と生産性
 
-  リモート ワーカーは、次の高度な共同作業の手法により、オンプレミスと同じように生産性を高めることができます。
+  ハイブリッド ワーカーは、次の高度な共同作業の手法により、オンプレミスと同じように生産性を高めることができます。
 
   - Teams を使用したオンライン会議とチャット セッション。 
 
@@ -79,9 +79,9 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 
 シームレスなサインイン エクスペリエンスを実現するには、オンプレミスの Active Directory ドメイン サービス (AD DS) のユーザー アカウントを Azure Active Directory (Azure AD) と同期する必要があります。 Windows 10 デバイスを保護するには、そのデバイスを Intune に登録する必要があります。 インフラストラクチャの概要を次に示します。
 
-![リモート ワーカー向けの Microsoft 365 の基本インフラストラクチャ](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![ハイブリッド ワーカー向けの Microsoft 365 の基本インフラストラクチャ](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-リモート ワーカーに対して Microsoft 365 の機能を有効にするには、これらの Microsoft 365 機能を使用します。
+ハイブリッド ワーカーに対して Microsoft 365 の機能を有効にするには、これらの Microsoft 365 機能を使用します。
 
 | 機能 | 説明 | ライセンス |
 |:-------|:-----|:-------|
@@ -103,13 +103,13 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 
 セキュリティとコンプライアンスの基準については、「[リモート ワーカーのためのセキュリティとコンプライアンスの展開](empower-people-to-work-remotely-security-compliance.md)」を参照してください。
 
-<a name="poster"></a> このソルーションを 2 ページにまとめた [「リモート ワーカーを支援するポスター」](../downloads/empower-remote-workers.pdf) を参照してください。
+<a name="poster"></a> このソルーションを 2 ページにまとめた [「ハイブリッド ワーカーを支援するポスター」](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) を参照してください。
 
-[![リモート ワーカーを支援するポスター](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
+[![ハイブリッド ワーカーのポスターを強化する](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
-このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) または [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
+このポスターを [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) 形式でダウンロードし、レター、リーガル、タブロイド (11 x 17) のサイズの用紙に印刷することもできます。
 
-## <a name="provide-remote-working-for-all-of-your-workers"></a>すべての従業員にリモート ワークを提供する
+## <a name="provide-hybrid-working-for-all-of-your-workers"></a>すべてのワーカーにハイブリッド ワークを提供する
 
 これらのデバイスを使用すると、すべての従業員がどこからでも生産性を維持できるようになります。
 
@@ -125,9 +125,9 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 2. [オンプレミスのアプリとサービスへのリモート アクセスを提供する](empower-people-to-work-remotely-remote-access.md)
 3. [セキュリティおよびコンプライアンスの展開](empower-people-to-work-remotely-security-compliance.md)
 4. [デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する](empower-people-to-work-remotely-manage-endpoints.md)
-5. [リモート ワーカー向けの生産性向上アプリとサービスを展開する](empower-people-to-work-remotely-teams-productivity-apps.md)
-6. [リモート ワーカーをトレーニングし、使用状況のフィードバックに対処する](empower-people-to-work-remotely-train-monitor-usage.md)
+5. [ハイブリッド ワーカー生産性向上アプリとサービスを展開する](empower-people-to-work-remotely-teams-productivity-apps.md)
+6. [ワーカーをトレーニングし、使用状況のフィードバックに対処する](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![Microsoft 365 を使用したリモート ワーク用のインフラストラクチャを設定する手順](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![Microsoft 365 を使用したハイブリッド ワーク用のインフラストラクチャを設定する手順](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-架空ではあるものの、代表的な多国籍組織がリモート ワーク用のインフラストラクチャをどのように設定したかを確認するには、「[リモート ワークやオンサイト ワーク向けの Contoso の COVID-19 対応とインフラストラクチャ](contoso-remote-onsite-work.md)」を参照してください。
+架空ではあるものの、代表的な多国籍組織がハイブリッド ワーク用のインフラストラクチャをどのように設定したかを確認するハイブリッド ワーク向けの 「[Contoso の COVID-19 対応](contoso-remote-onsite-work.md)」を参照してください。

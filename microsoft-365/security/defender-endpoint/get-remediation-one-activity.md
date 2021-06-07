@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: e0f68e8a28b302f0ae1ca06a2f892fea38a219b2
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c2b7afef2c090df709f9209f450d8d3aab0424bf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244445"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772151"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Id で 1 つの修復アクティビティを取得する
 

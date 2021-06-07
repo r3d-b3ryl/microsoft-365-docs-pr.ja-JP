@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: da51e0e3509ac2be60b9961dc2a0532d29f4f137
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736350"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770675"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10およびOffice 365展開ラボ キット
 
@@ -28,7 +28,7 @@ ms.locfileid: "52736350"
 
 このキットは、アップグレードを実行する準備をしている組織Windows 8.1強くお勧Windows 10。 また、2019 年に現在 Windows 10、Microsoft 365 Apps for enterprise (以前はOffice 365 ProPlus)、またはOffice適用されます。 分離された環境として、結果のラボは展開ツールの更新を探索し、展開関連の自動化をテストするのに最適です。
 
-[Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
+[展開ラボ キットWindows 10およびOffice 365をダウンロードします](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
 ## <a name="a-complete-lab-environment"></a>完全なラボ環境
 
@@ -36,7 +36,7 @@ ms.locfileid: "52736350"
 
   - 新機能 Windows 10 Enterpriseバージョン 21H1
   - Windows 7 Enterprise
-  - 新機能! Microsoft Endpoint Configuration Managerバージョン 2103*
+  - 新機能! Microsoft Endpoint Configuration Managerバージョン 2103
   - Windows 10 用 Windows アセスメント & デプロイメント キット
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)

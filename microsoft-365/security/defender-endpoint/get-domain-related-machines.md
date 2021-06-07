@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3fffb87c486e8b6b89b5e868b96d02dfae496e0b
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 362e3db0ed89924c58fa9662f7acbbe0c16c37c6
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166876"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772223"
 ---
 # <a name="get-domain-related-machines-api"></a>Get domain related machines API
 
@@ -68,7 +69,7 @@ GET /api/domains/{domain}/machines
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 

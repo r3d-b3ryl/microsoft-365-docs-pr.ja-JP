@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 21a83c4876a90a231eb2a78d10a290be2dca2fa0
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fad3dd64c9acf079bd8da778d417240c44031569
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782479"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772472"
 ---
 # <a name="streaming-api"></a>ストリーミング API
 
@@ -34,7 +34,7 @@ ms.locfileid: "52782479"
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>高度なハンティング イベントをイベント ハブまたは Azure ストレージ アカウントにストリーミングします。
 
-Microsoft 365Defender は、高度なハン[ティングを通](../defender/advanced-hunting-overview.md)じてイベント[ハブや](/azure/event-hubs/)Azure ストレージ アカウントへの[ストリーミング イベントをサポートしています](/azure/event-hubs/)。
+Microsoft 365Defender は、高度なハンティング[](../defender/advanced-hunting-overview.md)を通じて使用可能[](/azure/event-hubs/)なすべてのイベントをイベント ハブや Azure ストレージ アカウント[にストリーミングできます](/azure/event-hubs/)。
 
 
 

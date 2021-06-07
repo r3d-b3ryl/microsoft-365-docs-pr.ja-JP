@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: eef06657d7f691a89e5985640431c2cc706557b4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: d2edc5d429d124412134b466753b65506d2dd7a9
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167139"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772187"
 ---
 # <a name="get-domain-statistics-api"></a>ドメイン統計 API の取得
 
@@ -70,7 +71,7 @@ Authorization | ベアラー {token}。 **必須**
 
 ## <a name="request-uri-parameters"></a>要求 URI パラメーター
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 lookBackHours | Int32 | 統計を取得するために検索する時間を定義します。 既定値は 30 日です。 **オプション**。
 
