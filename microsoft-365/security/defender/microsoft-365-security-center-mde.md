@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e7cecd645d857a5c2d5e7a98c78bd3f39b68449d
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 487fc87c613d7321e3ae608097d98d2c90f8874e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639409"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771911"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 
@@ -56,7 +56,7 @@ ms.locfileid: "52639409"
 | 脅威&の管理 | 脆弱性管理 |
 | 評価とチュートリアル | 評価&チュートリアル |
 | 構成管理環境 | 構成管理環境 |
-| 設定 | 設定 | 
+| Settings | Settings | 
 
 セキュリティ センター Microsoft 365[強化](overview-security-center.md)され、電子メール、コラボレーション、ID、デバイスの脅威を保護、検出、調査、および対応するセキュリティ機能 [https://security.microsoft.com](https://security.microsoft.com) が組み合わせ込みされています。 このセキュリティ センターは、既存の Microsoft セキュリティ ポータル (Microsoft Defender セキュリティ センター および Office 365 セキュリティ &機能を統合します。
 
@@ -118,7 +118,7 @@ Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 |---------|---------|
 | レポート  | 脅威の保護、デバイスの正常性とコンプライアンス、脆弱な&など、エンドポイントと電子メール のコラボレーションに関するレポートを参照してください。 |
 | 正常性  |  現在、管理センターの [サービス正常性][ページMicrosoft 365リンクします](https://admin.microsoft.com/)。 |
-| 設定 |  セキュリティ センター、Microsoft 365 Microsoft 365 Defender、Endpoints、Email &コラボレーション、ID、デバイス検出の設定を管理します。   |
+| Settings |  セキュリティ センター、Microsoft 365 Microsoft 365 Defender、Endpoints、Email &コラボレーション、ID、デバイス検出の設定を管理します。   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365のナビゲーションと機能
 
@@ -177,6 +177,10 @@ Defender for [Endpoint SIEM API を使用する場合](../defender-endpoint/enab
 ### <a name="email-alerts"></a>電子メール通知
 
 Defender for Endpoint の電子メール 通知は引き続き使用できます。 電子メールに新しいリンクが追加され、アラート ページまたはインシデント ページがセキュリティ センター Microsoft 365されました。 詳細については、「Microsoft Defender for Endpoint からセキュリティ センターへのアカウントMicrosoft 365[する」を参照してください](./microsoft-365-security-mde-redirection.md)。
+
+### <a name="managed-security-service-providers-mssp"></a>Managed Security Service Providers (MSSP)
+
+同じブラウズ セッションで複数のテナントに同時にログインする方法は、統合ポータルでは現在サポートされていません。 自動リダイレクトをオプトアウトするには、元の [Microsoft Defender for Endpoint](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal)ポータルに戻して、問題が解決されるまでこの機能を維持できます。
 
 ## <a name="related-information"></a>関連情報
 

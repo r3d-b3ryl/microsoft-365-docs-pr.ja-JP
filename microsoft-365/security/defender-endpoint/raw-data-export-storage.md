@@ -1,6 +1,6 @@
 ---
-title: Defender Microsoft 365を自分のアカウントにStorageする
-description: 詳細ハンティング イベントを Microsoft 365アカウントにストリームする Defender を構成するStorageします。
+title: Microsoft Defender for Endpoint イベントを自分のアカウントStorageする
+description: Microsoft Defender for Endpoint を構成して、高度なハンティング イベントを自分のアカウントStorageします。
 keywords: raw data export, Streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,35 +16,35 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1a1d6b63bcdf21535f36b23d4a30e5ea01833c36
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.custom: api
+ms.openlocfilehash: 6be79e4991c9e20c46458eacd97ac0b7b7466bc8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52729994"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771659"
 ---
-# <a name="configure--microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>高度なMicrosoft 365を自分のアカウントにストリーミングする Defender Storage構成する
+# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Microsoft Defender for Endpoint を構成して、高度なハンティング イベントを自分のアカウントStorageする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用対象:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
-
-## <a name="before-you-begin"></a>開始する前に:
+## <a name="before-you-begin"></a>はじめに
 
 1. テナントに[Storageアカウント](/azure/storage/common/storage-account-overview)を作成します。
 
-2. Azure テナントに [ログイン](https://ms.portal.azure.com/)し、[サブスクリプション] >[サブスクリプション>プロバイダー> **Microsoft.Insights** に登録する] に移動します。
+2. Azure テナントに [ログイン](https://ms.portal.azure.com/)し、[サブスクリプション] >[リソース プロバイダー> **Microsoft.insights >に登録** する] に移動します。
 
-## <a name="enable-raw-data-streaming"></a>生データ ストリーミングを有効にする:
+## <a name="enable-raw-data-streaming"></a>生データ ストリーミングを有効にする
 
-1. Defender セキュリティ センター [Microsoft 365 *](https://security.microsoft.com) **グローバル** 管理者 _ または _* セキュリティ管理者 **_としてログイン_ します。
+1. [Microsoft Defender for Endpoint ポータルに](https://securitycenter.windows.com)***グローバル** 管理者 _ または _* セキュリティ管理者 **_としてログイン_ します。
 
-2. [データの[エクスポート設定] ページに移動](https://security.microsoft.com/settings/mtp_settings/raw_data_export)Microsoft Defender セキュリティ センター。
+2. [データの[エクスポート設定] ページに移動](https://securitycenter.windows.com/interoperability/dataexport)Microsoft Defender セキュリティ センター。
 
 3. [データエクスポート **設定の追加] をクリックします**。
 
@@ -52,7 +52,7 @@ ms.locfileid: "52729994"
 
 5. [**イベントを転送する] をAzure Storage** します。
 
-6. アカウント リソース **ID Storage入力します**。 Storage アカウント リソース **ID** を取得するには [、Azure portal](https://ms.portal.azure.com/) > プロパティ タブの Storage アカウント ページに移動し、> アカウント リソース ID の下Storage **コピーします**。
+6. アカウント リソース **ID Storage入力します**。 Storage アカウント リソース **ID を** 取得するには [、Azure portal](https://ms.portal.azure.com/) > プロパティ タブの Storage アカウント ページに移動し、> アカウント リソース ID の下のStorage **をコピーします**。
 
    ![イベント ハブ リソース ID1 のイメージ](images/storage-account-resource-id.png)
 
@@ -68,10 +68,10 @@ ms.locfileid: "52729994"
 
   ```
   {
-          "time": "<The time Microsoft 365 Defender received the event>"
+          "time": "<The time WDATP received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-          "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+          "properties": { <WDATP Advanced Hunting event as Json> }
   }               
   ```
 
@@ -79,14 +79,15 @@ ms.locfileid: "52729994"
 
 - 各行には、イベント名、Defender for Endpoint がイベントを受信した時刻、そのイベントが属するテナント (テナントからのみイベントを取得する)、および JSON 形式のイベントが "properties" と呼ばれるプロパティで含まれる。
 
-- Defender イベントのスキーマの詳細についてはMicrosoft 365高度なハンティング[の概要を参照してください](../defender/advanced-hunting-overview.md)。
+- Microsoft Defender for Endpoint イベントのスキーマの詳細については、「Advanced Hunting [overview」を参照してください](advanced-hunting-overview.md)。
 
+- Advanced Hunting では **、DeviceInfo** テーブルに **MachineGroup** という名前の列が含まれるので、デバイスのグループが含まれる。 ここでは、すべてのイベントもこの列で装飾されます。 詳細については [、「デバイス グループ](machine-groups.md) 」を参照してください。
 
-## <a name="data-types-mapping"></a>データ型マッピング:
+## <a name="data-types-mapping"></a>データ型マッピング
 
 イベント プロパティのデータ型を取得するには、次の操作を行います。
 
-1. セキュリティ センターにMicrosoft 365[し、[](https://security.microsoft.com)高度な検索][ページに移動します](https://security.microsoft.com/hunting-package)。
+1. ログイン[して[詳細](https://securitycenter.windows.com)Microsoft Defender セキュリティ センター]ページ[に移動します](https://securitycenter.windows.com/hunting-package)。
 
 2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。 
 
@@ -101,7 +102,7 @@ ms.locfileid: "52729994"
   ![イベント ハブ リソース ID3 のイメージ](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>関連項目
-- [高度なハンティングの概要](../defender/advanced-hunting-overview.md)
-- [Microsoft 365Defender ストリーミング API](raw-data-export.md)
-- [Defender Microsoft 365を Azure ストレージ アカウントにストリーミングする](raw-data-export-storage.md)
+- [高度なハンティングの概要](advanced-hunting-overview.md)
+- [エンドポイント ストリーミング API 用 Microsoft Defender](raw-data-export.md)
+- [Microsoft Defender for Endpoint イベントを Azure ストレージ アカウントにストリーミングする](raw-data-export-storage.md)
 - [Azure Storageアカウントのドキュメント](/azure/storage/common/storage-account-overview)

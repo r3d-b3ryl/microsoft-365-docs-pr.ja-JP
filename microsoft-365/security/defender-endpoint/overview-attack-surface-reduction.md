@@ -18,14 +18,15 @@ ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 68c9bad95e36863a57d27d49adc2ad46744cbd4a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.date: 06/02/2021
+ms.openlocfilehash: b6fb9bb327816b7e166a443a0d07932d30421a19
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933531"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771695"
 ---
-# <a name="overview-of-attack-surface-reduction"></a>攻撃面の減少の概要
+# <a name="overview-of-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能の概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,23 +34,23 @@ ms.locfileid: "51933531"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> [!TIP]
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-
-組織がサイバー脅威や攻撃に対して脆弱な場所を最小限に抑えることによって、攻撃の表面を減らすのに役立ちます。 組織のデバイスとアプリケーションの保護を構成するには、次のリソースを使用します。
-
+攻撃の表面は、組織がサイバー脅威や攻撃に対して脆弱なすべての場所です。 Defender for Endpoint には、攻撃の表面を減らすのに役立ついくつかの機能が含まれています。 攻撃表面の縮小の詳細については、次のビデオをご覧ください。<p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4woug]
 
+## <a name="resources-to-learn-more-about-attack-surface-reduction"></a>攻撃表面の縮小について詳しくは、リソースを参照してください。
 
-記事 | 説明
--|-
-[攻撃面の減少](./attack-surface-reduction.md) | マルウェアの阻止に役立つインテリジェントなルールを使用して、アプリケーションの脆弱性 (攻撃面) を減らします。 (必要なMicrosoft Defender ウイルス対策)。
-[ハードウェア ベースの分離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | システムの開始と実行中のシステムの整合性を保護し、維持します。 ローカル構成証明とリモート構成証明を使用してシステムの整合性を検証します。 また、悪意のある web サイトから保護するためにMicrosoft Edgeコンテナーの分離を使用します。
-[アプリケーション制御](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | アプリケーション制御を使用して、アプリケーションを実行するために信頼を得る必要があります。
-[エクスプロイト保護](./exploit-protection.md) | 組織が使用するオペレーティング システムとアプリが悪用されるのを保護するのに役立ちます。 エクスプロイト保護は、サードパーティのウイルス対策ソリューションでも機能します。
-[ネットワーク保護](./network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (必要なMicrosoft Defender ウイルス対策)
-[Web 保護](./web-protection-overview.md) | Web の脅威からデバイスを保護し、望ましくないコンテンツを規制するのに役立ちます。
-[制御されたフォルダー アクセス](./controlled-folders.md) | 悪意のあるアプリや疑わしいアプリ (ファイル暗号化ランサムウェア マルウェアを含む) がキー システム フォルダー内のファイルに変更を加えるのを防ぐのに役立ちます (Microsoft Defender ウイルス対策)
-[ネットワーク ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) | 2 方向ネットワーク トラフィック フィルターを使用して、組織のデバイスとの間で不正なトラフィックが流れるのを防ぐ。
-[攻撃面の減少の FAQ](./attack-surface-reduction-faq.md) | 攻撃表面の縮小ルール、ライセンスなどについてよく寄せられる質問。
+ビデオで説明したように、Defender for Endpoint には、いくつかの攻撃表面の縮小機能が含まれています。 詳細については、次のリソースを使用します。
+
+| 記事 | 説明 |
+|:---|:---|
+| [ハードウェア ベースの分離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | システムの開始と実行中のシステムの整合性を保護し、維持します。 ローカル構成証明とリモート構成証明を使用してシステムの整合性を検証します。 また、悪意のある web サイトから保護するためにMicrosoft Edgeコンテナーの分離を使用します。 |
+| [アプリケーション制御](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | アプリケーション制御を使用して、アプリケーションを実行するために信頼を得る必要があります。 |
+| [制御されたフォルダー アクセス](controlled-folders.md) | 悪意のあるアプリや疑わしいアプリ (ファイル暗号化ランサムウェア マルウェアを含む) がキー システム フォルダー内のファイルに変更を加えるのを防ぐのに役立ちます (Microsoft Defender ウイルス対策) |
+| [ネットワーク保護](network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (必要なMicrosoft Defender ウイルス対策) |
+| [エクスプロイト保護](exploit-protection.md) | 組織が使用するオペレーティング システムとアプリが悪用されるのを保護するのに役立ちます。 エクスプロイト保護は、サードパーティのウイルス対策ソリューションでも機能します。 |
+| [攻撃面の減少ルール](attack-surface-reduction.md) | マルウェアの阻止に役立つインテリジェントなルールを使用して、アプリケーションの脆弱性 (攻撃面) を減らします。 (必要なMicrosoft Defender ウイルス対策)。 |
+| [デバイス コントロール](device-control-report.md) | 組織内のリムーバブル ストレージや USB ドライブなどのデバイスで使用されるメディアを監視および制御することにより、データ損失から保護します。 |

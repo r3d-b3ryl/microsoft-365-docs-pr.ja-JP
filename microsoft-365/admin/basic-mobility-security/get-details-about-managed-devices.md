@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Windows PowerShell を使用して、組織内の基本的なモビリティおよびセキュリティ デバイスの詳細を取得します。
-ms.openlocfilehash: 92fcd6f39ffff97d7a4ecd2a69626ece54b481b2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.openlocfilehash: 7cb2369c9a31210f26db12b0453e7a4228e1cccc
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904254"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782443"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>基本的なモビリティとセキュリティの管理対象デバイスに関する詳細を取得する
 
@@ -49,7 +49,7 @@ ms.locfileid: "50904254"
 
 これらの手順の詳細については、「 [PowerShell を使用して Microsoft 365 に接続する](/office365/enterprise/powershell/connect-to-office-365-powershell)」を参照してください。
 
-1.  [IT プロフェッショナル向け Microsoft Online Services サインイン アシスタント RTWl](https://www.microsoft.com/download/details.aspx?id=41950)  に移動し、 **Microsoft Online Services サインイン アシスタント用にダウンロード** を選択します。
+1.  [IT プロフェッショナル向け Microsoft Online Services サインイン アシスタント RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)  に移動し、 **Microsoft Online Services サインイン アシスタント用にダウンロード** を選択します。
 
 2. 以下の手順に従って、Windows PowerShell の Microsoft Azure Active Directory モジュールをインストールします。
 

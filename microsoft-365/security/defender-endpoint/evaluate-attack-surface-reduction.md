@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.topic: article
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 73b23427ff401f2a37c399131d6aa01330ff9de5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c2dea22cc8a0ebb875f83ebd5a3e42f723e5f254
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245302"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771323"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>攻撃面の減少ルールを評価する
 
@@ -37,10 +37,10 @@ ms.locfileid: "52245302"
 
 次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールを設定Windows。
 
-- Windows 10 Proバージョン[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)以降
-- Windows 10 Enterpriseバージョン[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)以降
-- Windowsサーバー、[バージョン 1803 (半期チャネル)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)以降
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- Windows 10 Proバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
+- Windows 10 Enterpriseバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
+- Windowsサーバー、[バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 監査モードで組織の機能を直接テストすることで、攻撃表面の縮小ルールを評価する方法について学習します。
 

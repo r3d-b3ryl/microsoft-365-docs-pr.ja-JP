@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.custom: api
+ms.openlocfilehash: 6716b0eb029b49ec08cb52ebefc23e50b19036ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903120"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771671"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>SIEM REST API を使用したエンドポイント検出用の Microsoft Defender のプル
 
@@ -106,12 +107,12 @@ Defender for Endpoint API への要求 *access_tokenフィールドの* 値を�
 アクセス トークンを使用すると、アプリは Microsoft Defender for Endpoint API に対して認証された要求を行います。 アプリで各要求の Authorization ヘッダーにアクセス トークンを追加する必要があります。
 
 ### <a name="request-syntax"></a>要求構文
-メソッド | 要求 URI
+Method | 要求 URI
 :---|:---|
 GET| 地域に適用可能な URI を使用します。 <br><br> **EU の場合**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **米国の場合**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **英国の場合**: `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
 ### <a name="request-header"></a>要求ヘッダー
-ヘッダー | 型 | 説明|
+ヘッダー | 種類 | 説明|
 :--|:--|:--
 Authorization | string | 必須です。 Azure ADベアラー トークンという形式の **アクセス トークンです** &lt;  &gt; 。 |
 

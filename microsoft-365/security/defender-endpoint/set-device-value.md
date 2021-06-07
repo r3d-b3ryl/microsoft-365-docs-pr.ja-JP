@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 76df62243db837ec91819497980ff1de2295e3b6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e14e696169a2d1cd76e4fb5b2ee8de951e9e1280
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498317"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771411"
 ---
 # <a name="set-device-value-api"></a>デバイス値 API の設定
 
@@ -74,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDevice
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 Content-Type | string | application/json. **必須**
@@ -83,7 +84,7 @@ Content-Type | string | application/json. **必須**
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター |    型    | 説明
+パラメーター |    種類    | 説明
 :---|:---|:---
 DeviceValue |    列挙 |    デバイスの値。 使用できる値は、'Normal'、'Low'、および 'High' です。 **必須**
 

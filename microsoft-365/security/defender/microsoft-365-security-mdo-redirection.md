@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender から新しいセキュリティ センター Office 365アカウントをMicrosoft 365する
+title: セキュリティ/コンプライアンス センター Office 365新しいセキュリティ センターへのアカウントMicrosoft 365リダイレクトする
 description: Defender for Office 365セキュリティ センター Microsoft 365する方法。
 keywords: Microsoft 365センター, セキュリティ センターのMicrosoft 365開始, セキュリティ センターのリダイレクト
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2a4b122b3ef3a1ddaf61d8f9373bec3e721db177
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 703d3c3c9086aa2bdfada560c009e8738dffbb18
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651382"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768971"
 ---
-# <a name="redirecting-accounts-from-microsoft-defender-for-office-365-to-the-microsoft-365-security-center"></a>Microsoft Defender からセキュリティ センター Office 365アカウントMicrosoft 365リダイレクトする
+# <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-security-center"></a>セキュリティ/コンプライアンス センター Office 365セキュリティ センターへのアカウントMicrosoft 365リダイレクトする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "52651382"
 - Microsoft 365 Defender
 - Defender for Office 365
 
-この記事では、以前の Microsoft Security and Compliance Center (protection.office.com または securitycenter.microsoft.com) から Microsoft 365 セキュリティ センター (security.microsoft.com) への自動リダイレクトを有効にすることで、アカウントを Microsoft 365 セキュリティ センターにルーティングする方法について説明します。
+この記事では、以前の Office 365 セキュリティ とコンプライアンス センター (protection.office.com) から Microsoft 365 セキュリティ センター (security.microsoft.com) への自動リダイレクトを有効にすることで、Microsoft 365 セキュリティ センターにアカウントをルーティングする方法について説明します。
 
 ## <a name="what-to-expect"></a>想定される変化
 自動リダイレクトが有効でアクティブになると、Office 365 セキュリティとコンプライアンス (protection.office.com) のセキュリティ関連機能にアクセスするユーザーは、Microsoft 365 セキュリティ センター ( ) に自動的にルーティングされます。 https://security.microsoft.com)  

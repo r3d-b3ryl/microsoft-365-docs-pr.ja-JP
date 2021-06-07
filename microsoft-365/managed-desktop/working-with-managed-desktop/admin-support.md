@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5e614581ee76d1f8cb026345f1c31ed22faafb8a
-ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
+ms.openlocfilehash: d35ab0f4e99d466d283d49e0f51f8e868691b9a9
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50572630"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771743"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの管理者サポート
 
@@ -24,7 +24,7 @@ ms.locfileid: "50572630"
 >アプリのパッケージ [化、デバイス、](../get-started/add-admin-contacts.md) セキュリティ、その他の管理者連絡先をセットアップしてください。 管理者連絡先が構成されていない場合、これらの領域でサポート要求を送信できません。
 
 **サポート要求を送信する**
-1. サインインして、[トラブルシューティング [Microsoft エンドポイント マネージャー](https://endpoint.microsoft.com/)サポート]**メニューに移動** します。
+1. サインイン [して[テナント](https://endpoint.microsoft.com/)Microsoft エンドポイント マネージャー]メニュー **に移動** します。
 2. [サービス要求] セクションをMicrosoft マネージド デスクトップ、[サービス要求]**を選択します**。
 3. [サポート **要求] で、[+** 新しい **サポート チケット] を選択します**。
 4. 必要な **ヘルプに一致** するサポート要求の種類を選択します。 次の表に、オプションの概要を示します。 

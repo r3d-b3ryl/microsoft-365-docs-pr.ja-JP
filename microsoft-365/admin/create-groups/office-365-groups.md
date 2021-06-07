@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: グループMicrosoft 365グループを使用すると、グループのユーザーに共有リソースのコレクションへのアクセス権を与えることによって、Microsoft 365全体のチームワークを促進できます。
-ms.openlocfilehash: f940872a3e4ba2aeeb62247c2898d5a4c0dec85f
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 69f7e47bcfb9e0704f8c373cf1addf98ef898cfa
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635752"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782395"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -45,7 +45,7 @@ Microsoft 365グループは、グループ全体のすべてのチームワー�
 
 グループをMicrosoft 365、これらの各リソースにアクセス許可を手動で割り当てる必要はありません。 グループにユーザーを追加すると、必要なアクセス許可が自動的に付与されます。
 
-グループの作成を特定のユーザー セットに制限しない限り、任意のユーザー [がグループを作成できます](../../solutions/manage-creation-of-groups.md)。 グループの作成を制限すると、グループを作成できないユーザーは、サイト、プランナー、またはチームSharePoint作成できません。 これらのサービスでは、作成するユーザーがグループを作成できる必要があります。 ユーザーは、グループのメンバーである限り、Planner でのタスクの作成やチャットTeamsなど、グループ アクティビティに参加できます。
+グループの作成を特定のユーザー セットに制限しない限り、任意のユーザー [がグループを作成できます](../../solutions/manage-creation-of-groups.md)。 グループの作成を制限すると、グループを作成できないユーザーは、SharePoint サイト、プランナー、チーム、Outlook グループ カレンダー、ストリーム グループ、Yammer グループ、OneDrive の共有ライブラリ、または共有 Power BI ワークスペースを作成できません。 これらのサービスでは、作成するユーザーがグループを作成できる必要があります。 ユーザーは、グループのメンバーである限り、Planner でのタスクの作成やチャットTeamsなど、グループ アクティビティに参加できます。
 
 グループの役割は次のとおりです。
 

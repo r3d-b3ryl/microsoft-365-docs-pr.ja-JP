@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 03a1ef11224021703a6f33f82fa2c4f135a317a7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e2b1114cd091c9cd42aa8e4525416f9d73358a65
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934179"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771995"
 ---
 # <a name="offboard-machine-api"></a>オフボード マシン API
 
@@ -72,7 +73,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 Content-Type | string | application/json. **必須**
@@ -80,7 +81,7 @@ Content-Type | string | application/json. **必須**
 ## <a name="request-body"></a>要求本文
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 型    | 説明
+パラメーター | 種類    | 説明
 :---|:---|:---
 コメント |   文字列 |    アクションに関連付けるコメント。 **必須**
 

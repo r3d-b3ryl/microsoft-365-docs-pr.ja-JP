@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bbd908c15f4d65d4923c088261c92de6d2d3cc35
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 75b62f1bada67c30dc05237a284f8b64c3c7072d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187209"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771383"
 ---
 # <a name="indicator-resource-type"></a>インジケーター リソースの種類
 
@@ -49,7 +50,7 @@ ms.locfileid: "51187209"
 
 
 ## <a name="properties"></a>プロパティ
-プロパティ |  型    |   説明
+プロパティ |  種類    |   説明
 :---|:---|:---
 id | String | Indicator エンティティ [の](ti-indicator.md) ID。
 indicatorValue | String | Indicator の [値](ti-indicator.md)です。

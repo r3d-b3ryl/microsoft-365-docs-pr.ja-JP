@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: このページを使用して、スタッフ リストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。
-ms.openlocfilehash: 7fd19e3281b3dc075b5f72ca0471f5c66f93752d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 23757c492986936125eff1203e6a99231164da22
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683321"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768947"
 ---
 # <a name="add-staff-to-bookings"></a>Bookings にスタッフを追加する
 
@@ -23,7 +23,7 @@ Bookings の [スタッフ] ページでは、スタッフリストを作成し�
 
 Bookings は、Microsoft 365の機能ですが、すべてのスタッフがアカウントを持つ必要Microsoft 365ではありません。 予約を受け取り、変更をスケジュールするには、すべてのスタッフが有効な電子メール アドレスを持っている必要があります。
 
-## <a name="watch-add-your-staff-in-microsoft-bookings"></a>ウォッチ: Microsoft Bookings にスタッフを追加する
+## <a name="watch-add-your-staff-to-bookings"></a>ウォッチ: 予約にスタッフを追加する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
@@ -67,14 +67,39 @@ Bookings は、Microsoft 365の機能ですが、すべてのスタッフがア�
     > [!NOTE]
     > スタッフ ページに追加した最初の 31 人のスタッフ メンバーだけが、サービスにスタッフ メンバーを割り当てるときに表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Bookings ユーザーを、Bookings のスタッフとして追加せずにスーパー ユーザーにする
 
-スタッフ メンバーを追加した後、休業 [日](schedule-closures-time-off-vacation.md) と休み時間をスケジュールし、スケジュール [ポリシーを設定できます](set-scheduling-policies.md)。
+ユーザーを顧客またはクライアントが利用できない場合は、Bookings のスタッフ リストにユーザーを追加できます。 スーパー ユーザーになると、予約メールボックスの管理者になります。 予約メールボックスの管理者であることは、予約メールボックスに対するフル アクセスおよび送信権限を持つこととして定義されます。
 
-## <a name="related-content"></a>関連コンテンツ
+> [!NOTE]
+> これらの手順は、追加するユーザーに Bookings でビューアー ロールがまだ割り当てられていない場合にのみ機能します。
 
-[Microsoft Bookings](bookings-overview.md)
+1. [Connect PowerShell をMicrosoft 365する方法を説明します](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-[休業、休暇、休暇期間のスケジュール](schedule-closures-time-off-vacation.md)
+2. PowerShell を使用して、次のコマンドでフル アクセスを割り当てる。
 
-[スケジュール ポリシーを設定する](set-scheduling-policies.md)
+    ```powershell
+    Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
+    ```
+
+3. 次に、このコマンドを実行して send-as アクセス許可を割り当てる。
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+Contoso のデケア予約メールボックスに Allie Bellew を追加する PowerShell コマンドの例を次に示します。
+
+1. まず、次のコマンドを実行します。
+
+    ```powershell
+    Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
+    ```
+
+2. 次に、次のコマンドを実行します。
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+**Allie Bellew は** 管理者アクセス権を持っていますが、Bookings では予約可能なスタッフとして表示されません。

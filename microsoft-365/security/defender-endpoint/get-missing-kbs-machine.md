@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aa22b90b95788d9f5a65d54c7a335a2e0f4c3091
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 97cad51938c4ff3498234dbf2e9d69fd48a52367
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933579"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771875"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>デバイス ID で不足している KB を取得する
 
@@ -43,7 +45,7 @@ GET /api/machines/{machineId}/getmissingkbs
 
 ## <a name="request-header"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 次の手順に従って、元従業員のユーザー アカウントを削除します。
-ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535940"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782383"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>手順 7 - 元従業員のユーザー アカウントを削除する
 
@@ -48,7 +48,7 @@ ms.locfileid: "52535940"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="does-your-organization-use-active-directory"></a>組織では Active Directory を使用していますか。
 
@@ -56,7 +56,7 @@ ms.locfileid: "52535940"
 
 Active Directory でユーザー アカウントを削除および復元する方法については、「ユーザー アカウントの削除 [」を参照してください](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))。
   
-このコマンドレットを使用しているAzure Active Directory [Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell コマンドレットを参照してください。
+このコマンドレットを使用しているAzure Active Directory [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell コマンドレットを参照してください。
   
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>従業員のメール セッションの終了について知っておく必要があること
 
@@ -84,8 +84,6 @@ Active Directory でユーザー アカウントを削除および復元する�
   
  **オンプレミスおよび Exchange データ センターにプレゼンスがあるユーザーの場合、迅速な応答**: Azure Active Directory 管理センター/Exchange 管理センターを使用してセッションを終了し、オンプレミスの環境でも変更を加えます。そうしないと、Azure Active Directory 管理センター/Exchange 管理センターでの変更は、DirSync によって上書きされます。
   
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーを復元する](restore-user.md)
-
-[パスワードをリセットする](reset-passwords.md)
+[ユーザーの復元](restore-user.md) (記事)/ [パスワードのリセット](reset-passwords.md) (記事)

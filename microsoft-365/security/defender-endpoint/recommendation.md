@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 6ab4d4e1acab0e4b837195f64c369057d7ceb417
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: bd7aa2af2c7500bbe02108bb8aa5dee452ff2998
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198235"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771599"
 ---
 # <a name="recommendation-resource-type"></a>おすすめリソースの種類
 
@@ -49,7 +50,7 @@ ms.locfileid: "51198235"
 
 
 ## <a name="properties"></a>プロパティ
-プロパティ |   型   |   説明
+プロパティ |   種類   |   説明
 :---|:---|:---
 id | String | 推奨事項 ID
 productName | 文字列型 (String) | 関連するソフトウェア名  

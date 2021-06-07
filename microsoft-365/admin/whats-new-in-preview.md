@@ -21,12 +21,12 @@ description: 管理者Microsoft 365 - 今月追加された機能について学
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 964689c431b45671a92dda62ccf8a083291213a3
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 654f8de8d931f26efbcba5b60d730a9d9e477e65
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639543"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769078"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>管理センターの新機能Microsoft 365
 
@@ -56,17 +56,17 @@ ms.locfileid: "52639543"
 
 ### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>管理モバイル アプリを使用してサポート チケットの更新を追跡する
 
-テナントで作成されたサービス要求すべてについて、チケットの状態を追跡し、チケットの詳細を表示し、添付ファイルにメモを追加して追加情報を提供/要求&できます。 
+テナントで作成されたサービス要求すべてについて、チケットの状態を追跡し、チケットの詳細を表示し、添付ファイルにメモを追加して追加情報を提供/要求&できます。
 
-:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="スクリーンショット: サポート チケットの更新を追跡する":::
+:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="スクリーンショット: サポート チケットの更新を追跡する":::
 
-### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>アプリとサブスクリプションに関する主要な更新プログラムのMicrosoft 365する 
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>アプリとサブスクリプションに関する主要な更新プログラムのMicrosoft 365する
 
-- メッセージ センタープッシュ通知 (既定で有効) を使用して、Microsoft 365サブスクリプションに対する主要な更新プログラムの上に残ります。 
+- メッセージ センタープッシュ通知 (既定で有効) を使用して、Microsoft 365サブスクリプションに対する主要な更新プログラムの上に残ります。
 
 - [新機能] セクションを使用して、アプリで利用可能な最新 **の機能を追跡** します。 [新 **しい**  >  **設定] に移動します。**
 
-:::image type="content" source="../media/whats-new-updates.png" alt-text="スクリーンショット: 主要な更新プログラムと機能を追跡する":::
+:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="スクリーンショット: 主要な更新プログラムと機能を追跡する":::
 
 ## <a name="april-2021"></a>2021 年 4 月
 

@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0cb09b23df8243d970069d087976ddc79394b67d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: a5f3db65b42d8dc98c11f2ef2c3c5d509340e386
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200415"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771263"
 ---
 # <a name="get-alert-related-domain-information-api"></a>アラート関連のドメイン情報 API を取得する
 
@@ -63,7 +64,7 @@ GET /api/alerts/{id}/domains
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 

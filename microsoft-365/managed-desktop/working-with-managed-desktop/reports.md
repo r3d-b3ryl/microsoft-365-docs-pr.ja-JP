@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 28035a9f0a669c1daa7526d0b1fefac52a77c81a
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b37ce09a0781aa83970502224ddbb3658ed07d69
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52729970"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771887"
 ---
 # <a name="work-with-reports"></a>レポートを操作する
 
-Microsoft マネージド デスクトップ、組織の IT 管理者がデバイスの人口のさまざまな側面を理解するために使用できるいくつかのレポートとダッシュボードを提供します。レポートは、次の 2 つの場所[](https://endpoint.microsoft.com)にあります。Microsoft エンドポイント マネージャー管理センター Microsoft 365[表示されます](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop)。 
+Microsoft マネージド デスクトップ、組織の IT 管理者がデバイスの人口のさまざまな側面を理解するために使用できるいくつかのレポートとダッシュボードを提供します。 
 
 ## <a name="reports-in-microsoft-endpoint-manager"></a>[レポート] Microsoft エンドポイント マネージャー
 
@@ -37,6 +37,13 @@ Microsoft エンドポイント マネージャー コンソールでは、複�
 > [!NOTE]
 > カスタム Microsoft マネージド デスクトップロールは、レポートへのアクセスのみをMicrosoft マネージド デスクトップします。 すべてのデバイスなど、Microsoft エンドポイント マネージャーの他の部分にアクセスするには、「すべてのデバイスを使用した役割ベースのアクセス[制御」をMicrosoft Intune。](/mem/intune/fundamentals/role-based-access-control) 
 
+## <a name="endpoint-analytics"></a>エンドポイント分析
+Microsoft マネージド デスクトップエンドポイント分析と[統合されました](/mem/analytics/overview)。 これらのレポートは、組織の動作状況とユーザーに提供されるエクスペリエンスの品質を測定するための分析情報を提供します。 エンドポイント分析は、エンドポイントの **[レポート**] メニュー [Microsoft エンドポイント マネージャー。](https://endpoint.microsoft.com/) スコアをピボットして、任意のレポートに移動Microsoft マネージド デスクトップ管理されているデバイスのみを含めるには、[フィルター]ドロップダウンを選択し、[デバイス] **Microsoft マネージド デスクトップします**。
+
+登録中に Azure AD組織 ("tenant") に対してエンドポイント分析が自動的に構成されていない場合は、自分で行います。 詳細については [、「Onboard in the Endpoint analytics portal」を参照してください](/mem/analytics/enroll-intune#bkmk_onboard)。 すべてのデバイスを登録するか、Microsoft マネージド デスクトップ デバイスのみを含める場合は、テスト、First、Fast、およびBroad のモダン ワークプレース デバイス グループを選択します。 これらのレポートでは、さまざまなアクセス許可が必要になる場合があります。 詳細については、「アクセス許可」 [を参照](/mem/analytics/overview#permissions) して、役割が適切に割り当てられているか確認してください。
+
+> [!NOTE]
+> プライバシー ユーザーのプライバシーを尊重するために、このフィルターを使用するには、Endpoint analytics に登録Microsoft マネージド デスクトップデバイスが 10 台を超える必要があります。
 
  ## <a name="inventory-data"></a>インベントリ データ
 

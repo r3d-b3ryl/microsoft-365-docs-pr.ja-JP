@@ -1,6 +1,6 @@
 ---
 title: Microsoft マネージド デスクトップを使用する
-description: ''
+description: 「作業」セクションのランディング ページ
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,19 +9,19 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 55f8040f2533e60d1ff696845baa195983667859
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: f950943d63c7c67a6b4a364e75b4c91b461b7f73
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289437"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52729982"
 ---
 # <a name="working-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップを使用する
 
 このセクションでは、IT 管理者が必要に応じてサポートを受ける方法、ユーザーがサポートを受ける方法、展開したアプリを管理する方法、デバイスでカスタマイズ可能な設定を使用する方法など、このサービスに係る日常的な作業について説明します。
 
 
-- [分析情報を操作する](insights.md)
+
 - [Microsoft マネージド デスクトップの管理者サポート](admin-support.md)
 - [ユーザーのヘルプ](end-user-support.md)
 - [Microsoft マネージド デスクトップでの基幹業務アプリの管理](manage-apps.md)

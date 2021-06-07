@@ -13,14 +13,14 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 4532afc40c2324b77725d9ddad158587083e6e9b
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 73e29109a429d8a3fffc69b79939c8dff7ecb087
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280961"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769271"
 ---
-# <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>エンタープライズ アーキテクト向け Microsoft クラウドのイラスト
+# <a name="microsoft-cloud-for-it-architects-illustrations"></a>IT アーキテクト向け Microsoft クラウドのイラスト
 
 これらのクラウド アーキテクチャ ポスターでは、Microsoft 365、Azure Active Directory (Azure AD)、Microsoft Intune、Microsoft Dynamics 365、ハイブリッドオンプレミスおよびクラウド ソリューションなど、Microsoft クラウド サービスに関する情報を提供します。 
 
@@ -28,7 +28,7 @@ IT 意思決定者とアーキテクトは、これらのリソースを使用�
 
 
 <a name="identity"></a>
-### <a name="microsoft-cloud-identity-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ID
+### <a name="microsoft-cloud-identity-for-it-architects"></a>IT アーキテクト向け Microsoft クラウド ID
 
 Microsoft クラウド サービスおよびプラットフォームを使用して、組織のためのアイデンティティを設計する上で IT アーキテクトが知る必要のある事柄。
   
@@ -37,7 +37,7 @@ Microsoft クラウド サービスおよびプラットフォームを使用し
 |[![Microsoft クラウド ID モデルのサムネイル画像](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [PDF として表示する](../downloads/MSFT_cloud_architecture_identity.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf) \|[アプリとしてダウンロードVisio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.vsdx)   <br/>2020 年 9 月更新 | このモデルには次のものが含まれています。  <ul> <li> Microsoft のクラウド ID の概要 </li><li> Azure AD IDaaS 機能 </li><li> オンプレミスの Active Directory ドメイン サービス (AD DS) アカウントを Azure サーバーと統合AD </li><li> ディレクトリ コンポーネントを Azure IaaS に置く </li><li> AD IaaS のワークロードの DS オプションの詳細 </li></ul><br/>  <br/>|
 
 <a name="security"></a>
-### <a name="microsoft-cloud-security-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ
+### <a name="microsoft-cloud-security-for-it-architects"></a>IT アーキテクト向け Microsoft クラウド セキュリティ
 
 Microsoft クラウド サービスおよびプラットフォームにおけるセキュリティについて IT アーキテクトが知る必要のある事柄。
   
@@ -46,7 +46,7 @@ Microsoft クラウド サービスおよびプラットフォームにおける
 |[![エンタープライズ アーキテクト モデルのサムネイルの Microsoft クラウド セキュリティ](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf)  \| <br/>2021 年 4 月更新 | このモデルには次のものが含まれています。 <ul><li>Microsoft および顧客のセキュリティ責任</li><li>ID と デバイス アクセス</li><li>脅威保護</li><li>情報保護 </ul><br/>|
    
 <a name="networking"></a>
-### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft Cloud ネットワーク
+### <a name="microsoft-cloud-networking-for-it-architects"></a>IT アーキテクト向け Microsoft クラウド ネットワーク
 
 Microsoft クラウド サービスおよびプラットフォームのネットワーキングに関して IT アーキテクトが知る必要のある事柄。
   
@@ -55,7 +55,7 @@ Microsoft クラウド サービスおよびプラットフォームのネット
 |[![Microsoft クラウドのネットワーク モデルのサムネイル画像](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](../downloads/MSFT_cloud_architecture_networking.pdf) <br/>  [PDF として表示する](../downloads/MSFT_cloud_architecture_networking.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) \|[アプリとしてダウンロードVisio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx)   <br/>2020 年 8 月更新 | このモデルには次のものが含まれています。 <ul><li> クラウド接続のためのネットワークの進化 </li><li> Microsoft のクラウド接続の一般的な要素 </li><li> Microsoft クラウド接続のためのExpressRoute </li><li> Microsoft SaaS、Azure PaaS、Azure IaaS のネットワーク設計 </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
-### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド
+### <a name="microsoft-hybrid-cloud-for-it-architects"></a>IT アーキテクト向け Microsoft ハイブリッド クラウド
 
 Microsoft のサービスとプラットフォーム用のハイブリッド クラウドに関して IT アーキテクトが知る必要のある事柄。
   

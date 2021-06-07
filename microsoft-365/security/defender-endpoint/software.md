@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9bfec2c4e65a390189556c14347eaf17236fb95e
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 14291cbbba2272d268a8e79b6df7bd87992885db
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187201"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771410"
 ---
 # <a name="software-resource-type"></a>ソフトウェア リソースの種類
 
@@ -54,7 +55,7 @@ ms.locfileid: "51187201"
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ |   型   |   説明
+プロパティ |   種類   |   説明
 :---|:---|:---
 id | String | ソフトウェア ID
 名前 | String | ソフトウェア名

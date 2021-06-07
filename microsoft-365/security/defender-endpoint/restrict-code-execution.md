@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 149f3aefd963f15eafa15030a322ec588c0615ed
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 7195e91a3a9b7aef6977c925f2c8689d3e461815
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186783"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771575"
 ---
 # <a name="restrict-app-execution-api"></a>アプリの実行 API の制限
 
@@ -69,7 +70,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/restrictCodeExec
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 Content-Type | string | application/json. **必須**
@@ -77,7 +78,7 @@ Content-Type | string | application/json. **必須**
 ## <a name="request-body"></a>要求本文
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 型    | 説明
+パラメーター | 種類    | 説明
 :---|:---|:---
 コメント |   文字列 |    アクションに関連付けるコメント。 **必須**
 

@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 94be185bd30cd36f456a66d5ae30a4361abc0c48
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 043d423e1016d77cad4a175aa41718329f464252
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688251"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768929"
 ---
 # <a name="update-alert"></a>アラートを更新する
 
@@ -68,7 +69,7 @@ PATCH /api/alerts/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 Content-Type | 文字列 | application/json. **必須**
@@ -79,7 +80,7 @@ Content-Type | 文字列 | application/json. **必須**
 <br>要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 
 <br>最適なパフォーマンスを得る場合は、変更していない既存の値を含めてはならない。
 
-プロパティ | 型 | 説明
+プロパティ | 種類 | 説明
 :---|:---|:---
 status | String | アラートの現在の状態を指定します。 プロパティの値は、'New'、'InProgress'、および 'Resolved' です。
 assignedTo | String | アラートの所有者

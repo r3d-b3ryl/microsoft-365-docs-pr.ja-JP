@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d0db45daa786c1a44272e4d02153af3fe658e781
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3df703fd84c87a2bd34bb2a81f8c83063e468b17
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200211"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771451"
 ---
 # <a name="run-antivirus-scan-api"></a>ウイルス対策スキャン API の実行
 
@@ -64,7 +65,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 Content-Type | string | application/json
@@ -72,7 +73,7 @@ Content-Type | string | application/json
 ## <a name="request-body"></a>要求本文
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 型    | 説明
+パラメーター | 種類    | 説明
 :---|:---|:---
 コメント |   文字列 | アクションに関連付けるコメント。 **必須**
 ScanType|   String  | スキャンの種類を定義します。 **必須**

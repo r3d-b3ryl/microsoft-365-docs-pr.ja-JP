@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 42bab0a9d20d5e1ef78b98b3538cef209240d890
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ce0dc0ce255e9717082687bd1f8bf5941739261d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187257"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771707"
 ---
 # <a name="submit-or-update-indicator-api"></a>インジケーター API の送信または更新
 
@@ -63,7 +64,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 Content-Type | string | application/json. **必須**
@@ -71,14 +72,14 @@ Content-Type | string | application/json. **必須**
 ## <a name="request-body"></a>要求本文
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 型    | 説明
+パラメーター | 種類    | 説明
 :---|:---|:---
-indicatorValue | String | Indicator エンティティ [の](ti-indicator.md) ID。 **Required**
-indicatorType | 列挙 | インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"IpAddress"、"DomainName" および "Url" です。 **Required**
-action | 列挙 | インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"AlertAndBlock"、"Allowed" です。 **Required**
+indicatorValue | String | Indicator エンティティ [の](ti-indicator.md) ID。 **必須**
+indicatorType | 列挙 | インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"IpAddress"、"DomainName" および "Url" です。 **必須**
+action | 列挙 | インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"AlertAndBlock"、"Allowed" です。 **必須**
 アプリケーション | String | インジケーターに関連付けられているアプリケーション。 **Optional**
-title | String | インジケーターアラートのタイトル。 **Required**
-説明 | String | インジケーターの説明。 **Required**
+title | String | インジケーターアラートのタイトル。 **必須**
+説明 | String | インジケーターの説明。 **必須**
 expirationTime | DateTimeOffset | インジケーターの有効期限。 **Optional**
 severity | 列挙 | インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。 **Optional**
 recommendedActions | String | TI インジケーターアラート推奨アクション。 **Optional**
