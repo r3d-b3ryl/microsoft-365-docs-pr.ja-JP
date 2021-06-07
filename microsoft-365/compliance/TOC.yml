@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 概要
+- name: 作業の開始
   items:
     - name: コンプライアンスを開始するためのクイック タスク
       href: compliance-quick-tasks.md
@@ -694,7 +694,7 @@
               href: advanced-ediscovery-dashboard.md
             - name: レビュー セット内のドキュメントを表示する
               href: view-documents-in-review-set.md
-            - name: レビュー セット内のデータをクエリする
+            - name: レビュー セット内のコンテンツのクエリとフィルター
               href: review-set-search.md
             - name: レビュー セット内のドキュメントをタグ付けする
               href: tagging-documents.md
