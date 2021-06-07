@@ -14,87 +14,88 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 70ce6adce3e14be7ee440b96587b8f9402c0b99f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ef10d2bd7193fc7b4a1604658f496ef38ef33555
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166984"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772346"
 ---
-# <a name="get-alert-related-machine-information-api"></a><span data-ttu-id="e7137-104">アラート関連のコンピューター情報 API を取得する</span><span class="sxs-lookup"><span data-stu-id="e7137-104">Get alert related machine information API</span></span>
+# <a name="get-alert-related-machine-information-api"></a><span data-ttu-id="f789d-104">アラート関連のコンピューター情報 API を取得する</span><span class="sxs-lookup"><span data-stu-id="f789d-104">Get alert related machine information API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="e7137-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="e7137-105">**Applies to:**</span></span>
-- [<span data-ttu-id="e7137-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="e7137-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="e7137-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e7137-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="f789d-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="f789d-105">**Applies to:**</span></span>
+- [<span data-ttu-id="f789d-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="f789d-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="f789d-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f789d-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> <span data-ttu-id="e7137-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="e7137-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="e7137-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="e7137-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="f789d-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="f789d-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f789d-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="f789d-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="e7137-110">API の説明</span><span class="sxs-lookup"><span data-stu-id="e7137-110">API description</span></span>
-<span data-ttu-id="e7137-111">特定の [アラートに関連](machine.md) するデバイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="e7137-111">Retrieves [Device](machine.md) related to a specific alert.</span></span>
+## <a name="api-description"></a><span data-ttu-id="f789d-110">API の説明</span><span class="sxs-lookup"><span data-stu-id="f789d-110">API description</span></span>
+<span data-ttu-id="f789d-111">特定の [アラートに関連](machine.md) するデバイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="f789d-111">Retrieves [Device](machine.md) related to a specific alert.</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="e7137-112">制限事項</span><span class="sxs-lookup"><span data-stu-id="e7137-112">Limitations</span></span>
-1. <span data-ttu-id="e7137-113">構成済みの保持期間に従って、最後に更新されたアラートに対してクエリを実行できます。</span><span class="sxs-lookup"><span data-stu-id="e7137-113">You can query on alerts last updated according to your configured retention period.</span></span>
-2. <span data-ttu-id="e7137-114">この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="e7137-114">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
+## <a name="limitations"></a><span data-ttu-id="f789d-112">制限事項</span><span class="sxs-lookup"><span data-stu-id="f789d-112">Limitations</span></span>
+1. <span data-ttu-id="f789d-113">構成済みの保持期間に従って、最後に更新されたアラートに対してクエリを実行できます。</span><span class="sxs-lookup"><span data-stu-id="f789d-113">You can query on alerts last updated according to your configured retention period.</span></span>
+2. <span data-ttu-id="f789d-114">この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="f789d-114">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="e7137-115">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e7137-115">Permissions</span></span>
-<span data-ttu-id="e7137-116">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="e7137-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="e7137-117">アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="e7137-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="f789d-115">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f789d-115">Permissions</span></span>
+<span data-ttu-id="f789d-116">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="f789d-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="f789d-117">アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="f789d-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="e7137-118">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e7137-118">Permission type</span></span> |   <span data-ttu-id="e7137-119">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e7137-119">Permission</span></span>  |   <span data-ttu-id="e7137-120">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="e7137-120">Permission display name</span></span>
+<span data-ttu-id="f789d-118">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f789d-118">Permission type</span></span> |   <span data-ttu-id="f789d-119">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f789d-119">Permission</span></span>  |   <span data-ttu-id="f789d-120">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="f789d-120">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="e7137-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e7137-121">Application</span></span> |   <span data-ttu-id="e7137-122">Machine.Read.All</span><span class="sxs-lookup"><span data-stu-id="e7137-122">Machine.Read.All</span></span> |  <span data-ttu-id="e7137-123">'すべてのコンピューター情報を読み取る'</span><span class="sxs-lookup"><span data-stu-id="e7137-123">'Read all machine information'</span></span>
-<span data-ttu-id="e7137-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e7137-124">Application</span></span> |   <span data-ttu-id="e7137-125">Machine.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7137-125">Machine.ReadWrite.All</span></span> | <span data-ttu-id="e7137-126">'すべてのコンピューター情報の読み取りと書き込み'</span><span class="sxs-lookup"><span data-stu-id="e7137-126">'Read and write all machine information'</span></span>
-<span data-ttu-id="e7137-127">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e7137-127">Delegated (work or school account)</span></span> | <span data-ttu-id="e7137-128">Machine.Read</span><span class="sxs-lookup"><span data-stu-id="e7137-128">Machine.Read</span></span> | <span data-ttu-id="e7137-129">'コンピューター情報の読み取り'</span><span class="sxs-lookup"><span data-stu-id="e7137-129">'Read machine information'</span></span>
-<span data-ttu-id="e7137-130">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e7137-130">Delegated (work or school account)</span></span> | <span data-ttu-id="e7137-131">Machine.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e7137-131">Machine.ReadWrite</span></span> | <span data-ttu-id="e7137-132">'コンピューター情報の読み取りおよび書き込み'</span><span class="sxs-lookup"><span data-stu-id="e7137-132">'Read and write machine information'</span></span>
+<span data-ttu-id="f789d-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f789d-121">Application</span></span> |   <span data-ttu-id="f789d-122">Machine.Read.All</span><span class="sxs-lookup"><span data-stu-id="f789d-122">Machine.Read.All</span></span> |  <span data-ttu-id="f789d-123">'すべてのコンピューター情報を読み取る'</span><span class="sxs-lookup"><span data-stu-id="f789d-123">'Read all machine information'</span></span>
+<span data-ttu-id="f789d-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f789d-124">Application</span></span> |   <span data-ttu-id="f789d-125">Machine.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f789d-125">Machine.ReadWrite.All</span></span> | <span data-ttu-id="f789d-126">'すべてのコンピューター情報の読み取りと書き込み'</span><span class="sxs-lookup"><span data-stu-id="f789d-126">'Read and write all machine information'</span></span>
+<span data-ttu-id="f789d-127">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f789d-127">Delegated (work or school account)</span></span> | <span data-ttu-id="f789d-128">Machine.Read</span><span class="sxs-lookup"><span data-stu-id="f789d-128">Machine.Read</span></span> | <span data-ttu-id="f789d-129">'コンピューター情報の読み取り'</span><span class="sxs-lookup"><span data-stu-id="f789d-129">'Read machine information'</span></span>
+<span data-ttu-id="f789d-130">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f789d-130">Delegated (work or school account)</span></span> | <span data-ttu-id="f789d-131">Machine.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f789d-131">Machine.ReadWrite</span></span> | <span data-ttu-id="f789d-132">'コンピューター情報の読み取りおよび書き込み'</span><span class="sxs-lookup"><span data-stu-id="f789d-132">'Read and write machine information'</span></span>
 
 >[!Note]
-> <span data-ttu-id="e7137-133">ユーザー資格情報を使用してトークンを取得する場合:</span><span class="sxs-lookup"><span data-stu-id="e7137-133">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="e7137-134">ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="e7137-134">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="e7137-135">ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスできる必要[](machine-groups.md)があります (詳細については、「デバイス グループの作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="e7137-135">The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> <span data-ttu-id="f789d-133">ユーザー資格情報を使用してトークンを取得する場合:</span><span class="sxs-lookup"><span data-stu-id="f789d-133">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="f789d-134">ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="f789d-134">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+>- <span data-ttu-id="f789d-135">ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスできる必要[](machine-groups.md)があります (詳細については、「デバイス グループの作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="f789d-135">The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e7137-136">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e7137-136">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f789d-136">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f789d-136">HTTP request</span></span>
 
 ```http
 GET /api/alerts/{id}/machine
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e7137-137">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e7137-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f789d-137">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f789d-137">Request headers</span></span>
 
-<span data-ttu-id="e7137-138">名前</span><span class="sxs-lookup"><span data-stu-id="e7137-138">Name</span></span> | <span data-ttu-id="e7137-139">型</span><span class="sxs-lookup"><span data-stu-id="e7137-139">Type</span></span> | <span data-ttu-id="e7137-140">説明</span><span class="sxs-lookup"><span data-stu-id="e7137-140">Description</span></span>
+<span data-ttu-id="f789d-138">名前</span><span class="sxs-lookup"><span data-stu-id="f789d-138">Name</span></span> | <span data-ttu-id="f789d-139">種類</span><span class="sxs-lookup"><span data-stu-id="f789d-139">Type</span></span> | <span data-ttu-id="f789d-140">説明</span><span class="sxs-lookup"><span data-stu-id="f789d-140">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="e7137-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7137-141">Authorization</span></span> | <span data-ttu-id="e7137-142">String</span><span class="sxs-lookup"><span data-stu-id="e7137-142">String</span></span> | <span data-ttu-id="e7137-143">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="e7137-143">Bearer {token}.</span></span> <span data-ttu-id="e7137-144">**必須**</span><span class="sxs-lookup"><span data-stu-id="e7137-144">**Required**.</span></span>
+<span data-ttu-id="f789d-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="f789d-141">Authorization</span></span> | <span data-ttu-id="f789d-142">String</span><span class="sxs-lookup"><span data-stu-id="f789d-142">String</span></span> | <span data-ttu-id="f789d-143">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="f789d-143">Bearer {token}.</span></span> <span data-ttu-id="f789d-144">**必須**</span><span class="sxs-lookup"><span data-stu-id="f789d-144">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="e7137-145">要求本文</span><span class="sxs-lookup"><span data-stu-id="e7137-145">Request body</span></span>
-<span data-ttu-id="e7137-146">Empty</span><span class="sxs-lookup"><span data-stu-id="e7137-146">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="f789d-145">要求本文</span><span class="sxs-lookup"><span data-stu-id="f789d-145">Request body</span></span>
+<span data-ttu-id="f789d-146">Empty</span><span class="sxs-lookup"><span data-stu-id="f789d-146">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="e7137-147">応答</span><span class="sxs-lookup"><span data-stu-id="e7137-147">Response</span></span>
-<span data-ttu-id="e7137-148">成功し、アラートとデバイスが存在する場合 - 200 OK。</span><span class="sxs-lookup"><span data-stu-id="e7137-148">If successful and alert and device exist - 200 OK.</span></span> <span data-ttu-id="e7137-149">アラートが見つからない場合、またはデバイスが見つからない場合 - 404 Not Found。</span><span class="sxs-lookup"><span data-stu-id="e7137-149">If alert not found or device not found - 404 Not Found.</span></span>
+## <a name="response"></a><span data-ttu-id="f789d-147">応答</span><span class="sxs-lookup"><span data-stu-id="f789d-147">Response</span></span>
+<span data-ttu-id="f789d-148">成功し、アラートとデバイスが存在する場合 - 200 OK。</span><span class="sxs-lookup"><span data-stu-id="f789d-148">If successful and alert and device exist - 200 OK.</span></span> <span data-ttu-id="f789d-149">アラートが見つからない場合、またはデバイスが見つからない場合 - 404 Not Found。</span><span class="sxs-lookup"><span data-stu-id="f789d-149">If alert not found or device not found - 404 Not Found.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e7137-150">例</span><span class="sxs-lookup"><span data-stu-id="e7137-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f789d-150">例</span><span class="sxs-lookup"><span data-stu-id="f789d-150">Example</span></span>
 
-<span data-ttu-id="e7137-151">**要求**</span><span class="sxs-lookup"><span data-stu-id="e7137-151">**Request**</span></span>
+<span data-ttu-id="f789d-151">**要求**</span><span class="sxs-lookup"><span data-stu-id="f789d-151">**Request**</span></span>
 
-<span data-ttu-id="e7137-152">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e7137-152">Here is an example of the request.</span></span>
+<span data-ttu-id="f789d-152">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f789d-152">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/machine
 ```
 
-<span data-ttu-id="e7137-153">**応答**</span><span class="sxs-lookup"><span data-stu-id="e7137-153">**Response**</span></span>
+<span data-ttu-id="f789d-153">**応答**</span><span class="sxs-lookup"><span data-stu-id="f789d-153">**Response**</span></span>
 
-<span data-ttu-id="e7137-154">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="e7137-154">Here is an example of the response.</span></span>
+<span data-ttu-id="f789d-154">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="f789d-154">Here is an example of the response.</span></span>
 
 
 ```json
