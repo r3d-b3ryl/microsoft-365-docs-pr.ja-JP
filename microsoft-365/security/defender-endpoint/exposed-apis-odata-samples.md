@@ -15,47 +15,48 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 37319e5af6121a38965e5d2d350a7697bb78c0b1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: a2570aba26d65a573c19777bc70db77f4118e336
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198295"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771047"
 ---
-# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a><span data-ttu-id="2abdf-104">エンドポイント用 Microsoft Defender を使用した OData クエリ</span><span class="sxs-lookup"><span data-stu-id="2abdf-104">OData queries with Microsoft Defender for Endpoint</span></span>
+# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a><span data-ttu-id="a5854-104">エンドポイント用 Microsoft Defender を使用した OData クエリ</span><span class="sxs-lookup"><span data-stu-id="a5854-104">OData queries with Microsoft Defender for Endpoint</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="2abdf-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="2abdf-105">**Applies to:**</span></span>
-- [<span data-ttu-id="2abdf-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="2abdf-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+<span data-ttu-id="a5854-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="a5854-105">**Applies to:**</span></span>
+- [<span data-ttu-id="a5854-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="a5854-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- <span data-ttu-id="2abdf-107">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="2abdf-107">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="2abdf-108">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="2abdf-108">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="a5854-107">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="a5854-107">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="a5854-108">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="a5854-108">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-<span data-ttu-id="2abdf-109">OData クエリについて詳しくない場合は [、「OData V4 クエリ」を参照してください。](https://www.odata.org/documentation/)</span><span class="sxs-lookup"><span data-stu-id="2abdf-109">If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)</span></span>
+<span data-ttu-id="a5854-109">OData クエリについて詳しくない場合は [、「OData V4 クエリ」を参照してください。](https://www.odata.org/documentation/)</span><span class="sxs-lookup"><span data-stu-id="a5854-109">If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)</span></span>
 
-<span data-ttu-id="2abdf-110">一部のプロパティがフィルター可能である必要があります。</span><span class="sxs-lookup"><span data-stu-id="2abdf-110">Not all properties are filterable.</span></span>
+<span data-ttu-id="a5854-110">一部のプロパティがフィルター可能である必要があります。</span><span class="sxs-lookup"><span data-stu-id="a5854-110">Not all properties are filterable.</span></span>
 
-## <a name="properties-that-support-filter"></a><span data-ttu-id="2abdf-111">このプロパティをサポート$filter。</span><span class="sxs-lookup"><span data-stu-id="2abdf-111">Properties that support $filter:</span></span>
+## <a name="properties-that-support-filter"></a><span data-ttu-id="a5854-111">このプロパティをサポート$filter。</span><span class="sxs-lookup"><span data-stu-id="a5854-111">Properties that support $filter:</span></span>
 ```
 - [Alert](alerts.md): ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category```.
 - [Machine](machine.md): ```ComputerDnsName```, ```LastSeen```, ```HealthStatus```, ```OsPlatform```, ```RiskScore``` and ```RbacGroupId```.
 - [MachineAction](machineaction.md): ```Status```, ```MachineId```, ```Type```, ```Requestor``` and ```CreationDateTimeUtc```.
 - [Indicator](ti-indicator.md): ```indicatorValue```, ```indicatorType```, ```creationTimeDateTimeUtc```, ```createdBy```, ```severity ``` and ```action ```.
 ```
-### <a name="example-1"></a><span data-ttu-id="2abdf-112">例 1</span><span class="sxs-lookup"><span data-stu-id="2abdf-112">Example 1</span></span>
+### <a name="example-1"></a><span data-ttu-id="a5854-112">例 1</span><span class="sxs-lookup"><span data-stu-id="a5854-112">Example 1</span></span>
 
-<span data-ttu-id="2abdf-113">関連する証拠を使用して最新のアラートを 10 件取得します。</span><span class="sxs-lookup"><span data-stu-id="2abdf-113">Get 10 latest Alerts with related Evidence:</span></span>
+<span data-ttu-id="a5854-113">関連する証拠を使用して最新のアラートを 10 件取得します。</span><span class="sxs-lookup"><span data-stu-id="a5854-113">Get 10 latest Alerts with related Evidence:</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-<span data-ttu-id="2abdf-114">**応答:**</span><span class="sxs-lookup"><span data-stu-id="2abdf-114">**Response:**</span></span>
+<span data-ttu-id="a5854-114">**応答:**</span><span class="sxs-lookup"><span data-stu-id="a5854-114">**Response:**</span></span>
 
 ```json
 {
@@ -192,15 +193,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 }
 ```
 
-### <a name="example-2"></a><span data-ttu-id="2abdf-115">例 2</span><span class="sxs-lookup"><span data-stu-id="2abdf-115">Example 2</span></span>
+### <a name="example-2"></a><span data-ttu-id="a5854-115">例 2</span><span class="sxs-lookup"><span data-stu-id="a5854-115">Example 2</span></span>
 
-<span data-ttu-id="2abdf-116">2019-11-22 00:00:00 以降に最後に更新されたアラートを取得します。</span><span class="sxs-lookup"><span data-stu-id="2abdf-116">Get all the alerts last updated after 2019-11-22 00:00:00:</span></span>
+<span data-ttu-id="a5854-116">2019-11-22 00:00:00 以降に最後に更新されたアラートを取得します。</span><span class="sxs-lookup"><span data-stu-id="a5854-116">Get all the alerts last updated after 2019-11-22 00:00:00:</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
-<span data-ttu-id="2abdf-117">**応答:**</span><span class="sxs-lookup"><span data-stu-id="2abdf-117">**Response:**</span></span>
+<span data-ttu-id="a5854-117">**応答:**</span><span class="sxs-lookup"><span data-stu-id="a5854-117">**Response:**</span></span>
 
 ```json
 {
@@ -254,15 +255,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdate
 }
 ```
 
-### <a name="example-3"></a><span data-ttu-id="2abdf-118">例 3</span><span class="sxs-lookup"><span data-stu-id="2abdf-118">Example 3</span></span>
+### <a name="example-3"></a><span data-ttu-id="a5854-118">例 3</span><span class="sxs-lookup"><span data-stu-id="a5854-118">Example 3</span></span>
 
-<span data-ttu-id="2abdf-119">'High' 'RiskScore' を使用してすべてのデバイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="2abdf-119">Get all the devices with 'High' 'RiskScore':</span></span>
+<span data-ttu-id="a5854-119">'High' 'RiskScore' を使用してすべてのデバイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="a5854-119">Get all the devices with 'High' 'RiskScore':</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
-<span data-ttu-id="2abdf-120">**応答:**</span><span class="sxs-lookup"><span data-stu-id="2abdf-120">**Response:**</span></span>
+<span data-ttu-id="a5854-120">**応答:**</span><span class="sxs-lookup"><span data-stu-id="a5854-120">**Response:**</span></span>
 
 ```json
 {
@@ -307,15 +308,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
 }
 ```
 
-### <a name="example-4"></a><span data-ttu-id="2abdf-121">例 4</span><span class="sxs-lookup"><span data-stu-id="2abdf-121">Example 4</span></span>
+### <a name="example-4"></a><span data-ttu-id="a5854-121">例 4</span><span class="sxs-lookup"><span data-stu-id="a5854-121">Example 4</span></span>
 
-<span data-ttu-id="2abdf-122">'HealthStatus' が 'Active' と等しくない上位 100 台のデバイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="2abdf-122">Get top 100 devices with 'HealthStatus' not equals to 'Active':</span></span>
+<span data-ttu-id="a5854-122">'HealthStatus' が 'Active' と等しくない上位 100 台のデバイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="a5854-122">Get top 100 devices with 'HealthStatus' not equals to 'Active':</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
-<span data-ttu-id="2abdf-123">**応答:**</span><span class="sxs-lookup"><span data-stu-id="2abdf-123">**Response:**</span></span>
+<span data-ttu-id="a5854-123">**応答:**</span><span class="sxs-lookup"><span data-stu-id="a5854-123">**Response:**</span></span>
 
 ```json
 {
@@ -360,15 +361,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthSt
 }
 ```
 
-### <a name="example-5"></a><span data-ttu-id="2abdf-124">例 5</span><span class="sxs-lookup"><span data-stu-id="2abdf-124">Example 5</span></span>
+### <a name="example-5"></a><span data-ttu-id="a5854-124">例 5</span><span class="sxs-lookup"><span data-stu-id="a5854-124">Example 5</span></span>
 
-<span data-ttu-id="2abdf-125">2018-10-20 以降に最後に表示されたデバイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="2abdf-125">Get all the devices that last seen after 2018-10-20:</span></span>
+<span data-ttu-id="a5854-125">2018-10-20 以降に最後に表示されたデバイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="a5854-125">Get all the devices that last seen after 2018-10-20:</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
-<span data-ttu-id="2abdf-126">**応答:**</span><span class="sxs-lookup"><span data-stu-id="2abdf-126">**Response:**</span></span>
+<span data-ttu-id="a5854-126">**応答:**</span><span class="sxs-lookup"><span data-stu-id="a5854-126">**Response:**</span></span>
 
 ```json
 {
@@ -413,15 +414,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen
 }
 ```
 
-### <a name="example-6"></a><span data-ttu-id="2abdf-127">例 6</span><span class="sxs-lookup"><span data-stu-id="2abdf-127">Example 6</span></span>
+### <a name="example-6"></a><span data-ttu-id="a5854-127">例 6</span><span class="sxs-lookup"><span data-stu-id="a5854-127">Example 6</span></span>
 
-<span data-ttu-id="2abdf-128">Microsoft Defender for Endpoint を使用してユーザーが作成 Analyst@examples.onmicrosoft.com ウイルス対策スキャンを取得します。</span><span class="sxs-lookup"><span data-stu-id="2abdf-128">Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender for Endpoint:</span></span>
+<span data-ttu-id="a5854-128">Microsoft Defender for Endpoint を使用してユーザーが作成 Analyst@examples.onmicrosoft.com ウイルス対策スキャンを取得します。</span><span class="sxs-lookup"><span data-stu-id="a5854-128">Get all the Anti-Virus scans that the user Analyst@examples.onmicrosoft.com created using Microsoft Defender for Endpoint:</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
-<span data-ttu-id="2abdf-129">**応答:**</span><span class="sxs-lookup"><span data-stu-id="2abdf-129">**Response:**</span></span>
+<span data-ttu-id="a5854-129">**応答:**</span><span class="sxs-lookup"><span data-stu-id="a5854-129">**Response:**</span></span>
 
 ```json
 json{
@@ -445,29 +446,29 @@ json{
 }
 ```
 
-### <a name="example-7"></a><span data-ttu-id="2abdf-130">例 7</span><span class="sxs-lookup"><span data-stu-id="2abdf-130">Example 7</span></span>
+### <a name="example-7"></a><span data-ttu-id="a5854-130">例 7</span><span class="sxs-lookup"><span data-stu-id="a5854-130">Example 7</span></span>
 
-<span data-ttu-id="2abdf-131">特定のデバイスの開いているアラートの数を取得します。</span><span class="sxs-lookup"><span data-stu-id="2abdf-131">Get the count of open alerts for a specific device:</span></span>
+<span data-ttu-id="a5854-131">特定のデバイスの開いているアラートの数を取得します。</span><span class="sxs-lookup"><span data-stu-id="a5854-131">Get the count of open alerts for a specific device:</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
-<span data-ttu-id="2abdf-132">**応答:**</span><span class="sxs-lookup"><span data-stu-id="2abdf-132">**Response:**</span></span>
+<span data-ttu-id="a5854-132">**応答:**</span><span class="sxs-lookup"><span data-stu-id="a5854-132">**Response:**</span></span>
 
 ```json
 4
 ```
 
-### <a name="example-8"></a><span data-ttu-id="2abdf-133">例 8</span><span class="sxs-lookup"><span data-stu-id="2abdf-133">Example 8</span></span>
+### <a name="example-8"></a><span data-ttu-id="a5854-133">例 8</span><span class="sxs-lookup"><span data-stu-id="a5854-133">Example 8</span></span>
 
-<span data-ttu-id="2abdf-134">'mymachine'で始まる 'computerDnsName' を使用してすべてのデバイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="2abdf-134">Get all the devices with 'computerDnsName' starting with 'mymachine':</span></span>
+<span data-ttu-id="a5854-134">'mymachine'で始まる 'computerDnsName' を使用してすべてのデバイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="a5854-134">Get all the devices with 'computerDnsName' starting with 'mymachine':</span></span>
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')
 ```
 
-<span data-ttu-id="2abdf-135">**応答:**</span><span class="sxs-lookup"><span data-stu-id="2abdf-135">**Response:**</span></span>
+<span data-ttu-id="a5854-135">**応答:**</span><span class="sxs-lookup"><span data-stu-id="a5854-135">**Response:**</span></span>
 
 ```json
 json{
@@ -512,5 +513,5 @@ json{
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="2abdf-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="2abdf-136">See also</span></span>
-- [<span data-ttu-id="2abdf-137">エンドポイント API 用 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="2abdf-137">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
+## <a name="see-also"></a><span data-ttu-id="a5854-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="a5854-136">See also</span></span>
+- [<span data-ttu-id="a5854-137">エンドポイント API 用 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="a5854-137">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)

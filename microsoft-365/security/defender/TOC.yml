@@ -322,7 +322,7 @@
                   items:
                     - name: Microsoft 365ストリーミング API
                       href: ../defender-endpoint/raw-data-export.md
-                    - name: 高度な追求イベントを Azure イベント ハブにストリーミングする
+                    - name: 高度なハンティングを Azure イベント ハブにストリーミングする
                       href: ../defender-endpoint/raw-data-export-event-hub.md
                     - name: 高度な追求イベントをストレージ アカウントにストリーミングする
                       href: ../defender-endpoint/raw-data-export-storage.md
