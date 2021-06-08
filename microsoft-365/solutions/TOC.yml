@@ -13,7 +13,7 @@
       href: architecture-icons-templates.md
 - name: Microsoft 365 foundation ソリューション
   items:
-    - name: リモート ワーク用のインフラストラクチャをセットアップします。
+    - name: ハイブリッド ワーク用のインフラストラクチャを設定する
       items:
         - name: 概要
           href: empower-people-to-work-remotely.md
@@ -23,11 +23,11 @@
           href: empower-people-to-work-remotely-remote-access.md
         - name: '手順 3: セキュリティとコンプライアンスを展開する'
           href: empower-people-to-work-remotely-security-compliance.md
-        - name: 手順 4. エンドポイント管理の展開
+        - name: 手順 4. エンドポイント管理を展開する
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: 手順 5.  生産性アプリおよびサービスの展開
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 'ステップ 6: リモートワーカーをトレーニングする'
+        - name: 手順 6. 従業員をトレーニングする
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Microsoft 365 とセキュリティで保護された共同作業を設定する
       items:
@@ -225,7 +225,7 @@
       items:
         - name: Contoso Corporation 向けの Microsoft 365 ソリューション
           href: contoso-case-study-solutions.md
-        - name: リモートおよびオンサイトでの作業に関する COVID-19 の対応とサポート
+        - name: ハイブリッド ワーク向けの COVID-19 の対応とサポート
           href: contoso-remote-onsite-work.md
         - name: 極秘プロジェクト向けの独立したチーム
           href: contoso-team-for-top-secret-project.md
