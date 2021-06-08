@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順Office 365説明します。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060992"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809121"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、解決する
 
@@ -52,7 +52,7 @@ ms.locfileid: "52060992"
    > |名前|RecipientType|
    > |---|---|
    > |エイリアス、ユーザー|MailUser|
-   > |エイリアス、ユーザー|User|
+   > |エイリアス、ユーザー|ユーザー|
 
 3. 複数のユーザーが返された場合は、競合するオブジェクトを見つけて修正します。
 
@@ -89,6 +89,20 @@ ms.locfileid: "52060992"
 1. 検索で識別された場所を確認して、ファイルの場所が正しく、検索場所に追加されていることを確認します。
 
 2. サイト、ライブラリ、または[](/sharepoint/crawl-site-content)リストのクロールと再インデックスの手動要求の手順を使用して、サイトのインデックスを再作成します。
+
+## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>エラー/問題: このファイルは存在しなくなったためエクスポートされません。 このファイルは、インデックスに引き続き一覧表示されたため、推定検索結果の数に含まれていました。 ファイルは最終的にインデックスから削除され、将来エラーが発生する可能性があります。
+
+オンラインおよびビジネス向け One Drive For Business の場所を含む電子情報開示SharePointを実行すると、このエラーが表示される場合があります。 電子情報開示は、SPO インデックスを使用してファイルの場所を識別します。 ファイルが削除されたが、SPO インデックスがまだ更新されていない場合、このエラーが発生する可能性があります。
+
+### <a name="resolution"></a>解決方法 
+SPO の場所を開き、このファイルが実際に開いていないか確認します。
+推奨される解決策は、サイトのインデックスを手動で再作成するか、サイトが自動的なバックグラウンド プロセスによってインデックスを再作成するまで待機することです。
+
+
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>エラー/問題: この検索結果は、フォルダーまたはそれ自体ではダウンロードできない他のアーティファクトとしてダウンロードされません。フォルダーまたはライブラリ内のアイテムはダウンロードされます。
+
+オンラインおよびビジネス向け One Drive For Business の場所を含む電子情報開示SharePointを実行すると、このエラーが表示される場合があります。 これは、インデックスで報告されたアイテムをエクスポートしようとしていたが、フォルダーなのでエクスポートしなかったことを意味します。 エラーで説明したように、フォルダー アイテムはエクスポートされますが、その内容はエクスポートされます。
+
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>エラー/問題: 受信者が見つからないため、検索が失敗する
 

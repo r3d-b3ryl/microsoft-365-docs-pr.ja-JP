@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 636114180a1814f5ef842b2a704f2df98488f46e
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 12139708fc5cde133819713fd7185435e594a1a9
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694487"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809181"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの URL を管理する
 
@@ -662,7 +662,9 @@ Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-ドメイン ペアを追加すると、スプーフィングされたユーザーと送信インフラストラクチャの組み合わせだけが許可またはブロックされます。 スプーフィングされたユーザーからのメールを任意のソースから許可したり、スプーフィングされたユーザーに対して送信インフラストラクチャ ソースからのメールを許可したりはしない。
+スプーフィングされた送信者エントリの最大数は 1000 です。 
+
+ドメイン ペアを追加すると、スプーフィングされたユーザーと送信インフラストラクチャの組み合わせだけが許可またはブロックされます。 スプーフィングされたユーザーからのメールを任意のソースから許可したり、スプーフィングされたユーザーに対して送信インフラストラクチャ ソースからのメールを許可したりはしない。 
 
 たとえば、次のドメインペアの許可エントリを追加します。
 

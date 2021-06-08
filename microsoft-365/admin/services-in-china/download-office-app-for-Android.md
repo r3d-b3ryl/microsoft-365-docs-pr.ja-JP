@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet がMicrosoft Officeする Android Office 365アプリと、中国の顧客向けアプリをダウンロードする方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 6cabe2e9769f7cebf9d128f78773f8014fd004e2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: af66123ecee91e6c8f5ddd7cd1b441494ce8ca97
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644809"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809025"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>Office アプリ 21Vianet Office 365 Android 用のアプリ
 
@@ -47,7 +47,6 @@ Android Microsoft Officeアプリは、Word、Excel、PowerPointモバイル ア
 以下の中国Office アプリから Android スマートフォン用のアプリをダウンロードします。
 - [Baidu](https://shouji.baidu.com/software/26842919.html)
 - [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
-- [Huawei](https://appstore.huawei.com/app/C10888510)
 - [Lenovo](https://www.lenovomm.com/appdetail/com.microsoft.office.officehub/43003745)
 - [360](http://zhushou.360.cn/detail/index/soft_id/708682?recrefer=SE_D_office%20mobile)
 - [tencent](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)

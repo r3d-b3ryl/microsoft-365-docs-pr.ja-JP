@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/04/2021
-ms.openlocfilehash: a1b7891e9e397e7345eb73a94d6298a9da781d98
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.date: 06/07/2021
+ms.openlocfilehash: 33170d4706ed53f4de687c34806bb0492a08836e
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795984"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809109"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -440,7 +440,7 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 - MRT ログをサポート ファイルに追加する
    
 ### <a name="known-issues"></a>既知の問題
-この更新プログラムがインストールされている場合、最新のプラットフォーム バージョンに更新するには、ジャンプ パッケージ 4.10.2001.10 が必要です。
+この更新プログラムをインストールすると、最新のプラットフォーム バージョンに更新するには、ジャンプ パッケージ 4.18.2001.10 が必要です。
 <br/>
 </details>
 
