@@ -380,7 +380,7 @@ ms.locfileid: "51445687"
 7. <span data-ttu-id="158c8-599">ポリシーに追加するユーザーのリストをインポートするには、**[インポート]** を選択して、.csv (コンマ区切り値) ファイルをインポートします。</span><span class="sxs-lookup"><span data-stu-id="158c8-599">To import a list of users to add to the policies, select **Import** to import a .csv (comma-separated values) file.</span></span> <span data-ttu-id="158c8-600">ファイルは次の形式である必要があります。ファイルにユーザー プリンシパル名をリストする必要があります。</span><span class="sxs-lookup"><span data-stu-id="158c8-600">The file must be in the following format and you must list the user principal names in the file:</span></span>
 
     ```csv
-    user principal name
+    ユーザー プリンシパル名
     user1@domain.com
     user2@domain.com
     ```
