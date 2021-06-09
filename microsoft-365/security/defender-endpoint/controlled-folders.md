@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: b937dd41f0296f2cf4102f41f8ab10bd55e1c35d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200283"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845572"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダー アクセスを制御して重要なフォルダーを保護する
 
@@ -39,7 +39,7 @@ ms.locfileid: "51200283"
 フォルダー アクセスの制御により、ランサムウェアなどの悪意のあるアプリや脅威から貴重なデータを保護できます。 フォルダー アクセスの制御により、既知の信頼できるアプリの一覧に対してアプリをチェックすることで、データを保護します。 Windows Server 2019 および Windows 10 クライアントでサポートされている場合は、Windows セキュリティ App、Microsoft Endpoint Configuration Manager、Intune (管理対象デバイスの場合) を使用してフォルダー アクセスを制御できます。 
 
 > [!NOTE]
-> スクリプト エンジンは信頼されていないので、制御された保護されたフォルダーへのアクセスを許可することはできません。  たとえば、PowerShell は、証明書とファイルインジケーターで許可されている場合でも、フォルダー アクセスの制御 [によって信頼されません](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates)。 
+> スクリプト エンジンは信頼されていないので、制御された保護されたフォルダーへのアクセスを許可することはできません。  たとえば、PowerShell は、証明書とファイルインジケーターで許可されている場合でも、フォルダー アクセスの制御 [によって信頼されません](/microsoft-365/security/defender-endpoint/indicator-certificates)。 
 
 フォルダー アクセスの制御は [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)で最適に機能します。これにより、通常のアラート調査シナリオの一環として、フォルダー アクセスの制御イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
 
@@ -65,8 +65,8 @@ ms.locfileid: "51200283"
 監査モードを [使用して](audit-windows-defender.md) 、フォルダー アクセスが有効になっている場合に組織に与える影響を評価できます。 また、テスト グラウンド web サイト[Windows Defenderサイト](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)demo.wd.microsoft.com 機能が動作し、動作を確認できます。
 
 フォルダー アクセスの制御は、次のバージョンのフォルダーでサポートWindows。
-- [Windows 10バージョン 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)以降
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="windows-system-folders-are-protected-by-default"></a>Windowsシステム フォルダーは既定で保護されています
 
@@ -87,13 +87,13 @@ Windowsシステム フォルダーは、既定で保護され、他のいくつ
 
 ## <a name="requirements-for-controlled-folder-access"></a>フォルダー アクセスの制御の要件
 
-フォルダー アクセスの制御には、リアルタイムMicrosoft Defender ウイルス対策[を有効にする必要があります](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
+フォルダー アクセスの制御には、リアルタイムMicrosoft Defender ウイルス対策[を有効にする必要があります](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>管理されたフォルダー アクセス イベントを確認Microsoft Defender セキュリティ センター
 
 Defender for Endpoint は、アラート調査シナリオの一環として、イベントとブロックに関する詳細 [なレポートを提供します](investigate-alerts.md)。
 
-高度な検索を使用して、Microsoft Defender for Endpoint データ [を照会できます](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)。 監査モード[を使用している](audit-windows-defender.md)場合は、高度な検索[](advanced-hunting-overview.md)を使用して、フォルダー アクセスの制御設定が有効になっている場合に環境に与える影響を確認できます。
+高度な検索を使用して、Microsoft Defender for Endpoint データ [を照会できます](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)。 監査モード[を使用している](audit-windows-defender.md)場合は、高度な検索[](advanced-hunting-overview.md)を使用して、フォルダー アクセスの制御設定が有効になっている場合に環境に与える影響を確認できます。
 
 クエリ例:
 

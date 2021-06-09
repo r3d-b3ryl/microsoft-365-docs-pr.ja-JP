@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f025f23242c28f698e6f67755cc59d21c4463914
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: c8d3838194c25ba49b2611dc355b21e228291b01
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782947"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842532"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Defender での修復Microsoft 365操作
 
@@ -74,7 +74,7 @@ Defender での自動調査中およびMicrosoft 365、悪意のあるアイテ�
 - 電子メール メッセージのソフト削除などの手動の電子メール アクション 
 - [デバイスまたは電子](../defender-endpoint/advanced-hunting-overview.md) メールでの高度なハンティング アクション
 - [迷惑](../office-365-security/threat-explorer.md) メールへのメールの移動、メールのソフト削除、メールのハード削除など、電子メール コンテンツに対するエクスプローラー アクション
-- ファイル [の削除](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) 、プロセスの停止、スケジュールされたタスクの削除などの手動のライブ応答アクション
+- ファイル [の削除](/windows/security/threat-protection/microsoft-defender-atp/live-response) 、プロセスの停止、スケジュールされたタスクの削除などの手動のライブ応答アクション
 - Microsoft Defender [for Endpoint API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)を使用したライブ応答アクション (デバイスの分離、ウイルス対策スキャンの実行、ファイルに関する情報の取得など)
 
 ## <a name="next-steps"></a>次の手順

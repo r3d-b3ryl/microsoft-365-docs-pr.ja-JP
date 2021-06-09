@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 91295135c833c6b403078bdfd517c7b84ec7d630
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a5590e62e7838bb9f611320b6d0e5c573b2be084
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932849"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841560"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>ASR ルールの展開と検出を最適化する
 
@@ -50,9 +50,9 @@ ms.locfileid: "51932849"
 セキュリティ ***センターの [** 攻撃表面縮小ルール] ページの [除外のMicrosoft 365]*
 
 > [!NOTE]
-> セキュリティ センター Microsoft 365アクセスするには、Microsoft 365 E3または E5 ライセンスと、ユーザーに対して特定の役割を持つアカウントAzure Active Directory。 [必要なライセンスとアクセス許可についてお読みください](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+> セキュリティ センター Microsoft 365アクセスするには、Microsoft 365 E3または E5 ライセンスと、ユーザーに対して特定の役割を持つアカウントAzure Active Directory。 [必要なライセンスとアクセス許可についてお読みください](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
-セキュリティ センターでの ASR ルールの展開のMicrosoft 365、ASR ルールの展開と検出の監視と[管理を参照してください](https://docs.microsoft.com/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
+セキュリティ センターでの ASR ルールの展開のMicrosoft 365、ASR ルールの展開と検出の監視と[管理を参照してください](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
 
 **関連トピック**
 

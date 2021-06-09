@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b95fa2da177a3ecb93bcf3e2085be6111c2c641e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 60f80e78a5f5c7da44a218c30f4b0173d4ecc829
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770519"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845136"
 ---
 # <a name="list-all-remediation-activities"></a>すべての修復作業を一覧表示する
 
@@ -55,7 +55,7 @@ ms.locfileid: "52770519"
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
 アプリケーション | RemediationTask.Read.All | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント) | RemediationTask.Read.Read | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント) | RemediationTask.Read | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ## <a name="properties"></a>プロパティ
 
@@ -71,7 +71,7 @@ dueOn | DateTime | この修復アクティビティの作成者セットの期�
 fixedDevices | . | 固定されているデバイスの数 | 2
 id | String | この修復アクティビティの ID | 097d9735-5479-4899-b1b7-77398899df92
 nameId | String | 関連する製品名 | Microsoft Silverlight
-priority | String | この修復アクティビティの作成者セットの優先度 (High\Medium\Low) | 高い
+priority | String | この修復アクティビティの作成者セットの優先度 (High\Medium\Low) | 高
 productId | String | 関連する製品 ID | microsoft-_-silverlight
 productivityImpactRemediationType | String | いくつかの構成変更は、ユーザーに影響がないデバイスに対してだけ要求できます。 この値は、「すべての公開デバイス」または「ユーザーに影響を与えないデバイスのみ」の選択を示します。 | AllExposedAssets
 rbacGroupNames | String | 関連するデバイス グループ名 | [ "Windows サーバー", "Windows 10" ]
@@ -83,7 +83,7 @@ requesterEmail | String | 作成者の電子メール アドレス | globaladmin
 requesterId | String | Creator オブジェクト ID | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | String | この修復アクティビティに作成者が追加したメモ (フリー テキスト) | null
 scid | String | 関連するセキュリティ推奨事項の SCID | null
-status | String | 修復アクティビティの状態 (アクティブ/完了) | 有効
+status | String | 修復アクティビティの状態 (アクティブ/完了) | アクティブ
 statusLastModifiedOn | DateTime | 状態フィールドが更新された日付 | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | この修復が適用される公開デバイスの数 | 43
 title | String | この修復アクティビティのタイトル | Microsoft Silverlight の更新

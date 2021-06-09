@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84d0b37632dc23615a37bbbd73c17fe509dedae5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e26bb85fc74b6be49a9f8116792a7f28e8fa7e05
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934683"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842268"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
 
@@ -56,7 +56,7 @@ ms.locfileid: "51934683"
 
 9. [ネットワーク拡張機能の構成](#step-9-configure-network-extension)
 
-10. [macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
 11. [macOS での Microsoft Defender for Endpoint の展開](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
@@ -131,7 +131,7 @@ ms.locfileid: "51934683"
 
     ![選択したターゲット コンピューターのイメージ](images/jamfpro-target-selected.png)
 
-12. **[完了]** を選択します。
+12. [**完了**] を選択します。
 
     ![ターゲット グループ コンピューターのイメージ](images/jamfpro-target-group.png)
 
@@ -340,7 +340,7 @@ ms.locfileid: "51934683"
 
     ![構成設定の保存のイメージの追加](images/6f093e42856753a3955cab7ee14f12d9.png)
 
-16. **[完了]** を選択します。 新しい構成プロファイルが **表示されます**。
+16. [**完了**] を選択します。 新しい構成プロファイルが **表示されます**。
 
     ![構成設定の構成プロファイル イメージのイメージ](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
@@ -393,7 +393,7 @@ ms.locfileid: "51934683"
     
     ![構成設定のイメージの保存の追加](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
-6. **[完了]** を選択します。 新しい構成プロファイルが **表示されます**。
+6. [**完了**] を選択します。 新しい構成プロファイルが **表示されます**。
     ![構成設定完了 img のイメージ](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
 ## <a name="step-5-configure-microsoft-autoupdate-mau"></a>手順 5: Microsoft AutoUpdate (MAU) を構成する
@@ -476,7 +476,7 @@ ms.locfileid: "51934683"
 
     ![構成設定 addimg3 のイメージ](images/321ba245f14743c1d5d51c15e99deecc.png)
 
-14. **[完了]** を選択します。
+14. [**完了**] を選択します。
     
     ![構成設定 doneimage のイメージ](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
 
@@ -563,7 +563,7 @@ ms.locfileid: "51934683"
 
 16. **[保存]** を選択します。 
     
-17. **[完了]** を選択します。
+17. [**完了**] を選択します。
     
     ![構成設定 donimg のイメージ](images/809cef630281b64b8f07f20913b0039b.png)
     
@@ -620,7 +620,7 @@ ms.locfileid: "51934683"
 
     ![構成設定の saveimag のイメージ](images/0add8019b85a453b47fa5c402c72761b.png)
 
-10. **[完了]** を選択します。
+10. [**完了**] を選択します。
 
     ![doneimag の構成設定のイメージ](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
@@ -675,7 +675,7 @@ ms.locfileid: "51934683"
 
    ![構成設定 sysext スコープのイメージ](images/sysext-scope.png)
 
-10. **[完了]** を選択します。
+10. [**完了**] を選択します。
 
     ![構成設定 sysext-final のイメージ](images/sysext-final.png)
 
@@ -725,7 +725,7 @@ ms.locfileid: "51934683"
 
     ![構成設定のイメージ savimg netextscop](images/netext-scope.png)
 
-8. **[完了]** を選択します。
+8. [**完了**] を選択します。
 
     ![構成設定 netextfinal のイメージ](images/netext-final.png)
 
@@ -733,7 +733,7 @@ ms.locfileid: "51934683"
 
 
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>手順 10: macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする
-macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [するの手順に従います](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
+macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [するの手順に従います](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
 
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>手順 11: macOS に Microsoft Defender for Endpoint を展開する
@@ -842,7 +842,7 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
     
     ![構成設定セルフサービスのイメージ](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
 
-19. **[完了]** を選択します。 
+19. [**完了**] を選択します。 
 
     ![構成設定 do1img のイメージ](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 

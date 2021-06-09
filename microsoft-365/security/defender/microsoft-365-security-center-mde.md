@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
-description: セキュリティ センターへの変更Microsoft Defender セキュリティ センター詳細Microsoft 365する
-keywords: Microsoft 365 セキュリティ センター、microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、単一ウィンドウ のガラス、コンバージド ポータル、セキュリティ ポータル、Defender セキュリティ ポータルの使用を開始する
+title: Microsoft Defender for Endpoint in Microsoft 365 Defender
+description: ユーザーから Defender への変更Microsoft Defender セキュリティ センター Microsoft 365する
+keywords: Microsoft 365 Defender、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、セキュリティ ポータル、Defender セキュリティ ポータルの使用を開始する
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,14 +19,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 487fc87c613d7321e3ae608097d98d2c90f8874e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b43b7c99c6585e8610d34f3c4e5b372fb1c829a2
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771911"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842628"
 ---
-# <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
+# <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender for Endpoint in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,16 +34,15 @@ ms.locfileid: "52771911"
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 ## <a name="quick-reference"></a>クイック リファレンス
 
-次の図と表に、セキュリティ センターとセキュリティ センターの間Microsoft Defender セキュリティ センター変更点Microsoft 365示します。
+次の図と表に、Defender と Defender の間のナビゲーションMicrosoft Defender セキュリティ センター示Microsoft 365します。
 
 > [!div class="mx-imgBorder"]
 > ![移動先のイメージ](../../media/mde-m3d-security-center.png)
 
-| Microsoft Defender セキュリティ センター | Microsoft 365 セキュリティ センター |
+| Microsoft Defender セキュリティ センター | Microsoft 365 Defender |
 |---------|---------|
 | ダッシュボード <ul><li>セキュリティ操作</li><li>脅威の分析</li></ul>  |ホーム <ul><li>脅威の分析</li></ul>   |
 | インシデント | インシデントとアラート |
@@ -56,42 +55,41 @@ ms.locfileid: "52771911"
 | 脅威&の管理 | 脆弱性管理 |
 | 評価とチュートリアル | 評価&チュートリアル |
 | 構成管理環境 | 構成管理環境 |
-| Settings | Settings | 
+| 設定 | 設定 | 
 
-セキュリティ センター Microsoft 365[強化](overview-security-center.md)され、電子メール、コラボレーション、ID、デバイスの脅威を保護、検出、調査、および対応するセキュリティ機能 [https://security.microsoft.com](https://security.microsoft.com) が組み合わせ込みされています。 このセキュリティ センターは、既存の Microsoft セキュリティ ポータル (Microsoft Defender セキュリティ センター および Office 365 セキュリティ &機能を統合します。
+Defender のMicrosoft 365[強化](overview-security-center.md)された機能は、電子メール、コラボレーション、ID、デバイスの脅威を保護、検出、調査、および対応するセキュリティ機能 [https://security.microsoft.com](https://security.microsoft.com) を組み合わせた機能です。 これにより、既存の Microsoft セキュリティ ポータルの機能が統合され、Microsoft Defender セキュリティ センターコンプライアンス センター Office 365セキュリティ &されます。
 
-この記事では、セキュリティ センターの機能強化に関する一部Microsoft Defender セキュリティ センターと改善点について説明します。この記事では、Microsoft 365説明します。 ただし、注意が必要な新しい要素と更新された要素があります。
+この記事では、Microsoft Defender セキュリティ センター Defender の変更点と改善点の一部について説明Microsoft 365します。 ただし、注意が必要な新しい要素と更新された要素があります。
 
-これまで[、Microsoft Defender セキュリティ センターは](/windows/security/threat-protection/microsoft-defender-atp/portal-overview)Microsoft Defender for Endpoint のホームでした。 Enterpriseチームは、セキュリティ チームを使用して、潜在的な高度な永続的な脅威アクティビティやデータ侵害に関するアラートの監視と対応を支援しています。 Microsoft 365 セキュリティ センターは、ポータルの数を減らすために、Microsoft ID、データ、デバイス、アプリ、インフラストラクチャ全体のセキュリティを監視および管理するホームになります。
+これまで[、Microsoft Defender セキュリティ センターは](/windows/security/threat-protection/microsoft-defender-atp/portal-overview)Microsoft Defender for Endpoint のホームでした。 Enterpriseチームは、セキュリティ チームを使用して、潜在的な高度な永続的な脅威アクティビティやデータ侵害に関するアラートの監視と対応を支援しています。 Microsoft 365 Defender は、ポータルの数を減らすのに役立つ、Microsoft ID、データ、デバイス、アプリ、インフラストラクチャ全体のセキュリティを監視および管理するホームになります。
 
-Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint は[、Microsoft Defender](mssp-access.md)セキュリティ センターでアクセスを許可するのと同じ方法で、マネージド セキュリティ サービス プロバイダー [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)へのアクセスを許可します。
-
+microsoft Defender for Endpoint in Microsoft 365 Defender は[、Microsoft Defender](mssp-access.md)セキュリティ センターでアクセスを許可するのと同じ方法で、マネージド セキュリティ サービス プロバイダー [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)へのアクセス許可をサポートしています。
 
 > [!IMPORTANT]
-> セキュリティ センターに表示されるMicrosoft 365は、現在のサブスクリプションによって異なります。 たとえば、Microsoft Defender for Office 365 のライセンスを持Office 365場合、[電子メール & コラボレーション] セクションは表示されません。
+> Defender に表示される内容Microsoft 365現在のサブスクリプションによって異なります。 たとえば、Microsoft Defender for Office 365 のライセンスを持Office 365場合、[電子メール & コラボレーション] セクションは表示されません。
 
->[!Note]
->新しい統合ポータルは、次の場合は使用できません。
+> [!Note]
+> Microsoft 365Defender は次の場合は使用できません。
 >- US Government Community Cloud (GCC)
 >- 米国 Government Community Cloud高 (GCC高)
 >- 米国国防総省
 >- 商用ライセンスを持つすべての米国政府機関
 
-強化されたセキュリティ センターをMicrosoft 365します [https://security.microsoft.com](https://security.microsoft.com) 。
+Defender を見Microsoft 365します [https://security.microsoft.com](https://security.microsoft.com) 。
 
-利点の詳細説明: [Microsoft 365 セキュリティ センターの概要](overview-security-center.md)
+メリットの詳細: Defender の概要[Microsoft 365する](overview-security-center.md)
 
 ## <a name="whats-changed"></a>変更内容
 
-次の表は、セキュリティ センターとセキュリティ センター Microsoft Defender セキュリティ センター変更Microsoft 365参照します。
+次の表は、Defender と Defender の間のMicrosoft Defender セキュリティ センター参照Microsoft 365です。
 
 ### <a name="alerts-and-actions"></a>アラートとアクション
 
 | 分野 | 変更の説明 |
 |---------|---------|
-| [インシデント&アラート](incidents-overview.md)  | セキュリティ センター Microsoft 365、すべてのエンドポイント、電子メール、および ID でインシデントとアラートを管理できます。 関連するイベントを簡単に見つけ出すのに役立つエクスペリエンスを統合しました。 詳細については、「インシデントの [概要」を参照してください](incidents-overview.md)。   |
+| [インシデント&アラート](incidents-overview.md)  | Defender Microsoft 365、すべてのエンドポイント、電子メール、および ID でインシデントとアラートを管理できます。 関連するイベントを簡単に見つけ出すのに役立つエクスペリエンスを統合しました。 詳細については、「インシデントの [概要」を参照してください](incidents-overview.md)。   |
 | [検索](advanced-hunting-overview.md)  |  Microsoft Defender for Endpoint で作成されたカスタム検出ルールを変更して、ID テーブルと電子メール テーブルを含める場合は、自動的に Id テーブルと電子メール テーブルMicrosoft 365されます。 対応するアラートは、Defender のMicrosoft 365されます。 これらの変更の詳細については、「カスタム検出ルールの移行 [」を参照してください](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules)。 <br><br>高度 `DeviceAlertEvents` な検索のテーブルは、Defender ではMicrosoft 365できません。 Microsoft 365 Defender でデバイス固有のアラート情報を照会するには、and テーブルを使用して、さまざまなソース セットからのさらに多くの情報に `AlertInfo` `AlertEvidence` 対応できます。 [DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)なしで書き込みクエリを実行して、次のデバイス関連のクエリを作成します。|
-|[アクション センター](m365d-action-center.md)    | 自動調査と修復アクションに続いて実行された保留中のアクションと完了したアクションを一覧表示します。 以前は、Microsoft Defender セキュリティ センターのアクション センターには、デバイスでのみ実行される修復アクションの保留中および完了したアクションが一覧表示され、自動調査にはアラートと状態が一覧表示されました。 強化されたセキュリティ センター Microsoft 365アクション センターでは、電子メール、デバイス、およびユーザー間の修復アクションと調査が 1 つの場所にまとめされます。  |
+|[アクション センター](m365d-action-center.md)    | 自動調査と修復アクションに続いて実行された保留中のアクションと完了したアクションを一覧表示します。 以前は、Microsoft Defender セキュリティ センターのアクション センターには、デバイスでのみ実行される修復アクションの保留中および完了したアクションが一覧表示され、自動調査にはアラートと状態が一覧表示されました。 Defender の強化Microsoft 365、アクション センターでは、電子メール、デバイス、およびユーザー間の修復アクションと調査を 1 つの場所にまとめます。  |
 | [脅威の分析](threat-analytics.md) |  ナビゲーション バーの上部に移動し、検出と使用を容易にします。 エンドポイントと電子メールとコラボレーションの両方に関する脅威情報が含まれる。    |
 
 ### <a name="endpoints"></a>エンドポイント
@@ -118,7 +116,7 @@ Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 |---------|---------|
 | レポート  | 脅威の保護、デバイスの正常性とコンプライアンス、脆弱な&など、エンドポイントと電子メール のコラボレーションに関するレポートを参照してください。 |
 | 正常性  |  現在、管理センターの [サービス正常性][ページMicrosoft 365リンクします](https://admin.microsoft.com/)。 |
-| Settings |  セキュリティ センター、Microsoft 365 Microsoft 365 Defender、Endpoints、Email &コラボレーション、ID、デバイス検出の設定を管理します。   |
+| 設定 |  Defender、Endpoints、Microsoft 365 Email &コラボレーション、ID、デバイス検出の設定を管理します。   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365のナビゲーションと機能
 
@@ -154,7 +152,7 @@ Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 - 脅威に関連するインシデントが表示されます。
 - レポート内のアクション可能な情報をすばやく認識して使用するための強化されたエクスペリエンス。
 
-脅威分析には、Microsoft 365 セキュリティ センターの左上のナビゲーション バーから、または組織の上位の脅威を示す専用のダッシュボード カードからアクセスできます。
+脅威分析には、Microsoft 365 Defender の左上のナビゲーション バーから、または組織の上位の脅威を示す専用のダッシュボード カードからアクセスできます。
 
 脅威分析を使用して新たな脅威を追跡して対応する [方法について詳しくは、次のページをご覧ください](./threat-analytics.md)。
 
@@ -172,11 +170,11 @@ Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint
 
 ### <a name="siem-api-connections"></a>SIEM API 接続
 
-Defender for [Endpoint SIEM API を使用する場合](../defender-endpoint/enable-siem-integration.md)は、引き続き実行できます。 API ペイロードに、セキュリティ ポータルのアラート ページまたはインシデント ページをポイントする新しいリンクMicrosoft 365しました。 新しい API フィールドには、LinkToMTP と IncidentLinkToMTP が含まれます。 詳細については、「Microsoft Defender for Endpoint からセキュリティ センターへのアカウントMicrosoft 365[する」を参照してください](./microsoft-365-security-mde-redirection.md)。
+Defender for [Endpoint SIEM API を使用する場合](../defender-endpoint/enable-siem-integration.md)は、引き続き実行できます。 API ペイロードに、セキュリティ ポータルのアラート ページまたはインシデント ページをポイントする新しいリンクMicrosoft 365しました。 新しい API フィールドには、LinkToMTP と IncidentLinkToMTP が含まれます。 詳細については、「アカウントを Microsoft Defender for Endpoint から Defender にリダイレクト[するMicrosoft 365参照してください](./microsoft-365-security-mde-redirection.md)。
 
 ### <a name="email-alerts"></a>電子メール通知
 
-Defender for Endpoint の電子メール 通知は引き続き使用できます。 電子メールに新しいリンクが追加され、アラート ページまたはインシデント ページがセキュリティ センター Microsoft 365されました。 詳細については、「Microsoft Defender for Endpoint からセキュリティ センターへのアカウントMicrosoft 365[する」を参照してください](./microsoft-365-security-mde-redirection.md)。
+Defender for Endpoint の電子メール 通知は引き続き使用できます。 メールに、Defender のアラート ページまたはインシデント ページをポイントする新しいMicrosoft 365しました。 詳細については、「アカウントを Microsoft Defender for Endpoint から Defender にリダイレクト[するMicrosoft 365参照してください](./microsoft-365-security-mde-redirection.md)。
 
 ### <a name="managed-security-service-providers-mssp"></a>Managed Security Service Providers (MSSP)
 
@@ -184,6 +182,6 @@ Defender for Endpoint の電子メール 通知は引き続き使用できます
 
 ## <a name="related-information"></a>関連情報
 
-- [Microsoft 365 セキュリティ センター](overview-security-center.md)
-- [Microsoft 365 セキュリティ センターの Microsoft Defender for Endpoint](microsoft-365-security-center-mde.md)
-- [アカウントを Microsoft Defender for Endpoint から Microsoft 365 セキュリティ センターにリダイレクトする](microsoft-365-security-mde-redirection.md)
+- [Microsoft 365 Defender](overview-security-center.md)
+- [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
+- [Microsoft Defender for Endpoint から Microsoft Defender へのアカウントのリダイレクトMicrosoft 365 Defender](microsoft-365-security-mde-redirection.md)

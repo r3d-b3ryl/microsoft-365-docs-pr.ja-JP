@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e6b0c96d4e145a2e5df7c7555e262aefe891e483
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 5b5421d2b4001b813d3bcc1e804cae7fb05d0fa7
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51691276"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842004"
 ---
 # <a name="device-profiles"></a>デバイス プロファイル
 
@@ -44,18 +44,23 @@ ms.locfileid: "51691276"
 
 次の表は、デバイス プロファイルによって構成された各設定の設定とその既定値をまとめたものです。 (これらの設定は、ユーザー設定OMA-URIsカスタム構成プロファイルを使用して構成Microsoft エンドポイント マネージャー)。
 
-| 機能 | 機密データ | Power User | 標準 |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|------------------------|-----------------------|
-| **外部ファイルのブロックStorage**                                                                                                                               | はい                       | はい                   | いいえ                   |
-| **[クラウド ブロック レベル](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)** | 高い                      | 高い                  | 高い                 |
-| **Microsoft アカウントを無効にする**                                                                                                                           | はい                       | はい                   | いいえ                   |
-| **個人用アカウントを無効OneDrive**                                                                                                                            | はい                       | はい                   | いいえ                   |
-| **昇格のためのデスクトップのセキュリティ保護に切り替える**                                                                                                               | いいえ                        | はい                   | いいえ                   |
-| **Microsoft Defender for Endpoint Device Tag**                                                                                                           | M365Managed-SensitiveData | M365Managed-PowerUser | M365Managed-Standard |
-| **デバイスの管理者**                                                                                                                                 | いいえ                        | はい                   | いいえ                   |
-| **Autopilot プロファイル**                                                                                                                                     | MMD 標準               | MMD Power User         | MMD 標準          |
-| **AppLocker**                                                                                                                                            | はい                       | いいえ                    | いいえ                   |
-| **パブリック ストアのブロック**                                                                                                                                   | はい                       | はい                   | いいえ                   |
+<br>
+
+****
+
+|機能|機密データ|Power User|標準|
+|---|:---:|:---:|:---:|
+|**外部ファイルのブロックStorage**|はい|はい|いいえ|
+|**[クラウド ブロック レベル](/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)**|高|高|高|
+|**Microsoft アカウントを無効にする**|はい|はい|いいえ|
+|**個人用アカウントを無効OneDrive**|はい|はい|いいえ|
+|**昇格のためのデスクトップのセキュリティ保護に切り替える**|いいえ|はい|いいえ|
+|**Microsoft Defender for Endpoint Device Tag**|M365Managed-SensitiveData|M365Managed-PowerUser|M365Managed-Standard|
+|**デバイスの管理者**|いいえ|はい|いいえ|
+|**Autopilot プロファイル**|MMD 標準|MMD Power User|MMD 標準|
+|**AppLocker**|はい|いいえ|いいえ|
+|**パブリック ストアのブロック**|はい|はい|いいえ|
+|
 
 各デバイス プロファイルには、次の項目も含まれます。
 

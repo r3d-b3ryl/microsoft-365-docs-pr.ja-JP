@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c50efb11ee7f884be6788b90c14e7fc639d9b8ca
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 3ed033f137d3329dc208183fe8fad1f300ffd4c9
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281007"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841795"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux での Microsoft Defender for Endpoint の手動展開
 
@@ -328,7 +328,7 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > 初期インストールの完了後にプロキシの構成が必要な場合があります。 「Configure Defender for Endpoint on Linux for static proxy [discovery: Post-installation configuration」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。
+    > 初期インストールの完了後にプロキシの構成が必要な場合があります。 「Configure Defender for Endpoint on Linux for static proxy [discovery: Post-installation configuration」を参照してください](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。
 
 5. 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
 

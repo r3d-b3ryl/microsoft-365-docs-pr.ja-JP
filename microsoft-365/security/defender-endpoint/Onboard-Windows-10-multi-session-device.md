@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 0ef80e2aaccbf25a79083c2f95ea7399e30ea651
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 7ade1ae1e045cb52f48d231acbc1712e753b6bc3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764319"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841848"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード 
 読み取り 6 分 
@@ -31,7 +31,7 @@ ms.locfileid: "51764319"
 Microsoft Defender for Endpoint は、VDI セッションと仮想デスクトップ セッションWindowsサポートしています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Windows Virtual Desktop セッションを実装する必要があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
  ## <a name="before-you-begin"></a>はじめに
-非永続的な [VDI の考慮事項について理解してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 仮想[Windows非](https://docs.microsoft.com/azure/virtual-desktop/overview)永続化オプションは提供されませんが、新しいホストのプロビジョニングとマシンの再展開に使用できるゴールデン Windows イメージを使用する方法を提供します。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
+非永続的な [VDI の考慮事項について理解してください](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 仮想[Windows非](/azure/virtual-desktop/overview)永続化オプションは提供されませんが、新しいホストのプロビジョニングとマシンの再展開に使用できるゴールデン Windows イメージを使用する方法を提供します。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
 
 > [!NOTE]
 > オンボーディング方法の選択に応じて、デバイスは次のように Microsoft Defender for Endpoint ポータルに表示されます。 

@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: ハイブリッドモダン認証 (HMA) Exchange Serverを使用して、より安全なユーザー認証と承認を提供する、オンプレミスのユーザー認証を構成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f52b7c011b717c5dcb91270ab0a7dd2015131c0e
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: d30d1b2b14efd66d973e9bf6d45b970d7af681bc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694451"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841632"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -183,12 +183,12 @@ HMA を有効にした後、クライアントの次のログインでは新し�
 
 オンプレミスのお客様が TCP 443 Exchangeサーバーを使用している場合は、次の IP アドレス範囲のトラフィック処理をバイパスします。
 
-```
+```text
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-iOS と Android 用 Outlook アプリは、Microsoft サービス を使用して、Microsoft 365 または Office 365 をモバイル デバイスで体験し、日常の生活と仕事を見つけ、計画し、優先順位を付ける最善の方法として設計されています。 詳細については、「ハイブリッドモダン認証と iOS および Android のOutlookを使用する[」を参照してください](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)。
+iOS と Android 用 Outlook アプリは、Microsoft サービス を使用して、Microsoft 365 または Office 365 をモバイル デバイスで体験し、日常の生活と仕事を見つけ、計画し、優先順位を付ける最善の方法として設計されています。 詳細については、「ハイブリッドモダン認証と iOS および Android のOutlookを使用する[」を参照してください](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。
 
 ## <a name="related-topics"></a>関連項目
 

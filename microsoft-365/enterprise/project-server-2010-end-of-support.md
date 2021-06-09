@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 のサポートは 2021 年 4 月 13 日に終了します。 この記事をガイドとして使用して、Project Onlineまたは新しいバージョンの Projectサーバーにアップグレードします。
-ms.openlocfilehash: 807c09bff0cb6331b872474acc22f8d2c622a6c6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f57fa15da3cabc4b326a52359a29c652fcbe9e7f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927374"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842232"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 のサポート終了のロードマップ
 
@@ -161,7 +161,7 @@ Project Server 2010 から Project Server 2013 へのアップグレードの詳
 
    - アップグレード プロセスは、Project Server 2010 データを Project Server 2013 形式に変換するだけでなく、4 つの Project Server 2010 データベースを単一の Project Web App データベースに統合します。
 
-   - サーバー 2013 SharePointサーバー 2013 Projectサーバー 2013 の両方が、以前のバージョンからクレーム ベース認証に変更されました。 従来の認証を使用している場合は、アップグレード時にこれを考慮する必要があります。 詳細については、「[SharePoint 2013 でクラシックモードからクレームベース認証に移行する]( https://docs.microsoft.com/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)」を参照してください。
+   - サーバー 2013 SharePointサーバー 2013 Projectサーバー 2013 の両方が、以前のバージョンからクレーム ベース認証に変更されました。 従来の認証を使用している場合は、アップグレード時にこれを考慮する必要があります。 詳細については、「[SharePoint 2013 でクラシックモードからクレームベース認証に移行する]( /sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)」を参照してください。
 
 主なリソース:
 

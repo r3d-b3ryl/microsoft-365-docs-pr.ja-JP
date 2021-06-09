@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint サポートに連絡する
+title: Microsoft Defender for Endpoint サポートに連絡する
 description: Microsoft Defender for Endpoint サポートに連絡する方法について説明します。
 keywords: サポート、連絡先、プレミア サポート、ソリューション、問題、ケース
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eaf26c566b54b21e63af5ecbfe3603f2b1389208
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 2231a4fc1f8bb58a83c639c8e60ad790af0df236
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892843"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845632"
 ---
-# <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
+# <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,9 +46,9 @@ Defender for Endpoint は最近、サポート プロセスをアップグレー
 少なくとも、サービス サポート管理者またはヘルプ **デスク管理者の** 役割が必要です。
 
 
-アクセス許可を持つ役割の詳細については、「 [セキュリティ管理者のアクセス許可」を参照してください](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions)。 アクションを含むロールは `microsoft.office365.supportTickets/allEntities/allTasks` 、ケースを送信できます。
+アクセス許可を持つ役割の詳細については、「 [セキュリティ管理者のアクセス許可」を参照してください](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions)。 アクションを含むロールは `microsoft.office365.supportTickets/allEntities/allTasks` 、ケースを送信できます。
 
-管理者ロールの一般的な情報については、「管理者ロール [について」を参照してください](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)。
+管理者ロールの一般的な情報については、「管理者ロール [について」を参照してください](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)。
 
 
 ## <a name="access-the-widget"></a>ウィジェットにアクセスする
@@ -82,7 +82,7 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 > [!Note]
 > Microsoft とのパーミエ サポート契約がある場合は、ウィジェットにプレミア タグが表示されます。 設定されていない場合は、Microsoft アカウント マネージャーに問い合わせください。
 
-### <a name="contact-support"></a>サポートに連絡
+### <a name="contact-support"></a>サポートに連絡する
 このオプションは、ヘッドセットのように見えるアイコンをクリックして使用できます。 次に、サポート ケースを提出する次のページが表示されます。
 
 ![サービス要求ウィジェットを開くイメージ](images/Support4.png)

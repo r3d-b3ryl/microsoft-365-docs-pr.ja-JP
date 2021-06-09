@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26c531c0544f92d664bfa0f1a21e4f33a0765d24
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 06ef716e9deee7b20e8615bd22c93130ee18b77f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893499"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845584"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の接続アプリケーション
 
@@ -39,7 +39,7 @@ ms.locfileid: "51893499"
 
 アプリケーションは、標準の OAuth 2.0 プロトコルを使用して認証を行い、Microsoft Defender for Endpoint API で使用するためのトークンを提供します。  さらに、Azure Active Directory (Azure AD) アプリケーションを使用すると、テナント管理者は、対応するアプリを使用してアクセスできる API を明示的に制御できます。
  
-接続されているアプリケーションで API [を使用](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) するには、次の手順に従う必要があります。
+接続されているアプリケーションで API [を使用](/microsoft-365/security/defender-endpoint/apis-intro) するには、次の手順に従う必要があります。
  
 ## <a name="access-the-connected-application-page"></a>接続されているアプリケーション ページにアクセスする
 左側のナビゲーション メニューで、[**パートナー] を選択&接続**  >  **された AAD アプリケーションを選択します**。

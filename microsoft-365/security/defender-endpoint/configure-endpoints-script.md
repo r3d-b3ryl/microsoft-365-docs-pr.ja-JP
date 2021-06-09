@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 056268ed093d371d39a6136dd0b272c12ab6f9d7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2510fb1a187bbe136669e11bc73103438b51d811
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933915"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842172"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows 10 デバイスのオンボード
 
@@ -58,7 +58,7 @@ ms.locfileid: "51933915"
     1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
   
-2.  構成パッケージの内容を、オンボードするデバイスの場所 (デスクトップなど) に展開します。 *WindowsDefenderATPOnboardingScript.cmd という名前のファイルが必要です*。
+2.  構成パッケージの内容を、オンボードするデバイスの場所 (デスクトップなど) に展開します。 *WindowsDefenderATPLocalOnboardingScript.cmd という名前のファイルが必要です*。
 
 3.  デバイスで管理者特権のコマンド ライン プロンプトを開き、スクリプトを実行します。
 
@@ -68,7 +68,7 @@ ms.locfileid: "51933915"
 
         ![[ウィンドウのスタート] メニューの [管理者として実行] をポイントする](images/run-as-admin.png)
 
-4.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd」と入力します。*
+4.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd」と入力します。*
 
 5.  Enter キーを **押** するか **、[OK] をクリックします**。
 

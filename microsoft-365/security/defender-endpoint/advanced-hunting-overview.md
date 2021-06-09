@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 906ae4bdebcc46e210fa9c5dcb5387c880fdbb38
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 9f1934de8f710a21bc362e735bb6f1eab7a2d287
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939662"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845423"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>高度な狩猟で脅威を積極的に探す
 
@@ -54,7 +54,7 @@ ms.locfileid: "51939662"
 
 | 学習目標 | 説明 | リソース |
 |--|--|--|
-| **言語を学ぶ** | 高度な検索は [、同じ構文と](https://docs.microsoft.com/azure/kusto/query/)演算子をサポートする Kusto クエリ言語に基づいて行います。 最初のクエリを実行して、クエリ言語を学習します。 | [クエリ言語の概要](advanced-hunting-query-language.md) |
+| **言語を学ぶ** | 高度な検索は [、同じ構文と](/azure/kusto/query/)演算子をサポートする Kusto クエリ言語に基づいて行います。 最初のクエリを実行して、クエリ言語を学習します。 | [クエリ言語の概要](advanced-hunting-query-language.md) |
 | **クエリ結果を使用する方法について** | グラフと、結果を表示またはエクスポートするさまざまな方法について学習します。 クエリをすばやく調整し、詳細な情報を取得するためにドリルダウンする方法について説明します。 | [クエリ結果を操作する](advanced-hunting-query-results.md) |
 | **スキーマを理解する** | スキーマとその列のテーブルについて、高レベルで十分に理解してください。 クエリを作成するときにデータを検索する場所について説明します。 | [スキーマ リファレンス](advanced-hunting-schema-reference.md) |
 | **定義済みクエリを使用する** | さまざまな脅威の捜索シナリオを網羅する定義済みクエリのコレクションを調べます。 | [共有クエリ](advanced-hunting-shared-queries.md) |

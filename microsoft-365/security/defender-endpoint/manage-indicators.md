@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
-ms.translationtype: HT
+ms.openlocfilehash: fb87f36c5289d622df2615046c5bb2fd8fad9543
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470895"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842244"
 ---
 # <a name="create-indicators"></a>インジケーターの作成
 
@@ -68,7 +68,7 @@ Defender for Endpoint のクラウド検出エンジンは、収集されたデ�
 
 
 > [!NOTE]
-> 1 テナントあたり 15,000 件のインジケーターの制限があります。 ファイルおよび証明書インジケーターは、[Microsoft Defender ウイルス対策ソフトウェア用に定義された例外](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)をブロックしません。 Microsoft Defender ウイルス対策はパッシブ モードの場合にインジケーターをサポートしません。 
+> 1 テナントあたり 15,000 件のインジケーターの制限があります。 ファイルおよび証明書インジケーターは、[Microsoft Defender ウイルス対策ソフトウェア用に定義された例外](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)をブロックしません。 Microsoft Defender ウイルス対策はパッシブ モードの場合にインジケーターをサポートしません。 
 
 
 ## <a name="related-topics"></a>関連トピック

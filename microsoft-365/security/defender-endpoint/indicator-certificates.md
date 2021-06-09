@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8cf611e38bc781c2302f70f6491bb827410235b0
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b75a8cf1d2681281555a3b7bb80deadfc11ee44c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164683"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845453"
 ---
 # <a name="create-indicators-based-on-certificates"></a>証明書に基づいてインジケーターを作成する
 
@@ -46,7 +46,7 @@ ms.locfileid: "51164683"
 
 証明書のインジケーターを作成する前に、次の要件を理解することが重要です。
 
-- この機能は、組織でクラウド ベースのWindows Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+- この機能は、組織でクラウド ベースのWindows Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウドベースの保護 [を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。
 - サーバー 2016 および 2019 Windows 10バージョン 1703 以降のコンピューター Windowsサポートされています。
 - ウイルスおよび脅威保護の定義は最新である必要があります。

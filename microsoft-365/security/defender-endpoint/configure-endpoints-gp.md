@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 81a3b41fb8e38a224a030571093b2145d2efb3d4
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f607e36cef85f30fa1d6e073da871ac1c140684c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593431"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841836"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>グループ ポリシー Windows 10デバイスのオンボード 
 
@@ -62,7 +62,7 @@ ms.locfileid: "52593431"
 
 2. デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 *OptionalParamsPolicy* というフォルダーと *WindowsDefenderATPOnboardingScript.cmd というファイルが必要です*。
 
-3. グループ ポリシー [管理コンソール](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。
+3. グループ ポリシー [管理コンソール](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。
 
 4. グループ ポリシー **管理エディターで、[****コンピューターの構成**] 、[基本設定] の順に移動し、[コントロール パネルの **設定] に移動します**。
 
@@ -97,7 +97,7 @@ ms.locfileid: "52593431"
 
     - _AtpConfiguration.adml を_ _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ ポリシー \\ PolicyDefinitions \\ en-US にコピーする_
 
-2.  グループ ポリシー [管理コンソールを開き](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)、構成する GPO を右クリックし、[編集] を **クリックします**。
+2.  グループ ポリシー [管理コンソールを開き](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)、構成する GPO を右クリックし、[編集] を **クリックします**。
 
 3.  グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動します**。
 
@@ -149,9 +149,9 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 ポリシー | 設定 
 :---|:---
 リアルタイム保護をオフにする|無効
-動作の監視を有効にする|Enabled
-ダウンロードしたファイルと添付ファイルをスキャンする|Enabled
-コンピューター上のファイルとプログラムのアクティビティを監視する|Enabled
+動作の監視を有効にする|有効
+ダウンロードしたファイルと添付ファイルをスキャンする|有効
+コンピューター上のファイルとプログラムのアクティビティを監視する|有効
 
 <br/>
 
@@ -161,7 +161,7 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 
 ポリシー | 設定 
 :---|:---
-スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |Enabled
+スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |有効
 
 
 <br/>
@@ -208,7 +208,7 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 
 2. デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 *-MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
 
-3. グループ ポリシー [管理コンソール](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。
+3. グループ ポリシー [管理コンソール](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。
 
 4. グループ ポリシー **管理エディターで、[****コンピューターの構成**] 、[基本設定] の順に移動し、[コントロール パネルの **設定] に移動します**。
 

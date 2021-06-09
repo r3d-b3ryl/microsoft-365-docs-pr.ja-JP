@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f14d79d98bfffda675cd71b96068b179f30f059e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1935533ad924b7589bdfee6f3119fb667fb60b73
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934635"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841512"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開 
 
@@ -34,7 +34,7 @@ ms.locfileid: "51934635"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-登録されているデバイスで Android に Defender for Endpoint を展開するIntune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「デバイスの登録  [」を参照してください](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal)。
+登録されているデバイスで Android に Defender for Endpoint を展開するIntune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「デバイスの登録  [」を参照してください](/mem/intune/user-help/enroll-device-android-company-portal)。
 
 > [!NOTE]
 > **Android 上のエンドポイントの Defender が Google Play で [利用できる](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br>
@@ -60,7 +60,7 @@ Android に Defender for Endpoint を展開する方法について、Intune ポ
    - **Publisher** Microsoft として設定します。
    - **アプリ ストア URL as** https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint app Google Play ストア URL) 
 
-   その他のフィールドはオプションです。 **[次へ]** を選択します。
+   その他のフィールドはオプションです。 [**次へ**] を選択します。
 
    ![管理センターのMicrosoft エンドポイント マネージャーアプリ情報を追加する](images/mda-addappinfo.png)
 
@@ -100,7 +100,7 @@ Android に Defender for Endpoint を展開する方法について、Intune ポ
 
 Android 上のエンドポイントの Defender は、登録Enterprise Android をサポートします。
 
-Intune でサポートされる登録オプションの詳細については、「登録オプション」 [を参照してください](https://docs.microsoft.com/mem/intune/enrollment/android-enroll)。
+Intune でサポートされる登録オプションの詳細については、「登録オプション」 [を参照してください](/mem/intune/enrollment/android-enroll)。
 
 **現在、仕事用プロファイルと企業所有の完全に管理されたユーザー デバイス登録を持つ個人所有のデバイスは、展開のためにサポートされています。**
 
@@ -126,7 +126,7 @@ Intune でサポートされる登録オプションの詳細については、�
 
     ![Defender for Endpoint プレビュー アプリ承認のスクリーンショット](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
 
-5. [承認の設定] ページが表示されます。 このページでは、Android 上の Defender for Endpoint が要求する可能性がある新しいアプリのアクセス許可を処理する設定が確認されます。 選択肢を確認し、希望するオプションを選択します。 **[完了]** を選択します。
+5. [承認の設定] ページが表示されます。 このページでは、Android 上の Defender for Endpoint が要求する可能性がある新しいアプリのアクセス許可を処理する設定が確認されます。 選択肢を確認し、希望するオプションを選択します。 [**完了**] を選択します。
 
     既定では、[アプリが新しいアクセス許可を要求するときに承認済みの状態を維持する] を *選択します。*
 

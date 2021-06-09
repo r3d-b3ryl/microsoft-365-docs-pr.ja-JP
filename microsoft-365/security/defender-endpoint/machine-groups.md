@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4fc2768392e818f74600e3c2d749b6e95bf957e4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: d4f62acde4e7d790c7a7c8635f51c99f0823687d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259417"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842772"
 ---
 # <a name="create-and-manage-device-groups"></a>デバイス グループの作成と管理
 
@@ -75,7 +75,7 @@ Microsoft Defender for Endpoint では、デバイス グループを作成し�
     >[!NOTE]
     >RBAC ロールに割り当てられているユーザー AD Azure へのアクセスのみを許可できます。
 
-6. **[閉じる]** をクリックします。 構成の変更が適用されます。
+6. [閉じる] をクリックします。 構成の変更が適用されます。
 
 ## <a name="manage-device-groups"></a>デバイス グループの管理
 
@@ -111,4 +111,4 @@ Microsoft Defender for Endpoint では、デバイス グループを作成し�
 
 - [役割ベースのアクセス制御を使用したポータル アクセスの管理](rbac.md)
 - [デバイス タグの作成と管理](machine-tags.md)
-- [API を使用してテナント デバイス グループのリストGraphする](https://docs.microsoft.com/graph/api/device-list-memberof)
+- [API を使用してテナント デバイス グループのリストGraphする](/graph/api/device-list-memberof)

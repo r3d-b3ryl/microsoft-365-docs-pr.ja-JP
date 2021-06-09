@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4742a32fd899f41d4e7772c52415891cdd8895bf
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2d78b7ea31c45220735a8579d728f9c0f7bda181
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769523"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842112"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>ユーザーなしで Microsoft Defender for Endpoint にアクセスするアプリを作成する
 
@@ -39,7 +39,7 @@ ms.locfileid: "52769523"
 
 このページでは、ユーザーなしで Defender for Endpoint へのプログラムによるアクセスを取得するアプリケーションを作成する方法について説明します。 ユーザーに代わって Defender for Endpoint へのプログラムによるアクセスが必要な場合は、「ユーザー コンテキストでアクセスを取得する」 [を参照してください](exposed-apis-create-app-nativeapp.md)。 必要なアクセス権が分からない場合は、「開始する」 [を参照してください](apis-intro.md)。
 
-Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、Defender for Endpoint の機能に基づいてワークフローを自動化し、革新するのに役立ちます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については[、「OAuth 2.0 Authorization Code Flow」 を参照してください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、Defender for Endpoint の機能に基づいてワークフローを自動化し、革新するのに役立ちます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については[、「OAuth 2.0 Authorization Code Flow」 を参照してください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般に、API を使用するには、次の手順を実行する必要があります。
 - アプリケーション (azure Azure Active Directory) AD作成します。
@@ -116,7 +116,7 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-Azure AD トークンの詳細については [、「Azure AD」を参照してください](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
+Azure AD トークンの詳細については [、「Azure AD」を参照してください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 ### <a name="use-powershell"></a>PowerShell を使う
 

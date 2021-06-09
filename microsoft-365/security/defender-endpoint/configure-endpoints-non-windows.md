@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1c10576b72793ab3833f2e9027e3814a449334ee
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 265a7e9093638caa2111c7d1d82e51c8c2437d12
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933927"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845464"
 ---
 # <a name="onboard-non-windows-devices"></a>Windows 以外のデバイスをオンボードする
 
@@ -48,7 +48,7 @@ Defender for Endpoint は、セキュリティ プラットフォームだけで
 非デバイスをオンボードするには、次の手順を実行Windows必要があります。
 1. オンボーディングの好みの方法を選択します。
 
-   - macOS デバイスの場合は、Microsoft Defender for Endpoint またはサード パーティ製ソリューションを使用してオンボードを選択できます。 詳細については [、「Microsoft Defender for Endpoint on Mac」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
+   - macOS デバイスの場合は、Microsoft Defender for Endpoint またはサード パーティ製ソリューションを使用してオンボードを選択できます。 詳細については [、「Microsoft Defender for Endpoint on Mac」を参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
 
    - その他の非接続デバイスWindowsサードパーティとの統合を通じてWindowsデバイスのオンボード **を選択します**。   
     1. ナビゲーション ウィンドウで、[相互運用性パートナー]**を**  >  **選択します**。 サード パーティ製のソリューションが一覧に表示されます。

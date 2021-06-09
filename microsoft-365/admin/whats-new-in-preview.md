@@ -21,12 +21,12 @@ description: 管理者Microsoft 365 - 今月追加された機能について学
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: d4bd7d02b8c14f8b57b6f2e3eef99c2233d820fe
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 5bb8377dd45714dcdf25533055159f8964acc558
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779893"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841968"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>管理センターの新機能Microsoft 365
 
@@ -291,7 +291,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 ソリューションおよびアーキテクチャ センター
 
-ちょうど今月、Microsoft 365 ソリューションとアーキテクチャ センターという新しいサイトをリリースしました。このサイトでは、安全で準拠したコラボレーションのための統合 Microsoft 365 ソリューションを理解し、計画し、実装するために必要な技術的なガイダンスをまとめました。 [https://docs.microsoft.com]() [](../solutions/index.yml) このセンターには、次の情報が表示されます。
+ちょうど今月[、docs.microsoft.com](../solutions/index.yml)で Microsoft 365 ソリューションとアーキテクチャ センターという新しいサイトをリリースしました。このサイトでは、安全で準拠したコラボレーションのための統合 Microsoft 365 ソリューションを理解し、計画し、実装するために必要な技術的なガイダンスをまとめました。 このセンターには、次の情報が表示されます。
 
 - 基礎ソリューションのガイダンス
 - ワークロード ソリューションとシナリオ のガイダンス

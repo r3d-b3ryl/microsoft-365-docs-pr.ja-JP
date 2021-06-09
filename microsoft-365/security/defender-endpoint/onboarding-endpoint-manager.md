@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e744262cfd63383e69abf02be9fbf91d2d229db2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f3442528f6d9239219f0b4638f75758a055717de
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935259"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842640"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用したオンボーディング
 
@@ -46,7 +46,7 @@ ms.locfileid: "51935259"
 Defender for Endpoint はさまざまなエンドポイントとツールのオンボーディングをサポートしますが、この記事ではそれらをカバーしません。 サポートされている他の展開ツールと方法を使用した一般的なオンボーディングの詳細については、「オンボードの概要 [」を参照してください](onboarding.md)。
 
 
-[Microsoft エンドポイント マネージャー](https://docs.microsoft.com/mem/endpoint-manager-overview)は、複数のサービスを統合するソリューション プラットフォームです。 これには、クラウドベース[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)管理のための機能が含まれています。
+[Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)は、複数のサービスを統合するソリューション プラットフォームです。 これには、クラウドベース[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)管理のための機能が含まれています。
 
 
 このトピックでは、次のユーザーをガイドします。
@@ -76,10 +76,10 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 -   [セキュリティ センター](https://securitycenter.windows.com/)
 
--   [Intune セキュリティのベースライン](https://docs.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
+-   [Intune セキュリティのベースライン](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 詳細については、次のMicrosoft エンドポイント マネージャーを参照してください。
-- [Microsoft エンドポイント マネージャーページ](https://docs.microsoft.com/mem/)
+- [Microsoft エンドポイント マネージャーページ](/mem/)
 - [Intune と ConfigMgr のコンバージェンスに関するブログ投稿](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [MEM の概要ビデオ](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
@@ -89,7 +89,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 >[!NOTE]
 >Intune では、Azure Active Directory (Azure AD) グループを使用してデバイスとユーザーを管理します。 Intune 管理者は、組織のニーズに合わせてグループを設定できます。<br>
-詳細については、「グループを追加して [ユーザーとデバイスを整理する」を参照してください](https://docs.microsoft.com/mem/intune/fundamentals/groups-add)。
+詳細については、「グループを追加して [ユーザーとデバイスを整理する」を参照してください](/mem/intune/fundamentals/groups-add)。
 
 ### <a name="create-a-group"></a>グループの作成
 
@@ -152,7 +152,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > ![ポータル 6 Microsoft エンドポイント マネージャーのイメージ](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
-    > この例では、Defender for Endpoint が Intune に既に統合済みであるとして、これは自動的に設定されています。 統合の詳細については [、「Enable Microsoft Defender for Endpoint in Intune」を参照してください](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)。
+    > この例では、Defender for Endpoint が Intune に既に統合済みであるとして、これは自動的に設定されています。 統合の詳細については [、「Enable Microsoft Defender for Endpoint in Intune」を参照してください](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)。
     > 
     > 次の図は、Microsoft Defender for Endpoint が Intune と統合されていない場合に表示される例です。
     >
@@ -323,7 +323,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 構成ポリシーが割り当てられると、適用に時間がかかる場合があります。
 
-タイミングの詳細については、「Intune 構成情報 [」を参照してください](https://docs.microsoft.com/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
+タイミングの詳細については、「Intune 構成情報 [」を参照してください](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
 
 構成ポリシーがテスト デバイスに適用されたと確認するには、構成ポリシーごとに次のプロセスに従います。
 

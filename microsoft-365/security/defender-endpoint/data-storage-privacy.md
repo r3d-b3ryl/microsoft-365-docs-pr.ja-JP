@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2279045093ebfac4a7eb4544a3e0c137c08c9c0c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0258b2cdbff4a8b20be42e508863985c7402f609
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935391"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845512"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint データストレージとプライバシー
 
@@ -56,7 +56,7 @@ Microsoft は広告にデータを使用しない。
 ## <a name="data-protection-and-encryption"></a>データ保護と暗号化
 Defender for Endpoint サービスは、最新のデータ保護テクノロジを利用し、最新のインフラストラクチャに基Microsoft Azureします。 
 
-弊社のサービスが管理するデータ保護に関連するさまざまな側面があります。 暗号化は最も重要な 1 つであり、保存時のデータ暗号化、飛行中の暗号化、Key Vault によるキー管理が含まれます。 Defender for Endpoint サービスで使用される他のテクノロジの詳細については、「Azure 暗号化の [概要」を参照してください](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)。 
+弊社のサービスが管理するデータ保護に関連するさまざまな側面があります。 暗号化は最も重要な 1 つであり、保存時のデータ暗号化、飛行中の暗号化、Key Vault によるキー管理が含まれます。 Defender for Endpoint サービスで使用される他のテクノロジの詳細については、「Azure 暗号化の [概要」を参照してください](/azure/security/security-azure-encryption-overview)。 
 
 すべてのシナリオで、データは最小で 256 ビット [の AES 暗号化](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) を使用して暗号化されます。
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d5e98cead84c0be76ca252b23f3c2d062b22dd73
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7ebb7074b0e06eda96d21142044bd8b9997e094b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935619"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841656"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Defender 試用版Microsoft 365またはパイロット環境を準備する
 
@@ -46,7 +46,7 @@ Defender 試用版Microsoft 365を作成し、展開するには、次の 3 段�
 展開が成功するには、準備が重要です。 このセクションでは、Defender 展開用の試用版ラボまたはパイロット環境を作成する準備をする際に考慮する必要Microsoft 365説明します。
 
 ## <a name="prerequisites"></a>前提条件
-Defender のプロビジョニングと使用に関するライセンス、ハードウェアおよびソフトウェアの要件、その他の構成設定Microsoft 365します。 Microsoft 365 [Defender](https://docs.microsoft.com/microsoft-365/security/defender/prerequisites)、 Microsoft Defender for [Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)、 [Microsoft Defender for](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)Office 365 、 Microsoft Defender for [Identity](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)、 Microsoft Cloud App Security の最小要件を[参照してください](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)。
+Defender のプロビジョニングと使用に関するライセンス、ハードウェアおよびソフトウェアの要件、その他の構成設定Microsoft 365します。 Microsoft 365 [Defender](/microsoft-365/security/defender/prerequisites)、 Microsoft Defender for [Endpoint](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)、 [Microsoft Defender for](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)Office 365 、 Microsoft Defender for [Identity](/azure-advanced-threat-protection/atp-prerequisites)、 Microsoft Cloud App Security の最小要件を[参照してください](/azure-advanced-threat-protection/atp-prerequisites)。
 
 ## <a name="stakeholders-and-sign-off"></a>関係者とサインオフ
 プロジェクトに関与し、評価またはパイロット プロジェクトの実行に関して、サインオフ、レビュー、または情報の提供が必要な関係者を特定します。
@@ -62,7 +62,7 @@ Defender のプロビジョニングと使用に関するライセンス、ハ�
 
 -   I = このプロジェクトの通知
 
-| 名前                 | 役割                                                                                                                                                                                                          | Action |
+| 名前                 | ロール                                                                                                                                                                                                          | アクション |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 名前とメールを入力する | **最高情報セキュリティ責任者 (CISO)** 新しいテクノロジ展開の組織の内部でスポンサーを務め、役員 *の代表者。*                                                  | だから     |
 | 名前とメールを入力する | **サイバー防御運用センター (CDOC)** の代表は *、CDOC* チームの担当者で、この変更が顧客のセキュリティ運用チームのプロセスとどのように一致するのか定義します。       | だから     |

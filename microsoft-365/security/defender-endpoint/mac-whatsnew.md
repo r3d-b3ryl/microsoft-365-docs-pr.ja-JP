@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 6348d688103c51176fbed36c923a660c77a2258d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651274"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842784"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
@@ -163,7 +163,7 @@ ms.locfileid: "52651274"
 
 ## <a name="1010031"></a>101.00.31
 
-- Intune ユーザー [の製品オンボーディング エクスペリエンスの向上](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)
+- Intune ユーザー [の製品オンボーディング エクスペリエンスの向上](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - ウイルス [対策の除外でワイルドカードがサポートされる](mac-exclusions.md#supported-exclusion-types)
 - macOS のコンテキスト メニューからウイルス対策スキャンをトリガーする機能が追加されました。 Finder でファイルまたはフォルダーを右クリックし、[Microsoft Defender for Endpoint でスキャン **] を選択できます。**
 - インプレイス製品のダウングレードは、インストーラーによって明示的に許可されません。 ダウングレードする必要がある場合は、まず既存のバージョンをアンインストールし、デバイスを再構成します。

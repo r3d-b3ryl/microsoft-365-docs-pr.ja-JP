@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87305f28975b8997afce211ffa4de3711d26be6b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246370"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845476"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -167,7 +167,7 @@ Microsoft Defender for Identity との統合により、別の Microsoft Identit
 > [!NOTE]
 > この機能を有効にするには、適切なライセンスが必要です。
 
-脅威インテリジェンスでコンテキスト デバイスのOffice 365を受け取る場合は、[セキュリティ とコンプライアンス] ダッシュボードで Defender for Endpoint &する必要があります。 詳細については、「脅威の調査 [と対応」を参照してください](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)。
+脅威インテリジェンスでコンテキスト デバイスのOffice 365を受け取る場合は、[セキュリティ とコンプライアンス] ダッシュボードで Defender for Endpoint &する必要があります。 詳細については、「脅威の調査 [と対応」を参照してください](/microsoft-365/security/office-365-security/office-365-ti)。
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 脅威エキスパート - ターゲット攻撃通知
 
@@ -212,7 +212,7 @@ Insider リスク管理設定で [セキュリティ ポリシー](/microsoft-36
 
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune接続
 
-Defender for Endpoint は、デバイス リスクベースの条件付[Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune)[アクセスを有効にするアプリケーションと統合できます](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 この機能 [を有効に](configure-conditional-access.md)した場合、Defender for Endpoint デバイス情報を Intune と共有し、ポリシーの適用を強化できます。
+Defender for Endpoint は、デバイス リスクベースの条件付[Microsoft Intune](/intune/what-is-intune)[アクセスを有効にするアプリケーションと統合できます](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 この機能 [を有効に](configure-conditional-access.md)した場合、Defender for Endpoint デバイス情報を Intune と共有し、ポリシーの適用を強化できます。
 
 > [!IMPORTANT]
 > この機能を使用するには、Intune と Defender for Endpoint の両方で統合を有効にする必要があります。 特定の手順の詳細については、「Endpoint 用 [Defender で条件付きアクセスを構成する」を参照してください](configure-conditional-access.md)。
@@ -220,7 +220,7 @@ Defender for Endpoint は、デバイス リスクベースの条件付[Microsof
 この機能は、次の場合にのみ使用できます。
 
 - E5 (または E5) Enterprise Mobility + Security E3およびWindowsライセンスMicrosoft 365 Enterpriseテナント
-- アクティブなMicrosoft Intune環境で、Intune が管理するデバイスWindows 10 Azure AD[参加しています](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)。
+- アクティブなMicrosoft Intune環境で、Intune が管理するデバイスWindows 10 Azure AD[参加しています](/azure/active-directory/devices/concept-azure-ad-join/)。
 
 
 ### <a name="conditional-access-policy"></a>条件付きアクセス ポリシー
@@ -228,7 +228,7 @@ Defender for Endpoint は、デバイス リスクベースの条件付[Microsof
 Intune 統合を有効にした場合、Intune は従来の条件付きアクセス (CA) ポリシーを自動的に作成します。 この従来の CA ポリシーは、Intune に状態レポートを設定する前提条件です。 削除する必要があります。
 
 > [!NOTE]
-> Intune によって作成される従来の CA ポリシー[](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)は、エンドポイントの構成に使用される最新の条件付きアクセス ポリシーとは異なります。
+> Intune によって作成される従来の CA ポリシー[](/azure/active-directory/conditional-access/overview/)は、エンドポイントの構成に使用される最新の条件付きアクセス ポリシーとは異なります。
 
 
 ## <a name="device-discovery"></a>デバイス検出

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a107c6364e6766094724972e931606003e0c87f7
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 3346f6b4d05eb514bf680f87eb8452d9fd4bab38
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445198"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841992"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft マネージド デスクトップ サービスの説明
 
@@ -27,7 +27,7 @@ Microsoft Managed Desktop は、セキュアで最先端の環境をユーザー
 - デバイスの構成
 - Microsoft のベスト プラクティスに従って、Windows Hello、BitLocker、セキュア ブート、仮想化ベースのセキュリティなどにより、ユーザーとデバイスをセキュリティで保護するための機能
 - デバイス セキュリティのモニタリング サービスと修復サービス
-- アプリの互換性は、[App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) から確認
+- アプリの互換性は、[App Assure](/fasttrack/products-and-capabilities#app-assure) から確認
 - Windows 10 および Microsoft 365 Apps for enterprise apps の更新プログラムの管理
 - デバイスとアプリの使用状況に関する分析データ
 - ユーザー向けの IT サポート

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: 9913d1b0b0d5d0462fdee0b9c576a590bd3ddbc9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ef6d05bb27018bb72f731da2e8b7837c9d9f0127
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198327"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842064"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>PowerShell を使用したエンドポイント API 用 Microsoft Defender
 
@@ -55,7 +55,7 @@ Microsoft Defender for Endpoint の複数の API を使用した完全なシナ�
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-詳細については [、「PowerShell のドキュメント」を参照してください。](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+詳細については [、「PowerShell のドキュメント」を参照してください。](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## <a name="get-token"></a>トークンの取得
 

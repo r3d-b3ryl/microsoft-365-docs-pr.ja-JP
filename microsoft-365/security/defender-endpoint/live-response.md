@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d5e48f1e4f6bc2cfaa836d90e24f2ce8ba3f2114
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246467"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845332"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>ライブ応答を使用してデバイス上のエンティティを調査する
 
@@ -55,11 +55,11 @@ ms.locfileid: "52246467"
 デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows
 
   - **Windows 10**
-    - [バージョン 1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) 以降  
-    - [バージョン 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) [(KB4515384)](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
-    - [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)のバージョン[1809 (RS 5)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-    - [バージョン 1803 (RS 4)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
-    - [バージョン 1709 (RS 3)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+    - [バージョン 1909](/windows/whats-new/whats-new-windows-10-version-1909) 以降  
+    - [バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903) [(KB4515384)](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
+    - [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)のバージョン[1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809)
+    - [バージョン 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [バージョン 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
   - **WindowsServer 2019 - パブリック プレビューにのみ適用**
     - バージョン 1903 以降 [(KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)を使用) 
@@ -172,7 +172,7 @@ ms.locfileid: "52246467"
 
 ## <a name="use-live-response-commands"></a>ライブ応答コマンドの使用
 
-コンソールで使用できるコマンドは、「コマンド」と同様の原則[Windows従います](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
+コンソールで使用できるコマンドは、「コマンド」と同様の原則[Windows従います](/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
 
 高度なコマンドは、ファイルのダウンロードとアップロード、デバイスでのスクリプトの実行、エンティティに対する修復アクションの実行など、より強力なアクションを実行できる、より堅牢なアクションセットを提供します。
 
@@ -197,7 +197,7 @@ ms.locfileid: "52246467"
 次に、いくつかの例を示します:
 
 
-|command  |目的  |
+|コマンド  |機能  |
 |---------|---------|
 |`getfile "C:\windows\some_file.exe" &`     |バックグラウンドで *some_file.exeダウンロードを* 開始します。         |
 |`fg 1234`     |コマンド ID *1234* のダウンロードをフォアグラウンドに返します。         |
@@ -288,7 +288,7 @@ processes > output.txt
 [コマンド **ログ] タブを** 選択すると、セッション中にデバイスで使用されるコマンドが表示されます。 各コマンドは、次のような完全な詳細で追跡されます。
 - ID
 - コマンド ライン
-- Duration
+- 期間
 - 状態と入力または出力のサイド バー
 
 ## <a name="limitations"></a>制限事項

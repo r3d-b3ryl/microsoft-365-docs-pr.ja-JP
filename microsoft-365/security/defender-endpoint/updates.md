@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f5db08e4eb98dd3fe6f7e8a84fb0c49e889fb73f
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 435a77432caa9d7335a22993f85cae69eff6cd38
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809302"
+ms.locfileid: "52841764"
 ---
 #  <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Microsoft Defender 更新プログラムの段階的なロールアウト プロセスを管理する
 
@@ -56,7 +56,7 @@ ms.locfileid: "52809302"
 
 1. 最初のリリースはベータ チャネルのサブスクライバーに送信されます。
 2. 検証、フィードバック、および修正が完了すると、段階的なロールアウト プロセスが調整された方法で開始され、最初にチャネルサブスクライバーをプレビューします。
-3. その後、グローバル人口の残りの部分に対する更新プログラムのリリースに進み、10 ~ 100% のスケール アウトを行います。
+3. その後、グローバル人口の残りの部分への更新プログラムのリリースに進み、10 ~ 100% のスケール アウトを行います。
 
 エンジニアは継続的に影響を監視し、問題をエスカレートして、必要に応じて修正プログラムを作成します。
 

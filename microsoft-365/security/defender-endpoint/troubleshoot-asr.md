@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 9ff00c706b0fb336c178e227b1cb33eff9e9ebbc
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c5c76553ff3f0b32def5fbafbf2c8f010e49eeb2
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935223"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845424"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻撃表面の縮小ルールのトラブルシューティング
 
@@ -58,9 +58,9 @@ ms.locfileid: "51935223"
 
 - エンドポイントは、Windows 10 Enterpriseバージョン 1709 (Fall Creators Update とも呼ばれる) で実行されています。
 
-- エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender AV がそれ自体を無効にします](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+- エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender AV がそれ自体を無効にします](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
-- [リアルタイム保護が](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 有効になっています。
+- [リアルタイム保護が](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 有効になっています。
 
 - 監査モードが有効になっていません。 「攻撃表面の縮小ルールを有効にする」の説明に従って、グループ ポリシーを使用してルールを無効 **(値**: **0)**[に設定します](enable-attack-surface-reduction.md)。
 
@@ -120,7 +120,7 @@ demo.wd.microsoft.com の[Windows Defender](https://demo.wd.microsoft.com?ocid=c
 
 3. 既定では、 に保存されます `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。 提出フォームにファイルを添付します。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [攻撃面の減少ルール](attack-surface-reduction.md)
 

@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 98b192551a351b58709185022cf311174052592b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d2238703e3b1205287d4ab6239af20095b51df13
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934467"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841916"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>PowerShell、WMI、およびエンドポイントを使用して Microsoft Defender for Endpoint をMPCmdRun.exe
 
@@ -38,8 +38,8 @@ ms.locfileid: "51934467"
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> デバイス (エンドポイント[ともMicrosoft エンドポイント マネージャー)](https://docs.microsoft.com/mem)に対する組織の脅威保護機能を管理するには、この機能を使用することをお勧めします。 エンドポイント マネージャーには、Microsoft Intuneと[](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)Microsoft Endpoint Configuration Manager[が含Microsoft Endpoint Configuration Manager。](https://docs.microsoft.com/mem/configmgr/core/understand/introduction) 
-> - [詳細については、エンドポイント マネージャー](https://docs.microsoft.com/mem/endpoint-manager-overview)
+> デバイス (エンドポイント[ともMicrosoft エンドポイント マネージャー)](/mem)に対する組織の脅威保護機能を管理するには、この機能を使用することをお勧めします。 エンドポイント マネージャーには、Microsoft Intuneと[](/mem/intune/fundamentals/what-is-intune)Microsoft Endpoint Configuration Manager[が含Microsoft Endpoint Configuration Manager。](/mem/configmgr/core/understand/introduction) 
+> - [詳細については、エンドポイント マネージャー](/mem/endpoint-manager-overview)
 > - [Configuration Manager と Intune を使用して、Windows 10の Microsoft Defender for Endpoint を共同管理する](manage-atp-post-migration-intune.md)
 > - [Intune を使用してエンドポイント用 Microsoft Defender を管理する](manage-atp-post-migration-intune.md) 
 
@@ -54,22 +54,22 @@ PowerShell を使用して、攻撃Microsoft Defender ウイルス対策、攻�
 
 |タスク  |追加情報  |
 |---------|---------|
-|**管理Microsoft Defender ウイルス対策** <br/><br/>*マルウェア対策保護の状態を表示し、ウイルス対策スキャンと更新プログラム&設定を構成し、ウイルス対策保護に他の変更を加えます。*    |[PowerShell コマンドレットを使用して、サーバーの構成とMicrosoft Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)  <br/><br/>[PowerShell コマンドレットを使用してクラウド配信の保護を有効にする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)       |
-|**組織のデバイス上の** 脅威を軽減するためのエクスプロイト保護の構成<br/><br/> *最初は監査モードでエクスプロイト [保護を使用することをお](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) 勧めします。その方法で、組織が使用しているアプリに対する悪用防止の影響を確認できます。*     | [エクスプロイト保護をカスタマイズする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[エクスプロイト保護用の PowerShell コマンドレット](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
-|PowerShell **を使用して攻撃表面の縮小ルール** を構成する <br/><br/>*PowerShell を使用して、攻撃表面の縮小ルールからファイルとフォルダーを除外できます。* |[攻撃表面の縮小ルールをカスタマイズする: PowerShell を使用して、フォルダー内の&する](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders)<br/><br/>また、PowerShell を使用して攻撃表面の縮小ルールを設定する方法については [、António Vasconcelo](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI)のグラフィカル ユーザー インターフェイス ツールを参照してください。 |
-|PowerShell **でネットワーク保護** を有効にする <br/><br/>*PowerShell を使用してネットワーク保護を有効にできます。* |[PowerShell を使用してネットワーク保護を有効にする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#powershell) |
-|**ランサムウェアから保護するためにフォルダー** アクセスの制御を構成する <br/><br/>*[フォルダー アクセスの制御](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) は、アンチランソイエムウェア保護とも呼ばれます。* |[PowerShell を使用してフォルダー アクセスの制御を有効にする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell) |
-|**組織Microsoft Defender ファイアウォール** に流れ出る未承認のネットワーク トラフィックをブロックするネットワーク トラフィックを構成する |[Microsoft Defender ファイアウォールを使用した Advanced Security Administration のWindows PowerShell](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell) |
-|**暗号化と暗号化BitLocker** を構成して、組織で実行されているデバイスの情報を保護Windows |[BitLockerPowerShell リファレンス ガイド](https://docs.microsoft.com/powershell/module/bitlocker/?view=win10-ps&preserve-view=true) |
+|**管理Microsoft Defender ウイルス対策** <br/><br/>*マルウェア対策保護の状態を表示し、ウイルス対策スキャンと更新プログラム&設定を構成し、ウイルス対策保護に他の変更を加えます。*    |[PowerShell コマンドレットを使用して、サーバーの構成とMicrosoft Defender ウイルス対策](/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)  <br/><br/>[PowerShell コマンドレットを使用してクラウド配信の保護を有効にする](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)       |
+|**組織のデバイス上の** 脅威を軽減するためのエクスプロイト保護の構成<br/><br/> *最初は監査モードでエクスプロイト [保護を使用することをお](/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) 勧めします。その方法で、組織が使用しているアプリに対する悪用防止の影響を確認できます。*     | [エクスプロイト保護をカスタマイズする](/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[エクスプロイト保護用の PowerShell コマンドレット](/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
+|PowerShell **を使用して攻撃表面の縮小ルール** を構成する <br/><br/>*PowerShell を使用して、攻撃表面の縮小ルールからファイルとフォルダーを除外できます。* |[攻撃表面の縮小ルールをカスタマイズする: PowerShell を使用して、フォルダー内の&する](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders)<br/><br/>また、PowerShell を使用して攻撃表面の縮小ルールを設定する方法については [、António Vasconcelo](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI)のグラフィカル ユーザー インターフェイス ツールを参照してください。 |
+|PowerShell **でネットワーク保護** を有効にする <br/><br/>*PowerShell を使用してネットワーク保護を有効にできます。* |[PowerShell を使用してネットワーク保護を有効にする](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell) |
+|**ランサムウェアから保護するためにフォルダー** アクセスの制御を構成する <br/><br/>*[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders) は、アンチランソイエムウェア保護とも呼ばれます。* |[PowerShell を使用してフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell) |
+|**組織Microsoft Defender ファイアウォール** に流れ出る未承認のネットワーク トラフィックをブロックするネットワーク トラフィックを構成する |[Microsoft Defender ファイアウォールを使用した Advanced Security Administration のWindows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell) |
+|**暗号化と暗号化BitLocker** を構成して、組織で実行されているデバイスの情報を保護Windows |[BitLockerPowerShell リファレンス ガイド](/powershell/module/bitlocker/?view=win10-ps&preserve-view=true) |
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi"></a>Microsoft Defender for Endpoint with Windows管理インストルメンテーション (WMI)
 
-WMI は、設定を取得、変更、および更新できるスクリプト インターフェイスです。 詳細については [、「USING WMI」を参照してください](https://docs.microsoft.com/windows/win32/wmisdk/using-wmi)。 
+WMI は、設定を取得、変更、および更新できるスクリプト インターフェイスです。 詳細については [、「USING WMI」を参照してください](/windows/win32/wmisdk/using-wmi)。 
 
 |タスク  |追加情報  |
 |---------|---------|
-|**デバイスでクラウドによる保護** を有効にする    |[クラウドWindows保護を有効にするには、管理命令 (WMI) を使用します。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection)       |
-|**ユーザーの設定を取得**、変更、および更新Microsoft Defender ウイルス対策     | [WMI を使用して、アプリケーションを構成およびMicrosoft Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus)<br/><br/>[利用可能な WMI クラスとサンプル スクリプトの一覧を確認する](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/>WMIv2 Provider リファレンス[情報Windows Defenderアーカイブ済みファイルも参照してください。](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)   |
+|**デバイスでクラウドによる保護** を有効にする    |[クラウドWindows保護を有効にするには、管理命令 (WMI) を使用します。](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection)       |
+|**ユーザーの設定を取得**、変更、および更新Microsoft Defender ウイルス対策     | [WMI を使用して、アプリケーションを構成およびMicrosoft Defender ウイルス対策](/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus)<br/><br/>[利用可能な WMI クラスとサンプル スクリプトの一覧を確認する](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/>WMIv2 Provider リファレンス[情報Windows Defenderアーカイブ済みファイルも参照してください。](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)   |
 
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe"></a>Microsoft マルウェア保護ユーティリティを使用して Microsoft Defender for Endpoint をCommand-Lineする (MPCmdRun.exe)
@@ -78,7 +78,7 @@ WMI は、設定を取得、変更、および更新できるスクリプト イ
 
 |タスク  |追加情報  |
 |---------|---------|
-|**管理Microsoft Defender ウイルス対策**  |[サーバーを使用してMicrosoft Defender ウイルス対策を構成mpcmdrun.exe](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)        |
+|**管理Microsoft Defender ウイルス対策**  |[サーバーを使用してMicrosoft Defender ウイルス対策を構成mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)        |
 
 ## <a name="configure-your-microsoft-defender-security-center"></a>サーバーを構成Microsoft Defender セキュリティ センター
 
@@ -86,15 +86,15 @@ WMI は、設定を取得、変更、および更新できるスクリプト イ
 
 また、エンド ユーザーに表示される機能と機能を構成Microsoft Defender セキュリティ センター。
 
-- [アプリケーションのMicrosoft Defender セキュリティ センター](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use)
+- [アプリケーションのMicrosoft Defender セキュリティ センター](/microsoft-365/security/defender-endpoint/use)
 
-- [エンドポイント保護: Microsoft Defender セキュリティ センター](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+- [エンドポイント保護: Microsoft Defender セキュリティ センター](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 
 ## <a name="next-steps"></a>次の手順
 
-- [アプリケーションの概要を脅威と脆弱性の管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [アプリケーションの概要を脅威と脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [セキュリティ操作ダッシュボードMicrosoft Defender セキュリティ センターアクセスする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [セキュリティ操作ダッシュボードMicrosoft Defender セキュリティ センターアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 
 - [Intune を使用してエンドポイント用 Microsoft Defender を管理する](manage-atp-post-migration-intune.md)
