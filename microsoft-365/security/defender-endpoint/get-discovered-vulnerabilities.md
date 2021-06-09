@@ -16,75 +16,75 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ac7a9ef932f2640bbc5325f0154c0ceb48ae3018
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 73d9803736df546f2381b7a84c9089d2460c4c44
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772295"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843084"
 ---
-# <a name="get-discovered-vulnerabilities"></a><span data-ttu-id="34af0-104">検出された脆弱性を取得する</span><span class="sxs-lookup"><span data-stu-id="34af0-104">Get discovered vulnerabilities</span></span>
+# <a name="get-discovered-vulnerabilities"></a><span data-ttu-id="b58f4-104">検出された脆弱性を取得する</span><span class="sxs-lookup"><span data-stu-id="b58f4-104">Get discovered vulnerabilities</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="34af0-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="34af0-105">**Applies to:**</span></span>
-- [<span data-ttu-id="34af0-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="34af0-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="34af0-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="34af0-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="b58f4-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="b58f4-105">**Applies to:**</span></span>
+- [<span data-ttu-id="b58f4-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="b58f4-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="b58f4-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="b58f4-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="34af0-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="34af0-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="34af0-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="34af0-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="b58f4-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="b58f4-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="b58f4-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="b58f4-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="34af0-110">API の説明</span><span class="sxs-lookup"><span data-stu-id="34af0-110">API description</span></span>
-<span data-ttu-id="34af0-111">特定のデバイス ID に関連する検出された脆弱性のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="34af0-111">Retrieves a collection of discovered vulnerabilities related to a given device ID.</span></span>
+## <a name="api-description"></a><span data-ttu-id="b58f4-110">API の説明</span><span class="sxs-lookup"><span data-stu-id="b58f4-110">API description</span></span>
+<span data-ttu-id="b58f4-111">特定のデバイス ID に関連する検出された脆弱性のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="b58f4-111">Retrieves a collection of discovered vulnerabilities related to a given device ID.</span></span>
 
-## <a name="limitations"></a><span data-ttu-id="34af0-112">制限事項</span><span class="sxs-lookup"><span data-stu-id="34af0-112">Limitations</span></span>
-1. <span data-ttu-id="34af0-113">この API のレート制限は、1 分あたり 50 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="34af0-113">Rate limitations for this API are 50 calls per minute and 1500 calls per hour.</span></span>
+## <a name="limitations"></a><span data-ttu-id="b58f4-112">制限事項</span><span class="sxs-lookup"><span data-stu-id="b58f4-112">Limitations</span></span>
+1. <span data-ttu-id="b58f4-113">この API のレート制限は、1 分あたり 50 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="b58f4-113">Rate limitations for this API are 50 calls per minute and 1500 calls per hour.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="34af0-114">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="34af0-114">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b58f4-114">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b58f4-114">Permissions</span></span>
 
-<span data-ttu-id="34af0-115">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="34af0-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="34af0-116">アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="34af0-116">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+<span data-ttu-id="b58f4-115">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="b58f4-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="b58f4-116">アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="b58f4-116">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="34af0-117">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="34af0-117">Permission type</span></span> | <span data-ttu-id="34af0-118">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="34af0-118">Permission</span></span> | <span data-ttu-id="34af0-119">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="34af0-119">Permission display name</span></span>
+<span data-ttu-id="b58f4-117">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b58f4-117">Permission type</span></span> | <span data-ttu-id="b58f4-118">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b58f4-118">Permission</span></span> | <span data-ttu-id="b58f4-119">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="b58f4-119">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="34af0-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="34af0-120">Application</span></span> |<span data-ttu-id="34af0-121">Vulnerability.Read.All</span><span class="sxs-lookup"><span data-stu-id="34af0-121">Vulnerability.Read.All</span></span> | <span data-ttu-id="34af0-122">'脅威と脆弱性管理の脆弱性情報の読み取り'</span><span class="sxs-lookup"><span data-stu-id="34af0-122">'Read Threat and Vulnerability Management vulnerability information'</span></span>
-<span data-ttu-id="34af0-123">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="34af0-123">Delegated (work or school account)</span></span> | <span data-ttu-id="34af0-124">脆弱性。読み取り</span><span class="sxs-lookup"><span data-stu-id="34af0-124">Vulnerability.Read</span></span> | <span data-ttu-id="34af0-125">'脅威と脆弱性管理の脆弱性情報の読み取り'</span><span class="sxs-lookup"><span data-stu-id="34af0-125">'Read Threat and Vulnerability Management vulnerability information'</span></span>
+<span data-ttu-id="b58f4-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b58f4-120">Application</span></span> |<span data-ttu-id="b58f4-121">Vulnerability.Read.All</span><span class="sxs-lookup"><span data-stu-id="b58f4-121">Vulnerability.Read.All</span></span> | <span data-ttu-id="b58f4-122">'脅威と脆弱性管理の脆弱性情報の読み取り'</span><span class="sxs-lookup"><span data-stu-id="b58f4-122">'Read Threat and Vulnerability Management vulnerability information'</span></span>
+<span data-ttu-id="b58f4-123">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b58f4-123">Delegated (work or school account)</span></span> | <span data-ttu-id="b58f4-124">脆弱性。読み取り</span><span class="sxs-lookup"><span data-stu-id="b58f4-124">Vulnerability.Read</span></span> | <span data-ttu-id="b58f4-125">'脅威と脆弱性管理の脆弱性情報の読み取り'</span><span class="sxs-lookup"><span data-stu-id="b58f4-125">'Read Threat and Vulnerability Management vulnerability information'</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="34af0-126">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="34af0-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b58f4-126">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b58f4-126">HTTP request</span></span>
 
 ```
 GET /api/machines/{machineId}/vulnerabilities
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="34af0-127">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="34af0-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b58f4-127">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b58f4-127">Request headers</span></span>
 
-<span data-ttu-id="34af0-128">名前</span><span class="sxs-lookup"><span data-stu-id="34af0-128">Name</span></span> | <span data-ttu-id="34af0-129">種類</span><span class="sxs-lookup"><span data-stu-id="34af0-129">Type</span></span> | <span data-ttu-id="34af0-130">説明</span><span class="sxs-lookup"><span data-stu-id="34af0-130">Description</span></span>
+<span data-ttu-id="b58f4-128">名前</span><span class="sxs-lookup"><span data-stu-id="b58f4-128">Name</span></span> | <span data-ttu-id="b58f4-129">種類</span><span class="sxs-lookup"><span data-stu-id="b58f4-129">Type</span></span> | <span data-ttu-id="b58f4-130">説明</span><span class="sxs-lookup"><span data-stu-id="b58f4-130">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="34af0-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="34af0-131">Authorization</span></span> | <span data-ttu-id="34af0-132">String</span><span class="sxs-lookup"><span data-stu-id="34af0-132">String</span></span> | <span data-ttu-id="34af0-133">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="34af0-133">Bearer {token}.</span></span> <span data-ttu-id="34af0-134">**必須**</span><span class="sxs-lookup"><span data-stu-id="34af0-134">**Required**.</span></span>
+<span data-ttu-id="b58f4-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="b58f4-131">Authorization</span></span> | <span data-ttu-id="b58f4-132">String</span><span class="sxs-lookup"><span data-stu-id="b58f4-132">String</span></span> | <span data-ttu-id="b58f4-133">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="b58f4-133">Bearer {token}.</span></span> <span data-ttu-id="b58f4-134">**必須**</span><span class="sxs-lookup"><span data-stu-id="b58f4-134">**Required**.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="34af0-135">要求本文</span><span class="sxs-lookup"><span data-stu-id="34af0-135">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b58f4-135">要求本文</span><span class="sxs-lookup"><span data-stu-id="b58f4-135">Request body</span></span>
 
-<span data-ttu-id="34af0-136">Empty</span><span class="sxs-lookup"><span data-stu-id="34af0-136">Empty</span></span>
+<span data-ttu-id="b58f4-136">Empty</span><span class="sxs-lookup"><span data-stu-id="b58f4-136">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="34af0-137">応答</span><span class="sxs-lookup"><span data-stu-id="34af0-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b58f4-137">応答</span><span class="sxs-lookup"><span data-stu-id="b58f4-137">Response</span></span>
 
-<span data-ttu-id="34af0-138">成功した場合、このメソッドは 200 OK を返し、検出された脆弱性情報を本文に返します。</span><span class="sxs-lookup"><span data-stu-id="34af0-138">If successful, this method returns 200 OK with the discovered vulnerability information in the body.</span></span>
+<span data-ttu-id="b58f4-138">成功した場合、このメソッドは 200 OK を返し、検出された脆弱性情報を本文に返します。</span><span class="sxs-lookup"><span data-stu-id="b58f4-138">If successful, this method returns 200 OK with the discovered vulnerability information in the body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="34af0-139">例</span><span class="sxs-lookup"><span data-stu-id="34af0-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b58f4-139">例</span><span class="sxs-lookup"><span data-stu-id="b58f4-139">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="34af0-140">要求</span><span class="sxs-lookup"><span data-stu-id="34af0-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b58f4-140">要求</span><span class="sxs-lookup"><span data-stu-id="b58f4-140">Request</span></span>
 
-<span data-ttu-id="34af0-141">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="34af0-141">Here is an example of the request.</span></span>
+<span data-ttu-id="b58f4-141">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b58f4-141">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/vulnerabilities
 ```
 
-### <a name="response"></a><span data-ttu-id="34af0-142">応答</span><span class="sxs-lookup"><span data-stu-id="34af0-142">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b58f4-142">応答</span><span class="sxs-lookup"><span data-stu-id="b58f4-142">Response</span></span>
 
-<span data-ttu-id="34af0-143">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="34af0-143">Here is an example of the response.</span></span>
+<span data-ttu-id="b58f4-143">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="b58f4-143">Here is an example of the response.</span></span>
 
 ```json
 {
@@ -108,7 +108,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="34af0-144">関連項目</span><span class="sxs-lookup"><span data-stu-id="34af0-144">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b58f4-144">関連項目</span><span class="sxs-lookup"><span data-stu-id="b58f4-144">See also</span></span>
 
-- [<span data-ttu-id="34af0-145">リスクベースの脅威&の管理</span><span class="sxs-lookup"><span data-stu-id="34af0-145">Risk-based Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [<span data-ttu-id="34af0-146">組織の脆弱性</span><span class="sxs-lookup"><span data-stu-id="34af0-146">Vulnerabilities in your organization</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [<span data-ttu-id="b58f4-145">リスクベースの脅威&の管理</span><span class="sxs-lookup"><span data-stu-id="b58f4-145">Risk-based Threat & Vulnerability Management</span></span>](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="b58f4-146">組織の脆弱性</span><span class="sxs-lookup"><span data-stu-id="b58f4-146">Vulnerabilities in your organization</span></span>](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
