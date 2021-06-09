@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 09/24/2020
 ms.technology: mde
-ms.openlocfilehash: f834ab371b9d860c451c89bb1a4e7d64bdd6ec1f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7d6d92f3abc79552406c80a46a8c3390b91e31d0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934443"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843012"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>エンドポイントとエンドポイントの Microsoft Defender に切り替Microsoft Defender ウイルス対策
 
@@ -54,6 +54,6 @@ ms.locfileid: "51934443"
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)
-- [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection?) 
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection?) 

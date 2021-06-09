@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 320355f838db5dbb1540350e95e4cc0645acd805
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 311903cdd1409f4ab997641cc842ff199ce2500d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932753"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843108"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>管理セキュリティ サービス プロバイダー (MSSP) アクセス権の付与 (プレビュー)
 
@@ -41,9 +41,9 @@ ms.locfileid: "51932753"
 
 1. Defender for Endpoint [で役割ベースのアクセス制御](rbac.md) を有効にし、Active Directory (AD) グループに接続します。
 
-2. アクセス [要求とプロビジョニング用にガバナンス](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) アクセス パッケージを構成します。
+2. アクセス [要求とプロビジョニング用にガバナンス](/azure/active-directory/governance/identity-governance-overview) アクセス パッケージを構成します。
 
-3. Microsoft Myaccess でアクセス要求と監査 [を管理します](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve)。
+3. Microsoft Myaccess でアクセス要求と監査 [を管理します](/azure/active-directory/governance/entitlement-management-request-approve)。
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で役割ベースのアクセス制御を有効にする
 
@@ -92,7 +92,7 @@ ms.locfileid: "51932753"
 
     ![新しいカタログのイメージ](images/goverance-catalog.png)
 
-    詳細については、「リソースのカタログ [を作成する」を参照してください](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-catalog-create)。
+    詳細については、「リソースのカタログ [を作成する」を参照してください](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
 
 3. **MSSP リソースのアクセス パッケージを作成する 顧客 AAD: Identity Governance**
@@ -109,7 +109,7 @@ ms.locfileid: "51932753"
     > [!div class="mx-imgBorder"]
     > ![新しいアクセス パッケージのイメージ](images/new-access-package.png)
 
-    詳細については、「新しいアクセス [パッケージを作成する」を参照してください](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create)。
+    詳細については、「新しいアクセス [パッケージを作成する」を参照してください](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
 
 4. **顧客 AAD から MSSP リソースへのアクセス要求リンクを提供する: ID ガバナンス**

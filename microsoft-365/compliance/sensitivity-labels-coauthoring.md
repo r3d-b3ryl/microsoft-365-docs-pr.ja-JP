@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: 6506f72a7ff663c1fc1c32ca22a562f1f8ad3e0a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332728"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796056"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
@@ -48,7 +48,7 @@ Office デスクトップ アプリで [共同編集](https://support.office.com
 
 Office デスクトップ アプリの共同編集をサポートする設定を有効にする前に、この操作によって Office ファイルに保存され、そこから読み取ることがあるラベル付けメタデータが変更する点を把握していることが重要です。
 
-ラベルのメタデータには、お使いのテナント、適用した機密度ラベルを特定する情報が含まれています。 この設定による変更は、Word、Excel、PowerPoint 用の暗号化されていないファイルのメタデータ形式と場所です。 暗号化されたファイルやメールにはメタデータのラベル付けによる変更はありません。
+ラベルのメタデータには、お使いのテナント、適用した機密度ラベルを特定する情報が含まれています。 この設定による変更は、Word、Excel、PowerPoint 用のファイルのメタデータ形式と場所です。 暗号化されたファイルまたはメールに対して操作を行う必要はありません。暗号化されたファイルのメタデータの変更には下位互換性があり、メールへの変更はありません。 ただし、暗号化されたファイルのメタデータの変更に注意する必要があります。この変更により自動的にアップグレードができますが、下位互換性はありません。
 
 この変更は新しくラベル付けされたファイルと、既にラベルが付いているファイルの両方に影響します。 共同編集設定をサポートするアプリとサービスを使用する場合:
 - 新しくラベル付けされたファイルには、新しい形式と場所だけをメタデータのラベル付けに使用することができます。

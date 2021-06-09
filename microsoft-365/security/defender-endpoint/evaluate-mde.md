@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d13f13872954978a14454d8f3c0e66970606bd21
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: e7f065c5f42b62885c3c0fde7b402490f86ec2ba
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218799"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843200"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の評価 
 
@@ -48,14 +48,14 @@ ms.locfileid: "51218799"
 - [エクスプロイト保護の評価](./evaluate-exploit-protection.md)
 - [ネットワーク保護を評価する](./evaluate-exploit-protection.md)
 - [制御されたフォルダー アクセスを評価する](./evaluate-controlled-folder-access.md)
-- [アプリケーション ガードの評価](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
-- [ネットワーク ファイアウォールの評価](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples)
+- [アプリケーション ガードの評価](/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
+- [ネットワーク ファイアウォールの評価](/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples)
 
 ## <a name="evaluate-next-generation-protection"></a>次世代の保護を評価する
 
 次の世代の保護は、最新の脅威を検出してブロックするのに役立ちます。
 
-- [ウイルス対策を評価する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus)
+- [ウイルス対策を評価する](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus)
 
 ## <a name="see-also"></a>関連項目
 

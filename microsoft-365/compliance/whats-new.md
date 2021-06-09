@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: d312b3ac3c2cb43e05a09936f1e5c07b32c22ef1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706620"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843248"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
@@ -61,7 +61,7 @@ Microsoft 365 コンプライアンス センターに新しいソリューシ�
 
 - Microsoft 365 グループの場所では *、Applications* パラメーターで [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy)コマンドレットを使用して、保持設定を Microsoft 365 メールボックスまたは接続された SharePoint サイトに適用できます。
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 Outlookと更新プログラム:
 - [既定のラベルと必須のラベル付けの](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) 設定が、組み込みのラベル付けでサポートされています。 以前は、これらの設定は AIP 統合ラベル 付けクライアントでのみサポートされました。
@@ -75,7 +75,7 @@ Outlookと更新プログラム:
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- **Advanced eDiscoveryコレクションは、新** しいコレクション ツール [とワークフローをサポートしています](/microsoft-365/compliance/collections-overview)。 その他の新しいトピックには、下書きコレクションの [作成](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)、 [下](/microsoft-365/compliance/commit-draft-collection)書きコレクションをレビュー セットにコミットする、コレクションの統計情報 [とレポートが含まれます](/microsoft-365/compliance/collection-statistics-reports)。
+- **Advanced eDiscoveryコレクションは、新** しいコレクション ツール [とワークフローをサポートしています](/microsoft-365/compliance/collections-overview)。 その他の新しいトピックには、下書きコレクションの [作成](/microsoft-365/compliance/create-draft-collection)、 [下](/microsoft-365/compliance/commit-draft-collection)書きコレクションをレビュー セットにコミットする、コレクションの統計情報 [とレポートが含まれます](/microsoft-365/compliance/collection-statistics-reports)。
 - **レビュー セット内の** ドキュメントをユーザーアカウントに [Azure Storage](/microsoft-365/compliance/download-export-jobs)します。
 - **予測コーディング モジュール (Advanced eDiscovery)** まず、廃止された関連性 [モジュール](/microsoft-365/compliance/predictive-coding-overview) に代わる新しい予測コーディング機能について説明します。
 
@@ -143,7 +143,7 @@ Outlookと更新プログラム:
 - [PowerShell を使用してカスタム機密情報の種類を作成する](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
 - [キーワード辞書を作成する](/microsoft-365/compliance/create-a-keyword-dictionary)
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 - **DoD のサポート**。 DoD 環境を使用した米国政府機関テナントのサポート。
 - **[暗号化のみ] を使用Outlook。** [ユーザーにアクセス許可Outlook割りEncrypt-Onlyを許可する] を選択すると、暗号化オプションにアクセス[許可が追加されます](encryption-sensitivity-labels.md#let-users-assign-permissions)。
@@ -169,22 +169,22 @@ Outlookと更新プログラム:
 
 次のトピックでコンテンツが追加または更新されました。
 
-- [エンドポイント DLP の詳細](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [メール通知を送信して、DLP ポリシーのヒントを表示する](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [データ損失防止Microsoft 365オンプレミス スキャナーの詳細](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-learn)
-- [データ損失防止オンプレミス スキャナーの使用を開始する](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
-- [FCI または他のプロパティを含むドキュメントを保護するために DLP ポリシーを作成する](https://docs.microsoft.com/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [エンドポイントのデータ損失防止の使用](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-using)
-- [エンドポイント データ損失防止の使用を開始する](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started)
+- [エンドポイント DLP の詳細](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [メール通知を送信して、DLP ポリシーのヒントを表示する](/microsoft-365/compliance/use-notifications-and-policy-tips)
+- [データ損失防止Microsoft 365オンプレミス スキャナーの詳細](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [データ損失防止オンプレミス スキャナーの使用を開始する](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
+- [FCI または他のプロパティを含むドキュメントを保護するために DLP ポリシーを作成する](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
+- [エンドポイントのデータ損失防止の使用](/microsoft-365/compliance/endpoint-dlp-using)
+- [エンドポイント データ損失防止を開始する](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>電子情報開示
 
 次のトピックでコンテンツが追加または更新されました。
 
-- [電子情報開示ツールMicrosoft 365復号化](https://docs.microsoft.com/microsoft-365/compliance/ediscovery-decryption)
-- [キーワード クエリと検索条件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [[関連] モジュールを使用Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/relevance-module-retirement)
-- [スクリプトを使用してコア電子情報開示ケースの保留リストにユーザーを追加する](https://docs.microsoft.com/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
+- [電子情報開示ツールMicrosoft 365復号化](/microsoft-365/compliance/ediscovery-decryption)
+- [キーワード クエリと検索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
+- [[関連] モジュールを使用Advanced eDiscovery](/microsoft-365/compliance/relevance-module-retirement)
+- [スクリプトを使用してコア電子情報開示ケースの保留リストにユーザーを追加する](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
 
 ### <a name="encryption"></a>暗号化
 
@@ -192,33 +192,33 @@ Outlookと更新プログラム:
 
 #### <a name="azure-rights-management-service-rms"></a>Azure Rights Management Service (RMS)
 
-- [顧客により管理される暗号化機能](https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [Exchange Online RMS を使用してメールAD暗号化を行います](https://docs.microsoft.com/microsoft-365/compliance/information-rights-management-in-exchange-online)。 このサービスのサポートは廃止されました。 ハイブリッド環境では、AD RMS Exchange使用できなくなりました。 代わりに、Azure RMS に移行します。
+- [顧客により管理される暗号化機能](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
+- [Exchange Online RMS を使用してメールAD暗号化を行います](/microsoft-365/compliance/information-rights-management-in-exchange-online)。 このサービスのサポートは廃止されました。 ハイブリッド環境では、AD RMS Exchange使用できなくなりました。 代わりに、Azure RMS に移行します。
 
 #### <a name="customer-key"></a>顧客キー
 
-- [テナント レベルMicrosoft 365顧客キー](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level)
-- [セキュリティとコンプライアンスの概要](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+- [テナント レベルMicrosoft 365顧客キー](/microsoft-365/compliance/customer-key-tenant-level)
+- [セキュリティとコンプライアンスの概要](/microsoftteams/security-compliance-overview)
 
 #### <a name="information-rights-management-irm"></a>Information Rights Management (IRM)
 
-- [リストまたはライブラリに Information Rights Management (IRM) を適用します](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 これらの国内クラウドでは、この設定はサポートされていません。
+- [リストまたはライブラリに Information Rights Management (IRM) を適用します](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 これらの国内クラウドでは、この設定はサポートされていません。
     - Microsoft Cloud for US Government
     - Microsoft Cloud Germany
     - Azure と Microsoft 365 21Vianet が中国で運用)
-- [RMS サーバーでオンプレミスのサーバーを使用AD IRM を構成します](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 ハイブリッド環境でのこのサービスExchangeは廃止されました。
+- [RMS サーバーでオンプレミスのサーバーを使用AD IRM を構成します](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 ハイブリッド環境でのこのサービスExchangeは廃止されました。
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
 次のトピックでコンテンツが追加または更新されました。
 
-- [機密情報の種類に関する詳細情報](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [PowerShell を使用してカスタムの機密情報の種類を作成する](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [完全データ一致ベースの分類を使用してカスタム機密情報の種類を作成する](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [機密情報の種類のエンティティ定義](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [機密情報の種類に関する詳細情報](/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [PowerShell を使用してカスタムの機密情報の種類を作成する](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [完全データ一致ベースの分類を使用してカスタム機密情報の種類を作成する](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [機密情報の種類のエンティティ定義](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 次のトピックでコンテンツが追加または更新されました。
 
@@ -239,7 +239,7 @@ Outlookと更新プログラム:
 
 [ニュージーランド公的](retention-regulatory-requirements.md#new-zealand-public-records-act) 記録法のコンプライアンス義務を満たすのに役立つ情報ガバナンスとレコード管理を使用して対処するための新しい評価。
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 - 米国政府機関のテナント (GCC および GCC-H) では、GCCラベルがサポートされています。
 - macOS [の新しい自動](sensitivity-labels-office-apps.md) ラベル付けサポート。
@@ -285,7 +285,7 @@ Outlookと更新プログラム:
 
 レコード [管理管理者役割グループは、](get-started-with-records-management.md#permissions-required-for-records-management) 廃棄レビューを含むすべてのレコード管理機能に対するアクセス許可を付与します。
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 - [Azure Purview のデータに自動的にラベルを付け (プレビュー) します](/azure/purview/create-sensitivity-label)。 これで、Azure Purview のアセット (Azure BLOB ストレージ内のファイルや、Azure の Blob ストレージ内のデータベース列など) に対して、感度ラベルを作成して自動的に適用SQL Server。
 - [ユーザーがアイテムにラベルを適用する必要があります](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。 "必須ラベル付け" とも呼ばれるこの新しいオプションでは、ユーザーが特定のシナリオで感度ラベルを選択して適用する必要があります。

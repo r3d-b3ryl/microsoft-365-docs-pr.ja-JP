@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 727576ab75d77d12be0595c081586f411887da49
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5ecee4a71ef0b6f607a284766163a90f16bc27dc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165443"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843070"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>エンドポイントのリソースに役立つ Microsoft Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "51165443"
 ブログへのリンクや、Microsoft Defender for Endpoint に関連するその他のリソースなどの有用なリソースにアクセスします。
 
 ## <a name="endpoint-protection-platform"></a>エンドポイント保護プラットフォーム
-- [業界テストの上位スコア](https://docs.microsoft.com/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
+- [業界テストの上位スコア](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
 
 - [インサイド アウト: Defender for Endpoint 次世代保護の中核となる高度なテクノロジを知る](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ca429ca1fea125450fdbb8d1f3a0e3a745513d8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 56d4ac95ab49310cc5fc74168158672e7a0d65d1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245698"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843224"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 
@@ -64,8 +64,8 @@ ASR ルールの場合、除外を 1 つ追加すると、すべての ASR ル�
 
 |ルールの名前|GUID|ファイル&フォルダーの除外|
 |:--|:--|:--|
-|JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|D3E037E1-3EB8-44C8-A917-57927947596D|非サポート|
-|WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|非サポート|
+|JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|D3E037E1-3EB8-44C8-A917-57927947596D|サポート対象外|
+|WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|サポート対象外|
 
 ASR ルールの除外は、ワイルドカード、パス、および環境変数をサポートします。 ASR ルールでワイルドカードを使用する方法の詳細については、「ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する [」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。
 
@@ -127,7 +127,7 @@ ASR ルールが異なると、保護フローが異なります。 構成する
 
 ## <a name="im-making-the-switch-from-a-third-party-security-solution-to-defender-for-endpoint-is-there-an-easy-way-to-export-rules-from-another-security-solution-to-asr"></a>サードパーティのセキュリティ ソリューションから Defender for Endpoint への切り替えを行っています。 別のセキュリティ ソリューションから ASR にルールをエクスポートする "簡単な" 方法はありますか?
 
-ほとんどの場合、別のセキュリティ ソリューションからルールをインポートするよりも [、Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) が提案するベースライン推奨事項から始める方が簡単で優れた方法です。 次に、監査モード、監視、分析などのツールを使用して、独自のニーズに合わせて新しいソリューションを構成します。 
+ほとんどの場合、別のセキュリティ ソリューションからルールをインポートするよりも [、Defender for Endpoint](/windows/security/threat-protection) が提案するベースライン推奨事項から始める方が簡単で優れた方法です。 次に、監査モード、監視、分析などのツールを使用して、独自のニーズに合わせて新しいソリューションを構成します。 
 
 ほとんどの ASR ルールの既定の構成は、Defender for Endpoint のリアルタイム保護と組み合わせて、多数の悪用や脆弱性から保護されます。
 
@@ -135,7 +135,7 @@ Defender for Endpoint 内から、カスタム インジケーターを使用し
 
 ## <a name="does-asr-support-file-or-folder-exclusions-that-include-system-variables-and-wildcards-in-the-path"></a>ASR は、パスにシステム変数とワイルドカードを含むファイルまたはフォルダーの除外をサポートしていますか?
 
-はい。 除外されたファイル パスでのシステム変数とワイルドカードの使用の詳細については[、「ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)ルールからファイルまたは[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)フォルダーを除外する」および「ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する」を参照してください。
+はい。 除外されたファイル パスでのシステム変数とワイルドカードの使用の詳細については[、「ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)ルールからファイルまたは[](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)フォルダーを除外する」および「ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する」を参照してください。
 
 ## <a name="do-asr-rules-cover-all-applications-by-default"></a>ASR ルールは既定ですべてのアプリケーションをカバーしますか?
 
@@ -175,7 +175,7 @@ ASR ルールによって通知がローカルでトリガーされるたびに�
 
 ## <a name="is-it-a-good-idea-to-enable-the-rule-block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe-alongside-lsa-protection"></a>LSA 保護と共に、Windows ローカル セキュリティ機関サブシステム *(lsass.exe)* からの資格情報の盗用をブロックするルールを有効にしてください。
 
-このルールを有効にすると [、LSA](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) 保護も有効になっている場合、追加の保護は提供されません。 ルールと LSA 保護の両方が同じ方法で動作し、両方を同時に実行すると冗長になります。 ただし、LSA 保護を有効にできない場合があります。 このような場合は、このルールを有効にして、マルウェアを対象とするマルウェアに対して同等の保護lsass.exe。
+このルールを有効にすると [、LSA](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) 保護も有効になっている場合、追加の保護は提供されません。 ルールと LSA 保護の両方が同じ方法で動作し、両方を同時に実行すると冗長になります。 ただし、LSA 保護を有効にできない場合があります。 このような場合は、このルールを有効にして、マルウェアを対象とするマルウェアに対して同等の保護lsass.exe。
 
 ## <a name="see-also"></a>関連項目
 
@@ -183,6 +183,6 @@ ASR ルールによって通知がローカルでトリガーされるたびに�
 * [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
 * [攻撃面の減少ルールをカスタマイズする](customize-attack-surface-reduction.md)
 * [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
-* [Microsoft Defender と他のウイルス対策/マルウェア対策との互換性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+* [Microsoft Defender と他のウイルス対策/マルウェア対策との互換性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
 

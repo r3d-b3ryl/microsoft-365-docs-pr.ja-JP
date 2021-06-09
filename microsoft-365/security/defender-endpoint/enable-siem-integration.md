@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 337eb28b7e4b4a7c57b63ff45fb1cea81db43604
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 87078bb7bfc6b38788fea2a6a4c3c9108be1d5b4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068204"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842964"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender で SIEM 統合を有効にする
 
@@ -83,7 +83,7 @@ ms.locfileid: "51068204"
    > [!NOTE]
    > 90 日ごとに新しい更新トークンを生成する必要があります。 
 
-6. [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp)の Azure ADアプリ登録を作成する手順に従い、適切なアクセス許可を割り当て、アラートを読み取ってください。
+6. [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp)の Azure ADアプリ登録を作成する手順に従い、適切なアクセス許可を割り当て、アラートを読み取ってください。
 
 これで、SIEM ソリューションの構成またはプログラムによるアクセスを通じて検出 REST API への接続を続行できます。 SIEM ソリューションを構成するときにトークンを使用して、ユーザーからの検出を受信Microsoft Defender セキュリティ センター。
 

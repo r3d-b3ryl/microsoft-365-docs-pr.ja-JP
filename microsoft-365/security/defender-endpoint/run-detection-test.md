@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2bb1fde1bfd8ddfa358d1141c3821843e532a8bf
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 10090fdd1dff6b020d06c82afa8456d7a157ff91
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52312002"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843308"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する 
 
@@ -63,4 +63,4 @@ ms.locfileid: "52312002"
 ## <a name="related-topics"></a>関連項目
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [オンボード サーバー](configure-server-endpoints.md)
-- [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
+- [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
