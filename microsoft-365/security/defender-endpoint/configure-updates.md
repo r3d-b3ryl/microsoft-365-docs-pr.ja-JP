@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d8f589da32ae72383bbe2da7624c9bb846265679
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 26695df0e34c0e06adc4f58acf3fea83122c1982
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809297"
+ms.locfileid: "52844480"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Microsoft Defender 更新プログラムのカスタム段階的ロールアウト プロセスを作成する
 
@@ -54,7 +54,7 @@ Defender 更新プログラム用に独自のカスタム段階的ロールア�
 > [!NOTE]
 > 更新された Defender ADMX テンプレートは、21H2 リリースのバージョンと共に公開Windows 10。
 
-グループ ポリシーを使用 [して](https://docs.microsoft.com/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)   、エンドポイント上のMicrosoft Defender ウイルス対策管理できます。
+グループ ポリシーを使用 [して](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)   、エンドポイント上のMicrosoft Defender ウイルス対策管理できます。
 
 一般に、次の手順を使用して、グループ ポリシー設定を構成Microsoft Defender ウイルス対策変更できます。
 
@@ -74,7 +74,7 @@ Defender 更新プログラム用に独自のカスタム段階的ロールア�
 
 Intune でカスタム ポリシーを作成するには、以下のリンクの手順に従います。
 
-[Azure Microsoft Docs - Windows 10デバイスMicrosoft Intuneカスタム設定 \| を追加する](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)
+[Azure Microsoft Docs - Windows 10デバイスMicrosoft Intuneカスタム設定 \| を追加する](/mem/intune/configuration/custom-settings-windows-10)
 
 ## <a name="powershell"></a>PowerShell
 
@@ -94,4 +94,4 @@ Set-MpPreference
 
 ベータ `Set-MpPreference -PlatformUpdatesChannel Beta` チャネルから届くプラットフォーム更新プログラムを構成するために使用します。
 
-パラメーターの詳細と構成方法については [、「Set-MpPreference (Defender) |Microsoft Docs](https://docs.microsoft.com/powershell/module/defender/set-mppreference?view=windowsserver2019-ps).
+パラメーターの詳細と構成方法については [、「Set-MpPreference (Defender) |Microsoft Docs](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps).

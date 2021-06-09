@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/07/2021
-ms.openlocfilehash: 33170d4706ed53f4de687c34806bb0492a08836e
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.date: 06/08/2021
+ms.openlocfilehash: ccbb57d781196e352e0fed456a1f7cb43eb17300
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809109"
+ms.locfileid: "52822276"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -110,6 +110,7 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 ### <a name="whats-new"></a>新機能
 - その他の動作監視ロジック
 - カーネル モードのキーロガー検出の改善
+- Microsoft Defender 更新プログラムの段階的なロールアウト プロセスを管理するための新しいコントロール [が追加されました](updates.md)
 
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  

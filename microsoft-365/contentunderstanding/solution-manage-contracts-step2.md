@@ -12,34 +12,34 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: カスタム ソリューションを使用してMicrosoft Teams管理チャネルを作成する方法について説明Microsoft 365します。
-ms.openlocfilehash: 81d5fe34383453b187363b13c21ef47844948193
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 073ef1651ea5470594bfce0ffce65e849f9e063a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636184"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841176"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>手順 2. 契約Microsoft Teamsチャネルを作成するには、次の情報を使用します。
 
-組織が契約管理ソリューションをセットアップする場合は、関係者が契約を確認および管理できる中心的な場所が必要です。 この目的のために、Microsoft Teams[を使用](https://docs.microsoft.com/microsoftteams/)して、Teamsチャネルを設定し、Teams使用できます。
+組織が契約管理ソリューションをセットアップする場合は、関係者が契約を確認および管理できる中心的な場所が必要です。 この目的のために、Microsoft Teams[を使用](/microsoftteams/)して、Teamsチャネルを設定し、Teams使用できます。
 
 - **関係者がアクションを必要とするすべての契約を簡単に確認できる場所を作成します。** たとえば、Teams契約管理チャネルに [契約]タブを作成し、承認が必要なすべての契約の便利なタイル ビューをメンバーに表示できます。 また、各 "カード" に重要なデータ (クライアント、契約者、手数料など)が一覧表示されるビュー *を構成することもできます*。
 
      ![[契約] タブ。](../media/content-understanding/tile-view.png)
 
-- **メンバーが互いに対話し、重要なイベントを表示するための場所を持つ。** たとえば、Teams[投稿] タブを使用して、会話を行い、更新プログラムを取得し、アクション (契約を拒否するメンバーなど) を表示できます。 何かが発生した場合 (承認のために提出された新しい契約など)は、[投稿] タブを使用して、それをアナウンスするだけでなく、その記録を保持することもできます。 また、メンバーが通知を購読すると、更新が行されるたびに通知が届く。 
+- **メンバーが互いに対話し、重要なイベントを表示するための場所を持つ。** たとえば、Teams[投稿] タブを使用して、会話を行い、更新プログラムを取得し、アクション (契約を拒否するメンバーなど) を表示できます。 何かが発生した場合 (承認のために提出された新しい契約など)は、[投稿] タブを使用して、それをアナウンスするだけでなく、その記録を保持することもできます。 また、メンバーが通知を購読すると、更新が行されるたびに通知が届く。
 
-     ![[投稿] タブ。](../media/content-understanding/posts.png)</br> 
+     ![[投稿] タブ。](../media/content-understanding/posts.png)
 
-- **承認された契約をメンバーが支払いのためにいつ提出できるのか知る場所をメンバーに提供します。** このTeams、支払いのために提出する必要があるすべての契約を一覧表示する For <b>Payment</b>チャネルを作成できます。 このソリューションを簡単に拡張して、この情報をサードパーティの金融アプリケーション (Dynamics CRM など) に直接書き込む必要があります。
+- **承認された契約をメンバーが支払いのためにいつ提出できるのか知る場所をメンバーに提供します。** このTeams、支払いのために提出する必要があるすべての契約を一覧表示する For **Payment** チャネルを作成できます。 このソリューションを簡単に拡張して、この情報をサードパーティの金融アプリケーション (Dynamics CRM など) に直接書き込む必要があります。
 
-## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>[契約] SharePointにドキュメント ライブラリを添付する 
+## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>[契約] SharePointにドキュメント ライブラリを添付する
 
 Contracts **Management チャネルで [契約]** タブを作成した後、ドキュメント ライブラリSharePoint [に添付する必要があります](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)。 添付SharePointするドキュメント ライブラリは、前のセクションで syntex ドキュメントSharePointモデルを適用したドキュメント ライブラリです。
 
 ドキュメント ライブラリにSharePointすると、既定のリスト ビューを使用して分類された契約を表示できます。
 
-   ![リスト ビュー。](../media/content-understanding/list-view.png) 
+   ![リスト ビュー。](../media/content-understanding/list-view.png)
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>[契約] タブのタイル ビューをカスタマイズする
 
@@ -54,7 +54,7 @@ Contracts **Management チャネルで [契約]** タブを作成した後、ド
 
 Teams チャネルのビューの JSON コードを表示または変更する場合は、Teams チャネルでビューのドロップダウン メニューを選択し、[現在のビューの書式設定] を選択します。 
 
-   ![json 形式。](../media/content-understanding/jason-format.png) 
+   ![json 形式。](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>カードのサイズと図形
 
@@ -81,7 +81,6 @@ Teams チャネルのビューの JSON コードを表示または変更する�
                       }
 ```
 
-
 ## <a name="contract-status"></a>契約の状態
 
 次のコードでは、各タイトル カードの状態を定義できます。 各ステータス値 *(New、In* *review、Approved、**および Rejected)* は、それぞれ異なる色コードを表示します。  [ファイル [ContractTileFormatting.js] で](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 、状態を定義するセクションを確認します。
@@ -104,10 +103,9 @@ Teams チャネルのビューの JSON コードを表示または変更する�
               }
 ```
 
-
 ## <a name="extracted-fields"></a>抽出されたフィールド
 
-各契約カードには、契約ごとに抽出された 3 つのフィールド (*クライアント*、契約者、および手数料金額)*が表示されます*。 さらに、ファイルの識別に使用される Syntex モデルによってファイルが分類SharePoint日付を表示する必要があります。 
+各契約カードには、契約ごとに抽出された 3 つのフィールド (*クライアント*、契約者、および手数料金額)*が表示されます*。 さらに、ファイルの識別に使用される Syntex モデルによってファイルが分類SharePoint日付を表示する必要があります。
 
 ファイルの [ContractTileFormatting.jsセクション](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) では、これらのそれぞれを定義します。
 
@@ -159,7 +157,6 @@ Teams チャネルのビューの JSON コードを表示または変更する�
 },
 ```
 
-
 ### <a name="fee-amount"></a>手数料金額
 
 このセクションでは、カードに "手数料金額" を表示する方法を定義し、特定の契約の値を使用します。
@@ -183,8 +180,6 @@ Teams チャネルのビューの JSON コードを表示または変更する�
                         "txtContent": "[$FeeAmount]"
                       },
 ```
-
-
 
 ### <a name="classification-date"></a>分類日
 

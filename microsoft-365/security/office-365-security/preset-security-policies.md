@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、標準ポリシーと厳密なポリシー設定を、Exchange Online Protection (EOP) と Microsoft Defender の保護機能全体に適用する方法をOffice 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771227"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822288"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "52771227"
 事前設定されたセキュリティ ポリシーは、次の要素で構成されます。
 
 - プロファイル
-- Policies
+- ポリシー
 - ポリシー設定
 
 さらに、複数の事前設定されたセキュリティ ポリシーや他のポリシーが同じユーザーに適用される場合は、優先順位が重要です。
@@ -103,9 +103,9 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
 ## <a name="assign-preset-security-policies-to-users"></a>ユーザーに事前設定されたセキュリティ ポリシーを割り当てる
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>事前に必要な知識
+### <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- [セキュリティ センター] Microsoft 365開きます <https://security.microsoft.com/> 。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
+- [セキュリティ センター] Microsoft 365開きます <https://security.microsoft.com> 。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -119,7 +119,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>セキュリティ センターを使用して、ユーザーに事前設定されたセキュリティ ポリシーを割り当てる
 
-1. セキュリティ センターで、[メール] グループ **&[** ルールの脅威ポリシー&セキュリティ ポリシー] に \>  \>  \> **移動します**。
+1. セキュリティ センターで、[メールの送信] **&[** ルールの脅威ポリシー&ポリシー] セクションの [セキュリティ ポリシーの事前設定] \>  \>  \>  \> **に移動します**。
 
 2. [標準 **保護] または [****厳密な保護] で、[** 編集] を **クリックします**。
 

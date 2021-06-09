@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 93aa685f12e0241758bf86d3aa956717db052e5f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 56fd5aa10cf30e7bdcad213a68430b460e65647c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499932"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844228"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Microsoft Defender for Endpoint Incidents キューの表示と整理
 
@@ -57,7 +57,7 @@ ms.locfileid: "51499932"
 
 インシデントの重大度 | 説明
 :---|:---
-高い </br>(赤) | 多くの場合、高度な永続的な脅威 (APT) に関連付けられている脅威。 これらのインシデントは、デバイスに与える損害の重大度が高いリスクを示しています。
+高 </br>(赤) | 多くの場合、高度な永続的な脅威 (APT) に関連付けられている脅威。 これらのインシデントは、デバイスに与える損害の重大度が高いリスクを示しています。
 中 </br>(オレンジ) | 異常なレジストリ変更、疑わしいファイルの実行、攻撃段階の一般的な動作など、組織でまれに観察される脅威。
 低い </br>(黄色) | 組織を標的とする高度な脅威を必ずしも示すわけではない、一般的なマルウェアやハッキング ツールに関連する脅威。
 情報 </br>(灰色) | 情報インシデントはネットワークに悪影響を及ぼすとは見なされませんが、追跡しておいた方が良い場合があります。
@@ -65,7 +65,7 @@ ms.locfileid: "51499932"
 ## <a name="assigned-to"></a>割り当て先
 ユーザー割り当てられているものまたは自分に割り当てられているものを選択することで、リストをフィルター処理することを選択できます。
 
-### <a name="category"></a>カテゴリ
+### <a name="category"></a>Category
 インシデントは、サイバーセキュリティキル チェーンが含むステージの説明に基づいて分類されます。 このビューは、脅威アナリストがコンテキストに基づいて展開する優先度、緊急性、対応する対応戦略を決定するのに役立ちます。
 
 ### <a name="status"></a>状態
@@ -85,7 +85,7 @@ ms.locfileid: "51499932"
 
 
 ## <a name="see-also"></a>関連項目
-- [インシデント キュー](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [インシデント キュー](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [インシデントの管理](manage-incidents.md)
 - [インシデントの調査](investigate-incidents.md)
 

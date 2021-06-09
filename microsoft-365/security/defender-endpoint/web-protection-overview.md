@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a985719663ec23d41ce4da57aea9aa5e0cf7674c
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: eed208da92f7e196cc71dab4e9d32e5666f3f6a4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688971"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844204"
 ---
 # <a name="web-protection"></a>Web 保護
 
@@ -53,7 +53,7 @@ Web コンテンツ フィルターを構成するカードは、 **カテゴリ
 
 Web コンテンツ フィルターには、次の機能が含まれます。
 - ユーザーが、オンプレミスまたは離れた場所を閲覧している場合でも、ブロックされたカテゴリの Web サイトにアクセスするのを防ぐ
-- Microsoft Defender for Endpoint の役割ベースのアクセス制御設定で定義されているデバイス グループを使用して、さまざまなポリシーをさまざまなユーザーセットに簡単に [展開できます。](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac)
+- Microsoft Defender for Endpoint の役割ベースのアクセス制御設定で定義されているデバイス グループを使用して、さまざまなポリシーをさまざまなユーザーセットに簡単に [展開できます。](/microsoft-365/security/defender-endpoint/rbac)
 - 同じ中央の場所にある Web レポートにアクセスし、実際のブロックと Web 使用状況を可視化できます。
 
 ## <a name="in-this-section"></a>このセクションの内容

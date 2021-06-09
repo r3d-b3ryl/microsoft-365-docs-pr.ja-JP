@@ -19,16 +19,16 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: e51cc1d613e6f9e7ab96653692362ed7fe239e3e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: cc806678bbb5ac19f7c4e035efb52b6ba7d1edb1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274846"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844912"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>アクション センターにアクセスして修復アクションを確認する
 
-自動調査中および自動調査後に、脅威検出に対する修復アクションが識別されます。 特定の脅威と [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) の組織の構成方法に応じて、一部の修復アクションが自動的に実行され、承認が必要な修復アクションもあります。 組織のセキュリティ運用チームの一員である場合は、アクション センターで保留中の修復アクションと完了 [](manage-auto-investigation.md#remediation-actions)済み修復アクションを **表示できます**。 
+自動調査中および自動調査後に、脅威検出に対する修復アクションが識別されます。 特定の脅威と [Microsoft Defender for Endpoint](/windows/security/threat-protection) の組織の構成方法に応じて、一部の修復アクションが自動的に実行され、承認が必要な修復アクションもあります。 組織のセキュリティ運用チームの一員である場合は、アクション センターで保留中の修復アクションと完了 [](manage-auto-investigation.md#remediation-actions)済み修復アクションを **表示できます**。 
 
 
 **適用対象:**
@@ -46,7 +46,7 @@ ms.locfileid: "52274846"
 
 |統合された新しいアクション センター  |前のアクション センター  |
 |---------|---------|
-|デバイスと電子メールの保留中のアクションと完了したアクションを 1 つの場所に一覧表示する <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus Microsoft Defender for [Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp))|デバイスの保留中のアクションと完了したアクションの一覧 <br/> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) のみ)   |
+|デバイスと電子メールの保留中のアクションと完了したアクションを 1 つの場所に一覧表示する <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus Microsoft Defender for [Office 365](/microsoft-365/security/office-365-security/office-365-atp))|デバイスの保留中のアクションと完了したアクションの一覧 <br/> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) のみ)   |
 |場所は次の場所です。<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |場所は次の場所です。<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
 | [セキュリティ センター Microsoft 365] で、[アクション センター]**を選択します**。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="セキュリティ センターのアクション センター Microsoft 365移動する"::: | [自動調査Microsoft Defender セキュリティ センター] で、[**自動調査] アクション** センター  >  **を選択します**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="[アクション] ウィンドウからアクション センターに移動Microsoft Defender セキュリティ センター":::  |
 
@@ -54,11 +54,11 @@ ms.locfileid: "52274846"
 
 適切なアクセス許可と次のサブスクリプションの 1 つ以上がある場合は、統合アクション センターを使用できます。
 - [Defender for Endpoint](microsoft-defender-endpoint.md)
-- [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
+- [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection) 
 
 > [!TIP]
-> 詳細については、「要件」 [を参照してください](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites)。
+> 詳細については、「要件」 [を参照してください](/microsoft-365/security/mtp/prerequisites)。
 
 ## <a name="using-the-action-center"></a>アクション センターの使用
 

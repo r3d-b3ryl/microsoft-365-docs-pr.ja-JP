@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 6465be53de38872e3eb1d7b70dc3efbb9154aace
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b9d6cd374a107a403269bc3babbe4220d69e1cce
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934203"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844876"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -110,9 +110,9 @@ Intune でポリシーを構成し、デバイスに反映されない場合は�
 
 エラー コード 16 進数 | エラー コード 12 月 | エラーの説明 | OMA-URI | 考えられる原因とトラブルシューティングの手順
 :---:|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | 修復に失敗しました | オンボード <br> オフボード | **考えられる原因:** 誤った BLOB でオンボーディングまたはオフボードが失敗しました。署名が間違っていたり、PreviousOrgIds フィールドが見つからない場合。 <br><br> **トラブルシューティングの手順:** <br> [デバイス イベント ログのエージェントオンボーディング エラーの表示] セクション [でイベントの ID を確認](#view-agent-onboarding-errors-in-the-device-event-log) します。 <br><br> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に従[Windows 10。](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
+0x87D1FDE8 | -2016281112 | 修復に失敗しました | オンボード <br> オフボード | **考えられる原因:** 誤った BLOB でオンボーディングまたはオフボードが失敗しました。署名が間違っていたり、PreviousOrgIds フィールドが見つからない場合。 <br><br> **トラブルシューティングの手順:** <br> [デバイス イベント ログのエージェントオンボーディング エラーの表示] セクション [でイベントの ID を確認](#view-agent-onboarding-errors-in-the-device-event-log) します。 <br><br> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に従[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
  | | | | オンボード <br> オフボード <br> SampleSharing | **考えられる原因:** Microsoft Defender for Endpoint Policy レジストリ キーが存在しないか、OMA DM クライアントに書き込み権限が付与されていない。 <br><br> **トラブルシューティングの手順:** 次のレジストリ キーが存在することを確認します。 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> 存在しない場合は、管理者特権でコマンドを開き、キーを追加します。
- | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **考えられる原因:** 読み取り専用プロパティによる修復の試行。 オンボーディングに失敗しました。 <br><br> **トラブルシューティングの手順:** 「デバイスでのオンボードの問題の [トラブルシューティング」のトラブルシューティング手順を確認します](#troubleshoot-onboarding-issues-on-the-device)。 <br><br> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に従[Windows 10。](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
+ | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **考えられる原因:** 読み取り専用プロパティによる修復の試行。 オンボーディングに失敗しました。 <br><br> **トラブルシューティングの手順:** 「デバイスでのオンボードの問題の [トラブルシューティング」のトラブルシューティング手順を確認します](#troubleshoot-onboarding-issues-on-the-device)。 <br><br> 次の表の MDM イベント ログを確認するか、「MDM エラーの診断」の手順に従[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
  | | | | すべて | **考えられる原因:** Microsoft Defender for Endpoint をサポートされていない SKU/プラットフォーム (特に Holographic SKU) に展開します。 <br><br> 現在サポートされているプラットフォーム:<br> Enterprise、教育、およびProfessional。<br> サーバーはサポートされていません。
  0x87D101A9 | -2016345687 |SyncML(425): 要求されたコマンドは、送信者が受信者に適切なアクセス制御アクセス許可 (ACL) を持たないので失敗しました。 | すべて |  **考えられる原因:** Microsoft Defender for Endpoint をサポートされていない SKU/プラットフォーム (特に Holographic SKU) に展開します。<br><br> 現在サポートされているプラットフォーム:<br>  Enterprise、教育、およびProfessional。
 
@@ -335,7 +335,7 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 - このシナリオでは、オンボード パッケージが展開された場合でも、SENSE サービスは自動的に開始されません
 
 > [!NOTE]
-> 次の手順は、次の手順を使用する場合にのみMicrosoft Endpoint Configuration Manager。 アプリケーションを使用したオンボーディングの詳細については、「Microsoft Endpoint Configuration Manager [Microsoft Defender for Endpoint」を参照してください](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
+> 次の手順は、次の手順を使用する場合にのみMicrosoft Endpoint Configuration Manager。 アプリケーションを使用したオンボーディングの詳細については、「Microsoft Endpoint Configuration Manager [Microsoft Defender for Endpoint」を参照してください](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 
 1. アプリケーションを作成Microsoft Endpoint Configuration Manager。
 

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 00943eb85abbfd2d237ae5544eb69d3ec4d9f875
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245506"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841284"
 ---
 # <a name="device-images"></a>デバイスの画像
 
@@ -79,13 +79,13 @@ HP Corporate Ready Image に同梱されている HP 商用 PC には、 が含�
 
 これらの手順では、デバイス上のすべてのデータが削除されます。そのため、開始する前に、保持するデータをバックアップする必要があります。
 
-1. WinPE[を使用して起動可能な USB ドライブ](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)を作成します。
+1. WinPE[を使用して起動可能な USB ドライブ](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)を作成します。
 2. C: SOURCES から \\ USB ドライブにこれらのファイルをコピーします。
     - 工場出荷時の回復 WIM ファイル (HP \_ EliteBook \_ 840 \_ G7 \_ ノートブック PC CR \_ \_ \_ 2004.wim など)
     - DEPLOY。CMD
     - ReCreatePartitions.txt
 3. [WinPE にデバイスを起動する](https://store.hp.com/us/en/tech-takes/how-to-boot-from-usb-drive-on-windows-10-pcs) USB ドライブ。
-4. コマンド プロンプトで、次のコマンド[をDiskpart.exe。 ](https://docs.microsoft.com/windows-server/administration/windows-commands/diskpart#additional-references)
+4. コマンド プロンプトで、次のコマンド[をDiskpart.exe。 ](/windows-server/administration/windows-commands/diskpart#additional-references)
 5. Diskpart で、実行し、プライマリ 記憶域ディスク番号 (通常はディスク `list disk` 0) をメモします。
 6. 入力して Diskpart を終了 `exit` します。
 7. コマンド プロンプトで、 を実行します。sys_disk は、決定したプライマリ ストレージ ディスクのディスク番号であり、recovery_wim ファイル名です `deploy.cmd <sys_disk> <recovery_wim>` 。  前にコピーした WIM ファイル。

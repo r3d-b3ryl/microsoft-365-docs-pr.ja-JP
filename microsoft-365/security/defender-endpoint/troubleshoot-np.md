@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: f77ce94fda63a9e7e8a9484a67a22eeec136d619
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 481a8f15d6a41bda8dc866ce40d98c4f3717223d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935883"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844060"
 ---
 # <a name="troubleshoot-network-protection"></a>ネットワーク保護のトラブルシューティング
 
@@ -52,9 +52,9 @@ ms.locfileid: "51935883"
 
 >[!div class="checklist"]
 > - エンドポイントは、バージョン 1709 Windows 10 ProまたはEnterpriseバージョン 1709 以上で実行されています。
-> - エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [Microsoft 以外のウイルス対策ソリューションを使用している場合の問題を確認します](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
-> - [リアルタイム保護が](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 有効になっています。
-> - [クラウド配信の保護が](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 有効になっています。
+> - エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [Microsoft 以外のウイルス対策ソリューションを使用している場合の問題を確認します](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+> - [リアルタイム保護が](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 有効になっています。
+> - [クラウド配信の保護が](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 有効になっています。
 > - 監査モードが有効になっていません。 グループ [ポリシーを使用して](enable-network-protection.md#group-policy) ルールを無効 **(値** : **0) に設定します**。
 
 ## <a name="use-audit-mode"></a>監査モードを使用する

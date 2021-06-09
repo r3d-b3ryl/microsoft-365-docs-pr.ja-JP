@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ba48adcf93c5b768b2280729b33a1a7d361919cb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066195"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844072"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 
@@ -53,9 +53,9 @@ ms.locfileid: "51066195"
 
 | アクセス許可             | PE ファイル | PE 以外のファイル |
 | :--------------------- | :------: | :----------: |
-| データの表示              |     X    |       X      |
-| アラートの調査   | &#x2611; |       X      |
-| ライブ応答の基本    |     X    |       X      |
+| データの表示              |     X    |       ○      |
+| アラートの調査   | &#x2611; |       ○      |
+| ライブ応答の基本    |     X    |       ○      |
 | ライブ応答の詳細設定 | &#x2611; |   &#x2611;   |
 
 役割の詳細については、「役割ベースのアクセス制御の役割の作成と管理 [」を参照してください](user-roles.md)。
@@ -69,7 +69,7 @@ ms.locfileid: "51066195"
 >
 > - アクションを実行しているデバイスがバージョン 1703 以降Windows 10を実行している
 > - ファイルが信頼できるサード パーティ発行元に属していないか、Microsoft によって署名されていない
-> - Microsoft Defender ウイルス対策パッシブ モードで実行している必要があります。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+> - Microsoft Defender ウイルス対策パッシブ モードで実行している必要があります。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
 [ **ファイルの停止と検疫]** アクションには、実行中のプロセスの停止、ファイルの検疫、レジストリ キーなどの永続的なデータの削除が含まれます。
 
@@ -160,7 +160,7 @@ ms.locfileid: "51066195"
 
 > [!IMPORTANT]
 >
-> - この機能は、組織でクラウド配信Microsoft Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウド提供の [保護を管理する」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+> - この機能は、組織でクラウド配信Microsoft Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウド提供の [保護を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 >
 > - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。
 > - この機能は、疑わしいマルウェア (または悪意のある可能性のあるファイル) が Web からダウンロードされるのを防ぐために設計されています。 現在、ポータブル実行可能ファイル (PE) ファイルがサポートされています 。このファイルには、.exe _ファイル.dll__があります。_ 対象範囲は時間の長い期間延長されます。
@@ -191,7 +191,7 @@ ms.locfileid: "51066195"
 
 潜在的に侵害されたデバイス、または既に侵害されているデバイスに関する詳細な分析情報については、Microsoft の脅威の専門家に問い合してください。 Microsoft 脅威エキスパート、迅速かつ正確な対応のために、Microsoft Defender セキュリティ センター内から直接関与します。 専門家は、侵害される可能性のあるデバイスに関する分析情報を提供し、複雑な脅威や標的型攻撃通知を理解するのに役立ちます。 また、ポータル ダッシュボードに表示されるアラートや脅威インテリジェンス コンテキストに関する情報を提供することもできます。
 
-詳細 [については、「Microsoft Threat Expert」を](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 参照してください。
+詳細 [については、「Microsoft Threat Expert」を](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 参照してください。
 
 ## <a name="check-activity-details-in-action-center"></a>アクション センターでアクティビティの詳細を確認する
 

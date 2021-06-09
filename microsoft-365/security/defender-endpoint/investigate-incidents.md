@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1d8f4452273047684a30db3b18d1281f40f46378
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0b52b6f9b457dbe1a5984c3d68c7077f7037d498
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903300"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845080"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のインシデントを調査する
 
@@ -92,6 +92,6 @@ Microsoft Defender for Endpoint は、脅威情報をインシデントに集約
 ![インシデントの詳細の画像](images/atp-incident-graph-details.png)
 
 ## <a name="related-topics"></a>関連項目
-- [インシデント キュー](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [Microsoft Defender for Endpoint のインシデントを調査する](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-incidents)
-- [エンドポイント インシデントの Microsoft Defender の管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-incidents)
+- [インシデント キュー](/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Microsoft Defender for Endpoint のインシデントを調査する](/microsoft-365/security/defender-endpoint/investigate-incidents)
+- [エンドポイント インシデントの Microsoft Defender の管理](/microsoft-365/security/defender-endpoint/manage-incidents)

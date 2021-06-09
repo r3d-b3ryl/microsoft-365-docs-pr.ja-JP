@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: d756c738f9f61638a9e7424aa3fdf639f8f02f2a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5a5a81bde283a9eba4d5db77ed7e4c0b7567abc9
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185601"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844744"
 ---
 # <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Microsoft Cloud App Security Defender for Endpoint の概要の詳細
 
@@ -38,7 +38,7 @@ ms.locfileid: "51185601"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Cloud App Security (Cloud App Security) は、クラウド アプリへのアクセスを制御および制限しながら、クラウドに保存されているデータに対するコンプライアンス要件を適用することで、クラウド アプリとサービスを可視化する包括的なソリューションです。 詳細については、「Cloud App Security」[を参照してください](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)。
+Microsoft Cloud App Security (Cloud App Security) は、クラウド アプリへのアクセスを制御および制限しながら、クラウドに保存されているデータに対するコンプライアンス要件を適用することで、クラウド アプリとサービスを可視化する包括的なソリューションです。 詳細については、「Cloud App Security」[を参照してください](/cloud-app-security/what-is-cloud-app-security)。
 
 >[!NOTE]
 >この機能は、バージョン 1809 以降で実行Enterprise Mobility + SecurityデバイスWindows 10 E5 ライセンスで使用できます。 [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
@@ -58,7 +58,7 @@ Cloud App Security検出は、エンタープライズ ファイアウォール�
 
 - デバイス コンテキスト - クラウド トラフィック ログにデバイス コンテキストが不足しています。 Defender for Endpoint ネットワーク アクティビティは、デバイス コンテキスト (クラウド アプリにアクセスしたデバイス) で報告されます。そのため、ネットワーク アクティビティが行われた場所 (デバイス) と、ネットワーク アクティビティを実行したユーザー (ユーザー) を正確に理解できます。 
 
-クラウド検出の詳細については、「検出されたアプリを操作 [する」を参照してください](https://docs.microsoft.com/cloud-app-security/discovered-apps)。
+クラウド検出の詳細については、「検出されたアプリを操作 [する」を参照してください](/cloud-app-security/discovered-apps)。
 
 ## <a name="related-topic"></a>関連トピック
 

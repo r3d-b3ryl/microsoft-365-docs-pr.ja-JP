@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 033826a7f82278f6e36b422284a1076cba57d584
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2bf1fab504ae77a1e66235f49333c3b123e38904
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921980"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822252"
 ---
 # <a name="new-microsoft-edge-app"></a>新Microsoft Edgeアプリ
 
@@ -104,10 +104,10 @@ Microsoft マネージド デスクトップ、Chrome 拡張機能が管理エ�
 
 **既定値:** 無効
 
-ユーザーが自分のデバイスにパスワードを保存することを許可はお勧めしません。
+パスワード マネージャーは既定で無効になっています。 この機能が有効になっている場合は、サポート要求を送信し、サービス エンジニアが環境で設定を有効にできます。 
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Internet Explorer モード (Microsoft Edge
-Microsoft Edge で IE モードを利用すると、組織が必要とするすべてのサイトを 1 つのブラウザーで簡単に使用できます。 これは、Chromium レンダリング エンジンと互換性のあるサイトに統合 Chromium エンジンを使用し、IE 機能に依存していないサイトや依存関係を持つサイトに対して、Internet Explorer 11 (IE11) の Trident MSHTML エンジンを使用します。 [詳細](https://docs.microsoft.com/DeployEdge/edge-ie-mode) 
+Microsoft Edge で IE モードを利用すると、組織が必要とするすべてのサイトを 1 つのブラウザーで簡単に使用できます。 これは、Chromium レンダリング エンジンと互換性のあるサイトに統合 Chromium エンジンを使用し、IE 機能に依存していないサイトや依存関係を持つサイトに対して、Internet Explorer 11 (IE11) の Trident MSHTML エンジンを使用します。 [詳細情報](/DeployEdge/edge-ie-mode) 
 
 Microsoft マネージド デスクトップデバイスInternet Explorerモードを既定で有効にする 
 

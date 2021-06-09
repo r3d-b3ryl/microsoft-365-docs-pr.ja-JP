@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d058cfefbc31be6d355ed61e745c36af684829b4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259669"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841368"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
@@ -61,7 +61,7 @@ Microsoft マネージド デスクトップは、登録済みのデバイスや
 
 - **更新:** Microsoft マネージド デスクトップは、Windows 10 の品質更新プログラムおよび機能更新プログラム、ドライバー、ファームウェア、ウイルス対策定義、Microsoft 365 Apps for enterprise の [展開グループ](../service-description/updates.md)のすべての側面をセットアップおよび管理します。 これには、すべての更新プログラムの広範なテストと検証が含まれ、登録済みのデバイスが常に最新であることを保証し、中断を最小限に抑えて、IT 部門を継続的なタスクから解放します。
 
-- **アプリ:** Microsoft 365 Enterprise の一部として、Microsoft はいくつかの重要な Microsoft アプリを提供 (および管理) します。 ただし、その他のアプリもビジネスに必要となる可能性があります。 IT 部門がこれらのアプリケーションをテスト、パッケージ化、展開する代わりに、Microsoft が [FastTrack](https://www.microsoft.com/FastTrack) プログラムでそれらの展開をサポートします。 さらに、Microsoft [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree) プログラムで、Microsoft 製品の最新バージョンに移行する場合に発生するアプリの互換性の問題を修復することがきます。 詳細については、「[Microsoft マネージド デスクトップのアプリ](../get-ready/apps.md)」をご覧ください。
+- **アプリ:** Microsoft 365 Enterprise の一部として、Microsoft はいくつかの重要な Microsoft アプリを提供 (および管理) します。 ただし、その他のアプリもビジネスに必要となる可能性があります。 IT 部門がこれらのアプリケーションをテスト、パッケージ化、展開する代わりに、Microsoft が [FastTrack](https://www.microsoft.com/FastTrack) プログラムでそれらの展開をサポートします。 さらに、Microsoft [App Assure](/fasttrack/products-and-capabilities#app-assuree) プログラムで、Microsoft 製品の最新バージョンに移行する場合に発生するアプリの互換性の問題を修復することがきます。 詳細については、「[Microsoft マネージド デスクトップのアプリ](../get-ready/apps.md)」をご覧ください。
 
 
 ## <a name="device-monitoring"></a>デバイスの監視

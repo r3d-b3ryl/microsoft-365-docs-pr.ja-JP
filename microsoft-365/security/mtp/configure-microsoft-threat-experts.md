@@ -14,12 +14,12 @@ localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 38bf768f1a5603fa3da0d7a3acc8f409ed6372de
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 0ccb8482dae94de4a9f43a5ecaf7c701e6dd82a5
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765529"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844792"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Defender を使用してMicrosoft 脅威エキスパート機能を構成およびMicrosoft 365する
 
@@ -69,13 +69,13 @@ Microsoft Defender for Endpoint および Microsoft 365 Defender を既に持っ
 
 - [Microsoft 365 Defender ポータルの **インシデント] ページ**
 - Defender Microsoft 365のアラート **ダッシュボード**
-- OData アラート [API と](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-alerts) REST [API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
-- [高度な検索の DeviceAlertEvents](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) テーブル
+- OData アラート [API と](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) REST [API](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- [高度な検索の DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) テーブル
 - 電子メールを介してターゲット攻撃通知を送信する場合は、受信トレイ。 以下の [「電子メール通知ルールを作成する」を](#create-an-email-notification-rule) 参照してください。
 
 ### <a name="create-an-email-notification-rule"></a>電子メール通知ルールの作成
 
-通知受信者の電子メール通知を送信するルールを作成できます。 詳細については、「アラート通知を  [構成して](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications) 電子メール通知を作成、編集、削除、またはトラブルシューティングする」を参照してください。
+通知受信者の電子メール通知を送信するルールを作成できます。 詳細については、「アラート通知を  [構成して](/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications) 電子メール通知を作成、編集、削除、またはトラブルシューティングする」を参照してください。
 
 ## <a name="view-targeted-attack-notifications"></a>ターゲット攻撃の通知を表示する
 

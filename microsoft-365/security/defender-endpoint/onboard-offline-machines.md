@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee06f927579445825a2b2813e483c24357d2ed78
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ed33f67695fddc78c0bac646f72ca0c48887bb04
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934923"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844420"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint へのインターネット アクセスのないオンボード デバイス
 
@@ -45,17 +45,17 @@ ms.locfileid: "51934923"
 > - 「TelemetryProxyServer」レジストリまたは GPO を使用して構成されている場合、接続されていない Windows 10 または Windows Server 2019 デバイスのプロキシとして OMS ゲートウェイ サーバーを使用することはできません。
 > - サーバー 2019 Windows 10またはWindowsサーバー 2019 では、TelemetryProxyServer を使用する場合は、標準のプロキシ デバイスまたはアプライアンスを指している必要があります。
 > - さらに、接続Windows 10環境Windowsサーバー 2019 の証明書信頼リストを、内部ファイルまたは Web サーバーを介してオフラインで更新できる必要があります。
-> - オフラインでの CTL の更新の詳細については、「CTL ファイルをダウンロードするファイルまたは Web サーバーを構成する [」を参照してください](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)。
+> - オフラインでの CTL の更新の詳細については、「CTL ファイルをダウンロードするファイルまたは Web サーバーを構成する [」を参照してください](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)。
 
 オンボーディング方法の詳細については、次の記事を参照してください。
-- [以前のバージョンの Windows をオンボードする](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel)
-- [Microsoft Defender for Endpoint サービスへのオンボード サーバー](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
-- [デバイス プロキシとインターネット接続の設定を構成する](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
+- [以前のバージョンの Windows をオンボードする](/microsoft-365/security/defender-endpoint/onboard-downlevel)
+- [Microsoft Defender for Endpoint サービスへのオンボード サーバー](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
+- [デバイス プロキシとインターネット接続の設定を構成する](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
 ## <a name="on-premise-devices"></a>オンプレミス デバイス
 
 - プロキシまたはハブとして機能するように Azure Log Analytics (以前は OMS Gateway と呼ばれる) をセットアップします。
-  - [Azure Log Analytics エージェント](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+  - [Azure Log Analytics エージェント](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
   - エンドポイント ワークスペースキー id Microsoft Monitoring Agent Defender をポイントするコンピューター [(MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)ポイントをインストール&する
 
 - Azure Log Analytics の同じネットワーク内のオフライン デバイス
@@ -64,17 +64,17 @@ ms.locfileid: "51934923"
      - Defender for Endpoint workspace key & ID
 
 ## <a name="azure-virtual-machines"></a>Azure 仮想マシン
-- [Azure Log Analytics ワークスペースの構成と有効化](https://docs.microsoft.com/azure/azure-monitor/platform/gateway)
+- [Azure Log Analytics ワークスペースの構成と有効化](/azure/azure-monitor/platform/gateway)
 
     - プロキシまたはハブとして機能するように Azure Log Analytics Gateway (以前は OMS ゲートウェイと呼ばれる) をセットアップします。
-      - [Azure Log Analytics Gateway](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+      - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
       - エンドポイント ワークスペースキー id Microsoft Monitoring Agent Defender をポイントするコンピューター [(MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)ポイントをインストール&する
     - OMS ゲートウェイの同じネットワーク内のオフライン Azure VM
       - Azure Log Analytics IP をプロキシとして構成する
       - Azure Log Analytics Workspace Key & ID
 
     - Azure Defender
-      - [セキュリティ ポリシー \> ログ分析ワークスペース](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-      - [脅威検出 \> エンドポイントの Defender が自分のデータにアクセスできる](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+      - [セキュリティ ポリシー \> ログ分析ワークスペース](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+      - [脅威検出 \> エンドポイントの Defender が自分のデータにアクセスできる](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
-        詳細については、「セキュリティ ポリシーの [操作」を参照してください](https://docs.microsoft.com/azure/security-center/tutorial-security-policy)。
+        詳細については、「セキュリティ ポリシーの [操作」を参照してください](/azure/security-center/tutorial-security-policy)。

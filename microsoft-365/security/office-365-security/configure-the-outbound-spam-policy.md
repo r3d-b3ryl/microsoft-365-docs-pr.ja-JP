@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、電子メール (EOP) で送信スパム ポリシーを表示、作成、変更、および削除するExchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c2f68cac05f296771fc56d400e95d014811fe03a
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 9ebff0a93acd505532773fbf5d714268df220c9a
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793006"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822011"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパム フィルターを構成する
 
@@ -68,7 +68,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com/> でセキュリティ センターを開きます。 **[スパム対策の設定]** ページに直接移動するには、<https://security.microsoft.com/antispam> を使用します。
+- <https://security.microsoft.com> でセキュリティ センターを開きます。 **[スパム対策の設定]** ページに直接移動するには、<https://security.microsoft.com/antispam> を使用します。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 

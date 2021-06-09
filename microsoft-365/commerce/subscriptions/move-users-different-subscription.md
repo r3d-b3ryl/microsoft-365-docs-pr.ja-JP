@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: サブスクリプション間でユーザーを移動する方法について学習します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 0261ee15d16e895cb2552320097d8e6b396d5220
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 96ae6a589469004f2479edb2a4f8ed384b25f841
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333208"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822083"
 ---
 # <a name="move-users-to-a-different-subscription"></a>ユーザーを別のサブスクリプションに移動する
 
@@ -69,8 +69,8 @@ ms.locfileid: "52333208"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md)(記事)\
+[ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md) (記事)\
 [サブスクリプションからライセンスを削除](../licenses/buy-licenses.md) する (記事)\
 [手動でプランを変更](change-plans-manually.md) する (記事)\
-[Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) のサブスクリプションとライセンスについて (記事)\
-[別の Microsoft 365 for business サブスクリプションを購入](../try-or-buy-microsoft-365.md) する (記事)
+[ビジネス向けサービスのサブスクリプションMicrosoft 365ライセンス](../licenses/subscriptions-and-licenses.md)について (記事)\
+[ビジネス サブスクリプション用Microsoft 365別のサブスクリプションを購入する](../try-or-buy-microsoft-365.md)(記事)

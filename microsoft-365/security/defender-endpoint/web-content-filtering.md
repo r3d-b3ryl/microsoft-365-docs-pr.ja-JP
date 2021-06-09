@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47211e187d1f9f883745f008c6d94d04ee762e98
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302066"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822324"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -61,11 +61,11 @@ Web コンテンツ フィルターは主要な Web ブラウザーで利用で�
 
 - Windows 10 EnterpriseE5、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3 + Microsoft 365 E5 Securityまたは Microsoft Defender for Endpoint スタンドアロン ライセンス。 
 - ポータルへのMicrosoft Defender セキュリティ センターアクセス ( https://securitycenter.windows.com) .
-- Anniversary update (Windows 10 1607) 以降で最新の MoCAMP 更新プログラムを使用して実行されているデバイス。
+- 最新の Microsoft Defender Windows 10更新プログラム (バージョン 1607) 以降で実行されているデバイス。
 
 ## <a name="data-handling"></a>データ処理
 
-Microsoft Defender for Endpoint データ処理設定の一部として使用する選択した地域 [に従います](data-storage-privacy.md)。 データは、その地域のデータ センターから離れる必要があります。 さらに、お客様のデータは、データ プロバイダーを含む第三者と共有されることはありません。
+データは、Microsoft Defender for Endpoint データ処理設定の一部として選択された領域 [に格納されます](data-storage-privacy.md)。 データは、その地域のデータ センターから離れる必要があります。 さらに、お客様のデータは、データ プロバイダーを含む第三者と共有されることはありません。
 
 ## <a name="turn-on-web-content-filtering"></a>Web コンテンツ フィルターを有効にする
 
@@ -91,14 +91,10 @@ Web コンテンツ フィルター ポリシーは、どのサイト カテゴ�
 
 5. 概要を確認し、ポリシーを保存します。 ポリシーの更新には、選択したデバイスに適用するために最大 2 時間かかる場合があります。
 
-> [!TIP]
-> デバイス グループでカテゴリを選択せずにポリシーを展開できます。 このアクションは、ブロック ポリシーを作成する前にユーザーの動作を理解するのに役立つ監査専用ポリシーを作成します。
-
->[!NOTE]
->ポリシーを削除したり、デバイス グループを同時に変更したりすると、ポリシーの展開が遅れる可能性があります。
-
->[!IMPORTANT]
->"未分類" カテゴリをブロックすると、予期しない結果が発生する可能性があります。  
+> [!NOTE]
+> - デバイス グループでカテゴリを選択せずにポリシーを展開できます。 このアクションは、ブロック ポリシーを作成する前にユーザーの動作を理解するのに役立つ監査専用ポリシーを作成します。
+> - ポリシーを削除したり、デバイス グループを同時に変更したりすると、ポリシーの展開が遅れる可能性があります。
+> - "未分類" カテゴリをブロックすると、予期しない結果が発生する可能性があります。  
 
 ### <a name="allow-specific-websites"></a>特定の Web サイトを許可する
 
@@ -120,7 +116,7 @@ Web コンテンツ フィルターでブロックされたカテゴリを上書
 
 ## <a name="web-content-filtering-cards-and-details"></a>Web コンテンツ フィルター カードと詳細
 
-[ **レポートと web >]** を選択して、Web コンテンツ フィルターと Web 脅威保護に関する情報を含むカードを表示します。 次のカードは、Web コンテンツ フィルターに関する概要情報を提供します。
+[**レポート**  >  **Web 保護] を** 選択して、Web コンテンツ フィルターと Web 脅威保護に関する情報を含むカードを表示します。 次のカードは、Web コンテンツ フィルターに関する概要情報を提供します。
 
 ### <a name="web-activity-by-category"></a>カテゴリ別の Web アクティビティ
 
@@ -166,9 +162,4 @@ Web コンテンツ フィルターでブロックされたカテゴリを上書
 
 - Web コンテンツ フィルター レポートは、現在、上位 5,000 レコードの表示に制限されています。 たとえば、ドメイン レポートには、該当する場合、特定のフィルター クエリの上位 5000 ドメインの最大数だけが表示されます。 
 
-## <a name="related-topics"></a>関連項目
 
-- [Web 保護の概要](web-protection-overview.md)
-- [Web の脅威に対する保護](web-threat-protection.md)
-- [Web セキュリティの監視](web-protection-monitoring.md)
-- [Web の脅威への対応](web-protection-response.md)

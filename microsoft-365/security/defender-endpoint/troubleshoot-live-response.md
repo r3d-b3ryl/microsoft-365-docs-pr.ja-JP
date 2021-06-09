@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 2601001687fc22da98ca3cd81010237d12705ea4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 99a52188dd5f6eca2f8368aa3c114d0bfb950b10
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687413"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844156"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Microsoft Defender for Endpoint のライブ応答の問題のトラブルシューティング
 
@@ -67,7 +67,7 @@ ms.locfileid: "51687413"
 2. WpnService (Windowsプッシュ通知システム サービス) は無効ではありません。
 
 WpnService サービスの動作と要件を完全に理解するには、以下の記事を参照してください。
-- [Windowsプッシュ Notification Services (WNS) の概要](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [EnterpriseWNS トラフィックをサポートするファイアウォールとプロキシの構成](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Windowsプッシュ Notification Services (WNS) の概要](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [EnterpriseWNS トラフィックをサポートするファイアウォールとプロキシの構成](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Microsoft プッシュ通知サービス (MPNS) パブリック IP 範囲](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
 

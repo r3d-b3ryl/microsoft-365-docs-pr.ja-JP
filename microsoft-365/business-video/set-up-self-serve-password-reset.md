@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーがパスワードをリセットする方法については、Microsoft 365 Business Premium。
-ms.openlocfilehash: 62f82f106327c5378310bac0d41fde8462449329
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: b3cdd388c27b0f75bddb2544e36bd3ade210955b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903708"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841320"
 ---
 # <a name="set-up-self-service-password-reset"></a>セルフサービスによるパスワードのリセットを設定する
 
@@ -43,6 +43,10 @@ ms.locfileid: "51903708"
 
 次にユーザーが自分のアカウントにサインインすると、ユーザー ID とパスワードを求められます。 [次へ **]** を選択し、電話、電子メール、または両方で認証するかどうかを選択します。 受け取ったコードを入力し、[確認] **を選択し**、[完了] を **選択します**。 完了したら、自分のパスワードをリセットできます。
 
-## <a name="related-content"></a>関連コンテンツ 
+## <a name="related-content"></a>関連コンテンツ
 
-[組織のパスワード有効期限ポリシー](https://docs.microsoft.com/microsoft-365/admin/manage/set-password-expiration-policy) を設定する (記事 [)](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire) 個々のユーザーのパスワードを期限切れにしない設定 ( [記事)](https://docs.microsoft.com/microsoft-365/admin/add-users/strong-password) ユーザーの強力なパスワード要件をオフにする (記事)
+[組織のパスワード有効期限ポリシーを設定する](/microsoft-365/admin/manage/set-password-expiration-policy) (記事)
+
+[個別のユーザーのパスワードを無期限に設定する](/microsoft-365/admin/add-users/set-password-to-never-expire) (記事)
+
+[ユーザーの強力なパスワード要件をオフにする](/microsoft-365/admin/add-users/strong-password) (記事)

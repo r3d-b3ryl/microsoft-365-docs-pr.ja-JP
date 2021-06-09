@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f5e2919ae3fcbbb443f6d160c68633ee3427ae5a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4f7aca5cb532510d55042c70d04d65f2aa08baa3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187531"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844756"
 ---
 # <a name="configure-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>Microsoft Defender Microsoft Cloud App Securityエンドポイントの構成
 
@@ -40,7 +40,7 @@ Microsoft Defender for Endpoint クラウド アプリ検出シグナルの恩�
 >[!NOTE]
 >この機能は[、Windows 10](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)バージョン 1709 (OS ビルド 16299.1085 および[KB4493441)](https://support.microsoft.com/help/4493441)を実行しているデバイスで Enterprise Mobility + Security の E5 ライセンスで使用できますWindows 10 バージョン 1803 (OS ビルド 17134.704 [KB4493464)](https://support.microsoft.com/help/4493464)、Windows 10 バージョン 1809 (OS ビルド 17763.379 および[KB4489899)](https://support.microsoft.com/help/4489899)以降の Windows 10 バージョン。
 
-> [Microsoft Defender for Endpoint とエンドポイント](https://docs.microsoft.com/cloud-app-security/mde-integration)の詳細Microsoft Cloud App Security統合については、「Microsoft Defender for Endpoint integration with Microsoft Cloud App Security」を参照してください。 
+> [Microsoft Defender for Endpoint とエンドポイント](/cloud-app-security/mde-integration)の詳細Microsoft Cloud App Security統合については、「Microsoft Defender for Endpoint integration with Microsoft Cloud App Security」を参照してください。 
 
 ## <a name="enable-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>エンドポイントMicrosoft Cloud App Security Microsoft Defender でアプリを有効にする
 
@@ -52,10 +52,10 @@ Microsoft Defender for Endpoint クラウド アプリ検出シグナルの恩�
 
 ## <a name="view-the-data-collected"></a>収集されたデータを表示する
 
-Microsoft Cloud Apps Security で Microsoft Defender for Endpoint データを表示およびアクセスするには、「デバイスを調査する」を参照[Cloud App Security。](https://docs.microsoft.com/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security)
+Microsoft Cloud Apps Security で Microsoft Defender for Endpoint データを表示およびアクセスするには、「デバイスを調査する」を参照[Cloud App Security。](/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security)
 
 
-クラウド検出の詳細については、「検出されたアプリを操作 [する」を参照してください](https://docs.microsoft.com/cloud-app-security/discovered-apps)。
+クラウド検出の詳細については、「検出されたアプリを操作 [する」を参照してください](/cloud-app-security/discovered-apps)。
 
 試しに興味がある場合は、「Microsoft Cloud App Security試用版[」をMicrosoft Cloud App Securityしてください](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)。
 

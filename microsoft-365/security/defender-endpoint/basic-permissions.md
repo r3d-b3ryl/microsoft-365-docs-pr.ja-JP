@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb5762d2a9e4b62432aba6dacd1033ddc3c7daf2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163673"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844660"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>基本的なアクセス許可を使用してポータルにアクセスする
 
@@ -54,7 +54,7 @@ ms.locfileid: "51163673"
     > [!NOTE]
     > 管理者特権のコマンド ラインで PowerShell コマンドレットを実行する必要があります。
 
-- ConnectにAzure Active Directory。 詳細については[、「Connect-MsolService」を参照してください](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)。
+- ConnectにAzure Active Directory。 詳細については[、「Connect-MsolService」を参照してください](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)。
 
 **フル アクセス** <br>
 フル アクセスのユーザーは、ログインし、すべてのシステム情報を表示し、アラートを解決し、ファイルを送信して詳細な分析を行い、オンボーディング パッケージをダウンロードできます。
@@ -79,11 +79,11 @@ ms.locfileid: "51163673"
   Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
-詳細については、「グループ メンバーを使用してグループ メンバーを追加または削除する」[を参照Azure Active Directory。](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
+詳細については、「グループ メンバーを使用してグループ メンバーを追加または削除する」[を参照Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>Azure portal を使用してユーザー アクセスを割り当てる
 
-詳細については、「管理者と管理者以外の役割[を](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)ユーザーに割り当てる」を参照Azure Active Directory。
+詳細については、「管理者と管理者以外の役割[を](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)ユーザーに割り当てる」を参照Azure Active Directory。
 
 ## <a name="related-topic"></a>関連トピック
 

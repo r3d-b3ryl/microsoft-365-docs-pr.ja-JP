@@ -1,7 +1,7 @@
 ---
 title: Microsoft Search を使用して Microsoft Viva のトピックを検索する
-ms.author: efrene
-author: efrene
+ms.author: chuckedmonson
+author: chucked
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Microsoft Viva でトピックを検索する方法について説明します。
-ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bce9309d27b76854b927922f39389c18e1c09449
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795996"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844733"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Microsoft Search を使用して Microsoft Viva のトピックを検索する
 
@@ -23,7 +23,7 @@ ms.locfileid: "52795996"
 
 ## <a name="topic-answer"></a>トピックの回答
 
-Microsoft Search で特定のトピック ("Saturn" など) を検索すると、トピックが存在し、見つかった場合は、回答候補形式で結果が表示されます。
+Microsoft Search で特定のトピック ("Saturn" など) を検索すると、トピックが存在し、見つかった場合は、トピックの回答候補形式で結果が表示されます。
 
 トピックの回答が表示されます。
 - トピック名
@@ -56,4 +56,4 @@ Viva Topics では、トピックを手動で編集して、トピックの頭�
  
 ### <a name="search-results-priority"></a>検索結果の優先度 
 
-ユーザーの検索エクスペリエンスでは、ユーザーが "旅行" のような用語を検索すると、ブックマークが使用可能な場合、ブックマークがトピックの前に表示されます。
+ユーザーの検索エクスペリエンスでは、ユーザーが "travel" のような用語を検索すると、ブックマークが使用可能な場合、トピックの代りとしてブックマークが表示されます。

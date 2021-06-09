@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ae8b08ce3d5bcc34e91f031223108fca053348ce
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: aab9c191e590b0717a0f1be62ed88a699d3b5b57
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572395"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844050"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -51,9 +51,9 @@ ms.locfileid: "52572395"
  デバイス ページは、次のビューから検索できます。
 
 - **セキュリティ操作ダッシュボード** - リスク カードのデバイスからデバイス名を選択します。
-- **アラート キュー** - 通知キューからデバイス アイコンの横にあるデバイス名を選択します。
+- **アラート キュー** - アラート キューからデバイス アイコンの横にあるデバイス名を選択します。
 - **[デバイス一** 覧] - デバイスリストからデバイス名の見出しを選択します。
-- **[検索]** ボックス - ドロップダウン メニューから [デバイス] を選択し、デバイス名を入力します。
+- **検索ボックス** - ドロップダウン メニューから [デバイス] を選択し、デバイス名を入力します。
 
 >[!IMPORTANT]
 > - これらの応答アクションは、バージョン 1703 以降Windows 10デバイスでのみ使用できます。 
@@ -61,7 +61,7 @@ ms.locfileid: "52572395"
 
 ## <a name="manage-tags"></a>タグの管理
 
-タグを追加または管理して、論理グループ所属を作成します。 デバイス タグは、ネットワークの適切なマッピングをサポートし、さまざまなタグを添付してコンテキストをキャプチャし、インシデントの一部として動的なリスト作成を有効にできます。
+タグを追加または管理して、論理グループ所属を作成します。 デバイス タグはネットワークの適切なマッピングをサポートし、さまざまなタグを添付してコンテキストをキャプチャし、インシデントの一部として動的リストを作成できるようにします。
 
 デバイスタグ付けの詳細については、「デバイス タグの作成と [管理」を参照してください](machine-tags.md)。
 
@@ -124,7 +124,7 @@ ms.locfileid: "52572395"
 
 >[!IMPORTANT]
 >- このアクションは、バージョン 1709 以降Windows 10デバイスで使用できます。
->- Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
+>- Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 [ウイルス対策スキャンの **実行**] を選択した 1 つは、実行するスキャンの種類 (クイックまたはフル) を選択し、コメントを追加してからスキャンを確認します。
 
@@ -134,7 +134,7 @@ ms.locfileid: "52572395"
 
 >[!NOTE]
 >Defender for Endpoint 応答アクションを使用してスキャンをトリガーする場合、Microsoft Defender ウイルス対策 'ScanAvgCPULoadFactor' の値は引き続き適用され、スキャンの CPU への影響が制限されます。<br> ScanAvgCPULoadFactor が構成されていない場合、既定値はスキャン中の最大 CPU 負荷の 50% の制限です。<br>
->詳細については [、「configure-advanced-scan-types-microsoft-defender-antivirus」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)。
+>詳細については [、「configure-advanced-scan-types-microsoft-defender-antivirus」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)。
 
 ## <a name="restrict-app-execution"></a>アプリの実行を制限する
 
@@ -143,7 +143,7 @@ ms.locfileid: "52572395"
 >[!IMPORTANT]
 > - このアクションは、バージョン 1709 以降Windows 10デバイスで使用できます。
 > - この機能は、組織で使用している機能がMicrosoft Defender ウイルス対策。
-> - このアクションは、アプリケーションコントロールのコード整合性Windows Defenderの形式と署名要件を満たす必要があります。 詳細については、「コード整合性 [ポリシーの形式と署名」を参照してください](https://docs.microsoft.com/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
+> - このアクションは、アプリケーションコントロールのコード整合性Windows Defenderの形式と署名要件を満たす必要があります。 詳細については、「コード整合性 [ポリシーの形式と署名」を参照してください](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
 
 アプリケーションの実行を制限するために、Microsoft 発行の証明書によって署名されている場合にのみファイルを実行できるコード整合性ポリシーが適用されます。 この制限方法は、攻撃者が侵害されたデバイスを制御し、さらに悪意のあるアクティビティを実行するのを防ぐのに役立ちます。
 
@@ -191,7 +191,7 @@ ms.locfileid: "52572395"
 
 Microsoft の脅威の専門家に相談して、潜在的に侵害されたデバイスや既に侵害されたデバイスに関する詳細な分析情報を確認できます。 Microsoft 脅威エキスパート、迅速かつ正確な対応のために、Microsoft Defender セキュリティ センター内から直接関与できます。 専門家は、潜在的に侵害されたデバイスに関するだけでなく、複雑な脅威、取得した標的型攻撃通知、またはアラートに関する詳細が必要な場合、またはポータル ダッシュボードに表示される脅威インテリジェンス コンテキストを理解するためにも洞察を提供します。
 
-詳細 [については、「Microsoft Threat Expert」を](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 参照してください。
+詳細 [については、「Microsoft Threat Expert」を](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 参照してください。
 
 
 ## <a name="check-activity-details-in-action-center"></a>アクション センターでアクティビティの詳細を確認する
@@ -209,4 +209,4 @@ Microsoft の脅威の専門家に相談して、潜在的に侵害されたデ�
 
 ## <a name="related-topic"></a>関連トピック
 - [ファイルの対応措置を講じる](respond-file-alerts.md)
-- [レポートの不正確さ](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
+- [レポートの不正確さ](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

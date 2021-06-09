@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 1b769c1b3e4201802ea6150358568bf57894d305
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b8e15f27ffe4babe730870fb576980c62cb0fd59
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185811"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844037"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>サブスクリプションとポータル アクセスの問題のトラブルシューティング
 
@@ -65,7 +65,7 @@ Microsoft Defender セキュリティ センター にアクセス中にサブ�
 ## <a name="you-are-not-authorized-to-access-the-portal"></a>ポータルへのアクセスが承認されていない
 
 ポータルへのアクセスが承認されていない場合、Microsoft Defender for Endpoint はセキュリティ監視、インシデント調査、応答製品であり、アクセスはユーザーによって制限および制御されます。
-詳細については、「ユーザー アクセスをポータルに [**割り当てる」を参照してください**](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)。
+詳細については、「ユーザー アクセスをポータルに [**割り当てる」を参照してください**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)。
 
 ![ポータルへのアクセスが承認されていないイメージ](images/atp-not-authorized-to-access-portal.png)
 
@@ -74,7 +74,7 @@ Microsoft Defender セキュリティ センター にアクセス中にサブ�
 
 ![現在使用できないデータの画像](images/atp-data-not-available.png)
 
-その下のすべてのサブドメインを許可 `securitycenter.windows.com` する必要があります。 たとえば、「 `*.securitycenter.windows.com` 」のように入力します。
+その下のすべてのサブドメインを許可 `securitycenter.windows.com` する必要があります。 たとえば、`*.securitycenter.windows.com` などです。
 
 
 ## <a name="portal-communication-issues"></a>ポータル通信の問題

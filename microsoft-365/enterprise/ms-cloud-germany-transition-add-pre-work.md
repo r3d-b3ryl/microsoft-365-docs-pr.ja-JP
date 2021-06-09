@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域のOffice 365サービスに移行する場合の事前作業。'
-ms.openlocfilehash: 5eefa56b96eb616c694b26c374b235ccd95c3ee9
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: db4563b4a63dc39ee8171e80fd76ae15b7cd10e9
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796020"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844288"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行前アクティビティ
 
@@ -58,8 +58,8 @@ Office 365ユーザー識別子は移行中に保持されます。 Azure ADサ�
 | 移行後にクライアントの再起動とサインインおよびクライアントへのサインインについてユーザーに通知する準備をします。 | Officeクライアント ライセンスは、移行時に Microsoft Cloud Deutschland から Office 365サービスに移行します。 クライアントは、クライアントからサインインおよびサインインした後、新しい有効なライセンスをOfficeします。 | ユーザーの製品Officeサービスからライセンスを更新するOffice 365があります。 ライセンスが更新されない場合、ライセンスOffice検証エラーが発生する可能性があります。 |
 | サービス URL と[IP アドレスOffice 365ネットワーク接続を確認します](https://aka.ms/o365urls)。 | サービスへのアクセスに使用される顧客によってホストOffice 365サービスは、グローバル Office 365エンドポイントにアクセスできる必要があります。 <br>Office 365 サービスの URL と IP アドレスに記載されている URL と IP アドレスへのアクセスを妨げるファイアウォール ルールが設定されている場合は[、Office 365](https://aka.ms/o365urls) Global サービス エンドポイントへのアクセスを許可するファイアウォール ルールを変更する必要があります。| サービスまたはクライアント ソフトウェアの障害は、フェーズ 4 より前に実行されていない場合に発生する可能性があります。  |
 | 試用版サブスクリプションをキャンセルします。 | 試用版サブスクリプションは移行されません。有料サブスクリプションの移行はブロックされます。 | キャンセル後にユーザーがアクセスした場合、試用版サービスは期限切れであり、機能しません。 |
-| Microsoft Cloud Deutschland とグローバル サービスのライセンス機能Office 365分析します。 | Office 365には、現在の Microsoft Cloud Deutschland では利用できない追加の機能とサービスが含まれます。 サブスクリプションの転送中に、新しい機能をユーザーが利用できます。 | <ul><li> Microsoft Cloud Deutschland およびグローバル サービスのライセンスによって提供されるさまざまなOffice 365分析します。 最初に、Office 365[プラットフォームのサービスの説明を参照してください](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> ユーザーまたはユーザーの変更管理への影響を制限し、必要に応じてユーザー ライセンスの割り当てを変更するために、Office 365 サービスの新機能を最初に無効にすべきかどうかを判断します。 </li><li>ユーザーとヘルプ デスク のスタッフが、新しいサービスとサービスによって提供される機能をOffice 365します。 |
-| 移行中にコンテンツ [が](https://docs.microsoft.com/microsoft-365/compliance/retention) 不注意で削除されるのを回避するために、組織全体の保持ポリシーを作成します。  |<ul><li>移行中にエンド ユーザーによってコンテンツが誤って削除されるのを回避するために、組織全体の保持ポリシーを有効にすることもできます。 </li><li>保持は必要ありませんが、移行中はいつでも保持が期待通り動作する必要があります。保持ポリシーを持つことはバックアップの安全メカニズムです。 同時に、保持ポリシーは、すべての顧客、特に保存過多を懸念しているユーザーが使用する場合があります。</li></ul>| 「アイテム保持ポリシーと保持ラベルについて」の [説明に従ってアイテム保持ポリシーを適用します](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。 サービスまたはクライアント ソフトウェアの障害は、フェーズ 4 / 9 より前に行われない場合に発生する可能性があります。 </li></ul>|
+| Microsoft Cloud Deutschland とグローバル サービスのライセンス機能Office 365分析します。 | Office 365には、現在の Microsoft Cloud Deutschland では利用できない追加の機能とサービスが含まれます。 サブスクリプションの転送中に、新しい機能をユーザーが利用できます。 | <ul><li> Microsoft Cloud Deutschland およびグローバル サービスのライセンスによって提供されるさまざまなOffice 365分析します。 最初に、Office 365[プラットフォームのサービスの説明を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> ユーザーまたはユーザーの変更管理への影響を制限し、必要に応じてユーザー ライセンスの割り当てを変更するために、Office 365 サービスの新機能を最初に無効にすべきかどうかを判断します。 </li><li>ユーザーとヘルプ デスク のスタッフが、新しいサービスとサービスによって提供される機能をOffice 365します。 |
+| 移行中にコンテンツ [が](/microsoft-365/compliance/retention) 不注意で削除されるのを回避するために、組織全体の保持ポリシーを作成します。  |<ul><li>移行中にエンド ユーザーによってコンテンツが誤って削除されるのを回避するために、組織全体の保持ポリシーを有効にすることもできます。 </li><li>保持は必要ありませんが、移行中はいつでも保持が期待通り動作する必要があります。保持ポリシーを持つことはバックアップの安全メカニズムです。 同時に、保持ポリシーは、すべての顧客、特に保存過多を懸念しているユーザーが使用する場合があります。</li></ul>| 「アイテム保持ポリシーと保持ラベルについて」の [説明に従ってアイテム保持ポリシーを適用します](/microsoft-365/compliance/retention-policies)。 サービスまたはクライアント ソフトウェアの障害は、フェーズ 4 / 9 より前に行われない場合に発生する可能性があります。 </li></ul>|
 |||||
 
 ## <a name="dns-entries-for-custom-domains"></a>カスタム ドメインの DNS エントリ
@@ -131,13 +131,15 @@ OCCT は、フェーズ 9 の前Windowsクライアントに展開できます�
 **適用対象:** オンプレミスのサーバーでアクティブExchangeハイブリッド構成Exchange使用しているすべてのお客様<br>
 **適用時**: フェーズ 5 が開始される前の任意の時間
 
-Enterprise Exchange Online とオンプレミス Exchange Server のハイブリッド展開を使用しているお客様は、ハイブリッド構成ウィザード (HCW) と AAD Connect を実行して、ハイブリッドセットアップを維持および確立します。 Exchange Onlineハイブリッド管理者は、**この移行の一環としてハイブリッド構成ウィザード (HCW)** を複数回実行する必要があります。 Microsoft Cloud Deutschland から Office 365 ドイツ地域に移行する場合、管理者は Exchange 移行 (フェーズ 5) を開始する前に、"Office 365 Germany" モードで HCW の最新ビルドを再実行する必要があります。 次に、フェーズ 5 の完了時に "Office 365 Worldwide" モードでもう一度 HCW を実行し、Office 365ドイツ地域の設定でオンプレミス展開を終了します。 HCW の実行はフェーズ 5 の間は実行しない必要があります。フェーズ 5 が終了するまで HCW を実行することが重要です。
-ディレクトリ属性は、Office 365 Azure AD AAD を介してオンプレミス展開と同期Connect。 
+Enterprise Exchange Online とオンプレミス Exchange Server のハイブリッド展開を使用しているお客様は、ハイブリッド構成ウィザード (HCW) と AAD Connect を実行して、ハイブリッドセットアップを維持および確立します。
+Exchange Onlineハイブリッド管理者は、**この移行の一環としてハイブリッド構成ウィザード (HCW)** を複数回実行する必要があります。
+Microsoft Cloud Deutschland から Office 365 ドイツ地域に移行する場合、管理者は Exchange 移行 (フェーズ 5) を開始する前に、"Office 365 Germany" モードで HCW の最新ビルドを再実行する必要があります。 次に、フェーズ 5 の完了時に "Office 365 Worldwide" モードでもう一度 HCW を実行し、Office 365ドイツ地域の設定でオンプレミス展開を終了します。 HCW の実行はフェーズ 5 の間は実行しない必要があります。フェーズ 5 が終了するまで HCW を実行することが重要です。
+ディレクトリ属性は、Office 365 Azure AD AAD を介してオンプレミス展開と同期Connect。
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| ドイツの設定を使用して HCW Office 365実行する <br><br> <i>テナントの移行が開始されたというメッセージ センター通知を受け取った直後に、このOffice 365を開始できます (フェーズ 1)。</i>| フェーズ 5 より前から HCW (17.0.5378.0 以上) をアンインストールおよび再実行すると、Microsoft Cloud Deutschland ユーザーと Office 365 ドイツ地域に移行されたユーザーの両方との間で、オンプレミス構成でメールの送受信を行う準備が完了します。 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) <p><li> HCW で、[自分の組織がホストOffice 365 **下** のリスト ボックスで、[ドイツ] をOffice 365 **します。** | フェーズ 5 [Exchange 移行] が開始する前にこのタスクを完了できなかった場合、オンプレミスの展開と Office 365 の間でメールの NDRs がルーティングされるExchange可能性があります。  
-| 共有メールボックスの設定を保持する | ハイブリッドのお客様の中には、クラウド ユーザー メールボックスを、ユーザー コマンドを使用して 「共有」 Exchange Onlineしています。 このクラウド メールボックス構成はメールボックスとローカル Exchange Online ディレクトリに書き込まれますが、AAD サーバー経由で顧客の Active Directory に同期Connect。 その結果、メールボックス RemoteRecipientType 値と RemoteDisplayType 値の Active Directory 表記と、メールボックスを共有として定義Exchange Onlineの違いがあります。 <br><br> お客様は、すべての共有メールボックスが 、、またはを使用して適切にプロビジョニング `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` されていることを確認する責任があります `Set-RemoteMailbox -Shared` 。  ハイブリッド環境でユーザーのメールボックスを変換する方法については、 [このリファレンスを参照してください](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)。| フェーズ 5 [Exchange Online 移行] より前にこのタスクを完了できなかった場合、共有メールボックスの NDR が発生し、ライセンスのないメールボックスに戻り、影響を受けるメールボックスの共有アクセスが失われる可能性があります。 [Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)ハイブリッド展開でディレクトリ同期を実行した後、共有メールボックスは予期せずユーザー メールボックスに変換され、移行が完了する前にこの問題に対処しない場合のExchange Online概要を示します。  
+| ドイツの設定を使用して HCW Office 365実行する <br><br> <i>テナントの移行が開始されたというメッセージ センター通知を受け取った直後に、このOffice 365を開始できます (フェーズ 1)。</i>| フェーズ 5 より前から HCW (17.0.5378.0 以上) をアンインストールおよび再実行すると、Microsoft Cloud Deutschland ユーザーと Office 365 ドイツ地域に移行されたユーザーの両方との間で、オンプレミス構成でメールの送受信を行う準備が完了します。 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) <p><li> HCW で、[自分の組織がホストOffice 365 **下** のリスト ボックスで、[ドイツ] をOffice 365 **します。** | フェーズ 5 [Exchange 移行] が開始する前にこのタスクを完了できなかった場合、オンプレミスの展開と Office 365 の間でメールの NDRs がルーティングされるExchange可能性があります。
+| 共有メールボックスの設定を保持する | ハイブリッドのお客様の中には、クラウド ユーザー メールボックスを、ユーザー コマンドを使用して 「共有」 Exchange Onlineしています。 このクラウド メールボックス構成はメールボックスとローカル Exchange Online ディレクトリに書き込まれますが、AAD サーバー経由で顧客の Active Directory に同期Connect。 その結果、メールボックス RemoteRecipientType 値と RemoteDisplayType 値の Active Directory 表記と、メールボックスを共有として定義Exchange Onlineの違いがあります。 <br><br> お客様は、すべての共有メールボックスが 、、またはを使用して適切にプロビジョニング `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` されていることを確認する責任があります `Set-RemoteMailbox -Shared` 。  ハイブリッド環境でユーザーのメールボックスを変換する方法については、 [このリファレンスを参照してください](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)。| フェーズ 5 [Exchange Online 移行] より前にこのタスクを完了できなかった場合、共有メールボックスの NDR が発生し、ライセンスのないメールボックスに戻り、影響を受けるメールボックスの共有アクセスが失われる可能性があります。 [Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)ハイブリッド展開でディレクトリ同期を実行した後、共有メールボックスは予期せずユーザー メールボックスに変換され、移行が完了する前にこの問題に対処しない場合のExchange Online概要を示します。
 ||||
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online
@@ -203,7 +205,7 @@ Microsoft Cloud Deutschland インスタンスで Office 365 と Microsoft Azure
 > [!NOTE]
 > Office 365 テナントが移行フェーズ 9 に達する前に、Microsoft Azure サービスの移行が開始されない場合があります。移行フェーズ 10 が開始される前に完了する必要があります。
 
-Office 365 Azure リソース (ネットワーク、コンピューティング、ストレージなど) を使用しているお客様は、リソースの Office 365 サービス インスタンスへの移行を実行します。 この移行は、お客様の責任です。 メッセージ センターの投稿は開始を示します。 移行は、Azure ADサービス環境でOffice 365する必要があります。 Azure 移行については、「Azure 移行プレイブック」、「Azure Germany の移行 [ガイダンスの概要」を参照してください](https://docs.microsoft.com/azure/germany/germany-migration-main)。
+Office 365 Azure リソース (ネットワーク、コンピューティング、ストレージなど) を使用しているお客様は、リソースの Office 365 サービス インスタンスへの移行を実行します。 この移行は、お客様の責任です。 メッセージ センターの投稿は開始を示します。 移行は、Azure ADサービス環境でOffice 365する必要があります。 Azure 移行については、「Azure 移行プレイブック」、「Azure Germany の移行 [ガイダンスの概要」を参照してください](/azure/germany/germany-migration-main)。
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
@@ -215,15 +217,15 @@ Reworked as text:
 
 **Step:** Determine which Azure services are in use and prepare for future migration from Germany to the Office 365 services tenant by working with your partners. Follow the steps described in the [Azure migration playbook](/azure/germany/germany-migration-main).
 
-**Description:** Migration of Azure resources is a customer responsibility and requires manual effort following prescribed steps. Understanding what services are in use in the organization is key to successful migration of Azure services. 
+**Description:** Migration of Azure resources is a customer responsibility and requires manual effort following prescribed steps. Understanding what services are in use in the organization is key to successful migration of Azure services.
 
 Office 365 Germany customers who have Azure subscriptions under the same identity partition (organization) must follow the Microsoft-prescribed order when they can begin subscription and services migration.
 
 **Applies to:** Azure Customers
 
-**Impact:** 
+**Impact:**
 
-- Customers may have multiple Azure subscriptions, each subscription containing infrastructure, services, and platform components. 
+- Customers may have multiple Azure subscriptions, each subscription containing infrastructure, services, and platform components.
 - Administrators should identify subscriptions and stakeholders to ensure prompt migration and validation is possible as part of this migration event.
 
   Failing to successfully complete migration of these subscriptions and Azure components within the prescribed timeline will affect completion of the Office and Azure AD transition to Office 365 services and may result in data loss.

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 25b70f91824db2a6d05db5d3981dd50f4f2b477a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c58d7d4192afd0aa13a5ffb0c7f3204b4eaf0315
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934743"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844408"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>Microsoft Defender for Endpoint の機能を構成および管理する
 
@@ -46,8 +46,8 @@ Defender for Endpoint の機能を構成および管理し、組織に最適な�
 トピック | 説明
 :---|:---
 [ユーザー設定Microsoft Defender セキュリティ センター構成する](preferences-setup.md) | 一般的な設定、高度な機能などのポータル関連の設定を構成するか、プレビュー エクスペリエンスを有効にします。
-[攻撃表面の縮小機能を構成する](configure-attack-surface-reduction.md) | 攻撃表面の縮小機能を構成し、設定が適切に適用され、悪用の軽減方法が設定されていることを確認します。
-[次世代の保護を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | 次世代の保護を構成して、すべての種類の新しい脅威をキャッチします。
+[攻撃面の減少機能を構成する](configure-attack-surface-reduction.md) | 攻撃表面の縮小機能を構成し、設定が適切に適用され、悪用の軽減方法が設定されていることを確認します。
+[次世代の保護を構成する](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | 次世代の保護を構成して、すべての種類の新しい脅威をキャッチします。
 [機能Microsoft 脅威エキスパート構成する](configure-microsoft-threat-experts.md) | セキュリティ脅威インテリジェンスを構成および管理するには、Microsoft 脅威エキスパート。
-[Defender 統合Microsoft 365構成する](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Defender for Endpoint と統合する他のソリューションを構成します。
-[管理と API のサポート](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | セキュリティ情報とイベント管理 (SIEM) にアラートをプルするか、API を使用してカスタム アラートを作成します。 レポートを作成Power BI作成します。
+[Defender 統合Microsoft 365構成する](/microsoft-365/security/defender-endpoint/threat-protection-integration) | Defender for Endpoint と統合する他のソリューションを構成します。
+[管理と API のサポート](/microsoft-365/security/defender-endpoint/management-apis) | セキュリティ情報とイベント管理 (SIEM) にアラートをプルするか、API を使用してカスタム アラートを作成します。 レポートを作成Power BI作成します。

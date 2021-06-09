@@ -15,12 +15,12 @@ ms.custom:
 description: この記事では、EOP (EOP) 管理者が使用できるレポートとトラブルシューティング Microsoft Exchange Onlineについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae55ded9d907754161813c9f7bfa7eeb14c558a8
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625031"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841440"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP でのレポートとメッセージの追跡
 
@@ -46,11 +46,8 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 詳細については、以下のリソースを参照してください。
 
 - [管理センターでの Microsoft 365 レポート - Microsoft 365 グループ](../../admin/activity-reports/office-365-groups.md)
-
 - [Microsoft 365管理センターのレポート - メール アクティビティ](../../admin/activity-reports/email-activity.md)
-
 - [Microsoft 365管理センターのレポート - メール アプリの使用状況](../../admin/activity-reports/email-apps-usage.md)
-
 - [Microsoft 365管理センターのレポート - メールボックスの使用状況](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>セキュリティ &管理センターのコンプライアンス Microsoft 365レポート

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: d4b0751938b66cc22dd59e2e7035077c5ef59ff9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: e52471e1b3e9ee3a410de493b536f9d360d60624
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274822"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844444"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 
@@ -72,9 +72,9 @@ ms.locfileid: "52274822"
 
 評決に達すると、自動調査によって 1 つ以上の修復アクションが発生する可能性があります。 修復アクションの例としては、検疫にファイルを送信する、サービスを停止する、スケジュールされたタスクを削除する、などです。 詳細については、「修復アクション [」を参照してください](manage-auto-investigation.md#remediation-actions)。  
 
-組織のオートメーション [セット](automation-levels.md) のレベルや他のセキュリティ設定に応じて、修復アクションは自動的に行われるか、セキュリティ運用チームの承認を得た場合にのみ実行されます。 自動修復に影響を与える可能性のある追加のセキュリティ設定には、望ましくない可能性のあるアプリケーション (PUA) [からの](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) 保護が含まれます。 
+組織のオートメーション [セット](automation-levels.md) のレベルや他のセキュリティ設定に応じて、修復アクションは自動的に行われるか、セキュリティ運用チームの承認を得た場合にのみ実行されます。 自動修復に影響を与える可能性のある追加のセキュリティ設定には、望ましくない可能性のあるアプリケーション (PUA) [からの](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) 保護が含まれます。 
 
-保留中か完了かの修復アクションはすべて、アクション センターで [追跡されます](auto-investigation-action-center.md)。 必要に応じて、セキュリティ運用チームは修復アクションを元に戻すことができます。 詳細については、「自動調査後 [の修復アクションの確認と承認」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
+保留中か完了かの修復アクションはすべて、アクション センターで [追跡されます](auto-investigation-action-center.md)。 必要に応じて、セキュリティ運用チームは修復アクションを元に戻すことができます。 詳細については、「自動調査後 [の修復アクションの確認と承認」を参照してください](/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 
 > [!TIP]
 > セキュリティ センターの新しい統合調査ページMicrosoft 365確認してください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
@@ -88,7 +88,7 @@ ms.locfileid: "52274822"
 - Windows Server 2019
 - Windows 10バージョン 1709 (OS ビルド 16299.1085[および KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)以降
 - Windows 10バージョン 1803 (OS ビルド 17134.704[および KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)以降
-- Windows 10バージョン[1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019)以降
+- Windows 10バージョン[1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019)以降
 
 ## <a name="next-steps"></a>次の手順
 
@@ -98,6 +98,6 @@ ms.locfileid: "52274822"
 
 ## <a name="see-also"></a>関連項目
 
-- [PUA 保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Microsoft Defender での自動調査と対応が可能Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-- [Defender での自動調査Microsoft 365対応](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [PUA 保護](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
+- [Microsoft Defender での自動調査と対応が可能Office 365](/microsoft-365/security/office-365-security/office-365-air)
+- [Defender での自動調査Microsoft 365対応](/microsoft-365/security/defender/mtp-autoir)

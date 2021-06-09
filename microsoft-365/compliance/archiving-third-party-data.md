@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータを、ユーザーのメールボックスにインポートするMicrosoft 365します。
-ms.openlocfilehash: 22a2e6dbadc3c259896348fc89754882db85cfb4
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 17172daa60721523bbfb97ab81f7a57078eb1b1c
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764112"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822155"
 ---
 # <a name="archive-third-party-data"></a>サード パーティのデータをアーカイブする
 
@@ -86,7 +86,7 @@ Microsoft 365を使用すると、管理者はデータ コネクタを使用し
 ||||||||
 
 > [!NOTE]
-> <sup>1</sup> TeleMessage によって提供されるデータ コネクタ。 データをアーカイブする前Microsoft 365、組織のアーカイブ サービスをセットアップするには、TeleMessage を使用する必要があります。 詳細については、このデータ型の手順の「前提条件」セクションを参照してください。<br/><br/><sup>2</sup> Veritas が提供するデータ コネクタ。 データをアーカイブする前に、Microsoft 365 Veritas を使用して組織のアーカイブ サービスをセットアップする必要があります。 詳細については、このデータ型の手順の「前提条件」セクションを参照してください。
+> <sup>1</sup> TeleMessage によって提供されるデータ コネクタ。 データをアーカイブする前Microsoft 365、組織のアーカイブ サービスをセットアップするには、TeleMessage を使用する必要があります。 詳細については、このデータ型の手順の「前提条件」セクションを参照してください。 TeleMessage データ コネクタは、米国政府機関クラウドGCC環境でもMicrosoft 365利用できます。 詳細については、この記事の「 [米国政府機関クラウドの](#data-connectors-in-the-us-government-cloud) データ コネクタ」セクションを参照してください。 <br/><br/><sup>2</sup> Veritas が提供するデータ コネクタ。 データをアーカイブする前に、Microsoft 365 Veritas を使用して組織のアーカイブ サービスをセットアップする必要があります。 詳細については、このデータ型の手順の「前提条件」セクションを参照してください。
 
 前の表にリストされているサード パーティのデータ (HR データと物理的な不良データを除く) は、ユーザー メールボックスにインポートされます。 サード パーティのデータをサポートする対応するコンプライアンス ソリューションは、データが格納されているユーザー メールボックスに適用されます。
 
@@ -125,6 +125,22 @@ Microsoft 365を使用すると、管理者はデータ コネクタを使用し
 ### <a name="insider-risk-management"></a>インサイダー リスクの管理
 
 選択的な人事データなど、サード パーティのデータからのシグナルを Insider リスク[](insider-risk-management.md)管理ソリューションで使用すると、組織内のリスクの高いアクティビティを検出、調査、および操作することで内部リスクを最小限に抑える可能性があります。 たとえば、人事データ コネクタによってインポートされたデータは、従業員のデータ盗難を検出するリスクインジケーターとして使用されます。
+
+## <a name="data-connectors-in-the-us-government-cloud"></a>米国政府機関クラウドのデータ コネクタ
+
+前述したように、TeleMessage によって提供されるデータ コネクタは、米国政府機関のクラウドで利用できます。 次の表は、各 TeleMessage データ コネクタをサポートする特定の政府機関環境を示しています。 米国政府機関のクラウドの詳細については、「米国政府機関Microsoft 365[を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy)。
+
+|TeleMessage データ コネクタ  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|Android Archiver | はい | いいえ | いいえ |
+|AT&T 携帯ショートメール/MMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|Bell 携帯ショートメール/MMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|EnterpriseNumber Archiver | はい | いいえ | いいえ |
+|O2 携帯ショートメールおよび音声ネットワーク アーカイブ | はい         | いいえ | いいえ |
+|TELUS 携帯ショートメール ネットワーク アーカイブ | はい | いいえ | いいえ |
+|Verizon 携帯ショートメール/MMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|WhatsApp Archiver | はい | いいえ | いいえ |
+|||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする
 

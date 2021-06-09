@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順Office 365説明します。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809121"
+ms.locfileid: "52822240"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、解決する
 
@@ -226,7 +226,7 @@ SPO の場所を開き、このファイルが実際に開いていないか確�
 
 1. 別のクライアント/コンピューターを使用してダウンロードしてみてください。
 
-2. [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch] コマンドレットを使用して、不要になった古い検索を削除します。
+2. [Remove-ComplianceSearch](/powershell/module/exchange/remove-compliancesearch)コマンドレットを使用して不要になった古い検索を削除します。
 
 3. 必ずローカル ドライブにダウンロードしてください。
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e653ff84602a5e5546ef9a4c0aca2559b77e43c1
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 7c1f768e69fa65c76529e641f095e13fc7ad67c8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683513"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841342"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージド デスクトップのテクノロジ
 
@@ -52,8 +52,8 @@ Microsoft 365データ損失防止 | 機密と判断したMicrosoft 365に対し
  |
  --- | ---
 BitLockerドライブの暗号化 | BitLockerドライブの暗号化は、すべてのシステム ドライブを暗号化するために使用されます。 詳細については、「ドライブ暗号化[のBitLockerを参照してください](/windows/security/information-protection/bitlocker/bitlocker-overview)。
-Windows DefenderSystem Guard | 起動時にシステムの整合性を保護し、システムの整合性が本当に維持されたと検証します。 詳細については、「System [Guard のWindows Defenderを参照してください]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
-Windows Defender Credential Guard | Windows Defender Credential Guard仮想化ベースのセキュリティを使用してシークレットを分離し、特権を持つシステム ソフトウェアだけがアクセスできます。 詳細については、「System [Guard のWindows Defenderを参照してください]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
+Windows DefenderSystem Guard | 起動時にシステムの整合性を保護し、システムの整合性が本当に維持されたと検証します。 詳細については、「System [Guard のWindows Defenderを参照してください](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
+Windows Defender Credential Guard | Windows Defender Credential Guard仮想化ベースのセキュリティを使用してシークレットを分離し、特権を持つシステム ソフトウェアだけがアクセスできます。 詳細については、「System [Guard のWindows Defenderを参照してください](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
 エンドポイント向け Microsoft Defender - エンドポイントの検出と応答 | Microsoft マネージド デスクトップセキュリティ操作は、アラートに応答し、エンドポイント検出と応答を使用して脅威を修復するアクションを実行します。 詳細については [、「Microsoft Defender for Endpoint - Endpoint Detection and Response 」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)。
 Microsoft Defender for Endpoint - Threat Experts | Microsoft マネージド デスクトップ攻撃通知を通じて脅威エキスパートの分析情報やデータと統合できます。 このサービスを有効にする前に、追加の同意を提供する必要があります。 詳細については [、「Microsoft Defender for Endpoint - Threat Experts」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)。
 エンドポイント向け Microsoft Defender - 脅威と脆弱性の管理 | サービス プランの将来の使用Microsoft マネージド デスクトップ必要です。 詳細については [、「Microsoft Defender for Endpoint - Threat and Vulnerability Management」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)。
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint - Threat Experts | Microsoft マネージド デ
 Microsoft Defender for Endpoint - Exploit Protection | エクスプロイトを使用してデバイスに感染し、オペレーティング システム プロセスとアプリの両方に悪用の軽減手法を自動的に適用することで、マルウェアから保護します。 詳細については [、「Microsoft Defender for Endpoint - Exploit Protection」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)。
 Microsoft Defender for Endpoint - ネットワーク保護 | ネットワーク保護は、低Microsoft Defender SmartScreenに接続しようとするすべての送信 HTTP および HTTPS トラフィックをブロックするように、ネットワーク保護の範囲を拡張します。 詳細については [、「Microsoft Defender for Endpoint - Network Protection」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/network-protection)。
 Microsoft Defender タンパープロテクション | Windowsタンパープロテクションは、ウイルス対策保護などのセキュリティ設定が変更されるのを防ぐために使用されます。 詳細については [、「Microsoft Defender タンパー プロテクション」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection)。
-Microsoft Defender ウイルス対策動作ベース、ヒューリスティック、リアルタイムのウイルス対策保護 | 常にファイルをスキャンし、マルウェアとして検出されない可能性のある脅威を処理します。 詳細については、「Microsoft Defender ウイルス対策、ヒューリスティック、リアルタイムのウイルス対策保護」[を参照してください]( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。
+Microsoft Defender ウイルス対策動作ベース、ヒューリスティック、リアルタイムのウイルス対策保護 | 常にファイルをスキャンし、マルウェアとして検出されない可能性のある脅威を処理します。 詳細については、「Microsoft Defender ウイルス対策、ヒューリスティック、リアルタイムのウイルス対策保護」[を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。
 Microsoft Defender ウイルス対策クラウド配信の保護 | 新しい脅威や新しい脅威に対する動的なほぼ瞬時の自動保護を提供します。 詳細については、「クラウド配信[Microsoft Defender ウイルス対策」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)。
 Microsoft Defender "一目でブロックする" | 疑わしいファイルまたは不明なファイルを検出Windows新しいマルウェアの検出とブロックを提供します。 詳細については [、「Microsoft Defender Block at first sight」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)。
 Microsoft Defender AV 潜在的に望ましくないアプリケーション | 望ましくない可能性のあるアプリケーションは、コンピューターの動作が遅くなる、予期しない広告を表示する、または最悪の場合は予期しない、または望ましくない可能性のある他のソフトウェアをインストールするアプリをブロックするために使用されます。 詳細については、「Microsoft Defender AV 潜在的に望ましくない [アプリケーション」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)。

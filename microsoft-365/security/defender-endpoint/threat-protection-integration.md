@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ce8dbef2f4fb7c3503f04f15148d2071b449b2dc
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 8973a78787345532055161507e2d30f75b3b2cf1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935535"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844972"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>エンドポイント向け Microsoft Defender および他の Microsoft ソリューション
 
@@ -57,7 +57,7 @@ Microsoft Cloud App Securityは、Microsoft Defender for Endpoint エンドポ�
 疑わしいアクティビティは、ユーザー コンテキストで実行されているプロセスです。 Microsoft Defender for Endpoint と Microsoft Defender for Identity の統合により、アクティビティと ID 全体でサイバーセキュリティ調査を柔軟に実施できます。
 
 ### <a name="microsoft-defender-for-office"></a>Microsoft Defender for Office
-[Defender for Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)は、セーフ リンク、セーフ 添付ファイル、高度なフィッシング対策、スプーフィング インテリジェンス機能を通じて、電子メール メッセージまたはファイル内のマルウェアから組織を保護するのに役立ちます。 Microsoft Defender for Office 365 と Microsoft Defender for Endpoint の統合により、セキュリティ アナリストは攻撃のエントリ ポイントを調査するために上流に移動できます。 脅威インテリジェンスの共有を通じて、攻撃を封じ込め、ブロックすることができます。 
+[Defender for Office 365](/office365/securitycompliance/office-365-atp)は、セーフ リンク、セーフ 添付ファイル、高度なフィッシング対策、スプーフィング インテリジェンス機能を通じて、電子メール メッセージまたはファイル内のマルウェアから組織を保護するのに役立ちます。 Microsoft Defender for Office 365 と Microsoft Defender for Endpoint の統合により、セキュリティ アナリストは攻撃のエントリ ポイントを調査するために上流に移動できます。 脅威インテリジェンスの共有を通じて、攻撃を封じ込め、ブロックすることができます。 
 
 >[!NOTE]
 > 過去 30 日以内Office 365データの Defender が表示されます。 アラートの場合、最初のOffice 365に基づいて、データの Defender が表示されます。 その後、データは Defender で使用できなくなりました。Office 365。
@@ -68,11 +68,11 @@ Microsoft Cloud App Securityは、Microsoft Defender for Endpoint エンドポ�
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 Microsoft 365 Defender を使用すると、Microsoft Defender for Endpoint とさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応します。 
  
-[Defender の詳細Microsoft 365する](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+[Defender の詳細Microsoft 365する](/microsoft-365/security/defender/microsoft-threat-protection)
 
 
 ## <a name="related-topics"></a>関連項目
 - [統合などの高度な機能を構成する](advanced-features.md)
-- [Microsoft 365Defender の概要](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
-- [Microsoft 365 Defender を有効にする](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
+- [Microsoft 365Defender の概要](/microsoft-365/security/defender/microsoft-threat-protection)
+- [Microsoft 365 Defender を有効にする](/microsoft-365/security/defender/mtp-enable)
 - [条件付きアクセスを使用してユーザー、データ、デバイスを保護する](conditional-access.md)

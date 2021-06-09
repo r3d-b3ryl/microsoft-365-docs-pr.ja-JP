@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 462fa6177ee35d5d988efa985422b499e2339ff4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 264ebbe0ceb6d6b83c006dbd1dd071a78ae219c3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935319"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841356"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android の機能でエンドポイント用 Defender を構成する
 
@@ -35,7 +35,7 @@ ms.locfileid: "51935319"
 ## <a name="conditional-access-with-defender-for-endpoint-on-android"></a>Android 上のエンドポイント用 Defender を使用した条件付きアクセス  
 Android 上のエンドポイント用 Microsoft Defender と Microsoft Intune および Azure Active Directory を使用すると、デバイスのリスク レベルに基づいてデバイスコンプライアンスと条件付きアクセス ポリシーを適用できます。 Defender for Endpoint は、Intune を介してこの機能を活用するために展開できるモバイル脅威防御 (MTD) ソリューションです。
 
-Android および条件付きアクセスで Defender for Endpoint をセットアップする方法の詳細については [、「Defender for Endpoint and Intune」を参照してください](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)。
+Android および条件付きアクセスで Defender for Endpoint をセットアップする方法の詳細については [、「Defender for Endpoint and Intune」を参照してください](/mem/intune/protect/advanced-threat-protection)。
 
 ## <a name="configure-custom-indicators"></a>カスタム インジケーターの構成  
 
@@ -48,7 +48,7 @@ Defender for Endpoint on Android を使用すると、管理者は Android デ�
 Defender for Endpoint on Android では、IT 管理者は Web 保護機能を構成できます。 この機能は、管理センター Microsoft エンドポイント マネージャー使用できます。
 
 > [!NOTE]
-> Android 上のエンドポイントの Defender は、Web Protection 機能を提供するために VPN を使用します。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。 詳細については、「Android を実行 [するデバイスで Web 保護を構成する」を参照してください](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android)。
+> Android 上のエンドポイントの Defender は、Web Protection 機能を提供するために VPN を使用します。 これは通常の VPN ではなく、デバイス外のトラフィックを受け取らないローカル/自己ループ VPN です。 詳細については、「Android を実行 [するデバイスで Web 保護を構成する」を参照してください](/mem/intune/protect/advanced-threat-protection-manage-android)。
 
 ## <a name="related-topics"></a>関連項目
 - [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
