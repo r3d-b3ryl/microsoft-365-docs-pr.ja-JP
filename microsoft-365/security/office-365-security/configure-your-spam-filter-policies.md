@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b830c165d91dfdc8c5c6c47abecd73ba7a9621c8
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: a272e78e05f86a8f9f918c873e9fb1a85f863bfc
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788465"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793102"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -234,7 +234,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
       **[許可 & ブロック リスト]** ページに戻り、続行する場合は **[次へ]** をクリックします。
 
-8. 表示された **[レビュー]** ページで、設定を確認します。 各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。
+8. 表示された **[レビュー]** ページで、設定を確認します。 各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 または、**[戻る]** をクリックするか、ウィザードで特定のページを選択します。
 
    完了したら、**[作成]** をクリックします。
 
