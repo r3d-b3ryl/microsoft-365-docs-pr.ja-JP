@@ -14,18 +14,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3098c2786874650ad14d226beacd5ec760decef0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3db1517d87a47aae254d36cfb28f6c057830ef3e
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934935"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840996"
 ---
 # <a name="threat-protection"></a>脅威保護
-[Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) は、予防的な保護、侵害後の検出、自動調査、対応のための統一されたプラットフォームです。 Defender for Endpoint は、エンドポイントをサイバー脅威から保護し、高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化し、セキュリティの態勢を改善します。
+[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) は、予防的な保護、侵害後の検出、自動調査、対応のための統一されたプラットフォームです。 Defender for Endpoint は、エンドポイントをサイバー脅威から保護し、高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化し、セキュリティの態勢を改善します。
 
 > [!TIP]
-> ユーザーがクラウド サービスとオンプレミス アプリケーションに簡単にアクセスし、すべてのデバイスで最新の管理機能を有効にできます。 詳細については、「リモートワークフォース [のセキュリティ保護」を参照してください](https://docs.microsoft.com/enterprise-mobility-security/remote-work/)。 
+> ユーザーがクラウド サービスとオンプレミス アプリケーションに簡単にアクセスし、すべてのデバイスで最新の管理機能を有効にできます。 詳細については、「リモートワークフォース [のセキュリティ保護」を参照してください](/enterprise-mobility-security/remote-work/)。 
 
 <center><h2>エンドポイント用 Microsoft Defender</center></h2>
 <table>
@@ -67,24 +67,24 @@ ms.locfileid: "51934935"
 攻撃表面の縮小機能のセットは、スタック内の防御の最初の行を提供します。 構成設定が適切に設定され、悪用の軽減手法が適用されていることを確認することで、これらの一連の機能は攻撃と悪用に抵抗します。
 
 - [ハードウェア ベースの分離](overview-hardware-based-isolation.md)
-- [アプリケーション制御](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
-- [デバイス コントロール](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
+- [アプリケーション制御](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+- [デバイス コントロール](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [エクスプロイト保護](exploit-protection.md)
 - [ネットワーク保護](network-protection.md) [、Web 保護](web-protection-overview.md)
 - [制御されたフォルダー アクセス](controlled-folders.md)
-- [ネットワーク ファイアウォール](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [ネットワーク ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [攻撃面の減少ルール](attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
-**[次世代の保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[次世代の保護](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 Microsoft Defender for Endpoint は、ネットワークのセキュリティ境界をさらに強化するために、すべての種類の新しい脅威をキャッチするように設計された次世代の保護を使用します。
 
-- [動作の監視](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
-- [クラウドベースの保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
-- [機械学習](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [URL 保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
-- [自動サンドボックス サービス](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [動作の監視](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+- [クラウドベースの保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
+- [機械学習](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [URL 保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+- [自動サンドボックス サービス](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
 
@@ -93,7 +93,7 @@ Microsoft Defender for Endpoint は、ネットワークのセキュリティ境
 
 - [Alerts](alerts-queue.md)
 - [エンドポイント データの履歴](investigate-machines.md#timeline)
-- [応答オーケストレーション](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
+- [応答オーケストレーション](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
 - [Forensic コレクション](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - [脅威インテリジェンス](threat-indicator-concepts.md)
 - [高度なデトレーションと分析サービス](respond-file-alerts.md#deep-analysis)
@@ -102,10 +102,10 @@ Microsoft Defender for Endpoint は、ネットワークのセキュリティ境
 
 <a name="ai"></a>
 
-**[調査と修復の自動化](automated-investigations.md)**<br>
+**[自動調査と修復](automated-investigations.md)**<br>
 高度な攻撃への迅速な対応に加えて、Microsoft Defender for Endpoint は自動調査と修復機能を提供し、アラートの量を数分で削減できます。
 
-- [調査と修復の自動化](automated-investigations.md)
+- [自動調査と修復](automated-investigations.md)
 - [自動調査の詳細と結果を表示する](auto-investigation-action-center.md)
 - [修復アクションを表示および承認する](manage-auto-investigation.md)
 
@@ -139,5 +139,5 @@ Microsoft Defender for Endpoint を既存のワークフローに統合します
 - Microsoft Cloud App Security
 
 <a name="mtp"></a>
-**[Microsoft 365Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
  Microsoft 365 Defender を使用すると、Microsoft Defender for Endpoint とさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応します。

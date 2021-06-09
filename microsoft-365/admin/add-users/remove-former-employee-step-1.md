@@ -24,20 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 description: 元従業員のログインをブロックし、サービスへのアクセスMicrosoft 365します。
-ms.openlocfilehash: 84852e9bccb1d4370db07492baf7ccaed7f6db3d
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: cdba6dcaf239e94cf33f3bf88e7f217b4793bfd6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698906"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840852"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>手順 1 - 元従業員のログインを防止し、サービスへのアクセスMicrosoft 365する
 
 ユーザーのサインイン アクセスを直ちに防止する必要がある場合は、パスワードをリセットする必要があります。 この手順では、ユーザーから強制的にサインアウトMicrosoft 365。
 
 > [!NOTE]
-> 他の管理者のサインアウトを開始するには、グローバル管理者である必要があります。 管理者以外のユーザーの場合は、ユーザー管理者またはヘルプデスク管理者ユーザーを使用してこのアクションを実行できます。
-> 管理者の役割について詳しくは、 <a href="https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles">管理者の役割に関するページを参照してください。</a>
+> 他の管理者のサインアウトを開始するには、グローバル管理者である必要があります。 管理者以外のユーザーの場合は、ユーザー管理者またはヘルプデスク管理者ユーザーを使用してこのアクションを実行できます。 [管理者ロールの詳細](about-admin-roles.md)
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 2. ユーザーの名前の横にあるボックスを選択し、[パスワードのリセット] **を選択します**。

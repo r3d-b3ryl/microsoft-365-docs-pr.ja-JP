@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 84273ce3e060eb86ee246a5cc6a8cae3cba743b5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eab23ddeb9011e80cf2835b8d38b2d3fad4b7089
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934491"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843508"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager を使用したオンボーディング
 
@@ -106,7 +106,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
     ![ウィザードのMicrosoft Endpoint Configuration Manager 8](images/configmgr-membership-rules.png)
 
-9. **[次へ]** を選択します。
+9. [**次へ**] を選択します。
 
     ![ウィザードのMicrosoft Endpoint Configuration Manager 9](images/configmgr-confirm.png)
 
@@ -234,9 +234,9 @@ Windows Defender ウイルス対策は、デスクトップ、ポータブル �
     特定の業界または一部の企業のお客様は、ウイルス対策の構成方法に関する特定のニーズを持っている場合があります。
 
   
-    [クイック スキャンとフル スキャン、およびカスタム スキャン](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
+    [クイック スキャンとフル スキャン、およびカスタム スキャン](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    詳細については、「Windows セキュリティ[構成フレームワーク」を参照してください。](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
+    詳細については、「Windows セキュリティ[構成フレームワーク」を参照してください。](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   
     ![次世代保護ウィンドウ 2 のイメージ](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
@@ -324,7 +324,7 @@ ASR ルールがエンドポイントに正しく適用されているかどう�
 
     ![攻撃表面の縮小ルールレポートのスクリーンショット 2](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
-詳細 [については、「オプティマイズ ASR ルールの展開と検出」](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   を参照してください。  
+詳細 [については、「オプティマイズ ASR ルールの展開と検出」](/microsoft-365/security/defender-endpoint/configure-machines-asr)   を参照してください。  
 
 
 #### <a name="set-network-protection-rules-in-audit-mode"></a>監査モードでネットワーク保護ルールを設定します。

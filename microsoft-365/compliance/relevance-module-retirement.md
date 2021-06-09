@@ -11,14 +11,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 description: 2021 年 3 月 10 日Advanced eDiscoveryの関連性モジュールは廃止されます。 この記事では、関連性が廃止される前の操作について説明します。 具体的には、バッチ計算を実行して未完成のモデルを終了し、モデルからメタデータを保持できます。
-ms.openlocfilehash: 22a7fc37a62dc665d4d798525d5e1e55250d0cb1
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.openlocfilehash: 0719c2cb1b6b0d867ffc045fe02d57e1e2f32a61
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122536"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821999"
 ---
 # <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>[関連] モジュールを使用Advanced eDiscovery
 

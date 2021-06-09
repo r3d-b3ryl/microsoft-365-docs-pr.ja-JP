@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: 49d64a40a39a6f8b1f8ea585b2915c26bd1115c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c2195eb9e3af3c591ff59d0b0f87583455b9b119
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114238"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843652"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 
@@ -41,7 +41,7 @@ ms.locfileid: "52114238"
 
 この問題は何年も前から増加し続け、多くのお客様がネットワーク トラフィック パターンの大幅な変化を報告しています。 オンプレミスに滞在するために使用されたトラフィックは、外部クラウド エンドポイントに接続されます。 Microsoft ユーザーの多くから、以前はネットワーク トラフィックの約 80 ％は内部ソース (上記の図の点線で示した部分) に送られるものだったという報告があります。 2020 年には、主要な作業領域をクラウドに移行したことにより、その割合は約 20 ％以下になりました。この傾向は他の企業でも珍しいことではありません。 クラウドへの移行の旅を進めていくほど、上記のモデルはますます扱いにくく、持続不可能になり、組織がすばやくクラウド ファーストの世界へ足を踏み入れることを妨げます。
 
-世界的な COVID-19 禍により、この問題に対する即時の対応が必要とされています。 IT 企業には、社員の安全を確保するため、大規模な在宅勤務の生産性を援助しなければいけないというこれまでにない要求が生じています。 Microsoft Office 365 は、お客様が需要を満たすのに役立ちますが、自宅で作業するユーザーの同時実行性が高い場合は、Office 365 トラフィックが大量に生成され、強制トンネル VPN とオンプレミス ネットワーク境界を経由してルーティングされると、急速な飽和状態が発生し、VPN インフラストラクチャが容量を使い果たします。 この新しい現実では、VPN を使用して Office 365 にアクセスするのはパフォーマンスの障害ではなく、Office 365 に影響を与えるだけでなく、VPN を使用して運用する必要がある重要なビジネス操作に影響を与えるハードウォールです。
+世界的な COVID-19 禍により、この問題に対する即時の対応が必要とされています。 IT 企業には、社員の安全を確保するため、大規模な在宅勤務の生産性を援助しなければいけないというこれまでにない要求が生じています。 Microsoft Office 365は、お客様が需要を満たすのに役立つ十分な位置にありますが、自宅で作業するユーザーの同時実行性が高い場合、大量の Office 365 トラフィックが生成され、強制トンネル VPN とオンプレミス ネットワーク境界を経由してルーティングされると、急速な飽和状態が発生し、VPN インフラストラクチャが容量を使い果たします。 この新しい現実では、VPN を使用して Office 365 にアクセスするのはパフォーマンスの障害ではなく、Office 365 に影響を与えるだけでなく、運用するために VPN に依存する必要がある重要なビジネス操作に影響を与えるハードウォールです。
 
 Microsoft は、お客様や幅広い業界と長年にわたって緊密に連携し、これらの問題に対して、当社のサービス内から効果的かつ最新のソリューションを提供し、より最適な業務の実現をサポートしています。 Office 365 サービスの「[接続の原則](./microsoft-365-network-connectivity-principles.md)」は、組織がセキュリティを維持し、接続を制御できるようにしつつ、リモート ユーザーに対して効率的に機能するように設計されています。 これらのソリューションは、限られた作業でも迅速に実装することができますが、上記の問題に大きなプラスの影響を与えます。
 
@@ -61,19 +61,19 @@ Microsoft は、お客様や幅広い業界と長年にわたって緊密に連�
 
 ### <a name="1-vpn-forced-tunnel"></a>1. VPN 強制トンネリング
 
-これは、ほとんどの企業ユーザーにとっては最も一般的なスタート地点になります。 強制 VPN が使用されます。つまり、エンドポイントが企業ネットワーク内に存在するか存在しないかにかかわらず、トラフィックの 100% が企業ネットワークに送信されます。 Office 365 やインターネット ブラウズなどの外部 (インターネット) にバインドされたトラフィックは、プロキシなどのオンプレミスのセキュリティ機器からヘア ピン留めされます。 したがって、リモートで作業しているユーザーの 100% 近い現在の環境では、このモデルは VPN インフラストラクチャに大きな負荷を与え、すべての企業トラフィックのパフォーマンスを大幅に低下させる可能性が高く、企業が危機の時に効率的に運用する可能性があります。
+これは、ほとんどの企業ユーザーにとっては最も一般的なスタート地点になります。 強制 VPN が使用されます。つまり、エンドポイントが企業ネットワーク内に存在するか存在しないかにかかわらず、トラフィックの 100% が企業ネットワークに送信されます。 外部 (インターネット) にバインドされたトラフィック (Office 365インターネットブラウズなど) は、プロキシなどのオンプレミスのセキュリティ機器からヘア ピン留めされます。 したがって、リモートで作業しているユーザーの 100% 近い現在の環境では、このモデルは VPN インフラストラクチャに大きな負荷を与え、すべての企業トラフィックのパフォーマンスを大幅に低下させる可能性が高く、企業が危機の時に効率的に運用する可能性があります。
 
 ![VPN の強制トンネルモデル 1](../media/vpn-split-tunneling/vpn-model-1.png)
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. 少数の認可された例外を含む VPN 強制トンネル
 
-このモデルは、VPN トンネルをバイパスし、この例の Office 365 サービスに直接移動するために非常に高い負荷と待機時間に敏感な、いくつかの制御および定義されたエンドポイントを可能にし、企業が運用する方が大幅に効率的です。 これにより、オフロードされたサービスのパフォーマンスが大幅に向上し、VPN インフラストラクチャへの負荷も軽減され、リソースに対するより低いコンテンツで動作する必要がある要素も可能になります。 この記事では、単純で定義されたアクションを多数の肯定的な結果で迅速に実行できるので、移行の支援に集中しています。
+このモデルは、VPN トンネルをバイパスし、この例の Office 365 サービスに直接移動するために非常に高い負荷と待機時間に敏感ないくつかの制御された定義されたエンドポイントを可能にし、企業が運用する方が大幅に効率的です。 これにより、オフロードされたサービスのパフォーマンスが大幅に向上し、VPN インフラストラクチャへの負荷も軽減され、リソースに対するより低いコンテンツで動作する必要がある要素も可能になります。 この記事では、単純で定義されたアクションを多数の肯定的な結果で迅速に実行できるので、移行の支援に集中しています。
 
 ![スプリット トンネリング VPN モデル2](../media/vpn-split-tunneling/vpn-model-2.png)
 
 ### <a name="3-vpn-forced-tunnel-with-broad-exceptions"></a>3. 広範囲な例外を含む VPN 強制トンネリング
 
-3 番目のモデルは、定義されたエンドポイントの小さなグループを直接送信するのではなく、モデル 2 の範囲を広げ、代わりにすべてのトラフィックを Office 365 や SalesForce などの信頼できるサービスに直接送信します。 これにより、企業の VPN インフラストラクチャの負荷がさらに軽減され、決められたサービスのパフォーマンスが向上します。 このモデルは、実現可能性の評価と実装に時間がかかる可能性が高いから、モデル 2 が正常に実施されると、後日繰り返し実行できる手順になる可能性があります。
+3 番目のモデルは、定義されたエンドポイントの小さなグループを直接送信するのではなく、モデル 2 の範囲を広げ、Office 365 や SalesForce などの信頼できるサービスに直接すべてのトラフィックを送信します。 これにより、企業の VPN インフラストラクチャの負荷がさらに軽減され、決められたサービスのパフォーマンスが向上します。 このモデルは、実現可能性の評価と実装に時間がかかる可能性が高いから、モデル 2 が正常に実施されると、後日繰り返し実行できる手順になる可能性があります。
 
 ![スプリット トンネリング VPN モデル3](../media/vpn-split-tunneling/vpn-model-3.png)
 
@@ -120,15 +120,15 @@ Office 365 エンドポイント、およびその分類と管理方法の詳細
 | --- | --- | --- |
 | <https://outlook.office365.com> | TCP 443 | これは、Outlook が Exchange Online サーバーへの接続に使用する主要なURL の 1 つであり、帯域幅の使用数と接続数が大量になります。 クイック検索、その他のメールボックス 予定表、空き時間の検索、ルールと通知の管理、Exchange オンラインのアーカイブ、送信トレイからのメール送信などといったオンライン上の機能では、ネットワークの遅延を少なくしておく必要があります。 |
 | <https://outlook.office.com> | TCP 443 | このURLは Outlook Online Web Access が Exchange Online のサーバーに接続するために使用され、ネットワーク遅延の影響を受けやすくなっています。 SharePoint Online での大きなファイルのアップロードとダウンロードには、特に接続性が必要です。 |
-| https:// \<tenant\> .sharepoint.com | TCP 443 | これは SharePoint Online のプライマリ URL であり、高帯域幅の使用状況です。 |
+| https:// \<tenant\> .sharepoint.com | TCP 443 | これは、オンラインでの使用SharePointのプライマリ URL です。 |
 | https:// \<tenant\> -my.sharepoint.com | TCP 443 | これは OneDrive for Business の標準 URL で、帯域幅の使用率が高く、OneDrive for Business Sync ツールからの接続数が多くなることがあります。 |
-| Teams のメディア IP (URL なし) | UDP 3478、3479、3480、および3481 | Relay Discovery の割り当てとリアルタイム トラフィック (3478)、オーディオ (3479)、ビデオ (3480)、ビデオスクリーン共有 (3481)。 これらは、Skype for Business および Microsoft Teams Media トラフィック (通話、会議など) に使用されるエンドポイントです。 ほとんどのエンドポイントは、Microsoft Teams クライアントが発信を確立するときに提供されます(サービスのリストにある必要な IP 内に含まれています)。 メディアの品質を最適化するには、UDP プロトコルを使用する必要があります。   |
+| Teams のメディア IP (URL なし) | UDP 3478、3479、3480、および3481 | Relay Discovery の割り当てとリアルタイム トラフィック (3478)、オーディオ (3479)、ビデオ (3480)、ビデオスクリーン共有 (3481)。 これらは、メディア トラフィック (通話、会議などSkype for Business Microsoft Teamsのエンドポイントです。 ほとんどのエンドポイントは、Microsoft Teams クライアントが発信を確立するときに提供されます(サービスのリストにある必要な IP 内に含まれています)。 メディアの品質を最適化するには、UDP プロトコルを使用する必要があります。   |
 
 上記の例では、**テナント** をお使いの Office 365 のテナント名に置き換える必要があります。  たとえば、**contoso.onmicrosoft.com** では、_contoso.sharepoint.com_ および _constoso-my.sharepoint.com_ を使用します。
 
 #### <a name="optimize-ip-address-ranges"></a>IP アドレスの範囲を最適化する
 
-これらのエンドポイントが対応する IP 範囲を記述する時点では、次のようになります。 [この例、Office 365](microsoft-365-ip-web-service.md) [](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) IP および URL Web サービス[、URL/IP](urls-and-ip-address-ranges.md)ページなどのスクリプトを使用して、構成を適用するときに更新プログラムを確認し、定期的にポリシーを設定してください。 
+これらのエンドポイントが対応する IP 範囲を記述する時点では、次のようになります。 [この例、Office 365 IP](microsoft-365-ip-web-service.md)および URL [](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) Web サービス[、URL/IP](urls-and-ip-address-ranges.md)ページなどのスクリプトを使用して、構成を適用するときに更新プログラムを確認し、定期的にポリシーを設定してください。 
 
 ```
 104.146.128.0/17
@@ -209,7 +209,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 ```
 -->
 
-VPN クライアントの設定を行い、**最適化** IP へのトラフィックがこの方法でルーティングされるようにしてください。 これにより、トラフィックは、Office 365 サービスおよび接続エンドポイントをユーザーに可能な限り近く提供する [Azure Front Door](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) などの Office Office 365 Service Front Door などのローカル Microsoft リソースを利用できます。 これにより、世界中のユーザーに高いパフォーマンス レベルを提供し [、Microsoft](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)の世界クラスのグローバル ネットワークをフルに活用できます。これは、ユーザーの直接出力から数ミリ秒以内である可能性があります。
+VPN クライアントの設定を行い、**最適化** IP へのトラフィックがこの方法でルーティングされるようにしてください。 これにより、トラフィックは、Office 365 サービスと接続エンドポイントを可能な限りユーザーに近い環境で提供する[Azure Front Door](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/)などの Office 365 Service Front Door などのローカル Microsoft リソースを利用できます。 これにより、世界中のユーザーに高いパフォーマンス レベルを提供し [、Microsoft](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)の世界クラスのグローバル ネットワークをフルに活用できます。これは、ユーザーの直接出力から数ミリ秒以内である可能性があります。
 
 ## <a name="configuring-and-securing-teams-media-traffic"></a>Teams メディア トラフィックの構成と保護
 
@@ -217,14 +217,14 @@ VPN クライアントの設定を行い、**最適化** IP へのトラフィ�
 
 ### <a name="configuration"></a>構成
 
-通話と会議の両方で、Teams メディアに必要なオプティマイズ IP サブネットがルート テーブルに正しく配置されている限り [、Teams が GetBestRoute](/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute) 関数を呼び出して、特定の宛先に使用するルートに対応するローカル インターフェイスを判断すると、上記の Microsoft IP ブロック内の Microsoft 宛先に対してローカル インターフェイスが返されます。
+通話と会議の両方で、Teams メディアに対して必要なオプティマイズ IP サブネットが正しく配置されている限り、Teams が[GetBestRoute](/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute)関数を呼び出して、特定の宛先に使用するルートに対応するローカル インターフェイスを特定すると、上記の Microsoft IP ブロックの Microsoft 宛先に対してローカル インターフェイスが返されます。
 
 一部の VPN クライアント ソフトウェアでは、URL に基づいてルーティング操作が可能です。 ただし、Teams のメディア トラフィックには URL が関連付けられていないため、このトラフィックのルーティングの制御は IP サブネットを使用して行う必要があります。
 
-特定の状況では、Teams クライアントの設定とは関係なく、メディア トラフィックは正しいルートが設定されていても VPN トンネルを通過します。 このシナリオが発生した場合は、ファイアウォールルールを使用して Teams IP サブネットまたはポートによる VPN の使用をブロックすれば十分です。
+特定の状況では、Teams クライアントの設定とは関係なく、メディア トラフィックは正しいルートが設定されていても VPN トンネルを通過します。 このシナリオが発生した場合は、ファイアウォール ルールを使用して、VPN を使用Teams IP サブネットまたはポートの使用をブロックすれば十分です。
 
 >[!IMPORTANT]
->Teams メディア トラフィックをすべての VPN シナリオで目的の方法でルーティングするには、ユーザーが Microsoft Teams クライアント バージョン **1.3.00.13565** 以上を実行している必要があります。 このバージョンには、クライアントが使用可能なネットワーク パスを検出する方法の改善が含まれています。
+>すべての VPN シナリオTeams方法を使用してメディア トラフィックを確実にルーティングするには、ユーザーが Microsoft Teams クライアント バージョン **1.3.00.13565** 以上を実行している必要があります。 このバージョンには、クライアントが使用可能なネットワーク パスを検出する方法の改善が含まれています。
 
 シグナリング トラフィックは HTTPS 経由で実行され、メディア トラフィックほど遅延に敏感ではなく、URL/IP データで許可としてマークされ、必要に応じて VPN クライアント経由で安全にルーティングできます。 
 
@@ -238,7 +238,7 @@ VPN クライアントの設定を行い、**最適化** IP へのトラフィ�
 
 Skype for Business Online は、_Traversal Using Relay around NAT (TURN)_ を介したメディア リレーへの安全なアクセスのためのユーザー名/パスワードを生成します。 メディア リレーは、TLS で保護された SIP チャネル上でユーザー名/パスワードを交換します。 VPN トンネルを使用してクライアントを企業ネットワークに接続する場合でも、トラフィックが企業ネットワークを離れてサービスに到達するときは、SRTP フォームでトラフィックを流す必要があります。
 
-Teams が音声やセッション トラバーサル ユーティリティ for _NAT (STUN)_ 増幅攻撃などの一般的なセキュリティ上の懸念を軽減する方法については [、「5.1](/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c)Security Considerations for Implementers」を参照してください。
+Teams が音声やセッション トラバーサル ユーティリティ for NAT _(STUN)_ 増幅攻撃などの一般的なセキュリティ上の懸念を軽減する方法については [、「5.1](/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c)Security Considerations for Implementers」を参照してください。
 
 リモートワーク環境での最新のセキュリティ管理については、「[セキュリティ専門家と IT による、現代のユニークなリモート ワーク シナリオで最新のセキュリティ管理を実現するための代替的な方法 (Microsoft セキュリティ チーム ブログ)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)」を参照してください。
 
@@ -246,7 +246,7 @@ Teams が音声やセッション トラバーサル ユーティリティ for _
 
 ポリシーを設定したら、予測どおりに機能していることを確認しましょう。 ローカル インターネット接続を使用するようにパスが正しく設定されているかどうかテストするには、いくつかの方法があります。
 
-- 上記のようにトレース ルートを含め、接続テストを実行する [Microsoft 365](https://aka.ms/netonboard) 接続テストを実行します。 また、このツールに VPN テストを追加し、さらに分析情報を提供する必要があります。
+- 上記のように[Microsoft 365を](https://aka.ms/netonboard)含む接続テストを実行する接続テストを実行します。 また、このツールに VPN テストを追加し、さらに分析情報を提供する必要があります。
 
 - スプリット トンネリングの範囲にあるエンドポイントへ簡単に tracert を行うには、たとえば、次のようなパスを示す必要があります。
 
@@ -254,13 +254,13 @@ Teams が音声やセッション トラバーサル ユーティリティ for _
   tracert worldaz.tr.teams.microsoft.com
   ```
 
-  その後、ローカル ISP を経由してこのエンドポイントへのパスが表示され、分割トンネリング用に構成した Teams 範囲の IP に解決する必要があります。
+  その後、ローカル ISP を経由してこのエンドポイントへのパスが表示され、スプリット トンネリング用に構成した Teams範囲の IP に解決する必要があります。
 
 - Wireshark などのツールを使用してネットワーク キャプチャを取得します。  発信中に UDP でフィルタリングすると、 Teams の「**最適化**」範囲の IP アドレスに流れるトラフィックが表示されます。 VPN トンネルがこのトラフィックに使用されている場合、メディア トラフィックは追跡情報に表示されません。
 
 ### <a name="additional-support-logs"></a>追加のサポート ログ
 
-トラブル シューティングのためにさらにデータが必要な場合、または Microsoft のサポートが必要な場合は、次の情報を集めておくと、解決策を迅速に見つけることができます。 Microsoft サポートの **TSS Windows CMD ベースのユニバーサル TroubleShooting スクリプト** ツールセットは、関連するログを簡単に収集するのに役立ちます。 ツールと使用手順は <https://aka.ms/TssTools.> をご参照ください。
+トラブル シューティングのためにさらにデータが必要な場合、または Microsoft のサポートが必要な場合は、次の情報を集めておくと、解決策を迅速に見つけることができます。 Microsoft サポートの TSS Windows CMD ベースのユニバーサル **TroubleShooting スクリプト** ツールセットを使用すると、関連するログを簡単に収集できます。 ツールと使用手順は <https://aka.ms/TssTools.> をご参照ください。
 
 ## <a name="howto-guides-for-common-vpn-platforms"></a>一般 VPN プラットフォームのHOWTO ガイド
 
@@ -272,7 +272,7 @@ Teams が音声やセッション トラバーサル ユーティリティ for _
 - **F5 ネットワーク BIG-IP APM**: [BIG IP APM を使用している場合に、VPN を介したリモートアクセスで Office 365 のトラフィックを最適化する](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
 - **Citrix Gateway**: [Office365 向けのCitrix Gateway VPN スプリット トンネルの最適化](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
 - **Pulse Secure**: [VPN トンネリング: 分割トンネリングを構成して Office365 アプリケーションを除外する方法](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
-- **チェック ポイント VPN**: 365 および他の SaaS アプリケーションOfficeスプリット トンネル [を構成する方法](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+- **チェック ポイント VPN**:[アプリや他の SaaS アプリケーションTunnel分割Office 365構成する方法](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="faq"></a>よくあるご質問 (FAQ)
 
@@ -304,9 +304,9 @@ Q1 に記載されているテナント制限機能に加えて、「[条件付�
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>ウイルスやマルウェアからの保護はどうすればいいですか？
 
-同じく、Office 365 は、サービス自体のさまざまな層にある「最適化」のマークのあるエンドポイントを保護します。これは[このドキュメントで概説されています](/office365/Enterprise/office-365-malware-and-ransomware-protection)。 上記のように、プロトコル/トラフィックを完全に理解していない可能性のあるデバイスに沿って実行するのではなく、サービス自体にこれらのセキュリティ要素を提供する方が非常に効率的です。既定では、SharePoint Online は [既知のマルウェアのファイルアップロードを自動的](../security/office-365-security/virus-detection-in-spo.md) にスキャンします
+同じく、Office 365 は、サービス自体のさまざまな層にある「最適化」のマークのあるエンドポイントを保護します。これは[このドキュメントで概説されています](/office365/Enterprise/office-365-malware-and-ransomware-protection)。 上記のように、プロトコル/トラフィックを完全に理解していない可能性のあるデバイスに沿って実行するのではなく、サービス自体にこれらのセキュリティ要素を提供する方が非常に効率的です。既定では、オンラインSharePointファイル[のアップロードで既知のマルウェアが](../security/office-365-security/virus-detection-in-spo.md)自動的にスキャンされます
 
-上記の Exchange エンドポイントでは [、Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) と [microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) は、サービスへのトラフィックのセキュリティを提供する優れた仕事をします。
+上記のExchangeエンドポイントについては、Exchange Online Protection および Microsoft [](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) Defender for [Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)サービスへのトラフィックのセキュリティを提供する優れた仕事をします。
 
 ### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>「最適化」トラフィック以外にも直接送信は行えますか？
 
@@ -320,15 +320,15 @@ Azure Virtual Network への直接アクセスを許可する方法について�
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>なぜポート 80 が必要なのですか？ トラフィックは平文で送信されていますか？
 
-ポート 80 はポート 443 セッションへのリダイレクトなどにのみ使用され、顧客データは送信されないか、ポート 80 経由ではアクセスできません。 [暗号化](../compliance/encryption.md)では、Office 365 の転送中および保存中のデータの暗号化の概要[](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)と、SRTP を使用して Teams メディア トラフィックを保護する方法について説明します。
+ポート 80 はポート 443 セッションへのリダイレクトなどにのみ使用され、顧客データは送信されないか、ポート 80 経由ではアクセスできません。 [暗号化](../compliance/encryption.md)では、Office 365 の転送中および保存中のデータの暗号化の概要と[](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)、SRTP を使用してメディア トラフィックを保護する方法Teams示します。
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>この内容は、Office 365 のワールドワイド インスタンスを使用している中国のユーザーにも適用されますか？
 
 **いいえ**、されません。  上記内容で 1 つ注意していただきたいことは、ワールドワイド Office 365 インスタンスに接続している PRC のユーザーです。 この地域ではクロスボーダー ネットワークの混雑が頻繁に発生するため、直接のインターネットの下りのパフォーマンスは変動する可能性があります。 当地域のほとんどのユーザーは、VPN を使用して企業ネットワークにトラフィックを取り込み、許可された MPLS 回線などを利用し、最適化されたパスを介して国外への送信を行っています。 これについては、[中国ユーザー向けのOffice 365 パフォーマンス最適化](microsoft-365-networking-china.md)の記事で詳しく説明しています。
 
-### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>ブラウザーで実行されている Teams でスプリット トンネル構成が機能しますか?
+### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>スプリット トンネル構成は、ブラウザーで実行Teamsに機能しますか?
 
-はい、サポートされているブラウザー経由で [、Microsoft Teams](https://docs.microsoft.com/microsoftteams/get-clients#web-client)のクライアントの取得に記載されています。
+はい、サポートされているブラウザーを介して実行します。これは、「クライアントを取得する」に[記載](/microsoftteams/get-clients#web-client)Microsoft Teams。
 
 ## <a name="related-topics"></a>関連項目
 

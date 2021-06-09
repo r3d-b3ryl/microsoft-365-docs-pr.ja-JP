@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 410972bd823c3a3c4fda53cacc225014d83f3457
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274930"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844012"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>自動調査後の修復アクションの確認
 
@@ -39,7 +39,7 @@ ms.locfileid: "52274930"
 
 - 脅威の種類 
 - 結果の評決、および 
-- 組織のデバイス グループ [の構成](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) 方法 
+- 組織のデバイス グループ [の構成](/microsoft-365/security/defender-endpoint/machine-groups) 方法 
 
 修復アクションは、自動的に行われるか、組織のセキュリティ運用チームによる承認時にのみ実行されます。 
 
@@ -49,7 +49,7 @@ ms.locfileid: "52274930"
 
 - **例 2**: Contoso のデバイスは、Semi に設定されているデバイス グループに含まれています。修復には承認 **が必要です**。 この場合、Contoso のセキュリティ運用チームは、自動調査の後ですべての修復アクションを確認して承認する必要があります (「保留中のアクションの確認 [」を参照](#review-pending-actions))。
 
-- **例 3:** Tailspin Toys のデバイス グループは [自動応答なし] **に設定** されています (推奨されません)。 この場合、自動調査は行われません。 修復アクションは実行または保留中で、デバイスのアクション センターにアクションは[](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)記録されません (「デバイス グループの管理[」を参照](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups))。
+- **例 3:** Tailspin Toys のデバイス グループは [自動応答なし] **に設定** されています (推奨されません)。 この場合、自動調査は行われません。 修復アクションは実行または保留中で、デバイスのアクション センターにアクションは[](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)記録されません (「デバイス グループの管理[」を参照](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups))。
 
 自動的に行う場合も承認時に行う場合でも、自動調査によって、次の 1 つ以上の修復アクションが発生する可能性があります。
 - ファイルの検疫
@@ -111,8 +111,8 @@ ms.locfileid: "52274930"
 |**Semi - コア フォルダー修復の承認が必要** |証拠の一部に *対して疑* わしいという評決に達します。 <br/><br/>修復アクションは承認待ちです。  |[保留中のアクションを承認 (または拒否) します](#review-pending-actions)。|
 |**Semi - 一時フォルダー以外の修復の承認が必要** |証拠の一部に *対して悪意* のあるという評決に達します。 <br/><br/>成果物が、ユーザーのダウンロード フォルダーや一時フォルダーなど、一時フォルダーに含されていないファイルまたは実行可能ファイルである場合、修復アクションは承認待ちです。 <br/><br/>成果物が一時フォルダー内 *のファイルまたは* 実行可能ファイルである場合、修復アクションは自動的に実行されます。  |1. [保留中のアクションを承認 (または拒否) する](#review-pending-actions)<br/><br/>2. [完了したアクションを確認する](#review-completed-actions)  |
 |**Semi - 一時フォルダー以外の修復の承認が必要** |証拠の一部に *対して疑* わしいという評決に達します。 <br/><br/>修復アクションは承認待ちです。 |[保留中のアクションを承認 (または拒否) する](#review-pending-actions)  | 
-|完全または **半の** オートメーションレベル |証拠の一部に *対する脅威が見つからない* という評決に達しました。 <br/><br/>修復アクションは実行され、承認待ちアクションはありません。 |[自動調査の詳細と結果を表示する](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
-|**自動応答なし** (推奨されません)|自動調査は実行されません。そのため、評決に達したり、修復アクションを実行したり、承認を待つ操作を行う必要はありません。 |[フル オートメーションまたは Semi オートメーションを使用するデバイス グループ **の設定または** 変更 **を検討** する](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) |
+|完全または **半の** オートメーションレベル |証拠の一部に *対する脅威が見つからない* という評決に達しました。 <br/><br/>修復アクションは実行され、承認待ちアクションはありません。 |[自動調査の詳細と結果を表示する](/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
+|**自動応答なし** (推奨されません)|自動調査は実行されません。そのため、評決に達したり、修復アクションを実行したり、承認を待つ操作を行う必要はありません。 |[フル オートメーションまたは Semi オートメーションを使用するデバイス グループ **の設定または** 変更 **を検討** する](/microsoft-365/security/defender-endpoint/machine-groups) |
 
 Microsoft Defender for Endpoint では、すべての評決がアクション センターで [追跡されます](auto-investigation-action-center.md#new-a-unified-action-center)。
 

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ca62db922a13ab2cb3226eaf0efb92bfaf8c572b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ab987089c20d0a1d0baed152e7ddcfdd2878cc65
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274894"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843460"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>更新プログラムのコンプライアンスでの Microsoft Defender ウイルス対策レポートのトラブルシューティング
 
@@ -66,7 +66,7 @@ ms.locfileid: "52274894"
 > - エンドポイントがバージョン 1607 Windows 10前に実行されている場合、Windows 10データを拡張[レベルに設定する必要があります](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)。
 > - すべての要件が満たされたのは 3 日間です。
 
-"更新プログラムのコンプライアンスMicrosoft Defender ウイルス対策を使用できます。 E3、B、F1、VL、およびライセンスの状態Pro表示されます。 ただし、E5 ライセンスの場合は、Microsoft Defender for Endpoint ポータル ( を使用する必要があります https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) 。 ライセンス オプションの詳細については、「製品Windows 10」を参照してください。
+"更新プログラムのコンプライアンスMicrosoft Defender ウイルス対策を使用できます。 E3、B、F1、VL、およびライセンスの状態Pro表示されます。 ただし、E5 ライセンスの場合は、Microsoft Defender for Endpoint ポータル (/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) を使用する必要があります。 ライセンス オプションの詳細については、「製品Windows 10」を参照してください。
 
 上記の前提条件が満たされている場合は、次の手順に進み、診断情報を収集して送信する必要があります。
 

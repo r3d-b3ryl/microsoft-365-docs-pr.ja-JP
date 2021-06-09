@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929111"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843580"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストのデバイスを調査する
 
@@ -39,7 +39,7 @@ ms.locfileid: "51929111"
 特定のデバイスで発生したアラートの詳細を調べて、アラートまたは侵害の潜在的な範囲に関連する可能性のある他の動作またはイベントを特定します。
 
 > [!NOTE]
-> 調査または対応プロセスの一環として、デバイスから調査パッケージを収集できます。 次の方法: デバイスから [調査パッケージを収集します](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)。
+> 調査または対応プロセスの一環として、デバイスから調査パッケージを収集できます。 次の方法: デバイスから [調査パッケージを収集します](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)。
 
 影響を受けるデバイスをポータルに表示するたびにクリックすると、そのデバイスに関する詳細なレポートを開きます。 影響を受けるデバイスは、次の領域で識別されます。
 
@@ -109,12 +109,12 @@ ms.locfileid: "51929111"
 タイムラインでは、特定の期間に発生したイベントを選択的にドリルダウンすることもできます。 選択した期間にデバイスで発生したイベントの一時的なシーケンスを表示できます。 ビューをさらに制御するには、イベント グループでフィルター処理するか、列をカスタマイズできます。
 
 >[!NOTE]
-> ファイアウォール イベントを表示するには、監査ポリシーを有効にする必要があります。「Audit [Filtering Platform 接続」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection)。
+> ファイアウォール イベントを表示するには、監査ポリシーを有効にする必要があります。「Audit [Filtering Platform 接続」を参照してください](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)。
 >ファイアウォールは、次のイベントをカバーします。
 >
->- [5025](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) - ファイアウォール サービスが停止しました
->- [5031](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) - アプリケーションがネットワーク上の受信接続を受け入れるのをブロックする
->- [5157](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) - ブロックされた接続
+>- [5025](/windows/security/threat-protection/auditing/event-5025) - ファイアウォール サービスが停止しました
+>- [5031](/windows/security/threat-protection/auditing/event-5031) - アプリケーションがネットワーク上の受信接続を受け入れるのをブロックする
+>- [5157](/windows/security/threat-protection/auditing/event-5157) - ブロックされた接続
 
 ![イベントを含むデバイス タイムラインのイメージ](images/timeline-device.png)
 

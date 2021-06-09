@@ -326,7 +326,7 @@
             - name: コンプライアンス機能をセットアップする
               href: ../business/set-up-compliance.md
         - name: セキュア スコア
-          href: 'https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score'
+          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: GDPR コンプライアンスのガイド
           href: security-and-compliance/gdpr-compliance.md
     - name: デバイスとアプリのデータを管理する

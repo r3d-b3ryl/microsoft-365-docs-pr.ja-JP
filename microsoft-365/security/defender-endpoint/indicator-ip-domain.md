@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e7dc11fe709a6d04b6309706df90f0ebbc177e25
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198485"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841068"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>IP および URL/ドメインのインジケーターを作成 
 
@@ -53,7 +53,7 @@ IPS、URL、またはドメインのインジケーターを作成する前に�
 - マルウェア対策クライアントのバージョンは、4.18.1906.x 以降である必要があります。 
 - バージョン 1709 以降Windows 10コンピューターでサポートされます。 
 - 高度な **機能でカスタム ネットワーク インジケーター** が有効 **Microsoft Defender セキュリティ センター > 設定 >確認します**。 詳細については、「高度な機能 [」を参照してください](advanced-features.md)。
-- iOS でのインジケーターのサポートについては、「カスタム インジケーターの [構成」を参照してください](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)。
+- iOS でのインジケーターのサポートについては、「カスタム インジケーターの [構成」を参照してください](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)。
 
 
 > [!IMPORTANT]

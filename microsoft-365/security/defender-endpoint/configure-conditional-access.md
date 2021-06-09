@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e68a8c35fb1028fa8e60cf52a8e8bb411a534b19
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: ceb69d59dc5208c0908e33d0880d9352562ec140
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903780"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843976"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で条件付きアクセスを構成する
 
@@ -44,9 +44,9 @@ ms.locfileid: "51903780"
 すべてのデバイスが Intune に登録されている必要があります。 Intune にデバイスを登録するには、次のオプションを使用できます。
 
 
-- IT 管理者: 自動登録を有効にする方法の詳細については、「登録」[を参照Windowsしてください。](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
-- エンド ユーザー: Intune にデバイスを登録する方法の詳細Windows 10 Intune にデバイスを登録するWindows 10[を参照してください。](https://docs.microsoft.com/intune/quickstart-enroll-windows-device)
-- エンド ユーザーの代替: Azure AD ドメインへの参加の詳細については、「How [to: Plan your Azure AD参加実装」を参照してください](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)。
+- IT 管理者: 自動登録を有効にする方法の詳細については、「登録」[を参照Windowsしてください。](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
+- エンド ユーザー: Intune にデバイスを登録する方法の詳細Windows 10 Intune にデバイスを登録するWindows 10[を参照してください。](/intune/quickstart-enroll-windows-device)
+- エンド ユーザーの代替: Azure AD ドメインへの参加の詳細については、「How [to: Plan your Azure AD参加実装」を参照してください](/azure/active-directory/devices/azureadjoin-plan)。
 
 
 
@@ -114,6 +114,6 @@ Intune ポータル、Intune ポータル、および Azure Microsoft Defender �
 
 6. [ポリシー **を有効にする]** を選択し、[ **作成] を選択して** 変更を保存します。
 
-詳細については、「Intune での条件付きアクセスを使用した Microsoft Defender for Endpoint のコンプライアンスの [適用」を参照してください](https://docs.microsoft.com/intune/advanced-threat-protection)。
+詳細については、「Intune での条件付きアクセスを使用した Microsoft Defender for Endpoint のコンプライアンスの [適用」を参照してください](/intune/advanced-threat-protection)。
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

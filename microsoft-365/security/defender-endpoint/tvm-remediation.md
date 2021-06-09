@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56b6c809e31285bbfae47a5fdcc0446890919e8b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 602a38d8ad27505e81628db265681ac89218e593
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934071"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840913"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>脆弱性を修復脅威と脆弱性の管理
 
@@ -46,7 +46,7 @@ Microsoft Defender for Endpoint 脅威と脆弱性の管理機能は、修復要
 
 **注**: Intune 接続が有効になっている場合は、修復要求を作成するときに Intune セキュリティ タスクを作成するオプションを取得します。 接続が設定されていない場合、このオプションは表示されません。
 
-詳細 [については、「Intune を使用して Microsoft Defender for Endpoint](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) で特定された脆弱性を修復する」を参照してください。
+詳細 [については、「Intune を使用して Microsoft Defender for Endpoint](/intune/atp-manage-vulnerabilities) で特定された脆弱性を修復する」を参照してください。
 
 ### <a name="remediation-request-steps"></a>修復要求の手順
 
@@ -63,7 +63,7 @@ Microsoft Defender for Endpoint 脅威と脆弱性の管理機能は、修復要
 
 6. [修復] [**ページに**](tvm-remediation.md) 移動して、修復要求の状態を表示します。
 
-Intune でチケットがどのように表示されるのか確認する場合は、「Use Intune to [remediate vulnerabilited by Microsoft Defender for Endpoint」](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) を参照してください。
+Intune でチケットがどのように表示されるのか確認する場合は、「Use Intune to [remediate vulnerabilited by Microsoft Defender for Endpoint」](/intune/atp-manage-vulnerabilities) を参照してください。
 
 >[!NOTE]
 >要求で 10,000 台を超えるデバイスの修復が必要な場合は、Intune に修復のために 10,000 台のデバイスのみを送信できます。
@@ -100,7 +100,7 @@ Intune でチケットがどのように表示されるのか確認する場合�
 
 ![セキュリティの推奨事項から生成された上位のアクティビティを一覧表示するテーブルを持つトップ修復アクティビティ カードの例。](images/tvm-remediation-activities-card.png)
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

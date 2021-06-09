@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 詳細については、Advanced eDiscoveryのソリューションMicrosoft 365。 この記事では、内部および外部Advanced eDiscovery Microsoft 365を管理するためのツールである、Microsoft 365の概要を説明します。 また、法的調査を管理するために、Advanced eDiscoveryを使用するビジネス上の理由も枠に入ります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ec5ea7b32abb03edd31ab69abc7b8d3044b1d353
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 16f597fdbbbad89116af73fdd0a607f3f03116ad
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782791"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840840"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概要 Microsoft 365 Advanced eDiscovery
 
@@ -105,7 +105,7 @@ Advanced eDiscoveryは、信頼する必要がある電子情報開示ソリュ�
 
   - Microsoft 365 EducationA5 または Office 365 Education A5 サブスクリプション
 
-   既存の Microsoft 365 E5 プランをお持ちで、Advanced eDiscovery を試す場合は、Microsoft 365 を既存の[](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)サブスクリプションに追加するか、Microsoft 365 E5 の試用版に[](https://www.microsoft.com/microsoft-365/enterprise)サインアップできます。
+   既存の Microsoft 365 E5 プランをお持ちで、Advanced eDiscovery を試す場合は、Microsoft 365 を既存の[](/office365/admin/try-or-buy-microsoft-365)サブスクリプションに追加するか、Microsoft 365 E5 の試用版に[](https://www.microsoft.com/microsoft-365/enterprise)サインアップできます。
 
 - **ユーザーごとのライセンス:** Advance 電子情報開示ケースでユーザーを保管担当者として追加するには、組織のサブスクリプションに応じて、そのユーザーに次のいずれかのライセンスを割り当てる必要があります。
 
@@ -113,7 +113,7 @@ Advanced eDiscoveryは、信頼する必要がある電子情報開示ソリュ�
 
   - Office 365: ユーザーに E5 ライセンスまたは A5 ライセンスOffice 365割りOffice 365 Education必要があります。
 
-   ライセンスを割り当てる方法については、「ユーザーにライセンスを割り当 [てる」を参照してください](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
+   ライセンスを割り当てる方法については、「ユーザーにライセンスを割り当 [てる」を参照してください](/microsoft-365/admin/manage/assign-licenses-to-users)。
 
 > [!NOTE]
 > ユーザーは、E5 ライセンスまたは A5 ライセンス (または適切なアドオン ライセンス) のみを保管担当者として追加する必要があります。Advanced eDiscoveryします。 IT 管理者、電子情報開示管理者、弁護士、パラリーガル、または Advanced eDiscovery を使用してケースを管理し、ケース データを確認する調査担当者は、E5、A5、またはアドオン ライセンスを必要とします。

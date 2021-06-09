@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: ローカル スクリプトを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: e9efa76af72f9169bdec1acf35d72066ac0a776e
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 55109d8fda52db6651d4398cd84ffd6668b4d871
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893308"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843448"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows 10 デバイスのオンボード
 
@@ -93,7 +93,7 @@ ms.locfileid: "51893308"
 
 
 ## <a name="monitor-device-configuration"></a>デバイス構成の監視
-[オンボードの問題のトラブルシューティング]() の異なる検証手順に従って、スクリプトが正常に完了し、エージェントが https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) 実行されたことを確認できます。
+[オンボーディングの問題のトラブルシューティング](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)の異なる検証手順に従って、スクリプトが正常に完了し、エージェントが実行されたことを確認できます。
 
 監視は、ポータルまたはさまざまな展開ツールを使用して直接実行することもできます。
 

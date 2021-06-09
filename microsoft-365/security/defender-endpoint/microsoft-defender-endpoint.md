@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57d4506e32db5defe29f2d0e59f72bd4c1998310
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3bab9d0248a2ed8e83807f3c38215e653cba26eb
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935931"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843556"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -89,7 +89,7 @@ Defender for Endpoint では、Microsoft の堅牢なクラウド サービスWi
 
 <a name="ngp"></a>
 
-**[次世代の保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[次世代の保護](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 Microsoft Defender for Endpoint は、ネットワークのセキュリティ境界をさらに強化するために、すべての種類の新しい脅威をキャッチするように設計された次世代の保護を使用します。
 
 <a name="edr"></a>
@@ -99,7 +99,7 @@ Microsoft Defender for Endpoint は、ネットワークのセキュリティ境
 
 <a name="ai"></a>
 
-**[調査と修復の自動化](automated-investigations.md)**<br>
+**[自動調査と修復](automated-investigations.md)**<br>
 高度な攻撃に迅速に対応できると共に、Microsoft Defender for Endpoint は自動調査と修復機能を提供し、アラートの量を数分で削減できます。 
 
 <a name="ss"></a>
@@ -134,7 +134,7 @@ Defender for Endpoint は、以下を含むさまざまな Microsoft ソリュ�
 - Microsoft Defender for Office
 - Skype for Business
 
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
 Microsoft 365 Defender を使用すると、Defender for Endpoint とさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応します。
 
 

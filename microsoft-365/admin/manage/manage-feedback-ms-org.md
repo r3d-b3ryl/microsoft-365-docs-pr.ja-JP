@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが Microsoft 製品に関して Microsoft に送信できるフィードバックを管理します。
-ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: 70ea1d5c176dd603f6a5addb09356909f13f9ace
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51657009"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840672"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>組織に対する Microsoft フィードバックを管理する
 
@@ -51,7 +51,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 |**Visio**|はい|はい|はい|はい|
 |**Yammer**|はい|はい|はい|はい|
 
-[製品内のアンケートとフィードバックの例については、こちらを参照してください。](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
+[製品内のアンケートとフィードバックの例については、こちらを参照してください。](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
 
 **メタデータ コレクション**
 
@@ -80,9 +80,9 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 |:-----|:-----|:-----|
 |ユーザーが Microsoft にフィードバックを送信するを許可する|オン|アプリケーション全体のフィードバック エントリ ポイントを制御する|
 |ユーザーが Microsoft から製品内アンケートを受け取り、対応できる|オン|製品内のアンケート プロンプトを制御する|
-|ユーザーが Microsoft にフィードバックを送信するときにスクリーンショットと添付ファイルを含める|オフ|ユーザーがフィードバック/アンケートで送信を決定できるメタデータを決定します。|
-|ユーザーが送信したフィードバックのフォローアップを Microsoft に許可する|オフ|ユーザーがフィードバック/アンケートと連絡先情報を共有できるかどうかを決定します。|
-|フィードバックが Microsoft に送信された場合、ユーザーにログ ファイルとコンテンツ サンプルを含め許可する|オフ|ユーザーがフィードバック/アンケートで送信できるメタデータを決定します。|
+|ユーザーが Microsoft にフィードバックを送信するときにスクリーンショットと添付ファイルを含める|Off|ユーザーがフィードバック/アンケートで送信を決定できるメタデータを決定します。|
+|ユーザーが送信したフィードバックのフォローアップを Microsoft に許可する|Off|ユーザーがフィードバック/アンケートと連絡先情報を共有できるかどうかを決定します。|
+|フィードバックが Microsoft に送信された場合、ユーザーにログ ファイルとコンテンツ サンプルを含め許可する|Off|ユーザーがフィードバック/アンケートで送信できるメタデータを決定します。|
 
 ## <a name="configure-policies"></a>ポリシーの構成
 

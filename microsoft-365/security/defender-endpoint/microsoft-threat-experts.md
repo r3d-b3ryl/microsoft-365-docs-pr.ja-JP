@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 466e67bb4649f8cf87e4152a07122d57c5071b79
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ebde023db5196117a02a2372784a3110839c51fa
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185577"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843532"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 
@@ -51,7 +51,7 @@ Microsoft 脅威エキスパート - 標的型攻撃通知の特典を受ける�
 
 **Microsoft 脅威エキスパート - Experts on Demand** を購読するには、アカウント チームまたは Microsoft 担当者に問い合わせ、組織が直面している関連する検出および敵対者について脅威の専門家と相談してください。
 
-詳細については[、「configure Microsoft 脅威エキスパート機能」](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin)を参照してください。 
+詳細については[、「configure Microsoft 脅威エキスパート機能」](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin)を参照してください。 
 
 ## <a name="microsoft-threat-experts---targeted-attack-notification"></a>Microsoft 脅威エキスパート - ターゲット攻撃通知 
 Microsoft 脅威エキスパート - 標的型攻撃通知は、人間の敵対的侵入、ハンズオンキーボード攻撃、サイバースパイなどの高度な攻撃など、ネットワークに対する最も重要な脅威を積極的に検出します。 これらの通知は、新しいアラートとして表示されます。 管理されたハンティング サービスには、次の機能が含まれます。  

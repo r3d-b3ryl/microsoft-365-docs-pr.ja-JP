@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1441ca3305a5f3e5a83ddd5e1547812f08d7d96b
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 7a967f5e4b2678b55ed87f2eaa68590703c55805
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445698"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840888"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Microsoft コンサルティング サービスを使用する
 
@@ -34,7 +34,7 @@ MCS アプリパッケージを使用するには、 **次の要素を指定す�
 **MCS は、次のアクションを処理します。**
 
 - アプリが環境内で禁止または制限されているかどうかをMicrosoft マネージド デスクトップします。
-- アプリのインストール、開始、アンインストールをテストして、アプリとの互換性をWindows 10。 MCS で互換性の問題が検出された場合、アプリは修復のために [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) プログラムに渡されます。
+- アプリのインストール、開始、アンインストールをテストして、アプリとの互換性をWindows 10。 MCS で互換性の問題が検出された場合、アプリは修復のために [App Assure](/fasttrack/products-and-capabilities#app-assure) プログラムに渡されます。
 - アプリを仕様にパッケージ化し、アプリの展開をテストするには、アプリを使用Microsoft Intune。
 
 ## <a name="app-delivery-schedule"></a>アプリの配信スケジュール
@@ -48,13 +48,13 @@ MCS アプリパッケージを使用するには、 **次の要素を指定す�
 ## <a name="testing-accounts-and-environment"></a>アカウントと環境のテスト
 
 パッケージ チームがパッケージ への移行を完了Microsoft Intune、特定のアクセス許可を提供することをお勧めします。
- 
--   パッケージMicrosoft Intuneアプリを追加および割り当てるアプリの展開機能へのアクセス 
--   パッケージ作成者がアプリをテストできるテスト グループ、ユーザー アカウント、ライセンス
+
+- パッケージMicrosoft Intuneアプリを追加および割り当てるアプリの展開機能へのアクセス
+- パッケージ作成者がアプリをテストできるテスト グループ、ユーザー アカウント、ライセンス
 
 MCS は、これらのアクセス許可を使用して次のアクションを実行します。
- 
--   アプリが仮想マシン用に構成された仮想マシンで動作Microsoft マネージド デスクトップ
--   ユーザーに展開Microsoft Intuneアプリをアップロードする
+
+- アプリが仮想マシン用に構成された仮想マシンで動作Microsoft マネージド デスクトップ
+- ユーザーに展開Microsoft Intuneアプリをアップロードする
 
 これらのアクセス許可がない場合、MCS は前進できますが、アプリケーションを環境にアップロードすることはできません。

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fd58ee17b2cb86c0bcc858b9b0fd57c12ac501e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dccc623bfa6c3f5e8fe4d88ccfafd66d3e53482a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932813"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840900"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>デバイスが正しく構成されていることを確認する
 
@@ -56,13 +56,13 @@ Microsoft Intune および Microsoft 365 セキュリティ センターのデ�
 
 デバイス構成管理は、Intune デバイス管理と密接に関係して、組織内のデバイスのインベントリとベースライン セキュリティ構成を確立します。 Intune で管理されているデバイス上の構成の問題を追跡およびWindows 10できます。
 
-デバイスが適切に構成されていることを確認する前に、デバイスを Intune 管理に登録します。 Intune の登録は堅牢で、デバイスに対して複数Windows 10があります。 Intune 登録オプションの詳細については、「デバイスの登録の設定」[を参照Windowsしてください](https://docs.microsoft.com/intune/windows-enroll)。
+デバイスが適切に構成されていることを確認する前に、デバイスを Intune 管理に登録します。 Intune の登録は堅牢で、デバイスに対して複数Windows 10があります。 Intune 登録オプションの詳細については、「デバイスの登録の設定」[を参照Windowsしてください](/intune/windows-enroll)。
 
 >[!NOTE]
->Intune にWindows登録するには、管理者にライセンスが既に割り当てられている必要があります。 [デバイス登録のライセンスの割り当てに関する記事をご覧ください](https://docs.microsoft.com/intune/licenses-assign)。
+>Intune にWindows登録するには、管理者にライセンスが既に割り当てられている必要があります。 [デバイス登録のライセンスの割り当てに関する記事をご覧ください](/intune/licenses-assign)。
 
 >[!TIP] 
->Intune を使用してデバイス管理を最適化するには [、Intune を Defender for Endpoint に接続します](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
+>Intune を使用してデバイス管理を最適化するには [、Intune を Defender for Endpoint に接続します](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
 
 ## <a name="obtain-required-permissions"></a>必要なアクセス許可を取得する
 既定では、Azure AD のグローバル管理者または Intune Service Administrator ロールが割り当てられているユーザーだけが、デバイスのオンボーディングとセキュリティ ベースラインの展開に必要なデバイス構成プロファイルを管理および割り当てることができます。
@@ -78,7 +78,7 @@ Microsoft Intune および Microsoft 365 セキュリティ センターのデ�
 *Intune のデバイス構成のアクセス許可*
 
 >[!TIP] 
->Intune にアクセス許可を割り当てる方法の詳細については、「カスタム [ロールの作成」を参照してください](https://docs.microsoft.com/intune/create-custom-role#to-create-a-custom-role)。
+>Intune にアクセス許可を割り当てる方法の詳細については、「カスタム [ロールの作成」を参照してください](/intune/create-custom-role#to-create-a-custom-role)。
 
 ## <a name="in-this-section"></a>このセクションの内容
 トピック | 説明

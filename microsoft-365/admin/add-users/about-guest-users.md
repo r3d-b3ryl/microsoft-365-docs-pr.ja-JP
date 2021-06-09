@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ゲスト ユーザーの一覧が管理センターにMicrosoft 365します。
-ms.openlocfilehash: 7c0fbfb57c9710103d1b670eb09024501071d602
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: f7a337b3ce4eb659cb4269f516345d7a24168ecc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683393"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841044"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>管理者センター Microsoft 365ゲスト ユーザー
 
@@ -48,12 +48,12 @@ ms.locfileid: "52683393"
 
 ## <a name="steps-add-guests-in-azure-active-directory"></a>手順: ゲストをユーザーに追加Azure Active Directory
 
-ゲストを追加するには、「ゲスト ユーザー Azure Active Directoryする[」を参照してください](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
+ゲストを追加するには、「ゲスト ユーザー Azure Active Directoryする[」を参照してください](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
 
 ユーザーを追加した後、ユーザーをグループに割り当てるか、組織内のアプリにアクセス権を与えすることもできます。 Azure AD ポータルにユーザーを追加すると、そのユーザーは管理センターの [ゲスト ユーザー]ページMicrosoft 365されます。
 ユーザーが [ゲスト ユーザー]リストに追加された後は[](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center)、管理センターの [グループ] Microsoft 365できます。
 
-複数 [のゲストを組織との共同作業](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) に招待するには、「ゲストを一括で追加する」を参照してください。
+複数 [のゲストを組織との共同作業](/azure/active-directory/b2b/tutorial-bulk-invite) に招待するには、「ゲストを一括で追加する」を参照してください。
 
 ## <a name="next-steps-remove-a-guest"></a>次の手順: ゲストを削除する
 
@@ -62,7 +62,7 @@ ms.locfileid: "52683393"
 1. 管理センターでMicrosoft 365を展開し **、[ゲスト** ユーザー]**を選択します**。
 1. [ゲスト **ユーザー] ページ** で、削除するユーザーを選択し、[ユーザーの削除 **] を選択します**。
 
-Azure AD ポータルでユーザーを削除するには、「ゲスト [ユーザーとリソースを削除する」を参照してください](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。
+Azure AD ポータルでユーザーを削除するには、「ゲスト [ユーザーとリソースを削除する」を参照してください](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。
 
 ## <a name="related-content"></a>関連コンテンツ
 

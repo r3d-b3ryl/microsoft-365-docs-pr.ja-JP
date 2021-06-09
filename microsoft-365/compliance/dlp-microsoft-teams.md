@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teamsチャネルは、データ損失防止 (DLP) ポリシーをサポートします。
-ms.openlocfilehash: 6467ae7fdfc9c8636bd306efde5cb89c100e5e6c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fa7e0967e24d8fa5e64b84fbccf54ff8cf45d1d6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782563"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843544"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -46,7 +46,7 @@ Office 365およびMicrosoft 365 E3には、オンライン、SharePoint、お�
 
 チャットでの DLP 保護のサポートTeams E5 が必要です。
 
-ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。
+ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。
 
 > [!IMPORTANT]
 > DLP は、チャットスレッドまたはチャネル スレッドの実際のメッセージにのみ適用されます。 アクティビティ通知 (短いメッセージ プレビューを含み、ユーザーの通知設定に基づいて表示される)は、DLP にTeamsされません。 メッセージの一部に表示される機密情報は、DLP ポリシーが適用され、メッセージ自体の機密情報が削除された後でも、通知に表示されます。
@@ -91,7 +91,7 @@ web 上の[Exchange、Outlook、Outlook、SharePoint](data-loss-prevention-polic
 
 1. コンプライアンス センター ( ) に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、サインインします。
 
-2. [**データ損失防止ポリシー] を**  >  **選択します**。
+2. **[データ損失防止]** > **[ポリシー]** の順に選択します。
 
 3. ポリシーを選択し、[ポリシー設定] の **横にある**[編集] を **選択します**。
 
@@ -118,7 +118,7 @@ web 上の[Exchange、Outlook、Outlook、SharePoint](data-loss-prevention-polic
 
 1. コンプライアンス センター ( ) に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、サインインします。
 
-2. [**データ損失防止ポリシー] を**  >  **選択します**。
+2. **[データ損失防止]** > **[ポリシー]** の順に選択します。
 
 3. ポリシーを選択し、[場所] の下の値 **を確認します**。 チャットメッセージと **Teamsメッセージが表示される** 場合は、すべて設定されています。 編集しない場合は、[編集] を **クリックします**。
 
@@ -149,7 +149,7 @@ web 上の[Exchange、Outlook、Outlook、SharePoint](data-loss-prevention-polic
 
 1. コンプライアンス センター ( ) に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、サインインします。
 
-2. [**データ損失防止ポリシー] +**  >    >  **[ポリシーの作成] を選択します**。
+2. **[データ損失防止]** > **[ポリシー]** > **[+ ポリシーの作成]** の順に選択します。
 
 3. テンプレートを選択 [し、[](data-loss-prevention-policies.md#dlp-policy-templates)次へ] を **選択します**。
 

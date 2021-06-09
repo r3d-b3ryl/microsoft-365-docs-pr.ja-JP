@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: cbd95ed3ee70b69b395f73c83852a9f37a269f0b
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 1a0297271c3e0e8fb94a476982f146aa8c221e7a
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259489"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809133"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -70,6 +70,9 @@ DLP うるさすぎ、関心のあるファイルが含まれないので、デ�
 > [!IMPORTANT]
 > 実行可能ファイルへのパスは含めず、実行可能ファイル名 (browser.exe など) のみを含めてください。
 
+### <a name="unallowed-bluetooth-apps"></a>許可されていない Bluetooth アプリ
+
+ポリシーによって保護されているファイルを特定の Bluetooth アプリ経由でユーザーが転送できないようにします。
 
 ### <a name="browser-and-domain-restrictions"></a>ブラウザーとドメインの制限
 ポリシーに一致する機密ファイルが、無制限のクラウド サービス ドメインと共有されるのを制限します。
@@ -97,6 +100,11 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
 - ユーザーは、組み込みの業務上の正当な理由のみを選択できます。
 - ユーザーは、自分自身の正当な理由のみを入力できます。
 
+### <a name="always-audit-file-activity-for-devices"></a>デバイスのファイル アクティビティを常に監査する
+
+既定では、デバイスがオンボードされると、Office、PDF、CSV ファイルのアクティビティが自動的に監査され、アクティビティ エクスプローラーで確認できるようになります。 オンボーディングされたデバイスがアクティブなポリシーに含まれている場合にのみ、このアクティビティを監査する場合は、この機能をオフにします。
+
+ファイル アクティビティは、アクティブ ポリシーに含まれているかどうかに関係なく、常にオンボードされたデバイスで監査されます。
 
 ## <a name="tying-dlp-settings-together"></a>DLP 設定の結合
 

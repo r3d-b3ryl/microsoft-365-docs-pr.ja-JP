@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0df348e3a5564720468d95d7b23578f9dcad9294
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c0544665ea4e9b1ceafa645a2dcc96a224b0c242
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935187"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843952"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>前提条件&アクセス許可 - 脅威と脆弱性の管理
 
@@ -48,7 +48,7 @@ ms.locfileid: "51935187"
 > Windows 10バージョン 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
 > Windows 10バージョン 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
-- ユーザーが検出した[脅威Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)[修復Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure)を支援するために、脅威と脆弱性の管理。 Configuration Manager を使用している場合は、本体を最新バージョンに更新します。
+- ユーザーが検出した[脅威Microsoft Intune](/mem/intune/fundamentals/what-is-intune)[修復Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)を支援するために、脅威と脆弱性の管理。 Configuration Manager を使用している場合は、本体を最新バージョンに更新します。
     - **注**: Intune 接続が有効になっている場合は、修復要求を作成するときに Intune セキュリティ タスクを作成するオプションを取得します。 接続が設定されていない場合、このオプションは表示されません。
 - デバイス ページで表示できるセキュリティ推奨事項が 1 つ以上ある
 - タグ付けまたは共同管理としてマークされている
@@ -73,7 +73,7 @@ ms.locfileid: "51935187"
 
 詳細については、「RBAC のアクセス許可 [オプション」を参照してください。](user-roles.md#permission-options)
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [サポート対象オペレーティング システムとプラットフォーム](tvm-supported-os.md)

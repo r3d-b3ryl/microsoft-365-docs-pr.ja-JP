@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65c5161f110e95008f2dc56aa3a2d17266ac1cb1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9d68f879fe8fd9379b286c106ed9229895f91b9a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933351"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841110"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows における情報保護の概要
 
@@ -57,12 +57,12 @@ Defender for Endpoint は、機密ラベルを持つファイルと機密情報�
 
 データ損失防止 (DLP) Office 365の機密情報の種類は、次の 2 つのカテゴリに分類されます。
 
-- 既定値
+- 既定
 - Custom
 
-既定の機密情報の種類には、銀行口座番号、社会保障番号、国内の ID などの情報が含まれます。 詳細については、「機密情報の [種類の検索方法」を参照してください](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)。
+既定の機密情報の種類には、銀行口座番号、社会保障番号、国内の ID などの情報が含まれます。 詳細については、「機密情報の [種類の検索方法」を参照してください](/office365/securitycompliance/what-the-sensitive-information-types-look-for)。
 
-カスタム型は、ユーザーが定義する種類であり、異なる種類の機密情報 (従業員の ID やプロジェクト番号など) を保護するように設計されています。 詳細については、「カスタム機密情報の [種類を作成する」を参照してください](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type)。
+カスタム型は、ユーザーが定義する種類であり、異なる種類の機密情報 (従業員の ID やプロジェクト番号など) を保護するように設計されています。 詳細については、「カスタム機密情報の [種類を作成する」を参照してください](/office365/securitycompliance/create-a-custom-sensitive-information-type)。
 
 デバイス上でファイルが作成または編集Windows Defender for Endpoint はコンテンツをスキャンして、機密情報が含まれているか評価します。
 
@@ -87,9 +87,9 @@ Defender for Endpoint は、機密ラベルを持つファイルと機密情報�
 
 ## <a name="log-analytics"></a>Log Analytics
 
-Defender for Endpoint に基づくデータ検出は [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview)でも利用できます。ここで、生データに対して複雑なクエリを実行できます。
+Defender for Endpoint に基づくデータ検出は [Azure Log Analytics](/azure/log-analytics/log-analytics-overview)でも利用できます。ここで、生データに対して複雑なクエリを実行できます。
 
-Azure Information Protection analytics の詳細については、「Azure Information Protection の中央 [レポート」を参照してください](https://docs.microsoft.com/azure/information-protection/reports-aip)。
+Azure Information Protection analytics の詳細については、「Azure Information Protection の中央 [レポート」を参照してください](/azure/information-protection/reports-aip)。
 
 Azure portal で Azure Log Analytics を開き、クエリ ビルダー (標準またはクラシック) を開きます。
 

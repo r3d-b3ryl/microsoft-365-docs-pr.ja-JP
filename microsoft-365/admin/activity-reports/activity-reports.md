@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530972"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809001"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -33,7 +33,7 @@ ms.locfileid: "52530972"
   
 過去 7 日、30 日、90 日、180 日間のレポートを利用できます。すべてのレポート期間のデータが最初から存在するわけではありません。レポートは、48 時間以内に使用できるようになります。
   
-概要については、次のビデオを参照してください: レポートの使用方法
+## <a name="watch-act-on-a-usage-report-in-office-365"></a>動画: Office 365 の使用状況レポートでの操作
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
   
@@ -88,52 +88,30 @@ ms.locfileid: "52530972"
 - [Microsoft ブラウザーの使用法](browser-usage-report.md) 
   
 - [メール アクティビティ](email-activity-ww.md)
-
-- [米国政府のメールのアクティビティ](email-activity.md)
     
 - [メールボックス使用状況](mailbox-usage.md)
     
 - [Office ライセンス認証数](microsoft-office-activations-ww.md)
 
-- [米国政府機関向けの Office ライセンス認証](microsoft-office-activations.md)
-
 - [アクティブなユーザー](active-users-ww.md)
-
-- [米国政府機関のアクティブなユーザー](active-users.md)
   
 - [メール アプリの利用状況](email-apps-usage-ww.md)
 
-- [米国政府のメール アプリの利用状況](email-apps-usage.md)
-
 - [フォームのアクティビティ](forms-activity-ww.md)
 
-- [米国政府の Forms のアクティビティ](forms-activity.md)
-
 - [Dynamics 365 顧客音声アクティビティ](forms-pro-activity-ww.md)
-  
-- [米国政府向けの Dynamics 365 顧客音声アクティビティ](forms-pro-activity.md)
 
 - [Microsoft 365 グループ](office-365-groups-ww.md)
-
-- [米国政府機関用 Microsoft 365 グループ](office-365-groups.md)
   
 - [OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity-ww.md)
 
-- [米国政府の OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity.md)
-
 - [OneDrive for Business の利用状況](onedrive-for-business-usage-ww.md)
 
-- [米国政府の OneDrive for Business の利用状況](onedrive-for-business-usage.md)
-
-- [Microsoft 365 Apps の利用状況](microsoft365-apps-usage-ww.md)
+- [Microsoft 365 Apps の使用法](microsoft365-apps-usage-ww.md)
   
 - [SharePoint サイトの利用状況](sharepoint-site-usage-ww.md)
-
-- [米国政府の SharePoint サイトの利用状況](sharepoint-site-usage.md)
   
 - [SharePoint のアクティビティ](sharepoint-activity-ww.md)
-
-- [米国政府の SharePoint のアクティビティ](sharepoint-activity.md)
   
 - [Skype for Business Online のアクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
@@ -145,23 +123,13 @@ ms.locfileid: "52530972"
 
 - [Yammer アクティビティ](yammer-activity-report-ww.md)
 
-- [米国政府の Yammer のアクティビティ](yammer-activity-report.md)
-
 - [Yammer デバイスの使用状況](yammer-device-usage-report-ww.md)
-
-- [米国政府の Yammer のデバイスの利用状況](yammer-device-usage-report.md)
 
 - [Yammer のグループ アクティビティ レポート](yammer-groups-activity-report-ww.md)
 
-- [米国政府の Yammer のグループ アクティビティ レポート](yammer-groups-activity-report.md)
-
 - [Microsoft Teams ユーザー アクティビティ](microsoft-teams-user-activity-preview.md)
 
-- [Microsoft Teams ユーザー アクティビティ (米国政府機関向け)](microsoft-teams-user-activity.md)
-
 - [Microsoft Teams デバイスの利用状況](microsoft-teams-device-usage-preview.md)
-
-- [Microsoft Teams デバイスの利用状況 (米国政府機関向け)](microsoft-teams-device-usage.md)
 
 ## <a name="how-to-view-licensing-information"></a>ライセンス情報を表示する方法
 
@@ -201,8 +169,6 @@ ms.locfileid: "52530972"
   
 ## <a name="related-content"></a>関連コンテンツ
 
-[セキュリティ &amp;コンプライアンス センターのレポート](../../compliance/reports-in-security-and-compliance.md) (記事)
-
+[セキュリティ &amp;コンプライアンス センターのレポート](../../compliance/reports-in-security-and-compliance.md) (記事)\
 [Microsoft 365 利用状況分析](../usage-analytics/usage-analytics.md) (記事)
-
 [Microsoft 365 利用状況分析をカスタマイズする](../usage-analytics/customize-reports.md) (記事)
