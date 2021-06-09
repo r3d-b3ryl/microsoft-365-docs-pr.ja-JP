@@ -4,19 +4,19 @@
   items:
     - name: 概要
       items:
-        - name: Microsoft 365 Business とは
+        - name: Microsoft 365 Defender とは
           href: microsoft-365-defender.md
-        - name: Microsoft 365 セキュリティ センター
+        - name: Microsoft 365Defender の概要
           href: overview-security-center.md
         - name: Microsoft 365 Defender の新機能
           href: whats-new.md
-        - name: Microsoft 365 セキュリティ センターの Defender for Endpoint
+        - name: Defender for Endpoint in Microsoft 365 Defender
           href: microsoft-365-security-center-mde.md
-        - name: Microsoft 365 セキュリティ センターの Defender for Office 365
+        - name: Defender for Office 365 Defender Microsoft 365 Defender
           href: microsoft-365-security-center-mdo.md
-        - name: Defender for Endpoint を Microsoft 365 セキュリティ センターにリダイレクトする
+        - name: エンドポイントの Defender を Defender にMicrosoft 365する
           href: microsoft-365-security-mde-redirection.md
-        - name: Defender for Office 365 を Microsoft 365 セキュリティ センターにリダイレクトする
+        - name: セキュリティOffice 365コンプライアンス センターを Defender にMicrosoft 365する
           href: microsoft-365-security-mdo-redirection.md
         - name: Microsoft 365Defender と Azure Sentinel の統合
           href: microsoft-365-defender-integration-with-azure-sentinel.md
@@ -60,7 +60,7 @@
               href: m365d-pilot-simulate.md
             - name: 閉じて要約する
               href: m365d-pilot-close.md
-    - name: 作業の開始
+    - name: 概要
       items:
         - name: 概要
           href: get-started.md
@@ -123,7 +123,7 @@
                     - name: ID
                       href: first-incident-path-identity.md
             - name: インシデント対応プレイブック
-              href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
+              href: /security/compass/incident-response-playbooks
             - name: メール通知
               href: get-incident-notifications.md
         - name: 脅威の分析
@@ -321,11 +321,11 @@
                 - name: ストリーミング API
                   items:
                     - name: Microsoft 365ストリーミング API
-                      href: ../defender-endpoint/raw-data-export.md
-                    - name: 高度なハンティングを Azure イベント ハブにストリーミングする
-                      href: ../defender-endpoint/raw-data-export-event-hub.md
+                      href: streaming-api.md
+                    - name: 高度な追求イベントを Azure イベント ハブにストリーミングする
+                      href: streaming-api-event-hub.md
                     - name: 高度な追求イベントをストレージ アカウントにストリーミングする
-                      href: ../defender-endpoint/raw-data-export-storage.md
+                      href: streaming-api-storage.md
                 - name: 高度な追及 API
                   href: api-advanced-hunting.md
                 - name: インシデント API

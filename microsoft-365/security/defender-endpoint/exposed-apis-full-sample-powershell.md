@@ -17,55 +17,55 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: 9913d1b0b0d5d0462fdee0b9c576a590bd3ddbc9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ef6d05bb27018bb72f731da2e8b7837c9d9f0127
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198327"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842064"
 ---
-# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a><span data-ttu-id="3419e-104">PowerShell を使用したエンドポイント API 用 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="3419e-104">Microsoft Defender for Endpoint APIs using PowerShell</span></span>
+# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a><span data-ttu-id="9d2ec-104">PowerShell を使用したエンドポイント API 用 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="9d2ec-104">Microsoft Defender for Endpoint APIs using PowerShell</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="3419e-105">**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="3419e-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="9d2ec-105">**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="9d2ec-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-> <span data-ttu-id="3419e-106">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="3419e-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="3419e-107">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="3419e-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="9d2ec-106">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="9d2ec-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="9d2ec-107">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="9d2ec-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-><span data-ttu-id="3419e-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="3419e-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="3419e-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="3419e-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+><span data-ttu-id="9d2ec-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="9d2ec-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="9d2ec-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="9d2ec-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-<span data-ttu-id="3419e-110">Microsoft Defender for Endpoint の複数の API を使用した完全なシナリオ。</span><span class="sxs-lookup"><span data-stu-id="3419e-110">Full scenario using multiple APIs from Microsoft Defender for Endpoint.</span></span>
+<span data-ttu-id="9d2ec-110">Microsoft Defender for Endpoint の複数の API を使用した完全なシナリオ。</span><span class="sxs-lookup"><span data-stu-id="9d2ec-110">Full scenario using multiple APIs from Microsoft Defender for Endpoint.</span></span>
 
-<span data-ttu-id="3419e-111">このセクションでは、PowerShell サンプルを</span><span class="sxs-lookup"><span data-stu-id="3419e-111">In this section, we share PowerShell samples to</span></span> 
-- <span data-ttu-id="3419e-112">トークンの取得</span><span class="sxs-lookup"><span data-stu-id="3419e-112">Retrieve a token</span></span> 
-- <span data-ttu-id="3419e-113">トークンを使用して Microsoft Defender for Endpoint の最新のアラートを取得する</span><span class="sxs-lookup"><span data-stu-id="3419e-113">Use token to retrieve the latest alerts in Microsoft Defender for Endpoint</span></span>
-- <span data-ttu-id="3419e-114">アラートごとに、アラートの優先度が中または高で、まだ進行中の場合は、デバイスが不審な URL に接続した回数を確認します。</span><span class="sxs-lookup"><span data-stu-id="3419e-114">For each alert, if the alert has medium or high priority and is still in progress, check how many times the device has connected to suspicious URL.</span></span>
+<span data-ttu-id="9d2ec-111">このセクションでは、PowerShell サンプルを</span><span class="sxs-lookup"><span data-stu-id="9d2ec-111">In this section, we share PowerShell samples to</span></span> 
+- <span data-ttu-id="9d2ec-112">トークンの取得</span><span class="sxs-lookup"><span data-stu-id="9d2ec-112">Retrieve a token</span></span> 
+- <span data-ttu-id="9d2ec-113">トークンを使用して Microsoft Defender for Endpoint の最新のアラートを取得する</span><span class="sxs-lookup"><span data-stu-id="9d2ec-113">Use token to retrieve the latest alerts in Microsoft Defender for Endpoint</span></span>
+- <span data-ttu-id="9d2ec-114">アラートごとに、アラートの優先度が中または高で、まだ進行中の場合は、デバイスが不審な URL に接続した回数を確認します。</span><span class="sxs-lookup"><span data-stu-id="9d2ec-114">For each alert, if the alert has medium or high priority and is still in progress, check how many times the device has connected to suspicious URL.</span></span>
 
-<span data-ttu-id="3419e-115">**前提条件**: 最初にアプリを [作成する必要があります](apis-intro.md)。</span><span class="sxs-lookup"><span data-stu-id="3419e-115">**Prerequisite**: You first need to [create an app](apis-intro.md).</span></span>
+<span data-ttu-id="9d2ec-115">**前提条件**: 最初にアプリを [作成する必要があります](apis-intro.md)。</span><span class="sxs-lookup"><span data-stu-id="9d2ec-115">**Prerequisite**: You first need to [create an app](apis-intro.md).</span></span>
 
-## <a name="preparation-instructions"></a><span data-ttu-id="3419e-116">準備手順</span><span class="sxs-lookup"><span data-stu-id="3419e-116">Preparation instructions</span></span>
+## <a name="preparation-instructions"></a><span data-ttu-id="9d2ec-116">準備手順</span><span class="sxs-lookup"><span data-stu-id="9d2ec-116">Preparation instructions</span></span>
 
-- <span data-ttu-id="3419e-117">PowerShell のウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="3419e-117">Open a PowerShell window.</span></span>
-- <span data-ttu-id="3419e-118">ポリシーで PowerShell コマンドを実行できない場合は、次のコマンドを実行できます。</span><span class="sxs-lookup"><span data-stu-id="3419e-118">If your policy does not allow you to run the PowerShell commands, you can run the below command:</span></span>
+- <span data-ttu-id="9d2ec-117">PowerShell のウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="9d2ec-117">Open a PowerShell window.</span></span>
+- <span data-ttu-id="9d2ec-118">ポリシーで PowerShell コマンドを実行できない場合は、次のコマンドを実行できます。</span><span class="sxs-lookup"><span data-stu-id="9d2ec-118">If your policy does not allow you to run the PowerShell commands, you can run the below command:</span></span>
   ```
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-<span data-ttu-id="3419e-119">詳細については [、「PowerShell のドキュメント」を参照してください。](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)</span><span class="sxs-lookup"><span data-stu-id="3419e-119">For more information, see [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)</span></span>
+<span data-ttu-id="9d2ec-119">詳細については [、「PowerShell のドキュメント」を参照してください。](/powershell/module/microsoft.powershell.security/set-executionpolicy)</span><span class="sxs-lookup"><span data-stu-id="9d2ec-119">For more information, see [PowerShell documentation](/powershell/module/microsoft.powershell.security/set-executionpolicy)</span></span>
 
-## <a name="get-token"></a><span data-ttu-id="3419e-120">トークンの取得</span><span class="sxs-lookup"><span data-stu-id="3419e-120">Get token</span></span>
+## <a name="get-token"></a><span data-ttu-id="9d2ec-120">トークンの取得</span><span class="sxs-lookup"><span data-stu-id="9d2ec-120">Get token</span></span>
 
-<span data-ttu-id="3419e-121">以下を実行します。</span><span class="sxs-lookup"><span data-stu-id="3419e-121">Run the below:</span></span>
+<span data-ttu-id="9d2ec-121">以下を実行します。</span><span class="sxs-lookup"><span data-stu-id="9d2ec-121">Run the below:</span></span>
 
-- <span data-ttu-id="3419e-122">$tenantId: クエリを実行する代わりにテナントの ID (つまり、このテナントのデータに対してクエリが実行されます)</span><span class="sxs-lookup"><span data-stu-id="3419e-122">$tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)</span></span>
-- <span data-ttu-id="3419e-123">$appId: AAD アプリの ID (アプリに Defender for Endpoint への 「高度なクエリの実行」 アクセス許可が必要)</span><span class="sxs-lookup"><span data-stu-id="3419e-123">$appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)</span></span>
-- <span data-ttu-id="3419e-124">$appSecret: Azure AD アプリの秘密</span><span class="sxs-lookup"><span data-stu-id="3419e-124">$appSecret: Secret of your Azure AD app</span></span>
+- <span data-ttu-id="9d2ec-122">$tenantId: クエリを実行する代わりにテナントの ID (つまり、このテナントのデータに対してクエリが実行されます)</span><span class="sxs-lookup"><span data-stu-id="9d2ec-122">$tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)</span></span>
+- <span data-ttu-id="9d2ec-123">$appId: AAD アプリの ID (アプリに Defender for Endpoint への 「高度なクエリの実行」 アクセス許可が必要)</span><span class="sxs-lookup"><span data-stu-id="9d2ec-123">$appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)</span></span>
+- <span data-ttu-id="9d2ec-124">$appSecret: Azure AD アプリの秘密</span><span class="sxs-lookup"><span data-stu-id="9d2ec-124">$appSecret: Secret of your Azure AD app</span></span>
 
-- <span data-ttu-id="3419e-125">$suspiciousUrl: URL</span><span class="sxs-lookup"><span data-stu-id="3419e-125">$suspiciousUrl: The URL</span></span>
+- <span data-ttu-id="9d2ec-125">$suspiciousUrl: URL</span><span class="sxs-lookup"><span data-stu-id="9d2ec-125">$suspiciousUrl: The URL</span></span>
 
 
 ```
@@ -129,7 +129,7 @@ $response
 ```
 
 
-## <a name="see-also"></a><span data-ttu-id="3419e-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="3419e-126">See also</span></span>
-- [<span data-ttu-id="3419e-127">エンドポイント API 用 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="3419e-127">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
-- [<span data-ttu-id="3419e-128">高度な追及 API</span><span class="sxs-lookup"><span data-stu-id="3419e-128">Advanced Hunting API</span></span>](run-advanced-query-api.md)
-- [<span data-ttu-id="3419e-129">Python を使用した高度な追求</span><span class="sxs-lookup"><span data-stu-id="3419e-129">Advanced Hunting using Python</span></span>](run-advanced-query-sample-python.md)
+## <a name="see-also"></a><span data-ttu-id="9d2ec-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="9d2ec-126">See also</span></span>
+- [<span data-ttu-id="9d2ec-127">エンドポイント API 用 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="9d2ec-127">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
+- [<span data-ttu-id="9d2ec-128">高度な追及 API</span><span class="sxs-lookup"><span data-stu-id="9d2ec-128">Advanced Hunting API</span></span>](run-advanced-query-api.md)
+- [<span data-ttu-id="9d2ec-129">Python を使用した高度な追求</span><span class="sxs-lookup"><span data-stu-id="9d2ec-129">Advanced Hunting using Python</span></span>](run-advanced-query-sample-python.md)
