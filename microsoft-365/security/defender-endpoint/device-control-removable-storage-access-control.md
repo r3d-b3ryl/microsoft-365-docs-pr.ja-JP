@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fba74990d8e4465f957acda83e66e1dc43a317e8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cf8e74a6886d7086da062d6258e3e1e1a1cbd730
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841188"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861721"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -42,13 +42,17 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
 マルウェア対策クライアント Storageバージョン **4.18.2103.3** 以降の Windows 10 デバイスにリムーバブル アクセス制御を展開します。
-1. **4.18.2104** 以降: SerialNumberId の追加、VID_PIDパス ベースの GPO のサポート
+1. **4.18.2104** 以降: SerialNumberId の追加、VID_PID、ファイルパス ベースの GPO のサポート、ComputerSid
 
 2. **4.18.2105** 以降 : HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId のワイルドカード サポートの追加、特定のコンピューター上の特定のユーザーの組み合わせ、削除可能な SSD (SanDisk Extreme SSD)/USB Attached SCSI (UAS) のサポート
 
 :::image type="content" source="images/powershell.png" alt-text="PowerShell インターフェイス":::
 
+   > [!NOTE]
+   > どのコンポーネントWindows セキュリティアクティブである必要もありません。リムーバブル アクセス制御は、Storage状態とはWindows セキュリティできます。
+
 ## <a name="policy-properties"></a>ポリシーのプロパティ
+
 
 次のプロパティを使用して、リムーバブル 記憶域グループを作成できます。
 
@@ -87,6 +91,8 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
     - MatchAny: DescriptorIdList の下の属性は **Or リレーションシップ** です。たとえば、管理者が DeviceID と InstancePathID を置く場合、接続されている USB ごとに、USB が同じ **DeviceID** または **InstanceID** 値を持っている限り、システムは強制を実行します。
 
+
+
 アクセス制御ポリシーのプロパティは次のとおりです。
 
 **プロパティ名: PolicyRuleId**
@@ -124,6 +130,14 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
     - AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。
 
 同じメディアに対して競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として、[許可] と **[拒否]** **があります**。
+
+**プロパティ名: Sid**
+
+1. 説明: このポリシーを特定のユーザーまたはユーザー グループに適用するかどうかを定義します。1 つのエントリに最大 1 つの Sid を含め、Sid を使用しないエントリは、コンピューターにポリシーを適用する方法を意味します。
+
+**プロパティ名: ComputerSid**
+
+1. 説明: このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリに最大 1 つの ComputerSid を指定し、ComputerSid を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。
 
 **プロパティ名: オプション**
 

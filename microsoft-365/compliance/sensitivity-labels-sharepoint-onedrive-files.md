@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、Word、Excel、および PowerPoint ファイルのSharePointラベルのOneDrive。
-ms.openlocfilehash: 695084443ee10de87f091d358b63fad079e03093
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: d4c0f9b4c280394dd63820320ba7ca30e349c361
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861517"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878042"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-SharePoint および OneDrive の Office ファイルの感度ラベルを有効にして、ユーザーが web のOfficeラベル[](sensitivity-labels.md)を適用できます。 この機能を有効にすると、リボンに [感度] ボタンが表示され、ラベルを適用し、ステータス バーに適用されたラベル名が表示されます。
+SharePoint および OneDrive で[](sensitivity-labels-office-apps.md#office-file-types-supported)サポートされている Office ファイルに対して組み込みのラベル付けを有効にして、ユーザーが[](sensitivity-labels.md)Office で web に対して感度ラベルを適用できます。 この機能を有効にすると、リボンに [感度] ボタンが表示され、ラベルを適用し、ステータス バーに適用されたラベル名が表示されます。
 
-また、この機能を有効にするとSharePoint、OneDriveラベルを使用して暗号化されたファイルの内容を処理できます。 ラベルは、web または Office デスクトップ アプリのOfficeに適用し、SharePointおよびOneDrive。 この機能を有効にするまで、これらのサービスは暗号化されたファイルを処理できないので、共同編集、電子情報開示、データ損失防止、検索、その他の共同作業機能は、これらのファイルでは機能しません。
+また、この機能を有効にすると、SharePoint および OneDrive は、暗号化された Office ファイルの内容を、感度ラベルを使用して処理できます。 ラベルは、web または Office デスクトップ アプリのOfficeに適用し、SharePointおよびOneDrive。 この機能を有効にするまで、これらのサービスは暗号化されたファイルを処理できないので、共同編集、電子情報開示、データ損失防止、検索、その他の共同作業機能は、これらのファイルでは機能しません。
 
 SharePoint および OneDrive の Office ファイルの感度ラベルを有効にした後、クラウドベースのキーで暗号化を適用する (およびダブル キー暗号化を使用しない) 感度ラベルを持つ新しいファイルと変更[](double-key-encryption.md)されたファイルに対して次の手順を実行します。
 
@@ -64,7 +64,7 @@ SharePoint および OneDrive の Office ファイルの感度ラベルを有効
 
 SharePoint Information Rights Management (IRM) を使用して SharePoint でドキュメントを現在保護している場合は、このページの SharePoint Information [Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels)と感度ラベルセクションを確認してください。 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 これらの新機能は、感度ラベル [でのみ機能](sensitivity-labels.md) します。 現在 Azure Information Protection ラベルがある場合は、アップロードする新しいファイルに対してこれらの機能を有効にできるよう、最初にラベルを感度ラベルに移行します。 手順については、、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 

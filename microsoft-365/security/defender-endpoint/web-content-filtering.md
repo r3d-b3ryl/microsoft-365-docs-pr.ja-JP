@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c7b39b600af2fed130a0b78a590740a8bc063f50
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822324"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861697"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -61,9 +61,11 @@ Web コンテンツ フィルターは主要な Web ブラウザーで利用で�
 
 - Windows 10 EnterpriseE5、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3 + Microsoft 365 E5 Securityまたは Microsoft Defender for Endpoint スタンドアロン ライセンス。 
 - ポータルへのMicrosoft Defender セキュリティ センターアクセス ( https://securitycenter.windows.com) .
-- 最新の Microsoft Defender Windows 10更新プログラム (バージョン 1607) 以降で実行されているデバイス。
+- Anniversary update (Windows 10 1607) 以降で最新の MoCAMP 更新プログラムを使用して実行されているデバイス。
+- Windows DefenderSmartScreen とネットワーク保護が有効です。
 
-## <a name="data-handling"></a>データ処理
+
+## <a name="data-handling"></a>データの処理
 
 データは、Microsoft Defender for Endpoint データ処理設定の一部として選択された領域 [に格納されます](data-storage-privacy.md)。 データは、その地域のデータ センターから離れる必要があります。 さらに、お客様のデータは、データ プロバイダーを含む第三者と共有されることはありません。
 
@@ -162,4 +164,11 @@ Web コンテンツ フィルターでブロックされたカテゴリを上書
 
 - Web コンテンツ フィルター レポートは、現在、上位 5,000 レコードの表示に制限されています。 たとえば、ドメイン レポートには、該当する場合、特定のフィルター クエリの上位 5000 ドメインの最大数だけが表示されます。 
 
+
+
+- [Web 保護の概要](web-protection-overview.md)
+- [Web の脅威に対する保護](web-threat-protection.md)
+- [Web セキュリティの監視](web-protection-monitoring.md)
+- [Web の脅威への対応](web-protection-response.md)
+- [ネットワーク保護の要件](web-content-filtering.md)
 
