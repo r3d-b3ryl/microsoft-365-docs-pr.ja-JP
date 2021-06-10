@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な仕事用アカウントまたは学校アカウントを持つユーザーは、企業Microsoft 365のセキュリティOffice 365を満たすエクスペリエンスで Cortana を取得できます。
-ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e4b934a8991837637869074d43df89e70b09924d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635800"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866621"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -89,19 +89,17 @@ Teams モバイル アプリおよび Microsoft Teams ディスプレイ デバ�
 
 **管理コントロール**
 
-Cortana 音声アシスタンスは、テナントに対して既定で有効になります。 管理者は、ポリシー (TeamsCortanaPolicy) を介して、テナント内で Cortana 音声Teamsを使用できるユーザーを制御できます。 このポリシーは、ユーザー アカウント レベルまたはテナント レベルで設定できます。 管理者は、このポリシー コントロール内の CortanaVoiceInvocationMode フィールドを使用して、Cortana が無効になっているか、プッシュ ボタン呼び出しでのみ有効になっているか、ウェイク ワード呼び出しで有効になっているのかを判断することもできます (Microsoft Teams ディスプレイなど、それをサポートするデバイスに適用されます)。 Teams モバイル アプリは、英語で米国の Microsoft 365 Enterprise ユーザー向け最初のリリースの時点でウェイク ワードのアクティブ化をサポートしないが、今後サポートされる予定です。
+Cortana 音声アシスタンスは、テナントに対して既定で有効になります。 管理者は、ポリシー (TeamsCortanaPolicy) を介して、テナント内で Cortana 音声Teamsを使用できるユーザーを制御できます。 このポリシーは、ユーザー アカウント レベルまたはテナント レベルで設定できます。 管理者は、このポリシー コントロール内の CortanaVoiceInvocationMode フィールドを使用して、Cortana が無効になっているか、プッシュ ボタン呼び出しでのみ有効になっているか、ウェイク ワード呼び出しで有効になっているのかを判断することもできます (Microsoft Teams ディスプレイなど、それをサポートするデバイスに適用されます)。 
 
 **ユーザー コントロール**
 
-個々のユーザーは、マイク ボタンをクリックして、Teamsアプリで Cortana 音声サポートを試しに行います。 Microsoft Teams &#8220;Cortana.&#8221; Teams モバイル アプリまたは Microsoft Teams ディスプレイの設定を使用して、Teams の Cortana がデバイスで有効になっているかどうかを制御することもできます。 
+個々のユーザーは、マイク ボタンをクリックして、Teamsアプリで Cortana 音声サポートを試しに行います。 Microsoft Teams ディスプレイ デバイスで、&#8220;Cortana.&#8221; と言うだけで Cortana 音声アシスタンスを試し、Cortana がウェイク ワードの呼び出しに応答するかどうかを制御することもできます。 
 
-1. モバイル アプリTeamsを開く、または画面表示のアンビエント (ホーム) 画面にMicrosoft Teamsします。
+1.  モバイルTeams開く
+2.  [設定] に移動する
+3.  Cortana の選択
+4.  [音声のアクティブ化] トグルを切り替える
 
-2. モバイル アプリでTeamsに移動 **します設定。** [ユーザー] Microsoft Teamsで、ユーザー のアバターを選択し、[ユーザーのアバター] を設定。 Cortana が有効になっている場合は、「Cortana &#8220;」に移動設定.&#8221;
-
-3. **[Cortana] を選択します**。
-
-4. デバイスで Cortana **音声アシ****スタンス** が必要かどうかに応じて、トグルを [オン] または [オフ] に移動します。
 
 [Cortana 音声サポートの詳細については、Teams](/microsoftteams/cortana-in-teams)
 

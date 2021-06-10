@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: bb4d50c06c123d3d380604ef64b887f4f00f751d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844192"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866669"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -45,6 +45,9 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 > ```https
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
+
+## <a name="june-2021"></a>2021 年 6 月
+- [デバイス グループ定義には、](/microsoft-365/security/defender-endpoint/machine-groups) 条件ごとに複数の値を含めることができます。 複数のタグ、デバイス名、ドメインを 1 つのデバイス グループの定義に設定できます。
 
 ## <a name="march-2021"></a>2021 年 3 月
 - [アプリケーションを使用して改ざん防止を管理Microsoft Defender セキュリティ センター](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> テナント接続というメソッドを使用して、Windows 10、Windows Server 2016、Windows サーバー 2019 の改ざん防止設定 *を管理できます*。 

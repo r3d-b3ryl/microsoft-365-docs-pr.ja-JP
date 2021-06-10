@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 00ed505b153e5af4d89038bdc53e988ee763827b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a6271c1bd3714cfdffc606b7ada9b027e394216d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845644"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866729"
 ---
 # <a name="behavioral-blocking-and-containment"></a>動作ブロックと封じ込め
 
@@ -46,11 +46,11 @@ ms.locfileid: "52845644"
 
 動作のブロックと格納機能は、Defender for Endpoint の複数のコンポーネントと機能と組み合わせ、攻撃を直ちに停止し、攻撃の進行を防止します。
 
-- [次世代の保護](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)(Microsoft Defender ウイルス対策を含む) は、動作を分析して脅威を検出し、実行を開始した脅威を停止できます。
+- [次世代の保護](microsoft-defender-antivirus-in-windows-10.md)(Microsoft Defender ウイルス対策を含む) は、動作を分析して脅威を検出し、実行を開始した脅威を停止できます。
 
-- [エンドポイントの検出と応答](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)(EDR) は、ネットワーク、デバイス、カーネルの動作全体でセキュリティ信号を受信します。 脅威が検出されると、アラートが作成されます。 同じ種類の複数のアラートがインシデントに集約され、セキュリティ運用チームが調査して対応しやすくなります。
+- [エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR) は、ネットワーク、デバイス、カーネルの動作全体でセキュリティ信号を受信します。 脅威が検出されると、アラートが作成されます。 同じ種類の複数のアラートがインシデントに集約され、セキュリティ運用チームが調査して対応しやすくなります。
 
-- [Defender for Endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)には、EDR を介して受信したネットワーク、エンドポイント、カーネルの動作信号に加えて、ID、電子メール、データ、アプリにわたるさまざまな光学機能があります。 Defender [、Defender Microsoft 365の](/microsoft-365/security/defender/microsoft-threat-protection)コンポーネントは、これらの信号を処理して関連付け、検出アラートを発生し、インシデントに関連するアラートを接続します。
+- [Defender for Endpoint](overview-endpoint-detection-response.md)には、EDR を介して受信したネットワーク、エンドポイント、カーネルの動作信号に加えて、ID、電子メール、データ、アプリにわたるさまざまな光学機能があります。 Defender [、Defender Microsoft 365の](../defender/microsoft-365-defender.md)コンポーネントは、これらの信号を処理して関連付け、検出アラートを発生し、インシデントに関連するアラートを接続します。
 
 これらの機能を使用すると、実行を開始した場合でも、より多くの脅威を防止またはブロックできます。 疑わしい動作が検出されると、脅威が含まれる、アラートが作成され、脅威は追跡で停止されます。 
 
@@ -60,7 +60,7 @@ ms.locfileid: "52845644"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>動作のブロックと格納のコンポーネント
 
-- **クライアント上のポリシー駆動型攻撃 [表面の縮小ルール](/microsoft-365/security/defender-endpoint/attack-surface-reduction)** 定義済みの一般的な攻撃動作は、攻撃表面の縮小ルールに従って実行されません。 このような動作を実行しようとすると、通知通知としてMicrosoft Defender セキュリティ センター [https://securitycenter.windows.com](https://securitycenter.windows.com) 表示されます。 (攻撃表面の縮小ルールは既定では有効になっていません。ポリシーは既定で構成Microsoft Defender セキュリティ センター)。
+- **クライアント上のポリシー駆動型攻撃 [表面の縮小ルール](attack-surface-reduction.md)** 定義済みの一般的な攻撃動作は、攻撃表面の縮小ルールに従って実行されません。 このような動作を実行しようとすると、通知通知としてMicrosoft Defender セキュリティ センター [https://securitycenter.windows.com](https://securitycenter.windows.com) 表示されます。 (攻撃表面の縮小ルールは既定では有効になっていません。ポリシーは既定で構成Microsoft Defender セキュリティ センター)。
 
 - **[クライアントの動作のブロック](client-behavioral-blocking.md)** エンドポイント上の脅威は機械学習によって検出され、ブロックされ、自動的に修復されます。 (クライアントの動作ブロックは既定で有効になっています)。 
 
@@ -93,6 +93,7 @@ Microsoft は引き続き脅威保護の機能を向上させるので、行動�
 「AI[](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)による行動ベースのブロックは、追跡中の攻撃を停止する」で説明したように、世界中の 100 の組織に対する資格情報の盗難攻撃は、行動ブロックと格納機能によって停止されました。 ルアー ドキュメントを含むスピア フィッシングメール メッセージが、対象の組織に送信されました。 受信者が添付ファイルを開いた場合、関連するリモート ドキュメントはユーザーのデバイスでコードを実行し、Lokibot マルウェアを読み込む事ができた。これは資格情報を盗み、盗まれたデータを汚し、コマンド アンド コントロール サーバーからのさらなる指示を待った。 
 
 Defender for Endpoint の動作ベースのデバイス学習モデルは、攻撃チェーンの 2 つのポイントで攻撃者の手法をキャッチして停止しました。
+
 - 最初の保護層が悪用の動作を検出しました。 クラウド内のデバイス学習分類子は、脅威を正しく識別し、すぐにクライアント デバイスに攻撃をブロックするように指示しました。
 - 2 番目の保護層は、攻撃が最初のレイヤーを越え、プロセスの空きを検出し、そのプロセスを停止し、対応するファイル (Lokibot など) を削除した場合の停止に役立ちます。 
 
@@ -118,9 +119,9 @@ Defender for Endpoint の動作ベースのデバイス学習モデルは、攻�
 
 この例では、動作のブロックと封じ込め機能を使用すると、脅威が検出され、格納され、自動的にブロックされます。 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-- [Defender for Endpoint の詳細](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+- [Defender for Endpoint の詳細](overview-endpoint-detection-response.md)
 
 - [攻撃表面の縮小ルールを構成する](attack-surface-reduction.md)
 
@@ -128,4 +129,4 @@ Defender for Endpoint の動作ベースのデバイス学習モデルは、攻�
 
 - [最近のグローバル脅威アクティビティを確認する](https://www.microsoft.com/wdsi/threats)
 
-- [Defender の概要をMicrosoft 365する](/microsoft-365/security/defender/microsoft-threat-protection)
+- [Defender の概要をMicrosoft 365する](../defender/microsoft-365-defender.md)

@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 06/02/2021
 ms.topic: article
-ms.openlocfilehash: 10351d97ba72945f929e042dc72a37724a1df291
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e78b21b751aa398ed4449fb398f12b60f1929873
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769607"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866681"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender の攻撃表面の縮小をテストする
 
@@ -46,7 +46,7 @@ Defender for Endpoint を使用すると、特に攻撃表面の縮小ルール�
 > [!TIP]
 > また、テストグラウンドのWindows Defenderに[アクセスして](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)demo.wd.microsoft.com 機能を確認し、機能の動作を確認できます。
 
- **監査オプション** | **監査モードを有効にする方法** | **イベントを表示する方法**
+| 監査オプション | 監査モードを有効にする方法 | イベントを表示する方法 |
 |---------|---------|---------|
 | 監査はすべてのイベントに適用されます | [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md) | [フォルダー アクセスイベントの制御](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
 | 監査は個々のルールに適用されます | [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md) | [攻撃表面の縮小ルール イベント](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
