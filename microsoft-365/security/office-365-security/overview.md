@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 におけるセキュリティについて、EOP、Defender for Office 365 プラン 1 およびプラン 2、セキュリティの標準構成と厳格な構成の違いなどを説明します。 お持ちのセキュリティ製品を理解し、組織のメールやファイルを保護する方法を学びます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db37718ce2feae9c79ff6b323eb22e30f24e72b2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 29602d5fe62c84b9293522a94b71c550d360b3e3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205835"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877802"
 ---
 # <a name="office-365-security-overview"></a>Office 365 セキュリティの概要
 
@@ -117,7 +117,7 @@ Microsoft Defender for Office 365 P1 では、調査機能として **リアル�
 
 このように、Microsoft Defender for Office 365 P2 では、***検出/対応*** 面の機能が強化され、新たに 自動化された追及機能が追加されています。
 
-Microsoft Defender for Office 365 P2 のメインの追及ツールは、リアルタイム検出ではなく **脅威エクスプローラー** と呼ばれるツールです。 セキュリティ センターに移動した際に脅威エクスプローラーが表示される場合、Microsoft Defender for Office 365 P2 を使用していることを意味します。
+Microsoft Defender for Office 365 P2 のメインの追及ツールは、リアルタイム検出ではなく **脅威エクスプローラー** と呼ばれるツールです。 Defender ポータルに移動するときに脅威エクスプローラーが表示Microsoft 365、Microsoft Defender にアクセスして P2 Office 365します。
 
 Microsoft Defender for Office 365 P1 および P2 の詳細については、**[こちらの記事をご覧ください](defender-for-office-365.md)**。
 

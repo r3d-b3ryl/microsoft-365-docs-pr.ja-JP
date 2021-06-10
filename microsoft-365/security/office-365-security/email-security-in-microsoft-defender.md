@@ -16,12 +16,12 @@ description: マルウェアのフィッシング詐欺の試行を表示およ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2a6d3d10cfa21c0ad2da948bff130cb9336ebd8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f0326a51f14b402b9a579e8668ef2c026f9de789
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297629"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877898"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Microsoft Defender の脅威エクスプローラーを使用した電子メール Office 365
 
@@ -45,7 +45,9 @@ ms.locfileid: "52297629"
 
 Microsoft 365 テクノロジによって並べ替えた電子メールで検出されたマルウェアを確認するには、[](threat-explorer-views.md#email--malware)エクスプローラーの [電子メール > マルウェア] ビュー (またはリアルタイム検出) を使用します。 マルウェアは既定のビューなので、エクスプローラーを開いたとすぐに選択される場合があります。
 
-1. セキュリティ コンプライアンス センター ( &) で <https://protection.office.com> 、[脅威 **管理** \> **エクスプローラー** ] (または [ **リアルタイムの検出] ) を選択します**。 (この例では、エクスプローラーを使用します)。コンバージド セキュリティ センターにMicrosoft 365場合は、[メール] までスクロールし、& https://security.microsoft.com/) **エクスプローラーに**  >  **移動します**。
+1. セキュリティ コンプライアンス センター ( &) で <https://protection.office.com> 、[脅威 **管理** \> **エクスプローラー** ] (または [ **リアルタイムの検出] ) を選択します**。 (この例では、エクスプローラーを使用します)。
+
+   統合された Defender ポータル ( ) を使用している場合Microsoft 365コラボレーション エクスプローラーの [電子メール] <https://security.microsoft.com> **&スクロール**  >  **します**。
 
    ここから、ビューから開始し、調査する特定のフレーム (必要な場合) を選択し、エクスプローラーのウォークスルーに応じてフィルターを [フォーカスします](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)。
 

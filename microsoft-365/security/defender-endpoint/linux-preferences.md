@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346380"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861553"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -139,7 +139,7 @@ ms.locfileid: "52346380"
 
 **パスの種類 (ファイル/ディレクトリ)**
 
-*path* プロパティがファイルまたはディレクトリを参照しているかどうかを示します。 
+*path* プロパティがファイルまたはディレクトリを参照しているかどうかを示します。
 
 |||
 |:---|:---|
@@ -397,7 +397,7 @@ ms.locfileid: "52346380"
          },
          {
             "$type":"excludedFileExtension",
-            "extension":"pdf"
+            "extension":".pdf"
          },
          {
             "$type":"excludedFileName",
@@ -444,7 +444,7 @@ python -m json.tool mdatp_managed.json
 JSON が整形式の場合、上記のコマンドはターミナルに出力し、終了コードを返します `0` 。 それ以外の場合は、問題を説明するエラーが表示され、コマンドは終了コードを返します `1` 。
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>ファイル上のmdatp_managed.jsが正常に動作しているのを確認する
-/etc/opt/microsoft/mdatp/managed/mdatp_managed.jsが正しく動作することを確認するには、次の設定の横に "[managed]" と表示されます。  
+/etc/opt/microsoft/mdatp/managed/mdatp_managed.jsが正しく動作することを確認するには、次の設定の横に "[managed]" と表示されます。
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
 - passice_mode_enabled

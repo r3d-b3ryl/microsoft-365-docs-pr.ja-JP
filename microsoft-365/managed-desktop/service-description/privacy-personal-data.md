@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3f1a251d98be5b3a9fefa5c1f6d5d5562516d5d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908176"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861685"
 ---
 # <a name="privacy-and-personal-data"></a>プライバシーと個人データ
 
@@ -109,10 +109,8 @@ Microsoft プライバシー ステートメントの診断データ収集Window
 ユーザーの内部データ Microsoft マネージド デスクトップへの直接アクセスは、次のいくつかの方法で制限されます。
 
 - エンジニアリング リード レベルの承認が必要です。
-- 監査と時間制限の両方です。
-- 高度にセキュリティで保護された制限付きワークステーションを使用する必要があります。
+- 時間の境界が設定され、監査されます。
 - すべてのデータは、保存中に暗号化されます。
-- 立ち上がりアクセスはありません。
 - Microsoft マネージド デスクトップの内部管理ポータルへのアクセスには、高度にセキュリティで保護された制限付きワークステーションが必要です。
 
 ## <a name="processing-personal-data-in-a-compliant-manner"></a>準拠した方法で個人データを処理する

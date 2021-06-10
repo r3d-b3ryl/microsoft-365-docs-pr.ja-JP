@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、Word、Excel、および PowerPoint ファイルのSharePointラベルのOneDrive。
-ms.openlocfilehash: 8007f085e7bcba7f055f616954e2f0549f6f125a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 695084443ee10de87f091d358b63fad079e03093
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770399"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861517"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -220,7 +220,11 @@ SharePoint と OneDrive で感度ラベルを使用する場合は、新しい�
 
 たとえば、"Confidential" というラベルが付いたドキュメントを検索し、そのラベルに "8faca7b8-8d20-48a3-8ea2-0f96310a848e" という GUID を入力します。
 
-`InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`    
+```
+InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
+```
+
+検索では、圧縮ファイル内のラベル付きドキュメント (ファイルファイルなど) が.zipされません。
 
 感度ラベルの GUID を取得するには [、Get-Label コマンドレットを使用](/powershell/module/exchange/get-label) します。    
 
@@ -242,7 +246,7 @@ SharePoint と OneDrive で感度ラベルを使用する場合は、新しい�
 
 代わりに、グローバル管理者または[SharePoint](/sharepoint/sharepoint-admin-role)管理者は[Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile)コマンドレットを実行して、感度ラベルと暗号化の両方を削除できます。 このコマンドレットは、管理者がサイトまたはファイルへのアクセス許可を持っていなくても、Azure Rights Management サービスが利用できない場合でも実行されます。 
 
-例:
+以下に例を示します。
 
 ```powershell
 Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
@@ -268,7 +272,7 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 複数地域をMicrosoft 365場合は、各地域の場所に対してこのコマンドを実行する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 SharePoint および OneDrive の Office ファイルの感度ラベルを有効にした後、自動ラベル付けポリシーを使用してこれらのファイルに自動的にラベルを付ける方法を検討してください。 詳細については、「コンテンツに感度 [ラベルを自動的に適用する」を参照してください](apply-sensitivity-label-automatically.md)。
 

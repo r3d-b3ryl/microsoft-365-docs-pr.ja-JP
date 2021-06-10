@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: c761b4896ea5b616aed80ed2c54ef91fc465b201
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793162"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877886"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender の自動調査と応答 (AIR) Office 365
 
@@ -46,7 +46,7 @@ AIR を使用すると、セキュリティ運用チームは、より効率的�
 - [AIR の全体的な流れ](#the-overall-flow-of-air)。
 - [AIR を取得する方法](#how-to-get-air)。そして
 - AIR [機能を構成または](#required-permissions-to-use-air-capabilities) 使用するために必要なアクセス許可。
-- セキュリティ センターに近日公開される変更
+- Defender ポータルに近日公開されるMicrosoft 365変更
 
 この記事には、次 [の手順、](#next-steps)および詳細を確認するためのリソースも含まれています。
 
@@ -89,7 +89,11 @@ Microsoft Defender for Office 365修復アクションは自動的に実行さ�
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>自動調査をトリガーするアラート ポリシー
 
-Microsoft 365には、管理者のアクセス許可の悪用、マルウェアアクティビティ、外部および内部の潜在的な脅威、および情報ガバナンスのリスクを特定するのに役立つ多くの組み込みアラート ポリシーがExchange提供されます。 既定のアラート [ポリシーのいくつかは、](../../compliance/alert-policies.md#default-alert-policies) 自動調査をトリガーできます。 次の表では、自動調査をトリガーするアラート、Microsoft 365 セキュリティ センターでの重大度、および生成方法について説明します。
+Microsoft 365には、管理者のアクセス許可の悪用、マルウェアアクティビティ、外部および内部の潜在的な脅威、および情報ガバナンスのリスクを特定するのに役立つ多くの組み込みアラート ポリシーがExchange提供されます。 既定のアラート [ポリシーのいくつかは、](../../compliance/alert-policies.md#default-alert-policies) 自動調査をトリガーできます。 次の表に、自動調査をトリガーするアラート、Microsoft 365 Defender ポータルでの重大度、および生成方法を示します。
+
+<br>
+
+****
 
 |通知|重要度|アラートの生成方法|
 |---|---|---|
@@ -108,10 +112,15 @@ Microsoft 365には、管理者のアクセス許可の悪用、マルウェア�
 
 アクセス許可は、次の表に示す役割など、特定の役割を通じて付与されます。
 
+<br>
+
+****
+
 |タスク|必要な役割|
 |---|---|
 |AIR 機能のセットアップ|次のいずれかの役割。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらの役割は、コンプライアンス[センター](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Azure Active Directoryセキュリティ センター [&割り当てることができます](permissions-in-the-security-and-compliance-center.md)。|
 |自動調査の開始 <p> --- または --- <p> 推奨されるアクションを承認または拒否する|コンプライアンス センターまたはセキュリティ コンプライアンス センター [Azure Active Directory割り](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)当てられた次[&の 1 つ](permissions-in-the-security-and-compliance-center.md)。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と削除 (この役割は、コンプライアンス センターのセキュリティ & [割り当てられます](permissions-in-the-security-and-compliance-center.md)。 そこに新しい役割グループを作成し、その新しい役割グループに Search and Purge 役割を追加する必要がある場合があります。</li></ul>|
+|
 
 ## <a name="required-licenses"></a>必須のライセンス
 
@@ -121,16 +130,16 @@ Microsoft 365には、管理者のアクセス許可の悪用、マルウェア�
 - 組織のセキュリティ操作チーム (セキュリティ リーダーと検索と削除の役割を持 **つユーザーを含** む)
 - エンド ユーザー
 
-## <a name="changes-are-coming-soon-in-your-security-center"></a>セキュリティ センターで変更が近日公開される
+## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Defender ポータルで変更が近日Microsoft 365予定です
 
-Microsoft Defender で既に AIR 機能を Office 365 に使用している場合は、セキュリティ センターの強化されたセキュリティ センターに変更Microsoft 365[しています](../defender/overview-security-center.md)。
+Microsoft Defender の AIR 機能を Office 365 用に既に使用している場合は、Defender ポータルの改善されたMicrosoft 365[について説明します](../defender/overview-security-center.md)。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="統合アクション センター":::
 
-新しいセキュリティ センターと強化されたセキュリティ センターには[、Microsoft Defender](defender-for-office-365.md) for Office 365 Microsoft Defender for Endpoint の AIR 機能[が統合されています](../defender-endpoint/automated-investigations.md)。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。
+新しく改良された Defender ポータルMicrosoft 365、Microsoft Defender for [microsoft Defender と Microsoft Defender](defender-for-office-365.md) for Endpoint の AIR 機能Office 365統合[されています](../defender-endpoint/automated-investigations.md)。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。
 
 > [!TIP]
-> 新しいセキュリティ Microsoft 365 ( <https://security.microsoft.com> ) は、次のセンターに置き換まれます。
+> 新しい Defender Microsoft 365 Microsoft 365 ( <https://security.microsoft.com> ) は、次のセンターを置き換える。
 >
 > - Office 365セキュリティ & コンプライアンス センター ( <https://protection.office.com> )
 > - Microsoft Defender セキュリティ センター ( <https://securitycenter.windows.com> )
@@ -141,7 +150,11 @@ Microsoft Defender で既に AIR 機能を Office 365 に使用している場�
 
 次の表に、Microsoft Defender の AIR に加わる変更と改善点を示Office 365。
 
-|項目|何が変わるのか?|
+<br>
+
+****
+
+|アイテム|何が変わるのか?|
 |---|---|
 |**[調査]** ページ|更新された [ **調査] ページ** は、Microsoft Defender for Endpoint に表示 [される情報とより一貫性があります](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 統合された新しい [調査] ビューに合わせて、一般的な形式とスタイルの変更 **が表示** されます。 たとえば、調査グラフの形式が統一されています。|
 |**[ユーザー]** タブ|[ **ユーザー]** タブが [ **メールボックス] タブ** です。ユーザーに関する詳細は、[メールボックス] タブ **に表示** されます。|
@@ -153,7 +166,7 @@ Microsoft Defender で既に AIR 機能を Office 365 に使用している場�
 |**[インシデント]** ページ|[ **インシデント] ページ** では、複数の調査を相互に関連付け、調査の統合されたビューを向上しました。 ([インシデントの詳細については、.)](../defender/incidents-overview.md)|
 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [自動調査の詳細と結果を確認する](air-view-investigation-results.md#view-details-of-an-investigation)
 - [保留中のアクションの確認と承認](air-remediation-actions.md)

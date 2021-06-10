@@ -1,6 +1,6 @@
 ---
 title: 電子メール保護の順序と優先順位
-keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティ センター、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Identity
+keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティ センター、Microsoft 365 Defender ポータル、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Identity
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) の保護のアプリケーションの順序と、保護ポリシーの優先度の値によって適用されるポリシーがどのように決定されるのかについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7243fd79287e19528e999774dbd0dd018fa86759
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539013"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877850"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子メール保護の順序と優先順位
 
@@ -45,7 +45,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
   ****
 
-  |Priority|電子メールの保護|カテゴリ|管理する場所|
+  |優先度|電子メールの保護|Category|管理する場所|
   |---|---|---|---|
   |1|マルウェア|CAT:MALW|[EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
   |2|フィッシング|CAT:PHSH|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
@@ -69,7 +69,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 ****
 
-|ポリシー名|Priority|ユーザー偽装|スプーフィング対策|
+|ポリシー名|優先度|ユーザー偽装|スプーフィング対策|
 |---|---|---|---|
 |ポリシー A|1|オン|オフ|
 |ポリシー B|2|オフ|オン|

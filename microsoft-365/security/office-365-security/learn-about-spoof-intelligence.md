@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、スプーフィング インテリジェンスの分析情報について、Exchange Online Protection (EOP) で学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2fc591bbaf2ecc6f59c2b569acde521453887c2a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 280743e87ce6039f456cec0b89bff57a31d75691
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822355"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877826"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP でのスプーフィング インテリジェンスの分析情報
 
@@ -53,13 +53,13 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
   - 送信者はメーリングリスト (ディスカッション リストとも呼ばれる) に登録され、メーリングリストは元の送信者からメーリングリストのすべての参加者にメールを中継します。
   - 外部企業は、別の会社に代わって電子メールを送信します (たとえば、自動レポートやサービスとしてのソフトウェア会社など)。
 
-Microsoft 365 セキュリティセンターのスプーフィング インテリジェンス分析情報を使用して、正当に認証されていない電子メール (SPF、DKIM、または DMARC チェックに合格しないドメインからのメッセージ) を送信しているスプーフィング送信者をすばやく識別し、それらの送信者を手動で許可できます。
+Microsoft 365 Defenderポータルのスプーフィング インテリジェンス分析情報を使用して、認証されていない電子メール (SPF、DKIM、または DMARC チェックに合格しないドメインからのメッセージ) を正当に送信しているスプーフィングされた送信者をすばやく識別し、それらの送信者を手動で許可できます。
 
 既知の送信者が既知の場所からスプーフィングされたメッセージを送信できるようにすることで、誤検知を減らします (良い電子メールは悪いとマークされています)。 許可されたスプーフィングされた送信者を監視することで、セキュリティの層を追加して、安全でないメッセージが組織に到着することを防止します。
 
 同様に、スプーフィング インテリジェンスによって許可されたスプーフィングされた送信者を確認し、スプーフィング インテリジェンスの分析情報からそれらの送信者を手動でブロックできます。
 
-この記事の残りの部分では、セキュリティ センターと PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の場合は Exchange Online PowerShell、Exchange Online メールボックスのない組織ではスタンドアロンの EOP PowerShell) でスプーフィング インテリジェンスインサイトを使用する方法について説明します。
+この記事の残りの部分では、Microsoft 365 Defender ポータルと PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の場合は Exchange Online PowerShell、Exchange Online メールボックスのない組織ではスタンドアロンの EOP PowerShell) でスプーフィング インテリジェンスインサイトを使用する方法について説明します。
 
 > [!NOTE]
 >
@@ -71,7 +71,7 @@ Microsoft 365 セキュリティセンターのスプーフィング インテ�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com/> でセキュリティ センターを開きます。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。 スプーフィング インテリジェンスインサイト **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/spoofintelligence> 。
+- Defender ポータルのMicrosoft 365開きます <https://security.microsoft.com/> 。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。 スプーフィング インテリジェンスインサイト **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/spoofintelligence> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -90,9 +90,9 @@ Microsoft 365 セキュリティセンターのスプーフィング インテ�
 
 - スプーフィング インテリジェンスの推奨設定については [、「EOP フィッシング対策ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)。
 
-## <a name="open-the-spoof-intelligence-insight-in-the-security-center"></a>セキュリティ センターでスプーフィング インテリジェンスの分析情報を開く
+## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Defender ポータルでスプーフィング インテリジェンスMicrosoft 365開く
 
-1. セキュリティ センターで、[メールの送信] **&[&** ポリシー] セクションの [フィッシング対策] \>  \>  \>  \> **に移動します**。
+1. [Defender ポータルMicrosoft 365] で、[メール &**グループ** ポリシー&ポリシー] セクションの [フィッシング対策] \>  \>  \>  \> **に移動します**。
 
 2. [フィッシング **対策] ページでは** 、スプーフィング インテリジェンスの分析情報は次のように表示されます。
 

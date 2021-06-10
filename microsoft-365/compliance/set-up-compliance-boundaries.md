@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、電子情報開示マネージャーが電子情報開示マネージャーで検索できるユーザー コンテンツの場所を制御する論理境界を作成するMicrosoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02e2e2f048ab521ad5640003cb127ed7bfa19641
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 1a84bc77cb78a9da3cfe873849a4148e55501137
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706608"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878030"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>電子情報開示調査のコンプライアンス境界を設定する
 
@@ -92,6 +92,9 @@ ms.locfileid: "52706608"
 特にメールボックスのユーザー属性はExchangeですが、現在サポートされている属性は上記の属性OneDrive。
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>手順 2: Microsoft サポートに要求を送信して、ユーザー属性をユーザー アカウントと同期OneDriveする
+
+> [!IMPORTANT]
+> この手順は不要です。 2021 年 6 月から、メールボックス フィルターはユーザーにOneDrive for Business。 属性をユーザーに同期OneDrive要求は不要になったため、拒否されます。 この記事は近い将来更新される予定です。
 
 次の手順では、Microsoft サポートに要求を送信して、手順 1 で選択した Azure AD 属性を組織内のすべての OneDrive アカウントに同期します。 この同期が行われると、手順 1 で選択した属性 (とその値) は、 という名前の非表示の管理プロパティにマップされます `ComplianceAttribute` 。 この属性を使用して、手順 4 でユーザーの検索OneDriveフィルターを作成します。
   

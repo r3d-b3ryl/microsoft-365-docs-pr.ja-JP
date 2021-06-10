@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4be87e296739020c80babb864c57bc803f10d3e0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 6def1b64430ad70dc4b4898ba2b914288826873e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843688"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861493"
 ---
 # <a name="list-vulnerabilities"></a>脆弱性の一覧表示
 
@@ -39,7 +39,7 @@ ms.locfileid: "52843688"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-組織に影響を与えるすべての脆弱性の一覧を取得します。
+すべての脆弱性の一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。

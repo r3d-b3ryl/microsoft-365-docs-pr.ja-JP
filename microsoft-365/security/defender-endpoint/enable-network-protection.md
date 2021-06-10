@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6afdcc16493839e83771ac831831fdbb121663a1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: b62659360e990467524ec632968dfea313d0b164
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841776"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861673"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -43,7 +43,7 @@ ms.locfileid: "52841776"
 
 2. サイド **メニュー HKEY_LOCAL_MACHINE** を選択する
 
-3. 入れ子になったメニューを [**ソフトウェア** ポリシー] Microsoft ポリシー マネージャー Windows Defender  >    >    >    >  **移動します。** 
+3. 入れ子になったメニューから **Software**  >  **Microsoft Windows Defender Windows Defender**  >    >  **Exploit Guard ネットワーク保護に**  >  **移動します。**
 
 4. デバイス上のネットワーク保護の現在の状態を表示するには **、[EnableNetworkProtection]** を選択します。
 
@@ -120,7 +120,7 @@ ms.locfileid: "52841776"
 
 1. [スタート **] を** 選択し **、「regedit」と** 入力してレジストリ **エディターを開きます**。
 
-2. [ファイル] に **移動HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
+2. [ファイル] に **移動HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. **[EnableNetworkProtection] を選択し**、値を確認します。
    * 0=Off

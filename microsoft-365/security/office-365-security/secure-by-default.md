@@ -17,12 +17,12 @@ ms.collection:
 description: セキュリティ保護 (EOP) の既定の設定Exchange Online Protection詳細
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624051"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861529"
 ---
 # <a name="secure-by-default-in-office-365"></a>既定ではセキュリティで保護Office 365
 
@@ -58,7 +58,7 @@ Microsoft は既定で顧客のセキュリティを維持したいと考えて�
 これらの上書きに関する詳細については、「差出人セーフ リストの作成 [」を参照してください](create-safe-sender-lists-in-office-365.md)。
 
 > [!NOTE]
-> EOP スパム対策ポリシーで信頼度の高いフィッシングメールの評決を受け、メッセージを迷惑メール フォルダーに移動するアクションを廃止中です。 信頼度の高いフィッシング メッセージにこのアクションを使用するスパム対策ポリシーは、検疫メッセージに **変換されます**。 信頼 **度の高いフィッシング メッセージ** の [電子メール アドレスにメッセージをリダイレクトする] アクションは影響を受けません。
+> EOP スパム対策 **ポリシーの** 信頼度の高いフィッシングメールの評決に対して、[メッセージを迷惑メールフォルダーに移動する] アクションは廃止されました。 信頼度の高いフィッシング メッセージにこのアクションを使用するスパム対策ポリシーは、検疫メッセージに **変換されます**。 信頼 **度の高いフィッシング メッセージ** の [電子メール アドレスにメッセージをリダイレクトする] アクションは影響を受けません。
 
 既定ではセキュリティで保護は、オンまたはオフにできる設定ではなく、潜在的に危険なメッセージや望ましくないメッセージをメールボックスから守るフィルター処理の仕組みです。 マルウェアと高信頼のフィッシング メッセージは検疫する必要があります。 マルウェアまたは高信頼フィッシングとして検疫されたメッセージを管理できるのは管理者のみです。また、そこから Microsoft に誤検知を報告することもできます。 詳細については [、「EOP で検疫済みメッセージとファイルを管理者として管理する」を参照してください。](manage-quarantined-messages-and-files.md)
 

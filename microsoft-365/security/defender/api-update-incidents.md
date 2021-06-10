@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e3b445b2f9612f0113f353450ca7bf0b8a1a2bb2
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730860"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861505"
 ---
 # <a name="update-incidents-api"></a>インシデント API の更新
 
@@ -69,7 +69,7 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 -|-|-
 Authorization | String | ベアラー {token}。 **必須**
 Content-Type | 文字列 | application/json. **必須**
@@ -78,7 +78,7 @@ Content-Type | 文字列 | application/json. **必須**
 
 要求本文で、更新するフィールドの値を指定します。 要求本文に含まれていない既存のプロパティは、関連する値の変更のために再計算する必要がない限り、値を維持します。 最適なパフォーマンスを得る場合は、変更していない既存の値を省略する必要があります。
 
-プロパティ | 型 | 説明
+プロパティ | 種類 | 説明
 -|-|-
 status | 列挙 | インシデントの現在の状態を指定します。 使用できる値は ```Active``` ```Resolved``` 、、、および ```Redirected``` です。
 assignedTo | string | インシデントの所有者。
