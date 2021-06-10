@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータを、ユーザーのメールボックスにインポートするMicrosoft 365します。
-ms.openlocfilehash: 17172daa60721523bbfb97ab81f7a57078eb1b1c
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: a51b298b934431a1be8a416dac1f831ddaca5ffe
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822155"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861205"
 ---
 # <a name="archive-third-party-data"></a>サード パーティのデータをアーカイブする
 
@@ -77,6 +77,7 @@ Microsoft 365を使用すると、管理者はデータ コネクタを使用し
 |[Verizon Network <sup>1</sup>](archive-verizon-network-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Web ページ <sup>2</sup>](archive-webpagecapture-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
+|[WeChat <sup>1</sup>](archive-wechat-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Facebook <sup>2 からの</sup>Workplace](archive-workplacefromfacebook-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[XIP <sup>2</sup>](archive-xip-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
@@ -139,6 +140,7 @@ Microsoft 365を使用すると、管理者はデータ コネクタを使用し
 |O2 携帯ショートメールおよび音声ネットワーク アーカイブ | はい         | いいえ | いいえ |
 |TELUS 携帯ショートメール ネットワーク アーカイブ | はい | いいえ | いいえ |
 |Verizon 携帯ショートメール/MMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|WeChat Archiver | はい | いいえ | いいえ |
 |WhatsApp Archiver | はい | いいえ | いいえ |
 |||||
 

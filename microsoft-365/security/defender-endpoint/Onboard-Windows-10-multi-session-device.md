@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 7ade1ae1e045cb52f48d231acbc1712e753b6bc3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841848"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861181"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード 
 読み取り 6 分 
@@ -148,3 +148,7 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 ライセンスに関する注意: Windows 10 Enterprise マルチセッションを使用する場合は、要件に応じて、Microsoft Defender for Endpoint (ユーザーあたり)、Windows Enterprise E5、Microsoft 365 Security、または Microsoft 365 E5 を介してすべてのユーザーにライセンスを取得するか、Azure Defender を介して VM のライセンスを取得するように選択できます。
 エンドポイントの Microsoft Defender のライセンス要件については、「ライセンス要件」 [を参照してください](minimum-requirements.md#licensing-requirements)。
+
+#### <a name="related-links"></a>関連リンク
+
+[PowerShell を使用して Microsoft Defender の除外を追加する](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-windows-defender-by-using-powershell)

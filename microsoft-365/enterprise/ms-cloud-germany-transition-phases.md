@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 3a5b95bac74ae405f4e1d6fa91ba4ab51e4a9d05
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: 28d5eebbe63db13edfb1bfc297bdd6ad0c13536c
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796044"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861257"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -315,6 +315,11 @@ Microsoft Azureは、テナントが世界中への移行を完了するとす�
 | Azure ADアプリケーション エンドポイントを更新する | アプリケーションの認証、Azure Active Directory (Azure AD) Graph、MS Graph エンドポイントを Microsoft Worldwide サービスのエンドポイントに更新する必要があります。 | 移行が完了した 30 日後、Microsoft Cloud Deutschland エンドポイントは要求の尊重を停止します。クライアントまたはアプリケーション のトラフィックは失敗します。 |
 | Azure ワークロードの移行 | Azure サービスのお客様は、Azure サービスの新しいワールドワイド サブスクリプションをプロビジョニングし、Azure 移行プレイブックごとに移行 [を実行する必要があります](/azure/germany/germany-migration-main)。 | ワールドワイド サービス (フェーズ 10) に完全に移行すると、お客様は Microsoft Cloud Deutschland Azure portal に存在する Azure ワークロードにアクセスできなくなりました。 |
 ||||
+
+**適用対象:** Azure ユーザーが登録済みADまたは参加しているデバイスをお持ちのお客様
+
+フェーズ 9 が完了したら、Azure AD が登録され、参加しているデバイスは、新しいドイツのデータセンター領域の移行済み Azure AD インスタンスに接続する必要があります。
+Azure ADに再参加していないデバイスは、フェーズ 10 の終わりに動作しなくなる可能性があります。 詳細な手順と詳細については、デバイスに関する [追加情報を参照してください](ms-cloud-germany-transition-add-devices.md)。
 
 ### <a name="azure-ad-connect"></a>Azure AD Connect
 **適用対象:** すべてのお客様が Azure AD接続と ID を同期する

@@ -4,6 +4,7 @@ keywords: フォルダー アクセスの制御、Windows 10、Windows Defender�
 description: フォルダー アクセスの制御を有効にすることで重要なファイルを保護する方法について説明します。
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1d09eaf04999478a0cd0b4907667a522a23fb39f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5a90a12457597fa38c648fd44bf194d2322a26af
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841980"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861225"
 ---
 # <a name="enable-controlled-folder-access"></a>制御されたフォルダー アクセスを有効にする
 
@@ -36,7 +37,7 @@ ms.locfileid: "52841980"
 次の方法を使用して、フォルダーアクセスの制御を有効にできます。
 
 * [Windows セキュリティアプリ](#windows-security-app)
-* [Microsoft Intune](#intune)
+* [Microsoft エンドポイント マネージャー](#endpoint-manager)
 * [モバイル デバイス管理 (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [グループ ポリシー](#group-policy)
@@ -64,24 +65,30 @@ ms.locfileid: "52841980"
 > これらのツールを使用して機能が **監査** モードに設定されている場合、アプリWindows セキュリティ状態が [オフ] と表示 **されます**。
 > ユーザー プロファイル データを保護する場合は、ユーザー プロファイルをインストール ドライブの既定のWindowsすることをお勧めします。
 
-## <a name="intune"></a>Intune
+## <a name="endpoint-manager"></a>エンドポイント マネージャー
 
-1. Azure ポータルにサインイン [し、Intune](https://portal.azure.com) を開きます。
+1. [エンドポイント セキュリティ][を開](https://endpoint.microsoft.com)エンドポイント マネージャーに **サインインします**。
 
-2. [デバイス構成 **プロファイル]**  >  **[プロファイルの**  >  **作成] に移動します**。
+2. [攻撃表面 **の縮小ポリシー] に**  >  **移動します**。
 
-3. プロファイルに名前を付け、[Windows 10 **とエンドポイント保護**]**を選択します**。 <br/> ![エンドポイント保護プロファイルの作成](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
+3. [**プラットフォーム] を** 選択 **し、[Windows 10] 以降を** 選択し、プロファイル攻撃表面縮小ルール [作成]**を**  >  **選択します**。
 
-4. 「Configure **Windows Defender**  >  **Exploit Guard**  >  **管理フォルダー アクセスを有効にする」に**  >  **移動します**。
+4.  ポリシーに名前を付け、説明を追加します。 **[次へ]** を選択します。
 
-5. 保護されたフォルダーにアクセスできる各アプリケーションへのパスと、保護が必要な追加のフォルダーへのパスを入力します。 **[追加]** を選択します。<br/> ![Intune でフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
+5.  下までスクロールし、[フォルダー保護を有効にする] ドロップダウンを選択し、[有効にする] を **選択します**。
+
+6.  [ **保護する必要がある追加のフォルダーの一覧] を選択し** 、保護する必要があるフォルダーを追加します。
+
+7.  [ **保護されたフォルダーにアクセスできる** アプリの一覧] を選択し、保護されたフォルダーにアクセスできるアプリを追加します。
+
+8.  [ **攻撃表面の縮小** ルールからファイルとパスを除外する] を選択し、攻撃表面の縮小ルールから除外する必要があるファイルとパスを追加します。
+
+9.  プロファイルの割り **当てを選択し**、[すべてのデバイス] で [すべてのユーザー&割り当てる] **を選択し、[** 保存] を **選択します**。
+
+10.  [次 **へ]** を選択して、開いている各ブレードを保存し、[作成] **を選択します**。
 
    > [!NOTE]
-   > Wilcard はアプリケーションでサポートされますが、フォルダーではサポートされません。 サブフォルダーは保護されません。 許可されたアプリは、再起動するまでイベントをトリガーし続ける。
-
-6. **[OK] を選択** して、開いている各ブレードを保存し、[作成]**を選択します**。
-
-7. プロファイルの割り **当てを選択し**、[すべてのデバイス] の [すべての **ユーザー&割り当** てる] 、および [保存] を **選択します**。
+   > ワイルドカードはアプリケーションでサポートされますが、フォルダーではサポートされません。 サブフォルダーは保護されません。 許可されたアプリは、再起動するまでイベントをトリガーし続ける。
 
 ## <a name="mobile-device-management-mdm"></a>モバイル デバイス管理 (MDM)
 
