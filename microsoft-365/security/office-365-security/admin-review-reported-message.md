@@ -13,12 +13,12 @@ ms.collection:
 description: 報告されたメッセージを確認し、ユーザーにフィードバックを与える方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7386f5b283e2bfabb76eee91d33dfda0e42ec7b1
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 217f5ebb1692d68b5dc70988888bf78d4bd36a0c
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769127"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893730"
 ---
 # <a name="admin-review-for-reported-messages"></a>報告されたメッセージの管理者によるレビュー
 
@@ -37,21 +37,23 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
 
 メッセージが誤検知または偽陰性として報告された場合にのみ、ユーザーにレビュー結果をマークして [通知できます](report-false-positives-and-false-negatives.md)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>事前に必要な知識
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+
+- Defender ポータルのMicrosoft 365開きます <https://security.microsoft.com/> 。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
 
 - ユーザー申請の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
-  - セキュリティ センターの組織の管理[またはMicrosoft 365管理者](permissions-microsoft-365-security-center.md)です。
-  - [組織の管理] [Exchange Online](/Exchange/permissions-exo/permissions-exo)。
+  - Defender ポータルの組織の管理[またはセキュリティMicrosoft 365管理者](permissions-microsoft-365-security-center.md)です。
+  - [組織の管理] [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)。
 
-- PowerShell にアクセスする必要Exchange Onlineがあります。 使用しようとしているアカウントが Exchange Online PowerShell にアクセスできない場合は、「ドメインに電子メール アドレスを指定する」というエラーが *表示されます*。 PowerShell へのアクセスを有効または無効にする方法のExchange Online、次のトピックを参照してください。
+- また、PowerShell へのアクセスExchange Online必要があります。 使用しようとしているアカウントが Exchange Online PowerShell にアクセスできない場合は、「ドメインに電子メール アドレスを指定する」というエラーが *表示されます*。 PowerShell へのアクセスを有効または無効にする方法のExchange Online、次のトピックを参照してください。
   - [Exchange Online PowerShell へのアクセスを有効または無効にする](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [クライアント アクセス ルール (Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="configure-the-messages-used-to-notify-users"></a>ユーザーに通知するために使用するメッセージを構成する
 
-1. [セキュリティ センター [Microsoft 365に移動](../defender/overview-security-center.md)し、[ポリシー  ] &脅威ポリシー ユーザーがメッセージ設定 \>  \> **を報告しました**。
+1. [Defender ポータルMicrosoft 365で、[メール] グループ& ポリシー &[その他] セクション [ユーザーが報告したメッセージの設定] に \>  \>  \>  \> **移動します**。
 
-2. 送信者の表示名を指定する場合は、[管理者レビュー結果の電子メール通知] セクションの [送信者として使用する **Office 365** 電子メール アドレスを指定する] チェック ボックスをオンにし、使用する名前を入力します。 これは、返信が送信されるメール アドレスとOutlookに表示される電子メール アドレスです。
+2. [ユーザー申請] ページで、送信者の表示名を指定する場合は、[管理者レビュー結果の電子メール通知] セクションの [送信者として使用する **Office 365** 電子メール アドレスを指定する] チェック ボックスをオンにし、使用する名前を入力します。 これは、返信が送信されるメール アドレスとOutlookに表示される電子メール アドレスです。
 
 3. テンプレートをカスタマイズする場合は、[メール通知のカスタマイズ **] をクリックします**。 このフライアウトでは、次の情報のみをカスタマイズできます。
     - フィッシング詐欺

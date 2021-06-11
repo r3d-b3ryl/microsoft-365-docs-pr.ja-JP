@@ -19,12 +19,12 @@ description: 管理者は、偽装の分析情報がどのように機能する�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b539cc50d3cf6ad637a749faa9d2cb5b2033b81
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: e1b99590d7ae96ad8371eb2a2fab5fb7e8f94d07
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821329"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879038"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Defender for Office 365
 
@@ -46,27 +46,27 @@ ms.locfileid: "52821329"
 
 偽装保護は、Microsoft Defender に限定されるフィッシング対策ポリシー設定の一部Office 365。 これらの設定の詳細については、「Microsoft Defender for Office 365」の「フィッシング対策ポリシーの偽装[設定」を参照してください](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
 
-Microsoft 365 セキュリティ センターの偽装インサイトを使用して、偽装保護用に構成した偽装送信者または送信者ドメインからのメッセージをすばやく識別できます。
+Microsoft 365 Defender ポータルの偽装インサイトを使用して、偽装保護用に構成した偽装送信者または送信者ドメインからのメッセージをすばやく識別できます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> でセキュリティ センターを開きます。 [フィッシング対策] ページで偽装の分析情報に直接 **移動** するには、 を使用します <https://security.microsoft.com/antiphishing> 。 偽装インサイト ページに直接 **移動するには、** を使用します <https://security.microsoft.com/impersonationinsight> 。
+- Defender ポータルのMicrosoft 365開きます <https://security.microsoft.com> 。 [フィッシング対策] ページで偽装の分析情報に直接 **移動** するには、 を使用します <https://security.microsoft.com/antiphishing> 。 偽装インサイト ページに直接 **移動するには、** を使用します <https://security.microsoft.com/impersonationinsight> 。
 
-- この記事の手順を実行するには、セキュリティ センターでアクセス許可を割り当てる必要があります。
+- この記事の手順を実行するには、Microsoft 365 Defender ポータルでアクセス許可を割り当てる必要があります。
   - **組織の管理**
   - **セキュリティ管理者**
-  - **セキュリティ リーダー**
-  - **グローバル リーダー**
+  - **セキュリティ閲覧者**
+  - **グローバル閲覧者**
 
-  詳細については、「セキュリティ センター [のアクセス許可」を参照してください](permissions-in-the-security-and-compliance-center.md)。
+  詳細については、「Defender ポータル[のアクセス許可」をMicrosoft 365してください](permissions-in-the-security-and-compliance-center.md)。
 
-  **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ センターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 - Microsoft Defender のフィッシング対策ポリシーで偽装保護を有効にして構成Office 365。 偽装保護は既定では有効になっていません。 詳細については[、「Microsoft Defender でフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)を構成する」を参照Office 365。
 
-## <a name="open-the-impersonation-insight-in-the-security-center"></a>セキュリティ センターで偽装インサイトを開く
+## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Defender ポータルで偽装インサイトMicrosoft 365開く
 
-1. セキュリティ センターで、[メールの送信] **&[&** ポリシー] セクションの [フィッシング対策] \>  \>  \>  \> **に移動します**。
+1. [Defender ポータルMicrosoft 365] で、[メール &**グループ** ポリシー&ポリシー] セクションの [フィッシング対策] \>  \>  \>  \> **に移動します**。
 
 2. [フィッシング **対策] ページでは** 、偽装の分析情報は次のように表示されます。
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8973a78787345532055161507e2d30f75b3b2cf1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: aeb6d93017f138ce898d25f7d76e05cdcf3e90c5
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844972"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878570"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>エンドポイント向け Microsoft Defender および他の Microsoft ソリューション
 
@@ -66,9 +66,9 @@ Microsoft Cloud App Securityは、Microsoft Defender for Endpoint エンドポ�
 このSkype for Business統合により、アナリストはポータルからの簡単なボタンを使用して、侵害される可能性のあるユーザーまたはデバイスの所有者と通信できます。
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
-Microsoft 365 Defender を使用すると、Microsoft Defender for Endpoint とさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応します。 
+Microsoft 365 Defender、Microsoft Defender for Endpoint、およびさまざまな Microsoft セキュリティ ソリューションは、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応する統合された侵害前および侵害後のエンタープライズ防御スイートを形成します。 
  
-[Defender の詳細Microsoft 365する](/microsoft-365/security/defender/microsoft-threat-protection)
+[Defender の詳細Microsoft 365する](/microsoft-365/security/defender/microsoft-365-defender)
 
 
 ## <a name="related-topics"></a>関連項目

@@ -18,12 +18,12 @@ ms.collection:
 description: 管理者は、構成アナライザーを使用して、標準保護と厳密な保護の事前設定されたセキュリティ ポリシーの下にあるセキュリティ ポリシーを見つけて修正する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0d2ad1449730f392adc27c8ed2a8fc8e9ecc7a04
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: f98ab9b251894a5821d308d95fd786b496e396e4
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789318"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878666"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP および Microsoft Defender の保護ポリシー用の構成Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "52789318"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 セキュリティ センターの構成アナライザーは、設定が事前設定されたセキュリティ ポリシーの標準保護および厳密な保護プロファイル設定の下にあるセキュリティ ポリシーを見つけて修正するための中心的な場所を[提供します](preset-security-policies.md)。
+Microsoft 365 Defender ポータルの構成アナライザーは、設定が事前設定されたセキュリティ ポリシーの標準保護と厳密な保護プロファイル設定の下にあるセキュリティ ポリシーを見つけて修正するための中心的な場所を[提供します](preset-security-policies.md)。
 
 次の種類のポリシーは、構成アナライザーによって分析されます。
 
@@ -57,27 +57,27 @@ Microsoft 365 セキュリティ センターの構成アナライザーは、�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> でセキュリティ センターを開きます。 [構成アナライザー] ページに直接 **移動するには、** を使用します <https://security.microsoft.com/configurationAnalyzer> 。
+- Defender ポータルのMicrosoft 365開きます <https://security.microsoft.com> 。 [構成アナライザー] ページに直接 **移動するには、** を使用します <https://security.microsoft.com/configurationAnalyzer> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-- この記事の手順を実行するには、セキュリティ センターでアクセス許可を割り当てる必要があります。
+- この記事の手順を実行するには、Microsoft 365 Defender ポータルでアクセス許可を割り当てる必要があります。
   - 構成アナライザーを使用してセキュリティ ポリシーを更新するには、組織の管理役割グループまたはセキュリティ管理者役割グループの **メンバーである** 必要があります。
   - 構成アナライザーへの読み取り専用アクセスでは、グローバル リーダーまたはセキュリティ リーダーの役割グループ **のメンバーである** 必要があります。
 
-  詳細については、「セキュリティ センター[のアクセス許可Microsoft 365参照してください](permissions-microsoft-365-security-center.md)。
+  詳細については、「Defender ポータル[のアクセス許可」をMicrosoft 365してください](permissions-microsoft-365-security-center.md)。
 
   > [!NOTE]
   >  
-  > - ユーザーを対応する Azure Active Directory ロールに追加すると、セキュリティ センターで必要なアクセス許可と、セキュリティ センター内の他の機能に対するアクセス許可Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > - ユーザーを対応する Azure Active Directory ロールに追加すると、ユーザーは Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可を付与します。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
-## <a name="use-the-configuration-analyzer-in-the-security-center"></a>セキュリティ センターで構成アナライザーを使用する
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Defender ポータルで構成アナライザーをMicrosoft 365する
 
-セキュリティ センターで、[メール] グループ **&[** 脅威&ポリシー] セクションの [構成アナライザー] \>  \>  \>  \> **に移動します**。
+Defender ポータルMicrosoft 365、[メール] グループ &[脅威ポリシー&テンプレート ポリシー] セクションの [構成アナライザー] \>  \>  \>  \> **に移動します**。
 
-構成アナライザーには、次の 2 つの主なタブがあります。
+[ **構成アナライザー] ページ** には、次の 2 つの主なタブがあります。
 
 - **設定推奨事項**: Standard または **Strict** を選択し、それらの設定を既存のセキュリティ ポリシーと比較します。  結果では、設定の値を調整して、Standard または Strict と同じレベルに設定できます。
 - **構成ドリフトの分析と履歴**: このビューでは、時間の流れによってポリシーの変更を追跡できます。
@@ -123,7 +123,7 @@ Microsoft 365 セキュリティ センターの構成アナライザーは、�
 - **変更者**
 - **設定名**
 - **ポリシー**
-- **型**
+- **種類**
 - **構成の変更**
 - **構成ドリフト**:**値の増減****。**
 

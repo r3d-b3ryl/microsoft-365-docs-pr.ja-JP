@@ -19,12 +19,12 @@ description: セキュリティ & コンプライアンス センターで利用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ece53bd0b857fb00e394982f6e3b4c8c81d8b83
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 25efdbfc6c292d8df2690f4c222366614329c70d
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530876"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879278"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのスマート レポートと分析情報
 
@@ -55,7 +55,7 @@ ms.locfileid: "52530876"
 
 |情報の種類|実行する方法|詳細を見る場所|
 |---|---|---|
-|**セキュリティ & コンプライアンス センター レポート** (すべてアップ) <p> トップインサイトと推奨事項、およびデータ損失防止レポート、ラベル、電子メール セキュリティ レポート、Defender for Office 365 レポートなど、セキュリティ & コンプライアンス レポートへのリンク|[セキュリティ とコンプライアンス &] で、[レポート ダッシュボード] **に移動** \> **します。**|[セキュリティ センターでレポートを監視Microsoft 365表示する](../defender/overview-security-center.md)|
+|**セキュリティ & コンプライアンス センター レポート** (すべてアップ) <p> トップインサイトと推奨事項、およびデータ損失防止レポート、ラベル、電子メール セキュリティ レポート、Defender for Office 365 レポートなど、セキュリティ & コンプライアンス レポートへのリンク|[セキュリティ とコンプライアンス &] で、[レポート ダッシュボード] **に移動** \> **します。**||
 |**データ損失防止** <p> データ損失防止ポリシーの一致、誤検知と上書き、ポリシーを作成または編集するリンク|[セキュリティ & コンプライアンス センター] で、[データ損失防止ポリシー **] に移動** \> **します。**|[データ損失防止のレポートを表示する](../../compliance/view-the-dlp-reports.md)|
 |**データ ガバナンス** <p> ラベルの適用方法、レコード、ラベルの傾向などに分類されたラベルに関する情報。|セキュリティ 管理コンプライアンス センター&、情報ガバナンス **ダッシュボードに移動** \> **します。**|[データ ガバナンスのレポートを表示する](../../compliance/view-the-data-governance-reports.md)|
 |**脅威管理ダッシュボード** (これはセキュリティ ダッシュボードとも呼ばれます) <p> 脅威の検出、マルウェアの傾向、対象ユーザーの上位、送信および受信電子メール メッセージの詳細など|セキュリティ コンプライアンス センターで&管理ダッシュボード **に移動** \> **します。**|[Defender for Office 365](view-reports-for-mdo.md)|
@@ -69,6 +69,6 @@ ms.locfileid: "52530876"
 
 ## <a name="related-topics"></a>関連項目
 
-[セキュリティ センターでレポートを監視Microsoft 365表示する](../defender/overview-security-center.md)
+[Defender ポータルでレポートを監視Microsoft 365表示する](../defender/overview-security-center.md)
 
 [脅威から保護Office 365](protect-against-threats.md)

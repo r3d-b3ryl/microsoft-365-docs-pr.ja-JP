@@ -19,12 +19,12 @@ description: ワークフローの自動調査中およびMicrosoft 365結果と
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2923a6375d54c663f20c440b1fa395bd529429d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fc7c61fae83f2d10f8b66cbfce86bcee6e3a5bd6
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275050"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878426"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>自動調査の詳細と結果Microsoft 365
 
@@ -32,17 +32,21 @@ ms.locfileid: "52275050"
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender [for](office-365-air.md) Office 365で自動調査が行[われる場合、](defender-for-office-365.md)その調査に関する詳細は、自動調査プロセス中および自動調査後に利用できます。 必要なアクセス許可がある場合は、セキュリティ センターでこれらの詳細Microsoft 365表示できます。 調査の詳細は、最新の状態と、保留中のアクションを承認する機能を提供します。
+Microsoft Defender [for](office-365-air.md) Office 365で自動調査が行[われる場合、](defender-for-office-365.md)その調査に関する詳細は、自動調査プロセス中および自動調査後に利用できます。 必要なアクセス許可がある場合は、これらの詳細を Defender ポータルのMicrosoft 365できます。 調査の詳細は、最新の状態と、保留中のアクションを承認する機能を提供します。
 
 > [!TIP]
-> セキュリティ センターの新しい統合調査ページMicrosoft 365確認してください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
+> Defender ポータルの新しい統合された調査ページMicrosoft 365確認してください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
 
 ## <a name="investigation-status"></a>調査の状態
 
 調査の状態は、分析と処理の進捗状況を示します。 調査が実行されると、状態の表示が変わり、脅威が検出されたかどうかと、処理が承認されているかどうかが示されるようになります。
 
+<br>
+
+****
+
 |状態|説明|
-|:---|:---|
+|---|---|
 |**開始中**|調査がトリガーされ、実行の開始を待っています。|
 |**実行中**|調査プロセスが開始され、進行中です。 この状態は、保留中の [アクションが承認された場合](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) にも発生します。|
 |**脅威が見つかりません**|調査が完了し、脅威 (ユーザー アカウント、電子メール メッセージ、URL、またはファイル) が特定されていない。 <p> **ヒント**: 何かが見つからないと思われる場合 (偽陰性など)、Threat Explorer を使用して [アクションを実行できます](threat-explorer.md)。|
@@ -58,7 +62,7 @@ Microsoft Defender [for](office-365-air.md) Office 365で自動調査が行[わ�
 
 ## <a name="view-details-of-an-investigation"></a>調査の詳細を表示する
 
-1. セキュリティ センター ( ) Microsoft 365に移動し <https://security.microsoft.com> 、サインインします。
+1. Defender ポータル ( ) Microsoft 365に移動 <https://security.microsoft.com> し、サインインします。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [保留中] **タブまたは [履歴** ] **タブで** 、アクションを選択します。 そのフライアウト ウィンドウが開きます。
 4. フライアウト ウィンドウで、[調査ページを開 **く] を選択します**。 
@@ -68,10 +72,10 @@ Microsoft Defender [for](office-365-air.md) Office 365で自動調査が行[わ�
 
 特定の種類のアラートは、自動調査をトリガー Microsoft 365。 詳細については、「自動調査 [をトリガーするアラート ポリシー」を参照してください](office-365-air.md#which-alert-policies-trigger-automated-investigations)。
 
-1. セキュリティ センター ( ) Microsoft 365に移動し <https://security.microsoft.com> 、サインインします。
+1. Defender ポータル ( ) Microsoft 365に移動 <https://security.microsoft.com> し、サインインします。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [保留中] **タブまたは [履歴** ] **タブで** 、アクションを選択します。 そのフライアウト ウィンドウが開きます。
-4. フライアウト ウィンドウで、[調査ページを開 **く] を選択します**。 
+4. フライアウト ウィンドウで、[調査ページを開 **く] を選択します**。
 5. [アラート] **タブ** を選択して、その調査に関連付けられているすべてのアラートの一覧を表示します。
 6. リスト内のアイテムを選択して、そのフライアウト ウィンドウを開きます。 そこで、アラートの詳細を表示できます。
 
@@ -95,6 +99,6 @@ Microsoft Defender [for](office-365-air.md) Office 365で自動調査が行[わ�
 
 - すべてのアクションを承認および/または拒否すると、調査を完全に終了 (状態が修復される) ことができますが、一部のアクションが不完全な場合は、調査の状態が部分的に修復された状態に変更されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [保留中のアクションの確認と承認](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)

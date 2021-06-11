@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、ユーザー (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理Exchange Online Protectionできます。 Microsoft Defender for Office 365組織の管理者は、SharePoint Online、OneDrive for Business、およびMicrosoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b484cc3a8462115b5151b34ba93ba0c041e16b4
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 01d5011248d1c0fc0daab0d04e1cca39e26e34bd
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822300"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878894"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -41,11 +41,11 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 Microsoft Defender for Office 365 組織の管理者は、SharePoint Online、OneDrive for Business、および Microsoft Teams で検疫済みファイルを表示、ダウンロード、および削除Microsoft Teams。
 
-検疫済みメッセージは、Microsoft 365 セキュリティ センターまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) で表示および管理します。
+検疫済みメッセージは、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) で表示および管理します。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- セキュリティ センターを開くには、 に移動します <https://security.microsoft.com> 。 検疫ページを直接開くには、<https://security.microsoft.com/quarantine> にアクセスします。
+- Defender ポータルを開Microsoft 365に移動します <https://security.microsoft.com> 。 検疫ページを直接開くには、<https://security.microsoft.com/quarantine> にアクセスします。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -68,11 +68,11 @@ Microsoft Defender for Office 365 組織の管理者は、SharePoint Online、On
 
   検疫からメッセージの有効期限が切れると、メッセージを回復できません。
 
-## <a name="use-the-security-center-to-manage-quarantined-email-messages"></a>セキュリティ センターを使用して検疫済みメール メッセージを管理する
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>検疫済みMicrosoft 365を管理するには、Defender ポータルを使用します。
 
 ### <a name="view-quarantined-email"></a>検疫済みメールの表示
 
-1. セキュリティ センターで、[メール] に移動 **し、[&** \> **検疫] に** \> **移動します**。
+1. [Defender ポータルMicrosoft 365] で、[メールの送信] **& [検疫の確認]** \> **に** \> **移動します**。
 
 2. [検疫 **] ページ** で、[検疫の表示] **が** 既定値の電子メールに設定されているのを確認 **します**。
 
@@ -102,10 +102,10 @@ Microsoft Defender for Office 365 組織の管理者は、SharePoint Online、On
    - **[受信日時]**: **[開始日]** と **[終了日]** を入力します。
    - **[検疫の理由]**:
      - **ポリシー**: メッセージは、メール フロー ルール (トランスポート ルールとも呼ばれる) の条件と一致しました。
-     - **バルク**
+     - **[バルク]**
      - **フィッシング**: スパム フィルターの評決は、フィッシングメールまたはフィッシング対策保護がメッセージ [(ス](set-up-anti-phishing-policies.md#spoof-settings)プーフィング設定または偽装保護) を [検疫しました](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
      - **マルウェア**
-     - **スパム**
+     - **[スパム]**
      - **高信頼フィッシング**
    - **ポリシーの種類**: 次のポリシーの種類ごとに、メッセージをフィルター処理します。
      - **マルウェア対策ポリシー**
@@ -195,7 +195,7 @@ Microsoft Defender for Office 365 組織の管理者は、SharePoint Online、On
 
 完了したら、**[閉じる]** をクリックします。
 
-## <a name="use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365"></a>セキュリティ センターを使用して、Defender の検疫済みファイルを管理Office 365
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>Defender ポータルMicrosoft 365を使用して、Defender の検疫済みファイルを管理Office 365
 
 > [!NOTE]
 > このセクションの検疫済みファイルの手順は、プラン 1 およびプラン 2 Office 365 Microsoft Defender でのみ使用できます。
@@ -204,7 +204,7 @@ Defender for Office 365組織では、管理者は SharePoint Online、OneDrive 
 
 ### <a name="view-quarantined-files"></a>検疫済みファイルの表示
 
-1. セキュリティ センターで、[メール] に移動 **し、[&** \> **検疫] に** \> **移動します**。
+1. [Defender ポータルMicrosoft 365] で、[メールの送信] **& [検疫の確認]** \> **に** \> **移動します**。
 
 2. [検疫 **] ページ** で、[検疫済 **みビュー] を値** ファイルに変更 **します**。 使用可能な列ヘッダーをクリックすると、フィールドの並べ替えを行います。
 
@@ -227,7 +227,7 @@ Defender for Office 365組織では、管理者は SharePoint Online、OneDrive 
      - カスタムの日付/時刻範囲。
    - **受信時刻**
    - **検疫の理由**: 使用可能な値は Malware **のみです**。
-   - **ポリシーの種類**
+   - **[ポリシーの種類]**
 
 特定の検疫済みファイルを見つけたら、ファイルを選択して詳細を表示し、そのファイルに対してアクションを実行します (メッセージの表示、リリース、ダウンロード、削除など)。
 

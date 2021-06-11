@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 036ef1c97788f310c5b906ae5f80076ca2359cdb
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275086"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878882"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能で誤検知/陰性を報告する方法
 
@@ -68,17 +68,21 @@ microsoft Defender for Office 365 の AIR で電子メール メッセージ、�
 
 Threat Explorer を使用すると、セキュリティ運用チームは、アクションの影響を受ける電子メールを見つけ、アクションを元に戻す可能性があります。
 
+<br>
+
+****
+
 |シナリオ|元に戻すオプション|詳細情報|
 |---|---|---|
-|電子メール メッセージがユーザーの迷惑メール フォルダーにルーティングされた|- メッセージをユーザーの [削除済みアイテム] フォルダーに移動する<br/>- メッセージをユーザーの受信トレイに移動する<br/>- メッセージを削除する|[ネットワークで配信された悪意のある電子メールを検索してOffice 365](investigate-malicious-email-that-was-delivered.md)|
-|電子メール メッセージまたはファイルが検疫された|- 電子メールまたはファイルを解放する<br/>- 電子メールまたはファイルを削除する|[検疫済みメッセージを管理者として管理する](manage-quarantined-messages-and-files.md)|
+|電子メール メッセージがユーザーの迷惑メール フォルダーにルーティングされた|<ul><li>メッセージをユーザーの [削除済みアイテム] フォルダーに移動する</li><li>メッセージをユーザーの受信トレイに移動する</li><li>メッセージを削除</li></ul>|[ネットワークで配信された悪意のある電子メールを検索してOffice 365](investigate-malicious-email-that-was-delivered.md)|
+|電子メール メッセージまたはファイルが検疫された|<ul><li>電子メールまたはファイルを解放する</li><li> 電子メールまたはファイルを削除する</li></ul>|[検疫済みメッセージを管理者として管理する](manage-quarantined-messages-and-files.md)|
 |
 
 ### <a name="undo-an-action-in-the-action-center"></a>アクション センターで操作を元に戻す
 
 アクション センターでは、実行された修復アクションを確認し、アクションを元に戻す可能性があります。
 
-1. セキュリティ センター ( ) Microsoft 365移動します <https://security.microsoft.com> 。
+1. Defender ポータル ( ) Microsoft 365移動します <https://security.microsoft.com> 。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [履歴] **タブを** 選択して、完了したアクションの一覧を表示します。
 4. アイテムを選択します。 そのフライアウト ウィンドウが開きます。

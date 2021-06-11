@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきではないメッセージを識別する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9c1c6f7635b87e25adcb121db79f67d4ec1988f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: deaad11b6397cd53017c0972a624b67a9623887f
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789000"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879110"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -62,20 +62,20 @@ ms.locfileid: "52789000"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> でセキュリティ センターを開きます。 [高度な配信] ページに **直接移動するには** 、を開きます <https://security.microsoft.com/advanceddelivery> 。
+- Defender ポータルのMicrosoft 365開きます <https://security.microsoft.com> 。 [高度な配信] ページに **直接移動するには** 、を開きます <https://security.microsoft.com/advanceddelivery> 。
 
 - この記事の手順を実行するには、アクセス許可を割り当てる必要があります。
-  - 高度な配信ポリシーで構成された設定を作成、変更、または削除するには、セキュリティ センターのセキュリティ管理者役割グループのメンバーであり、Exchange Online の組織の管理役割グループ **のメンバーである必要があります**。   
+  - 高度な配信ポリシーで構成された設定を作成、変更、または削除するには、Microsoft 365 Defender ポータルのセキュリティ管理者役割グループのメンバーであり **、Exchange Online** の組織の管理役割グループのメンバーである **必要があります**。  
   - 高度な配信ポリシーへの読み取り専用アクセスでは、グローバル リーダーまたはセキュリティリーダーの役割グループの **メンバーである** 必要があります。
 
-  詳細については、「セキュリティ センター[のアクセス許可」および「Microsoft 365の](permissions-microsoft-365-security-center.md)アクセス許可」[を参照Exchange Online。](/exchange/permissions-exo/permissions-exo)
+  詳細については、「Microsoft 365 [Defender](permissions-microsoft-365-security-center.md)ポータルのアクセス許可」および「Exchange Online」[を参照してください](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
-  > ユーザーを対応する Azure Active Directory ロールに追加すると、セキュリティ センターで必要なアクセス許可と、セキュリティ センター内の他の機能に対するアクセス許可Microsoft 365。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+  > ユーザーを対応する Azure Active Directory ロールに追加すると、ユーザーは Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可を付与します。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
-## <a name="use-the-security-center-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>セキュリティ センターを使用して、高度な配信ポリシーで SecOps メールボックスを構成する
+## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>高度な配信Microsoft 365で、Defender ポータルを使用して SecOps メールボックスを構成する
 
-1. セキュリティ センターで、[メールの送信] & **[&** ルール] セクションの [高度 \> **な** 配信 \>  \>  \> **] に移動します**。
+1. [Defender ポータルMicrosoft 365で、[メールの送信]  &[脅威ポリシー&ルール] セクションの [詳細な配信 \>  \>  \> ] \> **に移動します**。
 
 2. [高度 **な配信] ページ** で **、[SecOps** メールボックス] タブが選択されていることを確認し、次のいずれかの手順を実行します。
    - [編集 ![ ] アイコン [ ](../../media/m365-cc-sc-edit-icon.png) **編集] をクリックします**。
@@ -93,9 +93,9 @@ ms.locfileid: "52789000"
 
 構成した SecOps メールボックス エントリは **、[SecOps** メールボックス] タブに表示されます。変更するには、タブの ![ [編集] ](../../media/m365-cc-sc-edit-icon.png) **アイコン [編集]** をクリックします。
 
-## <a name="use-the-security-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>セキュリティ センターを使用して、高度な配信ポリシーでサード パーティのフィッシング シミュレーションを構成する
+## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>高度な配信Microsoft 365でサード パーティのフィッシング シミュレーションを構成するには、Defender ポータルを使用します。
 
-1. セキュリティ センターで、[メールの送信] & **[&** ルール] セクションの [高度 \> **な** 配信 \>  \>  \> **] に移動します**。
+1. [Defender ポータルMicrosoft 365で、[メールの送信]  &[脅威ポリシー&ルール] セクションの [詳細な配信 \>  \>  \> ] \> **に移動します**。
 
 2. [高度 **な配信] ページ** で、[フィッシング シミュレーション] **タブを選択** し、次のいずれかの手順を実行します。
    - [編集 ![ ] アイコン [ ](../../media/m365-cc-sc-edit-icon.png) **編集] をクリックします**。

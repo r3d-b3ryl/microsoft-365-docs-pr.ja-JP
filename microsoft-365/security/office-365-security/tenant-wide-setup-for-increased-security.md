@@ -20,12 +20,12 @@ ms.custom:
 description: このトピックでは、テナント環境のセキュリティに影響を与えるテナント全体の設定に対する推奨構成Microsoft 365説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a449d9647ae5a8b892967116f28aa6203a5e815
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: fd9d07388386ecc3d5877736e588393cdc38e7bb
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684173"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879218"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する 
 
@@ -42,9 +42,9 @@ ms.locfileid: "52684173"
 
 Office 365Secure Score は、通常のアクティビティとセキュリティ設定に基づいて組織のセキュリティを分析し、スコアを割り当てる。 まず、現在のスコアをメモします。 テナント全体の設定を調整すると、スコアが向上します。 目標は、最大スコアを達成するのではなく、ユーザーの生産性に悪影響を及ぼしない環境を保護する機会を認識する方法です。 「Microsoft [Secure Score」を参照してください](../defender/microsoft-secure-score.md)。
 
-## <a name="tune-threat-management-policies-in-the-microsoft-365-security-center"></a>セキュリティ センターで脅威管理ポリシー Microsoft 365調整する
+## <a name="tune-threat-management-policies-in-the-microsoft-365-defender-portal"></a>Defender ポータルで脅威管理ポリシー Microsoft 365調整する
 
-セキュリティ Microsoft 365には、環境を保護する機能が含まれています。 また、監視とアクションの実行に使用できるレポートとダッシュボードも含まれています。 一部の領域では、既定のポリシー構成が使用されます。 一部の領域には、既定のポリシーやルールが含まれます。 脅威管理の下にあるこれらのポリシーにアクセスして、より安全な環境の脅威管理設定を調整します。
+Defender Microsoft 365には、環境を保護する機能が含まれています。 また、監視とアクションの実行に使用できるレポートとダッシュボードも含まれています。 一部の領域では、既定のポリシー構成が使用されます。 一部の領域には、既定のポリシーやルールが含まれます。 脅威管理の下にあるこれらのポリシーにアクセスして、より安全な環境の脅威管理設定を調整します。
 
 <br>
 
@@ -57,7 +57,7 @@ Office 365Secure Score は、通常のアクティビティとセキュリティ
 |**セーフMicrosoft Defender の添付ファイル (Office 365**|いいえ|[添付ファイル] のメイン ページセーフ[グローバル設定]**をクリックし**、次の設定をオンにします。 <ul><li>**SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365 を有効にする**</li></ul> <p> 次の設定セーフ添付ファイル ポリシーを作成します。 <ul><li> **[ブロック**]: 不明 **なマルウェア応答** として [ブロック] を選択します。</li><li>**リダイレクトを有効** にする: このボックスをオンにして、管理者アカウントや検疫アカウントなどの電子メール アドレスを入力します。</li><li>**添付ファイルのマルウェア スキャンがタイム アウト** またはエラーが発生した場合は、上記の選択を適用します。このボックスをオンにします。</li><li>**_適用:_***受信者ドメインがドメイン** \> を選択します。</li></ul> <p> 詳細:[セーフ、SharePoint、OneDrive、Microsoft Teams](mdo-for-spo-odb-and-teams.md)の添付ファイルポリシーセーフ[設定](set-up-safe-attachments-policies.md)|
 |**セーフMicrosoft Defender for Office 365**|はい|[リンク] のメイン ページセーフ[グローバル設定]**をクリックします**。 <ul><li>**[セーフを使用する: Office 365**: この設定がオンになっていることを確認します。</li><li>**ユーザーが [リンク] をクリックセーフ追跡** しない: ユーザーのクリックを追跡するには、この設定をオフにします。</li></ul> <p> 次の設定セーフリンク ポリシーを作成します。 <ul><li>**メッセージ内の不明な潜在的に悪意** のある URL のアクションを選択します。この設定が [オン] である必要 **があります**。</li><li>**[この設定が [オン**] に設定されている場合は、Microsoft Teamsまたは悪意のある可能性のある URL のアクションを選択 **します**。</li><li>**ファイルを指す疑わしいリンク** やリンクに対してリアルタイムの URL スキャンを適用する: このボックスをオンにします。</li><li>**メッセージを配信する前に URL** のスキャンが完了するのを待ちます。このボックスをオンにします。</li><li>**[セーフ組織内で送信された電子メール メッセージ** へのリンクを適用する: このボックスをオンにします。</li><li>**ユーザーに元の URL へのクリックを** 許可しない: このボックスをオンにします。</li><li>**適用先**: **受信者ドメインがドメイン** \> を選択します。</li></ul> <p> 詳細:[リンク ポリシーセーフ設定します](set-up-safe-links-policies.md)。|
 |**スパム対策 (メール フィルター)**|はい| 監視する内容: スパムが多すぎます - カスタム設定を選択し、既定のスパム フィルター ポリシーを編集します。 詳細: Microsoft 365[スパム対策の保護](anti-spam-protection.md)。|
-|***電子メール認証***|はい|電子メール認証では、ドメイン ネーム システム (DNS) を使用して、電子メールの送信者に関する電子メール メッセージに検証可能な情報を追加します。 Microsoft 365 (onmicrosoft.com) の電子メール認証を設定しますが、Microsoft 365管理者はカスタム ドメインに電子メール認証を使用できます。 3 つの認証方法が使用されます。 <ul><li>送信者ポリシー フレームワーク (または SPF)。</li><ul><li>セットアップについては、「スプーフィング[を防止するために、Microsoft 365 SPF をセットアップする」を参照してください](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>DomainKeys Identified Mail (DKIM)。</li><ul><li>[「DKIM を使用してカスタム ドメインから送信される送信メールを検証する」を参照してください](use-dkim-to-validate-outbound-email.md)。</li><li>DKIM を構成した後、セキュリティ センターで有効にしてください。</li></ul><li>ドメイン ベースのメッセージ認証、レポート、および準拠 (DMARC)</li><ul><li>DMARC セットアップでは[、DMARC を使用してメールを検証](use-dmarc-to-validate-email.md)Microsoft 365。</li></ul></ul>|
+|***電子メール認証***|はい|電子メール認証では、ドメイン ネーム システム (DNS) を使用して、電子メールの送信者に関する電子メール メッセージに検証可能な情報を追加します。 Microsoft 365 (onmicrosoft.com) の電子メール認証を設定しますが、Microsoft 365管理者はカスタム ドメインに電子メール認証を使用できます。 3 つの認証方法が使用されます。 <ul><li>送信者ポリシー フレームワーク (または SPF)。</li><ul><li>セットアップについては、「スプーフィング[を防止するために、Microsoft 365 SPF をセットアップする」を参照してください](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>DomainKeys Identified Mail (DKIM)。</li><ul><li>[「DKIM を使用してカスタム ドメインから送信される送信メールを検証する」を参照してください](use-dkim-to-validate-outbound-email.md)。</li><li>DKIM を構成した後、Defender ポータルの Microsoft 365有効にしてください。</li></ul><li>ドメイン ベースのメッセージ認証、レポート、および準拠 (DMARC)</li><ul><li>DMARC セットアップでは[、DMARC を使用してメールを検証](use-dmarc-to-validate-email.md)Microsoft 365。</li></ul></ul>|
 |
 
 > [!NOTE]
@@ -73,16 +73,16 @@ Office 365Secure Score は、通常のアクティビティとセキュリティ
 
 |ダッシュボード|説明|
 |---|---|
-|[脅威管理ダッシュボード](security-dashboard.md)|セキュリティセンターの [脅威管理] セクションで、このダッシュボードを使用して、既に処理されている脅威を確認し、ビジネスをセキュリティで保護するために既に行っている脅威の調査と対応の機能についてビジネス意思決定者に報告するための便利なツールとして使用します。|
-|[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)|これは、セキュリティ センターの **[脅威の管理** ] セクションにも表示されます。 テナントに対する攻撃を調査または発生している場合は、エクスプローラー (またはリアルタイムの検出) を使用して脅威を分析します。 エクスプローラー (およびリアルタイム検出レポート) には、時間の過ぎた攻撃の量が表示され、脅威ファミリ、攻撃者インフラストラクチャなどによってこのデータを分析できます。 [インシデント] リストに不審なメールをマークできます。|
-|レポート - ダッシュボード|セキュリティ センターの **[レポート**] セクションで、オンライン組織と組織の監査SharePointをExchange Onlineします。 [レポートの表示] Azure Active Directory (Azure AD) ユーザー サインイン レポート、ユーザー アクティビティ レポート、Azure AD 監査ログに **アクセス** することもできます。|
+|[脅威管理ダッシュボード](security-dashboard.md)|Microsoft 365  Defender ポータルの [脅威管理] セクションで、このダッシュボードを使用して、既に処理されている脅威を確認し、ビジネスをセキュリティで保護するために既に行っている脅威調査と対応機能についてビジネス意思決定者に報告するための便利なツールとして使用します。|
+|[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)|これは、Defender ポータルの **[** 脅威の管理] Microsoft 365にも含まれる。 テナントに対する攻撃を調査または発生している場合は、エクスプローラー (またはリアルタイムの検出) を使用して脅威を分析します。 エクスプローラー (およびリアルタイム検出レポート) には、時間の過ぎた攻撃の量が表示され、脅威ファミリ、攻撃者インフラストラクチャなどによってこのデータを分析できます。 [インシデント] リストに不審なメールをマークできます。|
+|レポート - ダッシュボード|Defender ポータル **の [** レポート] セクションMicrosoft 365、オンライン組織および組織の監査SharePoint表示Exchange Onlineします。 [レポートの表示] Azure Active Directory (Azure AD) ユーザー サインイン レポート、ユーザー アクティビティ レポート、Azure AD 監査ログに **アクセス** することもできます。|
 |
 
-![セキュリティ センター ダッシュボード](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Microsoft 365Defender ポータル ダッシュボード](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>テナント全体のExchange Onlineを構成する
 
-管理センターのセキュリティと保護に関するExchangeの多くは、セキュリティ センターにも含まれています。 両方の場所でこれらを構成する必要はない。 推奨される追加の設定を次に示します。
+推奨される追加の設定を次に示します。
 
 <br>
 
@@ -147,11 +147,11 @@ SharePoint管理センターと管理センター OneDrive for Business同じ設
 
 - [Cloud App Security を展開する](/cloud-app-security/getting-started-with-cloud-app-security)
 - [Microsoft Cloud App Security の詳細情報](https://www.microsoft.com/cloud-platform/cloud-app-security)
-- [データのCloud App Security?](/cloud-app-security/what-is-cloud-app-security)
+- [Cloud App Security とは](/cloud-app-security/what-is-cloud-app-security)
 
 ![Cloud App Security ダッシュボード](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
-## <a name="additional-resources"></a>補足資料
+## <a name="additional-resources"></a>その他のリソース
 
 以下の記事とガイドは、環境を保護するための追加のMicrosoft 365提供します。
 

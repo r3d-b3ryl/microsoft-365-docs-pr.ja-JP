@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3bab9d0248a2ed8e83807f3c38215e653cba26eb
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 23a9b99a71d700bdeddb3398c592eeb778ceef23
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843556"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879266"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -49,7 +49,7 @@ Defender for Endpoint では、Microsoft の堅牢なクラウド サービスWi
 
 -   **脅威インテリジェンス**: Microsoft のハンター、セキュリティ チームによって生成され、パートナーによって提供される脅威インテリジェンスによって強化された脅威インテリジェンスにより、Defender for Endpoint は攻撃者のツール、テクニック、手順を識別し、収集されたセンサー データで監視されるとアラートを生成できます。
 
-<center><h2>エンドポイント用 Microsoft Defender</center></h2>
+<center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>脅威&の管理</b></center></a></td>
@@ -74,7 +74,7 @@ Defender for Endpoint では、Microsoft の堅牢なクラウド サービスWi
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0] 
 
 > [!TIP]
-> - 「Defender for Endpoint: What's new in [Microsoft Defender for Endpoint」の最新の機能強化について説明します](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)。
+> - 「Defender for Endpoint: What's new in [Microsoft Defender for Endpoint」の最新の機能強化について説明します](whats-new-in-microsoft-defender-atp.md)。
 > - Microsoft Defender for Endpoint は、最近の MITRE 評価で業界をリードする光学機能と検出機能を実証しました。 読み取り: [MITRE ATT および CK&評価からの分析情報](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 <a name="tvm"></a>

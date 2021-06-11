@@ -19,16 +19,21 @@ description: Microsoft Defender for microsoft Defender for Office 365プラン 2
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: f0c42bef1b090412a7a6422fe029323b645e90df
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275074"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878774"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>修復アクションを確認および管理Office 365
 
+**適用対象**
+- [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 電子メール の自動調査や&コンテンツの結果として、悪意のある、疑わしいなど、特定の修復アクションが作成されます。 Microsoft Defender for Office 365修復アクションには、次のものが含まれます。
+
 - URL のブロック (クリック時)
 - 電子メール メッセージまたはクラスターのソフト削除
 - メールまたはメールの添付ファイルを Quarantining する
@@ -36,13 +41,9 @@ ms.locfileid: "52275074"
 
 これらの修復アクションは、セキュリティ運用チームが承認しない限り、実行しません。 保留中のアクションをできるだけ早く確認して承認し、自動化された調査がリアルタイムで完了することを推奨します。 場合によっては、修復アクションを元に戻すことができます。
 
-**適用対象**
-- [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 ## <a name="approve-or-reject-pending-actions"></a>保留中のアクションを承認 (または拒否) する
 
-1. セキュリティ センター ( ) Microsoft 365に移動し <https://security.microsoft.com> 、サインインします。
+1. Defender ポータル ( ) Microsoft 365に移動 <https://security.microsoft.com> し、サインインします。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [保留中 **] タブ** で、承認を待っているアクションの一覧を確認します。
 4. リストからアイテムを選択します。 そのフライアウト ウィンドウが開きます。 
@@ -69,7 +70,7 @@ ms.locfileid: "52275074"
 2. [履歴 **] タブ** で、アクションの種類が [検疫ファイル] のファイルを **選択します**。
 3. 画面の右側のウィンドウで、[このファイルのインスタンスを **X** に適用する] を選択し、[元に戻す] を **選択します**。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [脅威エクスプローラーの使用](threat-explorer.md)
 - [自動調査および応答機能で誤検知/陰性を報告する方法](air-report-false-positives-negatives.md)

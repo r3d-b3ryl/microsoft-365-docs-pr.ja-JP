@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebde023db5196117a02a2372784a3110839c51fa
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 956fb591154df374c8010d875645e1122f3419b2
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843532"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879242"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 
@@ -47,7 +47,7 @@ Microsoft 脅威エキスパートは、セキュリティ運用センター (SO
 
 Microsoft Defender for Endpoint のお客様の場合は **、Microsoft 脅威エキスパート -** ターゲット攻撃通知を申請して、環境内で最も重大な脅威を特定し、迅速に対応するために役立つ特別な分析情報と分析を取得する必要があります。
 
-Microsoft 脅威エキスパート - 標的型攻撃通知の特典を受けるには、[**設定**]  >  [**一般**]  >  [**高度な機能**]  >  [**Microsoft 脅威エクスパート - 標的型攻撃通知**] の順に移動して、申し込みを行います。 承認されると、標的型攻撃通知の特典が提供されます。
+[ターゲット攻撃Microsoft 脅威エキスパート通知] の特典に登録するには、「設定 エンドポイントの一般的な高度な機能Microsoft 脅威エキスパート - ターゲット攻撃通知を適用する」に  >    >    >    >  移動します。 承認されると、標的型攻撃通知の特典が提供されます。
 
 **Microsoft 脅威エキスパート - Experts on Demand** を購読するには、アカウント チームまたは Microsoft 担当者に問い合わせ、組織が直面している関連する検出および敵対者について脅威の専門家と相談してください。
 

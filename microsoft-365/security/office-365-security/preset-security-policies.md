@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、標準ポリシーと厳密なポリシー設定を、Exchange Online Protection (EOP) と Microsoft Defender の保護機能全体に適用する方法をOffice 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 24fe67a7465ec71451b649dbc5963c28e0dc7cf3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822288"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879014"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
 
@@ -105,7 +105,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- [セキュリティ センター] Microsoft 365開きます <https://security.microsoft.com> 。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
+- Defender ポータルのMicrosoft 365開きます <https://security.microsoft.com> 。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -117,9 +117,9 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
   **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
-### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>セキュリティ センターを使用して、ユーザーに事前設定されたセキュリティ ポリシーを割り当てる
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>ユーザーに事前Microsoft 365セキュリティ ポリシーを割り当てるには、Defender ポータルを使用します。
 
-1. セキュリティ センターで、[メールの送信] **&[** ルールの脅威ポリシー&ポリシー] セクションの [セキュリティ ポリシーの事前設定] \>  \>  \>  \> **に移動します**。
+1. Defender ポータルMicrosoft 365、メール グループ ポリシー  & ルール & テンプレート ポリシー セクション の [セキュリティ ポリシーの事前設定] \>  \>  \>  \> **に移動します**。
 
 2. [標準 **保護] または [****厳密な保護] で、[** 編集] を **クリックします**。
 
@@ -144,9 +144,9 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
 5. [変更 **の確認と確認] ページで** 、選択内容を確認し、[確認] を **クリックします**。
 
-### <a name="use-the-security-center-to-modify-the-assignments-of-preset-security-policies"></a>セキュリティ センターを使用して、事前設定されたセキュリティ ポリシーの割り当てを変更する
+### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-preset-security-policies"></a>Defender ポータルMicrosoft 365使用して、事前設定されたセキュリティ ポリシーの割り当てを変更する
 
-Standard Protection または **Strict** **Protection** セキュリティ ポリシーの割り当てを変更する手順は、事前設定されたセキュリティ ポリシーをユーザーに最初に割り当てた場合と [同じです](#use-the-security-center-to-assign-preset-security-policies-to-users)。
+Standard Protection または **Strict** **Protection** セキュリティ ポリシーの割り当てを変更する手順は、事前設定されたセキュリティ ポリシーをユーザーに最初に割り当てた場合と [同じです](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users)。
 
 既存の条件と例外 **を** 維持しながら標準保護ポリシーまたは **厳密** な保護セキュリティ ポリシーを無効にするには、トグルを [無効] トグル オフ **に** ![ スライドします ](../../media/scc-toggle-off.png) 。 ポリシーを有効にするには、トグルを [有効] トグル **オンにスライド** ![ します ](../../media/scc-toggle-on.png) 。
 

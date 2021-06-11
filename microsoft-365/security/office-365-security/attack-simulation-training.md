@@ -12,24 +12,26 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法を学Office 365。
 ms.technology: mdo
-ms.openlocfilehash: 27279f927a15ea94ae84112ffdc23d88ea42d2ff
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d82e7544e6795e4514cf1949645107c53fc69c61
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206225"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878366"
 ---
 # <a name="simulate-a-phishing-attack"></a>フィッシング攻撃をシミュレートする
+
+**Microsoft** Defender for [Office 365プラン 2 に適用されます](defender-for-office-365.md)
 
 microsoft Defender for Office 365 の攻撃シミュレーション トレーニングを使用すると、組織で良性のサイバー攻撃シミュレーションを実行してセキュリティ ポリシーとプラクティスをテストし、従業員の意識を高め、攻撃に対する影響を減らします。 この記事では、攻撃シミュレーション トレーニングを使用してシミュレートされたフィッシング攻撃を作成する方法について説明します。
 
 攻撃シミュレーション トレーニングの概要については、「攻撃シミュレーション トレーニングの使用を開始 [する」を参照してください](attack-simulation-training-get-started.md)。
 
-シミュレートされたフィッシング攻撃を起動するには [、Microsoft 365](https://security.microsoft.com/)セキュリティ センターを開き、[メール & コラボレーション攻撃シミュレーション トレーニング]**に** 移動し、[シミュレーション] タブ \> [**に切り替**](https://security.microsoft.com/attacksimulator?viewid=simulations)えます。
+シミュレートされたフィッシング攻撃を起動するには、Microsoft 365 Defender ポータル ( ) を開き、[メール & コラボレーション攻撃シミュレーション トレーニング] に移動し、[シミュレーション] タブ <https://security.microsoft.com/>  \> **[に切り替](https://security.microsoft.com/attacksimulator?viewid=simulations)** えます。
 
 [ **シミュレーション] で**、[+ **シミュレーションの起動] を選択します**。
 
-![セキュリティ センターでシミュレーション ボタンMicrosoft 365起動する](../../media/attack-sim-preview-launch.png)
+![Defender ポータルでシミュレーション ボタンをMicrosoft 365する](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
 > シミュレーション作成時の任意の時点で、保存して閉じて、後でシミュレーションの構成を続行できます。
@@ -47,7 +49,7 @@ microsoft Defender for Office 365 の攻撃シミュレーション トレーニ
 > [!TIP]
 > [各手法の **説明内の** 詳細を表示する] をクリックすると、その手法に関する詳細情報とシミュレーション手順が表示されます。
 >
-> ![セキュリティ センターでの攻撃シミュレーション トレーニング内での資格情報Microsoft 365手順](../../media/attack-sim-preview-sim-steps.png)
+> ![Defender ポータルでの攻撃シミュレーション トレーニング内での資格情報の取得Microsoft 365手順](../../media/attack-sim-preview-sim-steps.png)
 
 テクニックを選択し、[次へ] をクリックした **後、シミュレーション** に名前と必要に応じて説明を指定します。
 
@@ -63,7 +65,7 @@ microsoft Defender for Office 365 の攻撃シミュレーション トレーニ
 - **フィルターで** 使用できる複雑 **さは、** 攻撃の対象となるペイロード内のインジケーターの数に基づいて計算されます。 インジケーターが多い場合、複雑さも低くなります。
 - **フィルター** を **使用して使用可能** なソースは、ペイロードがテナントに作成されたのか、Microsoft の既存のペイロード カタログ (グローバル) の一部であるかどうかを示します。
 
-![セキュリティ センターで攻撃シミュレーション トレーニング内で選択Microsoft 365ペイロード](../../media/attack-sim-preview-select-payload.png)
+![Defender ポータルで攻撃シミュレーション トレーニング内で選択Microsoft 365ペイロード](../../media/attack-sim-preview-select-payload.png)
 
 リストからペイロードを選択すると、ペイロードのプレビューが表示されます。
 
@@ -76,7 +78,9 @@ microsoft Defender for Office 365 の攻撃シミュレーション トレーニ
 特定のユーザーと **グループのみを含める場合は** 、次のいずれかを実行できます。
 
 - **ユーザーを** 追加します。これにより、テナントの検索と高度な検索およびフィルター機能 (過去 3 か月間シミュレーションの対象とされていないユーザーをターゲットに設定する機能など) を利用できます。
-  ![セキュリティ センターでの攻撃シミュレーション トレーニングでのMicrosoft 365フィルター](../../media/attack-sim-preview-user-targeting.png)
+
+  ![Defender ポータルでの攻撃シミュレーション トレーニングでのユーザー フィルター Microsoft 365する](../../media/attack-sim-preview-user-targeting.png)
+
 - **CSV からインポートすると** 、このシミュレーション用に定義済みの一連のユーザーをインポートできます。
 
 ## <a name="assigning-training"></a>トレーニングの割り当て
@@ -90,7 +94,7 @@ microsoft Defender for Office 365 の攻撃シミュレーション トレーニ
 > [!NOTE]
 > 自分でコースとモジュールを選択した場合でも、推奨されるコンテンツと利用可能なすべてのコースとモジュールを表示できます。
 >
-> ![セキュリティ センターでの攻撃シミュレーション トレーニング内での推奨トレーニングMicrosoft 365追加する](../../media/attack-sim-preview-add-training.png)
+> ![Defender ポータルでの攻撃シミュレーション トレーニング内での推奨トレーニングMicrosoft 365追加する](../../media/attack-sim-preview-add-training.png)
 
 次の手順では、自分でトレーニングを選択し、トレーニングのランディング ページをカスタマイズする場合は、[トレーニングの追加] が必要です。 トレーニングランディング ページをプレビューし、ヘッダーと本文を変更できます。
 
