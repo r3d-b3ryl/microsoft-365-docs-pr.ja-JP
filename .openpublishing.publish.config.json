@@ -19,14 +19,19 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": ["mor-oitac-eng@moravia.com"],
+  "notification_subscribers": [
+    "mor-oitac-eng@moravia.com"
+  ],
   "sync_notification_subscribers": [],
-  "branches_to_filter": ["live","master-sxs"],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/microsoft-365-docs",
-  "git_repository_branch_open_to_public_contributors": "public",
+  "branches_to_filter": [
+    "live",
+    "master-sxs"
+  ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/microsoft-365-docs.ja-jp",
+  "git_repository_branch_open_to_public_contributors": "live",
+  "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "continue_with_document_error": true,
   "resolve_user_profile_using_github": true,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
@@ -51,7 +56,6 @@
         "master": "master"
       }
     }
-
   ],
   "branch_target_mapping": {
     "live": [
@@ -69,9 +73,9 @@
       "template_folder": "_themes.pdf"
     }
   },
-  "need_generate_pdf": true,
-  "need_generate_intellisense": false,
   "docs_build_engine": {
     "name": "docfx_v3"
-  }
+  },
+  "need_generate_pdf": true,
+  "need_generate_intellisense": false
 }
