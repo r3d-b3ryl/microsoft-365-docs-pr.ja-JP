@@ -16,23 +16,21 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 2aaf3d1c650713a7f6cfb7b9abb9f2232013d6db
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9fbe2b624bec6bbe17bcf6bc8d3f842ba1e43ad7
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274798"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903734"
 ---
-# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a>Microsoft Defender AV 評価の更新コンプライアンス診断データを収集する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>更新プログラムのコンプライアンス診断データを収集して、Microsoft Defender ウイルス対策する
 
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-この記事では、Microsoft サポートチームとエンジニアリング チームが使用できる診断データを収集して、更新コンプライアンス アドインの Microsoft Defender AV Assessment セクションを使用するときに発生する可能性がある問題のトラブルシューティングに役立つ方法について説明します。
+この記事では、Microsoft サポートチームとエンジニアリング チームが使用できる診断データを収集して、更新コンプライアンス アドインの Microsoft Defender ウイルス対策 Assessment セクションを使用するときに発生する可能性がある問題のトラブルシューティングに役立つ方法について説明します。
 
 このプロセスを試す前に、「レポートのトラブルシューティング」[を](troubleshoot-reporting.md)Microsoft Defender ウイルス対策、すべての必須コンポーネントを満たしていることを確認し、その他の推奨されるトラブルシューティング手順を実行してください。
 
@@ -42,9 +40,9 @@ Update Compliance でレポートまたは表示されていない少なくと�
         
     a. [スタート] **メニューを開** きます。
 
-    b. cmd **と入力します**。 [コマンド プロンプト] を右 **クリックし、[** 管理者として **実行] をクリックします**。
+    b. cmd **と入力します**。 [コマンド プロンプト] を右 **クリックし、[** 管理者として **実行] を選択します**。
 
-    c. 管理者の資格情報を入力するか、プロンプトを承認します。
+    c. 管理者の資格情報を指定するか、プロンプトを承認します。
         
 2. ディレクトリに移動Windows Defenderします。 既定では `C:\Program Files\Windows Defender` です。
 
@@ -58,7 +56,7 @@ Update Compliance でレポートまたは表示されていない少なくと�
 
 5. これらのファイル.cab、Microsoft サポートからアクセスできる場所にコピーします。 たとえば、パスワードで保護されたフォルダー OneDrive共有できるフォルダーがあります。
 
-6. [コンプライアンスの更新] サポート メール テンプレートを使用して電子メールを <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">送信し</a>、テンプレートに次の情報を入力します。
+6. 更新コンプライアンス サポート メール テンプレートを使用して電子メールを <a href="mailto:ucsupport@microsoft.com?subject=MDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">送信し</a>、テンプレートに次の情報を入力します。
   
     ```
     I am encountering the following issue when using Microsoft Defender Antivirus in Update Compliance:

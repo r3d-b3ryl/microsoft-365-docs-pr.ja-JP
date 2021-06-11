@@ -11,18 +11,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 02/03/2021
+ms.date: 06/10/2021
 ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c60620d2a589c8473764b810d1fcb0e24f674451
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845572"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904058"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダー アクセスを制御して重要なフォルダーを保護する
 
@@ -89,9 +89,9 @@ Windowsシステム フォルダーは、既定で保護され、他のいくつ
 
 フォルダー アクセスの制御には、リアルタイムMicrosoft Defender ウイルス対策[を有効にする必要があります](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>管理されたフォルダー アクセス イベントを確認Microsoft Defender セキュリティ センター
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Defender ポータルで管理されたフォルダー アクセス イベントMicrosoft 365確認する
 
-Defender for Endpoint は、アラート調査シナリオの一環として、イベントとブロックに関する詳細 [なレポートを提供します](investigate-alerts.md)。
+Defender for Endpoint は、イベントとブロックに関する詳細[](investigate-alerts.md)なレポートを、Microsoft 365 Defender ポータルのアラート調査シナリオの一部として提供します。 [(「Microsoft Defender for Endpoint in Microsoft 365」を参照](../defender/microsoft-365-security-center-mde.md)してください。
 
 高度な検索を使用して、Microsoft Defender for Endpoint データ [を照会できます](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)。 監査モード[を使用している](audit-windows-defender.md)場合は、高度な検索[](advanced-hunting-overview.md)を使用して、フォルダー アクセスの制御設定が有効になっている場合に環境に与える影響を確認できます。
 
@@ -135,8 +135,4 @@ Windows セキュリティアプリを使用して、フォルダー アクセ�
 > [!NOTE]
 > [Windowsシステム フォルダー](#windows-system-folders-are-protected-by-default)は既定で保護され、一覧から削除することはできません。
 
-## <a name="see-also"></a>関連項目
 
-- [制御されたフォルダー アクセスを評価する](evaluate-controlled-folder-access.md)
-- [制御されたフォルダー アクセスをカスタマイズする](customize-controlled-folders.md)
-- [より多くのフォルダーを保護する](customize-controlled-folders.md#protect-additional-folders)

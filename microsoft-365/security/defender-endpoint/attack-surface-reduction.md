@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: f157a03d9a56aa0bbca695a27be57391e6b92360
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 58c2230d3a2e3323f7b9a315ca5d2a049f5f44fb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866633"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903854"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>攻撃表面の縮小ルールを使用してマルウェアの感染を防止する
 
@@ -95,7 +95,7 @@ Microsoft Defender ウイルス対策モードでリアルタイム保護を実�
 
 さらに、特定の攻撃表面の縮小ルールがトリガーされると、アラートが生成されます。
 
-通知と生成されるアラートは、Microsoft Defender セキュリティ センター ( ) および Microsoft 365 セキュリティ センター [https://securitycenter.windows.com](https://securitycenter.windows.com) ( ) で表示できます [https://security.microsoft.com](https://security.microsoft.com) 。
+通知と生成されたアラートは、Defender ポータル ( ) (以前は Microsoft 365 ) で表示 [https://security.microsoft.com](https://security.microsoft.com) [Microsoft Defender セキュリティ センター)。](microsoft-defender-security-center.md)
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>高度な狩猟と攻撃表面の縮小イベント
 
@@ -114,13 +114,13 @@ Microsoft Defender ウイルス対策モードでリアルタイム保護を実�
 - Windowsサーバー、[バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-攻撃表面の縮小ルールでは[E5](/windows/deployment/deploy-enterprise-licenses)ライセンスをWindows必要とWindows、高度な管理機能を利用できます。 Windows E5 でのみ使用できるこれらの機能には[、Defender for Endpoint](microsoft-defender-endpoint.md)で使用できる監視、分析、ワークフロー、および Microsoft 365 セキュリティ センターのレポート機能と構成[機能が含まれます](/microsoft-365/security/defender/overview-security-center)。 これらの高度な機能は、E3 ライセンスWindows ProfessionalまたはWindows使用できません。ただし、これらのライセンスを持っている場合は、イベント ビューアーとログMicrosoft Defender ウイルス対策を使用して、攻撃表面の縮小ルール イベントを確認できます。
+攻撃表面の縮小ルールでは[E5](/windows/deployment/deploy-enterprise-licenses)ライセンスをWindows必要とWindows、高度な管理機能を利用できます。 Windows E5 でのみ使用可能なこれらの機能には[、Defender for Endpoint](microsoft-defender-endpoint.md)で使用可能な監視、分析、およびワークフロー、および Microsoft 365 Defender のレポート[機能と構成機能が含まれます](/microsoft-365/security/defender/overview-security-center)。 これらの高度な機能は、E3 ライセンスWindows ProfessionalまたはWindows使用できません。ただし、これらのライセンスを持っている場合は、イベント ビューアーとログMicrosoft Defender ウイルス対策を使用して、攻撃表面の縮小ルール イベントを確認できます。
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>攻撃表面の縮小イベントを確認Microsoft Defender セキュリティ センター
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Defender ポータルで攻撃表面の縮小イベントMicrosoft 365確認する
 
 Defender for Endpoint は、アラート調査シナリオの一環として、イベントとブロックの詳細なレポートを提供します。
 
-高度な検索を使用して Defender for Endpoint データ [を照会できます](advanced-hunting-query-language.md)。 監査モードを実行している [場合](audit-windows-defender.md)は、高度な検索を使用して、攻撃表面の縮小ルールが環境に与える影響を理解できます。
+高度な検索を使用して、Defender for Endpoint[データMicrosoft 365 Defender](microsoft-defender-security-center.md)で[クエリを実行できます](advanced-hunting-query-language.md)。 監査モードを実行している [場合](audit-windows-defender.md)は、高度な検索を使用して、攻撃表面の縮小ルールが環境に与える影響を理解できます。
 
 クエリの例を次に示します。
 
@@ -134,9 +134,13 @@ DeviceEvents
 次のイベント ログをWindowsして、攻撃表面の縮小ルールによって生成されたイベントを表示できます。
 
 1. 評価パッケージ [をダウンロードし](https://aka.ms/mp7z2w) 、デバイス上 *cfa-events.xmlアクセスしやすい* 場所にファイルを抽出します。
+
 2. [スタート] メニューに「*イベント ビューアー*」という単語を入力し、イベント ビューアー Windows開きます。
+
 3. [アクション **] で**、[カスタム **ビューのインポート.... を選択します**。
+
 4. 抽出された場所 *cfa-events.xml* ファイルを選択します。 または [、XML を直接コピーします](event-views.md)。
+
 5. **[OK]** を選択します。
 
 イベントをフィルター処理して、次のイベントのみを表示するカスタム ビューを作成できます。そのすべては、フォルダー アクセスの制御に関連しています。
@@ -501,7 +505,7 @@ GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 このルールは、ランサムウェアを防止するために注意を払う傾向があります。
 
 > [!NOTE]
-> このルールを [使用するには、クラウドによる保護](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) を有効にする必要があります。
+> このルールを [使用するには、クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) を有効にする必要があります。
 
 このルールは次の中で導入されました。
 
@@ -516,9 +520,4 @@ Configuration Manager 名: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>関連項目
 
-- [攻撃面の減少の FAQ](attack-surface-reduction-faq.md)
-- [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
-- [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
-- [他のMicrosoft Defender ウイルス対策/マルウェア対策ソリューションとの互換性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

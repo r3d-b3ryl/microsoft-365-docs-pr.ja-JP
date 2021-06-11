@@ -18,13 +18,13 @@ ms.collection:
 description: Microsoft Defender for microsoft Defender for Office 365プラン 2 の自動調査および応答機能の修復アクションについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.date: 01/29/2021
-ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.date: 06/10/2021
+ms.openlocfilehash: 7894a9aa38239bf661c809cce96ea2a2a96c3725
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878774"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904130"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>修復アクションを確認および管理Office 365
 
@@ -52,16 +52,16 @@ ms.locfileid: "52878774"
    - [承認 **] を** 選択して保留中のアクションを開始します。
    - 保留中 **のアクション** が実行されるのを防ぐには、[拒否] を選択します。
 
-## <a name="undo-one-remediation-action"></a>1 つの修復アクションを元に戻す
+## <a name="change-or-undo-one-remediation-action"></a>1 つの修復アクションを変更または元に戻す
 
 1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
-2. [履歴 **] タブ** で、元に戻す操作を選択します。
+2. [履歴 **] タブ** で、変更または元に戻すアクションを選択します。
 3. 画面の右側のウィンドウで、[元に戻す] を **選択します**。
 
-## <a name="undo-multiple-remediation-actions"></a>複数の修復アクションを元に戻す
+## <a name="change-or-undo-multiple-remediation-actions"></a>複数の修復アクションを変更または元に戻す
 
 1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
-2. [履歴 **] タブ** で、元に戻す操作を選択します。 同じアクションの種類を持つアイテムを選択してください。 フライアウト ウィンドウが開きます。
+2. [履歴 **] タブ** で、変更または元に戻す操作を選択します。 同じアクションの種類を持つアイテムを選択してください。 フライアウト ウィンドウが開きます。
 3. フライアウト ウィンドウで、[元に戻す] を選択します。
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>複数のデバイス間で検疫からファイルを削除するには
@@ -70,7 +70,7 @@ ms.locfileid: "52878774"
 2. [履歴 **] タブ** で、アクションの種類が [検疫ファイル] のファイルを **選択します**。
 3. 画面の右側のウィンドウで、[このファイルのインスタンスを **X** に適用する] を選択し、[元に戻す] を **選択します**。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [脅威エクスプローラーの使用](threat-explorer.md)
 - [自動調査および応答機能で誤検知/陰性を報告する方法](air-report-false-positives-negatives.md)

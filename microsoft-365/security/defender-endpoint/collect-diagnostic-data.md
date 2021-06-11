@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7686f28646135986a78b4c269e41e2fc3a70dff9
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274786"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904046"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Microsoft Defender AV 診断データの収集
 
@@ -43,9 +43,9 @@ ms.locfileid: "52274786"
 
     a. [スタート] **メニューを開** きます。
 
-    b. cmd **と入力します**。 [コマンド プロンプト] を右 **クリックし、[** 管理者として **実行] をクリックします**。
+    b. cmd **と入力します**。 [コマンド プロンプト] を右 **クリックし、[** 管理者として **実行] を選択します**。
 
-    c. 管理者の資格情報を入力するか、プロンプトを承認します。
+    c. 管理者の資格情報を指定するか、プロンプトを承認します。
 
 2. Microsoft Defender ディレクトリに移動します。 既定では `C:\Program Files\Windows Defender` です。
 
