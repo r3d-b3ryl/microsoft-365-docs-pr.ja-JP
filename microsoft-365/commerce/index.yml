@@ -15,12 +15,12 @@ metadata:
   ms.date: 02/27/2020
   localization_priority: Normal
   search.appverid: MET150
-  ms.openlocfilehash: 2c048207d0528856924b348697e1f7c48114e82a
-  ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+  ms.openlocfilehash: ecf809c3fe771e38b6edc758d8f2654c0cb89ca6
+  ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/19/2021
-  ms.locfileid: "52537285"
+  ms.lasthandoff: 06/10/2021
+  ms.locfileid: "52888339"
 landingContent:
 - title: 請求と支払いを管理する
   linkLists:
@@ -28,26 +28,28 @@ landingContent:
     links:
     - text: 課金内容または請求書を表示する
       url: billing-and-payments/view-your-bill-or-invoice.md
+    - text: 課金内容または請求書の内容を理解する
+      url: billing-and-payments/understand-your-invoice2.md
+    - text: サブスクリプションを支払う
+      url: billing-and-payments/pay-for-your-subscription.md
     - text: 支払方法を管理する
       url: billing-and-payments/manage-payment-methods.md
-    - text: 課金内容または請求書の内容を理解する
-      url: billing-and-payments/understand-your-invoice.md
-    - text: 課金プロフィールを管理する
-      url: billing-and-payments/manage-billing-profiles.md
-    - text: 請求アカウントを管理する
-      url: manage-billing-accounts.md
+    - text: 請求先住所を変更する
+      url: billing-and-payments/change-your-billing-addresses.md
 - title: ライセンスを管理する
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: ライセンスの購入または削除
+      url: licenses/buy-licenses.md
     - text: ユーザーにライセンスを割り当てる
       url: ../admin/manage/assign-licenses-to-users.md
+    - text: ユーザーからライセンスの割り当てを解除する
+      url: ../admin/manage/remove-licenses-from-users.md
     - text: サブスクリプションとライセンスを理解する
       url: licenses/subscriptions-and-licenses.md
-    - text: サブスクリプションのライセンスを購入する
-      url: licenses/buy-licenses.md
-    - text: サブスクリプションからライセンスを削除する
-      url: ./licenses/buy-licenses.md
+    - text: 永続的なソフトウェアと製品のライセンス キーをダウンロードする
+      url: ../admin/setup/download-software-licenses-csp.md
 - title: アップグレード、更新、またはキャンセル
   linkLists:
   - linkListType: how-to-guide
@@ -56,10 +58,10 @@ landingContent:
       url: subscriptions/upgrade-to-different-plan.md
     - text: サブスクリプションを更新する
       url: subscriptions/renew-your-subscription.md
-    - text: サブスクリプションをキャンセルする
-      url: subscriptions/cancel-your-subscription.md
     - text: サブスクリプションを再度有効にする
       url: subscriptions/reactivate-your-subscription.md
+    - text: サブスクリプションをキャンセルする
+      url: subscriptions/cancel-your-subscription.md
     - text: アカウントの使用を停止する
       url: close-your-account.md
 - title: 試用する/購入する
@@ -69,8 +71,10 @@ landingContent:
     - text: Microsoft 365 の試用または購入
       url: try-or-buy-microsoft-365.md
     - text: 無料試用版からサブスクリプションを購入する
-      url: ./try-or-buy-microsoft-365.md
+      url: ./try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial
     - text: 試用期間を延長する
-      url: extend-your-trial.md
+      url: extend-your-trial.md#extend-your-trial
+    - text: 記憶領域を追加する
+      url: add-storage-space.md
     - text: ドメイン名を購入する
       url: ../admin/get-help-with-domains/buy-a-domain-name.md
