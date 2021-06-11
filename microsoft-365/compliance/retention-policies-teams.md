@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 607fbdd02cfaccfee79df67c4946c178ff3eb383
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280801"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861577"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -76,6 +76,9 @@ Teams のチャットとチャネル メッセージからのこのデータは�
 チャット メッセージとチャネル メッセージのアイテム保持ポリシーが構成されると、Exchange サービスのタイマー ジョブが、これらの Teams メッセージが保存されている隠しフォルダ内のアイテムを定期的に評価します。 タイマー ジョブの実行には、通常 1 - 7 日かかります。 アイテムの保持期間が満了すると、これらのアイテムは SubstrateHolds フォルダに移動されます。これは、すべてのユーザーまたはグループのメールボックスにある別の隠しフォルダで、「論理的に削除済み」アイテムが完全に削除される前に保存するためのものです。 
 
 メッセージは SubstrateHolds フォルダーに少なくとも 1 日間残り、削除の対象となる場合、タイマー ジョブは次回の実行時にメッセージを完全に削除します。
+
+> [!NOTE]
+> [データ保持の第 1 原則により](retention.md#the-principles-of-retention-or-what-takes-precedence)、別のアイテム保持ポリシーのために同じアイテムを保持する必要がある場合、または法的、調査上の理由から電子情報開示の保留リストにある場合、完全な削除は常に中断されます。
 
 アイテム保持ポリシーがチャット メッセージとチャネル メッセージに対して構成された後のコンテンツのパスは、アイテム保持ポリシーの保持後に削除、保持のみ、あるいは削除のみのどれであるかによって異なります。
 
@@ -197,7 +200,7 @@ Exchange Online のメールボックスを持っているユーザーが組織�
 
 ## <a name="limitations"></a>制限事項
 
-Teams の保持機能の最適化に継続的に取り組んでいます。 当面は、Teams チャネル メッセージとチャットにアイテム保持ポリシーを使用する場合、次の制限に注意してください。
+Microsoft は、Teams の保持機能の最適化に継続的に取り組んでいます。当面は、Teams のチャネル メッセージとチャットにアイテム保持ポリシーを使用する場合、次の制限に注意してください。
 
 - **Outlook での誤った表示の問題**。 Skype または Teams の場所用にアイテム保持ポリシーを作成する場合、ユーザーが Outlook デスクトップ クライアントでメールボックス フォルダーのプロパティを表示すると、これらのポリシーの 1 つが既定のフォルダーポリシーとして表示されます。 これは、Outlook の誤表示の問題であり、[既知の問題](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)です。 代わりに、フォルダーに適用されているメールボックスの保持ポリシーが表示されます。 Skype または Teams の保持ポリシーは、ユーザーのメールボックスには適用されません。
 
