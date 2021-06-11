@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da3722294957593fc9cb89abfaec13e45106eefc
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a3b017a9a05964c15411668787b035f1052c68cf
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187387"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878282"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction リソースの種類
 
@@ -53,6 +53,9 @@ ms.locfileid: "51187387"
 | [ウイルス対策スキャンを実行する](run-av-scan.md)                              | [マシン アクション](machineaction.md) | アプリケーションを使用して AV スキャンWindows Defender実行します (該当する場合)。    |
 | [マシンのオフボード](offboard-machine-api.md)                       | [マシン アクション](machineaction.md) | Microsoft [Defender](machine.md) for Endpoint のオフボード マシン。 |
 | [ファイルの停止と検疫](stop-and-quarantine-file.md)           | [マシン アクション](machineaction.md) | コンピューター上のファイルの実行を停止し、削除します。        |
+| [ライブ応答の実行](run-live-response.md)                     | [マシン アクション](machineaction.md)  | デバイスで一連のライブ応答コマンドを実行する                       |
+| [ライブ応答の結果を取得する](get-live-response-result.md) | URL エンティティ      | インデックスによって特定のライブ応答コマンドの結果ダウンロード リンクを取得します。 |
+|[コンピューターの操作をキャンセルする](cancel-machine-action.md)                                | [マシン アクション](machineaction.md)  | アクティブなコンピューターの操作を取り消します。                                            |
 
 <br>
 
@@ -71,6 +74,7 @@ ms.locfileid: "51187387"
 | creationDateTimeUtc | DateTimeOffset | アクションが作成された日時。                                                                                                                                                                 |
 | lastUpdateTimeUtc   | DateTimeOffset | アクションの状態が更新された最後の日付と時刻。                                                                                                                                                     |
 | relatedFileInfo     | クラス          | 2 つのプロパティが含まれる。 string 、 Enum と指定できる値 ```fileIdentifier``` : ```fileIdentifierType``` "Sha1"、"Sha256" および "Md5" 。                                                                         |
+
 
 
 ## <a name="json-representation"></a>Json 表記

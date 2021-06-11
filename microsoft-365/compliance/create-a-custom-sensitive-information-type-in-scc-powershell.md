@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス センターでポリシーのカスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: 75e767b0ea5ebe4940af5ee0fbfa85f858f65e9c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: deb29b768c136c9c952d2abe791b310f2fd1dbdd
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538708"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878246"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を作成する
 
@@ -38,6 +38,9 @@ ms.locfileid: "52538708"
 このトピックの[注意する必要がある潜在的な検証の問題](#potential-validation-issues-to-be-aware-of)を参照。
 
 テキストを処理するために使用されている Boost.RegEx (以前の RegEx++) エンジンの詳細については、「[Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)」を参照してください。
+
+> [!NOTE]
+> カスタムの機密情報の種類でキーワードの一部としてアンパサンド文字 (&) を使用する場合は、既知の問題に注意してください。 文字が適切に識別されていることを確認するには、文字の周囲にスペースを含む用語を追加する必要があります 。たとえば、L & _P_ ではなく L&P。
 
 ## <a name="sample-xml-of-a-rule-package"></a>ルール パッケージのサンプル XML
 

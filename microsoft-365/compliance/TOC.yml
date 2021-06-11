@@ -1,6 +1,6 @@
 - name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: 作業の開始
+- name: 概要
   items:
     - name: コンプライアンスを開始するためのクイック タスク
       href: compliance-quick-tasks.md
@@ -245,7 +245,7 @@
               href: dlp-teams-default-policy.md
             - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーについての詳細情報 (プレビュー)
               href: dlp-on-premises-scanner-learn.md
-            - name: Microsoft Compliance Extension (プレビュー) の詳細情報
+            - name: Microsoft Compliance Extension の詳細情報
               href: dlp-chrome-learn-about.md
             - name: データ損失防止の警告ダッシュボードについて
               href: dlp-alerts-dashboard-learn.md
@@ -267,7 +267,7 @@
               href: endpoint-dlp-getting-started.md
             - name: エンドポイント DLP のデバイス プロキシとインターネット接続の構成
               href: endpoint-dlp-configure-proxy.md
-            - name: Microsoft Compliance Extension (プレビュー) を開始する
+            - name: Microsoft Compliance Extension を開始する
               href: dlp-chrome-get-started.md
             - name: データ損失防止の警告ダッシュボードを開始する
               href: dlp-alerts-dashboard-get-started.md
@@ -694,14 +694,14 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: ケース コンテンツのレビュー
           items:
-            - name: レビュー セット ダッシュボードを使用する
-              href: advanced-ediscovery-dashboard.md
-            - name: レビュー セット内のドキュメントを表示する
-              href: view-documents-in-review-set.md
             - name: レビュー セット内のコンテンツのクエリとフィルター
               href: review-set-search.md
             - name: レビュー セット内のドキュメントをタグ付けする
               href: tagging-documents.md
+            - name: レビュー セット内のドキュメントを表示する
+              href: view-documents-in-review-set.md
+            - name: レビュー セット ダッシュボードを使用する
+              href: advanced-ediscovery-dashboard.md
         - name: ケース コンテンツを分析する
           href: analyzing-data-in-review-set.md
           items:
@@ -711,12 +711,20 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: テーマ
               href: themes-in-advanced-ediscovery.md
-            - name: プレディクティブ コーディング モジュール (プレビュー)
+        - name: プレディクティブ コーディングの使用 (プレビュー)
+          items:
+            - name: クイック スタート - プレディクティブ コーディング
+              href: predictive-coding-quick-start.md
+            - name: プレディクティブ コーディングについて
               href: predictive-coding-overview.md
-            - name: 関連モジュールを使用したデータ分析
-              href: using-relevance.md
-            - name: 関連モジュールの廃止
-              href: relevance-module-retirement.md
+            - name: プレディクティブ コーディング モデルの作成
+              href: predictive-coding-create-model.md
+            - name: プレディクティブ コーディング モデルのトレーニング
+              href: predictive-coding-train-model.md
+            - name: 予測スコア フィルターの適用
+              href: predictive-coding-apply-prediction-filter.md
+            - name: プレディクティブ コーディングの参照
+              href: predictive-coding-reference.md
         - name: ケースのコンテンツをエクスポートする
           href: exporting-data-ediscover20.md
           items:

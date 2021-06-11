@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス請求書または請求書の請求、請求、支払Microsoft 365支払い情報、および発注書番号の変更方法を解釈します。
 ms.date: 05/04/2021
-ms.openlocfilehash: 63d532ddfb86eb80a1cdeb6001fff683c5999146
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ba20e390e279d45d56671d49e32250d2db04c220
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635836"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888375"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 
@@ -129,6 +129,7 @@ ms.locfileid: "52635836"
 ## <a name="related-content"></a>関連コンテンツ
 
 [請求書または請求書を検索して表示する](view-your-bill-or-invoice.md) 方法 (記事)\
+[メキシコでのMicrosoft 365の請求情報](/microsoft-365/commerce/billing-and-payments/mexico-billing-info)(記事) \
 [請求先住所を変更](change-your-billing-addresses.md) する (記事)\
 [組織のアドレス、技術的な](../../admin/manage/change-address-contact-and-more.md) 連絡先メール、その他の情報を変更する (記事)\
 [ビジネス サブスクリプションのMicrosoft 365支払い](pay-for-your-subscription.md)(記事)\

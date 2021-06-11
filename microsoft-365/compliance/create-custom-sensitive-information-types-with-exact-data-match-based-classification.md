@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff190fa85e631562a07dcecc1f75713ecacdf07e
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 6839401bc1dd00acc45992f902a6360eb7f20120
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822119"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878198"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
 
 
-[カスタムの機密情報の種類](sensitive-information-type-learn-about.md) は機密性の高いアイテムの識別に利用され、これにより、不注意による共有や不適切な共有を防止することができます。 以下に基づいて、カスタムの機密情報の種類を定義します。
+[カスタムの機密情報の種類](sensitive-information-type-learn-about.md) は機密性の高いアイテムの識別に利用され、これにより、不注意による共有や不適切な共有を防止することができます。 次に基づいてカスタム機密情報の種類 (SIT) を定義します。
 
 - パターン
 - *従業員*、*バッジ*、*ID* などのキーワード証拠
@@ -93,21 +93,22 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 
 EDM ベースの分類の設定と構成には、次のものが含まれます。
 
-1. [.csv 形式での機密データの保存 ](#save-sensitive-data-in-csv-format)
+1. [機密データを .csv .tsv 形式で保存する](#save-sensitive-data-in-csv-or-tsv-format)
 2. [機密情報データベース スキーマを定義する](#define-the-schema-for-your-database-of-sensitive-information)
 3. [ルール パッケージを作成する](#set-up-a-rule-package)
 
 
-#### <a name="save-sensitive-data-in-csv-format"></a>.csv 形式で機密データを保存する
+#### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>機密データを .csv .tsv 形式で保存する
 
-1. 使用する機密情報を特定します。 データを Microsoft Excel などのアプリにエクスポートし、ファイルを .csv 形式で保存します。 データ ファイルには、次のデータを含めることができます。
+1. 使用する機密情報を特定します。 データをアプリにエクスポートし、Microsoft Excelファイルに保存します。 ファイルは、.csv (コンマ区切り値)、.tsv (タブ区切り値)、またはパイプ区切り (|) 形式で保存できます。 データ値に住所などのコンマが含まれている場合は、.tsv 形式をお勧めします。
+データ ファイルには、次のデータを含めることができます。
       - 最大 1 億行の機密データ
       - データ ソースごとに最大 32 列 (フィールド)
       - 検索可能としてマークされた列 (フィールド) を最大 5 列
 
-2. EDM ベースの分類に使用されるフィールドの名前が 1 行目に含まれるように、.csv ファイル内の機密データを構成します。 .csv ファイルには、"ssn"、"birthdate"、"firstname"、"lastname" のフィールド名がある可能性があります。 列見出しの名前にスペースやアンダースコアを含めることはできません。 たとえば、この記事で使用するサンプルの .csv ファイルは *PatientRecords.csv* と呼ばれており、その列には *PatientID*、*MRN*、*LastName*、*FirstName*、*SSN* などが含まれています。
+2. EDM ベースの分類に使用されるフィールドの名前が最初の行に含まれる.csvまたは .tsv ファイル内の機密データを構造化します。 ファイルには、"ssn"、"birthdate"、"firstname"、"lastname" などのフィールド名が含まれ得ます。 列見出しの名前にスペースやアンダースコアを含めることはできません。 たとえば、この記事で使用するサンプルの .csv ファイルは *PatientRecords.csv* と呼ばれており、その列には *PatientID*、*MRN*、*LastName*、*FirstName*、*SSN* などが含まれています。
 
-3. 機密データ フィールドの形式に注意してください。 特に、コンテンツにコンマが含まれている可能性のあるフィールド (たとえば、"Seattle,WA" の値を含むストリート アドレス) は、EDM ツールによって解析されるときに、2 つの別のフィールドとして解析されます。 この問題を回避するには、機密データ テーブル内の該当するフィールドが一重引用符または二重引用符で確実に囲まれているようにすることが必要です。 コンマを含むフィールドにスペースも含まれている可能性がある場合は、対応する形式 (たとえば、コンマとスペースを含む複数の単語の文字列) に一致するカスタムの機密情報の種類を作成する必要があります。それにより、ドキュメントがスキャンされたときに文字列が正しく一致するようになります。
+3. 機密データ フィールドの形式に注意してください。 特に、コンテンツにコンマを含む可能性があるフィールド (たとえば、値 "Seattle,WA" を含む住所) は、.csv 形式が選択されている場合に解析すると、2 つの別個のフィールドとして解析されます。 この問題を回避するには、.tsv 形式を使用するか、機密データ テーブルの値を二重引用符で囲むコンマを囲む必要があります。 コンマを含む値にスペースも含まれている場合は、対応する形式に一致するカスタム SIT を作成する必要があります。 たとえば、コンマとスペースを含む複数単語文字列を検出する SIT。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>機密情報のデータベースのスキーマを定義する
 
@@ -205,7 +206,7 @@ EDM ベースの分類の設定と構成には、次のものが含まれます�
 
 1. 次の例のように、XML 形式 (Unicode エンコード) でルール パッケージを作成します。 (この例は、コピー、変更、使用することができます。)
 
-      ルール パッケージをセットアップするときに、.csv ファイルと **edm .xml** ファイルを正しく参照してください。 この例は、コピー、変更、使用が可能です。 このサンプル xml では、EDM の機密情報の種類を作成するために、次のフィールドをカスタマイズする必要があります。
+      ルール パッケージを設定する場合は、ファイルまたは .tsv .csvファイルとファイルを正しく **edm.xmlしてください。** この例は、コピー、変更、使用が可能です。 このサンプル xml では、EDM の機密情報の種類を作成するために、次のフィールドをカスタマイズする必要があります。
 
       - **RulePack id & ExactMatch id**: [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) を使用して GUID を作成します。
 
@@ -385,7 +386,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 - EDMUploadAgent を実行するための .NET バージョン 4.6.2 が搭載された Windows 10 または Windows Server 2016 マシン
 - 以下のためのアップロード マシン上のディレクトリ。
     -  EDMUploadAgent
-    - このサンプルでは、csv 形式の **PatientRecords.csv** の機密アイテム ファイル
+    - この例では、.csv .tsv 形式の機密アイテム **PatientRecords.csv** ファイル
     -  出力ハッシュ ファイルとソルト ファイル
     - **edm.xml** ファイルのデータストア名 (このサンプルでは `PatientRecords`)
 - [完全一致スキーマと機密情報の種類ウィザード](sit-edm-wizard.md)を使用している場合は、それをダウンロードする ***必要が あります***
@@ -404,7 +405,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 > この手順を開始する前に、自分が **EDM\_DataUploaders** セキュリティ グループのメンバーであることを確認します。
 
 > [!TIP]
-> オプションとして、アップロードする前に、以下を実行して csv ファイルに対して検証を実行することもできます。
+> 必要に応じて、次を実行してアップロードする前に、.csvファイルまたは .tsv ファイルに対して検証を実行できます。
 >
 >`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
@@ -443,11 +444,12 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 4. 機密データをハッシュ化してアップロートするには、コマンド プロンプト ウィンドウで次のコマンドを実行します。
 
-   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
+   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]`
 
    例: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   これにより、ランダムに生成されたソルト値がハッシュに自動的に追加され、セキュリティが強化されます。 オプションで独自のソルト値を使用する場合は、コマンドに **/Salt<saltvalue>** を追加します。 この値は 64 文字の長さにする必要があり、a-z 文字と 0-9 文字のみを使用することができます。
+   機密データ ファイルの既定の形式はコンマ区切りの値です。 タブ区切りファイルを指定するには、/ColumnSeparator パラメーターで "{Tab}" オプションを指定するか、"|" オプションを指定してパイプ区切りファイルを指定します。  
+   このコマンドは、ランダムに生成されたソルト値をハッシュに自動的に追加し、セキュリティを強化します。 オプションで独自のソルト値を使用する場合は、コマンドに **/Salt<saltvalue>** を追加します。 この値は 64 文字の長さにする必要があり、a-z 文字と 0-9 文字のみを使用することができます。
 
 5. 次のコマンドを実行してアップロードの状態を確認します。
 
@@ -477,7 +479,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
    - .EdmHash
    - .EdmSalt
 
-2. これらのファイルを、機密アイテムの csv ファイル (PatientRecords) をテナントにアップロードするために使用するコンピューターへと安全な方法でコピーします。
+2. これらのファイルを安全な方法でコンピューターにコピーして、機密アイテム .csv または .tsv ファイル (PatientRecords) をテナントにアップロードします。
 
    ハッシュされたデータをアップロードするには、Windows コマンド プロンプトで次のコマンドを実行します。
 
@@ -508,10 +510,10 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 1. 機密情報のデータベースを更新するためのプロセスと頻度 (毎日または毎週) を決定します。
 
-2. 機密情報データを Microsoft Excel などのアプリに再度エクスポートし、ファイルを .csv 形式で保存します。 「[機密データをハッシュしアップロードする](#part-2-hash-and-upload-the-sensitive-data)」で説明した手順の実行時に使用したものと同じファイル名と場所を使用してください。
+2. 機密データをアプリ (Microsoft Excel など) に再エクスポートし、ファイルを .csv .tsv 形式で保存します。 「[機密データをハッシュしアップロードする](#part-2-hash-and-upload-the-sensitive-data)」で説明した手順の実行時に使用したものと同じファイル名と場所を使用してください。
 
       > [!NOTE]
-      > .csv ファイルの構造 (フィールド名) に変更がない場合は、データを更新する際に、データベース スキーマ ファイルを変更する必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。
+      > .csv または .tsv ファイルの構造 (フィールド名) に変更がない場合は、データを更新するときにデータベース スキーマ ファイルを変更する必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。
 
 3. 「[機密データをハッシュしアップロードする](#part-2-hash-and-upload-the-sensitive-data)」の手順の、手順 2 と 3 を自動化するには、[タスク スケジューラ](/windows/desktop/TaskSchd/task-scheduler-start-page) を使用します。 タスクのスケジュールを設定するにはいくつかの方法があります。
 
@@ -535,7 +537,7 @@ $edminstallpath = 'C:\\Program Files\\Microsoft\\EdmUploadAgent\\'
 $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $schemaext = '.xml'
-\# Assuming CSV file name is same as data store name
+\# Assuming file name is same as data store name and file is in .csv format
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
@@ -571,7 +573,7 @@ $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $edmext = '.EdmHash'
 $schemaext = '.xml'
-\# Assuming CSV file name is same as data store name
+\# Assuming file name is same as data store name and file is in .csv format
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 $hashFile = "$fileLocation\\$dataStoreName$edmext"
 \# Assuming Schema file name is same as data store name

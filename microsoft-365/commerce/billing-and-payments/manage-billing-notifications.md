@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 請求通知メールと請求書添付ファイルを受け取るユーザーを管理する方法について学習します。
 ms.date: 03/17/2021
-ms.openlocfilehash: d4083dc5a9d70eb8c20b4107389ec5fec65749ad
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 75c75175930434619a01886b1096757bf04111c5
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332140"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888363"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>請求通知と請求書の添付ファイルを管理する
 
@@ -43,7 +43,7 @@ ms.locfileid: "52332140"
 
 請求通知メールは、組織の優先言語で送信されます。 優先する言語を変更するには、次の手順を使用します。
 
-1. Microsoft 365 管理センターで、[請求通知]**ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">に移動</a>します。
+1. 管理センターでMicrosoft 365請求通知ページ  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">に移動</a>します。
 2. [課金通知 **の設定] セクションで** 、[通知設定の **編集] を選択します**。
 3. [課金通知 **の設定] ウィンドウ** の [優先言語] **で** 、使用する言語を選択し、[保存] を **選択します**。
 
@@ -103,7 +103,7 @@ ms.locfileid: "52332140"
 
 課金プロファイルがある場合、この記事で説明する手順の一部は、一部のサブスクリプションで若干異なる場合があります。 このセクションでは、これらの違いについて説明します。 [請求プロファイルを持っているかどうかは、どのように確認できますか?](manage-billing-profiles.md)
 
-### <a name="who-receives-billing-notifications"></a>請求通知を受け取るユーザー
+### <a name="who-receives-billing-notifications"></a>Who請求通知を受け取る場合
 
 請求通知メールは、次のいずれかの役割が割り当てられているユーザーのプライマリおよび代替メール アドレスに送信されます。
 
@@ -130,5 +130,6 @@ ms.locfileid: "52332140"
 ## <a name="related-content"></a>関連コンテンツ
 
 [課金内容または請求書を表示する](view-your-bill-or-invoice.md) (article)\
-[Microsoft 365 for business の請求書](understand-your-invoice2.md) または請求書について (記事)\
+[メキシコでのMicrosoft 365の請求情報](/microsoft-365/commerce/billing-and-payments/mexico-billing-info)(記事) \
+[ビジネス向け請求書または請求書Microsoft 365を理解](understand-your-invoice2.md)する (記事)\
 [ユーザーを追加し、同時にライセンスを割り当てる](../../admin/add-users/add-users.md) (記事)

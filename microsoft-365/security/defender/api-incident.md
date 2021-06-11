@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 587d6107b0c09b2178311d8da6606968e7fda083
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730932"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888435"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365Defender インシデント API とインシデント リソースの種類
 
@@ -56,6 +56,7 @@ HTTP 応答コードは、送信された要求の数または割り当てられ
 -|-|-
 [インシデントを一覧表示する](api-list-incidents.md) | [インシデント リスト](api-incident.md) | インシデントの一覧を取得します。
 [インシデントを更新する](api-update-incidents.md) | [インシデント](api-incident.md) | 特定のインシデントを更新します。
+[インシデントの取得](api-get-incident.md) | [インシデント](api-incident.md) | 1 つのインシデントを取得します。
 
 ## <a name="request-body-response-and-examples"></a>要求の本文、応答、および例
 
