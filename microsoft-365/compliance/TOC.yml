@@ -431,6 +431,8 @@
               href: archive-webexteams-data.md
             - name: Web ページ
               href: archive-webpagecapture-data.md
+            - name: Web ページ
+              href: archive-webpagecapture-data.md
             - name: Facebookからの職場
               href: archive-workplacefromfacebook-data.md
             - name: XIP
@@ -457,6 +459,8 @@
               href: archive-telus-network-data.md
             - name: Verizon ネットワーク
               href: archive-verizon-network-data.md
+            - name: WeChat (プレビュー)
+              href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
         - name: パートナーと共同作業して、サード パーティのデータをアーカイブする
