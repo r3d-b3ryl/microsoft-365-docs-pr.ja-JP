@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 処理確認を利用する場合や、レコードとしてマークされたアイテムが構成した設定に従って自動的に削除される場合、コンテンツの処理を監視および管理します。
-ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 577cf25ffc8735be19434496bd16202a8e383761
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594075"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878126"
 ---
 # <a name="disposition-of-content"></a>コンテンツの処理
 
@@ -38,7 +38,7 @@ Microsoft 365 コンプライアンス センターの **レコード管理** �
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>コンテンツの処理を表示するための前提条件
 
-処理確認を管理し、レコードが削除されたことを確認するには、十分なアクセス許可があり、監査が有効になっている必要があります。
+処理確認を管理し、レコードが削除されたことを確認するには、十分なアクセス許可があり、監査が有効になっている必要があります。 また、処理の[制限](retention-limits.md#maximum-number-of-items-for-disposition)にも注意してください。
 
 ### <a name="permissions-for-disposition"></a>処理のアクセス許可
 
@@ -215,8 +215,6 @@ If you need additional information, visit the helpdesk website (https://support.
 これらのアイテムは、**種類** 列に **処分されたレコード** を表示します。 以下に例を示します。
 
 ![処理確認なしで処理されたアイテム](../media/records-disposed2.png)
-
-[**処理されたアイテム**] タブに表示されるアイテムは、アイテムが処理されてから最大 7 年間保持され、その期間のレコードあたりのアイテム数は 100 万に制限されます。 **カウント** の数がこの 100 万の制限に近づいていて、レコードの処理の証明が必要な場合は、[Microsoft サポート](../business-video/get-help-support.md)に連絡し​​てください。
 
 > [!NOTE]
 > この機能は、[統合監査ログ](search-the-audit-log-in-security-and-compliance.md)からの情報を使用して、対応するイベントがキャプチャされるように、監査を[有効にして検索可能](turn-audit-log-search-on-or-off.md)にする必要があります。

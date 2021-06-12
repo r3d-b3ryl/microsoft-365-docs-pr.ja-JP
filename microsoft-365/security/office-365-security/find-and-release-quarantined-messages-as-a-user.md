@@ -20,12 +20,12 @@ ms.custom:
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4913d0c6fc34d912474bcceac8b1785c4a7e07b3
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 60b319b81362b9d88afcd734021db227969b04d0
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821297"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877874"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -51,11 +51,11 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 |フィッシング (高精度フィッシングではない)|![チェック マーク](../../media/checkmark.png)||![チェック マーク](../../media/checkmark.png)|
 |
 
-検疫されたメッセージは、Microsoft 365 セキュリティ センターで、または (管理者が設定している場合は) [エンドユーザーのスパム通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)で表示および管理します。
+検疫されたメッセージは、Microsoft 365 Defender ポータルで、または (管理者が設定している場合は) [エンドユーザーのスパム通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)で表示および管理します。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- セキュリティ センターを開くには、<https://security.microsoft.com> にアクセスします。 検疫ページを直接開くには、<https://security.microsoft.com/quarantine> にアクセスします。
+- Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 検疫ページを直接開くには、<https://security.microsoft.com/quarantine> にアクセスします。
 
 - 管理者は、スパム対策ポリシーでメッセージを完全に削除する前に、メッセージを検疫で保持する期間を構成できます。 検疫期間が切れたメッセージは回復できません。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
@@ -67,7 +67,7 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 ## <a name="view-your-quarantined-messages"></a>検疫済みメッセージを表示する
 
-1. セキュリティ センターで、**[メールとコラボレーション]** \> **[レビュー]** \> **[検疫]** の順に移動します。
+1. Microsoft 365 Defender ポータルで、**[メールと共同作業]** \> **[レビュー]** \> **[検疫]** に移動します。
 
 2. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 **[列の変更]** をクリックして、最大で 7 列まで表示できます。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
 

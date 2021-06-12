@@ -3,7 +3,7 @@ title: Microsoft Viva トピックの概要
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: cjtan
+ms.reviewer: cjtan; lauris
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva トピックの概要。
-ms.openlocfilehash: c95e611a98609ff13a41854a6fb25b6ae88b43d8
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877814"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908326"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva トピックの概要 
 
-ビバ トピックでは、Microsoft AI テクノロジ、Microsoft 365、Microsoft Graph、検索、その他のコンポーネントとサービスを使用して、SharePoint モダン ページ、Microsoft Search、Search in Word、PowerPoint、Outlook、Excel から始まる、日常的に使用する Microsoft 365 アプリのユーザーに知識を提供します。
+ビバ トピックでは、Microsoft AI テクノロジ、Microsoft 365、Microsoft Graph、検索、その他のコンポーネントとサービスを使用して、SharePoint モダン ページ、Microsoft Search、Search in Word、PowerPoint、Outlook、および Excel から始まる、日常的に使用する Microsoft 365 アプリのユーザーに知識を提供します。
 
 <br/>
 
@@ -37,15 +37,36 @@ Viva トピックは、AI を使って組織内の *トピック* を自動的�
 
 ## <a name="how-topics-are-displayed-to-users"></a>ユーザーに対するトピックの表示方法
 
-SharePoint ニュースやページのコンテンツでトピックがメンションされると、そのトピックが強調表示されます。 強調表示からトピック サマリーを開くことができます。 サマリーのタイトルからトピックの詳細を開きます。 メンションされたトピックは、自動的に特定されたか、またはページ作成者がトピックを直接参照してページに追加された可能性があります。 
+トピックは、次の方法でユーザーに表示されます。
 
-   ![トピックの強調表示](../media/knowledge-management/saturn.png) 
+- [ページの](topic-experiences-overview.md#topic-highlights)トピックSharePoint
+- 検索結果のトピック [回答](topic-experiences-overview.md#search-results)
+- Office アプリケーション [での検索](topic-experiences-overview.md#office-application-search)
+- [トピック センターの](topic-experiences-overview.md#topic-center) ホーム ページ
 
-Word、PowerPoint、Outlook、Excel で検索を使用する場合、またはコンテキスト メニューで [検索] を選択すると、表示される結果にトピックの概要が表示される場合があります。
+### <a name="topic-highlights"></a>トピックの強調表示
+
+SharePoint ニュースやページのコンテンツでトピックがメンションされると、そのトピックが強調表示されます。 強調表示からトピック サマリーを開くことができます。 概要のタイトルからトピックの詳細を開き、完全なトピック ページを表示します。 前述のトピックは、自動的に識別するか、ページ作成者がトピックに直接参照してページに追加されている可能性があります。 
+
+   ![トピックのハイライトを示すスクリーンショット。](../media/knowledge-management/saturn.png) 
+
+### <a name="search-results"></a>検索結果
+
+検索範囲を変更[](search.md#topic-answer)して組織全体を含める場合は、SharePoint スタート ページから検索したり、Office.com で検索したり、SharePoint サイトから検索したりすると、検索結果にトピックの回答が表示されます。 トピックの回答は、結果リストのトピックに表示され、そのトピックに関連する短い情報セットを提供します。 
+
+   ![サイト検索の検索結果を示SharePointスクリーンショット。](../media/knowledge-management/site-search-results.png) 
+
+### <a name="office-application-search"></a>Office検索
+
+Word、PowerPoint、Outlook、Excel などの Office アプリで検索を使用する場合は、検索ボックスを使用するか、コンテキスト メニューで [検索] を選択すると、トピックの回答が検索結果に表示されます。
 
    ![[検索] ボックスを使用して Word で検索を示すスクリーンショット。](../media/knowledge-management/word-search-2.png)
 
    ![[検索] コンテキスト メニューを使用して Word で検索を示すスクリーンショット。](../media/knowledge-management/word-search-1.png)
+
+### <a name="topic-center"></a>トピック センター
+
+ユーザーは、自分が接続している組織内のトピックをトピック センターのホーム [ページで確認できます](topic-center-overview.md#home-page)。
 
 ## <a name="knowledge-indexing"></a>知識のインデックス化
 

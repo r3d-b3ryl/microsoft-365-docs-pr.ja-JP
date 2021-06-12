@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 71ad8f52fd9347abdf0146969bb84a19d8883262
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5fde3bfad69a5851dd94b76afb262f8be12d0360
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843065"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908259"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configuration Manager を使用して Microsoft Defender for Endpoint を管理する
 
@@ -55,9 +55,7 @@ Microsoft エンドポイント マネージャー (Intune) と Microsoft Intune
 
 ## <a name="configure-your-microsoft-defender-security-center"></a>サーバーを構成Microsoft Defender セキュリティ センター
 
-まだ行っていない場合は **、Microsoft Defender セキュリティ センター** ( ) を構成して、アラートの表示、脅威保護機能の構成、組織の全体的なセキュリティ体制に関する詳細情報 [https://securitycenter.windows.com](https://securitycenter.windows.com) の表示を行います。 
-
-また、エンド ユーザーに表示される機能と機能を構成Microsoft Defender セキュリティ センター。
+まだ実行していない場合は、Microsoft 365 Defender ポータルを構成して、アラートの表示、脅威保護機能の構成、組織の全体的なセキュリティ体制に関する詳細情報の表示を行います。 「Microsoft Defender セキュリティ センター」[を参照してください](microsoft-defender-security-center.md)。 また、エンド ユーザーが Defender ポータルで表示できる機能と機能Microsoft 365することもできます。
 
 - [アプリケーションのMicrosoft Defender セキュリティ センター](/microsoft-365/security/defender-endpoint/use)
 

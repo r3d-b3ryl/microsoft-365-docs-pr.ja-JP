@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 セキュリティ センターのアクセス許可
+title: Microsoft 365 Defender ポータルのアクセス許可
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,18 +15,18 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 管理者が Microsoft 365 セキュリティ センターでセキュリティに関連するすべてのタスクのアクセス許可を管理する方法を説明します。
+description: 管理者は、セキュリティに関連するすべてのタスクについて、Microsoft 365 Defender ポータルでアクセス許可を管理する方法を学習できます。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c2d28510c25290921084e6a238fa8c781c35624
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e810b0146803d22246db6d4248d7d4a6a203834b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772525"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879026"
 ---
-# <a name="permissions-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターのアクセス許可
+# <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルのアクセス許可
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,33 +37,36 @@ ms.locfileid: "52772525"
 
 すべての Microsoft 365 サービスに関するセキュリティのシナリオを管理する必要があります。 また、組織内の適切なユーザーに適切な管理者権限を付与する柔軟性も必要です。
 
-Microsoft 365 セキュリティ センターは <https://security.microsoft.com> からアクセスできます。これは、Microsoft 365 でセキュリティ タスクを実行するユーザーのアクセス許可の直接的な管理をサポートします。 セキュリティ センターを使用してアクセス許可を管理することで、セキュリティに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
+Microsoft 365 Defender ポータルは <https://security.microsoft.com> からアクセスできます。これは、Microsoft 365 でセキュリティ タスクを実行するユーザーのアクセス許可の直接的な管理をサポートします。 Microsoft 365 Defender ポータルを使用してアクセス許可を管理することで、セキュリティに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
 
-セキュリティ センターでアクセス許可を管理するには、**[アクセス許可と役割]** または <https://security.microsoft.com/securitypermissions> に移動します。 セキュリティ センターで、**グローバル管理者** または **組織管理** 役割グループのメンバーである必要があります。 具体的には、**"役割の管理"** 役割を使用すると、ユーザーはセキュリティ センターで役割グループの表示、作成、および変更をすることができます。また、この役割は既定で **"組織管理"** 役割グループにのみ割り当てられています。
+Microsoft 365 Defender ポータルでアクセス許可を管理するには、**[アクセス許可と役割]** または <https://security.microsoft.com/securitypermissions> に移動します。 Microsoft 365 Defender ポータルで、**グローバル管理者** または **組織管理** 役割グループのメンバーである必要があります。 具体的には、**"役割の管理"** 役割を使用すると、ユーザーは Microsoft 365 Defender ポータルで役割グループの表示、作成、および変更をすることができます。また、この役割は既定で **"組織管理"** 役割グループにのみ割り当てられています。
+
+> [!NOTE]
+> Microsoft 365 コンプライアンス センターのアクセス許可については、「[Microsoft 365 コンプライアンス センターのアクセス許可](../../compliance/microsoft-365-compliance-center-permissions.md)」を参照してください。
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>メンバー、役割、役割グループの関係
 
-セキュリティ センターのアクセス許可は、役割ベースのアクセス制御 (RBAC) の権限モデルに基づきます。 RBAC は、Microsoft 365 のほとんどのサービスで使用されているのと同じアクセス許可モデルです。そのため、これらのサービスのアクセス許可構造に慣れている場合、セキュリティ センターでのアクセス許可の付与が非常によく似ていることに気づくでしょう。
+Microsoft 365 Defender ポータルのアクセス許可は、役割ベースのアクセス制御 (RBAC) の権限モデルに基づきます。 RBAC は、Microsoft 365 のほとんどのサービスで使用されているのと同じアクセス許可モデルです。そのため、これらのサービスのアクセス許可構造に慣れている場合、Microsoft 365 Defender ポータルでのアクセス許可の付与が非常によく似ていることに気づくでしょう。
 
 **役割** は、一連のタスクを実行するアクセス許可を付与します。
 
-**役割グループ** は、ユーザーがセキュリティ センターで仕事を行えるようにする一連の役割です。 たとえば、"攻撃シミュレーター管理者" 役割グループには、攻撃シミュレーション トレーニングのあらゆる側面を作成および管理するための "攻撃シミュレーター管理者" 役割が含まれます。
+**役割グループ** は、ユーザーが Microsoft 365 Defender ポータルで仕事を行えるようにする一連の役割です。 たとえば、"攻撃シミュレーター管理者" 役割グループには、攻撃シミュレーション トレーニングのあらゆる側面を作成および管理するための "攻撃シミュレーター管理者" 役割が含まれます。
 
-セキュリティ センターには、割り当てる必要がある最も一般的なタスクと機能に対する既定の役割グループが含まれます。 通常、個々のユーザーを既定の役割グループの **メンバー** として追加することをお勧めします。
+Microsoft 365 Defender ポータルには、割り当てる必要がある最も一般的なタスクと機能に対する既定の役割グループが含まれます。 通常、個々のユーザーを既定の役割グループの **メンバー** として追加することをお勧めします。
 
 ![役割グループと、ロールおよびメンバーとの関係を示す図](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-## <a name="roles-and-role-groups-in-the-security-center"></a>セキュリティ センターの役割と役割グループ
+## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルの役割と役割グループ
 
-セキュリティ センターの **[アクセス許可と役割]** では、次の種類の役割と役割グループを使用できます。
+Microsoft 365 Defender ポータルの **[アクセス許可と役割]** では、次の種類の役割と役割グループを使用できます。
 
-- **Azure AD ロール**: 役割と割り当てられたユーザーを表示できますが、セキュリティ センターで直接管理することはできません。 Azure AD ロールは、**すべての** Microsoft 365 サービスでアクセス許可を割り当てる中心的な役割です。
+- **Azure AD ロール**: 役割と割り当てられたユーザーを表示できますが、Microsoft 365 Defender ポータルで直接管理することはできません。 Azure AD ロールは、**すべての** Microsoft 365 サービスでアクセス許可を割り当てる中心的な役割です。
 
-- **メールと共同作業の役割**: セキュリティ/コンプライアンス センターで使用できるのと同じ役割グループですが、セキュリティ センターから直接管理できます。 ここで割り当てるアクセス許可は Microsoft 365 セキュリティ センター、Microsoft 365 コンプライアンス センターおよびセキュリティ/コンプライアンス センターに固有のものであり、他の Microsoft 365 ワークロードで必要なすべてのアクセス許可をカバーするものではありません。
+- **メールと共同作業の役割**: セキュリティ/コンプライアンス センターで使用できるのと同じ役割グループですが、Microsoft 365 Defender ポータルから直接管理できます。 ここで割り当てるアクセス許可は Microsoft 365 Defender ポータル、Microsoft 365 コンプライアンス センター、およびセキュリティ/コンプライアンス センターに固有のものであり、他の Microsoft 365 ワークロードで必要なすべてのアクセス許可をカバーするものではありません。
 
-![Microsoft 365 セキュリティ センターのアクセス許可と役割のページ](../../media/m365-sc-permissions-and-roles-page.png)
+![Microsoft 365 Defender ポータルのアクセス許可と役割のページ](../../media/m365-sc-permissions-and-roles-page.png)
 
-### <a name="azure-ad-roles-in-the-security-center"></a>セキュリティ センターの Azure AD ロール
+### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルの Azure AD ロール
 
 **[メールと共同作業の役割]** \> **[アクセス許可と役割]** \> **[Azure AD ロール]** \> **[役割]** (または直接 <https://security.microsoft.com/aadpermissions>) に移動すると、このセクションで説明されている Azure AD ロールが表示されます。
 
@@ -90,15 +93,15 @@ Microsoft 365 セキュリティ センターは <https://security.microsoft.com
 |**攻撃のペイロードの作成者**|攻撃のペイロードを作成しますが、実際に起動することやスケジュールすることはしません。 詳細については、「[攻撃のペイロードの作成者](/azure/active-directory/roles/permissions-reference#attack-payload-author)」を参照してください。|
 |
 
-### <a name="email--collaboration-roles-in-the-security-center"></a>セキュリティ センターのメールと共同作業の役割
+### <a name="email--collaboration-roles-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルのメールと共同作業の役割
 
 **[メールと共同作業の役割]** \> **[アクセス許可と役割]** \> **[メールと共同作業の役割]** \> **[役割]** (または直接 <https://security.microsoft.com/emailandcollabpermissions>) に移動すると、セキュリティ/コンプライアンス センターで使用できるのと同じ役割グループが表示されます。
 
 これらの役割グループの詳細については、「[セキュリティ/コンプライアンス センターの権限](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-#### <a name="modify-email--collaboration-role-membership-in-the-security-center"></a>セキュリティ センターでメールと共同作業の役割のメンバーシップを変更する
+#### <a name="modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルのメールと共同作業の役割メンバーシップを変更する
 
-1. セキュリティ センターで、**[メールと共同作業の役割]** \> **[アクセス許可と役割]** \> **[メールと共同作業の役割]** \> **[役割]** に移動します。
+1. Microsoft 365 Defender ポータルで、**[メールと共同作業の役割]** \> **[アクセス許可と役割]** \> **[メールと共同作業の役割]** \> **[役割]** に移動します。
 
 2. **[アクセス許可]** ページが開いたら、変更する役割グループをリストから選択します。 **[名前]** の列見出しをクリックしてリストを名前で並べ替えることができます。または、**[検索]** ![[検索] アイコン](../../media/m365-cc-sc-search-icon.png) をクリックして役割グループを探すこともできます。
 

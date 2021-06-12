@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: fc7debbe2fe1d59d4d172fd23587d0b2a1e6705e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 328bf7bdac3a8de23820d861932ee20d71e911b4
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244626"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878186"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -181,6 +181,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 このボタンを選択すると、[**ポリシーの作成**] ウィザードが起動し、含めるラベルとラベルの設定を編集できます。 ウィザードを完了すると、選択したユーザーとサービスに変更が自動的にレプリケートされます。
 
 Windows、macOS、iOS、Android の Office アプリに組み込みのラベル付けを使用すると、ユーザーには 4 時間以内に新しいラベルが表示されます。web 上のWord、Excel、PowerPoint の場合は更新を行ってから 1 時間以内に新しいラベルが表示されます。ただし、変更がすべてのアプリとサービスに複製されるまでに最大 24 時間かかります。
+
+> [!NOTE]
+> 機密ラベルをサポートする他のアプリやサービスは、独自の更新スケジュールとポリシー更新のトリガーを使用して、24 時間以上頻繁に更新される場合があります。 詳細については、ドキュメントを確認してください。 たとえば、Azure Information Protection 統合ラベル付けクライアントの場合は、「[Azure Information Protection クライアントの詳細な比較](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients)」表の「**ポリシーの更新**」行を参照してください。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>セキュリティ/コンプライアンス センターの PowerShell を含むその他のラベル ポリシー設定
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: fcf2310929937d1dacfc9c101d3e14414bad262b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b85c0c63cc7c72ad555d80bd8ce6c07c95b4b97b
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903746"
+ms.locfileid: "52908079"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 
@@ -46,7 +46,7 @@ ms.locfileid: "52903746"
 
 [Microsoft Defender ウイルス対策、](microsoft-defender-antivirus-in-windows-10.md)不審な動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃など、デバイスで検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと適切な動作をミリ秒単位で区別し、各成果物を分類します。 ほぼリアルタイムで、アーティファクトが悪意のあると判明すると、デバイス上でブロックされます。 
 
-疑わしい動作が検出されると、アラートが生成[](alerts-queue.md)され、Microsoft 365 [Defender](microsoft-defender-security-center.md) (以前は Microsoft Defender セキュリティ センター ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )) に表示されます。
+疑わしい動作が検出されると、アラートが生成[](alerts-queue.md)され、Microsoft 365 [Defender](microsoft-defender-security-center.md)ポータル (以前は Microsoft Defender セキュリティ センター) に表示されます。
 
 クライアントの動作ブロックは、攻撃の開始を防ぐだけでなく、実行を開始した攻撃を停止するのに役立つため、効果的です。 また、フィードバック [ループブロック](feedback-loop-blocking.md) (別の動作ブロックと格納機能) を使用すると、組織内の他のデバイスに対する攻撃が防止されます。
 

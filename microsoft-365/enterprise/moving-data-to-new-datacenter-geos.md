@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: データセンターの新Office 365地域について、およびデータ常駐オプションを使用してコア データの新しい geo への移行を要求する方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60e04525843e8e7557eab2f804680d6d5dddd4d8
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 797ac69e2c60c2e4c3ece38b376406027ff65e36
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904094"
+ms.locfileid: "52908307"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>コア データを新しいデータ センター geos にMicrosoft 365する
 
@@ -70,7 +70,7 @@ ms.locfileid: "52904094"
  
 [データ移行を申請する方法](request-your-data-move.md)
     
-[データ移行についての一般的な FAQ](data-move-faq.md)
+[データ移行についての一般的な FAQ](data-move-faq.yml)
   
 [Microsoft Dynamics CRM Online の新しいデータ センター geo](/power-platform/admin/new-datacenter-regions)
   

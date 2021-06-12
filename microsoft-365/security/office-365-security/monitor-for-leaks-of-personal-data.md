@@ -19,12 +19,12 @@ search.appverid:
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0976c0d1c0c8d3ebb25ebf423f1d9df2f71fc852
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 05d31ac36fbdc687c60ec3c03efac9be43da9c39
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538281"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878486"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -50,20 +50,15 @@ ms.locfileid: "52538281"
 DLP レポートを使用すると、以下のことを行えます。
 
 - 特定の期間に絞り込み、スパイクや傾向の理由を理解します。
-
 - 組織の DLP ポリシーに違反するビジネス プロセスを検出します。
-
 - DLP ポリシーのビジネスに及ぼす影響を理解します。
-
 - ユーザーがポリシーを上書きしたり、誤検知を報告したりしてポリシーのヒントを解決するときに送信する正当な理由を表示します。
-
 - 特定の DLP ポリシーに関する一致箇所を表示することによって、そのポリシーのコンプライアンス遵守を確認します。
-
 - 詳細ウィンドウで、DLP ポリシーに一致する機密データを含むファイルの一覧を表示します。
 
 さらに、テスト モードで実行するときに、DLP レポートを使用して DLP ポリシーを微調整することができます。
 
-DLP レポートは、セキュリティ/コンプライアンス センターにあります。 [レポート] \> [レポートの表示] に移動します。 [データ損失防止 (DLP)] の下で、[DLP ポリシーおよびルールの一致] または [DLP の誤検知と上書き] に移動します。
+DLP レポートは、Microsoft 365 コンプライアンス センターにあります。 **[レポート]** \> **[組織データ]** セクションに移動して、**DLP ポリシーの一致**、**DLP インシデント**、および **DLP の誤検知と上書き** のレポートを検索します。
 
 詳細については、「[データ損失防止のレポートの表示](../../compliance/view-the-dlp-reports.md)」を参照してください。
 
@@ -73,10 +68,9 @@ DLP レポートは、セキュリティ/コンプライアンス センター�
 
 監査ログには、Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Power BI、Sway などの サービスからのイベントが含まれます。
 
-セキュリティ/コンプライアンス センターでは、監査ログを監視およびレポートする 2 つの方法を提供しています。
+Microsoft 365 Defender ポータルと Microsoft 365 コンプライアンス センターでは、監査ログを監視およびレポートする 2 つの方法を提供しています。
 
-- アラート ポリシーの設定、アラートの表示、トレンドの監視には、セキュリティ センターまたはコンプライアンス センターのいずれかにあるアラート ポリシーやアラート ダッシュボード ツールを使用します。
-
+- アラート ポリシーの設定、アラートの表示、トレンドの監視には、Microsoft 365 Defender ポータルまたは Microsoft 365 コンプライアンス センターのいずれかにあるアラート ポリシーやアラート ダッシュボード ツールを使用します。
 - 監査ログを直接検索するには、指定した日付の範囲ですべてのイベントを検索します。また、操作を実行したユーザー、操作、または対象オブジェクトなど、特定の条件に基づいて結果をフィルター処理することもできます。
 
 情報コンプライアンスおよびセキュリティ チームは、これらのツールを使用して、エンド ユーザーと管理者の両方がサービスで実行したアクティビティを予防的に確認することができます。特定のアクティビティが特定のサイト コレクションで発生した場合に (たとえば、GDPR 関連情報が含まれていることがわかっているサイトからコンテンツを共有する場合など)、メール通知を送信するように自動アラートを設定できます。これによってチームは、ユーザーをフォローアップして、企業のセキュリティ ポリシーの遵守の徹底、追加のトレーニング提供などを行うことができます。
@@ -88,15 +82,10 @@ Microsoft 管理アクティビティ API を使用して統一監査ログを�
 アラート ポリシーと監査ログの検索については、以下を参照してください。
 
 - [Microsoft 365 のアラート ポリシー](../../compliance/alert-policies.md)
-
 - [Office 365 で監査ログを検索してユーザーと管理者のアクティビティを確認する](../../compliance/search-the-audit-log-in-security-and-compliance.md) (概要)
-
 - [監査ログ検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)
-
 - [監査ログを検索する](../../compliance/search-the-audit-log-in-security-and-compliance.md)
-
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (コマンドレット)
-
 - [監査ログの詳細なプロパティ](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
@@ -124,16 +113,15 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 
 まだ Cloud App Security の使用を開始していない場合は、まず開始してください。Cloud App Security には <https://portal.cloudappsecurity.com> からアクセスできます。
 
-注: Cloud App Security の使用を開始するときやラベルを割り当てる前に、[一般設定] の [Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする] を有効にしてください。設定後は、Cloud App Security は、変更されるまで既存ファイルを再スキャンしません。
+> [!NOTE]
+> Cloud App Security の使用を開始するときやラベルを割り当てる前に、[一般設定] の [Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする] を有効にしてください。設定後は、Cloud App Security は、変更されるまで既存ファイルを再スキャンしません。
 
 ![アラートに関する情報を表示するダッシュボード](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 詳しくは、以下の資料を参照してください。
 
 - [Cloud App Security を展開する](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - [Microsoft Cloud App Security の詳細情報](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [Microsoft Cloud App Security プロキシを使用して機密情報のダウンロードをブロックする](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>個人データの共有を検出するためのファイル ポリシーとアクティビティ ポリシーの例
@@ -141,6 +129,8 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 ### <a name="detect-sharing-of-files-containing-pii--credit-card-number"></a>PII (クレジット カード番号) を含むファイルの共有を検出する
 
 承認されたクラウド アプリから、クレジット カード番号を含むファイルが共有されたときに警告します。
+
+<br>
 
 ****
 
@@ -170,6 +160,8 @@ OneDrive for Business または Box for Business に Customer Data (顧客デー
 
 - Box の監視では、API Connector SDK を使用してコネクタを設定する必要があります。
 - このポリシーには、現在プライベート プレビューになっている機能が必要です。
+
+<br>
 
 ****
 

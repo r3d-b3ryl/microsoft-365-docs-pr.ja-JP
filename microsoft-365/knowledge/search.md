@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Microsoft Viva でトピックを検索する方法について説明します。
-ms.openlocfilehash: bce9309d27b76854b927922f39389c18e1c09449
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844733"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908067"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Microsoft Search を使用して Microsoft Viva のトピックを検索する
 
@@ -23,9 +23,10 @@ ms.locfileid: "52844733"
 
 ## <a name="topic-answer"></a>トピックの回答
 
-Microsoft Search で特定のトピック ("Saturn" など) を検索すると、トピックが存在し、見つかった場合は、トピックの回答候補形式で結果が表示されます。
+SharePoint スタート ページ、Office.com、または組織のスコープが設定されている SharePoint サイトから特定のトピックを検索すると、トピックが存在し、見つかった場合は、トピック回答候補形式で結果が表示されます。
 
 トピックの回答が表示されます。
+
 - トピック名
 - 代替名: トピックの代替名または頭字語。
 - 定義: AI によって提供されるトピックまたはユーザーによって手動で追加されたトピックの説明。
@@ -36,12 +37,11 @@ Microsoft Search で特定のトピック ("Saturn" など) を検索すると�
 
 トピック の応答カードが表示されない場合でも、トピック ページを検索結果に表示できます。
 
-Word、PowerPoint、Outlook、Excel検索結果には、見つかったときにトピックの回答も表示されます。
-
+Word、PowerPoint、Outlook、Excelの検索結果には、見つかったときにトピックの回答も表示されます。
 
 ## <a name="acronyms"></a>頭字語
 
-Viva Topics では、トピックを手動で編集して、トピックの頭字語を代替名として <b>含めできます</b>。 これにより、トピックの頭字語のみを使用して検索しているユーザーは、Microsoft Search を通じてトピックの回答を検索できます。
+Viva Topics では、トピックを手動で編集して、トピックの頭字語を代替名として *含めできます*。 これにより、トピックの頭字語のみを使用して検索しているユーザーは、Microsoft Search を通じてトピックの回答を検索できます。
 
 [頭字語の回答は](/microsoftsearch/manage-acronyms) 、Microsoft Search によって提供される機能であり、ビバ トピックとは別に管理されます。
 
@@ -52,8 +52,13 @@ Viva Topics では、トピックを手動で編集して、トピックの頭�
 出張の予約に関する情報をお探しのユーザー向け:
 
 - 一部のユーザーが旅行ツール名 ("Concur" など) を知っている場合は、外部サイトに直接移動するブックマークを作成する方が簡単です。
+
 - 一般的に "旅行" を検索するユーザーの場合は、「旅行」に関するトピックを作成します。そのトピックには、表示される情報が含されます。 トピックの説明で Concur 外部サイトへのリンクを追加する方法を検討してください。 代わりに、Microsoft 365 テナントでホストされている内部旅行予約サイトへのリンクである場合は、"ピン留めされたリソース" に追加できます。
  
 ### <a name="search-results-priority"></a>検索結果の優先度 
 
 ユーザーの検索エクスペリエンスでは、ユーザーが "travel" のような用語を検索すると、ブックマークが使用可能な場合、トピックの代りとしてブックマークが表示されます。
+
+## <a name="see-also"></a>関連項目
+
+[ビバ トピックの概要](topic-experiences-overview.md)

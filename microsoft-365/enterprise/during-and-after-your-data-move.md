@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: データ移動は、Microsoft がテナントのサービスと関連データを新しいデータセンター geo に移動するときに発生するバック エンド操作です。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3d44ffc1650989e5c39f5f79cb6a07065f9e9f1
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: c0ea94a80de993d4d1341b8f9b19850d7149583f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625259"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908115"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -122,7 +122,7 @@ Skype for Business移動は使用できなくなりました。  [Skype for Busi
  
 [データ移行を申請する方法](request-your-data-move.md)
     
-[データ移行についての一般的な FAQ](data-move-faq.md)
+[データ移行についての一般的な FAQ](data-move-faq.yml)
   
 [Microsoft Dynamics CRM Online の新しいデータ センター geo](/power-platform/admin/new-datacenter-regions)
   

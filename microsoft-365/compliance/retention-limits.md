@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: アイテム保持ポリシーおよび保持ラベル ポリシーのポリシーおよびポリシーごとの項目の最大数を把握する
-ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698966"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878054"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーとアイテム保持ラベルの制限
 
@@ -82,3 +82,13 @@ SharePoint の例は、以下のとおりです。
 - **ソリューション**: 特定の 100 サイトを含む保持期間 10 年の SharePoint 用アイテム保持ポリシーを 20 個作成し、特定の 100 サイトを含む保持期間 4 年の SharePoint 用アイテム保持ポリシーを 80 個作成します。
     
     すべての SharePoint サイトを保持する必要はなく、特定のサイトを指定したアイテム保持ポリシーを作成する必要があります。 アイテム保持ポリシーは指定した 100 サイト以上には対応していないため、2 つの保持期間に対応したポリシーを複数作成する必要があります。 これらのアイテム保持ポリシーには、含まれるサイトの最大数が含まれているため、次に保持が必要な新しいサイトは、保持期間に関係なく、新しいアイテム保持ポリシーが必要になります。
+
+## <a name="maximum-number-of-items-for-disposition"></a>処理するアイテムの最大数
+
+[コンテンツの処理](disposition.md)については、注意すべきいくつかの制限があります。
+
+- 各保持ラベルのステージごとに 1,000,000 アイテムの処理が保留中
+
+- アイテムが処理されてから最大 7 年間の処理の証明。その期間の保持ラベルごとに 1,000,000 アイテムの制限があります。 
+    
+    レコードとしてマークされているアイテムについて、この制限である 1,000,000 を超える処理の証明が必要な場合は、[Microsoft サポート](../business-video/get-help-support.md)に連絡してください。

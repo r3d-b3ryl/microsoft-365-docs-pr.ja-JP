@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 42ac45fcea72d0ccdae69f6b7315cf31d38121d7
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 5c54b9c9b9046a1c410418a9ae5a922bdad9c442
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730248"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878078"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -196,8 +196,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
     ![要求されるラベルを適用することをユーザーに求める Outlook のダイアログ](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
-    > [!NOTE]
-    > ドキュメントやメールの必須のラベル付けは、すべてのアプリやすべてのプラットフォームで利用できるわけではありません。 詳細については、「[メールとドキュメントにラベルを適用することをユーザーに義務付ける。](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)」を参照してください。
+    ドキュメントとメールの必須のラベル付けの詳細については、「[ユーザーがメールとドキュメントにラベルを適用することを必須にする](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)」を参照してください。
     
     コンテナーの場合、グループまたはサイトの作成時にラベルを割り当てる必要があります。
     

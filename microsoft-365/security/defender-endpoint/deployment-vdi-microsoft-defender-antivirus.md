@@ -10,22 +10,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/28/2020
+ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4ecd14e055646804d81e22da7c192988cf1e6f6f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ce200ca12bacc3ae8d9f7b48d36274ca54322586
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275254"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908031"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
@@ -72,7 +69,7 @@ Windows 10 バージョン 1903 では、共有セキュリティ インテリ�
 
 6. Enter `\\<sharedlocation\>\wdav-update` (この値のヘルプについては、「ダウンロードとアンパック [」を参照してください](#download-and-unpackage-the-latest-updates))。
 
-7. [**OK**] をクリックします。
+7. **[OK]** をクリックします。
 
 8. テストする VM に GPO を展開します。
 
@@ -175,7 +172,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 4. 通常どおりにグループ ポリシー オブジェクトを展開します。
 
-通知を抑制すると、スキャンMicrosoft Defender ウイルス対策修復アクションが実行された場合Windows 10アクション センターに通知が表示されません。 ただし、セキュリティ運用チームは、スキャンの結果を [ファイル] () にMicrosoft Defender セキュリティ センター [https://securitycenter.windows.com](https://securitycenter.windows.com) します。
+通知を抑制すると、スキャンMicrosoft Defender ウイルス対策修復アクションが実行された場合Windows 10アクション センターに通知が表示されません。 ただし、セキュリティ運用チームは、スキャンの結果を Defender ポータルのMicrosoft 365[します](microsoft-defender-security-center.md)。
 
 > [!TIP]
 > [アクション センター] を開Windows 10、次のいずれかの手順を実行します。
@@ -224,7 +221,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. ポリシーを [有効] に **設定します**。
 
-4. [**OK**] をクリックします。
+4. **[OK]** をクリックします。
 
 5. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。
  
