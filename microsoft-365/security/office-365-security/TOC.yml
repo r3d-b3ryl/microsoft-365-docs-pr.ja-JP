@@ -14,7 +14,7 @@
           href: office-365-evaluation.md
         - name: Defender for Office 365 の新機能
           href: whats-new-in-defender-for-office-365.md
-        - name: Microsoft 365 セキュリティ センターの Defender for Office 365
+        - name: Microsoft 365 Defender ポータルでの Defender for Office 365
           href: ../defender/microsoft-365-security-center-mdo.md
         - name: Exchange Online Protection
           items:
@@ -26,7 +26,7 @@
               href: quarantine-email-messages.md
         - name: SPO、OneDrive、Teams 用の安全な添付ファイル機能
           href: turn-on-mdo-for-spo-odb-and-teams.md
-        - name: Microsoft 365 セキュリティ センターの概要
+        - name: Microsoft 365 Defender ポータルの概要
           href: ../defender/overview-security-center.md
         - name: メール エンティティ ページ
           href: mdo-email-entity-page.md
@@ -66,7 +66,7 @@
           href: protect-against-threats.md
         - name: Defender for Office 365 を Defender for Endpoint と統合する
           href: integrate-office-365-ti-with-mde.md
-        - name: Microsoft 365 セキュリティ センターのアクセス許可
+        - name: Microsoft 365 Defender ポータルのアクセス許可
           href: permissions-microsoft-365-security-center.md
         - name: セキュリティ/コンプライアンス センターのアクセス許可
           href: permissions-in-the-security-and-compliance-center.md
