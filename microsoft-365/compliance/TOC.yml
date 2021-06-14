@@ -566,6 +566,8 @@
               href: configure-edge-to-export-search-results.md
             - name: 複数のコンテンツ検索を一括編集する
               href: bulk-edit-content-searches.md
+            - name: 監査ログで電子情報開示アクティビティを検索する
+              href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: PowerShell スクリプトでコンテンツ検索を実行する
           items:
             - name: 対象コレクションのコンテンツ検索を使用する

@@ -6,19 +6,19 @@
       items:
         - name: Microsoft 365 Defender とは
           href: microsoft-365-defender.md
-        - name: Microsoft 365Defender の概要
+        - name: Microsoft 365 Defender の概要
           href: overview-security-center.md
         - name: Microsoft 365 Defender の新機能
           href: whats-new.md
-        - name: Defender for Endpoint in Microsoft 365 Defender
+        - name: Microsoft 365 Defender の Microsoft Defender for Endpoint
           href: microsoft-365-security-center-mde.md
-        - name: Defender for Office 365 Defender Microsoft 365 Defender
+        - name: Microsoft 365 Defender の Defender for Office 365
           href: microsoft-365-security-center-mdo.md
-        - name: エンドポイントの Defender を Defender にMicrosoft 365する
+        - name: Defender for Endpoint を Microsoft 365 Defender にリダイレクトする
           href: microsoft-365-security-mde-redirection.md
-        - name: セキュリティOffice 365コンプライアンス センターを Defender にMicrosoft 365する
+        - name: Office 365 セキュリティ/コンプライアンス センターを Microsoft 365 Defender にリダイレクトする
           href: microsoft-365-security-mdo-redirection.md
-        - name: Microsoft 365Defender と Azure Sentinel の統合
+        - name: Microsoft 365 Defender と Azure Sentinel との統合
           href: microsoft-365-defender-integration-with-azure-sentinel.md
         - name: プレビュー機能
           href: preview.md
@@ -60,7 +60,7 @@
               href: m365d-pilot-simulate.md
             - name: 閉じて要約する
               href: m365d-pilot-close.md
-    - name: 概要
+    - name: 作業の開始
       items:
         - name: 概要
           href: get-started.md
@@ -86,7 +86,7 @@
               href: microsoft-secure-score-whats-new.md
         - name: ID を保護する
           items:
-            - name: セキュリティアラートの管理
+            - name: セキュリティ アラートの管理
               href: ../defender-identity/manage-security-alerts.md
     - name: 脅威の調査と対応
       items:
@@ -100,7 +100,7 @@
               href: manage-incidents.md
             - name: 調査
               href: investigate-incidents.md
-            - name: インシデントアラート
+            - name: インシデント アラート
               href: investigate-alerts.md
             - name: インシデント ユーザー
               href: investigate-users.md
@@ -110,11 +110,11 @@
                   href: first-incident-overview.md
                 - name: 準備
                   href: first-incident-prepare.md
-                - name: 手順 1. トリアージと分析
+                - name: 手順 1。 質問と分析
                   href: first-incident-analyze.md
-                - name: 手順 2. 修復
+                - name: 手順 2。 修復する
                   href: first-incident-remediate.md
-                - name: 手順 3. 確認
+                - name: 手順 3。レビュー
                   href: first-incident-post.md
                 - name: その他のインシデントの例
                   items:
@@ -128,9 +128,9 @@
               href: get-incident-notifications.md
         - name: 脅威の分析
           items:
-            - name: 新たな脅威の追跡と対応
+            - name: 新しい脅威を追跡して対応する
               href: threat-analytics.md
-            - name: アナリスト レポートについて
+            - name: アナリスト レポートの離解
               href: threat-analytics-analyst-reports.md
         - name: 自動調査および対応
           items:
@@ -142,11 +142,11 @@
               href: m365d-remediation-actions.md
             - name: アクション センターを使用する
               href: m365d-action-center.md
-            - name: 修復アクションの表示と管理
+            - name: 修復アクションを表示および管理する
               href: m365d-autoir-actions.md
             - name: 詳細と結果の表示
               href: m365d-autoir-results.md
-            - name: 誤検知と陰性に対処する
+            - name: 誤検知と否定に対処する
               href: m365d-autoir-report-false-positives-negatives.md
         - name: 高度な検出
           items:
@@ -320,19 +320,19 @@
                   href: api-error-codes.md
                 - name: ストリーミング API
                   items:
-                    - name: Microsoft 365ストリーミング API
+                    - name: Microsoft 365 Streaming API
                       href: streaming-api.md
-                    - name: 高度な追求イベントを Azure イベント ハブにストリーミングする
+                    - name: 高度な追求イベントを Azure イベント ハブにストリームする
                       href: streaming-api-event-hub.md
-                    - name: 高度な追求イベントをストレージ アカウントにストリーミングする
+                    - name: 高度な追求イベントをストレージ アカウントにストリームする
                       href: streaming-api-storage.md
-                - name: 高度な追及 API
+                - name: 高度な追求 API
                   href: api-advanced-hunting.md
                 - name: インシデント API
                   items:
-                    - name: インシデントのメソッドとプロパティ
+                    - name: インシデントの方法とプロパティ
                       href: api-incident.md
-                    - name: インシデントを一覧表示する
+                    - name: インシデントをリストする
                       href: api-list-incidents.md
                     - name: インシデントの更新
                       href: api-update-incidents.md
