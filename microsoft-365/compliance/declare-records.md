@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用してレコードを宣言する。
-ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730548"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903902"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>保持ラベルを使用してレコードを宣言する
 
@@ -79,6 +79,18 @@ Microsoft 365 コンプライアンス センターの **レコード管理** �
 保持ラベルを使用してレコードとしてマークされたドキュメントの例は、以下のとおりです。
 
 ![レコードとしてタグ付けされたドキュメントの詳細ウィンドウ](../media/recordversioning7.png)
+
+## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a>レコードとして宣言されたラベル付きアイテムの監査ログを検索する
+
+アイテムをレコードとして宣言するためのラベル付け操作は、監査ログに記録されます。
+
+SharePoint アイテムについて: 
+- **ファイルアクティビティとページ アクティビティ** から、ファイルの [**変更された保持ラベル**] を選択します。 この監査イベントは、アイテムをレコード、規制レコード、または標準の保持ラベルとしてマークする保持ラベルに対するものです。
+
+Exchange アイテムの場合:
+- **Exchange メールボックス アクティビティ** で、 [**メッセージをレコードとしてラベル付け**] を選択します。 この監査イベントは、アイテムをレコード、規制レコード、としてマークする保持ラベルに対するものです。
+
+これらのイベントの検索に関する詳細情報については、「[セキュリティ/コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

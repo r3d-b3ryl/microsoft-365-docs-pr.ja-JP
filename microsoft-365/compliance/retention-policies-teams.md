@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 607fbdd02cfaccfee79df67c4946c178ff3eb383
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 908c6a1482761815995330b71f0d2d2f96677b64
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861577"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908271"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -44,9 +44,6 @@ ms.locfileid: "52861577"
 ## <a name="whats-included-for-retention-and-deletion"></a>保持と削除の対象となる機能
 
 Teams のチャット メッセージとチャネル メッセージは、Teams のアイテム保持ポリシーを使用して削除できます。また、メッセージ内のテキストに加えて、コンプライアンス上の理由により、埋め込み画像、表、ハイパーテキスト リンク、他の Teams メッセージやファイルへのリンク、および[カード コンテンツ](/microsoftteams/platform/task-modules-and-cards/what-are-cards)を保持することができます。 チャット メッセージには、チャット内のすべてのユーザーの名前が含まれ、チャネル メッセージにはチーム名とメッセージの件名 (提供されている場合) が含まれます。 
-
-> [!NOTE]
-> Teams のアイテム保持ポリシーにカード コンテンツを含めることは、ごく最近の追加です。 詳細については、「[Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available (Teams 内のアプリケーションを使用したアダプティブ カード コンテンツのコンプライアンスに関する Microsoft 365 の機能が利用可能になりました)](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)」を参照してください。
 
 プライベート チャネルの Teams メッセージは、現在、アイテム保持ポリシーではサポートされていません。Teams のアイテム保持ポリシーを使用する場合、コード スニペット、Teams モバイル クライアントからの録音されたボイス メモ、サムネイル、お知らせ画像、および絵文字の形式での他のユーザーからの反応は保持されません。
 

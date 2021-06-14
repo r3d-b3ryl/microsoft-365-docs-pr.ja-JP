@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: アイテム保持ポリシーおよび保持ラベル ポリシーのポリシーおよびポリシーごとの項目の最大数を把握する
-ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878054"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908103"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーとアイテム保持ラベルの制限
 
@@ -37,7 +37,7 @@ ms.locfileid: "52878054"
 
 この ポリシー 10,000個の制限内では、ワークロード毎のデータ保持ポリシーの最大数にもいくつかの制限があります。
 
-- Exchange Online (任意の構成): 1,800
+- Exchange (任意の構成): 1,800
 - SharePoint または OneDrive: (自動的に含まれるすべてのサイト): 13
 - SharePoint または OneDrive (含まれるまたは除外される特定の場所): 2,600
 
@@ -49,10 +49,16 @@ Microsoft Teams と Yammer のデータ保持ポリシーでは、データ保�
 
 保持するポリシーごとのアイテムの最大数:
 
-  - 1,000 メールボックス (ユーザー メールボックスまたはグループ メールボックス)
-  - 1,000 個の Microsoft 365 グループ
-  - Teams のプライベート チャットのユーザー 1,000 人
-  - 100 個のサイト (OneDrive または SharePoint)
+- Exchange メールボックス: 1,000
+- Microsoft 365 グループ: 1,000
+- Teams のメッセージ: 1,000
+- Teams のチャット: 1,000
+- Yammer コミュニティのメッセージ: 1,000
+- Yammer ユーザーのメッセージ: 1,000
+- SharePoint サイト: 100
+- OneDrive アカウント: 100
+
+Skype for Business は特定のユーザーにスコープを設定する必要があり、ポリシーごとにサポートされる最大数は 1,000 です。
 
 ポリシーごとにこれらの制限があるので、これらの数を超える結果となる特定の対象または除外を使用する必要がある場合は、同じ保持設定を持つ追加の保持ポリシーを作成することができます。 このために複数の保持ポリシーを使用するいくつかの[シナリオ例とソリューション](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers)については、次のセクションを参照してください。
 
@@ -91,4 +97,4 @@ SharePoint の例は、以下のとおりです。
 
 - アイテムが処理されてから最大 7 年間の処理の証明。その期間の保持ラベルごとに 1,000,000 アイテムの制限があります。 
     
-    レコードとしてマークされているアイテムについて、この制限である 1,000,000 を超える処理の証明が必要な場合は、[Microsoft サポート](../business-video/get-help-support.md)に連絡してください。
+レコードとしてマークされているアイテムについて、この制限である 1,000,000 を超える処理の証明が必要な場合は、[Microsoft サポート](../business-video/get-help-support.md)に連絡してください。

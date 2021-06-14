@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7570a925f4f24148874eada8a835ae473efaeb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: eab7cdbed592975739fdcfa1089e6f7d2c25d880
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650352"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904118"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "51650352"
 > [!IMPORTANT]
 > この記事は、[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) をご利用の法人のお客様を対象としています。 Outlook.com、Microsoft 365 Family、または Microsoft 365 Personal を使用していて、Outlook の安全なリンクまたは添付ファイルに関する情報を探している場合は、「[Microsoft 365 サブスクライバー用の Outlook.com の高度なセキュリティ](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
-Microsoft Defender for Office 365 は、電子メール メッセージ、リンク (URL) や共同作業ツールによって生じる悪意のある脅威から組織を保護します。 Defender for Office 365 には次のものが含まれます。
+Microsoft Defender for Office 365 は、メール メッセージ、リンク (URL)、コラボレーション ツールによってもたらされる悪意のある脅威から組織を保護します。Defender for Office 365 には次のものが含まれます。
 
 - **[脅威保護ポリシー](#configure-microsoft-defender-for-office-365-policies)**: 脅威保護ポリシーを定義して、組織に適切なレベルの保護を設定します。
 
@@ -147,7 +147,7 @@ Microsoft Defender for Office 365 プラン 2 には、組織のセキュリテ�
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Microsoft Defender for Office 365 の機能を使用するために必要な権限
 
-セキュリティ/コンプライアンス センターで Microsoft Defender for Office 365 機能にアクセスするには、適切な役割が割り当てられている必要があります。 次の表にいくつかの例があります:
+セキュリティ/コンプライアンス センターで Microsoft Defender for Office 365 機能にアクセスするには、適切な役割が割り当てられている必要があります。次のテーブルに例がいくつか示されています。
 
 |役割または役割グループ|追加情報|
 |---|---|
@@ -174,7 +174,7 @@ Microsoft Defender for Office 365 は、Microsoft 365 E5、Office 365 E5、Offic
 
 Microsoft Defender for Office 365 には継続的に新機能が追加されています。 詳細については、次のリソースを参照してください。
 
-- 「[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)」は、開発およびロール アウトの新機能の一覧を提供します。
+- 「[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365)」は、開発およびロール アウトの新機能の一覧を提供します。
 
 - [Microsoft Defender for Office 365 サービスの説明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)は、Defender for Office 365 プラン全体の機能と可用性について説明しています。
 

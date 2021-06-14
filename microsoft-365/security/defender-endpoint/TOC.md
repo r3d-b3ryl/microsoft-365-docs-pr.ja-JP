@@ -242,6 +242,8 @@
 
 ### [ネットワークデバイス](network-devices.md)
 
+### [Microsoft Defender for Endpoint でのホスト ファイアウォール レポート](host-firewall-reporting.md)
+
 ### [攻撃面の減少]()
 #### [攻撃面の減少の概要](overview-attack-surface-reduction.md)
 #### [攻撃面の減少機能を構成する](configure-attack-surface-reduction.md)
@@ -271,7 +273,10 @@
 #### [望ましくない可能性のあるアプリケーションを検出してブロックする](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 #### [グループ ポリシーで Microsoft Defender ウイルス対策を常時保護を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [Microsoft Defender ウイルス対策検出の修復を構成する](configure-remediation-microsoft-defender-antivirus.md)
-#### [スケジュールされたクイックまたは完全な Microsoft Defender ウイルス スキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+#### [Microsoft Defender ウイルス対策スキャンを構成する](schedule-antivirus-scans.md)
+##### [グループ ポリシーを使用してウイルス対策スキャンをスケジュールする](schedule-antivirus-scans-group-policy.md)
+##### [PowerShell を使用してウイルス対策スキャンをスケジュールする](schedule-antivirus-scans-powershell.md)
+##### [Windows Management Instrumentation (WMI) を使用してウイルス対策スキャンをスケジュールする](schedule-antivirus-scans-wmi.md)
 #### [Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [他のセキュリティ製品との互換性](microsoft-defender-antivirus-compatibility.md)
 
@@ -288,6 +293,9 @@
 ##### [PowerShell コマンドレットを使った Microsoft Defender ウイルス対策の管理](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ##### [Microsoft Defender ウイルス対策を管理するために Windows Management Instrumentation (WMI) を使用する](use-wmi-microsoft-defender-antivirus.md)
 ##### [mpcmdrun.exe ツールを使用して Microsoft Defender ウイルス対策を管理する](command-line-arguments-microsoft-defender-antivirus.md)
+##### [エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
+##### [ユーザーが Microsoft Defender ウイルス対策のポリシー設定をローカルで変更できるかどうかを指定する](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+##### [ユーザーが Microsoft Defender ウイルス対策のユーザー インターフェイスを表示できるかどうか、または操作できるかどうかを指定する](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
 #### [Microsoft Defender ウイルス対策を展開してレポートする](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Microsoft Defender ウイルス対策を展開して有効にする](deploy-microsoft-defender-antivirus.md)
@@ -348,6 +356,7 @@
 ##### [USB デバイスの制御](control-usb-devices-using-intune.md)
 ##### [リムーバブル記憶域の保護](device-control-removable-storage-protection.md)
 ##### [リムーバブル記憶域のアクセス制御](device-control-removable-storage-access-control.md)
+##### [デバイス制御のプリンター保護](printer-protection.md)
 
 #### [動作ブロックと封じ込め]()
 ##### [動作ブロックと封じ込め](behavioral-blocking-containment.md)
@@ -462,6 +471,8 @@
 ###### [アプリケーション コンテキストでアクセスする](exposed-apis-create-app-webapp.md)
 ###### [ユーザー コンテキストでアクセスする](exposed-apis-create-app-nativeapp.md)
 ###### [パートナー アプリケーションへのアクセスを取得する](exposed-apis-create-app-partners.md)
+
+
 ##### [Microsoft Defender for Endpoint API スキーマ]()
 ###### [サポート対象 Microsoft Defender for Endpoint API](exposed-apis-list.md)
 ###### [一般的な REST API エラー コード](common-errors.md)
@@ -480,10 +491,10 @@
 ####### [アラート関連のユーザー情報を取得する](get-alert-related-user-info.md)
 
 ###### [脆弱性と安全な構成の評価]()
-####### [評価方法とプロパティのエクスポート](get-assessmnt-1methods-properties.md)
-####### [安全な構成評価のエクスポート](get-assessmnt-secure-cfg.md)
-####### [ソフトウェア在庫評価のエクスポート](get-assessmnt-software-inventory.md)
-####### [ソフトウェアの脆弱性評価のエクスポート](get-assessmnt-software-vulnerabilities.md)
+####### [評価方法とプロパティのエクスポート](get-assessment-methods-properties.md)
+####### [安全な構成評価のエクスポート](get-assessment-secure-config.md)
+####### [ソフトウェア在庫評価のエクスポート](get-assessment-software-inventory.md)
+####### [ソフトウェアの脆弱性評価のエクスポート](get-assessment-software-vulnerabilities.md)
 
 ###### [自動調査]()
 ####### [調査メソッドとプロパティ](investigation.md)
@@ -505,13 +516,15 @@
 
 ###### [インジケーター]()
 ####### [インジケーター メソッドとプロパティ](ti-indicator.md)
-####### [インジケーターの送信](post-ti-indicator.md)
 ####### [インジケーターの一覧表示](get-ti-indicators-collection.md)
+####### [インジケーターの送信](post-ti-indicator.md)
+####### [インジケーターのインポート](import-ti-indicators.md)
 ####### [インジケーターの削除](delete-ti-indicator-by-id.md)
 
 ###### [IP]()
 ####### [IP 関連のアラートを取得する](get-ip-related-alerts.md)
 ####### [IP 統計を取得する](get-ip-statistics.md)
+
 
 ###### [マシン]()
 ####### [マシン メソッドとプロパティ](machine.md)
@@ -528,19 +541,23 @@
 ####### [不足している KB を取得する](get-missing-kbs-machine.md)
 ####### [デバイス値の設定](set-device-value.md)
 
+
 ###### [マシン アクション]()
 ####### [マシン アクション メソッドとプロパティ](machineaction.md)
 ####### [マシン アクションの一覧表示](get-machineactions-collection.md)
 ####### [マシン アクションの取得](get-machineaction-object.md)
 ####### [調査パッケージの収集](collect-investigation-package.md)
 ####### [調査パッケージ SAS URI の取得](get-package-sas-uri.md)
+####### [ライブ応答結果の取得](get-live-response-result.md)
 ####### [マシンの隔離](isolate-machine.md)
 ####### [マシンを隔離から解放する](unisolate-machine.md)
 ####### [アプリの実行を制限する](restrict-code-execution.md)
 ####### [アプリの制限を削除する](unrestrict-code-execution.md)
 ####### [ウイルス対策スキャンを実行する](run-av-scan.md)
+####### [ライブ応答を実行する](run-live-response.md) 
 ####### [マシンのオフボード](offboard-machine-api.md)
 ####### [ファイルの停止と検疫](stop-and-quarantine-file.md)
+####### [マシン アクションのキャンセル](cancel-machine-action.md)
 
 ###### [推奨事項]()
 ####### [推奨メソッドとプロパティ](recommendation.md)

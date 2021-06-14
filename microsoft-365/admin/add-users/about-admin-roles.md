@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: サービス管理者などの管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。
-ms.openlocfilehash: 68a5c92faa6f5cdbbd56678649441a45a600ed04
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 1fea8720b174846dd95d9dd6aeee91f7ecfbc7fa
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809037"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908055"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 
@@ -100,4 +100,5 @@ Microsoft パートナーと連携している場合、パートナーに管理�
 
 [管理者の役割を割り当てる](assign-admin-roles.md) (記事)\
 [Microsoft 365 管理センターの Azure AD の役割](azure-ad-roles-in-the-mac.md) (記事)\
-[Exchange Online 管理者の役割](about-exchange-online-admin-role.md) (記事)\ [Microsoft 365 管理センターのアクティビティ レポート](../activity-reports/activity-reports.md) (記事)
+[Microsoft 365 管理センターのアクティビティ レポート](../activity-reports/activity-reports.md) (記事)\
+[Exchange Online 管理者の役割](about-exchange-online-admin-role.md) (記事)

@@ -23,12 +23,12 @@ ms.custom:
 - commerce_billing
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 07/31/2020
-ms.openlocfilehash: 3c41e52803c78cc687134c6c68899466236ceca3
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7e37e296f37583e1fc0b2fc3474609e11c5a5e1f
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331912"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888351"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -105,4 +105,5 @@ ms.locfileid: "52331912"
 
 [請求書、クレジット カード、または銀行口座引き落としによる支払い方法](pay-for-your-subscription.md) (記事) \
 [支払方法を管理する](manage-payment-methods.md) (記事) \
+[メキシコ](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) で Microsoft 365 for businessの課金情報 (記事) \
 [Minecraft: Education Edition の支払いオプション](/education/windows/school-get-minecraft) (記事) \
