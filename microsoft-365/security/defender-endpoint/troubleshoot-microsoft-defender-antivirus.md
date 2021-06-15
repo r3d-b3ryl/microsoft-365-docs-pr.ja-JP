@@ -6,7 +6,8 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,13 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: cd222760f3a5cc005c679bf28365237cc70e8950
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: cba7a9d6ed23ac1dc72ef6cbcecfdfc7a0f4c60b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275350"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926285"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -361,7 +361,7 @@ Microsoft Defender ウイルス対策ログにイベントのWINDOWSを記録し
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -433,7 +433,7 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <dt> Severity: &lt; Severity (次 &gt; に示す場合)<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -485,7 +485,7 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt> Severity: &lt; Severity (次 &gt; に示す場合)<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -539,7 +539,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しまし�
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -581,7 +581,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から復元しよう�
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -625,7 +625,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しまし�
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -668,7 +668,7 @@ Microsoft Defender ウイルス対策アイテムを検疫から削除しよう�
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -774,7 +774,7 @@ Microsoft Defender ウイルス対策疑わしい動作が検出されました�
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -849,7 +849,7 @@ Microsoft Defender ウイルス対策または他の望ましくない可能性�
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -928,7 +928,7 @@ Microsoft Defender ウイルス対策、マルウェアなどの望ましくな�
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -1050,7 +1050,7 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -1142,7 +1142,7 @@ Microsoft Defender ウイルス対策その他の望ましくない可能性の�
 <dt> の重大度: &lt; 重大度 &gt; (たとえば、<ul>
 <li>低い</li>
 <li>中</li>
-<li>高い</li>
+<li>高</li>
 <li>重大</li>
 </ul>
 </dt>
@@ -1204,7 +1204,7 @@ UAC </dt>
 クライアントMicrosoft Defender ウイルス対策、重大な問題が原因でこのエラーが発生しました。 エンドポイントが保護されていない可能性があります。 エラーの説明を確認し、以下の関連する <b>ユーザー アクションの手順に</b> 従います。
 <table>
 <tr>
-<th>Action</th>
+<th>アクション</th>
 <th>ユーザー操作</th>
 </tr>
 <tr>
@@ -1352,19 +1352,19 @@ Microsoft Defender ウイルス対策は正常な状態で稼働しています�
 <td >
 ウイルス対策クライアントの正常性レポート。
 <dl>
-<dt>プラットフォームのバージョン: &lt;&gt;</dt>現在のプラットフォームバージョン エンジンバージョン
-<dt>: &lt; &gt; マルウェア対策エンジン</dt>バージョン ネットワークリアルタイム検査エンジンバージョン
-<dt>: &lt; &gt; </dt>
+<dt>プラットフォームのバージョン: &lt;&gt;</dt>現在
 <dt> &lt; &gt; </dt>
-<dt> &lt; &gt; </dt>ネットワークリアルタイム検査エンジンバージョン ウイルス対策署名バージョン: ウイルス対策署名バージョン: スパイウェア対策署名バージョン ネットワークリアルタイム検査署名バージョン
-<dt>: &lt; &gt; </dt>ネットワークリアルタイム検査署名バージョン
-<dt>RTP 状態: リアルタイム保護状態 (有効または無効) OA 状態: On Access 状態 (有効または無効 &lt; &gt; </dt>
-<dt> &lt; &gt; )</dt>IOAV 状態: Outlook IE ダウンロード 高速添付ファイルの状態 (有効または無効
-<dt> &lt; &gt; )</dt>BM 状態: 動作監視状態 (有効または無効
-<dt> &lt; &gt; )</dt>ウイルス対策署名年齢: ウイルス対策署名年齢
-<dt>(日 &lt; &gt; )</dt>スパイウェア対策署名年齢: スパイウェア対策署名の年齢 (日) 最後のクイック スキャンの日数: 最後のクイック スキャンの年齢
-<dt>(日 &lt; &gt; </dt>
-<dt> &lt; &gt; )</dt>最後のフル スキャン年齢: 最後のフル スキャン年齢
+<dt> &lt; &gt; </dt>
+<dt> &lt; &gt; </dt>
+<dt> &lt; &gt; </dt>
+<dt> &lt; &gt; </dt>
+<dt> &lt; &gt; </dt>
+<dt> &lt; &gt; </dt>
+<dt> &lt; &gt; </dt>
+<dt> &lt; &gt; </dt>
+<dt> &lt; のプラットフォームバージョン エンジンバージョン: マルウェア対策エンジン バージョン ネットワークリアルタイム検査エンジンバージョン: ネットワークリアルタイム検査エンジンバージョン ウイルス対策署名バージョン: ウイルス対策署名バージョン: スパイウェア対策署名バージョン ネットワークリアルタイム検査署名バージョン: ネットワークリアルタイム検査署名バージョン RTP 状態: リアルタイム 保護状態 (有効または無効) OA 状態: On Access 状態 (有効または無効) IOAV 状態: IE ダウンロードと Outlook Express Attachments 状態 (有効または無効) BM 状態: 動作監視状態 (有効または無効) ウイルス対策署名の &gt; </dt>年齢: ウイルス対策署名の年齢 (日)
+<dt>&lt; &gt; スパイウェア</dt>対策署名の年齢: スパイウェア対策署名の年齢 (日) 最後のクイック スキャンの時間: 最後のクイック スキャンの年齢
+<dt>(日 &lt; &gt; )</dt>最後のフル スキャンの年齢: 最後のフル スキャンの年齢
 <dt>(日 &lt; &gt; )</dt>ウイルス対策署名の作成時間
 <dt>: ? &lt;ウイルス対策署名の &gt; 作成時間</dt>
 <dt>Antispyware 署名の作成時間: ? &lt;スパイウェア対策署名の作成時間 &gt; 最後</dt>
@@ -1769,7 +1769,7 @@ Microsoft Defender ウイルス対策動的<i>署名サービスを使用して<
 <li>バージョン</li>
 <li>Timestamp</li>
 <li>制限なし</li>
-<li>Duration</li>
+<li>期間</li>
 </ul>
 </dt>
 <dt>永続パス: &lt;Path &gt; </dt>
@@ -1825,7 +1825,7 @@ Microsoft Defender ウイルス対策使用<i>して、古い</i>署名を破棄
 <li>バージョン</li>
 <li>Timestamp</li>
 <li>制限なし</li>
-<li>Duration</li>
+<li>期間</li>
 </ul>
 </dt>
 <dt>永続パス: &lt;Path &gt; </dt>
@@ -1892,7 +1892,7 @@ Microsoft Defender ウイルス対策署名サービスを使用しようとし�
 <li>バージョン</li>
 <li>Timestamp</li>
 <li>制限なし</li>
-<li>Duration</li>
+<li>期間</li>
 </ul>
 </dt>
 <dt>永続パス: &lt;Path &gt; </dt>

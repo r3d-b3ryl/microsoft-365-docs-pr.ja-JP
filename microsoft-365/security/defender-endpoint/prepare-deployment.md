@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint の展開を準備する
-description: Microsoft Defender for Endpoint を展開する際に、関係者の承認、タイムライン、環境に関する考慮事項、導入順序を準備する
+description: Microsoft Defender for Endpoint を展開するために、関係者の承認、タイムライン、環境に関する考慮事項、導入順序を準備する
 keywords: 展開、準備、関係者、タイムライン、環境、エンドポイント、サーバー、管理、導入
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 13748662f6e53db86352b903828978729f78e6a8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842436"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925653"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開を準備する
 
@@ -105,7 +105,7 @@ Defender for Endpoint では、アクセス許可を管理する 2 つの方法�
 
 ビジネス上の正当性を持つユーザーだけが Defender for Endpoint にアクセスできるよう RBAC を活用する方法をお勧めします。
 
-アクセス許可のガイドラインの詳細については、こちらを参照 [してください](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)。
+アクセス許可のガイドラインの詳細については、「役割を作成し、役割をグループに割り当てる」[をAzure Active Directoryできます](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)。
 
 次の表の例では、環境に必要な RBAC 構造を特定するのに役立つ、環境内のサイバー防御操作センター構造を識別します。
 
@@ -135,5 +135,6 @@ Defender for Endpoint では、アクセス許可を管理する 2 つの方法�
 
 ## <a name="next-step"></a>次の手順
 
-![フェーズ 2: セットアップ](images/setup.png) <br>[フェーズ 2: セットアップ](production-deployment.md) |Microsoft Defender for Endpoint の展開をセットアップする
-
+|||
+|:-------|:-----|
+|![フェーズ 2: セットアップ](images/setup.png) <br>[フェーズ 2: セットアップ](production-deployment.md) | Microsoft Defender for Endpoint の展開をセットアップする |

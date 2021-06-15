@@ -7,14 +7,16 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5961ac4eb16928754849f5f32ecd06d4d2e4650d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d93bf492f7cfea5a1ff863205085d853c4bbadb
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917718"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925433"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>更新プログラムの処理方法は、Microsoft マネージド デスクトップ
 
@@ -38,7 +40,7 @@ Microsoft マネージド デスクトップ 4 つの Azure ADを使用して更
 - **Broad**: 機能と品質の更新プログラムを利用できる最後のグループ。 このグループにはテナント内のほとんどのユーザーが含まれているため、展開の速度に対する安定性が優れています。 アプリのテストは、環境が最も安定しており、ここで行う必要があります。 
 
 ### <a name="moving-devices-between-update-groups"></a>更新グループ間でのデバイスの移動
-一部のデバイスで最後に更新プログラムを受信し、その他のデバイスで最初に更新プログラムを受け取る必要がある場合があります。 これらのデバイスを適切な更新グループに移動するには、管理者サポート要求 [を送信](../working-with-managed-desktop/admin-support.md?view=o365-worldwide) し、デバイスを移動します。 
+一部のデバイスで最後に更新プログラムを受信し、その他のデバイスで最初に更新プログラムを受け取る必要がある場合があります。 これらのデバイスを適切な更新グループに移動するには、管理者サポート要求 [を送信](../working-with-managed-desktop/admin-support.md) し、デバイスを移動します。 
 
 > [!NOTE]
 > ユーザーを別の更新グループに移動する必要がある場合は、サポート要求を送信します。 自分で更新グループ間でデバイスを移動しない。 デバイスが正しく移動されないと、重大な結果が発生します。 デバイスが予期せず更新され、ポリシーが競合してデバイス構成が変更される可能性があります。

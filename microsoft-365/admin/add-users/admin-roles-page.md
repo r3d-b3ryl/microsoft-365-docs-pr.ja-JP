@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: c1baf7fcd9189973864929550b19ca6e32d499ae
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: 管理者の役割は、ビジネス機能にマップされ、管理センターで特定のタスクを実行するためのアクセス許可を提供します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
+ms.openlocfilehash: 4e2b1db207a2a590855f7fb2d0bf2019d4b57ea5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706204"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924565"
 ---
 # <a name="get-started-with-the-roles-page"></a>[役割] ページの使用を開始する
 
@@ -41,11 +41,12 @@ ms.locfileid: "52706204"
 
 ![管理者ロールのフィルターまたはインポート](../../media/admin-role-page-options.png)
 
-|||
-|:-----|:-----|
-|  <br/> |[ **管理リストのエクスポート]** を使用して、組織内のすべての管理者ユーザーの完全なリストを取得します。 リストは、ファイル内のExcel .csvされます。   <br/> |
-|  <br/> |[ **検索]** を使用して管理者ロールを検索し、その役割に割り当てられているユーザーを確認します。   <br/> |
-|  <br/> |フィルター **を使用** して、表示される管理者ロールのビューを変更します。   <br/> |
+- [管理リストのエクスポート] を使用して、組織内のすべての管理者ユーザーの完全なリストを取得します。 リストは、ファイル内のExcel .csvされます。
+
+- [検索] を使用して管理者ロールを検索し、その役割に割り当てられているユーザーを確認します。
+
+- フィルターを使用して、表示される管理者ロールのビューを変更します。
+
 
 ## <a name="get-the-most-out-of-the-roles"></a>ロールを使い果たします
 
@@ -62,7 +63,7 @@ ms.locfileid: "52706204"
 
 Microsoft オンライン サービス全体のほとんどの管理機能とデータへのグローバル アクセスが必要なユーザーにグローバル管理者の役割を割り当てる。 グローバルなアクセスを多くのユーザーに許可することはセキュリティ上のリスクであるため、2 〜 4 人のグローバル管理者を配置することをお勧めします。 すべてのユーザーのパスワードをリセットし、ドメインを追加および管理できるのは、グローバル管理者のみです。 また、Microsoft サポートに対するサービス要求を開いて管理できます。 Microsoft オンライン サービスにサインアップしたユーザーが自動的にグローバル管理者になります。詳細 [については、以下を参照してください。](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
-### <a name="global-reader"></a>グローバルリーダー
+### <a name="global-reader"></a>グローバル閲覧者
 
 グローバル管理者が表示できるすべての管理センターで管理機能と設定を表示する必要があるユーザーに、グローバル リーダー管理者の役割を割り当てる。 グローバル リーダー管理者の役割は、設定を編集できない。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 

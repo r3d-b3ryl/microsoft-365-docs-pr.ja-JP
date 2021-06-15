@@ -7,7 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,13 +16,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 4199f55488ef0dc5989af88e8be83a3d51190d1f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: b141c9b745e560b3c2236a9d073a7b2f3500623c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275062"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926045"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Microsoft Defender ウイルス対策の更新プログラムを管理し、古くなったエンドポイントをスキャンする
 
@@ -51,7 +51,7 @@ Microsoft Defender ウイルス対策を使用すると、エンドポイント�
     1. クライアント **コンピューターがオフラインの場合は、2** つ以上の連続したスケジュールされた更新プログラムを [はい] に設定 **します**。
     2. [If  **Configuration Manager]** をセキュリティ インテリジェンス更新プログラムのソースとして使用します。。Configuration Manager によって配信される保護更新プログラムが古いとみなされる時間を指定します。 これにより、定義されたフォールバック ソースの順序に基づいて、次の更新場所 [が使用されます](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)。
 
-3. [**OK**] をクリックします。
+3. **[OK]** をクリックします。
 
 4.  [更新されたポリシーを通常どおり展開します](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
@@ -67,7 +67,7 @@ Microsoft Defender ウイルス対策を使用すると、エンドポイント�
 
 5. [キャッチアップ セキュリティ **インテリジェンスの** 更新が必要な日数を定義する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 Microsoft Defender AV で最新の保護更新プログラムを確認してダウンロードする日数を入力します。
 
-6. [**OK**] をクリックします。
+6. **[OK]** をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-configure-catch-up-protection-updates"></a>PowerShell コマンドレットを使用してキャッチアップ保護更新プログラムを構成する
 
@@ -107,11 +107,11 @@ SignatureUpdateCatchupInterval
 
     1.  [スパイウェア定義 **が** 古いと見なされる日数を定義する] をダブルクリックし、オプションを [有効] に **設定します**。 Microsoft Defender AV でスパイウェア セキュリティ インテリジェンスを古い日付と見なす日数を入力します。
 
-    2. [**OK**] をクリックします。
+    2. **[OK]** をクリックします。
 
     3.  [ウイルス定義 **が** 古いと見なされる日数を定義する] をダブルクリックし、オプションを [有効] に **設定します**。 Microsoft Defender AV でウイルス セキュリティ インテリジェンスを古い日付と見なす日数を入力します。
 
-    4. [**OK**] をクリックします。
+    4. **[OK]** をクリックします。
 
 
 ## <a name="set-up-catch-up-scans-for-endpoints-that-have-not-been-scanned-for-a-while"></a>しばらくスキャンされていないエンドポイントのキャッチアップ スキャンを設定する
@@ -139,9 +139,9 @@ SignatureUpdateCatchupInterval
 5.  ツリーを展開して **、Windowsスキャン> Microsoft Defender ウイルス対策 >構成** します。
 
     1.  スケジュールされたクイック スキャンを設定している場合は、[キャッチアップクイック スキャンを有効にする] 設定をダブルクリックし、オプションを [有効] に **設定します**。 
-    2. スケジュールされたフル スキャンを設定している場合は、[キャッチアップフル スキャンを有効にする] 設定をダブルクリックし、オプションを [有効] に **設定します**。 [**OK**] をクリックします。
+    2. スケジュールされたフル スキャンを設定している場合は、[キャッチアップフル スキャンを有効にする] 設定をダブルクリックし、オプションを [有効] に **設定します**。 **[OK]** をクリックします。
     3. [キャッチアップ **スキャンを** 強制する日数を定義する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 
-    4. 次にユーザーが PC にログオンするときにスキャンが自動的に実行される前に見逃す可能性があるスキャンの数を入力します。 実行されるスキャンの種類は、[スケジュールされたスキャンに使用するスキャンの種類を指定する] **によって** 決まります (「スキャンのスケジュール」 [トピックを参照](scheduled-catch-up-scans-microsoft-defender-antivirus.md) )。 [**OK**] をクリックします。
+    4. 次にユーザーが PC にログオンするときにスキャンが自動的に実行される前に見逃す可能性があるスキャンの数を入力します。 実行されるスキャンの種類は、[スケジュールされたスキャンに使用するスキャンの種類を指定する] **によって** 決まります (「スキャンのスケジュール」 [トピックを参照](scheduled-catch-up-scans-microsoft-defender-antivirus.md) )。 **[OK]** をクリックします。
 
 > [!NOTE]
 > グループ ポリシー設定のタイトルは、日数を参照します。 ただし、この設定は、キャッチアップ スキャンが実行される前のスキャン数 (日数ではなく) に適用されます。
@@ -177,11 +177,11 @@ DisableCatchupQuickScan
 
 2.  [スケジュールされたスキャン **] セクションに移動** し、クライアント コンピューターがオフラインの場合は、選択したスキャンの種類を強制的にスキャンします **。[** はい] **に移動します**。 
 
-3. [**OK**] をクリックします。
+3. **[OK]** をクリックします。
 
 4.  [更新されたポリシーを通常どおり展開します](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)
 - [更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する](manage-updates-baselines-microsoft-defender-antivirus.md)

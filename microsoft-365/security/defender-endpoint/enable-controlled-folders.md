@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5a90a12457597fa38c648fd44bf194d2322a26af
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: ed0859e6018d171b48aac83d394eacbd2163c37b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861225"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924685"
 ---
 # <a name="enable-controlled-folder-access"></a>制御されたフォルダー アクセスを有効にする
 
@@ -50,7 +50,7 @@ ms.locfileid: "52861225"
 * Microsoft Defender ウイルス対策 **リストのローカル管理者のマージ動作を構成する**
 * System Center Endpoint Protection **ユーザーによる除外と上書きの追加を許可する**
 
-ローカル リストのマージを無効にする方法の詳細については、「ユーザーが Microsoft Defender AV ポリシー設定をローカルで変更するを防止または許可する」 [を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)。
+ローカル リストのマージを無効にする方法の詳細については、「ユーザーが Microsoft Defender AV ポリシー設定をローカルで変更するを防止または許可する」 [を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus)。
 
 ## <a name="windows-security-app"></a>Windows セキュリティアプリ
 
@@ -92,7 +92,7 @@ ms.locfileid: "52861225"
 
 ## <a name="mobile-device-management-mdm"></a>モバイル デバイス管理 (MDM)
 
-アプリが保護されたフォルダーに変更を加えるのを許可するには [、./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) 構成サービス プロバイダー (CSP) を使用します。
+アプリが保護されたフォルダーに変更を加えるのを許可するには [、./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) 構成サービス プロバイダー (CSP) を使用します。
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 

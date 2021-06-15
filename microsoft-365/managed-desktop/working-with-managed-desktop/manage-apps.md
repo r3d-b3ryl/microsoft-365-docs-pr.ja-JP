@@ -1,34 +1,36 @@
 ---
-title: Microsoft Managed Desktop でアプリを管理する
-description: Microsoft Managed Desktop デバイスに展開されている業務用アプリを更新する方法について説明します。
+title: アプリを管理Microsoft マネージド デスクトップ
+description: デバイスに展開されている業務用アプリを更新する方法Microsoft マネージド デスクトップ情報
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1a6b91ab5b4523f4b980dab0c25af41a9d614189
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b016d8458b4b4cc9f6b684d3b8a3c0a1e1322fef
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600684"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925409"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップでの基幹業務アプリの管理
 
 <!--Application management -->
 
-Microsoft Managed Desktop にオンボードし、Microsoft Managed Desktop デバイスに展開したアプリのアプリ更新プログラムを管理するには、いくつかの方法があります。 アプリの更新は、Microsoft Managed Desktop ポータルまたは Intune で行います。 
+アプリにオンボードし、Microsoft マネージド デスクトップデバイスに展開したアプリのアプリ更新プログラムを管理Microsoft マネージド デスクトップがあります。 アプリの更新は、ポータルMicrosoft マネージド デスクトップ Intune で行います。 
 
 <span id="update-app-mmd" />
 
-## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Microsoft Managed Desktop で業務用アプリを更新する
+## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>アプリ内の業務用アプリを更新Microsoft マネージド デスクトップ
 
-**Microsoft Managed Desktop ポータルで業務用アプリを更新するには**
-1. [Microsoft Managed Desktop Admin ポータルにサインインします](https://aka.ms/mmdportal)。
+**ポータルで業務用アプリを更新するにはMicrosoft マネージド デスクトップ**
+1. 管理者ポータルに[サインインMicrosoft マネージド デスクトップします](https://aka.ms/mmdportal)。
 2. [インベントリ **] で**、[アプリ] **を選択します**。  
 3. 更新するアプリを選択し、[編集] を **選択します**。
 4. [管理 **] で**、[プロパティ] **を選択します**。 
@@ -57,16 +59,16 @@ Microsoft Managed Desktop にオンボードし、Microsoft Managed Desktop デ�
 
 ## <a name="roll-back-an-app-to-a-previous-version"></a>アプリを以前のバージョンにロールバックする
 
-新しいバージョンのアプリを展開するときにエラーが見つかった場合は、以前のバージョンにロールバックできます。 ここで説明するプロセスは **、Windows MSI line-of-business** アプリまたは Windows アプリ **(Win 32) - プレビュー** として種類が一覧表示されるアプリ向けです。
+新しいバージョンのアプリを展開するときにエラーが見つかった場合は、以前のバージョンにロールバックできます。 ここで説明するプロセスは、MSI Windows **MSI line-of-business** アプリまたは Windows アプリ **(Win 32) - プレビュー** として表示されるアプリ向けです。
 
 **line-of-business アプリを以前のバージョンにロールバックするには**
 
-1. [Microsoft Managed Desktop Admin ポータルにサインインします](https://aka.ms/mmdportal)。
+1. 管理者ポータルに[サインインMicrosoft マネージド デスクトップします](https://aka.ms/mmdportal)。
 2. [インベントリ **] で**、[アプリ] **を選択します**。  
 3. ロールバックする必要があるアプリを選択し、[編集] を **選択します**。
 4. [管理 **] で**、[プロパティ] **を選択します**。 
-    - **Windows MSI line-of-business** アプリアプリの場合は、[アプリ情報] を選択し、[アプリのバージョンを無視する] で、[はい] を **選択します**。
-    - **Windows アプリ (Win 32) の場合は**、アプリをプレビューし、[アプリ情報] を選択し、[検出ルール] を選択し、[追加] を **選択します**。  
+    - [MSI **Windowsアプリ**] で、[アプリ情報] を選択し、[アプリのバージョンを無視する] で 、[はい] を **選択します**。
+    - [Windowsアプリ **(Win 32) -** アプリをプレビューし、[アプリ情報] を選択し、[検出ルール] を選択し、[追加] を **選択します**。 
     MSI ルールがある場合は、MSI **製品の** バージョン チェックが [いいえ] **に設定されています**。
-5. [以前のバージョンのアプリ ソース ファイルを](../get-started/deploy-apps.md) Microsoft Managed Desktop Admin ポータルにアップロードします。  
+5. [アップロードバージョンのアプリ ソース ファイルを](../get-started/deploy-apps.md)管理ポータルにMicrosoft マネージド デスクトップします。  
 

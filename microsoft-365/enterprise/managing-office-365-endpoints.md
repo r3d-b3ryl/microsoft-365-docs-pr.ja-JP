@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ組織のネットワーク Office 365で動作するエンドポイントを管理する方法について説明します。
-ms.openlocfilehash: ea89c263b1d2c89ff49ec7263269afc6030292e8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fa727c5c80521b6ff67c50d202d0c11c643b021e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905118"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925865"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 
@@ -161,7 +161,7 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 プロキシ サーバーは、上記の例の最初の URL を検証し、serviceA.office.com 発行にこの URL をOffice 365します。 プロキシ サーバーは、その URL の DNS 解決を IP アドレスに要求し、その URL を受信IP_1。 仲介 CNAME リダイレクト レコードは検証しない。
 
-Microsoft ではサポートされていない、間接OFFICE 365 FQDN に基づくハードコードされた構成またはホワイトリスト登録は、お客様の接続の問題を引き起こすと知られています。 CNAME リダイレクトをブロックする DNS ソリューション、または Office 365 DNS エントリを正しく解決しない DNS ソリューションは、DNS 再帰を有効にした DNS 転送者または DNS ルート ヒントを使用して解決できます。 多くのサード パーティ製のネットワーク境界製品は、Office 365 IP アドレスと URL Web サービスを使用して、推奨されるエンドポイント ホワイトリストOffice 365構成[に統合します](microsoft-365-ip-web-service.md)。
+ハードコードされた構成、または間接 Office 365 FQDN に基づく許可リストの使用は推奨されません。Microsoft ではサポートされていません。また、お客様の接続の問題を引き起こす可能性があります。 CNAME リダイレクトをブロックする DNS ソリューション、または Office 365 DNS エントリを正しく解決しない DNS ソリューションは、DNS 再帰を有効にした DNS 転送者または DNS ルート ヒントを使用して解決できます。 多くのサード パーティ製ネットワーク境界製品は、Office 365 IP アドレスと URL Web サービスを使用して構成に許可リストを含Office 365推奨エンドポイントをネイティブに[統合します](microsoft-365-ip-web-service.md)。
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Microsoft ドメイン名に nsatc.net や akadns.net などの名前が表示されるのはなぜですか?

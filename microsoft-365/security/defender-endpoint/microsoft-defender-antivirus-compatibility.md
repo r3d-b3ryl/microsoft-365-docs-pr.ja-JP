@@ -7,21 +7,21 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr
-ms.topic: article
 manager: dansimp
 ms.technology: mde
 ms.date: 05/08/2021
-ms.openlocfilehash: 072ad4e536f753550462fa80650bef392a147e64
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: e4675626e9debf3ef3a295f7c797ac254e82395f
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301754"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926021"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender ウイルス対策互換性
 
@@ -99,7 +99,7 @@ Windows Server、バージョン 1803 以降、または Windows Server 2019 を
 > [!IMPORTANT]
 > パッシブ モードで Microsoft Defender ウイルス対策 を使用しているか、ブロック モードで EDR を使用している場合は、リアルタイム保護、クラウド配信保護、制限付き定期的スキャンなどの機能をオフにしません。 
 
-|Protection |アクティブ モード |パッシブ モード |ブロック モードの EDR |無効またはアンインストール |
+|保護 |アクティブ モード |パッシブ モード |ブロック モードの EDR |無効またはアンインストール |
 |:---|:---|:---|:---|:---|
 | [リアルタイム保護と](configure-real-time-protection-microsoft-defender-antivirus.md)[クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) | はい | いいえ <sup> [[3](#fn3)]<sup> | いいえ | いいえ |
 | [定期的なスキャンの可用性が制限されている](limited-periodic-scanning-microsoft-defender-antivirus.md) | いいえ | いいえ | いいえ | はい |

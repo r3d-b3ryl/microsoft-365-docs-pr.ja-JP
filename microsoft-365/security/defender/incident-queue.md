@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: df2d2660267c38dccf5ef09fa4955615d3a78141
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636268"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925889"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Defender でのインシデントのMicrosoft 365する
 
@@ -67,7 +67,7 @@ Microsoft 365Defender は相関分析を適用し、関連するアラートと�
 
 次の表に、使用可能なフィルター名を示します。
 
-| フィルター名 | Description |
+| フィルター名 | 説明 |
 |:-------|:-----|
 | 割り当て先 | 自分に割り当てられているアラート、または自動化によって処理されたアラートを表示できます。 |
 | Categories | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
@@ -82,6 +82,23 @@ Microsoft 365Defender は相関分析を適用し、関連するアラートと�
 | 重要度 | インシデントの重大度は、資産に与える影響を示しています。 重大度が高いほど、影響は大きく、通常は最も迅速な注意が必要です。 |
 | 状態 | 状態に基づいて表示されるインシデントのリストを制限して、アクティブなインシデントまたは解決されたインシデントを確認できます。 |
 |||
+
+## <a name="save-defined-filters-as-urls"></a>定義されたフィルターを URL として保存する
+
+インシデント キューで便利なフィルターを構成したら、ブラウザー タブの URL をブックマークするか、Web ページ、Word ドキュメント、または選択した場所にリンクとして保存できます。 これにより、次のようなインシデント キューの主要なビューにシングル クリックでアクセスできます。
+
+- 新しいインシデント
+- 重大度の高いインシデント
+- 割り当てられていないインシデント
+- 重大度が高く、割り当てられていないインシデント
+- 割り当てられたインシデント
+- Microsoft Defender for Endpoint に割り当てられたインシデント
+- 特定のタグまたはタグを持つインシデント
+- 特定の脅威カテゴリを持つインシデント
+- 特定の関連付けられた脅威を持つインシデント
+- 特定のアクターを持つインシデント
+
+有用なフィルター ビューのリストを URL としてコンパイルして保存したら、キュー内のインシデントをすばやく処理して優先順位を付け、その後[](manage-incidents.md)の分析のために管理できます。
 
 ## <a name="next-steps"></a>次の手順
 

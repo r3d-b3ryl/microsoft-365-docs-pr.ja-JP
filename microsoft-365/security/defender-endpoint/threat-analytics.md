@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint の脅威分析を使用して、新たな脅威を追跡して対応する
 ms.reviewer: ''
-description: 新たな脅威と攻撃の手法と、それらを停止する方法について説明します。 組織への影響を評価し、組織の回復力を評価します。
+description: 新たな脅威と攻撃の手法と、それらを停止する方法を理解します。 組織への影響を評価し、組織の回復力を評価します。
 keywords: 脅威分析、リスク評価、OS 軽減、マイクロコード軽減、軽減状態
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 61b6b0c19730045468c77e5f24bf18470aa5dbd5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 63303f9eacd25a8de1c7154ac66c73578bfd495a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688263"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924457"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>脅威の分析を使用して、新たな脅威を追跡し対応する 
+# <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>脅威分析による新たな脅威の追跡と対応
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

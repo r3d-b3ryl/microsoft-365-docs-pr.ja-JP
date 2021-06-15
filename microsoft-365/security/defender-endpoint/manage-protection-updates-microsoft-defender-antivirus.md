@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 52fe64b096b24dfc52a97fb664e408c5aeb701f4
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 35873b371e773e793ae966a338150e2e5e256a42
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624211"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926033"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -104,13 +104,13 @@ Microsoft Update では、最高レベルの保護を確保するために、迅
 
    ![ソースの順序を示すグループ ポリシー設定のスクリーンショット](images/defender/wdav-order-update-sources.png)
 
-   3. [**OK**] をクリックします。 これにより、保護更新プログラムのソースの順序が設定されます。
+   3. **[OK]** をクリックします。 これにより、保護更新プログラムのソースの順序が設定されます。
 
    4. [セキュリティ インテリジェンス更新プログラムをダウンロード **するための** ファイル共有の定義] 設定をダブルクリックし、オプションを [有効] に **設定します**。
 
    5. ファイル共有ソースを入力します。 複数のソースがある場合は、使用する順序で各ソースを 1 つのパイプで区切って入力します。 パス [を示す標準の UNC](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) 表記を使用します。たとえば、次のようになります `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name` 。  パスを入力しない場合、VM が更新プログラムをダウンロードすると、このソースはスキップされます。
 
-   6. [**OK**] をクリックします。 これにより、ソースが参照される場合のファイル共有の順序が [ソースの順序の定義 **... グループ** ポリシー設定で設定されます。
+   6. **[OK]** をクリックします。 これにより、ソースが参照される場合のファイル共有の順序が [ソースの順序の定義 **... グループ** ポリシー設定で設定されます。
 
 > [!NOTE]
 > Windows 10 バージョン 1703 から 1809 まで、ポリシー パスは Windows **Components > Microsoft Defender ウイルス対策 >** Signature Updates for Windows 10 バージョン 1903 の場合、ポリシー パスは Windows **コンポーネント > Microsoft Defender ウイルス対策 >** セキュリティ インテリジェンス更新プログラム
@@ -258,7 +258,7 @@ MDM [の構成の詳細については、「Policy CSP - Defender/SignatureUpdat
     > [!NOTE]
     > パスに x64 (または x86) フォルダーを追加しない。 このプロセスmpcmdrun.exe自動的に追加されます。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)
 - [更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する](manage-updates-baselines-microsoft-defender-antivirus.md)

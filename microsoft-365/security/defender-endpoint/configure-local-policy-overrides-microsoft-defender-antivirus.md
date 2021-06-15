@@ -4,28 +4,26 @@ description: Microsoft Defender AV でユーザーがローカルで変更する
 keywords: ローカル オーバーライド, ローカル ポリシー, グループ ポリシー, gpo, lockdown,merge, lists
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 4a35c6717fd7a1834364df32cf5570c83a5b776e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 2d23ca6d98d86666d72b75723a2205fcd83b08d7
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274522"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924245"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーがポリシー設定をローカルで変更Microsoft Defender ウイルス対策または許可する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用対象:**
@@ -90,7 +88,7 @@ MAPS | Microsoft MAPS へのレポート用にローカル設定の上書きを�
 
 3. ツリーを展開して **、Windowsコンポーネント> Microsoft Defender ウイルス対策。**
 
-4. [リストのローカル **管理者の差し込み動作を構成** する] をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。
+4. [リストのローカル **管理者の差し込み動作を構成** する] をダブルクリックし、オプションを [無効] に **設定します**。 **[OK]** をクリックします。
 
 > [!NOTE]
 > ローカル リストの結合を無効にすると、フォルダー アクセスの制御設定が上書きされます。 また、ローカル管理者が設定した保護されたフォルダーまたは許可されたアプリも上書きされます。 フォルダー アクセスの制御設定の詳細については、「アプリでブロック[されたアプリ](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security)を許可する」を参照Windows セキュリティ。

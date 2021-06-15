@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute for Office 365を実装する方法について説明します。これは、インターネットに接続している多数のサービスへの代替ルーティング パスOffice 365します。
-ms.openlocfilehash: d75fe3a6dab4926babeef61fc14894566ff819b0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ad6102193a12325de0e4bb2ff16087738688587
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051368"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924941"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
@@ -103,10 +103,10 @@ Office 365の記事 [「Route with ExpressRoute for Office 365」](https://suppo
   
 非対称ルーティングが導入されていないかどうかを確認するには、インターネットまたは ExpressRoute を使用して接続するかどうかに関係なく、受信接続を確認する必要があります。 場合によっては、Office 365 サービスが受信接続を開始するオンプレミス のエンドポイントに対して、他の Microsoft および非接続サービスからアクセスする必要Microsoft サービス。 これらのサービスに対して ExpressRoute ルーティングを有効にしても、Office 365のシナリオが壊れる可能性は最も重要です。 多くの場合、ExpressRoute を有効にした後も Microsoft からの受信フローが対称的に維持するために、ソース ベースの NAT など、内部ネットワークに特定の変更を実装する必要がある場合があります。
   
-必要な詳細レベルのサンプルを次に示します。 この場合、Exchangeハイブリッドは ExpressRoute を使用してオンプレミス システムにルーティングされます。
+必要な詳細レベルのサンプルを次に示します。 この場合、Exchangeハイブリッドは ExpressRoute を使用してオンプレミス システムにルーティングされます。 
 
-|**Connection プロパティ**|**値**|
-|:-----|:-----|
+|Connection プロパティ   |値  |
+|----------|-----------|
 |**ネットワーク トラフィックの方向** <br/> |受信  <br/> |
 |**サービス** <br/> |Exchange ハイブリッド  <br/> |
 |**パブリック Office 365 エンドポイント (ソース)** <br/> |Exchange Online (IP アドレス)  <br/> |
@@ -115,15 +115,15 @@ Office 365の記事 [「Route with ExpressRoute for Office 365」](https://suppo
 |**このオンプレミス エンドポイントは、他の (非オンプレミスの) Office 365でMicrosoft サービス** <br/> |いいえ  <br/> |
 |**このオンプレミス エンドポイントは、インターネット上のユーザー/システムによって使用されます。** <br/> |はい  <br/> |
 |**パブリック エンドポイントを通じて公開される内部システム** <br/> |Exchange Server クライアント アクセスロール (オンプレミス) 192.168.101、192.168.102、192.168.103  <br/> |
-|**パブリック エンドポイントの IP アドバタイズ** <br/> |**インターネットへ**: 5.5.0.0/16  <br/> **ExpressRoute への** アクセス : 5.5.5.0/24  <br/> |
-|**セキュリティ/境界コントロール** <br/> |**インターネット パス**: DeviceID_002  <br/> **ExpressRoute パス**: DeviceID_003  <br/> |
-|**高可用性** <br/> |2 geo 冗長でアクティブ/アクティブ  <br/> ExpressRoute 回線 - シカゴとダラス  <br/> |
-|**パス対称制御** <br/> |**メソッド**: ソース NAT  <br/> **インターネット パス**: 192.168.5.5 への送信元 NAT 受信接続  <br/> |**ExpressRoute パス**: 192.168.1.0 (シカゴ) および 192.168.2.0 へのソース NAT 接続 (ダラス)  <br/> |
+|**パブリック エンドポイントの IP アドバタイズ** <br/> |**インターネットへ**: 5.5.0.0/16 **To ExpressRoute**: 5.5.5.0/24  <br/> |
+|**セキュリティ/境界コントロール** <br/> |**インターネット パス**:  **expressRoute** DeviceID_002 : DeviceID_003  <br/> |
+|**高可用性** <br/> |2 つの geo 冗長 /ExpressRoute 回線間でアクティブ/アクティブ - シカゴとダラス  <br/> |
+|**パス対称制御** <br/> |**メソッド**: 送信元 NAT **インターネット** パス : 192.168.5.5 **ExpressRoute** パスへの送信元 NAT 受信接続 : 192.168.1.0 (シカゴ) と 192.168.2.0 への送信元 NAT 接続 (ダラス)  <br/> |
 
 送信のみであるサービスのサンプルを次に示します。
 
 |**Connection プロパティ**|**値**|
-|:-----|:-----|
+|----------|-----------|
 |**ネットワーク トラフィックの方向** <br/> |送信  <br/> |
 |**サービス** <br/> |SharePoint Online  <br/> |
 |**オンプレミス エンドポイント (ソース)** <br/> |ユーザー ワークステーション  <br/> |
@@ -189,12 +189,13 @@ ExpressRoute 回線がネットワークを Microsoft ネットワークに接�
   
 多くの場合、ユーザーに相対的に近い地域内で選択できる複数のミートミーの場所があります。 次の表に記入して、決定事項を説明します。
 
-|**カリフォルニアとニューヨークの ExpressRoute meet-me の計画場所**||
-|:-----|:-----|
+**カリフォルニアとニューヨークの ExpressRoute meet-me の計画場所**
+
 |場所  <br/> |人数  <br/> |インターネット出力を通して Microsoft ネットワークに予想される待機時間  <br/> |ExpressRoute を使用した Microsoft ネットワークへの予期される待機時間  <br/> |
+|----------|-----------|----------|-----------|
 |Los Angeles  <br/> |10,000  <br/> |~15ms  <br/> |~10ms (シリコン バレー経由)  <br/> |
 |ワシントン DC  <br/> |15,000  <br/> |~20ms  <br/> |~10ms (ニューヨーク経由)  <br/> |
-|ダラス  <br/> |5,000  <br/> |~15ms  <br/> |~40ms (ニューヨーク経由)  <br/> |
+|ダラス  <br/> |5,000 人  <br/> |~15ms  <br/> |~40ms (ニューヨーク経由)  <br/> |
 
 Office 365 地域、ExpressRoute ネットワーク サービス プロバイダーの meet-me 場所、および場所別のユーザー数を示すグローバル ネットワーク アーキテクチャが開発された後は、最適化を行う必要がある場合に使用できます。 また、ミートミーの場所を取得するために、トラフィックが遠くの場所にルーティングされるグローバル ヘアピン ネットワーク接続が表示される場合があります。 グローバル ネットワーク上のヘアピンが検出された場合は、続行する前に修復する必要があります。 別の meet-me の場所を見つけるか、または選択的なインターネット ブレイクアウト出力ポイントを使用してヘアピンを回避します。
   
@@ -225,7 +226,7 @@ Office 365 地域、ExpressRoute ネットワーク サービス プロバイダ
 
 - ExpressRoute ルートがネットワークにアドバタイズされる時間と、クライアントがインターネットまたは ExpressRoute パスを選択するメカニズムを決定します。たとえば、直接ルーティングやアプリケーション プロキシなどです。
 
-- 送信者ポリシー フレームワーク エントリを含む [DNS レコードの変更を](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) 計画します。
+- 送信者ポリシー フレームワーク エントリを含む [DNS レコードの変更を](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) 計画します。
 
 - 発信元と受信元 NAT を含む NAT 戦略を計画します。
 
@@ -572,7 +573,7 @@ ExpressRoute 接続を使用して Office 365 を展開する場合は、Express
   
 ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/implementexpressroute365]()
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
   

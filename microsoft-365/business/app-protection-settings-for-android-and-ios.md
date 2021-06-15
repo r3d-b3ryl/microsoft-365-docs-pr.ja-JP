@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: アプリ管理ポリシーを作成、編集、または削除し、Android デバイスまたは iOS デバイス上の作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: 2e157737990c7aca6e87a676e90f62f0d40ad372
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 92dce1e8761e53b85df85f2a84f30ab307f63e6d
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580296"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925065"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を設定する
 
@@ -81,10 +81,10 @@ ms.locfileid: "51580296"
 ### <a name="settings-that-protect-work-files"></a>作業ファイルを保護する設定
 
 次の設定は、ユーザーのデバイスが紛失したり盗難された場合に、作業ファイルを保護するために使用できます。
-  
-|||
-|:-----|:-----|
+
+
 |Setting  <br/> |説明  <br/> |
+|:-----|:-----|
 |この日数後、非アクティブなデバイスから作業ファイルを削除する  <br/> |ここで指定した日数のデバイスを使用しない場合、デバイスに保存されている作業ファイルは自動的に削除されます。  <br/> |
 |ユーザーにすべての作業ファイルを OneDrive for Business に強制的に保存させる  <br/> |この設定が **[オン] の場合**、作業ファイルに使用できる保存場所は、OneDrive for Business。  <br/> |
 |作業ファイルの暗号化  <br/> |作業ファイルが暗号化によって保護されるように、この設定は常に **オン** にします。 デバイスが紛失または盗まれた場合でも、誰も会社のデータを読み取ることはありません。  <br/> |
@@ -92,10 +92,10 @@ ms.locfileid: "51580296"
 ### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>ユーザーがモバイル デバイスで Office ファイルにアクセスする方法を制御する設定
 
 次の設定は、ユーザーが Office 作業ファイルにアクセスする方法を管理するために使用できます。
-  
-|||
-|:-----|:-----|
+
+
 |Setting  <br/> |説明  <br/> |
+|:-----|:-----|
 |Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある  <br/> |この設定が **[オン] の** 場合、ユーザーはモバイル デバイスでアプリを使用する前に、ユーザー名とパスワードに加えて、別の形式の認証Office必要があります。<br/> |
 |ログインに指定の回数失敗した場合に PIN をリセットする  <br/> |承認されていないユーザーが PIN をランダムに推測するのを防ぐため、指定した回数、エントリを間違うと、PIN がリセットされます。  <br/> |
 |次の時間 Office アプリのアイドル状態が続いた場合にユーザーはもう一度サインインする必要がある  <br/> |この設定は、ユーザーが再度サインインするように求めるメッセージが表示されるまでアイドル状態にできる期間を決定します。  <br/> |

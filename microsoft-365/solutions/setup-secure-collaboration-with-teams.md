@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたコンテンツ コラボレーションを設定し、Teamsに基づいてデータを保護する方法について学習します。
-ms.openlocfilehash: 12c8bfd2c7c59e1cc4dcf149e394d2c7dc456530
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7a5b8f58cc5e4a23d2d143419f99ecdd87b949c1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539061"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924361"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>ユーザーとユーザーとの安全なMicrosoft 365をMicrosoft Teams
 
@@ -72,7 +72,7 @@ ms.locfileid: "52539061"
 | Microsoft Teams   | ゲスト アクセス、プライベート チーム、プライベート チャネル | Microsoft 365E1、E3、E5 |
 | Microsoft 365 コンプライアンス  | 秘密度ラベル    | Microsoft 365 E3、E5 |
 
-### <a name="collaboration-governance"></a>共同作業ガバナンス
+### <a name="collaboration-governance"></a>共同作業のガバナンス
 
 Microsoft 365ソリューションを管理するための多くのオプションが提供されています。 この展開コンテンツをコラボレーション ガバナンス コンテンツと[](collaboration-governance-overview.md)共に使用して、組織に最適なコラボレーション ソリューションを作成することをお勧めします。
 
@@ -178,7 +178,7 @@ Microsoft Learn のこれらのトレーニング モジュールを使用する
 |:---|:---|
 |![チーム トレーニング アイコンの設定とカスタマイズ](../media/set-up-customize-team-training.png)<br>**[チームのセットアップとカスタマイズ](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePointの共有と同期のトレーニング アイコン](../media/sharepoint-share-sync-training.png)<br>**[共有と同期](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Teamsファイルのアップロードと検索のトレーニング アイコン](../media/smc-teams-upload-find-files-training.png)<br>**[アップロードファイルの検索](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
-|![チームとチャネルの共同作業アイコン](../media/teams-collaborate-channels-training.png)<br>**[チームとチャネルでの共同作業](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+|![チームとチャネルの共同作業アイコン](../media/teams-collaborate-channels-training.png)<br>**[チームとチャネルでの共同作業](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## <a name="illustrations"></a>図
 

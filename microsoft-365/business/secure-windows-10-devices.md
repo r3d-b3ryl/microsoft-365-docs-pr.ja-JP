@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: 仕事または学校のアカウントにサインインすると、Windows 10デバイスが受け取る既定のデバイス ポリシーの設定を構成する方法について説明します。
-ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 3f85549e722c9aa4196cf50fc02bee2e89506017
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579976"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925241"
 ---
 # <a name="secure-windows-10-devices"></a>Windows 10 デバイスをセキュリティで保護する
 
@@ -44,9 +44,10 @@ ms.locfileid: "51579976"
 
 既定では、すべての設定が **オン** になっています。次の設定を使用できます。
   
-|||
-|:-----|:-----|
+
+
 |Setting  <br/> |説明  <br/> |
+|:-----|:-----|
 |Windows Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  <br/> |インターネットに接続されている危険から PC を保護するには、ウイルス対策をオンにする必要があります。  <br/> |
 |Microsoft Edge で PC を Web ベースの脅威から保護する  <br/> |ユーザーを悪意のあるサイトやダウンロードから保護するために役立つ、Microsoft Edge の設定をオンにします。  <br/> |
 |不正なアクセスから PC のファイルとフォルダーを保護するために BitLocker を使用する  <br/> |BitLocker は、コンピューターのハード ドライブを暗号化することによってデータを保護し、コンピューターの紛失や盗難時にデータの漏えいを防ぎます。 詳細については [、「Bitlocker FAQ」を参照してください](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)。  <br/> |

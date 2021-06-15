@@ -1,6 +1,6 @@
 ---
-title: スケジュールされたスキャンとオンデマンド スキャンの実行とカスタマイズ
-description: ネットワーク全体のエンドポイントMicrosoft Defender ウイルス対策スキャンをカスタマイズして開始します。
+title: スケジュールされたスキャンとオンデマンド スキャンを実行してカスタマイズします。
+description: ネットワーク全体のエンドポイントMicrosoft Defender ウイルス対策スキャンをカスタマイズして開始する
 keywords: スキャン、スケジュール、カスタマイズ、除外、ファイルの除外、修復、スキャン結果、検疫、脅威の削除、クイック スキャン、フル スキャン、Microsoft Defender ウイルス対策
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 31dbfa2ac6d5537f6d42c0bad612be5ef059368d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bce3fe1b6490803cb571a1a8a2387c19cc589114
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275278"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926249"
 ---
 # <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>スキャンと修復の結果をカスタマイズ、開始Microsoft Defender ウイルス対策確認する
 

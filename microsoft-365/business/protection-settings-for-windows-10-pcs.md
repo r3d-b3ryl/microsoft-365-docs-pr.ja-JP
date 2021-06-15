@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: ビジネス向けアプリで使用できるMicrosoft 365デバイスをセキュリティで保護するWindows 10します。
-ms.openlocfilehash: acfb27b2e4592d4ed1e446a63c9495ae07d916de
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4859681d5e71a61b8a5dd58114bce899f485967a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578229"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925321"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>PC のデバイス保護設定を編集またはWindows 10する
 
@@ -67,10 +67,10 @@ ms.locfileid: "51578229"
 既定では、すべての設定が **オン** になっています。次の設定を使用できます。
   
 詳細については、「Intune の設定[にマップする方法Microsoft 365 プレミアム保護機能」を参照してください](map-protection-features-to-intune-settings.md)。 
-  
-|||
-|:-----|:-----|
+
+
 |Setting  <br/> |説明  <br/> |
+|:-----|:-----|
 |Windows Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  <br/> |インターネットに接続されている危険から PC を保護するには、ウイルス対策をオンにする必要があります。  <br/> |
 |Microsoft Edge で PC を Web ベースの脅威から保護する  <br/> |ユーザーを悪意のあるサイトやダウンロードから保護するために役立つ、Microsoft Edge の設定をオンにします。  <br/> |
 |デバイスに対する攻撃を回避するルールを使用する  <br/> |オンにすると、攻撃の回避により、デバイス感染のためにマルウェアが通常使用するアクションやアプリをブロックすることができます。Windows Defender ウイルス対策がオンに設定されている場合にのみこの設定を利用できます。詳細については、「[攻撃の回避](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)」を参照してください。  <br/> |

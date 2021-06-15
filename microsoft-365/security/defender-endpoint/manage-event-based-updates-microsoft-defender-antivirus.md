@@ -7,7 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,13 +16,12 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 624e32bfebfce02021f1dcb1dbdde9446472239a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 82aff7adedc9e490520851ad8c8e87fad60abf0a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274702"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926081"
 ---
 # <a name="manage-event-based-forced-updates"></a>イベントベースの強制更新プログラムを管理する
 
@@ -44,7 +44,7 @@ Microsoft Defender ウイルス対策を使用すると、起動時やクラウ�
 
 2. [スケジュールされたスキャン **] セクションに移動** し、スキャンを実行する前に最新のセキュリティ インテリジェンス更新プログラムのチェックを [は **い** ] に **設定します**。
 
-3. [**OK**] をクリックします。
+3. **[OK]** をクリックします。
 
 4. [更新されたポリシーを通常どおり展開します](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
@@ -60,7 +60,7 @@ Microsoft Defender ウイルス対策を使用すると、起動時やクラウ�
 
 5. [スケジュールされたスキャン **を実行する** 前に最新のウイルスとスパイウェアの定義を確認する] をダブルクリックし、オプションを [有効] に **設定します**。
 
-6. [**OK**] をクリックします。
+6. **[OK]** をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>PowerShell コマンドレットを使用して、スキャンを実行する前に保護更新プログラムを確認する
 
@@ -96,7 +96,7 @@ CheckForSignaturesBeforeRunningScan
 
 5. [起動時に **最新のウイルス** とスパイウェアの定義を確認する] をダブルクリックし、オプションを [有効] に **設定します**。 
 
-6. [**OK**] をクリックします。
+6. **[OK]** をクリックします。
 
 また、グループ ポリシー、PowerShell、または WMI を使用して、実行中Microsoft Defender ウイルス対策起動時に更新プログラムを確認するサーバーを構成できます。
 
@@ -112,7 +112,7 @@ CheckForSignaturesBeforeRunningScan
 
 5. [起動時にセキュリティ **インテリジェンス更新プログラムを開始** する] をダブルクリックし、オプションを [有効] に **設定します**。
 
-6. [**OK**] をクリックします。
+6. **[OK]** をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>PowerShell コマンドレットを使用して、ユーザーが存在しないMicrosoft Defender ウイルス対策更新プログラムをダウンロードする
 

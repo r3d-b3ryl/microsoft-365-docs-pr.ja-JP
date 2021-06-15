@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センターの > [Office の新機能] 機能を使用して、ユーザーが Office アプリ の Office アプリ on Windows で [新機能] を選択した場合に表示または非表示にする Office 機能を決定します。
-ms.openlocfilehash: b9d20e3df4a2de540316dce0e6a6905c07e65176
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915029"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924837"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>新機能にOffice機能を管理する
 
@@ -60,9 +60,8 @@ ms.locfileid: "50915029"
 
 新しい機能は、次のスケジュールに基づいてページに表示されます。
 
-||||
+|チャネル|日付|アクションを行う|
 |:-----|:-----|:-----|
-|**チャネル** <br/> |**Date** <br/> |**アクションを行う** <br/> |
 |**Current** <br/> |月の 15 日  <br/> |月次リリースの 1 ~ 3 週間前 <br/> |
 |**月次Enterprise** <br/> |月の最初  <br/> |新機能をもたらすメジャー リリースの 2 週間前 |
 |**半期のEnterprise (プレビュー)** <br/> |9 月 1 日と 3 月 1 日 <br/> | 新機能をもたらすメジャー リリースの 2 週間前|
@@ -77,6 +76,6 @@ ms.locfileid: "50915029"
 3. カードがホーム ページに表示された後、組織の機能を表示または非表示Officeの新機能を選択[](#show-or-hide-new-features)できます。
 
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 [Office新機能の管理が一般に利用可能に](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-is-now-generally-available/ba-p/1179954)

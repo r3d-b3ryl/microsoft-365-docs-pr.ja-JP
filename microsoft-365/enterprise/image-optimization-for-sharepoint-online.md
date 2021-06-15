@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Renditions とスプライトを使用して、オンライン の従来の発行サイトでの画像SharePoint向上させる方法について学習します。
-ms.openlocfilehash: 0f0dd078ce28b86fc998b2f83ac19d04b1a3ab02
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15885f1d8803332e24e2656a48b796dab28c665f
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907482"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924577"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>オンラインクラシック発行サイトSharePointの画像の最適化
 
@@ -35,9 +35,14 @@ Web ページの読み込み速度は、画像、HTML、JavaScript、CSS など�
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>スプライトを使用して画像の読み込みを高速化する
 
-|||
-|:-----|:-----|
-| イメージ スプライトには、小さい画像が多数含まれています。 CSS を使用して、ページの特定の部分に表示する合成イメージの一部を絶対位置付けで選択します。 基本的には、複数のイメージを読み込む代わりに、ページの周りに 1 つのイメージを移動し、そのイメージの小さな部分を、スプライト イメージの必要な部分がエンド ユーザーに表示される小さなウィンドウから表示します。 SharePointOnline では、スプライトを使用して、スプライト ウィンドウにさまざまなアイコンspcommon.png。  <br/>  ここで説明する情報:  <br/>  画像の圧縮  <br/>  画像の最適化  <br/>  SharePoint表示  <br/> |![spcommon のスクリーンショット](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
+![spcommon のスクリーンショット](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
+
+イメージ スプライトには、小さい画像が多数含まれています。 CSS を使用して、ページの特定の部分に表示する合成イメージの一部を絶対位置付けで選択します。 基本的には、複数のイメージを読み込む代わりに、ページの周りに 1 つのイメージを移動し、そのイメージの小さな部分を、スプライト イメージの必要な部分がエンド ユーザーに表示される小さなウィンドウから表示します。 SharePointOnline では、スプライトを使用して、スプライト ファイル内のさまざまなアイコンspcommon.pngします。
+
+ここで説明する情報:
+- 画像の圧縮
+- 画像の最適化
+- SharePoint表示
    
 これは、複数のイメージではなく 1 つのイメージのみをダウンロードし、そのイメージをキャッシュして再利用するためにパフォーマンスを向上させる可能性があります。 イメージがキャッシュされたままでなくても、複数のイメージではなく 1 つのイメージを持つことで、このメソッドは HTTP 要求の総数をサーバーに削減し、ページの読み込み時間を短縮します。 これは、実際にはイメージのバンドルの形式です。 これは、上記の例の例に示すように、アイコンなど、画像が頻繁に変更されない場合にSharePoint便利です。 サードパーティのオープンソースのコミュニティベースのプロジェクトである[Web Essentials](https://vswebessentials.com/)を使用して、これを簡単に実現する方法をMicrosoft Visual Studio。 詳細については、「Minification and bundling in SharePoint [Online」を参照してください](./minification-and-bundling-in-sharepoint-online.md)。
   

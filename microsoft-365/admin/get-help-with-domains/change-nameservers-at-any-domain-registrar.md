@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 電子メールやオンラインのようなサービスが独自のドメインMicrosoft 365使用するために、Skype for Businessドメインを追加して設定する方法について説明します。
-ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9c26f9afcf17857c4b3b8f05b89253272cf20e56
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683129"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924505"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>ネームサーバーを変更して、ドメイン レジストラー Microsoft 365をセットアップする
 
@@ -66,18 +66,17 @@ TXT レコードと MX レコードのどちらを作成しているかに応じ
   
 **TXT レコードを作成する場合は、以下の値を使います。**
     
-|||||
+
+|レコードの種類<br/> |エイリアスまたはホスト名 <br/> |値 <br/> |TTL<br/> |
 |:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Alias** または **Host Name** <br/> |**Value** <br/> |**TTL** <br/> |
 |TXT  <br/> |次のいずれかを実行します。「 **@** 」と入力するか、フィールドを空白のままにするか、ドメイン名を入力します。    <br/> > [!NOTE]> このフィールドの要件は、DNS ホストによって異なります。           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。  <br/> |
+|MS=ms *XXXXXXXX*  <br/>**注:** これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。  <br/> |
    
 **MX レコードを作成する場合は、以下の値を使います。**
     
-||||||
+|レコードの種類|エイリアスまたはホスト名|値|Priority|TTL|
 |:-----|:-----|:-----|:-----|:-----|
-|**Record Type**|**Alias** または **Host Name**|**Value**|**Priority**|**TTL**|
-|MX|**@** か自分のドメインの名前のいずれかを入力します。 |MS=ms *XXXXXXXX* > [!NOTE]> これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |**Priority** には、メール フローに使われる MX レコードとの競合を避けるために、既存の MX レコードよりも低い優先度を指定します。 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。 |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 |
+|MX|**@** か自分のドメインの名前のいずれかを入力します。 |MS=ms *XXXXXXXX* **注:** これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |**Priority** には、メール フローに使われる MX レコードとの競合を避けるために、既存の MX レコードよりも低い優先度を指定します。 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。 |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 |
    
 ### <a name="save-the-record"></a>レコードを保存する
 
@@ -110,13 +109,12 @@ Microsoft 365 で正しい TXT レコードが見つかった場合、ドメイ�
 1. ドメインレジストラーの Web サイトで、ドメインのネームサーバーまたはカスタム ネームサーバーを使用できる領域を変更できます。
     
 2. ネーム サーバー レコードを作成するか、既存のネーム サーバー レコードを編集して、次の値に一致します。
-    
-|||
-|:-----|:-----|
-|1 番目のネーム サーバー  <br/> |ns1.bdm.microsoftonline.com  <br/> |
-|2 番目のネーム サーバー  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|3 番目のネームサーバー  <br/> |ns3.bdm.microsoftonline.com  <br/> |
-|4 番目のネームサーバー  <br/> |ns4.bdm.microsoftonline.com  <br/> |
+
+    - ファースト ネーム サーバー: ns1.bdm.microsoftonline.com
+    - 2 番目のネーム サーバー: ns2.bdm.microsoftonline.com
+    - サード ネーム サーバー: ns3.bdm.microsoftonline.com
+    - 4 番目のネーム サーバー: ns4.bdm.microsoftonline.com
+      
    
    > [!TIP]
    > 4 つのレコードすべてが追加されるのが最善ですが、レジストラーが 2 つのみサポートしている場合は、ns1.bdm.microsoftonline.com **を****追加** ns2.bdm.microsoftonline.com。 
@@ -133,12 +131,10 @@ Microsoft 365 で正しい TXT レコードが見つかった場合、ドメイ�
 1. ドメイン レジストラーの Web サイトで、ドメインのネーム サーバーを編集できる場所を見つけます。
     
 2. 2 つのネーム サーバー レコードを作成するか、既存のネーム サーバー レコードを編集して、次の値に一致します。
+
+   - ファースト ネーム サーバー: ns1.dns.partner.microsoftonline.cn
+   - 2 番目のネーム サーバー: ns2.dns.partner.microsoftonline.cn
     
-|||
-|:-----|:-----|
-|1 番目のネーム サーバー  <br/> |ns1.dns.partner.microsoftonline.cn  <br/> |
-|2 番目のネーム サーバー  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
-   
    > [!TIP]
    > 少なくとも 2 つのネーム サーバー レコードを使用する必要があります。 その他のネームサーバーが一覧表示されている場合は、それらを削除するか、または名前を **[ns3.dns.partner.microsoftonline.cn]** **ns4.dns.partner.microsoftonline.cn。** 
   
@@ -184,7 +180,7 @@ Microsoft 365 で正しい TXT レコードが見つかった場合、ドメイ�
 4.  [ホスト名 **] または [エイリアス] ボックスに****「www」と入力します**。
 5.  [ポイント **先アドレス] ボックス** に、Web サイトの完全修飾ドメイン名 (FQDN) を入力します。 たとえば **contoso.com** です。
 6.  レコードの TTL 設定を変更する場合は **、TTL** ドロップダウン リストから新しい時間を選択します。 それ以外の場合は、手順 6 に進みます。
-7.  **[保存]** を選択します。
+7.  [**保存**] を選択します。
 
 ネームサーバー レコードが更新され、Microsoft をポイントすると、ドメインのセットアップが完了します。 メールは Microsoft にルーティングされ、Web サイトアドレスへのトラフィックは現在の Web サイトのホストに引き続き送信されます。
     

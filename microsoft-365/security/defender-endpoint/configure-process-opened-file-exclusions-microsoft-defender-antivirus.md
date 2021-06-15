@@ -4,27 +4,25 @@ description: 特定のプロセスでファイルを開いている場合は、�
 keywords: Microsoft Defender ウイルス対策、プロセス、除外、ファイル、スキャン
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 2fdc646cf616ff6a6fa36a83be3d2b1dd0432fbe
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 0470f4f03ba5fd6fc768a1e652f51b8c44207107
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274618"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925557"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>プロセスによって開いたファイルの除外を構成する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用対象:**
@@ -82,7 +80,7 @@ PowerShell コマンドレットと WMI を使用して、リストの確認な�
     2. [オプション] **セクションで** 、[ **表示.... をクリックします**。
     3. [値名] 列の下に、各プロセス **を独自の行に入力** します。 さまざまな種類のプロセスの除外については、例の表を参照してください。  すべての **プロセスの [** 値] **列に 0** を入力します。
 
-5. [**OK**] をクリックします。
+5. **[OK]** をクリックします。
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>PowerShell コマンドレットを使用して、指定したプロセスで開いたファイルをスキャンから除外する
 
@@ -184,7 +182,7 @@ $WDAVprefs.ExclusionProcess
 
 PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [カスタム スキャンで除外を構成Microsoft Defender ウイルス対策する](configure-exclusions-microsoft-defender-antivirus.md)
 - [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)

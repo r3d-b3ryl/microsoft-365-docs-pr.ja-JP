@@ -8,20 +8,20 @@ search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 26b88b8677c27a5d6615776a371326e37034afd4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: abb656586d6a7bd779b109fcad3c777016fef980
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275038"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926057"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>保護更新プログラムをダウンロードして適用するスケジュールを管理する
 
@@ -69,9 +69,9 @@ Microsoft Defender ウイルス対策では、更新プログラムを探して�
 
 5.  ツリーを展開して **、[署名インテリジェンスWindows更新** Microsoft Defender ウイルス対策  >    >  **コンポーネントを追加し**、次の設定を構成します。
 
-    1. [セキュリティ インテリジェンスの更新 **プログラム** を確認する週の日を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムを確認する週の日を入力します。 [**OK**] をクリックします。
-    2. [セキュリティ インテリジェンスの更新 **プログラム** を確認する間隔を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新間の時間数を入力します。 [**OK**] をクリックします。
-    3. [セキュリティ インテリジェンスの更新 **プログラム** を確認する時間を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムをチェックする時刻を入力します。 時刻は、エンドポイントのローカル時刻に基づいて行います。 [**OK**] をクリックします。
+    1. [セキュリティ インテリジェンスの更新 **プログラム** を確認する週の日を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムを確認する週の日を入力します。 **[OK]** をクリックします。
+    2. [セキュリティ インテリジェンスの更新 **プログラム** を確認する間隔を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新間の時間数を入力します。 **[OK]** をクリックします。
+    3. [セキュリティ インテリジェンスの更新 **プログラム** を確認する時間を指定する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 更新プログラムをチェックする時刻を入力します。 時刻は、エンドポイントのローカル時刻に基づいて行います。 **[OK]** をクリックします。
 
 
 ## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a>PowerShell コマンドレットを使用して保護更新プログラムをスケジュールする
@@ -100,7 +100,7 @@ SignatureUpdateInterval
 - [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)
 - [更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する](manage-updates-baselines-microsoft-defender-antivirus.md)

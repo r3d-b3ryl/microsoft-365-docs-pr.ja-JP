@@ -11,13 +11,14 @@ author: dansimp
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
+ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eb7043451c4d80e3eca8b0703703ac6d7a459161
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: ec5cd489cae21b9140463d4ede72813ec014b3bb
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302090"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926357"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法
 
@@ -108,7 +109,7 @@ USB ドライブや他の周辺機器のインストールと使用を許可す�
 
 デバイス ID を検索するには、「デバイス [ID を検索する」を参照してください](#look-up-device-id)。 
 
-次に例を示します。
+例:
 
 1. これらのデバイスのセットアップに一致するドライバーを使用してデバイスのインストールを許可するからクラス USBDevice **を削除します**。
 2. [これらのデバイス ID に一致するデバイスのインストールを許可する] で、許可するデバイス **ID を追加します**。 
@@ -171,7 +172,7 @@ Select-Object -Property *
 
 ### <a name="block-installation-and-usage-of-removable-storage"></a>リムーバブル 記憶域のインストールと使用をブロックする
 
-1. 管理者センターに[サインインMicrosoft エンドポイント マネージャーします](https://endpoint.microsoft.com/)。
+1. Microsoft エンドポイント マネージャー管理センター
 
 2. [デバイス **構成**  >  **プロファイル] [プロファイル**  >  **の作成] をクリックします**。
 

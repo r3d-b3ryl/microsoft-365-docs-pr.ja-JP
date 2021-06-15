@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: この記事では、ネットワーク接続の監視と維持に使用できるツールとMicrosoft 365します。
-ms.openlocfilehash: dfba158085e6642856049d7894b4156f42353236
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8fa0820cf9b7778001be5184041e5c96930a29dd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538809"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924201"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Microsoft 365 の接続を監視する
 
@@ -33,7 +33,7 @@ ms.locfileid: "52538809"
   
 ## <a name="monitoring-microsoft-365-connectivity"></a>監視Microsoft 365接続
 
-|||
+|監視の種類 |説明 |
 |:-----|:-----|
 |**新しいエンドポイントの通知Microsoft 365する** <br/> |[Microsoft 365 エンドポイント[](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)を管理している場合は、新しいエンドポイントを発行するときに通知を受信する必要があります。お気に入りの RSS リーダーを使用して RSS フィードを購読できます。 以下に、RSS フィード[の更新](https://go.microsoft.com/fwlink/p/?LinkId=532416)Outlookメールで送信する方法[を示します](https://go.microsoft.com/fwlink/p/?LinkId=532417)。  <br/> |
 |**[監視System Centerを使用Microsoft 365** <br/> |Microsoft System Centerを使用している場合は、System Center管理パックをダウンロード[して](https://www.microsoft.com/download/details.aspx?id=43708)、Office 365をMicrosoft 365できます。 詳細なガイダンスについては、管理パックの運用ガイドを参照してください。 <br/> |

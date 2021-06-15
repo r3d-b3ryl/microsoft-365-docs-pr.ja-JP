@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: ストレージとファイル共有をOneDrive共有するために、Microsoft 365サイトとチーム Microsoft 365する方法について学習します。
-ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3ededbf2899ffd45915ad25370d5e5c93906c862
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635644"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924613"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>ファイルストレージと共有を設定する方法は、Microsoft 365
 
@@ -56,12 +56,12 @@ ms.locfileid: "52635644"
   
 ![製品がユーザーまたはチーム サイトMicrosoft 365する方法をOneDrive図](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
-サイトとチーム サイトを一緒に使用する場合に、各場所にOneDrive推奨事項を次に示します。
+サイトとチーム サイトを一緒に使用する場合に、各場所にOneDrive推奨事項を次に示します。<br/>
+
   
-||||
+|ストレージの場所|何のために|保存するファイル|
 |:-----|:-----|:-----|
-|**保存する場所** <br/> |**目的** <br/> |**保存するファイル** <br/> |
-|**OneDrive** <br/> |ファイルにコンテンツをOneDriveは、コンピューターにファイルを保存する場合と同じ方法です。他の誰も簡単にアクセスできます。  <br/> 詳細については、「What [is is OneDrive for Business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |他のチーム メンバーが定期的に共同作業を行ったり、アクセスしたりする必要がないビジネス ファイル。  <br/> |
+|**OneDrive** |ファイルにコンテンツをOneDriveは、コンピューターにファイルを保存する場合と同じ方法です。他の誰も簡単にアクセスできます。<br/> 詳細については、「What [is is OneDrive for Business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |他のチーム メンバーが定期的に共同作業を行ったり、アクセスしたりする必要がないビジネス ファイル。<br/> |
 |**SharePoint チーム サイト** <br/> |コラボレーション。 Microsoft 365 グループ (Microsoft 365 管理センター、Outlook、Microsoft Teams でチームを作成するなど) を作成すると、そのグループに対して SharePoint チーム サイトが作成されます。 同様に、SharePoint ホーム ページまたは新しい SharePoint 管理センターから新しい SharePoint チーム サイトを作成すると、Microsoft 365 グループも作成されます。 詳細については、「チーム サイトとは[SharePointオンライン](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)でチーム サイトを作成する[」をSharePointしてください](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)。  <br/> |共有所有権を持つファイル。 組織内の作業単位ごとにチーム サイトを分けすることをお勧めします。 たとえば、人員と財務ドキュメントを小さなチームに非公開にするには、別のチーム サイトを作成します。  <br/> |
 
 > [!NOTE]

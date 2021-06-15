@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: メッセージ センター、ターゲット リリース、ロードマップ、ブログ、Microsoft 365を使用して、最新の更新プログラムをCommunity。
-ms.openlocfilehash: bfe9ec620e846fc9733b9272be955257bcc1246a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d37680c4c0036f6e27619a09954d0776ca071e9e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580908"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924601"
 ---
 # <a name="stay-on-top-of-changes"></a>変更内容の最新情報を把握する
 
@@ -33,9 +33,8 @@ ms.locfileid: "51580908"
 
 ## <a name="stay-on-top-of-microsoft-365-changes"></a>常に Microsoft 365 の最新情報を確認する
 
-||||
+|機能|説明|使用方法|
 |:-----|:-----|:-----|
-|**機能** <br/> |**説明** <br/> |**使用方法** <br/> |
 |**メッセージ センター** <br/> |正式なサービスのお知らせと機能の変更について学ぶ。 これらのメッセージは、Microsoft 365管理センター、管理者モバイル アプリで読み取る、または電子メールで毎週ダイジェストを受信できます。 他のユーザーが行動する必要があるメッセージが表示されたときに、これらのメッセージを組織内の他のユーザーと共有します。 また、サービスの通信 API を使用して、メッセージを取得することもできます。  <br/> |Sign in to the [admin center](../admin-overview/about-the-admin-center.md) or [admin mobile app](../admin-overview/admin-mobile-app.md). [正常性 **メッセージ** \> **センター] を選択します**。 Select a message to read or share.  <br/> 管理センターで [基本設定の編集] を選択して、メッセージに関するメッセージまたはオプトインするサービスを週次ダイジェストに変更します。 また、週ごとのダイジェストをオプトアウトできます。  <br/> [メッセージ センター Microsoft 365概要](message-center.md) <br/> |
 |**対象指定リリース** <br/> |対象指定リリースにサインインし、組織の個人のグループを選びます。 すべてのユーザーの前Microsoft 365最新の更新プログラムを取得し、新しいエクスペリエンスについてユーザーに通知またはトレーニングします。  <br/> |Sign in to the [admin center](../admin-overview/about-the-admin-center.md) or [admin mobile app](../admin-overview/admin-mobile-app.md). Selece **設定** \> **組織プロファイル リリース** \> **の基本設定**. Learn more about [Targeted release](release-options-in-office-365.md).  <br/> |
 |**ロードマップ** <br/> |リリース済みMicrosoft 365、展開中、開発中、キャンセル済み、または以前にリリースされた機能については、「ロードマップ」を参照してください。 ロードマップは、更新および変更のMicrosoft 365サイトです。  <br/> |詳細については、「Microsoft 365[ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)」を参照し、計画されている更新プログラムとリリースについて説明します。  <br/> |

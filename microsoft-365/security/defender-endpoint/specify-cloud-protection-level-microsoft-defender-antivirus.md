@@ -7,7 +7,8 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.date: 10/26/2020
@@ -15,13 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: f441b1bd444cd70fb5b00dfcb5ebcddadf62b220
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fb4dd3114c411385f1a38cf7b0fd391a1b159b99
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274906"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924473"
 ---
 # <a name="specify-the-cloud-delivered-protection-level"></a>クラウドによる保護レベルを指定する
 
@@ -82,14 +82,14 @@ ms.locfileid: "52274906"
     > [!WARNING]
     > このスイッチを High またはHigh **+** に設定すると、一部の正当なファイルが検出される可能性があります (ただし、その検出のブロックを解除または争うオプションがあります)。
 
-6. [**OK**] をクリックします。
+6. **[OK]** をクリックします。
 
 7. 更新されたグループ ポリシー オブジェクトを展開します。 「 [グループ ポリシー管理コンソール」を参照してください。](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
 > オンプレミスでグループ ポリシー オブジェクトを使用していますか? クラウドでの翻訳方法を確認します。 [[プレビュー] でグループ ポリシー分析を使用して、オンプレミスのグループ ポリシー Microsoft エンドポイント マネージャーを分析します](/mem/intune/configuration/group-policy-analytics)。 
   
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md)

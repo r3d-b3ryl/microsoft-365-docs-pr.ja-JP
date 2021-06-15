@@ -7,6 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: normal
+ms.topic: article
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
@@ -14,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3fcc79e767edb533a20402a2f92ba4abc7d8386a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 3eb4d01957383efc8df47e9fee6eb6394c80015a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764593"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924385"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 
@@ -50,7 +51,7 @@ ms.locfileid: "51764593"
 
  イベント ID | ログ名 | 説明 | ソース
 -|-|-|-
-15  | アプリケーション | 更新されたWindows Defender状態が正常に更新SECURITY_PRODUCT_STATE_OFF。 | セキュリティ センター
+15 | アプリケーション | 更新されたWindows Defender状態が正常に更新SECURITY_PRODUCT_STATE_OFF。 | セキュリティ センター
 5007 | Microsoft-Windows-Windows Defender/運用 | Windows Defender ウイルス対策構成が変更されました。  予期しないイベントの場合は、マルウェアの結果である可能性がある設定を確認する必要があります。<br /><br />**古い値:** Default\IsServiceRunning = 0x0<br />**新しい値:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1 | Windows Defender
 5010 | Microsoft-Windows-Windows Defender/運用 | Windows Defender ウイルス対策その他の望ましくない可能性のあるソフトウェアのスキャンが無効になります。 | Windows Defender
 
@@ -100,7 +101,7 @@ DisableAntiSpyware | -
 GPO を獲得する | Win10-Workstations
 結果: 成功 | 
 **全般** | 
-Action | Update
+アクション | Update
 **プロパティ** | 
 ハイブ | HKEY_LOCAL_MACHINE
 キー パス | SOFTWARE\Policies\Microsoft\Windows Defender

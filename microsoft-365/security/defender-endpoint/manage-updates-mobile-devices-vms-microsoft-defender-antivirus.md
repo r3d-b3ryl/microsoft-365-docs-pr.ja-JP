@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 143b0cb4bac1d3307e440f98fa4278f38e07c7f2
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 809f4573c91f7f1882693cbd8c63d88b06b55c67
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269542"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926009"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する
 
@@ -98,7 +98,7 @@ PC が有線Microsoft Defender ウイルス対策接続されている場合に�
 
 この操作により、PC がバッテリ電源をオンにしている場合に保護更新プログラムがダウンロードされなかから保護されます。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [更新し、Microsoft Defender ウイルス対策のWindows 10](deploy-manage-report-microsoft-defender-antivirus.md)

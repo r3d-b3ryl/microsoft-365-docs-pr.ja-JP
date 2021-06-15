@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: グループ メンバーがグループとして電子メールを送信したり、Microsoft 365グループに代わって電子メールを送信Microsoft 365する方法についてMicrosoft 365します。
-ms.openlocfilehash: 07db8f415da46e6235c051e262237de79e61c8b9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 437040700361c6a09b107a87d8228d2a156375d1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538257"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926141"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>グループの代理として送信または送信するメンバーを許可する
 
@@ -77,7 +77,7 @@ Send **as** または send onhalf permissions が付与されているMicrosoft 
     
     ![リストからユーザーを検索または選択する入力](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

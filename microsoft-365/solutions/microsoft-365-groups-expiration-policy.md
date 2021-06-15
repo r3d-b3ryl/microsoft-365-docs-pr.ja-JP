@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: グループのMicrosoft 365ポリシーについて説明します。
-ms.openlocfilehash: 90807d6c178061804e64db4440af42050a1d8e77
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a5a57591e1659cf04b46f419bda3d3bca672729c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530852"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925925"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365有効期限ポリシー
 
@@ -51,7 +51,7 @@ ms.locfileid: "52530852"
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Whoグループの有効期限ポリシーを構成Microsoft 365使用できますか?
 
-|役割|実行できる操作|
+|ロール|実行できる操作|
 |---------|---------|
 |Office 365管理者 (Azure、会社管理者)、ユーザー管理者|有効期限ポリシー設定を作成、読み取り、更新Microsoft 365削除します。|
 |User|自分が[所有するMicrosoft 365](/azure/active-directory/users-groups-roles/groups-restore-deleted)グループを更新または復元する|
