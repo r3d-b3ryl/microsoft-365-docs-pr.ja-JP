@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 ms.date: ''
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: PowerShell を使用して、Microsoft 365 コンプライアンス センターとは別に、コマンド ラインから保持ラベルを作成および発行する方法について説明します。
-ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918223"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924965"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>PowerShell を使用して保持ラベルを作成および発行する
 
@@ -43,7 +44,7 @@ Microsoft 365 のドキュメントやメールを保持または削除するた
   
 ## <a name="disclaimer"></a>免責事項
 
-この記事で提供されるサンプル スクリプトは、Microsoft のいかなる標準サポート プログラムまたはサービスの下でもサポートされません。 サンプル スクリプトは現状のまま提供され、いかなる保証も伴いません。 さらに、Microsoft は、商品性、特定目的への適合性を含む一切の黙示の保証をいたしかねます。 本サンプル スクリプトおよびドキュメントの使用または性能に起因するすべてのリスクは、お客様が負うものとします。 サンプル スクリプトおよびドキュメントを使用したこと、または使用できなかったことに伴って生じるいかなる損害 (業務利益の損失、業務の中断、業務情報の損失、金銭上の損失、その他一切の損害) についても、Microsoft、Microsoft に帰属する作者、スクリプトの作成、製造、または納入に関与したその他のすべての人員は、いかなる場合も責めを負わないものとします。
+この記事で提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。
   
 ## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>手順 1: 保持ラベル用の .csv ファイルを作成する
 

@@ -19,12 +19,12 @@ description: 組織の SIEM サーバーを Microsoft Defender と統合して�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca8f86c831df16568ae569e7b21c7e0a33475948
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: f3d6bbacb4a64060ecd03cbb28eee3256f41827e
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205176"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929781"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM との Microsoft Defender との統合 (Office 365
 
@@ -67,7 +67,7 @@ SIEM サーバーまたは他の同様のシステムは **、audit.general** �
 |
 
 > [!IMPORTANT]
-> Microsoft Defender for microsoft Defender との SIEM 統合をセットアップするには、グローバル管理者またはセキュリティ & コンプライアンス センターにセキュリティ管理者の役割が割り当てられている必要Office 365。
+> Microsoft Defender との SIEM 統合をセットアップするには、グローバル管理者またはセキュリティ管理者の役割が Microsoft 365 Defender ポータルに割り当てられている必要Office 365。
 >
 > 監査ログは、ユーザーの環境Microsoft 365する必要があります。 このヘルプを表示するには、「監査ログ検索 [を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 

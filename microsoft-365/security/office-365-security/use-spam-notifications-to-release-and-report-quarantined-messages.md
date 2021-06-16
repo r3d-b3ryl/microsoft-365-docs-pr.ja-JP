@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、検疫済みメッセージ (EOP) で検疫されたメッセージに対するエンド Exchange Online Protectionについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f5eafbb51cd0ff32c69fa0cff85729ef95d3d1f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 30f82abc245a2f6022bd1a75b57e9d20e3e32a32
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274990"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929889"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>ユーザーのスパム通知を使用して検疫済みメッセージを解放および報告する
 
@@ -58,9 +58,9 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 - **[送信者のブロック**] : このリンクをクリックして、メールボックスの [受信拒否] リストに送信者を追加します。 詳細については、「[メール送信者をブロックする](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)」を参照してください。
 
-- **リリース**: スパム (フィッシングではない) メッセージの場合は、[セキュリティ とコンプライアンス センターの検疫] に移動せずに、ここで&できます。
+- **リリース**: スパム (フィッシングではない) メッセージの場合は、Defender ポータルの [検疫] に移動せずに、ここでMicrosoft 365できます。
 
-- **レビュー**: このリンクをクリックすると、セキュリティ & コンプライアンス センターの [検疫] に移動し、検疫済みメッセージの表示、リリース、削除、または報告が可能です (メッセージが検疫された理由に応じて)。 詳細については、「EOP で検疫済みメッセージをユーザーとして検索して解放する [」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
+- **レビュー**: このリンクをクリックすると、Microsoft 365 Defender ポータルの [検疫] に移動し、検疫済みメッセージの表示、リリース、削除、レポートを実行できます (メッセージが検疫された理由に応じて)。 詳細については、「EOP で検疫済みメッセージをユーザーとして検索して解放する [」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
 
 ![エンド ユーザーのスパム通知の例](../../media/end-user-spam-notification.png)
 

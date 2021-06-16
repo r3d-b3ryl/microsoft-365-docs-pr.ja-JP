@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4337b29e0718e23f43b441526232ec6ef66be1d
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 4827ce149632d0e37dbe9c3dc5fc8325dbfa8afa
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879206"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929877"
 ---
 # <a name="user-submissions-policy"></a>ユーザー申請ポリシー
 
@@ -56,21 +56,21 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
 
 - カスタム メールボックス内のメッセージの URL スキャンを無効にします。 [[Defender for Office 365](set-up-safe-links-policies.md)で セーフ リンク ポリシーを設定する] を使用して、[メッセージ内の不明な潜在的に悪意のある URL のアクションを選択する] の設定を [オフ] に設定して セーフ リンク ポリシーを作成 **します**。
 
-- マルウェアゼロ時間自動削除を無効にするマルウェア対策ポリシーを作成します。 「Use [the Security & コンプライアンス](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) センター」を参照してマルウェア対策ポリシーを作成し、[マルウェアゼロ時間 **自動削除** ] を [オフ] に **設定します**。
+- マルウェアゼロ時間自動削除を無効にするマルウェア対策ポリシーを作成します。 「[マルウェアゼロMicrosoft 365をオフ](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)に設定するには、スパム対策ポリシーを作成するには、Defender ポータルを使用する **」を** 参照 **してください**。
 
-- スパム フィルター ポリシーを作成して、カスタム メールボックス内のスパムとフィッシングのゼロ時間自動削除 (ZAP) を無効にします。 「Use [the Security & コンプライアンス](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)センター」を参照してスパム対策ポリシーを作成し、[スパム ZAP とフィッシング **ZAP** のオン] チェック ボックス **をオフにします**。
+- スパム フィルター ポリシーを作成して、カスタム メールボックス内のスパムとフィッシングのゼロ時間自動削除 (ZAP) を無効にします。 「[スパム対策Microsoft 365 Defender](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)ポータルを使用してスパム対策ポリシーを作成し、スパムZAP とフィッシング **ZAP** の [オン] チェック ボックスを **オフにする」を参照してください**。
 
 - カスタム メールボックスで迷惑メール ルールを無効にします。 迷惑[メール ルールを無効にするには、Exchange Onlineの](configure-junk-email-settings-on-exo-mailboxes.md)迷惑メール設定を構成するを使用します。 無効にすると、EOP はスパム フィルターの評決アクションに基づいてメッセージを迷惑メール フォルダーに移動できません **メッセージ** を迷惑メール フォルダーまたはメールボックスのセーフリスト コレクションに移動します。
 
-メールボックスが適用可能なすべての前提条件を満たしていることを確認した後、セキュリティ & コンプライアンス センターを使用してユーザー申請 [メールボックスを構成](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) します (この記事)。
+メールボックスが適用可能なすべての前提条件を満たしていることを確認した後、「Microsoft 365 Defender ポータルを使用してユーザー申請メールボックスを構成する」で[指定された手順を実装します](#use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [ユーザー申請] ページに **直接移動するには** 、 を使用します <https://protection.office.com/userSubmissionsReportMessage> 。
+- <https://security.microsoft.com/> で Microsoft 365 Defender ポータルを開きます。 [申請] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/reportsubmission> 。
 
 - ユーザー申請の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
 
-  - **組織の管理** または [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の **セキュリティ管理者**。
+  - **Defender ポータル** の **組織** の管理 [またはセキュリティMicrosoft 365管理者です](permissions-in-the-security-and-compliance-center.md)。
   - **[組織の** 管理] [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)。
 
 - PowerShell へのアクセスExchange Online必要です。 使用しようとしているアカウントが Exchange Online PowerShell にアクセスできない場合は、申請メールボックスを指定すると、次のようなエラー メッセージが表示されます。
@@ -82,9 +82,9 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
   - [Exchange Online PowerShell へのアクセスを有効または無効にする](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [クライアント アクセス ルール (Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>コンプライアンス センターのセキュリティ &を使用して、ユーザー申請メールボックスを構成する
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Defender ポータルMicrosoft 365を使用してユーザー申請メールボックスを構成する
 
-1. セキュリティ 管理コンプライアンス センター&、脅威管理ポリシー \> **の [ユーザー** の申請 \> **] に移動します**。
+1. Defender ポータルMicrosoft 365に移動し、[ポリシー]  &脅威ポリシー ユーザーが報告したメッセージ設定 \>  \>  \> **[ユーザーの申請] に移動します**。
 
 2. 表示される **[ユーザーの申請]** ページで、次のいずれかのオプションを選択します。
 

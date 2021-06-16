@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender を使用している組織で利用可能な高度なフィッシング対策ポリシーを作成、変更、および削除する方法をOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8337e25fb6328a2492e2e033e80efcdee8352f6f
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: c5810439a7ed3177949d2c0c8a4551f4515ce72c
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878930"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933145"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender でフィッシング対策ポリシーを構成Office 365
 
@@ -61,7 +61,7 @@ Office 365 の Defender でのフィッシング対策保護の有効性を高�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- Defender ポータルのMicrosoft 365開きます <https://security.microsoft.com> 。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -296,7 +296,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
 既定では、フィッシング対策ポリシーには、作成された順序に基づく優先度が与えられる (新しいポリシーは、以前のポリシーよりも優先度が低くなります)。 優先度番号が小さいほど、ポリシーの優先度が高くなる (0 が最優先) ことを意味し、ポリシーは優先順位に従って処理されます (優先度の高いポリシーは、優先度の低いポリシーよりも先に処理されます)。 2つのポリシーが同じ優先順位を持つことはできません。最初のポリシーが適用されると、ポリシーの処理は停止します。
 
-ポリシーの優先度を変更するには、ポリシーのプロパティで [優先度の引き上げ] または [優先度の下げ]をクリックします (Microsoft 365 Defender ポータルの優先度番号を直接変更することはできません)。  ポリシーの優先度を変更することは、複数のポリシーを所有している場合にのみ意味があります。
+ポリシーの優先度を変更するには、ポリシーのプロパティで **[優先度を上げる]** または **[優先度を下げる]** をクリックします (Microsoft 365 Defender ポータルの **[優先度]** の数値を直接変更することはできません)。 ポリシーの優先度を変更することは、複数のポリシーを所有している場合にのみ意味があります。
 
  **注意**:
 
@@ -308,9 +308,9 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 2. [フィッシング **対策] ページで** 、名前をクリックしてリストからカスタム ポリシーを選択します。
 
 3. 表示されるポリシーの詳細ポップアップの上部には、現在の優先度の値とカスタム ポリシーの数に基づいて、**[優先度を上げる]** または **[優先度を下げる]** が表示されます。
-   - 優先度の値が **0** のフィッシング対策ポリシーには、[優先度の下がり]**オプション** しか使用できません。
-   - 優先度の値が最も低いフィッシング対策ポリシー (**たとえば、3)** には、[優先度の引き上げ]**オプション** しか使用できません。
-   - 3 つ以上のフィッシング対策ポリシーがある場合、優先度の高い値と最も低い優先度の値の間のポリシーには、[優先度の引き上げ] オプションと [優先度の下 **げ]** の両方 **のオプションがあります** 。
+   - 優先度の値が **0** **のポリシー** には、[優先度を下にする]**オプションしか** 使用できません。
+   - 優先度の値が最も **低い** ポリシー ( **たとえば、3)** には、[優先度の引き上げ] **オプション** しか使用できません。
+   - 3 つ以上のポリシーがある場合、優先度の高い値と最も低い優先度の値の間のポリシーには、[優先度の引き上げ] オプションと [優先度の下 **げ]** の両方 **のオプションがあります** 。
 
    ![[優先度を上げる] アイコン](../../media/m365-cc-sc-increase-icon.png)、**[優先度を上げる]** の順にクリックするか、または ![[優先度を下げる] アイコン](../../media/m365-cc-sc-decrease-icon.png)、**[優先度を下げる]** の順にクリックして、**優先度** 値を変更します。
 

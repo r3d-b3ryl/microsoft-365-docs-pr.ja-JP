@@ -22,18 +22,24 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Office 365 の展開を計画するときに使用する外部ドメインネームシステムレコードの参照リスト。
-ms.openlocfilehash: 3aa6bf3362005eb0dae5bca40322fe2178d5d69f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2cbbbcb6105feccdaed1f7b6ce05a84b374024c0
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051380"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926265"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 の外部ドメイン ネーム システムのレコード
 
-|||
-|:-----|:-----|
-|![ドメイン](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Office 365 組織のカスタマイズされた DNS レコードのリストを表示するには** Office 365 のドメイン用に [Office 365 DNS レコードを作成するために必要な情報を見つける](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)ことができます。<br/> **GoDaddy や eNom などのドメインの DNS ホストでこれらのレコードを追加するための手順が必要な場合** [多くの一般的な DNS ホストでの詳しい操作手順へのリンクをご覧ください](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。 <br/>  **そのまま残って自分のカスタムの展開用のリファレンス リストを使用する場合** 以下のリストは、Office 365 のカスタム展開用のリファレンスとして使用されます。組織に適用するレコードを選択して、適切な値を入力する必要があります。 <br/> 「[Office 365 のネットワーク計画とパフォーマンス チューニング](./network-planning-and-performance.md)」**に戻ります**。  <br/> |
+![ドメイン](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
+
+**Office 365 組織のカスタマイズされた DNS レコードのリストを表示するには** Office 365 のドメイン用に [Office 365 DNS レコードを作成するために必要な情報を見つける](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)ことができます。
+
+**GoDaddy や eNom などのドメインの DNS ホストでこれらのレコードを追加するための手順が必要な場合** [多くの一般的な DNS ホストでの詳しい操作手順へのリンクをご覧ください](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。 
+
+**そのまま残って自分のカスタムの展開用のリファレンス リストを使用する場合** 以下のリストは、Office 365 のカスタム展開用のリファレンスとして使用されます。組織に適用するレコードを選択して、適切な値を入力する必要があります。 
+
+「[Office 365 のネットワーク計画とパフォーマンス チューニング](./network-planning-and-performance.md)」**に戻ります**。
 
 SPF と MX レコードは、見つけ出すのが最も困難です。この記事の最後にある、SPF レコードのガイダンスを更新しました。重要なのは、_ドメインに対して持つことができる SPF レコードは 1 つである_ ということです。MX レコードは複数持つことができますが、メール配信の際に問題を引き起こす場合があります。MX レコードを 1 つにし、メールを 1 つのメール システムに配信することで、多くの問題を回避できます。
   
@@ -44,9 +50,8 @@ SPF と MX レコードは、見つけ出すのが最も困難です。この記
 
 すべての Office 365 のお客様は、外部の DNS に 2 つのレコードを追加する必要があります。最初の CNAME レコードは、Office 365 がワークステーションに適切な ID プラットフォームで認証を行うよう指定できるようにします。2 番目の必須レコードは、ドメイン名を所有していることを証明します。
   
-||||
-|:-----|:-----|:-----|
 |**DNS レコード** <br/> |**用途** <br/> |**使用する値** <br/> |
+|----------|-----------|------------|
 |**CNAME** <br/> **(スイート)** <br/> |正しい ID プラットフォームへの認証を指示するために Office 365 で使用されます。[詳細情報](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **注:** この CNAME は、21Vianet が運営する Office 365 にのみ適用されます。 [詳細情報](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**エイリアス:** msoid  <br/> **対象:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(ドメインの確認)** <br/> |このレコードは、ドメインを所有していることを確認するためだけに Office 365 で使用されます。他のものには影響しません。  <br/> |**ホスト:** @ (または、一部の DNS ホスティング プロバイダーでは自分のドメイン名)  <br/> **TXT 値:** Office 365 "_から提供されるテキスト文字列_"  <br/> このレコードを作成するために使用する値は、Office 365 の **ドメイン セットアップ ウィザード** で指定されます。  <br/> |
 
@@ -65,9 +70,8 @@ Office 365 でのメールには、複数の異なるレコードが必要です
 
 Exchange フェデレーションを使用しているメールのお客様は、表の一番下に一覧表示されている追加の CNAME および TXT レコードも必要です。
   
-||||
-|:-----|:-----|:-----|
 |**DNS レコード** <br/> |**用途** <br/> |**使用する値** <br/> |
+|----------|-----------|------------|
 |**CNAME** <br/> **(Exchange Online)** <br/> |このレコードを使用すると、Outlook クライアントが自動検出サービスを使用して Exchange Online サービスに簡単に接続できます。自動検出は、正しい Exchange Server ホストを自動的に検出し、ユーザーの Outlook を構成します。  <br/> |**エイリアス:** Autodiscover  <br/> **リンク先:** autodiscover.outlook.com  <br/> |
 |**MX** <br/> **(Exchange Online)** <br/> |ドメインへの受信メールを Office 365 の Exchange Online サービスへ送信します。  <br/> [!NOTE] 電子メールが Exchange Online に流れたら、古いシステムを指定している MX レコードを削除する必要があります。   |**ドメイン:** 例: contoso.com  <br/> **対象メール サーバー:**\<MX token\>.mail.protection.outlook.com  <br/> **優先度:** その他すべての MX レコードより下 (これにより、メールが Exchange Online に確実に配信されます) - 例: 1 または "low"  <br/>  次の手順に従って \<MX token\> を検索します:  <br/>  Office 365 にサインインし、[Office 365 管理] \> [ドメイン] に移動します。  <br/>  ドメインの [アクション] 列で [問題の修正] を選択します。  <br/>  [MX レコード] セクションで、[何を修正しますか?] を選択します。  <br/>  MX レコードを更新するには、このページに表示される指示に従います。  <br/> [MX 優先度とは何ですか。](../admin/setup/domains-faq.yml) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |これは、自分のドメインを他人が使用してスパムなどの悪意のある電子メールを送信するのを防ぐのに役立ちます。Sender policy framework (SPF) レコードは、自分のドメインからメールを送信することを許可されているサーバーを特定することによって動作します。  <br/> |[SPF に必要な外部 DNS レコード](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
@@ -83,9 +87,8 @@ Exchange フェデレーションを使用しているメールのお客様は�
 > [!NOTE]
 > これらの DNS レコードは、特に特定のフェデレーションの問題が発生する可能性のあるハイブリッド Teams と Skype for Business シナリオの Teams にも適用されます。
   
-||||
-|:-----|:-----|:-----|
 |**DNS レコード** <br/> |**用途** <br/> |**使用する値** <br/> |
+|----------|-----------|------------|
 |**SRV** <br/> **(Skype for Business Online)** <br/> |SIP フェデレーションを有効にすることで、Office 365 ドメインが外部クライアントとインスタント メッセージング (IM) 機能を共有することができます。詳しくは、「[Office 365 の URL と IP アドレスの範囲 ](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO)」をご覧ください。<br/> |**サービス:** sipfederationtls  <br/> **プロトコル:** TCP  <br/> **優先度:** 100  <br/> **重み:** 1  <br/> **ポート:** 5061  <br/> **リンク先:** sipfed.online.lync.com  <br/> **注:** ファイアウォールまたはプロキシ サーバーが外部 DNS の SRV ルックアップをブロックする場合、内部 DNS レコードにこのレコードを追加する必要があります。   |
 |**SRV** <br/> **(Skype for Business Online)** <br/> |Lync クライアント間の情報の流れを調整するために Skype for Business で使用します。  <br/> |**サービス:** sip  <br/> **プロトコル:** TLS  <br/> **優先度:** 100  <br/> **重み:** 1  <br/> **ポート:** 443  <br/> **リンク先:** sipdir.online.lync.com  <br/> |
 |**CNAME** <br/> **(Skype for Business Online)** <br/> |Skype for Business Online サービスを見つけてサインインするのを支援するために Lync クライアントで使用します。  <br/> |**エイリアス:** sip  <br/> **リンク先:** sipdir.online.lync.com  <br/> 詳しくは、「[Office 365 URL および IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO)」を参照してください。  <br/> |
@@ -94,16 +97,15 @@ Exchange フェデレーションを使用しているメールのお客様は�
 ## <a name="external-dns-records-required-for-office-365-single-sign-on"></a>Office 365 シングル サインオンに必要な外部 DNS レコード
 <a name="BKMK_ReqdCore"> </a>
 
-||||
-|:-----|:-----|:-----|
 |**DNS レコード** <br/> |**用途** <br/> |**使用する値** <br/> |
+|----------|-----------|------------|
 |**ホスト (A)** <br/> |シングル サインオン (SSO) に使用されます。これによって社外ユーザー (必要に応じて、オンプレミスのユーザー) にエンドポイントを提供し、Active Directory フェデレーション サービス (AD FS)、フェデレーション サーバー プロキシ、または負荷分散仮想 IP (VIP) に接続できるようにします。  <br/> |**対象:** 例: sts.contoso.com  <br/> |
 
 ## <a name="external-dns-records-required-for-spf"></a>SPF に必要な外部 DNS レコード
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
-> SPF はスプーフィングを防止するために設計されていますが、SPF で防御できないスプーフィングの手法があります。これらから保護するために、SPF をセットアップすると、Office 365 用に DKIM と DMARC も構成する必要があります。始めるには「[Use DKIM to validate outbound email sent from your domain in Office 365](../security/defender-365-security/use-dkim-to-validate-outbound-email.md)」をご覧ください。次は、「[Use DMARC to validate email in Office 365](../security/defender-365-security/use-dmarc-to-validate-email.md)」を参照してください。
+> SPF はスプーフィングを防止するために設計されていますが、SPF で防御できないスプーフィングの手法があります。これらから保護するために、SPF をセットアップすると、Office 365 用に DKIM と DMARC も構成する必要があります。始めるには「[Use DKIM to validate outbound email sent from your domain in Office 365](../security/office-365-security/use-dkim-to-validate-outbound-email.md)」をご覧ください。次は、「[Use DMARC to validate email in Office 365](../security/office-365-security/use-dmarc-to-validate-email.md)」を参照してください。
   
 SPF レコードは、他人が自分のドメインを使用してスパムなどの悪意のある電子メールを送信するのを防ぐのに役立つ TXT レコードです。Sender policy framework (SPF) レコードは、自分のドメインからメールを送信することを許可されているサーバーを特定することによって動作します。
   
@@ -118,14 +120,14 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com -all
 ```
 
-ドメインからメールを受信するメール システムは、この SPF レコードを確認し、メッセージを送信したメール サーバーが Office 365 サーバーの場合はメッセージが承認されます。 メッセージを送信したサーバーが古いメールシステムか、インターネット上の悪意のあるシステムだった場合、SPF チェックが失敗し、メッセージが配信されないことがあります。 これにより、スプーフィングやフィッシング メッセージを防ぐことができます。
+ドメインからメールを受信するメール システムは SPF レコードを見て、メッセージを送信したメール サーバーが Office 365 サーバーの場合、メッセージは受け入れられます。古いメール システムまたはインターネット上の悪意のあるシステムがメッセージを送信したサーバーであった場合は、SPF の確認が失敗する可能性があり、メッセージは配信されません。このようなチェックは、スプーフィングとフィッシング メッセージの防止に役立ちます。
   
 ### <a name="choose-the-spf-record-structure-you-need"></a>必要な SPF レコードの構造を選択する
 
 Office 365 に対して Exchange Online メールだけを使用するのではないシナリオの場合は (たとえば、SharePoint Online から送信されたメールも使用する場合)、次の表を使用して、レコードの値に含めるものを決定します。
   
 > [!NOTE]
-> たとえば、ファイアウォール経由のメール トラフィックを管理するためのエッジ メール サーバーを含む複雑なシナリオがある場合、より詳細な SPF レコードをセットアップします。[スプーフィングの防止に役立つ SPF レコードを Office 365 で設定する](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)方法を学習してください。Office 365 での SPF の動作について詳しくは、「[Office 365 が Sender Policy Framework (SPF) を使用してスプーフィングを防止する方法](../security/defender-365-security/how-office-365-uses-spf-to-prevent-spoofing.md)」をご覧ください。
+> たとえば、ファイアウォール経由のメール トラフィックを管理するためのエッジ メール サーバーを含む複雑なシナリオがある場合、より詳細な SPF レコードをセットアップします。[スプーフィングの防止に役立つ SPF レコードを Office 365 で設定する](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)方法を学習してください。Office 365 での SPF の動作について詳しくは、「[Office 365 が Sender Policy Framework (SPF) を使用してスプーフィングを防止する方法](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md)」をご覧ください。
   
 | 番号|使用対象  <br/> |用途  <br/> |以下を追加します。  <br/> |
 |:-----|:-----|:-----|:-----|
@@ -145,7 +147,7 @@ TXT Name @
 Values: v=spf1 ip4:60.200.100.30 include:smtp.adatum.com -all
 ```
 
-Office 365 の SPF レコードを更新します。 現在のレコードを編集して、SPF レコードに必要な値が含まれるようにします。 Office 365 の場合、「spf.protection.outlook.com」。
+Office 365 の SPF レコードを更新します。現在のレコードを編集して、SPF レコードに必要な値が含まれるようにします。Office 365 の場合、"spf.protection.outlook.com"。
   
 正しい:
   
@@ -167,7 +169,7 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 ### <a name="more-examples-of-common-spf-values"></a>一般的な SPF 値の他の例
 <a name="bkmk_addtospf"> </a>
 
-マーケティング メールの代理送信に Office 365 スイートの完全版および MailChimp を使用している場合には、contoso.com の SPF レコードは、次のような形式になります (上の表の 1、3、5 行を使用)。 1、5 行は必須です。
+マーケティング メールの代理送信に Office 365 スイートの完全版および MailChimp を使用している場合には、contoso.com の SPF レコードは、次のような形式になります (上の表の行 1、3、5 を使用)。行 1 と 5 は必須であることに注意してください。
   
 ``` dns
 TXT Name @
@@ -181,6 +183,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-メール用に Office 365 にドメインを追加するときに既存の SPF レコードを採用するのに役立つ一般的な例がいくつかあります。たとえば、ファイアウォール経由のメール トラフィックを管理するためのエッジ メール サーバーを含む複雑なシナリオがある場合、より詳細な SPF レコードをセットアップします。[スプーフィングの防止に役立つ SPF レコードを Office 365 で設定する](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)方法を学習してください。
+メール用に Office 365 にドメインを追加するときに既存の SPF レコードを採用するのに役立つ一般的な例がいくつかあります。たとえば、ファイアウォール経由のメール トラフィックを管理するためのエッジ メール サーバーを含む複雑なシナリオがある場合、より詳細な SPF レコードをセットアップします。[スプーフィングの防止に役立つ SPF レコードを Office 365 で設定する](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)方法を学習してください。
   
 ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/o365edns]()

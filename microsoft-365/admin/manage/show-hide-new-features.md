@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: danbrown
 author: DHB-MSFT
-manager: scotv
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センターの > [Office の新機能] 機能を使用して、ユーザーが Office アプリ の Office アプリ on Windows で [新機能] を選択した場合に表示または非表示にする Office 機能を決定します。
-ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 395038bebda407771802a61ba5aefc350c7c5cd1
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924837"
+ms.locfileid: "52929481"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>新機能にOffice機能を管理する
 

@@ -18,12 +18,12 @@ ms.custom:
 description: セキュリティ情報とイベント管理 (SIEM) サーバーとクラウド サービスとアプリケーションMicrosoft 365概要を確認する
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599949"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929793"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>セキュリティ情報とイベント管理 (SIEM) サーバーとサービスMicrosoft 365アプリケーションとの統合
 
@@ -69,7 +69,7 @@ SIEM サーバーは、さまざまなサービスやアプリケーションか
 
 SIEM サーバー統合を構成する前に、監査ログが有効になっていることを確認してください。
 
-- オンラインSharePoint、OneDrive for Business、Azure Active Directoryの場合は、セキュリティ コンプライアンス センターで監査ログ[&オンにします](../../compliance/turn-audit-log-search-on-or-off.md)。
+- オンラインSharePoint、OneDrive for Business、Azure Active Directoryの場合、監査ログは Defender ポータルMicrosoft 365[オンになります](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 - 詳細については、「Exchange Online監査[の管理」を参照してください](../../compliance/enable-mailbox-auditing.md)。
 

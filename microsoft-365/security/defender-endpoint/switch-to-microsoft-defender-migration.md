@@ -17,29 +17,27 @@ ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
 - m365solution-overview
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 2a2b78089486b432ebf9492de26396b2bb96f94d
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 2953103cb3812103740f98a6db5b8f4d369731e3
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593503"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930309"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint への切り替え
 
-Microsoft 以外のエンドポイント保護から [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) への切り替えについて考えている場合は、適切な場所にいます。 この記事をガイドとして使用します。
+Microsoft 以外のエンドポイント保護ソリューションから [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) への切り替えについて考えている場合は、適切な場所にいます。 この記事をガイドとして使用します。
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Defender for Endpoint への移行の概要":::
 
-Defender for Endpoint に切り替える場合は、Microsoft 以外のソリューションがアクティブ モードで動作し、パッシブ モードで Defender for Endpoint を構成し、Defender for Endpoint にオンボードし、Defender for Endpoint をアクティブ モードに設定してから、Microsoft 以外のソリューションを削除します。
-
-> [!TIP]
-> - 現在 McAfee Endpoint Security (McAfee) を使用している場合は、「Migrate from McAfee to [Defender for Endpoint」を参照してください](mcafee-to-microsoft-defender-migration.md)。
-> - 現在 Symantec Endpoint Protection (Symantec) を使用している場合は、「Migrate from Defender for Endpoint 」[を参照してください](symantec-to-microsoft-defender-endpoint-migration.md)。
+Defender for Endpoint に切り替える場合は、アクティブ モードで動作している Microsoft 以外のソリューションから始まります。 次に、パッシブ モードで Defender for Endpoint を構成し、デバイスを Defender for Endpoint にオンボードします。 次に、Defender for Endpoint をアクティブ モードに設定します。 最後に、Microsoft 以外のソリューションを削除します。
 
 ## <a name="the-migration-process"></a>移行プロセス
 
@@ -65,7 +63,7 @@ Defender for Endpoint への移行プロセスは、次の表に示す 3 つの�
 | [エンドポイントでの検出と対応](overview-endpoint-detection-response.md) | エンドポイントの検出および応答機能は、侵入の試みとアクティブな侵害を検出、調査、および対応します。  |
 | [高度な追求](advanced-hunting-overview.md) | 高度な検出機能により、セキュリティ運用チームは既知または潜在的な脅威のインジケーターとエンティティを検索できます。 |
 | [動作ブロックと封じ込め](behavioral-blocking-containment.md) | 動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作に基づいて脅威を特定し、停止し、ツリーを処理するのに役立ちます。 |
-| [調査と修復の自動化](automated-investigations.md) | 自動調査および応答機能は、アラートを調べ、侵害を解決するために直ちに修復アクションを実行します。 |
+| [自動調査と修復](automated-investigations.md) | 自動調査および応答機能は、アラートを調べ、侵害を解決するために直ちに修復アクションを実行します。 |
 | [脅威の検出サービス](microsoft-threat-experts.md)(Microsoft 脅威エキスパート) | 脅威検出サービスは、セキュリティ運用チームに専門家レベルの監視と分析を提供し、重要な脅威を見逃しなくするために役立ちます。 |
 
 **詳細については、次の情報を参照してください。「Defender [for Endpoint」を参照してください](microsoft-defender-endpoint.md)。**

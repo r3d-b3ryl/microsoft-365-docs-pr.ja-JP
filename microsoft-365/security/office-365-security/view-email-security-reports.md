@@ -1,5 +1,5 @@
 ---
-title: セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
+title: Defender ポータルで電子メール セキュリティ レポートMicrosoft 365表示する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: 組織の電子メール セキュリティ レポートを検索して使用する方法について学習します。 電子メール セキュリティ レポートは、コンプライアンス センターのセキュリティ &使用できます。
+description: 組織の電子メール セキュリティ レポートを検索して使用する方法について学習します。 メール セキュリティ レポートは、Defender ポータルMicrosoft 365使用できます。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 11fe6fd76d21b2dbd7a3e651d40efaa79f675a43
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bb7570722fcc957ca86d68f6b42ef254578d7bd7
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52531026"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930327"
 ---
-# <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Defender ポータルで電子メール セキュリティ レポートMicrosoft 365表示する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,9 +35,9 @@ ms.locfileid: "52531026"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-セキュリティ[&](https://protection.office.com)コンプライアンス センターでは、Microsoft 365 のスパム対策、マルウェア対策、暗号化機能などの電子メール セキュリティ機能がどのように組織を保護しているかを確認するために、さまざまなレポートを利用できます。 必要なアクセス許可 [がある](#what-permissions-are-needed-to-view-these-reports)場合は、[レポート ダッシュボード] に移動して、セキュリティ & コンプライアンス センターでこれらのレポート **を表示** \> **できます**。 レポート ダッシュボードに直接移動するには、を開きます <https://protection.office.com/insightdashboard> 。
+Microsoft 365 Defender ポータルでは[、Microsoft 365](https://security.microsoft.com)のスパム対策、マルウェア対策、暗号化機能などの電子メール セキュリティ機能がどのように組織を保護しているかを確認するために、さまざまなレポートを利用できます。 必要な [アクセス許可を](#what-permissions-are-needed-to-view-these-reports)持っている場合は、Microsoft 365 Defender ポータルでこれらのレポートを表示するには、[レポートの電子メール] & グループ& \>  \> **を参照してください**。 レポート ダッシュボードに直接移動するには、を開きます <https://security.microsoft.com/emailandcollabreport> 。
 
-![セキュリティ 管理コンプライアンス センター&ダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Defender ポータルのダッシュボードMicrosoft 365レポート](../../media/email-collaboration-reports.png)
 
 ## <a name="compromised-users-report"></a>侵害されたユーザー レポート
 
@@ -50,7 +50,7 @@ ms.locfileid: "52531026"
 
 集計ビューには過去 90 日間のデータが表示され、詳細ビューには過去 30 日間のデータが表示されます。
 
-レポートを表示するには、コンプライアンス センターで [セキュリティ](https://protection.office.com)&を開き、[レポート **ダッシュボード]** に移動し、[侵害されたユーザー] \> **を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=CompromisedUsers> 。
+レポートを表示するには [、Microsoft 365 Defender](https://security.microsoft.com)ポータルを開き、[レポートの電子メール & コラボレーション レポート \>  \> **&]に移動** し、[侵害されたユーザー]の下の [詳細の表示] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/CompromisedUsers> 。
 
 [フィルター] をクリックし、次の値の1 つ以上を選択すると、グラフと詳細テーブルの両方をフィルター処理できます。
 
@@ -72,7 +72,7 @@ ms.locfileid: "52531026"
 
 ## <a name="encryption-report"></a>暗号化レポート
 
-暗号化 **レポートは**、EOP で使用できます (サブスクリプションは、Exchange Onlineまたはスタンドアロンの EOP に含Exchange Online使用できます。 組織のセキュリティ チームは、このレポートの情報を使用してパターンを特定し、機密性の高い電子メール メッセージのポリシーを積極的に適用または調整できます。 以下に例を示します。
+暗号化 **レポートは**、EOP で使用できます (サブスクリプションは、Exchange Onlineまたはスタンドアロンの EOP に含Exchange Online使用できます。 組織のセキュリティ チームは、このレポートの情報を使用してパターンを特定し、機密性の高い電子メール メッセージのポリシーを積極的に適用または調整できます。 例:
 
 - ユーザーによって暗号化された電子メール メッセージの数が多い場合は、暗号化ポリシーを追加して、特定の使用例の暗号化を自動化することができます。 詳細については、「メール フロー ルールを[定義して](../../compliance/define-mail-flow-rules-to-encrypt-email.md)メール メッセージを暗号化する」を参照Microsoft 365。
 
@@ -80,7 +80,7 @@ ms.locfileid: "52531026"
 
 集計ビューでは過去 90 日間のフィルター処理が可能で、詳細ビューでは 10 日間のフィルター処理が可能です。
 
-レポートを表示するには、コンプライアンス センターのセキュリティ &[開き、[](https://protection.office.com)レポート **ダッシュボード]** に移動し、[暗号化レポート] \> **を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=EncryptionReport> 。
+レポートを表示するには [、Microsoft 365 Defender](https://security.microsoft.com)ポータルを開き、[レポートの電子メール & コラボレーション レポート \>  \> **&]に移動** し、[暗号化レポート]の下の [詳細の表示] をクリックします。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=EncryptionReport> 。
 
 暗号化の詳細については、「メール暗号化」[を参照Microsoft 365。](../../compliance/email-encryption.md)
 
@@ -153,7 +153,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
  集計ビュー フィルターでは 90 日間、詳細テーブル フィルターでは 10 日間のみ許可されます。
 
-レポートを表示するには、セキュリティ & コンプライアンス センターを開き [、[](https://protection.office.com)レポートダッシュボード] に移動し、[電子メールのマルウェア検出] \> **を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=MalwareDetections> 。
+レポートを表示するには [、Microsoft 365 Defender](https://security.microsoft.com)ポータルを開き、[レポートメール& コラボレーション メール & コラボレーション レポート] に移動し、[メールで検出されたマルウェア] の下の [詳細を表示] をクリック \>  \> **します**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/MalwareDetections> 。
 
 ![レポート ダッシュボードの電子メール ウィジェットでのマルウェア検出](../../media/malware-detections-widget.png)
 
@@ -191,7 +191,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 集計ビューでは 90 日間のフィルター処理が可能で、詳細テーブルでは 10 日間のフィルター処理が可能です。
 
-レポートを表示するには、コンプライアンス センターでセキュリティ &[を](https://protection.office.com)開き、[レポート **ダッシュボード]** に移動し、[スパム検出] \> **を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=SpamDetections> 。
+レポートを表示するには [、Microsoft 365 Defender ポータルを開](https://security.microsoft.com)き、[レポートメール& コラボレーション メール \>  \> **&** コラボレーション レポート] に移動し、[スパム検出] の下の [詳細の表示] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/SpamDetections> 。
 
 ![レポート ダッシュボードのスパム検出ウィジェット](../../media/spam-detections-report-widget.png)
 
@@ -255,7 +255,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 <sup>\*</sup> 最終的には、最大 90 日間のフィルター処理を使用できます。
 
-レポートを表示するには、セキュリティ コンプライアンス センターを開 [&[](https://protection.office.com)レポート **ダッシュボード]** に移動し、[スプーフィングの検出 \> **] を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=SpoofMailReport> 。
+レポートを表示するには [、Microsoft 365 Defender](https://security.microsoft.com)ポータルを開き、[レポートメール& コラボレーション メール &] コラボレーション レポートに移動し、[スプーフィングの検出] の下の [詳細の表示] \>  \> **を** クリック **します**。  レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/SpoofMailReport> 。
 
 ![レポート ダッシュボードのスプーフィング検出ウィジェット](../../media/spoof-detections-widget.png)
 
@@ -301,7 +301,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 **注**: メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージではなく 5 つの異なるメッセージとしてカウントされます。
 
-レポートを表示するには、コンプライアンス センターでセキュリティ &[を](https://protection.office.com)開き、[レポート **ダッシュボード]** に移動し、[脅威保護の状態 \> ]**を選択します**。 レポートに直接移動するには、次のいずれかの URL を開きます。
+レポートを表示するには [、Microsoft 365 Defender](https://security.microsoft.com)ポータルを開き、[レポートの電子メール & コラボレーション レポート \>  \> **&]** に移動し、[脅威保護の状態]の下の [詳細を表示] をクリックします。 レポートに直接移動するには、次のいずれかの URL を開きます。
 
 - Microsoft Defender for Office 365:<https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
@@ -430,7 +430,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 - **データの表示方法: コンテンツ \> マルウェア**:
 
   - **Date**
-  - **Location**
+  - **場所**
   - **監督者**
   - **マルウェア名**
 
@@ -479,7 +479,7 @@ Mailflow **状態レポートには、** マルウェア、スパム、フィッ
 
 [ **トップ マルウェア]** レポートには、EOP のマルウェア対策保護によって検出されたさまざまな種類 [のマルウェアが表示されます](anti-malware-protection.md)。
 
-レポートを表示するには、コンプライアンス センターでセキュリティ &[を](https://protection.office.com)開き、[レポート **ダッシュボード]** に移動し、[ \> 上位マルウェア]**を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=TopMalware> 。
+レポートを表示するには [、Microsoft 365 Defender](https://security.microsoft.com)ポータルを開き、[レポートの電子メール & コラボレーション レポート&] に移動し、[トップ マルウェア] の下の [詳細を表示] を \>  \> **クリックします**。  レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/TopMalware> 。
 
 ![レポート ダッシュボードの上位マルウェア ウィジェット](../../media/top-malware-report-widget.png)
 
@@ -500,35 +500,33 @@ URL **の脅威保護レポートは**、Microsoft Defender で使用できるOf
 
 ## <a name="user-reported-messages-report"></a>ユーザーが報告したメッセージ レポート
 
-ユーザー **が報告した** メッセージ レポートには、ユーザーが迷惑メール、フィッシング詐欺の試み、または良いメールとして報告した電子メール [](enable-the-report-message-add-in.md)メッセージに関する情報が、レポート メッセージ アドインまたはレポート フィッシング アドインを使用して [表示](enable-the-report-phish-add-in.md)されます。
+[**ユーザーレポート メッセージ]** レポートには、ユーザーが迷惑メール、フィッシング詐欺の試み、または良いメールとして報告した [](enable-the-report-message-add-in.md)電子メール メッセージに関する情報が、レポート メッセージ アドインまたはレポート フィッシング アドインを使用して [表示されます](enable-the-report-phish-add-in.md)。
 
 詳細は、配信理由など、組織に対して構成されたスパム ポリシーの例外やメール フロー ルールなど、各メッセージで使用できます。 詳細を表示するには、ユーザー レポート の一覧でアイテムを選択し、[概要] タブと [詳細] タブ **で情報を****表示** します。
 
-![[User-Reportedメッセージ] レポートには、迷惑メールではなく迷惑メールとしてラベル付けされたメッセージ、またはフィッシング詐欺の試行が表示されます。](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![[ユーザーが報告したメッセージ] レポートには、迷惑メール、迷惑メール、またはフィッシングの試みとしてラベル付けされたメッセージが表示されます。](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
-このレポートを表示するには、セキュリティ & [コンプライアンス センターで](https://protection.office.com)、次のいずれかの操作を行います。
+このレポートを表示するには、Defender ポータルの [[Microsoft 365]](https://security.microsoft.com)に移動し、[電子メール のレポート] &グループ&レポート ユーザーが報告したメッセージ \>  \>  \> **を報告します**。
 
-- [脅威管理 **ダッシュボード]** \> **[** \> **ユーザーが報告したメッセージ] に移動します**。
+- [レポート] \> **[電子メール] &[グループ** \> **&] [ユーザーが報告した** メッセージ \> **] に移動します**。
 
-- [脅威の管理 **] [** \> **ユーザーが報告** \> **したメッセージの確認] に移動します**。
-
-![コンプライアンス センターのセキュリティ &で、[脅威の管理] \> [ユーザーが報告 \> したメッセージの確認] を選択します。](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![[Defender ポータルMicrosoft 365] で、[メールのレポート] を選択& \> グループ& \> レポートユーザーがメッセージ \> を報告します。](../../media/user-reported-messages.png)
 
 > [!IMPORTANT]
-> ユーザーが報告したメッセージ レポートが正しく機能するには、ユーザーが報告した環境で監査ログを有効Office 365があります。 これは通常、監査ログの役割が管理者に割り当てられているユーザー Exchange Online。 詳細については、「監査ログの[検索を有効またはMicrosoft 365を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
+> ユーザーが報告したメッセージ レポートが正しく機能するには、ユーザーの環境で監査ログを有効Office 365があります。 これは通常、監査ログの役割が管理者に割り当てられているユーザー Exchange Online。 詳細については、「監査ログの[検索を有効またはMicrosoft 365を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>これらのレポートを表示するために必要なアクセス許可
 
-この記事で説明するレポートを表示および使用するには、セキュリティ コンプライアンス センターで次のいずれかの役割グループの&必要があります。
+この記事で説明するレポートを表示して使用するには、Defender ポータルの次のいずれかの役割グループのMicrosoft 365必要があります。
 
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ リーダー**
 - **グローバル リーダー**
 
-詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+詳細については、「Defender ポータル[のアクセス許可」をMicrosoft 365してください](permissions-in-the-security-and-compliance-center.md)。
 
-**注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンス センターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+**注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 
@@ -538,8 +536,8 @@ URL **の脅威保護レポートは**、Microsoft Defender で使用できるOf
 
 [EOP でのスパム対策およびマルウェア対策保護](anti-spam-and-anti-malware-protection.md)
 
-[セキュリティ/コンプライアンス センターのスマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)
+[Defender ポータルのスマート レポートMicrosoft 365分析情報](reports-and-insights-in-security-and-compliance.md)
 
-[セキュリティ コンプライアンス センターでメール フロー レポート&表示する](view-mail-flow-reports.md)
+[Defender ポータルでメール フロー レポートをMicrosoft 365する](view-mail-flow-reports.md)
 
 [Defender for Office 365](view-reports-for-mdo.md)

@@ -13,16 +13,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 脅威エクスプローラーとリアルタイム検出レポートを使用して、セキュリティ コンプライアンス センターで脅威を調査して対応する&します。
+description: 脅威エクスプローラーとリアルタイム検出レポートを使用して、Defender ポータルで脅威を調査して対応するMicrosoft 365します。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78c03b45063f4bc34b47ab003bcf00d2befab886
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1c79cc717a2dbe345627f99830590c674fa02f09
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206420"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929637"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーのビューとリアルタイム検出
 
@@ -33,9 +33,9 @@ ms.locfileid: "51206420"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-![脅威エクスプローラー](../../media/ThreatExplorerFirstOpened.png)
+![脅威エクスプローラー](../../media/explorer.png)
 
-[Threat Explorer](threat-explorer.md) (およびリアルタイム検出レポート) は、セキュリティ運用チームがセキュリティ & コンプライアンス センターの脅威を調査して対応するのに役立つ、リアルタイムに近い強力なツールです。 エクスプローラー (およびリアルタイム検出レポート) には、Office 365 の電子メールやファイルのマルウェアやフィッシングの疑いについての情報、および組織に対するその他のセキュリティ上の脅威やリスクが表示されます。
+[Threat Explorer](threat-explorer.md) (およびリアルタイム検出レポート) は、セキュリティ運用チームが Microsoft 365 Defender ポータルの脅威を調査して対応するのに役立つ、リアルタイムに近い強力なツールです。 エクスプローラー (およびリアルタイム検出レポート) には、Office 365 の電子メールやファイルのマルウェアやフィッシングの疑いについての情報、および組織に対するその他のセキュリティ上の脅威やリスクが表示されます。
 
 - Microsoft Defender for [Office 365](defender-for-office-365.md)プラン 2, you have Explorer.
 - Microsoft Defender for Office 365プラン 1 の場合は、リアルタイムの検出があります。
@@ -58,7 +58,7 @@ ms.locfileid: "51206420"
 
 表示する情報 **を** 変更するには、[表示] メニューを使用します。 ツールヒントは、使用するビューを決定するのに役立ちます。
 
-![[脅威エクスプローラーの表示] メニュー](../../media/ThreatExplorerViewMenu.png)
+![[脅威エクスプローラーの表示] メニュー](../../media/all-email.png)
 
 ビューを選択したら、フィルターを適用してクエリを設定して、さらに分析を実行できます。 以下のセクションでは、エクスプローラーで使用できるさまざまなビュー (またはリアルタイム検出) の概要を示します。
 
@@ -66,7 +66,7 @@ ms.locfileid: "51206420"
 
 このレポートを表示するには、エクスプローラー (またはリアルタイムの検出) で、[電子メール マルウェアの表示 **]** \> **を** \> **選択します**。 このビューには、マルウェアが含まれていると識別された電子メール メッセージに関する情報が表示されます。
 
-![マルウェアとして識別された電子メールに関するデータを表示する](../../media/ExplorerEmailMalwareMenu.png)
+![マルウェアとして識別された電子メールに関するデータを表示する](../../media/detection-technology.png)
 
 [送信者 **] を** クリックして、表示オプションの一覧を開きます。 この一覧を使用して、送信者、受信者、送信者ドメイン、件名、検出テクノロジ、保護状態などによってデータを表示します。
 
@@ -82,13 +82,13 @@ ms.locfileid: "51206420"
 
 このレポートを表示するには、エクスプローラー (またはリアルタイムの検出) で、[メール フィッシング **の表示]** \> **を** \> **選択します**。 このビューには、フィッシング詐欺の試みとして識別された電子メール メッセージが表示されます。
 
-![フィッシング詐欺の試みとして識別された電子メールに関するデータを表示する](../../media/ThreatExplorerEmailPhish.png)
+![フィッシング詐欺の試みとして識別された電子メールに関するデータを表示する](../../media/phish.png)
 
 [送信者 **] を** クリックして、表示オプションの一覧を開きます。 この一覧を使用して、送信者、受信者、送信者ドメイン、送信者 IP、URL ドメイン、クリックの評決などによってデータを表示します。
 
 たとえば、フィッシング詐欺の試みとして識別された URL をクリックしたユーザーが実行したアクションを確認するには、リストで [Click **verdict]** を選択し、1 つ以上のオプションを選択し、[更新] ボタンをクリックします。
 
-![[フィッシング] レポートの [評決オプション] をクリックします。](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+![[フィッシング] レポートの [評決オプション] をクリックします。](../../media/click-verdict.png)
 
 グラフの下に、特定のメッセージ、URL クリック、URL、メール配信元の詳細を表示します。
 
@@ -135,7 +135,7 @@ ms.locfileid: "51206420"
 
 マルウェア ファミリ、検出テクノロジ (マルウェアの検出方法)、ワークロード (OneDrive、SharePoint、またはTeams)。
 
-![検出されたマルウェアに関するデータを表示する](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
+![検出されたマルウェアに関するデータを表示する](../../media/malware-family.png)
 
 グラフの下には、添付ファイルのファイル名、ワークロード、ファイル サイズ、ファイルを最後に変更したユーザーなど、特定のファイルの詳細が表示されます。
 

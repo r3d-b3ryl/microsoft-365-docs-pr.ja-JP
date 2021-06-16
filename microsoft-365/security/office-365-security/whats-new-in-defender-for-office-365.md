@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2895598c8d891b08229f072b7bff6b6549639093
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: 0aa8e10545b43f6e0ee985ac11b161a3b21c3a91
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796068"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929556"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -55,7 +55,7 @@ ms.locfileid: "52796068"
 - 試用版テナントのエクスプローラー (およびリアルタイム検出) データの保持と検索の制限を 7 (前の制限) から 30 日間のハンティング エクスペリエンス [に拡張する](threat-explorer.md)
 - 保護されたユーザーまたはドメインに対する偽装攻撃を検索するための、エクスプローラー内の偽装ドメインと偽装ユーザー (およびリアルタイムの検出) と呼ばれる新しい検索ピボット。 詳細については、「詳細」を [参照してください](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。 (Microsoft Defender for Office 365プラン 1 またはプラン 2)
 
-## <a name="december-2020"></a>2020年12月
+## <a name="december-2020"></a>2020 年 12 月
 
 - [既定ではセキュリティで保護Office 365](secure-by-default.md)
 - 自動調査の機能強化: 手動でトリガーされた電子メール調査に関する一般的なアラート、メールボックスの変更を別のエンティティ カテゴリとして扱い、冗長な URL ブロック アクションを削除し、ユーザーが侵害された調査のために送信メール クラスターを作成します。
@@ -89,7 +89,7 @@ ms.locfileid: "52796068"
   - 高度な NOT フィルター (これらは、含まれているか、含めない、などを含む高度なフィルター オプションです)
   - 詳細な時間フィルター (日、時間、30 分)
 
-- インシデント **ウィジェットが** アクション センター **ウィジェットに変更** されました。 (セキュリティ ウィジェットを表示するには、セキュリティ &コンプライアンス センターで、[脅威の管理]**に移動します。** \>**レビュー**.)(Microsoft Defender for Office 365プラン 2)
+- インシデント **ウィジェットが** アクション センター **ウィジェットに変更** されました。 (セキュリティ ウィジェットを表示するには、Defender ポータルの [Microsoft 365] に移動し、グループ&**します。** \>**レビュー**.)(Microsoft Defender for Office 365プラン 2)
 
 - [セーフドキュメントのMicrosoft 365](safe-docs.md) **(プレビュー)**
 

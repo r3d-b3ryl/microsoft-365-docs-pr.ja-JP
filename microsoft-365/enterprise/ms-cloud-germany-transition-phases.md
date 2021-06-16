@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 28d5eebbe63db13edfb1bfc297bdd6ad0c13536c
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: c80a7cfc4f930011f65a07c4b46cdf4921766c34
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861257"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930453"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -102,8 +102,6 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 
 **適用対象**: Microsoft Cloud Deutschland (MCD) でホストOffice 365テナントを持つすべてのお客様
 
-パートナーの Microsoft Cloud Deutschland テナントは移行されません。 CSP のお客様は、同じパートナー Office 365新しいサービス サービス テナントOffice 365サービスに移行されます。 顧客の移行後、パートナーは、この顧客を管理できるのは、Office 365テナントのみです。
-
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
 | サブスクリプションが転送される| Microsoft Cloud Deutschland サブスクリプションは、対応するグローバル サービス サブスクリプションOffice 365移行されます。 <ul><li>そのサブスクリプションOffice 365提供されるグローバル サービスは、Microsoft (オファー マッピングとも呼ばれる)_によって定義されます_。</li><li> グローバル Office 365サービス サブスクリプションは、転送された Microsoft Cloud Deutschland サブスクリプションOffice 365グローバル インスタンスで購入されます。</li><li>従来の Microsoft Cloud Deutschland サブスクリプションは、Office 365サービス テナントから削除されます。</li></ul>| <ul><li>既存のサブスクリプションへの変更は、このフェーズ中にブロックされます (たとえば、新しいサブスクリプション購入やシート 数の変更はありません)。</li><li>ライセンス割り当ての変更はブロックされます。</li><li>サブスクリプションの移行が完了すると、Office 365 サービスと Microsoft Cloud Deutschland サブスクリプションの両方が Office 365 Admin ポータルに表示され、Microsoft Cloud Deutschland サブスクリプションの状態はプロビジョニング解除されます。 </li><li>Microsoft Cloud Deutschland サブスクリプションまたは SKU GUID に依存している顧客プロセスは壊れ、Office 365 サービスを提供して修正する必要があります。 </li><li>Office 365 サービスの新しいサブスクリプションは、新しい用語 (毎月/四半期/年) で購入され、お客様は Microsoft Cloud Deutschland サブスクリプションの未使用残高に対して日割り払い払いを受け取る予定です。 </li></ul> |
@@ -116,6 +114,8 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 
 フェーズ 2 とフェーズ 3 の間、パートナー ポータルにアクセスできない場合があります。 この間、パートナーはパートナー ポータルでテナントの情報にアクセスできない場合があります。 移行ごとに異なるので、アクセシビリティ内の期間は数時間である可能性があります。
 
+クラウド ソリューション プロバイダーの追加情報は、パートナー テナントの移行 [で利用できます](ms-cloud-germany-transition-add-csp.md#partner-tenant-migration)。
+
 
 ## <a name="phase-4-sharepoint-online"></a>フェーズ 4: SharePoint Online
 
@@ -126,7 +126,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 | Step(s) | 説明 | 影響 |
 |:-------|:-----|:-------|
 | SharePointとOneDrive移行 | SharePointオンラインおよびOneDrive for Businessは、このフェーズで Microsoft Cloud Deutschland Office 365グローバル サービスに移行されます。<br><ul><li>既存の Microsoft Cloud Deutschland URL は保持されます (たとえば `contoso.sharepoint.de` )。</li><li>既存のサイトは保持されます。</li><li>Microsoft Cloud Deutschland または Office 365 Global Services インスタンスのセキュリティ トークン サービス (STS) によって発行されたクライアント側認証トークンは、移行中に有効です。</li></ul>|<ul><li>移行中の 2 つの短い期間、コンテンツは読み取り専用になります。 この間、このページで "コンテンツを編集できない" バナーが表示SharePoint。</li><li>検索インデックスは保持されません。再構築には最大 10 日かかる場合があります。</li><li>SharePointオンラインおよびOneDrive for Businessコンテンツは、移行中に 2 つの短い期間読み取り専用になります。 この間、ユーザーには「コンテンツを編集できない」バナーが簡単に表示されます。</li><li>SharePoint Online の移行が完了すると、インデックスの再構築中に SharePoint Online および OneDrive for Business コンテンツの検索結果が使用できなくなる可能性があります。 この期間中、検索クエリで完全な結果が返されない場合があります。 オンライン ニュースなどの検索インデックスに依存する機能は、SharePointインデックスの再作成中に影響を受ける可能性があります。</li><li>SharePoint 2013 ワークフローは移行中に壊れ、移行後に再発行する必要があります。</li></ul>
-|**SPO 管理者**: 2013 SharePointを再発行する| オンラインSharePoint管理者は、移行後SharePoint 2013 ワークフローを再発行します。|SharePoint 2013 ワークフローを使用できます。
+|**SPO 管理者**: 2013 SharePointを再発行する| オンラインSharePoint管理者は、移行後SharePoint 2013 ワークフローを再発行します。| これは必須のアクションです。 そうしない場合、ユーザーの混乱、ヘルプ デスクの呼び出し、生産性の低下が発生する可能性があります。
 |**PowerShell ユーザー**: 新しいモジュールに更新する| SharePoint Online PowerShell モジュールのすべてのユーザーは、SharePoint Online の移行が完了した後、module/Microsoft.SharePointOnline.CSOM をバージョン 16.0.20717.12000 以上に更新する必要があります。 完了はメッセージ センターで伝達されます。| SharePointPowerShell またはクライアント側のオブジェクト モデルを介してオンラインでエラーが発生しなくなりました。
 ||||
 
@@ -169,7 +169,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **PowerShell を使用Exchange Online** 管理者Exchange Online適用されます。
 
-移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 以下に例を示します。
+移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 例:
 
 ```powershell
 New-PSSession 
@@ -189,6 +189,8 @@ PowerShell コマンドレット **Set-UserPhoto** を使用すると、ユー�
 - 他Outlook Web Appの共有メールボックスにアクセスするユーザー (たとえば、MCD 環境のユーザーがグローバル環境の共有メールボックスにアクセスする場合) は、2 回目の認証を求めるメッセージが表示されます。 ユーザーは、最初に自分のメールボックスを認証してアクセスし、次に共有メールボックスを `outlook.office.de` 開く必要があります `outlook.office365.com` 。 他のサービスでホストされている共有リソースにアクセスする場合は、2 回目の認証が必要です。
 - 既存の Microsoft Cloud Deutschland のお客様または移行中のユーザーの場合、ファイル **>** Info > アカウントを使用して共有メールボックスを Outlook に追加すると、予定表のアクセス許可の表示が失敗する場合があります (Outlook クライアントが Rest API を使用しようと試みる)。 `https://outlook.office.de/api/v2.0/Me/Calendars` 予定表のアクセス許可を表示するアカウントを追加する場合は[、「Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec)で予定表を共有するためのユーザー エクスペリエンスの変更」の説明に従ってレジストリ キーを追加して、このアクションが成功するようにすることができます。 このレジストリ キーは、グループ ポリシーを使用して組織全体に展開できます。
 - アクティブな Exchange ハイブリッド構成を使用しているすべてのお客様は、メールボックスをオンプレミス Exchange Server から Exchange Online に移動することはできません。Microsoft Cloud Deutschland にも、ドイツの新しいデータセンター地域にも移動できません。 お客様は、フェーズ 5 より前に継続的なメールボックスの移動が完了し、このフェーズが完了した後に再開される必要があります。
+- 実行中の PowerShell コマンドレットは、Microsoft Cloud Deutschland から Exchangeサービスへの移行中に、Office 365 `Test-MigrationServerAvailabiilty` 機能しない可能性があります。 ただし、移行が完了すると正しく動作します。
+- クライアントがメールボックスの移行後に資格情報または承認に関する問題にぶつかった場合は、Exchange コントロール パネル (ECP) を使用して、移行エンドポイントでオンプレミス管理者資格情報を再入力します。 `Set-MigrationEndpoint -Identity <endpointName> -Credential $(Get-Credential)`
 - デバイスにレガシ プロトコル (POP3/IMAP4/SMTP) を使用しているすべてのユーザーが、Exchange Online の移行前の手順で説明したように、Exchange メールボックスが新しいドイツのデータセンター地域に移動された[](ms-cloud-germany-transition-add-pre-work.md#exchange-online)後、クライアント内のエンドポイントを変更する準備ができているか確認します。
 - メールボックスSkype for Business後Outlook Web App会議のスケジュール設定は使用できなくなります。 必要に応じて、ユーザーは代わりにOutlook必要があります。
 

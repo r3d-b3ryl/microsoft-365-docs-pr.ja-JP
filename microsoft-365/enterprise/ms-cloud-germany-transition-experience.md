@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域のOffice 365サービスに移行するために何が変わったかを理解します。'
-ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591782"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930405"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター地域Office 365サービスへの移行後に何が変わるか
 
@@ -75,6 +75,12 @@ ms.locfileid: "51591782"
 - メールボックスはバックエンド プロセスとして移行されます。 組織内のユーザーは、移行中に Microsoft Cloud Deutschland またはドイツ地域にいて、同じ Exchange 組織の一部 (同じグローバル アドレス一覧内) に含む場合があります。
 
 - メールボックスが存在Outlook Web App URL を使用してサービスにアクセスするユーザーには、追加の認証プロンプトが表示されます。 たとえば、ユーザーのメールボックスが Office 365 サービス内にいて、ユーザーの Outlook Web App 接続がレガシ エンドポイントを使用している場合、ユーザーは最初にに認証を行い、次にに認証します `outlook.office.de` `login.microsoftonline.de` `login.microsoftonline.com` 。 移行が完了すると、ユーザーは新しい URL ( ) にアクセスし、予想される 1 つのサインイン要求 `https://outlook.office365.com` のみを表示します。 
+
+## <a name="sharepoint-online"></a>SharePoint Online
+
+[SharePoint]および [OneDrive for Business] では、アイテムを [オンライン] または [Outlook] で共有Outlook。 [リンク] ボタンOutlookすると、共有可能なリンクが作成され、新しいメッセージにプッシュOutlook Web App。
+
+SharePoint Online と OneDrive for Business経由Outlookアイテムの共有は、SharePointオンラインの移行後に機能しなくなりました。 これは既知の問題だと認識しています。 ただし、このOutlook機能は廃止の道にあるので、廃止が展開されるまで問題の修正は計画されていません。
 
 ## <a name="office-services"></a>Officeサービス
 

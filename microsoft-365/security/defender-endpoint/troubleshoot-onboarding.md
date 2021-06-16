@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b9d6cd374a107a403269bc3babbe4220d69e1cce
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844876"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929697"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -307,7 +307,7 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 また、次の情報を確認する必要があります。
 
-- タスク マネージャーの [プロセス] タブで Microsoft Defender for Endpoint Service が **実行されている****のを確認します**。 以下に例を示します。
+- タスク マネージャーの [プロセス] タブで Microsoft Defender for Endpoint Service が **実行されている****のを確認します**。 例:
 
     ![Microsoft Defender for Endpoint Service が実行されているプロセス ビューのイメージ](images/atp-task-manager.png)
 
@@ -334,6 +334,8 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 - エンド ユーザーが最初のログオンを実行する前にデバイスがオフまたは再起動される
 - このシナリオでは、オンボード パッケージが展開された場合でも、SENSE サービスは自動的に開始されません
 
+<div class="alert"><b>注:</b>WINDOWS 10、バージョン 1809、Windows Server 2019 および[2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日の更新プログラムのロールアップで SENSE サービスを開始するには、O Windows OBE 後のユーザー ログオンが必要なくなりました。 </br> Windows 10バージョン 1909 と[2021 年 4](https://support.microsoft.com/kb/5001396)月の更新プログラムのロールアップ </br> Windows 10 2021 年 4 月 28 日の更新プログラムのロールアップを含むバージョン[2004/20H2 のバージョン](https://support.microsoft.com/kb/5001391) </div> 
+<br></br>
 > [!NOTE]
 > 次の手順は、次の手順を使用する場合にのみMicrosoft Endpoint Configuration Manager。 アプリケーションを使用したオンボーディングの詳細については、「Microsoft Endpoint Configuration Manager [Microsoft Defender for Endpoint」を参照してください](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 

@@ -16,18 +16,18 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: セキュリティ コンプライアンス センターで Microsoft Defender for Office 365レポートを&使用します。
+description: Microsoft Defender のレポートを検索して、Office 365 Defender ポータルMicrosoft 365使用します。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b3e1ddf48ccd74b36c594d232c6761b921dee8c
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: a5c45f58ee83de11712b198c85a8e423314289bf
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599901"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930234"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センター Office 365レポート ダッシュボードで Defender for &レポートを表示する
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-microsoft-365-defender-portal"></a>Defender ポータルの [Office 365] ダッシュボードで[Defender for Microsoft 365レポートを表示する]
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,9 +35,9 @@ ms.locfileid: "51599901"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプション、Office 365 プラン 1 の Microsoft Defender、Office 365 プラン 2 アドオンの Microsoft Defender など) には、さまざまなセキュリティ関連レポートが含まれる。 必要なアクセス許可 [がある](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)場合は、[レポート ダッシュボード] に移動して、セキュリティ & コンプライアンス センターでこれらのレポート **を表示** \> **できます**。 レポート ダッシュボードに直接移動するには、を開きます <https://protection.office.com/insightdashboard> 。
+Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプション、Office 365 プラン 1 の Microsoft Defender、Office 365 プラン 2 アドオンの Microsoft Defender など) には、さまざまなセキュリティ関連レポートが含まれる。 必要な [アクセス許可がある](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)場合は、[電子メールの共同作業レポート] にアクセスして、Microsoft 365 Defender ポータルでこれらのレポート \>  \> **を表示できます**。 レポート ダッシュボードに直接移動するには、を開きます <https://security.microsoft.com/emailandcollabreport> 。
 
-![セキュリティ コンプライアンス センターの [レポート] &ダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Defender ポータルの [レポート] Microsoft 365ダッシュボード](../../media/user-reported-messages.png)
 
 ## <a name="defender-for-office-365-file-types-report"></a>Defender for Office 365 のファイル型レポート
 
@@ -45,7 +45,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
  レポートの集計ビューでは 90 日間のフィルター処理が可能ですが、詳細ビューでは 10 日間のフィルター処理のみ可能です。
 
-レポートを表示するには、セキュリティ & コンプライアンス センターを開き [、[](https://protection.office.com)レポートダッシュボード] に移動し、[ファイルの種類] で \> **[Defender] Office 365選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ATPFileReport> 。
+レポートを表示するには、Defender ポータルの Microsoft 365 [開き、[](https://security.microsoft.com)レポートダッシュボード] に移動し、[Defender] を選択してファイルの種類 \> **Office 365します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ATPFileReport> 。
 
 ![レポート ダッシュボードOffice 365ファイルの種類ウィジェットの Defender](../../media/atp-file-types-report-widget.png)
 
@@ -127,7 +127,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 **ATP メッセージ廃棄レポート** には、悪意のあるコンテンツが検出された電子メール メッセージに対して実行されたアクションが表示されます。
 
-レポートを表示するには、セキュリティ & コンプライアンス センターを開き [、[](https://protection.office.com)レポートダッシュボード] に移動し、[Defender] を選択Office 365 \> **します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ATPMessageReport> 。
+レポートを表示するには [、Microsoft 365 Defender ポータルを開](https://security.microsoft.com)き、[レポート電子メール & コラボレーション の電子メール & コラボレーション レポート] に移動し、[Defender] を選択してメッセージの廃棄Office 365 \>  \> **します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ATPMessageReport> 。
 
 ![レポート ダッシュボードOffice 365メッセージ廃棄ウィジェットの Defender](../../media/atp-message-disposition-report-widget.png)
 
@@ -215,7 +215,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 クライアント側とネットワークの待機時間は含まれません。
 
-レポートを表示するには、コンプライアンス センターでセキュリティ &[開](https://protection.office.com)き、[レポートダッシュボード] に移動し、[メール \> 待機時間レポート **] を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/mailLatencyReport?viewid=P50> 。
+レポートを表示するには [、Microsoft 365 Defender](https://security.microsoft.com)ポータルを開き、[メール& コラボレーション レポート] & [メールの遅延レポート] の下にある [詳細の表示] \>  \> **を** クリック **します**。  レポートに直接移動するには、を開きます <https://security.microsoft.com/mailLatencyReport> 。
 
 ![レポート ダッシュボードのメール待機時間レポート ウィジェット](../../media/mail-latency-report-widget.png)
 
@@ -268,7 +268,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 **URL 脅威保護レポートには、** 検出された脅威の概要と傾向ビュー、および URL クリックに対するアクションが[リンク] リンクの一部としてセーフ [されます](safe-links.md)。 このレポートには、[リンク] ポリシーが適用されているユーザーセーフクリックデータが含まれる場合は、[ユーザーのクリックを追跡しない]**オプションが** 選択されています。
 
-レポートを表示するには、コンプライアンス センターのセキュリティ &[開き、[](https://protection.office.com)レポート **ダッシュボード]** に移動し \> 、[URL 保護レポート **] を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
+レポートを表示するには [、Microsoft 365 Defender ポータルを開](https://security.microsoft.com)き、[レポートの電子メール & コラボレーション レポート \>  \> **&]** に移動し **、[URL** 保護レポートの詳細を表示する] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/URLProtectionActionReport> 。
 
 ![レポート ダッシュボードの URL 保護レポート ウィジェット](../../media/url-protection-report-widget.png)
 
@@ -336,8 +336,8 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 |レポート|トピック|
 |---|---|
 |**エクスプローラー** (Microsoft Defender for Office 365 プラン 2) またはリアルタイム検出 **(Microsoft** Defender for Office 365 プラン 1)|[脅威エクスプローラー (およびリアルタイムの検出)](threat-explorer.md)|
-|**[上位の送信者** と受信者] レポート、スプーフィング メール レポート、スパム検出レポートなどの電子メール セキュリティ レポート。|[セキュリティとコンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)|
-|**転送レポート、** メールフロー状態レポート、上位送信者と受信者レポートなどのメール フロー レポート。|[セキュリティ コンプライアンス センターでメール フロー レポート&表示する](view-mail-flow-reports.md)|
+|**[上位の送信者** と受信者] レポート、スプーフィング メール レポート、スパム検出レポートなどの電子メール セキュリティ レポート。|[Defender ポータルで電子メール セキュリティ レポートMicrosoft 365表示する](view-email-security-reports.md)|
+|**転送レポート、** メールフロー状態レポート、上位送信者と受信者レポートなどのメール フロー レポート。|[Defender ポータルでメール フロー レポートをMicrosoft 365する](view-mail-flow-reports.md)|
 |**[リンク] リンクセーフ URL トレース**(PowerShell のみ)。 このコマンドレットの出力には、過去 7 日間セーフリンク アクションの結果が表示されます。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |**EOP および Microsoft Defender for Office 365** トラフィックの結果 (PowerShell のみ)。 このコマンドレットの出力には、ドメイン、日付、イベントの種類、方向、アクション、およびメッセージ数に関する情報が含まれる。|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
 |**EOP と Defender のメール詳細レポート (powerShell Office 365)** このコマンドレットの出力には、悪意のあるファイルまたは URL、フィッシングの試み、偽装、電子メールまたはファイル内のその他の潜在的な脅威に関する詳細が含まれる。|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
@@ -345,16 +345,16 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>レポートの Defender を表示するために必要なアクセス許可Office 365ですか?
 
-この記事で説明するレポートを表示および使用するには、セキュリティ コンプライアンス センターで次のいずれかの役割グループの&必要があります。
+この記事で説明するレポートを表示して使用するには、Defender ポータルの次のいずれかの役割グループのMicrosoft 365必要があります。
 
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ リーダー**
 - **グローバル リーダー**
 
-詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+詳細については、「Defender ポータル[のアクセス許可」をMicrosoft 365してください](permissions-in-the-security-and-compliance-center.md)。
 
-**注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、セキュリティ & コンプライアンス センターで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+**注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 
@@ -362,6 +362,6 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 ## <a name="related-topics"></a>関連項目
 
-[セキュリティ/コンプライアンス センターのスマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)
+[Defender ポータルのスマート レポートMicrosoft 365分析情報](reports-and-insights-in-security-and-compliance.md)
 
 [役割のアクセス許可 (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

@@ -18,12 +18,12 @@ description: 管理者とエンド ユーザーは、分析のために Microsof
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c3a02c710472a996245a38d996ff4485efd1748
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 4d277df764ce2fb135f11c6320bc990e4d4142d6
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624027"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929769"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のために Microsoft にメッセージを手動で送信する
 
@@ -35,7 +35,7 @@ ms.locfileid: "52624027"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> ユーザーがメールボックスを使用している組織の管理者Exchange Online、コンプライアンス センターのセキュリティ &ポータルを使用することをお勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
+> メールボックスを使用している組織の管理者Exchange Online、Defender ポータルの [申請] ポータルMicrosoft 365することをお勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 
 組織内のユーザーが受信トレイで迷惑メール (スパム) またはフィッシング メッセージを受信した場合や、迷惑メールとしてマークされた正当な電子メール メッセージを受信しない場合は、イライラする可能性があります。 スパム フィルターの精度を高め、常に微調整を行っています。
 

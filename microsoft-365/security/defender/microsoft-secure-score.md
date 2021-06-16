@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 4a2c220cab15751671b9b38c3bb2fda3db12c9e1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 1b03c2671939a3e8e3011b78b8f1484ef02979ea
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245379"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930189"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -111,7 +111,6 @@ Microsoft セキュア スコアにアクセスするためのアクセス許可
 * セキュリティ管理者
 * Exchange 管理者
 * SharePoint 管理者
-* アカウント管理者
 
 ### <a name="read-only-roles"></a>読み取り専用の役割
 
@@ -119,7 +118,7 @@ Microsoft セキュア スコアにアクセスするためのアクセス許可
 
 * ヘルプデスク管理者
 * ユーザー管理者
-* サービス管理者
+* サービス サポート管理者
 * セキュリティ閲覧者
 * セキュリティ オペレーター
 * グローバル閲覧者

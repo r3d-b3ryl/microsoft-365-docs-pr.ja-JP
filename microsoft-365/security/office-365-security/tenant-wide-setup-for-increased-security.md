@@ -20,12 +20,12 @@ ms.custom:
 description: このトピックでは、テナント環境のセキュリティに影響を与えるテナント全体の設定に対する推奨構成Microsoft 365説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd9d07388386ecc3d5877736e588393cdc38e7bb
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 623ea316d1ad92790b8818504970a1d35401f617
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879218"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929577"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する 
 
@@ -63,9 +63,9 @@ Defender Microsoft 365には、環境を保護する機能が含まれていま�
 > [!NOTE]
 > SPF、ハイブリッド展開、およびトラブルシューティングの非標準展開の場合: Microsoft 365 がスプーフィングを防止するために Sender [Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md)を使用する方法。
 
-## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでダッシュボードとレポート&表示する
+## <a name="view-dashboards-and-reports-in-the-microsoft-365-defender-portal"></a>Defender ポータルでダッシュボードとレポートMicrosoft 365表示する
 
-環境の正常性の詳細については、これらのレポートとダッシュボードをご覧ください。 これらのレポートのデータは、組織がサービスを使用するOffice 365されます。 今のところ、監視およびアクションを実行できる機能について理解してください。 詳細については、「セキュリティ コンプライアンス [センターのレポート」を&してください](../../compliance/reports-in-security-and-compliance.md)。
+環境の正常性の詳細については、これらのレポートとダッシュボードをご覧ください。 これらのレポートのデータは、組織がサービスを使用するOffice 365されます。 今のところ、監視およびアクションを実行できる機能について理解してください。 詳細については、「Defender ポータルの[レポート」をMicrosoft 365してください](../../compliance/reports-in-security-and-compliance.md)。
 
 <br>
 

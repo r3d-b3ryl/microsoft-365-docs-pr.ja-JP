@@ -15,18 +15,16 @@ ms.collection:
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
-ms.date: 09/24/2020
+ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 7d6d92f3abc79552406c80a46a8c3390b91e31d0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4d10de35358d528f004ee11e931fc6f41ce20482
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843012"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930501"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>エンドポイントとエンドポイントの Microsoft Defender に切り替Microsoft Defender ウイルス対策
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -42,13 +40,11 @@ ms.locfileid: "52843012"
 |:--|:--|
 |エンドポイント保護ソリューションはまだありませんが、Microsoft Defender for Endpoint の動作について詳& Microsoft Defender ウイルス対策します。  |[Microsoft Defender for Endpoint 評価ラボ](evaluation-lab.md)   |
 |Microsoft Defender for Endpoint & Microsoft Defender ウイルス対策し、すべての設定と構成を行う上で役立つ情報が必要です。  |[Microsoft Defender for Endpoint 展開ガイド](deployment-phases.md)  |
-|McAfee Endpoint Security (McAfee) から Microsoft Defender for Endpoint & Microsoft Defender ウイルス対策。 |[McAfee から Microsoft Defender for Endpoint に切り替える](mcafee-to-microsoft-defender-migration.md) |
-|Symantec Endpoint Protection (シマンテック) から Microsoft Defender for Endpoint & Microsoft Defender ウイルス対策 に移行する予定です。 |[Symantec から Microsoft Defender for Endpoint に切り替える](symantec-to-microsoft-defender-endpoint-migration.md) |
-|Microsoft 以外のエンドポイント保護ソリューション (McAfee または Symantec 以外) から Microsoft Defender for Endpoint & Microsoft Defender ウイルス対策 に移行する予定です。 |[エンドポイント用 Microsoft Defender への切り替え](switch-to-microsoft-defender-migration.md)   |
+|Microsoft 以外のエンドポイント保護ソリューションから Microsoft Defender for Endpoint & Microsoft Defender ウイルス対策 に移行する予定です。 |[エンドポイント用 Microsoft Defender への切り替え](switch-to-microsoft-defender-migration.md)   |
 |Microsoft Defender for Endpoint & Microsoft Defender ウイルス対策 に移行し、追加機能の構成やセキュリティ設定の微調整など、次の手順に関するヘルプが必要です。 | [移行後の Microsoft Defender for Endpoint の管理](manage-atp-post-migration.md) |
 
 
-## <a name="got-feedback"></a>フィードバックを受け取った場合
+## <a name="do-you-have-feedback-for-us"></a>フィードバックをお寄せください。
 
 ご意見をお知らせください。 ページの下部にフィードバックを送信します。 引き続き改善し、移行ガイダンスに追加する場合は、フィードバックを考慮します。
 

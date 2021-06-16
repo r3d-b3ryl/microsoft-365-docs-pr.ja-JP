@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: Office 365 GCC DoD には追加のネットワーク セキュリティ要件があります'
 hideEdit: true
-ms.openlocfilehash: 4817edfcea638324e26eb855d1ea33936be1bfb4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f4c03d364e84d89a1b12e4d858ab46eb3be6ae5e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691911"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926561"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Office 365 GCC High および DOD の追加のネットワーク セキュリティ要件
 
@@ -33,7 +33,7 @@ ms.locfileid: "46691911"
 
 Office 365 GCC高および DOD は、米国政府とそのサプライヤーおよび請負業者のニーズを満たす安全なクラウド環境です。  これらのクラウド環境には、サービスがアクセスを許可する外部エンドポイントに関する追加のネットワーク制限があります。
 
-GCCフェデレーション ID またはハイブリッドの共同利用を計画している高値および DOD のお客様は、Microsoft が既存のオンプレミス展開への受信および/または送信アクセスを許可する必要があります。  これらのアクティビティの例を次に示します。
+GCCフェデレーション ID またはハイブリッド共存の使用を計画している高値および DOD のお客様は、Microsoft が既存のオンプレミス展開への受信および/または送信アクセスを許可する必要がある場合があります。  これらのアクティビティの例を次に示します。
 
 * フェデレーション ID の使用 (Active Directory フェデレーション サービスまたは同様のサポートされている STS を使用)
 * オンプレミスの展開とハイブリッド共存Exchange ServerまたはSkype for Business展開
@@ -44,18 +44,18 @@ GCCフェデレーション ID またはハイブリッドの共同利用を計�
 > [!WARNING]
 > すべての要求は **3** 週間の SLA を持ち、必要なセキュリティとコンプライアンスの制御と展開パイプラインのために迅速に処理することはできません。  これには、サービスに移行した後の初期オンボーディング ネットワーク要求と変更が含まれます。  ネットワーク チームがこのタイムラインを認識し、計画サイクルに含める必要があります。
 
-ネットワーク ホワイトリストに次[Office 365 Governmentメール](mailto:o365gwlt@microsoft.com)を送信してください。
+次の情報をOffice 365 Government Allow-List[要求に電子](mailto:o365gwlt@microsoft.com)メールを送信します。
 
-* **To**: Office 365 Government [ホワイトリスト](mailto:o365gwlt@microsoft.com)
+* **To**: [Office 365 Government Allow-List要求](mailto:o365gwlt@microsoft.com)
 * **From**: テナント管理者 - 送信メールが **テナント** のグローバル管理者連絡先と一致している必要があります
-* **電子メール** の件名 : Office 365 GCC高ネットワーク要求 - contoso.onmicrosoft.us (テナント名に置き換えてください)
+* **電子メール** の件名 : Office 365 GCC高ネットワーク要求 - contoso.onmicrosoft.us (テナント名に置き換える)
 
 メッセージの本文には、次のデータが含まれる必要があります。
 
-* テナントMicrosoft Online Services名 (つまり、contoso.onmicrosoft.com、fabrikam.onmicrosoft.us)
+* テナントMicrosoft Online Services名 (たとえば、contoso.onmicrosoft.com、fabrikam.onmicrosoft.us)
 * ネットワークの変更や無効なサブネットのフォローアップに関連する、Microsoft が通信中の通信用に通信する電子メール配布リスト
 * オンプレミスの展開とハイブリッドMicrosoft Teamsを使用するかどうかを示す
-* フェデレーション ID システムの外部アクセス可能な URL (sts.contoso.com など) と CIDR 表記の IP アドレス範囲 (例: 10.1.1.0/28)
+* フェデレーション ID システムの外部アクセス可能な URL (sts.contoso.com など) と、CIDR 表記の IP アドレス範囲 (たとえば、 10.1.1.0/28)
 * CIDR 表記のオンプレミス PKI 証明書失効リスト URL と IP アドレス範囲
 * CIDR 表記でのオンプレミス展開Exchange Server外部アクセス可能な URL と IP アドレスの範囲
 * CIDR 表記のオンプレミス展開Skype for Business外部アクセス可能な URL と IP アドレスの範囲
@@ -67,4 +67,4 @@ GCCフェデレーション ID またはハイブリッドの共同利用を計�
 * サブネット範囲は、サブネット範囲より大/24
 * 商用 **クラウド** サービス (商用クラウド サービス、Google G-Suite、Amazon Web Services など) へのアクセスを許可する要求Office 365対応できません。
 
-要求が Microsoft によって受信および承認されると、3 週間の SLA が実装され、迅速化できません。  要求を受け取った場合は最初の確認応答を受け取り、完了したら最終的な確認を受け取る必要があります。
+要求が Microsoft によって受信および承認されると、3 週間の SLA が実装され、迅速化できません。  要求を受け取った場合は最初の確認応答と、要求が完了すると最終的な確認応答が送信されます。

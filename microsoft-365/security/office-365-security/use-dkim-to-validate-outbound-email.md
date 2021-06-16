@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cd04911e3663bb6b9fa00d4946b26086dc8094d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 12c7609635d9140f2e8efda3f6f1397619ce4790
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538269"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929907"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -213,18 +213,16 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 
 1. 職場または学校のアカウントを使用して、[Microsoft 365 にサインイン](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)します。
 
-2. 使用するポータルに応じて、 [protection.office.com](https://protection.office.com) または [security.microsoft.com](https://security.microsoft.com) にアクセスし、以下のパスに従います。
+2. [security.microsoft.com](https://security.microsoft.com) にアクセスし、以下のパスに従います。
 
-|protection.office.com  |security.microsoft.com  |
-|---------|---------|
-| [脅威の管理] > [ポリシー] > [追加のポリシー] > [DKIM]     | [メールとコラボレーション] > [ポリシーとルール] > [脅威ポリシー] > [追加のポリシー] > [DKIM]        | 
+3. **[メールとコラボレーション] > [ポリシーとルール] > [脅威ポリシー] > [DKIM]** の順に移動します。
 
-3. DKIM を有効にするドメインを選択してから、**[このドメインのメッセージに DKIM 署名で署名する]** で **[有効]** を選択します。各カスタム ドメインにこの手順を繰り返します。
+4. DKIM を有効にするドメインを選択してから、**[このドメインのメッセージに DKIM 署名で署名する]** で **[有効]** を選択します。各カスタム ドメインにこの手順を繰り返します。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>PowerShell を使用してカスタム ドメインの DKIM 署名を有効にするには
 
 > [!IMPORTANT]
->:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="「このドメインの DKIM キーが保存されていません。」エラー。":::
+>:::image type="content" source="../../media/dkim.png" alt-text="「このドメインの DKIM キーが保存されていません。」エラー。":::
 > DKIM を初めて構成するときに、「このドメインの DKIM キーが保存されていません。」というエラーが表示された場合、 以下の手順 2 のコマンド (たとえば、*Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) を完了して、キーを確認します。
 
 1. [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e621b79d37a2c3a22394bd51e0493334eff461c7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932883"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930273"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Defender REST API Microsoft 365コードの一般的な説明
 
@@ -62,7 +62,7 @@ DisabledFeature | 禁止 (403) | テナント機能が有効になっていま�
 DisallowedOperation | 禁止 (403) | \<the disallowed operation and the reason\>.
 NotFound | 見つかりません (404) | 一般的なエラー メッセージが見つかりません。
 ResourceNotFound | 見つかりません (404) | リソース \<the requested resource\> が見つかりませんでした。
-InternalServerError | 内部サーバー エラー (500) | *注: エラー メッセージが表示されない場合は、操作を再試行するか、解決されない場合は Microsoft にお問い合わせください。*
+InternalServerError | 内部サーバー エラー (500) | *注: エラー メッセージが表示されない場合は、操作を再試行するか、解決されない場合は [Microsoft](/microsoft-365/business-video/get-help-support) にお問い合わせください。*
 
 ## <a name="examples"></a>例
 
@@ -97,7 +97,7 @@ InternalServerError | 内部サーバー エラー (500) | *注: エラー メ�
 
 各エラー応答には、追跡用の一意の ID パラメーターが含まれる。 このパラメーターのプロパティ名は target *です*。 エラーについてお問い合わせの際に、この ID を添付すると、問題の根本原因を見つけるのに役立ちます。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [Microsoft 365Defender API の概要](api-overview.md)
 - [サポートされている Microsoft 365 Defender API](api-supported.md)

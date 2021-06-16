@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: セキュリティ コンプライアンス センターでエクスプローラーとリアルタイムの検出を使用して、脅威を効率的に調査 &amp; して対応します。
+description: セキュリティ センターでエクスプローラーとリアルタイム検出Microsoft 365を使用して、脅威を効率的に調査して対応します。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 810b5c99aa239f295fd930c1d13a6a817012b18b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 12fb7f757912a8f1c87a57c386c6f698d777752a
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245566"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930297"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -209,7 +209,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 
 - URL フライアウトの [クリック] セクションに、クリックされた完全な URL  (URL の一部であるクエリ パラメーターを含む) を表示します。 現在、URL ドメインとパスはタイトル バーに表示されます。 その情報を拡張して、完全な URL を表示します。
 
-- URL フィルター *(URL* とURL ドメインと URL ドメイン、パスの間の *修正):* 更新プログラムは、URL/クリックの評決を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 以下に例を示します。
+- URL フィルター *(URL* とURL ドメインと URL ドメイン、パスの間の *修正):* 更新プログラムは、URL/クリックの評決を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 例:
   - URL、URL ドメイン、URL ドメイン、および URL の [ドメイン] および [パス] フィルター フィールドで、プレフィックスの付きまたは指定 `http://` **なしで** 検索します。   検索は同じ結果を表示する必要があります。
   - URL でプレフィックス `https://` を検索 **します**。 値を指定しない場合、プレフィックス `http://` が使用されます。
   - `/` URL パス **、URL** ドメイン **、URL** ドメイン、およびパス フィールドの先頭と末尾 **で無視** されます。 `/` URL フィールドの末尾 **は無視** されます。
@@ -544,7 +544,7 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
 
 - セキュリティ コンプライアンス センター&、次のいずれかの役割が割り当てられている必要があります。
 
-  - 組織の管理
+  - 組織管理
   - セキュリティ管理者 (この管理者は、管理者センター Azure Active Directory割り当てることができます ( <https://aad.portal.azure.com> )
   - セキュリティ閲覧者
 

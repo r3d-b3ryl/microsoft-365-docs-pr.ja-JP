@@ -18,12 +18,12 @@ ms.collection:
 description: 新しい注目に値するトラッカーを含む脅威トラッカーについて学び、組織がセキュリティ上の懸念事項を引き受けるのに役立ちます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd658edd12bb3cc88d5adce3a2cd16529833d8d2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6d7585df980fca322a3bc5ce28f2ef2f7f53284e
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206165"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930005"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 
@@ -50,10 +50,10 @@ ms.locfileid: "51206165"
 
 トラッカーは、計画 2 の Microsoft Defender で取得する多くの素晴[Office 365ほんの一部です](office-365-ti.md)。 脅威トラッカーには[、Noteworth トラッカー](#noteworthy-trackers) [、Trending trackers、Tracked](#trending-trackers)[クエリ](#tracked-queries)、および[保存されたクエリが含まれます](#saved-queries)。
 
-組織の脅威トラッカーを表示して使用するには、[セキュリティ] コンプライアンス センター ( ) に移動し、[脅威&追跡] <https://protection.office.com>  \> **を選択します**。
+組織で脅威 Microsoft 365トラッカーを表示して使用するには、Defender ポータル ( ) に移動し、[メール] & <https://security.microsoft.com> **を** 選択 \> **します**。
 
 > [!NOTE]
-> Threat Trackers を使用するには、グローバル管理者、セキュリティ管理者、またはセキュリティ リーダーである必要があります。 「Security [& コンプライアンス センター」を参照してください](permissions-in-the-security-and-compliance-center.md)。
+> Threat Trackers を使用するには、グローバル管理者、セキュリティ管理者、またはセキュリティ リーダーである必要があります。 「Defender[ポータルのアクセス許可Microsoft 365」を参照してください](permissions-in-the-security-and-compliance-center.md)。
 
 ### <a name="noteworthy-trackers"></a>注目に値するトラッカー
 
@@ -87,15 +87,15 @@ ms.locfileid: "51206165"
 
 電子メール、コンテンツ、または Office アクティビティ (近日公開予定) を確認する場合でも、エクスプローラーとトラッカーは、セキュリティリスクと脅威の調査と追跡に役立ちます。 トラッカーは、新しい、重要な、頻繁に検索される問題を強調表示することで、ユーザーを保護するための情報を提供します。
 
-また、セキュリティ & コンプライアンス センターの概要の右下隅にある [フィードバック] ボタンをクリックすると、このセキュリティ機能または他の[](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)Microsoft 365 セキュリティ機能に関するフィードバックをいつでも提供できます。
+また、右下隅にある [フィードバック] ボタンをクリックすると、Microsoft 365または他のセキュリティ機能に関するフィードバックをいつでも提供できます。
 
-![セキュリティ/コンプライアンス センター](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Microsoft 365Defender ポータル](../../media/microsoft-365-defender-portal.png)
 
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>トラッカーと Microsoft Defender for Office 365
 
 初の注目に値する脅威では、添付ファイルによって検出された高度なマルウェアの脅威[セーフ強調表示しています](safe-attachments.md)。 E5 のお客様Office 365 Enterprise Microsoft Defender を[Office 365](defender-for-office-365.md)に使用していない場合は、サブスクリプションに含まれている必要があります。 Defender for Office 365は、メール フローをフィルター処理する他のセキュリティ ツールがある場合でも、Office 365します。 ただし、スパム対策とメール セーフ[リンク](safe-links.md)機能は、メインの電子メール セキュリティ ソリューションが電子メール セキュリティ ソリューションを使用している場合にOffice 365。
 
-![セキュリティ コンプライアンス センター Office 365 Microsoft Defender &サポート](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![Microsoft Defender for Office 365 Defender ポータルMicrosoft 365表示](../../media/policies.png)
 
 今日の脅威が多い世界では、従来のマルウェア対策スキャンのみを実行すると、攻撃から十分に保護されていないという意味です。 今日のより高度な攻撃者は、一般的に利用可能なツールを使用して、従来の署名ベースのマルウェア対策エンジンでは認識されない新しい、難読化された、または遅延攻撃を作成します。 [セーフ添付ファイル] 機能は、電子メールの添付ファイルを受け取り、仮想環境で電子メールの添付ファイルを削除して、安全か悪意かを判断します。 このデトレーション プロセスは、仮想コンピューター環境内の各ファイルを開き、ファイルを開いた後に何が起こるかを監視します。 PDF、圧縮ファイル、または Office ドキュメントの場合、悪意のあるコードはファイル内で非表示にされ、被害者がコンピューターで開くとアクティブ化されます。 電子メール フロー内のファイルを削除して分析することにより、Defender for Office 365 の機能は、動作、ファイル評価、および多くのヒューリスティック ルールに基づいてこれらの脅威を検出します。
 
@@ -105,8 +105,8 @@ ms.locfileid: "51206165"
 
 - 組織に脅威の調査と応答の機能Office 365していない場合は、「脅威の調査と応答の機能Office 365方法」を[参照してください](office-365-ti.md)。
 
-- セキュリティ チームに正しい役割とアクセス許可が割り当てられているか確認します。 グローバル管理者である必要があります。または、セキュリティ管理者または検索と削除の役割がセキュリティ コンプライアンス センターで割り&必要があります。 「Security [& コンプライアンス センター」を参照してください](permissions-in-the-security-and-compliance-center.md)。
+- セキュリティ チームに正しい役割とアクセス許可が割り当てられているか確認します。 グローバル管理者である必要があります。または、セキュリティ管理者または検索と削除の役割が Defender ポータルのセキュリティ管理者Microsoft 365必要があります。 「Defender[ポータルのアクセス許可Microsoft 365」を参照してください](permissions-in-the-security-and-compliance-center.md)。
 
-- 新しいトラッカーが環境に表示Microsoft 365します。 利用可能な場合は、ここでトラッカーを見 [つける必要があります](https://protection.office.com/)。 [脅威管理 **の脅威** \> **トラッカー] に移動します**。
+- 新しいトラッカーが環境に表示Microsoft 365します。 利用可能な場合は、ここでトラッカーを見 [つける必要があります](https://https://security.microsoft.com/)。 [メールの **送信] &の** \> **脅威追跡ツールに移動します**。
 
 - まだ行っていない場合は、Microsoft [Defender for Office 365](defender-for-office-365.md)の詳細と構成 (セーフ リンクや添付ファイル[](safe-links.md)など) をセーフ[してください](safe-attachments.md)。

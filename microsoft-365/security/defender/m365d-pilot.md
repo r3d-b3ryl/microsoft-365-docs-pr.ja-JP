@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b1616b39597a90ff8e8f7b4c92f29f75c62fea18
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3219b329c53c32e02cd29acdd41a48cd93b2e8bb
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934431"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930513"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>Defender プロジェクトのパイロット Microsoft 365実行する 
 

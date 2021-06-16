@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/09/2021
-ms.openlocfilehash: 05b2b2af87e423058d18651571d52a97ac387506
-ms.sourcegitcommit: 3584c1fe59d12512d67faf3efc955e1d67e2baa0
+ms.date: 06/14/2021
+ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52862149"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929445"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -31,17 +31,13 @@ ms.locfileid: "52862149"
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender ウイルス対策
 
-更新プログラムには、最新の状態を維持Microsoft Defender ウイルス対策 2 種類があります。
+最新Microsoft Defender ウイルス対策維持は、新しいマルウェアや攻撃の手法から保護するために必要な最新のテクノロジと機能をデバイスに提供するために重要です。 パッシブ モードで実行されている場合でも、ウイルス対策Microsoft Defender ウイルス対策[更新してください。](microsoft-defender-antivirus-compatibility.md) 更新プログラムには、最新の状態を維持Microsoft Defender ウイルス対策 2 種類があります。
 
 - セキュリティ インテリジェンスの更新プログラム
 - 製品の更新
 
-> [!IMPORTANT]
-> 最新Microsoft Defender ウイルス対策維持は、新しいマルウェアや攻撃の手法から保護するために必要な最新のテクノロジと機能をデバイスに提供するために重要です。
-> 
-> パッシブ モードで実行されている場合でも、Microsoft Defender ウイルス対策保護を[更新してください](./microsoft-defender-antivirus-compatibility.md)。
-> 
-> 最新のエンジン、プラットフォーム、署名日を確認するには、セキュリティ インテリジェンスの更新プログラム (Microsoft Defender ウイルス対策その他の Microsoft マルウェア対策に関する[ページをご覧ください](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
+> [!TIP]
+> 最新のエンジン、プラットフォーム、署名の日付を確認するには、セキュリティ インテリジェンスの更新プログラム[(Microsoft Defender ウイルス対策その他の Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates)マルウェア対策に関するページをご覧ください。
 
 ## <a name="security-intelligence-updates"></a>セキュリティ インテリジェンスの更新プログラム
 
@@ -81,7 +77,7 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 - パフォーマンスの向上。
 - サービスの改善。そして 
 - 統合の改善 (Cloud、Microsoft 365 [Defender)。](/microsoft-365/security/defender/microsoft-365-defender)
-<br/>
+<br/><br/>
 <details>
 <summary> May-2021 (プラットフォーム: 4.18.2105.4 |エンジン: 1.1.18200.4)</summary>
 

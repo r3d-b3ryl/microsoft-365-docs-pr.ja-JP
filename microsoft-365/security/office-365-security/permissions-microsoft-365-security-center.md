@@ -19,12 +19,12 @@ description: 管理者は、セキュリティに関連するすべてのタス�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e810b0146803d22246db6d4248d7d4a6a203834b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 4ed1d90bdc6e222d44179a77e9617d05909a4258
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879026"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926465"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルのアクセス許可
 

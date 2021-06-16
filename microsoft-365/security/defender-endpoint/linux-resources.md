@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 176ee89c8d60a1515855296e2565f0649f908a33
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aaf9c0a8eef4e050ca034d1aee69d24c5adb909d
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933327"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930369"
 ---
 # <a name="resources"></a>リソース
 
@@ -31,6 +31,7 @@ ms.locfileid: "51933327"
 
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -69,6 +70,7 @@ ms.locfileid: "51933327"
    ```bash
    mdatp log level set --level info
    ```
+
    ```Output
    Log level configured successfully
    ```
@@ -77,7 +79,8 @@ ms.locfileid: "51933327"
 
 インストール中にエラーが発生した場合、インストーラーは一般的なエラーのみを報告します。
 
-詳細ログはに保存されます `/var/log/microsoft/mdatp_install.log` 。 インストール中に問題が発生した場合は、このファイルを送信して、原因の診断に役立ちます。
+詳細ログはに保存されます `/var/log/microsoft/mdatp/install.log` 。
+インストール中に問題が発生した場合は、このファイルを送信して、原因の診断に役立ちます。
 
 ## <a name="uninstall"></a>アンインストール
 
@@ -97,14 +100,14 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 
 既定では、コマンド ライン ツールは人間が読み取り可能な形式で結果を出力します。 さらに、このツールは JSON としての結果の出力もサポートしています。これは自動化シナリオに役立ちます。 出力を JSON に変更するには、次 `--output json` のコマンドに渡します。
 
-### <a name="supported-commands"></a>サポートされているコマンド
+### <a name="supported-commands"></a>サポート対象コマンド
 
 次の表に、最も一般的なシナリオの一部のコマンドを示します。 ターミナル `mdatp help` から実行して、サポートされているコマンドの完全な一覧を表示します。
 
-|Group                 |シナリオ                                                |command                                                                |
+|Group                 |シナリオ                                                |コマンド                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |構成         |リアルタイム保護のオン/オフ                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|構成         |動作監視のオン/オフを切り替えます                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
+|構成         |動作監視のオン/オフを切り替えます                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
 |構成         |クラウド保護のオン/オフ                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |構成         |製品診断のオン/オフ                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |構成         |自動サンプル申請のオン/オフ                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
@@ -120,14 +123,14 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 |構成         |PUA 保護を有効にする                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
 |構成         |PUA 保護をオフにする                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
 |構成         |PUA 保護の監査モードを有効にする                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
-|Diagnostics           |ログ レベルの変更                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
-|Diagnostics           |診断ログの生成                                |`mdatp diagnostic create --path [directory]`                           |
+|診断           |ログ レベルの変更                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
+|診断           |診断ログの生成                                |`mdatp diagnostic create --path [directory]`                           |
 |正常性                |製品の正常性を確認する                              |`mdatp health`                                                         |
-|Protection            |パスをスキャンする                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
-|Protection            |クイック スキャンを実行する                                         |`mdatp scan quick`                                                     |
-|Protection            |フル スキャンを実行する                                          |`mdatp scan full`                                                      |
-|Protection            |進行中のオンデマンド スキャンをキャンセルする                        |`mdatp scan cancel`                                                    |
-|Protection            |セキュリティ インテリジェンス更新プログラムの要求                  |`mdatp definitions update`                                             |
+|保護            |パスをスキャンする                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
+|保護            |クイック スキャンを実行する                                         |`mdatp scan quick`                                                     |
+|保護            |フル スキャンを実行する                                          |`mdatp scan full`                                                      |
+|保護            |進行中のオンデマンド スキャンをキャンセルする                        |`mdatp scan cancel`                                                    |
+|保護            |セキュリティ インテリジェンス更新プログラムの要求                  |`mdatp definitions update`                                             |
 |保護履歴    |完全な保護履歴を印刷する                       |`mdatp threat list`                                                    |
 |保護履歴    |脅威の詳細を取得する                                      |`mdatp threat get --id [threat-id]`                                    |
 |検疫の管理 |検疫済みファイルの一覧表示                              |`mdatp threat quarantine list`                                         |

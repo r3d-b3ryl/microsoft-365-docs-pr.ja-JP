@@ -20,12 +20,12 @@ description: ユーザーがアップロードSharePointファイル内のウイ
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd38b196c106a36fb1a1bfc0a441620b1c5b8ba5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ab11d4c1e2a064ad0717e6619f72a38b0cbc831
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205333"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932832"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>オンライン、SharePoint、およびOneDriveに組み込Microsoft Teams
 
@@ -68,11 +68,11 @@ Microsoft 365は SharePoint、ユーザーがオンライン、OneDrive、およ
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>感染したファイルを OneDrive の同期クライアントが同期しようとするとどうなりますか?
 
-OneDriveクライアントは、ウイルスを含むファイルをダウンロードしません。 ファイルを同期できないという通知が同期クライアントに表示されます。
+悪意のあるファイルがマルウェアにアップロードOneDrive、マルウェアとしてマークされる前にローカル コンピューターに同期されます。 マルウェアとしてマークされた後、ユーザーはローカル コンピューターから同期されたファイルを開くことができません。
 
 ## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>Microsoft Defender を使用した機能の拡張Office 365
 
-Microsoft 365 Office 365 用[Microsoft Defender](defender-for-office-365.md)をサブスクリプションに含める組織、またはアドオンとして購入した組織では、セーフ 添付ファイルを SharePoint、OneDrive、および Microsoft Teams に対して有効にして、レポートと保護を強化できます。 詳細については、「添付ファイル[のセーフ、SharePoint、OneDrive」を](mdo-for-spo-odb-and-teams.md)参照Microsoft Teams。
+Microsoft 365 Office 365 用[Microsoft Defender](defender-for-office-365.md)をサブスクリプションに含める組織、またはアドオンとして購入した組織では、セーフ 添付ファイルを SharePoint、OneDrive、および Microsoft Teams に対して有効にして、レポートと保護を強化できます。 詳細については、「[SharePoint、OneDrive、Microsoft Teams の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)」を参照してください。
 
 ## <a name="related-articles"></a>関連記事
 

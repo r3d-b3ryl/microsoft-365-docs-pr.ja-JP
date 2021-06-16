@@ -3,7 +3,7 @@ title: Office 365 Security、Microsoft Defender for Office 365、EOP、MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/13/2020
+ms.date: 06/11/2021
 audience: Admin
 ms.topic: conceptual
 localization_priority: Normal
@@ -16,26 +16,25 @@ ms.collection:
 description: Office 365 におけるセキュリティについて、EOP、Defender for Office 365 プラン 1 およびプラン 2、セキュリティの標準構成と厳格な構成の違いなどを説明します。 お持ちのセキュリティ製品を理解し、組織のメールやファイルを保護する方法を学びます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29602d5fe62c84b9293522a94b71c550d360b3e3
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 6ecdfe324ded6224745b0e2eac087e432ac76c83
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877802"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930249"
 ---
-# <a name="office-365-security-overview"></a>Office 365 セキュリティの概要
+# <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender for Office 365セキュリティの概要
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
-
-この記事では、クラウドで利用可能な新しいセキュリティ プロパティについて紹介します。 この記事は、セキュリティ運用センターのメンバーや初めてセキュリティ管理者となったユーザーに役立つ内容となっており、セキュリティ機能を復習する目的でも利用できます。
+この記事では、クラウドでセキュリティ プロパティを管理Office 365 Microsoft Defender について説明します。 この記事は、セキュリティ運用センターのメンバーや初めてセキュリティ管理者となったユーザーに役立つ内容となっており、セキュリティ機能を復習する目的でも利用できます。
 
 > [!CAUTION]
 > **Outlook.com**、**Microsoft 365 Family**、または **Microsoft 365 Personal** を使用していて、*安全なリンク* または *安全な添付ファイル* に関する情報が必要な場合は、***このリンクをクリックして***[「Microsoft 365 サブスクライバー用の Outlook.com の高度なセキュリティ](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
-## <a name="office-365-security-spelled-out"></a>Office 365 セキュリティの説明
+## <a name="what-is-defender-for-office-365-security"></a>セキュリティに関する Defender Office 365
 
 すべての Office 365 サブスクリプションにはセキュリティ機能が備わっています。 目標と実行可能なアクションは、これらのさまざまなサブスクリプションの目的によって異なります。 Office 365 セキュリティには、サブスクリプションの種類に結び付けられている、3 つの主なセキュリティ サービス (または製品) があります。
 
@@ -57,8 +56,6 @@ Office 365 セキュリティ は、EOP で提供される中心的な保護機�
 
 しかし、アーキテクチャの観点から見た場合、各コンポーネントをセキュリティの累積的な層と捉え、各層にはセキュリティに関する特定の強調点があると考えることが可能です。 以下のように理解できます。
 
-<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
-
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP と Microsoft Defender for Office 365 およびこれらの間の関係とともにサービスの強調点が示され、メール認証に関するメモが含まれています":::
 
 これらのサービスのそれぞれでは保護、検出、調査、対応のいずれかを強調していますが、***すべて** のサービスは保護、検出、調査、および対応の *_いずれの_**目標も達成できます。
@@ -73,8 +70,6 @@ Office 365 E3 以下をお持ちの場合は、EOP が含まれいますが、�
 > お持ちのサブスクリプションが Office 365 E3 と E5 のどちらでもない場合でも、Microsoft Defender for Office 365 P1 にアップグレードするオプションが提供されているかどうかを確認できます。 アップグレードを検討する場合は、Microsoft Defender for Office 365 P1へのアップグレード対象のサブスクリプションの一覧を[この Web サイト](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids)で確認できます (ページの最下部にある細則をご確認ください)。
 
 ## <a name="the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365"></a>EOP から Microsoft Defender for Office 365 への Office 365 セキュリティの段階的構造
-
-![EOP と Microsoft Defender for Office 365 およびそれらの保護から検出、調査、対応に至るセキュリティの強調点。 EOP 以上に対しては、メール認証の構成 (少なくとも DKIM および DMARC) を設定するようにしてください。](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
 
 > [!IMPORTANT]
 > 詳細については、「[Exchange Online Protection](exchange-online-protection-overview.md)」および「[Defender for Office 365](defender-for-office-365.md)」を参照してください。
@@ -159,3 +154,4 @@ Microsoft Defender for Office 365 P1 および P2 の詳細については、**[
 [脅威エクスプローラーまたはリアルタイム検出を使用する](threat-explorer.md)
 
 [Microsoft Defender for Office 365 の攻撃シミュレーター](attack-simulator.md)を使用する
+

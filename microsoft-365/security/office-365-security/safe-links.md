@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: この記事では、管理者は、フィッシングや悪意のある URL を使用する他の攻撃から組織を保護するために、Office 365 用 Defender の セーフ リンク保護について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 406450752085817cb49e3cf08a90c0087af3d94b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 9775c67a35d45595f68cd364dc4d70e9985b7e9e
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879290"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930525"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフMicrosoft Defender for Office 365
 
@@ -294,7 +294,7 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 各 セーフ リンク ポリシーには、リンクスキャンによって書き換えされない URL を指定するために使用できる次の URL リストを書き換セーフ含まれます。 つまり、ポリシーに含まれるユーザーは、ポリシーに含まれているユーザーが、リンクによってブロックされる指定された URL にアクセスセーフします。 リンク ポリシーごとに異なるリストセーフ構成できます。 ポリシー処理は、最初の (優先度が最も高い) ポリシーがユーザーに適用された後に停止します。 そのため、1 つの **み次** の URL リストを書き換えないと、複数のアクティブ なリンク ポリシーに含まれるユーザーセーフ適用されます。
 
-新規または既存の セーフ リンク ポリシーのリストにエントリを追加するには、「Create[セーフ Links ポリシー](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) 」または「セーフ リンク ポリシーを変更する」[を参照してください](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)。
+新規または既存の セーフ リンク ポリシーのリストにエントリを追加するには[、「Microsoft 365 Defender](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)ポータルを使用して セーフ リンク ポリシーを作成する」または[「Microsoft 365 Defender](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)ポータルを使用して セーフ Links ポリシーを変更する」を参照してください。
 
 **注**:
 
