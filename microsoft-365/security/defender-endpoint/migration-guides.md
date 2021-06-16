@@ -17,14 +17,14 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 4d10de35358d528f004ee11e931fc6f41ce20482
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a0b1f82ae26ba1103ed4cc7eb0be7e9c376b5f52
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930501"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933037"
 ---
-# <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>エンドポイントとエンドポイントの Microsoft Defender に切り替Microsoft Defender ウイルス対策
+# <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender への切り替え
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -34,14 +34,14 @@ ms.locfileid: "52930501"
 
 ## <a name="migration-guides"></a>移行ガイド
 
-サポートされていない Defender ソリューションから Microsoft Defender for Endpoint への切り替Microsoft 365検討している場合は、Microsoft Defender ウイルス対策の移行ガイダンスを参照してください。 展開プロセスの場所を最も適切に表すシナリオを選択し、ガイダンスを参照してください。
+Defender for Endpoint への移行を検討している場合は、ヘルプを提供するガイダンスがあります。 次の表で、シナリオを確認します。 状況を最も適切に表すシナリオを選択し、推奨されるガイダンスを参照してください。
 
-|シナリオ |ガイダンス |
-|:--|:--|
-|エンドポイント保護ソリューションはまだありませんが、Microsoft Defender for Endpoint の動作について詳& Microsoft Defender ウイルス対策します。  |[Microsoft Defender for Endpoint 評価ラボ](evaluation-lab.md)   |
-|Microsoft Defender for Endpoint & Microsoft Defender ウイルス対策し、すべての設定と構成を行う上で役立つ情報が必要です。  |[Microsoft Defender for Endpoint 展開ガイド](deployment-phases.md)  |
-|Microsoft 以外のエンドポイント保護ソリューションから Microsoft Defender for Endpoint & Microsoft Defender ウイルス対策 に移行する予定です。 |[エンドポイント用 Microsoft Defender への切り替え](switch-to-microsoft-defender-migration.md)   |
-|Microsoft Defender for Endpoint & Microsoft Defender ウイルス対策 に移行し、追加機能の構成やセキュリティ設定の微調整など、次の手順に関するヘルプが必要です。 | [移行後の Microsoft Defender for Endpoint の管理](manage-atp-post-migration.md) |
+| シナリオ | ガイダンス |
+|:----|:----|
+| エンドポイント保護ソリューションがまだ提供されていないので、Defender for Endpoint について詳しくはお知りください。 <p> 環境で展開する前に、Defender for Endpoint の動作を確認する必要があります。  | [Microsoft Defender for Endpoint 評価ラボ](evaluation-lab.md)   |
+| Defender for Endpoint が既に存在し、すべての設定と構成に役立つ情報が必要です。  | [Microsoft Defender for Endpoint 展開ガイド](deployment-phases.md)  |
+| Microsoft 以外のエンドポイント保護ソリューションから Defender for Endpoint に切り替え、Microsoft Defender ウイルス対策。 <p> 移行プロセスの概要と切り替え方法を取得する必要があります。 |[エンドポイント用 Microsoft Defender への切り替え](switch-to-microsoft-defender-migration.md)   |
+| Defender for Endpoint に移行またはオンボード済みです。 セキュリティ設定の管理、その他の機能の構成、セキュリティ ポリシーの微調整など、次の手順に関するヘルプが必要です。 | [移行後の Microsoft Defender for Endpoint の管理](manage-atp-post-migration.md) |
 
 
 ## <a name="do-you-have-feedback-for-us"></a>フィードバックをお寄せください。

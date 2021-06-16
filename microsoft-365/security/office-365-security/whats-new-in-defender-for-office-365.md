@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0aa8e10545b43f6e0ee985ac11b161a3b21c3a91
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929556"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932820"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -42,13 +42,13 @@ ms.locfileid: "52929556"
 > [!TIP]
 > Microsoft Defender for Office 365ありませんか? [試用版を開始するために販売に問い合わせ。](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
-## <a name="aprilmay-2021"></a>2021 年 4 月/5 月 
+## <a name="aprilmay-2021"></a>2021 年 4 月/5 月
 
 - [[電子メール](mdo-email-entity-page.md)エンティティ] ページ : 脅威、認証と検出、発発の詳細、および新しい電子メール プレビュー エクスペリエンスに関する情報が充実した電子メールの統合された 360 度ビュー。
 - [Office 365管理 API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): 配信アクション、元の配信場所と最新の配信場所、および更新された検出の詳細を追加する EmailEvents (RecordType 28) の更新。
-- [脅威分析 for Defender for Office 365](/microsoft-365/security/defender/threat-analytics): アクティブな脅威アクター、一般的な手法、攻撃表面を表示し、進行中のキャンペーンに関する Microsoft の研究者からの広範な報告を表示します。 
+- [脅威分析 for Defender for Office 365](/microsoft-365/security/defender/threat-analytics): アクティブな脅威アクター、一般的な手法、攻撃表面を表示し、進行中のキャンペーンに関する Microsoft の研究者からの広範な報告を表示します。
 
-## <a name="februarymarch-2021"></a>2021 年 2 月/3 月 
+## <a name="februarymarch-2021"></a>2021 年 2 月/3 月
 
 - 検索エクスペリエンスでのアラート ID の統合 (アラート ID とAlert-Explorerナビゲーションを使用[した検索](threat-explorer.md))
 - 狩猟エクスペリエンスでのレコードのエクスポートの制限を 9990 から 200,000 に [増やす](threat-explorer.md)
@@ -89,7 +89,7 @@ ms.locfileid: "52929556"
   - 高度な NOT フィルター (これらは、含まれているか、含めない、などを含む高度なフィルター オプションです)
   - 詳細な時間フィルター (日、時間、30 分)
 
-- インシデント **ウィジェットが** アクション センター **ウィジェットに変更** されました。 (セキュリティ ウィジェットを表示するには、Defender ポータルの [Microsoft 365] に移動し、グループ&**します。** \>**レビュー**.)(Microsoft Defender for Office 365プラン 2)
+- インシデント **ウィジェットが** アクション センター **ウィジェットに変更** されました。 (セキュリティ ウィジェットをコンプライアンス センターのセキュリティ &表示するには、[脅威の管理]**に移動します。** \>**レビュー**.)(Microsoft Defender for Office 365プラン 2)
 
 - [セーフドキュメントのMicrosoft 365](safe-docs.md) **(プレビュー)**
 

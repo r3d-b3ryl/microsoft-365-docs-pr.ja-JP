@@ -20,12 +20,12 @@ description: 管理者は、セーフ SharePoint、OneDrive、Microsoft Teams、
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 374e67626eab07cc8ab89a52554658a31e661eec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a654db40e5dec8d23d07ec7455216fe4e0a8c0e7
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929949"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933013"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
@@ -53,9 +53,13 @@ Microsoft Defender for Office 365、SharePoint、OneDrive、Microsoft Teamsフ�
 
 ## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>手順 1: Microsoft 365 Defender ポータルを使用して、セーフ、SharePoint、OneDriveのMicrosoft Teams
 
-1. [Defender ポータルMicrosoft 365で、[ポリシー] &[脅威ポリシー] セーフに移動し、[グローバル設定] を \>  \> **クリックします**。
+1. [Defender ポータルMicrosoft 365に移動し、[脅威ポリシー  &ポリシー] セクションの [添付ファイルセーフ \>  \>  \> **移動します**。
 
-2. 表示される **[グローバル設定**] の [Defender を有効にする] Office 365、SharePoint、OneDrive、および **Microsoft Teamsします。** トグルを右に移動し、[トグル] をオンに ![ ](../../media/scc-toggle-on.png) し、セーフ、SharePoint、OneDrive、Microsoft Teams。
+2. [添付ファイル **セーフ] ページで**、[グローバル設定]**をクリックします**。
+
+3. 表示される **[グローバル設定**] フライアウトで、[ファイルの保護] セクションSharePoint、OneDrive、Microsoft Teamsします。 
+
+   **SharePoint、OneDrive、** および Microsoft Teams の Office 365 の Defender をオンに切り替え、SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルをオンにします。 ![ ](../../media/scc-toggle-on.png)
 
    完了したら、**[保存]** をクリックします。
 
@@ -71,7 +75,9 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 
 ## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>手順 2: (推奨) オンライン PowerShell SharePointを使用して、ユーザーが悪意のあるファイルをダウンロードすることを防止する
 
-既定では、ユーザーは ATP によって検出された悪意のあるファイルを開く、移動、コピー、または共有できます。 ただし、悪意のあるファイルを削除してダウンロードできます。
+既定では、SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルによって検出された悪意のあるファイルを開く、移動、コピー、または共有 <sup>\*</sup> Microsoft Teams。 ただし、悪意のあるファイルを削除してダウンロードできます。
+
+<sup>\*</sup> ユーザーが [アクセスの管理 **] に移動** した場合でも、[ **共有** ] オプションは引き続き使用できます。
 
 ユーザーが悪意のあるファイルをダウンロードできない場合は、オンライン[powerShell SharePointに](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)接続し、次のコマンドを実行します。
 
@@ -90,34 +96,31 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 SharePoint、OneDrive、および Microsoft Teams の添付ファイルが悪意のあるファイルを検出したときに、セーフ 管理者に通知するアラート ポリシーを作成できます。 アラートの詳細については、「Defender ポータルでアクティビティ通知を作成[する」をMicrosoft 365してください](../../compliance/create-activity-alerts.md)。
 
-1. Defender ポータル [Microsoft 365に](https://security.microsoft.com)移動し、[ポリシー] &**アラート** \> **ポリシーを** 開きます <https://security.microsoft.com/alertpolicies> 。
+1. Defender ポータルMicrosoft 365に移動し、[ポリシー]  & \> **アラート ポリシーを** 開きます <https://security.microsoft.com/alertpolicies> 。
 
 2. [アラート ポリシー **] ページで** 、[新しいアラート ポリシー **] をクリックします**。
 
 3. 新 **しいアラート ポリシー ウィザード** がフライアウトで開きます。[アラートに **名前を付け] ページ** で、次の設定を構成します。
-
    - **名前**: 一意でわかりやすい名前を入力します。 たとえば、ライブラリ内の悪意のあるファイル。
    - **説明**: オプションの説明を入力します。 たとえば、悪意のあるファイルがオンライン、SharePoint、またはOneDriveで検出Microsoft Teams。
-   - **重大度 :** 既定値 [低]**を選択** のままにするか、[中] または [高]**を****選択します**。
-   - **カテゴリ**: [脅威の **管理] を選択します**。
+   - **重大度 :** ドロップダウン リストから **[低****]、[中**]、または [高] を選択します。
+   - **カテゴリ**: ドロップダウン **リストから [脅威** の管理] を選択します。
 
    完了したら、**[次へ]** をクリックします。
 
 4. [アラート設定 **の作成] ページ** で、次の設定を構成します。
-
-   - **何を通知しますか?:** アクティビティは: ファイル内の **検出されたマルウェアを選択します**。
-   - **アラートをトリガーする方法:** アクティビティが選択したルールと一致する度に既定値 **のままに** します。
+   - **何を通知しますか?** section \> **Activity is** \> Select **Detected malware in file from** the drop down list.
+   - **アラートをトリガーする** 方法セクション: 既定値のままにする **アクティビティが選択したルールと一致する度** に指定します。
 
    完了したら、**[次へ]** をクリックします。
 
 5. [受信者 **の設定] ページで** 、次の設定を構成します。
-
-   - **電子メール通知の送信**: この設定が選択されているのを確認します。 [ **電子メールの受信者]** ボックスで、悪意のあるファイルが検出された場合に通知を受け取る必要がある 1 つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ リーダーを選択します。
+   - [電子 **メール通知の送信] が** 選択されているのを確認します。 [ **電子メールの受信者]** ボックスで、悪意のあるファイルが検出された場合に通知を受け取る必要がある 1 つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ リーダーを選択します。
    - **1 日の通知** の制限 : 既定値 [制限 **なし] を** 選択のままにします。
 
    完了したら、**[次へ]** をクリックします。
 
-6. [設定 **の確認] ページで** 設定を確認し、任意のセクションで [編集] をクリックして変更を加えます。
+6. [設定 **の確認] ページで** 、設定を確認します。 各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 または、**[戻る]** をクリックするか、ウィザードで特定のページを選択します。
 
    [ポリシー **をすぐ有効** にしますか? ] セクションで、既定値 **は [は** い] のままにし、右クリックしてオンにしてください。
 
@@ -139,7 +142,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 - SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルが正常に有効になっていることを確認するには、次のいずれかの手順を実行します。
 
-  - Microsoft 365 [Defender](https://security.microsoft.com)ポータルで、[ポリシー & **rules** Threat \> **Policies** \> **セーフ** 添付ファイル] に移動し、[グローバル設定] を選択し、[SharePoint、OneDrive、および Microsoft Teams の Office 365 の Defender を有効にする] 設定の値を **確認** します。
+  - Microsoft 365 Defender ポータルで、[ポリシー & **rules** Threat \>  \> **Policies Policies]** セクション \> **セーフ Attachments** に移動し、[グローバル設定] を選択し、[SharePoint、OneDrive、および Microsoft Teams の Office 365 の Defender を有効にする] 設定の値 **を確認** します。
 
   - PowerShell Exchange Onlineで、次のコマンドを実行してプロパティ設定を確認します。
 
@@ -158,9 +161,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
   構文とパラメーターの詳細については [、「Get-SPOTenant」を参照してください](/powershell/module/sharepoint-online/Set-SPOTenant)。
 
 - 検出されたファイルのアラート ポリシーが正常に構成されたことを確認するには、次の手順を実行します。
-
   - Defender ポータルMicrosoft 365に移動し、[ポリシー]  &アラート ポリシーを選択し、 \>  \> 設定を確認します。
-
   - Defender Microsoft 365 PowerShell で、アラート ポリシーの名前に置き換え、次のコマンドを実行し、プロパティ \<AlertPolicyName\> 値を確認します。
 
     ```powershell

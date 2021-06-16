@@ -17,26 +17,25 @@ ROBOTS: NOINDEX
 description: ユーザーは、アクセス許可を持つ共有メールボックスに送信された検疫済みメッセージを表示および処理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d6aed4a6e3bc725635558a5e8394b671d11f47c
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 4b958bb07660f4e0c93865300e190c713148a21d
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929853"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933057"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>共有メールボックスから検疫済みメッセージを表示および解放する
 
 > [!NOTE]
 > この記事で説明する機能は、現在プレビュー中であり、すべてのユーザーが利用できる機能ではなく、変更される可能性があります。
 
-ユーザーは [、「EOP](find-and-release-quarantined-messages-as-a-user.md)で検疫済みメッセージをユーザーとして検索して解放する」の説明に従って、検疫済みメッセージを受信者の 1 つとして管理できます。 しかし、「共有メールボックス」の説明に従って、ユーザーがフル アクセスおよび Send As または Send on Behalf のアクセス許可を持つ共有メールボックス[については、Exchange Online?](/exchange/collaboration-exo/shared-mailboxes)
+ユーザーは [、「EOP](find-and-release-quarantined-messages-as-a-user.md)で検疫済みメッセージをユーザーとして検索して解放する」の説明に従って、検疫済みメッセージを受信者の 1 つとして管理できます。 しかし、「共有 **メールボックス**」の説明に従って、ユーザーがフル アクセスおよび Send As または Send on Behalf のアクセス許可を持つ共有メールボックス [については](/exchange/collaboration-exo/shared-mailboxes)、Exchange Online?
 
 以前は、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理するには、管理者が共有メールボックスの自動マッピングを有効のままにする必要がありました (管理者がユーザーに別のメールボックスへのアクセス権を与える場合、既定で有効になっています)。 ただし、ユーザーがアクセスできるメールボックスのサイズと数に応じて、Outlook がユーザーがアクセスできるすべてのメールボックスを開くしようとすると、パフォーマンスが低下する可能性があります。 このため、多くの管理者が共有メールボックス [の自動マップを削除する選択をします](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
 
 これで、ユーザーが共有メールボックスに送信された検疫済みメッセージを管理するために、自動マッピングは不要になります。 動作します。 共有メールボックスに送信された検疫済みメッセージにアクセスするには、次の 2 つの方法があります。
 
 - 管理者がスパム対策[](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)ポリシーでエンド ユーザースパム通知を有効にしている場合、共有メールボックス内のエンド ユーザースパム通知にアクセスできるユーザーは、通知の [確認] ボタンをクリックして、Microsoft 365 Defender ポータルで検疫に移動できます。 この方法では、ユーザーが共有メールボックスに送信された検疫済みメッセージのみを管理できます。 ユーザーは、このコンテキストで独自の検疫メッセージを管理できません。
-
 - ユーザーは[、Defender ポータルの検疫にMicrosoft 365できます](find-and-release-quarantined-messages-as-a-user.md)。 既定では、ユーザーに送信されたメッセージだけが表示されます。 ただし、ユーザーは[結果の並べ替え] (既定では [メッセージ **ID]** ボタン) を [受信者の電子メール アドレス] に変更し、共有メールボックスの電子メール アドレスを入力し、[更新] をクリックして、共有メールボックスに送信された検疫済みメッセージを確認できます。 
 
   ![検疫済みメッセージを受信者の電子メール アドレスで並べ替える。](../../media/quarantine-sort-results-by-recipient-email-address.png)
