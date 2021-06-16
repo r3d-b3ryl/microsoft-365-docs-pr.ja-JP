@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 ms.date: ''
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,51 +19,51 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: PowerShell を使用して、Microsoft 365 コンプライアンス センターとは別に、コマンド ラインから保持ラベルを作成および発行する方法について説明します。
-ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918223"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924965"
 ---
-# <a name="create-and-publish-retention-labels-by-using-powershell"></a><span data-ttu-id="4d2d3-103">PowerShell を使用して保持ラベルを作成および発行する</span><span class="sxs-lookup"><span data-stu-id="4d2d3-103">Create and publish retention labels by using PowerShell</span></span>
+# <a name="create-and-publish-retention-labels-by-using-powershell"></a><span data-ttu-id="4acea-103">PowerShell を使用して保持ラベルを作成および発行する</span><span class="sxs-lookup"><span data-stu-id="4acea-103">Create and publish retention labels by using PowerShell</span></span>
 
-><span data-ttu-id="4d2d3-104">*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*</span><span class="sxs-lookup"><span data-stu-id="4d2d3-104">*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*</span></span>
+><span data-ttu-id="4acea-104">*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*</span><span class="sxs-lookup"><span data-stu-id="4acea-104">*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*</span></span>
 
-<span data-ttu-id="4d2d3-105">Microsoft 365 のドキュメントやメールを保持または削除するために[保持ラベル](retention.md)を使用することを決定した後で、非常に多くの、時には数百個もの保持ラベルを作成して発行することが必要であることが判明する場合があります。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-105">After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have realized that you have many and possibly hundreds of retention labels to create and publish.</span></span> <span data-ttu-id="4d2d3-106">大量に保持ラベルを作成する場合、Microsoft 365 コンプライアンス センターから[ファイル プラン](file-plan-manager.md)を使用して保持ラベルを作成することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-106">The recommended method to create retention labels at scale is by using [file plan](file-plan-manager.md) from the Microsoft 365 compliance center.</span></span> <span data-ttu-id="4d2d3-107">ただし、[PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) も使用できます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-107">However, you can also use [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).</span></span>
+<span data-ttu-id="4acea-105">Microsoft 365 のドキュメントやメールを保持または削除するために[保持ラベル](retention.md)を使用することを決定した後で、非常に多くの、時には数百個もの保持ラベルを作成して発行することが必要であることが判明する場合があります。</span><span class="sxs-lookup"><span data-stu-id="4acea-105">After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have realized that you have many and possibly hundreds of retention labels to create and publish.</span></span> <span data-ttu-id="4acea-106">大量に保持ラベルを作成する場合、Microsoft 365 コンプライアンス センターから[ファイル プラン](file-plan-manager.md)を使用して保持ラベルを作成することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="4acea-106">The recommended method to create retention labels at scale is by using [file plan](file-plan-manager.md) from the Microsoft 365 compliance center.</span></span> <span data-ttu-id="4acea-107">ただし、[PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) も使用できます。</span><span class="sxs-lookup"><span data-stu-id="4acea-107">However, you can also use [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).</span></span>
   
-<span data-ttu-id="4d2d3-108">この記事の情報、テンプレート ファイルと例、およびスクリプトを参考にすると、保持ラベルを一括作成し、保持ラベル ポリシーでそれらを発行することができます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-108">Use the information, template files and examples, and script in this article to help you bulk-create retention labels and publish them in retention label policies.</span></span> <span data-ttu-id="4d2d3-109">そのようにすると、それらの保持ラベルを[管理者とユーザーが適用する](create-apply-retention-labels.md#how-to-apply-published-retention-labels)ことができるようになります。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-109">Then, the retention labels can be [applied by administrators and users](create-apply-retention-labels.md#how-to-apply-published-retention-labels).</span></span>
+<span data-ttu-id="4acea-108">この記事の情報、テンプレート ファイルと例、およびスクリプトを参考にすると、保持ラベルを一括作成し、保持ラベル ポリシーでそれらを発行することができます。</span><span class="sxs-lookup"><span data-stu-id="4acea-108">Use the information, template files and examples, and script in this article to help you bulk-create retention labels and publish them in retention label policies.</span></span> <span data-ttu-id="4acea-109">そのようにすると、それらの保持ラベルを[管理者とユーザーが適用する](create-apply-retention-labels.md#how-to-apply-published-retention-labels)ことができるようになります。</span><span class="sxs-lookup"><span data-stu-id="4acea-109">Then, the retention labels can be [applied by administrators and users](create-apply-retention-labels.md#how-to-apply-published-retention-labels).</span></span>
 
-<span data-ttu-id="4d2d3-110">説明されている手順では、自動適用される保持ラベルはサポートされません。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-110">The supplied instructions don't support retention labels that are auto-applied.</span></span>
+<span data-ttu-id="4acea-110">説明されている手順では、自動適用される保持ラベルはサポートされません。</span><span class="sxs-lookup"><span data-stu-id="4acea-110">The supplied instructions don't support retention labels that are auto-applied.</span></span>
 
-<span data-ttu-id="4d2d3-111">概要:</span><span class="sxs-lookup"><span data-stu-id="4d2d3-111">Overview:</span></span> 
+<span data-ttu-id="4acea-111">概要:</span><span class="sxs-lookup"><span data-stu-id="4acea-111">Overview:</span></span> 
 
-1. <span data-ttu-id="4d2d3-112">Excel で、保持ラベルのリストとそれらの保持ラベル ポリシーのリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-112">In Excel, create a list of your retention labels and a list of their retention label policies.</span></span>
+1. <span data-ttu-id="4acea-112">Excel で、保持ラベルのリストとそれらの保持ラベル ポリシーのリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="4acea-112">In Excel, create a list of your retention labels and a list of their retention label policies.</span></span>
 
-2. <span data-ttu-id="4d2d3-113">PowerShell を使用して、それらのリストに含まれる保持ラベルと保持ラベル ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-113">Use PowerShell to create the retention labels and retention label policies in those lists.</span></span>
+2. <span data-ttu-id="4acea-113">PowerShell を使用して、それらのリストに含まれる保持ラベルと保持ラベル ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="4acea-113">Use PowerShell to create the retention labels and retention label policies in those lists.</span></span>
   
-## <a name="disclaimer"></a><span data-ttu-id="4d2d3-114">免責事項</span><span class="sxs-lookup"><span data-stu-id="4d2d3-114">Disclaimer</span></span>
+## <a name="disclaimer"></a><span data-ttu-id="4acea-114">免責事項</span><span class="sxs-lookup"><span data-stu-id="4acea-114">Disclaimer</span></span>
 
-<span data-ttu-id="4d2d3-115">この記事で提供されるサンプル スクリプトは、Microsoft のいかなる標準サポート プログラムまたはサービスの下でもサポートされません。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-115">The sample scripts provided in this article aren't supported under any Microsoft standard support program or service.</span></span> <span data-ttu-id="4d2d3-116">サンプル スクリプトは現状のまま提供され、いかなる保証も伴いません。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-116">The sample scripts are provided AS IS without warranty of any kind.</span></span> <span data-ttu-id="4d2d3-117">さらに、Microsoft は、商品性、特定目的への適合性を含む一切の黙示の保証をいたしかねます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-117">Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose.</span></span> <span data-ttu-id="4d2d3-118">本サンプル スクリプトおよびドキュメントの使用または性能に起因するすべてのリスクは、お客様が負うものとします。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-118">The entire risk arising out of the use or performance of the sample scripts and documentation remains with you.</span></span> <span data-ttu-id="4d2d3-119">サンプル スクリプトおよびドキュメントを使用したこと、または使用できなかったことに伴って生じるいかなる損害 (業務利益の損失、業務の中断、業務情報の損失、金銭上の損失、その他一切の損害) についても、Microsoft、Microsoft に帰属する作者、スクリプトの作成、製造、または納入に関与したその他のすべての人員は、いかなる場合も責めを負わないものとします。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-119">In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
+<span data-ttu-id="4acea-p103">この記事で提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。</span><span class="sxs-lookup"><span data-stu-id="4acea-p103">The sample scripts provided in this article aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
   
-## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a><span data-ttu-id="4d2d3-120">手順 1: 保持ラベル用の .csv ファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="4d2d3-120">Step 1: Create a .csv file for the retention labels</span></span>
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a><span data-ttu-id="4acea-120">手順 1: 保持ラベル用の .csv ファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="4acea-120">Step 1: Create a .csv file for the retention labels</span></span>
 
-1. <span data-ttu-id="4d2d3-121">4 種類の異なる保持ラベルのテンプレートおよびエントリ例を含む、次のサンプル .csv ファイルをコピーして、Excel に貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-121">Copy the following sample .csv file for a template and example entries for four different retention labels, and paste them into Excel.</span></span> 
+1. <span data-ttu-id="4acea-121">4 種類の異なる保持ラベルのテンプレートおよびエントリ例を含む、次のサンプル .csv ファイルをコピーして、Excel に貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="4acea-121">Copy the following sample .csv file for a template and example entries for four different retention labels, and paste them into Excel.</span></span> 
 
-2. <span data-ttu-id="4d2d3-122">**[データ]** タブ \> **[区切り位置]** \> **[区切り文字]** \> **[カンマ]** \> **[標準]** の順に選択して、テキストを列に変換します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-122">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
+2. <span data-ttu-id="4acea-122">**[データ]** タブ \> **[区切り位置]** \> **[区切り文字]** \> **[カンマ]** \> **[標準]** の順に選択して、テキストを列に変換します。</span><span class="sxs-lookup"><span data-stu-id="4acea-122">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
 
-2. <span data-ttu-id="4d2d3-123">例を、実際に使用する保持ラベルと設定のエントリに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-123">Replace the examples with entries for your own retention labels and settings.</span></span> <span data-ttu-id="4d2d3-124">パラメーター値の詳細については、「[New-ComplianceTag](/powershell/module/exchange/new-compliancetag)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-124">For more information about the parameter values, see [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).</span></span>
+2. <span data-ttu-id="4acea-123">例を、実際に使用する保持ラベルと設定のエントリに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="4acea-123">Replace the examples with entries for your own retention labels and settings.</span></span> <span data-ttu-id="4acea-124">パラメーター値の詳細については、「[New-ComplianceTag](/powershell/module/exchange/new-compliancetag)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4acea-124">For more information about the parameter values, see [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).</span></span>
 
-3. <span data-ttu-id="4d2d3-125">後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-125">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="4d2d3-126">例: C:\>Scripts\Labels.csv</span><span class="sxs-lookup"><span data-stu-id="4d2d3-126">For example: C:\>Scripts\Labels.csv</span></span>
+3. <span data-ttu-id="4acea-125">後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。</span><span class="sxs-lookup"><span data-stu-id="4acea-125">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="4acea-126">例: C:\>Scripts\Labels.csv</span><span class="sxs-lookup"><span data-stu-id="4acea-126">For example: C:\>Scripts\Labels.csv</span></span>
 
   
-<span data-ttu-id="4d2d3-127">注:</span><span class="sxs-lookup"><span data-stu-id="4d2d3-127">Notes:</span></span>
+<span data-ttu-id="4acea-127">注:</span><span class="sxs-lookup"><span data-stu-id="4acea-127">Notes:</span></span>
 
-- <span data-ttu-id="4d2d3-p106">既に存在するものと同じ名前の保持ラベルが .csv ファイルに含まれている場合、スクリプトはその保持ラベルの作成をスキップします。重複する保持ラベルは作成されません。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-p106">If the .csv file contains a retention label with the same name as one that already exists, the script skips creating that retention label. No duplicate retention labels are created.</span></span>
+- <span data-ttu-id="4acea-p106">既に存在するものと同じ名前の保持ラベルが .csv ファイルに含まれている場合、スクリプトはその保持ラベルの作成をスキップします。重複する保持ラベルは作成されません。</span><span class="sxs-lookup"><span data-stu-id="4acea-p106">If the .csv file contains a retention label with the same name as one that already exists, the script skips creating that retention label. No duplicate retention labels are created.</span></span>
     
-- <span data-ttu-id="4d2d3-130">サンプル .csv ファイルで指定されている列見出しを変更したり、名前を変更したりしないでください。変更すると、スクリプトは失敗します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-130">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
+- <span data-ttu-id="4acea-130">サンプル .csv ファイルで指定されている列見出しを変更したり、名前を変更したりしないでください。変更すると、スクリプトは失敗します。</span><span class="sxs-lookup"><span data-stu-id="4acea-130">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
     
-### <a name="sample-csv-file-for-retention-labels"></a><span data-ttu-id="4d2d3-131">保持ラベル用のサンプル .csv ファイル</span><span class="sxs-lookup"><span data-stu-id="4d2d3-131">Sample .csv file for retention labels</span></span>
+### <a name="sample-csv-file-for-retention-labels"></a><span data-ttu-id="4acea-131">保持ラベル用のサンプル .csv ファイル</span><span class="sxs-lookup"><span data-stu-id="4acea-131">Sample .csv file for retention labels</span></span>
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -72,24 +73,24 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a><span data-ttu-id="4d2d3-132">手順 2: 保持ラベル ポリシー用の .csv ファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="4d2d3-132">Step 2: Create a .csv file for the retention label policies</span></span>
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a><span data-ttu-id="4acea-132">手順 2: 保持ラベル ポリシー用の .csv ファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="4acea-132">Step 2: Create a .csv file for the retention label policies</span></span>
 
-1. <span data-ttu-id="4d2d3-133">3 種類の異なる保持ラベル ポリシーのテンプレートおよびエントリ例を含む、次のサンプル .csv ファイルをコピーして、Excel に貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-133">Copy the following sample .csv file for a template and example entries for three different retention label policies, and paste them into Excel.</span></span> 
+1. <span data-ttu-id="4acea-133">3 種類の異なる保持ラベル ポリシーのテンプレートおよびエントリ例を含む、次のサンプル .csv ファイルをコピーして、Excel に貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="4acea-133">Copy the following sample .csv file for a template and example entries for three different retention label policies, and paste them into Excel.</span></span> 
 
-2. <span data-ttu-id="4d2d3-134">**[データ]** タブ \> **[区切り位置]** \> **[区切り文字]** \> **[カンマ]** \> **[標準]** の順に選択して、テキストを列に変換します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-134">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
+2. <span data-ttu-id="4acea-134">**[データ]** タブ \> **[区切り位置]** \> **[区切り文字]** \> **[カンマ]** \> **[標準]** の順に選択して、テキストを列に変換します。</span><span class="sxs-lookup"><span data-stu-id="4acea-134">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
 
-2. <span data-ttu-id="4d2d3-135">例を、実際に使用する保持ラベル ポリシーとそれらの設定のエントリに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-135">Replace the examples with entries for your own retention label policies and their settings.</span></span> <span data-ttu-id="4d2d3-136">このコマンドレットのパラメーター値の詳細については、「[New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-136">For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).</span></span>
+2. <span data-ttu-id="4acea-135">例を、実際に使用する保持ラベル ポリシーとそれらの設定のエントリに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="4acea-135">Replace the examples with entries for your own retention label policies and their settings.</span></span> <span data-ttu-id="4acea-136">このコマンドレットのパラメーター値の詳細については、「[New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4acea-136">For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).</span></span>
 
-3. <span data-ttu-id="4d2d3-137">後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-137">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="4d2d3-138">例: `<path>Policies.csv`</span><span class="sxs-lookup"><span data-stu-id="4d2d3-138">For example: `<path>Policies.csv`</span></span>
+3. <span data-ttu-id="4acea-137">後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。</span><span class="sxs-lookup"><span data-stu-id="4acea-137">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="4acea-138">例: `<path>Policies.csv`</span><span class="sxs-lookup"><span data-stu-id="4acea-138">For example: `<path>Policies.csv`</span></span>
 
 
-<span data-ttu-id="4d2d3-139">注:</span><span class="sxs-lookup"><span data-stu-id="4d2d3-139">Notes:</span></span>
+<span data-ttu-id="4acea-139">注:</span><span class="sxs-lookup"><span data-stu-id="4acea-139">Notes:</span></span>
   
-- <span data-ttu-id="4d2d3-p109">既に存在するものと同じ名前の保持ラベル ポリシーが .csv ファイルに含まれている場合、スクリプトはその保持ラベル ポリシーの作成をスキップします。重複する保持ラベル ポリシーは作成されません。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-p109">If the .csv file contains a retention label policy with the same name as one that already exists, the script skips creating that retention label policy. No duplicate retention label policies are created.</span></span>
+- <span data-ttu-id="4acea-p109">既に存在するものと同じ名前の保持ラベル ポリシーが .csv ファイルに含まれている場合、スクリプトはその保持ラベル ポリシーの作成をスキップします。重複する保持ラベル ポリシーは作成されません。</span><span class="sxs-lookup"><span data-stu-id="4acea-p109">If the .csv file contains a retention label policy with the same name as one that already exists, the script skips creating that retention label policy. No duplicate retention label policies are created.</span></span>
     
-- <span data-ttu-id="4d2d3-142">サンプル .csv ファイルで指定されている列見出しを変更したり、名前を変更したりしないでください。変更すると、スクリプトは失敗します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-142">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
+- <span data-ttu-id="4acea-142">サンプル .csv ファイルで指定されている列見出しを変更したり、名前を変更したりしないでください。変更すると、スクリプトは失敗します。</span><span class="sxs-lookup"><span data-stu-id="4acea-142">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
     
-### <a name="sample-csv-file-for-retention-policies"></a><span data-ttu-id="4d2d3-143">アイテム保持ポリシー用のサンプル .csv ファイル</span><span class="sxs-lookup"><span data-stu-id="4d2d3-143">Sample .csv file for retention policies</span></span>
+### <a name="sample-csv-file-for-retention-policies"></a><span data-ttu-id="4acea-143">アイテム保持ポリシー用のサンプル .csv ファイル</span><span class="sxs-lookup"><span data-stu-id="4acea-143">Sample .csv file for retention policies</span></span>
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -98,21 +99,21 @@ Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
 Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,,
 ```
 
-## <a name="step-3-create-the-powershell-script"></a><span data-ttu-id="4d2d3-144">手順 3: PowerShell スクリプトを作成する</span><span class="sxs-lookup"><span data-stu-id="4d2d3-144">Step 3: Create the PowerShell script</span></span>
+## <a name="step-3-create-the-powershell-script"></a><span data-ttu-id="4acea-144">手順 3: PowerShell スクリプトを作成する</span><span class="sxs-lookup"><span data-stu-id="4acea-144">Step 3: Create the PowerShell script</span></span>
 
-1. <span data-ttu-id="4d2d3-145">次の PowerShell スクリプトをコピーして、メモ帳に貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-145">Copy and paste the following PowerShell script into Notepad.</span></span>
+1. <span data-ttu-id="4acea-145">次の PowerShell スクリプトをコピーして、メモ帳に貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="4acea-145">Copy and paste the following PowerShell script into Notepad.</span></span>
 
-2. <span data-ttu-id="4d2d3-146">ファイル名拡張子として **.ps1** を使用して、見つけやすい場所にファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-146">Save the file by using a file name extension of **.ps1** in a location that's easy to find.</span></span> <span data-ttu-id="4d2d3-147">例: `<path>CreateRetentionSchedule.ps1`</span><span class="sxs-lookup"><span data-stu-id="4d2d3-147">For example: `<path>CreateRetentionSchedule.ps1`</span></span>
+2. <span data-ttu-id="4acea-146">ファイル名拡張子として **.ps1** を使用して、見つけやすい場所にファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="4acea-146">Save the file by using a file name extension of **.ps1** in a location that's easy to find.</span></span> <span data-ttu-id="4acea-147">例: `<path>CreateRetentionSchedule.ps1`</span><span class="sxs-lookup"><span data-stu-id="4acea-147">For example: `<path>CreateRetentionSchedule.ps1`</span></span>
 
-<span data-ttu-id="4d2d3-148">注:</span><span class="sxs-lookup"><span data-stu-id="4d2d3-148">Notes:</span></span>
+<span data-ttu-id="4acea-148">注:</span><span class="sxs-lookup"><span data-stu-id="4acea-148">Notes:</span></span>
 
-- <span data-ttu-id="4d2d3-149">このスクリプトを実行すると、前の 2 つの手順で作成した 2 つのソース ファイルを指定するように求められます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-149">The script prompts you to provide the two source files that you created in the previous two steps:</span></span>
-    - <span data-ttu-id="4d2d3-150">保持ラベルを作成するソース ファイルを指定しない場合、スクリプトは保持ラベル ポリシーの作成に進みます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-150">If you don't specify the source file to create the retention labels, the script moves on to create the retention label policies.</span></span> 
-    - <span data-ttu-id="4d2d3-151">保持ラベル ポリシーを作成するソース ファイルを指定しない場合、スクリプトは保持ラベルのみを作成します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-151">If you don't specify the source file to create the retention label policies, the script creates the retention labels only.</span></span>
+- <span data-ttu-id="4acea-149">このスクリプトを実行すると、前の 2 つの手順で作成した 2 つのソース ファイルを指定するように求められます。</span><span class="sxs-lookup"><span data-stu-id="4acea-149">The script prompts you to provide the two source files that you created in the previous two steps:</span></span>
+    - <span data-ttu-id="4acea-150">保持ラベルを作成するソース ファイルを指定しない場合、スクリプトは保持ラベル ポリシーの作成に進みます。</span><span class="sxs-lookup"><span data-stu-id="4acea-150">If you don't specify the source file to create the retention labels, the script moves on to create the retention label policies.</span></span> 
+    - <span data-ttu-id="4acea-151">保持ラベル ポリシーを作成するソース ファイルを指定しない場合、スクリプトは保持ラベルのみを作成します。</span><span class="sxs-lookup"><span data-stu-id="4acea-151">If you don't specify the source file to create the retention label policies, the script creates the retention labels only.</span></span>
 
-- <span data-ttu-id="4d2d3-152">スクリプトを実行すると、ログ ファイルが生成されます。このファイルには、実行されたアクションと、そのアクションが成功したか失敗したかが記録されます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-152">The script generates a log file that records each action it took and whether the action succeeded or failed.</span></span> <span data-ttu-id="4d2d3-153">このログ ファイルの場所については、最後の手順を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-153">See the final step for instructions how to locate this log file.</span></span>
+- <span data-ttu-id="4acea-152">スクリプトを実行すると、ログ ファイルが生成されます。このファイルには、実行されたアクションと、そのアクションが成功したか失敗したかが記録されます。</span><span class="sxs-lookup"><span data-stu-id="4acea-152">The script generates a log file that records each action it took and whether the action succeeded or failed.</span></span> <span data-ttu-id="4acea-153">このログ ファイルの場所については、最後の手順を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4acea-153">See the final step for instructions how to locate this log file.</span></span>
 
-### <a name="powershell-script"></a><span data-ttu-id="4d2d3-154">PowerShell スクリプト</span><span class="sxs-lookup"><span data-stu-id="4d2d3-154">PowerShell script</span></span>
+### <a name="powershell-script"></a><span data-ttu-id="4acea-154">PowerShell スクリプト</span><span class="sxs-lookup"><span data-stu-id="4acea-154">PowerShell script</span></span>
 
 ```Powershell
 <#
@@ -734,29 +735,29 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-run-the-powershell-script"></a><span data-ttu-id="4d2d3-155">手順 4: PowerShell スクリプトを実行する</span><span class="sxs-lookup"><span data-stu-id="4d2d3-155">Step 4: Run the PowerShell script</span></span>
+## <a name="step-4-run-the-powershell-script"></a><span data-ttu-id="4acea-155">手順 4: PowerShell スクリプトを実行する</span><span class="sxs-lookup"><span data-stu-id="4acea-155">Step 4: Run the PowerShell script</span></span>
 
-<span data-ttu-id="4d2d3-156">まず、[セキュリティ/コンプライアンス センターの PowerShell に接続](/powershell/exchange/connect-to-scc-powershell)します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-156">First, [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).</span></span>
+<span data-ttu-id="4acea-156">まず、[セキュリティ/コンプライアンス センターの PowerShell に接続](/powershell/exchange/connect-to-scc-powershell)します。</span><span class="sxs-lookup"><span data-stu-id="4acea-156">First, [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).</span></span>
 
-<span data-ttu-id="4d2d3-157">次に、保持ラベルを作成および発行するスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-157">Then, run the script that creates and publishes the retention labels:</span></span>
+<span data-ttu-id="4acea-157">次に、保持ラベルを作成および発行するスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="4acea-157">Then, run the script that creates and publishes the retention labels:</span></span>
   
-1. <span data-ttu-id="4d2d3-158">セキュリティ/コンプライアンス センターの PowerShell セッションで、パスを入力し、その後ろに文字「`.\`」とスクリプトのファイル名を入力し、Enter キーを押してスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-158">In your Security & Compliance Center PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script.</span></span> <span data-ttu-id="4d2d3-159">例:</span><span class="sxs-lookup"><span data-stu-id="4d2d3-159">For example:</span></span>
+1. <span data-ttu-id="4acea-158">セキュリティ/コンプライアンス センターの PowerShell セッションで、パスを入力し、その後ろに文字「`.\`」とスクリプトのファイル名を入力し、Enter キーを押してスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="4acea-158">In your Security & Compliance Center PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script.</span></span> <span data-ttu-id="4acea-159">例:</span><span class="sxs-lookup"><span data-stu-id="4acea-159">For example:</span></span>
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1
     ```
 
-2. <span data-ttu-id="4d2d3-160">スクリプトにより、前の手順で作成した .csv ファイルの場所を要求するメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-160">The script prompts you for the locations of the .csv files that you created in the previous steps.</span></span> <span data-ttu-id="4d2d3-161">パスを入力し、その後ろに文字「`.\`」と .csv ファイルの名前を入力して、Enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-161">Enter the path, followed by the characters `.\` and file name of the .csv file, and then press ENTER.</span></span> <span data-ttu-id="4d2d3-162">たとえば、最初のプロンプトでは次のように入力します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-162">For example, for the first prompt:</span></span>
+2. <span data-ttu-id="4acea-160">スクリプトにより、前の手順で作成した .csv ファイルの場所を要求するメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4acea-160">The script prompts you for the locations of the .csv files that you created in the previous steps.</span></span> <span data-ttu-id="4acea-161">パスを入力し、その後ろに文字「`.\`」と .csv ファイルの名前を入力して、Enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4acea-161">Enter the path, followed by the characters `.\` and file name of the .csv file, and then press ENTER.</span></span> <span data-ttu-id="4acea-162">たとえば、最初のプロンプトでは次のように入力します。</span><span class="sxs-lookup"><span data-stu-id="4acea-162">For example, for the first prompt:</span></span>
     
     ```powershell
     <path>.\Labels.csv
     ```
 
-## <a name="step-5-view-the-log-file-with-the-results"></a><span data-ttu-id="4d2d3-163">手順 5: 結果を記録したログ ファイルを確認する</span><span class="sxs-lookup"><span data-stu-id="4d2d3-163">Step 5: View the log file with the results</span></span>
+## <a name="step-5-view-the-log-file-with-the-results"></a><span data-ttu-id="4acea-163">手順 5: 結果を記録したログ ファイルを確認する</span><span class="sxs-lookup"><span data-stu-id="4acea-163">Step 5: View the log file with the results</span></span>
 
-<span data-ttu-id="4d2d3-164">スクリプトが作成したログ ファイルを使用して、結果を確認し、解決する必要があるエラーを特定します。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-164">Use the log file that the script created to check the results and identify any failures that need resolving.</span></span>
+<span data-ttu-id="4acea-164">スクリプトが作成したログ ファイルを使用して、結果を確認し、解決する必要があるエラーを特定します。</span><span class="sxs-lookup"><span data-stu-id="4acea-164">Use the log file that the script created to check the results and identify any failures that need resolving.</span></span>
 
-<span data-ttu-id="4d2d3-165">ログ ファイルは次の場所にあります。ただし、サンプル ファイル名の数字は異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="4d2d3-165">You can find the log file at the following location, although the digits in the example file name vary.</span></span>
+<span data-ttu-id="4acea-165">ログ ファイルは次の場所にあります。ただし、サンプル ファイル名の数字は異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="4acea-165">You can find the log file at the following location, although the digits in the example file name vary.</span></span>
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
