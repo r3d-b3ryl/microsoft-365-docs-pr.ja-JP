@@ -1,7 +1,7 @@
 ---
 title: 高度な検索機能を使用して、デバイス、電子メール、アプリ、および ID 間の脅威を検出する
 description: デバイス、電子メール、アプリ、および ID をカバーする一般的な検索シナリオとサンプル クエリを調査します。
-keywords: 高度な検索、Office365 データ、Windows デバイス、Office365 メールの正規化、電子メール、アプリ、ID、脅威の検出、サイバー脅威の検出、検索、クエリ、テレメトリ、Microsoft 365、Microsoft 365 Defender
+keywords: 高度なハンティング、Office365 データ、Windows デバイス、Office365 メールの正規化、電子メール、アプリ、ID、脅威ハンティング、サイバー脅威ハンティング、検索、クエリ、テレメトリ、Microsoft 365、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8a811d60af281bb534776736e77c3eb54ab6a760
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aacd0745ff507356035f8f460ed2b4307e9da6ed
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932967"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964875"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>デバイス、メール、アプリ、ID 全体の脅威を探す
 
@@ -35,7 +35,7 @@ ms.locfileid: "51932967"
 **適用対象:**
 - Microsoft 365 Defender
 
-[Defender での](advanced-hunting-overview.md)高度なMicrosoft 365を使用すると、次に示す脅威を積極的に検索できます。
+[高度なMicrosoft 365 Defender](advanced-hunting-overview.md)を使用すると、次の脅威を積極的に検索できます。
 - Microsoft Defender for Endpoint によって管理されるデバイス
 - ユーザーが処理するメールMicrosoft 365
 - クラウド アプリのアクティビティ、認証イベント、およびドメイン コントローラーのアクティビティは、Microsoft Cloud App Security Microsoft Defender for Identity によって追跡されます。
@@ -100,6 +100,90 @@ DeviceInfo
 | join AlertInfo on AlertId
 | project AlertId, Timestamp, Title, Severity, Category 
 ```
+
+
+### <a name="get-file-event-information"></a>ファイル イベント情報の取得
+
+ファイル関連イベントに関する情報を取得するには、次のクエリを使用します。 
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceFileEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="get-network-event-information"></a>ネットワーク イベント情報の取得
+
+ネットワーク関連のイベントに関する情報を取得するには、次のクエリを使用します。
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-agent-version-information"></a>デバイス エージェントのバージョン情報の取得
+
+次のクエリを使用して、デバイスで実行されているエージェントのバージョンを取得します。
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="example-query-for-macos-devices"></a>macOS デバイスのクエリの例
+
+次のクエリ例を使用して、Catalina より古いバージョンの macOS を実行しているすべてのデバイスを確認します。
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OSPlatform == "macOS" and  OSVersion !contains "10.15" and OSVersion !contains "11."
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-status-info"></a>デバイスの状態情報を取得する
+
+デバイスの状態を取得するには、次のクエリを使用します。 次の例では、クエリはデバイスがオンボードされているのか確認します。
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OnboardingStatus != "Onboarded"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
 
 ## <a name="hunting-scenarios"></a>捜索のシナリオ
 

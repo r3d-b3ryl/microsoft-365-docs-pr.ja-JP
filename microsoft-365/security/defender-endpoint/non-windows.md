@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4714ad9a4388654cbf865ed54afe260a67d724f
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: dc5710a73685c67eff17c0f281bd14e48707e60f
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957505"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964790"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Windows 以外のプラットフォームの Microsoft Defender for Endpoint
 
@@ -41,11 +41,18 @@ Microsoft は、Windows および Windows Server を超えて業界をリード�
 
 Microsoft Defender for Endpoint を使用すると、Microsoft Defender セキュリティ センター プラットフォームと Windows Windows 以外のプラットフォームで、Microsoft Defender セキュリティ センター のすべての脅威とアラートの統合ビューを利用して、環境内で何が起こっているかを完全に理解し、脅威の評価と対応を迅速に行えます。
 
-## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 用 Microsoft Defender for Endpoint 
+## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 用 Microsoft Defender for Endpoint 
 
-Microsoft Defender for Endpoint on macOS では、最新の 3 つのリリースバージョンの macOS に対して、ウイルス対策およびエンドポイントの検出と応答 (EDR) 機能を提供します。 顧客は、ソリューションを展開および管理するには、Microsoft エンドポイント マネージャー Jamf を使用します。 macOS 上Microsoft Officeアプリケーションと同様に、Microsoft Auto Update を使用して Microsoft Defender for Endpoint on Mac 更新プログラムを管理します。 主な機能と利点については、お知らせをご [覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
+Microsoft Defender for Endpoint on macOS では、最新の 3 つのリリースバージョンの macOS にエンドポイントでの検出と対応(EDR) 機能が提供されています。 顧客は、ソリューションを展開および管理するには、Microsoft エンドポイント マネージャー Jamf を使用します。 macOS 上Microsoft Officeアプリケーションと同様に、Microsoft Auto Update を使用して Microsoft Defender for Endpoint on Mac 更新プログラムを管理します。 主な機能と利点については、お知らせをご [覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
 
 開始方法の詳細については、「Defender for Endpoint on macOS」のドキュメントを参照 [してください](microsoft-defender-endpoint-mac.md)。
+
+>[!NOTE]
+>次の機能は、現在 macOS エンドポイントではサポートされていません。
+>- データ損失防止
+>- ライブ応答
+>- SIEM
+
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -53,13 +60,21 @@ Microsoft Defender for Endpoint on Linux では、Linux サーバーに対して
 
 開始方法の詳細については、Microsoft Defender for Endpoint on Linux のドキュメントを参照 [してください](microsoft-defender-endpoint-linux.md)。
 
+>[!NOTE]
+>Linux エンドポイントでは、現在、次の機能はサポートされていません。
+>- データ損失防止
+>- ライブ応答
+>- SIEM
+
+
+
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Android 用 Microsoft Defender for Endpoint
 
 Microsoft Defender for Endpoint on Android は、Android 6.0 以上を実行しているデバイス向けモバイル脅威防御ソリューションです。 Android Enterprise (Work Profile) モードとデバイス管理者モードの両方がサポートされています。 Android では、フィッシング対策、安全でない接続のブロック、カスタムインジケーターの設定を含む Web 保護を提供しています。 このソリューションは、マルウェアや望ましくない可能性のあるアプリケーション (PUA) をスキャンし、Microsoft エンドポイント マネージャーおよび条件付きアクセスとの統合を通じて、追加の侵害防止機能を提供します。 主な機能と利点については、お知らせをご [覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)。
 
 開始方法の詳細については、Android の Microsoft Defender for Endpoint のドキュメントを参照 [してください](microsoft-defender-endpoint-android.md)。
 
-## <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
+## <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
 
 Microsoft Defender for Endpoint on iOS は、iOS 11.0 以上を実行しているデバイス向けモバイル脅威防御ソリューションです。 監視対象デバイスと教師付きデバイスの両方がサポートされています。 iOS では、フィッシング対策、安全でない接続のブロック、カスタムインジケーターの設定を含む Web 保護を提供しています。 主な機能と利点の詳細については、お知らせを [参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。 
 
@@ -69,7 +84,7 @@ Microsoft Defender for Endpoint on iOS は、iOS 11.0 以上を実行してい�
 
 対象となるライセンスユーザーは、最大 5 つの同時デバイスで Microsoft Defender for Endpoint を使用できます。 Microsoft Defender for Endpoint は、ユーザー (CSP) から購入クラウド ソリューション プロバイダー利用できます。
 
-お客様は、スタンドアロンの Microsoft Defender for Endpoint ライセンス、Microsoft 365 A5/E5、または Microsoft 365 セキュリティを通じて macOS 上の Microsoft Defender for Endpoint を取得できます。
+お客様は、スタンドアロンの Microsoft Defender for Endpoint ライセンス、Microsoft 365 A5/E5、または Microsoft 365 セキュリティの一部として、macOS 上の Microsoft Defender for Endpoint を取得できます。
 
 Android および iOS 上の Microsoft Defender for Endpoint の最近発表された機能は、対象となるライセンスユーザー向け 5 つの認定デバイスの一部として、上記のオファーに含まれています。
 

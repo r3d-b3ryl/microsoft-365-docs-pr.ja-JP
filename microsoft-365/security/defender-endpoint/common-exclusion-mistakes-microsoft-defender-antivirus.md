@@ -15,23 +15,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 05/17/2021
-ms.openlocfilehash: d10343538c995534878196cc57092c37fd2dcf7b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/15/2021
+ms.openlocfilehash: f9ca83fcfba4b79898a0fed527e38947a4c230d6
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538065"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950133"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>除外を定義する際に避ける必要のある一般的な間違い
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+スキャンしないアイテムの除外リストをMicrosoft Defender ウイルス対策できます。 このような除外されたアイテムには、デバイスを脆弱にする脅威が含まれている可能性があります。 この記事では、除外を定義するときに回避する必要がある一般的な間違いについて説明します。 
 
-スキャンしないアイテムの除外リストをMicrosoft Defender ウイルス対策できます。 このような除外されたアイテムには、デバイスを脆弱にする脅威が含まれている可能性があります。 
-
-この記事では、除外を定義するときに回避する必要がある一般的な間違いについて説明します。 
-
-除外リストを定義する前に、「 [除外を定義するための推奨事項」を参照してください](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)。
+除外リストを定義する前に、除外[おすすめを参照してください](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)。
 
 ## <a name="excluding-certain-trusted-items"></a>特定の信頼済みアイテムを除外する
 
@@ -231,7 +227,9 @@ ms.locfileid: "52538065"
 
 `dbgsvc.exe`  
 
-`dnx.exe`  
+`dnx.exe`
+
+`dotnet.exe`
 
 `fsi.exe`  
 
@@ -272,9 +270,3 @@ Microsoft Defender ウイルス対策サービスは LocalSystem アカウント
 
 除外 [リストでワイルドカードを使用する](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 方法については、「ファイル名とフォルダー パスまたは拡張子の除外リストでワイルドカードを使用する」を参照してください。
 
-## <a name="related-articles"></a>関連記事
-
-- [カスタム スキャンで除外を構成Microsoft Defender ウイルス対策する](configure-exclusions-microsoft-defender-antivirus.md)
-- [ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [プロセスによって開いたファイルの除外を構成および検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [サーバー Microsoft Defender ウイルス対策の除外をWindowsする](configure-server-exclusions-microsoft-defender-antivirus.md)

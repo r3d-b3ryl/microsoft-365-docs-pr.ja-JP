@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MET150
+search.appverid: GEA150
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ ms.custom:
 - commerce_billing
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 07/31/2020
-ms.openlocfilehash: 7e37e296f37583e1fc0b2fc3474609e11c5a5e1f
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: a4909a1ff56fb2a3d7fefca1af008abf93015a03
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888351"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950073"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 

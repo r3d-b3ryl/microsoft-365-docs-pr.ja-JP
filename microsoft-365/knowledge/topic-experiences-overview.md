@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva トピックの概要。
-ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908326"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950025"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva トピックの概要 
 
@@ -103,7 +103,7 @@ Microsoft 365 環境で Viva・トピックを使用する場合、ユーザー�
 
 - 知識マネージャー: トピックのライフ サイクルを通してトピックをガイドするユーザー。 ナレッジ マネージャーは、トピック センターの [トピックの管理] ページを使用して、AI が推奨するトピックを確認し、関連性がなくなったトピックを削除し、既存のトピックを編集したり、新しいトピックを作成したりします。 知識管理者は、Microsoft 365 管理センターの Viva トピック管理設定で、ユーザーに知識マネージャーのアクセス許可を割り当てます。 
 
-- ナレッジ管理者: 管理者は、ビバ トピックをセットアップし、管理センターの管理Microsoft 365管理します。 現在、Microsoft 365 グローバル管理者や SharePoint 管理者が知識管理者として活躍できます。
+- ナレッジ管理者: 管理者は、ビバ トピックをセットアップし、管理者の管理コントロールを使用して管理Microsoft 365 管理センター。 現在、Microsoft 365 グローバル管理者や SharePoint 管理者が知識管理者として活躍できます。
 
 詳細については [、「Viva Topics roles」を参照してください](topic-experiences-roles.md)。
 
@@ -123,7 +123,7 @@ Microsoft 365 環境で Viva・トピックを使用する場合、ユーザー�
 
 ## <a name="admin-controls"></a>管理制御
 
-管理センターのMicrosoft 365コントロールを使用すると、ビバ トピックを管理できます。 これらにより、Microsoft 365 グローバル管理者や SharePoint サービス管理者は次のことができます。
+このページの管理Microsoft 365 管理センター、ビバ トピックを管理できます。 これらにより、Microsoft 365 グローバル管理者や SharePoint サービス管理者は次のことができます。
 
 - 組織内のどのユーザーが SharePoint の最新ページや SharePoint 検索結果でトピックを見ることができるかを制御します。
 - トピックを特定するためにどの SharePoint サイトをクロールするかを制御します。
@@ -142,10 +142,8 @@ AI は、お客様の環境の変化に合わせて、トピックを改善す�
 
 日常業務でトピックの閲覧を許可しているユーザーには、そのトピックが自分にとって有益か質問することがあります。 システムは、これらの回答を見て、トピックの強調表示を改善したり、トピックの概要やトピックの詳細に表示する内容を決定するのに使用します。
 
-さらに、適切なアクセス許可を持つユーザーは、トピックに関連する Yammer の会話などのアイテムにタグを付け、特定のトピックに追加することができます。 
-
 詳細については、「トピックの検出 [とキュレーション」を参照してください](./topic-experiences-discovery-curation.md)。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft Search を使用して、ビバ トピックのトピックを検索する](./search.md)
+[ビバ Microsoft Searchトピックを検索するには、次のトピックを使用します。](./search.md)

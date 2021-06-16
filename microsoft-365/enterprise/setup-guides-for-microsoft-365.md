@@ -21,35 +21,35 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: セットアップ ガイドを使用して、Microsoft 365またはOffice 365の計画と構成を加速します。
-ms.openlocfilehash: 6ad00819b172d7cb0cfb5b63a93c0910df5517e6
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: d2e4f29a3f6d484c8586194258c3157bc73fb9e1
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454149"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964622"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
-Microsoft 365およびOffice 365セットアップ ガイドでは、テナント、アプリ、およびサービスを計画および展開するために、カスタマイズされたガイダンスとリソースを提供します。 これらのガイドは[、Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)オンボーディング スペシャリストが個々のやり取りで共有するのと同じベスト プラクティスを使用して作成され、Microsoft 365 管理センター内のすべての管理者が利用できます。 製品のセットアップ、セキュリティ機能の有効化、コラボレーション ツールの展開に関する情報を提供し、高度な展開を高速化するためのスクリプトを提供します。
+Microsoft 365およびOffice 365セットアップ ガイドでは、テナント、アプリ、およびサービスを計画および展開するために、カスタマイズされたガイダンスとリソースを提供します。 これらのガイドは、オンボーディング スペシャリストが個々のやり取[り](https://www.microsoft.com/fasttrack/microsoft-365)でMicrosoft 365 FastTrack共有するのと同じベスト プラクティスを使用して作成され、Microsoft 365 管理センター 内のすべての管理者が利用できます。 製品のセットアップ、セキュリティ機能の有効化、コラボレーション ツールの展開に関する情報を提供し、高度な展開を高速化するためのスクリプトを提供します。
 
-## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>管理センターのセットアップ ガイドにMicrosoft 365する方法
+## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>ウィザードのセットアップ ガイドにアクセスするMicrosoft 365 管理センター
 
-セットアップ ガイドは、管理センターの[](https://aka.ms/setupguidance)[セットアップ ガイダンス] ページMicrosoft 365アクセスできます。 進捗状況を追跡し、ガイドを完了するためにいつでも戻るオプションがあります。 [セットアップ ガイダンス] **ページにアクセスするには、次の手順を実行** します。
+セットアップ ガイドは、このページの[[セットアップ ガイダンス](https://aka.ms/setupguidance)] ページからMicrosoft 365 管理センター。 進捗状況を追跡し、ガイドを完了するためにいつでも戻るオプションがあります。 [セットアップ ガイダンス] **ページにアクセスするには、次の手順を実行** します。
 
-1. 管理センター [Microsoft 365ホーム](https://admin.microsoft.com/)ページに **移動** します。
+1. [ホーム [] Microsoft 365 管理センター](https://admin.microsoft.com/)ホーム ページに **移動** します。
 
 2. トレーニング ガイド **カード&見** つける。 
 
-   ![トレーニング &管理センターのガイド Microsoft 365カード](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   ![トレーニング &ガイド カードのMicrosoft 365 管理センター](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
 3. [カスタマイズ **されたセットアップ ガイダンス] を選択します**。
 
-   ![管理センターの [セットアップ ガイダンス] ページMicrosoft 365スクリーンショット](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ![ページの [セットアップ ガイダンス] ページのスクリーンショットMicrosoft 365 管理センター](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
 >[!NOTE]
->テナント管理者のアクセス許可は、管理者センターのMicrosoft 365必要です。
+>テナント管理者のアクセス許可は、テナントにアクセスするためにMicrosoft 365 管理センター。
 
-## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>セットアップ ガイドは、管理センターでどのようにMicrosoft 365しますか?
+## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>セットアップ ガイドは、このページでどのように機能Microsoft 365 管理センター。
 
 各ガイドには、手順、リソース、記事、および必要に応じて構成変更に使用できるスクリプトが記載されています。 これらのガイドでは、小規模組織と大規模組織の両方の特定のニーズを反映した選択肢を提供します。 さらに、ガイダンスには、新しい管理者と経験豊富な管理者の両方のサポートが含まれています。
 
@@ -98,9 +98,9 @@ Microsoft Edgeは、世界クラスの互換性とパフォーマンス、セキ
 
 ### <a name="microsoft-search-setup-guide"></a>Microsoft Search セットアップ ガイド
 
-Microsoft Search は、組織が作業している作業を完了するために必要な情報を見つけるのに役立ちます。 ユーザー、ファイル、組織のグラフ、サイト、または一般的な質問に対する回答を検索する場合でも、組織は仕事中 Microsoft Search を使用して回答を取得できます。
+Microsoft Search作業を完了するために必要な情報を組織が見つけるのに役立ちます。 ユーザー、ファイル、組織のグラフ、サイト、または一般的な質問に対する回答を検索する場合でも、組織は、Microsoft Search を使用して回答を取得できます。
 
-[Microsoft Search セットアップ ガイド](https://aka.ms/MicrosoftSearchSetup)を使用すると、Microsoft Search をユーザーグループにパイロットするか、組織のすべてのユーザーに展開するかの構成に役立ちます。検索管理者と検索エディターを割り当て、Bing 拡張機能を Chrome に追加したり、既定の検索エンジンとして Bing を設定したりなど、回答や追加オプションを使用してユーザーの検索エクスペリエンスをカスタマイズします。
+この[Microsoft Searchガイド](https://aka.ms/MicrosoftSearchSetup)は、Microsoft Searchにパイロットするか、組織のすべてのユーザーに展開するかの設定を構成するのに役立ちます。検索管理者と検索エディターを割り当て、Bing 拡張機能を Chrome に追加したり、既定の検索エンジンとして Bing を設定したりなど、回答や追加オプションを使用してユーザーの検索エクスペリエンスをカスタマイズします。
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager の共同管理セットアップ ガイド
 
@@ -157,13 +157,13 @@ Microsoft Search は、組織が作業している作業を完了するために
 
 Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアから保護するためのクラウドベースのメール フィルタリング サービスであり、メッセージング ポリシー違反から組織を保護する機能を備えています。 
 
-Exchange Online Protection セットアップ[ガイド](https://aka.ms/EOPguidance)を使用して、3 つの展開シナリオのオンプレミス メールボックス、ハイブリッド (オンプレミスとクラウドの組み合わせ) メールボックス、またはすべてのクラウド メールボックスが組織に適合するかを選択して、EOP を &mdash; 設定します。 &mdash; このガイドでは、ユーザーのライセンスを設定して確認し、Microsoft 365 管理センターでアクセス許可を割り当て、セキュリティ & コンプライアンス センターで組織のマルウェア対策ポリシーとスパム ポリシーを構成するための情報とリソースを提供します。 
+Exchange Online Protection セットアップ[ガイド](https://aka.ms/EOPguidance)を使用して、3 つの展開シナリオのオンプレミス メールボックス、ハイブリッド (オンプレミスとクラウドの組み合わせ) メールボックス、またはすべてのクラウド メールボックスが組織に適合するかを選択して、EOP を &mdash; 設定します。 &mdash; このガイドでは、ユーザーのライセンスの設定と確認、Microsoft 365 管理センター でのアクセス許可の割り当て、セキュリティ & コンプライアンス センターでの組織のマルウェア対策ポリシーとスパム ポリシーの構成に関する情報とリソースを提供します。 
 
 ### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender for Office 365 アドバイザー
 
 [Microsoft Defender for Office 365アドバイザー](https://aka.ms/oatpsetup)は、電子メール メッセージ、リンク、およびサード パーティ製のコラボレーション ツールを通じて、環境で発生する可能性のある悪意のある脅威から組織を保護します。 このガイドでは、組織のニーズに合わせて計画を立てOffice 365 Defender の準備と識別に役立つリソースと情報を提供します。 
 
-### <a name="microsoft-information-protection-setup-guide"></a>Microsoft 情報保護セットアップ ガイド
+### <a name="microsoft-information-protection-setup-guide"></a>Microsoft の情報保護セットアップ ガイド
 
 機密情報が保護されたと確信できるよう、情報保護戦略に適用できる機能の概要を確認します。 機密情報を発見、分類、保護、および監視する 4 段階のライフサイクル アプローチを使用します。 [Microsoft の情報保護のセットアップ ガイド](https://aka.ms/mipsetupguide) には、これらの各段階を完了するためのガイダンスが記載されています。
 
@@ -217,8 +217,3 @@ Office 展開ツールを使用して、インストールをカスタマイズ�
 
 Configuration Manager を使用している組織では、「[Configuration Manager アドバイザーを使用して、Microsoft 365 Apps の展開と更新を行う](https://aka.ms/oppinstall)」に沿って、FastTrack エンジニアが推奨するベスト プラクティスを使用して、Microsoft 365 Apps の展開を自動的に構成するスクリプトを生成することができます。 このガイドを使用して、展開グループを作成し、Office のアプリと機能をカスタマイズし、動的またはリーン インストールを構成します。その後、スクリプトを実行して、展開を対象にする必要があるアプリケーション、自動展開ルール、デバイス コレクションを作成します。 
 
-### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>サードパーティのクラウド アプリを Azure アプリと統合AD
-
-サード パーティ製アプリと Azure Azure Active Directory (Azure AD) を統合することで、ユーザー エクスペリエンスを向上し、セキュリティの層を強化AD。 このエンドツーエンドのエクスペリエンスを使用すると、このウィザードから直接ほとんどの構成を実行できます。 必要に応じて、対応する構成ページにリダイレクトします。
-
-サード パーティ [製クラウド アプリの統合ウィザードを使用](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) して、サードパーティのクラウド アプリを Azure クラウド アプリと統合AD。
