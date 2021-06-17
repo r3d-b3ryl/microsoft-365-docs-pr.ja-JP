@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 請求通知メールと請求書添付ファイルを受け取るユーザーを管理する方法について学習します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 75c75175930434619a01886b1096757bf04111c5
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888363"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998766"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>請求通知と請求書の添付ファイルを管理する
 
@@ -43,7 +43,7 @@ ms.locfileid: "52888363"
 
 請求通知メールは、組織の優先言語で送信されます。 優先する言語を変更するには、次の手順を使用します。
 
-1. 管理センターでMicrosoft 365請求通知ページ  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">に移動</a>します。
+1. [請求Microsoft 365 管理センター請求通知]**ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">に移動</a>します。
 2. [課金通知 **の設定] セクションで** 、[通知設定の **編集] を選択します**。
 3. [課金通知 **の設定] ウィンドウ** の [優先言語] **で** 、使用する言語を選択し、[保存] を **選択します**。
 
@@ -88,9 +88,6 @@ ms.locfileid: "52888363"
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>組織の請求書をメール添付ファイルとして受け取る
 
-> [!NOTE]
-> 課金管理者は、このセクションの手順も実行できます。
-
 新しい請求書の準備ができたら、組織の請求書のコピーを PDF ファイルとして請求書通知メールに添付できます。 次の手順を使用して、添付ファイルとして請求書を受信します。
 
 1. 管理センターで、**[課金情報]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。
@@ -130,6 +127,6 @@ ms.locfileid: "52888363"
 ## <a name="related-content"></a>関連コンテンツ
 
 [課金内容または請求書を表示する](view-your-bill-or-invoice.md) (article)\
-[メキシコでのMicrosoft 365の請求情報](/microsoft-365/commerce/billing-and-payments/mexico-billing-info)(記事) \
+[メキシコ](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) で Microsoft 365 for businessの課金情報 (記事) \
 [ビジネス向け請求書または請求書Microsoft 365を理解](understand-your-invoice2.md)する (記事)\
 [ユーザーを追加し、同時にライセンスを割り当てる](../../admin/add-users/add-users.md) (記事)

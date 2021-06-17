@@ -12,20 +12,17 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 04/28/2021
+ms.date: 06/15/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ba0f2184ced21aea60b172d44936e3e2d36e5270
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274954"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964702"
 ---
 # <a name="turn-on-block-at-first-sight"></a>事前ブロックを有効にする
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
@@ -34,7 +31,7 @@ ms.locfileid: "52274954"
 この記事では、"事前ブロック" と呼ばれるウイルス対策/マルウェア対策機能について説明し、組織で事前ブロックを有効にする方法について説明します。 
 
 > [!TIP]
-> この記事は、組織のセキュリティ設定を管理するエンタープライズ管理者および IT プロフェッショナルを対象としています。 エンタープライズ管理者または IT プロではないが、事前ブロックについて質問がある場合は、「[Not an enterprise admin or IT Pro? (エンタープライズ管理者またはITプロではありませんか?)](#not-an-enterprise-admin-or-it-pro)」を参照してください。 。
+> この記事は、組織のセキュリティ設定を管理するエンタープライズ管理者および IT プロフェッショナルを対象としています。 エンタープライズ管理者や IT プロではないが、事前ブロックについて質問がある場合は、「[Not an enterprise admin or IT Pro? (エンタープライズ管理者またはITプロではありませんか?)](#not-an-enterprise-admin-or-it-pro)」を参照してください。
 
 ## <a name="what-is-block-at-first-sight"></a>"事前ブロック" とは？
 
@@ -55,7 +52,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
 ![Microsoft Defender AV エンジンのリスト](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> 詳細については、ブログ記事「[クラウドによる保護を通じて Microsoft Defender ウイルス対策で次世代テクノロジを使用する](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)」をご覧ください。
+> 詳細については、ブログ記事「[Microsoft Defender for Endpoint の次世代保護の中核となる高度なテクノロジについて」](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)を参照してください。
 
 ## <a name="a-few-things-to-know-about-block-at-first-sight"></a>事前ブロックについて知っておくべきいくつかのこと
 
@@ -149,7 +146,9 @@ Windows セキュリティ アプリを使用して、個々のクライアン�
 
 ## <a name="validate-block-at-first-sight-is-working"></a>事前ブロックが機能していることを検証する
 
-機能が機能していることを検証するには、「[ネットワークとクラウド間の接続を検証する](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)」のガイダンスに従ってください。
+この機能が機能していることを検証するには、[事前ブロックのサンプル ファイル](https://demo.wd.microsoft.com/Page/BAFS)をダウンロードします。 ファイルをダウンロードするには、セキュリティ管理者ロールまたはグローバル管理者ロールが割り当てられている Azure AD のアカウントが必要です。
+
+機能が機能していることを検証するには、「[ネットワークとクラウド間の接続を検証する](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)」のガイダンスに従ってください。 
 
 ## <a name="turn-off-block-at-first-sight"></a>事前ブロックを無効にする
 

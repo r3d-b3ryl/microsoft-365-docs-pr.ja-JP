@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: ナビゲーション バーの上部の既定のテーマを変更し、Microsoft 365ロゴや色に合わせてカスタマイズする方法について学習します。
-ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908163"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998802"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>組織のMicrosoft 365テーマをカスタマイズする
 
@@ -82,16 +82,13 @@ ms.locfileid: "52908163"
 
 [ロゴ **] ページ** では、ロゴを追加し、ユーザーがロゴを選択するときに移動する URL を指定できます。
 
-- **既定のロゴ**: ロゴをポイントする URL の場所を追加します。 URL が HTTPS を使用するようにします。 ロゴをアップロードする場合は、ロゴが 10 kb 未満である必要があります。 既定のロゴは、JPG、PNG、GIF、または SVG 形式で指定できます。 SVG イメージの場合は、垂直方向に 24 ピクセルに収まるサイズに変更されます。 JPG、PNG、GIF 画像は、200 x 48 ピクセルに合わせて拡大縮小されます。
+- **既定のロゴ**: ロゴをポイントする URL の場所を追加します。 URL が HTTPS を使用するようにします。 匿名アクセスを許可し、認証を必要としない HTTPS イメージ URL を追加します。 既定のテーマの場合は、10 kb 未満のロゴ 画像をアップロードすることもできます。 既定のロゴは、JPG、PNG、GIF、または SVG 形式で指定できます。 SVG イメージの場合は、垂直方向に 24 ピクセルに収まるサイズに変更されます。 JPG、PNG、GIF 画像は、200 x 48 ピクセルに合わせて拡大縮小されます。 ロゴの縦横比は常に保持されます。
 - **代替ロゴ**: ロゴをポイントする URL の場所を追加します。 代替ロゴは、暗いテーマで使用Officeする必要があります。 既定のロゴと同じ要件。
 - **[オンクリック] リンク**: ロゴをポイントする URL の場所を追加します。 ロゴは、会社の Web サイトなど、任意の会社リソースへのリンクとして使用できます。
 
 **[保存]** を選択し、変更内容を保存します。
 
 ロゴは、いつでも削除できます。 [ロゴ] ページに戻 **り、[** 削除] を **選択します**。
-
-> [!NOTE]
-> 既定では、ほとんどの組織で使用されるロゴの選択が最初に表示されます。 アップロード オプションは、既定のテーマにのみ適用され、グループ テーマには適用されません。
   
 ## <a name="colors-choose-theme-colors"></a>色: テーマの色を選択する
 
@@ -140,7 +137,7 @@ ms.locfileid: "52908163"
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>ロゴ URL をアップロードする度にエラー メッセージが表示される理由。  
 
-使用しているロゴが、パブリックアドレス指定可能な URL として指定されている必要があります。 次の手順に[従って、ロゴ](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)を Azure Blob Storageまたはオンライン Office 365 Content Delivery Network[にアップロードSharePointします](../../enterprise/use-microsoft-365-cdn-with-spo.md)。
+使用しているロゴが、パブリックアドレス指定可能な URL として指定されている必要があります。 次の手順に[従って、ロゴ](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)を Azure Blob ストレージまたはオンライン Office 365 コンテンツ配信ネットワーク[にアップロードSharePointします](../../enterprise/use-microsoft-365-cdn-with-spo.md)。
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>"4.5:1 の最小色コントラスト比を満たしていない" というメッセージが表示される理由
 
