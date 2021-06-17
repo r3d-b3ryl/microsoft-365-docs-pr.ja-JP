@@ -14,18 +14,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: f8de3d8b2d7c07f8d783ecbe85b7e4a9c612aae5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769331"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985467"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +39,7 @@ ms.locfileid: "52769331"
 
 この記事では、すべてのイベント、関連する機能または設定を一覧表示し、特定のイベントにフィルター処理するカスタム ビューを作成する方法について説明します。
 
-E5 サブスクリプションを持ち、Microsoft Defender for Endpoint を使用する場合Windows セキュリティの一部としてイベントやブロックに関する詳細なレポート[を取得します](microsoft-defender-endpoint.md)。
+E5 サブスクリプションを持っている場合は、Windows セキュリティ、イベント、ブロック、警告に関する詳細なレポートを取得し[、Microsoft Defender for Endpoint を使用します](microsoft-defender-endpoint.md)。
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>カスタム ビューを使用して攻撃表面の縮小機能を確認する
 
@@ -54,11 +55,12 @@ E5 サブスクリプションを持ち、Microsoft Defender for Endpoint を使
     - 攻撃表面の縮小イベントのカスタム ビュー: *asr-events.xml*
     - ネットワーク/保護イベントのカスタム ビュー: *np-events.xml*
 
-2. [スタート **] メニューに** イベント ビューアーを入力し、[イベント ビューアー] **を開きます**。
+2. [**イベント ビューアー] と** 入力し、[スタート メニュー ビューアー]**を開きます**。
 
 3. [アクション **の**  >  **インポート] [カスタム ビュー...] を選択します。**
 
-    ![[Even ビューアー] ウィンドウの左側にあるカスタム ビューのインポートを強調表示するアニメーション](/windows/security/threat-protection/images/events-import)
+  > [!div class="mx-imgBorder"]
+  > ![[Even ビューアー] ウィンドウの左側にあるカスタム ビューのインポートを強調表示するアニメーション](images/events-import.gif)
 
 4. 必要なカスタム ビューの XML ファイルを抽出した場所に移動し、選択します。
 
@@ -68,19 +70,18 @@ E5 サブスクリプションを持ち、Microsoft Defender for Endpoint を使
 
 ### <a name="copy-the-xml-directly"></a>XML を直接コピーする
 
-1. [**スタート] メニューに** イベント ビューアーを入力し、[イベント ビューアー] Windows **開きます**。
+1. [**イベント ビューアー]** を [スタート メニュー入力して、[イベント ビューアー] Windows **開きます**。
 
 2. 左側のパネルの [アクション] で **、[** カスタム ビューの **作成]を選択します。**
 
-    ![イベント ビューアー ウィンドウでカスタム ビューの作成オプションを強調表示するアニメーション](/windows/security/threat-protection/images/events-create)
+  > [!div class="mx-imgBorder"]
+  > ![イベント ビューアー ウィンドウでカスタム ビューの作成オプションを強調表示するアニメーション](images/events-create.gif)
 
-3. [XML] タブに移動し、[クエリの手動編集 **] を選択します**。 XML オプションを使用すると、[フィルター] タブを使用してクエリを編集できないという警告が表示されます。 [**はい**] を選択します。
+3. [XML] タブに移動し、[クエリの手動編集 **] を選択します**。 XML オプションを使用すると、[フィルター] タブを使用してクエリを編集できないという警告が表示されます。 **[はい]** を選択します。
 
 4. イベントをフィルター処理する機能の XML コードを XML セクションに貼り付けます。
 
-5. [**OK**] を選択します。 フィルターの名前を指定します。
-
-6. その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
+5. **[OK]** を選択します。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻撃表面の縮小ルール イベントの XML
 
@@ -145,7 +146,7 @@ E5 サブスクリプションを持ち、Microsoft Defender for Endpoint を使
 2. [**アプリケーションとサービス ログ]** > Microsoft > Windows展開し、次の表の [**プロバイダー/** ソース] の下にあるフォルダーに移動します。
 3. サブアイテムをダブルクリックすると、イベントが表示されます。 イベントをスクロールして、探しているイベントを見つける。
 
-   ![イベント ビューアーを使用したアニメーションの表示](/windows/security/threat-protection/images/event-viewer)
+   ![イベント ビューアーを使用したアニメーションの表示](images/event-viewer.gif)
 
 機能 | プロバイダー/ソース | イベント ID | 説明
 :-|:-|:-:|:-

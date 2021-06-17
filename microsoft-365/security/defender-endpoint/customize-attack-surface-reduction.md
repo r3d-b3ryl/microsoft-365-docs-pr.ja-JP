@@ -14,16 +14,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6b9814180df2cad2553c4565ebb65891b5cf9bf5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782875"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985422"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>攻撃面の減少ルールをカスタマイズする
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -37,6 +38,7 @@ ms.locfileid: "52782875"
 ファイルとフォルダーを除外するか、ユーザーの[](#exclude-files-and-folders)コンピューターに表示される通知[](#customize-the-notification)通知にカスタム テキストを追加して、攻撃表面の縮小ルールをカスタマイズする方法について説明します。
 
 次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールをWindows。
+
 - Windows 10 Proバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - Windows 10 Enterpriseバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - Windowsサーバー、[バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
@@ -44,11 +46,11 @@ ms.locfileid: "52782875"
 
 ## <a name="exclude-files-and-folders"></a>ファイルとフォルダーを除外する
 
-ファイルとフォルダーを攻撃表面の縮小ルールによって評価される対象から除外できます。 除外されると、攻撃表面の縮小ルールでファイルに悪意のある動作が含まれていると検出された場合でも、ファイルの実行がブロックされません。
+ファイルとフォルダーを攻撃表面の縮小ルールによって評価される対象から除外できます。 除外すると、攻撃表面の縮小ルールでファイルに悪意のある動作が含まれていると検出された場合でも、ファイルの実行がブロックされません。
 
 たとえば、次のランサムウェア ルールを考え出します。
 
-ランサムウェア ルールは、企業のお客様がビジネスの継続性を確保しながら、ランサムウェア攻撃のリスクを軽減するために設計されています。 既定では、ランサムウェア ルールは注意の側でエラーが発生し、まだ十分な評価と信頼を得ていないファイルから保護します。 再フェーズを行う場合、ランサムウェア ルールは、何百万人もの顧客の利用状況指標に基づいて、十分な肯定的な評価と普及率を得てないファイルでのみトリガーされます。 通常、ブロックは自己解決されます。各ファイルの "評価と信頼" の値は、問題ない使用法が増えるほど段階的にアップグレードされます。
+ランサムウェア ルールは、企業のお客様がビジネスの継続性を確保しながら、ランサムウェア攻撃のリスクを軽減するために設計されています。 既定では、ランサムウェア ルールのエラーは注意の側で発生し、まだ十分な評価と信頼を得ていないファイルから保護します。 再フェーズを行う場合、ランサムウェア ルールは、何百万人もの顧客の利用状況指標に基づいて、十分な肯定的な評価と普及率を得てないファイルでのみトリガーされます。 通常、ブロックは自己解決されます。各ファイルの "評価と信頼" の値は、問題ない使用法が増えるほど段階的にアップグレードされます。
 
 ブロックが自己解決されない場合、お客様は自己のリスクで、セルフサービス メカニズムまたは IOC (IOC) ベースの "許可リスト" 機能を利用して、ファイル自体のブロックを解除できます。   
 
@@ -97,7 +99,7 @@ ms.locfileid: "52782875"
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>PowerShell を使用してファイルとフォルダーを除外する
 
-1. [**スタート] メニューに「powershell」** と入力し、[管理者 **Windows PowerShellを右** クリックし、[管理者として **実行] を選択します。**
+1. **[powershell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します。**
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
@@ -119,7 +121,7 @@ ms.locfileid: "52782875"
 
 ## <a name="related-topics"></a>関連項目
 
-* [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
-* [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
-* [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
-* [攻撃面の減少の FAQ](attack-surface-reduction.md)
+- [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
+- [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)
+- [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
+- [攻撃面の減少の FAQ](attack-surface-reduction.md)

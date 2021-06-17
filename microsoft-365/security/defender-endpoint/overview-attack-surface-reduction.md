@@ -19,25 +19,26 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: b6fb9bb327816b7e166a443a0d07932d30421a19
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 6b3c88f23d3ceffbca588c80b05266d12147ca39
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771695"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985026"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能の概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-攻撃の表面は、組織がサイバー脅威や攻撃に対して脆弱なすべての場所です。 Defender for Endpoint には、攻撃の表面を減らすのに役立ついくつかの機能が含まれています。 攻撃表面の縮小の詳細については、次のビデオをご覧ください。<p>
+攻撃表面は、組織がサイバー脅威や攻撃に対して脆弱なすべての場所です。 Defender for Endpoint には、攻撃の表面を減らすのに役立ついくつかの機能が含まれています。 攻撃表面の縮小の詳細については、次のビデオをご覧ください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4woug]
 
@@ -47,7 +48,7 @@ ms.locfileid: "52771695"
 
 | 記事 | 説明 |
 |:---|:---|
-| [ハードウェア ベースの分離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | システムの開始と実行中のシステムの整合性を保護し、維持します。 ローカル構成証明とリモート構成証明を使用してシステムの整合性を検証します。 また、悪意のある web サイトから保護するためにMicrosoft Edgeコンテナーの分離を使用します。 |
+| [ハードウェア ベースの分離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | システムの開始と実行中のシステムの整合性を保護し、維持します。 ローカル構成証明とリモート構成証明を使用してシステムの整合性を検証します。 悪意のある web サイトからMicrosoft Edgeを保護するために、コンテナーの分離を使用します。 |
 | [アプリケーション制御](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | アプリケーション制御を使用して、アプリケーションを実行するために信頼を得る必要があります。 |
 | [制御されたフォルダー アクセス](controlled-folders.md) | 悪意のあるアプリや疑わしいアプリ (ファイル暗号化ランサムウェア マルウェアを含む) がキー システム フォルダー内のファイルに変更を加えるのを防ぐのに役立ちます (Microsoft Defender ウイルス対策) |
 | [ネットワーク保護](network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (必要なMicrosoft Defender ウイルス対策) |

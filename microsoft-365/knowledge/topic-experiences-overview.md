@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva トピックの概要。
-ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 785fddb7c951bb6f7c170971f0af4eb7ac8f9a83
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950025"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984906"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva トピックの概要 
 
@@ -39,14 +39,14 @@ Viva トピックは、AI を使って組織内の *トピック* を自動的�
 
 トピックは、次の方法でユーザーに表示されます。
 
-- [ページの](topic-experiences-overview.md#topic-highlights)トピックSharePoint
+- [ページで強調表示](topic-experiences-overview.md#sharepoint-highlights)SharePointトピック
 - 検索結果のトピック [回答](topic-experiences-overview.md#search-results)
 - Office アプリケーション [での検索](topic-experiences-overview.md#office-application-search)
 - [トピック センターの](topic-experiences-overview.md#topic-center) ホーム ページ
 
-### <a name="topic-highlights"></a>トピックの強調表示
+### <a name="sharepoint-highlights"></a>SharePointハイライト
 
-SharePoint ニュースやページのコンテンツでトピックがメンションされると、そのトピックが強調表示されます。 強調表示からトピック サマリーを開くことができます。 概要のタイトルからトピックの詳細を開き、完全なトピック ページを表示します。 前述のトピックは、自動的に識別するか、ページ作成者がトピックに直接参照してページに追加されている可能性があります。 
+SharePoint ニュースやページのコンテンツでトピックがメンションされると、そのトピックが強調表示されます。 強調表示からトピック サマリーを開くことができます。 概要のタイトルからトピックの詳細を開き、完全なトピック ページを表示します。 前述のトピックは、自動的に識別するか、ページ作成者によって直接参照されている可能性があります。 
 
    ![トピックのハイライトを示すスクリーンショット。](../media/knowledge-management/saturn.png) 
 

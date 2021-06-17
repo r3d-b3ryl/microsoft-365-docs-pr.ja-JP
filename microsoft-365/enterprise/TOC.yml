@@ -286,12 +286,14 @@
               href: ms-cloud-germany-transition-add-experience.md
             - name: 追加情報
               items:
-                - name: Azure AD
-                  href: ms-cloud-germany-transition-azure-ad.md
-                - name: デバイス
-                  href: ms-cloud-germany-transition-add-devices.md
                 - name: AD FS の移行手順
                   href: ms-cloud-germany-transition-add-adfs.md
+                - name: Azure AD
+                  href: ms-cloud-germany-transition-azure-ad.md
+                - name: CSP
+                  href: ms-cloud-germany-transition-add-csp.md
+                - name: デバイス
+                  href: ms-cloud-germany-transition-add-devices.md
                 - name: 電子情報開示
                   href: ms-cloud-germany-transition-add-scc.md
 - name: ID

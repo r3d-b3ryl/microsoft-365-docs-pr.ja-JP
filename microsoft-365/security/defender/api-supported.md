@@ -1,7 +1,7 @@
 ---
 title: サポートされている Microsoft 365 Defender API
 description: サポートされている Microsoft 365 Defender API
-keywords: Microsoft 365Defender、API、API
+keywords: Microsoft 365 Defender API、API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c10b2863503a5bda829cbf67379a606b687ac2e3
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: acd8ec28fb1d78e3724cb0ca0ebee48133e7310f
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730944"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985086"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>サポートされている Microsoft 365 Defender API 
 
@@ -41,9 +41,9 @@ ms.locfileid: "52730944"
 
 記事 | 説明
 -|-
-[高度な追及 API](api-advanced-hunting.md) | 高度な検索クエリを実行します。
+[高度な追求 API](api-advanced-hunting.md) | 高度な検索クエリを実行します。
 [インシデント API](api-incident.md) | 他の実用的なタスクと共に、インシデントを一覧表示および更新します。
-[ストリーミング API](../defender-endpoint/raw-data-export.md) (プレビュー) | 1 つのデータ ストリームで発生するリアルタイム イベントとアラートを出荷します。
+[ストリーミング API](streaming-api.md) (プレビュー) | 1 つのデータ ストリームで発生するリアルタイム イベントとアラートを出荷します。
 
 ### <a name="endpoint-uris"></a>エンドポイント URI
 
@@ -59,8 +59,8 @@ ms.locfileid: "52730944"
 
 ## <a name="related-articles"></a>関連資料
 
-- [Microsoft 365Defender API の概要](api-overview.md)
-- [Defender API Microsoft 365アクセスする](api-access.md)
+- [Microsoft 365 DefenderAPI の概要](api-overview.md)
+- [API にMicrosoft 365 Defenderする](api-access.md)
 - [ストリーミング API](../defender-endpoint/raw-data-export.md)
 - [API の制限とライセンスの詳細](api-terms.md)
 - [エラー コードについて](api-error-codes.md)

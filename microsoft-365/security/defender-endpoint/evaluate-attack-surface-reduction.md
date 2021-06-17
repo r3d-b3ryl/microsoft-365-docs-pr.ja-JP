@@ -14,17 +14,16 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5d3cd7893af4c91807782c269231a280b413733e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a5fa8e46de0a6561d3377ce77e38bd59aa97f3c4
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861224"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984726"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>攻撃面の減少ルールを評価する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
@@ -33,7 +32,7 @@ ms.locfileid: "52861224"
 
 >Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-攻撃表面の縮小ルールは、デバイスやネットワークを侵害するためにマルウェアが通常使用するアクションを防ぐのに役立ちます。 攻撃表面の縮小ルールは、マルウェアやランサムウェアで使用される一般的なエントリ ポイントの多くを閉じるのに役立ちます。 
+攻撃表面の縮小ルールは、デバイスやネットワークを侵害するためにマルウェアが通常使用するアクションを防ぐのに役立ちます。 攻撃表面の縮小ルールは、マルウェアやランサムウェアで使用される一般的なエントリ ポイントの多くを閉じるのに役立ちます。
 
 次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールを設定Windows。
 
@@ -43,9 +42,9 @@ ms.locfileid: "52861224"
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 > [!WARNING]
-> 攻撃サービスの削減ルールを有効にすると、Windows Server 2016予期しない結果が発生し、サーバーのパフォーマンスに影響を与える可能性があります。 サポートされていないプラットフォームに対して攻撃表面の縮小ルールを有効または展開はお勧めしません。
+> 攻撃サービスの縮小ルールを有効にすると、Windows Server 2016予期しない結果を引き起こし、サーバーのパフォーマンスに影響を与える可能性があります。 サポートされていないプラットフォームに対して攻撃表面の縮小ルールを有効または展開はお勧めしません。
 
-監査モードで組織の機能を直接テストすることで、攻撃表面の縮小ルールを評価する方法について学習します。
+監査モードで組織の機能を直接テスト[](audit-windows-defender.md)することで、攻撃表面の縮小ルールを評価する方法について学習します。
 
 > [!TIP]
 > また、Microsoft Defender for Endpoint のデモ シナリオ web サイト demo.wd.microsoft.com 機能 [が](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 動作し、動作を確認することもできます。
@@ -91,6 +90,6 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 ## <a name="see-also"></a>関連項目
 
-* [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
-* [監査モードを使用して、監査Windows Defender](audit-windows-defender.md)
-* [攻撃面の減少の FAQ](attack-surface-reduction.md)
+- [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
+- [監査モードを使用して、監査Windows Defender](audit-windows-defender.md)
+- [攻撃面の減少の FAQ](attack-surface-reduction.md)

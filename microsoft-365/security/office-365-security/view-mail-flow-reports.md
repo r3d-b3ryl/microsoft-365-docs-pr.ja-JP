@@ -19,12 +19,12 @@ description: 管理者は、セキュリティ コンプライアンス セン�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245674"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985506"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ コンプライアンス センターの [レポート] ダッシュボードでメール フロー レポート&表示する
 
@@ -35,7 +35,7 @@ ms.locfileid: "52245674"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-セキュリティ & コンプライアンス センターのメール フロー[](mail-flow-insights-v2.md)ダッシュボードで使用できるメール フロー レポートに加えて、レポート ダッシュボードには、Microsoft 365 組織の監視に役立つさまざまなメール フロー レポートがあります。
+セキュリティ & コンプライアンス センターのメール フロー[](mail-flow-insights-v2.md)ダッシュボードで使用できるメール フロー レポートに加えて、Microsoft 365 組織の監視に役立つさまざまなメール フロー レポートをレポート ダッシュボードで利用できます。
 
 必要なアクセス許可 [がある](#what-permissions-are-needed-to-view-these-reports)場合は、[レポート ダッシュボード] に移動して、セキュリティ & [コンプライアンス](https://protection.office.com) センターでこれらのレポート **を表示** \> **できます**。 レポート ダッシュボードに直接移動するには、を開きます <https://protection.office.com/insightdashboard> 。
 
@@ -95,29 +95,29 @@ ms.locfileid: "52245674"
 
 レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
 
-## <a name="exchange-transport-rule-report"></a>Exchangeトランスポート ルール レポート
+## <a name="exchange-transport-rule-report"></a>Exchange トランスポート ルール レポート
 
-トランスポート **Exchangeレポートには**、組織内の受信メッセージと送信メッセージに対するメール フロー ルール (トランスポート ルールとも呼ばれる) の影響が表示されます。
+**Exchange トランスポート ルール レポートには**、組織内の受信メッセージと送信メッセージに対するメール フロー ルール (トランスポート ルールとも呼ばれる) の影響が表示されます。
 
-レポートを表示するには、セキュリティ コンプライアンス センター&[開](https://protection.office.com)き、[レポートダッシュボード] に移動し、[トランスポート ルールExchange \> **選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ETRRuleReport> 。
+レポートを表示するには、コンプライアンス センターのセキュリティ & [開](https://protection.office.com)き、[レポート **ダッシュボード]** に移動し \> 、[Exchange **トランスポート** ルール **] を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ETRRuleReport> 。
 
-![Exchangeダッシュボードでトランスポート ルール ウィジェットを作成する](../../media/transport-rule-report-widget.png)
+![レポート ダッシュボードの Exchange トランスポート ルール ウィジェット](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>トランスポート ルール レポートのExchangeビュー
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Exchange トランスポート ルール レポートのレポート ビュー
 
 レポート ビューでは、次のグラフを使用できます。
 
-- **データの表示方法: Exchangeトランスポート ルール** \>**[ブレークダウン]: [方向]**: このグラフには、トランスポート ルールの影響を受けた受信メッセージと送信メッセージの数が表示されます。
+- **データの表示方法: Exchange トランスポート ルール** \>**[ブレークダウン]: [方向]**: このグラフには、トランスポート ルールの影響を受けた受信メッセージと送信メッセージの数が表示されます。
 
-- **データの表示方法: Exchangeトランスポート ルール** \>**[分類]: [重大度]**: このグラフには、重大度の高いメッセージと中程度の重大度メッセージ、および **低重大度メッセージの数が表示** されます。 重大度レベルは、ルールのアクションとして設定します **(重大度** レベルまたは _SetAuditSeverity_ でこのルールを監査します)。 詳細については、「メール フロー ルール[のアクション」を参照Exchange Online。](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+- **データの表示方法: Exchange トランスポート ルール** \>**[分類]: [重大度]**: このグラフには、重大度の高いメッセージと中程度の重大度メッセージ、および **低重大度メッセージの数が表示** されます。 重大度レベルは、ルールのアクションとして設定します **(重大度** レベルまたは _SetAuditSeverity_ でこのルールを監査します)。 詳細については [、「Exchange Online のメール フロー ルールアクション」を参照してください](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
-- **データの表示方法: DLP Exchangeトランスポート ルール** \>**[ブレークダウン]: [方向]**: このグラフは、データ損失防止 (DLP) トランスポート ルールの影響を受けた受信メッセージと送信メッセージの数を示します。 次のオプションをオンにすることで、グラフをさらに絞り込みできます。
+- **データの表示方法: DLP Exchange トランスポート ルール** \>**[ブレークダウン]: [方向]**: このグラフは、データ損失防止 (DLP) トランスポート ルールの影響を受けた受信メッセージと送信メッセージの数を示します。 次のオプションをオンにすることで、グラフをさらに絞り込みできます。
 
   - **データの表示: すべての DLP トランスポート ルール**
   - **データの表示: 侵害されたユーザー**
   - **データの表示: 検出されたコンテンツの量が少ない米国愛国者法**
 
-- **データの表示方法: DLP Exchangeトランスポート ルール** \>**[分類: 方向]**: このビューには、DLP トランスポートルールの影響を受けた重大度の高いメッセージと中程度の重大度メッセージの数が表示されます。  次のオプションをオンにすることで、グラフをさらに絞り込みできます。
+- **データの表示方法: DLP Exchange トランスポート ルール** \>**[分類: 方向]**: このビューには、DLP トランスポートルールの影響を受けた重大度の高いメッセージと中程度の重大度メッセージの数が表示されます。  次のオプションをオンにすることで、グラフをさらに絞り込みできます。
 
   - **データの表示: すべての DLP トランスポート ルール**
   - **データの表示: 侵害されたユーザー**
@@ -129,9 +129,9 @@ ms.locfileid: "52245674"
 - 方向の値
 - 重大度の値
 
-![トランスポート ルール レポートのレポート Exchangeビュー](../../media/transport-rule-report-report-view.png)
+![Exchange トランスポート ルール レポートのレポート ビュー](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>トランスポート ルール レポートのExchangeテーブル ビュー
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Exchange トランスポート ルール レポートの詳細テーブル ビュー
 
 [詳細テーブル **の表示]** をクリックすると、表示される情報は、表示されているグラフによって異なります。
 
@@ -145,7 +145,7 @@ ms.locfileid: "52245674"
   - **重大度**
   - **[方向]**
 
-- **データの表示方法: DLP Exchangeルール**:
+- **データの表示方法: DLP Exchange トランスポート ルール**:
 
   - **Date**
   - **DLP ポリシー**
@@ -166,7 +166,7 @@ ms.locfileid: "52245674"
 
 ## <a name="forwarding-report"></a>転送レポート
 
-転送 **レポートには**、組織の自動的に転送されたメッセージが、組織のメールボックスから外部ドメインExchange Onlineされます。 転送されたメッセージは、セキュリティまたはコンプライアンスリスクを引き起し、アカウントの侵害を示す可能性があります。
+転送 **レポートには** 、Exchange Online メールボックスから外部ドメインに組織の自動的に転送されたメッセージが表示されます。 転送されたメッセージは、セキュリティまたはコンプライアンスリスクを引き起し、アカウントの侵害を示す可能性があります。
 
 レポートを表示するには、コンプライアンス センターのセキュリティ &[開](https://protection.office.com)き、[レポート **ダッシュボード]** に移動し、[レポートの転送] \> **を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=MailFlowForwarding> 。
 
@@ -234,7 +234,7 @@ Mailflow **状態レポートは**、送信済 [](#sent-and-received-email-repor
 
   - **良いメール**
   - **マルウェア**
-  - **[スパム]**
+  - **スパム**
   - **エッジ保護**
   - **ルール メッセージ**
   - **フィッシング詐欺メール**
@@ -246,7 +246,7 @@ Mailflow **状態レポートは**、送信済 [](#sent-and-received-email-repor
 データ テーブルには、次の情報が含まれます。
 
 - **[方向]**
-- **Type**
+- **種類**
 - **24 時間**
 - **3 日間**
 - **7 日間**
@@ -450,7 +450,7 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 
   ![送信および受信電子メール レポートの方向ビュー](../../media/sent-and-received-email-report-direction-view.png)
 
-- **ドリルダウン** \>**マルウェア (マルウェア対策)**: この選択により、電子メール レポートの [マルウェア検出にアクセスします](view-email-security-reports.md#malware-detections-in-email-report)。
+- **ドリルダウン** \>**マルウェア (マルウェア対策)**: この選択により、マルウェア検出 [レポートが表示されます](view-email-security-reports.md#malware-detections-report)。
 
 - **ドリルダウン** \>**スパム検出)**: この選択により、スパム検出 [レポートに移動します](view-email-security-reports.md#spam-detections-report)。
 
@@ -467,7 +467,7 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 [別の **方向] または [** 方向] の [方向 **]** ビューで [詳細テーブルの表示] をクリック **すると** 、次の情報が表示されます。
 
 - **日付 (UTC)**
-- **Type**
+- **種類**
 - **[方向]**
 - **メッセージ数**
 

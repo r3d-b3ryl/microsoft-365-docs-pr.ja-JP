@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 18823db8ca8d4bfa82b8ab6265ee8a0902a13e79
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925894"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984702"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>管理ポータルで、管理者の連絡先を、追加および確認する
 
@@ -51,15 +51,11 @@ IT ヘルプ デスク | サポートスタッフがサポートエリア外で�
 
 **管理者連絡先を追加するには**
 
-1.  管理者ポータルに[Microsoft マネージド デスクトップします](https://aka.ms/mwaasportal)。 
+1.  サインインして [Microsoft エンドポイント マネージャー][をクリックします](https://endpoint.microsoft.com)。 
 
-2.  [サポート **] で**、[管理者連絡先] **を選択します**。 
-
-    ![[サポート] メニューの [選択した上部の近くの管理者の連絡先]](../../media/admincontacts.png)
+2.  [**テナントの管理]** で、[連絡先] セクションを探 **Microsoft マネージド デスクトップ[** 管理者連絡先]**を選択します**。 
 
 3. **[追加]** を選択します。
-
-    ![[エクスポートと更新] の左側にある管理ポータルの [追加] ボタン](../../media/adminadd.png)
 
 4.  [フォーカスエリア **] を選択** し、連絡先の情報を入力します。 
 

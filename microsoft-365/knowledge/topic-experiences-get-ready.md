@@ -1,6 +1,6 @@
 ---
-title: Microsoft Viva Topics の環境を準備する
-description: Microsoft Viva Topics を使用してユーザーに可能な限り多くのコンテンツを提供できるよう、環境を準備します。
+title: 環境の準備を整Microsoft Viva トピック
+description: ユーザーに可能な限り多くのコンテンツを提供できるよう、環境を準備Microsoft Viva トピック。
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -10,26 +10,26 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2db8654bf7bb1bc5ef4759c1617a84ae2153553a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917394"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984882"
 ---
-# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Microsoft Viva Topics の環境を準備する
+# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>環境の準備を整Microsoft Viva トピック
 
 ビバ トピックを利用するには、トピックの検出に可能な限り多くのコンテンツを含め、ユーザーに豊富なトピックセットを用意する必要があります。 しかし、トピックの検出に使用するコンテンツは何ですか? コントロールを管理しながら、インデックス付けされたコンテンツを最大化する方法を示します。 より多くのコンテンツがスコープ内にあると、人工知能が発見できる洞察が向上します。 この記事では、適切なコンテンツを含め、ユーザーに適切なユーザーとリソースを提供するための計画手順について説明します。
 
 ビバ トピックを計画するには、次の必要があります。
 
-![知識管理へのオンボーディングの手順を移行、接続、最新化、セキュリティ保護、および識別する](../media/knowledge-management/km-adoption-onboarding-checklist.png)
+![移行、接続、モダン化、セキュリティ保護、およびビバ トピックへのオンボーディングの手順を特定します。](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [コンテンツを移行SharePoint](#1-migrate-content-to-microsoft-365)
     - トピック のインデックス作成には、サイト上のコンテンツSharePoint含まれます。
       - 可能であれば、貴重なコンテンツを外部ソースSharePointオンラインに移行します。
       - 暗黙知の可能性が高いコンテンツ ソースに優先順位を付ける。
-      - ナレッジ管理の利点を強調し、ユーザーがコンテンツを他のサイトに移動OneDriveをSharePointします。
+      - ビバ トピックの利点を強調して、ユーザーがコンテンツを他のサイトに移動OneDriveをSharePointします。
 
 2. [Connectに関する情報を Microsoft Graph](#2-connect-information-to-microsoft-graph)
     - 将来、外部コンテンツをナレッジ グラフに取り込み、利用可能になる可能性があります。
@@ -73,7 +73,7 @@ ms.locfileid: "50917394"
 
 一部のコンテンツを移行できない場合は、Microsoft サーバーに接続Graph。
 
-- コンテンツ コネクタの[Graph検討してください](/microsoftsearch/connectors-overview)。 コネクタを使用すると、外部コンテンツを Microsoft Graphにインデックス付けし、ユーザーは Microsoft Search を通じて検出できます。
+- コンテンツ コネクタの[Graph検討してください](/microsoftsearch/connectors-overview)。 コネクタを使用すると、外部コンテンツを Microsoft Graphにインデックス付けし、ユーザーはコネクタを介して検出Microsoft Search。
 - 今後の開発では、外部データがビバ トピックスに取り込まれます。
 
 ## <a name="3-modernize-sharepoint-pages"></a>3. ページをSharePointする
@@ -104,7 +104,7 @@ ms.locfileid: "50917394"
 
 アクセス許可に加えて、トピックを通じて検出可能な範囲を制御できます。 インデックスを作成する操作は常に制御されます。
 
-管理者は、管理者センターでインデックスMicrosoft 365構成できます。 ナレッジ管理を設定 [すると、次](set-up-topic-experiences.md)の機能を使用できます。
+管理者は、Microsoft 365 管理センターでインデックス作成を構成できます。 Viva Topics を設定 [すると、次](set-up-topic-experiences.md)の実行が可能です。
 
 - すべての SharePoint サイトでの検出を許可するか、トピック ソースとして含めるまたは除外するサイトを指定します。
 - 機密性の高い用語がある場合は、名前でトピックを除外することもできます。 たとえば、ユーザーのアクセス許可に関係なく、強調表示やカードを表示したくない機密性の高いプロジェクトの名前がある場合は、そのプロジェクト名を除外できます。
@@ -121,16 +121,16 @@ ms.locfileid: "50917394"
 
 組織によっては、これらの役割に対して少数または多数のユーザーが行動している場合があります。 一部の組織では、これらは同じユーザーである可能性があります。
 
-| 知識管理者 | 知識マネージャー | トピック共同作成者 |
+| 知識管理者 | 知識マネージャー | トピック投稿者 |
 |:-------|:-------|:-------|:-------|
 | AAD の役割 | AAD の役割 | SME |
 | 管理センターへのアクセス権を持つ | 管理センターへのアクセス権を持つ | 管理センターへのアクセスなし |
 | ビバ のトピックを設定する | トピックの管理と品質を所有する | 専門知識に基づいてトピックに貢献します。 |
 | セキュリティとコンプライアンスの標準が適用され、ライセンス契約を理解します。| トピックの作成、編集、削除、拒否などのトピック管理タスクを実行します。 トピック投稿者のタスクをサポートします。 | トピック ページの情報とコンテンツ (そのトピックにピン留めされているユーザーとリソースを含む) を管理します。 |
 
-モーメントやカードは、ユーザーが現在のページを閲覧する場合など、作業のコンテキストでユーザーに表示SharePoint。 トピックのエンド ユーザー エクスペリエンスを制御します。
+強調表示とカードは、ユーザーが現在のページを閲覧する場合など、作業のコンテキストでユーザーに表示SharePoint。 トピックのエンド ユーザー エクスペリエンスを制御します。
 
-- Whoトピックを表示できますか? トピックの表示は、管理センター Microsoft 365構成されます。 トピックの表示を許可するグループを選択します。
+- Whoトピックを表示できますか? トピックの表示設定は、Microsoft 365 管理センターで構成されます。 トピックの表示を許可するグループを選択します。
   - 組織内のすべてのユーザー。 "すべてのユーザー" にゲストが含まれるのではなく、ディレクトリ内のすべての内部ユーザー
   - 選択されたユーザーまたはセキュリティ グループのみ (このオプションは、ビバ トピックを展開している間に適切なので、ユーザーのサブセットでテストできます)。 ゲストにトピックを表示する場合は、[選択したユーザーまたはセキュリティ グループ] オプションを使用し、ライセンスを付与する必要があります。
   - 該当者なし。

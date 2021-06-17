@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67c3badb86f1cfb9bf644cc202ed67e3163a6772
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 1548eda760b7b6b19214cb834d7fc43357dc0357
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933157"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985494"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの URL を管理する
 
@@ -40,13 +40,13 @@ ms.locfileid: "52933157"
 
 Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、EOP フィルターの評決に同意しない可能性があります。 たとえば、メッセージが正しい (誤検知) とマークされている場合や、悪いメッセージが許可される場合があります (偽陰性)。
 
-Defender ポータルのテナント許可/ブロックリストMicrosoft 365、フィルター処理の評決を手動で上書Microsoft 365できます。 テナント許可/ブロック一覧は、メール フロー中およびユーザークリック時に使用されます。 次の種類のオーバーライドを指定できます。
+ポータルのテナント許可/ブロックリストMicrosoft 365 Defender、フィルター処理の評決を手動で上書Microsoft 365できます。 テナント許可/ブロック一覧は、メール フロー中およびユーザークリック時に使用されます。 次の種類のオーバーライドを指定できます。
 
 - ブロックする URL。
 - ブロックするファイル。
 - 許可またはブロックするスプーフィングされた送信者。 スプーフィング インテリジェンスインサイトで許可またはブロックの[](learn-about-spoof-intelligence.md)評決を上書きすると、スプーフィングされた送信者は、テナント許可/ブロック一覧の [スプーフィング] タブにのみ表示される手動の許可またはブロックエントリになります。 スプーフィング インテリジェンスによって検出される前に、スプーフィングされた送信者のエントリを手動で作成またはブロックすることもできます。
 
-この記事では、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) のテナント許可/ブロック一覧のエントリを構成する方法について説明します。
+この記事では、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) でエントリを構成する方法について説明します。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -90,9 +90,9 @@ Defender ポータルのテナント許可/ブロックリストMicrosoft 365、
   >
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>テナント許可/Microsoft 365リストにブロック URL エントリを作成するには、Defender ポータルを使用します。
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>テナント許可/Microsoft 365 Defenderリストにブロック URL エントリを作成するには、ポータルを使用します。
 
-1. [Defender ポータルMicrosoft 365で、[ポリシー] &ルール] セクションの **[** テナントの許可/ブロックリスト] \>  \>  \> **に移動します**。
+1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
 
 2. [テナントの **許可/ブロック一覧** ] ページで **、[URL]** タブが選択されているのを確認し、[ブロック] アイコン [ブロック] ![ を ](../../media/m365-cc-sc-create-icon.png) **クリックします**。
 
@@ -108,9 +108,9 @@ Defender ポータルのテナント許可/ブロックリストMicrosoft 365、
 
 4. 完了したら、**[追加]** をクリックします。
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>テナント許可/Microsoft 365リストにブロック ファイル エントリを作成するには、Defender ポータルの [管理者] を使用します。
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>テナント許可/Microsoft 365 Defenderリストにブロック ファイル エントリを作成するには、このポータルを使用します。
 
-1. [Defender ポータルMicrosoft 365で、[ポリシー] &ルール] セクションの **[** テナントの許可/ブロックリスト] \>  \>  \> **に移動します**。
+1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
 
 2. [テナントの **許可/ブロック一覧**] ページで、[ファイル] タブを選択し、[ブロック] アイコン [ブロック] ![ を ](../../media/m365-cc-sc-create-icon.png) **クリックします**。
 
@@ -126,7 +126,7 @@ Defender ポータルのテナント許可/ブロックリストMicrosoft 365、
 
 4. 完了したら、**[追加]** をクリックします。
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>テナント許可/Microsoft 365リストにスプーフィングされた送信者エントリを作成またはブロックするには、Defender ポータルを使用します。
+## <a name="use-the-microsoft-365-defender-portal-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>テナント許可Microsoft 365 Defenderリストでスプーフィングされた送信者エントリを作成またはブロックするには、Microsoft 365 Defender ポータルを使用します。
 
 **注**:
 
@@ -134,7 +134,7 @@ Defender ポータルのテナント許可/ブロックリストMicrosoft 365、
 - ドメイン ペアの許可エントリまたはブロック エントリを構成すると、そのドメイン ペアからのメッセージはスプーフィング インテリジェンスインサイトに表示されなくなりました。
 - スプーフィングされた送信者のエントリは有効期限が切れることはありません。
 
-1. [Defender ポータルMicrosoft 365で、[ポリシー] &ルール] セクションの **[** テナントの許可/ブロックリスト] \>  \>  \> **に移動します**。
+1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
 
 2. [テナントの **許可/ブロックリスト] ページで** 、[スプーフィング] タブ **を選択** し、[ブロック] アイコン ![ [追加] を ](../../media/m365-cc-sc-create-icon.png) **クリックします**。
 
@@ -147,9 +147,9 @@ Defender ポータルのテナント許可/ブロックリストMicrosoft 365、
 
 4. 完了したら、**[追加]** をクリックします。
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>テナント許可/Microsoft 365リストのエントリを表示するには、Defender ポータルの [管理者] を使用します。
+## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>テナント許可/Microsoft 365 Defenderリストのエントリを表示するには、ポータルを使用します。
 
-1. [Defender ポータルMicrosoft 365で、[ポリシー] &ルール] セクションの **[** テナントの許可/ブロックリスト] \>  \>  \> **に移動します**。
+1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
 
 2. 必要なタブを選択します。 使用可能な列は、選択したタブによって異なる。
 
@@ -199,9 +199,9 @@ Defender ポータルのテナント許可/ブロックリストMicrosoft 365、
 
    完了したら、[適用] を **クリックします**。 既存のフィルターをクリアするには、[**フィルター**] をクリックし、表示される [フィルター] フライアウトで 、[フィルターのクリア]**をクリックします**。
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>テナント許可/Microsoft 365リスト内のエントリを変更するには、Defender ポータルを使用します。
+## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>テナント許可/Microsoft 365 Defenderリストのエントリを変更するには、ポータルを使用します。
 
-1. [Defender ポータルMicrosoft 365で、[ポリシー] &ルール] セクションの **[** テナントの許可/ブロックリスト] \>  \>  \> **に移動します**。
+1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
 
 2. 変更するエントリの種類を含むタブを選択します。
    - **URL**
@@ -219,9 +219,9 @@ Defender ポータルのテナント許可/ブロックリストMicrosoft 365、
      - **アクション**: 値を [許可] または [ブロック **] に****変更できます**。
 4. 完了したら、**[保存]** をクリックします。
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>テナント許可/Microsoft 365リストからエントリを削除するには、Defender ポータルを使用します。
+## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>テナント許可/Microsoft 365 Defenderリストからエントリを削除するには、ポータルポータルを使用します。
 
-1. [Defender ポータルMicrosoft 365で、[ポリシー] &ルール] セクションの **[** テナントの許可/ブロックリスト] \>  \>  \> **に移動します**。
+1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
 
 2. 削除するエントリの種類を含むタブを選択します。
    - **URL**
@@ -245,7 +245,7 @@ New-TenantAllowBlockListItems -ListType <FileHash | Url> -Block -Entries "Value1
 次の使用例は、有効期限が切れることはありません指定したファイルのブロック ファイル エントリを追加します。
 
 ```powershell
-New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
+New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 次の使用例は、contoso.com およびすべてのサブドメイン (contoso.com、www.contoso.com、および xyz.abc.contoso.com) のブロック URL エントリを追加します。 ExpirationDate パラメーターまたは NoExpiration パラメーターを使用しないので、エントリは 30 日後に期限切れになります。

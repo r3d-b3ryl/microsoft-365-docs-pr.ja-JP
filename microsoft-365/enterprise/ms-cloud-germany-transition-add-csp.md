@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Deutschland からの移行に関連するクラウド ソリューション プロバイダーの追加情報。'
-ms.openlocfilehash: 7a7c377d8e0b72a0179ff28a93018f88d22a5325
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 843552c55acba57c5c2da4a1a885d65cb4e59d84
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52931055"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984918"
 ---
 # <a name="additional-information-for-cloud-solution-providers"></a>クラウド ソリューション プロバイダーの追加情報
 
@@ -37,6 +37,6 @@ CSP 顧客テナントは、新しいドイツのデータセンター地域に�
 
 ## <a name="missing-subscriptions-in-azure"></a>Azure でサブスクリプションが見つからない
 
-サブスクリプション [とライセンス移行 (フェーズ 3)](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) が完了すると、クラウド ソリューション プロバイダーは Azure サブスクリプションにアクセスできなくなります。
+サブスクリプション [とライセンス移行 (フェーズ 3)](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer) が完了すると、クラウド ソリューション プロバイダーは Azure サブスクリプションにアクセスできなくなります。
 
 アクセスを回復するには、次の手順に従って、すべての Azure サブスクリプションと管理グループを管理するためのアクセス [を昇格します](/azure/role-based-access-control/elevate-access-global-admin)。
