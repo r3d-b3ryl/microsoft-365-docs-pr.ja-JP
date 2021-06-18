@@ -13,16 +13,16 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 708e5dc68b777db42696c6791124b2a8dd1d3b87
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cbd1ff5f2baf17e9a45a64e46d2e9f9f02e1fb68
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927953"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007431"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Office 365 および Office 365 GCC での TLS 1.2 の準備
 
-## <a name="summary"></a>概要
+## <a name="summary"></a>要約
 
 お客様へ最高クラスの暗号化機能を提供するために、マイクロソフトは Office 365 および Office 365 GCC のトランスポート層セキュリティ (TLS) バージョン 1.0 および 1.1 を廃止することを計画しています。 お客様のデータに対するセキュリティの重要性を理解すると共に、お客様が利用しているサービスに影響を及ぼす可能性のある変更については、その情報を公開することをお約束いたします。
 
@@ -70,6 +70,7 @@ Microsoft Teams ルームと Surface Hub 製品の TLS 1.2 のサポートも、
 以下の資料は、クライアントで TLS 1.2 以降のバージョンを確実に使用するために役立つガイダンスや、TLS 1.0 および 1.1 の無効化に関するガイダンスです。
 
 - Office 365 に接続する Windows 7 クライアントの場合、TLS 1.2 が Windows の WinHTTP の既定の安全なプロトコルであることを確認してください。 詳細については、「 [KB 3140245-Update to enable TLS 1.1」および「TLS 1.2 as a default secure protocol in Windows](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in)」を参照してください。
+- [TLS 暗号スイートは、ユーザーがサポートOffice 365](/microsoft-365/compliance/technical-reference-details-about-encryption?view=o365-worldwide#tls-cipher-suites-supported-by-office-365)
 - TLS 1.0 および 1.1 の依存関係を削除することで脆弱な TLS への対処を開始するには、「[マイクロソフトにおける TLS 1.2 のサポート (英語)](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)」をご参照ください。
 - [IIS の新機能](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/)を使用すると、脆弱なセキュリティ プロトコルを使用してサービスに接続している [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) や [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) のクライアントを容易に確認できます。
 - [TLS 1.0 の問題を解決する方法の詳細については、以下を参照してください](https://www.microsoft.com/download/details.aspx?id=55266)。

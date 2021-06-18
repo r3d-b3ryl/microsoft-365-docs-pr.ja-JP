@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,17 +23,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
-description: 管理者センターに管理者のアクセス許可Microsoft 365サインインして、クラウドで組織をセットアップし、ユーザーとサブスクリプションを管理します。
-ms.openlocfilehash: 1d8afaf8c63124fc0dde40002214ba99d4d1a4a0
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
-ms.translationtype: MT
+description: 管理者アクセス許可で Microsoft 365 管理センターにサインインして、クラウドで組織を設定し、ユーザーとサブスクリプションを管理します。
+ms.openlocfilehash: eff0ab72ef3e4634e7a83d1af825bc42d11686af
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572023"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52949989"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
-**Microsoft 365 Business プランを購入済みで、なおかつ、管理者アクセス許可を持つユーザーには、管理センターへのアクセス許可があります**。 この記事は、お客様を対象としています。
+**Microsoft 365 Business プランを購入済みで、かつ、管理者アクセス許可を持つユーザーは、管理センターへのアクセス許可があります**。この記事を参照してください。
 
 **管理者アクセス許可を持たないユーザーの場合、または Microsoft 365 Family プランを使用している場合は、管理センターはありません。** Microsoft 365 を設定するには、「[Microsoft 365 または Office 2019 を PC または Mac にダウンロードしてインストールまたは再インストールする](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)」にアクセスしてください。
 
@@ -55,15 +55,15 @@ ms.locfileid: "52572023"
 
 ## <a name="admin-center-features-and-settings"></a>管理センターの機能と設定
 
-管理センター の左側のナビゲーションに表示される機能と設定を以下に列挙します。 管理タスクの詳細については、「[管理者ヘルプ](../../business-video/admin-center-overview.md)」を参照してください。
+機能と設定は、管理センターの左側のナビゲーションに表示されます。管理者タスクについての詳細は、「[管理者ヘルプ](../../business-video/admin-center-overview.md)」を参照してください。
   
 |**メニュー**|**目的**|
 |-----|-----|
 |**ホーム** <br/> |これは、管理センターのランディング ページです。ユーザー、課金、サービスの正常性、およびレポートを管理する場所が表示されます。  <br/> |
 |**ユーザー** <br/> |従業員や学生など、組織内のユーザーを作成して管理します。アクセス許可レベルを設定することも、そのパスワードをリセットすることもできます。  <br/> |
-|**Groups** <br/> |Microsoft 365 グループ、配布グループ、セキュリティ グループ、または共有メールボックスなど、組織内のグループを作成して管理します。 グループを[作成](../create-groups/create-groups.md)して[管理](../create-groups/manage-groups.md)する方法については、こちらを参照してください。  <br/> |
-|**リソース** <br/> |SharePoint サイト コレクションなどのリソースを作成して管理します。 サイト コレクションを作成する方法については、[こちら](/sharepoint/create-site-collection)を参照してください。  <br/> |
-|**支払い** <br/> |組織のサブスクリプションの表示、購入、キャンセルを行います。 過去の請求書を確認したり、個別のユーザーに割り当て済みのライセンス数を確認したりすることもできます。 請求の管理方法については、[こちら](../../commerce/index.yml)を参照してください。  <br/> |
+|**Groups** <br/> |Microsoft 365 グループ、配布グループ、セキュリティ グループ、共有メールボックスなどの組織内のグループを作成および管理します。グループの[作成](../create-groups/create-groups.md)および[管理](../create-groups/manage-groups.md)方法を説明します。<br/> |
+|**リソース** <br/> |SharePoint サイト コレクションなどのリソースを作成および管理します。「[サイト コレクションの作成](/sharepoint/create-site-collection)」を参照してください。  <br/> |
+|**請求** <br/> |組織のサブスクリプションの表示、購入、キャンセルを行います。過去の請求明細書や個々のユーザーに割り当て済みのライセンス数を確認できます。「[請求の管理](../../commerce/index.yml)」を参照してください。  <br/> |
 |**サポート** <br/> | 既存のサービス リクエストを表示するか、新しく作成します。 詳細については、「[ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ](../../business-video/get-help-support.md)」を参照してください。 |
 |[**設定**] <br/> |メール、サイト、および Office スイートなどのアプリのグローバル設定を管理します。パスワード ポリシーと有効期限を変更します。contoso.com などのドメイン名を追加して更新します。組織プロファイルとリリース設定を変更します。また、パートナーが管理センターにアクセスできるかどうかを選択します。  <br/> |
 |**セットアップ** <br/> |既存のドメインの管理、多要素認証の有効化と管理、管理者のアクセス権の管理、Office 365 へのユーザー メールボックスの移行、機能の更新プログラムの管理を行ったり、ユーザーによる Office アプリのインストールを支援したりします。 |

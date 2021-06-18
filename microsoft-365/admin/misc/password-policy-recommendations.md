@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: パスワード攻撃に対する組織のセキュリティを強化し、一般的なパスワードを禁止し、リスク ベースの多要素認証を有効にします。
-ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635976"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006927"
 ---
 # <a name="password-policy-recommendations"></a>パスワード ポリシーの推奨事項
 
@@ -113,7 +113,7 @@ Microsoft 365 パスワードの詳細については、以下を参照してく
   
 ### <a name="ban-common-passwords"></a>よく使われるパスワードを禁止する
 
-ユーザーがパスワードを作成するときに認識させる最も重要なパスワード要件は、パスワードの総当たり攻撃に対する組織の脆弱性を減らすためによく使われるパスワードの使用を禁止することです。よく使われるユーザー パスワードには、 **abdcefg**、**password**、**monkey** などがあります。
+パスワードを作成するときにユーザーに認識させる最も重要なパスワード要件は、パスワードの総当たり攻撃に対する組織の脆弱性を軽減するために、よく使われるパスワードの使用を禁止することです。よく使われるユーザー パスワードには、 **abdcefg**、**password**、**monkey** などがあります。
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>組織のパスワードを他の場所で再利用しないようにユーザーを教育する
 
@@ -132,6 +132,8 @@ Microsoft 365 パスワードの詳細については、以下を参照してく
 ## <a name="next-steps"></a>次の手順
 
 パスワードの管理についてさらに詳しい情報が必要な場合は、 以下でおすすめの記事をお読みください:
+
+- [Microsoft パスワード ガイダンス](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
 - [Do Strong Web Passwords Accomplish Anything?](https://go.microsoft.com/fwlink/p/?linkid=861008) (強力な Web パスワードでできること)
 

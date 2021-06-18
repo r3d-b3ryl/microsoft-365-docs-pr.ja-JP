@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78cfef52988e7da611edc0cc4d475e8a4624bc0e
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: bb3e378c13507e354cdd1d739214c1c2d9d6aa98
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879098"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950097"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -297,7 +297,7 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
 
  **注意**:
 
-- Microsoft 365 Defender ポータルでは、スパム対策ポリシーの作成後にその優先度のみを変更できます。 PowerShell では、スパム フィルター ルールの作成時に既定の優先度を上書きできます (この上書きが既存のルールの優先度に影響を与えることがあります)。
+- Microsoft 365 Defender ポータルでは、迷惑メール対策ポリシーの優先度は、そのポリシーの作成後にのみ変更できます。PowerShell では、迷惑メール フィルター ルールの作成時に既定の優先度を上書きできます (既存のルールの優先度に影響を与える可能性があります)。
 - 迷惑メール対策ポリシーは、表示される順に処理されます (最初のポリシーの値は **優先度** が 0)。 既定の迷惑メール対策ポリシーには値 **[Lowest]** が付いており、変更することはできません。
 
 1. Microsoft 365 Defender ポータルで、**[メールと共同作業]**、\>**[ポリシーとルール]**、\>**[脅威ポリシー]**、\>**[ポリシー** セクション]\> **[スパム対策]**.の順に移動します。
@@ -342,7 +342,7 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-spam-policies"></a>Microsoft 365 Defender ポータルを使用して、カスタムのスパム対策ポリシーを削除する
 
-Microsoft 365 Defender ポータルを使用してカスタムのスパム対策ポリシーを削除すると、スパム フィルター ルールと、それに対応するスパム フィルター ポリシーが両方とも削除されます。 既定のスパム対策ポリシーを削除することはできません。
+Microsoft 365 Defender ポータルを使用して、カスタム迷惑メール対策ポリシーを削除すると、スパム フィルター ルールと、それに対応するスパム フィルター ポリシーが両方とも削除されます。既定の迷惑メール対策ポリシーを削除することはできません。
 
 1. Microsoft 365 Defender ポータルで、**[メールと共同作業]**、\>**[ポリシーとルール]**、\>**[脅威ポリシー]**、\>**[ポリシー** セクション]\> **[スパム対策]**.の順に移動します。
 

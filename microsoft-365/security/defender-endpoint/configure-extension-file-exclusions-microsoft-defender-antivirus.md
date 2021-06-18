@@ -14,23 +14,21 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 71df43639a719acb9436f64deba6b6c5cc9317f5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 386e4499fec30bf1c564c1e0dc81cb8aaa5912a5
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924281"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007523"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
-
-
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策除外は、エンドポイントの検出と応答[(EDR)、](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)攻撃表面の縮小[(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)ルール、フォルダー アクセスの制御など、他の Microsoft Defender for Endpoint 機能には[適用されません](/microsoft-365/security/defender-endpoint/controlled-folders)。 この記事で説明する方法を使用して除外するファイルは、アラートや他の検出EDRトリガーできます。 ファイルを広く除外するには、Microsoft Defender for Endpoint カスタム インジケーターに [ファイルを追加します](/microsoft-365/security/defender-endpoint/manage-indicators)。
+> Microsoft Defender ウイルス対策の除外は[、エンドポイントでの検出と対応 (EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)、攻撃表面縮小[(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)ルール、フォルダー アクセスの制御など、他の Microsoft Defender for Endpoint 機能には[適用されません](/microsoft-365/security/defender-endpoint/controlled-folders)。 この記事で説明する方法を使用して除外するファイルは、アラートや他の検出EDRトリガーできます。 ファイルを広く除外するには、Microsoft Defender for Endpoint カスタム インジケーターに [ファイルを追加します](/microsoft-365/security/defender-endpoint/manage-indicators)。
 
 ## <a name="exclusion-lists"></a>除外リスト
 
@@ -42,7 +40,7 @@ ms.locfileid: "52924281"
 > [!NOTE]
 > 自動除外は、その他のWindows Server 2016にのみ適用されます。 これらの除外は、アプリと PowerShell のWindows セキュリティ表示されません。
 
-この記事では、ファイルとフォルダーの除外リストを構成する方法について説明します。 除外 [リストを定義する前に、「除外を](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) 定義するための推奨事項」を参照してください。
+この記事では、ファイルとフォルダーの除外リストを構成する方法について説明します。 除外[リストおすすめ定義する前に、「](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)除外の定義」を参照してください。
 
 | 除外 | 例 | 除外リスト |
 |:---|:---|:---|
@@ -310,7 +308,7 @@ Get-MpPreference
 
 次の例では、リストに含まれるアイテム `ExclusionExtension` が強調表示されます。
 
-![他の設定とGet-MpPreference除外リストを表示する PowerShell 出力](images/defender/wdav-powershell-get-exclusions-all.png)
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Get-MpPreference の PowerShell 出力":::
 
 詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender コマンドレット](/powershell/module/defender/)」を参照してください。
 
@@ -326,7 +324,7 @@ $WDAVprefs.ExclusionPath
 
 次の例では、コマンドレットを使用するごとに、リストが新しい行に分割 `Add-MpPreference` されます。
 
-![除外リスト内のエントリのみを表示する PowerShell 出力](images/defender/wdav-powershell-get-exclusions-variable.png)
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="除外リスト内のエントリのみを表示する PowerShell 出力":::
 
 詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender コマンドレット](/powershell/module/defender/)」を参照してください。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange の保持のしくみについて説明します。
-ms.openlocfilehash: efb95b22355bff292ef63c77fb77fb5a15d66722
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861133"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985434"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Exchange の保持の詳細
 

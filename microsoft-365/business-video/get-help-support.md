@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Adm_O365
 ms.custom:
@@ -18,17 +18,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 管理者のヘルプまたはオンラインまたは電話でのサポートを受けるためには、ビジネス サブスクリプションの管理者である必要Microsoft 365 Business Premium。
-ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
-ms.translationtype: MT
+description: Microsoft 365 Business Premium で、管理者のヘルプ、オンライン サポート、または電話でのサポートを受けるためには、ビジネス サブスクリプションの管理者であることが必要です。
+ms.openlocfilehash: 254e01894f430bdf6a8f666d1425af8705968647
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635904"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984750"
 ---
 # <a name="get-support"></a>サポートを受ける
 
-## <a name="watch-get-help-or-support"></a>ウォッチ: ヘルプまたはサポートを受ける 
+## <a name="watch-get-help-or-support"></a>視聴: ヘルプまたはサポートを利用する 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -258,6 +258,6 @@ Office 365 Germany の管理者は、知識の豊富なサポート担当者に�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドキュメントとトレーニングを検索](find-help-answers.md) する (記事)\
+[ドキュメントやトレーニングを探す](find-help-answers.md) (記事)\
 [従業員のクイック セットアップ](employee-quick-setup.md) (記事)\
-[セットアップのMicrosoft 365 Business Premium (](setup-overview.md)ビデオ)
+[Microsoft 365 Business Premium セットアップの概要](setup-overview.md) (ビデオ)

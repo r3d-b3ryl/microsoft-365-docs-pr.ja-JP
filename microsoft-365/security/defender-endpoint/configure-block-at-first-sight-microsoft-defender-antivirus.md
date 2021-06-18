@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/15/2021
+ms.date: 06/17/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: a6bcc023571e544819ae7f276e6c3af5c1fc1335
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964702"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007402"
 ---
 # <a name="turn-on-block-at-first-sight"></a>事前ブロックを有効にする
 
@@ -82,7 +82,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
    - **クラウドによるファイル スキャンの時間延長**: 50
    - **サンプルを送信する前にユーザーに確認メッセージを表示する**: 確認メッセージを表示せずにすべてのデータを送信する
 
-   ![Intune 構成](images/defender/intune-block-at-first-sight.png)
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune 構成ブロックを一目で確認する":::
 
 4. 設定内容を保存します。
 
@@ -136,7 +136,7 @@ Windows セキュリティ アプリを使用して、個々のクライアン�
 
 2. **[ウイルスと脅威保護]** を選択し、**[ウイルスと脅威保護設定]** で **[設定の管理]** を選択します。
 
-   ![Windows セキュリティ アプリの [ウイルスと脅威の防止の設定] ラベルのスクリーンショット](images/defender/wdav-protection-settings-wdsc.png)
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Windows セキュリティ アプリの [ウイルスと脅威の防止の設定] ラベルのスクリーンショット":::
 
 3. **[クラウドベースの保護]** と **[サンプルの自動送信]** がオンになっていることを確認します。
 

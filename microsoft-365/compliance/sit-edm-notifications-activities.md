@@ -1,5 +1,5 @@
 ---
-title: Exact Data Match アクティビティの通知を作成する (プレビュー)
+title: Exact Data Match アクティビティの通知を作成する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: Exact Data Match アクティビティの通知を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e2f67ef0f276211483519bd5e246e4e041b2b15
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919363"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007563"
 ---
-# <a name="create-notifications-for-exact-data-match-activities-preview"></a>Exact Data Match アクティビティの通知を作成する (プレビュー)
+# <a name="create-notifications-for-exact-data-match-activities"></a>Exact Data Match アクティビティの通知を作成する
 
 [Exact Data Match (EDM) を使用してカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)と、[監査ログ](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)に作成されるアクティビティが多数あります。 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) PowerShell コマンドレットを使用して、次のアクティビティが発生したときに知らせる通知を作成できます。
 
@@ -33,9 +33,6 @@ ms.locfileid: "50919363"
 - RemoveSchema
 - UploadDataFailed
 - UploadDataCompleted
-
-> [!NOTE]
-> EDM アクティビティの通知を作成できるのは、World Wide クラウドと GCC クラウドだけです。
 
 ## <a name="pre-requisites"></a>前提条件
 

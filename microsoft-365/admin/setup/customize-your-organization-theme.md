@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: ナビゲーション バーの上部の既定のテーマを変更し、Microsoft 365ロゴや色に合わせてカスタマイズする方法について学習します。
-ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998802"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006915"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>組織のMicrosoft 365テーマをカスタマイズする
 
@@ -70,7 +70,7 @@ ms.locfileid: "52998802"
 
 最大 4 つの追加のグループ テーマを作成できます。
 
-1. [全般 **] ページ** で、テーマの名前を入力します。
+1. [全般 **] ページ** で、新しいテーマの名前を入力します。
 
 2. [**グループ**] で、既定のテーマを使用Microsoft 365、グループ テーマを表示できる最大 5 つのグループを選択できます。 また、ユーザーがテーマを上書きし、ユーザーの表示名を表示するのを防ぐことも可能です。
 

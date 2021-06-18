@@ -15,17 +15,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 48ab72e9700e45cd4eab520a43d6f3d9ef18e227
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c15e68a74c9bf518822fce211d6c7d5c4dbc3f2c
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926537"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007450"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender ウイルス対策アプリでWindows セキュリティする
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
@@ -36,7 +33,7 @@ ms.locfileid: "52926537"
 設定 Windows Defender クライアントとメイン Windows 設定 の一部だったアプリが結合され、新しいアプリに移動され、Windows 10 バージョン 1703 の一部として既定でインストールされます。
 
 > [!IMPORTANT]
-> センター サービスで Windows セキュリティを無効にしても、Microsoft Defender ウイルス対策[または](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)Windows Defender ファイアウォール。 これらは、サードパーティのウイルス対策製品またはファイアウォール製品がインストールされ、最新の状態に保たれ、自動的に無効になります。
+> Windows セキュリティ センター サービスを無効にしても、ファイアウォールMicrosoft Defender ウイルス対策Windows Defender[無効にな](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) これらは、サードパーティのウイルス対策製品またはファイアウォール製品がインストールされ、最新の状態に保たれ、自動的に無効になります。
 >
 > Windows セキュリティ Center サービスを無効にするか、関連するグループ ポリシー設定を構成して開始または実行を防ぐ場合、Windows セキュリティ アプリはデバイスにインストールしたウイルス対策製品またはファイアウォール製品に関する古い情報や不正確な情報を表示する可能性があります。
 > また、古いまたは古いサード パーティ製のウイルス対策を使用している場合、または以前にインストールした可能性のあるサードパーティのウイルス対策製品をアンインストールした場合、Microsoft Defender ウイルス対策がそれ自体を有効にしなくなっている可能性もあります。
@@ -48,7 +45,7 @@ ms.locfileid: "52926537"
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>アプリでウイルスと脅威保護の設定をWindows セキュリティする
 
-![Windows セキュリティ アプリの [ウイルスと脅威の防止の設定] ラベルのスクリーンショット](images/defender/wdav-protection-settings-wdsc.png)
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="アプリのウイルスと脅威のWindows セキュリティ設定":::
 
 1. タスク バーのWindows セキュリティをクリックするか、Defender のスタート メニューを検索して、アプリを開 **きます**。
 
@@ -69,7 +66,7 @@ ms.locfileid: "52926537"
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>セキュリティ インテリジェンス更新プログラムのバージョンを確認し、最新の更新プログラムをアプリでWindows セキュリティする
 
-![セキュリティ インテリジェンスのバージョン番号情報](images/defender/wdav-wdsc-defs.png)
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="セキュリティ インテリジェンスのバージョン番号":::
 
 1. [セキュリティ] Windows セキュリティスタート メニューを検索し、[セキュリティ]を選択して、アプリを開 **Windows セキュリティ。**
 

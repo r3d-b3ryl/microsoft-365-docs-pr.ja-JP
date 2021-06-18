@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織がコミュニケーションと共同作業を行うMicrosoft 365サービスを採用する方法の概要を確認します。
-ms.openlocfilehash: db61ed4d4c087b76895d08e43f6b1a2c00ed8172
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635392"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007167"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 
@@ -60,7 +60,7 @@ Microsoft 365分析には、次のセクションで詳細なレポートが多�
 
 - **コラボレーション** &ndash;組織内のユーザーがドキュメントを保存し、OneDrive SharePointする方法と、これらの傾向が月ごとにどのように進化していくのかをご覧ください。 また、内部または外部で共有されるドキュメントの数、および所有者や他の共同作業者によって分け分け、積極的に使用されている SharePoint サイトまたは OneDrive アカウントの数を確認することもできます。
 
-- **Storage** &ndash;このレポートを使用して、メールボックス、ユーザー、およびサイトOneDriveクラウド ストレージSharePointします。
+- **ストレージ** &ndash;このレポートを使用して、メールボックス、ユーザー、およびサイトOneDriveクラウド ストレージSharePointします。
 
 - **モビリティ** &ndash;ユーザーが電子メール、メール、メール、Teams、Skype、またはYammer。
 
@@ -80,7 +80,7 @@ Microsoft 365分析には、次のセクションで詳細なレポートが多�
 
 ユーザー アクティビティ レポートは、特定の個々のサービスで使用できます。 これらのレポートは、Active Directory 属性と結合されたユーザー レベルの詳細使用状況データを提供します。 さらに、部門導入レポートを使用すると、Active Directory 属性でスライスして、すべての個々のサービスでアクティブなユーザーを確認できます。 すべての指標は、最新の完全な月に集計されます。
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>このテンプレート アプリは購入によって利用できるか、それとも無料になるか。
 
@@ -105,7 +105,7 @@ Power BI Web インターフェイスからレポートをカスタマイズす�
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>このダッシュボードに関連付けられている pbit ファイルはどのような方法で取得できますか。
 
-pbit ファイルには、Microsoft ダウンロード センター [からアクセスできます](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。
+pbit ファイルには、Microsoft ダウンロード センター [からアクセスできます](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。 
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>Whoとレポートを表示できますか?
 
@@ -129,7 +129,7 @@ pbit ファイルには、Microsoft ダウンロード センター [からア�
 
 ### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>テンプレート アプリのデータと利用状況レポートのデータとの違い
 
-テンプレート アプリに表示される基になるデータは、管理センターのアクティビティ レポートに表示されるデータMicrosoft 365一致します。 主な違いは、管理センターのデータが過去 7/30/90/180 日間利用可能で、テンプレート アプリが月単位で最大 12 か月間データを表示する点です。
+テンプレート アプリに表示される基になるデータは、テンプレート アプリのアクティビティ レポートに表示されるデータと一致Microsoft 365 管理センター。 主な違いは、管理センターのデータが過去 7/30/90/180 日間利用可能で、テンプレート アプリが月単位で最大 12 か月間データを表示する点です。
 
 さらに、テンプレート アプリのユーザー レベルの詳細は、製品ライセンスを割り当て、アクティビティを実行したユーザーの最後の完全な月にのみ使用できます。
 

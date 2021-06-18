@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/28/2020
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ec3dd2edc09d504af0ed76b17577130b1cdce1b7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bc7c84e089b08c440512f8a8bf7583f41394f2ca
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275374"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007643"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>スキャンMicrosoft Defender ウイルス対策確認する
 
@@ -47,7 +47,7 @@ ms.locfileid: "52275374"
 Get-MpThreatDetection
 ```
 
-![PowerShell コマンドレットと出力のスクリーンショット](images/defender/wdav-get-mpthreatdetection.png)
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="PowerShell コマンドレットと出力のスクリーンショット":::
 
 特定の `-ThreatID` 脅威に対する検出のみを表示する出力を制限する場合に指定できます。
 
@@ -57,7 +57,7 @@ Get-MpThreatDetection
 Get-MpThreat
 ```
 
-![PowerShell のスクリーンショット](images/defender/wdav-get-mpthreat.png)
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell コード":::
 
 PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender/)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
 

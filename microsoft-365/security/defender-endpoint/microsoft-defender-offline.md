@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a25a2ec513cd7c25f9f6ddf3d5e328928837bf2d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: b2a6ee7c3f3ea2fb31b31d2f1db178bfd9847fbc
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275146"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007478"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Microsoft Defender オフライン スキャンの結果を実行してレビューする
 
@@ -57,7 +57,7 @@ Microsoft Defender オフラインはWindows 10ハードウェア要件と同じ
 Microsoft Defender オフラインエンドポイントで利用可能な最新の保護更新プログラムを使用します。更新されるたびに更新Windows Defender ウイルス対策されます。 
 
 > [!NOTE]
-> オフライン スキャンを実行する前に、Microsoft Defender AV 保護の更新を試みる必要があります。 グループ ポリシーを使用して更新を強制するか、通常はエンドポイントに更新プログラムを展開するか、最新の保護更新プログラムを手動でダウンロードしてインストール[Microsoft マルウェア プロテクション センター。](https://www.microsoft.com/security/portal/definitions/adl.aspx)
+> オフライン スキャンを実行する前に、Microsoft Defender AV 保護の更新を試みる必要があります。 グループ ポリシーを使用して更新を強制するか、通常はエンドポイントに更新プログラムを展開するか、最新の保護更新プログラムを マイクロソフト マルウェア プロテクション センター から手動でダウンロードして[インストールすることもできます](https://www.microsoft.com/security/portal/definitions/adl.aspx)。
 
 詳細については[、「セキュリティ インテリジェンスMicrosoft Defender ウイルス対策更新プログラムの管理」](manage-protection-updates-microsoft-defender-antivirus.md)を参照してください。
 
@@ -69,7 +69,7 @@ Microsoft Defender オフラインエンドポイントで利用可能な最新�
 
 このプロンプトは、次のような通知を介して実行できます。
 
-![Windows実行の要件を示す通知Microsoft Defender オフライン](images/defender/notification.png)
+:::image type="content" source="../../media/notification.png" alt-text="実行する通知Microsoft Defender オフライン":::
 
 ユーザーには、クライアント内で通知Windows Defenderされます。
 
@@ -77,7 +77,7 @@ Configuration Manager で、エンドポイントの状態を識別するには�
 
 Microsoft Defender オフラインは[マルウェアの修復状態 **] で [** オフライン スキャンが必要]**と表示されます**。
 
-![Microsoft エンドポイント マネージャースキャンが必要Microsoft Defender オフライン示すメッセージ](images/defender/sccm-wdo.png)
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender オフラインスキャンが必要です":::
 
 ## <a name="configure-notifications"></a>通知の構成
 

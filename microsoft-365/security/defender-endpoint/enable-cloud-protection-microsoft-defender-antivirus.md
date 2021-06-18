@@ -10,17 +10,17 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/18/2021
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: e7b7a0ba5c301829633c27f3add8f7f7daa70dfd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 694c09c5136f874550fa4a47586f3268ee2d0833
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924709"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007186"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>クラウドによる保護を有効にする
 
@@ -146,14 +146,14 @@ SubmitSamplesConsent
 
 2. [ウイルス **対策] &タイル** (または左側のメニュー バーのシールド アイコン) を選択し、[ウイルス対策] &設定ラベルを **選択** します。
 
-    ![Windows セキュリティ アプリの [ウイルスと脅威の防止の設定] ラベルのスクリーンショット](images/defender/wdav-protection-settings-wdsc.png)
+    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="ウイルス対策と脅威&設定のスクリーンショット":::
 
 3. [クラウドベース **の保護] と [自動** サンプル **送信] が** [オン] に切り替わるか確認 **します**。
 
 > [!NOTE]
 > グループ ポリシーで自動サンプル送信が構成されている場合、設定は灰色表示され、使用できません。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [クラウド ブロックのタイムアウト期間の構成](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
 - [ブロックを一目で構成する](configure-block-at-first-sight-microsoft-defender-antivirus.md)

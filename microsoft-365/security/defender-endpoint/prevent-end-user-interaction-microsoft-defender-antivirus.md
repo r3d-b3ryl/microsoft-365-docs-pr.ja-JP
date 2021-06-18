@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 06ee2f1cb68df0a957818e1fccb45628487c39fd
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ff0e134d38288b12cbc46dc3ca5f103fbf8c7ad9
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274918"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007679"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーがユーザー インターフェイスを表示または操作Microsoft Defender ウイルス対策防止する
 
@@ -40,18 +40,18 @@ ms.locfileid: "52274918"
 
 設定を [有効] に **設定します**。
 
-![シールド アイコンWindows セキュリティウイルスと脅威の保護セクションを使用しない場合のスクリーンショット](images/defender/wdav-headless-mode-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Windows セキュリティアイコンとウイルスと脅威の保護セクションがない場合":::
 
 設定が [無効] または **[** 構成されていない] に設定されている場合:
 
-![シールド アイコンとWindows セキュリティ脅威保護セクションを示すスクリーンショット](images/defender/wdav-headless-mode-off-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="シールド アイコンとWindows セキュリティ保護セクションを含むアプリのスクリーンショット":::
 
 >[!NOTE]
 >インターフェイスを非表示にすることで、Microsoft Defender ウイルス対策通知がエンドポイントに表示されるのを防ぐことも可能です。 Microsoft Defender for Endpoint 通知は引き続き表示されます。 エンドポイントに表示 [される通知を個別に構成することもできます](configure-notifications-microsoft-defender-antivirus.md)
 
 以前のバージョンの Windows 10設定では、クライアント インターフェイスWindows Defender非表示になります。 ユーザーが開くしようとすると、「システム管理者は、このアプリへのアクセスを制限しました」という警告が表示されます。
 
-![1703 より前のバージョンの Windows 10でヘッドレス モードが有効になっている場合の警告メッセージ](images/defender/wdav-headless-mode-1607.png)
+:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="1703 より前のバージョンの Windows 10でヘッドレス モードが有効になっている場合の警告メッセージ":::
 
 ## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>グループ ポリシーを使用して Microsoft Defender AV インターフェイスをユーザーから非表示にする
 
@@ -63,7 +63,7 @@ ms.locfileid: "52274918"
 
 4. ツリーを展開して **、Windowsインターフェイス> Microsoft Defender ウイルス対策 >コンポーネントを表示します**。
 
-5. [ヘッドレス UI モードを有効にする] **設定を** ダブルクリックし、オプションを [有効] に **設定します**。 [**OK**] をクリックします。 
+5. [ヘッドレス UI モードを有効にする] **設定を** ダブルクリックし、オプションを [有効] に **設定します**。 **[OK]** をクリックします。 
 
 ユーザー [が PC の保護を](configure-local-policy-overrides-microsoft-defender-antivirus.md) 変更する方法の詳細については、「ユーザーがポリシー設定をローカルで変更するのを防ぐ」を参照してください。
 
@@ -84,7 +84,7 @@ ms.locfileid: "52274918"
 
 4. ツリーを展開して、[**スキャン] WindowsコンポーネントMicrosoft Defender ウイルス対策**  >    >  **展開します**。
 
-5. [ユーザーにスキャンの **一時停止を許可する** ] 設定をダブルクリックし、オプションを [無効] に **設定します**。 [**OK**] をクリックします。 
+5. [ユーザーにスキャンの **一時停止を許可する** ] 設定をダブルクリックし、オプションを [無効] に **設定します**。 **[OK]** をクリックします。 
 
 ## <a name="related-articles"></a>関連記事
 

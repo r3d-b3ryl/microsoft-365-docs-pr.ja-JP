@@ -1,6 +1,6 @@
 ---
 title: 改ざん防止機能を使用してセキュリティ設定を保護する
-ms.reviewer: shwjha, hayhov
+ms.reviewer: pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: タンパープロテクションを使用して、悪意のあるアプリが重要なセキュリティ設定を変更するのを防ぐ。
 keywords: マルウェア、防御者、ウイルス対策、改ざん防止
@@ -16,13 +16,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.date: 05/17/2021
-ms.openlocfilehash: f6217cccf79b951c3103e1024ac74669d68645cd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.date: 06/17/2021
+ms.openlocfilehash: 7050a1588b71ac106d5364f29c76d379072e9511
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925937"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007419"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -80,8 +80,8 @@ ms.locfileid: "52925937"
 |:----|:----|
 | Microsoft Intune  | いいえ |
 | Microsoft Endpoint Configuration Manager + テナント接続  |     いいえ  |
-| Microsoft Defender セキュリティ センター ( [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) )    |     はい |
-| Microsoft 365 セキュリティ センター ( [https://security.microsoft.com](https://security.microsoft.com) )  |     はい  |
+| Microsoft Defender セキュリティ センター ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )    |     必要 |
+| Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) )  |     必要  |
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>サーバーを使用して組織の改ざん防止を管理Microsoft Defender セキュリティ センター
 
@@ -100,6 +100,7 @@ ms.locfileid: "52925937"
 - グローバル管理者、セキュリティ [管理者、](/microsoft-365/security/defender-endpoint/assign-portal-access)セキュリティ操作など、適切なアクセス許可が必要です。
 
 - デバイスWindows次のいずれかのバージョンのデバイスを実行している必要Windows。
+
    - Windows 10
    - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
    - Windowsサーバー、バージョン[1803](/windows/release-health/status-windows-10-1803)以降
@@ -147,6 +148,7 @@ ms.locfileid: "52925937"
 2. [**デバイス**  >  **構成プロファイル] を選択します**。
 
 3. 次の設定を含むプロファイルを作成します。
+
     - **プラットフォーム: Windows 10以降**
     - **プロファイルの種類: エンドポイント保護**
     - **カテゴリ: Microsoft Defender セキュリティ センター**
@@ -154,17 +156,19 @@ ms.locfileid: "52925937"
 
 4. プロファイルを 1 つ以上のグループに割り当てる。
 
-### <a name="are-you-using-windows-os-1709-1803-or-1809"></a>OS 1709 Windows 1803、または 1809 を使用していますか?
+### <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>バージョン 1709 Windows Server 2016 1803、または 1809 Windowsバージョンを使用していますか?
 
-WINDOWS 10 OS  [1709、1803、](/windows/release-health/status-windows-10-1709)または[1809](/windows/release-health/status-windows-10-1803)を使用している場合は、Windows セキュリティ アプリにタンパー プロテクションが表示されます。 [](/windows/release-health/status-windows-10-1809-and-windows-server-2019) 代わりに、PowerShell を使用して、改ざん防止が有効になっているかどうかを判断できます。
-
-#### <a name="use-powershell-to-determine-whether-tamper-protection-is-turned-on"></a>PowerShell を使用して、改ざん防止が有効になっているかどうかを判断する
+Windows Server 2016、Windows 10 バージョン 1709、1803、[または 1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)を使用している場合は、Windows セキュリティ アプリにタンパープロテクションが表示されます。 代わりに、PowerShell を使用して、改ざん防止が有効になっているかどうかを判断できます。 
+   
+このWindows Server 2016、設定保護が有効になっていると、リアルタイム保護の状態が正確に反映されません。
+   
+#### <a name="use-powershell-to-determine-whether-tamper-protection-andor-real-time-protection-are-turned-on"></a>PowerShell を使用して、タンパープロテクションまたはリアルタイム保護が有効になっているかどうかを判断する
 
 1. アプリを開Windows PowerShellします。
 
 2. [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell コマンドレットを使用します。
 
-3. 結果の一覧で、 を探します `IsTamperProtected` 。 (true の値は *、改* ざん防止が有効になっているという意味です。
+3. 結果の一覧で、 を探します `IsTamperProtected` 。 (true の値は *、改* ざん防止が有効になっているという意味です。結果の一覧で、 を探します `RealTimeProtectionEnabled` 。 (true の値は、改ざん防止が有効になっているという意味です。
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Configuration Manager バージョン 2006 で組織の改ざん防止を管理する
 
@@ -219,15 +223,11 @@ Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/
 
 ![Microsoft Defender セキュリティ センター](images/tamperattemptalert.png)
 
-Microsoft [](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) Defender for [](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) Endpoint のエンドポイント検出および応答機能と高度なハンティング機能を使用して、セキュリティ運用チームはそのような試みを調査し、対処できます。
+Microsoft Defender[エンドポイントでの検出と対応](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)高度[な](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)ハンティング機能を使用して、セキュリティ運用チームはそのような試みを調査し、対処できます。
 
 ## <a name="review-your-security-recommendations"></a>セキュリティに関する推奨事項を確認する
 
-タンパープロテクションは [、脅威&管理機能と](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) 統合されます。 [セキュリティに関する推奨事項には](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) 、改ざん防止が有効になっていることを確認する方法が含まれます。 たとえば、次の図に示 *すように*、改ざん時に検索できます。
-
-![改ざん防止により、セキュリティに関する推奨事項が表示される](/images/securityrecs-tamperprotect.jpg)
-
-結果では、[タンパープロテクションを **有効** にする] を選択して詳細を確認し、有効にできます。
+タンパープロテクションは [、脅威&管理機能と](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) 統合されます。 [セキュリティに関する推奨事項には](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) 、改ざん防止が有効になっていることを確認する方法が含まれます。 たとえば、改ざん時に検索 *できます*。 結果では、[タンパープロテクションを **有効** にする] を選択して詳細を確認し、有効にできます。
 
 ![改ざん防止を有効にする](images/tamperprotectsecurityrecos.png)
 
