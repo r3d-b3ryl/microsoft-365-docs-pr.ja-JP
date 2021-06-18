@@ -255,7 +255,7 @@
           href: manage/pin-apps-to-app-launcher.md
         - name: 最新のアプリへとユーザーをアップグレードする
           href: setup/upgrade-users-to-latest-office-client.md
-        - name: Microsoft 365 Apps を Microsoft 365 管理センターでテストして展開する
+        - name: 統合アプリ
           href: manage/test-and-deploy-microsoft-365-apps.md
         - name: アドインの一元展開
           items:
