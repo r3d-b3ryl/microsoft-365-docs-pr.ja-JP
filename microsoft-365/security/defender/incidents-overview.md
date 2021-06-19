@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender のインシデント
-description: セキュリティ センター内のデバイス、ユーザー、メールボックス間で発生したインシデントMicrosoft 365調査します。
+title: インシデントのMicrosoft 365 Defender
+description: ポータル内のデバイス、ユーザー、メールボックス間で発生したインシデントMicrosoft 365 Defenderします。
 keywords: インシデント、アラート、調査、分析、応答、相関関係、攻撃、コンピューター、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365、インシデント対応、サイバー攻撃
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,168 +22,168 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9970bb6d410f39ff5d796dec678a750342f0f599
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842028"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022783"
 ---
-# <a name="incidents-in-microsoft-365-defender"></a><span data-ttu-id="36fbe-104">Microsoft 365 Defender のインシデント</span><span class="sxs-lookup"><span data-stu-id="36fbe-104">Incidents in Microsoft 365 Defender</span></span>
+# <a name="incidents-in-microsoft-365-defender"></a><span data-ttu-id="c4593-104">インシデントのMicrosoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c4593-104">Incidents in Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="36fbe-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="36fbe-105">**Applies to:**</span></span>
-- <span data-ttu-id="36fbe-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="36fbe-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="c4593-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="c4593-105">**Applies to:**</span></span>
+- <span data-ttu-id="c4593-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c4593-106">Microsoft 365 Defender</span></span>
 
-> <span data-ttu-id="36fbe-107">Microsoft 365 Defender を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="36fbe-107">Want to experience Microsoft 365 Defender?</span></span> <span data-ttu-id="36fbe-108">[ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-108">You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).</span></span>
+> <span data-ttu-id="c4593-107">Microsoft 365 Defender を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="c4593-107">Want to experience Microsoft 365 Defender?</span></span> <span data-ttu-id="c4593-108">[ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。</span><span class="sxs-lookup"><span data-stu-id="c4593-108">You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).</span></span>
 >
 
-<span data-ttu-id="36fbe-109">Defender のインシデントMicrosoft 365、関連付けられたアラートと、攻撃のストーリーを構成する関連データのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="36fbe-109">An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack.</span></span> 
+<span data-ttu-id="c4593-109">インシデントは、Microsoft 365 Defenderのストーリーを構成する関連付けられたアラートと関連付けられたデータのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="c4593-109">An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack.</span></span> 
 
-<span data-ttu-id="36fbe-110">Microsoft 365やアプリは、疑わしいイベントや悪意のあるイベントやアクティビティを検出すると、アラートを作成します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-110">Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity.</span></span> <span data-ttu-id="36fbe-111">個々のアラートは、完了または継続的な攻撃に関する貴重な手がかりを提供します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-111">Individual alerts provide valuable clues about a completed or ongoing attack.</span></span> <span data-ttu-id="36fbe-112">ただし、攻撃は通常、デバイス、ユーザー、メールボックスなど、さまざまな種類のエンティティに対してさまざまな手法を採用します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-112">However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes.</span></span> <span data-ttu-id="36fbe-113">結果は、テナント内の複数のエンティティに対する複数の通知になります。</span><span class="sxs-lookup"><span data-stu-id="36fbe-113">The result is multiple alerts for multiple entities in your tenant.</span></span> 
+<span data-ttu-id="c4593-110">Microsoft 365やアプリは、疑わしいイベントや悪意のあるイベントやアクティビティを検出すると、アラートを作成します。</span><span class="sxs-lookup"><span data-stu-id="c4593-110">Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity.</span></span> <span data-ttu-id="c4593-111">個々のアラートは、完了または継続的な攻撃に関する貴重な手がかりを提供します。</span><span class="sxs-lookup"><span data-stu-id="c4593-111">Individual alerts provide valuable clues about a completed or ongoing attack.</span></span> <span data-ttu-id="c4593-112">ただし、攻撃は通常、デバイス、ユーザー、メールボックスなど、さまざまな種類のエンティティに対してさまざまな手法を採用します。</span><span class="sxs-lookup"><span data-stu-id="c4593-112">However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes.</span></span> <span data-ttu-id="c4593-113">結果は、テナント内の複数のエンティティに対する複数の通知になります。</span><span class="sxs-lookup"><span data-stu-id="c4593-113">The result is multiple alerts for multiple entities in your tenant.</span></span> 
 
-<span data-ttu-id="36fbe-114">個々のアラートを組み合わせて攻撃に関する洞察を得る場合は、困難で時間がかかる場合があります。Microsoft 365 Defender は自動的にアラートと関連情報をインシデントに集約します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-114">Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.</span></span>
+<span data-ttu-id="c4593-114">個々のアラートを組み合わせて攻撃に関する洞察を得る場合は、困難で時間がかかる場合があります。Microsoft 365 Defender は自動的にアラートと関連情報をインシデントに集約します。</span><span class="sxs-lookup"><span data-stu-id="c4593-114">Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.</span></span>
 
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Defender Microsoft 365エンティティからのイベントをインシデントに関連付ける方法":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="エンティティMicrosoft 365 Defenderイベントをインシデントに関連付ける方法":::
 
-<span data-ttu-id="36fbe-116">Defender でのインシデントのこの短い概要 (4 Microsoft 365) をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="36fbe-116">Watch this short overview of incidents in Microsoft 365 Defender (4 minutes).</span></span>
+<span data-ttu-id="c4593-116">この短いインシデントの概要については、Microsoft 365 Defender (4 分) をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="c4593-116">Watch this short overview of incidents in Microsoft 365 Defender (4 minutes).</span></span>
 
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-<span data-ttu-id="36fbe-117">関連するアラートをインシデントにグループ化すると、攻撃の包括的なビューが得されます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-117">Grouping related alerts into an incident gives you a comprehensive view of an attack.</span></span> <span data-ttu-id="36fbe-118">たとえば、次の情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-118">For example, you can see:</span></span>
+<span data-ttu-id="c4593-117">関連するアラートをインシデントにグループ化すると、攻撃の包括的なビューが得されます。</span><span class="sxs-lookup"><span data-stu-id="c4593-117">Grouping related alerts into an incident gives you a comprehensive view of an attack.</span></span> <span data-ttu-id="c4593-118">たとえば、次の情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="c4593-118">For example, you can see:</span></span>
 
-- <span data-ttu-id="36fbe-119">攻撃が開始された場所。</span><span class="sxs-lookup"><span data-stu-id="36fbe-119">Where the attack started.</span></span>
-- <span data-ttu-id="36fbe-120">どのような戦術が使用されたのか。</span><span class="sxs-lookup"><span data-stu-id="36fbe-120">What tactics were used.</span></span>
-- <span data-ttu-id="36fbe-121">攻撃がテナントにどれくらいまで入ったか。</span><span class="sxs-lookup"><span data-stu-id="36fbe-121">How far the attack has gone into your tenant.</span></span>
-- <span data-ttu-id="36fbe-122">攻撃の範囲 (影響を受けたデバイス、ユーザー、メールボックスの数など)。</span><span class="sxs-lookup"><span data-stu-id="36fbe-122">The scope of the attack, such as how many devices, users, and mailboxes were impacted.</span></span> 
-- <span data-ttu-id="36fbe-123">攻撃に関連付けられているすべてのデータ。</span><span class="sxs-lookup"><span data-stu-id="36fbe-123">All of the data associated with the attack.</span></span>
+- <span data-ttu-id="c4593-119">攻撃が開始された場所。</span><span class="sxs-lookup"><span data-stu-id="c4593-119">Where the attack started.</span></span>
+- <span data-ttu-id="c4593-120">どのような戦術が使用されたのか。</span><span class="sxs-lookup"><span data-stu-id="c4593-120">What tactics were used.</span></span>
+- <span data-ttu-id="c4593-121">攻撃がテナントにどれくらいまで入ったか。</span><span class="sxs-lookup"><span data-stu-id="c4593-121">How far the attack has gone into your tenant.</span></span>
+- <span data-ttu-id="c4593-122">攻撃の範囲 (影響を受けたデバイス、ユーザー、メールボックスの数など)。</span><span class="sxs-lookup"><span data-stu-id="c4593-122">The scope of the attack, such as how many devices, users, and mailboxes were impacted.</span></span> 
+- <span data-ttu-id="c4593-123">攻撃に関連付けられているすべてのデータ。</span><span class="sxs-lookup"><span data-stu-id="c4593-123">All of the data associated with the attack.</span></span>
 
-<span data-ttu-id="36fbe-124">有効[にした場合](m365d-enable.md)、Microsoft 365 Defender は自動化[と](m365d-autoir.md)人工知能を通じてアラートを自動的に調査および解決できます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-124">If [enabled](m365d-enable.md), Microsoft 365 Defender can [automatically investigate and resolve](m365d-autoir.md) alerts through automation and artificial intelligence.</span></span> <span data-ttu-id="36fbe-125">また、追加の修復手順を実行して攻撃を解決することもできます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-125">You can also perform additional remediation steps to resolve the attack.</span></span> 
+<span data-ttu-id="c4593-124">有効[にすると、](m365d-enable.md)自動化Microsoft 365 Defender[人工知能を](m365d-autoir.md)使用してアラートを自動的に調査および解決できます。</span><span class="sxs-lookup"><span data-stu-id="c4593-124">If [enabled](m365d-enable.md), Microsoft 365 Defender can [automatically investigate and resolve](m365d-autoir.md) alerts through automation and artificial intelligence.</span></span> <span data-ttu-id="c4593-125">また、追加の修復手順を実行して攻撃を解決することもできます。</span><span class="sxs-lookup"><span data-stu-id="c4593-125">You can also perform additional remediation steps to resolve the attack.</span></span> 
 
-## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a><span data-ttu-id="36fbe-126">セキュリティ センターでのインシデントMicrosoft 365アラート</span><span class="sxs-lookup"><span data-stu-id="36fbe-126">Incidents and alerts in the Microsoft 365 security center</span></span>
+## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a><span data-ttu-id="c4593-126">インシデントとアラート (Microsoft 365 Defender ポータル)</span><span class="sxs-lookup"><span data-stu-id="c4593-126">Incidents and alerts in the Microsoft 365 Defender portal</span></span>
 
-<span data-ttu-id="36fbe-127">インシデント &**アラート>** インシデントを管理するには、Microsoft 365 セキュリティ センター (security.microsoft.com) を [security.microsoft.com。](https://security.microsoft.com)</span><span class="sxs-lookup"><span data-stu-id="36fbe-127">You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).</span></span> <span data-ttu-id="36fbe-128">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-128">Here's an example.</span></span>
+<span data-ttu-id="c4593-127">インシデント ポータル **(&)** の&で>インシデントからのインシデントを [security.microsoft.com 管理](https://security.microsoft.com)Microsoft 365 Defenderします。</span><span class="sxs-lookup"><span data-stu-id="c4593-127">You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)).</span></span> <span data-ttu-id="c4593-128">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="c4593-128">Here's an example.</span></span>
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="セキュリティ センターの [インシデントMicrosoft 365ページ":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="[インシデント] ページ (Microsoft 365 Defender ポータル)":::
 
-<span data-ttu-id="36fbe-130">インシデント名を選択すると、インシデントの概要が表示され、追加情報を含むタブにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-130">Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.</span></span>
+<span data-ttu-id="c4593-130">インシデント名を選択すると、インシデントの概要が表示され、追加情報を含むタブにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="c4593-130">Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.</span></span>
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="セキュリティ センターのインシデントの概要ページMicrosoft 365例":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="ポータル内のインシデントの [概要] ページMicrosoft 365 Defender例":::
 
-<span data-ttu-id="36fbe-132">インシデントの追加タブは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="36fbe-132">The additional tabs for an incident are:</span></span>
+<span data-ttu-id="c4593-132">インシデントの追加タブは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="c4593-132">The additional tabs for an incident are:</span></span>
 
-- <span data-ttu-id="36fbe-133">アラート</span><span class="sxs-lookup"><span data-stu-id="36fbe-133">Alerts</span></span> 
+- <span data-ttu-id="c4593-133">アラート</span><span class="sxs-lookup"><span data-stu-id="c4593-133">Alerts</span></span> 
 
-  <span data-ttu-id="36fbe-134">インシデントとその情報に関連するすべてのアラート。</span><span class="sxs-lookup"><span data-stu-id="36fbe-134">All the alerts related to the incident and their information.</span></span>
+  <span data-ttu-id="c4593-134">インシデントとその情報に関連するすべてのアラート。</span><span class="sxs-lookup"><span data-stu-id="c4593-134">All the alerts related to the incident and their information.</span></span>
 
-- <span data-ttu-id="36fbe-135">デバイス</span><span class="sxs-lookup"><span data-stu-id="36fbe-135">Devices</span></span>
+- <span data-ttu-id="c4593-135">デバイス</span><span class="sxs-lookup"><span data-stu-id="c4593-135">Devices</span></span>
 
-  <span data-ttu-id="36fbe-136">インシデントの一部または関連付けとして識別されたすべてのデバイス。</span><span class="sxs-lookup"><span data-stu-id="36fbe-136">All the devices that have been identified to be part of or related to the incident.</span></span>
+  <span data-ttu-id="c4593-136">インシデントの一部または関連付けとして識別されたすべてのデバイス。</span><span class="sxs-lookup"><span data-stu-id="c4593-136">All the devices that have been identified to be part of or related to the incident.</span></span>
 
-- <span data-ttu-id="36fbe-137">ユーザー</span><span class="sxs-lookup"><span data-stu-id="36fbe-137">Users</span></span>
+- <span data-ttu-id="c4593-137">ユーザー</span><span class="sxs-lookup"><span data-stu-id="c4593-137">Users</span></span>
 
-  <span data-ttu-id="36fbe-138">インシデントの一部または関連付けとして識別されたすべてのユーザー。</span><span class="sxs-lookup"><span data-stu-id="36fbe-138">All the users that have been identified to be part of or related to the incident.</span></span>
+  <span data-ttu-id="c4593-138">インシデントの一部または関連付けとして識別されたすべてのユーザー。</span><span class="sxs-lookup"><span data-stu-id="c4593-138">All the users that have been identified to be part of or related to the incident.</span></span>
 
-- <span data-ttu-id="36fbe-139">メールボックス</span><span class="sxs-lookup"><span data-stu-id="36fbe-139">Mailboxes</span></span>
+- <span data-ttu-id="c4593-139">メールボックス</span><span class="sxs-lookup"><span data-stu-id="c4593-139">Mailboxes</span></span>
 
-  <span data-ttu-id="36fbe-140">インシデントの一部または関連付けとして識別されたすべてのメールボックス。</span><span class="sxs-lookup"><span data-stu-id="36fbe-140">All the mailboxes that have been identified to be part of or related to the incident.</span></span>
+  <span data-ttu-id="c4593-140">インシデントの一部または関連付けとして識別されたすべてのメールボックス。</span><span class="sxs-lookup"><span data-stu-id="c4593-140">All the mailboxes that have been identified to be part of or related to the incident.</span></span>
 
-- <span data-ttu-id="36fbe-141">調査</span><span class="sxs-lookup"><span data-stu-id="36fbe-141">Investigations</span></span>
+- <span data-ttu-id="c4593-141">調査</span><span class="sxs-lookup"><span data-stu-id="c4593-141">Investigations</span></span>
 
-  <span data-ttu-id="36fbe-142">インシデント内 [のアラートによって](m365d-autoir.md) トリガーされる、すべての自動調査。</span><span class="sxs-lookup"><span data-stu-id="36fbe-142">All the [automated investigations](m365d-autoir.md) triggered by alerts in the incident.</span></span>
+  <span data-ttu-id="c4593-142">インシデント内 [のアラートによって](m365d-autoir.md) トリガーされる、すべての自動調査。</span><span class="sxs-lookup"><span data-stu-id="c4593-142">All the [automated investigations](m365d-autoir.md) triggered by alerts in the incident.</span></span>
 
-- <span data-ttu-id="36fbe-143">証拠と対応</span><span class="sxs-lookup"><span data-stu-id="36fbe-143">Evidence and Response</span></span>
+- <span data-ttu-id="c4593-143">証拠と対応</span><span class="sxs-lookup"><span data-stu-id="c4593-143">Evidence and Response</span></span>
 
-  <span data-ttu-id="36fbe-144">インシデント内のアラートでサポートされているイベントと疑わしいエンティティすべて。</span><span class="sxs-lookup"><span data-stu-id="36fbe-144">All the supported events and suspicious entities in the alerts in the incident.</span></span>
+  <span data-ttu-id="c4593-144">インシデント内のアラートでサポートされているイベントと疑わしいエンティティすべて。</span><span class="sxs-lookup"><span data-stu-id="c4593-144">All the supported events and suspicious entities in the alerts in the incident.</span></span>
 
-- <span data-ttu-id="36fbe-145">Graph (プレビューで)</span><span class="sxs-lookup"><span data-stu-id="36fbe-145">Graph (in preview)</span></span>
+- <span data-ttu-id="c4593-145">Graph (プレビューで)</span><span class="sxs-lookup"><span data-stu-id="c4593-145">Graph (in preview)</span></span>
 
-  <span data-ttu-id="36fbe-146">組織内の影響を受け取った資産へのアラートの接続を示す図。</span><span class="sxs-lookup"><span data-stu-id="36fbe-146">A figure showing the connection of alerts to the impacted assets in your organization.</span></span>
+  <span data-ttu-id="c4593-146">組織内の影響を受け取った資産へのアラートの接続を示す図。</span><span class="sxs-lookup"><span data-stu-id="c4593-146">A figure showing the connection of alerts to the impacted assets in your organization.</span></span>
 
-<span data-ttu-id="36fbe-147">インシデントとそのデータと、セキュリティ センター内のインシデントのタブとのMicrosoft 365します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-147">Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 security center.</span></span>
+<span data-ttu-id="c4593-147">インシデントとデータの関係と、インシデントポータルのインシデントのタブMicrosoft 365 Defenderします。</span><span class="sxs-lookup"><span data-stu-id="c4593-147">Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 Defender portal.</span></span>
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="インシデントとそのデータとセキュリティ センター内のインシデントのタブMicrosoft 365関係":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="インシデントとそのデータと、ポータル内のインシデントのタブMicrosoft 365 Defender関係":::
 
-## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a><span data-ttu-id="36fbe-149">Defender のインシデント対応ワークフロー Microsoft 365例</span><span class="sxs-lookup"><span data-stu-id="36fbe-149">Example incident response workflow for Microsoft 365 Defender</span></span>
+## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a><span data-ttu-id="c4593-149">インシデント対応ワークフローの例Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c4593-149">Example incident response workflow for Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="36fbe-150">次に、セキュリティ センターでインシデントに対応Microsoft 365ワークフロー Microsoft 365示します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-150">Here's an example workflow for responding to incidents in Microsoft 365 with the Microsoft 365 security center.</span></span>
+<span data-ttu-id="c4593-150">次に、ポータルでインシデントに対応するワークフロー Microsoft 365例Microsoft 365 Defender示します。</span><span class="sxs-lookup"><span data-stu-id="c4593-150">Here's an example workflow for responding to incidents in Microsoft 365 with the Microsoft 365 Defender portal.</span></span>
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="インシデント対応ワークフローの例Microsoft 365":::
 
-<span data-ttu-id="36fbe-152">継続的に、インシデント キューの分析と解決に最も優先度の高いインシデントを特定し、対応の準備を整えます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-152">On an ongoing basis, identify the highest priority incidents for analysis and resolution in the incident queue and get them ready for response.</span></span> <span data-ttu-id="36fbe-153">これは、次の組み合わせです。</span><span class="sxs-lookup"><span data-stu-id="36fbe-153">This is a combination of:</span></span>
+<span data-ttu-id="c4593-152">継続的に、インシデント キューの分析と解決に最も優先度の高いインシデントを特定し、対応の準備を整えます。</span><span class="sxs-lookup"><span data-stu-id="c4593-152">On an ongoing basis, identify the highest priority incidents for analysis and resolution in the incident queue and get them ready for response.</span></span> <span data-ttu-id="c4593-153">これは、次の組み合わせです。</span><span class="sxs-lookup"><span data-stu-id="c4593-153">This is a combination of:</span></span>
 
-- <span data-ttu-id="36fbe-154">[インシデント キューの](incident-queue.md) フィルター処理と並べ替えを通じて、優先度の高いインシデントを特定するトリアージ。</span><span class="sxs-lookup"><span data-stu-id="36fbe-154">[Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.</span></span>
-- <span data-ttu-id="36fbe-155">[タイトルを](manage-incidents.md) 変更し、アナリストに割り当て、タグとコメントを追加してインシデントを管理します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-155">[Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.</span></span>
+- <span data-ttu-id="c4593-154">[インシデント キューの](incident-queue.md) フィルター処理と並べ替えを通じて、優先度の高いインシデントを特定するトリアージ。</span><span class="sxs-lookup"><span data-stu-id="c4593-154">[Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.</span></span>
+- <span data-ttu-id="c4593-155">[タイトルを](manage-incidents.md) 変更し、アナリストに割り当て、タグとコメントを追加してインシデントを管理します。</span><span class="sxs-lookup"><span data-stu-id="c4593-155">[Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.</span></span>
 
-1. <span data-ttu-id="36fbe-156">インシデントごとに、攻撃とアラート [の調査と分析を開始します](investigate-incidents.md)。</span><span class="sxs-lookup"><span data-stu-id="36fbe-156">For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):</span></span>
+1. <span data-ttu-id="c4593-156">インシデントごとに、攻撃とアラート [の調査と分析を開始します](investigate-incidents.md)。</span><span class="sxs-lookup"><span data-stu-id="c4593-156">For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):</span></span>
  
-   <span data-ttu-id="36fbe-157">a.</span><span class="sxs-lookup"><span data-stu-id="36fbe-157">a.</span></span> <span data-ttu-id="36fbe-158">インシデントの概要を表示して、インシデントの範囲と重大度、および影響を受けるエンティティ ([概要] タブ) **を理解** します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-158">View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).</span></span>
+   1. <span data-ttu-id="c4593-157">インシデントの概要を表示して、インシデントの範囲と重大度、および影響を受けるエンティティ ([概要] タブ) **を理解** します。</span><span class="sxs-lookup"><span data-stu-id="c4593-157">View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).</span></span>
 
-   <span data-ttu-id="36fbe-159">b.</span><span class="sxs-lookup"><span data-stu-id="36fbe-159">b.</span></span> <span data-ttu-id="36fbe-160">アラートの分析を開始して、発生元、スコープ、重大度 ([アラート] タブ) **を理解** します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-160">Begin analyzing the alerts to understand their origin, scope, and severity (the **Alerts** tab).</span></span>
+   1. <span data-ttu-id="c4593-158">アラートの分析を開始して、発生元、スコープ、重大度 ([アラート] タブ) **を理解** します。</span><span class="sxs-lookup"><span data-stu-id="c4593-158">Begin analyzing the alerts to understand their origin, scope, and severity (the **Alerts** tab).</span></span>
 
-   <span data-ttu-id="36fbe-161">c.</span><span class="sxs-lookup"><span data-stu-id="36fbe-161">c.</span></span> <span data-ttu-id="36fbe-162">必要に応じて、影響を受け取ったデバイス、ユーザー、およびメールボックス([デバイス]、[ユーザー]、および [メールボックス] タブ) に関する **情報を収集** します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-162">As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).</span></span>
+   1. <span data-ttu-id="c4593-159">必要に応じて、影響を受け取ったデバイス、ユーザー、およびメールボックス([デバイス]、[ユーザー]、および [メールボックス] タブ) に関する **情報を収集** します。</span><span class="sxs-lookup"><span data-stu-id="c4593-159">As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).</span></span>
 
-   <span data-ttu-id="36fbe-163">d.</span><span class="sxs-lookup"><span data-stu-id="36fbe-163">d.</span></span> <span data-ttu-id="36fbe-164">Defender が一部Microsoft 365自動的に解決した方法 [([](m365d-autoir.md)調査] タブ)**を参照** してください。</span><span class="sxs-lookup"><span data-stu-id="36fbe-164">See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) (the **Investigations** tab).</span></span>
+   1. <span data-ttu-id="c4593-160">一部のMicrosoft 365 Defenderが [自動的に解決された方法](m365d-autoir.md)([調査] タブ)**を参照** してください。</span><span class="sxs-lookup"><span data-stu-id="c4593-160">See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) (the **Investigations** tab).</span></span>
    
-   <span data-ttu-id="36fbe-165">e.</span><span class="sxs-lookup"><span data-stu-id="36fbe-165">e.</span></span> <span data-ttu-id="36fbe-166">必要に応じて、インシデントのデータ セットの情報を使用して詳細を確認します ([証拠と応答] **タブ** )。</span><span class="sxs-lookup"><span data-stu-id="36fbe-166">As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).</span></span>
+   1. <span data-ttu-id="c4593-161">必要に応じて、インシデントのデータ セットの情報を使用して詳細を確認します ([証拠と応答] **タブ** )。</span><span class="sxs-lookup"><span data-stu-id="c4593-161">As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).</span></span>
 
-2. <span data-ttu-id="36fbe-167">分析の後または分析中に、攻撃による追加の影響を軽減し、セキュリティ上の脅威を根絶するために、格納を実行します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-167">After or during your analysis, perform containment to reduce any additional impact of the attack and eradication of the security threat.</span></span>
+2. <span data-ttu-id="c4593-162">分析の後または分析中に、攻撃による追加の影響を軽減し、セキュリティ上の脅威を根絶するために、格納を実行します。</span><span class="sxs-lookup"><span data-stu-id="c4593-162">After or during your analysis, perform containment to reduce any additional impact of the attack and eradication of the security threat.</span></span>
 
-3. <span data-ttu-id="36fbe-168">可能な限り、テナント リソースをインシデントの前の状態に復元して攻撃から回復します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-168">As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.</span></span>
+3. <span data-ttu-id="c4593-163">可能な限り、テナント リソースをインシデントの前の状態に復元して攻撃から回復します。</span><span class="sxs-lookup"><span data-stu-id="c4593-163">As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.</span></span>
 
-4. <span data-ttu-id="36fbe-169">[インシデント](manage-incidents.md#resolve-an-incident) を解決し、インシデント後の学習に時間を取って、次の処理を行います。</span><span class="sxs-lookup"><span data-stu-id="36fbe-169">[Resolve](manage-incidents.md#resolve-an-incident) the incident and take time for post-incident learning to:</span></span>
+4. <span data-ttu-id="c4593-164">[インシデント](manage-incidents.md#resolve-an-incident) を解決し、インシデント後の学習に時間を取って、次の処理を行います。</span><span class="sxs-lookup"><span data-stu-id="c4593-164">[Resolve](manage-incidents.md#resolve-an-incident) the incident and take time for post-incident learning to:</span></span>
 
-   - <span data-ttu-id="36fbe-170">攻撃の種類とその影響を理解します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-170">Understand the type of the attack and its impact.</span></span>
-   - <span data-ttu-id="36fbe-171">[Threat Analytics](threat-analytics.md)とセキュリティ コミュニティの攻撃を調査して、セキュリティ攻撃の傾向を調査します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-171">Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.</span></span>
-   - <span data-ttu-id="36fbe-172">インシデントの解決に使用したワークフローを思い出し、必要に応じて標準のワークフロー、プロセス、ポリシー、プレイブックを更新します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-172">Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.</span></span>
-   - <span data-ttu-id="36fbe-173">セキュリティ構成の変更が必要かどうかを判断し、実装します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-173">Determine whether changes in your security configuration are needed and implement them.</span></span>
+   - <span data-ttu-id="c4593-165">攻撃の種類とその影響を理解します。</span><span class="sxs-lookup"><span data-stu-id="c4593-165">Understand the type of the attack and its impact.</span></span>
+   - <span data-ttu-id="c4593-166">[Threat Analytics](threat-analytics.md)とセキュリティ コミュニティの攻撃を調査して、セキュリティ攻撃の傾向を調査します。</span><span class="sxs-lookup"><span data-stu-id="c4593-166">Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.</span></span>
+   - <span data-ttu-id="c4593-167">インシデントの解決に使用したワークフローを思い出し、必要に応じて標準のワークフロー、プロセス、ポリシー、プレイブックを更新します。</span><span class="sxs-lookup"><span data-stu-id="c4593-167">Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.</span></span>
+   - <span data-ttu-id="c4593-168">セキュリティ構成の変更が必要かどうかを判断し、実装します。</span><span class="sxs-lookup"><span data-stu-id="c4593-168">Determine whether changes in your security configuration are needed and implement them.</span></span>
 
-<span data-ttu-id="36fbe-174">セキュリティ分析を初めて使用する場合は、[](incidents-overview.md)最初のインシデントへの対応の概要を参照し、詳細については、「インシデントの例」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="36fbe-174">If you are new to security analysis, see the [introduction to responding to your first incident](incidents-overview.md) for additional information and to step through an example incident.</span></span>
+<span data-ttu-id="c4593-169">セキュリティ分析を初めて使用する場合は、[](incidents-overview.md)最初のインシデントへの対応の概要を参照し、詳細については、「インシデントの例」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c4593-169">If you are new to security analysis, see the [introduction to responding to your first incident](incidents-overview.md) for additional information and to step through an example incident.</span></span>
 
-## <a name="example-security-operations-for-microsoft-365-defender"></a><span data-ttu-id="36fbe-175">Defender のセキュリティ操作Microsoft 365例</span><span class="sxs-lookup"><span data-stu-id="36fbe-175">Example security operations for Microsoft 365 Defender</span></span>
+## <a name="example-security-operations-for-microsoft-365-defender"></a><span data-ttu-id="c4593-170">ユーザーのセキュリティ操作のMicrosoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c4593-170">Example security operations for Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="36fbe-176">Defender のセキュリティ操作の例をMicrosoft 365します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-176">Here's an example of security operations for Microsoft 365 Defender.</span></span>
+<span data-ttu-id="c4593-171">次に、セキュリティ操作の例を示Microsoft 365 Defender。</span><span class="sxs-lookup"><span data-stu-id="c4593-171">Here's an example of security operations for Microsoft 365 Defender.</span></span>
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Defender のセキュリティ操作のMicrosoft 365例":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="ユーザーのセキュリティ操作のMicrosoft 365 Defender":::
 
-<span data-ttu-id="36fbe-178">毎日のタスクには、次のものが含まれます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-178">Daily tasks can include:</span></span>
+<span data-ttu-id="c4593-173">毎日のタスクには、次のものが含まれます。</span><span class="sxs-lookup"><span data-stu-id="c4593-173">Daily tasks can include:</span></span>
 
-- <span data-ttu-id="36fbe-179">[インシデントの](manage-incidents.md) 管理</span><span class="sxs-lookup"><span data-stu-id="36fbe-179">[Managing](manage-incidents.md) incidents</span></span>
-- <span data-ttu-id="36fbe-180">アクション センター [での自動調査と応答 (AIR)](m365d-action-center.md) アクションの確認</span><span class="sxs-lookup"><span data-stu-id="36fbe-180">Reviewing [automated investigation and response (AIR)](m365d-action-center.md) actions in the Action center</span></span>
-- <span data-ttu-id="36fbe-181">最新の脅威分析 [の確認](threat-analytics.md)</span><span class="sxs-lookup"><span data-stu-id="36fbe-181">Reviewing the latest [Threat Analytics](threat-analytics.md)</span></span>
-- <span data-ttu-id="36fbe-182">[インシデントへの](investigate-incidents.md) 対応</span><span class="sxs-lookup"><span data-stu-id="36fbe-182">[Responding](investigate-incidents.md) to incidents</span></span>
+- <span data-ttu-id="c4593-174">[インシデントの](manage-incidents.md) 管理</span><span class="sxs-lookup"><span data-stu-id="c4593-174">[Managing](manage-incidents.md) incidents</span></span>
+- <span data-ttu-id="c4593-175">アクション センター [での自動調査と応答 (AIR)](m365d-action-center.md) アクションの確認</span><span class="sxs-lookup"><span data-stu-id="c4593-175">Reviewing [automated investigation and response (AIR)](m365d-action-center.md) actions in the Action center</span></span>
+- <span data-ttu-id="c4593-176">最新の脅威分析 [の確認](threat-analytics.md)</span><span class="sxs-lookup"><span data-stu-id="c4593-176">Reviewing the latest [Threat Analytics](threat-analytics.md)</span></span>
+- <span data-ttu-id="c4593-177">[インシデントへの](investigate-incidents.md) 対応</span><span class="sxs-lookup"><span data-stu-id="c4593-177">[Responding](investigate-incidents.md) to incidents</span></span>
 
-<span data-ttu-id="36fbe-183">毎月のタスクには、次のものが含まれます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-183">Monthly tasks can include:</span></span>
+<span data-ttu-id="c4593-178">毎月のタスクには、次のものが含まれます。</span><span class="sxs-lookup"><span data-stu-id="c4593-178">Monthly tasks can include:</span></span>
 
-- <span data-ttu-id="36fbe-184">AIR 設定 [の確認](m365d-configure-auto-investigation-response.md)</span><span class="sxs-lookup"><span data-stu-id="36fbe-184">Reviewing [AIR settings](m365d-configure-auto-investigation-response.md)</span></span>
-- <span data-ttu-id="36fbe-185">セキュリティで保護[されたスコアと](microsoft-secure-score-improvement-actions.md)[脅威の&の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)</span><span class="sxs-lookup"><span data-stu-id="36fbe-185">Reviewing [Secure Score](microsoft-secure-score-improvement-actions.md) and [Threat & Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)</span></span>
-- <span data-ttu-id="36fbe-186">IT セキュリティ管理チェーンへのレポート</span><span class="sxs-lookup"><span data-stu-id="36fbe-186">Reporting to your IT security management chain</span></span>
+- <span data-ttu-id="c4593-179">AIR 設定 [の確認](m365d-configure-auto-investigation-response.md)</span><span class="sxs-lookup"><span data-stu-id="c4593-179">Reviewing [AIR settings](m365d-configure-auto-investigation-response.md)</span></span>
+- <span data-ttu-id="c4593-180">セキュリティで保護[されたスコアと](microsoft-secure-score-improvement-actions.md)[脅威の&の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)</span><span class="sxs-lookup"><span data-stu-id="c4593-180">Reviewing [Secure Score](microsoft-secure-score-improvement-actions.md) and [Threat & Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)</span></span>
+- <span data-ttu-id="c4593-181">IT セキュリティ管理チェーンへのレポート</span><span class="sxs-lookup"><span data-stu-id="c4593-181">Reporting to your IT security management chain</span></span>
 
-<span data-ttu-id="36fbe-187">四半期ごとに、最高情報セキュリティ責任者 (CISO) へのセキュリティ結果の報告とブリーフィングが含まれます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-187">Quarterly tasks can include a report and briefing of security results to the Chief Information Security Officer (CISO).</span></span>
+<span data-ttu-id="c4593-182">四半期ごとに、最高情報セキュリティ責任者 (CISO) へのセキュリティ結果の報告とブリーフィングが含まれます。</span><span class="sxs-lookup"><span data-stu-id="c4593-182">Quarterly tasks can include a report and briefing of security results to the Chief Information Security Officer (CISO).</span></span>
 
-<span data-ttu-id="36fbe-188">年次タスクには、スタッフ、システム、およびプロセスをテストする重大なインシデントや違反の演習を実行できます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-188">Annual tasks can include conducting a major incident or breach exercise to test your staff, systems, and processes.</span></span> 
+<span data-ttu-id="c4593-183">年次タスクには、スタッフ、システム、およびプロセスをテストする重大なインシデントや違反の演習を実行できます。</span><span class="sxs-lookup"><span data-stu-id="c4593-183">Annual tasks can include conducting a major incident or breach exercise to test your staff, systems, and processes.</span></span> 
 
-<span data-ttu-id="36fbe-189">毎日、月次、四半期、年次のタスクを使用して、プロセス、ポリシー、およびセキュリティ構成を更新または調整できます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-189">Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.</span></span>
+<span data-ttu-id="c4593-184">毎日、月次、四半期、年次のタスクを使用して、プロセス、ポリシー、およびセキュリティ構成を更新または調整できます。</span><span class="sxs-lookup"><span data-stu-id="c4593-184">Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="36fbe-190">次の手順</span><span class="sxs-lookup"><span data-stu-id="36fbe-190">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="c4593-185">次の手順</span><span class="sxs-lookup"><span data-stu-id="c4593-185">Next steps</span></span>
 
-<span data-ttu-id="36fbe-191">**セキュリティ分析とインシデント** 対応に関する情報が必要な場合は、次の情報を参照してください。</span><span class="sxs-lookup"><span data-stu-id="36fbe-191">**If you are new** to security analysis and incident response:</span></span>
+<span data-ttu-id="c4593-186">**セキュリティ分析とインシデント** 対応に関する情報が必要な場合は、次の情報を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c4593-186">**If you are new** to security analysis and incident response:</span></span>
 
-- <span data-ttu-id="36fbe-192">Microsoft 365[](first-incident-overview.md)セキュリティ センターの分析、修復、インシデント後の一般的なプロセスのガイド付きツアーについては、「最初のインシデントに対応する」のチュートリアルを参照してください。攻撃の例を示します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-192">See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft 365 security center with an example of an attack.</span></span>
+- <span data-ttu-id="c4593-187">攻撃の[例を](first-incident-overview.md)示す Microsoft 365 Defender ポータルの分析、修復、インシデント後の一般的なプロセスのガイド付きツアーについては、「最初のインシデントに対応する」のチュートリアルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c4593-187">See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft 365 Defender portal with an example of an attack.</span></span>
 
-<span data-ttu-id="36fbe-193">**セキュリティ分析とインシデント** 対応に関する経験がある場合:</span><span class="sxs-lookup"><span data-stu-id="36fbe-193">**If you have experience** with security analysis and incident response:</span></span>
+<span data-ttu-id="c4593-188">**セキュリティ分析とインシデント** 対応に関する経験がある場合:</span><span class="sxs-lookup"><span data-stu-id="c4593-188">**If you have experience** with security analysis and incident response:</span></span>
 
-- <span data-ttu-id="36fbe-194">セキュリティ センターの [インシデント]ページからインシデント キュー Microsoft 365開始します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-194">Get started with the incident queue from the **Incidents** page of the Microsoft 365 security center.</span></span> <span data-ttu-id="36fbe-195">ここから、以下の操作を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="36fbe-195">From here, you can:</span></span>
+- <span data-ttu-id="c4593-189">ポータルの [インシデント] ページからインシデント キューをMicrosoft 365 Defenderします。</span><span class="sxs-lookup"><span data-stu-id="c4593-189">Get started with the incident queue from the **Incidents** page of the Microsoft 365 Defender portal.</span></span> <span data-ttu-id="c4593-190">ここから、以下の操作を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="c4593-190">From here, you can:</span></span>
 
-  - <span data-ttu-id="36fbe-196">重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-196">See which incidents should be [prioritized](incident-queue.md) based on severity and other factors.</span></span> 
+  - <span data-ttu-id="c4593-191">重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。</span><span class="sxs-lookup"><span data-stu-id="c4593-191">See which incidents should be [prioritized](incident-queue.md) based on severity and other factors.</span></span> 
 
-  - <span data-ttu-id="36fbe-197">[インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-197">[Manage incidents](manage-incidents.md), which includes renaming, assignment, classifying, and adding tags and comments based on your incident management workflow.</span></span>
+  - <span data-ttu-id="c4593-192">[インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。</span><span class="sxs-lookup"><span data-stu-id="c4593-192">[Manage incidents](manage-incidents.md), which includes renaming, assignment, classifying, and adding tags and comments based on your incident management workflow.</span></span>
 
-  - <span data-ttu-id="36fbe-198">インシデント [の調査](investigate-incidents.md) を実行します。</span><span class="sxs-lookup"><span data-stu-id="36fbe-198">Perform [investigations](investigate-incidents.md) of incidents.</span></span>
+  - <span data-ttu-id="c4593-193">インシデント [の調査](investigate-incidents.md) を実行します。</span><span class="sxs-lookup"><span data-stu-id="c4593-193">Perform [investigations](investigate-incidents.md) of incidents.</span></span>
 
-- <span data-ttu-id="36fbe-199">フィッシング攻撃 [、パスワード スプレー攻撃](/security/compass/incident-response-playbooks) 、アプリ同意許可攻撃の詳細なガイダンスについては、次のインシデント対応プレイブックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="36fbe-199">See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks.</span></span>
+- <span data-ttu-id="c4593-194">フィッシング攻撃 [、パスワード スプレー攻撃](/security/compass/incident-response-playbooks) 、アプリ同意許可攻撃の詳細なガイダンスについては、次のインシデント対応プレイブックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c4593-194">See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks.</span></span>
 
