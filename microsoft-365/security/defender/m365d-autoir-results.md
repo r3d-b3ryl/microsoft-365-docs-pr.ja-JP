@@ -1,6 +1,6 @@
 ---
 title: 自動調査の詳細と結果
-description: Defender の自動調査の結果と主要なMicrosoft 365する
+description: 自動調査の結果と主要な結果を確認Microsoft 365 Defender
 keywords: 自動化、調査、結果、分析、詳細、修復、autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: ad774fc36f4f167cb7a4e695b9f572ceb55b968b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9ee2f0402e8cfd184e59dce5a382f835b706d6aa
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274678"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022560"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
 
@@ -35,9 +35,9 @@ ms.locfileid: "52274678"
 **適用対象:**
 - Microsoft 365 Defender
 
-Defender Microsoft 365、自動調査が実行[](m365d-autoir.md)されると、その調査に関する詳細は、自動調査プロセスの間と後の両方で利用できます。 [必要なアクセス許可](m365d-action-center.md#required-permissions-for-action-center-tasks)を持っている場合は、調査の詳細ビューでこれらの詳細を表示できます。 このビューでは、最新の状態と保留中のアクションを承認できます。 
+このMicrosoft 365 Defender、自動調査が実行されると[](m365d-autoir.md)、その調査に関する詳細は、自動調査プロセスの間と後の両方で利用できます。 [必要なアクセス許可](m365d-action-center.md#required-permissions-for-action-center-tasks)を持っている場合は、調査の詳細ビューでこれらの詳細を表示できます。 このビューでは、最新の状態と保留中のアクションを承認できます。 
 
-![調査の詳細](../../media/mtp-air-investdetails.png)
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調査の詳細":::
 
 ## <a name="new-unified-investigation-page"></a>(NEW!)統合された調査ページ
 
@@ -45,7 +45,7 @@ Defender Microsoft 365、自動調査が実行[](m365d-autoir.md)されると、
 
 - コンプライアンス センター ( ) の Office 365 セキュリティ &の調査ページ [https://protection.office.com](https://protection.office.com)
 - [調査] ページの [Microsoft Defender セキュリティ センター ] ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- セキュリティ センター ( ) でのインシデントまたはアクション Microsoft 365エクスペリエンス [https://security.microsoft.com](https://security.microsoft.com)
+- ポータル内のインシデントまたはアクション センターのMicrosoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) )
 
 ## <a name="open-the-investigation-details-view"></a>調査の詳細ビューを開く
 
@@ -89,13 +89,13 @@ Defender Microsoft 365、自動調査が実行[](m365d-autoir.md)されると、
 
 次に例を示します。
 
-![インシデントの詳細](../../media/mtp-incidentdetails-tabs.png)
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="インシデントの詳細":::
 
 ## <a name="investigation-details"></a>調査の詳細
 
 調査の詳細ビューを使用して、調査に関連する過去、現在、保留中のアクティビティを表示します。 次に例を示します。
 
-![調査の詳細](../../media/mtp-air-investdetails.png)
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="調査の詳細":::
 
 調査の詳細ビューでは、次の表で説明する [**Investigation graph (調査のグラフ)**]、[**Alerts (警告)**]、[**Device (デバイス)**]、[**Identities (ID)**]、[**Key findings (主な検出事項)**]、[**Entities (エンティティ)**]、[**Log (ログ)**]、[**Pending actions (保留中のアクション)**] の各タブに情報が表示されます。
 
@@ -105,7 +105,7 @@ Defender Microsoft 365、自動調査が実行[](m365d-autoir.md)されると、
 | タブ | 説明 |
 |:--------|:--------|
 | **Investigation graph (調査グラフ)**   | 調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上のアイテムを選択すると、詳細を表示できます。 たとえば、[証拠]**アイコンを** 選択すると、[証拠]タブに移動し、検出されたエンティティとその評決を確認できます。 |
-| **Alerts**    | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、アプリ、アプリ、Microsoft Cloud App Security、その他の Defender 機能Office脅威保護機能Microsoft 365発生します。|
+| **Alerts**    | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、アプリ、Office、その他のMicrosoft Cloud App Security機能Microsoft 365 Defender発生します。|
 | **デバイス** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、 [デバイス グループのオートメーション レベルに対応します](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)。) |
 | **メールボックス** |検出された脅威の影響を受けたメールボックスを一覧表示します。  |
 | **ユーザー**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
@@ -116,5 +116,5 @@ Defender Microsoft 365、自動調査が実行[](m365d-autoir.md)されると、
 
 ## <a name="next-steps"></a>次の手順
 
-- [修復アクションの表示と管理](m365d-autoir-actions.md)
+- [修復アクションを表示および管理する](m365d-autoir-actions.md)
 - [修復アクションの詳細](m365d-remediation-actions.md)

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5742c121b73eb8709e770c9b2c4da6dbfd942276
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ad8b2030da4fb4815eb71ca53fb2dbac67a05d79
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984858"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022392"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>デバイスごとのセキュリティで保護された構成評価をエクスポートする
 
@@ -39,7 +39,7 @@ ms.locfileid: "52984858"
 
 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 データの量が多い場合は、次の 2 つの方法で取得できます。
 
-- [セキュリティで保護された構成評価 **OData**](#1-export-secure-configuration-assessment-odata)のエクスポート: API は、OData プロトコルに従って、組織内のすべてのデータを Json 応答として取得します。 この方法は _、100 K_ 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から \@ odata.nextLink フィールドを使用して次の結果を取得できます。
+- [セキュリティで保護された構成評価 **の JSON 応答**](#1-export-secure-configuration-assessment-json-response)をエクスポートする: API は、組織内のすべてのデータを Json 応答として取得します。 この方法は _、100 K_ 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から \@ odata.nextLink フィールドを使用して次の結果を取得できます。
 
 - [ファイル経由で安全な構成 **評価を**](#2-export-secure-configuration-assessment-via-files)エクスポートする : この API ソリューションを使用すると、大量のデータを迅速かつ確実に取得できます。 そのため、100 K を超えるデバイスを使用する大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとして取得します。 応答には、すべてのデータをダウンロードする URL が含Azure Storage。 この API を使用すると、すべてのデータを次のようにAzure Storageダウンロードできます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "52984858"
 >
 > 特に示されていない限り、一覧表示されているエクスポート評価方法はすべて、**** 完全なエクスポートと **_デバイス別_**(デバイス単位とも **_呼_** ばれます) です。
 
-## <a name="1-export-secure-configuration-assessment-odata"></a>1. セキュリティで保護された構成評価 (OData) をエクスポートする
+## <a name="1-export-secure-configuration-assessment-json-response"></a>1. セキュリティで保護された構成評価をエクスポートする (JSON 応答)
 
 ### <a name="11-api-method-description"></a>1.1 API メソッドの説明
 

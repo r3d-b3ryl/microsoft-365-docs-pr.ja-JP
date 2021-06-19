@@ -1,6 +1,6 @@
 ---
-title: Defender で誤検知または誤検知に対処Microsoft 365する
-description: Defender の AIR で何かが見つからないか、誤Microsoft 365されましたか? 分析のために誤検知または誤検知を Microsoft に提出する方法について説明します。
+title: ユーザーの誤検知または誤検知に対処Microsoft 365 Defender
+description: AIR によって検出された、または誤って検出されたMicrosoft 365 Defender? 分析のために誤検知または誤検知を Microsoft に提出する方法について説明します。
 keywords: 自動化、調査、アラート、修復、誤検知、偽陰性
 search.appverid: met150
 ms.prod: m365-security
@@ -21,21 +21,21 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 3cffa97d26b2b28de8d9e45d7030e0931a7ba072
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f60208b06e66c1e9803e05ee1fc41376824e9b56
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269580"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022536"
 ---
-# <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>Defender で誤検知または誤検知に対処Microsoft 365する
+# <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>ユーザーの誤検知または誤検知に対処Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-脅威保護ソリューションでは、誤検知や陰性が発生することがあります。 Defender[の自動調査と対応機能](m365d-autoir.md)がMicrosoft 365検出された場合、セキュリティ運用チームが実行できる手順は次のとおりです。
+脅威保護ソリューションでは、誤検知や陰性が発生することがあります。 自動[調査および応答](m365d-autoir.md)機能がMicrosoft 365 Defenderまたは誤って検出された場合、セキュリティ運用チームが実行できる手順は次のとおりです。
 
 - [Microsoft に誤検知/陰性を報告する](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [アラートを調整](#adjust-an-alert-to-prevent-false-positives-from-recurring) する (必要な場合)
@@ -72,5 +72,4 @@ ms.locfileid: "52269580"
 ## <a name="see-also"></a>関連項目
 
 - [自動調査の詳細と結果を表示する](m365d-autoir-results.md)
-- [Defender で高度な狩猟を行って脅威を積極的にMicrosoft 365する](advanced-hunting-overview.md)
-- [Microsoft Defender for Endpoint での誤検出/検出漏れに対処する](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)
+- [高度な検索機能を使用して、脅威を事前に検出Microsoft 365 Defender](advanced-hunting-overview.md)

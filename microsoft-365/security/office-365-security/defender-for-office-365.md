@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eab7cdbed592975739fdcfa1089e6f7d2c25d880
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 00dcd5d8f5d18b59de67318049cc1e5807451f14
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904118"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022356"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -122,13 +122,7 @@ Microsoft Defender for Office 365 には、Defender for Office 365 のパフォ�
 レポートはリアルタイムで更新され、最新の分析情報を提供します。 また、これらのレポートは推奨事項を提供し、間近に迫った脅威を警告します。 定義済みレポートには次のものが含まれます:
 
 - [脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)
-
 - [脅威保護の状態レポート](view-reports-for-mdo.md#threat-protection-status-report)
-
-- [Defender for Office 365 のファイル型レポート](view-reports-for-mdo.md#defender-for-office-365-file-types-report)
-
-- [Defender for Office 365 のメッセージ処理レポート](view-reports-for-mdo.md#defender-for-office-365-message-disposition-report)
-
 - レポートは、上記のもの以外にもいくつかあります。
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>脅威の調査および対応機能を使用する

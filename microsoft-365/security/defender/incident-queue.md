@@ -1,6 +1,6 @@
 ---
-title: Defender でのインシデントのMicrosoft 365する
-description: Defender のインシデント キューからインシデントをフィルター処理するMicrosoft 365する
+title: グループ内のインシデントに優先順位をMicrosoft 365 Defender
+description: インシデント キューからインシデントをフィルター処理する方法については、Microsoft 365 Defender
 keywords: インシデント、キュー、概要、デバイス、ID、ユーザー、メールボックス、電子メール、インシデント、分析、応答
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,31 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1240fbb8fb24b7231733db25e9a1859b2a84fd41
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925889"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022740"
 ---
-# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Defender でのインシデントのMicrosoft 365する
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>グループ内のインシデントに優先順位をMicrosoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft 365Defender は相関分析を適用し、関連するアラートと、さまざまな製品からの自動調査をインシデントに集約します。 Microsoft 365また、defender は、Microsoft 365 Defender が製品のスイート全体で持っているエンドツーエンドの可視性を考えると、悪意のあるアクティビティとしてのみ識別できるアクティビティに対する一意のアラートをトリガーします。 このビューは、セキュリティ アナリストに広範な攻撃ストーリーを提供し、組織全体の複雑な脅威をよりよく理解し、対処するのに役立ちます。
+Microsoft 365 Defender関連するアラートと、さまざまな製品からの自動調査をインシデントに適用します。 Microsoft 365 Defenderは、Microsoft 365 Defender が製品のスイート全体で持つエンドツーエンドの可視性を考えると、悪意のあるアクティビティとしてのみ識別できるアクティビティに対する一意のアラートをトリガーします。 このビューは、セキュリティ アナリストに広範な攻撃ストーリーを提供し、組織全体の複雑な脅威をよりよく理解し、対処するのに役立ちます。
 
 インシデント **キューには、** デバイス、ユーザー、メールボックス間で作成されたインシデントのコレクションが表示されます。 これにより、インシデントを分類して優先順位を付け、情報に基づいたサイバーセキュリティ対応の決定を作成できます。 
 
-インシデント キューにアクセスするには、インシデント & > セキュリティ センター (security.microsoft.com) のクイック 起動時にインシデント Microsoft 365アラート[を表示します](https://security.microsoft.com)。 次に例を示します。
+インシデント ポータル (security.microsoft.com)の&でインシデント>アラートからインシデント キューに[Microsoft 365 Defender取得します](https://security.microsoft.com)。 次に例を示します。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="インシデント キューの例":::
 
 [ **最新のインシデントと** 通知] セクションには、過去 24 時間に受信したアラートとインシデントが作成された数のグラフが表示されます。
 
-既定では、セキュリティ センター内のインシデント キュー Microsoft 365過去 6 か月間に発生したインシデントが表示されます。 最新のインシデントはリストの一番上にあるので、最初に確認できます。
+既定では、ポータル内のインシデント キュー Microsoft 365 Defender過去 6 か月間に発生したインシデントが表示されます。 最新のインシデントはリストの一番上にあるので、最初に確認できます。
 
 インシデント キューには、インシデントの異なる特性や影響を受けたエンティティを表示できるカスタマイズ可能な列 ([列の選択] を選択) があります。 これにより、分析のためのインシデントの事前設定に関する情報に基づいた意思決定を行う際に役立ちます。
 

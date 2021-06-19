@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4f2e16acf474d6da8867a6bd392f9e90e0cf166e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 639f850119498222684c4b3804b32a29dda3eac4
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984846"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022884"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>デバイスごとのソフトウェア インベントリ評価のエクスポート
 
@@ -37,7 +37,7 @@ ms.locfileid: "52984846"
 >
 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 データの量が多い場合は、次の 2 つの方法で取得できます。
 
-- [ソフトウェア インベントリ評価 **OData のエクスポート**](#1-export-software-inventory-assessment-odata)  API は、OData プロトコルに従って、組織内のすべてのデータを Json 応答として取得します。 この方法は _、100 K_ 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から \@ odata.nextLink フィールドを使用して次の結果を取得できます。
+- [ソフトウェア インベントリ評価 **JSON 応答のエクスポート**](#1-export-software-inventory-assessment-json-response) API は、組織内のすべてのデータを Json 応答としてプルします。 この方法は _、100 K_ 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から \@ odata.nextLink フィールドを使用して次の結果を取得できます。
 
 - [ファイルを介してソフトウェア インベントリ評価 **をエクスポートする**](#2-export-software-inventory-assessment-via-files)  この API ソリューションを使用すると、大量のデータを高速かつ確実に取得できます。 そのため、100 K を超えるデバイスを使用する大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとして取得します。 応答には、すべてのデータをダウンロードする URL が含Azure Storage。 この API を使用すると、すべてのデータを次のようにAzure Storageダウンロードできます。
 
@@ -51,7 +51,7 @@ ms.locfileid: "52984846"
 >
 > 特に示されていない限り、一覧表示されているエクスポート評価方法はすべて、**** 完全なエクスポートと **_デバイス別_**(デバイス単位とも **_呼_** ばれます) です。
 
-## <a name="1-export-software-inventory-assessment-odata"></a>1. ソフトウェア インベントリ評価のエクスポート (OData)
+## <a name="1-export-software-inventory-assessment-json-response"></a>1. ソフトウェア インベントリ評価のエクスポート (JSON 応答)
 
 ### <a name="11-api-method-description"></a>1.1 API メソッドの説明
 
@@ -88,11 +88,13 @@ GET /api/machines/SoftwareInventoryByMachine
 
 >[!NOTE]
 >
->-各レコードのデータは約 0.5 KB です。 正しい pageSize パラメーターを選択する場合は、これを考慮する必要があります。
-
->-次の表で定義されているプロパティは、プロパティ ID によってアルファベット順に一覧表示されます。 この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
+>- 各レコードのデータは約 0.5 KB です。 正しい pageSize パラメーターを選択する場合は、これを考慮する必要があります。
 >
->-一部の追加の列が応答で返される場合があります。 これらの列は一時的なもので、削除される場合があります。文書化された列のみを使用してください。
+>- 次の表で定義されているプロパティは、プロパティ ID によってアルファベット順に一覧表示されます。 この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
+>
+>- 応答で追加の列が返される場合があります。 これらの列は一時的なもので、削除される場合があります。文書化された列のみを使用してください。
+
+<br/>
 
 プロパティ (ID) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
@@ -246,12 +248,14 @@ GET /api/machines/SoftwareInventoryExport
 
 >[!Note]
 >
->- ファイルは、複数行 Json 形式& gzip 圧縮ファイルです。
+>- ファイルは、複数行 JSON 形式& gzip 圧縮ファイルです。
 >
 >- ダウンロード URL は 3 時間のみ有効です。 それ以外の場合は、パラメーターを使用できます。
 >
->_ データの最大ダウンロード速度を得る場合は、データが存在する Azure リージョンと同じ Azure リージョンからダウンロードしてください。
->
+>- データの最大ダウンロード速度を得る場合は、データが存在するのと同じ Azure 地域からダウンロードしてください。
+
+<br/><br/>
+
 プロパティ (ID) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
 ファイルのエクスポート | 配列 \[ 文字列\] | 組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧 | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]

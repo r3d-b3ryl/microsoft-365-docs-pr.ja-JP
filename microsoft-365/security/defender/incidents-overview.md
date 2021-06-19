@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender のインシデント
-description: セキュリティ センター内のデバイス、ユーザー、メールボックス間で発生したインシデントMicrosoft 365調査します。
+title: インシデントのMicrosoft 365 Defender
+description: ポータル内のデバイス、ユーザー、メールボックス間で発生したインシデントMicrosoft 365 Defenderします。
 keywords: インシデント、アラート、調査、分析、応答、相関関係、攻撃、コンピューター、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365、インシデント対応、サイバー攻撃
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9970bb6d410f39ff5d796dec678a750342f0f599
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842028"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022783"
 ---
-# <a name="incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender のインシデント
+# <a name="incidents-in-microsoft-365-defender"></a>インシデントのMicrosoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,15 +40,15 @@ ms.locfileid: "52842028"
 > Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
 >
 
-Defender のインシデントMicrosoft 365、関連付けられたアラートと、攻撃のストーリーを構成する関連データのコレクションです。 
+インシデントは、Microsoft 365 Defenderのストーリーを構成する関連付けられたアラートと関連付けられたデータのコレクションです。 
 
 Microsoft 365やアプリは、疑わしいイベントや悪意のあるイベントやアクティビティを検出すると、アラートを作成します。 個々のアラートは、完了または継続的な攻撃に関する貴重な手がかりを提供します。 ただし、攻撃は通常、デバイス、ユーザー、メールボックスなど、さまざまな種類のエンティティに対してさまざまな手法を採用します。 結果は、テナント内の複数のエンティティに対する複数の通知になります。 
 
 個々のアラートを組み合わせて攻撃に関する洞察を得る場合は、困難で時間がかかる場合があります。Microsoft 365 Defender は自動的にアラートと関連情報をインシデントに集約します。
 
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Defender Microsoft 365エンティティからのイベントをインシデントに関連付ける方法":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="エンティティMicrosoft 365 Defenderイベントをインシデントに関連付ける方法":::
 
-Defender でのインシデントのこの短い概要 (4 Microsoft 365) をご覧ください。
+この短いインシデントの概要については、Microsoft 365 Defender (4 分) をご覧ください。
 
 <br>
 
@@ -62,17 +62,17 @@ Defender でのインシデントのこの短い概要 (4 Microsoft 365) をご�
 - 攻撃の範囲 (影響を受けたデバイス、ユーザー、メールボックスの数など)。 
 - 攻撃に関連付けられているすべてのデータ。
 
-有効[にした場合](m365d-enable.md)、Microsoft 365 Defender は自動化[と](m365d-autoir.md)人工知能を通じてアラートを自動的に調査および解決できます。 また、追加の修復手順を実行して攻撃を解決することもできます。 
+有効[にすると、](m365d-enable.md)自動化Microsoft 365 Defender[人工知能を](m365d-autoir.md)使用してアラートを自動的に調査および解決できます。 また、追加の修復手順を実行して攻撃を解決することもできます。 
 
-## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>セキュリティ センターでのインシデントMicrosoft 365アラート
+## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>インシデントとアラート (Microsoft 365 Defender ポータル)
 
-インシデント &**アラート>** インシデントを管理するには、Microsoft 365 セキュリティ センター (security.microsoft.com) を [security.microsoft.com。](https://security.microsoft.com) 次に例を示します。
+インシデント ポータル **(&)** の&で>インシデントからのインシデントを [security.microsoft.com 管理](https://security.microsoft.com)Microsoft 365 Defenderします。 次に例を示します。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="セキュリティ センターの [インシデントMicrosoft 365ページ":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="[インシデント] ページ (Microsoft 365 Defender ポータル)":::
 
 インシデント名を選択すると、インシデントの概要が表示され、追加情報を含むタブにアクセスできます。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="セキュリティ センターのインシデントの概要ページMicrosoft 365例":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="ポータル内のインシデントの [概要] ページMicrosoft 365 Defender例":::
 
 インシデントの追加タブは次のとおりです。
 
@@ -104,13 +104,13 @@ Defender でのインシデントのこの短い概要 (4 Microsoft 365) をご�
 
   組織内の影響を受け取った資産へのアラートの接続を示す図。
 
-インシデントとそのデータと、セキュリティ センター内のインシデントのタブとのMicrosoft 365します。
+インシデントとデータの関係と、インシデントポータルのインシデントのタブMicrosoft 365 Defenderします。
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="インシデントとそのデータとセキュリティ センター内のインシデントのタブMicrosoft 365関係":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="インシデントとそのデータと、ポータル内のインシデントのタブMicrosoft 365 Defender関係":::
 
-## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Defender のインシデント対応ワークフロー Microsoft 365例
+## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>インシデント対応ワークフローの例Microsoft 365 Defender
 
-次に、セキュリティ センターでインシデントに対応Microsoft 365ワークフロー Microsoft 365示します。
+次に、ポータルでインシデントに対応するワークフロー Microsoft 365例Microsoft 365 Defender示します。
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="インシデント対応ワークフローの例Microsoft 365":::
 
@@ -121,15 +121,15 @@ Defender でのインシデントのこの短い概要 (4 Microsoft 365) をご�
 
 1. インシデントごとに、攻撃とアラート [の調査と分析を開始します](investigate-incidents.md)。
  
-   a. インシデントの概要を表示して、インシデントの範囲と重大度、および影響を受けるエンティティ ([概要] タブ) **を理解** します。
+   1. インシデントの概要を表示して、インシデントの範囲と重大度、および影響を受けるエンティティ ([概要] タブ) **を理解** します。
 
-   b. アラートの分析を開始して、発生元、スコープ、重大度 ([アラート] タブ) **を理解** します。
+   1. アラートの分析を開始して、発生元、スコープ、重大度 ([アラート] タブ) **を理解** します。
 
-   c. 必要に応じて、影響を受け取ったデバイス、ユーザー、およびメールボックス([デバイス]、[ユーザー]、および [メールボックス] タブ) に関する **情報を収集** します。
+   1. 必要に応じて、影響を受け取ったデバイス、ユーザー、およびメールボックス([デバイス]、[ユーザー]、および [メールボックス] タブ) に関する **情報を収集** します。
 
-   d. Defender が一部Microsoft 365自動的に解決した方法 [([](m365d-autoir.md)調査] タブ)**を参照** してください。
+   1. 一部のMicrosoft 365 Defenderが [自動的に解決された方法](m365d-autoir.md)([調査] タブ)**を参照** してください。
    
-   e. 必要に応じて、インシデントのデータ セットの情報を使用して詳細を確認します ([証拠と応答] **タブ** )。
+   1. 必要に応じて、インシデントのデータ セットの情報を使用して詳細を確認します ([証拠と応答] **タブ** )。
 
 2. 分析の後または分析中に、攻撃による追加の影響を軽減し、セキュリティ上の脅威を根絶するために、格納を実行します。
 
@@ -144,11 +144,11 @@ Defender でのインシデントのこの短い概要 (4 Microsoft 365) をご�
 
 セキュリティ分析を初めて使用する場合は、[](incidents-overview.md)最初のインシデントへの対応の概要を参照し、詳細については、「インシデントの例」を参照してください。
 
-## <a name="example-security-operations-for-microsoft-365-defender"></a>Defender のセキュリティ操作Microsoft 365例
+## <a name="example-security-operations-for-microsoft-365-defender"></a>ユーザーのセキュリティ操作のMicrosoft 365 Defender
 
-Defender のセキュリティ操作の例をMicrosoft 365します。
+次に、セキュリティ操作の例を示Microsoft 365 Defender。
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Defender のセキュリティ操作のMicrosoft 365例":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="ユーザーのセキュリティ操作のMicrosoft 365 Defender":::
 
 毎日のタスクには、次のものが含まれます。
 
@@ -173,11 +173,11 @@ Defender のセキュリティ操作の例をMicrosoft 365します。
 
 **セキュリティ分析とインシデント** 対応に関する情報が必要な場合は、次の情報を参照してください。
 
-- Microsoft 365[](first-incident-overview.md)セキュリティ センターの分析、修復、インシデント後の一般的なプロセスのガイド付きツアーについては、「最初のインシデントに対応する」のチュートリアルを参照してください。攻撃の例を示します。
+- 攻撃の[例を](first-incident-overview.md)示す Microsoft 365 Defender ポータルの分析、修復、インシデント後の一般的なプロセスのガイド付きツアーについては、「最初のインシデントに対応する」のチュートリアルを参照してください。
 
 **セキュリティ分析とインシデント** 対応に関する経験がある場合:
 
-- セキュリティ センターの [インシデント]ページからインシデント キュー Microsoft 365開始します。 ここから、以下の操作を行うことができます。
+- ポータルの [インシデント] ページからインシデント キューをMicrosoft 365 Defenderします。 ここから、以下の操作を行うことができます。
 
   - 重大度などの要因に基 [づいて優先順位](incident-queue.md) を付ける必要があるインシデントを確認します。 
 

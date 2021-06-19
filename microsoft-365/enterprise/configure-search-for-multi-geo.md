@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: 複数地域環境で検索を構成する方法について学習します。 OneDrive for Business などの一部のクライアントだけが、複数地域環境で結果を返す可能性があります。
-ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 複数地域環境で検索を構成する方法について学習します。 複数地域環境で結果OneDrive for Business返すクライアントは、一部のクライアントのみです。
+ms.openlocfilehash: 31e0c4ae3fe73f2f6e113dbc38989726eb1ca590
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911164"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022332"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Office 365 Multi-Geo ために検索を構成する
 
@@ -131,7 +131,7 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 
 すべての検索クライアントは、既存の SharePoint 検索 REST API を使用して検索インデックスとやり取りします。
 
-![SharePoint Search REST API が検索インデックスとやり取りする方法を示す図](../media/configure-search-for-multi-geo-image1-1.png)
+![検索 REST API がSharePointインデックスとやり取りする方法を示す図](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. 検索クライアントは、クエリ プロパティ EnableMultiGeoSearch = true を設定して、検索 REST エンドポイントを呼び出します。
 2. クエリは、テナント内のすべての地域の場所に送信されます。
@@ -151,7 +151,7 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 
 3. 設定するバーティカルを選択し、右上の **[設定]** ギア アイコンをクリックして、**[ページの編集]** をクリックします。編集モードで、検索結果ページが開きます。
 
-   ![[設定] でページ選択を編集する](../media/configure-search-for-multi-geo-image2.png)
+   ![[ページ選択の編集] 設定](../media/configure-search-for-multi-geo-image2.png)
 
 4. 検索結果 Web パーツで、マウス ポインターを Web パーツの右上に移動させ、矢印をクリックし、メニューから [**Web パーツの編集**] をクリックします。 ページの右上のリボンの下に検索結果 Web パーツのツール ウィンドウが開きます。
 
@@ -324,5 +324,5 @@ https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType=''my_clien
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;
-keywordQuery["EnableMultiGeoSearch"] = true;
+keywordQuery.Properties["EnableMultiGeoSearch"] = true;
 ```
