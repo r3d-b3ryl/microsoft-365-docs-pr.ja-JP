@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed33f67695fddc78c0bac646f72ca0c48887bb04
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 73110d89c39319825cc8dc8e347d137de52a510a
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844420"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028381"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint へのインターネット アクセスのないオンボード デバイス
 
@@ -52,7 +52,7 @@ ms.locfileid: "52844420"
 - [Microsoft Defender for Endpoint サービスへのオンボード サーバー](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [デバイス プロキシとインターネット接続の設定を構成する](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
-## <a name="on-premise-devices"></a>オンプレミス デバイス
+## <a name="on-premises-devices"></a>オンプレミス デバイス
 
 - プロキシまたはハブとして機能するように Azure Log Analytics (以前は OMS Gateway と呼ばれる) をセットアップします。
   - [Azure Log Analytics エージェント](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)

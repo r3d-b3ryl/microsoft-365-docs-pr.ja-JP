@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: f2de1f6bf35f4454ed6ab286c0bc8004a0d6301b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: c480bb83465e6057cd1cf29f1f5077f2a0e165e8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904070"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028825"
 ---
 # <a name="behavioral-blocking-and-containment"></a>動作ブロックと封じ込め
 
@@ -48,7 +48,7 @@ ms.locfileid: "52904070"
 
 - [エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR) は、ネットワーク、デバイス、カーネルの動作全体でセキュリティ信号を受信します。 脅威が検出されると、アラートが作成されます。 同じ種類の複数のアラートがインシデントに集約され、セキュリティ運用チームが調査して対応しやすくなります。
 
-- [Defender for Endpoint](overview-endpoint-detection-response.md)には、EDR を介して受信したネットワーク、エンドポイント、カーネルの動作信号に加えて、ID、電子メール、データ、アプリにわたるさまざまな光学機能があります。 Defender [、Defender Microsoft 365の](../defender/microsoft-365-defender.md)コンポーネントは、これらの信号を処理して関連付け、検出アラートを発生し、インシデントに関連するアラートを接続します。
+- [Defender for Endpoint](overview-endpoint-detection-response.md)には、EDR を介して受信したネットワーク、エンドポイント、カーネルの動作信号に加えて、ID、電子メール、データ、アプリにわたるさまざまな光学機能があります。 Microsoft 365 Defender [、Defender](../defender/microsoft-365-defender.md)for Endpoint のコンポーネントは、これらの信号を処理して関連付け、検出アラートを発生し、インシデントに関連するアラートを接続します。
 
 これらの機能を使用すると、実行を開始した場合でも、より多くの脅威を防止またはブロックできます。 疑わしい動作が検出されると、脅威が含まれる、アラートが作成され、脅威は追跡で停止されます。 
 
@@ -58,13 +58,13 @@ ms.locfileid: "52904070"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>動作のブロックと格納のコンポーネント
 
-- **クライアント上のポリシー駆動型攻撃 [表面の縮小ルール](attack-surface-reduction.md)** 定義済みの一般的な攻撃動作は、攻撃表面の縮小ルールに従って実行されません。 このような動作を実行しようとすると、情報アラートとして、Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) に表示されます。 攻撃表面の縮小ルールは既定では有効になっていません。Defender でポリシーを[Microsoft 365します](microsoft-defender-security-center.md)。
+- **クライアント上のポリシー駆動型攻撃 [表面の縮小ルール](attack-surface-reduction.md)** 定義済みの一般的な攻撃動作は、攻撃表面の縮小ルールに従って実行されません。 このような動作を実行しようとすると、情報アラートとして Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) に表示されます。 攻撃表面の縮小ルールは既定では有効になっていません。でポリシーを構成[Microsoft 365 Defender。](microsoft-defender-security-center.md)
 
 - **[クライアントの動作のブロック](client-behavioral-blocking.md)** エンドポイント上の脅威は機械学習によって検出され、ブロックされ、自動的に修復されます。 (クライアントの動作ブロックは既定で有効になっています)。 
 
 - **[フィードバック ループブロック](feedback-loop-blocking.md)** (高速保護とも呼ばれます) 脅威検出は、行動インテリジェンスを通じて観察されます。 脅威は停止され、他のエンドポイントで実行されません。 (フィードバック ループのブロックは既定で有効になっています)。 
 
-- **[ブロック モードでのエンドポイントEDR応答 (EDR)](edr-in-block-mode.md)** 侵害後の保護によって観察される悪意のあるアーティファクトや動作はブロックされ、含まれる。 EDRウイルス対策ソリューションではない場合でも、ブロック モードMicrosoft Defender ウイルス対策機能します。 (EDRモードの場合、既定では有効になっていません。Defender で有効Microsoft 365します)。 
+- **[ブロック モードでのエンドポイントEDR応答 (EDR)](edr-in-block-mode.md)** 侵害後の保護によって観察される悪意のあるアーティファクトや動作はブロックされ、含まれる。 EDRウイルス対策ソリューションではない場合でも、ブロック モードMicrosoft Defender ウイルス対策機能します。 (EDRモードの設定は既定では有効になっていません。既定では有効Microsoft 365 Defender)。 
 
 Microsoft は引き続き脅威保護の機能を向上させるので、行動のブロックと格納の領域でさらに多くのことを期待してください。 今計画されている計画と展開を確認するには、次のロードマップを[Microsoft 365してください](https://www.microsoft.com/microsoft-365/roadmap)。
 
@@ -97,7 +97,7 @@ Defender for Endpoint の動作ベースのデバイス学習モデルは、攻�
 
 攻撃が検出および停止されている間に、"初期アクセスアラート" などのアラートがトリガーされ[、Microsoft 365 Defender](microsoft-defender-security-center.md)ポータル (以前は Microsoft Defender セキュリティ センター) に表示されました。
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Defender ポータルの初期アクセスMicrosoft 365アラート":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="ポータルでの初期アクセスMicrosoft 365 Defender通知":::
 
 次の使用例は、クラウド内の動作ベースのデバイス学習モデルが、実行を開始した後でも、攻撃に対する新しい保護層を追加する方法を示しています。
 
@@ -127,4 +127,4 @@ Defender for Endpoint の動作ベースのデバイス学習モデルは、攻�
 
 - [最近のグローバル脅威アクティビティを確認する](https://www.microsoft.com/wdsi/threats)
 
-- [Defender の概要をMicrosoft 365する](../defender/microsoft-365-defender.md)
+- [アプリケーションの概要をMicrosoft 365 Defender](../defender/microsoft-365-defender.md)

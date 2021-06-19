@@ -19,60 +19,86 @@ description: Microsoft Defender for microsoft Defender for Office 365プラン 2
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 7894a9aa38239bf661c809cce96ea2a2a96c3725
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 8fc01ab0dd5178032ea7b101f5361c25bb10bbea
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904130"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028933"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>修復アクションを確認および管理Office 365
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 電子メール の自動調査や&コンテンツの結果として、悪意のある、疑わしいなど、特定の修復アクションが作成されます。 Microsoft Defender for Office 365修復アクションには、次のものが含まれます。
 
-- URL のブロック (クリック時)
 - 電子メール メッセージまたはクラスターのソフト削除
-- メールまたはメールの添付ファイルを Quarantining する
 - 外部メール転送を無効にする
 
-これらの修復アクションは、セキュリティ運用チームが承認しない限り、実行しません。 保留中のアクションをできるだけ早く確認して承認し、自動化された調査がリアルタイムで完了することを推奨します。 場合によっては、修復アクションを元に戻すことができます。
+これらの修復アクションは、セキュリティ運用チームが承認しない限り、実行しません。 保留中のアクションをできるだけ早く確認して承認し、自動化された調査がリアルタイムで完了することを推奨します。 場合によっては、送信されたアクションを再考できます。  アクションを実行する前に、検索&役割の一部である必要があります。
+
 
 ## <a name="approve-or-reject-pending-actions"></a>保留中のアクションを承認 (または拒否) する
+自動調査アクションを検索して実行するには、次の 4 つの方法があります。
 
-1. Defender ポータル ( ) Microsoft 365に移動 <https://security.microsoft.com> し、サインインします。
+- [インシデント キュー](https://security.microsoft.com/incidents)
+- [アクション センター](https://security.microsoft.com/action-center/pending)
+- 調査自体 (インシデントまたはアラートからアクセス)
+- [調査と修復の調査キュー](https://security.microsoft.com/airinvestigation)
+
+## <a name="incident-queue"></a>インシデント キュー
+1. セキュリティ センターの[Microsoft 365サインイン](https://security.microsoft.com)します。
+2. ナビゲーション ウィンドウで、[インシデント] を選択 **し、[インシデント&通知>選択します**。
+3. インシデント名を選択して、概要ページを開きます。
+4. [証拠と **応答] タブを選択** します。
+5. リストからアイテムを選択します。 サイド ウィンドウが開きます。
+6. サイド ウィンドウで、承認または拒否のアクションを実行します。
+
+## <a name="investigation-queue"></a>調査キュー 
+1. セキュリティ センターの[Microsoft 365サインイン](https://security.microsoft.com)します。
+2. [アラート/インシデント] ページから移動します。 
+3. [調査] ページで、[保留中のアクション **] タブに移動** します。 
+4. リストからアイテムを選択します。 サイド ウィンドウが開きます。  
+5. サイド ウィンドウで、承認または拒否のアクションを実行します。
+
+## <a name="action-center"></a>アクション センター
+1. セキュリティ センターの[Microsoft 365サインイン](https://security.microsoft.com)します。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [保留中 **] タブ** で、承認を待っているアクションの一覧を確認します。
-4. リストからアイテムを選択します。 そのフライアウト ウィンドウが開きます。 
-5. フライアウト ウィンドウで情報を確認し、次のいずれかの手順を実行します。
    - [ **調査ページを開く]** を選択して、調査の詳細を表示します。
    - [承認 **] を** 選択して保留中のアクションを開始します。
    - 保留中 **のアクション** が実行されるのを防ぐには、[拒否] を選択します。
 
+## <a name="investigation-and-remediation-investigations-queue"></a>調査と修復の調査キュー
+1. セキュリティ センターの[Microsoft 365サインイン](https://security.microsoft.com)します。
+2. 保留中の調査を開きます。 
+3. [調査] ページで、[保留中のアクション **] タブに移動** します。
+4. リストからアイテムを選択します。 サイド ウィンドウが開きます。  
+5. サイド ウィンドウで、承認または拒否のアクションを実行します。
+
 ## <a name="change-or-undo-one-remediation-action"></a>1 つの修復アクションを変更または元に戻す
 
-1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
+送信されたアクションを再考するには、次の 2 つの方法があります。
+   - 統合アクション [センターを介して](https://security.microsoft.com/action-center)。
+   - しかし[、Officeアクション センター](https://security.microsoft.com/threatincidents)です。
+   
+## <a name="change-or-undo-through-the-unified-action-center"></a>統合アクション センターで変更または元に戻す
+1. 統合アクション センター [に移動し、](https://security.microsoft.com/action-center) サインインします。
 2. [履歴 **] タブ** で、変更または元に戻すアクションを選択します。
-3. 画面の右側のウィンドウで、[元に戻す] を **選択します**。
+3. 画面の右側のウィンドウで、適切なアクション (受信トレイに移動、迷惑メールへの移動、削除済みアイテムへの移動、**soft delete"、またはハード削除) を選択 **します**。
 
-## <a name="change-or-undo-multiple-remediation-actions"></a>複数の修復アクションを変更または元に戻す
-
-1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
-2. [履歴 **] タブ** で、変更または元に戻す操作を選択します。 同じアクションの種類を持つアイテムを選択してください。 フライアウト ウィンドウが開きます。
-3. フライアウト ウィンドウで、[元に戻す] を選択します。
-
-## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>複数のデバイス間で検疫からファイルを削除するには
-
-1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
-2. [履歴 **] タブ** で、アクションの種類が [検疫ファイル] のファイルを **選択します**。
-3. 画面の右側のウィンドウで、[このファイルのインスタンスを **X** に適用する] を選択し、[元に戻す] を **選択します**。
+ ## <a name="change-or-undo-through-the-office-action-center"></a>変更または元に戻す操作センター Office操作センター 
+1. [アクション センター] [Officeに移動し](https://security.microsoft.com/threatincidents)、サインインします。
+2. 適切な修復を選択します。
+3. サイド ウィンドウで、メール送信エントリをクリックし、リストが読み込むのを待ちます。 
+4. 上部の [アクション] ボタンが有効なのを待ち、[アクション] ボタンを選択してアクションの種類を変更します。 
+5. これにより、適切なアクションが作成されます。
 
 ## <a name="next-steps"></a>次の手順
 
-- [脅威エクスプローラーの使用](threat-explorer.md)
+- [脅威エクスプローラーの使用](threat-explorer.md) 
+- [管理者/手動アクション](remediate-malicious-email-delivered-office-365.md)
 - [自動調査および応答機能で誤検知/陰性を報告する方法](air-report-false-positives-negatives.md)
 
 ## <a name="see-also"></a>関連項目

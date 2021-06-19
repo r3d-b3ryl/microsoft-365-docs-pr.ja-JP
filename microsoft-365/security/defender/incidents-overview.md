@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: b6830c77a0c5cc93ea202844a8793c5f69f07650
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022783"
+ms.locfileid: "53028525"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>インシデントのMicrosoft 365 Defender
 
@@ -144,9 +144,11 @@ Microsoft 365やアプリは、疑わしいイベントや悪意のあるイベ�
 
 セキュリティ分析を初めて使用する場合は、[](incidents-overview.md)最初のインシデントへの対応の概要を参照し、詳細については、「インシデントの例」を参照してください。
 
+Microsoft 製品全体のインシデント対応の詳細については、この記事を [参照してください](/security/compass/incident-response-overview)。
+
 ## <a name="example-security-operations-for-microsoft-365-defender"></a>ユーザーのセキュリティ操作のMicrosoft 365 Defender
 
-次に、セキュリティ操作の例を示Microsoft 365 Defender。
+次に、セキュリティ操作 (SecOps) の例を示Microsoft 365 Defender。
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="ユーザーのセキュリティ操作のMicrosoft 365 Defender":::
 
@@ -169,11 +171,19 @@ Microsoft 365やアプリは、疑わしいイベントや悪意のあるイベ�
 
 毎日、月次、四半期、年次のタスクを使用して、プロセス、ポリシー、およびセキュリティ構成を更新または調整できます。
 
+### <a name="secops-resources-across-microsoft-products"></a>Microsoft 製品全体の SecOps リソース
+
+Microsoft 製品全体の SecOps の詳細については、次のリソースを参照してください。
+
+- [Capabilities](/security/compass/security-operations-capabilities)
+- [ベスト プラクティス](/security/compass/security-operations)
+- [ビデオとスライド](/security/compass/security-operations-videos-and-decks)
+
 ## <a name="next-steps"></a>次の手順
 
 **セキュリティ分析とインシデント** 対応に関する情報が必要な場合は、次の情報を参照してください。
 
-- 攻撃の[例を](first-incident-overview.md)示す Microsoft 365 Defender ポータルの分析、修復、インシデント後の一般的なプロセスのガイド付きツアーについては、「最初のインシデントに対応する」のチュートリアルを参照してください。
+- 攻撃の[例を使用](first-incident-overview.md)して、Microsoft 365 Defender ポータルで分析、修復、インシデント後の一般的なプロセスのガイド付きツアーを取得するには、「最初のインシデントに対応する」のチュートリアルを参照してください。
 
 **セキュリティ分析とインシデント** 対応に関する経験がある場合:
 

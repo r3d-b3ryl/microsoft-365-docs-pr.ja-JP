@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 1cd29c3a631334ee3a2791cca3c7ac1c83a1692f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b8060952960f89e274361bb6382f03d482346e0d
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903830"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028861"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -41,7 +41,7 @@ ms.locfileid: "52903830"
 
 ![Defender for Endpoint での誤検知と負の定義](images/false-positives-overview.png)
 
-幸いなことに、これらの種類の問題に対処し、削減するための手順を実行できます。 Microsoft 365 Defender (以前は[Microsoft Defender セキュリティ センター)](microsoft-defender-security-center.md)で誤検知/負の値が表示される場合、セキュリティ操作は次のプロセスを使用して対処するための手順を実行できます。
+幸いなことに、これらの種類の問題に対処し、削減するための手順を実行できます。 [Microsoft 365 Defender](microsoft-defender-security-center.md) (以前は Microsoft Defender セキュリティ センター) で誤検知/負の値が表示される場合、セキュリティ操作は次のプロセスを使用して対処する手順を実行できます。
 
 1.  [アラートの確認と分類](#part-1-review-and-classify-alerts) 
 2.  [実行された修復アクションを確認する](#part-2-review-remediation-actions)
@@ -66,7 +66,7 @@ ms.locfileid: "52903830"
 
 アラートを分類または抑制する前に、アラートが正確か、誤検知か良性かを判断します。
 
-1. Defender ポータル ( ) Microsoft 365に移動 [https://security.microsoft.com](https://security.microsoft.com) し、サインインします。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
 2. ナビゲーション ウィンドウで、[通知キュー] **を選択します**。
 
@@ -82,9 +82,9 @@ ms.locfileid: "52903830"
 
 ### <a name="classify-an-alert"></a>アラートの分類
 
-アラートは、検出された Defender で誤検知または真陽性Microsoft 365できます。 アラートを分類すると、Microsoft Defender for Endpoint のトレーニングに役立ちます。これにより、時間がたつ間に、より多くの真のアラートと少ない誤ったアラートが表示されます。
+アラートは、誤検知または正陽性に分類Microsoft 365 Defender。 アラートを分類すると、Microsoft Defender for Endpoint のトレーニングに役立ちます。これにより、時間がたつ間に、より多くの真のアラートと少ない誤ったアラートが表示されます。
 
-1. Defender ポータル ( ) Microsoft 365に移動 [https://security.microsoft.com](https://security.microsoft.com) し、サインインします。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
 2. [ **アラート キュー] を** 選択し、アラートを選択します。
 
@@ -97,9 +97,9 @@ ms.locfileid: "52903830"
 
 ### <a name="suppress-an-alert"></a>アラートを抑制する
 
-誤検知または正陽性のアラートがあるが、重要ではないイベントの場合は、Microsoft 365 Defender でそれらのアラートをMicrosoft 365できます。 アラートを抑制すると、セキュリティ操作ダッシュボードのノイズを軽減できます。 
+誤検知または正陽性のアラートがあるが、重要ではないイベントの場合は、これらのアラートを非表示にMicrosoft 365 Defender。 アラートを抑制すると、セキュリティ操作ダッシュボードのノイズを軽減できます。 
 
-1. Defender ポータル ( ) Microsoft 365に移動 [https://security.microsoft.com](https://security.microsoft.com) し、サインインします。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
 2. ナビゲーション ウィンドウで、[アラート キュー] **を選択します**。
 
@@ -247,7 +247,7 @@ Microsoft Defender for Endpoint 全体で除外を定義するには、次のタ
 
 [インジケーター](/microsoft-365/security/defender-endpoint/manage-indicators) (特に、侵害の指標、または IoC) を使用すると、セキュリティ運用チームはエンティティの検出、防止、除外を定義できます。 たとえば、Microsoft Defender for Endpoint のスキャンおよび修復アクションから除外する特定のファイルを指定できます。 または、インジケーターを使用して、特定のファイル、IP アドレス、または URL に対するアラートを生成できます。
 
-Microsoft Defender for Endpoint の除外としてエンティティを指定するには、それらのエンティティの "許可" インジケーターを作成します。 Microsoft Defender for Endpoint のこのような "[](microsoft-defender-antivirus-in-windows-10.md)許可" インジケーターは[](overview-endpoint-detection-response.md)、次世代の保護、エンドポイントの検出と応答、および修復の自動化された調査&[適用されます](/microsoft-365/security/defender-endpoint/automated-investigations)。
+Microsoft Defender for Endpoint の除外としてエンティティを指定するには、それらのエンティティの "許可" インジケーターを作成します。 Microsoft Defender for Endpoint のこのような "[](microsoft-defender-antivirus-in-windows-10.md)許可" インジケーターは[](overview-endpoint-detection-response.md)、次世代の保護、エンドポイントでの検出と対応、および修復&[適用されます](/microsoft-365/security/defender-endpoint/automated-investigations)。
 
 "許可" インジケーターは、次の場合に作成できます。
 
@@ -276,7 +276,7 @@ IP アドレス、URL、またはドメインのインジケーターを作成�
 - マルウェア対策クライアントのバージョンは 4.18.1906.x 以降です 
 - デバイスは、Windows 10バージョン 1709 以降で実行されています 
 
-カスタム ネットワーク インジケーターは、Defender のMicrosoft 365[されます](microsoft-defender-security-center.md)。 詳細については、「高度な機能 [」を参照してください](/microsoft-365/security/defender-endpoint/advanced-features)。
+カスタム ネットワーク インジケーターは、カスタム ネットワーク インジケーターで[オンMicrosoft 365 Defender。](microsoft-defender-security-center.md) 詳細については、「高度な機能 [」を参照してください](/microsoft-365/security/defender-endpoint/advanced-features)。
 
 #### <a name="indicators-for-application-certificates"></a>アプリケーション証明書のインジケーター 
 
@@ -438,11 +438,11 @@ PUA[保護設定](/mem/endpoint-manager-overview)Microsoft エンドポイント
 > [!IMPORTANT]
 > 自動調査と *修復には、* 完全自動化を使用することをお勧めします。 誤検知のため、これらの機能をオフにしない。 代わりに [、"許可"](#indicators-for-microsoft-defender-for-endpoint)インジケーターを使用して例外を定義し、自動的に適切なアクションを実行するために自動調査と修復を設定します。 この [ガイダンスに従って](automation-levels.md#levels-of-automation) 、セキュリティ運用チームが処理する必要があるアラートの数を減らすのに役立ちます。 
 
-## <a name="still-need-help"></a>さらにサポートが必要な場合
+## <a name="still-need-help"></a>さらにヘルプが必要ですか?
 
 この記事のすべての手順を実行し、引き続きヘルプが必要な場合は、テクニカル サポートにお問い合わせください。
 
-1. Defender ( ) Microsoft 365に [https://security.microsoft.com](https://security.microsoft.com) 移動し、サインインします。
+1. [Microsoft 365 Defender ] に [https://security.microsoft.com](https://security.microsoft.com) 移動し、サインインします。
 
 2. 右上隅で、疑問符 (**?**) を選択し、[Microsoft サポート] **を選択します**。
 
@@ -452,4 +452,4 @@ PUA[保護設定](/mem/endpoint-manager-overview)Microsoft エンドポイント
 
 [エンドポイント用 Microsoft Defender の管理](manage-atp-post-migration.md)
 
-[Defender ポータルMicrosoft 365概要](/microsoft-365/security/defender-endpoint/use) 
+[ポータルのMicrosoft 365 Defender概要](/microsoft-365/security/defender-endpoint/use) 

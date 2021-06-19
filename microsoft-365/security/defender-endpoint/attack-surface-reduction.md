@@ -16,19 +16,18 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 409f6d0bbbcf9f8b50119e35bdb7852c4323bbf9
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984990"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028789"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>攻撃表面の縮小ルールを使用してマルウェアの感染を防止する
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>攻撃表面の縮小ルールが重要な理由
@@ -160,7 +159,7 @@ DeviceEvents
 
 ## <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 
-次の表とサブセクションでは、15 の攻撃表面の縮小ルールのそれぞれについて説明します。 攻撃表面の縮小ルールは、ルール名によってアルファベット順に表示されます。
+次の表とサブセクションでは、16 の攻撃表面の縮小ルールについて説明します。 攻撃表面の縮小ルールは、ルール名によってアルファベット順に表示されます。
 
 グループ ポリシーまたは PowerShell を使用して攻撃表面の縮小ルールを構成する場合は、GUID が必要です。 一方、ユーザー設定またはMicrosoft エンドポイント マネージャーをMicrosoft Intune GUID は必要とされません。
 

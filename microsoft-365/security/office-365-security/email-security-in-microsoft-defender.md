@@ -16,12 +16,12 @@ description: マルウェアのフィッシング詐欺の試行を表示およ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0326a51f14b402b9a579e8668ef2c026f9de789
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 917ad3caf96a982df8b88058ff1c394b3d21dd75
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877898"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028558"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Microsoft Defender の脅威エクスプローラーを使用した電子メール Office 365
 
@@ -45,28 +45,22 @@ ms.locfileid: "52877898"
 
 Microsoft 365 テクノロジによって並べ替えた電子メールで検出されたマルウェアを確認するには、[](threat-explorer-views.md#email--malware)エクスプローラーの [電子メール > マルウェア] ビュー (またはリアルタイム検出) を使用します。 マルウェアは既定のビューなので、エクスプローラーを開いたとすぐに選択される場合があります。
 
-1. セキュリティ コンプライアンス センター ( &) で <https://protection.office.com> 、[脅威 **管理** \> **エクスプローラー** ] (または [ **リアルタイムの検出] ) を選択します**。 (この例では、エクスプローラーを使用します)。
-
-   統合された Defender ポータル ( ) を使用している場合Microsoft 365コラボレーション エクスプローラーの [電子メール] <https://security.microsoft.com> **&スクロール**  >  **します**。
+1. [ポータル] Microsoft 365 Defenderで、[メール] & <https://security.microsoft.com> **コラボレーション** \> **エクスプローラー** (またはリアルタイム **検出) を選択します**。 (この例では、エクスプローラーを使用します)。コンバージド ポータルを使用しているMicrosoft 365 Defender ( [メール] までスクロールし、& https://security.microsoft.com/) **エクスプローラーに**  >  **移動します**。
 
    ここから、ビューから開始し、調査する特定のフレーム (必要な場合) を選択し、エクスプローラーのウォークスルーに応じてフィルターを [フォーカスします](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)。
 
-2. [表示] **メニューの** [メール マルウェア] **を** \> **選択します**。
-
-   > [!div class="mx-imgBorder"]
-   > ![エクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailMalwareMenu.png)
+2. [表示]**メニューの**[メール] で **[マルウェア] を****選択します**。
 
 3. [送信者 **] を** クリックし、[基本検出 **テクノロジ]** \> **を選択します**。
 
-   検出テクノロジは、レポートのフィルターとして利用できます。
+   
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="マルウェア検出テクノロジ":::
 
-   > [!div class="mx-imgBorder"]
-   > ![マルウェア検出テクノロジ](../../media/ExplorerEmailMalwareDetectionTech.png)
+   検出テクノロジは、レポートのフィルターとして利用できます。
 
 4. オプションを選択します。 次に、[更新] **ボタンを** 選択して、そのフィルターを適用します。
 
-   > [!div class="mx-imgBorder"]
-   > ![選択された検出テクノロジ](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="選択された検出テクノロジ"::: 
 
    レポートが更新され、選択したテクノロジ オプションを使用して、電子メールでマルウェアが検出された結果が表示されます。 ここから、さらに分析を実行できます。 
 
@@ -76,7 +70,7 @@ Microsoft 365 テクノロジによって並べ替えた電子メールで検出
 
 メッセージ内のフィッシング URL を確認し、フィッシング メッセージ内の URL[  >  ](threat-explorer-views.md#email--phish)をクリックするには、エクスプローラーまたはリアルタイム検出の [メール フィッシング] ビューを使用します。
 
-1. セキュリティ コンプライアンス センター ( &) で <https://protection.office.com> 、[脅威 **管理** \> **エクスプローラー** ] (または [ **リアルタイムの検出] ) を選択します**。 (この例では、エクスプローラーを使用します)。
+1. [ポータル] Microsoft 365 Defenderで、[メール] & <https://security.microsoft.com> **コラボレーション** \> **エクスプローラー** (またはリアルタイム **検出) を選択します**。 (この例では、エクスプローラーを使用します)。
 
 2. [表示] **メニューの** [メール フィッシング] **を** \> **選択します**。
 
@@ -87,8 +81,7 @@ Microsoft 365 テクノロジによって並べ替えた電子メールで検出
 
 4. [ブロック] や [上書きブロック]などの 1 つ以上のオプションを選択し、そのフィルターを適用するオプションと同じ行の [更新] ボタンを選択します。  (ブラウザー ウィンドウを更新しない)。
 
-   > [!div class="mx-imgBorder"]
-   > ![URL とクリックの評決](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URL とクリックの評決":::
 
    レポートが更新され、レポートの下の [URL] タブに 2 つの異なる URL テーブルが表示されます。
 
@@ -122,7 +115,7 @@ Microsoft 365 テクノロジによって並べ替えた電子メールで検出
 ## <a name="start-automated-investigation-and-response"></a>自動調査と対応を開始する
 
 > [!NOTE]
-> 自動調査と対応機能は *、Microsoft Defender* でプラン 2 および *E5* Office 365でOffice 365できます。
+> 自動調査と対応機能は *、Microsoft Defender* でプラン 2 および Office 365で *Office 365 E5。*
 
 [自動調査と対応により](automated-investigation-response-office.md) 、セキュリティ運用チームがサイバー攻撃の調査と軽減に費やした時間と労力を節約できます。 セキュリティ プレイブックをトリガーできるアラートの構成に加えて、エクスプローラーのビューから自動調査と応答プロセスを開始できます。 詳細については、「例 [: セキュリティ管理者がエクスプローラーから調査をトリガーする」を参照してください](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1240fbb8fb24b7231733db25e9a1859b2a84fd41
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 4d793d49d669510b722a72160ae396ee73ab9699
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022740"
+ms.locfileid: "53028513"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>グループ内のインシデントに優先順位をMicrosoft 365 Defender
 
@@ -98,7 +98,7 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 - 特定の関連付けられた脅威を持つインシデント
 - 特定のアクターを持つインシデント
 
-有用なフィルター ビューのリストを URL としてコンパイルして保存したら、キュー内のインシデントをすばやく処理して優先順位を付け、その後[](manage-incidents.md)の分析のために管理できます。
+有用なフィルター ビューのリストを URL としてコンパイルして保存したら、それを使用してキュー内のインシデントをすばやく処理および優先順位付けし、[](manage-incidents.md)後続の割り当てと分析のために管理できます。
 
 ## <a name="next-steps"></a>次の手順
 
