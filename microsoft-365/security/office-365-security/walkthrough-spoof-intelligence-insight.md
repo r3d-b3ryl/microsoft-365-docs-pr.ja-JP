@@ -19,12 +19,12 @@ description: 管理者は、スプーフィング インテリジェンス ポ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0e5c83bc50197e30c12f8f7aeedc83930d7ff5e
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: a683ed93e4e483e63fe01281b32661f0b803d1ce
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793210"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029299"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>EOP でスプーフィング インテリジェンス ポリシーとスプーフィング インテリジェンスインサイトを使用してスプーフィングされた送信者を管理する
 
@@ -67,7 +67,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 - フィッシング対策ポリシーでスプーフィング インテリジェンス設定を有効、無効、および構成できます。 サブスクリプションに基づく手順については、次のいずれかのトピックを参照してください。
 
   - [EOP でフィッシング対策ポリシーを構成します](configure-anti-phishing-policies-eop.md)。
-  - [Microsoft Defender でフィッシング対策ポリシーを構成して](configure-atp-anti-phishing-policies.md)、Office 365。
+  - [Microsoft Defender でフィッシング対策ポリシーを構成して](configure-mdo-anti-phishing-policies.md)、Office 365。
 
 - スプーフィング インテリジェンスの推奨設定については [、「EOP フィッシング対策ポリシー設定」を参照してください](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)。
 
@@ -184,7 +184,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 1. セキュリティ コンプライアンス センターで&管理ダッシュボード **に移動** \> **します**。
 
-2. **[Insights] 行** で、次のいずれかの項目を探します。
+2. [次の **インサイト** で、次のいずれかの項目を探します。
 
    - **過去 7 日間に** スプーフィングされたドメインの可能性が高い : この分析情報は、スプーフィング インテリジェンスが有効になっている (既定で有効になっている) かどうかを示します。
    - **スプーフィング保護** を有効にする: この分析情報は、スプーフィング インテリジェンスが無効になっていると示し、その分析情報をクリックするとスプーフィング インテリジェンスを有効にすることができます。

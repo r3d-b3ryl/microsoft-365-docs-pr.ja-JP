@@ -19,12 +19,12 @@ description: 管理者は、セキュリティ コンプライアンス セン�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 5f2bdb32d2afde3d0d40261cd3ecf30740dc0ccf
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985506"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029478"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ コンプライアンス センターの [レポート] ダッシュボードでメール フロー レポート&表示する
 
@@ -34,6 +34,9 @@ ms.locfileid: "52985506"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+> [!NOTE]
+> このトピックで説明するレポートの大部分は、Exchange 管理センター (EAC) で利用できます。 詳細については、「新しい [Exchange 管理センターのメール フロー レポート」を参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。 [Exchange トランスポート ルール レポートは](view-email-security-reports.md#exchange-transport-rule-report)、Microsoft 365 Defender ポータルで使用できます。
 
 セキュリティ & コンプライアンス センターのメール フロー[](mail-flow-insights-v2.md)ダッシュボードで使用できるメール フロー レポートに加えて、Microsoft 365 組織の監視に役立つさまざまなメール フロー レポートをレポート ダッシュボードで利用できます。
 
@@ -166,7 +169,7 @@ ms.locfileid: "52985506"
 
 ## <a name="forwarding-report"></a>転送レポート
 
-転送 **レポートには** 、Exchange Online メールボックスから外部ドメインに組織の自動的に転送されたメッセージが表示されます。 転送されたメッセージは、セキュリティまたはコンプライアンスリスクを引き起し、アカウントの侵害を示す可能性があります。
+転送 **レポートには**、組織の自動的に転送されたメッセージが、組織のメールボックスから外部ドメインExchange Onlineされます。 転送されたメッセージは、セキュリティまたはコンプライアンスリスクを引き起し、アカウントの侵害を示す可能性があります。
 
 レポートを表示するには、コンプライアンス センターのセキュリティ &[開](https://protection.office.com)き、[レポート **ダッシュボード]** に移動し、[レポートの転送] \> **を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=MailFlowForwarding> 。
 
@@ -421,7 +424,9 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 
 ## <a name="sent-and-received-email-report"></a>送信および受信した電子メール レポート
 
-送信 **および受信電子** メール レポートは、スパム検出、マルウェア、および "良い" と識別された電子メールを含む、受信および送信メールに関する情報を示すスマート レポートです。 このレポートと [Mailflow](#mailflow-status-report) 状態レポートの違いは、このレポートにエッジ保護によってブロックされたメッセージに関するデータは含まれておりない点です。メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージとしてカウントされます。
+送信 **および受信電子** メール レポートは、スパム検出、マルウェア、および "良い" と識別された電子メールを含む、受信および送信メールに関する情報を示すスマート レポートです。 このレポートと [Mailflow](#mailflow-status-report) 状態レポートの違いは、このレポートにエッジ保護によってブロックされたメッセージに関するデータは含まれておりない点です。
+
+**注**: メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージとしてカウントされます。
 
 レポートの集計ビューと詳細ビューでは、90 日間のフィルター処理が可能です。
 

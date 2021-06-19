@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、フィッシング対策の保護機能について、Exchange Online Protection (EOP) と Microsoft Defender for Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 290f5f7797d987fb65a99e3f9e656bfec4cf83f3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e1539153282f14a13ddd9066350cbcdca2a074a
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538341"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029239"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "52538341"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-*フィッシング* は、正当または信頼された送信者から送られたように見えるメッセージで、機密情報を盗もうとする電子メール攻撃です。 フィッシングには特定のカテゴリがあります。 以下に例を示します。
+*フィッシング* は、正当または信頼された送信者から送られたように見えるメッセージで、機密情報を盗もうとする電子メール攻撃です。 フィッシングには特定のカテゴリがあります。 例:
 
 - **スピアフィッシング** では、対象となる受信者に合わせて特別にカスタマイズされた、フォーカスのあるカスタマイズされたコンテンツを使用します (通常、攻撃者による受信者の偵察後)。
 
@@ -53,11 +53,11 @@ ms.locfileid: "52538341"
 
 EOP (つまり、microsoft Defender Microsoft 365を使用しない組織Office 365) には、フィッシングの脅威から組織を保護するのに役立つ機能が含まれている。
 
-- **スプーフィン** グ インテリジェンス: スプーフィング インテリジェンスインサイトを使用して、外部ドメインおよび内部ドメインからのメッセージで検出されたスプーフィングされた送信者を確認し、検出された送信者を手動で許可またはブロックします。 詳細については [、「EOP のスプーフィング インテリジェンスインサイト」を参照してください](learn-about-spoof-intelligence.md)。
+- **スプーフィン** グ インテリジェンス: スプーフィング インテリジェンスインサイトを使用して、外部ドメインおよび内部ドメインからのメッセージで検出されたスプーフィングされた送信者を確認し、検出された送信者を手動で許可またはブロックします。 詳細については、「[EOP でのスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。
 
 - **EOP** のフィッシング対策ポリシー : スプーフィング インテリジェンスをオンまたはオフにし、Outlook で認証されていない送信者 ID をオンまたはオフにし、ブロックされたスプーフィングされた送信者のアクションを指定します。 詳細については [、「EOP でフィッシング対策ポリシーを構成する」を参照してください](configure-anti-phishing-policies-eop.md)。
 
-- **テナント許可/** ブロック一覧でスプーフィングされた送信者を許可またはブロックする : スプーフィング インテリジェンスインサイトの評決を上書きすると、スプーフィングされた送信者は、テナント許可/ブロック一覧の [スプーフィング] タブにのみ表示される手動許可またはブロックエントリになります。 スプーフィング インテリジェンスによってスプーフィング送信者が検出される前に、スプーフィング送信者の許可エントリまたはブロックエントリを手動で作成することもできます。 詳細については [、「Manage the Tenant Allow/Block List in EOP」を参照してください](tenant-allow-block-list.md)。
+- **テナント許可/ブロック リストでなりすましされた送信者を許可またはブロックする**: スプーフィング インテリジェンス分析の判定を上書きすると、なりすましされた送信者は、手動で許可またはブロックするエントリとなり、「テナント許可/ブロックリスト」の **[なりすまし]** タブにのみ表示されます。 また、スプーフィング インテリジェンスで検出される前に、手動でなりすまし送信者の許可またはブロック エントリを作成することもできます。 詳細については、「[EOP でテナント許可/ブロック リストを管理する](tenant-allow-block-list.md)」を参照してください。
 
 - **暗黙的な** 電子メール認証 : EOP は、送信者評価、送信者履歴、受信者の履歴、行動分析などの高度な手法を使用して、受信メール [(SPF、DKIM、](set-up-spf-in-office-365-to-help-prevent-spoofing.md)および [DMARC)](use-dmarc-to-validate-email.md)の標準的な電子メール認証チェックを強化し、偽造された送信者を識別するのに役立ちます。 [](use-dkim-to-validate-outbound-email.md) 詳細については、「[Microsoft 365 でのメール認証](email-validation-and-authentication.md)」をご覧ください。
 
@@ -65,7 +65,7 @@ EOP (つまり、microsoft Defender Microsoft 365を使用しない組織Office 
 
 Microsoft Defender for Office 365 には、次のより高度なフィッシング対策機能が含まれています。
 
-- **microsoft Defender for Office 365** のフィッシング対策ポリシー: 特定のメッセージ送信者と送信者ドメイン、メールボックス インテリジェンス設定、および調整可能な高度なフィッシングしきい値に対する偽装保護設定を構成します。 詳細については[、「Microsoft Defender でフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)を構成する」を参照Office 365。 EOP のフィッシング対策ポリシーと Office 365 用 Defender のフィッシング対策ポリシーの違いの詳細については、「Microsoft 365 のフィッシング対策ポリシー」[を参照してください](set-up-anti-phishing-policies.md)。
+- **microsoft Defender for Office 365** のフィッシング対策ポリシー: 特定のメッセージ送信者と送信者ドメイン、メールボックス インテリジェンス設定、および調整可能な高度なフィッシングしきい値に対する偽装保護設定を構成します。 詳細については[、「Microsoft Defender でフィッシング対策ポリシー](configure-mdo-anti-phishing-policies.md)を構成する」を参照Office 365。 EOP のフィッシング対策ポリシーと Office 365 用 Defender のフィッシング対策ポリシーの違いの詳細については、「Microsoft 365 のフィッシング対策ポリシー」[を参照してください](set-up-anti-phishing-policies.md)。
 
 - **キャンペーン ビュー**: 機械学習などのヒューリスティックは、サービス全体と組織に対する協調フィッシング攻撃に関連するメッセージを特定して分析します。 詳細については[、「Microsoft Defender for microsoft Defender のキャンペーン ビュー」を参照Office 365。](campaigns.md)
 

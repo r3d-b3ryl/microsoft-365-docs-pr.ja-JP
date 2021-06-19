@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 03fd82cd5dc24653b6d67fa47cc225d355bfac45
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 3cbd329c63d7cf1868083c66919773e14ed51156
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028801"
+ms.locfileid: "53029599"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>API にMicrosoft 365 Defenderする
 
@@ -59,7 +59,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 2. 目的のアクセス許可をアプリケーションに割り当てる。
 3. アプリケーションのキーを作成します。
 4. アプリケーションとそのキーを使用してセキュリティ トークンを取得します。
-5. トークンを使用して API にMicrosoft 365 Defenderします。
+5. トークンを使用して API にアクセスMicrosoft 365 Defenderします。
 
 詳細については、「ユーザーなしでアプリに **[アクセスするアプリを作成Microsoft 365 Defenderを参照してください](api-create-app-web.md)**。
 
@@ -70,7 +70,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 1. ネイティブ アプリケーションAzure Active Directory作成します。
 2. 目的のアクセス許可をアプリケーションに割り当てる。
 3. アプリケーションのユーザー資格情報を使用してセキュリティ トークンを取得します。
-4. トークンを使用して API にMicrosoft 365 Defenderします。
+4. トークンを使用して API にアクセスMicrosoft 365 Defenderします。
 
 詳細については、「ユーザーに代わって API にアクセスMicrosoft 365 Defenderアプリを作成する」**[を参照してください](api-create-app-user-context.md)**。
 
@@ -82,7 +82,7 @@ Microsoft 365 Defender一連のプログラム API を使用して、そのデ�
 2. 目的のアクセス許可をアプリケーションに割り当てる。
 3. 各 [テナントからアプリ](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) の管理者の同意を取得します。
 4. 顧客のテナント ID に基づくユーザー資格情報を使用してセキュリティ トークンを取得します。
-5. トークンを使用して API にMicrosoft 365 Defenderします。
+5. トークンを使用して API にアクセスMicrosoft 365 Defenderします。
 
 詳細については、「パートナー アクセスを **[使用してアプリを作成する」を参照Microsoft 365 Defender参照してください](api-partner-access.md)**。
 

@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: b8060952960f89e274361bb6382f03d482346e0d
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: d3821f4f1f581da5353ee33bd406af8558c0e903
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028861"
+ms.locfileid: "53029959"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -43,11 +43,11 @@ ms.locfileid: "53028861"
 
 幸いなことに、これらの種類の問題に対処し、削減するための手順を実行できます。 [Microsoft 365 Defender](microsoft-defender-security-center.md) (以前は Microsoft Defender セキュリティ センター) で誤検知/負の値が表示される場合、セキュリティ操作は次のプロセスを使用して対処する手順を実行できます。
 
-1.  [アラートの確認と分類](#part-1-review-and-classify-alerts) 
-2.  [実行された修復アクションを確認する](#part-2-review-remediation-actions)
-3.  [除外の確認と定義](#part-3-review-or-define-exclusions)
-4.  [分析のためにエンティティを送信する](#part-4-submit-a-file-for-analysis)
-5.  [脅威保護の設定を確認して調整する](#part-5-review-and-adjust-your-threat-protection-settings)
+1. [アラートの確認と分類](#part-1-review-and-classify-alerts)
+2. [実行された修復アクションを確認する](#part-2-review-remediation-actions)
+3. [除外の確認と定義](#part-3-review-or-define-exclusions)
+4. [分析のためにエンティティを送信する](#part-4-submit-a-file-for-analysis)
+5. [脅威保護の設定を確認して調整する](#part-5-review-and-adjust-your-threat-protection-settings)
 
 この記事で説明するタスクを実行した後も、誤検知/負の問題がある場合は、ヘルプを受け取る必要があります。 「引 [き続きヘルプが必要か」を参照してください。](#still-need-help)
 
@@ -58,7 +58,7 @@ ms.locfileid: "53028861"
 
 ## <a name="part-1-review-and-classify-alerts"></a>パート 1: アラートの確認と分類
 
-悪意 [のある、または](alerts.md) 疑わしいと検出されたためトリガーされたアラートが表示された場合は、そのエンティティのアラートを抑制できます。 また、必ずしも誤検知ではないが重要ではないアラートを抑制することもできます。 アラートも分類することをお勧めします。 
+悪意 [のある、または](alerts.md) 疑わしいと検出されたためトリガーされたアラートが表示された場合は、そのエンティティのアラートを抑制できます。 また、必ずしも誤検知ではないが重要ではないアラートを抑制することもできます。 アラートも分類することをお勧めします。
 
 アラートを管理し、true/false positive を分類すると、脅威保護ソリューションのトレーニングに役立ち、時間の間に誤検知または誤検知の数を減らします。 これらの手順を実行すると、セキュリティ運用ダッシュボードのノイズを軽減し、セキュリティ チームが優先度の高い作業項目に集中できます。
 
@@ -66,25 +66,30 @@ ms.locfileid: "53028861"
 
 アラートを分類または抑制する前に、アラートが正確か、誤検知か良性かを判断します。
 
-1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン <https://security.microsoft.com> します。
 
 2. ナビゲーション ウィンドウで、[通知キュー] **を選択します**。
 
 3. アラートの詳細については、アラートを選択します。 [(「Microsoft Defender for Endpoint でアラートを確認する」を参照](review-alerts.md)してください。
 
-4. アラートの状態に応じて、次の表に示す手順を実行します。 
+4. アラートの状態に応じて、次の表に示す手順を実行します。
 
-| アラートの状態 | 操作 |
-|:---|:---|
-| アラートは正確です | アラートを割り当て、さらに [調査](investigate-alerts.md) します。 |
-| アラートは誤検知です | 1. [アラートを誤検知](#classify-an-alert) として分類します。 <br/>2. [アラートを抑制します](#suppress-an-alert)。 <br/> 3. [Microsoft](#indicators-for-microsoft-defender-for-endpoint) Defender for Endpoint のインジケーターを作成します。 <br/> 4. [分析のためにファイルを Microsoft に提出します](#part-4-submit-a-file-for-analysis)。 |
-| アラートは正確ですが、良性 (重要ではない) | [アラートを正の](#classify-an-alert) 値として分類し、アラート [を抑制します](#suppress-an-alert)。 |
+<br>
+
+****
+
+|アラートの状態|操作|
+|---|---|
+|アラートは正確です|アラートを割り当て、さらに [調査](investigate-alerts.md) します。|
+|アラートは誤検知です|<ol><li>[アラートを誤検知](#classify-an-alert) として分類します。</li><li>[アラートを抑制します](#suppress-an-alert)。</li><li>[Microsoft](#indicators-for-microsoft-defender-for-endpoint) Defender for Endpoint のインジケーターを作成します。</li><li>[分析のためにファイルを Microsoft に提出します](#part-4-submit-a-file-for-analysis)。</li></ol>|
+|アラートは正確ですが、良性 (重要ではない)|[アラートを正の](#classify-an-alert) 値として分類し、アラート [を抑制します](#suppress-an-alert)。|
+|||
 
 ### <a name="classify-an-alert"></a>アラートの分類
 
 アラートは、誤検知または正陽性に分類Microsoft 365 Defender。 アラートを分類すると、Microsoft Defender for Endpoint のトレーニングに役立ちます。これにより、時間がたつ間に、より多くの真のアラートと少ない誤ったアラートが表示されます。
 
-1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン <https://security.microsoft.com> します。
 
 2. [ **アラート キュー] を** 選択し、アラートを選択します。
 
@@ -93,13 +98,13 @@ ms.locfileid: "53028861"
 4. [警告の **管理] セクション** で、[True アラート] または **[False アラート** ] **を選択します**。 (False **アラートを使用して** 誤検知を分類します)。
 
 > [!TIP]
-> アラートの抑制の詳細については [、「Manage Microsoft Defender for Endpoint alerts」を参照してください](/microsoft-365/security/defender-endpoint/manage-alerts)。 また、組織でセキュリティ情報とイベント管理 (SIEM) サーバーを使用している場合は、抑制ルールも必ず定義してください。 
+> アラートの抑制の詳細については [、「Manage Microsoft Defender for Endpoint alerts」を参照してください](/microsoft-365/security/defender-endpoint/manage-alerts)。 また、組織でセキュリティ情報とイベント管理 (SIEM) サーバーを使用している場合は、抑制ルールも必ず定義してください。
 
 ### <a name="suppress-an-alert"></a>アラートを抑制する
 
-誤検知または正陽性のアラートがあるが、重要ではないイベントの場合は、これらのアラートを非表示にMicrosoft 365 Defender。 アラートを抑制すると、セキュリティ操作ダッシュボードのノイズを軽減できます。 
+誤検知または正陽性のアラートがあるが、重要ではないイベントの場合は、これらのアラートを非表示にMicrosoft 365 Defender。 アラートを抑制すると、セキュリティ操作ダッシュボードのノイズを軽減できます。
 
-1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン <https://security.microsoft.com> します。
 
 2. ナビゲーション ウィンドウで、[アラート キュー] **を選択します**。
 
@@ -114,7 +119,8 @@ ms.locfileid: "53028861"
 
 ## <a name="part-2-review-remediation-actions"></a>パート 2: 修復アクションの確認
 
-[ファイルの](manage-auto-investigation.md#remediation-actions)検疫やプロセスの停止などの修復アクションは、脅威として検出されたエンティティ (ファイルなど) に対して実行されます。 いくつかの種類の修復アクションは、自動調査と管理によって自動的にMicrosoft Defender ウイルス対策。   
+[ファイルの](manage-auto-investigation.md#remediation-actions)検疫やプロセスの停止などの修復アクションは、脅威として検出されたエンティティ (ファイルなど) に対して実行されます。 いくつかの種類の修復アクションは、自動調査と管理によって自動的にMicrosoft Defender ウイルス対策。
+
 - ファイルの検疫
 - レジストリ キーを削除する
 - プロセスを終了する
@@ -128,22 +134,22 @@ ms.locfileid: "53028861"
 
 - [アクション センターから検疫済みファイルを復元する](#restore-a-quarantined-file-from-the-action-center)
 - [複数の操作を一度に元に戻す](#undo-multiple-actions-at-one-time)
-- [複数のデバイス間で検疫からファイルを削除します](#remove-a-file-from-quarantine-across-multiple-devices)。  and 
+- [複数のデバイス間で検疫からファイルを削除します](#remove-a-file-from-quarantine-across-multiple-devices)。  and
 - [検疫からファイルを復元する](#restore-file-from-quarantine)
 
 誤検知の結果として実行されたアクションの確認と元に戻す操作が完了したら、除外の確認または [定義に進みます](#part-3-review-or-define-exclusions)。
 
 ### <a name="review-completed-actions"></a>完了したアクションを確認する
 
-1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。 
+1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
 
-2. [履歴] **タブを** 選択して、実行されたアクションの一覧を表示します。  
+2. [履歴] **タブを** 選択して、実行されたアクションの一覧を表示します。
 
 3. アイテムを選択すると、実行された修復アクションの詳細が表示されます。
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>アクション センターから検疫済みファイルを復元する
 
-1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。 
+1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
 
 2. [履歴 **] タブ** で、元に戻す操作を選択します。
 
@@ -151,18 +157,18 @@ ms.locfileid: "53028861"
 
 ### <a name="undo-multiple-actions-at-one-time"></a>複数の操作を一度に元に戻す
 
-1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。 
+1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
 
 2. [履歴 **] タブ** で、元に戻す操作を選択します。
 
 3. 画面の右側のウィンドウで、[元に戻す] を **選択します**。
 
-### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>複数のデバイスで検疫からファイルを削除する 
+### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>複数のデバイスで検疫からファイルを削除する
 
 > [!div class="mx-imgBorder"]
 > ![ファイルの検疫](images/autoir-quarantine-file-1.png)
 
-1. アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) し、サインインします。 
+1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
 
 2. [履歴 **] タブ** で、アクションの種類が [検疫ファイル] のファイルを **選択します**。
 
@@ -173,10 +179,8 @@ ms.locfileid: "53028861"
 調査後にファイルがクリーンだと判断した場合は、ファイルをロールバックして検疫から削除できます。 ファイルが検疫された各デバイスで次のコマンドを実行します。
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
-
    1. **[スタート]** をクリックし、「_cmd_」と入力します。
-
-   1. [コマンド プロンプト] を **右クリックし、[** 管理者として **実行] を選択します**。
+   2. [コマンド プロンプト] を **右クリックし、[** 管理者として **実行] を選択します**。
 
 2. 次のコマンドを入力し、Enter キーを **押します**。
 
@@ -185,17 +189,18 @@ ms.locfileid: "53028861"
     ```
 
     > [!IMPORTANT]
-    > シナリオによっては **、ThreatName がとして** 表示される場合があります `EUS:Win32/
-      CustomEnterpriseBlock!cl` 。 Defender for Endpoint は、過去 30 日間にこのデバイスで検疫されたカスタム ブロックされたファイルを復元します。
+    > シナリオによっては **、ThreatName がとして** 表示される場合があります `EUS:Win32/CustomEnterpriseBlock!cl` 。 Defender for Endpoint は、過去 30 日間にこのデバイスで検疫されたカスタム ブロックされたファイルを復元します。
+    >
     > 潜在的なネットワーク脅威として検疫されたファイルは、回復できない可能性があります。 検疫後にユーザーがファイルを復元しようとすると、そのファイルにアクセスできない可能性があります。 これは、システムがファイルにアクセスするためのネットワーク資格情報を持たなくなった場合に発生する可能性があります。 通常、これはシステムまたは共有フォルダーに一時的にログオンし、アクセス トークンの有効期限が切れた結果です。
 
-3. 画面の右側のウィンドウで、[このファイルのインスタンスを **X** に適用する] を選択し、[元に戻す] を **選択します**。 
+3. 画面の右側のウィンドウで、[このファイルのインスタンスを **X** に適用する] を選択し、[元に戻す] を **選択します**。
 
 ## <a name="part-3-review-or-define-exclusions"></a>パート 3: 除外を確認または定義する
 
-除外とは、修復アクションの例外として指定するファイルや URL などのエンティティです。 除外されたエンティティは引き続き検出できますが、そのエンティティに対して修復アクションは実行されません。 つまり、検出されたファイルまたはプロセスは、Microsoft Defender for Endpoint によって停止、検疫、削除、または変更に送信されません。 
+除外とは、修復アクションの例外として指定するファイルや URL などのエンティティです。 除外されたエンティティは引き続き検出できますが、そのエンティティに対して修復アクションは実行されません。 つまり、検出されたファイルまたはプロセスは、Microsoft Defender for Endpoint によって停止、検疫、削除、または変更に送信されません。
 
 Microsoft Defender for Endpoint 全体で除外を定義するには、次のタスクを実行します。
+
 - [ユーザーの除外を定義Microsoft Defender ウイルス対策](#exclusions-for-microsoft-defender-antivirus)
 - [Microsoft Defender for Endpoint の "許可" インジケーターを作成する](#indicators-for-microsoft-defender-for-endpoint)
 
@@ -213,7 +218,7 @@ Microsoft Defender for Endpoint 全体で除外を定義するには、次のタ
 
 #### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>[Microsoft エンドポイント マネージャーを使用してウイルス対策の除外を管理する (既存のポリシーの場合)
 
-1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 、サインインします。
+1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
 2. [**エンドポイント セキュリティ**  >  **ウイルス対策]** を選択し、既存のポリシーを選択します。 (既存のポリシーを使用しない場合、または新しいポリシーを作成する場合は、次の手順[に進む)。](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)
 
@@ -225,9 +230,9 @@ Microsoft Defender for Endpoint 全体で除外を定義するには、次のタ
 
 #### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>[Microsoft エンドポイント マネージャーを使用して、除外を含む新しいウイルス対策ポリシーを作成する
 
-1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 、サインインします。
+1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
-2. [エンドポイント **セキュリティウイルス**  >  **対策**  >  **] + [ポリシーの作成] を選択します**。 
+2. [エンドポイント **セキュリティウイルス**  >  **対策**  >  **] + [ポリシーの作成] を選択します**。
 
 3. プラットフォーム (Windows 10以降 **、macOS、または** Windows 10サーバー Windows **選択します**。 
 
@@ -259,38 +264,40 @@ Microsoft Defender for Endpoint の除外としてエンティティを指定す
 
 #### <a name="indicators-for-files"></a>ファイルのインジケーター
 
-実行可能ファイル [などのファイルの "許可"](/microsoft-365/security/defender-endpoint/indicator-file)インジケーターを作成すると、組織で使用しているファイルがブロックされるのを防ぐのに役立ちます。 ファイルには、ポータブル実行可能ファイル (PE) ファイル (ファイルなど) `.exe` を含 `.dll` めることもできます。 
+実行可能ファイル [などのファイルの "許可"](/microsoft-365/security/defender-endpoint/indicator-file)インジケーターを作成すると、組織で使用しているファイルがブロックされるのを防ぐのに役立ちます。 ファイルには、ポータブル実行可能ファイル (PE) ファイル (ファイルなど) `.exe` を含 `.dll` めることもできます。
 
 ファイルのインジケーターを作成する前に、次の要件を満たしていることを確認してください。
+
 - Microsoft Defender ウイルス対策保護が有効になっていると構成されている場合 (「クラウドベースの保護の管理[」を参照)](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
-- マルウェア対策クライアントのバージョンは 4.18.1901.x 以降です 
-- デバイスはバージョン Windows 10 1703 以降で実行されています。Windows Server 2016;または Windows Server 2019 
-- [ [ブロックまたは許可] 機能がオンになっている](/microsoft-365/security/defender-endpoint/advanced-features) 
+- マルウェア対策クライアントのバージョンは 4.18.1901.x 以降です
+- デバイスはバージョン Windows 10 1703 以降で実行されています。Windows Server 2016;または Windows Server 2019
+- [ [ブロックまたは許可] 機能がオンになっている](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-ip-addresses-urls-or-domains"></a>IP アドレス、URL、またはドメインのインジケーター
 
 IP アドレス [、URL、](/microsoft-365/security/defender-endpoint/indicator-ip-domain)またはドメインの "許可" インジケーターを作成すると、組織が使用するサイトまたは IP アドレスがブロックされるのを防ぐのに役立ちます。
 
 IP アドレス、URL、またはドメインのインジケーターを作成する前に、次の要件を満たしていることを確認してください。
+
 - Defender for Endpoint のネットワーク保護がブロック モードで有効になっている (「ネットワーク保護を有効[にする」を参照)](/microsoft-365/security/defender-endpoint/enable-network-protection)
-- マルウェア対策クライアントのバージョンは 4.18.1906.x 以降です 
-- デバイスは、Windows 10バージョン 1709 以降で実行されています 
+- マルウェア対策クライアントのバージョンは 4.18.1906.x 以降です
+- デバイスは、Windows 10バージョン 1709 以降で実行されています
 
 カスタム ネットワーク インジケーターは、カスタム ネットワーク インジケーターで[オンMicrosoft 365 Defender。](microsoft-defender-security-center.md) 詳細については、「高度な機能 [」を参照してください](/microsoft-365/security/defender-endpoint/advanced-features)。
 
-#### <a name="indicators-for-application-certificates"></a>アプリケーション証明書のインジケーター 
+#### <a name="indicators-for-application-certificates"></a>アプリケーション証明書のインジケーター
 
-アプリケーション証明書 [の "許可"](/microsoft-365/security/defender-endpoint/indicator-certificates)インジケーターを作成すると、組織が使用する内部開発アプリケーションなどのアプリケーションがブロックされるのを防ぐのに役立ちます。 `.CER` または `.PEM` ファイル拡張子がサポートされています。   
+アプリケーション証明書 [の "許可"](/microsoft-365/security/defender-endpoint/indicator-certificates)インジケーターを作成すると、組織が使用する内部開発アプリケーションなどのアプリケーションがブロックされるのを防ぐのに役立ちます。 `.CER` または `.PEM` ファイル拡張子がサポートされています。
 
 アプリケーション証明書のインジケーターを作成する前に、次の要件を満たしていることを確認してください。
 
 - Microsoft Defender ウイルス対策保護が有効になっていると構成されている場合 (「クラウドベースの保護の管理[」を参照)](deploy-manage-report-microsoft-defender-antivirus.md)
-- マルウェア対策クライアントのバージョンは 4.18.1901.x 以降です 
-- デバイスはバージョン Windows 10 1703 以降で実行されています。Windows Server 2016;または Windows Server 2019 
-- ウイルスと脅威の保護の定義が最新  
+- マルウェア対策クライアントのバージョンは 4.18.1901.x 以降です
+- デバイスはバージョン Windows 10 1703 以降で実行されています。Windows Server 2016;または Windows Server 2019
+- ウイルスと脅威の保護の定義が最新
 
 > [!TIP]
-> インジケーターを作成する場合は、それらを 1 つ 1 つ定義するか、複数のアイテムを一度にインポートできます。 1 つのテナントには 15,000 のインジケーターの制限があります。 また、ファイル ハッシュ情報など、特定の詳細を最初に収集する必要がある場合があります。 インジケーターを作成する前に前提条件を確認 [してください](manage-indicators.md)。 
+> インジケーターを作成する場合は、それらを 1 つ 1 つ定義するか、複数のアイテムを一度にインポートできます。 1 つのテナントには 15,000 のインジケーターの制限があります。 また、ファイル ハッシュ情報など、特定の詳細を最初に収集する必要がある場合があります。 インジケーターを作成する前に前提条件を確認 [してください](manage-indicators.md)。
 
 ## <a name="part-4-submit-a-file-for-analysis"></a>パート 4: 分析用にファイルを送信する
 
@@ -302,20 +309,21 @@ IP アドレス、URL、またはドメインのインジケーターを作成�
 
 1. 「分析用にファイルを [送信する」のガイドラインを確認します](/windows/security/threat-protection/intelligence/submission-guide)。
 
-2. [提出サイトMicrosoft セキュリティ インテリジェンスにアクセスし [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) 、ファイルを提出します。
+2. [提出サイトMicrosoft セキュリティ インテリジェンスにアクセスし <https://www.microsoft.com/wdsi/filesubmission> 、ファイルを提出します。
 
 ### <a name="submit-a-fileless-detection-for-analysis"></a>分析用にファイルレス検出を送信する
 
 動作に基づいてマルウェアとして検出され、ファイルを持ってない場合は、ファイルを送信して分析 `Mpsupport.cab` することができます。 Microsoft Malware Command-Line Protection *.cab* ユーティリティ (MPCmdRun.exe) ツールを使用して、.cabファイルを取得Windows 10。
 
-1.  に移動 ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` し、管理者 `MpCmdRun.exe` として実行します。
+1. に移動 ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` し、管理者 `MpCmdRun.exe` として実行します。
 
-2.  を `mpcmdrun.exe -GetFiles` 入力し、Enter キーを **押します**。
+2. を `mpcmdrun.exe -GetFiles` 入力し、Enter キーを **押します**。
+
    さまざまな.cabを含むファイルが生成されます。 ファイルの場所は、コマンド プロンプトの出力で指定されます。 既定では、場所は `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
 
-3.  「分析用にファイルを [送信する」のガイドラインを確認します](/windows/security/threat-protection/intelligence/submission-guide)。
+3. 「分析用にファイルを [送信する」のガイドラインを確認します](/windows/security/threat-protection/intelligence/submission-guide)。
 
-4.  [提出サイトMicrosoft セキュリティ インテリジェンスにアクセスし [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) 、ファイルを送信.cabします。
+4. [提出サイトMicrosoft セキュリティ インテリジェンスにアクセスし <https://www.microsoft.com/wdsi/filesubmission> 、ファイルを送信.cabします。
 
 ### <a name="what-happens-after-a-file-is-submitted"></a>ファイルが送信された後は何が起こりますか?
 
@@ -327,7 +335,7 @@ IP アドレス、URL、またはドメインのインジケーターを作成�
 - 認証された顧客、特に有効なソフトウェア アシュアランス [ID (SAID)](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx)を持つエンタープライズのお客様には、優先度が高くなります。
 - SAID 所有者による優先度の高いフラグが付いた申請は、直ちに注意を払います。
 
-申請に関する更新プログラムを確認するには、申請サイトでサインインMicrosoft セキュリティ インテリジェンス[します](https://www.microsoft.com/wdsi/filesubmission)。 
+申請に関する更新プログラムを確認するには、申請サイトでサインインMicrosoft セキュリティ インテリジェンス[します](https://www.microsoft.com/wdsi/filesubmission)。
 
 > [!TIP]
 > 詳細については、「分析用に [ファイルを送信する」を参照してください](/windows/security/threat-protection/intelligence/submission-guide#how-does-microsoft-prioritize-submissions)。
@@ -351,7 +359,7 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 
 #### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>クラウドMicrosoft エンドポイント マネージャーの保護設定を確認および編集するには、既存のポリシーを使用します。
 
-1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 、サインインします。
+1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
 2. [**エンドポイント セキュリティウイルス**  >  **対策] を** 選択し、既存のポリシーを選択します。 (既存のポリシーを使用しない場合、または新しいポリシーを作成する場合は、次の手順[に進む)。](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)
 
@@ -363,7 +371,7 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 
 #### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>[Microsoft エンドポイント マネージャーを使用して、クラウド配信の保護設定を設定する (新しいポリシーの場合)
 
-1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 、サインインします。
+1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
 2. [エンドポイント **セキュリティの**  >  **ウイルス対策**  >  **] + [ポリシーの作成] を選択します**。
 
@@ -379,7 +387,7 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 
 7. [割 **り当て]** タブで、ポリシーを適用するユーザーとグループを指定し、[次へ] を **選択します**。 (割り当てのヘルプが必要な場合は、「ユーザープロファイルとデバイス プロファイルを割り当てる」を参照[Microsoft Intune.)](/mem/intune/configuration/device-profile-assign)
 
-8. [確認 **と作成] タブで** 設定を確認し、[作成] を **選択します**。  
+8. [確認 **と作成] タブで** 設定を確認し、[作成] を **選択します**。
 
 ### <a name="remediation-for-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションの修復
 
@@ -387,14 +395,14 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 
 > [!TIP]
 > PUA の詳細については、「望ましくない可能性のあるアプリケーションを検出して [ブロックする」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)。
- 
+
 組織が使用しているアプリによっては、PUA 保護設定の結果として誤検知が発生する可能性があります。 必要に応じて、監査モードで PUA 保護をしばらく実行するか、組織内のデバイスのサブセットに PUA 保護を適用します。 PUA 保護は、ブラウザーとMicrosoft Edge構成Microsoft Defender ウイルス対策。
 
 PUA[保護設定](/mem/endpoint-manager-overview)Microsoft エンドポイント マネージャー設定するには、この設定を使用することをお勧めします。ただし、グループ ポリシーなどの他のメソッドを使用[](/azure/active-directory-domain-services/manage-group-policy)できます (「Manage [Microsoft Defender for Endpoint」を参照)。](manage-atp-post-migration.md)
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>PUA Microsoft エンドポイント マネージャー (既存の構成プロファイルの場合) を編集するには、次のコマンドを使用します。
 
-1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 、サインインします。
+1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
 2. [**デバイス**  >  **構成プロファイル] を選択** し、既存のポリシーを選択します。 (既存のポリシーを使用しない場合、または新しいポリシーを作成する場合は、次の手順 [に進む必要があります](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile)。)
 
@@ -408,7 +416,7 @@ PUA[保護設定](/mem/endpoint-manager-overview)Microsoft エンドポイント
 
 #### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>PUA Microsoft エンドポイント マネージャー (新しい構成プロファイルの場合) を設定するには、次のコマンドを使用します。
 
-1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 、サインインします。
+1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
 2. [デバイス  >  **構成プロファイル] +**  >  **[プロファイルの作成] を選択します**。
 
@@ -428,28 +436,28 @@ PUA[保護設定](/mem/endpoint-manager-overview)Microsoft エンドポイント
 
 ### <a name="automated-investigation-and-remediation"></a>調査と修復の自動化
 
-[自動調査と修復](automated-investigations.md) (AIR) 機能は、アラートを調べ、侵害を解決するために直ちに対応するように設計されています。 アラートがトリガーされ、自動調査が実行されると、調査された証拠ごとに評決が生成されます。 評決には、悪意のある *、疑わしい、* または検出 *された脅威がない可能性があります*。  
+[自動調査と修復](automated-investigations.md) (AIR) 機能は、アラートを調べ、侵害を解決するために直ちに対応するように設計されています。 アラートがトリガーされ、自動調査が実行されると、調査された証拠ごとに評決が生成されます。 評決には、悪意のある *、疑わしい、* または検出 *された脅威がない可能性があります*。 
 
-組織およびその他の [セキュリティ](/microsoft-365/security/defender-endpoint/automation-levels) 設定のオートメーション セットのレベルに応じて、悪意のあるまたは疑わしいと見なされるアーティファクトに対して修復 *アクションが* 実行 *されます*。 修復アクションが自動的に実行される場合があります。それ以外の場合、修復アクションは手動で実行するか、セキュリティ運用チームの承認を得た場合にのみ実行されます。 
+組織およびその他の [セキュリティ](/microsoft-365/security/defender-endpoint/automation-levels) 設定のオートメーション セットのレベルに応じて、悪意のあるまたは疑わしいと見なされるアーティファクトに対して修復 *アクションが* 実行 *されます*。 修復アクションが自動的に実行される場合があります。それ以外の場合、修復アクションは手動で実行するか、セキュリティ運用チームの承認を得た場合にのみ実行されます。
 
-- [オートメーション レベルについて詳しくは、次の情報を参照してください](/microsoft-365/security/defender-endpoint/automation-levels)。それから 
+- [オートメーション レベルについて詳しくは、次の情報を参照してください](/microsoft-365/security/defender-endpoint/automation-levels)。それから
 - [Defender for Endpoint で AIR 機能を構成します](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation)。
 
 > [!IMPORTANT]
-> 自動調査と *修復には、* 完全自動化を使用することをお勧めします。 誤検知のため、これらの機能をオフにしない。 代わりに [、"許可"](#indicators-for-microsoft-defender-for-endpoint)インジケーターを使用して例外を定義し、自動的に適切なアクションを実行するために自動調査と修復を設定します。 この [ガイダンスに従って](automation-levels.md#levels-of-automation) 、セキュリティ運用チームが処理する必要があるアラートの数を減らすのに役立ちます。 
+> 自動調査と *修復には、* 完全自動化を使用することをお勧めします。 誤検知のため、これらの機能をオフにしない。 代わりに [、"許可"](#indicators-for-microsoft-defender-for-endpoint)インジケーターを使用して例外を定義し、自動的に適切なアクションを実行するために自動調査と修復を設定します。 この [ガイダンスに従って](automation-levels.md#levels-of-automation) 、セキュリティ運用チームが処理する必要があるアラートの数を減らすのに役立ちます。
 
 ## <a name="still-need-help"></a>さらにヘルプが必要ですか?
 
 この記事のすべての手順を実行し、引き続きヘルプが必要な場合は、テクニカル サポートにお問い合わせください。
 
-1. [Microsoft 365 Defender ] に [https://security.microsoft.com](https://security.microsoft.com) 移動し、サインインします。
+1. [Microsoft 365 Defender ] に <https://security.microsoft.com> 移動し、サインインします。
 
 2. 右上隅で、疑問符 (**?**) を選択し、[Microsoft サポート] **を選択します**。
 
-3. [サポート **アシスタント] ウィンドウ** で、問題について説明し、メッセージを送信します。 そこから、サービス要求を開きます。  
+3. [サポート **アシスタント] ウィンドウ** で、問題について説明し、メッセージを送信します。 そこから、サービス要求を開きます。
 
 ## <a name="see-also"></a>関連項目
 
 [エンドポイント用 Microsoft Defender の管理](manage-atp-post-migration.md)
 
-[ポータルのMicrosoft 365 Defender概要](/microsoft-365/security/defender-endpoint/use) 
+[ポータルのMicrosoft 365 Defender概要](/microsoft-365/security/defender-endpoint/use)

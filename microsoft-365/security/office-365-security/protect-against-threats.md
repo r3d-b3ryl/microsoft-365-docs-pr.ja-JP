@@ -20,12 +20,12 @@ description: 管理者は、組織の脅威保護Microsoft 365、組織で使用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d61b17fc4575249bb592fc4ca865c34a628361a
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 407838c815a85ce7c73322a0de176970ee93e537
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878330"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029611"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -41,7 +41,7 @@ ms.locfileid: "52878330"
 > [!IMPORTANT]
 > **最初の推奨設定は** ポリシーの種類ごとに含まれていますが、多くのオプションを使用できます。また、特定の組織のニーズに合わせて設定を調整することもできます。 ポリシーまたは変更がデータセンター経由で動作するには、約 30 分かかります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>サブスクリプション
 
@@ -139,11 +139,12 @@ Defender for Office 365 ポリシーを構成するには、セキュリティ �
        - **メールボックス インテリジェンスが偽装ユーザーを** 検出した場合: [メッセージを受信者の迷惑メール フォルダー (標準) に移動する] または [メッセージを検疫 <sup>\*</sup> する (厳密]) を選択します。  
        - **メッセージがスプーフィングとして検出された場合**: [メッセージを受信者の迷惑メール フォルダー **(標準** ) に移動する] または [メッセージを検疫する (Strict]) を **選択** します。
      - **[インジケーター&ヒント** : 次の設定を構成します。
+       - **[最初の連絡先を表示安全性のヒント:** 選択 (オン) します。
        - **[ユーザーの偽装を表示安全性のヒント:** <sup>\*</sup> 選択 (オン) します。
        - **[ドメイン偽装の表示] 安全性のヒント** <sup>\*</sup> : 選択 (オン) します。
        - **[ユーザー偽装の異常な文字を表示安全性のヒント** <sup>\*</sup> : 選択 (オン) します。
        - **スプーフィングの認証されていない** 送信者に対して表示 (?) : 選択 (オン) します。
-       - **"via" タグを表示する**: この設定が使用可能な場合は、選択 (オン) します。
+       - **"via" タグを表示する**: 選択 (オン) します。
 
      完了したら、**[保存]** をクリックします。
 
@@ -151,7 +152,7 @@ Defender for Office 365 ポリシーを構成するには、セキュリティ �
 
 4. [保存 **] をクリック** し、[閉じる] を **クリックします。**
 
-フィッシング対策ポリシーを構成する詳細な手順については[、「EOP](configure-anti-phishing-policies-eop.md)でフィッシング対策ポリシーを構成する」および「Microsoft Defender for Office 365 でフィッシング対策ポリシーを構成する[」を参照してください](configure-atp-anti-phishing-policies.md)。
+フィッシング対策ポリシーを構成する詳細な手順については[、「EOP](configure-anti-phishing-policies-eop.md)でフィッシング対策ポリシーを構成する」および「Microsoft Defender for Office 365 でフィッシング対策ポリシーを構成する[」を参照してください](configure-mdo-anti-phishing-policies.md)。
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>パート 3 - EOP のスパム対策保護
 
@@ -278,7 +279,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 > 構成が完了したら、次のリンクを使用してワークロード調査を開始します。
 >
 >- [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
->- [Defender ポータルMicrosoft 365を使用して、Defender の検疫済みファイルを管理Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+>- [Defender の検疫済Microsoft 365 Defenderを管理するには、このポータルを使用Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 >- [悪意のあるファイルがオンライン、オンライン、SharePoint、またはOneDriveにMicrosoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [検疫済みメッセージとファイルを管理者として管理Microsoft 365](manage-quarantined-messages-and-files.md)
 

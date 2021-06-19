@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1ddb6da49e5e9f23aacf73caaeb91302ac9c19c9
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 2ca601c3c68df9f9f1cc4fb90bcfbe907850ce91
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028969"
+ms.locfileid: "53029731"
 ---
 # <a name="overview-of-microsoft-365-defender-apis"></a>API のMicrosoft 365 Defender概要
 
@@ -48,13 +48,10 @@ Microsoft 365 Defenderは、統合対応プラットフォームの上に構築�
 
 ストリーミング API [を使用して](../defender-endpoint/raw-data-export.md) 、1 つのデータ ストリーム内で発生するインスタンスからのリアルタイム イベントとアラートを配信します。
 
-
 これらの特定のMicrosoft 365 Defender API に加え、他の各セキュリティ製品は、独自の機能を利用するために追加の[API](api-articles.md)を公開します。
-
 
 > [!NOTE]
 > 統合ポータルへの移行は、Microsoft Defender for Endpoint API に基づく PowerBi ダッシュボードに影響を与える必要があります。 対話型ポータルの移行に関係なく、既存の API を引き続き操作できます。
-
 
 ## <a name="learn-more"></a>詳細情報
 

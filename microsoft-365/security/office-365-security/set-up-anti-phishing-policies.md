@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 846043be72be741e60c09c85fba14dbf291612a1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964887"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029371"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "52964887"
 
 フィッシング対策保護設定を構成するポリシーは、Exchange Online メールボックスを持つ Microsoft 365 組織、Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織、および Office 365 組織向け Microsoft Defender で利用できます。
 
-Microsoft Defender for microsoft Defender for Office 365フィッシング対策ポリシーは、Defender for Office 365 を持つ組織でのみOffice 365。 次に例を示します。
+Microsoft Defender for microsoft Defender for Office 365フィッシング対策ポリシーは、Defender for Office 365 を持つ組織でのみOffice 365。 例:
 
 - Microsoft 365 EnterpriseE5、Microsoft 365 Education A5 など
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -62,7 +62,7 @@ EOP のフィッシング対策ポリシーと Microsoft Defender for Office 365
 
 - [EOP でのスパム対策ポリシーの構成](configure-anti-phishing-policies-eop.md)
 
-- [Microsoft Defender でフィッシング対策ポリシーを構成Office 365](configure-atp-anti-phishing-policies.md)
+- [Microsoft Defender でフィッシング対策ポリシーを構成Office 365](configure-mdo-anti-phishing-policies.md)
 
 この記事の残りの部分では、EOP と Defender for Office 365 のフィッシング対策ポリシーで使用できる設定について説明します。
 
@@ -131,9 +131,6 @@ EOP および Microsoft Defender のフィッシング対策ポリシーでは�
 - 認証されていない送信者の疑問符 **(?)** 記号を有効にする: この設定をオンにすると、メッセージが SPF または DKIM チェックに合格しない場合、メッセージが DMARC または複合認証に合格しない場合、差出人の写真 [](email-validation-and-authentication.md#composite-authentication)に疑問符が追加されます。 この設定をオフにすると、送信者の写真に疑問符は追加されません。
 
 - **"via"** タグを有効にする: この設定を有効にすると、差出人アドレス (電子メール クライアントに表示されるメッセージ送信者) のドメインが DKIM 署名のドメインまたは MAIL FROM アドレスと異なる場合は、[差出人] ボックスに via タグ (chris@contoso.com 経由で <sup>\*</sup> fabrikam.com)<u></u>が追加されます。 これらのアドレスの詳細については、「電子メール [メッセージ標準の概要」を参照してください](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
-
-> [!NOTE]
-> 現在、すべての **組織で ["via" タグを有効にする]** 設定は使用できません。 ["via" タグを有効にする] 設定が設定されていない場合、疑問符と via タグは、組織の [認証されていない送信者の質問マーク **(?)** を有効にする] 記号によって制御されます。
 
 疑問符またはタグ経由で特定の送信者からのメッセージに追加されるのを防ぐには、次のオプションがあります。
 

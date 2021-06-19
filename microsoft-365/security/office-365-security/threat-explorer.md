@@ -19,12 +19,12 @@ description: セキュリティ センターでエクスプローラーとリア
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12fb7f757912a8f1c87a57c386c6f698d777752a
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a7e3620859dfbc5f3d55501a880cef233e0a0be3
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930297"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029587"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -513,12 +513,12 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
    > [!div class="mx-imgBorder"]
    > ![ユーザーが報告したフィッシング](../../media/EmailUserReportedReportType.png)
 
-レポートが更新され、組織内のユーザーがフィッシング詐欺の試みとして報告した電子メール メッセージに関するデータが表示されます。 この情報を使用して、詳細な分析を行い、必要に応じて[Microsoft Defender](configure-atp-anti-phishing-policies.md)でフィッシング対策ポリシーを調整Office 365。
+レポートが更新され、組織内のユーザーがフィッシング詐欺の試みとして報告した電子メール メッセージに関するデータが表示されます。 この情報を使用して、詳細な分析を行い、必要に応じて[Microsoft Defender](configure-mdo-anti-phishing-policies.md)でフィッシング対策ポリシーを調整Office 365。
 
 ## <a name="start-automated-investigation-and-response"></a>自動調査と対応を開始する
 
 > [!NOTE]
-> 自動調査と対応機能は *、Microsoft Defender* でプラン 2 および *E5* Office 365でOffice 365できます。
+> 自動調査と対応機能は *、Microsoft Defender* でプラン 2 および Office 365で *Office 365 E5。*
 
 [自動調査と対応により](automated-investigation-response-office.md) 、セキュリティ運用チームがサイバー攻撃の調査と軽減に費やした時間と労力を節約できます。 セキュリティ プレイブックをトリガーできるアラートの構成に加えて、エクスプローラーのビューから自動調査と応答プロセスを開始できます。 詳細については、「例 [: セキュリティ管理者がエクスプローラーから調査をトリガーする」を参照してください](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。
 
@@ -530,25 +530,25 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
 - [オンライン、オンライン、SharePoint、およびOneDriveで検出された悪意のあるMicrosoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [脅威エクスプローラー (およびリアルタイム検出) のビューの概要を取得する](threat-explorer-views.md)
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
-- [Defender での自動調査Microsoft 365対応](../defender/m365d-autoir.md)
+- [データの自動調査とMicrosoft 365 Defender](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
-エクスプローラーまたは[リアルタイム検出を使用するにはOffice 365](defender-for-office-365.md) Microsoft Defender が必要です。
+エクスプローラーまたは [リアルタイム検出を使用するには、Office 365](defender-for-office-365.md) 用の Microsoft Defender が必要です。
 
-- エクスプローラーは、Defender for Office 365プラン 2 に含まれています。
-- リアルタイム検出レポートは、Defender for Office 365プラン 1 に含まれています。
-- Defender によって保護される必要があるすべてのユーザーにライセンスを割り当てる計画をOffice 365。 エクスプローラーとリアルタイム検出では、ライセンスを取得したユーザーの検出データが表示されます。
+- Explorer は Defender for Office 365 プラン 2 に含まれています。
+- リアルタイム検出レポートは、Defender for Office 365 プラン 1 に含まれています。
+- 365 用に Defender によって保護される必要があるすべてのユーザーにライセンスを割り当Officeします。 エクスプローラーとリアルタイム検出では、ライセンスを取得したユーザーの検出データが表示されます。
 
 エクスプローラーまたはリアルタイム検出を表示および使用するには、セキュリティ管理者やセキュリティ リーダーに付与されたアクセス許可など、適切なアクセス許可が必要です。
 
 - セキュリティ コンプライアンス センター&、次のいずれかの役割が割り当てられている必要があります。
 
   - 組織管理
-  - セキュリティ管理者 (この管理者は、管理者センター Azure Active Directory割り当てることができます ( <https://aad.portal.azure.com> )
+  - セキュリティ管理者 (これは Azure Active Directory 管理センター ( ) で割り当 <https://aad.portal.azure.com> てることができます。
   - セキュリティ閲覧者
 
-- たとえば、Exchange Online管理センター ( ) または PowerShell で割り当てられている次Exchange役割 <https://admin.protection.outlook.com/ecp/> [Exchange Onlineがあります](/powershell/exchange/exchange-online-powershell)。
+- Exchange Online の場合は、Exchange 管理センター ( ) または Exchange Online PowerShell で次のいずれかの役割が割り <https://admin.protection.outlook.com/ecp/> [当てられている必要があります](/powershell/exchange/exchange-online-powershell)。
 
   - 組織の管理
   - 表示専用組織の管理
@@ -562,10 +562,10 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出の違い
 
-- リアルタイム *検出レポートは、Defender* でプラン 1 のOffice 365できます。 *脅威エクスプローラー* は、Defender for Office 365プラン 2 で利用できます。
+- リアルタイム *検出レポートは* 、Defender で 365 プラン 1 Office使用できます。 *脅威エクスプローラー* は、Defender for Office 365 プラン 2 で利用できます。
 - リアルタイム検出レポートを使用すると、リアルタイムで検出を表示できます。 脅威エクスプローラーも同様にこれを実行しますが、特定の攻撃に関する追加の詳細も提供します。
 - すべての *電子メール ビュー* は脅威エクスプローラーで使用できますが、リアルタイム検出レポートでは使用できません。
-- 脅威エクスプローラーには、より多くのフィルター機能と使用可能なアクションが含まれています。 詳細については[、「Microsoft Defender for Office 365 サービスの説明:](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)Defender 全体の機能の可用性」を参照してください。Office 365してください。
+- 脅威エクスプローラーには、より多くのフィルター機能と使用可能なアクションが含まれています。 詳細については [、「Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 プラン」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="other-articles"></a>その他の記事
 

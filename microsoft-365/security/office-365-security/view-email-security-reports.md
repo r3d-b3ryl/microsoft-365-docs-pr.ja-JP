@@ -19,12 +19,12 @@ description: 管理者は、Microsoft 365 Defender ポータルで使用でき�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f3dcf533c232a89adf0dc1ff3fcc7c2ca4fc5d8f
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022934"
+ms.locfileid: "53029574"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで電子メール セキュリティ レポートを表示する
 
@@ -157,7 +157,9 @@ Microsoft 365 Defender ポータルでレポートを表示するには、「Rep
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>メールフロー状態レポートの種類ビュー
 
-レポートを開いた場合、[種類] **タブ** が既定で選択されます。 既定では、このビューにはグラフと、次のフィルターで構成された詳細テーブルが含まれます。
+![メールフローの状態レポートにビューを入力する](../../media/mail-flow-status-report-type-view.png)
+
+[メール **フローの状態] レポート ページで** 、[種類] **タブ** が既定で選択されています。 既定では、このビューにはグラフと、次のフィルターで構成された詳細テーブルが含まれます。
 
 - **日付 (UTC)** 過去 7 日間。
 - **メールの方向**:
@@ -175,7 +177,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、「Rep
 
 グラフは、Type 値によって **整理** されます。
 
-これらのフィルターは、[フィルター] を **クリックするか** 、グラフの凡例の値をクリックして変更できます。
+これらのフィルターは、[フィルター] をクリックして **変更できます**。
 
 次の情報は、グラフの下の詳細テーブルに示されています。
 
@@ -200,9 +202,9 @@ Microsoft 365 Defender ポータルでレポートを表示するには、「Rep
 
 エクスポートされたファイル.csv、150,000 行に制限されます。 その日のデータに 150,000 行を超える行が含まれている場合は、複数.csvファイルが作成されます。
 
-![メールフローの状態レポートにビューを入力する](../../media/mail-flow-status-report-type-view.png)
-
 ### <a name="direction-view-for-the-mailflow-status-report"></a>メールフロー状態レポートの方向ビュー
+
+![メールフロー状態レポートの方向ビュー](../../media/mail-flow-status-report-direction-view.png)
 
 [方向] タブ **をクリックすると** 、[種類] ビューの同じ既定 **のフィルター** が使用されます。
 
@@ -220,11 +222,11 @@ Microsoft 365 Defender ポータルでレポートを表示するには、「Rep
 
 エクスポートされたファイル.csv、150,000 行に制限されます。 その日のデータに 150,000 行を超える行が含まれている場合は、複数.csvファイルが作成されます。
 
-![メールフロー状態レポートの方向ビュー](../../media/mail-flow-status-report-direction-view.png)
-
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>メールフロー状態レポートのファネル ビュー
 
 [ **ファネル** ] ビューには、Microsoft の電子メール脅威防止機能が組織内の受信メールと送信メールをフィルター処理する方法が表示されます。 電子メールの総数と、エッジ保護、マルウェア対策、フィッシング対策、スパム対策、スプーフィング対策などの構成済みの脅威保護機能が、この数に与える影響の詳細を示します。
+
+![メールフロー状態レポートのファネル ビュー](../../media/mail-flow-status-report-funnel-view.png)
 
 [ファネル] タブ **を** クリックすると、既定では、次のフィルターで構成されたグラフと詳細テーブルが表示されます。
 
@@ -289,8 +291,6 @@ EOP または Defender でフィルター処理されたメールを個別Office
 [ **日付] で** 範囲を選択し、[適用] を **クリックします**。 現在のフィルターのデータは、特定のファイルに.csvされます。
 
 エクスポートされたファイル.csv、150,000 行に制限されます。 データに 150,000 行を超える行が含まれている場合は、複数.csvファイルが作成されます。
-
-![メールフロー状態レポートのファネル ビュー](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>メールフローの状態レポートの技術ビュー
 
@@ -460,14 +460,23 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 [申請 **] ページ** で、[フィルター] をクリックし、次の値の1 つ以上を選択して、グラフと詳細テーブルの両方をフィルター処理できます。
 
 - **報告日**: **開始時刻** と **終了時刻**
-- **申請の種類**:**電子メール****、URL、****またはファイル**
+- **申請の種類**:
+  - **電子メール**
+  - **URL**
+  - **ファイル**
 - **申請 ID**
 - **ネットワーク メッセージ ID**
 - **Sender**
 - **名前**
 - **提出者**
-- **送信の理由**:**迷惑メール、フィッシング****、マルウェア**、**スパム****ではない**
-- **再スキャンの状態**:**保留中または****完了**
+- **提出の理由**:
+  - **迷惑メールではない**
+  - **フィッシング**
+  - **マルウェア**
+  - **スパム**
+- **再スキャンの状態**:
+  - **Pending**
+  - **Completed**
 
 グラフの下の詳細テーブルは、同じ情報を示し、[グループ] または [グループのカスタマイズ] 列のオプションは、[電子メール と共同作業の申請] の [分析用に送信済み] タブと同 **&です** \> 。 詳細については [、「View admin submissions to Microsoft」を参照してください](admin-submission.md#view-admin-submissions-to-microsoft)。
 
@@ -772,7 +781,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 ## <a name="url-threat-protection-report"></a>URL 脅威保護レポート
 
-URL **の脅威保護レポートは**、Microsoft Defender で使用できるOffice 365。 詳細については、「URL 脅威保護 [レポート」を参照してください](view-reports-for-mdo.md#url-threat-protection-report)。
+URL **の脅威保護レポートは**、Microsoft Defender でのみ使用できます。Office 365。 詳細については、「URL 脅威保護 [レポート」を参照してください](view-reports-for-mdo.md#url-threat-protection-report)。
 
 ## <a name="user-reported-messages-report"></a>ユーザーが報告したメッセージ レポート
 

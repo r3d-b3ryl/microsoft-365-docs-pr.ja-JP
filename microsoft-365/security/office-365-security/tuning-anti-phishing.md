@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、Microsoft 365 でフィッシング メッセージが通過した理由と方法、および今後のフィッシング メッセージを防ぐための対策について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d8f3f93b3fe1643467a12f90123b839addad2ed
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5093981c5f0166d3f53c3b6c7d24371312633c99
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537849"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029347"
 ---
 # <a name="tune-anti-phishing-protection"></a>フィッシング対策保護を調整する
 
@@ -44,7 +44,7 @@ ms.locfileid: "52537849"
 
 - [セーフMicrosoft Defender の添付ファイル (Office 365](set-up-safe-attachments-policies.md)
 
-- [Microsoft Defender のフィッシング対策ポリシーを](configure-atp-anti-phishing-policies.md)Office 365。 ポリシーの [高度なフィッシングのしきい値] を一時的に [**標準**]から [アグレッシブ] 、[攻撃的] 、または [最も攻撃的] に **増やします**。
+- [Microsoft Defender のフィッシング対策ポリシーを](configure-mdo-anti-phishing-policies.md)Office 365。 ポリシーの [高度なフィッシングのしきい値] を一時的に [**標準**]から [アグレッシブ] 、[攻撃的] 、または [最も攻撃的] に **増やします**。
 
 これらの Defender が有効になっているOffice 365確認します。
 
@@ -66,7 +66,7 @@ ms.locfileid: "52537849"
 
 - スプーフィングされた送信者からのメール (メッセージの差出人アドレスがメッセージの送信元と一致しない) は、Defender for Office 365 でフィッシングとして分類されます。 スプーフィングは良性であり、ユーザーが特定のスプーフィングされた送信者からのメッセージを検疫したくない場合があります。 ユーザーへの影響を最小限に抑えるために、スプー[](learn-about-spoof-intelligence.md)フィング インテリジェンスの分析情報、テナント許可[/](tenant-allow-block-list.md)ブロック 一覧の [スプーフィング] タブ、および [スプーフィング検出] レポートを定期的に[確認します](view-email-security-reports.md#spoof-detections-report)。 スプーフィングされた送信者の許可とブロックを確認し、必要な上書きを行った後は、ユーザーの[](set-up-anti-phishing-policies.md#spoof-settings)迷惑メール フォルダーに配信するのではなく、疑わしいメッセージを検疫するフィッシング対策ポリシーでスプーフィング インテリジェンスを構成できます。
 
-- Microsoft Defender の偽装 (ドメインまたはユーザー) の場合は、上記の手順を繰り返Office 365。 偽装レポートは、[脅威管理ダッシュボード **の分析情報** \> **] の** \> **下に表示されます**。
+- Microsoft Defender の偽装 (ドメインまたはユーザー) の場合は、上記の手順を繰り返Office 365。 偽装レポートは、[脅威 **管理ダッシュボード]** の下 \>  \> インサイト。
 
 - 脅威保護の状態 [レポートを定期的に確認します](view-reports-for-mdo.md#threat-protection-status-report)。
 

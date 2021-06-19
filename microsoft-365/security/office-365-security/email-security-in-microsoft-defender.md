@@ -16,12 +16,12 @@ description: マルウェアのフィッシング詐欺の試行を表示およ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 917ad3caf96a982df8b88058ff1c394b3d21dd75
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: eb62961bb26b079c508cbd5bc559a95d172cff86
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028558"
+ms.locfileid: "53029887"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Microsoft Defender の脅威エクスプローラーを使用した電子メール Office 365
 
@@ -32,58 +32,55 @@ ms.locfileid: "53028558"
 - [自動調査と対応を開始する](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> これは、Threat **Explorer (Explorer)** 、電子メール セキュリティ、**エクスプローラー** とリアルタイム検出の基本 (ツールの違い、操作に必要なアクセス許可など) に関する **3** 記事シリーズの一部です。 このシリーズの他の 2 つの記事は、Threat Explorer と Threat [Explorer](threat-hunting-in-threat-explorer.md) での脅威の検出とリアルタイム検出 [の基本です](real-time-detections.md)。 
+> これは、Threat **Explorer (Explorer)** 、電子メール セキュリティ、**エクスプローラー** とリアルタイム検出の基本 (ツールの違い、操作に必要なアクセス許可など) に関する **3** 記事シリーズの一部です。 このシリーズの他の 2 つの記事は、Threat Explorer と Threat [Explorer](threat-hunting-in-threat-explorer.md) での脅威の検出とリアルタイム検出 [の基本です](real-time-detections.md)。
 
-この記事では、セキュリティ機能によって電子メールで検出されたマルウェアやフィッシングの試みを表示および調査するMicrosoft 365説明します。 
+この記事では、セキュリティ機能によって電子メールで検出されたマルウェアやフィッシングの試みを表示および調査するMicrosoft 365説明します。
 
-**適用対象**
+**適用対象:**
 
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## <a name="view-malware-detected-in-email"></a>メールで検出されたマルウェアを表示する
 
-Microsoft 365 テクノロジによって並べ替えた電子メールで検出されたマルウェアを確認するには、[](threat-explorer-views.md#email--malware)エクスプローラーの [電子メール > マルウェア] ビュー (またはリアルタイム検出) を使用します。 マルウェアは既定のビューなので、エクスプローラーを開いたとすぐに選択される場合があります。
+Microsoft 365 テクノロジによって並べ替えた電子メールで検出されたマルウェアを確認するには、[](threat-explorer-views.md#email--malware)エクスプローラーの [電子メール > マルウェア] ビュー (またはリアルタイム検出) を使用します。 マルウェアは既定のビューなので、エクスプローラーを開いたとすぐに選択される可能性があります。
 
-1. [ポータル] Microsoft 365 Defenderで、[メール] & <https://security.microsoft.com> **コラボレーション** \> **エクスプローラー** (またはリアルタイム **検出) を選択します**。 (この例では、エクスプローラーを使用します)。コンバージド ポータルを使用しているMicrosoft 365 Defender ( [メール] までスクロールし、& https://security.microsoft.com/) **エクスプローラーに**  >  **移動します**。
+1. [ポータル] Microsoft 365 Defenderで、[メール] &コラボレーション エクスプローラー (またはリアルタイム <https://security.microsoft.com>  \> **の検出) を選択します**。この例では、エクスプローラーを使用します)。
 
    ここから、ビューから開始し、調査する特定のフレーム (必要な場合) を選択し、エクスプローラーのウォークスルーに応じてフィルターを [フォーカスします](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)。
 
-2. [表示]**メニューの**[メール] で **[マルウェア] を****選択します**。
+2. [表示 **] ドロップダウン** リストで、[メール マルウェア] \> **が選択されている** のを確認します。
 
-3. [送信者 **] を** クリックし、[基本検出 **テクノロジ]** \> **を選択します**。
+3. [ **送信者] を** クリックし **、ドロップダウン** リストで \> **[** 基本検出テクノロジ] を選択します。
 
-   
    :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="マルウェア検出テクノロジ":::
 
    検出テクノロジは、レポートのフィルターとして利用できます。
 
-4. オプションを選択します。 次に、[更新] **ボタンを** 選択して、そのフィルターを適用します。
+4. オプションを選択し、[更新] **をクリック** してフィルターを適用します (ブラウザー ウィンドウを更新しない)。
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="選択された検出テクノロジ"::: 
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="選択された検出テクノロジ":::
 
-   レポートが更新され、選択したテクノロジ オプションを使用して、電子メールでマルウェアが検出された結果が表示されます。 ここから、さらに分析を実行できます。 
+   レポートが更新され、選択したテクノロジ オプションを使用して、電子メールでマルウェアが検出された結果が表示されます。 ここから、さらに分析を実行できます。
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>フィッシング URL を表示し、[評決データ] をクリックする
 
 許可、ブロック、および上書きされた URL の一覧を含む、メール内の URL を介してフィッシング詐欺の試みを表示できます。 クリックされた URL を識別するには、セーフ[リンクを](safe-links.md)構成する必要があります。 [リンク] でクリック[セーフの](set-up-safe-links-policies.md)保護とログ記録を行う場合は、必ずリンク ポリシーをセーフしてください。
 
-メッセージ内のフィッシング URL を確認し、フィッシング メッセージ内の URL[  >  ](threat-explorer-views.md#email--phish)をクリックするには、エクスプローラーまたはリアルタイム検出の [メール フィッシング] ビューを使用します。
+1. [ポータル] Microsoft 365 Defenderで、[メール] &コラボレーション エクスプローラー (またはリアルタイム <https://security.microsoft.com>  \> **の検出) を選択します**。この例では、エクスプローラーを使用します)。
 
-1. [ポータル] Microsoft 365 Defenderで、[メール] & <https://security.microsoft.com> **コラボレーション** \> **エクスプローラー** (またはリアルタイム **検出) を選択します**。 (この例では、エクスプローラーを使用します)。
-
-2. [表示] **メニューの** [メール フィッシング] **を** \> **選択します**。
+2. [表示] **ドロップダウン リスト** で、[メール フィッシング] **を** \> **選択します**。
 
    > [!div class="mx-imgBorder"]
    > ![フィッシング コンテキストでのエクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. [送信者 **] を** クリックし **、[URL]** \> **[評決のクリック] を選択します**。
+3. [**送信者]** をクリックし **、[URL]** ドロップダウン リストで [評 \> 決をクリックする] を選択します。
 
-4. [ブロック] や [上書きブロック]などの 1 つ以上のオプションを選択し、そのフィルターを適用するオプションと同じ行の [更新] ボタンを選択します。  (ブラウザー ウィンドウを更新しない)。
+4. 表示されるオプションで、[ブロック] や [上書きブロック]などの 1 つ以上のオプションを選択し、[更新] **(ブラウザー** ウィンドウを更新しない) をクリックします。
 
     :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URL とクリックの評決":::
 
-   レポートが更新され、レポートの下の [URL] タブに 2 つの異なる URL テーブルが表示されます。
+   レポートが更新され、レポートの下の [URL] タブに **2** つの異なる URL テーブルが表示されます。
 
    - **上位 URL は** 、フィルター処理したメッセージ内の URL であり、メール配信アクションは URL ごとにカウントされます。 [フィッシング メール] ビューでは、通常、この一覧には正当な URL が含まれる。 攻撃者は、メッセージに良い URL と悪い URL を組み合わせ、配信を試みているが、悪意のあるリンクをより面白く見せている。 URL のテーブルはメールの総数で並べ替えされますが、この列は非表示に設定され、ビューが簡略化されます。
 

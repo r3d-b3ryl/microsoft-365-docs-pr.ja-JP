@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Office 365 Microsoft 365 Defender
-description: '[セキュリティとコンプライアンス] センターから Office 365への変更点についてMicrosoft 365 Defender。'
+description: セキュリティ コンプライアンス センターからコンプライアンス センターへの&についてMicrosoft 365 Defender。
 keywords: Microsoft 365、 Microsoft 365 Defender、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、単一ウィンドウのガラス、新しいセキュリティ ポータル、新しいセキュリティ ポータル
 ms.date: 02/21/2021
 ms.author: tracyp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 15b1b152966c9c09bf77bea15b9b651f739c3566
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 219689783dbd98c1b6dfa09a2164cc4d350ffd9c
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028957"
+ms.locfileid: "53029635"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender for Office 365 Microsoft 365 Defender
 
@@ -34,13 +34,13 @@ ms.locfileid: "53028957"
 
 ## <a name="quick-reference"></a>クイック リファレンス
 
-次の表に、コンプライアンス センターとコンプライアンス センターの間Office 365の&を示Microsoft 365 Defender。
+次の表に、セキュリティ センターとコンプライアンス センターとセキュリティ &の間Microsoft 365 Defender。
 
 <br>
 
 ****
 
-|[Office 365セキュリティ &コンプライアンス](https://protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)|[Exchange 管理センター](https://admin.exchange.microsoft.com/#/)|
+|[セキュリティ/コンプライアンス センター](https://protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)|[Exchange 管理センター](https://admin.exchange.microsoft.com)|
 |---|---|---|---|
 |アラート|<ul><li>[アラート ポリシー](https://security.microsoft.com/alertpolicies)</li><li>[インシデント&アラート](https://security.microsoft.com/alerts)</li></ul>|[[アラート] ページ](https://compliance.microsoft.com/homepage)||
 |分類||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
@@ -56,10 +56,11 @@ ms.locfileid: "53028957"
 |サービス アシュアランス||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |監督||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |電子情報開示||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
+|||||
 
-[Microsoft 365 Defender、](./overview-security-center.md)コンプライアンス センターなどの既存の Microsoft セキュリティ ポータルのセキュリティ機能Office 365 <https://security.microsoft.com> 組&します。 この強化されたセンターは、セキュリティ チームが脅威から組織を効果的かつ効率的に保護するのに役立ちます。
+[Microsoft 365 Defender](./overview-security-center.md)既存の Microsoft セキュリティ ポータルのセキュリティ機能 (セキュリティ コンプライアンス センターなど) を& <https://security.microsoft.com> します。 この強化されたセンターは、セキュリティ チームが脅威から組織を効果的かつ効率的に保護するのに役立ちます。
 
-Office 365 セキュリティとコンプライアンス ポータル (protection.office.com) について理解している場合は、Microsoft 365 Defender の変更点と改善点について説明します。
+セキュリティ & コンプライアンス センター (protection.office.com) について理解している場合、この記事では、セキュリティ コンプライアンス センターの変更とMicrosoft 365 Defender。
 
 利点の詳細: [Microsoft 365 Defender](overview-security-center.md)概要
 
@@ -92,7 +93,7 @@ Defender for Office 365メール メッセージ、リンク (URL)、および�
 
 [カスタム検出ルールは](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) 、高度な検索クエリから構築して、侵害アクティビティや誤った構成済みデバイスを示す可能性があるイベントを事前に監視するのに役立ちます。
 
-Microsoft Defender での[高度な検索の](advanced-hunting-example.md)例を次に示Office 365。  
+Microsoft Defender での[高度な検索の](advanced-hunting-example.md)例を次に示Office 365。
 
 ### <a name="action-center"></a>アクション センター
 
@@ -114,11 +115,11 @@ Microsoft Defender での[高度な検索の](advanced-hunting-example.md)例を
 
 ### <a name="email--collaboration"></a>メールと共同作業
 
-ユーザーのメールへの脅威を追跡および調査し、キャンペーンなどを追跡します。 Office 365 セキュリティ/コンプライアンス センターをご利用の場合は、使い慣れたものになっています。
+ユーザーのメールへの脅威を追跡および調査し、キャンペーンなどを追跡します。 コンプライアンス センターでセキュリティ &使用している場合、これはよく知られていると思います。
 
 :::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="[電子メール] のサイド リンク & (または MSDO) は、メール の左側Microsoft 365 Defender。":::
 
-#### <a name="email-entity-page"></a>[メール エンティティ] ページ 
+#### <a name="email-entity-page"></a>[メール エンティティ] ページ
 
 [[電子メール] エンティティ ページ](../office-365-security/mdo-email-entity-page.md)*は、* 過去にさまざまなページやビューに分散していた電子メール情報を統合します。 脅威と傾向に関するメールの調査結果は、*1 か所に集中しています*。 ヘッダー情報とメールプレビューは、他の便利なメール関連情報と共に同じメール ページからアクセスできます。 同様に、悪意のある添付ファイルまたは URL に対するデトネーションの状態は、同じページのタブにあります。 [メール エンティティ] ページは、管理者やセキュリティ運用チームがメールの脅威とその状態をすばやく把握し、処理を迅速に決定するのに役立ちます。
 
@@ -130,8 +131,8 @@ Microsoft Defender での[高度な検索の](advanced-hunting-example.md)例を
 
 > [!NOTE]
 > DomainKeys Identified Mail (DKIM) は、宛先メール システムがカスタム ドメインから送信されたメッセージを信頼します。
-> Defender for Office 365 では、Microsoft 365 Defender: を使用して DKIM キーを管理および回転したり、ポリシー & ルールの脅威ポリシー <https://security.microsoft.com/threatpolicy>  \>  \> **DKIM** に移動したりできます。
-> 
+> Office 365 ユーザーの Defender では、Microsoft 365 Defender:を使用して DKIM キーを管理および回転したり、[ポリシー & ルールの脅威ポリシールール] セクション <https://security.microsoft.com/threatpolicy>  \>  \> \>  \> **DKIM** に移動したりできます。
+>
 > 詳細については [、「DKIM を使用してカスタム](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)ドメインから送信される送信メールを検証する」を参照してください。
 
 ## <a name="whats-changed"></a>変更内容
@@ -145,7 +146,7 @@ Microsoft Defender での[高度な検索の](advanced-hunting-example.md)例を
 |分野|変更の説明|
 |---|---|
 |[調査](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|[Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) および[Defender for Endpoint](../defender-endpoint/automated-investigations.md)の AIR 機能を 1 つにまとめます。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。|
-|[アラート キュー](../../compliance/alert-policies.md)|[**セキュリティとコンプライアンス]** センターの [Office通知の表示] フライアウト ウィンドウに、ユーザーへのリンクMicrosoft 365 Defender。 [アラート ページを開 **く] リンクをクリック** して、Microsoft 365 Defender開きます。 通知キュー内の Office 365 をクリックすると、**[通知の表示]** ページにアクセスできます。|
+|[アラート キュー](../../compliance/alert-policies.md)|セキュリティ **コンプライアンス センターの**[通知の表示] &ウィンドウに、ユーザーへのリンクMicrosoft 365 Defender。 [アラート ページを開 **く] リンクをクリック** して、Microsoft 365 Defender開きます。 通知キュー内の Office 365 をクリックすると、**[通知の表示]** ページにアクセスできます。|
 |[攻撃シミュレーション トレーニング](../office-365-security/attack-simulation-training-insights.md)|攻撃シミュレーション トレーニングを使用して、組織内で現実的な攻撃シナリオを実行します。 これらのシミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、従業員をトレーニングするのに役立ちます。 攻撃シミュレーション トレーニングには、より多くのオプション、強化されたレポート、および強化されたトレーニング フローおよび配信と管理がより容易になったトレーニングシナリオが含まれています。|
 |
 
@@ -172,11 +173,11 @@ Microsoft Defender での[高度な検索の](advanced-hunting-example.md)例を
 
 **ガイド 付 ツアー** を使用して、エンドポイントまたはメールと共同作業のページのクイック ツアーを見ることができます。 ここに表示される内容は、ライセンスが、Defender for Office 365、 Defender for Endpoint のどちらか、または両方をお持ちの場合によって異なる点に注意してください。
 
-**Office 365 セキュリティ/コンプライアンス センター** のリンクも異なります。 最後のリンクは、最近の更新プログラムを表示する **[新機能]** ページへのリンクです。
+また、比較のためにセキュリティ コンプライアンス センター **&リンクも** 含まれています。 最後のリンクは、最近の更新プログラムを表示する **[新機能]** ページへのリンクです。
 
 ## <a name="related-information"></a>関連情報
 
-- [Office 365 セキュリティ/コンプライアンス センターを Microsoft 365 Defender にリダイレクトする](microsoft-365-security-mdo-redirection.md)
+- [セキュリティ & コンプライアンス センターをコンプライアンス センターにMicrosoft 365 Defender](microsoft-365-security-mdo-redirection.md)
 - [アクション センター](./m365d-action-center.md)
 - [メールと共同作業の通知](../../compliance/alert-policies.md#default-alert-policies)
 - [カスタム検出ルール](/microsoft-365/security/defender-endpoint/custom-detection-rules)
