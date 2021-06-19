@@ -34,6 +34,8 @@
           href: service-description/device-services.md
         - name: デバイス プロファイル
           href: service-description/profiles.md
+        - name: デバイス展開グループ
+          href: service-description/deployment-groups.md
         - name: デバイス構成
           href: service-description/device-policies.md
         - name: セキュリティ技術
@@ -157,6 +159,8 @@
           href: working-with-managed-desktop/work-with-app-control.md
         - name: デバイス プロファイルを変更する
           href: working-with-managed-desktop/change-device-profile.md
+        - name: デバイスを展開に割り当てる
+          href: working-with-managed-desktop/assign-deployment-group.md
         - name: デバイスの削除
           href: working-with-managed-desktop/remove-devices.md
         - name: 構成可能な設定

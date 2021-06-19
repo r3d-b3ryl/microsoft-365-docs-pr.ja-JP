@@ -1,14 +1,14 @@
-- name: Microsoft Viva Learning (プレビュー)
+- name: Microsoft Viva ラーニング (プレビュー)
   href: index.md
-- name: ビバ ラーニングの使用を開始する (プレビュー)
+- name: Microsoft Viva ラーニング (プレビュー) で始めましょう
   items:
-    - name: ビバ ラーニング (プレビュー) の概要
+    - name: Microsoft Viva ラーニング (プレビュー) の概要
       href: overview-viva-learning.md
-- name: 設定と管理
+- name: セットアップと管理
   items:
-    - name: 管理センターでTeamsする
+    - name: Microsoft Teams 管理センターでセットアップする
       href: set-up-teams-admin-center.md
-    - name: 学習コンテンツ ソースの構成
+    - name: 学習コンテンツ ソースを構成する
       href: content-sources-365-admin-center.md
-    - name: コンテンツ SharePointとして構成する
+    - name: Microsoft Office SharePoint Online をコンテンツ ソースとして構成する
       href: configure-sharepoint-content-source.md
