@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bdb1e16c20b623934bb4fb994fcb8c6ef5f5ff0
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 81a45f6839538118c5413c1f5fc09e0cd19903a0
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028471"
+ms.locfileid: "53029875"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -96,9 +96,9 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Microsoft Defender for Office 365 のポリシーを構成する
 
-Microsoft Defender for Office 365 を使用して、組織のセキュリティ チームは、Microsoft 365 Defender でポリシーを定義することにより、保護を構成できます (<https://security.microsoft.com> \> **[メールとコラボレーション]** \> **[ポリシーとルール]** に移動します)。
+Microsoft Defender for Office 365 を使用していると、組織のセキュリティ チームは、Microsoft 365 Defender ポータルでポリシーを定義することにより、保護を構成できます (<https://security.microsoft.com> \> **[メールとコラボレーション]** \> **[ポリシーとルール]** に移動します)。
 
-[このビデオ](https://www.youtube.com/watch?v=vivvTmWJ_3c)を見て詳細をご確認ください。 
+[このビデオ](https://www.youtube.com/watch?v=vivvTmWJ_3c)を見て詳細をご確認ください。
 
 > [!TIP]
 > 定義するポリシーの簡便なリストについては、「[脅威から保護する](protect-against-threats.md)」を参照してください。
@@ -113,11 +113,11 @@ Microsoft Defender for Office 365 を使用して、組織のセキュリティ 
 
 - **[SharePoint、OneDrive、Microsoft Teams 用の 安全な添付ファイル](mdo-for-spo-odb-and-teams.md)**: チーム サイトやドキュメント ライブラリ内で悪意のあるファイルを特定してブロックすることで、ユーザーが共同作業でファイルを共有する際に組織を保護します。 詳細については、「[SharePoint、OneDrive、Microsoft の Defender for Office 365 を有効にする](turn-on-mdo-for-spo-odb-and-teams.md)」を参照してください。
 
-- **[Defender for Office 365 のフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: ユーザー、内部およびカスタム ドメインの偽装を検出します。 この機能は、コンピューターの学習モデルや高度な偽装検出アルゴリズムを適用してフィッシング攻撃に回避します。 詳細については、「[Microsoft Defender for Office 365 のフィッシング詐欺対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)」を参照してください。
+- **[Defender for Office 365 のフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: ユーザー、内部およびカスタム ドメインの偽装を検出します。 この機能は、コンピューターの学習モデルや高度な偽装検出アルゴリズムを適用してフィッシング攻撃に回避します。 詳細については、「[Microsoft Defender for Office 365 のフィッシング詐欺対策ポリシーを構成する](configure-mdo-anti-phishing-policies.md)」を参照してください。
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Microsoft Defender for Office 365 レポートを表示する
 
-Microsoft Defender for Office 365 には、Defender for Office 365 のパフォーマンスを監視するための高度な[レポート ダッシュボード](view-reports-for-mdo.md)が含まれています。 Microsoft 365 Defender ポータルの **[レポート]** \> **[ダッシュ ボード]** でアクセスできます。
+Microsoft Defender for Office 365 には、Defender for Office 365 を監視するための[レポート](view-reports-for-mdo.md)が含まれています。 レポートには、Microsoft 365 Defender ポータルの **レポート** \> **電子メール & コラボレーション** \> **電子メール & コラボレーション レポート** または <https://security.microsoft.com/securityreports>で直接アクセスできます。
 
 レポートはリアルタイムで更新され、最新の分析情報を提供します。 また、これらのレポートは推奨事項を提供し、間近に迫った脅威を警告します。 定義済みレポートには次のものが含まれます:
 
@@ -141,16 +141,19 @@ Microsoft Defender for Office 365 プラン 2 には、組織のセキュリテ�
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Microsoft Defender for Office 365 の機能を使用するために必要な権限
 
-Microsoft 365 Defender で Microsoft Defender for Office 365 機能にアクセスするには、適切な役割が割り当てられている必要があります。次のテーブルに例がいくつか示されています。
+Microsoft Defender for Office 365 の機能にアクセスするには、適切な役割が割り当てられている必要があります。次のテーブルに例がいくつか示されています。
+
+<br>
+
+****
 
 |役割または役割グループ|追加情報|
 |---|---|
-|グローバル管理者 (Azure Active Directory または Microsoft 365 Defender で割り当てることができます)|[Microsoft 365 管理者ロールについて](../../admin/add-users/about-admin-roles.md)|
-|セキュリティ管理者 (Azure Active Directory または Microsoft 365 Defender で割り当てることができます)|[Azure Active Directory での管理者ロールのアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Microsoft 365 Defender のアクセス許可](permissions-in-the-security-and-compliance-center.md)|
-|Exchange Online 組織管理 (Exchange Online で割り当てることができます)|[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online の PowerShell](/powershell/exchange/exchange-online-powershell)|
-|検索と消去 (Microsoft 365 Defender でのみ割り当てることができます)|[Microsoft 365 Defender のアクセス許可](permissions-in-the-security-and-compliance-center.md)|
-
-詳細については、「[Microsoft 365 Defender のアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+|グローバル管理者 (組織管理)|このロールは、Azure Active Directory または Microsoft 365 Defender ポータルで割り当てることができます。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。|
+|セキュリティ管理者|このロールは、Azure Active Directory または Microsoft 365 Defender ポータルで割り当てることができます。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。|
+|Exchange Online の組織の管理|[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online の PowerShell](/powershell/exchange/exchange-online-powershell)|
+|検索と消去|このロールは、Microsoft 365 Defender ポータルまたはMicrosoft 365 コンプライアンス センターでのみ使用できます。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」および「[Microsoft 365 コンプライアンス センターのアクセス許可](../../compliance/microsoft-365-compliance-center-permissions.md)」を参照してください。|
+|||
 
 ## <a name="get-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 を取得する
 
@@ -177,4 +180,3 @@ Microsoft Defender for Office 365 には継続的に新機能が追加されて�
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 - [Microsoft 365 Defender での自動調査および対応 (AIR)](../defender/m365d-autoir.md)
-
