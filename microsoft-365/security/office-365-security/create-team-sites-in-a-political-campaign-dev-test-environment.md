@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: '概要: 選挙運動用の開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f680cfb30de5b6904e5fa489cca368550195b4f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ba0eb1e3ff0539f9aec6993fb25fe576f08f84d5
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205979"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028777"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>選挙運動用の開発/テスト環境でチーム サイトを作成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "51205979"
 **適用対象**
 
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
-- 
+
  **概要:** 選挙運動用の開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。 
    
 この記事に示した手順を使用して、「[選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)」のソリューションに対応した 4 種類の SharePoint Online チーム サイトを含む開発/テスト環境を作成してください。これらのサイトについての詳細は、トピック 10 のタイトル「**SharePoint および OneDrive for Business**」を参照してください。
@@ -46,7 +46,7 @@ ms.locfileid: "51205979"
 
 このフェーズでは、SharePoint Online チーム サイトのドキュメント フォルダーに対してさまざまなセキュリティ レベルのラベルを作成します。
 
-1. 必要に応じて、試用版サブスクリプション用の全体管理者アカウントの資格情報で管理センターにサインインします。 詳細については、「[一般法人向け Microsoft 365 にサインインする場所](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. 必要に応じて、管理センターに、試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。ヘルプについては、「[Microsoft 365 にサインインする場所](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
 
 2. **[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。
 

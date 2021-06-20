@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 8c19853730376e36ffe7ac136e7fc6036b8b5f12
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694403"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028981"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -163,20 +163,6 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
     - Android: まだサポートされていません
 
 このプレビューでの既知の制限事項は以下のとおりです。
-
-- この機能は現在、一部のテナントにロールアウト中です。 ユーザーがサイトにアクセスしたときに選択済みの認証コンテキストを含む条件付きアクセス ポリシーが有効でない場合は、PowerShell を使用してお使いの構成が適切で必要条件を満たしていることを確認します。 サイトから秘密度ラベルを削除し、次に現在の [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) で [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) コマンドレットを使用してサイトを認証コンテキスト向けに構成する必要があります。 このメソッドが機能する場合は、もう一度秘密度ラベルを適用することを試す前に数日待ちます。
-    
-    PowerShell を使用して認証コンテキストをテストするには、次のようにします。
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
-    ```
-    
-    認証コンテキストを削除し、秘密度ラベルの適用を再度試して見る場合は、以下のようになります。
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
-    ```
 
 - OneDrive 同期アプリについては、OneDrive のみサポートし、他のサイトはサポートしていません。
 
@@ -429,13 +415,19 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
 誰かが機密ラベルで保護されているサイトにドキュメントをアップロードし、そのドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも[優先度が高く](sensitivity-labels.md#label-priority-order-matters)なっている場合、このアクションはブロックされません。 たとえば、「**一般**」ラベルを SharePoint サイトに適用し、誰かがこのサイトに「**社外秘**」というラベルの付けられたドキュメントをアップロードしたとします。 優先度の高い機密ラベルは、優先順位の低いコンテンツよりも機密性の高いコンテンツを識別するため、この状況はセキュリティ上の懸念になる可能性があります。
 
-アクションはブロックされていませんが、監査され、ドキュメントをアップロードした人とサイト管理者にメールが自動的に生成されます。 結果として、ユーザーと管理者の両方が、この不適切なラベルの優先順位を設定し、必要に書類を特定することができます。 たとえば、アップロードされたドキュメントをサイトから削除または移動します。
+アクションはブロックされていませんが、監査され、既定で、ドキュメントをアップロードした人とサイト管理者にメールが自動的に生成されます。 結果として、ユーザーと管理者の両方が、この不適切なラベルの優先順位を設定し、必要に書類を特定することができます。 たとえば、アップロードされたドキュメントをサイトから削除または移動します。
 
 ドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも優先度が低い場合、セキュリティ上の懸念にはなりません。 たとえば、「**一般**」というラベルの付いたドキュメントが、「**社外秘**」というラベルの付いたサイトにアップロードされている場合です。 このシナリオでは、監査イベントとメールが生成されません。
 
 このイベントの監査ログを検索するには、[**ファイルとページのアクティビティ**] カテゴリから [**検出されたドキュメントの機密度の不一致**] を探します。
 
 自動生成されたメールには、サブジェクト **の互換性がない秘密度ラベルが検出されました** とメールメッセージは、アップロードされたドキュメントとサイトへのリンクとのラベルの不一致を説明します。 ユーザーが感度ラベルを変更できるようにするドキュメントリンクも含まれています。 現在、これらの自動メールは無効にすることも、カスタマイズすることができません。
+
+この自動生成されたメールを防ぐには、[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) から次の PowerShell コマンドを使用します。
+
+```PowerShell
+Set-SPOTenant -BlockSendLabelMismatchEmail $True
+```
 
 サイトまたはグループに対して、または、ある人が機密ラベルを追加または削除する場合、これらのアクティビティも監査されますが、メールは自動的に生成されません。
 

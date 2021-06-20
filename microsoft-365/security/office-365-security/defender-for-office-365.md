@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 00dcd5d8f5d18b59de67318049cc1e5807451f14
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 8bdb1e16c20b623934bb4fb994fcb8c6ef5f5ff0
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022356"
+ms.locfileid: "53028471"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -96,7 +96,7 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Microsoft Defender for Office 365 のポリシーを構成する
 
-Microsoft Defender for Office 365 を使用して、組織のセキュリティ チームは、セキュリティ/コンプライアンス センターでポリシーを定義することにより、保護を構成できます ([<https://protection.office.com> \> **脅威管理** \> **ポリシー**] に移動します)。
+Microsoft Defender for Office 365 を使用して、組織のセキュリティ チームは、Microsoft 365 Defender でポリシーを定義することにより、保護を構成できます (<https://security.microsoft.com> \> **[メールとコラボレーション]** \> **[ポリシーとルール]** に移動します)。
 
 [このビデオ](https://www.youtube.com/watch?v=vivvTmWJ_3c)を見て詳細をご確認ください。 
 
@@ -117,7 +117,7 @@ Microsoft Defender for Office 365 を使用して、組織のセキュリティ 
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Microsoft Defender for Office 365 レポートを表示する
 
-Microsoft Defender for Office 365 には、Defender for Office 365 のパフォーマンスを監視するための高度な[レポート ダッシュボード](view-reports-for-mdo.md)が含まれています。 セキュリティ/コンプライアンス センターの [**レポート**] \> [**ダッシュ ボード**] でアクセスできます。
+Microsoft Defender for Office 365 には、Defender for Office 365 のパフォーマンスを監視するための高度な[レポート ダッシュボード](view-reports-for-mdo.md)が含まれています。 Microsoft 365 Defender ポータルの **[レポート]** \> **[ダッシュ ボード]** でアクセスできます。
 
 レポートはリアルタイムで更新され、最新の分析情報を提供します。 また、これらのレポートは推奨事項を提供し、間近に迫った脅威を警告します。 定義済みレポートには次のものが含まれます:
 
@@ -141,16 +141,16 @@ Microsoft Defender for Office 365 プラン 2 には、組織のセキュリテ�
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Microsoft Defender for Office 365 の機能を使用するために必要な権限
 
-セキュリティ/コンプライアンス センターで Microsoft Defender for Office 365 機能にアクセスするには、適切な役割が割り当てられている必要があります。次のテーブルに例がいくつか示されています。
+Microsoft 365 Defender で Microsoft Defender for Office 365 機能にアクセスするには、適切な役割が割り当てられている必要があります。次のテーブルに例がいくつか示されています。
 
 |役割または役割グループ|追加情報|
 |---|---|
-|グローバル管理者 (Azure Active Directory またはセキュリティ/コンプライアンス センターで割り当てることができます)|[Microsoft 365 管理者ロールについて](../../admin/add-users/about-admin-roles.md)|
-|セキュリティ管理者 (Azure Active Directory またはセキュリティ/コンプライアンス センターで割り当てることができます)|[Azure Active Directory での管理者役割のアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)|
+|グローバル管理者 (Azure Active Directory または Microsoft 365 Defender で割り当てることができます)|[Microsoft 365 管理者ロールについて](../../admin/add-users/about-admin-roles.md)|
+|セキュリティ管理者 (Azure Active Directory または Microsoft 365 Defender で割り当てることができます)|[Azure Active Directory での管理者ロールのアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Microsoft 365 Defender のアクセス許可](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online 組織管理 (Exchange Online で割り当てることができます)|[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online の PowerShell](/powershell/exchange/exchange-online-powershell)|
-|検索と消去 (セキュリティ/コンプライアンス センターでのみ割り当てることができます)|[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)|
+|検索と消去 (Microsoft 365 Defender でのみ割り当てることができます)|[Microsoft 365 Defender のアクセス許可](permissions-in-the-security-and-compliance-center.md)|
 
-詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+詳細については、「[Microsoft 365 Defender のアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 ## <a name="get-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 を取得する
 
@@ -176,4 +176,5 @@ Microsoft Defender for Office 365 には継続的に新機能が追加されて�
 
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-- [Microsoft 365 Defender での自動調査と応答 (AIR)](../defender/m365d-autoir.md) 1
+- [Microsoft 365 Defender での自動調査および対応 (AIR)](../defender/m365d-autoir.md)
+

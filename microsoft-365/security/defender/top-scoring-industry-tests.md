@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d7625c5a577ff01544a2602092c4ee34875efdb6
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934395"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028501"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップ スコア
 
@@ -43,7 +43,7 @@ MITRE のテストアプローチの中心は、現実世界の攻撃をエミ�
 
 - Microsoft 365 Defender の ATT&CK ベースの 評価 - 2020 年 5 月: [現実世界での検出において先導的立場](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft 365 Defender は、攻撃チェーンのステージ全体で 100% 近くをカバーしました。 攻撃者のアクティビティに対して、先進的で実用的な可視性を提供しました。 可視性によって、特定の構成変更に依存していたセキュリティ運用センターおよびベンダー ソリューションの手動作業が大幅に削減されます。 また、Microsoft 365 Defender では、可視性のギャップ数が最も少なく、攻撃者が検出されないまま攻撃を行う能力が低下しました。
+ Microsoft 365 Defender は、攻撃チェーンのステージ全体で 100% 近くをカバーしました。 攻撃者のアクティビティに対して、先進的で実用的な可視性を提供しました。 可視性によって、特定の構成変更に依存していたセキュリティ運用センターおよびベンダー ソリューションの手動作業が大幅に削減されます。 また、Microsoft 365 Defender では、可視性のギャップ数が最も少なく、攻撃者が検出されないまま攻撃を行う能力が低下しました。
 
 ## <a name="next-generation-protection"></a>次世代の保護
 
@@ -89,7 +89,7 @@ SE ラボでは、製品やサービスで使用されている攻撃を検出�
 
 - エンタープライズ エンドポイントの保護: 2020 年 10 月から 12 月: [AAA 賞](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**最新**</sup>
 
-    Microsoft の次世代保護製品は、すべてのパブリックおよびターゲットを対象とした攻撃を停止しました。 Microsoft Defender ウイルス対策は、悪意のある URL のブロック、搾取の処理、正当なアプリケーションと Web サイトの適切な分類を行う能力を発揮して、このような適切な結果を達成しました。
+    Microsoft の次世代保護製品は、すべてのパブリックおよびターゲットを対象とした攻撃を停止しました。Microsoft Defender ウイルス対策は、悪意のある URL のブロック、搾取の処理、正当なアプリケーションと Web サイトの適切な分類を行う能力を発揮して、このような適切な結果を達成しました。
 
 - エンタープライズ エンドポイントの保護: 2020 年 7 月～ 9 月: [AAA 賞](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 
