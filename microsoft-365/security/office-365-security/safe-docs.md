@@ -16,12 +16,12 @@ ms.collection:
 description: 詳細については、「セーフドキュメント」または「Microsoft 365 E5」をMicrosoft 365 E5 Security。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1186c7856d0b979c483cf6dd1c0a010ab582e2ce
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 1049543b11ad14eeeed596367228f025cc8edd65
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644754"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054430"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 
@@ -32,17 +32,17 @@ ms.locfileid: "51644754"
 
 セーフドキュメントは Microsoft 365 E5 または Microsoft 365 E5 Security の機能で[、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)を使用して、保護ビューまたは Application Guard[](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)で開いている[](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)ドキュメントとファイルをスキャンOffice。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - セーフドキュメントは、ライセンスまたはライセンスを持 *Microsoft 365 E5ユーザー* *Microsoft 365 E5 Security* 使用できます。 これらのライセンスは、Microsoft Defender のプランに含Office 365ではありません。
 
 - セーフドキュメントは、Microsoft 365 Apps for enterprise (以前は Office 365 ProPlus) バージョン 2004 以降でサポートされています。
 
-- <https://protection.office.com> でセキュリティ/コンプライアンス センターを開きます。 [ATP ファイルの添付ファイル] ページ **に直接移動セーフ開** きます <https://protection.office.com/safeattachmentv2> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [添付ファイル] ページに **直接移動セーフを** 使用します <https://security.microsoft.com/safeattachmentv2> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-- この記事の手順を実行する際には、あらかじめ **Exchange Online** でアクセス許可を割り当てる必要があります。
+- この記事の **手順をExchange Online** 前に、アクセス許可が必要です。
   - ドキュメントのセーフ構成するには、組織の管理役割グループまたはセキュリティ管理者役割グループ **のメンバーである** 必要があります。 
   - ドキュメント設定への読み取りセーフアクセスするには、グローバル リーダーまたはセキュリティ リーダーの役割グループのメンバー **である** 必要があります。
 
@@ -60,19 +60,19 @@ ms.locfileid: "51644754"
 
 ドキュメントから送信セーフは、分析に必要な時間 (通常は 24 時間未満) を超えて Defender に保持されません。
 
-## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>コンプライアンス センターのセキュリティ &を使用して、ドキュメントセーフ構成する
+## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>ドキュメントを構成Microsoft 365 Defenderするには、セーフを使用します。
 
-1. セキュリティ セキュリティ コンプライアンス センター&に移動し、[脅威管理ポリシー ATP セーフ添付ファイル] に移動し、[グローバル \>  \> **設定**]**をクリックします**。
+1. [メール] Microsoft 365 Defenderを開き、[メール &**ポリシー** ] &[脅威ポリシーポリシー] セクションの [添付ファイル] に \>  \>  \>  \> **セーフします**。
 
-2. [グローバル **設定] が** 表示されたら、次の設定を構成します。
+2. [添付ファイル **セーフ] ページで**、[グローバル設定]**をクリックします**。
 
+3. [グローバル **設定] が** 表示されたら、次の設定を構成します。
    - **[クライアントセーフドキュメントOfficeオン** にする: トグルを右に移動して機能を有効にします。トグルを ![ オンにします ](../../media/scc-toggle-on.png) 。
-
-   - **セーフ Documents** がファイルを悪意のあるファイルと識別した場合でも、保護されたビューをクリックすることを許可する: このオプションをオフのままにすることをお勧めします (トグルは左に切り替えます。 ![ ](../../media/scc-toggle-off.png)
+   - **セーフ ドキュメント** がファイルを悪意のあるファイルと特定した場合でも、保護されたビューをクリックすることを許可する: このオプションはオフのままにすることをお勧めします (トグルは左に切り替えます。 ![ ](../../media/scc-toggle-off.png)
 
    完了したら、**[保存]** をクリックします。
 
-   ![セーフ[添付ファイル] ページで [グローバル設定] を選択した後セーフ設定します。](../../media/safe-docs.png)
+   ![セーフ[添付ファイル] ページで [グローバル設定] を選択した後セーフ設定します。](../../media/safe-docs-global-settings.png)
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>PowerShell Exchange Onlineを使用してドキュメントセーフ構成する
 
@@ -95,15 +95,15 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 ### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>Microsoft Defender for Endpoint Service にオンボードして監査機能を有効にする
 
-Microsoft Defender for Endpoint を展開するには、展開のさまざまなフェーズを実行する必要があります。 オンボーディング後、コンプライアンス センターのセキュリティ サーバーで監査&構成できます。
+Microsoft Defender for Endpoint を展開するには、展開のさまざまなフェーズを実行する必要があります。 オンボーディングの後、監査機能をポータルで構成Microsoft 365 Defenderできます。
 
-詳細については [、「Onboard to the Microsoft Defender for Endpoint service」を参照してください](/microsoft-365/security/defender-endpoint/onboarding)。 その他のヘルプが必要な場合は [、「Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング」を参照してください](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)。
+詳細については [、「Onboard to the Microsoft Defender for Endpoint service」を参照してください](/microsoft-365/security/defender-endpoint/onboarding)。 その他のヘルプが必要な場合は、「Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング [」を参照してください](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)。
 
 ### <a name="how-do-i-know-this-worked"></a>設定が適用されたことを確認する方法
 
 ドキュメントを有効にし、構成セーフするには、次の手順を実行します。
 
-- セキュリティ & コンプライアンス センターで、[脅威管理ポリシー  ATP セーフ 添付ファイル] に移動し、[グローバル設定] をクリックし \>  \> **、[Office** クライアントの セーフ ドキュメントを有効にする] と [セーフ ドキュメントがファイルを悪意のある設定として識別した場合でも、保護されたビューをクリックするユーザーを許可する] を確認します。
+- Microsoft 365 Defender ポータルで、[メール **&** コラボレーション ポリシー & ルール 脅威ポリシー ポリシー] セクション セーフ 添付ファイルグローバル設定] に移動し \>  \>  \>  \>  \> **、[Office** クライアントの セーフ ドキュメントを有効にする] と [セーフ ドキュメントがファイルを悪意のある設定として識別した場合でも、保護されたビューをクリックするユーザーを許可する] を確認します。
 
 - PowerShell で次のコマンドをExchange Onlineし、プロパティの値を確認します。
 

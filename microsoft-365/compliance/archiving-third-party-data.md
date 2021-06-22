@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータを、ユーザーのメールボックスにインポートするMicrosoft 365します。
-ms.openlocfilehash: a51b298b934431a1be8a416dac1f831ddaca5ffe
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861205"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054779"
 ---
 # <a name="archive-third-party-data"></a>サード パーティのデータをアーカイブする
 
@@ -35,7 +35,7 @@ Microsoft 365を使用すると、管理者はデータ コネクタを使用し
 
 ## <a name="third-party-data-connectors"></a>サードパーティのデータ コネクタ
 
-次の表に、コンプライアンス センターで使用できるサード パーティMicrosoft 365示します。 また、この表では、サードパーティのデータをインポートおよびアーカイブした後に、サードパーティのデータに適用できるコンプライアンス ソリューションMicrosoft 365。 各コンプライアンス [ソリューションの詳細](#overview-of-compliance-solutions-that-support-third-party-data) と、サード パーティのデータに対するメリットの詳細については、次のセクションを参照してください。
+次の表に、アプリケーション で使用できるサード パーティ製のデータ コネクタMicrosoft 365 コンプライアンス センター。 また、この表では、サードパーティのデータをインポートおよびアーカイブした後に、サードパーティのデータに適用できるコンプライアンス ソリューションMicrosoft 365。 各コンプライアンス [ソリューションの詳細](#overview-of-compliance-solutions-that-support-third-party-data) と、サード パーティのデータに対するメリットの詳細については、次のセクションを参照してください。
 
 > [!TIP]
 > [サード パーティ製データ] **列** のリンクをクリックして、そのデータ型のコネクタを作成するための手順を実行します。
@@ -69,8 +69,11 @@ Microsoft 365を使用すると、管理者はデータ コネクタを使用し
 |[ロイター FX <sup>2</sup>](archive-reutersfx-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Salesforce Chatter <sup>2</sup>](archive-salesforcechatter-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
+|[信号 <sup>1</sup>](archive-signal-archiver-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Skype for Business <sup>2</sup>](archive-skypeforbusiness-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Slack 電子情報開示 <sup>2</sup>](archive-slack-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[シンフォ <sup>ニー 2</sup>](archive-symphony-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Telegram <sup>1</sup>](archive-telegram-archiver-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[TELUS ネットワーク <sup>1</sup>](archive-telus-network-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[テキストで区切られた <sup>2</sup>](archive-text-delimited-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
@@ -134,12 +137,12 @@ Microsoft 365を使用すると、管理者はデータ コネクタを使用し
 |TeleMessage データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |Android Archiver | はい | いいえ | いいえ |
-|AT&T 携帯ショートメール/MMS ネットワーク アーカイブ | はい | いいえ | いいえ |
-|Bell 携帯ショートメール/MMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|AT&T SMS/MMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|Bell SMS/MMS ネットワーク アーカイブ | はい | いいえ | いいえ |
 |EnterpriseNumber Archiver | はい | いいえ | いいえ |
-|O2 携帯ショートメールおよび音声ネットワーク アーカイブ | はい         | いいえ | いいえ |
-|TELUS 携帯ショートメール ネットワーク アーカイブ | はい | いいえ | いいえ |
-|Verizon 携帯ショートメール/MMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
+|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
 |WeChat Archiver | はい | いいえ | いいえ |
 |WhatsApp Archiver | はい | いいえ | いいえ |
 |||||

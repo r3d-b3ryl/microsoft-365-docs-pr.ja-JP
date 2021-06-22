@@ -20,12 +20,12 @@ ms.collection:
 description: 管理者は、セキュリティ設定を昇格し、組織の優先度アカウントに関するレポート、アラート、および調査をMicrosoft 365できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73be3832b2391b6f47e4c796daf76c884a17dcdd
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: e7617dd5af6a7e3b66fb33818208f01c8d8a338e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632223"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055259"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>優先アカウントのセキュリティMicrosoft 365
 
@@ -36,6 +36,8 @@ ms.locfileid: "51632223"
 Microsoft 365 Microsoft Defender for Office 365には、優先度アカウントに追加のセキュリティ層を提供するいくつかの主要な機能が含まれている必要があります。 この記事では、これらの機能とそれらを使用する方法について説明します。
 
 ![アイコン フォームのセキュリティ推奨事項の概要](../../media/security-recommendations-for-priority-users.png)
+
+<br>
 
 ****
 
@@ -61,7 +63,7 @@ Microsoft 365 Microsoft Defender for Office 365には、優先度アカウント
 
 - Exchange Online で[](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)認証ポリシーとクライアント[](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)アクセス ルールを使用して、特定のユーザーに対して POP3、IMAP4、認証された SMTP のような基本認証およびレガシ認証プロトコルをブロックまたは許可できます。
 
-- 個々のメールボックスで POP3 および IMAP4 アクセスを無効にできます。 組織レベルで認証済み SMTP を無効にし、必要な特定のメールボックスで有効にできます。 手順については、次のトピックを参照してください。
+- 個々のメールボックスで POP3 および IMAP4 アクセスを無効にできます。 組織レベルで認証済み SMTP を無効にし、必要な特定のメールボックスで有効にできます。 手順については、次の記事を参照してください。
   - [ユーザーの POP3 または IMAP4 アクセスを有効または無効にする](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [認証されたクライアント SMTP 送信を有効または無効にする (SMTP AUTH)](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
@@ -77,7 +79,7 @@ Microsoft 365 Microsoft Defender for Office 365には、優先度アカウント
 
 事前設定されたセキュリティ ポリシーは、EOP および Defender for Office 365 のすべての保護に対して推奨される厳密なポリシー設定を適用する便利で中心的な場所です。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および[「Microsoft Defender for microsoft Defender for Office 365」 を参照してください](preset-security-policies.md)。
 
-厳密なポリシー設定が既定のポリシー設定と標準ポリシー設定とどのように異なるかについては[、「EOP](recommended-settings-for-eop-and-office365.md)および Microsoft Defender のセキュリティに関する推奨設定」をOffice 365してください。
+厳密なポリシー設定が既定のポリシー設定と標準ポリシー設定とどのように異なるかについては、「EOP および Microsoft Defender のセキュリティに関する推奨設定」[をOffice 365してください](recommended-settings-for-eop-and-office365.md)。
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>ユーザー タグを優先度アカウントに適用する
 
@@ -85,7 +87,7 @@ microsoft Defender for Office 365 Plan 2 のユーザー タグ (Microsoft 365 E
 
 **優先度アカウント** は、優先度アカウントに関連するインシデントやアラートを識別するために使用できる組み込みのユーザー タグ (システム _タグと呼_ ばれる) の一種です。 優先度アカウントの詳細については **、「優先度** アカウントの管理 [と監視」を参照してください](../../admin/setup/priority-accounts.md)。
 
-カスタム タグを作成して、優先度アカウントをさらに識別して分類することもできます。 詳細については、「ユーザー タグ [」を参照してください](user-tags.md)。 カスタム ユーザー タグと同じインターフェイス **で** 優先度アカウント (システム タグ) を管理できます。
+カスタム タグを作成して、優先度アカウントをさらに識別して分類することもできます。 詳細については、「ユーザー タグ [」を参照してください](user-tags.md)。 優先度アカウント ( **システム タグ** ) は、カスタム ユーザー タグと同じインターフェイスで管理できます。
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>アラート、レポート、検出の優先度アカウントを監視する
 
@@ -97,8 +99,8 @@ microsoft Defender for Office 365 Plan 2 のユーザー タグ (Microsoft 365 E
 
 |機能|説明|
 |---|---|
-|アラート|影響を受けるユーザーのユーザー タグは、セキュリティ コンプライアンスセンターの [警告の表示] ページでフィルター&表示されます。 詳細については、「アラートの表示 [」を参照してください](../../compliance/alert-policies.md#viewing-alerts)。|
-|脅威エクスプローラー <p> リアルタイムの検出|Threat **Explorer** (Microsoft Defender for Office 365 Plan 2) またはリアルタイム検出 **(Microsoft** Defender for Office 365 Plan 1) では、ユーザー タグが [メール] グリッド ビューと [電子メールの詳細] フライアウトに表示されます。 ユーザー タグは、フィルター可能なプロパティとして使用することもできます。 詳細については、「脅威エクスプローラーの  [タグ」を参照してください](threat-explorer.md#tags-in-threat-explorer)。|
+|アラート|影響を受けるユーザーのユーザー タグは、ポータルの [通知] ページでフィルターとして表示Microsoft 365 Defenderできます。 詳細については、「アラートの表示 [」を参照してください](../../compliance/alert-policies.md#viewing-alerts)。|
+|エクスプローラー <p> リアルタイムの検出|Explorer **(Defender** for Office 365 Plan 2) またはリアルタイム検出 **(Defender** for Office 365 Plan 1) では、ユーザー タグが [メール] グリッド ビューと [電子メールの詳細] フライアウトに表示されます。 ユーザー タグは、フィルター可能なプロパティとして使用することもできます。 詳細については、「Explorer の  [タグ」を参照してください](threat-explorer.md#tags-in-threat-explorer)。|
 |キャンペーン ビュー|ユーザー タグは、Microsoft Defender のキャンペーン ビューの多くのフィルター可能なプロパティの 1 つで、Office 365 2 です。 詳細については、「キャンペーン ビュー [」を参照してください](campaigns.md)。|
 |脅威保護の状態レポート|脅威保護状態レポートの事実上すべてのビューと詳細テーブルで、優先度アカウントで結果を **フィルター処理できます**。 詳細については、「脅威保護の [状態レポート」を参照してください](view-email-security-reports.md#threat-protection-status-report)。|
 |優先度アカウントレポートの電子メールの問題|Exchange 管理センター (EAC) の [優先度アカウントの電子メールの問題] レポートには、優先度アカウントの配信不能メッセージと遅延メッセージに関する情報 **が含まれます**。 詳細については、「優先度アカウントの [電子メールの問題」レポートを参照してください](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
@@ -119,7 +121,7 @@ Microsoft 365、組織内のユーザーに通知するための次のリソー�
 |概念|リソース|説明|
 |---|---|---|
 |Microsoft 365|[カスタマイズ可能な学習経路](/office365/customlearning/)|これらのリソースは、組織内のユーザーのトレーニングをまとめる上で役立ちます。|
-|Microsoft 365 セキュリティ|[学習モジュール: 組み込みのインテリジェント なセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365)|このモジュールを使用すると、セキュリティ機能Microsoft 365機能を説明し、これらのセキュリティ機能の利点を明確にできます。|
+|Microsoft 365 セキュリティ|[ラーニングモジュール: 組み込みのインテリジェント なセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365)|このモジュールを使用すると、セキュリティ機能Microsoft 365機能を説明し、これらのセキュリティ機能の利点を明確にできます。|
 |多要素認証|[2 段階認証: 追加の検証ページとは](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|この記事は、エンド ユーザーが多要素認証とは何か、および組織で使用される理由を理解するのに役立ちます。|
 |攻撃シミュレーションのトレーニング|[攻撃シミュレーション トレーニングの使用を開始する](attack-simulation-training-get-started.md)|Microsoft Defender for Office 365 プラン 2 の攻撃シミュレーション トレーニングを使用すると、管理者は特定のユーザー グループに対するシミュレートされたフィッシング攻撃を構成、起動、追跡できます。|
 

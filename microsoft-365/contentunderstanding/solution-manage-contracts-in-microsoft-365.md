@@ -12,17 +12,17 @@ ms.collection: m365solution-managecontracts m365solution-overview
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Syntex、Microsoft 365 リスト、SharePoint、SharePoint Microsoft Teams、およびPower Automateのソリューションを使用して契約を管理する方法についてPower Automate。
-ms.openlocfilehash: 352ebd1b9170aaf7829c414e87f7a79c4f17a1df
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+description: Microsoft 365 SharePoint Syntex、Microsoft 365、SharePoint、およびMicrosoft TeamsのPower Automate。
+ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843772"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054767"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Microsoft 365 ソリューションを使用して契約を管理する
 
-この記事では、Syntex と組織のコンポーネントを使用して、組織の契約管理SharePointする方法についてMicrosoft 365。 独自のビジネス ニーズに合ったソリューションの計画と作成に役立つフレームワークを提供します。 このソリューションがビジネス ニーズ全体に合わない場合でも、カスタム契約管理ソリューションを作成する計画で、その一部を採用できます。
+この記事では、組織の契約管理ソリューションを作成する方法について説明します。SharePoint Syntexおよびコンポーネントを使用Microsoft 365。 独自のビジネス ニーズに合ったソリューションの計画と作成に役立つフレームワークを提供します。 このソリューションがビジネス ニーズ全体に合わない場合でも、カスタム契約管理ソリューションを作成する計画で、その一部を採用できます。
 
 *このコンテンツ セットは、Microsoft 365モダン ワーク ソリューション戦略チームと一緒に、Thomas Molbach が開発したソリューションを文書化しています。*
 
@@ -40,11 +40,11 @@ ms.locfileid: "52843772"
 
 ## <a name="overview-of-the-solution"></a>ソリューションの概要
 
-  ![Syntex、SharePointリストSharePoint、Teams、およびPower Automate。](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
+  ![リスト、リスト、SharePoint Syntex、SharePoint、およびTeamsを使用Power Automate。](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
 
 この契約管理ソリューション のガイダンスには、次の 4 つのコンポーネントMicrosoft 365。
 
-- **Microsoft SharePoint Syntex**: コントラクト ファイルを識別して分類し、そこから適切なデータを抽出するモデルを作成します。
+- **Microsoft SharePoint Syntex:** コントラクト ファイルを識別して分類し、そこから適切なデータを抽出するモデルを作成します。
 
 - **Microsoft SharePointリスト**: モダン リストで使用できる書式を使用SharePointビジネスに優しい形式で契約を提示します。
 
@@ -56,7 +56,7 @@ ms.locfileid: "52843772"
 
   ![ドキュメントのアップロード、データの抽出、関係者への通知、契約の承認または却下を行うワークフローを示すソリューションの図。](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. ドキュメントは、ドキュメント ライブラリSharePointアップロードされます。 Syntex SharePoint理解モデルがドキュメント ライブラリに適用されています。 各ファイルをチェックして、探すトレーニングを受けた "コントラクト" コンテンツ タイプと一致するコンテンツ タイプが一致する場合を確認します。 一致が見つかった場合は、ファイルを "コントラクト" として分類し、ドキュメントのコンテンツ タイプを更新します。
+1. ドキュメントは、ドキュメント ライブラリSharePointアップロードされます。 ドキュメント SharePoint Syntexモデルがドキュメント ライブラリに適用されています。 各ファイルをチェックして、探すトレーニングを受けた "コントラクト" コンテンツ タイプと一致するコンテンツ タイプが一致する場合を確認します。 一致が見つかった場合は、ファイルを "コントラクト" として分類し、ドキュメントのコンテンツ タイプを更新します。
 
 2. また、このモデルは、関係者が関心を持つ各契約ファイル (クライアント、請負業者、手数料の金額など) から特定のデータを *引き出します*。
 
@@ -86,6 +86,6 @@ ms.locfileid: "52843772"
 
 次のセクションでは、契約管理ソリューションを構成する方法について詳しく説明します。 次の 3 つの手順に分かれています。
 
-- [手順 1.Syntex SharePointを使用してコントラクト ファイルを識別し、データを抽出する](solution-manage-contracts-step1.md)
+- [手順 1.契約ファイルSharePoint Syntexデータの抽出に使用する方法](solution-manage-contracts-step1.md)
 - [手順 2.契約Microsoft Teamsチャネルを作成するには、次の情報を使用します。](solution-manage-contracts-step2.md)
 - [手順 3.契約Power Automate処理するフローを作成するには、次の情報を使用します。](solution-manage-contracts-step3.md)

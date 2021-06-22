@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 請求通知メールと請求書添付ファイルを受け取るユーザーを管理する方法について学習します。
 ms.date: 03/17/2021
-ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998766"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054576"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>請求通知と請求書の添付ファイルを管理する
 
@@ -37,9 +37,6 @@ ms.locfileid: "52998766"
 この記事で説明する手順を実行するには、グローバル管理者である必要があります。 課金管理者は、以下のセクションで説明されている通り、これらの変更の一部を行えます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="change-the-language-you-receive-email-in"></a>メールを受信する言語を変更する
-
-> [!NOTE]
-> 課金管理者は、このセクションの手順も実行できます。
 
 請求通知メールは、組織の優先言語で送信されます。 優先する言語を変更するには、次の手順を使用します。
 
@@ -87,6 +84,9 @@ ms.locfileid: "52998766"
 3. 右側のウィンドウで、使用するメール アドレスを入力し、[保存] を **選択します**。
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>組織の請求書をメール添付ファイルとして受け取る
+
+> [!NOTE]
+> 課金管理者は、このセクションの手順も実行できます。
 
 新しい請求書の準備ができたら、組織の請求書のコピーを PDF ファイルとして請求書通知メールに添付できます。 次の手順を使用して、添付ファイルとして請求書を受信します。
 

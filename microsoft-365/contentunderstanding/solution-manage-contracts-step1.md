@@ -1,5 +1,5 @@
 ---
-title: 手順 1. Syntex SharePointを使用してコントラクト ファイルを識別し、データを抽出する
+title: 手順 1. 契約ファイルSharePoint Syntexデータの抽出に使用する方法
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,17 +11,17 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Syntex を使用して、SharePoint ソリューションを使用してコントラクト ファイルを識別し、データを抽出するMicrosoft 365します。
-ms.openlocfilehash: b4b11b1bdb980b0ee7629af0cbecbb126a5ae5e5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: ソリューションを使用して、SharePoint Syntexファイルを識別し、データを抽出する方法についてMicrosoft 365します。
+ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636208"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054498"
 ---
-# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>手順 1. Syntex SharePointを使用してコントラクト ファイルを識別し、データを抽出する
+# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>手順 1。 契約ファイルSharePoint Syntexデータの抽出に使用する方法
 
-組織では、受信した多数のファイルからすべての契約ドキュメントを識別して分類する方法が必要です。 また、特定された各コントラクト ファイル内のいくつかの重要な要素 (クライアント、契約者、手数料金額など)をすばやく *表示できます*。 これを行うには[、Syntex](index.md) SharePointを使用してドキュメント理解モデルを作成し、それをドキュメント ライブラリに適用します。
+組織では、受信した多数のファイルからすべての契約ドキュメントを識別して分類する方法が必要です。 また、特定された各コントラクト ファイル内のいくつかの重要な要素 (クライアント、契約者、手数料金額など)をすばやく *表示できます*。 この操作を行うには、SharePoint Syntex[を使用](index.md)してドキュメント理解モデルを作成し、それをドキュメント ライブラリに適用します。
 
 ## <a name="overview-of-the-process"></a>プロセスの概要
 
@@ -29,7 +29,7 @@ ms.locfileid: "52636208"
 
 1. 最初に、モデルを "トレーニング" して、識別しようとしているコンテンツ タイプ (契約) に固有の特性を検索するために使用できる少なくとも 5 つのサンプル ファイルを見つける必要があります。 
 
-2. Syntex SharePoint使用して、新しいドキュメント理解モデルを作成します。 サンプル ファイルを使用して、分類子 [を作成する必要があります](create-a-classifier.md)。 サンプル ファイルを使用して分類子をトレーニングすると、会社の契約に表示される特性に固有の特性を検索できます。 たとえば、サービス契約、契約条件、報酬など、契約内の特定の文字列を検索する "説明 ["](create-a-classifier.md#create-an-explanation)を作成 *します*。 説明をトレーニングして、ドキュメントの特定のセクションでこれらの文字列を探したり、他の文字列の横に位置したりすることもできます。 分類子に必要な情報をトレーニングしたと思う場合は、サンプル ファイルのサンプル セットでモデルをテストして、その効率を確認できます。 テスト後、必要に応じて説明を変更して、より効率的に行えます。 
+2. このSharePoint Syntexを使用して、新しいドキュメント理解モデルを作成します。 サンプル ファイルを使用して、分類子 [を作成する必要があります](create-a-classifier.md)。 サンプル ファイルを使用して分類子をトレーニングすると、会社の契約に表示される特性に固有の特性を検索できます。 たとえば、サービス契約、契約条件、報酬など、契約内の特定の文字列を検索する "説明 ["](create-a-classifier.md#create-an-explanation)を作成 *します*。 説明をトレーニングして、ドキュメントの特定のセクションでこれらの文字列を探したり、他の文字列の横に位置したりすることもできます。 分類子に必要な情報をトレーニングしたと思う場合は、サンプル ファイルのサンプル セットでモデルをテストして、その効率を確認できます。 テスト後、必要に応じて説明を変更して、より効率的に行えます。 
 
 3. モデルでは、抽出プログラム [を作成して](create-an-extractor.md) 、各コントラクトから特定のデータを抽出できます。 たとえば、契約ごとに、最も懸念される情報は、クライアントが誰か、契約者の名前、および総コストです。
 
@@ -37,7 +37,7 @@ ms.locfileid: "52636208"
 
    ![ドキュメント ライブラリ内のコントラクト](../media/content-understanding/doc-lib-solution.png)
 
-5. 契約の保持要件がある場合は、モデルを使用して保持ラベルを適用して、[](apply-a-retention-label-to-a-model.md)指定した期間契約が削除されるのを防ぐ方法もあります。
+5. 契約の保持要件またはセキュリティ要件がある場合は、モデルを使用して保持ラベルまたは感度ラベルを適用[](apply-a-retention-label-to-a-model.md)して、指定した[](apply-a-sensitivity-label-to-a-model.md)期間契約が削除されるのを防ぐか、契約にアクセスできるユーザーを制限することができます。
 
 ## <a name="steps-to-create-and-train-your-model"></a>モデルを作成してトレーニングする手順
 
@@ -198,6 +198,11 @@ ms.locfileid: "52636208"
 6. [モデル **>契約**] ページの [このモデルを含むライブラリ] セクションに、一覧に表示されるサイトの URL SharePoint表示されます。
 
     ![[このモデルを使用したライブラリ] セクションを示すコントラクト ホーム ページのスクリーンショット。](../media/content-understanding/contract-libraries-with-this-model.png)
+
+7. [ライブラリ **設定**  >  **設定] の下:**
+
+   - Status という名前の列 **を追加し** 、列 **の種類として [選択肢** ] を選択します。
+   - [確認中 **] 、[承認済****み] 、および**[拒否済み]**の値を適用** します。
 
 モデルをドキュメント ライブラリに適用した後、サイトへのドキュメントのアップロードを開始し、結果を確認できます。
 

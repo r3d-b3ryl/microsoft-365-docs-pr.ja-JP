@@ -13,21 +13,21 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Placeの電子情報開示とIn-Placeホールド (および対応する PowerShell コマンドレット Exchange Online) は、2020 年前半に廃止されます。 また、Search-Mailbox v1.0 Advanced eDiscoveryおよび v1.0 も同じ期間に廃止されます。
-ms.openlocfilehash: c5f1ddb4c817ebc316c2e2efdba9a4bc605eb5a2
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 97be285ae348b018866e3f91f92be523b03e6616
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842664"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055069"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
 > [!IMPORTANT]
-> Microsoft は、公衆衛生の状況を評価し、これがお客様に与える影響を理解しています。 強いパートナーであり、責任あるグローバル市民でありたく思っています。 直面している多くの負担の 1 つを軽減するために、この記事で説明する従来の電子情報開示ツールの予定退職を 3 か月遅らせる予定です。 **更新された退職日は、以下に反映されます。**
+> この記事で説明する従来の電子情報開示ツールの機能は、Microsoft 365 サービスから削除されたか、まだ使用できますが、サポートされなくなりました。 引き続き使用可能な機能は、予告なしに削除される可能性があります。 これらのレガシ ツールを引き続き使用している場合は、Microsoft 365 コンプライアンス センター またはこの記事で説明する代替手段の 1 つで、電子情報開示ツールへの移行を検討してください。
 
-長年にわたり、Microsoft は電子情報開示ツールを提供し、電子情報開示ツールを使用して、電子メール コンテンツを検索、プレビュー、およびエクスポートExchange Online。 ただし、これらのツールは、Exchange Online や Microsoft 365 グループなどの他の SharePoint Microsoft 365 サービスで非 Exchange コンテンツを検索する効果的な方法を提供しなくなりました。 この問題に対処するために、Microsoft はさまざまなコンテンツを検索するのに役立つその他の電子情報開示Microsoft 365しています。 また、コンプライアンス センターに最新かつ強力な電子情報開示機能を組み込むMicrosoft 365[しています](https://compliance.microsoft.com)。 これにより、組織は、コンテンツに関する法的、内部的、その他のドキュメント要求に、Microsoft 365サービスを含む多くのExchange Online。
+長年にわたり、Microsoft は電子情報開示ツールを提供し、電子情報開示ツールを使用して、電子メール コンテンツを検索、プレビュー、およびエクスポートExchange Online。 ただし、これらのツールは、Exchange Online や Microsoft 365 グループなどの他の SharePoint Microsoft 365 サービスで非 Exchange コンテンツを検索する効果的な方法を提供しなくなりました。 この問題に対処するために、Microsoft はさまざまなコンテンツを検索するのに役立つその他の電子情報開示Microsoft 365しています。 また、最新かつ強力な電子情報開示機能を最新の電子情報開示機能に組み込む[Microsoft 365 コンプライアンス センター。](https://compliance.microsoft.com) これにより、組織は、コンテンツに関する法的、内部的、その他のドキュメント要求に、Microsoft 365サービスを含む多くのExchange Online。
 
-Microsoft 365 コンプライアンス センターでこの新しく強化された電子情報開示機能の結果、Exchange Online および Microsoft 365 の電子メール コンテンツの検索に関連する次の電子情報開示関連の機能が廃止されました。
+Microsoft 365 コンプライアンス センター でこの新しく改善された電子情報開示機能の結果、Exchange Online および Microsoft 365 の電子メール コンテンツの検索に関連する次の電子情報開示関連の機能が廃止されました。
 
 - Exchange 管理センターの[インプレース電子情報開示](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)および[インプレース ホールド](/exchange/security-and-compliance/create-or-remove-in-place-holds)。
 
@@ -67,7 +67,7 @@ Microsoft 365 コンプライアンス センターでこの新しく強化さ�
 
 2017 年 7 月 1 日の当初の発表と同様に、In-Place 管理センター (EAC) の Exchange In-Place 電子情報開示 & 保留機能は廃止されます。 EAC In-Place [&保持] ページでは、コンテンツを検索、保持、およびエクスポートExchange Online。 In-Place電子情報開示を使用すると、検索結果を探索メールボックスにコピーして、ユーザーまたは他の電子情報開示管理者がコンテンツを確認し、法的、規制、およびパブリック要求に対して利用可能にできます。
 
-これらの機能 (検索結果を探索メールボックスにコピーする場合を除く) はすべて[、Microsoft 365](./microsoft-365-compliance-center.md)コンプライアンス センターのコンテンツ検索、電子情報開示、および Advanced eDiscovery ツールで利用できます (機能、信頼性、幅広い Microsoft 365 サービスのサポートが強化されています)、できるだけ早くこれらのツールの使用を開始することをお勧めします。 これらの他の電子情報開示ツールへの移行を支援するために、以下の表に、電子情報開示と電子情報開示の保持ではなくIn-PlaceツールIn-Place示します。
+これらの機能 (検索結果を探索メールボックスにコピーする場合を除く) はすべて[、Microsoft 365 コンプライアンス センター](./microsoft-365-compliance-center.md)のコンテンツ検索、電子情報開示、および Advanced eDiscovery ツールで利用できます (機能、信頼性、および幅広い Microsoft 365 サービスのサポートが強化されています)、できるだけ早くこれらのツールの使用を開始することをお勧めします。 これらの他の電子情報開示ツールへの移行を支援するために、以下の表に、電子情報開示と電子情報開示の保持ではなくIn-PlaceツールIn-Place示します。
 
 ### <a name="scope-of-affected-organizations"></a>影響を受ける組織の範囲
 
@@ -100,7 +100,7 @@ Microsoft 365 コンプライアンス センターでこの新しく強化さ�
 <tbody>
 <tr class="odd">
 <td>法的な目的で検索、エクスポート、ホールドする</td>
-<td>コンプライアンス センターでの電子情報開示のMicrosoft 365ケース </td>
+<td>電子情報開示のコア ケース (Microsoft 365 コンプライアンス センター </td>
 <td><p>コアの電子情報開示ケースの機能を使用すると、電子情報開示と保留リストのIn-PlaceパリティIn-Placeします。 エクスポートできるものには、次のようなものがあります。</p>
 <ul>
 <li>
@@ -115,7 +115,7 @@ Microsoft 365 コンプライアンス センターでこの新しく強化さ�
 </tr>
 <tr class="even">
 <td>保持の目的で保持する</td>
-<td>コンプライアンス センター Microsoft 365保持ポリシー</td>
+<td>アイテム保持ポリシーのMicrosoft 365 コンプライアンス センター</td>
 <td><p>アイテム保持ポリシーを使用してコンテンツを保持し、必要に応じて保持期間が経過した後に削除できます。 その他の機能は次のとおりです。</p>
 <ul>
 <li>
@@ -141,7 +141,7 @@ Microsoft 365 コンプライアンス センターでこの新しく強化さ�
 <tr class=even>
   <td>1 つのメールボックスから別のメールボックスへのメッセージのコピー</td>
   <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">メールボックスへのアクセス許可の割り当て</a></td>
-  <td>他のユーザーの電子メールへのアクセス権をユーザーに付与するには (従業員が組織を離れ、他のユーザーに元従業員のメールへのアクセス権を与える必要がある場合など)、そのユーザーに元従業員のメールボックスにアクセスするためのアクセス許可を割り当てる必要があります。 そのため、メールボックス アイテムを別のユーザー メールボックスまたは共有メールボックスにコピーする代わりに、ソース メールボックスにアクセスするためのユーザーアクセス許可を割り当てるだけ。</td>
+  <td>他のユーザーの電子メールへのアクセス権をユーザーに付与するには (従業員が組織を離れ、他のユーザーに元従業員のメールへのアクセス権を与える必要がある場合など)、そのユーザーに元従業員のメールボックスにアクセスするためのアクセス許可を割り当てる必要があります。 そのため、メールボックス アイテムを別のユーザー メールボックスまたは共有メールボックスにコピーする代わりに、ソース メールボックスにアクセスするために必要なアクセス許可をユーザーに割り当てるだけで問題ありません。</td>
   
   </tr>
 <tr class="odd">
@@ -160,17 +160,17 @@ Microsoft 365 コンプライアンス センターでこの新しく強化さ�
 
 **電子情報開示マネージャーが新しいツールを使用して検索できるコンテンツの場所 (メールボックスやサイトなど) を制御する方法**
 
-またMicrosoft 365コンプライアンス センターは、コンプライアンスの[](set-up-compliance-boundaries.md)境界を使用して、電子情報開示マネージャーが検索できるコンテンツの場所を制御します。 コンプライアンスの境界は、政府機関の境界内にとどまる必要がある政府機関や、地理的な下宿主を尊重するために必要な多国籍企業で役立ちます。
+またMicrosoft 365 コンプライアンス センターコンプライアンスの境界[を](set-up-compliance-boundaries.md)使用して、電子情報開示マネージャーが検索できるコンテンツの場所を制御します。 コンプライアンスの境界は、政府機関の境界内にとどまる必要がある政府機関や、地理的な下宿主を尊重するために必要な多国籍企業で役立ちます。
 
-**現在の検索と保持をコンプライアンス センターに移動Microsoft 365方法**
+**現在の検索とホールドを現在の検索先に移動Microsoft 365 コンプライアンス センター?**
 
-PowerShell を使用して電子情報開示In-Place EAC から電子情報開示の検索と保持を移行できます。 手順については[、「EAC から](./migrate-legacy-ediscovery-searches-and-holds.md)コンプライアンス センターへの検索と保持の移行Microsoft 365参照してください。
+PowerShell を使用して電子情報開示In-Place EAC から電子情報開示の検索と保持を移行できます。 手順については、「検索と保持を EAC からサーバーに移行する」[を参照Microsoft 365 コンプライアンス センター。](./migrate-legacy-ediscovery-searches-and-holds.md)
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*-MailboxSearch コマンドレット
 
 Exchange 管理センターで 2017 年 7 月 1 日に発表された元の通知に基づいて、In-Place 電子情報開示 & ホールド機能と対応する **\* -MailboxSearch** コマンドレットは廃止されます。 これらのコマンドレットを使用すると、ユーザーは、法的、規制、およびパブリック要求のためにメールボックス コンテンツを検索、保持、およびエクスポートできます。
 
-これらの機能は[<span class="underline">、パフォーマンス</span>](./microsoft-365-compliance-center.md)とスケーラビリティが向上した Microsoft 365 コンプライアンス センターと Office 365 セキュリティ & コンプライアンス センター PowerShell で利用できる機能なので、これらの強化されたコマンドレットを使用する必要があります。 これらのコマンドレットには[<span class="underline"> \* 、-ComplianceCase</span>](/powershell/module/exchange/get-compliancecase) [<span class="underline">、-ComplianceSearch、-CaseHoldPolicy、-CaseHoldRule、 \* </span>](/powershell/module/exchange/get-compliancesearch)[<span class="underline"> \* および -ComplianceSearchAction が含まれます</span>](/powershell/module/exchange/get-compliancesearchaction)。 [<span class="underline"> \* </span>](/powershell/module/exchange/get-caseholdpolicy) [<span class="underline"> \* </span>](/powershell/module/exchange/get-caseholdrule)
+これらの機能は、パフォーマンスとスケーラビリティが向上した Microsoft 365 コンプライアンス センター および[<span class="underline">Office 365</span>](./microsoft-365-compliance-center.md)セキュリティ & コンプライアンス センター PowerShell で利用できる機能なので、これらの強化されたコマンドレットを使用する必要があります。 これらのコマンドレットには[<span class="underline"> \* 、-ComplianceCase</span>](/powershell/module/exchange/get-compliancecase) [<span class="underline">、-ComplianceSearch、-CaseHoldPolicy、-CaseHoldRule、 \* </span>](/powershell/module/exchange/get-compliancesearch)[<span class="underline"> \* および -ComplianceSearchAction が含まれます</span>](/powershell/module/exchange/get-compliancesearchaction)。 [<span class="underline"> \* </span>](/powershell/module/exchange/get-caseholdpolicy) [<span class="underline"> \* </span>](/powershell/module/exchange/get-caseholdrule)
 
 ### <a name="scope-of-affected-organizations"></a>影響を受ける組織の範囲
 
@@ -207,9 +207,9 @@ Exchange 管理センターで 2017 年 7 月 1 日に発表された元の通�
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>ComplianceSearch コマンドレットと ComplianceSearchAction コマンドレットは、コンテンツの検索とエクスポートに役立ちます。 新しい検索を作成し、検索見積もりを表示するには<strong>、New-、Get-、</strong><strong>および</strong> <strong>Start-ComplianceSearch</strong>コマンドレットを使用します。 次に <strong>、New-ComplianceSearchAction</strong> コマンドレットを使用して検索結果をエクスポートできます。 これらの検索結果をローカル コンピューターにダウンロードするには、コンプライアンス センターのMicrosoft 365電子情報開示ツールを使用する必要があります。</p>
+<td><p>ComplianceSearch コマンドレットと ComplianceSearchAction コマンドレットは、コンテンツの検索とエクスポートに役立ちます。 新しい検索を作成し、検索見積もりを表示するには<strong>、New-、Get-、</strong><strong>および</strong> <strong>Start-ComplianceSearch</strong>コマンドレットを使用します。 次に <strong>、New-ComplianceSearchAction</strong> コマンドレットを使用して検索結果をエクスポートできます。 これらの検索結果をローカル コンピューターにダウンロードするには、Microsoft 365 コンプライアンス センター電子情報開示のコア ツールを使用する必要があります。</p>
 <p>
-<p><strong>注:</strong>これらのコマンドレットを使用して、コアの電子情報開示ケースに関連付けされていない検索を作成する場合、これらの検索は Microsoft 365 コンプライアンス センター<strong></strong>の [コンテンツ検索] ページに表示されます。</p></td>
+<p><strong>注:</strong>これらのコマンドレットを使用して、コアの電子情報開示ケースに関連付けされていない検索を作成する場合、これらの検索は、Microsoft 365 コンプライアンス センター の [<strong></strong>コンテンツ検索] ページに表示されます。</p></td>
 </tr>
 <tr class="even">
 <td>メールボックス内のコンテンツを保持する</td>
@@ -217,7 +217,7 @@ Exchange 管理センターで 2017 年 7 月 1 日に発表された元の通�
 <p><a href="/powershell/module/exchange/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>コンプライアンス センター内Microsoft 365コンプライアンス ケースに関連付けられている必要があります。 まず、コンプライアンス ケースを作成し、CaseHoldPolicy と CaseHoldRule を作成します。</p>
+<td><p>コンプライアンス ケースにMicrosoft 365 コンプライアンス センターする必要があります。 まず、コンプライアンス ケースを作成し、CaseHoldPolicy と CaseHoldRule を作成します。</p>
 <p><strong>注:</strong> CaseHoldRule を作成せずに CaseHoldPolicy を作成すると、CaseHoldRule が作成され CaseHoldPolicy に関連付けられるまで、ホールドは操作不能になります。 詳細については、コマンドレットのドキュメントを参照してください。</p></td>
 </tr>
 <tr class="odd">
@@ -241,9 +241,9 @@ Exchange 管理センターで 2017 年 7 月 1 日に発表された元の通�
 
 [<span class="underline">Microsoft Graph API</span>](https://developer.microsoft.com/en-us/graph)には、-MailboxSearch コマンドレットを使用するよりもはるかに回復性と拡張性を備えた分析などの目的でデータを抽出するためのメソッドが多数用意 **\*** されています。
 
-**検索と保持をコンプライアンス センターに移行Microsoft 365方法**
+**検索と保持を移行する方法をMicrosoft 365 コンプライアンス センター?**
 
-PowerShell スクリプトを使用して、In-Placeから電子情報開示の検索と保持Exchange移行できます。 詳細については、「従来の電子情報開示の検索と保持をコンプライアンス センターに移行[するMicrosoft 365参照してください](migrate-legacy-eDiscovery-searches-and-holds.md)。
+PowerShell スクリプトを使用して、In-Placeから電子情報開示の検索と保持Exchange移行できます。 詳細については、「従来の電子情報開示の検索と保持を移行[する」を参照Microsoft 365 コンプライアンス センター。](migrate-legacy-eDiscovery-searches-and-holds.md)
 
 **コマンドレットが廃止された後も、検索を削除または取得できますか?**
 
@@ -285,12 +285,12 @@ PowerShell **の Search-Mailbox** コマンドレットExchange Online、2018 �
 <td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>ComplianceSearch コマンドレットと ComplianceSearchAction コマンドレットは、コンテンツの検索とエクスポートに役立ちます。 新しい検索を作成し、検索見積もりを表示するには<strong>、New-、Get-、</strong><strong>および</strong> <strong>Start-ComplianceSearch</strong>コマンドレットを使用します。 次に <strong>、New-ComplianceSearchAction -Export</strong> コマンドを使用して検索結果をエクスポートできます。 これらの検索結果をローカル コンピューターにダウンロードするには、コンプライアンス センターのMicrosoft 365電子情報開示ツールを使用する必要があります。</p></p>
+<td><p>ComplianceSearch コマンドレットと ComplianceSearchAction コマンドレットは、コンテンツの検索とエクスポートに役立ちます。 新しい検索を作成し、検索見積もりを表示するには<strong>、New-、Get-、</strong><strong>および</strong> <strong>Start-ComplianceSearch</strong>コマンドレットを使用します。 次に <strong>、New-ComplianceSearchAction -Export</strong> コマンドを使用して検索結果をエクスポートできます。 これらの検索結果をローカル コンピューターにダウンロードするには、Microsoft 365 コンプライアンス センター電子情報開示のコア ツールを使用する必要があります。</p></p>
 </td>
 </tr>
 <tr class="even">
 <td>メールボックスから一括メールを削除する</td>
-<td><p><a href="/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">メールボックスのアーカイブと削除ポリシーを設定する</span></a></p>
+<td><p><a href="/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes"><span class="underline">メールボックスのアーカイブと削除ポリシーを設定する</span></a></p>
 <p></p></td>
 <td><p>管理者は、ユーザーのアーカイブ メールボックスにアイテムを自動的に移動し、メールボックスからアイテムを自動的に削除するアーカイブおよび削除ポリシーを作成できます。</p>
 </td>
@@ -303,7 +303,7 @@ PowerShell **の Search-Mailbox** コマンドレットExchange Online、2018 �
 <tr class=odd>
   <td>1 つのメールボックスから別のメールボックスへのメッセージのコピー</td>
   <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">メールボックスへのアクセス許可の割り当て</a></td>
-  <td>他のユーザーの電子メールへのアクセス権をユーザーに付与するには (従業員が組織を離れ、他のユーザーに元従業員のメールへのアクセス権を与える必要がある場合など)、そのユーザーに元従業員のメールボックスにアクセスするためのアクセス許可を割り当てる必要があります。 そのため、メールボックス アイテムを別のユーザー メールボックスまたは共有メールボックスにコピーする代わりに、ソース メールボックスにアクセスするためのユーザーアクセス許可を割り当てるだけ。</td>
+  <td>他のユーザーの電子メールへのアクセス権をユーザーに付与するには (従業員が組織を離れ、他のユーザーに元従業員のメールへのアクセス権を与える必要がある場合など)、そのユーザーに元従業員のメールボックスにアクセスするためのアクセス許可を割り当てる必要があります。 したがって、メールボックス アイテムを別のユーザー メールボックスまたは共有メールボックスにコピーする代わりに、ソース メールボックスにアクセスするためのユーザーアクセス許可を割り当てるだけ。</td>
 </tr>
 <tr class=even>
   <td>メールボックスからメッセージを削除する</td>
@@ -316,7 +316,7 @@ PowerShell **の Search-Mailbox** コマンドレットExchange Online、2018 �
 <tr class="odd"> 
 <td>メールボックスからメッセージを削除する</td>
 <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">メールボックスへのアクセス許可の割り当て</a></td>
-<td>メールボックスからメッセージを削除するには、管理者のアクセス許可を割り当て、従業員のメールボックスにアクセスします。 メッセージは、必要に応じて削除およびリサイクルできます。この機能は、Outlook の組み込みの検索機能と表示機能を利用します。</td>
+<td>メールボックスからメッセージを削除するには、管理者のアクセス許可を割り当て、従業員のメールボックスにアクセスします。 メッセージは、必要に応じて削除およびリサイクルできます。この機能は、Outlook。</td>
 </tr>
 </tbody>
 </table>
@@ -341,7 +341,7 @@ Exchange Web Services API のこれらの操作は、Exchange 管理センター
 
 ## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v1.0
 
-Advanced eDiscovery v1.0 は、コアの電子情報開示ケースで使用できる Advanced eDiscovery のバージョンで、[Advanced eDiscovery に切り替える] を **クリック** して使用できません。 その機能は、コンプライアンス センターの新Advanced eDiscovery[ソリューション](./ediscovery.md)Microsoft 365されました。
+Advanced eDiscovery v1.0 は、コアの電子情報開示ケースで使用できる Advanced eDiscovery のバージョンで、[Advanced eDiscovery に切り替える] を **クリック** して使用できません。 その機能は、新しいソリューション Advanced eDiscovery[に](./ediscovery.md)置き換Microsoft 365 コンプライアンス センター。
 
 組織で v1.0 を使用Advanced eDiscoveryするには、次のコマンドを実行します。
 
@@ -381,4 +381,4 @@ Advanced eDiscovery v2.0 へのアクセス
 
 ### <a name="alternative-tools"></a>代替ツール
 
-コンプライアンス[Advanced eDiscoveryセンター](./overview-ediscovery-20.md)のMicrosoft 365ソリューション。
+この[Advanced eDiscoveryソリューション](./overview-ediscovery-20.md)Microsoft 365 コンプライアンス センター。

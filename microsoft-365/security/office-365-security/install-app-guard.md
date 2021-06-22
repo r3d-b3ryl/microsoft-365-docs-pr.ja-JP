@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: ハードウェア ベースの分離の最新情報を取得します。 悪用や悪意のあるリンクのような現在および新しい攻撃が従業員の生産性と企業のセキュリティを妨げるのを防ぐ。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0fa6ad884c6b21457c8359cf82e32e4b8c100ba
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 39d6a9c3a3c3a5e2c736025a26c22588f9f08bb0
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488313"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055265"
 ---
 # <a name="application-guard-for-office-for-admins"></a>管理者向け Application Guard for Office
 
@@ -83,7 +83,7 @@ Microsoft Defender Application Guard Office (Application Guard for Office) は�
 
 この手順では、問題の特定と修正に必要なデータが Microsoft に届くという保証を行います。 次の手順に従って、デバイスで診断Windowsします。
 
-1. [**スタート設定** から開きます。
+1. **[設定** から開スタート メニュー。
 
    ![[スタート] メニュー](../../media/ag05-diagnostic.png)
 
@@ -120,7 +120,6 @@ Application Guard for Officeが有効Office、Word、Excel、または PowerPoin
 ## <a name="configure-application-guard-for-office"></a>アプリケーション用の Application Guard を構成Office
 
 Office次のポリシーをサポートし、アプリケーション の機能を構成するために Application Guard をOffice。 これらのポリシーは、グループ ポリシーまたはクラウド ポリシー サービスを使用[Office構成できます](/DeployOffice/overview-office-cloud-policy-service)。
-「User Configuration Administrative Templates Microsoft Office **\\ \\ 2016 \\ \\ \\** Security 設定 セキュリティ センター Application Guard」のグループ ポリシー設定を確認して、管理者による構成セットを参照してください。
 
 
 > [!NOTE]
@@ -179,7 +178,7 @@ Application Guard for Officeを起動するときに問題が発生した場合�
 
 8. 問題に関連するスクリーンショットやファイルを添付します。
 
-9. [**送信**] を選択します。
+9. **[送信]** を選択します。
 
 ### <a name="submit-feedback-via-office-customer-voice"></a>カスタマー ボイスからフィードバックOffice送信する
 
@@ -234,6 +233,9 @@ Application Guard は仮想化コンテナーを使用して、信頼されて�
 ## <a name="known-issues"></a>既知の問題
 
 * Web リンク ( または `http` `https` ) を選択しても、ブラウザーは開かれません。
-* Application Guard で開かれたドキュメントにリッチ テキスト形式 (RTF) コンテンツまたは画像Office貼り付けは、現時点ではサポートされていません。
-* サポートされていないファイルの種類保護ポリシーの既定の設定は、信頼されていないサポートされていないファイルの種類の Information Rights Management (IRM)、CSV、または HTML の開きをブロックすることです。
+* コピー貼り付け保護ポリシーの既定の設定では、テキストへのクリップボード アクセスのみを有効にします。
+* サポートされていないファイルの種類保護ポリシーの既定の設定は、暗号化されている、または Information Rights Management (IRM) が設定されている、信頼されていないサポートされていないファイルの種類を開くのをブロックすることです。 これには、暗号化を使用して機密ラベルをMicrosoft Information Protectionするファイル (機密または機密性の高いファイル) が含まれます。
+* 現時点では、CSV ファイルと HTML ファイルはサポートされていません。
+* アプリケーションの Application Guard Office NTFS 圧縮ボリュームでは現在動作しません。 "エラー" が表示される場合は、ERROR_VIRTUAL_DISK_LIMITATIONの圧縮を解除してください。
 * .NET を更新すると、Application Guard でファイルが開かない場合があります。 回避策として、ユーザーは、このエラーが発生した場合にデバイスを再起動できます。 この問題の詳細については、「サンドボックスを開く際にエラー メッセージを受け取[Windows Defender Application Guard」Windowsします](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)。
+* 詳細については[、「よく寄せられる質問 - Microsoft Defender Application Guard」を参照してください。](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

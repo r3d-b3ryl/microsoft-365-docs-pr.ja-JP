@@ -1,5 +1,5 @@
 ---
-title: 検疫タグ
+title: 検疫ポリシー
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,26 +14,26 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
-description: 管理者は、検疫タグを使用して、検疫済みメッセージに対してユーザーが実行できる操作を制御する方法について学習できます。
+description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 512c589572502deacb5529ca9d6f2876861bf050
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 96dc1e2158787457884ca6a3c6f27bf76e83a369
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274462"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055202"
 ---
-# <a name="quarantine-tags"></a>検疫タグ
+# <a name="quarantine-policies"></a>検疫ポリシー
 
 > [!NOTE]
 > この記事で説明する機能は、現在プレビュー中であり、すべてのユーザーが利用できる機能ではなく、変更される可能性があります。
 
-Exchange Online Protection (EOP) の検疫タグを使用すると、管理者は、メッセージが検疫に到着した方法に基づいて、検疫済みメッセージに対してユーザーが実行できる操作を制御できます。
+Exchange Online Protection (EOP) の検疫ポリシー (以前は検疫タグと呼ばれる) を使用すると、管理者は、メッセージが検疫に到着した方法に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を制御できます。
 
-EOP は、従来、検疫およびエンド ユーザーのスパム通知のメッセージに[](find-and-release-quarantined-messages-as-a-user.md)対して、特定のレベルの対話機能を許可または[防止しています](use-spam-notifications-to-release-and-report-quarantined-messages.md)。 たとえば、エンド ユーザーはスパム対策フィルターによって検疫されたメッセージをスパムまたはバルクとして表示および解放できますが、高信頼フィッシングとして検疫されたメッセージを表示または解放したりはしません。
+EOP は、従来、検疫およびエンド ユーザーのスパム通知のメッセージに[](find-and-release-quarantined-messages-as-a-user.md)対して、特定のレベルの対話機能を許可または[防止しています](use-spam-notifications-to-release-and-report-quarantined-messages.md)。 たとえば、ユーザーはスパム対策フィルターによって検疫されたメッセージをスパムまたは一括として表示および解放できますが、高信頼フィッシングとして検疫されたメッセージを表示または解放できない (管理者だけが実行できます)。
 
-サポート [される保護機能](#step-2-assign-a-quarantine-tag-to-supported-features)の場合、検疫タグは、エンドユーザーのスパム通知メッセージと検疫中の検疫済みメッセージ (ユーザーが受信者であるメッセージ) でユーザーが実行できる操作を指定します。 既定の検疫タグは自動的に割り当て、検疫済みメッセージにエンド ユーザーの履歴機能を適用します。 または、カスタム検疫タグを作成して割り当て、エンド ユーザーが検疫済みメッセージに対して特定のアクションを実行する許可または防止を行うことができます。
+サポート [されている保護機能](#step-2-assign-a-quarantine-policy-to-supported-features)の場合、検疫ポリシーは、エンドユーザーのスパム通知メッセージと検疫中の検疫済みメッセージ (ユーザーが受信者であるメッセージ) でユーザーが実行できる操作を指定します。 既定の検疫ポリシーは、検疫されたメッセージに対してユーザーの履歴機能を適用するために自動的に割り当てられます。 または、カスタム検疫ポリシーを作成して割り当て、エンド ユーザーが検疫済みメッセージに対して特定のアクションを実行を許可または防止できます。
 
 個々のアクセス許可は、次の事前設定されたアクセス許可グループに組み合わされます。
 
@@ -57,25 +57,25 @@ EOP は、従来、検疫およびエンド ユーザーのスパム通知のメ
 |**受信者がメッセージを検疫から** 解放する要求を許可する (_PermissionToRequestRelease_)||![チェック マーク](../../media/checkmark.png)||
 |
 
-事前設定されたアクセス許可グループの既定のアクセス許可が気に入らない場合は、カスタム検疫タグを作成または変更するときにカスタムアクセス許可を使用できます。 各アクセス許可の動作の詳細については、この記事の後半の「 [検疫タグのアクセス許可の詳細](#quarantine-tag-permission-details) 」セクションを参照してください。
+事前設定されたアクセス許可グループの既定のアクセス許可が気に入らない場合は、カスタム検疫ポリシーを作成または変更するときにカスタムアクセス許可を使用できます。 各アクセス許可の動作の詳細については、この記事の後半の「 [検疫ポリシーのアクセス許可の詳細](#quarantine-policy-permission-details) 」セクションを参照してください。
 
-検疫タグは、セキュリティ & コンプライアンス センターまたは PowerShell (Exchange Online メールボックスを持つ Microsoft 365 組織用の Exchange Online PowerShell、Exchange Online メールボックスのない EOP 組織のスタンドアロン EOP PowerShell) で作成および割り当てる。
+Microsoft 365 Defender ポータルまたは PowerShell で検疫ポリシーを作成および割り当てる (Exchange Online メールボックスを持つ Microsoft 365 組織の場合は Exchange Online PowerShell、Exchange Online メールボックスのない EOP 組織ではスタンドアロンの EOP PowerShell)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [検疫タグ] ページに直接 **移動するには** 、 を開きます <https://protection.office.com/quarantineTags> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 または、[検疫ポリシー] ページに直接 **移動するには、** を開きます <https://security.microsoft.com/quarantineTags> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- 検疫タグを表示、作成、変更、または削除するには、セキュリティ 管理コンプライアンス センターの組織の管理またはセキュリティ管理者の役割の[&必要があります](permissions-in-the-security-and-compliance-center.md)。
+- 検疫ポリシーを表示、Microsoft 365 Defender 作成、変更、または削除するには、組織の管理またはセキュリティ管理者の役割のメンバーである必要があります。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>手順 1: セキュリティ コンプライアンス センターで検疫&作成する
+## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>手順 1: セキュリティ ポータルで検疫ポリシーをMicrosoft 365 Defenderする
 
-1. セキュリティ コンプライアンス センターで&の管理ポリシーに移動し、[検疫 \> タグ]**を選択します**。
+1. [セキュリティ ポータルMicrosoft 365 Defenderに移動し、[電子メール &**の** 脅威ポリシー] セクションの [検疫ポリシー] に移動し、[検疫ポリシー \>  \>  \>  ]**を選択します**。
 
-2. [検疫タグ **] ページで** 、[カスタム タグの **追加] を選択します**。
+2. [検疫ポリシー **] ページで** 、[カスタム ポリシーの追加] アイコン [カスタム ![ ](../../media/m365-cc-sc-create-icon.png) **ポリシーの追加] をクリックします**。
 
-3. 新 **しいタグ ウィザード** が開きます。 [タグ名 **] ページで** 、[タグ名] フィールドに簡単で一意の **名前を入力** します。 今後の手順では、名前でタグを識別して選択する必要があります。 完了したら、**[次へ]** をクリックします。
+3. 新 **しいポリシー ウィザード** が開きます。 [ポリシー名 **] ページで** 、[ポリシー名] ボックスに簡単な一意の **名前を入力** します。 今後の手順では、名前で検疫ポリシーを識別して選択する必要があります。 完了したら、**[次へ]** をクリックします。
 
 4. [受信者メッセージ **アクセス] ページ** で、次のいずれかの値を選択します。
    - **アクセスなし**
@@ -84,34 +84,32 @@ EOP は、従来、検疫およびエンド ユーザーのスパム通知のメ
 
    これらのアクセス許可グループに含まれる個々のアクセス許可については、この記事の前で説明します。
 
-   カスタムアクセス許可を指定するには、[特定のアクセス **許可を設定する (Advanced)** を選択し、次の設定を構成します。
+   カスタムアクセス許可を指定するには、[特定のアクセス **許可を設定する (Advanced)** を選択し、表示される次の設定を構成します。
 
      - **[リリース アクションの基本設定]** を選択します。次のいずれかの値を選択します。
        - **リリースアクションなし**: これは既定値です。
        - **受信者が検疫からメッセージを解放するを許可する**
        - **受信者が検疫からメッセージを解放する要求を許可する**
-
      - **検疫済みメッセージに対して** 受信者が実行できる追加のアクションを選択する: 次の値の一部、すべて、またはなしを選択します。
-       - **Delete**
+       - **削除**
        - **プレビュー**
-       - **送信者を許可する**
        - **送信者をブロックする**
 
-   これらのアクセス許可と検疫済みメッセージおよびエンド ユーザースパム通知への影響については、この記事の後半の「検疫タグ [のアクセス](#quarantine-tag-permission-details) 許可の詳細」セクションで説明します。
+   これらのアクセス許可と検疫済みメッセージおよびエンド ユーザースパム通知への影響については、この記事の[](#quarantine-policy-permission-details)後半の「検疫ポリシーのアクセス許可の詳細」セクションで説明します。
 
    完了したら、**[次へ]** をクリックします。
 
-5. 表示される **[概要]** ページで、設定を確認します。 各設定で **[編集]** をクリックして変更できます。
+5. 表示される **[ポリシーの確認** ] ページで、設定を確認します。 各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 または、**[戻る]** をクリックするか、ウィザードで特定のページを選択します。
 
    完了したら、[送信] を **クリックします**。
 
-6. 表示 **される確認** ページで [完了] をクリックします。
+6. 表示された [確認]ページで、**[完了]** をクリックします。
 
-これで、「手順 2」の説明に従って検疫タグを検疫機能に割り [当てる準備ができました](#step-2-assign-a-quarantine-tag-to-supported-features) 。
+これで、手順 2 の説明に従って検疫ポリシーを検疫機能に割 [り当てる準備ができました](#step-2-assign-a-quarantine-policy-to-supported-features) 。
 
-### <a name="create-quarantine-tags-in-powershell"></a>PowerShell で検疫タグを作成する
+### <a name="create-quarantine-policies-in-powershell"></a>PowerShell で検疫ポリシーを作成する
 
-PowerShell を使用して検疫タグを作成する場合は、Exchange Online PowerShell または Exchange Online Protection PowerShell に接続し **、New-QuarantineTag コマンドレットを使用** します。 次の 2 つの方法から選択できます。
+PowerShell を使用して検疫ポリシーを作成する場合は、Exchange Online PowerShell または Exchange Online Protection PowerShell に接続し **、New-QuarantineTag コマンドレットを使用** します。 次の 2 つの方法から選択できます。
 
 - _EndUserQuarantinePermissionsValue パラメーターを使用_ します。
 - _EndUserQuarantinePermissions パラメーターを使用_ します。
@@ -120,7 +118,7 @@ PowerShell を使用して検疫タグを作成する場合は、Exchange Online
 
 #### <a name="use-the-enduserquarantinepermissionsvalue-parameter"></a>EndUserQuarantinePermissionsValue パラメーターを使用する
 
-_EndUserQuarantinePermissionsValue_ パラメーターを使用して検疫タグを作成するには、次の構文を使用します。
+_EndUserQuarantinePermissionsValue_ パラメーターを使用して検疫ポリシーを作成するには、次の構文を使用します。
 
 ```powershell
 New-QuarantineTag -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 to 236>
@@ -152,7 +150,7 @@ _EndUserQuarantinePermissionsValue_ パラメーターは、バイナリ値か�
 
 <sup>\*\*</sup> 両方の値を 1 に設定しない。 1 を 1 に、もう一方を 0 に設定するか、両方を 0 に設定します。
 
-次の使用例は、前の表で説明したように、アクセス許可なしを割り当てる新しい検疫タグ名 NoAccess を作成します。
+この例では、前の表で説明したように、アクセス許可なしを割り当てる新しい検疫ポリシー名 NoAccess を作成します。
 
 ```powershell
 New-QuarantineTag -Name NoAccess -EndUserQuarantinePermissionsValue 0
@@ -166,7 +164,7 @@ New-QuarantineTag -Name NoAccess -EndUserQuarantinePermissionsValue 0
 
 #### <a name="use-the-enduserquarantinepermissions-parameter"></a>EndUserQuarantinePermissions パラメーターを使用する
 
-_EndUserQuarantinePermissionsValue_ パラメーターを使用して検疫タグを作成するには、次の手順を実行します。
+_EndUserQuarantinePermissionsValue_ パラメーターを使用して検疫ポリシーを作成するには、次の手順を実行します。
 
 A. **New-QuarantinePermissions** コマンドレットを使用して、検疫アクセス許可オブジェクトを変数に格納します。
 
@@ -220,7 +218,7 @@ permissions オブジェクトを変数に作成して格納したら、次の *
 New-QuarantineTag -Name "<UniqueName>" -EndUserQuarantinePermissions $<VariableName>
 ```
 
-この例では、前の手順で説明して作成した permissions オブジェクトを使用して、LimitedAccess という名前の新しい検疫 `$LimitedAccess` タグを作成します。
+次の使用例は、前の手順で説明して作成したアクセス許可オブジェクトを使用して、LimitedAccess という名前の新しい検疫 `$LimitedAccess` ポリシーを作成します。
 
 ```powershell
 New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess
@@ -228,18 +226,18 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 構文とパラメーターの詳細については [、「New-QuarantineTag」を参照してください](/powershell/module/exchange/new-quarantinetag)。
 
-## <a name="step-2-assign-a-quarantine-tag-to-supported-features"></a>手順 2: サポートされている機能に検疫タグを割り当てる
+## <a name="step-2-assign-a-quarantine-policy-to-supported-features"></a>手順 2: 検疫ポリシーをサポートされている機能に割り当てる
 
-メッセージ _またはファイルを_ 検疫するサポートされている保護機能 (自動的に、または構成可能なアクションとして) では、検疫タグを使用可能な検疫アクションに割り当てることもできます。 メッセージを検疫する機能と検疫タグの可用性については、次の表で説明します。
+メッセージ _またはファイルを_ 検疫するサポートされている保護機能 (自動的に、または構成可能なアクションとして) では、検疫ポリシーを使用可能な検疫アクションに割り当てることもできます。 メッセージを検疫する機能と検疫ポリシーの可用性については、次の表で説明します。
 
 <br>
 
 ****
 
-|機能|検疫タグがサポートされていますか?|使用される既定の検疫タグ|
+|機能|検疫ポリシーがサポートされていますか?|使用される既定の検疫ポリシー|
 |---|:---:|---|
-|[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** (_SpamAction_)</li><li>**高信頼スパム** (_HighConfidenceSpamAction_)</li><li>**フィッシングメール** (_PhishSpamAction_)</li><li>**高信頼フィッシング メール** (_HighConfidencePhishAction_)</li><li>**バルク メール** (_BulkSpamAction_)</li></ul>|はい|<ul><li>DefaultSpamTag (フル アクセス)</li><li>DefaultHighConfSpamTag (フル アクセス)</li><li>DefaultPhishTag (フル アクセス)</li><li>DefaultHighConfPhishTag (アクセスなし)</li><li>DefaultBulkTag (フル アクセス)</li></ul>
-|フィッシング対策ポリシー: <ul><li>[スプーフィング インテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**偽装ユーザーによって電子メールが送信** された場合 (_TargetedUserProtectionAction_)</li><li>**偽装ドメイン**_(TargetedDomainProtectionAction) によって電子メールが送信される場合_</li><li>**メールボックス インテリジェンス** \>**偽装ユーザーからメールが送信された場合**(_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|いいえ|該当なし|
+|[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** (_SpamAction_)</li><li>**高信頼スパム** (_HighConfidenceSpamAction_)</li><li>**フィッシング** (_PhishSpamAction_)</li><li>**高信頼フィッシング** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|はい|<ul><li>DefaultSpamTag (フル アクセス)</li><li>DefaultHighConfSpamTag (フル アクセス)</li><li>DefaultPhishTag (フル アクセス)</li><li>DefaultHighConfPhishTag (アクセスなし)</li><li>DefaultBulkTag (フル アクセス)</li></ul>
+|フィッシング対策ポリシー: <ul><li>[スプーフィング インテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**偽装ユーザーとしてメッセージが検出された場合** (_TargetedUserProtectionAction_)</li><li>**偽装ドメインとしてメッセージが検出された場合** (_TargetedDomainProtectionAction_)</li><li>**メールボックス インテリジェンスがユーザーを検出して偽装した場合** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|いいえ|該当なし|
 |[マルウェア対策ポリシー](configure-anti-malware-policies.md): 検出されたメッセージはすべて常に検疫されます。|いいえ|該当なし|
 |[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)|いいえ|該当なし|
 |[アクションを含む](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) メール フロー ルール (トランスポート ルールとも呼ばれる): メッセージをホストされた検疫 (検疫) **に** 配信 _します_。|いいえ|該当なし|
@@ -247,29 +245,33 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 <sup>\*</sup>偽装保護の設定は、Microsoft Defender のフィッシング対策ポリシーでのみOffice 365。
 
-既定の検疫タグによって提供されるエンド ユーザーのアクセス許可に満足している場合は、何もする必要はありません。 エンド ユーザーのスパム通知または検疫済みメッセージの詳細でエンド ユーザー機能 (使用可能なボタン) をカスタマイズする場合は、カスタム検疫タグを割り当てできます。
+既定の検疫ポリシーによって提供されるエンド ユーザーのアクセス許可に満足している場合は、何もする必要はありません。 エンド ユーザーのスパム通知または検疫済みメッセージの詳細でエンド ユーザー機能 (使用可能なボタン) をカスタマイズする場合は、カスタム検疫ポリシーを割り当てできます。
 
-### <a name="assign-quarantine-tags-in-anti-spam-policies-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターでスパム対策ポリシーに検疫タグ&割り当てる
+### <a name="assign-quarantine-policies-in-anti-spam-policies-in-the-microsoft-365-defender-portal"></a>スパム対策ポリシーで検疫ポリシーを割り当てるには、Microsoft 365 Defenderします。
 
 スパム対策ポリシーを作成および変更する手順の詳細については、「EOP でのスパム対策ポリシーの構成」 [を参照してください](configure-your-spam-filter-policies.md)。
 
-1. セキュリティ コンプライアンス センターで、[&管理ポリシー]に移動し、[ \>  \> スパム対策]**を選択します**。 または、 を開きます <https://protection.office.com/antispam> 。
+1. [メール Microsoft 365 Defender] ポータルで、[メール &**ポリシー** ] &[スパム対策] \>  \>  \> **セクションに移動します**。 または、 を開きます <https://security.microsoft.com/antispam> 。
 
-2. 編集する既存のスパム対策ポリシーを検索して選択するか、新しいスパム対策ポリシーを作成します。
+2. [スパム **対策ポリシー] ページで** 、次のいずれかの手順を実行します。
+   - 既存の受信スパム対策 **ポリシーを** 検索して選択します。
+   - 新しい受信 **スパム対策** ポリシーを作成します。
 
-3. ポリシーの詳細フライアウトで、[スパムと一括 **アクション] セクションを展開** します。
+3. 次のいずれかの手順を実行します。
+   - **既存のスパム対策ポリシーを** 編集する : ポリシーの詳細フライアウトで、[アクション] セクションに移動し、[アクションの編集]**をクリックします**。
+   - **新しいスパム対策ポリシーを作成する**: 新しいポリシー ウィザードで、[アクション] ページ **に移動** します。
 
-4. 使用可能なスパム フィルターの評決のアクションに対して [検疫メッセージ] を選択した場合は、[検疫ポリシーの適用] タグ ボックスを使用して、その評決の検疫タグを選択できます。
+4. [操作 **] ページ** で。 検疫メッセージ アクションを持つすべての評決には、対応する検疫ポリシーを選択する [検疫ポリシーの選択] ボックスも表示されます。
 
-   **注**: 新しいポリシーを作成すると、スパム フィルターの評決に対する空白の検疫タグ値は、その評決の既定の検疫タグが使用されます。 後でポリシーを編集すると、前の表で説明したように、空白の値は実際の既定の検疫タグ名に置き換えられる。
+   **注**: 新しいポリシーを作成する場合、空の **[** 検疫ポリシーの選択] の値は、その評決の既定の検疫ポリシーが使用されます。 後でポリシーを編集すると、前の表で説明したように、空白の値が実際の既定の検疫ポリシー名に置き換えられる。
 
-   ![スパム対策ポリシーの検疫タグの選択](../../media/quarantine-tags-in-anti-spam-policies.png)
+   ![スパム対策ポリシーの検疫ポリシーの選択](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 5. 完了したら、**[保存]** をクリックします。
 
-#### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>PowerShell のスパム対策ポリシーで検疫タグを割り当てる
+#### <a name="assign-quarantine-policies-in-anti-spam-policies-in-powershell"></a>PowerShell のスパム対策ポリシーで検疫ポリシーを割り当てる
 
-スパム対策ポリシーで検疫タグを割り当てる場合は、Exchange Online PowerShell または Exchange Online Protection PowerShell に接続し、次の構文を使用します。
+スパム対策ポリシーで検疫ポリシーを割り当てる場合は、Exchange Online PowerShell または Exchange Online Protection PowerShell に接続し、次の構文を使用します。
 
 ```powershell
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
@@ -277,7 +279,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 **注**:
 
-- _HighConfidencePhishAction_ パラメーターの既定値は [検疫] なので、新しいスパム対策ポリシーで高信頼フィッシング検出の検疫アクションを設定する必要はありません。 新しいスパム対策ポリシーまたは既存のスパム対策ポリシーの他のすべてのスパム フィルターの評決では、検疫タグは、アクション値が [検疫] の場合にのみ有効です。 既存のスパム対策ポリシーのアクション値を表示するには、次のコマンドを実行します。
+- _HighConfidencePhishAction_ パラメーターの既定値は [検疫] なので、新しいスパム対策ポリシーで高信頼フィッシング検出の検疫アクションを設定する必要はありません。 新しいスパム対策ポリシーまたは既存のスパム対策ポリシーの他のすべてのスパム フィルターの評決では、検疫ポリシーは、アクション値が [検疫] の場合にのみ有効です。 既存のスパム対策ポリシーのアクション値を表示するには、次のコマンドを実行します。
 
   ```powershell
   Get-HostedContentFilterPolicy | Format-Table Name,*SpamAction,HighConfidencePhishAction
@@ -285,16 +287,16 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
   Standard および Strict の既定のアクション値と推奨されるアクション値については、「EOP スパム対策ポリシー設定」 [を参照してください](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)。
 
-- 対応する検疫タグ パラメーターのないスパム フィルターの評決は、[](#step-2-assign-a-quarantine-tag-to-supported-features)その評決の既定の検疫タグが使用されるという意味です。
+- 対応する検疫ポリシー パラメーターのないスパム フィルターの評決は、[](#step-2-assign-a-quarantine-policy-to-supported-features)その評決の既定の検疫ポリシーが使用されるという意味です。
 
-  検疫済みメッセージの既定のエンド ユーザー機能を変更する場合は、既定の検疫タグをカスタム検疫タグに置き換える必要があります。
+  検疫済みメッセージの既定のエンド ユーザー機能を変更する場合は、既定の検疫ポリシーをカスタム検疫ポリシーに置き換える必要があります。
 
 - PowerShell の新しいスパム対策ポリシーには **、New-HostedContentFilterPolicy** コマンドレットを使用するスパム フィルター ポリシー (設定) と **、New-HostedContentFilterRule** コマンドレットを使用する新しいスパム フィルター ルール (受信者フィルター) が必要です。 手順については [、「Use PowerShell を使用してスパム対策ポリシーを作成する」を参照してください](configure-your-spam-filter-policies.md#use-powershell-to-create-anti-spam-policies)。
 
 この例では、次の設定を使用して、Research Department という名前の新しいスパム フィルター ポリシーを作成します。
 
 - すべてのスパム フィルターの評決に対するアクションが [検疫] に設定されます。
-- アクセス許可なしを割り当てる NoAccess という名前のカスタム検疫タグは、既定でアクセス許可を割り当てない既定の検疫タグに置き換わります。 
+- アクセス許可なしを割り当てる NoAccess という名前のカスタム検疫ポリシーは、既定でアクセス許可なしをまだ割り当てない既定の検疫ポリシーに置き換わります。 
 
 ```powershell
 New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -SpamQuarantineTag NoAccess -HighConfidenceSpamAction Quarantine -HighConfidenceSpamQuarantineTag NoAction -PhishSpamAction Quarantine -PhishQuarantineTag NoAction -BulkSpamAction Quarantine -BulkQuarantineTag NoAccess
@@ -302,7 +304,7 @@ New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -
 
 構文とパラメーターの詳細については、「[New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy)」を参照してください。
 
-この例では、Human Resources という名前の既存のスパム フィルター ポリシーを変更します。 スパム検疫の評決のアクションは [検疫] に設定され、NoAccess という名前のカスタム検疫タグが割り当てられます。
+この例では、Human Resources という名前の既存のスパム フィルター ポリシーを変更します。 スパム検疫の評決のアクションは [検疫] に設定され、NoAccess という名前のカスタム検疫ポリシーが割り当てられます。
 
 ```powershell
 Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine -SpamQuarantineTag NoAccess
@@ -310,27 +312,15 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 構文とパラメーターの詳細については、「[Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)」を参照してください。
 
-## <a name="configure-global-quarantine-notification-settings-in-the-security--compliance-center"></a>セキュリティ ポリシー コンプライアンス センターでグローバル検疫通知&構成する
+## <a name="configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal"></a>ポータルでグローバル検疫通知設定をMicrosoft 365 Defenderする
 
-検疫タグのグローバル設定を使用すると、検疫されたメッセージの受信者に送信されるエンドユーザーのスパム通知をカスタマイズできます。 これらの通知の詳細については、「エンドユーザーの [スパム通知」を参照してください](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
+検疫ポリシーのグローバル設定を使用すると、検疫されたメッセージの受信者に送信されるエンドユーザーのスパム通知をカスタマイズできます。 これらの通知の詳細については、「エンドユーザーの [スパム通知」を参照してください](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-1. セキュリティ コンプライアンス センターで&の管理ポリシーに移動し、[検疫 \> タグ]**を選択します**。
+1. [セキュリティ ポータルMicrosoft 365 Defenderに移動し、[電子メール &**の** 脅威ポリシー] セクションの [検疫ポリシー] に移動し、[検疫ポリシー \>  \>  \>  ]**を選択します**。
 
-2. [検疫タグ **] ページで** 、[グローバル設定] **を選択します**。
+2. [検疫ポリシー **] ページで、[** グローバル設定] **を選択します**。
 
 3. 開く **検疫通知設定の** フライアウトで、次の設定の一部またはすべてを構成します。
-
-   - **[会社のロゴを使用** する]: エンド ユーザーのスパム通知の上部で使用される既定の Microsoft ロゴを置き換える場合は、このオプションを選択します。 これを行う前に、「カスタム ロゴをアップロードするには、組織Microsoft 365テーマをカスタマイズする」の[指示](../../admin/setup/customize-your-organization-theme.md)に従う必要があります。
-
-     次のスクリーンショットは、エンドユーザーのスパム通知のカスタム ロゴを示しています。
-
-     ![エンドユーザースパム通知のカスタム ロゴ](../../media/quarantine-tags-esn-customization-logo.png)
-
-   - **[言語の選択**]: エンド ユーザーのスパム通知は、受信者の言語設定に基づいて既にローカライズされています。 表示名と免責事項の値には、異なる **言語でカスタマイズ** されたテキスト **を指定** できます。
-
-     [最初の言語] ボックスから少なくとも 1 つの言語を選択し、[追加] を **クリックします**。 複数の言語を選択するには、[追加] をクリック **します** 。 セクションの言語ボックスには、選択した言語すべてが表示されます。
-
-     ![検疫タグのグローバル検疫通知設定の [2 番目の言語] ボックスで選択した言語](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
    - **表示名**: エンド ユーザーのスパム通知で使用される送信者の表示名をカスタマイズします。
 
@@ -348,28 +338,42 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
      ![エンドユーザーのスパム通知の下部にあるカスタム免責事項](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
-## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターで検疫タグ&表示する
+   - **[言語の選択**]: エンド ユーザーのスパム通知は、受信者の言語設定に基づいて既にローカライズされています。 表示名と免責事項の値には、異なる **言語でカスタマイズ** されたテキスト **を指定** できます。
 
-1. セキュリティ コンプライアンス センターで&の管理ポリシーに移動し、[検疫 \> タグ]**を選択します**。
+     [最初の言語] ボックスから少なくとも 1 つの言語を選択し、[追加] を **クリックします**。 複数の言語を選択するには、[追加] をクリック **します** 。 セクションの言語ボックスには、選択した言語すべてが表示されます。
 
-- 組み込みまたはカスタム検疫タグの設定を表示するには、リストから検疫タグを選択します (チェック ボックスをオンにしない)。
+     ![検疫ポリシーのグローバル検疫通知設定の [2 番目の言語] ボックスで選択した言語](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
-- グローバル設定を表示するには、[グローバル設定] **を選択します。**
+   - **[会社のロゴを使用** する]: エンド ユーザーのスパム通知の上部で使用される既定の Microsoft ロゴを置き換える場合は、このオプションを選択します。 これを行う前に、「カスタム ロゴをアップロードするには、組織Microsoft 365テーマをカスタマイズする」の[指示](../../admin/setup/customize-your-organization-theme.md)に従う必要があります。
 
-### <a name="view-quarantine-tags-in-powershell"></a>PowerShell で検疫タグを表示する
+     次のスクリーンショットは、エンドユーザーのスパム通知のカスタム ロゴを示しています。
 
-PowerShell を使用して検疫タグを表示する場合は、次の手順を実行します。
+     ![エンドユーザースパム通知のカスタム ロゴ](../../media/quarantine-tags-esn-customization-logo.png)
 
-- すべての組み込みタグまたはカスタム タグの概要リストを表示するには、次のコマンドを実行します。
+## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで検疫ポリシーを表示する
+
+1. [セキュリティ ポータルMicrosoft 365 Defenderに移動し、[電子メール &**の** 脅威ポリシー] セクションの [検疫ポリシー] に移動し、[検疫ポリシー \>  \>  \>  ]**を選択します**。
+
+2. [**検疫ポリシー] ページ** には、[名前]と [最終更新日] のポリシー **の一覧が表示** されます。
+
+3. 組み込みまたはカスタム検疫ポリシーの設定を表示するには、名前をクリックして、一覧から検疫ポリシーを選択します。
+
+4. グローバル設定を表示するには、[グローバル設定] **をクリックします。**
+
+### <a name="view-quarantine-policies-in-powershell"></a>PowerShell で検疫ポリシーを表示する
+
+PowerShell を使用して検疫ポリシーを表示する場合は、次の手順を実行します。
+
+- すべての組み込みポリシーまたはカスタム ポリシーの概要リストを表示するには、次のコマンドを実行します。
 
   ```powershell
   Get-QuarantineTag | Format-Table Name
   ```
 
-- 組み込みまたはカスタム検疫タグの設定を表示するには、検疫タグの名前に置き換え、 \<TagName\> 次のコマンドを実行します。
+- 組み込みまたはカスタム検疫ポリシーの設定を表示するには、検疫ポリシーの名前に置き換え、 \<QuarantinePolicyName\> 次のコマンドを実行します。
 
   ```powershell
-  Get-QuarantineTag -Identity "<TagName>"
+  Get-QuarantineTag -Identity "<QuarantinePolicyName>"
   ```
 
 - グローバル設定を表示するには、次のコマンドを実行します。
@@ -380,37 +384,64 @@ PowerShell を使用して検疫タグを表示する場合は、次の手順を
 
 構文とパラメーターの詳細については、「[Get-HostedContentFilterPolicy](/powershell/module/exchange/get-hostedcontentfilterpolicy)」を参照してください。
 
-## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターで検疫タグ&削除する
+## <a name="modify-quarantine-policies-in-the-microsoft-365-defender-portal"></a>ポータルで検疫ポリシーをMicrosoft 365 Defenderする
+
+1. [セキュリティ ポータルMicrosoft 365 Defenderに移動し、[電子メール &**の** 脅威ポリシー] セクションの [検疫ポリシー] に移動し、[検疫ポリシー \>  \>  \>  ]**を選択します**。
+
+2. [検疫 **ポリシー] ページで** 、名前をクリックしてポリシーを選択します。
+
+3. ポリシーを選択した後、[ポリシーの編集] アイコン ![ ](../../media/m365-cc-sc-edit-icon.png) **が表示される [ポリシーの編集** ] アイコンをクリックします。
+
+4. 開 **くポリシーの** 編集ウィザードは、この記事の前の「Microsoft 365 Defender ポータルの検疫ポリシーの作成」で説明したように、新しいポリシー [ウィザードと](#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal)事実上同じです。
+
+   主な違いは、既存のポリシーの名前を変更できない点です。
+
+5. ポリシーの変更が完了したら、[概要] ページに移動し、[送信] を **クリックします**。
+
+### <a name="modify-quarantine-policies-in-powershell"></a>PowerShell で検疫ポリシーを変更する
+
+PowerShell を使用してカスタム検疫ポリシーを変更する場合は、検疫ポリシーの名前に置き換え、次の \<QuarantinePolicyName\> 構文を使用します。
+
+```powershell
+Set-QuarantineTag -Identity "<QuarantinePolicyName>" [Settings]
+```
+
+使用可能な設定は、この記事で前述した検疫ポリシーの作成に関する説明と同じです。
+
+構文とパラメーターの詳細については [、「Set-QuarantineTag」を参照してください](/powershell/module/exchange/set-quarantinetag)。
+
+## <a name="remove-quarantine-policies-in-the-microsoft-365-defender-portal"></a>セキュリティ ポータルで検疫ポリシーをMicrosoft 365 Defenderする
 
 **注**:
 
-- 組み込みの検疫タグは削除できない。
-
-- カスタム検疫タグを削除する前に、使用されていないか確認してください。 たとえば、PowerShell で次のコマンドを実行します。
+- 組み込みの検疫ポリシーを削除できない。
+- カスタム検疫ポリシーを削除する前に、そのポリシーが使用されていないか確認してください。 たとえば、PowerShell で次のコマンドを実行します。
 
   ```powershell
   Get-HostedContentFilterPolicy | Format-List Name,*QuarantineTag
   ```
 
-  検疫タグが使用されている場合は、割 [り当てられた検疫タグを](#step-2-assign-a-quarantine-tag-to-supported-features) 削除する前に置き換える必要があります。
+  検疫ポリシーが使用されている場合は、割 [り当てられた検疫ポリシー](#step-2-assign-a-quarantine-policy-to-supported-features) を削除する前に置き換える必要があります。
 
-1. セキュリティ コンプライアンス センターで&の管理ポリシーに移動し、[検疫 \> タグ]**を選択します**。
+1. [セキュリティ ポータルMicrosoft 365 Defenderに移動し、[電子メール &**の** 脅威ポリシー] セクションの [検疫ポリシー] に移動し、[検疫ポリシー \>  \>  \>  ]**を選択します**。
 
-2. [検疫タグ **] ページ** で、削除するカスタム検疫タグを選択し、[タグの削除] **をクリックします**。
+2. [検疫 **ポリシー] ページ** で、名前をクリックして削除するカスタム検疫ポリシーを選択します。
 
-3. 表示 **される確認ダイアログ** で [タグの削除] をクリックします。
+3. ポリシーを選択した後、[ポリシーの削除] ![ アイコン ](../../media/m365-cc-sc-delete-icon.png) が表示される [ **ポリシーの** 削除] アイコンをクリックします。
 
-### <a name="remove-quarantine-tags-in-powershell"></a>PowerShell で検疫タグを削除する
+4. 表示 **される確認ダイアログで** [ポリシーの削除] をクリックします。
 
-PowerShell を使用してカスタム検疫タグを削除する場合は、検疫タグの名前に置き換え、次の \<TagName\> コマンドを実行します。
+### <a name="remove-quarantine-policies-in-powershell"></a>PowerShell で検疫ポリシーを削除する
+
+PowerShell を使用してカスタム検疫ポリシーを削除する場合は、検疫ポリシーの名前に置き換え、 \<QuarantinePolicyName\> 次のコマンドを実行します。
 
 ```powershell
-Remove-QuarantineTag -Identity "<TagName>"
+Remove-QuarantineTag -Identity "<QuarantinePolicyName>"
 ```
 
 構文とパラメーターの詳細については [、「Remove-QuarantineTag」を参照してください](/powershell/module/exchange/remove-quarantinetag)。
 
-## <a name="quarantine-tag-permission-details"></a>検疫タグのアクセス許可の詳細
+## <a name="quarantine-policy-permission-details"></a>検疫ポリシーのアクセス許可の詳細
 
 次のセクションでは、検疫済みメッセージの詳細およびエンドユーザーのスパム通知における事前設定されたアクセス許可グループと個々のアクセス許可の影響について説明します。
 
@@ -420,19 +451,19 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 #### <a name="no-access"></a>アクセスなし
 
-検疫タグがアクセス許可なし(アクセス許可なし) を割り当てる場合、ユーザーは引き続きいくつかのベースライン機能を取得します。
+検疫ポリシーでアクセス許可なし(アクセス許可なし) が割り当て済みである場合、ユーザーは引き続きいくつかの基準機能を取得します。
 
 - **検疫済みメッセージの詳細**: [ **メッセージ ヘッダーの表示] ボタン** は常に使用できます。
 
-  ![検疫タグによってユーザーにアクセス許可がない場合、検疫済みメッセージの詳細で使用可能なボタン](../../media/quarantine-tags-quarantined-message-details-no-access.png)
+  ![検疫ポリシーでユーザーにアクセス許可がない場合、検疫済みメッセージの詳細で使用可能なボタン](../../media/quarantine-tags-quarantined-message-details-no-access.png)
 
 - **エンドユーザーのスパム通知**: **検疫内** のメッセージにユーザーを移動する [確認] ボタンは常に使用できます。
 
-  ![検疫タグによってユーザーにアクセス許可がない場合、エンド ユーザーのスパム通知で使用可能なボタン](../../media/quarantine-tags-esn-no-access.png)
+  ![検疫ポリシーでユーザーにアクセス許可がない場合、エンド ユーザーのスパム通知で使用可能なボタン](../../media/quarantine-tags-esn-no-access.png)
 
 #### <a name="limited-access"></a>制限付きアクセス
 
-検疫タグに制限付きアクセス許可 **が割り** 当てられている場合、ユーザーは次の機能を利用できます。
+検疫ポリシーで制限付きアクセス許可 **が割り** 当てられている場合、ユーザーは次の機能を利用できます。
 
 - **検疫済みメッセージの詳細**: 次のボタンを使用できます。
   - **リリースの要求**
@@ -441,17 +472,17 @@ Remove-QuarantineTag -Identity "<TagName>"
   - **送信者をブロックする**
   - **検疫から削除する**
 
-  ![検疫タグがユーザーに制限付きアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+  ![検疫ポリシーがユーザーに制限付きアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
 - **エンド ユーザーのスパム通知**: 次のボタンを使用できます。
   - **送信者をブロックする**
   - **確認**
 
-  ![検疫タグがユーザーに制限付きアクセス許可を与える場合、エンド ユーザーのスパム通知で使用可能なボタン](../../media/quarantine-tags-esn-limited-access.png)
+  ![検疫ポリシーがユーザーに制限付きアクセス許可を与える場合、エンド ユーザーのスパム通知で使用可能なボタン](../../media/quarantine-tags-esn-limited-access.png)
 
 #### <a name="full-access"></a>フル アクセス
 
-検疫タグがフル アクセス権限(すべての使用可能なアクセス許可) を割り当てる場合、ユーザーは次の機能を取得します。
+検疫ポリシーで [フル アクセス] **アクセス許可** (すべての使用可能なアクセス許可) が割り当て済みである場合、ユーザーは次の機能を利用できます。
 
 - **検疫済みメッセージの詳細**: 次のボタンを使用できます。
   - **リリース メッセージ**
@@ -461,14 +492,14 @@ Remove-QuarantineTag -Identity "<TagName>"
   - **送信者を許可する**
   - **検疫から削除する**
 
-  ![検疫タグがユーザーにフル アクセスのアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+  ![検疫ポリシーがユーザーにフル アクセスのアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
 - **エンド ユーザーのスパム通知**: 次のボタンを使用できます。
   - **送信者をブロックする**
   - **リリース**
   - **確認**
 
-  ![検疫タグがユーザーにフル アクセスのアクセス許可を与える場合、エンド ユーザーのスパム通知で使用可能なボタン](../../media/quarantine-tags-esn-full-access.png)
+  ![検疫ポリシーがユーザーにフル アクセスのアクセス許可を与える場合、エンド ユーザーのスパム通知で使用可能なボタン](../../media/quarantine-tags-esn-full-access.png)
 
 ### <a name="individual-permissions"></a>個々のアクセス許可
 

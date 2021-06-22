@@ -1,5 +1,5 @@
 ---
-title: ユーザー申請ポリシー
+title: ユーザーが報告したメッセージ設定
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -17,14 +17,14 @@ ms.collection:
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f565a71b44d27076ea6ff0b25be5d5b3932913c9
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53052989"
+ms.locfileid: "53055122"
 ---
-# <a name="user-submissions-policy"></a>ユーザー申請ポリシー
+# <a name="user-reported-message-settings"></a>ユーザーが報告したメッセージ設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,16 +33,16 @@ ms.locfileid: "53052989"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-メールボックスMicrosoft 365組織Exchange Online、悪意のあるメッセージまたは悪意ないメッセージを受信するメールボックスを指定できます。 ユーザーがさまざまなレポート オプションを使用してメッセージを送信する場合、このメールボックスを使用してメッセージを傍受 (カスタム メールボックスにのみ送信) したり、メッセージのコピー (カスタム メールボックスと Microsoft に送信) を受信することができます。 この機能は、次のメッセージ レポート オプションで動作します。
+メールボックスMicrosoft 365組織Exchange Online、悪意のあるメッセージまたは悪意ないメッセージを受信するメールボックスを指定できます。 ユーザーがさまざまなレポート オプションを使用してメッセージを報告する場合、このメールボックスを使用してメッセージを傍受 (カスタム メールボックスにのみ送信) したり、メッセージのコピー (カスタム メールボックスと Microsoft に送信) を受信することができます。 この機能は、次のメッセージ レポート オプションで動作します。
 
 - [レポート メッセージ アドイン](enable-the-report-message-add-in.md)
 - [レポートフィッシング アドイン](enable-the-report-phish-add-in.md)
 - [サードパーティのレポート ツール](#third-party-reporting-tools)
 
-Microsoft に直接ではなく、ユーザーが報告したメッセージをカスタム メールボックスに配信すると、管理者は管理者申請を使用してメッセージを選択的および手動で Microsoft に [報告できます](admin-submission.md)。
+Microsoft に直接ではなく、ユーザーが報告したメッセージをカスタム メールボックスに配信すると、管理者は管理者申請を使用してメッセージを選択的および手動で Microsoft に [報告できます](admin-submission.md)。 これらの設定は、以前はユーザー申請ポリシーと呼ばれるものでした。
 
   > [!NOTE]
-  > レポートが無効になっている[](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)場合は、Outlook on the web送信を有効にすると、この設定は上書きされ、ユーザーはメッセージを再びOutlook on the webできます。
+  > レポートが無効になっている[](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)場合は、Outlook on the webでユーザーが報告したメッセージを有効にすると、その設定が上書きされ、ユーザーはメッセージを再びOutlook on the webできます。
 
 ## <a name="custom-mailbox-prerequisites"></a>カスタム メールボックスの前提条件
 

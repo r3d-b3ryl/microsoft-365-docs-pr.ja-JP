@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 499ac9a6ee81bacb79cd83993d510f87e11c62c6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ceccd9e3c8a8137f672e7be519675034a84c7881
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844720"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055104"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Android 用 Microsoft Defender for Endpoint
 
@@ -72,7 +72,8 @@ ms.locfileid: "52844720"
 
 ### <a name="system-requirements"></a>システム要件
 
--   Android 6.0 以上を実行している Android デバイス。
+-   Android 6.0 以上を実行している携帯電話。 **Android を実行しているタブレットや他のモバイル デバイスは現在サポートされていません。** 
+
 -   Intune ポータル サイトは Google Play から[ダウンロードされ、](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)インストールされます。 Intune デバイス コンプライアンス ポリシーを適用するには、デバイスの登録が必要です。
 
 ### <a name="installation-instructions"></a>インストール手順

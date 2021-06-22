@@ -3,7 +3,6 @@ title: PowerShell を使用して Microsoft 365 に接続する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Microsoft 365 テナントに接続するには、Microsoft 365 用 PowerShell を使用して、コマンド ラインから管理センターのタスクを実行します。
-ms.openlocfilehash: 70d6aa1373daf2322319d21e385fc1498af3351e
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6b8f98441c7d727984bde8775dea496a9324d50c
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782803"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053061"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>PowerShell を使用して Microsoft 365 に接続する
 
@@ -36,6 +35,11 @@ Microsoft 365 および管理者のユーザー アカウント、グループ�
 - コマンドレット名に *Msol* が含まれる Windows PowerShell 用 Microsoft Azure Active Directory モジュール
 
 現時点で、Graph 用 Azure Active Directory PowerShell モジュールは、ユーザー、グループ、およびライセンスの管理について Windows PowerShell 用 Microsoft Azure Active Directory モジュールの機能に完全に置き換わるものではありません。時には、両方のバージョンを使用する必要があります。同じコンピューターに両方のバージョンを安全にインストールできます。
+
+>[!Note]
+>また、Microsoft 365 管理センターで [Azure Cloud Shell](#connect-with-the-azure-cloud-shell) と接続することもできます。
+>
+
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -188,6 +192,14 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
    ```powershell
      (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
    ```
+
+## <a name="connect-with-the-azure-cloud-shell"></a>Azure Cloud Shell との接続
+
+Microsoft 365 管理センターで Azure Cloud Shell に接続して使用するには、タスク バーの右上にある PowerShell ウィンドウ アイコンを選択します。 **[Azure Cloud Shell へようこそ]** ウィンドウで、**PowerShell** を選択します。
+
+Microsoft 365 サブスクリプションに関連付けられた、組織のアクティブな Azure サブスクリプションが必要です。 まだお持ちでない場合は、作成できます。 Azure サブスクリプションを取得すると、PowerShell ウィンドウが開き、PowerShell のコマンドやスクリプトを実行することができます。
+
+詳細については、「[Azure Cloud Shell](/azure/cloud-shell/overview)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
