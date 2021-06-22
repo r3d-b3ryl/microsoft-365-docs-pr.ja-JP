@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a39c6a3b287933ff79f94b00e364d7a45378bd1f
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: f565a71b44d27076ea6ff0b25be5d5b3932913c9
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933085"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052989"
 ---
 # <a name="user-submissions-policy"></a>ユーザー申請ポリシー
 
@@ -42,7 +42,7 @@ ms.locfileid: "52933085"
 Microsoft に直接ではなく、ユーザーが報告したメッセージをカスタム メールボックスに配信すると、管理者は管理者申請を使用してメッセージを選択的および手動で Microsoft に [報告できます](admin-submission.md)。
 
   > [!NOTE]
-  > web 上の[](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)Outlook でレポートが無効になっている場合、ここでユーザーの申請を有効にすると、その設定が上書きされ、ユーザーは web 上の Outlookでメッセージを報告できます。
+  > レポートが無効になっている[](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)場合は、Outlook on the web送信を有効にすると、この設定は上書きされ、ユーザーはメッセージを再びOutlook on the webできます。
 
 ## <a name="custom-mailbox-prerequisites"></a>カスタム メールボックスの前提条件
 
@@ -68,7 +68,7 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
 
 - ユーザー申請の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
 
-  - **Defender ポータル** の **組織** の管理 [またはセキュリティMicrosoft 365管理者です](permissions-in-the-security-and-compliance-center.md)。
+  - **[組織の管理****] または [セキュリティ** 管理者][をMicrosoft 365 Defenderします](permissions-in-the-security-and-compliance-center.md)。
   - **[組織の** 管理] [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)。
 
 - PowerShell へのアクセスExchange Online必要です。 使用しようとしているアカウントが Exchange Online PowerShell にアクセスできない場合は、申請メールボックスを指定すると、次のようなエラー メッセージが表示されます。
@@ -80,13 +80,13 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
   - [Exchange Online PowerShell へのアクセスを有効または無効にする](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [クライアント アクセス ルール (Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Defender ポータルMicrosoft 365を使用してユーザー申請メールボックスを構成する
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>ユーザー申請メールボックスMicrosoft 365 Defenderポータルを使用して構成する
 
-1. [Defender Microsoft 365] ポータルで、[ポリシー] &[脅威ポリシー **] [その他**] セクション [ユーザーが報告したメッセージの設定] [ユーザーの申請] \>  \>  \>  \> **に移動します**。
+1. このポータルMicrosoft 365 Defender、[ポリシー] &[脅威ポリシー] [その **他**] セクション [ユーザーが報告したメッセージの設定 \>  \> ] [ユーザーの申請] \>  \> **に移動します**。
 
 2. [ユーザーの **申請] ページ** で、表示される情報は **、[Microsoft** レポート メッセージ] Outlook設定が [オフ] または [オン] のOutlook **によって** 決 **まります**。
 
-   - **[Microsoft Outlook レポート メッセージ] ボタン** \>**On** ![トグルオン: レポート メッセージ アドイン、レポート フィッシング アドイン、または web 上の Outlook の組み込みレポートを使用する場合は、このオプションを選択し、次の設定 ](../../media/scc-toggle-on.png) を構成します。
+   - **[Microsoft Outlook レポート メッセージ] ボタン** \>**On** ![トグルオン: Outlook on the web でレポート メッセージ アドイン、レポート フィッシング アドイン、または組み込みのレポートを使用する場合は、このオプションを選択し、 ](../../media/scc-toggle-on.png) 次の設定を構成します。
      - **報告されたメッセージを送信する**: 次のいずれかのオプションを選択します。
        - **Microsoft**: ユーザー申請メールボックスは使用されません (報告されたメッセージはすべて Microsoft に送信されます)。
        - **Microsoft と組織のメールボックス**: 表示されるボックスに、既存のメールボックスの電子メール Exchange Onlineします。 配布グループは許可されません。 ユーザー申請は、分析のために Microsoft と管理者またはセキュリティ操作チームが分析するカスタム メールボックスの両方に移動します。
@@ -107,7 +107,7 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
          - **メッセージを報告しない**
 
           > [!CAUTION]
-          > web メールボックス ポリシーで Outlook を使用して web 上の[Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)で迷惑メール報告を無効にしたが、Microsoft にメッセージを報告するように以前の設定を構成した場合、ユーザーはレポート メッセージ アドインまたはレポート フィッシング アドインを使用して、web 上の Outlook で Microsoft にメッセージを報告できます。
+          > Outlook on the web メールボックス ポリシーを使用して[Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)で迷惑メール報告を無効にしたが、以前の設定を構成して Microsoft にメッセージを報告した場合、ユーザーはレポート メッセージ アドインまたはレポートフィッシング アドインを使用して Outlook on the web で Microsoft にメッセージを報告できます。
 
      - **[ユーザー レポートエクスペリエンス] セクション**
        - **[レポート** の前に]タブ: [タイトル] および [メッセージ] 本文ボックスに、ユーザーがレポート メッセージ アドインまたはレポート フィッシング アドインを使用してメッセージを報告する前に表示される説明テキストを入力します。 変数 %type% を使用して、申請の種類 (迷惑メール、迷惑メール、フィッシングなど) を含めできます。
@@ -117,14 +117,16 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
 
           > 電子メールは分析のために Microsoft に送信されます。 一部の電子メールには、個人情報または機密情報が含まれている場合があります。
 
-   - **[Microsoft Outlook レポート メッセージ] ボタン** \>**Off** ![トグルオフ: レポート メッセージ アドイン、レポート フィッシング アドイン、または web 上の Outlook の組み込みレポートの代わりにサード パーティ製のレポート ツールを使用する場合は、このオプションを選択し、次の設定を ](../../media/scc-toggle-off.png) 構成します。
+   - **[Microsoft Outlook レポート メッセージ] ボタン** \>**Off** ![トグルオフ: レポート メッセージ アドイン、レポート フィッシング アドイン、または Outlook on the web の組み込みレポートの代わりにサード パーティ製のレポート ツールを使用する場合は、このオプションを選択し、次の設定を ](../../media/scc-toggle-off.png) 構成します。
      - [この **カスタム メールボックスを使用して、ユーザーが報告した申請を受信する] を選択します**。 表示されるボックスに、メールを受信できる既存のメールボックスのExchange Onlineを入力します。
 
    完了したら、[確認] を **クリックします**。 これらの値をクリアするには、[復元] を **クリックします。**
 
 ## <a name="third-party-reporting-tools"></a>サードパーティのレポート ツール
 
-サード パーティ製のメッセージ レポート ツールを構成して、報告されたメッセージをカスタム メールボックスに送信できます。 唯一の要件は、元のメッセージがカスタム メールボックスに送信されるメッセージの添付ファイルとして含まれる場合です (元のメッセージをカスタム メールボックスに転送するだけではない)。
+サード パーティ製のメッセージ レポート ツールを構成して、報告されたメッセージをカスタム メールボックスに送信できます。 これを行うには、[Microsoft Outlook レポート メッセージ] ボタン **の設定** を[オフ]に設定し、自分の組織のメールボックスを選択Office 365メールボックスに設定します。
+
+唯一の要件は、元のメッセージが .EML または .カスタム メールボックスに送信されるメッセージ内の MSG 添付ファイル (圧縮されていない) (元のメッセージをカスタム メールボックスに転送するだけではない)。
 
 メッセージの書式設定の要件については、次のセクションで説明します。 書式設定は省略可能ですが、指定された形式に従う場合、レポートは常にフィッシングとして送信されます。
 

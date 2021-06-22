@@ -1,5 +1,5 @@
 ---
-title: ラーニング管理システムで Microsoft Teams クラスを使用する
+title: Blackboard でMicrosoft Teamsクラスを使用する
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,32 +12,32 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: 学習管理システムに Microsoft Teams クラスを統合する
-ms.openlocfilehash: 18d33225dd57932af20421c6b3b5dc4fe3b397b8
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: 管理Microsoft Teamsシステムにラーニングクラスを統合する
+ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327785"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053253"
 ---
-# <a name="use-microsoft-teams-classes-in-your-learning-management-system"></a>ラーニング管理システムで Microsoft Teams クラスを使用する
+# <a name="use-microsoft-teams-classes-with-blackboard"></a>Blackboard でMicrosoft Teamsクラスを使用する
 
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-Microsoft Teams クラス のチームは、教育者と学生が学習管理システム (LMS) と Teams の間を簡単に移動するのに役立つラーニング ツール相互運用性 (LTI) アプリです。 ユーザーは、自分のコースに関連付けられているクラス チームに、自分の LMS 内から直接アクセスできます。
+Microsoft Teamsクラスは、ラーニング ツール相互運用性 (LTI) アプリで、教育者と学生が ラーニング 管理システム (LMS) と Teams の間を簡単に移動するのに役立ちます。 ユーザーは、自分のコースに関連付けられているクラス チームに、自分の LMS 内から直接アクセスできます。
 
-## <a name="approve-the-app-in-the-microsoft-azure-tenant"></a>Microsoft Azure テナントでアプリを承認する
+## <a name="approve-the-app-in-the-microsoft-azure-tenant"></a>テナントでアプリをMicrosoft Azureする
 
-次のタスクは、管理者 365 管理者Microsoft Office Blackboard Learn Ultra 管理者によって完了します。
+次のタスクは、管理者と Blackboard Learn Ultra Microsoft Office 365によって完了します。
 
-Blackboard Learn Ultra 内の統合を管理する前に、Microsoft Office 365 管理者は、教育機関の Microsoft Azure テナント用の Blackboard **MSFT Teams for** Learn Ultra Azure アプリを承認する必要があります。
+Blackboard Learn Ultra 内の統合を管理する前に、Microsoft Office 365 管理者は、教育機関の Microsoft Azure テナントの Blackboard **MSFT Teams** for Learn Ultra Azure アプリを承認する必要があります。
 
 1. Microsoft テナント ID を見つける。 テナント [を検索する方法を参照してください](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)。
 
 2. 次の例に従って、Microsoft Identity Platform Admin Consent Endpoint をリダイレクトします。
 
-   `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
+   `https://login.microsoftonline.com/{tenant}/adminconsent?client_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
    > [!NOTE]
    > {tenant} を組織の Microsoft テナント ID に置き換える。
@@ -46,9 +46,9 @@ Blackboard Learn Ultra 内の統合を管理する前に、Microsoft Office 365 
 
 Blackboard Learn Ultra 管理者として、テスト環境内に 2 つの LTI 1.3 統合アプリを登録する必要があります。
 
-- 名簿の同期をサポートする Blackboard Learn Class Teams の統合
+- 名簿の同期をTeamsする Blackboard Learn クラスの統合
 
-- Microsoft Teams クラス チーム LTI アプリ
+- クラス Microsoft Teams LTI アプリ
 
 1. 両方のアプリに対して次の LTI クライアント ID をメモします。
 
@@ -80,7 +80,7 @@ REST アプリケーションをセットアップするには、次の手順を
 
 1. [管理ツールの学習] にアクセスし、[統合] セクションから **[REST API の** 統合 **] を選択** します。
 
-2. [ **統合の作成] を** 選択し、Blackboard Learn Class Teams Integration LTI ツールに入力したのと同じアプリケーション/クライアント ID を入力します。
+2. [**統合の作成] を** 選択し、統合 LTI ツールに対して入力したのと同じアプリケーション/クライアント ID Teams入力します。
 
 3. [ユーザーの学習] を入力します (これは、管理者のユーザー名を学習する場合があります)、または [参照] を選択 **して** 検索します。
 
@@ -104,19 +104,19 @@ REST アプリケーションをセットアップするには、次の手順を
 
 6. [完了 **したら送信]** を選択します。
 
-## <a name="enable-class-teams-in-blackboard-learn"></a>Blackboard Learn でクラス チームを有効にする
+## <a name="enable-class-teams-in-blackboard-learn"></a>Blackboard Learn でTeamsを有効にする
 
-LTI ツールを有効にしたら、次に、Microsoft Class Teams の統合を独自の 365 テナントからMicrosoft Officeします。 これを行うには、Blackboard Learn Ultra 管理者として次の手順を実行します。
+LTI ツールを有効にしたら、次の手順では、独自のテナントから Microsoft Class Teams統合をMicrosoft Office 365します。 これを行うには、Blackboard Learn Ultra 管理者として次の手順を実行します。
 
-1. [**管理ツールと**  >  **ユーティリティの詳細] で、[Microsoft** **Teams Integration Admin] を選択します**。
+1. [**管理ツールと**  >  **ユーティリティの詳細] で**、[統合管理者] **Microsoft Teamsを選択します**。
 
    ![使用可能なツールの一覧を含むツールとユーティリティ ダイアログ](../media/lti-media/tools-utilities.png)
 
-2. [Microsoft Teams を有効にする **] のチェック ボックスをオンにします**。
+2. [有効にする] チェック **ボックスをオンMicrosoft Teams。**
 
 3. [Microsoft O365 Admin] のセクションで参照されているテナント ID を入力します。
 
  > [!NOTE]
- > アプリが O365 管理者によって承認されるまで、設定を保存できない。「Microsoft [Azure テナントでアプリを承認する」を参照してください](#approve-the-app-in-the-microsoft-azure-tenant)。
+ > アプリが O365 管理者によって承認されるまで、設定を保存できない。「[アプリを承認する」を参照Microsoft Azureします](#approve-the-app-in-the-microsoft-azure-tenant)。
 
-4. グローバル O365 管理者が Microsoft テナントで Blackboard Teams アプリケーションを承認した場合は、[送信] を **選択します**。
+4. グローバル O365 管理者が Microsoft テナントの Blackboard Teamsを承認した場合は、[送信] を **選択します**。

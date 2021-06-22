@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 87fb5c62b520168a686cc0b95a321becdd4656ba
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022872"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052965"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>デバイスごとのソフトウェアの脆弱性評価のエクスポート
 
@@ -48,9 +48,9 @@ ms.locfileid: "53022872"
    - ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
 
 3. [デルタ エクスポート ソフトウェアの脆弱性評価 **JSON 応答**](#3-delta-export-software-vulnerabilities-assessment-json-response)  DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId、EventTimestamp の各一意の組み合わせのエントリを含むテーブルを返します。
-API は、Json 応答として組織内のデータをプルします。 応答がページ分割されたので、応答から @odata.nextLink フィールドを使用して次の結果をフェッチできます。 <br><br> デバイス別に組織のソフトウェア脆弱性評価のスナップショット全体を取得するために使用される完全な "ソフトウェア脆弱性評価 (JSON 応答)" とは異なり、デルタ エクスポート OData API 呼び出しは、選択した日付と現在の日付 ("デルタ" API 呼び出し) の間に発生した変更のみをフェッチするために使用されます。 毎回大量のデータを含む完全なエクスポートを取得する代わりに、新規、固定、および更新された脆弱性に関する特定の情報のみを取得します。 デルタ エクスポート JSON 応答 API 呼び出しを使用して、「修正された脆弱性の数」など、さまざまな KPI を計算することもできます。 または "組織に追加された新しい脆弱性の数" <br><br> ソフトウェアの脆弱性に対するデルタ エクスポート JSON 応答 API 呼び出しは、対象の日付範囲のデータのみを返すので、完全なエクスポートとは _見なされません_。
+API は、Json 応答として組織内のデータをプルします。 応答がページ分割されたので、応答から @odata.nextLink フィールドを使用して次の結果をフェッチできます。 <br><br> デバイス別に組織のソフトウェア脆弱性評価のスナップショット全体を取得するために使用される完全な "ソフトウェア脆弱性評価 (JSON 応答)" とは異なり、デルタ エクスポート API 呼び出しは、選択した日付と現在の日付 ("デルタ" API 呼び出し) の間に発生した変更のみを取得するために使用されます。 毎回大量のデータを含む完全なエクスポートを取得する代わりに、新規、固定、および更新された脆弱性に関する特定の情報のみを取得します。 デルタ エクスポート JSON 応答 API 呼び出しを使用して、「修正された脆弱性の数」など、さまざまな KPI を計算することもできます。 または "組織に追加された新しい脆弱性の数" <br><br> ソフトウェアの脆弱性に対するデルタ エクスポート JSON 応答 API 呼び出しは、対象の日付範囲のデータのみを返すので、完全なエクスポートとは _見なされません_。
 
-収集されるデータ _(OData_ またはファイル _経由)_ は、現在の状態の現在のスナップショットであり、古いデータは含まれておりません。 過去のデータを収集するには、ユーザーがデータを独自のデータ ストレージに保存する必要があります。
+収集されるデータ _(Json_ 応答またはファイル _経由)_ は、現在の状態の現在のスナップショットであり、古いデータは含まれておりません。 過去のデータを収集するには、ユーザーがデータを独自のデータ ストレージに保存する必要があります。
 
 > [!Note]
 >
@@ -102,25 +102,25 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 プロパティ (ID) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
-CveId | string | 共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。 | CVE-2020-15992
-CvssScore | string | CVE の CVSS スコア。 | 6.2
-DeviceId | string | サービス内のデバイスの一意の識別子。 | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | string | デバイスの完全修飾ドメイン名 (FQDN)。 | johnlaptop.europe.contoso.com
+CveId | 文字列 | 共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。 | CVE-2020-15992
+CvssScore | 文字列 | CVE の CVSS スコア。 | 6.2
+DeviceId | 文字列 | サービス内のデバイスの一意の識別子。 | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | 文字列 | デバイスの完全修飾ドメイン名 (FQDN)。 | johnlaptop.europe.contoso.com
 DiskPaths  | 配列 \[ 文字列\] | 製品がデバイスにインストールされていることを示すディスク証拠。 | [ "C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
-ExploitabilityLevel | string | この脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) | ExploitIsInKit
-FirstSeenTimestamp | string | この製品の CVE がデバイスで初めて表示された場合。 | 2020-11-03 10:13:34.8476880
+ExploitabilityLevel | 文字列 | この脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) | ExploitIsInKit
+FirstSeenTimestamp | 文字列 | この製品の CVE がデバイスで初めて表示された場合。 | 2020-11-03 10:13:34.8476880
 ID | string | レコードの一意の識別子。 | 123ABG55_573AG&mnp!
-LastSeenTimestamp | string | デバイスで CVE が最後に表示された時刻。 | 2020-11-03 10:13:34.8476880
-OSPlatform | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 このプロパティは、同じファミリ内のバリエーションを含む特定のオペレーティング システム (Windows 10 7 などWindowsします。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。 | Windows10
-RbacGroupName  | string | 役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。 | Servers
-RecommendationReference | string | このソフトウェアに関連する推奨事項 ID への参照。 | va-_-microsoft-_-silverlight
-RecommendedSecurityUpdate (オプション) | string | ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。 | 2020 年 4 月のセキュリティ更新プログラム
-RecommendedSecurityUpdateId (オプション) | string | 対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子 | 4550961
+LastSeenTimestamp | 文字列 | デバイスで CVE が最後に表示された時刻。 | 2020-11-03 10:13:34.8476880
+OSPlatform | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 このプロパティは、同じファミリ内のバリエーションを含む特定のオペレーティング システム (Windows 10 7 などWindowsします。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。 | Windows10
+RbacGroupName  | 文字列 | 役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。 | Servers
+RecommendationReference | 文字列 | このソフトウェアに関連する推奨事項 ID への参照。 | va-_-microsoft-_-silverlight
+RecommendedSecurityUpdate (オプション) | 文字列 | ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。 | 2020 年 4 月のセキュリティ更新プログラム
+RecommendedSecurityUpdateId (オプション) | 文字列 | 対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子 | 4550961
 RegistryPaths  | 配列 \[ 文字列\] | 製品がデバイスにインストールされていることを示すレジストリ証拠。 | [ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight"
-SoftwareName | string | ソフトウェア製品の名前。 | クロム
-SoftwareVendor | string | ソフトウェア ベンダーの名前。 | google
-SoftwareVersion | string | ソフトウェア製品のバージョン番号。 | 81.0.4044.138
-VulnerabilitySeverityLevel  | string | CVSS スコアに基づくセキュリティ脆弱性に割り当てられた重大度レベルと、脅威の状況の影響を受ける動的要因。 | 中
+SoftwareName | 文字列 | ソフトウェア製品の名前。 | クロム
+SoftwareVendor | 文字列 | ソフトウェア ベンダーの名前。 | google
+SoftwareVersion | 文字列 | ソフトウェア製品のバージョン番号。 | 81.0.4044.138
+VulnerabilitySeverityLevel  | 文字列 | CVSS スコアに基づくセキュリティ脆弱性に割り当てられた重大度レベルと、脅威の状況の影響を受ける動的要因。 | 中
 
 ### <a name="16-examples"></a>1.6 例
 
@@ -312,7 +312,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 プロパティ (ID) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
 ファイルのエクスポート | 配列 \[ 文字列\]  | 組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧。 | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
-GeneratedTime | string | エクスポートが生成された時刻。 | 2021-05-20T08:00:00Z
+GeneratedTime | 文字列 | エクスポートが生成された時刻。 | 2021-05-20T08:00:00Z
 
 ### <a name="26-examples"></a>2.6 例
 
@@ -377,7 +377,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### <a name="35-properties"></a>3.5 プロパティ
 
-返される各レコードには、デバイス OData API による完全なエクスポート ソフトウェア脆弱性評価のすべてのデータと  _**、EventTimestamp**_ と Status の 2 つの追加フィールドが含 _**まれます**_。
+返される各レコードには、デバイス API による完全なエクスポート ソフトウェア脆弱性評価のすべてのデータと  _**、EventTimestamp**_ と Status の 2 つの追加フィールドが含 _**まれます**_。
 
 >[!NOTE]
 >- 応答で追加の列が返される場合があります。 これらの列は一時的なもので、削除される可能性があります。文書化された列のみを使用してください。
@@ -387,27 +387,27 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 プロパティ (ID) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
-CveId | string | 共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。 | CVE-2020-15992  
-CvssScore | string | CVE の CVSS スコア。 | 6.2  
-DeviceId | string | サービス内のデバイスの一意の識別子。 | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
-DeviceName | string | デバイスの完全修飾ドメイン名 (FQDN)。 | johnlaptop.europe.contoso.com  
+CveId | 文字列 | 共通の脆弱性と露出 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。 | CVE-2020-15992  
+CvssScore | 文字列 | CVE の CVSS スコア。 | 6.2  
+DeviceId | 文字列 | サービス内のデバイスの一意の識別子。 | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+DeviceName | 文字列 | デバイスの完全修飾ドメイン名 (FQDN)。 | johnlaptop.europe.contoso.com  
 DiskPaths | Array[string] | 製品がデバイスにインストールされていることを示すディスク証拠。 | [ "C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]  
 EventTimestamp | String | このデルタ イベントが見つかった時刻。 | 2021-01-11T11:06:08.291Z
-ExploitabilityLevel | string | この脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) | ExploitIsInKit  
-FirstSeenTimestamp | string | この製品の CVE がデバイスで初めて表示された場合。 | 2020-11-03 10:13:34.8476880  
+ExploitabilityLevel | 文字列 | この脆弱性の悪用レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) | ExploitIsInKit  
+FirstSeenTimestamp | 文字列 | この製品の CVE がデバイスで初めて表示された場合。 | 2020-11-03 10:13:34.8476880  
 ID | string | レコードの一意の識別子。 | 123ABG55_573AG&mnp!  
-LastSeenTimestamp | string | デバイスで CVE が最後に表示された時刻。 | 2020-11-03 10:13:34.8476880  
-OSPlatform | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。 | Windows10  
-RbacGroupName | string | 役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。 | Servers  
-RecommendationReference | string | このソフトウェアに関連する推奨事項 ID への参照。 | va-microsoft--silverlight  
-RecommendedSecurityUpdate  | string | ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。 | 2020 年 4 月のセキュリティ更新プログラム  
-RecommendedSecurityUpdateId  | string | 対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子 | 4550961  
+LastSeenTimestamp | 文字列 | デバイスで CVE が最後に表示された時刻。 | 2020-11-03 10:13:34.8476880  
+OSPlatform | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。 | Windows10  
+RbacGroupName | 文字列 | 役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。 | Servers  
+RecommendationReference | 文字列 | このソフトウェアに関連する推奨事項 ID への参照。 | va-microsoft--silverlight  
+RecommendedSecurityUpdate  | 文字列 | ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。 | 2020 年 4 月のセキュリティ更新プログラム  
+RecommendedSecurityUpdateId  | 文字列 | 対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子 | 4550961  
 RegistryPaths  | Array[string] | 製品がデバイスにインストールされていることを示すレジストリ証拠。 | [ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome"  
-SoftwareName | string | ソフトウェア製品の名前。 | クロム  
-SoftwareVendor | string | ソフトウェア ベンダーの名前。 | google  
-SoftwareVersion | string | ソフトウェア製品のバージョン番号。 | 81.0.4044.138  
+SoftwareName | 文字列 | ソフトウェア製品の名前。 | クロム  
+SoftwareVendor | 文字列 | ソフトウェア ベンダーの名前。 | google  
+SoftwareVersion | 文字列 | ソフトウェア製品のバージョン番号。 | 81.0.4044.138  
 状態 | String | **New**  (デバイスに導入された新しい脆弱性の場合) (1)**修正** 済み (この脆弱性がデバイス上に存在しなくなった場合、これは修復   されたという意味です)。 (2) **更新**  (デバイスの脆弱性が変更された場合)。 変更の可能性は、CVSS スコア、悪用可能性レベル、重大度レベル、DiskPaths、RegistryPaths、RecommendedSecurityUpdate などです。 | Fixed
-VulnerabilitySeverityLevel | string | CVSS スコアに基づくセキュリティ脆弱性に割り当てられた重大度レベルと、脅威の状況の影響を受ける動的要因。 | 中  
+VulnerabilitySeverityLevel | 文字列 | CVSS スコアに基づくセキュリティ脆弱性に割り当てられた重大度レベルと、脅威の状況の影響を受ける動的要因。 | 中  
 
 #### <a name="clarifications"></a>明確化
 

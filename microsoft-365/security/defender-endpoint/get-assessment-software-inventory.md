@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 639f850119498222684c4b3804b32a29dda3eac4
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 6a0bc142d8fa353e7e5910b0a5eba4842cd7ff50
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022884"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053169"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>デバイスごとのソフトウェア インベントリ評価のエクスポート
 
@@ -45,7 +45,7 @@ ms.locfileid: "53022884"
 
   - ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
 
-収集されるデータ _(OData_ またはファイル _経由)_ は、現在の状態の現在のスナップショットであり、古いデータは含まれておりません。 過去のデータを収集するには、ユーザーがデータを独自のデータ ストレージに保存する必要があります。
+収集されるデータ _(Json_ 応答またはファイル _経由)_ は、現在の状態の現在のスナップショットであり、古いデータは含まれておりません。 過去のデータを収集するには、ユーザーがデータを独自のデータ ストレージに保存する必要があります。
 
 > [!Note]
 >
@@ -98,20 +98,20 @@ GET /api/machines/SoftwareInventoryByMachine
 
 プロパティ (ID) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
-DeviceId | string | サービス内のデバイスの一意の識別子。 | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | string | デバイスの完全修飾ドメイン名 (FQDN)。 | johnlaptop.europe.contoso.com
+DeviceId | 文字列 | サービス内のデバイスの一意の識別子。 | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | 文字列 | デバイスの完全修飾ドメイン名 (FQDN)。 | johnlaptop.europe.contoso.com
 DiskPaths | Array[string]  | 製品がデバイスにインストールされていることを示すディスク証拠。 | [ "C: \\プログラム ファイル (x86) \\ Microsoft \\ Silverlight \\ アプリケーション \\silverlight.exe" ]
-EndOfSupportDate | string | このソフトウェアのサポートが終了または終了する日付。 | 2020-12-30
-EndOfSupportStatus | string | サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。 | 今後の EOS
+EndOfSupportDate | 文字列 | このソフトウェアのサポートが終了または終了する日付。 | 2020-12-30
+EndOfSupportStatus | 文字列 | サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。 | 今後の EOS
 ID | string | レコードの一意の識別子。 | 123ABG55_573AG&mnp!
 NumberOfWeaknesses | int | このデバイス上のこのソフトウェアの弱点の数 | 3
-OSPlatform | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。 | Windows10
-RbacGroupName | string | 役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。 | Servers
+OSPlatform | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。 | Windows10
+RbacGroupName | 文字列 | 役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。 | Servers
 RegistryPaths | Array[string] | 製品がデバイスにインストールされていることを示すレジストリ証拠。 | [ "HKEY_LOCAL_MACHINE \\SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
-SoftwareFirstSeenTimestamp | string | このソフトウェアがデバイスで初めて見られた。 | 2019-04-07 02:06:47
-SoftwareName | string | ソフトウェア製品の名前。 | Silverlight
-SoftwareVendor | string | ソフトウェア ベンダーの名前。 | microsoft
-SoftwareVersion | string | ソフトウェア製品のバージョン番号。 | 81.0.4044.138
+SoftwareFirstSeenTimestamp | 文字列 | このソフトウェアがデバイスで初めて見られた。 | 2019-04-07 02:06:47
+SoftwareName | 文字列 | ソフトウェア製品の名前。 | Silverlight
+SoftwareVendor | 文字列 | ソフトウェア ベンダーの名前。 | microsoft
+SoftwareVersion | 文字列 | ソフトウェア製品のバージョン番号。 | 81.0.4044.138
 
 ### <a name="16-examples"></a>1.6 例
 
@@ -259,7 +259,7 @@ GET /api/machines/SoftwareInventoryExport
 プロパティ (ID) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
 ファイルのエクスポート | 配列 \[ 文字列\] | 組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧 | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | string | エクスポートが生成された時刻。 | 2021-05-20T08:00:00Z ]
+GeneratedTime | 文字列 | エクスポートが生成された時刻。 | 2021-05-20T08:00:00Z ]
 
 ### <a name="26-examples"></a>2.6 例
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ad8b2030da4fb4815eb71ca53fb2dbac67a05d79
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 7d39dddf4928b3bcb28fb008bcccd83c67f60177
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022392"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053181"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>デバイスごとのセキュリティで保護された構成評価をエクスポートする
 
@@ -47,7 +47,7 @@ ms.locfileid: "53022392"
 
   - ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
 
-収集されるデータ _(OData_ またはファイル _経由)_ は、現在の状態の現在のスナップショットであり、古いデータは含まれておりません。 過去のデータを収集するには、ユーザーがデータを独自のデータ ストレージに保存する必要があります。
+(JSON 応答またはファイルを使用 _して)_ 収集されるデータは、現在の状態の現在のスナップショットであり、歴史的なデータは含まれておりません。 過去のデータを収集するには、ユーザーがデータを独自のデータ ストレージに保存する必要があります。
 
 > [!Note]
 >
@@ -97,20 +97,20 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 プロパティ (ID) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
-ConfigurationCategory | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 | セキュリティ制御
-ConfigurationId | string | 特定の構成の一意の識別子 | scid-10000
-ConfigurationImpact | string | 構成が全体の構成スコアに与える影響の評価 (1-10) | 9
+ConfigurationCategory | 文字列 | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 | セキュリティ制御
+ConfigurationId | 文字列 | 特定の構成の一意の識別子 | scid-10000
+ConfigurationImpact | 文字列 | 構成が全体の構成スコアに与える影響の評価 (1-10) | 9
 ConfigurationName | string | 構成の表示名 | デバイスを Microsoft Defender for Endpoint にオンボードする
-ConfigurationSubcategory | string | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 | オンボード デバイス
-DeviceId | string | サービス内のデバイスの一意の識別子。 | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | string | デバイスの完全修飾ドメイン名 (FQDN)。 | johnlaptop.europe.contoso.com
+ConfigurationSubcategory | 文字列 | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 | オンボード デバイス
+DeviceId | 文字列 | サービス内のデバイスの一意の識別子。 | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | 文字列 | デバイスの完全修飾ドメイン名 (FQDN)。 | johnlaptop.europe.contoso.com
 IsApplicable | bool | 構成またはポリシーが適用可能かどうかを示します。 | true
 IsCompliant | bool | 構成やポリシーが正しく構成されているかどうかを示します | false
 IsExpectedUserImpact | bool | 構成が適用される場合にユーザーに影響を与えるかどうかを示します。 | true
-OSPlatform | string | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。 | Windows10
-RbacGroupName | string | 役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。 | Servers
-RecommendationReference | string | このソフトウェアに関連する推奨事項 ID への参照。 | sca-_-scid-20000
-Timestamp | string | デバイスで構成が最後に表示された時刻 | 2020-11-03 10:13:34.8476880
+OSPlatform | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。 | Windows10
+RbacGroupName | 文字列 | 役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。 | Servers
+RecommendationReference | 文字列 | このソフトウェアに関連する推奨事項 ID への参照。 | sca-_-scid-20000
+Timestamp | 文字列 | デバイスで構成が最後に表示された時刻 | 2020-11-03 10:13:34.8476880
 
 ### <a name="16-examples"></a>1.6 例
 
@@ -258,7 +258,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 プロパティ (ID) | データ型 | 説明 | 返される値の例
 :---|:---|:---|:---
 ファイルのエクスポート | 配列 \[ 文字列\] | 組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧 | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | string | エクスポートが生成された時刻。 | 2021-05-20T08:00:00Z ]
+GeneratedTime | 文字列 | エクスポートが生成された時刻。 | 2021-05-20T08:00:00Z ]
 
 ### <a name="26-examples"></a>2.6 例
 
