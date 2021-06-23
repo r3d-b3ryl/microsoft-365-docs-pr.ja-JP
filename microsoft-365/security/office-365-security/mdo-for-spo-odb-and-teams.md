@@ -23,12 +23,12 @@ ms.custom:
 description: Microsoft Defender for Office 365オンライン、SharePoint、OneDrive for Business、およびMicrosoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67bd2a0952ac630888b07eaf05d365736a0472ea
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 5a0c9721c4d8fc2087e0dbbce19305060344430c
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028837"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096746"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SPO、OneDrive、Teams 用の安全な添付ファイル機能
 
@@ -38,7 +38,7 @@ ms.locfileid: "53028837"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-セーフ[microsoft Defender](whats-new-in-defender-for-office-365.md) for Office 365 の SharePoint、OneDrive、および Microsoft Teams の添付ファイルは、Microsoft 365 の一般的なウイルス検出エンジンによってアップロード時に既にスキャンされているファイルに対する追加の保護層を[提供](virus-detection-in-spo.md)します。 セーフSharePoint、OneDrive、Microsoft Teamsの添付ファイルは、チーム サイトやドキュメント ライブラリで悪意のあるファイルとして識別される既存のファイルを検出およびブロックするのに役立ちます。
+セーフ[microsoft Defender](whats-new-in-defender-for-office-365.md) for Office 365 の SharePoint、OneDrive、および Microsoft Teams の添付ファイルは、Microsoft 365 の一般的なウイルス検出エンジンによって既に非同期的にスキャンされているファイルに対する保護の[追加層を提供します](virus-detection-in-spo.md)。 セーフSharePoint、OneDrive、Microsoft Teamsの添付ファイルは、チーム サイトやドキュメント ライブラリで悪意のあるファイルとして識別される既存のファイルを検出およびブロックするのに役立ちます。
 
 セーフ既定ではSharePoint、OneDrive、Microsoft Teamsの添付ファイルは有効になっていません。 有効にする方法については、「添付ファイルを[有効にするセーフ」をSharePoint、OneDrive、およびMicrosoft Teams。](turn-on-mdo-for-spo-odb-and-teams.md)
 
@@ -67,7 +67,6 @@ SharePointオンライン管理者は、悪意のあるファイルをダウン�
 SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルによって悪意のあるファイルとして識別されたファイルは[、microsoft Defender](view-reports-for-mdo.md) for Office 365 および Explorer (およびリアルタイム検出[)](threat-explorer.md)のレポートに表示されます。
 
 SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルによってファイルが悪意のあるファイルとして識別された 2018 年 5 月現在、ファイルは検疫でも使用できます。 詳細については、「Defender[で検疫済みファイルを管理する」を参照Office 365。](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
-
 
 ## <a name="keep-these-points-in-mind"></a>これらの点に気を付ける
 

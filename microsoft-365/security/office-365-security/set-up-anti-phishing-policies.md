@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e5cd60915699cd2adb42e575c25912f5f164a5b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 850756acacc757526352b9249c0e9efbe82fac8d
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055137"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096805"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -141,9 +141,11 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
 [**最初の連絡先を表示安全性のヒント** 設定は、組織の EOP と Defender で使用できますOffice 365スプーフィング インテリジェンスや偽装保護の設定には依存しない。 この安全性のヒントは、次のシナリオで受信者に表示されます。
 
 - 送信者からメッセージを初めて受け取る場合
-- 送信者からメッセージを受け取らない場合。
+- 多くの場合、送信者からメッセージを取得しません。
 
-![複数の受信者安全性のヒント偽装保護を行うテキストです。](../../media/safety-tip-first-contact-multiple-recipients.png)
+![最初に、1 安全性のヒントメッセージの連絡先を指定します。](../../media/safety-tip-first-contact-one-recipient.png)
+
+![最初の連絡先安全性のヒント複数の受信者を含むメッセージの連絡先です。](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 この機能は、潜在的な偽装攻撃に対するセキュリティ保護の層を追加します。そのため、有効にすることをお勧めします。
 

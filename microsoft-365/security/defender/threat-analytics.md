@@ -2,7 +2,7 @@
 title: 脅威の分析を使用して、新たな脅威を追跡し対応する
 ms.reviewer: ''
 description: 新たな脅威と攻撃の手法と、それらを停止する方法について説明します。 組織への影響を評価し、組織の回復力を評価します。
-keywords: 脅威分析、リスク評価、Microsoft 365 Defender、M365D、軽減状態、セキュリティで保護された構成、Microsoft Defender for Office 365、Microsoft Defender for Office 365 脅威分析、MDO 脅威分析、統合 MDE および MDO 脅威分析データ、脅威分析データ統合、Microsoft 365 Defender 脅威分析の統合
+keywords: 脅威分析、リスク評価、Microsoft 365 Defender、M365D、軽減状態、セキュリティで保護された構成、Microsoft Defender for Office 365、Microsoft Defender for Office 365 脅威分析、MDO 脅威分析、統合 MDE および MDO 脅威分析データ、脅威分析データ統合、統合 Microsoft 365 Defender 脅威分析
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b87d1963b8ffa3751c13cea532c8d6436f69fbb9
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: d07a7210b8426349f18a2305069c4ed0a08ce660
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501214"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096845"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>脅威の分析を使用して、新たな脅威を追跡し対応する 
 
@@ -116,6 +116,24 @@ _脅威分析レポートの概要セクション_
 - **セキュリティで保護された構成** 状態 —構成が誤ったセキュリティ設定を持つデバイスの数を示します。 脅威を軽減するために推奨されるセキュリティ設定を適用します。 デバイスがすべての追跡 **設定を** 適用している _場合、_ デバイスは Secure と見なされます。
 - **脆弱性の修正プログラムの状態**:脆弱なデバイスの数を示します。 脅威によって悪用される脆弱性に対処するために、セキュリティ更新プログラムまたはパッチを適用します。
 
+#### <a name="view-reports-per-threat-tags"></a>脅威タグごとにレポートを表示する
+脅威レポートリストをフィルター処理し、特定の脅威タグ (カテゴリ) またはレポートの種類に従って最も関連性の高いレポートを表示できます。 
+- **脅威タグ**— 特定の脅威カテゴリに従って最も関連性の高いレポートを表示できます。 たとえば、ランサムウェアに関連するレポートすべてです。
+- **レポートの種類**- 特定のレポートの種類に応じて最も関連性の高いレポートを表示できます。 たとえば、ツールとテクニックをカバーするレポートすべてです。 
+- **フィルター**— 脅威レポートの一覧を効率的に確認し、特定の脅威タグまたはレポートの種類に基づいてビューをフィルター処理する場合に役立つ。 たとえば、ランサムウェアカテゴリに関連する脅威レポート、または脆弱性をカバーする脅威レポートを確認します。
+
+##### <a name="how-does-it-work"></a>どのような仕組みなのか。
+Microsoft Threat Intelligence チームは、各脅威レポートに脅威タグを追加しました。
+- 次の 4 つの脅威タグを使用できます。
+  - ランサムウェア
+  - フィッシング詐欺
+  - 脆弱性
+  - アクティビティ グループ
+- 脅威タグは、脅威分析ページの上部に表示され、各タグの下で使用可能なレポート数のカウンターが表示されます。
+    ![脅威タグ](../../media/threat-analytics/ta-threattags-mtp.png)
+- リストは、脅威タグで並べ替えすることもできます。   ![ リスト](../../media/threat-analytics//ta-taglist-mtp.png)
+- フィルターは、脅威タグとレポートの種類 (フィルター) ごとに使用   ![ できます。](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>アナリスト レポート: Microsoft セキュリティ研究者から専門家の分析情報を取得する
 [ **アナリスト レポート] セクション** で、詳細なエキスパートの書き込みについて説明します。 ほとんどのレポートには、MITRE ATT&CK フレームワークにマップされた戦術や手法、推奨事項の網羅的なリスト、強力な脅威検出ガイダンスなど、攻撃チェーンの詳細[](advanced-hunting-overview.md)な説明が記載されています。
 
@@ -167,7 +185,7 @@ _脅威分析レポートの [軽減策] セクション_
 >統合セキュリティ エクスペリエンスの一環として、脅威分析は Microsoft Defender for Endpoint だけでなく、E5 ライセンス所有者向け Microsoft Defender Officeも利用できます。
 >Microsoft 365 セキュリティ ポータル (Microsoft 365 Defender) を使用していない場合は、Microsoft Defender セキュリティ センター ポータル (Microsoft Defender for Endpoint) でレポートの詳細 (microsoft Defender for Office データなし) も確認できます。 
 
-脅威分析レポートにアクセスするには、特定の役割とアクセス許可が必要です。 詳細[については、「Defender の役割ベースのアクセス制御のカスタム ロールMicrosoft 365」](custom-roles.md)を参照してください。
+脅威分析レポートにアクセスするには、特定の役割とアクセス許可が必要です。 詳細[については、「役割ベースのアクセス制御における](custom-roles.md)カスタム ロール」を参照Microsoft 365 Defender参照してください。
   - アラート、インシデント、または影響を受けたアセット データを表示するには、Office または Microsoft Defender for Endpoint アラート データ、または両方に対する Microsoft Defender へのアクセス許可が必要です。
   - 電子メールの試行が防止されたのを表示するには、Microsoft Defender に対するアクセス許可を持ち、Officeする必要があります。 
   - 軽減策を表示するには、Microsoft Defender for Endpoint でデータ脅威と脆弱性の管理アクセス許可を持っている必要があります。
@@ -178,7 +196,7 @@ _脅威分析レポートの [軽減策] セクション_
 - デバイスは、サービスにデータを送信していない場合は、"使用不可" としてカウントされます。
 - ウイルス対策関連の統計情報は、ユーザー設定Microsoft Defender ウイルス対策されます。 サードパーティのウイルス対策ソリューションを使用するデバイスは、"公開" として表示されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検索で脅威を事前に検出する](advanced-hunting-overview.md) 
 - [[アナリスト レポート] セクションについて](threat-analytics-analyst-reports.md)
 - [セキュリティの弱点と露出を評価して解決する](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083538"
+ms.locfileid: "53096158"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーが報告したメッセージ設定
 
@@ -134,24 +134,19 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
 
 元の添付メッセージを正しく識別するには、カスタム メールボックスに送信されるメッセージには、特定の書式が必要です。 メッセージでこの形式を使用しない場合、添付された元のメッセージは常にフィッシング申請として識別されます。
 
-元の添付メッセージを正しく識別するために、カスタム メールボックスに送信されるメッセージは、Subject (Envelope Title) に次の構文を使用する必要があります。
+元の添付メッセージの報告された理由を指定する場合は、カスタム メールボックスに送信されるメッセージ (添付ファイルを変更しない) は、Subject (Envelope Title) の次のいずれかのプレフィックスで開始する必要があります。
 
-`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
+- 1|または迷惑メール:
+- 2|または迷惑メールではない
+- 3|またはフィッシング
 
-SafetyAPIAction は次のいずれかの整数値です。
+次に例を示します。
 
-- 1: 迷惑メール
-- 2: 迷惑メールではない
-- 3: フィッシング
+`3|This part is ignored by the system` <br>
+`Not Junk:This part of the subject is ignored as well`
 
-この例では、次の値を使用します。
+- これらの両方のメッセージは、Subject に基づいて [迷惑メールではない] として報告されています。
+- 残りは無視されます。
 
-- メッセージがフィッシングとして報告されています。
-- ネットワーク メッセージ ID は 49871234-6dc6-43e8-abcd-08d797f20abe です。
-- Sender IP は 167.220.232.101 です。
-- From アドレスが test@contoso.com。
-- メッセージの件名は"フィッシング申請のテスト" です。
-
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 この形式に従らないメッセージは、申請ポータルに正しく表示されません。
