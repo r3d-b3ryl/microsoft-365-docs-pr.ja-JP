@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb4d50c06c123d3d380604ef64b887f4f00f751d
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: ceca8ac76f63ef7da34f4222312e9e03a3b0e23a
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866669"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062252"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -47,6 +47,13 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 > ```
 
 ## <a name="june-2021"></a>2021 年 6 月
+
+- [デバイス検出](device-discovery.md) <br> 追加のアプライアンスや面倒なプロセス変更を必要とせずに、企業ネットワークに接続されている管理されていないデバイスを見つけるのに役立ちます。 オンボード デバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。 その後、検出されたデバイスをオンボードして、ネットワークに管理されていないエンドポイントを持つことに関連するリスクを軽減できます。
+
+   > [!IMPORTANT]
+   > 標準検出は、2021 年 7 月 19 日からすべてのユーザーの既定のモードになります。 基本モードは、[設定] ページで保持できます。 
+
+
 - [デバイス グループ定義には、](/microsoft-365/security/defender-endpoint/machine-groups) 条件ごとに複数の値を含めることができます。 複数のタグ、デバイス名、ドメインを 1 つのデバイス グループの定義に設定できます。
 
 ## <a name="march-2021"></a>2021 年 3 月
@@ -56,7 +63,7 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint では、仮想デスクトップのサポートWindows追加しました。
 
-## <a name="december-2020"></a>2020年12月
+## <a name="december-2020"></a>2020 年 12 月
 - [iOS 用 Microsoft Defender for Endpoint API](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint が iOS のサポートを追加しました。 iOS で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
 ## <a name="september-2020"></a>2020 年 9 月
@@ -68,7 +75,7 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 - [Android 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint が Android のサポートを追加しました。 Android で Microsoft Defender for Endpoint をインストール、構成、および使用する方法について説明します。
 
 
-## <a name="july-2020"></a>2020 年7 月
+## <a name="july-2020"></a>2020 年 7 月
 - [証明書のインジケーターを作成 ](manage-indicators.md) <br> 証明書を許可またはブロックするインジケーターを作成します。 
 
 ## <a name="june-2020"></a>2020 年 6 月

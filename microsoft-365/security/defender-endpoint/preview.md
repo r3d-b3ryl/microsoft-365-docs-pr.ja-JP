@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6c77762de4dbd70922eb5623f801837bf6454ec7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 65edf54ea0bf5cb0a0210dd306db07c756149f65
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842364"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062127"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 
@@ -61,12 +61,6 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 ## <a name="preview-features"></a>プレビュー機能
 
 以下の機能がプレビュー リリースに含まれています。
-
-- [デバイス検出](device-discovery.md) <br> 追加のアプライアンスや面倒なプロセス変更を必要とせずに、企業ネットワークに接続されている管理されていないデバイスを見つけるのに役立ちます。 オンボード デバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。 その後、検出されたデバイスをオンボードして、ネットワークに管理されていないエンドポイントを持つことに関連するリスクを軽減できます。
-
-   > [!IMPORTANT]
-   > 標準検出は、2021 年 7 月 19 日からすべてのユーザーの既定のモードになります。 基本モードは、[設定] ページで保持できます。 
-
 
 - [Web コンテンツ フィルター](web-content-filtering.md) <br> Web コンテンツ フィルターは、Microsoft Defender for Endpoint の Web 保護機能の一部です。 これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。
 

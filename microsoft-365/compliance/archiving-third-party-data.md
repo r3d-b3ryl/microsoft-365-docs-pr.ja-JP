@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータを、ユーザーのメールボックスにインポートするMicrosoft 365します。
-ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054779"
+ms.locfileid: "53061722"
 ---
 # <a name="archive-third-party-data"></a>サード パーティのデータをアーカイブする
 
@@ -136,15 +136,14 @@ Microsoft 365を使用すると、管理者はデータ コネクタを使用し
 
 |TeleMessage データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android Archiver | はい | いいえ | いいえ |
-|AT&T SMS/MMS ネットワーク アーカイブ | はい | いいえ | いいえ |
-|Bell SMS/MMS ネットワーク アーカイブ | はい | いいえ | いいえ |
-|EnterpriseNumber Archiver | はい | いいえ | いいえ |
-|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
-|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
-|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|WeChat Archiver | はい | いいえ | いいえ |
-|WhatsApp Archiver | はい | いいえ | いいえ |
+|Android Archiver | 必要 | いいえ | いいえ |
+|AT&T SMS/MMS ネットワーク アーカイブ | 必要 | いいえ | いいえ |
+|Bell SMS/MMS ネットワーク アーカイブ | 必要 | いいえ | いいえ |
+|EnterpriseNumber Archiver | 必要 | いいえ | いいえ |
+|O2 SMS と Voice Network Archiver | 必要         | いいえ | いいえ |
+|TELUS SMS ネットワーク アーカイブ | 必要 | いいえ | いいえ |
+|Verizon SMS/MMS Network Archiver | 必要 | いいえ | いいえ |
+|WhatsApp Archiver | 必要 | いいえ | いいえ |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする

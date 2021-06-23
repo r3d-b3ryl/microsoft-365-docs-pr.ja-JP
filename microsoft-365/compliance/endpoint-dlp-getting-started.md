@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: bf607890fcae34e95da15954349e7190bdbb19ac
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 134c5426e428372670a50c76301a9e9e0c10b343
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878102"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061669"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
@@ -77,9 +77,6 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 - コンプライアンス管理者
 - セキュリティ管理者
 - コンプライアンスデータ管理者
-- グローバルリーダー
-- セキュリティ閲覧者
-- レポート閲覧者
 
 ### <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 

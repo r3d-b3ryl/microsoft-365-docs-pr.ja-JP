@@ -1,6 +1,6 @@
 ---
 title: デバイス検出の概要
-description: ネットワーク内の管理されていないデバイスを見つけるために、Microsoft 365 Defender でエンドポイントの検出を活用する方法について説明します。
+description: ネットワーク内の管理されていないデバイスをMicrosoft 365 Defenderエンドポイントの検出を活用する方法について説明します。
 keywords: デバイスの検出、検出、パッシブ、プロアクティブ、ネットワーク、可視性、サーバー、ワークステーション、オンボード、管理されていないデバイス
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 16baaa6fd9865140d42c0ca3a566427f761a28c2
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636244"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062216"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -35,7 +35,6 @@ ms.locfileid: "52636244"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 環境を保護するには、ネットワーク内のデバイスのインベントリを取得する必要があります。 ただし、ネットワーク内のマッピング デバイスは、多くの場合、コストがかかり、困難で、時間がかかる場合があります。 
 

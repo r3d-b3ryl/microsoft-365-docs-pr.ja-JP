@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 86b8a37fd6b2d6f9906321b5d74de0e21c45fca3
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862069"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062144"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 
@@ -34,11 +34,6 @@ ms.locfileid: "51862069"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-> [!IMPORTANT]
-> **ネットワーク デバイスのスキャンと管理が現在パブリック プレビュー中**<br>
-> このプレビュー バージョンはサービス レベル契約なしで提供され、実稼働ワークロードには推奨されません。 一部の機能はサポートされていないか、制限された機能を持っている可能性があります。
-> 詳細については [、「Microsoft Defender for Endpoint プレビュー機能」を参照してください](preview.md)。
 
 >Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
@@ -103,7 +98,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
     > [!NOTE]
     > すべての URL が Defender for Endpoint で指定されている場合は、許可されるデータ収集の一覧が文書化されています。
 
-## <a name="permissions"></a>権限
+## <a name="permissions"></a>アクセス許可
 
 評価ジョブを構成するには、次のユーザーアクセス許可オプションが必要です。セキュリティ センター **でセキュリティ設定を管理します**。 アクセス許可は、ロールにアクセスして **設定**  >  **できます**。 詳細については、「役割ベースの [アクセス制御の役割を作成および管理する」を参照してください](user-roles.md)。
 

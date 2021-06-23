@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender を使用している組織で利用可能な高度なフィッシング対策ポリシーを作成、変更、および削除する方法をOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bbf90f52127e96e08f1c176a23d5f5ab1d6d86c4
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: dd69e00b0e8929752341bf3d2b0abde88921066b
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054546"
+ms.locfileid: "53061879"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender でフィッシング対策ポリシーを構成Office 365
 
@@ -230,7 +230,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
        - **メッセージを検疫する**
 
    - **安全に関&:** 次の設定を構成します。
-     - 最初の連絡先 **安全性のヒント** を表示する : この 安全性のヒント では **、X-MS-Exchange-EnableFirstContactSafetyTip** という名前のヘッダーを [メッセージに有効にする] という名前のヘッダーを追加するメールフロー ルール (トランスポート ルールとも呼ばれる) を作成する必要が置き換わります。
+     - **最初の連絡先の安全性のヒント** を表示する : 詳細については [、「First contact 安全性のヒント」 を参照してください](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
      - **[ユーザーの偽装** 安全性のヒントを表示する: この設定は、[前のページでユーザーを保護する] を選択 **した** 場合にのみ使用できます。
      - **[ドメイン偽装の** 安全性のヒントを表示する] : この設定は、[前のページで保護するドメインを有効にする] を選択した場合にのみ使用できます。
      - **ユーザー偽装の異常な文字を表示安全性のヒント** この設定は、[ユーザーの保護を有効にする] または [前のページで保護するドメインを有効にする] を選択 **した** 場合にのみ使用できます。

@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 0eaf34e6950e265514b14ff1fd0aa1c7bb9ab6b1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932820"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062203"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -42,6 +42,14 @@ ms.locfileid: "52932820"
 > [!TIP]
 > Microsoft Defender for Office 365ありませんか? [試用版を開始するために販売に問い合わせ。](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
+## <a name="june-2021"></a>2021 年 6 月
+
+- フィッシング対策ポリシー内安全性のヒントの連絡先と連絡先の新しい設定。 この安全性のヒントは、受信者が最初に送信者からメールを受信するか、送信者からメールを受信しない場合に表示されます。 この設定と構成方法の詳細については、次の記事を参照してください。
+
+- [最初の連絡先安全性のヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- [EOP でのスパム対策ポリシーの構成](configure-anti-phishing-policies-eop.md)
+- [Microsoft Defender でフィッシング対策ポリシーを構成Office 365](configure-mdo-anti-phishing-policies.md)
+
 ## <a name="aprilmay-2021"></a>2021 年 4 月/5 月
 
 - [[電子メール](mdo-email-entity-page.md)エンティティ] ページ : 脅威、認証と検出、発発の詳細、および新しい電子メール プレビュー エクスペリエンスに関する情報が充実した電子メールの統合された 360 度ビュー。
@@ -54,6 +62,7 @@ ms.locfileid: "52932820"
 - 狩猟エクスペリエンスでのレコードのエクスポートの制限を 9990 から 200,000 に [増やす](threat-explorer.md)
 - 試用版テナントのエクスプローラー (およびリアルタイム検出) データの保持と検索の制限を 7 (前の制限) から 30 日間のハンティング エクスペリエンス [に拡張する](threat-explorer.md)
 - 保護されたユーザーまたはドメインに対する偽装攻撃を検索するための、エクスプローラー内の偽装ドメインと偽装ユーザー (およびリアルタイムの検出) と呼ばれる新しい検索ピボット。 詳細については、「詳細」を [参照してください](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。 (Microsoft Defender for Office 365プラン 1 またはプラン 2)
+- 新しい最初の連絡先安全性のヒント、受信者が最初に送信者から電子メールを受信するか、送信者から電子メールを受信しない場合に使用されます。 この設定の詳細と、メール フロー ルール (トランスポート ルールとも呼Exchange) を使用して構成する方法については[、「First contact](set-up-anti-phishing-policies.md#first-contact-safety-tip)安全性のヒント」 を参照してください。
 
 ## <a name="december-2020"></a>2020 年 12 月
 

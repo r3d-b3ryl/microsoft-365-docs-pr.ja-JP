@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、Exchange Online Protection (EOP) 組織で使用できるフィッシング対策ポリシーを作成、変更、および削除する方法について説明します(Exchange Online メールボックスを使用する場合と使用しない場合)。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8633644ab0380cf2adcf30c006a7d6d141a6040a
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 1dcfba32a5c76915c8c905d55b69712162efac48
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054568"
+ms.locfileid: "53062227"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -126,11 +126,14 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
      - **受信者の迷惑メール フォルダーにメッセージを移動する**
      - **メッセージを検疫する**
 
-   - **安全上&ヒント**: この設定は、前のページで [スプーフィング インテリジェンスを有効にする] を選択した場合にのみ使用できます。
-     - スプーフィングの認証されていない送信者に対して **(?)** を表示する : メッセージが SPF または DKIM チェックに合格しない場合に、メッセージが DMARCまたは複合認証に合格しない場合、Outlook [](email-validation-and-authentication.md#composite-authentication)の [差出人] ボックスに送信者の写真に疑問符を追加します。
-     - **"via"** タグを表示する: DKIM 署名または **MAIL FROM** アドレスのドメインと異なる場合は、from アドレスに via タグ (chris@contoso.com 経由で fabrikam.com) を追加します。
+   - **安全上のヒント&インジケーター**:
+     - **最初の連絡先の安全性のヒント** を表示する : 詳細については [、「First contact 安全性のヒント」 を参照してください](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
+     - スプーフィングの認証されていない送信者に対して **(?)** を表示する : メッセージが SPF または DKIM チェックに合格しない場合に、メッセージが DMARC または複合認証に合格しない場合、Outlook の [差出人] ボックスに送信者の写真に疑問符を追加します。 <sup>\*</sup>  [](email-validation-and-authentication.md#composite-authentication)
+     - **"via"** タグを表示する: DKIM 署名または MAIL FROM アドレスのドメインと異なる場合は、from アドレスに via タグ (chris@contoso.com 経由で <sup>\*</sup> fabrikam.com) を **追加** します。
 
      設定を有効にする場合は、チェック ボックスをオンにします。 オフにする場合は、チェック ボックスをオフにします。
+
+     <sup>\*</sup> この設定は、前のページで [スプーフィング インテリジェンスを有効 **にする** ] を選択した場合にのみ使用できます。 詳細については、「認証されていない送信者 [」を参照してください](set-up-anti-phishing-policies.md#unauthenticated-sender)。
 
    完了したら、**[次へ]** をクリックします。
 
