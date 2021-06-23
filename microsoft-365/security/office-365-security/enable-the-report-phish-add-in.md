@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: 個々のユーザーまたは組織全体に対して、Outlookおよび web Outlookレポート フィッシング アドインを有効にする方法について説明します。
-ms.openlocfilehash: 44fa55a82462de336982d3af2e3996c14699fd7c
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+description: 個々のユーザーまたは組織全体に対して、OutlookおよびOutlook on the webレポート フィッシング アドインを有効にする方法について学習します。
+ms.openlocfilehash: 44113237274d37aabeda954354182fe4da5aa970
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625391"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083418"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>レポート フィッシング アドインを有効にする
 
@@ -29,9 +29,9 @@ ms.locfileid: "52625391"
 
 
 > [!NOTE]
-> Exchange Online メールボックスを持つ Microsoft 365 組織の管理者である場合は、セキュリティ & コンプライアンス センターで申請ポータルを使用することをお勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
+> 組織の管理者が Microsoft 365 メールボックスExchange Onlineしている場合は、Microsoft 365 Defender ポータルで申請ポータルを使用することをお勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 
-web 上の Outlook および Outlook 用のレポート メッセージおよびレポートフィッシング アドイン (以前は Outlook Web App) を使用すると、ユーザーは誤検知 (悪いマークが付いた良いメール) または誤検知 (悪いメールが許可されている) を Microsoft とその関連会社に簡単に報告して分析できます。
+Outlook および Outlook on the web (以前は Outlook Web App と呼ばれる) のレポート メッセージとレポートフィッシング アドインを使用すると、ユーザーは誤検知 (悪いマークが付いた良いメール) または誤検知 (悪いメールが許可されている) を Microsoft とその関連会社に簡単に報告して分析できます。
 
 Microsoft では、これらの申請を使用して、電子メール保護テクノロジの有効性を向上します。 たとえば、ユーザーがレポート フィッシング アドインを使用して多くのメッセージを報告するとします。 この情報は、セキュリティ ダッシュボード [や他のレポート](security-dashboard.md) に表示されます。 組織のセキュリティ チームは、この情報をフィッシング対策ポリシーを更新する必要がある可能性を示す指標として使用できます。
 
@@ -61,7 +61,7 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
 - 組織のインストールでは、OAuth 認証を使用するように組織を構成する必要があります。 詳細については、「アドインの集中展開が組織で機能するかどうかを判断する」 [を参照してください](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
-- 管理者は、グローバル管理者役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+- 管理者は、グローバル管理者役割グループのメンバーである必要があります。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
 ## <a name="get-the-report-phishing-add-in-for-yourself"></a>自分でレポートフィッシング アドインを取得する
 
@@ -79,20 +79,20 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
   ![アプリの [フィッシング アドインのレポート] Outlook](../../media/Outlook-ReportPhishing.png)
 
-- Web Outlookすると、アイコンは次のように表示されます。
+- このOutlook on the webアイコンは次のように表示されます。
 
-  ![Outlookの [フィッシング レポート] アドイン アイコンをクリックします。](../../media/OWA-ReportPhishing.png)
+  ![Outlook on the web[フィッシング アドインのレポート] アイコン](../../media/OWA-ReportPhishing.png)
 
 ## <a name="get-and-enable-the-report-phishing-add-in-for-your-organization"></a>組織のレポート フィッシング アドインを取得して有効にする
 
 > [!NOTE]
 > アドインが組織に表示するには、最大で 12 時間かかる場合があります。
 
-1. Microsoft 365 管理センターで **、[設定** アドイン] ページの [アドイン] ページに移動します。アドイン ページが表示されない場合は、[統合アプリ] ページの上部にある \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **[設定** \>  \> 統合アプリ アドイン] リンクに移動します。
+1. Microsoft 365 管理センター で **、[設定** アドイン] ページの [アドイン] ページに移動します。アドイン ページが表示されない場合は、[統合アプリ] ページの上部にある \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **[設定** \>  \> 統合アプリ アドイン] リンクに移動します。
 
 2. ページ **の上部にある [アドインの** 展開] を選択し、[次へ] を **選択します**。
 
-   ![管理センターの [サービスとアドイン] ページMicrosoft 365ページ](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![[サービスとアドイン] ページ (Microsoft 365 管理センター](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. 表示される **[新しいアドインの展開]** フライアウトで、情報を確認し、[次へ] を **クリックします**。
 
@@ -132,13 +132,13 @@ Microsoft では、これらの申請を使用して、電子メール保護テ�
 
   ![アプリの [フィッシング アドインのレポート] Outlook](../../media/Outlook-ReportPhishing.png)
 
-- Web Outlookすると、アイコンは次のように表示されます。
+- このOutlook on the webアイコンは次のように表示されます。
 
   ![Outlook Web レポートフィッシング アドイン アイコンで確認する](../../media/OWA-ReportPhishing.png)
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>レポートフィッシング アドインの設定を確認または編集する
 
-1. Microsoft 365 管理センターで **、[設定** アドイン] ページの [アドイン] ページに移動します。アドイン ページが表示されない場合は、[統合アプリ] ページの上部にある \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **[設定** \>  \> 統合アプリ アドイン] リンクに移動します。
+1. Microsoft 365 管理センター で **、[設定** アドイン] ページの [アドイン] ページに移動します。アドイン ページが表示されない場合は、[統合アプリ] ページの上部にある \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **[設定** \>  \> 統合アプリ アドイン] リンクに移動します。
 
 2. [フィッシング のレポート] **アドインを検索して** 選択します。
 

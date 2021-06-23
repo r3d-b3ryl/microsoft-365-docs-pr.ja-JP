@@ -18,12 +18,12 @@ description: 不正な同意許可攻撃を認識して修復する方法につ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0041c473f196dace893122c5c0543a06c1e6ff8
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029863"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083010"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>不正同意の付与を検出して修復する
 
@@ -50,9 +50,9 @@ ms.locfileid: "53029863"
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>この攻撃の兆候を見つける手順
 
-1. [ポータル] **Microsoft 365 Defender** 開き <https://security.microsoft.com> 、[監査] を **選択します**。
+1. [ポータル] **Microsoft 365 Defender開き** <https://security.microsoft.com> 、[監査] を **選択します**。 または、[監査] ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/auditlogsearch> 。
 
-2. 開く **[監査]** ページで、[検索] **タブが** 選択されているのを確認し、次の設定を構成します。
+2. [監査 **] ページ** で、[検索] タブ **が** 選択されているのを確認し、次の設定を構成します。
    - **日付と時刻の範囲**
    - **[アクティビティ**]: [すべての **アクティビティの結果を表示する] が選択** されているのを確認します。
 
@@ -137,7 +137,7 @@ Illicit Consent Grant 攻撃を確認する最も簡単な方法は [ 、Get-Azu
 
 ## <a name="determine-the-scope-of-the-attack"></a>攻撃の範囲を特定する
 
-アプリケーション アクセスのインベントリが完了したら、監査ログを **確認して** 侵害の全範囲を特定します。 影響を受けるユーザー、不正なアプリケーションが組織にアクセスしたタイム フレーム、およびアプリが持っていたアクセス許可を検索します。 監査ログは **、監査ログ**[のMicrosoft 365 Defender。](../../compliance/search-the-audit-log-in-security-and-compliance.md)
+アプリケーション アクセスのインベントリが完了したら、監査ログを **確認して** 侵害の全範囲を特定します。 影響を受けるユーザー、不正なアプリケーションが組織にアクセスしたタイム フレーム、およびアプリが持っていたアクセス許可を検索します。 監査ログは、**ポータルで**[検索Microsoft 365 Defenderできます](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 
 > [!IMPORTANT]
 > [この情報を取得](../../compliance/enable-mailbox-auditing.md)するには、管理者とユーザーのメールボックス監査とアクティビティ監査が攻撃の前に有効になっている必要があります。 [](../../compliance/turn-audit-log-search-on-or-off.md)
@@ -164,7 +164,7 @@ Illicit Consent Grant 攻撃を確認する最も簡単な方法は [ 、Get-Azu
 
 Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能のセットが用意されています。 [Microsoft 365 セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](security-roadmap.md)を使用して、Microsoft 365 テナントをセキュリティで保護するために Microsoft が推奨するベスト プラクティスを実装します。
 
-- 最初の 30 日間に実行するタスク。 これらは直ちに影響を及ぼし、ユーザーに対する影響は低いです。
+- 最初の 30 日間で完了すべき作業。すぐにユーザーに影響しますが、それほど大きな影響ではありません。
 - 最初の 90 日間で完了すべき作業。作業の計画と実装に少し時間がかかりますが、セキュリティ体制は大幅に向上します。
 - 90 日以降。最初の 90 日間の作業で保護が強化されます。
 

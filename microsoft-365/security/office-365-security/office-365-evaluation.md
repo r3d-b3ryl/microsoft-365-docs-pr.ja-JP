@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab0f05c45afa6a4ad66c9fc1bf58e69505632171
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 89562a5fd7c2d869f8a060e7ceda1c32a093c175
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624995"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083670"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender のセキュリティ評価Office 365
 
@@ -37,22 +37,22 @@ ms.locfileid: "52624995"
 
 [Microsoft Defender for Office 365](defender-for-office-365.md)評価エクスペリエンスは、デバイスと環境の構成の複雑さを排除するように設計され、Microsoft Defender の機能をOffice 365。 評価モードでは、MX レコードを Microsoft にExchange Online、メールボックスに送信されるメッセージはすべて評価できます。 この機能は電子メール保護にのみ適用され、Word、Office、またはクライアントSharePointクライアントには適用Teams。
 
-microsoft Defender for Office 365 をサポートするライセンスをまだ持ってない場合は、[無料の 30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)日間の評価を開始し、Office 365 セキュリティ & コンプライアンス センター () で機能をテストできます https://protection.office.com/homepage) 。 クイック セットアップを楽しめ、必要に応じて簡単にオフにできます。
+microsoft Defender for Office 365 をサポートするライセンスをまだ持ってない場合は、[無料の 30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)日間の評価を開始し、Microsoft 365 Defender ポータルの機能をテストできます <https://security.microsoft.com> 。 クイック セットアップを楽しめ、必要に応じて簡単にオフにできます。
 
 > [!NOTE]
-> 統合 Microsoft 365 セキュリティ ポータル (security.microsoft.com) を使用している場合は、Office 365 評価用の Defender を開始できます。メール & Collaboration > Policies & Rules > Threat Policies > 追加ポリシー)。
+> Microsoft 365 Defender ポータル ( ) を使用している場合は、Office 365 評価用の Defender を開始できます。メール & コラボレーション ポリシー & ルール脅威ポリシー その他 セクション評価 <https://security.microsoft.com>  \>  \>  \>  \> **モード** です。
 
 ## <a name="how-the-evaluation-works"></a>評価のしくみ
 
 評価モードOffice 365 Defender は、マルウェアなどのOffice 365をログに記録するが、メッセージに対して動作しない電子メール ポリシー用の Defender を作成します。 MX レコードの構成を変更する必要はありません。
 
-評価モードでは [、セーフ 、セーフ](safe-attachments.md) [リンク](safe-links.md)、メールボックス インテリジェンス ベース [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)の偽装ポリシーが代理で設定されます。 すべての Defender for Office 365ポリシーは、バックグラウンドで強制不可モードで作成され、表示されません。
+評価モードでは [、セーフ 、セーフ](safe-attachments.md) [リンク](safe-links.md)、メールボックス インテリジェンス ベース [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)の偽装ポリシーが代理で設定されます。 すべての Defender for Office 365ポリシーはバックグラウンドで強制不可モードで作成され、表示されません。
 
 セットアップの一環として、評価モードではコネクタの [拡張フィルターも構成します](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 IP アドレスと送信者情報を保持することで、フィルターの精度が向上します。それ以外の場合、メールが Defender for Office 365 の前にあるメール セキュリティ ゲートウェイ (ESG) を通過すると失われます。 また、コネクタのフィルター機能が強化され、既存のスパム対策 (EOP) Exchange Online Protectionフィッシング対策ポリシーのフィルタリング精度も向上します。
 
-コネクタの拡張フィルター処理を有効にすると、フィルターの精度が向上しますが、Office 365 の Defender の前に ESG を設定し、現在 EOP フィルター処理をバイパスしていない場合は、特定のメッセージの配信可能性が変わる可能性があります。 影響は EOP ポリシーに制限されます。評価の一部としてセットアップされる MDO ポリシーは、強制以外のモードで作成されます。 潜在的な運用への影響を最小限に抑えるために、トランスポート ルールを作成してスパム信頼レベル (SCL) を -1 に設定することで、すべての EOP フィルターをバイパスできます。 詳細 [については、「EAC を使用してメッセージの SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)を設定するメール フロー ルールを作成する」   を参照してください。
+拡張コネクタのフィルター処理は、フィルター処理の精度が向上しますが、Office 365 の Defender の前に ESG を持ち、現在 EOP フィルター処理をバイパスしていない場合は、特定のメッセージの配信可能性が変わる可能性があります。 影響は EOP ポリシーに制限されます。評価の一部として設定された MDO ポリシーは、強制以外のモードで作成されます。 潜在的な運用への影響を最小限に抑えるために、メール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、メッセージのスパム信頼レベル (SCL) を -1 に設定することで、すべての EOP フィルターをバイパスできます。 詳細[については、「メール フロー ルールを使用して、](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)メッセージ内のスパム信頼レベル (SCL) を設定するExchange Online   参照してください。
 
-評価モードが設定されている場合、ポリシーが実装された場合にブロックされたメッセージを定量化する最大 90 日間のデータを含むレポートが毎日更新されます (たとえば、削除、迷惑メールへの送信、検疫など)。 レポートは、すべての Defender に対して、Office 365 EOP 検出用に生成されます。 これらは検出テクノロジ (偽装など) ごとに集計され、時間範囲でフィルター処理できます。 さらに、メッセージ レポートをオンデマンドで作成して、カスタム ピボットを作成したり、Threat Explorer を使用して詳細なメッセージを作成することもできます。
+評価モードが設定されている場合、ポリシーが実装された場合にブロックされたメッセージを定量化する最大 90 日間のデータを含むレポートが毎日更新されます (たとえば、削除、迷惑メールへの送信、検疫など)。 レポートは、すべての Defender に対して、Office 365 EOP 検出用に生成されます。 これらは検出テクノロジ (偽装など) ごとに集計され、時間範囲でフィルター処理できます。 さらに、メッセージ レポートをオンデマンドで作成してカスタム ピボットを作成したり、エクスプローラーを使用して詳細なメッセージを作成することもできます。
 
 セットアップの簡略化により、次の作業に集中できます。
 
@@ -61,7 +61,7 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 - アクションのレポートの分析
 - 評価結果の提示
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 ### <a name="licensing"></a>ライセンス
 
@@ -78,7 +78,7 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 
 Microsoft Defender for microsoft Defender for Office 365を取得するには、課金管理者の役割またはグローバル管理者の役割 **を持っている必要があります**。 グローバル管理者の役割を持つユーザーにアクセス許可を要求します。 [サブスクリプションとライセンスの詳細](../../commerce/licenses/subscriptions-and-licenses.md)
 
-適切な役割を果たしたら、請求 > 購入サービスに移動して、Microsoft 365 管理センターで Microsoft Defender for Office 365 (プラン 2) の試用版ライセンスを取得します。 試用版には、25 ライセンスの 30 日間の無料試用版が含まれています。 Microsoft Defender for microsoft [Defender for Office 365 (プラン 2) を取得します](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)。
+適切な役割を果たしたら、Microsoft 365 管理センター で Microsoft Defender for Office 365 (プラン 2) の試用版ライセンスを取得するには、[課金>] サービスにアクセスします。 試用版には、25 ライセンスの 30 日間の無料試用版が含まれています。 Microsoft Defender for microsoft [Defender for Office 365 (プラン 2) を取得します](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)。
 
 高度な脅威を監視および報告する評価を含む 30 日間のウィンドウがあります。 また、完全な Defender 機能を使用する場合は、有料サブスクリプションを購入Office 365があります。
 
@@ -141,11 +141,11 @@ URL はメール フロー中にデトナ処理されます。 特定の URL を
 
 ## <a name="get-started-with-the-evaluation"></a>評価の開始
 
-Microsoft Defender for the microsoft Defender for Office 365評価セットアップ カードは、Office 365 コンプライアンス センター (& https://protection.office.com/homepage) 3 つのアクセス ポイントから) にあります。
+Microsoft Defender for the microsoft Defender for Office 365評価セットアップ カードは、次の 3 つのアクセス Microsoft 365 Defenderポータル <https://security.microsoft.com> ( ) から検索します。
 
-- 脅威管理>ダッシュボード
-- 脅威管理>ポリシー
-- レポート > ダッシュボード
+- **エンドポイント** \>**脆弱性の管理** \>**ダッシュボード**( <https://security.microsoft.com/tvm_dashboard> )
+- **メール&コラボレーション** \>**ポリシー&ルール** \>**脅威ポリシー** ( <https://security.microsoft.com/threatpolicy> )
+- **レポート** \>**メール&コラボレーション** \>**メール&コラボレーション レポート**( <https://security.microsoft.com/emailandcollabreport> )
 
 ## <a name="setting-up-the-evaluation"></a>評価のセットアップ
 
@@ -159,9 +159,9 @@ Microsoft Defender for the microsoft Defender for Office 365評価セットア�
 
 Microsoft Defender for Office 365評価レポートは、1 日に 1 回生成されます。 データの入力に最大で 24 時間かかる場合があります。
 
-### <a name="exchange-rules-optional"></a>Exchangeルール (オプション)
+### <a name="exchange-mail-flow-rules-optional"></a>Exchange フロー ルール (オプション)
 
-既存のゲートウェイがある場合は、評価モードを有効にすると、コネクタの拡張フィルター処理がアクティブになります。 これにより、受信送信者の IP アドレスを変更することで、フィルターの精度が向上します。 これにより、フィルターの評決が変更される可能性があります。また、フィルターをバイパスしていない場合Exchange Online Protectionメッセージの配信可能性が変わる可能性があります。 この場合、影響を分析するためにフィルター処理を一時的にバイパスする必要があります。 バイパスするには、管理センター Exchangeに移動し、SCL -1 のポリシーを作成します (まだポリシーを持ってない場合)。 ルール コンポーネントの詳細と動作方法については、「メール フロー ルール (トランスポート ルール)」を参照Exchange Online。
+既存のゲートウェイがある場合は、評価モードを有効にすると、コネクタの拡張フィルター処理がアクティブになります。 この機能は、受信送信者の IP アドレスを変更することで、フィルターの精度を向上します。 この機能はフィルターの評決を変更する可能性があります。また、フィルターをバイパスしない場合は、Exchange Online Protectionメッセージの配信可能性が変わる可能性があります。 この場合、影響を分析するためにフィルター処理を一時的にバイパスする必要があります。 フィルター処理をバイパスするには、Exchange 管理センター (EAC) を開き、メッセージの SCL を -1 に設定するメール フロー ルールを作成します (まだメッセージが存在しない場合)。 <https://admin.exchange.microsoft.com> 手順については、「メール フロー ルールを使用して、メッセージ内のスパム信頼レベル[(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)を設定する」を参照Exchange Online。
 
 ## <a name="evaluate-capabilities"></a>機能を評価する
 

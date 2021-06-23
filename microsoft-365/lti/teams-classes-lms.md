@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理Microsoft Teamsシステムにラーニングクラスを統合する
-ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 940c5c695d602ddce6ea49b1f914f2345fbeb7e5
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053253"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083245"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard"></a>Blackboard でMicrosoft Teamsクラスを使用する
 
@@ -63,8 +63,6 @@ Blackboard Learn Ultra 管理者として、テスト環境内に 2 つの LTI 1
 3. **[LTI1.3/Advantage Tool の登録] を選択します**。
 
 4. 指定されたクライアント ID (Blackboard または Microsoft) の最初の ID を入力し、[送信] を **選択します**。
-
-   ![クライアント ID を入力するフィールドを持つ LTI 登録ツール](../media/lti-media/register-tool.png)
 
 5. 事前に設定された設定を確認し、ツールの状態が承認済みとしてマークされている必要があります。
 

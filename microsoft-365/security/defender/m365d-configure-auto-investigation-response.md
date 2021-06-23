@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: d3acf24d12b72a92af4246afdf11f67e01c45b2c
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 4275339e048a4197590c91c5904733ce99b22f9f
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022506"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083442"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>自動調査と応答機能を構成する方法は、Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ Microsoft は、特定のリスク [を特定するのに](../../compliance/aler
 
 メールとコンテンツOffice 365保護するために役立つセキュリティ設定。 これらの設定を表示または変更するには、「脅威から保護する [」のガイダンスに従います](../office-365-security/protect-against-threats.md)。
 
-1. [ポータル] Microsoft 365 Defenderで、[ポリシー [https://security.microsoft.com](https://security.microsoft.com) とルール **の脅威&に** \> **移動します**。
+1. [ポータル] Microsoft 365 Defenderで、[ポリシー <https://security.microsoft.com> とルール **の脅威&に** \> **移動します**。
 
 2. 次のすべてのポリシーが構成されていることを確認します。 ヘルプと推奨事項を取得するには、「脅威から保護 [する」を参照してください](/microsoft-365/security/office-365-security/protect-against-threats)。
    - [マルウェア対策](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
@@ -82,9 +82,9 @@ Microsoft は、特定のリスク [を特定するのに](../../compliance/aler
    - [リンク保護](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [スパム対策](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 
-3. Microsoft [Defender for Office 365、SharePoint、OneDrive、Microsoft Teams](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)がオンになっていることを確認します。
+3. [添付[セーフ] がSharePoint、OneDrive、Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md)になっていることを確認します。
 
-4. メール保護 [のための 0 時間の自動削除が](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) 有効になってください。
+4. ゼロ時間[自動削除 (ZAP) が有効Exchange Online](../office-365-security/zero-hour-auto-purge.md)確認します。
 
 5. (この手順は省略可能です)。[警告[Office 365ポリシー]](../../compliance/alert-policies.md) () で確認Microsoft 365 コンプライアンス センターします [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) 。 いくつかの既定のアラート ポリシーは、[脅威の管理] カテゴリに表示されます。 これらのアラートの中には、自動調査と応答をトリガーする場合があります。 詳細については、「既定のアラート [ポリシー」を参照してください](../../compliance/alert-policies.md#default-alert-policies)。
 

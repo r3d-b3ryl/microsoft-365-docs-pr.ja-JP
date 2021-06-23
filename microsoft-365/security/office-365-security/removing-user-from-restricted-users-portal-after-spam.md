@@ -1,5 +1,5 @@
 ---
-title: 制限されたユーザー ポータルから、ブロックされたユーザーを削除する
+title: 制限されたユーザー ポータルからブロックされたユーザーを削除する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
-description: Office 365 の制限されたユーザー ポータルからユーザーを削除する方法についての管理者向けの説明です。 アカウントを侵害していると見なされたユーザーは通常、スパム送信者として、制限されたユーザー ポータルに追加されます。
+description: Microsoft 365 Defender ポータルの制限されたユーザー ページからユーザーを削除する方法についての管理者向けの説明です。 アカウントを侵害していると見なされたユーザーは通常、スパム送信者として、制限されたユーザー ポータルに追加されます。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2171e2465aa40e187f8104c7c0d2675562f115ce
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 924db948103a4d3b45c499f433961762a45931af
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537873"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082854"
 ---
-# <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Office 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
+# <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Microsoft 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -38,15 +38,15 @@ ms.locfileid: "52537873"
 
 ユーザーが[サービスの制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)または[送信スパム ポリシー](configure-the-outbound-spam-policy.md)で指定されている送信の制限のいずれかを超えた場合、そのユーザーはメールの送信を制限されますが、メールを受信することはできます。
 
-そのユーザーは、セキュリティ/コンプライアンス センターの制限されたユーザー ポータルに追加されます。 メールを送信しようとすると、メッセージは配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) として返され、エラー コード[ 5.1.8 ](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online)と次のテキストが記載されます。
+Microsoft 365 Defender ポータルの **制限されたユーザー** ページにユーザーが追加されます。 メールを送信しようとすると、メッセージは配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) として返され、エラー コード[ 5.1.8 ](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online)と次のテキストが記載されます。
 
 > 「有効な送信者として認識されなかったため、メッセージを配信できませんでした。」 この最も一般的な理由は、メールアドレスがスパムを送信している疑いがあり、メールを送信することを許可されていないことです。  詳細については、メールアドレスの管理者に問い合わせてください。 リモートサーバーが 「550 5.1.8 アクセスが拒否されました。アウトバウンド送信者が正しくありません」を返す
 
-管理者は、セキュリティ/コンプライアンス センターまたは Exchange Online PowerShell の制限された送信者ポータルからユーザーを削除することができます。
+管理者は、Microsoft 365 Defender または Exchange Online PowerShell の制限されたユーザー ページからユーザーを削除することができます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **制限されたユーザー** のページに直接移動するには <https://protection.office.com/restrictedusers> を使用します。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **制限されたユーザー** のページに直接移動するには <https://security.microsoft.com/restrictedusers> を使用します。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -64,17 +64,23 @@ ms.locfileid: "52537873"
 
 - 送信メールの制限を超える送信者は、アカウントが侵害されていることを示しています。 制限されたユーザー ポータルからユーザーを削除する前に、必要な手順に従ってアカウントの制御を再度行ってください。 詳細については、「[侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)」を参照してください。
 
-## <a name="use-the-security--compliance-center-to-remove-a-user-from-the-restricted-users-list"></a>セキュリティ/コンプライアンス センターを使用して、制限されたユーザーの一覧からユーザーを削除する
+## <a name="use-the-microsoft-365-defender-portal-to-remove-a-user-from-the-restricted-users-list"></a>Microsoft 365 Defender ポータルを使用して、制限されたユーザーの一覧からユーザーを削除する
 
-1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[レビュー]** \> **[制限されたユーザー]** の順に移動します。
+1. Microsoft 365 Defender ポータルで、**[メールと共同作業]**  >  **[レビュー]**  >  **[制限されたユーザー]** に移動します。
 
-2. ブロックを解除するユーザーを見つけて選択します。 **[アクション]** 列の **[ブロックを解除]** をクリックします。
+2. **[制限されたユーザー]** ページで、ブロックを解除したいユーザーをクリックして検索し、選択します。
 
-3. 送信が制限されているアカウントの詳細がポップアップで表示されます。 アカウントが実際に侵害された場合に備えて、適切な対策を講じるため、推奨事項を確認する必要があります。 操作が完了したら、**[次へ]** をクリックします。
+3. 表示された **[ブロックを解除]** アクションをクリックします。
 
-4. 次の画面には、今後の侵害を防ぐための推奨事項が表示されます。 *多要素認証 (MFA) を有効にし、 操作が完了したら、**[ユーザーのブロックを解除]** をクリックします。
+4. 表示される **[ブロックを解除したユーザー]** ポップアップで、制限されたアカウントの詳細を確認します。 アカウントが侵害された場合に備えて、適切な対策を講じるため、推奨事項を確認する必要があります。
 
-5. **[はい]** をクリックして変更を確定します。
+   完了したら、**[次へ]** をクリックします。
+
+5. 次の画面には、今後の侵害を防ぐための推奨事項が表示されます。 *多要素認証 (MFA) を有効にし、パスワードをリセットすることは良い防御方法です。
+
+   完了したら、**[送信]** をクリックします。
+
+6. **[はい]** をクリックして変更を確定します。
 
    > [!NOTE]
    > ユーザーからすべての制限を削除するには、最大で 24 時間かかる可能性があります。
@@ -86,20 +92,15 @@ ms.locfileid: "52537873"
 > [!IMPORTANT]
 > アラートを機能させるには、監査ログ検索をオンにする必要があります。 詳細については、「[監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」をご覧ください。
 
-1. セキュリティ/コンプライアンス センターで、**[アラート]** \> **[アラート ポリシー]** の順に移動します。
+1. Microsoft 365 Defender ポータルで、**[メールと共同作業]** \> **[ポリシーとルール]** \> **[通知ポリシー]** に移動します。
 
-2. **[メール送信を制限されているユーザー]** アラートを見つけて選択します。
+2. **[通知ポリシー]** ページで、「**メール送信を制限されたユーザー**」という名前の通知を見つけて選択します。 ポリシーを名前で並べ替えたり、**[検索ボックス]** を使用してポリシーを検索することができます。
 
-3. 表示されるポップアップで、次の設定を確認または構成します。
-
+3. 表示される **[ユーザーに対してメールの送信が制限されました]** ポップアップで、次の設定を確認または構成します。
    - **状態**: ![[オンに切り替え]](../../media/scc-toggle-on.png) で、アラートがオンになっていることを確認します。
-
    - **メール受信者**: **[編集]** をクリックし、表示される **[受信者の編集]** ポップアップで、次の設定を確認または構成します。
-
-     - **メール通知の送信**: チェック ボックスが選択済み (**オン**) になっていることを確認します。
-
-     - **メール受信者**: 既定値は **TenantAdmins** (つまり、**グローバル管理者** のメンバー) です。 受信者を追加するには、ボックスの空白の領域をクリックします。 受信者の一覧が表示されますので、名前を入力して、フィルター処理で受信者を選択します。 名前の横にある![削除アイコン](../../media/scc-remove-icon.png)をクリックすると、既存の受信者をボックスから削除することができます。
-
+     - **メール通知の送信**: これが選択済み (**オン**) になっていることを確認します。
+     - **メール受信者**: 既定値は **TenantAdmins** (つまり、**グローバル管理者** のメンバー) です。 受信者を追加するには、ボックスの空白の領域をクリックします。 受信者の一覧が表示されますので、名前を入力して、フィルター処理で受信者を選択します。 名前の横にある![削除アイコン](../../media/m365-cc-sc-remove-selection-icon.png)をクリックすると、既存の受信者をボックスから削除することができます。
      - **1 日の通知の上限**: 既定値は **制限なし** ですが、1 日あたりの通知数の上限を選択することができます。
 
      完了したら、**[保存]** をクリックします。

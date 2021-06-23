@@ -19,12 +19,12 @@ description: セキュリティ センターでエクスプローラーとリア
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a7e3620859dfbc5f3d55501a880cef233e0a0be3
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 4a9a364f82b7f7836c2f0177dfbde80171b9c36f
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029587"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083226"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -534,21 +534,21 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
-エクスプローラーまたは [リアルタイム検出を使用するには、Office 365](defender-for-office-365.md) 用の Microsoft Defender が必要です。
+エクスプローラーまたは[リアルタイム検出を使用するにはOffice 365](defender-for-office-365.md) Microsoft Defender が必要です。
 
-- Explorer は Defender for Office 365 プラン 2 に含まれています。
-- リアルタイム検出レポートは、Defender for Office 365 プラン 1 に含まれています。
-- 365 用に Defender によって保護される必要があるすべてのユーザーにライセンスを割り当Officeします。 エクスプローラーとリアルタイム検出では、ライセンスを取得したユーザーの検出データが表示されます。
+- エクスプローラーは、Defender for Office 365プラン 2 に含まれています。
+- リアルタイム検出レポートは、Defender for Office 365プラン 1 に含まれています。
+- Defender によって保護される必要があるすべてのユーザーにライセンスを割り当てる計画をOffice 365。 エクスプローラーとリアルタイム検出では、ライセンスを取得したユーザーの検出データが表示されます。
 
 エクスプローラーまたはリアルタイム検出を表示および使用するには、セキュリティ管理者やセキュリティ リーダーに付与されたアクセス許可など、適切なアクセス許可が必要です。
 
 - セキュリティ コンプライアンス センター&、次のいずれかの役割が割り当てられている必要があります。
 
   - 組織管理
-  - セキュリティ管理者 (これは Azure Active Directory 管理センター ( ) で割り当 <https://aad.portal.azure.com> てることができます。
+  - セキュリティ管理者 (この管理者は、管理者センター Azure Active Directory割り当てることができます ( <https://aad.portal.azure.com> )
   - セキュリティ閲覧者
 
-- Exchange Online の場合は、Exchange 管理センター ( ) または Exchange Online PowerShell で次のいずれかの役割が割り <https://admin.protection.outlook.com/ecp/> [当てられている必要があります](/powershell/exchange/exchange-online-powershell)。
+- たとえば、Exchange Online管理センター ( ) または PowerShell で割り当てられている次Exchange役割 <https://admin.protection.outlook.com/ecp/> [Exchange Onlineがあります](/powershell/exchange/exchange-online-powershell)。
 
   - 組織の管理
   - 表示専用組織の管理
@@ -557,15 +557,15 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
 
 役割とアクセス許可の詳細については、次のリソースを参照してください。
 
-- [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
+- [Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)
 - [Exchange Online の機能アクセス許可](/exchange/permissions-exo/feature-permissions)
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出の違い
 
-- リアルタイム *検出レポートは* 、Defender で 365 プラン 1 Office使用できます。 *脅威エクスプローラー* は、Defender for Office 365 プラン 2 で利用できます。
+- リアルタイム *検出レポートは、Defender* でプラン 1 のOffice 365できます。 *脅威エクスプローラー* は、Defender for Office 365プラン 2 で利用できます。
 - リアルタイム検出レポートを使用すると、リアルタイムで検出を表示できます。 脅威エクスプローラーも同様にこれを実行しますが、特定の攻撃に関する追加の詳細も提供します。
 - すべての *電子メール ビュー* は脅威エクスプローラーで使用できますが、リアルタイム検出レポートでは使用できません。
-- 脅威エクスプローラーには、より多くのフィルター機能と使用可能なアクションが含まれています。 詳細については [、「Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 プラン」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 脅威エクスプローラーには、より多くのフィルター機能と使用可能なアクションが含まれています。 詳細については[、「Microsoft Defender for Office 365 サービスの説明:](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)Defender 全体の機能の可用性」を参照してください。Office 365してください。
 
 ## <a name="other-articles"></a>その他の記事
 

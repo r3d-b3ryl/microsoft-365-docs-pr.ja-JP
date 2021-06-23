@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 42e848309589fa8786346b5921d1cade0ed074b9
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: c8f821381d8e51b843f3a213d8daec5ef6ffaf5f
+  ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52625415"
+  ms.lasthandoff: 06/23/2021
+  ms.locfileid: "53083646"
 title: 検疫済みメッセージに関するよく寄せられる質問
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -82,14 +82,14 @@ sections:
   - question: >
       一度に複数の検疫メッセージを解放または報告できますか。
     answer: >
-      セキュリティ コンプライアンス センター&、一度に最大 100 件のメッセージを選択して解放できます。
+      このポータルMicrosoft 365 Defender、一度に最大 100 件のメッセージを選択して解放できます。
 
 
       管理者は、Exchange Online PowerShell またはスタンドアロン EOP PowerShell の[Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)コマンドレットと[Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)コマンドレットを使用して、検疫済みメッセージを一括で検索および解放し、誤検知を一括して報告できます。
   - question: >
       隔離されたメッセージを検索する場合にワイルドカードはサポートされますか。 特定のドメインの隔離されたメッセージを検索できますか。
     answer: >-
-      ワイルドカードは、セキュリティ コンプライアンス センター&サポートされていません。 たとえば、送信者を検索する場合は、完全な電子メール アドレスを指定する必要があります。 ただし、PowerShell またはスタンドアロン EOP PowerShell ではExchange Onlineワイルドカードを使用できます。
+      ワイルドカードは、ポータルではMicrosoft 365 Defenderされません。 たとえば、送信者を検索する場合は、完全な電子メール アドレスを指定する必要があります。 ただし、PowerShell またはスタンドアロン EOP PowerShell ではExchange Onlineワイルドカードを使用できます。
 
 
       たとえば、次の PowerShell コードを NotePad にコピーし、ファイルを簡単に見つけることができる場所 (たとえば、.ps1) に保存C:\Data\QuarantineRelease.ps1。

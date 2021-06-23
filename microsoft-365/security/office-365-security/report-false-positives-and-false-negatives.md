@@ -13,12 +13,12 @@ ms.collection:
 description: レポート メッセージ機能を使用して、誤検知と誤Outlookを報告する方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 84a5b697f8a4b46cf79c542485bfafb396328f5c
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 458e7d16e2614e7bac3a0aac5a4310e6353ab569
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789245"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082926"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Outlook の誤検出と検出漏れを報告する
 
@@ -30,7 +30,7 @@ ms.locfileid: "52789245"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Exchange Online メールボックスを持つ Microsoft 365 組織の管理者である場合は、セキュリティ & コンプライアンス センターで申請ポータルを使用することをお勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
+> 組織の管理者が Microsoft 365 メールボックスExchange Onlineしている場合は、Microsoft 365 Defender ポータルの [申請] ページを使用することをお勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 
 ハイブリッドモダン認証を使用して Exchange Online Microsoft 365 またはオンプレミスのメールボックスにメールボックスを持つ Microsoft 365 組織では、誤検知 (ブロックまたは迷惑メール フォルダーに送信された良いメール) と誤検知 (受信トレイに配信された不要な電子メールまたはフィッシング) を Exchange Online Protection (EOP) に送信できます。
 
@@ -41,9 +41,9 @@ ms.locfileid: "52789245"
   > [!IMPORTANT]
   > ユーザー申請ポリシーを使用Outlook迷惑メールやフィッシングを報告する組み込[みのエクスペリエンス](./user-submission.md)です。 代わりに、レポート メッセージ アドインまたはレポート フィッシング アドインを使用することをお勧めします。
 
-- レポート メッセージ アドインとレポート フィッシング アドインは、Outlook のすべてのプラットフォーム (Outlook on the web、iOS、Android、デスクトップ) で機能します。
+- レポート メッセージ アドインとレポート フィッシング アドインは、すべてのOutlook (Outlook on the web、iOS、Android、デスクトップ) で機能します。
 
-- ユーザーがメールボックスを使用している組織の管理者Exchange Online、セキュリティ コンプライアンス センターの Submissions ポータル&使用します。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
+- 組織の管理者がメールボックスを使用している場合Exchange Onlineポータルで申請ポータルをMicrosoft 365 Defenderしてください。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 
 - Microsoft、指定したメールボックス、または両方にメッセージを直接送信する構成が可能です。 詳細については、「ユーザー申請 [ポリシー」を参照してください](user-submission.md)。
 
@@ -60,7 +60,7 @@ ms.locfileid: "52789245"
 1. 選択した **メッセージの右上隅** にある [その他の操作] 楕円を選択し、ドロップダウン メニューから [メッセージの報告] を選択し、[迷惑メール] または [フィッシング]**を選択します**。
 
    ![レポート メッセージ - その他のアクション](../../media/report-message-more-actions.png)
-   
+
    ![レポート メッセージ - 迷惑メールとフィッシング](../../media/report-message-junk-phishing.png)
 
 2. 選択したメッセージは、分析のために Microsoft に送信されます。
@@ -72,7 +72,7 @@ ms.locfileid: "52789245"
 1. 選択した **メッセージの右上隅** にある [その他のアクションの省略記号] を選択し、ドロップダウン メニューから [メッセージの報告] を選択し、[迷惑メールではない] を **選択します**。
 
    ![レポート メッセージ - その他のアクション](../../media/report-message-more-actions.png)
-   
+
    ![レポート メッセージ - 迷惑メールではない](../../media/report-message-not-junk.png)
 
 2. 選択したメッセージは分析のために Microsoft に送信され、受信トレイまたは指定したその他のフォルダーに移動されます。
@@ -81,5 +81,5 @@ ms.locfileid: "52789245"
 
 ユーザーが Microsoft に報告するメッセージを確認するには、次のオプションがあります。
 
-- 管理者申請ポータルを使用します。 詳細については [、「Microsoft へのユーザー申請の表示」を参照してください](admin-submission.md#view-user-submissions-to-microsoft)。
+- ポータルの **[申請]** ページMicrosoft 365 Defenderします。 詳細については [、「Microsoft へのユーザー申請の表示」を参照してください](admin-submission.md#view-user-submissions-to-microsoft)。
 - 報告されたメッセージのコピーを送信するメール フロー ルール (トランスポート ルールとも呼ばれる) を作成します。 手順については、「メール フロー ルールを使用して、ユーザーが Microsoft に報告している [情報を確認する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)。

@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5 または Microsoft Defender でシミュレートされたフィッシング攻撃とパスワード攻撃を実行して、Office 365プラン 2 組織に対して実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 182d3d3c1d3b7c0c43caa8a809e993933707af00
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ad86f77399cfa2a3a780d3fed7e483e3c11bc08d
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878786"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082902"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>攻撃シミュレーション トレーニングの使用を開始する
 
@@ -33,28 +33,28 @@ ms.locfileid: "52878786"
 
 **Microsoft** Defender for [Office 365プラン 2 に適用されます](defender-for-office-365.md)
 
-組織に Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 (脅威[](office-365-ti.md)調査と対応機能を含む) がある場合は、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングを使用して、組織内で現実的な攻撃シナリオを実行できます。 これらのシミュレートされた攻撃は、実際の攻撃が一番下の行に影響を与える前に、脆弱なユーザーを特定して見つけるのに役立ちます。 詳細については、この記事を参照してください。
+組織に Microsoft 365 E5 または Microsoft Defender for Office 365 Plan 2 (脅威[](office-365-ti.md)調査と対応機能を含む) がある場合は、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングを使用して、組織で現実的な攻撃シナリオを実行できます。 これらのシミュレートされた攻撃は、実際の攻撃が一番下の行に影響を与える前に、脆弱なユーザーを特定して見つけるのに役立ちます。 詳細については、この記事を参照してください。
 
 > [!NOTE]
 > 攻撃シミュレーション トレーニングは、Microsoft [Defender](attack-simulator.md)の攻撃シミュレーターで説明されている古い攻撃シミュレーター v1 エクスペリエンスに代わるOffice 365。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- Defender ポータルを開Microsoft 365に移動します <https://security.microsoft.com> 。 攻撃シミュレーション のトレーニングは、メールと **コラボレーションの攻撃シミュレーション** \> **トレーニングで利用できます**。 攻撃シミュレーション のトレーニングに直接移動するには、を開きます <https://security.microsoft.com/attacksimulator> 。
+- Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 攻撃シミュレーション のトレーニングは、メールと **コラボレーションの攻撃シミュレーション** \> **トレーニングで利用できます**。 攻撃シミュレーション のトレーニングに直接移動するには、を開きます <https://security.microsoft.com/attacksimulator> 。
 
 - さまざまなサブスクリプション間で攻撃シミュレーション トレーニングを利用Microsoft 365詳細については[、「Microsoft Defender for Office 365」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
-- この記事の手順を実行するには、セキュリティ & コンプライアンス センターまたは Azure Active Directory でアクセス許可を割り当てる必要があります。 具体的には、組織の管理、セキュリティ管理者、または次のいずれかの役割のメンバーである必要があります。
+- この記事の手順を実行するには、Microsoft 365 Defenderポータルまたは Azure Active Directoryでアクセス許可を割り当てる必要があります。 具体的には、組織の管理、セキュリティ管理者、または次のいずれかの役割のメンバーである必要があります。
   - **攻撃シミュレーターの管理者**: 攻撃シミュレーション キャンペーンのすべての側面を作成および管理します。
   - **攻撃シミュレータペイロード作成者**: 管理者が後で開始できる攻撃ペイロードを作成します。
 
-  詳細については、「セキュリティ コンプライアンス センター [のアクセス](permissions-in-the-security-and-compliance-center.md) 許可」または「&について [」を参照してください](../../admin/add-users/about-admin-roles.md)。
+  詳細については、「管理者ポータル[のアクセス許可」または「Microsoft 365 Defenderロール](permissions-microsoft-365-security-center.md)[について」を参照してください](../../admin/add-users/about-admin-roles.md)。
 
 - 攻撃シミュレーション トレーニングに対応する PowerShell コマンドレットはありません。
 
 - 攻撃シミュレーションとトレーニング関連データは、他の顧客データと一緒に保存され、Microsoft 365されます。 詳細については、「データ[の場所Microsoft 365を参照してください](../../enterprise/o365-data-locations.md)。 攻撃シミュレーションは、NAM、APC、EUR、IND、CAN、AUS、FRA、GBR、JPN、および KOR の領域で使用できます。
 
-- 2021 年 6 月 15 日現在、攻撃シミュレーション のトレーニングは、GCC。 組織に Office 365 G5 GCC または Microsoft Defender for Office 365 (プラン 2) がある場合は、この記事で説明するように、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングを使用して、組織で現実的な攻撃シナリオを実行できます。 攻撃シミュレーションのトレーニングは、High 環境または DoD 環境GCCまだ利用できません。
+- 2021 年 6 月 15 日現在、攻撃シミュレーション のトレーニングは、GCC。 組織に Office 365 G5 GCC または Microsoft Defender for Office 365 (プラン 2) がある場合は、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングを使用して、この記事で説明したように、組織で現実的な攻撃シナリオを実行できます。 攻撃シミュレーションのトレーニングは、High 環境または DoD 環境GCCまだ利用できません。
 
 > [!NOTE]
 > 攻撃シミュレーショントレーニングは、E3 のお客様に試用版として機能のサブセットを提供します。 試用版には、Credential Harvest ペイロードを使用する機能と、'ISA フィッシング' または 'マス マーケット フィッシング' トレーニング エクスペリエンスを選択する機能が含まれています。 他の機能は、E3 試用版の一部です。

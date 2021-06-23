@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、フィッシング対策の保護機能について、Exchange Online Protection (EOP) と Microsoft Defender for Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e1539153282f14a13ddd9066350cbcdca2a074a
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 2a28e2ecc45be941dbd6e346f9918e1692357840
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029239"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083106"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -66,10 +66,8 @@ EOP (つまり、microsoft Defender Microsoft 365を使用しない組織Office 
 Microsoft Defender for Office 365 には、次のより高度なフィッシング対策機能が含まれています。
 
 - **microsoft Defender for Office 365** のフィッシング対策ポリシー: 特定のメッセージ送信者と送信者ドメイン、メールボックス インテリジェンス設定、および調整可能な高度なフィッシングしきい値に対する偽装保護設定を構成します。 詳細については[、「Microsoft Defender でフィッシング対策ポリシー](configure-mdo-anti-phishing-policies.md)を構成する」を参照Office 365。 EOP のフィッシング対策ポリシーと Office 365 用 Defender のフィッシング対策ポリシーの違いの詳細については、「Microsoft 365 のフィッシング対策ポリシー」[を参照してください](set-up-anti-phishing-policies.md)。
-
 - **キャンペーン ビュー**: 機械学習などのヒューリスティックは、サービス全体と組織に対する協調フィッシング攻撃に関連するメッセージを特定して分析します。 詳細については[、「Microsoft Defender for microsoft Defender のキャンペーン ビュー」を参照Office 365。](campaigns.md)
-
-- **攻撃シミュレーター**: 管理者は、偽のフィッシング メッセージを作成し、教育ツールとして内部ユーザーに送信できます。 詳細については[、「Attack Simulator in Microsoft Defender for microsoft Defender for Office 365」 を参照してください](attack-simulator.md)。
+- **攻撃シミュレーショントレーニング**: 管理者は、偽のフィッシング メッセージを作成し、教育ツールとして内部ユーザーに送信できます。 詳細については、「フィッシング攻撃 [をシミュレートする」を参照してください](attack-simulation-training.md)。
 
 ## <a name="other-anti-phishing-resources"></a>その他のフィッシング対策リソース
 

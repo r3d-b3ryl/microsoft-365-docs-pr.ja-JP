@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055122"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083538"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーが報告したメッセージ設定
 
@@ -68,7 +68,7 @@ Microsoft に直接ではなく、ユーザーが報告したメッセージを�
 
 - ユーザー申請の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
 
-  - **[組織の管理****] または [セキュリティ** 管理者][をMicrosoft 365 Defenderします](permissions-in-the-security-and-compliance-center.md)。
+  - **[組織の** 管理 **] または [** セキュリティ管理者] ポータルの [アクセス許可] [Microsoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
   - **[組織の** 管理] [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)。
 
 - PowerShell へのアクセスExchange Online必要です。 使用しようとしているアカウントが Exchange Online PowerShell にアクセスできない場合は、申請メールボックスを指定すると、次のようなエラー メッセージが表示されます。

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769429"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053073"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -116,7 +116,7 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
 ### <a name="retention-policy-for-yammer-locations"></a>Yammer の場所のアイテム保持ポリシー
 
 > [!NOTE]
-> Yammer の保持ポリシーがプレビューで展開されています。 まだ Yammer の新しい場所が表示されていない場合は、数週間後にもう一度お試しください。
+> Yammer のアイテム保持ポリシーはプレビュー段階です。
 >
 > この機能を使用するには、ご利用の Yammer ネットワークがハイブリッド モードではなく、[ネイティブ モード](/yammer/configure-your-yammer-network/overview-native-mode)になっている必要があります。
 
@@ -127,8 +127,6 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
 3. ウィザードの [**コンテンツを保持するか、削除するか、またはその両方を行うかを決定する**] ページで、コンテンツを保持および削除するための構成オプションを指定します。 
     
     削除せずにコンテンツを保持するだけのアイテム保持ポリシーを作成し、指定した期間が経過した後に保持してから削除するか、指定した期間が経過した後にコンテンツを削除するだけです。 詳細については、このページの「[コンテンツを保持および削除するための設定](#settings-for-retaining-and-deleting-content)」を参照してください。
-    
-    このオプションは Teams の場所ではサポートされていないため、[**保存期間の詳細設定を使用する**] を選択しないでください。 
 
 4. [**場所の選択**] ページで、[**特定の場所を選択**] を選択します。 次に、Yammer の場所の 1 つまたは両方をオンに切り替えます: **Yammer コミュニティのメッセージ** と **Yammer ユーザーのメッセージ**。
     

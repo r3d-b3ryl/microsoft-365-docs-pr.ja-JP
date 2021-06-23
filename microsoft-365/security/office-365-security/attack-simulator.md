@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender の攻撃Office 365
+title: セキュリティ コンプライアンス センターの攻撃&シミュレーター
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,17 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、攻撃シミュレーターを使用して、Microsoft 365 E5 または Microsoft Defender for Office 365 プラン 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
+description: 管理者は、セキュリティ & Complance センターで攻撃シミュレーターを使用して、Microsoft 365 E5 または Microsoft Defender で Office 365 プラン 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 03e6c0077f13c85bfd20ac0583b64ce29e2535a1
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: aa10c30644562a156964ebaa1d63145047ca9264
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878678"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082866"
 ---
-# <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender の攻撃Office 365
+# <a name="attack-simulator-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの攻撃&シミュレーター
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "52878678"
 
 > [!NOTE]
 >
-> この記事で説明する攻撃シミュレーターは読み取り専用で、Microsoft 365 Defenderポータルの [メール **&** コラボレーション] ノードの攻撃シミュレーション トレーニングに置き換えされています <https://security.microsoft.com> 。 詳細については、「攻撃シミュレーション トレーニング [の使用を開始する」を参照してください](attack-simulation-training-get-started.md)。
+> この記事で説明する攻撃シミュレーターは読み取り専用で、Microsoft 365 Defender ポータルの [メール& コラボレーション] ノードの攻撃シミュレーション トレーニングに置き換えされています <https://security.microsoft.com> 。 詳細については、「攻撃シミュレーション トレーニング [の使用を開始する」を参照してください](attack-simulation-training-get-started.md)。
 >
 > このバージョンの攻撃シミュレーターから新しいシミュレーションを起動する機能が無効になっています。 ただし、2021 年 4 月 24 日までレポートにアクセスできます。
 

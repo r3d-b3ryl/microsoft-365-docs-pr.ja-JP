@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Microsoft 365 Defender ポータルで使用できる電子メール セキュリティ レポートを検索して使用する方法について説明します。
+description: 管理者は、ポータルで使用できる電子メール セキュリティ レポートを検索して使用するMicrosoft 365 Defenderできます。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 2ad90038ac818f9759768d0d00019393205b03f3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029574"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083526"
 ---
-# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで電子メール セキュリティ レポートを表示する
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>電子メール セキュリティ レポートを Microsoft 365 Defenderする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,20 +35,20 @@ ms.locfileid: "53029574"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、マルウェア対策、暗号化機能などの電子メール セキュリティ機能が組織を保護している方法を確認できます。 <https://security.microsoft.com> 必要な [アクセス許可を](#what-permissions-are-needed-to-view-these-reports)持っている場合は、[電子メールのレポート] & コラボレーション レポートにアクセスして、Microsoft 365 Defender ポータルでこれらのレポート \>  \> **&表示できます**。 [コラボレーション レポートの電子メール] **ページ&移動するには、** を開きます <https://security.microsoft.com/emailandcollabreport> 。
+Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、マルウェア対策、暗号化機能などの電子メール セキュリティ機能が組織を保護している方法を確認できます。 <https://security.microsoft.com> 必要な [アクセス許可を](#what-permissions-are-needed-to-view-these-reports)持っている場合は、[レポートの電子メール] Microsoft 365 Defender コラボレーション レポートにアクセスして、Microsoft 365 Defender ポータルでこれらのレポート& \> **を** \> **表示&できます**。 [コラボレーション レポートの電子メール] **ページ&移動するには、** を開きます <https://security.microsoft.com/emailandcollabreport> 。
 
-![Microsoft 365 Defender &の [コラボレーション レポート] ページにメールを送信する](../../media/email-collaboration-reports.png)
+![[&] ポータルの [コラボレーション レポート] ページMicrosoft 365 Defenderメール](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
-> [電子メール と共同作業レポート] ページ& **一部のレポートでは** 、Microsoft Defender が 365 Office必要です。 これらのレポートの詳細については [、「View Defender for Office 365 レポート」を参照してください](view-reports-for-mdo.md)。
+> [電子メール] コラボレーション レポート ページの一 **部のレポート&、Microsoft** Defender が必要です。Office 365。 これらのレポートの詳細については[、「View Defender for Office 365ポータル」をMicrosoft 365 Defenderしてください](view-reports-for-mdo.md)。
 >
-> メール フローに関連するレポートが Exchange 管理センター (EAC) に追加されました。 これらのレポートの詳細については、「新しい Exchange 管理センターのメール フロー [レポート」を参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
+> メール フローに関連するレポートは、現在、Exchangeセンター (EAC) に表示されます。 これらのレポートの詳細については、「新しい管理センターのメール フロー レポート[Exchange参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
 
 ## <a name="compromised-users-report"></a>侵害されたユーザー レポート
 
 > [!NOTE]
-> このレポートは、Exchange Online メールボックスを持つ Microsoft 365 組織で利用できます。 スタンドアロンの Exchange Online Protection (EOP) 組織では使用できません。
+> このレポートは、メールボックスを使用Microsoft 365組織Exchange Online使用できます。 スタンドアロン 組織 (EOP) 組織ではExchange Online Protection使用できません。
 
 [**侵害されたユーザー] レポート** には、過去 7 日以内に[疑わしい] または [制限付き] とマークされたユーザー アカウントの数が表示されます。 これらの状態のどちらかのアカウントは、問題が発生したり、侵害された場合もあります。 頻繁に使用すると、レポートを使用して、疑わしいアカウントや制限付きアカウントのスパイクや傾向を見つけるのに使用できます。 侵害されたユーザーの詳細については、「侵害されたメール アカウントへの [応答」を参照してください](responding-to-a-compromised-email-account.md)。
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender ポータルでは、Microsoft 365 のスパム対策、�
 
 集計ビューには過去 90 日間のデータが表示され、詳細ビューには過去 30 日間のデータが表示されます。
 
-Microsoft 365 Defender ポータルでレポートを表示するには、「Reports  \> **Email &コラボレーション** レポート \> **&に移動します**。 [コラボレーション **レポートのメール&] ページで**、[侵害されたユーザー] を探し、[詳細の表示]**をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/CompromisedUsers> 。
+ポータルでレポートを表示するにはMicrosoft 365 Defender[レポートの電子メール]  & \>  \> **グループ&に移動します**。 [コラボレーション **レポートのメール&] ページで**、[侵害されたユーザー] を探し、[詳細の表示]**をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/CompromisedUsers> 。
 
 [侵害された **ユーザー** ] ページで、[フィルター] をクリックし、表示されるフライアウトで次の値の 1 つ以上を選択することで、グラフと詳細テーブルの両方をフィルター処理できます。
 
@@ -75,29 +75,29 @@ Microsoft 365 Defender ポータルでレポートを表示するには、「Rep
 - **[ユーザー ID]**
 - **Action**
 
-## <a name="exchange-transport-rule-report"></a>Exchange トランスポート ルール レポート
+## <a name="exchange-transport-rule-report"></a>Exchangeトランスポート ルール レポート
 
-**Exchange トランスポート ルール レポートには**、組織内の受信メッセージと送信メッセージに対するメール フロー ルール (トランスポート ルールとも呼ばれる) の影響が表示されます。
+トランスポート **Exchangeレポートには**、組織内の受信メッセージと送信メッセージに対するメール フロー ルール (トランスポート ルールとも呼ばれる) の影響が表示されます。
 
-Microsoft 365 Defender ポータルでレポートを表示するには、「Reports  \> **Email &コラボレーション** レポート \> **&に移動します**。 [電子メール **&コラボレーション レポート] ページで****、Exchange トランスポート ルールを検索し**、[詳細の表示]**をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/ETRRuleReport> 。
+ポータルでレポートを表示するにはMicrosoft 365 Defender[レポートの電子メール]  & \>  \> **グループ&に移動します**。 [コラボレーション **レポートのメール&] ページ** で、トランスポート **Exchangeを見** つけて、[詳細の表示]**をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/ETRRuleReport> 。
 
-![[電子メール] コラボレーション レポート ページ& Exchange トランスポート ルール ウィジェット](../../media/transport-rule-report-widget.png)
+![Exchangeグループレポートページのトランスポート ルール &ウィジェット](../../media/transport-rule-report-widget.png)
 
-[Exchange トランスポート **ルール レポート] ページ** で、使用可能なグラフとデータについて、次のセクションで説明します。
+[トランスポート **Exchangeレポート] ページ** で、使用可能なグラフとデータについて、次のセクションで説明します。
 
 ### <a name="chart-breakdown-by-direction"></a>[方向] によるグラフの内訳
 
-![Exchange トランスポート ルール レポートの Exchange トランスポート ルールの方向ビュー](../../media/transport-rule-report-etr-direction-view.png)
+![トランスポート ルール レポートExchangeトランスポート ルールのExchange表示](../../media/transport-rule-report-etr-direction-view.png)
 
 [方向によるグラフ **の内訳] を選択すると**、次のグラフを使用できます。
 
-- **Exchange トランスポート ルールによるデータの表示**  : メールフロー ルールの影響を受けた受信メッセージと送信メッセージの数。
-- **DLP Exchange トランスポート ルールによる** データの表示:データ損失防止 (DLP) メール フロー ルールの影響を受けた受信メッセージと送信メッセージの数。
+- **トランスポート ルールExchangeデータ** を表示する : メールフロー ルールの影響を受けた受信メッセージと送信メッセージの数。
+- **データを DLP** Exchangeトランスポート ルールで表示する :データ損失防止 (DLP) メール フロー ルールの影響を受けた受信メッセージと送信メッセージの数。
 
 次の情報は、グラフの下の詳細テーブルに示されています。
 
 - **Date**
-- **DLP ポリシー** (**DLP Exchange トランスポート ルールによるデータの表示** のみ)
+- **DLP ポリシー** (**DLP によるデータの表示Exchangeトランスポート ルールのみ**)
 - **トランスポート ルール**
 - **[件名]**
 - **[送信者のアドレス]**
@@ -115,18 +115,18 @@ Microsoft 365 Defender ポータルでレポートを表示するには、「Rep
 
 ### <a name="chart-breakdown-by-severity"></a>重大度別のグラフの内訳
 
-![Exchange トランスポート ルール レポートの Exchange トランスポート ルールの重大度ビュー](../../media/transport-rule-report-etr-severity-view.png)
+![トランスポート ルール レポートExchangeトランスポート ルールのExchange表示](../../media/transport-rule-report-etr-severity-view.png)
 
 [重要度による **グラフの内訳] を選択した場合** は、次のグラフを使用できます。
 
-- **Exchange トランスポート ルール別にデータ** を表示する: 重大度の高いメッセージ、中程度の重大度、および **低重大度メッセージの** 数。 重大度レベルは、ルールのアクションとして設定します **(重大度** レベルまたは _SetAuditSeverity_ でこのルールを監査します)。 詳細については [、「Exchange Online のメール フロー ルールアクション」を参照してください](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+- **トランスポート ルール別Exchange表示**: 重大度の高いメッセージ、中程度の重大度、および **低** 重大度メッセージの数。 重大度レベルは、ルールのアクションとして設定します **(重大度** レベルまたは _SetAuditSeverity_ でこのルールを監査します)。 詳細については、「メール フロー ルール[のアクション」を参照Exchange Online。](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- **DLP Exchange トランスポート ルール** でデータを表示する : DLP メール フロールールの影響を受けた重大度の高いメッセージ、中程度の重大度、および低重大度メッセージの数。 
+- **DLP メール フロー ルールExchange** 影響を受けた高重大度、中重大度、および低重大度メッセージの数。 
 
 次の情報は、グラフの下の詳細テーブルに示されています。
 
 - **Date**
-- **DLP ポリシー** (**DLP Exchange トランスポート ルールによるデータの表示** のみ)
+- **DLP ポリシー** (**DLP によるデータの表示Exchangeトランスポート ルールのみ**)
 - **トランスポート ルール**
 - **[件名]**
 - **[送信者のアドレス]**
@@ -149,9 +149,9 @@ Microsoft 365 Defender ポータルでレポートを表示するには、「Rep
 
 ## <a name="mailflow-status-report"></a>メールフローの状態レポート
 
-**Mailflow 状態** レポートは、受信および送信メール、スパム検出、マルウェア、"良い" と識別される電子メール、およびエッジで許可またはブロックされた電子メールに関する情報を示すスマート レポートです。 これはエッジ保護情報を含む唯一のレポートであり、Exchange Online Protection (EOP) による評価のためにサービスに許可される前にブロックされる電子メールの量のみを示します。 メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージではなく 5 つの異なるメッセージとしてカウントされます。
+**Mailflow 状態** レポートは、受信および送信メール、スパム検出、マルウェア、"良い" と識別される電子メール、およびエッジで許可またはブロックされた電子メールに関する情報を示すスマート レポートです。 これは、エッジ保護情報を含む唯一のレポートであり、EOP (EOP) による評価のためにサービスに許可される前にブロックされる電子メールの量を示Exchange Online Protectionです。 メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージではなく 5 つの異なるメッセージとしてカウントされます。
 
-Microsoft 365 Defender ポータルでレポートを表示するには、「Reports  \> **Email &コラボレーション** レポート \> **&に移動します**。 [メール **の送信&] ページ** で、[ **メールフロー** の状態の概要] を探し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/mailflowStatusReport> 。
+ポータルでレポートを表示するにはMicrosoft 365 Defender[レポートの電子メール]  & \>  \> **グループ&に移動します**。 [メール **の送信&] ページ** で、[ **メールフロー** の状態の概要] を探し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/mailflowStatusReport> 。
 
 ![[メール] グループ作業レポート ページの [メールフロー&概要] ウィジェット](../../media/mail-flow-status-report-widget.png)
 
@@ -169,7 +169,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、「Rep
 - **種類**:
   - **良いメール**
   - **マルウェア**
-  - **スパム**
+  - **[スパム]**
   - **エッジ保護**
   - **ルール メッセージ**
   - **フィッシング詐欺メール**
@@ -182,7 +182,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、「Rep
 次の情報は、グラフの下の詳細テーブルに示されています。
 
 - **[方向]**
-- **種類**
+- **型**
 - **24 時間**
 - **3 日間**
 - **7 日間**
@@ -473,7 +473,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
   - **迷惑メールではない**
   - **フィッシング**
   - **マルウェア**
-  - **スパム**
+  - **[スパム]**
 - **再スキャンの状態**:
   - **Pending**
   - **Completed**
@@ -521,7 +521,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **タグ**: 指定したユーザー タグが適用されているユーザーまたはグループ (優先度アカウントを含む) によって結果をフィルター処理します。 ユーザー タグの詳細については、「ユーザー タグ」 [を参照してください](user-tags.md)。
 - **[方向]**
 - **ドメイン**
-- **ポリシーの種類**
+- **[ポリシーの種類]**
 
 フィルターの構成が完了したら、[適用]、[**キャンセル**]、または [フィルターのクリア]**をクリックします**。
 
@@ -568,7 +568,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **[方向]**
 - **タグ**: 指定したユーザー タグが適用されているユーザーまたはグループ (優先度アカウントを含む) によって結果をフィルター処理します。 ユーザー タグの詳細については、「ユーザー タグ」 [を参照してください](user-tags.md)。
 - **ドメイン**
-- **ポリシーの種類**
+- **[ポリシーの種類]**
 - **ポリシー名** (詳細テーブルのみ)
 - **受信者**
 
@@ -609,7 +609,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **[方向]**
 - **タグ**: 指定したユーザー タグが適用されているユーザーまたはグループ (優先度アカウントを含む) によって結果をフィルター処理します。 ユーザー タグの詳細については、「ユーザー タグ」 [を参照してください](user-tags.md)。
 - **ドメイン**
-- **ポリシーの種類**
+- **[ポリシーの種類]**
 - **ポリシー名** (詳細テーブルのみ)
 - **受信者**
 
@@ -647,7 +647,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **[方向]**
 - **タグ**: 指定したユーザー タグが適用されているユーザーまたはグループ (優先度アカウントを含む) によって結果をフィルター処理します。 ユーザー タグの詳細については、「ユーザー タグ」 [を参照してください](user-tags.md)。
 - **ドメイン**
-- **ポリシーの種類**
+- **[ポリシーの種類]**
 - **ポリシー名** (詳細テーブルのみ)
 - **受信者**
 
@@ -688,7 +688,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **[方向]**
 - **タグ**: 指定したユーザー タグが適用されているユーザーまたはグループ (優先度アカウントを含む) によって結果をフィルター処理します。 ユーザー タグの詳細については、「ユーザー タグ」 [を参照してください](user-tags.md)。
 - **ドメイン**
-- **ポリシーの種類**
+- **[ポリシーの種類]**
 - **ポリシー名** (詳細テーブルのみ)
 - **受信者**
 
@@ -752,7 +752,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **[方向]**
 - **タグ**: 指定したユーザー タグが適用されているユーザーまたはグループ (優先度アカウントを含む) によって結果をフィルター処理します。 ユーザー タグの詳細については、「ユーザー タグ」 [を参照してください](user-tags.md)。
 - **ドメイン**
-- **ポリシーの種類**
+- **[ポリシーの種類]**
 - **ポリシー名** (詳細テーブルのみ)
 - **受信者**
 
@@ -805,7 +805,7 @@ URL **の脅威保護レポートは**、Microsoft Defender でのみ使用で�
 - **報告された理由**
   - **迷惑メールではない**
   - **フィッシング**
-  - **スパム**
+  - **[スパム]**
 - **フィッシングシミュレーション**:**はいまたは****いいえ**
 
 フィルターの構成が完了したら、[適用]、[**キャンセル**]、または [フィルターのクリア]**をクリックします**。
@@ -848,9 +848,9 @@ URL **の脅威保護レポートは**、Microsoft Defender でのみ使用で�
 - **セキュリティ リーダー**
 - **グローバル リーダー**
 
-詳細については、「ポータルの[アクセス許可」をMicrosoft 365 Defenderしてください](permissions-in-the-security-and-compliance-center.md)。
+詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+**注**: Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合は、
 

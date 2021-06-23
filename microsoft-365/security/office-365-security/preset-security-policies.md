@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、標準ポリシーと厳密なポリシー設定を、Exchange Online Protection (EOP) と Microsoft Defender の保護機能全体に適用する方法をOffice 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24fe67a7465ec71451b649dbc5963c28e0dc7cf3
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: eb5fb2e882348e2cd0480abf5ad7217095b2522d
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879014"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083490"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
 
@@ -105,7 +105,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- Defender ポータルのMicrosoft 365開きます <https://security.microsoft.com> 。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [事前設定されたセキュリティ ポリシー] **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/presetSecurityPolicies> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -115,24 +115,24 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
-  **注**: Microsoft 365 管理センターの対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  **注**: Azure Active Directory の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 管理センター 内の他の機能に必要なアクセス許可とアクセス許可がユーザーに付与Microsoft 365。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
-### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>ユーザーに事前Microsoft 365セキュリティ ポリシーを割り当てるには、Defender ポータルを使用します。
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>ユーザーに事前Microsoft 365 Defenderポリシーを割り当てるには、このポータルを使用します。
 
-1. Defender ポータルMicrosoft 365、メール グループ ポリシー  & ルール & テンプレート ポリシー セクション の [セキュリティ ポリシーの事前設定] \>  \>  \>  \> **に移動します**。
+1. [セキュリティ ポリシー Microsoft 365 Defender] ポータルで、[メール &**グループ** ポリシー&ルール テンプレート ポリシー] セクションの [セキュリティ ポリシーの事前設定] \>  \>  \>  \> **に移動します**。
 
 2. [標準 **保護] または [****厳密な保護] で、[** 編集] を **クリックします**。
 
 3. [ **標準保護の適用] または** **[厳密な保護の適用] ウィザードが** 起動します。 **[EOP 保護] ページで**[、EOP](#policies-in-preset-security-policies)保護が適用される内部受信者 (受信者の条件) を特定します。
-   - **Users**
-   - **グループ**
+   - **ユーザー**
+   - **Groups**
    - **ドメイン**
 
    適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
    ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。 ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
 
-   - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。 設定と動作は、条件とまったく同じです。
+   - **これらのユーザー、グループ**、およびドメインを除外する : ポリシーが適用される内部受信者 (受信者の例外) に例外を追加するには、このオプションを選択し、例外を構成します。 設定と動作は、条件とまったく同じです。
 
    完了したら、**[次へ]** をクリックします。
 
@@ -144,7 +144,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
 5. [変更 **の確認と確認] ページで** 、選択内容を確認し、[確認] を **クリックします**。
 
-### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-preset-security-policies"></a>Defender ポータルMicrosoft 365使用して、事前設定されたセキュリティ ポリシーの割り当てを変更する
+### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-preset-security-policies"></a>事前設定されたMicrosoft 365 Defender割り当てを変更するには、このポータルを使用します。
 
 Standard Protection または **Strict** **Protection** セキュリティ ポリシーの割り当てを変更する手順は、事前設定されたセキュリティ ポリシーをユーザーに最初に割り当てた場合と [同じです](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users)。
 
