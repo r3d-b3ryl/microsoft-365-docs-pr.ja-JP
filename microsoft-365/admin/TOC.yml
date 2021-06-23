@@ -74,14 +74,10 @@
       items:
         - name: 21Vianet が運用している Office 365 について
           href: services-in-china/services-in-china.md
-        - name: サブスクリプションの購入または試用
-          href: ../commerce/try-or-buy-microsoft-365.md?view=o365-21vianet
         - name: 21Vianet が運営する Office 365 の Android 用 Office アプリをダウンロードする
           href: services-in-china/download-office-app-for-Android.md
         - name: 21Vianet が運営する Office 365 の iOS 用 Office アプリをダウンロードする
           href: services-in-china/download-office-app-for-iOS.md
-        - name: 課金内容を表示または領収書を入手する
-          href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md?view=o365-21vianet
         - name: Fapiao を申請する
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure Information Protection
