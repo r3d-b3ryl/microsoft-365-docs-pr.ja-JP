@@ -18,59 +18,53 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6c77762de4dbd70922eb5623f801837bf6454ec7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 65edf54ea0bf5cb0a0210dd306db07c756149f65
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842364"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062127"
 ---
-# <a name="microsoft-defender-for-endpoint-preview-features"></a><span data-ttu-id="dd01b-104">Microsoft Defender for Endpoint プレビュー機能</span><span class="sxs-lookup"><span data-stu-id="dd01b-104">Microsoft Defender for Endpoint preview features</span></span>
+# <a name="microsoft-defender-for-endpoint-preview-features"></a><span data-ttu-id="856f9-104">Microsoft Defender for Endpoint プレビュー機能</span><span class="sxs-lookup"><span data-stu-id="856f9-104">Microsoft Defender for Endpoint preview features</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 >[!IMPORTANT]
-><span data-ttu-id="dd01b-105">プレビュー バージョンはサービス レベル契約なしで提供され、実稼働ワークロードには推奨されません。</span><span class="sxs-lookup"><span data-stu-id="dd01b-105">The preview versions are provided without a service level agreement, and it's not recommended for production workloads.</span></span> <span data-ttu-id="dd01b-106">一部の機能はサポートされていないか、制限された機能を持っている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="dd01b-106">Certain features might not be supported or might have constrained capabilities.</span></span>
+><span data-ttu-id="856f9-105">プレビュー バージョンはサービス レベル契約なしで提供され、実稼働ワークロードには推奨されません。</span><span class="sxs-lookup"><span data-stu-id="856f9-105">The preview versions are provided without a service level agreement, and it's not recommended for production workloads.</span></span> <span data-ttu-id="856f9-106">一部の機能はサポートされていないか、制限された機能を持っている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="856f9-106">Certain features might not be supported or might have constrained capabilities.</span></span>
 
-<span data-ttu-id="dd01b-107">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="dd01b-107">**Applies to:**</span></span>
-- [<span data-ttu-id="dd01b-108">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="dd01b-108">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="dd01b-109">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="dd01b-109">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="856f9-107">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="856f9-107">**Applies to:**</span></span>
+- [<span data-ttu-id="856f9-108">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="856f9-108">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="856f9-109">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="856f9-109">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="dd01b-110">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="dd01b-110">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="dd01b-111">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="dd01b-111">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="856f9-110">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="856f9-110">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="856f9-111">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="856f9-111">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-<span data-ttu-id="dd01b-112">Defender for Endpoint サービスは常に更新され、新機能の強化と機能が含まれます。</span><span class="sxs-lookup"><span data-stu-id="dd01b-112">The Defender for Endpoint service is constantly being updated to include new feature enhancements and capabilities.</span></span>
+<span data-ttu-id="856f9-112">Defender for Endpoint サービスは常に更新され、新機能の強化と機能が含まれます。</span><span class="sxs-lookup"><span data-stu-id="856f9-112">The Defender for Endpoint service is constantly being updated to include new feature enhancements and capabilities.</span></span>
 
-<span data-ttu-id="dd01b-113">Defender for Endpoint プレビュー リリースの新機能について説明し、プレビュー エクスペリエンスをオンにして、今後の機能を最初に試してみてください。</span><span class="sxs-lookup"><span data-stu-id="dd01b-113">Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
+<span data-ttu-id="856f9-113">Defender for Endpoint プレビュー リリースの新機能について説明し、プレビュー エクスペリエンスをオンにして、今後の機能を最初に試してみてください。</span><span class="sxs-lookup"><span data-stu-id="856f9-113">Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
 
 >[!TIP]
-><span data-ttu-id="dd01b-114">次の URL をフィード リーダーにコピーして貼り付け、このページが更新された場合に通知を受け取ります。 `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`</span><span class="sxs-lookup"><span data-stu-id="dd01b-114">Get notified when this page is updated by copying and pasting the following URL into your feed reader: `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`</span></span>
+><span data-ttu-id="856f9-114">次の URL をフィード リーダーにコピーして貼り付け、このページが更新された場合に通知を受け取ります。 `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`</span><span class="sxs-lookup"><span data-stu-id="856f9-114">Get notified when this page is updated by copying and pasting the following URL into your feed reader: `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`</span></span>
 
-<span data-ttu-id="dd01b-115">一般に利用可能な新機能の詳細については、「Defender for Endpoint の新機能 [」を参照してください](whats-new-in-microsoft-defender-atp.md)。</span><span class="sxs-lookup"><span data-stu-id="dd01b-115">For more information on new capabilities that are generally available, see [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-atp.md).</span></span>
+<span data-ttu-id="856f9-115">一般に利用可能な新機能の詳細については、「Defender for Endpoint の新機能 [」を参照してください](whats-new-in-microsoft-defender-atp.md)。</span><span class="sxs-lookup"><span data-stu-id="856f9-115">For more information on new capabilities that are generally available, see [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-atp.md).</span></span>
 
-## <a name="turn-on-preview-features"></a><span data-ttu-id="dd01b-116">プレビュー機能を有効にする</span><span class="sxs-lookup"><span data-stu-id="dd01b-116">Turn on preview features</span></span>
+## <a name="turn-on-preview-features"></a><span data-ttu-id="856f9-116">プレビュー機能を有効にする</span><span class="sxs-lookup"><span data-stu-id="856f9-116">Turn on preview features</span></span>
 
-<span data-ttu-id="dd01b-117">今後の機能にアクセスしてフィードバックを提供し、機能が一般提供される前に全体的なエクスペリエンスを向上させるのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="dd01b-117">You'll have access to upcoming features that you can provide feedback on to help improve the overall experience before features are generally available.</span></span>
+<span data-ttu-id="856f9-117">今後の機能にアクセスしてフィードバックを提供し、機能が一般提供される前に全体的なエクスペリエンスを向上させるのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="856f9-117">You'll have access to upcoming features that you can provide feedback on to help improve the overall experience before features are generally available.</span></span>
 
-<span data-ttu-id="dd01b-118">プレビュー機能設定をオンにして、今後の機能をいち早く試します。</span><span class="sxs-lookup"><span data-stu-id="dd01b-118">Turn on the preview experience setting to be among the first to try upcoming features.</span></span>
+<span data-ttu-id="856f9-118">プレビュー機能設定をオンにして、今後の機能をいち早く試します。</span><span class="sxs-lookup"><span data-stu-id="856f9-118">Turn on the preview experience setting to be among the first to try upcoming features.</span></span>
 
-1. <span data-ttu-id="dd01b-119">ナビゲーション ウィンドウで、[高度な **機能設定**  >  **プレビュー機能]**  >  **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="dd01b-119">In the navigation pane, select **Settings** > **Advanced features** > **Preview features**.</span></span>
+1. <span data-ttu-id="856f9-119">ナビゲーション ウィンドウで、[高度な **機能設定**  >  **プレビュー機能]**  >  **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="856f9-119">In the navigation pane, select **Settings** > **Advanced features** > **Preview features**.</span></span>
 
-2. <span data-ttu-id="dd01b-120">[オン] と [オフ]**の間で設定を\*\*\*\*切り替え**、[基本設定の保存]**を選択します**。</span><span class="sxs-lookup"><span data-stu-id="dd01b-120">Toggle the setting between **On** and **Off** and select **Save preferences**.</span></span>
+2. <span data-ttu-id="856f9-120">[オン] と [オフ]**の間で設定を\*\*\*\*切り替え**、[基本設定の保存]**を選択します**。</span><span class="sxs-lookup"><span data-stu-id="856f9-120">Toggle the setting between **On** and **Off** and select **Save preferences**.</span></span>
 
-## <a name="preview-features"></a><span data-ttu-id="dd01b-121">プレビュー機能</span><span class="sxs-lookup"><span data-stu-id="dd01b-121">Preview features</span></span>
+## <a name="preview-features"></a><span data-ttu-id="856f9-121">プレビュー機能</span><span class="sxs-lookup"><span data-stu-id="856f9-121">Preview features</span></span>
 
-<span data-ttu-id="dd01b-122">以下の機能がプレビュー リリースに含まれています。</span><span class="sxs-lookup"><span data-stu-id="dd01b-122">The following features are included in the preview release:</span></span>
+<span data-ttu-id="856f9-122">以下の機能がプレビュー リリースに含まれています。</span><span class="sxs-lookup"><span data-stu-id="856f9-122">The following features are included in the preview release:</span></span>
 
-- [<span data-ttu-id="dd01b-123">デバイス検出</span><span class="sxs-lookup"><span data-stu-id="dd01b-123">Device discovery</span></span>](device-discovery.md) <br> <span data-ttu-id="dd01b-124">追加のアプライアンスや面倒なプロセス変更を必要とせずに、企業ネットワークに接続されている管理されていないデバイスを見つけるのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="dd01b-124">Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes.</span></span> <span data-ttu-id="dd01b-125">オンボード デバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。</span><span class="sxs-lookup"><span data-stu-id="dd01b-125">Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks.</span></span> <span data-ttu-id="dd01b-126">その後、検出されたデバイスをオンボードして、ネットワークに管理されていないエンドポイントを持つことに関連するリスクを軽減できます。</span><span class="sxs-lookup"><span data-stu-id="dd01b-126">You can then onboard discovered devices to reduce risks associated with having unmanaged endpoints in your network.</span></span>
+- [<span data-ttu-id="856f9-123">Web コンテンツ フィルター</span><span class="sxs-lookup"><span data-stu-id="856f9-123">Web Content Filtering</span></span>](web-content-filtering.md) <br> <span data-ttu-id="856f9-124">Web コンテンツ フィルターは、Microsoft Defender for Endpoint の Web 保護機能の一部です。</span><span class="sxs-lookup"><span data-stu-id="856f9-124">Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="856f9-125">これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。</span><span class="sxs-lookup"><span data-stu-id="856f9-125">It enables your organization to track and regulate access to websites based on their content categories.</span></span> <span data-ttu-id="856f9-126">これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="856f9-126">Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.</span></span>
 
-   > [!IMPORTANT]
-   > <span data-ttu-id="dd01b-127">標準検出は、2021 年 7 月 19 日からすべてのユーザーの既定のモードになります。</span><span class="sxs-lookup"><span data-stu-id="dd01b-127">Standard discovery will be the default mode for all customers starting July 19, 2021.</span></span> <span data-ttu-id="dd01b-128">基本モードは、[設定] ページで保持できます。</span><span class="sxs-lookup"><span data-stu-id="dd01b-128">You can choose to retain the basic mode through the settings page.</span></span> 
-
-
-- [<span data-ttu-id="dd01b-129">Web コンテンツ フィルター</span><span class="sxs-lookup"><span data-stu-id="dd01b-129">Web Content Filtering</span></span>](web-content-filtering.md) <br> <span data-ttu-id="dd01b-130">Web コンテンツ フィルターは、Microsoft Defender for Endpoint の Web 保護機能の一部です。</span><span class="sxs-lookup"><span data-stu-id="dd01b-130">Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="dd01b-131">これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。</span><span class="sxs-lookup"><span data-stu-id="dd01b-131">It enables your organization to track and regulate access to websites based on their content categories.</span></span> <span data-ttu-id="dd01b-132">これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="dd01b-132">Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.</span></span>
-
-- [<span data-ttu-id="dd01b-133">デバイスの正常性とコンプライアンス レポート</span><span class="sxs-lookup"><span data-stu-id="dd01b-133">Device health and compliance report</span></span>](machine-reports.md) <br/> <span data-ttu-id="dd01b-134">デバイスの正常性とコンプライアンス レポートは、組織内のデバイスに関する高レベルの情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="dd01b-134">The device health and compliance report provides high-level information about the devices in your organization.</span></span>
+- [<span data-ttu-id="856f9-127">デバイスの正常性とコンプライアンス レポート</span><span class="sxs-lookup"><span data-stu-id="856f9-127">Device health and compliance report</span></span>](machine-reports.md) <br/> <span data-ttu-id="856f9-128">デバイスの正常性とコンプライアンス レポートは、組織内のデバイスに関する高レベルの情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="856f9-128">The device health and compliance report provides high-level information about the devices in your organization.</span></span>
 
 > [!TIP] 
-> <span data-ttu-id="dd01b-135">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="dd01b-135">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="dd01b-136">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="dd01b-136">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  
+> <span data-ttu-id="856f9-129">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="856f9-129">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="856f9-130">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="856f9-130">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  
