@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12c7609635d9140f2e8efda3f6f1397619ce4790
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: e9aa3a72a36a146d121c9302a4b6cb126e765671
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929907"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082782"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -40,21 +40,14 @@ ms.locfileid: "52929907"
 
 この記事の内容:
 
-- [悪意のあるスプーフィング防止の点で DKIM のしくみが SPF 単独よりも優れているといえる理由](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
-
-- [手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする手順](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
-
-- [DKIM を手動で設定する手順](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
-
-- [DKIM の複数のドメインを構成する手順](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
-
-- [カスタム ドメインの DKIM 署名ポリシーを無効にする](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
-
-- [DKIM と Microsoft 365 の既定の動作](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)
-
-- [サードパーティのサービスがカスタム ドメインに代わって電子メールを送信つまり偽装できるように DKIM を設定する](use-dkim-to-validate-outbound-email.md#SetUp3rdPartyspoof)
-
-- [次の手順: Microsoft 365 に SPF をセットアップした後](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
+- [悪意のあるスプーフィング防止の点で DKIM のしくみが SPF 単独よりも優れているといえる理由](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
+- [手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする手順](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
+- [DKIM を手動で設定する手順](#steps-to-manually-set-up-dkim)
+- [DKIM の複数のドメインを構成する手順](#to-configure-dkim-for-more-than-one-custom-domain)
+- [カスタム ドメインの DKIM 署名ポリシーを無効にする](#disabling-the-dkim-signing-policy-for-a-custom-domain)
+- [DKIM と Microsoft 365 の既定の動作](#default-behavior-for-dkim-and-microsoft-365)
+- [サードパーティのサービスがカスタム ドメインに代わって電子メールを送信つまり偽装できるように DKIM を設定する](#set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain)
+- [次の手順: Microsoft 365 に SPF をセットアップした後](#next-steps-after-you-set-up-dkim-for-microsoft-365)
 
 > [!NOTE]
 > Microsoft 365 では、初期ドメインの 'onmicrosoft.com' に対応する DKIM が自動的にセットアップされます。 つまり、初期ドメイン名に対応する DKIM のセットアップに関して、ユーザーは何もする必要がないということです (例: litware.onmicrosoft.com)。 ドメインの詳細については、「[ドメインに関する FAQ](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)」を参照してください。
@@ -71,15 +64,10 @@ DKIM を使用すると、送信メールのメッセージ ヘッダー部に�
  Microsoft 365 組み込みの DKIM 設定は、ほとんどのユーザーに対応していますが、次の状況ではカスタム ドメインの DKIM を手動で構成する必要があります。
 
 - Microsoft 365 に複数のカスタム ドメインがある場合
-
 - DMARC も設定する場合 (**推奨**)
-
 - 秘密キーを制御する場合
-
 - CNAME レコードをカスタマイズする場合
-
 - たとえば、サード パーティ製の大容量メーラーを使用する場合、サードパーティのドメインから発信される電子メールに DKIM キーを設定することがあります。
-
 
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing"></a>悪意のあるスプーフィング防止の点で DKIM のしくみが SPF 単独よりも優れているといえる理由
 <a name="HowDKIMWorks"> </a>
@@ -135,7 +123,6 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 DKIM を構成するには、次の手順を完了します。
 
 - [DNS でカスタム ドメインに対して 2 つの CNAME レコードを発行する](use-dkim-to-validate-outbound-email.md#Publish2CNAME)
-
 - [カスタム ドメインに対して DKIM 署名を有効にする](use-dkim-to-validate-outbound-email.md#EnableDKIMinO365)
 
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>DNS でカスタム ドメインに対して 2 つの CNAME レコードを発行する
@@ -173,7 +160,6 @@ TTL:                3600
 ここで、
 
 - Microsoft 365 では、セレクターは常に "selector1" または "selector2" になります。
-
 - _domainGUID_ は、mail.protection.outlook.com の前に表示されるカスタム ドメインのカスタマイズされた MX レコードの _domainGUID_ と同じです。たとえば、次に示すドメイン contoso.com の MX レコードでは、_domainGUID_ は contoso-com です。
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
@@ -203,39 +189,42 @@ TTL:                3600
 > [!NOTE]
 > 2 番目のレコードを作成することは重要ですが、作成時に使用できるのはセレクターのうち 1 つのみである場合があります。 本質的に、2 番目のセレクターはまだ作成されていないアドレスを指している可能性があります。 それでも、キーの交換がシームレスに行われるようになるため、2 番目の CNAME レコードを作成することをお勧めします。
 
-
 ### <a name="steps-to-enable-dkim-signing-for-your-custom-domain"></a>カスタム ドメインに対して DKIM 署名を有効にする手順
 <a name="EnableDKIMinO365"> </a>
 
 DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を有効にする準備が整ったことになります。これは、Microsoft 365 管理センターか、PowerShell を使用して行うことができます。
 
-#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>管理センター経由でカスタム ドメインの DKIM 署名を有効にするには
+#### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルでカスタム ドメインの DKIM 署名を有効にするには
 
-1. 職場または学校のアカウントを使用して、[Microsoft 365 にサインイン](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)します。
+1. Microsoft 365 Defender ポータルを開くには [職場または学校のアカウントを使用します](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。.
 
-2. [security.microsoft.com](https://security.microsoft.com) にアクセスし、以下のパスに従います。
+2. **[メールとコラボレーション]** \> **> [ポリシーとルール]** \> **> [脅威ポリシー]** \> **> [ルール]** > [セクション] \> **[DKIM]** の順に移動します。 または、DKIM ページに直接移動するには、<https://security.microsoft.com/dkimv2>を使用します。
 
-3. **[メールとコラボレーション] > [ポリシーとルール] > [脅威ポリシー] > [DKIM]** の順に移動します。
+3. **DKIM** ページで、名前をクリックしてドメインを選択します。
 
-4. DKIM を有効にするドメインを選択してから、**[このドメインのメッセージに DKIM 署名で署名する]** で **[有効]** を選択します。各カスタム ドメインにこの手順を繰り返します。
+4. 表示される詳細ポップアップで、[**DKIM 署名を使用してこのドメインのメッセージに署名する]** 設定を **[有効]** にします ([![](../../media/scc-toggle-on.png)で切り替える)] を選択します。
+
+   完了したら、[**DKIM キー の回転**] をクリックします。
+
+5. カスタム ドメインごとに、この手順を繰り返します。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>PowerShell を使用してカスタム ドメインの DKIM 署名を有効にするには
 
 > [!IMPORTANT]
->:::image type="content" source="../../media/dkim.png" alt-text="「このドメインの DKIM キーが保存されていません。」エラー。":::
-> DKIM を初めて構成するときに、「このドメインの DKIM キーが保存されていません。」というエラーが表示された場合、 以下の手順 2 のコマンド (たとえば、*Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) を完了して、キーを確認します。
+> :::image type="content" source="../../media/dkim.png" alt-text="「このドメインの DKIM キーが保存されていません。」エラー。":::
+> DKIM を初めて構成していて、「このドメインに DKIM キーが保存されていません」 というエラーが表示される場合は、次の手順 2 のコマンド ( `Set-DkimSigningConfig -Identity contoso.com -Enabled $true`など) を実行してキーを確認します。
 
 1. [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 次のコマンドを実行します。
+2. 次の構文を使用してください。
 
    ```powershell
-   Set-DkimSigningConfig -Identity <domain> -Enabled $true
+   Set-DkimSigningConfig -Identity <Domain> -Enabled $true
    ```
 
-   ここで、 _domain_ は DKIM 署名を有効にするカスタム ドメインの名前です。
+   \<Domain\> は DKIM 署名を有効にするカスタム ドメインの名前です。
 
-   たとえば、ドメイン名 contoso.com の場合は次のようになります。
+   この例では、ドメイン contoso.com の DKIM 署名を有効にします。
 
    ```powershell
    Set-DkimSigningConfig -Identity contoso.com -Enabled $true
@@ -246,9 +235,7 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 数分待ってから、これらの手順に従って、DKIM が適切に構成されていることを確認してください。待っている間に、ドメインに関する DKIM 情報がネットワーク全体に広まります。
 
 - Microsoft 365 の DKIM が有効になっているドメイン内のアカウントから、Outlook.com や Hotmail.com などの別の電子メール アカウントにメッセージを送信します。
-
 - テスト目的には .aol.com アカウントは使用しないでください。AOL は SPF チェックに合格すると、DKIM チェックをスキップする場合があります。この場合、テストは成り立ちません。
-
 - メッセージを開き、ヘッダーを確認します。メッセージのヘッダーを表示する方法は、メッセージング クライアントによって異なります。Outlook でメッセージ ヘッダーを表示する方法については、「[電子メール メッセージ ヘッダーを表示する](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)」をご覧ください。
 
   DKIM 署名されたメッセージには、CNAME エントリの発行時に定義したホスト名とドメインが含まれます。メッセージは、次の例のようになります。
@@ -281,7 +268,7 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 2. DKIM 署名を無効にする各ドメインに対して次のいずれかのコマンドを実行します。
 
    ```powershell
-   $p = Get-DkimSigningConfig -Identity <domain>
+   $p = Get-DkimSigningConfig -Identity <Domain>
    $p[0] | Set-DkimSigningConfig -Enabled $false
    ```
 
