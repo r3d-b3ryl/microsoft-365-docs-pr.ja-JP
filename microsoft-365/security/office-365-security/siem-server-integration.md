@@ -18,12 +18,12 @@ ms.custom:
 description: セキュリティ情報とイベント管理 (SIEM) サーバーとクラウド サービスとアプリケーションMicrosoft 365概要を確認する
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: ea4d844595aaab8d8148666430187edef463b92e
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929793"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105598"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>セキュリティ情報とイベント管理 (SIEM) サーバーとサービスMicrosoft 365アプリケーションとの統合
 
@@ -46,12 +46,13 @@ ms.locfileid: "52929793"
 SIEM サーバーが必要かどうかは、組織のセキュリティ要件やデータの場所など、多くの要因によって異なります。 Microsoft 365には、SIEM サーバーなどの追加サーバーを使用せずに、多くの組織のセキュリティ ニーズを満たすさまざまなセキュリティ機能が含まれています。 一部の組織では、SIEM サーバーの使用が必要な特別な状況があります。 次に、いくつかの例を示します:
 
 - *Fabrikam には* 、オンプレミスのコンテンツとアプリケーションと、クラウド内の一部があります (ハイブリッド クラウド展開があります)。 Fabrikam は、すべてのコンテンツとアプリケーションのセキュリティ レポートを取得するために、SIEM サーバーを実装しました。
-
 - *Contoso* は、特に厳しいセキュリティ要件を持つ金融サービス組織です。 ユーザーは、必要な追加のセキュリティ保護を利用するために、環境に SIEM サーバーを追加しました。
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>SIEM サーバーとサーバー Microsoft 365
 
 SIEM サーバーは、さまざまなサービスやアプリケーションからデータMicrosoft 365受信できます。 次の表に、SIEM サーバー Microsoft 365リソースと共に、複数のサービスとアプリケーションの一覧を示します。
+
+<br>
 
 ****
 
@@ -63,14 +64,13 @@ SIEM サーバーは、さまざまなサービスやアプリケーションか
 |
 
 > [!TIP]
-> [Azure Sentinel を見てみろ](/azure/sentinel/overview)。 Azure Sentinel には、Microsoft ソリューション用のコネクタが付属しています。 これらのコネクタは「箱から出して」利用できます。リアルタイムの統合を実現します。 Microsoft 365 Defender ソリューションと Microsoft 365 サービス (Office 365、Azure AD、Microsoft Defender for Identity、Microsoft Cloud App Security など) で Azure Sentinel を使用できます。
+> [Azure Sentinel を見てみろ](/azure/sentinel/overview)。 Azure Sentinel には、Microsoft ソリューション用のコネクタが付属しています。 これらのコネクタは「箱から出して」利用できます。リアルタイムの統合を実現します。 Office 365、Azure AD、Microsoft Defender for Identity、Microsoft Cloud App Security など、Microsoft 365 Defender ソリューションと Microsoft 365 サービスで Azure Sentinel を使用できます。
 
 ### <a name="audit-logging-must-be-turned-on"></a>監査ログを有効にする必要があります
 
 SIEM サーバー統合を構成する前に、監査ログが有効になっていることを確認してください。
 
-- オンラインSharePoint、OneDrive for Business、Azure Active Directoryの場合、監査ログは Defender ポータルMicrosoft 365[オンになります](../../compliance/turn-audit-log-search-on-or-off.md)。
-
+- オンラインSharePoint、OneDrive for Business、Azure Active Directoryについては、「監査を有効またはオフ[にする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 - 詳細については、「Exchange Online監査[の管理」を参照してください](../../compliance/enable-mailbox-auditing.md)。
 
 ## <a name="more-resources"></a>その他のリソース

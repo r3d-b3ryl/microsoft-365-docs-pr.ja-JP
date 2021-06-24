@@ -16,13 +16,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.date: 06/17/2021
-ms.openlocfilehash: 7050a1588b71ac106d5364f29c76d379072e9511
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.date: 06/23/2021
+ms.openlocfilehash: 2e0724900de30629292cdcdc055d3ad3a1867b20
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007419"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105418"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -52,7 +52,7 @@ ms.locfileid: "53007419"
 
 ### <a name="how-it-works"></a>メカニズム
 
-タンパープロテクションは基本的Microsoft Defender ウイルス対策ロックし、次のようなアプリやメソッドを介してセキュリティ設定が変更されるのを防ぐ。
+タンパープロテクションMicrosoft Defender ウイルス対策セキュリティで保護された既定値にロックされ、次のようなアプリやメソッドを介してセキュリティ設定が変更されるのを防ぐ。
 
 - デバイスのレジストリ エディターで設定Windowsする
 - PowerShell コマンドレットによる設定の変更
@@ -72,16 +72,16 @@ ms.locfileid: "53007419"
 | セキュリティに関する推奨事項を確認する | [セキュリティに関する推奨事項を確認する](#review-your-security-recommendations) |
 | よく寄せられる質問 (FAQ) の一覧を確認する | [FAQ を参照する](#view-information-about-tampering-attempts) |
 
-タンパープロテクションを有効にするために使用する方法や管理ツールによっては、MAPS (クラウド配信保護) に依存している可能性があります。 
+タンパープロテクションを有効にするために使用する方法や管理ツールによっては、クラウドによる保護に依存している可能性があります。 
 
 次の表に、メソッド、ツール、依存関係の詳細を示します。
 
-| タンパープロテクションを有効にする方法  | MAPS への依存 (クラウドによる保護)    |
+| タンパープロテクションを有効にする方法  | クラウドによる保護への依存 (MAPS)    |
 |:----|:----|
 | Microsoft Intune  | いいえ |
 | Microsoft Endpoint Configuration Manager + テナント接続  |     いいえ  |
-| Microsoft Defender セキュリティ センター ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )    |     必要 |
-| Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) )  |     必要  |
+| Microsoft Defender セキュリティ センター ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )    |     はい |
+| Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) )  |     はい  |
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>サーバーを使用して組織の改ざん防止を管理Microsoft Defender セキュリティ センター
 
@@ -89,7 +89,7 @@ ms.locfileid: "53007419"
 
 - 現時点では、新しい展開では、Microsoft Defender セキュリティ センターでタンパープロテクションを管理するオプションがオンになっています。 既存の展開では、改ざん防止はオプトインベースで利用できます。近い将来、既定の方法でオプトインを行う予定です。 (オプトインするには、Microsoft Defender セキュリティ センターを選択 **設定**  > **高度な機能**  > **タンパープロテクション**.) 
 
-- 改ざん防止を管理Microsoft Defender セキュリティ センター、Intune またはテナント接続方法を使用する必要があります。
+- 改ざん防止を管理Microsoft Defender セキュリティ センターを使用する場合は、Intune またはテナント接続方法を使用する必要はありません。
 
 - Microsoft Defender セキュリティ センター でタンパープロテクションを管理すると、この設定はテナント全体に適用され、Windows 10、Windows Server 2016、または Windows Server 2019 を実行しているすべてのデバイスに影響します。 タンパープロテクションを微調整するには (一部のデバイスではタンパープロテクションをオンにし、他のデバイスではオフにするなど [)、Intune](#manage-tamper-protection-for-your-organization-using-intune) または Configuration Manager をテナント接続で [使用します](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)。
 
@@ -168,7 +168,7 @@ Windows Server 2016、Windows 10 バージョン 1709、1803、[または 1809](
 
 2. [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell コマンドレットを使用します。
 
-3. 結果の一覧で、 を探します `IsTamperProtected` 。 (true の値は *、改* ざん防止が有効になっているという意味です。結果の一覧で、 を探します `RealTimeProtectionEnabled` 。 (true の値は、改ざん防止が有効になっているという意味です。
+3. 結果の一覧で、またはを `IsTamperProtected` 探します `RealTimeProtectionEnabled` 。 (true の値は *、改* ざん防止が有効になっているという意味です。
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Configuration Manager バージョン 2006 で組織の改ざん防止を管理する
 
@@ -181,7 +181,8 @@ Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/
 
 1. テナント接続を設定します。 詳細については、「テナント接続Microsoft エンドポイント マネージャー:デバイスの同期と[デバイスの操作」を参照してください](/mem/configmgr/tenant-attach/device-sync-actions)。
 
-2. 管理センター [でMicrosoft エンドポイント マネージャー[](https://go.microsoft.com/fwlink/?linkid=2109431)**エンドポイント** セキュリティ ウイルス対策] に移動し、[+ ポリシーの作成  >  **] を選択します**。<br/> 
+2. 管理センター [でMicrosoft エンドポイント マネージャー[](https://go.microsoft.com/fwlink/?linkid=2109431)**エンドポイント** セキュリティ ウイルス対策] に移動し、[+ ポリシーの作成  >  **] を選択します**。 
+
    - [プラットフォーム **] ボックスの** 一覧で、[Windows 10] **Windows (ConfigMgr) を選択します**。  
    - [プロファイル]**ボックスの** 一覧で、[Windows セキュリティ **エクスペリエンス (プレビュー) を選択します**。 <br/>
 
@@ -223,7 +224,7 @@ Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/
 
 ![Microsoft Defender セキュリティ センター](images/tamperattemptalert.png)
 
-Microsoft Defender[エンドポイントでの検出と対応](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)高度[な](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)ハンティング機能を使用して、セキュリティ運用チームはそのような試みを調査し、対処できます。
+Microsoft [](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) Defender for [](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) Endpoint のエンドポイント検出および応答機能と高度なハンティング機能を使用して、セキュリティ運用チームはそのような試みを調査し、対処できます。
 
 ## <a name="review-your-security-recommendations"></a>セキュリティに関する推奨事項を確認する
 

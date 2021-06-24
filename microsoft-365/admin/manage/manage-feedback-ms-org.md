@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが Microsoft 製品に関して Microsoft に送信できるフィードバックを管理します。
-ms.openlocfilehash: 70ea1d5c176dd603f6a5addb09356909f13f9ace
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 990ae811145d9586307cd3181724866198063a1b
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840672"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105298"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>組織に対する Microsoft フィードバックを管理する
 
-Microsoft 365 組織の管理者として、Microsoft 365 アプリケーションを使用する際にユーザーのフィードバック コレクションとカスタマー エンゲージメント エクスペリエンスを管理するのに役立ついくつかのポリシーが追加されました。 これらのポリシーごとに、組織内の既存の Azure Active directory グループを作成して使用できます。 これらの警察では、組織内の異なる部署が Microsoft にフィードバックを送信する方法を制御できます。 Microsoft は、お客様から送信されたフィードバックを確認し、このフィードバックを使用して製品を改善します。 フィードバック エクスペリエンスを **オンに保** つことで、ユーザーが使用している Microsoft 製品についてユーザーが何を言っているのかを確認できます。 ユーザーから収集したフィードバックは、すぐに管理センター Microsoft 365されます。
+Microsoft 365 組織の管理者として、Microsoft 365 アプリケーションを使用する際にユーザーのフィードバック コレクションとカスタマー エンゲージメント エクスペリエンスを管理するのに役立ついくつかのポリシーが追加されました。 これらのポリシーごとに、組織内の既存の Azure Active directory グループを作成して使用できます。 これらの警察では、組織内の異なる部署が Microsoft にフィードバックを送信する方法を制御できます。 Microsoft は、お客様から送信されたフィードバックを確認し、このフィードバックを使用して製品を改善します。 フィードバック エクスペリエンスを **オンに保** つことで、ユーザーが使用している Microsoft 製品についてユーザーが何を言っているのかを確認できます。 ユーザーから収集したフィードバックは、すぐにこのサイトでMicrosoft 365 管理センター。
 
 フィードバックの種類と Microsoft がユーザー フィードバックを使用する方法の詳細については、「組織の Microsoft フィードバックについて [」を参照してください](../misc/feedback-user-control.md)。
 
@@ -43,7 +43,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 |**OneDrive**|[他のコントロールによって現在管理されている設定の一部。](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook**|近日公開|近日公開|近日公開|近日公開|
 |**PowerPoint**|はい|はい|はい|はい|
-|**Project**|近日公開|近日公開|近日公開|近日公開|
+|**プロジェクト**|近日公開|近日公開|近日公開|近日公開|
 |**発行元**|はい|はい|はい|はい|
 |**SharePoint**|[他のコントロールによって現在管理されている設定の一部。](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[他のコントロールによって現在管理されている設定の一部。](/microsoftteams/manage-feedback-policies-in-teams)||||
@@ -86,7 +86,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 ## <a name="configure-policies"></a>ポリシーの構成
 
-1. グローバル管理者 [https://config.office.com](https://config.office.com) アクセス許可を持つユーザーとしてアクセスしてログインします。
+1. に移動 [https://config.office.com](https://config.office.com) してログインします。
 1. [カスタマイズ **] を選択** し **、[ポリシーの管理] を選択します**。
 1. [**作成**] を選択します。
 1. 名前 **と説明を****入力します**。

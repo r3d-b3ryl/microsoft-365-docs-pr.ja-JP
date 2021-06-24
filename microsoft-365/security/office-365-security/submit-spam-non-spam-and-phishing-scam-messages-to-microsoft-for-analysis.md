@@ -18,12 +18,12 @@ description: 管理者とエンド ユーザーは、分析のために Microsof
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d277df764ce2fb135f11c6320bc990e4d4142d6
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: d0d48c3c6f6d082085390d6e246a088b6d3f6bf0
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929769"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105550"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のために Microsoft にメッセージを手動で送信する
 
@@ -35,7 +35,7 @@ ms.locfileid: "52929769"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> メールボックスを使用している組織の管理者Exchange Online、Defender ポータルの [申請] ポータルMicrosoft 365することをお勧めします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
+> 組織の管理者がメールボックスを使用している場合Exchange Onlineポータルの [申請] ページを使用することをおMicrosoft 365 Defenderします。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 
 組織内のユーザーが受信トレイで迷惑メール (スパム) またはフィッシング メッセージを受信した場合や、迷惑メールとしてマークされた正当な電子メール メッセージを受信しない場合は、イライラする可能性があります。 スパム フィルターの精度を高め、常に微調整を行っています。
 
@@ -47,7 +47,7 @@ ms.locfileid: "52929769"
 ## <a name="submit-false-negatives-to-microsoft"></a>False negatives を Microsoft に送信する
 
 > [!TIP]
-> 次の手順を使用して誤検知を報告する代わりに、Outlook および Outlook の web (以前は Outlook Web App) のユーザーは、レポート メッセージ アドインまたはレポート フィッシング アドインを使用できます。 これらのツールをインストールして使用する方法の詳細については、「[](enable-the-report-message-add-in.md)レポート メッセージ アドインを有効にする」および「レポート フィッシング アドインを有効にする」[を参照してください](enable-the-report-phish-add-in.md)。
+> Outlook と Outlook on the web (以前は Outlook Web App と呼ばれる) のユーザーは、次の手順を使用して誤検知を報告する代わりに、レポート メッセージ アドインまたはレポート フィッシング アドインを使用できます。 これらのツールをインストールして使用する方法の詳細については、「[](enable-the-report-message-add-in.md)レポート メッセージ アドインを有効にする」および「レポート フィッシング アドインを有効にする」[を参照してください](enable-the-report-phish-add-in.md)。
 
 スパムまたはフィッシングとして識別されている必要があるスパム フィルターを通過したメッセージを受信した場合は、必要に応じて Microsoft Spam Analysis チームと Microsoft フィッシング分析チームにメッセージを送信できます。 アナリストはメッセージを確認し、分類条件を満たす場合はサービス全体のフィルターに追加します。
 
@@ -72,7 +72,7 @@ ms.locfileid: "52929769"
 ## <a name="submit-false-positives-to-microsoft"></a>Microsoft に誤検知を送信する
 
 > [!TIP]
-> 次の手順を使用して誤検知を報告する代わりに、Outlook と Outlook のユーザーが web (以前は Outlook Web App) でレポート メッセージ アドインまたはレポート フィッシング アドインを使用できます。 これらのツールをインストールして使用する方法の詳細については、「[](enable-the-report-message-add-in.md)レポート メッセージ アドインを有効にする」および「レポート フィッシング アドインを有効にする」[を参照してください](enable-the-report-phish-add-in.md)。
+> Outlook および Outlook on the web のユーザーは、次の手順を使用して誤検知を報告する代わりに、レポート メッセージ アドインまたはレポート フィッシング アドインを使用できます。 これらのツールをインストールして使用する方法の詳細については、「[](enable-the-report-message-add-in.md)レポート メッセージ アドインを有効にする」および「レポート フィッシング アドインを有効にする」[を参照してください](enable-the-report-phish-add-in.md)。
 
 メッセージがスパムとして誤って識別された場合は、Microsoft スパム分析チームにメッセージを送信できます。 アナリストはメッセージを評価し、(分析の結果に応じて) サービス全体のフィルターを調整してメッセージを通過できます。
 

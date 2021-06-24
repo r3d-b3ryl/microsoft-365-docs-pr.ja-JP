@@ -1,5 +1,5 @@
 ---
-title: Defender でインシデントをMicrosoft 365する
+title: インシデントを調査Microsoft 365 Defender
 description: デバイス、ユーザー、メールボックスに関連するインシデントを調査します。
 keywords: インシデント、インシデント、分析、応答、コンピューター、デバイス、ユーザー、ID、メール、メール、メールボックス、調査、グラフ、証拠
 search.product: eADQiWindows 10XVcnh
@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dcfc3bd0e06e0bdca6c834e947d7d136af47fde3
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fdfc065aea3549e99de72c968c0fa19412f9e246
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782827"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105358"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>Defender でインシデントをMicrosoft 365する
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>インシデントを調査Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "52782827"
 
 - Microsoft 365 Defender
 
-Microsoft 365Defender は、デバイス、ユーザー、およびメールボックス全体からのすべての関連するアラート、資産、調査、および証拠をインシデントに集約し、攻撃の幅広い全体を総合的に調査します。
+Microsoft 365 Defender、デバイス、ユーザー、およびメールボックス全体からのすべての関連するアラート、資産、調査、および証拠をインシデントに集約し、攻撃の幅広い全体を総合的に調査します。
 
 インシデント内では、ネットワークに影響を与えるアラートを分析し、その意味を理解し、証拠を照合して、効果的な修復計画を策定できます。
 
@@ -66,7 +66,7 @@ Microsoft 365Defender は、デバイス、ユーザー、およびメールボ�
 
 :::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="セキュリティ センターのインシデントの概要ページMicrosoft 365例":::
 
-攻撃カテゴリを使用すると、キル チェーンに対する攻撃の進行状況を視覚的および数値的に確認できます。 他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender は CK フレームワークの[MITRE ATT &trade;&揃](https://attack.mitre.org/)っています。
+攻撃カテゴリを使用すると、キル チェーンに対する攻撃の進行状況を視覚的および数値的に確認できます。 他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender CK フレームワークの[MITRE ATT &trade;&配置](https://attack.mitre.org/)されます。
 
 範囲セクションでは、このインシデントの一部である最も影響を受ける資産の一覧が表示されます。 この資産に関する特定の情報 (リスク レベル、調査の優先順位、資産のタグ付けなど) がある場合は、その情報もこのセクションに表示されます。
 
@@ -89,7 +89,7 @@ Microsoft 365Defender は、デバイス、ユーザー、およびメールボ�
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="インシデントのアラート ページの例":::
 
-既定では、アラートは時系列的に順序付けされ、インシデントが時間の間にどのように再生されたのか確認できます。 インシデント内でアラートを選択すると、Microsoft 365のコンテキストに固有のアラート情報が表示されます。 
+既定では、アラートは時系列的に順序付けされ、インシデントが時間の間にどのように再生されたのか確認できます。 インシデント内でアラートを選択すると、Microsoft 365 Defenderのコンテキストに固有のアラート情報が表示されます。 
 
 アラートのイベント、その他のトリガーされたアラートによって現在のアラートが発生したイベント、およびファイル、ユーザー、メールボックスなど、攻撃に関連する影響を受けるすべてのエンティティとアクティビティを確認できます。
 
@@ -145,9 +145,17 @@ Microsoft 365Defender は、デバイス、ユーザー、およびメールボ�
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="インシデントの [調査] ページの例":::
 
-調査を選択して [調査の詳細] ページに移動すると、調査と修復状況に関する詳細情報が表示されます。 調査の一環として承認待ちアクションがある場合は、[保留中のアクション] タブに表示されます。インシデント修復の一環としてアクションを実行します。
+調査を選択して詳細ページに移動し、調査と修復の状態に関する完全な情報を確認します。 調査の一環として承認待ちアクションがある場合は、[保留中のアクションの履歴] **タブに表示** されます。インシデント修復の一環としてアクションを実行します。
 
-詳細については、「Defender の自動調査と対応」[をMicrosoft 365してください](m365d-autoir.md)。
+[調査] グラフ タブ **には、次** の情報が表示されます。
+
+- 組織内の影響を受け取ったアセットへのアラートの接続。
+- どのエンティティが、どのアラートに関連付け、どのエンティティが攻撃のストーリーの一部であるのか。
+- インシデントのアラート。
+
+調査グラフを使用すると、攻撃の一部であるさまざまな不審なエンティティと、ユーザー、デバイス、メールボックスなどの関連する資産を接続することで、攻撃の全範囲をすばやく把握できます。 
+
+詳細については、「自動調査と応答[」](m365d-autoir.md)を参照Microsoft 365 Defender。
 
 ## <a name="evidence-and-response"></a>証拠と対応
 
@@ -155,25 +163,9 @@ Microsoft 365Defender は、デバイス、ユーザー、およびメールボ�
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="インシデントの証拠と応答ページの例":::
 
-Microsoft 365Defender は、アラート内のすべてのインシデントでサポートされているイベントと不審なエンティティを自動的に調査し、重要な電子メール、ファイル、プロセス、サービス、IP アドレスなどの情報を提供します。 これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。
+Microsoft 365 Defenderアラート内のすべてのインシデントでサポートされているイベントと不審なエンティティを自動的に調査し、重要な電子メール、ファイル、プロセス、サービス、IP アドレスなどの情報を提供します。 これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。
 
 分析された各エンティティには、評決 (悪意のある、疑わしい、クリーン) と修復状態がマークされます。 これにより、インシデント全体の修復状態と、次に実行できる手順を理解できます。
-
-## <a name="graph-in-preview"></a>Graph (プレビューで)
-
-新しい **[Graph]** タブ (プレビュー) を使用すると、次の情報を確認できます。
-
-- 組織内の影響を受け取ったアセットへのアラートの接続。
-- どのエンティティが、どのアラートに関連付け、どのエンティティが攻撃のストーリーの一部であるのか。
-- インシデントのアラート。
-
-次に例を示します。
-
-:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="インシデントのGraphページの例":::
-
-インシデント グラフを使用すると、攻撃の一部であるさまざまな不審なエンティティを、ユーザー、デバイス、メールボックスなどの関連資産と接続することで、攻撃の範囲全体をすばやく把握できます。 
-
-これで、攻撃がネットワークを通じて時間の間にどのように広がったか、どこから始まったのか、攻撃がどこまで行ったのか理解できます。
 
 ## <a name="next-steps"></a>次の手順
 

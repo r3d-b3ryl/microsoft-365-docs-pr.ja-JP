@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/14/2021
-ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.date: 06/23/2021
+ms.openlocfilehash: 88be32a2c1e9204629682ec678f80ab6daf701f4
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929445"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105334"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -76,7 +76,7 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 すべての更新プログラムに含まれるもの 
 - パフォーマンスの向上。
 - サービスの改善。そして 
-- 統合の改善 (Cloud、Microsoft 365 [Defender)。](/microsoft-365/security/defender/microsoft-365-defender)
+- 統合の改善 (クラウド[、Microsoft 365 Defender)。](/microsoft-365/security/defender/microsoft-365-defender)
 <br/><br/>
 <details>
 <summary> May-2021 (プラットフォーム: 4.18.2105.4 |エンジン: 1.1.18200.4)</summary>
@@ -105,6 +105,8 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 ### <a name="whats-new"></a>新機能
 - その他の動作監視ロジック
 - カーネル モードのキーロガー検出の改善
+- Microsoft Defender 更新プログラムの段階的なロールアウト プロセスを管理するための新しいコントロール [が追加されました](manage-gradual-rollout.md)
+
 
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  

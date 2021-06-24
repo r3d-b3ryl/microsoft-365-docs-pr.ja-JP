@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d07a7210b8426349f18a2305069c4ed0a08ce660
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: a6de0cb646eb8c12e4863facdb42c1f9494120f9
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096845"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105658"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>脅威の分析を使用して、新たな脅威を追跡し対応する 
 
@@ -115,24 +115,6 @@ _脅威分析レポートの概要セクション_
 各レポートには、組織が特定の脅威に対する回復力の概要を示すグラフが含まれています。
 - **セキュリティで保護された構成** 状態 —構成が誤ったセキュリティ設定を持つデバイスの数を示します。 脅威を軽減するために推奨されるセキュリティ設定を適用します。 デバイスがすべての追跡 **設定を** 適用している _場合、_ デバイスは Secure と見なされます。
 - **脆弱性の修正プログラムの状態**:脆弱なデバイスの数を示します。 脅威によって悪用される脆弱性に対処するために、セキュリティ更新プログラムまたはパッチを適用します。
-
-#### <a name="view-reports-per-threat-tags"></a>脅威タグごとにレポートを表示する
-脅威レポートリストをフィルター処理し、特定の脅威タグ (カテゴリ) またはレポートの種類に従って最も関連性の高いレポートを表示できます。 
-- **脅威タグ**— 特定の脅威カテゴリに従って最も関連性の高いレポートを表示できます。 たとえば、ランサムウェアに関連するレポートすべてです。
-- **レポートの種類**- 特定のレポートの種類に応じて最も関連性の高いレポートを表示できます。 たとえば、ツールとテクニックをカバーするレポートすべてです。 
-- **フィルター**— 脅威レポートの一覧を効率的に確認し、特定の脅威タグまたはレポートの種類に基づいてビューをフィルター処理する場合に役立つ。 たとえば、ランサムウェアカテゴリに関連する脅威レポート、または脆弱性をカバーする脅威レポートを確認します。
-
-##### <a name="how-does-it-work"></a>どのような仕組みなのか。
-Microsoft Threat Intelligence チームは、各脅威レポートに脅威タグを追加しました。
-- 次の 4 つの脅威タグを使用できます。
-  - ランサムウェア
-  - フィッシング詐欺
-  - 脆弱性
-  - アクティビティ グループ
-- 脅威タグは、脅威分析ページの上部に表示され、各タグの下で使用可能なレポート数のカウンターが表示されます。
-    ![脅威タグ](../../media/threat-analytics/ta-threattags-mtp.png)
-- リストは、脅威タグで並べ替えすることもできます。   ![ リスト](../../media/threat-analytics//ta-taglist-mtp.png)
-- フィルターは、脅威タグとレポートの種類 (フィルター) ごとに使用   ![ できます。](../../media/threat-analytics/ta-threattag-filters-mtp.png)
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>アナリスト レポート: Microsoft セキュリティ研究者から専門家の分析情報を取得する
 [ **アナリスト レポート] セクション** で、詳細なエキスパートの書き込みについて説明します。 ほとんどのレポートには、MITRE ATT&CK フレームワークにマップされた戦術や手法、推奨事項の網羅的なリスト、強力な脅威検出ガイダンスなど、攻撃チェーンの詳細[](advanced-hunting-overview.md)な説明が記載されています。

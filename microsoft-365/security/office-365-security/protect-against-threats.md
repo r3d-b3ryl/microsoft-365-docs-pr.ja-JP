@@ -20,12 +20,12 @@ description: 管理者は、組織の脅威保護Microsoft 365、組織で使用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31ca7c27e3be20e20c16004490bd2ecd5ca4ae05
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 7e37b67dbed75e3283070ba94321fcb03979a5a6
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083682"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105394"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -43,7 +43,7 @@ ms.locfileid: "53083682"
 >
 > Defender for Office 365のほとんどのポリシーの手動構成をスキップするには、Standard レベルまたは Strict レベルで事前設定されたセキュリティ ポリシーを使用できます。 詳細については、「EOP でのセキュリティ ポリシーの事前設定」および[「Microsoft Defender for microsoft Defender for Office 365」 を参照してください](preset-security-policies.md)。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 ### <a name="subscriptions"></a>サブスクリプション
 
@@ -95,7 +95,7 @@ ms.locfileid: "53083682"
 
 3. 開くポリシーの詳細フライアウトで、[保護設定の編集] を **クリック** し、次の設定を構成します。
    - **[保護の設定** ] セクション:
-     - [共通 **の添付ファイル フィルターを有効** にする] を選択して、共通の添付ファイル フィルターを有効にします。 [ファイル **の種類のカスタマイズ] を** クリックして、ファイルの種類を追加します。
+     - **共通の添付ファイル フィルターを有効にする**: 選択 (オン) します。 [ファイル **の種類のカスタマイズ] を** クリックして、ファイルの種類を追加します。
      - **マルウェアに対して 0 時間自動削除を有効にする**: この設定が選択されているのを確認します。 マルウェアの ZAP の詳細については、「 [マルウェアのゼロ時間自動削除 (ZAP)」を参照してください](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)。
    - **[通知** ] セクション: 通知設定が選択されなかからなか確認します。
 
@@ -251,7 +251,7 @@ ms.locfileid: "53083682"
 2. [リンク **セーフ] ページで**、[グローバル設定]**を** クリックし、表示されるフライアウトで次の設定を構成します。
    - **設定アプリセクションのコンテンツに適用されるOffice 365を指定** します。
      - **[セーフアプリOffice 365リンク** を使用する: この設定がオンになっていることを確認します ( ![ トグルオン ](../../media/scc-toggle-on.png) )。
-     - **ユーザーがアプリで保護された** リンクをクリックOffice 365追跡しない : この設定をオフにする ( ![ トグルオフ ](../../media/scc-toggle-off.png) )
+     - **ユーザーがアプリで保護されたリンクをクリックOffice 365追跡** しない: この設定をオフにします (トグル ![ オフ ](../../media/scc-toggle-off.png) )。
      - **ユーザーがアプリの元** の URL をクリックOffice 365しない : この設定がオンになっていることを確認します ( ![ トグルオン ](../../media/scc-toggle-on.png) )。
 
    完了したら、[保存] を **クリックします。**

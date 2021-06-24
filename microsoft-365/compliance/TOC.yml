@@ -395,9 +395,9 @@
               href: archive-celltrust-data.md
             - name: MS SQL 上の Cisco Jabber
               href: archive-ciscojabberonmssql-data.md
-            - name: Oracle 上の Cisco Jabber (プレビュー)
+            - name: Oracle 上の Cisco Jabber
               href: archive-ciscojabberonoracle-data.md
-            - name: PostgreSQL 上の Cisco Jabber (プレビュー)
+            - name: PostgreSQL 上の Cisco Jabber
               href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
@@ -421,6 +421,8 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
+            - name: Skype for Business (プレビュー)
+              href: archive-skypeforbusiness-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md
             - name: Symphony
@@ -429,8 +431,6 @@
               href: archive-text-delimited-data.md
             - name: Webex チーム
               href: archive-webexteams-data.md
-            - name: Web ページ
-              href: archive-webpagecapture-data.md
             - name: Web ページ
               href: archive-webpagecapture-data.md
             - name: Facebookからの職場
@@ -455,11 +455,15 @@
               href: archive-enterprise-number-data.md
             - name: O2 ネットワーク
               href: archive-o2-network-data.md
+            - name: Signal (プレビュー)
+              href: archive-signal-archiver-data.md
+            - name: Telegram (プレビュー)
+              href: archive-telegram-archiver-data.md
             - name: TELUS ネットワーク
               href: archive-telus-network-data.md
             - name: Verizon ネットワーク
               href: archive-verizon-network-data.md
-            - name: WeChat (プレビュー)
+            - name: WeChat
               href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md

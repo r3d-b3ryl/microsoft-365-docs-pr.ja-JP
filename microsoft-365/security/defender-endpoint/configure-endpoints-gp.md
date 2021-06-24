@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f607e36cef85f30fa1d6e073da871ac1c140684c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 80794a9d5e4da0d2da74fc714ffd1e0ceab34c8f
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841836"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105688"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>グループ ポリシー Windows 10デバイスのオンボード 
 
@@ -119,9 +119,9 @@ ms.locfileid: "52841836"
 
 すべてのポリシーは 、 の下に位置します `Computer Configuration\Policies\Administrative Templates` 。
 
-**ポリシーの場所:** \Windows コンポーネント\Windows Defender SmartScreen*
+**ポリシーの場所:** \Windows コンポーネント\atp Windows Defender
 
-ポリシー | 設定 
+ポリシー | Setting 
 :---|:---
 Enable\Disable Sample collection|   [有効] - [コンピューターでサンプル コレクションを有効にする] チェック ボックスをオンにします。
 
@@ -129,7 +129,7 @@ Enable\Disable Sample collection|   [有効] - [コンピューターでサン�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策
 
-ポリシー | 設定 
+ポリシー | Setting 
 :---|:---
 望ましくない可能性があるアプリケーションの検出を構成する | 有効、ブロック
 
@@ -137,7 +137,7 @@ Enable\Disable Sample collection|   [有効] - [コンピューターでサン�
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\MAPS
 
-ポリシー | 設定 
+ポリシー | Setting 
 :---|:---
 Microsoft MAPS に参加する | 有効、高度なマップ
 詳細な分析が必要な場合にファイル サンプルを送信する | 有効、安全なサンプルの送信
@@ -146,22 +146,22 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\リアルタイム保護
 
-ポリシー | 設定 
+ポリシー | Setting 
 :---|:---
 リアルタイム保護をオフにする|無効
-動作の監視を有効にする|有効
-ダウンロードしたファイルと添付ファイルをスキャンする|有効
-コンピューター上のファイルとプログラムのアクティビティを監視する|有効
+動作の監視を有効にする|Enabled
+ダウンロードしたファイルと添付ファイルをスキャンする|Enabled
+コンピューター上のファイルとプログラムのアクティビティを監視する|Enabled
 
 <br/>
 
-**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender AntivirusScan
+**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\Scan
 
 これらの設定は、エンドポイントの定期的なスキャンを構成します。 毎週のクイック スキャンを実行することをお勧めします。パフォーマンスが許容されます。
 
-ポリシー | 設定 
+ポリシー | Setting 
 :---|:---
-スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |有効
+スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |Enabled
 
 
 <br/>
@@ -184,7 +184,7 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 
 
 
-ポリシー | 設定 
+ポリシー | Setting 
 :---|:---
 フォルダー アクセスの制御を構成する| 有効、監査モード
 
@@ -238,7 +238,7 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 > デバイスが [デバイス] リストに表示を開始するには、数日 **かかる場合があります**。 これには、ポリシーがデバイスに配布される時間、ユーザーがログオンする前にかかる時間、エンドポイントがレポートを開始するのにかかる時間が含まれます。
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md)

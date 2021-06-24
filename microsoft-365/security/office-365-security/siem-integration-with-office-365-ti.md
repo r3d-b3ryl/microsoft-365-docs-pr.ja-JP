@@ -19,12 +19,12 @@ description: 組織の SIEM サーバーを Microsoft Defender と統合して�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f3d6bbacb4a64060ecd03cbb28eee3256f41827e
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: e11d1e64b7c8c3b9d5b93516fe05aed3d5937290
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929781"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105634"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM との Microsoft Defender との統合 (Office 365
 
@@ -41,12 +41,11 @@ ms.locfileid: "52929781"
 SIEM 統合を使用すると、SIEM サーバー レポートで Microsoft Defender によって検出されたマルウェアやフィッシングなどの情報Office 365を表示できます。
 
 - microsoft Defender for Office 365 との SIEM 統合の例については、「Tech Community ブログ: Office 365 および[O365 管理 API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)の Defender を使用した SOC の有効性の向上」を参照してください。
-
 - 管理 API の詳細については、「Office 365管理 API[のOffice 365」を参照してください](/office/office-365-management-api/office-365-management-apis-overview)。
 
 ## <a name="how-siem-integration-works"></a>SIEM 統合の仕組み
 
-このOffice 365アクティビティ管理 API は、ユーザー、管理者、システム、およびポリシーのアクションとイベントに関する情報を、組織の Microsoft 365 および Azure Active Directoryログから取得します。 組織に Microsoft Defender for Office 365プラン 1 または 2、または E5 Office 365がある場合は[、Microsoft Defender](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)を使用してスキーマOffice 365できます。
+このOffice 365アクティビティ管理 API は、ユーザー、管理者、システム、およびポリシーのアクションとイベントに関する情報を、組織の Microsoft 365 および Azure Active Directoryログから取得します。 組織に Microsoft Defender for Office 365 プラン 1 または 2、または Office 365 E5 がある場合は[、Microsoft Defender](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)を使用してスキーマOffice 365できます。
 
 最近では、Microsoft Defender for Office 365[プラン 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)の自動調査と対応機能のイベントが Office 365管理アクティビティ API に追加されました。 ID、名前、状態などの主要な調査の詳細に関するデータを含めるだけでなく、API には調査アクションやエンティティに関する高レベルの情報も含まれる。
 
@@ -58,6 +57,10 @@ SIEM サーバーまたは他の同様のシステムは **、audit.general** �
 
 次の表に、Microsoft Defender のイベントに関連する **AuditLogRecordType** の値Office 365示します。
 
+<br>
+
+****
+
 |値|メンバ名|説明|
 |---|---|---|
 |28|ThreatIntelligence|Exchange Online Protection と Microsoft Defender for Office 365 からのフィッシングとマルウェアのイベント。|
@@ -67,7 +70,7 @@ SIEM サーバーまたは他の同様のシステムは **、audit.general** �
 |
 
 > [!IMPORTANT]
-> Microsoft Defender との SIEM 統合をセットアップするには、グローバル管理者またはセキュリティ管理者の役割が Microsoft 365 Defender ポータルに割り当てられている必要Office 365。
+> Microsoft Defender との SIEM 統合をセットアップするには、グローバル管理者またはセキュリティ管理者の役割が Microsoft 365 Defender ポータルに割り当てられている必要Office 365。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 >
 > 監査ログは、ユーザーの環境Microsoft 365する必要があります。 このヘルプを表示するには、「監査ログ検索 [を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 

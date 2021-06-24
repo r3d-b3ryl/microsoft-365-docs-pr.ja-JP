@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ed033f137d3329dc208183fe8fad1f300ffd4c9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841795"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105574"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux での Microsoft Defender for Endpoint の手動展開
 
@@ -349,6 +349,21 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
         ```bash
         mdatp threat list
         ```
+
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>シミュレートされた攻撃で Linux エンドポイントの検出と応答 (EDR) 機能を体験する
+
+Linux 用の EDR機能をテストするには、以下の手順に従って、Linux サーバーでの検出をシミュレートし、ケースを調査します。 
+
+1.  オンボードされた Linux サーバーがサーバーに表示Microsoft Defender セキュリティ センター。 これがコンピューターの最初のオンボーディングである場合、表示されるまでに最大 20 分かかる場合があります。 
+
+2.  スクリプト ファイルをダウンロード [してオンボード](https://aka.ms/LinuxDIY) の Linux サーバーに展開し、次のコマンドを実行します。 `./mde_linux_edr_diy.sh`
+
+3.  数分後に、検出が発生する必要Microsoft Defender セキュリティ センター。
+
+4.  アラートの詳細、コンピューターのタイムラインを確認し、一般的な調査手順を実行します。
+
+
+
 
 ## <a name="installer-script"></a>インストーラー スクリプト
 

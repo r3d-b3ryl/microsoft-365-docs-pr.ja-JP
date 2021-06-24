@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: 管理者が監査ログを検索する機能を有効または無効にするには、Microsoft 365 コンプライアンス センターで監査ログ検索機能を有効または無効にする方法を示します。
-ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: 管理者が監査ログを検索する機能を有効または無効にするには、Microsoft 365 コンプライアンス センターの監査ログ検索機能を有効または無効にする方法を示します。
+ms.openlocfilehash: 7c55443eda9a99ff4ef153d8564fd9ac43fcc549
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706666"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105310"
 ---
 # <a name="turn-auditing-on-or-off"></a>監査のオンとオフを切り替える
 
@@ -39,7 +39,7 @@ Microsoft 365 および Office 365 Enterprise 組織では、監査ログは既�
 - 組織で監査を有効またはExchange Onlineするには、監査ログの役割を割りMicrosoft 365があります。 既定では、この役割は、管理センターの [アクセス許可] ページの[コンプライアンス管理] および [組織の管理Exchange割り当てられます。 グループ内のグローバルMicrosoft 365は、組織の管理役割グループのメンバー Exchange Online。 
 
     > [!NOTE]
-    > 監査を有効またはオフに切り替Exchange Onlineユーザーにアクセス許可を割り当てる必要があります。 セキュリティ & コンプライアンス センターの [アクセス許可] ページでユーザーに監査ログの役割を割り当てると、監査をオンまたはオフにすることはできません。 これは、基になるコマンドレットが PowerShell コマンドレットExchange Onlineです。 
+    > 監査を有効またはオフに切り替Exchange Onlineユーザーにアクセス許可を割り当てる必要があります。 セキュリティ & コンプライアンス センターの [アクセス許可] ページでユーザーに監査ログの役割を割り当てると、監査をオンまたはオフにすることはできません。 これは、基になるコマンドレットが PowerShell コマンドレットExchange Onlineです。
 
 - 監査ログの検索に関する詳細な手順については、「セキュリティ コンプライアンス センターで監査ログを検索する」 [を&してください](search-the-audit-log-in-security-and-compliance.md)。 管理アクティビティ API の詳細Microsoft 365、「管理 API の概要」を参照Microsoft 365[してください](/office/office-365-management-api/get-started-with-office-365-management-apis)。
 
@@ -59,7 +59,7 @@ Microsoft 365 および Office 365 Enterprise 組織では、監査ログは既�
 
 1. <https://compliance.microsoft.com> に移動し、サインインします。
 
-2. コンプライアンス センターの左側のナビゲーション ウィンドウMicrosoft 365、[すべて表示]をクリックし、[監査] を **クリックします**。
+2. 左側のナビゲーション ウィンドウで、[すべて表示Microsoft 365 コンプライアンス センター **をクリックし**、[監査] を **クリックします**。
 
    組織の監査が有効ではない場合は、ユーザーと管理アクティビティの記録を開始するように求めるバナーが表示されます。
 
@@ -103,6 +103,6 @@ Microsoft 365 および Office 365 Enterprise 組織では、監査ログは既�
 
       `False` _UnifiedAuditLogIngestionEnabled_ プロパティの値は、監査がオフになっていることを示します。
 
-    - コンプライアンス センターの **[** 監査] ページMicrosoft 365移動します。
+    - [監査]**ページの**[監査] Microsoft 365 コンプライアンス センター。
 
       組織の監査が有効ではない場合は、ユーザーと管理アクティビティの記録を開始するように求めるバナーが表示されます。

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0068d5aeef1289d8775dcefd0b4f60cb8f8ed0de
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096818"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105406"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -38,8 +38,12 @@ RSS フィード: 次の URL をコピーしてフィード リーダーに貼�
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>2021 年 6 月
-- 脅威分析[レポートMicrosoft 365 Defenderの脅威タグ](threat-analytics.md) <br> 脅威タグは、特定の脅威カテゴリに集中し、最も関連性の高いレポートを確認するのに役立ちます。 
+
+## <a name="may-2021"></a>2021 年 5 月
+
+- [新しいアラート ページ (Microsoft 365 Defender ポータル)](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> 攻撃にコンテキストの拡張情報を提供します。 現在のアラートを引き起こした他のトリガーされたアラート、およびファイル、ユーザー、メールボックスなど、攻撃に関連する影響を受けるすべてのエンティティとアクティビティを確認できます。 詳細については [、「アラートの](/microsoft-365/security/defender/investigate-alerts) 調査」を参照してください。
+- [ポータル内のインシデントとアラートのMicrosoft 365 Defenderグラフ](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425) <br> 1 つのインシデントに対して複数のアラートが発生するか、組織が複数の異なるインシデントで攻撃を受け取っているかどうかを判断します。 詳細については [、「インシデントの優先順位付](/microsoft-365/security/defender/incident-queue) け」を参照してください。
+
 
 ## <a name="april-2021"></a>2021 年 4 月
 - Microsoft 365 Defender<br> 改善[されたMicrosoft 365 Defenderポータル](https://security.microsoft.com)が利用可能になります。 この新しいエクスペリエンスでは、Defender for Endpoint、Defender for endpoint、defender for Office 365 Id、その他を 1 つのポータルにまとめます。 これは、セキュリティコントロールを管理するための新しいホームです。 [新機能について説明します](./overview-security-center.md)。
