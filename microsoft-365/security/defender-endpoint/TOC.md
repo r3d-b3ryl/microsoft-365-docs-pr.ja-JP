@@ -273,6 +273,8 @@
 #### [ウイルス対策ソフトウェアとマルウェア対策の更新プログラムを取得する](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Microsoft Defender ウイルス対策更新プログラムのソースを管理する](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [保護更新プログラムをダウンロードして適用するスケジュールを管理する](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+##### [Microsoft Defender の更新プログラムの段階的な展開プロセスを管理する](manage-gradual-rollout.md)
+##### [Microsoft Defender の更新プログラムの段階的な展開プロセスを構成する](configure-updates.md)
 ##### [Microsoft Defender ウイルス対策の更新プログラムを管理し、古くなったエンドポイントをスキャンする](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [イベントベースの強制更新プログラムを管理する](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -309,7 +311,6 @@
 ##### [パフォーマンスに関する問題のトラブルシューティング](troubleshoot-performance-issues.md)
 ##### [Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする](troubleshoot-microsoft-defender-antivirus.md)
 ##### [サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
 
 #### [ハードウェア ベースの分離]()
 ##### [Windows 10 のハードウェア ベースの分離](overview-hardware-based-isolation.md)
