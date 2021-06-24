@@ -13,23 +13,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bd197a55e5a119263bd9c67716c38010a86e5263
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796056"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062193"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> この機能は現在プレビュー段階であり、変更される可能性があります。 
->
-> 次の理由により、運用テナントではなくテスト テナントでこの機能を有効にします。
-> - この機能でラベルのメタデータが変更しますが、現在一部のプラットフォームのアプリではこの変更をサポートしていません。
-> - この機能を有効にしたら、自分でこの機能を無効にすることはできません。
+> この機能は現在プレビュー段階であり、変更される可能性があります。
 
 Office デスクトップ アプリで [共同編集](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) をサポートする設定を有効にして、ドキュメントが [秘密度レベル](sensitivity-labels.md) でラベル付け、暗号化されている場合、複数のユーザーがこれらのドキュメントを同時に編集できるようにします。
 
@@ -37,7 +33,7 @@ Office デスクトップ アプリで [共同編集](https://support.office.com
 
 さらに、この機能を有効にすると、これらのラベル付きおよび暗号化されたファイルで[自動保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)機能がサポートされます。
 
-リリースの発表を確認するには、「[Microsoft Information Protection で暗号化されたドキュメントとラベルの更新に関する共同編集の発表](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162)」に関するブログ投稿を参照してください。
+元のリリースの発表を確認するには、「[Microsoft Information Protection で暗号化されたドキュメントとラベルの更新に関する共同編集の発表](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162)」に関するブログ投稿を参照してください。
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>機密度ラベル用のメタデータ変更
 
@@ -76,15 +72,13 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 
 この機能を有効にする前に、次の前提条件を必ず把握します。
 
-- このプレビューではテスト テナントを使用する必要があります。
-
 - この機能を有効にする場合は、グローバル管理者である必要があります。
 
 - テナントに対して、[SharePoint、OneDrive で Office ファイル](sensitivity-labels-sharepoint-onedrive-files.md) への秘密度レベルを有効にする必要があります。 この機能が有効になっていない場合、秘密度レベルがあるファイルへの共同編集を有効にする設定を選択すると、自動的に有効になります。
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: プレビュー: [最新チャンネル(プレビュー)](https://office.com/insider)
-    - **macOS**: プレビュー: [最新チャネル (プレビュー)](https://office.com/insider)
+    - **Windows**: 最小バージョン 2105: 6 月 18 日
+    - **macOS**: 最小バージョン 16.50
     - **iOS**: まだサポートされていません
     - **Android**: まだサポートされていません
 
@@ -142,34 +136,26 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>機密度ラベルを使用したファイルの共同編集を有効にする方法
 
 > [!CAUTION]
-> この設定をオンにすることは一方向のアクションです。この機能がプレビュー中には、メタデータの変更、前提条件、制限事項、このページに記載されている既知の問題を確認して理解した上で、非稼働環境でのみテストを行ってください。
+> この設定をオンにすることは一方向のアクションです。この機能がプレビュー中は、メタデータの変更、前提条件、制限事項、このページに記載されている既知の問題を確認して理解した上で実行してください。
 
-プレビュー中には、特定の URL を使用して、Microsoft 365 コンプライアンス センターのこの設定にアクセスする必要があります。
+1. テナントのグローバル管理者として [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) にサインインします。
 
-1. 次のリンクを使用して、テスト テナントのグローバル管理者として Microsoft 365 コンプライアンス センターにサインインします。
+2. ナビゲーション ウィンドウで、**[設定]** > **[秘密度ファイルを含むファイルの共同編集]** の順に選択します。
+
+2. **[秘密度ファイルを含むファイルの共同編集 (プレビュー)]** ページで、概要の説明、前提条件、予想される内容、さらに 「この設定をオンにすると設定を戻すことができません」 という警告を読みます。
     
-    ```http
-    https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ```
-    このリンクで、直接テナント設定の **機密度ラベルを使用したファイルの共同編集** にアクセスできます。
-
-    > [!IMPORTANT]
-    > 続行する前に、ユーザーへの影響がないテスト テナントにサインインしていることを確認します。 
-    >
-    > コンプライアンス センターの上部右にあるアカウント イニシャルのある円を選択し、テナント名に目的のテスト テナントが表示されるのを確認します。
-    
-2. 概要の説明、前提条件、予想される内容、さらにこの設定をオンにした後は設定を戻すことができないという警告を読みます。 **機密度ラベルを使用したファイルの共同編集を有効にする** を選んでから **適用** を選びます。
+    **機密度ラベルを使用したファイルの共同編集を有効にする** を選んでから **適用** を選びます。
     
     ![機密度ラベルを使用したファイルの共同編集をオンにできるオプション](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
-3. この設定が環境全体に複製されるのを 24 時間待ってから、この共同編集用の新機能をテストします。
+3. この設定が環境全体に複製されるのを 24 時間待ってから、この共同編集用の新機能を使用します。
 
 ## <a name="contact-support-if-you-need-to-disable-this-feature"></a>この機能を無効にする必要がある場合は、サポートにお問い合わせください。
 
 > [!IMPORTANT]
 > この機能を無効にする必要がある場合、ラベル情報が失われることがあります。ご注意ください。
 
-テナントに対して機密度ラベルを使用したファイルの共同編集を有効にすると、自身ではこの設定を無効にすることはできません。 そのため、この前提条件、結果、制限事項を確認して理解した上でこの設定を有効にすることが重要です。 また、これがこの機能を運用テナントではなくテスト テナントでテストするようにお勧めする理由でもあります。
+テナントに対して機密度ラベルを使用したファイルの共同編集を有効にすると、自身ではこの設定を無効にすることはできません。 そのため、この前提条件、結果、制限事項を確認して理解した上でこの設定を有効にすることが重要です。
 
 ![共同編集で機密度ラベルが有効になっていることを表示させるオプション](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
