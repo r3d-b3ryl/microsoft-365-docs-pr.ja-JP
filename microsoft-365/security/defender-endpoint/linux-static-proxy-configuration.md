@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6dca58070d21271ffc832bcd628679303736f99e
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 5a8e1cbda5f4361532c7fac0892be7ffe72f64ca
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108141"
+ms.locfileid: "53114733"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>静的プロキシ検出用に Microsoft Defender for Endpoint on Linux を構成する
 
@@ -36,35 +36,35 @@ ms.locfileid: "53108141"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft Defender for Endpoint では、環境変数を使用してプロキシ サーバーを ```HTTPS_PROXY``` 検出できます。 この設定は、インストール時 **と** 製品のインストール後の両方で構成する必要があります。
+Microsoft Defender for Endpoint では、環境変数を使用してプロキシ サーバーを `HTTPS_PROXY` 検出できます。 この設定は、インストール時 **と** 製品のインストール後の両方で構成する必要があります。
 
 ## <a name="installation-time-configuration"></a>インストール時間の構成
 
-インストール時に、 ```HTTPS_PROXY``` 環境変数をパッケージ マネージャーに渡す必要があります。 パッケージ マネージャーは、次の方法でこの変数を読み取ることができます。
+インストール時に、 `HTTPS_PROXY` 環境変数をパッケージ マネージャーに渡す必要があります。 パッケージ マネージャーは、次の方法でこの変数を読み取ることができます。
 
-- 変数 ```HTTPS_PROXY``` は次の ```/etc/environment``` 行で定義されます。
+- 変数 `HTTPS_PROXY` は次の `/etc/environment` 行で定義されます。
 
-    ```bash
-    HTTPS_PROXY="http://proxy.server:port/"
-    ```
+  ```bash
+  HTTPS_PROXY="http://proxy.server:port/"
+  ```
 
 - この `HTTPS_PROXY` 変数は、パッケージ マネージャーのグローバル構成で定義されます。 たとえば、Ubuntu 18.04 では、次の行を次に追加できます `/etc/apt/apt.conf.d/proxy.conf` 。
   
-    ```bash
-    Acquire::https::Proxy "http://proxy.server:port/";
-    ```
+  ```bash
+  Acquire::https::Proxy "http://proxy.server:port/";
+  ```
 
-    > [!CAUTION]
-    > 上記の 2 つの方法では、システム上の他のアプリケーションに使用するプロキシを定義できます。 このメソッドは、一般的にグローバル構成を意図している場合にのみ、慎重に使用してください。
+  > [!CAUTION]
+  > 上記の 2 つの方法では、システム上の他のアプリケーションに使用するプロキシを定義できます。 このメソッドは、一般的にグローバル構成を意図している場合にのみ、慎重に使用してください。
   
 - 変数 `HTTPS_PROXY` は、インストールまたはアンインストール コマンドの先頭に追加されます。 たとえば、APT パッケージ マネージャーを使用して、Microsoft Defender for Endpoint をインストールするときに、次のように変数の先頭に変数を追加します。 
 
-    ```bash  
-    HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
-    ```
+  ```bash  
+  HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
+  ```
 
-    > [!NOTE]
-    > 環境変数定義と apt の間に sudo を追加しない場合、変数は伝達されません。
+  > [!NOTE]
+  > 環境変数定義と apt の間に sudo を追加しない場合、変数は伝達されません。
 
 環境変数 `HTTPS_PROXY` は、アンインストール時にも同様に定義できます。
 
@@ -74,16 +74,16 @@ Microsoft Defender for Endpoint では、環境変数を使用してプロキシ
   
 インストール後、環境変数は Defender for Endpoint サービス `HTTPS_PROXY` ファイルで定義する必要があります。 これを行うには、ルート `/lib/systemd/system/mdatp.service` ユーザーとして実行している間にテキスト エディターで開きます。 その後、次の 2 つの方法のいずれかを使用して、変数をサービスに伝達できます。
 
-    > [!NOTE]
-    > On CentOS or RedHat Linux distributions the location of the Endpoint service file is `/usr/lib/systemd/system/mdatp.service`.
+> [!NOTE]
+> CentOS または RedHat Linux ディストリビューションでは、エンドポイント サービス ファイルの場所はです `/usr/lib/systemd/system/mdatp.service` 。
 
 - 行のアンコメント `#Environment="HTTPS_PROXY=http://address:port"` を解除し、静的プロキシ アドレスを指定します。
 
 - 行を追加します `EnvironmentFile=/path/to/env/file` 。 このパスは、次の行を追加する必要がある、またはカスタム ファイル `/etc/environment` を指すことができます。
   
-    ```bash
-    HTTPS_PROXY="http://proxy.server:port/"
-    ```
+  ```bash
+  HTTPS_PROXY="http://proxy.server:port/"
+  ```
 
 ファイルを変更した `mdatp.service` 後、ファイルを保存して閉じます。 変更を適用できるよう、サービスを再起動します。 Ubuntu では、これには次の 2 つのコマンドが含まれます。  
 

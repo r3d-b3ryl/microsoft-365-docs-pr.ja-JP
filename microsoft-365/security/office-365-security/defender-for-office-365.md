@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81a45f6839538118c5413c1f5fc09e0cd19903a0
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 66afaa56efa93faef3fcc6ff8346df24681a0a50
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029875"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083022"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -81,7 +81,7 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 |Microsoft Defender for Office 365 プラン 1|Microsoft Defender for Office 365 プラン 2|
 |---|---|
-|構成、保護、および検出機能: <ul><li>[添付ファイル保護](safe-attachments.md)</li><li>[リンク保護](safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 保護のフィッシング詐欺対策](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 プラン 1 機能 <br>--- プラスのもの ---<br> 自動化、調査、修復、教育の機能:<ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレータ](attack-simulator.md)</li><li>[キャンペーン ビュー](campaigns.md)</li></ul>|
+|構成、保護、および検出機能: <ul><li>[添付ファイル保護](safe-attachments.md)</li><li>[リンク保護](safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 保護のフィッシング詐欺対策](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 プラン 1 機能 <br>--- プラスのもの ---<br> 自動化、調査、修復、教育の機能:<ul><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](office-365-air.md)</li><li>[攻撃シミュレーション トレーニング](attack-simulation-training.md)</li><li>[キャンペーン ビュー](campaigns.md)</li></ul>|
 |
 
 - Microsoft Defender for Office 365 プラン 2 は、Office 365 E5、Office 365 A5、および Microsoft 365 E5 Security と Microsoft 365 E5 に含まれています。
@@ -96,7 +96,7 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Microsoft Defender for Office 365 のポリシーを構成する
 
-Microsoft Defender for Office 365 を使用していると、組織のセキュリティ チームは、Microsoft 365 Defender ポータルでポリシーを定義することにより、保護を構成できます (<https://security.microsoft.com> \> **[メールとコラボレーション]** \> **[ポリシーとルール]** に移動します)。
+Microsoft Defender for Office 365 を使用していると、組織のセキュリティ チームは、Microsoft 365 Defender ポータルでポリシーを定義することにより、保護を構成できます (<https://security.microsoft.com> \> **[メールとコラボレーション]** \> **[ポリシーとルール]** \> **脅威ポリシー** の順に移動します)。
 
 [このビデオ](https://www.youtube.com/watch?v=vivvTmWJ_3c)を見て詳細をご確認ください。
 
@@ -133,7 +133,7 @@ Microsoft Defender for Office 365 プラン 2 には、組織のセキュリテ�
 
 - **[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)** (エクスプローラーとも呼ばれます) は、最近発生した脅威を特定して分析できるリアルタイムのレポートです。 カスタム期間のデータを表示するようにエクスプローラーを構成することができます。
 
-- **[攻撃シミュレータ](attack-simulator.md)** を使用すると、現実的な攻撃シナリオを組織で実行して、脆弱性を特定することができます。 スピア フィッシング資格情報獲得と添付ファイルの攻撃、パスワード スプレーとブルート フォース パスワード攻撃など、現在の種類の攻撃のシミュレーションを利用できます。
+- **[攻撃シミュレーションのトレーニング](attack-simulation-training.md)** を使用すると、現実的な攻撃シナリオを組織で実行して、脆弱性を特定することができます。 スピア フィッシング資格情報獲得と添付ファイルの攻撃、パスワード スプレーとブルート フォース パスワード攻撃など、現在の種類の攻撃のシミュレーションを利用できます。
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>自動化された調査と対応で時間を節約する
 
@@ -178,5 +178,4 @@ Microsoft Defender for Office 365 には継続的に新機能が追加されて�
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 - [Microsoft 365 Defender での自動調査および対応 (AIR)](../defender/m365d-autoir.md)

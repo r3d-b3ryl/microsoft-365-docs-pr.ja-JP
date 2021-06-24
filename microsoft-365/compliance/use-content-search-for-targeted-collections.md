@@ -18,24 +18,24 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: コンプライアンス センターでコンテンツMicrosoft 365を使用して、特定のメールボックスまたはサイト フォルダー内のアイテムを検索する対象のコレクションを実行します。
-ms.openlocfilehash: cf0364d39a78e1bbbc062d85ce750d190fbbda5a
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+description: 特定のメールボックスまたはサイト フォルダー内Microsoft 365 コンプライアンス センターを検索する対象となるコレクションを実行するには、フォルダー内のコンテンツ検索を使用します。
+ms.openlocfilehash: 925a6e5e0e56c63cde8bfa1b39cca6e64abcd016
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311908"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114754"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>対象のコレクションにコンテンツ検索を使用する
 
-Microsoft 365 コンプライアンス センターのコンテンツ検索ツールは、UI で Exchange メールボックスまたは SharePoint サイトおよび OneDrive for Business サイト内の特定のフォルダーを検索するための直接的な方法を提供します。 ただし、実際の検索クエリ構文でサイトのメールまたはパス (DocumentLink) プロパティのフォルダー ID プロパティを指定することで、特定のフォルダー (ターゲット *コレクションと呼* ばれる) を検索できます。 コンテンツ検索を使用して対象のコレクションを実行すると、ケースや特権アイテムに対応するアイテムが特定のメールボックスまたはサイト フォルダーにあると確信している場合に便利です。 この記事のスクリプトを使用して、メールボックス フォルダーのフォルダー ID を取得したり、SharePoint サイトおよびサイト上のフォルダーのパス (DocumentLink) をOneDrive for Businessできます。 次に、検索クエリのフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返します。
+Microsoft 365 コンプライアンス センター のコンテンツ検索ツールは、UI で Exchange メールボックスまたは SharePoint サイトおよび OneDrive for Business サイト内の特定のフォルダーを検索する直接的な方法を提供します。 ただし、実際の検索クエリ構文でサイトのメールまたはパス (DocumentLink) プロパティのフォルダー ID プロパティを指定することで、特定のフォルダー (ターゲット *コレクションと呼* ばれる) を検索できます。 コンテンツ検索を使用して対象のコレクションを実行すると、ケースや特権アイテムに対応するアイテムが特定のメールボックスまたはサイト フォルダーにあると確信している場合に便利です。 この記事のスクリプトを使用して、メールボックス フォルダーのフォルダー ID を取得したり、SharePoint サイトおよびサイト上のフォルダーのパス (DocumentLink) をOneDrive for Businessできます。 次に、検索クエリのフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返します。
 
 > [!NOTE]
 > SharePoint または OneDrive for Business サイトのフォルダーにあるコンテンツを返す場合、このトピックのスクリプトでは Path プロパティの代わりに DocumentLink 管理プロパティを使用します。 DocumentLink プロパティはフォルダー内のすべてのコンテンツを返すのに対し、Path プロパティは一部のメディア ファイルを返さないので、Path プロパティよりも堅牢です。
 
 ## <a name="before-you-run-a-targeted-collection"></a>対象のコレクションを実行する前に
 
-- 手順 1 でスクリプトを実行するには、セキュリティ コンプライアンス センターの電子情報開示マネージャー役割グループ&メンバーである必要があります。 詳細については、「Assign [eDiscovery permissions 」を参照してください](assign-ediscovery-permissions.md)。
+- 手順 1 でスクリプトを実行するには、セキュリティ コンプライアンス センターの電子情報開示マネージャー役割グループ&メンバーである必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
 
 - また、組織でメール受信者の役割を割り当Exchange Onlineがあります。 これは、スクリプトに含まれる **Get-MailboxFolderStatistics** コマンドレットを実行するために必要です。 既定では、メール受信者の役割は、組織の [組織の管理] 役割グループと [受信者の管理] 役割グループに割りExchange Online。 アクセス許可の割り当て方法の詳細については、「Exchange Onlineグループメンバーの管理[」を参照してください](/exchange/manage-role-group-members-exchange-2013-help)。 カスタム役割グループを作成し、その役割にメール受信者の役割を割り当て、手順 1 でスクリプトを実行する必要があるメンバーを追加することもできます。 詳細については、「役割グループの [管理」を参照してください](/Exchange/permissions-exo/role-groups)。
 
@@ -216,17 +216,19 @@ SharePoint または OneDrive for Business サイトから **documentlink** プ�
 
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>手順 2: フォルダー ID またはドキュメントリンクを使用して、対象のコレクションを実行する
 
-スクリプトを実行して、特定のユーザーのフォルダー ID またはドキュメント リンクの一覧を収集した後、次に Microsoft 365 コンプライアンス センターに移動し、特定のフォルダーを検索する新しいコンテンツ検索を作成します。 [コンテンツ検索] キーワード ボックスで構成した検索クエリで、または `folderid:<folderid>` `documentlink:<path>` property:value ペアを使用します (**または、New-ComplianceSearch** コマンドレットを使用する場合は *ContentMatchQuery* パラメーターの値として)。 or プロパティを他  `folderid` の  `documentlink` 検索パラメーターまたは検索条件と組み合わせて使用できます。 クエリに or プロパティのみを含める場合は、指定したフォルダー内のすべてのアイテム  `folderid`  `documentlink` が検索によって返されます。
+スクリプトを実行して、特定のユーザーのフォルダー ID またはドキュメント リンクの一覧を収集した後、次の手順で Microsoft 365 コンプライアンス センター に移動し、特定のフォルダーを検索する新しいコンテンツ検索を作成します。 [コンテンツ検索] キーワード ボックスで構成した検索クエリで、または `folderid:<folderid>` `documentlink:<path>` property:value ペアを使用します (**または、New-ComplianceSearch** コマンドレットを使用する場合は *ContentMatchQuery* パラメーターの値として)。 or プロパティを他  `folderid` の  `documentlink` 検索パラメーターまたは検索条件と組み合わせて使用できます。 クエリに or プロパティのみを含める場合は、指定したフォルダー内のすべてのアイテム  `folderid`  `documentlink` が検索によって返されます。
 
 1. 手順 1 でスクリプトの実行に使用したアカウントと資格情報を使用して、移動して <https://compliance.microsoft.com> サインインします。
 
 2. コンプライアンス センターの左側のウィンドウで、[すべてのコンテンツ検索を表示する] をクリックし、[  >  新しい検索]**をクリックします**。
 
-3. [キーワード **] ボックス** に、手順 1 のスクリプトから返された値 `folderid:<folderid>`  `documentlink:<path>` または値を貼り付けます。
+3. [キーワード **] ボックス** に、手順 1 のスクリプトから返された値 `folderid:<folderid>`  `documentlink:<path>/*` または値を貼り付けます。
 
     たとえば、次のスクリーンショットのクエリでは、ユーザーの回復可能なアイテム フォルダーの Purges サブフォルダー内のアイテムを検索します (Purges サブフォルダーのプロパティの値は、手順 1 のスクリーンショットに `folderid` 示されています)。
 
     ![folderid または documentlink を検索クエリのキーワード ボックスに貼り付ける](../media/FolderIDSearchQuery.png)
+    > [!IMPORTANT]
+    > documentlink 検索では、末尾を使用する必要があります  `asterisk '/*'` 。  
 
 4. [ **場所] で、[** 特定の **場所] を選択し** 、[変更] を **クリックします**。
 
@@ -259,16 +261,16 @@ SharePoint または OneDrive for Business サイトから **documentlink** プ�
 - 次の使用例は、サイト フォルダー (およびサブフォルダー) で、タイトルに "NDA" という文字が含まれているドキュメントを検索します。
 
   ```powershell
-  documentlink:<path> AND filename:nda
+  documentlink:"<path>/*" AND filename:nda
   ```
 
 - 次の使用例は、日付範囲内で変更されたドキュメントのサイト フォルダー (およびサブフォルダー) を検索します。
 
   ```powershell
-  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 この記事のスクリプトを使用して対象となるコレクションを実行する場合は、次のことを念頭に置いておきます。
 

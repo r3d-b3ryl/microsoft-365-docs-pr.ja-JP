@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理者アクセス許可で Microsoft 365 管理センターにサインインして、クラウドで組織を設定し、ユーザーとサブスクリプションを管理します。
-ms.openlocfilehash: eff0ab72ef3e4634e7a83d1af825bc42d11686af
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 7817861e79b86a6c43ea26fdb03b037b40a3f564
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52949989"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083055"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
@@ -57,7 +57,7 @@ ms.locfileid: "52949989"
 
 機能と設定は、管理センターの左側のナビゲーションに表示されます。管理者タスクについての詳細は、「[管理者ヘルプ](../../business-video/admin-center-overview.md)」を参照してください。
   
-|**メニュー**|**目的**|
+| メニュー | 目的 |
 |-----|-----|
 |**ホーム** <br/> |これは、管理センターのランディング ページです。ユーザー、課金、サービスの正常性、およびレポートを管理する場所が表示されます。  <br/> |
 |**ユーザー** <br/> |従業員や学生など、組織内のユーザーを作成して管理します。アクセス許可レベルを設定することも、そのパスワードをリセットすることもできます。  <br/> |
