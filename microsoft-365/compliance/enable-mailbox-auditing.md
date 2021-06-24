@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: メールボックス監査ログは、既定で有効になっています (既定Microsoft 365既定のメールボックス監査またはメールボックス監査とも呼ばれています)。 つまり、メールボックスの所有者、代理人、管理者によって実行される特定のアクションは、メールボックス監査ログに自動的に記録され、メールボックスで実行されたアクティビティを検索できます。
-ms.openlocfilehash: c77e96adfee40027beb653c9e725141fc8d7a8fe
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 0fd15ffd26ad28b9e8b4f2b627ff26206983f21e
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866645"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108093"
 ---
 # <a name="manage-mailbox-auditing"></a>メールボックスの監査を管理する
 
@@ -116,12 +116,12 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**MoveToDeletedItems**|メッセージが削除され、[削除済みアイテム] フォルダーに移動されました。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|レコードとしてラベル付けされたアイテムが削除されました (回復可能なアイテム フォルダーに移動)。 レコードとしてラベル付けされたアイテムを完全に削除することはできません (回復可能なアイテム フォルダーから削除)。|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|
 |**RemoveFolderPermissions**|この値はメールボックス アクションとして受け入れ可能ですが **、UpdateFolderPermissions** アクションに既に含まれており、個別に監査されません。 つまり、この値を使用しない。||||
-|**SearchQueryInitiated**|**注**: この値は、E5 または E5 コンプライアンス アドオンのサブスクリプション ユーザーにのみ使用できます。 詳細については、「Set [up Advanced Audit in Microsoft 365」 を参照してください](set-up-advanced-audit.md)。 <p> ユーザーは Outlook (Windows、Mac、iOS、Android、または Outlook on the web) または Windows 10 のメール アプリを使用してメールボックス内のアイテムを検索します。|||![チェック マーク](../media/checkmark.png)|
+|**SearchQueryInitiated**|**注**: この値は、E5 または E5 コンプライアンス アドオンのサブスクリプション ユーザーにのみ使用できます。 詳細については、「Set [up Advanced Audit in Microsoft 365」 を参照してください](set-up-advanced-audit.md)。 <p> ユーザーは Outlook (Windows、Mac、iOS、Android、Outlook on the web) または Windows 10 のメール アプリを使用してメールボックス内のアイテムを検索します。|||![チェック マーク](../media/checkmark.png)|
 |**Send**|**注**: この値は、E5 または E5 コンプライアンス アドオンのサブスクリプション ユーザーにのみ使用できます。 詳細については、「Set [up Advanced Audit in Microsoft 365」 を参照してください](set-up-advanced-audit.md)。 <p> ユーザーが電子メール メッセージを送信したり、電子メール メッセージに返信したり、電子メール メッセージを転送したりします。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>||![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|SendAs アクセス許可を使用してメッセージが送信されました (他のユーザーがこのメールボックスの所有者を装ってメッセージを送信しました)。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|SendOnBehalf アクセス許可を使用してメッセージが送信されました (他のユーザーがこのメールボックスの所有者の代理人としてメッセージを送信しました)。この場合は、メッセージの名目上の送信者と実際の送信者が受信者に示されます。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|メッセージが完全に削除された、つまり [削除済みアイテム] フォルダーから削除されました。削除済み (回復可能) アイテムは、回復可能なアイテム フォルダーに移動されます。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
-|**更新**|メッセージまたはそのプロパティが変更されました。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
+|**更新**|メッセージまたはプロパティが変更されました。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|メールボックスに予定表の委任が割り当てられました。予定表の委任により、同じ組織の他のユーザーに、メールボックス所有者の予定表を管理する権限が付与されます。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>||![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateComplianceTag**|別の保持ラベルがメール アイテムに適用されます (アイテムに割り当て可能な保持ラベルは 1 つのみです)。|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|
 |**UpdateFolderPermissions**|フォルダーのアクセス許可が変更されました。 フォルダーのアクセス許可では、メールボックス内のフォルダーとそれらのフォルダーに格納されているメッセージにアクセスできる組織内のユーザーを制限します。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
@@ -151,12 +151,12 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**SendAs**|SendAs アクセス許可を使用してメッセージが送信されました。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|SendOnBehalf アクセス許可を使用してメッセージが送信されました。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|メッセージが完全に削除された、つまり [削除済みアイテム] フォルダーから削除されました。削除済み (回復可能) アイテムは、回復可能なアイテム フォルダーに移動されます。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
-|**更新**|メッセージまたはそのプロパティが変更されました。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
+|**更新**|メッセージまたはプロパティが変更されました。|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
 |
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>ログオンの種類ごとに既定のメールボックスアクションがログに記録されるのを確認する
 
-既定でメールボックスを監査すると、すべてのメールボックスに *新しい DefaultAuditSet* プロパティが追加されます。 このプロパティの値は、既定のメールボックスアクション (Microsoft によって管理される) がメールボックスで監査されているかどうかを示します。
+既定でメールボックス監査を実行すると、新しい *DefaultAuditSet* プロパティがすべてのメールボックスに追加されます。 このプロパティの値は、既定のメールボックスアクション (Microsoft によって管理される) がメールボックスで監査されているかどうかを示します。
 
 ユーザー メールボックスまたは共有メールボックスに値を表示するには、メールボックスの名前、エイリアス、電子メール アドレス、またはユーザー プリンシパル名 (ユーザー名) に置き換え、Exchange Online PowerShell で次の \<MailboxIdentity\> コマンドを実行します。
 
@@ -311,7 +311,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 現時点では、既定によるメールボックス監査の有効化が組織でオンになっている場合は、特定のメールボックスでメールボックス監査を無効にできません。 たとえば *、AuditEnabled メールボックス プロパティを* **False に設定すると** 、無視されます。
 
-ただし、Exchange Online PowerShell の **Set-MailboxAuditBypassAssociation** コマンドレットを使用して、アクションが発生した場所に関係なく、指定したユーザーによるメールボックスアクションのログが記録されるのを防ぐことはできます。 以下に例を示します。
+ただし、Exchange Online PowerShell の **Set-MailboxAuditBypassAssociation** コマンドレットを使用して、アクションが発生した場所に関係なく、指定したユーザーによるメールボックスアクションのログが記録されるのを防ぐことはできます。 次に例を示します。
 
 - バイパスされたユーザーによって実行されるメールボックス所有者の操作はログに記録されません。
 - 他のユーザーのメールボックス (共有メールボックスを含む) でバイパスされたユーザーによって実行される委任アクションはログに記録されません。
@@ -331,7 +331,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 値 **True は** 、メールボックス監査ログがユーザーに対してバイパスされるかどうかを示します。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - メールボックス監査ログオンは既定ですべての組織で有効になっていますが、E5 ライセンスを持つユーザーだけが、既定でセキュリティ & コンプライアンス センターまたは [Office 365](search-the-audit-log-in-security-and-compliance.md)管理アクティビティ [API](/office/office-365-management-api/office-365-management-activity-api-reference)を介して監査ログ検索でメールボックス監査ログ イベントを **返** します。
 

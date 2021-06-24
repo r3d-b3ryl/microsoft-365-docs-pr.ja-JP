@@ -19,12 +19,12 @@ description: セキュリティ & コンプライアンス センターで利用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4af84c058eb3d9d7112f6102d39b209c34148d0e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 9408f99b72821e6510927755a9fe6f3aa525a5e0
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054505"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108621"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのスマート レポートと分析情報
 
@@ -55,7 +55,7 @@ ms.locfileid: "53054505"
 
 |情報の種類|実行する方法|詳細を見る場所|
 |---|---|---|
-|**Microsoft 365 Defenderレポート**(すべてアップ) <p> トップインサイトと推奨事項、およびデータ損失防止レポート、ラベル、電子メール セキュリティ レポート、Defender for Office 365 レポートなど、Microsoft 365 Defender レポートへのリンク|[セキュリティ & コンプライアンス センター] で、[レポートの電子メール] &  >    >  **[グループ&に移動します。](https://security.microsoft.com/emailandcollabreport)**|[セキュリティ センターでレポートを監視Microsoft 365表示する](../defender/overview-security-center.md)|
+|**セキュリティ & コンプライアンス センター レポート** (すべてアップ) <p> トップインサイトと推奨事項、およびデータ損失防止レポート、ラベル、電子メール セキュリティ レポート、Defender for Office 365 レポートなど、セキュリティ & コンプライアンス レポートへのリンク|[セキュリティ とコンプライアンス &] で、[レポート ダッシュボード] **に移動** \> **します。**|[セキュリティ センターとコンプライアンス センターのレポート](../../compliance/reports-in-security-and-compliance.md)|
 |**データ損失防止** <p> データ損失防止ポリシーの一致、誤検知と上書き、ポリシーを作成または編集するリンク|[セキュリティ & コンプライアンス センター] で、[データ損失防止ポリシー **] に移動** \> **します。**|[データ損失防止のレポートを表示する](../../compliance/view-the-dlp-reports.md)|
 |**データ ガバナンス** <p> ラベルの適用方法、レコード、ラベルの傾向などに分類されたラベルに関する情報。|セキュリティ 管理コンプライアンス センター&、情報ガバナンス **ダッシュボードに移動** \> **します。**|[データ ガバナンスのレポートを表示する](../../compliance/view-the-data-governance-reports.md)|
 |**脅威管理ダッシュボード** (これはセキュリティ ダッシュボードとも呼ばれます) <p> 脅威の検出、マルウェアの傾向、対象ユーザーの上位、送信および受信電子メール メッセージの詳細など|セキュリティ コンプライアンス センターで&の管理ダッシュボード **に移動** \> **します。**|[Defender for Office 365](view-reports-for-mdo.md)|
@@ -66,7 +66,7 @@ ms.locfileid: "53054505"
 |**監査ログ** <p> Microsoft 365 のアクティビティ、ユーザー、ファイルまたはフォルダーなどに関する情報|セキュリティ コンプライアンス センターで&調査監査ログ **&検索** \> **に移動します。**|[セキュリティ/コンプライアンス センターで監査ログを検索する](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**コンプライアンス レポート** <p> FedRAMP のレポート、ガバナンス、リスクとコンプライアンス レポート、ISO 情報セキュリティ管理レポート、Service Organization Controls の監査レポートと評価レポート|セキュリティ コンプライアンス センター&サービス アシュアランス **コンプライアンス レポート** \> **に移動します。**|[セキュリティ とコンプライアンスの&を計画Office 365](../../compliance/plan-for-security-and-compliance.md)|
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 Defender ポータル](../defender/overview-security-center.md)
 

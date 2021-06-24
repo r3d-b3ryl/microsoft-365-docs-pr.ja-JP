@@ -1,5 +1,5 @@
 ---
-title: セキュリティ コンプライアンス センター&アラート
+title: ポータル内のMicrosoft 365 Defender
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,18 +17,18 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Office 365 セキュリティ Office 365 コンプライアンス センターのアラート機能を使用して、高度なアラートの管理を含む&を表示および管理する方法について学習します。
+description: 詳細なアラートの管理など、Microsoft 365 Defenderポータルでアラート機能を使用してアラートを表示および管理する方法について学習します。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbc1bfbd1fc1f21035edf34ad743755b0f51018b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44009ac90dddf9a8f901fdcc5d46496e4bc78338
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205523"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108285"
 ---
-# <a name="alerts-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センター&アラート
+# <a name="alerts-in-the-microsoft-365-defender-portal"></a>ポータル内のMicrosoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,33 +36,19 @@ ms.locfileid: "51205523"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
-セキュリティ & コンプライアンス センターのアラート機能を使用して、組織のアラートを表示および管理します。詳細な通知は、組織の概要の一部としてMicrosoft Cloud App Security[します](/cloud-app-security/what-is-cloud-app-security)。
+Microsoft 365 Defender ポータルのアラート機能を使用して、組織のアラートを表示および管理します。詳細な通知は、組織の概要の一部としてMicrosoft Cloud App Security[します](/cloud-app-security/what-is-cloud-app-security)。
 
 ## <a name="how-to-get-to-the-alerts-features"></a>アラート機能を取得する方法
 
-アラートは、セキュリティ コンプライアンス センター&にあります。 ページにアクセスする方法を次に示します。
+アラートは、Microsoft 365 Defenderポータル ( ) に表示されます <https://security.microsoft.com> 。 ページにアクセスする方法を次に示します。
 
-### <a name="to-go-directly-to-the-security--compliance-center"></a>コンプライアンス センターのセキュリティ &移動する
-
-1. <https://protection.office.com> に移動します。
-
-2. 職場または学校のアカウントを使用してサインインします。
-
-3. 左側のウィンドウで、[アラート] **をクリック** してアラート機能を表示します。
-
-### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a>アプリ起動ツールを使用して&コンプライアンス センターに移動するには
-
-1. 職場または学校のアカウントを使用してサインインします。
-
-2. 左上隅にあるアプリ起動ツールをクリックし、[セキュリティとコンプライアンス] **&クリックします**。
-
-   アプリが見つからない場合は、アプリ起動ツールから、[**すべてのアプリ**] を選択して、利用できる Office 365 アプリのアルファベット順の一覧を表示します。そこから、特定のアプリを検索できます。
-
-3. 左側のウィンドウで、[アラート] **をクリック** してアラート機能を表示します。
+ポータルで **、[Microsoft 365 Defender]** に **移動します**。 または、[アラート] ページに直接移動 **するには** 、 を使用します <https://security.microsoft.com/alerts> 。
 
 ## <a name="alerts-features"></a>アラート機能
 
-次の表に、セキュリティ コンプライアンス センターの[アラート] で使用できるツール&示します。
+次の表に、ポータルの [アラート] で **使用できるツール** Microsoft 365 Defenderします。
+
+<br>
 
 ****
 

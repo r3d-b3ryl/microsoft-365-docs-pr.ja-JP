@@ -15,12 +15,12 @@ ms.date: 06/10/2021
 description: Microsoft Defender for Office 365 プラン 2 の自動調査と対応機能を使用して、侵害されたユーザー アカウントを検出して対処するプロセスをスピードアップする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cd84617230e774b92902ef3d11a365c1965ac814
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: fd1ad6f52114340153f3958441bfb9500db67215
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904142"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108587"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>調査と対応を自動化して、侵害されたユーザー アカウントに対処する
 
@@ -37,9 +37,7 @@ ms.locfileid: "52904142"
 侵害されたユーザー セキュリティ プレイブックを使用すると、組織のセキュリティ チームは次の操作を実行できます。
 
 - 侵害されたユーザー アカウントの検出を高速化します。
-
 - アカウントが侵害された場合に侵害の範囲を制限する。そして
-
 - 侵害されたユーザーに対して、より効果的かつ効率的に対応します。
 
 ## <a name="compromised-user-alerts"></a>侵害されたユーザー通知
@@ -67,21 +65,17 @@ ms.locfileid: "52904142"
 
 ### <a name="view-and-investigate-restricted-users"></a>制限付きユーザーの表示と調査
 
-制限付きユーザーの一覧に移動するためのいくつかのオプションがあります。 たとえば、セキュリティ コンプライアンス センター&、脅威管理の [制限付きユーザーの確認 \> **]** \> **に移動できます**。 次の手順では、アラート ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性があるさまざまな種類のアラートを確認するための良い方法です。
+制限付きユーザーの一覧に移動するためのいくつかのオプションがあります。 たとえば、ポータルの [Microsoft 365 Defender] に移動して、グループ&**ユーザー** \> **の確認** \> **を行います**。 次の手順では、アラート ダッシュボードを使用したナビゲーションについて説明します。これは、トリガーされた可能性があるさまざまな種類のアラートを確認するための良い方法です。
 
-1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。
+1. [インシデント] Microsoft 365 Defender ( <https://security.microsoft.com> ) を開き、[インシデント] **&アラートに移動** \> **します**。 または、[アラート] ページに直接移動するには、 **を** 使用します <https://security.microsoft.com/alerts> 。
 
-2. ナビゲーション ウィンドウで、[アラート ダッシュボード] **を** \> **選択します**。
+2. [アラート **] ページ** で、期間別に結果をフィルター処理し、[ユーザーが電子メールの送信を制限する] という名前 **のポリシーをフィルター処理します**。
 
-3. [その他 **の通知] ウィジェットで** 、[制限付きユーザー **] を選択します**。
+   ![制限付きユーザーに対してフィルター処理Microsoft 365 Defenderポータルの [アラート] ページ](../../media/m365-sc-alerts-page-with-restricted-user.png)
 
-   ![その他のアラート ウィジェット](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+3. 名前をクリックしてエントリを選択すると、メールの送信を制限されたユーザー ページが開き、詳細を確認できます。 [警告の管理 **]** ボタンの横にある [その他のオプション] アイコンをクリックし、[制限付きユーザーの詳細の表示] を選択して [制限付きユーザー] ページに移動し、制限付きユーザーを解放 ![ ](../../media/m365-cc-sc-more-actions-icon.png) [できます](removing-user-from-restricted-users-portal-after-spam.md)。  
 
-   これにより、制限付きユーザーの一覧が開きます。
-
-   ![ユーザーの制限付きOffice 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
-
-4. リストでユーザー アカウントを選択して詳細を表示し、制限付きユーザーを解放するなどの [アクションを実行します](removing-user-from-restricted-users-portal-after-spam.md)。
+   ![アラート センターからの電子メール の送信を制限されたユーザー ページ](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
 
 ### <a name="view-details-about-automated-investigations"></a>自動調査の詳細を表示する
 
@@ -89,7 +83,7 @@ ms.locfileid: "52904142"
 
 詳細については、「調査の詳細 [を表示する」を参照してください](air-view-investigation-results.md)。
 
-## <a name="keep-the-following-points-in-mind"></a>以下の点に気を付ける
+## <a name="keep-the-following-points-in-mind"></a>以下の点にご注意ください。
 
 - **アラートの上に滞在します**。 ご存知のように、妥協点が検出されなくなるほど、組織、顧客、パートナーに対する広範な影響とコストの可能性が大きくなります。 脅威を軽減するために、特にユーザーのアカウントが侵害された場合は、早期の検出と適切な対応が重要です。
 

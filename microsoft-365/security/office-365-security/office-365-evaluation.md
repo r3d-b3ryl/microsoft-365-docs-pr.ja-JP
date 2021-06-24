@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89562a5fd7c2d869f8a060e7ceda1c32a093c175
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083670"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108333"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender のセキュリティ評価Office 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "53083670"
 microsoft Defender for Office 365 をサポートするライセンスをまだ持ってない場合は、[無料の 30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)日間の評価を開始し、Microsoft 365 Defender ポータルの機能をテストできます <https://security.microsoft.com> 。 クイック セットアップを楽しめ、必要に応じて簡単にオフにできます。
 
 > [!NOTE]
-> Microsoft 365 Defender ポータル ( ) を使用している場合は、Office 365 評価用の Defender を開始できます。メール & コラボレーション ポリシー & ルール脅威ポリシー その他 セクション評価 <https://security.microsoft.com>  \>  \>  \>  \> **モード** です。
+> Microsoft 365 Defender ポータル ( ) を使用している場合は、ここで Office 365 評価用の Defender を開始できます。メール & コラボレーション ポリシー & <https://security.microsoft.com>  \> **Rules** \> **Threat Policies** \>  \> page Others section Evaluation mode .
 
 ## <a name="how-the-evaluation-works"></a>評価のしくみ
 

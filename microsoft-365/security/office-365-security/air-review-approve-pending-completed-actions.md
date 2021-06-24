@@ -19,12 +19,12 @@ description: Microsoft Defender for microsoft Defender for Office 365プラン 2
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 8fc01ab0dd5178032ea7b101f5361c25bb10bbea
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 987771616acfd2f2faf425e525505b320155388e
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028933"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108537"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>修復アクションを確認および管理Office 365
 
@@ -38,7 +38,6 @@ ms.locfileid: "53028933"
 
 これらの修復アクションは、セキュリティ運用チームが承認しない限り、実行しません。 保留中のアクションをできるだけ早く確認して承認し、自動化された調査がリアルタイムで完了することを推奨します。 場合によっては、送信されたアクションを再考できます。  アクションを実行する前に、検索&役割の一部である必要があります。
 
-
 ## <a name="approve-or-reject-pending-actions"></a>保留中のアクションを承認 (または拒否) する
 自動調査アクションを検索して実行するには、次の 4 つの方法があります。
 
@@ -48,22 +47,25 @@ ms.locfileid: "53028933"
 - [調査と修復の調査キュー](https://security.microsoft.com/airinvestigation)
 
 ## <a name="incident-queue"></a>インシデント キュー
-1. セキュリティ センターの[Microsoft 365サインイン](https://security.microsoft.com)します。
+
+1. ポータル ( ) Microsoft 365 Defender開 <https://security.microsoft.com> き、サインインします。
 2. ナビゲーション ウィンドウで、[インシデント] を選択 **し、[インシデント&通知>選択します**。
 3. インシデント名を選択して、概要ページを開きます。
 4. [証拠と **応答] タブを選択** します。
 5. リストからアイテムを選択します。 サイド ウィンドウが開きます。
 6. サイド ウィンドウで、承認または拒否のアクションを実行します。
 
-## <a name="investigation-queue"></a>調査キュー 
-1. セキュリティ センターの[Microsoft 365サインイン](https://security.microsoft.com)します。
-2. [アラート/インシデント] ページから移動します。 
-3. [調査] ページで、[保留中のアクション **] タブに移動** します。 
-4. リストからアイテムを選択します。 サイド ウィンドウが開きます。  
+## <a name="investigation-queue"></a>調査キュー
+
+1. ポータル ( ) Microsoft 365 Defender開 <https://security.microsoft.com> き、サインインします。
+2. [アラート/インシデント] ページから移動します。
+3. [調査] ページで、[保留中のアクション **] タブに移動** します。
+4. リストからアイテムを選択します。 サイド ウィンドウが開きます。
 5. サイド ウィンドウで、承認または拒否のアクションを実行します。
 
 ## <a name="action-center"></a>アクション センター
-1. セキュリティ センターの[Microsoft 365サインイン](https://security.microsoft.com)します。
+
+1. ポータル ( ) Microsoft 365 Defender開 <https://security.microsoft.com> き、サインインします。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [保留中 **] タブ** で、承認を待っているアクションの一覧を確認します。
    - [ **調査ページを開く]** を選択して、調査の詳細を表示します。
@@ -71,33 +73,37 @@ ms.locfileid: "53028933"
    - 保留中 **のアクション** が実行されるのを防ぐには、[拒否] を選択します。
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>調査と修復の調査キュー
-1. セキュリティ センターの[Microsoft 365サインイン](https://security.microsoft.com)します。
-2. 保留中の調査を開きます。 
+
+1. ポータル ( ) Microsoft 365 Defender開 <https://security.microsoft.com> き、サインインします。
+2. 保留中の調査を開きます。
 3. [調査] ページで、[保留中のアクション **] タブに移動** します。
-4. リストからアイテムを選択します。 サイド ウィンドウが開きます。  
+4. リストからアイテムを選択します。 サイド ウィンドウが開きます。
 5. サイド ウィンドウで、承認または拒否のアクションを実行します。
 
 ## <a name="change-or-undo-one-remediation-action"></a>1 つの修復アクションを変更または元に戻す
 
 送信されたアクションを再考するには、次の 2 つの方法があります。
-   - 統合アクション [センターを介して](https://security.microsoft.com/action-center)。
-   - しかし[、Officeアクション センター](https://security.microsoft.com/threatincidents)です。
-   
+
+- 統合アクション [センターを介して](https://security.microsoft.com/action-center)。
+- しかし[、Officeアクション センター](https://security.microsoft.com/threatincidents)です。
+
 ## <a name="change-or-undo-through-the-unified-action-center"></a>統合アクション センターで変更または元に戻す
+
 1. 統合アクション センター [に移動し、](https://security.microsoft.com/action-center) サインインします。
 2. [履歴 **] タブ** で、変更または元に戻すアクションを選択します。
-3. 画面の右側のウィンドウで、適切なアクション (受信トレイに移動、迷惑メールへの移動、削除済みアイテムへの移動、**soft delete"、またはハード削除) を選択 **します**。
+3. 画面の右側のウィンドウで、適切なアクション **(受信** トレイに移動、迷惑メールへの移動、削除済みアイテムへの移動、ソフト削除、またはハード削除) を選択 **します**。
 
- ## <a name="change-or-undo-through-the-office-action-center"></a>変更または元に戻す操作センター Office操作センター 
+## <a name="change-or-undo-through-the-office-action-center"></a>変更または元に戻す操作センター Office操作センター
+
 1. [アクション センター] [Officeに移動し](https://security.microsoft.com/threatincidents)、サインインします。
 2. 適切な修復を選択します。
-3. サイド ウィンドウで、メール送信エントリをクリックし、リストが読み込むのを待ちます。 
-4. 上部の [アクション] ボタンが有効なのを待ち、[アクション] ボタンを選択してアクションの種類を変更します。 
+3. サイド ウィンドウで、メール送信エントリをクリックし、リストが読み込むのを待ちます。
+4. 上部の [アクション] ボタンが有効なのを待ち、[アクション] ボタンを選択してアクションの種類を変更します。
 5. これにより、適切なアクションが作成されます。
 
 ## <a name="next-steps"></a>次の手順
 
-- [脅威エクスプローラーの使用](threat-explorer.md) 
+- [脅威エクスプローラーの使用](threat-explorer.md)
 - [管理者/手動アクション](remediate-malicious-email-delivered-office-365.md)
 - [自動調査および応答機能で誤検知/陰性を報告する方法](air-report-false-positives-negatives.md)
 

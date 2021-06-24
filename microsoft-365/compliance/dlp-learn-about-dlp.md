@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: データ損失防止ポリシーとツールを使用Microsoft 365機密情報を保護し、DLP ライフサイクルを通じてツアーを行う方法について説明します。
-ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9b449886e0856f7407fcd49b83192dd0c01474bd
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244614"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108261"
 ---
 # <a name="learn-about-data-loss-prevention"></a>データ損失防止について
 
@@ -56,14 +56,14 @@ DLP 監視対象のすべてのアクティビティは、既定で監査Microso
 
 DLP の実装は、通常、これらの主要なフェーズに従います。
 
-- [DLP の計画](#plan-for-dlp)
+- [DLP を計画する](#plan-for-dlp)
 - [DLP の準備](#prepare-for-dlp)
 - [実稼働環境でのポリシーの展開](#deploy-your-policies-in-production)
 
 
 <!--ADD DIAGRAM OF THE DLP LIFECYCLE WORK ON WITH MAS-->
 
-### <a name="plan-for-dlp"></a>DLP の計画
+### <a name="plan-for-dlp"></a>DLP を計画する
 
 Microsoft 365DLP の監視と保護は、ユーザーが毎日使用するアプリケーションにネイティブです。 これにより、ユーザーがデータ損失防止の考え方やプラクティスに慣れていなくても、組織の機密性の高いアイテムを危険なアクティビティから保護できます。 組織とユーザーがデータ損失防止の実践に新しい場合、DLP の導入にはビジネス プロセスの変更が必要になる場合があります。また、ユーザーにはカルチャの変化が生じます。 ただし、適切な計画、テスト、チューニングを行う場合、DLP ポリシーは機密アイテムを保護し、ビジネス プロセスの中断を最小限に抑えることができます。
 
@@ -121,7 +121,9 @@ DLP ポリシーは、保存中のデータ、使用されているデータ、�
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>コントロールを有効にしてポリシーを調整する
 
-ポリシーがすべての目標を満たしたら、有効にしてください。 引き続きポリシー アプリケーションの結果を監視し、必要に応じて調整します。 一般に、ポリシーは有効になってから約 1 時間後に有効になります。 <!--場所固有の詳細については、「SLA の LINK TO トピック」を参照してください。>
+ポリシーがすべての目標を満たしたら、有効にしてください。 引き続きポリシー アプリケーションの結果を監視し、必要に応じて調整します。 一般に、ポリシーは有効になってから約 1 時間後に有効になります。 
+
+<!--See, LINK TO topic for SLAs for location specific  details-->
 
 ## <a name="dlp-policy-configuration-overview"></a>DLP ポリシー構成の概要
 

@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、電子メール (EOP) で送信スパム ポリシーを表示、作成、変更、および削除するExchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9dadea740267225ff2df316b96ba7ccef92fe01e
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 97b429584371dbe49778163a7f1bbe6f36aea54c
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933133"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108417"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパム フィルターを構成する
 
@@ -50,7 +50,7 @@ EOP の送信スパム ポリシーの基本的な要素は次のとおりです
 - **送信スパム フィルター ポリシー**: 送信スパム フィルターの評決と通知オプションのアクションを指定します。
 - **送信スパム フィルター ルール**: 送信スパム フィルター ポリシーの優先度と受信者フィルター (ポリシーが適用されるユーザー) を指定します。
 
-これらの 2 つの要素の違いは、Defender ポータルで送信スパム ポリシーを管理するときにMicrosoft 365ではありません。
+これらの 2 つの要素の違いは、次のポータルで送信スパム ポリシーを管理するときにMicrosoft 365 Defenderではありません。
 
 - ポリシーを作成すると、両方に同じ名前を使用して、実際に送信スパム フィルター ルールと関連付けられた送信スパム フィルター ポリシーを同時に作成します。
 - ポリシーを変更すると、名前、優先度、有効または無効、および受信者フィルターに関連する設定によって、送信スパム フィルター ルールが変更されます。 その他の設定はすべて、関連付けられた送信スパム フィルター ポリシーを変更します。
@@ -81,17 +81,17 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 送信スパム ポリシーの推奨設定については、「EOP 送信スパム フィルター ポリシー [設定」を参照してください](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings)。
 
 - [メール送信制限]という名前の既定のアラートポリシーが超過し、疑わしいメール送信パターンが検出され、ユーザーが既にメールを送信し、送信スパムによる異常な送信メール アクティビティとブロックされたユーザーに関する **TenantAdmins** **(グローバル** 管理者) グループのメンバーに電子メール通知を送信できません。 [](../../compliance/alert-policies.md) 詳細については、「制限付きユーザー [のアラート設定を確認する」を参照してください](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 送信スパム ポリシーの通知オプションの代わりに、これらのアラート ポリシーを使用することをお勧めします。
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies"></a>Defender ポータルMicrosoft 365を使用して送信スパム ポリシーを作成する
+## <a name="use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies"></a>送信スパム Microsoft 365 Defenderを作成するには、このポータルを使用します。
 
 Microsoft 365 Defender ポータルでカスタム送信スパム ポリシーを作成すると、両方に同じ名前を使用して、スパム フィルター ルールと関連付けられたスパム フィルター ポリシーが同時に作成されます。
 
-1. Microsoft 365 Defender ポータルで、**[メールと共同作業]**、\>**[ポリシーとルール]**、\>**[脅威ポリシー]**、\>**[ポリシー** セクション]\> **[スパム対策]**.の順に移動します。
+1. このポータルMicrosoft 365 Defender、[メールの送信] &  [&の脅威ポリシー] ページの [スパム対策] \>  \>  \>  \> **セクションに移動します**。
 
 2. [スパム対策 **ポリシー] ページで、[** ポリシーの作成] アイコンをクリックし、ドロップダウン リストから [送信 ![ ] ](../../media/m365-cc-sc-create-icon.png) を選択します。 
 
@@ -134,7 +134,7 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
        - ユーザーという名前の **アクティビティ アラートは、** メールの送信を制限され、管理者に通知します (電子メールと [通知の表示 **] ページ** )。
        - ポリシーの送信スパム **の送信設定** によって送信者がブロックされた場合は、特定のユーザーに通知するで指定された受信者も通知されます。
        - ユーザーは、UTC 時間に基づいて、次の日までメッセージを送信できません。 管理者がこのブロックを上書きする方法はありません。
-     - ユーザーによる **メール** の送信を制限する: 電子メール通知が送信され、ユーザーが <https://security.microsoft.com/restrictedusers> Microsoft 365 Defender ポータルの制限付きユーザーに追加され、管理者によって制限付きユーザーから削除されるまで、ユーザーは電子メールを送信できません。管理者がリストからユーザーを削除した後、その日のユーザーは再び制限されません。 手順については、「迷惑メールの送信後に制限付きユーザー ポータルからユーザーを削除 [する」を参照してください](removing-user-from-restricted-users-portal-after-spam.md)。
+     - メールの送信を制限する **:** 電子メール通知が送信され、ユーザーがMicrosoft 365 Defender ポータルの制限付きユーザーに追加され、管理者によって制限付きユーザーから削除されるまで、ユーザーは電子メールを送信 <https://security.microsoft.com/restrictedusers> できません。管理者がリストからユーザーを削除した後、その日のユーザーは再び制限されません。 手順については、「迷惑メールの送信後に制限付きユーザー ポータルからユーザーを削除 [する」を参照してください](removing-user-from-restricted-users-portal-after-spam.md)。
      - **アクションなし、アラートのみ**: 電子メール通知が送信されます。
 
    - **転送ルール**: このセクションの設定を使用して、メールボックスから外部送信者へのExchange Online **メール** の自動転送を制御します。 詳細については、「Control automatic external email forwarding in Microsoft 365 」[を参照してください](external-email-forwarding.md)。
@@ -175,9 +175,9 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
 
 7. 表示された [確認]ページで、**[完了]** をクリックします。
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>Defender ポータルMicrosoft 365を使用して送信スパム ポリシーを表示する
+## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>送信スパム ポリシー Microsoft 365 Defenderを表示するには、このポータルを使用します。
 
-1. Microsoft 365 Defender ポータルで、**[メールと共同作業]**、\>**[ポリシーとルール]**、\>**[脅威ポリシー]**、\>**[ポリシー** セクション]\> **[スパム対策]**.の順に移動します。
+1. このポータルMicrosoft 365 Defender、[メールの送信] &  [&の脅威ポリシー] ページの [スパム対策] \>  \>  \>  \> **セクションに移動します**。
 
 2. **[スパム対策ポリシー]** ページで、以下のいずれかの値を探します。
    - Type **値は** 、 **ユーザー設定の送信スパム ポリシーです。**
@@ -192,15 +192,15 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
 
 3. 名前をクリックして送信スパム ポリシーを選択すると、ポリシー設定がフライアウトに表示されます。
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies"></a>送信スパム ポリシー Microsoft 365変更するには、Defender ポータルを使用します。
+## <a name="use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies"></a>送信スパム ポリシー Microsoft 365 Defender変更する場合は、このポータルを使用します。
 
-1. Microsoft 365 Defender ポータルで、**[メールと共同作業]**、\>**[ポリシーとルール]**、\>**[脅威ポリシー]**、\>**[ポリシー** セクション]\> **[スパム対策]**.の順に移動します。
+1. このポータルMicrosoft 365 Defender、[メールの送信] &  [&の脅威ポリシー] ページの [スパム対策] \>  \>  \>  \> **セクションに移動します**。
 
 2. [スパム **対策ポリシー] ページ** で、名前をクリックして一覧から送信スパム ポリシーを選択します。
    - [種類] 列の値が [カスタム送信スパム ポリシー] であるカスタム **ポリシーを作成しました**。
    - スパム対策送信ポリシー **(Default) という名前の既定のポリシー** です。
 
-3. 表示されるポリシーの詳細ポップアップで、各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 設定の詳細については、この記事の「Defender[](#use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies)ポータルMicrosoft 365を使用して送信スパム ポリシーを作成する」を参照してください。
+3. 表示されるポリシーの詳細ポップアップで、各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 設定の詳細については、この記事の「Microsoft 365 Defender[](#use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies)を使用して送信スパム ポリシーを作成する」を参照してください。
 
    既定の送信スパム ポリシーの場合、[適用対象] セクションは使用できません (ポリシーはすべてのユーザーに適用されます)、ポリシーの名前を変更できません。
 
@@ -210,7 +210,7 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
 
 既定の送信スパム ポリシーを無効にできない。
 
-1. Microsoft 365 Defender ポータルで、**[メールと共同作業]**、\>**[ポリシーとルール]**、\>**[脅威ポリシー]**、\>**[ポリシー** セクション]\> **[スパム対策]**.の順に移動します。
+1. このポータルMicrosoft 365 Defender、[メールの送信] &  [&の脅威ポリシー] ページの [スパム対策] \>  \>  \>  \> **セクションに移動します**。
 
 2. [スパム **対策ポリシー]** ページで、名前をクリックして、リストから[カスタム送信スパム ポリシーの種類] 値を持つポリシーを選択します。
 
@@ -232,10 +232,10 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
 
  **注意**:
 
-- Defender ポータルMicrosoft 365、送信スパム ポリシーを作成した後にのみ、その優先度を変更できます。 PowerShell では、スパム フィルター ルールの作成時に既定の優先度を上書きできます (この上書きが既存のルールの優先度に影響を与えることがあります)。
+- このポータルMicrosoft 365 Defender、送信スパム ポリシーを作成した後にのみ、その優先度を変更できます。 PowerShell では、スパム フィルター ルールの作成時に既定の優先度を上書きできます (この上書きが既存のルールの優先度に影響を与えることがあります)。
 - 送信スパム ポリシーは、表示順に処理されます (最初のポリシーの **優先度** は 0 です)。 既定の送信スパム ポリシーの優先度の値は **[最低**] で、変更は行ないます。
 
-1. Microsoft 365 Defender ポータルで、**[メールと共同作業]**、\>**[ポリシーとルール]**、\>**[脅威ポリシー]**、\>**[ポリシー** セクション]\> **[スパム対策]**.の順に移動します。
+1. このポータルMicrosoft 365 Defender、[メールの送信] &  [&の脅威ポリシー] ページの [スパム対策] \>  \>  \>  \> **セクションに移動します**。
 
 2. [スパム **対策ポリシー]** ページで、名前をクリックして、リストから[カスタム送信スパム ポリシーの種類] 値を持つポリシーを選択します。
 
@@ -248,11 +248,11 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
 
 4. 完了したら、ポリシーの詳細ポップアップで **[閉じる]** をクリックします。
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-outbound-spam-policies"></a>Defender ポータルMicrosoft 365使用して、カスタム送信スパム ポリシーを削除する
+## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-outbound-spam-policies"></a>カスタムの送信Microsoft 365 Defenderポリシーを削除するには、このポータルを使用します。
 
-Defender ポータルの Microsoft 365を使用してカスタム送信スパム ポリシーを削除すると、スパム フィルター ルールと対応するスパム フィルター ポリシーの両方が削除されます。 既定の送信スパム ポリシーを削除できない。
+Microsoft 365 Defenderポータルを使用してカスタム送信スパム ポリシーを削除すると、スパム フィルター ルールと対応するスパム フィルター ポリシーの両方が削除されます。 既定の送信スパム ポリシーを削除できない。
 
-1. Microsoft 365 Defender ポータルで、**[メールと共同作業]**、\>**[ポリシーとルール]**、\>**[脅威ポリシー]**、\>**[ポリシー** セクション]\> **[スパム対策]**.の順に移動します。
+1. このポータルMicrosoft 365 Defender、[メールの送信] &  [&の脅威ポリシー] ページの [スパム対策] \>  \>  \>  \> **セクションに移動します**。
 
 2. [スパム **対策ポリシー]** ページで、名前をクリックして、リストから[カスタム送信スパム ポリシーの種類] 値を持つポリシーを選択します。 表示されるポリシーの詳細ポップアウトの上部で、![[その他の操作] アイコン](../../media/m365-cc-sc-more-actions-icon.png)、**[その他の操作]** \>、![[ポリシーの削除] アイコン](../../media/m365-cc-sc-delete-icon.png)、**[ポリシーの削除]** の順にクリックします。
 
@@ -281,7 +281,7 @@ PowerShell で送信スパム ポリシーを作成するには、次の 2 つ�
    - ポリシーの作成後まで、Microsoft 365 Defender ポータルで使用できない PowerShell の新しい送信スパム フィルター ポリシーに対して、次の設定を構成できます。
      - 無効として新しいポリシーを作成 _します_ `$false` **(New-HostedOutboundSpamFilterRule コマンドレットで有効** )。
      -  _\<Number\>_ **New-HostedOutboundSpamFilterRule** コマンドレットの作成時のポリシーの優先度 (優先度) を設定します。
-   - PowerShell で作成した新しい送信スパム フィルター ポリシーは、ポリシーを送信スパム フィルター ルールに割り当てるまで、Microsoft 365 Defender ポータルには表示されません。
+   - PowerShell で作成した新しい送信スパム フィルター ポリシーは、ポリシーを送信スパム フィルター ルールに割り当てるまで、Microsoft 365 Defender ポータルに表示されません。
 
 #### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a>手順 1: PowerShell を使用して送信スパム フィルター ポリシーを作成する
 
@@ -387,7 +387,7 @@ Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 この記事の「手順 [1: PowerShell](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) を使用して送信スパム フィルター ポリシーを作成する」で説明したように、PowerShell でマルウェア フィルター ポリシーを変更する場合と同じ設定を使用できます。
 
 > [!NOTE]
-> 送信スパム フィルター ポリシーの名前を変更することはできません **(Set-HostedOutboundSpamFilterPolicy** コマンドレットには _Name_ パラメーターはありません)。 Defender ポータルで送信スパム ポリシーの名前を変更Microsoft 365、送信スパム フィルター ルールの名前を変更する _のみです_。
+> 送信スパム フィルター ポリシーの名前を変更することはできません **(Set-HostedOutboundSpamFilterPolicy** コマンドレットには _Name_ パラメーターはありません)。 Microsoft 365 Defender ポータルで送信スパム ポリシーの名前を変更する場合は、送信スパム フィルター ルールの名前を変更 _する_ のみです。
 
 送信スパム フィルター ポリシーを変更するには、次の構文を使用します。
 
@@ -494,7 +494,7 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 ## <a name="for-more-information"></a>詳細情報
 
-[制限されたユーザー ポータルからブロックされたユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)
+[制限付きユーザー ポータルからブロックされたユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)
 
 [送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)
 

@@ -18,12 +18,12 @@ description: メール内の悪意のあるファイルセーフ組織を保護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7220140c25ecf457b42514356e41aabdf5481bb
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: e516a16ff28c762e154fd908312df65ea48699bc
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054331"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108225"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender セーフの添付ファイル ポリシーをセットアップOffice 365
 
@@ -73,7 +73,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
   **注**:
 
   - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 添付ファイル ポリシーの推奨設定セーフ、添付ファイルの設定[セーフ参照してください](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)。
 
@@ -83,7 +83,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル ポリシーを作成すると、両方に同じ名前を使用して、安全な添付ファイル ルールと関連付けられた安全な添付ファイル ポリシーが同時に作成されます。
 
-1. このポータルMicrosoft 365 Defender、[メールの送信] & **[&** ポリシー] セクションの [添付ファイル] セーフ \>  \>  \>  \> **移動します**。
+1. このポータルMicrosoft 365 Defender、[電子メール グループ &ルールの脅威ポリシー&ポリシー] セクションの [添付ファイル] に \>  \>  \>  \> **セーフします**。
 
 2. [添付ファイル **セーフ] ページで**、[作成] ![ アイコン [作成] を ](../../media/m365-cc-sc-create-icon.png) **クリックします**。
 
@@ -129,13 +129,13 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 
 6. 表示された **[レビュー]** ページで、設定を確認します。 各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 または、**[戻る]** をクリックするか、ウィザードで特定のページを選択します。
 
-   完了したら、[送信] を **クリックします**。
+   完了したら、**[送信]** をクリックします。
 
 7. 表示された [確認]ページで、**[完了]** をクリックします。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>添付ファイル ポリシー Microsoft 365 Defenderを表示するには、セーフポータルを使用します。
 
-1. このポータルMicrosoft 365 Defender、[メールの送信] & **[&** ポリシー] セクションの [添付ファイル] セーフ \>  \>  \>  \> **移動します**。
+1. このポータルMicrosoft 365 Defender、[電子メール グループ &ルールの脅威ポリシー&ポリシー] セクションの [添付ファイル] に \>  \>  \>  \> **セーフします**。
 
 2. [添付 **セーフ] ページ** で、ポリシーの一覧に次のプロパティが表示されます。
    - **名前**
@@ -146,7 +146,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>添付ファイル ポリシー Microsoft 365 Defender変更するには、セーフポータルを使用します。
 
-1. このポータルMicrosoft 365 Defender、[メールの送信] & **[&** ポリシー] セクションの [添付ファイル] セーフ \>  \>  \>  \> **移動します**。
+1. このポータルMicrosoft 365 Defender、[電子メール グループ &ルールの脅威ポリシー&ポリシー] セクションの [添付ファイル] に \>  \>  \>  \> **セーフします**。
 
 2. [添付 **ファイルセーフ]** ページで、名前をクリックして一覧からポリシーを選択します。
 
@@ -156,7 +156,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>添付ファイル ポリシーのセーフまたは無効にする
 
-1. このポータルMicrosoft 365 Defender、[メールの送信] & **[&** ポリシー] セクションの [添付ファイル] セーフ \>  \>  \>  \> **移動します**。
+1. このポータルMicrosoft 365 Defender、[電子メール グループ &ルールの脅威ポリシー&ポリシー] セクションの [添付ファイル] に \>  \>  \>  \> **セーフします**。
 
 2. [添付 **ファイルセーフ]** ページで、名前をクリックして一覧からポリシーを選択します。
 
@@ -182,7 +182,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 
 ポリシーの優先度を変更するには、ポリシーのプロパティで **[優先度を上げる]** または **[優先度を下げる]** をクリックします (Microsoft 365 Defender ポータルの **[優先度]** の数値を直接変更することはできません)。 ポリシーの優先度を変更することは、複数のポリシーを所有している場合にのみ意味があります。
 
-1. このポータルMicrosoft 365 Defender、[メールの送信] & **[&** ポリシー] セクションの [添付ファイル] セーフ \>  \>  \>  \> **移動します**。
+1. このポータルMicrosoft 365 Defender、[電子メール グループ &ルールの脅威ポリシー&ポリシー] セクションの [添付ファイル] に \>  \>  \>  \> **セーフします**。
 
 2. [添付 **ファイルセーフ]** ページで、名前をクリックして一覧からポリシーを選択します。
 
@@ -197,7 +197,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ 添付ファイル 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>添付ファイル ポリシー Microsoft 365 Defender削除するには、セーフポータルを使用します。
 
-1. このポータルMicrosoft 365 Defender、[メールの送信] & **[&** ポリシー] セクションの [添付ファイル] セーフ \>  \>  \>  \> **移動します**。
+1. このポータルMicrosoft 365 Defender、[電子メール グループ &ルールの脅威ポリシー&ポリシー] セクションの [添付ファイル] に \>  \>  \>  \> **セーフします**。
 
 2. [添付 **セーフ] ページ** で、ポリシーの名前をクリックして、一覧からカスタム ポリシーを選択します。
 
@@ -439,7 +439,7 @@ Remove-SafeAttachmentRule -Identity "Marketing Department"
 
 添付ファイル ポリシーが正常に作成、変更、または削除されたことを確認するにはセーフ手順を実行します。
 
-- このポータルMicrosoft 365 Defender、[メールの送信] & **[&** ポリシー] セクションの [添付ファイル] セーフ \>  \>  \>  \> **移動します**。 ポリシー、その状態の値、および **優先度** の値の一覧を **確認** します。 詳細を表示するには、名前をクリックして一覧からポリシーを選択し、詳細を表示します。
+- このポータルMicrosoft 365 Defender、[電子メール グループ &ルールの脅威ポリシー&ポリシー] セクションの [添付ファイル] に \>  \>  \>  \> **セーフします**。 ポリシー、その状態の値、および **優先度** の値の一覧を **確認** します。 詳細を表示するには、名前をクリックして一覧からポリシーを選択し、詳細を表示します。
 
 - PowerShell Exchange Onlineまたは PowerShell Exchange Online Protectionで、ポリシーまたはルールの名前に置き換え、次のコマンドを実行し、 \<Name\> 設定を確認します。
 

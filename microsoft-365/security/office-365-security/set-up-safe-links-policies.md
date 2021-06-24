@@ -18,12 +18,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender for microsoft Defender の セーフ リンク ポリシーとグローバル セーフ リンクの設定を表示、作成、変更、および削除する方法をOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1e0257fd124a53b2191ad8025ce42dc13a2e23e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 8d42051d2ca4f26758cbe7334d427f3f93178f97
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096770"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108213"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender セーフのリンク ポリシーを設定Office 365
 
@@ -173,7 +173,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシ
 
 ### <a name="enable-or-disable-safe-links-policies"></a>リンク ポリシーを有効セーフ無効にする
 
-1. このポータルMicrosoft 365 Defender、[リンク] の [メール & グループ &ルールの脅威ポリシー] セクションセーフ \>  \>  \>  \> **移動します**。
+1. このポータルMicrosoft 365 Defender、[メール グループ グループ &**ルール** の脅威ポリシー] ページ& [ポリシー] セクションの [リンク] に \>  \>  \>  \> **移動セーフします**。
 
 2. [リンク **セーフ] ページ** で、名前をクリックして一覧からポリシーを選択します。
 
@@ -198,7 +198,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシ
 - このポータルMicrosoft 365 Defender、リンク ポリシーを作成した後にのみ、セーフポリシーの優先度を変更できます。 PowerShell では、安全なリンク ルールを作成するときに既定の優先度を上書きできます (既存のルールの優先度に影響を与える可能性があります)。
 - セーフリンク ポリシーは、表示順に処理されます (最初のポリシーの **優先度** の値は 0 です)。 優先順位と複数のポリシーを評価し適用する方法の詳細については、「[メール保護の優先順位](how-policies-and-protections-are-combined.md)」を参照してください。
 
-1. このポータルMicrosoft 365 Defender、[リンク] の [メール & グループ &ルールの脅威ポリシー] セクションセーフ \>  \>  \>  \> **移動します**。
+1. このポータルMicrosoft 365 Defender、[メール グループ グループ &**ルール** の脅威ポリシー] ページ& [ポリシー] セクションの [リンク] に \>  \>  \>  \> **移動セーフします**。
 
 2. [リンク **セーフ] ページ** で、名前をクリックして一覧からポリシーを選択します。
 
@@ -213,7 +213,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシ
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>リンク ポリシーをMicrosoft 365 Defenderするには、セーフ ポータルを使用します。
 
-1. このポータルMicrosoft 365 Defender、[リンク] の [メール & グループ &ルールの脅威ポリシー] セクションセーフ \>  \>  \>  \> **移動します**。
+1. このポータルMicrosoft 365 Defender、[メール グループ グループ &**ルール** の脅威ポリシー] ページ& [ポリシー] セクションの [リンク] に \>  \>  \>  \> **移動セーフします**。
 
 2. [リンク **セーフ] ページ** で、名前をクリックして一覧からポリシーを選択します。 表示されるポリシーの詳細ポップアウトの上部で、![[その他の操作] アイコン](../../media/m365-cc-sc-more-actions-icon.png)、**[その他の操作]** \>、![[ポリシーの削除] アイコン](../../media/m365-cc-sc-delete-icon.png)、**[ポリシーの削除]** の順にクリックします。
 
