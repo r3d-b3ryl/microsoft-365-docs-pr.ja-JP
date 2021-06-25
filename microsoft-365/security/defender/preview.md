@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender の機能をプレビューする
+title: プレビュー機能のMicrosoft 365 Defender
 description: Microsoft 365 セキュリティの新機能について学ぶ
 keywords: プレビュー、新規、m365 セキュリティ、セキュリティ、365、機能
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8ad5ffe2b175a8f7a42b2fad353fcde13a60cfec
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b852071c3fbfe12aac62e1d309fa130a4cd81e9c
+ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730524"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53125400"
 ---
-# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365Defender プレビュー機能
+# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defenderプレビュー機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,15 +37,15 @@ ms.locfileid: "52730524"
 **適用対象:**
 - Microsoft 365 Defender
 
-Defender Microsoft 365機能拡張と機能を含む更新が絶えず行なっています。
+新Microsoft 365 Defender機能を含むサービスが常に更新されています。
 
-Defender プレビュー リリースの新機能Microsoft 365、プレビュー エクスペリエンスをオンにして、今後の機能を最初に試してみてください。
+プレビュー リリースの新機能Microsoft 365 Defender、プレビュー エクスペリエンスをオンにして、今後の機能を最初に試してみてください。
 
-一般に利用可能な新機能の詳細については、「Defender の新機能」[をMicrosoft 365してください](whats-new.md)。
+一般に利用可能な新機能の詳細については、「新機能」を参照[Microsoft 365 Defender。](whats-new.md)
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 
-次のアカウント (Azure Azure Active Directory) AD割り当てられたアカウントは、Defender プレビュー機能Microsoft 365有効にできます。
+次のロール (Azure Azure Active Directory) AD割り当てられたアカウントは、プレビュー機能Microsoft 365 Defender有効にできます。
 
 - グローバル管理者
 - セキュリティ管理者
@@ -58,7 +58,7 @@ Defender プレビュー リリースの新機能Microsoft 365、プレビュー
 プレビュー機能設定をオンにして、今後の機能をいち早く試します。
 
 1. ナビゲーション ウィンドウで、**[設定]** を選びます。
-2. [Defender **Microsoft 365] を選択します**。
+2. [Microsoft 365 Defender]**を選択します**。
 3. **[プレビュー機能]** > **を選択し、プレビュー機能をオンにします**。 
 4. **[保存]** を選択します。
 
@@ -68,8 +68,9 @@ Defender プレビュー リリースの新機能Microsoft 365、プレビュー
 
 現在、次の機能と拡張機能がプレビューで利用できます:
 
-- **[ストリーミング API](../defender-endpoint/raw-data-export.md)** - Microsoft 365 Defender は、高度なハンティングを通じて使用可能なすべてのイベントをイベント ハブや Azure ストレージ アカウントにストリーミングできます。
-- **[Microsoft 365 Defender API](api-overview.md)** - Defender API のトップ レベルMicrosoft 365、共有インシデントテーブルと高度なハンティング テーブルに基づいてワークフローを自動化できます。 
+- **[脅威タグごとにレポートを表示](threat-analytics.md#view-reports-per-threat-tags)** する - 脅威タグは、特定の脅威カテゴリに焦点を当て、最も関連性の高いレポートを確認するのに役立ちます。
+- **[ストリーミング API](../defender-endpoint/raw-data-export.md)** - Microsoft 365 Defender高度なハンティングを通じて利用可能なすべてのイベントをイベント ハブや Azure ストレージ アカウントにストリーミングできます。
+- **[Microsoft 365 Defender API](api-overview.md)** - トップ レベルの Microsoft 365 Defender API を使用すると、共有インシデントテーブルと高度なハンティング テーブルに基づいてワークフローを自動化できます。 
 - **[高度な狩猟でアクションを](advanced-hunting-take-action.md)** 実行する - 高度な狩猟で見つけた脅威を迅速に含むか、侵害された資産 [に対処します](advanced-hunting-overview.md)。
 - **[ポータル内スキーマ参照](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - セキュリティ センターで高度な検索スキーマ テーブルに関する情報を直接取得します。 テーブルと列の説明に加えて、この参照には、サポートされているイベントの種類 ( `ActionType` 値) とサンプル クエリが含まれます。
 - **[DeviceFromIP() 関数](advanced-hunting-devicefromip-function.md)** - 特定の時間範囲で特定の IP アドレスまたはアドレスが割り当てられているデバイスに関する情報を取得します。
