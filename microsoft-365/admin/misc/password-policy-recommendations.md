@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: パスワード攻撃に対する組織のセキュリティを強化し、一般的なパスワードを禁止し、リスク ベースの多要素認証を有効にします。
-ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 6f79116b1188eaab1b843b2e3fa612c4ed01c488
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006927"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096626"
 ---
 # <a name="password-policy-recommendations"></a>パスワード ポリシーの推奨事項
 
@@ -58,7 +58,7 @@ Microsoft 365 パスワードの詳細については、以下を参照してく
 
 より安全なパスワード システムの最大の目的は、パスワードの多様性です。パスワードを推測しにくくするためのパスワード ポリシーが必要です。組織を可能な限り安全な状態に保つための推奨事項をいくつか以下に示します。
   
-- 8 桁の最小長要件を維持する (長ければよいとは限りません)
+- 8 桁の最小長要件を維持する
 
 - 文字構成の要件を求めない。たとえば、\*&amp;(^%$ などです。
 
@@ -132,6 +132,8 @@ Microsoft 365 パスワードの詳細については、以下を参照してく
 ## <a name="next-steps"></a>次の手順
 
 パスワードの管理についてさらに詳しい情報が必要な場合は、 以下でおすすめの記事をお読みください:
+
+- [パスワードは忘れて、これからはパスワードレス](https://www.microsoft.com/security/business/identity-access-management/passwordless-authentication)
 
 - [Microsoft パスワード ガイダンス](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
