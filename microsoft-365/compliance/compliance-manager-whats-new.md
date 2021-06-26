@@ -2,8 +2,8 @@
 title: Microsoft コンプライアンス マネージャーの新機能
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス管理の新機能と新機能を確認します。 更新された評価、新しい評価テンプレート、新しいアクションなどについて説明します。
-ms.openlocfilehash: fe5e8056bd771082436c3cd941cd6f4e602c11a9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52465468"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149024"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーの新機能
 
@@ -48,4 +48,4 @@ ms.locfileid: "52465468"
 
 ### <a name="active-and-inactive-templates"></a>アクティブなテンプレートと非アクティブなテンプレート
 
-各評価ページと評価テンプレート ページには、アクティブ化されたテンプレート カウンターがあります。 このカウンターは、ライセンス契約に従って使用している適格なテンプレートの数を示します。 テンプレート [の種類の表示: 詳細については、含まれているテンプレートとプレミアム、アクティブ、非](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) アクティブです。
+各評価ページと評価テンプレート ページには、アクティブ化されたテンプレート カウンターがあります。 このカウンターは、ライセンス契約に従って使用している適格なテンプレートの数を示します。 詳細 [については、「テンプレートの可用性とライセンス](compliance-manager-templates.md#template-availability-and-licensing) 」を参照してください。

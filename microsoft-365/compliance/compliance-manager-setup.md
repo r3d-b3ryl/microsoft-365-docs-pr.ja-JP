@@ -2,8 +2,8 @@
 title: Microsoft コンプライアンス マネージャーの使用を開始する
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーのユーザー アクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
-ms.translationtype: HT
+ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570559"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148904"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -322,7 +322,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 評価ページには、組織で設定したすべての[評価](compliance-manager-assessments.md)が一覧表示されます。 コンプライアンス スコアの分母は、追跡済みのすべての評価で決定されます。 より多くの評価を追加すると、改善のための処置ページに表示される改善のための処置の数が増え、コンプライアンス スコアの分母が大きくなります。
 
-ページの上部にある **テンプレートのアクティブ化** カウンターは、組織で使用可能なテンプレートの総数のうち、現在使用されているアクティブな評価テンプレートの数を示します。 詳細については、「[テンプレートの種類](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive)」を参照してください。
+ページの上部にある **テンプレートのアクティブ化** カウンターは、組織で使用可能なテンプレートの総数のうち、現在使用されているアクティブな評価テンプレートの数を示します。 詳細 [については、「テンプレートの可用性とライセンス](compliance-manager-templates.md#template-availability-and-licensing) 」を参照してください。
 
 評価ページでは、各評価に関する主要な情報がまとめられています。
 
@@ -357,7 +357,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 テンプレートとは、コンプライアンス マネージャーで評価を作成するフレームワークです。 評価テンプレート ページでは、テンプレートのリストと主要な詳細が表示されます。 このリストには、コンプライアンス マネージャーが提供するテンプレートのほか、組織が変更または作成したテンプレートも含まれます。 フィルターを適用して、認証、製品の範囲、国、業界、作成者に基づいてテンプレートを検索することができます。
 
-ページの上部にある **テンプレートのアクティブ化** カウンターは、組織で使用可能なテンプレートの総数のうち、現在使用されているアクティブな評価テンプレートの数を示します。 詳細については、「[テンプレートの種類](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive)」を参照してください。
+ページの上部にある **テンプレートのアクティブ化** カウンターは、組織で使用可能なテンプレートの総数のうち、現在使用されているアクティブな評価テンプレートの数を示します。 詳細 [については、「テンプレートの可用性とライセンス](compliance-manager-templates.md#template-availability-and-licensing) 」を参照してください。
 
 行からテンプレートを選択すると、テンプレートの詳細ページが表示されます。このページには、テンプレートの説明や、認証、範囲、制御の詳細についての詳細情報が含まれます。 このページでは、適切なボタンを選択して、評価の作成、テンプレート データのエクセルへのエクスポート、またはテンプレートの変更を行うことができます。
 

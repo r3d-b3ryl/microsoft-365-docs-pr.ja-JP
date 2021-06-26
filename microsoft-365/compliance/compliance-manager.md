@@ -2,8 +2,8 @@
 title: Microsoft コンプライアンス マネージャー
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager は、組織がリスク評価を簡素化および自動化するのに役立ち、リスクに対処するために推奨されるアクションを提案します。
-ms.openlocfilehash: 7eb8e0fdea26ca24453ca7071ab1282c686d5848
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc1919f63716dfa79274a5cf7016ef07f2f36f92
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244397"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148952"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャー
 
@@ -30,7 +30,7 @@ ms.locfileid: "52244397"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新機能: コンプライアンス マネージャーの GA リリース
 
-コンプライアンス マネージャーは、コンプライアンス センター内のエンドツーエンドのコンプライアンス管理ソリューションとして一Microsoft 365[されています](microsoft-365-compliance-center.md)。 このリリースでは、コンプライアンス マネージャーは Microsoft Service Trust Portal の以前の場所からの移行を完了します。 コンプライアンス マネージャーは、米国政府機関 (Community) (GCC) 中程度、GCC高、および国防総省 (DoD) のお客様にも利用できます。
+コンプライアンス マネージャーは、一般に利用できる (GA) のコンプライアンス管理ソリューションとして[、Microsoft 365 コンプライアンス センター。](microsoft-365-compliance-center.md) このリリースでは、コンプライアンス マネージャーは Microsoft Service Trust Portal の以前の場所からの移行を完了します。 コンプライアンス マネージャーは、米国政府機関 (Community) (GCC) 中程度、GCC高、および国防総省 (DoD) のお客様にも利用できます。
 
 コンプライアンス スコアのパブリック プレビューから始まったのは、強化されたコンプライアンス管理機能と使いやすさを備えた一元化されたツールに進化しました。  GA リリースでは、コンプライアンス 活動の拡大に役立つ、事前に構築された評価のコレクションが大きくなります。
 
@@ -45,7 +45,7 @@ ms.locfileid: "52244397"
 
 ## <a name="what-is-compliance-manager"></a>コンプライアンス マネージャーとは
 
-[Microsoft コンプライアンス マネージャー](https://compliance.microsoft.com/compliancemanager)は、Microsoft 365[](microsoft-365-compliance-center.md)コンプライアンス センターの機能であり、組織のコンプライアンス要件を簡単で便利に管理できます。 コンプライアンス マネージャーは、データ保護リスクのインベントリの取得から、制御の実装の複雑さの管理、規制と認定の最新の状態を確保すること、監査人への報告まで、コンプライアンスの取り組み全体を通じてお手伝いします。
+[Microsoft コンプライアンス マネージャー](https://compliance.microsoft.com/compliancemanager)は、組織[](microsoft-365-compliance-center.md)Microsoft 365 コンプライアンス センターのコンプライアンス要件を簡単に管理し、利便性を高め、管理するのに役立つ機能です。 コンプライアンス マネージャーは、データ保護リスクのインベントリの取得から、制御の実装の複雑さの管理、規制と認定の最新の状態を確保すること、監査人への報告まで、コンプライアンスの取り組み全体を通じてお手伝いします。
 
 コンプライアンス マネージャーは、次の機能を提供することで、コンプライアンスの簡素化とリスクの軽減に役立ちます。
 
@@ -59,13 +59,13 @@ ms.locfileid: "52244397"
 
 コンプライアンス マネージャー ダッシュボードには、現在のコンプライアンス スコアが表示され、注意が必要な情報が表示され、重要な改善アクションが示されます。 コンプライアンス マネージャー ダッシュボードの外観の例を次に示します。
 
-![コンプライアンス マネージャー - ダッシュボード](../media/compliance-manager-dashboard.png "コンプライアンス マネージャー ダッシュボード")
+![コンプライアンス マネージャー - ダッシュ ボード](../media/compliance-manager-dashboard.png "コンプライアンス マネージャーのダッシュ ボード")
 
 ## <a name="understanding-your-compliance-score"></a>コンプライアンス スコアについて
 
 コンプライアンス マネージャーは、規制、標準、またはポリシーに準拠するために実行される改善アクションを完了するためのポイントを与え、それらのポイントを全体的なコンプライアンス スコアに結合します。 各アクションは、関連する潜在的なリスクに応じてスコアに異なる影響を与えます。 コンプライアンス スコアは、コンプライアンスの全体的な姿勢を向上させるために、どのアクションに重点を置くのかの優先順位を付けるのに役立ちます。
 
-コンプライアンス マネージャーは、データ保護基準に基づいてMicrosoft 365スコアを提供します。 この基準は、データ保護と一般的なデータ ガバナンスの主要な規制と標準を含む一連のコントロールです。
+コンプライアンス マネージャーは、Microsoft 365 データ保護ベースラインに基づいて、初期スコアを提供します。 このベースラインは、データ保護と一般的なデータ ガバナンスに関する主要な規制と基準を含む一連のコントロールです。
 
 ##### <a name="learn-more"></a>詳細情報
 
@@ -123,7 +123,7 @@ ms.locfileid: "52244397"
 
 ### <a name="improvement-actions"></a>改善アクション
 
-改善アクションは、コンプライアンス活動を一元化するのに役立ちます。 各改善アクションは、データ保護の規制と標準に合わせて役立つ推奨ガイダンスを提供します。 改善アクションを組織内のユーザーに割り当て、実装とテストの作業を実行できます。 また、改善アクション内にドキュメント、メモ、およびレコードの状態の更新を保存できます。
+改善アクションは、コンプライアンス活動を一元化するのに役立ちます。 各改善アクションは、データ保護の規制と標準に合わせて役立つ推奨ガイダンスを提供します。 改善のための処置は、実装やテスト作業を行う組織内のユーザーに割り当てることができます。 また、改善のための処置の中にドキュメント、メモ、記録状態の更新を保存することができます。
 
 ##### <a name="learn-more"></a>詳細情報
 

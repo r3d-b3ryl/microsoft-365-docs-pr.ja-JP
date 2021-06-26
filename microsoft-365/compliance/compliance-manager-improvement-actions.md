@@ -2,8 +2,8 @@
 title: Microsoft コンプライアンス マネージャーでの改善アクションの割り当てと完了
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーでコントロールの実装とテストを実行する方法について説明します。 作業時間の割り当て、ドキュメントの保存、レポートのエクスポートを行います。
-ms.openlocfilehash: e761d8d4410f1c52bb79d4a225eec407f1fd6a6e
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: f2674e24ed38362c5c7563a574e0dba9c81f2584
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570386"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149036"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>コンプライアンス マネージャーで改善アクションを割り当て、完了する
 
@@ -114,8 +114,8 @@ ms.locfileid: "51570386"
 - **テストの状態**: 実装状態が "実装済み" または "代替実装" の場合に選択できます。
     - **評価されない** - アクションがテストされていない
     - **合格** - 評価者によって実装が確認されました
-    - **失敗した低リスク** - テストに失敗し、リスクが低い
-    - **中規模リスクの失敗** - テストに失敗し、中程度のリスク
+    - **失敗した低リスク** - 失敗したテスト、低リスク
+    - **失敗した中程度のリスク** - 失敗したテスト、中程度のリスク
     - **失敗した高リスク** - テストに失敗し、リスクが高い
     - **スコープ外** – アクションが評価の対象から外れ、スコアに貢献しない
 - **テスト日**: カレンダーポップアップを切り替え、日付を選択する

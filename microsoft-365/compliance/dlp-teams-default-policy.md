@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: このページの既定のデータ損失防止ポリシーについてMicrosoft Teams
-ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c6b7413fdd4017fe1211e804c00a2e9c0684468d
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114145"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149120"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Microsoft Teams の既定のデータ損失防止ポリシーについて学ぶ (プレビュー)
 
-[データ損失防止機能](dlp-learn-about-dlp.md)は、プライベート チャネル メッセージを含むMicrosoft Teamsチャネル メッセージを含む拡張されました。 このリリースの一環として、コンプライアンス センターに初めてお客様向け既定の DLP ポリシーを作成しました。
+[データ損失防止機能](dlp-learn-about-dlp.md)は、プライベート チャネル メッセージを含むMicrosoft Teamsチャネル メッセージを含む拡張されました。 このリリースの一環として、コンプライアンス センターに初めてお客様向Microsoft Teams DLP ポリシーを作成しました。
 
 ## <a name="applies-to"></a>適用対象
 
@@ -41,7 +41,7 @@ ms.locfileid: "52114145"
 
 ## <a name="what-does-the-default-policy-do"></a>既定のポリシーは何をしますか?
 
-既定の DLP ポリシーは、組織に内部および外部で共有されるクレジット カード番号を追跡します。 このポリシーは、テナントのすべてのユーザーに対して既定でオンになっています。 エンド ユーザーのポリシー ヒントは生成されませんが、Alert イベントを生成し、管理者 (ポリシーに追加) への重大度の低い電子メールもトリガーします。 管理者は、コンプライアンス センターにログインして、アクティビティを表示し、ポリシーの詳細を編集できます。
+既定の DLP ポリシーは、Teams外部で共有されているクレジット カード番号を追跡します。 このポリシーは、テナントのすべてのユーザーに対して既定でオンになっています。 エンド ユーザーのポリシー ヒントは生成されませんが、Alert イベントを生成し、管理者 (ポリシーに追加) への重大度の低い電子メールもトリガーします。 管理者は、コンプライアンス センターにログインして、アクティビティを表示し、ポリシーの詳細を編集できます。
 
 管理者は、コンプライアンス センターの [データ損失防止ポリシー] [ページ>](https://compliance.microsoft.com/compliancesettings) ポリシーを表示できます。
 

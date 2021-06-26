@@ -2,8 +2,8 @@
 title: コンプライアンス スコアの計算
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Microsoft コンプライアンス マネージャーがリスクへの対処と、コンプライアンスに対する方針の改善のために実行するアクションに基づいて個人用スコアを計算する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
-ms.translationtype: HT
+ms.openlocfilehash: 4e1e3f4b90b0a5e83a1e068cd30f76b3a8c7bb22
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052115"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149168"
 ---
 # <a name="compliance-score-calculation"></a>コンプライアンス スコアの計算
 

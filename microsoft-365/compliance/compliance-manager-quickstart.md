@@ -2,8 +2,8 @@
 title: Microsoft コンプライアンス マネージャーのクイック スタート ガイド
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス マネージャーのクイック スタート ガイドを使用して、コンプライアンス マネージャーの理解、セットアップ、および使用に関するジャーニーを支援します。
-ms.openlocfilehash: bb40fe0ace2f4b751e24d77f46dc1fc509eb42f4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906029"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149048"
 ---
 # <a name="compliance-manager-quickstart"></a>コンプライアンスマネージャー用クイックスタート
 
@@ -31,7 +31,7 @@ ms.locfileid: "50906029"
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>最初の訪問: コンプライアンス マネージャーについて知る
 
-コンプライアンス マネージャーは、コンプライアンス センターの Microsoft 365にあります https://compliance.microsoft.com 。 コンプライアンス マネージャーの使用を開始する前[](compliance-manager-setup.md#set-user-permissions-and-assign-roles)に、組織のグローバル管理者がユーザーのアクセス許可を設定し、役割を割り当てる必要があります。
+コンプライアンス マネージャーは、次のMicrosoft 365 コンプライアンス センターに表示されます https://compliance.microsoft.com 。 コンプライアンス マネージャーの使用を開始する前[](compliance-manager-setup.md#set-user-permissions-and-assign-roles)に、組織のグローバル管理者がユーザーのアクセス許可を設定し、役割を割り当てる必要があります。
 
 コンプライアンス マネージャーに初めてアクセスすると、組織のコンプライアンス スコアが表示されます。 コンプライアンス マネージャーは、データ保護基準に対してMicrosoft 365環境を既に評価しています。 コンプライアンス マネージャーを理解し始める最善の方法は、表示される機能、重要な要素、ダッシュボードのカスタマイズ方法を理解する方法です。
 
@@ -39,7 +39,7 @@ ms.locfileid: "50906029"
 
 - [コンプライアンス スコアを理解する](compliance-manager.md#understanding-your-compliance-score)
 - [主要な要素の概要: コントロール、評価、テンプレート、および改善アクション](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-- [コンプライアンス マネージャー ダッシュボードについて](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
+- [コンプライアンス マネージャー ダッシュ ボードを理解する](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [ダッシュボード ビューをフィルター処理する](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [改善アクションの詳細](compliance-manager-setup.md#improvement-actions-page)
 - [評価の理解](compliance-manager.md#assessments)
@@ -63,8 +63,8 @@ ms.locfileid: "50906029"
 
 また、改善アクションのすべてまたはサブセットの自動テストを設定できます。 コンプライアンス マネージャーの高度な機能を理解するには、以下のリンクを参照してください。
 
-- [独自のコントロールと改善アクションを追加してコンプライアンス マネージャーの評価を拡張する](compliance-manager-assessments.md#extend-a-pre-built-assessment)
-- [独自のカスタム評価を作成する](compliance-manager-assessments.md#create-your-own-custom-assessment)
+- [独自のコントロールと改善アクションを追加してコンプライアンス マネージャー テンプレートを拡張する](compliance-manager-templates.md#extend-an-assessment-template)
+- [独自のカスタム テンプレートを作成する](compliance-manager-templates.md#create-an-assessment-template)
 - [コントロールとアクションを追加または削除する既存のテンプレートを変更する](compliance-manager-templates.md#modify-a-template)
 - [改善アクションの自動テストをセットアップする](compliance-manager-setup.md#set-up-automated-testing)
-- [改善アクションを別のユーザーに再割り当てする](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
+- [改善のための処置を別のユーザーに再び割り当てる](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

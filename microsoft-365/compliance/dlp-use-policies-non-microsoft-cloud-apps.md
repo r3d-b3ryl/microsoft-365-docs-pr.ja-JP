@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 以外のクラウド アプリで dlp ポリシーを使用する方法について説明します。
-ms.openlocfilehash: d4c5170cab01b1ca22701b13c7afbf4f2e0ba7da
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ca522b5accbd2c08e80b0ce63871179ff64bbcc8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114135"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149156"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する (プレビュー)
 
@@ -80,6 +80,8 @@ DLP ポリシーの場所を選択する場合は、その場所 **Microsoft Clo
 DLP ポリシーでルールを作成する場合は、Microsoft 以外のクラウド アプリのアクションを選択できます。 サード パーティ製アプリを制限するには、[サードパーティ 製アプリの **制限] を選択します**。
 
 ![サード パーティ製アプリの制限](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
+
+>[メモ]Microsoft 以外のアプリに適用される DLP ポリシーは、Microsoft Cloud App Security。 Microsoft 以外のアプリの DLP ポリシーが作成されると、同じポリシーが自動的に作成Microsoft Cloud App Security。
 
 DLP ポリシーの作成と構成の詳細については、「テストの作成と DLP ポリシー [の調整」を参照してください](./create-test-tune-dlp-policy.md?view=o365-worldwide)。
 

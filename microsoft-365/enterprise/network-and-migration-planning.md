@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: この記事には、ネットワークの計画、テスト、および移行に関する情報へのリンクが含Office 365。
-ms.openlocfilehash: 99bcc1bd0447b192860fc0bcc67fc18d87c2d5fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aed8bacd4dc08aa6d77ad0c530e721ac9d383bf5
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923590"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149108"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 のネットワークと移行の計画
 
@@ -103,8 +103,6 @@ Microsoft Cloud Networking for Microsoft 365およびサービス向けネット
 - [Office 365 サービスでの IPv6 サポート](ipv6-support.md)
     
 - [Office 365 ネットワーク接続の原則](./microsoft-365-network-connectivity-principles.md)
-    
-- [Office 365ネットワークに関するよく寄せられる質問 (FAQ)](office-365-video-networking-faq.md)
     
 - [Office 365 サービスに接続するネットワーク デバイスの計画](plan-for-network-devices.md)
     
