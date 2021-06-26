@@ -10,20 +10,20 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Microsoft Viva Topics でトピックの表示を管理する方法について説明します。
-ms.openlocfilehash: cd6a712687a63c3d131ee678c6c408f516c7b529
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 07679b2de668ba5e0c9fdf206310233ce7af84a4
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107683"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137753"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Microsoft Viva Topics でのトピックの表示を管理する
 
-トピックのハイライト、トピック カード、トピック センターを表示できる一連のユーザーを管理するには、Microsoft 365[を使用します](https://admin.microsoft.com)。 これらのタスクを実行するには、グローバル管理者SharePoint管理者である必要があります。
+トピックのハイライト、トピック カード、トピック センターを表示できるユーザーは、このページで管理[Microsoft 365 管理センター。](https://admin.microsoft.com) これらのタスクを実行するには、グローバル管理者または管理者SharePointグループ管理者である必要があります。
 
-## <a name="to-access-topics-management-settings"></a>トピックの管理設定にアクセスするには、次の方法を実行します。
+## <a name="to-access-topics-management-settings"></a>トピック管理設定にアクセスするには:
 
-1. 管理センターでMicrosoft 365をクリックし、[組織 **設定]****をクリックします**。
+1. [組織] Microsoft 365 管理センター、[組織の **設定]****の順にクリックします**。
 2. [サービス] **タブで** 、[トピック エクスペリエンス] **をクリックします**。
 
     ![Connectを知る](../media/admin-org-knowledge-options-completed.png) 

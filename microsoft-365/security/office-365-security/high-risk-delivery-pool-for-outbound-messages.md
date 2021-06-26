@@ -17,12 +17,12 @@ ms.collection:
 description: 配信プールを使用して、データ センター内の電子メール サーバーの評判を保護するMicrosoft 365します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 85f200cf226a050762db4ea37255f71241d1f98c
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599913"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137720"
 ---
 # <a name="outbound-delivery-pools"></a>送信方向の配信のプール
 
@@ -61,3 +61,24 @@ NDRs の急増の原因としては、次のようなものがあります。
 - 不正なメール サーバー。
 
 これらの問題はすべて、サービスによって処理されるNDRsの数が急激に増加する可能性があります。 多くの場合、これらのNDRsは、他の電子メール サーバーやサービス _[(backscatter](backscatter-messages-and-eop.md)_ とも呼ばれる) へのスパムのように見える。
+
+
+### <a name="relay-pool"></a>リレー プール
+
+特定のシナリオで Microsoft 365 経由で転送または中継されるメッセージは、宛先が実際の送信者として Microsoft 365 を考慮しないので、特別なリレー プールを使用して送信されます。 自動転送や電子メールの自動転送やメールの転送に関する正当で無効なシナリオがMicrosoft 365。 リスクの高い配信プールと同様に、中継メールには別の IP アドレス プールが使用されます。 このアドレス プールは頻繁に変更される可能性があります。また、このアドレス プールは公開された SPF レコードの一部Microsoft 365。
+
+Microsoft 365、転送されたメッセージを自信を持って配信できるよう、元の送信者が正当なメッセージを提供することを確認する必要があります。
+
+転送/中継されたメッセージは、リレー プールの使用を避けるために、次のいずれかの条件を満たす必要があります。
+
+- 送信送信者は、受け入 [れ可能なドメイン内にいます](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+- SPF は、メッセージが送信される際にMicrosoft 365。
+- 送信者ドメインの DKIM は、メッセージが送信される際にMicrosoft 365。
+ 
+送信サーバー IP (中継プールは 40.95.0.0/16 の範囲になります) を見て、または送信サーバー名 (名前に "rly" が含む) を見て、リレー プールを介してメッセージが送信されたことを確認できます。
+
+送信者を認証できる場合は、送信者書き換えスキーム (SRS) を使用して、転送されたメッセージが信頼できるソースからのメッセージである受信者の電子メール システムが知るのを支援します。 送信側ドメインが Office 365 の[Sender Rewriting Scheme (SRS)](/office365/troubleshoot/antispam/sender-rewriting-scheme)で認証に合格する方法と、その方法について詳しく説明します。
+
+DKIM が動作するには、ドメインの送信に DKIM を有効にしてください。 たとえば、fabrikam.com は組織の contoso.com ドメインで定義されます。 メッセージの送信者が sender@fabrikam.com 場合は、DKIM を有効にする必要 fabrikam.com。 「DKIM を使用してカスタム ドメインから送信された送信メールを検証する」で有効にする [方法について説明します](use-dkim-to-validate-outbound-email.md)。
+
+カスタム ドメインを追加するには、「ドメインを追加する」の手順に[従Microsoft 365。](../../admin/setup/add-domain.md)
