@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: afcb82789168999f5f061ca0f86ad3c07b54846d
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108237"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137765"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -203,7 +203,7 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
    >
    > 許可されたドメイン一覧にドメインを追加する前に慎重に検討してください。 詳細については、「[EOP での信頼できる差出人リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。
    >
-   > [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)や一般的なドメイン (microsoft.com や office.com など) は、決して、許可するドメインのリストに追加しないでください。 これらのドメインがスパム対策フィルター処理を回避できた場合は、攻撃者がメールを簡単に組織内に送信できるようになります。
+   > [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)や一般的なドメイン (microsoft.com や office.com など) は、決して、許可するドメインのリストに追加しないでください。 これらのドメインがスパム対策フィルター処理をバイパスすることを許可されている場合、攻撃者はこれらの信頼できるドメインを偽装するメッセージを組織に簡単に送信できます。
    >
    > ドメインをブロックされたドメイン一覧に追加して手動でドメインを受信拒否にすることは危険ではありませんが、管理作業の負荷が増大する可能性があります。 詳細については、「[EOP での受信拒否リストの作成](create-block-sender-lists-in-office-365.md)」を参照してください。
    >
