@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex に関するリソースの検索方法について説明します。
-ms.openlocfilehash: 0daad53e1f6a84f0399c3bfcfb48b92db547f64b
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: a3bd14c379425573ee7ad57604cc4cbb706741b8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657623"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149012"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
@@ -56,6 +56,7 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Microsoft
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
 |SharePoint Syntex の使用計画を開始する方法について説明します。 |[SharePoint Syntex の導入: 使用の開始](./adoption-getstarted.md)| 
+|組織で SharePoint Syntex を使用する方法に関するアイデアを提供するシナリオの例を参照してください |[Microsoft SharePoint Syntex のシナリオとユース ケース](./adoption-scenarios.md)| 
 |SharePoint Syntex を使用してドキュメント プロセスを自動化する方法について説明します |[Microsoft 365 ソリューションを使用して契約を管理する](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定

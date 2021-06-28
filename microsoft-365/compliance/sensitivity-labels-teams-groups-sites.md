@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 2ffc0350dd61a0064ce2e9891b18a6769a437d2e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 844391ee20d2c8e8b94261659b18de0690dee119
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096758"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149192"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -141,6 +141,8 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
 すべてのアプリが認証コンテクストをサポートするわけではありません。サポートされていないアプリを使用しているユーザーが、認証コンテキストを構成済みのサイトにアクセスすると、アクセス拒否のメッセージが表示されるか、認証を求められるものの拒否される問題が発生します。現在、認証コンテクストをサポートするアプリは以下のとおりです。
 
 - Office for the Web (Web 用 Office を含む)
+
+- Windows および macOS 用の Microsoft Teams (Teams Web アプリを除く)
 
 - Microsoft Planner
 
