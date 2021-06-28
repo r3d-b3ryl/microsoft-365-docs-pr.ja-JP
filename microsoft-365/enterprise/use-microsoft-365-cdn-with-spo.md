@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: オンライン アセットの配信をOffice 365 Content Delivery Network (CDN) を使用する方法SharePointします。
-ms.openlocfilehash: 6819f627d3590cd2739b36cb1bc303f197d6aaa5
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: e6cce93be0e8d893d68ae8bcdb15fde325a2cb59
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570407"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169558"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -899,7 +899,7 @@ spo cdn set --type Public --enabled false
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> 一般に、URL を直接、ページ内のアセットにハードコードCDN。 ただし、必要に応じて、パブリック オリジンのアセットの URL を手動で作成できます。 詳細については[、「Hardcoding CDNの URL」を参照してください](use-microsoft-365-cdn-with-spo.md)。
+> 一般に、URL を直接、ページ内のアセットにハードコードCDN。 ただし、必要に応じて、パブリック オリジンのアセットの URL を手動で作成できます。 詳細については[、「Hardcoding CDNの URL」を参照してください](use-microsoft-365-cdn-with-spo.md#constructing-cdn-urls-for-public-assets)。
 
 CDN からアセットが提供されているのを確認する方法については、「CDN でアセットが[](use-microsoft-365-cdn-with-spo.md#CDNConfirm)提供されているのを確認する方法」を参照してください。「Office 365 CDN のトラブルシューティング」を[参照してください](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)。
 
@@ -976,7 +976,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 重要な点は、SharePoint Online がプライベートオリジンのアセットに対するアイテム レベルのアクセス許可をサポートしていない点に注意してください。 たとえば、場所にあるファイルの場合、ユーザーは次の条件に従って `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` ファイルに効果的にアクセスできます。
 
-|User  |権限  |有効なアクセス  |
+|ユーザー  |アクセス許可  |有効なアクセス  |
 |---------|---------|---------|
 |ユーザー 1     |フォルダー 1 へのアクセス権を持つ         |サーバーからimage1.jpgアクセスCDN         |
 |ユーザー 2     |folder1 にアクセスできない         |サーバーからimage1.jpgにアクセスCDN         |

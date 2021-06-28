@@ -1,5 +1,5 @@
 ---
-title: Windows 10およびOffice 365展開ラボ キット
+title: Windows 10 と Office 365 展開ラボ キット
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3f9899726838caca678542e17206dae038c39a3d
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770675"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169570"
 ---
-# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10およびOffice 365展開ラボ キット
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 と Office 365 展開ラボ キット
 
 このWindows 10およびOffice 365展開ラボ キットは、展開とテストを実行しているデスクトップの展開と管理を計画、テスト、検証するのに役立Windows 10 Enterprise Microsoft 365 Apps for enterprise。 このキットのラボでは、Microsoft Endpoint Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows オートパイロットなどWindowsを使用します。
 
@@ -48,16 +48,18 @@ ms.locfileid: "52770675"
 
   - Microsoft 365 E5
   - Microsoft 365 Apps for enterprise
-  - Office 365E5 with Enterprise Mobility + Security (EMS)
+  - Office 365 E5 Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>ステップ バイ ステップ ラボ
 
 詳細なラボのガイドにより、複数の展開および管理シナリオを体験できます。 最新バージョンの Intune と Configuration Manager 用にラボは更新されました。 
 
 ### <a name="plan-and-prepare-infrastructure"></a>インフラストラクチャの計画と準備 
+
 - Desktop Analytics 
 - クラウド管理ゲートウェイ &クラウド配布ポイント 
-- テナントの接続、共同管理、およびワークロードの切り替え 
+- 新機能 テナントの接続と共同管理
+- 新機能 エンドポイント分析 
 - リモート アクセス (VPN) 
 
 ### <a name="prepare-configuration"></a>構成の準備   
@@ -91,6 +93,7 @@ ms.locfileid: "52770675"
 - Enterpriseを使用した管理展開Microsoft Intune  
 - LOB の展開と管理とMicrosoft Intune
 - 展開Microsoft Teams
+- 新機能 割り当てフィルター  
 
 ### <a name="deploy-windows-virtual-desktop"></a>仮想Windowsを展開する  
 
