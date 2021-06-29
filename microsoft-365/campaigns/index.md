@@ -25,20 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 小さな企業、独立開業、政治キャンペーンなどを含む中小企業向けの Microsoft 365 Business Premium セキュリティと共同作業に関する推奨事項。
-ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 34f36a86167ebba2ad80cc0046184b3c1997f845
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245030"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177467"
 ---
-<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>中小企業およびキャンペーン向けの Microsoft 365
-===========================
+# <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>中小企業およびキャンペーン向けの Microsoft 365
 
 Microsoft 365 Business Premium を使用している場合、このライブラリのガイダンスは、セキュリティを設定して安全に共同作業を開始するための最も簡単な方法です。 現代の社会において、データと通信を安全に保つことは、とりわけ医療および法務実務、政治キャンペーン、および他の多くの小規模ビジネスの分野において重要な事項です。 このソリューションでは、お客様とお客様のデータを保護するための一連の推奨事項を提供しています。 このライブラリには、ビジネスの種類にかかわらず、推奨される環境をセットアップして使用するためのヘルプが用意されています。
 
 
-![Microsoft 365 Business Premium は、生産性ツール、共同作業ツール、ファイル ストレージ、メール、デバイス、ID を保護します](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business Premium は、生産性ツール、共同作業ツール、ファイル ストレージ、メール、デバイス、ID を保護します](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
 
 この構成には、ビジネスを保護するための生産性、共同作業、ファイル ストレージ、メール、デバイス、および ID に関する以下のガイダンスが含まれています。
 
@@ -50,8 +49,7 @@ Microsoft 365 Business Premium を使用している場合、このライブラ�
 |ファイルを安全に保存して共有する | Microsoft Teams、OneDrive、SharePoint、Microsoft Stream からファイルやビデオを共有し、機密データを保護します。| [ファイルやビデオを共有する](share-files-and-videos.md) |
 |管理された Windows 10 デバイス |管理されたデバイスを主要なスタッフに提供し、これらのデバイスを保護します。 | [管理されたデバイスをセットアップする](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
 
-<a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の推奨セキュリティ構成
-------------------------------------
+## <a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の推奨セキュリティ構成
 
 この Microsoft 365 Business Premium の推奨される安全な構成は、お客様に以下のサービスを提供します。
 
@@ -71,8 +69,7 @@ Microsoft 365 Business Premium を使用している場合、このライブラ�
 
 含まれる機能の詳細については、[[Microsoft 365 Business Premium]](https://www.microsoft.com/microsoft-365/business)を参照してください。
 
-<a name="get-started"></a>作業の開始
---------------------------
+## <a name="get-started"></a>作業の開始
 
 以下の手順に従って開始しましょう。
 
@@ -80,8 +77,7 @@ Microsoft 365 Business Premium を使用している場合、このライブラ�
 - 各種ビジネスの場合:「[ユーザーが Microsoft 365 を使用する方法について説明](m365-campaigns-users.md)」
 - 各種ビジネスの場合:「[Set up Microsoft 365 (Microsoft 365 のセットアップ)](microsoft-365-campaigns-setup-overview.md)」
 
-<a name="solutions-for-your-business"></a>ビジネス向けのソリューション
---------------------------
+## <a name="solutions-for-your-business"></a>ビジネス向けのソリューション
 
 セキュリティで保護された Microsoft 365 環境をセットアップした後は、次のソリューションを使用して作業できます。
 
