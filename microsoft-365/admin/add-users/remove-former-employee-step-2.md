@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 元従業員のメールボックスのコンテンツを保存する方法について説明します。
-ms.openlocfilehash: d73d7005d2ccea429f66c5b2564220424665439f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd24145b6b5162a03dee0338cc0820e5af271ddd
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244227"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177491"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>手順 2 - 元従業員のメールボックスの内容を保存する
 
@@ -45,4 +45,4 @@ ms.locfileid: "52244227"
 
     **OR**
 
-2. 元の従業員の電子メール アドレスを web アプリのバージョンOutlookし、データを .pst ファイルにエクスポートします。 必要に応じて、別のメール アカウントにデータをインポートすることができます。 チェックアウト 手順[6 - 別の従業員にデータとOneDriveアクセスOutlookします](remove-former-employee-step-6.md)。
+2. 以前の従業員の電子メール アドレスをデスクトップ上の Outlookのバージョンに追加し、データを .pst ファイルにエクスポートします。 必要に応じて、別のメール アカウントにデータをインポートすることができます。 チェックアウト 手順[6 - 別の従業員にデータとOneDriveアクセスOutlookします](remove-former-employee-step-6.md)。

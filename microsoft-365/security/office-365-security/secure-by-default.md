@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: ''
+ms.date: 06/28/2021
 audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 description: セキュリティ保護 (EOP) の既定の設定Exchange Online Protection詳細
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: c737647202e82af0fc217c0eadb3e2573d13a9b1
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861529"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177647"
 ---
 # <a name="secure-by-default-in-office-365"></a>既定ではセキュリティで保護Office 365
 
@@ -75,7 +75,7 @@ Microsoft は既定で顧客のセキュリティを維持したいと考えて�
 ## <a name="exceptions"></a>例外
 
 > [!NOTE]
-> 2021 年 7 月には、既定でセキュリティで保護されたメール フロー Exchange (トランスポート ルールとも呼ばれる) に拡張されます。 メール フロー ルールを使用して、サード パーティのフィッシング シミュレーションやセキュリティ操作メールボックスへのフィルター処理されていない配信を許可する場合、最終的には、これらのルールを排除し、[](configure-advanced-delivery.md)機能が利用可能なときに高度な配信ポリシーの使用に切り替える必要があります。
+> 2021 年 8 月には、既定でセキュリティで保護されたメール フロー Exchange (トランスポート ルールとも呼ばれる) に拡張されます。 メール フロー ルールを使用して、サード パーティのフィッシング シミュレーションやセキュリティ操作メールボックスへのフィルター処理されていない配信を許可する場合、最終的には、これらのルールを排除し、[](configure-advanced-delivery.md)機能が利用可能なときに高度な配信ポリシーの使用に切り替える必要があります。
 
 信頼度の高いフィッシング メッセージがフィルター処理をバイパスできる唯一のオーバーライドは、メール フロー ルールです。 メール フロー ルールを使用してフィルター処理をバイパスするには、「メール フロー ルールを使用してメッセージに [SCL を設定する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
 

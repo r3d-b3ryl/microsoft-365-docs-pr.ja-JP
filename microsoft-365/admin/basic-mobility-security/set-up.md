@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: デバイスをリモートでワイプするなどのアクションを実行して、ユーザーのモバイル デバイスをセキュリティで保護および管理するための基本モビリティとセキュリティを設定します。
-ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f1cfa6cdc8d799ba62c687408cb12a4ba453f313
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634294"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177275"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの設定
 
 Microsoft 365 用の組み込みの Basic Mobility and Security は、iPhone、iPad、Android、携帯電話などのユーザーのモバイル デバイスをセキュリティで保護および管理Windowsします。 デバイスのセキュリティ ポリシーを作成および管理したり、リモートでデバイスをワイプしたり、詳細なデバイス レポートを参照できます。
 
-不明な点がある場合は、 一般的な質問に対処するためのよく寄せられる質問については、「Basic Mobility and Security に関するよく寄せられる質問 [(FAQ)」を参照してください](frequently-asked-questions.md)。 委任された管理者アカウントを使用して Basic Mobility and Security を管理できないことに注意してください。 詳細については、「パートナー: [委任された管理を提供する」を参照してください](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e)。 
+不明な点がある場合は、 一般的な質問に対処するためのよく寄せられる質問については、「Basic Mobility and Security に関するよく寄せられる質問 [(FAQ)」を参照してください](frequently-asked-questions.yml)。 委任された管理者アカウントを使用して Basic Mobility and Security を管理できないことに注意してください。 詳細については、「パートナー: [委任された管理を提供する」を参照してください](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e)。 
 
 デバイス管理は、セキュリティ & コンプライアンス センターの一部なので、Basic Mobility and Security セットアップを開始するには、そこに移動する必要があります。
 
@@ -49,7 +49,7 @@ Microsoft 365 用の組み込みの Basic Mobility and Security は、iPhone、i
 
 カスタム ドメインを Microsoft 365 に関連付けなかったり、Windows デバイスを管理していない場合は、このセクションを省略できます。 それ以外の場合は、DNS ホストでドメインの DNS レコードを追加する必要があります。 レコードを既に追加している場合は、Microsoft 365を使用してドメインを設定する一環として、すべて設定されます。 レコードを追加すると、カスタム ドメインを使用する電子メール アドレスを使用して Windows デバイスにサインインする組織内の Microsoft 365 ユーザーが、Basic Mobility and Security に登録するためにリダイレクトされます。
 
-レコードのセットアップに関するヘルプが必要ですか? ドメイン レジストラーを検索し、レジストラー名を選択して、「ドメインに接続するための DNS レコードの追加」のリストで DNS レコードを作成するための詳細なヘルプに [移動します](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。 これらの手順を使用して、「Azure を使用せずに登録を簡略化する」[でWindows CNAME レコードを](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)作成AD プレミアム。
+レコードのセットアップに関するヘルプが必要ですか? ドメイン レジストラーを検索し、レジストラー名を選択して、「ドメインに接続するための DNS レコードの追加」のリストで DNS レコードを作成するための詳細なヘルプに [移動します](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。 これらの手順を使用して、「登録を簡単にする」で説明されている CNAME[レコードWindows作成Azure AD Premium。](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)
 
 2 つの CNAME レコードを追加したら、セキュリティ & コンプライアンス センターに戻り、[データ損失防止デバイスの管理] に移動して次の手順  >     を完了します。
 

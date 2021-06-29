@@ -1,6 +1,6 @@
 ---
 title: デバイス検出の構成
-description: 基本または標準の検出を使用して Microsoft 365 Defender でデバイスの検出を構成する方法について説明します。
+description: 基本または標準の検出を使用して、Microsoft 365 Defender検出を構成する方法について説明します。
 keywords: 基本、標準、エンドポイント検出の構成、デバイスの検出
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0d722b4f4bef5b4d178edc5f2142c887690d4c63
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: e1efeff77657e04223b21d639a0a09287f3707cc
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765253"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177587"
 ---
 # <a name="configure-device-discovery"></a>デバイス検出の構成
 
@@ -101,7 +101,24 @@ ms.locfileid: "51765253"
 6. 変更を行う必要があります。 
 
 
+## <a name="explore-devices-in-the-network"></a>ネットワーク内のデバイスを探索する
 
+次の高度な検索クエリを使用して、ネットワーク リストで説明されている各ネットワーク名に関するコンテキストを取得できます。 クエリには、過去 7 日以内に特定のネットワークに接続されたオンボード デバイスすべてが一覧表示されます。
+
+
+
+```kusto
+DeviceNetworkInfo
+| where Timestamp > ago(7d)
+| summarize arg_max(Timestamp, *) by DeviceId
+| where ConnectedNetworks  != ""
+| extend ConnectedNetworksExp = parse_json(ConnectedNetworks)
+| mv-expand bagexpansion = array ConnectedNetworks=ConnectedNetworksExp
+| extend NetworkName = tostring(ConnectedNetworks ["Name"]), Description = tostring(ConnectedNetworks ["Description"]), NetworkCategory = tostring(ConnectedNetworks ["Category"])
+| where NetworkName == "<your network name here>"
+
+
+```
 
 ## <a name="see-also"></a>関連項目
 - [デバイス検出の概要](device-discovery.md)

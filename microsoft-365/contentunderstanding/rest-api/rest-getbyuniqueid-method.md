@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST APIを使用して、SharePoint Syntex ドキュメント理解モデルに関する情報を取得または更新します。
-ms.openlocfilehash: aa97e0fde57c6d5200b437a8f9c7187c0980cc5b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 306bcd894b6339575f8c91ac3c4fb89f2033f3bc
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904312"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177107"
 ---
 # <a name="getbyuniqueid"></a>GetByUniqueId
 
@@ -25,13 +25,13 @@ SharePoint Syntex ドキュメント理解モデルに関する情報を取得�
 ## <a name="http-request"></a>HTTP 要求
 
 ```HTTP
-GET /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
+GET /_api/machinelearning/models/getbyuniqueid('{modelUniqueId}') HTTP/1.1
 ```
 
 この同じ方法をモデルの削除にも使用できます。 
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
+DELETE /_api/machinelearning/models/getbyuniqueid('{modelUniqueId}') HTTP/1.1
 ```
 ## <a name="uri-parameters"></a>URI パラメーター
 
@@ -51,7 +51,7 @@ GET には要求本文は必要ありません。
 
 ## <a name="responses"></a>応答
 
-| 名前   | 型  | 説明|
+| 名前   | 種類  | 説明|
 |--------|-------|------------|
 |200 OK| |成功|
 
@@ -64,12 +64,12 @@ GET には要求本文は必要ありません。
 #### <a name="sample-request"></a>要求のサンプル
 
 ```HTTP
-GET /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}') HTTP/1.1
+GET /_api/machinelearning/models/getbyuniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 
 #### <a name="sample-response"></a>応答のサンプル
 
-**Status code:** 204
+**Status code:** 200
 
 ```HTTP
 {
@@ -107,9 +107,9 @@ GET /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa
 #### <a name="sample-request"></a>要求のサンプル
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}') HTTP/1.1
+DELETE /_api/machinelearning/models/getbyuniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 
 ## <a name="see-also"></a>関連項目
 
-[Syntex ドキュメント理解モデル REST API](syntex-model-rest-api.md)
+[Syntex 文書理解モデル REST API](syntex-model-rest-api.md)

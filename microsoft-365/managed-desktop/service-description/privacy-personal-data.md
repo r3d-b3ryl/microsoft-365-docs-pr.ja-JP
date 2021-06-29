@@ -12,140 +12,75 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861685"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177479"
 ---
-# <a name="privacy-and-personal-data"></a>プライバシーと個人データ
+# <a name="overview"></a>概要
 
-ユーザーは、ユーザーが管理するデバイスでデータを受信、送信、およびMicrosoft マネージド デスクトップ。 データのプライバシーが保護され、期待と一致する方法でのみ使用されるという信頼を得るのです。 この記事では、Microsoft マネージド デスクトップデータを収集、保存、保持、プロセス、セキュリティ保護、共有、監査、およびエクスポートする方法について説明します。 また、管理者が個人データを表示、修正、削除する方法も学習します。
+Microsoft マネージド デスクトップは、従業員の Windows デバイスの展開と更新を維持するように設計されたエンタープライズ クラウドのお客様向け IT-as-a-Service (ITaaS) サービスです。 IT サービスの管理と運用、セキュリティとインシデント対応の監視、ユーザー サポートの提供も行います。 このドキュメントでは、データ プラットフォームに関するその他の詳細と、データ プラットフォームのプライバシー Microsoft マネージド デスクトップ。
 
-Microsoft マネージド デスクトップは、プロファイリング、広告、またはマーケティングの目的でサービスを提供する一部として収集された個人データを使用しません。
+## <a name="microsoft-managed-desktop-data-sources-and-purpose"></a>Microsoft マネージド デスクトップデータ ソースと目的
 
-## <a name="data-collection-of-microsoft-managed-desktop"></a>データコレクションのMicrosoft マネージド デスクトップ
+Microsoft マネージド デスクトップ顧客にサービスを提供し、さまざまなソースからのデータを使用して、お客様の登録済みデバイスを適切に管理します。 Azure Active Directory、Microsoft Intune、Microsoft Windows 10、Microsoft Defender for Endpoint など、これらのソースは、管理するデバイスの包括的なMicrosoft マネージド デスクトップ提供します。 また、このサービスでは、次のMicrosoft サービスを使用Microsoft マネージド デスクトップ ITaaS 機能を提供できます。
 
-ユーザーが企業のデバイスを Microsoft マネージド デスクトップに登録すると、データ収集は技術層上で処理され、WindowsおよびMicrosoft Intune。 これらのソースは、Microsoft マネージド デスクトップ のデバイス名など、ユーザーのデバイスに関する個人データを収集し、Microsoft マネージド デスクトップ エクスペリエンスで管理および提供するデバイスを識別できます。
+- [Microsoft Windows 10 Enterprise](/windows/windows-10/) - デバイスのセットアップ エクスペリエンスの管理、他のサービスへの接続の管理、IT プロの運用サポートを行います。
+- [Windowsビジネス向け更新](/windows/deployment/update/waas-manage-updates-wufb)プログラム - Windows 10 Enterprise診断データを使用して、更新プログラムに関する追加情報Windows 10します。 
+- [Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview) – デバイスの管理とデータのセキュリティ保護を行います。
+  - [Microsoft Azure Active Directory](/azure/active-directory/) - すべてのユーザー アカウントの認証と識別を行います。 
+  - [Microsoft Intune](/mem/intune/) – デバイス構成、デバイス管理、アプリケーション管理を配布します。
+  - [Endpoint Analytics](/mem/analytics/overview) – デバイスとアプリの使用状況に関する分析的な分析情報を提供します。
+  - [Windows自動パイロット –](/microsoft-365/windows/windows-autopilot)デバイスのプロビジョニングと展開に使用します。
+  - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/) – デバイス のセキュリティ監視やセキュリティ インテリジェンス データなどのセキュリティ サービスを提供します。
+- [Microsoft マネージド デスクトップ](https://endpoint.microsoft.com/#home)– サービスの実行中に顧客が提供したデータ、またはサービスによって生成されたデータ。
+- [Microsoft 365企業向けアプリの管理](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?rtc=1)を行Microsoft 365 Apps。
 
-Microsoft マネージド デスクトップサービスを提供するためにデータを収集しません (IT 管理者の連絡先情報[を除く](#it-admin-contact-information))。 代わりに、Microsoft マネージド デスクトップ、データ ソースなどの他のソースが既に収集WindowsデータMicrosoft Intune再利用します。 Microsoft マネージド デスクトップこれらのサービスが登録済みデバイスから収集するデータを使用します。
+## <a name="microsoft-managed-desktop-data-process-and-storage"></a>Microsoft マネージド デスクトップのプロセスとストレージ
 
-- Windowsによって管理されるデバイスからの診断データMicrosoft マネージド デスクトップ、Microsoft の診断データ ストアにWindows送信されます。
-- Microsoft マネージド デスクトップは、[登録済みデバイスの](/learn/modules/introduction-to-modern-management-in-microsoft-365/)管理に最新の管理を使用します。 "モダン管理" の一環として、デバイスはテナントの管理に登録する必要Azure Active Directory。
-- 高度に最適化されたセキュリティで保護された構成を登録済みデバイスに配布するために、Microsoft マネージド デスクトップをMicrosoft Intune。
-- Microsoft マネージド デスクトップは、Microsoft Defender Advanced Thread Protection のセキュリティ インテリジェンス データを、そのサービスを使用する顧客に使用します。
-
-## <a name="data-storage-and-sources-in-microsoft-managed-desktop"></a>データストレージとソースのMicrosoft マネージド デスクトップ
-
-データMicrosoft マネージド デスクトップ取得した後、そのデータのサービス、ストレージ、および処理を提供する必要があります。
-
-### <a name="storing-data-storage-location-and-data-retention"></a>データ、保存場所、およびデータ保持の保存
-
-Microsoft マネージド デスクトップは、次の Microsoft ストレージ サービスの 1 つ以上にデータを格納します。
-
-- Azure SQL
-- Azure ストレージ
-- Dynamics 365
-
-Microsoft マネージド デスクトップデータは米国に保存されます。 個人データは、Microsoft Defender for Endpoint によって収集Microsoft マネージド デスクトップデバイスのアラート データを除き、Microsoft マネージド デスクトップによって最大 3 Microsoft マネージド デスクトップ0 日間保持されます。 実際のアラート データ (個人データを含む可能性があります) は 180 日間保存されます。 個人データが削除されたアラート データは、最大 2 年間保存されます。 Microsoft マネージド デスクトップ は、一般データ保護規則 (GDPR) およびカリフォルニア州消費者プライバシー法 (CCPA) に準拠して、警告データに格納されている個人データに対するデータ主体の権利を尊重します。
-
-### <a name="staff-location"></a>スタッフの場所
-
-運用Microsoft マネージド デスクトップおよびセキュリティ運用チームは、米国とインドに位置しています。
-
-## <a name="data-usage-of-microsoft-managed-desktop"></a>データの使用状況Microsoft マネージド デスクトップ
-
-Microsoft マネージド デスクトップは、次のデータを使用します。
+Microsoft マネージド デスクトップは、複数の Microsoft 製品およびサービスのデータに依存して、エンタープライズのお客様にサービスを提供します。 登録済みデバイスの保護と維持の目標を達成するために、これらのサービスからデータを処理し、Microsoft マネージド デスクトップ。 データを処理する際には、オンライン サービス条項および Microsoft プライバシーに関する声明で参照されている、お客様が提供する文書化された指示に従います。 データを処理する場合、オンライン サービス条項および Microsoft プライバシーに関する声明[](https://www.microsoft.com/licensing/product-licensing/products)で参照されている、お客様が提供する文書化された指示[に従います](https://privacy.microsoft.com/privacystatement)。 Microsoft マネージド デスクトップには、適切な機密性、セキュリティ、回復性の確保が含まれます。 Microsoft マネージド デスクトップ、個人を特定できるデータを適切に処理するために、追加のプライバシーとセキュリティ対策を採用しています。 
 
 
-| データ ソース |ユーザーと一緒にMicrosoft マネージド デスクトップ  |
-|---------|---------|
-|Azure Active Directoryデータ     | テナント管理者用に作成されたレポートで使用されます。このレポートは、管理者ポータルMicrosoft マネージド デスクトップ使用できます。        |
-|Intune データ     | テナント管理者用に作成されたレポートで使用されます。このレポートは、管理者ポータルMicrosoft マネージド デスクトップ使用できます。        |
-|Microsoft Defender for Endpoint     |  ユーザーのセキュリティ 運用センター (SOC) によって登録Microsoft マネージド デスクトップセキュリティの脅威に対処するために使用されます。  |
-|Windows診断データ     |管理対象デバイスの更新状態を確認し、it-as-a-Service (ITaaS) Microsoft マネージド デスクトップ提供および改善するために使用されます。         |
-|管理者連絡先データ     | テナント管理者Microsoft マネージド デスクトップに使用されます。        |
+## <a name="microsoft-managed-desktop-data-storage-and-staff-location"></a>Microsoft マネージド デスクトップストレージとスタッフの場所
 
+Microsoft マネージド デスクトップデータは、米国の Azure データ センターに格納されます。 サービスの運用を維持するにはMicrosoft マネージド デスクトップその他のサービスによって取得される個人データが必要です。 Microsoft マネージド デスクトップ からデバイスが削除された場合、Microsoft Defender for Endpoint によって収集されたアラート データを除き、最大 30 日間、セキュリティのために 180 日間保存される個人データを保持します。 データ保持の詳細については、「データの保持、削除、およびデータの破棄」を参照[Microsoft 365。](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview)
 
-### <a name="entities-processed-by-microsoft-managed-desktop"></a>ユーザーが処理するエンティティMicrosoft マネージド デスクトップ
+Microsoft マネージド デスクトップエンジニアリング運用チームとセキュリティ運用チームは、米国とインドに位置しています。 
 
-Microsoft マネージド デスクトップを処理して、サービスを提供します。
+## <a name="microsoft-windows-10-diagnostic-data"></a>Microsoft Windows 10診断データ
 
-- デバイス データ
-- デバイス セキュリティ設定
-- デバイス オペレーティング システムとハードウェア
-- デバイスの正常性に関する集約された情報
-- デバイス診断情報
-- テナント データ
-- Azure Active Directoryリソース
-- ポリシーと構成データ
-- Microsoft Defender for Endpoint メタデータとアラート データ
-- Windows診断データ
-- 製品とサービスの使用状況データ
+Microsoft マネージド デスクトップは、Windows 10[診断](/windows/privacy/windows-diagnostic-data)データを使用して、セキュリティWindows最新の状態に保ち、問題のトラブルシューティングを行い、製品の改善を行います。 拡張診断データの設定には、Microsoft マネージド デスクトップに登録されているデバイスとその設定、機能、およびデバイスの正常性に関する詳細情報が含まれています。 拡張診断データを選択すると、必要な診断データを含むデータが収集されます。 診断[データの設定とWindowsの](/windows/privacy/changes-to-windows-diagnostic-data-collection)詳細については、「診断データコレクションの変更Windows 10変更」を参照してください。
 
-### <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
+診断データの用語は、将来のバージョンのバージョンで変更Windows。 Microsoft マネージド デスクトップは、サービスに必要なデータのみを処理するためにコミットされます。 これは、診断レベルが **Optional** に変わることを意味しますが、Microsoft マネージド デスクトップ は、サービスに必要な診断データ収集を微調整するための限られた診断ポリシーを実装します。 詳細については、「診断データ収集[の変更点Windows」を参照してください](/windows/privacy/changes-to-windows-diagnostic-data-collection)。
 
-Microsoft マネージド デスクトップ で使用される ID データは、Office 365 や Azure などの Microsoft オンライン サービスを購読するときに組織が提供するアドレスに基づいて、Azure Active Directory によって地理的な場所に格納されます。 詳細[についてはMicrosoft Azureデータセンター](http://azuredatacentermap.azurewebsites.net/)を表示するマップについては、「Microsoft Azure- 顧客データはどこにAzure Active Directory。
+Microsoft マネージド デスクトップ、アプリケーション、デバイスの信頼性、パフォーマンス情報など、登録済みデバイスから発生する Windows 10 オプションの診断データからのシステム レベルのデータのみを処理および保存します。 Microsoft マネージド デスクトップ、チャットやブラウザーの履歴、音声、テキスト、音声などの顧客の個人データを処理および保存する必要があります。 
 
-Azure がデータ ストレージに使用する地域の詳細については[、「Azure Active Directory-データの場所」を参照してください](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)。
+Microsoft Windows 10 の診断データコレクションの詳細については、「Microsoft Privacy Statement」の「個人データの保存と処理」セクションを参照してください。 [](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule)
 
-### <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-windows-update-for-business"></a>Microsoft Windowsビジネス向け更新プログラム
+Microsoft Windows Update for Business は、更新プログラムのWindowsの状態とエラーを分析するために、ユーザー診断からのデータを使用します。 Microsoft マネージド デスクトップデータを活用し、このデータを使用して問題の軽減と解決を行い、登録済みのすべてのデバイスが定義済みの更新のケイデンスに基づいて最新の情報に更新されます。
 
-Intune データは、ヨーロッパ北 (アイルランド) やヨーロッパ西部 (オランダ) など、いくつかの異なる地域に格納できます。 IT 管理者がテナント アカウントを作成し、Intune サービスに最初に登録するときにデータが保存される国を選択します。 Intune で使用されるデータセンターの場所の一覧については[、「Microsoft Intune-顧客データはどこに?」を参照してください](http://intunedatacentermap.azurewebsites.net/)。 Intune によるデータストレージと使用の詳細については、「Intune での [データ収集」を参照してください](/intune/privacy-data-collect)。
+## <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
+Microsoft マネージド デスクトップ で使用されるデータの識別は、Azure Active Directory (Azure AD) によって、企業向け Microsoft Apps や Azure などの Microsoft オンライン サービスを購読する際に組織が提供する場所に基づいて地理的な場所に格納されます。 Microsoft マネージド デスクトップ で使用されるデータの識別は、企業向け Microsoft Apps や Azure などの Microsoft オンライン サービスを購読する際に組織が提供する場所に基づいて、Azure AD によって地理的な場所に格納されます。 Azure データの場所AD詳細については、「Azure Active Directory [- データの場所」を参照してください。](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
-### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
+## <a name="microsoft-intune"></a>Microsoft Intune
+Microsoft Intuneおよびサービスをサポートするために、データを収集、処理Microsoft マネージド デスクトップ共有します。 Intune [で収集されるデータの詳細については、「Intune](/mem/intune/protect/privacy-data-collect) でのデータ収集」を参照してください。 
 
-Microsoft Defender for Endpoint データは、いくつかの異なる地域に格納できます。 このため、Defender for Endpoint は[、Microsoft Defender for](http://intunedatacentermap.azurewebsites.net/)Endpoint - Data storage locations で述べたように、欧州連合、英国、および米国の Microsoft Azure データセンターで動作します。 Defender for Endpoint によるデータストレージと使用の詳細については、「Microsoft Defender for Endpoint が収集する [データとは」を参照してください。](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+データの場所の詳細Microsoft Intune、顧客データの保存場所[Microsoft 365を参照してください](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)。 Intune は、管理者が顧客データに対して行った保存場所の選択を尊重します。
 
-### <a name="windows-10"></a>Windows 10
+## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
+Microsoft Defender for Endpoint は、管理、追跡、およびレポートの目的で、Microsoft マネージド デスクトップデバイスの情報を収集および保存します。 収集される情報には、ファイル データ (ファイル名、サイズ、ハッシュなど)、プロセス データ (実行中のプロセス、ハッシュ)、レジストリ データ、ネットワーク接続データ、デバイスの詳細 (デバイス識別子、デバイス名、オペレーティング システムのバージョンなど) が含まれます。 [Microsoft Defender for Endpoint のデータ](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect)収集とストレージの場所の詳細については、「Microsoft Defender for Endpoint data storage and privacy」を参照してください。 
 
-Microsoft プライバシーに関する声明に記載されている通り [、「Microsoft](https://privacy.microsoft.com/privacystatement)が収集した個人データは、お客様の地域、米国、および Microsoft その関連会社、子会社、またはサービス プロバイダーが施設を運営する他の国に保存および処理される場合があります。 [...]通常、プライマリ ストレージの場所は、顧客の地域または米国内で、多くの場合、別の地域のデータセンターへのバックアップを使用します。 記憶域の場所は、効率的に動作し、パフォーマンスを向上させるために、および障害や他の問題が発生した場合にデータを保護するために冗長性を作成するために選択されます。 このプライバシーに関する声明に基いて収集したデータが、この声明の規定と、データがどこに置かれる場合でも適用される法律の要件に従って処理されるのを確認するための手順を実行します。
+## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise 
+Microsoft 365 Apps for enterpriseは、Microsoft マネージド デスクトップ Microsoft マネージド デスクトップ によって管理される定義済みの更新チャネルに基づいて、これらのアプリが最新バージョンで最新のバージョンに更新されるのを確認するために、Microsoft マネージド デスクトップ とデータを収集および共有します。 Microsoft [Defender for Endpoint のデータストレージとプライバシーを参照](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect)して、Microsoft 365 Appsのデータ収集と保存場所の詳細について説明します。
 
-Microsoft プライバシー ステートメントの診断データ収集Windows 10、Microsoft プライバシー[](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule)ステートメントの「個人データの保存場所と処理場所」を参照してください。
+## <a name="major-data-change-notification"></a>メジャー データ変更通知
+Microsoft マネージド デスクトップ、サービス通信フレームワークで説明されている変更管理プロセスに従います。 セキュリティ インシデントとサービスMicrosoft 365変更Microsoft マネージド デスクトップ管理ポータルを通じて、お客様に通知します。 収集されたデータの種類と格納場所に対する変更は、重要な変更と見なされます。 この変更に関する詳細な通知は、製品およびサービスの標準的な方法と同様に、少なくとも 30 日間Microsoft 365提供します。 詳細については、「サービスの変更 [と通信」を参照してください](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide)。
 
-## <a name="data-access-protection"></a>データ アクセス保護
+## <a name="compliance"></a>コンプライアンス
+Microsoft マネージド デスクトップ外部監査を受け、包括的なコンプライアンス提供のセットを取得しました。 詳細については、「コンプライアンス」Microsoft マネージド デスクトップ[参照してください](/microsoft-365/managed-desktop/intro/compliance)。 監査レポートは、Microsoft サービスセキュリティポータルでダウンロードできます。これは、Microsoft[サービス](https://aka.ms/stp)オンライン サービスのEnterprise機能します。 (Microsoft マネージド デスクトップ"監視と管理"というカテゴリの下に、これらのドキュメント内に一覧表示されます。 
 
-ユーザーの内部データ Microsoft マネージド デスクトップへの直接アクセスは、次のいくつかの方法で制限されます。
-
-- エンジニアリング リード レベルの承認が必要です。
-- 時間の境界が設定され、監査されます。
-- すべてのデータは、保存中に暗号化されます。
-- Microsoft マネージド デスクトップの内部管理ポータルへのアクセスには、高度にセキュリティで保護された制限付きワークステーションが必要です。
-
-## <a name="processing-personal-data-in-a-compliant-manner"></a>準拠した方法で個人データを処理する
-Microsoft マネージド デスクトップ ISO 認定システムを使用して個人データを処理します。 詳細については、「コンプライアンス」を [参照してください](../intro/compliance.md)。
-
-## <a name="profiling-and-marketing"></a>プロファイリングとマーケティング
-
-Microsoft マネージド デスクトップは、プロファイリング、広告、またはマーケティングの目的でサービスを提供する一部として収集された個人データを使用しません。
-
-## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のためのデータ対象要求
-
-EU 一般データ保護規則 [(GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) は、雇用主または他の種類の機関または組織 (データ 管理者または単なる管理者と呼ばれる) によって収集された個人データを管理する権限をユーザー (データ主体として知られている) に与えます。 GDPR での個人データは、特定されたまたは特定可能な自然人に関連するすべてのデータと、非常に幅広く定義されています。 GDPR では、個人データに対するデータ主体固有の権限が付与されます。このような権限には、個人データのコピーの取得、個人データの修正の要求、個人データの処理の制限、個人データの削除、または別のコントローラーに移動できる電子的な形式での個人データの受け取りが含まれます。 データ主体がコントローラーに対して個人データへのアクションを実行するよう正式に要求することを、データ主体の要求または DSR と呼びます。
-
-同様に、CCPA は、GDPR のデータ主体の権利に類似する権利 (個人情報の削除、アクセス、および受信 (移植性) などの権利を含む、カリフォルニア州の消費者にプライバシー権と義務を提供します。 また、CCPA は、特定の開示、行使権を選択する際の差別に対する保護、および"販売" に分類される特定のデータ転送に対する"オプトアウト/オプトイン" 要件も提供します。 「販売」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](/compliance/regulatory/offering-ccpa?view=o365-worldwide)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](/compliance/regulatory/ccpa-faq?view=o365-worldwide)」を参照してください。
-
-次のセクションでは、管理者Microsoft マネージド デスクトップが使用する個人データまたは個人情報を検索、アクセス、および処理する方法について説明Microsoft マネージド デスクトップ。
-
-> [!NOTE]
-> GDPR に関する一般的な情報を探している場合は、サービス信頼ポータルの [GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) セクションを参照してください。
-
-### <a name="it-admin-contact-information"></a>IT 管理者の連絡先情報
-
-テナント管理者は、Microsoft マネージド デスクトップ ポータルの [管理者連絡先] セクションで、自分の個人データ (自分の連絡先情報など) を直接表示、修正、および削除できます。
-
-## <a name="microsoft-defender-for-endpoint-alert-data"></a>Microsoft Defender for Endpoint アラート データ
-
-セキュリティ管理者は、Microsoft Defender for Endpoint アラートに関連する個人データの抽出または削除を、環境内の管理対象Microsoft マネージド デスクトップ要求できます。 セキュリティ管理者は、管理者ポータルのMicrosoft マネージド デスクトップ[し](https://aka.ms/memadmin)、サポート要求を送信する必要があります。 [**変更要求] 、[** セキュリティのカテゴリ] 、および [その他のサブカテゴリ] の [サポート要求の種類] を選択し、データの抽出または削除の要求と共に、説明に関連するデバイス名を指定します。  
-
-### <a name="user-related-personal-data"></a>ユーザー関連の個人データ
-
-これとは別にMicrosoft マネージド デスクトップ個人データは収集しない場合があります。 代わりに、他の Microsoft がオンライン サービスで収集した個人データEnterprise使用します。 個人データの表示、修正、削除を求め、ユーザーの要求に対応する IT 管理者は、ユーザーが依存する基になるサービスのMicrosoft マネージド デスクトップ使用できます。 これらのサービスで使用される個人データを表示または削除する場合は、 [最初に「GDPR の Azure Data Subject Requests」を参照](/compliance/regulatory/gdpr-dsr-Azure) してください。
-
-さらに、以下のガイダンスを使用して、個人データの収集に依存Microsoft マネージド デスクトップサービスの DSRs を実行します。
-
-- [Azure Active Directory](/compliance/regulatory/gdpr-dsr-Azure?view=o365-worldwide)
-- [Microsoft Intune](/compliance/regulatory/gdpr-dsr-Intune?view=o365-worldwide)
-- [エンドポイント用 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [Windows 10](/windows/privacy/windows-10-and-privacy-compliance)
+## <a name="legal"></a>法務
+組織のお客様が提供する製品のエンド ユーザーに対する Microsoft [](https://privacy.microsoft.com/privacystatement)のプライバシーに関する通知 **-** Microsoft プライバシーステートメントは、エンド ユーザーが仕事用アカウントを使用して Microsoft 製品にサインインするときに、自分のアカウント (プライバシー関連の設定の制御を含む) を制御および管理し、データにアクセスして処理できるとエンド ユーザーに通知します。b) Microsoft は、データを収集および処理して、組織およびエンド ユーザーにサービスを提供する場合があります。

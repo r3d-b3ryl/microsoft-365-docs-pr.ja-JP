@@ -1,6 +1,6 @@
 ---
-title: セキュリティ センターでMicrosoft 365 Defender データへのアクセスMicrosoft 365管理する
-description: Defender でデータへのアクセス許可を管理するMicrosoft 365する
+title: セキュリティ センターでMicrosoft 365 DefenderデータへのアクセスMicrosoft 365管理する
+description: データに対するアクセス許可を管理する方法については、Microsoft 365 Defender
 keywords: Access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 52e4e9fc8c73d1adca0c24c5bebb50f9dcf7ac6f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 738315c446fd57d4cd027de92eb77b0029f84323
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935631"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177530"
 ---
-# <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>グローバル ロールを使用Microsoft 365 Defender へのAzure Active Directory管理する
+# <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>グローバル ロールを使用Microsoft 365 DefenderアクセスAzure Active Directory管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,11 +35,11 @@ ms.locfileid: "51935631"
 **適用対象:**
 - Microsoft 365 Defender
 
-Defender へのアクセスを管理するには、2 Microsoft 365があります。
+ユーザーへのアクセスを管理する方法は 2 Microsoft 365 Defender
 - **グローバル Azure Active Directory (AD) の役割**
 - **カスタム ロール アクセス**
 
-次のグローバル ユーザー **(Azure Active Directory) AD割** り当てられたアカウントは、Defender のMicrosoft 365データにアクセスできます。
+次のグローバル ユーザー **(Azure Active Directory) AD割** り当てられたアカウントは、Microsoft 365 Defender機能とデータにアクセスできます。
 - グローバル管理者
 - セキュリティ管理者
 - セキュリティ オペレーター
@@ -48,9 +48,10 @@ Defender へのアクセスを管理するには、2 Microsoft 365がありま�
 
 これらのロールを持つアカウントを確認するには、[Microsoft 365 セキュリティ センターで権限を表示](https://security.microsoft.com/permissions)します。
 
-**カスタム ロール アクセス** は、Microsoft 365 Defender の新機能であり、Microsoft Defender 365 の特定のデータ、タスク、および機能へのアクセスを管理できます。 カスタム ロールは、グローバル Azure ADロールよりも多くの制御を提供し、必要な最小限の役割で必要なアクセスのみをユーザーに提供します。  カスタム ロールは、グローバル Azure ロールとカスタム ロールにADできます。 [カスタム ロールの詳細を参照してください](custom-roles.md)。
+**カスタム ロール アクセス** は、Microsoft Defender 365 Microsoft 365 Defenderの新しい機能であり、特定のデータ、タスク、および機能へのアクセスを管理できます。 カスタム ロールは、グローバル Azure ADロールよりも多くの制御を提供し、必要な最小限の役割で必要なアクセスのみをユーザーに提供します。  カスタム ロールは、グローバル Azure ロールとカスタム ロールにADできます。 [カスタム ロールの詳細を参照してください](custom-roles.md)。
 
-> ![メモ]この記事は、グローバル ロールの管理にのみAzure Active Directoryします。 カスタムの役割ベースのアクセス制御の使用の詳細については、「役割ベースのアクセス制御のカスタム [ロール」を参照してください。](custom-roles.md)
+> [!NOTE]
+> この記事は、グローバル ロールの管理にのみAzure Active Directoryします。 カスタムの役割ベースのアクセス制御の使用の詳細については、「役割ベースのアクセス制御のカスタム [ロール」を参照してください。](custom-roles.md)
 
 ## <a name="access-to-functionality"></a>機能へのアクセス
 特定の機能へのアクセスは、[Azure AD でのロール](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)によって決まります。 ユーザーまたはユーザー グループに新しい役割を割り当てる必要がある場合は、グローバル管理者にお問い合わせください。
@@ -59,15 +60,15 @@ Defender へのアクセスを管理するには、2 Microsoft 365がありま�
 「[調査と修復の自動化](m365d-autoir-actions.md)」 は、調査中に見つかったメール、転送ルール、ファイル、持続性機構など、その他の成果物に対処できます。 明示的な承認が必要な保留中のアクションを承認または拒否するには、Microsoft 365 に特定の役割が割り当てられている必要があります。 詳細については、「[アクションセンターの権限](m365d-action-center.md#required-permissions-for-action-center-tasks)」をご覧ください。
 
 ## <a name="access-to-data"></a>データへのアクセス
-Defender データMicrosoft 365へのアクセスは、Microsoft Defender for Endpoint の役割ベースのアクセス制御 (RBAC) のユーザー グループに割り当てられたスコープを使用して制御できます。 Defender for Endpoint の特定のデバイス セットにアクセスの範囲が設定されていない場合は、Defender のデータにフル アクセスMicrosoft 365されます。 ただし、アカウントのスコープを指定すると、対象のデバイスに関するデータのみが表示されるようになります。
+Microsoft Defender for Endpoint Microsoft 365 Defenderアクセス制御 (RBAC) のユーザー グループに割り当てられたスコープを使用して、データへのアクセスを制御できます。 Defender for Endpoint の特定のデバイス セットにアクセスの範囲が設定されていない場合は、エンドポイント内のデータにフル アクセスMicrosoft 365 Defender。 ただし、アカウントのスコープを指定すると、対象のデバイスに関するデータのみが表示されるようになります。
 
 たとえば、Microsoft Defender for Endpoint の役割を持つ 1 つのユーザー グループにのみ属し、そのユーザー グループに販売デバイスへのアクセス権が与えられた場合、Microsoft 365 Defender の販売デバイスに関するデータだけが表示されます。 [Microsoft Defender for Endpoint の RBAC 設定の詳細](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 ### <a name="microsoft-cloud-app-security-access-controls"></a>Microsoft Cloud App Security のアクセス制御
-プレビュー中に、Microsoft 365設定に基づいてアクセス制御が適用Cloud App Securityされます。 Defender データMicrosoft 365へのアクセスは、これらの設定の影響を受け取る必要があります。
+プレビュー中に、Microsoft 365 Defender設定に基づいてアクセス制御をCloud App Security行う必要があります。 これらの設定Microsoft 365 Defenderデータへのアクセスは影響されません。
 
-## <a name="related-topics"></a>関連項目
-- [Defender の役割ベースのアクセス制御のカスタム ロールMicrosoft 365します。](custom-roles.md)
+## <a name="related-topics"></a>関連トピック
+- [ユーザーの役割ベースのアクセス制御のカスタム ロールMicrosoft 365 Defender](custom-roles.md)
 - [Azure AD ロール](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 - [エンドポイント RBAC 用 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Cloud App Security roles](/cloud-app-security/manage-admins)

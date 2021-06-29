@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、モデルとそれに関連付けられているコンテンツ タイプを作成します。
-ms.openlocfilehash: 4af980d0733fce63767c6570003342eadb079f26
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 0a1b6ef9b7e38f2c4f52082103530da432e3e855
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904293"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177155"
 ---
 # <a name="create-model"></a>モデルを作成する
 
@@ -41,7 +41,7 @@ POST /_api/machinelearning/models HTTP/1.1
 
 ## <a name="request-body"></a>要求本文
 
-|名前    |型   |説明 |
+|名前    |種類   |説明 |
 |--------|-------|------------|
 |_metadata|  |SPO でオブジェクト メタを設定します。 常に値 {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"} を使用します。 |
 |ContentTypeGroup|文字列|モデルに関連付けられている関連付けられた関連コンテンツ タイプ グループ。 既定では、"インテリジェント ドキュメント コンテンツ タイプ" に設定されます。|
@@ -49,7 +49,7 @@ POST /_api/machinelearning/models HTTP/1.1
 
 ## <a name="responses"></a>応答
 
-| 名前   | 型  | 説明|
+| 名前   | 種類  | 説明|
 |--------|-------|------------|
 |201 Created| |成功|
 
@@ -65,7 +65,7 @@ POST /_api/machinelearning/models HTTP/1.1
         "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
     },
     "ContentTypeGroup": "Intelligent Document Content Types",
-    "ContentTypeName": "Contoso Contract",
+    "ContentTypeName": "Contoso Contract"
 }
 ```
 

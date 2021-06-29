@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053073"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169594"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -116,7 +116,7 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
 ### <a name="retention-policy-for-yammer-locations"></a>Yammer の場所のアイテム保持ポリシー
 
 > [!NOTE]
-> Yammer のアイテム保持ポリシーはプレビュー段階です。
+> Yammer のアイテム保持ポリシーはプレビュー段階であり、現在、アイテム保持ポリシーの結果としてメッセージが削除されたときはユーザーに通知されません。
 >
 > この機能を使用するには、ご利用の Yammer ネットワークがハイブリッド モードではなく、[ネイティブ モード](/yammer/configure-your-yammer-network/overview-native-mode)になっている必要があります。
 

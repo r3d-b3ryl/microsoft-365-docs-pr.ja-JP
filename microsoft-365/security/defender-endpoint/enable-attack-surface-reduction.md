@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169606"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177623"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -37,6 +37,8 @@ ms.locfileid: "53169606"
 
 ## <a name="requirements"></a>要件
 
+複数のバージョンの攻撃表面Windows機能
+
 次のエディションとバージョンのデバイスを実行しているデバイスに対して攻撃表面の縮小ルールをWindows。
 
 - Windows 10 Proバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
@@ -44,7 +46,13 @@ ms.locfileid: "53169606"
 - Windowsサーバー、[バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-攻撃表面の縮小ルールでは[E5](/windows/deployment/deploy-enterprise-licenses)ライセンスをWindows必要とWindows、高度な管理機能を利用できます。 Windows E5 でのみ使用できるこれらの機能には[、Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)で使用できる監視、分析、ワークフロー、および Microsoft 365 セキュリティ センターのレポート機能と構成[機能が含まれます](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true)。 これらの高度な機能は、E3 ライセンスWindows ProfessionalまたはWindows使用できません。ただし、これらのライセンスを持っている場合は、イベント ビューアーとログMicrosoft Defender ウイルス対策を使用して、攻撃表面の縮小ルール イベントを確認できます。
+攻撃表面の縮小ルールの機能セット全体を使用するには、以下が必要です。
+
+- Windows Defender ウイルス対策 AV として設定する (リアルタイム保護オン)
+- [Cloud-Delivery Protection on](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) (一部のルールでは必要)
+- Windows 10 EnterpriseE5 または E3 ライセンスまたはMicrosoft 365ビジネス ライセンス
+
+攻撃表面の縮小ルールでは[、Windows E5](/windows/deployment/deploy-enterprise-licenses)ライセンスを使用して Windows E5 ライセンスを必要としますが、Defender for Endpoint で使用できる監視、分析、ワークフロー、および Microsoft 365 セキュリティ センターのレポート機能と構成機能などの高度な管理機能を利用できます。 これらの高度な機能は E3 ライセンスでは使用できませんが、イベント ビューアーを使用して攻撃表面の縮小ルール イベントを確認できます。
 
 各 ASR ルールには、次の 4 つの設定のいずれかを含む。
 

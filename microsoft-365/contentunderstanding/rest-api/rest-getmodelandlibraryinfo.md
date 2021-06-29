@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、モデルとそれが適用されているライブラリに関する情報を取得します。
-ms.openlocfilehash: 6cd61364ed3b360ef235aaba21a2735002fe481e
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2449084653c6d9af8d774edc306c485e7a466bf6
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904302"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177071"
 ---
 # <a name="get-model-and-library-information"></a>モデルとライブラリの情報を取得する
 
@@ -25,13 +25,13 @@ ms.locfileid: "52904302"
 ## <a name="http-request"></a>HTTP 要求
 
 ```HTTP
-GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP/1.1
+GET /_api/machinelearning/publications/getbymodeluniqueid('{modelUniqueId}') HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>URI パラメーター
 
 | 名前 | In | 必須 | 型 | 説明 |
-|--------|-------|--------|------------|
+|--------|-------|--------|------------|-----------|
 |ModelUniqueId|query|はい|GUID|モデル ファイルの一意の ID。|
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -41,22 +41,11 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 |Accept|application/json;odata=verbose|
 
 
-## <a name="request-body"></a>要求本文
-
-| 名前 | 必須 | 型 | 説明 |
-|--------|-------|--------|------------|
-|ModelUniqueId|○|文字列|モデル ファイルの一意の ID。|
-|TargetSiteUrl|○|文字列|ターゲット ライブラリ サイトの完全な URL。|
-|TargetWebServerRelativeUrl|○|文字列|ターゲット ライブラリの Web のサーバー相対 URL。|
-|TargetLibraryServerRelativeUrl|○|文字列|ターゲット ライブラリのサーバー相対 URL。|
-|TargetLibraryRemoved|○|int|ターゲット ライブラリが削除されたかどうかを示すフラグ。|
-
 ## <a name="response"></a>応答
 
-| 名前   | 型  | 説明|
+| 名前   | 種類  | 説明|
 |--------|-------|------------|
 |200 OK| |成功|
-|201 Created| |この API では複数のライブラリへのモデルの適用がサポートされているため、いずれかのライブラリにモデルを適用する際にエラーが発生した場合でも、201 が返される可能性があることに注意してください。 <br>応答本文を調べて、モデルが指定されたすべてのライブラリに正常に適用されたかどうかを確認します。 詳細については [要求本文](rest-getmodelandlibraryinfo.md#request-body) を参照してください。|
 
 ## <a name="examples"></a>例
 
@@ -67,7 +56,7 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 #### <a name="sample-request"></a>要求のサンプル
 
 ```HTTP
-GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}’) HTTP/1.1
+GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 #### <a name="sample-response"></a>応答のサンプル
 
@@ -130,7 +119,7 @@ GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e
             "ViewOption": "NewViewAsDefault"
         }
     ]
-}```
+}
 ```
 
 ## <a name="see-also"></a>関連項目

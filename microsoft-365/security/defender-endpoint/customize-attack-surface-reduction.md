@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0705ba096c2aefc6bd089bd5fba80b055fd881dc
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 6d2770dec270e2d1c1b9750387a0f07f82b357f9
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055247"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177095"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>攻撃面の減少ルールをカスタマイズする
 
@@ -42,7 +42,11 @@ ms.locfileid: "53055247"
 - Windows 10 Proバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - Windows 10 Enterpriseバージョン[1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - Windowsサーバー、[バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)以降
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)グループ ポリシー、PowerShell、およびモバイル デバイス管理 (MDM) 構成サービス プロバイダー (CSP) を使用して、これらの設定を構成できます。
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+
+グループ ポリシー、PowerShell、およびモバイル デバイス管理 (MDM) 構成サービス プロバイダー (CSP) を使用して、これらの設定を構成できます。
+
+サポート [されるオペレーティング システムと](enable-attack-surface-reduction.md#requirements) 追加の要件情報については、「攻撃表面縮小ルールを有効にする」の記事の「要件」を参照してください。
 
 ## <a name="exclude-files-and-folders"></a>ファイルとフォルダーを除外する
 
@@ -66,21 +70,22 @@ ms.locfileid: "53055247"
 
 | ルールの説明 | GUID |
 |:----|:----|
+| 悪用された脆弱な署名済みドライバーの悪用をブロックする | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
+| Adobe Reader の子プロセスの作成をブロックする | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
 | すべてのアプリケーションOffice子プロセスの作成をブロックする | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
-| 難読化される可能性のあるスクリプトの実行をブロックする | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
-| Win32 API 呼び出しをブロックOfficeマクロ | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
-| 実行可能Office作成するアプリケーションのブロック | `3B576869-A4EC-4529-8536-B80A7769E899` |
-| アプリケーションOffice他のプロセスへのコードの挿入をブロックする | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
-| JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
 | メール クライアントと Web メールから実行可能なコンテンツをブロックする | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` |
 | 有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
-| ランサムウェアに対する高度な保護の使用 | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
-| ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
+| 難読化される可能性のあるスクリプトの実行をブロックする | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
+| JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| 実行可能Office作成するアプリケーションのブロック | `3B576869-A4EC-4529-8536-B80A7769E899` |
+| アプリケーションOffice他のプロセスへのコードの挿入をブロックする | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
+| 通信Office子プロセスの作成をブロックする | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
+| WMI イベント サブスクリプションによる永続化のブロック | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
 | PSExec および WMI コマンドから発生するプロセス作成をブロックする | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
 | USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| 通信Office子プロセスの作成をブロックする | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
-| Adobe Reader の子プロセスの作成をブロックする | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| WMI イベント サブスクリプションによる永続化のブロック | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
+| Win32 API 呼び出しをブロックOfficeマクロ | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
+| ランサムウェアに対する高度な保護の使用 | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
 
 各ルールの [詳細については、攻撃表面](attack-surface-reduction.md) の縮小に関するトピックを参照してください。
 
@@ -119,7 +124,7 @@ ms.locfileid: "53055247"
 
 ルールがトリガーされた場合の通知をカスタマイズし、アプリまたはファイルをブロックできます。 詳しくは[、Windows セキュリティをご覧](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)ください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
 - [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)

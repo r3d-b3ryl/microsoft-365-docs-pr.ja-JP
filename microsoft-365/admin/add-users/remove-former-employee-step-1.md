@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 元従業員のログインをブロックし、サービスへのアクセスMicrosoft 365します。
-ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 58b65a0a886460e8be01635c857433773cfc9059
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061821"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177119"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>手順 1 - 元従業員のログインを防止し、サービスへのアクセスMicrosoft 365する
 
@@ -65,7 +65,7 @@ PowerShell を使用してユーザーをすぐにサインアウトするには
 
 Microsoft 365 サブスクリプションの一部としてメールがある場合は、Exchange 管理センターにサインインし、次の手順に従って、元従業員のメールへのアクセスをブロックします。
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>に移動します。
+1. <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange 管理センター</a>に移動します。
 2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
-3. ユーザーをダブルクリックし、[メールボックスの機能] **ページに移動** します。 [**モバイル デバイス] で**、[デバイスに対して Exchange ActiveSyncを無効にする] と **[OWA** を無効にする] を選択し、メッセージが表示されたら両方に対して **[は** い] と答えます。 
-4. [ **電子メールの接続] で**、[無効] **を選択し** 、メッセージ **が表示されたら [はい]** と答えます。
+3. ユーザーをダブルクリックし、[メール アプリ] の [メール アプリ **の設定の管理** ] **に移動します**。 すべての **オプション** のスライダーをオフにします。**モバイル (Exchange ActiveSync)** **、Outlook on the web**、Outlook **デスクトップ (MAPI)** **、Exchange Web** サービス **、POP3、****および IMAP** です。
+4. **[保存]** を選択します。

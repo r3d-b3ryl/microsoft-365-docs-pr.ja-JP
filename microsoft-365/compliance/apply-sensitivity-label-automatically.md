@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 5fdb3bd963468fb7fdb4de307df8ccda0c69bbb4
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137777"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169618"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -89,6 +89,7 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
 |場所による制限|いいえ |はい |
 |条件: トレーニング可能な分類子|はい |いいえ |
 |条件: メールの共有オプションと追加オプション|いいえ |はい |
+|条件: 例外|いいえ |はい (メールのみ) |
 |推奨事項、ポリシーのヒント、ユーザー上書き|はい |いいえ |
 |シミュレーション モード|いいえ |はい |
 |条件についてチェックされた Exchange 添付ファイル|いいえ | はい|
@@ -297,7 +298,17 @@ Azure Information Protection 統合ラベル付けクライアントに関して
     - 添付ファイルがパスワードで保護されている
     - メールの添付ファイルのコンテンツをスキャンできなかった
     - メールの添付ファイルのコンテンツのスキャンが完了しなかった
-
+    - ヘッダーがパターンと一致している
+    - 件名がパターンと一致している
+    - 受信者のアドレスに単語が含まれている
+    - 受信者のアドレスがパターンと一致している
+    - 送信者のアドレスがパターンと一致している
+    - 送信者のドメインが次の場合
+    - 受信者が次のメンバーの場合
+    - 送信者が
+    
+    これらの条件ごとに、例外を指定できます。
+    
 8. 以前の選択に応じて、条件と例外を使用して新しいルールを作成する機会があります。
     
     機密情報の種類の構成オプションは、Office アプリの自動ラベル付けに選択したものと同じです。 詳細情報が必要な場合は、「[ラベルの機密情報の種類の構成](#configuring-sensitive-info-types-for-a-label)」を参照してください。

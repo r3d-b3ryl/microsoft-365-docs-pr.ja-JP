@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0eaf34e6950e265514b14ff1fd0aa1c7bb9ab6b1
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 0a9eb63ed4508ff875324cf6fb0b4a8ad59cb29f
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062203"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177551"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -62,9 +62,8 @@ ms.locfileid: "53062203"
 - 狩猟エクスペリエンスでのレコードのエクスポートの制限を 9990 から 200,000 に [増やす](threat-explorer.md)
 - 試用版テナントのエクスプローラー (およびリアルタイム検出) データの保持と検索の制限を 7 (前の制限) から 30 日間のハンティング エクスペリエンス [に拡張する](threat-explorer.md)
 - 保護されたユーザーまたはドメインに対する偽装攻撃を検索するための、エクスプローラー内の偽装ドメインと偽装ユーザー (およびリアルタイムの検出) と呼ばれる新しい検索ピボット。 詳細については、「詳細」を [参照してください](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。 (Microsoft Defender for Office 365プラン 1 またはプラン 2)
-- 新しい最初の連絡先安全性のヒント、受信者が最初に送信者から電子メールを受信するか、送信者から電子メールを受信しない場合に使用されます。 この設定の詳細と、メール フロー ルール (トランスポート ルールとも呼Exchange) を使用して構成する方法については[、「First contact](set-up-anti-phishing-policies.md#first-contact-safety-tip)安全性のヒント」 を参照してください。
 
-## <a name="december-2020"></a>2020 年 12 月
+## <a name="december-2020"></a>2020年12月
 
 - [既定ではセキュリティで保護Office 365](secure-by-default.md)
 - 自動調査の機能強化: 手動でトリガーされた電子メール調査に関する一般的なアラート、メールボックスの変更を別のエンティティ カテゴリとして扱い、冗長な URL ブロック アクションを削除し、ユーザーが侵害された調査のために送信メール クラスターを作成します。
@@ -75,6 +74,7 @@ ms.locfileid: "53062203"
 
 ## <a name="septemberoctober-2020"></a>2020 年 9 月/10 月
 
+- 新しい最初の連絡先安全性のヒント、受信者が最初に送信者から電子メールを受信するか、送信者から電子メールを受信しない場合に使用されます。 この設定の詳細と、メール フロー ルール (トランスポート ルールとも呼Exchange) を使用して構成する方法については[、「First contact](set-up-anti-phishing-policies.md#first-contact-safety-tip)安全性のヒント」 を参照してください。
 - [Configuration Analyzer を使用してポリシーを確認する](configuration-analyzer-for-security-policies.md)
 - トップ ターゲットユーザー、トランスポート ルール、コネクタを含む脅威エクスプローラーの拡張機能[(Threat](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) [Explorer](threat-explorer.md)の Office 365 の Defender 情報 (テナント/ユーザー ポリシーによって電子メールが許可/ブロックされました) (Defender for Office 365 Plan 2)
 - 脅威エクスプローラー (マルウェア、フィッシング、スパム、またはなし) で URL の脅威を検出する[(Defender](threat-explorer.md#threats-in-urls) for Office 365 プラン 2)

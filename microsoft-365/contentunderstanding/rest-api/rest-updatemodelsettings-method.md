@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、SharePoint Syntex 文書理解モデルに関する利用可能なモデル設定を更新します。
-ms.openlocfilehash: f24fc8428adbf22ded2ca6d7a49cabc84b385770
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: cd288812044f3b02839c3c11c321947bd02cccaa
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904303"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177167"
 ---
 # <a name="updatemodelsettings"></a>UpdateModelSettings
 
@@ -25,12 +25,14 @@ SharePoint Syntex 文書理解モデルの使用可能なモデル設定 (関連
 ## <a name="http-request"></a>HTTP 要求
 
 ```HTTP
-POST /_api/machinelearning/models/updatemodelsettings HTTP/1.1
+POST /_api/machinelearning/models/getbytitle('{modelFileName}')/updatemodelsettings HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>URI パラメーター
 
-なし
+|名前 |In |必須|型|説明|
+|-----|---|--------|----|-----------|
+|modelFileName|query|はい|string|Syntex モデル ファイル名です。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -42,7 +44,7 @@ POST /_api/machinelearning/models/updatemodelsettings HTTP/1.1
 
 ## <a name="request-body"></a>要求本文
 
-|名前    |型   |説明 |
+|名前    |種類   |説明 |
 |--------|-------|-------|
 |ModelSettings|文字列|モデル設定の JSON。|
 |説明|string|モデルの説明。|
@@ -50,7 +52,7 @@ POST /_api/machinelearning/models/updatemodelsettings HTTP/1.1
 
 ## <a name="responses"></a>応答
 
-| 名前   | 型  | 説明|
+| 名前   | 種類  | 説明|
 |--------|-------|------------|
 |200 OK| |成功|
 
