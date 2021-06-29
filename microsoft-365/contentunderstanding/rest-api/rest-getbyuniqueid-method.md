@@ -11,65 +11,65 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST APIを使用して、SharePoint Syntex ドキュメント理解モデルに関する情報を取得または更新します。
-ms.openlocfilehash: aa97e0fde57c6d5200b437a8f9c7187c0980cc5b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 306bcd894b6339575f8c91ac3c4fb89f2033f3bc
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904312"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177107"
 ---
-# <a name="getbyuniqueid"></a><span data-ttu-id="24f54-103">GetByUniqueId</span><span class="sxs-lookup"><span data-stu-id="24f54-103">GetByUniqueId</span></span>
+# <a name="getbyuniqueid"></a><span data-ttu-id="fcf38-103">GetByUniqueId</span><span class="sxs-lookup"><span data-stu-id="fcf38-103">GetByUniqueId</span></span>
 
-<span data-ttu-id="24f54-104">SharePoint Syntex ドキュメント理解モデルに関する情報を取得または更新します ( [例](rest-getbyuniqueid-method.md#examples)参照)。</span><span class="sxs-lookup"><span data-stu-id="24f54-104">Gets or updates information about a SharePoint Syntex document understanding model (see [example](rest-getbyuniqueid-method.md#examples)).</span></span>
+<span data-ttu-id="fcf38-104">SharePoint Syntex ドキュメント理解モデルに関する情報を取得または更新します ( [例](rest-getbyuniqueid-method.md#examples)参照)。</span><span class="sxs-lookup"><span data-stu-id="fcf38-104">Gets or updates information about a SharePoint Syntex document understanding model (see [example](rest-getbyuniqueid-method.md#examples)).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="24f54-105">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="24f54-105">HTTP request</span></span>
-
-```HTTP
-GET /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
-```
-
-<span data-ttu-id="24f54-106">この同じ方法をモデルの削除にも使用できます。</span><span class="sxs-lookup"><span data-stu-id="24f54-106">This same method can be used for deleting a model, too.</span></span> 
+## <a name="http-request"></a><span data-ttu-id="fcf38-105">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fcf38-105">HTTP request</span></span>
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
+GET /_api/machinelearning/models/getbyuniqueid('{modelUniqueId}') HTTP/1.1
 ```
-## <a name="uri-parameters"></a><span data-ttu-id="24f54-107">URI パラメーター</span><span class="sxs-lookup"><span data-stu-id="24f54-107">URI parameters</span></span>
 
-|<span data-ttu-id="24f54-108">名前</span><span class="sxs-lookup"><span data-stu-id="24f54-108">Name</span></span> |<span data-ttu-id="24f54-109">In</span><span class="sxs-lookup"><span data-stu-id="24f54-109">In</span></span> |<span data-ttu-id="24f54-110">必須</span><span class="sxs-lookup"><span data-stu-id="24f54-110">Required</span></span>|<span data-ttu-id="24f54-111">型</span><span class="sxs-lookup"><span data-stu-id="24f54-111">Type</span></span>|<span data-ttu-id="24f54-112">説明</span><span class="sxs-lookup"><span data-stu-id="24f54-112">Description</span></span>|
+<span data-ttu-id="fcf38-106">この同じ方法をモデルの削除にも使用できます。</span><span class="sxs-lookup"><span data-stu-id="fcf38-106">This same method can be used for deleting a model, too.</span></span> 
+
+```HTTP
+DELETE /_api/machinelearning/models/getbyuniqueid('{modelUniqueId}') HTTP/1.1
+```
+## <a name="uri-parameters"></a><span data-ttu-id="fcf38-107">URI パラメーター</span><span class="sxs-lookup"><span data-stu-id="fcf38-107">URI parameters</span></span>
+
+|<span data-ttu-id="fcf38-108">名前</span><span class="sxs-lookup"><span data-stu-id="fcf38-108">Name</span></span> |<span data-ttu-id="fcf38-109">In</span><span class="sxs-lookup"><span data-stu-id="fcf38-109">In</span></span> |<span data-ttu-id="fcf38-110">必須</span><span class="sxs-lookup"><span data-stu-id="fcf38-110">Required</span></span>|<span data-ttu-id="fcf38-111">型</span><span class="sxs-lookup"><span data-stu-id="fcf38-111">Type</span></span>|<span data-ttu-id="fcf38-112">説明</span><span class="sxs-lookup"><span data-stu-id="fcf38-112">Description</span></span>|
 |-----|---|--------|----|-----------|
-|<span data-ttu-id="24f54-113">modelUniqueId</span><span class="sxs-lookup"><span data-stu-id="24f54-113">modelUniqueId</span></span>|<span data-ttu-id="24f54-114">query</span><span class="sxs-lookup"><span data-stu-id="24f54-114">query</span></span>|<span data-ttu-id="24f54-115">はい</span><span class="sxs-lookup"><span data-stu-id="24f54-115">True</span></span>|<span data-ttu-id="24f54-116">string</span><span class="sxs-lookup"><span data-stu-id="24f54-116">string</span></span>|<span data-ttu-id="24f54-117">Syntex モデル ファイルの ID。</span><span class="sxs-lookup"><span data-stu-id="24f54-117">ID of the Syntex model file.</span></span>|
+|<span data-ttu-id="fcf38-113">modelUniqueId</span><span class="sxs-lookup"><span data-stu-id="fcf38-113">modelUniqueId</span></span>|<span data-ttu-id="fcf38-114">query</span><span class="sxs-lookup"><span data-stu-id="fcf38-114">query</span></span>|<span data-ttu-id="fcf38-115">はい</span><span class="sxs-lookup"><span data-stu-id="fcf38-115">True</span></span>|<span data-ttu-id="fcf38-116">string</span><span class="sxs-lookup"><span data-stu-id="fcf38-116">string</span></span>|<span data-ttu-id="fcf38-117">Syntex モデル ファイルの ID。</span><span class="sxs-lookup"><span data-stu-id="fcf38-117">ID of the Syntex model file.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="24f54-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="24f54-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fcf38-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fcf38-118">Request headers</span></span>
 
-| <span data-ttu-id="24f54-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="24f54-119">Header</span></span> | <span data-ttu-id="24f54-120">値</span><span class="sxs-lookup"><span data-stu-id="24f54-120">Value</span></span> |
+| <span data-ttu-id="fcf38-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fcf38-119">Header</span></span> | <span data-ttu-id="fcf38-120">値</span><span class="sxs-lookup"><span data-stu-id="fcf38-120">Value</span></span> |
 |--------|-------|
-|<span data-ttu-id="24f54-121">Accept</span><span class="sxs-lookup"><span data-stu-id="24f54-121">Accept</span></span>|<span data-ttu-id="24f54-122">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="24f54-122">application/json;odata=verbose</span></span>|
+|<span data-ttu-id="fcf38-121">Accept</span><span class="sxs-lookup"><span data-stu-id="fcf38-121">Accept</span></span>|<span data-ttu-id="fcf38-122">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="fcf38-122">application/json;odata=verbose</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="24f54-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="24f54-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fcf38-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="fcf38-123">Request body</span></span>
 
-<span data-ttu-id="24f54-124">GET には要求本文は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="24f54-124">For GET, no request body is needed.</span></span>
+<span data-ttu-id="fcf38-124">GET には要求本文は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="fcf38-124">For GET, no request body is needed.</span></span>
 
-## <a name="responses"></a><span data-ttu-id="24f54-125">応答</span><span class="sxs-lookup"><span data-stu-id="24f54-125">Responses</span></span>
+## <a name="responses"></a><span data-ttu-id="fcf38-125">応答</span><span class="sxs-lookup"><span data-stu-id="fcf38-125">Responses</span></span>
 
-| <span data-ttu-id="24f54-126">名前</span><span class="sxs-lookup"><span data-stu-id="24f54-126">Name</span></span>   | <span data-ttu-id="24f54-127">型</span><span class="sxs-lookup"><span data-stu-id="24f54-127">Type</span></span>  | <span data-ttu-id="24f54-128">説明</span><span class="sxs-lookup"><span data-stu-id="24f54-128">Description</span></span>|
+| <span data-ttu-id="fcf38-126">名前</span><span class="sxs-lookup"><span data-stu-id="fcf38-126">Name</span></span>   | <span data-ttu-id="fcf38-127">種類</span><span class="sxs-lookup"><span data-stu-id="fcf38-127">Type</span></span>  | <span data-ttu-id="fcf38-128">説明</span><span class="sxs-lookup"><span data-stu-id="fcf38-128">Description</span></span>|
 |--------|-------|------------|
-|<span data-ttu-id="24f54-129">200 OK</span><span class="sxs-lookup"><span data-stu-id="24f54-129">200 OK</span></span>| |<span data-ttu-id="24f54-130">成功</span><span class="sxs-lookup"><span data-stu-id="24f54-130">Success</span></span>|
+|<span data-ttu-id="fcf38-129">200 OK</span><span class="sxs-lookup"><span data-stu-id="fcf38-129">200 OK</span></span>| |<span data-ttu-id="fcf38-130">成功</span><span class="sxs-lookup"><span data-stu-id="fcf38-130">Success</span></span>|
 
-## <a name="examples"></a><span data-ttu-id="24f54-131">例</span><span class="sxs-lookup"><span data-stu-id="24f54-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="fcf38-131">例</span><span class="sxs-lookup"><span data-stu-id="fcf38-131">Examples</span></span>
 
-### <a name="get-the-contoso-contract-model-by-id"></a><span data-ttu-id="24f54-132">ID で Contoso コントラクト モデルを取得する</span><span class="sxs-lookup"><span data-stu-id="24f54-132">Get the Contoso Contract model by ID</span></span>
+### <a name="get-the-contoso-contract-model-by-id"></a><span data-ttu-id="fcf38-132">ID で Contoso コントラクト モデルを取得する</span><span class="sxs-lookup"><span data-stu-id="fcf38-132">Get the Contoso Contract model by ID</span></span>
 
-<span data-ttu-id="24f54-133">このサンプルでは、Contoso 契約書ドキュメント理解モデルの ID は `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`です。</span><span class="sxs-lookup"><span data-stu-id="24f54-133">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
+<span data-ttu-id="fcf38-133">このサンプルでは、Contoso 契約書ドキュメント理解モデルの ID は `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`です。</span><span class="sxs-lookup"><span data-stu-id="fcf38-133">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
 
-#### <a name="sample-request"></a><span data-ttu-id="24f54-134">要求のサンプル</span><span class="sxs-lookup"><span data-stu-id="24f54-134">Sample request</span></span>
+#### <a name="sample-request"></a><span data-ttu-id="fcf38-134">要求のサンプル</span><span class="sxs-lookup"><span data-stu-id="fcf38-134">Sample request</span></span>
 
 ```HTTP
-GET /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}') HTTP/1.1
+GET /_api/machinelearning/models/getbyuniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 
-#### <a name="sample-response"></a><span data-ttu-id="24f54-135">応答のサンプル</span><span class="sxs-lookup"><span data-stu-id="24f54-135">Sample response</span></span>
+#### <a name="sample-response"></a><span data-ttu-id="fcf38-135">応答のサンプル</span><span class="sxs-lookup"><span data-stu-id="fcf38-135">Sample response</span></span>
 
-<span data-ttu-id="24f54-136">**Status code:** 204</span><span class="sxs-lookup"><span data-stu-id="24f54-136">**Status code:** 204</span></span>
+<span data-ttu-id="fcf38-136">**Status code:** 200</span><span class="sxs-lookup"><span data-stu-id="fcf38-136">**Status code:** 200</span></span>
 
 ```HTTP
 {
@@ -100,16 +100,16 @@ GET /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa
     "UniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc"
 }
 ```
-### <a name="get-and-delete-the-contoso-contract-model-by-id"></a><span data-ttu-id="24f54-137">ID で Contoso コントラクト モデルを取得して削除する</span><span class="sxs-lookup"><span data-stu-id="24f54-137">Get and delete the Contoso Contract model by ID</span></span>
+### <a name="get-and-delete-the-contoso-contract-model-by-id"></a><span data-ttu-id="fcf38-137">ID で Contoso コントラクト モデルを取得して削除する</span><span class="sxs-lookup"><span data-stu-id="fcf38-137">Get and delete the Contoso Contract model by ID</span></span>
 
-<span data-ttu-id="24f54-138">このサンプルでは、Contoso 契約書ドキュメント理解モデルの ID は `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`です。</span><span class="sxs-lookup"><span data-stu-id="24f54-138">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
+<span data-ttu-id="fcf38-138">このサンプルでは、Contoso 契約書ドキュメント理解モデルの ID は `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`です。</span><span class="sxs-lookup"><span data-stu-id="fcf38-138">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
 
-#### <a name="sample-request"></a><span data-ttu-id="24f54-139">要求のサンプル</span><span class="sxs-lookup"><span data-stu-id="24f54-139">Sample request</span></span>
+#### <a name="sample-request"></a><span data-ttu-id="fcf38-139">要求のサンプル</span><span class="sxs-lookup"><span data-stu-id="fcf38-139">Sample request</span></span>
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}') HTTP/1.1
+DELETE /_api/machinelearning/models/getbyuniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 
-## <a name="see-also"></a><span data-ttu-id="24f54-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="24f54-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fcf38-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="fcf38-140">See also</span></span>
 
-[<span data-ttu-id="24f54-141">Syntex ドキュメント理解モデル REST API</span><span class="sxs-lookup"><span data-stu-id="24f54-141">Syntex document understanding model REST API</span></span>](syntex-model-rest-api.md)
+[<span data-ttu-id="fcf38-141">Syntex 文書理解モデル REST API</span><span class="sxs-lookup"><span data-stu-id="fcf38-141">Syntex document understanding model REST API</span></span>](syntex-model-rest-api.md)
