@@ -393,7 +393,7 @@
             - name: プライバシーとセキュリティ
               href: basic-mobility-security/privacy-and-security.md
             - name: よく寄せられる質問
-              href: basic-mobility-security/frequently-asked-questions.md
+              href: basic-mobility-security/frequently-asked-questions.yml
             - name: モバイル デバイスをワイプする
               href: basic-mobility-security/wipe-mobile-device.md
             - name: 基本的なモビリティとセキュリティをオフにする
