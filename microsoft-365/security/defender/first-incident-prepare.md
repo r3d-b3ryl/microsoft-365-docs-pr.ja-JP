@@ -1,6 +1,6 @@
 ---
 title: 最初のインシデントのセキュリティ態勢を準備する
-description: Defender でMicrosoft 365インシデントに対して、テナントのセキュリティ態勢をMicrosoft 365します。
+description: 最初のインシデントMicrosoft 365、テナントのセキュリティ態勢を設定Microsoft 365 Defender。
 keywords: インシデント、アラート、調査、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da9147955c5da9ea727854420b3d4d160583ef73
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fcdce7f5a41c23dfe33eb75ef15b579ac12c8742
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840936"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194939"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>最初のインシデントのセキュリティ態勢を準備する
 
@@ -38,26 +38,26 @@ ms.locfileid: "52840936"
 
 インシデント処理の準備には、さまざまな種類のセキュリティ インシデントから組織のネットワークを十分に保護する必要があります。 セキュリティ インシデントのリスクを軽減するために、国立標準技術研究所 (NIST) では、リスク評価、ホスト セキュリティの強化、ネットワークの安全な構成、マルウェアの防止など、いくつかのセキュリティプラクティスを推奨しています。 
 
-Microsoft 365Defender は、インシデント防止のいくつかの側面に対処するのに役立ちます。 
+Microsoft 365 Defender、インシデント防止のいくつかの側面に対処できます。 
 
 - ゼロトラスト フレームワーク [の](/security/zero-trust/) 実装
 - Microsoft Secure Score でスコアを割り当て、セキュリティの態勢 [を決定する](microsoft-secure-score.md)
 - 脅威と脆弱性管理の脆弱性評価による [脅威の防止](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - 最新のセキュリティ脅威を理解して、セキュリティ脅威に備える
 
-## <a name="step-1-implement-zero-trust"></a>手順 1. ゼロ信頼の実装
+## <a name="step-1-implement-zero-trust"></a>手順 1。 ゼロ信頼の実装
 
-[ゼロトラスト](/security/zero-trust/) は、モバイルワークフォース、ユーザー、デバイス、アプリケーション、データなど、モダンな環境の複雑な性質を考慮した統合セキュリティ哲学とエンドツーエンド戦略です。 Microsoft 365 Defender は、すべての検出を一貫した方法で管理するための単一のウィンドウを提供することで、セキュリティ運用チームがゼロトラストの指針を実装[](/security/zero-trust/#guiding-principles-of-zero-trust)しやすくなります。 
+[ゼロトラスト](/security/zero-trust/) は、モバイルワークフォース、ユーザー、デバイス、アプリケーション、データなど、モダンな環境の複雑な性質を考慮した統合セキュリティ哲学とエンドツーエンド戦略です。 Microsoft 365 Defender では、すべての検出を一貫した方法で管理するための単一のウィンドウを提供することで、セキュリティ運用チームがゼロトラストの指針を簡単に[](/security/zero-trust/#guiding-principles-of-zero-trust)実装できます。 
 
-Microsoft 365 Defender のコンポーネントは、デバイス コンプライアンス ポリシーの情報ソースとして Microsoft Defender for Endpoint (MDE) または他のモバイル セキュリティ ベンダーからのデータを統合し、デバイス ベースの条件付きアクセス ポリシーを実装することで、ゼロトラストの条件付きアクセス ポリシーを確立するために実装されているルールの違反を表示できます。 
+Microsoft 365 Defender のコンポーネントは、デバイス コンプライアンス ポリシーの情報ソースとして Microsoft Defender for Endpoint または他のモバイル セキュリティ ベンダーからのデータを統合し、デバイスベースの条件付きアクセス ポリシーを実装することで、ゼロトラストの条件付きアクセス ポリシーを確立するために実装されているルールの違反を表示できます。 
 
-デバイスリスクは、そのデバイスのユーザーがアクセスできるリソースに直接影響します。 特定の条件に基づくリソースへのアクセス拒否は、ゼロ信頼の主なテーマであり、信頼レベルの基準を決定するためにMicrosoft 365 Defender が必要な情報を提供します。 たとえば、Microsoft 365 Defender は[脅威と脆弱性の管理] ページを通じてデバイスのソフトウェア バージョン レベルを提供し、条件付きアクセス ポリシーでは古いバージョンまたは脆弱なバージョンのデバイスを制限します。
+デバイスリスクは、そのデバイスのユーザーがアクセスできるリソースに直接影響します。 特定の条件に基づくリソースへのアクセス拒否は、ゼロ信頼の主なテーマであり、信頼レベルの基準を決定するためにMicrosoft 365 Defender情報を提供します。 たとえば、Microsoft 365 Defenderは[脅威と脆弱性の管理] ページを通じてデバイスのソフトウェア バージョン レベルを提供し、条件付きアクセス ポリシーは古いバージョンまたは脆弱なバージョンのデバイスを制限します。
 
 自動化は、ゼロトラスト環境を実装して維持する上で重要な部分であり、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数も減らします。 Microsoft 365 Defender のコンポーネントは、修復アクション[(Microsoft 365](m365d-autoir.md)セキュリティ センターでのインシデントの調査と呼ばれる)、通知アクション[、ServiceNow](https://microsoft.service-now.com/sp/)などのサポート チケットの作成など、自動化できます。
 
-## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2. 組織のセキュリティ体制を決定する
+## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2。 組織のセキュリティ体制を決定する
 
-次に、組織は[Defender](microsoft-secure-score.md)の Microsoft Secure Score をMicrosoft 365して、現在のセキュリティの状態を判断し、その改善方法に関する推奨事項を検討できます。 スコアが高いほど、組織によってセキュリティに関する推奨事項と改善のアクションが多くなります。 セキュリティで保護されたスコアの推奨事項は、さまざまな製品間で取り上げ、組織がスコアを上げるのをさらに高くすることができます。 
+次に、組織は Microsoft [Secure Score](microsoft-secure-score.md)を使用して、Microsoft 365 Defenderを決定し、その改善方法に関する推奨事項を検討できます。 スコアが高いほど、組織によってセキュリティに関する推奨事項と改善のアクションが多くなります。 セキュリティで保護されたスコアの推奨事項は、さまざまな製品間で取り上げ、組織がスコアを上げるのをさらに高くすることができます。 
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Microsoft セキュリティ センターの Microsoft Secure Score の例":::
  
@@ -65,7 +65,7 @@ Microsoft 365 Defender のコンポーネントは、デバイス コンプラ�
 
 インシデントを防止すると、セキュリティ運用の取り組みを合理化し、重要で重要なセキュリティ インシデントに集中できます。 ソフトウェアの脆弱性は、多くの場合、データの盗難、データの損失、またはビジネス操作の中断につながる可能性のある攻撃の予防可能なエントリ ポイントです。 攻撃が継続的に行なえない場合、セキュリティ運用は、組織内で許容できるレベルの脆弱性の暴露を達成し、維持するために [努力する必要](../defender-endpoint/tvm-exposure-score.md) があります。
 
-ソフトウェアの修正プログラムの進行状況を確認するには、Defender for Endpoint の [脅威と脆弱性の管理] ページを参照し、Microsoft 365 Defender から [その他のリソース] タブに **アクセス** できます。 [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+ソフトウェアの修正プログラムの進行状況を確認するには、Defender for Endpoint の [脅威と脆弱性の管理] ページにアクセスし、Microsoft 365 Defender [その他のリソース] タブから **アクセス** できます。 [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Microsoft セキュリティ センターの [脅威と脆弱性] ページの例"::: 
  

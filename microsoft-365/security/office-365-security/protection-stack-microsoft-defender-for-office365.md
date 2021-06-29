@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Microsoft Defender の脅威フィルター スタックを通じて受信メッセージのパスに従って、Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1113d04cabdabe2925242cb18dde78daf9ef6e2c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683297"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194807"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
 
@@ -51,7 +51,7 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
 
 送信者インテリジェンスの機能は、スパム、バルク、偽装、および不正なスプーフィング メッセージをキャッチし、フィッシング検出を考慮に入れするために重要です。 これらの機能の大部分は個別に構成できます。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="MDO でのフィルター処理のフェーズ 2 は、送信者インテリジェンスです。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Defender のフィルター処理のフェーズ 2 はOffice 365インテリジェンスです。":::
 
 1. **アカウントが異常な** 動作を持ち、侵害と一致すると、アカウント侵害検出トリガーとアラートが発生します。 場合によっては、組織のセキュリティ運用チームによって問題が解決されるまで、ユーザー アカウントがブロックされ、それ以上電子メール メッセージを送信できない場合があります。
 
@@ -133,9 +133,9 @@ Microsoft Defender for Office 365保護またはフィルター 処理スタッ�
 
 最終的な図 (構成するダイアグラムのすべての部分と同様) は、製品の成長と開発に応じて *変更される可能性があります*。 このページをブックマーク **し、更新** 後に確認する必要がある場合は、下部にあるフィードバック オプションを使用します。 レコードの場合、これはすべてのフェーズを順番に持つスタックです。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="MDO で 1 ~ 4 の順序でフィルター処理のすべてのフェーズ。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Defender のフィルター処理のすべてのフェーズは、Office 365順に 1 ~ 4 です。":::
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 Microsoft Defender for Office 365 * 今すぐ _を **設定する必要** がありますか? このスタック (_now*) を使用して[](protect-against-threats.md)、組織の保護を開始します。
 

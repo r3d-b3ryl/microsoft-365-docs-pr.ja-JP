@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8297fac0f733b93b1d8e3eabb25eeee7b1e07acb
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 5eca3b7e712b1fc5bdb876630c47bd24e73c7c76
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821975"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194687"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>サポートされているオペレーティング システム、プラットフォーム、および機能 - 脅威と脆弱性の管理
 
@@ -56,16 +56,16 @@ Windows Server 2008 R2 | はい | はい | はい | はい | はい
 Windows Server 2012 R2 | はい | はい | はい | はい | はい
 Windows Server 2016 | はい | はい | はい | はい | はい
 Windows Server 2019 | はい | はい | はい | はい | はい
-macOS 10.14 "Mojave" 以上 | はい | はい | はい (プレビュー) | はい (プレビュー) | はい (プレビュー)
-Red Hat Enterprise Linux 7.2 以上 **(プレビュー) (** \* 以下の「重要な」通知を参照) | はい | はい | はい | はい | はい
-CentOS 7.2 以上 **(プレビュー)** | はい | はい | はい | はい | はい
-Ubuntu 16.04 LTS 以上の LTS **(プレビュー)** | はい | はい | はい | はい | はい
-Oracle Linux 7.2 以上 **(プレビュー)** | はい | はい | はい | はい | はい
+macOS 10.14 "Mojave" 以上 | はい | はい | はい | はい | はい 
+Red Hat Enterprise Linux 7.2 以上 ( \* 以下の「重要な」通知を参照) | はい | はい | はい | はい | はい
+CentOS 7.2 以上 | はい | はい | はい | はい | はい
+Ubuntu 16.04 LTS 以上の LTS | はい | はい | はい | はい | はい
+Oracle Linux 7.2 以上 | はい | はい | はい | はい | はい
 
 >[!IMPORTANT]
 > \*Red Hat Enterprise Linux: "Microsoft Defender for Endpoint サービスの一部として提供され、表示される脆弱性データは、Red Hat, Inc.から"AS IS" という生の形式で提供され、最新の状態ではない可能性があります。 Red Hat Security Data API でアクセス可能なデータは、クリエイティブ コモンズ アトリビューション 4.0 インターナショナル ライセンスの下でライセンスされています。 このデータを使用する場合は、リスクを負います。 Microsoft およびサード パーティのサプライヤーは、非侵害、商品性、特定の目的への適性に関する黙示の保証を含む、結果的および他の間接的損害に対する一切の責任および黙示的保証を否認します。 © 2020 Red Hat. All rights reserved。 © 2020 Microsoft。 すべての権限が予約されています。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [前提条件&アクセス許可](tvm-prerequisites.md)

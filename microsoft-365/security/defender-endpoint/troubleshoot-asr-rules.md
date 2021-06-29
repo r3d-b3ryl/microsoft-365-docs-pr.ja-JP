@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c043e97d6c02e4f41d000e9ce8cfea4a0950252a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 65e3e8d1baef7ca4440824c9a262f0b5f696b657
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246146"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194747"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>ATP ASR ルールの Microsoft Defender のレポートとトラブルシューティング
 
@@ -42,7 +42,7 @@ ms.locfileid: "52246146"
 
 Microsoft Defender for Endpoint の最も強力な機能の 1 つは、高度な検索です。 高度な狩猟に慣れていない場合は、高度な狩猟で脅威を積極的 [に探す方法を参照してください](advanced-hunting-overview.md)。
 
-高度な検索はクエリ ベース (Kusto Query Language) の脅威検索ツールで、MDE エンドポイント検出と応答 (EDR) がすべてのコンピューターから収集する、キャプチャされた (生の) データの最大 30 日間を探索できます。 高度な検索を通じて、イベントを積極的に検査して、興味深いインジケーターとエンティティを見つけ出します。 データへの柔軟なアクセスは、既知の脅威と潜在的な脅威の両方に対する抑制されていない検出に役立ちます。
+高度な検索はクエリ ベース (Kusto Query Language) の脅威検索ツールで、デバイスから Defender for Endpoint が収集するキャプチャされた (生の) データの最大 30 日間を探索できます。 高度な検索を通じて、イベントを積極的に検査して、興味深いインジケーターとエンティティを見つけ出します。 データへの柔軟なアクセスは、既知の脅威と潜在的な脅威の両方に対する抑制されていない検出に役立ちます。
 
 高度な検索を通じて、ASR ルール情報を抽出し、レポートを作成し、特定の ASR ルール監査またはブロック イベントのコンテキストに関する詳細な情報を取得できます。
 
@@ -70,7 +70,7 @@ ASR ルールの影響と運用をトラブルシューティングするため�
 
 ### <a name="querying-which-rules-are-active"></a>アクティブなルールのクエリ
 ASR ルールが既に有効になっているかどうかを判断する最も簡単な方法の 1 つは、PowerShell コマンドレット Get-MpPreference です。
-次に例を示します:
+次に例を示します。
 
 :::image type="content" source="images/getmpreferencescriptnew.png" alt-text="mppreference スクリプトを取得する":::
 

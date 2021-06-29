@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 077411e5af5825efcf81d19ce8cb72ef850ae17b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 7243e8f6fad225e6c4570184736e8d6588466d0a
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054314"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194963"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
 
@@ -52,10 +52,10 @@ ms.locfileid: "53054314"
 | 手順 | サンプル ファイル名 | BundleIdentifier |
 |-|-|-|
 | [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
-| [エンドポイント用 Microsoft Defender のシステム拡張機能を承認する](#approve-system-extensions) | MDATP_SysExt.xml | 該当なし |
-| [Microsoft Defender for Endpoint のカーネル拡張機能の承認](#download-the-onboarding-package) | MDATP_KExt.xml | 該当なし |
+| [エンドポイント用 Microsoft Defender のシステム拡張機能を承認する](#approve-system-extensions) | MDATP_SysExt.xml | N/A |
+| [Microsoft Defender for Endpoint のカーネル拡張機能の承認](#download-the-onboarding-package) | MDATP_KExt.xml | N/A |
 | [Microsoft Defender for Endpoint へのフル ディスク アクセスを許可する](#full-disk-access) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
-| [ネットワーク拡張ポリシー](#network-filter) | MDATP_NetExt.xml | 該当なし |
+| [ネットワーク拡張ポリシー](#network-filter) | MDATP_NetExt.xml | N/A |
 | [Microsoft AutoUpdate (MAU) の構成](mac-updates.md#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
 | [Microsoft Defender for Endpoint 構成設定](mac-preferences.md#intune-profile-1)<br/><br/> **注:** macOS 用のサード パーティ製 AV の実行を計画している場合は、 に設定 `passiveMode` します `true` 。 | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [エンドポイントおよび MS AutoUpdate (MAU) 通知の Microsoft Defender の構成](mac-updates.md) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 または com.microsoft.wdav.tray |
@@ -101,12 +101,12 @@ ms.locfileid: "53054314"
     > [!div class="mx-imgBorder"]
     > ![カスタム構成プロファイルの作成](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. プロファイルの名前を選択します。たとえば、「mDE オンボーディング for macOS」。 **[次へ]** をクリックします。
+1. プロファイルの名前を選択します。たとえば、「Defender または Endpoint onboarding for macOS」。 **[次へ]** をクリックします。
 
     > [!div class="mx-imgBorder"]
     > ![カスタム構成プロファイル - 名前](images/mdatp-6-systemconfigurationprofiles-2.png)
 
-1. 構成プロファイル名の名前を選択します。たとえば、「mDE onboarding for macOS」。
+1. 構成プロファイル名の名前 (たとえば、「Defender for Endpoint onboarding for macOS」) を選択します。
 1. 構成プロファイル ファイルとしてWindowsDefenderATPOnboarding.xmlオンボーディング パッケージから抽出した intune/WindowsDefenderATPOnboarding.xmlを選択します。
 
     > [!div class="mx-imgBorder"]
@@ -172,7 +172,7 @@ ms.locfileid: "53054314"
 
 [**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)を [、GitHubリポジトリからダウンロードします](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)。
 
-プロファイル名として "MDE Full Disk Access" を使用し **、fulldisk.mobileconfig** を構成プロファイル名としてダウンロードして、上記の 「オンボード BLOB」の手順に従います。 [](#onboarding-blob)
+プロファイル名として "Defender for [Endpoint](#onboarding-blob) Full Disk Access" を使用し **、fulldisk.mobileconfig** を構成プロファイル名としてダウンロードして、上記の 「オンボード BLOB」の手順に従います。
 
 ### <a name="network-filter"></a>ネットワーク フィルター
 
@@ -180,7 +180,7 @@ ms.locfileid: "53054314"
 
 [**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)を [、GitHubリポジトリからダウンロードします](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)。
 
-プロファイル名として "MDE ネットワーク フィルター" を使用し、構成プロファイル名としてダウンロードした **netfilter.mobileconfig** を使用して、上記の 「オンボード BLOB」の手順に従います。 [](#onboarding-blob)
+プロファイル名として "Defender for [Endpoint](#onboarding-blob) Network Filter" を使用し、構成プロファイル名としてダウンロードした **netfilter.mobileconfig** を使用して、上記の 「オンボード BLOB」の手順に従います。
 
 ### <a name="notifications"></a>通知
 
@@ -188,7 +188,7 @@ ms.locfileid: "53054314"
 
 ダウンロード [**notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) from [our GitHub リポジトリ](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-プロファイル名として "MDE 通知" を使用し、構成プロファイル名として **notif.mobileconfig** をダウンロードして、上記の 「オンボード BLOB」の手順に従います。 [](#onboarding-blob)
+プロファイル名として "Defender for Endpoint Notifications" を使用し、構成プロファイル名として **notif.mobileconfig** をダウンロードして、上記の 「オンボード BLOB」の手順に従います。 [](#onboarding-blob)
 
 ### <a name="view-status"></a>状態の表示
 

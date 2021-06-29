@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: この記事では、Azure ExpressRoute ルーティング要件、回線、およびルーティング ドメインについて説明します。Office 365。
-ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b27e3cfe41af8cf5e444f1221f1cee2e3bbf5826
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687171"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194795"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのルーティング
 
@@ -85,14 +85,6 @@ Microsoft がこれらの双方向トラフィック フローのためにネッ
 
 Microsoft ピアリング ルーティング ドメインを使用してピアリング関係を構成し、適切なアクセスが承認されると、ExpressRoute で利用可能なすべての PaaS および SaaS サービスを確認できます。 ExpressRoute Office 365サービスは[、BGP](./bgp-communities-in-expressroute.md)コミュニティまたはルート フィルターを使用して[管理できます](/azure/expressroute/how-to-routefilter-portal)。
   
-その他のアプリケーション (Office 365 ビデオなど) は、Office 365アプリケーションです。ただし、Office 365ビデオは、ポータル、ストリーミング サービス、およびコンテンツ配信ネットワークの 3 つの異なるコンポーネントで構成されます。 ポータルは SharePoint Online 内に、ストリーミング サービスは Azure Media Services 内に、コンテンツ配信ネットワークはネットワーク内にAzure CDN。 次の表に、これらのコンポーネントの概要を示します。
-
-|**コンポーネント**|**基になるアプリケーション**|**オンライン BGP SharePointに含まれているCommunity?**|**使用法**|
-|:-----|:-----|:-----|:-----|
-|Office 365ビデオ ポータル  <br/> |SharePoint Online  <br/> |はい  <br/> |構成、アップロード  <br/> |
-|Office 365ビデオ ストリーミング サービス  <br/> |Azure Media Services  <br/> |いいえ  <br/> |ストリーミング サービスは、ビデオがサーバーから利用できない場合に使用CDN  <br/> |
-|Office 365ビデオ コンテンツ配信ネットワーク  <br/> |Azure CDN  <br/> |いいえ  <br/> |ビデオのダウンロード/ストリーミングの主なソース。 [詳しくは、ビデオ ネットワークOffice 365をご覧ください](https://support.office.com/article/Office-365-Video-networking-Frequently-Asked-Questions-FAQ-2bed67a1-4052-49ff-a4ce-b7e6530eb98e)。  <br/> |
-
 Microsoft ピアリングOffice 365使用できる各機能は、アプリケーションの種類と FQDN Office 365[](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)エンドポイントの記事に記載されています。 表で FQDN を使用する理由は、顧客が PAC ファイルまたは他のプロキシ構成を使用してトラフィックを管理できる理由です。PAC ファイルなどの[Office 365](./managing-office-365-endpoints.md)エンドポイントの管理に関するガイドを参照してください。
   
 一部の状況では、1 つ以上のサブ FQDN が上位レベルのワイルドカード ドメインとは異なる方法でアドバタイズされるワイルドカード ドメインを使用しました。 これは通常、ワイルドカードが ExpressRoute とインターネットにアドバタイズされるサーバーの長い一覧を表し、宛先の小さなサブセットがインターネットにのみアドバタイズされる場合、または逆の場合に発生します。 相違点を理解するには、以下の表を参照してください。
@@ -231,9 +223,9 @@ ExpressRoute を使用した選択的ルーティングは、テスト、ユー�
 
 4. **BGP コミュニティ**- [BGP](./bgp-communities-in-expressroute.md)コミュニティ タグに基づくフィルター処理を使用すると、お客様は、ExpressRoute をOffice 365するアプリケーションと、インターネットを通過するアプリケーションを特定できます。
 
-ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/erorouting]()
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/erorouting]()
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
   
@@ -259,6 +251,6 @@ ExpressRoute を使用した選択的ルーティングは、テスト、ユー�
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 の URL および IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 URL および IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)

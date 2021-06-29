@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
-ms.openlocfilehash: ba01fa45ca9a4e2e5b3597378bf7ddafc8be3f56
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 50060e36a0dd6d82ccbdf6d2bb8a00b2bf5e9d6d
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768748"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195011"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
@@ -49,13 +49,13 @@ Defender for Office 365試用版は 90 日間利用可能で、すべてのユ�
 
 既定では、これらのポリシーは組織内のすべてのユーザーを対象としますが、管理者はセットアップ中またはセットアップ後にポリシーをカスタマイズして、特定のユーザーにのみ適用できます。
 
-セットアップ中に、MDO 応答機能 (MDO P2 または同等の機能) も組織全体に対して設定されます。 ポリシースコープは必要ありません。
+セットアップ中に、Defender for Office 365応答機能 (Defender Office 365 P2 または同等の場合) も組織全体に対してセットアップされます。 ポリシースコープは必要ありません。
 
 ## <a name="licensing"></a>ライセンス
 
 試用版のセットアップの一環として、ライセンスOffice 365 Defender が組織に自動的に適用されます。 ライセンスは、最初の 90 日間は無料です。
 
-## <a name="permissions"></a>権限
+## <a name="permissions"></a>アクセス許可
 
 試用版を開始または終了するには、グローバル管理者またはセキュリティ管理者の役割のメンバーである必要Azure Active Directory。 詳細については、「管理役割 [について」を参照してください](../../admin/add-users/about-admin-roles.md)。
 

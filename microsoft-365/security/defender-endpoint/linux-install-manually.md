@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105574"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195023"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux での Microsoft Defender for Endpoint の手動展開
 
@@ -92,7 +92,7 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
-    または、選択したデバイス上の新機能を確認する場合は、Linux 用 MDE を *insiders-fast チャネルに展開する必要* があります。
+    または、選択したデバイス上の新機能を確認する場合は、Linux 上の Microsoft Defender for Endpoint を *insiders-fast チャネルに展開* できます。
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -120,7 +120,7 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    たとえば、SLES 12 を実行し、Prod チャネルから Linux 用 MDE を展開する場合は、次の *コマンドを実行* します。
+    たとえば、SLES 12 を実行し、Prod チャネルから Linux 上の Microsoft Defender for Endpoint を展開する場合は、次の *コマンドを実行* します。
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -400,13 +400,13 @@ Options:
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>サーバーから実稼働チャネルInsiders-Fast移行する方法
 
-1. Linux 用 MDE の "Insiders-Fast チャネル" バージョンをアンインストールします。
+1. Linux 上のエンドポイント用 Defender の "Insiders-Fast チャネル" バージョンをアンインストールします。
 
     ``
     sudo yum remove mdatp
     ``
 
-1. Linux の MDE を無効Insiders-Fastレポ  ``
+1. Linux サーバーのエンドポイントの Defender を無効Insiders-Fastします。  ``
     sudo yum repolist
     ``
 

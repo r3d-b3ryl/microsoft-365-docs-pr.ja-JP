@@ -19,12 +19,12 @@ description: 脅威を効率的に調査して対応するには、Microsoft 365
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d3dc8c205d5edfe455884d64030c7a6070762adb
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: bb72c99ae0b80c4091e79801c5515190811324a7
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108549"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195035"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -56,7 +56,7 @@ ms.locfileid: "53108549"
 
 ## <a name="improvements-to-threat-hunting-experience"></a>脅威ハンティング エクスペリエンスの改善
 
-### <a name="introduction-of-alert-id-for-mdo-alerts-within-explorerreal-time-detections-preview"></a>エクスプローラー/リアルタイム検出内の MDO アラートのアラート ID の概要 (プレビュー)
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections-preview"></a>Explorer/リアルタイム検出 (プレビュー) 内Office 365 Defender 用アラート ID の概要
 
 今日、アラートから脅威エクスプローラーに移動すると、エクスプローラー内でフィルター処理されたビューが開き、そのビューはアラート ポリシー ID (ポリシー ID はアラート ポリシーの一意の識別子) でフィルター処理されます。
 脅威エクスプローラーとリアルタイム検出でアラート ID (以下のアラート ID の例を参照) を導入して、特定のアラートに関連するメッセージと電子メールの数を確認することで、この統合の関連性を高めます。 また、メッセージがアラートの一部だったか、そのメッセージから特定のアラートに移動したのかも確認できます。
@@ -209,7 +209,7 @@ Threat Explorer では、次のエクスペリエンスでユーザー タグに
 
 - URL フライアウトの [クリック] セクションに、クリックされた完全な URL  (URL の一部であるクエリ パラメーターを含む) を表示します。 現在、URL ドメインとパスはタイトル バーに表示されます。 その情報を拡張して、完全な URL を表示します。
 
-- URL フィルター *(URL* とURL ドメインと URL ドメイン、パスの間の *修正):* 更新プログラムは、URL/クリックの評決を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 次に例を示します。
+- URL フィルター *(URL* とURL ドメインと URL ドメイン、パスの間の *修正):* 更新プログラムは、URL/クリックの評決を含むメッセージの検索に影響します。 プロトコルに依存しない検索のサポートが有効になっているので、使用せずに URL を検索できます `http` 。 既定では、別の値が明示的に指定されていない限り、URL 検索は http にマップされます。 以下に例を示します。
   - URL、URL ドメイン、URL ドメイン、および URL の [ドメイン] および [パス] フィルター フィールドで、プレフィックスの付きまたは指定 `http://` **なしで** 検索します。   検索は同じ結果を表示する必要があります。
   - URL でプレフィックス `https://` を検索 **します**。 値を指定しない場合、プレフィックス `http://` が使用されます。
   - `/` URL パス **、URL** ドメイン **、URL** ドメイン、およびパス フィールドの先頭と末尾 **で無視** されます。 `/` URL フィールドの末尾 **は無視** されます。
@@ -544,7 +544,7 @@ URL クリックのレポートを Microsoft Excelにエクスポートして、
 
 - セキュリティ コンプライアンス センター&、次のいずれかの役割が割り当てられている必要があります。
 
-  - 組織管理
+  - 組織の管理
   - セキュリティ管理者 (この管理者は、管理者センター Azure Active Directory割り当てることができます ( <https://aad.portal.azure.com> )
   - セキュリティ閲覧者
 

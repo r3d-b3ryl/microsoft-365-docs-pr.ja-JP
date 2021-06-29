@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365Defender の概要(MDO、MDE、MDI、MCAS の組み合わせ)
-description: Microsoft 365 Defender の利点は、Microsoft Defender for Office 365 (MDO) と Microsoft Defender for Endpoint (MDE) と Microsoft Defender for Identity (MDI) と Microsoft Cloud App Security (MCAS) を組み合わせたもの。 この記事では、管理者Microsoft 365の詳細について説明します。
+title: Microsoft 365 Defenderの概要、MDO、MDE、MDI、MCAS の組み合わせ
+description: Microsoft 365 Defenderでの利点は、Microsoft Defender for Office 365 (MDO) と Microsoft Defender for Endpoint (MDE) を、Microsoft Defender for Identity (MDI) および Microsoft Cloud App Security (MCAS) と組み合わせて使用します。 この記事では、管理者Microsoft 365 Defenderの概要を説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティ センター、モニター、レポート、ID、データ、デバイス、アプリ
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -19,14 +19,14 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: e88f23013a1a7d9fbeb6ae1d72592182eaaa7547
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 8e37572b07c6d81abc531e204a8cb060f1f6402c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841680"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194999"
 ---
-# <a name="microsoft-365-defender-overview"></a>Microsoft 365Defender の概要
+# <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,9 +38,9 @@ ms.locfileid: "52841680"
 
 > Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
 
-**Microsoft 365 Defender** ( ) は、メール、コラボレーション、ID、およびデバイスの脅威に対する保護、検出、調査、および応答を中央ポータル [https://security.microsoft.com](https://security.microsoft.com) で結合します。    
+**Microsoft 365 Defender** ( ) は、中央ポータルの電子メール、コラボレーション、ID、およびデバイスの脅威に対する保護、検出、調査、および応答を [https://security.microsoft.com](https://security.microsoft.com) 組み合わせたものになります。    
 
-Microsoft 365Defender は、既存の Microsoft セキュリティ ポータル (Microsoft Defender セキュリティ センター およびコンプライアンス センター Office 365セキュリティ &機能を統合します。 セキュリティ センターは、情報への迅速なアクセス、よりシンプルなレイアウト、およびより簡単に使用できるように関連情報をまとめることを重視しています。 このセンターには次のものが含まれます。
+Microsoft 365 Defenderは、既存の Microsoft セキュリティ ポータル (Microsoft Defender セキュリティ センター および Office 365 セキュリティ &コンプライアンス センターなど) から機能を統合します。 セキュリティ センターは、情報への迅速なアクセス、よりシンプルなレイアウト、およびより簡単に使用できるように関連情報をまとめることを重視しています。 このセンターには次のものが含まれます。
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 は、メールと Office 365 リソースを保護するための一連の防止、検出、調査、およびハンティング機能を使用して、組織が企業を保護するのに役立ちます。
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** は、組織内のデバイスに対して、予防的な保護、侵害後の検出、自動調査、および対応を提供します。
@@ -48,24 +48,24 @@ Microsoft 365Defender は、既存の Microsoft セキュリティ ポータル 
 
 Office 365 セキュリティ/コンプライアンス センターまたは Microsoft Defender セキュリティ センターからの変更点に関する情報が必要な場合は、以下を参照してください。
 
-- [Defender for Office 365 Defender Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
-- [Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
+- [Microsoft 365 Defender の Defender for Office 365](microsoft-365-security-center-mdo.md)
+- [Microsoft 365 Defender の Microsoft Defender for Endpoint](microsoft-365-security-center-mde.md)
 
 > [!NOTE]
-> セキュリティ Microsoft 365は、既存の役割ベースのアクセスを使用して適用し、各セキュリティ モデルを統合ポータルに移動します。 統合された各ワークロード (MDO や MDE など) には、独自の役割ベースのアクセス権があります。 製品に既に存在する役割は、セキュリティ ポータルのMicrosoft 365自動的に統合されます。 ただし、MCAS の役割とアクセス許可は MCAS で引き続き処理されます。
+> セキュリティ Microsoft 365は、既存の役割ベースのアクセスを使用して適用し、各セキュリティ モデルを統合ポータルに移動します。 各コンバージド ワークロードには、独自のロール ベースのアクセス権があります。 製品に既に存在する役割は、セキュリティ ポータルのMicrosoft 365自動的に統合されます。 ただし、MCAS の役割とアクセス許可は MCAS で引き続き処理されます。
 
 ## <a name="what-to-expect"></a>想定される変化
 
-Office 365 セキュリティ とコンプライアンス センター (protection.office.com) と Microsoft Defender セキュリティ センター (securitycenter.microsoft.com) で使用するセキュリティ コンテンツはすべて、Microsoft 365 Defender で *見つMicrosoft 365できます*。
+Office 365 セキュリティ とコンプライアンス センター (protection.office.com) と Microsoft Defender セキュリティ センター (securitycenter.microsoft.com) で使用するセキュリティ コンテンツはすべて、Microsoft 365 Defender で *確認できます*。
 
-Microsoft 365Defender は、セキュリティ チームがさまざまなワークロードからのシグナルを一連の統合エクスペリエンスに取り込み、攻撃を調査して対応するのに役立ちます。
+Microsoft 365 Defenderチームは、さまざまなワークロードからのシグナルを一連の統合エクスペリエンスに取り込み、攻撃を調査して対応するのに役立ちます。
 
 - インシデントとアラート
 - 検索
 - アクション センター
 - 脅威の分析
 
-Microsoft 365Defender は *、Microsoft* Defender for microsoft Defender for Office 365エンドポイントを統合するため、統一性、明快さ、共通の目標を強調しています。 マージは、以下に示す優先順位に基づいて行われたので、各セキュリティ スイートが次の組み合わせに持ち込んだ機能を犠牲にすることなく行いました。
+Microsoft 365 Defender、Microsoft Defender  for microsoft Defender for Office 365エンドポイントを統合する場合、統一、明快さ、共通の目標を強調しています。 マージは、以下に示す優先順位に基づいて行われたので、各セキュリティ スイートが次の組み合わせに持ち込んだ機能を犠牲にすることなく行いました。
 
 - 共通の構成要素
 - 一般的な用語
@@ -73,17 +73,17 @@ Microsoft 365Defender は *、Microsoft* Defender for microsoft Defender for Off
 - 他のワークロードとの機能のパリティ
 
 > [!NOTE]
-> Microsoft 365お客様が移行手順を実行したり、新しいライセンスを購入したりすることなく、Defender にアクセスできます。 たとえば、この新しいポータルは、Microsoft Defender for Office 365 プラン 1 とプラン 2 と同様に、E3 サブスクリプションを持つ管理者がアクセスできます。ただし、Exchange Online Protectionまたは MDO プラン 1 のお客様には、サブスクリプション ライセンスでサポートされているセキュリティ機能だけが表示されます。 新しいセンターの目的は、セキュリティを一元化する方法です。
+> Microsoft 365 Defender移行手順を実行したり、新しいライセンスを購入したりすることなく、アクセスできます。 たとえば、この新しいポータルは、Microsoft Defender for Office 365 プラン 1 とプラン 2 と同様に、E3 サブスクリプションを持つ管理者がアクセスできます。ただし、Exchange Online Protectionプラン 1 のお客様Office 365 Defender には、サブスクリプション ライセンスでサポートされているセキュリティ機能だけが表示されます。 新しいセンターの目的は、セキュリティを一元化する方法です。
 
 ## <a name="unified-investigations"></a>統一された調査
 
-セキュリティ センターを統合すると、複数のセキュリティ インシデントを調査する場所が 1 つMicrosoft 365。 主な例は **、[インシデント**] の [インシデント] & **Defender** のクイック起動時のMicrosoft 365です。
+セキュリティ センターを統合すると、複数のセキュリティ インシデントを調査する場所が 1 つMicrosoft 365。 主な例は、[**インシデント**] の下の [インシデント **] &の** クイック起動時のアラートMicrosoft 365 Defender。
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Defender の [インシデント] ページMicrosoft 365します。":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="[インシデント] ページ (Microsoft 365 Defender)。":::
 
 インシデント名を選択すると、収束セキュリティ センターの値を示すページが表示されます。
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Defender のインシデントの概要ページMicrosoft 365例":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="インシデントの概要ページの例Microsoft 365 Defender":::
 
 <!--
 ![Example of the Summary page for an incident in Microsoft 365 Defender](../../media/converged-incident-info-3.png)
@@ -93,7 +93,7 @@ Microsoft 365Defender は *、Microsoft* Defender for microsoft Defender for Off
 
 環境内のインシデントを確認し、これらのタブをドリルダウンし、さまざまな種類の脅威に対してインシデントに提供された情報にアクセスする方法について理解を深める方法を実践してください。
 
-詳細については、「Defender での[インシデント」をMicrosoft 365してください](incidents-overview.md)。
+詳細については、「インシデント」を参照[Microsoft 365 Defender。](incidents-overview.md)
 
 ## <a name="improved-processes"></a>改善されたプロセス
 
@@ -107,23 +107,23 @@ Microsoft 365Defender は *、Microsoft* Defender for microsoft Defender for Off
 
 ![エンドポイントの役割とグループ、役割、およびデバイス グループを表示する [アクセス許可と役割] ページ。](../../media/converged-roles-5.png)
 
- Defender へのアクセスMicrosoft 365グローバル ロールを使用Azure Active Directoryカスタム ロールを使用して構成されます。 Defender for Endpoint については、「[Microsoft Defender セキュリティ センターへのユーザー アクセスの割り当て](/microsoft-365/security/defender-endpoint/assign-portal-access)」をご覧ください。 [Defender for Office 365] については、「コンプライアンス センターのアクセス許可」および「Microsoft 365 [Defender」をMicrosoft 365してください](../office-365-security/permissions-microsoft-365-compliance-security.md)。
+ グローバル ロールMicrosoft 365 Defenderカスタム ロールを使用してAzure Active Directoryアクセスを構成します。 Defender for Endpoint については、「[Microsoft Defender セキュリティ センターへのユーザー アクセスの割り当て](/microsoft-365/security/defender-endpoint/assign-portal-access)」をご覧ください。 [Defender for Office 365] については、「Microsoft 365 コンプライアンス センター および Microsoft 365 Defender」[を参照してください](../office-365-security/permissions-microsoft-365-compliance-security.md)。
 
 - [Microsoft 365 Defender へのアクセスを管理する](m365d-permissions.md)方法の詳細
-- Defender でカスタム ロールを[作成する方法の](custom-roles.md)Microsoft 365する
+- カスタム ロールを作成する[方法の詳細については](custom-roles.md)、Microsoft 365 Defender
 
 > [!NOTE]
-> Microsoft Defender for Endpoint in Microsoft 365 Defender は[、Microsoft Defender](./mssp-access.md)セキュリティ センターでアクセスを許可するのと同じ方法で、マネージド セキュリティ サービス プロバイダー [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)へのアクセス許可をサポートしています。
+> microsoft Defender for Endpoint in Microsoft 365 Defender では[、Microsoft Defender](./mssp-access.md)セキュリティ センターでのアクセス許可と同じ方法で、マネージド セキュリティ サービス プロバイダー [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)へのアクセス許可をサポートしています。
 
 ### <a name="integrated-reports"></a>統合レポート
 
-レポートは、Defender でもMicrosoft 365されます。 管理者は、一般的なセキュリティ レポートから始めて、エンドポイント、メール、コラボレーションに関する特定のレポートに分岐できます。 ここでのリンクは、ワークロード構成に基づいて動的に生成されます。
+レポートは、レポート内でもMicrosoft 365 Defender。 管理者は、一般的なセキュリティ レポートから始めて、エンドポイント、メール、コラボレーションに関する特定のレポートに分岐できます。 ここでのリンクは、ワークロード構成に基づいて動的に生成されます。
 
 ### <a name="quickly-view-your-microsoft-365-environment"></a>Microsoft 365 環境をすばやく表示する
 
 **ホーム** ページには、セキュリティ チームが必要とする一般的なカードの多くが表示されます。 カードとデータの構成は、ユーザーの役割によって異なります。 セキュリティ センター Microsoft 365役割ベースのアクセス制御を使用する場合、役割ごとに、毎日のジョブにとってより意味のあるカードが表示されます。  
 
-この一目でわかる情報は、組織内の最新の活動についていくのに役立ちます。 Microsoft 365Defender は、さまざまなソースからの信号をまとめ、ユーザーの環境を全体的にMicrosoft 365します。
+この一目でわかる情報は、組織内の最新の活動についていくのに役立ちます。 Microsoft 365 Defender異なるソースからの信号をまとめ、さまざまなソース環境の全体的なMicrosoft 365します。
 
 カードは次のカテゴリに分類されます。
 
@@ -145,14 +145,14 @@ Microsoft 365Defender は *、Microsoft* Defender for microsoft Defender for Off
 
 Microsoft 365センターには、Microsoft セキュリティ ブログ、YouTube の Microsoft セキュリティ コミュニティ、および docs.microsoft.com の公式ドキュメントなどのリソースからの公式ガイダンスを吹き込む学習ハブが含まれています。
 
-ラーニング ハブ内では、メールとコラボレーション (Microsoft Defender for Office 365 または MDO) のガイダンスが、Endpoint (Microsoft Defender for Endpoint または MDE) および Microsoft 365 Defender ラーニング リソースと並んでいます。
+学習ハブ内では、Email & Collaboration (Microsoft Defender for Office 365) ガイダンスは、エンドポイント (Microsoft Defender for Endpoint) および Microsoft 365 Defender ラーニング リソースと並べて示されています。
 
 ラーニング ハブは、「Microsoft 365 Defender を使用して調査する方法」 および「Microsoft Defender for Office 365 のベスト プラクティス」などのトピックを中心に編成されたラーニング パスで始まります。 このセクションは現在、Microsoft 内のセキュリティ製品グループによってキュレーションされています。 各ラーニング パスは、概念を理解するのにかかると予想される時間を反映しています。 たとえば、「Microsoft Defender for Office 365 ユーザー アカウントが侵害された場合の手順」は 8 分かかると予想されており、その場で学ぶ価値があります。
 
 コンテンツをクリックした後、このサイトをブックマークして、ブックマークを 'セキュリティ' または 'クリティカル' フォルダーに整理すると便利な場合があります。 すべてのラーニング パスを表示するには、メイン パネルの [すべて表示] リンクをクリックします。
 
 > [!NOTE]
-> Microsoft 365 Defenderラーニング ハブの上部には、製品 (現在は Microsoft 365 Defender、Microsoft Defender for Endpoint、Microsoft Defender for Office 365) を選択できる便利なフィルターがあります。 各セクションの学習リソースの数がリストされていることに注意してください。これは、学習者がトレーニングと学習のために手元にあるリソースの数を追跡するのに役立ちます。
+> Microsoft 365 Defender ラーニングハブの上部には、製品 (現在の Microsoft 365 Defender、エンドポイント用 Microsoft Defender、および microsoft Defender for Office 365) を選択できる便利なフィルターがあります。 各セクションの学習リソースの数がリストされていることに注意してください。これは、学習者がトレーニングと学習のために手元にあるリソースの数を追跡するのに役立ちます。
 >
 > 製品フィルターに沿って、現在のトピック、リソースの種類 (ビデオからウェビナーまで)、セキュリティ領域に関する知識または経験のレベル、セキュリティの役割、および製品の機能が一覧表示されます。
 
@@ -171,14 +171,14 @@ Microsoft 365センターには、Microsoft セキュリティ ブログ、YouTu
     1. これらの指示を読み続ける場合は、ボタンを右クリックして [新しいタブで開く] を選択してください。
 2. これにより、**UserVoice フォーラム** に移動します。
 3. 2 つのオプションがあります。
-    1. テキスト ボックスまで下にスクロール *する コンプライアンス* を改善したり、ユーザーを保護したりするには、Office 365を使用して Defender に貼りMicrosoft 365 *します*。 結果から自分のようなアイデアを探して賛成票を投じるか、**[新しいアイデアを投稿する]** ボタンを使用できます。
-    1. この問題がすでに報告されていると確信し、1 票または複数の票でそのプロファイルを上げたい場合は、UserVoice の右側にある *[フィードバックの送信]* ボックスを使用してください。 Defender を *Microsoft 365、***問題を検索** し、投票ボタンを使用して状態を上げる。
+    1. テキスト ボックスまで下にスクロール *する コンプライアンス* を改善したり、ユーザーを保護したりするには、次の手順を実行Office 365を貼り *Microsoft 365 Defender。* 結果から自分のようなアイデアを探して賛成票を投じるか、**[新しいアイデアを投稿する]** ボタンを使用できます。
+    1. この問題がすでに報告されていると確信し、1 票または複数の票でそのプロファイルを上げたい場合は、UserVoice の右側にある *[フィードバックの送信]* ボックスを使用してください。 [検索] **Microsoft 365 Defender、問題を** 検索し、投票ボタンを使用して状態を上げる。 
 
 記事自体に関するフィードバックは、*[このページ]* を使用してください。 フィードバックしていただき、ありがとうございます。 あなたの声は製品の改善に役立ちます。
 
 ### <a name="explore-what-the-security-center-has-to-offer"></a>セキュリティ センターが提供するものを調べる
 
-Defender の機能を引き続きMicrosoft 365してください。
+次の機能を引き続き確認Microsoft 365 Defender。
 
 - [インシデントとアラートを管理する](manage-incidents.md)
 - [脅威の分析を使用して、新たな脅威を追跡し対応する](threat-analytics.md)
@@ -189,6 +189,6 @@ Defender の機能を引き続きMicrosoft 365してください。
 - [フィッシング攻撃のシミュレーションを作成し](../office-365-security/attack-simulation-training.md)、[チームをトレーニングするためのペイロードを作成する](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
  
 ### <a name="related-information"></a>関連情報
-- [Microsoft Defender for Office 365 Defender Microsoft 365](microsoft-365-security-center-mdo.md)
+- [Microsoft Defender for Office 365 Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
-- [Microsoft Defender for Endpoint から Microsoft Defender へのアカウントのリダイレクトMicrosoft 365 Defender](microsoft-365-security-mde-redirection.md)
+- [Microsoft Defender for Endpoint からアカウントをユーザーにリダイレクトMicrosoft 365 Defender](microsoft-365-security-mde-redirection.md)

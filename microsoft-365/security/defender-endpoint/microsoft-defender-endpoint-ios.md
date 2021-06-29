@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4c2d586cd23a346db1bcebf891689ff648b639b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cbe2fb39221bd9907a3d690503a392edb019d61b
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844708"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194855"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
 
@@ -47,9 +47,11 @@ ms.locfileid: "52844708"
 
 - アプリのエンド ユーザーに割り当てられた Microsoft Defender for Endpoint ライセンス。 「Microsoft [Defender for Endpoint ライセンス要件」を参照してください](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。
 
-- デバイスは、Intune[デバイス](/mem/intune/user-help/enroll-your-device-in-intune-ios)コンプライアンス ポリシーを適用Intune ポータル サイトアプリを介して登録されます。 これには、エンド ユーザーにライセンスを割り当てるMicrosoft Intune必要があります。
+- **登録済みデバイスの場合**: デバイスは、Intune デバイスコンプライアンス ポリシーを適用Intune ポータル サイトアプリを介して登録されます。 [](/mem/intune/user-help/enroll-your-device-in-intune-ios) これには、エンド ユーザーにライセンスを割り当てるMicrosoft Intune必要があります。
     - Intune ポータル サイト Apple App Store から[ダウンロードできます](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
     - Apple では、リダイレクトユーザーがアプリ ストアから他のアプリをダウンロードすることを許可していないので、この手順は、Microsoft Defender for Endpoint アプリにオンボーディングする前にユーザーが行う必要があります。
+
+- **登録されていないデバイスの場合**: デバイスは、デバイスに登録Azure Active Directory。 これには、エンド ユーザーがアプリを介して[サインインMicrosoft Authenticator必要です](https://apps.apple.com/app/microsoft-authenticator/id983156458)。
 
 - ライセンスを割り当てる方法の詳細については、「ユーザーにライセンスを割り当 [てる」を参照してください](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 
@@ -57,20 +59,20 @@ ms.locfileid: "52844708"
 
 - ポータルへのアクセスMicrosoft Defender セキュリティ センターします。
 
+- 管理センター [Microsoft エンドポイント マネージャーアクセスして](https://go.microsoft.com/fwlink/?linkid=2109431)、組織の登録済みユーザー グループにアプリを展開します。
+
     > [!NOTE]
     > Microsoft Intuneは、Microsoft Defender for Endpoint を展開し、Intune で Defender for Endpoint 関連のデバイス コンプライアンス ポリシーを適用する、サポートされている唯一の統合エンドポイント管理 (UEM) ソリューションです。
-
-- 管理センター [Microsoft エンドポイント マネージャーアクセスして](https://go.microsoft.com/fwlink/?linkid=2109431)、組織の登録済みユーザー グループにアプリを展開します。
 
 **システム要件**
 
 - iOS 11.0 以上を実行している iOS デバイス。 iPadは、バージョン 1.1.15010101 以降で正式にサポートされています。
 
-- デバイスは、アプリに登録[Intune ポータル サイトされます](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
+- デバイスは、アプリに登録するか、Intune ポータル サイト[を](https://apps.apple.com/us/app/intune-company-portal/id719171358)介して Azure Active Directoryに[Microsoft Authenticator。](https://apps.apple.com/app/microsoft-authenticator/id983156458)
 
 ## <a name="installation-instructions"></a>インストール手順
 
-iOS での Microsoft Defender for Endpoint の展開は、Microsoft Intune (MDM) 経由であり、監視対象デバイスと教師付きデバイスの両方がサポートされています。 エンドユーザーは、Apple アプリ ストアからアプリを直接 [インストールすることもできます](https://aka.ms/mdatpiosappstore)。
+iOS での Microsoft Defender for Endpoint の展開は、MICROSOFT エンドポイント マネージャー (MEM) を介して行え、監視対象デバイスと教師付きデバイスの両方がサポートされています。 エンドユーザーは、Apple アプリ ストアからアプリを直接 [インストールすることもできます](https://aka.ms/mdatpiosappstore)。
 詳細については [、「Deploy Microsoft Defender for Endpoint on iOS」を参照してください](ios-install.md)。
 
 ## <a name="resources"></a>リソース

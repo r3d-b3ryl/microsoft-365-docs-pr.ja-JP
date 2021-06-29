@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 (MDO) メール エンティティ ページ
+title: Microsoft Defender for Office 365 エンティティ ページ
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5 P1 および P2 のお客様は、電子メール エンティティ ページを使用して各メールの 360 度のビューを取得できます。
-ms.openlocfilehash: d2f5a5b20034ef22b8e3894885079609a9ad5874
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 5621476f8f8f7270d241d642354ab174a25b8b37
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083300"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194993"
 ---
 # <a name="the-email-entity-page"></a>メール エンティティ ページ
 
@@ -30,11 +30,11 @@ ms.locfileid: "53083300"
 - [[電子メール エンティティ] ページ タブを使用する](#use-email-entity-page-tabs)
 - [[電子メール エンティティ] ページの新機能](#new-to-the-email-entity-page)
 
-microsoft Defender for Office 365 (または MDO) E5、および MDO P1 と P2 の管理者は、[電子メール] エンティティ ページを使用して電子メールを 360 度表示 **します**。 この移動先の電子メール ページは、Threat Explorer の 「電子メールの詳細」 フライアウトで配信される情報 [を強化するために作成されました](threat-explorer-views.md)。
+microsoft Defender for Office 365 E5 および Office P1 と P2 の Defender の管理者は、[電子メール] エンティティ ページを使用して電子メールを 360 度 **表示します**。 この移動先の電子メール ページは、Threat Explorer の 「電子メールの詳細」 フライアウトで配信される情報 [を強化するために作成されました](threat-explorer-views.md)。
 
 ## <a name="reach-the-email-entity-page"></a>電子メール エンティティ ページにアクセスする
 
-[電子メール エンティティ] ページは、[電子メール Microsoft 365] の [&] で <https://security.microsoft.com> **使用** \> **できます**。 または、エクスプローラー ページに直接移動するには、 **を** 使用します <https://security.microsoft.com/threatexplorer> 。
+[電子メール エンティティ] ページは、[電子メール] Microsoft 365 Defenderエクスプローラー <https://security.microsoft.com> の [& ポータル]**で使用** \> **できます**。 または、エクスプローラー ページに直接移動するには、 **を** 使用します <https://security.microsoft.com/threatexplorer> 。
 
 エクスプローラー **で**、調査中のメールの件名を選択します。 そのメールのメール のフライアウトの上部にゴールド バーが表示されます。 新しいページへのこの招待には、「新しい電子メール エンティティ ページを強化されたデータで試してみてください。..」と読み上げられます。 新しいページを表示する場合に選択します。
 

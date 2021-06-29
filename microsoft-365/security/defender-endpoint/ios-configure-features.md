@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d32d40ac8ce086caedd53e0a69aac2a3025dc702
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842256"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194951"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS の機能で Microsoft Defender for Endpoint を構成する
 
@@ -65,6 +65,26 @@ Microsoft Defender for Endpoint には、脱獄された管理されていない
 
 Apple iOS では、同時にアクティブになる複数のデバイス全体の VPN はサポートされていません。 デバイスに複数の VPN プロファイルを存在することができますが、一度にアクティブにできる VPN は 1 つのみです。
 
+## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>アプリ保護ポリシー (MAM) で Microsoft Defender for Endpoint リスクシグナルを構成する
+
+Microsoft Defender for Endpoint は、iOS/iPadOS のアプリ保護ポリシー (APP、 MAM とも呼ばれる) で使用される脅威信号を送信するように構成できます。 この機能を使用すると、Microsoft Defender for Endpoint を使用して、登録されていないデバイスから企業データへのアクセスを保護することもできます。
+
+Microsoft Defender for Endpoint を使用してアプリ保護ポリシーをセットアップする手順は次のとおりです。
+
+1. Microsoft Defender for Endpoint への Microsoft エンドポイント マネージャーテナントからの接続を設定します。 [Microsoft Endpoint](https://go.microsoft.com/fwlink/?linkid=2109431)Manager 管理センターで、[テナント管理コネクタとトークン Microsoft Defender for Endpoint (クロス プラットフォーム) またはエンドポイント セキュリティ Microsoft Defender for Endpoint (セットアップ] の下) に移動し、[アプリ保護ポリシー 設定 for  >    >     >   **iOS]** のトグルをオンにします。
+1. [保存] を選択します。 [接続の状態 **] が [有効]** に設定されている必要 **があります**。
+1. アプリ保護ポリシーの作成: Microsoft Defender for Endpoint Connector のセットアップが完了したら、[アプリアプリ保護ポリシー] ([ポリシー] の下) に移動して、新しいポリシーを作成するか、既存のポリシー  >  を更新します。
+1. 組織がポリシーに必要とするプラットフォーム、 **アプリ、データ** 保護、アクセス要件の設定を選択します。
+1. [**条件付き起動**  >  **デバイスの条件**] で、[最大許可デバイスの脅威レベル **] という設定が表示されます**。 これは、Low、Medium、High、または Secured のどちらかに構成する必要があります。 使用できるアクションは、[アクセスのブロック] **または [** データの **ワイプ] になります**。 この設定を有効にする前にコネクタをセットアップする情報ダイアログが表示される場合があります。 コネクタが既にセットアップされている場合は、このダイアログは無視できます。
+1. [割り当て] で終了し、ポリシーを保存します。
+
+MAM またはアプリ保護ポリシーの詳細については [、「iOS アプリ保護ポリシー設定」を参照してください](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios)。
+
+### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>MAM または登録されていないデバイスでの Microsoft Defender for Endpoint の展開
+
+Microsoft Defender for Endpoint on iOS では、アプリ保護ポリシーのシナリオを有効にし、Apple アプリ ストアで利用できます。
+
+エンド ユーザーは、Apple アプリ ストアからアプリの最新バージョンを直接インストールする必要があります。
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>脱獄されたデバイスに対するコンプライアンス ポリシーの構成
 
@@ -86,12 +106,12 @@ Apple iOS では、同時にアクティブになる複数のデバイス全体�
     > [!div class="mx-imgBorder"]
     > ![ポリシー設定](images/ios-jb-settings.png)
 
-4. [非 *準拠のアクション] セクションで* 、要件に従ってアクションを選択し、[次へ] を選択 **します**。
+4. [非 **準拠のアクション] セクションで** 、要件に従ってアクションを選択し、[次へ] を選択 **します**。
 
     > [!div class="mx-imgBorder"]
     > ![ポリシーアクション](images/ios-jb-actions.png)
 
-5. [割 *り当て* ] セクションで、このポリシーに含めるユーザー グループを選択し、[次へ] を **選択します**。
+5. [割 **り当て** ] セクションで、このポリシーに含めるユーザー グループを選択し、[次へ] を **選択します**。
 6. [レビュー **+ 作成] セクション** で、入力した情報が正しいか確認し、[作成] を **選択します**。
 
 ## <a name="configure-custom-indicators"></a>カスタム インジケーターの構成

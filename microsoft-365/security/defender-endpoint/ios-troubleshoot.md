@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2f9d56b7e72befb8acddf6d9f810a7ba5cec1083
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: b82b6993ce9ed5a3f0f3e6e13e8a260a185c9730
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694367"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194975"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>iOS 上の Microsoft Defender for Endpoint で問題のトラブルシューティングを行い、FAQ に対する回答を見つける
 
@@ -58,7 +58,7 @@ ms.locfileid: "52694367"
 > [!NOTE]
 > VPN が無効になっている場合、Web 保護は使用できません。 Web Protection を再び有効にするには、デバイスで Microsoft Defender for Endpoint アプリを開き、[VPN の開始] をクリックまたは **タップします**。
 
-## <a name="issues-with-multiple-vpn-profiles"></a>複数の VPN プロファイルに関する問題
+## <a name="co-existence-with-multiple-vpn-profiles"></a>複数の VPN プロファイルとの共存在
 
 Apple iOS では、同時にアクティブになる複数のデバイス全体の **VPN** はサポートされていません。 デバイスに複数の VPN プロファイルを存在することができますが、一度にアクティブにできる VPN は 1 つのみです。
 
@@ -74,7 +74,11 @@ Microsoft Defender for Endpoint VPN は、アプリ単位または "個人用" �
 
 ## <a name="data-usage"></a>データの使用状況
 
-Microsoft Defender for Endpoint では、ローカル/ループバック VPN を使用して、悪意のある Web サイトや接続の Web トラフィックを確認します。 このため、Microsoft Defender for Endpoint データの使用状況が不正確に説明される可能性があります。 Microsoft Defender for Endpoint による実際のデータ使用量は、デバイス上の [データ使用状況] ページに表示されるデータ使用量よりも設定小さい値です。
+Microsoft Defender for Endpoint では、ローカル/ループバック VPN を使用して、悪意のある Web サイトや接続の Web トラフィックを確認します。 このため、Microsoft Defender for Endpoint データの使用状況が不正確に説明される可能性があります。 また、デバイスが携帯電話ネットワーク上にある場合、サービス プロバイダーによって報告されるデータ使用量は実際の使用量に非常に近いのに対し、設定 アプリでは、Apple は実際に使用されるデータの約 1.5 倍から 2 倍を示しています。
+
+他の VPN サービスと同様の観測を行い、これを Apple に報告しています。
+
+さらに、より良い保護を提供するには、Microsoft Defender for Endpoint がバックエンド サービスを最新の状態に更新する必要があります。 ただし、Microsoft Defender for Endpoint によるデータ使用量の最適化に取り組む必要があります。
 
 ## <a name="report-unsafe-site"></a>安全でないサイトを報告する
 

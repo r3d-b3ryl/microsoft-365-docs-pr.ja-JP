@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 79d736330a40d33f5334196d165e72f487b6d959
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108333"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194783"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender のセキュリティ評価Office 365
 
@@ -50,7 +50,7 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 
 セットアップの一環として、評価モードではコネクタの [拡張フィルターも構成します](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 IP アドレスと送信者情報を保持することで、フィルターの精度が向上します。それ以外の場合、メールが Defender for Office 365 の前にあるメール セキュリティ ゲートウェイ (ESG) を通過すると失われます。 また、コネクタのフィルター機能が強化され、既存のスパム対策 (EOP) Exchange Online Protectionフィッシング対策ポリシーのフィルタリング精度も向上します。
 
-拡張コネクタのフィルター処理は、フィルター処理の精度が向上しますが、Office 365 の Defender の前に ESG を持ち、現在 EOP フィルター処理をバイパスしていない場合は、特定のメッセージの配信可能性が変わる可能性があります。 影響は EOP ポリシーに制限されます。評価の一部として設定された MDO ポリシーは、強制以外のモードで作成されます。 潜在的な運用への影響を最小限に抑えるために、メール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、メッセージのスパム信頼レベル (SCL) を -1 に設定することで、すべての EOP フィルターをバイパスできます。 詳細[については、「メール フロー ルールを使用して、](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)メッセージ内のスパム信頼レベル (SCL) を設定するExchange Online   参照してください。
+拡張コネクタのフィルター処理は、フィルター処理の精度が向上しますが、Office 365 の Defender の前に ESG を持ち、現在 EOP フィルター処理をバイパスしていない場合は、特定のメッセージの配信可能性が変わる可能性があります。 影響は EOP ポリシーに制限されます。評価のOffice 365設定されたポリシーの Defender は、強制以外のモードで作成されます。 潜在的な運用への影響を最小限に抑えるために、メール フロー ルール (トランスポート ルールとも呼ばれる) を作成して、メッセージのスパム信頼レベル (SCL) を -1 に設定することで、すべての EOP フィルターをバイパスできます。 詳細[については、「メール フロー ルールを使用して、](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)メッセージ内のスパム信頼レベル (SCL) を設定するExchange Online   参照してください。
 
 評価モードが設定されている場合、ポリシーが実装された場合にブロックされたメッセージを定量化する最大 90 日間のデータを含むレポートが毎日更新されます (たとえば、削除、迷惑メールへの送信、検疫など)。 レポートは、すべての Defender に対して、Office 365 EOP 検出用に生成されます。 これらは検出テクノロジ (偽装など) ごとに集計され、時間範囲でフィルター処理できます。 さらに、メッセージ レポートをオンデマンドで作成してカスタム ピボットを作成したり、エクスプローラーを使用して詳細なメッセージを作成することもできます。
 

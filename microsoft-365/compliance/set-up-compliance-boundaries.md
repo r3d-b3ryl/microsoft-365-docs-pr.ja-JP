@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、電子情報開示マネージャーが電子情報開示マネージャーで検索できるユーザー コンテンツの場所を制御する論理境界を作成するMicrosoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23ff50b9cd0ab0178962f7be9f1cedfbd6a7a1f7
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: be857277d36d95ac1cd974ccb0c87f2048798450
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022344"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194711"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>電子情報開示調査のコンプライアンス境界を設定する
 
@@ -166,7 +166,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>複数地域環境でのコンテンツの検索とエクスポート
 
-また、検索アクセス許可フィルターを使用すると、エクスポート用にコンテンツをルーティングする場所と、特定の環境でコンテンツの場所を検索するときに検索できるデータセンター [SharePoint Multi-Geoできます](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)。
+また、検索アクセス許可フィルターを使用すると、エクスポート用にコンテンツをルーティングする場所と、複数地域環境でコンテンツの場所を検索するときに検索できるデータセンター SharePoint制御[できます](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)。
   
 - **検索結果のエクスポート:** 特定のデータセンターから、Exchange、SharePoint、OneDriveアカウントから検索結果をエクスポートできます。 つまり、検索結果をエクスポートするデータセンターの場所を指定できます。
 
@@ -205,7 +205,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
    概念を簡略化するために **、Region** パラメーターは、データ センター内のコンテンツの検索に使用されるデータセンター SharePoint制御OneDrive。 コンテンツ検索はデータセンターの地理的な場所にExchangeされないので、Exchange Exchange内のコンテンツの検索には適用されません。 また、同じ **Region** パラメーター値によって、エクスポートがルーティングされるデータセンターが決まる場合もあります。 これは、地理的なボードをまたがってデータの動きを制御するために必要な場合が多い。
 
 > [!NOTE]
-> データ を使用している場合Advanced eDiscovery **Region** パラメーターは、データのエクスポートを行う領域を制御できません。 データは、組織のプライマリ データセンターからエクスポートされます。 また、データ センターとSharePointのOneDriveは、データセンターの地理的な場所にバインドされていない場合があります。 すべてのデータセンターが検索されます。 詳細については、「Advanced eDiscoveryの[ソリューションのAdvanced eDiscovery」を参照Microsoft 365。](overview-ediscovery-20.md)
+> データ を使用している場合Advanced eDiscovery **Region** パラメーターは、データのエクスポートを行う領域を制御できません。 データは、組織の中央の場所からエクスポートされます。 また、データ センターとSharePointのOneDriveは、データセンターの地理的な場所にバインドされていない場合があります。 すべてのデータセンターが検索されます。 詳細については、「Advanced eDiscoveryの[ソリューションのAdvanced eDiscovery」を参照Microsoft 365。](overview-ediscovery-20.md)
 
 コンプライアンス境界の検索アクセス許可フィルターを作成 **するときに Region** パラメーターを使用する例を次に示します。 これは、4 番目のコーヒー子会社が北アメリカにあり、Coho Winery がヨーロッパにあると仮定します。 
   
@@ -221,11 +221,13 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
 - Exchange メールボックスの検索は、**Region** パラメーターにより制御されません。 メールボックスを検索すると、すべてのデータセンターが検索されます。 メールボックスを検索する対象Exchangeを制限するには、検索アクセス許可フィルターを作成または変更するときに **Filters** パラメーターを使用します。
 
-- 電子情報開示マネージャーが複数の SharePoint 地域間で検索する必要がある場合は、その電子情報開示マネージャーが検索アクセス許可フィルターで使用する別のユーザー アカウントを作成して、SharePoint サイトまたは OneDrive アカウントがある地域を指定する必要があります。 この設定の詳細については、「コンテンツ検索」の「SharePoint Multi-Geo環境でコンテンツを検索する」を[参照してください](content-search-reference.md#searching-for-content-in-a-sharepoint-multi-geo-environment)。
+- 電子情報開示マネージャーが複数の SharePoint 地域間で検索する必要がある場合は、その電子情報開示マネージャーが検索アクセス許可フィルターで使用する別のユーザー アカウントを作成して、SharePoint サイトまたは OneDrive アカウントがある地域を指定する必要があります。 これを設定する方法の詳細については、「コンテンツ検索」の「SharePoint地域環境でのコンテンツの検索」セクション[を参照してください](content-search-reference.md#searching-for-content-in-a-sharepoint-multi-geo-environment)。
 
 - SharePoint および OneDrive でコンテンツを検索する場合 **、Region** パラメーターは、電子情報開示マネージャーが電子情報開示調査を行うプライマリまたはサテライトの場所に検索を指示します。 電子情報開示マネージャーが、検索SharePointフィルター OneDrive指定された地域外のサイトを検索した場合、検索結果は返されません。
 
-- 検索結果をエクスポートする場合、すべてのコンテンツの場所 (Exchange、Skype for Business、SharePoint、OneDrive、およびコンテンツ検索ツールを使用して検索できるその他のサービスを含む) のコンテンツが **、Region** パラメーターで指定されたデータセンターの Azure Storage の場所にアップロードされます。 これにより、組織は、管理された境界を越えてコンテンツをエクスポートすることを許可しない方法でコンプライアンスを遵守できます。 検索アクセス許可フィルターで地域が指定されていない場合、コンテンツは組織のプライマリ データセンターにアップロードされます。
+- Core eDiscovery から検索結果をエクスポートする場合、すべてのコンテンツの場所 (Exchange、Skype for Business、SharePoint、OneDrive、およびコンテンツ検索ツールを使用して検索できるその他のサービスを含む) のコンテンツが **、Region** パラメーターで指定されたデータセンター内の Azure Storage の場所にアップロードされます。 これにより、組織は、管理された境界を越えてコンテンツをエクスポートすることを許可しない方法でコンプライアンスを遵守できます。 検索アクセス許可フィルターで地域が指定されていない場合、コンテンツは組織のプライマリ データセンターにアップロードされます。
+
+  ファイルからコンテンツをAdvanced eDiscovery、Region パラメーターを使用してコンテンツのアップロード先を **制御** することはできません。 コンテンツは、組織のAzure Storageデータセンター内の場所にアップロードされます。 中央の場所に基づく地域の場所の一覧については、「複数地域[Microsoft 365の構成」を参照してください](../enterprise/multi-geo-ediscovery-configuration.md)。
 
 - 次のコマンドを実行して、既存の検索アクセス許可フィルターを編集して地域を追加または変更できます。
 
@@ -263,25 +265,25 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 検索アクセス許可のフィルターは、Exchange のパブリックフォルダーには適用されません。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - メールボックスのライセンスが無効またはソフト削除されている場合、ユーザーはコンプライアンス境界内では考慮されません。 メールボックスが削除されたときに保持がメールボックスに配置された場合、メールボックスに保持されているコンテンツは、コンプライアンス境界または検索アクセス許可フィルターの対象になります。
 
 - ユーザーに対してコンプライアンスの境界と検索アクセス許可フィルターが実装されている場合は、ユーザーのメールボックスを削除し、ユーザーのメールボックスを削除OneDriveすることをお勧めします。 つまり、ユーザーのメールボックスを削除する場合は、mailbox_RecipientFilter が OneDrive の検索アクセス許可フィルターを適用するために使用されるので、ユーザーの OneDrive アカウントも削除する必要があります。
 
-- コンプライアンスの境界と検索アクセス許可フィルターは、Exchange、OneDrive、および SharePoint のコンテンツにスタンプされる属性と、このスタンプされたコンテンツの後続のインデックスによって異なっています。
+- コンプライアンスの境界と検索アクセス許可フィルターは、Exchange、OneDrive、SharePoint のコンテンツにスタンプされる属性と、このスタンプされたコンテンツの後続のインデックス作成に依存します。
 
 - コンテンツ ベースのコンプライアンス境界に除外フィルター (検索アクセス許可フィルターでの使用など) を使用することは `-not()` お勧めしません。 最近更新された属性を持つコンテンツにインデックスが作成されていない場合、除外フィルターを使用すると予期しない結果になる可能性があります。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**検索アクセス許可フィルターを作成および管理できるユーザー (New-ComplianceSecurityFilterコマンドレットSet-ComplianceSecurityFilter)**
+**Whoアクセス許可フィルターを作成および管理できます (New-ComplianceSecurityFilterコマンドレットSet-ComplianceSecurityFilter使用)**
   
-検索アクセス許可フィルターを作成、表示、および変更するには、Microsoft 365 コンプライアンス センターの組織の管理役割グループのメンバーである必要があります。
+検索アクセス許可フィルターを作成、表示、および変更するには、組織の管理役割グループのメンバーである必要Microsoft 365 コンプライアンス センター。
   
 **複数の機関にまたがる複数の役割グループに電子情報開示マネージャーが割り当てられている場合、ある機関または他の機関のコンテンツを検索する方法を説明します。**
   
-電子情報開示マネージャーは、検索を特定の機関に制限するパラメーターを検索クエリに追加できます。 たとえば、組織が代理店を区別するために **CustomAttribute10** プロパティを指定した場合、検索クエリに次の情報を追加して、特定の機関のメールボックスと OneDrive アカウントを検索できます。 `CustomAttribute10:<value>`
+電子情報開示マネージャーは、検索を特定の機関に制限するパラメーターを検索クエリに追加できます。 たとえば、組織が代理店を区別するために **CustomAttribute10** プロパティを指定している場合、検索クエリに次の情報を追加して、特定の機関のメールボックスと OneDrive アカウントを検索できます。 `CustomAttribute10:<value>`
   
 **検索アクセス許可フィルターでコンプライアンス属性として使用される属性の値が変更された場合は、どうなるでしょうか。**
   
@@ -289,16 +291,16 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
   
 **電子情報開示マネージャーは、2 つの個別のコンプライアンス境界からのコンテンツを表示できますか?**
   
-はい、これは、両方の機関に対して可視性を持つ役割グループに電子情報開示マネージャーを追加することで、Exchange メールボックスを検索するときに実行できます。 ただし、SharePoint サイトと OneDrive アカウントを検索する場合、電子情報開示マネージャーは、機関が同じ地域または地理的な場所にある場合にのみ、異なるコンプライアンス境界内のコンテンツを検索できます。 **注:** SharePoint と OneDrive でコンテンツを検索しても地理的な場所にバインドされないので、サイトのこの制限は Advanced eDiscovery では適用されません。
+はい、両方の機関に対して可視性を持つ役割グループExchange電子情報開示マネージャーを追加することで、メールボックスを検索するときに実行できます。 ただし、SharePoint サイトと OneDrive アカウントを検索する場合、電子情報開示マネージャーは、機関が同じ地域または地理的な場所にある場合にのみ、異なるコンプライアンス境界内のコンテンツを検索できます。 **注:** サイトのこの制限は、Advanced eDiscovery SharePoint および Advanced eDiscoveryのコンテンツを検索しても地理的な場所にOneDriveされないので、この制限は適用されません。
   
-**検索アクセス許可フィルターは、電子情報開示ケースホールド、Microsoft 365 アイテム保持ポリシー、または DLP で機能しますか?**
+**検索アクセス許可フィルターは、電子情報開示ケースホールド、Microsoft 365保持ポリシー、または DLP で機能しますか?**
   
 いいえ、現時点ではそうではありません。
   
-**コンテンツのエクスポート先を制御する領域を指定したが、その地域に SharePoint 組織が存在しない場合でも、SharePoint を検索できますか?**
+**コンテンツのエクスポート先を制御する領域を指定したが、その地域に SharePoint 組織が存在しない場合でも、その地域をSharePoint?**
   
 検索アクセス許可フィルターで指定された地域が組織に存在しない場合、既定の地域が検索されます。
   
 **組織で作成できる検索アクセス許可フィルターの最大数は何ですか?**
   
-組織で作成できる検索アクセス許可フィルターの数に制限はありません。 ただし、検索アクセス許可フィルターが 100 個以上ある場合、検索のパフォーマンスに影響を与えます。 組織内の検索アクセス許可フィルターの数を可能な限り小さくするには、Exchange、SharePoint、および OneDrive のルールを組み合わせて、可能な限り 1 つの検索アクセス許可フィルターにフィルターを作成します。
+組織で作成できる検索アクセス許可フィルターの数に制限はありません。 ただし、検索アクセス許可フィルターが 100 個以上ある場合、検索のパフォーマンスに影響を与えます。 組織内の検索アクセス許可フィルターの数を可能な限り小さくするには、Exchange、SharePoint、および OneDrive のルールを可能な限り 1 つの検索アクセス許可フィルターに組み合わせたフィルターを作成します。
