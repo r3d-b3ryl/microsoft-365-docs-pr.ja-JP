@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、適用された文書理解モデルを 1 つ以上のライブラリから削除します。
-ms.openlocfilehash: 8c7aeb449da161fe49050631643c63c93268a13f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904273"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177239"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -44,18 +44,43 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 
 | 名前 | 必須 | 型 | 説明 |
 |--------|-------|--------|------------|
+|発行元|○|MachineLearningPublicationEntityData[]|それぞれがモデルとターゲット ドキュメント ライブラリを指定する MachineLearningPublicationEntityData のコレクション。|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| 名前 | 必須 | 型 | 説明 |
+|--------|-------|--------|------------|
 |ModelUniqueId|○|文字列|モデル ファイルの一意の ID。|
-TargetSiteUrl|○|文字列|ターゲット ライブラリ サイトの完全な URL。|
-TargetWebServerRelativeUrl|○|文字列|ターゲット ライブラリの Web のサーバー相対 URL。|
-TargetLibraryServerRelativeUrl|○|文字列|ターゲット ライブラリのサーバー相対 URL。|
-ViewOption|いいえ|string|新しいモデル ビューをライブラリの既定値として設定するかどうかを指定します。|
+|TargetSiteUrl|○|文字列|ターゲット ライブラリ サイトの完全な URL。|
+|TargetWebServerRelativeUrl|○|文字列|ターゲット ライブラリの Web のサーバー相対 URL。|
+|TargetLibraryServerRelativeUrl|○|文字列|ターゲット ライブラリのサーバー相対 URL。|
 
 ## <a name="response"></a>応答
 
-| 名前   | 型  | 説明|
+| 名前   | 種類  | 説明|
 |--------|-------|------------|
-|200 OK| |成功|
+|200 OK||これは、複数のドキュメント ライブラリからのモデルの削除をサポートするためにカスタマイズされた API です。 部分的に成功した場合でも、200 OK が返される可能性があり、呼び出し元は応答本文を調べて、モデルがドキュメント ライブラリから正常に削除されたかどうかを理解する必要があります。|
 
+## <a name="response-body"></a>応答本文
+| 名前   | 種類  | 説明|
+|--------|-------|------------|
+|TotalSuccesses|整数|ドキュメント ライブラリから正常に削除されたモデルの総数。|
+|TotalFailures|整数|ドキュメント ライブラリからの削除に失敗したモデルの総数。|
+|詳細|MachineLearningPublicationResult[]|MachineLearningPublicationResult のコレクション。それぞれが、ドキュメント ライブラリからモデルを削除した詳細な結果を指定します。|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| 名前   | 種類  | 説明|
+|--------|-------|------------|
+|StatusCode|整数|HTTP 状態コード。|
+|ErrorMessage|文字列|モデルをドキュメント ライブラリに適用するときに何が問題になっているのかを示すエラー メッセージ。|
+|発行元|MachineLearningPublicationEntityData|モデル情報とターゲット ドキュメント ライブラリを指定します。| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| 名前 | 種類 | 説明 |
+|--------|--------|------------|
+|ModelUniqueId|文字列|モデル ファイルの一意の ID。|
+|TargetSiteUrl|文字列|ターゲット ライブラリ サイトの完全な URL。|
+|TargetWebServerRelativeUrl|文字列|ターゲット ライブラリの Web のサーバー相対 URL。|
+|TargetLibraryServerRelativeUrl|文字列|ターゲット ライブラリのサーバー相対 URL。|
 
 ## <a name="examples"></a>例
 
@@ -66,28 +91,22 @@ ViewOption|いいえ|string|新しいモデル ビューをライブラリの既
 #### <a name="sample-request"></a>要求のサンプル
 
 ```HTTP
-{
-    "__metadata": {
-        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"
-    },
-    "Publications": {
-        "results": [
-            {
-                "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc",
-                "TargetSiteUrl": "https://contoso.sharepoint.com/sites/repository/",
-                "TargetWebServerRelativeUrl": "/sites/repository",
-                "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
-                "ViewOption": "NewViewAsDefault"
-            }
-        ]
-    }
-}
+{ 
+    "publications": [ 
+        { 
+            "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc", 
+            "TargetSiteUrl": "https://constco.sharepoint-df.com/sites/docsite", 
+            "TargetWebServerRelativeUrl": "/sites/docsite ", 
+            "TargetLibraryServerRelativeUrl": "/sites/dcocsite/joedcos" 
+        } 
+    ] 
+} 
 ```
 
 
 #### <a name="sample-response"></a>応答のサンプル
 
-応答では、TotalFailures と TotalSuccesses は、指定されたライブラリに適用されるモデルの失敗と成功の数を示します。
+応答では、TotalFailures と TotalSuccesses は、指定されたライブラリから削除されるモデルの失敗と成功の数を示します。
 
 **Status code:** 200
 

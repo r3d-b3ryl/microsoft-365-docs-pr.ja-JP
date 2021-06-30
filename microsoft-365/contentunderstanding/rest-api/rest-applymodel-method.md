@@ -1,5 +1,5 @@
 ---
-title: モデルを適用
+title: バッチ適用モデル
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: REST APIを使用して、ドキュメント理解モデルを 1 つ以上のライブラリに適用します。
-ms.openlocfilehash: d4cadad3c45dd7af0cdaeb4e1b367426289db870
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+description: REST API を使用して、ドキュメント理解モデルを 1 つ以上のライブラリに適用します。
+ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904353"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177263"
 ---
-# <a name="apply-model"></a>モデルを適用
+# <a name="batch-apply-model"></a>バッチ適用モデル
 
 トレーニング済みのドキュメント理解モデルを 1 つ以上のライブラリに適用 (または同期) します ( [例](rest-applymodel-method.md#examples)を参照)。
 
@@ -44,18 +44,45 @@ POST /_api/machinelearning/publications HTTP/1.1
 
 | 名前 | 必須 | 型 | 説明 |
 |--------|-------|--------|------------|
+|__metadata|○|文字列|SPO でオブジェクト メタを設定します。 常に値 {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"} を使用します。|
+|発行元|○|MachineLearningPublicationEntityData[]|それぞれがモデルとターゲット ドキュメント ライブラリを指定する MachineLearningPublicationEntityData のコレクション。|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| 名前 | 必須 | 型 | 説明 |
+|--------|-------|--------|------------|
 |ModelUniqueId|○|文字列|モデル ファイルの一意の ID。|
-TargetSiteUrl|○|文字列|ターゲット ライブラリ サイトの完全な URL。|
-TargetWebServerRelativeUrl|○|文字列|ターゲット ライブラリの Web のサーバー相対 URL。|
-TargetLibraryServerRelativeUrl|○|文字列|ターゲット ライブラリのサーバー相対 URL。|
-ViewOption|いいえ|string|新しいモデル ビューをライブラリの既定値として設定するかどうかを指定します。|
+|TargetSiteUrl|○|文字列|ターゲット ライブラリ サイトの完全な URL。|
+|TargetWebServerRelativeUrl|○|文字列|ターゲット ライブラリの Web のサーバー相対 URL。|
+|TargetLibraryServerRelativeUrl|○|文字列|ターゲット ライブラリのサーバー相対 URL。|
+|ViewOption|いいえ|string|新しいモデル ビューをライブラリの既定値として設定するかどうかを指定します。|
 
 ## <a name="response"></a>応答
 
-| 名前   | 型  | 説明|
+| 名前   | 種類  | 説明|
 |--------|-------|------------|
-|200 OK| |成功|
-|201 Created| |この API では複数のライブラリへのモデルの適用がサポートされているため、いずれかのライブラリにモデルを適用する際にエラーが発生した場合でも、201 が返される可能性があることに注意してください。 <br>応答本文を調べて、モデルが指定されたすべてのライブラリに正常に適用されたかどうかを確認します。 詳細については [要求本文](rest-applymodel-method.md#request-body) を参照してください。|
+|201 Created||これは、複数のドキュメント ライブラリへのモデルの適用をサポートするためにカスタマイズされた API です。 部分的に成功した場合でも、作成された 201 が返される可能性があり、呼び出し元は応答本文を調べて、モデルがドキュメント ライブラリに正常に適用されたかどうかを理解する必要があります。|
+
+## <a name="response-body"></a>応答本文
+| 名前   | 種類  | 説明|
+|--------|-------|------------|
+|TotalSuccesses|整数|ドキュメント ライブラリに正常に適用されたモデルの総数。|
+|TotalFailures|整数|ドキュメント ライブラリへの適用に失敗したモデルの総数。|
+|詳細|MachineLearningPublicationResult[]|MachineLearningPublicationResult のコレクション。それぞれが、ドキュメント ライブラリにモデルを適用した詳細な結果を指定します。|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| 名前   | 種類  | 説明|
+|--------|-------|------------|
+|StatusCode|整数|HTTP 状態コード。|
+|ErrorMessage|文字列|モデルをドキュメント ライブラリに適用するときに何が問題になっているのかを示すエラー メッセージ。|
+|発行元|MachineLearningPublicationEntityData|モデル情報とターゲット ドキュメント ライブラリを指定します。| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| 名前 | 種類 | 説明 |
+|--------|--------|------------|
+|ModelUniqueId|文字列|モデル ファイルの一意の ID。|
+|TargetSiteUrl|文字列|ターゲット ライブラリ サイトの完全な URL。|
+|TargetWebServerRelativeUrl|文字列|ターゲット ライブラリの Web のサーバー相対 URL。|
+|TargetLibraryServerRelativeUrl|文字列|ターゲット ライブラリのサーバー相対 URL。|
 
 ## <a name="examples"></a>例
 
@@ -89,7 +116,7 @@ ViewOption|いいえ|string|新しいモデル ビューをライブラリの既
 
 応答では、TotalFailures と TotalSuccinstalls は、指定されたライブラリに適用されるモデルの失敗と成功の数を示します。
 
-**Status code:** 200
+**状態コード :** 201
 
 ```JSON
 {
@@ -103,7 +130,7 @@ ViewOption|いいえ|string|新しいモデル ビューをライブラリの既
                 "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
                 "ViewOption": "NewViewAsDefault"
             },
-            "StatusCode": 200
+            "StatusCode": 201
         }
     ],
     "TotalFailures": 0,
@@ -113,4 +140,4 @@ ViewOption|いいえ|string|新しいモデル ビューをライブラリの既
 
 ## <a name="see-also"></a>関連項目
 
-[Syntex ドキュメント理解モデル REST API](syntex-model-rest-api.md)
+[Syntex 文書理解モデル REST API](syntex-model-rest-api.md)

@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使い、トレーニング済みの文書理解モデルを使用して 1 つ以上のファイルを分類する要求を作成します。
-ms.openlocfilehash: 6a218db181368c2837d570062b6101bc3bacfb05
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 3a796bcdb38a9a6930b51f7d585febb69082732e
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904282"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177083"
 ---
 # <a name="create-classification-request"></a>分類要求の作成
 
@@ -43,16 +43,16 @@ POST /_api/machinelearning/workItems HTTP/1.1
 
 ## <a name="request-body"></a>要求本文
 
-|名前    |型   |説明 |
+|名前    |種類   |説明 |
 |--------|-------|------------|
-|_metadata|文字列 |SPO でオブジェクト メタを設定します。 常に値 {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"} を使用します。 |
+|_metadata|文字列 |SPO でオブジェクト メタを設定します。 常に値 {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"} を使用します。 |
 |TargetSiteId|guid|分類するファイルが配置されているサイトの ID。|
 |TargetWebId|guid|分類するファイルがある Web の ID。|
 |TargetUniqueId|guid|更新するファイルの ID です。|
 
 ## <a name="responses"></a>応答
 
-| 名前   | 型  | 説明|
+| 名前   | 種類  | 説明|
 |--------|-------|------------|
 |201 Created| |成功|
 
@@ -65,7 +65,7 @@ POST /_api/machinelearning/workItems HTTP/1.1
 ```
 {
     "__metadata": {
-        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
+        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"
     },
     "TargetSiteId": "f686e63b-aba7-48e5-97c7-68c4c1df292f",
     "TargetWebId": "66d6b64d-6f88-4dd9-b3db-47e6f00c53e8",
