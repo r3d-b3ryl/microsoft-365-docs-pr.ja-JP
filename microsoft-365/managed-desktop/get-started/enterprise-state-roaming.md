@@ -9,20 +9,18 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 61b84b3c7b6550a8ce426a3e41630a0d3e269c41
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f9d478412d2a1aac6f3e701aca59fcf74ceacce6
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921956"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203210"
 ---
 # <a name="enable-enterprise-state-roaming"></a>Enterprise State Roaming を有効にする
 
-ユーザーとアプリケーションの設定データをMicrosoft マネージド デスクトップ、ユーザー [](/azure/active-directory/devices/enterprise-state-roaming-overview)Enterpriseをクラウドに安全に同期できる状態ローミングを有効にします。 つまり、どのデバイスにサインインしても、同Windowsエクスペリエンスが得されます。 たとえば、デバイスの 1 Microsoft マネージド デスクトップを新しいデバイスに置き換える場合、そのデバイスは最後のデバイスとまったく同じように見え、動作します。
+[Enterprise状態ローミングを使用すると](/azure/active-directory/devices/enterprise-state-roaming-overview)、ユーザーとアプリケーションの設定データをクラウドに安全に同期できます。 つまり、どのデバイスにサインインしても、同Windowsエクスペリエンスが得されます。 たとえば、デバイスの 1 Microsoft マネージド デスクトップを新しいデバイスに置き換える場合、そのデバイスは最後のデバイスとまったく同じように見え、動作します。 Enterprise状態ローミングは、ユーザー用に構成できる Microsoft マネージド デスクトップ サービスのオプション機能であり、ユーザーの一部として含まれているか管理Microsoft マネージド デスクトップ。
 
-状態ローミングEnterprise有効にするには、「Enterpriseの状態ローミングを有効にする[Azure Active Directory」の](/azure/active-directory/devices/enterprise-state-roaming-enable)手順に従って、このドキュメントに戻ります。
-
-状態ローミングで問題がEnterprise場合は、管理者サポートにお問い[合わせください](../working-with-managed-desktop/admin-support.md)。
+状態ローミングEnterprise有効にするには、「デバイスの状態ローミングを有効にする[Enterprise」の手順に従Azure Active Directory。](/azure/active-directory/devices/enterprise-state-roaming-enable)
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
 

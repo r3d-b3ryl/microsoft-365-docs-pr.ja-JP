@@ -19,12 +19,12 @@ description: 脅威を効率的に調査して対応するには、Microsoft 365
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bb72c99ae0b80c4091e79801c5515190811324a7
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: ee9c4c63817d9c6860942eb8001b02a0535333b1
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195035"
+ms.locfileid: "53203258"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -56,7 +56,8 @@ ms.locfileid: "53195035"
 
 ## <a name="improvements-to-threat-hunting-experience"></a>脅威ハンティング エクスペリエンスの改善
 
-### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections-preview"></a>Explorer/リアルタイム検出 (プレビュー) 内Office 365 Defender 用アラート ID の概要
+
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>エクスプローラー/リアルタイム検出内Office 365 Defender のアラート ID の概要
 
 今日、アラートから脅威エクスプローラーに移動すると、エクスプローラー内でフィルター処理されたビューが開き、そのビューはアラート ポリシー ID (ポリシー ID はアラート ポリシーの一意の識別子) でフィルター処理されます。
 脅威エクスプローラーとリアルタイム検出でアラート ID (以下のアラート ID の例を参照) を導入して、特定のアラートに関連するメッセージと電子メールの数を確認することで、この統合の関連性を高めます。 また、メッセージがアラートの一部だったか、そのメッセージから特定のアラートに移動したのかも確認できます。
@@ -69,12 +70,12 @@ ms.locfileid: "53195035"
 > [!div class="mx-imgBorder"]
 > ![詳細フライアウトのアラート ID](../../media/AlertID-DetailsFlyout.png)
 
-### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>試用版テナントのエクスプローラー (およびリアルタイム検出) のデータ保持と検索の制限を 7 日から 30 日間に延長する (プレビュー)
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>試用版テナントのエクスプローラー (およびリアルタイム検出) のデータ保持と検索の制限を 7 日から 30 日間に延長する
 
 この変更の一環として、Office P1 および P2 試用版テナントの両方の Defender の脅威エクスプローラー/リアルタイム検出で、30 日間 (前の 7 日間から増加) のメール データを検索およびフィルター処理できます。
 これは、既に 30 日間のデータ保持および検索機能を備えた P1 および P2/E5 の両方の顧客の実稼働テナントには影響を与えかねない。
 
-### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>脅威エクスプローラーのレコードのエクスポートの制限を更新しました (プレビュー)
+### <a name="updated-limits-for-export-of-records-for-threat-explorer"></a>脅威エクスプローラーのレコードのエクスポートの制限を更新しました
 
 この更新プログラムの一環として、Threat Explorer からエクスポートできる電子メール レコードの行数が 9990 から 200,000 レコードに増加しました。 現在エクスポートできる列のセットは同じままですが、行数は現在の制限値から増加します。
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 請求通知メールと請求書添付ファイルを受け取るユーザーを管理する方法について学習します。
 ms.date: 03/17/2021
-ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a49598cd1b361a85af8455b0aff19e11fcf96526
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054576"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203246"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>請求通知と請求書の添付ファイルを管理する
 
@@ -127,6 +127,6 @@ ms.locfileid: "53054576"
 ## <a name="related-content"></a>関連コンテンツ
 
 [課金内容または請求書を表示する](view-your-bill-or-invoice.md) (article)\
-[メキシコ](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) で Microsoft 365 for businessの課金情報 (記事) \
+[メキシコ](mexico-billing-info.md) で Microsoft 365 for businessの課金情報 (記事) \
 [ビジネス向け請求書または請求書Microsoft 365を理解](understand-your-invoice2.md)する (記事)\
 [ユーザーを追加し、同時にライセンスを割り当てる](../../admin/add-users/add-users.md) (記事)

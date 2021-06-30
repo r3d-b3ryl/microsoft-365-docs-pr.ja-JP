@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab25757c79b7978400e98fa36d48163e1681e7c1
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: eecb635972be85e1a1a4f95c2786f209ee249745
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062012"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203282"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -55,8 +55,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 - メッセージとファイルを Microsoft に送信するには、次のいずれかの役割グループのメンバーである必要があります。
   - **[組織の管理****] または [セキュリティ**[リーダー] をMicrosoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
-  - **[組織の** 管理] [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)。
-
+  
     この記事で後述するように、カスタム メールボックスへの[](#view-user-submissions-to-microsoft)ユーザー申請を表示するには、この役割グループのメンバーシップが必要です。
 
 - ユーザーがメッセージとファイルを Microsoft に送信する方法の詳細については、「メッセージとファイルを Microsoft に報告する」 [を参照してください](report-junk-email-messages-to-microsoft.md)。
@@ -86,7 +85,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
    - **ブロックされていない必要があります (誤検知)**
    - **ブロックされている必要** があります: 電子メールが表示されるセクションに分類されている必要があります。次のいずれかの値を選択します (不明な場合は、最適な判断を使用してください)。
      - **フィッシング**
-     - **[スパム]**
+     - **スパム**
      - **マルウェア**
 
 5. 完了したら、[送信] ボタン **をクリック** します。
@@ -142,7 +141,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
      - **配信/ブロックの理由**
      - **申請 ID**
      - **ネットワーク メッセージ ID/オブジェクト ID**
-     - **[方向]**
+     - **Direction**
      - [**Sender IP (送信者の IP)**]
      - **バルク準拠レベル (BCL)**
      - **宛先**
