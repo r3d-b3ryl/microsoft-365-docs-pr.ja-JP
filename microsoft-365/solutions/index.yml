@@ -14,12 +14,12 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: c71ba6628ed858311db3d58c144295ff617679dc
-  ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+  ms.openlocfilehash: 053a20e65859fedbd91c9357ccdbd98bdb5109b3
+  ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/06/2021
-  ms.locfileid: "52789209"
+  ms.lasthandoff: 06/29/2021
+  ms.locfileid: "53177395"
 landingContent:
 - title: 基本的ソリューションガイド
   linkLists:
@@ -33,6 +33,8 @@ landingContent:
       url: deploy-threat-protection.md
     - text: データ プライバシー規制用の情報保護を展開する
       url: information-protection-deploy.md
+    - text: 中小企業およびキャンペーン向けの Microsoft 365
+      url: ../campaigns/index.md
 - title: アーキテクチャ図と設計原則
   linkLists:
   - linkListType: architecture
@@ -41,46 +43,50 @@ landingContent:
       url: cloud-architecture-models.md
     - text: Microsoft 365 の生産性図
       url: productivity-illustrations.md
-    - text: Teams アーキテクチャのポスター
-      url: /MicrosoftTeams/teams-architecture-solutions-posters?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: デザインの原則
       url: design-principles.md
-- title: ワークロード リソース
+    - text: ユーザーのインフォグラフィック
+      url: infographics-for-users.md
+    - text: アーキテクチャのアイコンとテンプレート
+      url: architecture-icons-templates.md
+- title: 管理および移行ソリューション ガイド
   linkLists:
-  - linkListType: reference
+  - linkListType: how-to-guide
     links:
-    - text: Contoso の事例
-      url: contoso-case-study-solutions.md
-  - linkListType: tutorial
-    links:
-    - text: テスト ラボ ガイド
-      url: test-lab-guides-overview-solutions.md
+    - text: テナント管理
+      url: tenant-management-overview.md
+    - text: 元従業員を削除する
+      url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: ファイル共有を Microsoft 365 に移行する
+      url: /sharepointmigration/mm-get-started.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 - title: チームワークとコラボレーションソリューションガイド
   linkLists:
   - linkListType: deploy
     links:
     - text: Teams 音声ソリューションを計画し展開する
       url: deploy-voice.md
+    - text: ビジネスの契約を管理する
+      url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
   - linkListType: overview
     links:
+    - text: インテリジェント イントラネット
+      url: /sharepoint/intelligent-internet-overview.md
     - text: 共同作業のガバナンス
       url: collaboration-governance-overview.md
     - text: ファイルの共同作業
       url: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: インテリジェント イントラネット
-      url: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: エンタープライズ向けの OneDrive ガイド
       url: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-- title: セキュリティとコンプライアンス ソリューション ガイド
+- title: コンプライアンス ソリューション ガイド
   linkLists:
   - linkListType: deploy
     links:
-    - text: 自宅での作業をサポートするセキュリティ チームの主なタスク
-      url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: Microsoft 365 security for Business 意思決定者 (BDMs)
-      url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: Microsoft Defender for Endpoint を展開する
-      url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: インサイダー リスク ソリューション
+      url: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: 監査ソリューション
+      url: ../compliance/auditing-solutions-overview.md
+    - text: Microsoft 365 Advanced eDiscovery
+      url: ../compliance/overview-ediscovery-20.md
   - linkListType: reference
     links:
     - text: ISO - 推奨アクション プラン
@@ -91,6 +97,44 @@ landingContent:
       url: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: GDPR  - 推奨するアクション プラン
       url: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: セキュリティ ソリューション ガイド
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 自宅での作業をサポートするセキュリティ チームの主なタスク
+      url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Microsoft 365 security for Business 意思決定者 (BDMs)
+      url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: ID とデバイスのアクセス構成
+      url: ../security/office-365-security/microsoft-365-policies-configurations.md
+    - text: Microsoft Defender for Endpoint を展開する
+      url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+    - text: Microsoft 365 Defender を評価する
+      url: ../security/defender-endpoint/deployment-phases.md
+    - text: 優先するアカウントのセキュリティに関する推奨事項
+      url: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+    - text: Microsoft 365 Defender を評価する
+      url: ../security/defender-endpoint/deployment-phases.md
+    - text: Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
+      url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
+  - linkListType: how-to-guide
+    links:
+    - text: Symantec から Microsoft Defender for Endpoint に移行する
+      url: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
+    - text: McAfee から Microsoft Defender for Endpoint に移行する
+      url: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
+    - text: Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint に切り替える
+      url: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+- title: ワークロード リソース
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Contoso の事例
+      url: contoso-case-study-solutions.md
+  - linkListType: tutorial
+    links:
+    - text: テスト ラボ ガイド
+      url: test-lab-guides-overview-solutions.md
 - title: 業界固有のガイダンス
   linkLists:
   - linkListType: overview
