@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 Microsoft 365 のコンプライアンスソリューションでファイルが表示されます '
-ms.openlocfilehash: b5aa6c737bc54129ce49378a7dcaf81e9d5c612f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 39474f54440ba33c8d7140981c1495a5c46bf0fc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114105"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226685"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
@@ -34,7 +34,7 @@ Microsoft 365 のデータ損失防止 (DLP) を使用すると、機密があ�
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>監視と対処が必要なエンドポイントのアクティビティ
 
-Microsoft エンドポイント DLP を使用すると、Windows 10 を実行しているデバイスでユーザーが機密アイテムに行っている次のようなアクティビティを監査および管理できます。　　　 
+Microsoft エンドポイント DLP を使用すると、Windows 10 を実行しているデバイスでユーザーが機密アイテムに行っている次のようなアクティビティを監査および管理できます。　　　
 
 |最新情報 |説明  | 監査可能/制限可能|
 |---------|---------|---------|
@@ -48,7 +48,7 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 |アイテムの作成|ユーザーがアイテムを作成した場合に検出します| 監査可能|
 |アイテムの名前の変更|ユーザーがアイテムの名前を変更した場合に検出します| 監査可能|
 
- ## <a name="monitored-files"></a>監視対象ファイル
+## <a name="monitored-files"></a>監視対象ファイル
 
 エンドポイント DLP は、次のファイルの種類の監視をサポートしています。
 
@@ -66,10 +66,10 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 - .cs ファイル
 - .h ファイル
 - .java ファイル
- 
+
 既定では、エンドポイント DLP は、ポリシーの一致がない場合でも、これらのファイルの種類のアクティビティを監査します。 ポリシーの一致からのデータの監視のみが必要な場合は、エンドポイント DLP グローバル設定で **[デバイスのファイル アクティビティを常に監査する]** をオフにすることができます。 この設定がオンの場合、デバイスがポリシーの対象になっていない場合でも、Word、PowerPoint、Excel、PDF、および .csv ァイルでのアクティビティは常に監査されます。
 
-エンドポイント DLP は MIME の種類に基づいてアクティビティを監視するため、ファイルの拡張子が変更されてもアクティビティはキャプチャされます。 
+エンドポイント DLP は MIME の種類に基づいてアクティビティを監視するため、ファイルの拡張子が変更されてもアクティビティはキャプチャされます。
 
 ## <a name="whats-different-in-endpoint-dlp"></a>エンドポイント DLP との違い
 
@@ -153,8 +153,8 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 
 ここまでエンドポイント DLP について学びましたので、次のステップの手順は以下になります：
 
-1) [Microsoft エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md)
-2) [Microsoft エンドポイント データ損失防止を使用する](endpoint-dlp-using.md)
+1. [Microsoft エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md)
+2. [Microsoft エンドポイント データ損失防止を使用する](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>関連項目
 

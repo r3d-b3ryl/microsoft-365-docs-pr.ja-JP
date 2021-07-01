@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 以外のクラウド アプリで dlp ポリシーを使用する方法について説明します。
-ms.openlocfilehash: ca522b5accbd2c08e80b0ce63871179ff64bbcc8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149156"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226841"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する (プレビュー)
 
@@ -59,8 +59,8 @@ DLP ポリシーを Microsoft 以外の特定のクラウド アプリに使用�
 
 クラウド アプリをクラウド アプリに接続Cloud App Security、クラウド アプリMicrosoft 365 DLP ポリシーを作成できます。
 
->[!NOTE]
->また、Microsoft クラウド アプリに DLP Microsoft Cloud App Securityを作成するために、このポリシーを使用することもできます。 ただし、Microsoft クラウド アプリに対して DLP Microsoft 365を作成および管理するには、このポリシーを使用する必要があります。
+> [!NOTE]
+> また、Microsoft クラウド アプリに DLP Microsoft Cloud App Securityを作成するために、このポリシーを使用することもできます。 ただし、Microsoft クラウド アプリに対して DLP Microsoft 365を作成および管理するには、このポリシーを使用する必要があります。
 
 ## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>Microsoft 以外のクラウド アプリに DLP ポリシーを作成する
 
@@ -81,12 +81,12 @@ DLP ポリシーでルールを作成する場合は、Microsoft 以外のクラ
 
 ![サード パーティ製アプリの制限](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
->[メモ]Microsoft 以外のアプリに適用される DLP ポリシーは、Microsoft Cloud App Security。 Microsoft 以外のアプリの DLP ポリシーが作成されると、同じポリシーが自動的に作成Microsoft Cloud App Security。
+> [メモ]Microsoft 以外のアプリに適用される DLP ポリシーは、Microsoft Cloud App Security。 Microsoft 以外のアプリの DLP ポリシーが作成されると、同じポリシーが自動的に作成Microsoft Cloud App Security。
 
-DLP ポリシーの作成と構成の詳細については、「テストの作成と DLP ポリシー [の調整」を参照してください](./create-test-tune-dlp-policy.md?view=o365-worldwide)。
+DLP ポリシーの作成と構成の詳細については、「テストの作成と DLP ポリシー [の調整」を参照してください](./create-test-tune-dlp-policy.md)。
 
 ## <a name="see-also"></a>関連項目
 
-- [DLP ポリシーのテストと調整を作成する](./create-test-tune-dlp-policy.md?view=o365-worldwide)
-- [DLP の既定ポリシーの概要](./get-started-with-the-default-dlp-policy.md?view=o365-worldwide)
-- [テンプレートからの DLP ポリシーの作成](./create-a-dlp-policy-from-a-template.md?view=o365-worldwide)
+- [DLP ポリシーのテストと調整を作成する](./create-test-tune-dlp-policy.md)
+- [DLP の既定ポリシーの概要](./get-started-with-the-default-dlp-policy.md)
+- [テンプレートからの DLP ポリシーの作成](./create-a-dlp-policy-from-a-template.md)

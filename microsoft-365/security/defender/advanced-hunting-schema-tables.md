@@ -1,7 +1,7 @@
 ---
-title: Defender の高度なMicrosoft 365スキーマ内のデータ テーブル
+title: 高度な検索スキーマMicrosoft 365 Defenderテーブル
 description: 高度な捜索スキーマのテーブルについて学習し、脅威の捜索クエリを実行できるデータを理解します。
-keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、data
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、利用統計情報、スキーマ参照、kusto、table、data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 50a221a65c8264d816de958ec74fa99e9e6db762
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470582"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53225994"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
@@ -48,9 +48,9 @@ ms.locfileid: "52470582"
 - **サンプル クエリ**—テーブルの利用方法を特徴付けするクエリの例。
 
 ### <a name="access-the-schema-reference"></a>スキーマ参照へのアクセス
-スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある [参照の表示] アクションを選択します。 [スキーマ参照] **を選択して** テーブルを検索することもできます。   
+スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある [参照の表示] アクションを選択します。 [スキーマ参照] **を選択して** テーブルを検索することもできます。
 
-![ポータル内スキーマ参照にアクセスする方法を示すイメージ ](../../media/mtp-ah/ah-reference.png) 
+![ポータル内スキーマ参照にアクセスする方法を示すイメージ](../../media/mtp-ah/ah-reference.png)
 
 ## <a name="learn-the-schema-tables"></a>スキーマ テーブルの詳細
 次の参照は、スキーマ内のすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。 テーブル名と列名は、高度な検索画面のスキーマ表現の一部としてセキュリティ センターにも表示されます。

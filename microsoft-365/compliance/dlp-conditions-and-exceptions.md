@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: dlp ポリシーの条件と例外について学ぶ
-ms.openlocfilehash: 54c66f36e6a4b59147461ad154a4012f62bda77f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 4fd61e0f288ef0dfd34af1d2f4dde3dbfef9cee9
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114393"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226937"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP ポリシーの条件、例外、およびアクション
 
@@ -29,10 +29,10 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 - 条件は、含めるものについて定義します。
 - 例外は、除外する対象を定義します。
 - アクションは、条件または例外が満たされた結果として何が起こるかを定義します。
- 
+
 ほとんどの条件と例外には、1 つ以上の値をサポートする 1 つのプロパティがあります。 たとえば、DLP ポリシーが電子メールに適用されている場合Exchange送信者は、メッセージの送信者を必要とします。 プロパティが 2 つある条件もあります。 たとえば、**メッセージ ヘッダーにこれらの単語のいずれかが含まれる** という条件には、ヘッダーを指定するプロパティ 1 つと、ヘッダー フィールド内で検索するテキストを指定する 2 つめのプロパティが必要です。 一部の条件や例外には、プロパティが含めではありません。 たとえば、添付ファイル **はパスワードで保護された** 状態で、パスワードで保護されたメッセージ内の添付ファイルを検索します。
 
-アクションには通常、追加のプロパティが必要になります。 たとえば、DLP ポリシー ルールがメッセージをリダイレクトする場合は、メッセージのリダイレクト先を指定する必要があります。 
+アクションには通常、追加のプロパティが必要になります。 たとえば、DLP ポリシー ルールがメッセージをリダイレクトする場合は、メッセージのリダイレクト先を指定する必要があります。
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
 
 ## <a name="conditions-and-exceptions-for-dlp-policies"></a>DLP ポリシーの条件と例外
@@ -51,23 +51,23 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 
 |**DLP の条件または例外**  |**PowerShell の condition/exception パラメーター Microsoft 365** |**プロパティの種類**  |**説明**|
 |---------|---------|---------|---------|
-|送信者は |condition: *From* <br/> 例外: *ExceptIfFrom*      |住所 |     指定されたメールボックス、メール ユーザー、メール連絡先、または組織内のMicrosoft 365によって送信されるメッセージ。|
+|送信者が |condition: *From* <br/> 例外: *ExceptIfFrom*      |住所 |     指定されたメールボックス、メール ユーザー、メール連絡先、または組織内のMicrosoft 365によって送信されるメッセージ。|
 |送信者の IP アドレスが     |condition: *SenderIPRanges*<br/> 例外: *ExceptIfSenderIPRanges*         |  IPAddressRanges       | 送信者の IP アドレスが、指定した IP アドレスと一致するか、指定した IP アドレスの範囲内にあるメッセージです。       |
 |送信者アドレスに単語が含まれている   | condition: *FromAddressContainsWords* <br/> 例外: *ExceptIfFromAddressContainsWords*        |   Words      |   送信者のメール アドレスに指定の単語が含まれているメッセージです。|
-| 送信者アドレスがパターンと一致する    | condition: *FromAddressMatchesPatterns* <br/> 例外: *ExceptFromAddressMatchesPatterns*       |      パターン   |  送信者のメール アドレスに、特定の正規表現と一致するテキスト パターンが含まれているメッセージです。  |
-|送信者ドメインは、  |  condition: *SenderDomainIs* <br/> 例外: *ExceptIfSenderDomainIs*       |DomainName         |     送信者のメール アドレスのドメインが指定された値と一致するメッセージです。 指定したドメイン (ドメインのサブドメインなど) を含む送信者ドメインを検索する必要がある場合は、送信者アドレス一致 **(***FromAddressMatchesPatterns*) 条件を使用し、次の構文を使用してドメインを指定します。 \. \.    |
+| 送信者のアドレスがパターンと一致している    | condition: *FromAddressMatchesPatterns* <br/> 例外: *ExceptFromAddressMatchesPatterns*       |      パターン   |  送信者のメール アドレスに、特定の正規表現と一致するテキスト パターンが含まれているメッセージです。  |
+|送信者のドメインが次の場合  |  condition: *SenderDomainIs* <br/> 例外: *ExceptIfSenderDomainIs*       |DomainName         |     送信者のメール アドレスのドメインが指定された値と一致するメッセージです。 指定したドメイン (ドメインのサブドメインなど) を含む送信者ドメインを検索する必要がある場合は、送信者アドレス一致 **(***FromAddressMatchesPatterns*) 条件を使用し、次の構文を使用してドメインを指定します。 \. \.    |
 |送信者スコープ    | condition: *FromScope* <br/> 例外: *ExceptIfFromScope*    | UserScopeFrom    |    内部または外部の送信者によって送信されるメッセージ。    |
 |送信者の指定のプロパティが次の単語のいずれかを含む|condition: *SenderADAttributeContainsWords* <br/> 例外: *ExceptIfSenderADAttributeContainsWords*|First プロパティ: `ADAttribute` <p> 2 番目のプロパティ: `Words`|送信者の指定した Active Directory 属性に、指定された単語が含まれているメッセージ。|
 |送信者の指定のプロパティが次のテキスト パターンと一致する|condition: *SenderADAttributeMatchesPatterns* <br/> 例外: *ExceptIfSenderADAttributeMatchesPatterns*|First プロパティ: `ADAttribute` <p> 2 番目のプロパティ: `Patterns`|送信者の指定した Active Directory 属性に、指定した正規表現に一致するテキスト パターンが含まれるメッセージ。|
 
-### <a name="recipients"></a>Recipients
+### <a name="recipients"></a>受信者
 
 |**DLP の条件または例外**| **PowerShell の condition/exception パラメーター Microsoft 365** |    **プロパティの種類** | **説明**|
 |---------|---------|---------|---------|
 |受信者が|  condition: *SentTo* <br/> 例外: *ExceptIfSentTo* | 住所 | 受信者の 1 人が組織内の指定されたメールボックス、メール ユーザー、メール連絡先であるメッセージです。受信者はメッセージの **To**、**Cc**、**Bcc** のフィールドにいることが可能です。|
 |受信者ドメインが|   condition: *RecipientDomainIs* <br/> 例外: *ExceptIfRecipientDomainIs* |   DomainName |    受信者の電子メール アドレスのドメインが指定した値と一致するメッセージ。|
 |受信者のアドレスに単語が含まれている|  condition: *AnyOfRecipientAddressContainsWords* <br/> 例外: *ExceptIfAnyOfRecipientAddressContainsWords*|  Words|  受信者のメール アドレスに指定の単語が含まれているメッセージです。 <br/>**注**: この条件が、受信プロキシ アドレスに送信されるメッセージについて考慮していない点に注意してください。受信者のプライマリ メール アドレスに送信されるメッセージのみを照合します。|
-|受信者アドレスがパターンと一致する| condition: *AnyOfRecipientAddressMatchesPatterns* <br/> 例外: *ExceptIfAnyOfRecipientAddressMatchesPatterns*| パターン    |受信者のメール アドレスに、特定の正規表現と一致するテキスト パターンが含まれているメッセージです。 <br/> **注**: この条件が、受信プロキシ アドレスに送信されるメッセージについて考慮していない点に注意してください。受信者のプライマリ メール アドレスに送信されるメッセージのみを照合します。|
+|受信者のアドレスがパターンと一致している| condition: *AnyOfRecipientAddressMatchesPatterns* <br/> 例外: *ExceptIfAnyOfRecipientAddressMatchesPatterns*| パターン    |受信者のメール アドレスに、特定の正規表現と一致するテキスト パターンが含まれているメッセージです。 <br/> **注**: この条件が、受信プロキシ アドレスに送信されるメッセージについて考慮していない点に注意してください。受信者のプライマリ メール アドレスに送信されるメッセージのみを照合します。|
 |のメンバーに送信されます。| condition: *SentToMemberOf* <br/> 例外: *ExceptIfSentToMemberOf*|  住所|  指定した配布グループ、メールが有効なセキュリティ グループ、またはグループのメンバーである受信者をMicrosoft 365メッセージ。 グループはメッセージの **To**、**Cc**、または **Bcc** フィールドにあることが可能です。|
 
 ### <a name="message-subject-or-body"></a>メッセージの件名または本文
@@ -75,13 +75,13 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 |**DLP の条件または例外** | **PowerShell の condition/exception パラメーター Microsoft 365** |**プロパティの種類**| **説明**|
 |---------|---------|---------|---------|
 |件名には、単語または語句が含まれている| condition: *SubjectContainsWords* <br/> 例外: *ExceptIf SubjectContainsWords*| Words   |Subject フィールドに特定の単語を持つメッセージです。|
-|件名がパターンと一致する|condition: *SubjectMatchesPatterns* <br/> 例外: *ExceptIf SubjectMatchesPatterns*|パターン   |Subject フィールドに、指定された正規表現に一致するテキスト パターンが含まれるメッセージ。|
+|件名がパターンと一致している|condition: *SubjectMatchesPatterns* <br/> 例外: *ExceptIf SubjectMatchesPatterns*|パターン   |Subject フィールドに、指定された正規表現に一致するテキスト パターンが含まれるメッセージ。|
 |コンテンツが含まれている|  condition: *ContentContainsSensitiveInformation* <br/> 例外 *ExceptIfContentContainsSensitiveInformation*| SensitiveInformationTypes|  データ損失防止 (DLP) ポリシーで定義された機密情報を含むメッセージまたはドキュメント。|
 | 件名または本文の一致パターン    | condition: *SubjectOrBodyMatchesPatterns* <br/> 例外: *ExceptIfSubjectOrBodyMatchesPatterns*    | パターン    | 件名フィールドまたはメッセージ本文に、指定した正規表現に一致するテキスト パターンが含まれるメッセージ。    |
 | 件名または本文に単語が含まれている    | condition: *SubjectOrBodyContainsWords* <br/> 例外: *ExceptIfSubjectOrBodyContainsWords*    | Words    | 件名フィールドまたはメッセージ本文に指定された単語があるメッセージ    |
 
 
-### <a name="attachments"></a>Attachments
+### <a name="attachments"></a>添付ファイル
 
 |**DLP の条件または例外**| **PowerShell の condition/exception パラメーター Microsoft 365**| **プロパティの種類**   |**説明**|
 |---------|---------|---------|---------|
@@ -101,7 +101,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 |**DLP の条件または例外**| **PowerShell の condition/exception パラメーター Microsoft 365**| **プロパティの種類**|  **説明**|
 |---------|---------|---------|---------|
 |ヘッダーには、単語または語句が含まれています|condition: *HeaderContainsWords* <br/> 例外: *ExceptIfHeaderContainsWords*|  ハッシュ テーブル  |指定したヘッダー フィールドを含むメッセージであり、そのヘッダー フィールドの値には指定した単語が含まれています。|
-|ヘッダーがパターンと一致する|   condition: *HeaderMatchesPatterns* <br/> 例外: *ExceptIfHeaderMatchesPatterns*|    ハッシュ テーブル  |指定したヘッダー フィールドを含むメッセージであり、そのヘッダー フィールドの値には指定した正規表現が含まれています。|
+|ヘッダーがパターンと一致している|   condition: *HeaderMatchesPatterns* <br/> 例外: *ExceptIfHeaderMatchesPatterns*|    ハッシュ テーブル  |指定したヘッダー フィールドを含むメッセージであり、そのヘッダー フィールドの値には指定した正規表現が含まれています。|
 
 ### <a name="message-properties"></a>メッセージのプロパティ
 
@@ -126,7 +126,7 @@ DLP ポリシーの条件と例外は、ポリシーが適用される機密性�
 |承認のためにメッセージを送信者のマネージャーに転送する| 中|First プロパティ: *ModerateMessageByManager*</br> 2 番目のプロパティ: *ブール型 (Boolean)*|Moderate パラメーターは、電子メール メッセージをモデレーターに送信する DLP ルールのアクションを指定します。 このパラメーターでは、@{ModerateMessageByManager = \| <$true$false>。|
 |承認のメッセージを特定の承認者に転送する| 中|First プロパティ: *ModerateMessageByUser*</br>2 番目のプロパティ: *Addresses*|Moderate パラメーターは、電子メール メッセージをモデレーターに送信する DLP ルールのアクションを指定します。 このパラメーターでは、@{ ModerateMessageByUser = @("emailaddress1","emailaddress2",..."emailaddressN")} という構文を使用します。|
 |受信者の追加|AddRecipients|First プロパティ: *Field*</br>2 番目のプロパティ: *Addresses*| メッセージの [宛先/Cc/Bcc] フィールドに 1 つ以上の受信者を追加します。 このパラメーターでは、@{<AddToRecipients \| CopyTo \| BlindCopy> To = "emailaddress"} という構文を使用します。|
-|送信者のマネージャーを受信者として追加する|AddRecipients | First プロパティ: *AddedManagerAction*</br>2 番目のプロパティ: *Field* | 送信者の上司を指定の受信者タイプ ( To 、 Cc 、 Bcc ) としてメッセージに追加したり、送信者や受信者に通知することなくメッセージを送信者の上司にリダイレクトします。 このアクションは、送信者の Manager 属性が Active Directory で定義されている場合のみ有効です。 このパラメーターは、@{AddManagerAsRecipientType = "<\| Cc \| Bcc>"} という構文を使用します。|    
-件名の先頭に付く    |PrependSubject    |String    |メッセージの Subject フィールドの冒頭に指定のテキストを追加します。元の件名のテキストを区別するために、指定されたテキストの最後の文字としてスペースまたはコロン (:) を使用してください。  </br>件名に既にテキストが含まれているメッセージ (返信など) に同じ文字列が追加されるのを防ぐには、"件名に単語が含まれている" (ExceptIfSubjectContainsWords) 例外をルールに追加します。    
-|HTML 免責事項の適用    |ApplyHtmlDisclaimer    |First プロパティ: *Text*</br>2 番目のプロパティ: *場所*</br>3 番目のプロパティ: *フォールバック アクション*    |指定した HTML 免責事項をメッセージの必要な場所に適用します。</br>このパラメーターでは、@{ Text = " という構文を使用します。Location = <Append \| Prepend>。FallbackAction = <Wrap \| Ignore \| Reject> }
+|送信者のマネージャーを受信者として追加する|AddRecipients | First プロパティ: *AddedManagerAction*</br>2 番目のプロパティ: *Field* | 送信者の上司を指定の受信者タイプ (To、Cc、Bcc) としてメッセージに追加したり、送信者や受信者に通知することなくメッセージを送信者の上司にリダイレクトします。 このアクションは、送信者の Manager 属性が Active Directory で定義されている場合のみ有効です。 このパラメーターは、@{AddManagerAsRecipientType = "<\| Cc \| Bcc>"} という構文を使用します。|
+件名の先頭に付く    |PrependSubject    |String    |メッセージの Subject フィールドの冒頭に指定のテキストを追加します。元の件名のテキストを区別するために、指定されたテキストの最後の文字としてスペースまたはコロン (:) を使用してください。  </br>件名に既にテキストが含まれているメッセージ (返信など) に同じ文字列が追加されるのを防ぐには、"件名に単語が含まれている" (ExceptIfSubjectContainsWords) 例外をルールに追加します。|
+|HTML 免責事項の適用    |ApplyHtmlDisclaimer    |First プロパティ: *Text*</br>2 番目のプロパティ: *場所*</br>3 番目のプロパティ: *フォールバック アクション*    |指定した HTML 免責事項をメッセージの必要な場所に適用します。</br>このパラメーターでは、@{ Text = " という構文を使用します。Location = <Append \| Prepend>。FallbackAction = <Wrap \| Ignore \| Reject> }|
 |権限Office 365 Message Encryption保護を削除する    | RemoveRMSTemplate | 該当なし| 電子メールOffice 365された暗号化を削除します。|

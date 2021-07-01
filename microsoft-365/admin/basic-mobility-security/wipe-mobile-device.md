@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 組み込みの Basic Mobility and Security を使用して、登録済みデバイスから情報を削除します。
-ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: c3cc547ce5e135ccdabf9a09b0d572f1b2530f47
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706144"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228149"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Basic Mobility and Security でモバイル デバイスをワイプする
 
 Microsoft 365 の組み込みの Basic Mobility and Security を使用して、組織情報のみを削除したり、出荷時のリセットを実行してモバイル デバイスからすべての情報を削除し、工場出荷時の設定に復元することができます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 モバイル デバイスは、機密性の高い組織情報を保存し、組織のリソースにアクセスMicrosoft 365できます。 組織の情報を保護するために、出荷時のリセットまたは会社データの削除を行います。
 
@@ -45,7 +45,7 @@ Microsoft 365 の組み込みの Basic Mobility and Security を使用して、�
 
 ## <a name="wipe-a-mobile-device"></a>モバイル デバイスをワイプする
 
-1. 管理センターに [移動Microsoft 365します](../../admin/admin-overview/about-the-admin-center.md)。
+1. [ファイル] に移動 [Microsoft 365 管理センター。](../../admin/admin-overview/about-the-admin-center.md)
 
 2. [モバイル デバイスの管理] を検索フィールドに入力し、結果の一覧から [モバイル デバイス **の管理** ] を選択します。
 
@@ -86,5 +86,6 @@ Microsoft 365 の組み込みの Basic Mobility and Security を使用して、�
 |Microsoft 365 Intune アプリ保護ポリシーでデバイスが保護されている場合、アプリ データはワイプされます。 アプリは削除されません。 モバイル アプリケーション管理 (MAM) ポリシーで保護されていないデバイスの場合、OutlookとOneDriveデータは削除されません。<br/>**メモ** Intune アプリ保護ポリシーを適用するには、Intune ライセンスが必要です。|はい|はい|
 |Basic Mobility と Security によってデバイスに適用されるポリシー設定は適用されなくなりました。ユーザーは設定を変更できます。|はい|はい|
 |Basic Mobility and Security によって作成されたメール プロファイルが削除され、デバイス上のキャッシュされたメールが削除されます。|はい|該当なし|
->[!NOTE]
->ポータル サイトアプリは、iOS 用アプリ ストアと Android デバイス向け Play ストアで利用できます。
+
+> [!NOTE]
+> ポータル サイトアプリは、iOS 用アプリ ストアと Android デバイス向け Play ストアで利用できます。

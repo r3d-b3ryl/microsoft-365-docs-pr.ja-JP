@@ -1,7 +1,7 @@
 ---
 title: Insider リスク管理監査ログ
 description: インサイダー リスク管理監査ログの詳細については、Microsoft 365
-keywords: Microsoft 365、インサイダーリスク管理、リスク管理、コンプライアンス
+keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bda9633ab37fd21fd66b3a8a53d4dd522e48ced1
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b7eb225f04f531c3b6de71bf72df0f8062a8c93d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820280"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226505"
 ---
 # <a name="insider-risk-management-audit-log"></a>Insider リスク管理監査ログ
 
@@ -38,8 +38,8 @@ ms.locfileid: "50820280"
 
 監査ログからデータを表示およびエクスポートするには、ユーザーを Insider リスク管理役割グループまたは *Insider* リスク管理 *監査* 人役割グループに割り当てる必要があります。 インサイダー リスク管理役割グループの詳細については、「インサイダー リスク管理の概要 [手順 1: アクセス許可の有効化」を参照してください](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)。
 
->[!NOTE]
->インサイダー リスク管理監査ログは、監査ログに関連付Microsoft 365、独立した監査システムであり、個別のアクティビティに関する情報を取得します。 監査Microsoft 365無効にしても、インサイダー リスク管理内でのアクティビティ監査には影響を与えかねない。
+> [!NOTE]
+> インサイダー リスク管理監査ログは、監査ログに関連付Microsoft 365、独立した監査システムであり、個別のアクティビティに関する情報を取得します。 監査Microsoft 365無効にしても、インサイダー リスク管理内でのアクティビティ監査には影響を与えかねない。
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>インサイダー リスク監査ログのアクティビティを表示する
 

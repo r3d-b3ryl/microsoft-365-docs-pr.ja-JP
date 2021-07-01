@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: セキュリティ コンプライアンス センターで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする&説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 911d2dc3a4adeb79e2b41f3a450bbc446feee916
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683845"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227153"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>カスタムの機密情報の種類を使用する前に
 
@@ -45,7 +45,7 @@ ms.locfileid: "52683845"
     - [関数](what-the-dlp-functions-look-for.md)
     - [信頼度レベル](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
-- UI を使用してカスタムの機密情報の種類を作成、テスト、展開するには、グローバル管理者またはコンプライアンス管理者のアクセス許可が必要です。 Office 365 で「[管理者ロールについて](/office365/admin/add-users/about-admin-roles?view=o365-worldwide)」を参照してください。
+- UI を使用してカスタムの機密情報の種類を作成、テスト、展開するには、グローバル管理者またはコンプライアンス管理者のアクセス許可が必要です。 Office 365 で「[管理者ロールについて](/office365/admin/add-users/about-admin-roles)」を参照してください。
 
 - 組織には、データ損失防止 (DLP) を含む Office 365 Enterprise などのサブスクリプションが必要です。 [メッセージング ポリシーとコンプライアンス サービスの説明](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)を参照してください。 
 

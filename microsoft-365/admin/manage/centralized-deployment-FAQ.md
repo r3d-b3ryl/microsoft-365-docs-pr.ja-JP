@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 管理センターから集中展開に関するよくある質問Microsoft 365確認します。
-ms.openlocfilehash: 60d7a91da738803976b6823009450124d7b57814
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 一元的な展開に関するよくある質問に対する回答を、Microsoft 365 管理センター。
+ms.openlocfilehash: 0da9ec9595fd433abe1e2e2ae3f2e3a0c6b3b9b5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579304"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228007"
 ---
 # <a name="centralized-deployment-faq"></a>一元展開に関する FAQ
 
@@ -44,7 +44,7 @@ Office 365 管理者が組織内のユーザーとグループに Office アド�
 
 管理を容易にするために、個々のユーザー割り当てではなくグループ割り当てを使用する方が良いです。
  
-詳細については、「ユーザーと [グループの割り当て」を参照してください](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)。  
+詳細については、「ユーザーと [グループの割り当て」を参照してください](./centralized-deployment-of-add-ins.md#user-and-group-assignments)。  
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>アドインがすべてのユーザーに表示されるのにどれくらいの時間が必要ですか?  
 
@@ -88,14 +88,14 @@ Office 365 管理者が組織内のユーザーとグループに Office アド�
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>管理者は、集中展開を使用して、Officeストアから有料アドインを展開できますか? 
 
-いいえ。 現時点では、集中展開を使用して、Officeストアから有料アドインを展開できます。  
+その必要はありません。 現時点では、集中展開を使用して、Officeストアから有料アドインを展開できます。  
  
 マニフェスト ファイルまたは URL を要求するには、有料アドインの ISV 開発者に手を差し伸べることです。 テナント管理者は、集中展開を使用して、アドインを LOB アドインとして展開できます。
     
 ## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>組織のアドインを管理するために必要な管理者の役割は何ですか?  
 
-グローバル管理者は、アドイン管理ライフサイクルへの完全なアクセス権を持つ推奨される役割です。 他の管理者の役割では、アドイン展開ライフサイクルへのアクセスが制限されています。 ビジネス サブスクリプション用にMicrosoft 365したユーザーは、グローバル管理者です。 
+グローバル管理者は、アドイン管理ライフサイクルへの完全なアクセス権を持つ推奨される役割です。 ビジネス サブスクリプションを購入したユーザー Microsoft 365、グローバル管理者です。 
  
-サブスクリプションには、組織内の他のユーザーに割り当て可能な一連の管理者ロールが付属しています。 各管理者の役割は、一般的なビジネス機能にマップされ、組織内のユーザーが管理センターで特定のタスクを実行Microsoft 365します。  
+サブスクリプションには、組織内の他のユーザーに割り当て可能な一連の管理者ロールが付属しています。 各管理者の役割は、一般的なビジネス機能にマップされ、組織内のユーザーに対して、組織内のユーザーが特定のタスクを実行するためのアクセス許可をMicrosoft 365 管理センター。  
  
-詳細については、「管理者ロールの割り [当て」を参照してください](../add-users/assign-admin-roles.md?view=o365-worldwide)。 
+詳細については、「管理者ロールの割り [当て」を参照してください](../add-users/assign-admin-roles.md)。 

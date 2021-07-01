@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: ナビゲーション バーの上部の既定のテーマを変更し、Microsoft 365ロゴや色に合わせてカスタマイズする方法について学習します。
-ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006915"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227801"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>組織のMicrosoft 365テーマをカスタマイズする
 
@@ -41,12 +41,12 @@ ms.locfileid: "53006915"
 
 2. [組織プロファイル **] タブで** 、[カスタム テーマ] **を選択します**。
 
-すべてのテーマは、次のタブを使用してカスタマイズできます。
+すべての組織のテーマは、次のタブを使用してカスタマイズできます。
 
 |**Tab**|**What can you do?**|
 |:-----|:-----|
 |[全般](#general-modify-a-theme) <br/> |テーマ名を変更し、最大 5 つのグループに割り当てる (該当する場合)。  <br/> |
-|[ロゴ](#logos-specify-your-theme-logos) <br/> |暗いテーマやモバイル オプションを含むOfficeロゴを追加します。  <br/> |
+|[ロゴ](#logos-specify-your-theme-logos) <br/> |暗いテーマの代替ロゴを含む組織のロゴを追加します。  <br/> |
 |[Colors](#colors-choose-theme-colors) <br/> |ナビゲーション バー、アクセント、テキスト、アイコンの色を指定して配色をカスタマイズします。 <br/> |
 
 ## <a name="general-modify-a-theme"></a>全般: テーマを変更する
@@ -64,7 +64,7 @@ ms.locfileid: "53006915"
 > [!IMPORTANT]
 > 既定のテーマは一意であり、名前を変更したり、組織内のすべてのユーザーに適用したりできない。 既定のテーマを削除するには、最初に他のすべてのテーマを削除する必要があります。
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="スクリーンショット: 組織の既定のテーマを示す [全般] タブ":::
+:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="スクリーンショット: 組織の既定のテーマを示す [全般] タブ":::
 
 ### <a name="create-a-group-theme"></a>グループ テーマの作成
 
@@ -76,7 +76,7 @@ ms.locfileid: "53006915"
 
 3. **[保存]** を選択します。
 
-:::image type="content" source="../../media/default-theme-general-users.png" alt-text="スクリーンショット: 組織内のユーザーグループの既定のテーマを示す [全般] タブ":::
+:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="スクリーンショット: 組織内のユーザーグループの既定のテーマを示す [全般] タブ":::
 
 ## <a name="logos-specify-your-theme-logos"></a>ロゴ: テーマのロゴを指定する
 
@@ -84,9 +84,11 @@ ms.locfileid: "53006915"
 
 - **既定のロゴ**: ロゴをポイントする URL の場所を追加します。 URL が HTTPS を使用するようにします。 匿名アクセスを許可し、認証を必要としない HTTPS イメージ URL を追加します。 既定のテーマの場合は、10 kb 未満のロゴ 画像をアップロードすることもできます。 既定のロゴは、JPG、PNG、GIF、または SVG 形式で指定できます。 SVG イメージの場合は、垂直方向に 24 ピクセルに収まるサイズに変更されます。 JPG、PNG、GIF 画像は、200 x 48 ピクセルに合わせて拡大縮小されます。 ロゴの縦横比は常に保持されます。
 - **代替ロゴ**: ロゴをポイントする URL の場所を追加します。 代替ロゴは、暗いテーマで使用Officeする必要があります。 既定のロゴと同じ要件。
-- **[オンクリック] リンク**: ロゴをポイントする URL の場所を追加します。 ロゴは、会社の Web サイトなど、任意の会社リソースへのリンクとして使用できます。
+- **[オンクリック] リンク**: ロゴをポイントする URL の場所を追加します。 ロゴは、会社の Web サイトなど、任意の会社リソースへのリンクとして使用できます。 ロゴの URL の場所を選択しない場合は、既定でホーム ページOfficeされます。
 
 **[保存]** を選択し、変更内容を保存します。
+
+:::image type="content" source="../../media/Logos_Tab.png" alt-text="スクリーンショット: ロゴ オプションを示す [ロゴ] タブ":::
 
 ロゴは、いつでも削除できます。 [ロゴ] ページに戻 **り、[** 削除] を **選択します**。
   
@@ -98,9 +100,8 @@ ms.locfileid: "53006915"
 - **テキストとアイコンの色**: 上部ナビゲーション バーのテキストとアイコンに使用する色を選択します。
 - **アクセントの色**: 白または明るい背景によく表示される色を選択します。 アクセントカラーは、白または明るい背景に表示されるいくつかのリンクやボタンの色を付けするために使用されます。 たとえば、アクセントの色は、ユーザーの受信トレイとユーザーの Office.com ポータル ページの要素を色付けするために使用されます。
 - **[色のリセット**] : 色を既定の色にリセットするには、このリンクを選択します。
-- **使用するロゴ:** 既定のロゴまたは自分で作成した他のロゴを選択します。
 
-:::image type="content" source="../../media/default-theme-colors.png" alt-text="スクリーンショット: 組織の既定のテーマの色を示す [色] タブ":::
+:::image type="content" source="../../media/default-theme-colors1.png" alt-text="スクリーンショット: 組織の既定のテーマの色を示す [色] タブ":::
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -137,7 +138,7 @@ ms.locfileid: "53006915"
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>ロゴ URL をアップロードする度にエラー メッセージが表示される理由。  
 
-使用しているロゴが、パブリックアドレス指定可能な URL として指定されている必要があります。 次の手順に[従って、ロゴ](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)を Azure Blob ストレージまたはオンライン Office 365 コンテンツ配信ネットワーク[にアップロードSharePointします](../../enterprise/use-microsoft-365-cdn-with-spo.md)。
+使用しているロゴが、パブリックアドレス指定可能な URL として指定されている必要があります。 次の手順に[従って、ロゴ](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)を Azure Blob Storageまたはオンライン Office 365 Content Delivery Network[にアップロードSharePointします](../../enterprise/use-microsoft-365-cdn-with-spo.md)。
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>"4.5:1 の最小色コントラスト比を満たしていない" というメッセージが表示される理由
 

@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: このランディング ページには、セキュリティとコンプライアンスに関するリンクと計画情報がOffice 365。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e5e0f5f13511e0890a69c48ab7738f2b1ebab60
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6300d254e67cad466dc25a902fc70f43ec0b776a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198060"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226253"
 ---
 # <a name="plan-for-security-amp-compliance"></a>セキュリティコンプライアンスを &amp; 計画する
 
@@ -32,7 +32,7 @@ ms.locfileid: "51198060"
 
 [情報保護] ポスターの情報保護機能にOffice 365します。 
   
-[データプライバシーに関する規制に関する情報保護を、Microsoft 365](../solutions/information-protection-deploy.md?view=o365-worldwide)
+[データプライバシーに関する規制に関する情報保護を、Microsoft 365](../solutions/information-protection-deploy.md)
   
 ## <a name="step-2-check-your-secure-score"></a>手順 2: セキュリティで保護されたスコアを確認する
 

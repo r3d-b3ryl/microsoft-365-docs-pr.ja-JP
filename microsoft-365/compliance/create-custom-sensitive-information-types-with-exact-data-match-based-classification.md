@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05d5889ba690bdf61fd51044b3c059f1476342af
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: e8f6c075d706da46d7163705f6aa9d0ca6cad1a2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964658"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227129"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -385,15 +385,15 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 - **EDM\_DataUploaders** セキュリティ グループに追加される Microsoft 365 の職場または学校のアカウント
 - EDMUploadAgent を実行するための .NET バージョン 4.6.2 が搭載された Windows 10 または Windows Server 2016 マシン
 - 以下のためのアップロード マシン上のディレクトリ。
-    -  EDMUploadAgent
-    - この例では、.csv .tsv 形式の機密アイテム **PatientRecords.csv** ファイル
-    -  出力ハッシュ ファイルとソルト ファイル
-    - **edm.xml** ファイルのデータストア名 (このサンプルでは `PatientRecords`)
+  - EDMUploadAgent
+  - この例では、.csv .tsv 形式の機密アイテム **PatientRecords.csv** ファイル
+  - 出力ハッシュファイルとソルト ファイル
+  - **edm.xml** ファイルのデータストア名 (このサンプルでは `PatientRecords`)
 - [完全一致スキーマと機密情報の種類ウィザード](sit-edm-wizard.md)を使用している場合は、それをダウンロードする ***必要が あります***
 
 #### <a name="set-up-the-security-group-and-user-account"></a>セキュリティ グループとユーザー アカウントをセットアップする
 
-1. 全体管理者として、[サブスクリプションの適切なリンク](#portal-links-for-your-subscription) を使用して管理センターにアクセスし、**EDM\_DataUploaders** という [セキュリティ グループを作成します](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
+1. 全体管理者として、[サブスクリプションの適切なリンク](#portal-links-for-your-subscription) を使用して管理センターにアクセスし、**EDM\_DataUploaders** という [セキュリティ グループを作成します](/office365/admin/email/create-edit-or-delete-a-security-group)。
 
 2. **EDM\_DataUploaders** セキュリティ グループに、1 人以上のユーザーを追加します。 (これらのユーザーは機密情報のデータベースを管理します)。
 
@@ -401,18 +401,17 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 このコンピュータは、ご利用の Microsoft 365 テナントに直接アクセスできる必要があります。
 
->[!NOTE]
+> [!NOTE]
+>
 > この手順を開始する前に、自分が **EDM\_DataUploaders** セキュリティ グループのメンバーであることを確認します。
-
-> [!TIP]
+>
 > 必要に応じて、次を実行してアップロードする前に、.csvファイルまたは .tsv ファイルに対して検証を実行できます。
 >
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+> `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
->すべての EdmUploadAgent.exe > サポートされているパラメータの詳細情報については
+> すべての EdmUploadAgent.exe > サポートされているパラメータの詳細情報については
 >
 > `EdmUploadAgent.exe /?`
-
 
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>サブスクリプションの種類別の EDM アップロードエージェントへのリンク
 

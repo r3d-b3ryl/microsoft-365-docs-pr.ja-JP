@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: セットアップ ウィザードを使用して、DNS ホストに DNS レコードMicrosoft 365追加Microsoft 365管理センターにドメインを追加します。
-ms.openlocfilehash: 152144737b0ff8cb8b0c27db2a4fc1051fb2a8a7
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: セットアップ ウィザードを使用して、DNS ホストに DNS レコードMicrosoft 365追加Microsoft 365 管理センターにドメインを追加します。
+ms.openlocfilehash: 547a3bf242130993522b00f53819908b10c9e4d1
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635680"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227837"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
@@ -80,8 +80,6 @@ ms.locfileid: "52635680"
 7. *[DNS レコードを自分で追加する]* を選択した場合、**[次へ]** を選択します。そして、ドメインを設定するために、レジストラー Web サイトに追加する必要があるすべてのレコードが含まれるページが表示されます。 
 
     ポータルでレジストラーが認識されない場合、[一般的な方法に従うことができます](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
-    
-    [ホスト固有の命令](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)の一覧からお使いのホストを見つけ、手順に従って必要なすべてのレコードを追加します。 
     
     ドメインの DNS ホスティング プロバイダーまたはドメイン レジストラーがわからない場合は、「[ドメイン レジストラーまたは DNS ホスティング プロバイダーを探す](../get-help-with-domains/find-your-domain-registrar.md)」を参照してください。
     
@@ -136,7 +134,6 @@ ms.locfileid: "52635680"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドメインに関する FAQ](domains-faq.yml) (記事)\
+[ドメインの FAQ](domains-faq.yml) (記事)\
 [ドメインとは](../get-help-with-domains/what-is-a-domain.md) (記事)\
 [ドメイン名を購入する](../get-help-with-domains/buy-a-domain-name.md)(Microsoft 365)\
-[ドメインを設定する](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (記事)

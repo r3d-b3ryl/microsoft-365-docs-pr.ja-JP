@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: カスタム ドメインの DNS レコードを管理するために Microsoft を設定している場合は、Microsoft の外部でホストされている既存のパブリック Web サイトにトラフィックをルーティングする方法について説明します。
-ms.openlocfilehash: 2a1559bbb902375bbc363180cdb4f98ec2b3a939
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: d54aa4583862ce19907a3b8494a333bbb925e436
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572143"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228125"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>DNS レコードを更新して現在のホスティング プロバイダーに Web サイトを維持する
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572143"
   
  **Microsoft が DNS レコードを管理** している場合は、ドメインを Microsoft に追加した後、Microsoft の外部でホストされている既存のパブリック Web サイトにトラフィックをルーティングするには、次の手順を実行します。 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>管理センターで DNS レコードMicrosoft 365更新する
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>サーバー内の DNS レコードを更新Microsoft 365 管理センター
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 1. [ドメイン **] ページで** 、ドメインを選択し、[DNS レコード] **を選択します**。
@@ -65,6 +65,6 @@ ms.locfileid: "52572143"
     
 最後に、次の操作を行います。
   
-[Microsoft を指すドメインの NS](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) レコードを更新します。 
+[Microsoft を指すドメインの NS](../setup/add-domain.md) レコードを更新します。 
   
 NS レコードが Microsoft をポイントするために更新された場合、ドメインはすべてセットアップされます。 メールは Microsoft にルーティングされ、Web サイトアドレスへのトラフィックは引き続き現在の Web サイトのホストに送信されます。

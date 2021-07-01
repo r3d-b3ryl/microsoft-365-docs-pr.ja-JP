@@ -1,5 +1,5 @@
 ---
-title: セキュリティ/コンプライアンス センター Office 365コンプライアンス センターからコンプライアンス センターにユーザー Microsoft 365リダイレクトする
+title: セキュリティとコンプライアンス センター Office 365ユーザーをサーバーにリダイレクトMicrosoft 365 コンプライアンス センター
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,16 +9,16 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
-description: セキュリティ とコンプライアンス センターのOffice 365コンプライアンス センターに自動的にリダイレクトする方法Microsoft 365します。
+description: セキュリティとコンプライアンス センターのOffice 365ユーザーを自動的にユーザーにリダイレクトする方法Microsoft 365 コンプライアンス センター。。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b51b2e225c833ac499379bbee119f8cb6f4216e9
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 83d6a08d5c189c08c8f7d25daa3af39f28cbf8f1
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782839"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226277"
 ---
-# <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>セキュリティ/コンプライアンス センター Office 365コンプライアンス センターからコンプライアンス センターにユーザー Microsoft 365リダイレクトする
+# <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>セキュリティとコンプライアンス センター Office 365ユーザーをサーバーにリダイレクトMicrosoft 365 コンプライアンス センター
 
 この記事では、Office 365 セキュリティ とコンプライアンス センター (protection.office.com) から Microsoft 365 コンプライアンス センター (compliance.microsoft.com) へのコンプライアンス ソリューションにアクセスするユーザーの自動リダイレクトのしくみについて説明します。
 
@@ -32,10 +32,10 @@ ms.locfileid: "52782839"
 - レコード管理
 - コミュニケーションコンプライアンス (以前は '監督')
 
-ユーザーは、コンプライアンス センター (Microsoft 365) で同 compliance.microsoft.com。
+ユーザーは自動的に同じコンプライアンス ソリューションにルーティングされます (Microsoft 365 コンプライアンス センター (compliance.microsoft.com)。
 
->[!NOTE]
->Office 365 セキュリティとコンプライアンス センターに含まれる他のコンプライアンス ソリューションについては、Microsoft 365 コンプライアンス センターまたは Office 365 セキュリティ とコンプライアンス センターでこれらのソリューションを管理し続けます。 これらのコンプライアンス ソリューションの自動リダイレクトは、近日利用可能になります。*
+> [!NOTE]
+> Office 365 セキュリティとコンプライアンス センターに含まれる他のコンプライアンス ソリューションについては、ユーザーは引き続き Microsoft 365 コンプライアンス センター または Office 365 セキュリティ とコンプライアンス センターでこれらのソリューションを管理します。 これらのコンプライアンス ソリューションの自動リダイレクトは、近日利用可能になります。*
 
 この機能と関連付けられたコントロールでは、Microsoft Defender のセキュリティ機能の自動リダイレクトが有効Office 365。 セキュリティ機能のリダイレクトを有効にするには[、「Microsoft Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)からアカウントをリダイレクトする」を参照Office 365セキュリティ センター Microsoft 365を参照してください。
 
@@ -43,12 +43,12 @@ ms.locfileid: "52782839"
 
 何かが機能していない場合、または Microsoft 365 コンプライアンス センター ポータルで完了できない場合は、すべてのユーザーの自動リダイレクトを一時的に無効にできます。
 
->[!IMPORTANT]
->コンプライアンス Microsoft 365は、現在、セキュリティ/コンプライアンス センターで管理されているコンプライアンス ソリューションのOffice 365管理ポータルです。 すべてのMicrosoft 365ソリューションは、コンプライアンス センターでのみMicrosoft 365されます。 コンプライアンス センターへのリダイレクトMicrosoft 365無効にするには、短期的なソリューションを使用する必要があります。*
+> [!IMPORTANT]
+> このMicrosoft 365 コンプライアンス センターは、セキュリティとコンプライアンス センターで現在管理されているコンプライアンス ソリューションOffice 365管理ポータルです。 すべてのMicrosoft 365コンプライアンス ソリューションは、ユーザーが管理するMicrosoft 365 コンプライアンス センター。 サーバーへのリダイレクトを無効Microsoft 365 コンプライアンス センター短期的な解決策である必要があります。*
 
 すべてのユーザーの Office 365 およびコンプライアンス センター (protection.microsoft.com) に切り替えるには、次の手順を実行します。
 
-1. グローバル管理者として[、Microsoft 365](https://compliance.microsoft.com)コンプライアンス センターにサインインするか、Azure Active directory でコンプライアンス管理者のアクセス許可を持つ任意のアカウントを使用します。
+1. グローバル管理者[としてMicrosoft 365 コンプライアンス センター、](https://compliance.microsoft.com)または Azure Active directory のコンプライアンス管理者のアクセス許可を持つ任意のアカウントを使用して、管理者にサインインします。
 2. コンプライアンス センターの **設定**  >  **に移動します**。
 3. [自動リダイレクト] 設定を [オフ] に **切り替えます**。
 4. メッセージが **表示されたら、[** オフにし、フィードバックを共有する] を選択します。
@@ -57,4 +57,4 @@ ms.locfileid: "52782839"
 
 ## <a name="related-information"></a>関連情報
 
-- [Microsoft 365センターの概要](/microsoft-365/compliance/microsoft-365-compliance-center)
+- [Microsoft 365 コンプライアンス センター概要](/microsoft-365/compliance/microsoft-365-compliance-center)

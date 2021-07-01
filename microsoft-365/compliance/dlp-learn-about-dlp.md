@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: データ損失防止ポリシーとツールを使用Microsoft 365機密情報を保護し、DLP ライフサイクルを通じてツアーを行う方法について説明します。
-ms.openlocfilehash: 9b449886e0856f7407fcd49b83192dd0c01474bd
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 291a9ab09d14e24d58604644d77381d7f41214d6
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108261"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226853"
 ---
 # <a name="learn-about-data-loss-prevention"></a>データ損失防止について
 
@@ -35,7 +35,7 @@ ms.locfileid: "53108261"
 - オンプレミスのファイル共有とオンプレミス のSharePoint。
 
 Microsoft 365単純なテキスト スキャンではなく、ディープ コンテンツ分析を使用して機密性の高いアイテムを検出します。 コンテンツは、キーワードに一致するプライマリ データ、正規表現の評価、内部関数の検証、プライマリ データの一致に近いセカンダリ データの一致によって分析されます。 その他の DLP では、機械学習アルゴリズムや他の方法を使用して、DLP ポリシーに一致するコンテンツを検出します。
-  
+
 ## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP は、大規模なコンプライアンスMicrosoft 365の一部です
 
 Microsoft 365DLP は、機密性の高いMicrosoft 365場所や旅行場所の保護に役立つコンプライアンス ツールの 1 つにすすめることができます。 コンプライアンス ツール セットの他のツールMicrosoft 365、そのツールがどのようにインテレートし、より良い作業を行うのかについて理解する必要があります。  情報保護[プロセスMicrosoft 365詳細については、「](protect-information.md)コンプライアンス ツール」を参照してください。
@@ -69,7 +69,7 @@ Microsoft 365DLP の監視と保護は、ユーザーが毎日使用するアプ
 
 **DLP のテクノロジ計画**
 
-テクノロジとしての DLP は、Microsoft 365 サービス、Windows 10 デバイス、オンプレミスのファイル共有、およびオンプレミス SharePoint 全体で、保存中のデータ、使用中のデータ、および動作中のデータを監視および保護できます。 さまざまな場所、監視および保護するデータの種類、およびポリシーの一致が発生した場合に実行するアクションに対する計画上の影響があります。  
+テクノロジとしての DLP は、Microsoft 365 サービス、Windows 10 デバイス、オンプレミスのファイル共有、およびオンプレミス SharePoint 全体で、保存中のデータ、使用中のデータ、および動作中のデータを監視および保護できます。 さまざまな場所、監視および保護するデータの種類、およびポリシーの一致が発生した場合に実行するアクションに対する計画上の影響があります。
 
 **DLP のビジネス プロセス計画**
 
@@ -121,7 +121,7 @@ DLP ポリシーは、保存中のデータ、使用されているデータ、�
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>コントロールを有効にしてポリシーを調整する
 
-ポリシーがすべての目標を満たしたら、有効にしてください。 引き続きポリシー アプリケーションの結果を監視し、必要に応じて調整します。 一般に、ポリシーは有効になってから約 1 時間後に有効になります。 
+ポリシーがすべての目標を満たしたら、有効にしてください。 引き続きポリシー アプリケーションの結果を監視し、必要に応じて調整します。 一般に、ポリシーは有効になってから約 1 時間後に有効になります。
 
 <!--See, LINK TO topic for SLAs for location specific  details-->
 
@@ -133,7 +133,7 @@ DLP ポリシーを作成および構成する方法に柔軟性があります�
     - 定義済みのポリシー テンプレート: 財務データ、医療および健康データ、さまざまな国および地域のプライバシー データ。
     - 使用可能な機密情報の種類、保持ラベル、および機密ラベルを使用するカスタム ポリシー。
 2. **監視する場所を選択する** - DLP で機密情報を監視する 1 つ以上の場所を選択します。 次の情報を監視できます。
-    
+
 場所 | 包含 / 除外|
 |---------|---------|
 |Exchange メール| 配布グループ|
@@ -154,7 +154,7 @@ DLP ポリシーを作成および構成する方法に柔軟性があります�
 
 - SharePoint/Exchange/OneDrive: コンテンツにアクセスする組織フォーム外のユーザーをブロックします。 ヒントをユーザーに表示し、DLP ポリシーで禁止されているアクションを実行しているという電子メール通知を送信します。
 - Teamsチャットとチャネル: 機密情報がチャットまたはチャネルで共有されるのをブロックする
-- Windows 10デバイス: 機密性の高いアイテムの削除可能な USB デバイスへのコピーを監査または制限する 
+- Windows 10デバイス: 機密性の高いアイテムの削除可能な USB デバイスへのコピーを監査または制限する
 - Officeアプリ: 危険な動作を行っているユーザーに通知するポップアップを表示し、オーバーライドをブロックまたはブロックします。
 - オンプレミスのファイル共有: ファイルを保存場所から検疫フォルダーに移動する
 
@@ -166,18 +166,18 @@ DLP ポリシーを作成および構成する方法に柔軟性があります�
 All DLP policies are created and maintained in the Microsoft 365 Compliance center. See, INSERT LINK TO ARTICLE THAT WILL START WALKING THEM THROUGH THE POLICY CREATION PROCEDURES for more information.-->
 
 コンプライアンス センターで DLP ポリシーを作成すると、そのポリシーは中央ポリシー ストアに格納され、次に示すさまざまなコンテンツ ソースに同期されます。
-  
+
 - Exchange Online、そこから Outlook on the web、Outlook。
 - OneDrive for Business サイト。
 - SharePoint Online サイト。
 - Office デスクトップ プログラム (Excel、PowerPoint、Word)。
 - Microsoft Teams チャネルおよびチャット メッセージ。
-    
+
 ポリシーが適切な場所に同期されると、コンテンツの評価とアクションの適用が開始されます。
 
 ## <a name="viewing-policy-application-results"></a>ポリシー アプリケーションの結果の表示
 
-DLP は、監視、ポリシーの一致Microsoft 365アクション、およびユーザー アクティビティから、膨大な量の情報をレポートします。 機密アイテムに対して行うポリシーとトリアージアクションを調整するには、その情報を使用して処理する必要があります。 テレメトリは、コンプライアンス センター[](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center)監査ログMicrosoft 365最初に処理され、さまざまなレポート ツールに移動します。 各レポート ツールの目的は異なります。  
+DLP は、監視、ポリシーの一致Microsoft 365アクション、およびユーザー アクティビティから、膨大な量の情報をレポートします。 機密アイテムに対して行うポリシーとトリアージアクションを調整するには、その情報を使用して処理する必要があります。 テレメトリは、コンプライアンス センター[](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center)監査ログMicrosoft 365最初に処理され、さまざまなレポート ツールに移動します。 各レポート ツールの目的は異なります。
 
 ### <a name="dlp-alerts-dashboard"></a>DLP アラート ダッシュボード
 
@@ -203,7 +203,7 @@ DLP が機密性の高いアイテムに対してアクションを実行する�
 
 DLP ページの [アクティビティ エクスプローラー]タブには *、DLPRuleMatch に対するアクティビティ フィルターのプリセットがあります*。 このツールを使用して、機密情報を含むコンテンツやラベルが適用されているコンテンツに関連するアクティビティ (ラベルの変更、ファイルの変更、ルールの一致など) を確認します。
 
-![DLPRuleMatch スコープアクティビティ エクスプローラーのスクリーンショット ](../media/dlp-activity-explorer.png)
+![DLPRuleMatch スコープアクティビティ エクスプローラーのスクリーンショット](../media/dlp-activity-explorer.png)
 
 詳細については、「アクティビティ エクスプローラーの [使用を開始する」を参照してください。](data-classification-activity-explorer.md)
 

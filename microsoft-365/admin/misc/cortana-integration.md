@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な仕事用アカウントまたは学校アカウントを持つCortana、Microsoft 365レベルのセキュリティOffice 365を満たすエクスペリエンスを利用できます。
-ms.openlocfilehash: 45e6f46fa753096c535add9daf486ef6a9f1bff0
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054589"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227897"
 ---
 # <a name="cortana-in-microsoft-365"></a>CortanaのMicrosoft 365
 
@@ -39,7 +39,7 @@ Cortana生産性アシスタントは、AI を活用したエクスペリエン�
 
 - 他の Office 365 サービスと一致する Cortana エンタープライズ サービスは、Online Services Terms [(OST)](https://www.microsoft.com/licensing/product-licensing/products)に反映されているのと同じエンタープライズ レベルのプライバシー、セキュリティ、およびコンプライアンスの約束を満たしています。
 
-- ブリー Microsoft 365メールや Play My Emails などの新しいエクスペリエンスは、Cortanaエンタープライズ サービスを使用して有効にされ、それらの約束に完全に準拠します。 これらの機能は現在、世界中で利用できます (標準のマルチテナント)。 使用状況の場所の検索の詳細については、「アカウントの追加のプロパティ値を表示 [する」を参照してください](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts)。
+- ブリー Microsoft 365メールや Play My Emails などの新しいエクスペリエンスは、Cortanaエンタープライズ サービスを使用して有効にされ、それらの約束に完全に準拠します。 これらの機能は現在、世界中で利用できます (標準のマルチテナント)。 使用状況の場所の検索の詳細については、「アカウントの追加のプロパティ値を表示 [する」を参照してください](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md#view-additional-property-values-for-accounts)。
 
 - Windows 10 (バージョン 1909 以前) の Cortana を含む既存のコンシューマー エクスペリエンスは[、Microsoft Services](https://www.microsoft.com/licensing/product-licensing/products) Agreement および[Microsoft Privacy](https://privacy.microsoft.com/privacystatement) Statement (以下の「コンシューマー向け既存のサービス」セクションを参照) によって管理されます。 また、これらの用語は、Cortana資格情報でサインインするときにユーザーに提供されるエンタープライズ サービスの管理も行います。
 

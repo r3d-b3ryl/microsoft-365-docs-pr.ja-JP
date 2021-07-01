@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 746f1345b47694f4a4122edc5d89cc924441ea81
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: b9696f26dd8f68ba291eab50e11a4cb6dd55ab7a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408178"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226913"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>ユーザーのダブル キー暗号化Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "51408178"
 
 ## <a name="when-your-organization-should-adopt-dke"></a>組織で DKE を採用する必要が生じ
 
-ダブル キー暗号化は、最も厳密な保護要件の対象となる最も機密性の高いデータを対象とします。 DKE は、すべてのデータを対象としているのではありません。 一般に、Double Key Encryption を使用して、全体的なデータの一部のみを保護します。 展開する前に、このソリューションでカバーする適切なデータを特定するためのデューデリジェンスを行う必要があります。 場合によっては、Microsoft が管理するキーを使用した Microsoft Information Protection や BYOK などのほとんどのデータに対して、スコープを絞り込み、他のソリューションを利用する必要がある場合があります。 これらのソリューションは、強化された保護と規制要件の対象とされないドキュメントでは十分です。 また、これらのソリューションを使用すると、最も強力なサービスOffice 365できます。DKE で暗号化されたコンテンツでは使用できないサービス。 以下に例を示します。
+ダブル キー暗号化は、最も厳密な保護要件の対象となる最も機密性の高いデータを対象とします。 DKE は、すべてのデータを対象としているのではありません。 一般に、Double Key Encryption を使用して、全体的なデータの一部のみを保護します。 展開する前に、このソリューションでカバーする適切なデータを特定するためのデューデリジェンスを行う必要があります。 場合によっては、スコープを絞り込み、Microsoft が管理するキーや BYOK を使用する Microsoft Information Protectionなどのほとんどのデータに対して他のソリューションを使用する必要があります。 これらのソリューションは、強化された保護と規制要件の対象とされないドキュメントでは十分です。 また、これらのソリューションを使用すると、最も強力なサービスOffice 365できます。DKE で暗号化されたコンテンツでは使用できないサービス。 例:
 
 - 添付ファイルを表示する必要があるマルウェア対策やスパムなどのトランスポート ルール
 - Microsoft Delve
@@ -45,7 +45,7 @@ ms.locfileid: "51408178"
 
 MIP SDK を介して DKE と統合されていない外部アプリケーションまたはサービスは、暗号化されたデータに対してアクションを実行できません。
 
-Microsoft Information Protection SDK 1.7+ では、ダブル キー暗号化がサポートされています。SDK と統合するアプリケーションは、十分なアクセス許可と統合を行って、このデータを理由付けできます。
+SDK 1.7 Microsoft Information Protectionは、ダブル キー暗号化をサポートしています。SDK と統合するアプリケーションは、十分なアクセス許可と統合を行って、このデータを理由付けできます。
 
 組織では、機密データの大部分を保護するために Microsoft Information Protection 機能 (分類とラベル付け) を使用し、ミッション クリティカルなデータにのみ DKE を使用することをお勧めします。 ダブル キー暗号化は、金融サービスやヘルスケアなどの規制の厳しい業界の機密データに関連します。
 
@@ -79,7 +79,7 @@ DKE の感度ラベルは、デスクトップ アプリの感度リボンを使
 
 1. この記事の説明に従って、DKE サービスを展開します。
 
-2. 二重キー暗号化を使用してラベルを作成します。 コンプライアンス センターの下の[[Microsoft 365保護] に移動し](https://compliance.microsoft.com)、ダブル キー暗号化を使用して新しいラベルを作成します。 「暗号化 [を適用するために感度ラベルを使用してコンテンツへのアクセスを制限する」を参照してください](./encryption-sensitivity-labels.md)。
+2. 二重キー暗号化を使用してラベルを作成します。 [パスワード] の下の [情報Microsoft 365 コンプライアンス センター] に移動し[、](https://compliance.microsoft.com)ダブル キー暗号化を使用して新しいラベルを作成します。 「暗号化 [を適用するために感度ラベルを使用してコンテンツへのアクセスを制限する」を参照してください](./encryption-sensitivity-labels.md)。
 
 3. 二重キー暗号化ラベルを使用します。 [データの暗号化] リボンで [二重キー暗号化] ラベルを選択して、データMicrosoft Office。
 
@@ -139,12 +139,12 @@ Microsoft は、DKE ソース ファイルを新しいリポジトリGitHubし�
 
 2. 画面の右側にある [コード] を **選択します**。 バージョンの UI に [複製] または [ダウンロード **] ボタンが表示される場合** があります。 次に、表示されるドロップダウンで、コピー アイコンを選択して URL をクリップボードにコピーします。
 
-    以下に例を示します。
+    例:
 
    > [!div class="mx-imgBorder"]
    > ![ダブル キー暗号化サービス リポジトリをサーバーから複製GitHub](../media/dke-clone.png)
 
-3. [コマンド Visual Studio Code] で、[**コマンド パレットの表示]** \> **を選択** し **、[Git: Clone] を選択します**。 リスト内のオプションに移動するには、入力を開始してエントリをフィルター処理し、ドロップダウン `git: clone` から選択します。 以下に例を示します。
+3. [コマンド Visual Studio Code] で、[**コマンド パレットの表示]** \> **を選択** し **、[Git: Clone] を選択します**。 リスト内のオプションに移動するには、入力を開始してエントリをフィルター処理し、ドロップダウン `git: clone` から選択します。 例:
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio CodeGIT:Clone オプション](../media/dke-vscode-clone.png)
@@ -153,7 +153,7 @@ Microsoft は、DKE ソース ファイルを新しいリポジトリGitHubし�
 
 5. 表示される **[フォルダーの** 選択] ダイアログで、リポジトリを保存する場所を参照して選択します。 プロンプトで、[開く] を **選択します**。
 
-    リポジトリが左側Visual Studio Code開き、左下に現在の Git ブランチが表示されます。 たとえば、ブランチは main である **必要があります**。 以下に例を示します。
+    リポジトリが左側Visual Studio Code開き、左下に現在の Git ブランチが表示されます。 たとえば、ブランチは main である **必要があります**。 例:
 
    ![メイン ブランチを表示するVisual Studio Code DKE repo のスクリーンショット](../media/dke-vscode-main-branch.jpg)
 
@@ -183,11 +183,11 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 - **役割の承認**。 組織が Active Directory グループに基づいてキーへのアクセスを承認し、Web サービスが LDAP を照会できる必要があります。
 
-**電子メール認証を使用して DKE のキー アクセス設定を設定するには**
+##### <a name="to-set-key-access-settings-for-dke-using-email-authorization"></a>電子メール認証を使用して DKE のキー アクセス設定を設定するには
 
 1. ファイルのappsettings.js **を開** き、設定を探 `AuthorizedEmailAddress` します。
 
-2. 承認する電子メール アドレスまたはアドレスを追加します。 複数の電子メール アドレスを二重引用符とコンマで区切ります。 以下に例を示します。
+2. 承認する電子メール アドレスまたはアドレスを追加します。 複数の電子メール アドレスを二重引用符とコンマで区切ります。 例:
 
    ```json
    "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
@@ -205,17 +205,17 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
    ![メールappsettings.js方法を示すファイルに関する情報](../media/dke-email-accesssetting.png)
 
-**役割の承認を使用して DKE のキー アクセス設定を設定するには**
+##### <a name="to-set-key-access-settings-for-dke-using-role-authorization"></a>役割の承認を使用して DKE のキー アクセス設定を設定するには
 
 1. ファイルのappsettings.js **を開** き、設定を探 `AuthorizedRoles` します。
 
-2. 承認する Active Directory グループ名を追加します。 複数のグループ名を二重引用符とコンマで区切ります。 以下に例を示します。
+2. 承認する Active Directory グループ名を追加します。 複数のグループ名を二重引用符とコンマで区切ります。 例:
 
    ```json
    "AuthorizedRoles": ["group1", "group2", "group3"]
    ```
 
-3. 設定を見 `LDAPPath` つけて、Active Directory ドメインを追加します。 以下に例を示します。
+3. 設定を見 `LDAPPath` つけて、Active Directory ドメインを追加します。 例:
 
    ```json
    "LDAPPath": "contoso.com"
@@ -231,27 +231,28 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 DKE テナントとキー設定は、ファイルのappsettings.js **に表示** されます。
 
-**DKE のテナントとキーの設定を構成するには**
+##### <a name="to-configure-tenant-and-key-settings-for-dke"></a>DKE のテナントとキーの設定を構成するには
 
 1. ファイルのappsettings.js **開** きます。
 
-2. 設定を見 `ValidIssuers` つけて、テナント `<tenantid>` ID に置き換える。 テナント ID を見つけるには、Azure portal にアクセスしてテナントのプロパティを [表示します](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。 以下に例を示します。
+2. 設定を見 `ValidIssuers` つけて、テナント `<tenantid>` ID に置き換える。 テナント ID を見つけるには、Azure portal にアクセスしてテナントのプロパティを [表示します](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。 例:
 
    ```json
    "ValidIssuers": [
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+
 > [!NOTE]
 > キー ストアへの外部 B2B アクセスを有効にする場合は、有効な発行者のリストの一部としてこれらの外部テナントも含める必要があります。
 
-を探します `JwtAudience` 。 `<yourhostname>`DKE サービスが実行されるコンピューターのホスト名に置き換える。 以下に例を示します。
+を探します `JwtAudience` 。 `<yourhostname>`DKE サービスが実行されるコンピューターのホスト名に置き換える。 例:
 
   > [!IMPORTANT]
   > の値は `JwtAudience` 、ホストの名前と完全に一致 *する必要があります*。 デバッグ中に **localhost:5001 を** 使用できます。 ただし、デバッグが完了したら、この値をサーバーのホスト名に更新してください。
 
 - `TestKeys:Name`. キーの名前を入力します。 例: `TestKey1`
-- `TestKeys:Id`. GUID を作成し、値として入力 `TestKeys:ID` します。 たとえば、「 `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE` 」のように入力します。 オンライン GUID ジェネレーターのようなサイト [を使用して、GUID](https://guidgenerator.com/) をランダムに生成できます。
+- `TestKeys:Id`. GUID を作成し、値として入力 `TestKeys:ID` します。 たとえば、`DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE` などです。 オンライン GUID ジェネレーターのようなサイト [を使用して、GUID](https://guidgenerator.com/) をランダムに生成できます。
 
 次の図は、テナントの正しい形式とキーの設定をオンにappsettings.js **します**。 `LDAPPath` は、役割の承認用に構成されます。
 
@@ -263,7 +264,7 @@ DKE テナントとキー設定は、ファイルのappsettings.js **に表示**
 
 キーを生成するには、次の操作を行います。
 
-1. [スタート] Windowsから、OpenSSL コマンド プロンプトを実行します。
+1. 次のWindows スタート メニュー、OpenSSL コマンド プロンプトを実行します。
 
 2. テスト キーを保存するフォルダーに変更します。 このタスクの手順を完了して作成するファイルは、同じフォルダーに格納されます。
 
@@ -352,7 +353,7 @@ DKE プロジェクトをローカルでビルドするには、次の手順を�
 
 4. [ **デバッグ** \> **の開始] を選択** して、プロセスをデバッグします。 環境の選択を求めるメッセージが表示されたら **、[.NET core] を選択します**。
 
-   .NET コア デバッガーは通常、 に起動します `https://localhost:5001` 。 テスト キーを表示するには、スラッシュ (/) とキーの `https://localhost:5001` 名前に移動して追加します。 以下に例を示します。
+   .NET コア デバッガーは通常、 に起動します `https://localhost:5001` 。 テスト キーを表示するには、スラッシュ (/) とキーの `https://localhost:5001` 名前に移動して追加します。 例:
 
    ```https
    https://localhost:5001/TestKey1
@@ -370,7 +371,7 @@ DKE プロジェクトをローカルでビルドするには、次の手順を�
 
 パイロット展開の場合は、Azure に展開して、すぐ開始できます。
 
-**DKE 展開をホストする Azure Web App インスタンスを作成するには**
+#### <a name="to-create-an-azure-web-app-instance-to-host-your-dke-deployment"></a>DKE 展開をホストする Azure Web App インスタンスを作成するには
 
 キー ストアを発行するには、DKE 展開をホストする Azure App Service インスタンスを作成します。 次に、生成されたキーを Azure に発行します。
 
@@ -382,7 +383,7 @@ DKE プロジェクトをローカルでビルドするには、次の手順を�
 
    - [ **発行]** で、 **コードを選択** し、[ **ランタイム スタック] で** **[.NET Core 3.1] を選択します**。
 
-   以下に例を示します。
+   例:
 
    > [!div class="mx-imgBorder"]
    > ![App Service の追加](../media/dke-azure-add-app-service.png)
@@ -423,7 +424,7 @@ DKE が展開され、作成したテスト キーを参照できます。 [次�
 
 2. 表示された接続文字列をローカル ファイルにコピーします。 これらの文字列を使用して Web App Service に接続し、FTP 経由でファイルをアップロードします。
 
-   以下に例を示します。
+   例:
 
    ![FTP ダッシュボードから接続文字列をコピーする](../media/dke-ftp-dashboard.png)
 
@@ -477,7 +478,7 @@ DKE サービスを登録するには、次の方法を実行します。
 
    カスタム 以外のドメイン **(onmicrosoft.com** など) で Microsoft Azure を使用している場合は、[この組織ディレクトリ内のアカウントのみ] を選択します **(Microsoft のみ - シングル テナント)。**
 
-   以下に例を示します。
+   例:
 
    > [!div class="mx-imgBorder"]
    > ![新しいアプリ登録](../media/dke-app-registration.png)
@@ -530,18 +531,18 @@ DKE サービスを登録するには、次の方法を実行します。
 
     4. 上部の **[保存** ] を選択して変更を保存します。
 
-    5. これらの手順を繰り返しますが、今回は、クライアント ID をとして定義します `c00e9d32-3c8d-4a7d-832b-029040e7db99` 。 この値は、Azure Information Protection 統合ラベル付けクライアント ID です。 
+    5. これらの手順を繰り返しますが、今回は、クライアント ID をとして定義します `c00e9d32-3c8d-4a7d-832b-029040e7db99` 。 この値は、Azure Information Protection 統合ラベル付けクライアント ID です。
 
 これで、DKE サービスが登録されます。 [DKE を使用してラベルを作成して続行します](#create-sensitivity-labels-using-dke)。
 
 ## <a name="create-sensitivity-labels-using-dke"></a>DKE を使用して感度ラベルを作成する
 
-コンプライアンス センター Microsoft 365、新しい感度ラベルを作成し、それ以外の場合と同様に暗号化を適用します。 [ **ダブル キー暗号化を使用する]** を選択し、キーのエンドポイント URL を入力します。
+このページMicrosoft 365 コンプライアンス センター新しい感度ラベルを作成し、それ以外の場合と同じように暗号化を適用します。 [ **ダブル キー暗号化を使用する]** を選択し、キーのエンドポイント URL を入力します。
 
-以下に例を示します。
+例:
 
 > [!div class="mx-imgBorder"]
-> ![コンプライアンス センターで [ダブル キー暗号化を使用するMicrosoft 365選択します。](../media/dke-use-dke.png)
+> ![[ダブル キーの暗号化を使用する] を選択Microsoft 365 コンプライアンス センター](../media/dke-use-dke.png)
 
 追加した DKE ラベルは、最新バージョンのユーザーに対して表示Microsoft 365 Apps for enterprise。
 

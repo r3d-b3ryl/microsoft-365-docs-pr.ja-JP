@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
-ms.openlocfilehash: dd9d777798c2c96776a8f9b40a3c4dfe0b95702a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 24eeb1dfccef3d30e577b15ecb9d2fda4d902cdc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876950"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228161"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Basic Mobility and Security のデバイス アクセス設定を管理する
 
@@ -33,10 +33,10 @@ Basic Mobility and Security を使用している場合は、Basic Mobility and 
 
 1. グローバル管理者アカウントMicrosoft 365にサインインします。
 
-2. ブラウザーで、次と入力します  [https://protection.office.com](https://protection.office.com/) 。    
+2. ブラウザーで、次と入力します  [https://protection.office.com](https://protection.office.com/) 。
 
-    >[!IMPORTANT]
-    >基本モビリティとセキュリティを初めて使用する場合は、Microsoft 365 Business Standardセキュリティとモビリティのライセンス認証を[行います](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。 ライセンスをアクティブ化した後、コンプライアンスに関するセキュリティ Office 365[を&します](https://protection.office.com/)。
+    > [!IMPORTANT]
+    > 基本モビリティとセキュリティを初めて使用する場合は、Microsoft 365 Business Standardセキュリティとモビリティのライセンス認証を[行います](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。 ライセンスをアクティブ化した後、コンプライアンスに関するセキュリティ Office 365[を&します](https://protection.office.com/)。
 
 3. [デバイス管理デバイス ポリシー>データ損失防止 **]** に移動し、[組織全体のデバイス アクセス設定の管理   >  **** **] を選択します**。
 

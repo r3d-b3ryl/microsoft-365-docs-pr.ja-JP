@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 予測コーディング モデルを作成する方法については、Advanced eDiscovery。 これは、レビュー セット内の関連性の高い、関連性のAdvanced eDiscoveryなコンテンツを特定するのに役立つ、Advanced eDiscoveryの機械学習機能を使用する最初の手順です。
-ms.openlocfilehash: 7724062848d8d757fbfd3a7870853d6f2c409d84
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: ab84f529169c780e58888cc2726fbabfef33219e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822574"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226229"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>予測コーディング モデルの作成 (プレビュー)
 
@@ -37,7 +37,7 @@ ms.locfileid: "52822574"
 
 ## <a name="create-a-model"></a>モデルを作成する
 
-1. コンプライアンス センターでMicrosoft 365ケースを開Advanced eDiscovery、[レビュー セット]**タブを選択** します。
+1. [ファイル] Microsoft 365 コンプライアンス センターケースを開Advanced eDiscovery、[レビュー セット]**タブを選択** します。
 
 2. レビュー セットを開き **、[Analytics 予測** コーディングの  >  **管理 (プレビュー) ] をクリックします**。
 
@@ -61,6 +61,6 @@ ms.locfileid: "52822574"
 
 - システムは、トレーニングの第 1 ラウンドのトレーニング セットに含まれるレビュー セットから 40 項目をランダムに選択します。 したがって、トレーニングの最初のラウンドには、ラベル付け用の 50 アイテムが含まれます。トレーニング セットから 40 アイテム、コントロール セットから 10 アイテムです。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 レビュー セットのモデルを作成した後、次の手順では、調査に関連するコンテンツを識別するためにモデルを "ティーチ" するためのトレーニング ラウンドを実行します。 詳細については、「Train [a 予測コーディング モデル」を参照してください](predictive-coding-train-model.md)。

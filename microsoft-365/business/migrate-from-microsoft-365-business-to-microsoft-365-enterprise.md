@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: ビジネスを移行する方法については、Microsoft 365 Business PremiumからMicrosoft 365 E3。
-ms.openlocfilehash: 10630671f3deb7eff0ad0f601d301b90743ee35f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 6502d79dbb283db37b00e4fccf89b15ab4291ce5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164515"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227621"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Microsoft 365 Business Premium から Microsoft 365 E3 への移行
 
-Microsoft 365 Business Premiumは、クラス最高のクラウドベースの生産性アプリと、簡単なデバイス管理とセキュリティを組み合わせて、従業員が最善の仕事を行うのに必要なすべてを持っています。 ただし、サブスクリプションを移行する必要がある場合Microsoft 365 Business Premium、Microsoft 365 E3。 
+Microsoft 365 Business Premiumは、クラス最高のクラウドベースの生産性アプリと、簡単なデバイス管理とセキュリティを組み合わせて、従業員が最善の仕事を行うのに必要なすべてを持っています。 ただし、サブスクリプションを移行する必要がある場合Microsoft 365 Business Premium、Microsoft 365 E3。
 
 たとえば、ビジネスが成長し、300 以上のライセンスが必要です (ところで、おめでとうございます)。
 
@@ -39,49 +39,48 @@ Microsoft 365 Business Premiumは、クラス最高のクラウドベースの�
 
 アップグレードは簡単です。管理センターから [アップグレードを開始できます](../commerce/subscriptions/upgrade-to-different-plan.md)。 現在のサブスクリプションのすべてのデータと構成が維持されます。 新しい機能を利用する以外に、移行の準備には何もする必要もありません。その後は何も行いません。
 
->[!Note]
->また、最大 300 Microsoft 365 Business Premiumのサブスクリプションを使用し、300 Microsoft 365 E3を超えるサブスクリプションを取得できます。 ただし、Microsoft Defender for Office 365は、Microsoft 365 E3。 脅威の保護を継続するには、Office 365 ポリシーに対して Defender のスコープ内のすべてのユーザーがライセンスを取得Office 365追加する必要があります。
->
+> [!NOTE]
+> また、最大 300 Microsoft 365 Business Premiumのサブスクリプションを使用し、300 Microsoft 365 E3を超えるサブスクリプションを取得できます。 ただし、Microsoft Defender for Office 365は、Microsoft 365 E3。 脅威の保護を継続するには、Office 365 ポリシーに対して Defender のスコープ内のすべてのユーザーがライセンスを取得Office 365追加する必要があります。
 
 ## <a name="differences-between-microsoft-365-business-premium-and-microsoft-365-enterprise"></a>データとMicrosoft 365 Business Premiumの違Microsoft 365 Enterprise
 
 次の表は、ユーザーとユーザーのMicrosoft 365 Business PremiumをMicrosoft 365 E3。
 
-| 機能    | Microsoft 365 Business Premium    | Microsoft 365 E3 | 
+| 機能    | Microsoft 365 Business Premium    | Microsoft 365 E3 |
 |:-------|:-----|:-----|
-| **社内**        | | | 
-| Windows 10    | Windows 10 Business  |     Windows 10 EnterpriseE3| 
-| Officeアプリ*    | [Microsoft 365 Apps for business](#office-365-business)    | Microsoft 365 Apps for enterprise | 
-| **クラウド生産性アプリ**        | | | 
-| Exchange OnlineとOutlook    | メールボックスあたり 50 GB のストレージ制限と無制限のExchange Onlineアーカイブ    | メールボックスあたり 100 GB のストレージ制限と無制限のExchange Onlineアーカイブ | 
-| Teams    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| OneDrive for Business    | ユーザーあたり 1 TB のストレージ制限    | 無制限 | 
-| Yammer, SharePoint, Planner, Stream    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| **脅威保護**        | | | 
-| 攻撃表面の縮小機能    | [この一覧を見る](#threat-protection) | Enterpriseのハードウェア ベースの分離の管理Microsoft Edge | 
-| Microsoft Defender for Office 365 プラン 1 | ![Microsoft 365 Business Premium](../media/check-mark.png)    | 含まれていませんが、追加できます | 
-| **ID 管理**        | | | 
-| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービス パスワードリセット、Azure AD 多要素認証 (MFA)、条件付きアクセス、オンプレミス ID のパスワード 書き戻し|     ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| クラウド アプリの検出、Azure AD Connect正常性    |     | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| Azure AD Office 365 アプリ シングル Sign-On (SSO): 1 ユーザーあたり 10 アプリ (ギャラリー SaaS アプリ (Salesforce など)* | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| Azure AD プレミアム 1 SSO: 制限なし (Azure AD アプリケーション プロキシ経由のオンプレミス アプリと、Self-Service アプリ統合テンプレートを使用するギャラリー以外のアプリ)    |     | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| **デバイスおよびアプリの管理**        | | | 
-| Microsoft Intune, Windows オートパイロット|     ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-|仮想デスクトップ アクセス (VDA)    |  |     ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-|Windows仮想デスクトップ (WVD)    | ![Microsoft 365 Business Premium](../media/check-mark.png) |     ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-|共有コンピューターのライセンス認証 (SCA)    | ![Microsoft 365 Business Premium](../media/check-mark.png) |     ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| Microsoft デスクトップ最適化パッケージ    | |     ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| **情報保護**        | | | 
-| Office 365データ損失防止、Azure Information Protection Plan 1    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| エンドポイント DLP のウィンドウ情報保護    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| **クライアント アクセス ライセンス (CAL 権限)**    | | |     
-| EnterpriseCAL スイート (Exchange、SharePoint、Skype、Windows、Microsoft Endpoint Configuration Manager、Windows権限管理)| |         ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| **コンプライアンス**        | | | 
-| 無制限のメール アーカイブ    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| コンプライアンス マネージャー    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| 電子情報開示    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| インプレイスホールドと訴訟ホールド    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
-| メッセージング レコード管理 (MRM) 保持タグとアイテム保持ポリシー    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) | 
+| **社内**        | | |
+| Windows 10    | Windows 10 Business  |     Windows 10 EnterpriseE3|
+| Officeアプリ*    | [Microsoft 365 Apps for business](#office-365-business)    | Microsoft 365 Apps for enterprise |
+| **クラウド生産性アプリ**        | | |
+| Exchange OnlineとOutlook    | メールボックスあたり 50 GB のストレージ制限と無制限のExchange Onlineアーカイブ    | メールボックスあたり 100 GB のストレージ制限と無制限のExchange Onlineアーカイブ |
+| Teams    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| OneDrive for Business    | ユーザーあたり 1 TB のストレージ制限    | 無制限 |
+| Yammer, SharePoint, Planner, Stream    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| **脅威保護**        | | |
+| 攻撃表面の縮小機能    | [この一覧を見る](#threat-protection) | Enterpriseのハードウェア ベースの分離の管理Microsoft Edge |
+| Microsoft Defender for Office 365 プラン 1 | ![Microsoft 365 Business Premium](../media/check-mark.png)    | 含まれていませんが、追加できます |
+| **ID 管理**        | | |
+| ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービス パスワードリセット、Azure AD 多要素認証 (MFA)、条件付きアクセス、オンプレミス ID のパスワード 書き戻し|     ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| クラウド アプリの検出、Azure AD Connect正常性    |     | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| Azure AD Office 365 アプリ シングル Sign-On (SSO): 1 ユーザーあたり 10 アプリ (ギャラリー SaaS アプリ (Salesforce など)* | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| Azure AD Premium 1 SSO: 制限なし (Azure AD アプリケーション プロキシ経由のオンプレミス アプリと、アプリ統合テンプレートを使用したギャラリー以外Self-Serviceアプリ)    |     | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| **デバイスおよびアプリの管理**        | | |
+| Microsoft Intune, Windows オートパイロット|     ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+|仮想デスクトップ アクセス (VDA)    |  |     ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+|Windows仮想デスクトップ (WVD)    | ![Microsoft 365 Business Premium](../media/check-mark.png) |     ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+|共有コンピューターのライセンス認証 (SCA)    | ![Microsoft 365 Business Premium](../media/check-mark.png) |     ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| Microsoft デスクトップ最適化パッケージ    | |     ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| **情報保護**        | | |
+| Office 365データ損失防止、Azure Information Protection Plan 1    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| エンドポイント DLP のウィンドウ情報保護    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| **クライアント アクセス ライセンス (CAL 権限)**    | | |
+| EnterpriseCAL スイート (Exchange、SharePoint、Skype、Windows、Microsoft Endpoint Configuration Manager、Windows権限管理)| |         ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| **コンプライアンス**        | | |
+| 無制限のメール アーカイブ    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| コンプライアンス マネージャー    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| 電子情報開示    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| インプレイスホールドと訴訟ホールド    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
+| メッセージング レコード管理 (MRM) 保持タグとアイテム保持ポリシー    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |
 ||||
 
 \* SaaS アプリへのアクセスが割り当てられているユーザーは、最大 10 のアプリへの SSO アクセスを取得できます。 管理者は SSO を構成し、さまざまな SaaS アプリへのユーザー アクセスを変更できますが、SSO アクセスは一度に 1 ユーザーあたり 10 アプリに対してしか許可されません。 すべてのOffice 365アプリは 1 つのアプリとしてカウントされます。
@@ -123,9 +122,8 @@ Windows 10 Businessには、次の保護が含まれます。
 
 Windows 10 EnterpriseE3 には、ハードウェア ベースの分離のエンタープライズ管理も含Microsoft Edge。
 
->[!Note]
->ユーザーは、Microsoft 365 E3保護を継続するために、Microsoft Defender のライセンスOffice 365必要があります。 すべての Defender のスコープ内のすべてのユーザーが、Office 365のライセンスを受け取る場合は、必ず追加の Defender を購入Office 365してください。 
->
+> [!NOTE]
+> ユーザーは、Microsoft 365 E3保護を継続するために、Microsoft Defender のライセンスOffice 365必要があります。 すべての Defender のスコープ内のすべてのユーザーが、Office 365のライセンスを受け取る場合は、必ず追加の Defender を購入Office 365してください。
 
 ### <a name="device-management-with-intune"></a>Intune を使用したデバイス管理
 
@@ -140,7 +138,6 @@ Microsoft 365 Business Premiumには、Windows 10 Business AutoPilot と一緒�
 
 デバイスMicrosoft 365 Apps for businessクライアントが自動的にデバイスの機能の使用を開始Microsoft 365 Apps for enterprise。 移行後、次のコマンドを使用できます。
 
- - グループ ポリシーのサポート
- - スプレッドシートの比較と照会
- - ビジネス インテリジェンス
-
+- グループ ポリシーのサポート
+- スプレッドシートの比較と照会
+- ビジネス インテリジェンス

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: この記事では、セキュリティ保護に対するリスクとOffice 365暗号化テクノロジについて学習します。
-ms.openlocfilehash: 00b00f599f440d3ce3ccb78c3cada09cb3b67cf2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6bb0e705095b4f31c730a21921985131785dc3f0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927797"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226265"
 ---
 # <a name="encryption-risks-and-protections"></a>暗号化のリスクと保護
 
@@ -35,7 +35,7 @@ Microsoft は、サービスおよび顧客データに対するリスクに焦�
 
 | 暗号化テクノロジ | サービス | キー管理 | リスク シナリオ | 値 |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BitLocker | Exchange Online、SharePointオンライン、および Skype for Business | Microsoft | ディスクまたはサーバーが盗まれたり、不適切にリサイクルされた場合。 | BitLocker盗まれたり、不適切にリサイクルされたハードウェア (サーバー/ディスク) によるデータの損失から保護するためのフェールセーフなアプローチを提供します。 |
+| BitLocker | Exchange Online、SharePointオンライン、および Skype for Business | Microsoft | ディスクまたはサーバーが盗まれたり、不適切にリサイクルされた場合。 | BitLocker は、盗まれたハードウェアまたは不適切にリサイクルされたハードウェア (サーバー/ディスク) によるデータの損失から保護するためのフェールセーフアプローチを提供します。 |
 | サービスの暗号化 | SharePointオンライン、Skype for Business、およびOneDrive for Business。Exchange Online (ロードマップ) | Microsoft | 内部または外部のハッカーは、BLOB として個々のファイル/データにアクセスします。 | 暗号化されたデータは、キーにアクセスせずに復号化できません。 ハッカーがデータにアクセスするリスクを軽減するのに役立ちます。 |
 | 顧客キー | SharePointオンライン、OneDrive for Business、Exchange Online、およびSkype for Business | 顧客 | N/A (この機能はコンプライアンス機能として設計されています。リスクの軽減策として設計されています)。 | お客様が内部の規制とコンプライアンスの義務を果たすのを助け、サービスを離れ、Microsoft のデータへのアクセスを取り消す機能 |
 | クライアントとクライアントMicrosoft 365 TLS | Exchange Online、SharePoint、OneDrive for Business、Skype for Business、Teams、およびYammer | Microsoft、カスタマー | インターネットを使用してユーザーとクライアント コンピューターの間のデータ フローをタップする中間者攻撃Microsoft 365攻撃。 | この実装は、Microsoft と顧客の両方に価値を提供し、ユーザーとクライアントの間を流れるデータMicrosoft 365保証します。 |
@@ -64,7 +64,7 @@ Microsoft は、サービスおよび顧客データに対するリスクに焦�
 |  | SharePoint Online | 暗号化 [モード 2 、](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))更新された拡張 RMS 暗号化実装をサポートします。 署名と暗号化では RSA 2048、署名には SHA-256 がサポートされています。 | [既定の設定である Microsoft](/azure/information-protection/plan-implement-tenant-key)によって管理されます。または <br> <br> Microsoft が管理するキーに代わる顧客管理。 IT 管理 Azure サブスクリプションを持つ組織では、BYOK を使用し、その使用状況を無料でログに記録できます。 詳細については、「独自のキー [を持ち込む実装」を参照してください](/azure/information-protection/plan-implement-tenant-key)。 この構成では、キーを保護するために nCipher HSM が使用されます。 詳細については [、「nCipher HSM」および「Azure RMS」を参照してください](https://www.thales-esecurity.com/msrms/cloud)。 | はい |
 | S/MIME | Exchange Online | 暗号化メッセージ構文標準 1.5 (PKCS #7) | 展開されている顧客管理の公開キー インフラストラクチャによって異なります。 キー管理は顧客によって実行され、Microsoft は署名と復号化に使用される秘密キーにアクセスできません。 | はい、3DES または AES256 で送信メッセージを暗号化するように構成されている場合 |
 | Office 365 Message Encryption | Exchange Online | Azure RMS と同じ (署名と暗号化の場合は暗号化モード[2](./technical-reference-details-about-encryption.md) - RSA 2048、署名の場合は SHA-256) | Azure Information Protection を暗号化インフラストラクチャとして使用します。 使用される暗号化方式は、メッセージの暗号化と復号化に使用する RMS キーを取得する場所によって異なります。 | はい |
-| パートナー組織との SMTP TLS | Exchange Online | TLS 1.2 と AES 256 | Exchange Online (outlook.office.com) の TLS 証明書は、DigiCert Cloud Services CA-1 によって発行された RSA 暗号化証明書を使用した 2048 ビットの SHA-256 です。 <br> <br> この証明書の TLS ルートExchange Onlineは、GlobalSign ルート CA – R1 によって発行された RSA 暗号化証明書を持つ 2048 ビット[の SHA-1 です](./exchange-online-uses-tls-to-secure-email-connections.md?view=o365-worldwide#tls-certificate-information-for-exchange-online)。 <br> <br> セキュリティ上の理由から、証明書は変更される場合があります。 | はい、256 ビットの暗号強度を持つ TLS 1.2 が使用されている場合 |
+| パートナー組織との SMTP TLS | Exchange Online | TLS 1.2 と AES 256 | Exchange Online (outlook.office.com) の TLS 証明書は、DigiCert Cloud Services CA-1 によって発行された RSA 暗号化証明書を使用した 2048 ビットの SHA-256 です。 <br> <br> この証明書の TLS ルートExchange Onlineは、GlobalSign ルート CA – R1 によって発行された RSA 暗号化証明書を持つ 2048 ビット[の SHA-1 です](./exchange-online-uses-tls-to-secure-email-connections.md#tls-certificate-information-for-exchange-online)。 <br> <br> セキュリティ上の理由から、証明書は変更される場合があります。 | はい、256 ビットの暗号強度を持つ TLS 1.2 が使用されている場合 |
 
 *\*この表で参照されている TLS 証明書は、米国のデータセンター向けです。米国以外のデータセンターでは、2048 ビットの SHA256RSA 証明書も使用されます。*
 
@@ -88,6 +88,6 @@ Microsoft は、サービスおよび顧客データに対するリスクに焦�
 |  | SharePoint Online | 暗号化 [モード 2 、](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))更新された拡張 RMS 暗号化実装をサポートします。 署名と暗号化に対して RSA 2048、署名のハッシュに SHA-256 をサポートします。 | [既定の設定である Microsoft](/azure/information-protection/plan-implement-tenant-key)によって管理されます。または <br> <br> Microsoft が管理するキーの代わりに、顧客が管理する (BYOK とも呼ばれる)。 IT 管理 Azure サブスクリプションを持つ組織では、BYOK を使用し、その使用状況を無料でログに記録できます。 詳細については、「独自のキー [を持ち込む実装」を参照してください](/azure/information-protection/plan-implement-tenant-key)。 <br> <br> BYOK シナリオでは、キーを保護するために nCipher HSM が使用されます。 詳細については [、「nCipher HSM」および「Azure RMS」を参照してください](https://www.thales-esecurity.com/msrms/cloud)。 | はい |
 | S/MIME | Exchange Online | 暗号化メッセージ構文標準 1.5 (PKCS #7) | 展開されている公開キー インフラストラクチャによって異なります。 | はい、3DES または AES-256 で送信メッセージを暗号化するように構成されている場合。 |
 | Office 365 Message Encryption | Exchange Online | Azure RMS と同じ (署名と暗号化の場合は暗号化モード[2](./technical-reference-details-about-encryption.md) - RSA 2048、署名のハッシュでは SHA-256) | 暗号化インフラストラクチャとして Azure RMS を使用します。 使用される暗号化方式は、メッセージの暗号化と復号化に使用する RMS キーを取得する場所によって異なります。 <br> <br> RMS を使用Microsoft Azureキーを取得する場合は、暗号化モード 2 が使用されます。 Active Directory (AD) RMS を使用してキーを取得する場合は、暗号化モード 1 または暗号化モード 2 が使用されます。 使用される方法は、社内 AD RMS 展開によって異なります。 暗号化モード 1 は、元来の AD RMS 暗号実装です。 署名と暗号化に対して RSA 1024 をサポートし、署名用の SHA-1 をサポートします。 このモードは、HSM を使用する BYOK 構成を除く、現在のすべてのバージョンの RMS で引き続きサポートされます。 | はい |
-| パートナー組織との SMTP TLS | Exchange Online | TLS 1.2 と AES 256 | Exchange Online (outlook.office.com) の TLS 証明書は、DigiCert Cloud Services CA-1 によって発行された RSA 暗号化証明書を使用した 2048 ビットの SHA-256 です。 <br> <br> この証明書の TLS ルートExchange Onlineは、GlobalSign ルート CA – R1 によって発行された RSA 暗号化証明書を持つ 2048 ビット[の SHA-1 です](./exchange-online-uses-tls-to-secure-email-connections.md?view=o365-worldwide#tls-certificate-information-for-exchange-online)。 <br> <br> セキュリティ上の理由から、証明書は変更される場合があります。 | はい、256 ビットの暗号強度を持つ TLS 1.2 が使用されている場合 |
+| パートナー組織との SMTP TLS | Exchange Online | TLS 1.2 と AES 256 | Exchange Online (outlook.office.com) の TLS 証明書は、DigiCert Cloud Services CA-1 によって発行された RSA 暗号化証明書を使用した 2048 ビットの SHA-256 です。 <br> <br> この証明書の TLS ルートExchange Onlineは、GlobalSign ルート CA – R1 によって発行された RSA 暗号化証明書を持つ 2048 ビット[の SHA-1 です](./exchange-online-uses-tls-to-secure-email-connections.md#tls-certificate-information-for-exchange-online)。 <br> <br> セキュリティ上の理由から、証明書は変更される場合があります。 | はい、256 ビットの暗号強度を持つ TLS 1.2 が使用されている場合 |
 
 *\*この表で参照されている TLS 証明書は、米国のデータセンター向けです。米国以外のデータセンターでは、2048 ビットの SHA256RSA 証明書も使用されます。*

@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: ドメイン(onmicrosoft ドメインとトランスファー ドメイン) の詳細については、よく寄せられる質問の回答を参照してください。
-  ms.openlocfilehash: 4c0e97ef3e6cf573bcdae32675bc71284a250a9b
-  ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+  ms.openlocfilehash: 44558ac6bf40491c0a5fa187ab366b1b3590ae07
+  ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/05/2021
-  ms.locfileid: "52779628"
+  ms.lasthandoff: 06/30/2021
+  ms.locfileid: "53227753"
 title: ドメインに関する FAQ
 summary: "\n\nこの記事では、Microsoft 365 のドメインに関してよく寄せられる質問にお答えします。\n\n質問の回答が見つからない場合は、コメントを残してお知らせください。ご質問を FAQ の一覧に追加します。\n"
 sections:
@@ -60,4 +60,4 @@ sections:
   - question: "\"onmicrosoft.de\" ドメインがあるのはなぜですか?"
     answer: "サービスにサインアップすると、Microsoft 365 では、*contoso.onmicrosoft.com* のようなドメインが作成されます。 サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.de* のようなドメインが含まれています。 \n  \n ***alan@contoso.de* のように表示されるメール アドレスを希望する場合は、**[ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、または「[Office 365 にユーザーとドメインを追加する](add-domain.md)」の手順に従って操作します (既にドメインを所有している場合)。 \n  \n- **サインアップ後に onmicrosoft ドメインの名前は変更できません**  たとえば、選んだ初期ドメインがfourthcoffee.onmicrosoft.de の場合fabrikam.onmicrosoft.de に変更することはできません。 別の onmicrosoft.com ドメインを使うには、Microsoft 365 で新しいサブスクリプションを開始する必要があります。 \n    \n- **チーム サイトの URL の名前を変更することはできません。** チーム サイトの URL は onmicrosoft.de ドメイン名に基づいています。SharePoint Online のアーキテクチャの動作方法のため、残念ながらチーム サイトの名前は変更できません。 \n    \n- **onmicrosoft ドメインは、削除できません。** Microsoft 365 では、サブスクリプションの処理に関して舞台裏で使用することがあるため、保持しておく必要があります。 カスタム ドメインを追加した場合は、初期ドメインを使う必要はありません。 \n    \nドメインを追加した後でも、初期の onmicrosoft.de ドメインを使うことができます。初期ドメインは、メールやその他のサービスでも引き続き利用できます。\n  \n"
   - question: 非営利団体または教育機関のステータスを確認するにはどうすればよいですか?
-    answer: "1. [管理センター](./index.yml)で [**セットアップ**] を選択してウィザードを開始します。 (最初に Office 365 にサインインしてください。) \n    \n2. 学校の管理者になるには、Microsoft  365 で [**管理者になる**] オプションを選択します。 \n    \n3. 自分のドメインの DNS ホストの Web サイトで、 TXT DNS レコードを追加するように求められます。 どうしてでしょうか? この理由は、DNS ホストへサインインしてドメイン用のレコードを追加することにより、ユーザーがドメイン名の所有者だということが Microsoft 365 で証明されるからです。\n    \n4. レコードを追加したら Microsoft 365 ポータルに戻り、レコードを追加したことを確認します。そうすると、Microsoft 365 で確認が行われます。\n    \n非営利団体で、Microsoft 365 を入手したいのですが。 [お客様の組織に資格があることを確認](https://www.microsoft.com/en-us/nonprofits/eligibility)してから、サービスにサインアップしてください。 \n  \n学校の管理者になる方法の詳細については、 [こちらのヘルプ記事をご覧ください](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education\n)。"
+    answer: "1. [管理センター](./index.yml)で [**セットアップ**] を選択してウィザードを開始します。 (最初に Office 365 にサインインしてください。) \n    \n2. 学校の管理者になるには、Microsoft  365 で [**管理者になる**] オプションを選択します。 \n    \n3. 自分のドメインの DNS ホストの Web サイトで、 TXT DNS レコードを追加するように求められます。 どうしてでしょうか? この理由は、DNS ホストへサインインしてドメイン用のレコードを追加することにより、ユーザーがドメイン名の所有者だということが Microsoft 365 で証明されるからです。\n    \n4. レコードを追加したら Microsoft 365 ポータルに戻り、レコードを追加したことを確認します。そうすると、Microsoft 365 で確認が行われます。\n    \n非営利団体で、Microsoft 365 を入手したいのですが。 [お客様の組織に資格があることを確認](https://www.microsoft.com/nonprofits/eligibility)してから、サービスにサインアップしてください。 \n  \n学校の管理者になる方法の詳細については、 [こちらのヘルプ記事をご覧ください](/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education\n)。"

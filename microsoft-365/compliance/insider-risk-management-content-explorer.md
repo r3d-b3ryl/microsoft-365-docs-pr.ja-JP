@@ -1,7 +1,7 @@
 ---
 title: Insider リスク管理 コンテンツ エクスプローラー
 description: インサイダー リスク管理について詳しくは、Microsoft 365
-keywords: Microsoft 365、インサイダーリスク管理、リスク管理、コンプライアンス
+keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 44a17471f1e2ba92d0099f62b95dec8d0e56a224
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 3ff3c652d5446167ac3c2bf78a2405c21929ea11
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957494"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226469"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Insider リスク管理 コンテンツ エクスプローラー
 
@@ -29,8 +29,8 @@ ms.locfileid: "51957494"
 
 コンテンツに Information Rights Management アクセス許可が含まれる場合、これらのアクセス許可はコピーされたコンテンツに対して保持され *、Insider Risk Management Investigators* ロールを割り当てられたユーザーは、ファイルを開いて表示する必要がある場合、これらのアクセス許可と権限が必要です。 各ファイルとメッセージには、管理目的でインサイダー リスク管理ケースで一意のファイル ID が自動的に割り当てられます。 デバイス インジケーター アクティビティに関連付けられているドキュメントは、コンテンツ エクスプローラーには含まれません。
 
->[!Note]
->コンテンツ エクスプローラーには、コンテンツ ファイルに関連Microsoft Officeがあります。 サイト レベルのアクティビティ (SharePointサイトが削除された場合やサイトのアクセス許可が変更された場合など) は、コンテンツ エクスプローラーには含まれません。
+> [!NOTE]
+> コンテンツ エクスプローラーには、コンテンツ ファイルに関連Microsoft Officeがあります。 サイト レベルのアクティビティ (SharePointサイトが削除された場合やサイトのアクセス許可が変更された場合など) は、コンテンツ エクスプローラーには含まれません。
 
 ## <a name="column-options"></a>列のオプション
 
@@ -70,11 +70,11 @@ ms.locfileid: "51957494"
 | **機密情報の種類** | コンテンツで識別される機密情報の種類。 |
 | **秘密度ラベル** | コンテンツに適用される感度ラベル。 |
 | **Sent** | 送信者によって電子メール メッセージが送信された日付。 このフィールドは、送信電子メール プロパティと同じプロパティです。 |
-| **[サイズ]** | メールとドキュメントのいずれの場合も、アイテムのサイズ (バイト単位)。 |
-| **[件名]** | 電子メール メッセージの件名行に含まれるテキスト。 |
+| **Size** | メールとドキュメントのいずれの場合も、アイテムのサイズ (バイト単位)。 |
+| **Subject** | 電子メール メッセージの件名行に含まれるテキスト。 |
 | **件名/タイトル** | メールの場合、メッセージの件名行のテキスト。 ドキュメントの場合、ドキュメントのタイトル。 前述したように、Title プロパティは Microsoft Office ドキュメントに指定されたメタデータです。 複数の件名とタイトルをコンマで区切って入力できます。 2 つ以上の値は、OR 演算子によって論理的に結合されます。 |
 | **テーマリスト** | 分析用に計算されたテーマの一覧。 |
-| **Title** | ドキュメントのタイトル。 Title プロパティは、Office ドキュメントに 指定されているメタデータです。 ドキュメントのファイル名とは異なります。 |
+| **タイトル** | ドキュメントのタイトル。 Title プロパティは、Office ドキュメントに 指定されているメタデータです。 ドキュメントのファイル名とは異なります。 |
 | **To** | [宛先] フィールドにある、メール メッセージの受信者。 |
 
 ## <a name="filtering"></a>フィルター処理

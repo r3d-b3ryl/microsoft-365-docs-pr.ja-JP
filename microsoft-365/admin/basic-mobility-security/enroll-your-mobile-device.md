@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: デバイスで Microsoft 365 サービスを使用する前に、最初にデバイスの Basic Mobility and Security に登録する必要Microsoft 365。
-ms.openlocfilehash: 2ad0aac331969696bbf53d0b06c18ee5c0ee90f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 9da3424409a950670e3be45354a5c399fec52372
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706168"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228185"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>基本モビリティとセキュリティを使用してモバイル デバイスを登録する
 
@@ -31,8 +31,8 @@ ms.locfileid: "52706168"
 
 組織では、従業員がモバイル デバイスを使用して仕事用メール、予定表、およびドキュメントに安全にアクセスできる一方で、ビジネスが重要なデータをセキュリティで保護し、コンプライアンス要件を満たしていることを確認するために、Basic Mobility and Security を選択します。詳細については、「基本モビリティとセキュリティ[の概要」を参照Microsoft 365。](overview.md) 詳細については、「デバイスを登録するときに組織に表示できる [情報」を参照してください](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)。
 
->[!IMPORTANT] 
->Microsoft 365 の Basic Mobility and Security にデバイスを登録する場合、作業組織がデバイスをワイプするオプションを許可すると共に、パスワードの設定が必要になる場合があります。 Microsoft 365 管理センターからデバイスワイプを実行すると、パスワードが何度も誤って入力された場合や使用条件が壊れている場合に、デバイスからすべてのデータを削除できます。
+> [!IMPORTANT]
+> Microsoft 365 の Basic Mobility and Security にデバイスを登録する場合、作業組織がデバイスをワイプするオプションを許可すると共に、パスワードの設定が必要になる場合があります。 たとえば、パスワードが何度も誤って入力された場合、または使用条件が壊れている場合に、デバイスからすべてのデータを削除するために、Microsoft 365 管理センター からデバイスワイプを実行できます。
 
 ## <a name="supported-devices"></a>サポート対象のデバイス
 
@@ -46,8 +46,8 @@ Intune サービスによってホストMicrosoft 365基本的なモビリティ
 
 デバイスが上記に記載されていない場合に、Basic Mobility and Security でデバイスを使用する必要がある場合は、仕事または学校の管理者に問い合わせてください。
 
->[!TIP]
->デバイスの登録に問題がある場合は、「Troubleshoot Basic Mobility and Security 」 [を参照してください](troubleshoot.md)。
+> [!TIP]
+> デバイスの登録に問題がある場合は、「Troubleshoot Basic Mobility and Security 」 [を参照してください](troubleshoot.md)。
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Intune と Basic Mobility and Security を使用してモバイル デバイスをセットアップする
 
@@ -55,8 +55,8 @@ Intune サービスによってホストMicrosoft 365基本的なモビリティ
 
 ### <a name="iphone-or-ipad"></a>iPhoneまたはiPad
 
->[!TIP]
->この手順を完了するまで、電子メールの送受信は行えなかね。
+> [!TIP]
+> この手順を完了するまで、電子メールの送受信は行えなかね。
 
 Apple App Store に移動し、アプリをダウンロードしてインストールIntune ポータル サイト。
 
@@ -64,8 +64,8 @@ Apple App Store に移動し、アプリをダウンロードしてインスト�
 
 ### <a name="android-phone-or-tablet"></a>Android スマートフォンまたはタブレット
 
->[!TIP]
->この手順を完了するまで、電子メールの送受信は行えなかね。
+> [!TIP]
+> この手順を完了するまで、電子メールの送受信は行えなかね。
 
 Google Play ストアに移動し、アプリをダウンロードしてインストールIntune ポータル サイト。
 
@@ -77,6 +77,6 @@ Google Play ストアに移動し、アプリをダウンロードしてイン�
 
 ポータル サイトを使用してWindows電話または PC に接続して構成するには、「Microsoft 365でのWindowsデバイスの登録」を[参照Intune ポータル サイト。](/intune-user-help/windows-enrollment-company-portal)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 デバイスが Basic Mobility and Security に登録された後、デバイス上の Office アプリの使用を開始して、電子メール、予定表、連絡先、ドキュメントを操作できます。

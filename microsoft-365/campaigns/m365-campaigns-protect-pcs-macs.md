@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理されていないデバイスまたは持ち込み専用デバイス (BYOD) を保護するには、Microsoft 365。
-ms.openlocfilehash: 430f5446f86c26cb1f0fd1c7f34613cddec473b2
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398255"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227501"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>非管理対象の Windows 10 PC と Mac を保護する
 
@@ -54,7 +54,7 @@ PC または mac Windows 10組織が管理していない場合は、必ずこ�
 
 デバイスの暗号化は、さまざまなデバイスで利用Windows、データを暗号化することでデータを保護するのに役立ちます。 デバイスの暗号化を有効にした場合、承認された個人のみがデバイスとデータにアクセスできます。 手順 [については、「デバイスの暗号化を有効](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) にする」を参照してください。
 
- デバイスでデバイスの暗号化を利用できない場合は、代わりに標準の暗号化[BitLocker有効](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)にできます。 (BitLockerエディションでは使用Windows 10 Homeできません)。 
+ デバイスでデバイスの暗号化を利用できない場合は、代わりに標準の [BitLocker 暗号化を](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 有効にできます。 (BitLocker は、このエディションではWindows 10 Homeできません)。 
 
 **デバイスを保護するには、Windows セキュリティ**<p>
 インストールされている場合Windows 10、最新のウイルス対策保護が提供Windows セキュリティ。 Windows 10 を初めて起動すると、Windows セキュリティ が有効で、マルウェア (悪意のあるソフトウェア)、ウイルス、セキュリティの脅威をスキャンして PC を保護するために積極的に支援します。 Windows セキュリティリアルタイム保護を使用して、PC でダウンロードまたは実行するすべてをスキャンします。
@@ -72,7 +72,7 @@ Windows Update では、自動的に Windows セキュリティの更新プロ�
 ディスク暗号化は、デバイスが紛失または盗難に遭った場合にデータを保護します。 FileVault のフル ディスク暗号化は、起動ディスク上の情報への不正アクセスを防ぐのに役立ちます。 手順 [については、「FileVault を使用して](https://support.apple.com/HT204837) Mac 上の起動ディスクを暗号化する」を参照してください。
 
 **マルウェアから Mac を保護する**<p>
-Microsoft では、Mac に信頼性の高いウイルス対策ソフトウェアをインストールして使用する必要があります。 選択肢の一覧については、次の記事を参照してください。 [ベスト Mac ウイルス対策 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)。
+Microsoft では、Mac に信頼性の高いウイルス対策ソフトウェアをインストールして使用する必要があります。 選択肢の一覧については、次の記事を参照してください。 [ベスト Mac ウイルス対策 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)。
 
 また、信頼できるソースからのみソフトウェアを使用することで、マルウェアのリスクを軽減できます。 [セキュリティとプライバシー] &設定を使用すると、Mac にインストールされているソフトウェアのソースを指定できます。 詳細については、「Mac を [マルウェアから保護する」を参照してください](https://support.apple.com/kb/PH25087)。
 

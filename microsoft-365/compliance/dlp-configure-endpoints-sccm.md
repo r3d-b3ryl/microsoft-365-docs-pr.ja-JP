@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configuration Manager を使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: ac05581ce33e94859dbd67848197878595d5ed0f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: d2db35e50d31a0a19076965da6dcecf9cfeef826
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893298"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226899"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用した Windows 10 デバイスのオンボード
 
@@ -35,7 +35,7 @@ ms.locfileid: "51893298"
 2. ナビゲーション ウィンドウで、[デバイス オンボーディング オン **ボーディング] 設定**  >  **を**  >  **選択します**。
 
 3. [展開 **方法] フィールド** で、[Microsoft Endpoint Configuration Manager **2012/2012 R2/1511/1602] を選択します**。
- 
+
 4. [ **パッケージのダウンロード]** を選択し、ファイルを.zipします。
 
 5. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 *DeviceComplianceOnboardingScript.cmd という名前のファイルが必要です*。
@@ -47,12 +47,12 @@ ms.locfileid: "51893298"
 > [!NOTE]
 > Microsoft 365エンドポイントのデータ損失防止では、アウトオブボックス エクスペリエンス[(OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87)フェーズのオンボーディングはサポートされていません。 インストールまたはアップグレードの実行後にユーザーが OOBE をWindows確認します。
 
->[!TIP]
+> [!TIP]
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)。
 >
 > Configuration Manager アプリケーションで検出ルールを作成して、デバイスがオンボードされた場合に継続的にチェックを行える点に注意してください。 アプリケーションは、パッケージやプログラムとは異なる種類のオブジェクトです。
 > デバイスがまだオンボードされていない場合 (保留中の OOBE の完了その他の理由により)、Configuration Manager は、ルールが状態の変更を検出するまで、デバイスのオンボードを再試行します。
-> 
+>
 > この動作は、"OnboardingState" レジストリ値 (タイプ REG_DWORD) が 1 の場合に検出ルールチェックを作成することで実現できます。
 > このレジストリ値は、"HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status" の下にあります。
 詳細については[、「Configure Detection Methods in System Center 2012 R2 Configuration Manager」を参照してください](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)。
@@ -61,8 +61,8 @@ ms.locfileid: "51893298"
 
 デバイスごとに構成値を設定して、Microsoft Defender セキュリティ センター から詳細分析用にファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかを示します。
 
->[!NOTE]
->これらの構成設定は、通常、Configuration Manager を介して行われます。 
+> [!NOTE]
+> これらの構成設定は、通常、Configuration Manager を介して行われます。
 
 Configuration Manager で構成アイテムのコンプライアンス ルールを設定して、デバイスのサンプル共有設定を変更できます。
 
@@ -112,7 +112,7 @@ Value: 0 or 1
 
 **攻撃表面の縮小** 使用可能なすべてのルールを [監査] に構成します。
 
->[!NOTE]
+> [!NOTE]
 > これらのアクティビティをブロックすると、正当なビジネス プロセスが中断される可能性があります。 最善の方法は、すべてを監査に設定し、有効にしても安全な設定を特定し、誤検知検出を持つエンドポイントでこれらの設定を有効にします。
 
 **ネットワーク保護**
@@ -147,7 +147,7 @@ Value: 0 or 1
 3. オペレーティング システムWindows 10を選択します。
 
 4. [展開 **方法] フィールド** で、[Microsoft Endpoint Configuration Manager **2012/2012 R2/1511/1602] を選択します**。
-    
+
 5. [ **パッケージのダウンロード]** を選択し、ファイルを.zipします。
 
 6. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 *-MM-DD.cmd DeviceComplianceOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
@@ -162,7 +162,7 @@ Value: 0 or 1
 
 ## <a name="monitor-device-configuration"></a>デバイス構成の監視
 
-現在のブランチでMicrosoft Endpoint Configuration Manager場合は、Configuration Manager コンソールの組み込みの Microsoft Defender for Endpoint ダッシュボードを使用します。 詳細については、「Microsoft Defender Advanced Threat Protection [- モニター」を参照してください](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
+現在のブランチでMicrosoft Endpoint Configuration Manager場合は、Configuration Manager コンソールの組み込みの Microsoft Defender for Endpoint ダッシュボードを使用します。 詳細については [、「Microsoft Defender Advanced Threat Protection - Monitor」を参照してください](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
 2012 R2 Configuration Manager System Center使用している場合、監視は次の 2 つの部分で構成されます。
 
@@ -180,7 +180,7 @@ Value: 0 or 1
 
 4. [完了統計] と [コンテンツ **の状態] の下の** 状態インジケーター **を確認します**。
 
-    失敗した展開 (エラー、要件が満たされていないデバイス、または失敗した状態) がある場合は、デバイスのトラブルシューティングが必要な場合があります。  詳細については、「オンボードの問題に[関するトラブルシューティングMicrosoft Defender Advanced Threat Protection」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
+    失敗した展開 (エラー、要件が満たされていないデバイス、または失敗した状態) がある場合は、デバイスのトラブルシューティングが必要な場合があります。  詳細については、「Microsoft Defender Advanced Threat Protection オンボーディングの問題のトラブルシューティング [」を参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
 
     ![エラーがない展開が正常に実行されたことを示す Configuration Manager](../media/sccm-deployment.png)
 
@@ -207,4 +207,4 @@ Value: “1”
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](dlp-configure-endpoints-vdi.md)
 - [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [オンボーディングMicrosoft Defender Advanced Threat Protectionのトラブルシューティング](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Microsoft Defender Advanced Threat Protection オンボーディングの問題のトラブルシューティング](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

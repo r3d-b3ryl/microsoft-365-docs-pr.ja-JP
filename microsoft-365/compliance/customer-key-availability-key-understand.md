@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 紛失した顧客キーの回復に使用される可用性キーについて学習します。
-ms.openlocfilehash: 4f4dfdff0aa1c7ebe6dd1266c82c6fd290913a3e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: a4db6eab78feebd171dbfd5c8b45252837f229d0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345096"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227081"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>カスタマー キーの可用性キーの詳細
 
@@ -155,8 +155,8 @@ Microsoft 365特定の状況でのみ可用性キーがトリガーされます�
 
        - この場合、可用性キーはシステムアクションにのみ使用され、ユーザーアクションには使用されません。ユーザー要求は失敗し、ユーザーはエラー メッセージを受け取ります。
 
->[!IMPORTANT]
->Microsoft 365サービス コードには、顧客データを理由として、価値を追加するクラウド サービスを提供する有効なログイン トークンが常に含まれます。 したがって、可用性キーが削除されるまでは、検索インデックスの作成やメールボックスの移動など、Exchange Online および Skype for Business によって開始される、または内部で開始されるアクションのフォールバックとして使用できます。 これは、Azure Key Vault に対する一時的な ERRORS 要求と ACCESS DENIED 要求の両方に適用されます。
+> [!IMPORTANT]
+> Microsoft 365サービス コードには、顧客データを理由として、価値を追加するクラウド サービスを提供する有効なログイン トークンが常に含まれます。 したがって、可用性キーが削除されるまでは、検索インデックスの作成やメールボックスの移動など、Exchange Online および Skype for Business によって開始される、または内部で開始されるアクションのフォールバックとして使用できます。 これは、Azure Key Vault に対する一時的な ERRORS 要求と ACCESS DENIED 要求の両方に適用されます。
 
 ### <a name="triggers-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>オンライン、SharePoint、およびOneDrive for BusinessファイルのTeamsトリガー
 

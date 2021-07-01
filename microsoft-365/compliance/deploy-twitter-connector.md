@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: 管理者は、Twitter データをインポートして Microsoft 365 にアーカイブするネイティブ コネクタをセットアップできます。 このデータを Microsoft 365 にインポートした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
-ms.openlocfilehash: 0dd996802964b2a2fc58d26e23af57193c89ee8c
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+description: 管理者は、Twitter データをインポートおよびアーカイブするネイティブ コネクタをセットアップして、ユーザーにMicrosoft 365。 このデータを Microsoft 365 にインポートした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
+ms.openlocfilehash: 0a0ebb18cb39b7dd7416f2d03dcb5b4d21332c9b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619913"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227057"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>コネクタを展開して Twitter データをアーカイブする
 
-この記事では、Office 365 Import service を使用して組織の Twitter アカウントから Microsoft 365 にデータをインポートするコネクタを展開する手順について説明します。 このプロセスの概要と、Twitter コネクタの展開に必要な前提条件の一覧については、「コネクタをセットアップして Twitter データをアーカイブする」 [を参照してください ](archive-twitter-data-with-sample-connector.md)。 
+この記事では、Office 365 Import サービスを使用して組織の Twitter アカウントから Microsoft 365 にデータをインポートするコネクタを展開する手順について説明します。 このプロセスの概要と、Twitter コネクタの展開に必要な前提条件の一覧については、「コネクタをセットアップして Twitter データをアーカイブする」 [を参照してください ](archive-twitter-data-with-sample-connector.md)。
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: Azure Active Directory でアプリを作成する
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: アプリをアプリで作成Azure Active Directory
 
 1. グローバル管理者 <https://portal.azure.com> アカウントの資格情報を使用して、アクセスしてサインインします。
 
@@ -34,7 +34,7 @@ ms.locfileid: "49619913"
 
 2. 左側のナビゲーション ウィンドウで **[Azure Active Directory]** をクリックします。
 
-   ![Azure Active Directory に移動する](../media/TCimage02.png)
+   ![[ユーザー] に移動Azure Active Directory](../media/TCimage02.png)
 
 3. 左側のナビゲーション ウィンドウで、[アプリの登録 ] **(プレビュー) をクリックし** 、[新しい登録] **をクリックします**。
 
@@ -42,7 +42,7 @@ ms.locfileid: "49619913"
 
 4. アプリケーションを登録します。 [ **リダイレクト URI (省略可能)]** で、[アプリケーションの種類] ドロップダウン リストで **[Web]** を選択し `https://portal.azure.com` 、URI のボックスに入力します。
 
-   ![リダイレクト https://portal.azure.com URI の種類 ](../media/TCimage04.png)
+   ![リダイレクト https://portal.azure.com URI の種類](../media/TCimage04.png)
 
 5. アプリケーション **(クライアント) ID とディレクトリ** **(テナント) ID** をコピーし、テキスト ファイルまたは他の安全な場所に保存します。 これらの ID は、後の手順で使用します。
 
@@ -52,7 +52,7 @@ ms.locfileid: "49619913"
 
    ![新しいクライアント シークレットを作成する](../media/TCimage06.png)
 
-7. 新しいシークレットを作成します。 [説明] ボックスにシークレットを入力し、有効期限を選択します。 
+7. 新しいシークレットを作成します。 [説明] ボックスにシークレットを入力し、有効期限を選択します。
 
    ![シークレットを入力し、有効期限を選択する](../media/TCimage08.png)
 
@@ -61,31 +61,31 @@ ms.locfileid: "49619913"
    ![シークレットをコピーして保存する](../media/TCimage09.png)
 
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>手順 2: GitHub から Azure アカウントにコネクタ Web サービスを展開する
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>手順 2: コネクタ Web サービスを Azure アカウントGitHubから展開する
 
-1. この [GitHub サイトに移動し、[Azure](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) に **展開] をクリックします**。
+1. このサイトに [移動しGitHub Azure](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) **に展開をクリックします**。
 
     ![Azure のホーム ページに移動する](../media/FBCimage11.png)
 
-2. [Azure に **展開] をクリック** すると、カスタム テンプレート ページを使用して Azure ポータルにリダイレクトされます。 [基本と **設定] の詳細を****入力し**、[購入] を **クリックします**。
+2. [Azure に **展開] をクリック** すると、カスタム テンプレート ページを使用して Azure ポータルにリダイレクトされます。 [基本] と **[詳細****設定入力** し、[購入] を **クリックします**。
 
    ![[リソースの作成] をクリックし、ストレージ アカウントを入力します。](../media/FBCimage12.png)
 
     - **サブスクリプション:** Twitter コネクタ Web サービスを展開する Azure サブスクリプションを選択します。
-    
+
     - **リソース グループ:** 新しいリソース グループを選択または作成します。 リソース グループは、Azure ソリューションの関連リソースを保持するコンテナーです。
 
     - **場所:** 場所を選択します。
 
     - **Web アプリ名:** コネクタ Web アプリの一意の名前を指定します。 名前の長さは 3 ~ 18 文字です。 この名前は、Azure アプリ サービスの URL を作成するために使用されます。たとえば **、twitterconnector** の Web アプリ名を指定すると、Azure アプリ サービスの URL が **twitterconnector.azurewebsites.net。**
-    
-    - **tenantId:** 手順 1 の Azure Active Directory で Facebook コネクタ アプリを作成した後にコピーした Microsoft 365 組織のテナント ID。
-    
+
+    - **tenantId:** 手順 1 で Azure Active Directory で Facebook コネクタ Microsoft 365作成した後にコピーした組織のテナント ID。
+
    - **APISecretKey:** 任意の値をシークレットとして入力できます。 これは、手順 5 でコネクタ Web アプリにアクセスするために使用されます。
 
 3. 展開が成功すると、ページは次のスクリーンショットのようになります。
 
-    ![[ストレージ] をクリックし、[ストレージ アカウント] をクリックします。](../media/FBCimage13.png)
+    ![[アカウントStorage] をクリックし、[アカウント] Storageクリックします。](../media/FBCimage13.png)
 
 ## <a name="step-3-create-the-twitter-app"></a>手順 3: Twitter アプリを作成する
 
@@ -93,7 +93,7 @@ ms.locfileid: "49619913"
 
    ![に移動 https://developer.twitter.com してログインする](../media/TCimage25-5.png)
 2. [アプリ **の作成] をクリックします**。
-   
+
    ![[アプリ] ページに移動してアプリを作成する](../media/TCimage26.png)
 
 3. [ **アプリの詳細]** で、アプリケーションに関する情報を追加します。
@@ -101,11 +101,11 @@ ms.locfileid: "49619913"
    ![アプリに関する情報を入力する](../media/TCimage27.png)
 
 4. Twitter 開発者ダッシュボードで、作成したアプリを選択し、[詳細] を **クリックします**。
-   
+
    ![アプリ ID をコピーして保存する](../media/TCimage28.png)
 
 5. [キー **とトークン]** タブの [コンシューマー API キー] で **、API** キーと API シークレット キーの両方をコピーし、テキスト ファイルまたは他の保存場所に保存します。 次に、[ **作成]** をクリックしてアクセス トークンとアクセス トークン シークレットを生成し、これらをテキスト ファイルまたは他の保存場所にコピーします。
-   
+
    ![API シークレット キーにコピーして保存する](../media/TCimage29.png)
 
    次に、[ **作成]** をクリックしてアクセス トークンとアクセス トークン シークレットを生成し、これらをテキスト ファイルまたは他の保存場所にコピーします。
@@ -121,14 +121,14 @@ ms.locfileid: "49619913"
 8. 次のタスクを実行します。
 
    - コネクタ アプリが Twitter にサインインするには、このチェック ボックスをオンにします。
-   
+
    - 次の形式を使用して OAuth リダイレクト Uri を追加します。 **\<connectorserviceuri> /Views/TwitterOAuth** *、connectorserviceuri* の値は、組織の Azure アプリ サービス URL です。たとえば https://twitterconnector.azurewebsites.net/Views/TwitterOAuth 。
 
     ![コネクタ アプリによる Twitter へのサインインと OAuth リダイレクト Uri の追加を許可する](../media/TCimage32.png)
 
 これで、Twitter 開発者アプリを使用する準備ができました。
 
-## <a name="step-4-configure-the-connector-web-app"></a>手順 4: コネクタ Web アプリを構成する 
+## <a name="step-4-configure-the-connector-web-app"></a>手順 4: コネクタ Web アプリを構成する
 
 1. [https:// \<AzureAppResourceName> .azurewebsites.net に移動します **(AzureAppResourceName** は、手順 4 で指定した Azure アプリ リソースの名前です)。 たとえば、名前が **twitterconnector の場合は**、 に移動します https://twitterconnector.azurewebsites.net 。 アプリのホーム ページは、次のスクリーンショットのようになります。
 
@@ -138,27 +138,27 @@ ms.locfileid: "49619913"
 
    ![[構成] をクリックしてサインイン ページを表示する](../media/FBCimage42.png)
 
-3. [テナント ID] ボックスに、テナント ID (手順 2 で取得した) を入力または貼り付けます。 パスワード ボックスに、APISecretKey (手順 2 で取得した) を入力または貼り付け、[構成設定の設定] をクリックして構成の詳細ページを表示します。
+3. [テナント ID] ボックスに、テナント ID (手順 2 で取得した) を入力または貼り付けます。 パスワード ボックスに、APISecretKey (手順 2 で取得した) を入力または貼り付け、[構成の設定] 設定 をクリックして構成の詳細ページを表示します。
 
    ![テナント ID と API シークレット キーを使用してサインインする](../media/TCimage35.png)
 
-4. 次の構成設定を入力します。 
+4. 次の構成設定を入力します。
 
    - **Twitter Api キー:** 手順 3 で作成した Twitter アプリケーションの API キー。
-   
+
    - **Twitter Api シークレット キー:** 手順 3 で作成した Twitter アプリケーションの API シークレット キー。
-   
+
    - **Twitter アクセス トークン:** 手順 3 で作成したアクセス トークン。
-   
+
    - **Twitter Access トークン シークレット:** 手順 3 で作成したアクセス トークン シークレット。
-   
-   - **AAD アプリケーション ID:** 手順 1 で作成した Azure Active Directory アプリのアプリケーション ID
-   
+
+   - **AAD アプリケーション ID:** 手順 1 で作成Azure Active Directoryアプリのアプリケーション ID
+
    - **AAD アプリケーション シークレット:** 手順 1 で作成した APISecretKey シークレットの値。
 
 5. [保存 **] を** クリックしてコネクタ設定を保存します。
 
-## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>手順 5: Microsoft 365 コンプライアンス センターで Twitter コネクタをセットアップする
+## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>手順 5: アプリケーションで Twitter コネクタをセットアップMicrosoft 365 コンプライアンス センター
 
 1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、左側の **ナビゲーションで [** データ コネクタ] をクリックします。
 
@@ -173,16 +173,16 @@ ms.locfileid: "49619913"
    ![コネクタ アプリの資格情報を入力する](../media/TCimage38.png)
 
     - [名前 **] ボックス** に、Twitter ヘルプ ハンドルなどのコネクタの **名前を入力します**。
-    
+
     - [コネクタ **の URL] ボックス** に、Azure アプリ サービスの URL を入力または貼り付けます。たとえば `https://twitterconnector.azurewebsites.net` .
-    
+
     - [パスワード **] ボックス** に、手順 2 で作成した APISecretKey の値を入力または貼り付けます。
-    
+
     - [Azure **App ID]** ボックスに、手順 1 で取得した Azure Application App ID (クライアント *ID* とも呼ばれる) の値を入力または貼り付けます。
 
 6. 接続が正常に検証された後、[次へ] を **クリックします**。
 
-7. [ **データのインポートを Microsoft 365** に承認する] ページで、APISecretKey を再度入力または貼り付け、[Web アプリのログイン]  **をクリックします**。
+7. [データの **インポートMicrosoft 365承認する**] ページで、APISecretKey を再度入力または貼り付け、[Web アプリのログイン]**をクリックします**。
 
 8. [Twitter **でログイン] をクリックします**。
 
@@ -196,7 +196,7 @@ ms.locfileid: "49619913"
 
 11. [フィルター **の設定] ページ** で、フィルターを適用して、特定の年齢のアイテムを最初にインポートできます。 年齢を選択し、[次へ] を **クリックします**。
 
-12. [保存 **場所の選択** ] ページで、Twitter アイテムをインポートする Microsoft 365 メールボックスの電子メール アドレスを入力し、[次へ] を **クリックします**。
+12. [保存 **場所の選択**] ページで、Twitter アイテムMicrosoft 365するメールボックスの電子メール アドレスを入力し、[次へ] を **クリックします**。
 
 13. [ **次へ]** をクリックしてコネクタの設定を確認し、[完了] を **クリックして** コネクタのセットアップを完了します。
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 30363b544d9016b10dd9aad463d33c40065da0f3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1864c34f1e7bb17decfaeb2057dfff463a33b37c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919813"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226349"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>インサイダー リスク管理の詳細については、Microsoft 365
 
@@ -55,7 +55,7 @@ Insider リスク管理は、次の原則を中心に行います。
 
 ## <a name="identifying-potential-risks-with-analytics-preview"></a>分析による潜在的なリスクの特定 (プレビュー)
 
-Insider リスク分析を使用すると、インサイダー リスク ポリシーを構成することなく、組織内の潜在的なインサイダー リスクの評価を実行できます。 この評価は、組織が高いユーザー リスクの潜在的な領域を特定し、構成を検討できるインサイダー リスク管理ポリシーの種類と範囲を特定するのに役立ちます。 この評価は、既存のインサイダー リスク ポリシーの追加のライセンスまたは将来の最適化のニーズを判断するのにも役立ちます。
+Insider リスク分析では、インサイダー リスク ポリシーを構成することなく、組織内の潜在的なインサイダー リスクの評価を行うことができます。 この評価は、組織が高いユーザー リスクの潜在的領域を特定し、構成することを考えるべきインサイダー リスク マネジメント ポリシーの種類と範囲を特定するのに役立ちます。 この評価は、既存のインサイダー リスク ポリシーの追加のライセンスまたは将来の最適化のニーズを判断するのにも役立ちます。
 
 インサイダー リスク分析の詳細については、「Insider リスク管理の設定 [: Analytics」を参照してください](insider-risk-management-settings.md#analytics-preview)。
 
@@ -73,23 +73,23 @@ Insider リスク分析を使用すると、インサイダー リスク ポリ�
 
 以下のポリシー テンプレートから選択して、インサイダー リスク管理をすばやく開始できます。
 
-- [ユーザーを退出してデータを盗む](insider-risk-management-policies.md#data-theft-by-departing-users)
-- [一般的なデータ リーク](insider-risk-management-policies.md#general-data-leaks)
-- [優先ユーザーによるデータ 漏洩 (プレビュー)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [不満を持つユーザーによるデータ リーク (プレビュー)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [離職するユーザーによるデータ盗難](insider-risk-management-policies.md#data-theft-by-departing-users)
+- [一般的なデータ漏洩](insider-risk-management-policies.md#general-data-leaks)
+- [優先度の高いユーザーによるデータ漏洩 (プレビュー)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [不満を持つユーザーによるデータ漏洩 (プレビュー)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [一般的なセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [ユーザーの退出によるセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
+- [離職するユーザーによるセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [優先ユーザーによるセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [不満を持つユーザーによるセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-![Insider リスク管理ポリシー ダッシュボード](../media/insider-risk-policy-dashboard.png)
+![インサイダー リスク管理ポリシーのダッシュボード](../media/insider-risk-policy-dashboard.png)
 
 ### <a name="alerts"></a>アラート
 
 アラートは、ポリシー条件に一致し、アラート ダッシュボードに表示されるリスク インジケーターによって自動的 [に生成されます](insider-risk-management-alerts.md)。 このダッシュボードを使用すると、組織のレビュー、時間の間にアラートを開く、アラートの統計情報が必要なすべてのアラートを簡単に表示できます。 すべてのポリシー通知は、既存のアラートとアクションが必要な新しいアラートの状態をすばやく特定するために、次の情報と一緒に表示されます。
 
 - 状態
-- 重要度
+- 重大度
 - 検出された時間
 - ケース
 - ケースの状態
@@ -118,7 +118,7 @@ Insider リスク分析を使用すると、インサイダー リスク ポリ�
 
 さらに、新しい [監査ログ (プレビュー)](insider-risk-management-audit-log.md) を使用すると、インサイダー リスク管理機能で実行されたアクションについて情報を得られます。 このリソースを使用すると、1 つ以上のインサイダー リスク管理役割グループに割り当てられたユーザーが実行したアクションを個別に確認できます。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 ケースを調査した後、レビュー担当者は迅速に行動してケースを解決したり、組織内の他のリスク関係者と共同作業を行います。 ユーザーがポリシー条件に誤って違反した場合、組織に合わせてカスタマイズできる通知テンプレートから、簡単な通知通知をユーザーに送信できます。 これらの通知は、簡単なリマインダーとして機能する場合や、将来の危険な動作を防ぐためのトレーニングやガイダンスの更新をユーザーに指示する場合があります。 詳細については [、「Insider リスク管理通知テンプレート」を参照してください](insider-risk-management-notices.md)。
 
@@ -127,14 +127,14 @@ Insider リスク分析を使用すると、インサイダー リスク ポリ�
 - **Advanced eDiscovery**: ケースをエスカレートして調査を行うと、ケースのデータと管理を、Advanced eDiscoveryにMicrosoft 365。 Advanced eDiscovery は、組織の内部および外部の調査に対応するコンテンツを保持、収集、確認、分析、エクスポートするためのエンド ツー エンドのワークフローを提供します。 これにより、法務チームは訴訟ホールド通知ワークフロー全体を管理できます。 Advanced eDiscovery の詳細については、「[Advanced eDiscovery in Microsoft 365の概要](overview-ediscovery-20.md)」を参照してください。
 - **Office 365管理 API** の統合 (プレビュー) : Insider リスク管理は、セキュリティ情報とイベント管理 (SIEM) サービスへのアラート情報のエクスポートを、Office 365管理 API を介してサポートします。 プラットフォームでアラート情報にアクセスできると、組織のリスク プロセスに最も適しています。 管理 API を使用してアラート情報をエクスポートする方法Office 365を参照[してください](insider-risk-management-settings.md#export-alerts-preview)。
 
->[!NOTE]
->ServiceNow コネクタのプレビュー中のフィードバックとサポートに感謝します。 ServiceNow コネクタのプレビューを終了し、2020 年 11 月 30 日にインサイダー リスク管理のサポートを中止することを決定しました。 インサイダー リスク管理における ServiceNow 統合を顧客に提供する代替方法を積極的に評価しています。
+> [!NOTE]
+> ServiceNow コネクタのプレビュー中のフィードバックとサポートに感謝します。 ServiceNow コネクタのプレビューを終了し、2020 年 11 月 30 日にインサイダー リスク管理のサポートを中止することを決定しました。 インサイダー リスク管理における ServiceNow 統合を顧客に提供する代替方法を積極的に評価しています。
 
 ## <a name="scenarios"></a>シナリオ
 
 Insider リスク管理は、次の一般的なシナリオで、組織内の内部リスクを軽減するための検出、調査、およびアクションの実行に役立ちます。
 
-### <a name="data-theft-by-departing-users"></a>ユーザーを退出してデータを盗む
+### <a name="data-theft-by-departing-users"></a>離職するユーザーによるデータ盗難
 
 ユーザーが自発的に、または終了の結果として組織を離れる場合、企業、顧客、およびユーザーのデータが危険にさらされるという正当な懸念がしばしば生じます。 ユーザーは、プロジェクト データがプロプライエタリではないと無邪気に仮定したり、個人の利益のために会社のデータを取得したり、会社のポリシーや法的基準に違反したりしたがっている可能性があります。 ユーザー ポリシー テンプレートを削除して[](insider-risk-management-policies.md#policy-templates)データ盗難を使用する Insider リスク管理ポリシーは、通常、この種類の盗難に関連付けられているアクティビティを自動的に検出します。 このポリシーを使用すると、データ盗難に関連する疑わしいアクティビティに関するアラートを自動的に受信し、ユーザーを退出して適切な調査アクションを実行できます。 このポリシー テンプレートMicrosoft 365[組織の人事](import-hr-data.md)コネクタを構成する必要があります。
 
@@ -142,16 +142,16 @@ Insider リスク管理は、次の一般的なシナリオで、組織内の内
 
 ほとんどの場合、ユーザーは機密情報または機密情報を適切に処理するために最善を試みます。 ただし、ユーザーが間違いを犯したり、情報が組織外で誤って共有されたり、情報保護ポリシーに違反したりする場合があります。 その他の状況では、ユーザーは意図的に機密情報や機密情報を悪意のある意図と共有したり、個人の利益を得たりする可能性があります。 次のデータ 漏洩ポリシー テンプレートを使用して作成された Insider リスク管理ポリシーは、機密情報または機密情報の共有に関連する通常のアクティビティを自動的に検出します。
 
-- [一般的なデータ リーク](insider-risk-management-policies.md#general-data-leaks)
-- [優先ユーザーによるデータ 漏洩 (プレビュー)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [不満を持つユーザーによるデータ リーク (プレビュー)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [一般的なデータ漏洩](insider-risk-management-policies.md#general-data-leaks)
+- [優先度の高いユーザーによるデータ漏洩 (プレビュー)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [不満を持つユーザーによるデータ漏洩 (プレビュー)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>意図的または意図しないセキュリティ ポリシー違反 (プレビュー)
 
 ユーザーは通常、最新の職場でデバイスを管理する際に大きな制御を持っています。 このコントロールには、職務のパフォーマンスに必要なアプリケーションをインストールまたはアンインストールするためのアクセス許可や、デバイスのセキュリティ機能を一時的に無効にする機能が含まれる場合があります。 このアクティビティが不注意、偶発的、または悪意のある場合でも、この行為は組織にリスクを与える可能性があります。最小限に抑えるために識別して行動することが重要です。 これらのリスクの高いセキュリティ アクティビティを識別するために、次のインサイダー リスク管理セキュリティ ポリシー違反テンプレートはセキュリティ リスク インジケーターをスコア付けし、Microsoft Defender for Endpoint アラートを使用してセキュリティ関連のアクティビティに関する分析情報を提供します。
 
 - [一般的なセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [ユーザーの退出によるセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
+- [離職するユーザーによるセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [優先ユーザーによるセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [不満を持つユーザーによるセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
@@ -160,13 +160,13 @@ Insider リスク管理は、次の一般的なシナリオで、組織内の内
 組織内のユーザーは、自分の位置、機密情報へのアクセスレベル、またはリスク履歴に応じて、リスクのレベルが異なる場合があります。 この構造には、組織のエグゼクティブ リーダーシップ チームのメンバー、広範なデータおよびネットワーク アクセス権限を持つ IT 管理者、または危険なアクティビティの過去の履歴を持つユーザーが含まれる場合があります。 このような状況では、調査と迅速なアクションに対するアラートの表面化に役立つ、より詳細な検査とより積極的なリスク スコアリングが重要です。 これらの種類のユーザーの危険なアクティビティを特定するために、優先度の高いユーザー グループを作成し、次のポリシー テンプレートからポリシーを作成できます。
 
 - [優先ユーザーによるセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [優先ユーザーによるデータ 漏洩 (プレビュー)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [優先度の高いユーザーによるデータ漏洩 (プレビュー)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 
 ## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>不満を持つユーザーによるアクションと動作 (プレビュー)
 
 雇用ストレス イベントは、インサイダー リスクに関連するいくつかの方法でユーザーの行動に影響を与える可能性があります。 これらのストレスは、パフォーマンスレビューが不十分な場合、ポジション降格、またはパフォーマンス レビュー計画に配置されているユーザーである可能性があります。 ほとんどのユーザーは、これらのイベントに対して悪意を持って応答しないが、これらのアクションのストレスにより、通常の状況では通常は考慮されないアクションを実行するユーザーが生じかねない。 これらの種類のリスクの高いアクティビティを識別するために、次のインサイダー リスク管理ポリシー テンプレートは Microsoft 365 HR コネクタを使用し、雇用ストレスイベントの近くで発生する可能性がある行動に関連するリスク 指標のスコアリングを開始します。
 
-- [不満を持つユーザーによるデータ リーク (プレビュー)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [不満を持つユーザーによるデータ漏洩 (プレビュー)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [不満を持つユーザーによるセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
