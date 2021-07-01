@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5 または Microsoft Defender でシミュレートされたフィッシング攻撃とパスワード攻撃を実行して、Office 365プラン 2 組織に対して実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad86f77399cfa2a3a780d3fed7e483e3c11bc08d
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 1fa10d0d29b76d1631dd349d255b6c386557b5b8
+ms.sourcegitcommit: 2266c2da090bc9a6dc1e01dea07f26901d20d57b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082902"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53222672"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>攻撃シミュレーション トレーニングの使用を開始する
 
@@ -52,7 +52,7 @@ ms.locfileid: "53082902"
 
 - 攻撃シミュレーション トレーニングに対応する PowerShell コマンドレットはありません。
 
-- 攻撃シミュレーションとトレーニング関連データは、他の顧客データと一緒に保存され、Microsoft 365されます。 詳細については、「データ[の場所Microsoft 365を参照してください](../../enterprise/o365-data-locations.md)。 攻撃シミュレーションは、NAM、APC、EUR、IND、CAN、AUS、FRA、GBR、JPN、および KOR の領域で使用できます。
+- 攻撃シミュレーションとトレーニング関連データは、他の顧客データと一緒に保存され、Microsoft 365されます。 詳細については、「データ[の場所Microsoft 365を参照してください](../../enterprise/o365-data-locations.md)。 攻撃シミュレーションは、NAM、APC、EUR、IND、CAN、AUS、FRA、GBR、JPN、KOR、BRA、LAM、CHE の領域で使用できます。
 
 - 2021 年 6 月 15 日現在、攻撃シミュレーション のトレーニングは、GCC。 組織に Office 365 G5 GCC または Microsoft Defender for Office 365 (プラン 2) がある場合は、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングを使用して、この記事で説明したように、組織で現実的な攻撃シナリオを実行できます。 攻撃シミュレーションのトレーニングは、High 環境または DoD 環境GCCまだ利用できません。
 
