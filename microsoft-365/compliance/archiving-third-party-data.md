@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータを、ユーザーのメールボックスにインポートするMicrosoft 365します。
-ms.openlocfilehash: 6c15da7c21382f6ef286ec493ea3d696c02761f4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: acd7f9ee838308b277f725e5b7d80c69c6407b59
+ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227465"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53243961"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -86,6 +86,7 @@ Microsoft 365 でサード パーティ製のデータをアーカイブする�
 |[Reuters Dealing](archive-reutersdealing-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Reuters Eikon](archive-reuterseikon-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Reuters FX](archive-reutersfx-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[RingCentral](archive-ringcentral-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[Salesforce Chatter](archive-salesforcechatter-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[ServiceNow](archive-servicenow-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[Slack eDiscovery](archive-slack-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
@@ -201,14 +202,14 @@ Microsoft 365 でサード パーティのデータをアーカイブする前�
 
 |TeleMessage データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android Archiver | はい | いいえ | いいえ |
-|AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Enterprise Number Archiver | はい | いいえ | いいえ |
-|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
-|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
-|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|WhatsApp Archiver | はい | いいえ | いいえ |
+|Android Archiver | はい | 不要 | 不要 |
+|AT&T SMS/MMS Network Archiver | はい | 不要 | 不要 |
+|Bell SMS/MMS Network Archiver | はい | 不要 | 不要 |
+|Enterprise Number Archiver | はい | 不要 | 不要 |
+|O2 SMS と Voice Network Archiver | はい         | 不要 | 不要 |
+|TELUS SMS ネットワーク アーカイブ | はい | 不要 | 不要 |
+|Verizon SMS/MMS Network Archiver | はい | 不要 | 不要 |
+|WhatsApp Archiver | はい | 不要 | 不要 |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする
