@@ -1,7 +1,7 @@
 ---
 title: セキュリティ ポータルのMicrosoft 365プロファイル
 description: 組織内のデバイスのリスクと露出レベルを表示します。 過去および現在の脅威を分析し、最新の更新プログラムを使用してデバイスを保護します。
-keywords: セキュリティ、マルウェア、Microsoft 365、M365、Microsoft 365 Defender、セキュリティ センター、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Identity、デバイス ページ、デバイス プロファイル、コンピューター ページ、コンピューター プロファイル
+keywords: セキュリティ、マルウェア、Microsoft 365、M365、Microsoft 365 Defender、セキュリティ センター、Microsoft Defender for Endpoint、microsoft Defender for Office 365、Microsoft Defender for Identity、デバイス ページ、デバイス プロファイル、コンピューター ページ、コンピューター プロファイル
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 8e2788fd9163a27b41bd3788facf5fc9623b0543
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 47b25ba541264d79216748753e9f41fb7435fc10
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935667"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229481"
 ---
 # <a name="device-profile-page"></a>[デバイス プロファイル] ページ
 
@@ -81,7 +81,7 @@ ms.locfileid: "51935667"
 * **ウイルス対策スキャンを実行** する - Windows Defender ウイルス対策定義を更新し、すぐにウイルス対策スキャンを実行します。 [クイック スキャン] または [フル スキャン] の間で選択します。
 * **調査パッケージの収集** - デバイスに関する情報を収集します。 調査が完了したら、ダウンロードできます。
 * **ライブ応答セッションの開始** - デバイスにリモート シェルを読み込んで、詳細なセキュリティ [調査を行います](/microsoft-365/security/defender-endpoint/live-response)。
-* **自動調査の開始** - 脅威 [を自動的に調査および修復します](../office-365-security/office-365-air.md)。 このページから自動調査を手動で実行することもできますが、特定のアラート[](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies)ポリシーによって独自に自動調査がトリガーされます。
+* **自動調査の開始** - 脅威 [を自動的に調査および修復します](../office-365-security/office-365-air.md)。 このページから自動調査を手動で実行することもできますが、特定のアラート[](../../compliance/alert-policies.md#default-alert-policies)ポリシーによって独自に自動調査がトリガーされます。
 * **アクション センター** - 現在実行中の応答アクションに関する情報を表示します。
 
 ## <a name="tabs-section"></a>[タブ] セクション
@@ -180,7 +180,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 ## <a name="related-topics"></a>関連項目
 
-* [Microsoft 365Defender の概要](microsoft-365-defender.md)
+* [Microsoft 365 Defender概要](microsoft-365-defender.md)
 * [Microsoft 365 Defender を有効にする](m365d-enable.md)
 * [ライブ応答を使用して、デバイス上のエンティティを調査する](../defender-endpoint/live-response.md)
 * [Office 365 での自動調査および対応 (AIR)](../office-365-security/office-365-air.md)

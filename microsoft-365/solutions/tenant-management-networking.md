@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: テナントへのネットワーク アクセスを最適化Microsoft 365します。
-ms.openlocfilehash: 5eac0793d2afc924a919671ffa105362ea1866d9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: cf9591d2ec027c42f5ef9e7abac6dc9b06744a81
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407194"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229181"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>手順 2. エンタープライズ テナント向けMicrosoft 365最適なネットワーク
 
@@ -31,7 +31,7 @@ Microsoft 365には、Teams や Exchange Online、Microsoft Intune などのク�
 
 - オンプレミスユーザーと Microsoft グローバル ネットワークに最も近い場所との間のパスを最適化します。
 - リモート アクセス VPN ソリューションを使用しているリモート ユーザーの Microsoft Global Network へのアクセスを最適化します。
-- ネットワーク インサイトを使用して、オフィスの場所のネットワーク境界を設計します。
+- [ネットワーク] インサイトを使用して、オフィスの場所のネットワーク境界を設計します。
 - サイトでホストされている特定のアセットへのアクセスSharePoint、Office 365 CDN。
 - エンドポイントの一覧を使用して信頼Microsoft 365の処理をバイパスし、変更が加わるとリストの更新を自動化するプロキシおよびネットワーク エッジ デバイスを構成します。
 
@@ -112,10 +112,10 @@ Microsoft 365 クラウドリソースへのアクセスを最適化するには
 - [フロント ドアからのダウンロードSharePoint速度が低い](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
 - [中国ユーザーの最適なネットワーク出力](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
->[!IMPORTANT]
->管理センターのネットワークインサイト、パフォーマンスの推奨事項、評価Microsoft 365現在プレビュー状態です。 この機能は、Microsoft 365プログラムに登録されているテナントでのみ使用できます。
+> [!IMPORTANT]
+> ネットワーク 分析情報、パフォーマンスに関する推奨事項、および評価は、Microsoft 365 管理現在プレビュー状態です。 この機能は、Microsoft 365プログラムに登録されているテナントでのみ使用できます。
 
-詳細については、「ネットワーク インサイト[のMicrosoft 365を参照してください](../enterprise/office-365-network-mac-perf-insights.md)。
+詳細については、「ネットワーク ネットワーク[Microsoft 365」をインサイト。](../enterprise/office-365-network-mac-perf-insights.md)
 
 ## <a name="sharepoint-performance-with-the-office-365-cdn"></a>SharePointを使用してパフォーマンスをOffice 365 CDN
 
@@ -152,7 +152,7 @@ PowerShell、Python、または他の言語を使用して、時間の間にエ�
 - すべてのブランチ オフィスにインターネット接続を追加し、ネットワーク ヘアピンを排除して、オンプレミス ユーザーのネットワーク パフォーマンスを最適化する方法。
 - 継続的な更新プログラム (エンタープライズ ネットワークに最適) を含む、クライアント ベースの PAC ファイルとネットワーク デバイスとサービスに対して、信頼できるエンドポイントの自動登録を実装する方法。
 - リモート ワーカーからオンプレミス リソースへのアクセスをサポートする方法。
-- ネットワーク インサイトの使い方
+- ネットワーク サーバーを使用するインサイト
 - アプリケーションを展開するOffice 365 CDN。
 
 最適なネットワークを持つエンタープライズ組織とそのテナントの例を次に示します。

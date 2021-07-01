@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 のサポートは 2021 年 4 月 13 日に終了します。 この記事をガイドとして使用して、Project Onlineまたは新しいバージョンの Projectサーバーにアップグレードします。
-ms.openlocfilehash: f57fa15da3cabc4b326a52359a29c652fcbe9e7f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 0ca37d00ee670a8a3f7c83d75864b5af19587951
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842232"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229757"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 のサポート終了のロードマップ
 
@@ -84,11 +84,11 @@ Project Standard 2010 から移行する場合は、新しいバージョンの 
 
 同様に、Project Professional 2010 から移行する場合は、新しいバージョン (Project Professional 2019 または Project Professional 2016) に移行できます。 繰り返しますが、可能な場合は最新バージョンに移動します。 Project Professional を使用して Project Server に接続する場合は、使用する Project Professional サーバーのバージョンに接続する Project Project Professional のバージョンに移行してください。
 
-Project Professional 2010 ユーザーは、Project Online デスクトップ クライアント (サブスクリプション ベースのバージョンの Project Professional 2019) にも移行できます。 プラン 3 とプラン 5 Projectプラン 5 Projectに含まれています。
+Project Professional 2010 ユーザーは、Project Online デスクトップ クライアント (サブスクリプション ベースのバージョンの Project Professional 2019) にも移行できます。 これは、サブスクリプションとProject Plan 3にProject Plan 5されます。
 
 #### <a name="move-to-an-online-solution"></a>オンライン ソリューションに移動する
 
-2010 年または 2010 Project Professional 2010 Project Standardサブスクリプション ベースのオンライン Projectに移行できます。 プラン 3 Projectプラン 5 には、Project Onlineと最新のクラウド サービスが含Project[が含まれます](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1)。 どちらも、探索する価値のある新機能と利点を提供します。
+2010 年または 2010 Project Professional 2010 Project Standardサブスクリプション ベースのオンライン Projectに移行できます。 このProject Plan 3プラン 5 には、Project Onlineと最新のクラウド サービスが含まれます。Project[をサポートします](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1)。 どちらも、探索する価値のある新機能と利点を提供します。
 
 機能とライセンスの詳細については、「サービスの説明Microsoft Project[参照してください](/office365/servicedescriptions/project-online-service-description/project-online-service-description)。
 
@@ -157,11 +157,11 @@ Project Server 2010 から Project Server 2013 へのアップグレードの詳
 
 - [サーバー 2013 のアップグレードProject、](/project/what-s-new-in-project-server-2013-upgrade)このバージョンの重要な変更点について説明します。
 
-   - サーバー 2013 への一Projectはありません。 データベース接続方法は、サーバー 2010 からサーバー 2013 へのアップグレードProject唯一Project方法です。
+  - サーバー 2013 への一Projectはありません。 データベース接続方法は、サーバー 2010 からサーバー 2013 へのアップグレードProject唯一Project方法です。
 
-   - アップグレード プロセスは、Project Server 2010 データを Project Server 2013 形式に変換するだけでなく、4 つの Project Server 2010 データベースを単一の Project Web App データベースに統合します。
+  - アップグレード プロセスは、Project Server 2010 データを Project Server 2013 形式に変換するだけでなく、4 つの Project Server 2010 データベースを単一の Project Web App データベースに統合します。
 
-   - サーバー 2013 SharePointサーバー 2013 Projectサーバー 2013 の両方が、以前のバージョンからクレーム ベース認証に変更されました。 従来の認証を使用している場合は、アップグレード時にこれを考慮する必要があります。 詳細については、「[SharePoint 2013 でクラシックモードからクレームベース認証に移行する]( /sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)」を参照してください。
+  - サーバー 2013 SharePointサーバー 2013 Projectサーバー 2013 の両方が、以前のバージョンからクレーム ベース認証に変更されました。 従来の認証を使用している場合は、アップグレード時にこれを考慮する必要があります。 詳細については、「[SharePoint 2013 でクラシックモードからクレームベース認証に移行する](/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)」を参照してください。
 
 主なリソース:
 
@@ -213,9 +213,9 @@ Project Server 2016 から Project Server 2019 へのアップグレードに必
 
 - [サーバー 2019 Projectについて知る必要がある点](/project/plan-for-upgrade-to-project-server-2016)<br/><br/>このバージョンへのアップグレードに関する重要な変更点については、以下を参照してください。
 
-   - アップグレード プロセスでは、データをデータ データベースから Project Server 2016コンテンツ データベースSharePoint Server 2019移行します。  Projectサーバー 2019 は、サーバー ファームProjectサーバー データベースをSharePointしません。
+  - アップグレード プロセスでは、データをデータ データベースから Project Server 2016コンテンツ データベースSharePoint Server 2019移行します。  Projectサーバー 2019 は、サーバー ファームProjectサーバー データベースをSharePointしません。
 
-   - アップグレード後、アップグレードの変更点に注意Project Web App。  詳細については[、「What's new in Project Server 2019」を参照してください](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)。
+  - アップグレード後、アップグレードの変更点に注意Project Web App。  詳細については[、「What's new in Project Server 2019」を参照してください](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)。
 
 **その他のリソース**:
 

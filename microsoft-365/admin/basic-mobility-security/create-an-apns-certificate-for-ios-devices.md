@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Basic Mobility and Security で iOS デバイスを管理します。
-ms.openlocfilehash: 85baef2defa79255d560f848e57120353fd4fa2e
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 84f3589593ef26325397f5b6e90d5b21662d2352
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877082"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228245"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>iOS デバイスの APN 証明書を作成する
 
@@ -27,7 +27,7 @@ Basic Mobility and Security で iPad や iPhone などの iOS デバイスを管
 
 1. グローバル管理者アカウントMicrosoft 365にサインインします。
 
-2. ブラウザーで、と入力します  [https://protection.office.com](https://protection.office.com/) 。
+2. ブラウザーで、と入力します  <https://protection.office.com/> 。
 
 3. [ **データ損失防止デバイス**   >  **の管理] を** 選択し **、[iOS デバイスの APNs 証明書] を選択します**。
 
@@ -35,23 +35,23 @@ Basic Mobility and Security で iPad や iPhone などの iOS デバイスを管
 
 5. [CSR ファイルをダウンロードする] を選択し、覚えているコンピューターのどこかに証明書署名要求を保存します。 [次  **へ] を選択します**。
 
-6. [APNs 証明書の作成] ページで、次の設定を行います。  
+6. [APNs 証明書の作成] ページで、次の設定を行います。
 
     1. [Apple APNS ポータル] を選択して、Apple プッシュ証明書ポータルを開きます。
 
     2. Sign in with an Apple ID.
 
-    >[!IMPORTANT]
-    >Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
+       > [!IMPORTANT]
+       > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
     3. [  **証明書の作成] を**   選択し、利用規約に同意します。
 
     4. コンピューターにダウンロードした証明書署名要求を [証明書] から参照し、[Microsoft 365] を **アップロード。**
 
-        Apple プッシュ証明書ポータルによって作成された APNs 証明書をコンピューターにダウンロードします。
+       Apple プッシュ証明書ポータルによって作成された APNs 証明書をコンピューターにダウンロードします。
 
-       >[!TIP]
-       >If you're having trouble downloading the certificate, refresh your browser.
+       > [!TIP]
+       > If you're having trouble downloading the certificate, refresh your browser.
 
 7. [次へ] にMicrosoft 365し、[**次** へ] を   選択して[APNS 証明書]  **アップロードを取得**   します。
 

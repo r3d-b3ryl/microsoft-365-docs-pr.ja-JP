@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: c94b387bbd73e2c4f9b3de243131ae023ddb4cb8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: b424b4f611f0553de4b7129d2c0b63cefbdeeab3
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222527"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229361"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>ID とそれ以降の 1 つのアーキテクトの視点
 
@@ -50,7 +50,7 @@ ms.locfileid: "51222527"
 悲しいかな、言語は正確なツールではない。 多くの場合、同じ単語を使用して、異なる概念や異なる単語を意味し、同じ概念を意味します。 以下の図を使用して、いくつかのベースライン用語と "階層モデル" を確立します。
 <br><br>
 
-![テナント、サブスクリプション、サービス、およびデータの図](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)  
+![テナント、サブスクリプション、サービス、およびデータの図](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)
 
 <br>
 
@@ -98,7 +98,7 @@ XYZ SaaS は Just-in-Time (JIT) プロビジョニングをサポートしてい
 
 [パスワード ハッシュ同期](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization) (PHS) とパススルー [認証](/azure/active-directory/hybrid/how-to-connect-pta-how-it-works) (PTA) vs. [フェデレーション](/azure/active-directory/hybrid/how-to-connect-fed-compatibility)。
 
-通常、フェデレーションに関する熱心 [な議論](/azure/active-directory/hybrid/choose-ad-authn) があります。 単純な方が通常は優れた方法なので、そうしない理由がない限り PHS を使用します。 また、同じテナント内の DNS ドメインごとに異なる認証方法を構成できます。 
+通常、フェデレーションに関する熱心 [な議論](/azure/active-directory/hybrid/choose-ad-authn) があります。 単純な方が通常は優れた方法なので、そうしない理由がない限り PHS を使用します。 また、同じテナント内の DNS ドメインごとに異なる認証方法を構成できます。
 
 一部のお客様は、主に次の場合にフェデレーション + PHS を有効にしています。
 
@@ -132,14 +132,14 @@ Azure ADのポリシー エンジンは、条件付き [アクセス ポリシ�
 
 この拡張された承認定義に同意する場合は、追加のソリューションを実装する必要があります。 実装するソリューションは、ポリシーを動的に設定する方法と、優先度を設定する脅威によって異なります。 このようなシステムの例を次に示します。
 
-- [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
+- [Azure AD Identity Protection](/azure/active-directory/identity-protection/)
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
+- [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
-- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
+- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)
 - [Microsoft Intune](/mem/intune/)
-- [Microsoft Information Protection](../compliance/information-protection.md?view=o365-worldwide) (MIP)
+- [Microsoft Information Protection](../compliance/information-protection.md) (MIP)
 - [Azure Sentinel](/azure/sentinel/)
 
 もちろん、Azure ADに加えて、さまざまなサービスやアプリケーションには独自の承認モデルがあります。 これらのいくつかについては、後の「委任」セクションで説明します。
@@ -154,11 +154,11 @@ Azure ADには、詳細 [な監査およびレポート機能](/azure/active-dir
 
 ![ファイルを電子メールに添付する](../media/solutions-architecture-center/modern-attachments.png)
 
-このクライアントOutlook見て、このエクスペリエンスの一部として"接続" されている多くのサービスを確認Exchange。 これには、Azure AD、Microsoft Search、Apps、Profile、コンプライアンス、およびグループOffice 365含まれます。 
+このクライアントOutlook見て、このエクスペリエンスの一部として"接続" されている多くのサービスを確認Exchange。 これには、Azure AD、Microsoft Search、アプリ、プロファイル、コンプライアンス、およびグループOffice 365含まれます。
 
 ![Outlook付きインターフェイス](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
 
-今後の機能[Microsoft 流動フレームワーク](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268)プレビューの詳細については、この記事を参照してください。 プレビューで、会話の読み取りと返信をTeamsで直接Outlook。 実際、クライアント[Teams、](https://products.office.com/microsoft-teams/download-app)この戦略のより顕著な例の 1 つです。 
+今後の機能[Microsoft 流動フレームワーク](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268)プレビューの詳細については、この記事を参照してください。 プレビューで、会話の読み取りと返信をTeamsで直接Outlook。 実際、クライアント[Teams、](https://products.office.com/microsoft-teams/download-app)この戦略のより顕著な例の 1 つです。
 
 全体的に、Microsoft クラウド内のサービスとサービスの間に明確Office 365線を引くのは難しくなってきている。 1 つのコンポーネントを使用する場合でも、すべての機能に対して完全なイノベーションの恩恵を受け、お客様にとって大きなメリットと見なしています。 かなりクールで、多くのお客様に大きな影響を与えています。
 
@@ -182,10 +182,10 @@ Azure ADには、詳細 [な監査およびレポート機能](/azure/active-dir
 
 - 異なるエンティティ間の簡単なコラボレーションが必要ではなく、強力な管理および他の分離のニーズがある保持型の会社構造。
 - 買収後、2 つのエンティティを分離するビジネス上の決定が行われた。
-- 顧客の実稼働環境を変更しない、お客様の環境のシミュレーション。 
+- 顧客の実稼働環境を変更しない、お客様の環境のシミュレーション。
 - お客様向けソフトウェアの開発。
 
-これらのマルチテナントシナリオでは、多くの場合、テナント間で構成を同じにするか、構成の変更とドリフトについて報告する必要があります。 これは、多くの場合、手動による変更からコードとしての構成への移行を意味します。 Microsoft Premiere サポートは、このパブリック IP に基づいて、これらの種類の要件に関するワークショップを提供します [https://Microsoft365dsc.com](https://Microsoft365dsc.com) 。
+これらのマルチテナントシナリオでは、多くの場合、テナント間で構成を同じにするか、構成の変更とドリフトについて報告する必要があります。 これは、多くの場合、手動による変更からコードとしての構成への移行を意味します。 Microsoft Premiere サポートは、このパブリック IP に基づいて、これらの種類の要件に関するワークショップを提供します <https://Microsoft365dsc.com> 。
 
 ### <a name="multi-geo"></a>Multi-Geo
 
@@ -195,7 +195,7 @@ Azure ADには、詳細 [な監査およびレポート機能](/azure/active-dir
 - GDPR 準拠の [ソリューションではありません](https://www.microsoft.com/trust-center/privacy/gdpr-overview)。 GDPR は、データ主権やストレージの場所に焦点を当てない。 その他のコンプライアンス フレームワークがあります。
 - 管理の委任 (以下を参照) や情報バリア [は解決しません](../compliance/information-barriers.md)。
 - マルチテナントと同じではなく、追加のユーザー プロビジョニング [ワークフローが](https://github.com/MicrosoftDocs/azure-docs-pr/blob/master/articles/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation.md) 必要です。
-- テナント [(Azure アカウント)](../enterprise/moving-data-to-new-datacenter-geos.md) を別ADに移動する必要があります。 
+- テナント [(Azure アカウント)](../enterprise/moving-data-to-new-datacenter-geos.md) を別ADに移動する必要があります。
 
 ## <a name="delegation-of-administration"></a>管理の委任
 
@@ -203,15 +203,15 @@ Azure ADには、詳細 [な監査およびレポート機能](/azure/active-dir
 
 ### <a name="azure-ad-and-microsoft-365-admin-centers"></a>Azure ADおよびMicrosoft 365管理センター
 
-組み込みの役割の長く成長 [しているリストがあります](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 各役割は、特定のアクションを実行するためにグループ化された役割のアクセス許可の一覧で構成されます。 これらのアクセス許可は、各ロール内の [説明] タブで確認できます。 または、管理者センターで、より人間が読み取り可能なMicrosoft 365表示できます。 組み込みロールの定義は変更できません。 一般的に、これらを 3 つのカテゴリにグループ化します。
+組み込みの役割の長く成長 [しているリストがあります](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 各役割は、特定のアクションを実行するためにグループ化された役割のアクセス許可の一覧で構成されます。 これらのアクセス許可は、各ロール内の [説明] タブで確認できます。 または、これらのより人間が読み取り可能なバージョンを、Microsoft 365 管理できます。 組み込みロールの定義は変更できません。 一般的に、これらを 3 つのカテゴリにグループ化します。
 
-- **グローバル管理者**: この "すべての強力な"[](../enterprise/protect-your-global-administrator-accounts.md)役割は、他のシステムと同様に高度に保護する必要があります。 一般的な推奨事項には、永続的な割り当てなしと Azure AD Privileged Identity Management (PIM) の使用が含まれます。強力な認証。などなど。 興味深いことに、この役割は既定ではすべてのアクセス権を与えるという意味ではないものです。 通常、コンプライアンス アクセスと Azure アクセスについては、後で説明します。 ただし、この役割では、テナント内の他のサービスへのアクセスを常に割り当てできます。 
+- **グローバル管理者**: この "すべての強力な"[](../enterprise/protect-your-global-administrator-accounts.md)役割は、他のシステムと同様に高度に保護する必要があります。 一般的な推奨事項には、永続的な割り当てなしと Azure AD Privileged Identity Management (PIM) の使用が含まれます。強力な認証。などなど。 興味深いことに、この役割は既定ではすべてのアクセス権を与えるという意味ではないものです。 通常、コンプライアンス アクセスと Azure アクセスについては、後で説明します。 ただし、この役割では、テナント内の他のサービスへのアクセスを常に割り当てできます。
 - **特定のサービス** 管理者: 一部のサービス (Exchange、SharePoint、Power BI など) は、Azure AD から高レベルの管理役割を使用します。 これは、すべてのサービスで一貫しているのではないし、後で説明するサービス固有の役割が多い。
 - **機能**: 特定の操作 (ゲスト招待者など) に焦点を当てたロールの長い (および成長している) リストがあります。 定期的に、これらの多くが顧客のニーズに基づいて追加されます。
 
 すべてを委任できません (ただし、ギャップは減少しています)、グローバル管理者の役割を使用する必要がある場合があります。 コードとしての構成と自動化は、この役割のユーザー メンバーシップではなく考慮する必要があります。
 
-**注**: Microsoft 365管理センターには、ユーザーフレンドリーなインターフェイスがありますが、Azure 管理者エクスペリエンスと比較して機能のサブセットADがあります。 どちらのポータルも同じ Azure ADロールを使用します。そのため、変更は同じ場所で行っています。 ヒント: すべての Azure を煩雑にせずに ID 管理に重点を置いて管理 UI を使用する場合は、 を使用します [https://aad.portal.azure.com](https://aad.portal.azure.com) 。 
+**注**: このMicrosoft 365 管理センターインターフェイスはユーザーフレンドリーですが、Azure 管理者エクスペリエンスと比較して機能のサブセットADがあります。 どちらのポータルも同じ Azure ADロールを使用します。そのため、変更は同じ場所で行っています。 ヒント: すべての Azure を煩雑にせずに ID 管理に重点を置いて管理 UI を使用する場合は、 を使用します <https://aad.portal.azure.com> 。
 
 名前には何がありますか? 役割の名前を前提としない。 言語は非常に正確なツールではありません。 目標は、必要な役割を確認する前に委任する必要がある操作を定義する必要があります。 "Security Reader" ロールに誰かを追加しても、すべてのユーザーにセキュリティ設定が表示されるという問題はありません。
 
@@ -221,7 +221,7 @@ Azure ADには、詳細 [な監査およびレポート機能](/azure/active-dir
 
 今日では、これらのすべてのロールに直接メンバーシップ (または Azure の PIM を使用する場合は動的割 [り当て) がADされています](/azure/active-directory/privileged-identity-management/)。 つまり、お客様は Azure ADでこれらを直接管理する必要があります。これらはセキュリティ グループ のメンバーシップに基づくものにすることはできません。 昇格された権限で実行する必要がある場合、これらを管理するためのスクリプトを作成するファンではありません。 一般に、ServiceNow のようなプロセス システムとの API 統合や、Saviynt のようなパートナー ガバナンス ツールの使用をお勧めします。 この問題に時間の間に取り組むエンジニアリング作業が行なっています。
 
-Azure AD [PIM について](/azure/active-directory/privileged-identity-management/) 何度か説明しました。 オンプレミスコントロールに対応Microsoft Identity Manager (MIM) 特権アクセス[管理](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)(PAM) ソリューションがあります。 また、Privileged Access [Workstations](/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) と [Azure ADを参照してください](/azure/active-directory/governance/identity-governance-overview)。 また、さまざまなサード パーティ製ツールもあります。このツールを使用すると、Just-in-time、Just-enough、および動的な役割昇格を有効にできます。 これは通常、環境を保護するためのより大きな議論の一部です。 
+Azure AD [PIM について](/azure/active-directory/privileged-identity-management/) 何度か説明しました。 オンプレミスコントロールに対応Microsoft Identity Manager (MIM) 特権アクセス[管理](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)(PAM) ソリューションがあります。 また、Privileged Access [Workstations](/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) と [Azure ADを参照してください](/azure/active-directory/governance/identity-governance-overview)。 また、さまざまなサード パーティ製ツールもあります。このツールを使用すると、Just-in-time、Just-enough、および動的な役割昇格を有効にできます。 これは通常、環境を保護するためのより大きな議論の一部です。
 
 場合によっては、外部ユーザーを役割に追加するシナリオが呼び出される場合があります (上記の「マルチテナント」セクションを参照)。 これはうまく動作します。 [Azure AD B2B は](/azure/active-directory/b2b/) 、おそらく別の記事で、顧客を説明する大きな楽しいトピックです。
 
@@ -231,7 +231,7 @@ Azure AD [PIM について](/azure/active-directory/privileged-identity-manageme
 
 ある意味では、これらは役割グループ モデルExchange進化しています。 ただし、Exchange Online独自の役割[グループ管理インターフェイスがあります](/exchange/permissions-exo)。 Exchange Online の一部の役割グループは、Azure AD またはセキュリティ & コンプライアンス センターからロックおよび管理されますが、同じ名前または類似の名前を持ち、Exchange Online で管理される役割グループもあります (混乱を招く)。 管理にスコープが必要Exchange Online場合を限り、ユーザー インターフェイスを使用Exchange勧めします。
 
-カスタム ロールを作成できない。 役割は、Microsoft によって作成されたサービスによって定義され、新しいサービスが導入されるにつれて増加します。 これは概念的には、Azure [のアプリケーションで定義](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) されたロールと似AD。 新しいサービスを有効にすると、多くの場合、新しい役割グループを作成して、アクセス権を付与または委任する必要があります (インサイダー リスク [管理など](../compliance/insider-risk-management-configure.md?view=o365-worldwide))。
+カスタム ロールを作成できない。 役割は、Microsoft によって作成されたサービスによって定義され、新しいサービスが導入されるにつれて増加します。 これは概念的には、Azure [のアプリケーションで定義](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) されたロールと似AD。 新しいサービスを有効にすると、多くの場合、新しい役割グループを作成して、アクセス権を付与または委任する必要があります (インサイダー リスク [管理など](../compliance/insider-risk-management-configure.md))。
 
 また、これらの役割グループには直接メンバーシップが必要であり、Azure の役割グループADできません。 残念ながら、現在、これらの役割グループは、AZURE および PIM ADされていません。 Azure ADロールと同様に、API や Saviynt のようなパートナー ガバナンス製品を使用してこれらの管理を推奨する傾向があります。
 
@@ -243,31 +243,37 @@ Azure AD [PIM について](/azure/active-directory/privileged-identity-manageme
 
 前に述べたように、多くのお客様は、より詳細な委任モデルの実現を探しています。 一般的な例: "Division X のユーザーと場所の XYZ サービスのみを管理する" (または他のディメンション)。 これを行う機能は、各サービスによって異なりますが、サービスと機能間で一貫性が保たれたものではありません。 さらに、各サービスには、個別の一意の RBAC モデルが用意されている場合があります。 これらすべてについて話し合う代わりに (永遠に時間がかかる)、各サービスに関連するリンクを追加しています。 これは完全なリストではありません。
 
-- **Exchange Online** - [https://docs.microsoft.com/exchange/permissions-exo/permissions-exo](/exchange/permissions-exo/permissions-exo) 
-- **SharePointオンライン** - [https://docs.microsoft.com/sharepoint/manage-site-collection-administrators](/sharepoint/manage-site-collection-administrators) 
-- **Microsoft Teams**  - [https://docs.microsoft.com/microsoftteams/itadmin-readiness](/microsoftteams/itadmin-readiness)
-- **電子情報開示** - [https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions](../compliance/index.yml) 
-  + **アクセス許可フィルター**  - [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search](../compliance/index.yml)
-  + **コンプライアンスの境界**  - [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries](../compliance/set-up-compliance-boundaries.md)
-  + **Advanced eDiscovery**  - [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20](../compliance/overview-ediscovery-20.md)
-- **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](/yammer/manage-yammer-users/manage-yammer-admins) 
-- **複数地域** - [https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin](../enterprise/add-a-sharepoint-geo-admin.md) 
-- **Dynamics 365** – [https://docs.microsoft.com/dynamics365/](/dynamics365/) <br>
-  注: このリンクはドキュメントのルートです。 管理/委任モデルには、バリエーションを持つ複数の種類のサービスがあります。
-- **Power Platform**  - [https://docs.microsoft.com/power-platform/admin/admin-documentation](/power-platform/admin/admin-documentation)
-  + **Power Apps**  - [https://docs.microsoft.com/power-platform/admin/wp-security](/power-platform/admin/wp-security) <br>
-    注: 管理者/委任モデルには、バリエーションを持つ複数の種類があります。
-  + **Power Automate**  - [https://docs.microsoft.com/power-automate/environments-overview-admin](/power-automate/environments-overview-admin)
-  + **Power BI**  - [https://docs.microsoft.com/power-bi/service-admin-governance](/power-bi/service-admin-governance) <br>
-注: データ プラットフォームのセキュリティと委任 (Power BIコンポーネント) は複雑な領域です。
-- **MEM/Intune**  - [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](/mem/intune/fundamentals/role-based-access-control)
-- **エンドポイント用 Microsoft Defender**  - [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/defender/m365d-permissions.md)
-- **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](/cloud-app-security/manage-admins)
-- **Stream**  - [https://docs.microsoft.com/stream/assign-administrator-user-role](/stream/assign-administrator-user-role)
-- **情報バリア**  - [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](../compliance/information-barriers.md)
+- **Exchange Online** - (/exchange/permissions-exo/permissions-exo)
+- **SharePoint -** (/sharepoint/manage-site-collection-administrators)
+- **Microsoft Teams** - (/microsoftteams/itadmin-readiness)
+- **電子情報開示** - (../compliance/index.yml)
+  - **アクセス許可フィルター** - (../compliance/index.yml)
+  - **コンプライアンスの境界** - (../compliance/set-up-compliance-boundaries.md)
+  - **Advanced eDiscovery** - (../compliance/overview-ediscovery-20.md)
+- **Yammer** - (/yammer/manage-yammer-users/manage-yammer-admins)
+- **複数地域** - (../enterprise/add-a-sharepoint-geo-admin.md)
+- **Dynamics 365** – (/dynamics365/)
 
-残りの部分については、ドキュメント内の検索は最近本当に良いです - [https://docs.microsoft.com/](../compliance/information-barriers.md) . 
+  注: このリンクはドキュメントのルートです。 管理/委任モデルには、バリエーションを持つ複数の種類のサービスがあります。
+
+- **Power Platform** - (/power-platform/admin/admin-documentation)
+  - **Power Apps** - (/power-platform/admin/wp-security)
+
+    注: 管理者/委任モデルには、バリエーションを持つ複数の種類があります。
+
+  - **Power Automate** - (/power-automate/environments-overview-admin)
+  - **Power BI** - (/power-bi/service-admin-governance)
+
+    注: データ プラットフォームのセキュリティと委任 (Power BIコンポーネント) は複雑な領域です。
+
+- **MEM/Intune** - (/mem/intune/fundamentals/role-based-access-control)
+- **エンドポイント用 Microsoft Defender** - (/windows/security/threat-protection/microsoft-defender-atp/user-roles)
+- **Microsoft 365 Defender** - (../security/defender/m365d-permissions.md)
+- **Microsoft Cloud App Security** - (/cloud-app-security/manage-admins)
+- **Stream** - (/stream/assign-administrator-user-role)
+- **情報バリア** - (../compliance/information-barriers.md)
+
+残りの部分については、ドキュメント内の検索は最近本当に良いです - <https://docs.microsoft.com/> .
 
 ### <a name="activity-logs"></a>アクティビティ ログ
 
@@ -278,37 +284,37 @@ Office 365監査ログ[が統合されています](../compliance/search-the-aud
 - [Azure AD](/azure/azure-monitor/platform/diagnostic-settings) (ユーザーに関連しないアクティビティOffice 365)
 - [Exchangeメッセージ追跡](/powershell/module/exchange/get-messagetrace)
 - 上記で説明した脅威/UEBA システム (Azure AD Identity Protection、Microsoft Cloud App Security、Microsoft Defender for Endpoint など)
-- [Microsoft の情報保護](../compliance/data-classification-activity-explorer.md?view=o365-worldwide)
+- [Microsoft の情報保護](../compliance/data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
-まず、セキュリティとコンプライアンス プログラムに必要なすべてのログ ソースを特定することが重要です。 また、ログごとにオンライン保持制限が異なる点にも注意してください。 
+まず、セキュリティとコンプライアンス プログラムに必要なすべてのログ ソースを特定することが重要です。 また、ログごとにオンライン保持制限が異なる点にも注意してください。
 
-管理者委任の観点から見ると、Microsoft 365アクティビティ ログには組み込みの RBAC モデルが含まれます。 ログを表示するアクセス許可がある場合は、ログ内のすべての情報を表示できます。 顧客の要件の一般的な例は、「EU ユーザーに対してのみアクティビティをクエリする」(または他のディメンション)です。 この要件を実現するには、ログを別のサービスに転送する必要があります。 Microsoft クラウドでは、Azure [Sentinel](/azure/sentinel/overview) または Log Analytics に転送 [することをお勧めします](/azure/azure-monitor/learn/quick-create-workspace)。 
+管理者委任の観点から見ると、Microsoft 365アクティビティ ログには組み込みの RBAC モデルが含まれます。 ログを表示するアクセス許可がある場合は、ログ内のすべての情報を表示できます。 顧客の要件の一般的な例は、「EU ユーザーに対してのみアクティビティをクエリする」(または他のディメンション)です。 この要件を実現するには、ログを別のサービスに転送する必要があります。 Microsoft クラウドでは、Azure [Sentinel](/azure/sentinel/overview) または Log Analytics に転送 [することをお勧めします](/azure/azure-monitor/learn/quick-create-workspace)。
 
 高レベルの図:
 
-![セキュリティおよびコンプライアンス プログラムのログ ソースの図](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![セキュリティおよびコンプライアンス プログラムのログ ソースの図](../media/solutions-architecture-center/identity-beyond-illustration-4.png)
 
 上の図は、イベント ハブや Azure Log Analytics にログを送信する組み込Azure Storageを表しています。 一部のシステムには、このアウトオブザボックスがまだ含まれる場合があります。 ただし、これらのログを同じリポジトリに送信する他の方法があります。 たとえば[、「Azure Sentinel を使用してTeams保護する」を参照してください](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761)。
 
 すべてのログを 1 つの保存場所に組み合わせるには、相互相関、カスタム保持時間、RBAC モデルをサポートするために必要なデータの拡張など、追加の利点があります。 このストレージ システムにデータが含まれると、適切な RBAC モデルPower BIダッシュボード (または別の種類の視覚化) を作成できます。
 
-ログは 1 つの場所にのみ向けられる必要があります。 また、ログを Office 365または[](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)カスタム RBAC モデルMicrosoft Cloud App Securityに統合する場合[Power BI。](../admin/usage-analytics/usage-analytics.md?view=o365-worldwide) リポジトリごとに利点と対象ユーザーが異なります。
+ログは 1 つの場所にのみ向けられる必要があります。 また、ログを Office 365または[](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)カスタム RBAC モデルMicrosoft Cloud App Securityに統合する場合[Power BI。](../admin/usage-analytics/usage-analytics.md) リポジトリごとに利点と対象ユーザーが異なります。
 
-セキュリティ、脅威、脆弱性など、非常に豊富な組み込みの分析システムが[、Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)と呼ばれるサービスに存在します。
+Microsoft 365 Defender と呼ばれるサービスには、セキュリティ、脅威、脆弱性などのための非常に豊富な組み込みの分析[システムがあります](../security/defender/microsoft-365-defender.md)。
 
 大規模な顧客の多くは、このログ データをサードパーティのシステム (SIEM など) に転送したいと思っています。 これにはさまざまな方法がありますが、一般的な[Azure Event Hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) [と](/graph/security-integration)Graph開始点です。
 
 ### <a name="azure"></a>Azure
 
-Azure AD、Azure、SaaS の間で高い特権の役割を分離する方法がある場合(たとえば、Azure のグローバル管理者Office 365が、Azure ではない) という質問が頻繁に表示されます。  いやそうではありません。  完全な管理分離が必要な場合は、マルチテナント アーキテクチャが必要ですが、その場合は非常に複雑になります [(上記](https://aka.ms/multi-tenant-user) を参照)。 これらのサービスはすべて、同じセキュリティ/ID 境界の一部です (上記の階層モデルを参照してください)。  
+Azure AD、Azure、SaaS の間で高い特権の役割を分離する方法がある場合(たとえば、Azure のグローバル管理者Office 365が、Azure ではない) という質問が頻繁に表示されます。  いやそうではありません。  完全な管理分離が必要な場合は、マルチテナント アーキテクチャが必要ですが、その場合は非常に複雑になります [(上記](https://aka.ms/multi-tenant-user) を参照)。 これらのサービスはすべて、同じセキュリティ/ID 境界の一部です (上記の階層モデルを参照してください)。
 
 同じテナント内のさまざまなサービス間の関係を理解することが重要です。 Azure、Office 365、Power プラットフォーム (多くの場合はオンプレミスおよびサード パーティのクラウド サービス) にまたがるビジネス ソリューションを構築している多くのお客様と仕事をしています。 一般的な例を次に示します。
 
 1. 一連のドキュメント/画像/etc で共同作業したい (Office 365)
 2. 承認プロセスを通じて各 1 つを送信する (Power Platform)
-3.  すべてのコンポーネントが承認された後、これらを統合成果物 (Azure) (Azure) に組みGraph [API は](/azure/active-directory/develop/microsoft-graph-intro)、これらの親友です。  不可能ではないが、複数のテナントにまたがるソリューションを設計する方 [が非常に複雑です](/azure/active-directory/develop/single-and-multi-tenant-apps)。
+3. すべてのコンポーネントが承認された後、これらを統合成果物 (Azure) (Azure) に組みGraph [API は](/azure/active-directory/develop/microsoft-graph-intro)、これらの親友です。  不可能ではないが、複数のテナントにまたがるソリューションを設計する方 [が非常に複雑です](/azure/active-directory/develop/single-and-multi-tenant-apps)。
 
 Azure Role-Based アクセス制御 (RBAC) を使用すると、Azure の詳細なアクセス管理が可能になります。 RBAC を使用すると、ユーザーにジョブの実行に必要なアクセス許可を最も少なくすることで、リソースへのアクセスを管理できます。 詳細は、このドキュメントの範囲を外していますが、RBAC の詳細については、「Azure の役割ベースのアクセス制御 [(RBAC) とは」を参照してください。](/azure/role-based-access-control/overview) RBAC は重要ですが、Azure のガバナンスに関する考慮事項の一部に限定されます。 [クラウド導入フレームワークは](/azure/cloud-adoption-framework/govern/) 、詳細を学ぶ上で最適な開始点です。 私は友人である Andres Ravinet が、アプローチを決定するためのさまざまなコンポーネントを使用して、顧客を一歩一歩く方法が好きです。 さまざまな要素 (実際の顧客モデルにアクセスするプロセスほど良いではない) のハイレベル ビューは次のようなものです。
 

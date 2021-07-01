@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域のOffice 365サービスに移行する場合の事前作業。'
-ms.openlocfilehash: db4563b4a63dc39ee8171e80fd76ae15b7cd10e9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9b7a43789aaa61c03e254275fbf7cc945670ccc2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844288"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229817"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行前アクティビティ
 
@@ -122,8 +122,8 @@ OCCT は、フェーズ 9 の前Windowsクライアントに展開できます�
 
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
-| 今後のサービスへの移行を外部パートナーに通知Office 365します。 |  お客様は、予定表と空き時間情報の共有を有効にしたパートナーに通知する必要があります (空き時間情報の共有を許可Office 365。 可用性の構成は、移行が完了したら、Office 365[の](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)エンドポイントを使用Exchange Online移行する必要があります。 | そうしない場合は、お客様の移行の後のフェーズでサービスまたはクライアントの障害が発生する可能性があります。 |
-| 必要な IMAP4/POP3/SMTP クライアントの変更をユーザーに通知します。 | クライアント プロトコル IMAP4、POP3、SMTP の Microsoft Cloud Deutschland エンドポイントへのデバイス接続を持つユーザーは、クライアント デバイスを手動で更新して、Exchange Online サーバー名に切[り](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes)替える必要があります。 | この依存関係をこれらのプロトコルのユーザーに事前に伝え、この移行中にモバイルまたは web Outlook または Outlookを使用するために切り替えます。 クライアント エンドポイントの更新に失敗すると、ユーザー メールボックスの移行時に Microsoft Cloud Deutschland に対するクライアント接続エラーが発生します。 |
+| 今後のサービスへの移行を外部パートナーに通知Office 365します。 |  お客様は、予定表と空き時間情報の共有を有効にしたパートナーに通知する必要があります (空き時間情報の共有を許可Office 365。 可用性の構成は、移行が完了したら、Office 365[の](/microsoft-365/enterprise/urls-and-ip-address-ranges)エンドポイントを使用Exchange Online移行する必要があります。 | そうしない場合は、お客様の移行の後のフェーズでサービスまたはクライアントの障害が発生する可能性があります。 |
+| 必要な IMAP4/POP3/SMTP クライアントの変更をユーザーに通知します。 | クライアント プロトコル IMAP4、POP3、SMTP の Microsoft Cloud Deutschland エンドポイントへのデバイス接続を持つユーザーは、クライアント デバイスを手動で更新して、Exchange Online サーバー名に切[り](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes)替える必要があります。 | この依存関係をこれらのプロトコルのユーザーに事前に伝え、この移行中にモバイルまたはOutlookを使用Outlook on the web切り替えます。 クライアント エンドポイントの更新に失敗すると、ユーザー メールボックスの移行時に Microsoft Cloud Deutschland に対するクライアント接続エラーが発生します。 |
 ||||
 
 ### <a name="exchange-online-hybrid-customers"></a>Exchange Onlineハイブリッドのお客様
@@ -139,7 +139,7 @@ Microsoft Cloud Deutschland から Office 365 ドイツ地域に移行する場�
 | Step(s) | 説明 | 影響 |
 |:-------|:-------|:-------|
 | ドイツの設定を使用して HCW Office 365実行する <br><br> <i>テナントの移行が開始されたというメッセージ センター通知を受け取った直後に、このOffice 365を開始できます (フェーズ 1)。</i>| フェーズ 5 より前から HCW (17.0.5378.0 以上) をアンインストールおよび再実行すると、Microsoft Cloud Deutschland ユーザーと Office 365 ドイツ地域に移行されたユーザーの両方との間で、オンプレミス構成でメールの送受信を行う準備が完了します。 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) <p><li> HCW で、[自分の組織がホストOffice 365 **下** のリスト ボックスで、[ドイツ] をOffice 365 **します。** | フェーズ 5 [Exchange 移行] が開始する前にこのタスクを完了できなかった場合、オンプレミスの展開と Office 365 の間でメールの NDRs がルーティングされるExchange可能性があります。
-| 共有メールボックスの設定を保持する | ハイブリッドのお客様の中には、クラウド ユーザー メールボックスを、ユーザー コマンドを使用して 「共有」 Exchange Onlineしています。 このクラウド メールボックス構成はメールボックスとローカル Exchange Online ディレクトリに書き込まれますが、AAD サーバー経由で顧客の Active Directory に同期Connect。 その結果、メールボックス RemoteRecipientType 値と RemoteDisplayType 値の Active Directory 表記と、メールボックスを共有として定義Exchange Onlineの違いがあります。 <br><br> お客様は、すべての共有メールボックスが 、、またはを使用して適切にプロビジョニング `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` されていることを確認する責任があります `Set-RemoteMailbox -Shared` 。  ハイブリッド環境でユーザーのメールボックスを変換する方法については、 [このリファレンスを参照してください](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)。| フェーズ 5 [Exchange Online 移行] より前にこのタスクを完了できなかった場合、共有メールボックスの NDR が発生し、ライセンスのないメールボックスに戻り、影響を受けるメールボックスの共有アクセスが失われる可能性があります。 [Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)ハイブリッド展開でディレクトリ同期を実行した後、共有メールボックスは予期せずユーザー メールボックスに変換され、移行が完了する前にこの問題に対処しない場合のExchange Online概要を示します。
+| 共有メールボックスの設定を保持する | ハイブリッドのお客様の中には、クラウド ユーザー メールボックスを、ユーザー コマンドを使用して 「共有」 Exchange Onlineしています。 このクラウド メールボックス構成はメールボックスとローカル Exchange Online ディレクトリに書き込まれますが、AAD サーバー経由で顧客の Active Directory に同期Connect。 その結果、メールボックス RemoteRecipientType 値と RemoteDisplayType 値の Active Directory 表記と、メールボックスを共有として定義Exchange Onlineの違いがあります。 <br><br> お客様は、すべての共有メールボックスが 、、またはを使用して適切にプロビジョニング `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` されていることを確認する責任があります `Set-RemoteMailbox -Shared` 。  ハイブリッド環境でユーザーのメールボックスを変換する方法については、 [このリファレンスを参照してください](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox)。| フェーズ 5 [Exchange Online 移行] より前にこのタスクを完了できなかった場合、共有メールボックスの NDR が発生し、ライセンスのないメールボックスに戻り、影響を受けるメールボックスの共有アクセスが失われる可能性があります。 [Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)ハイブリッド展開でディレクトリ同期を実行した後、共有メールボックスは予期せずユーザー メールボックスに変換され、移行が完了する前にこの問題に対処しない場合のExchange Online概要を示します。
 ||||
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online
@@ -232,7 +232,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 はじめに:
 

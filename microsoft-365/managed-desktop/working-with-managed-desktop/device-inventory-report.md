@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3ebbb4359e460c0e8ddd6d353ce70057ed352212
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 0137bef845cace589247c35763bbf4253398cbc6
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245338"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229001"
 ---
 # <a name="device-inventory-report"></a>デバイス一覧レポート
 
@@ -32,8 +32,8 @@ ms.locfileid: "52245338"
 - 所有権
 - 登録日
 - リング名
-- 記憶域 - GB 単位で無料
-- 記憶域 - GB 単位の合計
+- Storage - GB で無料
+- Storage - GB の合計
 - ユーザー UPN によって登録される
 - 割り当てられたユーザー
 - 状態
@@ -43,6 +43,6 @@ ms.locfileid: "52245338"
 - TPM のバージョン
 - セキュア ブートが有効
 - プライマリ ディスクの種類
-- 物理メモリの合計 
+- 物理メモリの合計
 
-![[デバイス] ビューには、デバイスの一覧と関連する詳細が表示されます。 アクティビティ、登録状態のトップ 選択フィルターの近くのチェック ボックスをオンにします。 上記は検索ボックスです。 上部のタブで、新しいデバイスの登録、ビューの更新、エラーのエクスポート、データのエクスポートを行います。 ](../../media/mmd-devices-view.png)
+![[デバイス] ビューには、デバイスの一覧と関連する詳細が表示されます。 アクティビティ、登録状態のトップ 選択フィルターの近くのチェック ボックスをオンにします。 上記は検索ボックスです。 上部のタブで、新しいデバイスの登録、ビューの更新、エラーのエクスポート、データのエクスポートを行います。](../../media/mmd-devices-view.png)

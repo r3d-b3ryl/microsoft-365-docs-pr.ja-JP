@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 秘密度ラベルを SharePoint Syntex のモデルに適用する方法について説明します。
-ms.openlocfilehash: ebcd398799e7c8addd96d5941427628d3db5ad43
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: c7d6c17dc4d41bf2dab663618e740318d88dd723
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028945"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228749"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のモデルに秘密度ラベルを適用する
 
 Microsoft SharePoint Syntex のドキュメント理解モデルに[秘密度ラベル](../compliance/sensitivity-labels.md)を簡単に適用できます。 この機能は、フォーム処理モデルではまだ利用できません。
 
-秘密度ラベルを使用すると、モデルが識別するドキュメントに暗号化、共有、および条件付きアクセス ポリシーを適用できます。 たとえば、ドキュメント ライブラリにアップロードされた銀行口座番号やクレジット カード番号を含む財務書類をモデルで識別するだけでなく、それらに *暗号化* 秘密度ラベルを適用して、そのコンテンツにアクセスできるユーザーとそのコンテンツの使用方法を制限することも必要です。 SharePoint Syntex モデルは[ラベルの順序](../compliance/apply-sensitivity-label-automatically.md?view=o365-worldwide#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label)規則を尊重し、ユーザーがファイルに手動で適用した既存のラベルを上書きしません。 
+秘密度ラベルを使用すると、モデルが識別するドキュメントに暗号化、共有、および条件付きアクセス ポリシーを適用できます。 たとえば、ドキュメント ライブラリにアップロードされた銀行口座番号やクレジット カード番号を含む財務書類をモデルで識別するだけでなく、それらに *暗号化* 秘密度ラベルを適用して、そのコンテンツにアクセスできるユーザーとそのコンテンツの使用方法を制限することも必要です。 SharePoint Syntex モデルは[ラベルの順序](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label)規則を尊重し、ユーザーがファイルに手動で適用した既存のラベルを上書きしません。 
 
 モデルのホーム ページのモデル設定を使用して、既存の秘密度ラベルをモデルに適用できます。 モデル設定から選択できるようにするには、ラベルがすでに公開されている必要があります。
 
@@ -123,6 +123,6 @@ You can add a sensitivity label to an existing form processing model that you ow
 
 [分類子を作成する](create-a-classifier.md)
 
-[抽出子を作成する](create-an-extractor.md)
+[エクストラクターを作成する](create-an-extractor.md)
 
 [ドキュメント理解の概要](document-understanding-overview.md)

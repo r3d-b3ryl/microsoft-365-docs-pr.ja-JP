@@ -1,7 +1,7 @@
 ---
 title: Microsoft セキュリティ ポータルと管理センター
 description: セキュリティに関連するさまざまなサービスを管理するための適切な Microsoft 管理センターまたはポータルMicrosoft 365見つける
-keywords: セキュリティ、ポータル、Microsoft 365、M365、セキュリティ センター、管理センター、URL、リンク、Microsoft 365 Defender、Microsoft Defender for Endpoint、Microsoft Defender セキュリティ センター、Microsoft Defender for Identity、MICROSOFT Defender for Office 365、MCAS、WDSI、SCC、Intune、MDM、MEM、ASC、Cloud App Security 、Azure AD、セキュリティ & コンプライアンス センター
+keywords: セキュリティ、ポータル、Microsoft 365、M365、セキュリティ センター、管理センター、URL、リンク、Microsoft 365 Defender、Microsoft Defender for Endpoint、Microsoft Defender セキュリティ センター、Microsoft Defender for Identity、Office 365 MCAS、WDSI、SCC、Intune、MDM、MEM、ASC、Cloud App Security 、Azure AD、セキュリティ & コンプライアンス センター
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: c304d8badd9bde11ad0f483b482628503569dc26
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 5b723f4faef891c04dc78a18de09a469d703c492
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51931937"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228893"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティ ポータルと管理センター
 
@@ -40,9 +40,9 @@ Microsoft 365[センター](overview-security-center.md)は、ID、データ、�
 
 | ポータル名 | 説明 | リンク |
 |---|---|---| 
-| Microsoft 365 セキュリティ センター | 脅威アクティビティを監視して対応し、セキュリティ体制を強化します[。Id、](microsoft-365-defender.md)メール、データ、エンドポイント、アプリは、Microsoft 365 Defender | [security.microsoft.com](https://security.microsoft.com/) |
+| Microsoft 365 セキュリティ センター | 脅威アクティビティを監視して対応し、ID、電子メール、データ、エンドポイント、アプリのセキュリティ体制を強化Microsoft 365 Defender [](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender セキュリティ センター | Microsoft Defender for Endpoint で提供される機能を使用して、エンドポイントの脅威アクティビティを監視して [対応する](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
-| セキュリティ/コンプライアンス センター | メール[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md?view=o365-worldwide)コラボレーション サービスOffice 365保護し、さまざまなデータ処理規制への準拠を確保するために、Microsoft Defender for Exchange Online Protectionおよび[Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide)を管理する | [protection.office.com](https://protection.office.com) |
+| セキュリティ/コンプライアンス センター | メール[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)コラボレーション サービスOffice 365保護し、さまざまなデータ処理規制への準拠を確保するために、Microsoft Defender for Exchange Online Protectionおよび[Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365)を管理する | [protection.office.com](https://protection.office.com) |
 | Azure Defender ポータル | [Azure Defender を使用](/azure/security-center/security-center-intro)して、クラウド内のデータ センターとハイブリッド ワークロードのセキュリティ体制を強化する | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Microsoft Defender for Identity portal | Microsoft Defender for Identity を使用して Active Directory シグナルを使用して、高度な脅威、侵害された ID、悪意のあるインサイダー アクションを特定、検出、[および調査します](/azure-advanced-threat-protection/what-is-atp)。 | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Cloud App Security ポータル | クラウド[サービスMicrosoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)サイバー脅威を特定し、対処するための高度な分析を利用して、豊富な可視性、データ移動の制御、高度な分析を行います。 | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
@@ -56,7 +56,7 @@ Microsoft 365[センター](overview-security-center.md)は、ID、データ、�
 | ポータル名 | 説明 | リンク | 
 |---|---|---| 
 | Azure portal | リソースとすべての Azure [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)を表示および[管理する](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
-| Microsoft 365 コンプライアンス センター | データ処理ポリシーを管理し、規制 [に準拠する](/compliance/regulatory/offering-home?view=o365-worldwide) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
+| Microsoft 365 コンプライアンス センター | データ処理ポリシーを管理し、規制 [に準拠する](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Microsoft 365 管理センター | サービスMicrosoft 365構成します。ロール、ライセンスの管理、およびサービスの更新Microsoft 365する | [admin.microsoft.com](https://admin.microsoft.com/) |
 | Microsoft エンドポイント マネージャー管理センター | Intune[と configuration Manager Microsoft エンドポイント マネージャー](/mem/configmgr/)機能を組み合わせて使用してデバイスを管理およびセキュリティ保護するには、この機能を使用します。 | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
 | Microsoft Intune ポータル | デバイス[Microsoft Intune](/intune/fundamentals/what-is-intune)を展開し、コンプライアンスを監視するためにデバイスを使用する | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

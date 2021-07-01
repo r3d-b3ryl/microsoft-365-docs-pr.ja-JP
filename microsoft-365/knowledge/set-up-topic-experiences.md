@@ -10,20 +10,20 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Microsoft Viva のトピックを設定する方法について説明します。
-ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 42f84b9b792907d7fe118e0b15c3767674ddf19b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893766"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229589"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Microsoft Viva のトピックを設定する
 
-管理センターの Microsoft 365を使用して、トピックを設定および構成[できます](topic-experiences-overview.md)。 
+[トピック] セクションを使用Microsoft 365 管理センタートピックを設定および構成[できます](topic-experiences-overview.md)。 
 
 環境内でトピックをセットアップおよび構成する最善の方法を計画することが重要です。 この記事の手順を [開始する前に、「Plan for Microsoft Viva Topics」](plan-topic-experiences.md) を必ずお読みください。
 
-ビバ トピックに[サブスクライブ](https://www.microsoft.com/microsoft-viva/topics)し、グローバル管理者または管理者SharePoint管理センターにアクセスし、トピックMicrosoft 365設定する必要があります。
+ビバ トピックに[アクセスして](https://www.microsoft.com/microsoft-viva/topics)トピックを設定するには、ビバ トピックにサブスクライブし、グローバル管理者または管理者SharePoint Microsoft 365 管理センター管理者である必要があります。
 
 管理対象デバイスを[SharePointするように構成](/sharepoint/control-access-from-unmanaged-devices)している場合は、必ず管理対象デバイスから Topics を設定してください。
 
@@ -39,7 +39,7 @@ ms.locfileid: "52893766"
 
 ## <a name="assign-licenses"></a>ライセンスを割り当てる
 
-トピックを使用するユーザーにライセンスを割り当てる必要があります。 ライセンスを持つユーザーだけが、ハイライト、トピック カード、トピック ページ、トピック センターなどのトピックに関する情報を表示できます。 
+トピックを使用するユーザーにライセンスを割り当てる必要があります。 ライセンスのあるユーザーのみが、ハイライト、トピック カード、トピック ページ、トピック センターなどのトピックの情報を見ることができます。 
 
 ライセンスを割り当てる
 
@@ -52,7 +52,7 @@ ms.locfileid: "52893766"
 4. [**アプリ]** で、[コネクタGraphインデックス付き検索 **(Viva Topics)** と **Viva Topics** の両方が選択されている必要があります。
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva Topics ライセンス (Microsoft 365センター)](../media/topic-experiences-licenses.png)
+   > ![Microsoft Viva Topics のライセンスは、Microsoft 365 管理センター](../media/topic-experiences-licenses.png)
 
 5. **[変更の保存]** をクリックします。
 
@@ -61,17 +61,17 @@ ms.locfileid: "52893766"
 ## <a name="set-up-topics"></a>トピックを設定する
 
 > [!Note]
-> 初めてトピックの検出を有効にすると、[トピックの管理] ビューに提案されているトピックすべてが表示されるまで最大 2 週間かかる場合があります。 トピックの検出は、コンテンツの新しいコンテンツまたは更新が行われた後も継続されます。 ビバ トピックスが新しい情報を評価する場合、組織で提案されるトピックの数が変動するのが普通です。
+> 初めてトピックの検出を有効にすると、[トピックの管理] ビューに提案されているトピックすべてが表示されるまで最大 2 週間かかる場合があります。 トピックの検出は、コンテンツの新しいコンテンツまたは更新が行われた後も継続されます。 Viva トピックが新しい情報を評価するため、組織内でのおすすめのトピック数が変動するのは普通のことです。
 
 トピックを設定するには
-1. 管理センター [でMicrosoft 365を](https://admin.microsoft.com)選択し、[ファイルとコンテンツ]**セクションを表示** します。
+1. [ファイル] [Microsoft 365 管理センター[](https://admin.microsoft.com)**セットアップ**] を選択し、[ファイルとコンテンツ]**セクションを表示** します。
 2. [ファイルと **コンテンツ] セクションで**、[ユーザーに **Connect] をクリックします**。
 
     ![Connectを知る](../media/admin-org-knowledge-options.png) 
 
 3. [ユーザー **をConnect] ページで**、[スタート]**を** クリックしてセットアップ プロセスを説明します。
 
-    ![開始する](../media/k-get-started.png) 
+    ![作業の開始](../media/k-get-started.png) 
 
 4. [ビバ **トピックの検索方法の選択] ページ** で、トピックの検出を構成します。 [トピック **ソースSharePoint選択**] セクションで、検出時にトピックSharePointとしてクロールするサイトを選択します。 次から選択します。
     - **すべてのサイト**: 組織内のすべての SharePoint サイト。 これには、現在と今後のサイトが含まれます。
@@ -132,7 +132,10 @@ ms.locfileid: "52893766"
 
     **[次へ]** を選択します。
 
-9. [トピック **センターの作成** ] ページで、トピック ページを表示し、トピックを管理できるトピック センター サイトを作成できます。 [サイト **名] ボックス** に、トピック センターの名前を入力します。 必要に応じて、[説明] ボックスに短い説明を **入力** できます。 
+9. [トピック **センターの作成** ] ページで、トピック ページを表示し、トピックを管理できるトピック センター サイトを作成できます。 [サイト **名] ボックス** に、トピック センターの名前を入力します。 URL を変更する場合は、鉛筆アイコンをクリックできます。 必要に応じて、[説明] ボックスに短い説明 **を入力** します。 
+
+   > [!Important]
+   > 後でサイト名を変更できますが、ウィザードの完了後は URL を変更できます。
 
    **[次へ]** を選択します。
 
@@ -140,7 +143,7 @@ ms.locfileid: "52893766"
 
 10. [ **確認と完了**] ページで、選択した設定を確認して、変更を行うことができます。 選択内容に問題がない場合は、[**ライセンス認証**]を行います。
 
-11. [ **ビバ トピック] が** アクティブ化されたページが表示され、選択したサイトのトピックの分析が開始され、トピック センター サイトが作成されます。 [**完了**] を選択します。
+11. [ **ビバ トピック] が** アクティブ化されたページが表示され、選択したサイトのトピックの分析が開始され、トピック センター サイトが作成されます。 **[完了]** を選択します。
 
 12. ユーザーからナレッジ ページにConnect **返** されます。 このページでは、[ **管理** ] を選択して、構成設定に変更を加えることができます。 
 
@@ -148,7 +151,7 @@ ms.locfileid: "52893766"
 
 ## <a name="manage-topic-experiences"></a>トピック エクスペリエンスの管理
 
-トピックを設定したら、管理センターでセットアップ中に選択した[設定Microsoft 365できます](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)。 次の参考資料を参照してください:
+トピックの設定が完了したら、セットアップ時に選択した設定を [トピック] で変更[Microsoft 365 管理センター。](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) 次の参考資料を参照してください:
 
 - [Microsoft Viva Topics でトピックの検出を管理する](topic-experiences-discovery.md)
 - [Microsoft Viva Topics でのトピックの表示を管理する](topic-experiences-knowledge-rules.md)

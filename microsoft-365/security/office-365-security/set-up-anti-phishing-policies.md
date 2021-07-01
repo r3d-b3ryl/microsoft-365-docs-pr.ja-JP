@@ -1,5 +1,5 @@
 ---
-title: フィッシング対策ポリシー
+title: フィッシング詐欺対策ポリシー
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 850756acacc757526352b9249c0e9efbe82fac8d
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 9abed7f9601872eeb14ceb294c54a1cb54f63c2f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096805"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229109"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -85,7 +85,7 @@ EOP のフィッシング対策ポリシーと Defender for Office 365 のフィ
   - **ドメイン**: ドメイン内で構成されている [](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)1 つ以上のMicrosoft 365。
 
   - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーの例外。 設定と動作は、次の条件とまったく同じになります。
-    - **ユーザー**
+    - **Users**
     - **Groups**
     - **ドメイン**
 
@@ -175,7 +175,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
 
   > [!NOTE]
   >
-  > - 各フィッシング対策ポリシーでは、最大 60 人の保護されたユーザー (送信者の電子メール アドレス) を指定できます。 複数のポリシーで同じ保護されたユーザーを指定できない。 したがって、受信者に適用されるポリシーの数に関係なく、個々の受信者の保護されたユーザー (送信者の電子メール アドレス) の最大数は 60 です。 ポリシーの優先度と、最初のポリシーの適用後にポリシー処理が停止する方法の詳細については、「電子メール保護の順序と優先順位」 [を参照してください](how-policies-and-protections-are-combined.md)。
+  > - 各フィッシング対策ポリシーでは、最大 350 人の保護されたユーザー (送信者の電子メール アドレス) を指定できます。 複数のポリシーで同じ保護されたユーザーを指定できない。 したがって、受信者に適用されるポリシーの数に関係なく、個々の受信者の保護されたユーザー (送信者の電子メール アドレス) の最大数は 350 です。 ポリシーの優先度と、最初のポリシーの適用後にポリシー処理が停止する方法の詳細については、「電子メール保護の順序と優先順位」 [を参照してください](how-policies-and-protections-are-combined.md)。
   > - 送信者と受信者が以前に電子メールで通信した場合、ユーザー偽装保護は機能しません。 送信者と受信者がメールで通信したことがない場合、メッセージは偽装の試みとして識別されます。
 
   既定では、ユーザーの偽装保護用に送信者の電子メール アドレス **が構成されていません**。 したがって、既定では、送信者の電子メール アドレスは、既定のポリシーまたはカスタム ポリシーの偽装保護によってカバーされません。

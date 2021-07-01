@@ -17,19 +17,19 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、ポータル起動スケジューラを使用してポータルを起動する方法について説明します。
-ms.openlocfilehash: fb092ea2500aaa139a34e511d224ec4419e04cb5
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a0ba40849b47af93f45bcc9c77f2ba6d8f715dc5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930261"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229553"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>ポータル起動スケジューラを使用してSharePointを起動する
 
 ポータルは、トラフィックが多いイントラネット上の SharePoint コミュニケーション サイトです。数週間の間に 10,000 人から 100,000 人を超える視聴者が存在するサイトです。 ポータル起動スケジューラを使用してポータルを起動し、新しいポータルにアクセスするときにユーザーがスムーズに表示SharePointします。
 <br>
 <br>
-ポータル起動スケジューラは、ウェーブでビューアーをバッチ処理し、新しいポータルの URL リダイレクトを管理することで、段階的なロールアウトアプローチに従うのに役立ちます。 各ウェーブの起動中に、ユーザーフィードバックを収集し、ポータルのパフォーマンスを監視し、起動を一時停止して問題を解決してから、次のウェーブに進みます。 ポータルの起動を計画[する方法の詳細については、SharePoint。](/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)
+ポータル起動スケジューラは、ウェーブでビューアーをバッチ処理し、新しいポータルの URL リダイレクトを管理することで、段階的なロールアウトアプローチに従うのに役立ちます。 各ウェーブの起動中に、ユーザーフィードバックを収集し、ポータルのパフォーマンスを監視し、起動を一時停止して問題を解決してから、次のウェーブに進みます。 ポータルの起動を計画[する方法の詳細については、SharePoint。](/microsoft-365/Enterprise/Planportallaunchroll-out)
 
 **リダイレクトには、次の 2 種類があります。**
 
@@ -270,7 +270,7 @@ ms.locfileid: "52930261"
 
 2. すべてのユーザーに対してリダイレクトが実行されなかろうと検証します。
 
-## <a name="learn-more"></a>詳細情報
+## <a name="learn-more"></a>詳細を見る
 
 [オンラインでポータルの起動ロールアウト計画をSharePointする](./planportallaunchroll-out.md)
 

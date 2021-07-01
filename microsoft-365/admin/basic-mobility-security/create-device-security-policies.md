@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security を使用して、組織情報を保護するデバイス ポリシーを作成します。
-ms.openlocfilehash: 5519351db428faa837a63eedb384b42c8d8ee07c
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 62dc2eef87d413a9cb62a01541126860620eec3f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706324"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228257"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する
 
 Basic Mobility and Security を使用すると、承認されていないアクセスから組織の情報を保護するデバイス Microsoft 365作成できます。 ポリシーは、デバイスのユーザーが該当する Microsoft 365 ライセンスを持ち、デバイスを Basic Mobility and Security に登録している組織内の任意のモバイル デバイスに適用できます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 > [!IMPORTANT]
 > モバイル デバイス ポリシーを作成する前に、Basic Mobility and Security をアクティブ化してセットアップする必要があります。 詳細については、「Basic Mobility and Security の概要」を参照してください。
@@ -39,14 +39,14 @@ Basic Mobility and Security を使用すると、承認されていないアク�
 - 基本モビリティ ポリシーとセキュリティ ポリシーを Microsoft 365展開するには、グローバル管理者Microsoft 365必要があります。詳細については、「Security [&アクセス許可」を参照してください](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 - ポリシーを展開する前に、Basic Mobility and Security にデバイスを登録する場合の潜在的な影響を組織に知らせて下さい。 ポリシーの設定方法に応じて、準拠しないデバイスが Microsoft 365 やデータ (登録済みデバイスにインストールされているアプリケーション、写真、個人情報など) へのアクセスをブロックし、データを削除できます。
 
->[!NOTE]
->Microsoft 365 Business Standard の基本モビリティとセキュリティで作成されたポリシーとアクセス ルールは、Exchange ActiveSync 管理センターで作成された Exchange ActiveSync Exchange モバイル デバイス メールボックス ポリシーとデバイス アクセス ルールを上書きします。 デバイスが Basic Mobility and Security for Microsoft 365 Business Standard に登録されると、Exchange ActiveSync に適用されたモバイル デバイス メールボックス ポリシーまたはデバイス アクセス ルールは無視されます。 詳細については、「Exchange ActiveSync」の[Exchange ActiveSyncをExchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
+> [!NOTE]
+> Microsoft 365 Business Standard の基本モビリティとセキュリティで作成されたポリシーとアクセス ルールは、Exchange ActiveSync 管理センターで作成された Exchange ActiveSync Exchange モバイル デバイス メールボックス ポリシーとデバイス アクセス ルールを上書きします。 デバイスが Basic Mobility and Security for Microsoft 365 Business Standard に登録されると、Exchange ActiveSync に適用されたモバイル デバイス メールボックス ポリシーまたはデバイス アクセス ルールは無視されます。 詳細については、「Exchange ActiveSync」の[Exchange ActiveSyncをExchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>手順 1: デバイス ポリシーを作成し、テスト グループに展開する
 
 開始する前に、Basic Mobility and Security をアクティブ化してセットアップしてください。 手順については [、「Basic Mobility and Security の概要」を参照してください](overview.md)。
 
-1. ブラウザーから、と入力します [https://protection.office.com/devicev2](https://protection.office.com/devicev2) 。
+1. ブラウザーから、と入力します <https://protection.office.com/devicev2> 。
 
 2. [**ポリシーの作成**] を選択します。
 

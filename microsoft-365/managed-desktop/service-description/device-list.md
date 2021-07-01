@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245938"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230057"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップデバイス
 
@@ -22,13 +22,13 @@ ms.locfileid: "52245938"
 
 Microsoft マネージド デスクトップに含めるデバイスを定期的に評価します。 この記事では、現在サポートされている特定のデバイスの一覧を示します。 デバイス要件に関するより一般的なステートメントについては、「デバイス要件 [」を参照してください](device-requirements.md)。
 
-このドキュメントの詳細については、「Microsoft マネージド デスクトップドキュメント[Microsoft マネージド デスクトップリソース」を参照してください](../index.yml)。 
+このドキュメントの詳細については、「Microsoft マネージド デスクトップドキュメント[Microsoft マネージド デスクトップリソース」を参照してください](../index.yml)。
 
 [新しいデバイスの選択と検証](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Microsoft マネージド デスクトップに登録するには、デバイスが次のいずれかのモデルで、RAM、プロセッサ ファミリ、およびディスク領域の一覧に記載されている仕様を満たすか、超えている必要があります。 
+Microsoft マネージド デスクトップに登録するには、デバイスが次のいずれかのモデルで、RAM、プロセッサ ファミリ、およびディスク領域の一覧に記載されている仕様を満たすか、超えている必要があります。
 
 ここでのデバイスへのリンクは、参照専用です。 デバイスを注文する場合は、商用チャネルの連絡先と一緒に作業して、正しい構成を選択してください。 この表では、アーカイブ *日付* は、これらのモデルの寿命が短くなる日付Microsoft マネージド デスクトップです。この日付以降にオンボードされたそのようなデバイスは、Microsoft マネージド デスクトップ から完全な 3 年間のサポート期間を受け取Microsoft マネージド デスクトップ。 アーカイブされたデバイスは、アーカイブ済[みデバイスMicrosoft マネージド デスクトップ一覧表示されます](archived-device-list.md)。 *退職日* は、このモデルがサポートされなくなった日付をMicrosoft マネージド デスクトップです。 この日付に、このモデルのすべての登録デバイスは、いつ登録されたかに関係なく、Microsoft マネージド デスクトップから削除されます。
 
@@ -79,9 +79,9 @@ Microsoft マネージド デスクトップに登録するには、デバイス
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | なし | 2021 年 10 月 22 日 | 2024 年 10 月 22 日 |
 | **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | なし | 2022 年 1 月 15 日 | 2025 年 1 月 15 日 |
 
-さらに、デバイスは次の条件も満たしている必要があります。     
+さらに、デバイスは次の条件も満たしている必要があります。
 
-- 特定の SKU がデバイス要件に一覧表示されている場合は、注文時に必ず使用してください。 これにより、デバイスがソフトウェア要件に準拠Microsoft マネージド デスクトップします。 
+- 特定の SKU がデバイス要件に一覧表示されている場合は、注文時に必ず使用してください。 これにより、デバイスがソフトウェア要件に準拠Microsoft マネージド デスクトップします。
 - 初回実行エクスペリエンスWindows完了していない。
 - デバイス登録機能をMicrosoft マネージド デスクトップデバイスに[登録](../get-started/register-devices-self.md)する
 

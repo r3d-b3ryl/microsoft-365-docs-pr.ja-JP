@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1c81d2978677b751a8085f88b5c4732fd4a5a247
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 634a381ca862dc7580d82168a4b9540acc0cd394
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770051"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229025"
 ---
 # <a name="get-machine-logon-users-api"></a>コンピューター ログオン ユーザー API の取得
 
@@ -30,7 +30,7 @@ ms.locfileid: "52770051"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,26 +40,26 @@ ms.locfileid: "52770051"
 ## <a name="api-description"></a>API の説明
 特定のデバイスでログオンしているユーザーのコレクションを取得します。
 
-
 ## <a name="limitations"></a>制限事項
 1. 構成済みの保持期間に従って、最後に更新されたアラートに対してクエリを実行できます。
 2. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
-
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類 |アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   User.Read.All | 'ユーザー プロファイルの読み取り'
+アプリケーション |User.Read.All |'ユーザー プロファイルの読み取り'
 委任 (職場または学校のアカウント) | User.Read.All | 'ユーザー プロファイルの読み取り'
 
->[!Note]
+> [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
->- ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示' 。 詳細については、「役割の作成 [と管理」を参照してください](user-roles.md) 。
->- 応答には、デバイス グループの設定に基づいて、デバイスがユーザーに表示されている場合にのみ、ユーザーが含まれます。 詳細については、「デバイス グループの作成 [と管理」を参照してください](machine-groups.md)。
+>
+> - ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示' 。 詳細については、「役割の作成と [管理」を参照してください](user-roles.md)。
+> - 応答には、デバイス グループの設定に基づいて、デバイスがユーザーに表示されている場合にのみ、ユーザーが含まれます。 詳細については、「デバイス グループの作成 [と管理」を参照してください](machine-groups.md)。
 
 ## <a name="http-request"></a>HTTP 要求
+
 ```http
 GET /api/machines/{id}/logonusers
 ```
@@ -70,17 +70,17 @@ GET /api/machines/{id}/logonusers
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 
-
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答
-成功し、デバイスが存在する場合 - 本文のユーザー[](user.md)エンティティの一覧で 200 OK。 デバイスが見つからなかった場合 - 404 が見つかりません。
 
+成功し、デバイスが存在する場合 - 本文のユーザー[](user.md)エンティティの一覧で 200 OK。 デバイスが見つからなかった場合 - 404 が見つかりません。
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request"></a>要求
 
 以下は、要求の例です。
 
@@ -88,10 +88,9 @@ Empty
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
 ```
 
-**応答**
+### <a name="response"></a>応答
 
 以下は、応答の例です。
-
 
 ```http
 HTTP/1.1 200 OK

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本モビリティとセキュリティは、重要なMicrosoft 365です。
-ms.openlocfilehash: b7b1d229e87a313a9567daed87f03452b1925a65
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 869968fa46e09fbc7a983957a83a9ad308c9f40c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904266"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228269"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>基本モビリティとセキュリティまたは Intune の間で選択する
 
@@ -52,17 +52,17 @@ ms.locfileid: "50904266"
 |Enterpriseモビリティ &セキュリティ E3 |いいえ|はい|
 |Enterprise Mobility & Security E5 |いいえ|はい|
 
->[!NOTE]
->基本モビリティとセキュリティの使用は、既に使用している場合はMicrosoft Intune。
+> [!NOTE]
+> 基本モビリティとセキュリティの使用は、既に使用している場合はMicrosoft Intune。
 
- 詳細については、「プラットフォーム[サービスのMicrosoft 365とOffice 365」を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 
+ 詳細については、「プラットフォーム[サービスのMicrosoft 365とOffice 365」を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。
 
 ## <a name="differences-in-capabilities"></a>機能の違い
 
 Microsoft Intune組み込みの Basic Mobility and Security では、どちらも組織内のモバイル デバイスを管理できますが、次の表で説明する機能には主な違いがあります。
 
->[!NOTE]
->同じ Microsoft 365 Business Standard 組織で Intune と Basic Mobility and Security の両方を使用してユーザーとそのモバイル デバイスを管理するには、まず Basic Mobility and Security をセットアップし、次に Microsoft Intune を *追加します*。 これにより、基本モビリティとセキュリティ、または機能が豊富な Intune ソリューションを選択できます。 Intune の機能を有効にするには、Intune ライセンスを割り当てる必要があります。
+> [!NOTE]
+> 同じ Microsoft 365 Business Standard 組織で Intune と Basic Mobility and Security の両方を使用してユーザーとそのモバイル デバイスを管理するには、まず Basic Mobility and Security をセットアップし、次に Microsoft Intune を *追加します*。 これにより、基本モビリティとセキュリティ、または機能が豊富な Intune ソリューションを選択できます。 Intune の機能を有効にするには、Intune ライセンスを割り当てる必要があります。
 
 | 機能領域 | 機能のハイライト | 基本的なモビリティとセキュリティ | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
@@ -80,7 +80,7 @@ Microsoft Intune組み込みの Basic Mobility and Security では、どちら�
 |ゼロ タッチ登録プログラム (AutoPilot) |多数の企業所有デバイスを登録し、ユーザーのセットアップを簡略化します。 |いいえ|はい|
 |||
 
-前の表に示す機能に加えて、Basic Mobility and Security と Intune には、インターネットを使用してデバイスにコマンドを送信する一連のリモート アクションが含まれています。 たとえば、従業員のデバイスから Office データを削除し、個人データを一定の場所に残す (退職)、従業員のデバイスから Office アプリを削除 (ワイプ)、またはデバイスを工場出荷時の設定 (フル ワイプ) にリセットできます。 
+前の表に示す機能に加えて、Basic Mobility and Security と Intune には、インターネットを使用してデバイスにコマンドを送信する一連のリモート アクションが含まれています。 たとえば、従業員のデバイスから Office データを削除し、個人データを一定の場所に残す (退職)、従業員のデバイスから Office アプリを削除 (ワイプ)、またはデバイスを工場出荷時の設定 (フル ワイプ) にリセットできます。
 
 基本的なモビリティとセキュリティのリモート アクションには、削除、ワイプ、フル ワイプが含まれます。 Basic Mobility and Security アクションの詳細については、「Basic Mobility and Security の機能 [」を参照してください](capabilities.md)。
 

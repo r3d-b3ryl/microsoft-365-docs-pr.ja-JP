@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aa37beef940803a3dd399cec4ff23133a10c5ad
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 910923e693804c96c109c52606b62d92af51abeb
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203294"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228665"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -140,7 +140,7 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
 
      次の表で、スパム対策フィルター判定に使用可能なアクションを説明します。
 
-     - チェック マーク ( ![チェック マーク](../../media/checkmark.png)) は、アクションが使用可能であることを示します (すべてのアクションがすべての判定に使用できるわけではありません)。
+     - チェック マーク ( ![チェック マーク](../../media/checkmark.png) ) は、アクションが使用可能であることを示します (すべてのアクションがすべての判定に使用できるわけではありません)。
      - チェック マークの後にアスタリスク ( <sup>\*</sup> ) がある場合、スパム対策フィルター判定の既定のアクションであることを示しています。
 
      <br>

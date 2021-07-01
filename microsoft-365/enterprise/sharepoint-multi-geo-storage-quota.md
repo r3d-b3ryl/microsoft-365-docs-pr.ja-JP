@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 複数地域SharePointのストレージ クォータの管理方法と、オンライン管理者がクォータを管理するSharePoint説明します。
-ms.openlocfilehash: ec736a6bd6061f8b028fca7a1c34d5278a84db89
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0843407e7926027e28cdd1f5893c4aafec4e1cd5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692242"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230093"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>複数地域環境における SharePoint ストレージ クォータ
 
@@ -32,22 +32,30 @@ SharePoint 地域ストレージ クォータ設定では、地域の場所ご�
 
 ## <a name="configure-a-storage-quota-for-a-geo-location"></a>地域の場所のストレージ クォータを構成する
 
-地域の場所にストレージ クォータを割り当てるには、[Microsoft Office SharePoint Online モジュール](https://www.microsoft.com/download/details.aspx?id=35588 )を使用して、中央の場所に接続します。 
+地域の場所にストレージ クォータを割り当てるには、[Microsoft Office SharePoint Online モジュール](https://www.microsoft.com/download/details.aspx?id=35588)を使用して、中央の場所に接続します。
 
 場所にストレージ クォータを割り当てるには、次のコマンドレットを実行します。
 
-`Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB <value>`
+```powershell
+Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB <value>
+```
 
 現在の地域の場所に対するストレージ クォータを表示するには、次を実行します。
 
-`Get-SPOGeoStorageQuota`
+```powershell
+Get-SPOGeoStorageQuota
+```
 
 ![Get-SPOGeoStorageQuota コマンドレットを表示している PowerShell ウィンドウのスクリーンショット](../media/multi-geo-storage-quota.png)
 
 すべての地域の場所に対するストレージ クォータを表示するには、次を実行します。
 
-`Get-SPOGeoStorageQuota -AllLocations`
+```powershell
+Get-SPOGeoStorageQuota -AllLocations
+```
 
 地域の場所の割り当てられたストレージ クォータを削除するには、`StorageQuota value = 0` を設定します。
 
-`Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0`
+```powershell
+Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0
+```

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: c80a7cfc4f930011f65a07c4b46cdf4921766c34
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: abf58930e2f937922733fedec2f13bfc2949fcb8
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930453"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229829"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -134,7 +134,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 
 - 組織で引き続き 2010 SharePoint使用している場合、2021 年 12 月 31 日以降は機能しなくなりました。 SharePoint 2013 ワークフローは引き続きサポートされます。ただし、2020 年 11 月 1 日から新しいテナントでは既定でオフになっています。 オンライン サービスへの移行SharePoint、サポートされている他のソリューションに移動Power Automate勧めします。
  - SharePoint Online インスタンスがまだ移行されていない Microsoft Cloud Deutschland のお客様は、SharePoint Online PowerShell モジュール/Microsoft.SharePointOnline.CSOM バージョン 16.0.20616.12000 以下に滞在する必要があります。 それ以外の場合、powerShell SharePointクライアント側のオブジェクト モデルを使用してオンラインに接続できない場合があります。
-- このフェーズでは、URL の背後にある IP SharePointが変更されます。 Office 365 グローバル サービスに移行すると、保持されているテナント URL (およびなど) のアドレスがワールドワイド Microsoft 365 URL と IP アドレス範囲 (SharePoint Online および `contoso.sharepoint.de` `contoso-my.sharepoint.de` [OneDrive for Business) に変更](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)されます。
+- このフェーズでは、URL の背後にある IP SharePointが変更されます。 Office 365 グローバル サービスに移行すると、保持されているテナント URL (およびなど) のアドレスがワールドワイド Microsoft 365 URL と IP アドレス範囲 (SharePoint Online および `contoso.sharepoint.de` `contoso-my.sharepoint.de` [OneDrive for Business) に変更](/microsoft-365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business)されます。
 - サービスSharePointサービスOneDrive移行中、Officeが期待通り動作しない場合があります。 
 
 > [!NOTE]
@@ -231,7 +231,7 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 - ユーザーは、顧客の DNS エントリが完了するまでではなく、Skype for Business サービスから Office 365 サービスへのタイム サービス移行の間に、Skype for Business にサインインできない。
 - 連絡先と既存の会議は、引き続き会議のSkype for Businessされます。
 
-バニティ ドメインが構成されている場合Skype for Business DNS エントリを更新する必要があります。 管理センターの[[ドメイン] Microsoft 365参照し](https://admin.microsoft.com/Adminportal/Home#/Domains)、DNS 構成に変更を適用してください。 
+バニティ ドメインが構成されている場合Skype for Business DNS エントリを更新する必要があります。 詳細については、「[ドメイン」を参照しMicrosoft 365 管理センター](https://admin.microsoft.com/Adminportal/Home#/Domains) DNS 構成に変更を適用してください。 
 
 移行フェーズ 9 が完了した後Skype for Business PowerShell を使用してオンラインに接続する必要がある場合は、次の PowerShell コードを使用して接続します。
 

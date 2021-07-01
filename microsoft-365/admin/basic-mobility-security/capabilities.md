@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
-ms.openlocfilehash: 41df5bfba7362d9c2b3a47deca4e4586902bbd98
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: a5f20b2999a1a54070433560904e9535a4d1524a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706180"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228281"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
@@ -47,12 +47,12 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 <sup>1</sup>RT デバイスWindows 8.1アクセス制御は、1 つの RT デバイスExchange ActiveSync。
 
-<sup>2</sup>ユーザーのアクセス制御Windows 10 Azure AD プレミアムを含むサブスクリプションが必要で、デバイスをそのサブスクリプションに参加Azure Active Directory。
+<sup>2</sup>ユーザーのアクセス制御Windows 10サブスクリプションが必要で、Azure AD Premiumデバイスをそのサブスクリプションに参加するAzure Active Directory。
 
 <sup>3</sup>2020 年 6 月以降、9 より後の Android バージョンでは、Samsung Knox デバイス以外のパスワード設定を管理できません。
 
->[!NOTE]
->以前の OS バージョンで既に登録されているデバイスは引き続き機能しますが、機能は予告なしに変更される可能性があります。
+> [!NOTE]
+> 以前の OS バージョンで既に登録されているデバイスは引き続き機能しますが、機能は予告なしに変更される可能性があります。
 
 組織内のユーザーが、Basic Mobility and Security でサポートされていないモバイル デバイスを使用している場合は、Exchange ActiveSync アプリによるこれらのデバイスの Microsoft 365 メールへのアクセスをブロックして、組織のデータの安全性を高めることができます。 デバイスアクセスをブロックするExchange ActiveSync、「Basic Mobility and Security」の「デバイス アクセス設定の[管理」を参照してください](manage-device-access-settings.md)。
 
@@ -60,15 +60,16 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 次の表に示すさまざまな種類のモバイル デバイスでサポートされているアプリは、ユーザーのデバイスに適用される新しいモバイル デバイス管理ポリシーが作成され、ユーザーがデバイスを以前に登録しなかった場合に、Basic Mobility and Security に登録するようユーザーに求めるメッセージを表示します。 ポリシーの設定方法によっては、ユーザーのデバイスがポリシーに準拠しない場合、ユーザーがこれらのアプリの Microsoft 365 リソースにアクセスできないか、アクセス権を持っている可能性がありますが、Microsoft 365 はポリシー違反を報告します。
 
-|**製品**|**iOS 10.0 以降**|**Android 5.0 以降**|
+|**Product**|**iOS 10.0 以降**|**Android 5.0 以降**|
 |:-----|:-----|:-----|
 |**Exchange Exchange ActiveSync** バージョン 14.1 以降を使用する、組み込みの電子 Exchange ActiveSyncメールアプリとサードパーティ製アプリ (TouchDown など) が含まれています。 |メール |メール |
 |**Office**  と  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**電話とタブレットの場合**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **電話のみ:** <br/> Office Mobile |
 
->[!NOTE]
-- >iOS 10.0 以降のバージョンのサポートには、iPhoneデバイスiPadがあります。
-- >BlackBerry OS デバイスの管理は、Basic Security および Mobility ではサポートされていません。 BlackBerry の BlackBerry Business Cloud Services (BBCS) を使用して、BlackBerry OS デバイスを管理します。 Android OS を実行している Blackberry デバイスは、標準の Android デバイスとしてサポートされています
-- >モバイル ブラウザーを使用して Microsoft 365 SharePoint サイト、Office Online のドキュメント、Outlook Web App の電子メールにアクセスする場合、ユーザーは登録を求めるメッセージが表示され、ポリシー違反に対してブロックまたは報告されません。
+> [!NOTE]
+>
+> - iOS 10.0 以降のバージョンのサポートには、iPhoneデバイスiPadがあります。
+> - BlackBerry OS デバイスの管理は、Basic Security および Mobility ではサポートされていません。 BlackBerry の BlackBerry Business Cloud Services (BBCS) を使用して、BlackBerry OS デバイスを管理します。 Android OS を実行している Blackberry デバイスは、標準の Android デバイスとしてサポートされています
+> - モバイル ブラウザーを使用して Microsoft 365 SharePoint サイト、Office Online のドキュメント、Outlook Web App の電子メールにアクセスする場合、ユーザーは登録を求めるメッセージが表示され、ポリシー違反に対してブロックまたは報告されません。
 
 次の図は、新しいデバイスを持つユーザーが、Basic Mobility and Security によるアクセス制御をサポートするアプリにサインインした場合の処理を示しています。 ユーザーは、デバイスを登録するまでMicrosoft 365リソースへのアクセスをブロックされます。
 
@@ -79,7 +80,7 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 ## <a name="policy-settings-for-mobile-devices"></a>モバイル デバイス用のポリシー設定
 
-特定の設定を有効にした状態でアクセスをブロックするポリシーを作成すると[、Microsoft 365](capabilities.md)の電子メールとドキュメントのアクセス制御に記載されているサポートされているアプリを使用している場合、ユーザーは Microsoft 365 リソースへのアクセスをブロックされます。 
+特定の設定を有効にした状態でアクセスをブロックするポリシーを作成すると[、Microsoft 365](capabilities.md)の電子メールとドキュメントのアクセス制御に記載されているサポートされているアプリを使用している場合、ユーザーは Microsoft 365 リソースへのアクセスをブロックされます。
 
 ユーザーがリソースにアクセスMicrosoft 365できる設定は、次のセクションに示されています。
 
@@ -89,7 +90,7 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 - 脱獄
 
-- 管理された電子メール プロファイル  
+- 管理された電子メール プロファイル
 
 例として次の図は、登録済みデバイスを使用しているユーザーが、そのデバイスに適用されるモバイル デバイス管理ポリシーのセキュリティ設定を満たしていない場合の動作を示しています。 ユーザーは、Basic Mobility and Security を使用してアクセス制御をサポートするアプリにサインインします。 デバイスがセキュリティ設定に準拠するまでMicrosoft 365リソースへのアクセスがブロックされます。
 
@@ -116,15 +117,15 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 |:-----|:-----|:-----|:-----|
 |デバイスでデータ暗号化を要求<sup>する 1</sup> |いいえ|はい|はい|
 
-<sup>1</sup>Samsung Knox を使用すると、ストレージ カードで暗号化を要求できます。 
+<sup>1</sup>Samsung Knox を使用すると、ストレージ カードで暗号化を要求できます。
 
-## <a name="jail-broken-setting"></a>脱獄の設定 
+## <a name="jail-broken-setting"></a>脱獄の設定
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |デバイスの脱獄またはルート化はできません |はい|はい|はい|
 
-## <a name="managed-email-profile-option"></a>管理された電子メール プロファイルのオプション 
+## <a name="managed-email-profile-option"></a>管理された電子メール プロファイルのオプション
 
 次のオプションは、手動で作成されたメール プロファイルをMicrosoft 365ユーザーが自分のメールにアクセスするのをブロックできます。 iOS デバイスを使用しているユーザーは、電子メールにアクセスする前に、手動で作成した電子メール プロファイルを削除しておく必要があります。 プロファイルを削除すると、新しいプロファイルがデバイスに自動的に作成されます。 エンド ユーザーが準拠を取得する方法については、「既存の電子メール アカウントが見つかりました [」を参照してください](/intune-user-help/existing-company-email-account-found)。
 
@@ -205,8 +206,8 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 - パスワードの履歴を記憶して再利用を防止
 
->[!NOTE]
->パスワードを調整する次の設定では、ローカル アカウントWindows制御します。 Windowsまたはドメインに参加して提供Azure Active Directoryアカウントは、これらの設定の影響を受け取らない。
+> [!NOTE]
+> パスワードを調整する次の設定では、ローカル アカウントWindows制御します。 Windowsまたはドメインに参加して提供Azure Active Directoryアカウントは、これらの設定の影響を受け取らない。
 
 ### <a name="system-settings"></a>システムの設定
 

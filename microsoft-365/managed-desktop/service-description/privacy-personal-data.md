@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 0ee214cf7ff5d5998a7fa35688574a23f8b082f0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177479"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229601"
 ---
 # <a name="overview"></a>概要
 
@@ -68,16 +68,16 @@ Microsoft マネージド デスクトップ で使用されるデータの識�
 ## <a name="microsoft-intune"></a>Microsoft Intune
 Microsoft Intuneおよびサービスをサポートするために、データを収集、処理Microsoft マネージド デスクトップ共有します。 Intune [で収集されるデータの詳細については、「Intune](/mem/intune/protect/privacy-data-collect) でのデータ収集」を参照してください。 
 
-データの場所の詳細Microsoft Intune、顧客データの保存場所[Microsoft 365を参照してください](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)。 Intune は、管理者が顧客データに対して行った保存場所の選択を尊重します。
+データの場所の詳細Microsoft Intune、顧客データの保存場所[Microsoft 365を参照してください](/microsoft-365/enterprise/o365-data-locations)。 Intune は、管理者が顧客データに対して行った保存場所の選択を尊重します。
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
-Microsoft Defender for Endpoint は、管理、追跡、およびレポートの目的で、Microsoft マネージド デスクトップデバイスの情報を収集および保存します。 収集される情報には、ファイル データ (ファイル名、サイズ、ハッシュなど)、プロセス データ (実行中のプロセス、ハッシュ)、レジストリ データ、ネットワーク接続データ、デバイスの詳細 (デバイス識別子、デバイス名、オペレーティング システムのバージョンなど) が含まれます。 [Microsoft Defender for Endpoint のデータ](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect)収集とストレージの場所の詳細については、「Microsoft Defender for Endpoint data storage and privacy」を参照してください。 
+Microsoft Defender for Endpoint は、管理、追跡、およびレポートの目的で、Microsoft マネージド デスクトップデバイスの情報を収集および保存します。 収集される情報には、ファイル データ (ファイル名、サイズ、ハッシュなど)、プロセス データ (実行中のプロセス、ハッシュ)、レジストリ データ、ネットワーク接続データ、デバイスの詳細 (デバイス識別子、デバイス名、オペレーティング システムのバージョンなど) が含まれます。 [Microsoft Defender for Endpoint のデータ](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)収集とストレージの場所の詳細については、「Microsoft Defender for Endpoint data storage and privacy」を参照してください。 
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise 
-Microsoft 365 Apps for enterpriseは、Microsoft マネージド デスクトップ Microsoft マネージド デスクトップ によって管理される定義済みの更新チャネルに基づいて、これらのアプリが最新バージョンで最新のバージョンに更新されるのを確認するために、Microsoft マネージド デスクトップ とデータを収集および共有します。 Microsoft [Defender for Endpoint のデータストレージとプライバシーを参照](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect)して、Microsoft 365 Appsのデータ収集と保存場所の詳細について説明します。
+Microsoft 365 Apps for enterpriseは、Microsoft マネージド デスクトップ Microsoft マネージド デスクトップ によって管理される定義済みの更新チャネルに基づいて、これらのアプリが最新バージョンで最新のバージョンに更新されるのを確認するために、Microsoft マネージド デスクトップ とデータを収集および共有します。 Microsoft [Defender for Endpoint のデータストレージとプライバシーを参照](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)して、Microsoft 365 Appsのデータ収集と保存場所の詳細について説明します。
 
 ## <a name="major-data-change-notification"></a>メジャー データ変更通知
-Microsoft マネージド デスクトップ、サービス通信フレームワークで説明されている変更管理プロセスに従います。 セキュリティ インシデントとサービスMicrosoft 365変更Microsoft マネージド デスクトップ管理ポータルを通じて、お客様に通知します。 収集されたデータの種類と格納場所に対する変更は、重要な変更と見なされます。 この変更に関する詳細な通知は、製品およびサービスの標準的な方法と同様に、少なくとも 30 日間Microsoft 365提供します。 詳細については、「サービスの変更 [と通信」を参照してください](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide)。
+Microsoft マネージド デスクトップ、サービス通信フレームワークで説明されている変更管理プロセスに従います。 セキュリティ インシデントとサービスMicrosoft 365変更Microsoft マネージド デスクトップ管理ポータルを通じて、お客様に通知します。 収集されたデータの種類と格納場所に対する変更は、重要な変更と見なされます。 この変更に関する詳細な通知は、製品およびサービスの標準的な方法と同様に、少なくとも 30 日間Microsoft 365提供します。 詳細については、「サービスの変更 [と通信」を参照してください](/microsoft-365/managed-desktop/service-description/servicechanges)。
 
 ## <a name="compliance"></a>コンプライアンス
 Microsoft マネージド デスクトップ外部監査を受け、包括的なコンプライアンス提供のセットを取得しました。 詳細については、「コンプライアンス」Microsoft マネージド デスクトップ[参照してください](/microsoft-365/managed-desktop/intro/compliance)。 監査レポートは、Microsoft サービスセキュリティポータルでダウンロードできます。これは、Microsoft[サービス](https://aka.ms/stp)オンライン サービスのEnterprise機能します。 (Microsoft マネージド デスクトップ"監視と管理"というカテゴリの下に、これらのドキュメント内に一覧表示されます。 

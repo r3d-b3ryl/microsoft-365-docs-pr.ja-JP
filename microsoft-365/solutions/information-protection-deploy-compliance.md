@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: コンプライアンス スコアとコンプライアンス マネージャーを使用して、個人データの保護レベルを向上させる方法について学習します。
-ms.openlocfilehash: 87131ea65661e8285fd7c3b36a87c79b618348d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 26e9f54ce77869f4f6ef07c18147483628ddc223
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918572"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229301"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>コンプライアンス マネージャーを使用して改善アクションを管理する
 
@@ -30,19 +30,18 @@ Microsoft コンプライアンス マネージャーは、EU 一般データ保
 
 この記事では、データのプライバシーを目的としてこのツールを使用する方法について説明します。
 
->[!Note]
->コンプライアンス マネージャーの推奨事項は、コンプライアンスの保証と捉えることはできません。 規制環境ごとの顧客管理の有効性を評価および検証する必要があります。 これらのサービスは、Online Services 利用規約の条件 [に従います](https://go.microsoft.com/fwlink/?linkid=2108910)。 「セキュリティ[とコンプライアンスMicrosoft 365ライセンス ガイダンス」も参照してください。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
->
+> [!NOTE]
+> コンプライアンス マネージャーの推奨事項は、コンプライアンスの保証と捉えることはできません。 お客様の規制環境ごとにお客様独自のコントロールの有効性を評価および検証するかどうかは、お客様の判断に委ねられています。 これらのサービスには、[オンライン サービスの条件](https://go.microsoft.com/fwlink/?linkid=2108910)の利用規約が適用されます。 「セキュリティ[とコンプライアンスMicrosoft 365ライセンス ガイダンス」も参照してください。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="getting-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
 #### <a name="what-is-compliance-manager"></a>コンプライアンス マネージャーとは
 
-[コンプライアンス マネージャー](../compliance/compliance-manager.md)は、Microsoft クラウド サービスに関連する規制コンプライアンス 活動を管理Microsoft 365コンプライアンス センターのワークフロー ベースのリスク評価ツールです。 コンプライアンス マネージャーは、Microsoft 365 または Azure Active Directory (Azure AD) サブスクリプションの一部として、Microsoft クラウド サービスの共有責任モデル内で規制コンプライアンスを管理するのに役立ちます。
+[コンプライアンス マネージャー](../compliance/compliance-manager.md)は、Microsoft クラウド サービスに関連する規制コンプライアンス 活動Microsoft 365 コンプライアンス センター管理するためのワークフロー ベースのリスク評価ツールです。 コンプライアンス マネージャーは、Microsoft 365 または Azure Active Directory (Azure AD) サブスクリプションの一部として、Microsoft クラウド サービスの共有責任モデル内で規制コンプライアンスを管理するのに役立ちます。
 
 **評価を使用する準備ができました**
 
-コンプライアンス マネージャーは、GDPR や[](../compliance/compliance-manager-assessments.md)HIPAA/HITECH などのデータ プライバシー関連の規制に沿った評価を構築するために事前に構築されたテンプレートを提供します。 テンプレートには、規制の要件を満たす改善アクションを実行するのに役立つコントロール マッピングが組み込みされています。 各評価では、対象サービスに固有の各規制が呼び出すコントロールに関する情報を提供します。Microsoft が管理および制御するコントロールによって異なっています。 
+コンプライアンス マネージャーは、GDPR や[](../compliance/compliance-manager-assessments.md)HIPAA/HITECH などのデータ プライバシー関連の規制に沿った評価を構築するために事前に構築されたテンプレートを提供します。 テンプレートには、規制の要件を満たす改善アクションを実行するのに役立つコントロール マッピングが組み込みされています。 各評価では、対象サービスに固有の各規制が呼び出すコントロールに関する情報を提供します。Microsoft が管理および制御するコントロールによって異なっています。
 
 事前構築されたテンプレートを使用すると、リスク評価をすばやく開始できます。 コンプライアンス マネージャーの使用に詳しくなると、独自のコントロールと改善アクションを追加して、事前に構築されたテンプレートをカスタマイズしたり、組織のニーズに合わせて独自のカスタム評価を作成することができます。
 
@@ -59,7 +58,7 @@ Microsoft コンプライアンス マネージャーは、EU 一般データ保
 - [最初の訪問: コンプライアンス マネージャーについて理解する](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - コンプライアンス マネージャー ダッシュボードの操作
     - コンプライアンス スコアについて
-    - 改善アクションについて学習する
+    - ラーニングアクションの詳細
     - 評価とテンプレートについて
 - [ランプアップ: コンプライアンス アクティビティを管理するコンプライアンス マネージャーを構成する](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - 最初の評価の作成と管理

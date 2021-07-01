@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Device Control リムーバブル ストレージ アクセス制御
+title: Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 description: Microsoft Defender for Endpoint の概要
 keywords: リムーバブル 記憶域メディア
 search.product: eADQiWindows 10XVcnh
@@ -16,32 +16,32 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb23987600a5f87a99449510f7651c4fdcd45f66
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028405"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229577"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル ストレージ アクセス制御
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Defender for Endpoint Device Control リムーバブル ストレージアクセス制御を使用すると、次のタスクを実行できます。
+Microsoft Defender for Endpoint Device Control リムーバブル Storageアクセス制御を使用すると、次のタスクを実行できます。
 - 除外の付いたリムーバブル 記憶域への読み取り、書き込み、または実行アクセスの監査、許可、または防止
 
 |特権 |アクセス許可  |
 |---------|---------|
 |Access    |  読み取り、書き込み、実行       |
 |アクション モード    |    監査、許可、防止     |
-|CSP サポート   |   必要      |
-|GPO サポート    |   必要      |
-|ユーザー ベースのサポート     |   必要      |
-|コンピューター ベースのサポート    |    必要     |
+|CSP サポート   |   はい      |
+|GPO サポート    |   はい      |
+|ユーザー ベースのサポート     |   はい      |
+|コンピューター ベースのサポート    |    はい     |
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
-マルウェア対策クライアント ストレージ **4.18.2103.3** 以降Windows 10デバイスにリムーバブル アクセス制御を展開します。
+マルウェア対策クライアント Storage **4.18.2103.3** 以降の Windows 10 デバイスにリムーバブル アクセス制御を展開します。
 
 - **4.18.2104** 以降: SerialNumberId の追加、VID_PID、ファイルパス ベースの GPO のサポート、ComputerSid
 
@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル ストレー�
 :::image type="content" source="images/powershell.png" alt-text="PowerShell インターフェイス":::
 
 > [!NOTE]
-> どのコンポーネントWindows セキュリティアクティブである必要もありません。リムーバブル アクセス制御は、ストレージ状態とはWindows セキュリティできます。
+> どのコンポーネントWindows セキュリティアクティブである必要もありません。リムーバブル アクセス制御は、Storage状態とはWindows セキュリティできます。
 
 ## <a name="policy-properties"></a>ポリシーのプロパティ
 
@@ -172,15 +172,15 @@ Microsoft Defender for Endpoint Device Control リムーバブル ストレー�
   - 6: 書き込みと実行
   - 7: 読み取りおよび書き込みと実行
 
-## <a name="common-removable-storage-access-control-scenarios"></a>一般的なリムーバブル ストレージ アクセス制御のシナリオ
+## <a name="common-removable-storage-access-control-scenarios"></a>一般的なリムーバブル Storage アクセス制御のシナリオ
 
-Microsoft Defender for Endpoint Removable ストレージアクセス制御について理解するために、一般的なシナリオをまとめました。
+Microsoft Defender for Endpoint Removable Storageアクセス制御について理解するために、一般的なシナリオをまとめました。
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>シナリオ 1: すべてのユーザーへの書き込みおよび実行アクセスを防止するが、特定の承認済み USB を許可する
 
 1. グループを作成する
 
-    1. グループ 1: リムーバブル 記憶域と CD/DVD。 リムーバブル 記憶域と CD/DVD の例は、グループ **9b28fae8-72f7-4267-a1a5-685f747a7146** のサンプルの Any Removable ストレージ および [CD-DVD Group.xmlファイル](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)です。
+    1. グループ 1: リムーバブル 記憶域と CD/DVD。 リムーバブル ストレージと CD/DVD の例として、グループ **9b28fae8-72f7-4267-a1a5-685f747a7146** のサンプル (Any Removable Storage および [CD-DVD Group.xmlファイル](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)) があります。
     
     2. グループ 2: デバイスのプロパティに基づく承認済み USB。 この使用例の例は、サンプル承認済み [USB Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ファイルのインスタンス ID – グループ **65fa649a-a111-4912-9294-fb6337a25038** です。
 
@@ -197,7 +197,7 @@ Microsoft Defender for Endpoint Removable ストレージアクセス制御に�
 
 1. グループを作成する
 
-    1. グループ 1: リムーバブル 記憶域と CD/DVD。 この使用例の例は、サンプル Any Removable ストレージ および [CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ファイルのグループ **9b28fae8-72f7-4267-a1a5-685f747a7146** です。
+    1. グループ 1: リムーバブル 記憶域と CD/DVD。 この使用例の例は、サンプル Any Removable Storage および [CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ファイルのグループ **9b28fae8-72f7-4267-a1a5-685f747a7146** です。
     
     2. グループ 2: サンプルの未承認の USB Group.xmlファイルのデバイス プロパティに基づく未承認 [の USB(](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ベンダー ID/製品 ID、フレンドリー名 – グループ **65fa649a-a111-4912-9294-fb6337a25038** など)。 
 
@@ -212,11 +212,11 @@ Microsoft Defender for Endpoint Removable ストレージアクセス制御に�
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>グループ ポリシーによるポリシーの展開と管理
 
-リムーバブル アクセスストレージ機能を使用すると、グループ ポリシーを介してユーザーまたはデバイス、または両方にポリシーを適用できます。
+リムーバブル アクセスStorage機能を使用すると、グループ ポリシー経由でユーザーまたはデバイス、または両方にポリシーを適用できます。
 
 ### <a name="licensing"></a>ライセンス
 
-リムーバブル アクセス制御の使用を開始するストレージ、サブスクリプションを確認 [Microsoft 365があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 リムーバブル アクセス制御にアクセスして使用ストレージ、リムーバブル アクセス制御またはMicrosoft 365 E3必要Microsoft 365 E5。
+リムーバブル アクセス制御の使用を開始するStorage、サブスクリプションを確認 [するMicrosoft 365があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 リムーバブル アクセス制御にアクセスして使用Storageするには、リムーバブル アクセスコントロールまたはMicrosoft 365 E3必要Microsoft 365 E5。
 
 ### <a name="deploying-policy-via-group-policy"></a>グループ ポリシーによるポリシーの展開
 
@@ -242,11 +242,11 @@ Microsoft Defender for Endpoint Removable ストレージアクセス制御に�
 
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>Intune OMA-URI によるポリシーの展開と管理
 
-リムーバブル アクセスストレージ機能を使用すると、OMA-URI を介してユーザーまたはデバイス、または両方にポリシーを適用できます。
+リムーバブル アクセスStorage機能を使用すると、OMA-URI を介してユーザーまたはデバイス、または両方にポリシーを適用できます。
 
 ### <a name="licensing"></a>ライセンス
 
-リムーバブル アクセス制御の使用を開始するストレージ、サブスクリプションを確認 [Microsoft 365があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 リムーバブル アクセス制御にアクセスして使用ストレージ、リムーバブル アクセス制御またはMicrosoft 365 E3必要Microsoft 365 E5。
+リムーバブル アクセス制御の使用を開始するStorage、サブスクリプションを確認 [するMicrosoft 365があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 リムーバブル アクセス制御にアクセスして使用Storageするには、リムーバブル アクセスコントロールまたはMicrosoft 365 E3必要Microsoft 365 E5。
 
 ### <a name="permission"></a>アクセス許可
 
@@ -291,9 +291,9 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
 
 この機能 (Microsoft エンドポイント マネージャー 管理センター ( https://endpoint.microsoft.com/) > Devices > Configuration profiles > Create profile > Platform: Windows 10 以降の & Profile: Device Control) はまだ使用できません。 
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>View Device Control Removable ストレージ Access Control data in Microsoft Defender for Endpoint
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint Storageデバイス コントロールリムーバブル アクセス制御データを表示する
 
-セキュリティ ポータルMicrosoft 365には、Device Control リムーバブル アクセス制御によってブロックされたリムーバブル ストレージストレージ表示されます。 セキュリティにアクセスするにはMicrosoft 365サブスクリプションが必要です。
+セキュリティ ポータルMicrosoft 365、Device Control リムーバブル アクセス制御によってブロックされたリムーバブル ストレージStorage表示されます。 セキュリティにアクセスするにはMicrosoft 365サブスクリプションが必要です。
 
 - Microsoft 365 E5 レポートの詳細
 
@@ -328,7 +328,7 @@ DeviceEvents
 
 **ポリシーが機能しない理由**
 
-最も一般的な理由は、必要な [マルウェア対策クライアントのバージョンがない場合です](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints)。
+最も一般的な理由は、必要な [マルウェア対策クライアントのバージョンがない場合です](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints)。
 
 もう 1 つの理由は、XML ファイルの "&" 文字に正しいマークダウン書式を使用しないなど、XML ファイルの形式が正しく設定されていないか、テキスト エディターがファイルの先頭にバイト オーダー マーク (BOM) 0xEF 0xBB 0xBF を追加して XML 解析が機能しないことです。 1 つの簡単な解決策は、サンプル ファイルを [ダウンロード](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) することです **([Raw]** を選択 **し、[名前** を付けて保存] を選択して) 更新します。
 

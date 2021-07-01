@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の内外のユーザーと保護されたメールでのコミュニケーションを可能にする新しい Office 365 Message Encryption 機能についてご確認ください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 9b738c0f93b8958e441b34b458942c2b34c16661
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876306"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228581"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>新しい Message Encryption 機能を設定する
 
@@ -39,13 +39,13 @@ ms.locfileid: "51876306"
 
 また、Azure RMS はほとんどの対象となるプランで自動的に有効化されるため、おそらく何もする必要はありません。 詳細については、「[Azure Rights Management を有効化する](/azure/information-protection/activate-service)」を参照してください。
 
->[!IMPORTANT]
->Exchange Online で Active Directory Rights Management サービス (AD RMS) を使用する場合、新しい OME 機能を使用する前に [Azure Information Protection に移行する](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)必要があります。 OME は、AD RMS と互換性がありません。  
+> [!IMPORTANT]
+> Exchange Online で Active Directory Rights Management サービス (AD RMS) を使用する場合、新しい OME 機能を使用する前に [Azure Information Protection に移行する](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)必要があります。 OME は、AD RMS と互換性がありません。
 
 詳しくは、次のトピックを参照してください。
 
 - [新しい OME 機能を使用するには、どのサブスクリプションが必要か](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-)については、サブスクリプションプランに Azure Information Protection (Azure RMS 機能を含む) が含まれているかどうかを確認します。
-- 対象となるサブスクリプションの購入に関する情報については、「[Azure Information Protection](https://azure.microsoft.com/services/information-protection/)」を参照してください。  
+- 対象となるサブスクリプションの購入に関する情報については、「[Azure Information Protection](https://azure.microsoft.com/services/information-protection/)」を参照してください。
 
 ### <a name="manually-activating-azure-rights-management"></a>Azure Rights Management を手動で有効化する
 
@@ -63,7 +63,7 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Exchange Online PowerShell で新しい OME 構成を確認する
 
 [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) の新しい OME 機能を使用するように Microsoft 365 テナントが適切に構成されていることを確認できます。
-  
+
 1. Microsoft 365 テナントのグローバル管理者権限を持つアカウントを使用して、[Exchange Online PowerShell に接続](/powershell/exchange/connect-to-exchange-online-powershell)します。
 
 2. Get-IRMConfiguration コマンドレットを実行します。
@@ -74,7 +74,7 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
 
      ```powershell
      Test-IRMConfiguration [-Sender <email address >]
-     ```  
+     ```
 
    **例**:
 
@@ -114,11 +114,11 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
 
 組織のメールを暗号化するために以前に構成されたメール フロー ルールがある場合は、新しい OME 機能を使用するために既存のルールを更新する必要があります。新しい展開の場合、新しいメール フローのルールを作成する必要があります。
 
->[!IMPORTANT]
->既存のメール フロー ルールを更新しない場合、ユーザーは新しい、シームレスな OME の操作環境ではなく、以前の HTML 添付ファイルの形式を使用する暗号化されたメールを引き続き受信します。
+> [!IMPORTANT]
+> 既存のメール フロー ルールを更新しない場合、ユーザーは新しい、シームレスな OME の操作環境ではなく、以前の HTML 添付ファイルの形式を使用する暗号化されたメールを引き続き受信します。
 
 メール フロー ルールは、メール メッセージを暗号化する条件、およびその暗号化を削除する条件を決定します。 ルールのアクションを設定すると、送信時に、ルールの条件に一致するすべてのメッセージが暗号化されます。
-  
+
 OME のメール フロー ルールの作成の手順については、「[Office 365 でメール メッセージを暗号化するためにメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
 
 新しい OME 機能を使用するために既存のルールを更新するには:

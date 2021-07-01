@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: クラウド専用またはハイブリッド ID モデルをADを使用して、Microsoft 365ユーザー ID サービスを管理する方法について説明します。
-ms.openlocfilehash: b54ccce6ea2a468e02d9db95e7932d847df4e64b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93a37f39a4d96d7c2e434ed6edf4df588e672a0f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905706"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228497"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 ID モデルと id モデルAzure Active Directory
 
@@ -46,7 +46,7 @@ Microsoft 365は、Microsoft 365 サブスクリプションに含まれるク�
 
 ## <a name="microsoft-365-identity-models"></a>Microsoft 365 ID モデル
 
-ユーザー アカウントを計画するには、まず、ユーザー アカウントの 2 つの ID モデルをMicrosoft 365。 組織の ID はクラウドでのみ維持するか、オンプレミスの Active Directory ドメイン サービス (AD DS) ID を維持し、ユーザーが Microsoft 365 クラウド サービスにアクセスするときに認証に使用できます。  
+ユーザー アカウントを計画するには、まず、ユーザー アカウントの 2 つの ID モデルをMicrosoft 365。 組織の ID はクラウドでのみ維持するか、オンプレミスの Active Directory ドメイン サービス (AD DS) ID を維持し、ユーザーが Microsoft 365 クラウド サービスにアクセスするときに認証に使用できます。
 
 ID の 2 種類と、最適なフィット感と利点を次に示します。
 
@@ -60,16 +60,16 @@ ID の 2 種類と、最適なフィット感と利点を次に示します。
 
 ## <a name="cloud-only-identity"></a>クラウド専用 ID
 
-クラウド専用 ID は、Azure アカウントにのみ存在するユーザー アカウントを使用AD。 クラウド専用 ID は、通常、オンプレミス のサーバーを持たない、またはローカル ID を管理するために AD DS を使用しない小規模な組織で使用されます。 
+クラウド専用 ID は、Azure アカウントにのみ存在するユーザー アカウントを使用AD。 クラウド専用 ID は、通常、オンプレミス のサーバーを持たない、またはローカル ID を管理するために AD DS を使用しない小規模な組織で使用されます。
 
 クラウド専用 ID の基本的なコンポーネントを次に示します。
- 
+
 ![クラウド専用 ID の基本的なコンポーネント](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 オンプレミスとリモート (オンライン) の両方のユーザーは、Azure ADアカウントとパスワードを使用して、クラウド Microsoft 365アクセスします。 Azure AD、保存されているユーザー アカウントとパスワードに基づいてユーザー資格情報を認証します。
 
 ### <a name="administration"></a>管理
-ユーザー アカウントは Azure AD にのみ格納されるので、クラウド ID は、Microsoft 365[管理](../admin/add-users/index.yml)センターや管理センターなどのツール[Windows PowerShell。](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md) 
+ユーザー アカウントは Azure AD にのみ格納されるので、クラウド ID は、クラウド ID などのツールを[](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)使用[Microsoft 365 管理センター管理](../admin/add-users/index.yml)Windows PowerShell。
 
 ## <a name="hybrid-identity"></a>ハイブリッド ID
 
@@ -77,7 +77,7 @@ ID の 2 種類と、最適なフィット感と利点を次に示します。
 
 Azure AD Connectは、継続的なアカウント同期を提供します。 オンプレミス サーバー上で実行し、DS の変更をADし、それらの変更を Azure サーバーに転送AD。 Azure AD Connectでは、同期するアカウントと、パスワード ハッシュ同期 (PHS) と呼ばれるハッシュバージョンのユーザー パスワードを同期するかどうかをフィルター処理できます。
 
-ハイブリッド ID を実装する場合、オンプレミスの AD DS がアカウント情報の権限を持つソースになります。 つまり、主にオンプレミスで管理タスクを実行し、Azure サーバーに同期AD。 
+ハイブリッド ID を実装する場合、オンプレミスの AD DS がアカウント情報の権限を持つソースになります。 つまり、主にオンプレミスで管理タスクを実行し、Azure サーバーに同期AD。
 
 ハイブリッド ID のコンポーネントを次に示します。
 
@@ -85,22 +85,20 @@ Azure AD Connectは、継続的なアカウント同期を提供します。 オ
 
 Azure ADテナントには、DS アカウントのADがあります。 この構成では、クラウド サービスにアクセスするオンプレミスユーザーとリモート ユーザーの両方Microsoft 365 Azure サービスに対して認証AD。
 
->[!Note]
->ハイブリッド ID のユーザー アカウントを同期するには、常AD Connect Azure サーバーを使用する必要があります。 ライセンスの割り当てとグループAD、アクセス許可の構成、およびユーザー アカウントに関連するその他の管理タスクを実行するには、Azure AD で同期されたユーザー アカウントが必要です。
->
+> [!NOTE]
+> ハイブリッド ID のユーザー アカウントを同期するには、常AD Connect Azure サーバーを使用する必要があります。 ライセンスの割り当てとグループAD、アクセス許可の構成、およびユーザー アカウントに関連するその他の管理タスクを実行するには、Azure AD で同期されたユーザー アカウントが必要です。
 
 ### <a name="administration"></a>管理
 
-元のユーザー アカウントと権限のあるユーザー アカウントはオンプレミスの AD DS に格納されますので、AD DS を管理するのと同じツールを使用して id を管理します。 
+元のユーザー アカウントと権限のあるユーザー アカウントはオンプレミスの AD DS に格納されますので、AD DS を管理するのと同じツールを使用して id を管理します。
 
-Azure 管理センターで同期されたユーザー Microsoft 365を管理するために、Microsoft 365 PowerShell を使用Microsoft 365を使用AD。
+Azure Microsoft 365 管理センターで同期Microsoft 365ユーザー アカウントを管理するために、Microsoft 365 管理センター PowerShell を使用AD。
 
 ## <a name="next-step"></a>次の手順
 
 クラウド専用 ID モデルが必要な場合は、「クラウド専用 [ID」を参照してください](cloud-only-identities.md)。
 
 ハイブリッド ID モデルが必要な場合は、「ハイブリッド ID」 [を参照してください](plan-for-directory-synchronization.md)。
-
 
 ## <a name="see-also"></a>関連項目
 

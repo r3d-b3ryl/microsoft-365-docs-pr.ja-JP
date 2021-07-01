@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在宅勤務、在宅勤務、ハイブリッド、リモート ワーカー、ハイブリッド ワーク、リモート従業員、ハイブリッド接続、リモート アクセス、在宅勤務、テレワーク、テレワーク、モバイル ワーク、リモート ジョブ、どこからでも作業、柔軟な職場
 description: ハイブリッド ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
-ms.openlocfilehash: 55f1cf5c922166e1fe3932b6fe89fbdfcbfba466
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: fed23a4607cfb47049a6540dfb592d9a8baf9d21
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788887"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229373"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Microsoft 365 を使用したハイブリッドワーク用のインフラストラクチャを設定する
 
@@ -40,9 +40,8 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 
 ![Microsoft 365 を使用してハイブリッド ワーカーを強化する](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
->[!Note]
->Microsoft 365 を初めて使用する場合は、[こちらのリソース](https://www.microsoft.com/microsoft-365) を参照してください。
->
+> [!NOTE]
+> Microsoft 365 を初めて使用する場合は、[こちらのリソース](https://www.microsoft.com/microsoft-365) を参照してください。
 
 このビデオでは、展開プロセスの概要について説明します。
 <br>
@@ -53,9 +52,9 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 
 - 接続しました
 
-  世界中のどこからでも、いつでも、ワーカーたちは以下にアクセスできます。 
+  世界中のどこからでも、いつでも、ワーカーたちは以下にアクセスできます。
 
-  - Microsoft 365 サブスクリプションのクラウドベースのサービスとデータ。 
+  - Microsoft 365 サブスクリプションのクラウドベースのサービスとデータ。
 
   - オンプレミスのアプリケーション データセンターで提供されるような組織のリソース。
 
@@ -71,11 +70,11 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 
   ハイブリッド ワーカーは、次の高度な共同作業の手法により、オンプレミスと同じように生産性を高めることができます。
 
-  - Teams を使用したオンライン会議とチャット セッション。 
+  - Teams を使用したオンライン会議とチャット セッション。
 
   - SharePoint と OneDrive を使用してグローバルなアクセシビリティとリアルタイムの共同作業を実現する、クラウドベースのファイル ストレージ用の共有ワークスペース。
 
-  - 作業を分割して完了するための共有タスクとワークフロー。 
+  - 作業を分割して完了するための共有タスクとワークフロー。
 
 シームレスなサインイン エクスペリエンスを実現するには、オンプレミスの Active Directory ドメイン サービス (AD DS) のユーザー アカウントを Azure Active Directory (Azure AD) と同期する必要があります。 Windows 10 デバイスを保護するには、そのデバイスを Intune に登録する必要があります。 インフラストラクチャの概要を次に示します。
 
@@ -86,15 +85,15 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 | 機能 | 説明 | ライセンス |
 |:-------|:-----|:-------|
 | セキュリティの既定値が適用されている MFA   | サインインには、2 つ目の認証形式を要求することで、ID とデバイスを侵害から保護します。セキュリティの既定値では、すべてのユーザー アカウントに MFA が必要です。   | Microsoft 365 E3 または E5 |
-| 条件付きアクセスが適用されている MFA| 条件付きアクセス ポリシーを使用したサインインのプロパティに基づいて MFA を要求します。    | Microsoft 365 E3 または E5 | 
-| リスクベースの条件付きアクセスが適用されている MFA   | ユーザーが Microsoft Defender for Identity でサインインするリスクに基づいて MFA を要求します。 | Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3 | 
+| 条件付きアクセスが適用されている MFA| 条件付きアクセス ポリシーを使用したサインインのプロパティに基づいて MFA を要求します。    | Microsoft 365 E3 または E5 |
+| リスクベースの条件付きアクセスが適用されている MFA   | ユーザーが Microsoft Defender for Identity でサインインするリスクに基づいて MFA を要求します。 | Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3 |
 | セルフサービスによるパスワードのリセット (SSPR)    | ユーザーによるパスワードまたはアカウントのリセットまたはロック解除を許可します。  | Microsoft 365 E3 または E5 |
 | Azure AD アプリケーション プロキシ    | イントラネット サーバーでホストされている Web ベースのアプリケーションに安全なリモート アクセスを提供します。   | 別の有料 Azure サブスクリプションが必要 |
 | Azure ポイント対サイト VPN   | Azure 仮想ネットワークを介してリモート ワーカーのデバイスからイントラネットへの安全な接続を作成します。   | 別の有料 Azure サブスクリプションが必要 |
 | Windows Virtual Desktop   | Azure で実行されている仮想デスクトップで、個人の管理されていないデバイスのみを使用できるリモート ワーカーをサポートします。 | 別の有料 Azure サブスクリプションが必要 |
-| リモート デスクトップ サービス (RDS) | 従業員によるイントラネット上の Windows ベースのコンピューターへの接続を許可します。 | Microsoft 365 E3 または E5 | 
+| リモート デスクトップ サービス (RDS) | 従業員によるイントラネット上の Windows ベースのコンピューターへの接続を許可します。 | Microsoft 365 E3 または E5 |
 | リモート デスクトップ サービス ゲートウェイ   | 通信を暗号化し、RDS ホストがインターネットに直接公開されないようにします。 | 別の Windows サーバー ライセンスが必要 |
-| Microsoft Intune | デバイスとアプリケーションを管理します。   | Microsoft 365 E3 または E5 | 
+| Microsoft Intune | デバイスとアプリケーションを管理します。   | Microsoft 365 E3 または E5 |
 | 構成マネージャーを使用するための | デバイスでのソフトウェアのインストール、更新、設定を管理します | 別の Configuration Manager ライセンスが必要 |
 | Desktop Analytics | Windows クライアントの更新プログラムの準備状況を確認します。   | 別の Configuration Manager ライセンスが必要 |
 | Windows Autopilot | 生産的に使用するために、新しいWindows 10デバイスをセットアップして事前構成します。   | Microsoft 365 E3 または E5 |

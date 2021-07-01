@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: fa111197dfd68cfcca40ce8a39befe20b97d1be8
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: fcc7d96f51121824550128e89186074e1ebc3ce0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939638"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228881"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の高度なハンティング スキーマを理解する
 
@@ -76,8 +76,8 @@ ms.locfileid: "51939638"
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | 脅威および脆弱性管理によってデバイスを評価するために使用されるさまざまなセキュリティ構成に関するサポート技術情報 (さまざまな標準およびベンチマークへのマッピングを含む)　 |
 
 >[!TIP]
->Microsoft 365 Defender で高度な検索[を](/microsoft-365/security/defender/advanced-hunting-overview)使用して、Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、Microsoft Defender for Identity のデータを使用して脅威を検出します。 [Microsoft 365 Defender を有効にする](/microsoft-365/security/defender/m365d-enable)<br><br>
-高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動する方法については、「Advanced Hunting queries を Microsoft Defender for Endpoint から移行する」を[参照してください](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)。
+>エンドポイント[の Defender、Microsoft 365 Defender、Microsoft](/microsoft-365/security/defender/advanced-hunting-overview) Defender for Office 365、Microsoft Cloud App Security、および Microsoft Defender for Identity のデータを使用して脅威を検出するには、Microsoft 365 Defender で高度な検索を使用します。 [Microsoft 365 Defender を有効にする](/microsoft-365/security/defender/m365d-enable)<br><br>
+高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に移動する方法については、「Advanced Hunting [queries](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)を Microsoft Defender for Endpoint から移行する」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)

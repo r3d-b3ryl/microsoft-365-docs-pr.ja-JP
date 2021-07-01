@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 65215d15e79ab03611bbf28c153d6882fd1c355d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177623"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229145"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -49,7 +49,7 @@ ms.locfileid: "53177623"
 攻撃表面の縮小ルールの機能セット全体を使用するには、以下が必要です。
 
 - Windows Defender ウイルス対策 AV として設定する (リアルタイム保護オン)
-- [Cloud-Delivery Protection on](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) (一部のルールでは必要)
+- [Cloud-Delivery Protection on](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) (一部のルールでは必要)
 - Windows 10 EnterpriseE5 または E3 ライセンスまたはMicrosoft 365ビジネス ライセンス
 
 攻撃表面の縮小ルールでは[、Windows E5](/windows/deployment/deploy-enterprise-licenses)ライセンスを使用して Windows E5 ライセンスを必要としますが、Defender for Endpoint で使用できる監視、分析、ワークフロー、および Microsoft 365 セキュリティ センターのレポート機能と構成機能などの高度な管理機能を利用できます。 これらの高度な機能は E3 ライセンスでは使用できませんが、イベント ビューアーを使用して攻撃表面の縮小ルール イベントを確認できます。

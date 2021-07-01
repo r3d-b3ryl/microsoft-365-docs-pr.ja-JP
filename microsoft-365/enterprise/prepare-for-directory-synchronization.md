@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用してユーザーにMicrosoft 365準備する方法と、このメソッドを使用する長期的な利点について説明します。
-ms.openlocfilehash: 7f701bf0a8b165323f7fd61b50b41fb5e18268a6
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: ee6cfe9adfe029e620d2465f08a3fbe1e9290503
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259561"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229769"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepare for directory synchronization to Microsoft 365 (Microsoft 365 へのディレクトリ同期を準備する)
 
@@ -180,7 +180,7 @@ Active Directory は、組織内のエンド ユーザーが **sAMAccountName** 
 
 ユーザーの会社の資格情報をユーザー環境に関連付ける代替 UPN サフィックスを追加するMicrosoft 365があります。 UPN サフィックスは、@ 文字の右側の UPN の一部です。 シングル サインオンに使用する UPN には文字、数字、ピリオド、ダッシュ、アンダースコアを含めることができますが、その他の種類の文字を含めることはできません。
 
-代替 UPN サフィックスを Active Directory に追加する方法の詳細については、「ディレクトリ同期の準備 [」を参照してください]( https://go.microsoft.com/fwlink/p/?LinkId=525430)。
+代替 UPN サフィックスを Active Directory に追加する方法の詳細については、「ディレクトリ同期の準備 [」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=525430)。
 
 ## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. DS UPN AD UPN と一致Microsoft 365します。
 
@@ -188,6 +188,6 @@ Active Directory は、組織内のエンド ユーザーが **sAMAccountName** 
 
 また、「 [ディレクトリ同期用に、.local](prepare-a-non-routable-domain-for-directory-synchronization.md)ドメインなど、ルートできないドメインを準備する方法」も参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 上記の手順 1 ~ 5 を実行した場合は、「ディレクトリ同期の [セットアップ」を参照してください](set-up-directory-synchronization.md)。

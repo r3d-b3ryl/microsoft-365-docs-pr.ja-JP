@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Microsoft Viva のプラントピックを計画する方法について説明します。
-ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a407fd6e6919c3b85235e317e5ed3ff103607700
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583114"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229541"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Microsoft Viva のトピックの計画
 
@@ -36,13 +36,15 @@ ms.locfileid: "52583114"
 
 ## <a name="requirements"></a>要件
 
-ビバ トピックに[サブスクライブ](https://www.microsoft.com/microsoft-viva/topics)し、グローバル管理者または管理者SharePoint管理センターにアクセスし、トピックMicrosoft 365設定する必要があります。
+ビバ トピックに[アクセスして](https://www.microsoft.com/microsoft-viva/topics)トピックを設定するには、ビバ トピックにサブスクライブし、グローバル管理者または管理者SharePoint Microsoft 365 管理センター管理者である必要があります。
 
 Topics を使用するユーザーには、トピック エクスペリエンス ライセンス **が必要** です。 ライセンスの割り当てについては [、「Microsoft Viva Topics のセットアップ」を参照してください](set-up-topic-experiences.md)。
 
 ## <a name="topic-discovery"></a>トピックの検出
 
-トピックの検出設定では、トピックのソースとして使用される SharePoint サイトを指定します。 すべての SharePoint サイトを含めるか、特定のサイトの一覧を含めるか、サイトを含めないようにすることができます。 トピック エクスペリエンスがユーザーに役立つ多数のトピックを検出できるよう、すべてのサイトを選択することをお勧めします。
+トピックの検出設定では、トピックのソースとして使用される SharePoint サイトを指定します。 これには、従来のサイトとモダン サイトの両方、およびグループに関連付Microsoft TeamsサイトMicrosoft 365含まれます。 OneDriveは含まれません。
+
+すべての SharePoint サイトを含めるか、特定のサイトの一覧を含めるか、サイトを含めないようにすることができます。 トピック エクスペリエンスがユーザーに役立つ多数のトピックを検出できるよう、すべてのサイトを選択することをお勧めします。
 
 トピックをセットアップする場合、以下のオプションから選択できます。
 
@@ -82,7 +84,7 @@ Site name,URL
 
 個々のトピック マネージャーを指定することができますが、ナレッジ マネージャーになるユーザーを含むセキュリティ グループ (または既存のグループを使用する) を作成することをお勧めします。 このセキュリティ グループは、セットアップ プロセス中に指定できます。
 
-*トピックの作成と編集*
+*トピックの作成と編集を行う*
 
 トピックの投稿者は、組織のチャンピオンと件名の専門家です。 トピックを作成および編集できます。 
 
@@ -128,7 +130,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>管理
 
-トピックをセットアップすると、セットアップ プロセスの一部として、トピック センターが自動的に作成されます。 トピック センターに名前を付け、URL を何にしたいかを考える。 名前と URL の両方をセットアップ プロセスの一部として設定し、後で管理センターで名前を変更できます (URL は変更Microsoft 365できます。 1 つのトピック センターのみを使用できます。
+トピックをセットアップすると、セットアップ プロセスの一部として、トピック センターが自動的に作成されます。 トピック センターに名前を付け、URL を何にしたいかを考える。 名前と URL の両方をセットアップ プロセスの一部として設定し、後で名前を変更することもできます (URL は変更Microsoft 365 管理センター。 1 つのトピック センターのみを使用できます。
 
 ## <a name="setup-checklist"></a>セットアップ チェックリスト
 
