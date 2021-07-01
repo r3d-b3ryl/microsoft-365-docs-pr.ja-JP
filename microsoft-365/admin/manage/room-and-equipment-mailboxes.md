@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '会議室メールボックスまたは備品用メールボックスを作成すると、組織の全ユーザーが Outlook を使用して会議やイベント用にそのメールボックスを予約できます。 '
-ms.openlocfilehash: 6960f93e8c1978f94776f067dcd0f502f0665718
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d999cb04161b1284025aa1b587fe7368c25eb4f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915172"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227933"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会議室メールボックスと備品用メールボックス
 
@@ -88,7 +88,7 @@ ms.locfileid: "50915172"
 6. 変更した場合は、[**保存**]、[**閉じる**] の順に選択します。
 
 > [!Note]
-> 会議室メールボックスと備品用メールボックスを保護するには、これらのメールボックスへのサインインをブロックします。 詳細については、「[共有メールボックス アカウントのサインインをブロックする](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account)」を参照してください。
+> 会議室メールボックスと備品用メールボックスを保護するには、これらのメールボックスへのサインインをブロックします。 詳細については、「[共有メールボックス アカウントのサインインをブロックする](/office365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account)」を参照してください。
 
 ## <a name="common-questions-about-room-and-equipment-mailboxes"></a>会議室メールボックスと備品用メールボックスについてよく寄せられる質問
 
@@ -98,15 +98,15 @@ Outlook を起動し、新しい会議を作成します。 ユーザーを追�
   
 ### <a name="how-do-you-cancel-a-room-or-equipment-request"></a>会議室または備品の依頼を取り消すにはどうすればよいですか?
 
-Outlook でスケジュールした会議を開き、出席者の場合と同様に、会議から会議室や備品を削除します。 これで、その会議室や備品が解放され、他のユーザーが予約できるようになります。
+Outlook でスケジュールした会議を開き、出席者の場合と同様に、会議から会議室や備品を削除します。これで、その会議室や備品が解放され、他のユーザーが予約できるようになります。
   
 ### <a name="does-someone-have-to-accept-or-decline-every-room-or-equipment-request"></a>誰かが会議室または備品の依頼を承認または却下する必要はありますか?
 
- いいえ。依頼を承認または却下する担当者は必要ありません。 社内の誰かが会議室または備品を自動的に予約または管理できるようにするかどうかを決定できます。 
+ いいえ。依頼を承認または却下するユーザーは必要ありません。社内の誰かが会議室または備品を自動的に予約または管理できるようにするかどうかを決定できます。 
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>会議室メールボックスまたは備品用メールボックスに製品のライセンスは必要ですか?
 
-いいえ。 組織内のほとんどのユーザーは Microsoft 365 を使用するためにライセンスが必要ですが、会議室メールボックスまたは備品用メールボックスにライセンスを割り当てる必要はありません。
+いいえ。組織内のほとんどのユーザーは Microsoft 365 を使用するためにライセンスが必要ですが、会議室メールボックスまたは備品用メールボックスにライセンスを割り当てる必要はありません。
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>会議室や備品の予約を担当する所有者は必要ですか?
 

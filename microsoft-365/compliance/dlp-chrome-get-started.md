@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: 5a2fa5958117d14715292245924dce2ff63b09a0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843832"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226961"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft Compliance Extension を開始する
 
@@ -84,11 +84,11 @@ Microsoft Compliance Extension の展開は、多段階のプロセスです。�
 4. [グループ ポリシーを使用して展開する](#deploy-using-group-policy)
 5. [拡張機能をテストする](#test-the-extension)
 6. [アラート管理ダッシュボードを使用して、Chrome DLP アラートを表示する](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)。
-7. [Activity エクスプローラーでの Chrome DLPデータの表示](#viewing-chrome-dlp-data-in-activity-explorer) 
+7. [Activity エクスプローラーでの Chrome DLPデータの表示](#viewing-chrome-dlp-data-in-activity-explorer)
 
 ### <a name="prepare-infrastructure"></a>インフラストラクチャの準備
 
-監視しているすべての Windows 10 デバイスに Microsoft Compliance Extension をロールアウトしている場合は、許可されていないアプリのリストおよび許可されていないブラウザーのリストから Google Chrome を削除する必要があります。 詳細については、「[許可されていないブラウザー](endpoint-dlp-using.md#unallowed-browsers)」を参照してください。 少数のデバイスにしかロールアウトしない場合は、Chrome を許可されていないブラウザーまたは許可されていないアプリのリストに残しておくことができます。 Microsoft Compliance Extension がインストールされているコンピューターでは、両方のリストの表示制限が回避されます。  
+監視しているすべての Windows 10 デバイスに Microsoft Compliance Extension をロールアウトしている場合は、許可されていないアプリのリストおよび許可されていないブラウザーのリストから Google Chrome を削除する必要があります。 詳細については、「[許可されていないブラウザー](endpoint-dlp-using.md#unallowed-browsers)」を参照してください。 少数のデバイスにしかロールアウトしない場合は、Chrome を許可されていないブラウザーまたは許可されていないアプリのリストに残しておくことができます。 Microsoft Compliance Extension がインストールされているコンピューターでは、両方のリストの表示制限が回避されます。
 
 ### <a name="prepare-your-devices"></a>デバイスを準備する
 
@@ -99,13 +99,13 @@ Microsoft Compliance Extension の展開は、多段階のプロセスです。�
 
 ### <a name="basic-setup-single-machine-selfhost"></a>基本的なセットアップ シングル マシンのセルフホスト
 
-これは推奨される方法です。 
+これは推奨される方法です。
 
-1. Microsoft Compliance Extension をインストールする Windows 10 コンピューターにサインインし、管理者としてこの PowerShell スクリプトを実行します。 
+1. Microsoft Compliance Extension をインストールする Windows 10 コンピューターにサインインし、管理者としてこの PowerShell スクリプトを実行します。
 
    ```powershell
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ``` 
+   ```
 
 2.  [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco) に移動します。
 
@@ -158,7 +158,7 @@ Microsoft Compliance Extension を強制インストールされた拡張機能�
 7.  **[追加]** を選択します。
 
 8.  次のポリシー情報を入力します。
-    
+
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     データ型: `String`<br/>
     値: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
@@ -221,34 +221,32 @@ Microsoft エンドポイント マネージャーを使用しない場合は、
 
 ### <a name="test-the-extension"></a>拡張機能をテストする
 
-#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>クラウド サービスへのアップロード、または許可されていないブラウザー クラウド エグレスによるアクセス  
+#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>クラウド サービスへのアップロード、または許可されていないブラウザー クラウド エグレスによるアクセス
 
 1. 機密性の高いアイテムを作成または取得し、組織の制限されたサービス ドメインの 1 つへのファイルのアップロードを試します。 機密データは、組み込みの [[機密情報の種類]](sensitive-information-type-entity-definitions.md) のいずれか、またはご所属の組織の機密情報の種類のいずれかに一致する必要があります。 テストを行っているデバイスでは、ファイルを開いた場合にこのアクションが許可されていないことを示す DLP トースト通知が表示されることが必要です。
 
-#### <a name="testing-other-dlp-scenarios-in-chrome"></a>Chrome での他の DLP シナリオのテスト 
+#### <a name="testing-other-dlp-scenarios-in-chrome"></a>Chrome での他の DLP シナリオのテスト
 
 許可されていないブラウザー/アプリのリストから Chrome を削除した後、以下のシナリオをテストして、挙動が組織の要件を満たしていることを確認できます。
 
 - クリップボードを使用して、機密アイテムのデータを他のドキュメントにコピーする
-    - テストするには、クリップボードへのコピー操作に対して保護されているファイルを Chrome ブラウザーで開き、ファイルからデータのコピーを試します。
-    - 予想される結果ファイルを開いた場合に、この操作が許可されていないことを示す DLP トースト通知が表示されます。
+  - テストするには、クリップボードへのコピー操作に対して保護されているファイルを Chrome ブラウザーで開き、ファイルからデータのコピーを試します。
+  - 予想される結果ファイルを開いた場合に、この操作が許可されていないことを示す DLP トースト通知が表示されます。
 - 文書を印刷する
-    - テストするには、クリップボードへの印刷操作に対して保護されているファイルを Chrome ブラウザーで開き、ファイルの印刷を試します。
-    - 予想される結果ファイルを開いた場合に、この操作が許可されていないことを示す DLP トースト通知が表示されます。
+  - テストするには、クリップボードへの印刷操作に対して保護されているファイルを Chrome ブラウザーで開き、ファイルの印刷を試します。
+  - 予想される結果ファイルを開いた場合に、この操作が許可されていないことを示す DLP トースト通知が表示されます。
 - USB リムーバブル メディアへのコピー
-    - テストするには、リムーバブル メディア ストレージへのファイルの保存を試します。
-    - 予想される結果ファイルを開いた場合に、この操作が許可されていないことを示す DLP トースト通知が表示されます。
+  - テストするには、リムーバブル メディア ストレージへのファイルの保存を試します。
+  - 予想される結果ファイルを開いた場合に、この操作が許可されていないことを示す DLP トースト通知が表示されます。
 - ネットワーク共有へのコピー
-    - テストするには、ネットワーク共有へのファイルの保存を試します。
-    - 予想される結果ファイルを開いた場合に、この操作が許可されていないことを示す DLP トースト通知が表示されます。
-
+  - テストするには、ネットワーク共有へのファイルの保存を試します。
+  - 予想される結果ファイルを開いた場合に、この操作が許可されていないことを示す DLP トースト通知が表示されます。
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>アラート管理ダッシュボードを使用して、Chrome DLP アラートを表示する
 
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)の **[データ損失防止]** ページを開き、**[アラート]** を選択します。
 
 2. エンドポイント DLP ポリシーの警告を表示するには、「[DLP ポリシーの警告を構成および表示する方法](dlp-configure-view-alerts-policies.md)」の手順を参照してください。
-
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>Activity エクスプローラーでのエンドポイント DLP データの表示
 
@@ -265,11 +263,12 @@ Microsoft エンドポイント マネージャーを使用しない場合は、
 2. シークレット モードはサポートされていないため、無効にする必要があります。
 
 ## <a name="next-steps"></a>次の手順
+
 デバイスがオンボードされ、Activity Explorer でアクティビティデータを表示できるようになりました。次の手順に進み、機密アイテムを保護する DLP ポリシーを作成します。
 
 - [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md)
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)
 - [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md)

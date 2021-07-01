@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Basic サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: 0251f601b8200bcd5f4f5a2d5640ff774cc94562
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: d0ac9835be25377496893d62076a5cdc426f3b9e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706336"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227741"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Microsoft 365 Business Basic のセットアップ
 
@@ -71,7 +71,7 @@ Microsoft 365 Business Basic を購入するときに、所有するドメイン
     > サインアップ時にドメインを購入した場合、ここでは **ドメインの追加** ステップは表示されません。[ユーザーの追加](#add-users-and-assign-licenses) に進んでください。
 
     
-4. ウィザードの手順に従って[任意の DNS ホスティング プロバイダーで Office 365 用の DNS レコードを作成](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)し、ドメインの所有を確認します。 ドメイン ホストがわかっている場合は、「[ホスト特有の手順](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)」も参照してください。
+4. ウィザードの手順に従って[任意の DNS ホスティング プロバイダーで Office 365 用の DNS レコードを作成](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)し、ドメインの所有を確認します。 ドメイン ホストがわかっている場合は、「[Microsoft 365 にドメインを追加する](/microsoft-365/admin/setup/add-domain)」も参照してください。
 
     ご利用のホスティング プロバイダーが GoDaddy または [Domain Connect](/office365/admin/get-help-with-domains/domain-connect) を有効にした別のホストである場合、プロセスは簡単です。サインインし、お客様に代わって Microsoft が認証するよう自動的に求められます。
 

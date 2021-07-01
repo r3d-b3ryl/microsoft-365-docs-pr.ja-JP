@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 134c5426e428372670a50c76301a9e9e0c10b343
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 8dc57bfe395ad76e6b8aef336aaadb2cb7e42f81
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061669"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226673"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
@@ -44,7 +44,6 @@ Endpoint DLP を開始する前に、「[Microsoft 365サブスクリプショ�
 - Microsoft 365 A5 コンプライアンス
 - Microsoft 365 E5 の情報保護とガバナンス
 - Microsoft 365 A5 の情報保護とガバナンス
-
 
 ### <a name="permissions"></a>許可
 
@@ -84,25 +83,26 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 1. Windows 10 x64 ビルド 1809 以降を実行している必要があります。
 
-2. マルウェア対策クライアントのバージョンは 4.18.2009.7 以降です。 Windows セキュリティ アプリを開いて現在のバージョンを確認し、[設定] アイコンを選択して、[バージョン情報] を選択します。 バージョン番号は、マルウェア対策クライアントのバージョンの下に表示されます。 Windows Update KB4052623 をインストールして、最新のマルウェア対策クライアントのバージョンに更新します。 
+2. マルウェア対策クライアントのバージョンは 4.18.2009.7 以降です。 Windows セキュリティ アプリを開いて現在のバージョンを確認し、[設定] アイコンを選択して、[バージョン情報] を選択します。 バージョン番号は、マルウェア対策クライアントのバージョンの下に表示されます。 Windows Update KB4052623 をインストールして、最新のマルウェア対策クライアントのバージョンに更新します。
 
    > [!NOTE]
    > 注: Windows セキュリティ コンポーネントはいずれもアクティブである必要はなく、Windows セキュリティの状態に関係なくエンドポイント DLP を実行できますが、[リアルタイム保護と動作の監視](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) を有効にする必要があります。
- 
-3. 次の Windows Update がインストールされています。 
- 
+
+3. 次の Windows Update がインストールされています。
+
    > [!NOTE]
    > これらの更新プログラムは、デバイスをエンドポイント DLP にオンボードするための前提条件ではありませんが、重要な問題の修正が含まれているため、製品を使用する前にインストールする必要があります。
 
-    - Windows 10 1809 の場合 - KB4559003、KB4577069、KB4580390
-    - Windows 10 1903 または 1909 の場合 - KB4559004、KB4577062、KB4580386
-    - Windows 10 2004 の場合 - KB4568831、KB4577063
-    - Office 2016 を実行しているデバイスの場合 (他の Office バージョンではない) - KB4577063 
+   - Windows 10 1809 の場合 - KB4559003、KB4577069、KB4580390
+   - Windows 10 1903 または 1909 の場合 - KB4559004、KB4577062、KB4580386
+   - Windows 10 2004 の場合 - KB4568831、KB4577063
+   - Office 2016 を実行しているデバイスの場合 (他の Office バージョンではない) - KB4577063
 
 4. すべてのデバイスは、次のいずれかを満たしている必要があります。
-- [Azure Active Directory (Azure AD) への参加](/azure/active-directory/devices/concept-azure-ad-join)
-- [Hybrid Azure AD への参加](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-- [AAD の登録](/azure/active-directory/user-help/user-help-register-device-on-network)
+
+   - [Azure Active Directory (Azure AD) への参加](/azure/active-directory/devices/concept-azure-ad-join)
+   - [Hybrid Azure AD への参加](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+   - [AAD の登録](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. エンドポイント デバイスに Microsoft Chromium Edge ブラウザーをインストールして、クラウドへのアップロード アクティビティのポリシー アクションを適用します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。
 
@@ -124,7 +124,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 1. [Microsoft コンプライアンスセンター](https://compliance.microsoft.com)を開きます。
 
-2. コンプライアンスセンターの設定ページを開き、[**オンボードデバイス**]を選択します。 
+2. コンプライアンスセンターの設定ページを開き、[**オンボードデバイス**]を選択します。
 
    > [!div class="mx-imgBorder"]
    > ![デバイス管理を有効にする](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -140,7 +140,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
    > [!div class="mx-imgBorder"]
    > ![導入方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-   
+
 6. 「[Windows 10 マシンのオンボーディングツールと方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
 
     - グループポリシーを使用した Windows 10 マシンのオンボード
@@ -166,13 +166,12 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
    > [!div class="mx-imgBorder"]
    > ![デバイス管理](../media/endpoint-dlp-getting-started-2-device-management.png)
-   
+
 4. 追加のデバイスをオンボードする必要がある場合は、[**オンボーディング**]を選択します。
 
 5. これらの追加デバイスに導入する方法を[**導入方法**]リストから選択し、[**パッケージをダウンロード**]します。
 
 6. 「[Windows 10 マシンのオンボーディングツールと方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
-
     - グループポリシーを使用した Windows 10 マシンのオンボード
     - Microsoft Endpoint Configuration Manager を使用した Windows 10 マシンのオンボード
     - モバイルデバイス管理ツールを使用した Windows 10 マシンのオンボード
@@ -190,7 +189,6 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 2. エンドポイント DLP ポリシーの警告を表示するには、「[DLP ポリシーの警告を構成および表示する方法](dlp-configure-view-alerts-policies.md)」の手順を参照してください。
 
-
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Activity エクスプローラーでのEndpoint DLPデータの表示
 
 1. Microsoft 365 コンプライアンスセンターでドメインの[データ分類ページ](https://compliance.microsoft.com/dataclassification?viewid=overview)を開き、Activity エクスプローラーを選択します。
@@ -201,11 +199,12 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
    > ![エンドポイント デバイスのアクティビティ エクスプローラー フィルター](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>次の手順
+
 デバイスがオンボードされ、Activity Explorer でアクティビティデータを表示できるようになりました。次の手順に進み、機密アイテムを保護する DLP ポリシーを作成します。
 
 - [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md)
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)
 - [エンドポイントのデータ損失防止の使用](endpoint-dlp-using.md)

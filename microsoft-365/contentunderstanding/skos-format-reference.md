@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: 「SharePoint 分類計画」のためのSKOSフォーマットの詳細
-ms.openlocfilehash: 6a565de9598706e998206304093ed86a1a55704d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c08073f453ef0b6a224829b7d4cb4034b74ed14
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911176"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228737"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>「SharePoint 分類計画」のためのSKOSフォーマットの詳細
 
@@ -49,13 +49,13 @@ ms.locfileid: "50911176"
 
 ## <a name="sharepoint-taxonomy-vocabulary"></a>SharePoint の分類ボキャブラリ
 
-分類は、正式な分類システムです。 分類により、何かを記述する単語、ラベル、および用語はグループ化され、それらのグループは 1 つの階層として配置されます。
+分類は、正式なクラス分けシステムです。分類により、何かを記述する単語、ラベル、および用語はグループ化され、それらのグループは 1 つの階層に配置されます。
 
 **sharepoint-taxonomy:用語**
 
 管理されたメタデータ階層内に用語またはキーワードを表します。
 
-[Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) は、SharePoint [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore)の最小単位です。 各[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) は[TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group)に属する [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) に属します。 
+[Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) は、SharePoint [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore)の最小単位です。 各[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) は[TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group)に属する [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) に属します。
 
 [項](/dotnet/api/microsoft.sharepoint.taxonomy.term) を定義する構文は次のとおりです。
 
@@ -79,14 +79,14 @@ ex:TermA    a    sharepoint-taxonomy:Term;
 - 複数の子[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)を持っていますが、親 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)は1つだけです。
 - もしそれが[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)のtopLevelTermOfの場合、親 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)が定義されていません。 
 - [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore)作業言語毎に1つの defaultLabel が用意されています。
-- 親 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)が含まれていないか、[TermSet ](/dotnet/api/microsoft.sharepoint.taxonomy.termset)のtopLevelTermOf でもない場合は、存在しません。 
+- 親 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)が含まれていないか、[TermSet ](/dotnet/api/microsoft.sharepoint.taxonomy.termset)のtopLevelTermOf でもない場合は、存在しません。
 - 同じ階層レベルで一意の defaultLabel のみを持ちます。
 
 **sharepoint-taxonomy:TermSet**
 
 "TermSet" と呼ばれる、階層構造またはフラットな用語オブジェクトのセットを表します。
 
-名前が示しているように、TermSet は、[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)のセットです。 [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) の [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) は [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)に属している必要があります。 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) は独自に存在できません。 
+名前が示しているように、TermSet は、[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)のセットです。 [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) の [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) は [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)に属している必要があります。 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) は独自に存在できません。
 
 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) を定義する構文は次のとおりです。
 
@@ -105,7 +105,7 @@ ex:TermSetA    a    sharepoint-taxonomy:TermSet;
 
 **sharepoint-taxonomy:hasTopLevelTerm**
 
-SharePoint では、このプロパティを使用して、[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)([TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)の[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) の階層へのエントリポイント) の最上位 の[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) がマッピングされます。 これは、sharepoint-taxonomy:topLevelTermOfの逆リレーションシップです。 
+SharePoint では、このプロパティを使用して、[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)([TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)の[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) の階層へのエントリポイント) の最上位 の[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) がマッピングされます。 これは、sharepoint-taxonomy:topLevelTermOfの逆リレーションシップです。
 
 これを定義する構文は次のとおりです。
 
@@ -113,7 +113,7 @@ SharePoint では、このプロパティを使用して、[TermSet](/dotnet/api
 ex:TermSetA    sharepoint-taxonomy:hasTopLevelTerm    ex:TermA.
 ```
 
->[!NOTE]
+> [!NOTE]
 > 親 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)の最上位の[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) を定義することはできません。
 
 **sharepoint-taxonomy:topLevelTermOf**
@@ -134,7 +134,7 @@ ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA.
 
 管理されたメタデータの使用を開始する前に、組織で慎重な計画が必要になる場合があります。 必要な計画のボリュームは、分類をどの程度フォーマルにするかによって異なります。 これは、メタデータに適用するコントロールのサイズによっても異なります。 階層の各レベルで、用語または TermSet の必須ラベルを構成する必要があります。
 
-1つの用語には、既定の言語で1つまたは複数のラベルを含めることができます。また、既定以外の言語には0以上のラベルを含めることができます。 用語に言語のラベルが含まれている場合は、ラベルの1つは既定のラベルにする必要があります。
+用語には、既定の言語では 1 つ以上のラベル、既定以外の言語では 0 個以上のラベルを含めることができます。用語に言語のラベルがある場合、ラベルの 1 つが既定のラベルである必要があります。
 
 **sharepoint-taxonomy:defaultLabel**
 
@@ -180,7 +180,7 @@ ex:SharedCustomProperty1    sharepoint-taxonomy:propertyName    “Shared Custom
 
 **sharepoint-taxonomy:otherLabel**
 
-これは、[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)の別の字句ラベルです。 
+これは、[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)の別の字句ラベルです。
 
 ほかのラベルを定義する構文は次のとおりです。
 
@@ -190,11 +190,11 @@ ex:TermA    sharepoint-taxonomy:otherLabel    “Term A”@en-us.
 
 ## <a name="semantic-relationships"></a>セマンティックの関係
 
-分類は階層的で、場合によっては単純な "関連用語" に関連するリレーションシップですが、"意味的な関係" やユーザー設定のリレーションシップがあるものもあります。 
+分類は階層的で、場合によっては単純な "関連用語" に関連するリレーションシップですが、"意味的な関係" やユーザー設定のリレーションシップがあるものもあります。
 
 **sharepoint-taxonomy:parent**
 
-これにより、[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) が別の[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)に階層的に関連付けられます。 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)は、[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)の最上位 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)の場合もありますが、そうでない場合は親 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)が必要です。 
+これにより、[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) が別の[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)に階層的に関連付けられます。 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)は、[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)の最上位 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)の場合もありますが、そうでない場合は親 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)が必要です。
 
 親を定義する構文は次のとおりです。
 
@@ -206,7 +206,7 @@ ex:TermA1    sharepoint-taxonomy:parent    ex:TermA.
 
 **sharepoint-taxonomy:child**
 
-このオブジェクトには、1つ以上の子 TermSet インスタンスが含まれています。これらは、TermSets プロパティからアクセスできます。 このクラスには、新しい子 TermSet オブジェクトを作成するためのメソッドもあります。 子用語と TermSet インスタンスを編集するためのアクセス許可がグループに指定されています。 
+このオブジェクトには、1つ以上の子 TermSet インスタンスが含まれています。これらは、TermSets プロパティからアクセスできます。 このクラスには、新しい子 TermSet オブジェクトを作成するためのメソッドもあります。 子用語と TermSet インスタンスを編集するためのアクセス許可がグループに指定されています。
 
 これにより、[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) が別の[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term)に階層的に関連付けられます。
 
@@ -224,7 +224,7 @@ ex:TermA    sharepoint-taxonomy:child    ex:TermA1.
 
 **sharepoint-taxonomy:description**
 
-ここでは、 [SharePoint の分類](/dotnet/api/microsoft.sharepoint.taxonomy) の語彙のエンティティについて詳しく説明します。 
+ここでは、 [SharePoint の分類](/dotnet/api/microsoft.sharepoint.taxonomy) の語彙のエンティティについて詳しく説明します。
 
 説明を追加する構文は次のとおりです。
 
@@ -280,7 +280,7 @@ ex:TermA    ex:CustomProp3    “5 cm”@en-us.
 
 **sharepoint-taxonomy:isAvailableForTagging**
 
-この機能を使用して、SharePoint のリストとライブラリで使用できる[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) または [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) を指定します。  
+この機能を使用して、SharePoint のリストとライブラリで使用できる[用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) または [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) を指定します。
 
 この構文は次のとおりです。
 
@@ -313,9 +313,9 @@ PropertyName|プロパティラベルあり|SharedCustomPropertyForTerm, LocalCu
 [SKOS](https://www.w3.org/TR/skos-primer/)これは[SharePoint の分類](/dotnet/api/microsoft.sharepoint.taxonomy) が許可されていない有効なシナリオ:
 
 - 階層冗長化-[SKOS](https://www.w3.org/TR/skos-primer/) 概念が複数の階層の概念に同時に関連付けられている います。ただし、sharepoint の分類項目：用語は、1つの sharepoint 分類：親しか持てませんので、用語の循環的な依存関係になり、それは許可されません。
-- 孤立した用語は、SharePoint の分類では許可されません。 すべての sharepoint-taxonomy: 用語には、sharepoint-taxonomy:親を持つか、あるいはTermSetのsharepoint-taxonomy:topLevelTermOfである必要があります。
+- 孤立した用語は、SharePoint 分類では許可されていません。すべての sharepoint-taxonomy:Term には sharepoint-taxonomy:parent が必要です。または、TermSet の sharepoint-taxonomy:topLevelTermOf である必要があります。
 - SharePoint の分類は、関連する関係をサポートしていません。
-- SharePoint の分類では、2種類の階層関係 (sharepoint-taxonomy:親およびsharepoint-Taxonomy:子) のみが許可されます。 
+- SharePoint の分類では、2種類の階層関係 (sharepoint-taxonomy:親およびsharepoint-Taxonomy:子) のみが許可されます。
 - [SKOS](https://www.w3.org/TR/skos-primer/)とは異なり、SharePoint 分類のボキャブラリの階層関係は、同じTermSet内の用語を使用して作成する必要があります。 
 
 ## <a name="see-also"></a>関連項目

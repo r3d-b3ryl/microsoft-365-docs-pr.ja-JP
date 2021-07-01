@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2510e840cfdd23969549cb3dbb83ec0c649741f5
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 1cdfe9d106a55cef79a63b42b47f28b2d9bb9c53
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062180"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228593"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -66,7 +66,7 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 |[ユーザーに権限の割り当てをさせる: <br /> - ユーザーに求める](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 以上 | 16.35 以上   | レビュー中   | レビュー中         | レビュー中                                                        |
 |[ラベル関連のユーザー アクティビティを監査する](data-classification-activity-explorer.md)                      | 2011 以上 | 16.43 以上 | 2.46 以上 | ロール アウト: 16.0.13628 以上 | はい <sup>\*</sup>                                                        |
 |[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101 以上             | 16.45 以上         | 2.47 以上 | 16.0.13628 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md)                                            
-|[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009 以上                                  | ロール アウト: 16.44 以上 | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | 2009 以上                                  | 16.44 以上  | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |ラベル付きおよび暗号化されたドキュメントの[共同編集と自動保存をサポート](sensitivity-labels-coauthoring.md) | 2105: 6 月 18 日以降 |  16.50 以上 | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
