@@ -1,5 +1,5 @@
 ---
-title: 手順 2.  オンプレミスのアプリとサービスへのリモート アクセスを提供します。
+title: '手順 2: オンプレミスのアプリとサービスへのリモート アクセスを提供する'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 クラウド サービスへのアクセスを最適化しながら、リモート ワーカーがオンプレミスのリソースにアクセスできることを確認します。
-ms.openlocfilehash: 9fea86bb9c564a37a519d2c7e0ef2e2fd0a59470
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: bc446cf26ec99d3e9f81564b5474777c674603bc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029136"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229433"
 ---
-# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>手順 2.  オンプレミスのアプリとサービスへのリモート アクセスを提供します。
+# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>手順 2: オンプレミスのアプリとサービスへのリモート アクセスを提供する
 
-組織でリモートアクセス VPN ソリューションを使用している場合 (通常、ネットワークのエッジに VPN サーバー、ユーザーのデバイスにインストールされた VPN クライアントがある場合)、ユーザーはリモートアクセス VPN 接続を使用してオンプレミスのアプリやサーバーにアクセスできます。 ただし、Microsoft 365 クラウドベース サービスへのトラフィックを最適化することが必要になる場合があります。
+組織でリモートアクセス VPN ソリューションを使用している場合 (通常、ネットワークのエッジに VPN サーバー、ユーザーのデバイスにインストールされた VPN クライアントがある場合)、ユーザーはリモートアクセス VPN 接続を使用してオンプレミスのアプリやサーバーにアクセスできます。ただし、Microsoft 365 クラウドベース サービスへのトラフィックを最適化することが必要になる場合があります。
 
 ユーザーが VPN ソリューションを使用していない場合は、すべてのアプリが Web ベースであるかどうかに応じて、Azure Active Directory (Azure AD) アプリケーション プロキシと Azure Point-to-Site (P2S) VPN を使用してアクセスを提供できます。
 
@@ -51,7 +51,7 @@ ms.locfileid: "52029136"
 
 ![トンネリングのない VPN クライアントからのネットワーク トラフィック](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-Microsoft 365 トラフィックは、組織を経由して間接的にルーティングする必要があります。これは、VPN クライアントの物理的な場所から遠く離れた Microsoft ネットワーク エントリ ポイントに転送される可能性があります。 この間接パスにより、ネットワーク トラフィックが遅延し、全体的なパフォーマンスを低下させます。 
+Microsoft 365 トラフィックは、組織を経由して間接的にルーティングする必要があります。これは、VPN クライアントの物理的な場所から遠く離れた Microsoft ネットワーク エントリ ポイントに転送される可能性があります。この間接パスにより、ネットワーク トラフィックが遅延し、全体的なパフォーマンスを低下させます。
 
 スプリッ トトンネリングを使用すると、VPN クライアントを構成して、特定の種類のトラフィックが VPN 接続を介して、組織ネットワークに送信されることを除外できます。
 
@@ -67,7 +67,7 @@ Microsoft 365 クラウド アプリへのほとんどのトラフィックが V
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>すべてのアプリが Web アプリであり、ハイブリッド ID がある場合にリモート アクセスを展開する
 
-リモート ワーカーが従来の VPN クライアントを使用しておらず、オンプレミスのユーザー アカウントとグループが Azure AD と同期している場合は、Azure AD アプリケーション プロキシを使用して、オンプレミスのサーバーでホストされている Web ベースのアプリケーションに対して安全なリモート アクセスを提供できます。 Web ベースのアプリケーションには、SharePoint Server サイト、Outlook Web Access サーバー、またはその他の Web ベースの基幹業務アプリケーションが含まれます。 
+リモート ワーカーが従来の VPN クライアントを使用しておらず、オンプレミスのユーザー アカウントとグループが Azure AD と同期している場合は、Azure AD アプリケーション プロキシを使用して、オンプレミスのサーバーでホストされている Web ベースのアプリケーションに対して安全なリモート アクセスを提供できます。 Web ベースのアプリケーションには、SharePoint Server サイト、Outlook Web Access サーバー、またはその他の Web ベースの基幹業務アプリケーションが含まれます。
 
 ここでは、Azure AD アプリケーション プロキシのコンポーネントを示します。
 
@@ -75,35 +75,32 @@ Microsoft 365 クラウド アプリへのほとんどのトラフィックが V
 
 詳細については、この「[Azure AD アプリケーション プロキシの概要](/azure/active-directory/manage-apps/application-proxy)」をご覧ください。
 
->[!Note]
->Azure AD アプリケーションプロキシは、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
->
+> [!NOTE]
+> Azure AD アプリケーションプロキシは、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>すべてのアプリが Web アプリではない場合にリモート アクセスを展開する
 
 リモート ワーカーが従来の VPN クライアントを使用しておらず、お使いのアプリが Web ベースではない場合は、Azure Point-to-Site (P2S) VPN を使用できます。
 
-P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワーカーのデバイスから組織ネットワークへの安全な接続を作成します。 
+P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワーカーのデバイスから組織ネットワークへの安全な接続を作成します。
 
 ![Azure P2S VPN のコンポーネント](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
 詳細については、この「[P2S VPN の概要](/azure/vpn-gateway/point-to-site-about)」をご覧ください。
 
->[!Note]
->Azure P2S VPN は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
->
+> [!NOTE]
+> Azure P2S VPN は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
 
-## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>リモート ワーカーが個人用デバイスを使用してリモート アクセスできるように、Windows Virtual Desktop を展開する 
+## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>リモート ワーカーが個人用デバイスを使用してリモート アクセスできるように、Windows Virtual Desktop を展開する
 
-個人用デバイスや管理されていないデバイスのみを使用できるリモート ワーカーをサポートするには、Azure の Windows Virtual Desktop を使用して、ユーザーが自宅から使用する仮想デスクトップを作成して割り当てます。 仮想化された PC は、組織のネットワークに接続されている PC と同じように動作します。
+個人用デバイスや管理されていないデバイスのみを使用できるリモート ワーカーをサポートするには、Azure の Windows Virtual Desktop を使用して、ユーザーが自宅から使用する仮想デスクトップを作成して割り当てます。仮想化された PC は、組織のネットワークに接続されている PC と同じように動作します。
 
 ![Azure Windows Virtual Desktop のコンポーネント](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-詳細については、「[Windows Virtual Desktop の概要](/azure/virtual-desktop/overview)」をご覧ください。 
+詳細については、「[Windows Virtual Desktop の概要](/azure/virtual-desktop/overview)」をご覧ください。
 
->[!Note]
+> [!NOTE]
 >Windows Virtual Desktop は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
->
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>リモートデスクトップサービスゲートウェイを使用して、リモートデスクトップサービス接続を保護する
 
