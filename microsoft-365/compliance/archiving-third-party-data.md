@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータを、ユーザーのメールボックスにインポートするMicrosoft 365します。
-ms.openlocfilehash: acd7f9ee838308b277f725e5b7d80c69c6407b59
-ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
+ms.openlocfilehash: 76df1ffa7afdeeda9a35744e9e4bfffae4576ca9
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53243961"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276955"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -107,7 +107,7 @@ Microsoft 365 でサード パーティ製のデータをアーカイブする�
 
 サード パーティのデータを Microsoft 365にアーカイブするには、その前に TeleMessage を使用して組織のアーカイブ サービスをセットアップする必要があります。 詳細については、[サード パーティ製データ]列のリンクをクリックして、そのデータ型のコネクタを作成するための手順を実行します。
 
-TeleMessage データ コネクタは、米国政府機関クラウドGCC環境でもMicrosoft 365利用できます。 詳細については、この記事の「米国政府機関クラウドのデータ コネクタ」セクションを参照してください。
+TeleMessage データ コネクタは、米国政府機関クラウドGCC環境でもMicrosoft 365利用できます。 詳細については、この記事の「 [米国政府機関クラウドの](#data-connectors-in-the-us-government-cloud) データ コネクタ」セクションを参照してください。
 
 |サードパーティのデータ  |訴訟ホールド|電子情報開示  |保持設定  |レコード管理  |コミュニケーション コンプライアンス  |インサイダー リスクの管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -202,14 +202,14 @@ Microsoft 365 でサード パーティのデータをアーカイブする前�
 
 |TeleMessage データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android Archiver | はい | 不要 | 不要 |
-|AT&T SMS/MMS Network Archiver | はい | 不要 | 不要 |
-|Bell SMS/MMS Network Archiver | はい | 不要 | 不要 |
-|Enterprise Number Archiver | はい | 不要 | 不要 |
-|O2 SMS と Voice Network Archiver | はい         | 不要 | 不要 |
-|TELUS SMS ネットワーク アーカイブ | はい | 不要 | 不要 |
-|Verizon SMS/MMS Network Archiver | はい | 不要 | 不要 |
-|WhatsApp Archiver | はい | 不要 | 不要 |
+|Android Archiver | はい | いいえ | いいえ |
+|AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|Enterprise Number Archiver | はい | いいえ | いいえ |
+|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
+|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|WhatsApp Archiver | はい | いいえ | いいえ |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする

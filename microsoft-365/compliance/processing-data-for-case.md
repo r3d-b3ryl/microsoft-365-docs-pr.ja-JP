@@ -18,16 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: さまざまな形式のデータを処理する方法の概要をAdvanced eDiscovery。
-ms.openlocfilehash: d7969b1ef77fc161cccc85a8dee020ebe21acdb0
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: ad723195ab0ae8a8d1200428bde00e2fcb0094ae
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751514"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256305"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>エラーの処理を処理Advanced eDiscovery
 
-*処理* とは、画像ファイルのファイル識別、埋め込みドキュメントと添付ファイルの拡張、テキスト抽出、光学式文字認識 (OCR))、その後のコンテンツのインデックス作成のプロセスです。  
+*処理* とは、ファイルの識別、埋め込みドキュメントと添付ファイルの拡張、テキスト抽出、画像ファイルの光学式文字認識 (OCR)、その後のコンテンツのインデックス作成のプロセスです。  
 
 保管担当者と保管担当者以外のデータ ソースを [ソース] タブのケースに追加すると、Microsoft 365 のすべての部分的にインデックス付けされたアイテムが処理され、完全に検索可能になります。 同様に、コンテンツがレビュー セットに追加される場合は、Microsoft 365データ ソースと非 Microsoft 365 データ ソースの両方から、このコンテンツも処理されます。
 

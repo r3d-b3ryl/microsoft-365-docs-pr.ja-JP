@@ -19,13 +19,13 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 description: ビジネス サブスクリプションのユーザーからのライセンス要求を確認および承認またはMicrosoft 365する方法について学習します。
-ms.date: 08/07/2020
-ms.openlocfilehash: 6cbfd81f4f6deba642729f1fef0b826b07a99f56
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/07/2021
+ms.openlocfilehash: 23258d21ebb413c56323aa4dab25cee60baf2be0
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535676"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256809"
 ---
 # <a name="manage-license-requests"></a>ライセンス要求の管理
 
@@ -39,7 +39,7 @@ ms.locfileid: "52535676"
 
 ライセンス要求を表示および管理するために、管理者は[ライセンス] ページの [要求] タブ **を使用** します。 一覧には、要求された製品の名前、ライセンスを要求するユーザーの名前、要求された日付、要求の状態が表示されます。 管理者はリストをフィルター処理して、保留中または完了した要求を表示できます。 要求は 30 日間保持されます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 この記事のタスクを実行するには、グローバル管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 

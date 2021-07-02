@@ -1,5 +1,5 @@
 ---
-title: 管理センターでのネットワークMicrosoft 365接続
+title: Microsoft 365 管理 センターのネットワーク接続
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,22 +14,22 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: 管理センターでのネットワーク接続Microsoft 365概要
-ms.openlocfilehash: 75451a73ed56dade796f6de288f7f4acfb147960
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+description: ネットワーク接続の概要 (Microsoft 365 管理 センター)
+ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470670"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53277003"
 ---
-# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>管理センターでのネットワークMicrosoft 365接続
+# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 センターのネットワーク接続
 
-このMicrosoft 365管理センターには、Microsoft 365 テナントから収集され、テナント内の管理ユーザーだけが表示できる集約されたネットワーク接続メトリックが含まれます。
+このMicrosoft 365 管理センターには、Microsoft 365 テナントから収集され、テナントの管理ユーザーだけが表示できる集約されたネットワーク接続メトリックが含まれます。
 
 > [!div class="mx-imgBorder"]
 > ![ネットワーク接続テスト ツール](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
-**ネットワーク評価とネットワーク****分析情報** は、[正常性管理] の [Microsoft 365管理センター **] に表示|ネットワーク接続**。
+**ネットワーク評価とネットワーク****分析情報** は、[正常性] の [Microsoft 365 管理 センター **] に表示|ネットワーク接続**。
 
 > [!div class="mx-imgBorder"]
 > ![[ネットワークパフォーマンス] ページ](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
@@ -37,7 +37,7 @@ ms.locfileid: "52470670"
 >[!NOTE]
 >管理センターのネットワーク接続は、WW Commercial および Germany のテナントをサポートしますが、モデレート、GCC、GCC、中国ではサポートされません。
 
-最初にネットワーク パフォーマンス ページに移動する場合は、グローバル ネットワークパフォーマンスのマップ、テナント全体を対象にしたネットワーク評価、リモートで作業しているユーザーとオンサイトで作業しているユーザーの割合、および現在の問題の一覧を確認するために、場所を構成する必要があります。 概要ウィンドウからドリルダウンして、特定のネットワーク パフォーマンスの指標と問題を場所別に表示できます。 詳細については、「ネットワークパフォーマンスの概要[」を参照してください。Microsoft 365管理センター](#network-connectivity-overview-in-the-microsoft-365-admin-center).
+最初にネットワーク パフォーマンス ページに移動する場合は、グローバル ネットワークパフォーマンスのマップ、テナント全体を対象にしたネットワーク評価、リモートで作業しているユーザーとオンサイトで作業しているユーザーの割合、および現在の問題の一覧を確認するために、場所を構成する必要があります。 概要ウィンドウからドリルダウンして、特定のネットワーク パフォーマンスの指標と問題を場所別に表示できます。 詳細については、「ネットワーク パフォーマンスの概要[」を参照 Microsoft 365 管理してください](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
 組織に代わって、この機能のパブリック プレビューに参加する必要があります。 通常、受け入れは直ちに行い、その後ネットワーク接続ページが表示されます。
 
@@ -75,7 +75,10 @@ WindowsLocation Service は、コンピューター上で同意する必要が�
 
 テスト レポートは、LAN サブネット情報と一緒に追加された場所にリンクされ、それ以外の場合は都市の場所にのみ表示されます。
 
-測定サンプルとオフィスの場所は、テスト レポートが完了した 2 ~ 3 分後に表示されます。 詳細については、「ネットワーク接続Microsoft 365 [(プレビュー) 」を参照してください](office-365-network-mac-perf-onboarding-tool.md)。
+測定サンプルとオフィスの場所は、テスト レポートが完了した 2 ~ 3 分後に表示されます。 詳細については、「ネットワーク接続[Microsoft 365テスト」を参照してください](office-365-network-mac-perf-onboarding-tool.md)。
+
+> [!NOTE]
+> Microsoft 365 管理センター のネットワーク接続にMicrosoft 365場所を追加する場合は、LAN サブネットに IPv4 アドレスまたは IPv6 アドレスを指定できます。 EgressIP アドレスは IPv4 を使用する必要があります。
 
 ## <a name="how-do-i-use-this-information"></a>この情報を使用する方法
 
@@ -86,7 +89,7 @@ WindowsLocation Service は、コンピューター上で同意する必要が�
 複数のオフィスの場所と非些細なネットワーク境界アーキテクチャを備える複雑な企業は、Microsoft 365 への初期オンボーディング中にこの情報を利用したり、使用状況の増加に関して発見されたネットワーク パフォーマンスの問題を修復したりすることができます。 これは、通常、ネットワーク接続を使用している小規模Microsoft 365、または単純で直接的なネットワーク接続を既に持っている企業では必要ありません。 ユーザー数が 500 人を超え、複数のオフィスの場所を持つ企業が最もメリットを得る見込みです。
 
 >[!IMPORTANT]
->Microsoft 365 管理センターのネットワーク分析情報、パフォーマンスの推奨事項、評価は現在プレビュー状態であり、機能プレビュー プログラムに登録されている Microsoft 365 テナントでのみ使用できます。
+>Microsoft 365 管理 センターのネットワーク分析情報、パフォーマンスの推奨事項、評価は現在プレビュー状態であり、機能プレビュー プログラムに登録されている Microsoft 365 テナントでのみ使用できます。
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise接続の課題
 
@@ -97,15 +100,15 @@ WindowsLocation Service は、コンピューター上で同意する必要が�
 
 ## <a name="how-we-can-solve-these-challenges"></a>これらの課題を解決する方法
 
-企業は、一般的なユーザー エクスペリエンスを向上し、Office 365接続の原則に従い、Microsoft 365管理センターのネットワーク接続機能を使用して環境を保護できます。 [](./microsoft-365-network-connectivity-principles.md) ほとんどの場合、これらの一般的な原則に従って、エンド ユーザーの待機時間、サービスの信頼性、およびサービス全体のパフォーマンスに大きなプラスの影響を与Microsoft 365。
+企業は、接続の原則に従い、Office 365 Microsoft 365 管理[](./microsoft-365-network-connectivity-principles.md)センター ネットワーク接続機能を使用することで、一般的なユーザー エクスペリエンスを向上し、環境を保護できます。 ほとんどの場合、これらの一般的な原則に従って、エンド ユーザーの待機時間、サービスの信頼性、およびサービス全体のパフォーマンスに大きなプラスの影響を与Microsoft 365。
 
 Microsoft では、大規模な企業のお客様向け Microsoft 365 に関するネットワーク パフォーマンスの問題を調査する必要が生じ、顧客のネットワーク境界インフラストラクチャに関連する根本原因が頻繁に発生する場合があります。 顧客ネットワーク境界の問題の一般的な根本原因が見つかった場合、それを識別する単純なテスト測定値を特定します。 特定の問題を識別する測定しきい値を持つテストは、任意の場所で同じ測定値をテストし、この根本原因が存在するかどうかを確認し、それを管理者とネットワークインサイトとして共有することができます。
 
 一部のネットワークインサイトは、さらに調査が必要な問題を示しているに過言ではありません。 根本原因を修正するための特定の修復アクションを表示するのに十分なテストがあるネットワークインサイトは、推奨されるアクションとして **一覧表示されます**。 これらの推奨事項は、事前に設定されたしきい値を超える値を示すライブ 指標に基づいており、環境に固有の一般的なベスト プラクティスのアドバイスよりもずっと価値が高く、推奨される変更が行われた後の実際の改善点を示します。
 
-## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>管理センターのネットワークMicrosoft 365概要
+## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>ネットワーク接続の概要 (Microsoft 365 管理 センター)
 
-Microsoft には、デスクトップクライアントと web クライアントOfficeの既存のネットワーク測定値が含Microsoft 365。 これらの測定値は、ネットワーク アーキテクチャの設計に関する分析情報とネットワーク評価を提供するために使用されています。これは、Microsoft 365管理センターの [ネットワーク接続] ページに表示されます。
+Microsoft には、デスクトップクライアントと web クライアントOfficeの既存のネットワーク測定値が含Microsoft 365。 これらの測定値は、ネットワーク アーキテクチャ設計の分析情報とネットワーク評価を提供するために使用され、Microsoft 365 管理センターの [ネットワーク接続] ページに表示されます。
 
 既定では、ネットワーク測定値に関連付けられたおおよその位置情報は、クライアント デバイスが位置する都市を識別します。 各場所でのネットワーク評価は色で表示され、各場所のユーザーの相対数は円のサイズで表されます。
 
@@ -220,7 +223,7 @@ Microsoft 365サービス フロント ドアは、Microsoft のグローバル 
 
 ### <a name="what-license-is-needed-for-this-capability"></a>この機能に必要なライセンス
 
-管理者センターへのアクセスを提供するライセンスMicrosoft 365必要です。
+ユーザーにアクセスできるライセンスが必要Microsoft 365 管理センター。
 
 ## <a name="related-topics"></a>関連項目
 

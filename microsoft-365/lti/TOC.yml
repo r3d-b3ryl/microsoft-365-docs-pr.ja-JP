@@ -1,0 +1,8 @@
+- name: M365 Office LTI (プレビュー)
+  href: index.md
+- name: キャンバスMicrosoft OneDrive LTI を使用する (プレビュー)
+  href: onedrive-lti.md
+- name: Canvas Microsoft Teamsクラスを使用する (プレビュー)
+  href: teams-classes-with-canvas.md
+- name: Canvas Microsoft Teams会議を使用する (プレビュー)
+  href: teams-meetings-with-canvas.md

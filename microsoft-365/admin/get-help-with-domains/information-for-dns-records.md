@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: ドメインをサブスクリプションに接続するために DNS レコードを作成するために必要な値Microsoft 365します。
-ms.openlocfilehash: e65d53269f5fb8625b12c4eb22f78516818045be
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: def9fbe201e158f1e071a67caeaf29ed26732f97
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635728"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256845"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードを作成するために必要な情報を収集する
 
@@ -38,29 +38,29 @@ ms.locfileid: "52635728"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センター Microsoft 365、[セットアップ ドメイン]**ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">に移動</a>します。
+1. [ドメイン] Microsoft 365 管理センター[ドメイン]**ページ設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">移動</a>します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[セットアップ ドメイン] **ページ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">に移動</a> します。
+1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[セットアップ ドメイン] **ページ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">に移動</a> します。
+1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
     
 2. [ドメイン **] ページで** ドメインを選択し、[セットアップの開始] **を選択します**。 追加する必要がある特定の値を確認するには、ドメインのセットアップ ウィザードに戻ります。
     
-3. [ドメインの **確認] ページで** 、代 **わりに [TXT レコードの** 追加] を選択し、[次へ] を **選択します**。
+3. [ドメイン **検証] ページで** 、[ **ドメインの DNS** レコードに TXT レコードを追加する] を選択し、[続行] を **選択します**。
     
 4. 表示されている **TXT 値をコピー** します。 **MS=msXXXXXXXX は次のように見えます**。 
     
-5. [任意の [DNS ホスティング](create-dns-records-at-any-dns-hosting-provider.md)プロバイダーで DNS レコードを作成する] に移動し、レジストラーの一覧から DNS ホストを選択して、詳細な手順を確認します。
+5. [DNS レコード [の追加]](create-dns-records-at-any-dns-hosting-provider.md)に移動してドメインを接続し、DNS ホストの Web サイトでレコードを追加する手順に従います。
     
 6. DNS ホストで TXT レコード (または MX レコード) を作成する手順に従って、ドメインをドメインに戻Microsoft 365。
 
@@ -70,36 +70,36 @@ ms.locfileid: "52635728"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センター Microsoft 365、[セットアップ ドメイン]**ページ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">に移動</a>します。
+1. [ドメイン] Microsoft 365 管理センター[ドメイン]**ページ設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">移動</a>します。
 
 ::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[セットアップ ドメイン] **ページ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">に移動</a> します。
+1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[セットアップ ドメイン] **ページ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">に移動</a> します。
+1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
     
-2. [ **ドメイン**] ページで、ドメインを選びます。 
+2. [ **ドメイン**] ページで、ドメインを選びます。
     
-3. [ **必要な DNS 設定**] に、追加する DNS レコードが表示されます。
+3. [DNS **の管理]** を選択し、[その他 **のオプション]** 独自の DNS を追加し、[続行] を選択して追加する  >  DNS レコードを表示します。 
     
     DNS ホストで変更を行う際もこの情報を使用できるように、値をコピーして貼り付けることができます。
     
     このページにリストされる DNS レコードのグループは、[ **ドメインの目的**] における選択によって変わります。
     
-4. [任意の DNS ホスティング プロバイダーで [DNS](create-dns-records-at-any-dns-hosting-provider.md)レコードを作成する] に移動し、レジストラーの一覧から DNS ホストを選択すると、その DNS ホストの Web サイトでレコードを追加する手順が詳細に表示されます。
-    
+4. [DNS レコード [の追加]](create-dns-records-at-any-dns-hosting-provider.md)に移動してドメインを接続し、DNS ホストの Web サイトでレコードを追加する手順に従います。
+
 5. 手順に従って、DNS ホストでレコードを作成します。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ドメインに関する FAQ](../setup/domains-faq.yml) (記事)\
-[ドメインまたは DNS レコードを追加した後で問題を](find-and-fix-issues.md) 見つけて修正する (記事)\
+[ドメインの FAQ](../setup/domains-faq.yml) (記事)\
+[ドメインまたは DNS レコードを追加後に問題を特定して解決する](find-and-fix-issues.md) (記事)\
 [ドメインの管理](index.yml) (リンク ページ)

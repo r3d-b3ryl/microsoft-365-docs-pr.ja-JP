@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: ed6dc9956c3e78f8ed39dca9cd6bf0421dd28456
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177635"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276991"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>攻撃表面の縮小ルールを使用してマルウェアの感染を防止する
 
@@ -147,7 +147,7 @@ DeviceEvents
 
 4. 抽出された場所 *cfa-events.xml* ファイルを選択します。 または [、XML を直接コピーします](event-views.md)。
 
-5. **[OK]** をクリックします。
+5. [**OK**] を選択します。
 
 イベントをフィルター処理して、次のイベントのみを表示するカスタム ビューを作成できます。そのすべては、フォルダー アクセスの制御に関連しています。
 
@@ -167,23 +167,22 @@ DeviceEvents
 
 |ルールの名前|GUID|ファイル&フォルダーの除外|サポートされる最小 OS|
 |---|:---:|---|---|
-|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上) |
-|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|サポート対象外|[Windows 10バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903) (ビルド 18362) 以上|
-|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|サポート済み|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
-|
+|[悪用された脆弱な署名済みドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上) |
+|[Adobe Reader の子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[すべてのアプリケーションOffice子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[メール クライアントと Web メールから実行可能なコンテンツをブロックする](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[難読化される可能性のあるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[実行可能Office作成するアプリケーションのブロック](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[アプリケーションOffice他のプロセスへのコードの挿入をブロックする](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[通信Officeプロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[WMI イベント サブスクリプションによる永続化のブロック](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|非サポート|[Windows 10バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903) (ビルド 18362) 以上|
+|[PSExec および WMI コマンドから発生するプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
+|[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|サポート|[Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3、ビルド 16299) 以上|
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>悪用された脆弱な署名済みドライバーの悪用をブロックする
 
@@ -199,7 +198,7 @@ DeviceEvents
 >
 > ドライバーを調べるには、この Web サイトを使用して分析 [用のドライバーを送信します](https://www.microsoft.com/en-us/wdsi/driversubmission)。
 
-このルールは、ASR がサポートされているすべてのバージョンでサポートされます。これは次の場合です。
+サポートされるオペレーティング システム
 
 - [Windows 10 Proバージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - [Windows 10 Enterpriseバージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
@@ -216,7 +215,7 @@ GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 ソーシャル エンジニアリングや悪用を通じて、マルウェアはペイロードをダウンロードして起動し、Adobe Reader から抜け出す可能性があります。 Adobe Reader によって子プロセスが生成されるのをブロックすることで、子プロセスをベクターとして使用しようとするマルウェアが拡散を防止します。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10 Version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -234,7 +233,7 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 悪意のある子プロセスを作成する方法は、一般的なマルウェア戦略です。 マルウェアがベクターとしてOffice、VBA マクロを実行し、コードを悪用して、より多くのペイロードをダウンロードして実行しようとする場合があります。 ただし、一部の正当な業務行アプリケーションでは、良性の目的で子プロセスを生成する場合があります。コマンド プロンプトを生成したり、PowerShell を使用してレジストリ設定を構成したりします。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -256,7 +255,7 @@ LSASS は、コンピューターにサインインするユーザーをWindows�
 > [!NOTE]
 > 一部のアプリでは、実行中のすべてのプロセスを列挙し、網羅的なアクセス許可を使用して開きます。 このルールは、アプリのプロセスのオープン アクションを拒否し、詳細をセキュリティ イベント ログに記録します。 このルールでは、多くのノイズが発生する可能性があります。 LSASS を列挙するだけで、機能に実際の影響がないアプリがある場合は、除外リストに追加する必要はありません。 それ自体では、このイベント ログ エントリは必ずしも悪意のある脅威を示すとは限りません。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -276,7 +275,7 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 - 実行可能ファイル (.exe、.dll.scr など)
 - スクリプト ファイル (PowerShell .ps、Visual Basic .vbs、JavaScript .js ファイルなど)
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -313,7 +312,7 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 >
 > 個々のファイルまたはフォルダー (フォルダー パスまたは完全修飾リソース名を使用) を指定できますが、適用するルールや除外を指定することはできません。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -332,7 +331,7 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
 スクリプト難読化は、マルウェア作成者と正当なアプリケーションの両方が、知的財産を隠したり、スクリプトの読み込み時間を短縮したりするために使用する一般的な手法です。 マルウェアの作成者は難読化を使用して悪意のあるコードを読みにくくし、人間やセキュリティ ソフトウェアによる詳細な調査を防止します。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -351,7 +350,7 @@ GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 
 一般的ではないが、一般企業向けアプリケーションでは、スクリプトを使用してインストーラーをダウンロードおよび起動する場合があります。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -370,7 +369,7 @@ GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 マルウェアは、Officeとして悪用され、悪意のあるOfficeをディスクに保存しようとする可能性があります。 これらの悪意のあるコンポーネントは、コンピューターの再起動後も存続し、システム上で保持されます。 したがって、このルールは一般的な永続化手法に対して防御します。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -393,7 +392,7 @@ GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 
 このルールは、Word、Excel、およびPowerPoint。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -415,7 +414,7 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 > [!NOTE]
 > このルールは、DLP ポリシー のヒントとツール ヒントをブロックOutlook。 このルールは、Outlookおよび Outlook.com にのみ適用されます。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10 Version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -436,7 +435,7 @@ GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 ファイルレスの脅威は、隠し、ファイル システムで見られない、定期的な実行制御を得るために、さまざまな戦術を採用しています。 一部の脅威は、WMI リポジトリとイベント モデルを悪用して非表示にできます。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windowsサーバー 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
@@ -454,7 +453,7 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 > [!WARNING]
 > Intune または別の MDM ソリューションを使用してデバイスを管理する場合にのみ、 [このルールを](/intune) 使用します。 このルールは、Configuration Manager クライアント[が正しく機能するために使用Microsoft Endpoint Configuration Manager](/configmgr) WMI コマンドをブロックします。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -470,7 +469,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 このルールを使用すると、管理者は、SD カードを含む USB リムーバブル ドライブから署名されていない実行可能ファイルまたは信頼されていない実行可能ファイルを実行できません。 ブロックされたファイルの種類には、実行可能ファイル (.exe、.dll.scr など) が含まれます。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -489,7 +488,7 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 OfficeVBA では、Win32 API 呼び出しが有効です。 マルウェアは [、Win32 API](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) を呼び出してディスクに直接何も書き込みせずに悪意のあるシェルコードを起動するなど、この機能を悪用する可能性があります。 ほとんどの組織では、他の方法でマクロを使用している場合でも、Win32 API を毎日の機能で呼び出す機能に依存しません。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -515,7 +514,7 @@ GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 > [!NOTE]
 > このルールを [使用するには、クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) を有効にする必要があります。
 
-このルールは次の中で導入されました。
+サポートされるオペレーティング システム
 
 - [Windows 10バージョン 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4175d3bedff86dc7f8cdafc1ff2366ca1c9cffc4
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 008263bfb948d1a2c52031635d074aca323e6764
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893742"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256893"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -70,7 +70,8 @@ Linux での Microsoft Defender for Endpoint のインストールと構成に�
   - サードパーティの管理ツール:
     - [Puppet 構成管理ツールを使用した展開](linux-install-with-puppet.md)
     - [Ansible 構成管理ツールを使用した展開](linux-install-with-ansible.md)
-
+    - [Chef 構成管理ツールを使用した展開](linux-deploy-defender-for-endpoint-with-chef.md)
+    
 インストールエラーが発生した場合は、「Microsoft Defender for Endpoint on Linux でのインストールエラーのトラブルシューティング [」を参照してください](linux-support-install.md)。
 
 
@@ -165,6 +166,6 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 エンタープライズ環境で製品を構成する方法については、「Linux での Microsoft Defender for Endpoint の基本設定の設定 [」を参照してください](linux-preferences.md)。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - ログ記録、アンインストール、その他のトピックの詳細については [、「Resources」を参照してください](linux-resources.md)。

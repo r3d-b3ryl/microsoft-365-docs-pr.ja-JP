@@ -1,5 +1,5 @@
 ---
-title: 組織の Azure Storage アカウントにドキュメントをエクスポートする
+title: 組織のアカウントにドキュメントをAzure Storageする
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,33 +15,33 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
-description: レビュー セット内のドキュメントを Azure Storage アカウントにエクスポートし、Azure Storage Explorer を使用してローカル コンピューターにダウンロードします。
-ms.openlocfilehash: dfb3892f31e857d4744f6da337c924efaa87ab11
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: レビュー セット内のドキュメントを Azure Storage アカウントにエクスポートし、Azure Storage Explorerを使用してローカル コンピューターにダウンロードします。
+ms.openlocfilehash: b7638e33a40a2ac46f4bb69b869e4c2cf6d48f65
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574729"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256509"
 ---
-# <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>レビュー セット内のドキュメントを Azure Storage アカウントにエクスポートする
+# <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>レビュー セット内のドキュメントをアカウントにAzure Storageする
 
-Advanced eDiscovery ケースのレビュー セットからドキュメントをエクスポートする場合は、組織が管理する Azure Storage アカウントにドキュメントをエクスポートできます。 このオプションを使用した場合、ドキュメントは Azure Storage の場所にアップロードされます。 ドキュメントがエクスポートされた後は、Azure Storage Explorer を使用してドキュメントにアクセス (およびローカル コンピューターまたは他の場所にダウンロード) できます。 この記事では、ドキュメントを Azure Storage アカウントにエクスポートする方法と、Azure Storage Explorer を使用して Azure Storage の場所に接続してエクスポートされたドキュメントをダウンロードする方法について説明します。 Azure Storage Explorer の詳細については、「Use Azure Storage [Explorer」を参照してください](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)。
+Advanced eDiscovery ケースのレビュー セットからドキュメントをエクスポートする場合は、組織が管理する Azure Storage アカウントにエクスポートできます。 このオプションを使用すると、ドキュメントはユーザーの場所にAzure Storageされます。 ドキュメントをエクスポートした後、ドキュメントにアクセスし (ローカル コンピューターまたは他の場所にダウンロードする) には、Azure Storage Explorer。 この記事では、Azure Storage アカウントにドキュメントをエクスポートする方法と、Azure Storage Explorer を使用して Azure Storage の場所に接続してエクスポートされたドキュメントをダウンロードする方法について説明します。 詳細については、「Use [Azure Storage Explorer」を参照Azure Storage Explorer。](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)
 
 ## <a name="before-you-export-documents-from-a-review-set"></a>レビュー セットからドキュメントをエクスポートする前に
 
 - レビュー セットからドキュメントをエクスポートするには、Azure Storage アカウントの共有アクセス署名 (SAS) トークンと、ストレージ アカウント内の特定のコンテナーの URL を指定する必要があります。 手順 2 を実行する際は、必ず手に (たとえば、テキスト ファイルにコピーする) 必要があります。
 
-  - **SAS トークン**: SAS トークンを取得するには、Azure Storage アカウント用 (コンテナー用ではなく) を取得してください。 Azure Storage でアカウントの SAS トークンを生成できます。 これを行うには、Azure Storage アカウントに移動し、[ストレージ アカウント]ブレードの [設定] で [アクセス署名の共有] を選択します。 SAS トークンを生成するときに、既定の設定を使用し、すべてのリソースの種類を許可します。
+  - **SAS トークン**: SAS トークンを取得するには、必ず、Azure Storageアカウント用 (コンテナー用ではなく) を取得してください。 アカウントの SAS トークンを生成するには、Azure Storage。 これを行うには、Azure Storage アカウントに移動し、[ストレージ アカウント]ブレードの [設定設定]**で [アクセス署名の** 共有] を選択します。 SAS トークンを生成するときに、既定の設定を使用し、すべてのリソースの種類を許可します。
 
-  - **コンテナー URL**: レビュー セットドキュメントをアップロードするコンテナーを作成し、そのコンテナーの URL のコピーを取得する必要があります。たとえば、 `https://ediscoverydata.blob.core.windows.net/exportdata` . URL を取得するには、Azure Storage のコンテナーに移動し、コンテナーブレードの [設定] セクションの [プロパティ] を選択します。
+  - **コンテナー URL**: レビュー セットドキュメントをアップロードするコンテナーを作成し、そのコンテナーの URL のコピーを取得する必要があります。たとえば、 `https://ediscoverydata.blob.core.windows.net/exportdata` . URL を取得するには、Azure Storage のコンテナーに移動し、コンテナー ブレードの [設定] セクション **で [** プロパティ] を選択します。
 
-- Azure Storage Explorer をダウンロードしてインストールします。 手順については [、「Azure Storage Explorer ツール」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=544842)。 このツールを使用して、Azure Storage アカウントのコンテナーに接続し、手順 1 でエクスポートしたドキュメントをダウンロードします。
+- アプリケーションをダウンロードしてインストールAzure Storage Explorer。 手順については[、「Azure Storage Explorer」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=544842)。 このツールを使用して、Azure Storageアカウントのコンテナーに接続し、手順 1 でエクスポートしたドキュメントをダウンロードします。
 
 ## <a name="step-1-export-the-documents-from-a-review-set"></a>手順 1: レビュー セットからドキュメントをエクスポートする
 
-最初の手順は、レビュー セットからドキュメントをエクスポートするエクスポート ジョブを作成します。 すべてのエクスポート オプションの詳細な手順については、「レビュー セットからドキュメントをエクスポート [する」を参照してください](export-documents-from-review-set.md)。 次の手順では、組織の Azure Storage アカウントにドキュメントをエクスポートする設定を強調表示します。
+最初の手順は、レビュー セットからドキュメントをエクスポートするエクスポート ジョブを作成します。 すべてのエクスポート オプションの詳細な手順については、「レビュー セットからドキュメントをエクスポート [する」を参照してください](export-documents-from-review-set.md)。 次の手順では、組織のアカウントにドキュメントをエクスポートする設定Azure Storageします。
 
-1. Microsoft 365 コンプライアンス センターで、高度な電子情報開示ケースを開き、[レビュー セット] タブを選択し、エクスポートするレビュー セットを選択します。
+1. 次のMicrosoft 365 コンプライアンス センターケースを開Advanced eDiscovery、[レビュー セット] タブを選択し、エクスポートするレビュー セットを選択します。
 
 2. レビュー セットで、[アクションのエクスポート]**を**  >  **クリックします**。
 
@@ -49,7 +49,7 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
 
 4. ドキュメント、メタデータ、コンテンツ、およびオプションセクションの設定を構成します。 これらの設定の詳細については、「レビュー セットからドキュメントをエクスポート [する」を参照してください](export-documents-from-review-set.md)。
 
-5. [出力 **オプション] セクション** で **、[Azure Storage アカウント** にエクスポートされた圧縮ディレクトリ構造] オプションを選択します。
+5. [出力 **オプション] セクション** で、[アカウントにエクスポートされた圧縮ディレクトリ構造 **Azure Storage選択** します。
 
 6. 対応するフィールドにストレージ アカウントのコンテナー URL と SAS トークンを貼り付けます。
 
@@ -59,9 +59,9 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
 
 ## <a name="step-2-obtain-the-sas-url-from-the-export-job"></a>手順 2: エクスポート ジョブから SAS URL を取得する
 
-次の手順では、手順 1 でエクスポート ジョブを作成した後に生成される SAS URL を取得します。 SAS URL を使用して、レビュー セット ドキュメントをエクスポートした Azure Storage アカウントのコンテナーに接続します。
+次の手順では、手順 1 でエクスポート ジョブを作成した後に生成される SAS URL を取得します。 SAS URL を使用して、レビュー セット ドキュメントをエクスポートAzure Storageアカウント内のコンテナーに接続します。
 
-1. [高度 **な電子情報開示] ページ** で、ケースに移動し、[エクスポート] タブ **をクリック** します。
+1. [ファイルの **Advanced eDiscovery]** ページで、ケースに移動し、[エクスポート] タブ **をクリック** します。
 
 2. [**エクスポート**]タブで、ダウンロードするエクスポートジョブをクリックします。 これは、手順 1 で作成したエクスポート ジョブです。
 
@@ -70,19 +70,19 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
    ![[場所] の下に表示される SAS URL をコピーする](../media/eDiscoExportJob.png)
 
    > [!TIP]
-   > エクスポート ジョブに表示される SAS URL は、コンテナー URL と Azure Storage アカウントの SAS トークンの連結です。 エクスポート ジョブからコピーするか、URL と SAS トークンを組み合わせて作成できます。
+   > エクスポート ジョブに表示される SAS URL は、コンテナー URL と、ユーザーアカウントの SAS トークンAzure Storageです。 エクスポート ジョブからコピーするか、URL と SAS トークンを組み合わせて作成できます。
 
-## <a name="step-3-connect-to-the-azure-storage-container"></a>手順 3: Azure Storage コンテナーに接続する
+## <a name="step-3-connect-to-the-azure-storage-container"></a>手順 3: ConnectコンテナーにAzure Storageする
 
-最後に、Azure Storage Explorer と SAS URL を使用して Azure Storage アカウントのコンテナーに接続し、エクスポートされたドキュメントをローカル コンピューターにダウンロードします。
+最後に、Azure Storage Explorer と SAS URL を使用して Azure Storage アカウントのコンテナーに接続し、エクスポートしたドキュメントをローカル コンピューターにダウンロードします。
 
-1. ダウンロードしてインストールした Azure Storage Explorer を起動します。
+1. ダウンロードしてインストールAzure Storage Explorerを開始します。
 
-2. [接続ダイアログ **を開く] アイコンを** クリックします。
+2. [開く **] ダイアログ Connectクリック** します。
 
    ![[アカウントの追加] アイコンをクリックします。](../media/AzureStorageConnect.png)
 
-3. [Azure **ストレージへの接続] ページで、[BLOB** コンテナー] **をクリックします**。
+3. [アクセスする **Connect] ページAzure Storage** Blob コンテナー]**をクリックします**。
 
 4. [認証方法 **の選択] ページ** で、[共有アクセス署名 **(SAS)** ] オプションを選択し、[次へ] を **クリックします**。
 
@@ -92,13 +92,13 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
 
     コンテナー名が [表示名] ボックス **に表示されます** 。 この名前は編集できます。
 
-6. [ **次へ]** をクリックして **概要ページを表示** し、[接続] を **クリックします**。
+6. [**次へ]** をクリックして **概要ページを表示** し、[次へ]**をConnect。**
 
-    [Blob **コンテナー]** ノード **([ストレージ アカウント**  >  **] (接続されたコンテナー) が** \> 開きます。
+    Blob **コンテナー ノード**([アカウント] の **Storage**  >  **(接続されたコンテナー)** \> が開きます。
 
     ![Blobs コンテナー ノードのジョブのエクスポート](../media/AzureStorageConnect5.png)
 
-    手順 5 の表示名を持つコンテナーが含まれる。 このコンテナーには、Azure Storage アカウントのコンテナーにダウンロードしたエクスポート ジョブごとにフォルダーが含まれる。 これらのフォルダーの名前は、エクスポート ジョブの ID に対応する ID です。 これらのエクスポートの ID (およびエクスポートの名前) は、[高度な電子情報開示] ケースの [ジョブ] タブに一覧表示されているエクスポートジョブの各準備データのフライアウト ページの [サポート情報] にあります。 
+    手順 5 の表示名を持つコンテナーが含まれる。 このコンテナーには、エクスポート アカウントのコンテナーにダウンロードしたエクスポート ジョブごとにフォルダー Azure Storageされます。 これらのフォルダーの名前は、エクスポート ジョブの ID に対応する ID です。 これらのエクスポートの ID (およびエクスポートの名前) は、Advanced eDiscovery ケースの [ジョブ] タブに一覧表示されているエクスポート ジョブの各準備データのフライアウト ページの [サポート情報] にあります。 
 
 7. エクスポート ジョブ フォルダーをダブルクリックして開きます。
 
@@ -110,16 +110,16 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
 
 9. エクスポートしたファイルをダウンロードする場所を指定して、[フォルダを選択]をクリックします。
 
-    Azure Storage Explorer は、ダウンロード プロセスを開始します。 エクスポートしたアイテムのダウンロードの状態が [アクティビティ] ウィンドウ **に表示** されます。 ダウンロードが完了すると、メッセージが表示されます。
+    このAzure Storage Explorerダウンロード プロセスを開始します。 エクスポートしたアイテムのダウンロードの状態が [アクティビティ] ウィンドウ **に表示** されます。 ダウンロードが完了すると、メッセージが表示されます。
 
 > [!NOTE]
-> Azure Storage Explorer でエクスポート ジョブ全体をダウンロードする代わりに、ダウンロードして表示する特定のアイテムを選択できます。
+> エクスポート ジョブ全体をダウンロードする代わりにAzure Storage Explorerダウンロードして表示する特定のアイテムを選択できます。
 
 ## <a name="more-information"></a>詳細情報
 
 - エクスポート ジョブ フォルダーには、次の項目が含まれます。 エクスポート フォルダー内の実際のアイテムは、エクスポート ジョブの作成時に構成されたエクスポート オプションによって決まります。 これらのオプションの詳細については、「レビュー セットからドキュメントをエクスポート [する」を参照してください](export-documents-from-review-set.md)。
 
-  - Export_load_file.csv: この CSV ファイルは、エクスポートされた各ドキュメントに関する情報を含む詳細エクスポート レポートです。 ファイルは、ドキュメントの各メタデータ プロパティの列で構成されます。 このレポートに含まれるメタデータの一覧と説明については、「Advanced eDiscoveryのドキュメント メタデータ フィールド」の表の「エクスポートされたフィールド名」[列を参照してください](document-metadata-fields-in-advanced-ediscovery.md)。
+  - Export_load_file.csv: この CSV ファイルは、エクスポートされた各ドキュメントに関する情報を含む詳細エクスポート レポートです。 ファイルは、ドキュメントの各メタデータ プロパティの列で構成されます。 このレポートに含まれるメタデータの一覧と説明については、「ドキュメント メタデータ フィールド」の表の「エクスポートされたフィールド名」列を参照[Advanced eDiscovery。](document-metadata-fields-in-advanced-ediscovery.md)
 
   - Summary.txt: エクスポート統計を含むエクスポートの概要を含むテキスト ファイル。
 

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841284"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276931"
 ---
 # <a name="device-images"></a>デバイスの画像
 
@@ -25,7 +25,7 @@ ms.locfileid: "52841284"
 新しい[デバイスを注文](#new-devices)する場合でも[](#existing-devices)、既存のデバイスを再利用する場合でも、デバイス上のイメージがデバイス要件を満たしていることを確認するためのいくつかのオプション[があります](device-requirements.md#check-hardware-requirements)。
 
 ## <a name="new-devices"></a>新しいデバイス
-承認された製造元から新しいデバイスを[](device-requirements.md#minimum-requirements)注文する場合は、次の手順に従って、デバイスに適切なイメージとソフトウェア構成をMicrosoft マネージド デスクトップしてください。
+承認された製造元から新しいデバイスを[](device-requirements.md#minimum-requirements)注文する場合は、次の手順に従って、デバイスに適切なイメージとソフトウェア構成をMicrosoft マネージド デスクトップしてください。 サービスに初めて特定のデバイス モデルを登録する予定がある場合は、そのモデルが期待するユーザー エクスペリエンスを提供するための例をテストする必要があります。 詳細については、「新しいデバイスの [検証」を参照してください](/microsoft-365/managed-desktop/get-started/validate-device)。
 
 ### <a name="dell"></a>Dell
 Dell の営業担当者と直接連絡を取り合い、ユーザーが承認した画像がMicrosoft マネージド デスクトップデバイスに適用されます。 Dell デバイス、イメージ、および注文プロセスに関する詳細な質問については、次の MMD_at_dell@dell.com。

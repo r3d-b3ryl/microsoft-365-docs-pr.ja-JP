@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: サブスクリプションにファイル ストレージをMicrosoft 365します。 追加のファイル ストレージを使用すると、オンラインおよびサーバーにSharePointコンテンツをOneDrive。
 ms.date: 04/02/2021
-ms.openlocfilehash: 14b688e850f62a06c39e4a315d871202e57d70d6
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: dee7debfbd2b624f3bf82bd573c81e7e1373b31e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635860"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256821"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>サブスクリプションに容量を追加する
 
@@ -36,9 +36,9 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 > [!NOTE]
 > ボリューム ライセンスまたは CSP を使用してサブスクリプションを購入した場合、Microsoftから直接組織Office 365追加Storageを購入することはできません。 サポートが必要な場合は、担当者またはパートナーにお問い合わせください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
-この記事のタスクを実行するにはSharePointまたは管理者である必要があります。 詳細については、「[管理者ロールについて](../admin/add-users/about-admin-roles.md)」を参照してください。
+この記事のタスクを実行するにはSharePointまたは管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="view-available-storage"></a>使用可能なストレージの表示
 
@@ -87,8 +87,10 @@ Office 365 Extra File Storage は、次のサブスクリプションでご利�
 - Office 365 Enterprise E3
 - Office 365 Enterprise E4
 - Office 365 Enterprise E5
-- Officeプラン 1 を使用した web SharePointの設定
-- Officeプラン 2 を使用した web SharePointの設定
+- Office 365 A3 (教員)
+- Office 365 A5 (教員)
+- Office for the webプラン 1 SharePointを使用する
+- Office for the webプラン 2 SharePointと一緒に
 - SharePoint Online プラン 1
 - SharePoint Online プラン 2
 - Microsoft 365 Business Basic

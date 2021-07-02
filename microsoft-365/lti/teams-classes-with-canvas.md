@@ -3,7 +3,7 @@ title: Canvas でMicrosoft Teamsクラスを使用する
 ms.author: v-cichur
 author: cichur
 manager: serdars
-ms.reviewer: amitman
+ms.reviewer: sovaish
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teamsクラスを統合する
-ms.openlocfilehash: 8e28cc8401dbf37d6e780b8f56dc300982abd0cc
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 50e4e8ef912a8f19f379bba29b328a5a27358b5c
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137681"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256905"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Canvas でMicrosoft Teamsクラスを使用する
 
@@ -32,18 +32,18 @@ Microsoft Teamsクラスは、ラーニング ツール相互運用性 (LTI) ア
 Instructure Canvas 内の Microsoft Teams 統合を管理する前に、Canvas の管理セットアップを完了する前に、キャンバスの **microsoft-Teams-Sync-for-Canvas** Azure アプリを Microsoft Azure テナントの教育機関の Microsoft Office 365 管理者によって承認することが重要です。
 
 1. Canvas にサインインします。
- 
+
 2. グローバル ナビゲーション **で [管理者** ] リンクを選択し、アカウントを選択します。
 
-3. 管理ナビゲーションで、[リンク]**リンクを** 設定、[統合]**タブを選択** します。 
+3. 管理ナビゲーションで、[リンク]**リンクを** 設定、[統合]**タブを選択** します。
 
 4. トグルMicrosoft Teamsして同期を有効にします。
 
    ![teams-sync](media/teams-sync.png)
 
-5. Microsoft テナント名とログイン属性を入力します。 
+5. Microsoft テナント名とログイン属性を入力します。
 
-   login 属性は、Canvas ユーザーをユーザーに関連付Azure Active Directoryされます。 
+   login 属性は、Canvas ユーザーをユーザーに関連付Azure Active Directoryされます。
 
 6. [完了 **したら設定** 更新] を選択します。
 
@@ -52,7 +52,7 @@ Instructure Canvas 内の Microsoft Teams 統合を管理する前に、Canvas �
    ![permissions](media/permissions.png)
 
 8. **[同意する]** を選択します。
- 
+
 ## <a name="canvas-admin"></a>Canvas Admin
 
 LTI 1.3 Microsoft Teamsをセットアップします。
@@ -63,8 +63,8 @@ Canvas 管理者として、環境内に LTI Microsoft Teamsクラスを追加�
 
 1. Access **Admin settings**  >  **Apps**.
 
-2. [+**アプリ] を** 選択して、LTI Teamsを追加します。 
- 
+2. [+**アプリ] を** 選択して、LTI Teamsを追加します。
+
    ![外部アプリ](media/external-apps.png)
 
 3. 構成 **の種類として [クライアント ID 別** ] を選択します。
@@ -72,8 +72,8 @@ Canvas 管理者として、環境内に LTI Microsoft Teamsクラスを追加�
    ![アプリの追加](media/add-app.png)
 
 4. 指定されたクライアント ID を入力し、[送信] を **選択します**。
-   
-   確認のためにクライアント ID Microsoft Teamsクラス LTI アプリ名が表示されます。 
+
+   確認のためにクライアント ID Microsoft Teamsクラス LTI アプリ名が表示されます。
 
 5. **[インストール]** を選択します。
 

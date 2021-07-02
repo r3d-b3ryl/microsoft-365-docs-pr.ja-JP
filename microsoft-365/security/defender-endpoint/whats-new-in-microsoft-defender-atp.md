@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6c200d4ac81f12e46b085261c5ece279839255f4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 7bb231049815da12ef6e5e48c88d79f5263f8708
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228389"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53277015"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -48,15 +48,21 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 ## <a name="june-2021"></a>2021 年 6 月
 
+- [デルタ エクスポート ソフトウェアの脆弱性評価](get-assessment-methods-properties.md#31-methods) API <br> 脆弱性とセキュリティで保護された構成 API コレクションのエクスポート [評価に](get-assessment-methods-properties.md) 加えて。 <br> デバイス別に組織のソフトウェア脆弱性評価のスナップショット全体を取得するために使用される完全なソフトウェア脆弱性評価 (JSON 応答) とは異なり、デルタ エクスポート API 呼び出しは、選択した日付と現在の日付 ("デルタ" API 呼び出し) の間に発生した変更のみを取得するために使用されます。 毎回大量のデータを含む完全なエクスポートを取得する代わりに、新規、固定、および更新された脆弱性に関する特定の情報のみを取得します。 デルタ エクスポート API 呼び出しを使用して、「修正された脆弱性の数」や「組織に追加された新しい脆弱性の数」など、さまざまな KPI を計算することもできます。
+
+- [脆弱性とセキュリティで保護された構成の評価をエクスポートする](get-assessment-methods-properties.md) API <br> デバイス単位でデータを取得脅威と脆弱性の管理 API のコレクションを追加します。 さまざまな種類のデータを取得するためのさまざまな API 呼び出しがあります。セキュリティで保護された構成評価、ソフトウェア インベントリ評価、およびソフトウェアの脆弱性評価。 各 API 呼び出しには、組織内のデバイスに必要なデータが含まれる。
+
+- [修復アクティビティ](get-remediation-methods-properties.md) API <br>  テナントで作成された修復アクティビティを脅威と脆弱性の管理応答を含む API のコレクションを追加します。 応答情報の種類には、ID による 1 つの修復アクティビティ、すべての修復アクティビティ、および 1 つの修復アクティビティの公開されたデバイスが含まれます。
+
 - [デバイス検出](device-discovery.md) <br> 追加のアプライアンスや面倒なプロセス変更を必要とせずに、企業ネットワークに接続されている管理されていないデバイスを見つけるのに役立ちます。 オンボード デバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。 その後、検出されたデバイスをオンボードして、ネットワークに管理されていないエンドポイントを持つことに関連するリスクを軽減できます。
 
    > [!IMPORTANT]
    > 標準検出は、2021 年 7 月 19 日からすべてのユーザーの既定のモードになります。 基本モードは、[設定] ページで保持できます。
 
-
 - [デバイス グループ定義には、](/microsoft-365/security/defender-endpoint/machine-groups) 条件ごとに複数の値を含めることができます。 複数のタグ、デバイス名、ドメインを 1 つのデバイス グループの定義に設定できます。
 
 ## <a name="march-2021"></a>2021 年 3 月
+
 - [アプリケーションを使用して改ざん防止を管理Microsoft Defender セキュリティ センター](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> テナント接続というメソッドを使用して、Windows 10、Windows Server 2016、Windows サーバー 2019 の改ざん防止設定 *を管理できます*。
 
 ## <a name="january-2021"></a>2021 年 1 月
@@ -64,25 +70,27 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint では、仮想デスクトップのサポートWindows追加しました。
 
 ## <a name="december-2020"></a>2020年12月
+
 - [iOS 用 Microsoft Defender for Endpoint API](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint が iOS のサポートを追加しました。 iOS で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
 ## <a name="september-2020"></a>2020 年 9 月
+
 - [Android 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint が Android のサポートを追加しました。 Android 上で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 - [macOS の脆弱性の管理とセキュリティ](tvm-supported-os.md)<br> macOS 脆弱性の管理脅威と脅威はパブリック プレビューに表示され、macOS デバイスの脆弱性を継続的に検出し、リスクに焦点を当て、修復の優先順位を設定するのに役立ちます。 詳細については、[この Microsoft Tech のブログCommunityを参照してください](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)。
 
-
 ## <a name="august-2020"></a>2020 年 8 月
+
 - [Android 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint が Android のサポートを追加しました。 Android で Microsoft Defender for Endpoint をインストール、構成、および使用する方法について説明します。
 
-
 ## <a name="july-2020"></a>2020 年7 月
+
 - [証明書のインジケーターを作成 ](manage-indicators.md) <br> 証明書を許可またはブロックするインジケーターを作成します。
 
 ## <a name="june-2020"></a>2020 年 6 月
+
 - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint が Linux のサポートを追加しました。 Linux で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
 - [評価ラボの攻撃シミュレーター](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint は、さまざまな脅威シミュレーション プラットフォームと提携し、ポータル内からプラットフォームの機能を簡単にテストできます。
-
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -104,24 +112,21 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 - [IP アドレス、URL、ドメインのインジケーター](manage-indicators.md) <BR> 独自の脅威インテリジェンスを使用して URL/ドメインを許可またはブロックできます。
 
-
 - [Microsoft 脅威エキスパート - エキスパート オンデマンド](microsoft-threat-experts.md) <BR> これで、調査のコンテキストで役立Microsoft 脅威エキスパート、ポータル内のいくつかの場所からユーザーに問い合うオプションが追加されました。
 
 - [接続された Azure AD アプリケーション](connected-applications.md)<br> [接続されたアプリケーション] ページには、組織内の Microsoft Defender for Endpoint に接続AD Azure アプリケーションに関する情報が表示されます。
 
 - [API エクスプローラー](api-explorer.md)<br> API エクスプローラーを使用すると、API クエリの作成と実行、使用可能な Microsoft Defender for Endpoint API エンドポイントの要求のテストと送信が容易になります。
 
-
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [Intune を使用したタンパープロテクションの設定](prevent-changes-to-security-settings-with-tamper-protection.md)<br/>デバイス管理ポータル (Intune) で、組織のタンパープロテクションをオン (またはオフ) Microsoft 365有効にできます。
+- [Intune を使用したタンパープロテクションの設定](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> デバイス管理ポータル (Intune) で、組織のタンパープロテクションをオン (またはオフ) Microsoft 365有効にできます。
 
-- [ライブ応答](live-response.md)<BR> リモート シェル接続を使用してデバイスに瞬時にアクセスします。 詳細な調査作業を行い、迅速に特定された脅威 (リアルタイム) を含む即時対応アクションを実行します。
+- [ライブ応答](live-response.md) <BR> リモート シェル接続を使用してデバイスに瞬時にアクセスします。 詳細な調査作業を行い、迅速に特定された脅威 (リアルタイム) を含む即時対応アクションを実行します。
 
 - [評価ラボ](evaluation-lab.md) <BR> Microsoft Defender for Endpoint 評価ラボは、プラットフォームの機能の評価、シミュレーションの実行、予防、検出、修復機能の実行に集中できるよう、デバイスと環境構成の複雑さを排除するように設計されています。
 
 - [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> これで、サーバー 2008 R2 SP1 Windowsオンボードできます。
-
 
 ## <a name="june-2019"></a>2019 年 6 月
 
@@ -133,29 +138,26 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 - [脅威に対する保護のレポート](threat-protection-reports.md)<BR>脅威保護レポートは、組織で生成されたアラートに関する高レベルの情報を提供します。
 
-
 - [Microsoft 脅威エキスパート](microsoft-threat-experts.md)<BR> Microsoft 脅威エキスパートは、Microsoft Defender for Endpoint の新しい管理された脅威検出サービスで、予防的な狩猟、事前設定、追加のコンテキストと分析情報を提供し、セキュリティ 運用センター (SOC) が脅威を迅速かつ正確に特定して対応する権限をさらに強化します。 Microsoft のお客様がセキュリティ運用機能を強化するために利用できる専門知識と光学の層が追加Microsoft 365。
 
 - [インジケーター](ti-indicator.md) <BR> インジケーターの API が一般提供されています。
 
-
 - [相互運用性](partner-applications.md) <BR> Microsoft Defender for Endpoint は、プラットフォームの検出、調査、および脅威インテリジェンス機能の強化に役立つサード パーティ製アプリケーションをサポートしています。
 
-
 ## <a name="april-2019"></a>2019 年 4 月
+
 - [Microsoft 脅威エキスパートターゲット攻撃通知機能](microsoft-threat-experts.md) <BR> Microsoft 脅威エキスパートの標的型攻撃通知アラートは、組織に合わせて調整され、迅速に配信できる限り多くの情報を提供するため、タイムライン、侵害の範囲、侵入方法など、ネットワーク内の重大な脅威に注意を払います。
 
 - [Microsoft Defender for Endpoint API](apis-intro.md) <BR> Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API を使用すると、Microsoft Defender for Endpoint の機能に基づいてワークフローを自動化し、革新することができます。
 
-
-
 ## <a name="february-2019"></a>2019 年 2 月
+
 - [インシデント](view-incidents-queue.md) <BR> インシデントは、Microsoft Defender for Endpoint の新しいエンティティであり、関連するすべてのアラートと関連エンティティをまとめ、より広範な攻撃ストーリーをナレーションし、アナリストが複雑な脅威の観点をよりよく理解します。
 
 - [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)<BR> Microsoft Defender for Endpoint センサー Windowsセンサー データを送信できるよう、オンボードでサポートされているバージョンのデバイスを使用します。
 
-
 ## <a name="october-2018"></a>2018 年 10 月
+
 - [攻撃面の減少ルール](attack-surface-reduction.md)<BR>すべての攻撃表面の縮小ルールは、サーバー 2019 Windowsサポートされています。
 
 - [制御されたフォルダー アクセス](enable-controlled-folders.md)<BR> フォルダー アクセスの制御が、サーバー 2019 Windowsサポートされています。
@@ -222,5 +224,3 @@ Threat Analytics は、新たな脅威やアウトブレイクが特定される
 Microsoft Defender ウイルス対策サービス間で検出状態を共有Microsoft 365 Microsoft Defender for Endpoint との相互運用が可能になります。 詳細については、「クラウドで提供される保護を通じて、Microsoft Defender ウイルス対策[に次世代テクノロジを使用する」を参照してください](cloud-protection-microsoft-defender-antivirus.md)。
 
     一目でブロックすると、移植できない実行可能ファイル (JS、VBS、マクロなど) と実行可能ファイルをブロックできます。 詳細については、「一目で [ブロックを有効にする」を参照してください](configure-block-at-first-sight-microsoft-defender-antivirus.md)。
-
-

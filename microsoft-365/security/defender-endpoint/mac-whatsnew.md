@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a6415ec7d39bceeb4b68de164bbdcf6ef34755ff
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: fc162939e12f0bd55da5847c6bc1bda4b3761fd7
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984774"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276907"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
@@ -37,6 +37,11 @@ ms.locfileid: "52984774"
 
 > [!IMPORTANT]
 > macOS 11 (Big Sur) では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存の顧客の場合は、このページに記載されている追加の構成プロファイルを [必ず展開してください](mac-sysext-policies.md)。
+
+## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0)
+
+- macOS 11 の状態メニューからクイック スキャンを開始できない問題に対処しました (Big Sur)
+- その他のバグ修正
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0)
 

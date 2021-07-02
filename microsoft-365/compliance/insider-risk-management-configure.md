@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 50273fabc85ecedc92b9c3ec379d3b82a63dd6e1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8bcd9577308e31eb4bd48a5b1e0ad5748ef738e9
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226445"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256329"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -74,7 +74,7 @@ ms.locfileid: "53226445"
 
 インサイダー リスク管理役割グループにユーザーを追加するには、次の手順を実行します。
 
-1. 組織の [https://protection.office.com/permissions](https://protection.office.com/permissions) 管理者アカウントの資格情報を使用してサインインMicrosoft 365します。
+1. 組織の [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) 管理者アカウントの資格情報を使用してサインインMicrosoft 365します。
 
 2. セキュリティ コンプライアンス センター &amp; で、[アクセス許可] **に移動します**。 リンクを選択して、ロールを表示および管理Office 365。
 
@@ -247,7 +247,7 @@ Defender for Endpoint を [インサイダー](/windows/security/threat-protecti
 16. [**次へ**] を選んで続行します。
 17. [**レビュー**] ページで、ポリシーに選択した設定、選択に対する提案または警告を確認します。 [**編集**] を選んで、ポリシー値を変更するか、ポリシーを作成してアクティブ化するには [**送信**] を選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 最初のインサイダー リスク管理ポリシーを作成するためにこれらの手順を完了すると、約 24 時間後にアクティビティ インジケーターからアラートの受信を開始します。 この記事の手順 4 のガイダンスまたは「新しいインサイダー リスク ポリシーの作成」の手順を使用して、必要に応じて追加のポリシー [を構成します](insider-risk-management-policies.md#create-a-new-policy)。
 

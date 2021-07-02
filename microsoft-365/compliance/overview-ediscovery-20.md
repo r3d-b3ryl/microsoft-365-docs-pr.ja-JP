@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 詳細については、Advanced eDiscoveryのソリューションMicrosoft 365。 この記事では、内部および外部Advanced eDiscovery Microsoft 365を管理するためのツールである、Microsoft 365の概要を説明します。 また、法的調査を管理するために、Advanced eDiscoveryを使用するビジネス上の理由も枠に入ります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16f597fdbbbad89116af73fdd0a607f3f03116ad
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4fe94aed10a7b9e981e2a9d46e992d5557e35dcb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840840"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256461"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概要 Microsoft 365 Advanced eDiscovery
 
@@ -95,7 +95,7 @@ Advanced eDiscoveryは、信頼する必要がある電子情報開示ソリュ�
 
 ユーザーのライセンスAdvanced eDiscovery適切な組織のサブスクリプションとユーザーごとのライセンスが必要です。
 
-- **組織のサブスクリプション:** コンプライアンス センター Advanced eDiscoveryにMicrosoft 365するには、組織に次のいずれかを指定する必要があります。
+- **組織のサブスクリプション:** 組織内のAdvanced eDiscoveryにMicrosoft 365 コンプライアンス センターするには、組織に次のいずれかを指定する必要があります。
 
   - Microsoft 365 E5 または Office 365 E5 サブスクリプション
   
@@ -111,7 +111,7 @@ Advanced eDiscoveryは、信頼する必要がある電子情報開示ソリュ�
 
   - Microsoft 365: ユーザーには、Microsoft 365 E5 ライセンス、E5 コンプライアンス アドオン ライセンス、または E5 電子情報開示および監査アドオン ライセンスが割り当てられている必要があります。 Microsoft 365 Education A5 ライセンスを割り当てる必要があります。
 
-  - Office 365: ユーザーに E5 ライセンスまたは A5 ライセンスOffice 365割りOffice 365 Education必要があります。
+  - Office 365: ユーザーには、A5 ライセンスまたは Office 365 E5割りOffice 365 Education必要があります。
 
    ライセンスを割り当てる方法については、「ユーザーにライセンスを割り当 [てる」を参照してください](/microsoft-365/admin/manage/assign-licenses-to-users)。
 
@@ -141,3 +141,7 @@ Advanced eDiscoveryは、信頼する必要がある電子情報開示ソリュ�
 [PDF ファイルとしてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
 [ファイルとしてVisioする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+
+## <a name="training"></a>トレーニング
+
+Advanced eDiscovery の基本で IT 管理者、電子情報開示マネージャー、コンプライアンス調査チームをトレーニングすると、電子情報開示ツールを使用して組織を迅速に開始Microsoft 365できます。 Microsoft 365、組織内のこれらのユーザーが電子情報開示を開始するのに役立つ次のリソースを提供します。電子情報開示と監査機能について説明[Microsoft 365。](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)
