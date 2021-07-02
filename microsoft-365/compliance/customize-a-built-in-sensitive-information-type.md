@@ -18,23 +18,23 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 組織のニーズを満たすルールを使用できるようにするカスタム機密情報タイプを作成する方法について説明します。
-ms.openlocfilehash: 7b24313c54fdf49876c58d1809cbb29159f4508f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: da79c525a268ff686c2edaf777cedf447335ed27
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114261"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227033"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>組み込みの機密情報の種類をカスタマイズする
 
-コンテンツから機密情報を探すときには、*ルール* と呼ばれるものの中にその情報を記述する必要があります。データ損失防止 (DLP) には、すぐに利用できる最も一般的な機密情報の種類を表すルールが含まれています。これらのルールを使用するには、それらをポリシーの中に組み込む必要があります。これらの組み込みのルールを組織の特定のニーズに合わせて調整する必要がある場合は、カスタムの機密情報の種類を作成することができます。このトピックでは、クレジット カード情報である可能性のある情報をより幅広い範囲で検出できるように、既存のルール コレクションが入っている XML ファイルをカスタマイズする方法について説明します。 
-  
-この例は、これ以外の組み込みの機密情報の種類に適用することもできます。機密情報の既定の種類と XML 定義のリストについては、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」のトピックを参照してください。 
-  
+コンテンツから機密情報を探すときには、*ルール* と呼ばれるものの中にその情報を記述する必要があります。データ損失防止 (DLP) には、すぐに利用できる最も一般的な機密情報の種類を表すルールが含まれています。これらのルールを使用するには、それらをポリシーの中に組み込む必要があります。これらの組み込みのルールを組織の特定のニーズに合わせて調整する必要がある場合は、カスタムの機密情報の種類を作成することができます。このトピックでは、クレジット カード情報である可能性のある情報をより幅広い範囲で検出できるように、既存のルール コレクションが入っている XML ファイルをカスタマイズする方法について説明します。
+
+この例は、これ以外の組み込みの機密情報の種類に適用することもできます。機密情報の既定の種類と XML 定義のリストについては、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」のトピックを参照してください。
+
 ## <a name="export-the-xml-file-of-the-current-rules"></a>現在のルールの XML ファイルをエクスポートする
 
 XML をエクスポートするには、[リモート PowerShell を介してセキュリティ/コンプライアンス センターに接続する](/powershell/exchange/connect-to-scc-powershell)必要があります。
-  
+
 1. PowerShell で次のように入力すると、組織のルールが画面上に表示されます。まだ独自のルールを作成していない場合は、"Microsoft Rule Package" というラベルの付いた既定の組み込みルールだけが表示されます。
 
    ```powershell
@@ -43,29 +43,29 @@ XML をエクスポートするには、[リモート PowerShell を介してセ
 
 2. 組織のルールを変数に格納するため、次のように入力します。変数に情報を格納すると、後ほどリモート PowerShell コマンドで使用するフォーマットの中で簡単に利用できます。
 
-   ```powershell    
+   ```powershell
    $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
    ```
-    
-3. そのデータをすべて含む書式設定した XML ファイルを作成するために、次のように入力します (`Set-content` は、ファイルに XML を書き込むコマンドレットの一部です。) 
+
+3. 次のように入力して、そのデータすべてを含む書式設定された XML ファイルを作成します (`Set-content` は、XML をファイルに書き込むコマンドレットの一部です)。
 
    ```powershell
    Set-Content -path C:\custompath\exportedRules.xml -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
    ```
 
    > [!IMPORTANT]
-   > ルール パックが実際に格納されている場所を指定してください。`C:\custompath\` はプレースホルダーです。 
-  
+   > ルール パックが実際に格納されている場所を指定してください。`C:\custompath\` はプレースホルダーです。
+
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>変更する必要のあるルールを XML の中から見つける
 
-上記のコマンドレットによって、既定のルールを含む *ルール コレクション* 全体がエクスポートされます。この中から、修正しようとしているクレジット カード番号のルールを探す必要があります。 
-  
+上記のコマンドレットによって、既定のルールを含む *ルール コレクション* 全体がエクスポートされます。この中から、修正しようとしているクレジット カード番号のルールを探す必要があります。
+
 1. 前のセクションでエクスポートした XML ファイルをテキスト エディターで開きます。
-    
+
 2. 下へスクロールして `<Rules>` タグに移動します。ここが、DLP ルールを含むセクションの先頭です。(この XML ファイルにはルール コレクション全体の情報が含まれているため、ルールの部分を表示するには、先頭にある他の情報をスキップする必要があります。)
-    
+
 3. クレジット カード番号のルール定義を見つけるため、*Func_credit_card* を探します。XML ではルール名にスペースを含めることができないため、スペースは通常、アンダースコアで置き換えられます。また、ルール名が省略形になることもあります。たとえば、米国の (Social Security number) のルールは、"_SSN_" という省略形になります。クレジット カード番号のルールの XML は、次のコード サンプルのようなものです。
-    
+
    ```xml
    <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
           patternsProximity="300" recommendedConfidence="85">
@@ -81,19 +81,19 @@ XML をエクスポートするには、[リモート PowerShell を介してセ
    ```
 
 XML 内でクレジット カード番号のルール定義が見つかったら、ニーズに合わせてルールの XML をカスタマイズします。(XML 定義の詳細については、このトピックの最後にある「[用語集](#term-glossary)」を参照してください。)
-  
+
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>XML を変更し、新しい機密情報の種類を作成する
 
 既定のルールは直接変更できないため、最初に、新しい機密情報の種類を作成する必要があります。カスタムの機密情報の種類では、さまざまなことができます。その概要については、「[セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。この例では、シンプルにするため、クレジット カード番号ルールの補強証拠を削除し、キーワードを追加するだけにします。
-  
+
 すべての XML ルール定義は、次のような一般的なテンプレートに基づいて作成されます。テンプレート内でクレジット カード番号定義 XML をコピーしてから貼り付け、いくつかの値を変更する必要があります (次の例の ".. ." プレースホルダーに注意してください)。続いて、変更された XML をポリシーで使用できる新しいルールとしてアップロードします。
-  
+
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
 <RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
     <Version major="1" minor="0" build="0" revision="0" />
-    <Publisher id=". . ." /> 
+    <Publisher id=". . ." />
     <Details defaultLangCode=". . .">
       <LocalizedDetails langcode=" . . . ">
          <PublisherName>. . .</PublisherName>
@@ -102,9 +102,9 @@ XML 内でクレジット カード番号のルール定義が見つかったら
       </LocalizedDetails>
     </Details>
   </RulePack>
-  
+
  <Rules>
-   <!-- Paste the Credit Card Number rule definition here.--> 
+   <!-- Paste the Credit Card Number rule definition here.-->
       <LocalizedStrings>
          <Resource idRef=". . .">
            <Name default="true" langcode=" . . . ">. . .</Name>
@@ -115,8 +115,8 @@ XML 内でクレジット カード番号のルール定義が見つかったら
 </RulePackage>
 ```
 
-ここまでで、次の例のような XML ができあがります。ルール パッケージとルールは独自の GUID によって識別されるため、2 つの一意な GUID を生成する必要があります。1 つはルール パッケージのため、もう 1 つはクレジット カード番号ルールの GUID を置き換えるために使用します。(次のコード例のエンティティ ID に指定されている GUID は、組み込みルール定義の GUID であるため、新しい GUID で置き換える必要があります。)GUID を生成するにはいくつかの方法がありますが、PowerShell で「 **[guid]::NewGuid()** 」と入力すれば容易に生成できます。 
-  
+ここまでで、次の例のような XML ができあがります。ルール パッケージとルールは独自の GUID によって識別されるため、2 つの一意な GUID を生成する必要があります。1 つはルール パッケージのため、もう 1 つはクレジット カード番号ルールの GUID を置き換えるために使用します。(次のコード例のエンティティ ID に指定されている GUID は、組み込みルール定義の GUID であるため、新しい GUID で置き換える必要があります。)GUID を生成するにはいくつかの方法がありますが、PowerShell で「 **[guid]::NewGuid()** 」と入力すれば容易に生成できます。
+
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
 <RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
@@ -131,7 +131,7 @@ XML 内でクレジット カード番号のルール定義が見つかったら
       </LocalizedDetails>
     </Details>
   </RulePack>
-  
+
  <Rules>
     <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f"
        patternsProximity="300" recommendedConfidence="85">
@@ -145,7 +145,7 @@ XML 内でクレジット カード番号のルール定義が見つかったら
       </Pattern>
     </Entity>
       <LocalizedStrings>
-         <Resource idRef="db80b3da-0056-436e-b0ca-1f4cf7080d1f"> 
+         <Resource idRef="db80b3da-0056-436e-b0ca-1f4cf7080d1f">
 <!-- This is the GUID for the preceding Credit Card Number entity because the following text is for that Entity. -->
            <Name default="true" langcode="en-us">Modified Credit Card Number</Name>
            <Description default="true" langcode="en-us">Credit Card Number that looks for additional keywords, and another version of Credit Card Number that doesn't require keywords (but has a lower confidence level)</Description>
@@ -157,8 +157,8 @@ XML 内でクレジット カード番号のルール定義が見つかったら
 
 ## <a name="remove-the-corroborative-evidence-requirement-from-a-sensitive-information-type"></a>機密情報の種類から補強証拠の要件を削除する
 
-ここまでで、セキュリティ & &amp; コンプライアンス センターにアップロードできる新しい機密情報の種類を作成できました。次の手順は、ルールをもう少し具体的にすることです。 チェックサムの条件を満たす 16 桁の番号だけを検索し、たとえばキーワードのような、追加の (補強) 証拠 を必要としないように、ルールを変更します。 これを行うには、XML のうち補強証拠を探している部分を削除する必要があります。 補強証拠は、誤検知の削減に役立ちます。 この場合、通常、クレジットカード番号の近くに特定のキーワードまたは有効期限があります。 その証拠を削除する場合は、クレジット カード番号を見つけた場合の `confidenceLevel` を低い値に調整する必要があります (この例では 85)。
-  
+ここまでで、セキュリティ &amp; コンプライアンス センターにアップロードできる新しい機密情報の種類を作成できました。次の手順は、ルールをもう少し具体的にすることです。チェックサムの条件を満たす 16 桁の番号だけを検索し、追加の (補強) 証拠 (たとえば、キーワード) を必要としないように、ルールを変更します。これを行うには、XML のうち補強証拠を探している部分を削除する必要があります。誤検知を減らすために補強証拠が非常に役立ちます。この場合、通常、クレジット カード番号の近くには特定のキーワードや有効期限があります。その証拠を削除する場合は、クレジット カード番号を見つけた場合の `confidenceLevel` を低い値に調整する必要があります (この例では 85)。
+
 ```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
       <Pattern confidenceLevel="85">
@@ -170,7 +170,7 @@ XML 内でクレジット カード番号のルール定義が見つかったら
 ## <a name="look-for-keywords-that-are-specific-to-your-organization"></a>組織に固有のキーワードを探す
 
 補強証拠が必要であるものの、異なるキーワードまたは追加のキーワードを指定し、その証拠を探す場所を変更する必要がある場合について考えてみましょう。16 桁の番号の前後から補強証拠を探す範囲を拡大または縮小するため、`patternsProximity` を調整することができます。独自のキーワードを追加するには、キーワード リストを定義し、それをルールの中で参照する必要があります。次の XML では、キーワードとして "company card" と "Contoso card" を追加し、これらの語句がクレジット カード番号の前後 150 文字以内に含まれるメッセージをクレジット カード番号として識別します。
-  
+
 ```xml
 <Rules>
 <! -- Modify the patternsProximity to be "150" rather than "300." -->
@@ -198,20 +198,20 @@ XML 内でクレジット カード番号のルール定義が見つかったら
 ## <a name="upload-your-rule"></a>ルールをアップロードする
 
 ルールをアップロードするには、次の手順を実行する必要があります。
-  
+
 1. ルールを Unicode エンコードの .xml ファイルとして保存します。これとは違うエンコードでファイルを保存すると、ルールが機能しないことに注意してください。
-    
+
 2. [リモート PowerShell を介してセキュリティ/コンプライアンス センターに接続する](/powershell/exchange/connect-to-scc-powershell)
-    
+
 3. PowerShell で次のように入力します。
 
-   ```powershell    
+   ```powershell
    New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte)
    ```
-   
+
    > [!IMPORTANT]
-   > ルール パックが実際に格納されている場所を指定してください。`C:\custompath\` はプレースホルダーです。 
-  
+   > ルール パックが実際に格納されている場所を指定してください。`C:\custompath\` はプレースホルダーです。
+
 4. 確認のために「Y」と入力し、**ENTER** キーを押します。
 
 5. 次のように入力して、新しいルールがアップロードされ、表示名が正しいことことを確認します。
@@ -221,11 +221,11 @@ XML 内でクレジット カード番号のルール定義が見つかったら
    ```
 
 機密情報の検出に新しいルールを使用するようにするには、ルールを DLP ポリシーに追加する必要があります。ルールをポリシーに追加する方法については、「[テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)」を参照してください。
-  
+
 ## <a name="term-glossary"></a>用語集
 
 このトピックの手順に登場した用語の定義は次のとおりです。
-  
+
 |**用語**|**定義**|
 |:-----|:-----|
 |エンティティ|エンティティとは、機密情報の種類 (たとえば、クレジット カード番号) のことです。各エンティティには、その ID として一意の GUID があります。GUID をコピーして XML 内で検索すると、XML ルール定義と XML ルールをローカライズしたすべての翻訳版が見つかります。また、翻訳版の GUID を検索して定義を見つけ、その GUID を検索することもできます。|
@@ -236,7 +236,7 @@ XML 内でクレジット カード番号のルール定義が見つかったら
 |パターンの confidenceLevel|DLP エンジンが一致を検索した内容の信頼性のレベルです。信頼性のレベルは、パターンの要件が満たされた場合のパターンへの一致に関連付けられます。これは、Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) を使用するときに考慮する必要のある信頼性の尺度です。|
 |patternsProximity|クレジット カード番号パターンらしき情報が見つかった場合、`patternsProximity` はその番号からどの程度近接した範囲内で補強証拠の探索を行うかを指定します。|
 |recommendedConfidence|このルールに対して推奨される信頼レベルです。推奨される信頼性は、エンティティとアフィニティに適用されます。エンティティの場合、この数値がパターンの `confidenceLevel` に対して評価されることはありません。この数値は、必要な場合に信頼レベルを選択するために役立つ提案にすぎません。アフィニティの場合、メール フロー ルール アクションが呼び出されるためには、パターンの `confidenceLevel` が `recommendedConfidence` の数値を上回っている必要があります。`recommendedConfidence` は、アクションを起動するメール フロー ルールで使用される既定の信頼レベルです。必要であれば、この代わりにパターンの信頼レベルに基づいてメール フロー ルールを起動するように手動で変更することもできます。|
-   
+
 ## <a name="for-more-information"></a>詳細情報
 
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
