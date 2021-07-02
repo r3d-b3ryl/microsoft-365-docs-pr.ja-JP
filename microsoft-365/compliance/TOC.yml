@@ -114,7 +114,7 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Exact Data Match アクティビティの通知を作成する (プレビュー)
           href: sit-edm-notifications-activities.md
-        - name: カスタム機密情報タイプを作成 - コンプライアンス センター
+        - name: カスタムの機密情報の種類の使用を開始する - コンプライアンス センター
           href: create-a-custom-sensitive-information-type.md
         - name: カスタムの機密情報の種類を作成する - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
