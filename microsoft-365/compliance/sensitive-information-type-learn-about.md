@@ -16,78 +16,78 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 7d23230ebe4321f355128d1f3268e967a35a0a89
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7e99198e0713a1940f094c3875293b2590f31e3f
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245650"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256857"
 ---
-# <a name="learn-about-sensitive-information-types"></a><span data-ttu-id="eb670-102">機密情報の種類に関する詳細情報</span><span class="sxs-lookup"><span data-stu-id="eb670-102">Learn about sensitive information types</span></span>
+# <a name="learn-about-sensitive-information-types"></a><span data-ttu-id="79711-102">機密情報の種類に関する詳細情報</span><span class="sxs-lookup"><span data-stu-id="79711-102">Learn about sensitive information types</span></span>
 
-<span data-ttu-id="eb670-103">組織の管理下にある機密性の高いアイテムを識別および分類する方法は、情報保護の分野の最初の [ステップです](./information-protection.md)。</span><span class="sxs-lookup"><span data-stu-id="eb670-103">Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](./information-protection.md).</span></span>  <span data-ttu-id="eb670-104">Microsoft 365には、分類可能なアイテムを識別する 3 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="eb670-104">Microsoft 365 provides three ways of identifying items so that they can be classified:</span></span>
+<span data-ttu-id="79711-103">組織の管理下にある機密性の高いアイテムを識別および分類する方法は、情報保護の分野の最初の [ステップです](./information-protection.md)。</span><span class="sxs-lookup"><span data-stu-id="79711-103">Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](./information-protection.md).</span></span>  <span data-ttu-id="79711-104">Microsoft 365には、分類可能なアイテムを識別する 3 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="79711-104">Microsoft 365 provides three ways of identifying items so that they can be classified:</span></span>
 
-- <span data-ttu-id="eb670-105">ユーザーが手動で行う</span><span class="sxs-lookup"><span data-stu-id="eb670-105">manually by users</span></span>
-- <span data-ttu-id="eb670-106">機密情報の種類などの自動パターン認識</span><span class="sxs-lookup"><span data-stu-id="eb670-106">automated pattern recognition, like sensitive information types</span></span>
-- [<span data-ttu-id="eb670-107">機械学習</span><span class="sxs-lookup"><span data-stu-id="eb670-107">machine learning</span></span>](classifier-learn-about.md)
+- <span data-ttu-id="79711-105">ユーザーが手動で行う</span><span class="sxs-lookup"><span data-stu-id="79711-105">manually by users</span></span>
+- <span data-ttu-id="79711-106">機密情報の種類などの自動パターン認識</span><span class="sxs-lookup"><span data-stu-id="79711-106">automated pattern recognition, like sensitive information types</span></span>
+- [<span data-ttu-id="79711-107">機械学習</span><span class="sxs-lookup"><span data-stu-id="79711-107">machine learning</span></span>](classifier-learn-about.md)
 
-<span data-ttu-id="eb670-108">機密情報の種類は、パターン ベースの分類子です。</span><span class="sxs-lookup"><span data-stu-id="eb670-108">Sensitive information types are pattern-based classifiers.</span></span> <span data-ttu-id="eb670-109">機密アイテムを識別するために、社会保障、クレジット カード、銀行口座番号などの機密情報を検出する場合は、「機密情報の種類エンティティ定義」 [を参照してください。](sensitive-information-type-entity-definitions.md)</span><span class="sxs-lookup"><span data-stu-id="eb670-109">They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md)</span></span>
+<span data-ttu-id="79711-108">機密情報の種類は、パターン ベースの分類子です。</span><span class="sxs-lookup"><span data-stu-id="79711-108">Sensitive information types are pattern-based classifiers.</span></span> <span data-ttu-id="79711-109">機密アイテムを識別するために、社会保障、クレジット カード、銀行口座番号などの機密情報を検出する場合は、「機密情報の種類エンティティ定義」 [を参照してください。](sensitive-information-type-entity-definitions.md)</span><span class="sxs-lookup"><span data-stu-id="79711-109">They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md)</span></span>
 
-## <a name="sensitive-information-types-are-used-in"></a><span data-ttu-id="eb670-110">機密情報の種類は、</span><span class="sxs-lookup"><span data-stu-id="eb670-110">Sensitive information types are used in</span></span>
+## <a name="sensitive-information-types-are-used-in"></a><span data-ttu-id="79711-110">機密情報の種類は、</span><span class="sxs-lookup"><span data-stu-id="79711-110">Sensitive information types are used in</span></span>
 
-- [<span data-ttu-id="eb670-111">データ損失防止ポリシー</span><span class="sxs-lookup"><span data-stu-id="eb670-111">Data loss prevention policies</span></span>](dlp-learn-about-dlp.md) 
-- [<span data-ttu-id="eb670-112">機密ラベル</span><span class="sxs-lookup"><span data-stu-id="eb670-112">Sensitivity labels</span></span>](sensitivity-labels.md)
-- [<span data-ttu-id="eb670-113">保持ラベル</span><span class="sxs-lookup"><span data-stu-id="eb670-113">Retention labels</span></span>](retention.md)
-- [<span data-ttu-id="eb670-114">インサイダー リスクの管理</span><span class="sxs-lookup"><span data-stu-id="eb670-114">Insider risk management</span></span>](insider-risk-management.md)
-- [<span data-ttu-id="eb670-115">通信コンプライアンス</span><span class="sxs-lookup"><span data-stu-id="eb670-115">Communication compliance</span></span>](communication-compliance.md)
-- [<span data-ttu-id="eb670-116">自動ラベル付けポリシー</span><span class="sxs-lookup"><span data-stu-id="eb670-116">Auto-labelling policies</span></span>](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [<span data-ttu-id="79711-111">データ損失防止ポリシー</span><span class="sxs-lookup"><span data-stu-id="79711-111">Data loss prevention policies</span></span>](dlp-learn-about-dlp.md) 
+- [<span data-ttu-id="79711-112">機密ラベル</span><span class="sxs-lookup"><span data-stu-id="79711-112">Sensitivity labels</span></span>](sensitivity-labels.md)
+- [<span data-ttu-id="79711-113">保持ラベル</span><span class="sxs-lookup"><span data-stu-id="79711-113">Retention labels</span></span>](retention.md)
+- [<span data-ttu-id="79711-114">Insider リスク管理</span><span class="sxs-lookup"><span data-stu-id="79711-114">Insider risk management</span></span>](insider-risk-management.md)
+- [<span data-ttu-id="79711-115">通信コンプライアンス</span><span class="sxs-lookup"><span data-stu-id="79711-115">Communication compliance</span></span>](communication-compliance.md)
+- [<span data-ttu-id="79711-116">自動ラベル付けポリシー</span><span class="sxs-lookup"><span data-stu-id="79711-116">Auto-labelling policies</span></span>](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
-## <a name="fundamental-parts-of-a-sensitive-information-type"></a><span data-ttu-id="eb670-117">機密情報の種類の基本的な部分</span><span class="sxs-lookup"><span data-stu-id="eb670-117">Fundamental parts of a sensitive information type</span></span>
+## <a name="fundamental-parts-of-a-sensitive-information-type"></a><span data-ttu-id="79711-117">機密情報の種類の基本的な部分</span><span class="sxs-lookup"><span data-stu-id="79711-117">Fundamental parts of a sensitive information type</span></span>
 
-<span data-ttu-id="eb670-118">すべての機密情報の種類エンティティは、次のフィールドで定義されます。</span><span class="sxs-lookup"><span data-stu-id="eb670-118">Every sensitive information type entity is defined by these fields:</span></span>
+<span data-ttu-id="79711-118">すべての機密情報の種類エンティティは、次のフィールドで定義されます。</span><span class="sxs-lookup"><span data-stu-id="79711-118">Every sensitive information type entity is defined by these fields:</span></span>
 
-- <span data-ttu-id="eb670-119">name: 機密情報の種類の参照方法</span><span class="sxs-lookup"><span data-stu-id="eb670-119">name: how the sensitive information type is referred to</span></span>
-- <span data-ttu-id="eb670-120">description: 機密情報の種類が何を探しているのかを説明します。</span><span class="sxs-lookup"><span data-stu-id="eb670-120">description: describes what the sensitive information type is looking for</span></span>
-- <span data-ttu-id="eb670-121">pattern: パターンは、機密情報の種類が検出する情報を定義します。</span><span class="sxs-lookup"><span data-stu-id="eb670-121">pattern: A pattern defines what a sensitive information type detects.</span></span> <span data-ttu-id="eb670-122">このコンポーネントは、次のコンポーネントで構成されます。</span><span class="sxs-lookup"><span data-stu-id="eb670-122">It consists of the following components</span></span>
-    - <span data-ttu-id="eb670-123">Primary 要素 – 機密情報の種類が探している主な要素。</span><span class="sxs-lookup"><span data-stu-id="eb670-123">Primary element – the main element that the sensitive information type is looking for.</span></span> <span data-ttu-id="eb670-124">これは、チェックサム検証 **、** キーワード リスト、キーワード 辞書、または関数を含む正規表現と指定 **できます**。</span><span class="sxs-lookup"><span data-stu-id="eb670-124">It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.</span></span>
-    - <span data-ttu-id="eb670-125">サポート要素 – 一致の信頼度を高めるのに役立つ証拠として機能する要素。</span><span class="sxs-lookup"><span data-stu-id="eb670-125">Supporting element – elements that act as supporting evidence that help in increasing the confidence of the match.</span></span> <span data-ttu-id="eb670-126">たとえば、SSN 番号の近接にあるキーワード "SSN" です。</span><span class="sxs-lookup"><span data-stu-id="eb670-126">For example, keyword “SSN” in proximity of an SSN number.</span></span> <span data-ttu-id="eb670-127">これは、チェックサム検証、キーワード リスト、キーワード 辞書の付いた正規表現と指定できます。</span><span class="sxs-lookup"><span data-stu-id="eb670-127">It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.</span></span>
-    - <span data-ttu-id="eb670-128">信頼度レベル - 信頼度レベル (高、中、低) は、主要素と共に検出された証拠の量を反映します。</span><span class="sxs-lookup"><span data-stu-id="eb670-128">Confidence Level - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element.</span></span> <span data-ttu-id="eb670-129">アイテムに含まれる証拠が多いほど、一致するアイテムに探している機密情報が含まれているという信頼性が高くなります。</span><span class="sxs-lookup"><span data-stu-id="eb670-129">The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.</span></span>
-    - <span data-ttu-id="eb670-130">近接 – プライマリ要素とサポート要素の間の文字数</span><span class="sxs-lookup"><span data-stu-id="eb670-130">Proximity – Number of characters between primary and supporting element</span></span>
+- <span data-ttu-id="79711-119">name: 機密情報の種類の参照方法</span><span class="sxs-lookup"><span data-stu-id="79711-119">name: how the sensitive information type is referred to</span></span>
+- <span data-ttu-id="79711-120">description: 機密情報の種類が何を探しているのかを説明します。</span><span class="sxs-lookup"><span data-stu-id="79711-120">description: describes what the sensitive information type is looking for</span></span>
+- <span data-ttu-id="79711-121">pattern: パターンは、機密情報の種類が検出する情報を定義します。</span><span class="sxs-lookup"><span data-stu-id="79711-121">pattern: A pattern defines what a sensitive information type detects.</span></span> <span data-ttu-id="79711-122">このコンポーネントは、次のコンポーネントで構成されます。</span><span class="sxs-lookup"><span data-stu-id="79711-122">It consists of the following components</span></span>
+    - <span data-ttu-id="79711-123">Primary 要素 – 機密情報の種類が探している主な要素。</span><span class="sxs-lookup"><span data-stu-id="79711-123">Primary element – the main element that the sensitive information type is looking for.</span></span> <span data-ttu-id="79711-124">これは、チェックサム検証 **、** キーワード リスト、キーワード 辞書、または関数を含む正規表現と指定 **できます**。</span><span class="sxs-lookup"><span data-stu-id="79711-124">It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.</span></span>
+    - <span data-ttu-id="79711-125">サポート要素 – 一致の信頼度を高めるのに役立つ証拠として機能する要素。</span><span class="sxs-lookup"><span data-stu-id="79711-125">Supporting element – elements that act as supporting evidence that help in increasing the confidence of the match.</span></span> <span data-ttu-id="79711-126">たとえば、SSN 番号の近接にあるキーワード "SSN" です。</span><span class="sxs-lookup"><span data-stu-id="79711-126">For example, keyword “SSN” in proximity of an SSN number.</span></span> <span data-ttu-id="79711-127">これは、チェックサム検証、キーワード リスト、キーワード 辞書の付いた正規表現と指定できます。</span><span class="sxs-lookup"><span data-stu-id="79711-127">It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.</span></span>
+    - <span data-ttu-id="79711-128">信頼度レベル - 信頼度レベル (高、中、低) は、主要素と共に検出された証拠の量を反映します。</span><span class="sxs-lookup"><span data-stu-id="79711-128">Confidence Level - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element.</span></span> <span data-ttu-id="79711-129">アイテムに含まれる証拠が多いほど、一致するアイテムに探している機密情報が含まれているという信頼性が高くなります。</span><span class="sxs-lookup"><span data-stu-id="79711-129">The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.</span></span>
+    - <span data-ttu-id="79711-130">近接 – プライマリ要素とサポート要素の間の文字数</span><span class="sxs-lookup"><span data-stu-id="79711-130">Proximity – Number of characters between primary and supporting element</span></span>
 
 ![補強証拠と近接ウィンドウの図](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-<span data-ttu-id="eb670-132">このビデオの信頼度の詳細</span><span class="sxs-lookup"><span data-stu-id="eb670-132">Learn more about confidence levels in this video</span></span>
+<span data-ttu-id="79711-132">このビデオの信頼度の詳細</span><span class="sxs-lookup"><span data-stu-id="79711-132">Learn more about confidence levels in this video</span></span>
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
 
-### <a name="example-sensitive-information-type"></a><span data-ttu-id="eb670-133">機密情報の種類の例</span><span class="sxs-lookup"><span data-stu-id="eb670-133">Example sensitive information type</span></span>
+### <a name="example-sensitive-information-type"></a><span data-ttu-id="79711-133">機密情報の種類の例</span><span class="sxs-lookup"><span data-stu-id="79711-133">Example sensitive information type</span></span>
 
 
-## <a name="argentina-national-identity-dni-number"></a><span data-ttu-id="eb670-134">アルゼンチンの国民 ID (DNI) 番号</span><span class="sxs-lookup"><span data-stu-id="eb670-134">Argentina national identity (DNI) number</span></span>
+## <a name="argentina-national-identity-dni-number"></a><span data-ttu-id="79711-134">アルゼンチンの国民 ID (DNI) 番号</span><span class="sxs-lookup"><span data-stu-id="79711-134">Argentina national identity (DNI) number</span></span>
 
-### <a name="format"></a><span data-ttu-id="eb670-135">Format</span><span class="sxs-lookup"><span data-stu-id="eb670-135">Format</span></span>
+### <a name="format"></a><span data-ttu-id="79711-135">フォーマット</span><span class="sxs-lookup"><span data-stu-id="79711-135">Format</span></span>
 
-<span data-ttu-id="eb670-136">ピリオドで区切られた 8 桁の数字</span><span class="sxs-lookup"><span data-stu-id="eb670-136">Eight digits separated by periods</span></span>
+<span data-ttu-id="79711-136">ピリオドで区切られた 8 桁の数字</span><span class="sxs-lookup"><span data-stu-id="79711-136">Eight digits separated by periods</span></span>
 
-### <a name="pattern"></a><span data-ttu-id="eb670-137">パターン</span><span class="sxs-lookup"><span data-stu-id="eb670-137">Pattern</span></span>
+### <a name="pattern"></a><span data-ttu-id="79711-137">パターン</span><span class="sxs-lookup"><span data-stu-id="79711-137">Pattern</span></span>
 
-<span data-ttu-id="eb670-138">8 桁の数字:</span><span class="sxs-lookup"><span data-stu-id="eb670-138">Eight digits:</span></span>
-- <span data-ttu-id="eb670-139">2 桁</span><span class="sxs-lookup"><span data-stu-id="eb670-139">two digits</span></span>
-- <span data-ttu-id="eb670-140">ピリオド</span><span class="sxs-lookup"><span data-stu-id="eb670-140">a period</span></span>
-- <span data-ttu-id="eb670-141">3 桁の数字</span><span class="sxs-lookup"><span data-stu-id="eb670-141">three digits</span></span>
-- <span data-ttu-id="eb670-142">ピリオド</span><span class="sxs-lookup"><span data-stu-id="eb670-142">a period</span></span>
-- <span data-ttu-id="eb670-143">3 桁の数字</span><span class="sxs-lookup"><span data-stu-id="eb670-143">three digits</span></span>
+<span data-ttu-id="79711-138">8 桁の数字:</span><span class="sxs-lookup"><span data-stu-id="79711-138">Eight digits:</span></span>
+- <span data-ttu-id="79711-139">2 桁</span><span class="sxs-lookup"><span data-stu-id="79711-139">two digits</span></span>
+- <span data-ttu-id="79711-140">ピリオド</span><span class="sxs-lookup"><span data-stu-id="79711-140">a period</span></span>
+- <span data-ttu-id="79711-141">3 桁の数字</span><span class="sxs-lookup"><span data-stu-id="79711-141">three digits</span></span>
+- <span data-ttu-id="79711-142">ピリオド</span><span class="sxs-lookup"><span data-stu-id="79711-142">a period</span></span>
+- <span data-ttu-id="79711-143">3 桁の数字</span><span class="sxs-lookup"><span data-stu-id="79711-143">three digits</span></span>
 
-### <a name="checksum"></a><span data-ttu-id="eb670-144">チェックサム</span><span class="sxs-lookup"><span data-stu-id="eb670-144">Checksum</span></span>
+### <a name="checksum"></a><span data-ttu-id="79711-144">チェックサム</span><span class="sxs-lookup"><span data-stu-id="79711-144">Checksum</span></span>
 
-<span data-ttu-id="eb670-145">いいえ</span><span class="sxs-lookup"><span data-stu-id="eb670-145">No</span></span>
+<span data-ttu-id="79711-145">いいえ</span><span class="sxs-lookup"><span data-stu-id="79711-145">No</span></span>
 
-### <a name="definition"></a><span data-ttu-id="eb670-146">定義</span><span class="sxs-lookup"><span data-stu-id="eb670-146">Definition</span></span>
+### <a name="definition"></a><span data-ttu-id="79711-146">定義</span><span class="sxs-lookup"><span data-stu-id="79711-146">Definition</span></span>
 
-<span data-ttu-id="eb670-147">DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。</span><span class="sxs-lookup"><span data-stu-id="eb670-147">A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:</span></span>
-- <span data-ttu-id="eb670-148">正規表現は、Regex_argentina_national_id一致するコンテンツを検索します。</span><span class="sxs-lookup"><span data-stu-id="eb670-148">The regular expression Regex_argentina_national_id finds content that matches the pattern.</span></span>
-- <span data-ttu-id="eb670-149">このページのKeyword_argentina_national_idが見つかりました。</span><span class="sxs-lookup"><span data-stu-id="eb670-149">A keyword from Keyword_argentina_national_id is found.</span></span>
+<span data-ttu-id="79711-147">DLP ポリシーは、次の 300 文字に近い場合に、この種類の機密情報が検出されたという中程度の信頼性を持っています。</span><span class="sxs-lookup"><span data-stu-id="79711-147">A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:</span></span>
+- <span data-ttu-id="79711-148">正規表現は、Regex_argentina_national_id一致するコンテンツを検索します。</span><span class="sxs-lookup"><span data-stu-id="79711-148">The regular expression Regex_argentina_national_id finds content that matches the pattern.</span></span>
+- <span data-ttu-id="79711-149">このページのKeyword_argentina_national_idが見つかりました。</span><span class="sxs-lookup"><span data-stu-id="79711-149">A keyword from Keyword_argentina_national_id is found.</span></span>
 
 ```xml
 <!-- Argentina National Identity (DNI) Number -->
@@ -99,66 +99,73 @@ ms.locfileid: "52245650"
 </Entity>
 ```
 
-### <a name="keywords"></a><span data-ttu-id="eb670-150">キーワード</span><span class="sxs-lookup"><span data-stu-id="eb670-150">Keywords</span></span>
+### <a name="keywords"></a><span data-ttu-id="79711-150">キーワード</span><span class="sxs-lookup"><span data-stu-id="79711-150">Keywords</span></span>
 
-#### <a name="keyword_argentina_national_id"></a><span data-ttu-id="eb670-151">Keyword_argentina_national_id</span><span class="sxs-lookup"><span data-stu-id="eb670-151">Keyword_argentina_national_id</span></span>
+#### <a name="keyword_argentina_national_id"></a><span data-ttu-id="79711-151">Keyword_argentina_national_id</span><span class="sxs-lookup"><span data-stu-id="79711-151">Keyword_argentina_national_id</span></span>
 
-- <span data-ttu-id="eb670-152">Argentina National Identity number</span><span class="sxs-lookup"><span data-stu-id="eb670-152">Argentina National Identity number</span></span> 
-- <span data-ttu-id="eb670-153">ID</span><span class="sxs-lookup"><span data-stu-id="eb670-153">Identity</span></span> 
-- <span data-ttu-id="eb670-154">ID 国の ID カード</span><span class="sxs-lookup"><span data-stu-id="eb670-154">Identification National Identity Card</span></span> 
-- <span data-ttu-id="eb670-155">DNI</span><span class="sxs-lookup"><span data-stu-id="eb670-155">DNI</span></span> 
-- <span data-ttu-id="eb670-156">NIC の国民登録</span><span class="sxs-lookup"><span data-stu-id="eb670-156">NIC National Registry of Persons</span></span> 
-- <span data-ttu-id="eb670-157">Documento Nacional de Identidad</span><span class="sxs-lookup"><span data-stu-id="eb670-157">Documento Nacional de Identidad</span></span> 
-- <span data-ttu-id="eb670-158">Registro Nacional de las Personas</span><span class="sxs-lookup"><span data-stu-id="eb670-158">Registro Nacional de las Personas</span></span> 
-- <span data-ttu-id="eb670-159">Identidad</span><span class="sxs-lookup"><span data-stu-id="eb670-159">Identidad</span></span> 
-- <span data-ttu-id="eb670-160">Identificación</span><span class="sxs-lookup"><span data-stu-id="eb670-160">Identificación</span></span> 
+- <span data-ttu-id="79711-152">Argentina National Identity number</span><span class="sxs-lookup"><span data-stu-id="79711-152">Argentina National Identity number</span></span> 
+- <span data-ttu-id="79711-153">ID</span><span class="sxs-lookup"><span data-stu-id="79711-153">Identity</span></span> 
+- <span data-ttu-id="79711-154">ID 国の ID カード</span><span class="sxs-lookup"><span data-stu-id="79711-154">Identification National Identity Card</span></span> 
+- <span data-ttu-id="79711-155">DNI</span><span class="sxs-lookup"><span data-stu-id="79711-155">DNI</span></span> 
+- <span data-ttu-id="79711-156">NIC の国民登録</span><span class="sxs-lookup"><span data-stu-id="79711-156">NIC National Registry of Persons</span></span> 
+- <span data-ttu-id="79711-157">Documento Nacional de Identidad</span><span class="sxs-lookup"><span data-stu-id="79711-157">Documento Nacional de Identidad</span></span> 
+- <span data-ttu-id="79711-158">Registro Nacional de las Personas</span><span class="sxs-lookup"><span data-stu-id="79711-158">Registro Nacional de las Personas</span></span> 
+- <span data-ttu-id="79711-159">Identidad</span><span class="sxs-lookup"><span data-stu-id="79711-159">Identidad</span></span> 
+- <span data-ttu-id="79711-160">Identificación</span><span class="sxs-lookup"><span data-stu-id="79711-160">Identificación</span></span> 
 
-### <a name="more-on-confidence-levels"></a><span data-ttu-id="eb670-161">信頼度の詳細</span><span class="sxs-lookup"><span data-stu-id="eb670-161">More on confidence levels</span></span>
+### <a name="more-on-confidence-levels"></a><span data-ttu-id="79711-161">信頼度の詳細</span><span class="sxs-lookup"><span data-stu-id="79711-161">More on confidence levels</span></span>
 
-<span data-ttu-id="eb670-162">機密情報の種類のエンティティ定義では、信頼度 **は** 、主要素に加えて検出される証拠の量を反映します。</span><span class="sxs-lookup"><span data-stu-id="eb670-162">In a sensitive information type entity definition, **confidence level** reflects how much supporting evidence is detected in addition to the primary element.</span></span> <span data-ttu-id="eb670-163">アイテムに含まれる証拠が多いほど、一致するアイテムに探している機密情報が含まれているという信頼性が高くなります。</span><span class="sxs-lookup"><span data-stu-id="eb670-163">The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.</span></span> <span data-ttu-id="eb670-164">たとえば、信頼度が高い一致には、主要要素の近接性に関するより多くの証拠が含まれるのに対し、信頼度が低い一致には、近接する証拠はほとんど含めず、サポート証拠もほとんど含めずになります。</span><span class="sxs-lookup"><span data-stu-id="eb670-164">For example, matches with a high confidence level will contain more supporting evidence in close proximity of the primary element, whereas matches with a low confidence level would contain little to no supporting evidence in close proximity.</span></span> 
+<span data-ttu-id="79711-162">機密情報の種類のエンティティ定義では、信頼度 **は** 、主要素に加えて検出される証拠の量を反映します。</span><span class="sxs-lookup"><span data-stu-id="79711-162">In a sensitive information type entity definition, **confidence level** reflects how much supporting evidence is detected in addition to the primary element.</span></span> <span data-ttu-id="79711-163">アイテムに含まれる証拠が多いほど、一致するアイテムに探している機密情報が含まれているという信頼性が高くなります。</span><span class="sxs-lookup"><span data-stu-id="79711-163">The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.</span></span> <span data-ttu-id="79711-164">たとえば、信頼度が高い一致には、主要要素の近接性に関するより多くの証拠が含まれるのに対し、信頼度が低い一致には、近接する証拠はほとんど含めず、サポート証拠もほとんど含めずになります。</span><span class="sxs-lookup"><span data-stu-id="79711-164">For example, matches with a high confidence level will contain more supporting evidence in close proximity of the primary element, whereas matches with a low confidence level would contain little to no supporting evidence in close proximity.</span></span> 
 
-<span data-ttu-id="eb670-165">高信頼度は、最も少ない誤検知を返しますが、より多くの誤検知が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="eb670-165">A high confidence level returns the fewest false positives but might result in more false negatives.</span></span> <span data-ttu-id="eb670-166">低または中程度の信頼度は、より多くの誤検知を返しますが、偽陰性を返す値は少なから 0 です。</span><span class="sxs-lookup"><span data-stu-id="eb670-166">Low or medium confidence levels returns more false positives but few to zero false negatives.</span></span>
+<span data-ttu-id="79711-165">高信頼度は、最も少ない誤検知を返しますが、より多くの誤検知が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="79711-165">A high confidence level returns the fewest false positives but might result in more false negatives.</span></span> <span data-ttu-id="79711-166">低または中程度の信頼度は、より多くの誤検知を返しますが、偽陰性を返す値は少なから 0 です。</span><span class="sxs-lookup"><span data-stu-id="79711-166">Low or medium confidence levels returns more false positives but few to zero false negatives.</span></span>
 
-- <span data-ttu-id="eb670-167">**低信頼** 度 : 値が 65 の場合、一致するアイテムには最も少ない偽陰性が含まれますが、最も誤検知が発生します。</span><span class="sxs-lookup"><span data-stu-id="eb670-167">**low confidence**: Value of 65, matched items will contain the fewest false negatives but the most false positives.</span></span> <span data-ttu-id="eb670-168">低信頼度は、すべての低、中、および高信頼度の一致を返します。</span><span class="sxs-lookup"><span data-stu-id="eb670-168">Low confidence returns all low, medium, and high confidence matches.</span></span>
-- <span data-ttu-id="eb670-169">**中程度の** 信頼度 : 値が 75 の場合、一致するアイテムには平均的な量の誤検知と偽陰性が含まれます。</span><span class="sxs-lookup"><span data-stu-id="eb670-169">**medium confidence**: Value of 75, matched items will contain an average amount of false positives and false negatives.</span></span> <span data-ttu-id="eb670-170">中程度の信頼度は、すべての中程度と高信頼度の一致を返します。</span><span class="sxs-lookup"><span data-stu-id="eb670-170">Medium confidence returns all medium, and high confidence matches.</span></span>  
-- <span data-ttu-id="eb670-171">**高信頼**: 値が 85 の場合、一致するアイテムには、最も少ない誤検知が含まれますが、最も誤った負の値が含まれます。</span><span class="sxs-lookup"><span data-stu-id="eb670-171">**high confidence**: Value of 85, matched items will contain the fewest false positives but the most false negatives.</span></span> <span data-ttu-id="eb670-172">高信頼は、高信頼度の一致のみを返します。</span><span class="sxs-lookup"><span data-stu-id="eb670-172">High confidence only returns high confidence matches.</span></span>  
+- <span data-ttu-id="79711-167">**低信頼** 度 : 値が 65 の場合、一致するアイテムには最も少ない偽陰性が含まれますが、最も誤検知が発生します。</span><span class="sxs-lookup"><span data-stu-id="79711-167">**low confidence**: Value of 65, matched items will contain the fewest false negatives but the most false positives.</span></span> <span data-ttu-id="79711-168">低信頼度は、すべての低、中、および高信頼度の一致を返します。</span><span class="sxs-lookup"><span data-stu-id="79711-168">Low confidence returns all low, medium, and high confidence matches.</span></span>
+- <span data-ttu-id="79711-169">**中程度の** 信頼度 : 値が 75 の場合、一致するアイテムには平均的な量の誤検知と偽陰性が含まれます。</span><span class="sxs-lookup"><span data-stu-id="79711-169">**medium confidence**: Value of 75, matched items will contain an average amount of false positives and false negatives.</span></span> <span data-ttu-id="79711-170">中程度の信頼度は、すべての中程度と高信頼度の一致を返します。</span><span class="sxs-lookup"><span data-stu-id="79711-170">Medium confidence returns all medium, and high confidence matches.</span></span>  
+- <span data-ttu-id="79711-171">**高信頼**: 値が 85 の場合、一致するアイテムには、最も少ない誤検知が含まれますが、最も誤った負の値が含まれます。</span><span class="sxs-lookup"><span data-stu-id="79711-171">**high confidence**: Value of 85, matched items will contain the fewest false positives but the most false negatives.</span></span> <span data-ttu-id="79711-172">高信頼は、高信頼度の一致のみを返します。</span><span class="sxs-lookup"><span data-stu-id="79711-172">High confidence only returns high confidence matches.</span></span>  
 
-<span data-ttu-id="eb670-173">高信頼度レベルのパターンは、5 ~ 10 と低い信頼度パターンと、20 以上の高信頼度パターンを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="eb670-173">You should use high confidence level patterns with low counts, say five to ten, and low confidence patterns with higher counts, say 20 or more.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="eb670-174">数値ベースの信頼レベル (精度も知っている) を使用して定義されている既存のポリシーまたはカスタム機密情報の種類 (SIT) がある場合は、3 つの個別の信頼レベルに自動的にマップされます。セキュリティ @ コンプライアンス センター UI 全体で、低信頼性、中程度の信頼、および高い信頼性。</span><span class="sxs-lookup"><span data-stu-id="eb670-174">If you have existing policies or custom sensitive information types (SITs) defined using number-based confidence levels (also know as accuracy), they will automatically be mapped to the three discrete confidence levels; low confidence, medium confidence, and high confidence, across the Security @ Compliance Center UI.</span></span>
-> - <span data-ttu-id="eb670-175">76 ~ 100 の信頼レベルを持つ最小精度またはカスタムの SIT パターンを持つすべてのポリシーは、高信頼度にマップされます。</span><span class="sxs-lookup"><span data-stu-id="eb670-175">All policies with minimum accuracy or custom SIT patterns with confidence levels of between 76 and 100 will be mapped to high confidence.</span></span> 
-> - <span data-ttu-id="eb670-176">66 ~ 75 の信頼レベルを持つ最小精度またはカスタムの SIT パターンを持つすべてのポリシーは、中程度の信頼度にマップされます。</span><span class="sxs-lookup"><span data-stu-id="eb670-176">All policies with minimum accuracy or custom SIT patterns with confidence levels of between 66 and 75 will be mapped to medium confidence.</span></span>
-> - <span data-ttu-id="eb670-177">信頼度レベルが 65 以下の最小精度またはカスタムの SIT パターンを持つすべてのポリシーは、低信頼度にマップされます。</span><span class="sxs-lookup"><span data-stu-id="eb670-177">All policies with minimum accuracy or custom SIT patterns with confidence levels less than or equal to 65 will be mapped to low confidence.</span></span> 
-
-## <a name="creating-custom-sensitive-information-types"></a><span data-ttu-id="eb670-178">カスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="eb670-178">Creating custom sensitive information types</span></span>
-
-<span data-ttu-id="eb670-179">次のオプションを使用して、セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成できます。</span><span class="sxs-lookup"><span data-stu-id="eb670-179">To create custom sensitive information types in the Security & Compliance Center, you can choose from several options:</span></span>
-
-- <span data-ttu-id="eb670-180">**UI を使用する** セキュリティ/コンプライアンス センターの UI を使用して、カスタムの機密情報の種類を設定します。</span><span class="sxs-lookup"><span data-stu-id="eb670-180">**Use the UI** You can set up a custom sensitive information type using the Security & Compliance Center UI.</span></span> <span data-ttu-id="eb670-181">この方法では、正規表現、キーワード、キーワード辞書を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="eb670-181">With this method, you can use regular expressions, keywords, and keyword dictionaries.</span></span> <span data-ttu-id="eb670-182">詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eb670-182">To learn more, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).</span></span>
-
-- <span data-ttu-id="eb670-183">**EDM を使用する** データ一致 (EDM) に基づく分類によって、カスタム機密情報の種類を設定します。</span><span class="sxs-lookup"><span data-stu-id="eb670-183">**Use EDM** You can set up custom sensitive information types using Exact Data Match (EDM)-based classification.</span></span> <span data-ttu-id="eb670-184">この方法では、定期的に更新できる安全なデータベースを使用して、動的な機密情報の種類を作成することができます。</span><span class="sxs-lookup"><span data-stu-id="eb670-184">This method enables you to create a dynamic sensitive information type using a secure database that you can refresh periodically.</span></span> <span data-ttu-id="eb670-185">詳細については、「[Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eb670-185">See [Create a custom sensitive information type with Exact Data Match based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).</span></span>
-
-- <span data-ttu-id="eb670-186">**PowerShell を使用する** PowerShell を使用して、カスタムの機密情報の種類を設定します。</span><span class="sxs-lookup"><span data-stu-id="eb670-186">**Use PowerShell** You can set up custom sensitive information types using PowerShell.</span></span> <span data-ttu-id="eb670-187">この方法は、UI を使用する場合よりも複雑ですが、より多くの構成オプションがあります。</span><span class="sxs-lookup"><span data-stu-id="eb670-187">Although this method is more complex than using the UI, you have more configuration options.</span></span> <span data-ttu-id="eb670-188">詳細については、「[セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eb670-188">See [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).</span></span>
-
-
+<span data-ttu-id="79711-173">高信頼度レベルのパターンは、5 ~ 10 と低い信頼度パターンと、20 以上の高信頼度パターンを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="79711-173">You should use high confidence level patterns with low counts, say five to ten, and low confidence patterns with higher counts, say 20 or more.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="eb670-189">Microsoft 365 サービスのデータ損失防止、Microsoft 365 サービスの Microsoft Information Protection、コミュニケーション コンプライアンス、情報ガバナンス、およびレコード管理内ですぐに使用できる信頼レベルの向上。</span><span class="sxs-lookup"><span data-stu-id="eb670-189">Improved confidence levels are available for immediate use within Data Loss Prevention for Microsoft 365 services, Microsoft Information Protection for Microsoft 365 services, Communication Compliance, Information Governance, and Records Management.</span></span>
+> <span data-ttu-id="79711-174">数値ベースの信頼レベル (精度も知っている) を使用して定義されている既存のポリシーまたはカスタム機密情報の種類 (SIT) がある場合は、3 つの個別の信頼レベルに自動的にマップされます。セキュリティ @ コンプライアンス センター UI 全体で、低信頼性、中程度の信頼、および高い信頼性。</span><span class="sxs-lookup"><span data-stu-id="79711-174">If you have existing policies or custom sensitive information types (SITs) defined using number-based confidence levels (also know as accuracy), they will automatically be mapped to the three discrete confidence levels; low confidence, medium confidence, and high confidence, across the Security @ Compliance Center UI.</span></span>
+> - <span data-ttu-id="79711-175">76 ~ 100 の信頼レベルを持つ最小精度またはカスタムの SIT パターンを持つすべてのポリシーは、高信頼度にマップされます。</span><span class="sxs-lookup"><span data-stu-id="79711-175">All policies with minimum accuracy or custom SIT patterns with confidence levels of between 76 and 100 will be mapped to high confidence.</span></span> 
+> - <span data-ttu-id="79711-176">66 ~ 75 の信頼レベルを持つ最小精度またはカスタムの SIT パターンを持つすべてのポリシーは、中程度の信頼度にマップされます。</span><span class="sxs-lookup"><span data-stu-id="79711-176">All policies with minimum accuracy or custom SIT patterns with confidence levels of between 66 and 75 will be mapped to medium confidence.</span></span>
+> - <span data-ttu-id="79711-177">信頼度レベルが 65 以下の最小精度またはカスタムの SIT パターンを持つすべてのポリシーは、低信頼度にマップされます。</span><span class="sxs-lookup"><span data-stu-id="79711-177">All policies with minimum accuracy or custom SIT patterns with confidence levels less than or equal to 65 will be mapped to low confidence.</span></span> 
 
-> <span data-ttu-id="eb670-190">Microsoft 365 の情報保護は、次のような場合に2バイト文字セットの言語をpreviewでサポートしています。</span><span class="sxs-lookup"><span data-stu-id="eb670-190">Microsoft 365 Information Protection now  supports in preview double byte character set languages for:</span></span>
-> - <span data-ttu-id="eb670-191">中国語 (簡体字)</span><span class="sxs-lookup"><span data-stu-id="eb670-191">Chinese (simplified)</span></span>
-> - <span data-ttu-id="eb670-192">中国語 (繁体字)</span><span class="sxs-lookup"><span data-stu-id="eb670-192">Chinese (traditional)</span></span>
-> - <span data-ttu-id="eb670-193">韓国語</span><span class="sxs-lookup"><span data-stu-id="eb670-193">Korean</span></span>
-> - <span data-ttu-id="eb670-194">日本語</span><span class="sxs-lookup"><span data-stu-id="eb670-194">Japanese</span></span>
+## <a name="creating-custom-sensitive-information-types"></a><span data-ttu-id="79711-178">カスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="79711-178">Creating custom sensitive information types</span></span>
 
-><span data-ttu-id="eb670-195">このサポートは、機密情報の種類で使用できます。</span><span class="sxs-lookup"><span data-stu-id="eb670-195">This support is available for sensitive information types.</span></span> <span data-ttu-id="eb670-196">詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポー](mip-dbcs-relnotes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eb670-196">See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.</span></span>
+<span data-ttu-id="79711-179">次のオプションを使用して、セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成できます。</span><span class="sxs-lookup"><span data-stu-id="79711-179">To create custom sensitive information types in the Security & Compliance Center, you can choose from several options:</span></span>
 
-## <a name="for-further-information"></a><span data-ttu-id="eb670-197">詳細については、次の情報を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eb670-197">For further information</span></span>
-- [<span data-ttu-id="eb670-198">機密情報の種類のエンティティ定義</span><span class="sxs-lookup"><span data-stu-id="eb670-198">Sensitive information type entity definitions</span></span>](sensitive-information-type-entity-definitions.md)
-- [<span data-ttu-id="eb670-199">カスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="eb670-199">Create a custom sensitive information type</span></span>](create-a-custom-sensitive-information-type.md)
-- [<span data-ttu-id="eb670-200">PowerShell でカスタム機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="eb670-200">Create a custom sensitive information type in PowerShell</span></span>](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- <span data-ttu-id="79711-180">**UI を使用する** セキュリティ/コンプライアンス センターの UI を使用して、カスタムの機密情報の種類を設定します。</span><span class="sxs-lookup"><span data-stu-id="79711-180">**Use the UI** You can set up a custom sensitive information type using the Security & Compliance Center UI.</span></span> <span data-ttu-id="79711-181">この方法では、正規表現、キーワード、キーワード辞書を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="79711-181">With this method, you can use regular expressions, keywords, and keyword dictionaries.</span></span> <span data-ttu-id="79711-182">詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="79711-182">To learn more, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).</span></span>
 
-<span data-ttu-id="eb670-201">機密情報の種類を使用してデータプライバシー規制に準拠する方法については、「データ[](../solutions/information-protection-deploy.md)プライバシー規制に関する情報保護を展開する (Microsoft 365 (aka.ms/m365dataprivacy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eb670-201">To learn how to use sensitive information types to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).</span></span>
+- <span data-ttu-id="79711-183">**EDM を使用する** データ一致 (EDM) に基づく分類によって、カスタム機密情報の種類を設定します。</span><span class="sxs-lookup"><span data-stu-id="79711-183">**Use EDM** You can set up custom sensitive information types using Exact Data Match (EDM)-based classification.</span></span> <span data-ttu-id="79711-184">この方法では、定期的に更新できる安全なデータベースを使用して、動的な機密情報の種類を作成することができます。</span><span class="sxs-lookup"><span data-stu-id="79711-184">This method enables you to create a dynamic sensitive information type using a secure database that you can refresh periodically.</span></span> <span data-ttu-id="79711-185">詳細については、「[Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="79711-185">See [Create a custom sensitive information type with Exact Data Match based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).</span></span>
+
+- <span data-ttu-id="79711-186">**PowerShell を使用する** PowerShell を使用して、カスタムの機密情報の種類を設定します。</span><span class="sxs-lookup"><span data-stu-id="79711-186">**Use PowerShell** You can set up custom sensitive information types using PowerShell.</span></span> <span data-ttu-id="79711-187">この方法は、UI を使用する場合よりも複雑ですが、より多くの構成オプションがあります。</span><span class="sxs-lookup"><span data-stu-id="79711-187">Although this method is more complex than using the UI, you have more configuration options.</span></span> <span data-ttu-id="79711-188">詳細については、「[セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="79711-188">See [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).</span></span>
+
+
+
+> [!NOTE]
+> <span data-ttu-id="79711-189">Microsoft 365 サービス、Microsoft 365 サービスの Microsoft Information Protection、コミュニケーション コンプライアンス、情報ガバナンス、レコード管理のデータ損失防止内ですぐに使用できる信頼性レベルの向上。</span><span class="sxs-lookup"><span data-stu-id="79711-189">Improved confidence levels are available for immediate use within Data Loss Prevention for Microsoft 365 services, Microsoft Information Protection for Microsoft 365 services, Communication Compliance, Information Governance, and Records Management.</span></span>
+> <span data-ttu-id="79711-190">Microsoft 365Information Protection では、次の 2 バイト文字セット言語がサポートされています。</span><span class="sxs-lookup"><span data-stu-id="79711-190">Microsoft 365 Information Protection now  supports double byte character set languages for:</span></span>
+> - <span data-ttu-id="79711-191">中国語 (簡体字)</span><span class="sxs-lookup"><span data-stu-id="79711-191">Chinese (simplified)</span></span>
+> - <span data-ttu-id="79711-192">中国語 (繁体字)</span><span class="sxs-lookup"><span data-stu-id="79711-192">Chinese (traditional)</span></span>
+> - <span data-ttu-id="79711-193">韓国語</span><span class="sxs-lookup"><span data-stu-id="79711-193">Korean</span></span>
+> - <span data-ttu-id="79711-194">日本語</span><span class="sxs-lookup"><span data-stu-id="79711-194">Japanese</span></span>
+> 
+> <span data-ttu-id="79711-195">このサポートは、機密情報の種類で使用できます。</span><span class="sxs-lookup"><span data-stu-id="79711-195">This support is available for sensitive information types.</span></span> <span data-ttu-id="79711-196">詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポー](mip-dbcs-relnotes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="79711-196">See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.</span></span>
+
+> [!TIP]
+> <span data-ttu-id="79711-197">中国語/日本語文字と 1 バイト文字を含むパターンを検出したり、中国語/日本語と英語を含むパターンを検出するには、キーワードまたは正規表現の 2 つのバリアントを定義します。</span><span class="sxs-lookup"><span data-stu-id="79711-197">To detect patterns containing Chinese/Japanese characters and single byte characters or to detect patterns containing Chinese/Japanese and English, define two variants of the keyword or regex.</span></span> <span data-ttu-id="79711-198">たとえば、"机密" のようなキーワードを検出するには、キーワードの 2 つのバリアントを使用します。1 つは日本語と英語のテキストの間にスペースを持ち、もう 1 つは日本語と英語のテキストの間にスペースを使用しない場合です。</span><span class="sxs-lookup"><span data-stu-id="79711-198">For example, to detect a keyword like "机密的document", use two variants of the keyword; one with a space between the Japanese and English text and another without a space between the Japanese and English text.</span></span> <span data-ttu-id="79711-199">したがって、SIT に追加するキーワードは"机密文書" と "机密的な文書" である必要があります。</span><span class="sxs-lookup"><span data-stu-id="79711-199">So, the keywords to be added in the SIT should be "机密的 document" and "机密的document".</span></span> <span data-ttu-id="79711-200">同様に、"東京の 2020" という語句を検出するには、2 つのバリアントを使用する必要があります。"東京の 2020" と "東京の 2020" 。</span><span class="sxs-lookup"><span data-stu-id="79711-200">Similarly, to detect a phrase "東京オリンピック2020", two variants should be used; "東京オリンピック 2020" and "東京オリンピック2020".</span></span>
+> 
+> <span data-ttu-id="79711-201">2 バイトのハイフンまたは 2 バイトのピリオドを使用して正規表現を作成する場合は、正規表現でハイフンまたはピリオドをエスケープする文字の両方をエスケープしてください。</span><span class="sxs-lookup"><span data-stu-id="79711-201">While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex.</span></span> <span data-ttu-id="79711-202">参考用の正規表現の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="79711-202">Here is a sample regex for reference:</span></span>
+>    - <span data-ttu-id="79711-203">(?<!\d)([4][0-9] {3}[ \- ?\-\t]\*[0-9]{4}</span><span class="sxs-lookup"><span data-stu-id="79711-203">(?<!\d)([４][０-９]{3}[\-?\－\t]\*[０-９]{4}</span></span>
+>
+> <span data-ttu-id="79711-204">キーワード リストで単語一致の代わりに文字列一致を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="79711-204">We recommend using string match instead of word match in a keyword list.</span></span>
+
+## <a name="for-further-information"></a><span data-ttu-id="79711-205">詳細については、次の情報を参照してください。</span><span class="sxs-lookup"><span data-stu-id="79711-205">For further information</span></span>
+- [<span data-ttu-id="79711-206">機密情報の種類のエンティティ定義</span><span class="sxs-lookup"><span data-stu-id="79711-206">Sensitive information type entity definitions</span></span>](sensitive-information-type-entity-definitions.md)
+- [<span data-ttu-id="79711-207">カスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="79711-207">Create a custom sensitive information type</span></span>](create-a-custom-sensitive-information-type.md)
+- [<span data-ttu-id="79711-208">PowerShell でカスタム機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="79711-208">Create a custom sensitive information type in PowerShell</span></span>](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+
+<span data-ttu-id="79711-209">機密情報の種類を使用してデータプライバシー規制に準拠する方法については、「データ[](../solutions/information-protection-deploy.md)プライバシー規制に関する情報保護を展開する (Microsoft 365 (aka.ms/m365dataprivacy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="79711-209">To learn how to use sensitive information types to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).</span></span>
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->
