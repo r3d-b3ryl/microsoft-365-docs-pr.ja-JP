@@ -17,70 +17,70 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9d3f4431825193d189f7ea1d73b6a99163cac428
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 718a043fec34abb17eb45ffba2c9efa46a1b538a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843700"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287271"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-apis"></a><span data-ttu-id="019b3-104">Microsoft Defender for Endpoint API にアクセスする</span><span class="sxs-lookup"><span data-stu-id="019b3-104">Access the Microsoft Defender for Endpoint APIs</span></span> 
+# <a name="access-the-microsoft-defender-for-endpoint-apis"></a><span data-ttu-id="9c892-104">Microsoft Defender for Endpoint API にアクセスする</span><span class="sxs-lookup"><span data-stu-id="9c892-104">Access the Microsoft Defender for Endpoint APIs</span></span> 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="019b3-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="019b3-105">**Applies to:**</span></span>
-- [<span data-ttu-id="019b3-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="019b3-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="019b3-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="019b3-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="9c892-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="9c892-105">**Applies to:**</span></span>
+- [<span data-ttu-id="9c892-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="9c892-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="9c892-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9c892-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-<span data-ttu-id="019b3-108">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="019b3-108">**Applies to:**</span></span> 
-- [<span data-ttu-id="019b3-109">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="019b3-109">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+<span data-ttu-id="9c892-108">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="9c892-108">**Applies to:**</span></span> 
+- [<span data-ttu-id="9c892-109">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="9c892-109">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> <span data-ttu-id="019b3-110">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="019b3-110">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="019b3-111">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="019b3-111">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="9c892-110">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="9c892-110">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="9c892-111">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="9c892-111">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+<span data-ttu-id="9c892-112">Defender for Endpoint は、一連のプログラム API を使用して、そのデータとアクションの多くを公開します。</span><span class="sxs-lookup"><span data-stu-id="9c892-112">Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs.</span></span> <span data-ttu-id="9c892-113">これらの API を使用すると、Defender for Endpoint の機能に基づいてワークフローを自動化し、革新することができます。</span><span class="sxs-lookup"><span data-stu-id="9c892-113">Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities.</span></span> <span data-ttu-id="9c892-114">API アクセスには、OAuth2.0 認証が必要です。</span><span class="sxs-lookup"><span data-stu-id="9c892-114">The API access requires OAuth2.0 authentication.</span></span> <span data-ttu-id="9c892-115">詳細については[、「OAuth 2.0 Authorization Code Flow」 を参照してください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。</span><span class="sxs-lookup"><span data-stu-id="9c892-115">For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span></span>
 
+<span data-ttu-id="9c892-116">Defender for Endpoint の API の概要については、このビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="9c892-116">Watch this video for a quick overview of Defender for Endpoint's APIs.</span></span>
 
-<span data-ttu-id="019b3-112">Defender for Endpoint は、一連のプログラム API を使用して、そのデータとアクションの多くを公開します。</span><span class="sxs-lookup"><span data-stu-id="019b3-112">Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs.</span></span> <span data-ttu-id="019b3-113">これらの API を使用すると、Defender for Endpoint の機能に基づいてワークフローを自動化し、革新することができます。</span><span class="sxs-lookup"><span data-stu-id="019b3-113">Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities.</span></span> <span data-ttu-id="019b3-114">API アクセスには、OAuth2.0 認証が必要です。</span><span class="sxs-lookup"><span data-stu-id="019b3-114">The API access requires OAuth2.0 authentication.</span></span> <span data-ttu-id="019b3-115">詳細については[、「OAuth 2.0 Authorization Code Flow」 を参照してください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。</span><span class="sxs-lookup"><span data-stu-id="019b3-115">For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span></span>
-
-<span data-ttu-id="019b3-116">Defender for Endpoint の API の概要については、このビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="019b3-116">Watch this video for a quick overview of Defender for Endpoint's APIs.</span></span> 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
 
-<span data-ttu-id="019b3-117">一般に、API を使用するには、次の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="019b3-117">In general, you’ll need to take the following steps to use the APIs:</span></span>
-- <span data-ttu-id="019b3-118">[AAD アプリケーションの作成](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span><span class="sxs-lookup"><span data-stu-id="019b3-118">Create an [AAD application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span></span>
-- <span data-ttu-id="019b3-119">このアプリケーションを使用してアクセス トークンを取得する</span><span class="sxs-lookup"><span data-stu-id="019b3-119">Get an access token using this application</span></span>
-- <span data-ttu-id="019b3-120">トークンを使用して Defender for Endpoint API にアクセスする</span><span class="sxs-lookup"><span data-stu-id="019b3-120">Use the token to access Defender for Endpoint API</span></span>
+<span data-ttu-id="9c892-117">一般に、API を使用するには、次の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9c892-117">In general, you’ll need to take the following steps to use the APIs:</span></span>
 
+- <span data-ttu-id="9c892-118">[AAD アプリケーションの作成](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span><span class="sxs-lookup"><span data-stu-id="9c892-118">Create an [AAD application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span></span>
+- <span data-ttu-id="9c892-119">このアプリケーションを使用してアクセス トークンを取得する</span><span class="sxs-lookup"><span data-stu-id="9c892-119">Get an access token using this application</span></span>
+- <span data-ttu-id="9c892-120">トークンを使用して Defender for Endpoint API にアクセスする</span><span class="sxs-lookup"><span data-stu-id="9c892-120">Use the token to access Defender for Endpoint API</span></span>
 
-<span data-ttu-id="019b3-121">アプリケーション コンテキストまたはユーザー コンテキストを使用して Defender for Endpoint API **にアクセスできます**。</span><span class="sxs-lookup"><span data-stu-id="019b3-121">You can access Defender for Endpoint API with **Application Context** or **User Context**.</span></span>
+<span data-ttu-id="9c892-121">アプリケーション コンテキストまたはユーザー コンテキストを使用して Defender for Endpoint API **にアクセスできます**。</span><span class="sxs-lookup"><span data-stu-id="9c892-121">You can access Defender for Endpoint API with **Application Context** or **User Context**.</span></span>
 
-- <span data-ttu-id="019b3-122">**アプリケーション コンテキスト: (推奨)**</span><span class="sxs-lookup"><span data-stu-id="019b3-122">**Application Context: (Recommended)**</span></span> <br>
-    <span data-ttu-id="019b3-123">サインインしているユーザーが存在せずに実行されるアプリで使用されます。</span><span class="sxs-lookup"><span data-stu-id="019b3-123">Used by apps that run without a signed-in user present.</span></span> <span data-ttu-id="019b3-124">たとえば、バックグラウンド サービスまたはデーモンとして実行されるアプリ。</span><span class="sxs-lookup"><span data-stu-id="019b3-124">for example, apps that run as background services or daemons.</span></span>
+- <span data-ttu-id="9c892-122">**アプリケーション コンテキスト: (推奨)**</span><span class="sxs-lookup"><span data-stu-id="9c892-122">**Application Context: (Recommended)**</span></span>
 
-    <span data-ttu-id="019b3-125">アプリケーション コンテキストを使用して Defender for Endpoint API にアクセスするために必要な手順は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="019b3-125">Steps that need to be taken to access Defender for Endpoint API with application context:</span></span>
+  <span data-ttu-id="9c892-123">サインインしているユーザーが存在せずに実行されるアプリで使用されます。</span><span class="sxs-lookup"><span data-stu-id="9c892-123">Used by apps that run without a signed-in user present.</span></span> <span data-ttu-id="9c892-124">たとえば、バックグラウンド サービスまたはデーモンとして実行されるアプリ。</span><span class="sxs-lookup"><span data-stu-id="9c892-124">for example, apps that run as background services or daemons.</span></span>
 
-  1. <span data-ttu-id="019b3-126">AAD Web-Application を作成します。</span><span class="sxs-lookup"><span data-stu-id="019b3-126">Create an AAD Web-Application.</span></span>
-  2. <span data-ttu-id="019b3-127">目的のアクセス許可をアプリケーションに割り当てる (たとえば、「アラートの読み取り」、"コンピューターの分離" など)。</span><span class="sxs-lookup"><span data-stu-id="019b3-127">Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'.</span></span> 
-  3. <span data-ttu-id="019b3-128">このアプリケーションのキーを作成します。</span><span class="sxs-lookup"><span data-stu-id="019b3-128">Create a key for this Application.</span></span>
-  4. <span data-ttu-id="019b3-129">キーを使用してアプリケーションを使用してトークンを取得します。</span><span class="sxs-lookup"><span data-stu-id="019b3-129">Get token using the application with its key.</span></span>
-  5. <span data-ttu-id="019b3-130">トークンを使用して Microsoft Defender for Endpoint API にアクセスする</span><span class="sxs-lookup"><span data-stu-id="019b3-130">Use the token to access the Microsoft Defender for Endpoint API</span></span>
+  <span data-ttu-id="9c892-125">アプリケーション コンテキストを使用して Defender for Endpoint API にアクセスするために必要な手順は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="9c892-125">Steps that need to be taken to access Defender for Endpoint API with application context:</span></span>
 
-     <span data-ttu-id="019b3-131">詳細については、「Get [access with application context 」を参照してください](exposed-apis-create-app-webapp.md)。</span><span class="sxs-lookup"><span data-stu-id="019b3-131">For more information, see [Get access with application context](exposed-apis-create-app-webapp.md).</span></span>
+  1. <span data-ttu-id="9c892-126">AAD Web-Application を作成します。</span><span class="sxs-lookup"><span data-stu-id="9c892-126">Create an AAD Web-Application.</span></span>
+  2. <span data-ttu-id="9c892-127">目的のアクセス許可をアプリケーションに割り当てる (たとえば、「アラートの読み取り」、"コンピューターの分離" など)。</span><span class="sxs-lookup"><span data-stu-id="9c892-127">Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'.</span></span> 
+  3. <span data-ttu-id="9c892-128">このアプリケーションのキーを作成します。</span><span class="sxs-lookup"><span data-stu-id="9c892-128">Create a key for this Application.</span></span>
+  4. <span data-ttu-id="9c892-129">キーを使用してアプリケーションを使用してトークンを取得します。</span><span class="sxs-lookup"><span data-stu-id="9c892-129">Get token using the application with its key.</span></span>
+  5. <span data-ttu-id="9c892-130">トークンを使用して Microsoft Defender for Endpoint API にアクセスする</span><span class="sxs-lookup"><span data-stu-id="9c892-130">Use the token to access the Microsoft Defender for Endpoint API</span></span>
 
+     <span data-ttu-id="9c892-131">詳細については、「Get [access with application context 」を参照してください](exposed-apis-create-app-webapp.md)。</span><span class="sxs-lookup"><span data-stu-id="9c892-131">For more information, see [Get access with application context](exposed-apis-create-app-webapp.md).</span></span>
 
-- <span data-ttu-id="019b3-132">**ユーザー コンテキスト:**</span><span class="sxs-lookup"><span data-stu-id="019b3-132">**User Context:**</span></span> <br>
-    <span data-ttu-id="019b3-133">ユーザーに代わって API でアクションを実行するために使用します。</span><span class="sxs-lookup"><span data-stu-id="019b3-133">Used to perform actions in the API on behalf of a user.</span></span>
+- <span data-ttu-id="9c892-132">**ユーザー コンテキスト:**</span><span class="sxs-lookup"><span data-stu-id="9c892-132">**User Context:**</span></span>
 
-    <span data-ttu-id="019b3-134">アプリケーション コンテキストを使用して Defender for Endpoint API にアクセスするための手順は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="019b3-134">Steps to take to access Defender for Endpoint API with application context:</span></span>
+  <span data-ttu-id="9c892-133">ユーザーに代わって API でアクションを実行するために使用します。</span><span class="sxs-lookup"><span data-stu-id="9c892-133">Used to perform actions in the API on behalf of a user.</span></span>
 
-  1. <span data-ttu-id="019b3-135">AAD ネイティブ アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="019b3-135">Create AAD Native-Application.</span></span>
-  2. <span data-ttu-id="019b3-136">目的のアクセス許可をアプリケーションに割り当てる (「アラートの読み取り」、"コンピューターの分離" など)。</span><span class="sxs-lookup"><span data-stu-id="019b3-136">Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc.</span></span> 
-  3. <span data-ttu-id="019b3-137">ユーザー資格情報を使用してアプリケーションを使用してトークンを取得します。</span><span class="sxs-lookup"><span data-stu-id="019b3-137">Get token using the application with user credentials.</span></span>
-  4. <span data-ttu-id="019b3-138">トークンを使用して Microsoft Defender for Endpoint API にアクセスする</span><span class="sxs-lookup"><span data-stu-id="019b3-138">Use the token to access the Microsoft Defender for Endpoint API</span></span>
+  <span data-ttu-id="9c892-134">アプリケーション コンテキストを使用して Defender for Endpoint API にアクセスするための手順は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="9c892-134">Steps to take to access Defender for Endpoint API with application context:</span></span>
 
-     <span data-ttu-id="019b3-139">詳細については、「ユーザー コンテキストで [アクセスを取得する」を参照してください](exposed-apis-create-app-nativeapp.md)。</span><span class="sxs-lookup"><span data-stu-id="019b3-139">For more information, see [Get access with user context](exposed-apis-create-app-nativeapp.md).</span></span>
+  1. <span data-ttu-id="9c892-135">AAD ネイティブ アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="9c892-135">Create AAD Native-Application.</span></span>
+  2. <span data-ttu-id="9c892-136">目的のアクセス許可をアプリケーションに割り当てる (「アラートの読み取り」、"コンピューターの分離" など)。</span><span class="sxs-lookup"><span data-stu-id="9c892-136">Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc.</span></span> 
+  3. <span data-ttu-id="9c892-137">ユーザー資格情報を使用してアプリケーションを使用してトークンを取得します。</span><span class="sxs-lookup"><span data-stu-id="9c892-137">Get token using the application with user credentials.</span></span>
+  4. <span data-ttu-id="9c892-138">トークンを使用して Microsoft Defender for Endpoint API にアクセスする</span><span class="sxs-lookup"><span data-stu-id="9c892-138">Use the token to access the Microsoft Defender for Endpoint API</span></span>
 
+     <span data-ttu-id="9c892-139">詳細については、「ユーザー コンテキストで [アクセスを取得する」を参照してください](exposed-apis-create-app-nativeapp.md)。</span><span class="sxs-lookup"><span data-stu-id="9c892-139">For more information, see [Get access with user context](exposed-apis-create-app-nativeapp.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="019b3-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="019b3-140">Related topics</span></span>
-- [<span data-ttu-id="019b3-141">エンドポイント API 用 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="019b3-141">Microsoft Defender for Endpoint APIs</span></span>](exposed-apis-list.md)
-- [<span data-ttu-id="019b3-142">アプリケーション コンテキストを使用して Microsoft Defender for Endpoint にアクセスする</span><span class="sxs-lookup"><span data-stu-id="019b3-142">Access Microsoft Defender for Endpoint with application context</span></span>](exposed-apis-create-app-webapp.md)
-- [<span data-ttu-id="019b3-143">ユーザー コンテキストを使用して Microsoft Defender for Endpoint にアクセスする</span><span class="sxs-lookup"><span data-stu-id="019b3-143">Access Microsoft Defender for Endpoint with user context</span></span>](exposed-apis-create-app-nativeapp.md)
+## <a name="related-topics"></a><span data-ttu-id="9c892-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="9c892-140">Related topics</span></span>
+
+- [<span data-ttu-id="9c892-141">エンドポイント API 用 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="9c892-141">Microsoft Defender for Endpoint APIs</span></span>](exposed-apis-list.md)
+- [<span data-ttu-id="9c892-142">アプリケーション コンテキストを使用して Microsoft Defender for Endpoint にアクセスする</span><span class="sxs-lookup"><span data-stu-id="9c892-142">Access Microsoft Defender for Endpoint with application context</span></span>](exposed-apis-create-app-webapp.md)
+- [<span data-ttu-id="9c892-143">ユーザー コンテキストを使用して Microsoft Defender for Endpoint にアクセスする</span><span class="sxs-lookup"><span data-stu-id="9c892-143">Access Microsoft Defender for Endpoint with user context</span></span>](exposed-apis-create-app-nativeapp.md)
