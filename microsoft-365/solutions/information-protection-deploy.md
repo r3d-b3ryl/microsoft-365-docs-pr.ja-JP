@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: GDPR、Microsoft 365消費者プライバシー法 (CCPA) などのデータプライバシー規制 (Microsoft Teams、SharePoint、電子メールなど) に関する情報保護を構成します。
-ms.openlocfilehash: 76bac526dbf648b402c14b3304e32a308219bf02
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c0ffe7cf850ec6e7ae8c974f983ce43668bf6f30
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229205"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287713"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>データプライバシーに関する規制に関する情報保護を、Microsoft 365
 
@@ -33,6 +33,11 @@ Microsoft 365 のデータの種類には、Microsoft Teams でのチャット �
 ![データプライバシー規制に関する情報保護とは](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
 また、データプライバシーのニーズに合Microsoft 365 ID、デバイス、および脅威保護制御の使用に関する追加情報も提供されます。
+
+このビデオでは、展開プロセスの概要について説明します。
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NHCQ]
 
 これらのMicrosoft 365機能は、情報を保護するための条件を満たすのに役立ちます。
 
@@ -105,3 +110,26 @@ Microsoft 365、ID、デバイス、および脅威保護機能を提供し、�
 これらの機能を使用するプロセス、手順、その他のドキュメントを持つことは、規制機関へのコンプライアンスを実証するために重要な場合があります。
 
 詳細については、「組織内の [データ プライバシー インシデントの](information-protection-deploy-monitor-respond.md)監視と対応」を参照してください。
+
+## <a name="training-for-administrators"></a>管理者向けトレーニング
+
+Microsoft Learn のトレーニング モジュールは、情報保護に重要な機能について学ぶのに役立ちます。
+
+
+#### <a name="information-protection"></a>情報保護
+
+|トレーニング:|Microsoft 365 で企業情報を保護する|
+|:---|:---|
+|![Teams情報保護トレーニング アイコン](../media/protect-enterprise-information-microsoft-365.svg)|組織の情報を保護することは、かつてないほど困難になっています。 「Microsoft 365 で社内の情報を保護する」のラーニング パスでは、機密情報を不用意な共有や誤用から保護する方法、データを検出して分類する方法、秘密度ラベルを使用して保護する方法、損失から保護するために機密情報を監視および分析する方法について説明します。 この学習パスは、セキュリティ管理者の認定:セキュリティ管理者アソシエMicrosoft 365 Microsoft 365認定: Enterpriseエキスパート認定の準備に役立ちます。<br><br>1 時間 - ラーニング パス - 5 モジュール|
+
+> [!div class="nextstepaction"]
+> [スタート>](/learn/modules/m365-security-info-overview/introduction/)
+
+#### <a name="identity-and-access"></a>ID とアクセス
+
+|トレーニング:|Azure Active Directory でのID とアクセスの保護|
+|:---|:---|
+|![ID とアクセスのトレーニング アイコン](../media/protect-identity-and-access-with-microsoft-365.svg)|ID とアクセスのラーニングパスは、最新の ID およびアクセステクノロジ、認証を強化するためのツール、組織内での ID 保護のガイダンスについて説明しています。 Microsoft ID およびアクセステクノロジを使用すると、組織のIDをオンプレミスでもクラウドでも保護し、ユーザーがどこからでも安全に作業できるようになります。 このラーニングパスはMicrosoft 365 認定: セキュリティ管理者 と Microsoft 365 認定: エンタープライズ管理エキスパート の認定のための準備を行うことが出来ます。<br><br>2 時間 52 分 - ラーニング パス - 6 モジュール|
+
+> [!div class="nextstepaction"]
+> [スタート>](/learn/modules/m365-identity-overview/introduction/)

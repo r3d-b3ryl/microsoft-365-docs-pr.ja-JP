@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8a7152a8bfae62a4dda7b9b291b98528c788c8b7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b553c543989798f46e3e0301c36cfe6b5de80546
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537008"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287565"
 ---
 # <a name="payment-information-for-canada"></a>カナダのお支払い情報
 
@@ -30,20 +30,10 @@ ms.locfileid: "52537008"
 
 Microsoft **Corporation** から請求された請求書がある場合は、次の銀行情報を使用します。
 
-**Bank:** バンク オブ アメリカ(トロント)  
-**SWIFT コード:** BOFACATT  
-**アカウント番号:** 45571239  
-**アカウント名:** MICROSOFT  
-**銀行 ID:** 241  
-**ブランチ:** 56792  
-**アカウント名:** MICROSOFT
+**Bank:** Bank of America, Toronto **SWIFT Code:** BOFACATT Account **Number:** 45571239 アカウント名: MICROSOFT **Bank ID:** 241 **Branch:** 56792 Account **Name:** MICROSOFT 
 
 2021 年 3 月 1 日から注文と消費に対して **Microsoft Canada Inc.** から請求された請求書がある場合は、次の銀行情報を使用します。
 
-**Bank:** Citibank N.A., Canadian Branch  
-**ルーティング番号:** 032820012  
-**BIC/SWIFT コード:** CITICATTBCH  
-**アカウント番号:** 3003600001  
-**アカウント名:** MICROSOFT
+**Bank:** Citibank N.A., Canadian Branch **Routing Number:** 032820012 **BIC/SWIFT Code:** CITICATTBCH **アカウント番号:** 3003600001 アカウント名 **:** MICROSOFT
 
 現地の Microsoft 子会社から発行された請求書は、VAT/売上税/GST の標準税率で発行され、VAT/売上税/GST の目的で国内のサービス供給と見なされます。

@@ -1,5 +1,5 @@
 ---
-title: トピック センターの概要 (Microsoft Viva トピック
+title: Microsoft Viva Topics のトピック センターの概要
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
@@ -13,21 +13,21 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-description: トピック センターの詳細については、Microsoft Viva トピック。
-ms.openlocfilehash: f782be90e6cd6fa12e57df87ebb1057e58bdca19
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+description: Microsoft Viva Topics のトピック センターについて説明します。
+ms.openlocfilehash: bd3bdbc368ca95b1c795043c5c083aaebfcf5742
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984930"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287283"
 ---
-# <a name="topic-center-overview-in-microsoft-viva-topics"></a>トピック センターの概要 (Microsoft Viva トピック
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva Topics のトピック センターの概要
 
-このMicrosoft Viva トピックトピック センターは、組織SharePoint知識の中心として役立つ最新のサイトです。 このファイルは、ビバ[トピックのセットアップ中に](set-up-topic-experiences.md)作成Microsoft 365 管理センター。
+Microsoft Viva Topics では、トピック センターは、組織SharePoint知識の中心として役立つ最新のサイトです。 このファイルは、ビバ[トピックのセットアップ中に](set-up-topic-experiences.md)作成Microsoft 365 管理センター。
 
-トピック センターには、ライセンスを取得したユーザー全員が、接続先のトピックを表示できる Topics Web パーツを含む既定のホーム ページがあります。 
+トピック センターには、ライセンスを取得したユーザー全員が、接続先のトピックを表示できる Topics Web パーツを含む既定のホーム ページがあります。
 
-トピックを表示できるライセンスを持つすべてのユーザーがトピック センターにアクセスできる一方で、ナレッジ マネージャーは [トピックの管理] ページを使用してトピック **を管理** することもできます。 [ **トピックの管理]** タブは、[トピックの管理] アクセス許可を持つユーザーにのみ表示されます。 
+トピックを表示できるライセンスを持つすべてのユーザーがトピック センターにアクセスできる一方で、ナレッジ マネージャーは [トピックの管理] ページを使用してトピック **を管理** することもできます。 [ **トピックの管理]** タブは、[トピックの管理] アクセス許可を持つユーザーにのみ表示されます。
 
 ## <a name="where-is-my-topic-center"></a>トピック センターの場所
 
@@ -37,35 +37,31 @@ ms.locfileid: "52984930"
 1. [組織の設定Microsoft 365 管理センター] を選択 **設定、[** 組織の設定]**を選択します**。
 2. [サービス] **タブで** 、[トピック エクスペリエンス] **を選択します**。
 
-    ![Connectを知る](../media/admin-org-knowledge-options-completed.png) 
+    ![Connectを知る](../media/admin-org-knowledge-options-completed.png)
 
 3. [トピック センター **] タブを選択** します。[ **サイト アドレス]** の下にトピック センターへのリンクがあります。
 
-    ![ナレッジ ネットワーク設定](../media/knowledge-network-settings-topic-center.png) 
-
-
+    ![ナレッジ ネットワーク設定](../media/knowledge-network-settings-topic-center.png)
 
 ## <a name="home-page"></a>ホーム ページ
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LAhZ]  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LAhZ]
 
 </br>
-
 
 トピック センターのホーム ページでは、接続している組織のトピックを確認できます。
 
 - 推奨される接続 - [これらのトピックに関して一覧表示しました] の下に **トピックが表示されます。正しいと思いましたか?** これらは、トピックへの接続が AI を介して提案されているトピックです。 たとえば、関連するファイルまたはサイトの作成者である可能性があります。 トピックの関連人物としてリストを表示する必要がある場合は、確認を求めるメッセージが表示されます。
 
-   ![推奨される接続](../media/knowledge-management/my-topics.png) 
- 
+   ![推奨される接続](../media/knowledge-management/my-topics.png)
+
 - 確認済み接続 - トピック ページにピン留めされているトピック、またはトピックへの推奨される接続を確認したトピックです。 推奨される接続を確認すると、トピックが [推奨] セクションから [確認済み] セクションに移動します。
- 
-   ![承認済みトピック](../media/knowledge-management/my-topics-confirmed.png) 
+
+   ![承認済みトピック](../media/knowledge-management/my-topics-confirmed.png)
 
 ユーザーがトピックへの接続を確認すると、ユーザーはトピック ページを編集して接続を管理できます。 たとえば、トピックへの接続に関する詳細を提供できます。
-
 
 ## <a name="manage-topics-page"></a>[トピックの管理] ページ
 
@@ -76,8 +72,8 @@ ms.locfileid: "52984930"
 - トピックを確認する: AI が推奨するトピックが人間のキュレーターによって検証されたことをユーザーに示します。
 
 - トピックを発行する: トピック情報を編集して、最初に特定されたトピックの品質を向上し、トピックへのビュー アクセス権を持つすべてのユーザーにトピックを強調表示します。
- 
-- トピックを削除する: トピックをエンド ユーザーに検出不可にする。 トピックは [削除済み] **タブに移動** され、必要に応じて後で確認できます。 
+
+- トピックを削除する: トピックをエンド ユーザーに検出不可にする。 トピックは [削除済み] **タブに移動** され、必要に応じて後で確認できます。
 
 トピックの管理ページでトピックを管理する方法の詳細 **については、「トピック** の管理」 [を参照してください](manage-topics.md)。
 
@@ -89,8 +85,6 @@ ms.locfileid: "52984930"
 
 - [新しいトピックを作成](create-a-topic.md)する: 検出によって見つからなかったトピック、または AI ツールがトピックを作成するのに十分な証拠を見つけなかった場合に、新しいトピックを作成できます。
 
-
 ## <a name="see-also"></a>関連項目
 
 [トピック センターでトピックを管理する](manage-topics.md)
-

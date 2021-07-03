@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 0296e8151162ad4f2855fdd29ff2fc0ed4b4d6b2
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177575"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286887"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -262,14 +262,13 @@ Windows 10組織の Azure ADデバイスは、Intune に自動的に登録でき
 
 MDM User スコープ **が [一部] または** [すべて] **に設定されているの** に **、None** は設定 **されていないか確認します**。 [一部] を **選択** した場合は、登録後に戻り、すべてのユーザーを対象とするグループまたは同等のグループに対してモダン Workplace **-All** Azure AD グループをMicrosoft マネージド デスクトップします。  「[デバイスを使用してデバイスの登録Windows設定する」を参照](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)Microsoft Intune。
 
-
 ### <a name="ad-hoc-subscriptions"></a>アドホック サブスクリプション
 
 ("false" に設定されている場合) 状態ローミングが正しく動作Enterprise設定を確認する方法について説明します。
 
 **アドバイザリ**
 
-**AllowAdHocSubscriptions が True** に設定されている必要 **があります**。 それ以外の場合Enterprise状態ローミングが機能しない場合があります。 詳細については [、「Set-MsolCompanySettings」を参照してください](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
+**AllowAdHocSubscriptions が True** に設定されている必要 **があります**。 それ以外の場合Enterprise状態ローミングが機能しない場合があります。 詳細については [、「Set-MsolCompanySettings」を参照してください](/powershell/module/msonline/set-msolcompanysettings)。
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming

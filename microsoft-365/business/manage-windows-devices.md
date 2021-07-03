@@ -24,16 +24,16 @@ search.appverid:
 - BCS160
 - MET150
 description: ローカルの Active-Directory に参加Microsoft 365デバイスを保護するために、Windows 10をわずか数ステップで有効にする方法について説明します。
-ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: eb95c437030ae13a44f5e8043b3544d5846001c2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636088"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287697"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>ドメインに参加しているデバイスWindows 10デバイスをユーザーが管理Microsoft 365 Business Premium
 
-組織で Windows Server Active Directory をオンプレミスで使用している場合は、Microsoft 365 Business Premium をセットアップして Windows 10 デバイスを保護しながら、ローカル認証を必要とするオンプレミス リソースへのアクセスを維持できます。
+組織で Windows Server Active Directory オンプレミスを使用している場合は、Microsoft 365 Business Premium をセットアップして Windows 10 デバイスを保護しながら、ローカル認証を必要とするオンプレミス リソースへのアクセスを維持できます。
 この保護を設定するには、参加しているデバイスに **ハイブリッド Azure AD実装できます**。 これらのデバイスは、オンプレミスの Active Directory とユーザーの両方に参加Azure Active Directory。
 
 ## <a name="watch-configure-hybrid-azure-active-directory-join"></a>ウォッチ: ハイブリッド サーバーへの参加Azure Active Directory構成する
@@ -42,7 +42,7 @@ ms.locfileid: "52636088"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - ユーザーを Azure AD Azure AD Connect。
 - 組織単位 (OU) AD Connect Azure 組織単位 (OU) の同期を完了します。
@@ -109,13 +109,13 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 [既定の Azure AD 資格情報を使用して **自動 MDM** 登録を有効にする] ポリシーが表示されない場合は、Windows 10 バージョン 1803 以降の ADMX がインストールされていない可能性があります。 問題を解決するには、次の手順に従います (注: 最新の MDM.admx は下位互換性があります)。
 
-1.  ダウンロード: [2020 年 10 月更新プログラム (20H2)](https://www.microsoft.com/download/102157)Windows 10管理用テンプレート (.admx) をダウンロードします。
-2.  ドメイン コントローラーにパッケージをインストールします。
-3.  管理用テンプレートのバージョンに応じて、フォルダーに移動します **。C:\Program Files (x86)\Microsoft グループ ポリシー\Windows 10 2020 年 10 月更新 (20H2)**。
-4.  上記の **パスの [ポリシー定義]** フォルダーの名前を **PolicyDefinitions に変更します**。
-5.  **PolicyDefinitions** フォルダーを既定で **C:\Windows\SYSVOL\domain\Policyes** にある SYSVOL 共有にコピーします。 
-    -   ドメイン全体で中央ポリシー ストアを使用する場合は、PolicyDefinitions のコンテンツをそこに追加します。
-6.  複数のドメイン コントローラーがある場合は、ポリシーが使用可能になるまで SYSVOL がレプリケートされるのを待ちます。 この手順は、将来のバージョンの管理用テンプレートでも機能します。
+1. ダウンロード: [2020 年 10 月更新プログラム (20H2)](https://www.microsoft.com/download/102157)Windows 10管理用テンプレート (.admx) をダウンロードします。
+2. ドメイン コントローラーにパッケージをインストールします。
+3. 管理用テンプレートのバージョンに応じて、フォルダーに移動します **。C:\Program Files (x86)\Microsoft グループ ポリシー\Windows 10 2020 年 10 月更新 (20H2)**。
+4. 上記の **パスの [ポリシー定義]** フォルダーの名前を **PolicyDefinitions に変更します**。
+5. **PolicyDefinitions** フォルダーを既定で **C:\Windows\SYSVOL\domain\Policyes** にある SYSVOL 共有にコピーします。
+   - ドメイン全体で中央ポリシー ストアを使用する場合は、PolicyDefinitions のコンテンツをそこに追加します。
+6. 複数のドメイン コントローラーがある場合は、ポリシーが使用可能になるまで SYSVOL がレプリケートされるのを待ちます。 この手順は、将来のバージョンの管理用テンプレートでも機能します。
 
 この時点で、既定の Azure アカウント資格情報を使用して **自動 MDM** 登録を有効にするポリシー AD確認できます。
 

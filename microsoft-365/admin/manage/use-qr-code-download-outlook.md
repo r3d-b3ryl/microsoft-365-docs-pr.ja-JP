@@ -15,17 +15,17 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: QR コードを使用して Outlook Mobile を認証し、ダウンロードする方法について学習します。
-ms.openlocfilehash: 2c1853a6ea1dd1a5d2ad30b975d1dbd23b942040
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a403fbbed90229300e707653062c552104c47d97
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636000"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286707"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>QR コードを使用して Outlook Mobile アプリにサインインする
 
 > [!IMPORTANT]
-> この機能は、管理センターでターゲット リリースを有効にしている組織Microsoft 365使用できます。 対象指定リリースを有効にする方法と、その動作の詳細については、「[標準リリースまたはターゲット リリース オプションをセットアップする](release-options-in-office-365.md)」を参照してください。 パブリック プレビューを通じて、今後数週間でさらに多くの組織に展開される予定です。 パブリック プレビューでは、Microsoft 365 の機能に事前にアクセスすることができます。
+> この機能は、ターゲットリリースを有効にしている組織でのみMicrosoft 365 管理センター。 対象指定リリースを有効にする方法と、その動作の詳細については、「[標準リリースまたはターゲット リリース オプションをセットアップする](release-options-in-office-365.md)」を参照してください。 パブリック プレビューを通じて、今後数週間でさらに多くの組織に展開される予定です。 パブリック プレビューでは、Microsoft 365 の機能に事前にアクセスすることができます。
 
 Microsoft 365 管理者は、ユーザーがユーザー名とパスワードを入力しなくても、モバイル デバイスにおいてAndroid 版 Outlook または iOS 版 Outlook アプリにサインインできるようにすることができます。 QR コードをスキャンすることで、ユーザーはセキュリティで保護された認証を行い、Outlook モバイルにサインインできます。
 
@@ -38,7 +38,7 @@ Outlook on the web または他のデスクトップ Outlook アプリケーシ�
 
 この機能は既定で有効になっています。 この機能を無効にするには、次の手順に従います。
 
-1. [リモート PowerShell による Exchange への接続](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. [リモート PowerShell による Exchange への接続](/powershell/exchange/connect-to-exchange-online-powershell)。
 2. PowerShell を使用すると、Outlook モバイル アプリに関するユーザーへの通知を無効にできます。 これにより、QR コードサインイン フローが表示されません。
 
 ```powershell
@@ -48,4 +48,4 @@ Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ## <a name="related-content"></a>関連コンテンツ
 
 [標準リリースオプションまたは対象リリース オプションの設定](release-options-in-office-365.md) (記事)\
-[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig?view=exchange-ps) (記事)
+[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) (記事)

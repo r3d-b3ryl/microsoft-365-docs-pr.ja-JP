@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーに強力なパスワード要件を設定する方法については、Windows PowerShell。
-ms.openlocfilehash: 898eaf30d813e883e88c3ccc8ff500d72ae72854
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 87ba9e0323c379d8c2589dbb82c38c531dd9d047
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840660"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286269"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>ユーザーの強力なパスワード要件をオフにする
 
@@ -60,6 +60,6 @@ PowerShell を使用して、Microsoft 365接続する必要があります。
 
 [PowerShell で Microsoft 365 に接続する方法](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-[PowerShell MsolUser コマンドの詳細情報](/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
+[PowerShell MsolUser コマンドの詳細情報](/powershell/azure/active-directory/install-adv2)
 
 [パスワード ポリシーの詳細情報](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)

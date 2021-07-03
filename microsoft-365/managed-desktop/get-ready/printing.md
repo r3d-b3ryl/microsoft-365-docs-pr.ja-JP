@@ -10,17 +10,17 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 971644aafabda733bf745fae278bdfeeed3282e3
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 3f77074aa11e9dc82c8fac9763fdebfd2fc49d99
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574549"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287211"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、印刷リソースを準備する
 
 アプリケーションに登録する準備が整ったMicrosoft マネージド デスクトップ、印刷要件を評価し、環境に適切なアプローチを決定する必要があります。 次の 3 つのオプションがあります。
- 
+
 - Microsoft Universal Print ソリューションを展開して、デバイスからプリンター Microsoft マネージド デスクトップ簡単に見つけられます。 詳細については [、「What is Universal Print 」を参照してください](/universal-print/fundamentals/universal-print-whatis)。
 - カスタム PowerShell スクリプトを使用してプリンターを直接展開します。 「ローカル プリンターのセットアップ [」セクションの手順に従](#set-up-local-printers) います。
 - Microsoft 以外のクラウド印刷ソリューションを使用します。このソリューションは、Windows 10ドメインに参加しているデバイスとAzure Active Directoryします。 ソリューションは、ソフトウェア要件を満たす必要Microsoft マネージド デスクトップ。 詳細については、「アプリの要件[Microsoft マネージド デスクトップを参照してください](../service-description/mmd-app-requirements.md)。
@@ -31,13 +31,13 @@ ms.locfileid: "51574549"
 
 カスタム PowerShell スクリプトを使用してプリンターを展開し、印刷リソースを準備した場合は、次の手順に従って共有プリンターを展開します。
 
-1.  ポータルに移動Microsoft マネージド デスクトップします。
-2.  次の詳細を提供 *して、管理* ポータルの [サポート >サポート要求] セクションで、プリンターの展開というラベルの付いた要求を送信します。
+1. ポータルに移動Microsoft マネージド デスクトップします。
+2. 次の詳細を提供 *して、管理* ポータルの [サポート >サポート要求] セクションで、プリンターの展開というラベルの付いた要求を送信します。
     - デバイスに展開する必要がある共有プリンターの場所へのすべての UNC パスMicrosoft マネージド デスクトップします。
     - これらの共有プリンターへのアクセスを必要とするユーザー グループ
-3.  管理ポータルを使用して、要求がいつ完了したのかお知らせします。 最初は、テスト展開グループ内のデバイスにのみ構成を展開します。
-4.  構成が期待通り動作するかどうかをテストして確認する必要があります。 サポート要求の [ **ディスカッション]** タブを使用して返信し、テストが完了したらお知らせします。
-5.  その後、構成を他の展開グループに展開します。
+3. 管理ポータルを使用して、要求がいつ完了したのかお知らせします。 最初は、テスト展開グループ内のデバイスにのみ構成を展開します。
+4. 構成が期待通り動作するかどうかをテストして確認する必要があります。 サポート要求の [ **ディスカッション]** タブを使用して返信し、テストが完了したらお知らせします。
+5. その後、構成を他の展開グループに展開します。
 
 ## <a name="steps-to-get-ready"></a>準備の手順
 

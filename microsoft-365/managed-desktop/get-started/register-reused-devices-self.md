@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 21b0062a337dbeb3c7dec8b715971dbbc4917db1
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: ed254234109bc5ff9865ff49ed3fa0fff8770ab0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893277"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286911"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをj自分で登録する
 
@@ -75,13 +75,13 @@ Active Directory 環境では、PowerShell コマンドレットを使用して�
 - デバイスでリモートで実行するアクセス許可を持つドメイン資格情報パラメーターを持っている必要があります。
 - [ファイアウォール] でWindows WMI へのアクセスを許可します。 そのためには、次の手順に従います。
 
-    1. [アプリ]**コントロール Windows Defender ファイアウォール** を開き、[アプリまたは機能の使用を許可する] を選択 **Windows Defender ファイアウォール。**
-    
+    1. [ファイアウォール] **Windows Defenderパネルを** 開き、[ファイアウォール経由でアプリまたは機能を許可 **する] Windows Defenderします**。
+
     2. リスト **Windows管理インストルメンテーション (WMI)** を検索し、プライベートとパブリックの両方を有効にして **、[OK] を選択します**。
 
-1.  管理者権限を持つ PowerShell プロンプトを開きます。
+1. 管理者権限を持つ PowerShell プロンプトを開きます。
 
-2.  次 *のいずれかのスクリプト* を実行します。
+2. 次 *のいずれかのスクリプト* を実行します。
 
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
@@ -94,7 +94,7 @@ Active Directory 環境では、PowerShell コマンドレットを使用して�
     Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
     ```
 
-3. デバイスのエントリがある可能性があるディレクトリにアクセスします。 すべてのディレクトリから各デバイスのエントリを *削除* します(Windows Server Active Directory ドメイン サービスとサーバーサーバー Azure Active Directory。 完全に処理するには、削除に数時間かかる場合があります。
+3. デバイスのエントリがある可能性があるディレクトリにアクセスします。 ドメイン サービスとドメイン サービスを含むすべてのディレクトリから各Windows Server Active Directoryエントリを削除Azure Active Directory。 完全に処理するには、削除に数時間かかる場合があります。
 
 4. デバイスのエントリがある可能性がある管理サービスにアクセスします。 すべての管理サービスから各デバイスのエントリを削除します(Microsoft Endpoint Configuration Manager、Microsoft Intune、Windows)。 完全に処理するには、削除に数時間かかる場合があります。
 
@@ -102,9 +102,9 @@ Active Directory 環境では、PowerShell コマンドレットを使用して�
 
 #### <a name="manual-powershell-script-method"></a>手動 PowerShell スクリプト メソッド
 
-1.  管理者権限を持つ PowerShell プロンプトを開きます。
-2.  `Install-Script -Name Get-WindowsAutoPilotInfo` を実行します。
-3.  `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv` を実行します。
+1. 管理者権限を持つ PowerShell プロンプトを開きます。
+2. `Install-Script -Name Get-WindowsAutoPilotInfo` を実行します。
+3. `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv` を実行します。
 4. [ハッシュ データを結合します。](#merge-hash-data)
 
 #### <a name="flash-drive-method"></a>フラッシュ ドライブの方法
@@ -120,10 +120,8 @@ Active Directory 環境では、PowerShell コマンドレットを使用して�
 9. USB ドライブを削除し、実行してデバイスをシャットダウンする `shutdown -s -t 0`
 10. [ハッシュ データを結合します。](#merge-hash-data)
 
->[!IMPORTANT]
->登録が完了するまで、登録するデバイスの電源を入れる必要はありません。 
-
-
+> [!IMPORTANT]
+> 登録が完了するまで、登録するデバイスの電源を入れる必要はありません。 
 
 ### <a name="merge-hash-data"></a>ハッシュ データの結合
 
@@ -135,16 +133,13 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 ハッシュ データを 1 つの CSV ファイルにマージすると、デバイスの登録 [に進むことができます](#register-devices-by-using-the-admin-portal)。
 
-
 ## <a name="register-devices-by-using-the-admin-portal"></a>管理者ポータルを使用してデバイスを登録する
 
 [[Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)で、左側 **のナビゲーション ウィンドウ** で [デバイス] を選択します。 メニューの [Microsoft マネージド デスクトップ] セクションを探し、[デバイス] を **選択します**。 [デバイスのMicrosoft マネージド デスクトップ] ワークスペースで、[デバイスの登録]**を** 選択し、新しいデバイスを登録するフライインを開きます。
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
-
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 次の手順を実行します。
 
@@ -162,7 +157,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 | 登録保留中 | 登録はまだ行っていません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
 | ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft マネージド デスクトップセットアップをガイドしますので、それ以上の準備をする必要はありません。 |
-| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用している場合も示します。 |
+| Active | デバイスがユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用している場合も示します。 |
 | 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  | 
 
 ### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
@@ -187,12 +182,3 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 > デバイスをユーザーに渡す前に、そのユーザーに適切なライセンスを取得して [適用](../get-ready/prerequisites.md) してください。
 
 すべてのライセンスが適用されている場合は、ユーザー[](get-started-devices.md)にデバイスを使用する準備を整え、ユーザーがデバイスを起動し、デバイスのセットアップ エクスペリエンスをWindowsできます。
-
-
-
-
-
-
-
-
-

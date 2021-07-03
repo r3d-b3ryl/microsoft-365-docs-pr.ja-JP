@@ -19,19 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な仕事用アカウントまたは学校アカウントを持つCortana、Microsoft 365レベルのセキュリティOffice 365を満たすエクスペリエンスを利用できます。
-ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6887032e62d397659dc73475418f52b0c1246a2f
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227897"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286695"
 ---
 # <a name="cortana-in-microsoft-365"></a>CortanaのMicrosoft 365
 
 Cortana生産性アシスタントは、AI を活用したエクスペリエンスを提供し、時間を節約し、最も重要な点に注目します。 Cortanaは、電子メール、ファイル、チャットなどの Office 365 データを安全かつ安全に処理し、理由付ける機能を提供し、時間を節約し、効率を高め、ユーザーの生産性を向上するように設計されています。
 
-有効な仕事用アカウントまたは学校アカウントでサインインすると、Office 365 のエンタープライズ レベルのプライバシー、セキュリティ、コンプライアンスの約束 **("** Cortana エンタープライズ サービス ") を満たす Microsoft 365 エクスペリエンスで、Cortana を使用してクラウドベースのアシスタンス サービスを取得できます。 
-
+有効な仕事用アカウントまたは学校アカウントでサインインすると、Office 365 のエンタープライズ レベルのプライバシー、セキュリティ、コンプライアンスの約束 **("** Cortana エンタープライズ サービス ") を満たす Microsoft 365 エクスペリエンスで、Cortana を使用してクラウドベースのアシスタンス サービスを取得できます。
 
 - **Cortanaエンタープライズ** サービスには、Windows 10 (バージョン 2004 以降) の Cortana、iOS および Android 用 Outlook、iOS および Android および Microsoft Teams ディスプレイ用の Microsoft Teams モバイル アプリが [含](/microsoftteams/devices/teams-displays)まれます。
 
@@ -55,7 +54,7 @@ Cortanaは、ユーザーからのクエリ、ユーザーの要求を満たす�
 
 次の表に、エンタープライズ サービスのデータ処理Cortana示します。
 
-| 名前 | 説明 |
+| Name | 説明 |
 |:-----|:-----|
 |**ストレージ**  <br/> |顧客データは、クラウド内の Microsoft サーバー Office 365されます。 データはテナントの一部です。 <br/><br/>音声音声は保持されません。  <br/> |
 |**Geo に滞在する**  <br/> |顧客データは、Geo のクラウド内の Microsoft Office 365に格納されます。 データはテナントの一部です。  <br/> |
@@ -88,19 +87,18 @@ Windows 10 バージョン 2004 から、Cortana は Windows でプレインス�
 
 Cortana Teams モバイル アプリおよび Microsoft Teams ディスプレイ デバイスでの音声サポートを使用すると、Microsoft 365 Enterprise ユーザーは話し声の自然言語を使用して、コミュニケーション、コラボレーション、会議関連のタスクを合理化できます。 ユーザーは Cortana、Teams モバイル アプリの右上にあるマイク ボタンを選択するか、Microsoft Teams ディスプレイで &#8220;Cortana&#8221; とMicrosoft Teamsします。 チームにハンズフリーで素早く接続し、移動中に、ユーザーは &#8220;から Megan&#8221; または &#8220;に電話などのクエリを言って、次の会議&#8221; にメッセージを送信できます。 ユーザーは、次の会議に参加&#8220;、音声&#8221;を使用してファイルを共有し、予定表を確認する、などと言って会議に参加することもできます。 これらの音声支援エクスペリエンスは、Office 365 のプライバシー、セキュリティ、およびコンプライアンスの約束を完全に遵守する Cortana エンタープライズ レベルのサービスを使用して提供されます。これは、オンライン サービス規約[(OST)](https://www.microsoft.com/licensing/product-licensing/products)に反映されています。
 
-**管理コントロール**
+#### <a name="admin-control"></a>管理コントロール
 
 Cortanaは、テナントに対して既定で有効になります。 管理者は、ポリシー (TeamsCortanaPolicy) を使用して、CortanaでTeamsを使用できるユーザーを制御できます。 このポリシーは、ユーザー アカウント レベルまたはテナント レベルで設定できます。 管理者は、このポリシー コントロール内の CortanaVoiceInvocationMode フィールドを使用して、Cortana が無効になっているか、プッシュ ボタン呼び出しでのみ有効になっているか、ウェイク ワード呼び出しで有効になっているのかを判断することもできます (Microsoft Teams ディスプレイなど、それをサポートするデバイスにも適用されます)。 
 
-**ユーザー コントロール**
+#### <a name="user-control"></a>ユーザー コントロール
 
 個々のユーザーは、マイク Cortanaをクリックして、Teamsアプリで音声サポートを試してみてください。 &#8220;Cortana.&#8221; &#8220;Cortana.&#8221; と言うだけで、Microsoft Teams ディスプレイ デバイスで音声アシスタンスを試し、Cortana がウェイク ワードの呼び出しに応答するかどうかを制御することもできます。 Cortana 
 
-1.  モバイルTeams開く
-2.  [設定] に移動する
-3.  [Cortana
-4.  [音声のアクティブ化] トグルを切り替える
-
+1. モバイルTeams開く
+2. [設定] に移動する
+3. [Cortana
+4. [音声のアクティブ化] トグルを切り替える
 
 [音声サポートの詳細Cortana詳細については、Teams](/microsoftteams/cortana-in-teams)
 
@@ -123,7 +121,6 @@ Microsoft AI テクノロジに基づく自然言語、音声認識、機械学�
 [マイ メールの再生] (Outlook モバイル経由で接続されている場合) は、電話、ヘッドホン、または接続されたオーディオ デバイスのスピーカーを介して、ユーザーがフォーカス受信トレイで新しいメッセージを聞き、その日の変更を聞く音声駆動型のハンズフリーエクスペリエンスです。 ユーザーは、Cortanaメールを声に出して読み上げ、Cortana にフラグ、アーカイブ、削除、スキップなどのアクションを実行してもらいます。 この機能は、通勤中、マルチタスク中、または移動中にメールをキャッチアップする場合に特に役立ちます。 ユーザーが Play My Emails でCortanaすると、音声音声要求はエンタープライズ サービスのCortanaされます。 ユーザーの電子メールの読み取りテキストは、クラウド内でOffice 365されます。 このプロセスの間Office 365のモバイル デバイスでデータが処理され、電子メール データは保存されません。 音声コマンドのトランスクリプト (つまり、"読み取りとしてマーク"、"next"、"flag"など) は、Microsoft [Online Services](https://www.microsoft.com/licensing/product-licensing/products)Terms のデータ保護条件に従って保持される場合があります。
 
 Cortanaメールが保護されているときに呼び出し、メッセージを読む前に簡単に一時停止して、ユーザーが再生を一時停止したり、次のメッセージにスキップしたりするのに十分な時間を与える必要があります。 プライベート電話と同様に、機密情報が聞き取り過ぎになる可能性がある場所で再生を開始する場合は注意が必要です。 このような場合、組織の従業員がモバイルで Play My Emails を使用する場合は、適切な環境でヘッドホンを装着Outlook勧めします。
-
 
 ### <a name="how-to-opt-out-of-play-my-emails"></a>Play My Emails をオプトアウトする方法
 
@@ -183,10 +180,8 @@ Cortanaは、タスクとコミットメントを含む個別のブリーフィ�
 
 Microsoft Services Agreement および [Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=2109174)  [Privacy Statement](https://privacy.microsoft.com/privacystatement)に準拠するサービスの場合、Microsoft はデータ 管理者です。 データ管理者として、Microsoft はデータを使用して、Microsoft プライバシーに関する声明に従って製品および [サービスを改善します](https://privacy.microsoft.com/privacystatement)。
 
-
 ## <a name="related-content"></a>関連コンテンツ
 
 [Cortanaの音声サポートのTeams](/microsoftteams/cortana-in-teams) (記事)\
 [[CortanaのWindows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)構成 (記事)\
 [[メールを再生する] を使用して、Cortana?](https://support.microsoft.com/help/4558256)
-

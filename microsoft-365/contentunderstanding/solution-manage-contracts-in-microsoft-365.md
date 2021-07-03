@@ -13,16 +13,16 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Microsoft 365 SharePoint Syntex、Microsoft 365、SharePoint、およびMicrosoft TeamsのPower Automate。
-ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bc2570b08add2fa93637b9f64931c5903795a079
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054767"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287319"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Microsoft 365 ソリューションを使用して契約を管理する
 
-この記事では、組織の契約管理ソリューションを作成する方法について説明します。SharePoint Syntexおよびコンポーネントを使用Microsoft 365。 独自のビジネス ニーズに合ったソリューションの計画と作成に役立つフレームワークを提供します。 このソリューションがビジネス ニーズ全体に合わない場合でも、カスタム契約管理ソリューションを作成する計画で、その一部を採用できます。
+この記事では、組織の契約管理ソリューションを作成する方法について説明します。SharePoint Syntexおよびコンポーネントを使用Microsoft 365。 独自のビジネス ニーズに合ったソリューションの計画と作成に役立つフレームワークを提供します。 このソリューションでは契約管理について説明しますが、作業明細書や請求書など、他のドキュメント管理ソリューションを作成するためにそれを調整できます。
 
 *このコンテンツ セットは、Microsoft 365モダン ワーク ソリューション戦略チームと一緒に、Thomas Molbach が開発したソリューションを文書化しています。*
 
@@ -65,10 +65,10 @@ ms.locfileid: "53054767"
       ![コントラクトの例。](../media/content-understanding/contract.png)
 
 3. このMicrosoft Teams、すべての関係者は、ドキュメント ライブラリ内Teams承認または却下のために表示されるセキュリティで保護されたチャネルのメンバーです。 新しいTeamsを使用すると、すべての関係者に新しい契約を確認する必要があるときに通知されます。
- 
-4. 契約を使用Power Automate、契約は、契約チャネルの承認プロセスをTeamsされます。 メンバーが契約を承認すると、契約の状態が承認に変更され、すべてのメンバーに Teams 投稿を通じて通知され、契約が支払いの準備ができていることを示す行アイテムが作成されます。 このプロセスは、支払いのためにサードパーティの金融アプリケーションに直接書き込むまで拡張できます。
 
-5.  メンバーが契約を拒否すると、ステータスが拒否に変更され、すべてのメンバーに通知が投稿Teamsされます。
+4. 契約を使用Power Automate、契約は、契約チャネルの承認プロセスをTeamsされます。 メンバーが契約を承認すると、契約の状態が承認済みに変更され、すべてのメンバーに Teams 投稿を通じて通知され、契約が支払いの準備ができていることを示す明細が作成されます。 このプロセスは、支払いのためにサードパーティの金融アプリケーションに直接書き込むまで拡張できます。
+
+5. メンバーが契約を拒否すると、ステータスが拒否に変更され、すべてのメンバーに通知が投稿Teamsされます。
 
 6. このソリューションの最後の結果は、組織の自動化されたビジネス プロセスです。 従業員は、ドキュメントの承認ワークフローを開始Teamsカスタム タイル ビューを簡単に使用できます。 
 
@@ -78,9 +78,9 @@ ms.locfileid: "53054767"
 
 このソリューションは、Microsoft 365 Enterprise (E1、E3、E5、F3) または Business (Basic、Standard、または プレミアム) ライセンスの一部として利用できる次の機能に依存します。
 
--   Microsoft SharePoint Syntex
--   Microsoft Teams
--   Power Automate
+- Microsoft SharePoint Syntex
+- Microsoft Teams
+- Power Automate
 
 ## <a name="create-the-solution"></a>ソリューションの作成
 

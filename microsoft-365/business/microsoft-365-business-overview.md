@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: アプリとMicrosoft 365 Business Premium高度な保護を含むサブスクリプション Officeサービスについて学習します。
-ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: b7b71032ffc19c582f9658b93dae7dd9f89e02eb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705524"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287629"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の概要
 
@@ -42,16 +42,16 @@ ms.locfileid: "52705524"
 
 Microsoft 365 Business Premium (旧称 Microsoft 365 Business) は、従業員が300人未満の企業向けの包括的なサブスクリプションサービスです。 使い慣れた Office の生産性向上アプリとサービス、Microsoft Teams のような共同作業ツールが組み込まれており、高度なセキュリティとデバイス管理機能で統合します。
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>ウォッチ: その他のMicrosoft 365 Business Premium
+## <a name="watch-what-is-microsoft-365-business-premium"></a>ご覧ください: Microsoft 365 Business Premium とは
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
-  
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../business-video/index.yml)」をご覧ください。 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA]
+
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../business-video/index.yml)」をご覧ください。
 
 Microsoft 365 Business Premium は、最大300ライセンスを対象としています。 ライセンスの追加が必要な場合は、[Microsoft 365 Enterprise](../enterprise/index.yml) のドキュメントで詳細を参照してください。
 
 全機能のリストについては、[「Microsoft 365 Business Premium サービスの説明」](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) を参照してください。
-  
+
 ## <a name="small-business-security-needs"></a>小規模ビジネスのセキュリティのニーズ
 
 ビジネスデータはさまざまな方法で危険にさらされる可能性があります。 ユーザーは、侵害された資格情報でサインインしたり、別のデバイスやアプリケーションで組織のデータを表示する場合に、組織のセキュリティを侵害する可能性があります。 より具体的には、組織は次のような危険にさらされている可能性があります。
@@ -73,17 +73,17 @@ Microsoft 365 Business Premium を使用すると、次のような **脅威か�
 
 - メールやドキュメント内のリンクをリアルタイムでスキャンして、安全でない Web サイト (セーフリンク) をブロックします。
 
-- サンドボックス環境で電子メール添付ファイルの高度な分析を実行して、新しく開発されたマルウェア (添付ファイルセーフ検出します。 
+- サンドボックス環境で電子メール添付ファイルの高度な分析を実行して、新しく開発されたマルウェア (添付ファイルセーフ検出します。
 
-- 機械学習モデルと偽装検出を使用して高度な攻撃に対する保護を提供するフィッシング対策ポリシーを有効にします (セキュリティ インテリジェンス用 Defender のフィッシングOffice 365します)。 
+- 機械学習モデルと偽装検出を使用して高度な攻撃に対する保護を提供するフィッシング対策ポリシーを有効にします (セキュリティ インテリジェンス用 Defender のフィッシングOffice 365します)。
 
-- 信頼されていない場所からのアクセスを無効にする高度なポリシーを設定する、またはOffice ネットワークなどの信頼できる場所 から多要素認証をバイパスを設定します。(信頼できる IP を含むAzure MFA、条件付きアクセス)  
+- 信頼されていない場所からのアクセスを無効にする高度なポリシーを設定する、またはOffice ネットワークなどの信頼できる場所 から多要素認証をバイパスを設定します。(信頼できる IP を含むAzure MFA、条件付きアクセス) 
 
 - すべての組織の Windows 10 デバイスでマルウェア保護を適用し、重要なシステムフォルダー内のファイルをランサムウェアによる変更から保護します (Windows Defender)
 
 次の方法で **ビジネスデータは保護されています**。 
 
-- 自動検出を使用して、社会保障番号やクレジットカードなどの機密情報が社内外に漏洩するのを防止します。 (データ損失防止) 
+- 自動検出を使用して、社会保障番号やクレジットカードなどの機密情報が社内外に漏洩するのを防止します。 (データ損失防止)
 
 - 機密情報を暗号化して、組織外の顧客や他のユーザーと安全に通信できます。 メッセージを暗号化することで、本来の受信者だけがメッセージを開き、閲覧できます。(Office 365 Message Encryption)
 

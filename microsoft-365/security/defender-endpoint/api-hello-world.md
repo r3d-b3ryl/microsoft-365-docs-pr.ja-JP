@@ -17,23 +17,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 385227dc67039fb3666d3b9518af5be8eb01dc7a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 843fe093a2cfb8c328c51676e55f15ae732f7869
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769763"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286023"
 ---
-# <a name="microsoft-defender-for-endpoint-api---hello-world"></a>エンドポイント API 用 Microsoft Defender - Hello World 
+# <a name="microsoft-defender-for-endpoint-api---hello-world"></a>エンドポイント API 用 Microsoft Defender - Hello World
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**適用対象:** 
+**適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -54,7 +54,7 @@ ms.locfileid: "52769763"
 
 1. グローバル管理者ユーザー [を使用](https://portal.azure.com) して Azure **にログオン** します。
 
-2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。 
+2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。
 
    ![アプリケーション登録Microsoft Azureナビゲーションのイメージ](images/atp-azure-new-app2.png)
 
@@ -82,13 +82,13 @@ ms.locfileid: "52769763"
 
 5. [同意 **の付与] をクリックします。**
 
-    - **注**: アクセス許可を追加する度に、[新しい **アクセス許可を** 有効にするための同意の付与] をクリックする必要があります。
+   - **注**: アクセス許可を追加する度に、[新しい **アクセス許可を** 有効にするための同意の付与] をクリックする必要があります。
 
-    ![アクセス許可の付与のイメージ](images/grant-consent.png)
+   ![アクセス許可の付与のイメージ](images/grant-consent.png)
 
 6. アプリケーションにシークレットを追加します。
 
-    - [ **証明書とシークレット&クリックし、** シークレットに説明を追加し、[追加] を **クリックします**。
+   - [ **証明書とシークレット&クリックし、** シークレットに説明を追加し、[追加] を **クリックします**。
 
     **重要**: [追加] をクリックした後 **、生成されたシークレット値をコピーします**。 退出後に取得できない!
 
@@ -100,96 +100,95 @@ ms.locfileid: "52769763"
 
    ![作成されたアプリ ID のイメージ](images/app-and-tenant-ids.png)
 
-
 完成です！ アプリケーションの登録に成功しました!
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>手順 2 - アプリを使用してトークンを取得し、このトークンを使用して API にアクセスします。
 
--   以下のスクリプトを PowerShell ISE またはテキスト エディターにコピーし、"Get-Token.ps1"**として保存** します。
--   このスクリプトを実行すると、トークンが生成され、作業フォルダーに ""Latest-token.txt"**という名前で保存** されます。
+- 以下のスクリプトを PowerShell ISE またはテキスト エディターにコピーし、"Get-Token.ps1"**として保存** します。
+- このスクリプトを実行すると、トークンが生成され、作業フォルダーに ""Latest-token.txt"**という名前で保存** されます。
 
-```
-# That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
-# Paste below your Tenant ID, App ID and App Secret (App key).
+   ```powershell
+   # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
+   # Paste below your Tenant ID, App ID and App Secret (App key).
 
-$tenantId = '' ### Paste your tenant ID here
-$appId = '' ### Paste your Application ID here
-$appSecret = '' ### Paste your Application secret here
+   $tenantId = '' ### Paste your tenant ID here
+   $appId = '' ### Paste your Application ID here
+   $appSecret = '' ### Paste your Application secret here
 
-$resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
-$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
-$authBody = [Ordered] @{
-    resource = "$resourceAppIdUri"
-    client_id = "$appId"
-    client_secret = "$appSecret"
-    grant_type = 'client_credentials'
-}
-$authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
-$token = $authResponse.access_token
-Out-File -FilePath "./Latest-token.txt" -InputObject $token
-return $token
-```
+   $resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
+   $oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
+   $authBody = [Ordered] @{
+       resource = "$resourceAppIdUri"
+       client_id = "$appId"
+       client_secret = "$appSecret"
+       grant_type = 'client_credentials'
+   }
+   $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
+   $token = $authResponse.access_token
+   Out-File -FilePath "./Latest-token.txt" -InputObject $token
+   return $token
+   ```
 
--   サニティ チェック:<br>
-スクリプトを実行します。<br>
-ブラウザーで次の場所に移動します。 https://jwt.ms/ <br>
-トークン (ファイルのコンテンツ) をLatest-token.txtします。<br>
-上部ボックスに貼り付けます。<br>
-[役割] セクションを探します。 Alert.Read.All ロールを検索します。
+- サニティ チェック:
+  - スクリプトを実行します。
+  - ブラウザーで次の場所に移動します。 <https://jwt.ms/>
+  - トークン (ファイルのコンテンツ) をLatest-token.txtします。
+  - 上部ボックスに貼り付けます。
+  - [役割] セクションを探します。 Alert.Read.All ロールを検索します。
 
-![イメージ jwt.ms](images/api-jwt-ms.png)
+  ![イメージ jwt.ms](images/api-jwt-ms.png)
 
 ### <a name="lets-get-the-alerts"></a>アラートを取得できます。
 
--   以下のスクリプトでは、API **Get-Token.ps1** を使用して、過去 48 時間のアラートを取得します。
--   前のスクリプトを保存したのと同じフォルダーにこのスクリプト **を保存** Get-Token.ps1。 
--   スクリプトは、スクリプトと同じフォルダー内のデータを含む 2 つのファイル (json と csv) を作成します。
+- 以下のスクリプトでは、API **Get-Token.ps1** を使用して、過去 48 時間のアラートを取得します。
+- 前のスクリプトを保存したのと同じフォルダーにこのスクリプト **を保存** Get-Token.ps1。
+- スクリプトは、スクリプトと同じフォルダー内のデータを含む 2 つのファイル (json と csv) を作成します。
 
-```
-# Returns Alerts created in the past 48 hours.
+  ```powershell
+  # Returns Alerts created in the past 48 hours.
 
-$token = ./Get-Token.ps1       #run the script Get-Token.ps1  - make sure you are running this script from the same folder of Get-Token.ps1
+  $token = ./Get-Token.ps1       #run the script Get-Token.ps1  - make sure you are running this script from the same folder of Get-Token.ps1
 
-# Get Alert from the last 48 hours. Make sure you have alerts in that time frame.
-$dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")       
+  # Get Alert from the last 48 hours. Make sure you have alerts in that time frame.
+  $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
-# The URL contains the type of query and the time filter we create above
-# Read more about other query options and filters at   Https://TBD- add the documentation link
-$url = "https://api.securitycenter.microsoft.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
+  # The URL contains the type of query and the time filter we create above
+  # Read more about other query options and filters at   Https://TBD- add the documentation link
+  $url = "https://api.securitycenter.microsoft.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
 
-# Set the WebRequest headers
-$headers = @{ 
-    'Content-Type' = 'application/json'
-    Accept = 'application/json'
-    Authorization = "Bearer $token" 
-}
+  # Set the WebRequest headers
+  $headers = @{
+      'Content-Type' = 'application/json'
+      Accept = 'application/json'
+      Authorization = "Bearer $token"
+  }
 
-# Send the webrequest and get the results. 
-$response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
+  # Send the webrequest and get the results.
+  $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 
-# Extract the alerts from the results. 
-$alerts =  ($response | ConvertFrom-Json).value | ConvertTo-Json
+  # Extract the alerts from the results.
+  $alerts =  ($response | ConvertFrom-Json).value | ConvertTo-Json
 
-# Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
-$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
+  # Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
+  $dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}
 
-# Save the result as json and as csv
-$outputJsonPath = "./Latest Alerts $dateTimeForFileName.json"     
-$outputCsvPath = "./Latest Alerts $dateTimeForFileName.csv"
+  # Save the result as json and as csv
+  $outputJsonPath = "./Latest Alerts $dateTimeForFileName.json"
+  $outputCsvPath = "./Latest Alerts $dateTimeForFileName.csv"
 
-Out-File -FilePath $outputJsonPath -InputObject $alerts
-($alerts | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation 
-```
+  Out-File -FilePath $outputJsonPath -InputObject $alerts
+  ($alerts | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation
+  ```
 
 完了です! 成功したのは次の場合です。
--   作成および登録およびアプリケーション
--   そのアプリケーションに通知を読み取るアクセス許可が付与されている
--   API の接続
--   PowerShell スクリプトを使用して、過去 48 時間に作成されたアラートを返す
 
-
+- 作成および登録およびアプリケーション
+- そのアプリケーションに通知を読み取るアクセス許可が付与されている
+- API の接続
+- PowerShell スクリプトを使用して、過去 48 時間に作成されたアラートを返す
 
 ## <a name="related-topic"></a>関連トピック
+
 - [エンドポイント API 用 Microsoft Defender](exposed-apis-list.md)
 - [アプリケーション コンテキストを使用して Microsoft Defender for Endpoint にアクセスする](exposed-apis-create-app-webapp.md)
 - [ユーザー コンテキストを使用して Microsoft Defender for Endpoint にアクセスする](exposed-apis-create-app-nativeapp.md)

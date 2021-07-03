@@ -18,66 +18,65 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: PowerShell を使用して、Microsoft 365テナント内の個々または複数のユーザー アカウントのプロパティMicrosoft 365します。
-ms.openlocfilehash: 6b674641842f89fd8c8e22dc26350cdd53734b9e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aeb9b586c42a0bdfb8d69b8d297998fedc1124e6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911086"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286011"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントのプロパティを構成する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-管理センターをMicrosoft 365して、テナントのユーザー アカウントのプロパティMicrosoft 365できます。 PowerShell では、管理センターで実行できないその他の操作も実行できます。
+このプロパティを使用Microsoft 365 管理センターテナントのユーザー アカウントのプロパティをMicrosoft 365できます。 PowerShell では、管理センターで実行できないその他の操作も実行できます。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-Graph モジュールの Azure Active Directory PowerShell でユーザー アカウントのプロパティを構成するには [**、Set-AzureADUser**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0)コマンドレットを使用して、設定または変更するプロパティを指定します。
+Graph モジュールの Azure Active Directory PowerShell でユーザー アカウントのプロパティを構成するには [**、Set-AzureADUser**](/powershell/module/azuread/set-azureaduser)コマンドレットを使用して、設定または変更するプロパティを指定します。
 
 最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
-   
+
 ### <a name="change-properties-for-a-specific-user-account"></a>特定のユーザー アカウントのプロパティを変更する
 
 -ObjectID パラメーターを使用してアカウント *を識別* し、追加のパラメーターを使用して特定のプロパティを設定または変更します。 最も一般的なパラメーターの一覧を次に示します。
   
 - -Department "<部署名>"
-    
-- -DisplayName "<完全なユーザー名>"
-    
-- -FacsimilieTelephoneNumber "<FAX 番号>"
-    
-- -GivenName "<ユーザーの名>"
-    
-- -Surname "<ユーザーの姓>"
-    
-- -Mobile "<携帯電話番号>"
-    
-- -JobTitle "<役職>"
-    
-- -PreferredLanguage "<言語>"
-    
-- -StreetAddress "<番地>"
-    
-- -City "<市区町村名>"
-    
-- -State "<都道府県名>"
-    
-- -PostalCode "<郵便番号>"
-    
-- -Country "<国名>"
-    
-- -TelephoneNumber "<勤務先電話番号>"
-    
-- -UsageLocation \<2-character country or region code> "
-    
-    これは、ISO 3166-1 alpha-2 (A2) の 2 文字の国/地域コードです。
-    
-その他のパラメーターについては [、「Set-AzureADUser」を参照してください](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) 。
 
->[!Note]
->ユーザー アカウントにライセンスを割り当てる前に、使用場所を割り当てる必要があります。
->
+- -DisplayName "<完全なユーザー名>"
+
+- -FacsimilieTelephoneNumber "<FAX 番号>"
+
+- -GivenName "<ユーザーの名>"
+
+- -Surname "<ユーザーの姓>"
+
+- -Mobile "<携帯電話番号>"
+
+- -JobTitle "<役職>"
+
+- -PreferredLanguage "<言語>"
+
+- -StreetAddress "<番地>"
+
+- -City "<市区町村名>"
+
+- -State "<都道府県名>"
+
+- -PostalCode "<郵便番号>"
+
+- -Country "<国名>"
+
+- -TelephoneNumber "<勤務先電話番号>"
+
+- -UsageLocation \<2-character country or region code> "
+
+    これは、ISO 3166-1 alpha-2 (A2) の 2 文字の国/地域コードです。
+
+その他のパラメーターについては [、「Set-AzureADUser」を参照してください](/powershell/module/azuread/set-azureaduser)。
+
+> [!NOTE]
+> ユーザー アカウントにライセンスを割り当てる前に、使用場所を割り当てる必要があります。
 
 ユーザー アカウントのユーザー プリンシパル名を表示するには、次のコマンドを実行します。
   
@@ -88,13 +87,13 @@ Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName | More
 このコマンドは、PowerShell に次の指示を行います。
   
 1. ユーザー アカウント **(Get-AzureADUser)** のすべての情報を取得し、次のコマンド ( ) に送信します **|** 。
-    
+
 1. ユーザー プリンシパル名の一覧をアルファベット順に並べ替え (**Sort UserPrincipalName**) し、次のコマンド ( ) に送信します **|** 。
-    
+
 1. 各アカウントの [ユーザー プリンシパル名] プロパティ **([UserPrincipalName** の選択]) を表示します。
 
 1. 一度に 1 画面ずつ表示する (**More**)。
-    
+
 表示名 (名と名) に基づいてアカウントのユーザー プリンシパル名を表示するには、次のコマンドを実行します。 変数を入力 *$userName、* 次の文字を削除 \< and > します。
   
 ```powershell
@@ -128,9 +127,9 @@ Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
 このコマンドは、PowerShell に次の指示を行います。
   
 1. ユーザー アカウント **(Get-AzureADUser)** のすべての情報を取得し、次のコマンド ( ) に送信します **|** 。
-    
+
 1. ユーザーの場所をフランス **(Set-AzureADUser -UsageLocation "FR") に設定します**。
-    
+
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>特定のユーザー アカウント セットのプロパティを変更する
 
 ユーザー アカウントの特定のセットのプロパティを変更するには **、Get-AzureADUser** コマンドレット **、Where** コマンドレット **、Set-AzureADUser** コマンドレットを組み合わせて使用できます。 次の使用例は、経理部門のすべてのユーザーの使用場所をフランスに変更 *します*。
@@ -142,20 +141,19 @@ Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -Usag
 このコマンドは、PowerShell に次の指示を行います。
   
 1. ユーザー アカウント **(Get-AzureADUser)** のすべての情報を取得し、次のコマンド ( ) に送信します **|** 。
-    
+
 1.  Department プロパティが "Accounting"  **(Where {$_) に設定されているすべてのユーザー アカウントを検索します。Department -eq "Accounting"} )** をクリックし、結果の情報を次のコマンド ( ) に送信します **|** 。
-    
+
 1. ユーザーの場所をフランス **(Set-AzureADUser -UsageLocation "FR") に設定します**。
-    
+
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
 Windows PowerShell 用の Microsoft Azure Active Directory モジュールを使用してユーザー アカウントのプロパティを構成するには **、Set-MsolUser** コマンドレットを使用して、設定または変更するプロパティを指定します。
 
 最初に[、テナントにMicrosoft 365します](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
->[!Note]
->PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。 これらのコマンドレットは、Windows PowerShell から実行します。
->
+> [!NOTE]
+> PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に *Msol* が含まれるコマンドレットをサポートしていません。 これらのコマンドレットは、Windows PowerShell から実行します。
 
 ### <a name="change-properties-for-a-specific-user-account"></a>特定のユーザー アカウントのプロパティを変更する
 
@@ -164,39 +162,39 @@ Windows PowerShell 用の Microsoft Azure Active Directory モジュールを使
 *-UserPrincipalName* パラメーターを使用してアカウントを識別し、追加のパラメーターを使用して特定のプロパティを設定または変更します。 最も一般的なパラメーターの一覧を次に示します。
   
 - -City "<市区町村名>"
-    
+
 - -Country "<国名>"
-    
+
 - -Department "<部署名>"
-    
+
 - -DisplayName "<完全なユーザー名>"
-    
+
 - -Fax "<fax 番号>"
-    
+
 - -FirstName "<ユーザーの名>"
-    
+
 - -LastName "<ユーザーの姓>"
-    
+
 - -MobilePhone "<モバイル機器の番号>"
-    
+
 - -Office "<事業所の場所>"
-    
+
 - -PhoneNumber "<勤務先電話番号>"
-    
+
 - -PostalCode "<郵便番号>"
-    
+
 - -PreferredLanguage "<言語>"
-    
+
 - -State "<都道府県名>"
-    
+
 - -StreetAddress "<番地>"
-    
+
 - -Title "<役職名>"
-    
+
 - -UsageLocation \<2-character country or region code> "
-    
+
     これは、ISO 3166-1 alpha-2 (A2) の 2 文字の国/地域コードです。
-    
+
 その他のパラメーターについては [、「Set-MsolUser」を参照してください](/previous-versions/azure/dn194136(v=azure.100))。
 
 すべてのユーザーのユーザー プリンシパル名を表示するには、次のコマンドを実行します。
@@ -208,13 +206,13 @@ Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName | More
 このコマンドは、PowerShell に次の指示を行います。
   
 1. ユーザー アカウント **(Get-MsolUser)** のすべての情報を取得し、次のコマンド ( ) に送信します **|** 。
-    
+
 1. ユーザー プリンシパル名の一覧をアルファベット順に並べ替え (**Sort UserPrincipalName**) し、次のコマンド ( ) に送信します **|** 。
-    
+
 1. 各アカウントの [ユーザー プリンシパル名] プロパティ **([UserPrincipalName** の選択]) を表示します。
-    
+
 1. 一度に 1 画面ずつ表示する (**More**)。
-    
+
 表示名 (名と名) に基づいてアカウントのユーザー プリンシパル名を表示するには、次のコマンドを実行します。 変数 *に$userNameし* 、文字を削除 \< and > します。
   
 ```powershell
@@ -248,9 +246,9 @@ Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 このコマンドは、PowerShell に次の指示を行います。
   
 1. ユーザー アカウント **(Get-MsolUser)** のすべての情報を取得し、次のコマンド ( ) に送信します **|** 。
-    
+
 1. ユーザーの場所をフランス **(Set-MsolUser -UsageLocation "FR") に設定します**。
-    
+
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>特定のユーザー アカウント セットのプロパティを変更する
 
 特定の一連のユーザー アカウントのプロパティを変更するには **、Get-MsolUser** コマンドレット **、Where** コマンドレット **、Set-MsolUser** コマンドレットを組み合わせて使用できます。 次の使用例は、経理部門のすべてのユーザーの使用場所をフランスに変更 *します*。
@@ -262,9 +260,9 @@ Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocat
 このコマンドは、PowerShell に次の指示を行います。
   
 1. ユーザー アカウント **(Get-MsolUser)** のすべての情報を取得し、次のコマンド ( ) に送信します **|** 。
-    
+
 1. Department プロパティが *"Accounting"* **(Where {$_) に設定されているすべてのユーザー アカウントを検索します。Department -eq "Accounting"}**) をクリックし、結果の情報を次のコマンド ( ) に送信します **|** 。
-    
+
 1. ユーザーの場所をフランス **(Set-MsolUser -UsageLocation "FR") に設定します**。
 
 ## <a name="see-also"></a>関連項目

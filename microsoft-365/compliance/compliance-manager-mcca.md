@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
-ms.openlocfilehash: 36f11597eac1837e3e18885f3c0a5d8dbc89a774
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 7652a53e0d63e52d92e0d0506207c28f67459029
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148964"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287055"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
 
@@ -104,16 +104,16 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
   | 1 | アジア太平洋 |
   | 2 | オーストラリア |
   | 3 | カナダ |
-  | 4 | ヨーロッパ (フランスを除く) / 中東 / アフリカ |
-  | 5 | フランス |
-  | 6 | インド |
-  | 7 | 日本 |
-  | 8 | 韓国 |
-  | 9 | 北アメリカ (カナダを除く) |
-  | 10 | 南アメリカ |
-  | 11 | 南アフリカ |
+  | 4  | ヨーロッパ (フランスを除く) / 中東 / アフリカ |
+  | 5  | フランス |
+  | 6  | インド |
+  | 7  | 日本 |
+  | 8  | 韓国 |
+  | 9  | 北アメリカ (カナダを除く) |
+  | 10  | 南アメリカ |
+  | 11  | 南アフリカ |
   | 12  | スイス |
-  | 13 | アラブ首長国連邦 |
+  | 13  | アラブ首長国連邦 |
   | 14  | 英国 |
 
 
@@ -163,8 +163,8 @@ DLP の場合、推奨される情報に基づいて事前に生成された Pow
 
 改善アクションの右側にある **[おすすめ** ] ラベルの横にあるドロップダウンを選択します。 改善アクションに関連する組織の現在のMicrosoft 365の概要と、推奨されるベスト プラクティスが表示されます。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 MCCA のインストール、セットアップ、および使用の詳細については、「GitHub」の[README](https://github.com/OfficeDev/MCCA#overview) GitHub参照してください。
 
-詳細については、「PowerShell Windows PowerShell[の使い方」を参照してください](/powershell/scripting/how-to-use-docs?view=powershell-7)。 [「Starting Windows PowerShell」も参照してください](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7)。
+詳細については、「PowerShell Windows PowerShell[の使い方」を参照してください](/powershell/scripting/how-to-use-docs)。 [「Starting Windows PowerShell」も参照してください](/powershell/scripting/windows-powershell/starting-windows-powershell)。

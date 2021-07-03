@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: ビジネスに大きな影響を与えるアカウントとの間で送信される、失敗したメールメッセージと遅延メール メッセージを監視します。
-ms.openlocfilehash: 2a58f4090244fc6d68be69cf6b3c8ab6e00874fa
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 86e01e591823c94d8279f975ed7de24cc65776dc
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535808"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286143"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>優先アカウントを管理および監視する
 
@@ -37,15 +37,15 @@ ms.locfileid: "52535808"
 
 優先度アカウントのセキュリティのベスト プラクティスについては、「優先度アカウント [のセキュリティに関する推奨事項」を参照してください](../../security/office-365-security/security-recommendations-for-priority-accounts.md)。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 この **トピックで説明する** 優先度アカウント保護機能は、次の要件を満たす組織でのみ使用できます。
 
-- Microsoft Defender for Office 365プラン 2(E3、E5、Office 365 E5、Office 365、またはMicrosoft 365 E5含Microsoft 365 E5 Security。
+- Microsoft Defender for Office 365 プラン 2(Office 365 E3、Office 365 E5、Microsoft 365 E5、またはMicrosoft 365 E5 Security。
 
 この **プレミアムでFlow** メール 監視機能は、次の要件を満たす組織でのみ使用できます。
 
-- 組織では、Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 のいずれかの製品、または組み合わせのいずれかから、少なくとも 10,000 のライセンス 数を持っている必要があります。 たとえば、組織で 3000 Office 365 E3 ライセンスと 8500 Microsoft 365 E5 を持つ場合、対象製品から合計 11,500 ライセンスを取得できます。
+- 組織では、Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 のいずれかの製品、または組み合わせのいずれかから、少なくとも 5,000 のライセンス数を持っている必要があります。 たとえば、組織は Office 365 E3 のライセンスを 3,000 個と Microsoft 365 E5 のライセンスを 2,500 個持つことで、条件を満たす製品から合計 5,500 個のライセンスを持つことができます。
 - 組織に月間 50 人以上のアクティブな Exchange Online ユーザーが必要です。
 
 > [!NOTE]
@@ -57,7 +57,7 @@ ms.locfileid: "52535808"
 
 [セットアップ] ページから優先度アカウント **を追加します**。
 
-1. [管理センター] Microsoft 365に移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
+1. で、Microsoft 365 管理センターに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
 
 2. [組織の **ナレッジの**  >  **セットアップ] に移動** し、[最も **重要** なアカウントの監視] で [表示 **] を選択します**。
 
@@ -83,7 +83,7 @@ ms.locfileid: "52535808"
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>優先度アカウントリストからユーザーを削除する
 
-1. [管理センター] Microsoft 365に移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
+1. で、Microsoft 365 管理センターに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
 
 2. [組織の **ナレッジの**  >  **セットアップ] に移動** し、[最も **重要** なアカウントの監視] で [表示 **] を選択します**。
 

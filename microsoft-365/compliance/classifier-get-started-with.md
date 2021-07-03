@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 分類Microsoft 365は、さまざまな種類のコンテンツを認識するトレーニングを行うツールです。 この記事では、カスタム分類子を作成してトレーニングする方法と、それらを再トレーニングして精度を高める方法について説明します。
-ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3053e5154fb4e1ff39ce7db366ce4679bbb8911d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918181"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286635"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>トレーニング可能な分類子の使用を開始する
 
@@ -46,7 +46,7 @@ ms.locfileid: "50918181"
 
 分類子は、Microsoft 365 E5 E5 コンプライアンス機能です。 それらを使用するには、これらのサブスクリプションのいずれかが必要です。
 
-### <a name="permissions"></a>権限
+### <a name="permissions"></a>アクセス許可
 
 UI で分類子にアクセスするには、次の操作を行います。 
 
@@ -108,7 +108,7 @@ UI で分類子にアクセスするには、次の操作を行います。
    > [!TIP]
    > シード データ用に新しいサイトとフォルダーを作成する場合は、そのシード データを使用するトレーニング可能な分類子を作成する前に、その場所のインデックス作成に少なくとも 1 時間を許可します。
 
-3. コンプライアンス管理者またはセキュリティ管理者Microsoft 365アクセスしてコンプライアンス センターにサインインし、コンプライアンス センターまたはセキュリティ センターのMicrosoft 365を開Microsoft 365を  >  **開きます**。
+3. コンプライアンス管理者またはセキュリティ管理者Microsoft 365 コンプライアンス センターアクセス権を持つユーザーにサインインし、セキュリティ センター **の** データMicrosoft 365 コンプライアンス センターまたはMicrosoft 365 **を**  >  **開きます**。
 
 4. [トレーニング **可能な分類子] タブを選択** します。
 

@@ -1,6 +1,6 @@
 ---
 title: インシデント API の更新
-description: Defender API を使用してインシデントを更新Microsoft 365する方法
+description: API を使用してインシデントを更新するMicrosoft 365 Defenderする
 keywords: update, api, Incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 60f1209331862eb21d3b1949265f0873dcf2e5a7
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861505"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287821"
 ---
 # <a name="update-incidents-api"></a>インシデント API の更新
 
@@ -51,7 +51,7 @@ ms.locfileid: "52861505"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については[、「Access the Defender API Microsoft 365参照してください](api-access.md)。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「Access [the Microsoft 365 Defender API」を参照してください](api-access.md)。
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 -|-|-
@@ -125,11 +125,11 @@ comment | string | インシデントに追加するコメント。
 }
 ```
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
-- [Defender API Microsoft 365アクセスする](api-access.md)
+- [API にMicrosoft 365 Defenderする](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)
 - [エラー コードについて](api-error-codes.md)
 - [インシデント API](api-incident.md)
-- [インシデントを一覧表示する](api-list-incidents.md)
+- [インシデントをリストする](api-list-incidents.md)
 - [インシデントの概要](incidents-overview.md)

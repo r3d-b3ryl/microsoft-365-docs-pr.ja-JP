@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: セキュリティ コンプライアンス センターで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする&説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f346a32da6f47cadc0ded6d7d045a833bb3b60b0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256725"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287541"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>カスタムの機密情報の種類を使用する前に
 
@@ -128,12 +128,14 @@ PowerShell および Exact Data Match の機能を使用して、カスタムの
 ### <a name="checksum-validator"></a>チェックサム検証ツール
 
 正規表現で数字にチェックサムを実行する必要がある場合は、チェックサム検証ツール *を使用できます*。 たとえば、最後の数字が mod 9 計算を使用して検証されるチェックサム桁である 8 桁のライセンス番号に対して SIT を作成する必要があるとします。 チェックサム アルゴリズムは次のように設定しました。
- 
+
 Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * Weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
 
 1. 次の正規表現を使用してプライマリ要素を定義します。
 
-`\d{8}`
+   ```console
+   \d{8}
+   ```
 
 2. 次に、チェックサム検証ツールを追加します。
 3. 重み値をコンマで区切って追加し、チェック桁の位置と Mod 値を追加します。 Modulo 操作の詳細については、「Modulo 操作 [」を参照してください](https://en.wikipedia.org/wiki/Modulo_operation)。
@@ -145,11 +147,13 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 
 ### <a name="date-validator"></a>日付検証
 
-正規表現に埋め込まれた日付値が、作成する新しいパターンの一部である場合は、日付検証ツールを使用して、条件を満たした日付をテストできます。 たとえば、9 桁の従業員 ID 番号の SIT を作成するとします。 最初の 6 桁は DDMMYY 形式の採用日であり、最後の 3 桁はランダムに生成された数値です。 最初の 6 桁の数字が正しい形式で表示されていることを検証します。 
+正規表現に埋め込まれた日付値が、作成する新しいパターンの一部である場合は、日付検証ツールを使用して、条件を満たした日付をテストできます。 たとえば、9 桁の従業員 ID 番号の SIT を作成するとします。 最初の 6 桁は DDMMYY 形式の採用日であり、最後の 3 桁はランダムに生成された数値です。 最初の 6 桁の数字が正しい形式で表示されていることを検証します。
 
 1. 次の正規表現を使用してプライマリ要素を定義します。
 
-`\d{9}`
+   ```console
+   \d{9}
+   ```
 
 2. 次に、日付検証機能を追加します。
 3. 日付形式と開始オフセットを選択します。 日付文字列は最初の 6 桁の数字で、オフセットは `0` .

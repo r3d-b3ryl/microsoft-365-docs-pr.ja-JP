@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce387799a2f9e6d6cdffe063d3adf7310d7e7757
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: eec4869c5ff0b4caeedc52891a56d604c4b54348
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842724"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286035"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
 
@@ -38,8 +38,8 @@ ms.locfileid: "52842724"
 - ユーザー アカウント属性は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名、およびその他のジョブ プロファイルの詳細を含めることができます。 
 - セグメントは、選択したユーザー アカウント属性を使用して、セキュリティ &コンプライアンス センターで定義されている **ユーザーのセットです**。 ([サポートされる属性の一覧](information-barriers-attributes.md)を参照してください。)
 - 情報バリア ポリシーは、通信の制限値または制限を決定します。 情報バリア ポリシーを定義する際は、次の 2 種類のポリシーから選択します。
-    - "ブロック" ポリシーは、あるセグメントが別のセグメントと通信を妨げる。
-    - "許可" ポリシーでは、1 つのセグメントが特定の他のセグメントとのみ通信できます。
+  - "ブロック" ポリシーは、あるセグメントが別のセグメントと通信を妨げる。
+  - "許可" ポリシーでは、1 つのセグメントが特定の他のセグメントとのみ通信できます。
 - ポリシーの適用は、すべての情報バリア ポリシーが定義された後に実行され、組織に適用する準備が整います。
 
 ## <a name="the-work-flow-at-a-glance"></a>ワークフローの概要
@@ -71,8 +71,8 @@ ms.locfileid: "52842724"
 - アドレス帳ポリシーなし - 情報バリア ポリシーを定義して適用する前に、Exchangeポリシーが適用されないか確認してください。 情報バリアはアドレス帳ポリシーに基づいていますが、2 種類のポリシーには互換性がありません。 このようなポリシーがある場合は、まずアドレス帳 [ポリシーを削除してください](/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 情報バリア ポリシーを有効にし、階層型アドレス帳を有効にすると、情報バリア セグメントに含まれていないすべてのユーザーに、Exchange[](/exchange/address-books/hierarchical-address-books/hierarchical-address-books)オンラインで階層アドレス帳が表示されます。
 
 - PowerShell - 現在、情報バリア ポリシーは、PowerShell コマンドレットを使用して Office 365 セキュリティ &で定義および管理されます。 この記事ではいくつかの例を示しますが、PowerShell のコマンドレットとパラメーターを理解する必要があります。 また、このモジュールAzure PowerShell必要があります。
-    - [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
-    - [モジュールのインストールAzure PowerShellする](/powershell/azure/install-az-ps?view=azps-2.3.2)
+  - [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
+  - [モジュールのインストールAzure PowerShellする](/powershell/azure/install-az-ps)
 
 - Microsoft Teams の情報バリアに対する管理者の同意 - IB ポリシーが適用されている場合、グループ (つまり、グループに基づく Teams チャネル) から IB 以外のコンプライアンス ユーザーを削除できます。 この構成は、組織がポリシーと規制に準拠し続けるのに役立ちます。 次の手順を使用して、情報バリア ポリシーが期待した通り動作Microsoft Teams。
 
@@ -91,10 +91,9 @@ ms.locfileid: "52842724"
    1. メッセージが表示されたら、仕事用または学校用のアカウントを使用してサインインOffice 365。
 
    1. [要求された **アクセス許可] ダイアログ** ボックスで、情報を確認し、[同意する] を **選択します**。 アプリによって要求されるアクセス許可は、以下に示します。
-      
+
       > [!div class="mx-imgBorder"]
       > ![Image](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
-
 
 すべての前提条件が満たされた場合は、次のセクションに進みます。
 
@@ -187,7 +186,7 @@ ms.locfileid: "52842724"
 
 ### <a name="scenario-1-block-communications-between-segments"></a>シナリオ 1: セグメント間の通信をブロックする
 
-セグメント間の通信をブロックする場合は、方向ごとに 1 つという 2 つのポリシーを定義します。 各ポリシーは、通信を 1 つの方法でのみブロックします。
+セグメント間の通信をブロックする場合は、方向ごとに 1 つという 2 つのポリシーを定義します。 各ポリシーは、一方向の通信のみをブロックします。
 
 たとえば、セグメント A とセグメント B の間の通信をブロックするとします。この場合、セグメント A とセグメント B との通信を妨げる 1 つのポリシーを定義し、セグメント B がセグメント A と通信しなかねない 2 番目のポリシーを定義します。
 
@@ -326,7 +325,7 @@ Contoso は、次の表で説明するように、3 つのポリシーを定義�
 
 コマンドレットが終了すると、Contoso は法的および業界の要件に準拠しています。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - [情報バリアの概要を取得する](information-barriers.md)
 - [詳細については、Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)

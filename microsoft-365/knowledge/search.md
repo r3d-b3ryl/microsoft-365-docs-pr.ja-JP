@@ -1,7 +1,7 @@
 ---
-title: Microsoft Search を使用して Microsoft Viva のトピックを検索する
-ms.author: chuckedmonson
-author: chucked
+title: Microsoft Viva Microsoft Searchトピックを検索するには、次の情報を使用します。
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,16 +10,16 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Microsoft Viva でトピックを検索する方法について説明します。
-ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: a60d1e04c67eb42573bb566a5667f35227def2ad
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908067"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287259"
 ---
-# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Microsoft Search を使用して Microsoft Viva のトピックを検索する
+# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Microsoft Viva Microsoft Searchトピックを検索するには、次の情報を使用します。
 
-ビバ トピックのユーザーは、ユーザーのサイトでトピックSharePointトピックを見つける一方で、Microsoft Search を通じてトピックを検索できます。 
+ビバ トピックのユーザーは、トピックのハイライトを使用してトピックSharePoint見つける一方で、ユーザーはトピックを参照Microsoft Search。 
 
 ## <a name="topic-answer"></a>トピックの回答
 
@@ -41,13 +41,13 @@ Word、PowerPoint、Outlook、Excelの検索結果には、見つかったとき
 
 ## <a name="acronyms"></a>頭字語
 
-Viva Topics では、トピックを手動で編集して、トピックの頭字語を代替名として *含めできます*。 これにより、トピックの頭字語のみを使用して検索しているユーザーは、Microsoft Search を通じてトピックの回答を検索できます。
+Viva Topics では、トピックを手動で編集して、トピックの頭字語を代替名として *含めできます*。 これにより、トピックの頭字語のみを使用して検索しているユーザーは、トピックの回答を検索Microsoft Search。
 
-[頭字語の回答は](/microsoftsearch/manage-acronyms) 、Microsoft Search によって提供される機能であり、ビバ トピックとは別に管理されます。
+[Acronym Answers は](/microsoftsearch/manage-acronyms)、Microsoft Search提供される機能であり、ビバ トピックとは別に管理されます。
 
 ## <a name="bookmarks-and-topics"></a>ブックマークとトピック
 
-[ブックマークは](/microsoftsearch/manage-bookmarks)、ユーザーが検索だけで重要なサイトやツールをすばやく見つけるのに役立つ Microsoft Search 機能です (たとえば、Microsoft 365 テナント外の外部サイトの旅行予約ツール)。 これらは、管理センターの検索管理者Microsoft 365作成されます。 
+[ブックマークは](/microsoftsearch/manage-bookmarks)Microsoft Search機能であり、ユーザーが検索だけで重要なサイトやツールをすばやく見つけるのに役立ちます (たとえば、Microsoft 365 テナント外の外部サイトの旅行予約ツール)。 これらのユーザーは、検索管理者によって作成Microsoft 365 管理センター。 
 
 出張の予約に関する情報をお探しのユーザー向け:
 

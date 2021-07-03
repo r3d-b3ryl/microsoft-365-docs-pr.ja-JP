@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c60bed1fb2cc17c9f5dfbd1289ae5f5b5e13faec
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9a7ad1241ce73bb9b68e173faa9433c7326e14e5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933951"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286935"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でアラート通知を構成する
 
@@ -31,7 +31,7 @@ ms.locfileid: "51933951"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 Defender for Endpoint を構成して、新しい通知のために指定した受信者に電子メール通知を送信できます。 この機能を使用すると、直ちに通知を受け取り、重大度に基づいてアラートに基づいて行動できる個人のグループを識別できます。
 
@@ -46,7 +46,6 @@ Defender for Endpoint を構成して、新しい通知のために指定した�
 
 電子メール通知には、アラートに関する基本情報と、さらに調査を行うポータルへのリンクが含まれています。
 
-
 ## <a name="create-rules-for-alert-notifications"></a>アラート通知のルールを作成する
 電子メール通知を送信するデバイスとアラートの重大度と通知受信者を決定するルールを作成できます。
 
@@ -60,15 +59,15 @@ Defender for Endpoint を構成して、新しい通知のために指定した�
     - **[組織名を含** める] - 電子メール通知に表示される顧客名を指定します。
     - **[テナント固有のポータル リンクを含める** ] - 特定のテナントへのアクセスを許可するテナント ID を含むリンクを追加します。
     - **[デバイス情報を含** める] - 電子メール通知本文にデバイス名を含める。
-    
-        >[!NOTE]
+
+        > [!NOTE]
         > この情報は、Defender for Endpoint データで選択した地理的な場所ではない受信者メール サーバーによって処理される場合があります。
 
     - **[デバイス** ] - すべてのデバイス (グローバル管理者の役割のみ) または選択したデバイス グループの通知を受信者に通知するかどうかを選択します。 詳細については、「デバイス グループの作成 [と管理」を参照してください](machine-groups.md)。
     - **アラートの重大度** - アラートの重大度レベルを選択します。
 
 4. **[次へ]** をクリックします。
-    
+
 5. 受信者のメール アドレスを入力し、[受信者の追加] **をクリックします**。 複数のメール アドレスを追加することができます。
 
 6. [テストメールの送信] を選択して、電子メール受信者が電子メール通知 **を受け取る可能性を確認します**。
@@ -76,12 +75,12 @@ Defender for Endpoint を構成して、新しい通知のために指定した�
 7. [通知 **ルールの保存] をクリックします**。
 
 ## <a name="edit-a-notification-rule"></a>通知ルールの編集
+
 1. 編集する通知ルールを選択します。
 
 2. [全般] タブと [受信者] タブ情報を更新します。
 
 3. [通知 **ルールの保存] をクリックします**。
-
 
 ## <a name="delete-notification-rule"></a>通知ルールの削除
 
@@ -89,8 +88,8 @@ Defender for Endpoint を構成して、新しい通知のために指定した�
 
 2. **[削除]** をクリックします。
 
-
 ## <a name="troubleshoot-email-notifications-for-alerts"></a>アラートの電子メール通知のトラブルシューティング
+
 このセクションでは、アラートに電子メール通知を使用するときに発生する可能性があるさまざまな問題の一覧を示します。
 
 **問題:** 対象の受信者は、通知を取得していないと報告します。
@@ -102,5 +101,6 @@ Defender for Endpoint を構成して、新しい通知のために指定した�
 3. Defender for Endpoint の電子メール通知をキャッチして移動する可能性がある電子メール アプリケーションルールを確認します。
 
 ## <a name="related-topics"></a>関連項目
+
 - [データ保持設定の更新](data-retention-settings.md)
 - [高度な機能を構成する](advanced-features.md)

@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使い、トレーニング済みの文書理解モデルを使用して 1 つ以上のファイルを分類する要求を作成します。
-ms.openlocfilehash: 3a796bcdb38a9a6930b51f7d585febb69082732e
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: b1022787d6e11ebe36c88ecd29936a777289dd74
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177083"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287235"
 ---
 # <a name="create-classification-request"></a>分類要求の作成
 
@@ -26,7 +26,7 @@ SharePoint Online (および SharePoint 2016 以降のオンプレミス) REST �
 
 ## <a name="http-request"></a>HTTP 要求
 
-```
+```http
 POST /_api/machinelearning/workItems HTTP/1.1
 ```
 ## <a name="uri-parameters"></a>URI パラメーター
@@ -62,7 +62,7 @@ POST /_api/machinelearning/workItems HTTP/1.1
 
 #### <a name="sample-request"></a>要求のサンプル
 
-```
+```JSON
 {
     "__metadata": {
         "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"

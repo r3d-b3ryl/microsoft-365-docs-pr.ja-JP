@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: fa1d88271593f0278266004d4a170a807e1cbc32
-ms.sourcegitcommit: 2266c2da090bc9a6dc1e01dea07f26901d20d57b
+ms.openlocfilehash: be5df165ee64a890fbf762e81668420d5d3c88de
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53222684"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287151"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -230,7 +230,7 @@ ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 
 ユーザーの OneDrive アカウントまたは SharePoint に保存されている Microsoft Teams 会議のレコーディングを特定するには、**キーワード クエリ エディター** で次のように指定します。
 
-``` 
+```
 ProgID:Media AND ProgID:Meeting
 ```
 

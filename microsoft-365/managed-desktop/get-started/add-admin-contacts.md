@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ba4f1b0e4b2e00334dbffb4bf0aa9edb1b8c5622
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984702"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286923"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>管理ポータルで、管理者の連絡先を、追加および確認する
 
@@ -26,12 +26,13 @@ ms.locfileid: "52984702"
 ## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory管理ポータルMicrosoft マネージド デスクトップアクセス権
 
 Microsoft マネージド デスクトップ管理ポータルでは、ポータルにアクセスするユーザーに次のいずれかの役割 (Azure Active Directory) AD必要があります。
+
 - グローバル管理者
 - Intune サービス管理者
 - グローバル閲覧者
 - サービス サポート管理者
 
-グローバル管理者は、組織を登録する管理者である必要Microsoft マネージド デスクトップ。 5 つの役割はすべて、タスクを開始および表示するための管理ポータル内で同じアクセス権を持ちます。 Azure AD でこれらのロールを割り当てる方法の詳細については、「管理者ロールのアクセス許可」を[参照](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)Azure Active Directory。 
+グローバル管理者は、組織を登録する管理者である必要Microsoft マネージド デスクトップ。 5 つの役割はすべて、タスクを開始および表示するための管理ポータル内で同じアクセス権を持ちます。 Azure AD でこれらのロールを割り当てる方法の詳細については、「管理者ロールのアクセス許可」を[参照](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)Azure Active Directory。
 
 ## <a name="admin-contact-areas-of-focus"></a>管理者の連絡先のフォーカス領域
 
@@ -47,21 +48,21 @@ IT ヘルプ デスク | サポートスタッフがサポートエリア外で�
 
 **これらの連絡先に対して選択するユーザーは、自分の環境に関する意思決定を行う知識と権限を持Microsoft マネージド デスクトップです。** アプリ環境をオンボードMicrosoft マネージド デスクトップ、ローカル のヘルプデスクとセキュリティの連絡先を追加するように求めるメッセージが表示されます。 
 
-サポート要求を送信する場合は、 [管理者の連絡先が必要です](../service-description/support.md)。 サポート要求のフォーカス領域の管理者連絡先が必要です。 
+サポート要求を送信する場合は、 [管理者の連絡先が必要です](../service-description/support.md)。 サポート要求のフォーカス領域の管理者連絡先が必要です。
 
 **管理者連絡先を追加するには**
 
-1.  サインインして [Microsoft エンドポイント マネージャー][をクリックします](https://endpoint.microsoft.com)。 
+1. サインインして [Microsoft エンドポイント マネージャー][をクリックします](https://endpoint.microsoft.com)。
 
-2.  [**テナントの管理]** で、[連絡先] セクションを探 **Microsoft マネージド デスクトップ[** 管理者連絡先]**を選択します**。 
+2. [**テナントの管理]** で、[連絡先] セクションを探 **Microsoft マネージド デスクトップ[** 管理者連絡先]**を選択します**。
 
-3. **[追加]** を選択します。
+3. [**追加**] を選択します。
 
-4.  [フォーカスエリア **] を選択** し、連絡先の情報を入力します。 
+4. [フォーカスエリア **] を選択** し、連絡先の情報を入力します。 
 
     ![その他、アプリ、セキュリティなどのフォーカス領域の一覧](../../media/areaoffocus.png)
 
-5. フォーカス領域ごとに繰り返します。 
+5. フォーカス領域ごとに繰り返します。
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
 

@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで、管理者がビジネス、学校、または非営利団体のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: 7f12918211718b91313c0c89b11eaeb0a8cc3181
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: fdd219e4fc99e2388acb5b19eacb2fc470041f79
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635824"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286731"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -85,9 +85,10 @@ Azure Active Directory には、その他のパスワード ポリシーと制�
 
 Set-MsolPasswordPolicy コマンドレットは特定のドメインまたはテナントのパスワード ポリシーを更新します。2つの設定が必要です。まず、パスワードを変更するまでの有効期間を指定します。2番目に、パスワードの有効期限が近づいているという最初の通知をユーザーが受け取るときにトリガーされる、パスワードの有効期限までの日数を示します。
 
-特定のドメインまたはテナントのパスワードポリシーを更新する方法については、[「Set-MsolPasswordPolicy」](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)を参照してください。
+特定のドメインまたはテナントのパスワードポリシーを更新する方法については、[「Set-MsolPasswordPolicy」](/powershell/module/msonline/set-msolpasswordpolicy)を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 
 [ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md) (記事)\
+
 [パスワードをリセットする](../add-users/reset-passwords.md) (記事)

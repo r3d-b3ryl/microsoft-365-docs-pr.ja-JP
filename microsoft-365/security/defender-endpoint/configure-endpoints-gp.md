@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 80794a9d5e4da0d2da74fc714ffd1e0ceab34c8f
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105688"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286959"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>グループ ポリシー Windows 10デバイスのオンボード 
 
@@ -36,28 +36,25 @@ ms.locfileid: "53105688"
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
-
 > [!NOTE]
 > グループ ポリシー (GP) 更新プログラムを使用してパッケージを展開するには、サーバー 2008 R2 以降Windowsする必要があります。
-> 
+>
 > サーバー Windows 2019 では、グループ ポリシーの基本設定で作成される XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。
 
 ## <a name="onboard-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオンボードする
 
 [![さまざまな展開パスを示す PDF のイメージ](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
-[[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。 
-
-
+[[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
 
 1. サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは次の方法で取得[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
- 
+
     1. ナビゲーション ウィンドウで、[オンボーディング]**設定**  >  **選択します**。
 
     1. オペレーティング システムWindows 10を選択します。
-    
+
     1. [展開方法 **] フィールドで** 、[グループ ポリシー] **を選択します**。
-    
+
     1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
 2. デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。 *OptionalParamsPolicy* というフォルダーと *WindowsDefenderATPOnboardingScript.cmd というファイルが必要です*。
@@ -76,7 +73,7 @@ ms.locfileid: "53105688"
 
 9. **[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。
 
->[!TIP]
+> [!TIP]
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint デバイスで検出テストを実行 [する」を参照してください](run-detection-test.md)。
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>エンドポイントの追加の Defender 構成設定
@@ -85,31 +82,31 @@ ms.locfileid: "53105688"
 グループ ポリシー (GP) を使用して、ディープ分析機能で使用されるサンプル共有の設定などの設定を構成できます。
 
 ### <a name="configure-sample-collection-settings"></a>サンプル コレクション設定の構成
-1.  GP 管理デバイスで、構成パッケージから次のファイルをコピーします。
+
+1. GP 管理デバイスで、構成パッケージから次のファイルをコピーします。
 
     - _AtpConfiguration.admx を_ _C: \\ \\ policyDefinitions Windowsコピーする_
 
     - _AtpConfiguration.adml_ を C: Windows _\\ \\ PolicyDefinitions \\ en-US にコピーする_
 
     グループ ポリシー管理用テンプレートに [セントラル ストア](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)を使用している場合は、構成パッケージから次のファイルをコピーします。
-    
+
     - SysVol ポリシー _\\ \\ \<forest.root\> \\ \\ \<forest.root\> \\ \\ PolicyDefinitions に AtpConfiguration.admx をコピーする_
 
     - _AtpConfiguration.adml を_ _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ ポリシー \\ PolicyDefinitions \\ en-US にコピーする_
 
-2.  グループ ポリシー [管理コンソールを開き](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)、構成する GPO を右クリックし、[編集] を **クリックします**。
+2. グループ ポリシー [管理コンソールを開き](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)、構成する GPO を右クリックし、[編集] を **クリックします**。
 
-3.  グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動します**。
+3. グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動します**。
 
-4.  [ポリシー **] をクリックし**、[管理 **用テンプレート] をクリックします**。
+4. [ポリシー **] をクリックし**、[管理 **用テンプレート] をクリックします**。
 
-5.  [Windows **コンポーネント] をクリック** し **、[SmartScreen] Windows Defenderをクリックします**。
+5. [Windows **コンポーネント] をクリック** し **、[SmartScreen] Windows Defenderをクリックします**。
 
-6.  デバイスからのサンプル共有を有効または無効にする場合に選択します。
+6. デバイスからのサンプル共有を有効または無効にする場合に選択します。
 
->[!NOTE]
+> [!NOTE]
 > 値を設定しない場合、既定値はサンプル コレクションを有効にします。
-
 
 ## <a name="other-recommended-configuration-settings"></a>その他の推奨構成設定
 
@@ -121,39 +118,39 @@ ms.locfileid: "53105688"
 
 **ポリシーの場所:** \Windows コンポーネント\atp Windows Defender
 
-ポリシー | Setting 
+ポリシー | Setting
 :---|:---
-Enable\Disable Sample collection|   [有効] - [コンピューターでサンプル コレクションを有効にする] チェック ボックスをオンにします。
+Enable\Disable Sample collection| [有効] - [コンピューターでサンプル コレクションを有効にする] チェック ボックスをオンにします。
 
-<br/>
+<br>
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策
 
-ポリシー | Setting 
+ポリシー | Setting
 :---|:---
 望ましくない可能性があるアプリケーションの検出を構成する | 有効、ブロック
 
-<br/>
+<br>
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\MAPS
 
-ポリシー | Setting 
+ポリシー | Setting
 :---|:---
 Microsoft MAPS に参加する | 有効、高度なマップ
 詳細な分析が必要な場合にファイル サンプルを送信する | 有効、安全なサンプルの送信
 
-<br/>
+<br>
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\リアルタイム保護
 
-ポリシー | Setting 
+ポリシー | Setting
 :---|:---
 リアルタイム保護をオフにする|無効
 動作の監視を有効にする|Enabled
 ダウンロードしたファイルと添付ファイルをスキャンする|Enabled
 コンピューター上のファイルとプログラムのアクティビティを監視する|Enabled
 
-<br/>
+<br>
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\Scan
 
@@ -163,8 +160,7 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 :---|:---
 スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |Enabled
 
-
-<br/>
+<br>
 
 **ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
@@ -182,15 +178,12 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 
    ![攻撃表面の縮小構成のイメージ](images/asr-guid.png)
 
-
-
-ポリシー | Setting 
+ポリシー | Setting
 :---|:---
 フォルダー アクセスの制御を構成する| 有効、監査モード
 
-
-
 ## <a name="offboard-devices-using-group-policy"></a>グループ ポリシーを使用してデバイスをオフボードする
+
 セキュリティ上の理由から、Offboard デバイスに使用されるパッケージは、ダウンロード日から 30 日後に期限切れになります。 デバイスに送信された期限切れのオフボード パッケージは拒否されます。 オフボード パッケージをダウンロードすると、パッケージの有効期限が通知され、パッケージ名にも含まれます。
 
 > [!NOTE]
@@ -201,7 +194,7 @@ Microsoft MAPS に参加する | 有効、高度なマップ
     1. ナビゲーション ウィンドウで、[オフボーディング]**設定**  >  **選択します**。
 
     1. オペレーティング システムWindows 10を選択します。
-    
+
     1. [展開方法 **] フィールドで** 、[グループ ポリシー] **を選択します**。
 
     1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
@@ -225,11 +218,12 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 > [!IMPORTANT]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。
 
-
 ## <a name="monitor-device-configuration"></a>デバイス構成の監視
+
 グループ ポリシーでは、デバイス上のポリシーの展開を監視するオプションはありません。 監視は、ポータルまたはさまざまな展開ツールを使用して直接実行できます。
 
 ## <a name="monitor-devices-using-the-portal"></a>ポータルを使用してデバイスを監視する
+
 1. に移動[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
 2. [デバイス **] リストをクリックします**。
 3. デバイスが表示されているのを確認します。
@@ -237,8 +231,8 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 > [!NOTE]
 > デバイスが [デバイス] リストに表示を開始するには、数日 **かかる場合があります**。 これには、ポリシーがデバイスに配布される時間、ユーザーがログオンする前にかかる時間、エンドポイントがレポートを開始するのにかかる時間が含まれます。
 
+## <a name="related-topics"></a>関連項目
 
-## <a name="related-topics"></a>関連トピック
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md)

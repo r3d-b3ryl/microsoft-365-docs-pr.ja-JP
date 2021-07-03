@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、証明書ベース認証Microsoft 365クライアント アプリのサポートに関する詳細を確認します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5ebef7c10aa61ba28c8fb841468be244f6e8542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bef1a684ba1ebe2eaba90677cd726cc190e342db
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905001"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286575"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365クライアント アプリのサポート: 証明書ベースの認証
 
@@ -46,12 +46,11 @@ Active Directory 認証ライブラリ (ADAL) や Microsoft 認証ライブラ�
 
 [!INCLUDE [Certificate-based authentication services support table](../includes/microsoft-365-client-support-certificate-based-authentication-include.md)]
 
->[!NOTE]
->iOS と Android のエッジは、アカウントの追加フロー中に証明書ベースの認証をサポートします。 iOS と Android のエッジは、通常はイントラネット サイトである Web サイトに対して認証を実行する場合、証明書ベースの認証をサポートします。 <br><br>  このシナリオでは、ユーザーは Web サイト (通常はイントラネット上) に移動し、Web サイトはユーザーに証明書による認証を要求します。 これは、最新の認証を全く伴うのではなく、Microsoft 認証ライブラリを活用する必要があります。 これは、iOS の制限による影響です。iOS は、サード パーティ製アプリが証明書が保存されているシステムキーチェーンにアクセスするのを防止します (Apple アプリと [Safari Webview](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) コントローラーだけがシステムキーチェーンにアクセスできます)。 <br><br> Edge は [WebKit](https://developer.apple.com/documentation/webkit) フレームワークを使用して Web サイトをレンダリングします。Edge はシステムキーチェーンにアクセスできず、証明書の選択肢をユーザーに提示できません。 これは、残念ながら、Apple のアーキテクチャによる設計です。
+> [!NOTE]
+> iOS と Android のエッジは、アカウントの追加フロー中に証明書ベースの認証をサポートします。 iOS と Android のエッジは、通常はイントラネット サイトである Web サイトに対して認証を実行する場合、証明書ベースの認証をサポートします。 <br><br>  このシナリオでは、ユーザーは Web サイト (通常はイントラネット上) に移動し、Web サイトはユーザーに証明書による認証を要求します。 これは、最新の認証を全く伴うのではなく、Microsoft 認証ライブラリを活用する必要があります。 これは、iOS の制限による影響です。iOS は、サード パーティ製アプリが証明書が保存されているシステムキーチェーンにアクセスするのを防止します (Apple アプリと [Safari Webview](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) コントローラーだけがシステムキーチェーンにアクセスできます)。 <br><br> Edge は [WebKit](https://developer.apple.com/documentation/webkit) フレームワークを使用して Web サイトをレンダリングします。Edge はシステムキーチェーンにアクセスできず、証明書の選択肢をユーザーに提示できません。 これは、残念ながら、Apple のアーキテクチャによる設計です。
 
 ## <a name="supported-powershell-modules"></a>サポートされている PowerShell モジュール
 
-- [Azure Active DirectoryPowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active DirectoryPowerShell](/powershell/azure/active-directory/overview)
 - [Exchange Online の PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePointオンライン PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-
