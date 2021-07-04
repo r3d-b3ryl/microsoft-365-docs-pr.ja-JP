@@ -16,30 +16,29 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 248e08913e6210fabed26955a1015533e055dcb6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 82052634b79bf433731d0afdab45e3d75e6497e0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007071"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289333"
 ---
-# <a name="live-response-command-examples"></a><span data-ttu-id="e58c0-104">ライブ応答コマンドの例</span><span class="sxs-lookup"><span data-stu-id="e58c0-104">Live response command examples</span></span>
+# <a name="live-response-command-examples"></a><span data-ttu-id="3af91-104">ライブ応答コマンドの例</span><span class="sxs-lookup"><span data-stu-id="3af91-104">Live response command examples</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="e58c0-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="e58c0-105">**Applies to:**</span></span>
-- [<span data-ttu-id="e58c0-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="e58c0-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="e58c0-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e58c0-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="3af91-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="3af91-105">**Applies to:**</span></span>
+- [<span data-ttu-id="3af91-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="3af91-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="3af91-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3af91-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="e58c0-108">Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="e58c0-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="e58c0-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="e58c0-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> <span data-ttu-id="3af91-108">Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="3af91-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="3af91-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="3af91-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-<span data-ttu-id="e58c0-110">ライブ応答で使用される一般的なコマンドについて説明し、その一般的な使用例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e58c0-110">Learn about common commands used in live response and see examples on how they are typically used.</span></span>
+<span data-ttu-id="3af91-110">ライブ応答で使用される一般的なコマンドについて説明し、その一般的な使用例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3af91-110">Learn about common commands used in live response and see examples on how they are typically used.</span></span>
 
-<span data-ttu-id="e58c0-111">付与されている役割に応じて、基本的なライブ応答コマンドまたは高度なライブ応答コマンドを実行できます。</span><span class="sxs-lookup"><span data-stu-id="e58c0-111">Depending on the role that's been granted to you, you can run basic or advanced live response commands.</span></span> <span data-ttu-id="e58c0-112">基本的なコマンドと高度なコマンドの詳細については、「ライブ応答を使用してデバイス上のエンティティを調査 [する」を参照してください](live-response.md)。</span><span class="sxs-lookup"><span data-stu-id="e58c0-112">For more information on basic and advanced commands, see [Investigate entities on devices using live response](live-response.md).</span></span>
+<span data-ttu-id="3af91-111">付与されている役割に応じて、基本的なライブ応答コマンドまたは高度なライブ応答コマンドを実行できます。</span><span class="sxs-lookup"><span data-stu-id="3af91-111">Depending on the role that's been granted to you, you can run basic or advanced live response commands.</span></span> <span data-ttu-id="3af91-112">基本的なコマンドと高度なコマンドの詳細については、「ライブ応答を使用してデバイス上のエンティティを調査 [する」を参照してください](live-response.md)。</span><span class="sxs-lookup"><span data-stu-id="3af91-112">For more information on basic and advanced commands, see [Investigate entities on devices using live response](live-response.md).</span></span>
 
-
-## <a name="analyze"></a><span data-ttu-id="e58c0-113">分析</span><span class="sxs-lookup"><span data-stu-id="e58c0-113">analyze</span></span> 
+## <a name="analyze"></a><span data-ttu-id="3af91-113">分析</span><span class="sxs-lookup"><span data-stu-id="3af91-113">analyze</span></span>
 
 ```console
 # Analyze the file malware.txt
@@ -51,7 +50,7 @@ analyze file c:\Users\user\Desktop\malware.txt
 analyze process 1234
 ```
 
-## <a name="connections"></a><span data-ttu-id="e58c0-114">接続</span><span class="sxs-lookup"><span data-stu-id="e58c0-114">connections</span></span>
+## <a name="connections"></a><span data-ttu-id="3af91-114">接続</span><span class="sxs-lookup"><span data-stu-id="3af91-114">connections</span></span>
 
 ```console
 # List active connections in json format using parameter name
@@ -63,7 +62,7 @@ connections -output json
 connections json
 ```
 
-## <a name="dir"></a><span data-ttu-id="e58c0-115">dir</span><span class="sxs-lookup"><span data-stu-id="e58c0-115">dir</span></span>
+## <a name="dir"></a><span data-ttu-id="3af91-115">dir</span><span class="sxs-lookup"><span data-stu-id="3af91-115">dir</span></span>
 
 ```console
 # List files and sub-folders in the current folder
@@ -80,21 +79,21 @@ dir C:\Users\user\Desktop\
 dir -output json
 ```
 
-## <a name="fileinfo"></a><span data-ttu-id="e58c0-116">fileinfo</span><span class="sxs-lookup"><span data-stu-id="e58c0-116">fileinfo</span></span>
+## <a name="fileinfo"></a><span data-ttu-id="3af91-116">fileinfo</span><span class="sxs-lookup"><span data-stu-id="3af91-116">fileinfo</span></span>
 
 ```console
 # Display information about a file
 fileinfo C:\Windows\notepad.exe
 ```
 
-## <a name="findfile"></a><span data-ttu-id="e58c0-117">findfile</span><span class="sxs-lookup"><span data-stu-id="e58c0-117">findfile</span></span>
+## <a name="findfile"></a><span data-ttu-id="3af91-117">findfile</span><span class="sxs-lookup"><span data-stu-id="3af91-117">findfile</span></span>
 
 ```console
 # Find file by name
 findfile test.txt
 ```
 
-## <a name="getfile"></a><span data-ttu-id="e58c0-118">getfile</span><span class="sxs-lookup"><span data-stu-id="e58c0-118">getfile</span></span>
+## <a name="getfile"></a><span data-ttu-id="3af91-118">getfile</span><span class="sxs-lookup"><span data-stu-id="3af91-118">getfile</span></span>
 
 ```console
 # Download a file from a machine
@@ -108,18 +107,18 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 >[!NOTE]
 >
-> <span data-ttu-id="e58c0-119">次のファイルの種類 **は、Live** Response 内からこのコマンドを使用してダウンロードできません。</span><span class="sxs-lookup"><span data-stu-id="e58c0-119">The following file types **cannot** be downloaded using this command from within Live Response:</span></span>
+> <span data-ttu-id="3af91-119">次のファイルの種類 **は、Live** Response 内からこのコマンドを使用してダウンロードできません。</span><span class="sxs-lookup"><span data-stu-id="3af91-119">The following file types **cannot** be downloaded using this command from within Live Response:</span></span>
 >
-> * [<span data-ttu-id="e58c0-120">Reparse ポイント ファイル</span><span class="sxs-lookup"><span data-stu-id="e58c0-120">Reparse point files</span></span>](/windows/desktop/fileio/reparse-points/)
-> * [<span data-ttu-id="e58c0-121">スパース ファイル</span><span class="sxs-lookup"><span data-stu-id="e58c0-121">Sparse files</span></span>](/windows/desktop/fileio/sparse-files/)
-> * <span data-ttu-id="e58c0-122">空のファイル</span><span class="sxs-lookup"><span data-stu-id="e58c0-122">Empty files</span></span>
-> * <span data-ttu-id="e58c0-123">仮想ファイル、またはローカルに完全に存在しないファイル</span><span class="sxs-lookup"><span data-stu-id="e58c0-123">Virtual files, or files that are not fully present locally</span></span>
+> - [<span data-ttu-id="3af91-120">Reparse ポイント ファイル</span><span class="sxs-lookup"><span data-stu-id="3af91-120">Reparse point files</span></span>](/windows/desktop/fileio/reparse-points/)
+> - [<span data-ttu-id="3af91-121">スパース ファイル</span><span class="sxs-lookup"><span data-stu-id="3af91-121">Sparse files</span></span>](/windows/desktop/fileio/sparse-files/)
+> - <span data-ttu-id="3af91-122">空のファイル</span><span class="sxs-lookup"><span data-stu-id="3af91-122">Empty files</span></span>
+> - <span data-ttu-id="3af91-123">仮想ファイル、またはローカルに完全に存在しないファイル</span><span class="sxs-lookup"><span data-stu-id="3af91-123">Virtual files, or files that are not fully present locally</span></span>
 >
-> <span data-ttu-id="e58c0-124">これらのファイルの種類 **は** [PowerShell でサポートされています](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)。</span><span class="sxs-lookup"><span data-stu-id="e58c0-124">These file types **are** supported by [PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true).</span></span>
+> <span data-ttu-id="3af91-124">これらのファイルの種類 **は** [PowerShell でサポートされています](/powershell/scripting/overview)。</span><span class="sxs-lookup"><span data-stu-id="3af91-124">These file types **are** supported by [PowerShell](/powershell/scripting/overview).</span></span>
 >
-> <span data-ttu-id="e58c0-125">Live Response 内からこのコマンドを使用する際に問題が発生した場合は、PowerShell を代わりに使用します。</span><span class="sxs-lookup"><span data-stu-id="e58c0-125">Use PowerShell as an alternative, if you have problems using this command from within Live Response.</span></span>
+> <span data-ttu-id="3af91-125">Live Response 内からこのコマンドを使用する際に問題が発生した場合は、PowerShell を代わりに使用します。</span><span class="sxs-lookup"><span data-stu-id="3af91-125">Use PowerShell as an alternative, if you have problems using this command from within Live Response.</span></span>
 
-## <a name="library"></a><span data-ttu-id="e58c0-126">ライブラリ</span><span class="sxs-lookup"><span data-stu-id="e58c0-126">library</span></span>
+## <a name="library"></a><span data-ttu-id="3af91-126">ライブラリ</span><span class="sxs-lookup"><span data-stu-id="3af91-126">library</span></span>
 
 ```console
 # List files in the library
@@ -131,7 +130,8 @@ library
 library delete script.ps1
 ```
 
-## <a name="processes"></a><span data-ttu-id="e58c0-127">processes</span><span class="sxs-lookup"><span data-stu-id="e58c0-127">processes</span></span>
+## <a name="processes"></a><span data-ttu-id="3af91-127">processes</span><span class="sxs-lookup"><span data-stu-id="3af91-127">processes</span></span>
+
 ```console
 # Show all processes
 processes
@@ -152,7 +152,7 @@ processes -pid 123
 processes -name notepad.exe
 ```
 
-## <a name="putfile"></a><span data-ttu-id="e58c0-128">putfile</span><span class="sxs-lookup"><span data-stu-id="e58c0-128">putfile</span></span>
+## <a name="putfile"></a><span data-ttu-id="3af91-128">putfile</span><span class="sxs-lookup"><span data-stu-id="3af91-128">putfile</span></span>
 
 ```console
 # Upload file from library
@@ -169,7 +169,7 @@ putfile get-process-by-name.ps1 -overwrite
 putfile get-process-by-name.ps1 -keep
 ```
 
-## <a name="registry"></a><span data-ttu-id="e58c0-129">レジストリ</span><span class="sxs-lookup"><span data-stu-id="e58c0-129">registry</span></span>
+## <a name="registry"></a><span data-ttu-id="3af91-129">レジストリ</span><span class="sxs-lookup"><span data-stu-id="3af91-129">registry</span></span>
 
 ```console
 # Show information about the values in a registry key
@@ -182,7 +182,7 @@ registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
 
-## <a name="remediate"></a><span data-ttu-id="e58c0-130">remediate</span><span class="sxs-lookup"><span data-stu-id="e58c0-130">remediate</span></span>
+## <a name="remediate"></a><span data-ttu-id="3af91-130">remediate</span><span class="sxs-lookup"><span data-stu-id="3af91-130">remediate</span></span>
 
 ```console
 # Remediate file in specific path
@@ -199,7 +199,7 @@ remediate process 7960
 remediate list
 ```
 
-## <a name="run"></a><span data-ttu-id="e58c0-131">run</span><span class="sxs-lookup"><span data-stu-id="e58c0-131">run</span></span>
+## <a name="run"></a><span data-ttu-id="3af91-131">run</span><span class="sxs-lookup"><span data-stu-id="3af91-131">run</span></span>
 
 ```console
 # Run PowerShell script from the library without arguments
@@ -210,12 +210,13 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
+
 >[!NOTE]
 >
-> <span data-ttu-id="e58c0-132">**'** run ' や '**getfile**'などの長時間実行されているコマンドの場合は、コマンドの最後に ' ' 記号を使用して、バックグラウンドでそのアクションを **&** 実行できます。</span><span class="sxs-lookup"><span data-stu-id="e58c0-132">For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.</span></span>
-> <span data-ttu-id="e58c0-133">これにより、コンピューターの調査を続行し、'**fg**' basic コマンドを使用して実行すると、バックグラウンド コマンドに [戻る可能性があります](live-response.md#basic-commands)。</span><span class="sxs-lookup"><span data-stu-id="e58c0-133">This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).</span></span>
->
-## <a name="scheduledtask"></a><span data-ttu-id="e58c0-134">scheduledtask</span><span class="sxs-lookup"><span data-stu-id="e58c0-134">scheduledtask</span></span>
+> <span data-ttu-id="3af91-132">**'** run ' や '**getfile**'などの長時間実行されているコマンドの場合は、コマンドの最後に ' ' 記号を使用して、バックグラウンドでそのアクションを **&** 実行できます。</span><span class="sxs-lookup"><span data-stu-id="3af91-132">For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.</span></span>
+> <span data-ttu-id="3af91-133">これにより、コンピューターの調査を続行し、'**fg**' basic コマンドを使用して実行すると、バックグラウンド コマンドに [戻る可能性があります](live-response.md#basic-commands)。</span><span class="sxs-lookup"><span data-stu-id="3af91-133">This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).</span></span>
+
+## <a name="scheduledtask"></a><span data-ttu-id="3af91-134">scheduledtask</span><span class="sxs-lookup"><span data-stu-id="3af91-134">scheduledtask</span></span>
 
 ```console
 # Get all scheduled tasks
@@ -232,8 +233,7 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-
-## <a name="undo"></a><span data-ttu-id="e58c0-135">元に戻す</span><span class="sxs-lookup"><span data-stu-id="e58c0-135">undo</span></span>
+## <a name="undo"></a><span data-ttu-id="3af91-135">元に戻す</span><span class="sxs-lookup"><span data-stu-id="3af91-135">undo</span></span>
 
 ```console
 # Restore remediated registry
@@ -249,4 +249,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 # Restore remediated file
 undo file c:\Users\user\Desktop\malware.exe
 ```
-

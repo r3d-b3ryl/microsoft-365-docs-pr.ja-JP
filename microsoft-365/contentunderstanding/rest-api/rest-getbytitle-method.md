@@ -11,66 +11,66 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、SharePoint Syntex 文書理解モデルに関する情報をモデル タイトルを使って取得または更新します。
-ms.openlocfilehash: b50849d0dc1c9deefa55a5c92303d18f251e2f8b
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 1c9c9728b7f26883ebe219e723917b14e35b11c0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177131"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288769"
 ---
-# <a name="getbytitle"></a><span data-ttu-id="5da17-103">GetByTitle</span><span class="sxs-lookup"><span data-stu-id="5da17-103">GetByTitle</span></span>
+# <a name="getbytitle"></a><span data-ttu-id="85327-103">GetByTitle</span><span class="sxs-lookup"><span data-stu-id="85327-103">GetByTitle</span></span>
 
-<span data-ttu-id="5da17-104">モデル タイトルを使用して SharePoint Syntex 文書理解モデルに関する情報を取得または更新します ([例](rest-getbytitle-method.md#examples)を参照してください)。</span><span class="sxs-lookup"><span data-stu-id="5da17-104">Gets or updates information about a SharePoint Syntex document understanding model using the model title (see [example](rest-getbytitle-method.md#examples)).</span></span>
+<span data-ttu-id="85327-104">モデル タイトルを使用して SharePoint Syntex 文書理解モデルに関する情報を取得または更新します ([例](rest-getbytitle-method.md#examples)を参照してください)。</span><span class="sxs-lookup"><span data-stu-id="85327-104">Gets or updates information about a SharePoint Syntex document understanding model using the model title (see [example](rest-getbytitle-method.md#examples)).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="5da17-105">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5da17-105">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="85327-105">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="85327-105">HTTP request</span></span>
 
 ```HTTP
 GET /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
-<span data-ttu-id="5da17-106">この同じ方法をモデルの削除にも使用できます。</span><span class="sxs-lookup"><span data-stu-id="5da17-106">This same method can be used for deleting a model, too.</span></span>
+<span data-ttu-id="85327-106">この同じ方法をモデルの削除にも使用できます。</span><span class="sxs-lookup"><span data-stu-id="85327-106">This same method can be used for deleting a model, too.</span></span>
 
 ```HTTP
 DELETE /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
-## <a name="uri-parameters"></a><span data-ttu-id="5da17-107">URI パラメーター</span><span class="sxs-lookup"><span data-stu-id="5da17-107">URI parameters</span></span>
+## <a name="uri-parameters"></a><span data-ttu-id="85327-107">URI パラメーター</span><span class="sxs-lookup"><span data-stu-id="85327-107">URI parameters</span></span>
 
-|<span data-ttu-id="5da17-108">名前</span><span class="sxs-lookup"><span data-stu-id="5da17-108">Name</span></span> |<span data-ttu-id="5da17-109">In</span><span class="sxs-lookup"><span data-stu-id="5da17-109">In</span></span> |<span data-ttu-id="5da17-110">必須</span><span class="sxs-lookup"><span data-stu-id="5da17-110">Required</span></span>|<span data-ttu-id="5da17-111">型</span><span class="sxs-lookup"><span data-stu-id="5da17-111">Type</span></span>|<span data-ttu-id="5da17-112">説明</span><span class="sxs-lookup"><span data-stu-id="5da17-112">Description</span></span>|
+|<span data-ttu-id="85327-108">名前</span><span class="sxs-lookup"><span data-stu-id="85327-108">Name</span></span> |<span data-ttu-id="85327-109">In</span><span class="sxs-lookup"><span data-stu-id="85327-109">In</span></span> |<span data-ttu-id="85327-110">必須</span><span class="sxs-lookup"><span data-stu-id="85327-110">Required</span></span>|<span data-ttu-id="85327-111">型</span><span class="sxs-lookup"><span data-stu-id="85327-111">Type</span></span>|<span data-ttu-id="85327-112">説明</span><span class="sxs-lookup"><span data-stu-id="85327-112">Description</span></span>|
 |-----|---|--------|----|-----------|
-|<span data-ttu-id="5da17-113">modelFileName</span><span class="sxs-lookup"><span data-stu-id="5da17-113">modelFileName</span></span>|<span data-ttu-id="5da17-114">query</span><span class="sxs-lookup"><span data-stu-id="5da17-114">query</span></span>|<span data-ttu-id="5da17-115">はい</span><span class="sxs-lookup"><span data-stu-id="5da17-115">True</span></span>|<span data-ttu-id="5da17-116">string</span><span class="sxs-lookup"><span data-stu-id="5da17-116">string</span></span>|<span data-ttu-id="5da17-117">Syntex モデル ファイル名です。</span><span class="sxs-lookup"><span data-stu-id="5da17-117">Name of the Syntex model file.</span></span>|
+|<span data-ttu-id="85327-113">modelFileName</span><span class="sxs-lookup"><span data-stu-id="85327-113">modelFileName</span></span>|<span data-ttu-id="85327-114">query</span><span class="sxs-lookup"><span data-stu-id="85327-114">query</span></span>|<span data-ttu-id="85327-115">はい</span><span class="sxs-lookup"><span data-stu-id="85327-115">True</span></span>|<span data-ttu-id="85327-116">string</span><span class="sxs-lookup"><span data-stu-id="85327-116">string</span></span>|<span data-ttu-id="85327-117">Syntex モデル ファイル名です。</span><span class="sxs-lookup"><span data-stu-id="85327-117">Name of the Syntex model file.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="5da17-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5da17-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="85327-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="85327-118">Request headers</span></span>
 
-| <span data-ttu-id="5da17-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5da17-119">Header</span></span> | <span data-ttu-id="5da17-120">値</span><span class="sxs-lookup"><span data-stu-id="5da17-120">Value</span></span> |
+| <span data-ttu-id="85327-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="85327-119">Header</span></span> | <span data-ttu-id="85327-120">値</span><span class="sxs-lookup"><span data-stu-id="85327-120">Value</span></span> |
 |--------|-------|
-|<span data-ttu-id="5da17-121">Accept</span><span class="sxs-lookup"><span data-stu-id="5da17-121">Accept</span></span>|<span data-ttu-id="5da17-122">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="5da17-122">application/json;odata=verbose</span></span>|
+|<span data-ttu-id="85327-121">Accept</span><span class="sxs-lookup"><span data-stu-id="85327-121">Accept</span></span>|<span data-ttu-id="85327-122">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="85327-122">application/json;odata=verbose</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5da17-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="5da17-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="85327-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="85327-123">Request body</span></span>
 
-<span data-ttu-id="5da17-124">GET には要求本文は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="5da17-124">For GET, no request body is needed.</span></span>
+<span data-ttu-id="85327-124">GET には要求本文は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="85327-124">For GET, no request body is needed.</span></span>
 
-## <a name="responses"></a><span data-ttu-id="5da17-125">応答</span><span class="sxs-lookup"><span data-stu-id="5da17-125">Responses</span></span>
+## <a name="responses"></a><span data-ttu-id="85327-125">応答</span><span class="sxs-lookup"><span data-stu-id="85327-125">Responses</span></span>
 
-| <span data-ttu-id="5da17-126">名前</span><span class="sxs-lookup"><span data-stu-id="5da17-126">Name</span></span>   | <span data-ttu-id="5da17-127">種類</span><span class="sxs-lookup"><span data-stu-id="5da17-127">Type</span></span>  | <span data-ttu-id="5da17-128">説明</span><span class="sxs-lookup"><span data-stu-id="5da17-128">Description</span></span>|
+| <span data-ttu-id="85327-126">名前</span><span class="sxs-lookup"><span data-stu-id="85327-126">Name</span></span>   | <span data-ttu-id="85327-127">種類</span><span class="sxs-lookup"><span data-stu-id="85327-127">Type</span></span>  | <span data-ttu-id="85327-128">説明</span><span class="sxs-lookup"><span data-stu-id="85327-128">Description</span></span>|
 |--------|-------|------------|
-|<span data-ttu-id="5da17-129">200 OK</span><span class="sxs-lookup"><span data-stu-id="5da17-129">200 OK</span></span>| |<span data-ttu-id="5da17-130">成功</span><span class="sxs-lookup"><span data-stu-id="5da17-130">Success</span></span>|
+|<span data-ttu-id="85327-129">200 OK</span><span class="sxs-lookup"><span data-stu-id="85327-129">200 OK</span></span>| |<span data-ttu-id="85327-130">成功</span><span class="sxs-lookup"><span data-stu-id="85327-130">Success</span></span>|
 
-## <a name="examples"></a><span data-ttu-id="5da17-131">例</span><span class="sxs-lookup"><span data-stu-id="5da17-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="85327-131">例</span><span class="sxs-lookup"><span data-stu-id="85327-131">Examples</span></span>
 
-### <a name="get-information-about-the-contoso-contract-model"></a><span data-ttu-id="5da17-132">Contoso 契約モデルに関する情報を取得する</span><span class="sxs-lookup"><span data-stu-id="5da17-132">Get information about the Contoso Contract model</span></span>
+### <a name="get-information-about-the-contoso-contract-model"></a><span data-ttu-id="85327-132">Contoso 契約モデルに関する情報を取得する</span><span class="sxs-lookup"><span data-stu-id="85327-132">Get information about the Contoso Contract model</span></span>
 
-<span data-ttu-id="5da17-133">このサンプルでは、Contoso 契約書文書理解モデルの名前は、`Contoso Contract`です。</span><span class="sxs-lookup"><span data-stu-id="5da17-133">In this sample, the name of the Syntex document understanding model is `Contoso Contract`.</span></span>
+<span data-ttu-id="85327-133">このサンプルでは、Contoso 契約書文書理解モデルの名前は、`Contoso Contract`です。</span><span class="sxs-lookup"><span data-stu-id="85327-133">In this sample, the name of the Syntex document understanding model is `Contoso Contract`.</span></span>
 
-#### <a name="sample-request"></a><span data-ttu-id="5da17-134">要求のサンプル</span><span class="sxs-lookup"><span data-stu-id="5da17-134">Sample request</span></span>
+#### <a name="sample-request"></a><span data-ttu-id="85327-134">要求のサンプル</span><span class="sxs-lookup"><span data-stu-id="85327-134">Sample request</span></span>
 
 ```HTTP
 GET /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
-#### <a name="sample-response"></a><span data-ttu-id="5da17-135">応答のサンプル</span><span class="sxs-lookup"><span data-stu-id="5da17-135">Sample response</span></span>
+#### <a name="sample-response"></a><span data-ttu-id="85327-135">応答のサンプル</span><span class="sxs-lookup"><span data-stu-id="85327-135">Sample response</span></span>
 
-<span data-ttu-id="5da17-136">**Status code:** 200</span><span class="sxs-lookup"><span data-stu-id="5da17-136">**Status code:** 200</span></span>
+<span data-ttu-id="85327-136">**Status code:** 200</span><span class="sxs-lookup"><span data-stu-id="85327-136">**Status code:** 200</span></span>
 
 ```HTTP
 {
@@ -102,16 +102,16 @@ GET /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 }
 ```
 
-### <a name="get-and-delete-the-contoso-contract-model-by-name"></a><span data-ttu-id="5da17-137">名前による Contoso コントラクト モデルの取得と削除</span><span class="sxs-lookup"><span data-stu-id="5da17-137">Get and delete the Contoso Contract model by name</span></span>
+### <a name="get-and-delete-the-contoso-contract-model-by-name"></a><span data-ttu-id="85327-137">名前による Contoso コントラクト モデルの取得と削除</span><span class="sxs-lookup"><span data-stu-id="85327-137">Get and delete the Contoso Contract model by name</span></span>
 
-<span data-ttu-id="5da17-138">このサンプルでは、Contoso Contract ドキュメント理解モデルの名前は `Contoso Contract`です。</span><span class="sxs-lookup"><span data-stu-id="5da17-138">In this sample, the name of the Contoso Contract document understanding model is `Contoso Contract`.</span></span>
+<span data-ttu-id="85327-138">このサンプルでは、Contoso Contract ドキュメント理解モデルの名前は `Contoso Contract`です。</span><span class="sxs-lookup"><span data-stu-id="85327-138">In this sample, the name of the Contoso Contract document understanding model is `Contoso Contract`.</span></span>
 
-##### <a name="sample-request"></a><span data-ttu-id="5da17-139">要求のサンプル</span><span class="sxs-lookup"><span data-stu-id="5da17-139">Sample request</span></span>
+##### <a name="sample-request"></a><span data-ttu-id="85327-139">要求のサンプル</span><span class="sxs-lookup"><span data-stu-id="85327-139">Sample request</span></span>
 
 ```HTTP
 DELETE /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5da17-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="5da17-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="85327-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="85327-140">See also</span></span>
 
-[<span data-ttu-id="5da17-141">Syntex 文書理解モデル REST API</span><span class="sxs-lookup"><span data-stu-id="5da17-141">Syntex document understanding model REST API</span></span>](syntex-model-rest-api.md)
+[<span data-ttu-id="85327-141">Syntex 文書理解モデル REST API</span><span class="sxs-lookup"><span data-stu-id="85327-141">Syntex document understanding model REST API</span></span>](syntex-model-rest-api.md)
