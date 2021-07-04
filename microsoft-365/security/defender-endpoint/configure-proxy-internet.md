@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0de55eefe2f7dd8c9f891fbe126a68a49699ecd3
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: af50e3c2a6db1a09d546bfa06b26c80dcf4481e5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594099"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290089"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -38,8 +38,8 @@ Defender for Endpoint センサーでは、センサー データWindowsレポ�
 
 埋め込み Defender for Endpoint センサーは、LocalSystem アカウントを使用してシステム コンテキストで実行されます。 センサーは Microsoft Windows HTTP Services (WinHTTP) を使用して、Defender for Endpoint クラウド サービスとの通信を有効にしています。
 
->[!TIP]
->インターネットへのゲートウェイとして転送プロキシを使用する組織では、ネットワーク保護を使用してプロキシの背後を調査できます。 詳細については、「[転送プロキシの背後で発生する接続イベントの調査](investigate-behind-proxy.md)」を参照してください。
+> [!TIP]
+> インターネットへのゲートウェイとして転送プロキシを使用する組織では、ネットワーク保護を使用してプロキシの背後を調査できます。 詳細については、「[転送プロキシの背後で発生する接続イベントの調査](investigate-behind-proxy.md)」を参照してください。
 
 WinHTTP 構成設定は、Windows インターネット (WinINet) インターネット閲覧プロキシ設定とは独立し、次の検出方法を使用してのみプロキシ サーバーを検出できます。
 
@@ -65,7 +65,7 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) インター�
 > [!NOTE]
 > このオプションを Windows 10 または Windows Server 2019 で使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。
 >
-> - Windows 10バージョン 1809 または Windows Server 2019 -https://support.microsoft.com/kb/5001384
+> - Windows 10 Version 1809またはWindows Server 2019 -https://support.microsoft.com/kb/5001384
 > - Windows 10バージョン 1909 -https://support.microsoft.com/kb/4601380
 > - Windows 10バージョン 2004 -https://support.microsoft.com/kb/4601382
 > - Windows 10バージョン 20H2 -https://support.microsoft.com/kb/4601382
@@ -103,6 +103,7 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) インター�
 netsh を使用して、システム全体の静的プロキシを構成します。
 
 > [!NOTE]
+>
 > - これは、既定のプロキシで WinHTTP を使用する Windows サービスを含むすべてのアプリケーションに影響します。</br>
 > - トポロジを変更しているラップトップ (たとえば、オフィスから自宅) は netsh に誤動作します。 レジストリ ベースの静的プロキシの構成を使用します。
 
@@ -134,23 +135,17 @@ netsh winhttp reset proxy
 
 次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールを作成する必要があります。 
 
-
 | ドメインリストのスプレッドシート | 説明 |
 |:-----|:-----|
-|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>[ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
-
+|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>[ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 プロキシまたはファイアウォールで HTTPS スキャン (SSL 検査) が有効になっている場合は、上記の表に示されているドメインを HTTPS スキャンから除外します。
 
 > [!NOTE]
 > settings-win.data.microsoft.com は、バージョン 1803 以前Windows 10デバイスを使用している場合にのみ必要です。<br>
-
-
-> [!NOTE]
+>
 > v20 を含む URL は、バージョン 1803 以降をWindows 10デバイスを使用している場合にのみ必要です。 たとえば、バージョン 1803 以降をWindows 10しているデバイスで、米国のデータ 転送地域にオンボードされている場合 `us-v20.events.data.microsoft.com` Storageです。
-
-
-> [!NOTE]
+>
 > 環境でネットワーク 接続をMicrosoft Defender ウイルス対策する場合は、「Configure network connections to the [Microsoft Defender ウイルス対策 クラウド サービス」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
 
 Defender for Endpoint センサーがシステム コンテキストから接続している場合、プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合は、以前にリストした URL で匿名トラフィックが許可されている必要があります。
@@ -159,13 +154,12 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 以下の情報は、Windows 7 SP1、Windows 8.1、Windows Server 2008 R2、Windows Server 2012 R2、Windows Server 2016 など、以前のバージョンの Windows の Log Analytics エージェント (多くの場合、Microsoft Monitoring Agent と呼ばれます) と通信するために必要なプロキシとファイアウォールの構成情報を示しています。
 
-|エージェント リソース|ポート |Direction |HTTPS 検査のバイパス|
-|------|---------|--------|--------|   
+|エージェント リソース|ポート |方向 |HTTP 検査をバイパス|
+|------|---------|--------|--------|
 |*.ods.opinsights.azure.com |ポート 443 |送信|はい |  
 |*.oms.opinsights.azure.com |ポート 443 |送信|はい |  
 |*.blob.core.windows.net |ポート 443 |送信|はい |
 |*.azure-automation.net |ポート 443 |送信|はい |  
-
 
 > [!NOTE]
 > クラウドベースのソリューションとして、IP 範囲が変更される可能性があります。 DNS 解決設定に移動する必要があります。
@@ -174,19 +168,19 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 以前のバージョンのアプリケーションに対して Microsoft Monitoring Agent (MMA) を使用する場合は、特定の環境のワイルドカード (*) 要件を排除するために、以下のガイダンスを参照Windows。
 
-1.  Microsoft Monitoring Agent (MMA) を使用して以前のオペレーティング システムを Defender for Endpoint にオンボードします (詳細については、「Defender for Endpoint および Onboard Windows サーバーでの以前のバージョンの[Windows](https://go.microsoft.com/fwlink/p/?linkid=2010326)のオンボード」[を参照](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)してください。
+1. Microsoft Monitoring Agent (MMA) を使用して以前のオペレーティング システムを Defender for Endpoint にオンボードします (詳細については、「Defender for Endpoint および Onboard Windows サーバーでの以前のバージョンの[Windows](https://go.microsoft.com/fwlink/p/?linkid=2010326)のオンボード」[を参照](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)してください。
 
-2.  コンピューターがポータルに正常に報告Microsoft Defender セキュリティ センターします。
+2. コンピューターがポータルに正常に報告Microsoft Defender セキュリティ センターします。
 
-3.  "C:\Program Files\Microsoft Monitoring Agent\Agent" の TestCloudConnection.exe ツールを実行して、接続を検証し、特定のワークスペースに必要な URL を確認します。
+3. "C:\Program Files\Microsoft Monitoring Agent\Agent" の TestCloudConnection.exe ツールを実行して、接続を検証し、特定のワークスペースに必要な URL を確認します。
 
-4.  Microsoft Defender for Endpoint URL リストで、地域の要件の完全な一覧を確認します (「サービス URL スプレッドシート」を参照 [してください](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx))。
+4. Microsoft Defender for Endpoint URL リストで、地域の要件の完全な一覧を確認します (「サービス URL スプレッドシート」を参照 [してください](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx))。
 
     ![管理者のWindows PowerShell](images/admin-powershell.png)
 
-*.ods.opinsights.azure.com、*.oms.opinsights.azure.com、および *.agentsvc.azure-automation.net URL エンドポイントで使用されるワイルドカード (*) は、特定の Workspace ID に置き換えます。 ワークスペース ID は環境とワークスペースに固有の ID で、テナントの [オンボーディング] セクションで、Microsoft Defender セキュリティ センターできます。
+.ods.opinsights.azure.com、.oms.opinsights.azure.com、および .agentsvc.azure-automation.net URL エンドポイントで使用されるワイルドカード ( ) は、特定の \* \* Workspace ID \* \* に置き換えます。 ワークスペース ID は環境とワークスペースに固有の ID で、テナントの [オンボーディング] セクションで、Microsoft Defender セキュリティ センターできます。
 
-*.blob.core.windows.net URL エンドポイントは、テスト結果の 「ファイアウォール ルール: *.blob.core.windows.net」セクションに示されている URL に置き換え可能です。 
+.blob.core.windows.net URL エンドポイントは、テスト結果の 「ファイアウォール ルール: .blob.core.windows.net」セクションに示されている URL に \* \* 置き換え可能です。
 
 > [!NOTE]
 > Azure Defender 経由でオンボーディングを行う場合、複数のワークスペースが使用されている可能性があります。 上記の TestCloudConnection.exe 手順を、各ワークスペースのオンボード コンピューターで実行する必要があります (ワークスペース間で *.blob.core.windows.net URL に変更が加わるかどうかを判断するには)。
@@ -195,7 +189,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 プロキシ構成が正常に完了したことを確認します。WinHTTP は環境内のプロキシ サーバーを介して検出および通信でき、プロキシ サーバーは Defender for Endpoint サービス URL へのトラフィックを許可します。
 
-1. Defender for [Endpoint MDATPが](https://aka.ms/mdatpanalyzer)実行されている PC にクライアント アナライザー ツールをダウンロードします。
+1. エンドポイント センサーの Defender が実行されている PC に [MDATP](https://aka.ms/mdatpanalyzer) クライアント アナライザー ツールをダウンロードします。
 
 2. デバイス上に MDATPClientAnalyzer.zip のコンテンツを抽出します。
 
@@ -203,7 +197,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
 
-   1.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
+   1. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
 4. 次のコマンドを入力して、**Enter** キーを押します。
 
@@ -237,10 +231,8 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 ただし、接続を確認した結果が失敗を示している場合は、HTTP エラーが表示されます (「HTTP ステータス コード」を参照)。 次に、「プロキシ サーバーの Defender for Endpoint サービス URL へのアクセスを有効にする」に示されている表の [URL を使用できます](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。 使用する URL は、オンボーディング手順で選択された地域によって異なります。
 
 > [!NOTE]
->  接続アナライザー ツールは、ASR ルールと互換性がありません [PSExec および WMI コマンドから発生するプロセスの作成をブロックします](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。
-
-
-> [!NOTE]
+> 接続アナライザー ツールは、ASR ルールと互換性がありません [PSExec および WMI コマンドから発生するプロセスの作成をブロックします](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。
+>
 > TelemetryProxyServer がレジストリまたはグループ ポリシーを介して設定されている場合、Defender for Endpoint は、定義されたプロキシにアクセスできない場合、直接に戻されます。
 
 ## <a name="related-topics"></a>関連項目

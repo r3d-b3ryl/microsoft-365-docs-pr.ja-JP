@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e7c208998e436245c53b90905858b7cf7ebe91d6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844660"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290197"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>基本的なアクセス許可を使用してポータルにアクセスする
 
@@ -54,7 +54,7 @@ ms.locfileid: "52844660"
     > [!NOTE]
     > 管理者特権のコマンド ラインで PowerShell コマンドレットを実行する必要があります。
 
-- ConnectにAzure Active Directory。 詳細については[、「Connect-MsolService」を参照してください](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)。
+- ConnectにAzure Active Directory。 詳細については[、「Connect-MsolService」を参照してください](/powershell/module/msonline/connect-msolservice)。
 
 **フル アクセス** <br>
 フル アクセスのユーザーは、ログインし、すべてのシステム情報を表示し、アラートを解決し、ファイルを送信して詳細な分析を行い、オンボーディング パッケージをダウンロードできます。

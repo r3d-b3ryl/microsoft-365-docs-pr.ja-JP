@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0ddb38e713f08c101639976b9f2c8c1ee32e63a3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 23d9d61644b4c9adad69a5e467e49ca2b1d92413
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843784"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290233"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>ユーザー設定を使用してカスタム レポートをPower BI
 
@@ -33,7 +33,7 @@ ms.locfileid: "52843784"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,16 +49,16 @@ ms.locfileid: "52843784"
 
 - [データ **の空のクエリ**  >  **の取得] をクリックします。**
 
-    ![空のクエリを作成するイメージ](images/power-bi-create-blank-query.png)
+  ![空のクエリを作成するイメージ](images/power-bi-create-blank-query.png)
 
 - [高度 **なエディター] をクリックします。**
 
-    ![開いている高度なエディターのイメージ](images/power-bi-open-advanced-editor.png)
+  ![開いている高度なエディターのイメージ](images/power-bi-open-advanced-editor.png)
 
 - 以下をコピーし、エディターに貼り付けます。
 
 ```
-    let 
+    let
         AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
 
         HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
@@ -93,7 +93,6 @@ ms.locfileid: "52843784"
         Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
 
     in Table
-
 ```
 
 - [完了] を **クリックします。**
@@ -118,7 +117,7 @@ ms.locfileid: "52843784"
 
 ## <a name="connect-power-bi-to-odata-apis"></a>Connect Power BI OData API へのアクセス
 
-- 上記の例との唯一の違いは、エディター内のクエリです。 
+- 上記の例との唯一の違いは、エディター内のクエリです。
 
 - 以下をコピーしてエディターに貼り付け、組織から **すべての Machine Actions** をプルします。
 
@@ -130,22 +129,21 @@ ms.locfileid: "52843784"
         Source = OData.Feed("https://api.securitycenter.microsoft.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
     in
         Source
-
 ```
 
 - アラートとコンピューターでも同 **じ操作** を **実行できます**。
-
 - クエリ フィルターに OData クエリを使用することもできます [。「Using OData Queries」を参照してください。](exposed-apis-odata-samples.md)
 
-
 ## <a name="power-bi-dashboard-samples-in-github"></a>Power BIダッシュボードのサンプルをGitHub
+
 詳細については、「レポート テンプレートのPower BI[を参照してください](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
 
 ## <a name="sample-reports"></a>サンプル レポート
+
 レポート サンプルの Microsoft Defender for Endpoint Power BI表示します。 詳細については、「Browse [code samples 」を参照してください](/samples/browse/?products=mdatp)。
 
+## <a name="related-topics"></a>関連項目
 
-## <a name="related-topic"></a>関連トピック
 - [エンドポイント API の Defender](apis-intro.md)
-- [高度な追及 API](run-advanced-query-api.md)
+- [高度な追求 API](run-advanced-query-api.md)
 - [OData クエリの使用](exposed-apis-odata-samples.md)

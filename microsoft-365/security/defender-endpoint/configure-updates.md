@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a506f4913369e53fd2ed4943bb2557935f1d62e5
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: a7a560cb33190105f8df5922e04aeada4d75f398
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105562"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290041"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Microsoft Defender 更新プログラムのカスタム段階的ロールアウト プロセスを作成する
 
@@ -43,7 +43,7 @@ Defender 更新プログラム用に独自のカスタム段階的ロールア�
 次の表に、更新プログラム チャネルを構成するための使用可能なグループ ポリシー設定を示します。
 
 | タイトルの設定  | 説明  | Location  |
-|-|-|-|
+|:---|:---|:---|
 | 段階的な Microsoft Defender の月次プラットフォーム更新プログラムのロールアウト チャネルを選択する  | このポリシーを有効にして、毎月段階的なロールアウト中にデバイスが Microsoft Defender プラットフォームの更新プログラムを受信する時間を指定します。 ベータ チャネル: このチャネルに設定されているデバイスは、新しい更新プログラムを最初に受信します。 [ベータ チャネル] を選択して、Microsoft への問題の特定と報告に参加します。 Insider Program Windowsデバイスは、既定でこのチャネルにサブスクライブされます。 (手動) テスト環境でのみ使用し、デバイスの数が限られている場合。  <br><br>  現在のチャネル (プレビュー): このチャネルに設定されているデバイスは、毎月の段階的なリリース サイクルで最も早く更新プログラムが提供されます。 実稼働前/検証前の環境で推奨されます。  <br><br>  現在のチャネル (段階的): デバイスは、毎月の段階的なリリース サイクルの後に更新プログラムが提供されます。 生産人口の小さな代表的な部分 (~10%)に適用する必要があります。  <br><br>  現在のチャネル (Broad): 段階的なリリース サイクルが完了した後にのみ、デバイスに更新プログラムが提供されます。 実稼働人口 (~10~100%)の幅広いデバイスセットに適用する必要があります。  <br><br>   このポリシーを無効にするか構成しない場合、デバイスは段階的なリリース サイクル中に自動的に最新の情報を残します。 ほとんどのデバイスに適しています。  | WindowsComponents\Microsoft Defender ウイルス対策  |
 | 段階的な Microsoft Defender の毎月のエンジン更新プログラムのロールアウト チャネルを選択する  | このポリシーを有効にして、毎月段階的なロールアウト中にデバイスが Microsoft Defender エンジンの更新プログラムを受信する時間を指定します。  <br><br>  ベータ チャネル: このチャネルに設定されているデバイスは、新しい更新プログラムを最初に受信します。 [ベータ チャネル] を選択して、Microsoft への問題の特定と報告に参加します。 Insider Program Windowsデバイスは、既定でこのチャネルにサブスクライブされます。 (手動) テスト環境でのみ使用し、デバイスの数が限られている場合。  <br><br>  現在のチャネル (プレビュー): このチャネルに設定されているデバイスは、毎月の段階的なリリース サイクルで最も早く更新プログラムが提供されます。 実稼働前/検証前の環境で推奨されます。  <br><br>  現在のチャネル (段階的): デバイスは、毎月の段階的なリリース サイクルの後に更新プログラムが提供されます。 生産人口の小さな代表的な部分 (~10%)に適用する必要があります。  <br><br>  現在のチャネル (Broad): 段階的なリリース サイクルが完了した後にのみ、デバイスに更新プログラムが提供されます。 実稼働人口 (~10~100%)の幅広いデバイスセットに適用する必要があります。  <br><br>  このポリシーを無効にするか構成しない場合、デバイスは段階的なリリース サイクル中に自動的に最新の情報を残します。 ほとんどのデバイスに適しています。  | WindowsComponents\Microsoft Defender ウイルス対策  |
 | 段階的な Microsoft Defender 日次定義の更新ロールアウト チャネルを選択する  | このポリシーを有効にして、デバイスが毎日段階的なロールアウト中に Microsoft Defender 定義の更新プログラムを受信する時間を指定します。 <br><br> 現在のチャネル (Staged): デバイスは、リリース サイクル後に更新プログラムを提供されます。 生産集団の小さな代表的な部分 (~10%)に適用する必要があります。 <br><br>   現在のチャネル (Broad): 段階的なリリース サイクルが完了した後にのみ、デバイスに更新プログラムが提供されます。 実稼働人口 (~10~100%)の幅広いデバイスセットに適用する必要があります。 <br><br>   このポリシーを無効にするか構成しない場合、デバイスは毎日のリリース サイクル中に自動的に最新の情報を残します。 ほとんどのデバイスに適しています。  | WindowsComponents\Microsoft Defender ウイルス対策  |
@@ -76,6 +76,8 @@ Intune でカスタム ポリシーを作成するには、以下のリンクの
 
 [Azure Microsoft Docs - Windows 10デバイスMicrosoft Intuneカスタム設定 \| を追加する](/mem/intune/configuration/custom-settings-windows-10)
 
+段階的なロールアウト プロセスで使用される Defender CSP の詳細については [、「Defender CSP」を参照してください](/windows/client-management/mdm/defender-csp)。
+
 ## <a name="powershell"></a>PowerShell
 
 段階的な `Set-MpPreference` 更新プログラムのロールアウトを構成するには、コマンドレットを使用します。
@@ -94,4 +96,4 @@ Set-MpPreference
 
 ベータ `Set-MpPreference -PlatformUpdatesChannel Beta` チャネルから届くプラットフォーム更新プログラムを構成するために使用します。
 
-パラメーターの詳細と構成方法については [、「Set-MpPreference (Defender) |Microsoft Docs](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps&preserve-view=true).
+パラメーターの詳細と構成方法については [、「Set-MpPreference (Defender) |Microsoft Docs](/powershell/module/defender/set-mppreference).

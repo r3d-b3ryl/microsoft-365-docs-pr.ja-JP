@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2570aba26d65a573c19777bc70db77f4118e336
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ff13a382f7c59083c217f937b996e63abc2ff52a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771047"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290005"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender を使用した OData クエリ
 
@@ -41,13 +41,13 @@ OData クエリについて詳しくない場合は [、「OData V4 クエリ」
 
 一部のプロパティがフィルター可能である必要があります。
 
-## <a name="properties-that-support-filter"></a>このプロパティをサポート$filter。
-```
-- [Alert](alerts.md): ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category```.
-- [Machine](machine.md): ```ComputerDnsName```, ```LastSeen```, ```HealthStatus```, ```OsPlatform```, ```RiskScore``` and ```RbacGroupId```.
-- [MachineAction](machineaction.md): ```Status```, ```MachineId```, ```Type```, ```Requestor``` and ```CreationDateTimeUtc```.
-- [Indicator](ti-indicator.md): ```indicatorValue```, ```indicatorType```, ```creationTimeDateTimeUtc```, ```createdBy```, ```severity ``` and ```action ```.
-```
+## <a name="properties-that-support-filter"></a>このプロパティをサポート$filter
+
+- [アラート](alerts.md): `alertCreationTime` , , , , , , and `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
+- [コンピューター](machine.md): `ComputerDnsName` `LastSeen` `HealthStatus` 、、、、、、 `OsPlatform` `RiskScore` `RbacGroupId` です。
+- [MachineAction](machineaction.md): `Status` , , , and `MachineId` `Type` `Requestor` `CreationDateTimeUtc` .
+- [インジケーター](ti-indicator.md): `indicatorValue` , , , , and `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
+
 ### <a name="example-1"></a>例 1
 
 関連する証拠を使用して最新のアラートを 10 件取得します。
@@ -56,7 +56,7 @@ OData クエリについて詳しくない場合は [、「OData V4 クエリ」
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-**応答:**
+#### <a name="response"></a>応答
 
 ```json
 {
@@ -201,7 +201,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
-**応答:**
+#### <a name="response"></a>応答
 
 ```json
 {
@@ -263,7 +263,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdate
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
-**応答:**
+#### <a name="response"></a>応答
 
 ```json
 {
@@ -316,7 +316,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
-**応答:**
+#### <a name="response"></a>応答
 
 ```json
 {
@@ -369,7 +369,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthSt
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
-**応答:**
+#### <a name="response"></a>応答
 
 ```json
 {
@@ -422,7 +422,7 @@ Microsoft Defender for Endpoint を使用してユーザーが作成 Analyst@exa
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
-**応答:**
+#### <a name="response"></a>応答
 
 ```json
 json{
@@ -454,7 +454,7 @@ json{
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
-**応答:**
+#### <a name="response"></a>応答
 
 ```json
 4
@@ -468,7 +468,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa4
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')
 ```
 
-**応答:**
+#### <a name="response"></a>応答
 
 ```json
 json{
@@ -514,4 +514,5 @@ json{
 ```
 
 ## <a name="see-also"></a>関連項目
-- [エンドポイント API 用 Microsoft Defender](apis-intro.md)
+
+[エンドポイント API 用 Microsoft Defender](apis-intro.md)

@@ -19,12 +19,12 @@ description: ワークフローの自動調査中およびMicrosoft 365結果と
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc7c61fae83f2d10f8b66cbfce86bcee6e3a5bd6
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ef91a3b218c2dda671bf7d07bf2615001bd20ebc
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878426"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290137"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>自動調査の詳細と結果Microsoft 365
 
@@ -32,10 +32,10 @@ ms.locfileid: "52878426"
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender [for](office-365-air.md) Office 365で自動調査が行[われる場合、](defender-for-office-365.md)その調査に関する詳細は、自動調査プロセス中および自動調査後に利用できます。 必要なアクセス許可がある場合は、これらの詳細を Defender ポータルのMicrosoft 365できます。 調査の詳細は、最新の状態と、保留中のアクションを承認する機能を提供します。
+Microsoft Defender [for](office-365-air.md) Office 365で自動調査が行[われる場合、](defender-for-office-365.md)その調査に関する詳細は、自動調査プロセス中および自動調査後に利用できます。 必要なアクセス許可がある場合は、これらの詳細をポータルでMicrosoft 365 Defenderできます。 調査の詳細は、最新の状態と、保留中のアクションを承認する機能を提供します。
 
 > [!TIP]
-> Defender ポータルの新しい統合された調査ページMicrosoft 365確認してください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
+> このポータルで、新しい統合された調査ページMicrosoft 365 Defenderしてください。 詳細については [、「(NEW!)」を参照してください。統合された調査ページ](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
 
 ## <a name="investigation-status"></a>調査の状態
 
@@ -50,19 +50,19 @@ Microsoft Defender [for](office-365-air.md) Office 365で自動調査が行[わ�
 |**開始中**|調査がトリガーされ、実行の開始を待っています。|
 |**実行中**|調査プロセスが開始され、進行中です。 この状態は、保留中の [アクションが承認された場合](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) にも発生します。|
 |**脅威が見つかりません**|調査が完了し、脅威 (ユーザー アカウント、電子メール メッセージ、URL、またはファイル) が特定されていない。 <p> **ヒント**: 何かが見つからないと思われる場合 (偽陰性など)、Threat Explorer を使用して [アクションを実行できます](threat-explorer.md)。|
-|**脅威が検出されました**|自動調査で問題が見つかりましたが、これらの問題を解決するための特定の修復アクションはありません。 <p> 脅威 **が見つかった状態** は、何らかの種類のユーザー アクティビティが特定されたが、クリーンアップアクションが利用できない場合に発生する可能性があります。 例としては、次のユーザー アクティビティが含まれます。 <br/>- データ [損失防止](../../compliance/dlp-learn-about-dlp.md) イベント<br/>- 異常を送信する電子メール<br/>- 送信されたマルウェア<br/>- 送信されたフィッシング <p> 調査では、修復する悪意のある URL、ファイル、または電子メール メッセージが見つかりませんでした。また、転送ルールや委任をオフにするなどのメールボックスアクティビティも修正されませんでした。 <p> **ヒント**: 何かが見つからない (偽陰性など) 疑われる場合は、Threat Explorer を使用して調査して [アクションを実行できます](threat-explorer.md)。|
-|**システムによって終了**|調査が停止しました。 調査は、いくつかの理由で停止する可能性があります。 <br/>- 調査の保留中のアクションの有効期限が切れています。 保留中のアクションは、承認を 1 週間待った後にタイム アウトします。<br/>- アクションが多すぎます。 たとえば、悪意のある URL をクリックするユーザーが多すぎると、すべてのアナライザーを実行する調査の機能を超える可能性があります。そのため、調査は停止します。<p> **ヒント**: アクションが実行される前に調査が停止した場合は [、Threat Explorer](threat-explorer.md) を使用して脅威を見つけて対処してみてください。|
+|**脅威が検出されました**|自動調査で問題が見つかりましたが、これらの問題を解決するための特定の修復アクションはありません。 <p> 脅威 **が見つかった状態** は、何らかの種類のユーザー アクティビティが特定されたが、クリーンアップアクションが利用できない場合に発生する可能性があります。 例としては、次のユーザー アクティビティが含まれます。 <ul><li>データ [損失防止](../../compliance/dlp-learn-about-dlp.md) イベント</li><li>異常を送信する電子メール</li><li>送信されたマルウェア</li><li>送信されたフィッシング</li></ul> <p> 調査では、修復する悪意のある URL、ファイル、または電子メール メッセージが見つかりませんでした。また、転送ルールや委任をオフにするなどのメールボックスアクティビティも修正されませんでした。 <p> **ヒント**: 何かが見つからない (偽陰性など) 疑われる場合は、Threat Explorer を使用して調査してアクション [を実行できます。](threat-explorer.md)|
+|**システムによって終了**|調査が停止しました。 調査は、いくつかの理由で停止する可能性があります。 <ul><li>調査の保留中のアクションの有効期限が切れています。 1 週間の承認待ち後に保留中のアクションがタイム アウトする</li><li>アクションが多すぎます。 たとえば、悪意のある URL をクリックするユーザーが多すぎる場合、すべてのアナライザーを実行する調査の機能を超える可能性があります。そのため、調査は停止します。</li></ul> <p> **ヒント**: アクションが実行される前に調査が停止した場合は [、Threat Explorer](threat-explorer.md) を使用して脅威を見つけて対処してみてください。|
 |**保留中のアクション**|調査では、悪意のある電子メール、悪意のある URL、危険なメールボックス設定などの脅威、および承認を待っている脅威を修復するアクションが [検出されました](air-review-approve-pending-completed-actions.md)。 <p> 保留中 **のアクション状態は** 、対応するアクションを持つ脅威が見つかったときにトリガーされます。 ただし、保留中のアクションの一覧は、調査の実行に合って増加する可能性があります。 調査の詳細を表示して、他のアイテムがまだ保留中の完了を確認します。|
 |**修復済み**|調査が完了し、すべての修復アクションが承認されました (完全に修復されたと示されています)。 <p> **メモ**: 承認済みの修復アクションには、アクションが実行されるのを妨げるエラーが発生する可能性があります。 修復アクションが正常に完了したかどうかに関係なく、調査の状態は変更されません。 調査の詳細を表示します。|
 |**部分的に修復**|調査の結果、修復アクションが発生し、一部は承認され、完了しました。 他のアクションはまだ [保留中です](air-review-approve-pending-completed-actions.md)。|
-|**Failed**|少なくとも 1 つの調査アナライザーで、正しく完了できない問題が発生しました。 <p> **注**: 修復アクションが承認された後に調査が失敗した場合、修復アクションは引き続き成功している可能性があります。 調査の詳細を表示します。 |
+|**Failed**|少なくとも 1 つの調査アナライザーで、正しく完了できない問題が発生しました。 <p> **メモ** 修復アクションが承認された後に調査が失敗した場合、修復アクションは引き続き成功している可能性があります。 調査の詳細を表示します。|
 |**調整によってキューに入れられます**|調査がキューに保持されている。 他の調査が完了すると、キューに入った調査が開始されます。 調整は、サービスパフォーマンスの低下を回避するのに役立ちます。  <p> **ヒント**: 保留中のアクションでは、実行できる新しい調査の数を制限できます。 保留中のアクション [を承認 (または拒否) することを確認します](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)。|
 |**調整によって終了**|調査がキューに保持されている時間が長すぎると、停止します。 <p> **ヒント**: 脅威エクスプローラー [から調査を開始できます](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。|
 |
 
 ## <a name="view-details-of-an-investigation"></a>調査の詳細を表示する
 
-1. Defender ポータル ( ) Microsoft 365に移動 <https://security.microsoft.com> し、サインインします。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン <https://security.microsoft.com> します。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [保留中] **タブまたは [履歴** ] **タブで** 、アクションを選択します。 そのフライアウト ウィンドウが開きます。
 4. フライアウト ウィンドウで、[調査ページを開 **く] を選択します**。 
@@ -72,14 +72,14 @@ Microsoft Defender [for](office-365-air.md) Office 365で自動調査が行[わ�
 
 特定の種類のアラートは、自動調査をトリガー Microsoft 365。 詳細については、「自動調査 [をトリガーするアラート ポリシー」を参照してください](office-365-air.md#which-alert-policies-trigger-automated-investigations)。
 
-1. Defender ポータル ( ) Microsoft 365に移動 <https://security.microsoft.com> し、サインインします。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン <https://security.microsoft.com> します。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [保留中] **タブまたは [履歴** ] **タブで** 、アクションを選択します。 そのフライアウト ウィンドウが開きます。
 4. フライアウト ウィンドウで、[調査ページを開 **く] を選択します**。
 5. [アラート] **タブ** を選択して、その調査に関連付けられているすべてのアラートの一覧を表示します。
 6. リスト内のアイテムを選択して、そのフライアウト ウィンドウを開きます。 そこで、アラートの詳細を表示できます。
 
-## <a name="keep-the-following-points-in-mind"></a>以下の点に気を付ける
+## <a name="keep-the-following-points-in-mind"></a>以下の点にご注意ください。
 
 - 電子メールの数は調査時に計算され、調査のフライアウトを開く (基になるクエリに基づいて) いくつかのカウントが再計算されます。
 
@@ -99,6 +99,6 @@ Microsoft Defender [for](office-365-air.md) Office 365で自動調査が行[わ�
 
 - すべてのアクションを承認および/または拒否すると、調査を完全に終了 (状態が修復される) ことができますが、一部のアクションが不完全な場合は、調査の状態が部分的に修復された状態に変更されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [保留中のアクションの確認と承認](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)

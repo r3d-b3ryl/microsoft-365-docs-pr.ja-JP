@@ -16,12 +16,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 4be9116b83c2ee4eec410f3d8d68c289f3c8b9a5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 15fd70a2a60da7b0541446a98f0094c73c831d51
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925829"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289825"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>アプリの展開、管理、レポートMicrosoft Defender ウイルス対策
 
@@ -57,7 +57,7 @@ Microsoft Azure|Azure ポータルMicrosoft Antimalware仮想マシン構成を�
 
 1. <span id="fn1" />クラウドによる保護に関連する一部の機能と機能の可用性は、Microsoft エンドポイント マネージャー (Current Branch) と System Center Configuration Manager で異なります。 このライブラリでは、現在のブランチWindows 10、Windows Server 2016、Microsoft エンドポイント マネージャーに焦点を当てました。 主[な違いを説明する表については](cloud-protection-microsoft-defender-antivirus.md)、「Microsoft Defender ウイルス対策で Microsoft クラウド提供の保護を使用する」を参照してください。 [(テーブルに戻る)](#ref2)
   
-2.  <span id="fn2" />このWindows 10、Microsoft Defender ウイルス対策は、追加のクライアントまたはサービスをインストールまたは展開せずに使用できるコンポーネントです。 サード パーティのウイルス対策製品がアンインストールまたは古い場合に自動的に有効[になります](microsoft-defender-antivirus-on-windows-server.md)(ただし、Windows Server 2016)。 したがって、従来の展開は必要ありません。 ここでの展開とは、エンドポイントまたはサーバーでMicrosoft Defender ウイルス対策コンポーネントが使用可能で有効になっているか確認する方法を指します。 [(テーブルに戻る)](#ref2)
+2. <span id="fn2" />このWindows 10、Microsoft Defender ウイルス対策は、追加のクライアントまたはサービスをインストールまたは展開せずに使用できるコンポーネントです。 サード パーティのウイルス対策製品がアンインストールまたは古い場合に自動的に有効[になります](microsoft-defender-antivirus-on-windows-server.md)(ただし、Windows Server 2016)。 したがって、従来の展開は必要ありません。 ここでの展開とは、エンドポイントまたはサーバーでMicrosoft Defender ウイルス対策コンポーネントが使用可能で有効になっているか確認する方法を指します。 [(テーブルに戻る)](#ref2)
 
 3. <span id="fn3" />製品と保護の更新プログラムの構成を含む機能と保護の構成については、[この](configure-notifications-microsoft-defender-antivirus.md)ライブラリの「Microsoft Defender ウイルス対策機能の構成」セクションで説明します。 [(テーブルに戻る)](#ref2)
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769247"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289849"
 ---
 # <a name="list-alerts-api"></a>アラート API の一覧表示
 
@@ -59,20 +59,22 @@ ms.locfileid: "52769247"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   Alert.Read.All |    'すべてのアラートの読み取り'
-アプリケーション |   Alert.ReadWrite.All |   'すべてのアラートの読み取りと書き込み'
+アプリケーション | Alert.Read.All | 'すべてのアラートの読み取り'
+アプリケーション | Alert.ReadWrite.All | 'すべてのアラートの読み取りと書き込み'
 委任 (職場または学校のアカウント) | Alert.Read | 'アラートの読み取り'
 委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
 
->[!Note]
+> [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
->- ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
->- 応答には、デバイス グループ設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられているアラートだけが含まれます[](machine-groups.md)(詳細については、「デバイス グループの作成と管理」を参照してください)
+>
+> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
+> - 応答には、デバイス グループ設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられているアラートだけが含まれます[](machine-groups.md)(詳細については、「デバイス グループの作成と管理」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 GET /api/alerts
 ```
 
@@ -82,17 +84,17 @@ GET /api/alerts
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 
-
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは 200 OK を返し、応答本文の [アラート](alerts.md) オブジェクトの一覧を返します。
 
+成功した場合、このメソッドは 200 OK を返し、応答本文の [アラート](alerts.md) オブジェクトの一覧を返します。
 
 ## <a name="example-1---default"></a>例 1 - 既定
 
-**要求**
+### <a name="request"></a>要求
 
 以下は、要求の例です。
 
@@ -100,13 +102,12 @@ Empty
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
-**応答**
+### <a name="response"></a>応答
 
 以下は、応答の例です。
 
->[!NOTE]
->ここに示す応答リストは、簡単に切り詰められることがあります。 すべてのアラートは、実際の呼び出しから返されます。
-
+> [!NOTE]
+> ここに示す応答リストは、簡単に切り詰められることがあります。 すべてのアラートは、実際の呼び出しから返されます。
 
 ```json
 {
@@ -162,7 +163,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 
 ## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>例 2 - 関連する証拠を含む最新のアラートを 10 件取得する
 
-**要求**
+### <a name="request"></a>要求
 
 以下は、要求の例です。
 
@@ -170,14 +171,12 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-
-**応答**
+### <a name="response"></a>応答
 
 以下は、応答の例です。
 
->[!NOTE]
->ここに示す応答リストは、簡単に切り詰められることがあります。 すべてのアラートは、実際の呼び出しから返されます。
-
+> [!NOTE]
+> ここに示す応答リストは、簡単に切り詰められることがあります。 すべてのアラートは、実際の呼び出しから返されます。
 
 ```json
 {
@@ -314,6 +313,6 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 }
 ```
 
-
 ## <a name="see-also"></a>関連項目
-- [エンドポイント用 Microsoft Defender を使用した OData クエリ](exposed-apis-odata-samples.md)
+
+[エンドポイント用 Microsoft Defender を使用した OData クエリ](exposed-apis-odata-samples.md)

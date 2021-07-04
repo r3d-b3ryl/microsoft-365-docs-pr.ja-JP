@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 9ee2f0402e8cfd184e59dce5a382f835b706d6aa
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 2cc83e24d4dd81c9d2e972fa274b48fc3946532a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022560"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289729"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
 
@@ -104,14 +104,14 @@ ms.locfileid: "53022560"
 
 | タブ | 説明 |
 |:--------|:--------|
-| **Investigation graph (調査グラフ)**   | 調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上のアイテムを選択すると、詳細を表示できます。 たとえば、[証拠]**アイコンを** 選択すると、[証拠]タブに移動し、検出されたエンティティとその評決を確認できます。 |
-| **Alerts**    | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、アプリ、Office、その他のMicrosoft Cloud App Security機能Microsoft 365 Defender発生します。|
+| **Investigation graph (調査グラフ)** | 調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上のアイテムを選択すると、詳細を表示できます。 たとえば、[証拠]**アイコンを** 選択すると、[証拠]タブに移動し、検出されたエンティティとその評決を確認できます。 |
+| **Alerts** | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、アプリ、Office、その他のMicrosoft Cloud App Security機能Microsoft 365 Defender発生します。|
 | **デバイス** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、 [デバイス グループのオートメーション レベルに対応します](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)。) |
 | **メールボックス** |検出された脅威の影響を受けたメールボックスを一覧表示します。  |
 | **ユーザー**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
 | **証拠** | アラートまたは調査によって発生した証拠の一部を一覧表示します。 評決 (悪意のある、*疑わしい*、*不明* な、または脅威が見 *つからない)* と修復の状態が含まれます。 |
-| **Entities**  | 各エンティティの種類 (悪意のある、疑わしい、または脅威が見つからない)の評決を含む、分析された各エンティティの詳細 *を提供します*。|
-|**Log**    | アラートがトリガーされた後に行ったすべての調査アクションの時系列的で詳細なビューを提供します。|
+| **Entities** | 各エンティティの種類 (悪意のある、疑わしい、または脅威が見つからない)の評決を含む、分析された各エンティティの詳細 *を提供します*。|
+|**Log** | アラートがトリガーされた後に行ったすべての調査アクションの時系列的で詳細なビューを提供します。|
 | **保留中のアクションの履歴** | 続けるには承認を必要とするアイテムを一覧表示します。 アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) して、保留中のアクションを承認します。 |
 
 ## <a name="next-steps"></a>次の手順

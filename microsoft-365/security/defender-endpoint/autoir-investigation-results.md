@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: c593dfe384649b1599d5c0bab8fa6a8204d105dc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: a10442bc9d92bb6004149180da30b86b646dd5de
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274834"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290161"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果を表示する
 
@@ -45,6 +45,7 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 ## <a name="open-the-investigation-details-view"></a>調査の詳細ビューを開く
 
 調査の詳細ビューを開くには、次のいずれかの方法を使用できます。
+
 - [アクション センターでアイテムを選択する](#select-an-item-in-the-action-center)
 - [インシデントの詳細ページから調査を選択する](#open-an-investigation-from-an-incident-details-page)
 
@@ -82,17 +83,17 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 
 | タブ | 説明 |
 |:--------|:--------|
-| **Investigation graph (調査グラフ)**   | 調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上のアイテムを選択すると、詳細を表示できます。 たとえば、[証拠]**アイコンを** 選択すると、[証拠]タブに移動し、検出されたエンティティとその評決を確認できます。 |
-| **Alerts**    | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、アプリ、Office、その他の Defender 機能Cloud App Security脅威Microsoft 365発生します。|
+| **Investigation graph (調査グラフ)** | 調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上のアイテムを選択すると、詳細を表示できます。 たとえば、[証拠]**アイコンを** 選択すると、[証拠]タブに移動し、検出されたエンティティとその評決を確認できます。 |
+| **Alerts** | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス上の脅威保護機能、アプリ、Office、その他のCloud App Security機能Microsoft 365 Defenderがあります。|
 | **デバイス** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、デバイス グループ [のオートメーション レベルに対応します](automation-levels.md)。) |
 | **メールボックス** |検出された脅威の影響を受けたメールボックスを一覧表示します。  |
 | **ユーザー**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
 | **証拠** | アラート/調査によって発生した証拠の一部を一覧表示します。 評決 (悪意のある、疑 *わしい、* または脅威が見 *つからない*) と修復の状態が含まれます。 |
-| **Entities**  | 各エンティティの種類 (悪意のある、疑わしい、または脅威が見つからない)の評決を含む、分析された各エンティティの詳細 *を提供します*。|
-|**Log**    | アラートがトリガーされた後に行ったすべての調査アクションの時系列的で詳細なビューを提供します。|
+| **Entities** | 各エンティティの種類 (悪意のある、疑わしい、または脅威が見つからない)の評決を含む、分析された各エンティティの詳細 *を提供します*。|
+|**Log** | アラートがトリガーされた後に行ったすべての調査アクションの時系列的で詳細なビューを提供します。|
 | **Pending actions (保留中のアクション)** | 続けるには承認を必要とするアイテムを一覧表示します。 アクション センター ( ) に移動 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) して、保留中のアクションを承認します。 |
 
 ## <a name="see-also"></a>関連項目
 
 - [自動調査後の修復アクションの確認](manage-auto-investigation.md)
-- [Microsoft Defender for Endpoint Incidents キューの表示と整理](view-incidents-queue.md)
+- [Microsoft Defender for Endpoint インシデント キューを表示して整理する](view-incidents-queue.md)

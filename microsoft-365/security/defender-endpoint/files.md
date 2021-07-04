@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c4d392c9c7777a5ab5435d70e36822e11aa39dae
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 83a011e649a7289f62acd6a8d985f020b27b1e10
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771191"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290017"
 ---
 # <a name="file-resource-type"></a>ファイル リソースの種類
 
@@ -36,10 +36,10 @@ ms.locfileid: "52771191"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Defender for Endpoint のファイル エンティティを表します。
 
 ## <a name="methods"></a>メソッド
+
 メソッド|戻り値の型 |説明
 :---|:---|:---
 [ファイルの取得](get-file-information.md) | [file](files.md) | 1 つのファイルを取得する 
@@ -49,7 +49,8 @@ Defender for Endpoint のファイル エンティティを表します。
 
 
 ## <a name="properties"></a>プロパティ
-|プロパティ | 種類    |   説明 |
+
+|プロパティ | 種類 | 説明 |
 |:---|:---|:---|
 |sha1 | String | ファイル コンテンツの Sha1 ハッシュ |
 |sha256 | String | ファイル コンテンツの Sha256 ハッシュ |
@@ -58,16 +59,15 @@ Defender for Endpoint のファイル エンティティを表します。
 |globalLastObserved | DateTimeOffset | ファイルが最後に観察された時刻 |
 |size | Null 許容長 | ファイルのサイズ |
 |fileType | String | ファイルの種類 |
-|isPeFile | Boolean | ファイルが移植可能な実行可能ファイルの場合は true ("DLL"、"EXE"など) |
+|isPeFile | ブール型 | ファイルが移植可能な実行可能ファイルの場合は true ("DLL"、"EXE"など) |
 |filePublisher | String | ファイル発行元 |
 |fileProductName | String | 製品名 |
 |署名者 | String | ファイル署名者 |
 |issuer | String | ファイル発行者 |
 |signerHash | String | 署名証明書のハッシュ |
-|isValidCertificate | Boolean | Microsoft Defender for Endpoint エージェントによって証明書の署名が正常に確認されました |
+|isValidCertificate | ブール型 | Microsoft Defender for Endpoint エージェントによって証明書の署名が正常に確認されました |
 |determinationType | String | ファイルの決定の種類 |
 |determinationValue | String | 判定値 |
-
 
 ## <a name="json-representation"></a>Json 表記
 

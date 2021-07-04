@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: PowerShell を使用して、さまざまな方法でユーザー アカウントMicrosoft 365表示、一覧表示、または表示する方法について説明します。
-ms.openlocfilehash: de91195afeb8480bf231d9536e4b3a94502a6da1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 77219fb89430ed257ef2a68a7b24bf9ebac715b2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924650"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290173"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントを表示する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-管理センターの Microsoft 365を使用して、テナントのアカウントMicrosoft 365できます。 PowerShell for Microsoft 365これを有効にし、追加の機能も提供します。
+このサイトを使用Microsoft 365 管理センターテナントのアカウントをMicrosoft 365できます。 PowerShell for Microsoft 365これを有効にし、追加の機能も提供します。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
@@ -66,7 +66,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 Get-AzureADUser -ObjectID <sign-in name of the user account>
 ```
 
-次に例を示します:
+次に例を示します。
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
@@ -88,7 +88,7 @@ Get-AzureADUser | Select DisplayName,Department,UsageLocation
     
 1.  ユーザー アカウント名、部署、使用状況の場所のみを表示します **([DisplayName、 Department, UsageLocation] の選択**)。
   
-特定のユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*)を使用します。 次に例を示します:
+特定のユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*)を使用します。 次に例を示します。
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
@@ -104,7 +104,7 @@ Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayNam
 
 ユーザー アカウントには、次の 2 つのソースがあります。 
 
-- Windowsサーバー Active Directory (AD) は、オンプレミスのサーバーからクラウドAD同期するアカウントです。
+- Windows Server Active Directory (AD) は、オンプレミスのユーザーからクラウドに同期ADアカウントです。
 
 - Azure Active Directory (Azure AD) AD、クラウドに直接作成されるアカウントです。
 
@@ -135,7 +135,7 @@ Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
     
 1. 使用場所が指定されていないすべてのユーザー アカウントを検索します **(Where {$ \_ .UsageLocation -eq $Null}**)。 中かっこ内で、このコマンドは、UsageLocation ユーザー アカウント プロパティ (**$ \_ .UsageLocation**) は指定されていません (**-eq $Null)。**
     
-**UsageLocation プロパティ** は、ユーザー アカウントに関連付けられている多数のプロパティの 1 つのみです。 特定のユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*)を使用します。 次に例を示します:
+**UsageLocation プロパティ** は、ユーザー アカウントに関連付けられている多数のプロパティの 1 つのみです。 特定のユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*)を使用します。 次に例を示します。
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
@@ -148,8 +148,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  これらの例の **Where コマンドレット** の構文は **、Where {$ です \_ 。** [ユーザー アカウントのプロパティ名][比較演算子][value] **}**.> [比較演算子] は、等号の場合は **-eq、** 等しくない場合は **-ne、** より小さい場合は **-lt、** より大きい場合は **-gt、** その他は -gt です。  [value] は通常、文字列 (一連の文字、数字、その他の文字)、数値、または指定されていない$Null指定します。 詳細については [、「Where」 を参照してください](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
-  
+> これらの例の **Where コマンドレット** の構文は **、Where {$ です \_ 。** [ユーザー アカウントのプロパティ名][比較演算子][value] **}**.> [比較演算子] は、等号の場合は **-eq、** 等しくない場合は **-ne、** より小さい場合は **-lt、** より大きい場合は **-gt、** その他は -gt です。  [value] は通常、文字列 (一連の文字、数字、その他の文字)、数値、または指定されていない$Null指定します。 詳細については [、「Where」 を参照してください](/powershell/module/microsoft.powershell.core/where-object)。
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
@@ -228,7 +227,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ```
 
-*UsageLocation プロパティ* は、ユーザー アカウントに関連付けられている多数のプロパティの 1 つのみです。 ユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*) を使用して、それらをすべて特定のユーザー アカウントに表示します。 次に例を示します:
+*UsageLocation プロパティ* は、ユーザー アカウントに関連付けられている多数のプロパティの 1 つのみです。 ユーザー アカウントのすべてのプロパティを表示するには **、Select** コマンドレットとワイルドカード文字 (*) を使用して、それらをすべて特定のユーザー アカウントに表示します。 次に例を示します。
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
@@ -241,7 +240,7 @@ Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  これらの例の **Where コマンドレット** の構文は **、Where {$ です \_ 。** [ユーザー アカウントのプロパティ名][比較演算子][value] **}**.  [比較演算子] は、等しい場合は **-eq、** 等しくない場合は **-ne、** より小さい場合は **-lt、** より大きい場合は **-gt、** その他は -gt です。  [value] は通常、文字列 (一連の文字、数字、その他の文字)、数値、または指定されていない$Null指定します。 詳細については [、「Where」 を参照してください](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
+> これらの例の **Where コマンドレット** の構文は **、Where {$ です \_ 。** [ユーザー アカウントのプロパティ名][比較演算子][value] **}**.  [比較演算子] は、等しい場合は **-eq、** 等しくない場合は **-ne、** より小さい場合は **-lt、** より大きい場合は **-gt、** その他は -gt です。  [value] は通常、文字列 (一連の文字、数字、その他の文字)、数値、または指定されていない$Null指定します。 詳細については [、「Where」 を参照してください](/powershell/module/microsoft.powershell.core/where-object)。
   
 ユーザー アカウントのブロックされた状態を確認するには、次のコマンドを使用します。
   
@@ -254,12 +253,12 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 既定では **、Get-MsolUser コマンドレットは** 、ユーザー アカウントの次の 3 つのプロパティを表示します。
   
 - UserPrincipalName
-    
+
 - DisplayName
-    
+
 - isLicensed
-    
-ユーザーが働く部署、Microsoft 365 サービスを使用する国/地域などの追加のプロパティが必要な場合は **、Get-MsolUser** を Select コマンドレットと組み合わせて実行して、ユーザー アカウントのプロパティの一覧を指定できます。 次に例を示します:
+
+ユーザーが働く部署、Microsoft 365 サービスを使用する国/地域などの追加のプロパティが必要な場合は **、Get-MsolUser** を Select コマンドレットと組み合わせて実行して、ユーザー アカウントのプロパティの一覧を指定できます。 次に例を示します。
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
@@ -284,7 +283,7 @@ Alex Darrow             Sales & Marketing                    US
 Scott Wallace           Operations
 ```
 
-Select **コマンドレットでは** 、表示するプロパティを選択できます。 特定のユーザー アカウントのすべてのプロパティを表示するには、ワイルドカード文字 (*)を使用します。 次に例を示します:
+Select **コマンドレットでは** 、表示するプロパティを選択できます。 特定のユーザー アカウントのすべてのプロパティを表示するには、ワイルドカード文字 (*)を使用します。 次に例を示します。
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *

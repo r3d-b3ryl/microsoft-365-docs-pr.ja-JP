@@ -1,5 +1,5 @@
 ---
-title: 管理センターで Microsoft Viva Learning (プレビュー) をTeamsする
+title: 管理センターで Microsoft Viva ラーニング (プレビュー) をTeamsする
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,76 +14,75 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: 管理センターで Microsoft Viva Learning (プレビュー) を構成するTeams説明します。
-ms.openlocfilehash: 860f16bee7d93f2212072c5d738263402704272f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+description: 管理センターで Microsoft Viva ラーニング (プレビュー) を構成するTeams説明します。
+ms.openlocfilehash: 99e63210e8f8c10e3721c35fb69df7880c7e1929
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789233"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290221"
 ---
-# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>管理センターで Microsoft Viva Learning (プレビュー) をTeamsする
+# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>管理センターで Microsoft Viva ラーニング (プレビュー) をTeamsする
 
 > [!NOTE]
 > この記事の情報は、商用リリース前に大幅に変更される可能性があるプレビュー製品に関連しています。 
 
-管理者Teams、テナント内のユーザーに対してビバ ラーニング (プレビュー) を有効にするには、特定の手順を実行する必要があります。 これらの手順は、テナントの有効化方法 (パブリック [](set-up-teams-admin-center.md#public-preview-tenants)プレビューまたは [*プライベート* プレビュー (またはベータ) によって異なります](set-up-teams-admin-center.md#private-preview-tenants)。
+管理者Teams、テナント内のユーザーに対して Viva ラーニング (プレビュー) を有効にするには、特定の手順を実行する必要があります。 これらの手順は、テナントの有効化方法 (パブリック [](set-up-teams-admin-center.md#public-preview-tenants)プレビューまたは [*プライベート* プレビュー (またはベータ) によって異なります](set-up-teams-admin-center.md#private-preview-tenants)。
 
 ## <a name="public-preview-tenants"></a>パブリック プレビュー テナント
 
 ### <a name="administrator-steps-for-public-preview-tenants"></a>パブリック プレビュー テナントの管理者の手順
 
-ビバ ラーニング (プレビュー) はまだ一般に利用できないので、特定のユーザーまたはグループの機能を有効にしてアクセス許可を設定するには、特定の手順が必要です。 
+ビバ ラーニング (Preview) はまだ一般に利用できないので、特定のユーザーまたはグループの機能を有効にしてアクセス許可を設定するには、特定の手順が必要です。 
 
-1. ビバ ラーニング (プレビュー) ユーザーのパブリック プレビュー機能を有効にする。
+1. ビバ ユーザー (プレビュー) ユーザーラーニングパブリック プレビュー機能を有効にする。
 
     a. パブリック Teams機能を有効にするには、更新ポリシーを変更します。 「パブリック[Microsoft Teams」を参照してください](/microsoftteams/public-preview-doc-updates)。
 
-    b. ビバ ラーニング (プレビュー) テストを実行するユーザーまたはグループの更新ポリシーを有効にする。 「ユーザー [とグループにポリシーを割り当てる」を参照してください](/microsoftteams/assign-policies-users-and-groups)。
+    b. ビバ テスト (プレビュー) テストを実行するユーザーまたはラーニングポリシーを有効にする。 「ユーザー [とグループにポリシーを割り当てる」を参照してください](/microsoftteams/assign-policies-users-and-groups)。
 
-2. Viva Learning (プレビュー) ユーザーのアプリのアクセス許可ポリシーを変更します。
+2. Viva ユーザー (プレビュー) ユーザーのアプリラーニングポリシーを変更します。
 
     a. 現在グローバル ポリシーの一部である場合をしない限り、アプリのアクセス許可ポリシーですべての Microsoft アプリを許可します。 「[アプリのアクセス許可ポリシーを管理する」を参照Microsoft Teams。](/microsoftteams/teams-app-permission-policies) 
 
-    b. ビバ ラーニング (プレビュー) テストを実行するユーザーまたはグループに対してアプリのアクセス許可ポリシーを有効にする。 「ユーザー [とグループにポリシーを割り当てる」を参照してください](/microsoftteams/assign-policies-users-and-groups)。
+    b. ビバ テスト (プレビュー) テストを実行するユーザーまたはラーニングポリシーを有効にする。 「ユーザー [とグループにポリシーを割り当てる」を参照してください](/microsoftteams/assign-policies-users-and-groups)。
 
-3.  ビバ ラーニング (プレビュー) をテストするユーザーに対して、ビルド クライアントをパブリック プレビューに切り替[Teams。](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)
+3. Viva ラーニング (Preview) をテストするユーザーに対して、ビルド クライアントをパブリック プレビューに切り替[Teams。](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)
 
 > [!IMPORTANT]
-> パブリック プレビュー テナントの場合、最終製品のリリースまで、ビバラーニング (プレビュー) は、Teams管理センターの管理アプリに表示されません。 ただし、有効になっているパブリック プレビュー ユーザーは、Teams アプリ ストアでビバ ラーニング (プレビュー) を見つけて、適切なポリシーとアクセス許可を設定した後で使用できます。
+> パブリック プレビュー テナントの場合ラーニング製品のリリースまで、Teams 管理センターの管理アプリにはビバ Teams (プレビュー) は表示されません。 ただし、有効になっているパブリック プレビュー ユーザーは、Teams アプリ ストアでビバ ラーニング (プレビュー) を検索し、適切なポリシーとアクセス許可が設定された後で使用できます。
 
 ### <a name="user-steps-for-public-preview-tenants"></a>パブリック プレビュー テナントのユーザー手順
 
 前に説明したポリシーを有効にすることで、パブリック プレビュー[](set-up-teams-admin-center.md#administrator-steps-for-public-preview-tenants)テストを有効にしたユーザーは、[](/microsoftteams/public-preview-doc-updates#enable-public-preview)クライアントでパブリック プレビューに切りTeamsがあります。
 
 1. ユーザーは、[パブリック プレビューについて]でプロファイル >  >  **を選択する必要があります**。
-   
+
     ![ユーザーのプロファイルをTeamsアプリケーションの上部ナビゲーション](../media/learning/learning-app-select-profile-teams.png)
-    
+
 2. ユーザーはパブリック プレビューの使用条件に同意する必要があります。
 
     ![パブリック プレビュー ビルドに切り替える](../media/learning/learning-app-switch-to-public-preview.png)
- 
-3. これで、ユーザーはアプリ ストアでビバ ラーニング (プレビュー) をTeamsして使用を開始できます。
+
+3. これで、ユーザーはアプリ ストアラーニングでビバ Teams ラーニング (プレビュー) を見つけて使用を開始できます。
 
 ## <a name="private-preview-tenants"></a>プライベート プレビュー テナント
 
 ### <a name="administrator-steps-for-private-preview-or-beta-tenants"></a>プライベート プレビュー (またはベータ) テナントの管理者の手順
 
-プライベート プレビュー テナントの場合、有効にする必要がある追加のポリシーはありません。 ただし、組織内のユーザーがビバ ラーニング (プレビュー) を利用できる必要があります。
+プライベート プレビュー テナントの場合、有効にする必要がある追加のポリシーはありません。 ただし、組織内ラーニングで、ビバ ファイル (プレビュー) を使用できる必要があります。
 
 1. 管理センターの左側のナビゲーションTeams、[アプリの管理 **Teams]**  >  **に移動します**。
 
    ![[アプリとアプリのTeams管理] セクションをTeams管理センターの左側のナビゲーション。](../media/learning/learning-app-teams-manage-apps-nav.png)
 
-2. [アプリの **管理] ページ** の検索ボックスに *「Viva Learning」* と入力し、[ビバ ラーニング **(プレビュー) ] を選択します**。
+2. [アプリの **管理] ページ** の検索ボックスに *「Viva* ラーニング」と入力し、[ビバ ラーニング **(プレビュー) を選択します**。
 
    ![[アプリの管理] ページで、Teamsを表示する管理センターで管理します。](../media/learning/learning-app-teams-manage-apps-page.png)
 
-3. [ビバ **ラーニング (プレビュー)] ページの**[**状態**] で、[ビバ ラーニング (プレビュー) を有効にする許可] を選択します。 
+3. [ビバ **ラーニング (プレビュー) ページ** の[状態]で、[ビバ モードを有効にする許可ラーニング (プレビュー) を選択します。
 
-   ![[状態とアプリの設定] セクションTeams管理センターの [学習] ページ。](../media/learning/learning-app-teams-learning-page.png)
-
+   ![ラーニングとアプリの設定] セクションTeams管理センターの [アプリの設定] ページを開きます。](../media/learning/learning-app-teams-learning-page.png)
 
 <!---
 The Teams admin installs Viva Learning (Preview) and applies permission policies through the Teams admin center.
@@ -141,4 +140,4 @@ To make Viva Learning (Preview) available for users in your organization, follow
 
 ## <a name="next-step"></a>次の手順
 
-[管理センターで、ビバ ラーニング (プレビュー) の学習コンテンツ ソースMicrosoft 365構成する](content-sources-365-admin-center.md)
+[ビデオ ウィンドウで、ビバ ラーニング (プレビュー) の学習コンテンツ ソースを構成Microsoft 365 管理センター](content-sources-365-admin-center.md)

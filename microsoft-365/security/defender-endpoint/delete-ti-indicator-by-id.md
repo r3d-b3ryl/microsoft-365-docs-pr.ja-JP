@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: eaef6b25e2db72149a1a1128899d8a79a38a4c60
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1541e1d6e177416d77d768cef04d2524e6907ab5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771023"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289921"
 ---
 # <a name="delete-indicator-api"></a>インジケーター API の削除
 
@@ -39,24 +39,25 @@ ms.locfileid: "52771023"
 
 
 ## <a name="api-description"></a>API の説明
+
 ID で [Indicator エンティティ](ti-indicator.md) を削除します。
 
-
 ## <a name="limitations"></a>制限事項
-1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
+この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「開始する」 [を参照してください。](apis-intro.md)
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   Ti.ReadWrite |  'TI インジケーターの読み取りおよび書き込み'
-アプリケーション |   Ti.ReadWrite.All |  '読み取りおよび書き込みインジケーター'
-
+アプリケーション | Ti.ReadWrite | 'TI インジケーターの読み取りおよび書き込み'
+アプリケーション | Ti.ReadWrite.All | '読み取りおよび書き込みインジケーター'
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 ```
 
@@ -68,17 +69,19 @@ Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 
-
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答
+
 Indicator が存在し、正常に削除された場合 - コンテンツなしで 204 OK。
+
 指定した ID を持つインジケーターが見つからなかった場合 - 404 Not Found。
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request"></a>要求
 
 以下は、要求の例です。
 
