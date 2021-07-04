@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: MailItemsAccessed メールボックス監査アクションを使用して、侵害されたユーザー アカウントのフォレンシック調査を実行します。
-ms.openlocfilehash: e9dda101b330f6632e66c226156df3497ac38453
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 64f3e5f3423f5182277fe7640199a39dc11068f2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903483"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288781"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>高度な監査を使用して、侵害されたアカウントを調査する
 
@@ -37,7 +37,7 @@ MailItemsAccessed メールボックス監査アクションは、POP、IMAP、M
 
 ### <a name="auditing-sync-access"></a>同期アクセスの監査
 
-同期操作は、Windows または Mac 用のデスクトップ バージョンの Outlook クライアントがメールボックスにアクセスした場合にのみ記録されます。 同期操作中、これらのクライアントは通常、クラウドからローカル コンピューターに大量のメール アイテムをダウンロードします。 同期操作の監査ボリュームは膨大です。 したがって、同期されたメール アイテムごとに監査レコードを生成するのではなく、同期されたアイテムを含むメール フォルダーに対して監査イベントを生成するのです。 これは、同期されたフォルダー内の *すべて* のメール アイテムが侵害されていることを前提としています。 アクセスの種類は、監査レコードの OperationProperties フィールドに記録されます。 
+同期操作は、Windows または Mac 用のデスクトップ バージョンの Outlook クライアントがメールボックスにアクセスした場合にのみ記録されます。 同期操作中、これらのクライアントは通常、クラウドからローカル コンピューターに大量のメール アイテムをダウンロードします。 同期操作の監査ボリュームは膨大です。 したがって、同期されたメール アイテムごとに監査レコードを生成するのではなく、同期されたアイテムを含むメール フォルダーに対して監査イベントを生成するのです。 これは、同期されたフォルダー内の *すべて* のメール アイテムが侵害されていることを前提としています。 アクセスの種類は、監査レコードの OperationProperties フィールドに記録されます。
 
 監査レコードに同期アクセスの種類を表示する例については、[フォレンシック調査に MailItemsAccessed 監査レコードを使用する](#use-mailitemsaccessed-audit-records-for-forensic-investigations)セクションの手順 2 を参照してください。
 
@@ -49,16 +49,13 @@ MailItemsAccessed メールボックス監査アクションは、POP、IMAP、M
 
 ### <a name="throttling-of-mailitemsaccessed-audit-records"></a>MailItemsAccessed 監査レコードの調整
 
-1,000 を超える MailItemsAccessed 監査レコードが 24 時間以内に生成される場合、Exchange Online は MailItemsAccessed アクティビティの監査レコードの生成を停止します。 メールボックスが調整される場合、MailItemsAccessed アクティビティは、メールボックスが調整されてから 24 時間は記録されません。 これが発生する場合、この期間中にメールボックスが侵害される可能性があります。 MailItemsAccessed アクティビティの記録は、24 時間後に再開されます。  
+1,000 を超える MailItemsAccessed 監査レコードが 24 時間以内に生成される場合、Exchange Online は MailItemsAccessed アクティビティの監査レコードの生成を停止します。 メールボックスが調整される場合、MailItemsAccessed アクティビティは、メールボックスが調整されてから 24 時間は記録されません。 これが発生する場合、この期間中にメールボックスが侵害される可能性があります。 MailItemsAccessed アクティビティの記録は、24 時間後に再開されます。
 
 調整については、注意事項がいくつかあります。
 
 - Exchange Online のすべてのメールボックスの 1 ％未満が調整されます
-
-- メールボックスが調整されている場合、MailItemsAccessed アクティビティの監査レコードのみが監査されません。 他のメールボックス監査アクションは影響を受けません。
-
+- メールボックスが調整されている場合、MailItemsAccessed アクティビティの監査レコードのみが監査されません。他のメールボックス監査アクションは影響を受けません。
 - メールボックスは、バインド操作に対してのみ調整されます。 同期操作の監査レコードは調整されません。
-
 - メールボックスが調整される場合、おそらく監査ログに記録されていない MailItemsAccessed アクティビティがあると推測できます。
 
 監査レコードに IsThrottled プロパティを表示する例については、[フォレンシック調査に MailItemsAccessed 監査レコードを使用する](#use-mailitemsaccessed-audit-records-for-forensic-investigations)セクションの手順 1 を参照してください。
@@ -67,17 +64,17 @@ MailItemsAccessed メールボックス監査アクションは、POP、IMAP、M
 
 メールボックスの監査では、メール メッセージへのアクセスに関する監査レコードが生成されるため、メール メッセージが侵害されていないことを確信できます。 この理由から、一部のデータがアクセスされたかどうかが確かではない状況では、すべてのメール アクセス アクティビティを記録することで、それがなされたと想定します。
 
-通常、フォレンシック目的での MailItemsAccessed 監査レコードの使用は、データ侵害が解決され、攻撃者が立ち退いた後に実行されます。 調査を開始するには、侵害されたメールボックスのセットを特定し、攻撃者が組織内のメールボックスにアクセスした時間枠を特定する必要があります。 次に、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で **Search-UnifiedAuditLog** または **Search-MailboxAuditLog** コマンドレットを使用して、データ侵害に対応する監査レコードを検索できます。 
+通常、フォレンシック目的での MailItemsAccessed 監査レコードの使用は、データ侵害が解決され、攻撃者が立ち退いた後に実行されます。 調査を開始するには、侵害されたメールボックスのセットを特定し、攻撃者が組織内のメールボックスにアクセスした時間枠を特定する必要があります。 次に、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で **Search-UnifiedAuditLog** または **Search-MailboxAuditLog** コマンドレットを使用して、データ侵害に対応する監査レコードを検索できます。
 
 次のいずれかのコマンドを実行して、MailItemsAccessed 監査レコードを検索できます。
 
-**統合監査ログ**
+**統合監査ログ**:
 
 ```powershell
 Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000
 ```
 
-**メールボックス監査ログ**
+**メールボックス監査ログ**:
 
 ```powershell
 Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/2020 -Operations MailItemsAccessed -ResultSize 1000 -ShowDetails
@@ -92,13 +89,13 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
    メールボックスが調整された MailItemsAccessed レコードを検索するには、次のコマンドを実行します。
 
-   **統合監査ログ**
- 
+   **統合監査ログ**:
+
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"IsThrottled","Value":"True"*'} | FL
    ```
 
-   **メールボックス監査ログ**
+   **メールボックス監査ログ**:
 
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*IsThrottled:True*"} | FL
@@ -108,13 +105,13 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
    同期操作によってメール アイテムにアクセスした MailItemsAccessed レコードを検索するには、次のコマンドを実行します。
 
-   **統合監査ログ**
+   **統合監査ログ**:
 
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 02/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"MailAccessType","Value":"Sync"*'} | FL
    ```
 
-   **メールボックス監査ログ**
+   **メールボックス監査ログ**:
 
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Sync*"} | FL
@@ -124,67 +121,78 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
    下記のプロパティを使用して調査します。 これらのプロパティは、AuditData または OperationProperties プロパティにあります。 いずれかの同期が攻撃者のアクティビティと同じコンテキストで発生する場合、攻撃者がすべてのメール アイテムをクライアントに同期したと想定します。これは、メールボックス全体がおそらく侵害されているであろうことを意味します。
 
-   |プロパティ         | 説明 |
-   |:---------------- | :----------|
-   |ClientInfoString | プロトコル、クライアントについて説明します (バージョンを含む)|
-   |ClientIPAddress  | クライアント マシンの IP アドレスです。|
-   |SessionId        | セッション ID は、同じアカウントでの攻撃者のアクションと日々のユーザー アクティビティを区別するのに役立ちます (侵害されたアカウントの場合)|
-   |UserId           | メッセージを読んでいるユーザーの UPN です。|
-   |||
+   <br>
 
-4. バインド アクティビティを確認します。 手順 2 および手順 3 を実行した後、攻撃者によるメール メッセージへのその他すべてのアクセスが、"Bind" 値を持つ MailAccessType プロパティを持った MailItemsAccessed 監査レコードにキャプチャされることを確信できます。
+   ****
+
+   |プロパティ|説明|
+   |---|---|
+   |ClientInfoString|プロトコル、クライアントについて説明します (バージョンを含む)|
+   |ClientIPAddress|クライアント マシンの IP アドレスです。|
+   |SessionId|セッション ID は、同じアカウントでの攻撃者のアクションと日々のユーザー アクティビティを区別するのに役立ちます (侵害されたアカウントの場合)|
+   |UserId|メッセージを読んでいるユーザーの UPN です。|
+   |
+
+4. バインド アクティビティを確認します。手順 2 および手順 3 を実行した後、攻撃者によるメール メッセージへのその他すべてのアクセスが、"Bind" 値を持つ MailAccessType プロパティを持った MailItemsAccessed 監査レコードにキャプチャされることを確信できます。
 
    バインド操作によってメール アイテムにアクセスした MailItemsAccessed レコードを検索するには、次のコマンドを実行します。
 
-   **統合監査ログ**
+   **統合監査ログ**:
 
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"MailAccessType","Value":"Bind"*'} | FL
    ```
- 
-   **メールボックス監査ログ**
-   
+
+   **メールボックス監査ログ**:
+
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Bind*"} | FL
    ```
 
    アクセスされたメール メッセージは、インターネット メッセージ ID によって識別されます。 任意の監査レコードに、他の攻撃者のアクティビティのコンテキストと同じコンテキストがあるかどうかを確認することもできます。 詳細については、[さまざまな監査レコードのアクセス コンテキストの特定](#identifying-the-access-contexts-of-different-audit-records)セクションを参照してください。
- 
+
    バインド操作に監査データを使用するには、次の 2 つの方法があります。
 
-     - 攻撃者がアクセスしたすべてのメール メッセージにアクセスする、またはそれを収集するには、InternetMessageId を使用してそれらを見つけ、それらのメッセージに機密情報が含まれているかどうかを確認します。
-
-     - InternetMessageId を使用して、潜在的に機密性の高いメール メッセージのセットに関連する監査レコードを検索します。 これは、少数のメッセージのみを懸念している場合に役立ちます。
+   - 攻撃者がアクセスしたすべてのメール メッセージにアクセスする、またはそれを収集するには、InternetMessageId を使用してそれらを見つけ、それらのメッセージに機密情報が含まれているかどうかを確認します。
+   - InternetMessageId を使用して、潜在的に機密性の高いメール メッセージのセットに関連する監査レコードを検索します。 これは、少数のメッセージのみを懸念している場合に役立ちます。
 
 ## <a name="filtering-of-duplicate-audit-records"></a>重複する監査レコードのフィルター処理
 
 それぞれが 1 時間以内に発生した同じバインド操作による重複する監査レコードは、監査ノイズを除去するために除外されます。 同期操作も 1 時間ごとのインターバルによって除外されます。 この重複排除プロセスの例外は、同じ InternetMessageId に対して、次の表で説明されているプロパティのいずれかが異なる場合に発生します。 これらのプロパティのいずれかが重複操作で異なる場合、新しい監査レコードが生成されます。 このプロセスについては、次のセクションでより詳しく説明します。
 
-| プロパティ| 説明|
-|:--------|:---------|
-|ClientIPAddress | クライアント コンピューターの IP アドレスです。|
-|ClientInfoString| クライアント プロトコル、メールボックスへのアクセスに使用されるクライアントです。| 
-|ParentFolder    | アクセスされたメール アイテムの完全なフォルダー パスです。 |
-|Logon_type      | アクションを実行したユーザーのログオンの種類です。 ログオンの種類 (および対応する列挙値) は、所有者 (0)、管理者 (1)、または代理人 (2) です。|
-|MailAccessType  | アクセスがバインドまたは同期操作のどちらであるか。|
-|MailboxUPN      | 読み取られるメッセージが置かれているメールボックスの UPN です。|
-|User            | メッセージを読んでいるユーザーの UPN です。|
-|SessionId       | セッション ID は、同じアカウントでの攻撃者のアクションと日々のユーザー アクティビティを区別するのに役立ちます (侵害されたアカウントの場合)。セッションの詳細については、「[Contextualizing attacker activity within sessions in Exchange Online (Exchange Online のセッション内での攻撃者のアクティビティのコンテキスト化)](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801)」を参照してください。|
-||||
+<br>
+
+****
+
+|プロパティ|説明|
+|---|---|
+|ClientIPAddress|クライアント コンピューターの IP アドレスです。|
+|ClientInfoString|クライアント プロトコル、メールボックスへのアクセスに使用されるクライアントです。|
+|ParentFolder|アクセスされたメール アイテムの完全なフォルダー パスです。|
+|Logon_type|アクションを実行したユーザーのログオンの種類です。 ログオンの種類 (および対応する列挙値) は、所有者 (0)、管理者 (1)、または代理人 (2) です。|
+|MailAccessType|アクセスがバインドまたは同期操作のどちらであるか。|
+|MailboxUPN|読み取られるメッセージが置かれているメールボックスの UPN です。|
+|User|メッセージを読んでいるユーザーの UPN です。|
+|SessionId|セッション ID は、同じアカウントでの攻撃者のアクションと日々のユーザー アクティビティを区別するのに役立ちます (侵害されたアカウントの場合)。セッションの詳細については、「[Contextualizing attacker activity within sessions in Exchange Online (Exchange Online のセッション内での攻撃者のアクティビティのコンテキスト化)](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801)」を参照してください。|
+|
 
 ## <a name="identifying-the-access-contexts-of-different-audit-records"></a>異なる監査レコードのアクセス コンテキストの特定
 
 メールボックスの所有者がアクセスするのと同時に、攻撃者がメールボックスにアクセスすることがよくあります。 攻撃者とメールボックス所有者によるアクセスを区別するために、アクセスのコンテキストを定義する監査レコード プロパティがあります。 前に説明したように、これらのプロパティの値が異なる場合は、アクティビティが集約インターバル内で発生した場合でも個別の監査レコードが生成されます。 次の例では、3 つの異なる監査レコードがあります。 それぞれは、セッション ID および ClientIPAddress プロパティによって区別されます。 アクセスされたメッセージも識別されます。
 
-|監査レコード 1  |監査レコード 2  |監査レコード 3|
-|---------|---------|---------|
+<br>
+
+****
+
+|監査レコード 1|監査レコード 2|監査レコード 3|
+|---|---|---|
 |ClientIPAddress **1**<br/>SessionId **2**|ClientIPAddress **2**<br/>SessionId **2**|ClientIPAddress **1**<br/>SessionId **3**|
-|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B** |
-||||
+|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B**|
+|
 
 [前のセクション](#filtering-of-duplicate-audit-records)の表に一覧表示されているプロパティのいずれかが異なる場合、新しいコンテキストを追跡するために個別の監査レコードが生成されます。 アクセスは、アクティビティが行われたコンテキストに応じて、個別の監査レコードへと分類されます。
 
-たとえば、次のスクリーンショットに示されている監査レコードでは、EWSEditor と OWA から同時にメールにアクセスしていますが、アクセス アクティビティは、アクセスが発生したコンテキストに応じて異なる監査レコードで照合されます。 この場合、コンテキストは ClientInfoString プロパティの異なる値によって定義されます。
+たとえば、次のスクリーンショットに示されている監査レコードでは、EWSEditor と OWA から同時にメールにアクセスしていますが、アクセス アクティビティは、アクセスが発生したコンテキストに応じて異なる監査レコードで照合されます。この場合、コンテキストは ClientInfoString プロパティの異なる値によって定義されます。
 
 ![コンテキストに基づいた異なる監査レコード](../media/MailItemsAccessed4.png)
 
