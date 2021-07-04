@@ -16,22 +16,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769247"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289849"
 ---
-# <a name="list-alerts-api"></a><span data-ttu-id="7d301-104">アラート API の一覧表示</span><span class="sxs-lookup"><span data-stu-id="7d301-104">List alerts API</span></span>
+# <a name="list-alerts-api"></a><span data-ttu-id="487df-104">アラート API の一覧表示</span><span class="sxs-lookup"><span data-stu-id="487df-104">List alerts API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="7d301-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="7d301-105">**Applies to:**</span></span>
-- [<span data-ttu-id="7d301-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="7d301-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="7d301-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="7d301-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="487df-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="487df-105">**Applies to:**</span></span>
+- [<span data-ttu-id="487df-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="487df-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="487df-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="487df-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="7d301-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="7d301-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="7d301-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="7d301-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="487df-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="487df-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="487df-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="487df-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -39,74 +39,75 @@ ms.locfileid: "52769247"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="7d301-110">API の説明</span><span class="sxs-lookup"><span data-stu-id="7d301-110">API description</span></span>
-<span data-ttu-id="7d301-111">アラートのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="7d301-111">Retrieves a collection of Alerts.</span></span>
-<br><span data-ttu-id="7d301-112">[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。</span><span class="sxs-lookup"><span data-stu-id="7d301-112">Supports [OData V4 queries](https://www.odata.org/documentation/).</span></span>
-<br><span data-ttu-id="7d301-113">OData でサポートされている演算子:</span><span class="sxs-lookup"><span data-stu-id="7d301-113">OData supported operators:</span></span>
-<br><span data-ttu-id="7d301-114">```$filter``` on: ```alertCreationTime``` ```lastUpdateTime``` , , , , ```incidentId``` and ```InvestigationId``` ```status``` ```severity``` ```category``` properties.</span><span class="sxs-lookup"><span data-stu-id="7d301-114">```$filter``` on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category``` properties.</span></span>
-<br><span data-ttu-id="7d301-115">```$top``` 最大値が 10,000 の場合</span><span class="sxs-lookup"><span data-stu-id="7d301-115">```$top``` with max value of 10,000</span></span>
+## <a name="api-description"></a><span data-ttu-id="487df-110">API の説明</span><span class="sxs-lookup"><span data-stu-id="487df-110">API description</span></span>
+<span data-ttu-id="487df-111">アラートのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="487df-111">Retrieves a collection of Alerts.</span></span>
+<br><span data-ttu-id="487df-112">[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。</span><span class="sxs-lookup"><span data-stu-id="487df-112">Supports [OData V4 queries](https://www.odata.org/documentation/).</span></span>
+<br><span data-ttu-id="487df-113">OData でサポートされている演算子:</span><span class="sxs-lookup"><span data-stu-id="487df-113">OData supported operators:</span></span>
+<br><span data-ttu-id="487df-114">```$filter``` on: ```alertCreationTime``` ```lastUpdateTime``` , , , , ```incidentId``` and ```InvestigationId``` ```status``` ```severity``` ```category``` properties.</span><span class="sxs-lookup"><span data-stu-id="487df-114">```$filter``` on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category``` properties.</span></span>
+<br><span data-ttu-id="487df-115">```$top``` 最大値が 10,000 の場合</span><span class="sxs-lookup"><span data-stu-id="487df-115">```$top``` with max value of 10,000</span></span>
 <br>```$skip```
-<br><span data-ttu-id="7d301-116">```$expand``` の ```evidence```</span><span class="sxs-lookup"><span data-stu-id="7d301-116">```$expand``` of ```evidence```</span></span>
-<br><span data-ttu-id="7d301-117">Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください。](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="7d301-117">See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)</span></span>
+<br><span data-ttu-id="487df-116">```$expand``` の ```evidence```</span><span class="sxs-lookup"><span data-stu-id="487df-116">```$expand``` of ```evidence```</span></span>
+<br><span data-ttu-id="487df-117">Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください。](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="487df-117">See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="7d301-118">制限事項</span><span class="sxs-lookup"><span data-stu-id="7d301-118">Limitations</span></span>
-1. <span data-ttu-id="7d301-119">構成済みの保持期間に従って、最後に更新されたアラートを取得できます。</span><span class="sxs-lookup"><span data-stu-id="7d301-119">You can get alerts last updated according to your configured retention period.</span></span>
-2. <span data-ttu-id="7d301-120">最大ページ サイズは 10,000 です。</span><span class="sxs-lookup"><span data-stu-id="7d301-120">Maximum page size is 10,000.</span></span>
-3. <span data-ttu-id="7d301-121">この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="7d301-121">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span> 
+## <a name="limitations"></a><span data-ttu-id="487df-118">制限事項</span><span class="sxs-lookup"><span data-stu-id="487df-118">Limitations</span></span>
+1. <span data-ttu-id="487df-119">構成済みの保持期間に従って、最後に更新されたアラートを取得できます。</span><span class="sxs-lookup"><span data-stu-id="487df-119">You can get alerts last updated according to your configured retention period.</span></span>
+2. <span data-ttu-id="487df-120">最大ページ サイズは 10,000 です。</span><span class="sxs-lookup"><span data-stu-id="487df-120">Maximum page size is 10,000.</span></span>
+3. <span data-ttu-id="487df-121">この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="487df-121">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="7d301-122">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7d301-122">Permissions</span></span>
-<span data-ttu-id="7d301-123">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="7d301-123">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="7d301-124">アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="7d301-124">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="487df-122">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="487df-122">Permissions</span></span>
+<span data-ttu-id="487df-123">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="487df-123">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="487df-124">アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="487df-124">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="7d301-125">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7d301-125">Permission type</span></span> |   <span data-ttu-id="7d301-126">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7d301-126">Permission</span></span>  |   <span data-ttu-id="7d301-127">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="7d301-127">Permission display name</span></span>
+<span data-ttu-id="487df-125">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="487df-125">Permission type</span></span> | <span data-ttu-id="487df-126">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="487df-126">Permission</span></span> | <span data-ttu-id="487df-127">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="487df-127">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="7d301-128">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7d301-128">Application</span></span> |   <span data-ttu-id="7d301-129">Alert.Read.All</span><span class="sxs-lookup"><span data-stu-id="7d301-129">Alert.Read.All</span></span> |    <span data-ttu-id="7d301-130">'すべてのアラートの読み取り'</span><span class="sxs-lookup"><span data-stu-id="7d301-130">'Read all alerts'</span></span>
-<span data-ttu-id="7d301-131">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7d301-131">Application</span></span> |   <span data-ttu-id="7d301-132">Alert.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d301-132">Alert.ReadWrite.All</span></span> |   <span data-ttu-id="7d301-133">'すべてのアラートの読み取りと書き込み'</span><span class="sxs-lookup"><span data-stu-id="7d301-133">'Read and write all alerts'</span></span>
-<span data-ttu-id="7d301-134">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7d301-134">Delegated (work or school account)</span></span> | <span data-ttu-id="7d301-135">Alert.Read</span><span class="sxs-lookup"><span data-stu-id="7d301-135">Alert.Read</span></span> | <span data-ttu-id="7d301-136">'アラートの読み取り'</span><span class="sxs-lookup"><span data-stu-id="7d301-136">'Read alerts'</span></span>
-<span data-ttu-id="7d301-137">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7d301-137">Delegated (work or school account)</span></span> | <span data-ttu-id="7d301-138">Alert.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d301-138">Alert.ReadWrite</span></span> | <span data-ttu-id="7d301-139">'アラートの読み取りと書き込み'</span><span class="sxs-lookup"><span data-stu-id="7d301-139">'Read and write alerts'</span></span>
+<span data-ttu-id="487df-128">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="487df-128">Application</span></span> | <span data-ttu-id="487df-129">Alert.Read.All</span><span class="sxs-lookup"><span data-stu-id="487df-129">Alert.Read.All</span></span> | <span data-ttu-id="487df-130">'すべてのアラートの読み取り'</span><span class="sxs-lookup"><span data-stu-id="487df-130">'Read all alerts'</span></span>
+<span data-ttu-id="487df-131">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="487df-131">Application</span></span> | <span data-ttu-id="487df-132">Alert.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="487df-132">Alert.ReadWrite.All</span></span> | <span data-ttu-id="487df-133">'すべてのアラートの読み取りと書き込み'</span><span class="sxs-lookup"><span data-stu-id="487df-133">'Read and write all alerts'</span></span>
+<span data-ttu-id="487df-134">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="487df-134">Delegated (work or school account)</span></span> | <span data-ttu-id="487df-135">Alert.Read</span><span class="sxs-lookup"><span data-stu-id="487df-135">Alert.Read</span></span> | <span data-ttu-id="487df-136">'アラートの読み取り'</span><span class="sxs-lookup"><span data-stu-id="487df-136">'Read alerts'</span></span>
+<span data-ttu-id="487df-137">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="487df-137">Delegated (work or school account)</span></span> | <span data-ttu-id="487df-138">Alert.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="487df-138">Alert.ReadWrite</span></span> | <span data-ttu-id="487df-139">'アラートの読み取りと書き込み'</span><span class="sxs-lookup"><span data-stu-id="487df-139">'Read and write alerts'</span></span>
 
->[!Note]
-> <span data-ttu-id="7d301-140">ユーザー資格情報を使用してトークンを取得する場合:</span><span class="sxs-lookup"><span data-stu-id="7d301-140">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="7d301-141">ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="7d301-141">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="7d301-142">応答には、デバイス グループ設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられているアラートだけが含まれます[](machine-groups.md)(詳細については、「デバイス グループの作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="7d301-142">The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> [!NOTE]
+> <span data-ttu-id="487df-140">ユーザー資格情報を使用してトークンを取得する場合:</span><span class="sxs-lookup"><span data-stu-id="487df-140">When obtaining a token using user credentials:</span></span>
+>
+> - <span data-ttu-id="487df-141">ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="487df-141">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+> - <span data-ttu-id="487df-142">応答には、デバイス グループ設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられているアラートだけが含まれます[](machine-groups.md)(詳細については、「デバイス グループの作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="487df-142">The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="7d301-143">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7d301-143">HTTP request</span></span>
-```
+## <a name="http-request"></a><span data-ttu-id="487df-143">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="487df-143">HTTP request</span></span>
+
+```http
 GET /api/alerts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7d301-144">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7d301-144">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="487df-144">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="487df-144">Request headers</span></span>
 
-<span data-ttu-id="7d301-145">名前</span><span class="sxs-lookup"><span data-stu-id="7d301-145">Name</span></span> | <span data-ttu-id="7d301-146">種類</span><span class="sxs-lookup"><span data-stu-id="7d301-146">Type</span></span> | <span data-ttu-id="7d301-147">説明</span><span class="sxs-lookup"><span data-stu-id="7d301-147">Description</span></span>
+<span data-ttu-id="487df-145">名前</span><span class="sxs-lookup"><span data-stu-id="487df-145">Name</span></span> | <span data-ttu-id="487df-146">種類</span><span class="sxs-lookup"><span data-stu-id="487df-146">Type</span></span> | <span data-ttu-id="487df-147">説明</span><span class="sxs-lookup"><span data-stu-id="487df-147">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="7d301-148">Authorization</span><span class="sxs-lookup"><span data-stu-id="7d301-148">Authorization</span></span> | <span data-ttu-id="7d301-149">String</span><span class="sxs-lookup"><span data-stu-id="7d301-149">String</span></span> | <span data-ttu-id="7d301-150">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="7d301-150">Bearer {token}.</span></span> <span data-ttu-id="7d301-151">**必須**</span><span class="sxs-lookup"><span data-stu-id="7d301-151">**Required**.</span></span>
+<span data-ttu-id="487df-148">Authorization</span><span class="sxs-lookup"><span data-stu-id="487df-148">Authorization</span></span> | <span data-ttu-id="487df-149">String</span><span class="sxs-lookup"><span data-stu-id="487df-149">String</span></span> | <span data-ttu-id="487df-150">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="487df-150">Bearer {token}.</span></span> <span data-ttu-id="487df-151">**必須**</span><span class="sxs-lookup"><span data-stu-id="487df-151">**Required**.</span></span>
 
+## <a name="request-body"></a><span data-ttu-id="487df-152">要求本文</span><span class="sxs-lookup"><span data-stu-id="487df-152">Request body</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="7d301-152">要求本文</span><span class="sxs-lookup"><span data-stu-id="7d301-152">Request body</span></span>
-<span data-ttu-id="7d301-153">Empty</span><span class="sxs-lookup"><span data-stu-id="7d301-153">Empty</span></span>
+<span data-ttu-id="487df-153">Empty</span><span class="sxs-lookup"><span data-stu-id="487df-153">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="7d301-154">応答</span><span class="sxs-lookup"><span data-stu-id="7d301-154">Response</span></span>
-<span data-ttu-id="7d301-155">成功した場合、このメソッドは 200 OK を返し、応答本文の [アラート](alerts.md) オブジェクトの一覧を返します。</span><span class="sxs-lookup"><span data-stu-id="7d301-155">If successful, this method returns 200 OK, and a list of [alert](alerts.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="487df-154">応答</span><span class="sxs-lookup"><span data-stu-id="487df-154">Response</span></span>
 
+<span data-ttu-id="487df-155">成功した場合、このメソッドは 200 OK を返し、応答本文の [アラート](alerts.md) オブジェクトの一覧を返します。</span><span class="sxs-lookup"><span data-stu-id="487df-155">If successful, this method returns 200 OK, and a list of [alert](alerts.md) objects in the response body.</span></span>
 
-## <a name="example-1---default"></a><span data-ttu-id="7d301-156">例 1 - 既定</span><span class="sxs-lookup"><span data-stu-id="7d301-156">Example 1 - Default</span></span>
+## <a name="example-1---default"></a><span data-ttu-id="487df-156">例 1 - 既定</span><span class="sxs-lookup"><span data-stu-id="487df-156">Example 1 - Default</span></span>
 
-<span data-ttu-id="7d301-157">**要求**</span><span class="sxs-lookup"><span data-stu-id="7d301-157">**Request**</span></span>
+### <a name="request"></a><span data-ttu-id="487df-157">要求</span><span class="sxs-lookup"><span data-stu-id="487df-157">Request</span></span>
 
-<span data-ttu-id="7d301-158">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7d301-158">Here is an example of the request.</span></span>
+<span data-ttu-id="487df-158">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="487df-158">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
-<span data-ttu-id="7d301-159">**応答**</span><span class="sxs-lookup"><span data-stu-id="7d301-159">**Response**</span></span>
+### <a name="response"></a><span data-ttu-id="487df-159">応答</span><span class="sxs-lookup"><span data-stu-id="487df-159">Response</span></span>
 
-<span data-ttu-id="7d301-160">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="7d301-160">Here is an example of the response.</span></span>
+<span data-ttu-id="487df-160">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="487df-160">Here is an example of the response.</span></span>
 
->[!NOTE]
-><span data-ttu-id="7d301-161">ここに示す応答リストは、簡単に切り詰められることがあります。</span><span class="sxs-lookup"><span data-stu-id="7d301-161">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="7d301-162">すべてのアラートは、実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="7d301-162">All alerts will be returned from an actual call.</span></span>
-
+> [!NOTE]
+> <span data-ttu-id="487df-161">ここに示す応答リストは、簡単に切り詰められることがあります。</span><span class="sxs-lookup"><span data-stu-id="487df-161">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="487df-162">すべてのアラートは、実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="487df-162">All alerts will be returned from an actual call.</span></span>
 
 ```json
 {
@@ -160,24 +161,22 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 }
 ```
 
-## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a><span data-ttu-id="7d301-163">例 2 - 関連する証拠を含む最新のアラートを 10 件取得する</span><span class="sxs-lookup"><span data-stu-id="7d301-163">Example 2 - Get 10 latest Alerts with related Evidence</span></span>
+## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a><span data-ttu-id="487df-163">例 2 - 関連する証拠を含む最新のアラートを 10 件取得する</span><span class="sxs-lookup"><span data-stu-id="487df-163">Example 2 - Get 10 latest Alerts with related Evidence</span></span>
 
-<span data-ttu-id="7d301-164">**要求**</span><span class="sxs-lookup"><span data-stu-id="7d301-164">**Request**</span></span>
+### <a name="request"></a><span data-ttu-id="487df-164">要求</span><span class="sxs-lookup"><span data-stu-id="487df-164">Request</span></span>
 
-<span data-ttu-id="7d301-165">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7d301-165">Here is an example of the request.</span></span>
+<span data-ttu-id="487df-165">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="487df-165">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
+### <a name="response"></a><span data-ttu-id="487df-166">応答</span><span class="sxs-lookup"><span data-stu-id="487df-166">Response</span></span>
 
-<span data-ttu-id="7d301-166">**応答**</span><span class="sxs-lookup"><span data-stu-id="7d301-166">**Response**</span></span>
+<span data-ttu-id="487df-167">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="487df-167">Here is an example of the response.</span></span>
 
-<span data-ttu-id="7d301-167">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="7d301-167">Here is an example of the response.</span></span>
-
->[!NOTE]
-><span data-ttu-id="7d301-168">ここに示す応答リストは、簡単に切り詰められることがあります。</span><span class="sxs-lookup"><span data-stu-id="7d301-168">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="7d301-169">すべてのアラートは、実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="7d301-169">All alerts will be returned from an actual call.</span></span>
-
+> [!NOTE]
+> <span data-ttu-id="487df-168">ここに示す応答リストは、簡単に切り詰められることがあります。</span><span class="sxs-lookup"><span data-stu-id="487df-168">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="487df-169">すべてのアラートは、実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="487df-169">All alerts will be returned from an actual call.</span></span>
 
 ```json
 {
@@ -314,6 +313,6 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 }
 ```
 
+## <a name="see-also"></a><span data-ttu-id="487df-170">関連項目</span><span class="sxs-lookup"><span data-stu-id="487df-170">See also</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="7d301-170">関連項目</span><span class="sxs-lookup"><span data-stu-id="7d301-170">See also</span></span>
-- [<span data-ttu-id="7d301-171">エンドポイント用 Microsoft Defender を使用した OData クエリ</span><span class="sxs-lookup"><span data-stu-id="7d301-171">OData queries with Microsoft Defender for Endpoint</span></span>](exposed-apis-odata-samples.md)
+[<span data-ttu-id="487df-171">エンドポイント用 Microsoft Defender を使用した OData クエリ</span><span class="sxs-lookup"><span data-stu-id="487df-171">OData queries with Microsoft Defender for Endpoint</span></span>](exposed-apis-odata-samples.md)

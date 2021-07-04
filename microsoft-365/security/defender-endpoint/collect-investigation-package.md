@@ -16,78 +16,82 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0083d806f3e52307e6dce30f74e255073a09c16a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4cf60ea73ea907be9c10b2dd9562a0ea60127f2d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770495"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289897"
 ---
-# <a name="collect-investigation-package-api"></a><span data-ttu-id="dda24-104">調査パッケージ API の収集</span><span class="sxs-lookup"><span data-stu-id="dda24-104">Collect investigation package API</span></span>
+# <a name="collect-investigation-package-api"></a><span data-ttu-id="f50cf-104">調査パッケージ API の収集</span><span class="sxs-lookup"><span data-stu-id="f50cf-104">Collect investigation package API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="dda24-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="dda24-105">**Applies to:**</span></span>
-- [<span data-ttu-id="dda24-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="dda24-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="dda24-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="dda24-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="f50cf-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="f50cf-105">**Applies to:**</span></span>
+- [<span data-ttu-id="f50cf-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="f50cf-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="f50cf-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f50cf-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- <span data-ttu-id="dda24-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="dda24-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="dda24-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="dda24-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="f50cf-108">Microsoft Defender ATP を試してみたいですか?</span><span class="sxs-lookup"><span data-stu-id="f50cf-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f50cf-109">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="f50cf-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="dda24-110">API の説明</span><span class="sxs-lookup"><span data-stu-id="dda24-110">API description</span></span>
-<span data-ttu-id="dda24-111">デバイスから調査パッケージを収集します。</span><span class="sxs-lookup"><span data-stu-id="dda24-111">Collect investigation package from a device.</span></span>
+## <a name="api-description"></a><span data-ttu-id="f50cf-110">API の説明</span><span class="sxs-lookup"><span data-stu-id="f50cf-110">API description</span></span>
 
+<span data-ttu-id="f50cf-111">デバイスから調査パッケージを収集します。</span><span class="sxs-lookup"><span data-stu-id="f50cf-111">Collect investigation package from a device.</span></span>
 
-## <a name="limitations"></a><span data-ttu-id="dda24-112">制限事項</span><span class="sxs-lookup"><span data-stu-id="dda24-112">Limitations</span></span>
-1. <span data-ttu-id="dda24-113">この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="dda24-113">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
+## <a name="limitations"></a><span data-ttu-id="f50cf-112">制限事項</span><span class="sxs-lookup"><span data-stu-id="f50cf-112">Limitations</span></span>
 
+1. <span data-ttu-id="f50cf-113">この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="f50cf-113">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dda24-114">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="dda24-114">Permissions</span></span>
-<span data-ttu-id="dda24-115">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="dda24-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="dda24-116">アクセス許可の選択方法などの詳細については [、「Use Defender for Endpoint API」を参照してください。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="dda24-116">To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="f50cf-114">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f50cf-114">Permissions</span></span>
 
-<span data-ttu-id="dda24-117">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dda24-117">Permission type</span></span> |   <span data-ttu-id="dda24-118">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="dda24-118">Permission</span></span>  |   <span data-ttu-id="dda24-119">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="dda24-119">Permission display name</span></span>
+<span data-ttu-id="f50cf-115">この API を呼び出すには、次のいずれかのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="f50cf-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="f50cf-116">アクセス許可の選択方法などの詳細については [、「Use Defender for Endpoint API」を参照してください。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="f50cf-116">To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md)</span></span>
+
+<span data-ttu-id="f50cf-117">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f50cf-117">Permission type</span></span> | <span data-ttu-id="f50cf-118">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f50cf-118">Permission</span></span> | <span data-ttu-id="f50cf-119">アクセス許可の表示名</span><span class="sxs-lookup"><span data-stu-id="f50cf-119">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="dda24-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dda24-120">Application</span></span> |   <span data-ttu-id="dda24-121">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="dda24-121">Machine.CollectForensics</span></span> |  <span data-ttu-id="dda24-122">'collect forensics'</span><span class="sxs-lookup"><span data-stu-id="dda24-122">'Collect forensics'</span></span>
-<span data-ttu-id="dda24-123">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dda24-123">Delegated (work or school account)</span></span> |    <span data-ttu-id="dda24-124">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="dda24-124">Machine.CollectForensics</span></span> |  <span data-ttu-id="dda24-125">'collect forensics'</span><span class="sxs-lookup"><span data-stu-id="dda24-125">'Collect forensics'</span></span>
+<span data-ttu-id="f50cf-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f50cf-120">Application</span></span> | <span data-ttu-id="f50cf-121">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="f50cf-121">Machine.CollectForensics</span></span> | <span data-ttu-id="f50cf-122">'collect forensics'</span><span class="sxs-lookup"><span data-stu-id="f50cf-122">'Collect forensics'</span></span>
+<span data-ttu-id="f50cf-123">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f50cf-123">Delegated (work or school account)</span></span> | <span data-ttu-id="f50cf-124">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="f50cf-124">Machine.CollectForensics</span></span> | <span data-ttu-id="f50cf-125">'collect forensics'</span><span class="sxs-lookup"><span data-stu-id="f50cf-125">'Collect forensics'</span></span>
 
->[!Note]
-> <span data-ttu-id="dda24-126">ユーザー資格情報を使用してトークンを取得する場合:</span><span class="sxs-lookup"><span data-stu-id="dda24-126">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="dda24-127">ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Alerts Investigation' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="dda24-127">The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="dda24-128">ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="dda24-128">The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> [!NOTE]
+> <span data-ttu-id="f50cf-126">ユーザー資格情報を使用してトークンを取得する場合:</span><span class="sxs-lookup"><span data-stu-id="f50cf-126">When obtaining a token using user credentials:</span></span>
+>
+> - <span data-ttu-id="f50cf-127">ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Alerts Investigation' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="f50cf-127">The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+> - <span data-ttu-id="f50cf-128">ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="f50cf-128">The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="dda24-129">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dda24-129">HTTP request</span></span>
-```
+## <a name="http-request"></a><span data-ttu-id="f50cf-129">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f50cf-129">HTTP request</span></span>
+
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestigationPackage
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dda24-130">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dda24-130">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f50cf-130">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f50cf-130">Request headers</span></span>
 
-<span data-ttu-id="dda24-131">名前</span><span class="sxs-lookup"><span data-stu-id="dda24-131">Name</span></span> | <span data-ttu-id="dda24-132">種類</span><span class="sxs-lookup"><span data-stu-id="dda24-132">Type</span></span> | <span data-ttu-id="dda24-133">説明</span><span class="sxs-lookup"><span data-stu-id="dda24-133">Description</span></span>
+<span data-ttu-id="f50cf-131">名前</span><span class="sxs-lookup"><span data-stu-id="f50cf-131">Name</span></span> | <span data-ttu-id="f50cf-132">種類</span><span class="sxs-lookup"><span data-stu-id="f50cf-132">Type</span></span> | <span data-ttu-id="f50cf-133">説明</span><span class="sxs-lookup"><span data-stu-id="f50cf-133">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="dda24-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="dda24-134">Authorization</span></span> | <span data-ttu-id="dda24-135">String</span><span class="sxs-lookup"><span data-stu-id="dda24-135">String</span></span> | <span data-ttu-id="dda24-136">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="dda24-136">Bearer {token}.</span></span> <span data-ttu-id="dda24-137">**必須**</span><span class="sxs-lookup"><span data-stu-id="dda24-137">**Required**.</span></span>
-<span data-ttu-id="dda24-138">Content-Type</span><span class="sxs-lookup"><span data-stu-id="dda24-138">Content-Type</span></span> | <span data-ttu-id="dda24-139">string</span><span class="sxs-lookup"><span data-stu-id="dda24-139">string</span></span> | <span data-ttu-id="dda24-140">application/json.</span><span class="sxs-lookup"><span data-stu-id="dda24-140">application/json.</span></span> <span data-ttu-id="dda24-141">**必須**</span><span class="sxs-lookup"><span data-stu-id="dda24-141">**Required**.</span></span>
+<span data-ttu-id="f50cf-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="f50cf-134">Authorization</span></span> | <span data-ttu-id="f50cf-135">String</span><span class="sxs-lookup"><span data-stu-id="f50cf-135">String</span></span> | <span data-ttu-id="f50cf-136">ベアラー {token}。</span><span class="sxs-lookup"><span data-stu-id="f50cf-136">Bearer {token}.</span></span> <span data-ttu-id="f50cf-137">**必須**</span><span class="sxs-lookup"><span data-stu-id="f50cf-137">**Required**.</span></span>
+<span data-ttu-id="f50cf-138">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f50cf-138">Content-Type</span></span> | <span data-ttu-id="f50cf-139">string</span><span class="sxs-lookup"><span data-stu-id="f50cf-139">string</span></span> | <span data-ttu-id="f50cf-140">application/json.</span><span class="sxs-lookup"><span data-stu-id="f50cf-140">application/json.</span></span> <span data-ttu-id="f50cf-141">**必須**</span><span class="sxs-lookup"><span data-stu-id="f50cf-141">**Required**.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="dda24-142">要求本文</span><span class="sxs-lookup"><span data-stu-id="dda24-142">Request body</span></span>
-<span data-ttu-id="dda24-143">要求本文で、JSON オブジェクトに次のパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="dda24-143">In the request body, supply a JSON object with the following parameters:</span></span>
+## <a name="request-body"></a><span data-ttu-id="f50cf-142">要求本文</span><span class="sxs-lookup"><span data-stu-id="f50cf-142">Request body</span></span>
 
-<span data-ttu-id="dda24-144">パラメーター</span><span class="sxs-lookup"><span data-stu-id="dda24-144">Parameter</span></span> | <span data-ttu-id="dda24-145">種類</span><span class="sxs-lookup"><span data-stu-id="dda24-145">Type</span></span>    | <span data-ttu-id="dda24-146">説明</span><span class="sxs-lookup"><span data-stu-id="dda24-146">Description</span></span>
+<span data-ttu-id="f50cf-143">要求本文で、JSON オブジェクトに次のパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="f50cf-143">In the request body, supply a JSON object with the following parameters:</span></span>
+
+<span data-ttu-id="f50cf-144">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f50cf-144">Parameter</span></span> | <span data-ttu-id="f50cf-145">種類</span><span class="sxs-lookup"><span data-stu-id="f50cf-145">Type</span></span> | <span data-ttu-id="f50cf-146">説明</span><span class="sxs-lookup"><span data-stu-id="f50cf-146">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="dda24-147">コメント</span><span class="sxs-lookup"><span data-stu-id="dda24-147">Comment</span></span> |   <span data-ttu-id="dda24-148">文字列</span><span class="sxs-lookup"><span data-stu-id="dda24-148">String</span></span> |    <span data-ttu-id="dda24-149">アクションに関連付けるコメント。</span><span class="sxs-lookup"><span data-stu-id="dda24-149">Comment to associate with the action.</span></span> <span data-ttu-id="dda24-150">**必須**</span><span class="sxs-lookup"><span data-stu-id="dda24-150">**Required**.</span></span>
+<span data-ttu-id="f50cf-147">コメント</span><span class="sxs-lookup"><span data-stu-id="f50cf-147">Comment</span></span> | <span data-ttu-id="f50cf-148">文字列</span><span class="sxs-lookup"><span data-stu-id="f50cf-148">String</span></span> | <span data-ttu-id="f50cf-149">アクションに関連付けるコメント。</span><span class="sxs-lookup"><span data-stu-id="f50cf-149">Comment to associate with the action.</span></span> <span data-ttu-id="f50cf-150">**必須**</span><span class="sxs-lookup"><span data-stu-id="f50cf-150">**Required**.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dda24-151">応答</span><span class="sxs-lookup"><span data-stu-id="dda24-151">Response</span></span>
-<span data-ttu-id="dda24-152">成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。</span><span class="sxs-lookup"><span data-stu-id="dda24-152">If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f50cf-151">応答</span><span class="sxs-lookup"><span data-stu-id="f50cf-151">Response</span></span>
 
+<span data-ttu-id="f50cf-152">成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。</span><span class="sxs-lookup"><span data-stu-id="f50cf-152">If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dda24-153">例</span><span class="sxs-lookup"><span data-stu-id="dda24-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f50cf-153">例</span><span class="sxs-lookup"><span data-stu-id="f50cf-153">Example</span></span>
 
-<span data-ttu-id="dda24-154">**要求**</span><span class="sxs-lookup"><span data-stu-id="dda24-154">**Request**</span></span>
+### <a name="request"></a><span data-ttu-id="f50cf-154">要求</span><span class="sxs-lookup"><span data-stu-id="f50cf-154">Request</span></span>
 
-<span data-ttu-id="dda24-155">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="dda24-155">Here is an example of the request.</span></span>
+<span data-ttu-id="f50cf-155">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f50cf-155">Here is an example of the request.</span></span>
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/collectInvestigationPackage
