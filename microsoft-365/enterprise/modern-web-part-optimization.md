@@ -21,26 +21,26 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: ページ診断を使用して、Web パーツのパフォーマンスを最適化する方法については、「オンラインモダン サイト SharePointページ」を参照してください。
-ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fab5b0bc9d0b04ede0815856af7366e277dbf909
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929062"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288901"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページで Web パーツのパフォーマンスを最適化する
 
 SharePoint Online のモダン サイト ページには、ページの読み込み時間全体に影響する可能性のある Web パーツが含まれています。 この記事では、ページ内の Web パーツによるユーザーが感じる待機時間への影響を特定する方法と、一般的な問題を修復する方法について説明します。
 
->[!NOTE]
->Sharepoint Online のモダン ポータルでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)」を参照してください。
+> [!NOTE]
+> Sharepoint Online のモダン ポータルでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](/sharepoint/modern-experience-performance)」を参照してください。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>SharePoint 用ページ診断ツールを使用して Web パーツを分析する
 
 SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://www.microsoft.com/edge) と Chrome のブラウザー拡張機能であり、SharePoint Online の最新ポータルと従来の発行サイト ページの両方を分析します。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法と詳細については、「[SharePoint Online 用ページ診断ツールを使用する](page-diagnostics-for-spo.md)」を参照してください。
 
->[!NOTE]
->ページ診断ツールは SharePoint Online でのみ機能し、SharePoint システム ページでは使用できません。
+> [!NOTE]
+> ページ診断ツールは SharePoint Online でのみ機能し、SharePoint システム ページでは使用できません。
 
 SharePoint のサイト ページを SharePoint 用ページ診断ツールを使用して分析すると、ベースライン メトリックを超えている Web パーツに関する情報が [_診断テスト_] ウィンドウ内の [**Web parts are impacting page load time**] (Web パーツがページの読み込み時間に影響を与えています) という結果に表示されます。
 
@@ -62,10 +62,13 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 - **モジュールの読** み込みでは、拡張機能 JavaScript ファイルと CSS ファイルのダウンロード、評価、読み込みに必要な時間が表示されます。 その後、Init プロセスが開始されます。
 - **遅延読み** 込みでは、ページのメイン セクションに表示されない Web パーツの遅延読み込み時間が表示されます。 レンダリングする Web パーツが多すぎて、ページの読み込み時間を最小限に抑えるためにレンダリングするためにキューに入れられます。
 - **Init** は、Web パーツがデータを初期化するために必要な時間を示します。
-    これは非同期呼び出しであり、init 時間は、返される約束が解決された場合の onInit 関数の時間の計算です。
+
+  これは非同期呼び出しであり、init 時間は、返される約束が解決された場合の onInit 関数の時間の計算です。
+
 - **Render** は、モジュールの読み込みと Init の完了後の UI (ユーザー インターフェイス) のレンダリングに必要な時間を示します。
-    ドキュメント (ページ) に DOM をマウントする JavaScript の実行時間です。
-    非同期リソースのレンダリング (イメージなど) は、完了にさらに時間がかかる場合があります。
+
+  ドキュメント (ページ) に DOM をマウントする JavaScript の実行時間です。
+  非同期リソースのレンダリング (イメージなど) は、完了にさらに時間がかかる場合があります。
 
 この情報は、デザイナーと開発者が問題のトラブルシューティングを行えるように提供されています。 この情報は、設計開発チームに提供するようにします。
 

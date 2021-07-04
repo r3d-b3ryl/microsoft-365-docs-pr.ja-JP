@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Exact Data Match アクティビティの通知を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: da00c43ae9ba5b129129027df16f49ef80b8757d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007563"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288169"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Exact Data Match アクティビティの通知を作成する
 
-[Exact Data Match (EDM) を使用してカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)と、[監査ログ](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)に作成されるアクティビティが多数あります。 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) PowerShell コマンドレットを使用して、次のアクティビティが発生したときに知らせる通知を作成できます。
+[Exact Data Match (EDM) を使用してカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)と、[監査ログ](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)に作成されるアクティビティが多数あります。 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell コマンドレットを使用して、次のアクティビティが発生したときに知らせる通知を作成できます。
 
 - CreateSchema
 - EditSchema
@@ -55,7 +55,7 @@ DLP ライセンスの詳細については、「[セキュリティとコンプ
 
 ## <a name="configure-notifications-for-edm-activities"></a>EDM アクティビティの通知を構成する
 
-1. [セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/connect-to-scc-powershell?view=exchange-ps) に接続する 
+1. [セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/connect-to-scc-powershell) に接続する 
 
 2. 通知を作成するアクティビティを使用して、`New-ProtectionAlert` コマンドレットを実行します。  たとえば、**UploadDataCompleted** 操作が発生したときに通知を受け取りたい場合は、実行できる
 
@@ -72,4 +72,4 @@ New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUse
 ## <a name="related-articles"></a>関連記事
 
 - [Exact Data Match (EDM) によりカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-- [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps)
+- [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert)

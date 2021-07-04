@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: PowerShell for Microsoft 365 を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。
-ms.openlocfilehash: 4477dadf0ea38a81ac0ae282da3f74fc12f3406f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4ea4858e4ca334cdb0268312e69bef77bc9bbd86
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916682"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288985"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>PowerShell を使用して Skype for Business Online を管理する
 
@@ -29,16 +29,15 @@ Skype for Business Online 管理者は、ポリシーの管理を担当します
 
 ## <a name="before-you-start"></a>始める前に
 
-  > [!Note]
-   > Skype for Business Online Connector は現在、最新の Teams PowerShell モジュールに含まれています。 最新の Teams PowerShell パブリック リリースをご利用の場合は、Skype for Business Online Connector をインストールする必要はありません。
-   
-[Teams PowerShell モジュール](/microsoftteams/teams-powershell-install)をインストールします。
+> [!NOTE]
+> Skype for Business Online Connector は現在、最新の Teams PowerShell モジュールに含まれています。 最新の Teams PowerShell パブリック リリースをご利用の場合は、Skype for Business Online Connector をインストールする必要はありません。
 
+[Teams PowerShell モジュール](/microsoftteams/teams-powershell-install)をインストールします。
 
 ## <a name="connect-using-admin-credentials"></a>管理者の資格情報を使用して接続する
 
 1. Windows PowerShell コマンド プロンプト ウィンドを開き、次のコマンドを実行します:
-    
+
    ```powershell
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
@@ -46,7 +45,6 @@ Skype for Business Online 管理者は、ポリシーの管理を担当します
    ```
 
 2. [**Windows PowerShell 資格情報の要求**] ダイアログ ボックスに管理者のアカウント名とパスワードを入力し、[**OK**] を選択します。
-
 
 ## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>多要素認証の管理者アカウントを使用して接続する
 
@@ -64,15 +62,15 @@ Skype for Business Online 管理者は、ポリシーの管理を担当します
 4. [**アカウントにサインイン**] ダイアログ ボックスで手順に従い、確認コードなどのその他の認証情報を追加し、[**確認**] を選択します。
 
 詳しくは、以下を参照してください。
-  
+
 - [PowerShell を使用して Skype for Business Online を管理する](manage-skype-for-business-online-policies-with-microsoft-365-powershell.md)
-    
+
 - [PowerShell を使用してユーザーごとに Skype for Business Online のポリシーを割り当てる](assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md)
-    
+
 ## <a name="see-also"></a>関連項目
 
 [PowerShell で Microsoft 365を管理する](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
+
 [Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-microsoft-365-powershell.md)
 
-[Skype for Business PowerShell のコマンドレット リファレンス](/powershell/module/skype/?view=skype-ps)
+[Skype for Business PowerShell のコマンドレット リファレンス](/powershell/module/skype/)

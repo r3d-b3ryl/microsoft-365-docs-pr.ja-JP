@@ -19,22 +19,22 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '概要: PowerShell を使用して、オンライン サイトSharePoint新しいサイトを作成し、それらのサイトにユーザーとグループを追加します。'
-ms.openlocfilehash: eb6c2817c8760ca222da8a7c2b14cbfcda4eb4b8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0c363df3edd40d810a0d8ca63090c0fec4c1c155
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907620"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288661"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 で PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する場合、Microsoft 365 管理センターでできるよりもはるかに速く、繰り返しタスクを実行できます。 管理センターで実行できないタスクを実行Microsoft 365することもできます。 
+powerShell を Microsoft 365 で使用して SharePoint Online サイトを作成し、ユーザーを追加すると、Microsoft 365 管理センター で実行できるよりもはるかに高速で繰り返しタスクを実行できます。 また、アプリケーションで実行できないタスクを実行Microsoft 365 管理センター。
 
 ## <a name="connect-to-sharepoint-online"></a>SharePoint Online に接続する
 
-このトピックの手順では、オンラインのユーザーに接続SharePointします。 手順については、「オンライン[PowerShell ConnectをSharePointする」を参照してください。](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+このトピックの手順では、オンラインのユーザーに接続SharePointします。 手順については、「オンライン[PowerShell ConnectをSharePointする」を参照してください。](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>手順 1: PowerShell を使用して新しいサイト コレクションを作成する
 
@@ -45,40 +45,44 @@ PowerShell コマンドレットは、.csv ファイルをインポートし、�
 ### <a name="create-a-csv-file"></a>.csv ファイルの作成
 
 > [!NOTE]
-> リソース クォータ パラメーターは、従来のサイトでのみ機能します。 モダン サイトでこのパラメーターを使用すると、廃止されたという警告メッセージが表示されることがあります。 
+> リソース クォータ パラメーターは、従来のサイトでのみ機能します。 モダン サイトでこのパラメーターを使用すると、廃止されたという警告メッセージが表示されることがあります。
 
-1. メモ帳を開き、次のテキスト ブロックを貼り付けます。<br/>
+1. メモ帳を開き、次のテキスト ブロックを貼り付けます。
 
-```powershell
-Owner,StorageQuota,Url,ResourceQuota,Template,TimeZoneID,Name
-owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/TeamSite01,25,EHS#1,10,Contoso Team Site
-owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,BLOG#0,10,Contoso Blog
-owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
-owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
-```
-<br/>テナント *は* テナントの名前であり、所有者はプライマリサイト コレクション管理者の役割を付与するテナントのユーザーのユーザー名です。<br/>(Ctrl キーを押しながら H キーを押すと、メモ帳置き換えの速度が速くなります)。<br/>
+   ```powershell
+   Owner,StorageQuota,Url,ResourceQuota,Template,TimeZoneID,Name
+   owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/TeamSite01,25,EHS#1,10,Contoso Team Site
+   owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,BLOG#0,10,Contoso Blog
+   owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
+   owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
+   ```
 
-2. デスクトップにファイルを [ファイル名] **SiteCollections.csv。**<br/>
+   テナント *は* テナントの名前であり、所有者はプライマリサイト コレクション管理者の役割を付与するテナントのユーザーのユーザー名です。
+
+   (Ctrl キーを押しながら H キーを押すと、メモ帳置き換えの速度が速くなります)。
+
+2. デスクトップにファイルを [ファイル名] **SiteCollections.csv。**
 
 > [!TIP]
 > このスクリプト ファイルまたは他の .csv または Windows PowerShell スクリプト ファイルを使用する前に、余分な文字や印刷されていない文字が含まれるのを確認してください。 Word でファイルを開き、リボンで [段落] アイコンをクリックすると、印刷されない文字が表示されます。 印刷されない余分の文字がないようにしてください。 たとえば、ファイルの末尾の最後の文字の後ろに段落記号があってはなりません。
 
 ### <a name="run-the-windows-powershell-command"></a>Windows PowerShell コマンドの実行
 
-1. プロンプトにWindows PowerShell、次のコマンドを入力またはコピーして貼り付け、Enter キーを押します。<br/>
-```powershell
-Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
-```
-<br/>*MyAlias がユーザー* エイリアスと等しい場合。<br/>
+1. プロンプトにWindows PowerShell、次のコマンドを入力またはコピーして貼り付け、Enter キーを押します。
 
-2. WindowsPowerShell プロンプトが再度表示されるまで待機します。これには 1 - 2 分かかる場合があります。<br/>
+   ```powershell
+   Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
+   ```
 
-3. Windows PowerShell プロンプトで、次のコマンドレットを入力するか、コピーして貼り付け、Enter キーを押します。<br/>
+   *MyAlias がユーザー* エイリアスと等しい場合。
 
-```powershell
-Get-SPOSite -Detailed | Format-Table -AutoSize
-```
-<br/>
+2. WindowsPowerShell プロンプトが再度表示されるまで待機します。これには 1 - 2 分かかる場合があります。
+
+3. Windows PowerShell プロンプトで、次のコマンドレットを入力するか、コピーして貼り付け、Enter キーを押します。
+
+   ```powershell
+   Get-SPOSite -Detailed | Format-Table -AutoSize
+   ```
 
 4. リスト内の新しいサイト コレクションに注意してください。 この例の CSV ファイルを使用すると、次のサイト コレクションが表示されます **。TeamSite01** **、Blog01、Project01、****および Community01** 
 
@@ -92,47 +96,50 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 ### <a name="create-csv-and-ps1-files"></a>.csv ファイルおよび .ps1 ファイルの作成
 
-1. メモ帳を開き、次のテキスト ブロックを貼り付けます。<br/>
+1. メモ帳を開き、次のテキスト ブロックを貼り付けます。
 
-```powershell
-Site,Group,PermissionLevels
-https://tenant.sharepoint.com/sites/Community01,Contoso Project Leads,Full Control
-https://tenant.sharepoint.com/sites/Community01,Contoso Auditors,View Only
-https://tenant.sharepoint.com/sites/Community01,Contoso Designers,Design
-https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Team Leads,Full Control
-https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Advisors,Edit
-https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
-https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
-https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
-```
-<br/>テナント *がテナント* 名と等しい場所。<br/>
+   ```powershell
+   Site,Group,PermissionLevels
+   https://tenant.sharepoint.com/sites/Community01,Contoso Project Leads,Full Control
+   https://tenant.sharepoint.com/sites/Community01,Contoso Auditors,View Only
+   https://tenant.sharepoint.com/sites/Community01,Contoso Designers,Design
+   https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Team Leads,Full Control
+   https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Advisors,Edit
+   https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
+   https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
+   https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
+   ```
 
-2. ファイルをデスクトップに保存します **GroupsAndPermissions.csv。**<br/>
+   テナント *がテナント* 名と等しい場所。
 
-3. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。<br/>
+2. ファイルをデスクトップに保存します **GroupsAndPermissions.csv。**
 
-```powershell
-Group,LoginName,Site
-Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
-Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
-Contoso Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
-XT1000 Team Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
-XT1000 Advisors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
-Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
-Contoso Blog Editors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
-Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
-```
-<br/>テナント *がテナント* 名と等しく、ユーザー *名が* 既存のユーザーのユーザー名と等しい場合。<br/>
+3. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。
 
-4. ファイルをデスクトップに保存します **Users.csv。**<br/>
+   ```powershell
+   Group,LoginName,Site
+   Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
+   Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
+   Contoso Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
+   XT1000 Team Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
+   XT1000 Advisors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
+   Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
+   Contoso Blog Editors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
+   Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
+   ```
 
-5. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。<br/>
+   テナント *がテナント* 名と等しく、ユーザー *名が* 既存のユーザーのユーザー名と等しい場合。
 
-```powershell
-Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
-Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
-```
-<br/>ここで、MyAlias は現在ログオンしているユーザーのユーザー名と等しくなります。<br/>
+4. ファイルをデスクトップに保存します **Users.csv。**
+
+5. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。
+
+   ```powershell
+   Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
+   Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
+   ```
+
+   ここで、MyAlias は現在ログオンしているユーザーのユーザー名と等しくなります。
 
 6. ファイルをデスクトップに保存します **UsersAndGroups.ps1。** これは、単純な Windows PowerShell スクリプトです。
 
@@ -140,30 +147,32 @@ Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Gro
 
 ### <a name="run-usersandgroupsps1-script"></a>UsersAndGroups.ps1 スクリプトの実行
 
-1. SharePoint Online 管理シェルに戻ります。<br/>
-2. Windows PowerShell プロンプトで、次の行を入力するか、コピーして貼り付け、Enter キーを押します。<br/>
-```powershell
-Set-ExecutionPolicy Bypass
-```
-<br/>
+1. SharePoint Online 管理シェルに戻ります。
 
-3. 確認プロンプトで **、Y キーを押します**。<br/>
+2. Windows PowerShell プロンプトで、次の行を入力するか、コピーして貼り付け、Enter キーを押します。
 
-4. Windows PowerShell プロンプトで、次のコマンドを入力するか、コピーして貼り付け、Enter キーを押します。<br/>
+   ```powershell
+   Set-ExecutionPolicy Bypass
+   ```
 
-```powershell
-c:\users\MyAlias\desktop\UsersAndGroups.ps1
-```
-<br/>*MyAlias がユーザー* 名と等しい場所。<br/>
+3. 確認プロンプトで **、Y キーを押します**。
+
+4. Windows PowerShell プロンプトで、次のコマンドを入力するか、コピーして貼り付け、Enter キーを押します。
+
+   ```powershell
+   c:\users\MyAlias\desktop\UsersAndGroups.ps1
+   ```
+
+   *MyAlias がユーザー* 名と等しい場所。
 
 5. プロンプトが戻るまで待機してから、次に進みます。最初に、作成したとおりにグループが表示されます。次に、ユーザーを追加するたびに、グループの一覧が繰り返し表示されます。
 
 ## <a name="see-also"></a>関連項目
 
-[SharePoint Online PowerShell に接続する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[SharePoint Online PowerShell に接続する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 [PowerShell を使用して SharePoint Online サイト グループを管理する](manage-sharepoint-site-groups-with-powershell.md)
 
 [PowerShell で Microsoft 365を管理する](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
+
 [Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-microsoft-365-powershell.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 7998e878ad03fdfb64c314dc8b7234ece46164ce
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861553"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289495"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -36,8 +36,8 @@ ms.locfileid: "52861553"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
->[!IMPORTANT]
->このトピックでは、エンタープライズ環境で Defender for Endpoint on Linux の基本設定を設定する方法について説明します。 コマンド ラインからデバイスで製品を構成する場合は、「Resources」を参照 [してください](linux-resources.md#configure-from-the-command-line)。
+> [!IMPORTANT]
+> このトピックでは、エンタープライズ環境で Defender for Endpoint on Linux の基本設定を設定する方法について説明します。 コマンド ラインからデバイスで製品を構成する場合は、「Resources」を参照 [してください](linux-resources.md#configure-from-the-command-line)。
 
 エンタープライズ環境では、Defender for Endpoint on Linux を構成プロファイルで管理できます。 このプロファイルは、選択した管理ツールから展開されます。 企業が管理する基本設定は、デバイス上でローカルに設定された基本設定よりも優先されます。 つまり、企業のユーザーは、この構成プロファイルを介して設定された基本設定を変更できないのです。
 
@@ -55,169 +55,226 @@ ms.locfileid: "52861553"
 
 構成 *プロファイルの antivirusEngine* セクションを使用して、製品のウイルス対策コンポーネントの基本設定を管理します。
 
-|||
-|:---|:---|
-| **Key** | antivirusEngine |
-| **データ型** | 辞書 (入れ子になった基本設定) |
-| **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|antivirusEngine|
+|**データ型**|辞書 (入れ子になった基本設定)|
+|**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
+|
 
 #### <a name="enable--disable-real-time-protection"></a>リアルタイム保護を有効/無効にする
 
 リアルタイム保護 (アクセス時のファイルのスキャン) を有効にするかどうかを指定します。
 
-|||
-|:---|:---|
-| **Key** | enableRealTimeProtection |
-| **データ型** | Boolean |
-| **可能な値** | true (既定) <br/> false |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|enableRealTimeProtection|
+|**データ型**|ブール型|
+|**可能な値**|true (既定) <p> false|
+|
 
 #### <a name="enable--disable-passive-mode"></a>パッシブ モードを有効/無効にする
 
 ウイルス対策エンジンがパッシブ モードで実行されるかどうかを決定します。 パッシブ モードの場合:
+
 - リアルタイム保護はオフです。
 - オンデマンド スキャンが有効です。
 - 脅威の自動修復が無効になります。
 - セキュリティ インテリジェンスの更新プログラムが有効になっている。
 - [状態] メニュー アイコンは非表示です。
 
-|||
-|:---|:---|
-| **Key** | passiveMode |
-| **データ型** | Boolean |
-| **指定可能な値** | false (既定) <br/> true |
-| **コメント** | Defender for Endpoint version 100.67.60 以上で使用できます。 |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|passiveMode|
+|**データ型**|ブール型|
+|**指定可能な値**|false (既定) <p> true|
+|**コメント**|Defender for Endpoint version 100.67.60 以上で使用できます。|
+|
 
 #### <a name="exclusion-merge-policy"></a>除外マージ ポリシー
 
 除外のマージ ポリシーを指定します。 管理者定義の除外とユーザー定義の除外 ( ) の組み合わせ、または管理者定義の除外 ( ) のみを `merge` 組み合わせて指定できます `admin_only` 。 この設定は、ローカル ユーザーが独自の除外を定義するのを制限するために使用できます。
 
-|||
-|:---|:---|
-| **Key** | exclusionsMergePolicy |
-| **データ型** | String |
-| **指定可能な値** | merge (既定) <br/> admin_only |
-| **コメント** | Defender for Endpoint version 100.83.73 以上で使用できます。 |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|exclusionsMergePolicy|
+|**データ型**|String|
+|**指定可能な値**|merge (既定) <p> admin_only|
+|**コメント**|Defender for Endpoint version 100.83.73 以上で使用できます。|
+|
 
 #### <a name="scan-exclusions"></a>スキャンの除外
 
 スキャンから除外されたエンティティ。 除外は、完全パス、拡張子、またはファイル名で指定できます。
 (除外はアイテムの配列として指定されます。管理者は必要な数の要素を任意の順序で指定できます)。
 
-|||
-|:---|:---|
-| **Key** | 除外 |
-| **データ型** | 辞書 (入れ子になった基本設定) |
-| **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
-|||
+<br>
 
-**除外の種類**
+****
+
+|説明|値|
+|---|---|
+|**Key**|除外|
+|**データ型**|辞書 (入れ子になった基本設定)|
+|**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
+|
+
+##### <a name="type-of-exclusion"></a>除外の種類
 
 スキャンから除外されるコンテンツの種類を指定します。
 
-|||
-|:---|:---|
-| **Key** | $type |
-| **データ型** | String |
-| **指定可能な値** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
-|||
+<br>
 
-**除外されたコンテンツへのパス**
+****
+
+|説明|値|
+|---|---|
+|**Key**|$type|
+|**データ型**|String|
+|**指定可能な値**|excludedPath <p> excludedFileExtension <p> excludedFileName|
+|
+
+##### <a name="path-to-excluded-content"></a>除外されたコンテンツへのパス
 
 完全なファイル パスでスキャンからコンテンツを除外するために使用します。
 
-|||
-|:---|:---|
-| **Key** | path |
-| **データ型** | String |
-| **指定可能な値** | 有効なパス |
-| **コメント** | 適用 *できるのは、$type**が excludedPath である場合のみです。* |
-|||
+<br>
 
-**パスの種類 (ファイル/ディレクトリ)**
+****
+
+|説明|値|
+|---|---|
+|**Key**|path|
+|**データ型**|String|
+|**指定可能な値**|有効なパス|
+|**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
+|
+
+##### <a name="path-type-file--directory"></a>パスの種類 (ファイル/ディレクトリ)
 
 *path* プロパティがファイルまたはディレクトリを参照しているかどうかを示します。
 
-|||
-|:---|:---|
-| **Key** | isDirectory |
-| **データ型** | Boolean |
-| **指定可能な値** | false (既定) <br/> true |
-| **コメント** | 適用 *できるのは、$type**が excludedPath である場合のみです。* |
-|||
+<br>
 
-**スキャンから除外されたファイル拡張子**
+****
+
+|説明|値|
+|---|---|
+|**Key**|isDirectory|
+|**データ型**|ブール型|
+|**指定可能な値**|false (既定) <p> true|
+|**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
+|
+
+##### <a name="file-extension-excluded-from-the-scan"></a>スキャンから除外されたファイル拡張子
 
 ファイル拡張子でスキャンからコンテンツを除外するために使用します。
 
-|||
-|:---|:---|
-| **Key** | 拡張機能 |
-| **データ型** | String |
-| **指定可能な値** | 有効なファイル拡張子 |
-| **コメント** | 適用 *できるのは* 、$type FileExtension が *除外されている場合のみです。* |
-|||
+<br>
 
-**スキャンから除外されるプロセス**
+****
+
+|説明|値|
+|---|---|
+|**Key**|拡張機能|
+|**データ型**|String|
+|**指定可能な値**|有効なファイル拡張子|
+|**コメント**|適用 *できるのは* 、$type FileExtension が *除外されている場合のみです。*|
+|
+
+##### <a name="process-excluded-from-the-scan"></a>スキャンから除外されるプロセス*
 
 すべてのファイル アクティビティがスキャンから除外されるプロセスを指定します。 プロセスは、名前 (たとえば) または完全パス `cat` (たとえば) で指定できます `/bin/cat` 。
 
-|||
-|:---|:---|
-| **Key** | name |
-| **データ型** | String |
-| **指定可能な値** | 任意の文字列 |
-| **コメント** | ファイルが excludedFileName *$type**場合にのみ適用されます。* |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|name|
+|**データ型**|String|
+|**指定可能な値**|任意の文字列|
+|**コメント**|ファイルが excludedFileName *$type**場合にのみ適用されます。*|
+|
 
 #### <a name="allowed-threats"></a>許可される脅威
 
 製品によってブロックされ、代わりに実行が許可されている脅威の一覧 (名前で識別されます)。
 
-|||
-|:---|:---|
-| **Key** | allowedThreats |
-| **データ型** | 文字列の配列 |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|allowedThreats|
+|**データ型**|文字列の配列|
+|
 
 #### <a name="disallowed-threat-actions"></a>禁止された脅威アクション
 
 脅威が検出された場合にデバイスのローカル ユーザーが実行できるアクションを制限します。 この一覧に含まれるアクションは、ユーザー インターフェイスには表示されません。
 
-|||
-|:---|:---|
-| **Key** | disallowedThreatActions |
-| **データ型** | 文字列の配列 |
-| **可能な値** | allow (ユーザーによる脅威の許可を制限する) <br/> 復元 (検疫からの脅威の復元をユーザーに制限する) |
-| **コメント** | Defender for Endpoint version 100.83.73 以上で使用できます。 |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|disallowedThreatActions|
+|**データ型**|文字列の配列|
+|**可能な値**|allow (ユーザーによる脅威の許可を制限する) <p> 復元 (検疫からの脅威の復元をユーザーに制限する)|
+|**コメント**|Defender for Endpoint version 100.83.73 以上で使用できます。|
+|
 
 #### <a name="threat-type-settings"></a>脅威の種類の設定
 
 ウイルス *対策エンジンの threatTypeSettings* 基本設定は、製品による特定の脅威の種類の処理方法を制御するために使用されます。
 
-|||
-|:---|:---|
-| **Key** | threatTypeSettings |
-| **データ型** | 辞書 (入れ子になった基本設定) |
-| **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
-|||
+<br>
 
-**脅威の種類**
+****
+
+|説明|値|
+|---|---|
+|**Key**|threatTypeSettings|
+|**データ型**|辞書 (入れ子になった基本設定)|
+|**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
+|
+
+##### <a name="threat-type"></a>脅威の種類
 
 動作が構成されている脅威の種類。
 
-|||
-|:---|:---|
-| **Key** | キー |
-| **データ型** | String |
-| **指定可能な値** | potentially_unwanted_application <br/> archive_bomb |
-|||
+<br>
 
-**実行する操作**
+****
+
+|説明|値|
+|---|---|
+|**Key**|キー|
+|**データ型**|String|
+|**指定可能な値**|potentially_unwanted_application <p> archive_bomb|
+|
+
+##### <a name="action-to-take"></a>実行する操作
 
 前のセクションで指定した種類の脅威に出く際に実行するアクション。 次の指定が可能です。
 
@@ -225,81 +282,109 @@ ms.locfileid: "52861553"
 - **ブロック**: デバイスは、この種類の脅威から保護され、セキュリティ コンソールで通知されます。
 - **オフ**: デバイスは、この種類の脅威から保護され、何もログに記録されません。
 
-|||
-|:---|:---|
-| **Key** | 値 |
-| **データ型** | String |
-| **指定可能な値** | 監査 (既定) <br/> block <br/> off |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|値|
+|**データ型**|String|
+|**指定可能な値**|監査 (既定) <p> block <p> off|
+|
 
 #### <a name="threat-type-settings-merge-policy"></a>脅威の種類の設定の差し込みポリシー
 
 脅威の種類の設定のマージ ポリシーを指定します。 これは、管理者定義設定とユーザー定義設定 ( ) の組み合わせか、管理者定義の設定 ( ) のみを `merge` 組み合わせて使用できます `admin_only` 。 この設定を使用すると、ローカル ユーザーがさまざまな脅威の種類に対して独自の設定を定義するのを制限できます。
 
-|||
-|:---|:---|
-| **Key** | threatTypeSettingsMergePolicy |
-| **データ型** | String |
-| **指定可能な値** | merge (既定) <br/> admin_only |
-| **コメント** | Defender for Endpoint version 100.83.73 以上で使用できます。 |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|threatTypeSettingsMergePolicy|
+|**データ型**|String|
+|**指定可能な値**|merge (既定) <p> admin_only|
+|**コメント**|Defender for Endpoint version 100.83.73 以上で使用できます。|
+|
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>ウイルス対策スキャン履歴の保持 (日数)
 
 デバイスのスキャン履歴に結果が保持される日数を指定します。 古いスキャン結果は履歴から削除されます。 ディスクから削除された古い検疫済みファイル。
 
-|||
-|:---|:---|
-| **Key** | scanResultsRetentionDays |
-| **データ型** | String |
-| **指定可能な値** | 90 (既定)。 使用できる値は、1 日から 180 日です。 |
-| **コメント** | Defender for Endpoint version 101.04.76 以上で使用できます。 |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|scanResultsRetentionDays|
+|**データ型**|String|
+|**指定可能な値**|90 (既定)。 使用できる値は、1 日から 180 日です。|
+|**コメント**|Defender for Endpoint version 101.04.76 以上で使用できます。|
+|
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>ウイルス対策スキャン履歴内のアイテムの最大数
 
 スキャン履歴に保持するエントリの最大数を指定します。 エントリには、過去に実行されたオンデマンド スキャンとすべてのウイルス対策検出が含まれます。
 
-|||
-|:---|:---|
-| **Key** | scanHistoryMaximumItems |
-| **データ型** | String |
-| **指定可能な値** | 10000 (既定値)。 許可される値は、5000 アイテムから 15,000 アイテムまでです。 |
-| **コメント** | Defender for Endpoint version 101.04.76 以上で使用できます。 |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|scanHistoryMaximumItems|
+|**データ型**|String|
+|**指定可能な値**|10000 (既定値)。 許可される値は、5000 アイテムから 15,000 アイテムまでです。|
+|**コメント**|Defender for Endpoint version 101.04.76 以上で使用できます。|
+|
 
 ### <a name="cloud-delivered-protection-preferences"></a>クラウドによる保護の基本設定
 
 構成 *プロファイルの cloudService* エントリを使用して、製品のクラウド駆動型保護機能を構成します。
 
-|||
-|:---|:---|
-| **Key** | cloudService |
-| **データ型** | 辞書 (入れ子になった基本設定) |
-| **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|cloudService|
+|**データ型**|辞書 (入れ子になった基本設定)|
+|**コメント**|辞書の内容の説明については、以下のセクションを参照してください。|
+|
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>クラウド配信保護を有効/無効にする
 
 デバイスでクラウド配信の保護を有効にするかどうかを指定します。 サービスのセキュリティを向上させるために、この機能を有効にすることをお勧めします。
 
-|||
-|:---|:---|
-| **Key** | enabled |
-| **データ型** | Boolean |
-| **可能な値** | true (既定) <br/> false |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|enabled|
+|**データ型**|ブール型|
+|**可能な値**|true (既定) <p> false|
+|
 
 #### <a name="diagnostic-collection-level"></a>診断コレクション レベル
 
 診断データは、Defender for Endpoint を安全かつ最新の状態に保ち、問題を検出、診断、修正し、製品の改善を行う場合に使用されます。 この設定は、製品から Microsoft に送信される診断のレベルを決定します。
 
-|||
-|:---|:---|
-| **Key** | diagnosticLevel |
-| **データ型** | String |
-| **指定可能な値** | 省略可能 (既定) <br/> 必須 |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|diagnosticLevel|
+|**データ型**|String|
+|**指定可能な値**|省略可能 (既定) <p> 必須|
+|
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>自動サンプル申請を有効または無効にする
 
@@ -309,23 +394,31 @@ ms.locfileid: "52861553"
 - **セーフ**: 個人を特定できる情報 (PII) を含む疑わしいサンプルだけが自動的に送信されます。 これは、この設定の既定値です。
 - **すべて**: すべての疑わしいサンプルが Microsoft に送信されます。
 
-|||
-|:---|:---|
-| **Key** | automaticSampleSubmissionConsent |
-| **データ型** | String |
-| **指定可能な値** | none <br/> safe (既定) <br/> すべての |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|automaticSampleSubmissionConsent|
+|**データ型**|String|
+|**指定可能な値**|none <p> safe (既定) <p> すべての|
+|
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>セキュリティ インテリジェンスの自動更新を有効または無効にする
 
 セキュリティ インテリジェンスの更新プログラムが自動的にインストールされるかどうかを決定します。
 
-|||
-|:---|:---|
-| **Key** | automaticDefinitionUpdateEnabled |
-| **データ型** | Boolean |
-| **可能な値** | true (既定) <br/> false |
-|||
+<br>
+
+****
+
+|説明|値|
+|---|---|
+|**Key**|automaticDefinitionUpdateEnabled|
+|**データ型**|ブール型|
+|**可能な値**|true (既定) <p> false|
+|
 
 ## <a name="recommended-configuration-profile"></a>推奨される構成プロファイル
 
@@ -444,10 +537,12 @@ python -m json.tool mdatp_managed.json
 JSON が整形式の場合、上記のコマンドはターミナルに出力し、終了コードを返します `0` 。 それ以外の場合は、問題を説明するエラーが表示され、コマンドは終了コードを返します `1` 。
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>ファイル上のmdatp_managed.jsが正常に動作しているのを確認する
+
 /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsが正しく動作することを確認するには、次の設定の横に "[managed]" と表示されます。
+
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
-- passice_mode_enabled
+- passive_mode_enabled
 - real_time_protection_enabled
 - automatic_definition_update_enabled
 

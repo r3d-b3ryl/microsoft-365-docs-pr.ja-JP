@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社がエンタープライズ向け Microsoft 365の情報保護機能を使用して、クラウド内のデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bb797fa4f71b699069f8542b8bc7a353a9ee1698
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051498"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288673"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -34,14 +34,14 @@ Contoso 社はデータの分析を実行し、次の分類レベルを決定し
 
 | レベル 1: ベースライン | レベル 2: 機密 | レベル 3: 厳しく規制 |
 |:-------|:-----|:-----|
-| データは暗号化され、認証されたユーザーのみが使用できます。<BR> <BR> オンプレミスおよびクラウドベースのストレージとワークロードに格納されているすべてのデータに対して提供されます。 データは、サービス内に存在している間、およびサービスとクライアント デバイス間の転送中は暗号化されます。 <BR><BR>レベル 1 のデータの例には、通常のビジネス通信 (電子メール) や、管理、販売、およびサポート ワーカー用のファイルがあります。 | レベル 1 以上の強力な認証とデータ損失保護。<BR> <BR> 強力な認証には、Azure AD多要素認証 (MFA) が含まれています。検証携帯ショートメールします。 データ損失防止により、機密性の高い情報や重要な情報が Microsoft クラウド外に移動しません。<BR><BR>レベル 2 のデータの例には、財務情報や法的情報、新製品の研究開発データがあります。 | レベル 2 以上の最高レベルの暗号化、認証、監査。<BR><BR>保存データおよびクラウド内のデータに対する最高レベルの暗号化。地域の規制に準拠し、スマート カードや詳細な監査と警告を使用する MFA と組み合わされています。<BR> <BR>レベル 3 データの例は、顧客およびパートナーの個人情報、製品エンジニアリング仕様、および独自の製造技術です。  |
+| データは暗号化され、認証されたユーザーのみが使用できます。<BR> <BR> オンプレミスおよびクラウドベースのストレージとワークロードに格納されているすべてのデータに対して提供されます。 データは、サービス内に存在している間、およびサービスとクライアント デバイス間の転送中は暗号化されます。 <BR><BR>レベル 1 のデータの例には、通常のビジネス通信 (電子メール) や、管理、販売、およびサポート ワーカー用のファイルがあります。 | レベル 1 以上の強力な認証とデータ損失保護。<BR> <BR> 強力な認証には、SMS 検証AD多要素認証 (MFA) の Azure 認証が含まれます。 データ損失防止により、機密性の高い情報や重要な情報が Microsoft クラウド外に移動しません。<BR><BR>レベル 2 のデータの例には、財務情報や法的情報、新製品の研究開発データがあります。 | レベル 2 以上の最高レベルの暗号化、認証、監査。<BR><BR>保存データおよびクラウド内のデータに対する最高レベルの暗号化。地域の規制に準拠し、スマート カードや詳細な監査と警告を使用する MFA と組み合わされています。<BR> <BR>レベル 3 データの例は、顧客およびパートナーの個人情報、製品エンジニアリング仕様、および独自の製造技術です。  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Contoso の情報ポリシー
 次の表に、Contoso の情報ポリシーを示します。
 
 
-| 値 | Access | データ保存期間 | 情報保護 |
+| Value | Access | データ保存期間 | 情報保護 |
 |:-------|:-----|:-----|:-----|
 | 低いビジネス価値 (レベル 1: ベースライン) | すべてのユーザーへのアクセスを許可します。  | 6 か月 | 暗号化を使用します。 |
 | 中程度のビジネス価値 (レベル 2: 機密) | Contoso の従業員、下請け業者、パートナーへのアクセスを許可します。 <BR><BR> MFA、トランスポート層セキュリティ (TLS)、およびモバイル アプリケーション管理 (MAM) を使用します。 | 2 年  | データ整合性のためにハッシュ値を使用します。  |
@@ -64,11 +64,11 @@ Contoso は、次の手順に従って、Microsoft 365保護要件に合った�
 
    Contoso 社では、データのレベルに応じた機密ラベルを作成しました。「厳しく規制」のラベルで、暗号化、アクセス許可、透かしなどが含まれます。
 
-4.  オンプレミスのサイトとファイル共有SharePointから新しいサイトにデータをSharePointする
+4. オンプレミスのサイトとファイル共有SharePointから新しいサイトにデータをSharePointする
 
     新しい SharePoint サイトに移行したファイルには、そのサイトに割り当てられた既定の保持ラベルを継承させました。
 
-5.  従業員が新しいドキュメントに対して感度ラベルを使用する方法、新しい SharePoint サイトを作成するときに Contoso IT とやり取りする方法、およびデジタル資産を常に SharePoint サイトに保存する方法をトレーニングする
+5. 従業員が新しいドキュメントに対して感度ラベルを使用する方法、新しい SharePoint サイトを作成するときに Contoso IT とやり取りする方法、およびデジタル資産を常に SharePoint サイトに保存する方法をトレーニングする
 
     ワーカーの情報ストレージの習慣の悪い変更は、多くの場合、クラウドの情報保護移行の最も難しい部分と見なされます。 Contoso IT と管理は、従業員が常にデジタル資産にラベルを付け、クラウドに保存したり、オンプレミスのファイル共有を使用したり、サードパーティのクラウド ストレージ サービスや USB ドライブを使用したりするために必要でした。
 
@@ -76,9 +76,9 @@ Contoso は、次の手順に従って、Microsoft 365保護要件に合った�
 
 Contoso 社は、Exchange Online および SharePoint のロールアウトの一環として、次の一連の条件付きアクセス ポリシーを構成し、適切なグループに適用しました。
 
-- [デバイスで管理されるアプリケーション アクセスと管理されないアプリケーション アクセスのポリシー](../security/defender-365-security/identity-access-policies.md)
-- [Exchange Online アクセス ポリシー](../security/defender-365-security/secure-email-recommended-policies.md)
-- [SharePoint アクセス ポリシー](../security/defender-365-security/sharepoint-file-access-policies.md)
+- [デバイスで管理されるアプリケーション アクセスと管理されないアプリケーション アクセスのポリシー](../security/office-365-security/identity-access-policies.md)
+- [Exchange Online アクセス ポリシー](../security/office-365-security/secure-email-recommended-policies.md)
+- [SharePoint アクセス ポリシー](../security/office-365-security/sharepoint-file-access-policies.md)
 
 情報保護のための Contoso ポリシーのセットを次に示します。
 
@@ -117,7 +117,7 @@ Contoso 社が ID およびアクセス管理、脅威[保護、情報保護、�
 
 ## <a name="see-also"></a>関連項目
 
-[セキュリティ ロードマップ](../security/defender-365-security/security-roadmap.md)
+[セキュリティ ロードマップ](../security/office-365-security/security-roadmap.md)
 
 [Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 

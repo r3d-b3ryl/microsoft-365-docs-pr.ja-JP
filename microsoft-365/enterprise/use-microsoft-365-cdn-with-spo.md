@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: オンライン アセットの配信をOffice 365 Content Delivery Network (CDN) を使用する方法SharePointします。
-ms.openlocfilehash: e6cce93be0e8d893d68ae8bcdb15fde325a2cb59
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: 5e9ed00462b7073c7e03f62a5de6bf26f1e586af
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169558"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289453"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -68,7 +68,7 @@ Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホスト�
   + 各オリジンをパブリックまたはプライベートとして識別するオリジンを追加しました。
 
 セットアップが完了したら、次の方法で時間の[Office 365 CDNを管理](use-microsoft-365-cdn-with-spo.md#CDNManage)できます。
-  
+
 + アセットの追加、更新、および削除
 + 原点の追加と削除
 + ポリシー CDN構成する
@@ -109,9 +109,9 @@ Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホスト�
 また、既存のサイト コレクション、サイト、ライブラリ、またはフォルダーを起点として構成することもできます。コンテナー内のすべての適格なアセットは、CDN。 既存のコンテナーをオリジンとして追加する前に、コンテンツとアクセス許可を認識し、不注意でアセットを匿名アクセスや承認されていないユーザーに公開することが重要です。
 
 作成元の _CDNコンテンツ_ を除外するポリシーを定義CDN。 CDNポリシーは、ファイルの種類やサイト分類などの属性によってパブリックまたはプライベートオリジンのアセットを除外し、ポリシーで指定した CdnType (プライベートまたはパブリック) のすべての配信元に適用されます。 たとえば、複数のサブサイトを含むサイトで構成されるプライベート オリジンを追加する場合は、機密としてマークされたサイトを除外するポリシーを定義して、その分類が適用されたサイトのコンテンツが CDN から提供されません。 ポリシーは、ユーザーに追加 _した_ すべてのプライベートオリジンのコンテンツに適用CDN。
-  
+
 発生元の数が多い場合、要求の処理に必要なサービスの時間に与える影響が大CDN念頭に置いておきます。 可能な限り原点の数を制限することをお勧めします。
-  
+
 <a name="CDNOriginChoosePublicPrivate"> </a>
 ### <a name="choose-whether-each-origin-should-be-public-or-private"></a>各オリジンをパブリックまたはプライベートにするかどうかを選択する
 
@@ -126,7 +126,7 @@ Office 365 CDN 内の **非公開** の元の場所は、SharePoint Online ド�
 プライベート オリジンのアセットへのアクセスCDNの詳細については、「プライベート オリジンでアセットを使用する」[を参照してください](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins)。
 
 #### <a name="attributes-and-advantages-of-hosting-assets-in-public-origins"></a>パブリックオリジンでアセットをホストする属性と利点
-  
+
 + パブリックの配信元で公開されている資産には、すべてのユーザーが匿名でアクセスできます。
     > [!IMPORTANT]
     > ユーザー情報を含むリソースや、組織に機密性が高いと見なされるリソースは、パブリック オリジンに配置しなけれる必要があります。
@@ -160,14 +160,14 @@ Office 365 CDN テナントで使用できる Office 365 CDN、CDN の一般的�
 ### <a name="default-cdn-origins"></a>既定CDN原点
 
 指定しない限り、Office 365を有効にするときに既定の原点を設定Office 365 CDN。 最初にプロビジョニングしない場合は、セットアップの完了後にこれらのオリジンを追加できます。 既定の原点のセットアップをスキップした結果を理解し、その理由を特定しない限り、CDN を有効にするときに作成を許可する必要があります。
-  
+
 既定のプライベート CDN元:
-  
+
 + \*/userphoto.aspx
 + \*/siteassets
 
 既定のパブリック CDN元:
-  
+
 + \*/masterpage
 + \*/style ライブラリ
 + \*/clientsideassets
@@ -178,7 +178,7 @@ Office 365 CDN テナントで使用できる Office 365 CDN、CDN の一般的�
 <a name="CDNSetupinPShell"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a>オンライン管理シェルを使用してOffice 365 CDNを設定SharePoint構成する
 
-このセクションの手順では、オンライン管理シェルの SharePointを使用してオンラインにSharePointします。 手順については、「[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)」を参照してください。
+このセクションの手順では、オンライン管理シェルの SharePointを使用してオンラインにSharePointします。 手順については、「[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
 
 次の手順を実行して、CDN管理シェルを使用して SharePoint Online でアセットをホストSharePoint構成します。
 
@@ -202,7 +202,7 @@ Get-SPOTenantCdnEnabled -CdnType <Public | Private>
 指定した CdnType のCDNの状態が画面に出力されます。
 
 **Set-SPOTenantCdnEnabled** コマンドレットを使用して、組織でこのコマンドレットを使用Office 365 CDN。 組織でパブリックオリジン、プライベートオリジン、または両方を一度に使用できます。 また、既定の原点CDN有効にするときに、既定の原点のセットアップをスキップする方法を構成できます。 このトピックの説明に従って、これらの原点は後でいつでも追加できます。
-  
+
 [オンラインWindows PowerShellのSharePoint] で、次のSharePoint使用します。
 
 ```powershell
@@ -242,7 +242,7 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 
 > [!TIP]
 > **Set-SPOTenantCdnPolicy** コマンドレットを使用してファイルの種類を定義すると、現在定義されているリストが上書きされます。 リストに追加のファイルの種類を追加する場合は、まずコマンドレットを使用して、既に許可されているファイルの種類を確認し、新しいファイルの種類と一緒にリストに含める必要があります。
-  
+
 **Set-SPOTenantCdnPolicy** コマンドレットを使用して、パブリックオリジンとプライベート オリジンでホストできる静的ファイルの種類を定義CDN。 既定では、一般的なアセットの種類 (.css、.gif、.jpg、および.js。
 
 [オンラインWindows PowerShellのSharePoint] で、次のSharePoint使用します。
@@ -303,7 +303,7 @@ _ExcludeIfNoScriptDisabled_ プロパティは、サイト レベルの _NoScrip
 ### <a name="add-an-origin-for-your-assets"></a>アセットのオリジンを追加する
 
 発生元 **を定義するには、Add-SPOTenantCdnOrigin** コマンドレットを使用します。 複数の配信元を定義できます。 配信元は、CDN でホストする資産が含まれる SharePoint ライブラリまたはフォルダーを指す URL です。
-  
+
 > [!IMPORTANT]
 > ユーザー情報を含むリソースや、組織に機密性が高いと見なされるリソースは、パブリック オリジンに配置しなけれる必要があります。
 
@@ -348,14 +348,14 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 
 > [!NOTE]
 > プライベートオリジンでは、オリジンから共有されているアセットにメジャー バージョンが公開されている必要があります。そのアセットは、そのオリジンからアクセスCDN。
-  
+
 コマンドを実行すると、システムはデータセンター全体で構成を同期します。 これには最大 15 分かかる場合があります。
 
 <a name="ExamplePublicOrigin"> </a>
 ### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>例: マスター ページとオンライン用のスタイル ライブラリの公開元をSharePointする
 
 通常、これらの原点は既定で設定されます。既定では、この設定を有効Office 365 CDN。 ただし、手動で有効にする場合は、次の手順を実行します。
-  
+
 + スタイル ライブラリをパブリックオリジンとして定義するには **、Add-SPOTenantCdnOrigin** コマンドレットを使用します。
 
   ```powershell
@@ -400,26 +400,26 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: オンラインのサイト コレクションのプライベートオリジンをSharePointする
 
-**Add-SPOTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 以下に例を示します。
+**Add-SPOTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 次に例を示します。
 
 ```powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
 このコマンドとその構文の詳細については [、「Add-SPOTenantCdnOrigin」を参照してください](/powershell/module/sharepoint-online/Add-SPOTenantCdnOrigin)。
-  
+
 コマンドを実行すると、システムはデータセンター全体で構成を同期します。 構成保留中の _メッセージが_ 表示される場合があります。これは、オンライン テナントが SharePointサービスに接続CDNです。 これには最大 15 分かかる場合があります。
 
 <a name="CDNManage"> </a>
 ### <a name="manage-the-office-365-cdn"></a>サーバーを管理Office 365 CDN
 
 このセクションで説明するように、CDNを設定したら、コンテンツを更新したり、必要に応じて変更を加えたりして、構成を変更できます。
-  
+
 <a name="Office365CDNforSPOaddremoveasset"> </a>
 #### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>アセットを追加、更新、または削除Office 365 CDN
 
 セットアップ手順が完了したら、新しいアセットを追加し、必要に従って既存のアセットを更新または削除できます。 作成元として識別したフォルダーまたはSharePointアセットに変更を加えるだけ。 新しいアセットを追加した場合は、すぐに新しいアセットをCDNできます。 ただし、アセットを更新した場合、新しいコピーが反映され、新しいコピーが使用できるまで最大で 15 分かかりますCDN。
-  
+
 オリジンの場所を取得する必要がある場合は **、Get-SPOTenantCdnOrigins コマンドレットを使用** できます。 このコマンドレットの使用方法については [、「Get-SPOTenantCdnOrigins」を参照してください](/powershell/module/sharepoint-online/Get-SPOTenantCdnOrigins)。
 
 <a name="Office365CDNforSPORemoveOriginPosh"> </a>
@@ -442,7 +442,7 @@ Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 #### <a name="disable-the-office-365-cdn"></a>サーバーを無効Office 365 CDN
 
 **Set-SPOTenantCdnEnabled** コマンドレットを使用して、組織のCDNを無効にします。 パブリック オリジンとプライベート オリジンの両方が CDNに対して有効になっている場合は、次の例に示すように、コマンドレットを 2 回実行する必要があります。
-  
+
 パブリック オリジンの使用を無効にするには、CDNコマンドを入力します。
 
 ```powershell
@@ -486,7 +486,7 @@ Get-PnPTenantCdnEnabled -CdnType <Public | Private>
 指定した CdnType のCDNの状態が画面に出力されます。
 
 **Set-PnPTenantCdnEnabled** コマンドレットを使用して、組織でこのコマンドレットを使用Office 365 CDN。 組織でパブリックオリジン、プライベートオリジン、または両方を同時に使用できます。 また、既定の原点CDN有効にするときに、既定の原点のセットアップをスキップする方法を構成できます。 このトピックの説明に従って、これらの原点は後でいつでも追加できます。
-  
+
 PnP PowerShell の場合:
 
 ```powershell
@@ -526,7 +526,7 @@ Set-PnPTenantCdnEnabled -CdnType Private -Enable $true
 
 > [!TIP]
 > **Set-PnPTenantCdnPolicy** コマンドレットを使用してファイルの種類を定義すると、現在定義されているリストが上書きされます。 リストに追加のファイルの種類を追加する場合は、まずコマンドレットを使用して、既に許可されているファイルの種類を確認し、新しいファイルの種類と一緒にリストに含める必要があります。
-  
+
 **Set-PnPTenantCdnPolicy** コマンドレットを使用して、パブリックオリジンとプライベート オリジンでホストできる静的ファイルの種類を定義CDN。 既定では、一般的なアセットの種類 (.css、.gif、.jpg、および.js。
 
 PnP PowerShell の場合:
@@ -586,7 +586,7 @@ _ExcludeIfNoScriptDisabled_ プロパティは、サイト レベルの _NoScrip
 ### <a name="add-an-origin-for-your-assets"></a>アセットのオリジンを追加する
 
 発生元 **を定義するには、Add-PnPTenantCdnOrigin** コマンドレットを使用します。 複数の配信元を定義できます。 配信元は、CDN でホストする資産が含まれる SharePoint ライブラリまたはフォルダーを指す URL です。
-  
+
 > [!IMPORTANT]
 > ユーザー情報を含むリソースや、組織に機密性が高いと見なされるリソースは、パブリック オリジンに配置しなけれる必要があります。
 
@@ -631,14 +631,14 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 
 > [!NOTE]
 > プライベートオリジンでは、オリジンから共有されているアセットにメジャー バージョンが公開されている必要があります。そのアセットは、そのオリジンからアクセスCDN。
-  
+
 コマンドを実行すると、システムはデータセンター全体で構成を同期します。 これには最大 15 分かかる場合があります。
 
 <a name="ExamplePublicOriginPnPPosh"> </a>
 ### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>例: マスター ページとオンライン用のスタイル ライブラリの公開元をSharePointする
 
 通常、これらの原点は既定で設定されます。既定では、この設定を有効Office 365 CDN。 ただし、手動で有効にする場合は、次の手順を実行します。
-  
+
 + スタイル ライブラリをパブリックオリジンとして定義するには **、Add-PnPTenantCdnOrigin** コマンドレットを使用します。
 
   ```powershell
@@ -683,26 +683,26 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: オンラインのサイト コレクションのプライベートオリジンをSharePointする
 
-**Add-PnPTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 以下に例を示します。
+**Add-PnPTenantCdnOrigin** コマンドレットを使用して、サイト コレクションをプライベートオリジンとして定義します。 次に例を示します。
 
 ```powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
 このコマンドとその構文の詳細については [、「Add-PnPTenantCdnOrigin」を参照してください](/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)。
-  
+
 コマンドを実行すると、システムはデータセンター全体で構成を同期します。 構成保留中の _メッセージが_ 表示される場合があります。これは、オンライン テナントが SharePointサービスに接続CDNです。 これには最大 15 分かかる場合があります。
 
 <a name="CDNManagePnPPosh"> </a>
 ### <a name="manage-the-office-365-cdn"></a>サーバーを管理Office 365 CDN
 
 このセクションで説明するように、CDNを設定したら、コンテンツを更新したり、必要に応じて変更を加えたりして、構成を変更できます。
-  
+
 <a name="Office365CDNforSPOaddremoveassetPnPPosh"> </a>
 #### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>アセットを追加、更新、または削除Office 365 CDN
 
 セットアップ手順が完了したら、新しいアセットを追加し、必要に従って既存のアセットを更新または削除できます。 作成元として識別したフォルダーまたはSharePointアセットに変更を加えるだけ。 新しいアセットを追加した場合は、すぐに新しいアセットをCDNできます。 ただし、アセットを更新した場合、新しいコピーが反映され、新しいコピーが使用できるまで最大で 15 分かかりますCDN。
-  
+
 オリジンの場所を取得する必要がある場合は **、Get-PnPTenantCdnOrigin コマンドレットを使用** できます。 このコマンドレットの使用方法については [、「Get-PnPTenantCdnOrigin」を参照してください](/powershell/module/sharepoint-pnp/get-pnptenantcdnorigin)。
 
 <a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
@@ -725,7 +725,7 @@ Remove-PnPTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 #### <a name="disable-the-office-365-cdn"></a>サーバーを無効Office 365 CDN
 
 **Set-PnPTenantCdnEnabled** コマンドレットを使用して、組織のCDNを無効にします。 パブリック オリジンとプライベート オリジンの両方が CDNに対して有効になっている場合は、次の例に示すように、コマンドレットを 2 回実行する必要があります。
-  
+
 パブリック オリジンの使用を無効にするには、CDNコマンドを入力します。
 
 ```powershell
@@ -882,7 +882,7 @@ spo cdn set --type Public --enabled false
 クライアント側 Web パーツをホストするために CDN を使用する方法については、「Office 365 CDN からクライアント側 Web パーツをホストする (Hello World Part [4)](/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)」を参照してください。
 
 > [!NOTE]
-> _ClientSideAssets_ フォルダーをプライベート CDNリストに追加すると、CDNホストされたカスタム Web パーツはレンダリングに失敗します。 SPFX Web パーツで使用されるファイルはパブリック CDN のみを使用し、ClientSideAssets フォルダーはパブリック サーバーの既定のCDN。 
+> _ClientSideAssets_ フォルダーをプライベート CDNリストに追加すると、CDNホストされたカスタム Web パーツはレンダリングに失敗します。 SPFX Web パーツで使用されるファイルはパブリック CDN のみを使用し、ClientSideAssets フォルダーはパブリック サーバーの既定のCDN。
 
 ### <a name="updating-links-to-cdn-assets"></a>アセットへのリンクCDNする
 
@@ -963,7 +963,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 プライベート オリジン内のアセットへのアクセスは、Office 365 CDN Online によって生成されたトークンSharePointされます。 作成元によって指定されたフォルダーまたはライブラリへのアクセス許可を既に持っているユーザーには、アクセス許可レベルに基づいてユーザーがファイルにアクセスできるトークンが自動的に付与されます。 これらのアクセス トークンは、トークン再生攻撃を防止するために生成された後、30 ~ 90 分間有効です。
 
-アクセス トークンが生成されると、SharePoint Online は、2 つの承認パラメーターを含む _クライアントにカスタム_ URI (エッジ承認トークン) と _oat_ (オリジン認証トークン) を返します。 各トークンの構造は _、epoch<_ のセキュリティで保護された署名の>__<の有効期限>。 以下に例を示します。
+アクセス トークンが生成されると、SharePoint Online は、2 つの承認パラメーターを含む _クライアントにカスタム_ URI (エッジ承認トークン) と _oat_ (オリジン認証トークン) を返します。 各トークンの構造は _、epoch<_ のセキュリティで保護された署名の>__<の有効期限>。 次に例を示します。
 
 ```http
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -976,7 +976,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 重要な点は、SharePoint Online がプライベートオリジンのアセットに対するアイテム レベルのアクセス許可をサポートしていない点に注意してください。 たとえば、場所にあるファイルの場合、ユーザーは次の条件に従って `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` ファイルに効果的にアクセスできます。
 
-|ユーザー  |アクセス許可  |有効なアクセス  |
+|User  |アクセス許可  |有効なアクセス  |
 |---------|---------|---------|
 |ユーザー 1     |フォルダー 1 へのアクセス権を持つ         |サーバーからimage1.jpgアクセスCDN         |
 |ユーザー 2     |folder1 にアクセスできない         |サーバーからimage1.jpgにアクセスCDN         |
@@ -1043,7 +1043,7 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 
 オンライン管理シェル PowerShell モジュールまたは Office 365 CDN CLIを使用して、SharePointを使用Office 365 **できます**。
 
-+ [SharePoint Online 管理シェルの使用を開始する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
++ [SharePoint Online 管理シェルの使用を開始する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 + [Office 365 CLI のインストール](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
 ## <a name="see-also"></a>関連項目

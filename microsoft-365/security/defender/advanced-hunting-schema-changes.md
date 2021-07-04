@@ -1,7 +1,7 @@
 ---
-title: Defender の高度なMicrosoft 365スキーマの名前付け変更
+title: 高度なハンティング スキーマMicrosoft 365 Defender名前付けの変更
 description: 高度な検索スキーマの名前付け変更テーブルと列を追跡および確認する
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、data、名前付け変更、名前の変更
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、data、名前付け変更、名前の変更
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 9406653a2d16c83f974e2a0ce7597b5c4f833252
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470498"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289501"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高度な検索スキーマ - 名前付けの変更
 
@@ -43,7 +43,7 @@ ms.locfileid: "52470498"
 - API を使用して実行されるクエリ
 - セキュリティ センター外の別の場所に保存されるクエリ
 
-## <a name="december-2020"></a>2020 年 12 月
+## <a name="december-2020"></a>2020年12月
 
 | テーブル名 | 元の列名 | 新しい列名 | 変更の理由
 |--|--|--|--|
@@ -55,22 +55,22 @@ ms.locfileid: "52470498"
 
 | 列名 | 元の値の名前 | 新しい値の名前 | 変更の理由
 |--|--|--|--|
-| `DetectionSource` | MCAS |    Microsoft Cloud App Security | リブランド |
-| `DetectionSource` | WindowsDefenderAtp|   EDR| リブランド |
+| `DetectionSource` | MCAS | Microsoft Cloud App Security | リブランド |
+| `DetectionSource` | WindowsDefenderAtp| EDR| リブランド |
 | `DetectionSource` | WindowsDefenderAv | ウイルス対策 | リブランド |
 | `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | リブランド |
-| `DetectionSource` | CustomerTI |  カスタム TI | リブランド |
+| `DetectionSource` | CustomerTI | カスタム TI | リブランド |
 | `DetectionSource` | OfficeATP | Microsoft Defender for Office 365 | リブランド |
-| `DetectionSource` | MTP   | Microsoft 365 Defender | リブランド |
-| `DetectionSource` | AzureATP |    Microsoft Defender for Identity | リブランド |
-| `DetectionSource` | CustomDetection   | カスタム検出 | リブランド |
+| `DetectionSource` | MTP | Microsoft 365 Defender | リブランド |
+| `DetectionSource` | AzureATP | Microsoft Defender for Identity | リブランド |
+| `DetectionSource` | CustomDetection | カスタム検出 | リブランド |
 | `DetectionSource` | AutomatedInvestigation |自動調査 | リブランド |
 | `DetectionSource` | ThreatExperts | Microsoft 脅威エキスパート | リブランド |
 | `DetectionSource` | サードパーティ TI | サードパーティ製センサー | リブランド |
 | `ServiceSource` | Microsoft Defender ATP| Microsoft Defender for Endpoint | リブランド |
-|`ServiceSource` |Microsoft Threat Protection   | Microsoft 365 Defender | リブランド |
-| `ServiceSource` | Office 365 ATP  |Microsoft Defender for Office 365 | リブランド |
-| `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | リブランド |
+|`ServiceSource` |Microsoft Threat Protection | Microsoft 365 Defender | リブランド |
+| `ServiceSource` | Office 365 ATP |Microsoft Defender for Office 365 | リブランド |
+| `ServiceSource` |Azure ATP |Microsoft Defender for Identity | リブランド |
 
 `DetectionSource` は [AlertInfo テーブルで使用](advanced-hunting-alertinfo-table.md) できます。 `ServiceSource` は [、AlertEvidence テーブルと](advanced-hunting-alertevidence-table.md) [AlertInfo テーブルで使用](advanced-hunting-alertinfo-table.md) できます。 
 

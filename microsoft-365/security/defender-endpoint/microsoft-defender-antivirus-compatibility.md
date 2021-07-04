@@ -16,12 +16,12 @@ ms.reviewer: tewchen, pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 05/08/2021
-ms.openlocfilehash: e4675626e9debf3ef3a295f7c797ac254e82395f
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
-ms.translationtype: HT
+ms.openlocfilehash: f03fab3f296f98b448693c6a5d0886f409201703
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926021"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288481"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender ウイルス対策互換性
 
@@ -79,7 +79,7 @@ Microsoft Defender ウイルス対策は自動的に有効になり、Windows 10
 - 値: `1`
 
 > [!NOTE]
-> パッシブ モードは、Windows Server 2016 ではサポートされていません。 `ForcePassiveMode` レジストリ キーは、Windows Server バージョン 1803 以降、または Windows Server 2019 で使用できますが、Windows Server 2016 では使用できません。 
+> パッシブ モードは、Windows Server 2016 ではサポートされていません。 `ForceDefenderPassiveMode` レジストリ キーは、Windows Server バージョン 1803 以降、または Windows Server 2019 で使用できますが、Windows Server 2016 では使用できません。 
 
 (<a id="fn2">2</a>) Windows Server 2016 では、Microsoft 以外のウイルス対策製品を使用している場合、パッシブ モードまたはアクティブ モードで Microsoft Defender ウイルス対策を実行することはできません。 このような場合、[Microsoft Defender ウイルス対策を手動で無効/アンインストール](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016) して、サーバーに複数のウイルス対策製品がインストールされることによる問題を防ぎます。
 
@@ -103,9 +103,9 @@ Windows Server インストールの主な相違点と管理オプションに�
 |:---|:---|:---|:---|:---|
 | [リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md) と [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) | はい | いいえ <sup>[[3](#fn3)]<sup> | いいえ | いいえ |
 | [限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | いいえ | いいえ | いいえ | はい |
-| [スキャン中ファイルと検出情報](customize-run-review-remediate-scans-microsoft-defender-antivirus.md) | はい | はい | 必要 | いいえ |
+| [スキャン中ファイルと検出情報](customize-run-review-remediate-scans-microsoft-defender-antivirus.md) | はい | はい | はい | いいえ |
 |  [脅威の修復](configure-remediation-microsoft-defender-antivirus.md) | はい | メモ <sup>[[4](#fn4)]<sup> を参照します | 必要 | いいえ |
-| [セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md) | はい | はい | 必要 | いいえ |
+| [セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md) | はい | はい | はい | いいえ |
 
 (<a id="fn3">3</a>) 一般に、Microsoft Defender ウイルス対策がパッシブ モードの場合、リアルタイム保護でブロックや強制が有効になっておりパッシブ モードでもブロックや強制ができません。 
 

@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1935533ad924b7589bdfee6f3119fb667fb60b73
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c44993337a6b14dc2fa131de906c5fc6bde28fac
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841512"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289045"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開 
+# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,20 +32,22 @@ ms.locfileid: "52841512"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 登録されているデバイスで Android に Defender for Endpoint を展開するIntune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「デバイスの登録  [」を参照してください](/mem/intune/user-help/enroll-device-android-company-portal)。
 
 > [!NOTE]
-> **Android 上のエンドポイントの Defender が Google Play で [利用できる](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br>
-> Intune から Google Play に接続して、デバイス管理者モードと Android ネットワーク モードで Defender for Endpoint アプリを展開Enterpriseできます。
-アプリの更新は、Google Play 経由で自動的に行います。
+> **Android 上のエンドポイントの Defender が Google Play で [利用できる](https://play.google.com/store/apps/details?id=com.microsoft.scmx)**
+>
+> Intune から Google Play に接続して、デバイス管理者と Android ユーザー登録モード全体に Defender for Endpoint アプリを展開Enterpriseできます。
+>
+> アプリの更新は、Google Play 経由で自動的に行います。
 
 ## <a name="deploy-on-device-administrator-enrolled-devices"></a>デバイス管理者が登録したデバイスに展開する
 
 **デバイス管理者が登録したデバイスで Android Intune ポータル サイト Defender for Endpoint を展開する**
 
-Android に Defender for Endpoint を展開する方法について、Intune ポータル サイトデバイス管理者が登録したデバイスについて説明します。 
+Android に Defender for Endpoint を展開する方法について、Intune ポータル サイトデバイス管理者が登録したデバイスについて説明します。
 
 ### <a name="add-as-android-store-app"></a>Android ストア アプリとして追加する
 
@@ -53,21 +55,21 @@ Android に Defender for Endpoint を展開する方法について、Intune ポ
 
    ![管理センターのMicrosoft エンドポイント マネージャー Android ストア アプリケーションを追加する](images/mda-addandroidstoreapp.png)
 
-2. [アプリの **追加] ページで** 、[アプリ情報] *セクションに次の情報* を入力します。 
+2. [アプリの **追加] ページで** 、[アプリ情報] *セクションに次の情報* を入力します。
 
-   - **名前** 
+   - **名前**
    - **説明**
    - **Publisher** Microsoft として設定します。
-   - **アプリ ストア URL as** https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint app Google Play ストア URL) 
+   - **アプリ ストア URL as** https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint app Google Play ストア URL)
 
-   その他のフィールドはオプションです。 [**次へ**] を選択します。
+   その他のフィールドはオプションです。 **[次へ]** を選択します。
 
    ![管理センターのMicrosoft エンドポイント マネージャーアプリ情報を追加する](images/mda-addappinfo.png)
 
 3. [割り *当て] セクション* で、[必須] セクションに移動 **し** 、[グループの追加] **を選択します。** その後、Android アプリで Defender for Endpoint をターゲットとするユーザー グループを選択できます。 [選択 **] と [** 次へ] の順 **に選択します**。
 
-    >[!NOTE]
-    >選択したユーザー グループは、Intune に登録されたユーザーで構成する必要があります。
+    > [!NOTE]
+    > 選択したユーザー グループは、Intune に登録されたユーザーで構成する必要があります。
 
     > [!div class="mx-imgBorder"]
 
@@ -126,7 +128,7 @@ Intune でサポートされる登録オプションの詳細については、�
 
     ![Defender for Endpoint プレビュー アプリ承認のスクリーンショット](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
 
-5. [承認の設定] ページが表示されます。 このページでは、Android 上の Defender for Endpoint が要求する可能性がある新しいアプリのアクセス許可を処理する設定が確認されます。 選択肢を確認し、希望するオプションを選択します。 [**完了**] を選択します。
+5. [承認の設定] ページが表示されます。 このページでは、Android 上の Defender for Endpoint が要求する可能性がある新しいアプリのアクセス許可を処理する設定が確認されます。 選択肢を確認し、希望するオプションを選択します。 **[完了]** を選択します。
 
     既定では、[アプリが新しいアクセス許可を要求するときに承認済みの状態を維持する] を *選択します。*
 
@@ -154,12 +156,12 @@ Intune でサポートされる登録オプションの詳細については、�
        ![管理センター android Microsoft エンドポイント マネージャーデバイスのイメージ](images/android-mem.png)
 
     1. [アプリ構成 **ポリシーの作成] ページ** で、次の詳細を入力します。
-    
+
         - 名前: エンドポイント用 Microsoft Defender。
         - [**プラットフォームとして Android Enterprise]** を選択します。
         - [プロファイル **の種類] として [作業プロファイル** のみ] を選択します。
-        - [**アプリの選択] を** クリックし、[Microsoft Defender ATP]**を選択** し **、[OK] を選択し、[次** へ] を **選択します**。
-    
+        - [アプリ **の選択] を** クリックし **、[Microsoft Defender ATP] を選択** し **、[OK] を選択し、[次** へ] を **選択します**。
+
         > [!div class="mx-imgBorder"]
         > ![アプリ構成ポリシーの作成ページのイメージ](images/android-create-app.png)
 
@@ -168,7 +170,7 @@ Intune でサポートされる登録オプションの詳細については、�
        - 外部ストレージ (読み取り)
        - 外部ストレージ (書き込み)
 
-       次に **[OK]** を選択します。
+       次に [**OK**] を選びます。
 
        > [!div class="mx-imgBorder"]
       > ![Android 作成アプリ構成ポリシーのイメージ](images/android-create-app-config.png)
@@ -178,63 +180,72 @@ Intune でサポートされる登録オプションの詳細については、�
        > [!div class="mx-imgBorder"]
        > ![Android 自動付与アプリ構成ポリシーの作成のイメージ](images/android-auto-grant.png)
 
-    1. [割 **り当て]** ページで、このアプリ構成ポリシーを割り当てるユーザー グループを選択します。 [グループ **の選択] をクリック** して、該当するグループを含め、選択し、[次へ] を **選択します**。  ここで選択したグループは、通常、エンドポイント Android アプリ用 Microsoft Defender を割り当てるのと同じグループです。 
+    1. [割 **り当て]** ページで、このアプリ構成ポリシーを割り当てるユーザー グループを選択します。 [グループ **の選択] をクリック** して、該当するグループを含め、選択し、[次へ] を **選択します**。  ここで選択したグループは、通常、エンドポイント Android アプリ用 Microsoft Defender を割り当てるのと同じグループです。
 
        > [!div class="mx-imgBorder"]
        > ![アプリ構成ポリシーの作成のイメージ](images/android-select-group.png)
-    
 
-     1. 次に **表示される [確認と作成** ] ページで、すべての情報を確認し、[作成] を **選択します**。 <br>
-    
+    1. 次に **表示される [確認と作成** ] ページで、すべての情報を確認し、[作成] を **選択します**。 <br>
+
         ストレージアクセス許可を自動指定する Defender for Endpoint のアプリ構成ポリシーが、選択したユーザー グループに割り当てられます。
 
         > [!div class="mx-imgBorder"]
         > ![Android レビュー作成アプリ構成ポリシーのイメージ](images/android-review-create.png)
 
-
-10. [**プロパティMicrosoft Defender ATP** 編集] の一覧で [アプリ \>  \> **の設定] を** \> **選択します**。
+10. [**プロパティの割り当ての** 編集] の一覧で [Microsoft Defender ATP \>  \> **アプリ] を** \> **選択します**。
 
     ![アプリの一覧の画像](images/mda-properties.png)
-
 
 11. アプリを必須アプリとして *ユーザー* グループに割り当てる。 デバイスの次回の同期中に、アプリを使用して作業プロファイルに自動的ポータル サイトされます。 この割り当ては、[必須]セクション [グループの追加] に移動し、ユーザー グループを選択して [選択 \> ] をクリックすることで **実行できます**。
 
     > [!div class="mx-imgBorder"]
     > ![アプリケーションの編集ページのイメージ](images/ea06643280075f16265a596fb9a96042.png)
 
-
 12. [アプリケーション **の編集] ページ** で、上記で入力した情報を確認します。 次に、[ **確認] + [保存] の** 順に選択し **、[保存] を** 再度選択して割り当てを開始します。
 
-### <a name="auto-setup-of-always-on-vpn"></a>Always-on VPN の自動セットアップ 
-Defender for Endpoint は、Intune 経由で管理対象デバイスのデバイス構成ポリシーをサポートします。 この機能は、Android Enterprise 登録済みデバイス上の **Always-on VPN** の自動セットアップに利用できます。そのため、エンド ユーザーはオンボーディング中に VPN サービスをセットアップする必要がなされません。
-1.  [**デバイス]** で、[**構成プロファイルプロファイル** の作成] Android Enterpriseデバイス登録の種類に基づいて、次のいずれかの [デバイス制限  >    >    >  の選択] を選択します。 
-- **完全管理、専用、および作業Corporate-Ownedプロファイル**
-- **個人所有の作業プロファイル**
+### <a name="auto-setup-of-always-on-vpn"></a>Always-on VPN の自動セットアップ
 
-[**作成**] を選択します。
- 
+Defender for Endpoint は、Intune 経由で管理対象デバイスのデバイス構成ポリシーをサポートします。 この機能は、Android Enterprise 登録済みデバイス上の **Always-on VPN** の自動セットアップに利用できます。そのため、エンド ユーザーはオンボーディング中に VPN サービスをセットアップする必要がなされません。
+
+1. [**デバイス] で**、[**構成プロファイル] [**  >  **プロファイル プラットフォームの**  >    >  **作成] Android Enterprise**
+
+   デバイス **登録の種類に** 基づいて、[次のいずれかのデバイス制限] を選択します。
+   - **完全管理、専用、および作業Corporate-Ownedプロファイル**
+   - **個人所有の作業プロファイル**
+
+   **[作成]** を選択します。
+
    > ![デバイス構成プロファイルのイメージ作成](images/1autosetupofvpn.png)
-    
-2. **構成設定** 構成プロファイル **を一** 意 **に識別するための名前** と説明を指定します。 
+
+2. **構成設定** 構成プロファイル **を一** 意 **に識別するための名前** と説明を指定します。
 
    > ![デバイス構成プロファイルのイメージ 名前と説明](images/2autosetupofvpn.png)
-   
- 3. [接続 **] を選択し** 、VPN を構成します。
-- 作業 **プロファイルで Always-on VPN** Setup a VPN クライアントを有効にして、可能な限り VPN に自動的に接続して再接続します。 特定のデバイス上の常時接続 VPN 用に構成できる VPN クライアントは 1 つのみです。そのため、1 つのデバイスに展開する常時接続 VPN ポリシーは 1 つ以下にしてください。 
-- [VPN **クライアント** のカスタム] ドロップダウン リスト [カスタム VPN] を選択します。この場合、Web 保護機能を提供するために使用される Defender for Endpoint VPN です。 
-    > [!NOTE]
-    > この VPN の自動セットアップを機能するには、Microsoft Defender for Endpoint アプリをユーザーのデバイスにインストールする必要があります。
 
-- Google Play **ストアで** Microsoft Defender for Endpoint アプリのパッケージ ID を入力します。 Defender アプリの URL https://play.google.com/store/apps/details?id=com.microsoft.scmx の場合、パッケージ ID は **com.microsoft.scmx です**。  
-- **ロックダウン モード** 構成されていません (既定) 
+3. [接続 **] を選択し** 、VPN を構成します。
+   - **Always-on VPN を有効にする**
+
+   作業プロファイルで VPN クライアントをセットアップして、可能な限り VPN に自動的に接続して再接続します。 特定のデバイス上の常時接続 VPN 用に構成できる VPN クライアントは 1 つのみです。そのため、1 つのデバイスに展開する常時接続 VPN ポリシーは 1 つ以下にしてください。
+
+   - [VPN **クライアントの** カスタム] ドロップダウン リストを選択する
+
+   この場合のカスタム VPN は Defender for Endpoint VPN で、Web Protection 機能を提供するために使用されます。
+
+   > [!NOTE]
+   > この VPN の自動セットアップを機能するには、Microsoft Defender for Endpoint アプリをユーザーのデバイスにインストールする必要があります。
+
+   - Google Play **ストアで** Microsoft Defender for Endpoint アプリのパッケージ ID を入力します。 Defender アプリの URL <https://play.google.com/store/apps/details?id=com.microsoft.scmx> の場合、パッケージ ID は **com.microsoft.scmx です**。
+   - **ロックダウン モード** 構成されていません (既定)
 
      ![デバイス構成プロファイルのイメージで Always-on VPN を有効にする](images/3autosetupofvpn.png)
-   
-4. **割り当て**[割  **り当て]** ページで、このアプリ構成ポリシーを割り当てる   ユーザー グループを選択します。 [グループ **の選択]** をクリックして、該当するグループを含め、選択し、[次へ] を **クリックします**。 ここで選択したグループは、通常、エンドポイント Android アプリ用 Microsoft Defender を割り当てるのと同じグループです。 
+
+4. **割り当て**
+
+   [割 **り当て]** ページで、このアプリ構成ポリシーを割り当てる   ユーザー グループを選択します。 [グループ **の選択]** をクリックして、該当するグループを含め、選択し、[次へ] を **クリックします**。 ここで選択したグループは、通常、エンドポイント Android アプリ用 Microsoft Defender を割り当てるのと同じグループです。
 
      ![デバイス構成プロファイル割り当てのイメージ](images/4autosetupofvpn.png)
 
-5. 次に **表示される [確認と作成** ] ページで、すべての情報を確認し、[作成] を **選択します**。 これで、デバイス構成プロファイルが選択したユーザー グループに割り当てられます。    
+5. 次に **表示される [確認と作成** ] ページで、すべての情報を確認し、[作成] を **選択します**。
+これで、デバイス構成プロファイルが選択したユーザー グループに割り当てられます。
 
     ![デバイス構成プロファイルのイメージ レビューと作成](images/5autosetupofvpn.png)
 
@@ -244,7 +255,6 @@ Defender for Endpoint は、Intune 経由で管理対象デバイスのデバイ
 
     > [!div class="mx-imgBorder"]
     > ![デバイスのインストール状態のイメージ](images/900c0197aa59f9b7abd762ab2b32e80c.png)
-
 
 2. デバイスで、作業プロファイルにアクセスしてオンボーディングの状態を **検証できます**。 Defender for Endpoint が使用可能で、個人用所有のデバイスに仕事用プロファイルが登録 **されているのを確認します**。  企業所有の完全に管理されたユーザー デバイスに登録されている場合は、デバイス上に 1 つのプロファイルが作成され、Defender for Endpoint が使用可能なと確認できます。
 
@@ -258,7 +268,7 @@ Defender for Endpoint は、Intune 経由で管理対象デバイスのデバイ
 
     ![エンドポイント ポータル用 Microsoft Defender のイメージ](images/9fe378a1dce0f143005c3aa53d8c4f51.png)
 
-
 ## <a name="related-topics"></a>関連項目
+
 - [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
 - [Android 機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)

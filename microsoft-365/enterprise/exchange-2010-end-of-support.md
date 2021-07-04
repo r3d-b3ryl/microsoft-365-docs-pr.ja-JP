@@ -12,12 +12,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 はサポートの終了に達しました。 この計画ロードマップを使用して、Exchange Onlineまたは新しいバージョンのExchange Server準備します。
-ms.openlocfilehash: f3531802283368e533ba6646415d4acc019687bd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bbc7fb83537621a47a866bf0ca129a38e21f055e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926996"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289129"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 のサポート終了のロードマップ
 
@@ -40,7 +40,7 @@ Exchange Server 2010 年 10 月 **13** 日にサポートが終了しました�
 
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-オプションを確認し、移行計画を準備する最適な時期です。 以下のことを実行できます。
+オプションを確認し、移行計画を準備する最適な時期です。 次の操作を行うことができます:
 
 - 完全に移行してMicrosoft 365。 カットオーバー、最小限のハイブリッド、または完全なハイブリッド移行を使用してメールボックスを移行します。 次に、オンプレミスのサーバー Exchange Active Directory を削除します。
 - オンプレミス サーバー Exchange 2010 Exchange 2016 に移行します。
@@ -81,17 +81,23 @@ Microsoft 365機能とエクスペリエンスを最初に取得し、組織が�
 ### <a name="how-should-i-migrate-to-microsoft-365"></a>ユーザーに移行するMicrosoft 365?
 
 組織によっては、組織にアクセスするためのオプションがいくつかMicrosoft 365。 まず、次のようないくつかの点を考慮する必要があります。
+
 - 移動する必要があるシートまたはメールボックスの数。
 - 移行を実行する期間。
 - 移行中に、オンプレミスのインストールとサーバー間のシームレスな統合が必要Microsoft 365かどうか。
- 
+
 次の表に、移行オプションと、使用する方法を決定する最も重要な要素を示します。
 
-|移行オプション|組織のサイズ|Duration|
+<br>
+
+****
+
+|移行オプション|組織のサイズ|期間|
 |---|---|---|
 |カットオーバー移行|シート数が 150 未満|1 週間以下|
 |最小限のハイブリッド移行|シート数が 150 未満|数週間以下|
 |完全なハイブリッド移行|150 席以上|数週間以上|
+|
 
 次のセクションでは、これらのメソッドの概要を説明します。 詳細については、「移行パスを [決定する」を参照してください](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27)。
 
@@ -173,6 +179,10 @@ Microsoft 365機能とエクスペリエンスを最初に取得し、組織が�
 
 Exchange 2016 には、以前のリリースのすべての機能が含Exchange。 この機能は、Microsoft 365で使用できるエクスペリエンスと最も密接に一致しますが、一部の機能はMicrosoft 365。 不足しているいくつかの情報を確認してください。
 
+<br>
+
+****
+
 |Exchangeリリース|機能|
 |---|---|
 |**Exchange 2013**|簡略化されたアーキテクチャでは、サーバーの役割の数を 3 に減らします (メールボックス、クライアント アクセス、エッジ トランスポート)|
@@ -183,24 +193,29 @@ Exchange 2016 には、以前のリリースのすべての機能が含Exchange�
 ||DLP の強化と、データの統合SharePoint|
 ||データベースの復元性の向上|
 ||オンライン ドキュメントの共同作業|
+|
+
+<br>
+
+****
 
 |考慮事項|詳細情報|
 |---|---|
-|サポート終了日|2010 Exchangeと同様に、各バージョンExchangeサポート終了日が設定されています。<br/><br/>Exchange 2013 - 2023 年 4 月<br/>Exchange 2016 - 2025 年 10 月<br/><br/>サポート終了日より早く、別の移行を実行する必要があります。 2023 年 4 月は、思ったよりずっと近いです。|
-|2013 Exchange 2016 への移行パス|2010 Exchange から新しいバージョンへの移行パスは、2013 年または 2016 年Exchange選択Exchangeです。<br/><br/>2013 Exchange 2016 を既存の 2010 組織Exchangeインストールします。<br/>サービスおよび他のインフラストラクチャを 2013 または 2016 Exchangeに移動します。<br/>メールボックスとパブリック フォルダーを 2013 または 2016 Exchange 2010 サーバーの残りの使用停止Exchange移動します。|
+|サポート終了日|2010 Exchangeと同様に、各バージョンExchangeサポート終了日が設定されています。 <p> Exchange 2013 - 2023 年 4 月 <p> Exchange 2016 - 2025 年 10 月 <p> サポート終了日より早く、別の移行を実行する必要があります。 2023 年 4 月は、思ったよりずっと近いです。|
+|2013 Exchange 2016 への移行パス|2010 Exchange から新しいバージョンへの移行パスは、2013 年または 2016 年Exchange選択Exchangeです。 <p> 2013 Exchange 2016 を既存の 2010 組織Exchangeインストールします。 <p> サービスおよび他のインフラストラクチャを 2013 または 2016 Exchangeに移動します。 <p> メールボックスとパブリック フォルダーを 2013 または 2016 Exchange 2010 サーバーの残りの使用停止Exchange移動します。|
 |バージョンの共存|Exchange 2013 または Exchange 2016 に移行する場合は、いずれかのバージョンを既存の 2010 組織Exchangeできます。 これにより、2013 または 2013 または 2016 Exchange 1 つ以上のサーバーをインストールExchange移行を実行できます。|
-|サーバー ハードウェア|サーバーのハードウェア要件が 2010 年Exchangeされています。 ハードウェアが互換性を持つかどうかを確認します。 各バージョンのハードウェア要件の詳細については、こちらを参照してください。<br/><br/>[Exchange 2016 のシステム要件](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016)<br/>[Exchange 2013 のシステム要件](/Exchange/exchange-2013-system-requirements-exchange-2013-help)<br/><br/>Exchange のパフォーマンスが大幅に向上し、新しいサーバーの処理能力とストレージ容量が増えたので、同じ数のメールボックスをサポートするために必要なサーバーが少なくなっている可能性があります。|
-|オペレーティング システムのバージョン|各バージョンでサポートされるオペレーティング システムの最小バージョンは次のとおりです。<br/><br/>Exchange 2016 - Windows Server 2012<br/>Exchange 2013 - Windows Server 2008 R2 SP1<br/><br/>オペレーティング システムのサポートに関する詳細については、「サポートExchange[マトリックス」を参照してください](/exchange/plan-and-deploy/supportability-matrix)。|
-|Active Directory フォレストの機能レベル|各バージョンでサポートされる Active Directory フォレストの最小機能レベルは次のとおりです。<br/><br/>Exchange 2016 - Windows Server 2008 R2 SP1<br/>Exchange 2013 - Windows Server 2003<br/><br/>フォレストの機能レベルのサポートに関する詳細については、「サポートExchange[マトリックス」を参照してください](/exchange/plan-and-deploy/supportability-matrix)。|
-|Officeのバージョン|各バージョンでサポートOfficeの最小バージョンは次のとおりです。<br/><br/>Exchange 2016 - Office 2010 (最新の更新プログラム付き)<br/>Exchange 2013 - Office 2007 SP3<br/><br/>クライアント サポートの詳細については、「サポートOfficeマトリックス」[をExchange参照してください](/exchange/plan-and-deploy/supportability-matrix)。||| 
-
+|サーバー ハードウェア|サーバーのハードウェア要件が 2010 年Exchangeされています。 ハードウェアが互換性を持つかどうかを確認します。 各バージョンのハードウェア要件の詳細については、こちらを参照してください。 <p> [Exchange 2016 のシステム要件](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) <p> [Exchange 2013 のシステム要件](/Exchange/exchange-2013-system-requirements-exchange-2013-help) <p> Exchange のパフォーマンスが大幅に向上し、新しいサーバーの処理能力とストレージ容量が増えたので、同じ数のメールボックスをサポートするために必要なサーバーが少なくなっている可能性があります。|
+|オペレーティング システムのバージョン|各バージョンでサポートされるオペレーティング システムの最小バージョンは次のとおりです。 <p> Exchange 2016 - Windows Server 2012 <p> Exchange 2013 - Windows Server 2008 R2 SP1 <p> オペレーティング システムのサポートに関する詳細については、「サポートExchange[マトリックス」を参照してください](/exchange/plan-and-deploy/supportability-matrix)。|
+|Active Directory フォレストの機能レベル|各バージョンでサポートされる Active Directory フォレストの最小機能レベルは次のとおりです。 <p> Exchange 2016 - Windows Server 2008 R2 SP1 <p> Exchange 2013 - Windows Server 2003 <p> フォレストの機能レベルのサポートに関する詳細については、「サポートExchange[マトリックス」を参照してください](/exchange/plan-and-deploy/supportability-matrix)。|
+|Officeのバージョン|各バージョンでサポートOfficeの最小バージョンは次のとおりです。 <p> Exchange 2016 - Office 2010 (最新の更新プログラム付き) <p> Exchange 2013 - Office 2007 SP3 <p> クライアント サポートの詳細については、「サポートOfficeマトリックス」[をExchange参照してください](/exchange/plan-and-deploy/supportability-matrix)。|
+|
 
 移行を支援するには、次のリソースを使用します。
 
 - [Exchange展開アシスタント](/exchange/exchange-deployment-assistant)
-- [2016 、2013 年 2016](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016)Exchange Active Directory スキーマ[の変更](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
-- [2016 年 2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016)Exchange [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)年のシステム要件
-- [2016 年 2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016)Exchange [2013](/Exchange/exchange-2013-prerequisites-exchange-2013-help)年の前提条件
+- [2016 、2013 年 2016](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016&preserve-view=true)Exchange Active Directory スキーマ[の変更](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
+- [2016 年 2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true)Exchange [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)年のシステム要件
+- [2016 年 2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016&preserve-view=true)Exchange [2013](/Exchange/exchange-2013-prerequisites-exchange-2013-help)年の前提条件
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>2010 クライアントとサーバー Office 7 のオプションWindows概要
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: コンテンツの書式設定時にテキスト変数と結合フィールド変数を変更するには、コミュニケーション エディターを使用します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6dcfb58dff3a3acf99340895872bb2da9795d9c8
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 26076ff82ba226c2993c7c40e36bca2e08cbf683
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769162"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288121"
 ---
 # <a name="use-the-communications-editor"></a>通信エディターを使用する
 
@@ -40,11 +40,15 @@ ms.locfileid: "49769162"
 
 ### <a name="list-of-merge-field-variables"></a>差し込みフィールド変数の一覧
 
-| フィールド名                  | フィールドの詳細 |
-| :------------------- | :------------------- |
-| 表示名  | カストディアンの名と名。 | 
-| 受信確認リンク | 各保管担当者の確認を記録するカスタマイズされたリンク。|                 |
-| ポータル リンク     | 保管担当者のコンプライアンス ポータルのカスタマイズされたリンク。|                |
-| 発行責任者                   | 指定された発行担当者の電子メール アドレス。|                   |
-| 発行日                   | 通知が発行された日付 (UTC)。              |
-|||
+<br>
+
+****
+
+|フィールド名|フィールドの詳細|
+|---|---|
+|表示名|カストディアンの名と名。|
+|受信確認リンク|各保管担当者の確認を記録するカスタマイズされたリンク。|
+|ポータル リンク|保管担当者のコンプライアンス ポータルのカスタマイズされたリンク。|
+|発行責任者|指定された発行担当者の電子メール アドレス。|
+|発行日|通知が発行された日付 (UTC)。|
+|

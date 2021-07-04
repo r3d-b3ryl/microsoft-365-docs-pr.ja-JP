@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8a2a3f83995bf4248b2cb72a848a1def83ae9c50
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: d70bb133904a7bcc9c30721d3f723b0fd8b88512
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203270"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287965"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージド デスクトップのテクノロジ
 
@@ -28,17 +28,17 @@ Microsoft 365 Enterpriseユーザーには、ライセンスのMicrosoft マネ�
 この記事では、必要な Enterprise ライセンスに含まれるコンポーネントの概要と、サービスが各コンポーネントをデバイスでどのように使用Microsoft マネージド デスクトップします。 各領域の特定の役割と責任については、各ドキュメントMicrosoft マネージド デスクトップされています。 
 
 ## <a name="office-365-e3-or-e5"></a>Office 365 E3 E5
+
 | 製品 |情報 |
 --- |--- 
 Microsoft 365 Apps for enterprise (64 ビット) | これらのOfficeアプリケーションは、Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、OneNote に同梱されます。<br><br>64 ビット版のフル バージョンの Microsoft Project Microsoft Visioは含まれていません。 ただし、これらのアプリケーションのインストールは Microsoft 365 Apps for enterprise インストールに依存しますので、Microsoft マネージド デスクトップ は既定の Microsoft Intune 展開とセキュリティ グループを作成し、これらのアプリケーションをライセンスユーザーに展開するために使用できます。 詳細については、「デバイスにインストール[するMicrosoft Projectまたは Microsoft Visio」をMicrosoft マネージド デスクトップしてください](../get-started/project-visio.md)。
 OneDrive |Azure Active Directoryシングル サインオンは、ユーザーが最初にユーザーにサインインするときに有効OneDrive。<br><br>"Desktop"、"Document"、"Pictures" フォルダーの既知のフォルダー リダイレクトが含まれています。を有効にし、Microsoft マネージド デスクトップ。
-ストア アプリ |    Microsoft Sway と Power BIデバイスには同梱されません。 これらのアプリは、アプリからダウンロードMicrosoft Store。
-Win32 アプリケーション |    Teamsはデバイスに同梱されませんが、Microsoft によってパッケージ化され、デバイスにMicrosoft マネージド デスクトップされます。 Azure Information Protection Client はデバイスに同梱されませんが、展開用にパッケージ化できます。
-Web アプリケーション |  Yammer、Office、Delve、Flow、StaffHub、PowerApps、Planner はデバイスに同梱されません。 ユーザーは、ブラウザーを使用してこれらのアプリケーションの Web バージョンにアクセスできます。
-
-
+ストア アプリ | Microsoft Sway と Power BIデバイスには同梱されません。 これらのアプリは、アプリからダウンロードMicrosoft Store。
+Win32 アプリケーション | Teamsはデバイスに同梱されませんが、Microsoft によってパッケージ化され、デバイスにMicrosoft マネージド デスクトップされます。 Azure Information Protection Client はデバイスに同梱されませんが、展開用にパッケージ化できます。
+Web アプリケーション | Yammer、Office、Delve、Flow、StaffHub、PowerApps、Planner はデバイスに同梱されません。 ユーザーは、ブラウザーを使用してこれらのアプリケーションの Web バージョンにアクセスできます。
 
 ## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Enterpriseエンドポイント用 Microsoft Defender を使用した E5 または E3
+
 IT 管理者が次の設定を構成することをお勧めします。 これらの設定は、アプリの一部として含めMicrosoft マネージド デスクトップ。
 
 製品  |情報
@@ -47,11 +47,10 @@ Windows Hello for Business | パスワードをデバイスWindows Hello強力�
 アプリケーションの仮想化 | Intune Win32 アプリ管理クライアントを使用して、アプリケーション仮想化 (App-V) パッケージを展開できます。 詳細については [、「Application Virtualization 」を参照してください](/windows/application-management/app-v/appv-technical-reference)。
 Microsoft 365データ損失防止 | 機密と判断したMicrosoft 365に対して実行されているアクションを監視し、それらのアイテムが意図せずに共有されるのを防ぐために、データ損失防止を実装する必要があります。 詳細については、「データ損失[防止Microsoft 365を参照してください](../../compliance/endpoint-dlp-learn-about.md)。
 
-
 次に示す機能は、次の機能の一Microsoft マネージド デスクトップ。
 
 製品 |情報
---- |--- 
+--- |---
 BitLocker ドライブの暗号化 | BitLocker ドライブの暗号化は、すべてのシステム ドライブを暗号化するために使用されます。 詳細については [、「BitLocker ドライブの暗号化」を参照してください](/windows/security/information-protection/bitlocker/bitlocker-overview)。
 Windows DefenderSystem Guard | 起動時にシステムの整合性を保護し、システムの整合性が本当に維持されたと検証します。 詳細については、「System [Guard のWindows Defenderを参照してください](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
 Windows Defender Credential Guard | Windows DefenderCredential Guard は仮想化ベースのセキュリティを使用してシークレットを分離し、特権のあるシステム ソフトウェアだけがアクセスできます。 詳細については、「System [Guard のWindows Defenderを参照してください](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
@@ -72,8 +71,8 @@ Windows Defender高度なセキュリティを備えファイアウォール | �
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + SecurityE5
 
-製品 |情報 
+製品 |情報
  --- | ---
-Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    MDM デバイスの管理には、Enterprise Mobility + Security E3機能を使用できます。 この機能は、Azure Active Directory Premium P2オプション機能として使用Microsoft マネージド デスクトップ。
-Microsoft Cloud App Security |  このオプション機能は、このオプション機能とMicrosoft マネージド デスクトップ。
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 | MDM デバイスの管理には、Enterprise Mobility + Security E3機能を使用できます。 この機能は、Azure Active Directory Premium P2オプション機能として使用Microsoft マネージド デスクトップ。
+Microsoft Cloud App Security | このオプション機能は、このオプション機能とMicrosoft マネージド デスクトップ。
 Azure Information Protection P2  | このオプション機能は、このオプション機能とMicrosoft マネージド デスクトップ。

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 3f9899726838caca678542e17206dae038c39a3d
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: 33db334ecf977b351ac963107c647c7eff414cc0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169570"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288889"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 と Office 365 展開ラボ キット
 
@@ -34,71 +34,71 @@ ms.locfileid: "53169570"
 
 このキットでは、ドメインに参加しているデスクトップ クライアント、ドメイン コントローラー、インターネット ゲートウェイ、完全に構成された Configuration Manager インスタンスなど、自動的にプロビジョニングされた仮想ラボ環境が提供されます。 このキットには、次の製品の最新の評価バージョンが含まれています。
 
-  - 新機能 Windows 10 Enterpriseバージョン 21H1
-  - Windows 7 Enterprise
-  - 新機能! Microsoft Endpoint Configuration Managerバージョン 2103
-  - Windows 10 用 Windows アセスメント & デプロイメント キット
-  - Microsoft Deployment Toolkit
-  - Microsoft Application Virtualization (App-V)
-  - Microsoft BitLocker Administration and Monitoring 
-  - Windows Server 
-  - Microsoft SQL Server 
+- 新機能 Windows 10 Enterpriseバージョン 21H1
+- Windows 7 Enterprise
+- 新機能! Microsoft Endpoint Configuration Managerバージョン 2103
+- Windows 10 用 Windows アセスメント & デプロイメント キット
+- Microsoft Deployment Toolkit
+- Microsoft Application Virtualization (App-V)
+- Microsoft BitLocker Administration and Monitoring
+- Windows Server
+- Microsoft SQL Server
 
-結果のラボは、次の試験に接続するように設計されています。 
+結果のラボは、次の試験に接続するように設計されています。
 
-  - Microsoft 365 E5
-  - Microsoft 365 Apps for enterprise
-  - Office 365 E5 Enterprise Mobility + Security (EMS)
+- Microsoft 365 E5
+- Microsoft 365 Apps for enterprise
+- Office 365 E5 Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>ステップ バイ ステップ ラボ
 
-詳細なラボのガイドにより、複数の展開および管理シナリオを体験できます。 最新バージョンの Intune と Configuration Manager 用にラボは更新されました。 
+詳細なラボのガイドにより、複数の展開および管理シナリオを体験できます。 最新バージョンの Intune と Configuration Manager 用にラボは更新されました。
 
-### <a name="plan-and-prepare-infrastructure"></a>インフラストラクチャの計画と準備 
+### <a name="plan-and-prepare-infrastructure"></a>インフラストラクチャの計画と準備
 
-- Desktop Analytics 
-- クラウド管理ゲートウェイ &クラウド配布ポイント 
+- Desktop Analytics
+- クラウド管理ゲートウェイ &クラウド配布ポイント
 - 新機能 テナントの接続と共同管理
-- 新機能 エンドポイント分析 
-- リモート アクセス (VPN) 
+- 新機能 エンドポイント分析
+- リモート アクセス (VPN)
 
-### <a name="prepare-configuration"></a>構成の準備   
+### <a name="prepare-configuration"></a>構成の準備
 
-- 更新Windows 10の最適化   
+- 更新Windows 10の最適化
 - グループ ポリシー Windows 10サービス サービス
-- サービス Windows 10を使用Microsoft Intune   
-- Configuration Manager Windows 10サービス サービス   
-- Configuration Manager をMicrosoft 365 Apps for enterpriseサービス サービス   
-- Intune をMicrosoft 365 Apps for enterpriseサービスサービス  
-- セキュリティとコンプライアンス   
+- サービス Windows 10を使用Microsoft Intune
+- Configuration Manager Windows 10サービス サービス
+- Configuration Manager をMicrosoft 365 Apps for enterpriseサービス サービス
+- Intune をMicrosoft 365 Apps for enterpriseサービスサービス
+- セキュリティとコンプライアンス
 
-### <a name="prepare-applications"></a>アプリケーションの準備    
+### <a name="prepare-applications"></a>アプリケーションの準備
 
-- ユーザーのToolkit準備Office  
-- MSIX のパッケージ化と Win32 アプリケーションの変換   
+- ユーザーのToolkit準備Office
+- MSIX のパッケージ化と Win32 アプリケーションの変換
 
-### <a name="deploy-windows-10"></a>Windows 10 の展開   
+### <a name="deploy-windows-10"></a>Windows 10 の展開
 
 - Configuration Manager の OS 展開タスク シーケンス
 - Microsoft Deployment Toolkit (MDT) の OS 展開タスク シーケンス
 - Windows Autopilot
-- 新しいサーバーを展開して管理Microsoft Edge  
+- 新しいサーバーを展開して管理Microsoft Edge
 
-### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise を展開する    
+### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise を展開する
 
-- クラウド管理の展開  
-- ローカルで管理された展開    
-- Microsoft 365 Apps for enterprise非参加デバイスAD展開 
+- クラウド管理の展開
+- ローカルで管理された展開
+- Microsoft 365 Apps for enterprise非参加デバイスAD展開
 - Enterpriseを使用した管理展開の管理
-- Enterpriseを使用した管理展開Microsoft Intune  
+- Enterpriseを使用した管理展開Microsoft Intune
 - LOB の展開と管理とMicrosoft Intune
 - 展開Microsoft Teams
-- 新機能 割り当てフィルター  
+- 新機能 割り当てフィルター
 
-### <a name="deploy-windows-virtual-desktop"></a>仮想Windowsを展開する  
+### <a name="deploy-windows-virtual-desktop"></a>仮想Windowsを展開する
 
 - 準備、展開、最適化
- 
+
 ## <a name="where-to-find-the-windows-10-and-office-365-deployment-lab-kit"></a>展開ラボ キットWindows 10 Office 365場所
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
@@ -108,16 +108,16 @@ ms.locfileid: "53169570"
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 
-  - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](https://www.aka.ms/watchhowtoshift)
-  - [Microsoft Endpoint Configuration Manager OS の展開](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
-  - [Windows 10 の展開計画](/windows/deployment/planning/index)
-  - [Microsoft 365 アプリの展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)
-  - [Intune が会社のためにできることとは。](/intune/get-started-evaluation)
+- [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](https://www.aka.ms/watchhowtoshift)
+- [Microsoft Endpoint Configuration Manager OS の展開](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
+- [Windows 10 の展開計画](/windows/deployment/planning/index)
+- [Microsoft 365 アプリの展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Intune が会社のためにできることとは。](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>関連リソース
 
-  - [Microsoft 365 の概要](https://www.microsoft.com/microsoft-365/default.aspx)
-  - [Office 365 for business](https://products.office.com/business/office)
-  - [Enterprise Mobility + Security の概要](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-  - [大企業向け Windows 10](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-  - [中小企業向け Windows 10](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+- [Microsoft 365 の概要](https://www.microsoft.com/microsoft-365/default.aspx)
+- [Office 365 for business](https://products.office.com/business/office)
+- [Enterprise Mobility + Security の概要](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+- [大企業向け Windows 10](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
+- [中小企業向け Windows 10](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)

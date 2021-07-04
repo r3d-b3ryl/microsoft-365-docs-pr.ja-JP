@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6cd82e66a0b01f4cd329d846cf43581759dec0b6
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228461"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288133"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -281,7 +281,7 @@ Outlookと更新プログラム:
 - [インサイダー リスク ソリューションの新しいランディング ページ](insider-risk-solution-overview.md)。 ソリューションが軽減に役立つリスク、ライセンス要件、展開シーケンス、アーキテクチャの図、トレーニング リソースなどについて詳細に説明します。
 - 各インサイダー リスク ソリューションの新しい概要記事。 各ソリューションについて学び、計画し、展開し、管理するのに役立つ記事へのガイダンスとリンク。
   - [通信コンプライアンス](communication-compliance-solution-overview.md)
-  - [インサイダー リスクの管理](insider-risk-management-solution-overview.md)
+  - [Insider リスク管理](insider-risk-management-solution-overview.md)
   - [情報障壁](information-barriers-solution-overview.md)
   - [特権アクセスの管理](privileged-access-management-solution-overview.md)
 

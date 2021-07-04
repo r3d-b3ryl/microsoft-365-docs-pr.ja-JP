@@ -20,20 +20,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: この記事では、PowerShell を使用してオンライン ユーザー Microsoft 365、SharePointサイトを管理する方法について説明します。
-ms.openlocfilehash: cc977355f1182b18d2f2e90b573683ed69299c1c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 823c5fdc9af178a2e8ea8f0ca4c63fbfa4673dd8
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916728"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289057"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>PowerShell を使用して SharePoint Online のユーザーとグループを管理する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-ユーザー アカウントまたはグループのSharePointリストを操作し、簡単に管理する方法が必要なオンライン管理者の場合は、PowerShell を Microsoft 365 に使用できます。 
+ユーザー アカウントまたはグループのSharePointリストを操作し、簡単に管理する方法が必要なオンライン管理者の場合は、PowerShell を Microsoft 365 に使用できます。
 
-開始する前に、このトピックの手順では、オンラインからオンラインに接続SharePointがあります。 手順については、「オンライン[PowerShell ConnectをSharePointする」を参照してください。](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+開始する前に、このトピックの手順では、オンラインからオンラインに接続SharePointがあります。 手順については、「オンライン[PowerShell ConnectをSharePointする」を参照してください。](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>サイト、グループ、ユーザーの一覧を取得する
 
@@ -115,6 +115,7 @@ $group = "<group name name, such as Auditors>"
 $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
+
 アクセス許可レベルなどのグループ プロパティは、コマンドレットを使用して後で更新 `Set-SPOSiteGroup` できます。
 
 たとえば、Contoso テナントの contosotest サイト コレクションに View Only アクセス許可を持つ Auditors グループを追加します。
@@ -131,7 +132,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 場合によっては、あるサイトまたはすべてのサイトからユーザーを削除する必要があります。たとえば、従業員がある部署から別の部署に異動した場合や、退職した場合などが該当します。対象の従業員が 1 人のみの場合は UI で簡単に削除できますが、部署全体をあるサイトから別のサイトに移動する場合は容易ではありません。
 
-ただし、オンライン管理シェルSharePoint CSV ファイルを使用すると、高速かつ簡単に実行できます。 このタスクでは、まず、Windows PowerShell を使用して、サイト コレクションのセキュリティ グループから 1 人のユーザーを削除します。 次に、CSV ファイルを使用して、複数の異なるサイトから多数のユーザーを削除します。 
+ただし、オンライン管理シェルSharePoint CSV ファイルを使用すると、高速かつ簡単に実行できます。 このタスクでは、まず、Windows PowerShell を使用して、サイト コレクションのセキュリティ グループから 1 人のユーザーを削除します。 次に、CSV ファイルを使用して、複数の異なるサイトから多数のユーザーを削除します。
 
 'Remove-SPOUser' コマンドレットを使用して、サイト コレクション グループから 1 人の Microsoft 365 ユーザーを削除し、コマンド構文を確認します。 以下に、構文の一例を示します。
 
@@ -142,6 +143,7 @@ $user = "<user account name, such as opalc>"
 $group = "<group name name, such as Auditors>"
 Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
+
 たとえば、contoso テナントの contosotest サイト コレクション内のサイト コレクション Auditors グループから Bobby Overby を削除します。
 
 ```powershell
@@ -167,7 +169,7 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 多数のアカウントを SharePoint サイトに追加してアクセス許可を付与するには、Microsoft 365 管理センター、個々の PowerShell コマンド、または PowerShell に CSV ファイルを使用できます。 これらの選択肢の中では、CSV ファイルがこのタスクを自動化する最も簡単な方法になります。
 
-基本的なプロセスは、CSV を作成し、ヘッダー (列) を Windows PowerShell スクリプトに必要なパラメーターに対応させることです。 このようなリストは、ファイル内で簡単に作成Excel CSV ファイルとしてエクスポートできます。 次に、Windows PowerShellスクリプトを使用して CSV ファイル内のレコード (行) を反復処理し、ユーザーをグループに追加し、グループをサイトに追加します。 
+基本的なプロセスは、CSV を作成し、ヘッダー (列) を Windows PowerShell スクリプトに必要なパラメーターに対応させることです。 このようなリストは、ファイル内で簡単に作成Excel CSV ファイルとしてエクスポートできます。 次に、Windows PowerShellスクリプトを使用して CSV ファイル内のレコード (行) を反復処理し、ユーザーをグループに追加し、グループをサイトに追加します。
 
 たとえば、サイト コレクション、グループ、およびアクセス許可のグループを定義する CSV ファイルを作成します。 次に、グループにユーザーを取り込むための CSV ファイルを作成します。 最後に、グループを作成してユーザーを取り込む単純な Windows PowerShell スクリプトを作成して実行します。
 
@@ -275,13 +277,13 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 ```
 
 このレポートはかなり単純ですが、コードを追加すれば、より具体的なレポートや、その他の詳細情報が含まれるレポートを作成できます。 ただし、これにより、オンライン管理シェルを使用してオンライン環境SharePointユーザーを管理する方法SharePointがあります。
-   
+
 ## <a name="see-also"></a>関連項目
 
-[SharePoint Online PowerShell に接続する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[SharePoint Online PowerShell に接続する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 [PowerShell を使用して SharePoint Online を管理する](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 [PowerShell で Microsoft 365を管理する](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
+
 [Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-microsoft-365-powershell.md)

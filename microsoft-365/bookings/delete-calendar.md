@@ -8,20 +8,20 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
-description: 管理センターまたはMicrosoft 365を使用して、Windows PowerShellカレンダーを削除します。
-ms.openlocfilehash: 21fc7b9994ffd7f76ed04000a50bd0ee8f7f167e
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+description: '[予約] Microsoft 365 管理センターまたはWindows PowerShellを使用して、予約カレンダーを削除します。'
+ms.openlocfilehash: 1ef67ce4dbf67da6f081106815f76ff85f11ef92
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034093"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288445"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Bookings で予約カレンダーを削除する
 
-この記事では、不要な予約カレンダーを削除する方法について説明します。 予約カレンダーは、管理センターのMicrosoft 365削除するか、PowerShell を使用できます。 Bookings 予定表は、予約Exchange Online削除するために、対応するユーザー アカウントを削除するメールボックスです。
+この記事では、不要な予約カレンダーを削除する方法について説明します。 予約カレンダーを削除するには、Microsoft 365 管理センター PowerShell を使用します。 Bookings 予定表は、予約Exchange Online削除するために、対応するユーザー アカウントを削除するメールボックスです。
 
 > [!IMPORTANT]
-> 2017 以前に作成した予約カレンダーはすべて、このトピックの PowerShell の手順を使用して削除する必要があります。 2018 以降で作成された予約カレンダーはすべて、管理センター Microsoft 365できます。
+> 2017 以前に作成した予約カレンダーはすべて、このトピックの PowerShell の手順を使用して削除する必要があります。 2018 以降で作成された予約カレンダーはすべて、このページでMicrosoft 365 管理センター。
 
 予約カレンダーには、その予約カレンダーとデータに関するすべての関連情報が保存されます。以下を含む。
 
@@ -32,21 +32,21 @@ ms.locfileid: "51034093"
 > [!WARNING]
 > 予約カレンダーが削除された後、この追加情報も完全に削除され、回復できません。
 
-## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>管理センターで予約カレンダーをMicrosoft 365する
+## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>アカウントで予約カレンダーを削除Microsoft 365 管理センター
 
 1. Microsoft 365 管理センターに移動します。
 
 1. 管理センターで、[ **ユーザー** ] を選択します。
 
-   ![管理センターのユーザー UI Microsoft 365イメージ](../media/bookings-admin-center-users.png)
+   ![[ユーザーの UI のイメージ] Microsoft 365 管理センター](../media/bookings-admin-center-users.png)
 
 1. [ **アクティブ ユーザー**] ページで、削除するユーザー名を選択して、[ **ユーザーの削除**] を選択します。
 
-   ![管理センターでのユーザー UI のMicrosoft 365イメージ](../media/bookings-delete-user.png)
+   ![[ユーザーの削除] UI のMicrosoft 365 管理センター](../media/bookings-delete-user.png)
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>PowerShell を使用して予約カレンダー Exchange Onlineする
 
-PowerShell Connect接続Exchange Onlineの前提条件とガイダンスについては[、「PowerShell](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps)を使用する方法Exchange Online参照してください。
+PowerShell Connect接続Exchange Onlineの前提条件とガイダンスについては[、「PowerShell](/powershell/exchange/exchange-online-powershell-v2)を使用する方法Exchange Online参照してください。
 
 これらの手順を実行するには、[管理者として実行] オプションを選択して実行したアクティブな Microsoft PowerShell コマンド ウィンドウを使用している必要があります。
 
@@ -57,7 +57,7 @@ PowerShell Connect接続Exchange Onlineの前提条件とガイダンスにつ�
    ```
 
    > [!NOTE]
-   > すでに、[EXO V2 モジュールをインストール](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)している場合は、前のコマンドは表示のとおり機能します。
+   > すでに、[EXO V2 モジュールをインストール](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)している場合は、前のコマンドは表示のとおり機能します。
    
 2. 実行する必要があるコマンドでは、次の構文を使用します。
 

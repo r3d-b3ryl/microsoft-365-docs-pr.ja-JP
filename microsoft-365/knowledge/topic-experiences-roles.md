@@ -14,29 +14,30 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: ビバ トピックのユーザー ロールについて説明します。
-ms.openlocfilehash: e91eda6807634ad27bf6c15c2dd0d1c9434ce299
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 9f1d3667ee9eeb05201613c15dc360b2b006cecb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222769"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288073"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Microsoft Viva トピックのロール 
 
 特定の環境で Viva Topics をMicrosoft 365、ユーザーは次の役割を果たします。
--   トピック閲覧者
--   トピック投稿者
--   知識マネージャー
--   知識管理者
+
+- トピック閲覧者
+- トピック投稿者
+- 知識マネージャー
+- 知識管理者
 
 ## <a name="topic-viewer"></a>トピック閲覧者
 
-トピック ビューアーとは、SharePoint モダン サイト、microsoft Search から SharePoint および Office.com、トピック センターで強調表示されたトピックを表示できる組織内のユーザーです。 トピックページでトピックの詳細を表示できます。 
+トピック ビューアーとは、SharePoint モダン サイト、Microsoft Search Office から SharePoint.com、およびトピック センターで強調表示されたトピックを表示できる組織内のユーザーです。 トピックページでトピックの詳細を表示できます。 
 
 トピックを強調表示し、トピック ページをトピック ビューアーに表示するには、以下を行う必要があります:
--   [管理者が Viva Topics ライセンス](./set-up-topic-experiences.md#assign-licenses)を割り当Microsoft 365します。
--   トピックへの閲覧権を取得する。 このタスクは、管理センターの [ビバ トピックの設定] ページのMicrosoft 365します。
 
+- [管理者が Viva Topics ライセンス](./set-up-topic-experiences.md#assign-licenses)を割り当Microsoft 365します。
+- トピックへの閲覧権を取得する。 このタスクは、サポート技術情報の [ビバ トピックの設定] ページのナレッジ管理者Microsoft 365 管理センター。
 
 ## <a name="topic-contributors"></a>トピック共同作成者
 
@@ -48,40 +49,38 @@ ms.locfileid: "51222769"
 
 トピックを作成して編集するには、次の条件を実行する必要があります。
 
--   [管理者が Viva Topics ライセンス](./set-up-topic-experiences.md#assign-licenses)を割り当Microsoft 365します。
--   [トピックを作成および編集するためのアクセス許可を割り当てる](./topic-experiences-user-permissions.md)。 このタスクは、管理センターの [ビバ トピックの設定] ページのMicrosoft 365します。
+- [管理者が Viva Topics ライセンス](./set-up-topic-experiences.md#assign-licenses)を割り当Microsoft 365します。
+- [トピックを作成および編集するためのアクセス許可を割り当てる](./topic-experiences-user-permissions.md)。 このタスクは、サポート技術情報の [ビバ トピックの設定] ページのナレッジ管理者Microsoft 365 管理センター。
 
 ## <a name="knowledge-managers"></a>知識マネージャー
 
 知識マネージャーとは、組織内のトピックを管理するユーザーのことです。  トピック管理は、トピック センターの [トピック管理] ページで行われ、知識マネージャーにのみ表示されます。
 
 [トピック管理] ページでは、知識マネージャーは次のタスクを実行できます:
--   AI が提案するトピックを表示できます。
--   トピックを確認して、有効なトピックを確認します。
--   ユーザーに表示しないトピックを削除します。
+
+- AI が提案するトピックを表示できます。
+- トピックを確認して、有効なトピックを確認します。
+- ユーザーに表示しないトピックを削除します。
 
 さらに、知識マネージャーは既存のトピックを編集したり、新しいトピックを作成することができます。
 
 トピックを管理するには、次の情報を使用する必要があります。
--   [管理者が Viva Topics ライセンス](./set-up-topic-experiences.md#assign-licenses)を割り当Microsoft 365します。
--   [トピックを管理するためのアクセス許可を割り当てる](./topic-experiences-user-permissions.md))。 このタスクは、管理センターの [ビバ トピックの設定] ページのMicrosoft 365します。
+
+- [管理者が Viva Topics ライセンス](./set-up-topic-experiences.md#assign-licenses)を割り当Microsoft 365します。
+- [トピックを管理するためのアクセス許可を割り当てる](./topic-experiences-user-permissions.md))。 このタスクは、サポート技術情報の [ビバ トピックの設定] ページのナレッジ管理者Microsoft 365 管理センター。
 
 ビジネスに関する全体的な知識が豊富なユーザーは、ナレッジ マネージャーの役割に優れた候補者になる可能性があります。 そのような人は、トピックが有効かどうか知る知識を持っているだけでなく、それらのトピックに関連する企業内の人々も知っている可能性があります。
 
-
 ## <a name="knowledge-admins"></a>ナレッジ管理者
 
-ナレッジ管理者は、特定の環境でビバ トピックを設定および構成するMicrosoft 365です。 セットアップが完了した後で、ビバ トピックの設定も管理します。 ナレッジ管理者の役割では、Microsoft 365管理センターでセットアップとSharePointが行われるので、グローバル管理者または管理者Microsoft 365必要があります。
+ナレッジ管理者は、特定の環境でビバ トピックを設定および構成するMicrosoft 365です。 セットアップが完了した後で、ビバ トピックの設定も管理します。 ナレッジ管理者の役割では、セットアップと管理がMicrosoft 365完了SharePoint、グローバル管理者または管理者である必要Microsoft 365 管理センター。
 セットアップ中に、ナレッジ管理者は次の設定を行うビバ トピックを構成できます。
 
--   トピックをクロールする SharePoint サイトを選択できます。
--   トピックを表示できるライセンス所有者を選択できます (トピック閲覧者)。
--   特定できないトピックを選択できます。
--   トピックを作成して編集できるライセンス所有者 (トピック共同作成者) を選択できます。
--   トピックを管理できるライセンス所有者 (知識マネージャー) を選択できます。
--   トピック センターに名前を付けます。
+- トピックをクロールする SharePoint サイトを選択できます。
+- トピックを表示できるライセンス所有者を選択できます (トピック閲覧者)。
+- 特定できないトピックを選択できます。
+- トピックを作成して編集できるライセンス所有者 (トピック共同作成者) を選択できます。
+- トピックを管理できるライセンス所有者 (知識マネージャー) を選択できます。
+- トピック センターに名前を付けます。
 
 知識マネージャーは、組織内のすべての Viva トピック関係者と協力できるようにその構成方法を理解する必要があります。 たとえば、新しいプロジェクトに機密情報がある場合は、SharePoint サイトがトピックに対してクロールされないか、特定のトピック名を除外する必要がある場合に、ナレッジ マネージャーに通知する必要があります。
-
-
-## <a name="see-also"></a>関連項目

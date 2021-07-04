@@ -11,8 +11,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid:
 - MOE150
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c4d4958c03bee7301465c16fef2cd4ff8adb1722
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246399"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288457"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Secure Score を使用してセキュリティの態勢を評価する
 
@@ -36,9 +35,9 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 必要な情報を迅速に見つけるために、Microsoft の改善アクションはグループに整理されています。
 
-* ID (Azure Active Directoryアカウント&ロール)
-* デバイス (Microsoft Defender for Endpoint, 既知 [の Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-* アプリ (電子メールアプリとクラウド アプリ (Office 365 Microsoft Cloud App Security)
+- ID (Azure Active Directoryアカウント&ロール)
+- デバイス (Microsoft Defender for Endpoint, 既知 [の Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+- アプリ (電子メールアプリとクラウド アプリ (Office 365 Microsoft Cloud App Security)
 
 >[!NOTE]
 >Microsoft Secure Score の最近のリリースでは、スコア付けモデルが改善され、Microsoft Secure Score が一時的に Identity Secure Score および Graph API と互換性がありません。 [詳細の表示](microsoft-secure-score-whats-new.md)

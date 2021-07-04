@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c935df1abddc3d0ebee74e09280d6e3ec961ca97
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: df1a032ffab0490c41edc7d282f0f2cc60608870
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769811"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289681"
 ---
 # <a name="alert-resource-type"></a>アラート リソースの種類
 
@@ -42,7 +42,7 @@ ms.locfileid: "52769811"
 メソッド |戻り値の型 |説明
 :---|:---|:---
 [警告の取得](get-alert-info-by-id.md) | [アラート](alerts.md) | 1 つのアラート [オブジェクトを取得](alerts.md) します。
-[アラートの一覧表示](get-alerts.md) | [アラート](alerts.md) コレクション | アラート [コレクションを一覧表示](alerts.md) します。
+[警告の一覧表示](get-alerts.md) | [アラート](alerts.md) コレクション | アラート [コレクションを一覧表示](alerts.md) します。
 [警告の更新](update-alert.md) | [アラート](alerts.md) | 特定のアラートを [更新します](alerts.md)。
 [バッチ更新の通知](batch-update-alerts.md) | | アラートのバッチを更新 [します](alerts.md)。
 [アラートの作成](create-alert-by-reference.md)|[アラート](alerts.md)|Advanced Hunting から取得したイベント データに基づいてアラート [を作成します](run-advanced-query-api.md)。
@@ -51,7 +51,6 @@ ms.locfileid: "52769811"
 [関連する IPs の一覧](get-alert-related-ip-info.md) | IP コレクション | アラートに関連付けられているリストの AP。
 [関連するコンピューターを取得する](get-alert-related-machine-info.md) | [マシン](machine.md) | アラート [に](machine.md) 関連付けられている [コンピューター](alerts.md)。
 [関連ユーザーの取得](get-alert-related-user-info.md) | [ユーザー](user.md) | アラート [に](user.md) 関連付けられている [ユーザー](alerts.md)。
-
 
 ## <a name="properties"></a>プロパティ
 

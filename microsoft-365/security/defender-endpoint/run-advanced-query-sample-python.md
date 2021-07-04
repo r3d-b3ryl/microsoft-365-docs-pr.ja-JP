@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 17ad28121935adfc958629f7999311c11a8d784e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7ee431c88430916fcba60266a3a3a5180d830c0d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771449"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289261"
 ---
 # <a name="advanced-hunting-using-python"></a>Python を使用した高度な追求
 
@@ -30,7 +30,7 @@ ms.locfileid: "52771449"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,14 +40,13 @@ Python を使用して高度なクエリを実行するには [、「Advanced Hu
 
 このセクションでは、Python サンプルを共有してトークンを取得し、それを使用してクエリを実行します。
 
->**前提条件**: 最初にアプリを [作成する必要があります](apis-intro.md)。
+> **前提条件**: 最初にアプリを [作成する必要があります](apis-intro.md)。
 
 ## <a name="get-token"></a>トークンの取得
 
 - 次のコマンドを実行します。
 
-```
-
+```python
 import json
 import urllib.request
 import urllib.parse
@@ -73,10 +72,10 @@ req = urllib.request.Request(url, data)
 response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
-
 ```
 
 どこ
+
 - tenantId: クエリを実行するテナントの ID (つまり、このテナントのデータに対してクエリが実行されます)
 - appId: Azure AD アプリの ID (アプリには、Microsoft Defender for Endpoint への 「高度なクエリの実行」 アクセス許可が必要です)
 - appSecret: Azure アプリAD秘密
@@ -85,7 +84,7 @@ aadToken = jsonResponse["access_token"]
 
  次のクエリを実行します。
 
-```
+```python
 query = 'RegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
@@ -102,7 +101,6 @@ response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 schema = jsonResponse["Schema"]
 results = jsonResponse["Results"]
-
 ```
 
 - schema には、クエリの結果のスキーマが含まれている
@@ -112,7 +110,7 @@ results = jsonResponse["Results"]
 
 複雑なクエリ (または複数行クエリ) を実行する場合は、クエリをファイルに保存し、上記のサンプルの最初の行ではなく、次のコマンドを実行します。
 
-```
+```python
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file
 query = queryFile.read()
 queryFile.close()
@@ -124,18 +122,15 @@ queryFile.close()
 
 結果を反復処理するには、次の操作を実行します。
 
-```
+```python
 for result in results:
     print(result) # Prints the whole result
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
-
-
 ```
-
 
 クエリの結果を CSV 形式でファイル形式で出力するにはfile1.csvを実行します。
 
-```
+```python
 import csv
 
 outputFile = open("D:\\Temp\\file1.csv", 'w')
@@ -149,14 +144,14 @@ outputFile.close()
 
 クエリの結果を JSON 形式でファイル形式で出力するには、file1.jsを実行します。
 
-```
+```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
 json.dump(results, outputFile)
 outputFile.close()
 ```
 
-
 ## <a name="related-topic"></a>関連トピック
+
 - [エンドポイント API 用 Microsoft Defender](apis-intro.md)
-- [高度な追及 API](run-advanced-query-api.md)
+- [高度な追求 API](run-advanced-query-api.md)
 - [PowerShell を使用した高度な追求](run-advanced-query-sample-powershell.md)

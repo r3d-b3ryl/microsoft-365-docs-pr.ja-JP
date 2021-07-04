@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fd378e6aba9ac9bf10dcd9633da503406ab7410a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230057"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287893"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップデバイス
 
@@ -32,9 +32,8 @@ Microsoft マネージド デスクトップに登録するには、デバイス
 
 ここでのデバイスへのリンクは、参照専用です。 デバイスを注文する場合は、商用チャネルの連絡先と一緒に作業して、正しい構成を選択してください。 この表では、アーカイブ *日付* は、これらのモデルの寿命が短くなる日付Microsoft マネージド デスクトップです。この日付以降にオンボードされたそのようなデバイスは、Microsoft マネージド デスクトップ から完全な 3 年間のサポート期間を受け取Microsoft マネージド デスクトップ。 アーカイブされたデバイスは、アーカイブ済[みデバイスMicrosoft マネージド デスクトップ一覧表示されます](archived-device-list.md)。 *退職日* は、このモデルがサポートされなくなった日付をMicrosoft マネージド デスクトップです。 この日付に、このモデルのすべての登録デバイスは、いつ登録されたかに関係なく、Microsoft マネージド デスクトップから削除されます。
 
->[!NOTE]
->デバイスは、いつでもこのテーブルに追加できますが、アーカイブまたは削除日に影響を与える変更については、90 日間の通知を提供します。 最近追加されたデバイスには、 とマークが付けられます **\*** 。
-
+> [!NOTE]
+> デバイスは、いつでもこのテーブルに追加できますが、アーカイブまたは削除日に影響を与える変更については、90 日間の通知を提供します。 最近追加されたデバイスには、 とマークが付けられます **\*** 。
 
 ## <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップデバイス
 
@@ -85,13 +84,14 @@ Microsoft マネージド デスクトップに登録するには、デバイス
 - 初回実行エクスペリエンスWindows完了していない。
 - デバイス登録機能をMicrosoft マネージド デスクトップデバイスに[登録](../get-started/register-devices-self.md)する
 
->[!NOTE]
->2.0 GHz 以上のプロセッサを搭載したデバイスは、次のアクティビティに関わるユーザーに優れたエクスペリエンスを提供します。
->- ビデオ会議とビデオ会議のTeams。 詳細[については、「ハードウェア要件」をMicrosoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app)参照してください。
->-  複数の異なるワークロードに 1 つのデバイスを使用する。
->- 複数のモニターを使用する。
+> [!NOTE]
+> 2.0 GHz 以上のプロセッサを搭載したデバイスは、次のアクティビティに関わるユーザーに優れたエクスペリエンスを提供します。
+>
+> - ビデオ会議とビデオ会議のTeams。 詳細[については、「ハードウェア要件」をMicrosoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app)参照してください。
+> - 複数の異なるワークロードに 1 つのデバイスを使用する。
+> - 複数のモニターを使用する。
 
-**その他のヘルプ**
+## <a name="more-help"></a>その他のヘルプ
 
 これらのリソースは、特定のデバイスに関する質問に答えるのに役立ちます。
 

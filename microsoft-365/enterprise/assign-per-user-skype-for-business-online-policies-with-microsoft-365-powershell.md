@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: '概要: PowerShell を使用Microsoft 365オンライン ポリシーでユーザー単位の通信設定を割りSkype for Businessします。'
-ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d7f369e96f3db95c741e6d4f2178eaf9032ab0bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905406"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288085"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>PowerShell を使用してユーザー Skype for Businessオンライン ポリシーを割り当Microsoft 365
 
@@ -102,11 +102,10 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
 このコマンドでは、Alex に割り当てられた外部アクセス ポリシーの名前を Null 値 ($Null) に設定します。Null は "何もない" という意味です。言い換えれば、どの外部アクセス ポリシーも Alex に割り当てられていないということになります。どの外部アクセス ポリシーもユーザーに割り当てられていなければ、そのユーザーはグローバル ポリシーによって管理されます。
-  
 
 ## <a name="managing-large-numbers-of-users"></a>多数のユーザーを管理する
 
-多数のユーザー (1000 以上) を管理するには、Invoke-Command コマンドレットを使用してスクリプト ブロックを介してコマンドを [バッチ処理する必要](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) があります。  前の例では、コマンドレットを実行する度に、呼び出しをセットアップし、結果を待って戻す必要があります。  スクリプト ブロックを使用すると、コマンドレットをリモートで実行し、完了したらデータを送り返すことができます。 
+多数のユーザー (1000 以上) を管理するには、Invoke-Command コマンドレットを使用してスクリプト ブロックを介してコマンドを [バッチ処理する必要](/powershell/module/microsoft.powershell.core/invoke-command) があります。  前の例では、コマンドレットを実行する度に、呼び出しをセットアップし、結果を待って戻す必要があります。  スクリプト ブロックを使用すると、コマンドレットをリモートで実行し、完了したらデータを送り返すことができます。
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500

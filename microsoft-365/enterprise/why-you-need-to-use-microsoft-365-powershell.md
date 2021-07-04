@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '概要: PowerShell を使用して管理する必要がある理由Microsoft 365場合によっては、より効率的に、必要に応じて他の場合にも説明します。'
-ms.openlocfilehash: baae3f5682edb65f1bc8114fcc96021b144b93ab
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cbbceddc98bebaed030f4cff2f183d473d716df6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228425"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288469"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Microsoft 365 で PowerShell を使用する理由
 
@@ -236,7 +236,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> このコマンドでは、オンライン PowerShell モジュールSharePoint[インストールする必要があります](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。
+> このコマンドでは、オンライン PowerShell モジュールSharePoint[インストールする必要があります](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 
 この PowerShell コマンドの解釈は、現在の Microsoft 365 サブスクリプション **(Get-SPOSite)** 内のすべての SharePoint サイトを取得し、各サイトでアクセスできるユーザーの一覧から Ken Meyer を削除することです **(ForEach {Remove-SPOUser -Site $ . \_Url -LoginName "kenmyer \@ litwareinc.com"}**)。
 

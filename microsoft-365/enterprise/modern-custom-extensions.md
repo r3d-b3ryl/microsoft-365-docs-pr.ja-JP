@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online のモダン サイト ページでユーザー設定の拡張機能のパフォーマンスを最適化する方法について説明します。
-ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: af3645274b800a4eb8090957fc62397465022343
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923061"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288949"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページでユーザー設定の拡張機能のパフォーマンスを最適化する
 
@@ -55,7 +55,8 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 - **合計は** 、モジュールの読み込みと初期化に対する拡張の合計時間を示します。 これは、ページ上で最初から最後まで、拡張機能が実行する合計相対時間です。
 - **モジュールの読** み込みでは、拡張機能 JavaScript ファイルと CSS ファイルのダウンロード、評価、読み込みに必要な時間が表示されます。 その後、Init プロセスが開始されます。
 - **Init は** 、拡張機能がデータを初期化するために必要な時間を示します。
-    これは非同期呼び出しであり、init 時間は、返される約束が解決された場合の onInit 関数の時間の計算です。
+
+  これは非同期呼び出しであり、init 時間は、返される約束が解決された場合の onInit 関数の時間の計算です。
 
 この情報は、デザイナーと開発者が問題のトラブルシューティングを行えるように提供されています。 この情報は、設計開発チームに提供するようにします。
 

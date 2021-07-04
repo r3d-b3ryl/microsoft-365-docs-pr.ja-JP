@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f0eb20d59f1708bc1e3bd56e56ada40cd7058dca
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6a4321f48ba5b8e012d1a3a4fd67dd4f05566048
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924849"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287905"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft マネージド デスクトップデバイス サービス
 
@@ -28,12 +28,13 @@ Microsoft は、これらのサービスを他のデバイスMicrosoft マネー
 サポート |サポート エージェントは、デバイスの機能に直接関連する質問に回答し、デバイスの問題を診断します。
 インベントリ |すべてのデバイスは、インベントリと状態Microsoft マネージド デスクトップ管理ポータルで追跡されます。
 ファームウェア/ドライバーの更新|既定では、デバイスMicrosoft マネージド デスクトップ更新プログラムからファームウェアとドライバーの更新Windowsされます。 すべてのハードウェア パートナーが更新プログラムを更新プログラム経由で展開Windowsではありません。 自動として公開されていない更新プログラムには例外が必要であり、お客様が展開する必要があります。
-アクセサリ |デバイスに付属するアクセサリは、デバイス自体と同じサービスでカバーされますが、保証条件が異なる場合があります。 デバイスを選択する際に選択した保証条項を参照してください。 デバイスのセットアップ |デバイスは、現在のバージョンのデバイスで事前構成されWindows、クラウド経由でアプリと構成を受信します。 
+アクセサリ |デバイスに付属するアクセサリは、デバイス自体と同じサービスでカバーされますが、保証条件が異なる場合があります。 デバイスを選択する際に選択した保証条項を参照してください。 デバイスのセットアップ |デバイスは、現在のバージョンのデバイスで事前構成されWindows、クラウド経由でアプリと構成を受信します。
 
 デバイスの交換、アップグレード、およびサポート条件については、デバイス プロバイダーとの契約と保証条件を参照してください。
 
 Surface の保証と修理の詳細については、次の情報を参照してください。
-- [Surface for Business ヘルプ センター](https://support.microsoft.com/hub/4339296/surface-for-business-help)
+
+- [法人向け Surfaceヘルプ センター](https://support.microsoft.com/hub/4339296/surface-for-business-help)
 - [デバイスの保証、拡張サービス プラン、および利用規約](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
 
 

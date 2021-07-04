@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 832414e9b2a88114cafafbba78e22ea656cc7949
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 8fcf0491629a068f1ebc97e226a2c9b05e306cbf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930465"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289513"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>エンドポイント向け Microsoft Defender への切り替え - フェーズ 3: オンボード
 
@@ -103,7 +103,7 @@ Microsoft Defender ウイルス対策 サーバー、Windows 1803 以降、ま�
 1. レジストリ エディターを開き、次に移動します。 <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. **ForcePassiveMode** という DWORD エントリを編集 (または作成) し、次の設定を指定します。
+2. **ForceDefenderPassiveMode** という DWORD エントリを編集 (または作成) し、次の設定を指定します。
    - DWORD の値を **1 に設定します**。
    - [基本 **] で**、[16 進数] **を選択します**。
 

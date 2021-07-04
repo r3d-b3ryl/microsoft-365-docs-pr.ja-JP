@@ -11,12 +11,12 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: 734edbb462193291b6bd2fb4a8e6afc3a0b709cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8a1b61088d0a1594bf1a71542158ade389cce2ab
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928250"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288517"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>SKOS ベースの形式を使用して用語セットをインポートする
 
@@ -29,16 +29,16 @@ SKOS ベースの形式を使用して用語セットをインポートできま
 2. 用語セットをインポートする用語グループを選択します。
 
 3. コマンドバーで、[**用語セットのインポート**] をクリックします。
- 
-4.  テンプレートとして使用するサンプルファイルをダウンロードする場合は、**sample-metadata.ttl** をクリックして、SKOS ベースの形式を使用するサンプル ファイルを取得します。
- 
-5.  インポートする用語セットと、用語を含むインポートファイルを作成します。
 
-6.  [**ファイル形式**]で、[**SKOS (*.ttl)**]を選択します。
+4. テンプレートとして使用するサンプルファイルをダウンロードする場合は、**sample-metadata.ttl** をクリックして、SKOS ベースの形式を使用するサンプル ファイルを取得します。
 
-7.  [**参照**] をクリックして、インポートファイルに移動して追加します。
+5. インポートする用語セットと、用語を含むインポートファイルを作成します。
 
-8.  [**インポート**] をクリックします。 インポートが完了するまでパネルを閉じないでください。
+6. [**ファイル形式**]で、[**SKOS (*.ttl)**]を選択します。
+
+7. [**参照**] をクリックして、インポートファイルに移動して追加します。
+
+8. [**インポート**] をクリックします。 インポートが完了するまでパネルを閉じないでください。
 
 ファイルのインポートが成功すると、成功メッセージが表示され、用語ストアが更新され、新しく作成された用語セットに移動できます。
 

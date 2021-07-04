@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 908c6a1482761815995330b71f0d2d2f96677b64
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: b459665d9b92705bd575a7a79a4d4d6adc2a3f68
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908271"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256317"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -44,8 +44,10 @@ ms.locfileid: "52908271"
 ## <a name="whats-included-for-retention-and-deletion"></a>保持と削除の対象となる機能
 
 Teams のチャット メッセージとチャネル メッセージは、Teams のアイテム保持ポリシーを使用して削除できます。また、メッセージ内のテキストに加えて、コンプライアンス上の理由により、埋め込み画像、表、ハイパーテキスト リンク、他の Teams メッセージやファイルへのリンク、および[カード コンテンツ](/microsoftteams/platform/task-modules-and-cards/what-are-cards)を保持することができます。 チャット メッセージには、チャット内のすべてのユーザーの名前が含まれ、チャネル メッセージにはチーム名とメッセージの件名 (提供されている場合) が含まれます。 
+> [!NOTE]
+> プライベート チャネルでのメッセージのサポートは、現在プレビューで展開されています。
 
-プライベート チャネルの Teams メッセージは、現在、アイテム保持ポリシーではサポートされていません。Teams のアイテム保持ポリシーを使用する場合、コード スニペット、Teams モバイル クライアントからの録音されたボイス メモ、サムネイル、お知らせ画像、および絵文字の形式での他のユーザーからの反応は保持されません。
+Teams のアイテム保持ポリシーを使用する場合、コード スニペット、Teams モバイル クライアントからの録音されたボイスメモ、サムネイル、お知らせ画像、および絵文字の形式での他のユーザーからの反応は保持されません。
 
 Teams で使用するメールとファイルは、Teams のアイテム保持ポリシーに含まれていません。これらのアイテムには、独自のアイテム保持ポリシーがあります。
 
@@ -59,7 +61,7 @@ Teams で使用するメールとファイルは、Teams のアイテム保持�
 
 - **UserMailbox**: これらのメールボックスには、クラウドベースの Teams ユーザーのメッセージ データが保存されます。
 - **MailUser**: これらのメールボックスには、[オンプレミスの Teams ユーザー](search-cloud-based-mailboxes-for-on-premises-users.md)のメッセージ データが保存されます。
-- **GroupMailbox**: これらのメールボックスは Teams チャネルのメッセージ データを保存します。
+- **GroupMailbox**: これらのメールボックスは Teams 標準チャネルのメッセージ データを保存します。
 
 Teams 会議室に使用される RoomMailbox などの他のメールボックスの種類は、Teams 保持ポリシーではサポートされていません。
 

@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3be0a270bff2d75623fe5e0d6e004dd82aabf1f4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 71c8ca842d9c88086dee041316899bbc08f943fe
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275098"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288913"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Microsoft Defender の修復アクション (Office 365
 
@@ -54,15 +54,15 @@ Microsoft Defender for Office 365さまざまな脅威に対処するための�
 |カテゴリ|脅威/リスク|修復アクション|
 |:---|:---|:---|
 |メール|マルウェア|メール/クラスターのソフト削除 <p> クラスター内の一握り以上の電子メール メッセージにマルウェアが含まれている場合、クラスターは悪意のあるメッセージと見なされます。|
-|メール|悪意のある URL<br/>(悪意のある URL がリンク[によってセーフされました](safe-links.md)。)|メール/クラスターのソフト削除 <br/>ブロック URL (クリック時の検証)<p> 悪意のある URL を含む電子メールは、悪意のあるメールと見なされます。|
+|メール|悪意のある URL <br> (悪意のある URL がリンク[によってセーフされました](safe-links.md)。)|メール/クラスターのソフト削除 <br> ブロック URL (クリック時の検証) <p> 悪意のある URL を含む電子メールは、悪意のあるメールと見なされます。|
 |メール|フィッシング|メール/クラスターのソフト削除 <p> クラスター内のメール メッセージの数が一握りを超える場合は、クラスター全体がフィッシング詐欺の試みと見なされます。|
-|メール|Zapped フィッシング <br>(電子メール メッセージが配信され、その後 [zapped](zero-hour-auto-purge.md).)|メール/クラスターのソフト削除 <p>レポートは、Zapped メッセージを表示するために使用できます。 [ZAP がメッセージと FAQ を移動した場合を確認します](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message)。|
+|メール|Zapped フィッシング <br> (電子メール メッセージが配信され、その後 [zapped](zero-hour-auto-purge.md).)|メール/クラスターのソフト削除 <p> レポートは、Zapped メッセージを表示するために使用できます。 [ZAP がメッセージと FAQ を移動した場合を確認します](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message)。|
 |メール|ユーザーが報告した [フィッシングメール](enable-the-report-message-add-in.md) が見つからない|[ユーザーのレポートによってトリガーされる自動調査](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |メール|ボリューム異常 <br> (最近の電子メールの数量は、一致する条件の前の 7 ~ 10 日間を超えている)。|自動調査では、特定の保留中のアクションは発生しない。 <p>ボリューム異常は明確な脅威ではなく、過去 7 ~ 10 日間と比較して、最近の数日間のメール量の増加を示しているに過言ではありません。 <p>電子メールの量が多い場合は潜在的な問題を示しますが、悪意のある評決または電子メール メッセージ/クラスターの手動レビューの観点から確認が必要です。 「 [配信された疑わしいメールを検索する」を参照してください](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)。|
 |メール|脅威は検出されませんでした <br> (システムは、ファイル、URL、または電子メール クラスターの評決の分析に基づく脅威を見つけなかった。|自動調査では、特定の保留中のアクションは発生しない。 <p>調査が完了 [した](zero-hour-auto-purge.md) 後に検出され、座り込みされた脅威は、調査の数値結果には反映されませんが、そのような脅威は Threat Explorer で [表示できます](threat-explorer.md)。|
-|User|ユーザーが悪意のある URL をクリックした <br> (ユーザーは、後で悪意のあるページに移動するか、悪意のあるページにアクセスするために セーフ[リンク](safe-links.md#warning-pages-from-safe-links)の警告ページをバイパスしました)。|自動調査では、特定の保留中のアクションは発生しない。 <p>URL のブロック (クリック時) <p>脅威エクスプローラーを使用して [URL に関するデータを表示し、[評決] をクリックします](threat-explorer.md#view-phishing-url-and-click-verdict-data)。 <p>組織で Microsoft [Defender for Endpoint](/windows/security/threat-protection/)[](/microsoft-365/security/defender-endpoint/investigate-user)を使用している場合は、ユーザーの調査を検討して、アカウントが侵害されたかどうかを判断してください。|
+|User|ユーザーが悪意のある URL をクリックした <br> (ユーザーは、後で悪意のあるページに移動するか、悪意のあるページにアクセスするために セーフ[リンク](safe-links.md#warning-pages-from-safe-links)の警告ページをバイパスしました)。|自動調査では、特定の保留中のアクションは発生しない。 <p> URL のブロック (クリック時) <p> 脅威エクスプローラーを使用して [URL に関するデータを表示し、[評決] をクリックします](threat-explorer.md#view-phishing-url-and-click-verdict-data)。 <p> 組織で Microsoft [Defender for Endpoint](/windows/security/threat-protection/)[](/microsoft-365/security/defender-endpoint/investigate-user)を使用している場合は、ユーザーの調査を検討して、アカウントが侵害されたかどうかを判断してください。|
 |User|ユーザーがマルウェア/フィッシングを送信している|自動調査では、特定の保留中のアクションは発生しない。 <p> ユーザーがマルウェア/フィッシングを報告している場合や、攻撃の[](anti-spoofing-protection.md)一部としてユーザーをスプーフィングしている可能性があります。 脅威[エクスプローラーを使用して](threat-explorer.md)、マルウェアやフィッシングを含むメール[を表示および](threat-explorer-views.md#email--malware)[処理します](threat-explorer-views.md#email--phish)。|
-|User|メールの転送 <br> (メールボックス転送ルールが構成されています。これは、データの取得に使用できます)。|転送ルールの削除 <p> 転送 [されたメールに関する](mail-flow-insights-v2.md)詳細を表示するには、 [自動](mfi-auto-forwarded-messages-report.md)転送メッセージ レポートを含むメール フロー分析情報を使用します。|
+|User|メールの転送 <br> (メールボックス転送ルールが構成されている場合、chch をデータの取り出しに使用できます)。|転送ルールの削除 <p> 自動 [転送されたメッセージ レポート](mail-flow-insights-v2.md)を含 [むメール](mfi-auto-forwarded-messages-report.md)フローの分析情報を使用して、転送されたメールの詳細を表示します。|
 |User|電子メール委任ルール <br> (ユーザーのアカウントに委任が設定されています)。|委任ルールの削除 <p> 組織で Microsoft Defender for Endpoint[](/microsoft-365/security/defender-endpoint/investigate-user)を[使用している場合](/windows/security/threat-protection/)は、委任のアクセス許可を取得しているユーザーの調査を検討してください。|
 |User|データ流出 <br> (電子メールまたはファイル共有 DLP ポリシーに違反 [したユーザー](../../compliance/dlp-learn-about-dlp.md) |自動調査では、特定の保留中のアクションは発生しない。 <p> [DLP レポートを表示し、アクションを実行します](../../compliance/view-the-dlp-reports.md)。|
 |User|異常なメール送信 <br> (ユーザーが最近送信したメールの数が、過去 7 ~ 10 日間よりも多かった)。|自動調査では、特定の保留中のアクションは発生しない。 <p> 大量の電子メールの送信は、それ自体が悪意のあるものではありません。ユーザーがイベントの受信者の大規模なグループにメールを送信しただけである可能性があります。 調査するには、メール[フロー マップ レポート](mail-flow-insights-v2.md)を[](mfi-mail-flow-map-report.md)含むメール フロー分析情報を使用して、何が起こっているのかを判断し、アクションを実行します。|
@@ -75,4 +75,4 @@ Microsoft Defender for Office 365さまざまな脅威に対処するための�
 ## <a name="related-articles"></a>関連記事
 
 - [Microsoft Defender for Endpoint での自動調査の詳細](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Defender の機能についてMicrosoft 365する](/microsoft-365/security/defender/microsoft-365-defender)
+- [アプリの機能についてMicrosoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)

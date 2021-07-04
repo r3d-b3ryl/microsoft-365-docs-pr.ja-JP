@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: ソリューション カタログMicrosoft 365含まれるもの、取得する方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 22110290f3d025a3e4c30b460a2381757fd481ca
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5118cf6ef80513f5c276f5635ab380bdc979db46
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114425"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288301"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューション カタログ
 
@@ -24,7 +24,7 @@ ms.locfileid: "52114425"
 
 コンプライアンス ソリューションはMicrosoft 365、エンドツーエンドのコンプライアンス シナリオの管理に役立つ統合された機能のコレクションです。 ソリューションの機能とツールには、ポリシー、アラート、レポートなどの組み合わせが含まれる場合があります。
 
-この記事を読んで、Microsoft 365 コンプライアンス センターの新しいソリューション カタログ、取得方法、[](#how-do-i-get-this)よく寄せられる質問、[](#frequently-asked-questions)次の手順について[説明します](#next-steps)。
+この記事を読んで、Microsoft 365 コンプライアンス センター の新しいソリューション カタログ、取得方法、[](#how-do-i-get-this)よく寄せられる質問、[](#frequently-asked-questions)次の手順について[説明します](#next-steps)。
 
 ## <a name="catalog-organization"></a>カタログ組織
 
@@ -84,11 +84,11 @@ ms.locfileid: "52114425"
 
 最初に、適切なライセンスとアクセス許可を持っている必要があります。 次に、グローバル管理者、コンプライアンス管理者、またはコンプライアンス データ管理者 [https://compliance.microsoft.com](https://compliance.microsoft.com) としてサインインします。
 
-**ソリューション カタログ ページに一覧表示されているコンプライアンス機能の一部は、コンプライアンス センター Microsoft 365使用できません。どうしようか。**
+**ソリューション カタログ ページに一覧表示されているコンプライアンス機能の一部は、Microsoft 365 コンプライアンス センター。どうしようか。**
 
-コンプライアンス センターとソリューション カタログに新しい機能をMicrosoft 365常に取り組み続けます。 ナビゲーション領域に特定のソリューションが見当たらない場合は、サブスクリプションでソリューションを利用できる場合にアクセスできます。
+常に、ソリューション カタログとソリューション カタログに新しいMicrosoft 365 コンプライアンス センター追加する作業を行っています。 ナビゲーション領域に特定のソリューションが見当たらない場合は、サブスクリプションでソリューションを利用できる場合にアクセスできます。
 
-既存のコンプライアンス ソリューションを探しているが、Microsoft 365 コンプライアンス センターでまだ使用できない場合は、常に [セキュリティ コンプライアンス センター] にアクセスして、既存のセキュリティ コンプライアンス センターのソリューションに &amp; アクセスできます [https://protection.office.com](https://protection.office.com) 。 または、Microsoft 365 コンプライアンス センターの左側のナビゲーションで [その他のリソース] タブをクリックし、Office 365コンプライアンス センター カードを選択します。  
+既存のコンプライアンス ソリューションを探しているが、Microsoft 365 コンプライアンス センター ではまだ使用できない場合は、常に [セキュリティ コンプライアンス センター] にアクセスして、既存のセキュリティ コンプライアンス センターのソリューションに &amp; アクセスできます [https://protection.office.com](https://protection.office.com) 。 または、Microsoft 365 コンプライアンス センター の左側のナビゲーションで [その他のリソース] タブをクリックし、Office 365コンプライアンス センター カードを選択します。  
 
 ## <a name="next-steps"></a>次の手順
 
@@ -98,7 +98,7 @@ ms.locfileid: "52114425"
 
 - **企業の行動規範ポリシー違反を** 迅速に特定し、修復するためのコミュニケーション コンプライアンス ポリシーについて説明し、作成します。 「 [通信コンプライアンス」を参照してください](communication-compliance.md)。
 
-- **Microsoft Information Protection は**、あらゆる場所で機密情報Microsoft 365検出、分類、保護するのに役立つソリューションについて説明します。
+- **Microsoft Information Protection、** あらゆる場所Microsoft 365機密情報を検出、分類、保護するのに役立つソリューションについて学習します。
     - **知り合い、設定をMicrosoft Cloud App Security。** 「[クイック スタート: クイック スタート」を参照Microsoft Cloud App Security。](/cloud-app-security/getting-started-with-cloud-app-security)
     - **分類子の使用を開始します**。 コンテンツを分類し、適切に保護および処理できるようラベルを付け、情報保護分野の開始場所です。 「 [トレーニング可能な分類子の詳細 (プレビュー)」を参照してください](classifier-learn-about.md)。
 

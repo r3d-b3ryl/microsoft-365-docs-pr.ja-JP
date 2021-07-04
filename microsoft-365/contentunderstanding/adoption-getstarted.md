@@ -1,6 +1,6 @@
 ---
-title: 'Microsoft SharePoint Syntex 導入: 概要'
-description: ビジネス上の問題の解決に役立SharePoint Syntex を組織で使用および実装する方法について学習します。
+title: 'Microsoft SharePoint Syntex導入: 使い始める'
+description: ビジネス上の問題の解決に役立つSharePoint Syntexを組織で使用および実装する方法について学習します。
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -14,26 +14,26 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 62e65f9be25e2c482cca78577048d504ee93097a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 8a5442fcf8dd50cdee6be97ba7c9bbf5e21408a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698978"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288157"
 ---
-# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex 導入: 概要
+# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex導入: 使い始める
 
-Syntex で利用可能なインテリジェント コンテンツ サービスは、次SharePoint 3 つの部分を持つと考えてください。
+次の 3 つの部分を含む、SharePoint Syntexインテリジェント コンテンツ サービスを考えてみる必要があります。
 
 - **コンテンツの理解:** コンテンツから情報を分類して抽出するコードなし AI モデルを作成し、ナレッジの検出と再利用のためにメタデータを自動的に適用します。 詳しくは、コンテンツ [の理解に関するページを参照してください](document-understanding-overview.md)。
 - **コンテンツ処理:** コンテンツのキャプチャ、取り込み、および分類を自動化し、コンテンツ中心のプロセスをPower Automate。 コンテンツ処理について [詳しくは、次のページを参照してください](form-processing-overview.md)。
-- **コンテンツのコンプライアンス:** Microsoft Information Protection との統合によるセキュリティとガバナンスを向上させるために、コンテンツを制御および管理します。
+- **コンテンツのコンプライアンス:** コンテンツの管理と管理を行い、セキュリティとガバナンスを強化し、セキュリティとガバナンスを強化Microsoft Information Protection。
 
-新しい AI サービスと機能を使用すると、コンテンツの理解と分類アプリを、Syntex を使用してコンテンツ管理フローに直接SharePointできます。 コンテンツを理解するには、2 つの異なる方法があります。 使用するモデルの種類は、ファイル形式と使用例に基づいて行います。
+新しい AI サービスと機能を使用して、コンテンツの理解と分類アプリをコンテンツ管理フローに直接組み込むには、SharePoint Syntex。 コンテンツを理解するには、2 つの異なる方法があります。 使用するモデルの種類は、ファイル形式と使用例に基づいて行います。
 
 | フォーム処理 | ドキュメント理解 |
 |:-------|:-------|
-| ドキュメント ライブラリから作成されます。 | コンテンツ センター(Syntex の一部SharePointされます。 |
+| ドキュメント ライブラリから作成されます。 | コンテンツ センターの一部であるコンテンツ センター SharePoint Syntex。 |
 | AI ビルダーで作成されたモデル。 | ネイティブ インターフェイスで作成されたモデル。 |
 | 半構造化ファイル形式に使用されます。 | 非構造化ファイル形式に使用されます。 |
 | Settable 分類子。 | オプションの抽出機能を備えるトレーニング可能な分類子。 |
@@ -44,12 +44,12 @@ Syntex で利用可能なインテリジェント コンテンツ サービス�
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>最適化するパイロット ビジネス シナリオを特定する
 
-組織で Syntex SharePointを使用する準備をするには、最初に役立つシナリオを理解する必要があります。 "理由" は、必要なモデルを決定し、モデルを適用する場所に基づいて組織を構成する方法を決定するのに役立ちます。 ドキュメントの理解が組織に役立つシナリオを次に示します。
+組織で SharePoint Syntexを使用する準備をするには、まず、そのシナリオが役に立つシナリオを理解する必要があります。 "理由" は、必要なモデルを決定し、モデルを適用する場所に基づいて組織を構成する方法を決定するのに役立ちます。 ドキュメントの理解が組織に役立つシナリオを次に示します。
 
 - **コンテンツ処理:** コントラクト、作業明細書、その他のフォームのようなドキュメントを処理します。 フォームを取り込み、フィールドを理解してマップするためにモデルをトレーニングし、フォームを実行してデータを自動的に収集します。 詳細については、「フォーム処理の [概要」を参照してください](form-processing-overview.md)。
 - **請求書分析:** 請求書から関連する詳細を引き出し、ポリシーに準拠している、または適切に処理されている必要があります。
 
-Syntex を使用して組織SharePoint役立つ方法について考えます。
+組織に役立つSharePoint Syntex考えます。
 
 - ビジネス プロセスの自動化
 - 検索の精度を向上させる
@@ -64,13 +64,13 @@ Syntex を使用して組織SharePoint役立つ方法について考えます。
 
 影響と実装の容易さに基づいてシナリオに優先順位を付ける。 初期フォーカス領域を簡単に実装できる影響の高いシナリオにします。 実装が難しい影響の低いシナリオの優先順位を下げる。
 
-次の[シナリオと使用例を使用](adoption-scenarios.md)して、組織で Syntex を使用する方法についてのSharePointを確認します。
+使用例[のシナリオと使用例](adoption-scenarios.md)を使用して、組織で使用する方法に関するSharePoint Syntexを促します。
 
 ## <a name="identify-roles--responsibilities"></a>役割と責任&識別する
 
 組織内でモデルを構築および管理するユーザーを決定しますか? 次の役割が関係している可能性があります。
 
-| SharePoint/ナレッジ管理者 | Power Platform 管理者 | 知識マネージャー | モデル所有者 |
+| SharePoint/ナレッジ管理者 | Power プラットフォーム管理者 | 知識マネージャー | モデル所有者 |
 |:-------|:-------|:-------|:-------|
 | AAD の役割| AAD の役割 | AAD の役割 | チャンピオン |
 | フォームの処理を構成する | フォーム処理用に共通データ サービス環境を構成する | 使用例の収集 | ビジネスの使用例を収集する |
@@ -86,7 +86,7 @@ Syntex を使用して組織SharePoint役立つ方法について考えます。
 
 ## <a name="strategic-positioning"></a>戦略的な位置付け
 
-関係者と協力して、Syntex を使用する戦略に沿SharePointします。 この位置付けを支援するために、次のリソースを調査して提供します。
+関係者と協力して、関係者がユーザーを使用する戦略に沿SharePoint Syntex。 この位置付けを支援するために、次のリソースを調査して提供します。
 
 - ビジネスの成果:
   - 潜在的な財政結果
@@ -116,14 +116,14 @@ Syntex を使用して組織SharePoint役立つ方法について考えます。
 
 ## <a name="readiness-checklist"></a>準備チェックリスト
 
-Syntex を実装する準備をSharePointするには、次の必要があります。
+アプリケーションを実装する準備をSharePoint Syntex、次の必要があります。
 
 ![コンテンツ理解の準備](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. 終了状態を計画する
     - ドキュメント理解モデルは、最後ではなく手段です。
     - 抽出されたメタデータの値を次の値で活用する計画を立て、
-      - 検索
+      - Search
       - フィルター処理と表示の書式設定
       - コンプライアンス
       - オートメーション
@@ -132,7 +132,7 @@ Syntex を実装する準備をSharePointするには、次の必要がありま
     - モデルの候補として既存のコンテンツ タイプはありますか?
     - メタデータによって改善される既存のプロセス
 3. デザイン
-    - 情報アーキテクチャ、管理されたメタデータ、コンテンツ タイプに対するアプローチを設計する
+    - 情報アーキテクチャ、管理されたメタデータ、コンテンツ タイプに対するアプローチを設計します。
     - 定義、作成、管理のプロセスを設計します。
 
 ## <a name="engage-your-organization"></a>組織に参加する
@@ -146,4 +146,4 @@ Syntex を実装する準備をSharePointするには、次の必要がありま
 
 ## <a name="see-also"></a>関連項目
 
-[Syntex のシナリオと使用例SharePoint例](adoption-scenarios.md)
+[ユーザーのシナリオと使用SharePoint Syntex](adoption-scenarios.md)

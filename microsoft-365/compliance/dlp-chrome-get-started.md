@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: a76a4b1ab5b92a1e237663f65002b99d792b13bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226961"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288373"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft Compliance Extension を開始する
 
@@ -107,35 +107,34 @@ Microsoft Compliance Extension の展開は、多段階のプロセスです。�
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
    ```
 
-2.  [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco) に移動します。
+2. [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco) に移動します。
 
-3.  Chrome Web ストアのページに記載されている手順で、拡張機能をインストールします。
+3. Chrome Web ストアのページに記載されている手順で、拡張機能をインストールします。
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用して展開する
 
 この設定方法は、組織全体の展開に使用します。
 
-
 ##### <a name="enabling-required-registry-key-via-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーで必要なレジストリ キーを有効にする
 
-1.  次のコンテンツを使用して PowerShell スクリプトを作成します。
+1. 次のコンテンツを使用して PowerShell スクリプトを作成します。
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-2.  [Microsoft エンドポイント マネージャー管理センター](https://endpoint.microsoft.com)にサインインします。
+2. [Microsoft エンドポイント マネージャー管理センター](https://endpoint.microsoft.com)にサインインします。
 
-3.  **[デバイス]** > >  **[スクリプト]** の順に移動し、**[追加]** を選択します。
+3. **[デバイス]** > >  **[スクリプト]** の順に移動し、**[追加]** を選択します。
 
-4.  プロンプトが表示されたら、作成したスクリプトの場所を参照してください。
+4. プロンプトが表示されたら、作成したスクリプトの場所を参照してください。
 
-5.  次の設定を選択します。
+5. 次の設定を選択します。
     1. ログオンした資格情報を使用して、このスクリプトを実行する: はい
     1. スクリプトの署名チェックを強制する: いいえ
     1. 64 ビットの PowerShell ホストでスクリプトを実行する: はい
 
-6.  適切なデバイス グループを選択し、ポリシーを適用します。
+6. 適切なデバイス グループを選択し、ポリシーを適用します。
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Microsoft エンドポイント マネージャーの強制インストール手順
 
@@ -143,27 +142,27 @@ Microsoft Compliance Extension を強制インストールされた拡張機能�
 
  ADMX を取り込んだ後、以下の手順でこの拡張機能の構成プロファイルを作成します。
 
-1.  Microsoft エンドポイント マネージャー管理センター (https://endpoint.microsoft.com)) にサインインします。
+1. Microsoft エンドポイント マネージャー管理センター (https://endpoint.microsoft.com)) にサインインします。
 
-2.  構成プロファイルに移動します。
+2. 構成プロファイルに移動します。
 
-3.  **[プロファイルの作成]** を選択します。
+3. **[プロファイルの作成]** を選択します。
 
-4.  **Windows 10** をプラットフォームとして選択します。
+4. **Windows 10** をプラットフォームとして選択します。
 
-5.  プロファイルの種類として **[カスタム]** を選択します。
+5. プロファイルの種類として **[カスタム]** を選択します。
 
-6.  **[設定]** タブを選択します。
+6. **[設定]** タブを選択します。
 
-7.  **[追加]** を選択します。
+7. **[追加]** を選択します。
 
-8.  次のポリシー情報を入力します。
+8. 次のポリシー情報を入力します。
 
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     データ型: `String`<br/>
     値: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
-9.  [作成] をクリックします。
+9. [作成] をクリックします。
 
 ### <a name="deploy-using-group-policy"></a>グループ ポリシーを使用して展開する
 
@@ -171,25 +170,25 @@ Microsoft エンドポイント マネージャーを使用しない場合は、
 
 1. デバイスはグループ ポリシーで管理できる必要があり、すべての Chrome ADMX をグループ ポリシー セントラル ストアにインポートする必要があります。 詳細については、「[Windows でグループ ポリシー管理テンプレート用に中央ストアを作成および管理する方法](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)」を参照してください。
 
-2.  以下の PowerShell コマンドを使用して、PowerShell スクリプトを作成します。
+2. 以下の PowerShell コマンドを使用して、PowerShell スクリプトを作成します。
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-3.  **グループ ポリシー管理コンソール** を開き、自分の組織単位 (OU) に移動します。
+3. **グループ ポリシー管理コンソール** を開き、自分の組織単位 (OU) に移動します。
 
-4.  右クリックして、**[このドメインに GPO を作成し、このコンテナーにリンクする]** を選択します。 プロンプトが表示されたら、このグループ ポリシー オブジェクト (GPO) にわかりやすい名前を割り当て、作成を終了します。
+4. 右クリックして、**[このドメインに GPO を作成し、このコンテナーにリンクする]** を選択します。 プロンプトが表示されたら、このグループ ポリシー オブジェクト (GPO) にわかりやすい名前を割り当て、作成を終了します。
 
-5.  GPO を右クリックし、**[編集]** を選択します。
+5. GPO を右クリックし、**[編集]** を選択します。
 
-6.  **[コンピュータの構成]** > >  **[環境設定]** > >  **[コントロールパネルの設定]** > >  **[スケジュールされたタスク]** の順に移動します。
+6. **[コンピュータの構成]** > >  **[環境設定]** > >  **[コントロールパネルの設定]** > >  **[スケジュールされたタスク]** の順に移動します。
 
-7.  右クリックして **[新規作成]** > >  **[即時タスク (Windows 7 以降)** を選択して新しい即時タスクを作成します。
+7. 右クリックして **[新規作成]** > >  **[即時タスク (Windows 7 以降)** を選択して新しい即時タスクを作成します。
 
-8.  タスクに名前と説明をつけます。
+8. タスクに名前と説明をつけます。
 
-9.  即時タスクを実行するための対応するアカウントを選択します (NT Authority など)。
+9. 即時タスクを実行するための対応するアカウントを選択します (NT Authority など)。
 
 10. **[最上位の特権で実行する]** を選択します。
 
@@ -203,21 +202,21 @@ Microsoft エンドポイント マネージャーを使用しない場合は、
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Chrome 拡張機能を ForceInstall リストに追加する
 
-1.  グループ ポリシー管理エディターで、OU に移動します。
+1. グループ ポリシー管理エディターで、OU に移動します。
 
-2.  以下のパスを展開します。**[コンピューター/ユーザーの構成]** > >  **[ポリシー]** > >  **[管理用テンプレート]** > >  **[クラシック管理用テンプレート]** > >  **[Google]** > >  **[Google Chrome]** > >  **[拡張機能]** このパスは、お使いの構成によって異なる場合があります。
+2. 以下のパスを展開します。**[コンピューター/ユーザーの構成]** > >  **[ポリシー]** > >  **[管理用テンプレート]** > >  **[クラシック管理用テンプレート]** > >  **[Google]** > >  **[Google Chrome]** > >  **[拡張機能]** このパスは、お使いの構成によって異なる場合があります。
 
-3.  **[強制インストールした拡張機能リストの構成]** を選択します。
+3. **[強制インストールした拡張機能リストの構成]** を選択します。
 
-4.  右クリックして、**[編集]** を選択します。
+4. 右クリックして、**[編集]** を選択します。
 
-5.  **[有効]** を選択します。
+5. **[有効]** を選択します。
 
-6.  **[表示]** を選択します。
+6. **[表示]** を選択します。
 
-7.  **[値]** の下で、以下のエントリを追加します。`echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+7. **[値]** の下で、以下のエントリを追加します。`echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
 
-8.  **[OK]**、**[適用]** の順に選択します。
+8. **[OK]**、**[適用]** の順に選択します。
 
 ### <a name="test-the-extension"></a>拡張機能をテストする
 

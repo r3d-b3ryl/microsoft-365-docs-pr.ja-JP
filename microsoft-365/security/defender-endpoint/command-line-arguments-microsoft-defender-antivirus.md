@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 25f038846f9dd9855823382d4e1babcf0547fed6
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: efeb49b2741bdc45f7924032c2deb8a27458ca29
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636172"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289417"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>コマンド ライン Microsoft Defender ウイルス対策を使用してmpcmdrun.exeを構成および管理する
 
@@ -31,7 +31,7 @@ ms.locfileid: "52636172"
 専用のコマンド ライン ツール を使用して、Microsoft Defender ウイルス対策でさまざまな **機能を実行** mpcmdrun.exe。 このユーティリティは、タスクを自動化する場合Microsoft Defender ウイルス対策です。 ユーティリティは で確認できます `%ProgramFiles%\Windows Defender\MpCmdRun.exe` 。 コマンド プロンプトから実行します。
 
 > [!TIP]
-> 管理者レベルのバージョンのコマンド プロンプトを開く必要がある場合があります。 [スタート] メニューの **[コマンド プロンプト]** を検索する場合は、[管理者として **実行] を選択します**。 更新された Microsoft Defender プラットフォーム バージョンを実行している場合は、次 `MpCmdRun` の場所から実行します `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` 。 マルウェア対策プラットフォームの詳細については、「更新プログラムとベースラインMicrosoft Defender ウイルス対策[を参照してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
+> 管理者レベルのバージョンのコマンド プロンプトを開く必要がある場合があります。 コマンド プロンプトを **検索するときに**、[管理者として実行スタート メニューを **選択します**。 更新された Microsoft Defender プラットフォーム バージョンを実行している場合は、次 `MpCmdRun` の場所から実行します `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` 。 マルウェア対策プラットフォームの詳細については、「更新プログラムとベースラインMicrosoft Defender ウイルス対策[を参照してください](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 MpCmdRun ユーティリティは、次の構文を使用します。
 
@@ -39,7 +39,7 @@ MpCmdRun ユーティリティは、次の構文を使用します。
 MpCmdRun.exe [command] [-options]
 ```
 
-次に例を示します:
+次に例を示します。
 
 ```console
 MpCmdRun.exe -Scan -ScanType 2
@@ -51,7 +51,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 | コマンド  | 説明   |
 |:----|:----|
-| `-?`**または**`-h`   | MpCmdRun ツールで使用可能なすべてのオプションを表示する |
+| `-?` **または** `-h`   | MpCmdRun ツールで使用可能なすべてのオプションを表示する |
 | `-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | 悪意のあるソフトウェアをスキャンします。 **ScanType の値は次** のとおりです。<p>**0** 構成に応じて既定<p>**1** クイック スキャン<p>**2** フル スキャン<p>**3** ファイルとディレクトリのカスタム スキャン。<p>CpuThrottling はポリシー構成に従って実行されます |
 | `-Trace [-Grouping #] [-Level #]` | 診断トレースを開始する |
 | `-GetFiles [-SupportLogLocation <path>]` | サポート情報を収集します。 「診断[データの収集」を参照](collect-diagnostic-data.md)してください。  |
@@ -73,7 +73,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 |エラー メッセージ | 考えられる理由 |
 |:----|:----|
-| **ValidateMapsConnection が失敗しました (800106BA)** **または** 0x800106BA | サービスMicrosoft Defender ウイルス対策無効になっています。 サービスを有効にし、もう一度やり直してください。 アプリケーションの再有効化に関するヘルプがMicrosoft Defender ウイルス対策、エンドポイント[の再インストール/有効化Microsoft Defender ウイルス対策を参照してください](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。<p>   **ヒント** 1909 Windows 10以前で、サーバー 2019 Windows以前の場合、このサービスは以前は Windows Defender ウイルス対策 と *呼ばWindows Defender ウイルス対策。* |
+| **ValidateMapsConnection が失敗しました (800106BA)** **または** 0x800106BA | サービスMicrosoft Defender ウイルス対策無効になっています。 サービスを有効にし、もう一度やり直してください。 アプリケーションの再有効化に関するヘルプがMicrosoft Defender ウイルス対策、エンドポイント[の再インストール/有効化Microsoft Defender ウイルス対策を参照してください](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。<p> **ヒント**: 1909 Windows 10以前、および Windows Server 2019 以前の場合、このサービスは以前は Windows Defender ウイルス対策 と *呼ばWindows Defender ウイルス対策。* |
 | **0x80070667** | このコマンドは、バージョン 1607 以前Windows 10または以前のコンピューター `-ValidateMapsConnection` Windows Server 2016実行しています。 バージョン 1703 以降Windows 10サーバー 2019 以降Windowsコマンドを実行します。|
 | **MpCmdRun は、内部または外部のコマンド、操作可能なプログラム、またはバッチ ファイルとして認識されません。** | ツールを実行する必要があります (プラットフォームの更新プログラムは 3 月を除いて毎月行うので、異なる `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` `2012.4-0` 場合があります)|
 | **ValidateMapsConnection が MAPS への接続を確立できなかった (hr=80070005 httpcode=450)** | コマンドは、不十分な特権を使用して試行されました。 管理者としてコマンド プロンプト (cmd.exe) を使用します。|

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 248e08913e6210fabed26955a1015533e055dcb6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 82052634b79bf433731d0afdab45e3d75e6497e0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007071"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289333"
 ---
 # <a name="live-response-command-examples"></a>ライブ応答コマンドの例
 
@@ -38,8 +38,7 @@ ms.locfileid: "53007071"
 
 付与されている役割に応じて、基本的なライブ応答コマンドまたは高度なライブ応答コマンドを実行できます。 基本的なコマンドと高度なコマンドの詳細については、「ライブ応答を使用してデバイス上のエンティティを調査 [する」を参照してください](live-response.md)。
 
-
-## <a name="analyze"></a>分析 
+## <a name="analyze"></a>分析
 
 ```console
 # Analyze the file malware.txt
@@ -110,12 +109,12 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > 次のファイルの種類 **は、Live** Response 内からこのコマンドを使用してダウンロードできません。
 >
-> * [Reparse ポイント ファイル](/windows/desktop/fileio/reparse-points/)
-> * [スパース ファイル](/windows/desktop/fileio/sparse-files/)
-> * 空のファイル
-> * 仮想ファイル、またはローカルに完全に存在しないファイル
+> - [Reparse ポイント ファイル](/windows/desktop/fileio/reparse-points/)
+> - [スパース ファイル](/windows/desktop/fileio/sparse-files/)
+> - 空のファイル
+> - 仮想ファイル、またはローカルに完全に存在しないファイル
 >
-> これらのファイルの種類 **は** [PowerShell でサポートされています](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)。
+> これらのファイルの種類 **は** [PowerShell でサポートされています](/powershell/scripting/overview)。
 >
 > Live Response 内からこのコマンドを使用する際に問題が発生した場合は、PowerShell を代わりに使用します。
 
@@ -132,6 +131,7 @@ library delete script.ps1
 ```
 
 ## <a name="processes"></a>processes
+
 ```console
 # Show all processes
 processes
@@ -210,11 +210,12 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
+
 >[!NOTE]
 >
 > **'** run ' や '**getfile**'などの長時間実行されているコマンドの場合は、コマンドの最後に ' ' 記号を使用して、バックグラウンドでそのアクションを **&** 実行できます。
 > これにより、コンピューターの調査を続行し、'**fg**' basic コマンドを使用して実行すると、バックグラウンド コマンドに [戻る可能性があります](live-response.md#basic-commands)。
->
+
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```console
@@ -232,7 +233,6 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-
 ## <a name="undo"></a>元に戻す
 
 ```console
@@ -249,4 +249,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 # Restore remediated file
 undo file c:\Users\user\Desktop\malware.exe
 ```
-

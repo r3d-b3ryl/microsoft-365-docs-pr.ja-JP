@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 850d7e6692d3ccbfda6e15c8d5ca95301bd4d094
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a66ad53faf1b38c3db4ab4446dbc1d175fbd99e4
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245614"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289537"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
@@ -50,11 +50,10 @@ Microsoft マネージド デスクトップハードウェア ハッシュを�
 
 PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell スクリプトを使用できます。 デバイス ID とハードウェア ハッシュの詳細については、「デバイスを[Autopilot に追加Windows参照してください](/mem/autopilot/add-devices#device-identification)。
 
-1.  管理者権限を持つ PowerShell プロンプトを開きます。
-2.  `Install-Script -Name Get-WindowsAutoPilotInfo` を実行します。
-3.  `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv` を実行します。
-4.  後続 `powershell -ExecutionPolicy restricted` の制限されていないスクリプトが実行されるのを防ぐために実行します。
-
+1. 管理者権限を持つ PowerShell プロンプトを開きます。
+2. `Install-Script -Name Get-WindowsAutoPilotInfo` を実行します。
+3. `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv` を実行します。
+4. 後続 `powershell -ExecutionPolicy restricted` の制限されていないスクリプトが実行されるのを防ぐために実行します。
 
 #### <a name="flash-drive-method"></a>フラッシュ ドライブの方法
 
@@ -68,9 +67,8 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 8. `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv` を実行します。
 9. USB ドライブを削除し、実行してデバイスをシャットダウンする `shutdown -s -t 0`
 
->[!IMPORTANT]
->登録が完了するまで、登録するデバイスの電源を入れる必要はありません。 
-
+> [!IMPORTANT]
+> 登録が完了するまで、登録するデバイスの電源を入れる必要はありません。 
 
 ### <a name="merge-hash-data"></a>ハッシュ データの結合
 
@@ -78,16 +76,13 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
-
 ### <a name="register-devices-by-using-the-admin-portal"></a>管理者ポータルを使用してデバイスを登録する
 
 [[Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)で、左側 **のナビゲーション ウィンドウ** で [デバイス] を選択します。 メニューの [Microsoft マネージド デスクトップ] セクションを探し、[デバイス] を **選択します**。 [デバイスのMicrosoft マネージド デスクトップ] ワークスペースで、[デバイスの登録]**を** 選択し、新しいデバイスを登録するフライインを開きます。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
-
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 次の手順を実行します。
 
@@ -105,7 +100,7 @@ PowerShell ギャラリー web [ サイトGet-WindowsAutoPilotInfo.ps1](https://
 | 登録保留中 | 登録はまだ行っていません。 後で確認してください。 |
 | 登録に失敗しました | 登録を完了する必要があります。 詳細については [、「デバイス登録のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
 | ユーザーの準備ができました | 登録が成功し、デバイスをユーザーに配信する準備が整いました。 Microsoft マネージド デスクトップセットアップをガイドしますので、それ以上の準備をする必要はありません。 |
-| 有効 | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
+| Active | デバイスがユーザーに配信され、テナントに登録されています。 この状態は、デバイスを定期的に使用している場合も示します。 |
 | 非アクティブ | デバイスがユーザーに配信され、テナントに登録されています。 ただし、最近デバイスを使用していない (過去 7 日間)。  | 
 
 #### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング

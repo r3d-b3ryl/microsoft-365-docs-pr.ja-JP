@@ -66,7 +66,7 @@
 #### [macOS 用 Microsoft Defender for Endpoint]()
 ##### [macOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-mac.md)
 ##### [新機能](mac-whatsnew.md)
- 
+
 ##### [展開]()
 ###### [Microsoft Intune ベースの展開](mac-install-with-intune.md)
 ###### [JAMF Pro ベースの展開]()
@@ -75,11 +75,11 @@
 ####### [デバイス グループを設定する](mac-jamfpro-device-groups.md)
 ####### [ポリシーを設定する](mac-jamfpro-policies.md)
 ####### [デバイスを登録する](mac-jamfpro-enroll-devices.md)
- 
+
 ###### [別のモバイル デバイス管理 (MDM) システムを使用した展開](mac-install-with-other-mdm.md)
 ###### [手動展開](mac-install-manually.md)
 ##### [更新](mac-updates.md)
- 
+
 ##### [構成]()
 ###### [除外を構成および検証する](mac-exclusions.md)
 ###### [環境設定](mac-preferences.md)
@@ -89,14 +89,14 @@
 ####### [JAMF の例](mac-device-control-jamf.md)
 ####### [Intune の例](mac-device-control-intune.md)
 ###### [スキャンのスケジュール](mac-schedule-scan.md)
- 
+
 ##### [トラブルシューティング]()
 ###### [インストールに関する問題のトラブルシューティング](mac-support-install.md)
 ###### [パフォーマンスに関する問題のトラブルシューティング](mac-support-perf.md)
 ###### [クラウド接続に関する問題のトラブルシューティング](troubleshoot-cloud-connect-mdemac.md)
 ###### [カーネル拡張に関する問題のトラブルシューティング](mac-support-kext.md)
 ###### [ライセンスに関する問題のトラブルシューティング](mac-support-license.md)
- 
+
 ##### [プライバシー](mac-privacy.md)
 ##### [リソース](mac-resources.md)
 
@@ -104,10 +104,10 @@
 #### [iOS 用 Microsoft Defender for Endpoint API]()
 ##### [iOS 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-ios.md)
 ##### [新機能](ios-whatsnew.md)
- 
+
 ##### [展開]()
 ###### [Intune を介した iOS 用 Microsoft Defender for Endpoint の展開](ios-install.md)
- 
+
 ##### [構成]()
 ###### [iOS 機能の構成](ios-configure-features.md)
 
@@ -115,8 +115,8 @@
 ###### [FAQ と問題のトラブルシューティング](ios-troubleshoot.md)
 
 ##### [プライバシー](ios-privacy.md)
- 
- 
+
+
 #### [Linux 用 Microsoft Defender for Endpoint]()
 ##### [Linux 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-linux.md)
 ##### [新機能](linux-whatsnew.md)
@@ -127,7 +127,7 @@
 ###### [Chef を使用して Linux 用 Microsoft Defender for Endpoint を展開する](linux-deploy-defender-for-endpoint-with-chef.md)
 
 ##### [更新](linux-updates.md)
- 
+
 ##### [構成]()
 ###### [除外を構成および検証する](linux-exclusions.md)
 ###### [静的プロキシの構成](linux-static-proxy-configuration.md)
@@ -136,29 +136,29 @@
 ###### [Linux 用 Microsoft Defender for Endpoint でスキャンをスケジュールする](linux-schedule-scan-atp.md)
 ###### [Microsoft Defender for Endpoint (Linux) の更新をスケジュールする](linux-update-MDE-Linux.md)
 
- 
+
 ##### [トラブルシューティング]()
 ###### [インストールに関する問題のトラブルシューティング](linux-support-install.md)
 ###### [エージェントの正常性に関する問題の調査](health-status.md)
 ###### [クラウド接続に関する問題のトラブルシューティング](linux-support-connectivity.md)
 ###### [パフォーマンスに関する問題のトラブルシューティング](linux-support-perf.md)
 ###### [欠落しているイベントに関する問題のトラブルシューティング](linux-support-events.md)
- 
+
 ##### [プライバシー](linux-privacy.md)
 ##### [リソース](linux-resources.md)
- 
+
 #### [Android 用 Microsoft Defender for Endpoint]()
 ##### [Android 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-android.md)
- 
+
 ##### [展開]()
 ###### [Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開](android-intune.md)
- 
+
 ##### [構成]()
 ###### [Android 機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)
- 
+
 ##### [プライバシー]()
 ###### [Android 用 Microsoft Defender for Endpoint - プライバシー情報](android-privacy.md)
- 
+
 ##### [トラブルシューティング]()
 ###### [問題のトラブルシューティング](android-support-signin.md)
 
@@ -321,13 +321,13 @@
 ##### [エクスプロイト保護を有効にする](enable-exploit-protection.md)
 ##### [エクスプロイト保護をカスタマイズする](customize-exploit-protection.md)
 ##### [エクスプロイト保護構成のインポート、エクスポート、展開](import-export-exploit-protection-emet-xml.md)
-##### [エクスプロイト保護のリファレンス](exploit-protection-reference.md )
+##### [エクスプロイト保護のリファレンス](exploit-protection-reference.md)
 
 #### [ネットワーク保護]()
 ##### [ネットワークを保護する](network-protection.md)
 ##### [ネットワーク保護を評価する](evaluate-network-protection.md)
 ##### [ネットワーク保護を有効にする](enable-network-protection.md)
- 
+
 #### [Web 保護]()
 ##### [Web 保護の概要](web-protection-overview.md)
 ##### [Web の脅威に対する保護]()
@@ -335,7 +335,7 @@
 ###### [Web セキュリティの監視](web-protection-monitoring.md)
 ###### [Web の脅威への対応](web-protection-response.md)
 ##### [Web コンテンツ フィルタリング](web-content-filtering.md)
- 
+
 #### [制御されたフォルダー アクセス]()
 ##### [フォルダーの保護](controlled-folders.md)
 ##### [制御されたフォルダー アクセスを評価する](evaluate-controlled-folder-access.md)
@@ -371,7 +371,7 @@
 ##### [インシデント キューを表示および整理する](view-incidents-queue.md)
 ##### [インシデントの管理](manage-incidents.md)
 ##### [インシデントの調査](investigate-incidents.md)
- 
+
 #### [アラート キュー]()
 ##### [アラート キューを表示および整理する](alerts-queue.md)
 ##### [アラートの確認](review-alerts.md)
@@ -383,12 +383,12 @@
 ##### [ドメインの調査](investigate-domain.md)
 ###### [転送プロキシの背後で発生する接続イベントの調査](investigate-behind-proxy.md)
 ##### [ユーザー アカウントの調査](investigate-user.md)
- 
+
 #### [デバイスの一覧]()
 ##### [デバイスの一覧を表示および整理する](machines-view-overview.md)
 ##### [デバイス タイムライン イベント フラグ](device-timeline-event-flag.md)
 ##### [デバイス グループとタグの管理](machine-tags.md)
- 
+
 #### [対応措置を講じる]()
 ##### [デバイスの対応措置を講じる]()
 ###### [デバイスの対応措置](respond-machine-alerts.md)
@@ -547,7 +547,7 @@
 ####### [アプリの実行を制限する](restrict-code-execution.md)
 ####### [アプリの制限を削除する](unrestrict-code-execution.md)
 ####### [ウイルス対策スキャンを実行する](run-av-scan.md)
-####### [ライブ応答を実行する](run-live-response.md) 
+####### [ライブ応答を実行する](run-live-response.md)
 ####### [マシンのオフボード](offboard-machine-api.md)
 ####### [ファイルの停止と検疫](stop-and-quarantine-file.md)
 ####### [マシン アクションのキャンセル](cancel-machine-action.md)
@@ -661,7 +661,7 @@
 ##### [非アクティブ デバイス](fix-unhealthy-sensors.md#inactive-devices)
 ##### [誤って構成されたデバイス](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [イベント ビューアーを使用して、マシン上のセンサー イベントとエラーを確認する](event-error-codes.md)
-  
+
 #### [Microsoft Defender for Endpoint サービスに関する問題のトラブルシューティング]()
 ##### [サービスに関する問題のトラブルシューティング](troubleshoot-mdatp.md)
 ##### [サービス正常性の確認](service-status.md)
@@ -670,7 +670,7 @@
 #### [ライブ応答に関する問題のトラブルシューティング](troubleshoot-live-response.md)
 
 #### [LiveAnalyzer を使用したサポート ログの収集](troubleshoot-collect-support-log.md)
- 
+
 #### [攻撃面の減少に関する問題のトラブルシューティング]()
 ##### [ネットワーク保護](troubleshoot-np.md)
 ##### [攻撃面の減少ルール](troubleshoot-asr.md)
@@ -678,4 +678,4 @@
 
 # [Microsoft 365 Defender](../defender/index.yml)
 # [Defender for Office 365](../office-365-security/index.yml)
-# [Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
+# [Defender for Identity](/defender-for-identity/)

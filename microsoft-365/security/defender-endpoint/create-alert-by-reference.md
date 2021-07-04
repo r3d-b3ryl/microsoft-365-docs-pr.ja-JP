@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8b05dde015bc96e1ccd3f80e25c416a371e03199
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7f8d3b10cee0b3c4a561dfd1f7567fa9818e7686
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772391"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289465"
 ---
 # <a name="create-alert-api"></a>アラート API の作成
 
@@ -39,35 +39,37 @@ ms.locfileid: "52772391"
 
 
 ## <a name="api-description"></a>API の説明
-イベントの上 [に新しいアラート](alerts.md) を **作成します**。
-<br>**Microsoft Defender for Endpoint Event は** 、アラートの作成に必要です。
-<br>要求でイベントから 3 つのパラメーターを指定する必要があります **。イベント** 時間、 **コンピューター ID、** レポート **ID です**。 次の例を参照してください。
-<br>Advanced Hunting API または Portal で見つかったイベントを使用できます。
-<br>同じタイトルを持つ同じデバイスに開いているアラートが既存の場合、新しく作成されたアラートは、そのデバイスとマージされます。
-<br>自動調査は、API を介して作成されたアラートで自動的に開始されます。
 
+イベントの上 [に新しいアラート](alerts.md) を **作成します**。
+
+- **Microsoft Defender for Endpoint Event は** 、アラートの作成に必要です。
+- 要求でイベントから 3 つのパラメーターを指定する必要があります **。イベント** 時間、 **コンピューター ID、** レポート **ID です**。 次の例を参照してください。
+- Advanced Hunting API または Portal で見つかったイベントを使用できます。
+- 同じタイトルを持つ同じデバイスに開いているアラートが既存の場合、新しく作成されたアラートは、そのデバイスとマージされます。
+- 自動調査は、API を介して作成されたアラートで自動的に開始されます。
 
 ## <a name="limitations"></a>制限事項
-1. この API のレート制限は、1 分あたり 15 回の呼び出しです。
 
+1. この API のレート制限は、1 分あたり 15 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   Alerts.ReadWrite.All |  'すべてのアラートの読み取りと書き込み'
+アプリケーション | Alerts.ReadWrite.All | 'すべてのアラートの読み取りと書き込み'
 委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
 
->[!Note]
+> [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
->- ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'アラートの調査' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
->- ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスできる必要[](machine-groups.md)があります (詳細については、「デバイス グループの作成と管理」を参照してください)
+>
+> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'アラートの調査' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
+> - ユーザーは、デバイス グループ設定に基づいて、アラートに関連付けられたデバイスにアクセスできる必要[](machine-groups.md)があります (詳細については、「デバイス グループの作成と管理」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 ```
 
@@ -99,7 +101,7 @@ category| String | アラートのカテゴリ。 プロパティの値は、"Ge
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request"></a>要求
 
 以下は、要求の例です。
 

@@ -1,6 +1,6 @@
 ---
 title: インシデント API の取得
-description: インシデントの取得 API を使用して、Defender で 1 つのインシデントを取得するMicrosoft 365します。
+description: '[インシデントの取得] API を使用して、インシデントを 1 つのインシデントにMicrosoft 365 Defender。'
 keywords: apis, graph api, supported apis, get, file, hash
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c578a353501ac7b38ac541b0200ffaad1d6743e1
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 2e051803a4cd228e3b455ec08b30e5c2197ca9a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888454"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289609"
 ---
 # <a name="get-incident-information-api"></a>インシデント情報 API の取得
 
@@ -38,27 +38,31 @@ ms.locfileid: "52888454"
 
 
 ## <a name="api-description"></a>API の説明
+
 ID によって特定のインシデントを取得します。
 
-
 ## <a name="limitations"></a>制限事項
+
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   Incident.Read.All | 'すべてのインシデントを読み取る'
-アプリケーション |   Incident.ReadWrite.All |    'すべてのインシデントの読み取りと書き込み'
+アプリケーション | Incident.Read.All | 'すべてのインシデントを読み取る'
+アプリケーション | Incident.ReadWrite.All | 'すべてのインシデントの読み取りと書き込み'
 委任 (職場または学校のアカウント) | Incident.Read | 'インシデントの読み取り'
 委任 (職場または学校のアカウント) | Incident.ReadWrite | 'インシデントの読み取りと書き込み'
 
->[!Note]
+> [!NOTE]
+>
 > ユーザー資格情報を使用してトークンを取得する場合:
->- ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示'
->- 応答には、ユーザーが公開されているインシデントだけが含まれます。
+>
+> - ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示'
+> - 応答には、ユーザーが公開されているインシデントだけが含まれます。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -68,12 +72,12 @@ GET .../api/incidents/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前 | 種類 | 説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 
-
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答

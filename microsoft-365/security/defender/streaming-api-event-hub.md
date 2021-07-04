@@ -1,6 +1,6 @@
 ---
-title: Defender Microsoft 365 Azure イベント ハブにストリーム配信する
-description: 詳細ハンティング イベントをイベント Microsoft 365にストリームする Defender を構成する方法について学習します。
+title: Azure イベント Microsoft 365 Defenderイベントをストリーミングする
+description: 高度なハンティング イベントMicrosoft 365 Defenderイベント ハブにストリーミングするイベント を構成する方法について学習します。
 keywords: raw data export, Streaming API, API, Azure Event Hub, Azure Storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f5d04d35c8c4fec18e1a689c51ecbc32d416adf
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2e43b75e49d01a05fdacae0adf63ea3337631dfd
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903818"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289249"
 ---
-# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Azure イベント Microsoft 365高度なハンティング イベントをストリーミングするように Defender を構成する
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>高度Microsoft 365 Defenderイベントを Azure イベント ハブにストリーミングするように構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,13 +37,15 @@ ms.locfileid: "52903818"
 
 1. テナントに [イベント ハブ](/azure/event-hubs/) を作成します。
 
-2. Azure テナントに [ログイン](https://ms.portal.azure.com/)し、[サブスクリプション] >[サブスクリプション>プロバイダー> **Microsoft.Insights** に登録する] に移動します。
+2. Azure テナントに [ログイン](https://ms.portal.azure.com/)し、[サブスクリプション] > サブスクリプション > リソース プロバイダー> **Microsoft.インサイト** に登録します。
 
 3. イベント ハブ名前空間を作成し、[イベント ハブ] **>[** 追加] に移動し、予想される負荷に適した価格レベル、スループット単位、自動インフレートを選択します。 詳細については、「価格 - イベント ハブ[」を参照|Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
 
-### <a name="add-contributor-permissions"></a>共同作成者のアクセス許可を追加する 
+### <a name="add-contributor-permissions"></a>共同作成者のアクセス許可を追加する
+
 Event Hub 名前空間が作成されると、次の処理が必要になります。
-1. Defender にログインするユーザーを投稿者Microsoft 365定義します。
+
+1. 共同作成者としてログインするユーザー Microsoft 365 Defender定義します。
 
 2. アプリケーションに接続する場合は、アプリ登録サービス プリンシパルを Reader、Azure Event Hub Data Receiver として追加します (これは、リソース グループまたはサブスクリプション レベルでも実行できます)。 
 
@@ -51,7 +53,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
 ## <a name="enable-raw-data-streaming"></a>生データ ストリーミングを有効にする
 
-1. Defender セキュリティ センター [にMicrosoft 365 *](https://security.microsoft.com) **グローバル** 管理者 _ または _* セキュリティ管理者 **_としてログイン_ します。
+1. セキュリティ センターに [Microsoft 365 Defender](https://security.microsoft.com) ***グローバル** 管理者 _ または _* セキュリティ管理者 **_としてログイン_ します。
 
 2. [ストリーミング [API の設定] ページに移動します](https://security.microsoft.com/settings/mtp_settings/raw_data_export)。
 
@@ -75,28 +77,25 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
 ```JSON
 {
-    "records": [
-                    {
-                        "time": "<The time Microsoft 365 Defender received the event>"
-                        "tenantId": "<The Id of the tenant that the event belongs to>"
-                        "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-                        "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
-                    }
-                    ...
-                ]
+   "records": [
+               {
+                  "time": "<The time Microsoft 365 Defender received the event>"
+                  "tenantId": "<The Id of the tenant that the event belongs to>"
+                  "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+                  "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+               }
+               ...
+            ]
 }
 ```
 
 - Azure Event Hub の各イベント ハブ メッセージには、レコードの一覧が含まれます。
 
-- 各レコードには、イベント名、Microsoft 365 Defender がイベントを受け取った時刻、そのイベントが属するテナント (テナントからのみイベントを取得する)、および JSON 形式のイベントが **"properties"** というプロパティで含まれる。
+- 各レコードには、イベント名、Microsoft 365 Defender がイベントを受信した時刻、そのイベントが属するテナント (テナントからのみイベントが取得されます)、および JSON 形式のイベントが **"properties"** というプロパティで含まれる。
 
-- Defender イベントのスキーマの詳細についてはMicrosoft 365高度なハンティング[の概要を参照してください](advanced-hunting-overview.md)。
+- イベントのスキーマの詳細については、「高度なMicrosoft 365 Defender概要[」を参照してください](advanced-hunting-overview.md)。
 
 - Advanced Hunting では **、DeviceInfo** テーブルに **MachineGroup** という名前の列が含まれるので、デバイスのグループが含まれる。 ここでは、すべてのイベントもこの列で装飾されます。 
-
-
-
 
 ## <a name="data-types-mapping"></a>データ型マッピング
 
@@ -105,7 +104,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 1. セキュリティ センターにMicrosoft 365[し、[](https://security.microsoft.com)高度な検索][ページに移動します](https://security.microsoft.com/hunting-package)。
 
 2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。
- 
+
    ```kusto
    {EventType}
    | getschema
@@ -117,8 +116,9 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
   ![イベント ハブ リソース Id2 のイメージ](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>関連項目
+
 - [高度なハンティングの概要](advanced-hunting-overview.md)
-- [Microsoft 365Defender ストリーミング API](streaming-api.md)
-- [Defender Microsoft 365を Azure ストレージ アカウントにストリーミングする](streaming-api-storage.md)
+- [Microsoft 365 Defender API](streaming-api.md)
+- [Azure Microsoft 365 Defenderアカウントにイベントをストリーミングする](streaming-api-storage.md)
 - [Azure Event Hub のドキュメント](/azure/event-hubs/)
 - [接続の問題のトラブルシューティング - Azure Event Hub](/azure/event-hubs/troubleshooting-guide)

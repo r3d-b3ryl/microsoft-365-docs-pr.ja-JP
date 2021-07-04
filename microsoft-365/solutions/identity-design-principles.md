@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b424b4f611f0553de4b7129d2c0b63cefbdeeab3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b22a3b8fc73ca1825f07dda5b84c85e2d2a68805
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229361"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289741"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>ID とそれ以降の 1 つのアーキテクトの視点
 
@@ -164,7 +164,7 @@ Azure ADには、詳細 [な監査およびレポート機能](/azure/active-dir
 
 今日、多くのお客様の IT グループが"製品" を中心に構成されているのが分かっています。 特定の製品ごとに専門家が必要なので、オンプレミスの世界では論理的です。 しかし、これらのサービスがクラウドに移行する中で、Active Directory データベースや Exchange データベースをデバッグする必要が全くなかったのは、本当に嬉しく思います。 オートメーション (クラウドの種類) は、特定の反復的な手動ジョブを削除します (工場に何が起こったかを確認します)。 ただし、これらは、サービス間のやり取り、影響、ビジネス ニーズなどについて理解するために、より複雑な要件に置き換えられる。 学習する必要がある場合 [は](/learn/)、クラウド変換によって有効な大きな機会があります。 テクノロジに飛び込む前に、IT スキルやチーム構造の変化を管理する方法について、お客様とよく話をします。
 
-すべてのユーザー SharePoint開発者に対して、「オンラインで XYZ を実行する方法SharePointしてください。 ワークフロー [Power Automate](/power-automate/) (またはFlow) を使用すると、はるかに強力なプラットフォームになります。 [Azure Bot Framework を使用](/azure/bot-service/?view=azure-bot-service-4.0)して、500-K アイテム リストの優れた UX を作成します。 CSOM ではなく[microsoft Graph](https://developer.microsoft.com/graph/)の使用を開始します。 [Microsoft Teams](/MicrosoftTeams/Teams-overview)にはSharePoint世界も含まれます。 リストできる他にも多くの例があります。 そこには広大で素晴らしい宇宙があります。 ドアを開き、 [探索を開始します]()。
+すべてのユーザー SharePoint開発者に対して、「オンラインで XYZ を実行する方法SharePointしてください。 ワークフロー [Power Automate](/power-automate/) (またはFlow) を使用すると、はるかに強力なプラットフォームになります。 [Azure Bot Framework を使用](/azure/bot-service/)して、500-K アイテム リストの優れた UX を作成します。 CSOM ではなく[microsoft Graph](https://developer.microsoft.com/graph/)の使用を開始します。 [Microsoft Teams](/MicrosoftTeams/Teams-overview)にはSharePoint世界も含まれます。 リストできる他にも多くの例があります。 そこには広大で素晴らしい宇宙があります。 ドアを開き、 [探索を開始します]()。
 
 もう 1 つの一般的な影響は、コンプライアンス領域です。 このクロスサービスアプローチは、多くのコンプライアンス ポリシーを完全に混同しているようです。 「すべての電子メール通信を電子情報開示システムにジャーナル処理する必要がある」という組織が表示されます。 電子メールがメールではなく、他のサービスへのウィンドウである場合、これは本当に何を意味しますか? Office 365の包括的なアプローチがありますが、人や[](../compliance/index.yml)プロセスの変化は、多くの場合、テクノロジよりもはるかに困難です。
 

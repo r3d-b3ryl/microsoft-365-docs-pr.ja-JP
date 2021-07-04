@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを設定する
-ms.openlocfilehash: b21474f3a9e045bf353d62ef6c7c8d4174801a1b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 0390ac48b351b30b75109a3e3a5d18c80847c9d2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623835"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289201"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>データ損失防止のオンプレミス スキャナー (プレビュー) を開始する
 
@@ -115,7 +115,7 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
 
 2. オンプレミス スキャナーの場所のすべてのデータにアクセスしてフィルタリングするには、「[Activity エクスプローラースタートガイド](data-classification-activity-explorer.md)」の手順に従ってください。
 
-3. [[コンプライアンス センターの監査ログ]](https://security.microsoft.com/auditlogsearch) を開きます。 パブリック プレビューの間、DLP ルールの一致は監査ログ UI で利用可能であるか、[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell からアクセスできます。 
+3. [[コンプライアンス センターの監査ログ]](https://security.microsoft.com/auditlogsearch) を開きます。 パブリック プレビューの間、DLP ルールの一致は監査ログ UI で利用可能であるか、[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell からアクセスできます。 
 
 
 ## <a name="next-steps"></a>次のステップ

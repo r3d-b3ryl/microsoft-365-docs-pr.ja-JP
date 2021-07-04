@@ -17,12 +17,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: '概要: PowerShell を使用Microsoft 365既存の顧客テナントに別のドメイン名を追加します。'
-ms.openlocfilehash: 3bcdb40e2c72e5aac8103b0b55ff6fccfe6a9fcc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 5ebbe11da9a93669945e7e3b096ce7afa18b5d3a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229085"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288433"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する
 
@@ -124,9 +124,6 @@ Name                   Status      Authentication
 FQDN of new domain     Verified    Managed
 ```
 
-
 ## <a name="see-also"></a>関連項目
-
-####
 
 [パートナーのヘルプ](https://go.microsoft.com/fwlink/p/?LinkID=533477)
