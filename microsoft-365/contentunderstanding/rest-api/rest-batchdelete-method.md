@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、適用された文書理解モデルを 1 つ以上のライブラリから削除します。
-ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: bbd3e496b50d3fddb31342fbc07d30984544e744
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177239"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287455"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -47,6 +47,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 |発行元|○|MachineLearningPublicationEntityData[]|それぞれがモデルとターゲット ドキュメント ライブラリを指定する MachineLearningPublicationEntityData のコレクション。|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | 名前 | 必須 | 型 | 説明 |
 |--------|-------|--------|------------|
 |ModelUniqueId|○|文字列|モデル ファイルの一意の ID。|
@@ -58,9 +59,10 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 
 | 名前   | 種類  | 説明|
 |--------|-------|------------|
-|200 OK||これは、複数のドキュメント ライブラリからのモデルの削除をサポートするためにカスタマイズされた API です。 部分的に成功した場合でも、200 OK が返される可能性があり、呼び出し元は応答本文を調べて、モデルがドキュメント ライブラリから正常に削除されたかどうかを理解する必要があります。|
+|200 OK||これは、複数ドキュメント ライブラリからのモデルの削除をサポートするためのカスタマイズされた API です。部分的に成功した場合でも 200 OK が返される可能性があり、呼び出し元は応答本文を調べて、モデルがドキュメント ライブラリから正常に削除されたかどうかを把握する必要があります。|
 
 ## <a name="response-body"></a>応答本文
+
 | 名前   | 種類  | 説明|
 |--------|-------|------------|
 |TotalSuccesses|整数|ドキュメント ライブラリから正常に削除されたモデルの総数。|
@@ -68,6 +70,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 |詳細|MachineLearningPublicationResult[]|MachineLearningPublicationResult のコレクション。それぞれが、ドキュメント ライブラリからモデルを削除した詳細な結果を指定します。|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | 名前   | 種類  | 説明|
 |--------|-------|------------|
 |StatusCode|整数|HTTP 状態コード。|
@@ -75,6 +78,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 |発行元|MachineLearningPublicationEntityData|モデル情報とターゲット ドキュメント ライブラリを指定します。| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | 名前 | 種類 | 説明 |
 |--------|--------|------------|
 |ModelUniqueId|文字列|モデル ファイルの一意の ID。|
@@ -102,7 +106,6 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
     ] 
 } 
 ```
-
 
 #### <a name="sample-response"></a>応答のサンプル
 
