@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: セキュリティ & コンプライアンス センターの DLP とメール フロー ルール (トランスポート ルール) が管理センターでどのように動作Exchangeします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34ddee1c1f0997852b6e59295ab9b630acc3ba3c
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: a7cd4eaafbd334c8886e0e6aa72d8c0e4c53a81e
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177179"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300054"
 ---
 # <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>コンプライアンス センターと管理センターの間Microsoft 365 DLP の動作Exchange方法
 
@@ -47,7 +47,7 @@ Exchange 管理センターで DLP ポリシーを作成した場合、これら
   
 - メール フロー ルールによってブロックExchangeメッセージは、セキュリティ コンプライアンス センターで作成された DLP ルール&されません。
 
-- DLP が DLP によってスキャンExchange前に、メール フロー ルールまたは他のフィルターによって検疫されるメッセージ
+- DLP が DLP によってスキャンExchange前に、メール フロー ルールまたは他のフィルターによって検疫されるメッセージ。
     
 - Exchange メール フロー ルールが、セキュリティ & コンプライアンス センターの DLP ポリシー (外部ユーザーの追加など) に一致する方法でメッセージを変更した場合、DLP ルールはこれを検出し、必要に応じてポリシーを適用します。
     

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する (プレビュー)
+title: Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 以外のクラウド アプリで dlp ポリシーを使用する方法について説明します。
-ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226841"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300126"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する (プレビュー)
 
@@ -42,6 +42,12 @@ DLP ポリシーを Microsoft 以外のクラウド アプリに使用する前�
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance 
 - Microsoft 365 E5 Security
+
+### <a name="permissions"></a>Permissions
+DLP ポリシーを作成するユーザーは、次のユーザーである必要があります。
+- 全体管理者
+- コンプライアンス管理者
+- コンプライアンス データ管理者
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>環境をCloud App Securityする
 
@@ -81,7 +87,8 @@ DLP ポリシーでルールを作成する場合は、Microsoft 以外のクラ
 
 ![サード パーティ製アプリの制限](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
-> [メモ]Microsoft 以外のアプリに適用される DLP ポリシーは、Microsoft Cloud App Security。 Microsoft 以外のアプリの DLP ポリシーが作成されると、同じポリシーが自動的に作成Microsoft Cloud App Security。
+> [!NOTE]
+> Microsoft 以外のアプリに適用される DLP ポリシーは、Microsoft Cloud App Security。 Microsoft 以外のアプリの DLP ポリシーが作成されると、同じポリシーが自動的に作成Microsoft Cloud App Security。
 
 DLP ポリシーの作成と構成の詳細については、「テストの作成と DLP ポリシー [の調整」を参照してください](./create-test-tune-dlp-policy.md)。
 

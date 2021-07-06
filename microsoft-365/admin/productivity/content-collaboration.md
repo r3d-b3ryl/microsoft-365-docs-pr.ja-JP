@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: コンテンツ コラボレーションの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: cca218d15af98925bf61bbb314cfd4d35aa0711a
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 2921cc738d1325416a0a5a8ab4a8eea9456b3269
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779736"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300086"
 ---
 # <a name="content-collaboration--people-experiences"></a>コンテンツのコラボレーション – ユーザー エクスペリエンス
 
@@ -112,7 +112,7 @@ Microsoft OneDriveおよびビジネス 向けSharePointは、ユーザーがデ
 
 :::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="ユーザーまたはユーザーにファイルを作成するユーザーの数OneDriveグラフSharePoint":::
 
-1. **ヘッダー: モーメント** にファイルを作成するMicrosoft 365 Officeでアクティブなユーザー OneDrive割合SharePoint。
+1. **ヘッダー:** アプリケーション上でファイルを作成するMicrosoft 365 Officeでアクティブなユーザーの割合を強調表示OneDriveまたはSharePoint。
 2. **本文:** コンテンツの作成の値に関する情報を、OneDriveおよびSharePoint。
 3. **視覚化:** 視覚化の内訳は、次のように、Microsoft Office アプリを使用してファイルを OneDriveおよびSharePointする範囲を表します。
       - **OneDrive:** バーの青い (色付き) 部分とバーの分数は、Office アプリケーションでコンテンツを作成する際にアクティブなユーザーの割合を次OneDriveします。
@@ -126,9 +126,11 @@ Microsoft OneDriveおよびビジネス 向けSharePointは、ユーザーがデ
 
 ### <a name="use-of-attachments-in-email"></a>メールでの添付ファイルの使用
 
+**メールでの添付ファイルの使用** クラウド内のコンテンツへのリンクではなく、メールに物理ファイルを添付しているユーザーの数を把握し、時間の流中でこの数の削減を監視します。
+
 :::image type="content" source="../../media/emailattachments.png" alt-text="電子メールの添付ファイルの使用。":::
 
-1. **ヘッダー:** モーメントに保存されていないメールで添付ファイルを使用するユーザーの割合をOneDriveまたはSharePoint。
+1. **ヘッダー:** メールで添付ファイルを使用するユーザーの割合を強調表示します。メールに保存されていないユーザーは、OneDriveまたはSharePoint。
 2. **本文:** コラボレーションとセキュリティの観点からオンライン ファイルへのリンクを共有する価値に関する情報を提供します。
 3. **視覚化:** 視覚化の内訳は、メールにコンテンツを添付しているユーザーがさまざまなモード (OneDrive または SharePoint 上のファイル、オンライン ファイルへのリンク、電子メールに埋め込まれたリンク) を使用している範囲を表すものです。
       - **ファイルの添付:** バーの青い (色付き) 部分とバーの分数 (分子/分母) は、電子メールで添付ファイルを使用しているユーザーの割合を表します。
@@ -137,16 +139,13 @@ Microsoft OneDriveおよびビジネス 向けSharePointは、ユーザーがデ
       - **オンライン ファイルへのリンク:** バーの青い (色付き) 部分とバーの分数 (分子/分母) は、添付ファイルを使用し、電子メール内のファイルへのリンクを添付するユーザーの割合を表します。
         - Numerator: 過去 28 日以内にオンライン ファイル (OneDrive または SharePoint に保存) へのリンクをメールに添付するユーザーの数。
         - 分母: 過去 28 日以内に、Exchange、OneDrive、SharePoint、または両方にアクセスできるユーザーの数。
-      - **メールにリンクを埋め込む:** バーの青い (色付き) 部分とバーの端数は、電子メールの本文にリンクを埋め込むユーザーの割合を表します。
-        - Numerator: 過去 28 日以内にオンライン ファイル (OneDrive または SharePoint に保存) への電子メールの本文にリンクを埋め込むユーザーの数。
-        - 分母: 過去 28 日以内に、Exchange、OneDrive、SharePoint、または両方にアクセスできるユーザーの数。
 4. **リソースへのリンク:** ヘルプ コンテンツを表示するには、このリンクを選択します。
 
 ### <a name="sharing-of-online-files"></a>オンライン ファイルの共有
 
 :::image type="content" source="../../media/sharingonlinefiles.png" alt-text="オンラインでファイルを共有するユーザーの数を示すグラフ。":::
 
-1. **ヘッダー: モーメント** 共有しているユーザーまたは外部ユーザーに対してアクセスOneDriveユーザー SharePoint割合を指定します。
+1. **ヘッダー:** 外部でファイルを共有しているユーザーまたはOneDriveまたはSharePointにアクセスできるユーザーの割合を強調表示します。
 2. **本文:** 組織内のファイル共有設定&#39;変更して、組織に最も適したレベルのコラボレーションを有効にする管理者に関する情報を提供します。
 3. **視覚化:** ユーザーまたはユーザーにアクセスできるユーザーが、OneDriveまたは外部SharePoint共有する範囲を表します。
       - **外部:** バーの青い (色付き) 部分とバーの分数 (分子/分母) は、OneDrive または SharePoint へのアクセス権を持ち、ファイルを外部で共有しているユーザーの割合を表します。
@@ -161,7 +160,7 @@ Microsoft OneDriveおよびビジネス 向けSharePointは、ユーザーがデ
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="最も共同作業が行ったファイルの数を示すグラフ。":::
 
-1. **ヘッダー:** モーメント 4 つ以上のファイルで共同作業を行OneDriveまたはSharePointにアクセスできるユーザーの割合を指定します。
+1. **ヘッダー:** 4 つ以上のファイルで共同作業を行OneDriveまたはSharePointユーザーの割合を強調表示します。
 2. **本文:** ユーザーがオンライン ファイルを活用して共同作業を強化する方法に関する情報を提供します。
 3. **視覚化:** 共同作業するファイルの数に基づいて、OneDriveまたはSharePointユーザーの配布を表示します。 これは、次の 4 つのカテゴリ (バーの青い部分と、そのカテゴリに分類される OneDrive または SharePoint にアクセスできるユーザーの割合を表します)。
       - **コラボレーションなし:**
@@ -183,7 +182,7 @@ Microsoft OneDriveおよびビジネス 向けSharePointは、ユーザーがデ
 
 :::image type="content" source="../../media/networkperfstrength.png" alt-text="ユーザーとユーザーのネットワークパフォーマンスをOneDriveグラフSharePoint。":::
 
-1. **ヘッダー:** モーメントネットワーク接続が不十分なテスト済みデバイスの割合をOneDriveおよびSharePoint。 
+1. **ヘッダー:** テスト済みのすべてのデバイスで、ネットワーク接続が悪いデバイスの割合を強調表示し、OneDriveおよびSharePoint。 
 2. **本文:** ネットワーク接続のパフォーマンスがコラボレーションにとって重要な理由に関する情報を提供します。 
 3. **視覚化:** ネットワーク接続パフォーマンスのレベルが異なるデバイスの割合を、次のOneDrive表示SharePoint。
       - **81~ 100 (最適)**: バーの濃い緑色 (色付き) 部分は、パフォーマンスが最も高いデバイスの割合を表します。

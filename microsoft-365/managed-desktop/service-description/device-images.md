@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276931"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300109"
 ---
 # <a name="device-images"></a>デバイスの画像
 
@@ -31,7 +31,7 @@ ms.locfileid: "53276931"
 Dell の営業担当者と直接連絡を取り合い、ユーザーが承認した画像がMicrosoft マネージド デスクトップデバイスに適用されます。 Dell デバイス、イメージ、および注文プロセスに関する詳細な質問については、次の MMD_at_dell@dell.com。
 
 ### <a name="hp"></a>HP 
-HP から新しいデバイスを注文する場合は、ショップ[Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices)ビジネス デバイス サイトにある各モデルの [追加要件] セクションに記載されている特定の SKU を必ず使用してください (Microsoft マネージド デスクトップ デバイスを表示するためにビューをフィルター処理します)。
+HP から新しいデバイスを注文する場合は、ショップ[Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter)ビジネス デバイス サイトにある各モデルの [追加要件] セクションに記載されている特定の SKU を必ず使用してください (Microsoft マネージド デスクトップ デバイスを表示するためにビューをフィルター処理します)。
 
 例外として承認されているが、現在 [デバイス一覧] ページに[](customizing.md)表示されていない HP からデバイスを注文する場合は、必ずモデルに使用する SKU を要求してください。 例外要求を使用してこの情報を取得するために HP と作業します。 次のアドレスを使用して、デバイスとデバイスの順序付け手順に関する質問については、HP に直接お問い合わせください。
  
