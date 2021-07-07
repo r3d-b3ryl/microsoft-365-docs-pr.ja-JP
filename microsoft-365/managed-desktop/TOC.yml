@@ -25,11 +25,6 @@
           href: service-description/device-images.md
         - name: デバイス名
           href: service-description/device-names.md
-        - name: プログラム デバイス
-          href: service-description/device-list.md
-          items:
-            - name: アーカイブされたプログラム デバイス
-              href: service-description/archived-device-list.md
         - name: デバイス サービス
           href: service-description/device-services.md
         - name: デバイス プロファイル
