@@ -1,0 +1,38 @@
+- name: テストベースのドキュメント
+  href: index.yml
+- name: 概要
+  items:
+    - name: テスト ベースとは
+      href: overview.md
+- name: クイックスタート
+  items:
+    - name: テストベース アカウントの作成
+      href: createAccount.md
+    - name: パッケージのアップロード
+      href: uploadApplication.md
+    - name: アップロードバイナリ&依存関係
+      href: binaries.md
+    - name: テスト タスクの設定
+      href: testtask.md
+    - name: テスト オプションの設定
+      href: testoptions.md
+    - name: レビュー
+      href: review.md
+    - name: パッケージ ガイドライン
+      href: contentguideline.md
+- name: 使い方ガイド
+  items:
+    - name: サーバー アプリケーションのテスト
+      href: server.md
+    - name: 機能テスト
+      href: functional.md
+    - name: 機能更新プログラムの検証
+      href: feature.md
+    - name: メモリ回帰分析
+      href: memory.md
+    - name: CPU 回帰分析
+      href: cpu.md
+- name: Reference
+  items:
+    - name: よく寄せられる質問
+      href: faq.md
