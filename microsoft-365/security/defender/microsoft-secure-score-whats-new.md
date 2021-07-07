@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b3f86dfbc1ae89eff61c680737061b01998a527b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2f02de4b738d9d61ef9f98cd03d15bd91709339e
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933867"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314430"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 
@@ -35,7 +35,13 @@ ms.locfileid: "51933867"
 Microsoft Secure Score をセキュリティの姿勢をより良くするために、いくつかの変更を加えた。 今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
 
 Microsoft Secure Score は、セキュリティ https://security.microsoft.com/securescore センターのMicrosoft 365[にあります](overview-security-center.md)。
-    
+
+## <a name="june-2021"></a>2021 年 6 月
+
+### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>ユーザーに関連する改善アクションを削除Microsoft Cloud App Security
+
+- 異常なCloud App Securityを検出するには、次の情報を使用します。
+
 ## <a name="february-2021"></a>2021 年 2 月
 
 ### <a name="compatibility-with-graph-api"></a>API とのGraph互換性
@@ -48,7 +54,7 @@ Microsoft Secure Score の推奨事項は、Graph API を介して配信され�
 
 Microsoft Teamsユーザーは、Secure Score の新しい改善アクションとして「匿名ユーザーの会議への参加を制限する」と表示されます。
 
-## <a name="december-2020"></a>2020 年 12 月
+## <a name="december-2020"></a>2020年12月
 
 ### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に 6 つのアカウント関連の改善アクションを追加しました。
 

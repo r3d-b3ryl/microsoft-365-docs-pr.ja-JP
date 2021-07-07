@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8880f045202fd1c4374e9cec3076144f81eb68d2
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: 8babc8c5e7464637e29ddacef50c92f252033d26
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657719"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314370"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft Secure Score に関する情報
 
@@ -35,11 +35,16 @@ Microsoft Secure Score は、セキュリティ https://security.microsoft.com/s
 
 Microsoft [Secure Score](microsoft-secure-score.md) をセキュリティの姿勢をより良くし、使いやすさを向上させるために、近い将来、いくつかの変更を加えています。 スコアと可能な最大スコアが変更される場合があります。
 
-### <a name="june-2021"></a>2021 年 6 月
+### <a name="july-2021"></a>2021 年 7 月
 
-#### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>ユーザーに関連する改善アクションを削除Microsoft Cloud App Security
+#### <a name="add-improvement-action-related-to-microsoft-teams"></a>ユーザーに関連する改善アクションをMicrosoft Teams
 
-- 異常なCloud App Securityを検出するには、次の情報を使用します。
+- ダイヤルイン ユーザーが会議ロビーをバイパスするのを制限します。
+- 外部参加者が会議で制御を持つことをTeamsします。
+- 匿名ユーザーによる会議の開始Teams制限します。
+- 会議に対してロビーをセットアップTeamsします。
+- 会議に参加できるユーザーをTeamsします。
+
 
 ## <a name="related-resources"></a>関連リソース
 

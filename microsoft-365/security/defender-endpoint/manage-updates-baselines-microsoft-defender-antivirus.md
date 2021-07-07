@@ -13,16 +13,16 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr
+ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 06/23/2021
-ms.openlocfilehash: 88be32a2c1e9204629682ec678f80ab6daf701f4
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.date: 07/06/2021
+ms.openlocfilehash: f64c71501a550aabdf16b9de2d7a5db93e48caef
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105334"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314466"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -56,7 +56,7 @@ Microsoft Defender ウイルス対策[は、](cloud-protection-microsoft-defende
 
 ## <a name="product-updates"></a>製品の更新
 
-Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)プラットフォーム更新プログラムと呼ばれる) が必要であり、各リリースと共に主要な機能更新プログラムWindows 10されます。
+Microsoft Defender ウイルス対策プラットフォーム更新 [プログラムと呼ばれる月次更新プログラム (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) *が必要です*。
 
 更新プログラムの配布は、次のいずれかの方法で管理できます。 
 
@@ -67,7 +67,10 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 詳細については、「保護更新プログラム[のソースを管理するMicrosoft Defender ウイルス対策を参照してください](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
 
 > [!NOTE]
-> 月次更新プログラムは段階的にリリースされ、Window Server Update Services に複数のパッケージ [が表示されます](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)。
+> - 月次更新プログラムは段階的にリリースされ、Window Server Update Services に複数のパッケージ [が表示されます](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)。
+> - この記事では、広範なリリース チャネルに含まれる変更の一覧を示します。 [最新の広範なチャネル リリースについては、こちらを参照してください](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)。 
+> - 段階的なロールアウト プロセスの詳細、および次のリリースの詳細については、「Microsoft Defender 更新プログラムの段階的なロールアウト プロセスの管理」 [を参照してください](manage-gradual-rollout.md)。
+> - セキュリティ インテリジェンスの更新プログラムの詳細については、「セキュリティ インテリジェンスの更新プログラム 」および「Microsoft Defender ウイルス対策 Microsoft マルウェア対策」[を参照してください](https://www.microsoft.com/wdsi/defenderupdates)。 
 
 ## <a name="monthly-platform-and-engine-versions"></a>月次プラットフォームとエンジンのバージョン
 
@@ -77,8 +80,26 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 - パフォーマンスの向上。
 - サービスの改善。そして 
 - 統合の改善 (クラウド[、Microsoft 365 Defender)。](/microsoft-365/security/defender/microsoft-365-defender)
-<br/><br/>
+<br/>
 <details>
+<summary> 2021 年 6 月 (プラットフォーム: 4.18.2106.5 |エンジン: 1.1.18300.4)</summary>
+
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.343.17.0**  
+&ensp;リリース: **2021 年 6 月 28 日**  
+&ensp;プラットフォーム: **4.18.2106.5**  
+&ensp;エンジン: **1.1.18300.4**  
+&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**
+    
+### <a name="whats-new"></a>新機能
+- Microsoft Defender 更新プログラムの段階的なロールアウト プロセスを管理するための新しいコントロール。 [「Microsoft Defender 更新プログラムの段階的なロールアウト プロセスの管理」を参照してください](manage-gradual-rollout.md)。
+- 動作監視エンジンの改善
+- マルウェア対策定義のロールアウトの改善
+- 拡張エッジ ネットワーク イベント検査
+
+### <a name="known-issues"></a>既知の問題
+既知の問題はありません  
+<br/>
+</details><details>
 <summary> May-2021 (プラットフォーム: 4.18.2105.4 |エンジン: 1.1.18200.4)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.341.8.0**  
@@ -104,21 +125,26 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
     
 ### <a name="whats-new"></a>新機能
 - その他の動作監視ロジック
-- カーネル モードのキーロガー検出の改善
+- カーネル モードのキー ロガー検出の改善
 - Microsoft Defender 更新プログラムの段階的なロールアウト プロセスを管理するための新しいコントロール [が追加されました](manage-gradual-rollout.md)
 
 
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
+
+新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。 
+<details>
 <summary> 2021 年 3 月 (プラットフォーム: 4.18.2103.7 |エンジン: 1.1.18000.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.335.36.0**  
 &ensp;リリース: **2021 年 4 月 2 日**  
 &ensp;プラットフォーム: **4.18.2103.7**  
 &ensp;エンジン: **1.1.18000.5**  
-&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**
+&ensp;サポート フェーズ: **テクニカル アップグレード のサポート (のみ)**
     
 ### <a name="whats-new"></a>新機能
 
@@ -129,13 +155,7 @@ Microsoft Defender ウイルス対策月次更新[プログラム (KB4052623) (]
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
-
-新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。 
-<br/><br/>
-<details>
+</details><details>
 <summary> 2021 年 2 月 (プラットフォーム: 4.18.2102.3 |エンジン: 1.1.17900.7)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.333.7.0**  
@@ -486,7 +506,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし  
 <br/>
 </details><details>
@@ -500,7 +520,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし  
 <br/>
 </details><details>
@@ -514,7 +534,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし  
 <br/>
 </details><details>
@@ -528,7 +548,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし  
 <br/>
 </details><details>
@@ -542,7 +562,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし  
 <br/>
 </details><details>
@@ -556,7 +576,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし  
 <br/>
 </details><details>
@@ -570,7 +590,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし  
 <br/>
 </details><details>
@@ -584,7 +604,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - 更新されたMicrosoft Defender ウイルス対策署名  
 <br/>
 </details><details>
@@ -598,7 +618,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - なし  
 <br/>
 </details><details>
@@ -612,7 +632,7 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 ### <a name="fixes"></a>修正プログラム
 - なし
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a>ページの先頭へ
 - RS1 以降の OS Windows 10インストール イメージのサポートが追加されました。  
 <br/>
 </details>

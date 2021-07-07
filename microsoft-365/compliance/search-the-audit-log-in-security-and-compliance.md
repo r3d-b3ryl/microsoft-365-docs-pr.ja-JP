@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 007881220c3bdf862e75464521733e64f0d6c5c0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287505"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300138"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -912,11 +912,11 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|
 |コメントが作成される|CreateComment|フォーム所有者がコメントまたはスコアをクイズに追加する。|
-|フォームが作成される|CreateForm|フォーム所有者が新しいフォームを作成する。|
+|フォームが作成される|CreateForm|フォーム所有者が新しいフォームを作成する。 <br><br>プロパティ DataMode:string は、プロパティ値が DataSync と等しい場合、現在のフォームが新規または既存の Excel ブックと同期するように設定されていることを示します。 プロパティ ExcelWorkbookLink:string は、関連する現在のフォームの Excel ブック ID を示します。|
 |フォームが編集される|EditForm|フォーム所有者が質問の作成、削除、編集など、フォームを編集する。 プロパティ *EditOperation:string* は、編集操作名を示します。 次の操作を実行できます。<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage には、クエリ内や背景テーマなど、ユーザーが画像をアップロードできるフォーム内のすべての場所が含まれます。|
-|フォームが移動される|MoveForm|フォーム所有者がフォームを移動する。 <br><br>プロパティ DestinationUserId:string は、フォームを移動したユーザーのユーザー ID を示します。 プロパティ NewFormId:string は、新たにコピーされたフォームの新しい ID です。|
+|フォームが移動される|MoveForm|フォーム所有者がフォームを移動する。 <br><br>プロパティ DestinationUserId:string は、フォームを移動したユーザーのユーザー ID を示します。 プロパティ NewFormId:string は、新たにコピーされたフォームの新しい ID です。 プロパティ IsDelegateAccess:boolean は、現在のフォーム移動アクションが管理委任ページ経由で実行されていることを示します。|
 |フォームが削除される|DeleteForm|フォーム所有者がフォームを削除する。これには、SoftDelete (削除オプションが使用され、フォームがごみ箱に移動されます) と HardDelete (ごみ箱が空になります) が含まれます。|
-|フォームが表示される (デザイン時)|ViewForm|フォーム所有者が既存のフォームを編集するために開く。|
+|フォームが表示される (デザイン時)|ViewForm|フォーム所有者が既存のフォームを編集するために開く。 <br><br>プロパティ AccessDenied:boolean は、現在のフォームのアクセスがアクセス許可チェックで拒否されたことを示します。 プロパティ FromSummaryLink:boolean は、現在の要求が概要リンクページで発生したことを示します。|
 |フォームがプレビューされる|PreviewForm|フォーム所有者がプレビュー機能を使用してフォームをプレビューする。|
 |フォームがエクスポートされる|ExportForm|フォーム所有者が結果を Excel にエクスポートする。 <br><br>プロパティ ExportFormat:string は、Excel ファイルがダウンロードなのかオンラインなのかを示します。|
 |コピー用のフォームの共有が許可される|AllowShareFormForCopy|フォームを他のユーザーと共有するためのテンプレート リンクをフォーム所有者が作成する。 このイベントは、フォーム所有者がテンプレート URL を生成するためにクリックした際にログに記録されます。|
@@ -935,10 +935,21 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 |フォームのフィッシング状態が更新される|UpdatePhishingStatus|このイベントは、内部セキュリティ状態の詳細値が変更されたとき、この変更により最終的なセキュリティの状態 (たとえば、現在フォームは「終了済み」または「開始済み」) が変更されたかどうかに関わらずログに記録されます。 つまり、最終的なセキュリティ状態が変更されない場合でも、重複するイベントが表示されることがあります。 このイベントの可能な状態の値は次のとおりです。<br/>- 削除 <br/>- 管理者による削除 <br/>- 管理者のブロック解除 <br/>- 自動ブロック <br/>- 自動ブロック解除 <br/>- 顧客から報告 <br/>- 顧客からの報告をリセット|
 |ユーザーのフィッシング状態が更新される|UpdateUserPhishingStatus|このイベントは、ユーザーのセキュリティ状態の値が変更されるたびにログに記録されます。 監査レコードのユーザー状態の値は、ユーザーが Microsoft Online の安全チームによって削除されたフィッシング フォームを作成したときに、**フィッシング詐欺師として確認されました**。 管理者がユーザーのブロックを解除すると、ユーザーの状態の値は **[通常のユーザーとしてリセット]** に設定されます。|
 |Forms Pro の招待が送信される|ProInvitation|ユーザーがクリックして Pro の試用版をアクティブにする。|
-|フォームの設定が更新される|UpdateFormSetting|フォーム所有者がフォームの設定を更新する。 <br><br>プロパティ FormSettingName:string は、設定名と新しい値を示します。|
+|フォームの設定が更新される|UpdateFormSetting|フォーム所有者は 1 つ以上のフォーム設定を更新します。 <br><br>プロパティ FormSettingName:string は、更新済みの機密設定の名前を示します。 プロパティ NewFormSettings:string は、更新済みの設定の名前および新しい値を示します。 プロパティ thankYouMessageContainsLink:boolean は、URL リンクを含む更新済みの感謝メッセージを示します。|
 |ユーザー設定が更新される|UpdateUserSetting|フォーム所有者がユーザー設定を更新する。 <br><br>プロパティ UserSettingName:string は、設定名と新しい値を示します。|
 |フォームが一覧表示される|ListForms|フォーム所有者がフォームの一覧を表示している。 <br><br>プロパティ ViewType:string は、フォーム所有者が表示に使用しているビュー ([すべてのフォーム]、[自分と共有]、または [グループ フォーム]) を示します。|
 |回答が送信される|SubmitResponse|ユーザーがフォームへの回答を送信する。 <br><br>プロパティ IsInternalForm:boolean は、回答者がフォーム所有者と同じ組織内にいるかどうかを示します。|
+|すべてのユーザーを応答可能にする設定を有効にしました|AllowAnonymousResponse|フォーム所有者が、すべてのユーザーにフォームへの応答を許可する設定をオンにしている。|
+|すべてのユーザーを応答可能にする設定を無効にしました|DisallowAnonymousResponse|フォーム所有者が、すべてのユーザーにフォームへの応答を許可する設定をオフにしている。|
+|特定のユーザーを応答可能にする設定を有効にしました|EnableSpecificResponse|フォーム所有者が、現在の組織の特定のユーザーまたは特定のグループのみフォームへの応答を許可する設定をオンにしている。|
+|特定のユーザーを応答可能にする設定を無効にしました|DisableSpecificResponse|フォーム所有者が、現在の組織の特定のユーザーまたは特定のグループのみフォームへの応答を許可する設定をオフにしている。|
+|特定の回答者を追加しました|AddSpecificResponder|フォーム所有者が特定の回答者リストに新しいユーザーまたはグループを追加する。|
+|特定の回答者を削除しました|RemoveSpecificResponder|フォーム所有者がに新しいユーザーまたはグループを特定の回答者リストから削除する。|
+|共同作業を無効にしました|DisableCollaboration|フォーム所有者がフォームでの共同作業の設定をオフにしている。|
+|Office 365 での職場または学校アカウントの共同作業を有効にしました|EnableWorkOrSchoolCollaboration|フォーム所有者が、Office 365 の職場または学校アカウントを使用するユーザーにフォームの表示および編集を許可する設定をオンにしている。|
+|所属組織内のユーザーの共同作業を有効にしました|EnableSameOrgCollaboration|フォーム所有者が、現在の組織のユーザーにフォームの表示および編集を許可する設定をオンにしている。|
+|特定のユーザーの共同作業を有効にしました|EnableSpecificCollaboaration|フォーム所有者が、現在の組織の特定のユーザーまたは特定のグループのみフォームへの表示および編集を許可する設定をオンにしている。|
+|Excel ブックに接続しました|ConnectToExcelWorkbook|フォームを Excel ブックに接続しました。 <br><br>プロパティ ExcelWorkbookLink:string は、関連する現在のフォームの Excel ブック ID を示します。|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ
