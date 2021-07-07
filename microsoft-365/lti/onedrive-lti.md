@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 新しいツール相互運用性アプリを使用して、課題の作成と採点、コース コンテンツの構築とキュレーション、ファイルMicrosoft OneDrive ラーニング共同作業を行います。
-ms.openlocfilehash: 985a316bac689b9bc6c53ab65782d548fcad0db8
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: bcb374ed1666f23fa5f3d4692f43a4369670e891
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53257021"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322223"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>LTI Microsoft OneDriveキャンバスとの統合
 
@@ -40,7 +40,11 @@ LTI Microsoft OneDrive Canvas との統合は、2 つのステッププロセス
 
 1. <a href="https://onedrivelti.microsoft.com/admin" target="_blank">LTI 登録ポータルMicrosoft OneDriveサインインする</a>
 1. [管理者の **同意] ボタンを** 選択し、アクセス許可を受け入れる。
-1. [新しい **LTI テナントの作成] ボタンを選択** します。 [LTI 登録] ページでドロップダウン **で [Canvas]** を選択し、Canvas インスタンスのベース URL を入力します。
+
+> [!CAUTION]
+> この手順を実行しない場合は、次の手順でエラーが発生し、エラーが発生すると、この手順を 1 時間実行できません。
+
+3. [新しい **LTI テナントの作成] ボタンを選択** します。 [LTI 登録] ページでドロップダウン **で [Canvas]** を選択し、Canvas インスタンスのベース URL を入力します。
 
 > [!NOTE]
 > Canvas インスタンスが ( ) の場合 https://contoso.test.instructure.com https://contoso.test.instructure.com) は、完全な URL を入力する必要があります。

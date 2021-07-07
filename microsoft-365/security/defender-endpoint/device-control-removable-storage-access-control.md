@@ -16,18 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229577"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327049"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender for Endpoint Device Control リムーバブル Storageアクセス制御を使用すると、次のタスクを実行できます。
+
 - 除外の付いたリムーバブル 記憶域への読み取り、書き込み、または実行アクセスの監査、許可、または防止
 
 |特権 |アクセス許可  |
@@ -47,6 +48,8 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 - **4.18.2105** 以降 : HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId のワイルドカード サポートの追加、特定のコンピューター上の特定のユーザーの組み合わせ、削除可能な SSD (SanDisk Extreme SSD)/USB Attached SCSI (UAS) のサポート
 
+- **4.18.2107** 以降 : ポータブル Windows (WPD) のサポートを追加する (タブレットなどのモバイル デバイスの場合)
+
 :::image type="content" source="images/powershell.png" alt-text="PowerShell インターフェイス":::
 
 > [!NOTE]
@@ -62,15 +65,14 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 **プロパティ名: DescriptorIdList**
 
-1. 説明: グループでカバーするデバイス プロパティを一覧表示します。
-グループでカバーするデバイス のプロパティを一覧表示します。
+2. 説明: グループでカバーするデバイス プロパティを一覧表示します。
 各デバイス プロパティの詳細については、上記 **の「デバイスのプロパティ** 」セクションを参照してください。
 
-1. オプション:
-
-    - プライマリ ID
+3. オプション:
+    - PrimaryId
         - RemovableMediaDevices
         - CdRomDevices
+        - WpdDevices
     - DeviceId
     - HardwareId
     - InstancePathId: InstancePathId は、システム内のデバイスを一意に識別する文字列です (たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0)。 末尾の番号 (たとえば、&**0)** は使用可能なスロットを表し、デバイス間で変更される場合があります。 最適な結果を得る場合は、末尾にワイルドカードを使用します。 たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
@@ -87,7 +89,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 1. 説明: DescriptorIDList で複数のデバイス プロパティが使用されている場合、MatchType はリレーションシップを定義します。
 
-1. オプション:
+2. オプション:
 
     - MatchAll: DescriptorIdList の下の属性は **And** リレーションシップです。たとえば、管理者が DeviceID と InstancePathID を置く場合、接続されている USB ごとに、システムは USB が両方の値を満たするかどうかを確認します。
     - MatchAny: DescriptorIdList の下の属性は **Or リレーションシップ** です。たとえば、管理者が DeviceID と InstancePathID を置く場合、接続されている USB ごとに、USB が同じ **DeviceID** または **InstanceID** 値を持っている限り、システムは強制を実行します。
@@ -100,9 +102,9 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 **プロパティ名: IncludedIdList**
 
-2. 説明: ポリシーが適用されるグループ。 複数のグループが追加されている場合、ポリシーは、すべてのグループ内の任意のメディアに適用されます。
+1. 説明: ポリシーが適用されるグループ。 複数のグループが追加されている場合、ポリシーは、すべてのグループ内の任意のメディアに適用されます。
 
-3. オプション: このインスタンスでグループ ID/GUID を使用する必要があります。
+2. オプション: このインスタンスでグループ ID/GUID を使用する必要があります。
 
 次の例は、GroupID の使用法を示しています。
 
@@ -135,11 +137,11 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 **プロパティ名: Sid**
 
-説明: このポリシーを特定のユーザーまたはユーザー グループに適用するかどうかを定義します。1 つのエントリに最大 1 つの Sid を含め、Sid を使用しないエントリは、コンピューターにポリシーを適用する方法を意味します。
+説明: ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のユーザー またはユーザー グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの Sid を含め、Sid を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。
 
 **プロパティ名: ComputerSid**
 
-説明: このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリに最大 1 つの ComputerSid を指定し、ComputerSid を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。
+説明: ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの ComputerSid を指定し、ComputerSid を使用しないエントリはコンピューター上にポリシーを適用します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。
 
 **プロパティ名: オプション**
 
@@ -322,6 +324,7 @@ DeviceEvents
 :::image type="content" source="images/block-removable-storage.png" alt-text="リムーバブル 記憶域のブロックを示す画面":::
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
+
 **USB の最大数に対するリムーバブル 記憶域メディアの制限は何ですか?**
 
 100,000 メディアを持つ 1 つの USB グループ (最大 7 MB のサイズ) を検証しました。 このポリシーは、パフォーマンスの問題なく Intune と GPO の両方で動作します。
@@ -347,4 +350,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-

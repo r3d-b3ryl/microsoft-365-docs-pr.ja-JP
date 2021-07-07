@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 管理者アカウントにサインインMicrosoft 365を使用して、個々のユーザー パスワードを有効期限が切れWindows PowerShell。
-ms.openlocfilehash: a0b247f4b736ecccab57398e1e7131f0a06a2958
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c9f0c245aca0e028183c42f6a257068d74aa563d
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286275"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326725"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>個別のユーザーのパスワードを無期限に設定する
 
@@ -43,8 +43,6 @@ Microsoft クラウド サービスのグローバル管理者は、Azure Active
 
 このガイドは、Intune や Microsoft 365 などの他のプロバイダーにも適用されます。これは、Azure AD ID およびディレクトリ サービスにも依存します。 パスワードの有効期限は、変更できるポリシーの唯一の部分です。
 
-> [!NOTE]
-> ディレクトリ同期によって同期されないユーザー アカウントのパスワードのみ、有効期限が切れない状態に構成できます。 ディレクトリ同期の詳細については[、「Azure](/azure/active-directory/connect/active-directory-aadconnect)Connect ADを使用AD。
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>パスワードの有効期限ポリシーを確認する方法
 

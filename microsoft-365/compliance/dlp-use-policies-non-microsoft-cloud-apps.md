@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 以外のクラウド アプリで dlp ポリシーを使用する方法について説明します。
-ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 4bda45a6da6b9626391da37eb9a806b3308c5e7f
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300126"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322319"
 ---
-# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する (プレビュー)
+# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する
 
 Microsoft 以外のクラウド アプリに対するデータ損失防止 (DLP) ポリシーは、DLP Microsoft 365機能の一部です。これらの機能を使用すると、セキュリティ サービス全体で機密アイテムをMicrosoft 365できます。 すべての Microsoft DLP 製品の詳細については、「データ損失防止について」 [を参照してください](dlp-learn-about-dlp.md)。
 
@@ -43,7 +43,7 @@ DLP ポリシーを Microsoft 以外のクラウド アプリに使用する前�
 - Microsoft 365 E5 Compliance 
 - Microsoft 365 E5 Security
 
-### <a name="permissions"></a>Permissions
+### <a name="permissions"></a>アクセス許可
 DLP ポリシーを作成するユーザーは、次のユーザーである必要があります。
 - 全体管理者
 - コンプライアンス管理者

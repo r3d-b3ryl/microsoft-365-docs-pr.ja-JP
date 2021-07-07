@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dc5710a73685c67eff17c0f281bd14e48707e60f
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 4793f3c84ddda0db7f4d67ac96cb31a6e2108c57
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964790"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327001"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Windows 以外のプラットフォームの Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "52964790"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft は、Windows および Windows Server を超えて業界をリードするエンドポイント セキュリティ機能を macOS、Linux、Android、およびまもなく iOS に拡張する取り組み中です。
+Microsoft は、業界をリードするエンドポイント セキュリティ機能を、Windows および Windows Server から macOS、Linux、Android、および iOS に拡張する取り組み中です。
 
 組織は、さまざまなプラットフォームやデバイス間で脅威に直面しています。 Microsoft のチームは *、Microsoft* だけでなく *Microsoft* からのセキュリティ ソリューションの構築にも取り組み、お客様が異種環境を保護し、セキュリティを確保できます。 お客様からのフィードバックに耳を傾け、お客様のニーズに合ったソリューションを構築するために、お客様と密接に提携しています。
 
@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint を使用すると、Microsoft Defender セキ�
 
 ## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 用 Microsoft Defender for Endpoint 
 
-Microsoft Defender for Endpoint on macOS では、最新の 3 つのリリースバージョンの macOS にエンドポイントでの検出と対応(EDR) 機能が提供されています。 顧客は、ソリューションを展開および管理するには、Microsoft エンドポイント マネージャー Jamf を使用します。 macOS 上Microsoft Officeアプリケーションと同様に、Microsoft Auto Update を使用して Microsoft Defender for Endpoint on Mac 更新プログラムを管理します。 主な機能と利点については、お知らせをご [覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
+Microsoft Defender for Endpoint on macOS では、最新リリースバージョンの macOS に対して、ウイルス対策、エンドポイント検出と応答 (EDR)、脆弱性の管理 機能が提供されます。 顧客は、ソリューションを展開および管理するには、Microsoft エンドポイント マネージャー Jamf を使用します。 macOS 上Microsoft Officeアプリケーションと同様に、Microsoft Auto Update を使用して Microsoft Defender for Endpoint on Mac 更新プログラムを管理します。 主な機能と利点については、お知らせをご [覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
 
 開始方法の詳細については、「Defender for Endpoint on macOS」のドキュメントを参照 [してください](microsoft-defender-endpoint-mac.md)。
 
@@ -56,7 +56,7 @@ Microsoft Defender for Endpoint on macOS では、最新の 3 つのリリース
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint on Linux では、Linux サーバーに対して予防 (AV) 機能を提供します。 これには、エージェントの構成と管理、スキャンの開始、脅威の管理を行う完全なコマンド ライン エクスペリエンスが含まれます。 RHEL 7.2+、CentOS Linux 7.2+、Ubuntu 16 LTS、SLES 12+、Debian 9+、Oracle Linux 7.2 の 6 つの最新バージョンがサポートされています。 Microsoft Defender for Endpoint on Linux は、Puppet、Ansible、または既存の Linux 構成管理ツールを使用して展開および構成できます。 主な機能と利点については、お知らせをご [覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)。
+Microsoft Defender for Endpoint on Linux では、Linux サーバーの予防 (AV)、エンドポイント検出と応答 (EDR)、脆弱性の管理機能を提供します。 これには、エージェントの構成と管理、スキャンの開始、脅威の管理を行う完全なコマンド ライン エクスペリエンスが含まれます。 RHEL 7.2+、CentOS Linux 7.2+、Ubuntu 16 LTS、SLES 12+、Debian 9+、Oracle Linux 7.2 の 6 つの最新バージョンがサポートされています。 Microsoft Defender for Endpoint on Linux は、Puppet、Ansible、または既存の Linux 構成管理ツールを使用して展開および構成できます。 主な機能と利点については、お知らせをご [覧ください](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)。
 
 開始方法の詳細については、Microsoft Defender for Endpoint on Linux のドキュメントを参照 [してください](microsoft-defender-endpoint-linux.md)。
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314406"
+ms.locfileid: "53326965"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>グループ ポリシー Windows 10デバイスのオンボード 
 
@@ -101,7 +101,7 @@ ms.locfileid: "53314406"
 
 4. [ポリシー **] をクリックし**、[管理 **用テンプレート] をクリックします**。
 
-5. [Windows **コンポーネント] をクリック** し **、[SmartScreen] Windows Defenderをクリックします**。
+5. [コンポーネント **Windows] をクリック** し **、[ATP] Windows Defenderをクリックします**。
 
 6. デバイスからのサンプル共有を有効または無効にする場合に選択します。
 

@@ -18,19 +18,16 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65edf54ea0bf5cb0a0210dd306db07c756149f65
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062127"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322427"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
->[!IMPORTANT]
->プレビュー バージョンはサービス レベル契約なしで提供され、実稼働ワークロードには推奨されません。 一部の機能はサポートされていないか、制限された機能を持っている可能性があります。
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -48,6 +45,19 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 一般に利用可能な新機能の詳細については、「Defender for Endpoint の新機能 [」を参照してください](whats-new-in-microsoft-defender-atp.md)。
 
+ ## <a name="what-you-need-to-know"></a>知る必要があるもの
+
+パブリック プレビューで機能を操作する場合は、次の機能を使用します。
+
+- 機能が制限または制限されている可能性があります。 たとえば、この機能は 1 つのプラットフォームにのみ適用できます。
+- 通常、機能の変更は、一般に利用できる (GA) 前に行います。
+- Microsoft で完全にサポートされています。
+- 選択した地域またはクラウド環境でのみ使用できます。 たとえば、この機能が政府機関のクラウドに存在しない可能性があります。
+- プレビューの個々の機能には、使用およびサポートの制限が多い場合があります。 その場合、この情報は通常、機能のドキュメントに示されています。
+- プレビュー バージョンは標準のサポート レベルで提供され、実稼働ワークロードに推奨されます。 
+
+
+
 ## <a name="turn-on-preview-features"></a>プレビュー機能を有効にする
 
 今後の機能にアクセスしてフィードバックを提供し、機能が一般提供される前に全体的なエクスペリエンスを向上させるのに役立ちます。
@@ -64,7 +74,7 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 - [Web コンテンツ フィルター](web-content-filtering.md) <br> Web コンテンツ フィルターは、Microsoft Defender for Endpoint の Web 保護機能の一部です。 これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。
 
-- [デバイスの正常性とコンプライアンス レポート](machine-reports.md) <br/> デバイスの正常性とコンプライアンス レポートは、組織内のデバイスに関する高レベルの情報を提供します。
+- [デバイスの正常性とコンプライアンスのレポート](machine-reports.md) <br/> デバイスの正常性とコンプライアンス レポートは、組織内のデバイスに関する高レベルの情報を提供します。
 
 > [!TIP] 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

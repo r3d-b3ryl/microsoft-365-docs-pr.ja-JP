@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: b459665d9b92705bd575a7a79a4d4d6adc2a3f68
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 5d888232d94ccd6634fc6102c26958e20d88fb4d
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256317"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322403"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -196,12 +196,6 @@ Skype for Business のチャットが Teams に届くと、Teams のチャット
 Exchange Online のメールボックスを持っているユーザーが組織を離れ、そのユーザーの Microsoft 365 アカウントが削除された場合、保持の対象となるチャット メッセージは、非アクティブなメールボックスに保存されます。 チャット メッセージは、引き続きメールボックスが非アクティブになる前にユーザーに配置されたアイテム保持ポリシーの適用対象となり、電子情報開示の検索が可能です。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。 
 
 ユーザーが Teams にファイルを保存している場合は、SharePoint と OneDrive の[同等のセクション](retention-policies-sharepoint.md#when-a-user-leaves-the-organization)を参照してください。
-
-## <a name="limitations"></a>制限事項
-
-Microsoft は、Teams の保持機能の最適化に継続的に取り組んでいます。当面は、Teams のチャネル メッセージとチャットにアイテム保持ポリシーを使用する場合、次の制限に注意してください。
-
-- **Outlook での誤った表示の問題**。 Skype または Teams の場所用にアイテム保持ポリシーを作成する場合、ユーザーが Outlook デスクトップ クライアントでメールボックス フォルダーのプロパティを表示すると、これらのポリシーの 1 つが既定のフォルダーポリシーとして表示されます。 これは、Outlook の誤表示の問題であり、[既知の問題](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)です。 代わりに、フォルダーに適用されているメールボックスの保持ポリシーが表示されます。 Skype または Teams の保持ポリシーは、ユーザーのメールボックスには適用されません。
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 

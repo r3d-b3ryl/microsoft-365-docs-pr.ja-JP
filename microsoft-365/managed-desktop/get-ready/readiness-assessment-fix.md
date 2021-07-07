@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 866d1a2de820fca4c66537583dc5f55098149931
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286887"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327013"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -212,6 +212,13 @@ Azure 組織が所属する 1 つ以上のADは、ユーザーがサポートMic
 
 デバイスから除外するセキュリティ 基準ポリシー Microsoft マネージド デスクトップします。 手順については[、「Use security baselines to configure Windows 10 Intune」を参照してください](/mem/intune/protect/security-baselines)。 登録中に、すべてのデバイスに新しいセキュリティ 基準をMicrosoft マネージド デスクトップします。 モダン **ワークプレース デバイス -All** Azure AD グループは、Microsoft マネージド デスクトップ に登録するときに作成する動的グループなので、登録後にこのグループを除外するために戻ってくる必要があります。 
 
+### <a name="unlicensed-admins"></a>ライセンスのない管理者
+
+Azure 組織とやり取りするときに"アクセス許可の不足" エラーを回避するには、この設定ADがあります。 
+
+**使用不可能**
+
+**ライセンスのない管理者へのアクセスを許可するを有効** にする必要があります。 手順については、「ゲスト アカウント [の前提条件」を参照してください](/microsoft-365/managed-desktop/get-ready/guest-accounts)。
 
 ### <a name="windows-apps"></a>Windowsアプリ
 
