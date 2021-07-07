@@ -17,225 +17,225 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286959"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314406"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a><span data-ttu-id="df822-104">グループ ポリシー Windows 10デバイスのオンボード</span><span class="sxs-lookup"><span data-stu-id="df822-104">Onboard Windows 10 devices using Group Policy</span></span> 
+# <a name="onboard-windows-10-devices-using-group-policy"></a><span data-ttu-id="819b7-104">グループ ポリシー Windows 10デバイスのオンボード</span><span class="sxs-lookup"><span data-stu-id="819b7-104">Onboard Windows 10 devices using Group Policy</span></span> 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="df822-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="df822-105">**Applies to:**</span></span>
+<span data-ttu-id="819b7-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="819b7-105">**Applies to:**</span></span>
 
-- <span data-ttu-id="df822-106">グループ ポリシー</span><span class="sxs-lookup"><span data-stu-id="df822-106">Group Policy</span></span>
-- [<span data-ttu-id="df822-107">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="df822-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="df822-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="df822-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- <span data-ttu-id="819b7-106">グループ ポリシー</span><span class="sxs-lookup"><span data-stu-id="819b7-106">Group Policy</span></span>
+- [<span data-ttu-id="819b7-107">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="819b7-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="819b7-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="819b7-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-><span data-ttu-id="df822-109">Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="df822-109">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="df822-110">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="df822-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+><span data-ttu-id="819b7-109">Defender for Endpoint を体験してみませんか?</span><span class="sxs-lookup"><span data-stu-id="819b7-109">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="819b7-110">無料試用版にサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="819b7-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 > [!NOTE]
-> <span data-ttu-id="df822-111">グループ ポリシー (GP) 更新プログラムを使用してパッケージを展開するには、サーバー 2008 R2 以降Windowsする必要があります。</span><span class="sxs-lookup"><span data-stu-id="df822-111">To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.</span></span>
+> <span data-ttu-id="819b7-111">グループ ポリシー (GP) 更新プログラムを使用してパッケージを展開するには、サーバー 2008 R2 以降Windowsする必要があります。</span><span class="sxs-lookup"><span data-stu-id="819b7-111">To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.</span></span>
 >
-> <span data-ttu-id="df822-112">サーバー Windows 2019 では、グループ ポリシーの基本設定で作成される XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。</span><span class="sxs-lookup"><span data-stu-id="df822-112">For Windows Server 2019, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.</span></span>
+> <span data-ttu-id="819b7-112">サーバー Windows 2019 では、グループ ポリシーの基本設定で作成される XML ファイルの NT AUTHORITY\Well-Known-System-Account を NT AUTHORITY\SYSTEM に置き換える必要があります。</span><span class="sxs-lookup"><span data-stu-id="819b7-112">For Windows Server 2019, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.</span></span>
 
-## <a name="onboard-devices-using-group-policy"></a><span data-ttu-id="df822-113">グループ ポリシーを使用してデバイスをオンボードする</span><span class="sxs-lookup"><span data-stu-id="df822-113">Onboard devices using Group Policy</span></span>
+## <a name="onboard-devices-using-group-policy"></a><span data-ttu-id="819b7-113">グループ ポリシーを使用してデバイスをオンボードする</span><span class="sxs-lookup"><span data-stu-id="819b7-113">Onboard devices using Group Policy</span></span>
 
-<span data-ttu-id="df822-114">[![さまざまな展開パスを示す PDF のイメージ](images/onboard-gp.png)](images/onboard-gp.png#lightbox)</span><span class="sxs-lookup"><span data-stu-id="df822-114">[![Image of the PDF showing the various deployment paths](images/onboard-gp.png)](images/onboard-gp.png#lightbox)</span></span>
+<span data-ttu-id="819b7-114">[![さまざまな展開パスを示す PDF のイメージ](images/onboard-gp.png)](images/onboard-gp.png#lightbox)</span><span class="sxs-lookup"><span data-stu-id="819b7-114">[![Image of the PDF showing the various deployment paths](images/onboard-gp.png)](images/onboard-gp.png#lightbox)</span></span>
 
-<span data-ttu-id="df822-115">[[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="df822-115">Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.</span></span>
+<span data-ttu-id="819b7-115">[[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="819b7-115">Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.</span></span>
 
-1. <span data-ttu-id="df822-116">サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。</span><span class="sxs-lookup"><span data-stu-id="df822-116">Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard.</span></span> <span data-ttu-id="df822-117">パッケージは次の方法で取得[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)</span><span class="sxs-lookup"><span data-stu-id="df822-117">You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):</span></span>
+1. <span data-ttu-id="819b7-116">サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。</span><span class="sxs-lookup"><span data-stu-id="819b7-116">Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard.</span></span> <span data-ttu-id="819b7-117">パッケージは次の方法で取得[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)</span><span class="sxs-lookup"><span data-stu-id="819b7-117">You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):</span></span>
 
-    1. <span data-ttu-id="df822-118">ナビゲーション ウィンドウで、[オンボーディング]**設定**  >  **選択します**。</span><span class="sxs-lookup"><span data-stu-id="df822-118">In the navigation pane, select **Settings** > **Onboarding**.</span></span>
+    1. <span data-ttu-id="819b7-118">ナビゲーション ウィンドウで、[オンボーディング]**設定**  >  **選択します**。</span><span class="sxs-lookup"><span data-stu-id="819b7-118">In the navigation pane, select **Settings** > **Onboarding**.</span></span>
 
-    1. <span data-ttu-id="df822-119">オペレーティング システムWindows 10を選択します。</span><span class="sxs-lookup"><span data-stu-id="df822-119">Select Windows 10 as the operating system.</span></span>
+    1. <span data-ttu-id="819b7-119">オペレーティング システムWindows 10を選択します。</span><span class="sxs-lookup"><span data-stu-id="819b7-119">Select Windows 10 as the operating system.</span></span>
 
-    1. <span data-ttu-id="df822-120">[展開方法 **] フィールドで** 、[グループ ポリシー] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="df822-120">In the **Deployment method** field, select **Group policy**.</span></span>
+    1. <span data-ttu-id="819b7-120">[展開方法 **] フィールドで** 、[グループ ポリシー] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="819b7-120">In the **Deployment method** field, select **Group policy**.</span></span>
 
-    1. <span data-ttu-id="df822-121">[パッケージ **のダウンロード] を** クリックし、.zip保存します。</span><span class="sxs-lookup"><span data-stu-id="df822-121">Click **Download package** and save the .zip file.</span></span>
+    1. <span data-ttu-id="819b7-121">[パッケージ **のダウンロード] を** クリックし、.zip保存します。</span><span class="sxs-lookup"><span data-stu-id="819b7-121">Click **Download package** and save the .zip file.</span></span>
 
-2. <span data-ttu-id="df822-122">デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。</span><span class="sxs-lookup"><span data-stu-id="df822-122">Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device.</span></span> <span data-ttu-id="df822-123">*OptionalParamsPolicy* というフォルダーと *WindowsDefenderATPOnboardingScript.cmd というファイルが必要です*。</span><span class="sxs-lookup"><span data-stu-id="df822-123">You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.</span></span>
+2. <span data-ttu-id="819b7-122">デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。</span><span class="sxs-lookup"><span data-stu-id="819b7-122">Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device.</span></span> <span data-ttu-id="819b7-123">*OptionalParamsPolicy* というフォルダーと *WindowsDefenderATPOnboardingScript.cmd というファイルが必要です*。</span><span class="sxs-lookup"><span data-stu-id="819b7-123">You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.</span></span>
 
-3. <span data-ttu-id="df822-124">グループ ポリシー [管理コンソール](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="df822-124">Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.</span></span>
+3. <span data-ttu-id="819b7-124">グループ ポリシー [管理コンソール](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="819b7-124">Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.</span></span>
 
-4. <span data-ttu-id="df822-125">グループ ポリシー **管理エディターで、[\*\*\*\*コンピューターの構成**] 、[基本設定] の順に移動し、[コントロール パネルの **設定] に移動します**。</span><span class="sxs-lookup"><span data-stu-id="df822-125">In the **Group Policy Management Editor**, go to **Computer configuration**, then **Preferences**, and then **Control panel settings**.</span></span>
+4. <span data-ttu-id="819b7-125">グループ ポリシー **管理エディターで、[\*\*\*\*コンピューターの構成**] 、[基本設定] の順に移動し、[コントロール パネルの **設定] に移動します**。</span><span class="sxs-lookup"><span data-stu-id="819b7-125">In the **Group Policy Management Editor**, go to **Computer configuration**, then **Preferences**, and then **Control panel settings**.</span></span>
 
-5. <span data-ttu-id="df822-126">[スケジュールされたタスク **] を** 右クリックし、[新規] をポイントし、[イミディエイト タスク] (少なくとも Windows **7) をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="df822-126">Right-click **Scheduled tasks**, point to **New**, and then click **Immediate Task (At least Windows 7)**.</span></span>
+5. <span data-ttu-id="819b7-126">[スケジュールされたタスク **] を** 右クリックし、[新規] をポイントし、[イミディエイト タスク] (少なくとも Windows **7) をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="819b7-126">Right-click **Scheduled tasks**, point to **New**, and then click **Immediate Task (At least Windows 7)**.</span></span>
 
-6. <span data-ttu-id="df822-127">開く **[タスク]** ウィンドウで、[全般] タブ **に移動** します。[セキュリティ **オプション] で、[\*\*\*\*ユーザーまたはグループの変更**] をクリックし、[SYSTEM] と入力し、[名前の確認] をクリック **して** **[OK] をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="df822-127">In the **Task** window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM and then click **Check Names** then **OK**.</span></span> <span data-ttu-id="df822-128">NT AUTHORITY\SYSTEM は、タスクが実行されるユーザー アカウントとして表示されます。</span><span class="sxs-lookup"><span data-stu-id="df822-128">NT AUTHORITY\SYSTEM appears as the user account the task will run as.</span></span>
+6. <span data-ttu-id="819b7-127">開く **[タスク]** ウィンドウで、[全般] タブ **に移動** します。[セキュリティ **オプション] で、[\*\*\*\*ユーザーまたはグループの変更**] をクリックし、[SYSTEM] と入力し、[名前の確認] をクリック **して** **[OK] をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="819b7-127">In the **Task** window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM and then click **Check Names** then **OK**.</span></span> <span data-ttu-id="819b7-128">NT AUTHORITY\SYSTEM は、タスクが実行されるユーザー アカウントとして表示されます。</span><span class="sxs-lookup"><span data-stu-id="819b7-128">NT AUTHORITY\SYSTEM appears as the user account the task will run as.</span></span>
 
-7. <span data-ttu-id="df822-129">[ **ユーザーがログオンするかどうかを実行する] を選択し** 、[最高の特権で実行する **] チェック ボックスを** オンにします。</span><span class="sxs-lookup"><span data-stu-id="df822-129">Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.</span></span>
+7. <span data-ttu-id="819b7-129">[ **ユーザーがログオンするかどうかを実行する] を選択し** 、[最高の特権で実行する **] チェック ボックスを** オンにします。</span><span class="sxs-lookup"><span data-stu-id="819b7-129">Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.</span></span>
 
-8. <span data-ttu-id="df822-130">[操作] タブ **に移動し** 、[新規] **をクリックします。** [アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。</span><span class="sxs-lookup"><span data-stu-id="df822-130">Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field.</span></span> <span data-ttu-id="df822-131">共有 *WindowsDefenderATPOnboardingScript.cmd* ファイルのファイル名と場所を入力します。</span><span class="sxs-lookup"><span data-stu-id="df822-131">Enter the file name and location of the shared *WindowsDefenderATPOnboardingScript.cmd* file.</span></span>
+8. <span data-ttu-id="819b7-130">[操作] タブ **に移動し** 、[新規] **をクリックします。** [アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。</span><span class="sxs-lookup"><span data-stu-id="819b7-130">Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field.</span></span> <span data-ttu-id="819b7-131">共有 *WindowsDefenderATPOnboardingScript.cmd* ファイルのファイル名と場所を入力します。</span><span class="sxs-lookup"><span data-stu-id="819b7-131">Enter the file name and location of the shared *WindowsDefenderATPOnboardingScript.cmd* file.</span></span>
 
-9. <span data-ttu-id="df822-132">**[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="df822-132">Click **OK** and close any open GPMC windows.</span></span>
+9. <span data-ttu-id="819b7-132">**[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="819b7-132">Click **OK** and close any open GPMC windows.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="df822-133">デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。</span><span class="sxs-lookup"><span data-stu-id="df822-133">After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service.</span></span> <span data-ttu-id="df822-134">詳細については、「新しくオンボードされた Defender for Endpoint デバイスで検出テストを実行 [する」を参照してください](run-detection-test.md)。</span><span class="sxs-lookup"><span data-stu-id="df822-134">For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).</span></span>
+> <span data-ttu-id="819b7-133">デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。</span><span class="sxs-lookup"><span data-stu-id="819b7-133">After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service.</span></span> <span data-ttu-id="819b7-134">詳細については、「新しくオンボードされた Defender for Endpoint デバイスで検出テストを実行 [する」を参照してください](run-detection-test.md)。</span><span class="sxs-lookup"><span data-stu-id="819b7-134">For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).</span></span>
 
-## <a name="additional-defender-for-endpoint-configuration-settings"></a><span data-ttu-id="df822-135">エンドポイントの追加の Defender 構成設定</span><span class="sxs-lookup"><span data-stu-id="df822-135">Additional Defender for Endpoint configuration settings</span></span>
-<span data-ttu-id="df822-136">各デバイスについて、詳細な分析のためにファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかをMicrosoft Defender セキュリティ センターを指定できます。</span><span class="sxs-lookup"><span data-stu-id="df822-136">For each device, you can state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.</span></span>
+## <a name="additional-defender-for-endpoint-configuration-settings"></a><span data-ttu-id="819b7-135">エンドポイントの追加の Defender 構成設定</span><span class="sxs-lookup"><span data-stu-id="819b7-135">Additional Defender for Endpoint configuration settings</span></span>
+<span data-ttu-id="819b7-136">各デバイスについて、詳細な分析のためにファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかをMicrosoft Defender セキュリティ センターを指定できます。</span><span class="sxs-lookup"><span data-stu-id="819b7-136">For each device, you can state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.</span></span>
 
-<span data-ttu-id="df822-137">グループ ポリシー (GP) を使用して、ディープ分析機能で使用されるサンプル共有の設定などの設定を構成できます。</span><span class="sxs-lookup"><span data-stu-id="df822-137">You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.</span></span>
+<span data-ttu-id="819b7-137">グループ ポリシー (GP) を使用して、ディープ分析機能で使用されるサンプル共有の設定などの設定を構成できます。</span><span class="sxs-lookup"><span data-stu-id="819b7-137">You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.</span></span>
 
-### <a name="configure-sample-collection-settings"></a><span data-ttu-id="df822-138">サンプル コレクション設定の構成</span><span class="sxs-lookup"><span data-stu-id="df822-138">Configure sample collection settings</span></span>
+### <a name="configure-sample-collection-settings"></a><span data-ttu-id="819b7-138">サンプル コレクション設定の構成</span><span class="sxs-lookup"><span data-stu-id="819b7-138">Configure sample collection settings</span></span>
 
-1. <span data-ttu-id="df822-139">GP 管理デバイスで、構成パッケージから次のファイルをコピーします。</span><span class="sxs-lookup"><span data-stu-id="df822-139">On your GP management device, copy the following files from the  configuration package:</span></span>
+1. <span data-ttu-id="819b7-139">GP 管理デバイスで、構成パッケージから次のファイルをコピーします。</span><span class="sxs-lookup"><span data-stu-id="819b7-139">On your GP management device, copy the following files from the  configuration package:</span></span>
 
-    - <span data-ttu-id="df822-140">_AtpConfiguration.admx を_ _C: \\ \\ policyDefinitions Windowsコピーする_</span><span class="sxs-lookup"><span data-stu-id="df822-140">Copy _AtpConfiguration.admx_ into _C:\\Windows\\PolicyDefinitions_</span></span>
+    - <span data-ttu-id="819b7-140">_AtpConfiguration.admx を_ _C: \\ \\ policyDefinitions Windowsコピーする_</span><span class="sxs-lookup"><span data-stu-id="819b7-140">Copy _AtpConfiguration.admx_ into _C:\\Windows\\PolicyDefinitions_</span></span>
 
-    - <span data-ttu-id="df822-141">_AtpConfiguration.adml_ を C: Windows _\\ \\ PolicyDefinitions \\ en-US にコピーする_</span><span class="sxs-lookup"><span data-stu-id="df822-141">Copy _AtpConfiguration.adml_ into _C:\\Windows\\PolicyDefinitions\\en-US_</span></span>
+    - <span data-ttu-id="819b7-141">_AtpConfiguration.adml_ を C: Windows _\\ \\ PolicyDefinitions \\ en-US にコピーする_</span><span class="sxs-lookup"><span data-stu-id="819b7-141">Copy _AtpConfiguration.adml_ into _C:\\Windows\\PolicyDefinitions\\en-US_</span></span>
 
-    <span data-ttu-id="df822-142">グループ ポリシー管理用テンプレートに [セントラル ストア](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)を使用している場合は、構成パッケージから次のファイルをコピーします。</span><span class="sxs-lookup"><span data-stu-id="df822-142">If you are using a [Central Store for Group Policy Administrative Templates](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copy the following files from the  configuration package:</span></span>
+    <span data-ttu-id="819b7-142">グループ ポリシー管理用テンプレートに [セントラル ストア](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)を使用している場合は、構成パッケージから次のファイルをコピーします。</span><span class="sxs-lookup"><span data-stu-id="819b7-142">If you are using a [Central Store for Group Policy Administrative Templates](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copy the following files from the  configuration package:</span></span>
 
-    - <span data-ttu-id="df822-143">SysVol ポリシー _\\ \\ \<forest.root\> \\ \\ \<forest.root\> \\ \\ PolicyDefinitions に AtpConfiguration.admx をコピーする_</span><span class="sxs-lookup"><span data-stu-id="df822-143">Copy _AtpConfiguration.admx_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions_</span></span>
+    - <span data-ttu-id="819b7-143">SysVol ポリシー _\\ \\ \<forest.root\> \\ \\ \<forest.root\> \\ \\ PolicyDefinitions に AtpConfiguration.admx をコピーする_</span><span class="sxs-lookup"><span data-stu-id="819b7-143">Copy _AtpConfiguration.admx_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions_</span></span>
 
-    - <span data-ttu-id="df822-144">_AtpConfiguration.adml を_ _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ ポリシー \\ PolicyDefinitions \\ en-US にコピーする_</span><span class="sxs-lookup"><span data-stu-id="df822-144">Copy _AtpConfiguration.adml_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions\\en-US_</span></span>
+    - <span data-ttu-id="819b7-144">_AtpConfiguration.adml を_ _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ ポリシー \\ PolicyDefinitions \\ en-US にコピーする_</span><span class="sxs-lookup"><span data-stu-id="819b7-144">Copy _AtpConfiguration.adml_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions\\en-US_</span></span>
 
-2. <span data-ttu-id="df822-145">グループ ポリシー [管理コンソールを開き](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)、構成する GPO を右クリックし、[編集] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="df822-145">Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), right-click the GPO you want to configure and click **Edit**.</span></span>
+2. <span data-ttu-id="819b7-145">グループ ポリシー [管理コンソールを開き](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)、構成する GPO を右クリックし、[編集] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="819b7-145">Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), right-click the GPO you want to configure and click **Edit**.</span></span>
 
-3. <span data-ttu-id="df822-146">グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="df822-146">In the **Group Policy Management Editor**, go to **Computer configuration**.</span></span>
+3. <span data-ttu-id="819b7-146">グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動します**。</span><span class="sxs-lookup"><span data-stu-id="819b7-146">In the **Group Policy Management Editor**, go to **Computer configuration**.</span></span>
 
-4. <span data-ttu-id="df822-147">[ポリシー **] をクリックし**、[管理 **用テンプレート] をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="df822-147">Click **Policies**, then **Administrative templates**.</span></span>
+4. <span data-ttu-id="819b7-147">[ポリシー **] をクリックし**、[管理 **用テンプレート] をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="819b7-147">Click **Policies**, then **Administrative templates**.</span></span>
 
-5. <span data-ttu-id="df822-148">[Windows **コンポーネント] をクリック** し **、[SmartScreen] Windows Defenderをクリックします**。</span><span class="sxs-lookup"><span data-stu-id="df822-148">Click **Windows components** and then **Windows Defender SmartScreen**.</span></span>
+5. <span data-ttu-id="819b7-148">[Windows **コンポーネント] をクリック** し **、[SmartScreen] Windows Defenderをクリックします**。</span><span class="sxs-lookup"><span data-stu-id="819b7-148">Click **Windows components** and then **Windows Defender SmartScreen**.</span></span>
 
-6. <span data-ttu-id="df822-149">デバイスからのサンプル共有を有効または無効にする場合に選択します。</span><span class="sxs-lookup"><span data-stu-id="df822-149">Choose to enable or disable sample sharing from your devices.</span></span>
+6. <span data-ttu-id="819b7-149">デバイスからのサンプル共有を有効または無効にする場合に選択します。</span><span class="sxs-lookup"><span data-stu-id="819b7-149">Choose to enable or disable sample sharing from your devices.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="df822-150">値を設定しない場合、既定値はサンプル コレクションを有効にします。</span><span class="sxs-lookup"><span data-stu-id="df822-150">If you don't set a value, the default value is to enable sample collection.</span></span>
+> <span data-ttu-id="819b7-150">値を設定しない場合、既定値はサンプル コレクションを有効にします。</span><span class="sxs-lookup"><span data-stu-id="819b7-150">If you don't set a value, the default value is to enable sample collection.</span></span>
 
-## <a name="other-recommended-configuration-settings"></a><span data-ttu-id="df822-151">その他の推奨構成設定</span><span class="sxs-lookup"><span data-stu-id="df822-151">Other recommended configuration settings</span></span>
+## <a name="other-recommended-configuration-settings"></a><span data-ttu-id="819b7-151">その他の推奨構成設定</span><span class="sxs-lookup"><span data-stu-id="819b7-151">Other recommended configuration settings</span></span>
 
-### <a name="update-endpoint-protection-configuration"></a><span data-ttu-id="df822-152">エンドポイント保護構成の更新</span><span class="sxs-lookup"><span data-stu-id="df822-152">Update endpoint protection configuration</span></span>
+### <a name="update-endpoint-protection-configuration"></a><span data-ttu-id="819b7-152">エンドポイント保護構成の更新</span><span class="sxs-lookup"><span data-stu-id="819b7-152">Update endpoint protection configuration</span></span>
 
-<span data-ttu-id="df822-153">オンボーディング スクリプトを構成したら、同じグループ ポリシーの編集を続けてエンドポイント保護構成を追加します。</span><span class="sxs-lookup"><span data-stu-id="df822-153">After configuring the onboarding script, continue editing the same group policy to add endpoint protection configurations.</span></span> <span data-ttu-id="df822-154">グループ ポリシーの編集は、Windows 10または Server 2019 を実行しているシステムから実行し、必要なすべての機能をMicrosoft Defender ウイルス対策します。</span><span class="sxs-lookup"><span data-stu-id="df822-154">Perform group policy edits from a system running Windows 10 or Server 2019 to ensure you have all of the required Microsoft Defender Antivirus capabilities.</span></span> <span data-ttu-id="df822-155">Defender ATP 構成設定を登録するには、グループ ポリシー オブジェクトを閉じて再度開く必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="df822-155">You may need to close and reopen the group policy object to register the Defender ATP configuration settings.</span></span>
+<span data-ttu-id="819b7-153">オンボーディング スクリプトを構成したら、同じグループ ポリシーの編集を続けてエンドポイント保護構成を追加します。</span><span class="sxs-lookup"><span data-stu-id="819b7-153">After configuring the onboarding script, continue editing the same group policy to add endpoint protection configurations.</span></span> <span data-ttu-id="819b7-154">グループ ポリシーの編集は、Windows 10または Server 2019 を実行しているシステムから実行し、必要なすべての機能をMicrosoft Defender ウイルス対策します。</span><span class="sxs-lookup"><span data-stu-id="819b7-154">Perform group policy edits from a system running Windows 10 or Server 2019 to ensure you have all of the required Microsoft Defender Antivirus capabilities.</span></span> <span data-ttu-id="819b7-155">Defender ATP 構成設定を登録するには、グループ ポリシー オブジェクトを閉じて再度開く必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="819b7-155">You may need to close and reopen the group policy object to register the Defender ATP configuration settings.</span></span>
 
-<span data-ttu-id="df822-156">すべてのポリシーは 、 の下に位置します `Computer Configuration\Policies\Administrative Templates` 。</span><span class="sxs-lookup"><span data-stu-id="df822-156">All policies are located under `Computer Configuration\Policies\Administrative Templates`.</span></span>
+<span data-ttu-id="819b7-156">すべてのポリシーは 、 の下に位置します `Computer Configuration\Policies\Administrative Templates` 。</span><span class="sxs-lookup"><span data-stu-id="819b7-156">All policies are located under `Computer Configuration\Policies\Administrative Templates`.</span></span>
 
-<span data-ttu-id="df822-157">**ポリシーの場所:** \Windows コンポーネント\atp Windows Defender</span><span class="sxs-lookup"><span data-stu-id="df822-157">**Policy location:** \Windows Components\Windows Defender ATP</span></span>
+<span data-ttu-id="819b7-157">**ポリシーの場所:** \Windows コンポーネント\atp Windows Defender</span><span class="sxs-lookup"><span data-stu-id="819b7-157">**Policy location:** \Windows Components\Windows Defender ATP</span></span>
 
-<span data-ttu-id="df822-158">ポリシー</span><span class="sxs-lookup"><span data-stu-id="df822-158">Policy</span></span> | <span data-ttu-id="df822-159">Setting</span><span class="sxs-lookup"><span data-stu-id="df822-159">Setting</span></span>
+<span data-ttu-id="819b7-158">ポリシー</span><span class="sxs-lookup"><span data-stu-id="819b7-158">Policy</span></span> | <span data-ttu-id="819b7-159">Setting</span><span class="sxs-lookup"><span data-stu-id="819b7-159">Setting</span></span>
 :---|:---
-<span data-ttu-id="df822-160">Enable\Disable Sample collection</span><span class="sxs-lookup"><span data-stu-id="df822-160">Enable\Disable Sample collection</span></span>| <span data-ttu-id="df822-161">[有効] - [コンピューターでサンプル コレクションを有効にする] チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="df822-161">Enabled - "Enable sample collection on machines" checked</span></span>
+<span data-ttu-id="819b7-160">Enable\Disable Sample collection</span><span class="sxs-lookup"><span data-stu-id="819b7-160">Enable\Disable Sample collection</span></span>| <span data-ttu-id="819b7-161">[有効] - [コンピューターでサンプル コレクションを有効にする] チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="819b7-161">Enabled - "Enable sample collection on machines" checked</span></span>
 
 <br>
 
-<span data-ttu-id="df822-162">**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策</span><span class="sxs-lookup"><span data-stu-id="df822-162">**Policy location:**  \Windows Components\Microsoft Defender Antivirus</span></span>
+<span data-ttu-id="819b7-162">**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策</span><span class="sxs-lookup"><span data-stu-id="819b7-162">**Policy location:**  \Windows Components\Microsoft Defender Antivirus</span></span>
 
-<span data-ttu-id="df822-163">ポリシー</span><span class="sxs-lookup"><span data-stu-id="df822-163">Policy</span></span> | <span data-ttu-id="df822-164">Setting</span><span class="sxs-lookup"><span data-stu-id="df822-164">Setting</span></span>
+<span data-ttu-id="819b7-163">ポリシー</span><span class="sxs-lookup"><span data-stu-id="819b7-163">Policy</span></span> | <span data-ttu-id="819b7-164">Setting</span><span class="sxs-lookup"><span data-stu-id="819b7-164">Setting</span></span>
 :---|:---
-<span data-ttu-id="df822-165">望ましくない可能性があるアプリケーションの検出を構成する</span><span class="sxs-lookup"><span data-stu-id="df822-165">Configure detection for potentially unwanted applications</span></span> | <span data-ttu-id="df822-166">有効、ブロック</span><span class="sxs-lookup"><span data-stu-id="df822-166">Enabled, Block</span></span>
+<span data-ttu-id="819b7-165">望ましくない可能性があるアプリケーションの検出を構成する</span><span class="sxs-lookup"><span data-stu-id="819b7-165">Configure detection for potentially unwanted applications</span></span> | <span data-ttu-id="819b7-166">有効、ブロック</span><span class="sxs-lookup"><span data-stu-id="819b7-166">Enabled, Block</span></span>
 
 <br>
 
-<span data-ttu-id="df822-167">**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\MAPS</span><span class="sxs-lookup"><span data-stu-id="df822-167">**Policy location:** \Windows Components\Microsoft Defender Antivirus\MAPS</span></span>
+<span data-ttu-id="819b7-167">**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\MAPS</span><span class="sxs-lookup"><span data-stu-id="819b7-167">**Policy location:** \Windows Components\Microsoft Defender Antivirus\MAPS</span></span>
 
-<span data-ttu-id="df822-168">ポリシー</span><span class="sxs-lookup"><span data-stu-id="df822-168">Policy</span></span> | <span data-ttu-id="df822-169">Setting</span><span class="sxs-lookup"><span data-stu-id="df822-169">Setting</span></span>
+<span data-ttu-id="819b7-168">ポリシー</span><span class="sxs-lookup"><span data-stu-id="819b7-168">Policy</span></span> | <span data-ttu-id="819b7-169">Setting</span><span class="sxs-lookup"><span data-stu-id="819b7-169">Setting</span></span>
 :---|:---
-<span data-ttu-id="df822-170">Microsoft MAPS に参加する</span><span class="sxs-lookup"><span data-stu-id="df822-170">Join Microsoft MAPS</span></span> | <span data-ttu-id="df822-171">有効、高度なマップ</span><span class="sxs-lookup"><span data-stu-id="df822-171">Enabled, Advanced MAPS</span></span>
-<span data-ttu-id="df822-172">詳細な分析が必要な場合にファイル サンプルを送信する</span><span class="sxs-lookup"><span data-stu-id="df822-172">Send file samples when further analysis is required</span></span> | <span data-ttu-id="df822-173">有効、安全なサンプルの送信</span><span class="sxs-lookup"><span data-stu-id="df822-173">Enabled, Send safe samples</span></span>
+<span data-ttu-id="819b7-170">Microsoft MAPS に参加する</span><span class="sxs-lookup"><span data-stu-id="819b7-170">Join Microsoft MAPS</span></span> | <span data-ttu-id="819b7-171">有効、高度なマップ</span><span class="sxs-lookup"><span data-stu-id="819b7-171">Enabled, Advanced MAPS</span></span>
+<span data-ttu-id="819b7-172">詳細な分析が必要な場合にファイル サンプルを送信する</span><span class="sxs-lookup"><span data-stu-id="819b7-172">Send file samples when further analysis is required</span></span> | <span data-ttu-id="819b7-173">有効、安全なサンプルの送信</span><span class="sxs-lookup"><span data-stu-id="819b7-173">Enabled, Send safe samples</span></span>
 
 <br>
 
-<span data-ttu-id="df822-174">**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\リアルタイム保護</span><span class="sxs-lookup"><span data-stu-id="df822-174">**Policy location:** \Windows Components\Microsoft Defender Antivirus\Real-time Protection</span></span>
+<span data-ttu-id="819b7-174">**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\リアルタイム保護</span><span class="sxs-lookup"><span data-stu-id="819b7-174">**Policy location:** \Windows Components\Microsoft Defender Antivirus\Real-time Protection</span></span>
 
-<span data-ttu-id="df822-175">ポリシー</span><span class="sxs-lookup"><span data-stu-id="df822-175">Policy</span></span> | <span data-ttu-id="df822-176">Setting</span><span class="sxs-lookup"><span data-stu-id="df822-176">Setting</span></span>
+<span data-ttu-id="819b7-175">ポリシー</span><span class="sxs-lookup"><span data-stu-id="819b7-175">Policy</span></span> | <span data-ttu-id="819b7-176">Setting</span><span class="sxs-lookup"><span data-stu-id="819b7-176">Setting</span></span>
 :---|:---
-<span data-ttu-id="df822-177">リアルタイム保護をオフにする</span><span class="sxs-lookup"><span data-stu-id="df822-177">Turn off real-time protection</span></span>|<span data-ttu-id="df822-178">無効</span><span class="sxs-lookup"><span data-stu-id="df822-178">Disabled</span></span>
-<span data-ttu-id="df822-179">動作の監視を有効にする</span><span class="sxs-lookup"><span data-stu-id="df822-179">Turn on behavior monitoring</span></span>|<span data-ttu-id="df822-180">Enabled</span><span class="sxs-lookup"><span data-stu-id="df822-180">Enabled</span></span>
-<span data-ttu-id="df822-181">ダウンロードしたファイルと添付ファイルをスキャンする</span><span class="sxs-lookup"><span data-stu-id="df822-181">Scan all downloaded files and attachments</span></span>|<span data-ttu-id="df822-182">Enabled</span><span class="sxs-lookup"><span data-stu-id="df822-182">Enabled</span></span>
-<span data-ttu-id="df822-183">コンピューター上のファイルとプログラムのアクティビティを監視する</span><span class="sxs-lookup"><span data-stu-id="df822-183">Monitor file and program activity on your computer</span></span>|<span data-ttu-id="df822-184">Enabled</span><span class="sxs-lookup"><span data-stu-id="df822-184">Enabled</span></span>
+<span data-ttu-id="819b7-177">リアルタイム保護をオフにする</span><span class="sxs-lookup"><span data-stu-id="819b7-177">Turn off real-time protection</span></span>|<span data-ttu-id="819b7-178">無効</span><span class="sxs-lookup"><span data-stu-id="819b7-178">Disabled</span></span>
+<span data-ttu-id="819b7-179">動作の監視を有効にする</span><span class="sxs-lookup"><span data-stu-id="819b7-179">Turn on behavior monitoring</span></span>|<span data-ttu-id="819b7-180">Enabled</span><span class="sxs-lookup"><span data-stu-id="819b7-180">Enabled</span></span>
+<span data-ttu-id="819b7-181">ダウンロードしたファイルと添付ファイルをスキャンする</span><span class="sxs-lookup"><span data-stu-id="819b7-181">Scan all downloaded files and attachments</span></span>|<span data-ttu-id="819b7-182">Enabled</span><span class="sxs-lookup"><span data-stu-id="819b7-182">Enabled</span></span>
+<span data-ttu-id="819b7-183">コンピューター上のファイルとプログラムのアクティビティを監視する</span><span class="sxs-lookup"><span data-stu-id="819b7-183">Monitor file and program activity on your computer</span></span>|<span data-ttu-id="819b7-184">Enabled</span><span class="sxs-lookup"><span data-stu-id="819b7-184">Enabled</span></span>
 
 <br>
 
-<span data-ttu-id="df822-185">**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\Scan</span><span class="sxs-lookup"><span data-stu-id="df822-185">**Policy location:**  \Windows Components\Microsoft Defender Antivirus\Scan</span></span>
+<span data-ttu-id="819b7-185">**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\Scan</span><span class="sxs-lookup"><span data-stu-id="819b7-185">**Policy location:**  \Windows Components\Microsoft Defender Antivirus\Scan</span></span>
 
-<span data-ttu-id="df822-186">これらの設定は、エンドポイントの定期的なスキャンを構成します。</span><span class="sxs-lookup"><span data-stu-id="df822-186">These settings configure periodic scans of the endpoint.</span></span> <span data-ttu-id="df822-187">毎週のクイック スキャンを実行することをお勧めします。パフォーマンスが許容されます。</span><span class="sxs-lookup"><span data-stu-id="df822-187">We recommend performing a weekly quick scan, performance permitting.</span></span>
+<span data-ttu-id="819b7-186">これらの設定は、エンドポイントの定期的なスキャンを構成します。</span><span class="sxs-lookup"><span data-stu-id="819b7-186">These settings configure periodic scans of the endpoint.</span></span> <span data-ttu-id="819b7-187">毎週のクイック スキャンを実行することをお勧めします。パフォーマンスが許容されます。</span><span class="sxs-lookup"><span data-stu-id="819b7-187">We recommend performing a weekly quick scan, performance permitting.</span></span>
 
-<span data-ttu-id="df822-188">ポリシー</span><span class="sxs-lookup"><span data-stu-id="df822-188">Policy</span></span> | <span data-ttu-id="df822-189">Setting</span><span class="sxs-lookup"><span data-stu-id="df822-189">Setting</span></span> 
+<span data-ttu-id="819b7-188">ポリシー</span><span class="sxs-lookup"><span data-stu-id="819b7-188">Policy</span></span> | <span data-ttu-id="819b7-189">Setting</span><span class="sxs-lookup"><span data-stu-id="819b7-189">Setting</span></span> 
 :---|:---
-<span data-ttu-id="df822-190">スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する</span><span class="sxs-lookup"><span data-stu-id="df822-190">Check for the latest virus and spyware security intelligence before running a scheduled scan</span></span> |<span data-ttu-id="df822-191">Enabled</span><span class="sxs-lookup"><span data-stu-id="df822-191">Enabled</span></span>
+<span data-ttu-id="819b7-190">スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する</span><span class="sxs-lookup"><span data-stu-id="819b7-190">Check for the latest virus and spyware security intelligence before running a scheduled scan</span></span> |<span data-ttu-id="819b7-191">Enabled</span><span class="sxs-lookup"><span data-stu-id="819b7-191">Enabled</span></span>
 
 <br>
 
-<span data-ttu-id="df822-192">**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\Microsoft Defender Exploit Guard\Attack Surface Reduction</span><span class="sxs-lookup"><span data-stu-id="df822-192">**Policy location:** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction</span></span>
+<span data-ttu-id="819b7-192">**ポリシーの場所:** \Windows コンポーネント\Microsoft Defender ウイルス対策\Microsoft Defender Exploit Guard\Attack Surface Reduction</span><span class="sxs-lookup"><span data-stu-id="819b7-192">**Policy location:** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction</span></span>
 
-<span data-ttu-id="df822-193">[攻撃表面の縮小ルールのカスタマイズ] から攻撃表面の縮小 GUID [の現在のリストを取得する](customize-attack-surface-reduction.md)</span><span class="sxs-lookup"><span data-stu-id="df822-193">Get the current list of attack surface reduction GUIDs from [Customize attack surface reduction rules](customize-attack-surface-reduction.md)</span></span>
+<span data-ttu-id="819b7-193">[攻撃表面の縮小ルールのカスタマイズ] から攻撃表面の縮小 GUID [の現在のリストを取得する](customize-attack-surface-reduction.md)</span><span class="sxs-lookup"><span data-stu-id="819b7-193">Get the current list of attack surface reduction GUIDs from [Customize attack surface reduction rules](customize-attack-surface-reduction.md)</span></span>
 
-1. <span data-ttu-id="df822-194">[攻撃表面 **縮小の構成] ポリシーを開** きます。</span><span class="sxs-lookup"><span data-stu-id="df822-194">Open the **Configure Attack Surface Reduction** policy.</span></span>
+1. <span data-ttu-id="819b7-194">[攻撃表面 **縮小の構成] ポリシーを開** きます。</span><span class="sxs-lookup"><span data-stu-id="819b7-194">Open the **Configure Attack Surface Reduction** policy.</span></span>
 
-1. <span data-ttu-id="df822-195">**[有効]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="df822-195">Select **Enabled**.</span></span>
+1. <span data-ttu-id="819b7-195">**[有効]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="819b7-195">Select **Enabled**.</span></span>
 
-1. <span data-ttu-id="df822-196">[表示] **ボタンを** 選択します。</span><span class="sxs-lookup"><span data-stu-id="df822-196">Select the **Show** button.</span></span>
+1. <span data-ttu-id="819b7-196">[表示] **ボタンを** 選択します。</span><span class="sxs-lookup"><span data-stu-id="819b7-196">Select the **Show** button.</span></span>
 
-1. <span data-ttu-id="df822-197">[値の名前] フィールドに **、値が** 2 の各 GUID を追加します。</span><span class="sxs-lookup"><span data-stu-id="df822-197">Add each GUID in the **Value Name** field with a Value of 2.</span></span>
+1. <span data-ttu-id="819b7-197">[値の名前] フィールドに **、値が** 2 の各 GUID を追加します。</span><span class="sxs-lookup"><span data-stu-id="819b7-197">Add each GUID in the **Value Name** field with a Value of 2.</span></span>
 
-   <span data-ttu-id="df822-198">これにより、監査専用に設定されます。</span><span class="sxs-lookup"><span data-stu-id="df822-198">This will set each up for audit only.</span></span>
+   <span data-ttu-id="819b7-198">これにより、監査専用に設定されます。</span><span class="sxs-lookup"><span data-stu-id="819b7-198">This will set each up for audit only.</span></span>
 
    ![攻撃表面の縮小構成のイメージ](images/asr-guid.png)
 
-<span data-ttu-id="df822-200">ポリシー</span><span class="sxs-lookup"><span data-stu-id="df822-200">Policy</span></span> | <span data-ttu-id="df822-201">Setting</span><span class="sxs-lookup"><span data-stu-id="df822-201">Setting</span></span>
+<span data-ttu-id="819b7-200">ポリシー</span><span class="sxs-lookup"><span data-stu-id="819b7-200">Policy</span></span> | <span data-ttu-id="819b7-201">Setting</span><span class="sxs-lookup"><span data-stu-id="819b7-201">Setting</span></span>
 :---|:---
-<span data-ttu-id="df822-202">フォルダー アクセスの制御を構成する</span><span class="sxs-lookup"><span data-stu-id="df822-202">Configure Controlled folder access</span></span>| <span data-ttu-id="df822-203">有効、監査モード</span><span class="sxs-lookup"><span data-stu-id="df822-203">Enabled, Audit Mode</span></span>
+<span data-ttu-id="819b7-202">フォルダー アクセスの制御を構成する</span><span class="sxs-lookup"><span data-stu-id="819b7-202">Configure Controlled folder access</span></span>| <span data-ttu-id="819b7-203">有効、監査モード</span><span class="sxs-lookup"><span data-stu-id="819b7-203">Enabled, Audit Mode</span></span>
 
-## <a name="offboard-devices-using-group-policy"></a><span data-ttu-id="df822-204">グループ ポリシーを使用してデバイスをオフボードする</span><span class="sxs-lookup"><span data-stu-id="df822-204">Offboard devices using Group Policy</span></span>
+## <a name="offboard-devices-using-group-policy"></a><span data-ttu-id="819b7-204">グループ ポリシーを使用してデバイスをオフボードする</span><span class="sxs-lookup"><span data-stu-id="819b7-204">Offboard devices using Group Policy</span></span>
 
-<span data-ttu-id="df822-205">セキュリティ上の理由から、Offboard デバイスに使用されるパッケージは、ダウンロード日から 30 日後に期限切れになります。</span><span class="sxs-lookup"><span data-stu-id="df822-205">For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded.</span></span> <span data-ttu-id="df822-206">デバイスに送信された期限切れのオフボード パッケージは拒否されます。</span><span class="sxs-lookup"><span data-stu-id="df822-206">Expired offboarding packages sent to a device will be rejected.</span></span> <span data-ttu-id="df822-207">オフボード パッケージをダウンロードすると、パッケージの有効期限が通知され、パッケージ名にも含まれます。</span><span class="sxs-lookup"><span data-stu-id="df822-207">When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.</span></span>
+<span data-ttu-id="819b7-205">セキュリティ上の理由から、Offboard デバイスに使用されるパッケージは、ダウンロード日から 30 日後に期限切れになります。</span><span class="sxs-lookup"><span data-stu-id="819b7-205">For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded.</span></span> <span data-ttu-id="819b7-206">デバイスに送信された期限切れのオフボード パッケージは拒否されます。</span><span class="sxs-lookup"><span data-stu-id="819b7-206">Expired offboarding packages sent to a device will be rejected.</span></span> <span data-ttu-id="819b7-207">オフボード パッケージをダウンロードすると、パッケージの有効期限が通知され、パッケージ名にも含まれます。</span><span class="sxs-lookup"><span data-stu-id="819b7-207">When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="df822-208">オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。</span><span class="sxs-lookup"><span data-stu-id="df822-208">Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.</span></span>
+> <span data-ttu-id="819b7-208">オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。</span><span class="sxs-lookup"><span data-stu-id="819b7-208">Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.</span></span>
 
-1. <span data-ttu-id="df822-209">次の方法でオフボード[パッケージを取得Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)</span><span class="sxs-lookup"><span data-stu-id="df822-209">Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):</span></span>
+1. <span data-ttu-id="819b7-209">次の方法でオフボード[パッケージを取得Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)</span><span class="sxs-lookup"><span data-stu-id="819b7-209">Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):</span></span>
 
-    1. <span data-ttu-id="df822-210">ナビゲーション ウィンドウで、[オフボーディング]**設定**  >  **選択します**。</span><span class="sxs-lookup"><span data-stu-id="df822-210">In the navigation pane, select **Settings** > **Offboarding**.</span></span>
+    1. <span data-ttu-id="819b7-210">ナビゲーション ウィンドウで、[オフボーディング]**設定**  >  **選択します**。</span><span class="sxs-lookup"><span data-stu-id="819b7-210">In the navigation pane, select **Settings** > **Offboarding**.</span></span>
 
-    1. <span data-ttu-id="df822-211">オペレーティング システムWindows 10を選択します。</span><span class="sxs-lookup"><span data-stu-id="df822-211">Select Windows 10 as the operating system.</span></span>
+    1. <span data-ttu-id="819b7-211">オペレーティング システムWindows 10を選択します。</span><span class="sxs-lookup"><span data-stu-id="819b7-211">Select Windows 10 as the operating system.</span></span>
 
-    1. <span data-ttu-id="df822-212">[展開方法 **] フィールドで** 、[グループ ポリシー] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="df822-212">In the **Deployment method** field, select **Group policy**.</span></span>
+    1. <span data-ttu-id="819b7-212">[展開方法 **] フィールドで** 、[グループ ポリシー] **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="819b7-212">In the **Deployment method** field, select **Group policy**.</span></span>
 
-    1. <span data-ttu-id="df822-213">[パッケージ **のダウンロード] を** クリックし、.zip保存します。</span><span class="sxs-lookup"><span data-stu-id="df822-213">Click **Download package** and save the .zip file.</span></span>
+    1. <span data-ttu-id="819b7-213">[パッケージ **のダウンロード] を** クリックし、.zip保存します。</span><span class="sxs-lookup"><span data-stu-id="819b7-213">Click **Download package** and save the .zip file.</span></span>
 
-2. <span data-ttu-id="df822-214">デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。</span><span class="sxs-lookup"><span data-stu-id="df822-214">Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device.</span></span> <span data-ttu-id="df822-215">*-MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。</span><span class="sxs-lookup"><span data-stu-id="df822-215">You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.</span></span>
+2. <span data-ttu-id="819b7-214">デバイスからアクセスできる.zipファイルの内容を読み取り専用の共有場所に抽出します。</span><span class="sxs-lookup"><span data-stu-id="819b7-214">Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device.</span></span> <span data-ttu-id="819b7-215">*-MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。</span><span class="sxs-lookup"><span data-stu-id="819b7-215">You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.</span></span>
 
-3. <span data-ttu-id="df822-216">グループ ポリシー [管理コンソール](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="df822-216">Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.</span></span>
+3. <span data-ttu-id="819b7-216">グループ ポリシー [管理コンソール](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) を開き、構成するグループ ポリシー オブジェクト (GPO) を右クリックし、[編集] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="819b7-216">Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.</span></span>
 
-4. <span data-ttu-id="df822-217">グループ ポリシー **管理エディターで、[\*\*\*\*コンピューターの構成**] 、[基本設定] の順に移動し、[コントロール パネルの **設定] に移動します**。</span><span class="sxs-lookup"><span data-stu-id="df822-217">In the **Group Policy Management Editor**, go to **Computer configuration,** then **Preferences**, and then **Control panel settings**.</span></span>
+4. <span data-ttu-id="819b7-217">グループ ポリシー **管理エディターで、[\*\*\*\*コンピューターの構成**] 、[基本設定] の順に移動し、[コントロール パネルの **設定] に移動します**。</span><span class="sxs-lookup"><span data-stu-id="819b7-217">In the **Group Policy Management Editor**, go to **Computer configuration,** then **Preferences**, and then **Control panel settings**.</span></span>
 
-5. <span data-ttu-id="df822-218">[スケジュールされたタスク] **を右クリック** し、[新規] をポイント **し**、[イミディエイト タスク] **をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="df822-218">Right-click **Scheduled tasks**, point to **New**, and then click **Immediate task**.</span></span>
+5. <span data-ttu-id="819b7-218">[スケジュールされたタスク] **を右クリック** し、[新規] をポイント **し**、[イミディエイト タスク] **をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="819b7-218">Right-click **Scheduled tasks**, point to **New**, and then click **Immediate task**.</span></span>
 
-6. <span data-ttu-id="df822-219">開く **[タスク]** ウィンドウで、[全般] タブ **に移動** します。[セキュリティ オプション] の [ローカル SYSTEM ユーザー アカウント (BUILTIN\SYSTEM) **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="df822-219">In the **Task** window that opens, go to the **General** tab. Choose the local SYSTEM user account (BUILTIN\SYSTEM) under **Security options**.</span></span>
+6. <span data-ttu-id="819b7-219">開く **[タスク]** ウィンドウで、[全般] タブ **に移動** します。[セキュリティ オプション] の [ローカル SYSTEM ユーザー アカウント (BUILTIN\SYSTEM) **を選択します**。</span><span class="sxs-lookup"><span data-stu-id="819b7-219">In the **Task** window that opens, go to the **General** tab. Choose the local SYSTEM user account (BUILTIN\SYSTEM) under **Security options**.</span></span>
 
-7. <span data-ttu-id="df822-220">[ **ユーザーがログオンするかどうかを実行する] を選択し** 、[最高の特権で実行する **]** チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="df822-220">Select **Run whether user is logged on or not** and check the **Run with highest privileges** check-box.</span></span>
+7. <span data-ttu-id="819b7-220">[ **ユーザーがログオンするかどうかを実行する] を選択し** 、[最高の特権で実行する **]** チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="819b7-220">Select **Run whether user is logged on or not** and check the **Run with highest privileges** check-box.</span></span>
 
-8. <span data-ttu-id="df822-221">[アクション] タブ **に移動し** 、[ **新規...] をクリックします**。[アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。</span><span class="sxs-lookup"><span data-stu-id="df822-221">Go to the **Actions** tab and click **New...**. Ensure that **Start a program** is selected in the **Action** field.</span></span> <span data-ttu-id="df822-222">共有ファイルのファイル名と場所を  *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd ファイルを入力* します。</span><span class="sxs-lookup"><span data-stu-id="df822-222">Enter the file name and location of the shared  *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.</span></span>
+8. <span data-ttu-id="819b7-221">[アクション] タブ **に移動し** 、[ **新規...] をクリックします**。[アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。</span><span class="sxs-lookup"><span data-stu-id="819b7-221">Go to the **Actions** tab and click **New...**. Ensure that **Start a program** is selected in the **Action** field.</span></span> <span data-ttu-id="819b7-222">共有ファイル *-MM-DD.cmd ファイルWindowsDefenderATPOffboardingScript_valid_until_YYYY NetBIOS パスを入力* します。</span><span class="sxs-lookup"><span data-stu-id="819b7-222">Enter the NetBIOS path of the shared *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.</span></span>
 
-9. <span data-ttu-id="df822-223">**[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="df822-223">Click **OK** and close any open GPMC windows.</span></span>
+9. <span data-ttu-id="819b7-223">**[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="819b7-223">Click **OK** and close any open GPMC windows.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="df822-224">Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。</span><span class="sxs-lookup"><span data-stu-id="df822-224">Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.</span></span>
+> <span data-ttu-id="819b7-224">Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。</span><span class="sxs-lookup"><span data-stu-id="819b7-224">Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.</span></span>
 
-## <a name="monitor-device-configuration"></a><span data-ttu-id="df822-225">デバイス構成の監視</span><span class="sxs-lookup"><span data-stu-id="df822-225">Monitor device configuration</span></span>
+## <a name="monitor-device-configuration"></a><span data-ttu-id="819b7-225">デバイス構成の監視</span><span class="sxs-lookup"><span data-stu-id="819b7-225">Monitor device configuration</span></span>
 
-<span data-ttu-id="df822-226">グループ ポリシーでは、デバイス上のポリシーの展開を監視するオプションはありません。</span><span class="sxs-lookup"><span data-stu-id="df822-226">With Group Policy there isn’t an option to monitor deployment of policies on the devices.</span></span> <span data-ttu-id="df822-227">監視は、ポータルまたはさまざまな展開ツールを使用して直接実行できます。</span><span class="sxs-lookup"><span data-stu-id="df822-227">Monitoring can be done directly on the portal, or by using the different deployment tools.</span></span>
+<span data-ttu-id="819b7-226">グループ ポリシーでは、デバイス上のポリシーの展開を監視するオプションはありません。</span><span class="sxs-lookup"><span data-stu-id="819b7-226">With Group Policy there isn’t an option to monitor deployment of policies on the devices.</span></span> <span data-ttu-id="819b7-227">監視は、ポータルまたはさまざまな展開ツールを使用して直接実行できます。</span><span class="sxs-lookup"><span data-stu-id="819b7-227">Monitoring can be done directly on the portal, or by using the different deployment tools.</span></span>
 
-## <a name="monitor-devices-using-the-portal"></a><span data-ttu-id="df822-228">ポータルを使用してデバイスを監視する</span><span class="sxs-lookup"><span data-stu-id="df822-228">Monitor devices using the portal</span></span>
+## <a name="monitor-devices-using-the-portal"></a><span data-ttu-id="819b7-228">ポータルを使用してデバイスを監視する</span><span class="sxs-lookup"><span data-stu-id="819b7-228">Monitor devices using the portal</span></span>
 
-1. <span data-ttu-id="df822-229">に移動[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)</span><span class="sxs-lookup"><span data-stu-id="df822-229">Go to [Microsoft Defender Security Center](https://securitycenter.windows.com/).</span></span>
-2. <span data-ttu-id="df822-230">[デバイス **] リストをクリックします**。</span><span class="sxs-lookup"><span data-stu-id="df822-230">Click **Devices list**.</span></span>
-3. <span data-ttu-id="df822-231">デバイスが表示されているのを確認します。</span><span class="sxs-lookup"><span data-stu-id="df822-231">Verify that devices are appearing.</span></span>
+1. <span data-ttu-id="819b7-229">に移動[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)</span><span class="sxs-lookup"><span data-stu-id="819b7-229">Go to [Microsoft Defender Security Center](https://securitycenter.windows.com/).</span></span>
+2. <span data-ttu-id="819b7-230">[デバイス **] リストをクリックします**。</span><span class="sxs-lookup"><span data-stu-id="819b7-230">Click **Devices list**.</span></span>
+3. <span data-ttu-id="819b7-231">デバイスが表示されているのを確認します。</span><span class="sxs-lookup"><span data-stu-id="819b7-231">Verify that devices are appearing.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="df822-232">デバイスが [デバイス] リストに表示を開始するには、数日 **かかる場合があります**。</span><span class="sxs-lookup"><span data-stu-id="df822-232">It can take several days for devices to start showing on the **Devices list**.</span></span> <span data-ttu-id="df822-233">これには、ポリシーがデバイスに配布される時間、ユーザーがログオンする前にかかる時間、エンドポイントがレポートを開始するのにかかる時間が含まれます。</span><span class="sxs-lookup"><span data-stu-id="df822-233">This includes the time it takes for the policies to be distributed to the device, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.</span></span>
+> <span data-ttu-id="819b7-232">デバイスが [デバイス] リストに表示を開始するには、数日 **かかる場合があります**。</span><span class="sxs-lookup"><span data-stu-id="819b7-232">It can take several days for devices to start showing on the **Devices list**.</span></span> <span data-ttu-id="819b7-233">これには、ポリシーがデバイスに配布される時間、ユーザーがログオンする前にかかる時間、エンドポイントがレポートを開始するのにかかる時間が含まれます。</span><span class="sxs-lookup"><span data-stu-id="819b7-233">This includes the time it takes for the policies to be distributed to the device, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="df822-234">関連項目</span><span class="sxs-lookup"><span data-stu-id="df822-234">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="819b7-234">関連項目</span><span class="sxs-lookup"><span data-stu-id="819b7-234">Related topics</span></span>
 
-- [<span data-ttu-id="df822-235">デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="df822-235">Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager</span></span>](configure-endpoints-sccm.md)
-- [<span data-ttu-id="df822-236">モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード</span><span class="sxs-lookup"><span data-stu-id="df822-236">Onboard Windows 10 devices using Mobile Device Management tools</span></span>](configure-endpoints-mdm.md)
-- [<span data-ttu-id="df822-237">ローカル スクリプトを使用した Windows 10 デバイスのオンボード</span><span class="sxs-lookup"><span data-stu-id="df822-237">Onboard Windows 10 devices using a local script</span></span>](configure-endpoints-script.md)
-- [<span data-ttu-id="df822-238">非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード</span><span class="sxs-lookup"><span data-stu-id="df822-238">Onboard non-persistent virtual desktop infrastructure (VDI) devices</span></span>](configure-endpoints-vdi.md)
-- [<span data-ttu-id="df822-239">新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する</span><span class="sxs-lookup"><span data-stu-id="df822-239">Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices</span></span>](run-detection-test.md)
-- [<span data-ttu-id="df822-240">Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="df822-240">Troubleshoot Microsoft Defender for Endpoint onboarding issues</span></span>](troubleshoot-onboarding.md)
+- [<span data-ttu-id="819b7-235">デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="819b7-235">Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager</span></span>](configure-endpoints-sccm.md)
+- [<span data-ttu-id="819b7-236">モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード</span><span class="sxs-lookup"><span data-stu-id="819b7-236">Onboard Windows 10 devices using Mobile Device Management tools</span></span>](configure-endpoints-mdm.md)
+- [<span data-ttu-id="819b7-237">ローカル スクリプトを使用した Windows 10 デバイスのオンボード</span><span class="sxs-lookup"><span data-stu-id="819b7-237">Onboard Windows 10 devices using a local script</span></span>](configure-endpoints-script.md)
+- [<span data-ttu-id="819b7-238">非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード</span><span class="sxs-lookup"><span data-stu-id="819b7-238">Onboard non-persistent virtual desktop infrastructure (VDI) devices</span></span>](configure-endpoints-vdi.md)
+- [<span data-ttu-id="819b7-239">新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する</span><span class="sxs-lookup"><span data-stu-id="819b7-239">Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices</span></span>](run-detection-test.md)
+- [<span data-ttu-id="819b7-240">Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="819b7-240">Troubleshoot Microsoft Defender for Endpoint onboarding issues</span></span>](troubleshoot-onboarding.md)
