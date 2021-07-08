@@ -246,7 +246,8 @@
 #### [攻撃面の減少に監査モードを使用する](audit-windows-defender.md)
 
 ### 次世代の保護
-#### [Microsoft Defender ウイルス対策の概要](microsoft-defender-antivirus-in-windows-10.md)
+#### [次世代保護の概要](next-generation-protection.md)
+##### [Microsoft Defender ウイルス対策の概要](microsoft-defender-antivirus-windows.md)
 ##### [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)
 ##### [ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [ベストな組み合わせ: Microsoft Defender ウイルス対策と Office 365](office-365-microsoft-defender-antivirus.md)
