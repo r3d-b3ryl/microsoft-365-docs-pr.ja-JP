@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: インサイダー リスク ポリシーを作成して管理する
           href: insider-risk-management-policies.md
-        - name: インサイダー リスクのアラートを調査する
-          href: insider-risk-management-alerts.md
+        - name: インサイダー リスク アクティビティを調査する
+          href: insider-risk-management-activities.md
         - name: インサイダー リスクのケースに対処する
           href: insider-risk-management-cases.md
         - name: インサイダーリスク監査ログを使用してアクティビティを確認する
@@ -118,6 +118,12 @@
           href: create-a-custom-sensitive-information-type.md
         - name: カスタムの機密情報の種類を作成する - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: カスタムの機密情報の種類を削除する - PowerShell
+          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+        - name: カスタムの機密情報の種類を変更する - PowerShell
+          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+        - name: カスタムの機密情報の種類のフィルター リファレンス
+          href: sit-custom-sit-filters.md
         - name: キーワード 辞書を作成する
           href: create-a-keyword-dictionary.md
         - name: キーワード 辞書を変更する
@@ -915,7 +921,7 @@
         - name: コンプライアンス構成アナライザー ツール
           href: compliance-manager-mcca.md
         - name: よく寄せられる質問 (FAQ)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: コンプライアンス マネージャー (クラシック)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal

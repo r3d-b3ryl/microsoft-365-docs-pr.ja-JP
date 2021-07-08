@@ -46,6 +46,8 @@
       href: adoption-getstarted.md
     - name: シナリオとユース ケース
       href: adoption-scenarios.md
+    - name: 試用版を実行する
+      href: trial-syntex.md
     - name: Microsoft 365 で契約を管理する
       items:
         - name: 概要
