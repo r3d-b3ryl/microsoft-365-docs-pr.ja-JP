@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7712ce1ee4c28352861df17c0637a94d99fa2c8a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 19fd44633f03a7797484ecaa6a15159e24da7fbf
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226529"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326821"
 ---
 # <a name="insider-risk-management-cases"></a>Insider リスク管理ケース
 
@@ -98,7 +98,7 @@ ms.locfileid: "53226529"
 [ **アラート]** タブには、ケースに含まれる現在のアラートが要約されます。 新しいアラートは既存のケースに追加され、割り当てられたアラート キューに追加されます。 次のアラート属性がキューに一覧表示されます。
 
 - 状態
-- 重大度
+- 重要度
 - 検出された時間
 
 キューからアラートを選択して、[アラートの詳細 **] ページを表示** します。
@@ -106,7 +106,7 @@ ms.locfileid: "53226529"
 検索コントロールを使用して、特定のテキストのアラート名を検索し、アラート フィルターを使用して、次の属性でケースを並べ替える。
 
 - 状態
-- 重大度
+- 重要度
 - 検出された時間、開始日、終了日
 
 フィルター コントロールを使用して、次を含むいくつかの属性でアラートをフィルター処理します。
@@ -147,7 +147,7 @@ ms.locfileid: "53226529"
 
 [ **アクティビティ エクスプローラー]** タブを使用すると、リスク アナリストと調査担当者は、リスクアラートに関連付けられたアクティビティの詳細を確認できます。 たとえば、ケース管理アクションの一環として、調査担当者とアナリストはケースに関連付けられているすべてのリスク アクティビティを確認して詳細を確認する必要があります。 アクティビティ エクスプローラー **を使用すると**、レビュー担当者は、検出された危険なアクティビティのタイムラインをすばやく確認し、アラートに関連付けられているすべてのリスク アクティビティを特定してフィルター処理できます。
 
-アクティビティ エクスプローラーの詳細については、「Insider リスク管理アラート [」の記事を参照](insider-risk-management-alerts.md#activity-explorer-preview) してください。
+アクティビティ エクスプローラーの詳細については、「Insider リスク管理アラート [」の記事を参照](insider-risk-management-activities.md#activity-explorer-preview) してください。
 
 ### <a name="content-explorer"></a>コンテンツ エクスプローラー
 

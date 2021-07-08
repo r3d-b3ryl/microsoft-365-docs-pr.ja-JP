@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6884ec3b2bc7c24e4f7f6e62d9b24add3aeee2c0
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: a6a0ebb6ef15a6d4746d72a73feb16e53f89354e
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007347"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326785"
 ---
 # <a name="plan-for-insider-risk-management"></a>インサイダー リスク管理のための計画
 
@@ -42,9 +42,9 @@ ms.locfileid: "53007347"
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>レビューと調査のワークフローを計画する
 
-専用の関係者を選択して [、Microsoft 365](https://compliance.microsoft.com/)コンプライアンス センターの定期的なケイデンスに関するアラートとケースを監視および確認します。 インサイダー リスク管理で使用できるさまざまな役割グループに異なる利害関係者を割り当てる方法を理解してください。
+専用の関係者を選択して、サーバー内の定期的なケイデンスに関するアラートとケースを監視および[確認Microsoft 365 コンプライアンス センター。](https://compliance.microsoft.com/) インサイダー リスク管理で使用できるさまざまな役割グループに異なる利害関係者を割り当てる方法を理解してください。
 
-コンプライアンス管理チームの構造に応じて、ユーザーを特定の役割グループに割り当て、さまざまな一連のインサイダー リスク機能を管理するオプションがあります。 Office 365 セキュリティ & コンプライアンス センターの [アクセス許可] タブを表示し、役割グループを管理するには、組織の管理役割グループに割り当てられているか、役割の管理役割を割り当てる必要があります。  インサイダー リスク管理を構成する場合は、次の役割グループ オプションから選択します。
+コンプライアンス管理チームの構造に応じて、ユーザーを特定の役割グループに割り当て、さまざまな一連のインサイダー リスク機能を管理するオプションがあります。 Office 365 セキュリティ& コンプライアンス センターの [アクセス許可] タブを表示し、役割グループを管理するには、組織の管理役割グループに割り当てられているか、役割の管理役割を割り当てる *必要* があります。 インサイダー リスク管理を構成する場合は、次の役割グループ オプションから選択します。
 
 | **役割グループ** | **ロール権限** |
 | :------------- | :------------------- |
@@ -56,15 +56,15 @@ ms.locfileid: "53007347"
 
 ## <a name="understand-requirements-and-dependencies"></a>要件と依存関係を理解する
 
-インサイダー リスク管理ポリシーの実装方法に応じて、適切な Microsoft 365 ライセンス サブスクリプションを取得し、ソリューションの前提条件を理解して計画する必要があります。
+インサイダー リスク管理ポリシーの実装方法に応じて、適切な Microsoft 365 ライセンス サブスクリプションを持ち、ソリューションの前提条件を理解して計画する必要があります。
 
-**ライセンス:** Insider リスク管理は、Microsoft 365 ライセンス サブスクリプションの幅広い選択の一環として利用できます。 詳細については、「Insider リスク管理の開始 [」の記事を参照](insider-risk-management-configure.md#subscriptions-and-licensing) してください。
+**ライセンス:** Insider リスク管理は、ライセンス サブスクリプションの幅広い選択Microsoft 365利用できます。 詳細については、「Insider リスク管理の開始 [」の記事を参照](insider-risk-management-configure.md#subscriptions-and-licensing) してください。
 
-既存の Microsoft 365 Enterprise E5 プランをお持ちで、インサイダー リスク管理を試す場合は、既存のサブスクリプションに Microsoft [](https://www.microsoft.com/microsoft-365/enterprise) 365 を追加するか、Microsoft [365](/office365/admin/try-or-buy-microsoft-365) Enterprise E5 の試用版にサインアップできます。
+既存の Microsoft 365 Enterprise E5 プランをお持ちで、インサイダー リスク管理を試す場合は、Microsoft 365 を既存のサブスクリプションに追加するか[、Microsoft 365 Enterprise](/office365/admin/try-or-buy-microsoft-365) E5 の試用版にサインアップできます。 [](https://www.microsoft.com/microsoft-365/enterprise)
 
 **ポリシー テンプレートの要件:** 選択したポリシー テンプレートに応じて、組織内でインサイダー リスク管理を構成する前に理解し、計画する必要がある要件があります。
 
-- ユーザー テンプレートを削除してデータ盗難を使用する場合は、組織のユーザーに対して定期的に辞任と終了日の情報をインポートする Microsoft 365 HR コネクタを構成する必要があります。 組織用の HR コネクタの段階的な構成手順については「[Microsoft 365 HR コネクタでデータをインポートする](import-hr-data.md)」を参照してください。
+- ユーザー テンプレートを削除してデータ盗難を使用する場合は、Microsoft 365 HR コネクタを構成して、組織内のユーザーの辞任と終了日の情報を定期的にインポートする必要があります。 組織用の HR コネクタの段階的な構成手順については「[Microsoft 365 HR コネクタでデータをインポートする](import-hr-data.md)」を参照してください。
 - データ 漏え **い** テンプレートを使用する場合は、組織内の機密情報を定義し、重大度の高い DLP ポリシーアラートのインサイダー リスク アラートを受信するために、少なくとも 1 つのデータ損失防止 (DLP) ポリシーを構成する必要があります。 組織の DLP ポリシーを構成する方法については、「[DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)」の記事をご覧ください。
 - セキュリティ ポリシー違反 **テンプレートを使用する** 場合は、セキュリティ違反アラートをインポートするために、Defender セキュリティ センターで Microsoft Defender for Endpoint のインサイダー リスク管理統合を有効にする必要があります。 Defender for Endpoint とインサイダー リスク管理の統合を有効にする手順については [、「Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/advanced-features) の高度な機能を構成する」の記事を参照してください。
 - **Disgruntled** ユーザー テンプレートを使用する場合は、組織内のユーザーのパフォーマンスまたは降格状態情報を定期的にインポートする Microsoft 365 HR コネクタを構成する必要があります。 組織用の HR コネクタの段階的な構成手順については「[Microsoft 365 HR コネクタでデータをインポートする](import-hr-data.md)」を参照してください。
@@ -82,7 +82,7 @@ ms.locfileid: "53007347"
 インサイダー リスク管理のドキュメントを、管理および修復ワークフローに含まれる組織内の関係者と共有します。
 
 - [インサイダー リスク ポリシーを作成して管理する](insider-risk-management-policies.md)
-- [インサイダー リスクのアラートを調査する](insider-risk-management-alerts.md)
+- [インサイダー リスクのアクティビティを調査する](insider-risk-management-activities.md)
 - [インサイダー リスクのケースに対処する](insider-risk-management-cases.md)
 - [インサイダー リスク コンテンツ エクスプローラーでケース データを確認する](insider-risk-management-content-explorer.md)
 - [インサイダー リスク通知のテンプレートを作成する](insider-risk-management-notices.md)

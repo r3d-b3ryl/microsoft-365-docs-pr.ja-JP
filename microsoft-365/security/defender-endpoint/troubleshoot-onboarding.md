@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: b3ee2f2dcf13402e506b299935459e435fd2f89a
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929697"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326905"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング
 
@@ -205,9 +205,9 @@ ID | 重要度 | イベントの説明 | トラブルシューティングの手
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
 
-   a. [スタート **] ボタンを** クリックし **、「cmd」** と入力し、Enter キーを **押します**。
+   a.  [スタート **] ボタンを** クリックし **、「cmd」** と入力し、Enter キーを **押します**。
 
-   b. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
+   b.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
 2. 次のコマンドを入力し、Enter キーを **押します**。
 
@@ -225,9 +225,9 @@ ID | 重要度 | イベントの説明 | トラブルシューティングの手
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
 
-   a. [スタート **] ボタンを** クリックし **、「cmd」** と入力し、Enter キーを **押します**。
+   a.  [スタート **] ボタンを** クリックし **、「cmd」** と入力し、Enter キーを **押します**。
 
-   b. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
+   b.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
 2. 次のコマンドを入力し、Enter キーを **押します**。
 
@@ -243,7 +243,7 @@ ID | 重要度 | イベントの説明 | トラブルシューティングの手
 
 4. サービスを開始します。
 
-   a. コマンド プロンプトで、次のコマンドを入力し **、Enter** キーを押します。
+   a.  コマンド プロンプトで、次のコマンドを入力し **、Enter** キーを押します。
 
    ```text
    sc start diagtrack
@@ -300,6 +300,9 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 ## <a name="troubleshoot-onboarding-issues-on-a-server"></a>サーバーでのオンボーディングの問題のトラブルシューティング
 
+>[!NOTE]
+>次のトラブルシューティング ガイダンスは、以下のユーザーにのみWindows Server 2016適用されます。
+
 サーバーのオンボード中に問題が発生した場合は、次の検証手順を実行して、考えられる問題に対処します。
 
 - [センサー Microsoft Monitoring Agentをサービスに報告するように、コンピューター (MMA) がインストールおよび構成されていることを確認する](configure-server-endpoints.md)
@@ -307,7 +310,7 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 
 また、次の情報を確認する必要があります。
 
-- タスク マネージャーの [プロセス] タブで Microsoft Defender for Endpoint Service が **実行されている****のを確認します**。 例:
+- タスク マネージャーの [プロセス] タブで Microsoft Defender for Endpoint Service が **実行されている****のを確認します**。 次に例を示します。
 
     ![Microsoft Defender for Endpoint Service が実行されているプロセス ビューのイメージ](images/atp-task-manager.png)
 
@@ -334,7 +337,7 @@ WinHTTP は、インターネット閲覧プロキシ設定や他のユーザー
 - エンド ユーザーが最初のログオンを実行する前にデバイスがオフまたは再起動される
 - このシナリオでは、オンボード パッケージが展開された場合でも、SENSE サービスは自動的に開始されません
 
-<div class="alert"><b>注:</b>WINDOWS 10、バージョン 1809、Windows Server 2019 および[2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日の更新プログラムのロールアップで SENSE サービスを開始するには、O Windows OBE 後のユーザー ログオンが必要なくなりました。 </br> Windows 10バージョン 1909 と[2021 年 4](https://support.microsoft.com/kb/5001396)月の更新プログラムのロールアップ </br> Windows 10 2021 年 4 月 28 日の更新プログラムのロールアップを含むバージョン[2004/20H2 のバージョン](https://support.microsoft.com/kb/5001391) </div> 
+<div class="alert"><b>注:</b>SENSE サービスが[2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日の更新プログラムのロールアップを使用して Windows 10 Version 1809 または Windows Server 2019 以降の Windows バージョンで開始するには、OOBE 後のユーザー ログオンが不要になります。 </br> Windows 10バージョン 1909 と[2021 年 4](https://support.microsoft.com/kb/5001396)月の更新プログラムのロールアップ </br> Windows 10 2021 年 4 月 28 日の更新プログラムのロールアップを含むバージョン[2004/20H2 のバージョン](https://support.microsoft.com/kb/5001391) </div> 
 <br></br>
 > [!NOTE]
 > 次の手順は、次の手順を使用する場合にのみMicrosoft Endpoint Configuration Manager。 アプリケーションを使用したオンボーディングの詳細については、「Microsoft Endpoint Configuration Manager [Microsoft Defender for Endpoint」を参照してください](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。

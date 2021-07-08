@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1864c34f1e7bb17decfaeb2057dfff463a33b37c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0dae2d65e88c8a5ad4bc6c39e8ea540f55d0f822
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226349"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326749"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>インサイダー リスク管理の詳細については、Microsoft 365
 
@@ -86,10 +86,10 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 ### <a name="alerts"></a>アラート
 
-アラートは、ポリシー条件に一致し、アラート ダッシュボードに表示されるリスク インジケーターによって自動的 [に生成されます](insider-risk-management-alerts.md)。 このダッシュボードを使用すると、組織のレビュー、時間の間にアラートを開く、アラートの統計情報が必要なすべてのアラートを簡単に表示できます。 すべてのポリシー通知は、既存のアラートとアクションが必要な新しいアラートの状態をすばやく特定するために、次の情報と一緒に表示されます。
+アラートは、ポリシー条件に一致し、アラート ダッシュボードに表示されるリスク インジケーターによって自動的 [に生成されます](insider-risk-management-activities.md#alert-dashboard)。 このダッシュボードを使用すると、組織のレビュー、時間の間にアラートを開く、アラートの統計情報が必要なすべてのアラートを簡単に表示できます。 すべてのポリシー通知は、既存のアラートとアクションが必要な新しいアラートの状態をすばやく特定するために、次の情報と一緒に表示されます。
 
 - 状態
-- 重大度
+- 重要度
 - 検出された時間
 - ケース
 - ケースの状態
@@ -105,6 +105,8 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 ![Insider リスク管理トリアージ](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>調査
+
+ユーザー アクティビティ レポート (プレビュー) を使用して、選択したユーザーのすべてのアクティビティ [をすばやく調査します](insider-risk-management-activities.md#user-activity-reports-preview)。 これらのレポートを使用すると、組織内の調査担当者は、一時的または明示的にインサイダー リスク管理ポリシーに割り当てることなく、定義された期間の特定のユーザーのアクティビティを調査できます。 ユーザーのアクティビティを調べた後、調査担当者は個々のアクティビティを良性として却下したり、レポートへのリンクを他の調査員と共有または電子メールで送信したり、ユーザーを一時的または明示的にインサイダーリスク管理ポリシーに割り当てるか選択できます。
 
 [ポリシーの](insider-risk-management-cases.md) 一致に関するアクティビティの詳細と状況の詳細と調査を必要とするアラート用にケースが作成されます。 ケース **ダッシュボードには** 、組織のすべてのアクティブなケース、オープン ケース、および組織のケース統計が表示されます。 レビュー担当者は、状況、ケースが開かされた日付、およびケースが最後に更新された日付によって、迅速にケースをフィルター処理できます。
 

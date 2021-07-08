@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Microsoft Viva トピックに関するリソースの検索方法について説明します。
-ms.openlocfilehash: 4596f703f86465e4d2d37e2744493bcaef440b7b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7d8a95e924c269660e50355078f4fc9eee9bd333
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538917"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326845"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva トピックの概要
 
@@ -39,11 +39,11 @@ Viva Topics は、組織がMicrosoft 365情報を知識に変換するのに役�
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|Viva トピックの詳細|[Microsoft Viva トピックの概要](topic-experiences-overview.md)|
+|Viva トピックの詳細|[ビバ トピックの概要](topic-experiences-overview.md)|
 |AI を使用してトピックを検出し、提案する方法を学ぶ|[Microsoft Viva トピックの発見](topic-experiences-discovery.md)|
-|トピックのセキュリティについて|[Microsoft Viva のセキュリティとプライバシー](topic-experiences-security-privacy.md)|
-|Viva トピックを取得する方法を学習する|[Microsoft Viva トピックの製品ページ](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
-|Microsoft 技術コミュニティ リソース センターのリソースを参照してください。|[Microsoft Viva トピック技術コミュニティ](https://resources.techcommunity.microsoft.com/viva-topics/)|
+|トピックのセキュリティについて|[Viva Topics のセキュリティとプライバシー](topic-experiences-security-privacy.md)|
+|Viva トピックを取得する方法を学習する|[Viva Topics 製品ページ](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|Microsoft 技術コミュニティ リソース センターのリソースを参照してください。|[Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
 
@@ -53,7 +53,8 @@ Viva Topics は、組織がMicrosoft 365情報を知識に変換するのに役�
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|Microsoft Viva の使用計画を開始する方法について説明します。 |[概要](topics-adoption-getstarted.md)<br><br>|  
+|ビバ トピックの使用計画を開始する方法について説明します。 |[概要](topics-adoption-getstarted.md)|  
+|ビバ トピックの試用版パイロット プログラムをセットアップして実行する |[試用版を実行する](trial-topics.md)|
 
 ## <a name="set-up-and-administration"></a>設定と管理
 
@@ -61,7 +62,7 @@ Viva Topics は、組織がMicrosoft 365情報を知識に変換するのに役�
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|Microsoft Viva をセットアップして構成する方法|[Microsoft Viva のセットアップ](set-up-topic-experiences.md)|
+|ビバ トピックを設定および構成する方法について説明します。|[ビバ トピックのセットアップ](set-up-topic-experiences.md)|
 |ユーザーのアクセス許可を構成する方法について|[トピックのアクセス許可を管理する](topic-experiences-user-permissions.md)|
 |トピックを表示できるユーザーを管理する方法について説明します|[トピックの可視性を管理する](topic-experiences-knowledge-rules.md)|
 |トピックの検出の設定を管理する方法|[トピックの検出を管理する](topic-experiences-discovery.md)|
