@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: この記事では、認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: 7198e2d343f73299bb62ea73863cecd359d90ba2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2c89ca319ba79d6f0463cc6d244c8d91928d6e42
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538233"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327025"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 
@@ -43,7 +43,7 @@ ms.locfileid: "52538233"
 組織全体で [すべてのユーザー] リンクの有効期限を設定するには
 
 1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
-2. 左側のナビゲーションで **[共有]** をクリックします。
+2. 左側のナビゲーションで、**[ポリシー]** を展開し、**[共有]** をクリックします。
 3. **[[すべてのユーザー] リンクの有効期限とアクセス許可のオプションを選択する]** で、**[これらのリンクは、次の日数以内に期限切れにする必要があります]** チェック ボックスをオンにします。</br>
    ![SharePoint における組織レベルの [すべてのユーザー] リンクの有効期限設定のスクリーンショット](../media/sharepoint-organization-anyone-link-expiration.png)
 4. このボックスに日数を入力し、**[保存]** をクリックします。

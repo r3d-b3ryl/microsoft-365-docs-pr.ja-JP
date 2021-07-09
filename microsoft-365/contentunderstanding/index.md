@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex に関するリソースの検索方法について説明します。
-ms.openlocfilehash: a3bd14c379425573ee7ad57604cc4cbb706741b8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 087cf7b21d00cef3711d8e5765161eaa98418437
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149012"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327061"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
-Microsoft SharePoint Syntex は、次のような組織支援をする Microsoft 365 サービスです。
+SharePoint Syntex は、次のような組織支援をする Microsoft 365 サービスです。
 
 - 高度な AI および機械教育機能を使用して、人間の操作性を強化します
 - 自動コンテンツ処理
@@ -56,7 +56,8 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Microsoft
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
 |SharePoint Syntex の使用計画を開始する方法について説明します。 |[SharePoint Syntex の導入: 使用の開始](./adoption-getstarted.md)| 
-|組織で SharePoint Syntex を使用する方法に関するアイデアを提供するシナリオの例を参照してください |[Microsoft SharePoint Syntex のシナリオとユース ケース](./adoption-scenarios.md)| 
+|組織で SharePoint Syntex を使用する方法に関するアイデアを提供するシナリオの例を参照してください |[SharePoint Syntex のシナリオとユース ケース](./adoption-scenarios.md)| 
+|SharePoint Syntex の試用版パイロット プログラムを設定して実行する |[試用版を実行する](./trial-syntex.md)|
 |SharePoint Syntex を使用してドキュメント プロセスを自動化する方法について説明します |[Microsoft 365 ソリューションを使用して契約を管理する](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
@@ -65,7 +66,7 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Microsoft
 
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
-|SharePoint Syntex の設定と構成|[Microsoft SharePoint Syntex の設定](./set-up-content-understanding.md)|
+|SharePoint Syntex の設定と構成|[SharePoint Syntex の設定](./set-up-content-understanding.md)|
 |画像のタグ付けとを無効にする方法|[SharePoint Syntex での画像のタグ付け](./image-tagging.md)|
 
 ## <a name="models"></a>モデル
@@ -76,6 +77,7 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Microsoft
 |:-----|:-----|
 |モデルの使用方法についての詳細情報|[コンテンツ センターを作成する](./create-a-content-center.md)<br><br>[分類子を作成する](./create-a-classifier.md)<br><br>[エクストラクターを作成する](./create-an-extractor.md)<br><br>[フォーム処理モデルを作成する](./create-a-form-processing-model.md)<br><br>[説明の種類](./explanation-types-overview.md)<br><br>[ドキュメント理解モデルの適用](./apply-a-model.md)<br><br>[サンプル モデルを使用したドキュメント理解モデルについての詳細情報](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |モデルに保持ラベルを適用する|[保持ラベルをドキュメント理解モデルに適用する](./apply-a-retention-label-to-a-model.md)|
+|モデルに秘密度ラベルを適用する|[秘密度ラベルをドキュメント理解モデルに適用する](./apply-a-sensitivity-label-to-a-model.md)|
 |エクストラクターの作成時に、 Managed Metadata Service の用語ストアの分類を使用する|[エクストラクターの作成時に用語ストアの分類を活用する](./leverage-term-store-taxonomy.md)|
 |モデルに関するデータを表示する方法|[モデルの利用分析](./model-usage-analytics.md)|
 |モデルのトレーニング時にアクセシビリティ モードを使用する方法についての詳細|[SharePoint Syntex アクセシビリティ モード](./accessibility-mode.md)|
@@ -90,4 +92,3 @@ SharePoint Syntex ライセンスでは、ユーザーにプレミアム コン�
 |SharePoint のライブラリとリストでコンテンツタイプの一貫性をさらに向上させる方法について説明します。|[コンテンツタイプをハブにプッシュする](./push-content-type-to-hub.md)|
 |使用できる用語ストア レポートについての詳細情報|[用語ストア レポート](./term-store-analytics.md)|
 
-## <a name="see-also"></a>関連項目

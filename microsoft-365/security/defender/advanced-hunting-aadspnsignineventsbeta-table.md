@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの AADSpnSignInEventsBeta テーブル
 description: 高度なハンティング スキーマの Azure Active Directory サービス プリンシパルおよびマネージ ID サインイン イベント テーブルに関連付けられている情報について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、列、データ型、説明、AlertInfo、アラート、エンティティ、証拠、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、AlertInfo、アラート、エンティティ、証拠、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント、ID、AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f74972bcd5d0ddaab58d82b72a55991fda44e3b1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 6aa709fe4534bf049c6f8c097bc4bd85a9d6793b
+ms.sourcegitcommit: 93eeaefc0d509c75e4c2210029155298ecca7583
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583546"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53347909"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -48,27 +48,27 @@ ms.locfileid: "52583546"
 
 
 
-| 列名     | データ型 | 説明   |
-| ----- | ----- | ---- |
-| `Timestamp` | datetime      | レコードが作成された日付と時刻                                                                                                     |
-| `Application`          | 文字列        | 記録されたアクションを実行したアプリケーション                                                                                                   |
-| `ApplicationId`        | string        | アプリケーションの一意の識別子                                                                                                           |
-| `IsManagedIdentity`    | boolean       | マネージ ID によってサインインが開始されたかどうかを示します。                                                                               |
-| `ErrorCode`            | int        | サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。 |
-| `CorrelationId`        | string        | サインイン イベントの一意の識別子                                                                                                          |
-| `ServicePrincipalName` | string        | サインインを開始したサービス プリンシパルの名前                                                                                        |
-| `ServicePrincipalId`   | string        | サインインを開始したサービス プリンシパルの一意の識別子                                                                           |
-| `ResourceDisplayName`  | string        | アクセスされたリソースの表示名                                                                                                           |
-| `ResourceId`           | string        | アクセスされるリソースの一意の識別子                                                                                                      |
-| `ResourceTenantId`     | string        | アクセスされるリソースのテナントの一意の識別子                                                                                        |
-| `IPAddress`            | string        | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス                                                              |
-| `Country`          | string        | クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード                                                                |
-| `State`                | string        | 使用可能な場合は、サインインが発生した状態                                                                                                  |
-| `City`                 | string        | アカウント ユーザーが保存されている都市                                                                                                          |
-| `Latitude`             | string        | サインイン場所の北から南の座標                                                                                          |
-| `Longitude`            | string        | サインイン場所の東から西への座標                                                                                            |
-| `RequestId`            | string        | 要求の一意の識別子                                                                                                                |
-|`ReportId` | string | イベントの一意識別子 | 
+| 列名 | データ型 | 説明 |
+|-----|-----|-----|
+| `Timestamp` | datetime | レコードが作成された日付と時刻 |
+| `Application` | 文字列 | 記録されたアクションを実行したアプリケーション |
+| `ApplicationId` | 文字列 | アプリケーションの一意の識別子 |
+| `IsManagedIdentity`    | ブール値       | マネージ ID によってサインインが開始されたかどうかを示します。 |
+| `ErrorCode`    | 整数 | サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。 |
+| `CorrelationId`        | 文字列        | サインイン イベントの一意の識別子 |
+| `ServicePrincipalName` | 文字列        | サインインを開始したサービス プリンシパルの名前  |
+| `ServicePrincipalId`   | 文字列        | サインインを開始したサービス プリンシパルの一意の識別子  |
+| `ResourceDisplayName`  | 文字列        | アクセスされたリソースの表示名  |
+| `ResourceId`           | 文字列        | アクセスされるリソースの一意の識別子  |
+| `ResourceTenantId`     | 文字列        | アクセスされるリソースのテナントの一意の識別子 |
+| `IPAddress`            | 文字列        | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス  |
+| `Country`          | 文字列        | クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード |
+| `State`                | 文字列        | 使用可能な場合は、サインインが発生した状態 |
+| `City`                 | 文字列        | アカウント ユーザーが保存されている都市  |
+| `Latitude`             | 文字列        | サインイン場所の北から南の座標 |
+| `Longitude`            | 文字列        | サインイン場所の東から西への座標 |
+| `RequestId`            | 文字列        | 要求の一意の識別子 |
+|`ReportId` | 文字列 | イベントの一意識別子 |
 
  
 
