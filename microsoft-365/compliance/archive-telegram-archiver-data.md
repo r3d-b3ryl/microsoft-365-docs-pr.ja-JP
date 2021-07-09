@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタをセットアップして、テレグラム通信データをインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: d3fbe02dce56bec01d66351aa69500a3d5d93a37
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5db1869a1c386ed75f3d8d1381f598d907d2b5ba
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054885"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339444"
 ---
-# <a name="set-up-a-connector-to-archive-telegram-communications-data-preview"></a>テレグラム通信データをアーカイブするコネクタをセットアップする (プレビュー)
+# <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>テレグラム通信データをアーカイブするコネクタをセットアップする
 
 テレグラム チャット、添付ファイル、ファイル、および削除されたメッセージと呼び出しをインポートおよびアーカイブするには、Microsoft 365 コンプライアンス センターの TeleMessage コネクタを使用します。 コネクタを設定して構成すると、そのコネクタは組織の TeleMessage アカウントに接続し、テレグラム アーカイブを使用する従業員のモバイル通信を Microsoft 365 のメールボックスにインポートします。
 

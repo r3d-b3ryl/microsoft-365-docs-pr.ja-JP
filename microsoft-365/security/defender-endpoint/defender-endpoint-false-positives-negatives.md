@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: d3821f4f1f581da5353ee33bd406af8558c0e903
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 7da28ea308994663549c2c490f53a3e0e75a0857
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029959"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339264"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -141,7 +141,7 @@ ms.locfileid: "53029959"
 
 ### <a name="review-completed-actions"></a>完了したアクションを確認する
 
-1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
+1. ポータルの左側のナビゲーション ウィンドウで、[Microsoft 365 Defender]**をクリックします**。
 
 2. [履歴] **タブを** 選択して、実行されたアクションの一覧を表示します。
 
@@ -149,7 +149,7 @@ ms.locfileid: "53029959"
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>アクション センターから検疫済みファイルを復元する
 
-1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
+1. ポータルの左側のナビゲーション ウィンドウで、[Microsoft 365 Defender]**をクリックします**。
 
 2. [履歴 **] タブ** で、元に戻す操作を選択します。
 
@@ -157,7 +157,7 @@ ms.locfileid: "53029959"
 
 ### <a name="undo-multiple-actions-at-one-time"></a>複数の操作を一度に元に戻す
 
-1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
+1. ポータルの左側のナビゲーション ウィンドウで、[Microsoft 365 Defender]**をクリックします**。
 
 2. [履歴 **] タブ** で、元に戻す操作を選択します。
 
@@ -168,7 +168,7 @@ ms.locfileid: "53029959"
 > [!div class="mx-imgBorder"]
 > ![ファイルの検疫](images/autoir-quarantine-file-1.png)
 
-1. アクション センター ( ) に移動 <https://security.microsoft.com/action-center> し、サインインします。
+1. ポータルの左側のナビゲーション ウィンドウで、[Microsoft 365 Defender]**をクリックします**。
 
 2. [履歴 **] タブ** で、アクションの種類が [検疫ファイル] のファイルを **選択します**。
 
@@ -252,7 +252,7 @@ Microsoft Defender for Endpoint 全体で除外を定義するには、次のタ
 
 [インジケーター](/microsoft-365/security/defender-endpoint/manage-indicators) (特に、侵害の指標、または IoC) を使用すると、セキュリティ運用チームはエンティティの検出、防止、除外を定義できます。 たとえば、Microsoft Defender for Endpoint のスキャンおよび修復アクションから除外する特定のファイルを指定できます。 または、インジケーターを使用して、特定のファイル、IP アドレス、または URL に対するアラートを生成できます。
 
-Microsoft Defender for Endpoint の除外としてエンティティを指定するには、それらのエンティティの "許可" インジケーターを作成します。 Microsoft Defender for Endpoint のこのような "[](microsoft-defender-antivirus-in-windows-10.md)許可" インジケーターは[](overview-endpoint-detection-response.md)、次世代の保護、エンドポイントでの検出と対応、および修復&[適用されます](/microsoft-365/security/defender-endpoint/automated-investigations)。
+Microsoft Defender for Endpoint の除外としてエンティティを指定するには、それらのエンティティの "許可" インジケーターを作成します。 Microsoft Defender for Endpoint のこのような "[](microsoft-defender-antivirus-in-windows-10.md)許可" インジケーターは[](overview-endpoint-detection-response.md)、次世代の保護、エンドポイントの検出と応答、および修復の自動化された調査&[適用されます](/microsoft-365/security/defender-endpoint/automated-investigations)。
 
 "許可" インジケーターは、次の場合に作成できます。
 

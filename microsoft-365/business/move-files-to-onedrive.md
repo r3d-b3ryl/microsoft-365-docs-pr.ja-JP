@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: 簡単な手順で、個人用の作業ファイルと機密性の高い会社OneDrive for Businessを移動する方法について説明します。
-ms.openlocfilehash: 4dadc87c0168a9fcdcc795a94df8ee5b7fc7fd91
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6def1c733093417162ca37906c1d55c0eab23e7d
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245106"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339312"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>OneDrive for Business にファイルを移動する
 
@@ -44,7 +44,7 @@ ms.locfileid: "52245106"
 
 ユーザーのコンピューターに多くの個人用ファイルが含まれている場合は、最初にこれらのファイルを OneDrive for Business に移動する必要があります。
   
-1. [ユーザーの portal.office.com に移動し、ビジネス資格情報のユーザーのMicrosoft 365サインインします。
+1. [ユーザーの admin.microsoft.com に移動し、ビジネス資格情報のユーザーのMicrosoft 365サインインします。
 
 2. アプリ起動ツール ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) をクリックして OneDrive に移動します。 
     

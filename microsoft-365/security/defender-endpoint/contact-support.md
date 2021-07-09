@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6d4845163996dcc00ccfcc6c87eb27aff87268fc
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228725"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339194"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
 
@@ -58,9 +58,9 @@ Defender for Endpoint は最近、サポート プロセスをアップグレー
 
     ![疑問符が選択されている場合のウィジェットのイメージ](images/support-widget.png)
 
-2. [ヘルプが必要 **] をクリックします。**  ボタンをクリックしますMicrosoft Defender セキュリティ センター。
+2. [ヘルプが必要 **] をクリックします。**  ポータルの右下にあるボタンMicrosoft 365 Defenderします。
 
-    ![[必要なヘルプ] ボタンの画像](images/need-help.png)
+    ![[必要なヘルプ] ボタンの画像](images/need-help-option.png)
 
 ウィジェットでは、次の 2 つのオプションが提供されます。
 
@@ -70,7 +70,7 @@ Defender for Endpoint は最近、サポート プロセスをアップグレー
 ## <a name="find-solutions-to-common-problems"></a>一般的な問題の解決策を見つける
 このオプションには、質問に関連する可能性がある記事が含まれます。 検索ボックスに質問を入力し始めるだけで、検索に関連する記事が表示されます。
 
-![必要なヘルプ ウィジェットの画像](images/Support3.png)
+![必要なヘルプ ウィジェットの画像](images/information-on-help-screen.png)
 
 提案された記事が十分でない場合は、サービス要求を開く必要があります。
 
@@ -85,7 +85,7 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 
 このオプションは、ヘッドセットのように見えるアイコンをクリックして使用できます。 次に、サポート ケースを提出する次のページが表示されます。
 
-![サービス要求ウィジェットを開くイメージ](images/Support4.png)
+![サービス要求ウィジェットを開くイメージ](images/contact-support-screen.png)
 
 1. 直面している問題のタイトルと説明、およびお客様に連絡する可能性がある電話番号と電子メール アドレスを入力します。
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 管理者は、組織外のユーザーと共有されるリソースを識別するために、Microsoft 365監査ログで共有監査を使用する方法について学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 302ad7665c83ee9061b2e1965ef03ec25d0aab58
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819297"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341510"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>監査ログで共有監査を使用する
 
@@ -96,26 +96,26 @@ ms.locfileid: "44819297"
 
 最初の手順は、監査ログで共有イベントを検索します。 監査ログの検索に関する詳細 (必要なアクセス許可を含む) については、「セキュリティ コンプライアンス センターで監査ログを検索する」を参照& [してください](search-the-audit-log-in-security-and-compliance.md)。
   
-1. [https://protection.office.com](https://protection.office.com) に移動します。
-    
+1. <https://compliance.microsoft.com> に移動します。
+
 2. 職場または学校のアカウントを使用してサインインします。
-    
-3. セキュリティ/コンプライアンス センターの左側のウィンドウで、[**検索**]   >  [**監査ログの検索**] の順にクリックします。
-    
-    [**監査ログの検索**] ページが表示されます。 
-    
+
+3. ウィンドウの左側のウィンドウで、[監査Microsoft 365 コンプライアンス センターを **クリックします**。
+
+    [**監査**] ページが表示されます。
+
 4. [ **アクティビティ] で**、[ **共有とアクセス要求アクティビティ] をクリックして** 、共有関連イベントを検索します。 
-    
+
     ![[アクティビティ] で、[要求アクティビティの共有とアクセス] を選択します。](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
-5.  日付と時刻の範囲を選択して、その期間中に発生した共有イベントを検索します。 
-    
+5. 日付と時刻の範囲を選択して、その期間中に発生した共有イベントを検索します。 
+
 6. [検索 **] を** クリックして検索を実行します。 
-    
+
 7. 検索の実行が完了し、結果が表示された場合は、[結果のエクスポート] **をクリックしてすべての結果** \> **をダウンロードします**。
-    
+
     エクスポート オプションを選択すると、ウィンドウの下部にあるメッセージで、CSV ファイルを開くまたは保存するように求めるメッセージが表示されます。
-    
+
 8. [ **名前を** \> **付けて保存]** をクリックし、CSV ファイルをローカル コンピューターのフォルダーに保存します。 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>手順 2: PowerQuery エディターを使用してエクスポートされた監査ログの書式を設定する

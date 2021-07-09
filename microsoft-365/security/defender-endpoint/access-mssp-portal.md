@@ -1,6 +1,6 @@
 ---
-title: MSSP カスタマー Microsoft Defender セキュリティ センターにアクセスする
-description: MSSP カスタマー Microsoft Defender セキュリティ センターにアクセスする
+title: MSSP カスタマー Microsoft 365 Defenderにアクセスする
+description: MSSP カスタマー Microsoft 365 Defenderにアクセスする
 keywords: マネージド セキュリティ サービス プロバイダー、mssp、構成、統合
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97122decede91e8b4f059b3b66999ac12b300172
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8583b28adecd892ec6875faa934fd7ab08e5db11
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164859"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339588"
 ---
-# <a name="access-the-microsoft-defender-security-center-mssp-customer-portal"></a>MSSP カスタマー Microsoft Defender セキュリティ センターにアクセスする
+# <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>MSSP カスタマー Microsoft 365 Defenderにアクセスする
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6786d423d20ec90c12d2ea712003acc787ed599d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d82bffd6eea54256f2c6773f843030a19e27275d
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165251"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339360"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>マネージド セキュリティ サービス プロバイダーの統合を構成する
 
@@ -44,7 +44,7 @@ ms.locfileid: "51165251"
 
 統合により、MSSP は次のアクションを実行できます。
 
-- MSSP カスタマー のポータルへのアクセスMicrosoft Defender セキュリティ センターする
+- MSSP 顧客のポータルへのアクセスMicrosoft 365 Defenderする
 - 電子メール通知を取得し、 
 - セキュリティ情報とイベント管理 (SIEM) ツールを使用してアラートを取得する
 
@@ -57,7 +57,7 @@ MSSP がこれらのアクションを実行する前に、MSSP のお客様は�
 一般に、次の構成手順を実行する必要があります。
 
 
-- **MSSP にアクセス権を付与Microsoft Defender セキュリティ センター** <br>
+- **MSSP にアクセス権を付与Microsoft 365 Defender** <br>
 このアクションは、MSSP のお客様が行う必要があります。 MSSP のお客様の Defender for Endpoint テナントへの MSSP アクセスを許可します。
  
 

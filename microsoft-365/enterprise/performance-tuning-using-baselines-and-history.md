@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: クライアント コンピューター接続の履歴を確認して、新しい問題を早期に検出する方法について説明します。
-ms.openlocfilehash: 87b1d43df560fc7fea5aadfbf1c422eb22883067
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 314b1acea5935bfd6d93d1da3789657e21cd2d57
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928146"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339372"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>ベースラインとパフォーマンス履歴を使用して、Office 365 のパフォーマンスをチューニングする
 
@@ -54,7 +54,7 @@ Office 365、自動化だけでなく、実際のユーザーによって着実�
 
 まず、発生している問題が実際にパフォーマンスの問題であり、サービス インシデントではないことを確認する必要があります。 パフォーマンスの問題は、サービス インシデントと異なるOffice 365。 それらを分け合う方法を次に示します。
   
-サービスにOffice 365問題がある場合は、サービス インシデントです。 Microsoft 365 管理センターの [現在の正常性] の下に赤または黄色のアイコンが表示されます。また、Office 365 に接続しているクライアント コンピューターのパフォーマンスが低下することがあります。 たとえば、[現在の正常性] に赤いアイコンが表示され、Exchange の横に [調査中] と表示されている場合、Exchange Online を使用するクライアント メールボックスのパフォーマンスが悪いと不平を言う組織内のユーザーから多くの呼び出しを受け取る場合があります。 その場合、サービスのパフォーマンスがサービスExchange Onlineの犠牲になったと考えるのが妥当です。 
+サービスにOffice 365問題がある場合は、サービス インシデントです。 [現在の正常性] の下に赤または黄色のアイコンが表示Microsoft 365 管理センター、コンピューターに接続しているクライアント コンピューターのパフォーマンスが低下する場合Office 365。 たとえば、[現在の正常性] に赤いアイコンが表示され、Exchange の横に [調査中] と表示されている場合、Exchange Online を使用するクライアント メールボックスのパフォーマンスが悪いと不平を言う組織内のユーザーから多くの呼び出しを受け取る場合があります。 その場合、サービスのパフォーマンスがサービスExchange Onlineの犠牲になったと考えるのが妥当です。 
   
 ![[Office 365正常性] ダッシュボードには、サービスの復元を示すExchangeを除く、すべてのワークロードが緑色で表示されます。](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
@@ -251,7 +251,7 @@ Office 365、自動化だけでなく、実際のユーザーによって着実�
     
 2. ツール (この場合は PsPing) がインストールされているフォルダーに移動し、次の URL をOffice 365します。
     
-  - psping portal.office.com:443
+  - psping admin.microsoft.com:443
     
   - psping microsoft-my.sharepoint.com:443
     

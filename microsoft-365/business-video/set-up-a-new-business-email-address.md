@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新しいビジネス メール アドレスを設定する方法について学習します。
-ms.openlocfilehash: df984cbee8bdd1bdd40ca8d9b87c71222db0f69d
-ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+ms.openlocfilehash: 004cdd3abf9b8f8dec34dbfe9739102af081c769
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52065157"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341546"
 ---
 # <a name="set-up-a-new-business-email-address"></a>新しいビジネス メール アドレスを設定する
 
@@ -55,7 +55,7 @@ ms.locfileid: "52065157"
 
 Web サイト のアドレスまたは別のプロバイダーの電子メール アドレスに使用している場合は、既に所有しているドメイン名を使用します。 
 
-## <a name="try-it"></a>お試しください!
+## <a name="give-it-a-try"></a>試してみてください!
  
 1. ドメインをホストする Web サイトにサインインします。 ボタンをクリックして自動的に確認するか、ドメインを手動で更新します。 
 1. メール アドレスをカスタマイズするか、そのままにしてください。 

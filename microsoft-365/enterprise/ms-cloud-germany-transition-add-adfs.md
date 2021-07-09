@@ -18,17 +18,17 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Deutschland からの移行AD Active Directory フェデレーション サービス (FS) の移行手順について説明します。'
-ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c8e784c8e582185b4bdebc0cb359cc4c19503d1a
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165659"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339612"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>ADから移行するための FS 移行手順の詳細
 
 この構成変更は、フェーズ 2 が開始される前にいつでも適用する必要があります。
-フェーズ 2 が完了すると、構成の変更が機能し、次のようなグローバル Office 365経由でサインインできます `https://portal.office.com` 。 フェーズ 2 より前に構成変更を実装する場合、Office 365 Global エンドポイントはまだ動作しませんが、新しい証明書利用者信頼は Active Directory フェデレーション サービス (AD FS) 構成の一部です。
+フェーズ 2 が完了すると、構成の変更が機能し、次のようなグローバル Office 365経由でサインインできます `https://admin.microsoft.com` 。 フェーズ 2 より前に構成変更を実装する場合、Office 365 Global エンドポイントはまだ動作しませんが、新しい証明書利用者信頼は Active Directory フェデレーション サービス (AD FS) 構成の一部です。
 
 Active Directory フェデレーション サービス (AD FS) でフェデレーション認証を使用しているお客様は、移行中にオンプレミスの Active Directory ドメイン サービス (AD DS) を使用するすべての認証に使用される発行者 URI を変更する必要があります。 発行者 URI を変更すると、ドメイン内のユーザーの認証エラーが発生します。 発行者 URI は、FS またはドメインAD管理からフェデレーションに変換される場合、またはその逆に直接変更できます。 移行された Azure のフェデレーション ドメインを追加、削除、または変換ADすることをお勧めします。 発行者 URI は、移行が完全に完了した後で変更できます。
 

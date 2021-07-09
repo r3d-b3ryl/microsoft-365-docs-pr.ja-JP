@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47d57e51eca4950f7a8f4284fbc916e9d030b2c7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844336"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339240"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -38,7 +38,7 @@ ms.locfileid: "52844336"
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
-Defender for Endpoint では、サポートを拡張して、サーバー オペレーティング Windowsも含まれます。 このサポートは、高度な攻撃の検出と調査機能を、Microsoft Defender セキュリティ センターします。
+Defender for Endpoint では、サポートを拡張して、サーバー オペレーティング Windowsも含まれます。 このサポートは、高度な攻撃の検出と調査機能を、Microsoft 365 Defender提供します。
 
 ライセンスとインフラストラクチャに必要な機能に関する実践的なガイダンスについては、「Defender for Endpoint Windowsサーバーの保護」[を参照してください](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128)。
 
@@ -66,14 +66,14 @@ System Center Operations Manager (SCOM) または Azure Monitor (旧称:Operatio
 一般に、次の手順を実行する必要があります。
 
 1. 「始める前に」で説明されているオンボーディング要件 **を満た** します。
-2. Microsoft Defender セキュリティ センターからサーバーの監視を有効にします。
+2. ポータルからサーバーの監視Microsoft 365 Defenderします。
 3. センサー データを Defender for Endpoint に報告するサーバーの MMA をインストールして構成します。
 4. クライアントの構成と更新System Center Endpoint Protectionします。
 
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、サービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint エンドポイントで検出テストを実行 [する」を参照してください](run-detection-test.md)。
 
-#### <a name="before-you-begin"></a>はじめに
+#### <a name="before-you-begin"></a>開始する前に
 
 オンボーディング要件を満たすために、次の手順を実行します。
 
@@ -121,7 +121,7 @@ Server 2008 R2 SP1 Windows、次の要件を満たしていることを確認し
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>オプション 2: Azure セキュリティ センター Windowsサーバーをオンボードする
 
-1. [デバイス管理] Microsoft Defender セキュリティ センターで、[デバイス管理 **オン** ボーディング] 設定  >  **を**  >  **選択します**。
+1. [デバイスのMicrosoft 365 Defender] ウィンドウで、[エンドポイント **デバイス** 設定  >    >  **オンボーディング]**  >  **を選択します**。
 
 2. オペレーティング **Windowsサーバー 2008 R2 SP1、2012 R2、2016** を選択します。
 
@@ -200,7 +200,7 @@ Defender for Endpoint は、Azure Defender と統合して、包括的なサー�
     > Azure Defender for Servers と Microsoft Defender for Endpoint の統合は[、Windows Server 2019 と Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
 
 - Windows監視されるサーバーは、Defender for Endpoint でも利用できます 。 Azure Defender は Defender for Endpoint テナントにシームレスに接続し、クライアントとサーバー間で 1 つのビューを提供します。  さらに、Defender for Endpoint アラートは Azure Defender コンソールで利用できます。
-- サーバー調査 - Azure Defender のお客様は、Microsoft Defender セキュリティ センターにアクセスして詳細な調査を実行し、潜在的な侵害の範囲を明らかにできます。
+- サーバー調査 - Azure Defender のお客様は、Microsoft 365 Defenderポータルにアクセスして詳細な調査を実行し、潜在的な侵害の範囲を明らかにできます。
 
 > [!IMPORTANT]
 > - Azure Defender を使用してサーバーを監視すると、Defender for Endpoint テナントが自動的に作成されます (米国のユーザーは米国、EU ではヨーロッパおよび英国のユーザー)。<br>
@@ -255,7 +255,7 @@ Windows クライアント デバイスで使用できるのと同じ方法で�
 
 1. ワークスペース ID を取得します。
 
-   1. ナビゲーション ウィンドウで、[オンボーディング]**設定**  >  **選択します**。
+   1. [デバイスのMicrosoft 365 Defender] ウィンドウで、[エンドポイント **デバイス** 設定  >    >  **オンボーディング]**  >  **を選択します**。
 
    1. オペレーティング **システムWindows Server 2008 R2 SP1、2012 R2、2016** を選択し、ワークスペース ID を取得します。
 

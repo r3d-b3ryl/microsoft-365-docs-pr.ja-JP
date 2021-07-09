@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順Office 365説明します。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 0b118a97df765321704a995905de797e06a60108
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822240"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339420"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、解決する
 
@@ -52,7 +52,7 @@ ms.locfileid: "52822240"
    > |名前|RecipientType|
    > |---|---|
    > |エイリアス、ユーザー|MailUser|
-   > |エイリアス、ユーザー|ユーザー|
+   > |エイリアス、ユーザー|User|
 
 3. 複数のユーザーが返された場合は、競合するオブジェクトを見つけて修正します。
 
@@ -99,7 +99,7 @@ SPO の場所を開き、このファイルが実際に開いていないか確�
 推奨される解決策は、サイトのインデックスを手動で再作成するか、サイトが自動的なバックグラウンド プロセスによってインデックスを再作成するまで待機することです。
 
 
-## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>エラー/問題: この検索結果は、フォルダーまたはそれ自体ではダウンロードできない他のアーティファクトとしてダウンロードされません。フォルダーまたはライブラリ内のアイテムはダウンロードされます。
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>エラー/問題: この検索結果は、それ自体ではダウンロードできないフォルダーまたは他の成果物である場合はダウンロードされません。フォルダーまたはライブラリ内のアイテムはダウンロードされます。
 
 オンラインおよびビジネス向け One Drive For Business の場所を含む電子情報開示SharePointを実行すると、このエラーが表示される場合があります。 これは、インデックスで報告されたアイテムをエクスポートしようとしていたが、フォルダーなのでエクスポートしなかったことを意味します。 エラーで説明したように、フォルダー アイテムはエクスポートされますが、その内容はエクスポートされます。
 
@@ -122,7 +122,7 @@ SPO の場所を開き、このファイルが実際に開いていないか確�
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>エラー/問題: 検索結果のエクスポートが遅い
 
-セキュリティとコンプライアンス センターで電子情報開示またはコンテンツ検索から検索結果をエクスポートする場合、ダウンロードに予想以上の時間がかかります。  ダウンロードするデータの量を確認し、エクスポート速度を上げすることができます。
+コア電子情報開示検索またはコンテンツ検索から検索結果をエクスポートする場合、Microsoft 365 コンプライアンス センター予想より長い時間がかかります。  ダウンロードするデータの量を確認し、エクスポート速度を上げすることができます。
 
 ### <a name="resolution"></a>解決方法
 
@@ -145,6 +145,16 @@ SPO の場所を開き、このファイルが実際に開いていないか確�
 5. コンテンツをエクスポートしたディレクトリにある trace.log ファイルで、エラーが発生した場合はチェックします。
 
 6. それでも問題が発生する場合は、結果の大きなセットを返す検索を小さな検索に分割する方法を検討してください。 たとえば、検索クエリで日付範囲を使用して、より速くダウンロードできる結果の小さなセットを返します。
+
+## <a name="errorissue-export-process-not-progressing-or-is-stuck"></a>エラー/問題: エクスポート プロセスが進行していないか、スタックしている
+
+コア電子情報開示検索またはコンテンツ検索から検索結果をエクスポートする場合、Microsoft 365 コンプライアンス センタープロセスが進行していないか、スタックしている可能性があります。
+
+### <a name="resolution"></a>解決方法
+
+1. 必要に応じて、検索を再実行します。 検索が 7 日以上前に実行された場合は、検索を再実行する必要があります。
+
+2. エクスポートを再起動します。
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>エラー/問題: "内部サーバー エラー (500) が発生しました"
 
@@ -222,7 +232,7 @@ SPO の場所を開き、このファイルが実際に開いていないか確�
 
 ### <a name="resolution"></a>解決方法
 
-これはクライアント側の問題であり、修復するには、次の手順を試してください。
+これはクライアント側の問題です。 修復するには、次の手順を実行します。
 
 1. 別のクライアント/コンピューターを使用してダウンロードしてみてください。
 

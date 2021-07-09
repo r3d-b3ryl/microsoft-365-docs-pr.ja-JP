@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: d09967a18848365702f52f65a7f0624d2b2ae3d6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 555f96dc1f45fb6a406b5993d0b8e4a3745c283b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843212"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339636"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
+# <a name="onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -63,9 +63,9 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>サーバー Windows 10またはWindowsサーバー 2019 の場合
 
-1.  サービス オンボーディング ウィザードから.zipした VDI *構成パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは次の方法で取得[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
+1.  サービス オンボーディング ウィザードから.zipした VDI *構成パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 また、次のポータルから[パッケージをMicrosoft 365 Defenderすることもできます](https://security.microsoft.com/)。
 
-    1.  ナビゲーション ウィンドウで、[オンボーディング]**設定**  >  **選択します**。
+    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定**  >    >  **オンボーディング]**  >  **を選択します**。
 
     1. オペレーティング システムWindows 10を選択します。
 
@@ -111,11 +111,11 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
    
       - デバイスごとに 1 つのエントリの場合: 
     
-        1 つのエントリのみをチェックMicrosoft Defender セキュリティ センター。
+        ポータルで 1 つのエントリMicrosoft 365 Defenderします。
 
       - 各デバイスの複数のエントリの場合: 
        
-        複数のエントリを確認Microsoft Defender セキュリティ センター。
+        ポータルで複数のエントリMicrosoft 365 Defenderします。
 
 6. [ナビゲーション **] ウィンドウの [** デバイス] リストをクリックします。
 

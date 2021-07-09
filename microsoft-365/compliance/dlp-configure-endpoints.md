@@ -1,5 +1,5 @@
 ---
-title: Windows 10 デバイスのオンボード ツールと各種方法
+title: デバイスのオンボーディング方法Windows 10ツール
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: センサー Windows 10コンプライアンス ソリューションにセンサー データを送信できるよう、Microsoft 365デバイスをオンボードする
-ms.openlocfilehash: 7cbadc343c5cee1aa7704bcb9da8be2a152726ab
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 676fb3a7ffcae8d108fd9b7fabe61bb78b7e1744
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917853"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341702"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Windows 10 デバイスのオンボード ツールと各種方法
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、ケースの作成と管理を開始Advanced eDiscoveryを設定する方法について説明します。 また、必要な Microsoft サブスクリプションとライセンスも説明します。 いくつかの簡単な手順を完了すると、Advanced eDiscoveryツールを使用する準備が整いました。
-ms.openlocfilehash: 6c6aed482da8f203154d94313ec04519d6a330ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: be5e5aea03950d28889590004bd796455a71c5be
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919749"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341450"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>設定Microsoft 365 Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Advanced eDiscovery Microsoft 365では、組織の内部および外部調査�
 
 電子情報開示マネージャーの役割グループにユーザーを追加するには、次の手順を実行します。
 
-1. 組織の <https://protection.office.com/permissions> 管理者アカウントの資格情報を使用して、アクセスしてサインインMicrosoft 365します。
+1. 組織の <https://compliance.microsoft.com/permissions> 管理者アカウントの資格情報を使用して、アクセスしてサインインMicrosoft 365します。
 
 2. [アクセス許可 **] ページで** 、電子情報開示マネージャー **の役割グループを** 選択します。
 

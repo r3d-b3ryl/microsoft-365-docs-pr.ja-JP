@@ -1,6 +1,6 @@
 ---
 title: ローカル スクリプトを使用した Windows 10 デバイスのオンボード
-description: ローカル スクリプトを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
+description: ローカル スクリプトを使用してデバイスに構成パッケージを展開し、サービスへのデバイスのオンボーディングを有効にします。
 keywords: ローカル スクリプトを使用してデバイスを構成し、デバイス管理を行い、Microsoft Defender for Endpoint デバイスを構成する
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2510fb1a187bbe136669e11bc73103438b51d811
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e15a02753c7a1b346021a4351af24b8fd28315da
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842172"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339648"
 ---
-# <a name="onboard-windows-10-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows 10 デバイスのオンボード
+# <a name="onboard-the-windows-10-devices-using-a-local-script"></a>ローカル スクリプトをWindows 10デバイスにオンボードする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "52842172"
 [[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。 
 
 
-1.  サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは次の方法で取得[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
+1.  サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 Defender ポータルからパッケージを取得[Microsoft 365することもできます](https://security.microsoft.com/)。
 
-    1. ナビゲーション ウィンドウで、[オンボーディング]**設定**  >  **選択します**。
+    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定**  >    >  **オンボーディング]**  >  **を選択します**。
 
     1. オペレーティング システムWindows 10を選択します。
 
@@ -66,7 +66,7 @@ ms.locfileid: "52842172"
 
     1.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-        ![[ウィンドウのスタート] メニューの [管理者として実行] をポイントする](images/run-as-admin.png)
+        ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ](images/run-as-admin.png)
 
 4.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd」と入力します。*
 
@@ -79,7 +79,7 @@ ms.locfileid: "52842172"
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint エンドポイントで検出テストを実行する [」を参照してください](run-detection-test.md)。
 
 ## <a name="configure-sample-collection-settings"></a>サンプル コレクション設定の構成
-デバイスごとに構成値を設定して、Microsoft Defender セキュリティ センター から詳細分析用にファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかを示します。
+デバイスごとに構成値を設定して、Microsoft 365 Defender から詳細分析用にファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかを示します。
 
 regedit を使用するか *、.reg* ファイルを作成して実行することで、デバイスのサンプル共有設定 *を手動で構成* できます。  
 
@@ -105,9 +105,9 @@ Value: 0 or 1
 > [!NOTE]
 > オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。
 
-1. 次の方法でオフボード[パッケージを取得Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
+1. ポータルからオフボード パッケージ[Microsoft 365 Defenderします](https://security.microsoft.com/)。
 
-    1. ナビゲーション ウィンドウで、[オフボーディング]**設定**  >  **選択します**。
+    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定  >  **オフ**  >  **ボード]**  > **を選択します**。
 
     1. オペレーティング システムWindows 10を選択します。
 
@@ -123,7 +123,7 @@ Value: 0 or 1
 
     1.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-        ![[ウィンドウのスタート] メニューの [管理者として実行] をポイントする](images/run-as-admin.png)
+        ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ](images/run-as-admin.png)
 
 4.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd」と入力します。*
 
@@ -139,9 +139,9 @@ Value: 0 or 1
 監視は、ポータルまたはさまざまな展開ツールを使用して直接実行することもできます。
 
 ### <a name="monitor-devices-using-the-portal"></a>ポータルを使用してデバイスを監視する
-1. [次へ] Microsoft Defender セキュリティ センター。
+1. [ポータル] Microsoft 365 Defender移動します。
 
-2. [デバイス **] リストをクリックします**。
+2. [デバイス **インベントリ] をクリックします**。
 
 3. デバイスが表示されているのを確認します。
 

@@ -16,18 +16,22 @@ ms.custom:
 search.appverid:
 - MET150
 description: ビジネス アシスト プログラムと、ビジネス向けサービスのヘルプと使用状況の向上に組織がどのように役立Microsoft 365します。
-ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 3715fcfcc24c647266bab36a764b3c8711e08bdd
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924589"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338603"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Microsoft 365 のビジネスサポート
 
 小規模ビジネスの専門家からの専門的なアドバイスを受け、サブスクリプションを有効に利用できます。
 
 **Microsoft 365** のビジネス アシストは、オンボーディングから日常使用まで、ビジネスの成長に合わせ、5 人未満のユーザーが存在する企業向けです。
+
+### <a name="watch-business-assist-for-microsoft-365"></a>ウォッチ: ビジネス アシスト for Microsoft 365
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFTQl]
 
 ## <a name="business-assist-services"></a>ビジネス アシスト サービス
 
@@ -51,7 +55,7 @@ ms.locfileid: "52924589"
 
 対象となる組織にのみ、ビジネス アシストを購入するオプションが表示されます。 Business Assist のコストは、ユーザー 1 人あたり 1 か月あたり 5 ドルです。 ビジネス アシストを購入する方法を次に示します。
 
-1. 管理センターの簡略化されたビュー Microsoft 365、[サブスクリプション] タブに移動し、[製品の追加]**を選択します**。
+1. [サブスクリプション] タブの簡略化されたビュー Microsoft 365 管理センター、[サブスクリプション]タブに移動し、[製品の追加]**を選択します**。
 
 2. [サービスの購入] ページで **、[ビジネス** アシストの詳細] を選択 **してMicrosoft 365** 完了します。
 

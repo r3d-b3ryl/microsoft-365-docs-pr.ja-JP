@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理者は、ランサムウェア攻撃から回復する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 473591a02b78043153d505dda6dd7ef5ac6e3961
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 6c3664cb2a60a7173e345de4abaddefefea6e2b1
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789053"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341438"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>ユーザーのランサムウェア攻撃から回復Microsoft 365
 
@@ -49,7 +49,7 @@ ms.locfileid: "52789053"
 
 バックアップが作成されていない場合、またはバックアップがランサムウェアの影響を受けた場合は、この手順を省略できます。
 
-## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>手順 2: 同期を無効Exchange ActiveSync同期OneDriveする
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>手順 2: サーバーとExchange ActiveSyncを無効OneDrive 同期
 
 ここで重要なポイントは、ランサムウェアによるデータ暗号化の拡散を停止することです。
 
@@ -63,7 +63,7 @@ ms.locfileid: "52789053"
 
 - [ユーザーの POP3 または IMAP4 アクセスを有効または無効にする](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-同期を一OneDriveすると、感染する可能性のあるデバイスによってクラウド データが更新されるのを保護できます。 詳細については、「How to Pause and Resume sync in [OneDrive」 を参照してください](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)。
+一時停止OneDrive 同期は、感染する可能性のあるデバイスによってクラウド データが更新されるのを保護するのに役立ちます。 詳細については、「How to Pause and Resume sync in [OneDrive」 を参照してください](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)。
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>手順 3: 影響を受けるデバイスからマルウェアを削除する
 
@@ -81,7 +81,7 @@ ms.locfileid: "52789053"
 
 環境からランサムウェア ペイロードを削除する前の手順を完了したら (ランサムウェアがファイルを暗号化または削除することを防ぐ)、Windows 7 の[](https://support.microsoft.com/help/17128)Windows 10 および Windows 8.1 または System Protection のファイル履歴を使用して、ローカル ファイルとフォルダーの回復を試みることもできます。
 
-**注**:
+**注意**:
 
 - また、一部のランサムウェアはバックアップ バージョンを暗号化または削除します。そのため、ファイルの履歴やシステム保護を使用してファイルを復元することはできません。 その場合は、次のセクションで説明するように、ランサムウェアやマルウェアの影響を受けOneDriveデバイスでバックアップを使用する必要があります。
 
@@ -93,17 +93,17 @@ ms.locfileid: "52789053"
 
 ## <a name="step-6-recover-deleted-email"></a>手順 6: 削除されたメールを復元する
 
-まれに、ランサムウェアがすべてのメールを削除した場合、削除されたアイテムを復元できる可能性があります。 詳細については、以下を参照してください。
+まれに、ランサムウェアがすべてのメールを削除した場合、削除されたアイテムを復元できる可能性があります。 詳しくは、以下を参照してください。
 
 - [ユーザーのメールボックス内の削除済みメッセージを復元する](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
 - [Windows 版 Outlook で削除済みのアイテムを復元する](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>手順 7: 同期と同期Exchange ActiveSync再OneDriveする
+## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>手順 7: 再び有効にし、Exchange ActiveSyncをOneDrive 同期
 
-コンピューターとデバイスをクリーンアップしてデータを回復した後、手順[2](#step-2-disable-exchange-activesync-and-onedrive-sync)で以前に無効にした Exchange ActiveSync 同期と OneDrive 同期を再び有効にすることができます。
+コンピューターとデバイスをクリーンアップしてデータを回復した後、手順 2 で以前に無効にした Exchange ActiveSync と OneDrive 同期 を再[び有効にすることができます](#step-2-disable-exchange-activesync-and-onedrive-sync)。
 
-## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>手順 8 (オプション): 特定OneDriveの同期をブロックする
+## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>手順 8 (オプション): 特定のOneDrive 同期ファイルのブロック
 
 回復後、このランサムウェアの影響を受けたOneDrive for Businessクライアントが同期されないようにすることができます。 詳細については [、「Set-SPOTenantSyncClientRestriction」を参照してください。](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
@@ -141,30 +141,30 @@ ms.locfileid: "52789053"
 
 ランサムウェアを含むフィッシング メッセージを報告するには、いくつかの方法のいずれかを使用します。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="additional-ransomware-resources"></a>その他のランサムウェア リソース
 
-- [ランサムウェア](/windows/security/threat-protection/intelligence/ransomware-malware)
+[人が操作するランサムウェアの概要](/security/compass/human-operated-ransomware)
 
-- [ランサムウェアの応答 - 支払いを行う場合と支払わない場合](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+[ランサムウェアや強要から迅速に保護する](/security/compass/protect-against-ransomware)
 
-- [Norsk Hydro が透明性を持つランサムウェア攻撃に対応](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+[最新のMicrosoft セキュリティ インテリジェンスレポート PDF)](https://www.microsoft.com/securityinsights/)(検索 "ランサムウェア")
+
+**ランサムウェア: Microsoft 365 Defender** ポータルの脅威分析ノードで、継続的な脅威レポートをMicrosoft 365 Defenderします。
+
+Microsoft 365保護:
 
 - [ランサムウェアの検出と、ファイルの復元OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
-
-- [Microsoft セキュリティ インテリジェンスレポート](https://www.microsoft.com/securityinsights/)
-
 - [ファイル内のマクロを有効またはOfficeする](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
-
 - [EOP と Microsoft Defender のセキュリティに関するOffice 365設定](recommended-settings-for-eop-and-office365.md)
 
-- [価値あるアップグレード: 2017 年のランサムウェアの発生Windows 10回復性を証明する次世代セキュリティ](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+Microsoft Security チームのブログ投稿:
 
-- [いいえ mas, Samas: このランサムウェアの手口には何がありますか?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
+- [サイバーセキュリティリスクを理解することで回復力を高める:パート 4:現在の脅威をナビゲートする (2021 年 5 月)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
-- [ロックされたマルウェア、それを避けて幸運](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
+  「ランサムウェア **」セクションを参照** してください。
 
-- [MSRT 2016 年 7 月: Cerber ランサムウェア](https://www.microsoft.com/security/blog/2016/07/12/msrt-july-2016-cerber-ransomware/)
+- [人が操作するランサムウェア攻撃: 予防可能な災害 (2020 年 3 月)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+- [ランサムウェアの応答 - 支払いを行う場合と支払わない場合(2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro が透明性を持つランサムウェア攻撃に対応 (2019 年 12 月)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [価値あるアップグレード: 2017 年Windows 10に対する回復力を証明する次世代セキュリティ (2018 年 1 月)](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
-- [Cerberus に似た Cerber ランサムウェアの 3 つのヘッド](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
-
-- [(the) Da Vinci コードの影響を受ける Troldesh ランサムウェア](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint detections API フィールド
-description: '[検出] API フィールドが、アプリ内の値にマップされるMicrosoft Defender セキュリティ センター'
+description: '[検出] API フィールドが、アプリ内の値にマップされるMicrosoft 365 Defender'
 keywords: 検出、検出フィールド、フィールド、API、フィールド、プル検出、rest api、要求、応答
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f9a0d4ddeee5c1dc49c53e324854cabccc5f79e5
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933639"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339552"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender for Endpoint detections API フィールド
 
@@ -33,11 +33,11 @@ ms.locfileid: "51933639"
 
 >Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
-検出 API の一部として公開されるデータ フィールドと、そのデータ フィールドが検出 API にマップMicrosoft Defender セキュリティ センター。
+検出 API の一部として公開されるデータ フィールドと、そのデータ フィールドが検出 API にマップMicrosoft 365 Defender。
 
 >[!Note]
 >- [Defender for Endpoint Alert](alerts.md) は、1 つ以上の検出から構成されます。
->- **Microsoft Defender ATP検出は**、デバイスとその関連するアラートの詳細で発生した疑わしいイベント **から構成** されます。
+>- **Microsoft Defender ATP 検出は** 、デバイスで発生した疑わしいイベントとその関連するアラートの詳細から **構成** されます。
 >- Microsoft Defender for Endpoint Alert API は、アラートの使用に関する最新の API であり、各アラートに関連する証拠の詳細な一覧を含む。 詳細については、「Alert メソッドと[プロパティ」および「List alerts」](alerts.md)[を参照してください](get-alerts.md)。
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>検出 API フィールドとポータル マッピング
@@ -52,20 +52,20 @@ ms.locfileid: "51933639"
 > | ポータル ラベル   | SIEM フィールド名           | ArcSight フィールド      | 値の例                                                                      | 説明                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | name                | Microsoft Defender AV が 「ミカッツ」 の重大度の高いマルウェアを検出しました | すべての検出で使用可能な値。                                                                                                                                               |
-> | 2                | 重要度                  | deviceSeverity      | 高い                                                                             | すべての検出で使用可能な値。                                                                                                                                               |
-> | 3                | カテゴリ                  | deviceEventCategory | マルウェア                                                               | すべての検出で使用可能な値。                                                                                                                                               |
-> | 4                | 検出ソース                    | sourceServiceName   | ウイルス対策                                                                 | Microsoft Defender ウイルス対策または Defender for Endpoint。 すべての検出で使用可能な値。                                                                                         |
-> | 5                | MachineName               | sourceHostName      | desktop-4a5ngd6                                                                           | すべての検出で使用可能な値。                                                                                                                                               |
-> | 6                | FileName                  | fileName            | Robocopy.exe                                                                       | ファイルまたはプロセスに関連付けられた検出に使用できます。                                                                                                                      |
-> | 7                | FilePath                  | filePath            | C:\Windows\System32\Robocopy.exe                                                   | ファイルまたはプロセスに関連付けられた検出に使用できます。                                                                                                                     |
-> | 8                | UserDomain                | sourceNtDomain      | CONTOSO                                                                            | Defender for Endpoint の動作ベースの検出に使用できる、アクティビティを実行しているユーザー コンテキストのドメイン。                                                           |
-> | 9                | UserName                  | sourceUserName      | liz.Bean                                                                           | Defender for Endpoint の動作ベースの検出に使用できる、アクティビティを実行しているユーザー コンテキスト。                                                                           |
-> | 10               | Sha1                      | fileHash            | 3da065e07b990034e9db7842167f70b63aa5329                                           | ファイルまたはプロセスに関連付けられた検出に使用できます。                                                                                                                      |
-> | 11               | Sha256                    | deviceCustomString6 | ebf54f745dc81e1958f75e4ca91dd0ab989fc9787bb6b0bf993e2f5                   | Microsoft Defender AV 検出に使用できます。                                                                                                                                    |
+> | 2                | 重要度                  | deviceSeverity      | 高                                                                             | すべての検出で使用可能な値。                                                                                                                                               |
+> | 3                | Category                  | deviceEventCategory | マルウェア                                                               | すべての検出で使用可能な値。                                                                                                                                               |
+> | 4                 | 検出ソース                    | sourceServiceName   | ウイルス対策                                                                 | Microsoft Defender ウイルス対策または Defender for Endpoint。 すべての検出で使用可能な値。                                                                                         |
+> | 5                 | MachineName               | sourceHostName      | desktop-4a5ngd6                                                                           | すべての検出で使用可能な値。                                                                                                                                               |
+> | 6                 | FileName                  | fileName            | Robocopy.exe                                                                       | ファイルまたはプロセスに関連付けられた検出に使用できます。                                                                                                                      |
+> | 7                 | FilePath                  | filePath            | C:\Windows\System32\Robocopy.exe                                                   | ファイルまたはプロセスに関連付けられた検出に使用できます。                                                                                                                     |
+> | 8                 | UserDomain                | sourceNtDomain      | CONTOSO                                                                            | Defender for Endpoint の動作ベースの検出に使用できる、アクティビティを実行しているユーザー コンテキストのドメイン。                                                           |
+> | 9                 | UserName                  | sourceUserName      | liz.Bean                                                                           | Defender for Endpoint の動作ベースの検出に使用できる、アクティビティを実行しているユーザー コンテキスト。                                                                           |
+> | 10                | Sha1                      | fileHash            | 3da065e07b990034e9db7842167f70b63aa5329                                           | ファイルまたはプロセスに関連付けられた検出に使用できます。                                                                                                                      |
+> | 11                | Sha256                    | deviceCustomString6 | ebf54f745dc81e1958f75e4ca91dd0ab989fc9787bb6b0bf993e2f5                   | Microsoft Defender AV 検出に使用できます。                                                                                                                                    |
 > | 12                | Md5                       | deviceCustomString5 | db979c04a99b96d370988325bb5a8b21                                                   | Microsoft Defender AV 検出に使用できます。                                                                                                                                    |
-> | 13               | ThreatName                | deviceCustomString1  | HackTool:Win32/ミカッツ!dha                                                         | Microsoft Defender AV 検出に使用できます。                                                                                                                                    |
+> | 13                | ThreatName                | deviceCustomString1  | HackTool:Win32/ミカッツ!dha                                                         | Microsoft Defender AV 検出に使用できます。                                                                                                                                    |
 > | 14                | IpAddress                 | sourceAddress       | 218.90.204.141                                                                     | ネットワーク イベントに関連付けられた検出に使用できます。 たとえば、「悪意のあるネットワーク宛先への通信」などです。                                                        |
-> | 15                | Url                       | requestUrl          | down.esales360.cn                                                                  | ネットワーク イベントに関連付けられた検出に使用できます。 たとえば、「悪意のあるネットワーク宛先への通信」などです。                                                         |
+> | 15               | Url                       | requestUrl          | down.esales360.cn                                                                  | ネットワーク イベントに関連付けられた検出に使用できます。 たとえば、「悪意のあるネットワーク宛先への通信」などです。                                                         |
 > | 16                | RemediationIsSuccess      | deviceCustomNumber2 | TRUE                                                                               | Microsoft Defender AV 検出に使用できます。 ArcSight の値は、TRUE の場合は 1、FALSE の場合は 0 です。                                                                                    |
 > | 17                | WasExecutingWhileDetected | deviceCustomNumber1 | FALSE                                                                              | Microsoft Defender AV 検出に使用できます。 ArcSight の値は、TRUE の場合は 1、FALSE の場合は 0 です。                                                                                    |
 > | 18                | AlertId                   | 外部ID          | 636210704265059241_673569822                                                       | すべての検出で使用可能な値。                                                                                                                                               |

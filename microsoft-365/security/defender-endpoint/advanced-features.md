@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2448b95e5c5c5da25a916b659f6b49d04ba8f0c1
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845476"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339576"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -81,7 +81,7 @@ ms.locfileid: "52845476"
 
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve 修復されたアラート
 
-Windows 10 バージョン 1809 以降に作成されたテナントの場合、自動分析結果の状態が "脅威が見つかりません" または "修復済み" であるアラートを解決するように、自動調査と修復機能が既定で構成されています。  アラートを自動解決したくない場合は、手動で機能をオフにする必要があります。
+Windows 10 Version 1809 以降に作成されたテナントの場合、自動調査と修復機能は既定で構成され、自動分析結果の状態が "脅威が見つかりません" または "修復済み" であるアラートを解決します。  アラートを自動解決したくない場合は、手動で機能をオフにする必要があります。
 
 > [!TIP]
 > そのバージョンより前に作成されたテナントの場合は、[高度な機能] ページからこの機能を手動で [有効にする必要](https://securitycenter.windows.com/preferences2/integration) があります。
@@ -102,7 +102,7 @@ Windows 10 バージョン 1809 以降に作成されたテナントの場合、
 
 ファイルを **許可またはブロックするには** 、次の手順を実行します。
 
-1. ナビゲーション ウィンドウで、[高度な **機能を許可** 設定  >  **ファイルをブロック**  >  **する] を選択します**。
+1. ナビゲーション ウィンドウで、[エンドポイントの全般 **詳細設定設定** ファイルを許可またはブロック  >    >    >    >  **する] を選択します**。
 
 1. [オン] と [オフ]**の間で設定を****切り替えます**。
 
@@ -160,9 +160,9 @@ Microsoft Defender for Identity との統合により、別の Microsoft Identit
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365脅威インテリジェンス接続
 
-この機能は、E5 または脅威インテリジェンス Office 365アクティブな機能を使用している場合にのみ使用できます。 詳細については、「E5 製品のOffice 365 Enterpriseを参照してください。
+この機能は、アクティブなユーザーまたは脅威インテリジェンス Office 365 E5がある場合にのみ使用できます。 詳細については、「E5 製品のOffice 365 Enterpriseを参照してください。
 
-この機能を有効にした場合、microsoft Defender for Office 365 のデータを Microsoft Defender セキュリティ センター に組み込み、Office 365 メールボックスと Windows デバイス全体で包括的なセキュリティ調査を行えます。
+この機能を有効にした場合、microsoft Defender for Office 365 のデータを Microsoft 365 Defender に組み込み、Office 365 メールボックスと Windows デバイス全体で包括的なセキュリティ調査を行えます。
 
 > [!NOTE]
 > この機能を有効にするには、適切なライセンスが必要です。
@@ -180,7 +180,7 @@ Microsoft Defender for Identity との統合により、別の Microsoft Identit
 この設定を有効にすると、Defender for Endpoint シグナルMicrosoft Cloud App Securityに転送され、クラウド アプリケーションの使用状況を詳細に確認できます。 転送されたデータは、ユーザーのデータと同じ場所にCloud App Securityされます。
 
 > [!NOTE]
-> この機能は、Windows 10 バージョン 1709 (OS ビルド 16299.1085 および[KB4493441)](https://support.microsoft.com/help/4493441)を実行しているデバイスで Enterprise Mobility + Security の E5 ライセンスで使用できます。Windows 10 バージョン 1803 (KB4493464 の OS ビルド 17134.704)、Windows 10 バージョン 1809 (OS ビルド 17763.379 および[KB4489899)](https://support.microsoft.com/help/4489899)以降の Windows 10 バージョン。 [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) [](https://support.microsoft.com/help/4493464)
+> この機能は、E5 ライセンスを使用して[、Enterprise Mobility + Securityを実行](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)しているWindows 10 バージョン 1709 [(KB4493441](https://support.microsoft.com/help/4493441)の OS ビルド 16299.1085)、Windows 10 バージョン 1803 (OS ビルド 17134.704 [KB449364)、Windows 10 Version 1809](https://support.microsoft.com/help/4493464)(OS ビルド 17763.379 および[KB4489899)、](https://support.microsoft.com/help/4489899)または Windows 10 以降のバージョン。
 
 ## <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 

@@ -4,7 +4,7 @@ summary: ビジネス向けアプリの設定と管理Microsoft 365する方法�
 brand: m365
 metadata:
   title: Microsoft 365 Small Business のトレーニング
-  description: 管理センターでMicrosoft 365をMicrosoft 365管理します。
+  description: 設定と管理は、Microsoft 365で行Microsoft 365 管理センター。
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
@@ -12,10 +12,10 @@ metadata:
   ms.author: twernermsft
   ms.date: 12/16/2020
   localization_priority: Priority
-  ms.custom: AdminSurgePortfolio
+  ms.custom: null
 productDirectory:
   items:
-    - title: 開始する
+    - title: 作業の開始
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: ビジネス向けサービスへの移行Microsoft 365計画します。
       url: what-is-microsoft-365.md
@@ -65,7 +65,7 @@ productDirectory:
       url: get-help-support.md
 additionalContent:
   sections:
-    - title: 詳細情報
+    - title: 詳細を見る
       items:
         - title: 詳細については、Office
           summary: Word、Excel、PowerPointアプリのOfficeします。
@@ -74,5 +74,5 @@ additionalContent:
           summary: 中堅企業およびエンタープライズ 企業向け学習パスを完了します。
           url: 'https://docs.microsoft.com/learn/m365/'
         - title: その他の管理リソースを検索する
-          summary: 管理センターのMicrosoft 365に移動します。
+          summary: '[ヘルプ サイト] Microsoft 365 管理センター移動します。'
           url: ../admin/index.yml

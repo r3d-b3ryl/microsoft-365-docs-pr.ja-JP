@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ee56ed2949ea72771d8f08570d4352dbe7548d52
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7125a6953b9be46af9073b50c9268ce65dc0cd30
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286947"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339530"
 ---
 # <a name="configure-device-discovery"></a>デバイス検出の構成
 
@@ -43,8 +43,8 @@ ms.locfileid: "53286947"
 標準検出の実行に使用するデバイスの一覧をカスタマイズできます。 この機能をサポートしているすべてのオンボード デバイス (現在は Windows 10 デバイスのみ) で標準検出を有効にするか、デバイス タグを指定してデバイスのサブセットまたはサブセットを選択できます。
 
 > [!IMPORTANT]
-> プレビューでは、最初にプレビュー機能をオンにする必要Microsoft Defender セキュリティ センター。
-> その後、セキュリティ センターでデバイス検出Microsoft 365アクセスできます。 管理されていないデバイスとセキュリティに関する推奨事項の一覧は、Microsoft Defender セキュリティ センター セキュリティ センターと Microsoft 365 セキュリティ センターの両方で使用できます。ダッシュボード タイルは Microsoft 365 セキュリティ センターでのみ使用できます。
+> プレビューの場合は、最初にプレビュー機能をオンにする必要Microsoft 365 Defender。
+> その後、セキュリティ センターでデバイス検出Microsoft 365アクセスできます。 管理されていないデバイスとセキュリティに関する推奨事項の一覧は、Microsoft 365 Defender と Microsoft 365 の両方のセキュリティ センターで使用できます。ダッシュボード タイルは Microsoft 365 セキュリティ センターでのみ使用できます。
 
 セキュリティ センターで次の構成Microsoft 365実行します。
 

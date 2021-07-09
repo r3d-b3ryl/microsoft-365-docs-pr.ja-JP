@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 0b6edbdcda61eaf402275ae0b6dc9a38c5fe19f7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322427"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339492"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 
@@ -54,7 +54,7 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 - Microsoft で完全にサポートされています。
 - 選択した地域またはクラウド環境でのみ使用できます。 たとえば、この機能が政府機関のクラウドに存在しない可能性があります。
 - プレビューの個々の機能には、使用およびサポートの制限が多い場合があります。 その場合、この情報は通常、機能のドキュメントに示されています。
-- プレビュー バージョンは標準のサポート レベルで提供され、実稼働ワークロードに推奨されます。 
+- プレビュー バージョンは標準のサポート レベルで提供され、実稼働環境で使用できます。 
 
 
 

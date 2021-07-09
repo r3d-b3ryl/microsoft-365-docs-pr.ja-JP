@@ -19,20 +19,20 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、ユーザー アカウントが侵害された場合に法医学調査を実行したり、他のセキュリティ関連のインシデントを調査したりするために高度な監査を設定する方法について説明します。
-ms.openlocfilehash: d1752ee7714056254a6c0e5c009aa9aa79ddff3b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 825dadee5260a263d005eb3a37f280381f9425a2
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314361"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339228"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>[高度な監査] を [Microsoft 365
 
 組織に高度な監査をサポートするサブスクリプションとエンド ユーザー ライセンスがある場合は、次の手順を実行して、Advanced Audit の追加機能を設定して使用します。
 
-![高度な監査を設定するワークフロー](../media/AdvancedAuditWorkflow.png)
+![高度な監査を設定するためのワークフロー](../media/AdvancedAuditWorkflow.png)
 
-## <a name="step1-set-up-advanced-audit-for-users"></a>手順 1: ユーザーの高度な監査を設定する
+## <a name="step-1-set-up-advanced-audit-for-users"></a>手順 1: ユーザーの高度な監査を設定する
 
 MailItemsAccessed や Send などの重要なイベントをログに記録する機能などの高度な監査機能を使用するには、ユーザーに適切な E5 ライセンスが割り当てられている必要があります。 さらに、それらのユーザーに対して高度な監査アプリ/サービス プランを有効にする必要があります。 高度な監査アプリがユーザーに割り当てられていることを確認するには、ユーザーごとに次の手順を実行します。
 
@@ -70,7 +70,7 @@ Get-Mailbox <user identity> | FL MailboxLocations
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>手順 3: 監査保持ポリシーを設定する
 
-Exchange、SharePoint、および Azure AD 監査レコードを 1 年間保持する既定のポリシーに加え、組織のセキュリティ運用、IT、コンプライアンス チームの要件を満たす追加の監査ログ保持ポリシーを作成できます。 詳細については、「[監査ログ保持ポリシーを管理する](audit-log-retention-policies.md)」を参照してください。
+Exchange、SharePoint、および Azure AD の監査記録を 1 年間保持する既定のポリシーに加えて、組織のセキュリティ運用チーム、IT チーム、およびコンプライアンス チームの要件に合わせて、監査ログの保持ポリシーを追加で作成することができます。 詳細については、「[監査ログ保持ポリシーを管理する](audit-log-retention-policies.md)」を参照してください。
 
 ## <a name="step-4-search-for-crucial-events"></a>手順 4: 重要なイベントを検索する
 

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: ドメイン名を購入し、ドメイン名に追加して、tom@fourthcoffee.com のような使いMicrosoft 365。
-ms.openlocfilehash: 1a248cb67bab5d0467cad35dc5be8023b8013a12
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7fb113c0efd6462c4c703956a20c390f2d555d5f
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635524"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341462"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
 
@@ -56,35 +56,37 @@ ms.locfileid: "52635524"
 
 ドメインのメールを Microsoft 365 に変更すると、セットアップ中にドメインの MX レコードを更新すると、そのドメインに送信されたメールはすべて Microsoft 365 に送信されます。 MX レコードを変更する前に、ドメインに電子メールを持Microsoft 365ユーザーと作成したメールボックスをユーザーに追加し、メールボックスを作成してください。 ドメイン上のすべてのユーザーのメールをメールに移動Microsoft 365? 代わりに、いくつかの電子メール[アドレスMicrosoft 365をパイロットする手順を実行できます](../misc/pilot-microsoft-365-from-my-custom-domain.md)。
   
-## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>管理者センターを使用してカスタム ドメインを使用するメール アドレスMicrosoft 365変更する
+## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>ユーザー設定を使用してカスタム ドメインを使用するメール アドレスを変更Microsoft 365 管理センター
 
-これらの手順を実行するには、グローバル管理者アカウントが必要です。 
+これらの手順を実行するには、グローバル管理者である必要があります。
 
 ::: moniker range="o365-worldwide"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。
 
 ::: moniker-end
-   
+
 ::: moniker range="o365-germany"
-    
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> から管理センターにアクセスします。 
-    
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> から管理センターにアクセスします。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. で管理センターに移動します<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>。 
+1. で管理センターに移動します<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>。
 
-::: moniker-end 
+::: moniker-end
 
-2. [セットアップ ドメイン **]**  >  **ページに移動** します。 
+2. [セットアップ ドメイン **]**  >  **ページに移動** します。
 
 3. [**ドメイン**] ページで、[**ドメインの追加**] を選択します。
-    
-4. 自分がドメインを所有していることを確認して、メール アドレスを変更する手順に従います。
-    
-すべての設定がドメインに正しく設定されるようにガイドが表示Microsoft 365。
+
+4. 手順に従って、ドメインを所有している必要があります。 すべての設定がドメインに正しく設定されるようにガイドが表示Microsoft 365。
+
+5. [ユーザー] **[アクティブ**  >  **なユーザー] に移動します**。
+
+6. ユーザー名を編集するユーザーを選択し、追加したドメインに変更します。
 
 > [!NOTE]
 > ドメイン ライセンスを使用していないExchangeドメインを使用して、ドメインのテナントから電子メールを送受信Microsoft 365できません。

@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 26bdb0fbdb417d9e7fb01e4c3a863c44e57b7fb7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326965"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339624"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>グループ ポリシー Windows 10デバイスのオンボード 
+# <a name="onboard-the-windows-10-devices-using-group-policy"></a>グループ ポリシーをWindows 10デバイスにオンボードする 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "53326965"
 
 [[](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)エンドポイント用 Defender [Visio展開](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)] のさまざまなパスを確認するには、PDF またはドキュメントを参照してください。
 
-1. サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 パッケージは次の方法で取得[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
+1. サービス オンボーディング ウィザードから.zipした gp 構成 *パッケージ*(WindowsDefenderATPOnboardingPackage.zip) を開きます。 また、次のポータルから[パッケージをMicrosoft 365 Defenderすることもできます](https://security.microsoft.com/)。
 
-    1. ナビゲーション ウィンドウで、[オンボーディング]**設定**  >  **選択します**。
+    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス設定**  >    >  **オンボーディング]**   >  **を選択します**。
 
     1. オペレーティング システムWindows 10を選択します。
 
@@ -69,7 +69,7 @@ ms.locfileid: "53326965"
 
 7. [ **ユーザーがログオンするかどうかを実行する] を選択し** 、[最高の特権で実行する **] チェック ボックスを** オンにします。
 
-8. [操作] タブ **に移動し** 、[新規] **をクリックします。** [アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。 共有 *WindowsDefenderATPOnboardingScript.cmd* ファイルのファイル名と場所を入力します。
+8. [操作] タブ **に移動し** 、[新規] **をクリックします。** [アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。 共有  *WindowsDefenderATPOnboardingScript.cmd* ファイルの NetBIOS パスを入力します。
 
 9. **[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。
 
@@ -77,7 +77,7 @@ ms.locfileid: "53326965"
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint デバイスで検出テストを実行 [する」を参照してください](run-detection-test.md)。
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>エンドポイントの追加の Defender 構成設定
-各デバイスについて、詳細な分析のためにファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかをMicrosoft Defender セキュリティ センターを指定できます。
+デバイスごとに、詳細分析用にファイルを送信する要求が行われたときに、デバイスからサンプルをMicrosoft 365 Defenderできるかどうかを指定できます。
 
 グループ ポリシー (GP) を使用して、ディープ分析機能で使用されるサンプル共有の設定などの設定を構成できます。
 
@@ -189,9 +189,9 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 > [!NOTE]
 > オンボーディングポリシーとオフボード ポリシーを同じデバイスに同時に展開し、それ以外の場合は予期しない競合を引き起こす可能性があります。
 
-1. 次の方法でオフボード[パッケージを取得Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
+1. ポータルからオフボード パッケージ[Microsoft 365 Defenderします](https://security.microsoft.com/)。
 
-    1. ナビゲーション ウィンドウで、[オフボーディング]**設定**  >  **選択します**。
+    1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定  >  **オフ**  >  **ボード]**  >  **を選択します**。
 
     1. オペレーティング システムWindows 10を選択します。
 
@@ -224,8 +224,8 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 
 ## <a name="monitor-devices-using-the-portal"></a>ポータルを使用してデバイスを監視する
 
-1. に移動[Microsoft Defender セキュリティ センター。](https://securitycenter.windows.com/)
-2. [デバイス **] リストをクリックします**。
+1. [ポータル] [Microsoft 365 Defender移動します](https://security.microsoft.com/)。
+2. [デバイス **インベントリ] をクリックします**。
 3. デバイスが表示されているのを確認します。
 
 > [!NOTE]

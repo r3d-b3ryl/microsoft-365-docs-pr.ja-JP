@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: ユーザーが特定のアクティビティを実行するときに、&通知を送信Microsoft 365セキュリティ コンプライアンス センターでアクティビティ通知を追加および管理する
-ms.openlocfilehash: d0daa9249a8ea69c376ef7bbc8b7a90253e411db
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b48093de66fdefa9a298b6cdc0f0324ee720fbbf
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227165"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341606"
 ---
 # <a name="create-activity-alerts"></a>アクティビティアラートの作成
 
@@ -46,7 +46,7 @@ ms.locfileid: "53227165"
 
 ## <a name="create-an-activity-alert"></a>アクティビティアラートを作成する
 
-1. [https://protection.office.com/managealerts](https://protection.office.com/managealerts) に移動します。
+1. <https://compliance.microsoft.com/managealerts> に移動します。
 
 2. 職場または学校のアカウントを使用してサインインします。
 
@@ -59,13 +59,13 @@ ms.locfileid: "53227165"
 
 4. アクティビティアラートを作成するには、次のフィールドに入力します。
 
-    a. **[名前** ] - アラートの名前を入力します。 アラート名は組織内で一意である必要があります。
+    a.  **[名前** ] - アラートの名前を入力します。 アラート名は組織内で一意である必要があります。
 
-    b. **説明** (省略可能) - 追跡されているアクティビティやユーザー、電子メール通知の送信ユーザーなどのアラートを記述します。 説明は、他の管理者に対するアラートの目的を迅速かつ簡単に説明する方法を提供します。
+    b.  **説明** (省略可能) - 追跡されているアクティビティやユーザー、電子メール通知の送信ユーザーなどのアラートを記述します。 説明は、他の管理者に対するアラートの目的を迅速かつ簡単に説明する方法を提供します。
 
-    c. **アラートの種類** - [カスタム] **オプションが** 選択されている必要があります。
+    c.  **アラートの種類** - [カスタム] **オプションが** 選択されている必要があります。
 
-    d. **[この通知を送信する場合** ] - [この通知 **を送信** する] をクリックして、次の 2 つのフィールドを構成します。
+    d.  **[この通知を送信する場合** ] - [この通知 **を送信** する] をクリックして、次の 2 つのフィールドを構成します。
 
     - **[アクティビティ** ] - ドロップダウン リストをクリックして、アラートを作成できるアクティビティを表示します。 これは、監査ログを検索するときに表示されるアクティビティリストと同じです。 1 つ以上の特定のアクティビティを選択するか、アクティビティ グループ名をクリックしてグループ内のすべてのアクティビティを選択できます。 これらのアクティビティの説明については、「監査ログの検索」の「監査されたアクティビティ [」セクションを参照してください](search-the-audit-log-in-security-and-compliance.md#audited-activities)。 ユーザーがアラートに追加したアクティビティを実行すると、電子メール通知が送信されます。
 
@@ -85,7 +85,7 @@ ms.locfileid: "53227165"
 
 アクティビティ通知をオフにし、電子メール通知が送信されません。 アクティビティアラートをオフにした後も、組織のアクティビティ通知の一覧に表示され、そのプロパティを表示できます。
 
-1. に移動します [https://protection.office.com/managealerts](https://protection.office.com/managealerts) 。
+1. <https://compliance.microsoft.com/managealerts> に移動します。
 
 2. 職場または学校のアカウントを使用してサインインします。
 
@@ -97,7 +97,7 @@ ms.locfileid: "53227165"
 
 アクティビティアラートをオンに戻す場合は、これらの手順を繰り返し、[ **オフ** ] トグル スイッチをクリックして状態を [オン] に **変更します**。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - セキュリティ & コンプライアンス センターの [このアラートの送信先] フィールド (および [アクティビティ通知] ページの[受信者]に一覧表示) で指定されているユーザーに送信される電子メール通知の例を次に示します。
 

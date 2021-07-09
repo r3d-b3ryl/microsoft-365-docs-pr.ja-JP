@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908343"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339692"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードでのエンドポイントEDR応答 (EDR)
 
@@ -43,7 +43,7 @@ ms.locfileid: "52908343"
 
 EDRモードの場合は、脅威の検出[と統合& 脆弱性の管理。](next-gen-threat-and-vuln-mgt.md) 組織のセキュリティ チームは、まだ有効[](tvm-security-recommendation.md)になっていない場合EDRモードで有効にするセキュリティの推奨事項を受け取ります。 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="ブロック モードでEDRする推奨事項":::
+:::image type="content" source="images/enable-edr-in-block-mode.png" alt-text="ブロック モードでEDRする推奨事項":::
 
 > [!NOTE]
 > 最適な保護を得る場合は、 **[必ず Microsoft Defender for Endpoint ベースラインを展開してください](configure-machines-security-baseline.md)**。
@@ -62,14 +62,14 @@ EDRモードの場合は、脅威の検出[と統合& 脆弱性の管理。](nex
 > [!IMPORTANT]
 > ブロック モードで[オンにする前](#requirements-for-edr-in-block-mode)に、要件EDR確認してください。
 
-1. Defender ポータルの[Microsoft 365サインイン](microsoft-defender-security-center.md)します。 
+1. ポータルに移動[Microsoft 365 Defenderサインイン](microsoft-defender-security-center.md)します。 
 
 2. [高度  >  **設定] を選択します**。
 
 3. ブロック モードで **EDRをオンにします**。
 
 > [!NOTE]
-> EDRモードの場合は、ブロック モードでのみ有効Microsoft Defender セキュリティ センター。 レジストリ キー、Intune、またはグループ ポリシーを使用して、ブロック モードでEDR無効にすることはできません。
+> EDRモードの場合、このポータルでのみ有効Microsoft 365 Defenderできます。 レジストリ キー、Intune、またはグループ ポリシーを使用して、ブロック モードでEDR無効にすることはできません。
 
 ## <a name="requirements-for-edr-in-block-mode"></a>ブロック モードでのEDRの要件
 
@@ -115,8 +115,8 @@ EDRモードの場合、ユーザーのデバイスで実行されているサ�
 
 |メソッド  |Procedure  |
 |---------|---------|
-| PowerShell     | 1. [スタート] メニューを選択し、入力を開始し、 `PowerShell` 結果Windows PowerShellを開きます。 <p>2. と入力します `Get-MpComputerStatus` 。 <p>3. 結果の一覧の **[AMRunningMode]** 行で、次のいずれかの値を探します。 <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>詳細については [、「Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。        |
-|コマンド プロンプト     | 1. [スタート] メニューを選択し、入力を開始し、結果Windows `Command Prompt` コマンド プロンプトを開きます。 <p>2. と入力します `sc query windefend` 。 <p>3. 結果の一覧の **STATE** 行で、サービスが実行されているのを確認します。         |
+| PowerShell     | 1. 選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。 <p>2. と入力します `Get-MpComputerStatus` 。 <p>3. 結果の一覧の **[AMRunningMode]** 行で、次のいずれかの値を探します。 <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>詳細については [、「Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。        |
+|コマンド プロンプト     | 1. コマンド を選択スタート メニュー入力を開始し、結果 `Command Prompt` Windowsコマンド プロンプトを開きます。 <p>2. と入力します `sc query windefend` 。 <p>3. 結果の一覧の **STATE** 行で、サービスが実行されているのを確認します。         |
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>ブロック モードで無効にEDRにどのくらいの時間が必要ですか?
 
@@ -127,7 +127,7 @@ EDRモードの場合、ユーザーのデバイスで実行されているサ�
 アクティブ Microsoft Defender ウイルス対策またはパッシブ モードで実行されている場合、ブロック モードEDR次のバージョンのデバイスがサポートWindows。
 
 - Windows 10 (すべてのリリース)
-- Windowsサーバー、バージョン 1803 以降 
+- Windows Server バージョン 1803 以降 
 - Windows Server 2019 
 
 アクティブ Windows Server 2016でMicrosoft Defender ウイルス対策し、エンドポイントが Defender for Endpoint にオンボードされている場合は、ブロック モードの EDRが技術的にサポートされます。 ただし、EDRモードのユーザーは、エンドポイントのプライマリ ウイルス対策ソリューションMicrosoft Defender ウイルス対策保護を強化することを目的とします。 このような場合、Microsoft Defender ウイルス対策モードで実行されます。 現在、パッシブ モードMicrosoft Defender ウイルス対策の実行は、パッシブ モードではサポートWindows Server 2016。 詳細については、「microsoft Microsoft Defender ウイルス対策/マルウェア対策ソリューション」[を参照してください](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)。

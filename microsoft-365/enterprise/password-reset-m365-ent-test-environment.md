@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワードのリセットを構成してテストします。'
-ms.openlocfilehash: efcaaf9ed1873c0908bb0e64644b8e10de280a01
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 13169824866e91c1a09d412a875d2f4ce4391fa8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921494"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339384"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードのリセット
 
@@ -90,7 +90,7 @@ SSPR のセットアップには、次の 3 つのフェーズがあります。
 1. [ユーザー 3] アカウント名を入力し、CAPTCHA の文字を入力し、[次へ] を **選択します**。
 1. 検証 **手順 1 の場合は、[** 別 **のメールにメールを送信する**] を選択し、[メール] を **選択します**。 電子メールを受信したら、確認コードを入力し、[次へ] を **選択します**。
 1. [ **アカウントに戻る] で**、User 3 アカウントの新しいパスワードを入力し、[完了] を **選択します**。 変更された User 3 アカウントのパスワードをメモし、安全な場所に保管します。
-1. 同じブラウザの別のタブで[https://portal.office.com](https://portal.office.com)に移動し、ユーザー 3 アカウント名およびその新しいパスワードでサインインします。 **[Microsoft Office Home]** ページが表示されます。
+1. 同じブラウザの別のタブで[https://admin.microsoft.com](https://admin.microsoft.com)に移動し、ユーザー 3 アカウント名およびその新しいパスワードでサインインします。 **[Microsoft Office Home]** ページが表示されます。
 
 ## <a name="next-step"></a>次の手順
 

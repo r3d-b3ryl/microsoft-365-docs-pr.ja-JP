@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06ef716e9deee7b20e8615bd22c93130ee18b77f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4b212acdf4bdf8fa53ef00763463190e204fc1ed
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845584"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339168"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の接続アプリケーション
 
@@ -42,7 +42,7 @@ ms.locfileid: "52845584"
 接続されているアプリケーションで API [を使用](/microsoft-365/security/defender-endpoint/apis-intro) するには、次の手順に従う必要があります。
  
 ## <a name="access-the-connected-application-page"></a>接続されているアプリケーション ページにアクセスする
-左側のナビゲーション メニューで、[**パートナー] を選択&接続**  >  **された AAD アプリケーションを選択します**。
+左側のナビゲーション メニューで、[**エンドポイント** パートナーと  >  **API 接続アプリケーション**  >  **] を選択します**。
 
  
 ## <a name="view-connected-application-details"></a>接続されているアプリケーションの詳細を表示する

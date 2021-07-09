@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コア電子情報開示の使用を開始する方法についてMicrosoft 365。 電子情報開示のアクセス許可を割り当て、ケースを作成したら、メンバーの追加、電子情報開示ホールドの作成、調査に関連するコンテンツの検索とエクスポートを行います。
-ms.openlocfilehash: 00506c2f072fff6aa30c7d96bffdc18eb5eda20b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 9466b2e3268a447a4008363e88290d4d02558c76
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311018"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341474"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>コア電子情報開示の使用をMicrosoft 365
 
@@ -34,19 +34,19 @@ ms.locfileid: "52311018"
 
 コア電子情報開示のライセンスには、適切な組織のサブスクリプションとユーザーごとのライセンスが必要です。
 
-- **組織のサブスクリプション:** Microsoft 365 コンプライアンス センターまたは Office 365 セキュリティ & コンプライアンス センターのコア電子情報開示にアクセスし、保持機能とエクスポート機能を使用するには、組織に Microsoft 365 E3 または Office 365 E3 サブスクリプション以上が必要です。
+- **組織のサブスクリプション:** Microsoft 365 コンプライアンス センター または Office 365 セキュリティ & コンプライアンス センターでコア電子情報開示にアクセスし、保持機能とエクスポート機能を使用するには、組織に Microsoft 365 E3 または Office 365 E3 サブスクリプション以上が必要です。
 
 - **ユーザーごとのライセンス:** メールボックスとサイトに電子情報開示ホールドを設定するには、組織のサブスクリプションに応じて、次のいずれかのライセンスをユーザーに割り当てる必要があります。
 
-  - E3 Microsoft 365 E3またはOffice 365以上のライセンス
+  - ライセンスMicrosoft 365 E3またはOffice 365 E3以上のライセンス
 
-   OR
+   または
 
-  - Office 365プラン 2 または Exchange Onlineアドオン ライセンスExchange Online Archiving E1 ライセンス
+  - Office 365 E1プラン 2 または Exchange Online アドオン ライセンスExchange Online Archivingライセンスを使用する場合
 
   AND
 
-  - Office 365オンライン プラン 2 または SharePointプラン 2 OneDrive for Businessライセンスを持つ E1 ライセンス
+  - Office 365 E1プラン 2 または SharePointプラン 2 OneDrive for Business ライセンスを使用するライセンス
   
   ライセンスを割り当てる方法については、「ユーザーにライセンスを割り当 [てる」を参照してください](../admin/manage/assign-licenses-to-users.md)。
 
@@ -62,7 +62,7 @@ Core 電子情報開示にアクセスしたり、コア電子情報開示ケー
 
 電子情報開示マネージャーの役割グループにユーザーを追加するには、次の手順を実行します。
 
-1. 組織または組織の管理者アカウントの資格情報を使用して、Microsoft 365 [https://protection.office.com/permissions](https://protection.office.com/permissions) サインインOffice 365します。
+1. 組織または組織の管理者アカウントの資格情報を使用して、Microsoft 365 <https://compliance.microsoft.com/permissions> サインインOffice 365します。
 
 2. [アクセス許可 **] ページで** 、電子情報開示マネージャー **の役割グループを** 選択します。
 
@@ -100,7 +100,7 @@ Core 電子情報開示にアクセスしたり、コア電子情報開示ケー
 
 1. 適切な電子情報開示アクセス許可が割り当てられているユーザー アカウントの資格情報を使用して、アクセスして [https://compliance.microsoft.com](https://compliance.microsoft.com) サインインします。 組織の管理役割グループのメンバーは、コア電子情報開示ケースを作成することもできます。
 
-2. コンプライアンス センターの左側のナビゲーション ウィンドウでMicrosoft 365を表示]をクリックし、[電子情報開示] をクリックして [コア>**します**。
+2. ウィンドウの左側のナビゲーション ウィンドウMicrosoft 365 コンプライアンス センター [すべて表示] をクリックし、[電子情報開示] [コア] **>クリックします**。
 
 3. [コア電子 **情報開示] ページで** 、[ケースの作成 **] をクリックします**。
 
@@ -114,7 +114,7 @@ Core 電子情報開示にアクセスしたり、コア電子情報開示ケー
 
 手順 3 でケースを作成し、ケースを使用する唯一のユーザーである場合は、この手順を実行する必要があります。 ケースを使用して、電子情報開示ホールドの作成、コンテンツの検索、検索結果のエクスポートを開始できます。 他のユーザー (または役割グループ) にケースへのアクセス権を与える場合は、この手順を実行します。
 
-1. コンプライアンス センター **の [** コア電子情報開示] Microsoft 365で、メンバーを追加するケースの名前をクリックします。
+1. [コア **電子情報開示**] ページMicrosoft 365 コンプライアンス センター、メンバーを追加するケースの名前をクリックします。
 
 2. ケース のホーム ページで、[アクセス許可] タブを **設定** し、[アクセス許可] を&**します**。
 
