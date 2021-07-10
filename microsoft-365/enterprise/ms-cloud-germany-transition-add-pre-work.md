@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域のOffice 365サービスに移行する場合の事前作業。'
-ms.openlocfilehash: 38be1b2e1ed1a028e629bb5ed8e0339c0f8db990
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 08774cdfd831556c194b5175879f211efa250632
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289429"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362740"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行前アクティビティ
 
@@ -51,6 +51,7 @@ ms.locfileid: "53289429"
 Office 365ユーザー識別子は移行中に保持されます。 Azure ADサービス呼び出しは、Microsoft Cloud Deutschland からグローバル サービスOffice 365にリダイレクトされ、特定のサービスOffice 365されません。
 
 - 一般的なデータ保護規則 (GDPR) データ主体要求 (DSR) は、Azure Admin ポータルから今後の要求のために実行されます。 Microsoft Cloud Deutschland に常駐している従来の診断データまたは顧客以外の診断データは、30 日以上経過した時点で削除されます。
+
 - テナントがサービスにコピーされている間に、Microsoft Authenticatorをユーザー ObjectID (GUID) として表示する多要素認証 (MFA) 要求Office 365します。 MFA 要求は、この表示動作にもかかわらず期待通り実行されます。  Microsoft Authenticatorサービス エンドポイントを使用してアクティブ化Office 365アカウントには、ユーザー プリンシパル名 (UPN) が表示されます。  Microsoft Cloud Deutschland エンドポイントを使用して追加されたアカウントは、ユーザー ObjectID を表示しますが、Microsoft Cloud Deutschland エンドポイントと Office 365 サービス エンドポイントの両方で動作します。
 
 <br>
@@ -64,7 +65,7 @@ Office 365ユーザー識別子は移行中に保持されます。 Azure ADサ�
 |試用版サブスクリプションをキャンセルします。|試用版サブスクリプションは移行されません。有料サブスクリプションの移行はブロックされます。|キャンセル後にユーザーがアクセスした場合、試用版サービスは期限切れであり、機能しません。|
 |Microsoft Cloud Deutschland とグローバル サービスのライセンス機能Office 365分析します。|Office 365には、現在の Microsoft Cloud Deutschland では利用できない追加の機能とサービスが含まれます。 サブスクリプションの転送中に、新しい機能をユーザーが利用できます。|<ul><li>Microsoft Cloud Deutschland およびグローバル サービスのライセンスによって提供されるさまざまなOffice 365分析します。 最初に、Office 365[プラットフォームのサービスの説明を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。</li><li>ユーザーまたはユーザーの変更管理への影響を制限し、必要に応じてユーザー ライセンスの割り当てを変更するために、Office 365 サービスの新機能を最初に無効にすべきかどうかを判断します。</li><li>ユーザーとヘルプ デスク のスタッフが、新しいサービスとサービスによって提供される機能をOffice 365します。</li></ul>|
 |移行中にコンテンツ [が](/microsoft-365/compliance/retention) 不注意で削除されるのを回避するために、組織全体の保持ポリシーを作成します。|<ul><li>移行中にエンド ユーザーによってコンテンツが誤って削除されるのを回避するために、組織全体の保持ポリシーを有効にすることもできます。</li><li>保持は必要ありませんが、移行中はいつでも保持が期待通り動作する必要があります。保持ポリシーを持つことはバックアップの安全メカニズムです。 同時に、保持ポリシーは、すべての顧客、特に保存過多を懸念しているユーザーが使用する場合があります。</li></ul>|「アイテム保持ポリシーと保持ラベルについて」の [説明に従ってアイテム保持ポリシーを適用します](/microsoft-365/compliance/retention-policies)。 サービスまたはクライアント ソフトウェアの障害は、フェーズ 4 / 9 より前に行われない場合に発生する可能性があります。|
-|
+
 
 ## <a name="dns-entries-for-custom-domains"></a>カスタム ドメインの DNS エントリ
 
@@ -119,7 +120,7 @@ OCCT は、フェーズ 9 の前Windowsクライアントに展開できます�
 |Step(s)|説明|影響|
 |---|---|---|
 |2013 SharePointを制限し、オンライン移行のSharePoint使用します。|2013 SharePointを削減し、移行前にインフライト ワークフローを完了します。|不作為により、ユーザーの混乱やヘルプ デスクの呼び出しが発生する可能性があります。|
-|
+
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -136,7 +137,7 @@ OCCT は、フェーズ 9 の前Windowsクライアントに展開できます�
 |---|---|---|
 |今後のサービスへの移行を外部パートナーに通知Office 365します。|お客様は、予定表と空き時間情報の共有を有効にしたパートナーに通知する必要があります (空き時間情報の共有を許可Office 365。 可用性の構成は、移行が完了したら、Office 365[の](/microsoft-365/enterprise/urls-and-ip-address-ranges)エンドポイントを使用Exchange Online移行する必要があります。|そうしない場合は、お客様の移行の後のフェーズでサービスまたはクライアントの障害が発生する可能性があります。|
 |必要な IMAP4/POP3/SMTP クライアントの変更をユーザーに通知します。|クライアント プロトコル IMAP4、POP3、SMTP の Microsoft Cloud Deutschland エンドポイントへのデバイス接続を持つユーザーは、クライアント デバイスを手動で更新して、Exchange Online サーバー名に切[り](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes)替える必要があります。|この依存関係をこれらのプロトコルのユーザーに事前に伝え、この移行中にモバイルまたはOutlookを使用Outlook on the web切り替えます。 クライアント エンドポイントの更新に失敗すると、ユーザー メールボックスの移行時に Microsoft Cloud Deutschland に対するクライアント接続エラーが発生します。|
-|
+
 
 ### <a name="exchange-online-hybrid-customers"></a>Exchange Onlineハイブリッドのお客様
 
@@ -156,7 +157,7 @@ Microsoft Cloud Deutschland から Office 365 ドイツ地域に移行する場�
 |---|---|---|
 |ドイツの設定を使用して HCW Office 365実行する <p> _テナントの移行が開始されたというメッセージ センター通知を受け取った直後に、このOffice 365を開始できます (フェーズ 1)。_|フェーズ 5 より前から HCW (17.0.5378.0 以上) をアンインストールおよび再実行すると、Microsoft Cloud Deutschland ユーザーと Office 365 ドイツ地域に移行されたユーザーの両方との間で、オンプレミス構成でメールの送受信を行う準備が完了します。 <https://aka.ms/hybridwizard> <p> HCW で、[自分の組織がホストOffice 365 **下** のリスト ボックスで、[ドイツ] をOffice 365 **します。**|フェーズ 5 [Exchange 移行] が開始する前にこのタスクを完了できなかった場合、オンプレミスの展開と Office 365 の間でメールの NDRs がルーティングされるExchange可能性があります。|
 |共有メールボックスの設定を保持する|ハイブリッドのお客様の中には、クラウド ユーザー メールボックスを、ユーザー コマンドを使用して 「共有」 Exchange Onlineしています。 このクラウド メールボックス構成はメールボックスとローカル Exchange Online ディレクトリに書き込まれますが、AAD サーバー経由で顧客の Active Directory に同期Connect。 その結果、メールボックス RemoteRecipientType 値と RemoteDisplayType 値の Active Directory 表記と、メールボックスを共有として定義Exchange Onlineの違いがあります。 <p> お客様は、すべての共有メールボックスが 、、またはを使用して適切にプロビジョニング `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` されていることを確認する責任があります `Set-RemoteMailbox -Shared` 。 ハイブリッド環境でユーザーのメールボックスを変換する方法については、 [このリファレンスを参照してください](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox)。|フェーズ 5 [Exchange Online 移行] より前にこのタスクを完了できなかった場合、共有メールボックスの NDR が発生し、ライセンスのないメールボックスに戻り、影響を受けるメールボックスの共有アクセスが失われる可能性があります。 [Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)ハイブリッド展開でディレクトリ同期を実行した後、共有メールボックスは予期せずユーザー メールボックスに変換され、移行が完了する前にこの問題に対処しない場合のExchange Online概要を示します。|
-|
+
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online
 
@@ -174,7 +175,7 @@ Microsoft Cloud Deutschland から Office 365 ドイツ地域に移行する場�
 |ドイツTeamsユーザー向けデスクトップ クライアントSkype for Business展開します。|移行は、Skype for Business、通話、Microsoft Teamsのユーザーに移動します。 いずれかの方法で、Microsoft Teamsデスクトップ クライアントを展開するか、サポートされているブラウザーを使用できます。|不作為により、コラボレーション サービスMicrosoft Teams利用できなくなる。|
 |移行関連の DNS 変更の確認と準備を行います。|オンラインのユーザーが所有する DNS ゾーンSkype for Business変更します。|<ul><li>顧客が所有するドメイン DNS レコードのタイム to ライブ (TTL) を 5 分に更新して、DNS レコードの更新を迅速に行う方法をお勧めします。 ただし、この DNS 変更に関連付けられた Microsoft が管理するカットオーバーは、指定された 24 時間の変更ウィンドウ内でいつでも発生する可能性があります。</li><li>サービスの中断は、将来可能です。 ユーザーはアプリにログインできないSkype for Business、移行されたTeamsエクスペリエンスにOffice 365されます。</li></ul>|
 |エンド ユーザーと管理のトレーニングと準備を行い、エンド ユーザーへの移行をMicrosoft Teams。|ユーザーのコミュニケーションと準備を計画することで、SkypeからTeamsへの移行に成功します。|<ul><li>クライアントは、新しいサービスと、サービスが新しいサービスに移行された後の使い方Office 365必要があります。</li><li>顧客のバニティ ドメインと初期ドメインの両方で DNS の変更が行われた後、ユーザーは Skype for Business にサインインし、Teams に移行されるのを確認します。 これにより、バックグラウンドでデスクトップ クライアントTeamsダウンロードされます。</li></ul>|
-|
+
 
 ## <a name="mobile-device-management"></a>モバイル デバイス管理
 
@@ -190,7 +191,7 @@ Microsoft Cloud Deutschland から Office 365 ドイツ地域に移行する場�
 |---|---|---|---|
 |iOS および Android 向け Microsoft Outlookアカウントを削除および再追加するユーザーに関するエンド ユーザートレーニングと管理トレーニングを準備します。|新Outlook Office 365 サービス構成を適切に同期するには、Microsoft Cloud Deutschland のメールボックスで構成された iOS アカウントと Android アカウント用の Microsoft Outlook を削除し、Outlook に再度追加する必要があります。|Microsoft Outlook iOS および Android のお客様向けサービス|Outlook Microsoft Cloud Deutschland 用に以前に構成されたメールボックスでは、Office 365 Services の新しい構成を取得できない可能性があります。その他のユーザー エクスペリエンスのエラーやパフォーマンスの低下につながります。 移行後にメールのサインインまたは同期に関する問題が発生した場合、IT 管理者は、iOS および Android 用の Microsoft Outlook のアカウントを削除して再追加するようユーザーに事前に指示するドキュメントを提供するようお勧めしています。|
 |移行後に再構成が必要かどうかを判断します。|モバイル デバイス管理 (MDM) ソリューションはエンドポイントを `outlook.de` 対象とします。 このサービスへの移行Office 365、クライアント プロファイルはサービス URL に更新Office 365必要があります `outlook.office365.com` 。|Exchange Online MDM のお客様|クライアントは、エンドポイントにアクセスできる間も引き続き機能しますが、Microsoft Cloud Deutschland エンドポイントが使用できなくなった場合は失敗 `outlook.de` します。|
-|
+
 
 ## <a name="line-of-business-apps"></a>Line-of-business アプリ
 
@@ -199,14 +200,18 @@ Microsoft Cloud Deutschland から Office 365 ドイツ地域に移行する場�
 
 Office 365 と統合されたサード パーティのサービスまたは業務ライン (LOB) アプリを使用している場合は、Microsoft Cloud Deutschland インスタンスによって提供されるエンドポイントへの依存関係を解決する必要があります。 たとえば、LOB アプリが接続している場合は、 `https://graph.microsoft.de/` エンドポイントをに変更する必要があります `https://graph.microsoft.com/` 。 フェーズ 2 の後Microsoft Office 365グローバル サービスのエンドポイントがテナントで利用できます。
 
-<br>
+移行中に、組織がフェーズ 2 とフェーズ 9 の間である間は、サードパーティ製のマルチテナント アプリケーション (MTA) を組織に追加することはできません。 移行がフェーズ 9 を完了すると、組織の MTA アプリケーションの追加または同意を再開できます。
 
-****
+
+| Step(s) | 説明 | 影響 |
+|:-------|:-------|:-------|
+| 移行後に再構成が必要かどうかを判断します。 | Microsoft Cloud Deutschland IP アドレスと URL を期待するために、Office 365と統合するサード パーティのサービスとアプリケーションがコード化される場合があります。 | 必須のアクション。 不作為により、サービスまたはクライアント ソフトウェアの障害が発生する可能性があります。 |
+
 
 |Step(s)|説明|影響|
 |---|---|---|
 |移行後に再構成が必要かどうかを判断します。|Microsoft Cloud Deutschland IP アドレスと URL を期待するために、Office 365と統合するサード パーティのサービスとアプリケーションがコード化される場合があります。|必須のアクション。 不作為により、サービスまたはクライアント ソフトウェアの障害が発生する可能性があります。|
-|
+
 
 ## <a name="dynamics-365"></a>Dynamics 365
 
@@ -219,7 +224,7 @@ Office 365 と統合されたサード パーティのサービスまたは業�
 |Step(s)|説明|影響|
 |---|---|---|
 |Dynamics 365 サンドボックス サブスクリプションの場合は、必ず Microsoft Cloud Deutschland の Dynamics 365 サブスクリプションから Dynamics SQL インスタンスの実稼働環境をダウンロードしてください。 サンドボックスの移行前に、最新の実稼働バックアップをサンドボックスに復元する必要があります。|Dynamics 365 の移行では、サンドボックス環境が最新の実稼働データベースで更新される必要があります。|FastTrack チームは、8.x から 9.1.x へのバージョン アップグレードを検証するために、ドライ ランの実行をお客様に支援します。|
-|
+
 
 ## <a name="power-bi"></a>Power BI
 
@@ -232,7 +237,7 @@ Office 365 と統合されたサード パーティのサービスまたは業�
 |Step(s)|説明|影響|
 |---|---|---|
 |Microsoft Cloud Deutschland Power BIサービスに移行されないサブスクリプションからオブジェクトPower BI削除Office 365します。|サービスの移行Power BI、データセットやダッシュボードなど、特定の成果物を削除するために顧客の操作が必要になります。|管理者は、サブスクリプションから次のアイテムを削除する必要があります。 <ul><li>Real-Timeデータセット (ストリーミング データセットやプッシュ データセットなど)</li><li>Power BIオンプレミスのデータ ゲートウェイ構成とデータ ソース </li></ul>|
-|
+
 
 ## <a name="microsoft-azure"></a>Microsoft Azure
 
@@ -250,7 +255,7 @@ Office 365 Azure リソース (ネットワーク、コンピューティング�
 |Step(s)|説明|影響|
 |---|---|---|
 |パートナーと連携して、使用している Azure サービスを特定し、ドイツから Office 365 サービス テナントへの将来の移行に備えます。 Azure 移行プレイブックで説明されている [手順に従います](/azure/germany/germany-migration-main)。|<ul><li>Azure リソースの移行は顧客の責任であり、所定の手順に従って手動で作業する必要があります。 組織でどのサービスが使用されているのかを理解すると、Azure サービスの正常な移行の鍵になります。</li><li>Office 365同じ ID パーティション (組織) の下に Azure サブスクリプションを持つドイツのお客様は、サブスクリプションとサービスの移行を開始できる場合、Microsoft が定める順序に従う必要があります。</li></ul>|<ul><li>お客様は、インフラストラクチャ、サービス、およびプラットフォーム コンポーネントを含む複数の Azure サブスクリプション、各サブスクリプションを持つ場合があります。</li><li>管理者は、この移行イベントの一環として、迅速な移行と検証が可能なサブスクリプションと関係者を特定する必要があります。</li><li>所定のタイムライン内でこれらのサブスクリプションと Azure コンポーネントの移行を正常に完了できないと、Office サービスと Azure AD Office 365 サービスへの移行が完了し、データが失われる可能性があります。</li><li>メッセージ センター通知は、顧客主導の移行を開始できるポイントを通知します。</li></ul>|
-|
+
 
 <!--
 Reworked as text:

@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: この記事では、Microsoft 365 Multi-Geo を使用して、複数の地域に Microsoft 365 のプレゼンスを展開する方法について説明します。
-ms.openlocfilehash: 2805470f1a35bb5978f3d25c30aa07523ad21afb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17fc2645f69a0d91c71c91718f321e5932d31bd2
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909552"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362764"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -57,6 +57,8 @@ Microsoft 365マルチジオは、テナント内に少なくとも 250 Microsof
 - Exchange Online プラン 1 またはプラン 2
 - OneDrive for Business プラン 1 またはプラン 2
 - SharePoint Online プラン 1 またはプラン 2
+
+ライセンスがユーザーに割り当てられた後で削除された場合、Teamsのチャット データがキューに登録され、中央の場所に戻されます。 SharePointおよびExchangeデータは移動されません。
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Microsoft 365 Multi-Geo の利用可能地域
 

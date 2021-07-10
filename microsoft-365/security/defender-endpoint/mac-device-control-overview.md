@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 682f59729e06c63818491ad7540528d574380c8b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5cb819daa11a50ef54c758a6aa696a5fc645029c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877838"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363981"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 
@@ -35,38 +35,14 @@ ms.locfileid: "52877838"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 macOS のデバイスコントロールには、次の前提条件があります。
 
 >[!div class="checklist"]
 > - Microsoft Defender for Endpoint の資格 (試用版の場合があります)
-> - 最小 OS バージョン: macOS 10.15.4 以上
-> - 最小製品バージョン: 101.24.59
-> - デバイスがシステム拡張機能で実行されている必要があります (これは macOS 11 Big Sur の既定値です)。 
-> 
->   次のコマンドを実行して、デバイスがシステム拡張機能で実行されているのを確認し、コンソールに印刷 `endpoint_security_extension` されているのを確認できます。 
-> 
->   ```bash
->   mdatp health --field real_time_protection_subsystem 
->   ```
-> - デバイスが Microsoft AutoUpdate 更新チャネル (以前に呼び出 `Beta` `InsiderFast` された) にある必要があります。 詳細については [、「Deploy updates for Microsoft Defender for Endpoint on Mac」を参照してください](mac-updates.md)。
-> 
->   次のコマンドを使用して更新チャネルを確認できます。 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    上記のコマンドが印刷されない場合、またはターミナルから次の `Beta` `InsiderFast` コマンドを実行します。 チャネル更新プログラムは、次に製品が起動するときに有効になります (次の製品更新プログラムがインストールされている場合、またはデバイスが再起動された場合)。 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
->    ```
->
->    または、管理環境 (JAMF または Intune) にある場合は、更新プログラム チャネルをリモートで構成できます。 詳細については [、「Deploy updates for Microsoft Defender for Endpoint on Mac」を参照してください](mac-updates.md)。 
+> - 最小 OS バージョン: macOS 11 以上
+> - 最小製品バージョン: 101.34.20
 
 ## <a name="device-control-policy"></a>デバイス制御ポリシー
 
@@ -142,6 +118,9 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 
 - `audit` - この適用レベルでは、デバイスへのアクセスが制限されている場合、ユーザーに通知が表示されます。ただし、デバイスは引き続き使用できます。 この適用レベルは、ポリシーの有効性を評価するために役立ちます。
 - `block` - この適用レベルでは、ユーザーがデバイスで実行できる操作は、ポリシーで定義されている操作に制限されます。 さらに、ユーザーに通知が発生します。 
+
+> [!NOTE] 
+> 既定では、適用レベルは に設定されています `audit` 。 
 
 |Section|値|
 |:---|:---|

@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Exact Data Match アクティビティの通知を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: da00c43ae9ba5b129129027df16f49ef80b8757d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 263dc319d7e7d3ee5f12ebe374e8f5bd44c4cc8c
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288169"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341678"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Exact Data Match アクティビティの通知を作成する
 
-[Exact Data Match (EDM) を使用してカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)と、[監査ログ](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)に作成されるアクティビティが多数あります。 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell コマンドレットを使用して、次のアクティビティが発生したときに知らせる通知を作成できます。
+[Exact Data Match (EDM) を使用してカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)と、[監査ログ](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)に作成されるアクティビティが多数あります。 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell コマンドレットを使用して、次のアクティビティが発生したときに知らせる通知を作成できます。
 
 - CreateSchema
 - EditSchema
@@ -44,7 +44,7 @@ ms.locfileid: "53288169"
 
 DLP アクセス許可の詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-これらのサブスクリプションには、EDM ベースの分類が含まれています
+これらのサブスクリプションには、EDM ベースの分類が含まれています。
 
 - Office 365 E5
 - Microsoft 365 E5
@@ -55,19 +55,19 @@ DLP ライセンスの詳細については、「[セキュリティとコンプ
 
 ## <a name="configure-notifications-for-edm-activities"></a>EDM アクティビティの通知を構成する
 
-1. [セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/connect-to-scc-powershell) に接続する 
+1. [セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/connect-to-scc-powershell) に接続する。
 
-2. 通知を作成するアクティビティを使用して、`New-ProtectionAlert` コマンドレットを実行します。  たとえば、**UploadDataCompleted** 操作が発生したときに通知を受け取りたい場合は、実行できる
+2. 通知を作成するアクティビティを使用して、`New-ProtectionAlert` コマンドレットを実行します。  たとえば、**UploadDataCompleted** 操作が発生したときに通知を受け取りたい場合は、以下を実行します。
 
-```powershell
-New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <***address to send  notification to***> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
-```
-
-**UploadDataFailed** に対して実行します
-
-```powershell
-New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <***SMTP address to send notification to***> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High
-```
+    ```powershell
+    New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <address to send notification to> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
+    ```
+    
+    **UploadDataFailed** に対して、次のコマンドを実行できます。
+    
+    ```powershell
+    New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <SMTP address to send notification to> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High
+    ```
 
 ## <a name="related-articles"></a>関連記事
 

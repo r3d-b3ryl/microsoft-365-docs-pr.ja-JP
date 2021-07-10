@@ -18,16 +18,16 @@ ms.collection:
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: OneDrive Online の複数地域機能を使用して、複数の地域に Microsoft 365 のプレゼンスを展開します。
-ms.openlocfilehash: 8f42b071abef0602304f1a468190c33700fe3e82
-ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
+ms.openlocfilehash: 405f876317a6cec6defdf3f1a49b0dc32ac0add2
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48995911"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362284"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive および SharePoint Online の複数地域機能
 
-OneDrive および SharePoint Online の複数地域機能を使用すると、SharePoint チーム サイトや Microsoft 365 グループ メールボックスなどの共有リソースを国または地域で保存できます。
+OneDrive および SharePoint Online の複数地域機能を使用すると、SharePoint チーム サイトや Microsoft 365 グループ メールボックスなどの共有リソースを、指定した地域の場所に保存できます。
 
 ユーザー、グループ メールボックス、SharePoint サイトごとに、関連データが格納される地域の場所を示す PDL (Preferred Data Location、優先されるデータの場所) があります。 ユーザーの個人データ (Exchange メールボックスと OneDrive) を、本人が作成した Microsoft 365 グループまたは SharePoint サイトと共に指定された地域の場所に格納して、データ所在地の要件を満たすことができます。 [地域の場所ごとに異なる管理者を指定する](add-a-sharepoint-geo-admin.md)ことができます。
 
@@ -43,7 +43,7 @@ OneDrive および SharePoint Online の複数地域機能を使用すると、S
 
 ユーザーが複数地域環境で SharePoint グループに接続されたサイトを作成する場合は、PDL を使用して、サイトと関連付けられているグループ メールボックスが作成される地域の場所を決定します。 (ユーザーの PDL 値が設定されていない場合、またはサテライトの場所として構成されていない地域の場所に設定されている場合、サイトとメールボックスは中央の場所に作成されます)。
 
-Exchange、OneDrive、SharePoint 以外の Microsoft 365 サービスは複数地域機能に対応していません。 ただし、これらのサービスによって作成された Microsoft 365 グループには作成者の PDL がスタンプされ、Exchange グループ メールボックスと SharePoint O365 グループ サイトは対応する地域でプロビジョニングされます。 
+Microsoft 365、Exchange、OneDrive、SharePoint、Teams以外のサービスは複数地域ではありません。 ただし、Microsoft 365 によって作成されるグループは、作成者の PDL とその Exchange グループ メールボックスで構成され、SharePoint サイトは対応する geo にプロビジョニングされます。 
 
 ## <a name="managing-the-multi-geo-environment"></a>複数地域環境の管理
 

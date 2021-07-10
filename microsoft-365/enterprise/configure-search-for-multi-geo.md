@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: 複数地域環境で検索を構成する方法について学習します。 複数地域環境で結果OneDrive for Business返すクライアントは、一部のクライアントのみです。
-ms.openlocfilehash: 31e0c4ae3fe73f2f6e113dbc38989726eb1ca590
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+description: 複数地域環境で検索を構成する方法について学習します。 複数地域環境で結果OneDrive返すクライアントは、一部のクライアントのみです。
+ms.openlocfilehash: dfc9e3dd986132810f363ba47ba18eae45666fc7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022332"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362272"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Office 365 Multi-Geo ために検索を構成する
 
@@ -30,13 +30,13 @@ Multi-Geo 環境では、それぞれの地域の場所にはその場所固有�
 
 次のクライアントは、すべての地域の場所からの結果を返します。
 
-- OneDrive for Business
+- OneDrive
 - Delve
 - SharePoint ホーム ページ
 - 検索センター
 - SharePoint 検索 API を使用するカスタムの検索アプリケーション
 
-### <a name="onedrive-for-business"></a>OneDrive for Business
+### <a name="onedrive"></a>OneDrive
 
 Multi-Geo 環境の設定が完了した直後に、OneDrive で検索を実行するユーザーには、すべての地域の場所からの結果が返されます。
 
@@ -65,9 +65,9 @@ Multi-Geo 環境では、従来の検索機能の一部の動作が異なりま�
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>機能</strong></th>
-<th align="left"><strong>動作のしくみ</strong></th>
-<th align="left"><strong>回避策</strong></th>
+<th align="left">特徴</th>
+<th align="left">メカニズム</th>
+<th align="left">回避策</th>
 </tr>
 </thead>
 <tbody>
@@ -111,8 +111,8 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>検索機能</strong></th>
-<th align="left"><strong>注</strong></th>
+<th align="left">検索機能</th>
+<th align="left">注</th>
 </tr>
 </thead>
 <tbody>
@@ -121,8 +121,8 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 <td align="left">Multi-Geo 検索では、アプリ専用の認証 (サービスからの特権アクセス) がサポートされません。</td>
 </tr>
 <tr class="even">
-<td align="left">ゲスト ユーザー</td>
-<td align="left">ゲスト ユーザーは、検索を行う際にいる地域の場所からの結果のみを取得できます。</td>
+<td align="left">ゲスト</td>
+<td align="left">ゲストは、検索する地域の場所からのみ結果を取得します。</td>
 </tr>
 </tbody>
 </table>
@@ -253,18 +253,22 @@ GET 要求の場合は、URL でクエリ パラメーターを指定します�
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>**すべて** の地域の場所にファンアウトされる GET 要求の例
 
-https:// \<tenant\> / \_ api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my client \_ \_ id'
+```http
+https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+```
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>**一部** の地域の場所にファンアウトする GET 要求の例
 
-https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType=''my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation \\ :"NAM" \\ ,Endpoint \\ :"https \\ ://contosoNAM.sharepoint.com" \\ ,SourceId \\ :"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ \\ ,{DataLocation :"CAN" ,Endpoint :"https \\ \\ \\ ://contosoCAN.sharepoint-df.com"}'
+```http
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+```
 
 > [!NOTE]
 > MultiGeoSearchConfiguration プロパティの地域の場所の一覧内のコンマとコロンの前に **バックスラッシュ** 記号が先行します。 これは、GET 要求では複数のプロパティの区切りにはコロンが、複数のプロパティの引数の区切りにはコンマが使用されるためです。 エスケープ文字としてバックスラッシュ記号を使わない場合、MultiGeoSearchConfiguration プロパティは正確に解釈されません。
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>**すべて** の地域の場所にファンアウトされる POST 要求の例
 
-```text
+```http
     {
     "request": {
             "__metadata": {
@@ -289,7 +293,7 @@ https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType=''my_clien
 
 #### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>**一部** の地域の場所にファンアウトされる POST 要求の例
 
-```text
+```http
     {
         "request": {
             "Querytext": "SharePoint",
@@ -320,7 +324,7 @@ https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType=''my_clien
 
 次に、**すべて** の地域の場所にファアウトされる CSOM クエリの例を示します。
 
-```text
+```CSOM
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;

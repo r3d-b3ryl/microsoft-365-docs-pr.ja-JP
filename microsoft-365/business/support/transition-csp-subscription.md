@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Business CSP サブスクリプションの移行
-description: CSP サブスクリプションをプレビューから一般Microsoft 365 Business (GA) に移行する方法について説明します。
+description: ビジネス CSP サブスクリプションをプレビューから一般Microsoft 365 (GA) に移行する方法について説明します。
 author: jasongroce
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ localization_priority: Normal
 audience: microsoft-business
 keywords: Microsoft 365 Business, Microsoft 365, SMB, CSP サブスクリプションの移行
 ms.date: 11/01/2017
-ms.openlocfilehash: 3f6c71edb50cc3c5509e61a83efb64185c10648d
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 47b65b2de9db0fd27e29272937bab2041eb67300
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925005"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363821"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Microsoft 365 Business CSP サブスクリプションの移行
 
@@ -36,7 +36,7 @@ Microsoft 365 Business Preview CSP サブスクリプションを利用してい
     ![パートナー センターでの顧客のサブスクリプションの表示](../../media/pc_customer_subscriptions_1.png)
     
 3. 会社の [サブスクリプション] ページ **で** 、[サブスクリプションの追加] **を選択します**。
-4. [新しい **サブスクリプション] ページ** で、[小規模ビジネス]**を** 選択し、一 **覧Microsoft 365 Business** を選択します。
+4. [新しい **サブスクリプション] ページ** で、[小規模ビジネス]**を** 選択し、一覧から **[Microsoft 365]** を選択します。
 5. ライセンス数を追加し、**[次へ: レビュー]** を選びます。サブスクリプションを確認して、**[送信]** を選びます。
 
     ![Microsoft 365 Business の新しいサブスクリプションの確認](../../media/pc_customer_reviewnewsubscription.png)
@@ -44,20 +44,20 @@ Microsoft 365 Business Preview CSP サブスクリプションを利用してい
     **[ライセンス ベースのサブスクリプション]** には、**[Microsoft 365 Business Preview]** と **[Microsoft 365 Business]** が表示されます。 次に、プレビュー サブスクリプションを一時停止します。
 
 6. **[Microsoft 365 Business Preview]** を選びます。
-7. [プレビューの **Microsoft 365 Business] ページで**、[中断]**を選択** してプレビュー サブスクリプションを中断します。
+7. [ビジネス **プレビュー Microsoft 365] ページで**、[中断]**を選択** してプレビュー サブスクリプションを中断します。
 
     ![Microsoft 365 Business の Preview サブスクリプションの中断](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. **[送信]** をクリックして確認します。
 
-    [サブスクリプション **] ページで**、[プレビュー] の状態が **[中断Microsoft 365 Business]** と表示 **されます**。
+    [サブスクリプション **] ページで**、[ビジネス プレビュー] のMicrosoft 365 **が [** 中断] と **表示されます**。
 
     ![Preview サブスクリプションの状態が中断になっていることを確認する](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. 必要に応じて、使用許諾契約書を検証することもできます。 これを行うには、次の手順に従います。
     1. 会社の **[サブスクリプション]** ページから **[ユーザーとライセンス]** を選びます。
     2. [ユーザーと **ライセンス] ページで** 、ユーザーを選択します。
-    3. ユーザーのページで、[ライセンスの割り当て]**セクション** を確認し、[ライセンスの割り当て] が **表示Microsoft 365 Business。**
+    3. ユーザーのページで、[ライセンスの割り当て] セクション **を** 確認し、[ビジネス] が表示 **Microsoft 365します**。
 
         ![Microsoft 365 Business ライセンスがユーザーに割り当てられていることを確認する](../../media/pc_customer_userslicenses_m365b_validate.png)
 
@@ -73,7 +73,7 @@ Microsoft 365 Business Preview CSP サブスクリプションを利用してい
 |-------|-----------------|--------------|---------------|---------------|
 | **状態** | 解約猶予期間 | 有効期限切れ      | 無効      | プロビジョニング解除 |
 | **サービスへの影響**                                                        |
-| **Microsoft 365 Business 管理ポータル** | 機能への影響なし | 機能への影響なし | ユーザーを追加/削除、サブスクリプションを購入できます。</br> ライセンスを割り当て/取り消しできない。 | お客様のサブスクリプションとすべてのデータが削除されます。 管理者は他の有料サブスクリプションを管理できます。 |
+| **Microsoft 365 管理センター** | 機能への影響なし | 機能への影響なし | ユーザーを追加/削除、サブスクリプションを購入できます。</br> ライセンスを割り当て/取り消しできない。 | お客様のサブスクリプションとすべてのデータが削除されます。 管理者は他の有料サブスクリプションを管理できます。 |
 | **Office アプリ**                         | エンド ユーザーへの影響なし | エンド ユーザーへの影響なし | Office は機能制限モードになります。</br> ユーザーはファイルを表示することのみできます。 | Office は機能制限モードになります。</br> ユーザーはファイルを表示することのみできます。 |
 | **クラウド サービス (SharePoint Online、Exchange Online、Skype、Teams など)** | エンド ユーザーへの影響なし | エンド ユーザーへの影響なし | エンド ユーザーと管理者はクラウドにあるデータにアクセスできません。 | お客様のサブスクリプションとすべてのデータが削除されます。 |
 | **EM+S コンポーネント** | 管理者への影響なし</br> エンド ユーザーへの影響なし | 管理者への影響なし</br> エンド ユーザーへの影響なし | 機能は適用されなくなりました。</br> 詳細については、「[サブスクリプションの有効期限が切れた場合のモバイル デバイスに対する影響](#mobile-device-impacts-upon-subscription-expiration)」と「[サブスクリプションの有効期限が切れた場合の Windows 10 PC に対する影響](#windows-10-pc-impacts-upon-subscription-expiration)」をご覧ください。 | 機能は適用されなくなりました。</br> 詳細については、「[サブスクリプションの有効期限が切れた場合のモバイル デバイスに対する影響](#mobile-device-impacts-upon-subscription-expiration)」と「[サブスクリプションの有効期限が切れた場合の Windows 10 PC に対する影響](#windows-10-pc-impacts-upon-subscription-expiration)」をご覧ください。 |

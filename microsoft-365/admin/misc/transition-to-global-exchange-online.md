@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft Cloud Germany サービスからグローバル Exchange Onlineサービスに移行するExchange Onlineする
-ms.openlocfilehash: 8de64e30205b07a0c20a8ae4f7cdedbf6cc6824f
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 93eab2c4e0ab2f841359061ebdca69967d8d7d33
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644857"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363873"
 ---
 # <a name="update-your-mx-records-to-transition-to-the-global-exchange-online-service"></a>MX レコードを更新してグローバル レコード サービスにExchange Onlineする
 
-1. 管理者ポータルに [サインインMicrosoft 365](https://admin.microsoft.com)し、[ドメイン] に移動設定  >  **します。**
+1. [ドメイン] に [Microsoft 365 管理センター](https://admin.microsoft.com)し、[ドメイン]**に設定**  >  **します。**
 
 2. 各ドメインの右側に状態が表示されます。 組織のドメインが Microsoft Cloud Germany Exchange Onlineしている場合は、MX レコードを更新する必要があります。
 

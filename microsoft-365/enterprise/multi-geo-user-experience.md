@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Microsoft 365の複数地域環境での SharePoint、OneDrive、および Exchange のユーザー エクスペリエンスについて説明します。
-ms.openlocfilehash: 558e5a1f7ff2f6f5485a9f32d6e2b43b552b7f17
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: 4e752581f4ca692f9fecc5019f8e34543ebf7067
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749577"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362380"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>複数地域環境でのユーザー エクスペリエンス
 
@@ -40,15 +40,15 @@ SharePoint ハブ サイトは、プロジェクト、部門、または地域�
 
 ## <a name="office-applications"></a>Office アプリケーション
 
-Office アプリケーション (Word、Excel、PowerPoint など) は、ユーザーがログインしたときに、ユーザーごとの適切な OneDrive for Business の地域の場所を自動的に検出します。 ユーザーは、自分の OneDrive または SharePoint サイトの地域固有の URL を入力する必要がありません。
+Office Word、Excel、PowerPoint などのアプリケーションは、ログイン時に各ユーザー OneDrive位置情報を自動的に検出します。 ユーザーは、自分の OneDrive または SharePoint サイトの地域固有の URL を入力する必要がありません。
 
-## <a name="onedrive-for-business-sync-client"></a>OneDrive for Business 同期クライアント
+## <a name="onedrive-sync-app"></a>OneDrive 同期アプリ
 
-OneDrive for Business 同期クライアント (バージョン 17.3.6943.0625 以降) は、ユーザーにとって適切な OneDrive for Business の地域の場所を自動的に検出します。 同期クライアントのサポートには、地域に関係なくグループ ベースのサイトを同期する機能が含まれます。 Groove 同期クライアントは複数地域ではサポートされていません。 
+OneDrive 同期アプリ (バージョン 17.3.6943.0625 以降) は、ユーザーの適切な地域OneDriveを自動的に検出します。 同期アプリのサポートには、地域に関係なくグループ ベースのサイトを同期する機能が含まれています。 Groove 同期クライアントは複数地域ではサポートされていません。 
 
-## <a name="onedrive-for-business-location"></a>OneDrive for Business の場所
+## <a name="onedrive-location"></a>OneDrive場所
 
-ユーザーには、そのユーザーの優先されるデータの場所にプロビジョニングされた OneDrive for Business が提供されます。ユーザーが不適切な地域の場所を含む OneDrive URL に移動すると (以前の地域の場所からのブックマークなど)、適切な地域の場所にある OneDrive に自動的にリダイレクトされます。
+ユーザーは、ユーザーのOneDriveの場所にプロビジョニングされます。 ユーザーが間違った地域の場所 (以前の地域の場所からのブックマークなど) を含む OneDrive URL に移動すると、適切な地域の場所にある OneDrive に自動的にリダイレクトされます。
 
 ## <a name="onedrive-ios-and-android"></a>OneDrive iOS および Android 
 
@@ -62,11 +62,11 @@ OneDriveモバイル クライアントは複数地域に対応し、すべて�
 
 ## <a name="search"></a>検索
 
-各地域の場所には、独自の検索インデックスと検索センターがあります。ユーザーが検索を実行すると、クエリはすべての地域の場所に送信されます。返される結果はマージされてからランク付けされるため、ユーザーには統一された結果が示されます。ユーザーは、自分の地域の場所に関係なく、すべての地域の場所からの結果を取得します。詳細については、「[OneDrive for Business 複数地域の検索の構成](configure-search-for-multi-geo.md)」を参照してください。
+各地域の場所には、独自の検索インデックスと検索センターがあります。 ユーザーが検索すると、クエリがすべての地域の場所に送信され、返される結果が結合されてランク付けされ、ユーザーが統合された結果を取得します。 ユーザーは、自分の地理的位置に関係なく、すべての地域の場所から結果を取得します。 詳細[については、「Configure Search for OneDriveマルチジオ](configure-search-for-multi-geo.md)」を参照してください。
 
 サポートされている検索クライアントは、次のとおりです。
 
--   OneDrive for Business
+-   OneDrive
 
 -   Delve
 
@@ -78,7 +78,7 @@ OneDriveモバイル クライアントは複数地域に対応し、すべて�
 
 ## <a name="sharepoint-home"></a>SharePoint Home 
 
-SharePoint ホームの SharePoint Multi-Geo では、OneDrive for businessの場所によって決定されるユーザーが存在する場所でホストされます。 たとえば、ユーザーが自分の OneDrive をヨーロッパのサテライトの場所でホストしている場合、その SharePoint ホームはヨーロッパからレンダリングされます。 SharePoint ホームには、地理的な場所に関係なく、ユーザーに関連するすべてのコンテンツが含まれています。 
+[SharePoint-Geo] では、ユーザー SharePoint場所によって決定された場所で、ユーザーのホームがホストOneDriveされます。 たとえば、ユーザーが自分の OneDrive をヨーロッパのサテライトの場所でホストしている場合、その SharePoint ホームはヨーロッパからレンダリングされます。 SharePoint ホームには、地理的な場所に関係なく、ユーザーに関連するすべてのコンテンツが含まれています。 
 
 **フォローしているサイト、サイトからのニュース、最近のサイト、よく使うサイト、そしておすすめのサイト**
 
@@ -94,11 +94,11 @@ SharePoint モバイル クライアントは複数地域に対応し、すべ�
 
 ## <a name="sharing"></a>共有
 
-連絡先の選択のエクスペリエンスでは、地理的な場所に関係なくすべてのユーザーが表示されます。 これにより、ユーザーは、同じ地域または他のテナントの地域内の他のユーザーと共有できます。 さまざまな地域のコンテンツが、ユーザーの OneDrive for Business の[**自分と共有**] ビューに表示され、どの地域でホストされているかにかかわらず、シングル サインオン エクスペリエンスでアクセスできます。
+連絡先の選択のエクスペリエンスでは、地理的な場所に関係なくすべてのユーザーが表示されます。 これにより、ユーザーは、同じ地域または他のテナントの地域内の他のユーザーと共有できます。 異なる地域の場所からのコンテンツは、ユーザーのOneDrive の [自分と共有] ビューに表示され、ホストされている地域の場所に関係なく、シングル Sign-On エクスペリエンスでアクセスできます。
 
 ## <a name="teams-experience"></a>Teams のエクスペリエンス
 
-チームは複数地域に対応しています。 OneDrive ファイルと最近表示したファイルは、ユーザーの地理的な場所に関係なく表示されます。 @メンションはすべての地理的な場所からのユーザーに機能します。
+Teamsは複数地域サービスです。 OneDrive ファイルと最近表示したファイルは、ユーザーの地理的な場所に関係なく表示されます。 @メンションはすべての地理的な場所からのユーザーに機能します。
 
 ## <a name="user-profiles"></a>ユーザー プロファイル
 

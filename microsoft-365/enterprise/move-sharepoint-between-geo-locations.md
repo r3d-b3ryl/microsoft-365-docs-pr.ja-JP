@@ -13,14 +13,14 @@ ms.collection:
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: SharePoint サイトを複数地域環境内の別の地域の場所に移動し、ユーザーに変更の期待を伝える方法について説明します。
+description: 複数地域の環境内SharePoint別の地域の場所にサイトを移動し、ユーザーに変更の期待を伝える方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5a49098045dbce94ef1c474497b8da1b397ac0b0
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910932"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362356"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -28,7 +28,7 @@ SharePoint サイトの地域移動を使って、SharePoint サイトを複数�
 
 次のサイトの種類は地域のジオ位置情報間を移動することができます。
 
-- Microsoft 365 グループに接続されているサイト
+- Microsoft 365グループ接続サイト (グループに関連付けられているサイトを含むMicrosoft Teams
 - Microsoft 365 グループと関連付けのないモダン サイト
 - 従来の SharePoint サイト
 - コミュニケーション サイト
@@ -74,13 +74,13 @@ SharePoint サイトの地域移動を後でスケジュール設定するには
 
 SharePoint サイトの地域移動は　サイトがあるジオ位置情報でSharePoint の管理 URLから接続し、実行する必要があります。
 
-たとえば、サイト URL が次の場合 <https://contosohealthcare.sharepoint.com/sites/Turbines> は、SharePoint 管理者 URL に接続します <https://contosohealthcare-admin.sharepoint.com> 。
+たとえば、サイト URL が次の場合は <https://contosohealthcare.sharepoint.com/sites/Turbines> 、次の SharePoint管理者 URL に接続します <https://contosohealthcare-admin.sharepoint.com> 。
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![[SharePoint Online 管理シェル] ウィンドウに [Connect-SPOService]](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint[オンライン管理シェル] ウィンドウに[Connect-SPOService]](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>環境の検証
 
@@ -177,11 +177,11 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 
 サイトへのアクセス許可を持つユーザーは、移動中および移動完了後のサイトに引き続きアクセスすることができます。
 
-### <a name="sync-client"></a>同期クライアント
+### <a name="sync-app"></a>同期アプリ
 
-サイトの移動が完了後に、同期クライアントは自動的に新しいサイトの場所を検出し、シームレスに同期を転送します。 ユーザーはもう一度サインインまたはその他のアクションをする必要はありません。 (バージョン 17.3.6943.0625 またはそれ以降の同期クライアントが必要です)
+サイトの移動が完了すると、同期アプリは自動的に検出され、新しいサイトの場所への同期をシームレスに転送します。 ユーザーはもう一度サインインまたはその他のアクションをする必要はありません。 (必要な同期アプリのバージョン 17.3.6943.0625 以降)。
 
-移動の進行中にユーザーがファイルを更新すると、移動の実行中はファイルのアップロードが保留されることを同期クライアントが通知します。
+移動の進行中にユーザーがファイルを更新すると、移動中にファイルのアップロードが保留中であるという通知が同期アプリによって通知されます。
 
 ### <a name="sharing-links"></a>共有リンク
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Microsoft 365 のグローバル管理者が、ユーザー名が変更されるときにユーザーのメール アドレスと表示名を変更する方法について説明します。 '
-ms.openlocfilehash: fdba2191449bc3ea5aae5b5bde73fe5294b1f9d3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3215044f94d3b4e77860434ab28eed8a36754f12
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228365"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341022"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
@@ -40,7 +40,7 @@ ms.locfileid: "53228365"
 
 このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
-次の手順を実行するには、[グローバル管理者](about-admin-roles.md)である必要があります。
+これらの手順に従うには、[グローバル管理者](about-admin-roles.md) である必要があります。
 
 ## <a name="change-a-users-email-address"></a>ユーザーの電子メール アドレスを変更します。
 
@@ -64,9 +64,9 @@ ms.locfileid: "53228365"
 
 1. ユーザー名を選択し、 [**アカウント**] タブで、[**ユーザー名の管理**] を選択します。
 
-1. 最初のボックスに、新しいメール アドレスの最初の部分を入力します。独自のドメインを Microsoft 365 に追加した場合は、ドロップダウン リストを使用して新しいメール エイリアスにそのドメインを選択します。
+1. 最初のボックスに、新しいメールアドレスの最初の部分を入力します。 独自のドメインを Microsoft 365 に追加した場合は、ドロップダウン リストを使って新しいメール エイリアスにそのドメインを選択します。 [ドメインを追加する方法](../setup/add-domain.md)。
 
-1. [**変更の保存**] を選択します。
+1. **[変更の保存]** を選択します。
 
 > [!IMPORTANT]
 > エラー メッセージが表示された場合は、「[エラー メッセージを解決する](#resolve-error-messages)」を参照してください。
@@ -118,7 +118,7 @@ ms.locfileid: "53228365"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。 
 
 ::: moniker-end
 
@@ -177,6 +177,7 @@ Windows Server 2003 以前のバージョンで Active Directory を使用して
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理者: 1 人または複数のユーザーのパスワードを再設定する](reset-passwords.md) (記事)\
-[ユーザーに別のメール アドレスを追加する](../email/add-another-email-alias-for-a-user.md) (記事)\
-[共有メールボックス GWT を作成する](../email/create-a-shared-mailbox.md) (記事)
+[ドメインの追加](../setup/add-domain.md)
+[管理者: 1 人以上のユーザーのパスワードをリセット](reset-passwords.md)
+[ユーザーに他のメールアドレスを追加](../email/add-another-email-alias-for-a-user.md)
+[共有メールボックスを作成](../email/create-a-shared-mailbox.md)

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft サポート ケースの電子情報開示診断情報を収集する方法について説明します。
-ms.openlocfilehash: 842f8baf770f178df3298bbfa911de26ce946ed0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b2441e0b7af8a82e24a8acca9e000e954e1c8964
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926557"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362596"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>電子情報開示の診断情報を収集する
 
@@ -39,7 +39,7 @@ Core eDiscovery の診断情報の収集はコマンドレットベースなの�
 生成されたテキスト ファイルを確認し、機密情報を編集した後、ケースに取り組む Microsoft サポート エンジニアに送信します。
 
 > [!NOTE]
-> このセクションのコマンドを実行して、コンプライアンス センターの [コンテンツ検索] ページに表示されている検索とエクスポートの診断情報をMicrosoft 365することもできます。
+> また、このセクションのコマンドを実行して、検索とエクスポートの診断情報を収集し、このセクションの[コンテンツ検索] ページに一覧表示Microsoft 365 コンプライアンス センター。
 
 ### <a name="collect-information-about-searches"></a>検索に関する情報を収集する
 
@@ -67,10 +67,10 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>すべてのケース情報を収集する
 
-Microsoft サポートが問題を調査するために必要な情報が明らかではない場合があります。 この状況では、コア電子情報開示ケースのすべての診断情報を収集できます。 次 *のコマンドのコア* 電子情報開示ケース名は、コンプライアンス センターの [コア電子情報開示] ページに表示されるケースのMicrosoft 365です。
+Microsoft サポートが問題を調査するために必要な情報が明らかではない場合があります。 この状況では、コア電子情報開示ケースのすべての診断情報を収集できます。 次 *のコマンドのコア* 電子情報開示ケース名は、次のコマンドの [コア電子情報開示] ページに表示されるケースの名前と同Microsoft 365 コンプライアンス センター。
 
 ```powershell
-Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
+Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
 ## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>ユーザーの診断情報をAdvanced eDiscovery

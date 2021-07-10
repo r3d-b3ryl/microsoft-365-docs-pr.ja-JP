@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: サイトの移動をスケジュールするOneDrive、ユーザーに期待を伝える方法など、さまざまな地域の場所にサイトを移動する方法に関する情報を確認します。
-ms.openlocfilehash: 59b3fb47fd195967e7af056c7a71fb4e736471d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9e75c8e4102f82d4ab6e0f99ea26e1c0ad8b4bab
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691597"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362248"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
@@ -28,7 +28,7 @@ ms.locfileid: "46691597"
 
 サービスOneDrive Azure Blob を使用してStorageを格納します。 ユーザー Storageに関連付けられている OneDrive BLOB は、ユーザーが使用できる宛先の場所から 40 日以内に、OneDrive場所に移動されます。 ユーザーのサーバーへのアクセスはOneDriveが利用可能になるとすぐにOneDrive復元されます。
 
-OneDrive 地域の移動の期間中 (約 2 ～ 6 時間)、ユーザーの OneDrive は読み取り専用に設定されます。ユーザーは今まで通り OneDrive 同期クライアントまたは SharePoint Online の OneDrive サイトからファイルにアクセスできます。OneDrive 地域の移動の完了後に、ユーザーが Microsoft 365 アプリ起動ツールで OneDrive に移動すると、移動先の地域の場所にある OneDrive に自動的に接続されます。同期クライアントは、新しい場所からの同期を自動的に開始します。
+地理的OneDrive移動ウィンドウ (約 2 ~ 6 時間) の間、ユーザーのOneDriveは読み取り専用に設定されます。 ユーザーは引き続き、OneDrive 同期 オンラインのアプリまたはOneDriveサイトをSharePointできます。 地理OneDrive移動が完了すると、ユーザーが Microsoft 365 アプリ 起動ツールで OneDrive に移動すると、ユーザーは移動先の地域の場所で OneDrive に自動的に接続されます。 同期アプリは、新しい場所から自動的に同期を開始します。
 
 この記事の手順には、[Microsoft Office SharePoint Online の PowerShell モジュール](https://www.microsoft.com/download/details.aspx?id=35588)が必要になります。
 
@@ -118,13 +118,13 @@ _UserPrincipalName_ は、移動を停止する OneDrive の所有ユーザー�
 
 このコマンドレットを使用して、OneDrive接続している geo 内または地域外に移動する場所の状態をGet-SPOUserAndContentMoveStateできます。
 
-移動の状態については、次に示す表で説明します。
+移動状況については、次に示す表で説明します。
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>状態</strong></th>
-<th align="left"><strong>説明</strong></th>
+<th align="left">状態</th>
+<th align="left">説明</th>
 </tr>
 </thead>
 <tbody>
@@ -161,7 +161,7 @@ _UserPrincipalName_ は、移動を停止する OneDrive の所有ユーザー�
 
 ユーザーの OneDrive を別の地域の場所に移動する場合は、OneDrive のユーザーに最小限の説明についての通知が必要です。移動中は読み取り専用の状態になることの説明に加えて、既存のリンクとアクセス許可は移動の完了後に引き続き期待どおりに動作することも説明します。
 
-### <a name="onedrive-for-business"></a>OneDrive for Business
+### <a name="users-onedrive"></a>ユーザーの OneDrive。
 
 移動が進行中に、ユーザーのOneDrive読み取り専用に設定されます。 移動が完了すると、ユーザーは OneDrive アプリ 起動ツールまたは web ブラウザーの OneDrive に移動すると、OneDrive Microsoft 365 に移動します。
 
@@ -169,11 +169,11 @@ _UserPrincipalName_ は、移動を停止する OneDrive の所有ユーザー�
 
 コンテンツに対するアクセスOneDriveユーザーは、移動中および完了した後もコンテンツにアクセスできます。
 
-### <a name="onedrive-sync-client"></a>OneDrive 同期クライアント 
+### <a name="onedrive-sync-app"></a>OneDrive 同期アプリ 
 
-OneDrive 同期クライアントは、OneDrive 地域移動の完了後に、自動的に新しい OneDrive の場所を検出し、シームレスに同期を転換します。ユーザーは、再度サインインするなどの操作を一切実行する必要がありません。(同期クライアントのバージョン 17.3.6943.0625 以降が必要。)
+位置情報OneDrive 同期が完了すると、アプリは自動的に同期を検出し、新しい場所OneDrive OneDriveシームレスに転送します。 ユーザーはもう一度サインインしたり、他の操作を行う必要はありません。  (必要な同期アプリのバージョン 17.3.6943.0625 以降)。
 
-OneDrive 地域移動の進行中にユーザーがファイルを更新すると、同期クライアントにより、移動が進行している間はファイルの更新が保留されることが通知されます。
+ユーザーが位置情報の移動中にファイルを更新したOneDrive同期アプリは、移動の進行中にファイルのアップロードが保留中の状態を通知します。
 
 ### <a name="sharing-links"></a>共有リンク 
 
@@ -193,7 +193,7 @@ OneNote win32 クライアントと UWP (ユニバーサル) アプリは、OneD
 
 OneDrive 地域移動の完了時に、ユーザーは Teams アプリで OneDrive ファイルにアクセスできます。さらに、地域移動の前に OneDrive から Teams チャットで共有したファイルは、移動の完了後も引き続き操作できます。
 
-### <a name="onedrive-for-business-mobile-app-ios"></a>OneDrive for Business モバイル アプリ (iOS) 
+### <a name="onedrive-mobile-app-ios"></a>OneDriveモバイル アプリ (iOS) 
 
 OneDrive 地域移動の完了時に、ユーザーは、新しい OneDrive の場所に同期するために、iOS モバイル アプリでサインアウトしてから再度サインインする必要があります。
 

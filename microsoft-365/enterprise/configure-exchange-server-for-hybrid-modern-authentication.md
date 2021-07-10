@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: ハイブリッドモダン認証 (HMA) Exchange Serverを使用して、より安全なユーザー認証と承認を提供する、オンプレミスのユーザー認証を構成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d30d1b2b14efd66d973e9bf6d45b970d7af681bc
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 21ffec620ac3e262679fc0e2385f6f0f1b31933b
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841632"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362260"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -171,7 +171,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 ## <a name="verify"></a>確認する
 
-HMA を有効にした後、クライアントの次のログインでは新しい認証フローが使用されます。 HMA をオンにしても、クライアントに対して再認証がトリガーされるという点に注意してください。 クライアントは、持っている認証トークンまたは証明書の有効期間に基づいて再認証されます。
+HMA を有効にした後、クライアントの次のログインでは新しい認証フローが使用されます。 HMA をオンにしてもクライアントの再認証はトリガーされず、Exchange が新しい設定を取得するには時間がかかる場合があります。
 
 また、ctrl キーを押しながら Outlook クライアントのアイコン (Windows 通知トレイ) を右クリックし、[接続状態] をクリックします。 OAuth で使用されるベアラー トークンを表す 'Bearer'の 'Authn' 型に対してクライアントの SMTP アドレス \* を探します。
 

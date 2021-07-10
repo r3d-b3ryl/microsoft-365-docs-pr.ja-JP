@@ -1,5 +1,5 @@
 ---
-title: サービスのMicrosoft マネージド デスクトップ
+title: 管理者サポート
 description: ユーザーの予防的インシデント管理と対応インシデント管理Microsoft マネージド デスクトップ。
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 90787ec28aa2c421df50757fc29bf20b2b5d55f7
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925505"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362476"
 ---
-# <a name="support-for-microsoft-managed-desktop"></a>サービスのMicrosoft マネージド デスクトップ
+# <a name="admin-support"></a>管理者サポート
 
 Microsoft は、予防的で対応的なインシデント管理を提供します。 Microsoft は、管理者ポータルでインシデントMicrosoft マネージド デスクトップ追跡します。 これらは重大度の定義 [に従って分類されます](../working-with-managed-desktop/admin-support.md#sev)。
 
@@ -38,7 +38,7 @@ Microsoft マネージド デスクトップサポートには、次の内容が
 - Windows 10 Microsoft Defender for Endpoint のインストール
 - これらのMicrosoft 365 Apps for enterpriseアプリ: Outlook、Word、PowerPoint、Excel、Skype for Business クライアント、Microsoft Teams 
 - ビジネス向け Microsoft Store 
-- OneDrive for Business クライアント 
+- OneDrive クライアント 
 
 サポートの詳細:
 
