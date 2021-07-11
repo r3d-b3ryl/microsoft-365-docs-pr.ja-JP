@@ -123,7 +123,7 @@ ID | カテゴリ | ER | 住所 | ポート
 148 | 既定値<BR>必須 | いいえ | `cdnprod.myanalytics.microsoft.com, myanalytics.microsoft.com, myanalytics-gcc.microsoft.com` | **TCP:** 443、80
 149 | 既定値<BR>必須 | いいえ | `workplaceanalytics.cdn.office.net` | **TCP:** 443、80
 150 | 既定値<BR>省略可能<BR>**注:** このようなエンドポイントをブロックすると、ポータルを通して Office 365 ProPlus の展開と管理機能にアクセスできるかどうかに影響します。 | いいえ | `*.officeconfig.msocdn.com` | **TCP:** 443
-152 | 既定値<BR>省略可能<BR>**注:** これらのエンドポイントは、[自動処理] タブを通して Office クライアントの Office スクリプト機能を有効にします。この機能は、Office 365 管理ポータルで無効にすることもできます。 | いいえ | `*.microsoftusercontent.com` | **TCP:** 443
+152 | 既定値<BR>省略可能<BR>**注:** これらのエンドポイントは、[自動処理] タブを通して Office クライアントの Office スクリプト機能を有効にします。この機能は、Microsoft 365 管理センターで無効にすることもできます。 | いいえ | `*.microsoftusercontent.com` | **TCP:** 443
 153 | 既定値<BR>必須 | いいえ | `*.azure-apim.net, *.flow.microsoft.com, *.powerapps.com` | **TCP:** 443
 156 | 既定値<BR>必須 | いいえ | `activity.windows.com` | **TCP:** 443
 157 | 既定値<BR>必須 | いいえ | `ocsp.int-x3.letsencrypt.org` | **TCP:** 80

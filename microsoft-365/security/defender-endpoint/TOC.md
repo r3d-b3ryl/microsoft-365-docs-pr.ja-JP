@@ -174,6 +174,7 @@
 #### [全般]()
 ##### [データの保管場所を確認し、データ保持設定を更新する](data-retention-settings.md)
 ##### [アラート通知を構成する](configure-email-notifications.md)
+##### [脆弱性メール通知を構成する](configure-vulnerability-email-notifications.md)
 ##### [高度な機能を構成する](advanced-features.md)
 
 #### [アクセス許可]()

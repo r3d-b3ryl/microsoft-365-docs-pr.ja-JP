@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46f223953df65b75c0ecfe0d2c9fe92514b797ff
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: a3c7f88441b05d6c64470f6632b9c63ac67b295c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341654"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363957"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -620,7 +620,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |地理的位置の管理者の追加|GeoAdminAdded|SharePoint 管理者またはグローバル管理者が、地理的位置の管理者としてユーザーを追加しました。|
 |ユーザーに対するグループ作成の許可|AllowGroupCreationSet|サイトの管理者または所有者がアクセス許可レベルをサイトに追加しました。そのアクセス許可が割り当てられているユーザーは、そのサイトのグループを作成することが許可されます。|
 |サイトの地域の移動の取り消し|SiteGeoMoveCancelled|SharePoint またはグローバル管理者が SharePoint または OneDrive サイトの地域の移動を正常にキャンセルしました。 複数地域機能を使用すると、組織が複数の Microsoft データセンターの場所にまたがることができます。これは「地域」と呼ばれます。 詳細については、「[OneDrive および SharePoint Online の複数地域機能](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)」を参照してください。|
-|共有ポリシーの変更|SharingPolicyChanged|SharePoint またはグローバル管理者が、Microsoft 365 管理ポータル、SharePoint 管理ポータル、または SharePoint Online 管理シェルを使用して SharePoint 共有ポリシーを変更しました。 組織の共有ポリシーの設定が変更されると、ログに記録されます。 変更されたポリシーは、イベント レコードの詳細なプロパティの **ModifiedProperties** フィールドで識別されます。|
+|共有ポリシーの変更|SharingPolicyChanged|SharePoint またはグローバル管理者が、Microsoft 365 管理センター、SharePoint 管理センター、または SharePoint Online 管理シェルを使用して SharePoint 共有ポリシーを変更しました。 組織の共有ポリシーの設定が変更されると、ログに記録されます。 変更されたポリシーは、イベント レコードの詳細なプロパティの **ModifiedProperties** フィールドで識別されます。|
 |デバイス アクセス ポリシーの変更|DeviceAccessPolicyChanged|SharePoint またはグローバル管理者が、組織の非管理対象デバイス ポリシーを変更しました。 このポリシーは、組織に参加していないデバイスからの SharePoint、OneDrive、および Microsoft 365 へのアクセスを制御します。 このポリシーを構成するには、Enterprise Mobility + Security サブスクリプションが必要です。 詳細については、「[非管理対象デバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。|
 |適用除外ユーザー エージェントの変更|CustomizeExemptUsers|SharePoint 管理者または全体管理者が、SharePoint 管理センターで適用除外ユーザー エージェントの一覧をカスタマイズしました。インデックスを作成する Web ページ全体を受け取らせないように除外するユーザー エージェントを指定できます。つまり、除外対象として指定されたユーザー エージェントが InfoPath フォームを検出すると、フォームは、Web ページ全体ではなく XML ファイルとして返されます。これにより InfoPath フォームのインデックス作成の速度が向上します。|
 |ネットワーク アクセス ポリシーの変更|NetworkAccessPolicyChanged|SharePoint 管理者または全体管理者が、SharePoint 管理センター内で、または SharePoint Online PowerShell を使用して、場所に基づくアクセス ポリシー (信頼されたネットワーク境界とも呼ばれる) を変更しました。この種類のポリシーは、指定された承認済み IP アドレスの範囲に基づいて、組織内の SharePoint および OneDrive リソースにアクセスできるユーザーを制御します。詳細については、「[ネットワークの場所に基づいて SharePoint Online および OneDrive データへのアクセスを制御する](/sharepoint/control-access-based-on-network-location)」を参照してください。|

@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 管理者は、複数地域の環境でSharePointサービスOneDrive管理する方法について学習できます。
-ms.openlocfilehash: 4c5215b855b8ca1840035b39fcfbddde419c13d8
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 9ef22a34881ef5c9c2ed72835bc88c1dbfe835b5
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362320"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363945"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
@@ -72,15 +72,15 @@ DLP ポリシーは、そのポリシーの適用性に基づいて各地域の�
 
 ## <a name="sharing"></a>共有
 
-管理者は、各地域のポリシーの共有を設定し管理できます。 各地域の OneDrive と SharePoint サイトは、対応する地域固有の共有設定のみを優先します。 (たとえば、中心地への[外部共有](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)は許可できますが、サテライト地域またはその逆にはできません) 共有設定は地域間の共有制限を構成できませんので注意してください。
+管理者は、各地域のポリシーの共有を設定し管理できます。 各地域OneDriveのSharePointサイトとサイトは、対応する地域固有の共有設定のみを受け入れる必要があります。 (たとえば、中心地への[外部共有](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)は許可できますが、サテライト地域またはその逆にはできません) 共有設定は地域間の共有制限を構成できませんので注意してください。
 
 ## <a name="stream"></a>Stream
 
-Stream にアップロードされたビデオは、アップロードするユーザー OneDriveに保存されます。 会議の記録は、会議を記録OneDrive出席者のグループに保存されます。
+1:1 チャットで Stream にアップロードされたビデオは、アップロードするユーザーのOneDriveに保存されます。 会議の記録は、会議を記録OneDrive出席者のグループに保存されます。
 
 ## <a name="taxonomy"></a>分類
 
-マスターは会社の中心地にホストされているため、地域全体で会社の管理されたメタデータに統一された[分類](/sharepoint/managed-metadata)をサポートしています。 中心地からグローバル分類を管理し、サテライト地域の分類に地域固有の用語を追加することをお勧めします。 グローバル分類の用語は、サテライト地域に同期されます。
+エンタープライズで管理されるメタデータ[](/sharepoint/managed-metadata)の統合分類は、地理的な場所全体でサポートされ、マスターは会社の一元的な場所でホストされます。 中心地からグローバル分類を管理し、サテライト地域の分類に地域固有の用語を追加することをお勧めします。 グローバル分類の用語は、サテライト地域に同期されます。
 
 詳細と開発者向けガイダンスについては、[複数地域テナントにおけるメタデータの管理](/sharepoint/dev/solution-guidance/multigeo-managedmetadata)を参照してください。
 

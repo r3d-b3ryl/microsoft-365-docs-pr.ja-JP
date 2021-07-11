@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8cb1b30da84ece597235d8eef674a12208ab6456
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8063e1b0e76241df946a29ef2c5115bc0dc39aad
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362680"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363769"
 ---
 # <a name="user-support"></a>ユーザー サポート
 
@@ -83,7 +83,7 @@ IT 管理者は、次の項目を担当します。
 
 ### <a name="elevation-portal"></a>昇格ポータル 
 
-既定Microsoft マネージド デスクトップデバイスは標準ユーザーで実行されます。一部のタスクでは特権の昇格が必要です。 (ユーザー アカウント制御の詳細については、「ユーザー アカウント制御[」を参照してください](/windows/security/identity-protection/user-account-control/user-account-control-overview))サポート スタッフがユーザーの問題のトラブルシューティング[](../working-with-managed-desktop/end-user-support.md#elevation-requests)中にタスクを実行するために、管理者アカウントへの "just-in-time" アクセスを提供します。 このパスワードは、指定したパスワードのみによって安全にアクセスされ、数時間ごとにローテーションされます。  
+既定Microsoft マネージド デスクトップデバイスは標準ユーザーで実行されます。一部のタスクでは特権の昇格が必要です。 ユーザー アカウント制御の詳細については、「ユーザー アカウント制御 [」を参照してください](/windows/security/identity-protection/user-account-control/user-account-control-overview)。 サポート スタッフがユーザーの問題のトラブルシューティング[](../working-with-managed-desktop/end-user-support.md#elevation-requests)中にタスクを実行するために、管理者アカウントへの "just-in-time" アクセスを提供します。 このパスワードは、指定したパスワードのみによって安全にアクセスされ、数時間ごとにローテーションされます。  
 
 このポータルへのアクセスをユーザーに設定する方法の手順については、「ユーザー サポート機能を有効 [にする」を参照してください](../get-started/enable-support.md)。
 
