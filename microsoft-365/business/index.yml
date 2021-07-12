@@ -27,10 +27,10 @@ productDirectory:
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: ウイルス対策管理とユニバーサル プリントが Microsoft 365 Business Premium で利用できるようになりました。
       url: 'https://aka.ms/M365BPQ1Update'
-    - title: パートナー ウェビナー シリーズに参加
+    - title: 7 月 28 日に開催される Microsoft 365 Lighthouse パートナー ウェビナーにご参加ください
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: Microsoft 365 Business Premium を使用し、管理対象サービスを介してビジネスの成長を促進します。
-      url: 'https://aka.ms/acceleratewithm365bp'
+      summary: Microsoft 365 Lighthouse を使用して、Microsoft 365 Business Premium のお客様をセキュリティで保護し、標準化します。
+      url: 'https://aka.ms/m365lighthousewebinar'
 conceptualContent:
   items:
     - title: Microsoft 365 Business Premium とは
