@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e70a67f9472dff155b8554d5d6ae26c79d49a67a
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841368"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362619"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
@@ -25,7 +25,6 @@ Microsoft マネージド デスクトップは、[Microsoft 365 Enterprise](../
 - ユーザー デバイスの展開
 - IT サービスの管理と運用
 - セキュリティの監視と対応
-- ユーザー サポート
 
 Microsoft マネージド デスクトップは、今日におけるビジネスおよび従業員が直面している、次のような課題に対するソリューションを提供します。
 - サービスとしてのソフトウェアのアジャイル環境への移行は困難。
@@ -33,7 +32,7 @@ Microsoft マネージド デスクトップは、今日におけるビジネス
 - 現在の IT 管理およびセキュリティ プロセスは、古く、処理に時間とコストがかかる。
 - 企業は、デジタル インフラストラクチャを維持することよりも、独自の成功をもたらす要因に焦点を当てたいと考えている。
 
-ユーザーは、最高のパフォーマンスと信頼性を得るために厳選され、厳格にテストされたデバイスとソフトウェアを使って、最新バージョンの Windows 10 アプリと Microsoft 365 Apps for enterprise アプリ (およびその他) を利用することができます。 また、このソフトウェアは、最新の状態に保つことを心配する必要はありません。これは、すべてのステップで監視される慎重なロールアウト シーケンスに従って自動的に行われるためです。 また、登録されているデバイスは、24x7 年中無休で技術的およびセキュリティの問題を監視していて、何か問題が発生した場合は、ヘルプへの第一歩がされるようになります。
+ユーザーは、最高のパフォーマンスと信頼性を得るために厳選され、厳格にテストされたデバイスとソフトウェアを使って、最新バージョンの Windows 10 アプリと Microsoft 365 Apps for enterprise アプリ (およびその他) を利用することができます。 また、このソフトウェアは、最新の状態に保つことを心配する必要はありません。これは、すべてのステップで監視される慎重なロールアウト シーケンスに従って自動的に行われるためです。 また、登録されているデバイスは、24 時間年中無休で技術的およびセキュリティの問題が監視されており、何か問題が発生した場合はヘルプが表示されます。
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの独自機能

@@ -41,8 +41,10 @@
           href: service-description/privacy-personal-data.md
         - name: 更新プログラム
           href: service-description/updates.md
-        - name: サポート
+        - name: 管理者サポート
           href: service-description/support.md
+        - name: ユーザー サポート
+          href: service-description/user-support.md
         - name: 運用と監視
           href: service-description/operations-and-monitoring.md
         - name: 診断ログ
@@ -115,6 +117,8 @@
                   href: get-started/register-devices-partner.md
             - name: 既存のデバイスをj自分で登録する
               href: get-started/register-reused-devices-self.md
+        - name: ユーザー サポート機能を有効にする
+          href: get-started/enable-support.md
         - name: ユーザーがデバイスを使えるようにする
           href: get-started/get-started-devices.md
         - name: Autopilot と登録ステータス ページの初回実行時エクスペリエンス
