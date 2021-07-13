@@ -18,14 +18,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 description: ビジネス サブスクリプション用のアドオンを購入および管理するMicrosoft 365を確認します。
 ms.date: 04/02/2021
-ms.openlocfilehash: 8cf586114c9b6ab30a9f4e5acdd669e185edd71b
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: c9b552ebc6b23bf01816fee197641caf5c6a43c6
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331780"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394475"
 ---
 # <a name="buy-or-manage-add-ons"></a>アドオンを購入するか、管理します
 
@@ -59,7 +60,7 @@ Skype for Business アドオンの詳細については、「[Skype for Business
 
 従来のアドオンを管理するには、それを含むサブスクリプションにアクセスし、そこに変更を加えます。 従来のアドオンを管理するには、次の手順を使用します。
   
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 2. [製品 **] タブ** で、更新するアドオンを含むサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの **[アドオン] セクションに** 、購入したアドオンが一覧表示されます。 [アドオン **の管理] を選択します**。
 4. [アドオン **の管理] ウィンドウ** の [アドオン] ドロップダウン リストから、変更するアドオンを選択します。
@@ -74,6 +75,6 @@ Skype for Business アドオンの詳細については、「[Skype for Business
 ## <a name="related-content"></a>関連コンテンツ
 
 [サブスクリプションの記憶域を追加](add-storage-space.md) する (記事)\
-[サブスクリプション ライセンスの購入または削除](licenses/buy-licenses.md) (記事)\
+[サブスクリプション ライセンスを購入または削除する](licenses/buy-licenses.md) (記事)\
 [[定期的な請求] をオフまたはオンにする](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) (記事)\
 [支払い方法の管理](billing-and-payments/manage-payment-methods.md) (記事)

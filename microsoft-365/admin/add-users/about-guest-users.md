@@ -1,5 +1,5 @@
 ---
-title: 管理者センターのゲスト Microsoft 365ユーザー
+title: グループ内のゲスト ユーザー Microsoft 365 管理センター
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,24 +15,25 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: ゲスト ユーザーの一覧が管理センターにMicrosoft 365します。
-ms.openlocfilehash: f7a337b3ce4eb659cb4269f516345d7a24168ecc
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+description: '[ゲスト ユーザー] リストに[ゲスト ユーザー] リストが表示される方法Microsoft 365 管理センター。'
+ms.openlocfilehash: 67b0a352f5492f474de39cb19811151bf212ff4e
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841044"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394125"
 ---
-# <a name="guest-users-in-microsoft-365-admin-center"></a>管理者センター Microsoft 365ゲスト ユーザー
+# <a name="guest-users-in-microsoft-365-admin-center"></a>ユーザーのゲストMicrosoft 365 管理センター
 
 ユーザー、ユーザー、Microsoft Teams、SharePoint、Azure Active Directoryに追加したゲストは、Microsoft 管理センターの [ゲスト ユーザー]リストにも追加されます。 ゲストは、会議に出席し、招待されたTeamsドキュメントやチャットを表示できます。
 ユーザーが [ゲスト ユーザー] リストに **表示された** 後、そのユーザーのアクセス権を削除できます。
 
-ゲスト ユーザーを表示するには、管理者センター Microsoft 365左側のナビゲーションで、[ユーザー] を展開し、[ゲスト ユーザー]**を選択します**。
+ゲスト ユーザーを表示するには、左側Microsoft 365 管理センターナビゲーションで [ユーザー] を展開し、[ゲスト ユーザー]**を選択します**。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -50,8 +51,8 @@ ms.locfileid: "52841044"
 
 ゲストを追加するには、「ゲスト ユーザー Azure Active Directoryする[」を参照してください](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
 
-ユーザーを追加した後、ユーザーをグループに割り当てるか、組織内のアプリにアクセス権を与えすることもできます。 Azure AD ポータルにユーザーを追加すると、そのユーザーは管理センターの [ゲスト ユーザー]ページMicrosoft 365されます。
-ユーザーが [ゲスト ユーザー]リストに追加された後は[](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center)、管理センターの [グループ] Microsoft 365できます。
+ユーザーを追加した後、ユーザーをグループに割り当てるか、組織内のアプリにアクセス権を与えすることもできます。 Azure AD ポータルにユーザーを追加すると、そのユーザーは、ユーザーポータルの [ゲスト ユーザー]ページにも表示Microsoft 365 管理センター。
+ユーザーが [ゲスト ユーザー]リストに追加された後、ユーザーは[ゲスト ユーザー] リストの[[](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center)グループ] にMicrosoft 365 管理センター。
 
 複数 [のゲストを組織との共同作業](/azure/active-directory/b2b/tutorial-bulk-invite) に招待するには、「ゲストを一括で追加する」を参照してください。
 
@@ -59,7 +60,7 @@ ms.locfileid: "52841044"
 
 ゲスト ユーザーとの共同作業が完了したら、それらを削除でき、組織にアクセスできなくなりました。
 
-1. 管理センターでMicrosoft 365を展開し **、[ゲスト** ユーザー]**を選択します**。
+1. [ユーザー] **Microsoft 365 管理センター展開し**、[ゲスト ユーザー]**を選択します**。
 1. [ゲスト **ユーザー] ページ** で、削除するユーザーを選択し、[ユーザーの削除 **] を選択します**。
 
 Azure AD ポータルでユーザーを削除するには、「ゲスト [ユーザーとリソースを削除する」を参照してください](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。

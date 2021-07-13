@@ -18,15 +18,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: 請求プロファイルが請求書をサポートする方法について学習します。
 ms.date: 04/02/2021
-ms.openlocfilehash: e66efe12e05d2aaf286b689c955f17c8401144f1
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537333"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394631"
 ---
 # <a name="understand-billing-profiles"></a>課金プロファイルを理解する
 
@@ -34,13 +35,13 @@ ms.locfileid: "52537333"
 
 > [!NOTE]
 >
-> 請求プロファイルは、サービス管理センターの [Microsoft.com] ページまたは [サービスの購入]ページから製品やサービスを購入するMicrosoft 365できません。
+> 請求プロファイルは、製品とサービスを購入する顧客は、Microsoft.com の [サービスの購入] ページではMicrosoft 365 管理センター。
 
 ## <a name="what-are-billing-profile-roles"></a>課金プロファイルの役割とは
 
 課金プロファイルのロールには、購入を制御し、請求書を表示および管理するためのアクセス許可があります。 これらの役割を、請求書の追跡、整理、支払いを行うユーザーに割り当てます。 たとえば、組織内の調達チームのメンバーです。
 
-| 役割                         | 説明                                                                      |
+| Role                         | 説明                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
 | 課金プロファイルの所有者        | 課金プロファイルに関するすべてを管理する                                          |
 | 課金プロファイル投稿者  | 課金プロファイルのアクセス許可を除くすべてを管理する                        |
@@ -73,7 +74,7 @@ ms.locfileid: "52537333"
 
 Azure の料金に関する質問やサポートが必要な場合は、Azure サポートを <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">使用してサポート 要求を作成します</a>。
 
-管理センターで請求プロファイルに関する質問やヘルプが必要な場合はMicrosoft 365サポート[にお問い合わせください](../../business-video/get-help-support.md)。
+請求プロファイルに関する質問やサポートが必要な場合はMicrosoft 365 管理センター[サポートにお問い合わせください](../../business-video/get-help-support.md)。
 
 ## <a name="related-content"></a>関連コンテンツ
 

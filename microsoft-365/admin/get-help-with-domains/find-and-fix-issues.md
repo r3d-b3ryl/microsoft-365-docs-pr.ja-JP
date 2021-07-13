@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS レコードが正しく設定されていることを確認して、カスタム ドメインのセットアップ中に発生した問題を追跡する方法について説明します。
-ms.openlocfilehash: 70beb877251c333766a0963316287796eb81d595
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 1dcc52be68fca11245e1a2437d9fe5a3f23ed694
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623967"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393897"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>ドメインまたは DNS レコードを追加後に問題を特定して解決する
 

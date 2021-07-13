@@ -20,15 +20,16 @@ ms.custom:
 - okr_SMB
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: 製品ライセンスを特定のユーザーに割り当てるのか、またはユーザー ライセンスを特定の製品に割り当てるのかによって、ライセンスを割り当てます。
 ms.date: 04/26/2021
-ms.openlocfilehash: c8e5c6a648f08aaba97fe05e19a5cfa0cada2174
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 987572ae15ffdf6d2042c6e54eba586cd39ebcb9
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007011"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393717"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 

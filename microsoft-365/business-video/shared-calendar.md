@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 共有予定表を作成する方法について学習します。
-ms.openlocfilehash: cbc84523b52b7a38e25a35670abf6758a73d0a70
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 87b73b9b1bff2d56926c70e812515df3882edcf3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705644"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394209"
 ---
 # <a name="create-a-shared-calendar"></a>共有予定表を作成する
 
@@ -47,4 +48,4 @@ ms.locfileid: "52705644"
 
 [カレンダーと連絡先を管理する](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d)(Outlook)\
 [電子メールの共同作業](../admin/email/email-collaboration.md) (記事)\
-[管理センター Microsoft 365概要](admin-center-overview.md)(記事)
+[このページのMicrosoft 365 管理センター](admin-center-overview.md) (記事)

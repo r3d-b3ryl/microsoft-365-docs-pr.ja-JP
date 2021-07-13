@@ -21,17 +21,18 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 高度なセキュリティとビジネス ネットワーク機能をWindows、Windows 10 Proデバイスをアップグレードする方法を確認します。
-ms.openlocfilehash: 39a7224ea585f8e1fb5052cb6fbb62329bd15656
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e87a9bc4ebbb4d5437e2174dc9f41c4700346ffd
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227517"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394153"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>デバイスWindowsにアップグレードWindows 10 Pro
 
@@ -39,11 +40,11 @@ ms.locfileid: "53227517"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j]
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../business-video/index.yml)」をご覧ください。
 
 ## <a name="upgrade-to-windows-10-pro"></a>Windows 10 Pro にアップグレードする
 
-サーバーにアップグレードWindows 10 Pro、いくつかのオプションがあります。 次の操作を行うことができます:
+サーバーにアップグレードWindows 10 Pro、いくつかのオプションがあります。 次の操作を実行できます。
 
 - Microsoft ソフトウェアダウンロード サイトから [アップグレードをインストールします](https://go.microsoft.com/fwlink/?LinkID=836951)。
   - ログインしているデバイスが更新するデバイスと同じデバイスにある場合は、このオプションを選択します。
@@ -55,7 +56,7 @@ ms.locfileid: "53227517"
 > [!NOTE]
 > Windows Windows Pro、Windows 8 Pro、Windows 8.1 Pro を実行しているデバイスがある場合、Microsoft 365 for business サブスクリプションは、Windows Pro 10 アップグレードを受Windows Proします。 Windows
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 デバイスのセットアップをWindows 10するには、「ビジネス ユーザー向Windows[デバイスMicrosoft 365セットアップ」を参照してください](set-up-windows-devices.md)。
 

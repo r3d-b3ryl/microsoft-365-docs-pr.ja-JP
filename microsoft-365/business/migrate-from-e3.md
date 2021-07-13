@@ -1,5 +1,5 @@
 ---
-title: E3 からMicrosoft 365 BusinessにOffice 365する
+title: ビジネスからMicrosoft 365に移行Office 365 E3
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,51 +18,52 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
-description: E3 サブスクリプションOffice 365 300 人を超える従業員がいない場合は、E3 サブスクリプションへの切り替Microsoft 365 Business Premium。
-ms.openlocfilehash: d139d07c946ff3efed3db3a73eb5e1a4ae66c190
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+description: サブスクリプションを持Office 365 E3 300 人を超える従業員がいない場合は、サブスクリプションへの切り替Microsoft 365 Business Premium。
+ms.openlocfilehash: c1b4da07b3bf28cce1a48424ab45cde6ea54d367
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623607"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394173"
 ---
-# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>E3 から Office 365への移行Microsoft 365 Business Premium
+# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Office 365 E3からMicrosoft 365 Business Premium
 
-Microsoft 365 Business Premiumは、クラス最高のクラウドベースの生産性アプリと簡単なデバイス管理とセキュリティを組み合わせて、中小企業に必要なすべてを備えています。 現在 E3 サブスクリプションOffice 365、従業員数が 300 人を超える場合は、セキュリティ機能を追加するために Microsoft 365 Business Premium に切り替えて検討してください。
+Microsoft 365 Business Premiumは、クラス最高のクラウドベースの生産性アプリと簡単なデバイス管理とセキュリティを組み合わせて、中小企業に必要なすべてを備えています。 現在、サブスクリプションを持Office 365 E3 300 人を超える従業員がいない場合は、セキュリティ機能を追加するために Microsoft 365 Business Premium に切り替えて検討してください。
 
 移行は簡単です。最初にライセンスを切り替えて、現在のサブスクリプション内のすべてのデータとユーザー情報が維持されます。 移行後は、アプリに追加される機能を設定する必要Microsoft 365 Business Premium。
 
-## <a name="differences-between-office-365-e3-and-microsoft-365-business-premium"></a>E3 と Office 365の違Microsoft 365 Business Premium
+## <a name="differences-between-office-365-e3-and-microsoft-365-business-premium"></a>データとOffice 365 E3の違Microsoft 365 Business Premium
 
-次の表に、E3 のMicrosoft 365 Business PremiumとOffice 365示します。
+次の表は、データとMicrosoft 365 Business Premiumの違Office 365 E3。
 
-| 機能    | Microsoft 365 Business Premium    | E3 でのOffice 365サポート |
+| 特徴    | Microsoft 365 Business Premium    | Office 365 E3 |
 |:-------|:-----|:-----|
 | **社内**        | | |
 | Officeアプリ<sup>1</sup>    | Microsoft 365 Apps for business    | Microsoft 365 Apps for enterprise |
 | **クラウド生産性アプリ**        | | |
 | Exchange OnlineとOutlook    | メールボックスあたり 50 GB のストレージ制限と無制限のストレージExchange Online Archiving    | メールボックスあたり 100 GB のストレージ制限と無制限の容量Exchange Online Archiving |
-| Teams    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![E3 にOffice 365](../media/check-mark.png) | 
+| Teams    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データにOffice 365 E3](../media/check-mark.png) | 
 | OneDrive for Business    | ユーザーあたり 1 TB のストレージ制限    | 無制限 | 
-| Yammer, SharePoint, Planner, Stream    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![E3 にOffice 365](../media/check-mark.png) | 
-| StaffHub    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![E3 にOffice 365](../media/check-mark.png) |
-| **脅威保護**        | | |
+| Yammer, SharePoint, Planner, Stream    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データにOffice 365 E3](../media/check-mark.png) | 
+| StaffHub    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データにOffice 365 E3](../media/check-mark.png) |
+| **脅威の保護**        | | |
 | Microsoft Defender for Office 365 プラン 1 | ![Microsoft 365 Business Premium](../media/check-mark.png)    | 含まれていませんが、追加できます |
 | **ID 管理**        | | |
 | ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービス パスワードリセット、Azure AD 多要素認証 (MFA)、条件付きアクセス、オンプレミス ID のパスワード 書き戻し|     ![Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | **デバイスおよびアプリの管理**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Microsoft 365 Business Premium](../media/check-mark.png)    |  |
-| 共有コンピューターのライセンス認証|     ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![E3 にOffice 365](../media/check-mark.png)| 
+| 共有コンピューターのライセンス認証|     ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データにOffice 365 E3](../media/check-mark.png)| 
 | Win 7/8.1 Windows 10 ProライセンスからライセンスへのアップグレードProする|     ![Microsoft 365 Business Premium](../media/check-mark.png)    ||
 | **情報保護**        | | |
-|Office 365 データ損失防止|    ![Microsoft 365 Business Premium](../media/check-mark.png)|![E3 にOffice 365](../media/check-mark.png)|
-|Azure Information Protection Plan 1,BitLocker実施|![Microsoft 365 Business Premium](../media/check-mark.png)||
+|Office 365 データ損失防止|    ![Microsoft 365 Business Premium](../media/check-mark.png)|![データにOffice 365 E3](../media/check-mark.png)|
+|Azure Information Protection Plan 1, BitLocker の適用|![Microsoft 365 Business Premium](../media/check-mark.png)||
 |Azure Information Protection Plan 1, Sensitivity labels|![Microsoft 365 Business Premium](../media/check-mark.png)||
 |**クライアント アクセス ライセンス (CAL 権限)**|||
-|EnterpriseCAL スイート (Exchange、SharePoint、Skype)||![E3 にOffice 365](../media/check-mark.png)|
+|EnterpriseCAL スイート (Exchange、SharePoint、Skype)||![データにOffice 365 E3](../media/check-mark.png)|
 
 <sup>1</sup> Microsoft 365 Business Premium Office アプリの Office バージョンには、グループ ポリシー、アプリの利用統計情報、更新コントロール、スプレッドシートの比較と照会、またはビジネス インテリジェンスによるボリュームのアクティブ化は含まれています。
 
@@ -71,7 +72,7 @@ Microsoft 365 Business Premiumは、クラス最高のクラウドベースの�
 サブスクリプションを移行するには、「少数[のユーザー](../commerce/subscriptions/change-plans-manually.md)をユーザーに移行する場合は、手動でプランを変更する」を参照Microsoft 365 Business Premium。 また、すべてのユーザー[を自動的](../commerce/subscriptions/upgrade-to-different-plan.md)にアップグレードしたり、パートナーと一緒に E3 サブスクリプションとライセンスを別のサブスクリプションにMicrosoft 365 Business Premiumすることもできます。
 次のセクションでは、必要な変更がある場合は変更し、移行後に実行できる操作について説明します。
 
-### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365E3 サブスクリプションの構成とデータ
+### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3の構成とデータ
 移行する前に、現在のサブスクリプションまたはデータに変更を加える必要は一切ない。これには次の内容が含まれます。
 
 - DNS レコードやドメイン名などのサブスクリプション構成。
@@ -86,7 +87,7 @@ Creator のWindowsにまだインストールされていない場合はWindows 
 ### <a name="set-up-policies-to-protect-user-devices-and-files"></a>ユーザーデバイスとファイルを保護するためのポリシーの設定
 
 > [!NOTE]
-> MDM ポリシーとデバイスOffice 365設定すると、これらのデバイスは管理センターの [デバイス] ページMicrosoft 365されます。 設定したポリシーは、Intune ポータルのクラシック ポリシーの一覧に [表示されます](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
+> MDM ポリシーとデバイスOffice 365設定した場合、これらのデバイスはデバイス の [デバイス] ページに表示Microsoft 365 管理センター。 設定したポリシーは、Intune ポータルのクラシック ポリシーの一覧に [表示されます](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
 
 ユーザーにライセンスを割り当Microsoft 365 Business Premium、ユーザーのデバイスとファイルの保護を開始できます。
 

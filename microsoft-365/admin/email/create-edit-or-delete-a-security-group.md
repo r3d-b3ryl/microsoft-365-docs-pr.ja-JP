@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: セキュリティ グループの作成、編集、削除について説明します。
-ms.openlocfilehash: 7887a6371287ebef3a91cc1a37f2ed696df1948d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 525acc45b293563f58bb9aa12c40bec1438cb055
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624003"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393957"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでセキュリティ グループを作成、編集、削除する
 
@@ -102,6 +104,6 @@ ms.locfileid: "52624003"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理センターでグループをMicrosoft 365する](../create-groups/create-groups.md)(記事)\
+[グループを作成するには、Microsoft 365 管理センター](../create-groups/create-groups.md) (記事)\
 [ユーザー Microsoft 365グループの説明](../create-groups/explain-groups-knowledge-worker.md)(記事)\
-[管理センターでグループをMicrosoft 365する](../create-groups/manage-groups.md)(記事)
+[グループを管理する (Microsoft 365 管理センター)](../create-groups/manage-groups.md)

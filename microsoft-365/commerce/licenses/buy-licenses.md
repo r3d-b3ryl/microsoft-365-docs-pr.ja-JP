@@ -1,5 +1,5 @@
 ---
-title: 「ライセンスの購入または削除」
+title: ライセンスの購入または削除
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,21 +18,22 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: 以下の手順を使用して、ライセンスを購入したり、ビジネス サブスクリプションのライセンス数Microsoft 365減らしたりします。
 ms.date: 04/07/2021
-ms.openlocfilehash: 144adbd9c21253bd0a8e47205c72e09062fe6552
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 4fa1b08a7a4304d13fb25ec53c5f034eae77ccec
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582706"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394439"
 ---
-# <a name="buy-or-remove-licenses"></a>「ライセンスの購入または削除」
+# <a name="buy-or-remove-licenses"></a>ライセンスの購入または削除
 
 次の手順を使用して、サブスクリプションのライセンス数を増やしたり、ライセンス数を減らしたりできます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 - ユーザーを [追加し、同時にライセンスを割り当てできます](../../admin/add-users/add-users.md)。
@@ -68,7 +69,7 @@ ms.locfileid: "52582706"
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
 
-2. **[製品]** タブで、ライセンスを購入または削除するサブスクリプションを見つけます。 3 つのドット (その他のアクション) を選択し、[ライセンスの購入 **] を選択します**。 [[ライセンスの購入] または [ライセンスの削除] ボタンが表示できない場合は、](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+2. **[製品]** タブで、ライセンスを購入または削除するサブスクリプションを見つけます。 3 つのドット (その他の操作) を選択してから、**[ライセンスの購入]** を選択します。 [[ライセンスの購入] または [ライセンスの削除] ボタンが表示できない場合は、](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. ライセンスを数を減らす場合は、**[ライセンスの購入]** ウィンドウの上部で、**[ライセンスの削除]** を選択します。
 4. ライセンスを購入または削除するには、**[ライセンスの総数]** ボックスにある **[新しい数量]** に、このサブスクリプションに必要なライセンスの総数を入力します。 たとえば、100 のライセンスがあり、さらに 5 つ追加する必要がある場合は、105 と入力します。 ライセンスを 5 つ削除する場合は、95 と入力します。
 5. **[保存]** を選択します。

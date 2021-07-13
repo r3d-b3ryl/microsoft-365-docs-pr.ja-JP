@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: ドメイン名を購入し、ドメイン名に追加して、tom@fourthcoffee.com のような使いMicrosoft 365。
-ms.openlocfilehash: 7fb113c0efd6462c4c703956a20c390f2d555d5f
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 599ca47a9df2dc7b022ff614e3f78b23defdd96e
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341462"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394005"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
 

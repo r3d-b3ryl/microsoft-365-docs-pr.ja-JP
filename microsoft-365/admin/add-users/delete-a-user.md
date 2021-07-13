@@ -16,16 +16,17 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: ユーザー アカウントを削除する方法と、ユーザーの電子メールとコンテンツをOneDriveする方法、および製品ライセンスを保持するかどうかを説明します。
-ms.openlocfilehash: 43a57a69ce0d810af2b029f49c15d32d75a4dc33
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 81dc71c6734340146e1dd13bcd59696eed5be202
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683141"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394353"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
@@ -47,7 +48,7 @@ ms.locfileid: "52683141"
 
 作業を開始する前に、ユーザーのメールと OneDrive コンテンツの処置方法、ライセンスを保持するのかそれとも支払いを停止するのかについて検討します。
   
-|アイテム | 説明 |
+|項目 | 説明 |
 |:-----|:-----|
 |製品のライセンス  <br/> |ライセンスをユーザーから削除してライセンスを組織のサブスクリプションから削除すると、ライセンスに対する支払いを停止できます。 このオプションを選択した場合、ライセンスがサブスクリプションから自動的に削除されます。  <br/><br/> パートナー経由またはボリューム ライセンスを通して購入したライセンスは **削除できません**。 年間プランの支払いを行う場合、または請求サイクルの途中にある場合は、契約が完了するまでサブスクリプションからライセンスを削除できます。  <br/> |
 |OneDrive のコンテンツ  <br/> |ユーザーがファイルを OneDrive に保存していた場合、これらのファイルへのアクセス権を別のユーザーに付与することができます。  <br/><br/> 保持するファイルは、OneDrive のファイルに対して設定されている保持期間内に移動する必要があります。 **既定の保持期間は 30 日です。** ユーザーを削除した後に保持期間内にファイルを移動しない場合、OneDrive のコンテンツは完全に削除されます。 削除されたアカウントの OneDrive ファイルを保持する日数を増やすには、「[削除されたユーザーの OneDrive の保持期間を設定する](/onedrive/set-retention)」を参照してください。  <br/><br/> **重要!** 削除されたユーザーが個人のコンピューターを使用して SharePoint および OneDrive からファイルをダウンロードしていた場合、ユーザーが自分のコンピューターに保存したファイルを管理者が削除する方法はありません。 OneDrive から同期されたファイルに引き続きアクセスできます。           |

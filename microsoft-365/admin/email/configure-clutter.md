@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'PowerShell を使用して、組織内のすべてのユーザーまたは特定のユーザーに対してクラッター機能を有効または無効Exchangeします。 '
-ms.openlocfilehash: 059fb8e626a0b05e0224fc89931453aaae43be0b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 91098047bdf2ab8190283990bdc6b0292e3e57ba
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706115"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393981"
 ---
 # <a name="configure-clutter-for-your-organization"></a>組織での低優先メールの構成
 
@@ -60,7 +62,7 @@ PowerShell を使用してユーザーを一括作成する場合、各ユーザ
 
 管理者は、PowerShell を使用してクラッターをExchangeできます。 この操作が行われると、優先受信トレイは無効になり、低優先メールが再び有効になります。 
   
- **サブスクリプションを使用して web Outlookを使用している場合はMicrosoft 365 Business Premiumします。**
+ **サブスクリプションと一緒にOutlook on the webする場合Microsoft 365 Business Premium:**
   
 - ユーザーの低優先メールが現在有効になっている場合: 
     

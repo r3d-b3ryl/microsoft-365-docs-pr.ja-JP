@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: この記事の手順に従って、別の従業員に元従業員のデータとOneDriveアクセスOutlookします。
-ms.openlocfilehash: abcad87498f6670fe7fe2f5457321f1b3f6e0930
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b5868ab1622fea68cc3dabb54a3d06208ccaa165
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730200"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394305"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする
 
@@ -177,7 +178,7 @@ Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファ�
 
 8. アイテムのインポートに関するオプションを設定します。通常、既定の設定を変更する必要はありません。
 
-9. [**完了**] を選択します。
+9. **[完了]** を選択します。
 
 > [!NOTE]
 > 既存のユーザーのデータと電子メール データにアクセスする場合OneDrive手順は変わりません。

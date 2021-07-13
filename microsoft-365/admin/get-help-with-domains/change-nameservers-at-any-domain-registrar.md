@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 電子メールやオンラインのようなサービスが独自のドメインMicrosoft 365使用するために、Skype for Businessドメインを追加して設定する方法について説明します。
-ms.openlocfilehash: 1a65ca52b85c2cf2e4fc30e2a71e5930ae7a9a4d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c2de2d8b75aaf50bd1d19d3fd3b507fd476d4847
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287127"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393933"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>ネームサーバーを変更して、ドメイン レジストラー Microsoft 365をセットアップする
 
@@ -70,7 +71,7 @@ TXT レコードと MX レコードのどちらを作成しているかに応じ
 
 ****
 
-|レコードの種類|エイリアスまたはホスト名|Value|TTL|
+|レコードの種類|エイリアスまたはホスト名|値|TTL|
 |---|---|---|---|
 |TXT|次のいずれかを実行します。「 **@** 」と入力するか、フィールドを空白のままにするか、ドメイン名を入力します。    <p> **注**: DNS ホストによって、このフィールドの要件が異なります。|MS=ms *XXXXXXXX* <p> **注:** これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。|
 |||||
@@ -81,7 +82,7 @@ TXT レコードと MX レコードのどちらを作成しているかに応じ
 
 ****
 
-|レコードの種類|エイリアスまたはホスト名|Value|Priority|TTL|
+|レコードの種類|エイリアスまたはホスト名|値|Priority|TTL|
 |---|---|---|---|---|
 |MX|**@** か自分のドメインの名前のいずれかを入力します。 |MS=ms *XXXXXXXX* **注:** これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|**Priority** には、メール フローに使われる MX レコードとの競合を避けるために、既存の MX レコードよりも低い優先度を指定します。 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.yml)」を参照してください。|この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。|
 ||||||

@@ -19,15 +19,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: MET150
 description: サブスクリプションにファイル ストレージをMicrosoft 365します。 追加のファイル ストレージを使用すると、オンラインおよびサーバーにSharePointコンテンツをOneDrive。
 ms.date: 04/02/2021
-ms.openlocfilehash: dee7debfbd2b624f3bf82bd573c81e7e1373b31e
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 28716c9506f31fd32f821cfff90bd8eaa19e6495
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256821"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394655"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>サブスクリプションに容量を追加する
 

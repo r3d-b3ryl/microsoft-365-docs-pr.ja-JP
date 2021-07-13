@@ -17,15 +17,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: ビジネス向け請求通知の受信に使用する請求先住所または電子メール アドレスを更新Microsoft 365します。
 ms.date: 04/07/2021
-ms.openlocfilehash: afc23134f85995a5e8d7db0fb956635ceb6ea629
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 383e8febffa2a65e01c1ae0c543d7b984a96eb26
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683609"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394643"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 

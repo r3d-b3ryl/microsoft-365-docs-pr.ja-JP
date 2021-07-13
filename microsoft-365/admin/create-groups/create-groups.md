@@ -16,25 +16,26 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループの作成と削除、Microsoft 365メンバーの追加と削除、グループの動作のカスタマイズについて説明します。
-ms.openlocfilehash: b8cbd194825ef114fa8e4ce999355248a61e7830
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 1afa8d38d05ca0383f56cdba795f26739457347c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635584"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393753"
 ---
-# <a name="create-a-group-in-the-microsoft-365-admin-center"></a>管理センターでグループMicrosoft 365する
+# <a name="create-a-group-in-the-microsoft-365-admin-center"></a>グループを作成するMicrosoft 365 管理センター
   
-ユーザーは Outlook または他のアプリから Microsoft 365 グループを作成することができますが、管理者として、グループの作成または削除、メンバーの追加または削除、および動作のカスタマイズが必要な場合があります。 管理Microsoft 365は、これを行う場所です。 
+ユーザーは Outlook または他のアプリから Microsoft 365 グループを作成することができますが、管理者として、グループの作成または削除、メンバーの追加または削除、および動作のカスタマイズが必要な場合があります。 このMicrosoft 365 管理センターは、これを行う場所です。 
 
 > [!TIP]
-> Microsoft 365接続Yammerグループは Yammer で作成する必要がありますが、他のグループと同様に Microsoft 365 管理センターでMicrosoft 365できます。 詳細については、「グループとグループ[Yammer」をMicrosoft 365してください](/yammer/manage-yammer-groups/yammer-and-office-365-groups)。 
+> Microsoft 365接続Yammerグループは、Yammer で作成する必要がありますが、他のグループと同様に、Microsoft 365 管理センターでMicrosoft 365できます。 詳細については、「グループとグループ[Yammer」をMicrosoft 365してください](/yammer/manage-yammer-groups/yammer-and-office-365-groups)。 
 
 ## <a name="create-a-microsoft-365-group"></a>Microsoft 365 グループを作成する
 
@@ -76,7 +77,7 @@ ms.locfileid: "52635584"
 
 グループの所有者は、最初の作成者であるかどうかに関係なく、グループの受信トレイから任意のメールを削除することができます。
   
-メンバーは、グループ受信トレイから電子メールの会話を開始した場合に削除し、web 上の Outlook のみを使用できます (メールを右クリックし、[削除] を選択 **します**)。 Outlook アプリ (Outlook 2016) から削除することはできません。
+メンバーは、グループ受信トレイから電子メール会話を開始した場合に削除し、Outlook on the web のみを使用できます (電子メールを右クリックし、[削除] を選択 **します**)。 Outlook アプリ (Outlook 2016) から削除することはできません。
   
 グループ メールボックスからメールが削除された場合、そのメールはグループ メンバーの個人用メールボックスから削除されません。
 

@@ -19,13 +19,14 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 5c472615846ba6460bc829bc0157c6c6da940292
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 9429a4fc5adc3447a0238a3e8aa84ab39585fc50
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332020"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394523"
 ---
 # <a name="tax-information"></a>税金情報
 
@@ -136,7 +137,7 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 ## <a name="add-your-vat-id"></a>VAT ID を追加する
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 2. **[製品]** タブで、更新するサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの [サービス利用状況アドレス **] セクションで** 、[サービス使用状況アドレスの **編集] を選択します**。
 4. [サービス利用状況 **アドレスの編集** ] ウィンドウの **[VAT** 番号] ボックスに、プレフィックスを含む VAT ID を入力し、スペースを使用せずに入力します。
@@ -146,7 +147,7 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 売上税は単価に対して計算され、集計されます。
 
-例:
+次に例を示します。
 
 >*(単価 X 税率)X 数量 = 売上税の合計*
 

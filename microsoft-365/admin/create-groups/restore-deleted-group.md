@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 削除されたグループは 30 日間保持され、グループを復元できます。 30 日後、グループとそのコンテンツは完全に削除されます。
-ms.openlocfilehash: 2c20c2bd3ce91331e7160132047dbf3ecd79c4b8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ddc3da57c05b7c5f54c10a0cc429c9a3f24b859c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635740"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394053"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>削除された Microsoft 365 グループを復元する
 
@@ -56,7 +58,7 @@ ms.locfileid: "52635740"
 
 # <a name="outlook"></a>[Outlook](#tab/outlook)
 
-ユーザーがグループグループの所有者Microsoft 365、次の手順に従って、Outlookでグループを復元できます。
+グループの所有者である場合は、Microsoft 365手順に従って、Outlook on the webを復元できます。
 
 1. [削除された [グループ] ページで、[](https://outlook.office.com/people/group/deleted)グループ] ノードの **[** グループの管理] オプションを選択し、[削除済み]**を選択します**。
 
@@ -66,7 +68,7 @@ ms.locfileid: "52635740"
 
 # <a name="admin-center"></a>[管理センター](#tab/admin-center)
 
-グローバル管理者またはグループ管理者の場合は、管理センターで削除されたグループMicrosoft 365できます。
+グローバル管理者またはグループ管理者の場合は、次の操作を実行して削除したグループを復元Microsoft 365 管理センター。
 
 1. [管理センター](https://admin.microsoft.com)にアクセスします。
 2. [グループ **] を展開** し、[削除済 **みグループ] をクリックします**。

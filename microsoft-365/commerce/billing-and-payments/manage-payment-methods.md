@@ -18,15 +18,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Microsoft 365 管理センターでは、既存の支払方法を使用したり、新しい支払方法を追加したりして、Microsoft からビジネス製品やサービスを購入できます。
 ms.date: 04/02/2021
-ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e944547e69ea8774690852d1b3123578d40bd3c0
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537321"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394619"
 ---
 # <a name="manage-payment-methods"></a>支払方法を管理する
 

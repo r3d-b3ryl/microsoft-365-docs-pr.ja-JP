@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: グループMicrosoft 365グループを使用すると、グループのユーザーに共有リソースのコレクションへのアクセス権を与えることによって、Microsoft 365全体のチームワークを促進できます。
-ms.openlocfilehash: 69f7e47bcfb9e0704f8c373cf1addf98ef898cfa
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 612884306b0b999de48f7168981d9c006335f0aa
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782395"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393741"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -53,7 +54,7 @@ Microsoft 365グループは、グループ全体のすべてのチームワー�
 - **メンバー** - メンバーはグループ内のすべてのデータにアクセスできますが、グループの設定は変更できません。 既定では、グループ メンバーはゲストを招待してグループに参加させることができますが、[その設定は制御](manage-guest-access-in-groups.md)できます。
 - **ゲスト** - グループ ゲストは、組織外のメンバーです。
 
-管理者センターでグループを作成および管理できるのは、グローバル管理者、ユーザー管理者、およびグループMicrosoft 365のみです。 代理管理者 (たとえば、代理の管理者であるコンサルタント) になることはできません。
+グローバル管理者、ユーザー管理者、およびグループ管理者だけが、グループを作成および管理Microsoft 365 管理センター。 代理管理者 (たとえば、代理の管理者であるコンサルタント) になることはできません。
 
 管理者は次のことが可能です。
 
@@ -85,7 +86,7 @@ Microsoft 365 グループのライフサイクルを管理するより自動化
 
 組織が持Microsoft 365グループの既定の最大数は 500,000 です。 既定の制限を超える場合は、Microsoft サポートにお問い合わせください。 グループの制限の詳細については、「Microsoft 365グループ - 管理者[Microsoft 365」を参照してください](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
-グループの使用状況にMicrosoft 365情報がある場合は、グループグループの管理が効果的です。 管理Microsoft 365には、ストレージの使用、アクティブなグループの数、およびユーザーがグループを使用している方法を確認できるレポート ツールがあります。 詳細については[、「Microsoft 365レポート」を](../activity-reports/office-365-groups.md)参照してください。
+グループの使用状況にMicrosoft 365情報がある場合は、グループグループの管理が効果的です。 このMicrosoft 365 管理センターには、ストレージの使用、アクティブなグループの数、およびユーザーがグループを使用している方法を確認できるレポート ツールがあります。 詳細については[、「Microsoft 365レポート」を](../activity-reports/office-365-groups.md)参照してください。
 
 ## <a name="sensitivity-labels"></a>秘密度ラベル
 
@@ -114,7 +115,7 @@ Exchange 専用プランがある場合でも、Outlook のグループの共有
 Microsoft 365グループは、グループをAzure Active Directory。 取得するグループ機能は、Azure Active Directoryサブスクリプション、およびグループの開催者に割り当てられているライセンスによって異なります。
 
 > [!IMPORTANT]
-> すべてのグループ機能について、Azure AD プレミアム サブスクリプションがある場合、ユーザーは AAD P1 ライセンスが割り当てられているかどうかに関してグループに参加できます。 ライセンスは適用されません。
+> すべてのグループ機能について、Azure AD Premium サブスクリプションがある場合、ユーザーは AAD P1 ライセンスが割り当てられているかどうかに関してグループに参加できます。 ライセンスは適用されません。
 > Microsoft では、定期的に利用状況レポートを生成し、ライセンスのないユーザーと、ライセンス要件に準拠するためにそのユーザーにライセンスを割り当てる必要があることをお知らせします。 たとえば、ユーザーがライセンスを持っておらず、名前付けポリシーが適用されているグループに追加されるとします。 この場合、そのユーザーにライセンスが必要であることを示すフラグがレポートで設定されます。
 
 ## <a name="related-content"></a>関連コンテンツ

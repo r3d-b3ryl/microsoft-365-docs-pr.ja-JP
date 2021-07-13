@@ -1,5 +1,5 @@
 ---
-title: 管理者の役割を管理センター Microsoft 365割り当てる
+title: 管理者ロールに管理者ロールを割り当Microsoft 365 管理センター
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理センターで特定のタスクを実行できるよう、管理者の役割をビジネス内のユーザーまたは複数のユーザーに割り当てる方法について説明します。
-ms.openlocfilehash: e53d1a414d081ddb74a1c4784adcd982b6194691
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 575d1d8c6b0ffce40877fb41d28df82c24e84d04
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683213"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393777"
 ---
 # <a name="assign-admin-roles"></a>管理者ロールを割り当てる
 

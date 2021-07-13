@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 description: Microsoft 365 Business Standard を購入するときに、所有するドメインを使用するか、サインアップ時に購入するかを選択することができます。
-ms.openlocfilehash: 188f6c396cfb3a4448306070da0fd75dd11a46b3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 861a9e38f10f0cd654e2b10c1879811cd668bc1f
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227729"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393813"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Microsoft Business Standard をセットアップする
 

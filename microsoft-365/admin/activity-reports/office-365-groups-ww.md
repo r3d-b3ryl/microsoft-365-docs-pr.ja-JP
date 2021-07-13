@@ -11,7 +11,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -19,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Microsoft 365 のグループ レポートで、グループとそのアクティビティについて確認します。
-ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: ed598633205aab83920abef79e766ef16e248f43
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939232"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394137"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターでの Microsoft 365 レポート - Microsoft 365 グループ
 
@@ -46,11 +48,11 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
 
-|アイテム|説明|
+|項目|説明|
 |:-----|:-----|
 |**測定基準**|**定義**|
 |グループ名  <br/> |グループの名前を指定します。  <br/> |
-|削除済み  <br/> |削除されたグループの数。 削除されたがレポート期間中にアクティビティがあるグループは、グリッドでこのフラグが true に設定されることで示されます。  <br/> |
+|Deleted  <br/> |削除されたグループの数。 削除されたがレポート期間中にアクティビティがあるグループは、グリッドでこのフラグが true に設定されることで示されます。  <br/> |
 |グループ所有者  <br/> |グループ所有者の名前。  <br/> |
 |最終アクティビティ日 (UTC)  <br/> |グループがメッセージを受信した最新の日付。 これはメールの会話、Yammer またはサイトでアクティビティが発生した最後の日付です。  <br/> |
 |型  <br/> |グループの種類。 これにはプライベート グループとパブリック グループがあります。  <br/> |
@@ -63,11 +65,13 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 |[メッセージ] Yammer (投稿)  <br/> |レポート期間中に、Yammerグループに投稿されたメッセージの数。  <br/> |
 |[メッセージ] Yammer (読み取り)  <br/> |レポート期間中にグループで読み取Yammer会話の数。  <br/> |
 |[メッセージ] Yammer (お気に入り)  <br/> |レポート期間中に、Yammerグループで気に入ったメッセージの数。  <br/> |
-|Members  <br/> |グループ内のメンバーの数。  <br/> |
+|メンバー  <br/> |グループ内のメンバーの数。  <br/> |
 |外部メンバー |グループ内の外部ユーザーの数。|
 |||
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 センター](activity-reports.md)のレポート (記事) セキュリティ[& コンプライアンス](../../compliance/reports-in-security-and-compliance.md)センターのレポート (記事) Microsoft 365 管理センターのレポート[- アクティブ](../../admin/activity-reports/active-users-ww.md)ユーザー (記事)
+[Microsoft 365管理センターのレポート](activity-reports.md)(記事)\
+[セキュリティ コンプライアンス センター&レポート](../../compliance/reports-in-security-and-compliance.md) (記事)\
+[Microsoft 365管理センターの [レポート] - アクティブ ユーザー](../../admin/activity-reports/active-users-ww.md) (記事)
 

@@ -13,25 +13,27 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'プライベート メールボックスを、1 人ではなく複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: 0beb85e5a69b72bcd244cd654c399e91ded06ba7
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: caf3935b1ffb36989b2884c6811111531a061098
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635476"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393969"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
 ユーザーのメールボックスを共有メールボックスに変換した場合、すべての既存のメールと予定表は保持されます。現在は、1 人のユーザーのみではなく何人かのユーザーがアクセスできる共有メールボックスにそれらが入っています。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 **知っておく必要がある重要な点事項を次に示します**
 
@@ -106,6 +108,6 @@ ms.locfileid: "52635476"
 
 [共有メールボックスについて](about-shared-mailboxes.md) (記事)\
 [共有メールボックスの作成](create-a-shared-mailbox.md) (記事)\
-[共有メールボックスの構成](configure-a-shared-mailbox.md) (記事)\
-[共有メールボックスからライセンスを削除](remove-license-from-shared-mailbox.md) する (記事)\
+[共有メールボックスを構成する](configure-a-shared-mailbox.md) (記事)\
+[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md) (記事)\
 [共有メールボックスに関する問題を解決する](resolve-issues-with-shared-mailboxes.md) (記事)

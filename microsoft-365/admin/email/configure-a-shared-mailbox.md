@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 共有メールボックスを作成し、電子メール転送や自動返信など、ユーザーの設定を構成します。
-ms.openlocfilehash: c1d8007a2fcc45fbdd1a6943ee464e5aae8917b9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e69d1bbde5784339f3973bf456eca1ded72840af
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635512"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393993"
 ---
 # <a name="configure-shared-mailbox-settings"></a>共有メールボックスの設定を構成する
 
@@ -146,6 +147,6 @@ ms.locfileid: "52635512"
 
 [共有メールボックスについて](about-shared-mailboxes.md) (記事)\
 [共有メールボックスの作成](create-a-shared-mailbox.md) (記事)\
-[ユーザー メールボックスを共有メールボックスに変換](convert-user-mailbox-to-shared-mailbox.md) する (記事)\
-[共有メールボックスからライセンスを削除](remove-license-from-shared-mailbox.md) する (記事)\
+[ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md) (記事)\
+[共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md) (記事)\
 [共有メールボックスに関する問題を解決する](resolve-issues-with-shared-mailboxes.md) (記事)

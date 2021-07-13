@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd506caa041af2585778fb3ecd7a40562463b17e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: b55572509e9837f2858f96b01a13fbf259b2b770
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346416"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393789"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント向け Microsoft Defender の除外を構成および検証する
 
@@ -54,8 +54,8 @@ ms.locfileid: "52346416"
 除外 | 定義 | 例
 ---|---|---
 ファイル拡張子 | 拡張子が付いたすべてのファイル(デバイス上の任意の場所) | `.test`
-File | 完全パスで識別される特定のファイル | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Folder | 指定したフォルダーの下のすべてのファイル (再帰的) | `/var/log/`<br/>`/var/*/`
+ファイル | 完全パスで識別される特定のファイル | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+フォルダー | 指定したフォルダーの下のすべてのファイル (再帰的) | `/var/log/`<br/>`/var/*/`
 プロセス | 特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
@@ -114,6 +114,18 @@ mdatp exclusion
     Folder exclusion configured successfully
     ```
 
+
+- 2 番目のフォルダーの除外を追加します。
+
+    ```bash
+    mdatp exclusion folder add --path /var/log/
+    mdatp exclusion folder add --path /other/folder
+    ```
+    ```Output
+    Folder exclusion configured successfully
+    ```
+
+
 - ワイルドカードが含まれているフォルダーの除外を追加します。
 
     ```bash
@@ -137,6 +149,17 @@ mdatp exclusion
 
     ```bash
     mdatp exclusion process add --name cat
+    ```
+    ```Output    
+    Process exclusion configured successfully
+    ```
+
+
+- 2 番目のプロセスの除外を追加します。
+
+    ```bash
+    mdatp exclusion process add --name cat
+    mdatp exclusion process add --name dog
     ```
     ```Output    
     Process exclusion configured successfully

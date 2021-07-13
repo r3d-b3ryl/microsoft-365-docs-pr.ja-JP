@@ -17,15 +17,16 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: Microsoft 365 for Business のほとんどのサブスクリプションを更新し、継続請求をオンまたはオフにする方法について説明します。
 ms.date: 05/04/2021
-ms.openlocfilehash: 43dd467d83375f74c7650262c40021ba631e3c72
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ee39c45529c4dbfa54ff0a12fcfe19d29bdef025
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594039"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394377"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
 
@@ -64,7 +65,7 @@ ms.locfileid: "52594039"
 ::: moniker-end
 
 2. 継続請求を管理するサブスクリプションを選択します。
-3. サブスクリプションの詳細情報ページの **[サブスクリプションと支払い設定]** の下で、**[継続請求の編集]** を選択します。
+3. サブスクリプションの詳細情報ページの **[Subscription and payment settings]** (サブスクリプションと支払い設定) の下で、**[Edit recurring billing]** (継続請求の編集) を選択します。
 4. **[継続請求の設定の編集]**  ウィンドウで、**[オン]**、**[オン、ただし一度更新]**、または **[オフにする]** を選択します。
 5. **[保存]** を選択します。
 

@@ -18,15 +18,16 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: '[製品] ページに移動して、組織が持つサブスクリプションを確認する方法について学習します。'
 ms.date: 01/21/2021
-ms.openlocfilehash: b0f5f11f34ec4cf84648709ae5557bc5f637a55f
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: bb11ab4fc8933e2e199998992f0c12ea8de0d23a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706300"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394221"
 ---
 # <a name="what-subscription-do-i-have"></a>取得しているサブスクリプションが不明な場合
 
@@ -41,7 +42,7 @@ ms.locfileid: "52706300"
 
 ## <a name="related-content"></a>関連コンテンツ
   
-[サブスクリプションと課金](../../commerce/index.yml) (リンク)\
+[サブスクリプションと課金](../../commerce/index.yml) (リンク ページ)\
 [課金内容または請求書を表示する](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\
 [サブスクリプションの支払](../../commerce/billing-and-payments/pay-for-your-subscription.md) い (記事)\
 [請求先住所の変更](../../commerce/billing-and-payments/change-your-billing-addresses.md) (記事)

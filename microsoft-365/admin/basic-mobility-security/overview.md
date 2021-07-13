@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: 基本モビリティとセキュリティを使用して、デバイス のセキュリティ ポリシーとアクセス ルールを設定します。
-ms.openlocfilehash: 37be420a4b9499da3d1290b8b6a898b9fcb09c5b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 1d1376ec39f7249dfffb94c666b2fdcfa07641a0
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706312"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394077"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>基本モビリティとセキュリティの概要 (Microsoft 365
 

@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: ゲストをグループに追加し、Microsoft 365ユーザーを表示し、PowerShell を使用してゲスト アクセスを制御する方法について説明します。
-ms.openlocfilehash: 00a6353f02ae7f3675961c3ee2ee31e3715652f2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 41a42a0b4fc76b71892f758519db56f4c1adc897
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635764"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394065"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>グループ内のゲスト アクセスMicrosoft 365する
 
@@ -70,6 +72,6 @@ ms.locfileid: "52635764"
 ## <a name="related-content"></a>関連コンテンツ
 
 [特定のグループからのゲスト ユーザーのブロック](../../solutions/per-group-guest-access.md) (記事)\
-[管理センターでグループ メンバーシップMicrosoft 365管理](add-or-remove-members-from-groups.md)する (記事)\
+[グループ メンバーシップを管理するには、Microsoft 365 管理センター](add-or-remove-members-from-groups.md) (記事)\
 [Azure Active Directoryアクセス レビュー](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (記事)\
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (記事)

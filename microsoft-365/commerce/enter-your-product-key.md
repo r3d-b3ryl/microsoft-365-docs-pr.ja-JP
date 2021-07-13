@@ -19,14 +19,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 description: 小売店からMicrosoft 365 Business Standard購入した場合は、プロダクト キーを引き換え、サブスクリプションをアクティブ化する方法について学習します。
 ms.date: 11/13/2020
-ms.openlocfilehash: e075a9d06b45f823540a3a99a1943caa9d116954
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c3807a6e4ce5a49b1552fee7320c03c6b329a8c6
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636124"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394451"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクト キーを入力する
 

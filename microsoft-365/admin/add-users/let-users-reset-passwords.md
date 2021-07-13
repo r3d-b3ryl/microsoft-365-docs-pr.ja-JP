@@ -19,30 +19,31 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービス のパスワードリセット ツールを使用して、ユーザーが自分のパスワードをリセットできるポリシーを設定する方法について学習します。
-ms.openlocfilehash: 81fbe1949b8d5e4a601411703d86165f95cc7b7f
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ac6d7f16cb35cec757340a94c262c3541bea927a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634270"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394317"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
 管理者Microsoft 365、ユーザーがセルフサービス のパスワードリセット ツールを使用[](https://go.microsoft.com/fwlink/p/?LinkId=522677)して、パスワードをリセットする必要がなさそう。 仕事が少ない!
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
   
 - クラウド ユーザーのセルフサービス パスワード リセットは、ビジネス、教育、または非営利の有料プランMicrosoft 365無料で取得できます。 この機能は、試用版ではMicrosoft 365しません。
 
 - この操作には Azure を使用します。これらの手順を行うときに、自動的に **無料** で Azure にあるこの機能を取得できます。その他の Azure 機能を使用しない場合は、セルフサービスによるパスワード リセットをオンにするために費用はかかりません。
 
-- **オンプレミスの Active Directory を使用** している場合、上記の 2 つの点は適用されません。 むしろ、これを設定できますが **、Azure** サービスへの有料サブスクリプションが必要AD プレミアム。
+- **オンプレミスの Active Directory を使用** している場合、上記の 2 つの点は適用されません。 むしろ、これを設定できますが、この設定には有料サブスクリプションが **必要** Azure AD Premium。
 
 この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../../business-video/admin-center-overview.md)
 
@@ -75,5 +76,5 @@ ms.locfileid: "52634270"
 ## <a name="related-content"></a>関連コンテンツ
 
 [組織のパスワード有効期限ポリシーを設定する](../manage/set-password-expiration-policy.md) (記事)\
-[個々のユーザーのパスワードを有効期限が切れることはありません](set-password-to-never-expire.md) (記事)\
-[Microsoft 365 Businessトレーニング ビデオ](../../business-video/index.yml)(リンク ページ)
+[個別のユーザーのパスワードを無期限に設定する](set-password-to-never-expire.md) (記事)\
+[Microsoft 365 ビジネス トレーニング ビデオ](../../business-video/index.yml)(リンク ページ)

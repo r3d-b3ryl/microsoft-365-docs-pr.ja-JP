@@ -17,21 +17,22 @@ ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
+- AdminTemplateSet
 search.appverid: MET150
 description: Microsoft でアカウントを閉じると、アカウントに関連する情報 (ライセンス、ユーザー、ユーザー データなど) が削除されます。
 ms.date: 04/02/2021
-ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f46a35ca9a8b4ca0a68a3260f1a79bbf3717b552
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624327"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394463"
 ---
 # <a name="close-your-account"></a>アカウントの使用を停止する
 
 Microsoft でのアカウントの使用を停止すると、アカウントに関連するすべての情報が削除されます。 この情報には、サブスクリプション、ライセンス、支払方法、ユーザー、ユーザー データが含まれます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 このプロセスを開始する前に、保持する必要があるすべてのデータをバックアップしてください。
 

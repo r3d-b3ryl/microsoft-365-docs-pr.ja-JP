@@ -1,5 +1,5 @@
 ---
-title: 課金アカウントについて
+title: 請求アカウントを理解する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,21 +16,22 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: 課金アカウントと、アカウント設定、請求書、支払い方法、および購入の管理に使用される方法について説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 1eb01ace2fe8b84b813793168cb50db2508b4ebb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7b19c30a8a11a816d5cd8906cdb96da36688573c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535640"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394401"
 ---
-# <a name="understand-billing-accounts"></a>課金アカウントについて
+# <a name="understand-billing-accounts"></a>請求アカウントを理解する
 
 Microsoft 製品を試用または購入するためにサインアップすると、課金アカウントが作成されます。 課金アカウントを使用して、アカウント設定、請求書、支払い方法、購入を管理します。 複数の請求アカウントにアクセスできます。 たとえば、Microsoft 365 に直接サインアップした場合、または組織の Enterprise Agreement、Microsoft 製品 & サービス契約、または Microsoft カスタマー 契約にアクセスできます。 これらのシナリオごとに、個別の請求アカウントを持つ必要があります。
 
-現在Microsoft 365管理センターは、次の種類の請求アカウントをサポートしています。
+現在、Microsoft 365 管理センターは、次の種類の請求アカウントをサポートしています。
 
 - Microsoft Online Servicesプログラム: この課金アカウントは、サブスクリプションに直接サインアップするときにMicrosoft 365されます。
 - Microsoft Products & サービス契約 (MPSA) プログラム: この請求アカウントは、組織がソフトウェアおよびオンライン サービスを購入するために MPSA ボリューム ライセンス契約に署名するときに作成されます。
@@ -67,14 +68,14 @@ Microsoft 製品を試用または購入するためにサインアップする�
 
 ## <a name="understand-access-to-billing-accounts"></a>課金アカウントへのアクセスを理解する
 
-他のユーザーに、役割とアクセス許可を通じて、Microsoft 365アカウントへのアクセス権を提供できます。 課金アカウントへのアクセスを許可できるのは、請求アカウントの所有者のみです。 次のいずれかの役割をユーザーに割り当てることができます。
+他のユーザーには、ロールとアクセス許可を使用して、Microsoft 365 管理センターアカウントへのアクセス権を提供できます。 課金アカウントへのアクセスを許可できるのは、請求アカウントの所有者のみです。 次のいずれかの役割をユーザーに割り当てることができます。
 
 - **課金アカウントの所有者** &mdash; アクセス許可の割り当て、アカウントの編集、契約の署名、アカウントの表示を行えます。
 - **課金アカウントの投稿者** &mdash; アカウントの編集、契約への署名、アカウントの表示を行えます。
 - **課金アカウント リーダー** &mdash; アカウントを表示できます。
 
 > [!Note]
-> 課金アカウントの役割は課金アカウントにのみ適用され、管理センターの他のシナリオMicrosoft 365適用されません。
+> 課金アカウントの役割は課金アカウントにのみ適用され、他の課金シナリオにはMicrosoft 365 管理センターされません。
 
 ## <a name="related-content"></a>関連コンテンツ
 

@@ -17,18 +17,19 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Microsoft 365 のグローバル管理者が、ユーザー名が変更されるときにユーザーのメール アドレスと表示名を変更する方法について説明します。 '
-ms.openlocfilehash: 3215044f94d3b4e77860434ab28eed8a36754f12
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 29e2e57327550de13359106e7ba820204598f691
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341022"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394365"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
@@ -52,13 +53,13 @@ ms.locfileid: "53341022"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
@@ -81,7 +82,7 @@ ms.locfileid: "53341022"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
@@ -124,7 +125,7 @@ ms.locfileid: "53341022"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
