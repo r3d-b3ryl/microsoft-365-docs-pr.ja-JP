@@ -15,7 +15,7 @@
 - name: ベースラインを使用して顧客を保護する
   items:
     - name: 基準計画を使用した標準テナント構成の展開の概要
-      href: m365-lighthouse-deploying-standard-tenant-configurations-overview.md
+      href: m365-lighthouse-deploy-standard-tenant-configurations-overview.md
     - name: ベースラインの展開
       href: m365-lighthouse-deploy-baselines.md
 - name: テナントの管理
