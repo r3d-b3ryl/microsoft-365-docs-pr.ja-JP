@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、Microsoft 365 Lighthouseテナントを 1 つの場所でセキュリティで保護および管理する方法について説明します。
-ms.openlocfilehash: a8af12e2fecade0b78f95f1d38bda34f7934ccd6
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: af03495f7bf47fe3c72ebb7487b8709d2e2b0736
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395356"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409034"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>概要 Microsoft 365 Lighthouse
 

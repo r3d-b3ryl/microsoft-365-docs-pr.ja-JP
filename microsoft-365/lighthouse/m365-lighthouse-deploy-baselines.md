@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseベースラインを展開する方法Microsoft 365 Lighthouseします。
-ms.openlocfilehash: 0bda7edec2a200e51e734db64e2b703a027e57bb
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f329993443b4bd3003a3e8460d77f9b73ac10fc6
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395367"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409106"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>ベースラインMicrosoft 365 Lighthouse展開する 
 
@@ -61,5 +61,5 @@ Microsoft 365 Lighthouse基準を使用すると、テナント ユーザー、�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[基準計画を使用して標準テナント構成を](m365-lighthouse-deploying-standard-tenant-configurations-overview.md) 展開する概要 (記事)\
+[基準計画を使用して標準テナント構成を](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) 展開する概要 (記事)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (記事)
