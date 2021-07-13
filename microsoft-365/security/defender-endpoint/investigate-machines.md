@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c89de5fbf5d5b4d5d5e53074109bc8884a271eea
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843580"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394895"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストのデバイスを調査する
 
@@ -58,6 +58,10 @@ ms.locfileid: "52843580"
 - カード (アクティブなアラート、ログオンしているユーザー、セキュリティ評価)
 
 ![デバイス ビューのイメージ](images/specific-device.png)
+
+> [!NOTE]
+> 製品の制約により、デバイス プロファイルは 、(デバイス ページにも見られる) 'Last Seen' 時間枠を決定する際に、すべてのサイバー証拠を考慮する必要があります。
+> たとえば、[デバイス] ページの [最後に見た] 値は、コンピューターのタイムラインで最新のアラートやデータを使用できる場合でも、古い時間枠を表示する場合があります。
 
 ## <a name="device-details"></a>デバイスの詳細
 
@@ -184,6 +188,8 @@ Microsoft Defender for Identity 機能を有効にし、アクティブなアラ
 [ **ログオンユーザー] カード** には、過去 30 日間にログオンしたユーザーの数と、最も頻度の少ないユーザーが表示されます。 [すべてのユーザーを表示する] リンクを選択すると、詳細ウィンドウが開き、ユーザーの種類、ログオンの種類、ユーザーが最初と最後に表示された時間などの情報が表示されます。 詳細については、「ユーザー エンティティの [調査」を参照してください](investigate-user.md)。
 
 ![ユーザーの詳細ウィンドウのイメージ](images/logged-on-users.png)
+> [!NOTE]
+> 「最も頻繁に」ユーザー値は、対話的に正常にログオンしたユーザーの証拠にのみ基づいて計算されます。 ただし、[すべてのユーザー] サイド ウィンドウでは、すべての種類のユーザー ログオンが計算されます。そのため、ユーザーが対話型ではない可能性がある場合に、サイド ウィンドウでユーザーが頻繁に表示される可能性があります。
 
 ### <a name="security-assessments"></a>セキュリティ評価
 
@@ -193,7 +199,7 @@ Microsoft Defender for Identity 機能を有効にし、アクティブなアラ
 
 ## <a name="related-topics"></a>関連項目
 
-- [Microsoft Defender for Endpoint Alerts キューの表示と整理](alerts-queue.md)
+- [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
 - [Microsoft Defender for Endpoint アラートの調査](investigate-alerts.md)
 - [Defender for Endpoint アラートに関連付けられたファイルを調査する](investigate-files.md)

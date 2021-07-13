@@ -1,0 +1,76 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft 365 Lighthouseよく寄せられる質問 (FAQ)
+  f1.keywords: NOCSH
+  ms.author: sharik
+  author: SKjerland
+  manager: scotv
+  audience: Admin
+  ms.topic: article
+  ms.prod: microsoft-365-lighthouse
+  localization_priority: Normal
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  ms.custom:
+  - AdminSurgePortfolio
+  - M365-Lighthouse
+  search.appverid: MET150
+  description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse に関するよく寄せられる質問 (FAQ) に対する回答をMicrosoft 365 Lighthouse。
+  ms.openlocfilehash: 05ed433a5f7afb6418cab77c99a401351f3a5565
+  ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "53395266"
+title: Microsoft 365 Lighthouseよく寄せられる質問 (FAQ)
+summary: >
+  > [!NOTE]
+
+  > この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウントが設定されていない場合Microsoft 365 Lighthouse[を参照してください](m365-lighthouse-sign-up.md)Microsoft 365 Lighthouse。
+
+
+  この記事では、ユーザーに関するよく寄せられる質問 (FAQ) に対する回答Microsoft 365 Lighthouse。
+
+
+  質問に対する回答が見つからなかった場合は、コメントを残してお知らせします。この記事に追加します。
+sections:
+- name: 無視
+  questions:
+  - question: データのMicrosoft 365 Lighthouse?
+    answer: >
+      Microsoft 365 Lighthouse は、管理サービス プロバイダー (MSP) が、Microsoft 365 Business Premium を使用している中小企業 (SMB) のお客様向けデバイス、データ、およびユーザーを大規模に保護および管理するのに役立つ管理ポータルです。  Microsoft 365 Lighthouseは、SMB に合わせたセキュリティ構成基準を推奨し、すべての顧客環境でマルチテナント ビューを提供することで、テナントのオンボーディングを簡素化します。 詳細については、「概要」[を参照Microsoft 365 Lighthouse。](m365-lighthouse-overview.md)
+  - question: Azure ライトハウスとMicrosoft 365 Lighthouse違いは何ですか?
+    answer: >
+      Microsoft 365 Lighthouse Azure サービスではなく、Microsoft 365サービスに重点を置く必要があります。 Azure ライトハウスは Azure ポータルに組み込み、IT パートナーが Azure の複数のテナントを管理することができますが、Microsoft 365 Lighthouse は、M Microsoft 365 Business Premium SP が複数の顧客テナントを管理するのに役立つスタンドアロン ポータルです。 詳細については、「Microsoft 365 Lighthouseの[概要」を参照Microsoft 365 Lighthouse。](m365-lighthouse-overview.md) Azure ライトハウスの詳細については、「What is Azure ライトハウス」 [を参照してください。](/azure/lighthouse/overview)
+  - question: コストはMicrosoft 365 Lighthouseですか?
+    answer: >
+      プレビュー バージョンのサービスと接続デバイスを管理するためにプレビュー バージョンMicrosoft 365 Lighthouse追加Microsoft 365 Business Premium関連付けはありません。 Microsoft 365 Lighthouseプレビューで、中小企業にサービスを提供し、顧客と クラウド ソリューション プロバイダー (CSP) の関係を持つ MSP が利用できます。 間接プロバイダーは現在、ユーザーがサポートMicrosoft 365 Lighthouse。 詳細については[、「Requirements for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-requirements.md)。
+  - question: アプリケーションを使用する要件Microsoft 365 Lighthouse?
+    answer: >
+      現在の要件の一覧については、「要件[」を参照Microsoft 365 Lighthouse。](m365-lighthouse-requirements.md)
+  - question: アカウントにサインアップMicrosoft 365 Lighthouse?
+    answer: >
+      アカウントにサインアップするにはMicrosoft 365 Lighthouse CSP プログラムに登録する必要があります。 現在、間接プロバイダーをサポートできません。 サインアップの手順については、「サインアップする」を参照[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md) CSP プログラムの詳細については、「CSP プログラムの概要[」クラウド ソリューション プロバイダー参照してください](/partner-center/csp-overview)。
+  - question: サインアップが完了したのに、顧客テナントのデータが表示されません。
+    answer: >
+      顧客テナント のデータがユーザーのデータ内で読み込むには、最大で 48 時間かかるMicrosoft 365 Lighthouse。 オンボーディングが完了して 48 時間を超える時間が経った場合は、サポート チームにお問い合わせください。 オンボーディングが完了したら、ユーザーに知らせ、関連するスクリーンショットとログを提供する必要があります。 詳細については、「Get [help and support for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-get-help-and-support.md)。
+  - question: 一部の顧客テナントのデータが表示されますが、他のテナントのデータは表示されない理由
+    answer: >
+      顧客テナント のデータを Microsoft 365 Lighthouse に表示するには、パートナーセンターを通じて顧客と代理管理者特権 (DAP) を確立する必要があります。 詳細については、「パートナー センター [で顧客とのリセラー関係を要求する」を参照してください](/partner-center/request-a-relationship-with-a-customer)。 テナントには、少なくとも 1 つのサブスクリプションMicrosoft 365 Business Premium、テナント内のライセンスユーザーが 500 人未満である必要があります。 詳細については[、「Requirements for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-requirements.md)。
+  - question: 特定のテナントを表示しない場合は、Microsoft 365 Lighthouse。
+    answer: >
+      特定のテナントとそのデータを特定のテナントに表示しない場合は、Microsoft 365 Lighthouseを無効にできます。 テナントを非アクティブ化するには、次の手順を実行します。
+
+
+      1. 左側 **のナビゲーション ウィンドウ** から [テナント] を選択して、[テナント] **ページを開** きます。
+
+      1. 非アクティブ化するテナントを検索し、テナント名の横にある 3 つのドットを選択し、[ **テナントの非アクティブ化] を選択します**。
+
+      1. 表示される確認メッセージで、[確認] **を選択して** テナントを無効にします。
+          > [!NOTE]
+          > テナントを非アクティブ化すると、非アクティブ化が完了するまでテナントに対してアクションを実行できません。 非アクティブ化が完了するために最大 48 時間かかる場合があります。
+
+      テナントの詳細については、「テナントリストMicrosoft 365 Lighthouse[概要」を参照してください](m365-lighthouse-tenant-list-overview.md)。
+  - question: 顧客Microsoft 365 Lighthouse他のサブスクリプションがある場合、ユーザーは機能しますかMicrosoft 365 Business Premium。
+    answer: Microsoft 365 Lighthouseユーザーのライセンスが設定されているMicrosoft 365 Business Premiumテナントを管理するのに役立ちます。 Business ライセンスを持プレミアム顧客テナントのMicrosoft 365 Lighthouse機能は制限されます。 たとえば、Intune を含むライセンスがユーザーに不足している場合、そのユーザーのデバイス、デバイスのコンプライアンス状態、および脅威の状態は使用できません。また、Azure AD P1 を含むライセンスがユーザーに不足している場合、そのユーザーのパスワードとサインイン管理は使用できません。 詳細については[、「Requirements for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-requirements.md)。

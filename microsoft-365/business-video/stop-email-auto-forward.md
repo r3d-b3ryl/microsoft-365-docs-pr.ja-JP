@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 独自の情報の盗難を回避するためにメール フロー ルールを作成して、電子メールの自動転送を停止する方法について説明します。
-ms.openlocfilehash: 82e4c80b0edc501889e0fc4dc28f1ec1ad703568
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 23b1afa7a851c0b00fb9fca574ca0bb32057ea42
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706476"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394799"
 ---
 # <a name="stop-email-auto-forward"></a>電子メールの自動転送を停止する
 
@@ -38,7 +39,7 @@ ms.locfileid: "52706476"
 
 ## <a name="try-it"></a>お試しください!
 
-1. 管理センター Microsoft 365 、[メール フロー] Exchangeを選択し、[ルール] タブでプラス記号を選択し、[新しいルールの作成]**を選択します**。 
+1. [ルール] Microsoft 365 管理センター、[メール フロー Exchange]を選択し、[ルール]タブでプラス記号を選択し、[新しいルールの作成]**を選択します**。 
 1. [その **他のオプション] を選択します**。 新しいルールの名前を指定します。
 1. 次に、ドロップダウンを開いて、送信者を選択し、外部内部である場合にこのルール **を適用します**。
 1. [組織内 **] を選択し****、[OK] を選択します**。

@@ -9,18 +9,21 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f9d478412d2a1aac6f3e701aca59fcf74ceacce6
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 709a231f1c3f401ceeee2b3aaf99ff275f107e30
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203210"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409118"
 ---
 # <a name="enable-enterprise-state-roaming"></a>Enterprise State Roaming を有効にする
 
 [Enterprise状態ローミングを使用すると](/azure/active-directory/devices/enterprise-state-roaming-overview)、ユーザーとアプリケーションの設定データをクラウドに安全に同期できます。 つまり、どのデバイスにサインインしても、同Windowsエクスペリエンスが得されます。 たとえば、デバイスの 1 Microsoft マネージド デスクトップを新しいデバイスに置き換える場合、そのデバイスは最後のデバイスとまったく同じように見え、動作します。 Enterprise状態ローミングは、ユーザー用に構成できる Microsoft マネージド デスクトップ サービスのオプション機能であり、ユーザーの一部として含まれているか管理Microsoft マネージド デスクトップ。
 
 状態ローミングEnterprise有効にするには、「デバイスの状態ローミングを有効にする[Enterprise」の手順に従Azure Active Directory。](/azure/active-directory/devices/enterprise-state-roaming-enable)
+
+>[!NOTE]
+>[状態ローミングEnterprise有効にした場合、デバイスのセットアップ中に選択した言語が優先言語リストによって上書きされます。 ユーザーはこれを簡単に修正することができますが、最初は一貫性のないローカライズ エクスペリエンスが発生する可能性があります。 デバイスをEnterpriseする前に、ユーザーに適切な状態ローミングが必要かどうかを判断します。
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
 

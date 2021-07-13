@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1548eda760b7b6b19214cb834d7fc43357dc0357
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: dbd4694a7442b3898d24304dc78fc95c28c9a905
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985494"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394955"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの URL を管理する
 
@@ -40,7 +40,7 @@ ms.locfileid: "52985494"
 
 Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、EOP フィルターの評決に同意しない可能性があります。 たとえば、メッセージが正しい (誤検知) とマークされている場合や、悪いメッセージが許可される場合があります (偽陰性)。
 
-ポータルのテナント許可/ブロックリストMicrosoft 365 Defender、フィルター処理の評決を手動で上書Microsoft 365できます。 テナント許可/ブロック一覧は、メール フロー中およびユーザークリック時に使用されます。 次の種類のオーバーライドを指定できます。
+ポータルのテナント許可/ブロックリストMicrosoft 365 Defender、フィルター処理の評決を手動で上書Microsoft 365できます。 テナント許可/ブロック一覧は、受信メッセージのメール フロー (組織内メッセージには適用されません) およびユーザーのクリック時に使用されます。 次の種類のオーバーライドを指定できます。
 
 - ブロックする URL。
 - ブロックするファイル。
@@ -128,7 +128,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>テナント許可Microsoft 365 Defenderリストでスプーフィングされた送信者エントリを作成またはブロックするには、Microsoft 365 Defender ポータルを使用します。
 
-**注**:
+**注意**:
 
 - スプー _フィング_ されたユーザーと、ドメイン ペアで定義されている送信インフラストラクチャの組み合わせだけが、スプーフィングを許可またはブロックされます。
 - ドメイン ペアの許可エントリまたはブロック エントリを構成すると、そのドメイン ペアからのメッセージはスプーフィング インテリジェンスインサイトに表示されなくなりました。

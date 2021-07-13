@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 835195f0c35ada409ef632b2dbfa1b6de0291351
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339692"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409154"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードでのエンドポイントEDR応答 (EDR)
 
@@ -68,16 +68,16 @@ EDRモードの場合は、脅威の検出[と統合& 脆弱性の管理。](nex
 
 3. ブロック モードで **EDRをオンにします**。
 
-> [!NOTE]
-> EDRモードの場合、このポータルでのみ有効Microsoft 365 Defenderできます。 レジストリ キー、Intune、またはグループ ポリシーを使用して、ブロック モードでEDR無効にすることはできません。
+   > [!NOTE]
+   > EDRモードの場合、このポータルでのみ有効Microsoft 365 Defenderできます。 レジストリ キー、Intune、またはグループ ポリシーを使用して、ブロック モードでEDR無効にすることはできません。
 
 ## <a name="requirements-for-edr-in-block-mode"></a>ブロック モードでのEDRの要件
 
 |要件  |詳細  |
 |---------|---------|
-|アクセス許可 |グローバル管理者またはセキュリティ管理者の役割は、Azure Active Directory で[割り当てられます](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。 「基本 [アクセス許可」を参照してください](basic-permissions.md)。 |
+|権限 |グローバル管理者またはセキュリティ管理者の役割は、Azure Active Directory で[割り当てられます](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。 「基本 [アクセス許可」を参照してください](basic-permissions.md)。 |
 |オペレーティング システム     |次のいずれかのバージョン。 <br/>- Windows 10 (すべてのリリース) <br/>- Windows Server バージョン 1803 以降 <br/>- Windows Server 2019 <br/>- Windows Server 2016 (Microsoft Defender ウイルス対策モードの場合のみ)     |
-|WindowsE5 登録     |WindowsE5 は、次のサブスクリプションに含まれています。 <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3脅威保護サービスと&を組み合わせて使用する <br/><br/>「[各プランの](/microsoft-365/enterprise/microsoft-365-overview#components)[コンポーネントと機能」を参照してください](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。       |
+|WindowsE5 登録     |WindowsE5 は、次のサブスクリプションに含まれています。 <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3アドオンとMicrosoft 365 E5 Security一緒に使用する <br/><br/>「[各プランの](/microsoft-365/enterprise/microsoft-365-overview#components)[コンポーネントと機能」を参照してください](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。       |
 |Microsoft Defender ウイルス対策  |Microsoft Defender ウイルス対策アクティブ モードまたはパッシブ モードでインストールして実行する必要があります。 (Microsoft 以外のウイルスMicrosoft Defender ウイルス対策と一緒に使用できます。[アクティブMicrosoft Defender ウイルス対策パッシブ モードの状態を確認します](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。 |
 |クラウドによる保護 |クラウド配信Microsoft Defender ウイルス対策有効にするように構成[されていることを確認します](enable-cloud-protection-microsoft-defender-antivirus.md)。 |
 |Microsoft Defender ウイルス対策マルウェア対策クライアント |クライアントが最新の情報に更新されていないことを確認します。 PowerShell を使用して [、Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) コマンドレットを管理者として実行します。 **AMProductVersion 行** に **4.18.2001.10 以上** が表示されます。 |

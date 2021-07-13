@@ -18,21 +18,22 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: 管理者は、サブスクリプションの有効期限が切れた場合、無効になっている場合、キャンセルされた場合、またはサブスクリプション期間の途中でキャンセルした場合に、サブスクリプションを再アクティブ化できます。
 ms.date: 04/07/2021
-ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572515"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394919"
 ---
 # <a name="reactivate-your-subscription"></a>サブスクリプションを再度有効にする
 
 サブスクリプションの有効期限が切れている場合、Microsoft が無効にした場合、またはサブスクリプション期間の途中でサブスクリプションをキャンセルした場合は、管理センターでサブスクリプションを再アクティブ化できます。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 サブスクリプションを再アクティブ化するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
@@ -58,7 +59,7 @@ ms.locfileid: "52572515"
 
 ::: moniker-end
 
-2. **[製品]** タブで、再アクティブにするサブスクリプションを見つけます。 3 つのドット (その他のアクション) を選択し、[ **このサブスクリプションを再アクティブ化する]を** 選択します。\
+2. **[製品]** タブで、もう一度有効にするサブスクリプションを見つけます。 3 つのドット (その他のアクション) を選択し、[ **このサブスクリプションを再アクティブ化する]を** 選択します。\
     [このサブスクリプションの再アクティブ化] **が表示しない場合は**、サポート [にお問い合わせください](../../business-video/get-help-support.md)。
 3. **[このサブスクリプションを再アクティブ化する]** ウィンドウで、ドロップダウン リストから支払い方法を選択するか、**[支払い方法を追加する]** を選択します。
 4. **[保存]** を選択します。

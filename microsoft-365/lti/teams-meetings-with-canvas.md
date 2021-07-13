@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teams会議を統合する
-ms.openlocfilehash: 946abaec52cb1c5060d5490b409758cf230a4e5a
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 7e13052cb029fef369f6386c2039785e40acc4ff
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256881"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409094"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Canvas でMicrosoft Teams会議を使用する
 
@@ -78,3 +78,9 @@ Canvas Admin として、環境内に会議 LTI Microsoft Teamsを追加する�
 5. **[インストール]** を選択します。
 
    会議Microsoft Teams LTI アプリが外部アプリの一覧に追加されます。
+   
+## <a name="enable-for-canvas-courses"></a>キャンバス コースを有効にする
+
+コース内で LTI を使用するには、Canvas コースの講師が統合同期を有効にする必要があります。各コースは、作成する対応するTeams教員が有効にする必要があります。作成のグローバルメカニズムTeamsはありません。 これは、不要なデータが作成されるのを防ぐためにTeams設計されています。
+
+各コースで LTI[](https://support.microsoft.com/en-us/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas)を有効にし、統合セットアップを完了するには、教員のドキュメントを参照してください。

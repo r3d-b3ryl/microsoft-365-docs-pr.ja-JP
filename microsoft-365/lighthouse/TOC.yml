@@ -1,0 +1,42 @@
+- name: Microsoft 365 Lighthouse
+  items:
+    - name: 概要 Microsoft 365 Lighthouse
+      href: m365-lighthouse-overview.md
+    - name: ユーザーの要件Microsoft 365 Lighthouse
+      href: m365-lighthouse-requirements.md
+- name: 作業の開始
+  items:
+    - name: サインアップ
+      href: m365-lighthouse-sign-up.md
+- name: セキュリティで保護されたMicrosoft 365 Lighthouse
+  items:
+    - name: ポータル のセキュリティを構成する
+      href: m365-lighthouse-configure-portal-security.md
+- name: ベースラインを使用して顧客を保護する
+  items:
+    - name: 基準計画を使用した標準テナント構成の展開の概要
+      href: m365-lighthouse-deploying-standard-tenant-configurations-overview.md
+    - name: ベースラインの展開
+      href: m365-lighthouse-deploy-baselines.md
+- name: テナントの管理
+  items:
+    - name: テナント リストの概要
+      href: m365-lighthouse-tenant-list-overview.md
+- name: テナント内のユーザーを管理する
+  items:
+    - name: '[ユーザー] ページの概要'
+      href: m365-lighthouse-users-page-overview.md
+- name: デバイスを管理する
+  items:
+    - name: デバイス コンプライアンス ページの概要
+      href: m365-lighthouse-device-compliance-page-overview.md
+- name: 脅威を管理する
+  items:
+    - name: 脅威管理ページの概要
+      href: m365-lighthouse-threat-management-page-overview.md
+- name: ヘルプとサポートを受ける
+  items:
+    - name: ヘルプとサポートを受ける
+      href: m365-lighthouse-get-help-and-support.md
+    - name: よく寄せられる質問 (FAQ)
+      href: m365-lighthouse-faq.yml

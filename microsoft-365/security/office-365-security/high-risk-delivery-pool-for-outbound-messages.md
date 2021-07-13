@@ -17,12 +17,12 @@ ms.collection:
 description: 配信プールを使用して、データ センター内の電子メール サーバーの評判を保護するMicrosoft 365します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85f200cf226a050762db4ea37255f71241d1f98c
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: c5881b20eaed8387988d01b69a4acd022c5924a2
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137720"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409142"
 ---
 # <a name="outbound-delivery-pools"></a>送信方向の配信のプール
 
@@ -82,3 +82,6 @@ Microsoft 365、転送されたメッセージを自信を持って配信でき�
 DKIM が動作するには、ドメインの送信に DKIM を有効にしてください。 たとえば、fabrikam.com は組織の contoso.com ドメインで定義されます。 メッセージの送信者が sender@fabrikam.com 場合は、DKIM を有効にする必要 fabrikam.com。 「DKIM を使用してカスタム ドメインから送信された送信メールを検証する」で有効にする [方法について説明します](use-dkim-to-validate-outbound-email.md)。
 
 カスタム ドメインを追加するには、「ドメインを追加する」の手順に[従Microsoft 365。](../../admin/setup/add-domain.md)
+
+ドメインの MX レコードがサード パーティ のサービスまたはオンプレミスの電子メール サーバーをポイントしている場合は、コネクタの拡張フィルター [を使用する必要があります](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 拡張フィルターを使用すると、受信メールに対して SPF 検証が正しく、リレー プールを介した電子メールの送信を回避できます。
+

@@ -14,17 +14,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium で、管理者のヘルプ、オンライン サポート、または電話でのサポートを受けるためには、ビジネス サブスクリプションの管理者であることが必要です。
-ms.openlocfilehash: 254e01894f430bdf6a8f666d1425af8705968647
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: c33506a17ea7c99902025b613e27168606e7ff03
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984750"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394823"
 ---
 # <a name="get-support"></a>サポートを受ける
 

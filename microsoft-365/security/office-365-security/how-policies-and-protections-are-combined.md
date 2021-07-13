@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) の保護のアプリケーションの順序と、保護ポリシーの優先度の値によって適用されるポリシーがどのように決定されるのかについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df40ca6efaed5a1884e6dc453f2053f9bc1a84f1
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 9dea01324e37a56fbff049e4e46cd5882f1fabad
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029287"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409130"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子メール保護の順序と優先順位
 
@@ -50,18 +50,19 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
   |1|マルウェア|CAT:MALW|[EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
   |2|フィッシング|CAT:PHSH|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |3|高確度スパム|CAT:HSPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |4|スプーフィング|CAT:スプーフィング|[EOP でのスプーフィング インテリジェンスの分析情報](learn-about-spoof-intelligence.md)|
+  |4 |スプーフィング|CAT:スプーフィング|[EOP でのスプーフィング インテリジェンスの分析情報](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|ユーザー偽装 (保護されたユーザー)|UIMP|[Microsoft Defender でフィッシング対策ポリシーを構成Office 365](configure-mdo-anti-phishing-policies.md)|
   |6<sup>\*</sup>|ドメイン偽装 (保護されたドメイン)|DIMP|[Microsoft Defender でフィッシング対策ポリシーを構成Office 365](configure-mdo-anti-phishing-policies.md)|
-  |7|スパム|CAT:SPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |8|バルク|CAT:BULK|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |7 |スパム|CAT:SPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |8 |バルク|CAT:BULK|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup>これらの機能は、Microsoft Defender のフィッシング対策ポリシーでのみOffice 365。
 
 - **ポリシー** の優先度 : ポリシーの種類 (スパム対策、マルウェア対策、フィッシング対策など) ごとに、すべてのユーザーに適用される既定のポリシーがありますが、特定のユーザーに適用されるカスタム ポリシーを作成できます。 各カスタム ポリシーには、ポリシーが適用される順序を決定する優先度の値があります。 既定のポリシーは常に最後に適用されます。
 
-  ユーザーが同じ種類の複数のポリシーで定義されている場合、優先度が最も高いポリシーだけが適用されます。 その種類の残りのポリシーは、ユーザーに対して評価されません (既定のポリシーを含む)。
+  > [!IMPORTANT]
+  > ユーザーが同じ種類の複数のポリシーで定義されている場合、優先度が最も高いポリシーだけが適用されます。 その種類の残りのポリシーは、ユーザーに対して評価されません (既定のポリシーを含む)。
 
 たとえば、同じユーザーに適用される Office 365 の Microsoft Defender の次のフィッシング対策ポリシーと、ユーザー偽装とスプーフィングの両方として識別されるメッセージを検討します。
 

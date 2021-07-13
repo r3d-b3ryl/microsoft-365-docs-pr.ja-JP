@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 8/10/2017
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: レポートを使用して組織の既定のデータ損失防止 (DLP) ポリシーを絞り込む方法について学習します。
-ms.openlocfilehash: 4530e570f0ce593a7d2cb62acc28dfa4e1658df0
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 98f2a95d66860695034fa958969d1c195e9d58be
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114085"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53408962"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>既定の DLP ポリシーの使用を開始する
 
@@ -42,7 +42,7 @@ ms.locfileid: "52114085"
   
 機密情報を保護するために、既定の DLP ポリシーは次の操作を行います。
   
-- Exchange、SharePoint、OneDrive の少なくとも 1 つのクレジット カード番号を含むコンテンツが組織外のユーザーと共有される場合を検出します。
+- 少なくとも 1 つのクレジット カード番号を含む Exchange、SharePoint、および OneDrive のコンテンツが組織外のユーザーと共有される場合を検出します。
     
 - この機密情報を組織外のユーザーと共有しようとすると、ポリシー ヒントを表示し、ユーザーに電子メール通知を送信します。 これらのオプションの詳細については、「電子メール通知を送信する」と「DLP ポリシーのポリシー [ヒントを表示する」を参照してください](use-notifications-and-policy-tips.md)。
     
@@ -60,7 +60,7 @@ ms.locfileid: "52114085"
   
 これらのオプションを後で変更する場合は、既定の DLP ポリシーをいつでも編集できます。次のセクションを参照してください。
   
-![[共有コンテンツをさらに保護する] という名前のウィジェットの設定](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![設定共有コンテンツをさらに保護するという名前のウィジェットの場合](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>既定の DLP ポリシーを編集する
 
@@ -76,7 +76,7 @@ ms.locfileid: "52114085"
   
 このウィジェットは、次の場合にのみ表示されます。
   
-- セキュリティ コンプライアンス センターまたは Exchange 管理センターには、データ損失防止 &amp; ポリシーはありません。 このウィジェットは、DLP の使用を開始するのに役立つウィジェットなので、DLP ポリシーが既に設定されている場合は表示されません。
+- セキュリティ コンプライアンス センターまたは管理センターには、データ &amp; 損失防止Exchangeはありません。 このウィジェットは、DLP の使用を開始するのに役立つウィジェットなので、DLP ポリシーが既に設定されている場合は表示されません。
     
 - 過去 30 日間に、少なくとも 1 つのクレジット カードを含むコンテンツが組織外のユーザーと共有されています。
     
