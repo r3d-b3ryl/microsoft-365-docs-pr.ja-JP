@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - GEU150
@@ -22,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 21Vianet がOffice 365、中国のセキュリティで保護され、信頼性が高く、スケーラブルなクラウド サービスのニーズを満たするように設計された、21Vianet が運用するサービスの詳細をご覧ください。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 75bf7c7a4d7e453fa2be711c7332878b8a8f1150
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c8d43c385f44434e9ed4832a094ea4909bf505a4
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924721"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393609"
 ---
 # <a name="office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365
 
@@ -153,8 +155,8 @@ Exchange Server の古いバージョンまたは混在したバージョンを�
 |**オンプレミスのExchangeバージョン**|**MRM (分割アーカイブ)**|**OWA アクセス (分割アーカイブ)**|**インプレース電子情報開示**|**メールボックスの監査**|**インプレイス保持/アーカイブ**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | All 2013 CU5  <br/> | サポート <br/>  | 非サポート <br/>  | サポート <br/>  | サポート  <br/> | サポート <br/> |
-| すべての 2010 SP3 <br/>  | サポート対象外 <br/>  | 非サポート <br/>  | サポートされている<sup>1</sup> <br/> | サポート  <br/> | サポート <br/>  |
-| 2013 年より前の CU5 サーバーが少なくとも 1 台  <br/> | サポートされている<sup>2</sup> <br/> | サポート対象外  <br/> | 非サポート <br/> | サポート  <br/> | サポート <br/> |
+| すべての 2010 SP3 <br/>  | 非サポート <br/>  | 非サポート <br/>  | サポートされている<sup>1</sup> <br/> | サポート  <br/> | サポート <br/>  |
+| 2013 年より前の CU5 サーバーが少なくとも 1 台  <br/> | サポートされている<sup>2</sup> <br/> | 非サポート  <br/> | 非サポート <br/> | サポート  <br/> | サポート <br/> |
 |||
 
 <sup>1</sup>オンプレミスメールボックスとメールボックスに対して個別のExchange Online必要です。  <br/> <sup>2</sup>つの MRM 移動からアーカイブへの移行ポリシーは、2013 CU5 以上のサーバー上Exchangeメールボックスに使用できます。 

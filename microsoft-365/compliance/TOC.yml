@@ -932,6 +932,18 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: エネルギー サービスのセキュリティとコンプライアンス
           href: ../solutions/energy-secure-collaboration.md
+- name: プライバシー リスクを管理する
+  items:
+    - name: プライバシー管理の詳細
+      href: privacy-management.md
+    - name: プライバシー管理の使用を開始する
+      href: privacy-management-setup.md
+    - name: プライバシー管理における個人情報の検索および可視化
+      href: privacy-management-data-profile.md
+    - name: プライバシー管理におけるポリシー作成および管理
+      href: privacy-management-policies.md
+    - name: プライバシー管理における主体の権利要求の管理
+      href: privacy-management-subject-rights-requests.md
 - name: ハイブリッド コンプライアンス機能
   items:
     - name: AD RMS による Exchange Online のメールの暗号化

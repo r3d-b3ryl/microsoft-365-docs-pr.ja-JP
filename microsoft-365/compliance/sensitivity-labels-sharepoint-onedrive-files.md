@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、Word、Excel、および PowerPoint ファイルのSharePointラベルのOneDrive。
-ms.openlocfilehash: 67aa69ef8505290b6fde47c4e523a09870312b97
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 61b6c366f76c25ab0b35df4314f63491be5ce5e6
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322235"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377231"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -65,7 +65,7 @@ SharePoint および OneDrive の Office ファイルの感度ラベルを有効
 
 SharePoint Information Rights Management (IRM) を使用して SharePoint でドキュメントを現在保護している場合は、このページの SharePoint Information [Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels)と感度ラベルセクションを確認してください。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 これらの新機能は、感度ラベル [でのみ機能](sensitivity-labels.md) します。 現在 Azure Information Protection ラベルがある場合は、アップロードする新しいファイルに対してこれらの機能を有効にできるよう、最初にラベルを感度ラベルに移行します。 手順については、、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
@@ -90,6 +90,12 @@ Windows では OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降
     これらの暗号化構成を持つラベルの場合、ラベルはユーザーに表示Office for the web。 さらに、これらの暗号化設定が既にあるラベル付きドキュメントでは、新しい機能を使用できません。 たとえば、これらのドキュメントは、更新された場合でも検索結果に返されません。
 
 - パフォーマンス上の理由から、SharePoint にドキュメントをアップロードまたは保存し、ファイルのラベルが暗号化を適用しない場合、ドキュメント ライブラリの **[Sensitivity]** 列にラベル名が表示されるのに時間がかかる場合があります。 この列のラベル名に依存するスクリプトまたはオートメーションを使用する場合は、この遅延を考慮してください。
+
+- [SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)でチェックアウト中にドキュメントにラベルが付いている場合、ドキュメント ライブラリの[感度] 列には、SharePoint でドキュメントがチェックインされ、次に開くまでラベル名は表示されません。
+
+- ラベル付きおよび暗号化されたドキュメントが、サービス プリンシパル名を使用するアプリまたはサービスによって SharePoint または OneDrive からダウンロードされ、異なる暗号化設定を適用するラベルで再度アップロードされると、アップロードは失敗します。 たとえば、ファイルMicrosoft Cloud App Security機密ラベルを [機密] から [高機密]に、または [機密情報] から [全般]**に** 変更する場合 **があります**。
+    
+    「ラベル付きドキュメントの暗号化の削除」セクションで説明したように、アプリまたはサービスが [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを最初に実行しても、アップロードは [失敗](#remove-encryption-for-a-labeled-document) しません。 または、アップロードの前に、元のファイルが削除されたか、ファイル名が変更されます。
 
 - ユーザーは、次の [名前を付けて保存] シナリオで暗号化されたドキュメントを開くのに遅延が発生する可能性があります。 Office のデスクトップ バージョンを使用すると、暗号化を適用する感度ラベルを持つドキュメントに対して [名前を付けて保存] を選択します。 ユーザーは、SharePointまたはOneDriveを選択し、そのドキュメントをすぐに開Office for the web。 サービスが引き続き暗号化を処理している場合、ユーザーはデスクトップ アプリでドキュメントを開く必要があるというメッセージを表示します。 数分後にもう一度やり直す場合は、ドキュメントが正常に開Office for the web。
 

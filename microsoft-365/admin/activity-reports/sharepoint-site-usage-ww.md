@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
 description: ユーザーが SharePoint SharePoint サイトに保存するファイルの数、アクティブに使用されるファイルの数、および使用されたストレージの合計を確認するには、SharePoint サイト使用状況レポートを取得します。
-ms.openlocfilehash: 62bf01c867b7e9217d25e655af6633a72773caa1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d2c549dbb5ab456dddedf0422cd8aebafab1987d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241870"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393333"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365管理センターのレポート - SharePoint使用状況
 
@@ -48,11 +50,11 @@ Microsoft 365管理センターのレポートは、High テナントと DoD テ
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   
-|アイテム|説明|
+|項目|説明|
 |:-----|:-----|
 |**測定基準**|**定義**|
 |サイトの URL  <br/> |サイトの完全な URL。 <br/> |
-|削除済み  <br/> |サイトの削除状態。 サイトを削除済みとしてマークするには、少なくとも 7 日かかります。  <br/> |
+|Deleted  <br/> |サイトの削除状態。 サイトを削除済みとしてマークするには、少なくとも 7 日かかります。  <br/> |
 |サイト所有者  <br/> |サイトのプライマリ所有者のユーザー名。   <br/> |
 |サイト所有者プリンシパル名  <br/> |サイトの所有者の電子メール アドレス。 <br/> |
 |最終アクティビティ日 (UTC)  <br/> | ファイルアクティビティが最後に検出された日付、またはサイトでページが表示された日付。  <br/> |

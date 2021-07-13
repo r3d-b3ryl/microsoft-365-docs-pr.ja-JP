@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: アプリに対するユーザーの同意、およびアプリを有効にし、サード パーティ製アプリがユーザーの情報にアクセスMicrosoft 365します。
-ms.openlocfilehash: b8f65b50e50b0e0b4d978388463bbd380ca60d4e
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 629e64494c6d72a13c3b155370a8f47505e9fa20
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624503"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391233"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>アプリに対するユーザーの同意を管理Microsoft 365
 
@@ -36,7 +38,6 @@ ms.locfileid: "52624503"
 ユーザーは、Office 365 情報に対して自分自身が持っているアクセス権のみをアプリに与えることができます。 他のユーザーの情報に対して、アプリにアクセス権を与えることはできません。
 
 ## <a name="turning-user-consent-on-or-off"></a>ユーザーの同意をオンまたはオフにする
-<a name="__toc379982114"> </a>
 
 アプリに対するユーザーの同意を有効またはオフにする方法を次に示します。
 
@@ -45,7 +46,6 @@ ms.locfileid: "52624503"
 2. [アプリ **に対するユーザーの同意** ] ページで、ユーザーの同意を有効または無効にするオプションを選択します。
 
 ## <a name="related-content"></a>関連コンテンツ 
-<a name="__toc379982114"> </a>
 
 [管理者の同意ワークフローを構成](/azure/active-directory/manage-apps/configure-admin-consent-workflow) する (記事)\
 [アプリケーションへの同意の管理と同意要求の評価](/azure/active-directory/manage-apps/manage-consent-requests) (記事)

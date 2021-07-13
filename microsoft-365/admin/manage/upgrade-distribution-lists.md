@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 1 つ以上の配布リストを Outlook の Microsoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: d4686e7f2ec305194130b60fbacab24c9cf7f4e9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: aef797a2bf052fcc84c9220993c2e6706eae5f61
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698942"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391389"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>配布リストを、Microsoft 365グループにアップグレードOutlook
 
@@ -153,7 +155,6 @@ Get-DistributionGroup| Foreach-Object{
 |セキュリティ グループ  <br/> |いいえ  <br/> |
 |動的配布リスト  <br/> |いいえ  <br/> |
 |**RoomLists** に変換された配布リスト  <br/> |いいえ  <br/> |
-|**MemberJoinRestriction および/または** **MemberDepartRestriction** が閉じている配布 **リスト**  <br/> |いいえ  <br/> |
 
 ### <a name="check-which-dls-are-eligible-for-upgrade"></a>アップグレードの対象となる DLL を確認する
 
@@ -173,7 +174,7 @@ Get-DistributionGroup| Foreach-Object{
 
 - [Outlook: 移行後に Microsoft 365 グループ名を入力して Outlook で電子メールを送信しようとすると、受信者はグループの代わりに配布リストとして解決されます。 受信者の連絡先カードは配布リストの連絡先カードとなります。 これは Outlook の受信者キャッシュまたはニックネーム キャッシュに起因します。 電子メールはグループに正常に送信されますが、送信者に混乱を招く可能性があります。<br/>この記事の手順を実行[できます。この](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list)問題を解決するキャッシュをリセットOutlookオートコンプリート リストに関する情報を参照してください。
 
-- Web Outlookの場合: Web 上Outlook場合、配布リストの受信者はキャッシュに残ります。 「自動完了リストから推奨[](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58)される名前または電子メール アドレスを削除する」の手順に従って、キャッシュを更新してグループ連絡先カードを表示できます。
+- [Outlook on the web: Outlook on the web場合、配布リストの受信者は引き続きキャッシュに残ります。 「自動完了リストから推奨[](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58)される名前または電子メール アドレスを削除する」の手順に従って、キャッシュを更新してグループ連絡先カードを表示できます。
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新しいグループのメンバーは、受信トレイでウェルカム メッセージを受け取りますか?
 

@@ -13,21 +13,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid: MET150
 description: 組織内のユーザーのスクリプトOffice設定を管理する方法について学習します。
-ms.openlocfilehash: e0cb52c4a8f48ff2310c83ffce61e08a0236ed59
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: fea50838cf1089b73a6af5bbf86d490293831085
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572311"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392673"
 ---
 # <a name="manage-office-scripts-settings"></a>Office スクリプトの設定を管理する
 
-[Officeスクリプトを使用](/office/dev/scripts)すると、ユーザーは Web 上でスクリプトを記録、編集、実行することでExcel自動化できます。 Officeスクリプトは、Power Automateと機能し、ユーザーはオンライン (Business) コネクタを使用してブックExcelスクリプトを実行します。 Microsoft 365管理者は、Office管理センターからスクリプト設定Microsoft 365管理できます。
+[Officeスクリプトを使用](/office/dev/scripts)すると、ユーザーは Web 上でスクリプトを記録、編集、実行することでExcel自動化できます。 Officeスクリプトは、Power Automateと機能し、ユーザーはオンライン (Business) コネクタを使用してブックExcelスクリプトを実行します。 Microsoft 365管理者は、Officeスクリプトの設定を管理Microsoft 365 管理センター。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - スクリプト設定Office管理するには、グローバル管理者である必要があります。詳細については、「管理者ロール[について」を参照してください](../add-users/about-admin-roles.md)。
 
@@ -43,7 +45,7 @@ ms.locfileid: "52572311"
 
 ## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>スクリプトの可用性Officeスクリプトの共有を管理する
 
-1. 管理センター Microsoft 365、[組織設定サービス] タブ設定 \> **に** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">移動</a>します。
+1. [組織のMicrosoft 365 管理センター] タブの [組織 \> **設定] タブ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">に移動</a>します。
 
 2. [スクリプト **Office選択します**。
 
@@ -94,11 +96,11 @@ ms.locfileid: "52572311"
 
 8. **[保存]** を選択します。
 
-    スクリプト設定の変更が有効になOffice最大 48 時間かかる場合があります。
+    Office スクリプトの設定の変更が有効になるまで、最大で 48 時間かかる場合があります。
 
 ## <a name="next-steps"></a>次の手順
 
-Office スクリプトは Power Automate で動作しますので、ユーザーが Office スクリプトを使用している間に組織のデータが保護されたままになるために、既存のデータ損失防止 (DLP) ポリシーを確認することをお勧めします。 詳細については、「データ損失 [防止 (DLP) ポリシー」を参照してください](/power-automate/prevent-data-loss)。
+Office スクリプトは Power Automate で動作しますので、ユーザーが Office スクリプトを使用している間に組織のデータが保護されたままになるために、既存のデータ損失防止 (DLP) ポリシーを確認することをお勧めします。 詳細については、「[データ損失防止 (DLP) ポリシー](/power-automate/prevent-data-loss)」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 

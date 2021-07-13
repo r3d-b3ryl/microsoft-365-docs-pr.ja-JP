@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: 基本モビリティとセキュリティは、重要なMicrosoft 365です。
-ms.openlocfilehash: 869968fa46e09fbc7a983957a83a9ad308c9f40c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3404d2aeecd047fecec573bf1d60407ad3659efe
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228269"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393297"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>基本モビリティとセキュリティまたは Intune の間で選択する
 
@@ -35,7 +36,7 @@ ms.locfileid: "53228269"
 
 | 計画 | 基本的なモビリティとセキュリティ | Microsoft Intune |
 |:-----|:-----|:-----|
-|Microsoft 365 アプリ|はい|いいえ|
+|Microsoft 365 Apps|はい|いいえ|
 |Microsoft 365 Business Basic|はい|いいえ|
 |Microsoft 365 Business Standard|はい|いいえ|
 |Office 365 E1 |はい|いいえ|

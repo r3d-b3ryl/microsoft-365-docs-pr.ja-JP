@@ -15,24 +15,25 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: メールを配布リストとして送信Microsoft 365、メンバーがメッセージに返信すると、そのメールは配布リストから送信されたと思われる。
-ms.openlocfilehash: eb5ce4a08fae13ee0d2631499a8df1724ef3ef66
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c77455b5b990a9c35fc7e47ee81cc9ddef4d0a23
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635716"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392517"
 ---
 # <a name="send-email-as-a-distribution-list"></a>配布リストとして電子メールを送信する
 
 このMicrosoft 365、配布リストとして電子メールを送信できます。 配布リストのメンバーであるユーザーが配布リストに送信されたメッセージに返信すると、メールは個別のユーザーからではなく、配布リストからであることが表示されます。 このトピックでは、この操作を行う方法を示します。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 これらの手順を実行する前に、Microsoft 365 配布リストに追加され、その配布リストに対する送信権限が付与されている必要があります。
   
@@ -64,6 +65,6 @@ ms.locfileid: "52635716"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理センターでセキュリティ グループを作成、編集、またはMicrosoft 365する](../email/create-edit-or-delete-a-security-group.md)(記事)\
+[セキュリティ グループを](../email/create-edit-or-delete-a-security-group.md)作成、編集、または削除するには、Microsoft 365 管理センター (記事)\
 [電子メールの共同作業](../email/email-collaboration.md) (記事)\
 [配布グループにユーザーまたは連絡先を追加する](../email/add-user-or-contact-to-distribution-list.md) (記事)

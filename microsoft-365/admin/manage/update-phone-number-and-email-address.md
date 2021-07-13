@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 自分の管理者パスワードをリセットする場合は、管理センターで管理者の電話番号とメール アドレスを更新します。
-ms.openlocfilehash: ab4e200ae680e40dea7ca7cc4d095be0690ad375
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 1335f5ff7a39fab53e6f45f47bec293db5650336
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624515"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391305"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>管理者の電話番号とメール アドレスを更新する
 
@@ -39,7 +41,7 @@ ms.locfileid: "52624515"
 
 [セキュリティ **情報] ページを** 使用して、携帯電話番号と代替メール アドレスを変更します。 代替メール アドレスは、管理者パスワード (コンピューターの管理者パスワードではなく) のリセットなど、重要な通知に使用されます。 
   
-1. 管理センターのMicrosoft 365を参照します。
+1. [ファイル] を参照Microsoft 365 管理センター。
 
 2. ヘッダーで、プロファイル アイコン [マイ アカウント \> **のセキュリティ情報]** \> **を選択します**。
 

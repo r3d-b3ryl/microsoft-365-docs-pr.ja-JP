@@ -11,20 +11,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: Microsoft 365 管理センターの Microsoft 365 レポート ダッシュボードを使用してアクティブ ユーザー レポートを取得する方法と、使用されている製品ライセンスの数を確認する方法について学習します。
-ms.openlocfilehash: 8ea9feeb18cb1885023ec14f1ffb4d77b2775877
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+description: '[アクティブ ユーザー] ダッシュボードの [Microsoft 365] ダッシュボードを使用してアクティブ ユーザー レポートを取得するMicrosoft 365 管理センター、使用されている製品ライセンスの数を確認します。'
+ms.openlocfilehash: d127ddccd4944279052c628cbee9cc37dd3c8358
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924373"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391365"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>[アクティブ ユーザーのMicrosoft 365評価] レポート
 
@@ -65,4 +67,4 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 
 
-組織のポリシーにより、ユーザー情報を特定できるレポートを表示できない場合は、これらすべてのレポートのプライバシー設定を変更できます。 [管理センターのアクティビティ レポート **]** の [ユーザー レベルの詳細を非表示にする方法Microsoft 365 [確認してください](activity-reports.md)。  
+組織のポリシーにより、ユーザー情報を特定できるレポートを表示できない場合は、これらすべてのレポートのプライバシー設定を変更できます。 [アクティビティ レポート **] の**[ユーザー レベルの詳細を非表示にする方法] セクション [を](activity-reports.md)Microsoft 365 管理センター。  

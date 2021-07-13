@@ -21,13 +21,14 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 description: 新しいアプリケーションをセットアップMicrosoft 365、Mac、PC、またはモバイル デバイスにOfficeアプリケーションをインストールする方法について学習します。
-ms.openlocfilehash: 47f6a04e8fe42f03de0cd2008f15fd1f6f5617f3
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: dc32009bd42027890457bee97e19cdd94f49c6b7
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593819"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393525"
 ---
 # <a name="install-office-applications"></a>Office アプリケーションをインストールする
 

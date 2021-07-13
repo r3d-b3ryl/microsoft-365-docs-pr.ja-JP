@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 グループでは、メンバーは会話用のグループ メールおよび共有ワークスペース、ファイル、カレンダー イベント、ストリーム、Planner を利用できます。
-ms.openlocfilehash: 038c4b9f6d9d28e62c0fb9b8f117db96ac42ddfb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903842"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377183"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
@@ -61,6 +61,8 @@ Microsoft 365 グループには、Outlook for iOS や Outlook for Android な�
 
 配布グループは、Microsoft Teams のチームに追加できます。
 
+Microsoft 365 グループは、配布グループのメンバーにすることはできません。
+
 ## <a name="security-groups"></a>セキュリティ グループ
 
 [セキュリティ グループ](../email/create-edit-or-delete-a-security-group.md)は、SharePoint などの Microsoft 365 リソースへのアクセスを許可するために使用されます。 ユーザーを各リソースに個別に追加するのではなく、グループを管理するだけで済むため、管理が容易になります。
@@ -70,6 +72,8 @@ Microsoft 365 グループには、Outlook for iOS や Outlook for Android な�
 セキュリティ グループは [Azure Active Directory の動的メンバーシップ用に構成でき](/azure/active-directory/users-groups-roles/groups-change-type)、部署、場所、役職などのユーザー属性、またはオペレーティング システムのバージョンなどのデバイス属性に基づいてグループ メンバーまたはデバイスを自動的に追加または削除できます。
 
 セキュリティ グループをチームに追加できます。
+
+Microsoft 365 グループは、セキュリティ グループのメンバーにすることはできません。
 
 ## <a name="mail-enabled-security-groups"></a>メールが有効なセキュリティ グループ
 

@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 89182ddc317bfefdf0e82632bbe8ec8f78f81ada
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809001"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377219"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
-ユーザーが仕事でどのように Microsoft 365 サービスを使用しているかを簡単に確認できます。たとえば、サービスをかなり使用しているためにクォータに近づいているユーザーや、Microsoft 365 ライセンスをまったく必要としない可能性があるユーザーを、特定することができます。
+ユーザーが仕事でどのように Microsoft 365 サービスを使用しているかを簡単に確認できます。たとえば、サービスをかなり使用しているためにクォータに近づいているユーザーや、Microsoft 365 ライセンスをまったく必要としない可能性があるユーザーを、特定することができます。永続的ライセンス モデルがレポートに含まれます。 
   
 過去 7 日、30 日、90 日、180 日間のレポートを利用できます。すべてのレポート期間のデータが最初から存在するわけではありません。レポートは、48 時間以内に使用できるようになります。
   

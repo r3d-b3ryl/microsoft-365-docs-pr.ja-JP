@@ -16,29 +16,30 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
-description: 管理者センターで予定表の共有Microsoft 365有効にして、組織の内部または外部のユーザーと予定表を共有できます。
-ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: ユーザーが組織の内部または外部Microsoft 365 管理センター予定表を共有できるよう、予定表の共有を有効にします。
+ms.openlocfilehash: 21dbf12ec495f3a22a45d8a23af807ffd34fef72
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635812"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392457"
 ---
 # <a name="share-calendars-with-external-users"></a>予定表を外部ユーザーと共有する
 
 ユーザーが組織外のユーザーとの会議をスケジュールする必要がある場合があります。 会議の一般的な時間を見つけるプロセスを簡略化するために、Microsoft 365ユーザーが予定表を使用できます。 これらは、組織内のユーザーの空き時間とビジー時間を表示する必要があるが、組織のユーザー アカウントを持Microsoft 365です。
 
-組織のすべてのユーザーの予定表共有は、管理センターで有効Microsoft 365できます。 共有が有効になると、ユーザーは組織の内部Outlook Web App外部のユーザーと予定表を共有できます。 組織内のユーザーは、自分の予定表と共に共有予定表を表示できます。 組織外のユーザーには、予定表の表示に使用できる URL が送信されます。 組織内のユーザーは、共有する時間と共有する量を決定します。
+組織内のすべてのユーザーに対して予定表の共有を有効にMicrosoft 365 管理センター。 共有が有効になると、ユーザーは組織の内部Outlook Web App外部のユーザーと予定表を共有できます。 組織内のユーザーは、自分の予定表と共に共有予定表を表示できます。 組織外のユーザーには、予定表の表示に使用できる URL が送信されます。 組織内のユーザーは、共有する時間と共有する量を決定します。
 
 > [!NOTE]
 > Exchange Server 2013 (オンプレミスのソリューション) を使用する組織と予定表を共有する場合は、Exchange 管理者がクラウドとの認証リレーションシップをセットアップする必要があります。 これはフェデレーションと呼ばれる、最低限のソフトウェア要件を満たす必要があります。 詳細については、「[共有](/exchange/sharing-exchange-2013-help)」を参照してください。
   
-## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>管理センターを使用して予定表Microsoft 365有効にする
+## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>[予定表] を使用して予定表の共有を有効Microsoft 365 管理センター
 
 1. 管理センターで、[組織の管理]**設定** \> **に移動設定。**
 
@@ -55,5 +56,5 @@ ms.locfileid: "52635812"
 ## <a name="related-content"></a>関連コンテンツ
 
 [サイトの外部共有をオンまたはオフにする](/sharepoint/change-external-sharing-site) (記事)\
-[管理センター Microsoft 365の概要](../../business-video/admin-center-overview.md)(ビデオ)\
+[アプリケーションの概要 (Microsoft 365 管理センター)\](../../business-video/admin-center-overview.md)
 [メールと予定表の管理](../email/index.yml) (リンク ページ)

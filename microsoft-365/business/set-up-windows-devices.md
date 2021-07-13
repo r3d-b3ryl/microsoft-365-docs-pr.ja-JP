@@ -22,21 +22,22 @@ ms.custom:
 - seo-marvel-mar
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: ユーザーにWindowsデバイスWindows 10 ProをMicrosoft 365 Business Premium、一元的な管理とセキュリティ制御を有効にします。
-ms.openlocfilehash: 7a9c75f6ec14605225d40c103c18e62937e773bf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a911414b1a7abef259f4c5fffbdd48e07f9ebfdd
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635876"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393361"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>ユーザーのWindowsデバイスをMicrosoft 365 Business Premiumする
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 Microsoft 365 Business Premium ユーザー用に Windows デバイスをセットアップする前に、Windows のすべてのデバイスが Windows 10 Pro バージョン 1703 (Creators Update) を実行している必要があります。 Windows 10 Proは、Windows 10 Pro を補完し、Microsoft 365 Business Premium の一元的な管理とセキュリティ制御を可能にする一連のクラウド サービスとデバイス管理機能である Windows 10 Business を展開する前提条件です。
   
@@ -46,7 +47,7 @@ Windows デバイスを Windows 10 Pro Creators Update にアップグレード�
   
 「 [デバイスが Azure](#verify-the-device-is-connected-to-azure-ad) AD接続されていることを確認する」を参照し、アップグレードが正常に動作したと確認してください。
 
-## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>ウォッチ: Connectに PC をMicrosoft 365 Business
+## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>ウォッチ: ConnectをビジネスにMicrosoft 365する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 

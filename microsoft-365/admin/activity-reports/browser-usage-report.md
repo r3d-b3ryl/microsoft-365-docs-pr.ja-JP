@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用して Microsoft Microsoft 365利用状況レポートを取得するMicrosoft 365 管理センター。'
-ms.openlocfilehash: f2d8d8347e7b71375958c56f6649fbb911155d46
-ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
+ms.openlocfilehash: 2f6f287e5a8642d94c9581fc73525b7bfaafb41b
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53125416"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377207"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365管理センターのレポート - Microsoft ブラウザーの使用状況
 
@@ -37,21 +37,11 @@ ms.locfileid: "53125416"
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
 2. ダッシュボードのホームページで、Microsoft ブラウザー **の使用状況** カードの [その他の表示] ボタンをクリックします。
 
-## <a name="how-to-notify-users-to-upgrade-their-browser"></a>ブラウザーのアップグレードをユーザーに通知する方法
-
-![Microsoft ブラウザー使用状況レポートのアクション フロー](../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png)
-
-グローバル管理者は、エッジ レガシ (サポートされていない) および Internet Explorer で Microsoft 365 サービスを使用しているユーザーにメッセージを送信することをオプトインできます (すぐにサポートされません)。 この対象となるメッセージは、これらのブラウザーのサポートが間もなく終了するとユーザーに通知し、Microsoft Edge に関する情報と、ブラウザーを切り替える簡単な手順を含むサポート記事にリンクします。 
-
-この機能は、レポート ページで確認できます。 メッセージが作成されると、2021 年 8 月 17 日まで指定された頻度でユーザーに通知されます。 この機能をいつでもオフにし、ユーザーへの通知の送信を停止できます。 通知の送信を再度開始するには、機能をオンに戻します。
-
-詳細については、「学習に[関するMicrosoft Edgeヘルプ&してください](https://support.microsoft.com/microsoft-edge)。
-
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>Microsoft ブラウザー使用状況レポートの解釈
 
 ![Microsoft ブラウザー使用状況レポート](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
 
-|アイテム|説明|
+|項目|説明|
  |:-----|:-----|
  |1. <br/> |**Microsoft ブラウザー使用状況レポート** は、過去 7 日間、30 日間、90 日、または 180 日間の傾向を確認できます。  <br/> |
  |2. <br/> |各レポートのデータは、通常、過去 7 日間までカバーされます。 <br/> |

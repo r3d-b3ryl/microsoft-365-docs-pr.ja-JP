@@ -1,5 +1,5 @@
 ---
-title: Azure に参加しているデバイスからオンプレミスADにアクセスMicrosoft 365 Business
+title: ビジネス向け Azure AD参加デバイスからオンプレミス リソースにMicrosoft 365する
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -16,17 +16,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: ビジネス アプリの回線、ファイル共有、プリンターなど、オンプレミスのリソースにアクセスする方法について、Azure Active DirectoryデバイスWindows 10します。
-ms.openlocfilehash: 72b3c5ae538cad24fc12e25717dedccb2fdc9017
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 71d60e0187c917dffb7390afcedf22dc73f44008
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843324"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393461"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Azure に参加しているデバイスからオンプレミスADにアクセスMicrosoft 365 Business Premium
 
@@ -57,7 +58,7 @@ Azure に参加しているデバイスのオンプレミス リソースにア�
 
 Azure-Windows参加しているADが以前にドメインに参加しているか、ワークグループに参加している場合は、次の制限を考慮してください。
 
-- デバイス Azure が参加AD、既存のプロファイルを参照せずに新しいユーザーを作成します。 プロファイルは手動で移行する必要があります。 ユーザー プロファイルには、お気に入り、ローカル ファイル、ブラウザー設定、スタート メニュー設定のような情報が含まれる。 最適な方法は、既存のファイルと設定を新しいプロファイルにマップするサード パーティ製のツールを見つける方法です。
+- デバイス Azure が参加AD、既存のプロファイルを参照せずに新しいユーザーを作成します。 プロファイルは手動で移行する必要があります。 ユーザー プロファイルには、お気に入り、ローカル ファイル、ブラウザー設定、およびユーザー設定スタート メニュー含まれる。 最適な方法は、既存のファイルと設定を新しいプロファイルにマップするサード パーティ製のツールを見つける方法です。
 
 - デバイスがグループ ポリシー オブジェクト (GPO) を使用している場合、一部の GPO には Intune で同等の [構成](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) サービス プロバイダー (CSP) が含されていない場合があります。 [MMAT ツールを実行して](https://www.microsoft.com/download/details.aspx?id=45520)、既存の GPO に対応する CSP を検索します。
 

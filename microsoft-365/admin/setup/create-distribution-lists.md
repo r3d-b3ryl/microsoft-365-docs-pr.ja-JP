@@ -22,15 +22,16 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: 管理センターに配布グループまたはリストMicrosoft 365作成して、各受信者の名前を入力せずにグループに電子メールを送信できます。
-ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+- AdminTemplateSet
+description: 各受信者の名前を入力Microsoft 365 管理センターグループに電子メールを送信できるよう、配布グループまたはリストを作成します。
+ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635668"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393573"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>管理センターで配布グループをMicrosoft 365する
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>グループ内に配布グループを作成Microsoft 365 管理センター
   
 個々の受信者の名前を入力せずにユーザーのグループに電子メールを送信する場合に使用され、配布グループ (配布リスト) は、特定のディスカッションテーマ ("マーケティング" など) または頻繁に通信する必要がある共通の作業を共有するユーザーによって構成されます。 また、複数の電子メール アドレスにメールを自動的に転送する方法も提供されます。
 
@@ -70,12 +71,12 @@ ms.locfileid: "52635668"
     
 6. 配布リストにユーザーを追加するには、「 [ユーザーまたは連絡先を配布グループに追加する」を参照してください](../email/add-user-or-contact-to-distribution-list.md)。
     
-[連絡先グループ (以前の配布リスト[)](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)を使用する] Outlook 2016および web 上Outlookグループを使用する方法を確認Outlook。 
+詳細については、「連絡先グループ (以前の配布リスト) を使用Outlook 2016」およびOutlook on the webのグループを使用する[方法をOutlook。](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
 配布リスト [の問題に関するヘルプ](/office365/troubleshoot/groups/distribution-list-issues) については、「配布グループの問題」を参照してください。 
 
 ## <a name="related-content"></a>関連コンテンツ
 
 [ユーザーのメール設定](../email/office-365-user-email-settings.md) (記事)\
-[管理センターでセキュリティ グループを作成、編集、またはMicrosoft 365する](../email/create-edit-or-delete-a-security-group.md)(記事)\
+[セキュリティ グループを](../email/create-edit-or-delete-a-security-group.md)作成、編集、または削除するには、Microsoft 365 管理センター (記事)\
 [共有メールボックス GWT を作成する](../email/create-a-shared-mailbox.md) (記事)

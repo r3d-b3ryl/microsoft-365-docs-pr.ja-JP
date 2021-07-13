@@ -14,17 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生産性スコアには、ユーザーやテクノロジのエクスペリエンス測定がどのように反映されているか、同規模の組織との比較をご覧ください。
-ms.openlocfilehash: af0e8583bec00b1ddfd62145a4757a4e568108e8
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: ddbc1590abc1383035db1852345310bfc8dd196d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789041"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393669"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生産性スコア 
 

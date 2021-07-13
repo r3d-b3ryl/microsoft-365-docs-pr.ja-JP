@@ -16,18 +16,19 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護する方法。
-ms.openlocfilehash: a5d87c907d47be2d8edc12642ad4e93afb0eb142
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8ee8e34ef984cb466f472e5503ad7cc14c181030
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924625"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393633"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法
 
@@ -40,13 +41,13 @@ Microsoft では、サービス プランに適用される次の表に示すタ
 |1|[多要素認証をセットアップする](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[ユーザーをトレーニングする](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[専用の管理者アカウントを使用する](secure-your-business-data.md#admin)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4|[メール内のマルウェアに対する保護のレベルを上げる](secure-your-business-data.md#malware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5|[ランサムウェアから保護する](secure-your-business-data.md#ransomware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|6|[電子メールの自動転送を停止する](secure-your-business-data.md#forwarding)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7|[メッセージOfficeを使用する](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8|[フィッシング攻撃からメールを保護する](secure-your-business-data.md#phishing)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9|[悪意のある添付ファイルや添付ファイルから保護セーフする](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10|[リンクを使用したフィッシング攻撃からセーフする](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|4 |[メール内のマルウェアに対する保護のレベルを上げる](secure-your-business-data.md#malware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[ランサムウェアから保護する](secure-your-business-data.md#ransomware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|6 |[電子メールの自動転送を停止する](secure-your-business-data.md#forwarding)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|7 |[メッセージOfficeを使用する](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|8 |[フィッシング攻撃からメールを保護する](secure-your-business-data.md#phishing)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9 |[悪意のある添付ファイルや添付ファイルから保護セーフする](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10 |[リンクを使用したフィッシング攻撃からセーフする](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 Microsoft Business Premium を使用している場合、以下のライブラリのガイダンスに従うと、最も手早くセキュリティ設定を行い安全に共同作業ができるでしょう: [中小企業向け Microsoft 365 およびキャンペーン ](../../campaigns/index.md)。 このガイダンスは、Microsoft Defending Democracy チームと協力して開発され、高度なハッカーによるサイバー攻撃から中小企業のユーザーを保護します。
 
@@ -152,7 +153,7 @@ Microsoft では、次の記事で推奨されるアクションを実行して�
 
 5. ルールごとに次の表の設定を適用します。 これらの設定を変更しない限り、残りの設定は既定のままにします。
 
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
 | Setting | ファイルの添付ファイルを開く前にユーザーにOfficeする | ランサムウェアなどの悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
 |:-----|:-----|:-----|
@@ -188,7 +189,7 @@ Microsoft では、次の記事で推奨されるアクションを実行して�
 
 5. 次の表の設定を適用します。 これらの設定を変更しない限り、残りの設定は既定のままにします。
 
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
 
 |Setting|外部ドメインへのメールの自動転送を拒否する|
 |---|---|
@@ -262,7 +263,7 @@ Defender for Office 365でフィッシング対策ポリシーを作成するに
 |処理の選択|偽装ユーザーによって電子メールが送信される場合は、[メッセージを別の電子メール アドレスにリダイレクトする] を選択し、セキュリティ管理者の電子メール アドレスを入力します。たとえば、securityadmin@contoso.com。 <br/> 偽装ドメインから電子メールが送信される場合は、[検疫メッセージ] **を選択します**。|
 |メールボックス インテリジェンス|既定では、新しいフィッシング対策ポリシーの作成時にはメールボックス インテリジェンスが選択されています。 最適な結果が得られるように、この設定は **[オン]** のままにしておいてください。|
 |信頼できる送信者とドメインの追加|この例では、オーバーライドは定義しません。|
-|適用先|**[受信者のドメインが次の場合]** を選択します。 **[これらのいずれか]** では、**[選択]** を選択します。 **[+ 追加]** を選択します。 ドメインの名前の横にあるチェック ボックスをオンにします (たとえば、リスト contoso.com をクリックし、[追加] を **選択します**。 [**完了**] を選択します。|
+|適用先|**[受信者のドメインが次の場合]** を選択します。 **[これらのいずれか]** では、**[選択]** を選択します。 **[+ 追加]** を選択します。 ドメインの名前の横にあるチェック ボックスをオンにします (たとえば、リスト contoso.com をクリックし、[追加] を **選択します**。 **[完了]** を選択します。|
 |
 
 詳細については、「Defender [for Office 365」を参照してください](../../security/office-365-security/configure-atp-anti-phishing-policies.md)。
@@ -326,7 +327,7 @@ Defender for Office 365でフィッシング対策ポリシーを作成するに
 
 3. **[設定** 以外のコンテンツに適用する場合は **、[Office 365** アプリケーション] を選択し、[ユーザーが安全なリンクをクリックしても追跡しない] を選択し、ユーザーが元の **URL** への安全なリンクをクリックさせない。
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ドメイン内のすべての受信者を対象とする新しいポリシーを作成するには、次の方法を実行します。
 
@@ -334,7 +335,7 @@ Defender for Office 365でフィッシング対策ポリシーを作成するに
 
 2. 次の表に示す設定を適用します。
 
-3. [**保存**] を選択します。
+3. **[保存]** を選択します。
 
 |設定またはオプション|推奨される設定値|
 |---|---|
