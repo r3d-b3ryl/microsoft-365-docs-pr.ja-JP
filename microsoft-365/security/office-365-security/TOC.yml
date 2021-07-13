@@ -34,6 +34,8 @@
           href: office-365-air.md
         - name: 自動調査と対応のしくみ
           href: automated-investigation-response-office.md
+        - name: 調査におけるメール分析
+          href: email-analysis-investigations.md
         - name: 修復アクション
           href: air-remediation-actions.md
         - name: マルウェア対策保護
