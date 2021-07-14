@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: fb3646e2ff339115d3fe6043ed45ea8f2140105a
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300109"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419513"
 ---
 # <a name="device-images"></a>デバイスの画像
 
@@ -41,23 +41,7 @@ HP から新しいデバイスを注文する場合は、ショップ[Windows 10
 - グローバル: mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Lenovo からデバイスを注文して、Microsoft マネージド デスクトップで使用する場合は、注文の一部として含まれる特定のパーツ番号を指定する必要があります。 Lenovo の営業担当者または Lenovo チャネル パートナーに問い合わせて、デバイス要件を満たすシステムを使用して"特別入札 *モデル"* を作成 [してください。](device-requirements.md#minimum-requirements) Microsoft マネージド デスクトップ と互換性のある事前に読み込まれたイメージを含めるには、営業担当者に「システム構築ブロックのパーツ番号 *SBB0Q94938 – MMD Enablement*」を参照してください。
-
-現在、以下の製品がサポートMicrosoft マネージド デスクトップされています。
-
-- L13 Gen 1
-- L13 Yoga Gen 1
-- L14 Gen 1 (Intel)
-- L14 Gen 1 (AMD)
-- L15 Gen 1 (Intel)
-- L15 Gen 1 (AMD)
-- X1 Carbon Gen 8
-- X1 Yoga Gen 5
-- T14 Gen 1 (Intel)
-- T14 Gen 1 (AMD)
-- T15 Gen 1
-- X13 Gen 1 (Intel)
-
+Lenovo からデバイスを注文して、Microsoft マネージド デスクトップで使用する場合は、注文の一部として含まれる特定のパーツ番号を指定する必要があります。 Lenovo の営業担当者または Lenovo チャネル パートナーに問い合わせて、デバイス要件を満たすシステムを使用して"特別入札 *モデル"* を作成 [してください。](device-requirements.md#minimum-requirements) Microsoft マネージド デスクトップ と互換性のある事前に読み込まれたイメージを含めるには、営業担当者に「システム構築ブロックのパーツ番号 *SBB0Q94938 – MMD Enablement*」を参照してください。 推奨されるサービス、サポート、イメージング サービスについては、Lenovo 営業担当者または Lenovo チャネル パートナーと一緒に作業してください。
 
 ### <a name="microsoft"></a>Microsoft
 デバイス要件を満たすすべての Microsoft デバイスには、デバイスに対応するイメージMicrosoft マネージド デスクトップ。 他の手順は必要ありません。

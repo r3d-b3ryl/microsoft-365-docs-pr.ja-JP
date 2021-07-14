@@ -14,16 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス管理の新機能と新機能を確認します。 更新された評価、新しい評価テンプレート、新しいアクションなどについて説明します。
-ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 823df0ac274dad0ae278ce981a0dca0f0ad8a9ed
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149024"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419525"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャーの新機能
 
 **この記事では、次の情報を参照してください。** コンプライアンス マネージャーの最近の更新プログラムについて学習します。
+
+## <a name="july-2021"></a>2021 年 7 月
+
+新しいユニバーサル バージョンのテンプレートに基づいて、Microsoft 365以外の製品の評価を作成する機能が追加されました。 詳細については、「評価テンプレートの [操作」を参照してください](compliance-manager-templates.md)。
 
 ## <a name="may-2021"></a>2021 年 5 月
 

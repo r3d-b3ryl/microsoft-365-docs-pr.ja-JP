@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 の IP アドレスと URL web サービスを使用して、Office 365 のネットワークトラフィックをより簡単に識別、差別化する方法について説明します。
-ms.openlocfilehash: 0469070ed6d46b7695526697c255e23c0dc009ec
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4de78934a76a7dba16f79cb9cc6f93a7c935a314
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286419"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419789"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL の Web サービス
 
@@ -63,23 +63,23 @@ Office 365 IP アドレスと URL の Web サービスは、Office 365 ネット
 
 これらのパラメーターは、すべての Web サービス メソッドで共通です。
 
-- **format=<JSON | CSV>** — 既定では、返されるデータ形式は JSON です。 コンマ区切り値 (CSV) 形式でデータを返すには、このオプションのパラメーターを使用します。
-- **ClientRequestId=\<guid>**— クライアントの関連付けのためにユーザーが作成することが必要な GUID です。 Web サービスを呼び出すコンピューターごとに一意の GUID を生成します (このページに含まれるスクリプトでは、GUID が自動的に生成されます)。 次の例に示す GUID は、今後この Web サービスによってブロックされる可能性があるため使用しないでください。 GUID 形式は _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_ で、x は 16 進数を表します。
+- **format=\<JSON \| CSV\>** — 既定では、返されるデータ形式は JSON です。 コンマ区切り値 (CSV) 形式でデータを返すには、このオプションのパラメーターを使用します。
+- **ClientRequestId=\<guid\>**— クライアントの関連付けのためにユーザーが作成することが必要な GUID です。 Web サービスを呼び出すコンピューターごとに一意の GUID を生成します (このページに含まれるスクリプトでは、GUID が自動的に生成されます)。 次の例に示す GUID は、今後この Web サービスによってブロックされる可能性があるため使用しないでください。 GUID 形式は _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_ で、x は 16 進数を表します。
 
   GUID を作成するには、[New-Guid](/powershell/module/microsoft.powershell.utility/new-guid) PowerShell コマンドを使用することも、[Online GUID Generator
 ](https://www.guidgenerator.com/) などのオンライン サービスを利用することもできます。
 
 ## <a name="version-web-method"></a>バージョン Web メソッド
 
-Microsoft は、Office 365 の IP アドレスと FQDN エントリを毎月末に更新しています。 サポート インシデント、セキュリティ更新プログラム、またはその他の運用要件により、不定期の更新プログラムが公開されることがあります。
+Microsoft は、Office 365 の IP アドレスと FQDN エントリを毎月初めに更新しています。 サポート インシデント、セキュリティ更新プログラム、またはその他の運用要件により、不定期の更新プログラムが公開されることがあります。
 
 公開済みの各インスタンスのデータには、バージョン番号が割り当てられます。バージョン Web メソッドを使用すると、Office 365 サービスの各インスタンスの最新のバージョンを確認できます。バージョンの確認を行うのは、1 時間に 1 回以下にすることをお勧めします。
 
 バージョン Web メソッドのパラメーターは次のとおりです。
 
-- **AllVersions=<true | false>** — 初期設定では、返されるバージョンは最新のものです。 Web サービスの最初のリリース以降のすべての公開済みバージョンを要求するには、このパラメーターのオプションを含めます。
-- **Format=<JSON | CSV | RSS>** — JSON 形式と CSV 形式に加えて、このバージョン Web メソッドでは RSS もサポートされます。 このパラメーターのオプションは、_AllVersions=true_ パラメーターと共に使用でき、Outlook や その他の RSS リーダーで使用できる RSS フィードを要求できます。
-- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** — このパラメーターのオプションはバージョンを返すインスタンスを指定します。 省略する場合は、すべてのインスタンスが返されます。 有効なインスタンスは次の通りです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
+- **AllVersions=\<true \| false\>** — 初期設定では、返されるバージョンは最新のものです。 Web サービスの最初のリリース以降のすべての公開済みバージョンを要求するには、このパラメーターのオプションを含めます。
+- **Format=\<JSON \| CSV \| RSS\>** — JSON 形式と CSV 形式に加えて、このバージョン Web メソッドでは RSS もサポートされます。 このパラメーターのオプションは、_AllVersions=true_ パラメーターと共に使用でき、Outlook や その他の RSS リーダーで使用できる RSS フィードを要求できます。
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — このパラメーターのオプションはバージョンを返すインスタンスを指定します。 省略する場合は、すべてのインスタンスが返されます。 有効なインスタンスは次の通りです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
 
 バージョン Web メソッドはレート制限がなく、429 HTTP 応答コードも返しません。バージョン Web メソッドへの応答には、1 時間のデータのキャッシュを推奨する cache-control ヘッダーが含まれます。バージョン Web メソッドからの結果は、単一のレコードの場合も、レコードの配列の場合もあります。各レコードの要素は、次のとおりです。
 
@@ -87,9 +87,9 @@ Microsoft は、Office 365 の IP アドレスと FQDN エントリを毎月末�
 - latest — 指定されたインスタンスのエンドポイントの最新バージョンです。
 - versions - 指定されたインスタンスの以前のバージョンすべてのリスト。この要素は、_AllVersions_ パラメーターが true の場合にのみ含まれます。
 
-### <a name="examples"></a>例:
+### <a name="version-web-method-examples"></a>バージョン Web メソッドの例
 
-例 1 要求 URI: [https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+例 1 要求 URI: <https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 この URI は、各 Office 365 サービス インスタンスの最新バージョンを返します。結果の例:
 
@@ -121,7 +121,7 @@ Microsoft は、Office 365 の IP アドレスと FQDN エントリを毎月末�
 > [!IMPORTANT]
 > これらの URI での ClientRequestID パラメーターの GUID は、一例にすぎません。この Web サービスの URI を試すには、独自の GUID を生成してください。これらの例に示されている GUID は、今後この Web サービスではブロックされる可能性があります。
 
-例 2 要求 URI: [https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+例 2 要求 URI: <https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 この URI は、指定された Office 365 サービス インスタンスの最新バージョンを返します。結果の例:
 
@@ -132,7 +132,7 @@ Microsoft は、Office 365 の IP アドレスと FQDN エントリを毎月末�
 }
 ```
 
-例 3 要求 URI: [https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+例 3 要求 URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 この URI は CSV 形式で出力を表示します。結果の例:
 
@@ -141,7 +141,7 @@ instance,latest
 Worldwide,2018063000
 ```
 
-例 4 要求 URI: [https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+例 4 要求 URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 この URI は、Office 365 ワールドワイド サービス インスタンスに対して発行された以前のバージョンすべてを表示します。結果の例:
 
@@ -156,7 +156,7 @@ Worldwide,2018063000
 }
 ```
 
-例 5 RSS フィード URI: [https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS](https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS)
+例 5 RSS フィード URI: <https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS>
 
 この URI は、各バージョンの変更リストへのリンクを含む、公開されたバージョンの RSS フィードを表示します。結果の例:
 
@@ -181,10 +181,10 @@ Worldwide,2018063000
 
 エンドポイント Web メソッドのパラメーターは次のとおりです。
 
-- **ServiceAreas=<Common | Exchange | SharePoint | Skype>** — サービス エリアのコンマ区切リストです。 有効な項目は、_Common_、_Exchange_、_SharePoint_、および _Skype_ です。 _Common_ サービス エリア項目はその他のすべてのサービス エリアの前提条件であるため、Web サービスに常に含まれます。 このパラメーターを含めない場合は、すべてのサービス エリアが返されます。
-- **TenantName=<tenant_name>** — Office 365 のテナント名です。 この web サービスでは、指定した名前を テナント名を含む URL の一部に挿入します。 テナント名を指定しない場合、URL のそれらの部分にワイルドカード文字が使用されます (\*)。
-- **NoIPv6=<true | false>** — お使いのネットワークで IPv6 を使用しない場合は、値を _true_ に設定して出力から IPv6 アドレスを除外します。
-- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** — このパラメーターはエンドポイントを返すインスタンスを指定します。 有効なインスタンスは、_Worldwide_、_China_、_Germany_、_USGovDoD_、_USGovGCCHigh_ です。
+- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** — サービス エリアのコンマ区切りのリストです。 有効な項目は、_Common_、_Exchange_、_SharePoint_、および _Skype_ です。 _Common_ サービス エリア項目はその他のすべてのサービス エリアの前提条件であるため、Web サービスに常に含まれます。 このパラメーターを含めない場合は、すべてのサービス エリアが返されます。
+- **TenantName=\<tenant_name\>** — Office 365 のテナント名です。 この web サービスでは、指定した名前を テナント名を含む URL の一部に挿入します。 テナント名を指定しない場合、URL のそれらの部分にワイルドカード文字が使用されます (\*)。
+- **NoIPv6=\<true \| false\>** — お使いのネットワークで IPv6 を使用しない場合は、値を _true_ に設定して出力から IPv6 アドレスを除外します。
+- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — このパラメーターはエンドポイントを返すインスタンスを指定します。 有効なインスタンスは、_Worldwide_、_China_、_Germany_、_USGovDoD_、_USGovGCCHigh_ です。
 
 同じクライアント IP アドレスからのエンドポイント Web メソッドの呼び出し回数が多すぎる場合、 HTTP Response Code _429 (要求が多すぎます)_ の応答コードが返される場合があります。 この応答コードを受け取った場合、リクエストを再度行うまでに 1 時間待つか、リクエスト用に新しい GUID を生成します。 一般的なベスト プラクティスとして、バージョン Web メソッドで新しいバージョンのデータが使用可能だと示された場合にのみ、エンドポイント Web メソッドを呼び出すようにします。
 
@@ -201,9 +201,9 @@ Worldwide,2018063000
 - required - Office 365 のサポートを受けるためにこのエンドポイント セットの接続性が必要な場合は _True_。このエンドポイント セットが省略可能な場合は _False_。
 - notes — このテキストは、省略可能のエンドポイントについて、ネットワーク層でこのエンドポイント セットの IP アドレスまたは URL にアクセスできない場合に利用できなくなる Office 365 の機能について説明します。空白の場合は省略します。
 
-### <a name="examples"></a>例:
+### <a name="endpoints-web-method-examples"></a>エンドポイント web メソッドの例
 
-例 1 要求 URI: [https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+例 1 要求 URI: <https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 この URI は、すべてのワークロードの Office 365 ワールドワイド インスタンスのすべてのエンドポイントを取得します。出力の抜粋を示す結果の例:
 
@@ -280,9 +280,9 @@ Worldwide,2018063000
   — ips — _ips_ 配列から削除する項目です。
   — urls- _urls_ 配列から削除する項目です。
 
-### <a name="examples"></a>例:
+### <a name="changes-web-method-examples"></a>変更 Web メソッドの例
 
-例 1 要求 URI: [https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+例 1 要求 URI: <https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 これにより、Office 365 ワールドワイド サービス インスタンスに対する以前の変更がすべて要求されます。結果の例:
 
@@ -320,7 +320,7 @@ Worldwide,2018063000
      [
 ```
 
-例 2 要求 URI: [https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
+例 2 要求 URI: <https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 これにより、指定したバージョン以降の Office 365 ワールドワイド インスタンスへの変更が要求されます。この場合、指定されたバージョンは最新のものです。結果の例:
 
@@ -351,7 +351,7 @@ Worldwide,2018063000
 ]
 ```
 
-## <a name="example-powershell-script"></a>PowerShell スクリプト
+## <a name="example-powershell-script"></a>PowerShell のサンプル スクリプト
 
 更新されたデータに対して行う必要があるアクションがあるかどうかを確認するには、この PowerShell スクリプトを実行します。 このスクリプトは、バージョンの更新を確認するために、スケジュールされたタスクとして実行できます。 Web サービスへ過剰な負荷を与えないために、スクリプトは 1 時間に 1 回以上実行しないようにします。
 

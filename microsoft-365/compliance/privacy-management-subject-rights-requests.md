@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft プライバシー管理のサブジェクト権限要求ソリューションは、個人データを検索し、コンテンツのレビューとレポートの作成に関して共同作業を行う際に役立ちます。
-ms.openlocfilehash: b1f92aa7b5e6f8117d8e3a4af758f13d6c91fe99
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: b266708c97ee4b81af6ba61dfa6716c57ff6026e
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378532"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419777"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>プライバシー管理で件名の権利要求を管理する (プレビュー)
 
@@ -47,7 +47,7 @@ ms.locfileid: "53378532"
 
 ## <a name="create-a-request"></a>要求を作成する
 
-サブジェクト権限管理管理者は、プライバシー管理のウィザードを使用して要求を作成できます。 このウィザードでは、データ主体に関する個人データを検索し、その要求を満たすプロセスについて説明します。
+サブジェクト権限管理管理者は、プライバシー管理のウィザードを使用して要求を作成できます。 ウィザードは、データ主体に関する個人データを検索し、その要求を満たすプロセスを案内します。
 
 4 つの主な手順は次のとおりです。
 
@@ -127,7 +127,7 @@ ms.locfileid: "53378532"
 
 検索クエリの編集が完了すると、以前の検索結果を置き換える新しい検索が実行されます。 これにより、[進行状況] セクションの状態が最初の手順である [データ推定] **にリセットされます**。 新しい検索の完了には最大 60 分かかる場合があります。 完了すると、要求の詳細ページに更新された結果が表示されます。
 
-### <a name="data-retention"></a>データ保存期間
+### <a name="data-retention"></a>データ保持
 
 このツールを使用して生成されたレポートと、Azure に保存された注釈付きファイルなどの関連データは、指定された期間保存されます。 この期間は、[データ保持期間] セクション **設定を通** じてグローバルレベルで定義され、30 日から 90 日間の間で選択できます。 詳細については、「プライバシー管理の [開始」を参照してください](privacy-management-setup.md)。
 

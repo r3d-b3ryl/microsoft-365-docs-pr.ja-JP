@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 グループでは、メンバーは会話用のグループ メールおよび共有ワークスペース、ファイル、カレンダー イベント、ストリーム、Planner を利用できます。
-ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 12da954beb4d019b7652ef4df2e18cb30ff542ed
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377183"
+ms.locfileid: "53393261"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
@@ -50,6 +51,8 @@ Microsoft 365 グループは [Azure Active Directory の動的メンバーシ�
 Microsoft 365 グループには、Outlook for iOS や Outlook for Android などのモバイル アプリからアクセスできます。
 
 グループ メンバーは、[管理者によって有効にされている](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)場合、グループのメール アドレスとして送信したり、グループのメール アドレスの代わりに送信したりできます。
+
+Microsoft 365 グループは、他の Microsoft 365 グループ、または配布グループやセキュリティ グループとのネストをサポートしていません。
 
 ## <a name="distribution-groups"></a>配布グループ
 
@@ -97,5 +100,8 @@ Microsoft 365 グループは、セキュリティ グループのメンバー�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 グループについて](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (記事)\
-[Outlook で配布リストをグループにアップグレードする理由](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (記事)
+[Microsoft 365 グループについて](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[Outlook で配布リストを Microsoft 365 グループにアップグレードする](/microsoft-365/admin/manage/upgrade-distribution-lists)
+
+[Outlook で配布リストをグループにアップグレードする理由](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

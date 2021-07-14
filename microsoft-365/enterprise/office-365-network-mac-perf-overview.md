@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: ネットワーク接続の概要 (Microsoft 365 管理 センター)
-ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 05247c73bec3a11905890d26db84f8fe1a288a99
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53277003"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419801"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 センターのネットワーク接続
 
@@ -78,7 +78,7 @@ WindowsLocation Service は、コンピューター上で同意する必要が�
 測定サンプルとオフィスの場所は、テスト レポートが完了した 2 ~ 3 分後に表示されます。 詳細については、「ネットワーク接続[Microsoft 365テスト」を参照してください](office-365-network-mac-perf-onboarding-tool.md)。
 
 > [!NOTE]
-> Microsoft 365 管理センター のネットワーク接続にMicrosoft 365場所を追加する場合は、LAN サブネットに IPv4 アドレスまたは IPv6 アドレスを指定できます。 EgressIP アドレスは IPv4 を使用する必要があります。
+> 現時点では、Microsoft 365 管理センター で Microsoft 365 ネットワーク接続にオフィスの場所を追加する場合、LAN サブネットに IPv4 アドレスのみを指定できます。 EgressIP アドレスは IPv4 を使用する必要があります。
 
 ## <a name="how-do-i-use-this-information"></a>この情報を使用する方法
 
@@ -149,7 +149,7 @@ Microsoft には、デスクトップクライアントと web クライアン�
 - **SharePoint最適** なサービス フロント ドア - このオフィスの場所のユーザーが接続する必要SharePointサービス フロント ドアの 1 つ
 - **SharePoint最適** ではないサービス フロント ドア - ユーザー SharePoint接続されているが、推奨されないサービス フロント ドア
 - **DNS 再帰的リゾルバー サーバー** - 検出された DNS 再帰的リゾルバーの geo IP データベースからの場所 (使用可能な場合Exchange Online)
-- **プロキシ サーバー** - 検出されたプロキシ サーバーの geo IP データベースからの場所 (使用可能な場合) 
+- **プロキシ サーバー** - 検出されたプロキシ サーバーの geo IP データベースからの場所 (使用可能な場合)
 
 さらに、オフィスの場所の概要ページには、場所のネットワーク評価、ネットワーク評価履歴、この場所の評価と同じ都市の他の顧客との比較、およびネットワークのパフォーマンスと信頼性を向上させるために実施できる特定の洞察と推奨事項の一覧が表示されます。
 
@@ -161,7 +161,6 @@ Microsoft には、デスクトップクライアントと web クライアン�
 
 > [!div class="mx-imgBorder"]
 > ![場所固有の詳細](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
-
 
 ## <a name="sharing-network-assessment-data-with-microsoft"></a>ネットワーク評価データを Microsoft と共有する
 
@@ -189,9 +188,9 @@ CSV ファイルでは、検出された都市の場所が userEntered 列に空
    1. **アドレス** (必須): オフィスの物理アドレス
    1. **Latitude** (省略可能): 空白の場合、Bingの参照をマップする場所から設定されます。
    1. **経** 度 (省略可能): 空白の場合、Bingの参照をマップするデータから入力されます。
-   1. **Egress IP アドレス範囲 1 ~ 5** (オプション): 各範囲に対して、回線名の後に有効な IPv4 または IPv6 CIDR アドレスのスペース区切りリストを入力します。 これらの値は、同じ LAN サブネット IP アドレスを使用する複数のオフィスの場所を区別するために使用されます。 EgressIP アドレス範囲はすべて /24 ネットワーク サイズで、/24 は入力に含まれません。
+   1. **Egress IP アドレス範囲 1 ~ 5** (オプション): 各範囲に対して、回線名と有効な IPv4 CIDR アドレスのスペース区切りリストを入力します。 これらの値は、同じ LAN サブネット IP アドレスを使用する複数のオフィスの場所を区別するために使用されます。 EgressIP アドレス範囲はすべて /24 ネットワーク サイズで、/24 は入力に含まれません。
    1. **LanIps** (必須): このオフィスの場所で使用されている LAN サブネット範囲を一覧表示します。 LAN サブネットの IP には、ネットワーク サイズが /8 ~ /29 の間である CIDR ネットワーク サイズが含まれている必要があります。 複数の LAN サブネット範囲をコンマまたはセミコロンで区切ります。
-   
+
 1. オフィスの場所を追加してファイルを保存したら、完了したフィールドの横にある [参照] アップロードをクリックし、**保存** した CSV ファイルを選択します。
 
 1. ファイルは自動的に検証されます。 検証エラーがある場合は、エラー メッセージが表示されます。インポート ファイルにいくつかの _エラーがあります。エラーを確認し、インポート ファイルを修正してから、もう一度やり直してください。_ [エラーの詳細 **を開く] リンクをクリック** して、特定のフィールド検証エラーの一覧を表示します。
