@@ -20,19 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b852071c3fbfe12aac62e1d309fa130a4cd81e9c
-ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
+ms.openlocfilehash: 088dbd16c3667331843ff934c80f85aa8d3a837f
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53125400"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430818"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defenderプレビュー機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-> [!IMPORTANT]
-> プレビュー バージョンはサービス レベル契約なしで提供され、実稼働ワークロードには推奨されません。 一部の機能はサポートされていないか、制限された機能を持っている可能性があります。
 
 **適用対象:**
 - Microsoft 365 Defender
@@ -42,6 +39,19 @@ ms.locfileid: "53125400"
 プレビュー リリースの新機能Microsoft 365 Defender、プレビュー エクスペリエンスをオンにして、今後の機能を最初に試してみてください。
 
 一般に利用可能な新機能の詳細については、「新機能」を参照[Microsoft 365 Defender。](whats-new.md)
+
+ ## <a name="what-you-need-to-know"></a>知る必要があるもの
+
+パブリック プレビューで機能を操作する場合は、次の機能を使用します。
+
+- 機能が制限または制限されている可能性があります。 たとえば、この機能は 1 つのプラットフォームにのみ適用できます。
+- 通常、機能の変更は、一般に利用できる (GA) 前に行います。
+- Microsoft で完全にサポートされています。
+- 選択した地域またはクラウド環境でのみ使用できます。 たとえば、この機能が政府機関のクラウドに存在しない可能性があります。
+- プレビューの個々の機能には、使用およびサポートの制限が多い場合があります。 その場合、この情報は通常、機能のドキュメントに示されています。
+- プレビュー バージョンは標準のサポート レベルで提供され、実稼働環境で使用できます。 
+
+
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 

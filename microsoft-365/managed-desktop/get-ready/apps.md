@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 571acc9c240fc0243998050ac3013258a2f85a3e
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 37f533f34753d66d975cb557239b2b168ac78f8e
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028946"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430770"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのアプリ
 
@@ -25,45 +25,45 @@ ms.locfileid: "52028946"
  
 ## <a name="apps-generally"></a>一般にアプリ
 
-Microsoft には、Microsoft Managed Desktop への参加に必要な Microsoft 365 E3 または E5 ライセンスと共に、特定の主要アプリが含まれています。 ただし、これらのアプリを提供する場合でも、実行する一定の責任とアクションがあります。
+Microsoft には、特定の主要なアプリと、Microsoft 365 E3または E5 ライセンスが含Microsoft マネージド デスクトップ。 ただし、これらのアプリを提供する場合でも、実行する一定の責任とアクションがあります。
 
-また、Microsoft Intune の展開パイプラインを使用して、追加の Microsoft 以外のアプリをセルフサービス用にユーザーに展開したり、必要なバックグラウンド インストールを実行したりすることもできます。 
+また、ポータル サイト Microsoft Intune または必要なバックグラウンド インストールを通じて、ポータル サイト の展開パイプラインを使用して、ユーザーに追加の Microsoft 以外のアプリを展開することもできます。 
 
 ## <a name="apps-provided-by-microsoft"></a>Microsoft が提供するアプリ
 
-Microsoft Managed Desktop ライセンスには、Microsoft 365 Apps for enterprise Standard Suite (Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、OneNote) の 64 ビット バージョンのアプリが含まれています。クイック実行バージョンの Microsoft Project と Visioは既定では含まれていませんが、追加を要求できます。 これらのアプリの詳細については、「Microsoft マネージ デスクトップ デバイスに Microsoft Project または Microsoft Visio をインストールする [」を参照してください](../get-started/project-visio.md)。
+Microsoft マネージド デスクトップ ライセンスには、Microsoft 365 Apps for enterprise Standard Suite の 64 ビット バージョンのアプリ (Word、Excel、PowerPoint、PowerPoint、Outlook、Publisher、Access、Teams、OneNote) が含まれています。クイック実行のMicrosoft ProjectおよびVisioは既定では含まれませんが、追加を要求できます。  これらのアプリの詳細については、「デバイスにインストールMicrosoft Project[または Microsoft Visio」をMicrosoft マネージド デスクトップしてください](../get-started/project-visio.md)。
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Microsoft が提供するアプリをサポートするために行う機能
 
-Microsoft は、付属の Microsoft 365 Apps for enterprise Apps の展開、更新、およびサポートのためのフル サービスを提供します。 クイック実行バージョンの Microsoft Project と Visioは既定では含まれていませんが、Microsoft Managed Desktop には展開グループが提供され、IT 管理者はライセンスを管理し、組織に合わせてこれらのアプリケーションを適切に展開できます。 Microsoft は、Microsoft Managed Desktop サポート チャネルを通じてこれらのアプリケーションのユーザーをサポートします。
+Microsoft は、付属のアプリの展開、更新、およびサポートのためのフル サービスMicrosoft 365 Apps for enterpriseします。 クイック実行 Microsoft Project と Visio のバージョンは既定では含まれていませんが、Microsoft マネージド デスクトップ には展開グループが提供され、IT 管理者はライセンスを管理し、組織に合わせてこれらのアプリケーションを適切に展開できます。 Microsoft は、これらのアプリケーションのユーザーをサポートチャネルを通Microsoft マネージド デスクトップサポートします。
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>提供するアプリをサポートするために必要な操作
 
 これらのアプリで行う必要がある特定の操作がまだ存在します。
 
-- **ライセンスの割り** 当て - Microsoft 365 Apps for enterprise のユーザーに適切なライセンスを取得して割り当てる責任があります。
-- **セキュリティ グループにユーザーを追加** する - Microsoft Project または Visio を使用している場合、IT 管理者はそれらのユーザーを適切な展開グループに追加する必要があります。 IT 管理者は、会社を離れた場合にそれらのユーザーからライセンスを再利用する責任も負います。
-- **Microsoft 365** アドオンを展開する - エンタープライズ アプリ用の Microsoft 365 アプリのアドオンが必要な場合は、他の Windows 32 アプリと同様に一中心に展開します。 
+- **ライセンスの割り** 当て - ユーザーに適切なライセンスを取得し、ユーザーに割り当てるMicrosoft 365 Apps for enterprise。
+- **セキュリティ グループにユーザー** を追加する - Microsoft Project または Visioを使用している場合、IT 管理者はそれらのユーザーを適切な展開グループに追加する必要があります。 IT 管理者は、会社を離れた場合にそれらのユーザーからライセンスを再利用する責任も負います。
+- **[Microsoft 365 アドオン** を展開する - Microsoft 365 Apps for enterprise アプリのアドオンが必要な場合は、他の Windows 32 アプリと同様に一Windows展開します。 
 
 ## <a name="apps-you-provide"></a>提供するアプリ
 
-ビジネス操作に必要な他のアプリがある可能性があります。 これらのアプリは、Microsoft Intune の展開パイプラインを使用して Microsoft Managed Desktop デバイスにのみ展開できます。 アプリケーションの展開の詳細については、「アプリを Microsoft Managed Desktop デバイスに展開 [する」の手順に従います](../get-started/deploy-apps.md)。
+ビジネス操作に必要な他のアプリがある可能性があります。 これらのアプリは、アプリの展開パイプラインMicrosoft マネージド デスクトップ使用して、Microsoft Intuneデバイスにのみ展開できます。 アプリケーションの展開の詳細については、「アプリをデバイスに展開する」[のMicrosoft マネージド デスクトップします](../get-started/deploy-apps.md)。
 
-### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Microsoft Managed Desktop に含める独自のアプリを準備する
+### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>アプリに含める独自のアプリを準備Microsoft マネージド デスクトップ
 アプリを確認し、次のチェックを行います。
 
-- Microsoft [Managed Desktop](../service-description/mmd-app-requirements.md)アプリの要件で説明されているとおり、禁止または制限された動作を持つアプリはありません。
-- アプリは、Microsoft Intune による管理の準備ができている必要があります。 このトピックの詳細については、「Microsoft Intune を使用した [Windows 10 アプリ](/intune/apps-windows-10-app-deploy) の展開」および「Microsoft Intune にアプリを追加する」 [を参照してください](/intune/apps-add)。
+- 「アプリの要件」で説明されているとおり、どのアプリも禁止または制限[Microsoft マネージド デスクトップはありません](../service-description/mmd-app-requirements.md)。
+- アプリは、ユーザーが管理できる状態Microsoft Intune。 このトピックの詳細については、「アプリを使用[Windows 10アプリ](/intune/apps-windows-10-app-deploy)の展開Microsoft Intune」および「アプリの追加」[を参照](/intune/apps-add)Microsoft Intune。
 - ライセンス キーの提供、ライセンス条項との契約、サーバー接続の事前設定など、その他の事前パッケージ化要件。
 
 ## <a name="steps-to-get-ready"></a>準備の手順
 
-1. 「Microsoft [Managed Desktop の前提条件」を参照してください](prerequisites.md)。
+1. 詳細については[、「前提条件」をMicrosoft マネージド デスクトップ。](prerequisites.md)
 2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。
 3. [ゲスト アカウントの前提条件](guest-accounts.md)
 4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
 5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
 6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
-7. [Microsoft Managed Desktop のアプリ](apps.md) (この記事)
+7. [アプリのMicrosoft マネージド デスクトップ](apps.md)(この記事)
 8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
 9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)

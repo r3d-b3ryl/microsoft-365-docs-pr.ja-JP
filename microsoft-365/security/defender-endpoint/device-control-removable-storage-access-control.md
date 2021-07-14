@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 801d94eb769c6b738a1d4c011b67f8a2a7cf81f1
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327049"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430806"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -39,6 +39,13 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 |GPO サポート    |   はい      |
 |ユーザー ベースのサポート     |   はい      |
 |コンピューター ベースのサポート    |    はい     |
+
+## <a name="licensing"></a>ライセンス
+
+リムーバブル アクセス制御の使用を開始するStorage、サブスクリプション[を確認Microsoft 365必要があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 リムーバブル アクセス制御にアクセスして使用Storage、次の情報が必要です。
+
+- Microsoft 365 E3/ポリシーの展開に関する情報を提供します。
+- Microsoft 365 E5レポートの場合。
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
@@ -272,8 +279,6 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
       ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
 
     - データ型: 文字列 (XML ファイル)
-    
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="STRING データ型の xml ファイル":::
 
 2. ポリシーごとに、OMA-URI も作成します。
 
@@ -287,7 +292,6 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
 
     - データ型: 文字列 (XML ファイル)
 
-      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="STRING データ型の XML ファイルの表示":::
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Intune ユーザー インターフェイスを使用したポリシーの展開と管理
 

@@ -16,18 +16,29 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 3e057677b7d8ef4e74abe705bc3b23e8ea539853
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: bee4c2d01579733ff7b1c5583b00cdd48e437af2
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326761"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430542"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>インサイダーリスクMicrosoft 365
 
 従業員は、幅広いプラットフォームとサービスでデータを作成、管理、共有するためのアクセスが増えています。 ほとんどの場合、組織には、コンプライアンス要件と従業員のプライバシー基準を満たしながら、組織全体のリスクを特定および軽減するためのリソースとツールが限られています。 これらのリスクには、従業員を退出してデータを盗み、偶発的な過剰共有や悪意のある意図による組織外の情報のデータ漏洩が含まれる場合があります。
 
 Microsoft 365の Insider リスク管理は、サービスとサードパーティのインジケーターの全幅を使用して、リスクの高いユーザー アクティビティをすばやく特定し、トリアージし、行動するのに役立ちます。 Microsoft 365 および Microsoft Graph のログを使用すると、インサイダー リスク管理を使用して、リスク インジケーターを特定し、これらのリスクを軽減するためのアクションを実行するための特定のポリシーを定義できます。
+
+以下のビデオを見て、組織の価値、文化、およびユーザー エクスペリエンスを優先しながら、組織がリスクを防止、検出、および含むのに役立つインサイダー リスク管理の方法について説明します。
+<br>
+<br>
+
+**開発に関するインサイダー&管理ソリューション**:
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
+<br>
+
+**Insider リスク管理ワークフロー**:
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## <a name="configure-insider-risk-management-for-microsoft-365"></a>インサイダー リスク管理を構成Microsoft 365
 
@@ -44,5 +55,5 @@ Microsoft 365の Insider リスク管理は、サービスとサードパーテ�
 ## <a name="more-information-about-insider-risk-management"></a>インサイダー リスク管理の詳細
 
 - [インサイダー リスク ポリシーの管理](insider-risk-management-policies.md)
-- [インサイダー リスクのアクティビティを調査する](insider-risk-management-activities.md)
+- [インサイダー リスク アクティビティを調査する](insider-risk-management-activities.md)
 - [インサイダー リスク ケースに関する法律](insider-risk-management-cases.md)

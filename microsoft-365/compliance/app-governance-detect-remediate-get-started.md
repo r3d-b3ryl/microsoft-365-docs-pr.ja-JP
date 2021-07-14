@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリの脅威の検出と修復を開始する。
-ms.openlocfilehash: 6229d2cf94ec1ba892929f399fe49cf88da608d1
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 77de3676a9a486bbed572a4a16bf62ad4d038406
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420339"
+ms.locfileid: "53430722"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>アプリの脅威の検出と修復を開始する
 
@@ -27,7 +27,7 @@ ms.locfileid: "53420339"
 
 Microsoft アプリ ガバナンスは、悪意のあるアプリに基づいて組み込みのアプリ ガバナンス検出方法により生成された脅威アラート、および作成したアクティブなアプリ ポリシーによって生成されたポリシー ベースのアラートを収集します。
 
-アプリのアラートを表示する最初の場所は、[https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance) のアプリ ガバナンス ダッシュボードです。
+アプリのアラートを表示する最初の場所は、[https://aka.ms/appgovernance](https://aka.ms/appgovernance) のアプリ ガバナンス ダッシュボードです。
 
 ![Microsoft 365 コンプライアンス センターの [検出とポリシーアラート] セクションが強調表示されている [アプリ ガバナンスの概要] ページ](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 

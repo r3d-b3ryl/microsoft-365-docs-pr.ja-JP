@@ -15,21 +15,27 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 0dae2d65e88c8a5ad4bc6c39e8ea540f55d0f822
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: e033142567c0eb33987cae6d840abf5f6422365e
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326749"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430602"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>インサイダー リスク管理の詳細については、Microsoft 365
 
 Insider リスク管理は Microsoft 365 のコンプライアンス ソリューションであり、組織内の悪意のある不注意なアクティビティを検出、調査、および処理することで、内部リスクを最小限に抑えるのに役立ちます。 Insider リスク ポリシーを使用すると、ケースに対応し、必要に応じて Microsoft Advanced eDiscovery にケースをエスカレートするなど、組織内で特定および検出するリスクの種類を定義できます。 組織内のリスク アナリストは、適切なアクションを迅速に実行して、ユーザーが組織のコンプライアンス基準に準拠している必要があります。
 
-以下のビデオを見て、組織の価値、文化、およびユーザー エクスペリエンスの優先順位を付けながら、組織がリスクを防止、検出、および含むのに役立つインサイダー リスク管理の方法について説明します。
+以下のビデオを見て、組織の価値、文化、およびユーザー エクスペリエンスを優先しながら、組織がリスクを防止、検出、および含むのに役立つインサイダー リスク管理の方法について説明します。
 <br>
 <br>
+
+**開発に関するインサイダー&管理ソリューション**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
+<br>
+
+**Insider リスク管理ワークフロー**:
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## <a name="modern-risk-pain-points"></a>最新のリスクの痛みのポイント
 
@@ -120,7 +126,7 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 さらに、新しい [監査ログ (プレビュー)](insider-risk-management-audit-log.md) を使用すると、インサイダー リスク管理機能で実行されたアクションについて情報を得られます。 このリソースを使用すると、1 つ以上のインサイダー リスク管理役割グループに割り当てられたユーザーが実行したアクションを個別に確認できます。
 
-### <a name="action"></a>アクション
+### <a name="action"></a>操作
 
 ケースを調査した後、レビュー担当者は迅速に行動してケースを解決したり、組織内の他のリスク関係者と共同作業を行います。 ユーザーがポリシー条件に誤って違反した場合、組織に合わせてカスタマイズできる通知テンプレートから、簡単な通知通知をユーザーに送信できます。 これらの通知は、簡単なリマインダーとして機能する場合や、将来の危険な動作を防ぐためのトレーニングやガイダンスの更新をユーザーに指示する場合があります。 詳細については [、「Insider リスク管理通知テンプレート」を参照してください](insider-risk-management-notices.md)。
 

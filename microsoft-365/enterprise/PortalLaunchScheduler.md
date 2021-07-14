@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、ポータル起動スケジューラを使用してポータルを起動する方法について説明します。
-ms.openlocfilehash: a0ba40849b47af93f45bcc9c77f2ba6d8f715dc5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: dd2b6bdabae5f4d24882912709d6f16a637a9721
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229553"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430422"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>ポータル起動スケジューラを使用してSharePointを起動する
 
@@ -117,15 +117,21 @@ ms.locfileid: "53229553"
 
     > [!NOTE]
     > 起動全体で最大 50 の異なるユーザーまたはセキュリティ グループを使用できます。 各起動は互いに独立しています。そのため、別のポータルで起動をスケジュールする場合は、その起動に最大 50 のユーザー/セキュリティ グループを使用できます。 さらに、ウェーブごとに最大 20 の異なるユーザーまたはセキュリティ グループを使用できます。 
-
->ポータル起動スケジューラは、セキュリティ グループとメールが有効なセキュリティ グループをサポートします。 
-
+    >
+    > ポータル起動スケジューラは、セキュリティ グループとメールが有効なセキュリティ グループをサポートします。 
 
 8. ポータルの起動の詳細を確認し、[スケジュール] を **選択します**。 起動がスケジュールされると、ポータルの起動が再開される前に、SharePoint ポータルのホーム ページに対する変更は正常な診断結果を受け取る必要があります。
 
 ### <a name="launch-a-portal-with-over-100k-users"></a>100k ユーザーを超えるポータルを起動する
 
 100,000 人を超えるユーザーを含むポータルを起動する予定の場合は、以下の手順に従ってサポート要求を送信します。 要求された情報はすべて必ず含める必要があります。
+
+> [!NOTE]
+>
+> - このプロセスは、次の要件を満たしている場合にのみ実行する必要があります。
+> - 起動ページが完成しました。
+> - [ポータルの正常性ガイダンス](https://aka.ms/portalhealth) に従っています。
+> - 起動日は 14 日以内です。
 
 **次の手順を実行します。**
 
@@ -160,7 +166,7 @@ ms.locfileid: "53229553"
 
 2. 次に、[ **削除] を選択** し、下にメッセージが表示された場合は、[削除] を再度 **選択** します。
 
-   ![ポータル起動スケジューラ ツールのイメージ](../media/portal-launch-delete-2.png)
+   ![スケジュールされた起動を削除または保持する必要がある場合に表示されるプロンプトの画像](../media/portal-launch-delete-2.png)
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>PowerShell Portal 起動スケジューラを使用する
 
@@ -270,7 +276,7 @@ ms.locfileid: "53229553"
 
 2. すべてのユーザーに対してリダイレクトが実行されなかろうと検証します。
 
-## <a name="learn-more"></a>詳細を見る
+## <a name="learn-more"></a>詳細情報
 
 [オンラインでポータルの起動ロールアウト計画をSharePointする](./planportallaunchroll-out.md)
 

@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリのコンプライアンスへの取り組みを決定する。
-ms.openlocfilehash: 3d7cac319c31bac40a3aad2f6b9a4c16303f6a20
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 2fde19e385d4797e04c8f991efa673d33cea3b58
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420251"
+ms.locfileid: "53430674"
 ---
 # <a name="determine-your-app-compliance-posture"></a>アプリのコンプライアンスへの取り組みを決定する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-Microsoft アプリ ガバナンスを使用すると、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/appgovernance)のアプリ ガバナンスの概要ページから、サード パーティ製アプリのコンプライアンスへの取り組みと、Microsoft 365 テナント内のデータへのアクセスを迅速に評価できます。
+Microsoft アプリ ガバナンスを使用すると、[Microsoft 365 コンプライアンス センター](https://aka.ms/appgovernance)のアプリ ガバナンスの概要ページから、サード パーティ製アプリのコンプライアンスへの取り組みと、Microsoft 365 テナント内のデータへのアクセスを迅速に評価できます。
 
 ![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス概要] ページ](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
