@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 60a1f21e65df007e78077d8c3bb22161313c1073
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: bee35191e7e80313521891a1efc1780489902ae8
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759908"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394329"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターにおける Intune 管理者の役割
 
-Microsoft 365 または Office 365 サブスクリプションには、Microsoft 365 管理センターを使用して組織内のユーザーに割り当てることができる管理者ロールセットがあります。 各管理者ロールは、一般的なビジネス機能にマップされ、組織内のユーザーに管理センターで特定のタスクを実行する許可を与えます。
+Microsoft 365 または Office 365 のサブスクリプションには、Microsoft 365 管理センターを使用して組織内のユーザーに割り当てることができる一連の管理者ロールがあります。各管理者ロールは一般的なビジネス機能に対応し、組織のユーザーに、管理センターで特定のタスクを実行するためのアクセス許可を付与します。
 
 Microsoft 365 管理センターを使用すると、Microsoft Intune の役割を管理できます。 ただし、これらの役割は、Intune 管理センターで使用可能な役割のサブセットです。 Microsoft Intune の役割の詳細な説明をお探しですか ? 「[Microsoft Intune の役割ベースのアクセス制御 (RBAC)](/mem/intune/fundamentals/role-based-access-control)」を確認してください。
 
@@ -46,7 +47,7 @@ Microsoft 365 管理センターで、[**役割**] に移動し、任意の役�
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Microsoft パートナーの代理管理
 
-Microsoft パートナーと連携している場合、パートナーに管理者ロールを割り当てることができます。 次に、彼らはあなたの会社のユーザーまたはその会社の管理者ロールを割り当てることができます。 たとえば、彼らがあなたのためにオンライン組織をセットアップし管理している場合、彼らにして欲しいのはこれかもしれません。
+Microsoft パートナーと連携している場合、パートナーに管理者ロールを割り当てることができます。同様にパートナーは、お客様の会社 (またはパートナー会社) のユーザーに管理者ロールを割り当てることができます。たとえば、パートナーがあなたのためにオンライン組織を設定して管理している場合に行えます。
   
 パートナーは、次の役割を割り当てることができます。
   
@@ -56,10 +57,8 @@ Microsoft パートナーと連携している場合、パートナーに管理�
 
 パートナーがこれらの役割をユーザーに割り当てる前に、パートナーを代理管理者としてアカウントに追加する必要があります。 このプロセスは認定パートナーによって開始されます。 パートナーは管理者に電子メールを送信し、代理管理者となる権限を割り当てるかどうか質問します。手順については、「[パートナー リレーションシップの承認または削除](../misc/add-partner.md)」を参照してください。
   
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 管理者ロールについて](about-admin-roles.md)
-
-[管理者の役割を割り当てる](assign-admin-roles.md)
-
-[Microsoft 365 管理センターのアクティビティ レポート](../activity-reports/activity-reports.md)
+[Microsoft 365 管理者ロールについて](about-admin-roles.md) (記事)\
+[管理者ロールの割り当て](assign-admin-roles.md) (記事)\
+[Microsoft 365 管理センターのアクティビティ レポート](../activity-reports/activity-reports.md) (記事)

@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,16 +25,16 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 480e09e42ea53cc78cd738a6e0650feae7a9f8c8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7ee6f3a7fc01fa998e3b984683ddad1402fe5587
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635952"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393621"
 ---
-# <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
+# <a name="set-up-multifactor-authentication"></a>多要素認証を設定する
 
-[多要素認証 (MFA) を理解し、Microsoft 365 でサポートされていること](multi-factor-authentication-microsoft-365.md)を理解したら、それを設定し、組織にロールアウトします。
+[多要素認証 (MFA) および Microsoft 365 のサポート](multi-factor-authentication-microsoft-365.md)を理解して、多要素認証を組織に設定し、展開します。
 
 > [!IMPORTANT]
 > 2019 年 10 月 21 日以降にサブスクリプションまたは試用版を購入した場合、サインインすると MFA を要求するメッセージが表示され、[セキュリティの既定](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)の設定は、サブスクリプションに対して自動的に有効になります。
@@ -42,7 +44,7 @@ ms.locfileid: "52635952"
 - MFA を管理するには、グローバル管理者である必要があります。 詳細については、「[管理者の役割について](../add-users/about-admin-roles.md)」を参照してください。
 - 従来のユーザーごとの MFA をオンにしている場合は、[従来のユーザーごとの MFA をオフにします](#turn-off-legacy-per-user-mfa)。
 - Windows デバイスで Office 2013 クライアントを使用している場合は、[Office 2013 クライアントの最新のライセンス認証をオンにします](./enable-modern-authentication.md)。
-- 高度: Active Directory フェデレーション サービス (AD FS) を使用しているサードパーティのディレクトリ サービスがある場合は、Azure MFA Server をセットアップします。 詳細については、「[Azure AD 多要素認証およびサードパーティ製の VPN ソリューションでの高度なシナリオ](/azure/active-directory/authentication/howto-mfaserver-nps-vpn)」 を参照してください。
+- 高度: Active Directory フェデレーション サービス (AD FS) を使用しているサードパーティのディレクトリ サービスがある場合は、Azure MFA Server をセットアップします。 詳細については、「[Azure AD Multifactor Authentication およびサード パーティ製 VPN ソリューションでの高度なシナリオ](/azure/active-directory/authentication/howto-mfaserver-nps-vpn)」を参照してください。
 
 ## <a name="turn-security-defaults-on-or-off"></a>セキュリティの既定値をオンまたはオフにする
 
@@ -104,5 +106,5 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ビデオ: 多要素認証をオンにする](../../business-video/turn-on-mfa.md) (ビデオ)\
+[多要素認証をオンにする](../../business-video/turn-on-mfa.md) (ビデオ)\
 [スマートフォンの多要素認証をオンにする](../../business-video/set-up-mfa.md) (ビデオ)

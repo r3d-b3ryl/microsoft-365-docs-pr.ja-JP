@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/06/2021
+ms.date: 07/13/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 2265f3680e425ade062d444685fbd8873eaa02ca
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f9ecade23964db88076347b3a89085b25c1b1538
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274978"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415565"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>ビジネスMicrosoft Defender ウイルス対策管理する
 
@@ -31,6 +31,7 @@ ms.locfileid: "52274978"
 **適用対象:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
 
 次のツールを使用してMicrosoft Defender ウイルス対策を管理および構成できます。
 
@@ -49,4 +50,4 @@ ms.locfileid: "52274978"
 |[グループ Microsoft Defender ウイルス対策設定を使用して管理する](use-group-policy-microsoft-defender-antivirus.md)|ADMX テンプレートにあるすべてのグループ ポリシー設定の一覧 |
 |[PowerShell コマンドレットMicrosoft Defender ウイルス対策の管理](use-powershell-cmdlets-microsoft-defender-antivirus.md)|PowerShell コマンドレットを使用して、すべてのコマンドレットMicrosoft Defender ウイルス対策許可されたパラメーターのドキュメントへのリンクを管理する手順 |
 |[管理Microsoft Defender ウイルス対策 (WMI) Windowsを使用して管理する](use-wmi-microsoft-defender-antivirus.md)| WMI を使用してドキュメントを管理Microsoft Defender ウイルス対策、WMIv2 API のドキュメントへのリンク (すべてのクラス、メソッド、およびプロパティを含む) |
-|[コマンド ライン Microsoft Defender ウイルス対策ツールmpcmdrun.exeを管理する](command-line-arguments-microsoft-defender-antivirus.md)|専用のコマンド ライン ツールを使用してコマンド ライン ツールを管理および使用するMicrosoft Defender ウイルス対策 |
+|[コマンド ライン Microsoft Defender ウイルス対策ツールMpCmdRun.exeを管理する](command-line-arguments-microsoft-defender-antivirus.md)| 専用のコマンド ライン ツールを使用してコマンド ライン ツールを管理および使用するMicrosoft Defender ウイルス対策 |

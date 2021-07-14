@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理者は、ランサムウェア攻撃から回復する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c3664cb2a60a7173e345de4abaddefefea6e2b1
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 608fac50fc65f20a612b80ed151252eb2a0c2e01
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341438"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415555"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>ユーザーのランサムウェア攻撃から回復Microsoft 365
 
@@ -93,7 +93,7 @@ ms.locfileid: "53341438"
 
 ## <a name="step-6-recover-deleted-email"></a>手順 6: 削除されたメールを復元する
 
-まれに、ランサムウェアがすべてのメールを削除した場合、削除されたアイテムを復元できる可能性があります。 詳しくは、以下を参照してください。
+まれに、ランサムウェアがすべてのメールを削除した場合、削除されたアイテムを復元できる可能性があります。 詳細については、以下を参照してください。
 
 - [ユーザーのメールボックス内の削除済みメッセージを復元する](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -143,16 +143,19 @@ ms.locfileid: "53341438"
 
 ## <a name="additional-ransomware-resources"></a>その他のランサムウェア リソース
 
-[人が操作するランサムウェアの概要](/security/compass/human-operated-ransomware)
+主要な業界情報:
 
-[ランサムウェアや強要から迅速に保護する](/security/compass/protect-against-ransomware)
+- [人が操作するランサムウェアの概要](/security/compass/human-operated-ransomware)
 
-[最新のMicrosoft セキュリティ インテリジェンスレポート PDF)](https://www.microsoft.com/securityinsights/)(検索 "ランサムウェア")
+- [ランサムウェアや強要から迅速に保護する](/security/compass/protect-against-ransomware)
 
-**ランサムウェア: Microsoft 365 Defender** ポータルの脅威分析ノードで、継続的な脅威レポートをMicrosoft 365 Defenderします。
+- [最新のMicrosoft セキュリティ インテリジェンスレポート](https://www.microsoft.com/securityinsights/)(P. 22-24)
+
+- **ランサムウェア: Microsoft 365 Defender** ポータルの Threat **analytics** ノードにある、継続的な脅威レポート (以下のライセンス要件を [参照](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 
 Microsoft 365保護:
 
+- [マルウェアと ランサムウェアからの保護](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [ランサムウェアの検出と、ファイルの復元OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 - [ファイル内のマクロを有効またはOfficeする](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 - [EOP と Microsoft Defender のセキュリティに関するOffice 365設定](recommended-settings-for-eop-and-office365.md)

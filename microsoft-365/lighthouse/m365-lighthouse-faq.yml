@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse に関するよく寄せられる質問 (FAQ) に対する回答をMicrosoft 365 Lighthouse。
-  ms.openlocfilehash: 05ed433a5f7afb6418cab77c99a401351f3a5565
-  ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+  ms.openlocfilehash: 5f15453f21ef48fcc1f8266d9474fc0cbc4190c2
+  ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "53395266"
+  ms.lasthandoff: 07/13/2021
+  ms.locfileid: "53415538"
 title: Microsoft 365 Lighthouseよく寄せられる質問 (FAQ)
 summary: >
   > [!NOTE]
@@ -49,6 +49,12 @@ sections:
   - question: アプリケーションを使用する要件Microsoft 365 Lighthouse?
     answer: >
       現在の要件の一覧については、「要件[」を参照Microsoft 365 Lighthouse。](m365-lighthouse-requirements.md)
+  - question: 利用可能な国と地域はMicrosoft 365 Lighthouseですか?
+    answer: >
+      Microsoft 365 Lighthouse中国およびパレスチナ自治政府を除Microsoft 365利用可能なすべての国で利用可能です。 ただし、Microsoft 365 Lighthouse のデバイス管理や脅威管理などの機能は Microsoft Intune に依存し、ユーザー管理は Azure Active Directory (Azure AD) に依存し、Intune と Azure AD は一部の国や地域では利用できない場合があります。 アプリ、Azure Microsoft 365、Intune ADの完全な一覧については、「International availability 」[を参照してください](https://www.microsoft.com/microsoft-365/business/international-availability)。
+
+
+      Microsoft 365 Lighthouseクラウドでは使用できません。
   - question: アカウントにサインアップMicrosoft 365 Lighthouse?
     answer: >
       アカウントにサインアップするにはMicrosoft 365 Lighthouse CSP プログラムに登録する必要があります。 現在、間接プロバイダーをサポートできません。 サインアップの手順については、「サインアップする」を参照[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md) CSP プログラムの詳細については、「CSP プログラムの概要[」クラウド ソリューション プロバイダー参照してください](/partner-center/csp-overview)。

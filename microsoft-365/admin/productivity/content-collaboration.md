@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: コンテンツ コラボレーションの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: 2921cc738d1325416a0a5a8ab4a8eea9456b3269
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: d403f533fd69ee47fb48907f11d4752985daea1a
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300086"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415625"
 ---
 # <a name="content-collaboration--people-experiences"></a>コンテンツのコラボレーション – ユーザー エクスペリエンス
 
@@ -137,7 +137,7 @@ Microsoft OneDriveおよびビジネス 向けSharePointは、ユーザーがデ
         - Numerator: 過去 28 日以内に OneDrive または SharePointに保存されたメールにファイルを添付するユーザーの数。
         - 分母: 過去 28 日以内に Exchange、OneDrive、SharePoint、または両方にアクセスしたユーザーの数。
       - **オンライン ファイルへのリンク:** バーの青い (色付き) 部分とバーの分数 (分子/分母) は、添付ファイルを使用し、電子メール内のファイルへのリンクを添付するユーザーの割合を表します。
-        - Numerator: 過去 28 日以内にオンライン ファイル (OneDrive または SharePoint に保存) へのリンクをメールに添付するユーザーの数。
+        - Numerator: 過去 28 日以内にオンライン ファイルへのリンクをメールに添付するユーザーの数。
         - 分母: 過去 28 日以内に、Exchange、OneDrive、SharePoint、または両方にアクセスできるユーザーの数。
 4. **リソースへのリンク:** ヘルプ コンテンツを表示するには、このリンクを選択します。
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
-ms.openlocfilehash: 01e17b9c1f3f4e8a877f0b8489288e57ae9fa392
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: f0e67dc6cab0ac135a8ff752e1d2b97aff846cf2
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409010"
+ms.locfileid: "53415637"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ ms.locfileid: "53409010"
 
     テナントにMicrosoft 365 Lighthouseが正常に追加されたことを確認するには、Microsoft 365 Lighthouseの [製品の請求>を探Microsoft 365 管理センター。 
 
-1. ポータルにリダイレクトされない場合Microsoft 365 Lighthouseに移動します `https://lighthouse.microsoft.com/` 。
+1. ポータルにリダイレクトされない場合Microsoft 365 Lighthouseに移動します <a href="https://lighthouse.microsoft.com" target="_blank">https://lighthouse.microsoft.com</a> 。
 
 1. [同意 **する] &をクリックして** 、パートナー契約の修正を完了します。
 

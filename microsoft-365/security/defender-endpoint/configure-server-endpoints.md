@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: ff4c44199e4b6f8f1b3ca4806908813d7e710e4b
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339240"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415613"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -73,7 +73,7 @@ System Center Operations Manager (SCOM) または Azure Monitor (旧称:Operatio
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、サービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint エンドポイントで検出テストを実行 [する」を参照してください](run-detection-test.md)。
 
-#### <a name="before-you-begin"></a>開始する前に
+#### <a name="before-you-begin"></a>はじめに
 
 オンボーディング要件を満たすために、次の手順を実行します。
 
@@ -222,6 +222,12 @@ Defender for Endpoint は、エンドポイントとSystem Center Endpoint Prote
 ## <a name="offboard-windows-servers"></a>オフボード Windows サーバー
 
 Windows クライアント デバイスで使用できるのと同じ方法で、Windows サーバー (SAC)、Windows Server 2019、および Windows Server 2019 Core edition をオフボードWindows 10できます。
+
+- [グループ ポリシーを使用したオフボード](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [Configuration Manager を使用したオフボード デバイス](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [モバイル デバイス管理ツールを使用したオフボードデバイスと監視デバイス](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [ローカル スクリプトを使用してデバイスをオフボードする](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+
 
 他のサーバー Windowsの場合は、サービスからサーバーをオフボードWindows 2 つのオプションがあります。
 
