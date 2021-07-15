@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195023"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438074"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux での Microsoft Defender for Endpoint の手動展開
 
@@ -305,7 +305,12 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
     mdatp health --field org_id
     ```
 
-2. 次 MicrosoftDefenderATPOnboardingLinuxServer.py を実行し、このコマンドを実行するには、デバイスにインストール `python` されている必要があります。
+2. 実行 MicrosoftDefenderATPOnboardingLinuxServer.py。 
+   
+    >[!NOTE]
+    >このコマンドを実行するには、デバイスに `python` インストールされている必要があります。 RHEL 8.x または Ubuntu 20.04 以降を実行している場合は、Python ではなく Python 3 を使用する必要があります。
+
+
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py

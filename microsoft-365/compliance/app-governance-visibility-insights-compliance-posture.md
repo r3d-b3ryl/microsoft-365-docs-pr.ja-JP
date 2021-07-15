@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリのコンプライアンスへの取り組みを決定する。
-ms.openlocfilehash: 2fde19e385d4797e04c8f991efa673d33cea3b58
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 152f68e8fe0e7d7340d2e048bc73684bc079386f
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430674"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438026"
 ---
 # <a name="determine-your-app-compliance-posture"></a>アプリのコンプライアンスへの取り組みを決定する
 
@@ -54,7 +54,7 @@ Microsoft アプリ ガバナンスを使用すると、[Microsoft 365 コンプ
 
 - データとリソースへのアクセス:
 
-  - 過去 90 日間のアプリケーションの API データ アクセス
-  - 過去 90 日間の上位リソースの使用状況
+  - テナント内のアプリが、現在と過去 3 か月間にGraph API経由でアクセスした合計データ。 (現在のところ、Outlook メール とファイルのアップロードとダウンロードの使用状況のみが含まれています)
+  - リソース種類別の、現在と過去 3 か月間のデータ使用状況。 (現在のところ、Outlook メール とファイルのアップロードとダウンロードの使用状況のみが含まれています)
 
   この情報から、Microsoft 365 テナント内のデータへのアクセスに異常なスパイクがあるかどうかを判断できます。

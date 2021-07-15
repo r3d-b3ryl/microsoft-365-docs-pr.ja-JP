@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fcd7f192ba0846e3bf3051cde927095088f32d26
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b17585f7449f1151c7a5f5cd75d06b8e723fbe4b
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245794"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438014"
 ---
 # <a name="device-requirements"></a>デバイスの要件
 
@@ -49,7 +49,9 @@ Microsoft マネージド デスクトップに含めるデバイス要件を定
 - 64 ビット バージョンの Microsoft 365 Apps for enterprise 
 - 適用可能なすべてのデバイス ドライバー
 
-
+> [!NOTE]
+> Windows 11 は、一般提供に達すると、プレインストールされたソフトウェアの追加オプションになります。
+>
 ### <a name="physical-features"></a>物理機能
 
 デバイスには、次の機能が必要です。
@@ -62,7 +64,8 @@ Microsoft マネージド デスクトップに含めるデバイス要件を定
 これらの機能とサービスが使用するテクノロジの詳細については[、「Microsoft マネージド デスクトップ」を参照してください](../intro/technologies.md)。
 
 > [!NOTE]
-> ARMプロセッサはサポートされていません。
+>- ARMプロセッサはサポートされていません。
+>- Windows 11 には追加の[ハードウェア要件があります](/windows/whats-new/windows-11-requirements)。
 
 デバイスは、ストレージとメモリの次の制限を満たすか、または超える必要があります。
 
@@ -70,7 +73,7 @@ Microsoft マネージド デスクトップに含めるデバイス要件を定
 - ブート ドライブの容量は 128 GB 以上である必要があります。
 - 内部デバイス メモリ (RAM) は 8 GB 以上である必要があります。
 
-デバイスが 2020 年 7 月 1 日より後に作成された場合は、IR カメラ、指紋リーダー、または両方を使用して、Windows Hello を[サポートする必要があります](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)。
+デバイスが 2020 年 7 月 1 日以降に作成された場合は、IR カメラ、指紋リーダー、または両方を使用して、デバイスをサポート[Windows Hello。](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 
 ## <a name="recommended-features"></a>推奨される機能
 

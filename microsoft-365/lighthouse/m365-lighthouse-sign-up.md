@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
-ms.openlocfilehash: f0e67dc6cab0ac135a8ff752e1d2b97aff846cf2
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: 41482a97a7e940fab61b5b4884431ca7b385c3c0
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415637"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438002"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
 
 > [!NOTE]
 > この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウント情報がMicrosoft 365 Lighthouse、この記事の指示に従ってサインアップしてください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - ユーザーと顧客のテナントが、要件に記載されている要件を満[たMicrosoft 365 Lighthouseしてください](m365-lighthouse-requirements.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "53415637"
 
     テナントにMicrosoft 365 Lighthouseが正常に追加されたことを確認するには、Microsoft 365 Lighthouseの [製品の請求>を探Microsoft 365 管理センター。 
 
-1. ポータルにリダイレクトされない場合Microsoft 365 Lighthouseに移動します <a href="https://lighthouse.microsoft.com" target="_blank">https://lighthouse.microsoft.com</a> 。
+1. ポータルにリダイレクトされない場合Microsoft 365 Lighthouseに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> 。
 
 1. [同意 **する] &をクリックして** 、パートナー契約の修正を完了します。
 
