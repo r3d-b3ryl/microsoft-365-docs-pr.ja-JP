@@ -555,6 +555,44 @@
           href: record-versioning.md
         - name: 規制要件の参照資料
           href: retention-regulatory-requirements.md
+- name: アプリ ガバナンスを管理する
+  items:
+    - name: アプリを保護して管理する
+      href: app-governance-manage-app-protection-governance.md
+    - name: アプリ ガバナンスの使用を開始する
+      href: app-governance-get-started.md
+    - name: アプリ ガバナンスに関するフィードバックを送信する
+      href: app-governance-feedback.md
+    - name: 可視性と分析情報を取得する
+      items:
+        - name: 可視性と分析情報に関する詳細情報
+          href: app-governance-visibility-insights-overview.md
+        - name: 開始する
+          href: app-governance-visibility-insights-get-started.md
+        - name: アプリを表示する
+          href: app-governance-visibility-insights-view-apps.md
+        - name: コンプライアンスに対する方針を決定する
+          href: app-governance-visibility-insights-compliance-posture.md
+    - name: アプリ ポリシーを実装する
+      items:
+        - name: アプリ ポリシーに関する詳細情報
+          href: app-governance-app-policies-overview.md
+        - name: 開始する
+          href: app-governance-app-policies-get-started.md
+        - name: アプリ ポリシーを作成する
+          href: app-governance-app-policies-create.md
+        - name: アプリ ポリシーを管理する
+          href: app-governance-app-policies-manage.md
+    - name: アプリの脅威を検出して修復する
+      items:
+        - name: 検出と修復に関する詳細情報
+          href: app-governance-detect-remediate-overview.md
+        - name: 開始する
+          href: app-governance-detect-remediate-get-started.md
+        - name: 異常検出アラートを調査する
+          href: app-governance-anomaly-detection-alerts.md
+        - name: アプリの脅威を修復する
+          href: app-governance-detect-remediate-detect-threats.md
 - name: eDiscovery の管理
   items:
     - name: Microsoft 365 eDiscovery ソリューション

@@ -4,19 +4,19 @@
       href: move-from-google-workspace-overview.md
     - name: Microsoft 365 にサインアップする
       href: ../sign-up.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
-    - name: Google 移行用に Microsoft 365 をセットアップする
+    - name: Google 移行の Microsoft 365 を設定する
       href: set-up-microsoft-365-forgoogle.md
     - name: Windows デバイスのセキュリティ ポリシーを設定する
       href: ../secure-win10-pcs.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
-    - name: Google Workspace ドメインを追加する
+    - name: Google Workspace のドメインを追加する
       href: add-google-domain.md
-    - name: アプリOffice Microsoft Teams をインストールする
+    - name: Office アプリと Microsoft Teams をインストールする
       href: ../install-office.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
-    - name: メール、予定表、連絡先を Microsoft 365 に移行する
+    - name: メール、予定表、連絡先を Microsoft 365 へ移行する
       href: migrate-email.md
     - name: Microsoft 365 にドメインを接続する
       href: connect-domain-tom365.md
-    - name: Mover を使用してすべてのユーザーのデータを移動する
-      href: mover-migrate-files.md
+    - name: 移行マネージャーを使用してすべてのユーザーのデータを移動する
+      href: 'https://docs.microsoft.com/sharepointmigration/mm-google-overview'
     - name: Google Workspace をキャンセルする
       href: cancel-google.md
