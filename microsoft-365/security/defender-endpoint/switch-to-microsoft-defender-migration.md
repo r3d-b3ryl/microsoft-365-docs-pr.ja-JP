@@ -24,12 +24,12 @@ ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 2953103cb3812103740f98a6db5b8f4d369731e3
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: cff0810a4469d3c2d9ff2fe0fe5100b7a37408ae
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930309"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454747"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint への切り替え
 
@@ -47,7 +47,7 @@ Defender for Endpoint への移行プロセスは、次の表に示す 3 つの�
 
 |段階 |説明 |
 |--|--|
-|[移行の準備](switch-to-microsoft-defender-prepare.md) |準備 [フェーズ **中**](switch-to-microsoft-defender-prepare.md): <p>1. 組織のデバイスを更新します。 <p>2. エンドポイントの Defender を取得します。 <p>3. 役割とアクセス許可を計画し、ユーザーにアクセス権を付与Microsoft Defender セキュリティ センター。 <p>4. デバイス プロキシとインターネット設定を構成して、組織のデバイスと Defender for Endpoint 間の通信を有効にします。 |
+|[移行の準備](switch-to-microsoft-defender-prepare.md) |準備 [フェーズ **中**](switch-to-microsoft-defender-prepare.md): <p>1. 組織のデバイスを更新します。 <p>2. エンドポイントの Defender を取得します。 <p>3. 役割とアクセス許可を計画し、ポータルへのアクセス権をMicrosoft 365 Defenderします。 <p>4. デバイス プロキシとインターネット設定を構成して、組織のデバイスと Defender for Endpoint 間の通信を有効にします。 |
 |[エンドポイントの Defender のセットアップ](switch-to-microsoft-defender-setup.md) |セットアップ [フェーズ **中**](switch-to-microsoft-defender-setup.md): <p>1. ファイルを有効/再インストールMicrosoft Defender ウイルス対策。 <p>2. エンドポイントの Defender を構成します。 <p>3. 既存のソリューションの除外リストに Defender for Endpoint を追加します。 <p>4. 既存のソリューションを、既存のソリューションの除外リストに追加Microsoft Defender ウイルス対策。 <p>5. デバイス グループ、コレクション、および組織単位を設定します。 <p>6. マルウェア対策ポリシーとリアルタイム保護設定を構成します。|
 |[Defender for Endpoint へのオンボード](switch-to-microsoft-defender-onboard.md) |オンボード [フェーズ **中**](switch-to-microsoft-defender-onboard.md): <p>1. デバイスを Defender for Endpoint にオンボードします。 <p>2. 検出テストを実行します。 <p>3. パッシブ モードMicrosoft Defender ウイルス対策を確認します。 <p>4. 更新プログラムを取得Microsoft Defender ウイルス対策。 <p>5. 既存のエンドポイント保護ソリューションをアンインストールします。 <p>6. Defender for Endpoint が正しく動作するようにします。 |
 

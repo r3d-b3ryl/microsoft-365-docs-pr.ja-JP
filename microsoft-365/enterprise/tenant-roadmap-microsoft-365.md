@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: ユーザーのテナントをセットアップするためのロードマップMicrosoft 365。
-ms.openlocfilehash: fb3b6eecd893a5ab9b71bfa7bdfaea53af43470d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4b94540293b86bd922ce4b29f970e52eb1245a01
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909456"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464035"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>テナントのロードマップMicrosoft 365
 
@@ -43,14 +43,14 @@ ms.locfileid: "50909456"
 - [クライアント アプリのサポートを計画する](microsoft-365-client-support-certificate-based-authentication.md)
 - [ハイブリッドモダン認証の使い方を決定する](hybrid-modern-auth-overview.md)
 - [2007 Officeおよび 2010 Officeアップグレードを計画する](plan-upgrade-previous-versions-office.md)
-- [テナントの分離について](microsoft-365-tenant-isolation-overview.md)
+- [テナントの分離について](/compliance/assurance/microsoft-365-isolation-controls)
 
 ### <a name="deploy"></a>展開
 
 テナントを展開するには、次の方法を実行します。 
 
 - 組織の [DNS ドメイン](../admin/setup/add-domain.md) を追加します。
-- 管理センター[のセットアップ ガイドMicrosoft 365使用します](setup-guides-for-microsoft-365.md)。
+- [設定[ガイド] の [設定ガイドMicrosoft 365 管理センター。](setup-guides-for-microsoft-365.md)
 - ID インフラストラクチャを[構築し、](identity-roadmap-microsoft-365.md)[ユーザー サインインをセキュリティで保護します](microsoft-365-secure-sign-in.md)。
 
 ### <a name="move-a-tenants-geographic-locations"></a>テナントの地理的な場所を移動する

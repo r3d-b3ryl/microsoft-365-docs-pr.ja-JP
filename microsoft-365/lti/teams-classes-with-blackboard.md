@@ -1,5 +1,5 @@
 ---
-title: Blackboard learn ultra Microsoft Teamsクラスを統合する
+title: Blackboard learn ultra Microsoft Teamsクラスを使用する
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,13 +12,13 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: Blackboard learn ultra Microsoft Teamsクラスを統合する
-ms.openlocfilehash: da98fae3fa5d6be2513147be58747512bea99e16
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+description: Blackboard learn ultra Microsoft Teamsクラスを使用する
+ms.openlocfilehash: a97d5bf56e1e045ccb0ef7cc66ecef7dfba4041a
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314497"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454640"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Blackboard learn ultra Microsoft Teamsクラスを使用する
 
@@ -27,15 +27,15 @@ ms.locfileid: "53314497"
 クラスには、リアルタイムの会話、ビデオ会議、または非同期操作が含まれる場合があります。 学生のファイル共有と共同作成エクスペリエンスを 1 か所で追加できます。 Microsoft Teamsのクラスは、教育のダイナミクスと効果的な学習の意味を再定義します。
 
 > [!IMPORTANT]
-> 学生情報システム (SIS) で [教育機関のメール] フィールドが正常に設定されたことを確認する `help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student\_Information\_System/SIS\_Planning`
+> 学生情報システム[(SIS)](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning)で [教育機関のメール] フィールドが正常に設定されたことを確認する
 >
->クラスMicrosoft Teams統合は、適切な Microsoft Azure Active Directory (AAD) ユーザー プリンシパル名 (UPN) にマップするために、SIS の教育機関の電子メール フィールドに依存します。 教育機関の電子メールがプロビジョニングされていない場合、これは既定で既存の電子メールに設定されます。 データが正しく同期され、Microsoft AAD と Blackboard Learn Ultra の間に電子メール データが競合しなかからなされるように、すべてのユーザーに対してこのフィールドを設定してください。
+>Microsoft Teams クラスの統合は、SIS の教育機関の電子メール フィールドに依存して、正しい Microsoft Azure Active Directory (AAD) ユーザー原則名[(UPN) にマップします](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes)。 教育機関の電子メールがプロビジョニングされていない場合、これは既定で既存の電子メールに設定されます。 このフィールドは、データが正しく同期され、AAD と Blackboard Learn Ultra の間で電子メール データが競合しなかからなされるように、すべてのユーザーに対して設定をお勧めします。
 >
 > SIS マッピングでこのフィールドを適切に設定していない場合、統合は引き続き機能しますが、作成された Teams クラスにはユーザーが表示されない可能性があります。エラーが発生する可能性があります。
 
 ## <a name="supporting-institutional-data-mapping--institution-email-sis-field"></a>教育機関向けデータ マッピングのサポート – 教育機関の電子メール SIS フィールド
 
-クラウド プロバイダー統合の進化の一環として、Blackboard Learn Ultra は、学生情報システム フレームワーク統合とパブリック REST API の両方で新しい教育機関メール フィールドを作成し、Blackboard Learn Ultra と Microsoft AAD の間でデータ同期プロセスを効果的に管理できるようにしました。
+クラウド プロバイダー統合の進化の一環として、Blackboard Learn Ultra は、学生情報システム フレームワーク統合とパブリック REST API の両方で新しい教育機関メール フィールドを作成し、Blackboard Learn Ultra と AAD の間でデータ同期プロセスを効果的に管理できるようにしました。
 
 ### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>教育機関の電子メールとは何を意味し、何をサポートしていますか?
 
@@ -46,7 +46,7 @@ ms.locfileid: "53314497"
  2 つの電子メール アドレスが異なる場合は、次のいずれかを実行します。
 
 - どのソースが優先順位を持ち、人物と教育機関の両方の電子メールとして受け取られるかについて決定する必要があります。
-  または
+  または、
 - インスティテューションは、インスティテューションメールでユーザー設定フィールドマッピングを設定できます。これは潜在的な競合を解決できます。
 
 教育機関 **のメール フィールド** マッピングは、Advanced Configuration 設定 ユーザーがオブジェクト型フィールド マッピングを学習するで、**既存のすべての** SIS 統合タイプ  >    >  **で使用できます**。
@@ -54,11 +54,13 @@ ms.locfileid: "53314497"
 > [!NOTE]
 > インスティテューションメールは、既定ではすべての SIS 形式の Person **Email** に設定され、各ユーザーに固有である必要があります。  セットアップおよび実行されている既存のすべての統合では、電子メールが重複している場合、SIS はユーザーのインポートに失敗しますので、このデータ マッピングが実行されます。 教育機関で教育機関のメールをカスタムに変更する機能が必要な場合は、SIS の [詳細構成] を使用して設定する必要があります。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 クラスMicrosoft Teams統合は **、Ultra Course View コースでのみ使用できます**。 教育機関が使用するには、次の要件を満たす必要があります。
 
 - 超基本ナビゲーションを有効にした Blackboard Learn Ultra Learn SaaS を使用する
+
+  ![コースで機能が有効になっている例](media/feature-availability.png)
 
 - コースで使用する LTI を有効にする。
 
@@ -157,6 +159,10 @@ LTI 統合を構成する前に Blackboard Learn Ultra Teams Classes Azure ア�
 > [!NOTE]
 > {Tenant} を **、特定** の組織の組織 ID Microsoft Azure置き換える。
 
+Blackboard Learn Ultra にアクセスするためのアクセス許可を付与する権限を説明するアクセス許可ウィンドウが表示Microsoft Teams。
+
+![Microsoft と Blackboard のアクセス許可ウィンドウ](media/permissions1.png)
+
 ### <a name="after-configuring-the-lti-applications"></a>LTI アプリケーションの構成後
 
 1. [管理者 **] パネルで、[** ツールとユーティリティ] に移動 **し**、[統合管理者] **Microsoft Teamsを選択します**。
@@ -172,3 +178,5 @@ LTI 統合を構成する前に Blackboard Learn Ultra Teams Classes Azure ア�
    - 同意が承認されていない場合は、説明されている手順に従って、同意の URL を生成し、承認のためにグローバル管理者Microsoft 365に送信します。
 
 5. 承認の確認が完了したら、[再試行] を選択 **して** 確認し、[送信] を **選択します**。
+
+   ![アクセスがブロックされたかどうかを示すダイアログ](media/blocked-access.png)

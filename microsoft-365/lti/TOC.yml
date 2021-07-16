@@ -1,10 +1,10 @@
-- name: M365 Office LTI (プレビュー)
+- name: M365 Office LTI
   href: index.md
-- name: キャンバスMicrosoft OneDrive LTI を使用する (プレビュー)
+- name: キャンバスMicrosoft OneDrive LTI を使用する
   href: onedrive-lti.md
-- name: Canvas Microsoft Teamsクラスを使用する (プレビュー)
+- name: Canvas でMicrosoft Teamsクラスを使用する
   href: teams-classes-with-canvas.md
-- name: Canvas Microsoft Teams会議を使用する (プレビュー)
+- name: Canvas でMicrosoft Teams会議を使用する
   href: teams-meetings-with-canvas.md
-- name: Blackboard learn Microsoft Teamsのクラスを使用する (プレビュー)
+- name: Blackboard learn ultra Microsoft Teamsクラスを使用する
   href: teams-classes-with-blackboard.md

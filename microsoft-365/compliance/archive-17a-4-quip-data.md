@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 Quip DataParser コネクタをセットアップして使用して、Quip データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: 6db47d79cdab0f130d2b7b3483d37c08b267cdfd
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: e3379e238b0142522d4161149fd38892843e6eae
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097287"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454447"
 ---
-# <a name="set-up-a-connector-to-archive-quip-data-preview"></a>Quip データをアーカイブするコネクタをセットアップする (プレビュー)
+# <a name="set-up-a-connector-to-archive-quip-data"></a>Quip データをアーカイブするコネクタをセットアップする
 
 17a-4 LLC の[Quip DataParser](https://www.17a-4.com/quip-dataparser/)を使用して、Quip から組織内のユーザー メールボックスにデータをインポートおよびアーカイブMicrosoft 365します。 DataParser には、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成された Quip コネクタMicrosoft 365。 Quip DataParser コネクタは Quip データを電子メール メッセージ形式に変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
 

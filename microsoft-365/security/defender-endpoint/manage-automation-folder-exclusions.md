@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 37a251acd3b7631cffffaf2eb76bf0f2b4954ee6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 05c103cba051c7d5e7f45e5dd3feb288013ee367
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185839"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454819"
 ---
 # <a name="manage-automation-folder-exclusions"></a>自動化フォルダーの除外を管理する 
 
@@ -59,7 +59,7 @@ ms.locfileid: "51185839"
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>オートメーション フォルダーの除外を追加する
-1. ナビゲーション ウィンドウで、[オートメーション]**フォルダー設定**  >  **を選択します**。  
+1. ナビゲーション ウィンドウで、[エンドポイント **ルールの設定**  >  **除外**]  >    >  **を選択します**。  
 
 2. [新 **しいフォルダーの除外] をクリックします**。  
 
@@ -69,7 +69,6 @@ ms.locfileid: "51185839"
     - 拡張機能
     - ファイル名
     - 説明
-    
 
 4. **[保存]** をクリックします。
 
@@ -77,14 +76,14 @@ ms.locfileid: "51185839"
 > 除外されたファイルを収集または調べる Live Response コマンドは、"ファイルが除外されました" というエラーで失敗します。 さらに、自動調査では除外されたアイテムは無視されます。
 
 ## <a name="edit-an-automation-folder-exclusion"></a>オートメーション フォルダーの除外を編集する 
-1. ナビゲーション ウィンドウで、[オートメーション]**フォルダー設定**  >  **を選択します**。 
+1. ナビゲーション ウィンドウで、[エンドポイント **ルールの設定**  >  **除外**]  >    >  **を選択します**。 
 
 2. フォルダーの **除外で** [編集] をクリックします。  
 
 3. ルールの詳細を更新し、[保存] を **クリックします**。
 
 ## <a name="remove-an-automation-folder-exclusion"></a>オートメーション フォルダーの除外を削除する 
-1. ナビゲーション ウィンドウで、[オートメーション]**フォルダー設定**  >  **を選択します**。  
+1. ナビゲーション ウィンドウで、[エンドポイント **ルールの設定**  >  **除外**]  >    >  **を選択します**。  
 2. [除外 **の削除] をクリックします**。 
 
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f2c799d477c400482c16b09b4d8a5cdc01106dfa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 13307d3205818d41e7b2219b4e3a4ed6e9f2d5bb
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934083"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454792"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>デバイス向けの Microsoft セキュア スコア
 
@@ -41,13 +41,13 @@ ms.locfileid: "51934083"
 >[!NOTE]
 > 構成スコアは、Microsoft Secure Score 脅威と脆弱性の管理デバイスの一部です。
 
-デバイスのスコアは、デバイスの脅威と脆弱性の管理[ダッシュボード](tvm-dashboard-insights.md)に表示Microsoft Defender セキュリティ センター。 デバイスの Microsoft セキュア スコアが高いということは、エンドポイントがサイバー セキュリティの脅威攻撃に対してより回復力があることを意味します。 これは、次のカテゴリにわたるデバイスの一括セキュリティ構成状態を反映します。
+デバイスのスコアは、ポータルの脅威と脆弱性の管理[ダッシュボード](tvm-dashboard-insights.md)にMicrosoft 365 Defenderされます。 デバイスの Microsoft セキュア スコアが高いということは、エンドポイントがサイバー セキュリティの脅威攻撃に対してより回復力があることを意味します。 これは、次のカテゴリにわたるデバイスの一括セキュリティ構成状態を反映します。
 
 - アプリケーション
 - オペレーティング システム
 - ネットワーク
 - アカウント
-- セキュリティ制御
+- セキュリティ コントロール
 
 カテゴリを選択して、[セキュリティの推奨事項 [**] ページに移動**](tvm-security-recommendation.md) し、関連する推奨事項を表示します。
 
@@ -57,7 +57,7 @@ Microsoft Defender for Endpoint シグナルを転送し、Microsoft Secure Scor
 
 変更は、ダッシュボードに反映するために数時間かかる場合があります。
 
-1. ナビゲーション ウィンドウで、[高度な **機能設定**  >  **に移動します。** 
+1. ナビゲーション ウィンドウで、[**エンドポイントの全般** 設定  >  **機能]**  >    >  **に移動します。** 
 
 2. 下にスクロールして **Microsoft Secure Score に移動** し、設定を [オン] に **切り替える**。
 
@@ -79,19 +79,21 @@ Microsoft Secure Score for Devices カードのデータは、細心の注意を
 
 セキュリティの推奨事項の一覧から問題を修復して、セキュリティ構成を改善します。 そうすると、Microsoft Secure Score for Devices が向上し、組織はサイバーセキュリティの脅威や脆弱性に対してより回復力が高くなります。
 
-1. ダッシュボードの Microsoft Secure Score for Devices カード脅威と脆弱性の管理、カテゴリのいずれかを選択します。 そのカテゴリに関連する推奨事項の一覧が表示されます。 [セキュリティの推奨事項] [**ページに移動**](tvm-security-recommendation.md) します。 すべてのセキュリティ推奨事項を表示する場合は、[セキュリティの推奨事項] ページに移動したら、検索フィールドをクリアします。
+1. ダッシュボードの Microsoft Secure Score for Devices カード脅威と脆弱性の管理、カテゴリの 1 つを選択します。 そのカテゴリに関連する推奨事項の一覧が表示されます。 [セキュリティの推奨事項] [**ページに移動**](tvm-security-recommendation.md) します。 すべてのセキュリティ推奨事項を表示する場合は、[セキュリティの推奨事項] ページに移動したら、検索フィールドをクリアします。
 
 2. リストでアイテムを選択します。 フライアウト パネルが開き、推奨事項に関連する詳細が表示されます。 [修復 **オプション] を選択します**。
 
-   ![セキュリティ制御関連のセキュリティ推奨事項](images/tvm_security_controls.png)
+   :::image type="content" alt-text="セキュリティ制御関連のセキュリティ推奨事項。" source="images/security-controls.png":::
 
 3. 説明を読んで、問題のコンテキストと次に何を行うのかを理解します。 期日を選択し、メモを追加し、[すべての修復アクティビティ データを **CSV** にエクスポートする] を選択して、フォローアップのためにメールに添付できます。
 
 4. **要求を送信します**。 修復タスクが作成されたという確認メッセージが表示されます。
-   ![修復タスクの作成確認](images/tvm_remediation_task_created.png)
+
+   :::image type="content" alt-text="修復タスクの作成確認。" source="images/remediation-task-created.png":::
 
 5. CSV ファイルを保存します。
-   ![csv ファイルを保存する](images/tvm_save_csv_file.png)
+
+   :::image type="content" alt-text="csv ファイルを保存します。" source="images/tvm_save_csv_file.png":::
 
 6. IT 管理者にフォローアップ メールを送信し、修復がシステムに伝達される時間を許可します。
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4e298a9dc8b23e3977db51d5a3b96f7b0723a0d1
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: acbad7a1c5fa541ee83da668768cc42af7a5afda
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394943"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464011"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -46,6 +46,10 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 ### <a name="customer-key"></a>顧客キー
 
 - [顧客キーを使用したサービス](customer-key-overview.md)の暗号化 (顧客キーテナント レベルの DEP は、ユーザーキーの感度ラベル構成Microsoft Information Protection。
+
+### <a name="data-connectors"></a>データ コネクタ
+
+- [17a-4 LLC](archiving-third-party-data.md#17a-4-data-connectors)と提携して 17 の新しいデータ コネクタと、CellTrust と提携して 1 つの新しいコネクタ[をリリースしました](archiving-third-party-data.md#celltrust-data-connectors)。 また [、Veritas](archiving-third-party-data.md#veritas-data-connectors) および TeleMessage と提携して追加のデータ コネクタ [をリリースしました](archiving-third-party-data.md#telemessage-data-connectors)。 これにより、現在までに、サードパーティのデータをインポートおよびアーカイブできるデータ コネクタが合計 65 Microsoft 365。
 
 ### <a name="ediscovery"></a>電子情報開示
 
@@ -86,7 +90,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 ## <a name="april-2021"></a>2021 年 4 月
 
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+### <a name="advanced-ediscovery"></a>高度な電子情報開示
 
 - [Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set)の制限。 組織は、レビュー セットからアイテムを 1 回エクスポートする場合に、最大 500 万アイテムまたは 500 MB をエクスポートできます(小さい方)。
 
@@ -122,7 +126,7 @@ Outlookと更新プログラム:
 
 3 月のコンプライアンス ソリューションとMicrosoft 365の変更点を次に示します。
 
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+### <a name="advanced-ediscovery"></a>高度な電子情報開示
 
 - **Advanced eDiscoveryコレクションは、新** しいコレクション ツール [とワークフローをサポートしています](/microsoft-365/compliance/collections-overview)。 その他の新しいトピックには、下書きコレクションの [作成](/microsoft-365/compliance/create-draft-collection)、 [下](/microsoft-365/compliance/commit-draft-collection)書きコレクションをレビュー セットにコミットする、コレクションの統計情報 [とレポートが含まれます](/microsoft-365/compliance/collection-statistics-reports)。
 - **レビュー セット内の** ドキュメントをユーザーアカウントに [Azure Storage](/microsoft-365/compliance/download-export-jobs)します。

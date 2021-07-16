@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft のプライバシー管理は、組織が保管している個人データをMicrosoft 365、プライバシー リスクの特定と修復に役立つソリューションを提供します。
-ms.openlocfilehash: 4f98a5c867b232e3eca298a163fe4b6b4855f7a9
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: df3fa07271321d6bc1fedb4e0d06b40b3483b238
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378528"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53455387"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Microsoft プライバシー管理 (プレビュー)
 
@@ -70,7 +70,7 @@ EU の一般データ保護規則 (GDPR) など、特定のプライバシー規
 
 プライバシー管理は、Microsoft 365要求ソリューションを通じてこれらの問い合わせを処理するのに役立ちます。 Microsoft 365 に保存した件名データを検索し、結果を確認し、適切なファイルを選択し、レポートを作成するために、自動化とワークフロー機能を提供します。 その途中で、組織内の他の専門家と安全に共同作業を行い、要求を完了することができます。
 
-このサブジェクト権限要求ソリューションは、コンプライアンス センターの元のデータ主体要求 (DSR) ソリューションを超える機能を提供し、2 つの間にワークフローの接続や共有はありません。 レガシ DSR ページは後日廃止されます。
+このサブジェクト権限要求ソリューションは、コンプライアンス センターの元のデータ主体要求 (DSR) ソリューションを超える機能を提供し、2 つの間にワークフローの接続や共有はありません。
 
 詳細については、「対象権限要求 [の管理」を参照してください](privacy-management-subject-rights-requests.md)。
 

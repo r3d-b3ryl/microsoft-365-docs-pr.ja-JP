@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 SQL DataParser コネクタを設定して使用して、SQL データをインポートおよびアーカイブするMicrosoft 365。
-ms.openlocfilehash: 51fd433ad072ba5afe0b314d7b61041728337240
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 67ad3332a05356702df7b0624ee05519ff30bcac
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137669"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454031"
 ---
-# <a name="set-up-a-connector-to-archive-sql-data-preview"></a>データをアーカイブするコネクタをSQLする (プレビュー)
+# <a name="set-up-a-connector-to-archive-sql-data"></a>データをアーカイブするコネクタをSQLする
 
 17a-4 LLC SQL [DataParser](https://www.17a-4.com/sql-dataparser/)を使用して、SQL データベースから組織のユーザー メールボックスにデータをインポートおよびアーカイブMicrosoft 365します。 DataParser には、SQL データ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成された、Microsoft 365。 DataParser SQLは、SQLデータを電子メール メッセージ形式に変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
 

@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 FX Connect DataParser コネクタをセットアップして使用して、データをインポートおよびアーカイブする方法ConnectをMicrosoft 365。
-ms.openlocfilehash: 1126b6f427d650367c837abe0146f1d4e0ebc547
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 667f36d111a877a7e2e04aa54653f61556d337d9
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096511"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454495"
 ---
-# <a name="set-up-a-connector-to-archive-fx-connect-data-preview"></a>FX データをアーカイブするコネクタをConnectする (プレビュー)
+# <a name="set-up-a-connector-to-archive-data-from-fx-connect"></a>FX サーバーからデータをアーカイブするコネクタをConnect
 
 17a-4 LLC の FX Connect [DataParser](https://www.17a-4.com/dataparser-roadmap/)を使用して、FX Connect から Microsoft 365 組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サードパーティConnectからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成された FX Microsoft 365 が含まれています。 FX Connect DataParser コネクタは、FX Connect データを電子メール メッセージ形式に変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
 

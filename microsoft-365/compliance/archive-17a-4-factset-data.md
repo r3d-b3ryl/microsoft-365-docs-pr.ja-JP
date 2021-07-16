@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 FactSet DataParser コネクタをセットアップして使用して、ファクトセット データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: 06f4948b28a84a9dca249d08abe6973d44f0a520
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 26beead657618dc3b33a11d8b6202c914a9c49bc
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096510"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454519"
 ---
-# <a name="set-up-a-connector-to-archive-factset-data-preview"></a>FactSet データをアーカイブするコネクタをセットアップする (プレビュー)
+# <a name="set-up-a-connector-to-archive-factset-data"></a>FactSet データをアーカイブするコネクタをセットアップする
 
 FactSet プラットフォームから組織内のユーザー メールボックスにデータをインポートおよびアーカイブするには、17a-4 LLC の[FactSet DataParser](https://www.17a-4.com/factset-dataparser/)をMicrosoft 365します。 DataParser には、サード パーティ製のデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成された FactSet コネクタMicrosoft 365。 FactSet DataParser コネクタは、FactSet データを電子メール メッセージ形式に変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
 

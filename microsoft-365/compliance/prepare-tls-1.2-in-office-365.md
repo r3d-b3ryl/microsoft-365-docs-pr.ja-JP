@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 331dd1ea510983e57c069f8d142aa0f7d3f7062e
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: ca689b846589ffcb1b8aa4d85ea8a0312f8d9d51
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226085"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463975"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Office 365 および Office 365 GCC での TLS 1.2 の準備
 
@@ -30,9 +30,11 @@ ms.locfileid: "53226085"
 
 TLS 1.0 および 1.1 の依存関係を削除する方法については、次のホワイト ペーパーを参照してください。[TLS 1.0 の問題の解決](https://www.microsoft.com/download/details.aspx?id=55266)。
 
+TLS 1.2 にアップグレードした後、使用している暗号スイートが Azure Front Door でサポートされている必要があります。 Microsoft 365 Azure Front Door では、暗号スイートのサポートに若干の違いがあります。 詳細については、「Azure Front Door でサポートされている現在の暗号スイートとは [」を参照してください](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)。
+
 ## <a name="more-information"></a>詳細
 
-2020 年 1 月の時点で、TLS 1.0 および 1.1 の廃止が開始されました。 DoD または GCC High インスタンスで TLS 1.0 または 1.1 を介して Office 365 に接続するクライアント、デバイス、またはサービスはサポートされていません。 Office 365 の商用顧客の場合、TLS 1.0 および 1.1 の廃止は 2020 年 10 月 15 日に開始され、ロールアウトは次の数週間から数か月の間続きます。 
+2020 年 1 月の時点で、TLS 1.0 および 1.1 の廃止が開始されました。 DoD または GCC High インスタンスで TLS 1.0 または 1.1 を介して Office 365 に接続するクライアント、デバイス、またはサービスはサポートされていません。 Office 365 の商用顧客の場合、TLS 1.0 および 1.1 の廃止は 2020 年 10 月 15 日に開始され、ロールアウトは次の数週間から数か月の間続きます。
 
 Office 365 サービスへの接続を維持するためには、クライアントとサーバー間、ブラウザーとサーバー間のすべての組み合わせで TLS バージョン 1.2 (またはそれ以降のバージョン) を使用することをお勧めします。 クライアントとサーバー間、ブラウザーとサーバー間の特定の組み合わせについては、更新が必要になる場合があります。
 

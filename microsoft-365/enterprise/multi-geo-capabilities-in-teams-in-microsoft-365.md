@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-spintranet
 localization_priority: Normal
 description: 複数地域でのTeamsのMicrosoft 365について説明します。
-ms.openlocfilehash: 9fe9b289b0ffbef12327c4232b9deb6727b6d718
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 7da2032e1106d03178eccf3bcfb4f37fc63780d7
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362668"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453527"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>複数地域の機能 (Microsoft Teams
 
@@ -48,7 +48,7 @@ Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 
 ## <a name="channel-messages"></a>チャネル メッセージ
 
-各Microsoft 365グループには、関連するデータを格納する地域の場所を示す優先データの場所 (PDL) があります。 Teamsチームに関連付けられたグループの PDL を使用して、そのチームのチャネル メッセージング データを格納する場所を決定します。 これには、チャネル会議内で発生するチャットが含まれます。
+各Microsoft 365グループには、関連するデータを格納する地域の場所を示す優先データの場所 (PDL) があります。 Teamsチームに関連付けられたグループの PDL を使用して、そのチームのチャネル メッセージング データを格納する場所を決定します。 これには、プライベート チャネルと、チャネル会議内で発生するチャットが含まれます。
 
 ユーザーが新しいチームを作成すると、そのユーザーの PDL によって、グループに割り当てられている PDL がMicrosoft 365されます。 グループ PDL は、そのチームのデータの格納場所を決定します。 そのユーザーの PDL が後で変更された場合、グループの PDL は変更されません。
 

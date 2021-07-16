@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 Symphony DataParser コネクタをセットアップして使用して、シンフォニー データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: da947c80a296aa4fee8ccabb9bb82eecc1d9b103
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0dce81b5251612bc3c3ddb467c658bd4a32d56f7
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097177"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453935"
 ---
-# <a name="set-up-a-connector-to-archive-symphony-data-preview"></a>シンフォニー データをアーカイブするコネクタをセットアップする (プレビュー)
+# <a name="set-up-a-connector-to-archive-data-from-symphony"></a>シンフォニーからデータをアーカイブするコネクタをセットアップする
 
 17a-4 LLC のシンフォニー [DataParser](https://www.17a-4.com/Symphony-dataparser/)を使用して、シンフォニー通信データをインポートし、組織内のユーザー メールボックスMicrosoft 365します。 DataParser には、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成されたシンフォニー コネクタMicrosoft 365。 シンフォニー DataParser コネクタは、シンフォニー データを電子メール メッセージ形式に変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
 

@@ -15,20 +15,20 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: この記事では、サービスの暗号化が顧客キーとどのように機能するのかについてMicrosoft 365。
-ms.openlocfilehash: d12a5d2f80de11a69fc4a36146a511c5f9a306f8
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9a8558a0cf36f2040614ca3ffb61e7ba9936d40f
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769451"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463963"
 ---
 # <a name="service-encryption-with-customer-key"></a>カスタマー キーによるサービスの暗号化
 
-Microsoft 365、分散キー マネージャー (DKM) を使用して有効BitLockerレベルのベースライン暗号化を提供します。 Microsoft 365コンテンツの暗号化レイヤーが追加されています。 このコンテンツには、オンライン、Exchange Online、Skype for Business、SharePoint、OneDrive for Business、およびMicrosoft Teams。
+Microsoft 365、BitLocker と分散キー マネージャー (DKM) を使用して有効になっているベースラインのボリューム レベルの暗号化を提供します。 Microsoft 365コンテンツの暗号化レイヤーが追加されています。 このコンテンツには、オンライン、Exchange Online、Skype for Business、SharePoint、OneDrive for Business、およびMicrosoft Teams。
 
-## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>サービスの暗号化、BitLocker顧客キーの動作
+## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>サービスの暗号化、BitLocker、および顧客キーの機能
 
-データは、常に、Microsoft 365 DKM を使用BitLocker暗号化されます。 詳細については、「メール シークレット[をセキュリティで保護Exchange Online方法」を参照してください](exchange-online-secures-email-secrets.md)。 顧客キーは、承認されていないシステムまたは担当者によるデータの表示に対する追加の保護を提供し、Microsoft BitLockerのディスク暗号化を補完します。 サービスの暗号化は、Microsoft の担当者がデータにアクセスすることを妨げる意味ではありません。 代わりに、顧客キーは、ルート キーを制御するための規制またはコンプライアンスの義務を満たすのに役立ちます。 Microsoft 365 サービスに対して、電子情報開示、マルウェア対策、スパム対策、検索インデックス作成などの付加価値クラウド サービスを提供するために、暗号化キーを使用するように明示的に承認します。
+BitLocker と DKM を使用して、Microsoft 365サービスでデータは常に暗号化されます。 詳細については、「メール シークレット[をセキュリティで保護Exchange Online方法」を参照してください](exchange-online-secures-email-secrets.md)。 顧客キーは、承認されていないシステムまたは担当者によるデータの表示に対する追加の保護を提供し、Microsoft データ センターでの BitLocker ディスク暗号化を補完します。 サービスの暗号化は、Microsoft の担当者がデータにアクセスすることを妨げる意味ではありません。 代わりに、顧客キーは、ルート キーを制御するための規制またはコンプライアンスの義務を満たすのに役立ちます。 Microsoft 365 サービスに対して、電子情報開示、マルウェア対策、スパム対策、検索インデックス作成などの付加価値クラウド サービスを提供するために、暗号化キーを使用するように明示的に承認します。
 
 顧客キーはサービスの暗号化に基いて構築され、暗号化キーを提供および制御できます。 Microsoft 365これらのキーを使用して、オンライン サービス条項 (OST) の説明に従って保存時のデータ[を暗号化します](https://www.microsoft.com/licensing/product-licensing/products.aspx)。 顧客キーは、データの暗号化と暗号化解除に使用する暗号化Microsoft 365を制御するために、コンプライアンスの義務を満たすのに役立ちます。
   
@@ -36,7 +36,7 @@ Microsoft 365、分散キー マネージャー (DKM) を使用して有効BitLo
 
 ## <a name="customer-key-with-hybrid-deployments"></a>ハイブリッド展開を使用したカスタマー キー
 
-顧客キーは、クラウドで保存されているデータのみを暗号化します。 顧客キーは、オンプレミスのメールボックスとファイルを保護するために機能しません。 オンプレミスのデータは、別の方法 (例: BitLocker) を使用して暗号化できます。
+顧客キーは、クラウドで保存されているデータのみを暗号化します。 顧客キーは、オンプレミスのメールボックスとファイルを保護するために機能しません。 BitLocker などの別の方法を使用して、オンプレミスのデータを暗号化できます。
 
 ## <a name="about-data-encryption-policies"></a>データ暗号化ポリシーについて
 
@@ -48,7 +48,7 @@ Microsoft 365、分散キー マネージャー (DKM) を使用して有効BitLo
 - Teamsメディア メッセージ (画像、コード スニペット、ビデオ メッセージ、オーディオ メッセージ、Wiki イメージ)
 - Teamsストレージに保存されている通話と会議のTeams記録
 - Teamsチャット通知
-- Teams Cortana によるチャットの提案
+- Teamsによるチャットの提案Cortana
 - Teams状態メッセージ
 - ユーザーとシグナルの情報をExchange Online
 - Exchange Online DEP によってまだ暗号化されていないメールボックス
@@ -63,7 +63,7 @@ Microsoft 365、分散キー マネージャー (DKM) を使用して有効BitLo
 - SharePointおよびOneDrive for Businessデータ。
 - Microsoft Teams および Teams および OneDrive for Business SharePoint Online に保存されている一部の通話および会議の録音は、SharePoint オンライン DEP を使用して暗号化されます。
 - 顧客Microsoft 365サポートされていないYammerプランナーなどの他のワークロード。
-- Teamsライブ イベントと Q&で A を選択します。 このTeamsシナリオは、マルチワークロード DEP を使用して顧客キーによって暗号化されていない唯一のシナリオです。
+- Teamsライブ イベント データ。
 
 テナントごとに複数の DEP を作成できますが、一度に割り当てる DEP は 1 つのみです。 DEP を割り当てると、暗号化は自動的に開始されますが、テナントのサイズに応じて完了に時間がかかっています。
 
@@ -101,7 +101,7 @@ Microsoft 365、分散キー マネージャー (DKM) を使用して有効BitLo
 
 ![オンライン顧客キー SharePoint暗号化暗号](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [顧客キーの設定](customer-key-set-up.md)
 

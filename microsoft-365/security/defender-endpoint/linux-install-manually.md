@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 4c4ed845a31f044e17c97e0b43adfc86dd3f68ba
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438074"
+ms.locfileid: "53454807"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux での Microsoft Defender for Endpoint の手動展開
 
@@ -266,13 +266,13 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
 
 ## <a name="download-the-onboarding-package"></a>オンボーディング パッケージをダウンロードする
 
-次の方法でオンボーディング パッケージをMicrosoft Defender セキュリティ センター。
+オンボーディング パッケージを次のポータルからMicrosoft 365 Defenderします。
 
-1. [Microsoft Defender セキュリティ センター] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
-2. 最初のドロップダウン メニューで、オペレーティング システム **として [Linux Server]** を選択します。 2 番目のドロップダウン メニューで、展開方法として [ローカル スクリプト] **(最大 10** 台のデバイス) を選択します。
+1. ポータルで、[Microsoft 365 Defenderオンボーディング] の [設定 >エンドポイント>**に移動>します**。
+2. 最初のドロップダウン メニューで、オペレーティング システム **として [Linux Server]** を選択します。 2 番目のドロップダウン メニューで、展開 **方法として [ローカル スクリプト** ] を選択します。
 3. [オンボード **パッケージのダウンロード] を選択します**。 ファイルを [ファイル名] WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft Defender セキュリティ センタースクリーンショット](images/atp-portal-onboarding-linux.png)
+    ![Microsoft 365 Defenderポータルのスクリーンショット](images/atp-portal-onboarding-linux.png)
 
 4. コマンド プロンプトから、ファイルが存在するように確認します。
     アーカイブの内容を抽出します。
@@ -359,11 +359,11 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
 
 Linux 用の EDR機能をテストするには、以下の手順に従って、Linux サーバーでの検出をシミュレートし、ケースを調査します。 
 
-1.  オンボードされた Linux サーバーがサーバーに表示Microsoft Defender セキュリティ センター。 これがコンピューターの最初のオンボーディングである場合、表示されるまでに最大 20 分かかる場合があります。 
+1.  オンボードされた Linux サーバーがサーバーに表示Microsoft 365 Defender。 これがコンピューターの最初のオンボーディングである場合、表示されるまでに最大 20 分かかる場合があります。 
 
 2.  スクリプト ファイルをダウンロード [してオンボード](https://aka.ms/LinuxDIY) の Linux サーバーに展開し、次のコマンドを実行します。 `./mde_linux_edr_diy.sh`
 
-3.  数分後に、検出が発生する必要Microsoft Defender セキュリティ センター。
+3.  数分後に、検出が発生する必要Microsoft 365 Defender。
 
 4.  アラートの詳細、コンピューターのタイムラインを確認し、一般的な調査手順を実行します。
 

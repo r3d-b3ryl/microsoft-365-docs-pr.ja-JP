@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 Slack DataParser コネクタをセットアップして使用して、Slack データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: 0eb9564ac5a6e8a3fa76cf1a336f266a456b272a
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 66c1db3f37512ec6988fc9385f50b2df1dc6d8ed
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097167"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454411"
 ---
-# <a name="set-up-a-connector-to-archive-slack-data-preview"></a>Slack データをアーカイブするコネクタをセットアップする (プレビュー)
+# <a name="set-up-a-connector-to-archive-slack-data"></a>Slack データをアーカイブするコネクタをセットアップする
 
 [17a-4 LLC の DataParser](https://www.17a-4.com/slack-dataparser/)を使用して、Slack プラットフォームから組織のユーザー メールボックスにデータをインポートMicrosoft 365します。 DataParser には、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成された Slack コネクタMicrosoft 365。 Slack DataParser コネクタは Slack データを電子メール メッセージ形式に変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
 

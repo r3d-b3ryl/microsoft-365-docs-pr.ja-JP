@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーのユーザー アクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 4791948f6fe3ca6df620a0e93851dbf4e11edd98
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148904"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454019"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -49,32 +49,30 @@ ms.locfileid: "53148904"
 
 ### <a name="where-to-set-permissions"></a>アクセス許可の設定場所
 
-組織でグローバル管理者の役割を持つユーザーが、コンプライアンス マネージャーのユーザー権限を設定できます。 アクセス許可は、Office 365 セキュリティ/コンプライアンス センターだけでなく、Azure Active Directory (Azure AD) でも設定できます。
+組織でグローバル管理者の役割を持つユーザーが、コンプライアンス マネージャーのユーザー権限を設定できます。 アクセス許可は、Microsoft 365 コンプライアンス センター (Azure Azure Active Directory) でAD。
 
 > [!NOTE]
 > US Government Community (GCC) High および国防総省 (DoD) 環境のお客様は、Azure AD でコンプライアンス マネージャーのユーザー権限とロールのみを設定できます。 Azure AD の説明とロール種別の定義については、以下を参照してください。
 
-Office 365 セキュリティ/コンプライアンス センターでアクセス許可を設定し、ロールを割り当てるには、以下の手順に従います。
+アクセス許可を設定し、ロールを割り当てるには、Microsoft 365 コンプライアンス センター手順に従います。
 
-1. [Office‍ 365 セキュリティ/コンプライアンス センター](https://protection.office.com/)に移動して、左のナビゲーションで **[アクセス許可]** を選択します。
+1. [アクセス許可] [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/compliancemanager)し、左側 **のナビゲーションで**[アクセス許可] を選択します。
 
-2. 1 人以上のユーザーを追加する役割グループを探し、グループ名の左にあるチェック ボックスをオンにします。 ([以下の役割と関連する機能の一覧](#role-types)を参照してください。 役割グループ名は、ロール名を模倣します)。
+2. [コンプライアンス センター] **ドロップダウンで** 、[役割] を **選択します**。 
 
-3. そのグループのポップアップ ウィンドウで、**[メンバー]** ヘッダーの下の **[編集]** を選択します。
+3. 1 人以上のユーザーを追加する役割グループを探し、グループ名の左にあるチェック ボックスをオンにします。 ([以下の役割と関連する機能の一覧](#role-types)を参照してください。 役割グループ名は、ロール名を模倣します)。
 
-4. **[メンバーの選択]** を選びます。 別のポップアップ ウィンドウが表示されます。
+4. そのグループのポップアップ ウィンドウで、**[メンバー]** ヘッダーの下の **[編集]** を選択します。
 
-5. **[追加]** を選択して、グループに追加する 1 人以上のユーザーを選択します。
+5. **[メンバーの選択]** を選びます。 別のポップアップ ウィンドウが表示されます。
 
-6. 追加する名前の横にあるチェックボックスを選択し、下部にある **[追加]** ボタンを選択します。
+6. **[追加]** を選択して、グループに追加する 1 人以上のユーザーを選択します。
 
-7. ユーザーの割り当てが完了したら、**[完了]** を選択し、**[保存]**、**[閉じる]** の順に選択します。
+7. 追加する名前の横にあるチェックボックスを選択し、下部にある **[追加]** ボタンを選択します。
 
-##### <a name="more-about-the-office-365-security--compliance-center"></a>Office 365 セキュリティ/コンプライアンス センターに関する詳細
+8. ユーザーの割り当てが完了したら、**[完了]** を選択し、**[保存]**、**[閉じる]** の順に選択します。
 
-詳細については、「[Office 365 セキュリティ/コンプライアンス センターでのアクセス許可](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)」を参照してください。
-
-Office 365 セキュリティ/コンプライアンス センターにアクセスできない場合や、Microsoft Service Trust Portal のクラシック版コンプライアンス センターにアクセスする必要がある場合は、Service Trust Portal の管理者設定でロールを割り当てる別の方法があります ([手順を表示](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users))。 このような役割は、機能的に制限されていることに注意してください。
+Microsoft Service Trust Portal で従来のバージョンのコンプライアンス マネージャーにアクセスする必要がある場合は、サービス信頼ポータルの管理者設定によって、役割を割り当てる別の方法が提供されます (手順[の](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)表示)。 このような役割は、機能的に制限されていることに注意してください。
 
 ##### <a name="more-about-azure-ad"></a>Azure AD の詳細
 
@@ -187,7 +185,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 8. 再割り当てが完了すると、以前のユーザーのすべての改善のための処置が新しいユーザーに再割り当てされたことを確認する確認メッセージがポップアップ ウィンドウに表示されます。 再割り当ての失敗通知を受信した場合は、ウィンドウを閉じてから再度実行してください。 ポップアップ ウィンドウを閉じるには、**[完了]** を選択します。
 
 新しい担当者は、改善のための処置に割り当てられたというメールを受信します。 このメールには、改善のための処置の詳細ページへの直接リンクが含まれています。
- 
+
  > [!NOTE]
 > 更新を保留中のアクションを再割り当てすると、再割り当て後に更新が承諾された場合に、再割り当てメールのアクションへの直接リンクが壊れる場合があります。 この問題を解決するには、更新が承諾された後に、ユーザーにアクションを再割り当てする必要があります。 [改善のための処置を更新する](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)方法を紹介します。
 
@@ -215,7 +213,7 @@ Microsoft 365 コンプライアンス センターのコンプライアンス �
 
 コンプライアンス マネージャー ダッシュ ボードは、現在のコンプライアンス態勢を一目で把握できるように設計されています。
 
-![コンプライアンス マネージャー - ダッシュ ボード](../media/compliance-manager-dashboard.png "コンプライアンス マネージャーのダッシュ ボード")
+:::image type="content" alt-text="コンプライアンス マネージャー - ダッシュボード。" source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
 
 ### <a name="overall-compliance-score"></a>コンプライアンス スコア全体
 

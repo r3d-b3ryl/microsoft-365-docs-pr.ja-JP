@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 777f5f63c4739f277ec24f826bc8a61a226fb65f
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 4aff505f9f35b6144360eed5992ac36cf0847617
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339672"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454711"
 ---
 # <a name="onboard-non-windows-devices"></a>Windows 以外のデバイスをオンボードする
 
@@ -40,7 +40,7 @@ ms.locfileid: "53339672"
 
 Defender for Endpoint は、セキュリティ プラットフォームだけでなく、Windowsプラットフォームにも一元的なセキュリティWindows提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートを、組織のネットワークMicrosoft 365 Defender保護するために役立ちます。 
 
-統合を機能するには、Defender for Endpoint と互換性のある Linux ディストリビューションと macOS の正確なバージョンを知る必要があります。 詳しくは、以下を参照してください。
+統合を機能するには、Defender for Endpoint と互換性のある Linux ディストリビューションと macOS の正確なバージョンを知る必要があります。 詳しくは、次のトピックを参照してください。
 - [Microsoft Defender for Endpoint on Linux システム要件](microsoft-defender-endpoint-linux.md#system-requirements)  
 - [Microsoft Defender for Endpoint on macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
 
@@ -50,7 +50,7 @@ Defender for Endpoint は、セキュリティ プラットフォームだけで
 
    - macOS デバイスの場合は、Microsoft Defender for Endpoint またはサード パーティ製ソリューションを使用してオンボードを選択できます。 詳細については [、「Microsoft Defender for Endpoint on Mac」を参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
 
-   - その他の非接続デバイスWindowsサードパーティとの統合を通じてWindowsデバイスのオンボード **を選択します**。   
+   - その他の非デバイスWindows、サードパーティとの統合を通じてWindowsデバイスのオンボード **を選択します**。   
     1. ナビゲーション ウィンドウで、[相互運用性パートナー]**を**  >  **選択します**。 サード パーティ製のソリューションが一覧に表示されます。
     2. [パートナー **アプリケーション] タブ** で、ユーザー以外のデバイスをサポートするパートナー Windowsします。
     3. [ **パートナー ページを開く]** を選択して、パートナーのページを開きます。 ページに記載されている手順に従います。

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域の Office 365サービスに移行する場合のサービスに関するその他のデバイス情報。'
-ms.openlocfilehash: 684af01b2d90f44b2cda1cf050d1e4db70f92915
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 1eb7b18360cefeeb2d5770c3d77e564d5a757a5e
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289441"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453569"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行に関するその他のデバイス情報
 
@@ -166,6 +166,10 @@ iOS デバイスでは、ユーザーはキャッシュされたアカウント�
 **すべてのデバイスがパブリック クラウドに登録されているのを知る方法**
 
 デバイスがパブリック クラウドに登録されているかどうかを確認するには、Azure AD ポータルからデバイスのリストをエクスポートして、Excelする必要があります。 次に、組織が移行プロセスのフェーズ 9 を通過した日付の後に 、登録されているデバイスを _(registeredTime_ 列を使用して) [フィルター処理します](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization)。
+
+**「Microsoft の DNS レコードを作成する」に記載されている DNS 名を追加する必要がある場合は、Windows [ベースの DNS を使用しますか](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-worldwide#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)。**
+
+この DNS エントリは、デバイスの再登録には不要です。 
 
 ## <a name="additional-considerations"></a>その他の考慮事項
 

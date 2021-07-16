@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 BlackBerry DataParser コネクタをセットアップして使用して、BlackBerry データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: 1e84a2c5273a503ccb5d88381e01160ae2abf3cd
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 565b51c4575324bfe1c80299adf82d391a8d14e1
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096481"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454555"
 ---
-# <a name="set-up-a-connector-to-archive-blackberry-data-preview"></a>BlackBerry データをアーカイブするコネクタをセットアップする (プレビュー)
+# <a name="set-up-a-connector-to-archive-blackberry-data"></a>BlackBerry データをアーカイブするコネクタをセットアップする
 
 17a-4 LLC の[BlackBerry DataParser](https://www.17a-4.com/BlackBerry-dataparser/)を使用して、BlackBerry エンタープライズ データをインポートし、組織のユーザー メールボックスにアーカイブMicrosoft 365します。 DataParser には、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成された BlackBerry コネクタMicrosoft 365。 BlackBerry DataParser コネクタは、BlackBerry データを電子メール メッセージ形式に変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
 
