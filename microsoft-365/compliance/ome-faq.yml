@@ -6,7 +6,7 @@ metadata:
   ms.author: krowley
   author: kccross
   manager: laurawi
-  ms.date: 05/22/2020
+  ms.date: 07/14/2021
   audience: ITPro
   ms.topic: overview
   ms.service: O365-seccomp
@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: 新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 386f37e2e6ebff820f4f6385281783daf41243b2
-  ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+  ms.openlocfilehash: 809f31682fbcb690aaaf2483ec8b72c766282cf5
+  ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/14/2021
-  ms.locfileid: "53430446"
+  ms.lasthandoff: 07/15/2021
+  ms.locfileid: "53453827"
 title: メッセージの暗号化に関する FAQ
 summary: >
   新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。 また、Azure Information Protection のデータ保護サービス Azure Rights Management に関する質問に対する回答については [、Azure Information Protection](/information-protection/get-started/faqs-rms) のデータ保護に関してよく寄せられる質問を参照してください。
@@ -35,13 +35,13 @@ sections:
     answer: "OME の新機能は、次の条件で使用できます。\n  \n- OME または IRM を設定したことがない場合は、Exchange OnlineをOffice 365。\n\n- OME と IRM をセットアップしている場合は、Azure Information Protection の Azure Rights Management サービスを使用している場合は、次の手順を使用できます。\n\n- Active Directory Rights Management サービス (Exchange Online RMS) で ADを使用している場合は、これらの新機能をすぐ有効にできます。 代わりに、最初に RMS AD [Azure Information Protection に移行する必要](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) があります。 移行が完了したら、OME を正常にセットアップできます。\n\n  Azure Information Protection に移行する代わりに、Exchange Online でオンプレミスの AD RMS を引き続き使用する場合は、これらの新機能を使用することはできません。\n"
   - question: >
       新しい OME 機能を使用する必要があるサブスクリプション
-    answer: "新しい OME 機能を使用するには、次のいずれかの計画が必要です。\n  \n- Office 365 Message Encryptionは、Office 365 Enterprise E3 および E5、Microsoft Enterprise E3 と E5、Microsoft 365 Business Premium、Office 365 A1、A3、および A5、および Office 365 Government G3 と G5 の一部として提供されます。 お客様は、Azure Information Protection を利用した新しい保護機能を受信するために、追加のライセンスは必要ありません。\n\n- また、Azure Information Protection Plan Office 365 Message Encryption 1 を次のプランに追加して、Exchange Online プラン 1、Exchange Online プラン 2、Office 365 F1、Microsoft 365 Business Basic、Microsoft 365 Business Standard、Office 365 Enterprise E1 の新しい機能を受け取る必要があります。\n\n- この機能の対象となるにはOffice 365 Message Encryptionユーザーにライセンスが必要です。\n\n- 完全な一覧については、「Exchange Online[サービスの](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)説明」を参照Office 365 Message Encryption。\n"
+    answer: "新しい OME 機能を使用するには、次のいずれかの計画が必要です。\n  \n- Office 365 Message Encryptionは、Office 365 Enterprise E3 および E5、Microsoft Enterprise E3 と E5、Microsoft 365 Business Premium、Office 365 A1、A3、および A5、および Office 365 Government G3 と G5 の一部として提供されます。 Azure Information Protection を利用した新しい保護機能を受け取る場合は、追加のライセンスは必要ない。\n\n- また、Azure Information Protection Plan Office 365 Message Encryption 1 を次のプランに追加して、Exchange Online プラン 1、Exchange Online プラン 2、Office 365 F1、Microsoft 365 Business Basic、Microsoft 365 Business Standard、Office 365 Enterprise E1 の新しい機能を受け取る必要があります。\n\n- この機能の対象となるにはOffice 365 Message Encryptionユーザーにライセンスが必要です。\n\n- 完全な一覧については、「Exchange Online[サービスの](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)説明」を参照Office 365 Message Encryption。\n"
   - question: >
       Azure Information Protection でExchange Onlineキー (BYOK) を持ち込む場合に、このキーを使用できますか?
     answer: "はい。 OME をセットアップする前に、BYOK をセットアップする手順を完了してください。\n  \nBYOK の詳細については、「Azure Information Protection テナント キーの計画 [と実装」を参照してください](/information-protection/plan-design/plan-implement-tenant-key)。\n  \n"
   - question: >
       Azure Information Protection を使用した OME と BYOK は、サブポエナなどのサード パーティのデータ要求に対する Microsoft のアプローチを変更しますか?
-    answer: "いいえ。 OME と、Azure Information Protection から BYOK と呼ばれる独自の暗号化キーを提供および制御するオプションは、法執行機関のサブポエナに対応するようには設計されていない。 OME は、BYOK for Azure Information Protection を使用して、コンプライアンスに焦点を当てたお客様向けに設計されました。 Microsoft は、顧客データに対するサードパーティの要求を真剣に受け止める。 クラウド サービス プロバイダーとして、常に顧客データのプライバシーを主張しています。 Subpoena を取得した場合は、常に第三者を顧客にリダイレクトして情報を取得します。 (Brad Smith のブログを読む: 政府のスヌーピングから顧客データ [を保護する](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 受信した要求の詳細な情報を定期的に公開します。 サード パーティのデータ要求の詳細については、「Microsoft Trust [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) Center で顧客データにアクセスする政府機関および法執行機関の要求への対応」を参照してください。 また、オンライン サービス条項 (OST) の「顧客データの開示 [」を参照してください](https://www.microsoft.com/Licensing/product-licensing/products.aspx)。\n  \n"
+    answer: "いいえ。 OME と、Azure Information Protection から BYOK と呼ばれる独自の暗号化キーを提供および制御するオプションは、法執行機関のサブポエナに対応するようには設計されていない。 OME は、BYOK for Azure Information Protection を使用して、コンプライアンスに重点を置く組織向けに設計されました。 Microsoft は、顧客データに対するサードパーティの要求を真剣に受け止める。 クラウド サービス プロバイダーとして、常にデータのプライバシーを主張します。 Subpoena が取得された場合、情報を取得するために、常に第三者を直接お客様にリダイレクトしようと試みます。 (Brad Smith のブログを読む: 政府のスヌーピングから顧客データ [を保護する](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。 受信した要求の詳細な情報を定期的に公開します。 サード パーティのデータ要求の詳細については、「Microsoft Trust [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) Center で顧客データにアクセスする政府機関および法執行機関の要求への対応」を参照してください。 また、オンライン サービス条項 (OST) の「顧客データの開示 [」を参照してください](https://www.microsoft.com/Licensing/product-licensing/products.aspx)。\n  \n"
   - question: >
       この機能は、レガシ Office 365 Message Encryption (OME) および Information Rights Management (IRM) 機能とどのように関連していますか?
     answer: "既存の IRM と従来Office 365 Message Encryption OME ソリューションの進化は、新しい機能です。 以下の表に詳細を示します。\n  \n**従来の OME、IRM、および新しい OME 機能の比較**\n\n| 機能 | OME の以前のバージョン | IRM | 新しい OME 機能 |\n|:-----|:-----|:-----|:-----|\n|**暗号化されたメールの送信**|メール フロー Exchangeを使用する場合のみ|エンド ユーザーは、Outlook、Windows、Outlook for MacのOutlook on the web。またはメール フロー Exchangeを介して|エンド ユーザーは、Outlook、Windows、Outlook for MacのOutlook on the web。またはメール フロー ルールを使用する|\n|**権限の管理**|-|[転送しない] オプションとカスタム テンプレート|[転送しない] オプション、暗号化のみ可能なオプション、既定のテンプレートとカスタム テンプレート|\n|**サポートされている受信者の種類**|外部受信者のみ|内部受信者のみ|内部および外部の受信者|\n|**受信者のエクスペリエンス**|外部受信者は、ブラウザーまたはダウンロードしたモバイル アプリでダウンロードして開いた HTML メッセージを受信しました。|内部受信者が受信した暗号化された電子メールは、Outlook、Windows、Outlook for Mac、およびOutlook on the web。|内部および外部の受信者は、Outlook Windows、Outlook for Mac、Outlook on the web、Outlook for Android、Outlook for iOS、または Web ポータルを通じて、同じ組織または組織内のかどうかに関係なく、電子メールを受信します。 OME ポータルでは、個別にダウンロードする必要はありません。|\n|**独自のキーのサポートを提供する**|使用不可|使用不可| BYOK がサポートされています|\n"
@@ -51,7 +51,7 @@ sections:
   - question: >
       以前のバージョンの OME は非推奨ですか?
     answer: >
-      以前のバージョンの OME は引き続き使用できます。現時点では廃止されません。 ただし、新しく改良された OME ソリューションを使用することを組織に強くお勧めしています。 OME を展開していないお客様は、以前のバージョンの OME の新しい展開を設定できません。
+      以前のバージョンの OME は引き続き使用できます。現時点では廃止されません。 ただし、新しく改良された OME ソリューションを使用することを組織に強くお勧めしています。 OME をまだ展開していない場合は、以前のバージョンの OME の新しい展開を設定できます。
   - question: >
       組織で Active Directory Rights Management を使用している場合、この機能を使用できますか?
     answer: "いいえ。 Active Directory Rights Management サービス (Exchange Online RMS) で ADを使用している場合は、これらの新機能をすぐ有効にできます。 代わりに、最初に RMS AD [Azure Information Protection に移行する必要](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) があります。\n  \n"
@@ -135,7 +135,7 @@ sections:
   - question: >
       電子情報開示などのコンプライアンス機能でメッセージ暗号化を使用できますか?
     answer: >
-      はい。 暗号化された電子メール メッセージはすべて、コンプライアンス機能Microsoft 365検出できます。
+      はい。 Microsoft 365機能を使用すると、すべての暗号化された電子メール メッセージを検出できます。 詳細については [、「暗号化されたアイテムをサポートする電子情報開示アクティビティ」](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) を参照してください。
   - question: >
       電子メールから暗号化を削除できますか?
     answer: >
@@ -151,7 +151,7 @@ sections:
   - question: >
       共有メールボックスに送信される暗号化されたメッセージを開く方法は?
     answer: >
-      はい。 暗号化されたメッセージは、共有メールボックスでサポートされます。
+      はい。 共有メールボックスの暗号化されたメッセージは、サポートされているクライアントにログインするときにOutlookできます。
 
 
       - ユーザーは、共有メールボックスで保護されたメールを開き、共有メールボックスが配布グループの一部として保護されたメールを受信しました。
@@ -203,7 +203,7 @@ sections:
   - question: >
       Fullaccess を使用して、別のユーザーのメールボックスに送信される暗号化されたメッセージを開く方法はありますか?
     answer: >
-      ユーザーは、直接アクセス権が与え、自動マッピングがオンになっている限り、暗号化されたメッセージを開くできます。 電子メールが有効なセキュリティ グループを介してアクセスが許可されている場合、アクセスは許可されません。
+      いいえ。 暗号化されたメッセージは、共有メールボックスでのみ開くことができます。
   - question: >
       要求した後に 1 回のパス コードを受け取らない場合は、どうしますか。
     answer: >-
