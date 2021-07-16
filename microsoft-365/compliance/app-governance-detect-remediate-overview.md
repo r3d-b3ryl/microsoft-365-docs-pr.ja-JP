@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリの脅威の検出と修復について説明します。
-ms.openlocfilehash: 26cd8501fdd8bd828357f8adb7d4e90f96e70114
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 574688e67b7562c8df6aec7d2242e68485239479
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420327"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438050"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>アプリの脅威の検出と修復に関する詳細情報
 
@@ -42,8 +42,8 @@ Microsoft アプリ ガバナンスを使用すると、次の情報を確認で
 
 アプリ ガバナンス、Azure Active Directory (Azure AD)、Microsoft Cloud App Security は、以下のようなさまざまなデータセットを収集して提供します。
 
-- Azure AD は、アプリの基礎となるメタデータと、アプリへのサインインに関する詳細な情報を提供します。
 - アプリ ガバナンスは、API レベルでのアプリのアクティビティに関する詳細情報を提供します。
+- Azure AD は、アプリの基礎となるメタデータと、アプリへのサインインに関する詳細な情報を提供します。
 - Microsoft Cloud App Security は、アプリのリスク情報を提供します。
 
 アプリ ガバナンス、Azure AD、Microsoft Cloud App Security で情報を共有することで、集約された情報を 1 つのポータルに表示し、詳細情報を得るために別のポータルに簡単にリンクすることができます。 次に、いくつかの例を示します:

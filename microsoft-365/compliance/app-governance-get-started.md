@@ -14,23 +14,23 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリを管理するためのアプリ ガバナンス機能の使用を開始します。
-ms.openlocfilehash: 0fc00819947d3d472de9199b0381c6f33de0acd6
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 80487298f2c3c3a93f0083337ddb223bd68e2611
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420315"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438038"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>アプリ ガバナンスの使用を開始する (プレビュー版)
 
-Microsoft Cloud App Security のアプリ ガバナンス機能の使用を開始するには、次の手順に従います。
+Microsoft Cloud App Security のアプリ ガバナンス アドオンの使用を開始するには、次の手順に従います。
 
 1. お客様のアカウントが適切なレベルのライセンスを所有していることを確認します。 アプリ ガバナンスは、Microsoft Cloud App Security (MCAS) のアドオン機能であるため、アカウントに MCAS がスタンドアロン製品または以下の各種ライセンス パッケージの一部として存在している必要があります。
 1. ポータルのアプリ ガバナンス ページにアクセスするには、以下のいずれかの管理者の役割が必要です。
 
 ## <a name="licensing-for-app-governance"></a>アプリ ガバナンスのライセンス
 
-アプリ ガバナンスを開始する前に、「[Microsoft 365サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)」とアドオンを確認しなければなりません。 アプリ ガバナンスにアクセスして使用するには、組織は次のいずれかのサブスクリプションまたはアドオンを持っている必要があります。
+アプリ ガバナンスを開始する前に、「[Microsoft 365 管理センター（サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)）」とアドオンを確認しなければなりません。 アプリ ガバナンスにアクセスして使用するには、組織は次のいずれかのサブスクリプションまたはアドオンを持っている必要があります。
 
 - Microsoft Cloud App Security
 - Microsoft 365 E5
@@ -69,6 +69,9 @@ Microsoft Cloud App Security のアプリ ガバナンス機能の使用を開�
 - セキュリティ管理者
 - セキュリティ オペレーター
 - セキュリティ リーダー (読み取り専用)
+
+> [!NOTE]
+> グローバル管理者のみが、アプリ ガバナンスの無料試用版を有効化できます。
 
 こちらが各役割の機能です。
 

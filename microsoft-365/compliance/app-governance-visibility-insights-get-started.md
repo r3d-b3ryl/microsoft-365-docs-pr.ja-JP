@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 可視性と分析情報の使用を開始します。
-ms.openlocfilehash: 12c1a01667b1bda545b619e931d99132e6611e35
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 93be3557c32345e81c7126b669ead8edf8ebac21
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420270"
+ms.locfileid: "53430482"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>可視性と分析情報の使用を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-開始する最初の場所は、[https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance) のアプリ ガバナンス ダッシュボードです。 アプリ ガバナンス データを表示するには、サインイン アカウントに[これらのアプリ ガバナンス管理者の役割](app-governance-get-started.md#administrator-roles)のいずれかが必要であることに注意してください。
+開始する最初の場所は、[https://aka.ms/appgovernance](https://aka.ms/appgovernance) のアプリ ガバナンス ダッシュボードです。 アプリ ガバナンス データを表示するには、サインイン アカウントに[これらのアプリ ガバナンス管理者の役割](app-governance-get-started.md#administrator-roles)のいずれかが必要であることに注意してください。
 
 ![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス概要] ページ](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
