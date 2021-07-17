@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 の IP アドレスと URL web サービスを使用して、Office 365 のネットワークトラフィックをより簡単に識別、差別化する方法について説明します。
-ms.openlocfilehash: 4de78934a76a7dba16f79cb9cc6f93a7c935a314
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 6a8786d99c92fae43113d550b76a87281cde0c5b
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419789"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461293"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL の Web サービス
 
@@ -132,7 +132,7 @@ Microsoft は、Office 365 の IP アドレスと FQDN エントリを毎月初�
 }
 ```
 
-例 3 要求 URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+例 3 要求 URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 この URI は CSV 形式で出力を表示します。結果の例:
 
@@ -141,7 +141,7 @@ instance,latest
 Worldwide,2018063000
 ```
 
-例 4 要求 URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+例 4 要求 URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 この URI は、Office 365 ワールドワイド サービス インスタンスに対して発行された以前のバージョンすべてを表示します。結果の例:
 

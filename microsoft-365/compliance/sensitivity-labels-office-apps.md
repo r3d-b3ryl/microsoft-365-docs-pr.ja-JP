@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cdfe9d106a55cef79a63b42b47f28b2d9bb9c53
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 2484aed7dd5f70a92b1199f472c983848326db7c
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228593"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430758"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -361,6 +361,8 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 > [Azure Information Protection 統合ラベリング クライアント](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)は、必須ラベリングとも呼ばれるこの構成をサポートします。 Office アプリに組み込まれているラベル付けについては、最小バージョンについて、このページの[機能](#support-for-sensitivity-label-capabilities-in-apps)セクションの表を参照してください。
 >
 > メールではなくドキュメントに必須ラベルを使用するには、Outlook 固有のオプションを構成する方法を説明する次のセクションの手順を参照してください。
+> 
+> Power BI の必須のラベル付けを使用するには、「[Power BI の必須のラベル付けポリシー](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)」を参照してください。
 
 このポリシー設定 [**ユーザーに電子メールとドキュメントへのラベルの適用を要求する**] を選択した場合、ポリシーを割り当てられたユーザーは、次のシナリオで秘密度ラベルを選択して適用する必要があります。
 

@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 972282713e21c0e1f99a66e696de32531e68d4a7
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: e1de507dd5ec9508df0318c8ba2ef30af795e25b
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114778"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430794"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -190,7 +190,7 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 
     ![ユーザーに正当性を入力するように求めるダイアログ](../media/Sensitivity-label-justification-required.png)
 
-- ドキュメントとメール、文書のみ、コンテナーに **ラベルを適用することをユーザーに要求** します。 必須のラベル付けとも呼ばれるこれらのオプションにより、ユーザーがドキュメントを保存してメールを送信したり、新しいグループやサイトを作成したりする前に、ラベルを適用する必要があります。
+- ドキュメントとメール、文書のみ、コンテナー、および Power BI コンテンツに **ラベルを適用することをユーザーに要求** します。 必須のラベル付けとも呼ばれるこれらのオプションにより、ユーザーがドキュメントを保存してメールを送信したり、新しいグループやサイトを作成したり、Power BI でラベルのないコンテンツを使用したりする前に、ラベルを適用する必要があります。
     
     ドキュメントやメールの場合、ラベルはユーザーが手動で割り当てることも、構成した条件に従って自動的に適用することも、既定 (前述の既定のラベルのオプション) で適用することもできます。ユーザーがラベルを割り当てる必要がある場合に Outlook に表示されるプロンプトの例:
 
@@ -199,6 +199,8 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
     ドキュメントとメールの必須のラベル付けの詳細については、「[ユーザーがメールとドキュメントにラベルを適用することを必須にする](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)」を参照してください。
     
     コンテナーの場合、グループまたはサイトの作成時にラベルを割り当てる必要があります。
+    
+    Power BI の必須のラベル付けの詳細については、「[Power BI の必須のラベル付けポリシー](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)」を参照してください。
     
     このオプションを使用して、ラベル付けの適用範囲を広げることを検討してください。 ただし、ユーザーのトレーニングを実施しない場合、この設定は不正確なラベル付けにつながる可能性があります。 さらに、対応する既定のラベルも設定しない限り、必須のラベル付けにより頻繁にダイアログが表示され、ユーザーを苛立たせる可能性があります。
 
