@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3ee0ca72f0eb3623755c9b342966915f520c485d
-ms.sourcegitcommit: 2abc6bf9939b14a427647e88f319dbb70de49ca6
+ms.openlocfilehash: 8dee18909d82656bcfb3e63fdc078328c678e660
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/16/2021
-ms.locfileid: "53458488"
+ms.locfileid: "53461389"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>プレビューとテストWindows 11 とMicrosoft マネージド デスクトップ
 
