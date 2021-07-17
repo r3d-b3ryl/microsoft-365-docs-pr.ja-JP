@@ -1,0 +1,103 @@
+---
+title: Microsoft Defender のアーキテクチャ要件と計画の概念をOffice 365、構築、構築、および設計フレームワーク
+description: Microsoft Defender for Office 365 Microsoft 365 Defenderの技術図は、Microsoft 365ラボまたはパイロット環境を構築する前に、ユーザーの ID を理解するのに役立ちます。
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: tracyp
+author: MSFTTracyP
+ms.date: 07/01/2021
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection:
+- M365-security-compliance
+- m365solution-overview
+- m365solution-evalutatemtp
+ms.topic: conceptual
+ms.technology: m365d
+ms.openlocfilehash: 15c84921dcfb4644241cf83ce4ffb6403180b9d4
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53458277"
+---
+# <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a><span data-ttu-id="cc46b-103">Microsoft Defender のアーキテクチャ要件Office 365主な概念について確認する</span><span class="sxs-lookup"><span data-stu-id="cc46b-103">Review Microsoft Defender for Office 365 architecture requirements and key concepts</span></span>
+
+
+<span data-ttu-id="cc46b-104">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="cc46b-104">**Applies to:**</span></span>
+- <span data-ttu-id="cc46b-105">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="cc46b-105">Microsoft 365 Defender</span></span>
+
+<span data-ttu-id="cc46b-106">この記事は、Microsoft Defender for microsoft Defender の評価環境をセットアップするプロセスの手順[1/3](eval-defender-office-365-overview.md) Office 365。</span><span class="sxs-lookup"><span data-stu-id="cc46b-106">This article is [Step 1 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365.</span></span> <span data-ttu-id="cc46b-107">このプロセスの詳細については、「概要」の記事を [参照してください](eval-defender-office-365-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="cc46b-107">For more information about this process, see the [overview article](eval-defender-office-365-overview.md).</span></span>
+
+<span data-ttu-id="cc46b-108">Defender for Office 365を有効にする前に、アーキテクチャを理解し、要件を満たしていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="cc46b-108">Before enabling Defender for Office 365, be sure you understand the architecture and can meet the requirements.</span></span> <span data-ttu-id="cc46b-109">この記事では、アーキテクチャ、主要な概念、および環境が満たす必要があるExchange Onlineについて説明します。</span><span class="sxs-lookup"><span data-stu-id="cc46b-109">This article describes the architecture, key concepts, and the prerequisites that your Exchange Online environment must meet.</span></span>
+
+## <a name="understand-the-architecture"></a><span data-ttu-id="cc46b-110">アーキテクチャを理解する</span><span class="sxs-lookup"><span data-stu-id="cc46b-110">Understand the architecture</span></span>
+
+<span data-ttu-id="cc46b-111">次の図は、サードパーティの SMTP ゲートウェイまたはオンプレミスの統合を含Office Microsoft Defender for microsoft Defender のベースライン アーキテクチャを示しています。</span><span class="sxs-lookup"><span data-stu-id="cc46b-111">The following diagram illustrates baseline architecture for Microsoft Defender for Office which can include a third-party SMTP gateway or on-premises integration.</span></span> <span data-ttu-id="cc46b-112">ハイブリッド共存シナリオ (実稼働メールボックスはオンプレミスとオンラインの両方) では、より複雑な構成が必要であり、この記事や評価ガイダンスでは説明しません。</span><span class="sxs-lookup"><span data-stu-id="cc46b-112">Hybrid coexistence scenarios (i.e. production mailboxes are both on-premise and online) require more complex configurations and are not covered in this article or evaluation guidance.</span></span>
+
+![Microsoft Defender for microsoft Defender for Office 365](../../media/defender/m365-defender-office-architecture.png)
+
+<span data-ttu-id="cc46b-114">次の表に、この図を示します。</span><span class="sxs-lookup"><span data-stu-id="cc46b-114">The following table describes this illustration.</span></span>
+
+|<span data-ttu-id="cc46b-115">コールアウト</span><span class="sxs-lookup"><span data-stu-id="cc46b-115">Call-out</span></span>  |<span data-ttu-id="cc46b-116">説明</span><span class="sxs-lookup"><span data-stu-id="cc46b-116">Description</span></span>  |
+|---------|---------|
+|<span data-ttu-id="cc46b-117">1</span><span class="sxs-lookup"><span data-stu-id="cc46b-117">1</span></span>     | <span data-ttu-id="cc46b-118">外部送信者のホスト サーバーは、通常、メッセージを中継するターゲット サーバーを提供する MX レコードのパブリック DNS 参照を実行します。</span><span class="sxs-lookup"><span data-stu-id="cc46b-118">The host server for the external sender typically performs a public DNS lookup for an MX record which provides the target server to relay the message.</span></span>  <span data-ttu-id="cc46b-119">この参照は、直接Exchange Online (EXO) または EXO に対して中継するように構成された SMTP ゲートウェイのいずれかです。</span><span class="sxs-lookup"><span data-stu-id="cc46b-119">This referral can either be Exchange Online (EXO) directly or an SMTP gateway that has been configured to relay against EXO.</span></span>  |
+|<span data-ttu-id="cc46b-120">2</span><span class="sxs-lookup"><span data-stu-id="cc46b-120">2</span></span>     | <span data-ttu-id="cc46b-121">Exchange Online Protection接続をネゴシエートして検証し、メッセージ ヘッダーとコンテンツを検査して、必要な追加のポリシー、タグ付け、または処理を決定します。</span><span class="sxs-lookup"><span data-stu-id="cc46b-121">Exchange Online Protection negotiates and validates the inbound connection and inspects the message headers and content to determine what additional policies, tagging, or processing is required.</span></span>  |
+|<span data-ttu-id="cc46b-122">3</span><span class="sxs-lookup"><span data-stu-id="cc46b-122">3</span></span>     | <span data-ttu-id="cc46b-123">Exchange Online、Microsoft Defender と統合Office 365、より高度な脅威保護、軽減、修復を提供します。</span><span class="sxs-lookup"><span data-stu-id="cc46b-123">Exchange Online integrates with Microsoft Defender for Office 365 to offer more advanced threat protection, mitigation, and remediation.</span></span> |
+|<span data-ttu-id="cc46b-124">4 </span><span class="sxs-lookup"><span data-stu-id="cc46b-124">4</span></span>     | <span data-ttu-id="cc46b-125">悪意のある、ブロックされている、または検疫されていないメッセージが処理され、迷惑メール、メールボックス ルール、または他の設定に関連するユーザー設定が評価され、トリガーされる EXO で受信者に配信されます。</span><span class="sxs-lookup"><span data-stu-id="cc46b-125">A message that is not malicious, blocked, or quarantined is processed and delivered to the recipient in EXO where user preferences related to junk mail, mailbox rules, or other settings are evaluated and triggered.</span></span> |
+|<span data-ttu-id="cc46b-126">5 </span><span class="sxs-lookup"><span data-stu-id="cc46b-126">5</span></span>     | <span data-ttu-id="cc46b-127">Azure AD Connect を使用すると、オンプレミスの Active Directory との統合を有効にし、メールが有効なオブジェクトとアカウントを Azure Active Directory と最終的にExchange Online。</span><span class="sxs-lookup"><span data-stu-id="cc46b-127">Integration with on-premises Active Directory can be enabled using Azure AD Connect to synchronize and provision mail-enabled objects and accounts to Azure Active Directory and ultimately Exchange Online.</span></span> |
+|<span data-ttu-id="cc46b-128">6 </span><span class="sxs-lookup"><span data-stu-id="cc46b-128">6</span></span>     | <span data-ttu-id="cc46b-129">オンプレミス環境を統合する場合は、メール関連の属性、設定、および構成の管理と管理をサポートするために Exchange サーバーを使用する方が強く推奨されます。</span><span class="sxs-lookup"><span data-stu-id="cc46b-129">When integrating an on-premises environment, it is strongly encouraged to use an Exchange server for supported management and administration of mail related attributes, settings, and configurations</span></span> |
+|<span data-ttu-id="cc46b-130">7 </span><span class="sxs-lookup"><span data-stu-id="cc46b-130">7</span></span>     | <span data-ttu-id="cc46b-131">Microsoft Defender for Office 365拡張検出および応答 (XDR) Microsoft 365 Defender信号を共有します。</span><span class="sxs-lookup"><span data-stu-id="cc46b-131">Microsoft Defender for Office 365 shares signals to Microsoft 365 Defender for extended detection and response (XDR).</span></span>|
+
+<span data-ttu-id="cc46b-132">オンプレミスの統合は一般的ですが、オプションです。</span><span class="sxs-lookup"><span data-stu-id="cc46b-132">On-premises integration is common but optional.</span></span> <span data-ttu-id="cc46b-133">環境がクラウド専用の場合は、このガイダンスも機能します。</span><span class="sxs-lookup"><span data-stu-id="cc46b-133">If your environment is cloud-only this guidance will also work for you.</span></span>
+
+## <a name="understand-key-concepts"></a><span data-ttu-id="cc46b-134">主要な概念を理解する</span><span class="sxs-lookup"><span data-stu-id="cc46b-134">Understand key concepts</span></span>
+
+<span data-ttu-id="cc46b-135">次の表では、MDO の評価、構成、および展開を行う際に理解するために重要な重要な概念を示しています。</span><span class="sxs-lookup"><span data-stu-id="cc46b-135">The following table identified key concepts that are important to understand when evaluating, configuring, and deploying MDO.</span></span>
+
+
+|<span data-ttu-id="cc46b-136">概念</span><span class="sxs-lookup"><span data-stu-id="cc46b-136">Concept</span></span>  |<span data-ttu-id="cc46b-137">説明</span><span class="sxs-lookup"><span data-stu-id="cc46b-137">Description</span></span> |<span data-ttu-id="cc46b-138">詳細情報</span><span class="sxs-lookup"><span data-stu-id="cc46b-138">More information</span></span>  |
+|---------|---------|---------|
+|<span data-ttu-id="cc46b-139">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="cc46b-139">Exchange Online Protection</span></span>      |    <span data-ttu-id="cc46b-140">Exchange Online Protection (EOP) は、スパムメールやマルウェアメールから組織を保護するのに役立つクラウドベースのフィルタリング サービスです。</span><span class="sxs-lookup"><span data-stu-id="cc46b-140">Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware emails.</span></span> <span data-ttu-id="cc46b-141">EOP は、ライセンスを含むすべてのMicrosoft 365ライセンスにExchange Online。</span><span class="sxs-lookup"><span data-stu-id="cc46b-141">EOP is included in all Microsoft 365 licenses which include Exchange Online.</span></span>     |   [<span data-ttu-id="cc46b-142">Exchange Online Protection の概要</span><span class="sxs-lookup"><span data-stu-id="cc46b-142">Exchange Online Protection overview</span></span>](../office-365-security/exchange-online-protection-overview.md)      |
+|<span data-ttu-id="cc46b-143">マルウェア対策保護</span><span class="sxs-lookup"><span data-stu-id="cc46b-143">Anti-malware protection</span></span>     |    <span data-ttu-id="cc46b-144">EXO にメールボックスがある組織は、マルウェアから自動的に保護されます。</span><span class="sxs-lookup"><span data-stu-id="cc46b-144">Organizations with mailboxes in EXO are automatically protected against malware.</span></span>     |  [<span data-ttu-id="cc46b-145">EOP のマルウェア対策保護</span><span class="sxs-lookup"><span data-stu-id="cc46b-145">Anti-malware protection in EOP</span></span>](../office-365-security/anti-malware-protection.md)       |
+|<span data-ttu-id="cc46b-146">スパム対策保護</span><span class="sxs-lookup"><span data-stu-id="cc46b-146">Anti-spam protection</span></span>     |   <span data-ttu-id="cc46b-147">EXO のメールボックスを持つ組織は、迷惑メールやスパム ポリシーから自動的に保護されます。</span><span class="sxs-lookup"><span data-stu-id="cc46b-147">Organizations with mailboxes in EXO are automatically protected against junk mail and spam policies.</span></span>      |  [<span data-ttu-id="cc46b-148">EOP でのスパム対策保護</span><span class="sxs-lookup"><span data-stu-id="cc46b-148">Anti-spam protection in EOP</span></span>](../office-365-security/anti-spam-protection.md)       |
+|<span data-ttu-id="cc46b-149">フィッシング対策保護</span><span class="sxs-lookup"><span data-stu-id="cc46b-149">Anti-phishing protection</span></span> |  <span data-ttu-id="cc46b-150">MDO は、スピア フィッシング、捕鯨、ランサムウェア、その他の悪意のあるアクティビティに関連する、より高度なフィッシング対策保護を提供します。</span><span class="sxs-lookup"><span data-stu-id="cc46b-150">MDO offers more advanced anti-phishing  protection related to spear phishing, whaling, ransomware, and other malicious activities.</span></span>   | [<span data-ttu-id="cc46b-151">Microsoft Defender for Office 365 の追加のフィッシング対策保護</span><span class="sxs-lookup"><span data-stu-id="cc46b-151">Additional anti-phishing protection in Microsoft Defender for Office 365</span></span>](../office-365-security/anti-phishing-protection.md)   |
+|<span data-ttu-id="cc46b-152">スプーフィング対策保護</span><span class="sxs-lookup"><span data-stu-id="cc46b-152">Anti-spoofing protection</span></span>     |   <span data-ttu-id="cc46b-153">EOP には、偽装 (偽造) 送信者から組織を保護するための機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="cc46b-153">EOP includes features to help protect your organization from spoofed (forged) senders.</span></span>      |   [<span data-ttu-id="cc46b-154">EOP のスプーフィング対策保護</span><span class="sxs-lookup"><span data-stu-id="cc46b-154">Anti-spoofing protection in EOP</span></span>](../office-365-security/anti-spoofing-protection.md)      |
+|<span data-ttu-id="cc46b-155">安全な添付ファイル</span><span class="sxs-lookup"><span data-stu-id="cc46b-155">Safe attachments</span></span>     |   <span data-ttu-id="cc46b-156">セーフ添付ファイルは、配信される前に、仮想環境を使用して電子メール メッセージ内の添付ファイルをチェックして "削除" することで、保護の層を追加します。</span><span class="sxs-lookup"><span data-stu-id="cc46b-156">Safe Attachments provides an additional layer of protection by using a virtual environment to check and "detonate" attachments in email messages before they are delivered.</span></span>      |   [<span data-ttu-id="cc46b-157">セーフMicrosoft Defender の添付ファイル (Office 365</span><span class="sxs-lookup"><span data-stu-id="cc46b-157">Safe Attachments in Microsoft Defender for Office 365</span></span>](../office-365-security/safe-attachments.md)      |
+|<span data-ttu-id="cc46b-158">セーフ、SharePoint、OneDrive、およびMicrosoft Teams</span><span class="sxs-lookup"><span data-stu-id="cc46b-158">Safe attachments for SharePoint, OneDrive, and Microsoft Teams</span></span>     |    <span data-ttu-id="cc46b-159">さらに、セーフ SharePoint、OneDrive、Microsoft Teams の添付ファイルは、クラウド ストレージ リポジトリにアップロードされたファイルに対する追加の保護層を提供します。</span><span class="sxs-lookup"><span data-stu-id="cc46b-159">In addition, Safe Attachments for SharePoint, OneDrive, and Microsoft Teams offers an additional layer of protection for files that have been uploaded to cloud storage repositories.</span></span>     |  [<span data-ttu-id="cc46b-160">SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル</span><span class="sxs-lookup"><span data-stu-id="cc46b-160">Safe Attachments for SharePoint, OneDrive, and Microsoft Teams</span></span>](../office-365-security/mdo-for-spo-odb-and-teams.md)       |
+|<span data-ttu-id="cc46b-161">安全なリンク</span><span class="sxs-lookup"><span data-stu-id="cc46b-161">Safe Links</span></span>     | <span data-ttu-id="cc46b-162">セーフリンクは、受信メール メッセージ内で URL のスキャンと書き換えを提供し、配信またはクリックする前にそれらのリンクの検証を提供する機能です。</span><span class="sxs-lookup"><span data-stu-id="cc46b-162">Safe Links is a feature that provides URL scanning and rewriting within inbound email messages and offers verification of those links before they are delivered or clicked.</span></span>        |   [<span data-ttu-id="cc46b-163">セーフMicrosoft Defender for Office 365</span><span class="sxs-lookup"><span data-stu-id="cc46b-163">Safe Links in Microsoft Defender for Office 365</span></span>](../office-365-security/safe-links.md)      |
+|    |         |         |
+
+<span data-ttu-id="cc46b-164">Microsoft Defender for Officeに含まれる機能の詳細については[、「Microsoft Defender for Office 365」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。</span><span class="sxs-lookup"><span data-stu-id="cc46b-164">For more detailed information about the capabilities included with Microsoft Defender for Office, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).</span></span>
+
+## <a name="review-architecture-requirements"></a><span data-ttu-id="cc46b-165">アーキテクチャ要件の確認</span><span class="sxs-lookup"><span data-stu-id="cc46b-165">Review architecture requirements</span></span>
+<span data-ttu-id="cc46b-166">成功した MDO 評価または実稼働パイロットは、次の前提条件を前提とします。</span><span class="sxs-lookup"><span data-stu-id="cc46b-166">A successful MDO evaluation or production pilot assumes the following pre-requisites:</span></span>
+- <span data-ttu-id="cc46b-167">すべての受信者メールボックスは現在、Exchange Online。</span><span class="sxs-lookup"><span data-stu-id="cc46b-167">All your recipient mailboxes are currently in Exchange Online.</span></span>
+- <span data-ttu-id="cc46b-168">パブリック MX レコードは EOP またはサード パーティの SMTP ゲートウェイに直接解決し、受信外部メールを EOP に直接中継します。</span><span class="sxs-lookup"><span data-stu-id="cc46b-168">Your public MX record resolves directly to EOP or a third-party SMTP gateway that then relays inbound external email directly to EOP.</span></span>
+- <span data-ttu-id="cc46b-169">プライマリ 電子メール ドメインは、管理者の *権限* としてExchange Online。</span><span class="sxs-lookup"><span data-stu-id="cc46b-169">Your primary email domain is configured as *authoritative* in Exchange Online.</span></span>
+- <span data-ttu-id="cc46b-170">必要に応じて、ディレクトリ ベース *エッジ* ブロック (DBEB) を正常に展開して構成しました。</span><span class="sxs-lookup"><span data-stu-id="cc46b-170">You successfully deployed and configured *Directory Based Edge Blocking* (DBEB) as appropriate.</span></span> <span data-ttu-id="cc46b-171">詳細については、「[ディレクトリ ベースのエッジ ブロックを使用して無効な受信者に送信されたメッセージを拒否する](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cc46b-171">For more information, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="cc46b-172">これらの要件が該当しない場合、またはハイブリッド共存シナリオに残っている場合、microsoft Defender for Office 365 評価では、このガイダンスで完全に説明されていない、より複雑な構成または高度な構成が必要になります。</span><span class="sxs-lookup"><span data-stu-id="cc46b-172">If these requirements are not applicable or you are still in a hybrid coexistence scenario, then a Microsoft Defender for Office 365 evaluation can require more complex or advanced configurations which are not fully covered in this guidance.</span></span>
+
+## <a name="siem-integration"></a><span data-ttu-id="cc46b-173">SIEM 統合</span><span class="sxs-lookup"><span data-stu-id="cc46b-173">SIEM integration</span></span>
+
+<span data-ttu-id="cc46b-174">Microsoft Defender for Office 365 Azure Sentinel を統合して、組織全体のセキュリティ イベントをより包括的に分析し、プレイブックを構築して効果的かつ迅速な対応を行います。</span><span class="sxs-lookup"><span data-stu-id="cc46b-174">You can integrate Microsoft Defender for Office 365 with Azure Sentinel to more comprehensively analyze security events across your organization and build playbooks for effective and immediate response.</span></span> <span data-ttu-id="cc46b-175">詳細については、「Microsoft [Defender Connectアラート」を参照Office 365。](/azure/sentinel/connect-office-365-advanced-threat-protection)</span><span class="sxs-lookup"><span data-stu-id="cc46b-175">For more information, see [Connect alerts from Microsoft Defender for Office 365](/azure/sentinel/connect-office-365-advanced-threat-protection).</span></span>
+
+<span data-ttu-id="cc46b-176">Microsoft Defender for Office 365アクティビティ管理 API を使用して、他のセキュリティ情報およびイベント管理 (SIEM) ソリューションOffice 365[統合することもできます](/office/office-365-management-api/office-365-management-activity-api-reference)。</span><span class="sxs-lookup"><span data-stu-id="cc46b-176">Microsoft Defender for Office 365 can also be integrated into other Security Information and Event Management (SIEM) solutions using the [Office 365 Activity Management API](/office/office-365-management-api/office-365-management-activity-api-reference).</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="cc46b-177">次の手順</span><span class="sxs-lookup"><span data-stu-id="cc46b-177">Next steps</span></span>
+
+<span data-ttu-id="cc46b-178">手順 2/3:[評価環境を有効](eval-defender-office-365-enable-eval.md)にする Microsoft Defender for Office 365</span><span class="sxs-lookup"><span data-stu-id="cc46b-178">Step 2 of 3: [Enable the evaluation environment Microsoft Defender for Office 365](eval-defender-office-365-enable-eval.md)</span></span>
+
+<span data-ttu-id="cc46b-179">[Microsoft Defender for Office 365 の評価[] の概要に戻Office 365](eval-defender-office-365-overview.md)</span><span class="sxs-lookup"><span data-stu-id="cc46b-179">Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)</span></span>
+
+<span data-ttu-id="cc46b-180">[評価とパイロット][の概要に戻Microsoft 365 Defender](eval-overview.md)</span><span class="sxs-lookup"><span data-stu-id="cc46b-180">Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)</span></span> 
+
