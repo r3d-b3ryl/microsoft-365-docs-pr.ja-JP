@@ -22,12 +22,12 @@ description: Microsoft 情報保護 (MIP) の秘密度ラベルを使用して�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: e1de507dd5ec9508df0318c8ba2ef30af795e25b
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 130b264735d00083116a5cf18cc0c4bf6b1a764c
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430794"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453635"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -183,6 +183,9 @@ Microsoft Information Protection ソリューションの秘密度ラベルを�
 - **ラベルを表示させるユーザーとグループを選択する。** Azure AD の特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([動的メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を使用できる) にラベルを発行することができます。
 
 - 新規ドキュメント、ラベルのないメール、および新規コンテナーに **既定のラベルを指定** します ([Microsoft Teams、Microsoft 365 グループ、および SharePoint サイトの秘密度ラベルを有効にしている場合](sensitivity-labels-teams-groups-sites.md))。 3 種類のアイテムすべてに同じラベルを指定することも、異なるラベルを指定することもできます。 ドキュメントに既定のラベルを指定した場合、Azure Information Protection 統合ラベル付けクライアントでは、ラベルのない既存のドキュメントにもこのラベルが適用されます。 既定のラベルがドキュメントまたはメールに適切でない場合、ユーザーはいつでも変更できます。
+    
+    > [!IMPORTANT]
+    > [サブラベル](#sublabels-grouping-labels) がある場合は、親ラベルを既定のラベルとして構成しないように注意してください。
     
     既定ラベル使用して、すべてのコンテンツに適用する保護設定の基本レベルを設定することを検討してください。 ただし、ユーザーのとレーニングや他の制御を実施しない場合、この設定は不正確なラベル付けにつながる可能性もあります。 通常、ドキュメントの既定のラベルとして暗号化を適用するラベルを選択することはお勧めできません。 たとえば、多くの組織は、暗号化をサポートするアプリを所有していないか、認証可能なアカウントを使用していない可能性がある外部ユーザーとドキュメントを送信して共有する必要があります。 このシナリオの詳細については、「[Sharing encrypted documents with external users (外部ユーザーと暗号化されたドキュメントを共有する)](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)」を参照してください。
 

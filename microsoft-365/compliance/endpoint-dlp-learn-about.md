@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 Microsoft 365 のコンプライアンスソリューションでファイルが表示されます '
-ms.openlocfilehash: c97368dd48515dc787dbac66aa93844889efbdbc
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 3da15f1ac35ca448a76638c31f047c6a2132ad7a
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314418"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454007"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
@@ -53,7 +53,7 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 
 ## <a name="monitored-files"></a>監視対象ファイル
 
-エンドポイント DLP は、次のファイルの種類の監視をサポートしています。
+エンドポイント DLP は、これらのファイルの種類の監視をサポートしています。 DLP は、ポリシーの一致がない場合でも、これらのファイルの種類のアクティビティを監査します。 
 
 - Word ファイル
 - PowerPoint ファイル
@@ -69,8 +69,11 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 - .cs ファイル
 - .h ファイル
 - .java ファイル
+ 
+ポリシーの一致からのデータの監視のみが必要な場合は、エンドポイント DLP グローバル設定で **[デバイスのファイル アクティビティを常に監査する]** をオフにすることができます。
 
-既定では、エンドポイント DLP は、ポリシーの一致がない場合でも、これらのファイルの種類のアクティビティを監査します。 ポリシーの一致からのデータの監視のみが必要な場合は、エンドポイント DLP グローバル設定で **[デバイスのファイル アクティビティを常に監査する]** をオフにすることができます。 この設定がオンの場合、デバイスがポリシーの対象になっていない場合でも、Word、PowerPoint、Excel、PDF、および .csv ァイルでのアクティビティは常に監査されます。
+> [!NOTE]
+> **デバイスのファイル アクティビティを常に監査する** の設定がオンの場合、デバイスがポリシーの対象になっていない場合でも、Word、PowerPoint、Excel、PDF、および .csv ァイルでのアクティビティは常に監査されます。
 
 エンドポイント DLP は MIME の種類に基づいてアクティビティを監視するため、ファイルの拡張子が変更されてもアクティビティはキャプチャされます。
 
