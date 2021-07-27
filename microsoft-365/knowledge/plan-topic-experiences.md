@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva のトピックの計画
+title: 計画を立Microsoft Viva トピック
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Microsoft Viva のプラントピックを計画する方法について説明します。
-ms.openlocfilehash: a407fd6e6919c3b85235e317e5ed3ff103607700
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: プラン for Microsoft Viva トピック
+ms.openlocfilehash: bd732edf9d206f6d62ed0cb3040b1d077b1948ca
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229541"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542395"
 ---
-# <a name="plan-for-microsoft-viva-topics"></a>Microsoft Viva のトピックの計画
+# <a name="plan-for-microsoft-viva-topics"></a>計画を立Microsoft Viva トピック
 
 組織でのトピックのエクスペリエンスを制御できます。 トピックの計画の決定により、高品質のトピックがユーザーに表示され、知識を使用して提供するための適切なアクセス許可がユーザーに付与されます。
 
@@ -30,15 +30,17 @@ ms.locfileid: "53229541"
 - トピック センターでトピックを作成または編集するためのアクセス許可を付与するユーザー
 - トピック センターに与える名前
 
-データのセキュリティとプライバシーが尊重され、トピック エクスペリエンスはユーザーに権限を持たなかったファイルへの追加のアクセス権をユーザーに付与しない。 計画プロセスの一環として [、Microsoft Viva Topics のセキュリティと](topic-experiences-security-privacy.md) プライバシーも確認することをお勧めします。
+データのセキュリティとプライバシーが尊重され、トピック エクスペリエンスはユーザーに権限を持たなかったファイルへの追加のアクセス権をユーザーに付与しない。 また、計画プロセスの[一Microsoft Viva トピックセキュリティとプライバシー](topic-experiences-security-privacy.md)に関する記事も参照することをお勧めします。
 
-ビバ トピックスの背後にある AI テクノロジの詳細については [、「Microsoft Viva Topics:](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)ビッグ データからビッグ ナレッジまで」の「アレクサンドリア」を参照してください。
+ビバ トピックスの背後にある AI テクノロジの詳細については、「Microsoft Viva トピック:ビッグ データからビッグ ナレッジまで」を[参照してください](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)。
+
+ビバ トピックでは、ユーザーが毎日使用するサイトやファイルにアクセスする必要があります。 テスト環境または開発環境にビバ トピックを展開すると、有用な結果が得られるとは言い得ない場合があります。
 
 ## <a name="requirements"></a>要件
 
 ビバ トピックに[アクセスして](https://www.microsoft.com/microsoft-viva/topics)トピックを設定するには、ビバ トピックにサブスクライブし、グローバル管理者または管理者SharePoint Microsoft 365 管理センター管理者である必要があります。
 
-Topics を使用するユーザーには、トピック エクスペリエンス ライセンス **が必要** です。 ライセンスの割り当てについては [、「Microsoft Viva Topics のセットアップ」を参照してください](set-up-topic-experiences.md)。
+Topics を使用するユーザーには、トピック エクスペリエンス ライセンス **が必要** です。 ライセンスの割り当てについては、「[セットアップ」でMicrosoft Viva トピック。](set-up-topic-experiences.md)
 
 ## <a name="topic-discovery"></a>トピックの検出
 

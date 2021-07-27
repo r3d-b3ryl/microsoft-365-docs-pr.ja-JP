@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、Microsoft 365 Lighthouseテナントを 1 つの場所でセキュリティで保護および管理する方法について説明します。
-ms.openlocfilehash: af03495f7bf47fe3c72ebb7487b8709d2e2b0736
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 5bc5fdce2c1133def04472e04f21e33ff331dd2a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409034"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542383"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>概要 Microsoft 365 Lighthouse
 
@@ -34,7 +34,7 @@ Microsoft 365 Lighthouseは、SMB のお客様に合わせたセキュリティ�
 
 サービスと接続されたデバイスの管理にMicrosoft 365 LighthouseにMicrosoft 365コストは発生します。 Microsoft 365 Lighthouseプレビュー中で、クラウド ソリューション プロバイダー (CSP) プログラムに登録され、SMB のお客様にサブスクリプションを提供する MSP でMicrosoft 365 Business Premiumできます。
 
-CSP 間接プロバイダーは現在、ユーザーがサポートMicrosoft 365 Lighthouse。 
+Microsoft CSP チャネル Microsoft 365 Lighthouseパートナーが使用しているユーザーがサポートしているMicrosoft 365 Business Premium使用します。 これには、CSP パートナーが Microsoft と直接取引することや、間接プロバイダー (ディストリビューター) を介して取引するパートナーが含まれます。 
 
 > [!IMPORTANT] 
 > この機能Microsoft 365 Lighthouse、MSP とその顧客テナントは、次の要件に記載されている要件[Microsoft 365 Lighthouse必要があります](m365-lighthouse-requirements.md)。     

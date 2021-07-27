@@ -4,6 +4,8 @@
     - name: Microsoft マネージド デスクトップとは
       href: intro/index.md
       items:
+        - name: Microsoft マネージド デスクトップと Windows 11
+          href: intro/win11-overview.md
         - name: 役割と責任
           href: intro/roles-and-responsibilities.md
         - name: Microsoft マネージド デスクトップのテクノロジ
@@ -169,5 +171,7 @@
               href: working-with-managed-desktop/config-setting-ref.md
             - name: 構成可能な設定を展開する
               href: working-with-managed-desktop/config-setting-deploy.md
+        - name: Microsoft マネージド デスクトップを使用して Windows 11 をプレビューおよびテストする
+          href: working-with-managed-desktop/test-win11-mmd.md
     - name: Microsoft マネージド デスクトップのドキュメントの変更履歴
       href: change-history-managed-desktop.md

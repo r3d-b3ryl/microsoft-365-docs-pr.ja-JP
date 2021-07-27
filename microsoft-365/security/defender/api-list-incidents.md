@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 038879e77dfa26d82add20d043a32de117f95b19
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c83d5994ab93799536796c153dfd878e3e2dd6d0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287833"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542707"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>インシデント API をリストMicrosoft 365 Defender
 
@@ -106,7 +106,8 @@ lastUpdateTime | バックエンドでインシデントが最後に更新され
 assignedTo | インシデントの所有者、または所有者 *が割り当* てられていない場合は null。 | secop2@contoso.com
 classification | インシデントの仕様。 プロパティの値は次 *のとおりです。不明**、FalsePositive、TruePositive*  | 不明
 決定 | インシデントの決定を指定します。 プロパティの値は次 *のとおりです。 NotAvailable*、 *Apt*、 *Malware*、 *SecurityPersonnel*、 *SecurityTesting*、 *UnwantedSoftware*、*その* 他 | NotAvailable
-status | インシデント (アクティブ *、または解決* 済み) *を分類します*。 インシデントに対する対応を整理および管理するのに役立ちます。 | Active
+detectionSource | 検出元を指定します。 | MCAS
+status | インシデント (アクティブ *、または解決* 済み) *を分類します*。 インシデントに対する対応を整理および管理するのに役立ちます。 | アクティブ
 severity | アセットへの影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高い項目では、最も迅速な注意が必要です。<br /><br />次のいずれかの値: Informational、Low、*Medium、High です。   | 中
 tags | インシデントに関連付けられたカスタム タグの配列 。たとえば、共通の特性を持つインシデントのグループにフラグを設定します。 | \[\]
 comments | インシデントの管理時に secops によって作成されたコメントの配列 (分類の選択に関する追加情報など)。 | \[\]
@@ -124,7 +125,7 @@ lastUpdatedTime | バックエンドでアラートが最後に更新された�
 resolvedTime | アラートが解決された時刻。 | 2020-09-10T05:22:59Z
 firstActivity | アクティビティがバックエンドで更新されたとアラートが最初に報告された時刻。| 2020-09-04T05:22:59Z
 title | 各アラートで使用できる文字列値を簡単に識別します。 | ランサムウェアのアクティビティ
-説明 | 各アラートを表す文字列値。 | ユーザー Test User2 (testUser2@contoso.com) は、複数の拡張子を持つ 99 ファイルを操作し、珍しい拡張子 *herunterladen で終わらせた*。 これは、ファイル操作の異常な数であり、潜在的なランサムウェア攻撃を示しています。
+description | 各アラートを表す文字列値。 | ユーザー Test User2 (testUser2@contoso.com) は、複数の拡張子を持つ 99 ファイルを操作し、珍しい拡張子 *herunterladen で終わらせた*。 これは、ファイル操作の異常な数であり、潜在的なランサムウェア攻撃を示しています。
 category | キル チェーンに沿って攻撃がどこまで進んでいるかの視覚的および数値的なビュー。 CK の [MITRE ATT&に™します](https://attack.mitre.org/)。 | 影響
 status | アラートを分類する (*新規、**アクティブ*、*または解決済み*)。 アラートに対する応答を整理および管理するのに役立ちます。 | 新規
 severity | アセットへの影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重要度の高い項目では、最も迅速な注意が必要です。<br>次のいずれかの値: Informational、Low、*Medium、High です。   | 中
@@ -149,7 +150,7 @@ osPlatform | デバイスが実行されている OS プラットフォーム。
 osBuild | デバイスが実行されている OS のビルド バージョン。 | 14393
 rbacGroupName | デバイス [に関連付けられた役割ベース](/azure/role-based-access-control/overview) のアクセス制御 (RBAC) グループ。 | WDATP-Ring0
 firstSeen | デバイスが最初に表示された時刻。 | 2020-02-06T14:16:01.9330135Z
-healthStatus | デバイスの正常性状態。 | Active
+healthStatus | デバイスの正常性状態。 | アクティブ
 riskScore | デバイスのリスク スコア。 | 高
 エンティティ | 特定のアラートの一部として、または関連付けと識別されたすべてのエンティティ。 | \[\] (以下のエンティティ フィールドの詳細を参照してください)
 

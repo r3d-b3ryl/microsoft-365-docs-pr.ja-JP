@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: ユーザーのメールボックスに配置できるさまざまな種類の保留リストを特定するExchange OnlineをMicrosoft 365。
-ms.openlocfilehash: 0fdfbd4503a4ddffd2ce2dd97c6af42684aea293
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b7c8d2db782ca811e02783115b621ccba772066
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917537"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578435"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -74,13 +74,13 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 
 次の表では **、Get-Mailbox** コマンドレットを実行するときに *InPlaceHolds* プロパティの値に基づいて、さまざまな種類の保留リストを識別する方法について説明します。
 
-|ホールドの種類  |値の例  |保留を識別する方法  |
-|---------|---------|---------|
-|訴訟ホールド     |    `True`     |     *LitigationHoldEnabled* プロパティがに設定されている場合、メールボックスに対して訴訟ホールドが有効になります `True` 。    |
-|電子情報開示の保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds プロパティには*、セキュリティとコンプライアンス センターの電子情報開示ケースに関連付けられた任意のホールドの GUID が含まれる。 GUID はプレフィックス (統合ホールドを表す) で始まるので、これは電子情報開示 `UniH` ホールドであることを示します。      |
-|インプレース ホールド     |     `c0ba3ce811b6432a8751430937152491` <br/> または <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds* プロパティには、メールボックスにIn-Place保持の GUID が含まれる。 GUID はプレフィックスで始In-Placeプレフィックスで始まるので、これは保留の一部です `cld` 。     |
-|Microsoft 365メールボックスに特に適用されるアイテム保持ポリシー     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> または <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds プロパティには、メールボックスに適用される特定の場所保持ポリシーの GUID が含まれる。 GUID はプレフィックスで始まるため、保持ポリシー `mbx` を識別 `skp` できます。 プレフィックス `skp` は、アイテム保持ポリシーがユーザーのメールボックス内のSkype for Businessに適用されるかどうかを示します。    |
-|組織全体のアイテム保持ポリシー Microsoft 365除外     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     メールボックスが組織全体の Microsoft 365 アイテム保持ポリシーから除外されている場合、メールボックスが除外されるアイテム保持ポリシーの GUID は InPlaceHolds プロパティに表示され、プレフィックスで識別されます `-mbx` 。    |
+| ホールドの種類                                                          | 値の例                                                                                  | 保留を識別する方法                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 訴訟ホールド                                                    | `True`                                                                                         | *LitigationHoldEnabled* プロパティがに設定されている場合、メールボックスに対して訴訟ホールドが有効になります `True` 。                                                                                                                                                                                                                                         |
+| 電子情報開示の保留                                                    | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`                                                     | *InPlaceHolds プロパティには*、セキュリティとコンプライアンス センターの電子情報開示ケースに関連付けられた任意のホールドの GUID が含まれる。 GUID はプレフィックス (統合ホールドを表す) で始まるので、これは電子情報開示 `UniH` ホールドであることを示します。                                                                                   |
+| インプレース ホールド                                                      | `c0ba3ce811b6432a8751430937152491` <br/> または <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`        | *InPlaceHolds* プロパティには、メールボックスにIn-Place保持の GUID が含まれる。 GUID はプレフィックスで始In-Placeプレフィックスで始まるので、これは保留の一部です `cld` 。                                                                                                               |
+| Microsoft 365メールボックスに特に適用されるアイテム保持ポリシー | `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> または <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3` | InPlaceHolds プロパティには、メールボックスに適用される特定の場所保持ポリシーの GUID が含まれる。 GUID はプレフィックスで始まるため、保持ポリシー `mbx` を識別 `skp` できます。 プレフィックス `skp` は、アイテム保持ポリシーがユーザーのメールボックス内のSkype for Businessに適用されるかどうかを示します。 |
+| 組織全体のアイテム保持ポリシー Microsoft 365除外  | `-mbxe9b52bf7ab3b46a286308ecb29624696`                                                         | メールボックスが組織全体の Microsoft 365 アイテム保持ポリシーから除外されている場合、メールボックスが除外されるアイテム保持ポリシーの GUID は InPlaceHolds プロパティに表示され、プレフィックスで識別されます `-mbx` 。                                                                                                     |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
 **Get-Mailbox** コマンドレットを実行するときに *InPlaceHolds* プロパティが空の場合、メールボックスに適用される 1 つ以上の組織全体Microsoft 365保持ポリシーが存在する可能性があります。 PowerShell で次のコマンドをExchange Onlineして、組織全体のアイテム保持ポリシーの GUID のMicrosoft 365取得します。
@@ -94,10 +94,10 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 次の表では **、Get-OrganizationConfig** コマンドレットの実行時に *InPlaceHolds* プロパティに含まれる GUID に基づいて、さまざまな種類の組織全体のホールドと各種類を識別する方法について説明します。
 
-|ホールドの種類  |値の例  |説明  |
-|---------|---------|---------|
-|Microsoft 365、パブリック フォルダー、ExchangeチャットExchange保持ポリシー Teams適用される    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Exchange メールボックス、Exchange パブリック フォルダー、および Microsoft Teams の 1xN チャットに適用される組織全体の保持ポリシーは、プレフィックスで始まる GUID によって識別 `mbx` されます。 メモ 1xN チャットは、個々のチャット参加者のメールボックスに格納されます。      |
-|Microsoft 365グループおよびチャネル メッセージにMicrosoft 365されるTeams保持ポリシー     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    組織全体の保持ポリシーは、Microsoft 365グループおよびチャネル メッセージに適用Microsoft Teamsプレフィックスで始まる GUID によって識別 `grp` されます。 メモ チャネル メッセージは、Microsoft チームに関連付けられているグループ メールボックスに格納されます。     |
+| ホールドの種類                                                                                                | 値の例                           | 説明                                                                                                                                                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft 365、パブリック フォルダー、ExchangeチャットExchange保持ポリシー Teams適用される | `mbx7cfb30345d454ac0a989ab3041051209:2` | Exchange メールボックス、Exchange パブリック フォルダー、および Microsoft Teams の 1xN チャットに適用される組織全体の保持ポリシーは、プレフィックスで始まる GUID によって識別 `mbx` されます。 メモ 1xN チャットは、個々のチャット参加者のメールボックスに格納されます。  |
+| Microsoft 365グループおよびチャネル メッセージにMicrosoft 365されるTeams保持ポリシー                | `grp1a0a132ee8944501a4bb6a452ec31171:3` | 組織全体の保持ポリシーは、Microsoft 365グループおよびチャネル メッセージに適用Microsoft Teamsプレフィックスで始まる GUID によって識別 `grp` されます。 メモ チャネル メッセージは、Microsoft チームに関連付けられているグループ メールボックスに格納されます。 |
 
 アイテムに適用されるアイテム保持ポリシーの詳細については、「Microsoft Teamsアイテム保持ポリシーについて」[を参照](retention-policies-teams.md)Microsoft Teams。
 
@@ -113,11 +113,11 @@ InPlaceHolds プロパティ内のアイテムを Microsoft 365 アイテム保�
 
 次の表では、3 つの保持アクションを定義します。
 
-|値  |説明  |
-|---------|---------|
-|**1**     | アイテムを削除するようにアイテム保持ポリシーが構成されていることを示します。 ポリシーはアイテムを保持しない。        |
-|**2**    |    アイテムを保持するようにアイテム保持ポリシーが構成されていることを示します。 保持期間が過ぎると、ポリシーはアイテムを削除しません。     |
-|**3**     |   アイテムを保持し、アイテム保持期間が経過した後にアイテムを削除するようにアイテム保持ポリシーが構成されていることを示します。      |
+| 値 | 説明                                                                                                                          |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **1** | アイテムを削除するようにアイテム保持ポリシーが構成されていることを示します。 ポリシーはアイテムを保持しない。                                  |
+| **2** | アイテムを保持するようにアイテム保持ポリシーが構成されていることを示します。 保持期間が過ぎると、ポリシーはアイテムを削除しません。 |
+| **3** | アイテムを保持し、アイテム保持期間が経過した後にアイテムを削除するようにアイテム保持ポリシーが構成されていることを示します。             |
 
 保持アクションの詳細については、「特定の期間のコンテンツ [を保持する」セクションを参照](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) してください。
    
@@ -186,7 +186,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 メールボックスから任意の種類の保留が削除されると、遅延 *保留が* 適用されます。 つまり、メールボックスからデータが完全に削除 (削除) されるのを防ぐために、保持の実際の削除が 30 日間遅れることを意味します。 これにより、管理者は保留リストが削除された後に削除されるメールボックス アイテムを検索または回復できます。 Managed Folder Assistant が次にメールボックスを処理し、保留リストが削除されたと検出すると、遅延ホールドがメールボックスに配置されます。 具体的には、Managed Folder Assistant が次のいずれかのメールボックス プロパティを True に設定すると、メールボックスに遅延ホールドが適用 **されます**。
 
-- **DelayHoldApplied:** このプロパティは、ユーザーのメールボックスに格納されている電子メール関連のコンテンツ (Outlook と Outlook を使用して web 上で生成される) に適用されます。
+- **DelayHoldApplied:** このプロパティは、ユーザーのメールボックスに格納されているメール関連のコンテンツ (Outlook および Outlook on the web を使用して生成される) に適用されます。
 
 - **DelayReleaseHoldApplied:** このプロパティは、ユーザーのメールボックスに保存されているクラウドベースのコンテンツ (Microsoft Teams、Microsoft Forms、Microsoft Yammer などの Outlook 以外のアプリによって生成される) に適用されます。 Microsoft アプリによって生成されるクラウド データは、通常、ユーザーのメールボックス内の非表示のフォルダーに格納されます。
 
@@ -235,7 +235,54 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 
 - 前に述べたように、DelayHoldApplied プロパティまたは DelayReleaseHoldApplied プロパティが True に設定されている場合、メールボックスは無制限の保留期間の保留と見な **されます**。 ただし、メールボックス内のすべての *コンテンツが保持* されるわけではありません。 各プロパティに設定されている値に依存します。 たとえば、保持はメールボックスから削除されるので、両方のプロパティが **True** に設定されているとします。 次に *、(RemoveDelayReleaseHoldApplied* パラメーターを使用して) Outlookデータに適用される遅延ホールドのみを削除します。 次に管理フォルダー アシスタントがメールボックスを処理すると、削除用にマークOutlookアイテムが削除されます。 DelayHoldApplied プロパティOutlook True に設定されている場合でも、削除用にマークされたアイテムは削除 **されません**。 反対の値も true になります。DelayHoldApplied が **False** に設定され、DelayReleaseHoldApplied が **True** に設定されている場合、削除対象としてマークされた Outlook アイテムだけが削除されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox"></a>組織全体のアイテム保持ポリシーがメールボックスに適用されるのを確認する方法
+
+組織全体のアイテム保持ポリシーがメールボックスに適用または削除されると、メールボックス診断ログをエクスポートすると、Exchange Online がメールボックスに保持ポリシーを実際に適用または削除したと確認できます。 この情報を表示するには、まず[Powershell](/powershell/exchange/connect-to-exchange-online-powershell)を使用していくつかのことをExchange Onlineがあります。
+
+### <a name="obtain-the-guids-for-any-retention-policies-explicitly-applied-to-a-mailbox"></a>メールボックスに明示的に適用されたアイテム保持ポリシーの GUID を取得する
+
+```powershell
+Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds
+```
+
+### <a name="obtain-the-guids-for-any-organization-wide-retention-policies-appled-to-mailboxes"></a>メールボックスに appled された組織全体のアイテム保持ポリシーの GUID を取得する
+
+```powershell
+Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds
+```
+
+### <a name="get-the-mailbox-diagnostics-for-holdtracking"></a>HoldTracking のメールボックス診断を取得する
+
+保持追跡メールボックス診断ログは、ユーザー メールボックスに適用された保留リストの履歴を保持します。
+
+```powershell
+$ht = Export-MailboxDiagnosticLogs <username> -ComponentName HoldTracking
+$ht.MailboxLog | Convertfrom-Json
+```
+
+### <a name="review-the-results-of-the-mailbox-diagnostics-logs"></a>メールボックス診断ログの結果を確認する
+
+前の手順からデータを収集すると、結果のデータは次のような場合があります。
+
+> **ed** `  : 0001-01-01T00:00:00.0000000` 
+>  ` : mbx7cfb30345d454ac0a989ab3041051209:1` hid 
+>  `  : 4` ht 
+> **lsd** ` : 2020-03-23T18:24:37.1884606Z` 
+> **osd**` : 2020-03-23T18:24:37.1884606Z`
+
+次の表を使用して、診断ログに記載されている前の各値を理解できます。
+
+| 値   | 説明 |
+|:------- |:----------- |
+| **ed**  | 保持ポリシーが無効にされた日付である終了日を示します。 MinValue は、ポリシーがまだメールボックスに割り当てられているという意味です。 |
+| **hid** | アイテム保持ポリシーの GUID を示します。 この値は、メールボックスに割り当てられた明示的または組織全体の保持ポリシーに対して収集した GUID に関連付けされます。|
+| **lsd** | 保持ポリシーがメールボックスに割り当てられた日付である最後の開始日を示します。|
+| **osd** | 保持ポリシーに関する最初に記録されたExchange開始日を示します。 |
+|||
+
+アイテム保持ポリシーがメールボックスに適用されなくなった場合、コンテンツの削除を防ぐために、ユーザーに一時的な遅延ホールドを設定します。 コマンドを実行すると、遅延ホールドを無効 `Set-Mailbox -RemoveDelayHoldApplied` にできます。
+
+## <a name="next-steps"></a>次のステップ
 
 メールボックスに適用される保留リストを特定した後、保留期間の変更、保留期間の一時的または完全な削除、Microsoft 365 アイテム保持ポリシーから非アクティブなメールボックスの除外などのタスクを実行できます。 保留リストに関連するタスクの実行の詳細については、次のいずれかのトピックを参照してください。
 

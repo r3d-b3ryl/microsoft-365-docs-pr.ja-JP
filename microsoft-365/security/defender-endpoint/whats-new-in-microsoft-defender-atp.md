@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7bb231049815da12ef6e5e48c88d79f5263f8708
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 9fa03a11a548cfd60e9b9911eb2a87be0af37015
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53277015"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542635"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -62,14 +62,14 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 - [デバイス グループ定義には、](/microsoft-365/security/defender-endpoint/machine-groups) 条件ごとに複数の値を含めることができます。 複数のタグ、デバイス名、ドメインを 1 つのデバイス グループの定義に設定できます。
 
 ## <a name="march-2021"></a>2021 年 3 月
+- [アプリケーションを使用して改ざん防止を管理Microsoft Defender セキュリティ センター](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> テナント接続というメソッドを使用して、Windows 10、Windows Server 2016、Windows サーバー 2019 の改ざん防止設定 *を管理できます*。
 
-- [アプリケーションを使用して改ざん防止を管理Microsoft Defender セキュリティ センター](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> テナント接続というメソッドを使用して、Windows 10、Windows Server 2016、Windows サーバー 2019 の改ざん防止設定 *を管理できます*。
 
 ## <a name="january-2021"></a>2021 年 1 月
 
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint では、仮想デスクトップのサポートWindows追加しました。
 
-## <a name="december-2020"></a>2020年12月
+## <a name="december-2020"></a>2020 年 12 月
 
 - [iOS 用 Microsoft Defender for Endpoint API](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint が iOS のサポートを追加しました。 iOS で Microsoft Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
@@ -82,7 +82,7 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
 - [Android 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint が Android のサポートを追加しました。 Android で Microsoft Defender for Endpoint をインストール、構成、および使用する方法について説明します。
 
-## <a name="july-2020"></a>2020 年7 月
+## <a name="july-2020"></a>2020 年 7 月
 
 - [証明書のインジケーターを作成 ](manage-indicators.md) <br> 証明書を許可またはブロックするインジケーターを作成します。
 
@@ -106,7 +106,7 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
 
  - [脅威&の管理の役割ベースのアクセス制御](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>新しいアクセス許可を使用して、SecOps 指向の役割、Threat & の脆弱性管理指向の役割、またはハイブリッド ロールを最大限に柔軟に作成し、承認されたユーザーのみが特定のデータにアクセスしてタスクを実行できます。 また、Threat & の脆弱性管理の役割が脆弱性に関連するデータのみを表示できるかどうか、または修復と例外を作成および管理できるかどうかを指定することで、さらに細分化できます。
 
-- [デバイスの正常性とコンプライアンス レポート](machine-reports.md) <br/> デバイスの正常性とコンプライアンス レポートは、組織内のデバイスに関する高レベルの情報を提供します。
+- [デバイスの正常性とコンプライアンスのレポート](machine-reports.md) <br/> デバイスの正常性とコンプライアンス レポートは、組織内のデバイスに関する高レベルの情報を提供します。
 
 ## <a name="october-2019"></a>2019 年 10 月
 

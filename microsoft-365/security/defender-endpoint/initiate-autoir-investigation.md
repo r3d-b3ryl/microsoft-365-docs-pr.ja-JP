@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b7a6a3e7f6f705f322ee3eb1c1b561bc01c55d29
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c400cc16f5a5174edee360b6bf7b71a4c3a8cd1f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770891"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542311"
 ---
 # <a name="start-investigation-api"></a>調査 API の開始
 
@@ -43,10 +43,8 @@ ms.locfileid: "52770891"
 デバイスで自動調査を開始します。
 <br>詳細 [については、「自動調査の概要](automated-investigations.md) 」を参照してください。
 
-
 ## <a name="limitations"></a>制限事項
 1. この API のレート制限は、1 時間あたり 50 回の呼び出しです。
-
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
@@ -64,7 +62,7 @@ ms.locfileid: "52770891"
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-POST https://api.securitycenter.microsoft.com/api/machines/{id}/startInvestigation
+POST https://api.security.microsoft.com/api/machines/{id}/startInvestigation
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -93,7 +91,7 @@ Content-Type | string | application/json. **必須**
 以下は、要求の例です。
 
 ```https
-POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation
+POST https://api.security.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation
 ```
 
 ```json

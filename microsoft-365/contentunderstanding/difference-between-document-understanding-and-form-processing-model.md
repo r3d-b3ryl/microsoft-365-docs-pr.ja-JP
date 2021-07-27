@@ -3,7 +3,7 @@ title: ドキュメント理解とフォーム処理モデルの違い
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: ドキュメント理解とフォーム処理モデルの主な違いについて説明します
-ms.openlocfilehash: f19017ce8b748644177ac00f4daf7cb29ad522c6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
+ms.openlocfilehash: 929d7f248607b052aa8f41d08a2fbdee7a53fa6f
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706512"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578459"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>ドキュメント理解とフォーム処理モデルの違い 
 
@@ -55,6 +55,10 @@ Microsoft SharePoint Syntex のコンテンツを理解すると、SharePoint �
 フォーム処理モデルは PowerApps [AI ビルダー](/ai-builder/overview)で作成されますが、作成は SharePoint ドキュメント ライブラリから直接開始されます。 ドキュメント ライブラリでは、ユーザーがそのドキュメントのためにフォーム処理モデルを作成する前に、フォーム処理モデルの作成を有効にしておく必要があります。 管理者は、コンテンツの理解の管理設定でフォーム処理モデルの作成を有効にできます。 フォーム処理モデルは、ファイルがドキュメント ライブラリにアップロードされるときに、PowerAutomate フローを使用してファイルを処理します。
 
 ドキュメント理解モデルを作成するときは、SharePoint コンテンツタイプギャラリーに保存される新しい [SharePoint コンテンツ タイプ](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)を作成します。 または、必要に応じて、既存のコンテンツタイプを使用してモデルを定義できます。
+
+コンテンツ タイプが作成され、モデルに関連付けられたら、**[サイト コンテンツ タイプ]** プロパティ パネルからそのモデルを参照することもできます。
+
+![強調表示されたドキュメント理解モデルを示す [サイト コンテンツ タイプ] パネルのスクリーンショット。](../media/content-understanding/site-content-type-panel.png)
 
 フォーム処理モデルは、新しい [SharePoint コンテンツ タイプ](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)も作成し、SharePoint コンテンツ タイプ ギャラリーにも保存されます。
 

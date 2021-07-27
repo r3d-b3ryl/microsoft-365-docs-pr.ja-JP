@@ -18,16 +18,16 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Azure Active Directory Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域Office 365サービスに移行する際の追加情報。'
-ms.openlocfilehash: 0e7abd68945a9b685a33c120ff1e92fda62b2c56
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 88a151b61a93b4b65e16bbd100a126d44282e513
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362728"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578447"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud deutschland Azure Active Directory移行に関する追加情報
 
-Azure German クラウドから Azure パブリック クラウドへの移行を完了するには、OpenID Connect (OIDC) エンドポイントが商用クラウド エンドポイントの報告を開始するときに、アプリケーションの認証エンドポイント、Azure Active Directory (Azure AD) Graph、および MS Graph エンドポイントを商用クラウドのエンドポイントに更新することをお勧めします。 `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` 
+Azure German クラウドから Azure パブリック クラウドへの移行を完了するには、OpenID Connect (OIDC) エンドポイントが商用クラウド エンドポイントの報告を開始するときに、アプリケーションの認証エンドポイント、Azure Active Directory (Azure AD) Graph、および MS Graph エンドポイントを商用クラウドのエンドポイントに更新することをお勧めします。 `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration` 
  
 **いつこの変更を行う必要がありますか?**
 
@@ -35,7 +35,7 @@ Azure German クラウドから Azure パブリック クラウドへの移行�
  
 サインイン機関の更新には、次の 3 つの条件があります。
 
- - テナントの OIDC 検出エンドポイントは `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` 、Azure ADパブリック クラウド エンドポイントを返します。
+ - テナントの OIDC 検出エンドポイントは `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration` 、Azure ADパブリック クラウド エンドポイントを返します。
 
  - テナントがフェデレーション用に設定されている場合は、Active Directory フェデレーション サービス (AD FS) が更新され、Azure ADパブリックと同期されます。 この変更を行う手順に従って Azure AD Connect設定を更新できます。
 
@@ -66,7 +66,7 @@ Azure German クラウドから Azure パブリック クラウドへの移行�
 
 2. Azure AD Graphエンドポイントを更新します `https://graph.windows.net` 。
 
-3. MS Graphエンドポイントを更新します `https://graph.microsoft.com` 。
+3. Microsoft Graphエンドポイントを更新します `https://graph.microsoft.com` 。
 
 4. アプリケーションがパブリック クラウドとして使用するドイツのクラウド エンドポイント (Exchange Online および SharePoint Online 用など) を更新します。
 

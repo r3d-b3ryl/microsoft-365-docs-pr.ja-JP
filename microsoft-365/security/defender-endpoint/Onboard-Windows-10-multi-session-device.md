@@ -1,7 +1,7 @@
 ---
-title: Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード
-description: この記事の詳細については、「Windows 10デスクトップでのマルチセッション デバイスのオンボーディングWindows参照してください。
-keywords: Windows仮想デスクトップ、WVD、microsoft Defender、エンドポイント、オンボード
+title: Azure Windows 10デスクトップでのマルチセッション デバイスのオンボード
+description: Azure Virtual Desktop でのマルチセッション デバイスWindows 10オンボーディングの詳細については、この記事を参照してください。
+keywords: Azure Virtual Desktop, WVD, microsoft Defender, endpoint, onboard
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,30 +15,30 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 9114a825ad011f0b2a17cea4929ab2a09bfa2172
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: e86d6918af4ed7b14955b0fce6627451c5556b22
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339480"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542347"
 ---
-# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード 
+# <a name="onboard-windows-10-multi-session-devices-in-azure-virtual-desktop"></a>Azure Windows 10デスクトップでのマルチセッション デバイスのオンボード 
 読み取り 6 分 
 
 適用対象: 
-- Windows 10仮想デスクトップ (WVD) でWindowsセッションを実行する場合 
+- Windows 10仮想デスクトップ (AVD) で実行されている複数セッションの構成 
 
-Microsoft Defender for Endpoint は、VDI セッションと仮想デスクトップ セッションWindowsサポートしています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Windows Virtual Desktop セッションを実装する必要があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
+Microsoft Defender for Endpoint では、VDI セッションと Azure Virtual Desktop セッションの両方の監視がサポートされています。 組織のニーズに応じて、従業員が管理されていないデバイス、リモートの場所、または類似のシナリオから企業データやアプリにアクセスするために、VDI または Azure Virtual Desktop セッションを実装する必要がある場合があります。 Microsoft Defender for Endpoint を使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
  ## <a name="before-you-begin"></a>開始する前に
-非永続的な [VDI の考慮事項について理解してください](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 仮想[Windows非](/azure/virtual-desktop/overview)永続化オプションは提供されませんが、新しいホストのプロビジョニングとマシンの再展開に使用できるゴールデン Windows イメージを使用する方法を提供します。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
+非永続的な [VDI の考慮事項について理解してください](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 [Azure Virtual Desktop には](/azure/virtual-desktop/overview)非永続化オプションは用意されませんが、新しいホストのプロビジョニングやマシンの再展開に使用できるゴールデン Windows イメージを使用する方法が提供されます。 これにより、環境の変動性が高まるため、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響が及び、セキュリティ アナリストの可視性が低下する可能性があります。
 
 > [!NOTE]
 > オンボーディング方法の選択に応じて、デバイスは次のように Microsoft Defender for Endpoint ポータルに表示されます。 
 > - 仮想デスクトップごとに 1 つのエントリ 
 > - 仮想デスクトップごとに複数のエントリ 
 
-Microsoft では、仮想Windows 1 つのエントリとして仮想デスクトップをオンボーディングする方法をお勧めします。 これにより、Microsoft Defender Endpoint ポータルでの調査エクスペリエンスが、コンピューター名に基づいて 1 つのデバイスのコンテキスト内に確実に表示されます。 WVD ホストを頻繁に削除および再展開する組織では、同じコンピューターの複数のオブジェクトが Microsoft Defender for Endpoint ポータルに作成されるのを防ぐため、このメソッドの使用を強く検討する必要があります。 これは、インシデントを調査するときに混乱を招く可能性があります。 テスト環境または非揮発性環境の場合は、別の方法で選択できます。 
+Microsoft では、Azure Virtual Desktop を仮想デスクトップごとに 1 つのエントリとしてオンボーディングをお勧めします。 これにより、Microsoft Defender Endpoint ポータルでの調査エクスペリエンスが、コンピューター名に基づいて 1 つのデバイスのコンテキスト内に確実に表示されます。 WVD ホストを頻繁に削除および再展開する組織では、同じコンピューターの複数のオブジェクトが Microsoft Defender for Endpoint ポータルに作成されるのを防ぐため、このメソッドの使用を強く検討する必要があります。 これは、インシデントを調査するときに混乱を招く可能性があります。 テスト環境または非揮発性環境の場合は、別の方法で選択できます。 
 
 Microsoft では、Microsoft Defender for Endpoint オンボーディング スクリプトを WVD ゴールデン イメージに追加する方法をお勧めします。 この方法で、このオンボーディング スクリプトが最初の起動時にすぐに実行されるのを確認できます。 これは、WVD ゴールデン イメージからプロビジョニングされたすべての WVD コンピューターで最初に起動スクリプトとして実行されます。 ただし、変更せずにギャラリー イメージのいずれかを使用している場合は、スクリプトを共有の場所に配置し、ローカル またはドメイン グループ ポリシーから呼び出します。 
 
@@ -50,11 +50,13 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 - 起動時に、ゴールデン イメージ (または共有の場所から) でスクリプトを実行します。
 - 管理ツールを使用してスクリプトを実行します。
+- [Azure Defender との統合による](configure-server-endpoints.md#integration-with-azure-defender)
 
 #### <a name="scenario-1-using-local-group-policy"></a>*シナリオ 1: ローカル グループ ポリシーの使用*
 このシナリオでは、スクリプトをゴールデン イメージに配置する必要があります。ローカル グループ ポリシーを使用して、起動プロセスの早い段階で実行します。
 
-「非永続的仮想デスクトップ インフラストラクチャ [(VDI) デバイスのオンボード」の手順を使用します](configure-endpoints-vdi.md#onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices)。
+「非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード」 [の手順を使用します](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices)。
+
 
 デバイスごとに 1 つのエントリの指示に従います。
 
@@ -65,7 +67,7 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 
 1. VDI 構成パッケージ ファイルを開.zip (WindowsDefenderATPOnboardingPackage.zip)  
 
-    1. [新しいMicrosoft Defender セキュリティ センター] ウィンドウで、[オンボーディング]**設定**  >  **選択します**。 
+    1. [ポータル のMicrosoft 365 Defender] ウィンドウで、[エンドポイントオンボーディング設定を選択します **([** デバイスの管理] の下  >    >  **)。** 
     1. オペレーティング システムWindows 10を選択します。 
     1. [展開方法 **] フィールド** で、永続的でないエンドポイントの VDI オンボーディング スクリプトを選択します。 
     1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。 
@@ -101,7 +103,7 @@ WVD ホスト コンピューターをオンボードする方法は次のとお
 詳細については、「Configuration Manager を使用[したオンボード Windows 10デバイス」を参照してください](configure-endpoints-sccm.md)。
 
 > [!WARNING]
-> 攻撃表面縮小ルールを[](attack-surface-reduction.md)使用する場合は、ルール["PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生するプロセスの作成をブロックする" は使用できません。このルールは、Microsoft Endpoint Configuration Manager による管理と互換性がありません。 このルールは、Configuration Manager クライアントが正しく機能するために使用する WMI コマンドをブロックします。 
+> 攻撃表面縮小ルールを[](attack-surface-reduction-rules.md)使用する場合は、ルール["PSExec](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生するプロセスの作成をブロックする" は使用できません。このルールは、Microsoft Endpoint Configuration Manager による管理と互換性がありません。 このルールは、Configuration Manager クライアントが正しく機能するために使用する WMI コマンドをブロックします。
 
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。 

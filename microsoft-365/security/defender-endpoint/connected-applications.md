@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4b212acdf4bdf8fa53ef00763463190e204fc1ed
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 1595ea8e76eb6b4c929419ea11dba06e6158d30c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339168"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542359"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の接続アプリケーション
 
@@ -41,9 +41,7 @@ ms.locfileid: "53339168"
  
 接続されているアプリケーションで API [を使用](/microsoft-365/security/defender-endpoint/apis-intro) するには、次の手順に従う必要があります。
  
-## <a name="access-the-connected-application-page"></a>接続されているアプリケーション ページにアクセスする
-左側のナビゲーション メニューで、[**エンドポイント** パートナーと  >  **API 接続アプリケーション**  >  **] を選択します**。
-
+左側のナビゲーション メニューから、[ **パートナー** ] を選択& API ([ **エンドポイント**] の下) >接続済み **アプリケーションです**。
  
 ## <a name="view-connected-application-details"></a>接続されているアプリケーションの詳細を表示する
 [接続されたアプリケーション] ページには、組織内の Microsoft Defender for Endpoint に接続AD Azure アプリケーションに関する情報が表示されます。 接続されているアプリケーションの使用状況を確認できます。前回の表示、過去 24 時間の要求数、過去 30 日間の傾向の要求を行います。

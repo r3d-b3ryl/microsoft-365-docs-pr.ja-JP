@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b56a18e1b35b65629318ab29f2189ef1f73373f5
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e119898a457be2ceb6dd78ca7831e26dc93ee85f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256917"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542683"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -43,7 +43,7 @@ ms.locfileid: "53256917"
 - ファイルの詳細ページからインジケーターの追加ボタンを使用してコンテキスト インジケーターを作成する
 - インジケーター API を使用してインジケーター [を作成する](ti-indicator.md)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 ファイルのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
@@ -59,9 +59,10 @@ ms.locfileid: "53256917"
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>設定ページからファイルのインジケーターを作成する
 
-1. ナビゲーション ウィンドウで、[インジケーター] **を設定 >します**。
+1. ナビゲーション ウィンドウで、[エンドポイントインジケーター] **設定**  >  **([** ルール]  > 
+ **の下)** を **選択します**。
 
-2. [ファイル ハッシュ **] タブを選択**   します。
+2. [ファイル **ハッシュ] タブを**   選択します。
 
 3. [インジケーター **の追加] を選択します**。
 

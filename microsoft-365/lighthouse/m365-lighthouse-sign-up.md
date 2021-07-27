@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
-ms.openlocfilehash: 41482a97a7e940fab61b5b4884431ca7b385c3c0
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: e87757f22cc76bf681058ab453bdfdf60c6c64c9
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438002"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542371"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
 
@@ -30,13 +30,13 @@ ms.locfileid: "53438002"
 
 ## <a name="before-you-begin"></a>開始する前に
 
-- ユーザーと顧客のテナントが、要件に記載されている要件を満[たMicrosoft 365 Lighthouseしてください](m365-lighthouse-requirements.md)。
+- Microsoft 365 Lighthouseは、顧客テナントだけでなくパートナー テナントに展開されますが、ユーザーと顧客のテナントが Microsoft 365 Lighthouse 要件に記載されている &mdash; [要件を満たしていることを確認します](m365-lighthouse-requirements.md)。
 
 - サインインするパートナー テナントのグローバル管理者である必要があります。
 
 ## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップするMicrosoft 365 Lighthouse
 
-1. で、Microsoft 365 管理センターに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。 
+1. パートナー テナントの資格情報Microsoft 365 管理センターを使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> して、ユーザーのアカウントに移動し、ログインします。 
 
 1. [課金サービス **]**  >  **[その他の**  >  **サービス] に移動します**。
 

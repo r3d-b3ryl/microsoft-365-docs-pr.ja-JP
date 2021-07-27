@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで集中展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: 88613e593f3c8375073865ebe9b7e417c6b3f06f
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1bf7ea6bfc0aabe5f6c9418dcdf905681dd5375c
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392853"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578387"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>管理センターでアドインを展開する
 
@@ -62,7 +62,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
 2. ページ **の上部にある [アドインの** 展開] を選択し、[次へ] を **選択します**。
 
     > [!NOTE]
-    > 管理センターは、統合アプリを使用した展開エクスペリエンスに更新されています。 統合アプリはグローバル管理者にのみ表示され、他のユーザーの場合は古いエクスペリエンスがまだ存在します。 上記の手順が表示できない場合は、[統合アプリ] に移動して、[集中展開]**セクション設定**  >  **移動します**。 [統合アプリ] ページ **の上部** で、[アドイン] **を選択します**。
+    > 統合アプリを使用して管理センターにアドイン [を展開することもできます](test-and-deploy-microsoft-365-apps.md)。 統合アプリは、グローバル管理者および管理者Exchange表示されます。 上記の手順が表示できない場合は、[統合アプリ] に移動して、[集中展開]**セクション設定**  >  **移動します**。 [統合アプリ] ページ **の上部** で、[アドイン] **を選択します**。
 
 3. オプションを選択し、指示に従います。
   

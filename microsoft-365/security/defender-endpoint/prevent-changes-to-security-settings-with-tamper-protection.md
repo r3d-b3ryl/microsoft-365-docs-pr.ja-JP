@@ -17,12 +17,12 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 06/23/2021
-ms.openlocfilehash: 2e0724900de30629292cdcdc055d3ad3a1867b20
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: f8cd06924e4fc8b2e564e4e850df175ec222b013
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105418"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542743"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -64,7 +64,7 @@ ms.locfileid: "53105418"
 
 | このタスクを実行するには... | このセクションを参照してください。 |
 |:---|:---|
-| テナント全体の改ざん防止を管理する <p>タンパープロテMicrosoft Defender セキュリティ センターオン/オフを切り替えます。 | [サーバーを使用して組織の改ざん防止を管理Microsoft Defender セキュリティ センター](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) |
+| テナント全体の改ざん防止を管理する <p>改ざん防止Microsoft 365 Defenderオンまたはオフにする場合は、ポータルポータルを使用します。 | [管理者を使用して組織の改ざん防止を管理Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) |
 | 組織内の改ざん防止設定を微調整する <p>Intune (Microsoft エンドポイント マネージャー) を使用して、タンパープロテクションのオンとオフを切り替えます。 この方法では、一部またはすべてのユーザーに対して改ざん防止を構成できます。 | [Intune を使用して組織の改ざん防止を管理する](#manage-tamper-protection-for-your-organization-using-intune) |
 | Configuration Manager を使用して組織の改ざん防止を有効 (または無効にする) | [Configuration Manager バージョン 2006 でテナント接続を使用して組織の改ざん防止を管理する](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006) |
 | 個々のデバイスのタンパープロテクションをオン (またはオフ) にする | [個々のデバイスで改ざん防止を管理する](#manage-tamper-protection-on-an-individual-device) |
@@ -78,24 +78,23 @@ ms.locfileid: "53105418"
 
 | タンパープロテクションを有効にする方法  | クラウドによる保護への依存 (MAPS)    |
 |:----|:----|
-| Microsoft Intune  | いいえ |
-| Microsoft Endpoint Configuration Manager + テナント接続  |     いいえ  |
-| Microsoft Defender セキュリティ センター ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )    |     はい |
+| Microsoft Intune  | なし |
+| Microsoft Endpoint Configuration Manager + テナント接続  |     なし  |
 | Microsoft 365 Defender ポータル ( [https://security.microsoft.com](https://security.microsoft.com) )  |     はい  |
 
-## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>サーバーを使用して組織の改ざん防止を管理Microsoft Defender セキュリティ センター
+## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>ポータルを使用して組織の改ざん防止をMicrosoft 365 Defenderする
 
-タンパープロテクションは、テナントのパスワード () を使用してオンまたはMicrosoft Defender セキュリティ センターできます [https://securitycenter.windows.com](https://securitycenter.windows.com) 。 以下に注意点を示します。
+タンパープロテクションは、ポータル () を使用してテナントに対Microsoft 365 Defenderまたはオフにできます [https://security.microsoft.com](https://security.microsoft.com) 。 以下に注意点を示します。
 
-- 現時点では、新しい展開では、Microsoft Defender セキュリティ センターでタンパープロテクションを管理するオプションがオンになっています。 既存の展開では、改ざん防止はオプトインベースで利用できます。近い将来、既定の方法でオプトインを行う予定です。 (オプトインするには、Microsoft Defender セキュリティ センターを選択 **設定**  > **高度な機能**  > **タンパープロテクション**.) 
+- 現時点では、新しい展開では、Microsoft 365 Defenderでタンパープロテクションを管理するオプションがオンになっています。 既存の展開では、改ざん防止はオプトインベースで利用できます。近い将来、既定の方法でオプトインを行う予定です。 (オプトインするには、ポータルの [Microsoft 365 Defender] を **選択設定**  > **エンドポイント**  > **高度な機能**  > **タンパープロテクション**.) 
 
-- 改ざん防止を管理Microsoft Defender セキュリティ センターを使用する場合は、Intune またはテナント接続方法を使用する必要はありません。
+- 改ざん防止を管理Microsoft 365 Defenderポータルを使用する場合は、Intune またはテナント接続方法を使用する必要があります。
 
-- Microsoft Defender セキュリティ センター でタンパープロテクションを管理すると、この設定はテナント全体に適用され、Windows 10、Windows Server 2016、または Windows Server 2019 を実行しているすべてのデバイスに影響します。 タンパープロテクションを微調整するには (一部のデバイスではタンパープロテクションをオンにし、他のデバイスではオフにするなど [)、Intune](#manage-tamper-protection-for-your-organization-using-intune) または Configuration Manager をテナント接続で [使用します](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)。
+- Microsoft 365 Defender ポータルで改ざん防止を管理すると、テナント全体に設定が適用され、Windows 10、Windows Server 2016、または Windows Server 2019 を実行しているすべてのデバイスに影響します。 タンパープロテクションを微調整するには (一部のデバイスではタンパープロテクションをオンにし、他のデバイスではオフにするなど [)、Intune](#manage-tamper-protection-for-your-organization-using-intune) または Configuration Manager をテナント接続で [使用します](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)。
 
-- ハイブリッド環境がある場合、Intune で構成されたタンパープロテクション設定は、Intune で構成された設定よりも優先Microsoft Defender セキュリティ センター。 
+- ハイブリッド環境がある場合、Intune で構成されたタンパープロテクション設定は、ポータルで構成された設定よりも優先Microsoft 365 Defenderされます。 
 
-### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-defender-security-center"></a>ユーザーの改ざん防止を管理するための要件Microsoft Defender セキュリティ センター
+### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-365-defender-portal"></a>ポータルでの改ざん防止の管理Microsoft 365 Defender要件
 
 - グローバル管理者、セキュリティ [管理者、](/microsoft-365/security/defender-endpoint/assign-portal-access)セキュリティ操作など、適切なアクセス許可が必要です。
 
@@ -113,13 +112,13 @@ ms.locfileid: "53105418"
 
 - [クラウドによる保護を](enable-cloud-protection-microsoft-defender-antivirus.md) 有効にする必要があります。
 
-### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-defender-security-center"></a>タンパープロテクションをオン (またはオフ) にMicrosoft Defender セキュリティ センター 
+### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-365-defender-portal"></a>タンパープロテクションをオンまたはオフにする (または無効にする) Microsoft 365 Defenderポータル
 
-![タンパープロテクションをオンMicrosoft Defender セキュリティ センター](images/mde-turn-tamperprotect-on.png)
+::image type="content" source=".。/../media/mde-turn-tamperprotect-on-new.png" alt-text="ポータルで改ざん防止を有効Microsoft 365 Defender"::
 
-1. [パスワード] ( ) にMicrosoft Defender セキュリティ センター [https://securitycenter.windows.com](https://securitycenter.windows.com) し、サインインします。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
-2. [設定]**を選択します**。
+2. [**エンドポイント設定**  >  **を選択します**。
 
 3. [全般高度 **な**  >  **機能] に移動** し、タンパープロテクションを有効にしてください。
 
@@ -151,7 +150,7 @@ ms.locfileid: "53105418"
 
     - **プラットフォーム: Windows 10以降**
     - **プロファイルの種類: エンドポイント保護**
-    - **カテゴリ: Microsoft Defender セキュリティ センター**
+    - **カテゴリ: Microsoft 365 Defender**
     - **タンパープロテクション: 有効**
 
 4. プロファイルを 1 つ以上のグループに割り当てる。
@@ -220,9 +219,9 @@ Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/
 
 改ざんの試みは、通常、より大きなサイバー攻撃を示します。 悪いアクターは、セキュリティ設定を変更して、検出されない状態を維持します。 組織のセキュリティ チームの一員である場合は、そのような試みについての情報を表示し、脅威を軽減するために適切なアクションを実行できます。
 
-改ざんの試行が検出されると、警告がメッセージ () で[Microsoft Defender セキュリティ センター](/microsoft-365/security/defender-endpoint/portal-overview)されます [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
+改ざんの試行が検出されると、ポータル () でアラート[Microsoft 365 Defenderされます](/microsoft-365/security/defender-endpoint/portal-overview) [https://security.microsoft.com](https://security.microsoft.com) 。
 
-![Microsoft Defender セキュリティ センター](images/tamperattemptalert.png)
+![Microsoft 365 Defender](images/tamperattemptalert.png)
 
 Microsoft [](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) Defender for [](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) Endpoint のエンドポイント検出および応答機能と高度なハンティング機能を使用して、セキュリティ運用チームはそのような試みを調査し、対処できます。
 
@@ -232,7 +231,7 @@ Microsoft [](/microsoft-365/security/defender-endpoint/overview-endpoint-detecti
 
 ![改ざん防止を有効にする](images/tamperprotectsecurityrecos.png)
 
-脅威の脆弱性管理の詳細については&の「脅威の脆弱性&[管理」を参照Microsoft Defender セキュリティ センター。](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center)
+脅威の脆弱性管理の詳細&、「脅威の脆弱性管理」を&を[参照Microsoft 365 Defender。](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -258,7 +257,7 @@ Microsoft Defender for [Endpoint](/microsoft-365/security/defender-endpoint)を�
 
 - [Intune を使用して改ざん防止を管理する](#manage-tamper-protection-for-your-organization-using-intune)
 - [Configuration Manager バージョン 2006 を使用して改ざん防止を管理する](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- [アプリケーションを使用して改ざん防止を管理Microsoft Defender セキュリティ センター](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) 
+- [ポータルを使用して改ざん防止をMicrosoft 365 Defenderする](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) 
 
 ### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-through-my-group-policy"></a>Intune でタンパープロテクションを構成すると、グループ ポリシーを通Microsoft Defender ウイルス対策管理する方法にどのような影響がありますか?
 
@@ -290,9 +289,9 @@ Intune またはアプリでタンパー Microsoft エンドポイント マネ�
 
 デバイスが Microsoft Defender for Endpoint からオフボードされている場合、タンパープロテクションが有効になります。これは管理されていないデバイスの既定の状態です。 
 
-### <a name="will-there-be-an-alert-about-tamper-protection-status-changing-in-the-microsoft-defender-security-center"></a>改ざん防止の状態が変更された場合、改ざん防止の状態に関する警告が表示Microsoft Defender セキュリティ センター。
+### <a name="will-there-be-an-alert-about-tamper-protection-status-changing-in-the-microsoft-365-defender-portal"></a>改ざん防止の状態の変更に関する通知がポータルでMicrosoft 365 Defenderされますか?
 
-はい。 アラートは [アラート] の下 [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) に **表示されます**。
+はい。 アラートは [アラート] の下 [https://security.microsoft.com](https://security.microsoft.com) に **表示されます**。
 
 セキュリティ運用チームは、次の例のような検索クエリも使用できます。
 

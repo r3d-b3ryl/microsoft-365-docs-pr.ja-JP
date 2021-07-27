@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13bcbc74fcb9c540c45a6eec7e7e506b6943986a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f3ec3552e10fa0b25c75644c7c37c63afb81902b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841796"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542674"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 
@@ -41,7 +41,7 @@ ms.locfileid: "52841796"
 - [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)
 - [Ansible YAML ファイルの作成](#create-ansible-yaml-files)
 - [展開](#deployment)
-- [References](#references)
+- [関連情報](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
@@ -71,13 +71,13 @@ ms.locfileid: "52841796"
 
 ## <a name="download-the-onboarding-package"></a>オンボーディング パッケージをダウンロードする
 
-次の方法でオンボーディング パッケージをMicrosoft Defender セキュリティ センター。
+オンボーディング パッケージを次のポータルからMicrosoft 365 Defenderします。
 
-1. [Microsoft Defender セキュリティ センター] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
+1. [Microsoft 365 Defender] ポータルで、[デバイス管理設定 >オンボーディング>**エンドポイント>移動します**。
 2. 最初のドロップダウン メニューで、オペレーティング システム **として [Linux Server]** を選択します。 2 番目のドロップダウン メニューで、展開 **方法として [優先する Linux 構成管理ツール** ] を選択します。
 3. [オンボード **パッケージのダウンロード] を選択します**。 ファイルを [ファイル名] WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft Defender セキュリティ センタースクリーンショット](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defenderポータルのスクリーンショット](images/portal-onboarding-linux-2.png)
 
 4. コマンド プロンプトから、ファイルが存在するように確認します。 アーカイブの内容を抽出します。
 

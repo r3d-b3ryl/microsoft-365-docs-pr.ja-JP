@@ -1,0 +1,78 @@
+### YamlMime:FAQ
+metadata:
+  title: Open プログラムのオンライン サービスのアクティブ化に関するよく寄せられる質問
+  ms.author: cmcatee
+  author: cmcatee-MSFT
+  manager: scotv
+  ms.reviewer:
+  - Rani Chegondi
+  - Armando Valenzuela
+  ms.date: 07/22/2021
+  audience: Admin
+  ms.topic: article
+  ms.service: bookings
+  ms.custom: commerce_licensing
+  localization_priority: Normal
+  description: Open プログラムのオンライン サービスのアクティブ化に関するよく寄せられる質問
+  ms.openlocfilehash: f9aa80bc0918630a9dde9272716054f7ba76f84c
+  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "53542482"
+title: Open プログラムのオンライン サービスのアクティブ化に関するよく寄せられる質問
+summary: ''
+sections:
+- name: 一般
+  questions:
+  - question: >
+      Open プログラム (Open、Open Value、Open Value Subscription) を通じて購入したオンライン サービスをアクティブ化する方法
+    answer: >
+      オープンユーザーは、次の 2 つの方法でオンライン サービスをアクティブ化できます。
+
+      - Open プログラム ファミリを通じてオンライン サービスを注文すると、サービスをアクティブ化するリンクと手順が記載されたメールが届きます。
+
+      または
+
+      - ボリューム ライセンス [サービス センター (VLSC)](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) Open program customers can go to the Online Service Activation section and select the license to manage:
+
+
+      1. [ライセンス認証の管理] リンクを選択し、[ライセンス認証の開始] を選択します。 製品のライセンス認証ウィンドウが開き、キーが事前設定されます。
+
+      2. 製品のライセンス認証を完了するには、残りのライセンス認証手順を続行します。
+
+
+      ライセンス認証の成功は、ボリューム ライセンス オンライン サービスライセンス認証 Web サイトで 48 時間以内に完了します。
+
+      ライセンスをアクティブ化する方法Microsoft Azure、「オープン はじめに[で Azure を使用する」を参照してください](https://azure.microsoft.com/offers/ms-azr-0111p/)。
+  - question: >
+      Azure の注文が表示されます。 どうすればよいですか?
+    answer: >
+      Azure の注文はキーを介してアクティブ化されます。 VLSC の [ダウンロードとキー] タブでキーを取得し、[開くライセンス] ページで Azure はじめにキーを[入力します](https://azure.microsoft.com/offers/azure-open/)。
+  - question: >
+      仕事用または学校用のアカウントとは何か、オンライン サービスをアクティブ化するために必要な理由
+    answer: >
+      仕事または学校のアカウントは、ユーザーが組織の管理者にサインインすることを目的Microsoft サービス。 サインインでは、通常、組織の電子メール ドメイン username@orgname.com または username@orgname.onmicrosoft.com *フォームが* 使用されます。
+  - question: >
+      組織が既にアカウントを持っているかどうかは、どのように確認できますか?
+    answer: "仕事または学校のアカウントに関連付けられている組織名は、アクティブ化するサービスのライセンス ID から取得されます。 アカウントが存在する場合は、組織アカウントのセットアップに組織名が事前入力され、元のオンライン サービス注文から組織に既にリンクされています。 登録プロセスは、組織がアカウントを持つかどうかを検証します。 \n\n[会社] のフィールド **が** 使用可能な場合は、登録プロセスを完了してサインインし、サービスをアクティブ化します。 このフィールドを使用できない場合は、組織を登録する必要があります。 アカウントの組織を登録するには、グローバル管理者である必要があります。\n\n仕事用または学校のアカウントを要求すると、登録要求を許可または拒否するテナント管理者が組織に要求が送信されます。 Microsoft VLSC Online Service Activation にサインインする場合は、この仕事用または学校用のアカウントを使用します。\n"
+  - question: >
+      オンライン サービスをアクティブ化した後、ライセンス認証ポータルがログアウトする理由
+    answer: "Open License プログラムで Online Services をアクティブ化すると、各契約は個別にアクティブ化されます。 間違ったテナントでライセンスがアクティブ化されない場合、各ライセンス認証は個別のセッションで処理されます。 \n"
+  - question: >
+      Open License の購入でオンライン サービスのライセンス認証がどのように機能しますか?
+    answer: >
+      Microsoft Online Services契約の場合は、キーレス処理ライセンス認証モデルに移動しました。 Open online Services を注文すると、サービスをアクティブ化するリンクと手順が記載されたメールが届きます。
+  - question: >
+      購入を別の組織に割り当てる場合は、
+    answer: >
+      製品を新しい組織に割り当てるには、サインアップ手順に従って新しい組織を作成します。 そこから、購入したシートまたは製品を割り当てできます。
+  - question: >
+      オンライン サービスをアクティブ化しました。 ボリューム ライセンス サービス センターの [ライセンス認証の管理] ページでサービスをアクティブ化する必要がある理由
+    answer: >
+      アクティブ化したサービスが [ライセンス認証の管理] ページで [アクティブ化済み] 状態として表示されるには、最大 24 **時間かかる場合** があります。
+  - question: >
+      サポートへの問い合わせ方法
+    answer: >
+      電話または Web でのサポートについては、「お問い合 [わせ」をご覧ください](/licensing/contact-us)。 Microsoft は 24 時間以内に Web フォームの申請に応答します。
+additionalContent: "\n## <a name=\"additional-resources\"></a>その他のリソース\n\n- [プロダクト キーに関する FAQ](product-keys-faq.yml)\n\n- [ダウンロードに関する FAQ](downloads-faq.yml)"

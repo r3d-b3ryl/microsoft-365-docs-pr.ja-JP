@@ -1,5 +1,5 @@
 ---
-title: Defender でカスタム検出ルールを作成およびMicrosoft 365する
+title: カスタム検出ルールを作成および管理Microsoft 365 Defender
 description: 高度な検索クエリに基づいてカスタム検出ルールを作成および管理する方法について説明します。
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、カスタム検出、ルール、スキーマ、kusto、RBAC、permissions、Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f37cc63c958331f7c03e09689de92c73fd06b4d4
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: e7b48ef5dcd98a948b8af0dc2f6f61ac1bb81f4d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952562"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542611"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -48,7 +48,7 @@ ms.locfileid: "51952562"
 
 必要なアクセス許可を管理するには、グローバル **管理者は次の機能を使用** できます。
 
-- [役割の **セキュリティ管理者] の****下の** 管理センターでMicrosoft 365 [管理者または](https://admin.microsoft.com/)セキュリティオペレーター **の役割**  >  **を割り当てます**。
+- [役割の **セキュリティ管理者] の** 下の [セキュリティ管理者 **] の** 下Microsoft 365 管理センター管理者または [セキュリティ](https://admin.microsoft.com/)オペレーター **の役割**  >  **を割り当てます**。
 - [アクセス許可の役割] の下にある [Microsoft Defender for Endpoint [Microsoft Defender セキュリティ センター](https://securitycenter.windows.com/) RBAC 設定  >  **を**  >  **確認します**。 対応する役割を選択して、セキュリティ設定の **管理権限を割り当** てる。
 
 > [!NOTE]
@@ -89,6 +89,9 @@ ms.locfileid: "51952562"
 単純なクエリ (結果をカスタマイズまたは集計するために or 演算子を使用しないクエリなど) は、通常、これらの一般的な `project` `summarize` 列を返します。
 
 より複雑なクエリがこれらの列を返すには、さまざまな方法があります。 たとえば、次のような列の下のエンティティ別に集計してカウントする場合でも、各一意のイベントを含む最新のイベントから取得 `DeviceId` `Timestamp` `ReportId` できます `DeviceId` 。
+
+> [!IMPORTANT]
+> 列を使用してカスタム検出をフィルター処理 `Timestamp` しないようにします。 カスタム検出に使用されるデータは、検出頻度に基づいて事前にフィルター処理されます。
 
 以下のサンプル クエリは、ウイルス対策の検出を含む一意のデバイス ( ) の数をカウントし、この数を使用して 5 つを超える検出を持つデバイス `DeviceId` のみを検索します。 最新の値と `Timestamp` 対応する値を取得 `ReportId` するには、関数と `summarize` 一緒に演算子を使用 `arg_max` します。
 
@@ -156,7 +159,7 @@ DeviceEvents
 選択すると、クエリ結果の **、、** または列のユーザーに対してユーザーに対して [侵害されたユーザーとしてマーク] `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` アクションが実行されます。 このアクションは、ユーザーのリスク レベルをユーザーのリスク レベルを Azure Active Directoryに設定し、対応する ID 保護[ポリシーをトリガーします](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
-> カスタム検出ルールの許可またはブロックアクションは、現在、Defender でMicrosoft 365されていません。
+> カスタム検出ルールの許可またはブロックアクションは、現在、ユーザー設定でMicrosoft 365 Defender。
 
 ### <a name="5-set-the-rule-scope"></a>5. ルールスコープを設定します。
 スコープを設定して、ルールの対象となるデバイスを指定します。 このスコープは、デバイスをチェックするルールに影響を与え、メールボックスとユーザー アカウントまたは ID のみをチェックするルールには影響を与えます。
@@ -222,7 +225,7 @@ DeviceEvents
 >テーブル内のアイテムに関する情報をすばやく表示し、アクションを実行するには、表の左側にある [&#10003;] の選択列を使用します。
 
 >[!NOTE]
->この記事の一部の列は、Microsoft Defender for Endpoint では使用できない場合があります。 [Defender を有効Microsoft 365、](m365d-enable.md)より多くのデータ ソースを使用して脅威を探します。 「Advanced Hunting queries from Microsoft Defender for Endpoint 」 の手順に従って、高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defender に[移動できます](advanced-hunting-migrate-from-mde.md)。
+>この記事の一部の列は、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
 ## <a name="see-also"></a>関連項目
 - [カスタム検出の概要](custom-detections-overview.md)

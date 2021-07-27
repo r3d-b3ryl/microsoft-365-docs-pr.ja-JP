@@ -34,32 +34,62 @@
           href: data-privacy.md
         - name: Microsoft セキュリティ ポータル
           href: portals.md
-    - name: 機能を評価する
+    - name: 評価とパイロット
       items:
-        - name: 試用版ラボを作成する
+        - name: 概要
+          href: eval-overview.md
+        - name: 評価環境を構築する
+          href: eval-create-eval-environment.md
+        - name: Defender for Identity
           items:
-            - name: 試用版ラボの概要
-              href: m365d-evaluation.md
-            - name: 準備
-              href: prepare-m365d-eval.md
-            - name: セットアップ
-              href: setup-m365deval.md
-            - name: Microsoft 365 Defender の柱とオンボードを構成する
-              href: config-m365d-eval.md
-            - name: テストの警告を生成する
-              href: generate-test-alert.md
-        - name: 実稼働環境でパイロット プロジェクトを実行する
+            - name: 概要
+              href: eval-defender-identity-overview.md
+            - name: アーキテクチャ要件を確認する
+              href: eval-defender-identity-architecture.md
+            - name: 評価を有効にする
+              href: eval-defender-identity-enable-eval.md
+            - name: Pilot Defender for Identity
+              href: eval-defender-identity-pilot.md
+        - name: Defender for Office 365
           items:
-            - name: パイロットの概要
-              href: m365d-pilot.md
-            - name: プラン
-              href: m365d-pilot-plan.md
-            - name: 準備
-              href: prepare-m365d-eval.md
+            - name: 概要
+              href: eval-defender-office-365-overview.md
+            - name: アーキテクチャ要件を確認する
+              href: eval-defender-office-365-architecture.md
+            - name: 評価を有効にする
+              href: eval-defender-office-365-enable-eval.md
+            - name: Pilot Defender for Office
+              href: eval-defender-office-365-pilot.md
+        - name: Defender for Endpoint
+          items:
+            - name: 概要
+              href: eval-defender-endpoint-overview.md
+            - name: アーキテクチャ要件を確認する
+              href: eval-defender-endpoint-architecture.md
+            - name: 評価を有効にする
+              href: eval-defender-endpoint-enable-eval.md
+            - name: Pilot Defender for Endpoint
+              href: eval-defender-endpoint-pilot.md
+        - name: Microsoft Cloud App Security
+          items:
+            - name: 概要
+              href: eval-defender-mcas-overview.md
+            - name: アーキテクチャ要件を確認する
+              href: eval-defender-mcas-architecture.md
+            - name: 評価を有効にする
+              href: eval-defender-mcas-enable-eval.md
+            - name: Pilot Microsoft Cloud App Security
+              href: eval-defender-mcas-pilot.md
+        - name: 調査と対応
+          items:
+            - name: 概要
+              href: eval-defender-investigate-respond.md
             - name: 攻撃のシミュレーション
-              href: m365d-pilot-simulate.md
-            - name: 閉じて要約する
-              href: m365d-pilot-close.md
+              href: eval-defender-investigate-respond-simulate-attack.md
+            - name: 機能を試す
+              href: eval-defender-investigate-respond-additional.md
+        - name: 試用版を製品版に昇格する
+          href: eval-defender-promote-to-production.md
     - name: 作業の開始
       items:
         - name: 概要
@@ -269,9 +299,9 @@
     - name: 使い方ガイド
       items:
         - name: 試用版ラボまたはパイロット環境を作成する
-          href: m365d-evaluation.md
+          href: eval-overview.md
         - name: パイロット プレイブックを実行する
-          href: m365d-pilot.md
+          href: eval-overview.md
         - name: よくあるご質問 (FAQ) をオンにする
           href: m365d-enable-faq.md
     - name: 参照

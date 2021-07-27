@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6bf84d00d11bdb948b234d9a9c6f1b4fa7f14461
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: c0c3e87644b7666c006f2eaf0632827173f5362f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275398"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542647"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>ベストな組み合わせ: Microsoft Defender ウイルス対策と Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "52275398"
 
 - **Microsoft Defender ウイルス対策、マルウェアWindows 10** スパイウェアなどのソフトウェアの脅威からデバイスを保護します。 Microsoft Defender ウイルス対策は、完全で継続的な保護であり、Windows 10に組み込み、準備が整いました。 [Microsoft Defender ウイルス対策は、次世代の保護です](./microsoft-defender-antivirus-in-windows-10.md)。 
 
-- **Office 365、スパム** 対策、マルウェア対策保護が含まれます。 Office 365 サブスクリプションを使用すると、プレミアム メールと予定表、Office アプリ、1 TB のクラウド ストレージ (OneDrive 経由)、すべてのデバイスの高度なセキュリティを取得できます。 これは、ホーム ユーザーとビジネス ユーザーの場合に当てはまる。 また、ビジネス ユーザーであり、組織が Office 365 E5 を使用している場合は、Microsoft Defender を通じて Office 365 による脅威からの保護を[Office 365。](/microsoft-365/security/office-365-security/protect-against-threats)
+- **Office 365、スパム** 対策、マルウェア対策保護が含まれます。 Office 365 サブスクリプションを使用すると、プレミアム メールと予定表、Office アプリ、1 TB のクラウド ストレージ (OneDrive 経由)、すべてのデバイスの高度なセキュリティを取得できます。 これは、ホーム ユーザーとビジネス ユーザーの場合に当てはまる。 また、ビジネス ユーザーであり、組織が Office 365 E5 を使用している場合は、Microsoft Defender を通じて Office 365 Office 365 を使用して脅威から保護するためのさらに多[くの保護を受Office 365。](/microsoft-365/security/office-365-security/protect-against-threats)
 
 - **OneDriveに含** まれているOffice 365を使用すると、ファイルとフォルダーをオンラインで保存し、ファイルを共有できます。 ユーザー (仕事や楽しみのために) や、ユーザーに保存されている共同編集ファイルと一緒に作業OneDrive。 すべてのデバイス (PC、電話、タブレット) でファイルにアクセスすることもできます。 [[共有の管理] をOneDrive。](/OneDrive/manage-sharing)
 
@@ -73,7 +73,7 @@ Microsoft Defender for Office 365 Microsoft Defender for Endpoint と統合す�
 
     だから
 
-- 統合が有効になると、セキュリティ運用チームは、検出された URL または電子メール メッセージの受信者が使用するデバイスの一覧と、それらのデバイスの最近の通知を Microsoft Defender セキュリティ センター ( ) で確認できます。 [https://securitycenter.windows.com](https://securitycenter.windows.com)
+- 統合が有効になると、セキュリティ運用チームは、Microsoft 365 Defender ポータル ( ) で、検出された URL または電子メール メッセージの受信者が使用するデバイスの一覧と、それらのデバイスに関する最近の通知を表示できます。 [https://security.microsoft.com](https://security.microsoft.com)
 
 まだ行っていない場合は[、Microsoft Defender for Office 365 Microsoft Defender for Endpoint に統合してください](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp)。
 

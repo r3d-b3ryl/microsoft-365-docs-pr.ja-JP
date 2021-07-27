@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7243e8f6fad225e6c4570184736e8d6588466d0a
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: c30e65a154e582ee843bcae4fa233f81964aca13
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194963"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542329"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS での Microsoft Defender for Endpoint の Intune ベースの展開
 
@@ -52,10 +52,10 @@ ms.locfileid: "53194963"
 | 手順 | サンプル ファイル名 | BundleIdentifier |
 |-|-|-|
 | [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
-| [エンドポイント用 Microsoft Defender のシステム拡張機能を承認する](#approve-system-extensions) | MDATP_SysExt.xml | N/A |
-| [Microsoft Defender for Endpoint のカーネル拡張機能の承認](#download-the-onboarding-package) | MDATP_KExt.xml | N/A |
+| [エンドポイント用 Microsoft Defender のシステム拡張機能を承認する](#approve-system-extensions) | MDATP_SysExt.xml | 該当なし |
+| [Microsoft Defender for Endpoint のカーネル拡張機能の承認](#download-the-onboarding-package) | MDATP_KExt.xml | 該当なし |
 | [Microsoft Defender for Endpoint へのフル ディスク アクセスを許可する](#full-disk-access) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
-| [ネットワーク拡張ポリシー](#network-filter) | MDATP_NetExt.xml | N/A |
+| [ネットワーク拡張ポリシー](#network-filter) | MDATP_NetExt.xml | 該当なし |
 | [Microsoft AutoUpdate (MAU) の構成](mac-updates.md#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
 | [Microsoft Defender for Endpoint 構成設定](mac-preferences.md#intune-profile-1)<br/><br/> **注:** macOS 用のサード パーティ製 AV の実行を計画している場合は、 に設定 `passiveMode` します `true` 。 | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [エンドポイントおよび MS AutoUpdate (MAU) 通知の Microsoft Defender の構成](mac-updates.md) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 または com.microsoft.wdav.tray |
@@ -63,13 +63,13 @@ ms.locfileid: "53194963"
 
 ## <a name="download-the-onboarding-package"></a>オンボーディング パッケージをダウンロードする
 
-次の方法でオンボーディング パッケージをMicrosoft Defender セキュリティ センター。
+オンボーディング パッケージを次のポータルからMicrosoft 365 Defenderします。
 
-1. [Microsoft Defender セキュリティ センター] で、[デバイス設定  >  **オンボーディング]**  >  **に移動します**。
+1. [Microsoft 365 Defender] ポータルで、[エンドポイントデバイス設定  >  **オン** ボーディング  >  **] に**  >  **移動します**。
 
 2. オペレーティング システムを **macOS** に設定し、展開方法を [Mobile Device Management / Microsoft Intune]**に設定します**。
 
-    ![オンボーディング設定のスクリーンショット](images/atp-mac-install.png)
+    ![オンボーディング設定のスクリーンショット](images/macos-install-with-intune.png)
 
 3. [オンボード **パッケージのダウンロード] を選択します**。 同 _じディレクトリWindowsDefenderATPOnboardingPackage.zip_ として保存します。
 
@@ -176,7 +176,7 @@ ms.locfileid: "53194963"
 
 ### <a name="network-filter"></a>ネットワーク フィルター
 
-エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報をポータルMicrosoft Defender セキュリティ センターします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft 365 Defenderします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
 [**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)を [、GitHubリポジトリからダウンロードします](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)。
 

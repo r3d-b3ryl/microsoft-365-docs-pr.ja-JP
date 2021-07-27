@@ -158,8 +158,16 @@
           href: air-custom-reporting.md
         - name: 高度なスパム フィルター (ASF) の設定
           href: advanced-spam-filtering-asf-options.md
-        - name: テナントの許可/禁止リストの URL を管理する
-          href: tenant-allow-block-list.md
+        - name: テナントの許可/禁止リスト
+          items:
+            - name: テナントの許可/禁止リストを管理する
+              href: tenant-allow-block-list.md
+            - name: テナントの許可/禁止リストの禁止リストを追加する
+              href: manage-tenant-blocks.md
+            - name: テナントの許可/禁止リストの許可リストを追加する
+              href: manage-tenant-allows.md
+            - name: テナントの許可/禁止リストのエントリを変更および削除する
+              href: modify-remove-entries-tenant-allow-block.md
         - name: セキュリティ/コンプライアンス センター のメッセージ追跡
           href: message-trace-scc.md
         - name: メッセージとファイルを Microsoft に報告する
@@ -186,7 +194,7 @@
               href: real-time-detections.md
         - name: 脅威トラッカーを使用する
           href: threat-trackers.md
-        - name: 警告を表示する
+        - name: ポリシーを通知する
           href: ../../compliance/alert-policies.md
         - name: セキュリティ/コンプライアンス センターのスマート レポートと分析情報
           href: reports-and-insights-in-security-and-compliance.md

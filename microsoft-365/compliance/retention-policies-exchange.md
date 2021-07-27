@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange の保持のしくみについて説明します。
-ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 1ec89ee838c73c0ba0eb50361f8c457a697bd9bb
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985434"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538867"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Exchange の保持の詳細
 
@@ -83,7 +83,9 @@ Exchange データに保持設定を適用すると、[回復可能なアイテ�
 
 ## <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合 
 
-ユーザーが組織を離れるときに、ユーザーのメールボックスがアイテム保持ポリシーに含まれていると、ユーザーの Microsoft 365 アカウントが削除されるときにメールボックスは非アクティブなメールボックスになります。 非アクティブなメールボックスのコンテンツは、メールボックスが非アクティブになる前に配置されたアイテム保持ポリシーがあれば、引き続きその適用対象となり、電子情報開示の検索が可能です。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。
+ユーザーが組織を離れるときに、ユーザーのメールボックスがアイテム保持用のポリシーに含まれていると、ユーザーの Microsoft 365 アカウントが削除されるときにメールボックスは非アクティブなメールボックスになります。 非アクティブなメールボックスのコンテンツは、メールボックスが非アクティブになる前に配置されたアイテム保持ポリシーがあれば、引き続きその適用対象となり、電子情報開示の検索が可能です。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。
+
+データが完全に削除されたため、または保存期間が終了したために保存設定が適用されなくなった場合、Exchange 管理者は[メール ボックスを削除できる](delete-an-inactive-mailbox.md)ようになりました。 このシナリオでは、非アクティブなメール ボックスは自動的に削除されません。
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 

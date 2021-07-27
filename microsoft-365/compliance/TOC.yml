@@ -477,43 +477,43 @@
               href: archive-whatsapp-data.md
         - name: 17a-4 データ コネクタ
           items:
-            - name: BlackBerry DataParser (プレビュー)
+            - name: BlackBerry DataParser
               href: archive-17a-4-blackberry-data.md
-            - name: Bloomberg DataParser (プレビュー)
+            - name: Bloomberg DataParser
               href: archive-17a-4-bloomberg-data.md
-            - name: Cisco Jabber DataParser (プレビュー)
+            - name: Cisco Jabber DataParser
               href: archive-17a-4-cisco-jabber-data.md
-            - name: Cisco Webex DataParser (プレビュー)
+            - name: Cisco Webex DataParser
               href: archive-17a-4-webex-teams-data.md
-            - name: FactSet DataParser (プレビュー)
+            - name: FactSet DataParser
               href: archive-17a-4-factset-data.md
-            - name: Fuze DataParser (プレビュー)
+            - name: Fuze DataParser
               href: archive-17a-4-fuze-data.md
-            - name: FX Connect DataParser (プレビュー)
+            - name: FX Connect DataParser
               href: archive-17a-4-fxconnect-data.md
-            - name: ICE DataParser (プレビュー)
+            - name: ICE DataParser
               href: archive-17a-4-ice-im-data.md
-            - name: InvestEdge DataParser (プレビュー)
+            - name: InvestEdge DataParser
               href: archive-17a-4-investedge-data.md
-            - name: LivePerson Conversational Cloud DataParser (プレビュー)
+            - name: LivePerson Conversational Cloud DataParser
               href: archive-17a-4-liveperson-data.md
-            - name: Quip DataParser (プレビュー)
+            - name: Quip DataParser
               href: archive-17a-4-quip-data.md
-            - name: Refinitiv Eikon Messenger DataParser (プレビュー)
+            - name: Refinitiv Eikon Messenger DataParser
               href: archive-17a-4-refinitiv-messenger-data.md
-            - name: ServiceNow DataParser (プレビュー)
+            - name: ServiceNow DataParser
               href: archive-17a-4-servicenow-data.md
-            - name: Slack DataParser (プレビュー)
+            - name: Slack DataParser
               href: archive-17a-4-slack-data.md
-            - name: SQL DataParser (プレビュー)
+            - name: SQL DataParser
               href: archive-17a-4-sql-database-data.md
-            - name: Symphony DataParser (プレビュー)
+            - name: Symphony DataParser
               href: archive-17a-4-symphony-data.md
-            - name: Zoom DataParser (プレビュー)
+            - name: Zoom DataParser
               href: archive-17a-4-zoom-data.md
         - name: CellTrust コネクタ
           items:
-            - name: CellTrust SL2 (プレビュー)
+            - name: CellTrust SL2
               href: archive-data-from-celltrustsl2.md
         - name: パートナーと共同作業して、サード パーティのデータをアーカイブする
           href: work-with-partner-to-archive-third-party-data.md
@@ -995,3 +995,5 @@
   href: ../security/index.yml
 - name: Microsoft 365 Apps for business
   href: /office365/admin/admin-home
+- name: トラブルシューティング
+  href: /office365/troubleshoot/microsoft-365-compliance-welcome

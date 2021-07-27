@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e8b5a2cf26c3ba99b528695c3296f7a83d5bc22
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: d3150caceae82be761d71d60373ccc128b59bcd8
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861085"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542725"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のプレビュー エクスペリエンスを有効にする
 
@@ -36,14 +36,14 @@ ms.locfileid: "51861085"
 
 プレビュー機能設定をオンにして、今後の機能をいち早く試します。
 
-1. ナビゲーション ウィンドウで、[高度な機能]**設定**  >  **を選択します**。
+1. ナビゲーション ウィンドウで、[エンドポイントの詳細設定 **] 設定**  >  **を**  >  **選択します**。
 
-    ![設定とプレビュー エクスペリエンスのイメージ](images/atp-preview-features.png)
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="設定とプレビュー エクスペリエンス イメージ":::
 
 
 2. [オン] と [オフ]**の間で設定を****切り替え**、[基本設定の保存]**を選択します**。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [Microsoft Defender for Endpoint の一般的な設定を更新する](data-retention-settings.md)
 - [Microsoft Defender for Endpoint の高度な機能を有効にする](advanced-features.md)
 - [Microsoft Defender for Endpoint で電子メール通知を構成する](configure-email-notifications.md)

@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0f089efedef1e4fb6b146692da3f1a630f2bacac
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4a91bece49c4e1e12e8f0a2d9d2d6f6cf0e2681a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289693"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538891"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 
@@ -66,7 +66,7 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 
 ****
 
-|タイトル|説明|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
+|Title|説明|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
 |---|---|:---:|:---:|:---:|:---:|
 |**デバイスコントロールの印刷制限を有効にする**|企業以外のプリンターを使用してユーザーの印刷をブロックする|はい|はい|はい|はい|
 |**承認済みの USB 接続印刷デバイスの一覧**\*|特定の USB プリンターを許可する|はい|はい|はい|はい|
@@ -138,23 +138,15 @@ CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認され�
 
 この[Microsoft 365は、](https://security.microsoft.com)上記の Device Control Printer Protection ポリシーによってブロックされた印刷を示しています。
 
-```sql
+```kusto
 DeviceEvents
-
-|where ActionType == 'PrintJobBlocked'
-
+| where ActionType == 'PrintJobBlocked'
 | extend parsed=parse_json(AdditionalFields)
-
 | extend PrintedFile=tostring(parsed.JobOrDocumentName)
-
 | extend PrintPortName=tostring(parsed.PortName)
-
 | extend PrinterName=tostring(parsed.PrinterName)
-
 | extend Policy=tostring(parsed.RestrictionReason) 
-
-| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName,Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
-
+| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
 | order by Timestamp desc
 ```
 

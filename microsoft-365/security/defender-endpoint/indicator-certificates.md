@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b75a8cf1d2681281555a3b7bb80deadfc11ee44c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 08a500dd548eb960d813d9bc693fa8b8dd871170
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845453"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542299"
 ---
 # <a name="create-indicators-based-on-certificates"></a>証明書に基づいてインジケーターを作成する
 
@@ -42,7 +42,7 @@ ms.locfileid: "52845453"
 - 組織全体で特定の署名付きアプリケーションの使用をブロックする。 アプリケーションの証明書をブロックするインジケーターを作成すると、Windows Defender AV はファイルの実行 (ブロックと修復) を防止し、自動調査と修復は同じように動作します。
 
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>開始する前に
 
 証明書のインジケーターを作成する前に、次の要件を理解することが重要です。
 
@@ -62,20 +62,22 @@ ms.locfileid: "52845453"
 >[!IMPORTANT]
 > 証明書 IoC を作成および削除するには、最大 3 時間かかる場合があります。
 
-1. ナビゲーション ウィンドウで、[インジケーター]**を設定**  >  **します**。  
+1. ナビゲーション ウィンドウで、[エンドポイントインジケーター]**設定**  >  **([** ルール]  > 
+ **の下)** を **選択します**。  
 
-2. [証明書] **タブを選択** します。
 
-3. [インジケーター **の追加] を選択します**。
+2. [証明書 **] タブを選択** します。
+
+3. [アイテム **の追加] を選択します**。
 
 4. 次の詳細を指定します。
    - Indicator - エンティティの詳細を指定し、インジケーターの有効期限を定義します。
    - Action - 実行するアクションを指定し、説明を入力します。
    - Scope - コンピューター グループのスコープを定義します。
 
-5. [概要] タブで詳細を確認し、[保存] を **クリックします**。
+5. [概要] タブで詳細 **を確認し** 、[保存] を **クリックします**。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [インジケーターの作成](manage-indicators.md)
 - [ファイルのインジケーターを作成 ](indicator-file.md)
 - [IP および URL/ドメインのインジケーターを作成](indicator-ip-domain.md)
