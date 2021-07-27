@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: af22bac911339de9c2e02df24a77c1889a33d43a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fa9986d9ddab70f050055ce2e3b98357c2ab22c5
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933735"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567154"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>セキュリティに関する推奨事項 - 脅威と脆弱性の管理
 
@@ -48,17 +48,17 @@ ms.locfileid: "51933735"
 
 組織内の各デバイスは、3 つの重要な要素に基づいてスコア付けされます。
 
-- **脅威** - 組織のデバイスの脆弱性と悪用の特徴と侵害履歴。 これらの要因に基づいて、セキュリティに関する推奨事項には、アクティブなアラート、継続的な脅威キャンペーン、対応する脅威分析レポートへの対応するリンクが表示されます。
+- **脅威**—組織のデバイスの脆弱性と悪用の特性と侵害履歴。 これらの要因に基づいて、セキュリティに関する推奨事項には、アクティブなアラート、継続的な脅威キャンペーン、対応する脅威分析レポートへの対応するリンクが表示されます。
 
-- **侵害の可能性** - 組織のセキュリティ体制と脅威に対する回復力
+- **侵害の可能性**- 組織のセキュリティ体制と脅威に対する回復力
 
-- **ビジネス価値** - 組織の資産、重要なプロセス、および知的財産
+- **ビジネス価値**- 組織の資産、重要なプロセス、および知的財産
 
 ## <a name="navigate-to-the-security-recommendations-page"></a>[セキュリティの推奨事項] ページに移動します。
 
 [セキュリティの推奨事項] ページにアクセスするには、次のいくつかの方法があります。
 
-- [脅威と脆弱性の管理] ナビゲーション メニューが表示[Microsoft Defender セキュリティ センター](portal-overview.md)
+- 脅威と脆弱性の管理ポータルのナビゲーション[Microsoft 365 Defenderメニュー](portal-overview.md)
 - ダッシュボードのセキュリティに[関する脅威と脆弱性の管理おすすめ](tvm-dashboard-insights.md)
 
 関連するセキュリティに関する推奨事項を次の場所で表示します。
@@ -68,7 +68,7 @@ ms.locfileid: "51933735"
 
 ### <a name="navigation-menu"></a>ナビゲーション メニュー
 
-[セキュリティ] ナビゲーション 脅威と脆弱性の管理に移動し、[セキュリティの推奨事項 **] を選択します**。 このページには、組織で見つかった脅威と脆弱性に関するセキュリティ推奨事項の一覧が含まれている。
+[脆弱性管理] **ナビゲーション メニューに移動し** 、[推奨事項] **を選択します**。 このページには、組織で見つかった脅威と脆弱性に関するセキュリティ推奨事項の一覧が含まれている。
 
 ### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>ダッシュボードのセキュリティに関する脅威と脆弱性の管理おすすめ
 
@@ -100,7 +100,7 @@ ms.locfileid: "51933735"
 
 調査または処理するセキュリティ推奨事項を選択します。
 
-![セキュリティ推奨事項のフライアウト ページの例。](images/secrec-flyouteolsw.png)
+:::image type="content" alt-text="セキュリティ推奨事項のフライアウト ページの例。" source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
 
 フライアウトから、次のオプションを選択できます。
 
@@ -111,7 +111,7 @@ ms.locfileid: "51933735"
 - [**例外オプション**](tvm-exception.md) - まだ問題を修復できない場合は、例外を送信し、正当化を提供し、例外期間を設定します。
 
 >[!NOTE]
->デバイスでソフトウェアの変更が行われた場合、通常、データがセキュリティ ポータルに反映されるのに 2 時間かかります。 ただし、時間がかかる場合があります。 構成の変更には、4 ~ 24 時間かかる場合があります。
+>デバイスでソフトウェアの変更が行われた場合、通常、データがセキュリティ ポータルに反映されるのに 2 時間かかります。 ただし、時間がかかる場合もあります。 構成の変更には、4 ~ 24 時間かかる場合があります。
 
 ### <a name="investigate-changes-in-device-exposure-or-impact"></a>デバイスの露出や影響の変化を調査する
 
@@ -157,7 +157,7 @@ ms.locfileid: "51933735"
 
 3. フライアウト ウィンドウで、ドロップダウン メニューから不正確なカテゴリを選択し、電子メール アドレスを入力し、不正確に関する詳細を入力します。
 
-4. [**送信**] を選択します。 フィードバックはすぐに専門家に脅威と脆弱性の管理されます。
+4. **[送信]** を選択します。 フィードバックはすぐに専門家に脅威と脆弱性の管理されます。
 
 ## <a name="related-articles"></a>関連記事
 

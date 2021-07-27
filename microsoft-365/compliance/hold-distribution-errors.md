@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: コア電子情報開示の保管担当者および非保管データ ソースに適用される法的ホールドに関連するエラーのトラブルシューティングを行います。
-ms.openlocfilehash: b101bf92c6a304262b3886a4ce0280f427a4a847
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3e5cc6351d5026feda560bee646a1e6a03475ee2
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538473"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578519"
 ---
 # <a name="troubleshoot-ediscovery-hold-errors"></a>電子情報開示の保持エラーのトラブルシューティング
 
@@ -36,7 +36,7 @@ ms.locfileid: "52538473"
 - 保留ポリシーが保留中であるかどうかを確認してから、保留ポリシーを更新します。 次のコマンドを実行するか、PowerShell スクリプトに保存します。
 
     ```powershell
-    $status = Get-CaseHoldPolicy -Identity <policyname> 
+    $status = Get-CaseHoldPolicy -Identity <policyname> -DistributionDetail
     if($status.DistributionStatus -ne "Pending"){
         # policy no longer pending
         Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation $user1

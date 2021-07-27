@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8039a06dc58c31158f90d39857ffbeba92138d5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 072118551ec64f0b399e27f16d630e89d30342c7
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933075"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567142"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織の脆弱性 - 脅威と脆弱性の管理
 
@@ -50,12 +50,12 @@ ms.locfileid: "51933075"
 
 [弱点] ページにアクセスするには、次に示すいくつかの方法があります。
 
-- [ページ **] の**[脅威と脆弱性の管理メニューから [弱点][を選択Microsoft Defender セキュリティ センター](portal-overview.md)
+- [Microsoft 365 Defender ポータル]の [脆弱性管理] ナビゲーション メニューから [弱点] を選択する (portal-overview.md)
 - グローバル検索
 
 ### <a name="navigation-menu"></a>ナビゲーション メニュー
 
-ナビゲーション メニューの [脅威と脆弱性の管理に移動し、[**弱点**] を選択して、CVEs の一覧を開きます。
+[脆弱性管理] **ナビゲーション メニューに** 移動し、[弱点] を選択 **して** 、CVEs の一覧を開きます。
 
 ### <a name="vulnerabilities-in-global-search"></a>グローバル検索の脆弱性
 
@@ -101,7 +101,7 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 
 公開されているデバイス情報は、サポートされていないソフトウェアの CVEs では使用できません。 [公開されたデバイス] セクションで [使用できない] オプションを選択して、サポートされていないソフトウェアでフィルター処理します。
 
- ![公開されているデバイス フィルター。](images/tvm-exposed-devices-filter.png)
+:::image type="content" alt-text="公開されているデバイス フィルター。" source="images/tvm-exposed-devices-filter.png":::
 
 ## <a name="view-common-vulnerabilities-and-exposures-cve-entries-in-other-places"></a>他の場所で一般的な脆弱性と露出 (CVE) エントリを表示する
 
@@ -112,7 +112,9 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
     ![ソフトウェア、弱点、脅威、公開されたデバイスの 4 つの列を持つ、脆弱なソフトウェア カードの上位。](images/tvm-top-vulnerable-software500.png)
 
 2. 調査するソフトウェアを選択してドリルダウン ページに移動します。
+
 3. [検出された **脆弱性] タブを選択** します。
+
 4. 脆弱性の詳細については、調査する脆弱性を選択します。
 
     ![WindowsServer 2019 ドリルダウンの概要。](images/windows-server-drilldown.png)
@@ -121,15 +123,17 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 
 デバイス ページに関連する弱点情報を表示します。
 
-1. ナビゲーション メニュー バーのMicrosoft Defender セキュリティ センターに移動し、デバイス アイコンを選択します。 [ **デバイス] リスト ページ** が開きます。
-2. [デバイス **] リスト ページ** で、調査するデバイス名を選択します。
+1. ナビゲーション メニュー バー Microsoft 365 Defenderに移動し、デバイス アイコンを選択します。 [ **デバイス インベントリ] ページ** が開きます。
+
+2. [デバイス **インベントリ] ページ** で、調査するデバイス名を選択します。
 
     ![調査するデバイスが選択されているデバイスの一覧。](images/tvm_machinetoinvestigate.png)
 
 3. [デバイス] ページが開き、調査するデバイスの詳細と応答オプションが表示されます。
+
 4. [検出 **された脆弱性] を選択します**。
 
-    ![詳細と応答オプションを含むデバイス ページ。](images/tvm-discovered-vulnerabilities.png)
+   :::image type="content" alt-text="詳細と応答オプションを含むデバイス ページ。" source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
 
 5. 調査する脆弱性を選択して、CVE の詳細 (脆弱性の説明、脅威の分析情報、検出ロジックなど) を含むフライアウト パネルを開きます。
 
@@ -139,7 +143,7 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 
 "OS 機能" カテゴリは、関連するシナリオにも表示されます。 CVE は、特定の OS コンポーネントが有効になっている場合にのみ、脆弱な OS を実行するデバイスに影響します。 たとえば、サーバー 2019 Windows DNS コンポーネントに脆弱性が存在するとします。 この新機能では、この CVE を OS で DNS 機能が有効になっている Windows Server 2019 デバイスにのみ接続します。
 
-![デバイスと KB で検出されたソフトウェアを一覧表示する検出ロジックの例。](images/tvm-cve-detection-logic.png)
+:::image type="content" alt-text="デバイスと KB で検出されたソフトウェアを一覧表示する検出ロジックの例。" source="images/tvm-cve-detection-logic.png":::
 
 ## <a name="report-inaccuracy"></a>レポートの不正確さ
 
@@ -148,7 +152,7 @@ CVE を選択すると、フライアウト パネルが開き、脆弱性の説
 1. [弱点] ページで CVE を開きます。
 2. [ **不正確なレポート] を選択すると、** フライアウト ウィンドウが開きます。
 3. ドロップダウン メニューから不正確なカテゴリを選択し、メール アドレスと不正確な詳細を入力します。
-4. [**送信**] を選択します。 フィードバックはすぐに専門家に脅威と脆弱性の管理されます。
+4. **[送信]** を選択します。 フィードバックはすぐに専門家に脅威と脆弱性の管理されます。
 
 ## <a name="related-articles"></a>関連記事
 

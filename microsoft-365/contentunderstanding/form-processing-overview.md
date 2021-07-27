@@ -1,8 +1,9 @@
 ---
-title: フォーム処理の概要
-ms.author: efrene
-author: efrene
+title: Microsoft SharePoint Syntex でのフォーム処理の概要
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,21 +12,21 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Microsoft SharePoint Syntex でのフォーム処理について学ぶ
-ms.openlocfilehash: e3cf8298a2db9383e5b88dde737efc84e75c7f19
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: Microsoft SharePoint Syntex でのフォーム処理について説明します。
+ms.openlocfilehash: d6cd129c3e52287a45bec6f91ddf8ecbda2af758
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222259"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578567"
 ---
-# <a name="form-processing-overview"></a>フォーム処理の概要
+# <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でのフォーム処理の概要
 
  ![AI ビルダー](../media/content-understanding/ai-builder.png)</br>
 
 Microsoft SharePoint Syntex は、Microsoft PowerApps [AI Builder](/ai-builder/overview) フォーム処理を使用して、SharePoint ドキュメントライブラリ内にモデルを作成します。
 
-AI Builder フォーム処理を使用して、機械学習テクノロジーを使用する AI モデルを作成し、フォームや請求書などの構造化または半構造化文書からキーと値のペアとテーブルデータを識別し、抽出できます。
+AI Builder フォーム処理を使用して、機械学習テクノロジを使用する AI モデルを作成し、フォームや請求書などの構造化または半構造化文書からキーと値のペアとテーブル データを識別し、抽出できます。
 
 組織は、メール、ファックス、電子メールなどのさまざまなソースから大量の請求書を受け取ることがよくあります。これらの文書を処理してデータベースに手動で入力するには、かなりの時間がかかる場合があります。 AI を使用してドキュメントからテキスト、キーと値のペア、およびテーブルを抽出することにより、フォーム処理はこのプロセスを自動化します。 
 

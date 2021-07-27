@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec8dd97a563edc487008d028a7cdc9f6ef3d17c1
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: b4ed79359d8d535ec47a287292cedf1d0520711e
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689087"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567190"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>ゼロデイの脆弱性を軽減する - 脅威と脆弱性の管理
 
@@ -43,7 +43,7 @@ ms.locfileid: "52689087"
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>ゼロデイの脆弱性に関する情報を検索する
 
-ゼロデイの脆弱性が見つかったら、この脆弱性に関する情報は、次のエクスペリエンスを通じてMicrosoft Defender セキュリティ センター。
+ゼロデイの脆弱性が見つかったら、このポータルで次のエクスペリエンスを通じて情報Microsoft 365 Defenderされます。
 
 >[!NOTE]
 > 現在、0 日間の脆弱性機能は、特定の製品でのみWindowsできます。
@@ -66,19 +66,19 @@ ms.locfileid: "52689087"
 
 - この脆弱性に CVE-ID が割り当てられていない場合は、"TVM-XXXX-XXXX" のような内部の一時的な名前で検索されます。 名前は、公式の CVE-ID が割り当てられた後に更新されますが、以前の内部名はサイド パネルで検索可能で見つかる場合があります。
 
-![弱点ページの CVE-2020-17087 のゼロ日の例。](images/tvm-zero-day-weakness-name.png)
+:::image type="content" alt-text="弱点ページの CVE-2020-17087 のゼロ日の例。" source="images/tvm-zero-day-weakness-name.png" lightbox="images/tvm-zero-day-weakness-name.png":::
 
 ### <a name="software-inventory-page"></a>ソフトウェア インベントリ ページ
 
 ゼロデイ タグを持つソフトウェアを探します。 "ゼロ日" タグでフィルター処理して、ゼロデイの脆弱性を持つソフトウェアのみを表示します。
 
-![ソフトウェア インベントリ ページWindows Server 2016ゼロ日の例。](images/tvm-zero-day-software-inventory.png)
+:::image type="content" alt-text="ソフトウェア インベントリ ページWindows Server 2016ゼロ日の例。" source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
 
 ### <a name="software-page"></a>[ソフトウェア] ページ
 
 ゼロデイの脆弱性の影響を受けた各ソフトウェアのゼロデイ タグを探します。
 
-![ソフトウェア ページの 0 Windows Server 2016例。](images/tvm-zero-day-software-page.png)
+:::image type="content" alt-text="ソフトウェア ページの 0 Windows Server 2016例。" source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
 
 ### <a name="security-recommendations-page"></a>[セキュリティの推奨事項] ページ
 
@@ -86,7 +86,7 @@ ms.locfileid: "52689087"
 
 ゼロデイの脆弱性と追加の脆弱性を持つソフトウェアが存在する場合は、すべての脆弱性に関する推奨事項が 1 つ表示されます。
 
-![[セキュリティの推奨事項] ページWindows Server 2016 0 日の例を示します。](images/tvm-zero-day-security-recommendation.png)
+:::image type="content" alt-text="[セキュリティの推奨事項] ページWindows Server 2016 0 日の例を示します。" source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>ゼロデイの脆弱性への対処
 
@@ -108,7 +108,7 @@ ms.locfileid: "52689087"
 
 ![新しいパッチ ラベルを使用して "Microsoft Windows 10 を更新する" に関する推奨事項。](images/tvm-zero-day-patch.jpg)
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

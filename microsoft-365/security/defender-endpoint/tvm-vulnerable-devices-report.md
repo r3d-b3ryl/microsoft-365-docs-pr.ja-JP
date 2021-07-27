@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 355561936642b1fa38228bfa07ad59269c48d817
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 139b1ae75ff7fe98591f0053a526e8aec5266a5f
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245482"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567118"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>脆弱なデバイス レポート - 脅威と脆弱性の管理
 
@@ -39,12 +39,12 @@ ms.locfileid: "52245482"
 
 レポートには、脆弱なデバイスの傾向と現在の統計を含むグラフと棒グラフが表示されます。 目標は、デバイスの露出の呼吸と範囲を理解する目的です。
 
-[脆弱なデバイスのレポート] Microsoft Defender セキュリティ センターにアクセスして、>**レポートにアクセスします。**
+[脆弱なデバイスのレポート] Microsoft 365 Defenderにアクセスして、>**ポータルにアクセスします。**
 
 次の 2 つの列があります。
 
 - 傾向 (時間の流れる)。 過去 30 日間、3 か月、6 か月、またはカスタムの日付範囲を表示できます。
-- 今日 (現在の情報)
+- 状態 (現在の情報)
 
 **フィルター**: 脆弱性の重大度レベル、悪用の可用性、脆弱性の年齢、オペレーティング システム プラットフォーム、Windows 10 バージョン、またはデバイス グループでデータをフィルター処理できます。
 
@@ -54,33 +54,33 @@ ms.locfileid: "52245482"
 
 各デバイスは、そのデバイスで見つかった最も重大な脆弱性に従って 1 回だけカウントされます。
 
-![現在のデバイスの脆弱性の重大度レベルの 1 つのグラフと、時間の流中のレベルを示す 1 つのグラフ。](images/tvm-report-severity.png)
+:::image type="content" alt-text="現在のデバイスの脆弱性の重大度レベルの 1 つのグラフと、時間の流中のレベルを示す 1 つのグラフ。" source="images/tvm-report-severity.png" lightbox="images/tvm-report-severity.png":::
 
 ## <a name="exploit-availability-graphs"></a>可用性グラフの活用
 
 各デバイスは、既知の悪用の最高レベルに基づいて 1 回だけカウントされます。
 
-![現在のデバイスの利用可能性のグラフと、時間の流れによる可用性を示すグラフが 1 つ表示されます。](images/tvm-report-exploit-availability.png)
+:::image type="content" alt-text="現在のデバイスの利用可能性のグラフと、時間の流れによる可用性を示すグラフが 1 つ表示されます。" source="images/tvm-report-exploit-availability.png" lightbox="images/tvm-report-exploit-availability.png":::
 
 ## <a name="vulnerability-age-graphs"></a>脆弱性の年齢グラフ
 
-各デバイスは、最も古い脆弱性公開日の下で 1 回だけカウントされます。 古い脆弱性は悪用される可能性が高くなります。
+各デバイスは、最も古い脆弱性公開日の下で 1 回だけカウントされます。 古い脆弱性は、悪用される可能性が高くなります。
 
-![現在のデバイスの脆弱性の年齢のグラフと、時間の経時を示す 1 つのグラフ。](images/tvm-report-age.png)
+:::image type="content" alt-text="現在のデバイスの脆弱性の年齢のグラフと、時間の経時を示す 1 つのグラフ。" source="images/tvm-report-age.png" lightbox="images/tvm-report-age.png":::
 
 ## <a name="vulnerable-devices-by-operating-system-platform-graphs"></a>オペレーティング システム プラットフォームグラフによる脆弱なデバイス
 
 ソフトウェアの脆弱性により公開される各オペレーティング システム上のデバイスの数。
 
-![オペレーティング システム プラットフォーム別の現在の脆弱なデバイスの 1 つのグラフと、OS プラットフォームによる脆弱なデバイスの時間の経時を示す 1 つのグラフ。](images/tvm-report-os.png)
+:::image type="content" alt-text="オペレーティング システム プラットフォーム別の現在の脆弱なデバイスの 1 つのグラフと、OS プラットフォームによる脆弱なデバイスの時間の経時を示す 1 つのグラフ。" source="images/tvm-report-os.png" lightbox="images/tvm-report-os.png":::
 
 ## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>バージョン グラフによるWindows 10デバイス
 
 脆弱なアプリケーションまたは OS Windows 10される各バージョンのデバイスの数。
 
-![現在の脆弱なデバイスのバージョン別の 1 つのグラフWindows 10、1 つのグラフは、Windows 10バージョンで脆弱なデバイスを示します。](images/tvm-report-version.png)
+![現在の脆弱なデバイスのバージョン別の 1 つのグラフWindows 10、1 つのグラフは、Windows 10バージョンで脆弱なデバイスを示します。](images/tvm-report-version.png)lightbox="images/tvm-report-version.png"::
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)

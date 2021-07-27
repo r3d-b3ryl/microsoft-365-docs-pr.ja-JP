@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint コミュニティ センターにアクセスする
+title: Microsoft Defender for Endpoint コミュニティ センターにアクセスする
 description: Microsoft Defender for Endpoint Communityセンターにアクセスして、エクスペリエンスを共有し、製品について説明します。
 keywords: コミュニティ, コミュニティ センター, 技術コミュニティ, 会話, お知らせ
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: ef1076fb5b8bfc38090374671998460190faaba9
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: f97edde712287ef72b9196b11651bc5ce3fbe7a2
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893427"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567238"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Microsoft Defender for Endpoint コミュニティ センターにアクセスする
+# <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Microsoft Defender for Endpoint コミュニティ センターにアクセスする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,9 +41,8 @@ Defender for Endpoint Community センターは、コミュニティ メンバ�
 - 新機能
 - 脅威インテリジェンス
 
-
 このセンターにアクセスするには、いくつかのCommunityがあります。
-- [ナビゲーション] Microsoft Defender セキュリティ センターで、[中央] を **Communityします**。  新しいブラウザー タブが開き、[Defender for Endpoint Tech] ページCommunityされます。 
+- [ポータル] Microsoft 365 Defenderウィンドウで、[中央]**をCommunityします**。  新しいブラウザー タブが開き、[Defender for Endpoint Tech] ページCommunityされます。 
 - [Microsoft Defender [for Endpoint Tech] ページからコミュニティにCommunity](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)する
 
 

@@ -1,8 +1,9 @@
 ---
-title: 抽出子の作成時に用語ストアの分類を活用する
-ms.author: efrene
-author: efrene
+title: Microsoft SharePoint Syntex の抽出子を作成するときに、用語ストアの分類法を活用します。
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,14 +13,14 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex のドキュメント理解モデルで抽出子を作成するときに、用語ストアの分類法を使用します。
-ms.openlocfilehash: b8dfc028e0a18f3345fec466ec5e0079ed2d11ce
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ccc6b7d268a91d1febcbd760e8be560304c0e0d7
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925346"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578579"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>抽出子の作成時に用語ストアの分類を活用する
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の抽出子を作成するときに、用語ストアの分類法を活用します。
 
 </br>
 
@@ -44,7 +45,6 @@ SharePoint Syntex を使用してドキュメント理解モデルで抽出子�
 モデルで抽出子を作成するときに管理メタデータ フィールドを選択できるようにするには、[それを管理メタデータ サイト列として追加する](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f)必要があります。 サイト列を追加すると、モデルの抽出子を作成するときに選択できるようになります。
 
    ![契約サービス](../media/content-understanding/contract-services.png)</br>
-
 
 モデルをドキュメント ライブラリに適用した後、ドキュメントがライブラリにアップロードされると、抽出子が同義語の値 (*Design*、*Graphics*、*Topography*) のいずれかを検出すると、*Creative Services* 列に優先用語 (*Creative*) が表示されます。
 

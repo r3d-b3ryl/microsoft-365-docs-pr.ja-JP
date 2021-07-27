@@ -1,8 +1,9 @@
 ---
-title: ドキュメント理解モデルの利用状況分析
-ms.author: efrene
-author: efrene
+title: Microsoft SharePoint Syntex での文書理解のモデル使用状況分析
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: 保持ラベルをドキュメント理解モデルに適用する方法を学ぶ
-ms.openlocfilehash: 92115d8b1985fa84cd72671442aca18f255355de
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+description: ドキュメント理解モデルの使用状況分析を検索して使用する方法について説明します。
+ms.openlocfilehash: 5eca389519dbab7038ef774d8f096e61017d0155
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080439"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578543"
 ---
-# <a name="document-understanding-model-usage-analytics"></a>ドキュメント理解モデルの利用状況分析
+# <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex での文書理解のモデル使用状況分析
 
 </br>
 
@@ -28,7 +29,7 @@ ms.locfileid: "50080439"
 </br>
 
 
-Microsoft SharePoint Syntex　コンテンツ　センターは、モデル使用分析を提供して、コンテンツ　センターから公開されたモデルがどのように使用されているかに関する詳細情報を提供します。 「<b>コンテンツ センターの過去 30 日間のモデルのパフォーマンス</b>」セクションには、次のグラフとリストに示す利用状況分析データの 30 日間のロールアップが含まれています。
+Microsoft SharePoint Syntex コンテンツ センターは、モデル使用分析を提供して、コンテンツ センターから公開されたモデルがどのように使用されているかに関する詳細情報を提供します。 「<b>コンテンツ センターの過去 30 日間のモデルのパフォーマンス</b>」セクションには、次のグラフとリストに示す利用状況分析データの 30 日間のロールアップが含まれています。
 
 - モデル別の分類
 - ライブラリ別の分類

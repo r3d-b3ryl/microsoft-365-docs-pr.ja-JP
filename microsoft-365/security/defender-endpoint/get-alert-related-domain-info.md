@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 45aa82cbd2537b28ffd85b0f14c47e353cf996b4
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0d853f940e1c5734f414bf09bd180e54877312bd
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542755"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587791"
 ---
 # <a name="get-alert-related-domain-information-api"></a>アラート関連のドメイン情報 API を取得する
 
@@ -88,7 +88,7 @@ Empty
 GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/domains
 ```
 
-### <a name="response"></a>応答:
+### <a name="response-example"></a>応答の例
 
 以下は、応答の例です。
 

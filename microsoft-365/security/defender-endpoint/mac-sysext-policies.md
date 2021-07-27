@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 28a332cec68521741bdda62aeecd25440552344a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 820edf268a3062754a4994b6ce6c60c40b9a4312
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932741"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587779"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS Catalina および macOS の新しいバージョンの新しい構成プロファイル
 
@@ -42,7 +42,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
 
 ## <a name="jamf"></a>JAMF
 
-### <a name="system-extensions-policy"></a>システム拡張機能ポリシー
+### <a name="jamf-system-extensions-policy"></a>JAMF システム拡張機能ポリシー
 
 システム拡張機能を承認するには、次のペイロードを作成します。
 
@@ -69,7 +69,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
 
 ### <a name="network-extension-policy"></a>ネットワーク拡張ポリシー
 
-エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報をポータルMicrosoft Defender セキュリティ センターします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft 365 Defenderします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
 >[!NOTE]
 >JAMF には、コンテンツ フィルター ポリシーの組み込みのサポートが用意されていません。これは、macOS 上の Microsoft Defender for Endpoint がデバイスにインストールするネットワーク拡張機能を有効にするための前提条件です。 さらに、JAMF は展開するポリシーの内容を変更する場合があります。
@@ -149,13 +149,13 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
     ```bash
     $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
     ```
-    
+
     コマンドが出力されるのを確認します `OK` 。
-        
+
     ```bash
     <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
     ```
-    
+
 3. JAMF の組 [み込](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) みの証明機関を使用して署名証明書を作成するには、このページの指示に従います。
 
 4. 証明書を作成してデバイスにインストールしたら、ターミナルから次のコマンドを実行してファイルに署名します。
@@ -163,18 +163,18 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
     ```bash
     $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.microsoft.network-extension.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
     ```
-    
+
     たとえば、証明書名が **SigningCertificate** で、署名されたファイルが Documents に格納される場合は、次のようになります。
-    
+
     ```bash
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
-    
+
 5. JAMF ポータルから [構成プロファイル] に移動 **し、[** 設定] ボタン **アップロード** クリックします。 ファイル `com.microsoft.network-extension.signed.mobileconfig` の入力を求めるメッセージが表示されたら選択します。
 
 ## <a name="intune"></a>Intune
 
-### <a name="system-extensions-policy"></a>システム拡張機能ポリシー
+### <a name="intune-system-extensions-policy"></a>Intune システム拡張機能ポリシー
 
 システム拡張機能を承認するには、次の方法を実行します。
 
@@ -195,7 +195,7 @@ macOS の進化に合わせ、カーネル拡張機能ではなくシステム�
 
 ### <a name="create-and-deploy-the-custom-configuration-profile"></a>カスタム構成プロファイルの作成と展開
 
-次の構成プロファイルは、ネットワーク拡張機能を有効にし、エンドポイント セキュリティ システム拡張機能へのフル ディスク アクセスを付与します。 
+次の構成プロファイルは、ネットワーク拡張機能を有効にし、エンドポイント セキュリティ システム拡張機能へのフル ディスク アクセスを付与します。
 
 次のコンテンツを次の名前の **ファイルに保存** sysext.xml。
 
@@ -305,10 +305,10 @@ sysext.xml: OK
 
 このカスタム構成プロファイルを展開するには、次の方法を実行します。
 
-1.  Intune で、[デバイス構成の **管理**  >  **] を開きます**。 [プロファイル **の**  >  **管理] [プロファイルの**  >  **作成] を選択します**。
+1. Intune で、[デバイス構成の **管理**  >  **] を開きます**。 [プロファイル **の**  >  **管理] [プロファイルの**  >  **作成] を選択します**。
 2. プロファイルの名前を選択します。 **Platform=macOS と** **Profile type=Custom を変更します**。 [構成 **] を選択します**。
-3.  構成プロファイルを開 **き、sysext.xml。** このファイルは、前の手順で作成されました。
-4.  **[OK]** を選択します。
+3. 構成プロファイルを開 **き、sysext.xml。** このファイルは、前の手順で作成されました。
+4. **[OK]** を選択します。
 
     ![Intune のスクリーンショットのシステム拡張機能](images/mac-system-extension-intune.png)
 

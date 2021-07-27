@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b4b770733b9e62b39a07c8699619ac5f7d692ec5
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 0c94f0559a86eed8975f80b96ec3f0ff66a9d8e1
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327099"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587767"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>インサイダーリスク管理活動の調査
 
@@ -96,6 +96,18 @@ ms.locfileid: "53327099"
 ## <a name="search-alerts-on-the-alert-dashboard"></a>アラート ダッシュボードでアラートを検索する
 
 特定の単語でアラート名を検索するには、**検索** コントロールを選び、検索する単語を入力します。 検索結果には、検索で定義された単語を含むポリシー アラートが表示されます。
+
+## <a name="dismiss-multiple-alerts-preview"></a>複数の通知を閉じ (プレビュー)
+
+アナリストや調査担当者が複数のアラートを一度に即座に却下する時間を節約するのに役立つ場合があります。 [**アラートの** 却下] コマンド バー オプションを使用すると、ダッシュボードで [レビューの必要] 状態の 1 つ以上のアラートを選択し、トリアージ プロセスでこれらのアラートを適切な状態にすばやく閉じることができます。 一度に却下するアラートは最大 400 件まで選択できます。
+
+インサイダー リスク アラートを却下するには、次の手順を実行します。
+
+1. [警告] [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)[Insider リスク管理] に **移動し、[** アラート] タブ **を選択** します。
+2. [アラート **] ダッシュボードで**、却下する [レビューの必要] 状態のアラート (またはアラート) を選択します。
+3. [アラート] コマンド バーで、[アラートの却下] **を選択します**。
+4. [アラートの **詳細を閉** じます] ウィンドウで、選択したアラートに関連付けられているユーザーとポリシーの詳細を確認できます。
+5. [**アラートを閉じる**] を選択してアラートを良性として解決するか、[キャンセル] を選択して、アラートを閉じることなく詳細ウィンドウを閉じます。
 
 ## <a name="triage-alerts"></a>トリアージアラート
 

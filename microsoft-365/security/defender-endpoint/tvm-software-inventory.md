@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0d270760cfed965c8190668afcdb1cc25223d2b1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9c31d62933ecb34d75e048101891fa7fa7b4256d
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933723"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587698"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>ソフトウェア インベントリ - 脅威と脆弱性の管理
 
@@ -34,11 +34,11 @@ ms.locfileid: "51933723"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ソフトウェア インベントリは、脅威と脆弱性の管理共通プラットフォーム列挙[(CPE)](https://nvd.nist.gov/products/cpe)を使用して組織内の既知のソフトウェアの一覧です。 公式 CPE のないソフトウェア製品には、脆弱性が公開されません。 また、ベンダーの名前、弱点の数、脅威、公開されているデバイスの数などの詳細も含まれています。
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>仕組み
 
 検出の分野では [、Microsoft Defender for Endpoint](overview-endpoint-detection-response.md)の検出および応答機能の検出と脆弱性評価を担当するシグナルの同じセットを活用しています。
 
@@ -46,7 +46,7 @@ ms.locfileid: "51933723"
 
 ## <a name="navigate-to-the-software-inventory-page"></a>[ソフトウェア インベントリ] ページに移動します。
 
-[ソフトウェア インベントリ] ページにアクセスするには、脅威と脆弱性の管理メニューから [ソフトウェア インベントリ] を[Microsoft Defender セキュリティ センター。](portal-overview.md)
+[ソフトウェア インベントリ] ページにアクセスするには、脅威と脆弱性の管理ポータルの [ソフトウェア インベントリ] [Microsoft 365 Defenderします](portal-overview.md)。
 
 デバイスリストから個々のデバイス ページ内の特定のデバイス上のソフトウェア [を表示します](machines-view-overview.md)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "51933723"
 
 リスト ビューは、ソフトウェアで見つかった弱点、関連付けられた脅威、およびソフトウェアがサポートの終了に達したかどうかのようなタグに基づいてフィルター処理できます。
 
-![ソフトウェア インベントリのランディング ページの例。](images/tvm-software-inventory.png)
+:::image type="content" alt-text="ソフトウェア インベントリのランディング ページの例。" source="images/tvm-software-inventory.png" lightbox="images/tvm-software-inventory.png":::
 
 調査するソフトウェアを選択します。 フライアウト パネルが開き、ページ上の情報がコンパクトに表示されます。 調査を深く掘り下げ、[ソフトウェアページを開く] を選択するか、[不正確なレポート] を選択して技術的な不整合にフラグ **を設定します**。
 
@@ -67,7 +67,7 @@ ms.locfileid: "51933723"
 
 脅威によって現在サポートされていないソフトウェア& 脆弱性の管理[ソフトウェア インベントリ] ページに表示される場合があります。 サポートされていないので、限られたデータしか使用できません。 [弱さ] セクションの [使用できない] オプションを使用して、サポートされていないソフトウェアでフィルター処理します。
 
-![サポートされていないソフトウェア フィルター。](images/tvm-unsupported-software-filter.png)
+:::image type="content" alt-text="サポートされていないソフトウェア フィルター。" source="images/tvm-unsupported-software-filter.png" lightbox="images/tvm-unsupported-software-filter.png":::
 
 以下は、ソフトウェアがサポートされていない状態を示しています。
 
@@ -80,11 +80,11 @@ ms.locfileid: "51933723"
 
 ## <a name="software-inventory-on-devices"></a>デバイス上のソフトウェア インベントリ
 
-[デバイス] Microsoft Defender セキュリティ センターから、[デバイス] リスト **[に移動します](machines-view-overview.md)**。 デバイスページ (Computer1 など) を開くデバイスの名前を選択し、[ソフトウェア インベントリ] タブを選択して、デバイスに存在する既知のすべてのソフトウェアの一覧を表示します。 詳細については、特定のソフトウェア エントリを選択してフライアウトを開きます。
+ポータル ナビゲーション Microsoft 365 Defenderから、[デバイス インベントリ]**[に移動します](machines-view-overview.md)**。 デバイスページ (Computer1 など) を開くデバイスの名前を選択し、[ソフトウェア インベントリ] タブを選択して、デバイスに存在する既知のすべてのソフトウェアの一覧を表示します。 詳細については、特定のソフトウェア エントリを選択してフライアウトを開きます。
 
 ソフトウェアは、現在デバイス でサポートされていない場合でも、デバイス レベルで表示脅威と脆弱性の管理。 ただし、使用できるデータは制限付きのみです。 ソフトウェアがサポートされていないかどうかは、[弱さ] 列に "使用できません" と表示されます。
 
-CPE がないソフトウェアは、このデバイス固有のソフトウェア インベントリの下に表示することもできます。
+CPE を持つソフトウェアは、このデバイス固有のソフトウェア インベントリの下に表示することもできます。
 
 ### <a name="software-evidence"></a>ソフトウェアの証拠
 
@@ -92,7 +92,7 @@ CPE がないソフトウェアは、このデバイス固有のソフトウェ�
 
 ソフトウェア名を選択して、フライアウトを開き、"Software Evidence" というセクションを探します。
 
-![デバイスの一覧からWindows 10証拠の例を示し、ソフトウェア証拠レジストリ パスを示します。](images/tvm-software-evidence.png)
+:::image type="content" alt-text="デバイスの一覧からWindows 10証拠の例を示し、ソフトウェア証拠レジストリ パスを示します。" source="images/tvm-software-evidence.png" lightbox="images/tvm-software-evidence.png":::
 
 ## <a name="software-pages"></a>ソフトウェア ページ
 
@@ -107,12 +107,12 @@ CPE がないソフトウェアは、このデバイス固有のソフトウェ�
 - ベンダー情報を含むサイド パネル、組織内のソフトウェアの普及率 (インストールされているデバイスの数、パッチが適用されていない公開されたデバイスを含む)、利用可能かどうかと悪用の可否、および露出スコアへの影響。
 - 脆弱性と構成ミスの数と重大度を示すデータの視覚化。 また、公開されているデバイスの数を示すグラフも表示されます。
 - 次のような情報を示すタブ。
-    - 特定された弱点と脆弱性に対する対応するセキュリティ推奨事項。
-    - 検出された脆弱性の名前付き CVEs。
-    - ソフトウェアがインストールされているデバイス (デバイス名、ドメイン、OS などと共に)。
-    - ソフトウェア のバージョン 一覧 (バージョンがインストールされているデバイスの数、検出された脆弱性の数、インストールされているデバイスの名前を含む)。
+  - 特定された弱点と脆弱性に対する対応するセキュリティ推奨事項。
+  - 検出された脆弱性の名前付き CVEs。
+  - ソフトウェアがインストールされているデバイス (デバイス名、ドメイン、OS などと共に)。
+  - ソフトウェア のバージョン 一覧 (バージョンがインストールされているデバイスの数、検出された脆弱性の数、インストールされているデバイスの名前を含む)。
 
-    ![ソフトウェアの詳細、Visual Studio、公開されているデバイスなど、2017 年のソフトウェアサンプル ページ。](images/tvm-software-page-example.png)
+    :::image type="content" alt-text="ソフトウェアの詳細、Visual Studio、公開されているデバイスなど、2017 年のソフトウェアサンプル ページ。" source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
 ## <a name="report-inaccuracy"></a>レポートの不正確さ
 
@@ -121,7 +121,7 @@ CPE がないソフトウェアは、このデバイス固有のソフトウェ�
 1. [ソフトウェア インベントリ] ページでソフトウェア フライアウトを開きます。
 2. [ **不正確なレポート] を選択します**。
 3. フライアウト ウィンドウで、ドロップダウン メニューから不正確なカテゴリを選択し、電子メール アドレスを入力し、不正確な情報の詳細を入力します。
-4. [**送信**] を選択します。 フィードバックはすぐに専門家に脅威と脆弱性の管理されます。
+4. **[送信]** を選択します。 フィードバックはすぐに専門家に脅威と脆弱性の管理されます。
 
 ## <a name="related-articles"></a>関連記事
 

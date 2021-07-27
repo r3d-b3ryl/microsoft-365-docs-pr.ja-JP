@@ -1,6 +1,6 @@
 ---
 title: 概要
-description: TEst Base について
+description: テスト ベースについて
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2c8909215fd0cac0b262199d45eec343074de2e6
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 00399cbfaea79b3e1658988272c1bfb1ecbc2b5e
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53323022"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567010"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>テスト ベースのMicrosoft 365? 
 
@@ -32,7 +32,7 @@ Test Base を使用すると、Microsoft が更新プログラムを市場にリ
 
 この新しいサービスは、SV がテスト作業をより簡単かつ効率的に行うのに役立ちます。 Enterpriseユーザーは、共同作業環境で一緒に SV と Microsoft のテストを行うメリットを得て、アプリケーションが期待通り動作するとの信頼性を高めます。 
 
-### <a name="advantages-test-base-offers-eenterprises-and-their-sv-partners-include"></a>テスト ベースが Eenterprises を提供する利点とその SV パートナーには、次のものが含まれます。 
+### <a name="advantages-test-base-offers-enterprises-and-their-sv-partners-include"></a>テスト ベースがエンタープライズと SV パートナーに提供する利点は次のとおりです。 
  
   * デバイスをセキュリティで保護するためのセキュリティ更新プログラムの迅速なロールアウト。 
  
@@ -49,7 +49,7 @@ Test Base を使用すると、Microsoft が更新プログラムを市場にリ
 
 1. セルフサービス **オン** ボーディング ポータルを介してアプリケーションをアップロードする方法に関する詳細な手順のガイドラインを示す概要。 
 
-2. クイック **スタート セクション** では、zippped フォルダー構造の形式と、テスト スクリプトの準備時に知る必要がある情報を提供します。
+2. クイック **スタート セクション** は、圧縮フォルダー構造の形式と、テスト スクリプトの準備時に知る必要がある情報を提供します。
 
 3. テスト **ベースを使用してテスト** 結果を確認する方法の詳細な概要を示す「How-to guide」。
 
@@ -63,7 +63,7 @@ Test Base を使用すると、Microsoft が更新プログラムを市場にリ
 
 ### <a name="who-should-onboard"></a>Whoオンボードする必要がありますか?
 
-すべてのソフトウェア ベンダー (SV)、System Integrators (SIs) が、アプリケーション、バイナリ、テスト スクリプトをサービスにオンボードできるよう奨励しています。
+すべてのソフトウェア ベンダー (SV)、System Integrators (SIs) が、アプリケーション、バイナリ、およびテスト スクリプトをサービスにオンボードできるよう奨励しています。
 
 ## <a name="next-steps"></a>次の手順
 

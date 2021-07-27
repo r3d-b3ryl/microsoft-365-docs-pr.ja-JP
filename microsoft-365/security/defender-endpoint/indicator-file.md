@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e119898a457be2ceb6dd78ca7831e26dc93ee85f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 535a729a56c5841eb6591ec34ac934c0446fefbd
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542683"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587707"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -33,7 +33,7 @@ ms.locfileid: "53542683"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 悪意のある可能性のあるファイルやマルウェアの疑いを禁止することで、組織での攻撃の伝播をさらに防ぐ。 悪意のある可能性のあるポータブル実行可能ファイル (PE) ファイルが分かっている場合は、そのファイルをブロックできます。 この操作によって、組織内のデバイスで読み取り、書き込み、または実行されるのを防ぐ。
 
@@ -43,7 +43,7 @@ ms.locfileid: "53542683"
 - ファイルの詳細ページからインジケーターの追加ボタンを使用してコンテキスト インジケーターを作成する
 - インジケーター API を使用してインジケーター [を作成する](ti-indicator.md)
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 ファイルのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
@@ -59,8 +59,7 @@ ms.locfileid: "53542683"
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>設定ページからファイルのインジケーターを作成する
 
-1. ナビゲーション ウィンドウで、[エンドポイントインジケーター] **設定**  >  **([** ルール]  > 
- **の下)** を **選択します**。
+1. ナビゲーション ウィンドウで、[エンドポイントインジケーター] **設定** \> **([** ルール] \> **の下)** を **選択します**。
 
 2. [ファイル **ハッシュ] タブを**   選択します。
 
@@ -79,30 +78,26 @@ ms.locfileid: "53542683"
 
 インジケーターによって自動的にブロックされたファイルは、ファイルのアクション センターには表示されませんが、アラートはアラート キューに表示されます。
 
->[!IMPORTANT]
+> [!IMPORTANT]
+>
 >- 通常、ファイル ブロックは数分以内に適用および削除されますが、30 分以上かかる場合があります。
-> 
->- 同じ適用の種類とターゲットを持つファイル IoC ポリシーが競合している場合は、より安全なハッシュのポリシーが適用されます。 SHA-256 ファイル ハッシュ IoC ポリシーは SHA-1 ファイル ハッシュ IoC ポリシーに勝ちます。ハッシュの種類が同じファイルを定義している場合、MD5 ファイル ハッシュ IoC ポリシーに勝ちます。 これは、デバイス グループに関係なく常に true です。 
->   それ以外のすべての場合、同じ適用ターゲットを持つ競合するファイル IoC ポリシーがすべてのデバイスとデバイスのグループに適用されると、デバイスの場合、デバイス グループ内のポリシーが勝ちます。 
->   
->- EnableFileHashComputation グループ ポリシーを無効にすると、ファイル IoC のブロック精度が低下します。 ただし、有効にすると、 `EnableFileHashComputation` デバイスのパフォーマンスに影響を与える可能性があります。 たとえば、ネットワーク共有からローカル デバイス (特に VPN 接続を使用して) に大きなファイルをコピーすると、デバイスのパフォーマンスに影響を与える可能性があります。
+>
+>- 同じ適用の種類とターゲットを持つファイル IoC ポリシーが競合している場合は、より安全なハッシュのポリシーが適用されます。 SHA-256 ファイル ハッシュ IoC ポリシーは SHA-1 ファイル ハッシュ IoC ポリシーに勝ちます。ハッシュの種類が同じファイルを定義している場合、MD5 ファイル ハッシュ IoC ポリシーに勝ちます。 これは、デバイス グループに関係なく常に true です。
+>  それ以外のすべての場合、同じ適用ターゲットを持つ競合するファイル IoC ポリシーがすべてのデバイスとデバイスのグループに適用されると、デバイスの場合、デバイス グループ内のポリシーが勝ちます。
+>
+> - EnableFileHashComputation グループ ポリシーを無効にすると、ファイル IoC のブロック精度が低下します。 ただし、有効にすると、 `EnableFileHashComputation` デバイスのパフォーマンスに影響を与える可能性があります。 たとえば、ネットワーク共有からローカル デバイス (特に VPN 接続を使用して) に大きなファイルをコピーすると、デバイスのパフォーマンスに影響を与える可能性があります。
 >
 >   EnableFileHashComputation グループ ポリシーの詳細については [、「Defender CSP」を参照してください。](/windows/client-management/mdm/defender-csp)
 
-## <a name="policy-conflict-handling"></a>ポリシーの競合の処理  
+## <a name="policy-conflict-handling"></a>ポリシーの競合の処理
 
 Cert および File IoC ポリシー処理の競合は、次の順序に従います。
 
 - アプリケーションコントロールと AppLocker の強制モード ポリシー/Windows Defenderによってファイルが許可されていない場合は、[**ブロック**]
-
 - それ以外の場合は、ファイルが除外によって許可されている場合Microsoft Defender ウイルス対策許可する
-
 - それ以外の場合、ファイルがブロックまたは警告ファイル IoC によってブロックまたは警告される場合は、ブロック **/警告**
-
 - それ以外の場合は、ファイルが許可ファイルの IoC ポリシーで許可されている場合は、[**許可**]
-
-- それ以外の場合は、ASR ルール、CFA、AV、SmartScreen、その後ブロックによってファイルがブロック **されます**。  
-
+- それ以外の場合は、ASR ルール、CFA、AV、SmartScreen、その後ブロックによってファイルがブロック **されます**。
 - Else **Allow** (アプリケーション制御Windows Defender AppLocker &に渡す場合、IoC ルールは適用されません)
 
 同じ適用の種類とターゲットを持つファイル IoC ポリシーが競合している場合は、より安全な (長い) ハッシュのポリシーが適用されます。 たとえば、SHA-256 ファイル ハッシュ IoC ポリシーは、両方のハッシュの種類が同じファイルを定義している場合、MD5 ファイル ハッシュ IoC ポリシーに勝ちます。
@@ -111,13 +106,13 @@ Cert および File IoC ポリシー処理の競合は、次の順序に従い�
 
 ### <a name="examples"></a>例
 
-|コンポーネント |コンポーネントの適用 |ファイル インジケーター アクション |結果
-|--|--|--|--|
-|攻撃表面の縮小ファイル パスの除外 |許可 |ブロック |ブロック
-|攻撃表面の縮小ルール |ブロック |許可 |許可
-|Windows Defender Application Control |許可 |ブロック |許可 |
-|Windows Defender Application Control |ブロック |許可 |ブロック
-|Microsoft Defender ウイルス対策除外 |許可 |ブロック |許可
+|コンポーネント|コンポーネントの適用|ファイル インジケーター アクション|結果
+|---|---|---|---|
+|攻撃表面の縮小ファイル パスの除外|許可|ブロック|ブロック
+|攻撃表面の縮小ルール|ブロック|許可|許可
+|Windows Defender Application Control|許可|ブロック|許可
+|Windows Defender Application Control|ブロック|許可|ブロック
+|Microsoft Defender ウイルス対策除外|許可|ブロック|許可
 
 ## <a name="see-also"></a>関連項目
 

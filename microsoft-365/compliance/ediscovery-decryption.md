@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ツールMicrosoft 365電子メール メッセージに添付された暗号化されたドキュメントを処理し、SharePoint Online および OneDrive for Businessに保存する方法について説明します。
-ms.openlocfilehash: b87d87b7b0e870d6f396d87dc693fb8f41d5826b
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 9d3bee507d2add2a6ad1dedadf64c47298ecbab6
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51750029"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567310"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>電子情報開示ツールMicrosoft 365復号化
 
@@ -36,6 +36,9 @@ ms.locfileid: "51750029"
 ## <a name="supported-encryption-technologies"></a>サポートされている暗号化テクノロジ
 
 Microsoft 電子情報開示ツールは、Microsoft 暗号化テクノロジで暗号化されたアイテムをサポートします。 これらのテクノロジは、Azure Rights Management と Microsoft Information Protection (特に感度ラベル) です。 Microsoft 暗号化テクノロジの詳細については、「暗号化」を [参照してください](encryption.md)。 サードパーティの暗号化テクノロジによって暗号化されたコンテンツはサポートされていません。 たとえば、Microsoft 以外のテクノロジで暗号化されたコンテンツのプレビューやエクスポートはサポートされていません。
+
+> [!NOTE]
+> Microsoft 電子情報開示ツールでは、Office 365 Message Encryption (OME) で暗号化された電子メール メッセージの暗号化解除はサポートされていません。
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>暗号化されたアイテムをサポートする電子情報開示アクティビティ
 

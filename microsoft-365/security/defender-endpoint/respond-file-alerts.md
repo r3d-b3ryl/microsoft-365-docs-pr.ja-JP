@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 388d71ce4606acabaafdb32ba1baff87286951f1
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: 1db046d4001c2e8573b1e8bfb2274f9a58aaf3a3
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998790"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590781"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 
@@ -53,9 +53,9 @@ ms.locfileid: "52998790"
 
 | アクセス許可             | PE ファイル | PE 以外のファイル |
 | :--------------------- | :------: | :----------: |
-| データの表示              |     X    |       ○      |
-| アラートの調査   | &#x2611; |       ○      |
-| ライブ応答の基本    |     X    |       ○      |
+| データを表示              |     X    |       X      |
+| アラートの調査   | &#x2611; |       X      |
+| ライブ応答の基本    |     X    |       X      |
 | ライブ応答の詳細設定 | &#x2611; |   &#x2611;   |
 
 役割の詳細については、「役割ベースのアクセス制御の役割の作成と管理 [」を参照してください](user-roles.md)。
@@ -144,9 +144,31 @@ ms.locfileid: "52998790"
 
 応答アクション **から [ファイル** のダウンロード] を選択すると、ファイルを含むローカルのパスワードで保護された.zipをダウンロードできます。 ファイルをダウンロードする理由を記録し、パスワードを設定できるフライアウトが表示されます。
 
-既定では、検疫中のファイルをダウンロードできない。
+既定では、検疫中のファイルをダウンロードできる必要があります。
 
 ![ダウンロード ファイルアクションのイメージ](images/atp-download-file-action.png)
+
+### <a name="download-quarantined-files"></a>検疫済みファイルのダウンロード
+
+ユーザーまたはセキュリティ チームMicrosoft Defender ウイルス対策検疫されたファイルは、サンプル申請の構成に従って準拠[した方法で保存されます](enable-cloud-protection-microsoft-defender-antivirus.md)。 セキュリティ チームは、[ファイルのダウンロード] ボタンを使用してファイルの詳細ページから直接ファイルをダウンロードできます。 **このプレビュー機能は既定で 'On' になっています**。
+
+場所は、組織の地域設定 (EU、英国、または米国) によって異なります。 検疫済みファイルは、組織ごとに 1 回のみ収集されます。 サービス信頼ポータルからの Microsoft のデータ保護の詳細については、 を参照してください https://aka.ms/STP 。
+
+この設定を有効にすると、セキュリティ チームが潜在的に悪いファイルを調べ、インシデントを迅速かつリスクの低い方法で調査するのに役立ちます。 ただし、この設定をオフにする必要がある場合は、[エンドポイントの詳細設定] 設定[検疫済みファイルのダウンロード] に移動して設定  >    >    >  を調整します。 [高度な機能の詳細](advanced-features.md)
+
+#### <a name="backing-up-quarantined-files"></a>検疫済みファイルのバックアップ
+
+ユーザーは、サンプル申請の構成に応じて、検疫済みファイルをバックアップする前に明示的な同意 [を求めるメッセージが表示される場合があります](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection)。
+
+この機能は、サンプル申請がオフになっている場合は機能しません。 自動サンプル申請がユーザーからのアクセス許可を要求するために設定されている場合、ユーザーが送信に同意したサンプルだけが収集されます。
+
+>[!IMPORTANT]
+>検疫済みファイルの要件をダウンロードします。
+>- 組織がアクティブ モードMicrosoft Defender ウイルス対策を使用する 
+>- ウイルス対策エンジンのバージョンは 1.1.17300.4 以降です。 「 [月次プラットフォームとエンジンのバージョン」を参照してください。](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+>- クラウドベースの保護が有効になっています。 「 [クラウドによる保護を有効にする」を参照してください。](enable-cloud-protection-microsoft-defender-antivirus.md)
+>- サンプル提出が有効になっている
+>- デバイスのバージョンWindows 10 1703 以降、またはサーバー 2016 または 2019 Windowsインストールされている
 
 ### <a name="collect-files"></a>ファイルの収集
 
@@ -189,7 +211,7 @@ ms.locfileid: "52998790"
 
 ## <a name="consult-a-threat-expert"></a>脅威のエキスパートに相談する
 
-潜在的に侵害されたデバイス、または既に侵害されているデバイスに関する詳細な分析情報については、Microsoft の脅威の専門家に問い合してください。 Microsoft 脅威エキスパート、迅速かつ正確な対応のために、Microsoft Defender セキュリティ センター内から直接関与します。 専門家は、侵害される可能性のあるデバイスに関する分析情報を提供し、複雑な脅威や標的型攻撃通知を理解するのに役立ちます。 また、ポータル ダッシュボードに表示されるアラートや脅威インテリジェンス コンテキストに関する情報を提供することもできます。
+潜在的に侵害されたデバイス、または既に侵害されているデバイスに関する詳細な分析情報については、Microsoft の脅威の専門家に問い合してください。 Microsoft 脅威エキスパート、迅速かつ正確な対応のために、Microsoft 365 Defenderポータル内から直接取り組む必要があります。 専門家は、侵害される可能性のあるデバイスに関する分析情報を提供し、複雑な脅威や標的型攻撃通知を理解するのに役立ちます。 また、ポータル ダッシュボードに表示されるアラートや脅威インテリジェンス コンテキストに関する情報を提供することもできます。
 
 詳細 [については、「Microsoft Threat Expert」を](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 参照してください。
 

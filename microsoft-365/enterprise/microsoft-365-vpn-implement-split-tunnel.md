@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: c2195eb9e3af3c591ff59d0b0f87583455b9b119
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2ec4cd8b3730c93a6de30e59087beaff788992dd
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843652"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578591"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 
@@ -33,7 +33,7 @@ ms.locfileid: "52843652"
 
 企業は何年もの間、VPN を使用してユーザーのリモート エクスペリエンスをサポートしてきました。 中心となる作業領域はオンプレミスにありましたが、企業のネットワーク上のデータセンターを通じてルーティングされるリモート クライアントからの VPN は、リモート ユーザーが企業のリソースにアクセスするための主要な方法でした。 接続を保護するため、企業は VPN パスに沿ってネットワーク セキュリティ ソリューションのレイヤを構築します。 このセキュリティは、内部インフラストラクチャを保護し、VPN にトラフィックをルーティングし、オンプレミスのインターネット境界を経由して外部 Web サイトのモバイル ブラウズを保護するために構築されました。 VPN、ネットワーク境界、および関連するセキュリティ インフラストラクチャは、通常、企業ネットワーク内から開始されるほとんどの接続で、そのほとんどが内部ネットワーク境界内にとどまる、定義されたトラフィック量に対して専用に構築され、スケーリングされました。
 
-長い間、リモート ユーザー デバイスからのすべての接続がオンプレミス ネットワークにルーティングされる VPN モデル (いわゆる **強制トンネリング**) は、リモート ユーザーの同時接続規模を控えめにし、VPN を横断するトラフィック量を少なく済ませる限りは、ほぼ持続可能でした。  一部の企業は、アプリケーションが企業の境界内からパブリック SaaS クラウドに移行した後でも、VPN 強制トンネリングをそのまま使用し続けてきました。Office365 がその代表的な例です。
+長い間、リモート ユーザー デバイスからのすべての接続がオンプレミス ネットワークにルーティングされる VPN モデル (いわゆる _強制トンネリング_) は、リモート ユーザーの同時接続規模を控えめにし、VPN を横断するトラフィック量を少なく済ませる限りは、ほぼ持続可能でした。  一部の企業は、アプリケーションが企業の境界内からパブリック SaaS クラウドに移行した後でも、VPN 強制トンネリングをそのまま使用し続けてきました。Office365 がその代表的な例です。
 
 分散およびパフォーマンスに敏感なクラウド アプリケーションに接続するための強制トンネリングされた VPN の使用は最適とは言え、セキュリティの観点から現状を維持するために、一部の企業ではその悪影響が受け入れられた可能性があります。 このシナリオの例となる図を次に示します。
 
@@ -110,7 +110,7 @@ Microsoft は、お客様や幅広い業界と長年にわたって緊密に連�
 - 必要なセキュリティ要素をネットワーク上で、インラインではなくサービスで提供することができる
 - Office 365 サービスへのトラフィック量の約 70 - 80% を対象としたアカウント
 
-Office 365 エンドポイント、およびその分類と管理方法の詳細については、「[Office 365 エンドポイントを管理する](managing-office-365-endpoints.md)」の記事を参照してください。
+エンドポイントの管理とOffice 365方法の詳細については、「管理エンドポイントの管理」[を参照Office 365してください](managing-office-365-endpoints.md)。
 
 #### <a name="optimize-urls"></a>URL を最適化する
 
@@ -128,7 +128,7 @@ Office 365 エンドポイント、およびその分類と管理方法の詳細
 
 #### <a name="optimize-ip-address-ranges"></a>IP アドレスの範囲を最適化する
 
-これらのエンドポイントが対応する IP 範囲を記述する時点では、次のようになります。 [この例、Office 365 IP](microsoft-365-ip-web-service.md)および URL [](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) Web サービス[、URL/IP](urls-and-ip-address-ranges.md)ページなどのスクリプトを使用して、構成を適用するときに更新プログラムを確認し、定期的にポリシーを設定してください。 
+これらのエンドポイントが対応する IP アドレス範囲を記述する時点では、次のようになります。 [この例、Office 365 IP](microsoft-365-ip-web-service.md)および URL [](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) Web サービス[、URL/IP](urls-and-ip-address-ranges.md)ページなどのスクリプトを使用して、構成を適用するときに更新プログラムを確認し、定期的にポリシーを設定してください。 
 
 ```
 104.146.128.0/17
@@ -141,7 +141,6 @@ Office 365 エンドポイント、およびその分類と管理方法の詳細
 132.245.0.0/16
 150.171.32.0/22
 150.171.40.0/22
-191.234.140.0/22
 204.79.197.215/32
 23.103.160.0/20
 40.104.0.0/15
@@ -175,7 +174,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 ![印刷結果をルーティングする](../media/vpn-split-tunneling/vpn-route-print.png)
 
-「最適化」カテゴリにある **すべての** 現在の IP アドレス範囲のルートを追加するには、次のスクリプトの型を使用して、現在の最適化 IPの一連のサブネットの [Office 365 IP および URL Web サービス](microsoft-365-ip-web-service.md)にクエリを実行し、それをルート テーブルに追加します。
+「最適化」カテゴリにある _すべての_ 現在の IP アドレス範囲のルートを追加するには、次のスクリプトの型を使用して、現在の最適化 IPの一連のサブネットの [Office 365 IP および URL Web サービス](microsoft-365-ip-web-service.md)にクエリを実行し、それをルート テーブルに追加します。
 
 #### <a name="example-add-all-optimize-subnets-into-the-route-table"></a>例: すべての最適化サブネットをルート テーブルに追加する 
 
@@ -248,7 +247,7 @@ Teams が音声やセッション トラバーサル ユーティリティ for N
 
 - 上記のように[Microsoft 365を](https://aka.ms/netonboard)含む接続テストを実行する接続テストを実行します。 また、このツールに VPN テストを追加し、さらに分析情報を提供する必要があります。
 
-- スプリット トンネリングの範囲にあるエンドポイントへ簡単に tracert を行うには、たとえば、次のようなパスを示す必要があります。
+- 分割トンネル **のスコープ内** のエンドポイントへの単純な tracert には、次に示すパスが表示されます。
 
   ```powershell
   tracert worldaz.tr.teams.microsoft.com
@@ -276,7 +275,7 @@ Teams が音声やセッション トラバーサル ユーティリティ for N
 
 ## <a name="faq"></a>よくあるご質問 (FAQ)
 
-Microsoft Security Team[](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)は、今日の独自のリモート作業シナリオで、セキュリティ専門家と IT が最新のセキュリティ制御を実現するための主要な方法について概説する記事を公開しました。 さらに、この件に関してお客様からよく寄せられる質問と回答を以下に示します。
+Microsoft Security Team は、セキュリティ 専門家と [IT](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)担当者が、今日の独自のリモート作業シナリオ (ブログ記事) で最新のセキュリティ制御を実現するための代替方法を公開しました。この記事では、セキュリティ専門家の重要な方法を概説し、IT は今日の独自のリモート作業シナリオで最新のセキュリティ制御を実現できます。 さらに、この件に関してお客様からよく寄せられる質問と回答を以下に示します。
 
 ### <a name="how-do-i-stop-users-accessing-other-tenants-i-do-not-trust-where-they-could-exfiltrate-data"></a>データを引き出される可能性がある、信頼していない他のテナントにユーザーがアクセスすることを防ぐにはどうすればいいですか？
 
@@ -304,7 +303,7 @@ Q1 に記載されているテナント制限機能に加えて、「[条件付�
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>ウイルスやマルウェアからの保護はどうすればいいですか？
 
-同じく、Office 365 は、サービス自体のさまざまな層にある「最適化」のマークのあるエンドポイントを保護します。これは[このドキュメントで概説されています](/office365/Enterprise/office-365-malware-and-ransomware-protection)。 上記のように、プロトコル/トラフィックを完全に理解していない可能性のあるデバイスに沿って実行するのではなく、サービス自体にこれらのセキュリティ要素を提供する方が非常に効率的です。既定では、オンラインSharePointファイル[のアップロードで既知のマルウェアが](../security/office-365-security/virus-detection-in-spo.md)自動的にスキャンされます
+同じく、Office 365 は、サービス自体のさまざまな層にある「最適化」のマークのあるエンドポイントを保護します。これは[このドキュメントで概説されています](/office365/Enterprise/office-365-malware-and-ransomware-protection)。 上記のように、プロトコル/トラフィックを完全に理解していない可能性のあるデバイスに沿って実行するのではなく、サービス自体にこれらのセキュリティ要素を提供する方が非常に効率的です。 既定では、オンラインSharePointファイル[のアップロードで既知のマルウェアが](../security/office-365-security/virus-detection-in-spo.md)自動的にスキャンされます
 
 上記のExchangeエンドポイントについては、Exchange Online Protection および Microsoft [](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) Defender for [Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)サービスへのトラフィックのセキュリティを提供する優れた仕事をします。
 
@@ -316,7 +315,7 @@ Q1 に記載されているテナント制限機能に加えて、「[条件付�
 
 ただし、このソリューションが導入されていても、「最適化」マーク済みの Office 365 トラフィックをサービスに直接送信することを強くお勧めします。
 
-Azure Virtual Network への直接アクセスを許可する方法については、「[Azure VPN ゲートウェイ ポイント ツー サイトを使用したリモート ワーク](/azure/vpn-gateway/work-remotely-support)」の記事をご覧ください。
+Azure Virtual Network への直接アクセスを許可する方法については [、「Azure VPN Gateway Point-to-site](/azure/vpn-gateway/work-remotely-support)を使用したリモート作業」を参照してください。
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>なぜポート 80 が必要なのですか？ トラフィックは平文で送信されていますか？
 

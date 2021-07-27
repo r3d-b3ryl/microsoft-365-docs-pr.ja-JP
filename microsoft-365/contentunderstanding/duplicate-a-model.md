@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でモデルを複製する方法と理由について説明します。
-ms.openlocfilehash: 501c33b5309ca4af264a361c80fb0409c08c92e3
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 882340198ec17402caa30d9e1e34b4e37b0096a4
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51446038"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578471"
 ---
 # <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でモデルを複製する
 
@@ -48,7 +48,7 @@ ms.locfileid: "51446038"
 
    b. [**説明**]下で、新しいモデルの説明を追加します。
 
-   c. (省略可能)[**詳細設定**] で、既存の[コンテンツ タイプ](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)を関連付けるかどうかを選択します。
+   c. (省略可能)[**詳細設定**] で、既存の [コンテンツ タイプ](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)を関連付けるかどうかを選択します。
 
 5. [**複製する**] を選択します。
 

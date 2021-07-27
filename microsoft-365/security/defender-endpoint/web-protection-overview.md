@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eed208da92f7e196cc71dab4e9d32e5666f3f6a4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5f65712fb3d1148d53361b97c75817792bedc198
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844204"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567058"
 ---
 # <a name="web-protection"></a>Web 保護
 
@@ -34,11 +34,11 @@ ms.locfileid: "52844204"
 
 >Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Microsoft Defender for Endpoint の Web 保護は [、Web](web-threat-protection.md) 脅威保護と Web コンテンツ フィルターで構成 [される機能です](web-content-filtering.md)。 Web 保護を使用すると、Web の脅威からデバイスを保護し、望ましくないコンテンツを規制できます。 Web 保護レポートは、Web 保護のレポートMicrosoft Defender セキュリティ センターにアクセスして、>**確認できます**。
+Microsoft Defender for Endpoint の Web 保護は [、Web](web-threat-protection.md) 脅威保護と Web コンテンツ フィルターで構成 [される機能です](web-content-filtering.md)。 Web 保護を使用すると、Web の脅威からデバイスを保護し、望ましくないコンテンツを規制できます。 Web 保護に関するレポートは、Microsoft 365 Defender Web 保護のレポートにアクセスして、>**できます**。
 
-![すべての Web 保護カードのイメージ](images/web-protection.png)
+:::image type="content" alt-text="すべての Web 保護カードのイメージ" source="images/web-protection.png" lightbox="images/web-protection.png":::
 
-## <a name="web-threat-protection"></a>Web の脅威に対する保護
+## <a name="web-threat-protection"></a>Web 脅威保護
 
 Web 脅威保護を構成するカードは、時間の過ぎた Web 脅威検出 **と** **Web 脅威の概要です**。
 

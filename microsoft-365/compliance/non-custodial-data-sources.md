@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保管されていないデータ ソースをケースにAdvanced eDiscoveryし、データ ソースに保留を設定できます。 保管されていないデータ ソースはインデックスが再作成され、部分的にインデックスとしてマークされたコンテンツは再処理され、完全かつ迅速に検索できます。
-ms.openlocfilehash: 467f0e1167bfebe21bd3f2bbd52acd81529b8685
-ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
+ms.openlocfilehash: 097b054bdcc1dc37f74f86703ac8d7061b76ebba
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49740354"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567262"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>非保管データ ソースをサポートケースにAdvanced eDiscoveryする
 
@@ -43,7 +43,7 @@ ms.locfileid: "49740354"
    - **Exchange** - [編集 **] をクリック** してメールボックスを追加します。 メールボックスまたは配布グループの検索ボックスに、名前またはエイリアス (最低 3 文字) を入力します。 保管担当者以外のデータ ソースとして追加するメールボックスを選択し、[追加] を **クリックします**。
 
    > [!NOTE]
-   > [管理] **SharePoint** セクションと[Exchange] セクションを使用して、チームまたはグループに関連付けられたサイトとメールボックスを非保管データ ソースYammer追加できます。 チームまたはグループに関連付けられているメールボックスとサイトを個別に追加Yammerがあります。
+   > [管理] **SharePoint** セクションと[Exchange] セクションを使用して、チームまたはグループに関連付けられたサイトとメールボックスを非保管データ ソースYammer追加できます。 チームまたはグループに関連付けられているメールボックスとサイトを個別に追加Yammerがあります。<br/><br/> また、ルート サイト URL (または ) をデータ ソースとして追加SharePoint `https://contoso-my.sharepoint.com/personal/` `https://contoso-my.sharepoint.com/` はサポートされていません。 特定のサイトを追加する必要があります。
 
 4. 保管されていないデータ ソースを追加した後、それらの場所を保留にするかしないかのオプションがあります。 データ ソースの横にある **[保持** ] チェック ボックスをオンまたはオフにして、データ ソースを保留にします。
 

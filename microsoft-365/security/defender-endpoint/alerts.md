@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: df1a032ffab0490c41edc7d282f0f2cc60608870
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 830a744ff2552cda2e974867920bceab77763e91
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289681"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590709"
 ---
 # <a name="alert-resource-type"></a>アラート リソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "53289681"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "53289681"
 メソッド |戻り値の型 |説明
 :---|:---|:---
 [警告の取得](get-alert-info-by-id.md) | [アラート](alerts.md) | 1 つのアラート [オブジェクトを取得](alerts.md) します。
-[警告の一覧表示](get-alerts.md) | [アラート](alerts.md) コレクション | アラート [コレクションを一覧表示](alerts.md) します。
+[アラートの一覧表示](get-alerts.md) | [アラート](alerts.md) コレクション | アラート [コレクションを一覧表示](alerts.md) します。
 [警告の更新](update-alert.md) | [アラート](alerts.md) | 特定のアラートを [更新します](alerts.md)。
 [バッチ更新の通知](batch-update-alerts.md) | | アラートのバッチを更新 [します](alerts.md)。
 [アラートの作成](create-alert-by-reference.md)|[アラート](alerts.md)|Advanced Hunting から取得したイベント データに基づいてアラート [を作成します](run-advanced-query-api.md)。
@@ -58,7 +58,7 @@ ms.locfileid: "53289681"
 :---|:---|:---
 id | String | アラート ID。
 title | String | 警告タイトル。
-説明 | String | 警告の説明。
+description | String | 警告の説明。
 alertCreationTime | Null 許容の DateTimeOffset | アラートが作成された日付と時刻 (UTC)。
 lastEventTime | Null 許容の DateTimeOffset | 同じデバイスでアラートをトリガーしたイベントの最後の発生。
 firstEventTime | Null 許容の DateTimeOffset | そのデバイスでアラートをトリガーしたイベントの最初の発生。
@@ -123,7 +123,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_136
     ],
     "relatedUser": {
         "userName": "temp123",
-        "domainName": "MIDDLEEAST"
+        "domainName": "DOMAIN"
     },
     "comments": [
         {
@@ -153,8 +153,8 @@ GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_136
             "registryHive": null,
             "registryValueType": null,
             "registryValue": null,
-            "accountName": "eranb",
-            "domainName": "MIDDLEEAST",
+            "accountName": "name",
+            "domainName": "DOMAIN",
             "userSid": "S-1-5-21-11111607-1111760036-109187956-75141",
             "aadUserId": "11118379-2a59-1111-ac3c-a51eb4a3c627",
             "userPrincipalName": "temp123@microsoft.com",
