@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: CellTrust SL2 データ コネクタをセットアップして使用して、モバイル通信データをインポートおよびアーカイブする方法について学習します。
-ms.openlocfilehash: 191160921c9e949aa7b82520d72dc7a18bfb26ef
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: c437df7715e41fc0977142b60356ed4decf62027
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453974"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541135"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>CellTrust SL2 からデータをアーカイブMicrosoft 365
 
-CellTrust SL2 はモバイル通信データをキャプチャし、主要なアーカイブ テクノロジと統合して、FINRA、HIPAA、FOIA、TCPA などの規制に関する電子的な検出要件を満たします。 SL2 データ コネクタは、モバイル通信アイテムをインポートして、Microsoft 365。 この記事では、アーカイブに CellTrust SL2 データ Microsoft 365を使用して SL2 とデータ を統合するプロセスについて説明します。 このプロセスを完了すると、CellTrust SL2 サービスをサブスクライブし、SL2 アーキテクチャに精通している必要があります。 SL2 の詳細については、「SL2」を参照<www.celltrust.com>。
+CellTrust SL2 はモバイル通信データをキャプチャし、主要なアーカイブ テクノロジと統合して、FINRA、HIPAA、FOIA、TCPA などの規制に関する電子的な検出要件を満たします。 SL2 データ コネクタは、モバイル通信アイテムをインポートして、Microsoft 365。 この記事では、アーカイブに CellTrust SL2 データ Microsoft 365を使用して SL2 とデータ を統合するプロセスについて説明します。 このプロセスを完了すると、CellTrust SL2 サービスをサブスクライブし、SL2 アーキテクチャに精通している必要があります。 CellTrust SL2 の詳細については、を参照してください <https://www.celltrust.com> 。
 
 Microsoft 365 のユーザー メールボックスにデータをインポートした後、訴訟ホールド、電子情報開示、Microsoft 365 保持ポリシー、通信コンプライアンスなどの Microsoft 365 コンプライアンス機能を適用できます。 CellTrust SL2 Data Connector を使用してデータをインポートおよびアーカイブMicrosoft 365、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -31,7 +31,7 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
 ![CellTrust SL2 サービスのアーカイブ ワークフロー](../media/CellTrustSL2ConnectorWorkflow.png)
 
-1. SL2 ユーザーは、クラウド内の SL2 サービス間でデータを送受信Microsoft Azureします。
+1. SL2 ユーザーは、SL2 サービス間でデータを送受信Microsoft Azure。
 
 2. 組織には、CellTrust の SL2 クラウド サービス環境に SL2 ドメインがあります。 ドメインには、1 つ以上の組織単位 (OUs) を持つ場合があります。 SL2 Cloud Service は、データを Microsoft Azure プラットフォーム内の高度にセキュリティ保護された領域に転送し、データが新しい環境Microsoft Azureします。 SL2 プラン (Enterprise、SMB、または政府機関) に応じて、ドメインはグローバルまたは政府機関Microsoft AzureホストMicrosoft Azureされます。
 
