@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 311903cdd1409f4ab997641cc842ff199ce2500d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a3984358787001c9ccbb5794d9695c5f15fb2f59
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843108"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588031"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>管理セキュリティ サービス プロバイダー (MSSP) アクセス権の付与 (プレビュー)
 
@@ -32,10 +32,10 @@ ms.locfileid: "52843108"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
->[!IMPORTANT] 
->一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+> [!IMPORTANT]
+> 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
 マルチテナント委任アクセス ソリューションを実装するには、次の手順を実行します。
 
@@ -51,10 +51,9 @@ ms.locfileid: "52843108"
 
     これらのグループは、Defender for Endpoint で作成したロールにリンクされます。 これを行うには、テナントの顧客AD 3 つのグループを作成します。 この例のアプローチでは、次のグループを作成します。
 
-    - Tier 1 Analyst 
-    - Tier 2 Analyst 
-    - MSSP アナリスト承認者  
-
+    - Tier 1 Analyst
+    - Tier 2 Analyst
+    - MSSP アナリスト承認者
 
 2. エンドポイントの Customer Defender で適切なアクセス レベルの Defender for Endpoint ロールを作成します。
 
@@ -66,21 +65,21 @@ ms.locfileid: "52843108"
 
     2 つの可能な役割:
 
-    - **Tier 1 Analysts** <br>
+    - **Tier 1 Analysts**
+
       ライブ応答以外のすべてのアクションを実行し、セキュリティ設定を管理します。
 
-    - **Tier 2 Analysts** <br>
+    - **Tier 2 Analysts**
+
       ライブ応答に追加された Tier 1 [の機能](live-response.md)
 
     詳細については、「役割ベースの [アクセス制御を使用する」を参照してください](rbac.md)。
 
-
-
 ## <a name="configure-governance-access-packages"></a>ガバナンス アクセス パッケージの構成
 
-1.  **顧客 AAD の接続組織として MSSP を追加する: ID ガバナンス**
-    
-    接続された組織として MSSP を追加すると、MSSP は要求し、アクセスが準備されます。 
+1. **顧客 AAD の接続組織として MSSP を追加する: ID ガバナンス**
+
+    接続された組織として MSSP を追加すると、MSSP は要求し、アクセスが準備されます。
 
     これを行うには、テナントの顧客AD、Identity Governance: Connected organization にアクセスします。 新しい組織を追加し、テナント ID またはドメインを使用して MSSP Analyst テナントを検索します。 MSSP Analysts 用に個別のADテナントを作成する方法をお勧めします。
 
@@ -88,16 +87,15 @@ ms.locfileid: "52843108"
 
     リソース カタログは、テナントの顧客に作成されたアクセス パッケージADです。
 
-    これを行うには、テナントの顧客AD、Identity Governance: Catalogs にアクセスし、新しいカタログ **を追加します**。 この例では **、MSSP Accesses を呼び出します**。 
+    これを行うには、テナントの顧客AD、Identity Governance: Catalogs にアクセスし、新しいカタログ **を追加します**。 この例では **、MSSP Accesses を呼び出します**。
 
     ![新しいカタログのイメージ](images/goverance-catalog.png)
 
     詳細については、「リソースのカタログ [を作成する」を参照してください](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
-
 3. **MSSP リソースのアクセス パッケージを作成する 顧客 AAD: Identity Governance**
 
-    アクセス パッケージは、承認時に要求者に付与される権限とアクセスのコレクションです。 
+    アクセス パッケージは、承認時に要求者に付与される権限とアクセスのコレクションです。
 
     これを行うには、テナントの顧客AD、Identity Governance: Access Package にアクセスし、新しいアクセス パッケージ **を追加します**。 MSSP 承認者と各アナリスト層のアクセス パッケージを作成します。 たとえば、次の Tier 1 Analyst 構成によって、次のようなアクセス パッケージが作成されます。
 
@@ -111,7 +109,6 @@ ms.locfileid: "52843108"
 
     詳細については、「新しいアクセス [パッケージを作成する」を参照してください](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
-
 4. **顧客 AAD から MSSP リソースへのアクセス要求リンクを提供する: ID ガバナンス**
 
     [マイ アクセス ポータル] リンクは、MSSP SOC アナリストが作成したアクセス パッケージを介してアクセスを要求するために使用されます。 リンクは永続的です。つまり、同じリンクが新しいアナリストのために時間の間に使用される可能性があります。 アナリスト要求は、MSSP アナリスト承認者による承認のためにキュー **に入ります**。
@@ -121,25 +118,22 @@ ms.locfileid: "52843108"
 
     リンクは、各アクセス パッケージの概要ページに表示されます。
 
-## <a name="manage-access"></a>アクセスを管理する 
+## <a name="manage-access"></a>アクセスを管理する
 
 1. Customer または MSSP myaccess のアクセス要求を確認および承認します。
 
     アクセス要求は、MSSP Analyst Approvers グループのメンバーによって、お客様の My Access で管理されます。
 
-    これを行うには、次を使用して顧客の myaccess にアクセスします  `https://myaccess.microsoft.com/@<Customer Domain >` 。 
+    これを行うには、次を使用して顧客の myaccess にアクセスします `https://myaccess.microsoft.com/@<Customer Domain>` 。
 
-    例:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
+    例: `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
+
 2. UI の [承認] セクション **で要求を** 承認または拒否します。
 
     この時点で、アナリスト アクセスが準備され、各アナリストが顧客のサービスにアクセスMicrosoft Defender セキュリティ センター。`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>関連項目
+
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
 - [アラート通知を構成する](configure-mssp-notifications.md)
 - [顧客テナントからアラートを取得する](fetch-alerts-mssp.md)
-
-
-
- 
-

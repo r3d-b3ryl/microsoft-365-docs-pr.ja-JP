@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: f43d3bf9575f00649a2b5015a8be16351bebd11b
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+ms.openlocfilehash: b59ff2a32ef5a067576c43b9b0a394590e30b666
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073963"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587959"
 ---
-# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Defender で高度な狩猟を行って脅威を積極的にMicrosoft 365する
+# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>高度な検索機能を使用して、脅威を事前に検出Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,21 +39,23 @@ ms.locfileid: "52073963"
 > Microsoft 365 Defender を体験してみませんか? [ラボ環境で評価する](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)ことも、[実稼働環境でパイロット プロジェクトを実行する](m365d-pilot.md?ocid=cx-evalpilot)こともできます。
 >
 
-高度な捜索は、クエリ ベースの脅威の捜索ツールで、最大 30 日間のロー データを検索できます。 ネットワーク内のイベントを事前に検査して、脅威インジケーターとエンティティを特定できます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対する拘束されていない検出が可能です。
+高度な検索はクエリベースの脅威検出ツールで、最大 30 日間の生データを探索できます。 ネットワーク内のイベントを事前に検査して、脅威インジケーターとエンティティを特定できます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対する拘束されていない検出が可能です。
 <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
-同じ脅威を捜索しているクエリを使用して、カスタムの検出ルールを作成できます。 これらのルールは自動的に実行され、侵害の疑いのあるアクティビティ、正しく構成されていないコンピューター、その他の結果を確認し、それに対応します。
+同じ脅威検出クエリを使用して、カスタム検出ルールを作成できます。 これらのルールは自動的に実行され、侵害の疑いのあるアクティビティ、正しく構成されていないコンピューター、その他の結果を確認し、それに対応します。
 
-この機能は [、Microsoft Defender for Endpoint の高度な検索に似ています](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。 セキュリティ センターでMicrosoft 365この機能は、次の場所からより広範なデータ セットをチェックするクエリをサポートします。
+この機能は [、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) の高度な検索に似ています。より広範なデータ セットを次からチェックするクエリをサポートしています。
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
 - Microsoft Cloud App Security
 - Microsoft Defender for Identity
 
-高度な検索を使用するには[、Defender のMicrosoft 365します](m365d-enable.md)。
+高度な検索を使用するには[、次のMicrosoft 365 Defender。](m365d-enable.md)
+
+データの高度な検索の詳細についてはMicrosoft Cloud App Securityビデオを参照[してください](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa)。 
 
 ## <a name="get-started-with-advanced-hunting"></a>高度な捜索を開始する
 
@@ -69,9 +71,9 @@ ms.locfileid: "52073963"
 | **検出ルールの作成** | 高度な検索クエリを使用してアラートをトリガーし、応答アクションを自動的に実行する方法について説明します。 | - [カスタム検出の概要](custom-detections-overview.md) <br />- [カスタム検出ルール](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>アクセス権の取得
-高度な検索や他の Defender 機能を[Microsoft 365するには](microsoft-365-defender.md)、この機能で適切な役割がAzure Active Directory。 [高度な検索に必要な役割とアクセス許可についてお読みください](custom-roles.md)。
+高度な検索機能[や他の](microsoft-365-defender.md)Microsoft 365 Defender機能を使用するには、この機能で適切な役割Azure Active Directory。 [高度な検索に必要な役割とアクセス許可についてお読みください](custom-roles.md)。
 
-また、エンドポイント データへのアクセスは、Microsoft Defender for Endpoint の役割ベースのアクセス制御 (RBAC) 設定によって決まります。 [Defender へのアクセスの管理についてMicrosoft 365します](m365d-permissions.md)。
+また、エンドポイント データへのアクセスは、Microsoft Defender for Endpoint の役割ベースのアクセス制御 (RBAC) 設定によって決まります。 [アクセスの管理に関する記事をMicrosoft 365 Defender。](m365d-permissions.md)
 
 
 ## <a name="data-freshness-and-update-frequency"></a>データの鮮度と更新頻度

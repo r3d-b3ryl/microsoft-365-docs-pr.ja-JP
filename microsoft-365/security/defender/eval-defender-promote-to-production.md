@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b67f0f493c97b900fa08b10e3eb7a5967560dcfd
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 3204a5453e3b441e2899a347df6d9e5a6cca2808
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458344"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588127"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>評価環境Microsoft 365 Defenderを実稼働環境に昇格する
 
@@ -48,11 +48,11 @@ MDO を正常に評価またはパイロットした後、その MDO を実稼�
 5. サードパーティの SMTP ゲートウェイを使用停止し、このリレーに関連付けられている EXO コネクタを無効または削除します。
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
-Microsoft Defender for Endpoint 評価環境をパイロットから実稼働環境に昇格するには、サポートされているツールと方法を使用して、より多くのエンドポイントをサービスに [オンボードします](/defender-endpoint/onboard-configure)。
+Microsoft Defender for Endpoint 評価環境をパイロットから実稼働環境に昇格するには、サポートされているツールと方法を使用して、より多くのエンドポイントをサービスに [オンボードします](../defender-endpoint/onboard-configure.md)。
 
 Microsoft Defender for Endpoint に追加のデバイスをオンボードするには、次の一般的なガイドラインを使用します。 
 
-1. デバイスが最小要件を満 [たしていることを確認します](/defender-endpoint/minimum-requirements)。
+1. デバイスが最小要件を満 [たしていることを確認します](../defender-endpoint/minimum-requirements.md)。
 2. デバイスに応じて、Defender for Endpoint ポータルのオンボーディング セクションに示されている構成手順に従います。
 3. デバイスに適切な管理ツールと展開方法を使用します。
 4.  検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。

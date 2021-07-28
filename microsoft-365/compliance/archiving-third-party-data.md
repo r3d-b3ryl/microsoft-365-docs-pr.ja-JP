@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータを、ユーザーのメールボックスにインポートするMicrosoft 365します。
-ms.openlocfilehash: c5eebef3e2c6021efc08ff1ed41ba28bacc92487
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 512f08a621487fb2c3f2fd9f6b5d8ac00e49ac5e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339432"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541075"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -199,20 +199,70 @@ Microsoft 365 でサード パーティのデータをアーカイブする前�
 
 選択的な人事データなど、サード パーティのデータからのシグナルを Insider リスク[](insider-risk-management.md)管理ソリューションで使用すると、組織内のリスクの高いアクティビティを検出、調査、および操作することで内部リスクを最小限に抑える可能性があります。 たとえば、人事データ コネクタによってインポートされたデータは、従業員のデータ盗難を検出するリスクインジケーターとして使用されます。
 
+## <a name="using-ediscovery-tools-to-search-for-third-party-data"></a>電子情報開示ツールを使用してサードパーティのデータを検索する
+
+データ コネクタを使用してユーザー メールボックス内のサード パーティ 製データをインポートおよびアーカイブした後、Microsoft 365 電子情報開示ツールを使用してサード パーティのデータを検索できます。 また、電子情報開示ツールを使用して、Core eDiscovery に関連付けられたクエリ ベースの保持を作成し、Advanced eDiscoveryのケースに関連付け、サード パーティのデータを保持することもできます。 電子情報開示ツールの詳細については、「電子情報開示ソリューション」を参照[Microsoft 365。](ediscovery.md)
+
+データ コネクタを使用してユーザー メールボックスにインポートした任意の種類のサードパーティ データを検索 (または保留) するには、次の検索クエリを使用できます。 検索の範囲をユーザー メールボックスに設定してください。
+
+```powershell
+kind:externaldata
+```
+
+このクエリは、コンテンツ検索、Core 電子情報開示ケースに関連付けられた検索、またはコンテンツ 内のコレクションの [キーワード] ボックスでAdvanced eDiscovery。 
+
+![サードパーティのデータを検索するクエリ](..\media\SearchThirdPartyData1.png)
+
+また、property:value ペアを使用して、検索範囲をサードパーティのデータ `kind:externaldata` に絞り込む場合にも使用できます。 たとえば、インポートしたアイテムの **Subject** プロパティに *contoso* という単語を含むサードパーティのデータ ソースからインポートされたアイテムを検索するには、[キーワード] ボックスで次のクエリ **を使用** します。
+
+```powershell
+subject:contoso AND kind:externaldata
+```
+
+または、[メッセージの種類] 条件 **を使用して** 同じクエリを構成することもできます。
+
+![メッセージの種類の条件を使用して、サード パーティのデータに検索を絞り込む](..\media\SearchThirdPartyData2.png)
+
+アーカイブされたサード パーティの特定の種類のデータを検索するには、検索クエリで **itemclass** メールボックス プロパティを使用します。 次のプロパティ:値の形式を使用します。
+
+```powershell
+itemclass:ipm.externaldata.<third-party data type>
+```
+
+サード パーティのデータ コネクタによってインポートされたアイテムには、サード パーティのデータ型に対応する値を持つ **itemclass** プロパティが含まれます。 たとえば、インポートしたアイテムの Subject プロパティで *contoso* という単語を含む Facebook データを検索するには、次のクエリを使用します。
+
+```powershell
+subject:contoso AND itemclass:ipm.externaldata.facebook*
+```
+
+さまざまな種類のサード パーティ製データ **のアイテム** クラス値の例を次に示します。
+
+| **サード パーティ製のデータ型** | **itemclass プロパティの値**   |
+|---------------------------|-------------------------------------|
+| Bloomberg メッセージ         | ipm.externaldata.bloombergmessage* |
+| CellTrust                 | ipm.externaldata.celltrust*        |
+| ピボット                     | ipm.externaldata.pivot*            |
+| WhatsApp Archiver         | ipm.externaldata.whatsapparchiver* |
+|||
+
+*itemclass プロパティの値* では、大文字と小文字は区別されません。 一般に、サード パーティのデータ型の名前 (スペースなし) の後にワイルドカード ( * ) 文字を使用します。
+
+電子情報開示検索クエリの作成の詳細については、「電子情報開示のキーワード クエリと [検索条件」を参照してください](keyword-queries-and-search-conditions.md)。
+
 ## <a name="data-connectors-in-the-us-government-cloud"></a>米国政府機関クラウドのデータ コネクタ
 
 前述したように、TeleMessage によって提供されるデータ コネクタは、米国政府機関のクラウドで利用できます。 次の表は、各 TeleMessage データ コネクタをサポートする特定の政府機関環境を示しています。 米国政府機関のクラウドの詳細については、「米国政府機関Microsoft 365[を参照してください](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy)。
 
 |TeleMessage データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android Archiver | はい | いいえ | いいえ |
-|AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Enterprise Number Archiver | はい | いいえ | いいえ |
-|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
-|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
-|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|WhatsApp Archiver | はい | いいえ | いいえ |
+|Android Archiver | はい | いいえ | なし |
+|AT&T SMS/MMS Network Archiver | はい | いいえ | なし |
+|Bell SMS/MMS Network Archiver | はい | いいえ | なし |
+|Enterprise Number Archiver | はい | いいえ | なし |
+|O2 SMS と Voice Network Archiver | はい         | いいえ | なし |
+|TELUS SMS ネットワーク アーカイブ | はい | いいえ | なし |
+|Verizon SMS/MMS Network Archiver | はい | いいえ | なし |
+|WhatsApp Archiver | はい | いいえ | なし |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする

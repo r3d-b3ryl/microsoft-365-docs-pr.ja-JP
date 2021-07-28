@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 監査ログの保持ポリシーは、Microsoft 365 の新しい高度な監査機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
-ms.openlocfilehash: 8df2e240440ad33ac82d926b63cc495d1aaef692
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: ce7ff5158327c7358d921021017382a3a719a809
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925153"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541039"
 ---
 # <a name="manage-audit-log-retention-policies"></a>監査ログの保持ポリシーを管理する
 
@@ -85,7 +85,7 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
 ### <a name="view-policies-in-the-dashboard"></a>ダッシュボードでポリシーを表示する
 
-監査ログの保持ポリシーはダッシュボードに一覧表示されます。 ダッシュボードにポリシーを表示する利点の 1 つは、**[優先度]** 列をクリックして、ポリシーが適用されている優先度のポリシーを一覧表示できることです。 前に説明したように、値が高いほど、高い優先度を示します。
+監査ログの保持ポリシーはダッシュボードに一覧表示されます。 ダッシュボードにポリシーを表示する利点の 1 つは、**[優先度]** 列をクリックして、ポリシーが適用されている優先度のポリシーを一覧表示できることです。 前に説明したように、値が低いほど、高い優先度を示します。
 
 ![監査保持ポリシー ダッシュボードの [優先度] 列](../media/AuditLogRetentionDashboardPriority.png)
 

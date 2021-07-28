@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 構成パッケージを仮想デスクトップ インフラストラクチャ (VDI) デバイスに展開して、エンドポイント データ損失防止サービスMicrosoft 365オンボーディングします。
-ms.openlocfilehash: 64d9bfed3d1d5600b5843c697e894577f83527fe
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 1e4987ba2d261c715395ed1869f597da91b5cfed
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226877"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567322"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
+# <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ デバイスのオンボード
 
 **適用対象:**
 - [Microsoft 365エンドポイント データ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
@@ -33,7 +33,7 @@ ms.locfileid: "53226877"
 
 ## <a name="onboard-vdi-devices"></a>オンボード VDI デバイス
 
-Microsoft 365エンドポイント データ損失防止は、永続的でない VDI セッションオンボーディングをサポートします。
+Microsoft 365エンドポイント データ損失防止は、永続的でない仮想デスクトップ インフラストラクチャ (VDI) セッションオンボーディングをサポートします。
 
 > [!NOTE]
 > 永続的でない VDI セッションをオンボードするには、VDI デバイスが 1809 以上Windows 10必要があります。
@@ -140,7 +140,7 @@ DISM コマンドとオフライン サービスの詳細については、以�
 
 5. 通常と同じ方法で、ゴールデン/マスター イメージを再シールします。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [グループ ポリシー Windows 10デバイスのオンボード](dlp-configure-endpoints-gp.md)
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)

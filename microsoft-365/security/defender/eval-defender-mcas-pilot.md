@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e061bf213ee929f91a48b03c71b9654a7ea76b8c
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 672b01258c68f1cbcbfe3e2315c4b7cbcb36021e
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458046"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587947"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>パイロット Microsoft Cloud App SecurityとMicrosoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "53458046"
 
 この記事は、ユーザーの評価環境をセットアップするプロセスの手順[3/3](eval-defender-mcas-overview.md) Microsoft Cloud App Security。 このプロセスの詳細については、「概要」の記事を [参照してください](eval-defender-mcas-overview.md)。
 
-次の手順を使用して、パイロットのセットアップと構成を行Microsoft Cloud App Security。
+次の手順を使用して、パイロットをセットアップして構成Microsoft Cloud App Security。
 
 
 ![パイロットの手順Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-pilot-steps.png)
@@ -81,7 +81,9 @@ SaaS アプリをMicrosoft Cloud App Securityする最初の手順は、これ�
 - [管理検疫でファイルを保護する](/cloud-app-security/use-case-admin-quarantine)
 - [リスクの高いアクション時にステップ アップ認証を要求する](/cloud-app-security/tutorial-step-up-authentication)
 
-## <a name="next-steps"></a>次の手順
+データの高度な検索の詳細についてはMicrosoft Cloud App Securityビデオを参照[してください](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa)。
+
+## <a name="next-steps"></a>次のステップ
 
 [パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う](eval-defender-investigate-respond.md)
 

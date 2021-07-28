@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: コンテンツ コラボレーションの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: d403f533fd69ee47fb48907f11d4752985daea1a
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: 14d3449faff16893cd74ed1618557092d3347dc5
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415625"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567490"
 ---
 # <a name="content-collaboration--people-experiences"></a>コンテンツのコラボレーション – ユーザー エクスペリエンス
 
@@ -130,11 +130,11 @@ Microsoft OneDriveおよびビジネス 向けSharePointは、ユーザーがデ
 
 :::image type="content" source="../../media/emailattachments.png" alt-text="電子メールの添付ファイルの使用。":::
 
-1. **ヘッダー:** メールで添付ファイルを使用するユーザーの割合を強調表示します。メールに保存されていないユーザーは、OneDriveまたはSharePoint。
+1. **ヘッダー:** オンライン ファイルに保存されていないメールで添付ファイルを使用するユーザーの割合を強調表示します。
 2. **本文:** コラボレーションとセキュリティの観点からオンライン ファイルへのリンクを共有する価値に関する情報を提供します。
-3. **視覚化:** 視覚化の内訳は、メールにコンテンツを添付しているユーザーがさまざまなモード (OneDrive または SharePoint 上のファイル、オンライン ファイルへのリンク、電子メールに埋め込まれたリンク) を使用している範囲を表すものです。
+3. **視覚化:** 視覚化の内訳は、メールにコンテンツを添付しているユーザーがさまざまなモード (オンライン ファイルに保存されていないファイル、オンライン ファイルへのリンク) を使用している範囲を表すものです。
       - **ファイルの添付:** バーの青い (色付き) 部分とバーの分数 (分子/分母) は、電子メールで添付ファイルを使用しているユーザーの割合を表します。
-        - Numerator: 過去 28 日以内に OneDrive または SharePointに保存されたメールにファイルを添付するユーザーの数。
+        - Numerator: 過去 28 日以内にオンライン ファイルに保存されなかった電子メールにファイルを添付するユーザーの数。
         - 分母: 過去 28 日以内に Exchange、OneDrive、SharePoint、または両方にアクセスしたユーザーの数。
       - **オンライン ファイルへのリンク:** バーの青い (色付き) 部分とバーの分数 (分子/分母) は、添付ファイルを使用し、電子メール内のファイルへのリンクを添付するユーザーの割合を表します。
         - Numerator: 過去 28 日以内にオンライン ファイルへのリンクをメールに添付するユーザーの数。

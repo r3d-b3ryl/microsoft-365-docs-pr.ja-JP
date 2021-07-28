@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
-ms.openlocfilehash: e87757f22cc76bf681058ab453bdfdf60c6c64c9
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d53c95ac636af38d458c1259f8d75c1e59f9d775
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542371"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587923"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
 
 > [!NOTE]
 > この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウント情報がMicrosoft 365 Lighthouse、この記事の指示に従ってサインアップしてください。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - Microsoft 365 Lighthouseは、顧客テナントだけでなくパートナー テナントに展開されますが、ユーザーと顧客のテナントが Microsoft 365 Lighthouse 要件に記載されている &mdash; [要件を満たしていることを確認します](m365-lighthouse-requirements.md)。
 
@@ -49,7 +49,7 @@ ms.locfileid: "53542371"
 1. [購入 **] を選択します**。
 
     > [!NOTE]
-    > Microsoft 365 Lighthouseに 1 つのライセンスが必要です。 追加のユーザーごとのライセンスは必要ありません。 
+    > Microsoft 365 Lighthouseテナントにのみ 1 つのライセンスが必要です。 パートナーに追加のユーザーごとのライセンスは必要ありません。また、顧客テナントMicrosoft 365 Lighthouseライセンスは必要ありません。 
 
     テナントにMicrosoft 365 Lighthouseが正常に追加されたことを確認するには、Microsoft 365 Lighthouseの [製品の請求>を探Microsoft 365 管理センター。 
 
@@ -60,7 +60,7 @@ ms.locfileid: "53542371"
     > [!NOTE]
     > サインアップが完了すると、顧客データが顧客データに表示されるのに最大で 48 時間Microsoft 365 Lighthouse。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ポータル Microsoft 365 Lighthouseの構成](m365-lighthouse-configure-portal-security.md) 
 

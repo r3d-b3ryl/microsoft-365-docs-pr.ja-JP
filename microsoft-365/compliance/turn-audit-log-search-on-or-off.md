@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: 管理者が監査ログを検索する機能を有効または無効にするには、Microsoft 365 コンプライアンス センターの監査ログ検索機能を有効または無効にする方法を示します。
-ms.openlocfilehash: dd39b883036ce6060aef71c6a927c03f391d827f
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 8da6ba3f8dc9fbc7564b7bd71e71c542cb118057
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341498"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567550"
 ---
 # <a name="turn-auditing-on-or-off"></a>監査のオンとオフを切り替える
 
-Microsoft 365 および Office 365 Enterprise 組織では、監査ログは既定でオンになっています。 Microsoft 365 コンプライアンス センター で監査を有効にすると、組織のユーザーと管理者のアクティビティが監査ログに記録され、ユーザーに割り当てられたライセンスに応じて 90 日間、最大 1 年間保持されます。 ただし、監査ログ データを記録および保持しない理由が組織にある場合があります。 このような場合、グローバル管理者は、管理者が監査をオフにMicrosoft 365。
+監査ログは、エンタープライズ組織と組織のMicrosoft 365既定Office 365オンになります。 ただし、新しい組織または組織Microsoft 365をOffice 365、組織の監査状態を確認する必要があります。 手順については、この記事の [「組織の](#verify-the-auditing-status-for-your-organization) 監査状態を確認する」セクションを参照してください。 
 
-新しい組織または組織Microsoft 365 Office 365、組織の監査状態を確認できます。 手順については、この記事の [「組織の](#verify-the-auditing-status-for-your-organization) 監査状態を確認する」セクションを参照してください。
+Microsoft 365 コンプライアンス センター で監査を有効にすると、組織のユーザーと管理者のアクティビティが監査ログに記録され、ユーザーに割り当てられたライセンスに応じて 90 日間、最大 1 年間保持されます。 ただし、監査ログ データを記録および保持しない理由が組織にある場合があります。 このような場合、グローバル管理者は、管理者が監査をオフにMicrosoft 365。
 
 > [!IMPORTANT]
 > Microsoft 365 で監査をオフにした場合、Office 365 管理アクティビティ API または Azure Sentinel を使用して組織の監査データにアクセスすることはできません。 この記事の手順に従って監査をオフにした場合、Microsoft 365 コンプライアンス センター を使用して監査ログを検索したり、Exchange Online PowerShell で **Search-UnifiedAuditLog** コマンドレットを実行したりすると、結果は返されません。 つまり、監査ログは、管理アクティビティ API または Azure Sentinel Office 365使用できません。
@@ -97,7 +97,7 @@ Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
-3. しばらくすると、監査が無効 (無効) になっていることを確認します。 これを行うには次に示す 2 つの方法があります。
+3. しばらくすると、監査が無効 (無効) になっていることを確認します。 このようにするには、次の 2 つの方法があります。
 
     - PowerShell Exchange Onlineで、次のコマンドを実行します。
 

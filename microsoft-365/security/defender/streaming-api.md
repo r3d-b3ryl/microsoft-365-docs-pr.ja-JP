@@ -1,6 +1,6 @@
 ---
-title: Defender イベントMicrosoft 365ストリームする
-description: 詳細ハンティング イベントをイベント ハブまたは Azure ストレージ アカウントにストリームするように Defender をMicrosoft 365する方法について説明します。
+title: ストリームMicrosoft 365 Defenderイベント
+description: 高度なハンティング イベントMicrosoft 365 Defenderイベント ハブまたは Azure ストレージ アカウントにストリーミングするように構成する方法について説明します。
 keywords: raw data export, streaming API, API, Event hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fad3dd64c9acf079bd8da778d417240c44031569
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 431fd1271bf826ded53f88818741c5bbaa61e9b5
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772472"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588115"
 ---
 # <a name="streaming-api"></a>ストリーミング API
 
@@ -34,16 +34,16 @@ ms.locfileid: "52772472"
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>高度なハンティング イベントをイベント ハブまたは Azure ストレージ アカウントにストリーミングします。
 
-Microsoft 365Defender は、高度なハンティング[](../defender/advanced-hunting-overview.md)を通じて使用可能[](/azure/event-hubs/)なすべてのイベントをイベント ハブや Azure ストレージ アカウント[にストリーミングできます](/azure/event-hubs/)。
+Microsoft 365 Defenderは、高度なハン[ティングを](../defender/advanced-hunting-overview.md)通じてイベント[ハブや](/azure/event-hubs/)Azure ストレージ アカウントへのストリーミング[イベントをサポートします](/azure/event-hubs/)。
 
-
+ストリーミング API の詳細Microsoft 365 Defenderビデオを参照[してください](https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga)。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
 トピック | 説明
 :---|:---
-[イベントを Azure イベント ハブにストリーミングする](streaming-api-event-hub.md)| テナントでストリーミング API を有効にし、Microsoft 365 Defender を構成して高度[](../defender/advanced-hunting-overview.md)なハンティングをイベント ハブにストリーミングする方法について説明します。
-[Azure ストレージ アカウントにイベントをストリーミングする](streaming-api-storage.md)| テナントでストリーミング API を有効にし、Microsoft 365 Defender を構成して[](advanced-hunting-overview.md)Azure ストレージ アカウントに高度なハンティングをストリーミングする方法について説明します。
+[イベントを Azure イベント ハブにストリーミングする](streaming-api-event-hub.md)| テナントでストリーミング API を有効にし、高度なMicrosoft 365 Defenderをイベント ハブにストリーミングする方法[を](../defender/advanced-hunting-overview.md)構成する方法について説明します。
+[Azure ストレージ アカウントにイベントをストリーミングする](streaming-api-storage.md)| テナントでストリーミング API を有効にし、高度なMicrosoft 365 Defenderを Azure[](advanced-hunting-overview.md)ストレージ アカウントにストリーミングするように構成する方法について説明します。
 
 
 ## <a name="related-topics"></a>関連項目

@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 83f269a13a54ee38b7e7a464d794d87ddbd7b520
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9a2fa36d7902c66e1ac40f0ecd07c0db38752e8d
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289933"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567502"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 
@@ -38,7 +38,7 @@ ms.locfileid: "53289933"
 
 クライアントの動作ブロックは、Defender [](behavioral-blocking-containment.md) for Endpoint の動作ブロックと格納機能のコンポーネントです。 デバイス (クライアントまたはエンドポイントとも呼ばれます) で疑わしい動作が検出されると、アーティファクト (ファイルやアプリケーションなど) が自動的にブロック、チェック、修復されます。 
 
-:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="クラウドとクライアントの保護":::
+:::image type="content" alt-text="クラウドとクライアントの保護" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 ウイルス対策保護は、クラウド保護と組み合わせた場合に最適です。
 
@@ -46,7 +46,7 @@ ms.locfileid: "53289933"
 
 [Microsoft Defender ウイルス対策、](microsoft-defender-antivirus-in-windows-10.md)不審な動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃など、デバイスで検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと適切な動作をミリ秒単位で区別し、各成果物を分類します。 ほぼリアルタイムで、アーティファクトが悪意のあると判明すると、デバイス上でブロックされます。 
 
-疑わしい動作が検出されると、アラートが生成[](alerts-queue.md)され、Microsoft 365 Defender ポータル[(以前](microsoft-defender-security-center.md)は Microsoft Defender セキュリティ センター) に表示されます。
+疑わしい動作が検出されると、アラートが生成[](alerts-queue.md)され、Microsoft 365 Defender ポータル[(以前](microsoft-defender-security-center.md)はMicrosoft 365 Defender)。
 
 クライアントの動作ブロックは、攻撃の開始を防ぐだけでなく、実行を開始した攻撃を停止するのに役立つため、効果的です。 また、フィードバック [ループブロック](feedback-loop-blocking.md) (別の動作ブロックと格納機能) を使用すると、組織内の他のデバイスに対する攻撃が防止されます。
 
@@ -60,13 +60,13 @@ ms.locfileid: "53289933"
 |実行 | `Behavior:Win32/Execution.*!ml` |
 |永続性 | `Behavior:Win32/Persistence.*!ml` |
 |特権エスカレーション | `Behavior:Win32/PrivilegeEscalation.*!ml` |
-|Defense Evasion | `Behavior:Win32/DefenseEvasion.*!ml` |
-|資格情報アクセス | `Behavior:Win32/CredentialAccess.*!ml` |
+|防御回避 | `Behavior:Win32/DefenseEvasion.*!ml` |
+|資格情報へのアクセス | `Behavior:Win32/CredentialAccess.*!ml` |
 |Discovery | `Behavior:Win32/Discovery.*!ml` |
 |横方向の動き | `Behavior:Win32/LateralMovement.*!ml` |
-|Collection | `Behavior:Win32/Collection.*!ml` |
+|コレクション | `Behavior:Win32/Collection.*!ml` |
 |コマンドとコントロール | `Behavior:Win32/CommandAndControl.*!ml` |
-|Exfiltration | `Behavior:Win32/Exfiltration.*!ml` |
+|流出 | `Behavior:Win32/Exfiltration.*!ml` |
 |影響 | `Behavior:Win32/Impact.*!ml` |
 |未分類 | `Behavior:Win32/Generic.*!ml` |
 

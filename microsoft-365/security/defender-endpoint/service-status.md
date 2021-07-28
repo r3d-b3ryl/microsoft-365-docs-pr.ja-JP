@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1b4545daace5df1a1a9c6e827f7d8f1b522a690c
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 77d487fd21b5619799c468c658bb4ddb1df8ea11
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687627"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588091"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>Microsoft Defender for Endpoint サービスの正常性を確認する
 
@@ -31,9 +31,7 @@ ms.locfileid: "51687627"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-
-
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
 
 **サービス正常性は** 、Defender for Endpoint サービスの現在の状態に関する情報を提供します。 サービスの正常性が正常か、現在の問題が発生した場合に確認できます。 問題がある場合は、問題が検出された時期、根本的な予備的な原因、予想される解決時間などの情報が表示されます。
 
@@ -47,6 +45,7 @@ ms.locfileid: "51687627"
 - **状態履歴**
 
 ## <a name="current-status"></a>現在の状態
+
 [ **現在の状態]** タブには、Defender for Endpoint サービスの現在の状態が表示されます。 サービスがスムーズに実行されている場合は、正常なサービスの正常性が表示されます。 問題が見られる場合は、問題に関するより良い洞察を得るために、次のサービスの詳細が表示されます。
 
 - 問題が検出された日時
@@ -54,7 +53,7 @@ ms.locfileid: "51687627"
 - 更新時間
 - 影響の概要
 - 予備的な根本原因
-- 次の手順
+- 次のステップ
 - 予想される解決時間
 
 問題の進行状況に関する更新プログラムは、問題が解決されるにつれてページに反映されます。 更新された推定解決時間や次の手順などの情報に関する更新プログラムが表示されます。
@@ -62,7 +61,9 @@ ms.locfileid: "51687627"
 問題が解決すると、[状態の履歴] タブに **記録** されます。
 
 ## <a name="status-history"></a>状態履歴
+
 [ **状態の履歴]** タブには、表示および解決されたすべての履歴問題が反映されます。 解決された問題の詳細と、解決中に含まれるその他の情報が表示されます。
 
 ### <a name="related-topic"></a>関連トピック
+
 - [セキュリティ操作ダッシュボードの表示](security-operations-dashboard.md)

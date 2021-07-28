@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 9a56167f0025ec42f4fd441886f83026c1bf23d6
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: fc4cdbca28b07ab4d5a75c761d3558595df4cd6f
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339540"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567514"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>シミュレートされた攻撃を通じて Microsoft Defender for Endpoint を体験する 
 
@@ -59,7 +59,7 @@ ms.locfileid: "53339540"
 
 2. 選択したシナリオで提供される対応するチュートリアル ドキュメントをダウンロードして読み取る。
 
-3. シミュレーション ファイルをダウンロードするか、チュートリアルのヘルプ シミュレーションに移動してシミュレーション  >  **スクリプト&します**。 テスト デバイスでファイルまたはスクリプトをダウンロードすることもできますが、必須ではありません。
+3. シミュレーション ファイルをダウンロードするか、シミュレーション スクリプトをコピーするには、評価チュートリアル &シミュレーション&  >  **移動します**。 テスト デバイスでファイルまたはスクリプトをダウンロードすることもできますが、必須ではありません。
 
 4. チュートリアル ドキュメントの指示に従って、テスト デバイスでシミュレーション ファイルまたはスクリプトを実行します。
 
@@ -70,7 +70,7 @@ ms.locfileid: "53339540"
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [デバイスのオンボード](onboard-configure.md)
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)

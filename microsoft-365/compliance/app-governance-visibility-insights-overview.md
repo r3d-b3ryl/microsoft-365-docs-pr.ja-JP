@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可視性と分析情報について学習する。
-ms.openlocfilehash: ee485c972193c515bafec55f58a7a89aa1f567f1
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: eac4cd67591d261843f0d3efe476db027c58db91
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420260"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541087"
 ---
 # <a name="learn-about-visibility-and-insights"></a>可視性と分析情報について学習する
 
@@ -27,9 +27,9 @@ ms.locfileid: "53420260"
 
 Microsoft アプリ ガバナンスを使用すると、Microsoft 365 アプリケーション エコシステムに関する可視性と意味のある分析情報をすばやく得ることができます。 管理者の注意が必要なテナント内のアラートとアプリの概要を提供するアプリ ガバナンス ダッシュボードから開始します。
 
-アプリ ガバナンスの可視性と分析情報を使用すると、次の情報を確認できます:
+アプリ ガバナンスの可視性と分析情報を使用すると、次の情報を確認できます。
 
-- Microsoft Graph API を介して Microsoft 365 データにアクセスする OAuth 対応アプリの一覧です。
+- テナント内の Microsoft Graph API を介して Microsoft 365 データにアクセスする OAuth 対応アプリの一覧です。
 - 反応または対応できる豊富なアプリ アクティビティのビュー。
 
 >[!Note]
@@ -37,21 +37,6 @@ Microsoft アプリ ガバナンスを使用すると、Microsoft 365 アプリ�
 >
 
 可視性と分析情報に必要な管理者ロールの概要については、「[管理者ロール](app-governance-get-started.md#administrator-roles)」を参照してください。
-
-<!--
-From messaging doc, page 21:
-
-View M365 App List & Metadata
-View M365 App List of Consented Users
-View M365 App Permissions
-View M365 App Permission Usage
-View Over permissioned Apps
-Aggregate M365 API Usage Data by Workload (count, download/upload)
-Per-App M365 API Usage Data by Workload (count, download/upload)
-Per-User M365 API Usage Data by Workload (count, download/upload)
-M365 API Usage Data For High-Value/Classified Assets (count, download/upload)
-M365 API Error Analysis per App
--->
 
 アプリ ガバナンスを使用すると、次の情報を確認できます:
 
@@ -71,8 +56,8 @@ M365 API Error Analysis per App
 - アプリにアクセスしているユーザーの累積ビュー。
 - アラートの分析情報。
 - ポリシー リストの分析情報。
-<!-->
-- アプリ ガバナンス ポータルの MCAS で作成されたポリシー。
+<!--
+- Policies created in MCAS in the app governance portal.
 -->
 - アプリ ガバナンスにおいて、MCAS で生成される OAuth のアラート。
 

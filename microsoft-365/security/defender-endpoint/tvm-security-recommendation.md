@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fa9986d9ddab70f050055ce2e3b98357c2ab22c5
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 6243444c6dca31608512dbe9e6183cc7355ef55a
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567154"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588019"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>セキュリティに関する推奨事項 - 脅威と脆弱性の管理
 
@@ -35,24 +35,22 @@ ms.locfileid: "53567154"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 組織内で特定されたサイバーセキュリティの弱点は、アクション可能なセキュリティ推奨事項にマップされ、影響によって優先順位が付けされます。 優先順位付けされた推奨事項は、脆弱性を軽減または修復し、コンプライアンスを推進する時間を短縮するのに役立ちます。
 
 各セキュリティ推奨事項には、アクション可能な修復手順が含まれています。 タスクの管理を支援するために、推奨事項は、タスクの管理と管理を使用Microsoft Intune送信Microsoft Endpoint Configuration Manager。 脅威の状況が変化すると、環境から情報を継続的に収集する際に、推奨事項も変更されます。
 
->[!TIP]
->新しい脆弱性イベントに関する電子メールを取得するには [、「Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
+> [!TIP]
+> 新しい脆弱性イベントに関する電子メールを取得するには [、「Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>仕組み
 
 組織内の各デバイスは、3 つの重要な要素に基づいてスコア付けされます。
 
-- **脅威**—組織のデバイスの脆弱性と悪用の特性と侵害履歴。 これらの要因に基づいて、セキュリティに関する推奨事項には、アクティブなアラート、継続的な脅威キャンペーン、対応する脅威分析レポートへの対応するリンクが表示されます。
-
-- **侵害の可能性**- 組織のセキュリティ体制と脅威に対する回復力
-
-- **ビジネス価値**- 組織の資産、重要なプロセス、および知的財産
+- **脅威**: 組織のデバイスの脆弱性と悪用の特徴と侵害履歴。 これらの要因に基づいて、セキュリティに関する推奨事項には、アクティブなアラート、継続的な脅威キャンペーン、対応する脅威分析レポートへの対応するリンクが表示されます。
+- **侵害の可能性**: 組織のセキュリティ体制と脅威に対する回復力。
+- **ビジネス価値**: 組織の資産、重要なプロセス、および知的財産。
 
 ## <a name="navigate-to-the-security-recommendations-page"></a>[セキュリティの推奨事項] ページに移動します。
 
@@ -84,14 +82,15 @@ ms.locfileid: "53567154"
 
 露出デバイスグラフの **色は** 、傾向の変化に合って変化します。 公開されているデバイスの数が増えている場合、色は赤に変わります。 公開されているデバイスの数が減った場合、グラフの色は緑に変わります。
 
->[!NOTE]
->脅威と脆弱性の管理は、30 日前まで使用していた **デバイスを示** します。 これは、他の Microsoft Defender for Endpoint とは異なります。デバイスが 7 日間以上使用されていない場合は、"非アクティブ" 状態になっています。
+> [!NOTE]
+> 脅威と脆弱性の管理は、30 日前まで使用していた **デバイスを示** します。 これは、他の Microsoft Defender for Endpoint とは異なります。デバイスが 7 日間以上使用されていない場合は、"非アクティブ" 状態になっています。
 
 ![セキュリティに関する推奨事項のランディング ページの例。](images/tvmsecrec-updated.png)
 
 ### <a name="icons"></a>アイコン
 
 役に立つアイコンは、次の点に注意を迅速に呼び出します。
+
 - ![ターゲットに当たる矢印](images/tvm_alert_icon.png) 有効なアラートの可能性
 - ![赤いバグ](images/tvm_bug_icon.png) 関連するパブリックエクスプロイト
 - ![電球](images/tvm_insight_icon.png) 推奨事項の分析情報

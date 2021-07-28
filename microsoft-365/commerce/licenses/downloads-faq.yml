@@ -14,12 +14,12 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: ダウンロードに関してよく寄せられるMicrosoft 365 管理センター質問です。
-  ms.openlocfilehash: a01c46bb4ac8072fe7293abbc016a9b2bb8e377d
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: 406e25fa4d6aac05ecbdaa05f407626cff9d112e
+  ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
   ms.translationtype: MT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53542489"
+  ms.locfileid: "53567346"
 title: よく寄せられる質問のダウンロード
 summary: ''
 sections:
@@ -104,7 +104,7 @@ sections:
   - question: >
       この FAQ で説明されているトピックのサポートはどこで確認できますか?
     answer: >
-      ビデオを含むトレーニング リソースの詳細については [、「Microsoft Volume Licensing Service Center のトレーニングとリソース」を参照してください](/licensing/existing-customer/vlsc-training-and-resources?activetab=vlsc-tab%3aprimaryr3)。
+      ビデオを含むトレーニング リソースの詳細については [、「Microsoft Volume Licensing Service Center のトレーニングとリソース」を参照してください](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)。
   - question: >
       Microsoft サポートへの問い合わせ方法
     answer: >
