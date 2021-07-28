@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5ca147c9e69168b2f15aa69bba8728567b782fa9
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 945bdaa98aba166c5d08109a586ca277bfa31f87
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984462"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619533"
 ---
 # <a name="machine-resource-type"></a>コンピューター リソースの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "52984462"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -76,7 +76,7 @@ rbacGroupName | String | コンピューター グループ名。
 riskScore | Null 許容列挙 | Microsoft Defender for Endpoint によって評価されるリスク スコア。 指定できる値は、'None'、'Informational'、'Low'、'Medium'、および 'High' です。
 exposureScore | Null 許容列挙 | [Microsoft](tvm-exposure-score.md) Defender for Endpoint によって評価される露出スコア。 指定できる値は、'None'、'Low'、'Medium'、および 'High' です。
 aadDeviceId | Null 許容表現 Guid | AAD デバイス ID ( [コンピューターが](machine.md) AAD 参加している場合)。
-machineTags | String コレクション | コンピューター タグ [の](machine.md) セット。
+machineTags | 文字列コレクション | コンピューター タグ [の](machine.md) セット。
 exposureLevel | Null 許容列挙 | Microsoft Defender for Endpoint によって評価される露出レベル。 指定できる値は、'None'、'Low'、'Medium'、および 'High' です。
 deviceValue | Null 許容列挙 | デバイス [の値](tvm-assign-device-value.md)です。 指定できる値は、'Normal'、'Low'、および 'High' です。
 ipAddresses | IpAddress コレクション | ***IpAddress オブジェクトの*** セット。 「Get [machines API」を参照してください](get-machines.md)。

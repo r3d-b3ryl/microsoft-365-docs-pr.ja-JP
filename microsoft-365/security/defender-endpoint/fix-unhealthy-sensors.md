@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint で不健康なセンサーを修正する
+title: Microsoft Defender for Endpoint で問題が発生したセンサーの修正
 description: サービスがデバイスからデータを受信するために、構成が正しく設定されていないか非アクティブとして報告されているデバイス センサーを修正します。
 keywords: 誤構成、非アクティブ、センサーの修正、センサーの正常性、センサー データなし、センサー データ、通信障害、通信障害
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: c4cdc80170b49a111f476d2d17222c41e2b5c55f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 76b701243b2c458ad623f7e39967bf8d2595bbc5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935367"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619605"
 ---
-# <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で不健康なセンサーを修正する
+# <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で問題が発生したセンサーの修正
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

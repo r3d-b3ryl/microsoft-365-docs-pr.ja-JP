@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd7aa2af2c7500bbe02108bb8aa5dee452ff2998
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 35a78870f3b1ecbe1d15790c033db1b59bf93a83
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771599"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621561"
 ---
 # <a name="recommendation-resource-type"></a>おすすめリソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "52771599"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -61,9 +61,9 @@ recommendedVersion | String | 推奨バージョン
 recommendationCategory | String | おすすめカテゴリ。 使用できる値は、"Accounts"、"Application"、"Network"、"OS"、"SecurityStack" です。
 subCategory | String | おすすめサブカテゴリ
 severityScore | Double | 組織の Microsoft Secure Score for Devices に対する構成の潜在的な影響 (1-10)
-publicExploit | Boolean | パブリックエクスプロイトが利用可能 
-activeAlert | Boolean | アクティブなアラートは、この推奨事項に関連付けられている
-associatedThreats | String collection | 脅威分析レポートは、この推奨事項に関連付けられている
+publicExploit | ブール型 | パブリックエクスプロイトが利用可能 
+activeAlert | ブール型 | アクティブなアラートは、この推奨事項に関連付けられている
+associatedThreats | 文字列コレクション | 脅威分析レポートは、この推奨事項に関連付けられている
 remediationType | String | 修復の種類。 指定できる値は、"ConfigurationChange"、"Update"、"Upgrade"、"Uninstall" です。
 状態 | 列挙 | 推奨事項の例外の状態。 指定できる値は、"Active" と "Exception" です。
 configScoreImpact | Double | デバイスの Microsoft Secure Score の影響

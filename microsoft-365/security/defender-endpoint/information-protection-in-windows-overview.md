@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d68f879fe8fd9379b286c106ed9229895f91b9a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ec329a4e8fe22992d155e0564e83e23f1d8d6cac
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841110"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618981"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows における情報保護の概要
 
@@ -32,22 +32,20 @@ ms.locfileid: "52841110"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 情報保護は、Microsoft 365 Enterpriseの生産性を可能にしながら、機密データを安全に保つインテリジェントな保護を提供する、Microsoft 365 Enterpriseスイートの不可欠な部分です。
 
-
 >[!TIP]
-> Microsoft Defender for Endpoint と Microsoft Information Protection の統合方法に関するブログ記事を参照して、デバイス上の機密データを検出、保護、監視[Windowsしてください](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
+> Microsoft Defender for Endpoint と Microsoft Information Protectionデバイス上の機密データを検出、保護、監視する方法に関するブログ記事を[Windowsしてください](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
 
 Defender for Endpoint は、データの検出、分類、および保護に次のメソッドを適用します。
 
 - **データ検出**- 危険にさらされているデバイスWindowsデータを特定する
-- **データ分類**- コンプライアンス センターで管理される一般的な Microsoft Information Protection (MIP) ポリシーに基づいてデータOffice 365自動的&分類します。 自動分類を使用すると、エンド ユーザーが手動で分類していなくても、機密データを保護できます。
-
+- **データの分類**- コンプライアンス センターで管理される共通Microsoft Information Protection (MIP) ポリシーに基Office 365データ&分類します。 自動分類を使用すると、エンド ユーザーが手動で分類していなくても、機密データを保護できます。
 
 ## <a name="data-discovery-and-data-classification"></a>データ検出とデータ分類
 
@@ -82,8 +80,8 @@ Defender for Endpoint は、機密ラベルを持つファイルと機密情報�
 
 デバイスをクリックすると、このデバイスで観察されたファイルの一覧が表示され、そのデバイスの感度ラベルと情報の種類が表示されます。
 
->[!NOTE]
->Azure Information Protection Dashboard Discovery が検出されたファイルを反映するには、約 15 ~ 20 分かかります。
+> [!NOTE]
+> Azure Information Protection Dashboard Discovery が検出されたファイルを反映するには、約 15 ~ 20 分かかります。
 
 ## <a name="log-analytics"></a>Log Analytics
 
@@ -95,16 +93,13 @@ Azure portal で Azure Log Analytics を開き、クエリ ビルダー (標準�
 
 Defender for Endpoint データを表示するには、次のクエリを実行します。
 
-```
+```text
 InformationProtectionLogs_CL
 | where Workload_s == "Windows Defender"
 ```
 
-**前提条件:**
+### <a name="prerequisites"></a>前提条件
 
 - お客様は Azure Information Protection のサブスクリプションを持っている必要があります。
 - Azure Information Protection の統合を次のMicrosoft Defender セキュリティ センター。
-    - [詳細]**設定** に移動Microsoft Defender セキュリティ センター、[全般] の [**詳細設定] 設定** を **クリックします**。
-
-
-
+  - [詳細]**設定** に移動Microsoft Defender セキュリティ センター、[全般] の [**詳細設定] 設定** を **クリックします**。

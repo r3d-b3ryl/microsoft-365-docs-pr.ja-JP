@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 75b62f1bada67c30dc05237a284f8b64c3c7072d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1666470056b0ec76df6b1fc797d6809823163c7b
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771383"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618813"
 ---
 # <a name="indicator-resource-type"></a>インジケーター リソースの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "52771383"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -41,35 +41,34 @@ ms.locfileid: "52771383"
 
 - ポータルの対応 [する [インジケーター] ページ](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) を参照してください。 
 
-メソッド|戻り値の型 |説明
+メソッド|戻り値の型|説明
 :---|:---|:---
-[インジケーターの一覧表示](get-ti-indicators-collection.md) | [インジケーター](ti-indicator.md) コレクション | インジケーター [エンティティを](ti-indicator.md) 一覧表示します。
-[インジケーターの送信](post-ti-indicator.md) | [インジケーター](ti-indicator.md) | Indicator エンティティを [送信または更新](ti-indicator.md) します。
-[インジケーターのインポート](import-ti-indicators.md) | [インジケーター](ti-indicator.md) コレクション | インジケーター エンティティを [送信または](ti-indicator.md) 更新します。
-[インジケーターの削除](delete-ti-indicator-by-id.md) | コンテンツはありません | Indicator エンティティ [を削除](ti-indicator.md) します。
-
+[インジケーターの一覧表示](get-ti-indicators-collection.md)|[インジケーター](ti-indicator.md) コレクション|インジケーター [エンティティを](ti-indicator.md) 一覧表示します。
+[インジケーターの送信](post-ti-indicator.md)|[インジケーター](ti-indicator.md)|Indicator エンティティを [送信または更新](ti-indicator.md) します。
+[インジケーターのインポート](import-ti-indicators.md)|[インジケーター](ti-indicator.md) コレクション|インジケーター エンティティを [送信または](ti-indicator.md) 更新します。
+[インジケーターの削除](delete-ti-indicator-by-id.md)|コンテンツはありません|Indicator エンティティ [を削除](ti-indicator.md) します。
 
 ## <a name="properties"></a>プロパティ
-プロパティ |  種類    |   説明
-:---|:---|:---
-id | String | Indicator エンティティ [の](ti-indicator.md) ID。
-indicatorValue | String | Indicator の [値](ti-indicator.md)です。
-indicatorType | 列挙 | インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"IpAddress"、"DomainName" および "Url" です。
-アプリケーション | String | インジケーターに関連付けられているアプリケーション。 
-action | 列挙 | インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"AlertAndBlock"、"Allowed" です。
-sourceType | 列挙 | "User" (ポータルからなど) ユーザーが作成したインジケーターの場合、API を介して自動アプリケーションを使用して送信された場合は "AadApp"。
-source | string | インジケーターを送信したユーザー/アプリケーションの名前。
-createdBy | String | インジケーターを送信したユーザー/アプリケーションの一意の ID。
-lastUpdatedBy | String | インジケーターを最後に更新したユーザー/アプリケーションの ID。
-creationTimeDateTimeUtc | DateTimeOffset | インジケーターが作成された日時。
-expirationTime | DateTimeOffset | インジケーターの有効期限。
-lastUpdateTime | DateTimeOffset | インジケーターが最後に更新された時刻。
-severity | 列挙 | インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。
-title | String | インジケーター のタイトル。
-説明 | String | インジケーターの説明。
-recommendedActions | String | インジケーターの推奨アクション。
-rbacGroupNames | 文字列の一覧 | インジケーターが公開され、アクティブな RBAC デバイス グループ名。 すべてのデバイスに公開されている場合の空のリスト。
 
+プロパティ|種類|説明
+:---|:---|:---
+id|String|Indicator エンティティ [の](ti-indicator.md) ID。
+indicatorValue|String|Indicator の [値](ti-indicator.md)です。
+indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"IpAddress"、"DomainName" および "Url" です。
+アプリケーション|String|インジケーターに関連付けられているアプリケーション。
+action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"AlertAndBlock"、"Allowed" です。
+sourceType|列挙|"User" (ポータルからなど) ユーザーが作成したインジケーターの場合、API を介して自動アプリケーションを使用して送信された場合は "AadApp"。
+source|string|インジケーターを送信したユーザー/アプリケーションの名前。
+createdBy|String|インジケーターを送信したユーザー/アプリケーションの一意の ID。
+lastUpdatedBy|String|インジケーターを最後に更新したユーザー/アプリケーションの ID。
+creationTimeDateTimeUtc|DateTimeOffset|インジケーターが作成された日時。
+expirationTime|DateTimeOffset|インジケーターの有効期限。
+lastUpdateTime|DateTimeOffset|インジケーターが最後に更新された時刻。
+severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。
+title|String|インジケーター のタイトル。
+description|String|インジケーターの説明。
+recommendedActions|String|インジケーターの推奨アクション。
+rbacGroupNames|文字列の一覧|インジケーターが公開され、アクティブな RBAC デバイス グループ名。 すべてのデバイスに公開されている場合の空のリスト。
 
 ## <a name="json-representation"></a>Json 表記
 

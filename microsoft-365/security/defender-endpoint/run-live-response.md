@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2a7daf18b1a1d791e7b92ded0a6b839bba1fd4c2
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 44047db74744514f9889a329aae992307fb85ac5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879702"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621789"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>デバイスでライブ応答コマンドを実行する
 
@@ -38,7 +38,7 @@ ms.locfileid: "52879702"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -64,58 +64,53 @@ ms.locfileid: "52879702"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可を選択する方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
 
-| アクセス許可の種類                    | アクセス許可           | アクセス許可の表示名                   |
-|------------------------------------|----------------------|-------------------------------------------|
-| アプリケーション                        | Machine.LiveResponse | 特定のコンピューターでライブ応答を実行する |
-| 委任 (職場または学校のアカウント) | Machine.LiveResponse | 特定のコンピューターでライブ応答を実行する |
+|アクセス許可の種類|アクセス許可|アクセス許可の表示名|
+|---|---|---|
+|アプリケーション|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
+|委任 (職場または学校のアカウント)|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
 
 ## <a name="http-request"></a>HTTP 要求
 
 ```HTTP
-POST
-https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliveresponse
+POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliveresponse
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前      | 型 | 説明                 |
-|---------------|----------|---------------------------------|
-| Authorization | String   | ベアラー\<token>\. 必須です。   |
-| Content-Type  | string   | application/json. Required. |
+|名前|種類|説明|
+|---|---|---|
+|Authorization|String|ベアラー\<token>\. 必須です。|
+|Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-| パラメーター | 型 | 説明                                                        |
-|---------------|----------|------------------------------------------------------------------------|
-| コメント       | 文字列   | アクションに関連付けるコメント。                                 |
-| コマンド      | 配列    | 実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。 |
+|パラメーター|種類|説明|
+|---|---|---|
+|コメント|文字列|アクションに関連付けるコメント。|
+|コマンド|配列|実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。|
 
-コマンド:
+**コマンド**:
 
-| コマンドの種類 | パラメーター                                                                          | 説明                                                                                                                      |
-|------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| PutFile      | キー: FileName  <br><br>  値: \<file name\>                                                                          | ライブラリからデバイスにファイルを置く。 ファイルは作業フォルダーに保存され、デバイスが既定で再起動すると削除されます。
-| RunScript    | キー: ScriptName<br>値: \<Script from library\> <br><br> キー: Args  <br> 値: \<Script arguments\>                          | デバイス上のライブラリからスクリプトを実行します。    <br><br>  Args パラメーターはスクリプトに渡されます。 <br><br> 10 分後のタイムアウト。     
-| GetFile      | キー: パス <br> 値: \<File path\>                                                        | デバイスからファイルを収集します。 注: パス内の円記号はエスケープする必要があります。                                                                      |
+|コマンドの種類|パラメーター|説明|
+|---|---|---|
+|PutFile|キー: FileName <p> 値: \<file name\>|ライブラリからデバイスにファイルを置く。 ファイルは作業フォルダーに保存され、デバイスが既定で再起動すると削除されます。
+|RunScript|キー: ScriptName <br> 値: \<Script from library\> <p> キー: Args <br> 値: \<Script arguments\>|デバイス上のライブラリからスクリプトを実行します。 <p>  Args パラメーターはスクリプトに渡されます。 <p> 10 分後のタイムアウト。|
+|GetFile|キー: パス <br> 値: \<File path\>|デバイスからファイルを収集します。 注: パス内の円記号はエスケープする必要があります。|
 
 ## <a name="response"></a>応答
 
--   成功した場合、このメソッドは 200 Ok を返します。
-    アクション エンティティ。 指定した ID を持つコンピューターが見つからない場合 - 404 Not Found。
+- 成功した場合、このメソッドは 200 Ok を返します。
+
+  アクション エンティティ。 指定した ID を持つコンピューターが見つからない場合 - 404 Not Found。
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request-example"></a>要求の例
 
 以下は、要求の例です。
 
 ```HTTP
-
-POST
-https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runliveresponse
-
-```
-**JSON**
+POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runliveresponse
 
 ```JSON
 {
@@ -148,7 +143,7 @@ https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e4
 }
 ```
 
-**応答**
+### <a name="response-example"></a>応答の例
 
 以下は、応答の例です。
 
@@ -206,11 +201,10 @@ HTTP/1.1 200 Ok
         }
     ]
 }
-
-
 ```
 
 ## <a name="related-topics"></a>関連項目
+
 - [コンピューター アクション API の取得](get-machineaction-object.md)
-- [ライブ応答の結果を取得する](get-live-response-result.md)
-- [コンピューターの操作をキャンセルする](cancel-machine-action.md)
+- [ライブ応答結果の取得](get-live-response-result.md)
+- [マシン アクションのキャンセル](cancel-machine-action.md)

@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 7826229ba67384137c033745a5b85e557fc9c4a7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 98e4c781f28f1a89eb3ba9878b65ef57d0e40ea8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933471"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619557"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpoint アラートに関連付けられているドメインを調査する
 
@@ -34,7 +34,7 @@ ms.locfileid: "51933471"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink)
 
 ドメインを調査して、エンタープライズ ネットワーク内のデバイスとサーバーが既知の悪意のあるドメインと通信しているのを確認します。
 
@@ -82,7 +82,7 @@ URL ビューでは、次のセクションから情報を確認できます。
 5. デバイス名をクリックすると、そのデバイスのビューにアクセスし、報告されたアラート、動作、およびイベントを引き続き調査できます。
 
 ## <a name="related-topics"></a>関連項目
-- [Microsoft Defender for Endpoint Alerts キューの表示と整理](alerts-queue.md)
+- [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
 - [Microsoft Defender for Endpoint アラートの調査](investigate-alerts.md)
 - [Microsoft Defender for Endpoint アラートに関連付けられたファイルを調査する](investigate-files.md)

@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 特定のグループにゲストが追加されるのを防ぐ方法について説明します。
-ms.openlocfilehash: 1db2055f3e546c05905dbf4c854333387112f06e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 83fb123a3512e767270cf69f6ff56813e27903d4
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538929"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621741"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>ゲストが特定のグループまたはチームにMicrosoft 365されるMicrosoft Teamsする
 
@@ -67,7 +67,22 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 検証は次のようになります。
     
 ![ゲスト グループのアクセスが False に設定されていることを示す PowerShell ウィンドウのスクリーンショット。](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
-  
+
+設定を切り替えて、特定のグループへのゲスト アクセスを許可する場合は、次のスクリプトを実行し、ゲスト アクセスを許可するグループの名前に ```<GroupName>``` 変更します。
+
+```PowerShell
+$GroupName = "<GroupName>"
+
+Connect-AzureAD
+
+$template = Get-AzureADDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}
+$settingsCopy = $template.CreateDirectorySetting()
+$settingsCopy["AllowToAddGuests"]=$True
+$groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
+$id = (get-AzureADObjectSetting -TargetType groups -TargetObjectId $groupID).id
+Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy -id $id
+```
+
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>ゲストのドメインに応じてゲスト アクセスを許可またはブロックする
 
 特定のドメインを使用しているゲストを許可またはブロックできます。 たとえば、ビジネス (Contoso) が別のビジネス (Fabrikam) と提携している場合は、Fabrikam を許可リストに追加して、ユーザーがそれらのゲストをグループに追加できます。

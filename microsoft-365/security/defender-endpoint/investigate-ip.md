@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: cb95deb890b52f0f5fde26a3a193181713b8ae5f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9d204c7ad9aaecd077f2bce462d650a4cfdbf06e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933831"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619545"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpoint アラートに関連付けられている IP アドレスを調査する
 
@@ -36,7 +36,7 @@ ms.locfileid: "51933831"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 デバイスと外部インターネット プロトコル (IP) アドレス間の通信の可能性を調べる。
 
@@ -87,7 +87,7 @@ IP アドレスの詳細は、登録の詳細 (利用可能な場合)、リバ�
 
 ## <a name="related-topics"></a>関連項目
 
-- [Microsoft Defender for Endpoint Alerts キューの表示と整理](alerts-queue.md)
+- [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
 - [Microsoft Defender for Endpoint アラートの調査](investigate-alerts.md)
 - [Microsoft Defender for Endpoint アラートに関連付けられたファイルを調査する](investigate-files.md)

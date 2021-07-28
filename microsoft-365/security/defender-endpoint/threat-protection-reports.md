@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint の脅威保護レポート
+title: Microsoft Defender for Endpoint の脅威に対する保護のレポート
 description: 脅威保護レポートを使用してアラートの検出、カテゴリ、重大度を追跡する
 keywords: アラート検出, ソース, カテゴリ別アラート, アラート重大度, アラート分類, 決定
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d32ab04f4acda60f65316719a4607c6c9bbd6447
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0c9c7dcbdcfb708763646f53ba52f825512e92a9
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688983"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619413"
 ---
-# <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の脅威保護レポート
+# <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の脅威に対する保護のレポート
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51688983"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 脅威保護レポートは、組織で生成されたアラートに関する高レベルの情報を提供します。 このレポートには、検出元、カテゴリ、重大度、状態、分類、および時間の間のアラートの決定を示す傾向情報が含まれています。
 
@@ -80,9 +80,6 @@ Section | 説明
 
 - **分類&決定**: 解決時にアラートを分類した方法、実際の脅威 (真のアラート) として分類したかどうか、または誤った検出 (誤ったアラート) として分類した方法を示します。 これらのカードには、解決されたアラートの決定も表示され、検出された実際の脅威の種類や、誤って検出された正当なアクティビティなどの追加の分析情報が提供されます。
 
-
- 
-
 ## <a name="filter-data"></a>データをフィルター処理する
 
 指定されたフィルターを使用して、特定の属性を持つアラートを含めるか除外します。
@@ -92,9 +89,9 @@ Section | 説明
 
 たとえば、重大度の高いアラートに関するデータのみを表示するには、次の処理を行います。
 
-1. [フィルター **と重大度>] で、[** 高] を **選択します。**
+1. [**インシデント] で&**  >  **アラート**  >  **フィルター>重大度]** で、[高] を **選択します**。
 2. [重大度] の下の他のすべての **オプションが選択** 解除されている必要があります。
-3. **[適用]** を選択します。 
+3. **[適用]** を選択します。
 
 ## <a name="related-topic"></a>関連トピック
-- [デバイスの正常性とコンプライアンス レポート](machine-reports.md)
+- [デバイスの正常性とコンプライアンスのレポート](machine-reports.md)

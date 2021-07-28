@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 99a52188dd5f6eca2f8368aa3c114d0bfb950b10
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 7a8c37c6dbf387c338b3c28f8abaca89a104cefe
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844156"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619353"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Microsoft Defender for Endpoint のライブ応答の問題のトラブルシューティング
 
@@ -31,16 +31,17 @@ ms.locfileid: "52844156"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 このページでは、ライブ応答の問題をトラブルシューティングするための詳細な手順を示します。
 
 ## <a name="file-cannot-be-accessed-during-live-response-sessions"></a>ライブ応答セッション中にファイルにアクセスできない
+
 ライブ応答セッション中にアクションを実行しようとしている場合は、ファイルにアクセスできないというエラー メッセージが表示される場合は、以下の手順を使用して問題に対処する必要があります。
 
 1. 次のスクリプト コード スニペットをコピーし、PS1 ファイルとして保存します。
 
-    ```
+    ```powershell
     $copied_file_path=$args[0] 
     $action=Copy-Item $copied_file_path -Destination $env:TEMP -PassThru -ErrorAction silentlyContinue
         
@@ -55,19 +56,20 @@ ms.locfileid: "52844156"
     }
     ```
 
-
 2. スクリプトをライブ応答ライブラリに追加します。
 3. コピーするファイルのファイル パスという 1 つのパラメーターでスクリプトを実行します。
 4. TEMP フォルダーに移動します。
 5. コピーしたファイルに対して実行するアクションを実行します。
 
 ## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>ライブ応答セッションが遅い、または初期接続中の遅延
+
 ライブ応答では、Defender for Endpoint センサーの登録と WNS サービスWindows。 ライブ応答で接続の問題が発生している場合は、次の詳細を確認します。
+
 1. `notify.windows.com` 環境でブロックされません。 詳細については、「デバイス プロキシと [インターネット接続の設定を構成する」を参照してください](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 2. WpnService (Windowsプッシュ通知システム サービス) は無効ではありません。
 
 WpnService サービスの動作と要件を完全に理解するには、以下の記事を参照してください。
+
 - [Windowsプッシュ Notification Services (WNS) の概要](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
 - [EnterpriseWNS トラフィックをサポートするファイアウォールとプロキシの構成](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
-- [Microsoft プッシュ通知サービス (MPNS) パブリック IP 範囲](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
-
+- [Microsoft プッシュ通知サービス (MPNS) パブリック IP 範囲](https://www.microsoft.com/download/details.aspx?id=44535)

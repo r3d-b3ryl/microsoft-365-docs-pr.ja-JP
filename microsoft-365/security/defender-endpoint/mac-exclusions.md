@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c014447e51e5c5fcb96924e5e98c62f478a32ea7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 43fc03522f1783c74eb5b2874da6125881a3740d
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935031"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618951"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender の除外を構成および検証する
 
@@ -38,33 +38,33 @@ ms.locfileid: "51935031"
 
 この記事では、オンデマンド スキャンに適用される除外を定義する方法、およびリアルタイムの保護と監視について情報を提供します。
 
->[!IMPORTANT]
->この記事で説明する除外は、エンドポイントの検出と応答 (エンドポイントの検出など) を含む、他の Defender for Endpoint on Mac 機能にはEDR。 この記事で説明する方法を使用して除外するファイルは、アラートや他の検出EDRトリガーできます。
+> [!IMPORTANT]
+> この記事で説明する除外は、エンドポイントの検出と応答 (エンドポイントの検出など) を含む、他の Defender for Endpoint on Mac 機能にはEDR。 この記事で説明する方法を使用して除外するファイルは、アラートや他の検出EDRトリガーできます。
 
 特定のファイル、フォルダー、プロセス、およびプロセスで開いたファイルは、Defender for Endpoint on Mac スキャンから除外できます。
 
 除外は、組織に固有またはカスタマイズされたファイルまたはソフトウェアで誤った検出を回避するために役立ちます。 また、Defender for Endpoint on Mac によるパフォーマンスの問題を軽減する場合にも役立ちます。
 
->[!WARNING]
->除外を定義すると、Defender for Endpoint on Mac によって提供される保護が低下します。 除外の実装に関連付けられているリスクは常に評価する必要があります。悪意がないと確信しているファイルのみを除外する必要があります。
+> [!WARNING]
+> 除外を定義すると、Defender for Endpoint on Mac によって提供される保護が低下します。 除外の実装に関連付けられているリスクは常に評価する必要があります。悪意がないと確信しているファイルのみを除外する必要があります。
 
 ## <a name="supported-exclusion-types"></a>サポートされる除外の種類
 
 次の表に、Defender for Endpoint on Mac でサポートされている除外の種類を示します。
 
-除外 | 定義 | 例
+除外|定義|例
 ---|---|---
-ファイル拡張子 | 拡張機能を持つすべてのファイル (コンピューター上の任意の場所) | `.test`
-File | 完全パスで識別される特定のファイル | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Folder | 指定したフォルダーの下のすべてのファイル (再帰的) | `/var/log/`<br/>`/var/*/`
-プロセス | 特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル | `/bin/cat`<br/>`cat`<br/>`c?t`
+ファイル拡張子|拡張機能を持つすべてのファイル (コンピューター上の任意の場所)|`.test`
+File|完全パスで識別される特定のファイル|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
+フォルダー|指定したフォルダーの下のすべてのファイル (再帰的)|`/var/log/` <p> `/var/*/`
+プロセス|特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル|`/bin/cat` <p> `cat` <p> `c?t`
 
 ファイル、フォルダー、およびプロセスの除外は、次のワイルドカードをサポートします。
 
-ワイルドカード | 説明 | 例 | 一致 | 一致しない
+ワイルドカード|説明|例|一致|一致しない
 ---|---|---|---|---
-\* |    none を含む任意の数の文字と一致します (パス内でこのワイルドカードを使用すると、1 つのフォルダーのみを置き換える点に注意してください) | `/var/*/*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
-? | 任意の 1 文字に一致する | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
+\*|none を含む任意の数の文字と一致します (パス内でこのワイルドカードを使用すると、1 つのフォルダーのみを置き換える点に注意してください)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+?|任意の 1 文字に一致する|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
 >[!NOTE]
 >除外を評価するときに、製品は firmlinks の解決を試みる。 除外にワイルドカードが含まれているか、ターゲット ファイル (ボリューム上) が存在しない場合、Firmlink 解決 `Data` は機能しません。

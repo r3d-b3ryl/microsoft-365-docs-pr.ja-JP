@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1db046d4001c2e8573b1e8bfb2274f9a58aaf3a3
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 78d1f1eab2138fb53452d777027596dce12cb76a
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590781"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618825"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 
@@ -51,12 +51,17 @@ ms.locfileid: "53590781"
 
 一部のアクションでは、特定のアクセス許可が必要です。 次の表では、ポータブル実行可能ファイル (PE) および非 PE ファイルに対して特定のアクセス許可が実行できるアクションについて説明します。
 
-| アクセス許可             | PE ファイル | PE 以外のファイル |
-| :--------------------- | :------: | :----------: |
-| データを表示              |     X    |       X      |
-| アラートの調査   | &#x2611; |       X      |
-| ライブ応答の基本    |     X    |       X      |
-| ライブ応答の詳細設定 | &#x2611; |   &#x2611;   |
+<br>
+
+****
+
+|アクセス許可|PE ファイル|PE 以外のファイル|
+|:---------------------|:------:|:----------:|
+|データを表示|X|X|
+|アラートの調査|&#x2611;|X|
+|ライブ応答の基本|X|X|
+|ライブ応答の詳細設定|&#x2611;|&#x2611;|
+|
 
 役割の詳細については、「役割ベースのアクセス制御の役割の作成と管理 [」を参照してください](user-roles.md)。
 
@@ -97,7 +102,7 @@ ms.locfileid: "53590781"
    ![停止ファイルと検疫ファイルのモーダル ウィンドウのイメージ](images/atp-stop-quarantine.png)
 
    アクション センターには、申請情報が表示されます。
-   
+
    ![ファイルの停止と検疫のアクション センターのイメージ](images/atp-stopnquarantine-file.png)
 
    - **申請時間** - アクションが送信された時刻を示します。
@@ -107,7 +112,8 @@ ms.locfileid: "53590781"
 
 4. アクションの詳細を表示するには、状態インジケーターを選択します。 たとえば、[失敗] **を選択して** 、アクションが失敗した場所を確認します。
 
-**デバイス ユーザーの通知**:</br>
+#### <a name="notification-on-device-user"></a>デバイス ユーザーの通知
+
 ファイルがデバイスから削除されると、次の通知が表示されます。
 
 ![デバイス ユーザーの通知のイメージ](images/atp-notification-file.png)
@@ -124,12 +130,12 @@ ms.locfileid: "53590781"
 
    1. **[スタート]** をクリックし、「_cmd_」と入力します。
 
-   1. [コマンド プロンプト] を **右クリックし、[** 管理者として **実行] を選択します**。
+   1. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
 2. 次のコマンドを入力し、Enter キーを **押します**。
 
-   ```console
-   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+   ```dos
+   "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
    ```
 
    > [!NOTE]
@@ -182,7 +188,7 @@ ms.locfileid: "53590781"
 
 > [!IMPORTANT]
 >
-> - この機能は、組織でクラウド配信Microsoft Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウド提供の [保護を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+> - この機能は、組織でクラウド配信Microsoft Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウド配信保護 [の管理」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 >
 > - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。
 > - この機能は、疑わしいマルウェア (または悪意のある可能性のあるファイル) が Web からダウンロードされるのを防ぐために設計されています。 現在、ポータブル実行可能ファイル (PE) ファイルがサポートされています 。このファイルには、.exe _ファイル.dll__があります。_ 対象範囲は時間の長い期間延長されます。
@@ -197,6 +203,7 @@ ms.locfileid: "53590781"
 ### <a name="enable-the-block-file-feature"></a>ブロック ファイル機能を有効にする
 
 ファイルのブロックを開始するには、最初に[](advanced-features.md)ブロックまたは許可機能を有効にする必要設定。
+
 ### <a name="allow-or-block-file"></a>ファイルを許可またはブロックする
 
 ファイルのインジケーター ハッシュを追加すると、組織内のデバイスがファイルの実行を試みるたびに、アラートを発生してファイルをブロックできます。
@@ -241,10 +248,11 @@ ms.locfileid: "53590781"
 
 詳細な分析の結果は脅威インテリジェンスと一致し、一致すると適切なアラートが生成されます。
 
-ディープ分析機能を使用して、通常、アラートの調査中、または悪意のある動作が疑われるその他の理由で、ファイルの詳細を調査します。 この機能は、ファイルのプロファイル **ページ** の [詳細分析] タブで使用できます。<br/>
-<br/>
+ディープ分析機能を使用して、通常、アラートの調査中、または悪意のある動作が疑われるその他の理由で、ファイルの詳細を調査します。 この機能は、ファイルのプロファイル **ページ** の [詳細分析] タブで使用できます。
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0]
+<br/><br/>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
 **詳細分析用** の送信は、Defender for Endpoint バックエンド サンプル コレクションでファイルが使用できる場合、またはディープ分析への送信をサポートする Windows 10 デバイスでファイルが観察された場合に有効になります。
 
@@ -274,7 +282,7 @@ ms.locfileid: "53590781"
    進行状況バーが表示され、分析の異なるステージに関する情報が提供されます。 分析が完了したら、レポートを表示できます。
 
 > [!NOTE]
-> デバイスの可用性に応じて、サンプルの収集時間は異なる場合があります。 サンプル コレクションには 3 時間のタイムアウトがあります。 コレクションは失敗し、その時点でデバイスレポートにオンライン のWindows 10操作が中止されます。 ファイルを再送信して詳細な分析を行い、ファイルの新しいデータを取得できます。
+> デバイスの可用性に応じて、サンプルの収集時間は異なる場合があります。 サンプル コレクションには 3 時間のタイムアウトがあります。 コレクションは失敗し、その時点でデバイスレポートにオンライン のWindows 10操作が中止されます。 詳細な分析のためにファイルを再送信して、ファイルに新しいデータを取得できます。
 
 ### <a name="view-deep-analysis-reports"></a>詳細な分析レポートの表示
 
@@ -304,18 +312,18 @@ ms.locfileid: "53590781"
 
 4. サンプル コレクション ポリシーが構成されていない場合、既定の動作はサンプル コレクションを許可します。 構成されている場合は、ファイルを再度送信する前に、ポリシー設定でサンプル コレクションが許可されていることを確認します。 サンプル コレクションが構成されている場合は、次のレジストリ値を確認します。
 
-    ```console
+    ```text
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
     Hexadecimal value :
-      Value = 0 – block sample collection
-      Value = 1 – allow sample collection
+      Value = 0 - block sample collection
+      Value = 1 - allow sample collection
     ```
 
-1. グループ ポリシーを使用して組織単位を変更します。 詳細については、「グループ ポリシーで [構成する」を参照してください](configure-endpoints-gp.md)。
+5. グループ ポリシーを使用して組織単位を変更します。 詳細については、「グループ ポリシーで [構成する」を参照してください](configure-endpoints-gp.md)。
 
-1. これらの手順で問題が解決しない場合は、 [次の](mailto:winatp@microsoft.com)winatp@microsoft.com。
+6. これらの手順で問題が解決しない場合は、 [次の](mailto:winatp@microsoft.com)winatp@microsoft.com。
 
 ## <a name="related-topics"></a>関連項目
 
