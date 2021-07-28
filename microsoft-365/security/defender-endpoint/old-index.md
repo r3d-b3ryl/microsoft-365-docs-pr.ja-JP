@@ -14,27 +14,28 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3db1517d87a47aae254d36cfb28f6c057830ef3e
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3c49575e7a1d88c15907fdd7c118b71071949b23
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840996"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622846"
 ---
 # <a name="threat-protection"></a>脅威保護
+
 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) は、予防的な保護、侵害後の検出、自動調査、対応のための統一されたプラットフォームです。 Defender for Endpoint は、エンドポイントをサイバー脅威から保護し、高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化し、セキュリティの態勢を改善します。
 
 > [!TIP]
 > ユーザーがクラウド サービスとオンプレミス アプリケーションに簡単にアクセスし、すべてのデバイスで最新の管理機能を有効にできます。 詳細については、「リモートワークフォース [のセキュリティ保護」を参照してください](/enterprise-mobility-security/remote-work/)。 
 
-<center><h2>エンドポイント用 Microsoft Defender</center></h2>
+<center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>脅威& 脆弱性の管理</b></center></a></td>
-<td><a href="#asr"><center><img src="images/asr-icon.png" alt="attack surface reduction icon"> <br><b>攻撃表面の縮小</b></center></a></td>
+<td><a href="#asr"><center><img src="images/asr-icon.png" alt="attack surface reduction icon"> <br><b>攻撃面の減少</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="next generation protection icon"><br> <b>次世代の保護</b></a></center></td>
-<td><center><a href="#edr"><img src="images/edr-icon.png" alt="endpoint detection and response icon"><br> <b>エンドポイントの検出と応答</b></a></center></td>
-<td><center><a href="#ai"><img src="images/air-icon.png" alt="automated investigation and remediation icon"><br> <b>自動調査と修復</b></a></center></td>
+<td><center><a href="#edr"><img src="images/edr-icon.png" alt="endpoint detection and response icon"><br> <b>エンドポイントでの検出と対応</b></a></center></td>
+<td><center><a href="#ai"><img src="images/air-icon.png" alt="automated investigation and remediation icon"><br> <b>調査と修復の自動化</b></a></center></td>
 <td><center><a href="#mte"><img src="images/mte-icon.png" alt="microsoft threat experts icon"><br> <b>Microsoft 脅威エキスパート</b></a></center></td>
 </tr>
 <tr>
@@ -42,23 +43,22 @@ ms.locfileid: "52840996"
 <a href="#apis"><center><b>一元的な構成と管理、API</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft 365Defender</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
 </tr>
 </table>
 <br>
 
 <a name="tvm"></a>
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4obJq]
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
-
-**[脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)**<br>
-この組み込み機能では、エンドポイントの脆弱性と誤った構成の検出、事前設定、修復に対して、ゲームを変えるリスクベースのアプローチを使用します。
+**[脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)**<br>
+この組み込み機能は、画期的なリスクベースのアプローチを使用してエンドポイントの脆弱性や構成ミスの検出、優先順位付け、および修復を行います。
 
 - [脅威& 脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [概要](tvm-prerequisites.md)
 - [セキュリティの姿勢にアクセスする](tvm-dashboard-insights.md)
-- [セキュリティの態勢を改善し、リスクを軽減する](tvm-security-recommendation.md)
+- [セキュリティの状態の改善とリスクの軽減](tvm-security-recommendation.md)
 - [デバイスの脆弱性を理解する](tvm-software-inventory.md)
 
 <a name="asr"></a>
@@ -78,7 +78,7 @@ ms.locfileid: "52840996"
 <a name="ngp"></a>
 
 **[次世代の保護](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
-Microsoft Defender for Endpoint は、ネットワークのセキュリティ境界をさらに強化するために、すべての種類の新しい脅威をキャッチするように設計された次世代の保護を使用します。
+ネットワークのセキュリティ境界をさらに強化するために、エンドポイント用の Microsoft Defender は、あらゆる種類の新しい脅威をキャッチするために設計された次世代の保護が使用されます。
 
 - [動作の監視](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 - [クラウドベースの保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
@@ -102,10 +102,10 @@ Microsoft Defender for Endpoint は、ネットワークのセキュリティ境
 
 <a name="ai"></a>
 
-**[自動調査と修復](automated-investigations.md)**<br>
+**[調査と修復の自動化](automated-investigations.md)**<br>
 高度な攻撃への迅速な対応に加えて、Microsoft Defender for Endpoint は自動調査と修復機能を提供し、アラートの量を数分で削減できます。
 
-- [自動調査と修復](automated-investigations.md)
+- [調査と修復の自動化](automated-investigations.md)
 - [自動調査の詳細と結果を表示する](auto-investigation-action-center.md)
 - [修復アクションを表示および承認する](manage-auto-investigation.md)
 
@@ -116,7 +116,7 @@ Microsoft Defender for Endpoint の新しい管理された脅威検出サービ
 
 - [標的型攻撃の通知](microsoft-threat-experts.md)
 - [エキスパートオンデマンド](microsoft-threat-experts.md)
-- [Defender 管理Microsoft 365サービスを構成する](configure-microsoft-threat-experts.md)
+- [管理されたMicrosoft 365 Defenderサービスを構成する](configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 
@@ -139,5 +139,5 @@ Microsoft Defender for Endpoint を既存のワークフローに統合します
 - Microsoft Cloud App Security
 
 <a name="mtp"></a>
-**[Microsoft 365Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
- Microsoft 365 Defender を使用すると、Microsoft Defender for Endpoint とさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応します。
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+ Microsoft 365 Defender では、Microsoft Defender for Endpoint とさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、アプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応できます。

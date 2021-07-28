@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6def1b64430ad70dc4b4898ba2b914288826873e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: e57270345c0d87a9fcbc25ef7d9a7598bb8b0226
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861493"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624166"
 ---
 # <a name="list-vulnerabilities"></a>脆弱性の一覧表示
 
@@ -31,7 +31,7 @@ ms.locfileid: "52861493"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,35 +42,37 @@ ms.locfileid: "52861493"
 すべての脆弱性の一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   Vulnerability.Read.All |    '脅威と脆弱性管理の脆弱性情報の読み取り'
-委任 (職場または学校のアカウント) | 脆弱性。読み取り |   '脅威と脆弱性管理の脆弱性情報の読み取り'
+アプリケーション|Vulnerability.Read.All|'脅威と脆弱性管理の脆弱性情報の読み取り'
+委任 (職場または学校のアカウント)|脆弱性。読み取り|'脅威と脆弱性管理の脆弱性情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 GET /api/vulnerabilities
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前|種類|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
-
+Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは 200 OK を返し、本文の脆弱性の一覧を返します。
 
+成功した場合、このメソッドは 200 OK を返し、本文の脆弱性の一覧を返します。
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request-example"></a>要求の例
 
 以下は、要求の例です。
 
@@ -78,10 +80,9 @@ Empty
 GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 ```
 
-**応答**
+### <a name="response-example"></a>応答の例
 
 以下は、応答の例です。
-
 
 ```json
 {
@@ -109,5 +110,6 @@ GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [組織の脆弱性](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

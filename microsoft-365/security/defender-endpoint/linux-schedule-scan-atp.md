@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5a4beaefb2fcc12d46cf61c22644217dce1807a6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d8b7bbd2a5f1050b7897af3b208346330172ef94
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845368"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623206"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Microsoft Defender for Endpoint (Linux) でのスキャンのスケジュール設定
 
@@ -34,48 +34,59 @@ Linux (および Unix) には、スケジュールされたタスクを実行で
 > [!NOTE]
 > すべてのタイム ゾーンの一覧を取得するには、次のコマンドを実行します。 `timedatectl list-timezones`<br>
 > タイム ゾーンの例:
+>
 > - `America/Los_Angeles`
 > - `America/New_York`
 > - `America/Chicago`
 > - `America/Denver`
 
 ## <a name="to-set-the-cron-job"></a>Cron ジョブを設定するには
+
 次のコマンドを使用します。
 
-**crontab エントリをバックアップするには**
+### <a name="backup-crontab-entries"></a>crontab エントリのバックアップ
 
-`sudo crontab -l > /var/tmp/cron_backup_200919.dat`
+```bash
+sudo crontab -l > /var/tmp/cron_backup_200919.dat
+```
 
 > [!NOTE]
-> Where 200919 == YRMMDD
+> ここで、200919 == YRMMDD
 
 > [!TIP]
-> 編集または削除する前に、この操作を行います。 <br>
+> 編集または削除する前に、この操作を行います。
 
-crontab を編集し、新しいジョブをルート ユーザーとして追加するには、次の方法を実行します。 <br>
-`sudo crontab -e`
+crontab を編集し、新しいジョブをルート ユーザーとして追加するには、次の方法を実行します。
+
+```bash
+sudo crontab -e
+```
 
 > [!NOTE]
 > 既定のエディターは VIM です。
 
 次の情報が表示される場合があります。
 
-0 * * * * * /etc/opt/microsoft/mdatp/logrorate.sh
+```outbou
+0 * * * * /etc/opt/microsoft/mdatp/logrorate.sh
+```
 
 "Insert" を押す
 
 次のエントリを追加します。
 
+```bash
 CRON_TZ=America/Los_Angeles
 
-0 2 * sat /bin/mdatp スキャン クイック > ~/mdatp_cron_job.log
+0 2 * * sat /bin/mdatp scan quick > ~/mdatp_cron_job.log
+```
 
 > [!NOTE]
->この例では、00 分、2 時に設定しています。 (24 時間形式の時間)、月の任意の日、任意の月、土曜日。 つまり、土曜日は 2:00 に実行されます。 太平洋 (UTC –8)。
+> この例では、00 分、2 時に設定しています。 (24 時間形式の時間)、月の任意の日、任意の月、土曜日。 つまり、土曜日は 2:00 に実行されます。 太平洋 (UTC -8)。
 
 "Esc" を押す
 
-二重引用符を付けずに":wq" と入力します。
+二重引用符 `:wq` を付けずに""と入力します。
 
 > [!NOTE]
 > w == 書き込み、q == quit
@@ -84,32 +95,45 @@ cron ジョブを表示するには、 `sudo crontab -l`
 
 :::image type="content" source="/microsoft-365/security/defender-endpoint/images/linux-mdatp-1" alt-text="linux mdatp":::
 
-**cron ジョブの実行を調するには**
+#### <a name="to-inspect-cron-job-runs"></a>cron ジョブの実行を調するには
 
-`sudo grep mdatp /var/log/cron`
+```bash
+sudo grep mdatp /var/log/cron
+```
 
-**mdatp_cron_job.log を調するには**
+#### <a name="to-inspect-the-mdatp_cron_joblog"></a>mdatp_cron_job.log* を検査するには
 
-`sudo nano mdatp_cron_job.log`
+```bash
+sudo nano mdatp_cron_job.log
+```
 
 ## <a name="for-those-who-use-ansible-chef-or-puppet"></a>Ansible、Chef、または Puppet を使用するユーザー向け
 
 次のコマンドを使用します。
+
 ### <a name="to-set-cron-jobs-in-ansible"></a>Ansible で cron ジョブを設定するには
 
-`cron – Manage cron.d and crontab entries`
+```bash
+cron - Manage cron.d and crontab entries
 
-詳細については、「[https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html)」を参照してください。
+See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.
 
-### <a name="to-set-crontabs-in-chef"></a>Chef で crontabs を設定するには
-`cron resource`
+### To set crontabs in Chef
 
-詳細については、「[https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/)」を参照してください。
+```bash
+cron resource
+```bash
+
+```
+詳細については、「<https://docs.chef.io/resources/cron/>」を参照してください。
 
 ### <a name="to-set-cron-jobs-in-puppet"></a>Puppet で cron ジョブを設定するには
-リソースの種類: cron
 
-詳細については、「[https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html)」を参照してください。
+```bash
+Resource Type: cron
+```
+
+詳細については、「<https://puppet.com/docs/puppet/5.5/types/cron.html>」を参照してください。
 
 Puppet による自動化: Cron ジョブとスケジュールされたタスク
 
@@ -117,56 +141,74 @@ Puppet による自動化: Cron ジョブとスケジュールされたタスク
 
 ## <a name="additional-information"></a>追加情報
 
-**crontab のヘルプを表示するには**
+### <a name="to-get-help-with-crontab"></a>crontab のヘルプを表示するには
 
-`man crontab`
+```bash
+man crontab
+```
 
-**現在のユーザーの crontab ファイルの一覧を取得するには**
+### <a name="to-get-a-list-of-crontab-file-of-the-current-user"></a>現在のユーザーの crontab ファイルの一覧を取得するには
 
-`crontab -l`
+```bash
+crontab -l
+```
 
-**別のユーザーの crontab ファイルの一覧を取得するには**
+### <a name="to-get-a-list-of-crontab-file-of-another-user"></a>別のユーザーの crontab ファイルの一覧を取得するには
 
-`crontab -u username -l`
+```bash
+crontab -u username -l
+```
 
-**crontab エントリをバックアップするには**
+### <a name="to-backup-crontab-entries"></a>crontab エントリをバックアップするには
 
-`crontab -l > /var/tmp/cron_backup.dat`
+```bash
+crontab -l > /var/tmp/cron_backup.dat
+```
 
 > [!TIP]
-> 編集または削除する前に、この操作を行います。 <br>
+> 編集または削除する前に、この操作を行います。
 
-**crontab エントリを復元するには**
+### <a name="to-restore-crontab-entries"></a>crontab エントリを復元するには
 
-`crontab /var/tmp/cron_backup.dat`
+```bash
+crontab /var/tmp/cron_backup.dat
+```
 
-**crontab を編集し、新しいジョブをルート ユーザーとして追加するには**
+### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>crontab を編集し、新しいジョブをルート ユーザーとして追加するには
 
-`sudo crontab -e`
+```bash
+sudo crontab -e
+```
 
-**crontab を編集して新しいジョブを追加するには**
+### <a name="to-edit-the-crontab-and-add-a-new-job"></a>crontab を編集して新しいジョブを追加するには
 
-`crontab -e`
+```bash
+crontab -e
+```
 
-**他のユーザーの crontab エントリを編集するには**
+### <a name="to-edit-other-users-crontab-entries"></a>他のユーザーの crontab エントリを編集するには
 
-`crontab -u username -e`
+```bash
+crontab -u username -e
+```
 
-**すべての crontab エントリを削除するには**
+### <a name="to-remove-all-crontab-entries"></a>すべての crontab エントリを削除するには
 
-`crontab -r`
+```bash
+crontab -r
+```
 
-**他のユーザーの crontab エントリを削除するには**
+### <a name="to-remove-other-users-crontab-entries"></a>他のユーザーの crontab エントリを削除するには
 
-`crontab -u username -r`
+```bash
+crontab -u username -r
+```
 
-**説明**
+### <a name="explanation"></a>説明
 
-+—————- 分 (値: 0 ~ 59) (特殊文字: 、 – * /)  <br>
-|+————-時間 (値: 0 ~ 23) (特殊文字: 、 – * /) <br>
-| |+———-日 (値: 1 ~ 31) (特殊文字: , – * / L W C)  <br>
++—————- 分 (値: 0 ~ 59) (特殊文字: 、 - * /)  <br>
+|+————-時間 (値: 0 ~ 23) (特殊文字: 、 - * /) <br>
+| |+———-日 (値: 1 ~ 31) (特殊文字: 、 - * / L W C)  <br>
 | | |+——-月 (値: 1 ~ 12) (特殊文字: ,- * / )  <br>
-| | | |+—- 日 (値: 0 ~ 6) (日曜日=0 または 7) (特殊文字: , – * / L W C) <br>
+| | | |+-- 日 (値: 0 ~ 6) (日曜=0 または 7) (特殊文字: , - * / L W C) <br>
 | | | | |*****コマンドを実行する
-
-

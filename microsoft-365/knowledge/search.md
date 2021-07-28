@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva Microsoft Searchトピックを検索するには、次の情報を使用します。
+title: '[Microsoft Searchを使用して、トピックを検索Microsoft Viva トピック'
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
-description: Microsoft Viva でトピックを検索する方法について説明します。
-ms.openlocfilehash: a60d1e04c67eb42573bb566a5667f35227def2ad
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: トピックを検索する方法については、Microsoft Viva トピック。
+ms.openlocfilehash: 0a29bb4578ead314c362959a4e410665114c7fbb
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287259"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624346"
 ---
-# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Microsoft Viva Microsoft Searchトピックを検索するには、次の情報を使用します。
+# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>[Microsoft Searchを使用して、トピックを検索Microsoft Viva トピック
 
 ビバ トピックのユーザーは、トピックのハイライトを使用してトピックSharePoint見つける一方で、ユーザーはトピックを参照Microsoft Search。 
 

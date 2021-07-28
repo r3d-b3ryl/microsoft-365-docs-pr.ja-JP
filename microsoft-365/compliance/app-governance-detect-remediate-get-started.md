@@ -2,8 +2,8 @@
 title: アプリの脅威の検出と修復を開始する
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリの脅威の検出と修復を開始する。
-ms.openlocfilehash: 77de3676a9a486bbed572a4a16bf62ad4d038406
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 7309fba4bbc74736386c6ab384d1cffd8c152b81
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430722"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623062"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>アプリの脅威の検出と修復を開始する
 
@@ -57,4 +57,4 @@ Microsoft アプリ ガバナンスは、悪意のあるアプリに基づいて
 
 ## <a name="next-step"></a>次の手順
 
-[アプリの脅威を修復する。](app-governance-detect-remediate-detect-threats.md)
+[異常検出アラートを調査する](app-governance-anomaly-detection-alerts.md)

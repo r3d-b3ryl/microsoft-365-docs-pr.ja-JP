@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ba4f1b0e4b2e00334dbffb4bf0aa9edb1b8c5622
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a95ab526d43e6eb243cb3de3a7b7c75e1e82b07f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286923"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624202"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>管理ポータルで、管理者の連絡先を、追加および確認する
 
@@ -22,17 +22,6 @@ ms.locfileid: "53286923"
 
 > [!IMPORTANT]
 > 管理ポータルにこれらの連絡先を既に追加している可能性があります。 その場合は、重大なインシデントが発生した場合Microsoft マネージド デスクトップ連絡先 **リストが正確** である必要があります。
-
-## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory管理ポータルMicrosoft マネージド デスクトップアクセス権
-
-Microsoft マネージド デスクトップ管理ポータルでは、ポータルにアクセスするユーザーに次のいずれかの役割 (Azure Active Directory) AD必要があります。
-
-- グローバル管理者
-- Intune サービス管理者
-- グローバル閲覧者
-- サービス サポート管理者
-
-グローバル管理者は、組織を登録する管理者である必要Microsoft マネージド デスクトップ。 5 つの役割はすべて、タスクを開始および表示するための管理ポータル内で同じアクセス権を持ちます。 Azure AD でこれらのロールを割り当てる方法の詳細については、「管理者ロールのアクセス許可」を[参照](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)Azure Active Directory。
 
 ## <a name="admin-contact-areas-of-focus"></a>管理者の連絡先のフォーカス領域
 
@@ -56,7 +45,7 @@ IT ヘルプ デスク | サポートスタッフがサポートエリア外で�
 
 2. [**テナントの管理]** で、[連絡先] セクションを探 **Microsoft マネージド デスクトップ[** 管理者連絡先]**を選択します**。
 
-3. [**追加**] を選択します。
+3. **[追加]** を選択します。
 
 4. [フォーカスエリア **] を選択** し、連絡先の情報を入力します。 
 

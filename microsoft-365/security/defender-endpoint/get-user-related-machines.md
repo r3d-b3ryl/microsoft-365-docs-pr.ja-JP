@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ead0558bfff90c29ec8717fbb39876afda5c42af
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 430c43636e4db1eb6973b8d8059f53c044b9cb6e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229457"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622906"
 ---
 # <a name="get-user-related-machines-api"></a>ユーザー関連のコンピューター API を取得する
 
@@ -49,7 +49,7 @@ ms.locfileid: "53229457"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 |アクセス許可|アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション |Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
 アプリケーション |Machine.ReadWrite.All |'すべてのコンピューター情報の読み取りと書き込み'
@@ -72,7 +72,7 @@ GET /api/users/{id}/machines
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 

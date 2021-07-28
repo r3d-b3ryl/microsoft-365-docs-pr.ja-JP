@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 577eea6e678b6a5d60e5bb8f2fbaaae25d239577
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c73a1a4ca5a85e4c6867cbe2cb79a33cfe0bfac9
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230069"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623794"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
 
@@ -60,7 +60,6 @@ ms.locfileid: "53230069"
 
 11. [macOS での Microsoft Defender for Endpoint の展開](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
-
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>手順 1: Microsoft Defender for Endpoint オンボーディング パッケージを取得する
 
 1. [[Microsoft Defender セキュリティ センター]](https://securitycenter.microsoft.com)で、[オンボーディング]**設定 >移動します**。
@@ -81,7 +80,6 @@ ms.locfileid: "53230069"
 1. 前のセクション `WindowsDefenderATPOnboarding.plist` からファイルを探します。
 
    ![WindowsDefenderATPOnboarding ファイルのイメージ](images/plist-onboarding-file.png)
-
 
 2. Jamf Proで、[新規] を **選択します**。
 
@@ -204,8 +202,8 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
     - enableRealTimeProtection
     - passiveMode
 
-    >[!NOTE]
-    >既定ではオンにされません。macOS 用にサードパーティの AV を実行する予定の場合は、 に設定します `true` 。
+    > [!NOTE]
+    > 既定ではオンにされません。macOS 用にサードパーティの AV を実行する予定の場合は、 に設定します `true` 。
 
     - 除外
     - excludedPath
@@ -214,8 +212,8 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
     - exclusionsMergePolicy
     - allowedThreats
 
-    >[!NOTE]
-    >EICAR はサンプルに含め、概念実証を行う場合は、EICAR をテストする場合は特に削除してください。
+    > [!NOTE]
+    > EICAR はサンプルに含め、概念実証を行う場合は、EICAR をテストする場合は特に削除してください。
 
     - disallowedThreatActions
     - potentially_unwanted_application
@@ -375,7 +373,6 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
     >[!NOTE]
     >Intune ファイルをアップロードすると、次のようなエラー メッセージが表示されます。<br>
     >![構成設定 intune ファイルのアップロードのイメージ](images/8e69f867664668796a3b2904896f0436.png)
-
 
 11. **[保存]** を選択します。
 
@@ -654,7 +651,6 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
 
     ![構成設定承認済みカーネル ext のイメージ](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
 
-
 4. [ **承認済みカーネル拡張機能]** で、次の詳細を入力します。
 
     - 表示名: Microsoft Corp.
@@ -789,10 +785,9 @@ Microsoft Defender は、時間の間に新しい設定を追加します。 こ
 
 または、「Jamf を使用したカスタム構成プロファイルの展開」の説明に従って[、netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)をダウンロードして JAMF 構成プロファイル[にアップロードPro|方法 2: アップロードプロファイルを Jamf ファイルにPro。](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
-
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>手順 10: macOS で Microsoft Defender for Endpoint でスキャンをスケジュールする
-macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [するの手順に従います](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
 
+macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [するの手順に従います](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>手順 11: macOS に Microsoft Defender for Endpoint を展開する
 
@@ -865,7 +860,6 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
 
     ![構成設定の再チェック インのイメージ](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
-
 13. **[保存]** を選択します。
 
 14. [パッケージ **] を選択>構成します**。
@@ -905,7 +899,3 @@ macOS の Microsoft Defender for Endpoint でスキャンをスケジュール [
     ![構成設定 do1img のイメージ](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
     ![構成設定 do2img のイメージ](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
-
-
-
-

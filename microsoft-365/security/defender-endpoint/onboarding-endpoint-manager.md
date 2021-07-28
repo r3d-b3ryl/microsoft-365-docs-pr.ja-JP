@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 397aa8a0e8f0523c9975d40759d39369c221222b
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cdd188a58bd80885c90b87e3d42c999a2afd14c1
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228977"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622822"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用したオンボーディング
 
@@ -122,7 +122,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 次に、いくつかの異なる種類のエンドポイント セキュリティ ポリシーを作成します。
 
 - [次世代の保護](#next-generation-protection)
-- [攻撃面の減少](#attack-surface-reduction--attack-surface-reduction-rules)
+- [攻撃面の減少](#attack-surface-reduction---attack-surface-reduction-rules)
 
 ### <a name="endpoint-detection-and-response"></a>エンドポイントの検出および応答
 
@@ -181,7 +181,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > ![ポータル 12 Microsoft エンドポイント マネージャーイメージ](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. [**プラットフォーム] - [Windows 10以降] - [Windows とプロファイル] の選択 – Microsoft Defender ウイルス対策>作成します**。
+3. [**プラットフォーム] - [Windows 10後] - [Windowsとプロファイル] - [Microsoft Defender ウイルス対策] の [作成>選択します**。
 
 4. 名前と説明を入力し、[次へ] を  **選択します**。
 
@@ -213,7 +213,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > ![ポータル 18 Microsoft エンドポイント マネージャーイメージ](images/38180219e632d6e4ec7bd25a46398da8.png)
 
-### <a name="attack-surface-reduction--attack-surface-reduction-rules"></a>攻撃表面の縮小 – 攻撃表面の縮小ルール
+### <a name="attack-surface-reduction---attack-surface-reduction-rules"></a>攻撃表面の縮小 - 攻撃表面の縮小ルール
 
 1. MEM ポータルを開きます。
 
@@ -221,7 +221,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 3. [ポリシー  **の作成] を選択します**。
 
-4. [**プラットフォーム] - [Windows 10] と [後で] – [プロファイル] - [攻撃表面縮小ルール] >を選択します**。
+4. [**プラットフォーム] - [Windows 10] と [後から] - [プロファイル] - [攻撃表面** の縮小ルール] を選択>作成します。
 
     > [!div class="mx-imgBorder"]
     > ![ポータルのMicrosoft エンドポイント マネージャー 19](images/522d9bb4288dc9c1a957392b51384fdd.png)
@@ -261,7 +261,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > ![ポータル 25 Microsoft エンドポイント マネージャーイメージ](images/7a631d17cc42500dacad4e995823ffef.png)
 
-### <a name="attack-surface-reduction--web-protection"></a>攻撃表面の縮小 – Web 保護
+### <a name="attack-surface-reduction---web-protection"></a>攻撃表面の縮小 - Web 保護
 
 1. MEM ポータルを開きます。
 
@@ -269,7 +269,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
 3. [ポリシー  **の作成] を選択します**。
 
-4. **[Windows 10] と [後] – [Web 保護] >を選択します**。
+4. [作成 **Windows 10後 - Web 保護] を選択>作成します**。
 
     > [!div class="mx-imgBorder"]
     > ![ポータル 26 Microsoft エンドポイント マネージャーイメージ](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
@@ -322,22 +322,22 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 1. 上記の手順に示すように、MEM ポータルを開き、関連するポリシーに移動します。 次の例は、次世代の保護設定を示しています。
 
     > [!div class="mx-imgBorder"]
-    > [![ポータル 33 Microsoft エンドポイント マネージャーのイメージ ](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
+    > [![ポータル 33 Microsoft エンドポイント マネージャーのイメージ](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
 
 2. 構成ポリシー **を選択して** 、ポリシーの状態を表示します。
 
     > [!div class="mx-imgBorder"]
-    > [![ポータル 34 Microsoft エンドポイント マネージャーのイメージ ](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
+    > [![ポータル 34 Microsoft エンドポイント マネージャーのイメージ](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
 
 3. [  **デバイスの状態] を** 選択して、状態を表示します。
 
     > [!div class="mx-imgBorder"]
-    > [![ポータル 35 Microsoft エンドポイント マネージャーのイメージ ](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
+    > [![ポータル 35 Microsoft エンドポイント マネージャーのイメージ](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
 
 4. [  **ユーザーの状態] を** 選択して、状態を表示します。
 
     > [!div class="mx-imgBorder"]
-    > [![ポータル 36 Microsoft エンドポイント マネージャーのイメージ ](images/4e965749ff71178af8873bc91f9fe525.png)](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
+    > [![ポータルのMicrosoft エンドポイント マネージャー 36](images/4e965749ff71178af8873bc91f9fe525.png)](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
 
 5. [  **設定ごとの状態] を選択** して、状態を表示します。
 
@@ -345,26 +345,26 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > このビューは、別のポリシーと競合する設定を識別するのに非常に便利です。
 
     > [!div class="mx-imgBorder"]
-    > [![ポータル 37 Microsoft エンドポイント マネージャーのイメージ ](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
+    > [![ポータル 37 Microsoft エンドポイント マネージャーイメージ](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
-### <a name="endpoint-detection-and-response"></a>エンドポイントの検出および応答
+### <a name="confirm-endpoint-detection-and-response"></a>エンドポイントの検出と応答の確認
 
-1. 構成を適用する前に、Defender for Endpoint Protection サービスを開始する必要があります。
+1. 構成を適用する前に、Defender for Endpoint Protectionサービスを開始する必要があります。
 
     > [!div class="mx-imgBorder"]
-    > [![[サービスのイメージ] パネル 1 ](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
+    > [![[サービスのイメージ] パネル 1](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
 2. 構成が適用された後、Defender for Endpoint Protection Service を開始する必要があります。
 
     > [!div class="mx-imgBorder"]
-    > [![[サービスのイメージ] パネル 2 ](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
+    > [![[サービスのイメージ] パネル 2](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
 3. サービスがデバイスで実行された後、デバイスは Microsoft Defender セキュリティ センターに表示されます。
 
     > [!div class="mx-imgBorder"]
-    > [![画像のMicrosoft Defender セキュリティ センター ](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![画像のMicrosoft Defender セキュリティ センター](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
-### <a name="next-generation-protection"></a>次世代の保護
+### <a name="confirm-next-generation-protection"></a>次世代の保護を確認する
 
 1. テスト デバイスにポリシーを適用する前に、以下に示すように手動で設定を管理できる必要があります。
 
@@ -379,7 +379,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
     > [!div class="mx-imgBorder"]
     > ![設定ページ 2 のイメージ](images/9341428b2d3164ca63d7d4eaa5cff642.png)
 
-### <a name="attack-surface-reduction--attack-surface-reduction-rules"></a>攻撃表面の縮小 – 攻撃表面の縮小ルール
+### <a name="confirm-attack-surface-reduction---attack-surface-reduction-rules"></a>攻撃表面の縮小を確認する - 攻撃表面の縮小ルール
 
 1. テスト デバイスにポリシーを適用する前に、PowerShell ウィンドウをペンで入力します `Get-MpPreference` 。
 
@@ -399,7 +399,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
     ![コマンド ライン 2 のイメージ](images/619fb877791b1fc8bc7dfae1a579043d.png)
 
-### <a name="attack-surface-reduction--web-protection"></a>攻撃表面の縮小 – Web 保護
+### <a name="confirm-attack-surface-reduction---web-protection"></a>攻撃表面の縮小を確認する - Web 保護
 
 1. テスト デバイスで、PowerShell ファイルを開きWindows入力します `(Get-MpPreference).EnableNetworkProtection` 。
 

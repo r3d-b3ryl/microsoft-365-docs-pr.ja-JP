@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1386732325b831d176c662d821a2bb13d5e96739
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: caefcd7ce19073a10139a9f4d6d84c49e93c392f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595860"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623350"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -192,9 +192,9 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 プロキシ構成が正常に完了したことを確認します。WinHTTP は環境内のプロキシ サーバーを介して検出および通信でき、プロキシ サーバーは Defender for Endpoint サービス URL へのトラフィックを許可します。
 
-1. エンドポイント センサーの Defender が実行されている PC に [MDATP](https://aka.ms/mdatpanalyzer) クライアント アナライザー ツールをダウンロードします。
+1. エンドポイント クライアント [アナライザー用の Micrsofot Defender](https://aka.ms/mdeanalyzer) ツールを、Defender for Endpoint センサーが実行されている PC にダウンロードします。
 
-2. デバイス上に MDATPClientAnalyzer.zip のコンテンツを抽出します。
+2. デバイス上のMDEClientAnalyzer.zipを抽出します。
 
 3. 管理者特権でのコマンド ラインを開きます。
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
@@ -203,20 +203,20 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 4. 次のコマンドを入力して、**Enter** キーを押します。
 
     ```PowerShell
-    HardDrivePath\MDATPClientAnalyzer.cmd
+    HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
-    *HardDrivePath を*、次のような MDATPClientAnalyzer ツールがダウンロードされたパスに置き換える。
+    *HardDrivePath を*、次のような MDEClientAnalyzer ツールがダウンロードされたパスに置き換える。
 
     ```PowerShell
-    C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
+    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 
-5. *HardDrivePath**でMDATPClientAnalyzerResult.zip* フォルダーにツールによって作成されたファイルを抽出します。
+5. *HardDrivePath**でMDEClientAnalyzerResult.zip* フォルダーにツールによって作成されたファイルを抽出します。
 
-6. *MDATPClientAnalyzerResult.txt* を開き、プロキシ構成の手順を実行して、サーバーの検出とサービス URL へのアクセスを有効にしたことを確認します。
+6. サーバー *MDEClientAnalyzerResult.txt* 開き、サーバーの検出とサービス URL へのアクセスを有効にするプロキシ構成手順を実行したと確認します。
 
-   このツールは、Defender for Endpoint クライアントが相互作用するように構成されている Defender for Endpoint サービス URL の接続を確認します。 次に、Defender for Endpoint サービスとの通信に使用できる URL ごとに、結果を *MDATPClientAnalyzerResult.txt* ファイルに出力します。 次に例を示します。
+   このツールは、Defender for Endpoint クライアントが相互作用するように構成されている Defender for Endpoint サービス URL の接続を確認します。 次に、Defender for Endpoint サービスとの通信に使用される可能性 *のある* URL ごとに、MDEClientAnalyzerResult.txtファイルに結果を出力します。 次に例を示します。
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
@@ -232,7 +232,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 ただし、接続を確認した結果が失敗を示している場合は、HTTP エラーが表示されます (「HTTP ステータス コード」を参照)。 次に、「プロキシ サーバーの Defender for Endpoint サービス URL へのアクセスを有効にする」に示されている表の [URL を使用できます](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。 使用する URL は、オンボーディング手順で選択された地域によって異なります。
 
 > [!NOTE]
-> 接続アナライザー ツールは、ASR ルールと互換性がありません [PSExec および WMI コマンドから発生するプロセスの作成をブロックします](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。
+> Connectivity Analyzer ツールのクラウド接続チェックは [、PSExec](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生する攻撃表面の縮小ルールブロック プロセスの作成と互換性がありません。 接続ツールを実行するには、この規則を一時的に無効にする必要があります。 または、アナライザーの実行中に [ASR 除外を](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md#exclude-files-and-folders) 一時的に追加できます。
 >
 > TelemetryProxyServer がレジストリまたはグループ ポリシーを介して設定されている場合、Defender for Endpoint は、定義されたプロキシにアクセスできない場合、直接に戻されます。
 

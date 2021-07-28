@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63400295061cd7adc58a4ddebf73f4c82b0cc969
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: dfc2dc56e01ad08aea33ba11e4af5f8c94421ef8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845236"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624310"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>デバイス ID で不足している KB を取得する
 
@@ -39,13 +39,13 @@ ms.locfileid: "52845236"
 
 ## <a name="http-request"></a>HTTP 要求
 
-```
+```http
 GET /api/machines/{machineId}/getmissingkbs
 ```
 
 ## <a name="request-header"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 
@@ -63,7 +63,7 @@ Empty
 
 以下は、要求の例です。
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93dfa2550136057bff96/getmissingkbs 
 ```
 

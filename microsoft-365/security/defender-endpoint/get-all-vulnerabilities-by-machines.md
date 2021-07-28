@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 01e14be20cee2b8644ebe5d1d1212f921a2fb9b5
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 1e7e1734b1f016e8b8850f3684bf2c934608d494
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841524"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621933"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>マシンとソフトウェアによる脆弱性の一覧表示
 
@@ -31,51 +31,53 @@ ms.locfileid: "52841524"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 コンピューターとソフトウェアごとに組織に影響を与えるすべての脆弱性の一覧 [を](machine.md) 取得 [します](software.md)。
+
 - 脆弱性に修正 KB がある場合は、応答に表示されます。
 - [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 - OData ```$filter``` は、すべてのプロパティでサポートされています。
 
->[!Tip]
->これは、統合のための素晴らしい API [Power BIです](api-power-bi.md)。
+> [!TIP]
+> これは、統合のための素晴らしい API [Power BIです](api-power-bi.md)。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   Vulnerability.Read.All |    '脅威と脆弱性管理の脆弱性情報の読み取り'
-委任 (職場または学校のアカウント) | 脆弱性。読み取り |   '脅威と脆弱性管理の脆弱性情報の読み取り'
+アプリケーション|Vulnerability.Read.All|'脅威と脆弱性管理の脆弱性情報の読み取り'
+委任 (職場または学校のアカウント)|脆弱性。読み取り|'脅威と脆弱性管理の脆弱性情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 GET /api/vulnerabilities/machinesVulnerabilities
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前|種類|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
-
+Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは 200 OK を返し、本文の脆弱性の一覧を返します。
 
+成功した場合、このメソッドは 200 OK を返し、本文の脆弱性の一覧を返します。
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request-example"></a>要求の例
 
 以下は、要求の例です。
 
@@ -83,10 +85,9 @@ Empty
 GET https://api.securitycenter.microsoft.com/api/vulnerabilities/machinesVulnerabilities
 ```
 
-**応答**
+### <a name="response-example"></a>応答の例
 
 以下は、応答の例です。
-
 
 ```json
 {

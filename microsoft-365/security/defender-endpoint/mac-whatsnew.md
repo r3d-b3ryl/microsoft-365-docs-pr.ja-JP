@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ef594d4ccb25f688be21b4e8fe6aac2f024eb1d
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 2062d85d27208f871a96b64a90a457469f83559a
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419753"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623194"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
@@ -37,6 +37,10 @@ ms.locfileid: "53419753"
 
 > [!IMPORTANT]
 > macOS 11 (Big Sur) では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存の顧客の場合は、このページに記載されている追加の構成プロファイルを [必ず展開してください](mac-sysext-policies.md)。
+
+## <a name="1013428-20121061134280"></a>101.34.28 (20.121061.13428.0)
+
+- バグ修正
 
 ## <a name="1013427-20121052134270"></a>101.34.27 (20.121052.13427.0)
 
@@ -153,7 +157,7 @@ ms.locfileid: "53419753"
 
 > [!IMPORTANT]
 > コマンド ライン ツールの新しい拡張構文 `mdatp` に取り組む必要があります。 現在、新しい構文は Insider Fast および Insider Slow 更新チャネルの既定の構文です。 この新しい構文を使用して自分自身をfamliliarizeしてください。
-> 
+>
 > 新しい構文と並行して古い構文をサポートし続け、今後数か月で古い構文の廃止計画に関するより多くのコミュニケーションを提供します。
 
 - SMB ファイル共有にアクセスするときに発生するカーネル パニックに対処しました
@@ -200,7 +204,7 @@ ms.locfileid: "53419753"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> macOS デバイスの保護を最も完全に行い、Apple が [current – 2] より古い OS バージョンへの macOS ネイティブ セキュリティ更新プログラムの配信を停止するに合わせ、MDATP for Mac の展開と更新プログラムは macOS Sierra [10.12] ではサポートされなくなりました。 MDATP for Mac の更新プログラムと拡張機能は、バージョン Catalina [10.15]、Mojave [10.14]、High Sierra [10.13] を実行しているデバイスに配信されます。 
+> macOS デバイスに対して最も完全な保護を確保し、Apple が [current - 2] より古い OS バージョンへの macOS ネイティブ セキュリティ更新プログラムの配信を停止するに合わせ、MDATP for Mac の展開と更新プログラムは macOS Sierra [10.12] でサポートされなくなりました。 MDATP for Mac の更新プログラムと拡張機能は、バージョン Catalina [10.15]、Mojave [10.14]、High Sierra [10.13] を実行しているデバイスに配信されます。
 >
 > MDATP for Mac がシエラ [10.12] デバイスに既に展開されている場合は、保護を失うリスクを排除するために最新の macOS バージョンにアップグレードしてください。
 
@@ -224,9 +228,11 @@ ms.locfileid: "53419753"
 
 - Mac 上の Microsoft Defender for Endpoint がタイム マシンに干渉する場合がある問題を修正しました
 - バックエンド サービスとの接続をテストするためにコマンド ライン ユーティリティに新しいスイッチを追加しました
+
   ```bash
   mdatp connectivity test
   ```
+
 - ユーザー インターフェイスで完全な脅威履歴を表示する機能が追加されました (保護履歴 **ビューからアクセス** できます)
 - バグ修正&パフォーマンスの向上
 

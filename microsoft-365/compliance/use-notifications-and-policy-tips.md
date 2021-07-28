@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作しているユーザーに通知する方法について学習します。
-ms.openlocfilehash: 53a4db6cfc37f35422a1efffaeac052370cd5988
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f8b1c4228dcccf82a8dadb8b942d2587f92ba382
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228653"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623050"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -55,7 +55,7 @@ ms.locfileid: "53228653"
 
 DLP ポリシーを作成すると、ユーザー通知を **有効にできます**。 ユーザー通知を有効にすると、Microsoft 365通知とポリシー ヒントの両方が送信されます。 通知メールの送信先、電子メール テキスト、ポリシー ヒント テキストをカスタマイズできます。
 
-1. [https://protection.office.com](https://protection.office.com) に移動します。
+1. [https://( https://compliance.microsoft.com/permissions ](https://) に移動します https://compliance.microsoft.com/permissions) 。
 
 2. 職場または学校のアカウントを使用してサインインします。 これで、セキュリティ コンプライアンス センターに &amp; 入っています。
 

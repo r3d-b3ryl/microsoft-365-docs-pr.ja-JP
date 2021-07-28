@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dd9def688619b6079d947cb76069aa0f77d768de
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 927ba5934a95d20943397a778c74efa081501b3c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772307"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623326"
 ---
 # <a name="get-device-secure-score"></a>デバイスのセキュア スコアを取得する
 
@@ -33,35 +33,34 @@ ms.locfileid: "52772307"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
-デバイスの [Microsoft Secure Score を取得します](tvm-microsoft-secure-score-devices.md)。 デバイスの Microsoft セキュア スコアが高いということは、エンドポイントがサイバー セキュリティの脅威攻撃に対してより回復力があることを意味します。 
+デバイスの [Microsoft Secure Score を取得します](tvm-microsoft-secure-score-devices.md)。 デバイスの Microsoft セキュア スコアが高いということは、エンドポイントがサイバー セキュリティの脅威攻撃に対してより回復力があることを意味します。
 
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   Score.Read.Alll |   'Read Threat and Vulnerability Management score'
-委任 (職場または学校のアカウント) | Score.Read | 'Read Threat and Vulnerability Management score'
+アプリケーション|Score.Read.All|'Read Threat and Vulnerability Management score'
+委任 (職場または学校のアカウント)|Score.Read|'Read Threat and Vulnerability Management score'
 
 ## <a name="http-request"></a>HTTP 要求
 
-```
+```http
 GET /api/configurationScore
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前|種類|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 
@@ -73,7 +72,7 @@ Empty
 
 ## <a name="example"></a>例
 
-### <a name="request"></a>要求
+### <a name="request-example"></a>要求の例
 
 以下は、要求の例です。
 
@@ -81,12 +80,12 @@ Empty
 GET https://api.securitycenter.microsoft.com/api/configurationScore
 ```
 
-### <a name="response"></a>応答
+### <a name="response-example"></a>応答の例
 
 以下は、応答の例です。
 
->[!NOTE]
->ここに示す応答リストは、簡単に切り詰められることがあります。 
+> [!NOTE]
+> ここに示す応答リストは、簡単に切り詰められることがあります。
 
 ```json
 {

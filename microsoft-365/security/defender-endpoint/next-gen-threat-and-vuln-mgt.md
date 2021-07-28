@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 474b8f032d32668eaea3a477da013c2b8e74019b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db213da7c1859c9f4c9871aea508b225fd9b7b44
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934167"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623158"
 ---
 # <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "51934167"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 エンドポイントの弱点を効果的に特定、評価、修復するには、健全なセキュリティ プログラムを実行し、組織のリスクを軽減する上で極めて重要です。 脅威と脆弱性の管理は、組織の暴露を削減し、エンドポイントの役割を強化し、組織の回復性を向上させるためのインフラストラクチャとして機能します。
 
@@ -40,11 +40,11 @@ ms.locfileid: "51934167"
 
 詳細については、このビデオをご覧脅威と脆弱性の管理。
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mLsn]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
 
 ## <a name="bridging-the-workflow-gaps"></a>ワークフローのギャップを埋める
 
-脅威と脆弱性の管理は、リアルタイムで構築され、クラウドに対応しています。 Microsoft エンドポイント セキュリティ スタック、Microsoft Intelligent Security Graph、およびアプリケーション分析のナレッジ ベースと完全に統合されています。  
+脅威と脆弱性の管理は、リアルタイムで構築され、クラウドに対応しています。 Microsoft エンドポイント セキュリティ スタック、Microsoft Intelligent Security Graph、およびアプリケーション分析のナレッジ ベースと完全に統合されています。
 
 脆弱性管理は、修復プロセス中にセキュリティ管理と IT 管理の間のギャップを埋める業界初のソリューションです。 セキュリティ タスクまたはチケットを作成するには、セキュリティ タスクとMicrosoft IntuneとMicrosoft Endpoint Configuration Manager。
 
@@ -54,10 +54,10 @@ ms.locfileid: "51934167"
 
 また、次の機能も提供します。
 
-- **リアルタイム デバイス インベントリ** - Defender for Endpoint にオンボードされたデバイスは、脆弱性とセキュリティ構成データをダッシュボードに自動的に報告してプッシュします。
-- **ソフトウェアと脆弱性の** 可視化 - 組織のソフトウェア インベントリへのオプティクス、インストール、アンインストール、パッチなど、ソフトウェアの変更。 新たに発見された脆弱性は、第 1 および第 3 者のアプリケーションに対する対処可能な軽減策の推奨事項で報告されます。
-- **アプリケーション ランタイム コンテキスト** - アプリケーションの使用状況パターンを表示して、より良い事前設定と意思決定を行います。
-- **構成の体制** - 組織のセキュリティ構成または構成の誤りを表示します。 問題はダッシュボードで報告されます。セキュリティに関する推奨事項を実行できます。
+- **リアルタイム デバイスのインベントリ** - Defender for Endpoint にオンボードされたデバイスは、脆弱性やセキュリティ構成のデータを自動的にレポートし、ダッシュボードにプッシュ転送します。
+- **ソフトウェアと脆弱性の可視化** - 組織のソフトウェア インベントリや、インストール、アンインストール、パッチなどのソフトウェアの変更を光学的に確認します。 新たに発見された脆弱性は、1 次および 3 次アプリケーションに対する軽減策の推奨事項とともに報告されます。
+- **アプリケーションのランタイム コンテキスト** - アプリケーションの使用状況パターンを可視化し、優先順位付けと意思決定を改善します。
+- **構成の状態** - 組織のセキュリティ構成や設定の誤りを可視化します。 問題点は、実行可能なセキュリティに関する推奨事項とともにダッシュボードに報告されます。
 
 ### <a name="intelligence-driven-prioritization"></a>インテリジェンスによる事前設定
 
@@ -86,7 +86,7 @@ ms.locfileid: "51934167"
 分野 | 説明
 :---|:---
 **ダッシュボード**   | 組織の露出スコア、Microsoft Secure Score for Devices、デバイスの露出分布、トップ セキュリティ推奨事項、脆弱なソフトウェアの上位、トップ修復アクティビティ、および公開されているデバイス データの上位レベルのビューを取得します。
-[**セキュリティ上の推奨事項**](tvm-security-recommendation.md) | セキュリティに関する推奨事項と関連する脅威情報の一覧を参照してください。 リストからアイテムを選択すると、フライアウト パネルが開き、脆弱性の詳細、ソフトウェア ページを開くリンク、修復と例外のオプションが表示されます。 デバイスがエンドポイント経由で参加し、Defender for Endpoint で Intune 接続を有効にしている場合Azure Active Directory Intune でチケットを開く方法もできます。
+[**セキュリティに関する推奨事項**](tvm-security-recommendation.md) | セキュリティに関する推奨事項と関連する脅威情報の一覧を参照してください。 リストからアイテムを選択すると、フライアウト パネルが開き、脆弱性の詳細、ソフトウェア ページを開くリンク、修復と例外のオプションが表示されます。 デバイスがエンドポイント経由で参加し、Defender for Endpoint で Intune 接続を有効にしている場合Azure Active Directory Intune でチケットを開く方法もできます。
 [**修復**](tvm-remediation.md) | 作成した修復アクティビティと推奨事項の例外を参照してください。
 [**ソフトウェア インベントリ**](tvm-software-inventory.md) | 組織内の脆弱なソフトウェアの一覧と、弱点と脅威に関する情報を参照してください。
 [**弱点**](tvm-weaknesses.md) | 組織の一般的な脆弱性と露出 (CVEs) の一覧を参照してください。
@@ -98,7 +98,7 @@ ms.locfileid: "51934167"
 
 関連する API については、次の記事を参照してください。
 
-- [サポート対象 Microsoft Defender for Endpoint API](exposed-apis-list.md)
+- [サポート対象 Microsoft Defender for Endpoint API](exposed-apis-list.md)
 - [コンピューター API](machine.md)
 - [推奨事項 API](vulnerability.md)
 - [API のスコア付け](score.md)

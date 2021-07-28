@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 410972bd823c3a3c4fda53cacc225014d83f3457
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a8efdb460df07b34d272fbfe97cde8ee8224a94c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844012"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623734"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>自動調査後の修復アクションの確認
 
@@ -116,7 +116,7 @@ ms.locfileid: "52844012"
 
 Microsoft Defender for Endpoint では、すべての評決がアクション センターで [追跡されます](auto-investigation-action-center.md#new-a-unified-action-center)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [ライブ応答機能の詳細](live-response.md)
 - [高度な狩猟で脅威を積極的に探す](advanced-hunting-overview.md)

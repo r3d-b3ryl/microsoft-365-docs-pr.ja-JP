@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 471db75102eabd4d7fce14ec42d0a47562007aae
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fc16297b8c5c61f1dc70a6eb2567cafe4dd2e67f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229985"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624370"
 ---
 # <a name="overview-of-management-and-apis"></a>管理と API の概要
 
@@ -68,7 +68,7 @@ Defender for Endpoint API は、次の 3 つのグループにグループ化で
 Defender for Endpoint は、構造化された、明確で使いやすいモデルのデータと機能を公開する、ユーザーまたは SaaS アプリケーションのコンテキストでのアクセスを許可する標準の Azure AD ベースの認証および承認モデルを通じて公開される、レイヤー化された API モデルを提供します。 API モデルは、エンティティと機能を一貫性のある形式で公開するように設計されています。
 
 Defender for Endpoint の API の概要については、このビデオをご覧ください。
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
 Investigation **API** は、Defender for Endpoint の豊富さを公開します。計算エンティティまたは 'profiled' エンティティ (デバイス、ユーザー、ファイルなど) と、エンティティに関連する動作を記述する個別イベント (プロセスの作成やファイルの作成など) を公開し、クエリ ベースのデータへのアクセスを許可する調査インターフェイスを介してデータにアクセスできます。 詳細については、「サポートされている [API」を参照してください](exposed-apis-list.md)。
 

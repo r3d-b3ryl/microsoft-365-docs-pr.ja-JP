@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bbb3e5dfe94d5efb026e21a4cbd94fac45f36594
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 963cc32a8fcf5022d5960d04309a50aaac7c5e45
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845224"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624106"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>ソフトウェア ID で不足している KB を取得する
 
@@ -29,7 +29,7 @@ ms.locfileid: "52845224"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,13 +48,13 @@ ms.locfileid: "52845224"
 
 ## <a name="http-request"></a>HTTP 要求
 
-```
+```http
 GET /api/Software/{Id}/getmissingkbs
 ```
 
 ## <a name="request-header"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 
@@ -72,7 +72,7 @@ Empty
 
 以下は、要求の例です。
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/getmissingkbs
 ```
 

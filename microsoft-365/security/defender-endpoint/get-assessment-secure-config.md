@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7d39dddf4928b3bcb28fb008bcccd83c67f60177
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 77eb3d9a1d9efe8774edaf59fdd254986a8f510c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053181"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623962"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>デバイスごとのセキュリティで保護された構成評価をエクスポートする
 
@@ -34,7 +34,6 @@ ms.locfileid: "53053181"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
->
 すべての構成とその状態をデバイス単位で返します。
 
 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 データの量が多い場合は、次の 2 つの方法で取得できます。
@@ -49,8 +48,7 @@ ms.locfileid: "53053181"
 
 (JSON 応答またはファイルを使用 _して)_ 収集されるデータは、現在の状態の現在のスナップショットであり、歴史的なデータは含まれておりません。 過去のデータを収集するには、ユーザーがデータを独自のデータ ストレージに保存する必要があります。
 
-> [!Note]
->
+> [!NOTE]
 > 特に示されていない限り、一覧表示されているエクスポート評価方法はすべて、**** 完全なエクスポートと **_デバイス別_**(デバイス単位とも **_呼_** ばれます) です。
 
 ## <a name="1-export-secure-configuration-assessment-json-response"></a>1. セキュリティで保護された構成評価をエクスポートする (JSON 応答)
@@ -69,10 +67,10 @@ ms.locfileid: "53053181"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
 
-アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
-アプリケーション | Vulnerability.Read.All | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント) | 脆弱性。読み取り | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
+アプリケーション|Vulnerability.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント)|脆弱性。読み取り|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ### <a name="13-url"></a>1.3 URL
 
@@ -82,42 +80,44 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 ### <a name="14-parameters"></a>1.4 パラメーター
 
-- pageSize \( default = 50,000 \) – 応答の結果の数
-
-- \$top – 返す結果の数は \( odata.nextLink を返すので、すべてのデータ \@ をプルしない\)
+- pageSize \( default = 50,000 \) : 応答の結果の数。
+- \$top: 返す結果の数は odata.nextLink を返すので、すべてのデータ \( \@ を取得する必要があります \) 。
 
 ### <a name="15-properties"></a>1.5 プロパティ
 
->[!Note]
+> [!NOTE]
 >
->- 次の表で定義されているプロパティは、プロパティ ID によってアルファベット順に一覧表示されます。  この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
->
->- 応答で追加の列が返される場合があります。 これらの列は一時的なもので、削除される場合があります。文書化された列のみを使用してください。
->
+> - 次の表で定義されているプロパティは、プロパティ ID によってアルファベット順に一覧表示されます。  この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
+> - 応答で追加の列が返される場合があります。 これらの列は一時的なもので、削除される場合があります。文書化された列のみを使用してください。
 
-プロパティ (ID) | データ型 | 説明 | 返される値の例
-:---|:---|:---|:---
-ConfigurationCategory | 文字列 | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 | セキュリティ制御
-ConfigurationId | 文字列 | 特定の構成の一意の識別子 | scid-10000
-ConfigurationImpact | 文字列 | 構成が全体の構成スコアに与える影響の評価 (1-10) | 9
-ConfigurationName | string | 構成の表示名 | デバイスを Microsoft Defender for Endpoint にオンボードする
-ConfigurationSubcategory | 文字列 | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 | オンボード デバイス
-DeviceId | 文字列 | サービス内のデバイスの一意の識別子。 | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | 文字列 | デバイスの完全修飾ドメイン名 (FQDN)。 | johnlaptop.europe.contoso.com
-IsApplicable | bool | 構成またはポリシーが適用可能かどうかを示します。 | true
-IsCompliant | bool | 構成やポリシーが正しく構成されているかどうかを示します | false
-IsExpectedUserImpact | bool | 構成が適用される場合にユーザーに影響を与えるかどうかを示します。 | true
-OSPlatform | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。 | Windows10
-RbacGroupName | 文字列 | 役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。 | Servers
-RecommendationReference | 文字列 | このソフトウェアに関連する推奨事項 ID への参照。 | sca-_-scid-20000
-Timestamp | 文字列 | デバイスで構成が最後に表示された時刻 | 2020-11-03 10:13:34.8476880
+<br>
+
+****
+
+プロパティ (ID)|データ型|説明|返される値の例
+---|---|---|---
+ConfigurationCategory|string|構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|セキュリティ コントロール
+ConfigurationId|string|特定の構成の一意の識別子|scid-10000
+ConfigurationImpact|string|構成が全体の構成スコアに与える影響の評価 (1-10)|9 
+ConfigurationName|string|構成の表示名|デバイスを Microsoft Defender for Endpoint にオンボードする
+ConfigurationSubcategory|string|構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。|オンボード デバイス
+DeviceId|string|サービス内のデバイスの一意の識別子。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。|johnlaptop.europe.contoso.com
+IsApplicable|bool|構成またはポリシーが適用可能かどうかを示します。|true
+IsCompliant|bool|構成やポリシーが正しく構成されているかどうかを示します|false
+IsExpectedUserImpact|bool|構成が適用される場合にユーザーに影響を与えるかどうかを示します。|true
+OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。|Windows10
+RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。|Servers
+RecommendationReference|string|このソフトウェアに関連する推奨事項 ID への参照。|sca-_-scid-20000
+Timestamp|string|デバイスで構成が最後に表示された時刻|2020-11-03 10:13:34.8476880
+|
 
 ### <a name="16-examples"></a>1.6 例
 
 #### <a name="161-request-example"></a>1.6.1 要求の例
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5 
+GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5
 ```
 
 #### <a name="162-response-example"></a>1.6.2 応答の例
@@ -140,7 +140,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "isCompliant": true,
             "isApplicable": true,
             "isExpectedUserImpact": false,
-            "configurationName": "Disable insecure administration protocol – Telnet",
+            "configurationName": "Disable insecure administration protocol - Telnet",
             "recommendationReference": "sca-_-scid-10000"
         },
         {
@@ -174,7 +174,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "isCompliant": true,
             "isApplicable": true,
             "isExpectedUserImpact": false,
-            "configurationName": "Disable insecure administration protocol – Telnet",
+            "configurationName": "Disable insecure administration protocol - Telnet",
             "recommendationReference": "sca-_-scid-10000"
         },
         {
@@ -230,10 +230,10 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
-アプリケーション | Vulnerability.Read.All | \'"脅威と脆弱性の管理" の脆弱性情報を読む\'
-委任 (職場または学校のアカウント) | 脆弱性。読み取り | \'"脅威と脆弱性の管理" の脆弱性情報を読む\'
+アプリケーション|Vulnerability.Read.All|\'"脅威と脆弱性の管理" の脆弱性情報を読む\'
+委任 (職場または学校のアカウント)|脆弱性。読み取り|\'"脅威と脆弱性の管理" の脆弱性情報を読む\'
 
 ### <a name="23-url"></a>2.3 URL
 
@@ -243,22 +243,25 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ### <a name="parameters"></a>パラメーター
 
-- sasValidHours – ダウンロード URL が有効になる時間数 (最大 24 時間)。
+- sasValidHours: ダウンロード URL が有効になる時間数 (最大 24 時間)。
 
 ### <a name="25-properties"></a>2.5 プロパティ
 
->[!Note]
+> [!NOTE]
 >
->- ファイルは、複数行 Json 形式& gzip 圧縮ファイルです。
->
->- ダウンロード URL は 3 時間のみ有効です。それ以外の場合は、パラメーターを使用できます。
->
->- データの最大ダウンロード速度を得る場合は、データが存在する同じ Azure リージョンからダウンロードしてください。
->
-プロパティ (ID) | データ型 | 説明 | 返される値の例
-:---|:---|:---|:---
-ファイルのエクスポート | 配列 \[ 文字列\] | 組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧 | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | 文字列 | エクスポートが生成された時刻。 | 2021-05-20T08:00:00Z ]
+> - ファイルは、複数行 Json 形式& gzip 圧縮ファイルです。
+> - ダウンロード URL は 3 時間のみ有効です。それ以外の場合は、パラメーターを使用できます。
+> - データの最大ダウンロード速度を得る場合は、データが存在する同じ Azure リージョンからダウンロードしてください。
+
+<br>
+
+****
+
+プロパティ (ID)|データ型|説明|返される値の例
+---|---|---|---
+ファイルのエクスポート|配列 \[ 文字列\]|組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧|["Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+GeneratedTime|string|エクスポートが生成された時刻。|2021-05-20T08:00:00Z
+|
 
 ### <a name="26-examples"></a>2.6 例
 
@@ -285,13 +288,10 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 ## <a name="see-also"></a>関連項目
 
 - [デバイスごとの評価方法とプロパティのエクスポート](get-assessment-methods-properties.md)
-
 - [デバイスごとのソフトウェア インベントリ評価のエクスポート](get-assessment-software-inventory.md)
-
 - [デバイスごとのソフトウェアの脆弱性評価のエクスポート](get-assessment-software-vulnerabilities.md)
 
 その他の関連
 
 - [リスクベースの脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
-
 - [組織の脆弱性](tvm-weaknesses.md)

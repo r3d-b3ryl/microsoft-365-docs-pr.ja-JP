@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1809969d37d2e3cfb9279eb8266a65ba098b3c6
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: a336ca847b8244c023fb8228c6405a363e7550aa
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542107"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622834"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 
@@ -39,11 +39,12 @@ ms.locfileid: "53542107"
 - Windows 8.1 Enterprise
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink)。
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Defender for Endpoint は、ダウンレベルのオペレーティング システムを含むサポートを拡張し、サポートされているバージョンの高度な攻撃検出と調査Windowsします。
 
 クライアント エンドポイントのダウンレベル Windows Defender for Endpoint にオンボードするには、次の必要があります。
+
 - クライアントの構成と更新System Center Endpoint Protectionします。
 - 以下に示すMicrosoft Monitoring Agent、センサー データを Defender for Endpoint に報告するように、センサー データ (MMA) をインストールして構成します。
 
@@ -54,21 +55,24 @@ Defender for Endpoint は、ダウンレベルのオペレーティング シス
 > [!IMPORTANT]
 > この手順は、組織が SCEP (SCEP) System Center Endpoint Protection必要です。
 
-Defender for Endpoint は System Center Endpoint Protection と統合し、マルウェアの検出を可視化し、悪意のある可能性のあるファイルや疑わしいマルウェアを禁止することで、組織内の攻撃の伝達を停止します。 
+Defender for Endpoint は System Center Endpoint Protection と統合し、マルウェアの検出を可視化し、悪意のある可能性のあるファイルや疑わしいマルウェアを禁止することで、組織内の攻撃の伝達を停止します。
 
-この統合を有効にするには、次の手順が必要です。 
+この統合を有効にするには、次の手順が必要です。
+
 - [2017 年 1](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)月のマルウェア対策プラットフォーム更新プログラムをクライアントEndpoint Protectionする 
 - SCEP クライアント Cloud Protection Service メンバーシップを詳細設定に **構成** する
 - クラウドへの接続を許可するネットワークMicrosoft Defender ウイルス対策します。 詳細については、「Allow [connections to the Microsoft Defender ウイルス対策 クラウド」を参照してください。](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>センサー データを Microsoft Defender for Endpoint にMicrosoft Monitoring Agentレポートするデバイス (MMA) をインストールして構成する
 
-### <a name="before-you-begin"></a>開始する前に
+### <a name="before-you-begin"></a>はじめに
+
 最小システム要件を確認するには、次の詳細を確認します。
+
 - [2018 年 2 月の更新プログラムのロールアップをインストールする](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   
   > [!NOTE]
-  > 7 SP1 および 7 SP1 Windows 7 SP1 EnterpriseおよびWindowsにのみPro。 
+  > 7 SP1 および 7 SP1 Windows 7 SP1 EnterpriseおよびWindowsにのみPro。
 
 - カスタマー エクスペリエンス [と診断テレメトリの更新プログラムをインストールする](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
@@ -80,8 +84,6 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 
 - Azure Log Analytics エージェントの最小システム要件を満たします。 詳細については [、「Log Analytics を使用して環境内のコンピューターからデータを収集する」を参照してください](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)。
 
-
-
 1. エージェント セットアップ ファイルをダウンロードします[Windows 64 ビット](https://go.microsoft.com/fwlink/?LinkId=828603)エージェントまたは[32 ビット Windowsエージェントをダウンロードします](https://go.microsoft.com/fwlink/?LinkId=828604)。
 
 2. ワークスペース ID を取得します。
@@ -90,8 +92,10 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
    - ワークスペース ID とワークスペース キーをコピーする
 
 3. Workspace ID と Workspace キーを使用して、次のインストール方法を選択してエージェントをインストールします。
-    - [セットアップを使用してエージェントを手動でインストールします](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)。 <br>
+    - [セットアップを使用してエージェントを手動でインストールします](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)。
+
       [エージェント **のセットアップ オプション]** ページで、[エージェント **Connect Azure Log Analytics (OMS) に移動する] を選択します。**
+
     - [コマンド ラインを使用してエージェントをインストールします](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。
     - [スクリプトを使用してエージェントを構成します](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)。
 
@@ -103,11 +107,12 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 完了すると、1 時間以内にポータルにオンボード エンドポイントが表示されます。
 
 ### <a name="configure-proxy-and-internet-connectivity-settings"></a>プロキシとインターネット接続の設定を構成する
- 
+
 - 各Windows HTTPS を使用してインターネットに接続できる必要があります。 この接続は、直接、プロキシを使用するか [、OMS ゲートウェイを介して行います](/azure/log-analytics/log-analytics-oms-gateway)。
 - プロキシまたはファイアウォールが既定ですべてのトラフィックをブロックしており、特定のドメインのみを許可している場合や HTTPS スキャン (SSL 検査) が有効になっている場合は [、Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)Service URL へのアクセスを有効にしてください。
 
 ## <a name="offboard-client-endpoints"></a>オフボード クライアント エンドポイント
-オフボードには、エンドポイントから MMA エージェントをアンインストールするか、レポートから Defender for Endpoint ワークスペースに切り離します。 エージェントのオフボード後、エンドポイントはセンサー データを Defender for Endpoint に送信しなくなりました。 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink)。
+オフボードには、エンドポイントから MMA エージェントをアンインストールするか、レポートから Defender for Endpoint ワークスペースに切り離します。 エージェントのオフボード後、エンドポイントはセンサー データを Defender for Endpoint に送信しなくなりました。
+
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink)

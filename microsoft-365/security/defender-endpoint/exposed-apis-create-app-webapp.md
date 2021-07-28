@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2d78b7ea31c45220735a8579d728f9c0f7bda181
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 62ff27162cadb154df61ef49f692152d40777246
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842112"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623338"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>ユーザーなしで Microsoft Defender for Endpoint にアクセスするアプリを作成する
 
@@ -69,7 +69,7 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
    ![アプリのアクセス許可](images/application-permissions.png)
 
-     関連するアクセス許可を選択する必要があります。 'すべてのアラートの読み取り' は、一例にすすみです。 例えば：
+     関連するアクセス許可を選択する必要があります。 'すべてのアラートの読み取り' は、一例にすすみです。 例:
 
      - 高度 [なクエリを実行するには、[](run-advanced-query-api.md)高度なクエリの実行] アクセス許可を選択します。
      - デバイス [を分離するには、[](isolate-machine.md)コンピューターの分離] アクセス許可を選択します。

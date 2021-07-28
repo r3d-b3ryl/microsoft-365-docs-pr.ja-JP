@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b809cc82ef6fda3d4153dbf19871801ec59ae75
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2c2c0ff1cfa84689215272d1fcf5a1f7476ca4d9
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543427"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621849"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac
 
@@ -109,13 +109,12 @@ Microsoft Defender for Endpoint on Mac では、次のいずれかの Microsoft 
 
 次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールを作成する必要があります。 
 
-
-
-|**ドメインリストのスプレッドシート**|**説明**|
-|:-----|:-----|
-|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>スプレッドシートをダウンロードするには、 [ 次の ](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)mdatp-urls.xlsxします。
+|ドメインリストのスプレッドシート|説明|
+|---|---|
+|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> スプレッドシートをダウンロードするには、 [ 次の ](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)mdatp-urls.xlsxします。
 
 Microsoft Defender for Endpoint では、次の検出方法を使用してプロキシ サーバーを検出できます。
+
 - プロキシの自動構成 (PAC)
 - Web プロキシ自動発見プロトコル (WPAD)
 - 静的プロキシの手動構成
@@ -127,7 +126,7 @@ Microsoft Defender for Endpoint では、次の検出方法を使用してプロ
 >
 > SSL 検査および代行受信プロキシも、セキュリティ上の理由からサポートされていません。 SSL インスペクションとプロキシ サーバーの例外を構成して、macOS 上の Microsoft Defender for Endpoint のデータを、傍受なしで関連する URL に直接渡します。 インターセプト証明書をグローバル ストアに追加すると、傍受は許可されない。
 
-接続がブロックされていないとテストするには、ブラウザー [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) で [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) 開きます。
+接続がブロックされていないとテストするには、ブラウザー <https://x.cp.wd.microsoft.com/api/report> で <https://cdn.x.cp.wd.microsoft.com/ping> 開きます。
 
 コマンド ラインが必要な場合は、ターミナルで次のコマンドを実行して接続を確認することもできます。
 
@@ -142,9 +141,10 @@ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https:
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> クライアント デバイスでシステム [整合性保護](https://support.apple.com/en-us/HT204899) (SIP) を有効にすることをお勧めします。 SIP は、OS の低レベル改ざんを防止する組み込みの macOS セキュリティ機能であり、既定で有効になっています。
+> クライアント デバイスでシステム [整合性保護](https://support.apple.com/HT204899) (SIP) を有効にすることをお勧めします。 SIP は、OS の低レベル改ざんを防止する組み込みの macOS セキュリティ機能であり、既定で有効になっています。
 
 Microsoft Defender for Endpoint をインストールすると、ターミナルで次のコマンドを実行して接続を検証できます。
+
 ```bash
 mdatp connectivity test
 ```
@@ -164,5 +164,4 @@ macOS の進化に合わせ、カーネル拡張機能の代わりにシステ�
 ## <a name="resources"></a>リソース
 
 - ログ記録、アンインストール、その他のトピックの詳細については [、「Resources for Microsoft Defender for Endpoint on Mac」を参照してください](mac-resources.md)。
-
 - [Microsoft Defender for Endpoint on Mac のプライバシー](mac-privacy.md)。

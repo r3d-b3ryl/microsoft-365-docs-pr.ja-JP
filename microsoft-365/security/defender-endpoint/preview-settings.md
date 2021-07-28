@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d3150caceae82be761d71d60373ccc128b59bcd8
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 92cf47ddafac9610ea4b15ee24e2969a938a7dde
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542725"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623698"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のプレビュー エクスペリエンスを有効にする
 
@@ -32,7 +32,7 @@ ms.locfileid: "53542725"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
 
 プレビュー機能設定をオンにして、今後の機能をいち早く試します。
 
@@ -43,7 +43,7 @@ ms.locfileid: "53542725"
 
 2. [オン] と [オフ]**の間で設定を****切り替え**、[基本設定の保存]**を選択します**。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Microsoft Defender for Endpoint の一般的な設定を更新する](data-retention-settings.md)
 - [Microsoft Defender for Endpoint の高度な機能を有効にする](advanced-features.md)
 - [Microsoft Defender for Endpoint で電子メール通知を構成する](configure-email-notifications.md)

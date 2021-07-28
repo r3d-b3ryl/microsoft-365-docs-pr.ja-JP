@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3eb4d01957383efc8df47e9fee6eb6394c80015a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924385"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623362"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 
@@ -37,7 +37,7 @@ ms.locfileid: "52924385"
 
 タスク バーの [検索]アイコンを選択し、イベント ビューアーを検索して、イベント ビューアー アプリ *を開きます*。
 
-アプリケーションにMicrosoft Defender ウイルス対策については **、「Applications and Services Logs** Microsoft Windows  >    >    >  Windows Defender」**を参照してください**。 
+アプリケーションにMicrosoft Defender ウイルス対策については **、「Applications and Services Logs** Microsoft Windows  >    >    >  Windows Defender」**を参照してください**。
 
 そこから、[操作] の **下にある [** 開く] **を選択します**。
 
@@ -49,11 +49,11 @@ ms.locfileid: "52924385"
 
 ### <a name="associated-event-ids"></a>関連付けられたイベントの ID
 
- イベント ID | ログ名 | 説明 | ソース
--|-|-|-
-15 | アプリケーション | 更新されたWindows Defender状態が正常に更新SECURITY_PRODUCT_STATE_OFF。 | セキュリティ センター
-5007 | Microsoft-Windows-Windows Defender/運用 | Windows Defender ウイルス対策構成が変更されました。  予期しないイベントの場合は、マルウェアの結果である可能性がある設定を確認する必要があります。<br /><br />**古い値:** Default\IsServiceRunning = 0x0<br />**新しい値:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1 | Windows Defender
-5010 | Microsoft-Windows-Windows Defender/運用 | Windows Defender ウイルス対策その他の望ましくない可能性のあるソフトウェアのスキャンが無効になります。 | Windows Defender
+イベント ID|ログ名|説明|ソース
+---|---|---|---
+15|アプリケーション|更新されたWindows Defender状態が正常に更新SECURITY_PRODUCT_STATE_OFF。|セキュリティ センター
+5007|Microsoft-Windows-Windows Defender/運用|Windows Defender ウイルス対策構成が変更されました。  予期しないイベントの場合は、マルウェアの結果である可能性がある設定を確認する必要があります。 <p> **古い値:** Default\IsServiceRunning = 0x0 p> 新しい値 **:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5010|Microsoft-Windows-Windows Defender/運用|Windows Defender ウイルス対策その他の望ましくない可能性のあるソフトウェアのスキャンが無効になります。|Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>サードパーティのウイルス対策Microsoft Defender ウイルス対策がインストールされたため、ユーザーが起動しないかを確認する方法
 
@@ -68,7 +68,7 @@ ms.locfileid: "52924385"
 
 サービスに関Microsoft Defender ウイルス対策情報は、[運用] の [サービス] アプリ **Windows Defender**  >  **表示されます**。 ウイルス対策サービス名はサービス *Windows Defender ウイルス対策です*。
 
-アプリの確認中に *、Windows Defender ウイルス対策 Service* が手動に設定されている場合がありますが、このサービスを手動で開始しようとすると、ローカル コンピューター上の Windows Defender ウイルス対策 Service サービスが開始され、その後停止されたことを示す警告が表示されます。 *一部のサービスは、他のサービスやプログラムで使用されていない場合に自動的に停止します。*
+アプリの確認中に *、Windows Defender ウイルス対策 Service* が手動に設定されている場合がありますが、このサービスを手動で開始しようとすると、ローカル コンピューター上の Windows Defender ウイルス対策 Service サービスが開始してから停止したという警告が表示されます。 *一部のサービスは、他のサービスやプログラムで使用されていない場合に自動的に停止します。*
 
 これは、サードパーティのMicrosoft Defender ウイルス対策との互換性を維持するために、ユーザーが自動的にオフになっていることを示します。
 
@@ -88,31 +88,31 @@ GPresult.exe /h gpresult.html
 
 GPResults レポート内の見出し *Windows Components/Windows Defender ウイルス対策* の下に、Microsoft Defender ウイルス対策 がオフになっていることを示す次のエントリのようなものが表示される場合があります。
 
-ポリシー | Setting | GPO を獲得する
--|-|-
-[オフにする] Windows Defender ウイルス対策 | Enabled | Win10-Workstations
+ポリシー|Setting|GPO を獲得する
+---|---|---
+[オフにする] Windows Defender ウイルス対策|有効|Win10-Workstations
 
 ###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>グループ ポリシーの基本設定 (GPP) を使用してセキュリティ設定を実装する場合
 
 見出しの下にレジストリ アイテム (キー パス *: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender、 Value name: DisableAntiSpyware)* が表示され、Microsoft Defender ウイルス対策 がオフになっていることを示す次のエントリが表示される場合があります。
 
-DisableAntiSpyware | -
--|-
-GPO を獲得する | Win10-Workstations
-結果: 成功 | 
-**全般** | 
-アクション | Update
-**プロパティ** | 
-ハイブ | HKEY_LOCAL_MACHINE
-キー パス | SOFTWARE\Policies\Microsoft\Windows Defender
-値の名前 | DisableAntiSpyware
-値の型 | REG_DWORD
-値データ | 0x1 (1)
+DisableAntiSpyware|-
+---|---
+GPO を獲得する|Win10-Workstations
+結果: 成功|
+**全般**|
+アクション|Update
+**プロパティ**|
+ハイブ|HKEY_LOCAL_MACHINE
+キー パス|SOFTWARE\Policies\Microsoft\Windows Defender
+値の名前|DisableAntiSpyware
+値の型|REG_DWORD
+値データ|0x1 (1)
 
 ###### <a name="if-security-settings-are-implemented-via-registry-key"></a>セキュリティ設定がレジストリ キーを使用して実装されている場合
 
 レポートには、次のテキストが含まれている場合があります。このMicrosoft Defender ウイルス対策オフになっていることを示します。
- 
+
 > レジストリ (regedit.exe)
 >
 > HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender DisableAntiSpyware (dword) 1 (16 進数)
@@ -137,5 +137,5 @@ Microsoft Defender ウイルス対策ウイルス対策が現在アクティブ�
 
 ### <a name="see-also"></a>関連項目
 
-* [Microsoft Defender ウイルス対策互換性](microsoft-defender-antivirus-compatibility.md)
-* [Microsoft Defender ウイルス対策アプリでWindows セキュリティする](microsoft-defender-security-center-antivirus.md)
+- [Microsoft Defender ウイルス対策互換性](microsoft-defender-antivirus-compatibility.md)
+- [Microsoft Defender ウイルス対策アプリでWindows セキュリティする](microsoft-defender-security-center-antivirus.md)

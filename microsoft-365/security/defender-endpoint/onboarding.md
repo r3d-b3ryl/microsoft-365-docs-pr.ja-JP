@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint サービスにオンボードする
+title: Microsoft Defender for Endpoint サービスへのオンボード
 description: エンドポイントを Microsoft Defender for Endpoint サービスにオンボードする方法について説明します。
 keywords: microsoft defender for endpoint, onboard, deploy
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f63b4f81f454fec60a26c7cb063d66bed4a2bead
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 262b297976f0bc8155630e98406688fce050b8e2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933543"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623170"
 ---
-# <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスにオンボードする
+# <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスへのオンボード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,68 +33,67 @@ ms.locfileid: "51933543"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Defender for Endpoint の展開のさまざまなフェーズと、ソリューション内の機能を構成する方法について説明します。 
+Microsoft Defender for Endpoint の展開のさまざまなフェーズと、ソリューション内の機能を構成する方法について説明します。
 
 Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
-| [![展開フェーズ - 準備](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[フェーズ 1: 準備](prepare-deployment.md) | [![展開フェーズ - セットアップ](images/phase-diagrams/setup.png)](production-deployment.md)<br>[フェーズ 2: セットアップ](production-deployment.md) | ![展開フェーズ - オンボード](images/phase-diagrams/onboard.png)<br>フェーズ 3: オンボード |
-| ----- | ----- | ----- |
-| | |*お前はここにいる!*|
+|[![展開フェーズ - 準備](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [フェーズ 1: 準備](prepare-deployment.md)|[![展開フェーズ - セットアップ](images/phase-diagrams/setup.png)](production-deployment.md) <br> [フェーズ 2: セットアップ](production-deployment.md)|![展開フェーズ - オンボード](images/phase-diagrams/onboard.png) <br> フェーズ 3: オンボード|
+|---|---|---|
+|||*お前はここにいる!*|
 
 現在、オンボーディング フェーズに入っている。
 
 Defender for Endpoint を展開するために必要な手順は次のとおりです。
 
-- 手順 1: サービスにエンドポイントをオンボードする 
-- 手順 2: 機能を構成する 
+- 手順 1: サービスにエンドポイントをオンボードする
+- 手順 2: 機能を構成する
 
 ## <a name="step-1-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 1: サポートされている管理ツールを使用してエンドポイントをオンボードする
-「 [展開の計画」](deployment-strategy.md) トピックでは、Defender for Endpoint の展開に必要な一般的な手順について説明します。  
 
+「 [展開の計画」](deployment-strategy.md) トピックでは、Defender for Endpoint の展開に必要な一般的な手順について説明します。
 
 オンボーディング プロセスの概要と、使用可能なツールと方法について詳しくは、このビデオをご覧ください。
-<br />
-<br />
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
 
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
-アーキテクチャを特定した後、使用する展開方法を決定する必要があります。 選択した展開ツールは、エンドポイントをサービスにオンボードする方法に影響します。 
+アーキテクチャを特定した後、使用する展開方法を決定する必要があります。 選択した展開ツールは、エンドポイントをサービスにオンボードする方法に影響します。
 
 ### <a name="onboarding-tool-options"></a>オンボーディング ツールのオプション
 
 次の表に、オンボードする必要があるエンドポイントに基づいて使用可能なツールを示します。
 
-| Endpoint     | ツール オプション                       |
-|--------------|------------------------------------------|
-| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender) |
-| **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
-| **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-| **iOS**      | [アプリベース](ios-install.md)                                |
-| **Android**  | [Microsoft エンドポイント マネージャー](android-intune.md)               | 
-
+|Endpoint|ツール オプション|
+|---|---|
+|**Windows**|[ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)|
+|**macOS**|[ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md)|
+|**Linux Server**|[ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+|**iOS**|[アプリベース](ios-install.md)|
+|**Android**|[Microsoft エンドポイント マネージャー](android-intune.md)|
 
 ## <a name="step-2-configure-capabilities"></a>手順 2: 機能を構成する
-エンドポイントのオンボード後、エンドポイントの検出と応答、次世代保護、攻撃表面の縮小など、さまざまな機能を構成します。 
 
+エンドポイントのオンボード後、エンドポイントの検出と応答、次世代保護、攻撃表面の縮小など、さまざまな機能を構成します。
 
 ## <a name="example-deployments"></a>展開の例
+
 この展開ガイドでは、2 つの展開ツールを使用してエンドポイントをオンボードし、機能を構成する方法について説明します。
 
 展開例のツールは次のとおりです。
+
 - [Microsoft Endpoint Configuration Manager を使用したオンボーディング](onboarding-endpoint-configuration-manager.md)
 - [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)
 
 上記の展開ツールを使用して、次の Defender for Endpoint 機能の構成について説明します。
+
 - エンドポイントの検出と応答の構成
 - 次世代の保護構成
 - 攻撃表面の縮小構成
 
 ## <a name="related-topics"></a>関連項目
+
 - [Microsoft Endpoint Configuration Manager を使用したオンボーディング](onboarding-endpoint-configuration-manager.md)
 - [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)
 - [Microsoft 365 E5 の安全なドキュメント](../office-365-security/safe-docs.md)

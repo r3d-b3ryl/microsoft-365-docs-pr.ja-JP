@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b31ae48c4defaa0061bef4b13522dd62b8058150
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 77d5cb27a4cb52136bb35aa6ffa40561cb0124d6
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543463"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621957"
 ---
 # <a name="find-devices-by-tag-api"></a>タグ API でデバイスを検索する
 
@@ -78,16 +78,17 @@ Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-uri-parameters"></a>要求 URI パラメーター
 
-Name|種類|説明
+名前|種類|説明
 :---|:---|:---
 tag|String|タグ名。 **必須**
-useStartsWithFilter|ブール値|true に設定すると、クエリ内の指定されたタグで始まるタグ名を持つすべてのデバイスが検索されます。 既定は false です。 **オプション**。
+useStartsWithFilter|ブール型|true に設定すると、クエリ内の指定されたタグで始まるタグ名を持つすべてのデバイスが検索されます。 既定は false です。 **オプション**。
 
 ## <a name="request-body"></a>要求本文
 
 Empty
 
 ## <a name="response"></a>応答
+
 成功した場合 - 応答本文のコンピューターの一覧で 200 OK。
 
 ## <a name="example"></a>例

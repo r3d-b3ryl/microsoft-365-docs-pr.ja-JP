@@ -2,8 +2,8 @@
 title: アプリの脅威の検出と修復に関する詳細情報
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリの脅威の検出と修復について説明します。
-ms.openlocfilehash: 574688e67b7562c8df6aec7d2242e68485239479
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 70f39ac3506ff6962ab028009cab54dfb83cd47b
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438050"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624226"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>アプリの脅威の検出と修復に関する詳細情報
 
@@ -46,15 +46,11 @@ Microsoft アプリ ガバナンスを使用すると、次の情報を確認で
 - Azure AD は、アプリの基礎となるメタデータと、アプリへのサインインに関する詳細な情報を提供します。
 - Microsoft Cloud App Security は、アプリのリスク情報を提供します。
 
-アプリ ガバナンス、Azure AD、Microsoft Cloud App Security で情報を共有することで、集約された情報を 1 つのポータルに表示し、詳細情報を得るために別のポータルに簡単にリンクすることができます。 次に、いくつかの例を示します:
+アプリ ガバナンス、Azure AD、Microsoft Cloud App Security で情報を共有することで、集約された情報を 1 つのポータルに表示し、詳細情報を得るために別のポータルに簡単にリンクすることができます。次に、いくつかの例を示します:
 
 - アプリ ガバナンスにおけるアプリのサインイン情報:
 
   アプリ ガバナンス ポータルでは、各アプリの集約されたサインイン アクティビティを表示でき、サインイン イベントの詳細については Azure Active Directory 管理センターにリンクすることができます。
-
-- Azure Active Directory 管理センターのアプリ API 使用情報:
-
-  Azure Active Directory 管理センターでは、集約されたアプリの使用状況の情報を表示でき、アプリの使用状況の詳細についてはアプリ ガバナンス ポータルにリンクすることができます。
 
 - Microsoft Cloud App Security ポータルの API 使用情報: 
 

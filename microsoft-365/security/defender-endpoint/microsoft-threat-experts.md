@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 956fb591154df374c8010d875645e1122f3419b2
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 669aea2b0e21e9be421a5bdc68a558a02a659ffd
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879242"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623182"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 

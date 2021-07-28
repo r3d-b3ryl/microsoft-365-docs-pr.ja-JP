@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a73d40e7569f934580b28976b5278b2a972066aa
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 4b9fd7a450ffd52554751cac058a95c938f7ed79
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544603"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622778"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 
@@ -35,17 +35,16 @@ ms.locfileid: "53544603"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 Defender for Endpoint サービスは常に更新され、新機能の強化と機能が含まれます。
 
 Defender for Endpoint プレビュー リリースの新機能について説明し、プレビュー エクスペリエンスをオンにして、今後の機能を最初に試してみてください。
 
->[!TIP]
->次の URL をフィード リーダーにコピーして貼り付け、このページが更新された場合に通知を受け取ります。 `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+> [!TIP]
+> 次の URL をフィード リーダーにコピーして貼り付け、このページが更新された場合に通知を受け取ります。 `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 一般に利用可能な新機能の詳細については、「Defender for Endpoint の新機能 [」を参照してください](whats-new-in-microsoft-defender-atp.md)。
 
- ## <a name="what-you-need-to-know"></a>知る必要があるもの
+## <a name="what-you-need-to-know"></a>知る必要があるもの
 
 パブリック プレビューで機能を操作する場合は、次の機能を使用します。
 
@@ -55,8 +54,6 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 - 選択した地域またはクラウド環境でのみ使用できます。 たとえば、この機能が政府機関のクラウドに存在しない可能性があります。
 - プレビューの個々の機能には、使用およびサポートの制限が多い場合があります。 その場合、この情報は通常、機能のドキュメントに示されています。
 - プレビュー バージョンは標準のサポート レベルで提供され、実稼働環境で使用できます。 
-
-
 
 ## <a name="turn-on-preview-features"></a>プレビュー機能を有効にする
 
@@ -72,9 +69,13 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 以下の機能がプレビュー リリースに含まれています。
 
-- [Web コンテンツ フィルター](web-content-filtering.md) <br> Web コンテンツ フィルターは、Microsoft Defender for Endpoint の Web 保護機能の一部です。 これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。
+- [Web コンテンツ フィルター](web-content-filtering.md)
 
-- [デバイスの正常性とコンプライアンスのレポート](machine-reports.md) <br/> デバイスの正常性とコンプライアンス レポートは、組織内のデバイスに関する高レベルの情報を提供します。
+  Web コンテンツ フィルターは、Microsoft Defender for Endpoint の Web 保護機能の一部です。 これにより、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡および規制できます。 これらの Web サイトの多くは悪意のあるものではないが、コンプライアンス規制、帯域幅の使用、その他の懸念により問題になる可能性があります。
 
-> [!TIP] 
+- [デバイスの正常性とコンプライアンスのレポート](machine-reports.md)
+
+  デバイスの正常性とコンプライアンス レポートは、組織内のデバイスに関する高レベルの情報を提供します。
+
+> [!TIP]
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

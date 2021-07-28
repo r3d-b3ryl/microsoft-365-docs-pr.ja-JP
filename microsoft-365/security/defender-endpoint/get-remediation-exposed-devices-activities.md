@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9b10659f76e5b05bea11f5c6c55ca7c2a34a2db5
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1d421de1bcdc926fa05fae626c0474d2dce54e41
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772163"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621873"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>1 つの修復アクティビティの暴露デバイスを一覧表示する
 
@@ -54,19 +54,19 @@ ms.locfileid: "52772163"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション | RemediationTask.Read.All | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント) | RemediationTask.Read.Read | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
+アプリケーション|RemediationTask.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント)|RemediationTask.Read.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ## <a name="properties-details"></a>プロパティの詳細
 
-プロパティ (id) | データ型 | 説明 | 例
+プロパティ (id)|データ型|説明|例
 :---|:---|:---|:---
-id | String | デバイス ID | w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName | String | デバイス名 | PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform | String | デバイス オペレーティング システム | WindowsServer2012R2
-rbacGroupName | String | このデバイスが関連付けられているデバイス グループの名前 | Servers
+id|String|デバイス ID|w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName|String|デバイス名|PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform|String|デバイス オペレーティング システム|WindowsServer2012R2
+rbacGroupName|String|このデバイスが関連付けられているデバイス グループの名前|Servers
 
 ## <a name="example"></a>例
 
@@ -117,11 +117,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 ## <a name="see-also"></a>関連項目
 
 - [修復方法とプロパティ](get-remediation-methods-properties.md)
-
 - [ID による 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
-
 - [すべての修復作業を一覧表示する](get-remediation-all-activities.md)
-
 - [リスクベースの脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
-
 - [組織の脆弱性](tvm-weaknesses.md)

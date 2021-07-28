@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8985a40c99ad4db9710dfbf9805d537a921f6c96
-ms.sourcegitcommit: f0118e61e490496cb23189cc5c73b23e2ba939be
+ms.custom: api
+ms.openlocfilehash: 814eea3a4c24b5706b288840436022a3cecaa6b1
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780167"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623110"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Azure イベント ハブに高度なハンティング イベントをストリーミングするように Microsoft Defender for Endpoint を構成する
 
@@ -32,7 +33,7 @@ ms.locfileid: "52780167"
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -54,7 +55,7 @@ ms.locfileid: "52780167"
 
 6. イベント ハブ **名とイベント** ハブ **リソース ID を入力します**。
 
-   Event Hubs リソース ID を取得するには [、Azure](https://ms.portal.azure.com/) > プロパティ タブの Azure Event **Hubs** 名前空間ページに移動し、[リソース ID] >を **コピーします**。
+   Event Hubs リソース ID を取得するには、Azure の [プロパティ] タブの [[Azure](https://ms.portal.azure.com/) Event **Hubs** 名前空間] ページ>[リソース ID] の下のテキストを \> **コピーします**。
 
    ![イベント ハブ リソース Id1 のイメージ](images/event-hub-resource-id.png)
 
@@ -62,7 +63,7 @@ ms.locfileid: "52780167"
 
 ## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Azure Event Hubs のイベントのスキーマ
 
-```
+```text
 {
     "records": [
                     {
@@ -91,18 +92,19 @@ ms.locfileid: "52780167"
 1. ログイン[して[詳細](https://securitycenter.windows.com)Microsoft Defender セキュリティ センター]ページ[に移動します](https://securitycenter.windows.com/hunting-package)。
 
 2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。
- 
-   ```
+
+   ```text
    {EventType}
    | getschema
    | project ColumnName, ColumnType 
    ```
 
-- デバイス情報イベントの例を次に示します。 
+- デバイス情報イベントの例を次に示します。
 
   ![イベント ハブ リソース Id2 のイメージ](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>関連項目
+
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [エンドポイント ストリーミング API 用 Microsoft Defender](raw-data-export.md)
 - [Microsoft Defender for Endpoint イベントを Azure ストレージ アカウントにストリーミングする](raw-data-export-storage.md)

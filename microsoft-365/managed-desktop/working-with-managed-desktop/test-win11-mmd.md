@@ -9,28 +9,16 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4ac12c4ec340bd6bb73418dae75774198190094b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: de608fa58d0267050b510ef8308d716b608f8e37
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544687"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624442"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップを使用して Windows 11 をプレビューおよびテストする
 
  11 の互換性テスト プログラムWindows環境に登録して参加するMicrosoft マネージド デスクトップします。 11 と WindowsのMicrosoft マネージド デスクトップについては、「Windows [11」を参照Microsoft マネージド デスクトップ。](../intro/win11-overview.md) 
-
-## <a name="check-device-eligibility"></a>デバイスの適格性を確認する
-
-現在までに、デバイスの 95% 以上Microsoft マネージド デスクトップ 11 の適格性Windows[満たしています](/windows/whats-new/windows-11-requirements)。 デバイスの適格性の状態に関する詳細は、Microsoft マネージド デスクトップ。 要求をファイルするには、次の手順を実行します。
-
-1. サービス エンジニアリング チームと一緒に新Microsoft マネージド デスクトップを開きます。 要求をファイルする方法の詳細については、「管理者サポート」 [を参照してください](admin-support.md)。
-2. フィールドには、次の値を使用します。
-    - タイトル: Windows 11 デバイスの適格性
-    - 要求の種類: 情報の要求
-    - カテゴリ: デバイス
-    - サブカテゴリ: その他
-
 
 ## <a name="add-devices-to-the-windows-11-test-group"></a>デバイスを 11 Windowsグループに追加する
 

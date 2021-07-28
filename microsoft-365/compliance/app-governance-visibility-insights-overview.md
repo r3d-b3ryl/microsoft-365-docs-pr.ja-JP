@@ -2,8 +2,8 @@
 title: 可視性と分析情報について学習する
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可視性と分析情報について学習する。
-ms.openlocfilehash: eac4cd67591d261843f0d3efe476db027c58db91
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: a106dd948bb220a22862cce60cd90e7f5a980205
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541087"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624058"
 ---
 # <a name="learn-about-visibility-and-insights"></a>可視性と分析情報について学習する
 

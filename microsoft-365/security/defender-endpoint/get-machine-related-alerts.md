@@ -1,6 +1,6 @@
 ---
 title: コンピューター関連のアラート API を取得する
-description: Get machine 関連のアラート API を使用して、Microsoft Defender for Endpoint の特定のデバイスに関連するすべてのアラートを取得する方法について説明します。
+description: コンピューター関連のアラート API を使用する方法について説明します。 この API を使用すると、Microsoft Defender for Endpoint の特定のデバイスに関連するアラートを取得できます。
 keywords: apis, graph api, サポートされている API, get, デバイス, 関連, アラート
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bf445332fed7b8661c510bf60f36088b79e2d8df
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 338cc8c6edb274eba8daaf84472be91f77d4d703
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770027"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624118"
 ---
 # <a name="get-machine-related-alerts--api"></a>コンピューター関連のアラート API を取得する
 
@@ -29,47 +29,50 @@ ms.locfileid: "52770027"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API の説明
+
 特定のデバイスに [関連付](alerts.md) なすべてのアラートを取得します。
 
-
 ## <a name="limitations"></a>制限事項
+
 1. 構成済みの保持期間に従って、最後に更新されたデバイスに対してクエリを実行できます。
 2. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
-
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   Alert.Read.All |    'すべてのアラートの読み取り'
-アプリケーション |   Alert.ReadWrite.All |   'すべてのアラートの読み取りと書き込み'
+アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
+アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
 委任 (職場または学校のアカウント) | Alert.Read | 'アラートの読み取り'
 委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
 
->[!Note]
+> [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
->- ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
->- ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+>
+> - ユーザーには、少なくとも次の役割のアクセス許可が必要です。'データの表示' 。 アクセス許可の詳細については、「役割の作成と [管理」を参照してください](user-roles.md)。
+> - ユーザーは、デバイス グループの設定に基づいて、デバイスにアクセスする必要があります。 デバイス グループ設定の詳細については、「デバイス グループの作成と [管理」を参照してください](machine-groups.md)。
 
 ## <a name="http-request"></a>HTTP 要求
+
 ```http
 GET /api/machines/{id}/alerts
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 
-
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答
-成功し、デバイスが存在する場合 - 本文のアラート[](alerts.md)エンティティの一覧で 200 OK。 デバイスが見つからなかった場合 - 404 が見つかりません。
+
+成功し、デバイスが存在する場合: 200 [](alerts.md) OK 本文のアラート エンティティの一覧。 デバイスが見つからない場合:404 が見つかりません。

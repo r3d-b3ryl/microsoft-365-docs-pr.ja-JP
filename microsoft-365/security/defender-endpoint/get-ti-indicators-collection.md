@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d9ec8610957af0bc7741848e7c7bd4fe850f5e32
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: a94c9e45fca9e7e5be2dde04d48267fb1c453999
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770428"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624286"
 ---
 # <a name="list-indicators-api"></a>リスト インジケーター API
 
@@ -29,69 +29,74 @@ ms.locfileid: "52770428"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>API の説明
-すべてのアクティブなインジケーターのコレクションを [取得します](ti-indicator.md)。
-<br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
-<br>OData のクエリは、およびプロパティ ```$filter``` ```indicatorValue``` ```indicatorType``` ```creationTimeDateTimeUtc``` ```createdBy``` で ```action``` サポート ```severity``` されています。
-<br>Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
 
+すべてのアクティブなインジケーターのコレクションを [取得します](ti-indicator.md)。
+
+[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+
+OData のクエリは、およびプロパティ `$filter` `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` で `action` サポート `severity` されています。
+
+Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>制限事項
+
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。 
 
-
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「開始する」 [を参照してください。](apis-intro.md)
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   Ti.ReadWrite |  '読み取りおよび書き込みインジケーター'
-アプリケーション |   Ti.ReadWrite.All |  'すべてのインジケーターの読み取りと書き込み'
-委任 (職場または学校のアカウント) |    Ti.ReadWrite |  '読み取りおよび書き込みインジケーター'
+アプリケーション|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+アプリケーション|Ti.ReadWrite.All|'すべてのインジケーターの読み取りと書き込み'
+委任 (職場または学校のアカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 GET https://api.securitycenter.microsoft.com/api/indicators
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前|種類|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
-
+Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは、Indicator エンティティのコレクションを持つ 200 Ok 応答コード [を](ti-indicator.md) 返します。
 
->[!Note]
+> [!NOTE]
 > アプリケーションに 'Ti.ReadWrite.All' アクセス許可がある場合は、すべてのインジケーターに公開されます。 それ以外の場合は、作成したインジケーターにのみ公開されます。
 
-## <a name="example-1"></a>例 1:
+## <a name="example-1"></a>例 1
 
-**要求**
+### <a name="example-1-request"></a>例 1 要求
 
 すべてのインジケーターを取得する要求の例を次に示します。
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/indicators
 ```
 
-**応答**
+### <a name="example-1-response"></a>例 1 応答
 
 以下は、応答の例です。
 
-```
+```json
 HTTP/1.1 200 Ok
 Content-type: application/json
 {
@@ -140,21 +145,21 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2"></a>例 2:
+## <a name="example-2"></a>例 2
 
-**要求**
+### <a name="example-2-request"></a>例 2 要求
 
 'AlertAndBlock' アクションを持つすべてのインジケーターを取得する要求の例を次に示します。 
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'AlertAndBlock'
 ```
 
-**応答**
+### <a name="example-2-response"></a>例 2 応答
 
 以下は、応答の例です。
 
-```
+```json
 HTTP/1.1 200 Ok
 Content-type: application/json
 {

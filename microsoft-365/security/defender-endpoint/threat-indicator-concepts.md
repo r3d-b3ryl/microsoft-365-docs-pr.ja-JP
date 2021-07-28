@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb82634c8c2ef11131a43e8e479bf88d5626ed03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f707e8290c7b976ace0495e03a3b909a8f544294
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066083"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623374"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>脅威インテリジェンスの概念を理解する
 
@@ -33,7 +33,7 @@ ms.locfileid: "51066083"
 
 
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-threatindicator-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-threatindicator-abovefoldlink)
 
 高度なサイバーセキュリティ攻撃は、複数の複雑な悪意のあるイベント、属性、コンテキスト情報で構成されます。 これらのアクティビティの中で疑わしいと見なされるアクティビティを特定して決定すると、困難な作業になる可能性があります。 業界固有の既知の属性と異常なアクティビティに関する知識は、観測された動作を疑わしいと呼ぶ場合を知る上で基本的です。
 

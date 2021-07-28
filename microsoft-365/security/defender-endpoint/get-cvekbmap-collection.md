@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 85c4d82f07354193fb1e997abb98dbdaa02dc8ef
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: afb3e689c33b7d6d314bc23b19869824b3666c00
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166888"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623950"
 ---
 # <a name="get-cve-kb-map-api"></a>CVE-KB マップ API の取得
 
@@ -32,7 +32,7 @@ ms.locfileid: "51166888"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,30 +40,34 @@ ms.locfileid: "51166888"
 
 KB および CVE の詳細に対する CVE のマップを取得します。
 
-## <a name="permissions"></a>権限
+## <a name="permissions"></a>アクセス許可
+
 ユーザーには読み取りアクセス許可が必要です。
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 GET /testwdatppreview/cvekbmap
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-ヘッダー | 値 
+ヘッダー|値
 :---|:---
-Authorization | ベアラー {token}。 **必須**
-コンテンツ タイプ | application/json
+Authorization|ベアラー {token}。 **必須**
+コンテンツ タイプ|application/json
 
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答
+
 成功し、マップが存在する場合 - 200 OK。
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request-example"></a>要求の例
 
 以下は、要求の例です。
 
@@ -71,7 +75,7 @@ Empty
 GET https://graph.microsoft.com/testwdatppreview/CveKbMap
 ```
 
-**応答**
+### <a name="response-example"></a>応答の例
 
 以下は、応答の例です。
 
@@ -87,7 +91,6 @@ GET https://graph.microsoft.com/testwdatppreview/CveKbMap
             "title": "Cumulative Security Update for Internet Explorer",
             "severity": "Critical"
         },
-    …
+    ...
 }
-
 ```

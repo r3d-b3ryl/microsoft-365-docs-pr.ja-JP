@@ -1,9 +1,9 @@
 ---
-title: Microsoft Viva Topics でトピックを大規模に管理する
-author: chuckedmonson
+title: トピックを大規模に管理Microsoft Viva トピック
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,14 +13,14 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: ビバ トピックを使用して組織内の多くのトピックを管理するためのベスト プラクティスについて説明します。
-ms.openlocfilehash: 613c4ed85a62efd22ba104c810420a2d0af015c5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 96580df486195af991e446ae6f1bbb4b08013947
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624839"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624358"
 ---
-# <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Microsoft Viva Topics でトピックを大規模に管理する
+# <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>トピックを大規模に管理Microsoft Viva トピック
 
 サイトまたは組織全体SharePointビバ トピックにインデックスを作成すると、多くのトピックが生成される場合があります。 このような状況が発生し、[トピックの管理] ページに何千もの推奨トピックが表示される場合は、開始する場所を知るのが困難な場合があります。 この記事では、多数のトピックを持つ大規模な組織でも、情報を検索しているユーザーに表示されるトピックと情報を最適化する方法について説明します。
 
@@ -82,7 +82,7 @@ Viva Topics を構成すると、アクセス許可が付与されたユーザ�
 
 - 表示されるファイルとページでは、このトピックがドキュメントで言及された回数が識別されますが、特定の種類 (プロジェクトやチームなど) のトピックへの参照を識別する特定のコンテキストでもこのトピックを説明する必要があります。 これは、AI の証拠としてカウントされます。 また、ドキュメントのタイトル、ドキュメントの種類、その他の分析機能 (ビューなど) でのトピック名の発生も考慮されます。
 
-   ![提案されたトピックと Microsoft Viva がこのトピックを発見したというバナーの画像。](../media/knowledge-management/scale-topics-suggested-you-have-access.png)
+   ![「提案されたトピックとトピック」と表示されるバナーのMicrosoft Vivaこのトピックを発見しました。](../media/knowledge-management/scale-topics-suggested-you-have-access.png)
 
    ![[提案されたトピック] と [このページの編集] というバナーの画像を使用して、このトピックへの関与を説明します。](../media/knowledge-management/scale-topics-suggested-describe-your-involvement.png)
 
@@ -144,11 +144,11 @@ Viva Topics を構成すると、アクセス許可が付与されたユーザ�
 
 ### <a name="search"></a>検索
 
-一般的な検索用語は、多くの場合、トピックとして検出されます。 Microsoft Search の [上位クエリ レポートを使用](/sharepoint/view-search-usage-reports)すると、組織内で最も頻繁に検索用語を識別できます。 これらの用語のトピックが検出された場合は、キュレーションの候補として優れた候補です。 これらのトピックは、Microsoft Search で応答カードとして提示できます。
+一般的な検索用語は、多くの場合、トピックとして検出されます。 このページの[上位クエリ レポートをMicrosoft Search、](/sharepoint/view-search-usage-reports)組織内で最も頻繁に検索する用語を識別できます。 これらの用語のトピックが検出された場合は、キュレーションの候補として優れた候補です。 これらのトピックは、次のトピックで応答カードMicrosoft Search。
 
-現在 Microsoft Search ブックマークを使用している [場合](/microsoftsearch/manage-bookmarks)は、トピックに置き換えられるこれらのブックマークを検討してください。 ブックマークの応答カードには、タイトル、説明、および URL が含まれる。 状況によっては、ユーザーにとってトピック カードの方が役に立つ場合があり、トピック カードにはリソースとユーザーも表示されます。
+現在ブックマークを使用している[場合Microsoft Search](/microsoftsearch/manage-bookmarks)トピックに置き換えられるものについて検討してください。 ブックマークの応答カードには、タイトル、説明、および URL が含まれる。 状況によっては、ユーザーにとってトピック カードの方が役に立つ場合があり、トピック カードにはリソースとユーザーも表示されます。
 
-ユーザーの検索エクスペリエンスでは、ユーザーが旅行のような用語を検索すると、検索結果はMicrosoft Search の次の優先順位で表示されます。
+ユーザーの検索エクスペリエンスでは、ユーザーが旅行のような用語を検索すると、検索結果は次の優先順位で表示Microsoft Search。
 
 1.  発行済みまたは確認済みトピック
 
