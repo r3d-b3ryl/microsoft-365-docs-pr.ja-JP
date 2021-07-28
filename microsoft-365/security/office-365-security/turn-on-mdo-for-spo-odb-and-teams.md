@@ -20,12 +20,12 @@ description: 管理者は、セーフ SharePoint、OneDrive、Microsoft Teams、
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b64b3cfb29b3be999c9e26804e35dc4d02e48fbb
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 80c35b91de046642a7b4ff4c66d1a42f76976c5b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083094"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543247"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
@@ -85,7 +85,7 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 Set-SPOTenant -DisallowInfectedFileDownload $true
 ```
 
-**注**:
+**注意**: 
 
 - この設定は、ユーザーと管理者の両方に影響します。
 - ユーザーは引き続き悪意のあるファイルを削除できます。
@@ -94,7 +94,7 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 ## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>手順 3 (推奨) Microsoft 365 Defenderを使用して、検出されたファイルのアラート ポリシーを作成する
 
-SharePoint、OneDrive、および Microsoft Teams の添付ファイルが悪意のあるファイルを検出したときに、セーフ 管理者に通知するアラート ポリシーを作成できます。 アラートの詳細については、「Create [activity alerts in the Microsoft 365 Defender ポータル」を参照してください](../../compliance/create-activity-alerts.md)。
+SharePoint、OneDrive、および Microsoft Teams の添付ファイルが悪意のあるファイルを検出したときに、セーフ 管理者に通知するアラート ポリシーを作成できます。 アラートの詳細については、「アラート ポリシー [」を参照してください](../../compliance/alert-policies.md)。
 
 1. [ポリシー] Microsoft 365 Defenderに移動し、[ポリシー] **&** \> **ポリシーを** 開きます <https://security.microsoft.com/alertpolicies> 。
 

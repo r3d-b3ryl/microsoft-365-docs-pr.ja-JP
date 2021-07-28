@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: f8de3d8b2d7c07f8d783ecbe85b7e4a9c612aae5
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 342e471c897c6722e9a7d67578e10b85719d5bd8
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985467"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595992"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
@@ -31,7 +31,7 @@ ms.locfileid: "52985467"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 イベント ビューアーで攻撃表面の縮小イベントを確認し、動作しているルールや設定を監視します。 また、設定が "ノイズ" すぎるか、毎日のワークフローに影響を与えるかどうかを判断することもできます。
 
@@ -148,18 +148,18 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
    ![イベント ビューアーを使用したアニメーションの表示](images/event-viewer.gif)
 
-機能 | プロバイダー/ソース | イベント ID | 説明
+特徴 | プロバイダー/ソース | イベント ID | 説明
 :-|:-|:-:|:-
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 1 | ACG の監査
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 2 | ACG の実施
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 3 | [Do not allow child processes] (子プロセスを許可しない) 監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 4 | [Do not allow child processes] (子プロセスを許可しない) ブロック
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 5 | [Block low integrity images] (整合性が低いイメージのブロック) 監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 6 | [Block low integrity images] (整合性が低いイメージのブロック) ブロック
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 7 | [Block remote images] (リモート イメージのブロック) 監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 8 | [Block remote images] (リモート イメージのブロック) ブロック
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 9 | [Disable win32k system calls] (win32k システム呼び出しの無効化) 監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 10 | [Disable win32k system calls] (win32k システム呼び出しの無効化) ブロック
+エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 4  | [Do not allow child processes] (子プロセスを許可しない) ブロック
+エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 5  | [Block low integrity images] (整合性が低いイメージのブロック) 監査
+エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 6  | [Block low integrity images] (整合性が低いイメージのブロック) ブロック
+エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 7  | [Block remote images] (リモート イメージのブロック) 監査
+エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 8  | [Block remote images] (リモート イメージのブロック) ブロック
+エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 9  | [Disable win32k system calls] (win32k システム呼び出しの無効化) 監査
+エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 10  | [Disable win32k system calls] (win32k システム呼び出しの無効化) ブロック
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 11 | [Code integrity guard] (コードの整合性の保護) 監査
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 12  | [Code integrity guard] (コードの整合性の保護) ブロック
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 13 | EAF の監査
@@ -174,16 +174,16 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 22 | ROP CallerCheck の実施
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 23 | ROP SimExec の監査
 エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 24 | ROP SimExec の実施
-エクスプロイト保護 | WER-Diagnostics | 5 | CFG のブロック
+エクスプロイト保護 | WER-Diagnostics | 5  | CFG のブロック
 エクスプロイト保護 | Win32K (運用) | 260 | 信頼されていないフォント
 ネットワーク保護 | Windows Defender (運用) | 5007 | 設定が変更された場合のイベント
 ネットワーク保護 | Windows Defender (運用) | 1125 | 監査モードでネットワーク保護が発生した場合のイベント
 ネットワーク保護 | Windows Defender (運用) | 1126 | ブロック モードでネットワーク保護が発生した場合のイベント
-制御されたフォルダー アクセス | Windows Defender (運用) | 5007 | 設定が変更された場合のイベント
-制御されたフォルダー アクセス | Windows Defender (運用) | 1124 | 監査された制御フォルダー アクセス イベント
-制御されたフォルダー アクセス | Windows Defender (運用) | 1123 | ブロックされたフォルダー アクセスイベントの制御
-制御されたフォルダー アクセス | Windows Defender (運用) | 1127 | ブロックされたフォルダー アクセスのセクター書き込みブロック イベント
-制御されたフォルダー アクセス | Windows Defender (運用) | 1128 | 監査された制御フォルダー アクセス セクター書き込みブロック イベント
+フォルダー アクセスの制御 | Windows Defender (運用) | 5007 | 設定が変更された場合のイベント
+フォルダー アクセスの制御 | Windows Defender (運用) | 1124 | 監査された制御フォルダー アクセス イベント
+フォルダー アクセスの制御 | Windows Defender (運用) | 1123 | ブロックされたフォルダー アクセスイベントの制御
+フォルダー アクセスの制御 | Windows Defender (運用) | 1127 | ブロックされたフォルダー アクセスのセクター書き込みブロック イベント
+フォルダー アクセスの制御 | Windows Defender (運用) | 1128 | 監査された制御フォルダー アクセス セクター書き込みブロック イベント
 攻撃面の縮小 | Windows Defender (運用) | 5007 | 設定が変更された場合のイベント
 攻撃面の縮小 | Windows Defender (運用) | 1122 | 監査モードでルールが発生した場合のイベント
 攻撃面の縮小 | Windows Defender (運用) | 1121 | ブロック モードでルールが発生した場合のイベント

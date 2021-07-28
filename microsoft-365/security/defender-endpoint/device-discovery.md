@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9a21c5d067a0ec27b00ff4b4c9aae90bbb65a062
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4d44fef395ad7da336e55f4cd0ca6eed46e9393d
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289873"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596292"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -85,10 +85,10 @@ Standard モードを有効にすると、検出センサーによって生成�
 
 Microsoft Defender for Endpoint によって検出されたが、まだオンボードおよびセキュリティ保護されていないデバイスは、[エンドポイント] タブの [デバイス インベントリ] に表示されます。これで、次の値を持つ可能性があるオンボード状態と呼ばれるデバイス インベントリ リストで新しいフィルターを使用できます。
 
-- オンボード – エンドポイントは、Microsoft Defender for Endpoint にオンボードされます。
-- オンボード可能 – ネットワークでエンドポイントが検出され、オペレーティング システムは Microsoft Defender for Endpoint でサポートされているエンドポイントとして識別されましたが、現在オンボードされていません。 これらのデバイスのオンボーディングを強くお勧めします。
-- サポートされていません– エンドポイントはネットワークで検出されましたが、Microsoft Defender for Endpoint ではサポートされていません。
-- 不十分な情報 – システムがデバイスのサポート性を判断できない。 ネットワーク内のより多くのデバイスで標準検出を有効にすると、検出された属性を強化できます。
+- オンボード: エンドポイントは Microsoft Defender for Endpoint にオンボードされます。
+- オンボード可能: ネットワークでエンドポイントが検出され、オペレーティング システムは Microsoft Defender for Endpoint でサポートされているエンドポイントとして識別されましたが、現在オンボードされていません。 これらのデバイスのオンボーディングを強くお勧めします。
+- サポートされていません: エンドポイントはネットワークで検出されましたが、Microsoft Defender for Endpoint ではサポートされていません。
+- 不十分な情報: システムは、デバイスのサポート可能性を判断する必要があります。 ネットワーク内のより多くのデバイスで標準検出を有効にすると、検出された属性を強化できます。
 
 ![デバイス インベントリ ダッシュボードのイメージ](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
@@ -120,7 +120,7 @@ Microsoft Defender for Endpoint によって検出されたが、まだオンボ
 
 次のクエリ例を試してみてください。
 
-```
+```text
 DeviceNetworkEvents
 | where ActionType == "ConnectionAcknowledged" or ActionType == "ConnectionAttempt"
 | take 10
@@ -136,7 +136,7 @@ DeviceNetworkEvents
 2. 管理されていないデバイスは、定義された条件に基づいて既存のデバイス グループに割り当てられます。
 3. まれに、標準検出によってネットワーク モニターやセキュリティ ツールでアラートがトリガーされる場合があります。 このようなイベントが発生した場合は、これらの問題が繰り返されるのを防ぐためのフィードバックをお寄せください。 特定のターゲットまたはサブネット全体が Standard Discovery によってアクティブにプローブされるのを明示的に除外できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [デバイス検出の構成](configure-device-discovery.md)
 - [デバイスの検出に関するよくある質問](device-discovery-faq.md)

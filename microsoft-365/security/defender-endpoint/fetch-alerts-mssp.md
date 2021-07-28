@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 456507533265bc085adc1008f3264e123569a6ca
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c1695729a12f9cce74663c35f6a9cd537ac468b6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770771"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543487"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>MSSP カスタマー テナントからのアラートの取得
 
@@ -49,8 +49,8 @@ SIEM システムにアラートをフェッチするには、次の手順を実
 
 手順 2: 顧客のテナントからアクセストークンと更新トークンを取得する
  
-手順 3: アプリケーションのインストールを許可Microsoft Defender セキュリティ センター
- 
+手順 3: アプリケーションのインストールを許可Microsoft 365 Defender
+
 ### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>手順 1: アプリケーションを作成する (AD Azure Azure Active Directory)
  
 アプリケーションを作成し、顧客の Microsoft Defender for Endpoint テナントからアラートを取得するためのアクセス許可を付与する必要があります。
@@ -160,14 +160,14 @@ SIEM システムにアラートをフェッチするには、次の手順を実
 
 8. PowerShell ウィンドウで、アクセス トークンと更新トークンを受け取ります。 SIEM コネクタを構成するには、更新トークンを保存します。 
  
-### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>手順 3: アプリケーションのインストールを許可Microsoft Defender セキュリティ センター
-アプリケーションで作成したアプリケーションを許可する必要Microsoft Defender セキュリティ センター。
+### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>手順 3: アプリケーションのインストールを許可Microsoft 365 Defender
+アプリで作成したアプリケーションを許可するMicrosoft 365 Defender。
  
 アプリケーションを許可するには、ポータル システム設定の **管理** 権限が必要です。 それ以外の場合は、アプリケーションを許可する顧客を要求する必要があります。
 
-1. に移動 `https://securitycenter.windows.com?tid=<customer_tenant_id>` します ( \<customer_tenant_id\> 顧客のテナント ID に置き換えてください。
+1. に移動 `https://security.microsoft.com?tid=<customer_tenant_id>` します ( \<customer_tenant_id\> 顧客のテナント ID に置き換えてください。
 
-2. [SIEM  >  **設定] をクリックします**。 
+2. [**エンドポイント 設定**  >    >  **SIEM] を**  >  **クリックします**。 
 
 3. **[MSSP] タブを選択** します。
 

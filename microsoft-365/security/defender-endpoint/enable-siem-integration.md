@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87078bb7bfc6b38788fea2a6a4c3c9108be1d5b4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 81bed621396e4dd8fe57eae157ed2be62f350fc6
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842964"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53594936"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender で SIEM 統合を有効にする
 
@@ -31,9 +31,9 @@ ms.locfileid: "52842964"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-セキュリティ情報とイベント管理 (SIEM) の統合を有効にして、セキュリティ情報から検出をMicrosoft Defender セキュリティ センター。 SIEM ソリューションを使用するか、検出 REST API に直接接続して検出をプルします。
+セキュリティ情報とイベント管理 (SIEM) の統合を有効にして、セキュリティ情報から検出を取得Microsoft 365 Defender。 SIEM ソリューションを使用するか、検出 REST API に直接接続して検出をプルします。
 
 >[!NOTE]
 >- [Microsoft Defender for Endpoint Alert は](alerts.md) 、1 つ以上の検出から構成されます。
@@ -52,12 +52,13 @@ ms.locfileid: "52842964"
 - 最初のライセンス認証中に、資格情報を入力するためのポップアップ画面が表示されます。 このサイトのポップアップを許可してください。
 
 ## <a name="enabling-siem-integration"></a>SIEM 統合の有効化 
-1. ナビゲーション ウィンドウで、[SIEM]**を設定**  >  **します**。
 
-    ![[SIEM 統合] メニュー 1 からの設定イメージ](images/enable_siem.png)
+1. ナビゲーション ウィンドウで、[エンドポイント **API** SIEM  >    >  **設定] を**  >  **選択します**。
 
-    >[!TIP]
-    >SIEM コネクタ アプリケーションを有効にしようとするときにエラーが発生した場合は、ブラウザーのポップアップ ブロッカー設定を確認してください。 機能を有効にするときに開いている新しいウィンドウがブロックされている可能性があります。 
+      :::image type="content" source="../../media/enable-siemnew.png" alt-text="[SIEM 統合] メニュー 1 からの設定イメージ":::
+
+      >[!TIP]
+      >SIEM コネクタ アプリケーションを有効にしようとするときにエラーが発生した場合は、ブラウザーのポップアップ ブロッカー設定を確認してください。 機能を有効にするときに開いている新しいウィンドウがブロックされている可能性があります。 
 
 2. [SIEM **統合を有効にする] を選択します**。 これにより、値が事前に入力された **SIEM** コネクタ アクセスの詳細セクションがアクティブ化され、アプリケーションが Azure Active Directory (Azure AD) テナントの下に作成されます。
 
@@ -85,7 +86,7 @@ ms.locfileid: "52842964"
 
 6. [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp)の Azure ADアプリ登録を作成する手順に従い、適切なアクセス許可を割り当て、アラートを読み取ってください。
 
-これで、SIEM ソリューションの構成またはプログラムによるアクセスを通じて検出 REST API への接続を続行できます。 SIEM ソリューションを構成するときにトークンを使用して、ユーザーからの検出を受信Microsoft Defender セキュリティ センター。
+これで、SIEM ソリューションの構成またはプログラムによるアクセスを通じて検出 REST API への接続を続行できます。 SIEM ソリューションを構成するときにトークンを使用して、ユーザーからの検出を受信Microsoft 365 Defender。
 
 ## <a name="integrate-microsoft-defender-for-endpoint-with-ibm-qradar"></a>Microsoft Defender for Endpoint と IBM QRadar の統合 
 Microsoft Defender for Endpoint から検出を収集するために IBM QRadar を構成できます。 詳細については [、「IBM Knowledge Center」を参照してください](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)。

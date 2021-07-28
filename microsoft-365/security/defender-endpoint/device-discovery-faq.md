@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b2c0b986ef6dbb54cd34e9b4413711cd3e5f9c6d
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: ac2643adaa2e0a30e94434a0fe34e4d6ec2b3b1d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053157"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542971"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>デバイスの検出に関するよく寄せられる質問
 
@@ -81,7 +81,7 @@ ms.locfileid: "53053157"
 
 
 ## <a name="what-is-the-amount-of-traffic-being-generated-by-the-standard-discovery-active-probe"></a>Standard Discovery アクティブ プローブによって生成されるトラフィックの量は何ですか?
- アクティブプローブは、オンボードデバイスとプローブされたデバイスの間で最大 5K のトラフィックを生成できます。すべてのプローブ試行
+ アクティブプローブは、オンボードデバイスとプローブされたデバイスの間で最大 50Kb のトラフィックを生成できます。すべてのプローブ試行
 
 ## <a name="why-is-there-a-discrepancy-between-can-be-onboarded-devices-in-the-device-inventory-and-the-number-of-devices-to-onboard-in-the-dashboard-tile"></a>デバイス インベントリ内の "オンボード可能" デバイスと、ダッシュボード タイル内の "オンボードするデバイス" の数との間に不一致がある理由
 デバイス インベントリの [オンボード可能] の下にリストされているデバイスの数、"Microsoft Defender for Endpoint にオンボード" セキュリティ推奨事項、および "オンボードするデバイス" ダッシュボード ウィジェットの数の違いがあります。

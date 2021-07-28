@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cbe2fb39221bd9907a3d690503a392edb019d61b
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 822ae68ce75142f9a08dab2cdcce297cf30eec2c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194855"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542143"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
 
@@ -85,3 +85,5 @@ iOS での Microsoft Defender for Endpoint の展開は、MICROSOFT エンドポ
 
 - [iOS での Microsoft Defender for Endpoint の展開](ios-install.md)
 - [iOS の機能で Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
+- [Defender for Endpoint リスクシグナル (MAM) を含めるアプリ保護ポリシーを構成する](ios-install-unmanaged.md)
+- [Microsoft Defender for Endpoint のデバイス リスク スコアに基づいて条件付きアクセス ポリシーを構成する](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex のシナリオと使用例
+title: Microsoft SharePoint Syntex のシナリオとユース ケース
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,21 +14,21 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-description: 組織で Syntex を使用するSharePointシナリオを確認します。
-ms.openlocfilehash: b28239a304c8fab209436c12e6cdbffe160b7981
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+description: 組織で使用する方法に関するSharePoint Syntexを確認します。
+ms.openlocfilehash: 4714af4c4182c3c57625a82dff0cfdc1d5260785
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52697067"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543211"
 ---
-# <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のシナリオと使用例
+# <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のシナリオとユース ケース
 
-次のシナリオ例を使用して、組織で Syntex を使用する方法SharePointを確認します。
+次のシナリオの例を使用して、組織で使用する方法に関するSharePoint Syntexを確認します。
 
 - [シナリオ: フォーム処理を使用して請求書からデータを追跡する](adoption-scenarios.md#scenario-track-data-from-invoices-with-form-processing)
 - [シナリオ: ドキュメントを理解して契約からの情報を追跡する](adoption-scenarios.md#scenario-track-information-from-contracts-with-document-understanding)
-- [シナリオ: Syntex に基づくレコード管理、ドキュメント ガバナンス、コンプライアンス プロセスでリスクSharePointする](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
+- [シナリオ: レコード管理、ドキュメント ガバナンス、およびコンプライアンス プロセスを基にしたリスクを回避SharePoint Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
 - [シナリオ: 以前にアクセスできないドキュメントから情報をキャプチャする](adoption-scenarios.md#scenario-capture-information-from-previously-inaccessible-documents)
 - [シナリオ: データ処理を改善して分析と分析を提供する](adoption-scenarios.md#scenario-improve-data-processing-to-provide-insights-and-analytics)
 - [シナリオ: 注文処理の自動化](adoption-scenarios.md#scenario-automate-order-processing)
@@ -36,7 +36,7 @@ ms.locfileid: "52697067"
 
 ## <a name="scenario-track-data-from-invoices-with-form-processing"></a>シナリオ: フォーム処理を使用して請求書からデータを追跡する
 
-たとえば、Syntex および他の機能を使用SharePoint、Power Automateを設定して請求書を追跡および監視できます。
+たとえば、請求書を追跡および監視するために、SharePoint Syntex機能Power Automateプロセスを設定できます。
 
 1. 請求書ドキュメントを格納するライブラリを設定します。
 1. ドキュメント内のフィールドを認識するようにモデルをトレーニングします。
@@ -46,7 +46,7 @@ ms.locfileid: "52697067"
     - 請求書が期日を過ぎた。
     - 請求書は、自動承認金額よりも大きい金額です。
 
-![Syntex とデータを使用して請求書SharePoint追跡Power Automate](../media/content-understanding/process-invoices-flow.png)
+![請求書を追跡および監視するには、SharePoint SyntexとPower Automate](../media/content-understanding/process-invoices-flow.png)
 
 このシナリオを自動化すると、次の操作を実行できます。
 
@@ -63,14 +63,14 @@ ms.locfileid: "52697067"
 1. モデルが完了したら、契約書をアップロードできるライブラリにモデルを適用します。
 1. 保持ラベルを日付フィールドに適用して、必要な期間、契約がライブラリに保持されます。
 
-![Syntex および保持ラベルを使用して契約SharePoint追跡および監視する](../media/content-understanding/process-contracts-flow.png)
+![ユーザーおよび保持ラベルを使用して契約SharePoint Syntex追跡および監視する](../media/content-understanding/process-contracts-flow.png)
 
 このシナリオを自動化すると、次の操作を実行できます。
 
 - 手動で行う代わりに、契約からデータを自動的に抽出することで、時間と資金を節約できます。
 - 保持ラベルを使用して、契約が適切に保持されるのを確認して、コンプライアンスを強化します。
 
-## <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex"></a>シナリオ: Syntex に基づくレコード管理、ドキュメント ガバナンス、コンプライアンス プロセスでリスクSharePointする
+## <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex"></a>シナリオ: レコード管理、ドキュメント ガバナンス、およびコンプライアンス プロセスを基にしたリスクを回避SharePoint Syntex
 
 リスクを減らすことは、ほとんどの企業にとって一般的な目標です。 以下が必要な場合があります。
 
@@ -79,7 +79,7 @@ ms.locfileid: "52697067"
 - 会社のポリシーに準拠するために、領収書、契約などについて監査する。
 - コンプライアンスに必要なすべてのドキュメントがプロジェクトに含まれています。
 
-より良いガバナンスを必要とするドキュメントとフォームをキャプチャし、適切に分類、監査、フラグを設定するために、SharePoint Syntex に準拠するためのいくつかのプロセスを設定します。 エンド ユーザーが手動でタグSharePoint、コンプライアンス チームがガバナンス ルールとアーカイブを手動で適用するのではなく、コンテンツを自動分類するには、Syntex を使用して自動的に分類できます。 また、簡単な検索エクスペリエンスを有効にし、データボリュームを管理し、レコード管理と保持ポリシーを適用し、コンプライアンスを確保し、ベスト プラクティスのアーカイブと削除を行います。
+より良いガバナンスを必要とするドキュメントSharePoint Syntexフォームをキャプチャし、適切に分類、監査、フラグ付けするためのプロセスを設定します。 エンド ユーザーが手動でタグSharePoint Syntex、コンプライアンス チームがガバナンス ルールとアーカイブを手動で適用するのではなく、コンテンツを自動分類する方法を利用できます。 また、簡単な検索エクスペリエンスを有効にし、データボリュームを管理し、レコード管理と保持ポリシーを適用し、コンプライアンスを確保し、ベスト プラクティスのアーカイブと削除を行います。
 
 このシナリオを自動化すると、次のセキュリティを確保できます。
 
@@ -104,7 +104,7 @@ ms.locfileid: "52697067"
 
 ## <a name="scenario-improve-data-processing-to-provide-insights-and-analytics"></a>シナリオ: データ処理を改善して分析と分析を提供する
 
-たとえば、製薬会社は、SharePointシンテックスを使用して、FDA ドキュメントから情報を抽出して、リーダーが持っている質問に答えます。 回答に簡単にアクセスできると、これらの回答を生成するために必要な時間が短縮され、データの可用性が向上して、リーダーシップに関する質問に対するより正確な回答が生成されます。
+たとえば、製薬会社は、SHAREPOINT SYNTEXを使用して、FDA ドキュメントから情報を抽出して、リーダーが持っている質問に答えます。 回答に簡単にアクセスできると、これらの回答を生成するために必要な時間が短縮され、データの可用性が向上して、リーダーシップに関する質問に対するより正確な回答が生成されます。
 
 たとえば、プロジェクト マネージャーは、リーダーシップ チームからの製品関連の質問に対する回答をすばやく提供する必要があります。 1 つの統合ダッシュボードでクエリに関連する情報と指標を見つける必要があります。 製品ラベル、製品パンフレット、その他の資料から必要な情報を抽出し、リーダーシップ チームに報告する際に使用できる統合レポートを生成するソリューションを探しています。
 
@@ -116,7 +116,7 @@ ms.locfileid: "52697067"
 
 ## <a name="scenario-automate-order-processing"></a>シナリオ: 注文処理の自動化
 
-Syntex SharePointを使用すると、顧客注文の手動処理の時間を短縮できます。 たとえば、OCR 処理を使用して FAX、電子メール、または紙から SharePoint に注文をアップロードし、それらの注文からメタデータを抽出して、自動化されたプロセスを使用して注文を満たします。
+このSharePoint Syntex、顧客注文の手動処理の時間を短縮できます。 たとえば、OCR 処理を使用して FAX、電子メール、または紙から SharePoint に注文をアップロードし、それらの注文からメタデータを抽出して、自動化されたプロセスを使用して注文を満たします。
 
 たとえば、サプライ チェーン マネージャーは、手動データ入力によるエラーを減らしたいと考しています。 ビジネス システムに入るエラーを減らすために、受信顧客注文 (紙、FAX、または電子メール) の手動レビューとデータ入力を回避したいと考えています。 AI と機械学習の手法を適用して、受信注文情報を検証し、コア データを抽出し、注文のフルフィルメントと調整のために ERP システムに自動的にプッシュするソリューションが必要です。
 
@@ -129,7 +129,7 @@ Syntex SharePointを使用すると、顧客注文の手動処理の時間を短
 
 ## <a name="scenario-simplify-visa-renewal-process"></a>シナリオ: ビザの更新プロセスを簡素化する
 
-SharePointSyntex は、重要な契約情報のリマインダーと更新を自動化するのに役立ちます。 たとえば、人事担当ディレクターは、従業員のビザが最新の日付または期限内に更新される必要があります。 彼らは、人々に自分のビザを更新するための簡単で直感的なプロセスを提供したいと考っています。 契約から更新日を抽出し、更新日が近づいているときに従業員に自動的に通知を送信するソリューションが必要です。
+SharePoint Syntex契約情報のリマインダーと更新を自動化するのに役立ちます。 たとえば、人事担当ディレクターは、従業員のビザが最新の日付または期限内に更新される必要があります。 彼らは、人々に自分のビザを更新するための簡単で直感的なプロセスを提供したいと考っています。 契約から更新日を抽出し、更新日が近づいているときに従業員に自動的に通知を送信するソリューションが必要です。
 
 このシナリオを自動化する場合は、次の操作を実行できます。
 
@@ -139,4 +139,4 @@ SharePointSyntex は、重要な契約情報のリマインダーと更新を自
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft SharePoint Syntex 導入: 概要](adoption-getstarted.md)
+[Microsoft SharePoint Syntex導入: 使い始める](adoption-getstarted.md)

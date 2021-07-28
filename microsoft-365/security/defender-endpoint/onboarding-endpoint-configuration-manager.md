@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eab23ddeb9011e80cf2835b8d38b2d3fad4b7089
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e04535268c94478c862998cfd91df1680eb22fc0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843508"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542095"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager を使用したオンボーディング
 
@@ -106,7 +106,7 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 
     ![ウィザードのMicrosoft Endpoint Configuration Manager 8](images/configmgr-membership-rules.png)
 
-9. [**次へ**] を選択します。
+9. **[次へ]** を選択します。
 
     ![ウィザードのMicrosoft Endpoint Configuration Manager 9](images/configmgr-confirm.png)
 
@@ -117,16 +117,16 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>手順 2: Microsoft Defender for Endpoint の機能を構成する 
 このセクションでは、デバイス上のデバイスを使用して次の機能Microsoft Endpoint Configuration Manager構成Windowsします。
 
-- [**エンドポイントでの検出と対応**](#endpoint-detection-and-response)
+- [**エンドポイントの検出と応答**](#endpoint-detection-and-response)
 - [**次世代の保護**](#next-generation-protection)
-- [**攻撃面の減少**](#attack-surface-reduction)
+- [**攻撃表面の縮小**](#attack-surface-reduction)
 
 
 ### <a name="endpoint-detection-and-response"></a>エンドポイントの検出および応答
 #### <a name="windows-10"></a>Windows 10
-Microsoft Defender セキュリティ センター内から、System Center Configuration Manager でポリシーを作成し、そのポリシーを Windows 10 デバイスに展開するために使用できる '.onboarding' ポリシーをダウンロードできます。
+Microsoft 365 Defender ポータル内から、System Center Configuration Manager でポリシーを作成し、そのポリシーを Windows 10 デバイスに展開するために使用できる '.onboarding' ポリシーをダウンロードできます。
 
-1. [ポータル] Microsoft Defender セキュリティ センター、[オンボーディング][設定を選択します](https://securitycenter.windows.com/preferences2/onboarding)。
+1. 新しいポータルMicrosoft 365 Defender、[オンボーディング][設定を選択します](https://security.microsoft.com/preferences2/onboarding)。
 
 
 
@@ -139,9 +139,9 @@ Microsoft Defender セキュリティ センター内から、System Center Conf
     ![Microsoft Defender for Endpoint オンボーディング ウィザードのイメージ11](images/mdatp-download-package.png)
 
 4. パッケージをアクセス可能な場所に保存します。
-5. [Microsoft Endpoint Configuration Manager] で、[アセットとコンプライアンス] の [概要] >**ポリシー> Endpoint Protection > Microsoft Defender ATP移動します**。
+5. [Microsoft Endpoint Configuration Managerに移動します。 [アセットとコンプライアンス] > Microsoft Defender ATP ポリシー **> Endpoint Protection >に移動します**。
 
-6. [ポリシー] を **右Microsoft Defender ATPし、[** ポリシーの **作成] Microsoft Defender ATPします**。
+6. [Microsoft **Defender ATP ポリシー] を右クリックし、[Microsoft** Defender ATP ポリシー **の作成] を選択します**。
 
     ![ウィザードのMicrosoft Endpoint Configuration Manager 12](images/configmgr-create-policy.png)
 
@@ -181,7 +181,7 @@ Microsoft Defender セキュリティ センター内から、System Center Conf
 #### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>以前のバージョンの Windows クライアント (Windows 7 および Windows 8.1)
 以下の手順に従って、以前のバージョンのデバイスのオンボーディングに必要な Defender for Endpoint Workspace ID と Workspace Key を特定Windows。
 
-1. [新しいポータルMicrosoft Defender セキュリティ センターオンボーディング] を設定 >**します**。
+1. [デバイスのMicrosoft 365 Defender] で、[エンドポイント設定オンボーディング]  >    >  を **選択します**。
 
 2. [オペレーティング システム] で **、[Windows 7 SP1 と 8.1] を選択します**。
 
@@ -267,7 +267,7 @@ Windows Defender ウイルス対策は、デスクトップ、ポータブル �
 ### <a name="attack-surface-reduction"></a>攻撃面の縮小
 Defender for Endpoint の攻撃表面の縮小の柱には、Exploit Guard で使用できる機能セットが含まれています。 攻撃表面の縮小 (ASR) ルール、フォルダー アクセスの制御、ネットワーク保護、エクスプロイト保護。 
 
-これらの機能はすべて監査モードとブロック モードを提供します。 監査モードでは、エンド ユーザーに影響はありません。 これは、追加のテレメトリを収集し、その他のアプリケーションで使用Microsoft Defender セキュリティ センター。 展開の目的は、セキュリティ コントロールをブロック モードにステップ バイ ステップで移動する方法です。
+これらの機能はすべて監査モードとブロック モードを提供します。 監査モードでは、エンド ユーザーに影響はありません。 追加のテレメトリを収集し、ポータルで利用Microsoft 365 Defenderです。 展開の目的は、セキュリティ コントロールをブロック モードにステップ バイ ステップで移動する方法です。
 
 監査モードで ASR ルールを設定するには、次の方法を実行します。
 
@@ -308,7 +308,7 @@ Defender for Endpoint の攻撃表面の縮小の柱には、Exploit Guard で�
 ASR ルールがエンドポイントに正しく適用されているかどうかを確認する追加の手順を次に示します。 (これには数分かかる場合があります)
 
 
-1. Web ブラウザーからに移動します <https://securitycenter.windows.com> 。
+1. Web ブラウザーからに移動します <https://security.microsoft.com> 。
 
 2.  左側 **のメニューから [構成** の管理] を選択します。
 

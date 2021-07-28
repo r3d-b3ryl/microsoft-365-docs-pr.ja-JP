@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7de216c1397a7cc4806af8221257eeedd2290830
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 554767c1db2d4122c7bc77c47a55772e4ddaa0a6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933315"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542179"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上の Microsoft Defender for Endpoint の不足しているイベントまたはアラートの問題のトラブルシューティング
 
@@ -33,7 +33,7 @@ ms.locfileid: "51933315"
 
 - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
 
-この記事では、セキュリティ センター ポータルで不足しているイベントやアラートを軽減するための一般的 [な手順について説明](https://securitycenter.windows.com/) します。
+この記事では、ポータルで不足しているイベントやアラートを軽減するための一般的なMicrosoft 365 Defender[します](https://security.microsoft.com/)。
 
 **Microsoft Defender for Endpoint** がデバイスに正しくインストールされると、ポータルにデバイス ページが生成されます。  記録されたイベントはすべて、デバイス ページの [タイムライン] タブ、または高度な検索ページで確認できます。 このセクションでは、一部またはすべての予期されるイベントが見つからない場合のトラブルシューティングを行います。
 たとえば、すべての _CreatedFile_ イベントが見つからない場合です。

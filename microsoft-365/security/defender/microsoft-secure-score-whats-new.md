@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 2f02de4b738d9d61ef9f98cd03d15bd91709339e
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 8d16d4640a926697363e7bb7588d80a8c28439df
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314430"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541987"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 
@@ -36,13 +36,41 @@ Microsoft Secure Score をセキュリティの姿勢をより良くするため
 
 Microsoft Secure Score は、セキュリティ https://security.microsoft.com/securescore センターのMicrosoft 365[にあります](overview-security-center.md)。
 
+## <a name="july-2021"></a>2021 年 7 月
+
+### <a name="added-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に関連する改善アクションを追加しました
+- MacOS 用の Microsoft Defender for Endpoint センサー データ収集を修正する
+- MacOS の Microsoft Defender for Endpoint 障害のある通信を修正する
+- macOS でパスワードの最小長を 15 文字以上に設定する
+- macOS で 'パスワード履歴を強制する' を '24 以上のパスワード' に設定する
+- macOS で '最大パスワード期間' を '90 以下の日数に設定するが、0 には設定しない]
+- macOS でアカウントロックアウトのしきい値を 5 以下に設定する
+- macOS でファイアウォールを有効にする
+- ゲートキーパーを有効にする
+- システム整合性保護 (SIP) を有効にする
+- FileVault ディスク暗号化を有効にする
+- macOS でスクリーンセーバーが起動するときに画面をロックする
+- macOS でスクリーンセーバーが 20 分以下で開始する設定を確認する
+- ホーム フォルダーのセキュリティ保護
+- macOS のMicrosoft Defender ウイルス対策保護を有効にする
+- macOS のMicrosoft Defender ウイルス対策 PUA 保護を有効にする
+- macOS Microsoft Defender ウイルス対策クラウドによる保護を有効にする
+- macOS Microsoft Defender ウイルス対策定義を更新する
+- Microsoft Defender for Endpoint sensor data collection for Linux の修正
+- Linux 用の Microsoft Defender for Endpoint 障害のある通信を修正する
+- 制限されていないアクセス アカウント
+- Linux のMicrosoft Defender ウイルス対策保護を有効にする
+- Linux のブロック Microsoft Defender ウイルス対策 PUA 保護を有効にする
+- Linux Microsoft Defender ウイルス対策クラウドによる保護を有効にする
+- Linux Microsoft Defender ウイルス対策定義を更新する
+
 ## <a name="june-2021"></a>2021 年 6 月
 
-### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>ユーザーに関連する改善アクションを削除Microsoft Cloud App Security
+### <a name="removed-improvement-action-related-to-microsoft-cloud-app-security"></a>ユーザーに関連する改善アクションをMicrosoft Cloud App Security
 
 - 異常なCloud App Securityを検出するには、次の情報を使用します。
 
-## <a name="february-2021"></a>2021 年 2 月
+## <a name="february-2021"></a>2021年2月
 
 ### <a name="compatibility-with-graph-api"></a>API とのGraph互換性
 
@@ -54,7 +82,7 @@ Microsoft Secure Score の推奨事項は、Graph API を介して配信され�
 
 Microsoft Teamsユーザーは、Secure Score の新しい改善アクションとして「匿名ユーザーの会議への参加を制限する」と表示されます。
 
-## <a name="december-2020"></a>2020年12月
+## <a name="december-2020"></a>2020 年 12 月
 
 ### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に 6 つのアカウント関連の改善アクションを追加しました。
 
@@ -79,7 +107,7 @@ Microsoft Teamsユーザーは、Secure Score の新しい改善アクション�
 
 ## <a name="october-2020"></a>2020 年 10 月
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に関連する改善アクションを削除する
+### <a name="removed-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に関連する改善アクションを削除しました
 
 - ストア Microsoft Defender SmartScreen Windows Web コンテンツ チェックを警告に設定する
 

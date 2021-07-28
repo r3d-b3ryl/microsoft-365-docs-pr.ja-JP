@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 5b723f4faef891c04dc78a18de09a469d703c492
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 182d44c8ad46b8c711705c46aabba3393f4e0801
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228893"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595968"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティ ポータルと管理センター
 
@@ -57,6 +57,6 @@ Microsoft 365[センター](overview-security-center.md)は、ID、データ、�
 |---|---|---| 
 | Azure portal | リソースとすべての Azure [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)を表示および[管理する](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Microsoft 365 コンプライアンス センター | データ処理ポリシーを管理し、規制 [に準拠する](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
-| Microsoft 365 管理センター | サービスMicrosoft 365構成します。ロール、ライセンスの管理、およびサービスの更新Microsoft 365する | [admin.microsoft.com](https://admin.microsoft.com/) |
+| Microsoft 365 管理センター | サービスMicrosoft 365構成します。ロール、ライセンスの管理、およびサービスの更新Microsoft 365する | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
 | Microsoft エンドポイント マネージャー管理センター | Intune[と configuration Manager Microsoft エンドポイント マネージャー](/mem/configmgr/)機能を組み合わせて使用してデバイスを管理およびセキュリティ保護するには、この機能を使用します。 | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
 | Microsoft Intune ポータル | デバイス[Microsoft Intune](/intune/fundamentals/what-is-intune)を展開し、コンプライアンスを監視するためにデバイスを使用する | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

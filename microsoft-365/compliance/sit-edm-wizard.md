@@ -17,19 +17,16 @@ search.appverid:
 - MET150
 description: 完全一致スキーマと機密情報の種類ウィザードrを使用する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5fdf289c403d8c09342a1eac1434c4219bb7b13c
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 1cbbb02528e898f775d63bf023b641bdaaeeb07e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861661"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543607"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>完全一致スキーマと機密情報の種類ウィザードを使用する
 
 [完全一致 (EDM) ベースの分類を使用してカスタムの機密情報の種類を作成するには](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)、さまざまな手順が必要です。  このウィザードを使用すると、スキーマおよび機密情報の種類 (SIT) パターン (ルール パッケージ) ファイルを作成して、プロセスを簡略化できます。
-
-> [!NOTE]
-> 完全一致スキーマと機密情報の種類ウィザードは、World Wide クラウドと GCC クラウドでのみ使用できます。
 
 このウィザードが代わりとなるのは、次のような場合です。
 
@@ -42,7 +39,7 @@ ms.locfileid: "52861661"
 
 1. EDM [ワーク フローの概要](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance)で、カスタムの機密情報の種類を作成する手順がわかります。
 
-2. [機密データを .csv 形式で保存](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format) セクションの手順を実行します。
+2. 「機密データをファイル形式または [.tsv 形式.csv保存する」の手順を実行します](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format)。
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>完全一致スキーマと機密情報の種類パターンウィザードを使用する
 
@@ -96,7 +93,7 @@ ms.locfileid: "52861661"
 
 1. Open **Compliance center** Data  >  **classification** Sensitive Information  >  **Types**.
 2. リストから EDM SIT を選択し、フライアウト ウィンドウ **で [テスト** ] を選択します。 
-3. 検出するデータを含むアイテムをアップロードします。たとえば、機密情報テーブルのデータの一部を含むアイテムを作成します。 スキーマで構成可能な一致機能を使用して、無視される区切り記号を定義した場合は、それらの区切り記号の使用と使用しない例がアイテムに含まれるか確認してください。
+3. アップロードするデータを含むアイテムを作成します。たとえば、機密情報テーブルにデータの一部を含むアイテムを作成します。 スキーマで構成可能な一致機能を使用して、無視される区切り記号を定義した場合は、それらの区切り記号の使用と使用しない例がアイテムに含まれるか確認してください。
 4. ファイルがアップロードおよびスキャンされた後、EDM SIT との一致を確認します。
 5. SIT の **Test** 関数で一致が検出された場合は、その関数がトリミングされていないか、誤って抽出されていないか確認してください。 たとえば、検出するはずの文字列全体の部分文字列のみを抽出したり、複数単語の文字列の最初の単語のみを取得したり、抽出に余分な記号や文字を含めることができます。 正規表現 [言語リファレンスについては、「正規表現言語 -](/dotnet/standard/base-types/regular-expression-language-quick-reference) クイック リファレンス」を参照してください。 
 

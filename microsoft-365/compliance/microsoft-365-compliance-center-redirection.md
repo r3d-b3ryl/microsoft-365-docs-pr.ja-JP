@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: セキュリティとコンプライアンス センターのOffice 365ユーザーを自動的にユーザーにリダイレクトする方法Microsoft 365 コンプライアンス センター。。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 62fc302f9f065ac7bb0475a6e72dc240a56a1fe1
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 167a38d4f4cd06f98993f401d72f9b6dafa29f40
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339408"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543631"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>セキュリティとコンプライアンス センター Office 365ユーザーをサーバーにリダイレクトMicrosoft 365 コンプライアンス センター
 
@@ -24,18 +24,19 @@ ms.locfileid: "53339408"
 
 ## <a name="what-to-expect"></a>想定される変化
 
-自動リダイレクトは、セキュリティとコンプライアンス (Office 365) で次のコンプライアンス関連のソリューションにアクセスしているすべてのユーザーに対して既定 protection.office.com。
+自動リダイレクトは、セキュリティとコンプライアンス (Office 365) でコンプライアンス関連のソリューションにアクセスしているすべてのユーザーに対して既定 protection.office.com。
 
-- データ損失防止 (DLP)
-- 分類
-- 情報ガバナンス
-- レコード管理
-- コミュニケーションコンプライアンス (以前は '監督')
+- [Advanced eDiscovery](overview-ediscovery-20.md)
+- [通信コンプライアンス](communication-compliance.md)
+- [コンテンツ検索](search-for-content.md)
+- [コア電子情報開示](get-started-core-ediscovery.md)
+- [データの分類](data-classification-overview.md)
+- [データ損失防止 (DLP)](dlp-learn-about-dlp.md)
+- [データ サブジェクト要求](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)
+- [情報ガバナンス](manage-information-governance.md)
+- [レコード管理](records-management.md)
 
 ユーザーは自動的に同じコンプライアンス ソリューションにルーティングされます (Microsoft 365 コンプライアンス センター (compliance.microsoft.com)。
-
-> [!NOTE]
-> Office 365 セキュリティとコンプライアンス センターに含まれる他のコンプライアンス ソリューションについては、ユーザーは引き続き Microsoft 365 コンプライアンス センター または Office 365 セキュリティ とコンプライアンス センターでこれらのソリューションを管理します。 これらのコンプライアンス ソリューションの自動リダイレクトは、近日利用可能になります。
 
 この機能と関連付けられたコントロールでは、Microsoft Defender のセキュリティ機能の自動リダイレクトが有効Office 365。 セキュリティ機能のリダイレクトを有効にするには[、「Microsoft Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)からアカウントをリダイレクトする」を参照Office 365セキュリティ センター Microsoft 365を参照してください。
 
@@ -44,7 +45,7 @@ ms.locfileid: "53339408"
 何かが機能していない場合、または Microsoft 365 コンプライアンス センター ポータルで完了できない場合は、すべてのユーザーの自動リダイレクトを一時的に無効にできます。
 
 > [!IMPORTANT]
-> このMicrosoft 365 コンプライアンス センターは、セキュリティとコンプライアンス センターで現在管理されているコンプライアンス ソリューションOffice 365管理ポータルです。 すべてのMicrosoft 365コンプライアンス ソリューションは、ユーザーが管理するMicrosoft 365 コンプライアンス センター。 サーバーへのリダイレクトを無効Microsoft 365 コンプライアンス センター短期的な解決策である必要があります。
+> このMicrosoft 365 コンプライアンス センターは、セキュリティとコンプライアンス センターで現在管理されているコンプライアンス ソリューションOffice 365管理ポータルです。 すべてのMicrosoft 365コンプライアンス ソリューションは、ユーザーが管理するMicrosoft 365 コンプライアンス センター。 サーバーへのリダイレクトを無効Microsoft 365 コンプライアンス センター短期的なソリューションと見なす必要があります。
 
 すべてのユーザーの Office 365 およびコンプライアンス センター (protection.microsoft.com) に切り替えるには、次の手順を実行します。
 

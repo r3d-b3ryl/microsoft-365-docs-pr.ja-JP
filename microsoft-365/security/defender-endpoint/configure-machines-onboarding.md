@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7798f3b6bd2f99d48a8fa85ecf088023f4629b7b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 48cfbd3b895579ccf92cb7e9f21dbedf87d599d4
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841572"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595908"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint にオンボードされているデバイスを取得する
 
@@ -31,11 +31,12 @@ ms.locfileid: "52841572"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 オンボードされた各デバイスは、追加のエンドポイント検出と応答 (EDR) センサーを追加し、ネットワーク内の侵害アクティビティに対する可視性を向上します。 また、オンボーディングにより、デバイスで脆弱なコンポーネントやセキュリティ構成の問題をチェックし、攻撃中に重大な修復アクションを受け取る可能性があります。
 
 デバイスのオンボーディングを追跡および管理する前に、
+
 - [Intune 管理にデバイスを登録する](configure-machines.md#enroll-devices-to-intune-management)
 - [必要なアクセス許可を持っている必要があります。](configure-machines.md#obtain-required-permissions)
 
@@ -43,11 +44,12 @@ ms.locfileid: "52841572"
 
 オンボーディング カードは、実際に Defender for Endpoint にオンボードされた Windows 10 デバイスの数と Intune で管理された Windows 10 デバイスの総数を比較することで、オンボーディング レートの概要を提供します。
 
-![デバイス構成管理オンボード カード](images/secconmgmt_onboarding_card.png)<br>
+![デバイス構成管理オンボード カード](images/secconmgmt_onboarding_card.png)
+
 *オンボード デバイスと Intune で管理されているデバイスの合計数と比較Windows 10カード*
 
->[!NOTE]
->セキュリティ センター構成マネージャー、オンボーディング スクリプト、または Intune プロファイルを使用しないその他のオンボーディング 方法を使用した場合、データの不一致が発生する可能性があります。 これらの不一致を解決するには、Defender for Endpoint オンボーディングに対応する Intune 構成プロファイルを作成し、そのプロファイルをデバイスに割り当てる必要があります。
+> [!NOTE]
+> セキュリティ センター構成マネージャー、オンボーディング スクリプト、または Intune プロファイルを使用しないその他のオンボーディング 方法を使用した場合、データの不一致が発生する可能性があります。 これらの不一致を解決するには、Defender for Endpoint オンボーディングに対応する Intune 構成プロファイルを作成し、そのプロファイルをデバイスに割り当てる必要があります。
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>Intune プロファイルを使用して他のデバイスをオンボードする
 
@@ -55,13 +57,14 @@ Defender for Endpoint には、デバイスをオンボーディングするた�
 
 [オンボード] **カードで、[** その他のデバイス **の** オンボード] を選択して、Intune でプロファイルを作成して割り当てる。 このリンクを使用すると、Intune のデバイス コンプライアンス ページに移動し、オンボーディング状態の同様の概要を示します。
 
-![Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ](images/secconmgmt_onboarding_1deviceconfprofile.png)<br>
-   *Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ*
+![Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ](images/secconmgmt_onboarding_1deviceconfprofile.png)
 
->[!TIP]
->または、[すべてのサービス] から Microsoft Azure ポータルの [[Defender](https://portal.azure.com/) for Endpoint オンボーディング コンプライアンス] ページに移動> Intune >**デバイス** コンプライアンス > Microsoft Defender ATP。
+*Intune デバイス管理の Microsoft Defender for Endpoint デバイスコンプライアンス ページ*
 
->[!NOTE]
+> [!TIP]
+> または **、Microsoft Defender ATP** のすべてのサービス > Intune > デバイス コンプライアンス > から [Microsoft Azure](https://portal.azure.com/)ポータルの [Defender for Endpoint オンボーディング コンプライアンス] ページに移動することもできます。
+
+> [!NOTE]
 > 最新のデバイス データを表示する場合は、[ATP センサーのないデバイスの一覧 **] をクリックします**。
 
 [デバイスコンプライアンス] ページで、Defender for Endpoint センサーの展開専用の構成プロファイルを作成し、そのプロファイルをオンボードするデバイスに割り当てる。 これを行うには、次のいずれかを実行できます。
@@ -71,9 +74,10 @@ Defender for Endpoint には、デバイスをオンボーディングするた�
 
 詳細については [、「Intune デバイス構成プロファイルを使用してデバイスを Defender for Endpoint にオンボードする」を参照してください](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)。
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>関連項目
+
 - [デバイスが正しく構成されていることを確認する](configure-machines.md)
 - [Defender for Endpoint セキュリティ ベースラインへのコンプライアンスを強化する](configure-machines-security-baseline.md)
 - [ASR ルールの展開と検出を最適化する](configure-machines-asr.md)

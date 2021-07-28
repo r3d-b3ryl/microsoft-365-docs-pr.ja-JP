@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: c81f14b92b285359bda7e291bd8d3a8b636ae54d
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cc7fc87a4c9d8bcdcb6c80db6d8725ecb62f24a2
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228965"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542823"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Defender for Identity security alerts in Microsoft 365 Defender
 
@@ -21,9 +21,9 @@ ms.locfileid: "53228965"
 - Microsoft 365 Defender
 - Defender for Identity
 
-この記事では、セキュリティ センターで[Microsoft Defender for Identity](/defender-for-identity)セキュリティアラートを操作する方法のMicrosoft 365[説明します](/microsoft-365/security/defender/overview-security-center)。
+この記事では、Microsoft Defender for [Identity](/defender-for-identity)のセキュリティ アラートを使用する方法の基本について説明[Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
 
-Defender for Identity alerts は、専用の IDENTITY アラート[ページ形式Microsoft 365セキュリティ](https://security.microsoft.com)センターにネイティブに統合されます。 これは、Microsoft Defender for [Identity](/defender-for-identity/defender-for-identity-in-microsoft-365-defender)エクスペリエンス全体を新しいユーザーエクスペリエンスに導入する最初のステップMicrosoft 365 Defender。
+Defender for Identity アラートは、専用の IDENTITY アラート[ページ](https://security.microsoft.com)Microsoft 365 Defenderにネイティブに統合されます。 これは、Microsoft Defender for [Identity](/defender-for-identity/defender-for-identity-in-microsoft-365-defender)エクスペリエンス全体を新しいユーザーエクスペリエンスに導入する最初のステップMicrosoft 365 Defender。
 
 新しい Identity アラート ページでは、Microsoft Defender for Identity のお客様にクロスドメインシグナルエンリッチメントと新しい自動 ID 応答機能を提供します。 これにより、セキュリティを確保し、セキュリティ操作の効率を向上させることができます。
 
@@ -38,7 +38,7 @@ Defender for Identity から発生したアラートは、Microsoft 365 Defender
 
 アラートには、[アラート] ページ、インシデント ページ、個々のデバイスのページ、高度な検索ページなど、複数の **場所からアクセス** できます。 この例では、[アラート] ページを **確認します**。
 
-[セキュリティ [センター Microsoft 365インシデント](https://security.microsoft.com/)] に移動し、[&**通知**] に **移動します**。
+[[Microsoft 365 Defender]](https://security.microsoft.com/)で、[インシデント] **&に移動し**、[アラート] に **移動します**。
 
 ![[インシデントとアラート] に移動し、[アラート] をクリックします。](../../media/defender-identity/incidents-alerts.png)
 

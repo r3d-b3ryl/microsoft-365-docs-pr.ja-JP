@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: a8b7268e89470a85a34015967b69abb1818fe64f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 78ca10d5da8d9cfb6e40764162b7161a61b6993a
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933843"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596004"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>イベント ビューアーを使用してイベントとエラーを確認する
 
@@ -34,7 +34,7 @@ ms.locfileid: "51933843"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 イベントの ID は、個々のデバイスの [イベント ビューアー](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) で確認できます。
 
@@ -46,572 +46,111 @@ ms.locfileid: "51933843"
 
 2. ログ リストの [ログの概要 **] で****、Microsoft-Windows-SENSE/操作が表示されるまでスクロールします**。 アイテムをダブルクリックしてログを開きます。
 
-   a.  [アプリケーションとサービス ログ] を展開してログにアクセスすることもできます。Microsoft Windows SENSE をクリックし、[操作  >    >    >  ] を **クリックします**。
+   [アプリケーションとサービス ログ] を展開してログにアクセスすることもできます。Microsoft Windows SENSE をクリックし、[操作  >    >    >  ] を **クリックします**。
 
    > [!NOTE]
    > SENSE は、Microsoft Defender for Endpoint をサポートする動作センサーを参照するために使用される内部名です。
 
 3. サービスによって記録されたイベントがログに表示されます。 サービスによって記録されるイベントの一覧については、次の表を参照してください。
 
-<table>
-<tbody style="vertical-align:top;">
-<tr>
-<th>イベント ID</th>
-<th>メッセージ</th>
-<th>説明</th>
-<th>Action</th>
-</tr>
-<tr>
-<td>1</td>
-<td>Microsoft Defender for Endpoint service が開始されました (バージョン <code>variable</code> )。</td>
-<td>システムの起動時、シャットダウン中、オンボーディング中に発生します。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Microsoft Defender for Endpoint service shutdown.</td>
-<td>デバイスがシャットダウンまたはオフボードされている場合に発生します。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Microsoft Defender for Endpoint service の開始に失敗しました。 エラー コード: <code>variable</code> .</td>
-<td>サービスが開始しなかった。</td>
-<td>他のメッセージを確認して、考えられる原因とトラブルシューティングの手順を確認します。</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Microsoft Defender for Endpoint service がでサーバーに連絡しました <code>variable</code> 。</td>
-<td>Variable = Defender for Endpoint 処理サーバーの URL。<br>
-この URL は、ファイアウォールまたはネットワーク アクティビティに表示される URL と一致します。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Microsoft Defender for Endpoint service でサーバーへの接続に失敗しました <code>variable</code> 。</td>
-<td>Variable = Defender for Endpoint 処理サーバーの URL。<br>
-サービスは、その URL の外部処理サーバーに接続できません。</td>
-<td>URL への接続を確認します。 「Configure <a href="configure-proxy-internet.md" data-raw-source="[Configure proxy and Internet connectivity](configure-proxy-internet.md)">proxy and Internet connectivity」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Microsoft Defender for Endpoint Service はオンボードされていないので、オンボーディング パラメーターが見つかりませんでした。</td>
-<td>デバイスが正しくオンボードされていないので、ポータルに報告されません。</td>
-<td>サービスを開始する前にオンボーディングを実行する必要があります。<br>
-オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Microsoft Defender for Endpoint service では、オンボーディング パラメーターの読み取りが失敗しました。 失敗: <code>variable</code> .</td>
-<td>変数 = 詳細なエラーの説明。 デバイスが正しくオンボードされていないので、ポータルに報告されません。</td>
-<td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>8</td>
-<td>Microsoft Defender for Endpoint service では、構成のクリーンアップに失敗しました。 エラー コード: <code>variable</code> .</td>
-<td><b>オンボーディング中:</b> サービスは、オンボーディング中に構成のクリーンアップに失敗しました。 オンボーディング プロセスは続行されます。 <br><br> <b>オフボード中:</b> サービスは、オフボード中に構成のクリーンアップに失敗しました。 オフボード プロセスは終了しましたが、サービスは実行を続ける。
- </td>
-<td><b>オンボーディング:</b> アクションは不要です。 <br><br> <b>オフボード:</b> システムを再起動します。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>9</td>
-<td>Microsoft Defender for Endpoint service は、開始の種類を変更できなかった。 エラー コード: <code>variable</code> .</td>
-<td><b>オンボーディング中:</b> デバイスが正しくオンボードされていないので、ポータルに報告されません。 <br><br><b>オフボード中:</b> サービスの開始の種類を変更できなかった。 オフボードプロセスは続行されます。 </td>
-<td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>10</td>
-<td>Microsoft Defender for Endpoint Service は、オンボーディング情報を保持できなかった。 エラー コード: <code>variable</code> .</td>
-<td>デバイスが正しくオンボードされていないので、ポータルに報告されません。</td>
-<td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>11</td>
-<td>Defender for Endpoint サービスのオンボーディングまたは再オンボーディングが完了しました。</td>
-<td>デバイスが正しくオンボードされました。</td>
-<td>通常の動作通知。アクションは必要ありません。<br>
-デバイスがポータルに表示されるには数時間かかる場合があります。</td>
-</tr>
-<tr>
-<td>12 </td>
-<td>Microsoft Defender for Endpoint では、既定の構成の適用に失敗しました。</td>
-<td>サービスが既定の構成を適用できなかった。</td>
-<td>このエラーは、短時間で解決する必要があります。</td>
-</tr>
-<tr>
-<td>13</td>
-<td>Microsoft Defender for Endpoint デバイス ID が計算 <code>variable</code> されます。</td>
-<td>通常の操作プロセス。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>15 </td>
-<td>エンドポイントの Microsoft Defender は、URL を使用してコマンド チャネルを開始できません <code>variable</code> 。</td>
-<td>Variable = Defender for Endpoint 処理サーバーの URL。<br>
-サービスは、その URL の外部処理サーバーに接続できません。</td>
-<td>URL への接続を確認します。 「Configure <a href="configure-proxy-internet.md" data-raw-source="[Configure proxy and Internet connectivity](configure-proxy-internet.md)">proxy and Internet connectivity」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>17 </td>
-<td>Microsoft Defender for Endpoint service は、接続されたユーザー エクスペリエンスとテレメトリ サービスの場所を変更できなかった。 エラー コード: <code>variable</code> .</td>
-<td>テレメトリ サービスでエラー Windows発生しました。</td>
-<td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">診断データ サービスが有効になっているか確認します</a>。<br>
-オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>18 </td>
-<td>OOBE (Windows) が完了しました。</td>
-<td>サービスは、更新プログラムのインストールWindows後にのみ開始されます。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>19</td>
-<td>OOBE (Windows) がまだ完了していません。</td>
-<td>サービスは、更新プログラムのインストールWindows後にのみ開始されます。</td>
-<td>通常の動作通知。アクションは必要ありません。<br>
-システムの再起動後もこのエラーが解決しない場合は、すべての更新プログラムWindowsインストールされていることを確認します。</td>
-</tr>
-<tr>
-<td>20</td>
-<td>OOBE (ようこそ) がWindows待機できません。 エラー コード: <code>variable</code> .</td>
-<td>内部エラー。</td>
-<td>システムの再起動後もこのエラーが解決しない場合は、すべての更新プログラムWindowsインストールされていることを確認します。</td>
-</tr>
-<tr>
-<td>25</td>
-<td>Microsoft Defender for Endpoint service は、レジストリの正常性状態をリセットできなかった。 エラー コード: <code>variable</code> .</td>
-<td>デバイスが正しくオンボードされませんでした。
-ポータルに報告しますが、サービスが SCCM またはレジストリに登録されていない場合があります。</td>
-<td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>26</td>
-<td>Microsoft Defender for Endpoint service は、レジストリのオンボーディングの状態を設定できなかった。 エラー コード: <code>variable</code> .</td>
-<td>デバイスが正しくオンボードされませんでした。<br>
-ポータルに報告しますが、サービスが SCCM またはレジストリに登録されていない場合があります。</td>
-<td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>27</td>
-<td>Microsoft Defender for Endpoint service は、ユーザーのアカウントで SENSE 対応モードを有効Microsoft Defender ウイルス対策。 オンボーディング プロセスに失敗しました。 エラー コード: <code>variable</code> .</td>
-<td>通常、Microsoft Defender ウイルス対策別のリアルタイムマルウェア対策製品がデバイスで適切に実行され、デバイスが Defender for Endpoint に報告されている場合は、特別なパッシブ状態になります。</td>
-<td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。<br>
-リアルタイムのマルウェア対策保護が正しく実行されていることを確認します。</td>
-</tr>
-<tr>
-<td>28</td>
-<td>Microsoft Defender for Endpoint Connected User Experiences and Telemetry service registration failed. エラー コード: <code>variable</code> .</td>
-<td>テレメトリ サービスでエラー Windows発生しました。</td>
-<td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">診断データ サービスが有効になっているか確認します</a>。<br>
-オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>29</td>
-<td>オフボード パラメーターの読み取りに失敗しました。 エラーの種類: %1、エラー コード: %2、説明: %3 </td>
-<td>このイベントは、システムがオフボード パラメーター&#39;読み取りできない場合に発生します。</td>
-<td>デバイスにインターネット アクセス権が設定されているのを確認し、オフボード プロセス全体を再度実行します。 オフボード パッケージの有効期限が切れていないか確認します。</td>
-</tr>
-<tr>
-<td>30</td>
-<td>Microsoft Defender for Endpoint service は、このサービスで SENSE 対応モードを無効Microsoft Defender ウイルス対策。 エラー コード: <code>variable</code> .</td>
-<td>通常、Microsoft Defender ウイルス対策別のリアルタイムマルウェア対策製品がデバイスで適切に実行され、デバイスが Defender for Endpoint に報告されている場合は、特別なパッシブ状態になります。</td>
-<td>オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください。</a><br>
-リアルタイムのマルウェア対策保護が正しく実行されていることを確認します。</td>
-</tr>
-<tr>
-<td>31</td>
-<td>Microsoft Defender for Endpoint Connected User Experiences and Telemetry service unregistration failed. エラー コード: <code>variable</code> .</td>
-<td>オンボーディング中に、Windowsテレメトリ サービスでエラーが発生しました。 オフボードプロセスは続行されます。</td>
-<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">テレメトリ サービスのエラー Windows確認します</a>。</td>
-</tr>
-<tr>
-<td>32</td>
-<td>Microsoft Defender for Endpoint service は、オフボード プロセスの後に自身を停止する要求に失敗しました。 エラー コード: %1</td>
-<td>オフボード中にエラーが発生しました。</td>
-<td>デバイスを再起動します。</td>
-</tr>
-<tr>
-<td>33</td>
-<td>エンドポイント サービスの Microsoft Defender は、SENSE GUID の永続化に失敗しました。 エラー コード: <code>variable</code> .</td>
-<td>一意の識別子を使用して、ポータルに報告する各デバイスを表します。<br>
-識別子が保持されない場合、同じデバイスがポータルに 2 回表示される場合があります。</td>
-<td>サービスがレジストリを更新できるデバイスのレジストリのアクセス許可を確認します。</td>
-</tr>
-<tr>
-<td>34</td>
-<td>Microsoft Defender for Endpoint Service は、接続されたユーザー エクスペリエンスとテレメトリ サービスへの依存関係として自分自身を追加できなかったので、オンボーディング プロセスが失敗しました。 エラー コード: <code>variable</code> .</td>
-<td>テレメトリ サービスでエラー Windows発生しました。</td>
-<td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">診断データ サービスが有効になっているか確認します</a>。<br>
-オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。<br>
-「<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">オンボード デバイスWindows 10」を参照してください</a>。</td>
-</tr>
-<tr>
-<td>35</td>
-<td>Microsoft Defender for Endpoint Service は、接続されたユーザー エクスペリエンスとテレメトリ サービスへの依存関係として削除に失敗しました。 エラー コード: <code>variable</code> .</td>
-<td>オフボード中に、Windowsテレメトリ サービスでエラーが発生しました。 オフボードプロセスは続行されます。
-</td>
-<td>診断データ サービスのエラー Windows確認します。</td>
-</tr>
-<tr>
-<td>36</td>
-<td>Microsoft Defender for Endpoint Connected User Experiences and Telemetry service registration succeeded. 完了コード: <code>variable</code> .</td>
-<td>Defender for Endpoint の接続ユーザー エクスペリエンスとテレメトリ サービスへの登録が正常に完了しました。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>37</td>
-<td>Microsoft Defender for Endpoint A モジュールは、クォータを超えかねない状態です。 モジュール: %1、クォータ: {%2} {%3}、クォータ使用率の割合: %4。</td>
-<td>デバイスは、現在の 24 時間ウィンドウの割り当てられたクォータをほとんど使用しています。 調整が必要です。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>38</td>
-<td>ネットワーク接続は低として識別されます。 Microsoft Defender for Endpoint は、%1 分ごとにサーバーに連絡します。 メーター接続: %2、インターネット利用可:%3、利用可能な無料ネットワーク:%4。</td>
-<td>デバイスは、測定済み/有料ネットワークを使用し、サーバーへの接続頻度が低い。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>39</td>
-<td>ネットワーク接続は通常と識別されます。 Microsoft Defender for Endpoint は、%1 分ごとにサーバーに連絡します。 メーター接続: %2、インターネット利用可:%3、利用可能な無料ネットワーク:%4。</td>
-<td>デバイスは、メーター接続または有料接続を使用していなく、通常どおりサーバーに連絡します。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>40</td>
-<td>バッテリーの状態は低と識別されます。 Microsoft Defender for Endpoint は、%1 分ごとにサーバーに連絡します。 バッテリーの状態: %2。</td>
-<td>デバイスのバッテリー 残量が少なく、サーバーに接続する頻度が低い。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>41</td>
-<td>バッテリーの状態は、通常の状態として識別されます。 Microsoft Defender for Endpoint は、%1 分ごとにサーバーに連絡します。 バッテリーの状態: %2。</td>
-<td>デバイスのバッテリー 残量が少なめで、通常どおりサーバーに連絡します。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>42</td>
-<td>Microsoft Defender for Endpoint コンポーネントは、アクションの実行に失敗しました。 コンポーネント: %1、Action: %2、例外の種類: %3、例外メッセージ: %4</td>
-<td>内部エラー。 サービスの開始に失敗しました。</td>
-<td>このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-<td>43</td>
-<td>Microsoft Defender for Endpoint コンポーネントは、アクションの実行に失敗しました。 コンポーネント: %1、Action: %2、例外の種類: %3、例外エラー: %4、例外メッセージ: %5</td>
-<td>内部エラー。 サービスの開始に失敗しました。</td>
-<td>このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-<td>44</td>
-<td>Defender for Endpoint サービスのオフボーディングが完了しました。</td>
-<td>サービスはオフボードされました。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>45</td>
-<td>イベント トレース セッション [%1] の登録と開始に失敗しました。 エラー コード: %2</td>
-<td>ETW セッションの作成時にサービスの起動時にエラーが発生しました。 これにより、サービスの起動エラーが発生しました。</td>
-<td>このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-<td>46</td>
-<td>リソース不足のため、イベント トレース セッション [%1] の登録と開始に失敗しました。 エラー コード: %2。 これは、アクティブなイベント トレース セッションが多すぎるためです。 サービスは 1 分で再試行します。</td>
-<td>リソース不足のため、ETW セッションの作成中にサービスの起動時にエラーが発生しました。 サービスは開始され、実行中ですが、ETW セッションが開始されるまでセンサー イベントは報告できません。</td>
-<td>通常の動作通知。アクションは必要ありません。 サービスは、1 分ごとにセッションを開始します。</td>
-</tr>
-<tr>
-<td>47</td>
-<td>イベント トレース セッションが正常に登録され、開始されました 。 以前に失敗した試行後に回復されました。</td>
-<td>このイベントは、ETW セッションを正常に開始した後、前のイベントに従います。</td>
-<td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-<td>48</td>
-<td>イベント トレース セッション [%2] にプロバイダー [%1] を追加できなかった。 エラー コード: %3。 つまり、このプロバイダーからのイベントは報告されません。</td>
-<td>ETW セッションにプロバイダーを追加できなかった。 その結果、プロバイダー イベントは報告されません。</td>
-<td>エラー コードを確認します。 エラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-</tr>
-<tr>
-   <td>49</td>
-   <td>無効なクラウド構成コマンドが受信され、無視されます。 バージョン: %1、状態: %2、エラー コード: %3、メッセージ: %4</td>
-   <td>無視されたクラウド サービスから無効な構成ファイルを受け取った。</td>
-   <td>このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>50</td>
-   <td>新しいクラウド構成が正常に適用されました。 バージョン: %1。</td>
-   <td>クラウド サービスから新しい構成を正常に適用しました。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>51</td>
-   <td>新しいクラウド構成の適用に失敗しました。バージョン: %1。 最後の既知の良い構成であるバージョン %2 が正常に適用されました。</td>
-   <td>クラウド サービスから悪い構成ファイルを受け取った。 最後に既知の良好な構成が正常に適用されました。</td>
-   <td>このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>52</td>
-   <td>新しいクラウド構成の適用に失敗しました。バージョン: %1。 また、前回の既知の良好な構成バージョン %2 の適用にも失敗しました。 既定の構成が正常に適用されました。</td>
-   <td>クラウド サービスから悪い構成ファイルを受け取った。 前回の既知の良好な構成の適用に失敗し、既定の構成が適用されました。</td>
-   <td>サービスは、5 分以内に新しい構成ファイルのダウンロードを試みます。 イベント が表示#50サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>53</td>
-   <td>永続的な記憶域から読み込まれたクラウド構成のバージョン: %1。</td>
-   <td>構成は、サービスの起動時に永続的な記憶域から読み込まれた。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>55</td>
-   <td>Secure ETW 自動ロガーの作成に失敗しました。 エラー コード: %1</td>
-   <td>セキュリティで保護された ETW ロガーの作成に失敗しました。</td>
-   <td>デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>56</td>
-   <td>Secure ETW 自動ロガーの削除に失敗しました。 エラー コード: %1</td>
-   <td>オフボーディング時にセキュリティで保護された ETW セッションを削除できなかった。</td>
-   <td>サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>57</td>
-   <td>トラブルシューティングの目的でコンピューターのスナップショットをキャプチャする。</td>
-   <td>調査パッケージ (forensics パッケージとも呼ばれる) が収集されています。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>59</td>
-   <td>開始コマンド: %1</td>
-   <td>応答コマンドの実行を開始します。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>60</td>
-   <td>コマンド %1 の実行に失敗しました。エラー: %2。</td>
-   <td>応答コマンドの実行に失敗しました。</td>
-   <td>このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>61</td>
-   <td>データ収集コマンド パラメーターが無効です。SasUri: %1、compressionLevel: %2。</td>
-   <td>データ収集コマンドの引数 (無効な引数) の読み取りまたは解析に失敗しました。</td>
-   <td>このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>62</td>
-   <td>接続ユーザー エクスペリエンスとテレメトリ サービスの開始に失敗しました。 エラー コード: %1</td>
-   <td>接続されたユーザー エクスペリエンスとテレメトリ (diagtrack) サービスの開始に失敗しました。 Microsoft Defender for Endpoint テレメトリ以外は、このコンピューターから送信されません。</td>
-   <td>イベント ログのトラブルシューティング ヒントの詳細については、「Microsoft-Windows-UniversalTelemetryClient/Operational」を参照してください。</td>
-</tr>
-<tr>
-   <td>63</td>
-   <td>外部サービスの開始の種類を更新します。 名前: %1、実際の開始の種類: %2、予期される開始の種類: %3、終了コード: %4</td>
-   <td>外部サービスの開始の種類を更新しました。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>64</td>
-   <td>停止した外部サービスの開始。 名前: %1、終了コード: %2</td>
-   <td>外部サービスの開始。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>65</td>
-   <td>Microsoft セキュリティ イベント コンポーネント ミニフィルター ドライバーの読み込みに失敗しました。 エラー コード: %1</td>
-   <td>ファイルシステムのミニフィルターMsSecFlt.sys読み込めない。</td>
-   <td>デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>66</td>
-   <td>ポリシー更新プログラム: 待機時間モード - %1</td>
-   <td>C&C 接続頻度ポリシーが更新されました。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>68</td>
-   <td>サービスの開始の種類が予期しない。 サービス名: %1、実際の開始の種類: %2、予期される開始の種類: %3</td>
-   <td>予期しない外部サービスの開始の種類。</td>
-   <td>外部サービスの開始の種類を修正します。</td>
-</tr>
-<tr>
-   <td>69</td>
-   <td>サービスが停止します。 サービス名: %1</td>
-   <td>外部サービスが停止します。</td>
-   <td>外部サービスを開始します。</td>
-</tr>
-<tr>
-   <td>70</td>
-   <td>ポリシー更新: サンプル コレクションを許可する - %1</td>
-   <td>サンプル コレクション ポリシーが更新されました。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>71</td>
-   <td>コマンドの実行に成功しました: %1</td>
-   <td>コマンドが正常に実行されました。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>72</td>
-   <td>最初の完全なコンピューター プロファイル レポートの送信を試みました。 結果コード: %1</td>
-   <td>情報提供のみ。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>73</td>
-   <td>プラットフォームの開始センス: %1</td>
-   <td>情報提供のみ。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>74</td>
-   <td>レジストリ内のデバイス タグが長さの制限を超えています。 タグ名: %2。 長さの制限: %1。</td>
-   <td>デバイス タグが長さの制限を超えています。</td>
-   <td>短いデバイス タグを使用します。</td>
-</tr>
-<tr>
-   <td>81</td>
-   <td>エンドポイント ETW 自動ロガー用 Microsoft Defender の作成に失敗しました。 エラー コード: %1</td>
-   <td>ETW セッションの作成に失敗しました。</td>
-   <td>デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>82</td>
-   <td>エンドポイント ETW 自動ロガー用 Microsoft Defender の削除に失敗しました。 エラー コード: %1</td>
-   <td>ETW セッションの削除に失敗しました。</td>
-   <td>サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>84</td>
-   <td>実行中Windows Defender ウイルス対策を設定します。 強制パッシブ モード: %1、結果コード: %2。</td>
-   <td>Defender の実行モード (アクティブまたはパッシブ) を設定します。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>85</td>
-   <td>Microsoft Defender for Endpoint 実行可能ファイルのトリガーに失敗しました。 エラー コード: %1</td>
-   <td>SenseIR 実行可能ファイルの主演に失敗しました。</td>
-   <td>デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>86</td>
-   <td>もう一度開始すると、起動する必要がある外部サービスが停止しました。 名前: %1、終了コード: %2</td>
-   <td>外部サービスを再度開始します。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>87</td>
-   <td>外部サービスを開始できません。 名前: %1</td>
-   <td>外部サービスの開始に失敗しました。</td>
-   <td>サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>88</td>
-   <td>外部サービスの開始の種類を再度更新します。 名前: %1、実際の開始の種類: %2、予期される開始の種類: %3、終了コード: %4</td>
-   <td>外部サービスの開始の種類を更新しました。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>89</td>
-   <td>外部サービスの開始の種類を更新できません。 名前: %1、実際の開始の種類: %2、予期される開始の種類: %3</td>
-   <td>外部サービスの開始の種類を更新できない。</td>
-   <td>サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>90</td>
-   <td>地域 %1 のクラウド サービスに接続するための System Guard ランタイム モニターの構成に失敗しました。 エラー コード: %2</td>
-   <td>System Guard ランタイム モニターは、構成証明データをクラウド サービスに送信しない。</td>
-   <td>登録パスのアクセス許可を確認します。"HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm"。 問題が見つからない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>91</td>
-   <td>System Guard ランタイム モニター地域情報の削除に失敗しました。 エラー コード: %1</td>
-   <td>System Guard ランタイム モニターは、構成証明データをクラウド サービスに送信しない。</td>
-   <td>登録パスのアクセス許可を確認します。"HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm"。 問題が見つからない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>92</td>
-   <td>データ クォータを超えたため、センサーのサイバー データ クォータの送信を停止します。 クォータ期間が過ぎると、送信が再開されます。 状態マスク: %1</td>
-   <td>調整の制限を超える。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>93</td>
-   <td>センサーのサイバー データの送信を再送信する。 状態マスク: %1</td>
-   <td>サイバー データの送信を再開します。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>94</td>
-   <td>Microsoft Defender for Endpoint 実行可能ファイルが開始されました</td>
-   <td>SenseCE 実行可能ファイルが開始されました。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>95</td>
-   <td>Microsoft Defender for Endpoint 実行可能ファイルが終了しました</td>
-   <td>SenseCE 実行可能ファイルが終了しました。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>96</td>
-   <td>Microsoft Defender for Endpoint Init が呼び出しました。 結果コード: %2</td>
-   <td>SenseCE 実行可能ファイルは MCE 初期化と呼ばされています。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>97</td>
-   <td>DLP シナリオのクラウドへの接続に関する問題がある</td>
-   <td>DLP 分類フローに影響するネットワーク接続の問題があります。</td>
-   <td>ネットワーク接続を確認します。</td>
-</tr>
-<tr>
-   <td>98</td>
-   <td>DLP シナリオのクラウドへの接続が復元されました</td>
-   <td>ネットワークへの接続が復元され、DLP 分類フローを続行できます。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>99</td>
-   <td>サーバーとの通信中に、センスで次のエラーが発生しました。(%1)。 結果: (%2)</td>
-   <td>通信エラーが発生しました。</td>
-   <td>詳細については、イベント ログで次のイベントを確認してください。</td>
-</tr>
-<tr>
-   <td>100</td>
-   <td>Microsoft Defender for Endpoint 実行可能ファイルの起動に失敗しました。 エラー コード: %1</td>
-   <td>SenseCE 実行可能ファイルの起動に失敗しました。</td>
-   <td>デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。</td>
-</tr>
-<tr>
-   <td>102</td>
-   <td>Microsoft Defender for Endpoint Network Detection and Response 実行可能ファイルが開始されました</td>
-   <td>SenseNdr 実行可能ファイルが開始されました。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-<tr>
-   <td>103</td>
-   <td>Microsoft Defender for Endpoint Network Detection and Response 実行可能ファイルが終了しました</td>
-   <td>SenseNdr 実行可能ファイルが終了しました。</td>
-   <td>通常の動作通知。アクションは必要ありません。</td>
-</tr>
-</tbody>
-</table>
+   <br>
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
+   ****
+
+   |イベント ID|メッセージ|説明|アクション|
+   |---|---|---|---|
+   |1|Microsoft Defender for Endpoint service が開始されました (バージョン `variable` )。|システムの起動時、シャットダウン中、オンボーディング中に発生します。|通常の動作通知。アクションは必要ありません。|
+   |2|Microsoft Defender for Endpoint service shutdown.|デバイスがシャットダウンまたはオフボードされている場合に発生します。|通常の動作通知。アクションは必要ありません。|
+   |3|Microsoft Defender for Endpoint service の開始に失敗しました。 エラー コード: `variable` .|サービスが開始しなかった。|他のメッセージを確認して、考えられる原因とトラブルシューティングの手順を確認します。|
+   |4 |Microsoft Defender for Endpoint service がでサーバーに連絡しました `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> この URL は、ファイアウォールまたはネットワーク アクティビティに表示される URL と一致します。|通常の動作通知。アクションは必要ありません。|
+   |5 |Microsoft Defender for Endpoint service でサーバーへの接続に失敗しました `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> サービスは、その URL の外部処理サーバーに接続できません。|URL への接続を確認します。 「Configure [proxy and Internet connectivity」を参照してください](configure-proxy-internet.md)。|
+   |6 |Microsoft Defender for Endpoint Service はオンボードされていないので、オンボーディング パラメーターが見つかりませんでした。|デバイスが正しくオンボードされていないので、ポータルに報告されません。|サービスを開始する前にオンボーディングを実行する必要があります。 <p> オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
+   |7 |Microsoft Defender for Endpoint service では、オンボーディング パラメーターの読み取りが失敗しました。 失敗: `variable` .|変数 = 詳細なエラーの説明。 デバイスが正しくオンボードされていないので、ポータルに報告されません。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
+   |8 |Microsoft Defender for Endpoint service では、構成のクリーンアップに失敗しました。 エラー コード: `variable` .|**オンボーディング中:** サービスは、オンボーディング中に構成のクリーンアップに失敗しました。 オンボーディング プロセスは続行されます。 <p> **オフボード中:** サービスは、オフボード中に構成のクリーンアップに失敗しました。 オフボード プロセスは終了しましたが、サービスは実行を続ける。|**オンボーディング:** アクションは不要です。 <p> **オフボード:** システムを再起動します。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
+   |9 |Microsoft Defender for Endpoint service は、開始の種類を変更できなかった。 エラー コード: `variable` .|**オンボーディング中:** デバイスが正しくオンボードされていないので、ポータルに報告されません。 <p>**オフボード中:** サービスの開始の種類を変更できなかった。 オフボードプロセスは続行されます。 |オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
+   |10 |Microsoft Defender for Endpoint Service は、オンボーディング情報を保持できなかった。 エラー コード: `variable` .|デバイスが正しくオンボードされていないので、ポータルに報告されません。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
+   |11|Defender for Endpoint サービスのオンボーディングまたは再オンボーディングが完了しました。|デバイスが正しくオンボードされました。|通常の動作通知。アクションは必要ありません。 <p> デバイスがポータルに表示されるには数時間かかる場合があります。|
+   |12 |Microsoft Defender for Endpoint では、既定の構成の適用に失敗しました。|サービスが既定の構成を適用できなかった。|このエラーは、短時間で解決する必要があります。|
+   |13|Microsoft Defender for Endpoint デバイス ID が計算 `variable` されます。|通常の操作プロセス。|通常の動作通知。アクションは必要ありません。|
+   |15|エンドポイントの Microsoft Defender は、URL を使用してコマンド チャネルを開始できません `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> サービスは、その URL の外部処理サーバーに接続できません。|URL への接続を確認します。 「Configure [proxy and Internet connectivity」を参照してください](configure-proxy-internet.md)。|
+   |17 |Microsoft Defender for Endpoint service は、接続されたユーザー エクスペリエンスとテレメトリ サービスの場所を変更できなかった。 エラー コード: `variable` .|テレメトリ サービスでエラー Windows発生しました。|[診断データ サービスが "有効" になっている](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)>診断データ サービスが有効になっているか確認します。 <p> オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
+   |18 |OOBE (Windows) が完了しました。|サービスは、更新プログラムのインストールWindows後にのみ開始されます。|通常の動作通知。アクションは必要ありません。|
+   |19|OOBE (Windows) がまだ完了していません。|サービスは、更新プログラムのインストールWindows後にのみ開始されます。|通常の動作通知。アクションは必要ありません。 <p> システムの再起動後もこのエラーが解決しない場合は、すべての更新プログラムWindowsインストールされていることを確認します。|
+   |20|OOBE (ようこそ) がWindows待機できません。 エラー コード: `variable` .|内部エラー。|システムの再起動後もこのエラーが解決しない場合は、すべての更新プログラムWindowsインストールされていることを確認します。|
+   |25|Microsoft Defender for Endpoint service は、レジストリの正常性状態をリセットできなかった。 エラー コード: `variable` .|デバイスが正しくオンボードされませんでした。 ポータルに報告しますが、サービスが SCCM またはレジストリに登録されていない場合があります。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
+   |26|Microsoft Defender for Endpoint service は、レジストリのオンボーディングの状態を設定できなかった。 エラー コード: `variable` .|デバイスが正しくオンボードされませんでした。 <p> ポータルに報告しますが、サービスが SCCM またはレジストリに登録されていない場合があります。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
+   |27|Microsoft Defender for Endpoint service は、ユーザーのアカウントで SENSE 対応モードを有効Microsoft Defender ウイルス対策。 オンボーディング プロセスに失敗しました。 エラー コード: `variable` .|通常、Microsoft Defender ウイルス対策別のリアルタイムマルウェア対策製品がデバイスで適切に実行され、デバイスが Defender for Endpoint に報告されている場合は、特別なパッシブ状態になります。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。 <p> リアルタイムのマルウェア対策保護が正しく実行されていることを確認します。|
+   |28|Microsoft Defender for Endpoint Connected User Experiences and Telemetry service registration failed. エラー コード: `variable` .|テレメトリ サービスでエラー Windows発生しました。|[診断データ サービスが有効になっているか確認します](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。 <p> オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
+   |29|オフボード パラメーターの読み取りに失敗しました。 エラーの種類: %1、エラー コード: %2、説明: %3|このイベントは、システムがオフボード パラメーター&#39;読み取りできない場合に発生します。|デバイスにインターネット アクセス権が設定されているのを確認し、オフボード プロセス全体を再度実行します。 オフボード パッケージの有効期限が切れていないか確認します。|
+   |30|Microsoft Defender for Endpoint service は、このサービスで SENSE 対応モードを無効Microsoft Defender ウイルス対策。 エラー コード: `variable` .|通常、Microsoft Defender ウイルス対策別のリアルタイムマルウェア対策製品がデバイスで適切に実行され、デバイスが Defender for Endpoint に報告されている場合は、特別なパッシブ状態になります。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。 <p> リアルタイムのマルウェア対策保護が正しく実行されていることを確認します。|
+   |31|Microsoft Defender for Endpoint Connected User Experiences and Telemetry service unregistration failed. エラー コード: `variable` .|オンボーディング中に、Windowsテレメトリ サービスでエラーが発生しました。 オフボードプロセスは続行されます。|[テレメトリ サービスのエラー Windows確認します](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)。|
+   |32|Microsoft Defender for Endpoint service は、オフボード プロセスの後に自身を停止する要求に失敗しました。 エラー コード: %1|オフボード中にエラーが発生しました。|デバイスを再起動します。|
+   |33|エンドポイント サービスの Microsoft Defender は、SENSE GUID の永続化に失敗しました。 エラー コード: `variable` .|一意の識別子を使用して、ポータルに報告する各デバイスを表します。 <p> 識別子が保持されない場合、同じデバイスがポータルに 2 回表示される場合があります。|サービスがレジストリを更新できるデバイスのレジストリのアクセス許可を確認します。|
+   |34|Microsoft Defender for Endpoint Service は、接続されたユーザー エクスペリエンスとテレメトリ サービスへの依存関係として自分自身を追加できなかったので、オンボーディング プロセスが失敗しました。 エラー コード: `variable` .|テレメトリ サービスでエラー Windows発生しました。|[診断データ サービスが有効になっているか確認します](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。 <p> オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
+   |35|Microsoft Defender for Endpoint Service は、接続されたユーザー エクスペリエンスとテレメトリ サービスへの依存関係として削除に失敗しました。 エラー コード: `variable` .|オフボード中に、Windowsテレメトリ サービスでエラーが発生しました。 オフボードプロセスは続行されます。|診断データ サービスのエラー Windows確認します。|
+   |36|Microsoft Defender for Endpoint Connected User Experiences and Telemetry service registration succeeded. 完了コード: `variable` .|Defender for Endpoint の接続ユーザー エクスペリエンスとテレメトリ サービスへの登録が正常に完了しました。|通常の動作通知。アクションは必要ありません。|
+   |37|Microsoft Defender for Endpoint A モジュールは、クォータを超えかねない状態です。 モジュール: %1、クォータ: {%2} {%3}、クォータ使用率の割合: %4。|デバイスは、現在の 24 時間ウィンドウの割り当てられたクォータをほとんど使用しています。 調整が必要です。|通常の動作通知。アクションは必要ありません。|
+   |38|ネットワーク接続は低として識別されます。 Microsoft Defender for Endpoint は、%1 分ごとにサーバーに連絡します。 メーター接続: %2、インターネット利用可:%3、利用可能な無料ネットワーク:%4。|デバイスは、測定済み/有料ネットワークを使用し、サーバーへの接続頻度が低い。|通常の動作通知。アクションは必要ありません。|
+   |39|ネットワーク接続は通常と識別されます。 Microsoft Defender for Endpoint は、%1 分ごとにサーバーに連絡します。 メーター接続: %2、インターネット利用可:%3、利用可能な無料ネットワーク:%4。|デバイスは、メーター接続または有料接続を使用していなく、通常どおりサーバーに連絡します。|通常の動作通知。アクションは必要ありません。|
+   |40|バッテリーの状態は低と識別されます。 Microsoft Defender for Endpoint は、%1 分ごとにサーバーに連絡します。 バッテリーの状態: %2。|デバイスのバッテリー 残量が少なく、サーバーに接続する頻度が低い。|通常の動作通知。アクションは必要ありません。|
+   |41|バッテリーの状態は、通常の状態として識別されます。 Microsoft Defender for Endpoint は、%1 分ごとにサーバーに連絡します。 バッテリーの状態: %2。|デバイスのバッテリー 残量が少なめで、通常どおりサーバーに連絡します。|通常の動作通知。アクションは必要ありません。|
+   |42|Microsoft Defender for Endpoint コンポーネントは、アクションの実行に失敗しました。 コンポーネント: %1、Action: %2、例外の種類: %3、例外メッセージ: %4|内部エラー。 サービスの開始に失敗しました。|このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |43|Microsoft Defender for Endpoint コンポーネントは、アクションの実行に失敗しました。 コンポーネント: %1、Action: %2、例外の種類: %3、例外エラー: %4、例外メッセージ: %5|内部エラー。 サービスの開始に失敗しました。|このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |44|Defender for Endpoint サービスのオフボーディングが完了しました。|サービスはオフボードされました。|通常の動作通知。アクションは必要ありません。|
+   |45|イベント トレース セッション [%1] の登録と開始に失敗しました。 エラー コード: %2|ETW セッションの作成時にサービスの起動時にエラーが発生しました。 これにより、サービスの起動エラーが発生しました。|このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |46|リソース不足のため、イベント トレース セッション [%1] の登録と開始に失敗しました。 エラー コード: %2。 これは、アクティブなイベント トレース セッションが多すぎるためです。 サービスは 1 分で再試行します。|リソース不足のため、ETW セッションの作成中にサービスの起動時にエラーが発生しました。 サービスは開始され、実行中ですが、ETW セッションが開始されるまでセンサー イベントは報告できません。|通常の動作通知。アクションは必要ありません。 サービスは、1 分ごとにセッションを開始します。|
+   |47|イベント トレース セッションが正常に登録され、開始されました 。 以前に失敗した試行後に回復されました。|このイベントは、ETW セッションを正常に開始した後、前のイベントに従います。|通常の動作通知。アクションは必要ありません。|
+   |48|イベント トレース セッション [%2] にプロバイダー [%1] を追加できなかった。 エラー コード: %3。 つまり、このプロバイダーからのイベントは報告されません。|ETW セッションにプロバイダーを追加できなかった。 その結果、プロバイダー イベントは報告されません。|エラー コードを確認します。 エラーが解決しない場合は、サポートにお問い合わせください。|
+   |49|無効なクラウド構成コマンドが受信され、無視されます。 バージョン: %1、状態: %2、エラー コード: %3、メッセージ: %4|無視されたクラウド サービスから無効な構成ファイルを受け取った。|このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |50|新しいクラウド構成が正常に適用されました。 バージョン: %1。|クラウド サービスから新しい構成を正常に適用しました。|通常の動作通知。アクションは必要ありません。|
+   |51|新しいクラウド構成の適用に失敗しました。バージョン: %1。 最後の既知の良い構成であるバージョン %2 が正常に適用されました。|クラウド サービスから悪い構成ファイルを受け取った。 最後に既知の良好な構成が正常に適用されました。|このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |52|新しいクラウド構成の適用に失敗しました。バージョン: %1。 また、前回の既知の良好な構成バージョン %2 の適用にも失敗しました。 既定の構成が正常に適用されました。|クラウド サービスから悪い構成ファイルを受け取った。 前回の既知の良好な構成の適用に失敗し、既定の構成が適用されました。|サービスは、5 分以内に新しい構成ファイルのダウンロードを試みます。 イベント が表示#50サポートにお問い合わせください。|
+   |53|永続的な記憶域から読み込まれたクラウド構成のバージョン: %1。|構成は、サービスの起動時に永続的な記憶域から読み込まれた。|通常の動作通知。アクションは必要ありません。|
+   |55|Secure ETW 自動ロガーの作成に失敗しました。 エラー コード: %1|セキュリティで保護された ETW ロガーの作成に失敗しました。|デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |56|Secure ETW 自動ロガーの削除に失敗しました。 エラー コード: %1|オフボーディング時にセキュリティで保護された ETW セッションを削除できなかった。|サポートにお問い合わせください。|
+   |57|トラブルシューティングの目的でコンピューターのスナップショットをキャプチャする。|調査パッケージ (forensics パッケージとも呼ばれる) が収集されています。|通常の動作通知。アクションは必要ありません。|
+   |59|開始コマンド: %1|応答コマンドの実行を開始します。|通常の動作通知。アクションは必要ありません。|
+   |60|コマンド %1 の実行に失敗しました。エラー: %2。|応答コマンドの実行に失敗しました。|このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |61|データ収集コマンド パラメーターが無効です。SasUri: %1、compressionLevel: %2。|データ収集コマンドの引数 (無効な引数) の読み取りまたは解析に失敗しました。|このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |62|接続ユーザー エクスペリエンスとテレメトリ サービスの開始に失敗しました。 エラー コード: %1|接続されたユーザー エクスペリエンスとテレメトリ (diagtrack) サービスの開始に失敗しました。 Microsoft Defender for Endpoint テレメトリ以外は、このコンピューターから送信されません。|イベント ログのトラブルシューティング ヒントの詳細については、「Microsoft-Windows-UniversalTelemetryClient/Operational」を参照してください。|
+   |63|外部サービスの開始の種類を更新します。 名前: %1、実際の開始の種類: %2、予期される開始の種類: %3、終了コード: %4|外部サービスの開始の種類を更新しました。|通常の動作通知。アクションは必要ありません。|
+   |64|停止した外部サービスの開始。 名前: %1、終了コード: %2|外部サービスの開始。|通常の動作通知。アクションは必要ありません。|
+   |65|Microsoft セキュリティ イベント コンポーネント ミニフィルター ドライバーの読み込みに失敗しました。 エラー コード: %1|ファイルシステムのミニフィルターMsSecFlt.sys読み込めない。|デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |66|ポリシー更新プログラム: 待機時間モード - %1|C&C 接続頻度ポリシーが更新されました。|通常の動作通知。アクションは必要ありません。|
+   |68|サービスの開始の種類が予期しない。 サービス名: %1、実際の開始の種類: %2、予期される開始の種類: %3|予期しない外部サービスの開始の種類。|外部サービスの開始の種類を修正します。|
+   |69|サービスが停止します。 サービス名: %1|外部サービスが停止します。|外部サービスを開始します。|
+   |70|ポリシー更新: サンプル コレクションを許可する - %1|サンプル コレクション ポリシーが更新されました。|通常の動作通知。アクションは必要ありません。|
+   |71|コマンドの実行に成功しました: %1|コマンドが正常に実行されました。|通常の動作通知。アクションは必要ありません。|
+   |72|最初の完全なコンピューター プロファイル レポートの送信を試みました。 結果コード: %1|情報提供のみ。|通常の動作通知。アクションは必要ありません。|
+   |73|プラットフォームの開始センス: %1|情報提供のみ。|通常の動作通知。アクションは必要ありません。|
+   |74|レジストリ内のデバイス タグが長さの制限を超えています。 タグ名: %2。 長さの制限: %1。|デバイス タグが長さの制限を超えています。|短いデバイス タグを使用します。|
+   |81|エンドポイント ETW 自動ロガー用 Microsoft Defender の作成に失敗しました。 エラー コード: %1|ETW セッションの作成に失敗しました。|デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |82|エンドポイント ETW 自動ロガー用 Microsoft Defender の削除に失敗しました。 エラー コード: %1|ETW セッションの削除に失敗しました。|サポートにお問い合わせください。|
+   |84|実行中Windows Defender ウイルス対策を設定します。 強制パッシブ モード: %1、結果コード: %2。|Defender の実行モード (アクティブまたはパッシブ) を設定します。|通常の動作通知。アクションは必要ありません。|
+   |85|Microsoft Defender for Endpoint 実行可能ファイルのトリガーに失敗しました。 エラー コード: %1|SenseIR 実行可能ファイルの主演に失敗しました。|デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |86|もう一度開始すると、起動する必要がある外部サービスが停止しました。 名前: %1、終了コード: %2|外部サービスを再度開始します。|通常の動作通知。アクションは必要ありません。|
+   |87|外部サービスを開始できません。 名前: %1|外部サービスの開始に失敗しました。|サポートにお問い合わせください。|
+   |88|外部サービスの開始の種類を再度更新します。 名前: %1、実際の開始の種類: %2、予期される開始の種類: %3、終了コード: %4|外部サービスの開始の種類を更新しました。|通常の動作通知。アクションは必要ありません。|
+   |89|外部サービスの開始の種類を更新できません。 名前: %1、実際の開始の種類: %2、予期される開始の種類: %3|外部サービスの開始の種類を更新できない。|サポートにお問い合わせください。|
+   |90|地域 %1 のクラウド サービスに接続するための System Guard ランタイム モニターの構成に失敗しました。 エラー コード: %2|System Guard ランタイム モニターは、構成証明データをクラウド サービスに送信しない。|登録パスのアクセス許可を確認します。"HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm"。 問題が見つからない場合は、サポートにお問い合わせください。|
+   |91|System Guard ランタイム モニター地域情報の削除に失敗しました。 エラー コード: %1|System Guard ランタイム モニターは、構成証明データをクラウド サービスに送信しない。|登録パスのアクセス許可を確認します。"HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm"。 問題が見つからない場合は、サポートにお問い合わせください。|
+   |92|データ クォータを超えたため、センサーのサイバー データ クォータの送信を停止します。 クォータ期間が過ぎると、送信が再開されます。 状態マスク: %1|調整の制限を超える。|通常の動作通知。アクションは必要ありません。|
+   |93|センサーのサイバー データの送信を再送信する。 状態マスク: %1|サイバー データの送信を再開します。|通常の動作通知。アクションは必要ありません。|
+   |94|Microsoft Defender for Endpoint 実行可能ファイルが開始されました|SenseCE 実行可能ファイルが開始されました。|通常の動作通知。アクションは必要ありません。|
+   |95|Microsoft Defender for Endpoint 実行可能ファイルが終了しました|SenseCE 実行可能ファイルが終了しました。|通常の動作通知。アクションは必要ありません。|
+   |96|Microsoft Defender for Endpoint Init が呼び出しました。 結果コード: %2|SenseCE 実行可能ファイルは MCE 初期化と呼ばされています。|通常の動作通知。アクションは必要ありません。|
+   |97|DLP シナリオのクラウドへの接続に関する問題がある|DLP 分類フローに影響するネットワーク接続の問題があります。|ネットワーク接続を確認します。|
+   |98|DLP シナリオのクラウドへの接続が復元されました|ネットワークへの接続が復元され、DLP 分類フローを続行できます。|通常の動作通知。アクションは必要ありません。|
+   |99|サーバーとの通信中に、センスで次のエラーが発生しました。(%1)。 結果: (%2)|通信エラーが発生しました。|詳細については、イベント ログで次のイベントを確認してください。|
+   |100|Microsoft Defender for Endpoint 実行可能ファイルの起動に失敗しました。 エラー コード: %1|SenseCE 実行可能ファイルの起動に失敗しました。|デバイスを再起動します。 このエラーが解決しない場合は、サポートにお問い合わせください。|
+   |102|Microsoft Defender for Endpoint Network Detection and Response 実行可能ファイルが開始されました|SenseNdr 実行可能ファイルが開始されました。|通常の動作通知。アクションは必要ありません。|
+   |103|Microsoft Defender for Endpoint Network Detection and Response 実行可能ファイルが終了しました|SenseNdr 実行可能ファイルが終了しました。|通常の動作通知。アクションは必要ありません。|
+   |
+
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## <a name="related-topics"></a>関連項目
+
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
 - [Microsoft Defender for Endpoint のトラブルシューティング](troubleshoot-onboarding.md)

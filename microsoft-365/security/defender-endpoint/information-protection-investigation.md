@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bff490edcc79bc8f96e65c8b27586ca8b54e5bce
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fa5786b547fdbb858251eb7728bb2487ee0139ab
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186127"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543679"
 ---
 # <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>秘密度ラベルを使用してインシデント対応に優先順位を付ける  
 
@@ -41,9 +41,9 @@ Defender for Endpoint は、セキュリティ インシデントの事前設定
 データの感度ラベルを使用してインシデント調査の優先順位を設定する方法について学習します。
 
 >[!NOTE]
->バージョン 1809 以降Windows 10ラベルが検出されます。
+>ラベルは、1 つ以上のWindows 10 Version 1809検出されます。
 
-1. [インシデントMicrosoft Defender セキュリティ センター] を **選択します**。 
+1. [Microsoft 365 Defender] ポータルで、[インシデント]**を選択&インシデント**  >  **を通知します**。
 
 2. 右にスクロールすると、[データの感度 **] 列が表示** されます。 この列は、インシデントに関連するデバイスで観察された機密ラベルを反映し、機密ファイルがインシデントの影響を受ける可能性があるかどうかを示します。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aaf9c0a8eef4e050ca034d1aee69d24c5adb909d
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 9fe35f5bac942cc5a4e9fa95a5eaf9759072d832
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930369"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542191"
 ---
 # <a name="resources"></a>リソース
 
@@ -148,7 +148,7 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 Defender for Endpoint ポータルには、次の 2 つのカテゴリの情報が表示されます。
 
 - 次のウイルス対策アラートを含む。
-  - 重要度
+  - 重大度
   - スキャンの種類
   - デバイス情報 (ホスト名、デバイス識別子、テナント識別子、アプリのバージョン、OS の種類)
   - ファイル情報 (名前、パス、サイズ、ハッシュ)
@@ -166,8 +166,8 @@ Defender for Endpoint ポータルには、次の 2 つのカテゴリの情報�
 
 ### <a name="known-issues"></a>既知の問題
 
-- 製品が期待通り動作している場合でも、Microsoft Defender セキュリティ センター ポータルのコンピューター情報ページに「センサー データなし、通信障害」が表示される場合があります。 この問題の解決に取り組み中です。
-- ログオンしているユーザーは、ポータルにMicrosoft Defender セキュリティ センターされません。
+- 製品が期待通り動作している場合でも、Microsoft 365 Defender ポータルのコンピューター情報ページに「センサー データなし、通信障害」が表示される場合があります。 この問題の解決に取り組み中です。
+- ログオンしているユーザーは、ポータルにMicrosoft 365 Defenderされません。
 - SUSE ディストリビューションで *、libatomic1* のインストールが失敗した場合は、OS が登録されているのを検証する必要があります。
 
    ```bash

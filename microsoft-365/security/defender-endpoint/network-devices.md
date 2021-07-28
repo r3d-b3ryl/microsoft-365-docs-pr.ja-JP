@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 86b8a37fd6b2d6f9906321b5d74de0e21c45fca3
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: d1ba87687f5650310b3b94e5827181510b3834c3
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062144"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543655"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 
@@ -40,7 +40,7 @@ ms.locfileid: "53062144"
 > [!NOTE]  
 > [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 04-13-2021 に公開されたネットワーク デバイスの検出と脆弱性評価ブログでは、Defender for Endpoint の新しいネットワーク デバイス検出機能に関する分析情報を \) 提供します。 この記事では、ネットワーク デバイスの検出が対処するように設計されている課題の概要と、これらの新機能の使用を開始する方法に関する詳細な情報を提供します。
 
-ネットワーク検出機能は、セキュリティ センターとセキュリティ コンソールの [デバイス インベントリ] Microsoft 365セクションMicrosoft Defender セキュリティ センター使用できます。  
+ネットワーク検出機能は、セキュリティ センターとセキュリティ コンソールの [デバイス インベントリ] Microsoft 365セクションMicrosoft 365 Defender使用できます。  
 
 指定された Microsoft Defender for Endpoint デバイスは、構成済みのネットワーク デバイスの定期的な認証スキャンを実行するために、各ネットワーク セグメントで使用されます。 検出された Defender for Endpoint の 脅威と脆弱性の管理 機能は、検出されたスイッチ、ルーター、WLAN コントローラー、ファイアウォール、VPN ゲートウェイを保護するための統合ワークフローを提供します。  
 
@@ -70,7 +70,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 顧客の使用状況から収集されたデータに基づいて、時間の間に追加されるネットワーク ベンダーと OS の数が多くなされます。 したがって、この一覧で指定されていない場合でも、すべてのネットワーク デバイスを構成してください。
 
-## <a name="how-to-get-started"></a>使用を開始する方法
+## <a name="how-to-get-started"></a>始める方法
 
 最初の手順は、認証されたネットワーク スキャンを実行するデバイスを選択します。
 
@@ -91,7 +91,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 8. ネットワーク スキャナーを認証して適切に動作するには、次のドメイン/URL を追加する必要があります。
 
     - login.windows.net  
-    - *.securitycenter.windows.com
+    - *.security.microsoft.com
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
@@ -105,7 +105,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 ## <a name="install-the-network-scanner"></a>ネットワーク スキャナーのインストール
 
 1. [エンドポイント評価 **Microsoft 365の設定** に移動します  >    >    >  ([**ネットワーク評価] の下**)。
-    1. [評価ジョブMicrosoft Defender セキュリティ センター] ページ設定 >移動します。
+    1. このポータルMicrosoft 365 Defender、[評価ジョブ] ページ設定 >移動します。
 
 2. ネットワーク スキャナーをダウンロードし、指定された Defender for Endpoint 評価デバイスにインストールします。
 

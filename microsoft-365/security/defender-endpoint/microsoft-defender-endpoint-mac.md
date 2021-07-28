@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 365fed8b5f7c7fc617ea068e324da541f7f1b187
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 9b809cc82ef6fda3d4153dbf19871801ec59ae75
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301778"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543427"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac
 
@@ -56,7 +56,7 @@ ms.locfileid: "52301778"
 
 ### <a name="prerequisites"></a>前提条件
 
-- Defender for Endpoint サブスクリプションとポータルへのアクセスMicrosoft Defender セキュリティ センターする
+- Defender for Endpoint サブスクリプションとポータルへのアクセスMicrosoft 365 Defenderする
 - macOS と BASH スクリプトの初心者レベルのエクスペリエンス
 - デバイスの管理特権 (手動展開の場合)
 
@@ -97,8 +97,8 @@ Microsoft Defender for Endpoint on Mac では、次のいずれかの Microsoft 
 
 - Microsoft 365 E5 (M365 E5)
 - Microsoft 365 E5 Security
-- Microsoft 365A5 (M365 A5)
-- Windows 10 EnterpriseE5
+- Microsoft 365 A5 (M365 A5)
+- Windows 10 Enterprise E5
 - Microsoft Defender for Endpoint
 
 > [!NOTE]
@@ -117,7 +117,7 @@ Microsoft Defender for Endpoint on Mac では、次のいずれかの Microsoft 
 
 Microsoft Defender for Endpoint では、次の検出方法を使用してプロキシ サーバーを検出できます。
 - プロキシの自動構成 (PAC)
-- Web プロキシ自動検出プロトコル (WPAD)
+- Web プロキシ自動発見プロトコル (WPAD)
 - 静的プロキシの手動構成
 
 プロキシまたはファイアウォールが匿名トラフィックをブロックしている場合は、以前にリストした URL で匿名トラフィックが許可されている必要があります。
@@ -161,7 +161,7 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 macOS の進化に合わせ、カーネル拡張機能の代わりにシステム拡張機能を活用する Microsoft Defender for Endpoint on Mac 更新プログラムを準備しています。 関連する詳細については [、「Microsoft Defender for Endpoint on Mac の新機能」を参照してください](mac-whatsnew.md)。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 - ログ記録、アンインストール、その他のトピックの詳細については [、「Resources for Microsoft Defender for Endpoint on Mac」を参照してください](mac-resources.md)。
 

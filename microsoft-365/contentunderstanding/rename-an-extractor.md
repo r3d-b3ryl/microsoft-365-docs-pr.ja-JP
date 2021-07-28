@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex で抽出子の名前を変更する方法および理由について説明します。
-ms.openlocfilehash: 4c0db1d0523e30706a2e6ec31286e5e91adb61a6
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: a34420872b6dfdf684a1a640dd8b98261e86ae22
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445994"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595920"
 ---
 # <a name="rename-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex で抽出子の名前を変更する
 

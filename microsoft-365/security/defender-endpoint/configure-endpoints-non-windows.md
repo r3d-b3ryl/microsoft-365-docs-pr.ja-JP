@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4aff505f9f35b6144360eed5992ac36cf0847617
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 266155dca8206e6c3572655fdd88b1ca8bdfde2e
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454711"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596172"
 ---
 # <a name="onboard-non-windows-devices"></a>Windows 以外のデバイスをオンボードする
 
@@ -36,11 +36,11 @@ ms.locfileid: "53454711"
 - macOS
 - Linux
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink)
 
-Defender for Endpoint は、セキュリティ プラットフォームだけでなく、Windowsプラットフォームにも一元的なセキュリティWindows提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートを、組織のネットワークMicrosoft 365 Defender保護するために役立ちます。 
+Defender for Endpoint は、セキュリティ プラットフォームと非プラットフォームWindows一元的なセキュリティWindows提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートを、組織のネットワークMicrosoft 365 Defender保護するために役立ちます。 
 
-統合を機能するには、Defender for Endpoint と互換性のある Linux ディストリビューションと macOS の正確なバージョンを知る必要があります。 詳しくは、次のトピックを参照してください。
+統合を機能するには、Defender for Endpoint と互換性のある Linux ディストリビューションと macOS の正確なバージョンを知る必要があります。 詳細については、以下を参照してください。
 - [Microsoft Defender for Endpoint on Linux システム要件](microsoft-defender-endpoint-linux.md#system-requirements)  
 - [Microsoft Defender for Endpoint on macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
 
@@ -50,12 +50,11 @@ Defender for Endpoint は、セキュリティ プラットフォームだけで
 
    - macOS デバイスの場合は、Microsoft Defender for Endpoint またはサード パーティ製ソリューションを使用してオンボードを選択できます。 詳細については [、「Microsoft Defender for Endpoint on Mac」を参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
 
-   - その他の非デバイスWindows、サードパーティとの統合を通じてWindowsデバイスのオンボード **を選択します**。   
-    1. ナビゲーション ウィンドウで、[相互運用性パートナー]**を**  >  **選択します**。 サード パーティ製のソリューションが一覧に表示されます。
-    2. [パートナー **アプリケーション] タブ** で、ユーザー以外のデバイスをサポートするパートナー Windowsします。
-    3. [ **パートナー ページを開く]** を選択して、パートナーのページを開きます。 ページに記載されている手順に従います。
-    4. アカウントを作成するか、パートナー ソリューションをサブスクライブした後、組織のテナントのグローバル管理者がパートナー アプリケーションからのアクセス許可要求を受け入れるという要求を受け入れるステージに進む必要があります。 アクセス許可要求を注意深く読み、必要なサービスと一致している必要があります。 
-
+   - その他の非接続デバイスWindowsサードパーティとの統合を通じてWindowsデバイスのオンボード **を選択します**。   
+    1. ナビゲーション ウィンドウで、[パートナーと **API パートナー アプリケーション]**  >  **を選択します**。 サード パーティ製のソリューションが一覧に表示されます。
+    2. [パートナー **アプリケーション] ページ** で、ユーザー以外のデバイスをサポートするパートナー Windowsします。
+    3. [表示 **] を** クリックしてパートナーのページを開きます。 ページに記載されている手順に従います。
+    4. アカウントを作成するか、パートナー ソリューションをサブスクライブした後、組織のテナントのグローバル管理者がパートナー アプリケーションからのアクセス許可要求を受け入れるという要求を受け入れるステージに進む必要があります。 アクセス許可要求を注意深く読んで、必要なサービスと一致している必要があります。 
         
 2. サード パーティソリューションの指示に従って検出テストを実行します。
 

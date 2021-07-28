@@ -1,7 +1,7 @@
 ---
-title: Microsoft Viva Topics の既存のトピックを編集する
-author: chuckedmonson
+title: 既存のトピックを編集Microsoft Viva トピック
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: cjtan
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-description: 既存のトピックを編集する方法については、「Microsoft Viva Topics」を参照してください。
-ms.openlocfilehash: 6e1f85737298736a3aafcb30cfe103c28654d1c1
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+description: 既存のトピックを編集する方法については、Microsoft Viva トピック。
+ms.openlocfilehash: 47c9254c91e08cda6dc33c40768689d94e5ceeef
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053223"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596232"
 ---
-# <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Microsoft Viva Topics の既存のトピックを編集する 
+# <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>既存のトピックを編集Microsoft Viva トピック 
 
 </br>
 
@@ -34,7 +34,7 @@ Viva Topics では、既存のトピックを編集できます。 既存のト�
 > [!Note] 
 > AI によって収集されるトピックの情報はセキュリティによってトリミング[](topic-experiences-security-trimming.md)されます。既存のトピックを編集するときに手動で追加するトピックの説明とユーザー情報は、トピックを表示する権限を持つすべてのユーザーに表示されます。 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 既存のトピックを編集するには、次の必要があります。
 - Viva トピック ライセンスを持っている。
@@ -107,43 +107,9 @@ Who を持つユーザーは *、* トピックの強調表示からトピック
 
     ピン留めされたアイコンを選択すると、候補サイトをピン留めされたサイトに変更できます。
 
-
-<!---
-
-7.  The <b>Related sites</b> section shows sites that have information about the topic. 
-
-    ![Related sites section](../media/knowledge-management/related-sites.png)</br>
-
-    You can add a related site by selecting <b>Add</b> and then either searching for the site, or selecting it from your list of Frequent or Recent sites.</br>
-    
-    ![Select a site](../media/knowledge-management/sites.png)</br>
-
-8. The <b>Related topics</b> section shows connections that exists between topics. You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results. 
-
-   ![Related topics section](../media/knowledge-management/related-topic.png)</br>  
-
-    You can then give a description of how the topics are related, and select <b>Update</b>.</br>
-
-   ![Related topics description](../media/knowledge-management/related-topics-update.png)</br> 
-
-   The related topic you added will display as a connected topic.
-
-   ![Related topics connected](../media/knowledge-management/related-topics-final.png)</br> 
-
-   To remove a related topic, select the topic you want to remove, then select the <b>Remove topic</b> icon.</br>
- 
-   ![Remove related topic](../media/knowledge-management/remove-related.png)</br>  
-
-   Then select <b>Remove</b>.</br>
-
-   ![Confirm remove](../media/knowledge-management/remove-related-confirm.png)</br> 
-
---->
-
-9. 簡単な説明の下にあるキャンバス アイコンを選択して、テキスト、画像、リンクなどの静的アイテムをページに追加することもできます。 選択すると、ページにSharePointするアイテムを選択できる新しいツールボックスが開きます。
+9. また、キャンバス アイコンを選択して、テキスト、画像、リンクなどの静的アイテムをページに追加することもできます。この項目は、簡単な説明の下に表示されます。 選択すると、ページにSharePointするアイテムを選択できる新しいツールボックスが開きます。
 
    ![キャンバス アイコンを示すスクリーンショット。](../media/knowledge-management/webpart-library.png)
-
 
 10. **[発行]** または **[再発行]** を選択して、変更を保存します。 **トピックが以前に** 公開されている場合は、再発行が使用可能なオプションになります。
 

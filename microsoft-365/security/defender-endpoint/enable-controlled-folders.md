@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: ed0859e6018d171b48aac83d394eacbd2163c37b
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 810782dc3cca33515a0292d79ddab3c487330a98
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924685"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596100"
 ---
 # <a name="enable-controlled-folder-access"></a>制御されたフォルダー アクセスを有効にする
 
@@ -30,7 +30,7 @@ ms.locfileid: "52924685"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [フォルダー アクセスの制御により](controlled-folders.md) 、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019 Windows 10およびWindowsに含まれます。
 
@@ -132,7 +132,7 @@ ms.locfileid: "52924685"
 
 ## <a name="powershell"></a>PowerShell
 
-1. [**スタート] メニューに「powershell」** と入力し、Windows PowerShellを右クリックし **、[** 管理者として **実行] を選択します**。
+1. **[powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
 
 2. 次のコマンドレットを入力します。
 
@@ -146,6 +146,6 @@ ms.locfileid: "52924685"
 
 ## <a name="see-also"></a>関連項目
 
-* [フォルダー アクセスを制御して重要なフォルダーを保護する](controlled-folders.md)
+* [フォルダーへのアクセス制御で重要なフォルダーを保護する](controlled-folders.md)
 * [制御されたフォルダー アクセスをカスタマイズする](customize-controlled-folders.md)
 * [Microsoft Defender for Endpoint の評価](evaluate-mde.md)

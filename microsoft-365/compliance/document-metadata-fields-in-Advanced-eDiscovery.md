@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、レビュー セット内のドキュメントのメタデータ フィールドを、レビュー セット内の Advanced eDiscovery定義Microsoft 365。
-ms.openlocfilehash: 42f349bf01d5a777535dd04096b860a0165f1edf
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e1c81a572e74b965842d9b6888c9242b73a822c5
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769571"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543643"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Advanced eDiscovery のドキュメントメタデータフィールド
 
@@ -49,20 +49,20 @@ ms.locfileid: "52769571"
 |複合パス|CompoundPath|Compound_path|アイテムのソースを記述する人間が読み取り可能なパス。|
 |Content*|コンテンツ||アイテムの抽出されたテキスト。|
 |会話本文|会話本文||アイテムの会話本文。|
-|会話のトピック|会話のトピック||アイテムの会話のトピック。|
-|会話 ID|ConversationId|Conversation_ID|メッセージの会話 ID。|
+|会話 ID|ConversationId|Conversation_ID|メッセージの会話 ID。 1:1 Teamsグループ チャットでは、同じ会話内のすべてのトランスクリプト ファイルとその家族アイテムが同じ会話 ID を共有します。 詳細については、「Advanced eDiscovery[のコンテンツのワークフロー」を参照Microsoft Teams。](teams-workflow-in-advanced-ediscovery.md) |
 |会話インデックス||Conversation_index|メッセージからの会話インデックス。|
+|会話の名前 | |ConversationName|チャネルの名前は、Teams。 名前の形式は、チャネルの種類によって異なります。 <br/>Teams チャットとプライベート チャネル チャット: <チームの名前、チャネル チャットの名前> <br/>Teams 1:1 およびグループ チャット: すべてのチャット参加者の表示名と電子メール アドレス<br/>Yammer: Community名 + 投稿の最初の 120 文字<br/>Yammerプライベート: 送信者名と電子メール アドレス + メッセージの最初の 120 文字|
 |会話の Pdf 時間|ConversationPdfTime||会話の PDF バージョンが作成された日付。|
 |会話のやり直しの書き込み時間|ConversationRedactionBurnTime||会話の PDF バージョンがチャット用に作成された日付。|
+|会話のトピック|会話のトピック||アイテムの会話のトピック。|
+|会話の種類| ConversationType|ConversationType| チャットの会話の種類。 値は次のとおりです。 <br/> Teams 1:1 とグループ チャット、およびすべてのYammer会話:**グループ**<br/>Teamsチャネルとプライベート チャネル:**チャネル**|
+|編集されたメッセージを含む |ContainsEditedMessage|ContainsEditedMessage|チャットトランスクリプトにTeamsメッセージが含まれるかどうかを示します。
 |||Converted_file_path|変換されたエクスポート ファイルのパス。 内部 Microsoft の場合のみ使用します。|
-|ドキュメントの作成日|CreatedTime|Doc_date_created|ドキュメント メタデータから日付を作成します。|
 |カストディアン|カストディアン|カストディアン|アイテムが関連付けられた保管担当者の名前。|
-|日付|日付|日付|Date は、ファイルの種類に依存する計算フィールドです。<br /><br />メール: 送信日<br />電子メールの添付ファイル: ドキュメントの最終変更日。使用できない場合は、親の送信日<br />埋め込みドキュメント: ドキュメントの最終変更日。使用できない場合は、親の最終変更日<br />SPO ドキュメント (最新の添付ファイルを含む): SharePoint最終変更日;使用できない場合は、ドキュメントの最終変更日<br />非更新Office 365: 最終変更日<br />会議: 会議の開始日<br />VoiceMail: 送信日<br />IM: 送信日|
-|その他のパス|Dedupedcompoundpath|Deduped_compound_path|完全に重複するドキュメントの複合パスの一覧 (電子メール: コンテンツに基づく、ドキュメント: ハッシュに基づく)。|
-|その他の保管担当者|DedupedCustodians|Deduped_custodians|完全に重複するドキュメントの保管担当者の一覧 (電子メール、コンテンツに基づく、ドキュメント、ハッシュに基づく)。|
-|その他のファイルの ID|DedupedFileIds|Deduped_file_IDs|完全に重複するドキュメントのファイル ID の一覧 (電子メール、コンテンツに基づく、ドキュメント、ハッシュに基づく)。|
+|日付|日付|日付|Date は、ファイルの種類に依存する計算フィールドです。<br /><br />メール: 送信日<br />電子メールの添付ファイル: ドキュメントの最終変更日。使用できない場合は、親の送信日<br />埋め込みドキュメント: ドキュメントの最終変更日。使用できない場合は、親の最終変更日<br />SPO ドキュメント (最新の添付ファイルを含む): SharePoint最終変更日;使用できない場合は、ドキュメントの最終変更日<br />非更新Office 365: 最終変更日<br />会議: 会議の開始日<br />VoiceMail: 送信日<br />IM: 送信日<br />Teams: 送信日|
 |ドキュメントコメント|DocComments|Doc_comments|ドキュメント メタデータからのコメント。|
 |ドキュメント会社||Doc_company|ドキュメント メタデータの会社。|
+|ドキュメントの作成日|CreatedTime|Doc_date_created|ドキュメント メタデータから日付を作成します。|
 |DocIndex*|||ファミリ内のインデックス。 **-1** または **0 は** 、ルートを意味します。|
 |ドキュメント キーワード||Doc_keywords|ドキュメント メタデータのキーワード。|
 |によって変更されたドキュメント||Doc_modified_by|ドキュメント メタデータによる最終変更日。|
@@ -89,15 +89,15 @@ ms.locfileid: "52769571"
 |||Extracted_text_path|エクスポートで抽出されたテキスト ファイルへのパス。|
 |ExtractedTextLength*||Extracted_text_length|抽出されたテキスト内の文字数。|
 |FamilyDuplicateSet*||Family_duplicate_set|互いに完全に重複するファミリの数値識別子 (同じコンテンツとすべての同じ添付ファイル)。|
-|ファミリ ID|FamilyId|Family_ID|メールのすべてのアイテムをグループ分けします。 これには、メッセージとすべての添付ファイルと抽出されたアイテムが含まれます。|
+|ファミリ ID|FamilyId|Family_ID|メールやチャットから添付ファイルと抽出されたアイテムを親アイテムとグループ分けします。 これには、チャットやメール、すべての添付ファイルと抽出されたアイテムが含まれます。|
 |ファミリ サイズ||Family_size|ファミリ内のドキュメントの数。|
-|ファイル クラス|FileClass|File_class|ドキュメントおよびドキュメントSharePointコンテンツOneDrive: **Document**;メールまたは添付ファイルExchangeの **コンテンツ****の場合**。|
+|ファイル クラス|FileClass|File_class|ドキュメントとドキュメントSharePointのOneDrive: **Document**. <br/>メールまたは添付ファイルExchange **コンテンツ****の場合**。 <br/>[会話] または [Teams] または [Yammerのコンテンツ **の場合**。 |
 |ファイル ID|FileId|File_ID|ケース内で一意のドキュメント識別子。|
 |ファイル システムの作成日||File_system_date_created|ファイル システムから作成された日付 (データ以外のデータにのみOffice 365されます)。|
 |ファイル システムの日付が変更されました||File_system_date_modified|ファイル システムからの変更日 (データ以外のデータにのみOffice 365されます)。|
 |ファイルの種類|FileType||ファイル拡張子に基づくアイテムのファイルの種類。|
 |グループ ID|グループ ID|Group_ID|メールとドキュメントのすべてのアイテムをグループ分けします。 電子メールの場合、これにはメッセージとすべての添付ファイルと抽出されたアイテムが含まれます。 ドキュメントの場合、これにはドキュメントと埋め込みアイテムが含まれます。|
-|添付ファイルを持つ|HasAttachment|Email_has_attachment|メッセージに添付ファイルが含されているかどうかを示します。|
+|添付ファイルを持つ|EmailHasAttachment|Email_has_attachment|メッセージに添付ファイルが含されているかどうかを示します。|
 |弁護士を持つ|HasAttorney||**True** の場合は、少なくとも 1 人の参加者が弁護士リストに表示されます。それ以外の場合、値は **False です**。|
 |HasText*||Has_text|アイテムにテキストが含されているかどうかを示します。可能な値は **True と** **False です**。|
 |不変 ID||Immutable_ID|この ID は、レビュー セット内のドキュメントを一意に識別するために使用されます。 このフィールドは、レビュー セットの検索では使用できません。Id を使用して、ネイティブの場所にあるドキュメントにアクセスできません。|
@@ -133,6 +133,9 @@ ms.locfileid: "52769571"
 |O365 作成日||O365_date_created|作成された日付は、SharePoint。|
 |O365 日付の変更||O365_date_modified|日付の最後に変更SharePoint。|
 |によって変更された O365||O365_modified_by|変更された値は、SharePoint。|
+|その他の保管担当者|DedupedCustodians|Deduped_custodians|完全に重複するドキュメントの保管担当者の一覧 (電子メール、コンテンツに基づく、ドキュメント、ハッシュに基づく)。|
+|その他のファイルの ID|DedupedFileIds|Deduped_file_IDs|完全に重複するドキュメントのファイル ID の一覧 (電子メール、コンテンツに基づく、ドキュメント、ハッシュに基づく)。|
+|その他のパス|Dedupedcompoundpath|Deduped_compound_path|完全に重複するドキュメントの複合パスの一覧 (電子メール: コンテンツに基づく、ドキュメント: ハッシュに基づく)。|
 |親 ID|ParentId|Parent_ID|アイテムの親の ID。|
 |ParentNode||Parent_node|電子メール スレッド内の最も近い先行する電子メール メッセージ。|
 |参加者ドメイン|ParticipantDomains|Email_participant_domains|メッセージの参加者のすべてのドメインの一覧。|
@@ -155,17 +158,18 @@ ms.locfileid: "52769571"
 |Sender|Sender|Email_sender|メッセージの種類の送信者 (差出人) フィールド。 形式は **DisplayName です \<SmtpAddress>**。|
 |送信者/作成者|SenderAuthor||アイテムの送信者または作成者で構成される計算フィールド。|
 |送信者ドメイン|SenderDomain|Email_sender_domain|送信者のドメイン。|
-|送信日時|送信日時|Email_date_sent|メッセージの送信日。|
+|Sent|Sent|Email_date_sent|メッセージの送信日。<br/>チャット: トランスクリプトの開始日|
 |Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|並べ替えフィールド - 電子メールと添付ファイル: カウンター時系列。ドキュメント: 最初にピボットし、類似度スコアを降順に指定します。|
 |ID の設定||Set_ID|同じメール スレッド (ND_set) 内の類似コンテンツ (ND_set) または電子メールのドキュメントは、同じEmail_set共有Set_ID。|
 |SimilarityPercent||Similarity_percent|近くの重複セットのピボットに対するドキュメントの類似点を示します。|
 |ネイティブ ファイル サイズ|Size|Native_size|ネイティブ アイテムのバイト数。|
-|Subject|Subject|Email_subject|メッセージの件名。|
+|件名|件名|Email_subject|メッセージの件名。|
 |件名/タイトル|SubjectTitle||アイテムの件名またはタイトルで構成される計算フィールド。|
 |タグ|タグ|タグ|レビュー セットに適用されるタグ。|
+|Teamsチャネル名|TeamsChannel|Channel_Name|チャネルの名前は、Microsoft Teams。|
 |テーマリスト|ThemesList|Themes_list|分析用に計算されたテーマの一覧。|
-|タイトル|タイトル|Doc_title|ドキュメント メタデータのタイトル。|
-|へ|へ|Email_to|メッセージの種類をフィールドに指定します。 Format is **DisplayName \<SmtpAddress>**|
+|Title|Title|Doc_title|ドキュメント メタデータのタイトル。 ドキュメント メタデータのタイトル。 コンテンツTeamsおよびYammer、これは ConversationName プロパティの値です。|
+|宛先|宛先|Email_to|メッセージの種類をフィールドに指定します。 Format is **DisplayName \<SmtpAddress>**|
 |メール セットで一意|UniqueInEmailSet||**メール** セットに添付ファイルが重複している場合は False。|
 |バージョン グループ ID||Version_Group_Id|同じドキュメントの異なるバージョンをグループ分けします。|
 |修復された|WasRemediated|Was_Remediated|**True** の場合は、アイテムが修復され、それ以外の場合は **False です**。|

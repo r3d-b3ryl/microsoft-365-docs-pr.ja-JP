@@ -1,8 +1,9 @@
 ---
 title: Microsoft SharePoint Syntexでコンテンツセンターを作成する
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: コンテンツセンターを作成する方法を説明します。
-ms.openlocfilehash: 34ba45cd62214743e5a6784893e0f24e9815fdfb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Microsoft SharePoint Syntexでコンテンツセンターを作成する方法について説明します。
+ms.openlocfilehash: a50a31d29cc53a70a7e13f9cd83e76933aa39cf8
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905826"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543133"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexでコンテンツセンターを作成する
 
@@ -28,15 +29,16 @@ ms.locfileid: "50905826"
 
 </br>
 
-ドキュメント理解モデルを作成および管理するには、まずコンテンツ センターが必要です。 コンテンツ センターはモデル作成インターフェイスであり、公開されたモデルが適用されたドキュメント ライブラリに関する情報も含まれています。</br>
+ドキュメント理解モデルを作成および管理するには、まずコンテンツ センターが必要です。 コンテンツ センターはモデル作成インターフェイスであり、公開されたモデルが適用されたドキュメント ライブラリに関する情報も含まれています。
 
-   ![ドキュメントライブラリを選択する](../media/content-understanding/content-center-page.png)</br>
+   ![ドキュメントライブラリを選択します。](../media/content-understanding/content-center-page.png)
 
 [セットアップ](set-up-content-understanding.md)中に既定のコンテンツ センターを作成します。 ただし、SharePoint 管理者は、必要に応じて追加のセンターを作成することもできます。 すべてのモデル アクティビティをロールアップする環境では単一のコンテンツ センターで十分な場合もありますが、組織内の複数の部門に追加のセンターを用意することもできます。これらの部門では、モデルのニーズと権限要件が異なる場合があります。
 
+また、SharePoint Syntex を試したい場合は、ライセンスを購入しなくても、この記事の手順を使用してコンテンツ センターを作成することができます。 ライセンスを付与されていないユーザーは、ドキュメント理解モデルを作成することはできますが、それをドキュメントライブラリに適用することはできません。
+
 > [!NOTE]
 > [Microsoft 365 Multi-Geo 環境](../enterprise/microsoft-365-multi-geo.md)では、中央の場所に単一の既定のコンテンツ センターがある場合、その場所内からのみモデル アクティビティのロールアップを提供できます。 現在、Multi-Geo 環境のファーム境界を越えてモデル アクティビティのロールアップを取得することはできません。 
-
 
 ## <a name="create-a-content-center"></a>コンテンツ センターを作成する
 
@@ -44,26 +46,35 @@ SharePoint 管理者は、管理センター サイトプ ロビジョニング 
 
 新しいコンテンツ センターを作成するには
 
-1. Microsoft 365 管理センターで、SharePoint 管理センターに移動します。
+1. Microsoft 365 管理センターで、[SharePoint 管理センター **アクティブ サイト** ページ](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true)に移動します。
 
-2. SharePoint 管理センターの [**サイト**] で、[**アクティブなサイト**] を選択します。
+2. [**アクティブなサイト**] ページで、[**作成**] をクリックし、[**その他のオプション**] を選択します。
 
-3. [**アクティブなサイト**] ページで、[**作成**] をクリックし、[**その他のオプション**] を選択します。
+3. [**テンプレートの選択**] メニューで、[**コンテンツセンター**] を選択します。
 
-4. [**テンプレートの選択**] メニューで、[**コンテンツセンター**] を選択します。
-
-5. 新しいサイトの場合は、**サイト名**、**プライマリ管理者**、および **言語** を指定します。</br>
+4. 新しいサイトの場合は、**サイト名**、**プライマリ管理者**、および **言語** を指定します。</br>
 
    > [!NOTE] 
-   > コンテンツ センター サイトを選択して、使用可能な任意の言語で表示できますが、現在、モデルは英語のファイルに対してのみ作成できることに注意してください。 また、他のサイト テンプレートと同様に、サイトの作成後に既定のサイトの言語を編集できないことにも注意してください。</br>
+   > コンテンツ センター サイトを選択して、使用可能な任意の言語で表示できますが、現在、モデルは英語のファイルに対してのみ作成できることに注意してください。 また、他のサイト テンプレートと同様に、サイトの作成後に既定のサイトの言語を編集できないことにも注意してください。
 
-6. [**完了**] を選択します。
+5. [**完了**] を選択します。
  
 コンテンツセンターサイトを作成すると、SharePoint 管理センターの [**アクティブなサイト**] ページに一覧表示されます。 
 
 ### <a name="give-access-to-additional-users"></a>追加のユーザーにアクセスを許可する
  
 サイトを作成した後、標準の [SharePoint サイト アクセス許可モデル](/sharepoint/modern-experience-sharing-permissions)を使用して、追加のユーザーにサイトへのアクセスを許可できます。
+
+### <a name="roll-up-of-models-in-the-default-content-center"></a>既定のコンテンツ センターでのモデルのロールアップ
+
+SharePoint Syntex では、セットアップ時に作成される最初のコンテンツ センターが *既定のコンテンツ センター* です。 後続のコンテンツ センターを作成した場合、そのモデルは既定のコンテンツ センター ビューに表示されます。
+
+![既定のコンテンツ センターのモデル ライブラリのスクリーンショット。](../media/content-understanding/model-library-default-content-center.png)
+
+既定のコンテンツ センター ビューの [**モデル**] ライブラリは、作成されたモデルをコンテンツ センターごとにグループ化し、作成されたすべてのドキュメント理解モデルとフォーム処理モデルの概要を表示します。
+
+> [!NOTE]
+> 指定された既定のコンテンツ センターを変更することはできません。 それは、セットアップ時に最初に作成されるコンテンツ センターです。 
 
 ## <a name="see-also"></a>関連項目
 [分類子を作成する](create-a-classifier.md)

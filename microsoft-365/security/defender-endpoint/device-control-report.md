@@ -13,12 +13,12 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: 47eb80af58c948db5997dc9f5edfa5737a796837
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2edd4503e25b4ef2ddf4225716a152609c1022b3
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772367"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596316"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>デバイスコントロールを使用して組織のデータを保護する
 
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint のデバイス制御により、セキュリテ
 
 - **一般的な詳細:** 日付、アクション モード、およびこのイベントのポリシー。
 - **メディア情報:** メディア情報には、メディア名、クラス名、クラス GUID、デバイス ID、ベンダー ID、ボリューム、シリアル番号、バスの種類が含まれます。
-- **場所の詳細:** デバイス名とMDATP ID。
+- **場所の詳細:** デバイス名と MDATP デバイス ID。
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

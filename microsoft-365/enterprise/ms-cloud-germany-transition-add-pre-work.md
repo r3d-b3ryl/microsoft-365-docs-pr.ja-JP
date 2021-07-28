@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域のOffice 365サービスに移行する場合の事前作業。'
-ms.openlocfilehash: 08774cdfd831556c194b5175879f211efa250632
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 77e3dbd3f819aea15632a0ba069249a44a8663fb
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362740"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542035"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行の移行前アクティビティ
 
@@ -119,7 +119,8 @@ OCCT は、フェーズ 9 の前Windowsクライアントに展開できます�
 
 |Step(s)|説明|影響|
 |---|---|---|
-|2013 SharePointを制限し、オンライン移行のSharePoint使用します。|2013 SharePointを削減し、移行前にインフライト ワークフローを完了します。|不作為により、ユーザーの混乱やヘルプ デスクの呼び出しが発生する可能性があります。|
+|2013 SharePointを制限し、オンライン移行のSharePoint使用します。|2013 SharePointを削減し、移行前にインフライト ワークフローを完了します。|不作為により、ユーザーの混乱やヘルプ デスクの呼び出しが発生する可能性があります。| 
+変更SharePoint場合は、検索構成をエクスポートします。 |検索SharePoint構成は移行されません。 検索に変更がSharePoint場合は、変更に注意し、検索構成をエクスポートしてください。 設定は、移行が完了した後SharePointインポートする必要があります。|変更された検索スキーマに基づくカスタム ソリューションは、検索の変更が再適用されるまで使用できません。|
 
 
 ## <a name="exchange-online"></a>Exchange Online

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ff4c44199e4b6f8f1b3ca4806908813d7e710e4b
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: 73a602f9a8fbf9387708b1d0343315b7bc82617c
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415613"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595872"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -65,10 +65,10 @@ System Center Operations Manager (SCOM) または Azure Monitor (旧称:Operatio
 
 一般に、次の手順を実行する必要があります。
 
-1. 「始める前に」で説明されているオンボーディング要件 **を満た** します。
-2. ポータルからサーバーの監視Microsoft 365 Defenderします。
-3. センサー データを Defender for Endpoint に報告するサーバーの MMA をインストールして構成します。
-4. クライアントの構成と更新System Center Endpoint Protectionします。
+  1. 「始める前に」で説明されているオンボーディング要件 **を満た** します。
+  2. サーバーの監視をサーバーからオンMicrosoft 365 Defender。
+  3. センサー データを Defender for Endpoint に報告するサーバーの MMA をインストールして構成します。
+  4. クライアントの構成と更新System Center Endpoint Protectionします。
 
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、サービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint エンドポイントで検出テストを実行 [する」を参照してください](run-detection-test.md)。
@@ -112,7 +112,6 @@ Server 2008 R2 SP1 Windows、次の要件を満たしていることを確認し
 サーバーが Defender for Endpoint と通信するためにプロキシを使用する必要がある場合は、次のいずれかの方法を使用して、プロキシ サーバーを使用する MMA を構成します。
 
 - [プロキシ サーバーを使用する MMA を構成する](/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
-
 - [すべてのWindowsプロキシ サーバーを使用するサーバーを構成する](configure-proxy-internet.md)
 
 プロキシまたはファイアウォールが使用されている場合は、サーバーが SSL インターセプトなしで直接 Microsoft Defender for Endpoint サービス URL にアクセスできます。 詳細については、「Defender for Endpoint Service URL へのアクセス [を有効にする」を参照してください](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。 SSL インターセプトを使用すると、システムは Defender for Endpoint サービスと通信できません。
@@ -121,13 +120,13 @@ Server 2008 R2 SP1 Windows、次の要件を満たしていることを確認し
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>オプション 2: Azure セキュリティ センター Windowsサーバーをオンボードする
 
-1. [デバイスのMicrosoft 365 Defender] ウィンドウで、[エンドポイント **デバイス** 設定  >    >  **オンボーディング]**  >  **を選択します**。
+[デバイスのMicrosoft 365 Defender] ウィンドウで、[エンドポイント **デバイス** 設定  >    >  **オンボーディング]**  >  **を選択します**。
 
-2. オペレーティング **Windowsサーバー 2008 R2 SP1、2012 R2、2016** を選択します。
+1. オペレーティング **Windowsサーバー 2008 R2 SP1、2012 R2、2016** を選択します。
 
-3. **[Azure セキュリティ センターのオンボード サーバー] をクリックします**。
+2. **[Azure セキュリティ センターのオンボード サーバー] をクリックします**。
 
-4. [「Microsoft Defender for Endpoint with Azure Defender」](/azure/security-center/security-center-wdatp)のオンボーディング手順に従い、Azure ARC を使用している場合は[、「Microsoft Defender for](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)Endpoint 統合を有効にする」のオンボーディング手順に従います。
+3. [「Microsoft Defender for Endpoint with Azure Defender」](/azure/security-center/security-center-wdatp)のオンボーディング手順に従い、Azure ARC を使用している場合は[、「Microsoft Defender for](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)Endpoint 統合を有効にする」のオンボーディング手順に従います。
 
 オンボーディングの手順を完了した後、クライアントの構成と[更新System Center Endpoint Protection必要があります](#configure-and-update-system-center-endpoint-protection-clients)。
 
@@ -182,7 +181,9 @@ R2 と Windows Server 2012バージョン 2002 以降Windows Server 2016使用Mi
 
 3. 次のコマンドを実行して、Microsoft Defender AV がインストールされていることを確認します。
 
-   ```sc.exe query Windefend```
+   ```dos
+   sc.exe query Windefend
+   ```
 
     結果が '指定されたサービスがインストールされたサービスとして存在しない' の場合は、Microsoft Defender AV をインストールする必要があります。 詳細については[、「Microsoft Defender ウイルス対策」をWindows 10。](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
@@ -200,13 +201,16 @@ Defender for Endpoint は、Azure Defender と統合して、包括的なサー�
     > Azure Defender for Servers と Microsoft Defender for Endpoint の統合は[、Windows Server 2019 と Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
 
 - Windows監視されるサーバーは、Defender for Endpoint でも利用できます 。 Azure Defender は Defender for Endpoint テナントにシームレスに接続し、クライアントとサーバー間で 1 つのビューを提供します。  さらに、Defender for Endpoint アラートは Azure Defender コンソールで利用できます。
-- サーバー調査 - Azure Defender のお客様は、Microsoft 365 Defenderポータルにアクセスして詳細な調査を実行し、潜在的な侵害の範囲を明らかにできます。
+
+- サーバー調査 - Azure Defender のお客様は、Microsoft 365 Defenderにアクセスして詳細な調査を実行し、潜在的な侵害の範囲を明らかにできます。
 
 > [!IMPORTANT]
-> - Azure Defender を使用してサーバーを監視すると、Defender for Endpoint テナントが自動的に作成されます (米国のユーザーは米国、EU ではヨーロッパおよび英国のユーザー)。<br>
+>
+> - Azure Defender を使用してサーバーを監視すると、Defender for Endpoint テナントが自動的に作成されます (米国のユーザーは米国、EU ではヨーロッパおよび英国のユーザー)。
 Defender for Endpoint によって収集されたデータは、プロビジョニング中に特定されたテナントの地理的位置に格納されます。
 > - Azure Defender を使用する前に Defender for Endpoint を使用する場合、後で Azure Defender と統合した場合でも、テナントの作成時に指定した場所にデータが格納されます。
-> - 構成が完了すると、データの保存場所を変更できません。 データを別の場所に移動する必要がある場合は、Microsoft サポートに問い合わせ、テナントをリセットする必要があります。 <br>
+> - 構成が完了すると、データの保存場所を変更できません。 データを別の場所に移動する必要がある場合は、Microsoft サポートに問い合わせ、テナントをリセットする必要があります。
+>
 この統合を利用したサーバー エンドポイントの監視は、ユーザーのOffice 365 GCCされています。
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>クライアントの構成と更新System Center Endpoint Protectionする
@@ -227,7 +231,6 @@ Windows クライアント デバイスで使用できるのと同じ方法で�
 - [Configuration Manager を使用したオフボード デバイス](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
 - [モバイル デバイス管理ツールを使用したオフボードデバイスと監視デバイス](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 - [ローカル スクリプトを使用してデバイスをオフボードする](configure-endpoints-script.md#offboard-devices-using-a-local-script)
-
 
 他のサーバー Windowsの場合は、サービスからサーバーをオフボードWindows 2 つのオプションがあります。
 
@@ -277,7 +280,6 @@ Windows クライアント デバイスで使用できるのと同じ方法で�
     $AgentCfg.RemoveCloudWorkspace(&quot;WorkspaceID")
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
-
     ```
 
 ## <a name="onboarding-servers-with-no-management-solution"></a>管理ソリューションを使用してサーバーをオンボーディングする
@@ -329,7 +331,7 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 
      :::image type="content" source="images/grppolicyconfig2.png" alt-text="グループ ポリシーイメージ1":::
 
-DOMAIN\NETLOGON\MMA\filename から C:\windows\MMA\filename にファイルをコピーします。そのため、インストール ファイルはサーバー **にローカルです**。
+DOMAIN\NETLOGON\MMA\filename から C:\windows\MMA\filename にファイルをコピー **します。**
 
 :::image type="content" source="images/deploymma.png" alt-text="mma cmd を展開する":::
 
@@ -348,7 +350,7 @@ DOMAIN\NETLOGON\MMA\filename から C:\windows\MMA\filename にファイルを�
 サーバーが起動プロセスの一部として再起動すると、カスタマー エクスペリエンスと診断テレメトリ KB の更新プログラムがインストールされ、MMA エージェントがインストールされ、ワークスペース ID とキーが設定され、サーバーがオンボードされます。
 
 すべてのサーバーを再起動 **しない** 場合は、即時タスクを使用して deployMMA.cmd を実行することもできます。
-これは、2 つのフェーズで実行できます。 まず **、GPO でファイルと** フォルダーを作成します。GPO が適用され、すべてのサーバーにインストール ファイルが含まれています。 次に、イミディエイト タスクを追加します。 これにより、再起動を必要とせずに同じ結果が得られます。
+これは、2 つのフェーズで実行できます。 まず **、GPO でファイルとフォルダーを作成** します。 GPO が適用され、すべてのサーバーにインストール ファイルが含まれています。 次に、イミディエイト タスクを追加します。 これにより、再起動を必要とせずに同じ結果が得られます。
 
 スクリプトは exit メソッドを持ち、MMA がインストールされている場合は再び実行されませんので、毎日スケジュールされたタスクを使用して同じ結果を得る場合も可能です。 Configuration Manager コンプライアンス ポリシーと同様に、MMA が存在しているのを確認するために毎日チェックされます。
 

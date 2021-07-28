@@ -15,12 +15,12 @@ ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 83e37b6d59d7356b53e5024204e39473764cea72
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: baec5e1e35c93213be67df1163113cfe3cb3dd29
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924917"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596268"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
 
@@ -49,11 +49,13 @@ VDIs で実行されている VM に更新プログラムを簡単に展開す�
 また、新しい共有セキュリティ インテリジェンス更新機能を参照する仮想デスクトップ インフラストラクチャのホワイトペーパー [Microsoft Defender ウイルス対策](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)をダウンロードし、独自の VDI でウイルス対策のパフォーマンスをテストする方法に関するパフォーマンス テストとガイダンスを参照できます。
 
 > [!IMPORTANT]
-> VDI は Windows Server 2012 または Windows Server 2016 でホストすることができますが、以前のバージョンの Windows では使用できない保護テクノロジと機能が強化されたので、仮想マシン (VM) は少なくとも 1607 の Windows 10 を実行している必要があります。<br/>microsoft Defender AV が Windows 10 Insider Preview の仮想マシンで動作する方法には、パフォーマンスと機能の改善点があります。ビルド 18323 (以降)。 Insider Preview ビルドを使用する必要がある場合は、このガイドで確認します。指定されていない場合、最適な保護とパフォーマンスを実現するために必要な最小バージョンは 1607 Windows 10です。
+> VDI は Windows Server 2012 または Windows Server 2016 でホストすることができますが、以前のバージョンの Windows では使用できない保護テクノロジと機能が強化されたので、仮想マシン (VM) は少なくとも 1607 の Windows 10 を実行している必要があります。
+>
+> microsoft Defender AV が Windows 10 Insider Preview の仮想マシンで動作する方法には、パフォーマンスと機能の改善点があります。ビルド 18323 (以降)。 Insider Preview ビルドを使用する必要がある場合は、このガイドで確認します。指定されていない場合、最適な保護とパフォーマンスを実現するために必要な最小バージョンは 1607 Windows 10です。
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>専用の VDI ファイル共有をセットアップする
 
-Windows 10 バージョン 1903 では、共有セキュリティ インテリジェンス機能が導入され、ダウンロードしたセキュリティ インテリジェンス更新プログラムのアンパック処理がホスト コンピューターにオフロードされ、以前の CPU、ディスク、メモリ リソースが個々のコンピューターに保存されました。 この機能はバックポートされ、バージョン 1703 Windows 10で動作します。 この機能は、グループ ポリシーまたは PowerShell で設定できます。
+Windows 10 バージョン 1903 では、共有セキュリティ インテリジェンス機能が導入され、ダウンロードしたセキュリティ インテリジェンス更新プログラムのアンパック処理をホスト コンピューターにオフロードし、以前の CPU、ディスク、メモリ リソースを個々のコンピューターに保存しました。 この機能はバックポートされ、バージョン 1703 Windows 10で動作します。 この機能は、グループ ポリシーまたは PowerShell で設定できます。
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>グループ ポリシーを使用して、共有セキュリティ インテリジェンス機能を有効にします。
 
@@ -100,22 +102,23 @@ Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64'
 cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 ```
 
-スケジュールされたタスクを 1 日 1 回実行して、パッケージをダウンロードして開梱するたびに VM が新しい更新プログラムを受け取るのを設定できます。 1 日 1 回から始める方法をお勧めしますが、影響を理解するために頻度を増やしたり減らしたりして試す必要があります。 
+スケジュールされたタスクを 1 日 1 回実行して、パッケージをダウンロードして開梱するたびに VM が新しい更新プログラムを受け取るのを設定できます。
+1 日 1 回から始めるのをお勧めしますが、影響を理解するために頻度を増やしたり減らしたりして試す必要があります。
 
 通常、セキュリティ インテリジェンス パッケージは 3 ~ 4 時間に 1 回発行されます。 頻度を 4 時間より短く設定すると、管理マシンのネットワーク オーバーヘッドが増加し、利益が得らないのでお勧めしません。
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>PowerShell スクリプトを実行するスケジュールされたタスクを設定する
 
-1. 管理マシンで、[スタート] メニューを開き、[タスク スケジューラ] **と入力します**。 それを開き、[タスクの **作成...] を選択します。** をサイド パネルに表示します。
+1. 管理マシンで、[タスク スケジューラ] と入力スタート メニューを **開きます**。 それを開き、 **サイド パネルで [タスクの作成...]** を選択します。
 
-2. 名前をセキュリティ インテリジェンス **アンパックとして入力します**。 [トリガー] タブ **に移動** します。[ **新規...] を選択します。** > **[日**] を選択し **、[OK] を選択します**。
+2. 名前をセキュリティ インテリジェンス **アンパックとして入力します**。 [トリガー] タブ **に移動** します。[**新規]を選択します。**  > **[日**] を選択し **、[OK] を選択します**。
 
-3. [操作] タブ **に移動** します。[ **新規...] を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [ `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` 引数の追加 **] フィールドに入力** します。 **[OK]** を選択します。
+3. [アクション] タブ **に移動** します。[ **新規]を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [ `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` 引数の追加 **] フィールドに入力** します。 **[OK]** を選択します。
 
 4. 必要に応じて、追加の設定を構成できます。
 
 5. **[OK] を** 選択して、スケジュールされたタスクを保存します。
- 
+
 タスクを右クリックして [実行] をクリックすると、手動で更新を開始 **できます**。
 
 ### <a name="download-and-unpackage-manually"></a>手動でダウンロードして開梱する
@@ -126,7 +129,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 2. GUID 名を *持つ* wdav_updateサブフォルダーを作成します。 `{00000000-0000-0000-0000-000000000000}`
 
-例を次に示します。 `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
+   例を次に示します。 `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
    > [!NOTE]
    > スクリプトでは、GUID の最後の 12 桁が、ファイルがダウンロードされた年、月、日、および時刻として設定し、その度に新しいフォルダーが作成されます。 これを変更して、ファイルを同じフォルダーにダウンロードできます。
@@ -156,7 +159,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. ポリシーを [有効] **に設定し**、[オプション] で **[クイック** スキャン]  **を選択します**。
 
-4. **[OK]** を選択します。 
+4. **[OK]** を選択します。
 
 5. 通常どおりにグループ ポリシー オブジェクトを展開します。
 
@@ -166,16 +169,17 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 1. グループ ポリシー エディターで、[クライアント インターフェイスWindows **コンポーネント**  >  **Microsoft Defender ウイルス対策**  >  **移動します**。
 
-2. [すべての **通知を非表示にする] を** 選択し、ポリシー設定を編集します。 
+2. [すべての **通知を非表示にする] を** 選択し、ポリシー設定を編集します。
 
 3. ポリシーを [有効]**に設定し****、[OK] を選択します**。
 
 4. 通常どおりにグループ ポリシー オブジェクトを展開します。
 
-通知を抑制すると、スキャンMicrosoft Defender ウイルス対策修復アクションが実行された場合Windows 10アクション センターに通知が表示されません。 ただし、セキュリティ運用チームは、スキャンの結果を Defender ポータルのMicrosoft 365[します](microsoft-defender-security-center.md)。
+通知を抑制すると、スキャンMicrosoft Defender ウイルス対策修復アクションが実行された場合Windows 10アクション センターに通知が表示されません。 ただし、セキュリティ運用チームは、スキャンの結果をポータルに表示Microsoft 365 Defender[します](microsoft-defender-security-center.md)。
 
 > [!TIP]
 > [アクション センター] を開Windows 10、次のいずれかの手順を実行します。
+>
 > - タスク バーの右側にある [アクション センター] アイコンを選択します。
 > - [ロゴ] Windows + A を押します。
 > - タッチスクリーン デバイスで、画面の右端からスワイプします。
@@ -224,7 +228,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 4. **[OK]** をクリックします。
 
 5. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。
- 
+
 このポリシーは、組織内のエンド Microsoft Defender ウイルス対策ユーザー インターフェイス全体を非表示にします。
 
 ## <a name="exclusions"></a>除外
@@ -236,5 +240,5 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 ## <a name="additional-resources"></a>その他のリソース
 
 - [Tech Communityブログ: 非永続的な VDI Microsoft Defender ウイルス対策の構成](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
-- [リモート デスクトップ サービスと VDI の TechNet フォーラム](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
+- [リモート デスクトップ サービスと VDI の TechNet フォーラム](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell スクリプト](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)

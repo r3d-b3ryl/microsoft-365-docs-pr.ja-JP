@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でモデルの名前を変更する方法と理由について説明します。
-ms.openlocfilehash: d0d17f040199b2e6b60bfc98d325f18b6de0b7f2
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: d1a96646f507a3124759b2a5865440d4d5621209
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51446002"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595932"
 ---
 # <a name="rename-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の文書理解モデルの名前を変更する
 
@@ -49,7 +49,7 @@ ms.locfileid: "51446002"
 
     ![[名前の変更] パネルを示すスクリーンショット。](../media/content-understanding/rename-model-panel.png) </br>
 
-   b. (省略可能)[**詳細設定**] で、既存の[コンテンツ タイプ](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)を関連付けるかどうかを選択します。 [**既存のコンテンツ タイプを使用する**] を選択すると、選択されたコンテンツ タイプに合わせてモデルの名前が変更されます。
+   b. (省略可能)[**詳細設定**] で、既存の [コンテンツ タイプ](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)を関連付けるかどうかを選択します。 [**既存のコンテンツ タイプを使用する**] を選択すると、選択されたコンテンツ タイプに合わせてモデルの名前が変更されます。
 
 5. [**名前の変更**] を選択します。
 

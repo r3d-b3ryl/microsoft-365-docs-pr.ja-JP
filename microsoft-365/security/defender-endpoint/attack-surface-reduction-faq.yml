@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: 8088e1bfb8cbaa2d9c7b094b03a56b54c01f8f69
-  ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+  ms.openlocfilehash: e393ff27b5bd918559346959fda65a057205e29d
+  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53062386"
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "53543739"
 title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -77,9 +77,9 @@ sections:
 
       |:--|:--|:--|
 
-      |JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|D3E037E1-3EB8-44C8-A917-57927947596D|サポート対象外|
+      |JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|D3E037E1-3EB8-44C8-A917-57927947596D|非サポート|
 
-      |WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|サポート対象外|
+      |WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|非サポート|
 
 
       ASR ルールの除外は、ワイルドカード、パス、および環境変数をサポートします。 ASR ルールでワイルドカードを使用する方法の詳細については、「ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する [」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。
@@ -131,35 +131,37 @@ sections:
       保護の複数の柱にまたがって、Office、資格情報、スクリプト、電子メールなど。WMI イベント サブスクリプションによる永続化のブロックを除くすべての ASR ルールは、1709 以降Windowsサポートされます。
 
 
-      * [メール クライアントと Web メールから実行可能なコンテンツをブロックする](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
+      * [悪用された脆弱な署名済みドライバーの悪用をブロックする](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 
-      * [すべてのアプリケーションOffice子プロセスの作成をブロックする](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
+      * [メール クライアントと Web メールから実行可能なコンテンツをブロックする](attack-surface-reduction-rules.md#block-executable-content-from-email-client-and-webmail)
 
-      * [実行可能Office作成するアプリケーションのブロック](attack-surface-reduction.md#block-office-applications-from-creating-executable-content)
+      * [すべてのアプリケーションOffice子プロセスの作成をブロックする](attack-surface-reduction-rules.md#block-all-office-applications-from-creating-child-processes)
 
-      * [アプリケーションOffice他のプロセスへのコードの挿入をブロックする](attack-surface-reduction.md#block-office-applications-from-injecting-code-into-other-processes)
+      * [実行可能Office作成するアプリケーションのブロック](attack-surface-reduction-rules.md#block-office-applications-from-creating-executable-content)
 
-      * [JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](attack-surface-reduction.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+      * [アプリケーションOffice他のプロセスへのコードの挿入をブロックする](attack-surface-reduction-rules.md#block-office-applications-from-injecting-code-into-other-processes)
 
-      * [難読化される可能性のあるスクリプトの実行をブロックする](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)
+      * [JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする](attack-surface-reduction-rules.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
 
-      * [Win32 API 呼び出しをブロックOfficeマクロ](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
+      * [難読化される可能性のあるスクリプトの実行をブロックする](attack-surface-reduction-rules.md#block-execution-of-potentially-obfuscated-scripts)
 
-      * [ランサムウェアに対する高度な保護の使用](attack-surface-reduction.md#use-advanced-protection-against-ransomware)
+      * [Win32 API 呼び出しをブロックOfficeマクロ](attack-surface-reduction-rules.md#block-win32-api-calls-from-office-macros)
 
-      * [ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロック](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)する (lsass.exe)
+      * [ランサムウェアに対する高度な保護の使用](attack-surface-reduction-rules.md#use-advanced-protection-against-ransomware)
 
-      * [PSExec および WMI コマンドから発生するプロセス作成をブロックする](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)
+      * [ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロック](attack-surface-reduction-rules.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)する (lsass.exe)
 
-      * [USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](attack-surface-reduction.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
+      * [PSExec および WMI コマンドから発生するプロセス作成をブロックする](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 
-      * [有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](attack-surface-reduction.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
+      * [USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](attack-surface-reduction-rules.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
 
-      * [通信Office子プロセスの作成をブロックする](attack-surface-reduction.md#block-office-communication-application-from-creating-child-processes)
+      * [有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする](attack-surface-reduction-rules.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
 
-      * [Adobe Reader の子プロセスの作成をブロックする](attack-surface-reduction.md#block-adobe-reader-from-creating-child-processes)
+      * [通信Office子プロセスの作成をブロックする](attack-surface-reduction-rules.md#block-office-communication-application-from-creating-child-processes)
 
-      * [WMI イベント サブスクリプションによる永続化のブロック](attack-surface-reduction.md#block-persistence-through-wmi-event-subscription)
+      * [Adobe Reader の子プロセスの作成をブロックする](attack-surface-reduction-rules.md#block-adobe-reader-from-creating-child-processes)
+
+      * [WMI イベント サブスクリプションによる永続化のブロック](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription)
   - question: >
       ASR の使用を開始する場合の推奨事項を教えてください。
     answer: >

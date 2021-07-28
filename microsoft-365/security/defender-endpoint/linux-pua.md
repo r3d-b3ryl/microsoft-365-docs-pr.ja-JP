@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7ec3399129cc65d75b464f5d5f56bb11250ccaf2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d18ff1a9e060bcc668dd5c52ffd67283539d29b6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933159"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542203"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender を使用して、望ましくない可能性のあるアプリケーションを検出およびブロックする
 
@@ -45,15 +45,15 @@ Defender for Endpoint on Linux の望ましくない可能性のあるアプリ�
 
 Defender for Endpoint on Linux では、PUA ファイルを検出してレポートできます。 ブロック モードで構成すると、PUA ファイルは検疫に移動されます。
 
-エンドポイントで PUA が検出されると、Defender for Endpoint on Linux は脅威履歴に感染の記録を保持します。 履歴は、ポータルまたはコマンド ライン Microsoft Defender セキュリティ センターから `mdatp` 視覚化できます。 脅威名には"Application" という単語が含まれる。
+エンドポイントで PUA が検出されると、Defender for Endpoint on Linux は脅威履歴に感染の記録を保持します。 履歴は、センター ポータルのMicrosoft 365 Defenderコマンドライン ツール `mdatp` を使用して視覚化できます。 脅威名には"Application" という単語が含まれる。
 
 ## <a name="configure-pua-protection"></a>PUA 保護の構成
 
 Defender for Endpoint on Linux の PUA 保護は、次のいずれかの方法で構成できます。
 
 - **Off**: PUA 保護は無効です。
-- **監査**: PUA ファイルは製品ログに報告されますが、このログMicrosoft Defender セキュリティ センター。 感染の記録は脅威の履歴に保存され、製品によるアクションは実行されません。
-- **ブロック**: PUA ファイルは、製品ログと一覧でMicrosoft Defender セキュリティ センター。 感染の記録は脅威の履歴に保存され、製品によってアクションが実行されます。
+- **監査**: PUA ファイルは製品ログに報告されますが、このログMicrosoft 365 Defender。 感染の記録は脅威の履歴に保存され、製品によるアクションは実行されません。
+- **ブロック**: PUA ファイルは、製品ログおよびレポートにMicrosoft 365 Defender。 感染の記録は脅威の履歴に保存され、製品によってアクションが実行されます。
 
 >[!WARNING]
 >既定では、監査モードで PUA 保護 **が構成** されています。

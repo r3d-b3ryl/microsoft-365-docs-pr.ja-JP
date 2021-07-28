@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7998e878ad03fdfb64c314dc8b7234ece46164ce
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 17915741485919ae85d5e16fbee8de5108b7f2eb
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289495"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543295"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -77,7 +77,7 @@ ms.locfileid: "53289495"
 |説明|値|
 |---|---|
 |**Key**|enableRealTimeProtection|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**可能な値**|true (既定) <p> false|
 |
 
@@ -98,7 +98,7 @@ ms.locfileid: "53289495"
 |説明|値|
 |---|---|
 |**Key**|passiveMode|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|Defender for Endpoint version 100.67.60 以上で使用できます。|
 |
@@ -177,7 +177,7 @@ ms.locfileid: "53289495"
 |説明|値|
 |---|---|
 |**Key**|isDirectory|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
 |
@@ -367,7 +367,7 @@ ms.locfileid: "53289495"
 |説明|値|
 |---|---|
 |**Key**|enabled|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**可能な値**|true (既定) <p> false|
 |
 
@@ -416,7 +416,7 @@ ms.locfileid: "53289495"
 |説明|値|
 |---|---|
 |**Key**|automaticDefinitionUpdateEnabled|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**可能な値**|true (既定) <p> false|
 |
 
@@ -498,7 +498,7 @@ ms.locfileid: "53289495"
          }
       ],
       "allowedThreats":[
-         "EICAR-Test-File (not a virus)"
+         "<EXAMPLE DO NOT USE>EICAR-Test-File (not a virus)"
       ],
       "disallowedThreatActions":[
          "allow",

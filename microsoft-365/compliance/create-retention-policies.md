@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 97b90cc84e2b14e5c63779ea8b941a5ffe64bcd7
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 512bf7ed8eeaf8bea58d0a1a1e54d0ad2315bddc
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362332"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542047"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -53,6 +53,7 @@ ms.locfileid: "53362332"
 - Exchange パブリック フォルダー
 - チームのチャネル メッセージ
 - Teams のチャット
+- Teams の非公開チャネル メッセージ
 - Yammer コミュニティのメッセージ
 - Yammer ユーザーのメッセージ
 
@@ -75,7 +76,7 @@ ms.locfileid: "53362332"
     - **Teams チャット**: プライベート 1:1 チャット、グループ チャット、および会議チャットからのメッセージ。
     - **Teams プライベート チャネル メッセージ**: プライベート チャネル チャットおよびプライベート チャネル 会議からのメッセージ。 このオプションは現在プレビューで展開されており、表示されない場合は、数日後に再試行してください。
     
-   既定では、[すべてのチームとすべてのユーザーが選択されています](#a-policy-that-applies-to-entire-locations)が、**[編集]** オプションを選択して[特定の包含または除外](#a-policy-with-specific-inclusions-or-exclusions)のアイテム保持ポリシーを構成することにより、これを調整できます。 ただし、この既定の選択を変更する前に、アイテム保持ポリシーが次を対象または除外対象とするために構成されるときに、メッセージを削除する点について注意してください。
+   既定では、[すべてのチームとすべてのユーザーが選択されています](#a-policy-that-applies-to-entire-locations)が、**[編集]** オプションを選択して [特定の包含または除外](#a-policy-with-specific-inclusions-or-exclusions)のアイテム保持ポリシーを構成することにより、これを調整できます。 ただし、この既定の選択を変更する前に、アイテム保持ポリシーが次を対象または除外対象とするために構成されるときに、メッセージを削除する点について注意してください。
     
     - グループ チャット メッセージとプライベート チャネル メッセージの場合、メッセージのコピーがチャットに含まれる各ユーザーのメールボックスに保存されるため、引き続きポリシーが割り当てられていないユーザーからの電子情報開示の結果で返されます。
     - ポリシーが割り当てられていないユーザーには、削除されたメッセージが Teams の検索結果で返されますが、ユーザーに割り当てられたポリシーからの完全な削除の結果としてメッセージの内容は表示されません。

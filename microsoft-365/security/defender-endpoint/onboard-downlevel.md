@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d0cb4a3d01c1380f4fd06999c8f81a4054e2fd00
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c1809969d37d2e3cfb9279eb8266a65ba098b3c6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844432"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542107"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 
@@ -63,7 +63,7 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>センサー データを Microsoft Defender for Endpoint にMicrosoft Monitoring Agentレポートするデバイス (MMA) をインストールして構成する
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>開始する前に
 最小システム要件を確認するには、次の詳細を確認します。
 - [2018 年 2 月の更新プログラムのロールアップをインストールする](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   
@@ -85,7 +85,7 @@ Defender for Endpoint は System Center Endpoint Protection と統合し、マ�
 1. エージェント セットアップ ファイルをダウンロードします[Windows 64 ビット](https://go.microsoft.com/fwlink/?LinkId=828603)エージェントまたは[32 ビット Windowsエージェントをダウンロードします](https://go.microsoft.com/fwlink/?LinkId=828604)。
 
 2. ワークスペース ID を取得します。
-   - [Defender for Endpoint] ナビゲーション ウィンドウで、[デバイス設定 >**オンボーディング>選択します。**
+   - [Defender for Endpoint] ナビゲーション ウィンドウで、[デバイス設定 >**の>オンボーディング>選択します。**
    - オペレーティング **Windows 7 SP1 と 8.1** を選択する
    - ワークスペース ID とワークスペース キーをコピーする
 

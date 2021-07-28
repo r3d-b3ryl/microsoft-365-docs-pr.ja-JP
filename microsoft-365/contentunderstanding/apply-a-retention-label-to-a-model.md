@@ -1,8 +1,9 @@
 ---
-title: モデルに保持ラベルを適用する
-ms.author: efrene
-author: efrene
+title: SharePoint Syntex のモデルに保持ラベルを適用する
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Normal
-description: この記事では、保持ラベルを SharePoint Syntex のモデルに適用する方法について説明します
-ms.openlocfilehash: 00a8d255b3274af3cd96527e0dcd2ae2644226ac
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+description: アイテム保持ラベルをモデルに適用する方法については、SharePoint Syntex。
+ms.openlocfilehash: 5fa028664f0f981c9a95c31eac256f3a149a250a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861613"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543187"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>SharePoint Syntex のモデルに保持ラベルを適用する
 
@@ -129,6 +130,6 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/reten
 ## <a name="see-also"></a>関連項目
 [分類子を作成する](create-a-classifier.md)
 
-[抽出子を作成する](create-an-extractor.md)
+[エクストラクターを作成する](create-an-extractor.md)
 
 [ドキュメント理解の概要](document-understanding-overview.md)

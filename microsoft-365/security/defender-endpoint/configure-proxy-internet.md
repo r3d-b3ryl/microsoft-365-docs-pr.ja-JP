@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6a3bbc46bb5859743d5170451b0d1c68793f93bf
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 1386732325b831d176c662d821a2bb13d5e96739
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53338723"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595860"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "53338723"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 Defender for Endpoint センサーでは、センサー データWindowsレポートし、Defender for Endpoint サービスと通信するために Microsoft Windows HTTP (WinHTTP) が必要です。
 
@@ -44,9 +44,7 @@ Defender for Endpoint センサーでは、センサー データWindowsレポ�
 WinHTTP 構成設定は、Windows インターネット (WinINet) インターネット閲覧プロキシ設定とは独立し、次の検出方法を使用してのみプロキシ サーバーを検出できます。
 
 - 自動検出の方法:
-
   - 透過プロキシ
-
   - Web プロキシ自動発見プロトコル (WPAD)
 
     > [!NOTE]
@@ -55,8 +53,7 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) インター�
 - 手動の静的プロキシの構成:
 
   - レジストリ ベースの構成
-
-  - netsh コマンドを使用して構成された WinHTTP – 安定したトポロジのデスクトップ (同じプロキシの背後にある企業ネットワークのデスクトップなど) だけに適しています。
+  - netsh コマンドを使用して構成された WinHTTP: 安定したトポロジのデスクトップにのみ適しています (たとえば、同じプロキシの背後にある企業ネットワーク内のデスクトップ)
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>レジストリ ベースの静的プロキシを使用して、プロキシ サーバーを手動で構成します。
 
@@ -65,10 +62,10 @@ WinHTTP 構成設定は、Windows インターネット (WinINet) インター�
 > [!NOTE]
 > このオプションを Windows 10 または Windows Server 2019 で使用する場合は、次の (以降の) ビルドと累積的な更新プログラムのロールアップを行う必要があります。
 >
-> - Windows 10 Version 1809またはWindows Server 2019 -https://support.microsoft.com/kb/5001384
-> - Windows 10バージョン 1909 -https://support.microsoft.com/kb/4601380
-> - Windows 10バージョン 2004 -https://support.microsoft.com/kb/4601382
-> - Windows 10バージョン 20H2 -https://support.microsoft.com/kb/4601382
+> - Windows 10 Version 1809またはWindows Server 2019 -<https://support.microsoft.com/kb/5001384>
+> - Windows 10バージョン 1909 -<https://support.microsoft.com/kb/4601380>
+> - Windows 10バージョン 2004 -<https://support.microsoft.com/kb/4601382>
+> - Windows 10バージョン 20H2 -<https://support.microsoft.com/kb/4601382>
 >
 > これらの更新プログラムは、CnC (Command and Control) チャネルの接続性と信頼性を向上します。
 
@@ -108,9 +105,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 > - トポロジを変更しているラップトップ (たとえば、オフィスから自宅) は netsh に誤動作します。 レジストリ ベースの静的プロキシの構成を使用します。
 
 1. 管理者特権でのコマンド ラインを開きます。
-
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
-
    1. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
 2. 次のコマンドを入力して、**Enter** キーを押します。
@@ -135,9 +130,13 @@ netsh winhttp reset proxy
 
 次のダウンロード可能なスプレッドシートには、ネットワークが接続できる必要があるサービスと関連付けられている URL が一覧表示されます。 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルター ルールが存在しないか、許可ルールを作成する必要があります。 
 
-| ドメインリストのスプレッドシート | 説明 |
-|:-----|:-----|
-|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)<br/>  | サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <br><br>[ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+<br>
+
+**** 
+|ドメインリストのスプレッドシート|説明|
+|---|---|
+|![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|
 
 プロキシまたはファイアウォールで HTTPS スキャン (SSL 検査) が有効になっている場合は、上記の表に示されているドメインを HTTPS スキャンから除外します。
 
@@ -154,12 +153,16 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 以下の情報は、Windows 7 SP1、Windows 8.1、Windows Server 2008 R2、Windows Server 2012 R2、Windows Server 2016 など、以前のバージョンの Windows の Log Analytics エージェント (多くの場合、Microsoft Monitoring Agent と呼ばれます) と通信するために必要なプロキシとファイアウォールの構成情報を示しています。
 
-|エージェント リソース|ポート |方向 |HTTP 検査をバイパス|
-|------|---------|--------|--------|
-|*.ods.opinsights.azure.com |ポート 443 |送信|はい |  
-|*.oms.opinsights.azure.com |ポート 443 |送信|はい |  
-|*.blob.core.windows.net |ポート 443 |送信|はい |
-|*.azure-automation.net |ポート 443 |送信|はい |  
+<br>
+
+****
+
+|エージェント リソース|ポート|方向|HTTP 検査をバイパス|
+|---|---|---|---|
+|*.ods.opinsights.azure.com|ポート 443|送信|はい|
+|*.oms.opinsights.azure.com|ポート 443|送信|はい|
+|*.blob.core.windows.net|ポート 443|送信|はい|
+|*.azure-automation.net|ポート 443|送信|はい|
 
 > [!NOTE]
 > クラウドベースのソリューションとして、IP 範囲が変更される可能性があります。 DNS 解決設定に移動する必要があります。
@@ -194,9 +197,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 2. デバイス上に MDATPClientAnalyzer.zip のコンテンツを抽出します。
 
 3. 管理者特権でのコマンド ラインを開きます。
-
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
-
    1. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
 4. 次のコマンドを入力して、**Enter** キーを押します。

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a031a35929f319e87a9ad1a9ca48d6bf95a3ef72
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 87d9d768a81d8e6ddd72753fe7372f18c13254e1
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861577"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542953"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストの表示と整理
 
@@ -51,7 +51,7 @@ ms.locfileid: "51861577"
 >[!NOTE]
 > デバイスリストをエクスポートすると、組織内のすべてのデバイスが含まれる。 組織の規模によっては、ダウンロードにかなりの時間がかかる場合があります。 リストを CSV 形式でエクスポートすると、フィルター処理されていない方法でデータが表示されます。 CSV ファイルには、ビュー自体に適用されるフィルター処理に関係なく、組織内のすべてのデバイスが含まれます。
 
-![デバイスのリストを含むデバイスリストのイメージ](images/device-list.png)
+![デバイスのリストを含むデバイスリストのイメージ](images/device-inventory.png)
 
 ## <a name="sort-and-filter-the-device-list"></a>デバイスリストの並べ替えとフィルター処理
 
@@ -103,7 +103,7 @@ ms.locfileid: "51861577"
 
 特定の脅威の詳細については、「Threat [analytics」を参照してください](threat-analytics.md)。 軽減策の詳細については [、「Threat &脆弱性管理」を参照してください](next-gen-threat-and-vuln-mgt.md)。
 
-### <a name="windows-10-version"></a>Windows 10バージョン
+### <a name="windows-10-version"></a>Windows 10 バージョン
 
 調査するWindows 10バージョンのみを選択します。
 
@@ -111,6 +111,6 @@ ms.locfileid: "51861577"
 
 個々のデバイスに追加したグループ化とタグ付けに基づいてリストをフィルター処理します。 「デバイス [タグの作成と管理」および「](machine-tags.md) デバイス [グループの作成と管理」を参照してください](machine-groups.md)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint Devices リストのデバイスを調査する](investigate-machines.md)

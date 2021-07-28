@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 008263bfb948d1a2c52031635d074aca323e6764
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: b7f834a50156f09cd3fca355bbf1dd8f6a853b2c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256893"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542131"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -45,7 +45,7 @@ ms.locfileid: "53256893"
 
 ### <a name="prerequisites"></a>前提条件
 
-- ポータルへのMicrosoft Defender セキュリティ センターアクセス
+- ポータルへのMicrosoft 365 Defenderアクセス
 - systemd システム マネージャー [を使用した](https://systemd.io/) Linux 配布
 - Linux および BASH スクリプトでの初心者レベルのエクスペリエンス
 - デバイスの管理特権 (手動展開の場合)
@@ -54,8 +54,6 @@ ms.locfileid: "53256893"
 >  Microsoft Defender for Endpoint on Linux エージェントは [OMS エージェントから独立しています](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint は、独自の独立したテレメトリ パイプラインに依存しています。
 > 
 > Microsoft Defender for Endpoint on Linux はまだ Azure Security Center に統合されていません。
-
-
 
 ### <a name="installation-instructions"></a>インストール手順
 
@@ -166,6 +164,6 @@ Microsoft は、パフォーマンス、セキュリティ、および新機能�
 
 エンタープライズ環境で製品を構成する方法については、「Linux での Microsoft Defender for Endpoint の基本設定の設定 [」を参照してください](linux-preferences.md)。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 - ログ記録、アンインストール、その他のトピックの詳細については [、「Resources」を参照してください](linux-resources.md)。
