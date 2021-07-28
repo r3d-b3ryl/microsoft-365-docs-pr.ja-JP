@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、スプーフィング インテリジェンスの分析情報について、Exchange Online Protection (EOP) で学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0f2e1b59b1140b4ee5b187329dac51557ef4df87
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: daec0fe3a667aa92e9c137cdc7e612b6b11fb344
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314393"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544495"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP でのスプーフィング インテリジェンスの分析情報
 
@@ -41,7 +41,7 @@ ms.locfileid: "53314393"
 
 Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、受信電子メール メッセージはスプーフィングから自動的に保護されます。 EOP は、 **フィッシングに** 対する組織の全体的な防御の一環としてスプーフィング インテリジェンスを使用します。 詳細については、「EOP でのスプーフィング防止 [保護」を参照してください](anti-spoofing-protection.md)。
 
-送信者が電子メール アドレスをスプーフィングすると、その送信者は組織のドメインの 1 つのユーザー、または組織に電子メールを送信する外部ドメインのユーザーのように見える。 送信者をスプーフィングしてスパムメールやフィッシングメールを送信する攻撃者をブロックする必要があります。 しかし、正当な送信者がスプーフィングを行うシナリオがあります。 次に例を示します。
+送信者が電子メール アドレスをスプーフィングすると、その送信者は組織のドメインの 1 つのユーザー、または組織に電子メールを送信する外部ドメインのユーザーのように見える。 送信者をスプーフィングしてスパムメールやフィッシングメールを送信する攻撃者をブロックする必要があります。 しかし、正当な送信者がスプーフィングを行うシナリオがあります。 例:
 
 - 内部ドメインをスプーフィングする正当なシナリオ:
   - サードパーティの送信者は、ドメインを使用して、会社の投票のために自分の従業員にバルク メールを送信します。
@@ -71,7 +71,7 @@ Microsoft 365 Defender ポータルのスプーフィング インテリジェ�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com/> で Microsoft 365 Defender ポータルを開きます。 フィッシング対策ページに直接 **移動するには** 、 を使用します <https://security.microsoft.com/antiphishing> 。 スプーフィング インテリジェンスインサイト **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/spoofintelligence> 。
+- <https://security.microsoft.com/> で Microsoft 365 Defender ポータルを開きます。 [テナントの許可/ブロック **リスト]** ページの [スプーフィング] タブに直接移動するには、 を使用します <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem> 。 スプーフィング インテリジェンスインサイト **ページに直接移動するには** 、 を使用します <https://security.microsoft.com/spoofintelligence> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -82,6 +82,7 @@ Microsoft 365 Defender ポータルのスプーフィング インテリジェ�
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
   > [!NOTE]
+  >
   > - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
@@ -142,7 +143,7 @@ Microsoft 365 Defender ポータルのスプーフィング インテリジェ�
 - 何をする必要があります。
 - メインスプーフィング インテリジェンス ページの同じ情報のほとんどを含むドメインの概要。
 - 送信者に関する WhoIs データ。
-- 脅威エクスプローラーを開[き](threat-explorer.md)、送信者 (Microsoft Defender for Office 365) に関する詳細情報を表示するリンク。
+- 脅威エクスプローラーを開く[リンクを](threat-explorer.md)クリックして、[Microsoft Defenderでフィッシングを表示する] の下にある送信者に関する詳細を確認 \> Office 365。
 - テナントで同じ送信者から見た同様のメッセージ。
 
 ### <a name="about-allowed-spoofed-senders"></a>許可されたスプーフィング送信者について
@@ -158,7 +159,7 @@ Microsoft 365 Defender ポータルのスプーフィング インテリジェ�
 
 ## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>PowerShell またはスタンドアロン EOP PowerShell でスプーフィング インテリジェンスExchange Onlineを使用する
 
-PowerShell では **、Get-SpoofIntelligenceInsight** コマンドレットを使用して、スプーフィング インテリジェンスによって検出された許可およびブロックされたスプーフィング送信者を表示します。 スプーフィングされた送信者を手動で許可またはブロックするには **、New-TenantAllowBlockListSpoofItems コマンドレットを使用する必要** があります。 詳細については [、「Use PowerShell to configure the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list)。
+PowerShell では **、Get-SpoofIntelligenceInsight** コマンドレットを使用して、スプーフィング インテリジェンスによって検出された許可およびブロックされたスプーフィング送信者を表示します。 スプーフィングされた送信者を手動で許可またはブロックするには **、New-TenantAllowBlockListSpoofItems コマンドレットを使用する必要** があります。 詳細については、「Use PowerShell を使用して、テナント許可/ブロック一覧へのスプーフィングされた送信者エントリ [を管理する」を参照してください](tenant-allow-block-list.md)。
 
 スプーフィング インテリジェンスインサイトで情報を表示するには、次のコマンドを実行します。
 

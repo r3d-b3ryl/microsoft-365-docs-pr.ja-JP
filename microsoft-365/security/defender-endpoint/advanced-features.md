@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2448b95e5c5c5da25a916b659f6b49d04ba8f0c1
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: db9ff6429062f110981a2e91506b155a506d6ee5
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339576"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591009"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -38,7 +38,7 @@ ms.locfileid: "53339576"
 
 ## <a name="enable-advanced-features"></a>高度な機能を有効にする
 
-1. ナビゲーション ウィンドウで、[基本設定]**セットアップの [高度な**  >  **機能] を選択します**。
+1. ナビゲーション ウィンドウで、[エンドポイントの詳細設定 **] 設定**  >   **を**  >  **選択します**。
 2. 構成する高度な機能を選択し、設定を [オン] と [オフ] **の間で切り** 替 **えます**。
 3. [設定 **の保存] をクリックします**。
 
@@ -65,13 +65,13 @@ ms.locfileid: "53339576"
 この機能を有効にすると、ライブ応答セッションで署名されていないスクリプトを実行できます。
 
 ## <a name="always-remediate-pua"></a>PUA を常に修復する
-望ましくない可能性のあるアプリケーション (PUA) は、コンピューターの動作が遅くなる、予期しない広告を表示する、または最悪の場合は予期しないソフトウェアや望ましくない可能性のある他のソフトウェアをインストールするソフトウェアのカテゴリです。 
+望ましくない可能性のあるアプリケーション (PUA) は、コンピューターの動作が遅くなる、予期しない広告を表示する、または最悪の場合は他のソフトウェアをインストールするソフトウェアのカテゴリです。予期しない、または望ましくない可能性があります。 
 
 この機能を有効にし、PUA 保護がデバイスで構成されていない場合でも、不要な可能性のあるアプリケーション (PUA) がテナント内のすべてのデバイスで修復されます。 これにより、ユーザーがデバイスに不要なアプリケーションを誤ってインストールすることを防役立ちます。 オフにすると、修復はデバイスの構成に依存します。 
 
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>スコープ付きデバイス グループ内への相関関係の制限
-この構成は、ローカルの SOC 操作でアラートの相関関係をアクセスできるデバイス グループにのみ制限する場合に使用できます。 この設定を有効にすると、デバイス グループをまたがったアラートで構成されるインシデントは、1 つのインシデントとは見なされません。 ローカル SOC は、関連するデバイス グループの 1 つへのアクセス権を持つため、インシデントに対してアクションを実行できます。 ただし、グローバル SOC では、1 つのインシデントではなく、デバイス グループ別に複数の異なるインシデントが表示されます。 この設定を有効にしない場合は、組織全体のインシデントの相関関係の利点を上回る場合は、この設定を有効にすることをお勧めしません。
+この構成は、ローカルの SOC 操作でアラートの相関関係をアクセスできるデバイス グループにのみ制限する場合に使用できます。 この設定を有効にすると、デバイス グループをまたがったアラートで構成されるインシデントは、1 つのインシデントとは見なされません。 ローカル SOC は、関連するデバイス グループの 1 つへのアクセス権を持つため、インシデントに対してアクションを実行できます。 ただし、グローバル SOC では、1 つのインシデントではなく、デバイス グループ別に複数の異なるインシデントが表示されます。 組織全体のインシデントの相関関係の利点を上回らない限り、この設定を有効にすることをお勧めしません。
 >[!NOTE]
 >この設定を変更すると、将来のアラートの相関関係にのみ影響します。
 
@@ -81,10 +81,10 @@ ms.locfileid: "53339576"
 
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve 修復されたアラート
 
-Windows 10 Version 1809 以降に作成されたテナントの場合、自動調査と修復機能は既定で構成され、自動分析結果の状態が "脅威が見つかりません" または "修復済み" であるアラートを解決します。  アラートを自動解決したくない場合は、手動で機能をオフにする必要があります。
+Windows 10 Version 1809 以降に作成されたテナントの場合、自動調査および修復機能は既定で構成され、自動分析結果の状態が "脅威が見つかりません" または "修復済み" であるアラートを解決します。  アラートを自動解決したくない場合は、手動で機能をオフにする必要があります。
 
 > [!TIP]
-> そのバージョンより前に作成されたテナントの場合は、[高度な機能] ページからこの機能を手動で [有効にする必要](https://securitycenter.windows.com/preferences2/integration) があります。
+> そのバージョンより前に作成されたテナントの場合は、[高度な機能] ページからこの機能を手動で [有効にする必要](https://security.microsoft.com//preferences2/integration) があります。
 
 > [!NOTE]
 >
@@ -105,8 +105,8 @@ Windows 10 Version 1809 以降に作成されたテナントの場合、自動�
 1. ナビゲーション ウィンドウで、[エンドポイントの全般 **詳細設定設定** ファイルを許可またはブロック  >    >    >    >  **する] を選択します**。
 
 1. [オン] と [オフ]**の間で設定を****切り替えます**。
-
-    ![ブロック ファイル機能の詳細設定のイメージ](images/atp-preferences-setup.png)
+ 
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="ブロック ファイル機能の詳細設定のイメージ":::
 
 1. ページ **の下部にある [基本** 設定の保存] を選択します。
 
@@ -116,7 +116,7 @@ Windows 10 Version 1809 以降に作成されたテナントの場合、自動�
 
 この機能を有効にすることで、IP アドレス、ドメイン、または URL のインジケーターを作成し、カスタム インジケーター リストに基づいて許可またはブロックするかどうかを決定できます。
 
-この機能を使用するには、デバイスがバージョン 1709 以降Windows 10実行している必要があります。 また、ブロック モードでネットワーク保護を行い、マルウェア対策プラットフォームのバージョン 4.18.1906.3 以降は [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834)を参照してください。
+この機能を使用するには、デバイスがバージョン 1709 以降Windows 10実行している必要があります。 また、ブロック モードでネットワーク保護を行い、マルウェア対策プラットフォームのバージョン 4.18.1906.3 以降は KB 4052623 を参照 [してください](https://go.microsoft.com/fwlink/?linkid=2099834)。
 
 詳細については、「指標の管理 [」を参照してください](manage-indicators.md)。
 
@@ -153,16 +153,16 @@ Windows 10 Version 1809 以降に作成されたテナントの場合、自動�
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Id 統合用 Microsoft Defender
 
-Microsoft Defender for Identity との統合により、別の Microsoft Identity セキュリティ製品に直接ピボットできます。 Microsoft Defender for Identity は、侵害された疑いのあるアカウントと関連するリソースに関する追加の分析情報を使用して調査を強化します。 この機能を有効にすると、識別の観点からネットワーク全体をピボットすることで、デバイスベースの調査機能を強化できます。
+Microsoft Defender for Identity との統合により、別の Microsoft Identity セキュリティ製品に直接ピボットできます。 Microsoft Defender for Identity は、侵害された疑いのあるアカウントと関連リソースに関するより多くの洞察を得て調査を強化します。 この機能を有効にすると、識別の観点からネットワーク全体をピボットすることで、デバイスベースの調査機能を強化できます。
 
 > [!NOTE]
 > この機能を有効にするには、適切なライセンスが必要です。
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365脅威インテリジェンス接続
 
-この機能は、アクティブなユーザーまたは脅威インテリジェンス Office 365 E5がある場合にのみ使用できます。 詳細については、「E5 製品のOffice 365 Enterpriseを参照してください。
+この機能は、アクティブなユーザーまたは脅威インテリジェンス Office 365 E5を使用している場合にのみ使用できます。 詳細については、「E5 製品のOffice 365 Enterpriseを参照してください。
 
-この機能を有効にした場合、microsoft Defender for Office 365 のデータを Microsoft 365 Defender に組み込み、Office 365 メールボックスと Windows デバイス全体で包括的なセキュリティ調査を行えます。
+この機能を有効にした場合、microsoft Defender for Office 365 のデータを Microsoft 365 Defender に組み込み、Office 365 メールボックスと Windows デバイス全体で包括的なセキュリティ調査を実行できます。
 
 > [!NOTE]
 > この機能を有効にするには、適切なライセンスが必要です。
@@ -200,7 +200,7 @@ Microsoft Defender for Identity でコンテキスト デバイスの統合を�
 両方のポータルの統合手順を完了すると、デバイスの詳細またはユーザーの詳細ページに関連するアラートを表示できます。
 
 ## <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
-望ましくないコンテンツを含む Web サイトへのアクセスをブロックし、すべてのドメインで Web アクティビティを追跡します。 ブロックする Web コンテンツ カテゴリを指定するには、Web コンテンツ フィルター ポリシー [を作成します](https://security.microsoft.com/preferences2/web_content_filtering_policy)。 Microsoft Defender for Endpoint セキュリティ ベースラインを展開する場合は、ブロック モードでネットワーク [保護を行います](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)。
+望ましくないコンテンツを含む Web サイトへのアクセスをブロックし、すべてのドメインで Web アクティビティを追跡します。 ブロックする Web コンテンツ カテゴリを指定するには、Web コンテンツ フィルター ポリシー [を作成します](https://security.microsoft.com/preferences2/web_content_filtering_policy)。 Microsoft Defender for Endpoint セキュリティ ベースラインを展開する場合は、ブロック モードでネットワーク保護 [を行う必要があります](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)。
 
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Microsoft コンプライアンス センターとエンドポイント通知を共有する
@@ -230,8 +230,8 @@ Intune 統合を有効にした場合、Intune は従来の条件付きアクセ
 > [!NOTE]
 > Intune によって作成される従来の CA ポリシー[](/azure/active-directory/conditional-access/overview/)は、エンドポイントの構成に使用される最新の条件付きアクセス ポリシーとは異なります。
 
-
 ## <a name="device-discovery"></a>デバイス検出
+
 追加のアプライアンスや面倒なプロセス変更を必要とせずに、企業ネットワークに接続されている管理されていないデバイスを見つけるのに役立ちます。 オンボード デバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。 詳細については、「デバイスの検出 [」を参照してください](device-discovery.md)。
 
 > [!NOTE]
@@ -243,8 +243,9 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 今後の機能にアクセスできます。これは、機能が一般に利用可能になる前に全体的なエクスペリエンスを向上させるためにフィードバックを提供できます。
 
+## <a name="download-quarantined-files"></a>検疫済みファイルのダウンロード
 
-
+検疫済みファイルを安全で準拠した場所にバックアップし、検疫から直接ダウンロードできます。 [ **ファイルのダウンロード]** ボタンは常にファイル ページで使用できます。 この設定は既定でオンになっています。 [要件の詳細](respond-file-alerts.md#download-quarantined-files)
 
 ## <a name="related-topics"></a>関連項目
 

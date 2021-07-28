@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: c0736b93c314c3086f8a52477622c6bcfa4096a0
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: eebf6b6a07ed051a59ce9563497be25367ad3878
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458368"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544519"
 ---
 # <a name="enable-the-evaluation-environment"></a>評価環境を有効にする
 
@@ -37,7 +37,6 @@ ms.locfileid: "53458368"
 この記事は、Microsoft Defender の評価環境を設定するプロセスの手順[2/3](eval-defender-office-365-overview.md) Office 365。 このプロセスの詳細については、「概要」の記事を [参照してください](eval-defender-office-365-overview.md)。
 
 次の手順を使用して、Microsoft Defender の評価を有効にOffice 365。
-
 
 ![Microsoft Defender 評価環境で Microsoft Defender Office 365を有効にする手順](../../media/defender/m365-defender-office-eval-enable-steps.png)
 
@@ -54,20 +53,20 @@ ms.locfileid: "53458368"
 1. 管理ポータルに移動します。
 2. クイック 起動から [サービスの購入] を選択します。
 
-:::image type=&quot;content&quot; source=&quot;../../media/mdo-eval/1_m365-purchase-services.png&quot; alt-text=&quot;[サービスの購入] をクリックします。このページのナビゲーション ウィンドウOffice 365。&quot;:::
+   :::image type=&quot;content&quot; source=&quot;../../media/mdo-eval/1_m365-purchase-services.png&quot; alt-text=&quot;[サービスの購入] をクリックします。このページのナビゲーション ウィンドウOffice 365。&quot;:::
 
-3.  下にスクロールして 、[Add-On] セクション (または &quot;Defender") を検索して、Microsoft Defender のプランをOffice 365します。
-4.  評価するプランの横にある [詳細] をクリックします。
+3. 下にスクロールして 、[Add-On] セクション (または &quot;Defender") を検索して、Microsoft Defender のプランをOffice 365します。
+4. 評価するプランの横にある [詳細] をクリックします。
 
-:::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="[詳細] ボタンをクリックし、次へをクリックします。":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="[詳細] ボタンをクリックし、次へをクリックします。":::
 
 5. [無料試用版 *の開始] リンクをクリック* します。
 
-:::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="このパネルの [無料試用版の開始 *ハイパーリンク*] をクリックします。":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="このパネルの [無料試用版の開始 *ハイパーリンク*] をクリックします。":::
 
 6. 要求を確認し、[今すぐ試 *す] ボタンをクリック* します。
 
-:::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="[今すぐ試す] *ボタン *をクリックします。":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="[今すぐ試す] *ボタン *をクリックします。":::
 
 ## <a name="step-2-audit-and-verify-the-public-mx-record"></a>手順 2: パブリック MX レコードの監査と確認
 
@@ -101,33 +100,34 @@ Microsoft Defender for Office 365を効果的に評価するには、テナン�
 1. ポータルにアクセスできるアカウントを使用してテナントにログオンMicrosoft 365 Defenderします。
 2. 管理者向け Microsoft Defender の既定のインターフェイスMicrosoft 365 Defender **ポータル** にする (推奨) Office 365選択します。
 
-:::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="[設定を有効にする] ボタンをクリックして、管理用に一元管理Microsoft 365 Defenderを使用します。":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="[設定を有効にする] ボタンをクリックして、管理用に一元管理Microsoft 365 Defenderを使用します。":::
 
 3. ナビゲーション メニューから、[メールとコラボレーション] の **下&ポリシーと** ルール *&選択します*。
 
-:::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="[ポリシーとルール] を&する [メール と共同作業] &します。クリックします。":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="[ポリシーとルール] を&する [メール と共同作業] &します。クリックします。":::
 
 4. [ポリシー の *設定] &ダッシュボードで* 、[脅威 **ポリシー] をクリックします**。
 
-:::image type="content" source="../../media/mdo-eval/3_mdo-eval-activate-eval.png" alt-text="[ポリシーとルール] &の図と、脅威ポリシーを示す矢印を示します。次にクリックします。":::
+   :::image type="content" source="../../media/mdo-eval/3_mdo-eval-activate-eval.png" alt-text="[ポリシーとルール] &の図と、脅威ポリシーを示す矢印を示します。次にクリックします。":::
 
 5. [その他の *ポリシー] まで下にスクロールし*、[追加ポリシーの Defender を評価 **する] タイルOffice 365** します。
 
-:::image type="content" source="../../media/mdo-eval/4_mdo-eval-activate-eval.png" alt-text="[Eval Defender for Office 365] タイルは、電子メールとコラボレーション ベクターの間で 30 日間&試用です。[クリックスルー] をクリックします。":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-activate-eval.png" alt-text="[Eval Defender for Office 365] タイルは、電子メールとコラボレーション ベクターの間で 30 日間&試用です。[クリックスルー] をクリックします。":::
 
 6. 次に、外部メールを直接送信するかExchange Onlineサード パーティのゲートウェイまたはサービスにルーティングするか選択し、[次へ] をクリックします。
 
-:::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text="Defender for Office 365は、メールボックスへのメール送信をExchange Onlineします。メールのルーティング方法の詳細 (メールをルーティングする送信コネクタの名前など) を指定します。EOP (EOP) Exchange Online Protection使用する場合は、コネクタを使用することはできません。3rd-party プロバイダーまたはオンプレミス プロバイダーを使用しているか、EOP のみを使用する場合は、1 つを選択します。":::
+   :::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text="Defender for Office 365は、メールボックスへのメール送信をExchange Onlineします。メールのルーティング方法の詳細 (メールをルーティングする送信コネクタの名前など) を指定します。EOP (EOP) Exchange Online Protection使用する場合は、コネクタを使用することはできません。3rd-party プロバイダーまたはオンプレミス プロバイダーを使用しているか、EOP のみを使用する場合は、1 つを選択します。":::
 
 7. サードパーティゲートウェイを使用する場合は、ドロップダウンからベンダー名を選択し、そのソリューションに関連付けられた受信コネクタを選択します。 回答を一覧表示した場合は、[次へ] をクリックします。
 
-:::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="このダイアログで、組織で使用しているサードパーティ ベンダー サービスを選択するか、[*Other*] を選択します。次のダイアログ ボックスで、受信コネクタを選択します。次に、[次へ] をクリックします。":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="このダイアログで、組織で使用しているサードパーティ ベンダー サービスを選択するか、[*Other*] を選択します。次のダイアログ ボックスで、受信コネクタを選択します。次に、[次へ] をクリックします。":::
 
 8. 設定を確認し、[評価の作成 **] ボタンをクリック** します。
 
-|  |  |
-|---------|---------|
-|  :::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="このウィンドウには、設定を確認するドロップダウンがあります。必要に応じて、[ルーティングの種類を編集する] へのリンクもクリックできます。準備ができたら、大きな青い [評価の作成] ボタンをクリックします。":::   |   :::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="これで、セットアップが完了しました。このページの青いボタンに「評価に移動」と表示されます。":::      |
+   |イベント前|イベント後|
+   |:---:|:---:|
+   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="このウィンドウには、設定を確認するドロップダウンがあります。必要に応じて、[ルーティングの種類を編集する] へのリンクもクリックできます。準備ができたら、大きな青い [評価の作成] ボタンをクリックします。":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="これで、セットアップが完了しました。このページの青いボタンに「評価に移動」と表示されます。":::|
+   |
 
 ## <a name="next-steps"></a>次の手順
 

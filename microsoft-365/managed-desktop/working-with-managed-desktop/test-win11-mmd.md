@@ -1,5 +1,5 @@
 ---
-title: プレビューとテストWindows 11 とMicrosoft マネージド デスクトップ
+title: Microsoft マネージド デスクトップを使用して Windows 11 をプレビューおよびテストする
 description: 環境でWindows 11 を取得する方法
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8dee18909d82656bcfb3e63fdc078328c678e660
-ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
+ms.openlocfilehash: 4ac12c4ec340bd6bb73418dae75774198190094b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53461389"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544687"
 ---
-# <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>プレビューとテストWindows 11 とMicrosoft マネージド デスクトップ
+# <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップを使用して Windows 11 をプレビューおよびテストする
 
  11 の互換性テスト プログラムWindows環境に登録して参加するMicrosoft マネージド デスクトップします。 11 と WindowsのMicrosoft マネージド デスクトップについては、「Windows [11」を参照Microsoft マネージド デスクトップ。](../intro/win11-overview.md) 
 
@@ -34,7 +34,7 @@ ms.locfileid: "53461389"
 
 ## <a name="add-devices-to-the-windows-11-test-group"></a>デバイスを 11 Windowsグループに追加する
 
-まず、デバイス グループ **\[ (Modern Workplace \] Windows 11** プレリリース テスト デバイス) にデバイスを追加し、11 のテストと評価Windowsします。 このグループのデバイスは、Windows 11 のビルドとMicrosoft マネージド デスクトップベースライン構成を取得し、信頼性の問題を監視します。
+要求に応じて、デバイス グループ **(Modern Workplace - Windows 11** プレリリース テスト デバイス) を作成し、11 のテストと評価Windowsします。 このグループのデバイスは、Windows 11 のビルドとMicrosoft マネージド デスクトップベースライン構成を取得し、信頼性の問題を監視します。
 
 Windows 11 テスト用に既存のデバイスまたは新しいデバイスを選択できますが、プレリリース ビルドでの欠陥や互換性の問題のリスクが高く、このグループに実稼働デバイスを登録する必要があります。 以前のデバイス グループの割り当ては、このグループへの割り当て時に削除されます。
 

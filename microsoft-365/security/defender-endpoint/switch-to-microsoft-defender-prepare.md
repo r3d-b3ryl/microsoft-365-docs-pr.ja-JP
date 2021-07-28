@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 56a63c09690e28f0ca4990dcbcbcb6cfff7d5eef
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: e2bce4d202c36e0174592fa3dd5e0edee08490ee
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929505"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544543"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
 
@@ -46,7 +46,7 @@ ms.locfileid: "52929505"
 
 1. [組織のデバイス全体で更新プログラムを取得して展開する](#get-and-deploy-updates-across-your-organizations-devices)
 2. [エンドポイントの Defender を取得します](#get-microsoft-defender-for-endpoint)。
-3. [サーバーへのアクセスを許可Microsoft Defender セキュリティ センター。](#grant-access-to-the-microsoft-defender-security-center)
+3. [ポータルへのアクセス権をMicrosoft 365 Defenderします](#grant-access-to-the-microsoft-365-defender-portal)。
 4. [デバイス プロキシとインターネット接続の設定を構成します](#configure-device-proxy-and-internet-connectivity-settings)。
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>組織のデバイス全体で更新プログラムを取得して展開する
@@ -83,16 +83,16 @@ ms.locfileid: "52929505"
 
 4. 組織内のエンドポイント (デバイスなど) がプロキシを使用してインターネットにアクセスする場合は [、「Defender for Endpoint setup: Network configuration」を参照してください](production-deployment.md#network-configuration)。
  
-この時点で、セキュリティ管理者 Microsoft Defender セキュリティ センターとセキュリティオペレーターにアクセス権を付与する準備が整いました。 [https://securitycenter.windows.com](https://securitycenter.windows.com) 
+この時点で、管理者ポータル () を使用するセキュリティ管理者およびセキュリティオペレーターにアクセス権を付与Microsoft 365 Defenderできます [https://security.microsoft.com](https://security.microsoft.com) 。 
 
 > [!NOTE]
-> このMicrosoft Defender セキュリティ センター Defender for Endpoint ポータルと呼ばれる場合があります。 [https://securitycenter.windows.com](https://securitycenter.windows.com) 
+> ポータルMicrosoft 365 Defender Defender for Endpoint ポータルと呼ばれる場合があります。. [https://security.microsoft.com](https://security.microsoft.com) 
 
-## <a name="grant-access-to-the-microsoft-defender-security-center"></a>サーバーへのアクセスを許可Microsoft Defender セキュリティ センター
+## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>ポータルへのアクセス権をMicrosoft 365 Defenderする
 
-このMicrosoft Defender セキュリティ センター ( ) は、Defender for Endpoint の機能にアクセスして [https://securitycenter.windows.com](https://securitycenter.windows.com) 構成する場所です。 詳細については、「概要」[を参照Microsoft Defender セキュリティ センター。](use.md)
+このMicrosoft 365 Defender ( ) は、Defender for Endpoint の機能にアクセスして [https://security.microsoft.com](https://security.microsoft.com) 構成する場所です。 詳細については、「ポータルの[概要」をMicrosoft 365 Defenderしてください](use.md)。
 
-アクセス許可は、Microsoft Defender セキュリティ センターアクセス許可または役割ベースのアクセス制御 (RBAC) を使用して付与できます。 アクセス許可を細かく制御するには、RBAC を使用することをお勧めします。
+基本的なアクセス許可Microsoft 365 Defenderロール ベースのアクセス制御 (RBAC) を使用して、ポータルへのアクセス許可を付与できます。 アクセス許可を細かく制御するには、RBAC を使用することをお勧めします。
 
 1. セキュリティ管理者とセキュリティオペレーターの役割とアクセス許可を計画します。 「 [役割ベースのアクセス制御」を参照してください](prepare-deployment.md#role-based-access-control)。
 
@@ -104,7 +104,7 @@ ms.locfileid: "52929505"
     - [高度なグループ ポリシーの管理](/microsoft-desktop-optimization-pack/agpm)
     - [Windows管理センター](/windows-server/manage/windows-admin-center/overview)
 
-3. ユーザーにアクセス権を付与Microsoft Defender セキュリティ センター。 (ヘルプが必要ですか? 「RBAC [を使用したポータル アクセスの管理」を参照](rbac.md)してください。
+3. ポータルへのアクセス権をMicrosoft 365 Defenderします。 (ヘルプが必要ですか? 「RBAC [を使用したポータル アクセスの管理」を参照](rbac.md)してください。
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -113,7 +113,7 @@ ms.locfileid: "52929505"
 | 機能  | オペレーティング システム | リソース |
 |:--|:--|:--|
 | [エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)  | [コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md) |
-| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[WindowsServer 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
+| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
 | EDR  | macOS:<p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave)   | [macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)  |
 | [Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
 | ウイルス対策 | macOS:<p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave) | [macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections) |

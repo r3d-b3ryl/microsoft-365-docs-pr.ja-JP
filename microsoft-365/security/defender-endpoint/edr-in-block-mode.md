@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: b5c2694437333f197f3c9b04fd1f10fb581cd4d2
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 2754303163e608596cb554dfdb44113c6684fcfe
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596112"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543559"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードでのエンドポイントEDR応答 (EDR)
 
@@ -35,7 +35,7 @@ ms.locfileid: "53596112"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>ブロック モードEDR機能とは
 
@@ -75,7 +75,6 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理。](
 2. [エンドポイント **設定**  >  **高度な**  >  **機能**  >  **] を選択します**。
 
 3. 下にスクロールし、[ブロック モードでEDR **を有効にする] をオンにします**。
-
 
 > [!NOTE]
 > EDRモードの場合は、ポータル ( ) または以前の Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) でのみオンMicrosoft Defender セキュリティ センターできます [https://securitycenter.windows.com](https://securitycenter.windows.com) 。 ブロック モードでレジストリ キー、Microsoft Intune、またはグループ ポリシーを使用して、EDRを有効または無効にすることはできません。

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d8458f1bacc6577d83878a94c24e649371d90038
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d3d09f293924003ea8bf3df0079b31b633e1cc23
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935331"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544642"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint の手動展開
 
@@ -33,9 +33,10 @@ ms.locfileid: "51935331"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 このトピックでは、Microsoft Defender for Endpoint を macOS に手動で展開する方法について説明します。 展開が成功するには、次のすべての手順を完了する必要があります。
+
 - [インストール パッケージとオンボーディング パッケージのダウンロード](#download-installation-and-onboarding-packages)
 - [アプリケーションのインストール (macOS 10.15 以前のバージョン)](#application-installation-macos-1015-and-older-versions)
 - [アプリケーションのインストール (macOS 11 以降のバージョン)](#application-installation-macos-11-and-newer-versions)
@@ -47,17 +48,17 @@ ms.locfileid: "51935331"
 
 ## <a name="download-installation-and-onboarding-packages"></a>インストール パッケージとオンボーディング パッケージのダウンロード
 
-インストールパッケージとオンボーディング パッケージを次の手順でダウンロードMicrosoft Defender セキュリティ センター。
+インストールおよびオンボーディング パッケージを次のポータルからMicrosoft 365 Defenderします。
 
-1. [Microsoft Defender セキュリティ センター] で、[デバイス管理 **設定 >オンボーディング>に移動します**。
+1. [Microsoft 365 Defender] ポータルで、[デバイス管理設定 >オンボーディング>**エンドポイント>移動します**。
 2. ページのセクション 1 で、オペレーティング システムを **macOS** に設定し、Deployment メソッドをローカル スクリプト **に設定します**。
 3. ページのセクション 2 で、[インストール パッケージのダウンロード **] を選択します**。 wdav.pkg としてローカル ディレクトリに保存します。
 4. ページのセクション 2 で、[オンボーディング パッケージの **ダウンロード] を選択します**。 同じディレクトリWindowsDefenderATPOnboardingPackage.zipとして保存します。
 
-    ![Microsoft Defender セキュリティ センタースクリーンショット](images/atp-portal-onboarding-page.png)
+    ![Microsoft 365 Defenderポータルのスクリーンショット](images/portal-onboarding-macos.png)
 
 5. コマンド プロンプトから、2 つのファイルが存在するように確認します。
-    
+
 ## <a name="application-installation-macos-1015-and-older-versions"></a>アプリケーションのインストール (macOS 10.15 以前のバージョン)
 
 このプロセスを完了するには、デバイスに対する管理者権限が必要です。
@@ -107,11 +108,11 @@ ms.locfileid: "51935331"
 
 5. Microsoft Defender for Endpoint on Mac で配布&すべてのシステム拡張機能について、手順 3 から 4 を繰り返します。
 
-6. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint on Mac はソケット トラフィックを検査し、この情報をポータルにMicrosoft Defender セキュリティ センターします。 ネットワーク トラフィックをフィルター処理するための Microsoft Defender for Endpoint アクセス許可の付与を求めるメッセージが表示されたら、[許可] を **選択します**。
+6. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint on Mac はソケット トラフィックを検査し、この情報をポータルMicrosoft 365 Defenderします。 ネットワーク トラフィックをフィルター処理するための Microsoft Defender for Endpoint アクセス許可の付与を求めるメッセージが表示されたら、[許可] を **選択します**。
 
     ![システム拡張機能のセキュリティの基本設定2](images/big-sur-install-4.png)
 
-7. [System **Preferences** Security & プライバシー] を開き、[プライバシー] タブに移動します。[エンドポイント セキュリティ拡張機能] および [エンドポイント セキュリティ拡張機能] に対するフル  >  **Microsoft Defender ATP** アクセスMicrosoft Defender ATP **を付与します**。  
+7. [System **Preferences** Security & プライバシー] を開き、[プライバシー] タブに移動します。Microsoft Defender ATP および Microsoft Defender ATP Endpoint Security Extension にフル ディスク アクセスのアクセス許可を  >  **付与します**。   
 
     ![ディスクへのフル アクセス](images/big-sur-install-5.png)
 
@@ -138,10 +139,9 @@ ms.locfileid: "51935331"
     ```
 
     インストール後、右上隅の macOS ステータス バーに Microsoft Defender アイコンが表示されます。
-    
+
     > [!div class="mx-imgBorder"]
     > ![ステータス バーのスクリーンショットの Microsoft Defender アイコン](images/mdatp-icon-bar.png)
-
 
 ## <a name="how-to-allow-full-disk-access"></a>フル ディスク アクセスを許可する方法
 
@@ -174,7 +174,7 @@ ms.locfileid: "51935331"
 
    1. Mac や Safari のMicrosoft Edgeブラウザーで使用します。
 
-   1. MacOS MDATPをダウンロードDIY.zip抽出 https://aka.ms/mdatpmacosdiy します。
+   1. MDATP MacOS ファイルをダウンロードDIY.zip抽出 https://aka.ms/mdatpmacosdiy します。
 
       次のメッセージが表示される場合があります。
 
@@ -185,41 +185,41 @@ ms.locfileid: "51935331"
 
 5. [ **ダウンロード] を開きます**。
 
-6. MacOS **DIY のMDATPが表示されます**。
+6. **MDATP MacOS DIY が表示されます**。
 
    > [!TIP]
    > ダブルクリックすると、次のメッセージが表示されます。
-   > 
-   > > **"MDATP MacOS DIY" は、開発者が検証者になれませんので開くことができません。**<br/>
+   >
+   > > **開発者が検証者になれませんので、"MDATP MacOS DIY" を開くことができません。**<br/>
    > > macOS は、このアプリがマルウェアから解放されているのを確認できません。<br/>
-   > > **\[ ごみ箱の \] 取り消しに****\[ 移動する \]** 
-  
+   > > **\[ ごみ箱の \] 取り消しに****\[ 移動する \]**
+
 7. [ **キャンセル**] をクリックします。
 
-8. **MacOS DIY を右MDATPクリックし**、[開く] を **クリックします**。 
+8. **MDATP MacOS DIY を右クリックし**、[開く] を **クリックします**。
 
     システムは、次のメッセージを表示する必要があります。
 
-    > **macOS では、MacOS DIY の **開発者MDATP確認できません**。本当に開く必要がありますか?**<br/>
+    > **macOS は MDATP MacOS DIY の開発者を確認できません。本当に開く必要がありますか?**<br/>
     > このアプリを開いて、コンピューターと個人情報を Mac に害を与えるマルウェアやプライバシーを侵害する可能性のあるシステム セキュリティを上書きします。
 
-10. [ **開く**] をクリックします。
+9. [ **開く**] をクリックします。
 
     システムは、次のメッセージを表示する必要があります。
 
     > Microsoft Defender for Endpoint - macOS EDR DIY テスト ファイル<br/>
-    > 対応するアラートは、ポータルでMDATPされます。
+    > 対応するアラートは、MDATP ポータルで使用できます。
 
-11. [ **開く**] をクリックします。
+10. [ **開く**] をクリックします。
 
     数分後に、"macOS EDRテスト アラート" という名前のアラートが発生する必要があります。
 
-12. [次のMicrosoft Defender セキュリティ センター ] に移動 https://SecurityCenter.microsoft.com) します。
+11. [ポータル] ( Microsoft 365 Defender移動 https://security.microsoft.com/) します。
 
-13. [アラート キュー] に移動します。
+12. [アラート キュー] に移動します。
 
     :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="重大度、カテゴリ、検出EDRアクションの折りたたみメニューを示す macOS テスト アラートの例。":::
-    
+
     アラートの詳細とデバイスのタイムラインを確認し、通常の調査手順を実行します。
 
 ## <a name="logging-installation-issues"></a>インストールの問題をログに記録する

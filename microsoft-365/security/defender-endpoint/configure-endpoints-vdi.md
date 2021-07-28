@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 99b6e04ac64905290a16d309f0016917927ca870
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 5ac5d39af831bdae0069dd3902a9db3e59585909
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596148"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543439"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ デバイスのオンボーディング
 
@@ -35,15 +35,16 @@ ms.locfileid: "53596148"
 - 仮想デスクトップ インフラストラクチャ (VDI) デバイス
 - Windows 10、Windows Server 2019、Windows Server 2008R2/2012R2/2016
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
 
 Defender for Endpoint は、永続的でない VDI セッションオンボーディングをサポートします。 
 
+
 VDIs をオンボーディングする際に関連する課題が生じ得る場合があります。 このシナリオの一般的な課題は次のとおりです。
 
-- 短命セッションの即時早期オンボーディング。実際のプロビジョニングの前に Defender for Endpoint にオンボードする必要があります。
+- 実際のプロビジョニングの前に Defender for Endpoint にオンボードする必要がある短命セッションの早期オンボーディング。
 - 通常、デバイス名は新しいセッションに再利用されます。
 
 VDI デバイスは、Defender for Endpoint ポータルに次のように表示できます。
@@ -77,7 +78,7 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 
     1. デバイスごとに 1 つのエントリを実装していない場合は、WindowsDefenderATPOnboardingScript.cmd をコピーします。
 
-    1. デバイスごとに 1 つのエントリを実装する場合は、windowsDefenderATPOnboardingScript.cmd と windowsDefenderATPOnboardingScript.cmd の両方Onboard-NonPersistentMachine.ps1コピーします。
+    1. デバイスごとに 1 つのエントリを実装する場合は、Onboard-NonPersistentMachine.ps1 WindowsDefenderATPOnboardingScript.cmd の両方をコピーします。
     
     > [!NOTE]
     > フォルダーが表示しない場合 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` は、非表示になる可能性があります。 エクスプローラーから [非表示のファイル **とフォルダーを** 表示する] オプションを選択する必要があります。
@@ -89,34 +90,33 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 
 4. 実装するメソッドに応じて、適切な手順に従います。
 
-    - デバイスごとに 1 つのエントリの場合:
+   - デバイスごとに 1 つのエントリの場合:
    
-         **[PowerShell スクリプト]** タブを選択し、[追加] **(Windows** オンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます) をクリックします。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1` 。 他のファイルは自動的にトリガーされますので、指定する必要はありません。
+     **[PowerShell スクリプト]** タブを選択し、[追加] **(Windows** オンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます) をクリックします。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1` 。 他のファイルは自動的にトリガーされますので、指定する必要はありません。
    
-    - 各デバイスの複数のエントリの場合:
+   - 各デバイスの複数のエントリの場合:
    
-         [スクリプト **] タブを** 選択し、[追加]**をクリック** します (Windows、以前にオンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます)。 オンボーディング bash スクリプトに移動します `WindowsDefenderATPOnboardingScript.cmd` 。
+     [スクリプト **] タブを** 選択し、[追加]**をクリック** します (Windows、以前にオンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます)。 オンボーディング bash スクリプトに移動します `WindowsDefenderATPOnboardingScript.cmd` 。
 
 5. ソリューションをテストします。
 
    1. 1 つのデバイスでプールを作成します。
       
-   1. デバイスにログオンします。
+   1. デバイスへのログオン。
       
-   1. デバイスからログオフします。
+   1. デバイスからのログオフ。
 
    1. 別のユーザーと一緒にデバイスにログオンします。
       
    1. 実装するメソッドに応じて、適切な手順に従います。
+   
+      - デバイスごとに 1 つのエントリの場合: 
+    
+        1 つのエントリのみをオンMicrosoft 365 Defender。
 
-   - デバイスごとに 1 つのエントリの場合: 
-
-     ポータルで 1 つのエントリMicrosoft 365 Defenderします。
-
-   - 各デバイスの複数のエントリの場合: 
-
-     ポータルで複数のエントリMicrosoft 365 Defenderします。
-
+      - 各デバイスの複数のエントリの場合: 
+       
+        複数のエントリを確認Microsoft 365 Defender。
 
 6. [ナビゲーション **] ウィンドウの [** デバイス] リストをクリックします。
 
@@ -178,13 +178,13 @@ DISM コマンドとオフライン サービスの詳細については、以�
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 
 5. 通常と同じ方法で、ゴールデン/マスター イメージを再シールします。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)

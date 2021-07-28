@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2d32dd96cd506ebf1752e48d2b7c66208b1abc11
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2cbe41bc06362a14b5e657e6385ec87684871340
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934539"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544615"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>MacOS 上のエンドポイント用 Microsoft Defender を使用して、望ましくない可能性のあるアプリケーションを検出およびブロックする
 
@@ -53,8 +53,8 @@ Microsoft Defender for Endpoint on macOS では、PUA ファイルを検出し�
 macOS 上の Microsoft Defender for Endpoint の PUA 保護は、次のいずれかの方法で構成できます。
 
 - **Off**: PUA 保護は無効です。
-- **監査**: PUA ファイルは製品ログに報告されますが、このログMicrosoft Defender セキュリティ センター。 ユーザーに通知は表示されません。また、製品によるアクションは実行されません。
-- **ブロック**: PUA ファイルは、製品ログと一覧でMicrosoft Defender セキュリティ センター。 ユーザーに通知が表示され、製品によってアクションが実行されます。
+- **監査**: PUA ファイルは製品ログに報告されますが、このポータルMicrosoft 365 Defenderされません。 ユーザーに通知は表示されません。また、製品によるアクションは実行されません。
+- **ブロック**: PUA ファイルは、製品ログとポータルでMicrosoft 365 Defenderされます。 ユーザーに通知が表示され、製品によってアクションが実行されます。
 
 >[!WARNING]
 >既定では、監査モードで PUA 保護 **が構成** されています。
@@ -73,6 +73,6 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 企業では、他の製品設定の構成方法と同様に、JAMF や Intune などの管理コンソールから PUA 保護を構成できます。 詳細については、「MacOS[](mac-preferences.md#threat-type-settings)での Microsoft Defender for Endpoint の設定」の「[脅威の種類の設定」セクションを参照](mac-preferences.md)してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [macOS のエンドポイント用 Microsoft Defender の基本設定を設定する](mac-preferences.md)

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c785dbb759afe77b14f41985b9f451a4ec52e29f
-ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
+ms.openlocfilehash: 111a7b54f865ab8d12fa2730a159b0035d2442e8
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52778235"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544579"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評価ラボ
 
@@ -52,7 +52,7 @@ Windows 10 または Windows Server 2019 デバイスを追加して、最新の
  お好みのシミュレーターをインストールし、評価ラボ内でシナリオを実行し、プラットフォームのパフォーマンスを即座に確認できます。 また、さまざまなシミュレーションにアクセスして、シミュレーション カタログから実行できます。
     
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 評価ラボにアクセスするには、ライセンス[](minimum-requirements.md#licensing-requirements)要件を満たすか、Microsoft Defender for Endpoint への試用版アクセス権が必要です。
 
 次のセキュリティ設定 **の管理権限** が必要です。
@@ -69,9 +69,10 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 
 ## <a name="get-started-with-the-lab"></a>ラボの使用を開始する
+
 メニューからラボにアクセスできます。 ナビゲーション メニューで、[評価] と **[チュートリアル] を選択し、[>] を選択します**。
 
-![メニューの評価ラボのイメージ](images/evaluation-lab-menu.png)
+
 
 >[!NOTE]
 >- 選択した環境構造の種類に応じて、デバイスはライセンス認証日から指定された時間数で利用できます。
@@ -82,9 +83,9 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 ## <a name="setup-the-evaluation-lab"></a>評価ラボのセットアップ
 
-1. ナビゲーション ウィンドウで、[評価とチュートリアル]**評価** ラボを  >  **選択** し、[セットアップ ラボ]**を選択します**。
+1. ナビゲーション ウィンドウで、[評価] &**評価ラボ]** を選択し、[セットアップ  >  ラボ]**を選択します**。
 
-    ![評価ラボのウェルカム ページのイメージ](images/evaluation-lab-setup.png)
+    :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="評価ラボのウェルカム ページのイメージ":::
 
 2. 評価のニーズに応じて、より長い期間、またはより短い期間のデバイスが少ない環境をセットアップできます。 好みのラボ構成を選択し、[次へ] を **選択します**。
 
@@ -118,17 +119,17 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 次のセキュリティ コンポーネントは、テスト デバイスで事前に構成されています。
 
-- [攻撃面の減少](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
-- [一目でブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [制御されたフォルダー アクセス](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [エクスプロイト保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
-- [ネットワーク保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
-- [望ましくない可能性のあるアプリケーションの検出](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [クラウドによる保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
+- [攻撃面の減少](attack-surface-reduction.md)
+- [事前ブロック](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [制御されたフォルダー アクセス](controlled-folders.md)
+- [エクスプロイト保護](enable-exploit-protection.md)
+- [ネットワーク保護](network-protection.md)
+- [望ましくない可能性のあるアプリケーションの検出](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+- [クラウドによる保護](cloud-protection-microsoft-defender-antivirus.md)
+- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender ウイルス対策オンになります (監査モードではありません)。 シミュレーションMicrosoft Defender ウイルス対策ブロックする場合は、デバイスでリアルタイム保護をオフWindows セキュリティ。 詳細については、「Configure [always-on protection」を参照してください](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
+> Microsoft Defender ウイルス対策オンになります (監査モードではありません)。 シミュレーションMicrosoft Defender ウイルス対策ブロックする場合は、デバイスでリアルタイム保護をオフWindows セキュリティ。 詳細については、「Configure [always-on protection」を参照してください](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
 自動調査の設定は、テナントの設定に依存します。 既定では半自動で構成されます。 詳細については、「自動調査 [の概要」を参照してください](automated-investigations.md)。
 
@@ -139,8 +140,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 2. 追加するデバイスの種類を選択します。 サーバー 2019 にWindows 10またはWindows選択できます。
 
-    ![デバイス オプションを使用したラボセットアップのイメージ](images/add-machine-options.png)
-
+    :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="デバイス オプションを使用したラボセットアップ":::
 
     >[!NOTE]
     >デバイスの作成プロセスで問題が発生した場合は、通知が送信され、新しい要求を送信する必要があります。 デバイスの作成に失敗した場合は、許可された全体的なクォータに対してカウントされません。 
@@ -150,7 +150,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
     >[!NOTE]
     >パスワードは 1 回だけ表示されます。 後で使用するために必ず保存してください。
 
-    ![接続の詳細で追加されたデバイスのイメージ](images/add-machine-eval-lab.png)
+    :::image type="content" source="../../media/add-machine-eval-labnew.png" alt-text="接続の詳細で追加されたデバイスのイメージ":::
 
 4. デバイスのセットアップが開始されます。 これには、最大で約 30 分かかる場合があります。 
 
@@ -187,13 +187,13 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 テスト デバイスを使用して、テスト デバイスに接続して独自の攻撃シミュレーションを実行します。 
 
 攻撃シナリオは、次の方法でシミュレートできます。
-- ["Do It Yourself" 攻撃のシナリオ](https://securitycenter.windows.com/tutorials)
+- ["Do It Yourself" 攻撃のシナリオ](https://security.microsoft.com/tutorials/all)
 - 脅威シミュレーター
 
-高度な検索を使用[してデータ](advanced-hunting-query-language.md)をクエリし[](threat-analytics.md)、脅威分析を使用して、新たな脅威に関するレポートを表示することもできます。
+高度な検索を使用[してデータ](advanced-hunting-overview.md)をクエリし[](threat-analytics.md)、脅威分析を使用して、新たな脅威に関するレポートを表示することもできます。
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Do-it-yourself 攻撃のシナリオ
-事前に作成されたシミュレーションを探している場合は、"Do It [Yourself" 攻撃シナリオを使用できます](https://securitycenter.windows.com/tutorials)。 これらのスクリプトは安全で文書化され、使いやすいです。 これらのシナリオは、Defender for Endpoint の機能を反映し、調査のエクスペリエンスについて説明します。
+事前に作成されたシミュレーションを探している場合は、"Do It [Yourself" 攻撃シナリオを使用できます](https://security.microsoft.com/tutorials/all)。 これらのスクリプトは安全で文書化され、使いやすいです。 これらのシナリオは、Defender for Endpoint の機能を反映し、調査のエクスペリエンスについて説明します。
 
 
 >[!NOTE]

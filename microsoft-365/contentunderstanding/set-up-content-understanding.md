@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Project Cortex のコンテンツ理解をセットアップする
-ms.openlocfilehash: 7589003505aafb480872b14a09c383cfbe0dff40
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 7497d21cc85449ee2141ac1362f82d092f150b4b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683555"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544711"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -99,7 +99,7 @@ Ai builder の容量は、[ [AI ビルダー電卓](https://powerapps.microsoft.
 
     [**次へ**] をクリックします。
 
-5. **コンテンツセンターの作成** ページで、ユーザーがドキュメント理解モデルを作成して管理することができるように、SharePoint コンテンツセンターサイトを作成できます。
+5. **コンテンツセンターの作成** ページで、ユーザーがドキュメント理解モデルを作成して管理することができるように、SharePoint コンテンツセンターサイトを作成できます。 以前に SharePoint 管理センターからコンテンツ センターを作成した場合は、その情報がここに表示されるので、**[次へ]** を選択するだけです。
 
     1. [**サイト名**] に、コンテンツ センター サイトの名前を入力します。
     

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34ebbf0369928067322486ba988b7faa07e1b2be
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: ef5402ac782f856a96c27ed745a8c1ecf93813ca
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596328"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543571"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint 展開の計画 
 
@@ -30,7 +30,7 @@ ms.locfileid: "53596328"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
 Microsoft Defender for Endpoint の展開を計画して、スイート内のセキュリティ機能を最大限に活用し、企業をサイバー脅威からより良く保護できます。
 
@@ -74,5 +74,5 @@ Defender for Endpoint は、サービスにオンボードできるさまざま�
 
 
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [展開フェーズ](deployment-phases.md)

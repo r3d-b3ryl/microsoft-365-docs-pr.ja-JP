@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 8fcf0491629a068f1ebc97e226a2c9b05e306cbf
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 8b0065b2d73dd0051c3230e292265676d05498d0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289513"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544819"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>エンドポイント向け Microsoft Defender への切り替え - フェーズ 3: オンボード
 
@@ -52,9 +52,9 @@ ms.locfileid: "53289513"
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>デバイスを Microsoft Defender for Endpoint にオンボードする
 
-1. [パスワード] ( ) にMicrosoft Defender セキュリティ センター [https://securitycenter.windows.com](https://securitycenter.windows.com) し、サインインします。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
-2. [デバイス **設定**  >  **オンボーディング]**  >  **を選択します**。 
+2. **[設定**  >  **オンボーディング]**  >  **を選択します**([デバイス **管理] の下)。** 
 
 3. [オンボード **プロセスを開始するオペレーティング システムの選択] ボックスの一覧で** 、オペレーティング システムを選択します。 
 
@@ -69,7 +69,7 @@ ms.locfileid: "53289513"
 | Windows 10     | [グループ ポリシー](configure-endpoints-gp.md)<p>[構成マネージャー](configure-endpoints-sccm.md)<p>[モバイル デバイス管理 (Intune)](configure-endpoints-mdm.md)<p>[ローカル スクリプト](configure-endpoints-script.md) <p>**注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。         |
 | Windows 8.1 Enterprise <p>Windows 8.1 Pro <p>Windows 7 SP1 Enterprise <p>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<p>**注**: Microsoft Monitoring Agent Azure Log Analytics エージェントです。 詳細については [、「Log Analytics エージェントの概要」を参照してください](/azure/azure-monitor/platform/log-analytics-agent)。        |
 | Windows Server 2019 以降 <p>Windows Server 2019 Core Edition <p>Windowsサーバー バージョン 1803 以降 | [ローカル スクリプト](configure-endpoints-script.md) <p>[グループ ポリシー](configure-endpoints-gp.md) <p>[構成マネージャー](configure-endpoints-sccm.md) <p>[System Center Configuration Manager](configure-endpoints-sccm.md) <p>[永続的でないデバイスの VDI オンボーディング スクリプト](configure-endpoints-vdi.md) <p>**注**: ローカル スクリプトは概念実証に適していますが、実稼働環境での展開には使用できません。 実稼働展開の場合は、グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager Intune を使用することをお勧めします。    |
-| Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Microsoft Defender セキュリティ センター](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
+| Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Microsoft 365 Defender ポータル](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
 | macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave) | [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)  |
 | iOS | [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)  |
 | Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS 以上の LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)  |
@@ -151,5 +151,5 @@ Defender for Endpoint にオンボードし、以前の Microsoft 以外のソ�
 
 **おめでとう** ございます! Defender for Endpoint への [移行が完了しました](switch-to-microsoft-defender-migration.md#the-migration-process)。 
 
-- [[セキュリティ操作] ダッシュボードの](security-operations-dashboard.md)[Microsoft Defender セキュリティ センター ] にアクセスします [https://securitycenter.windows.com](https://securitycenter.windows.com) 。 
+- [ポータル () のセキュリティ](security-operations-dashboard.md)操作ダッシュボードにMicrosoft 365 Defenderします [https://security.microsoft.com](https://security.microsoft.com) 。 
 - [エンドポイントの Defender の管理、移行後](manage-atp-post-migration.md)。
