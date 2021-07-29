@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 4254c5ea24d8c901ac5f6337b0c626afe02747e2
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 758dd66f9f1d124cbf2966a665a69fba4238b22f
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926645"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53594888"
 ---
 # <a name="evaluate-controlled-folder-access"></a>制御されたフォルダー アクセスを評価する
 
@@ -29,7 +29,7 @@ ms.locfileid: "52926645"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
 [フォルダー アクセスの制御は](controlled-folders.md) 、疑わしいアプリや悪意のあるアプリによる変更からドキュメントやファイルを保護する機能です。 フォルダー アクセスの制御は、サーバー 2019 WindowsクライアントでWindows 10されます。
@@ -76,6 +76,6 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 ## <a name="see-also"></a>関連項目
 
-* [フォルダー アクセスを制御して重要なフォルダーを保護する](controlled-folders.md)
+* [フォルダーへのアクセス制御で重要なフォルダーを保護する](controlled-folders.md)
 * [Microsoft Defender for Endpoint の評価](evaluate-mde.md)
 * [監査モードを使用する](audit-windows-defender.md)

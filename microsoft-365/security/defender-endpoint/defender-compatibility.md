@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/06/2021
 ms.technology: mde
-ms.openlocfilehash: f5a0db755f919cb47c4cd284857ddf4e27d16996
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 744b68d3cbb910eca3d3cd5d47d94feb3581ae7c
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782887"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595680"
 ---
 # <a name="antivirus-solution-compatibility-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint とのウイルス対策ソリューションの互換性
 
@@ -33,7 +33,7 @@ ms.locfileid: "52782887"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
 
 Microsoft Defender for Endpoint エージェントは、ファイルMicrosoft Defender ウイルス対策機能の種類によって異なります。
 

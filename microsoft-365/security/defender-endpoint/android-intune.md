@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c44993337a6b14dc2fa131de906c5fc6bde28fac
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 5a98dd096395435c52dea3e4a994b41a16e1a7a3
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289045"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591189"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開
 
@@ -170,7 +170,7 @@ Intune でサポートされる登録オプションの詳細については、�
        - 外部ストレージ (読み取り)
        - 外部ストレージ (書き込み)
 
-       次に [**OK**] を選びます。
+       次に **[OK]** を選択します。
 
        > [!div class="mx-imgBorder"]
       > ![Android 作成アプリ構成ポリシーのイメージ](images/android-create-app-config.png)
@@ -213,7 +213,7 @@ Defender for Endpoint は、Intune 経由で管理対象デバイスのデバイ
    - **完全管理、専用、および作業Corporate-Ownedプロファイル**
    - **個人所有の作業プロファイル**
 
-   **[作成]** を選択します。
+   [**作成**] を選択します。
 
    > ![デバイス構成プロファイルのイメージ作成](images/1autosetupofvpn.png)
 

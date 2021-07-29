@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: e393ff27b5bd918559346959fda65a057205e29d
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: d32bcdb3e17ccc7b94d47dd67f12c04d115da550
+  ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53543739"
+  ms.lasthandoff: 07/26/2021
+  ms.locfileid: "53591093"
 title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -77,9 +77,9 @@ sections:
 
       |:--|:--|:--|
 
-      |JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|D3E037E1-3EB8-44C8-A917-57927947596D|非サポート|
+      |JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|D3E037E1-3EB8-44C8-A917-57927947596D|サポートされていません|
 
-      |WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|非サポート|
+      |WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|サポートされていません|
 
 
       ASR ルールの除外は、ワイルドカード、パス、および環境変数をサポートします。 ASR ルールでワイルドカードを使用する方法の詳細については、「ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する [」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。

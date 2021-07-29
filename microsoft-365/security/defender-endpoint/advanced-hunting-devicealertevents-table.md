@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: f4f6ecdc57d8602f49fb389c741c5e01dc1b41b5
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: ae462235bcc2f2673f8a5ec1ea353f9bd9707918
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939650"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591261"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -33,30 +33,31 @@ ms.locfileid: "51939650"
 
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 高度 `DeviceAlertEvents` な検索スキーマの[表](advanced-hunting-overview.md)には、このスキーマのアラートに関する情報Microsoft Defender セキュリティ センター。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 
 高度なハンティング スキーマの他のテーブルの詳細については、高度なハンティング [スキーマリファレンスを参照してください](advanced-hunting-schema-reference.md)。
 
-| 列名 | データ型 | 説明 |
-|-------------|-----------|-------------|
-| `AlertId` | string | アラートの一意識別子 |
-| `Timestamp` | datetime | イベントが記録された日付と時刻 |
-| `DeviceId` | string | サービス内のデバイスの一意の識別子 |
-| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
-| `Severity` | 文字列 | アラートで識別された脅威インジケーターまたは侵害アクティビティの起こりうる影響 (高、中、低) を示します。 |
-| `Category` | 文字列 | アラートで識別された脅威インジケーターまたは侵害アクティビティの種類 |
-| `Title` | 文字列 | アラートのタイトル |
-| `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
-| `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
-| `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
-| `RemoteIP` | 文字列 | に接続されていた IP アドレス |
-| `AttackTechniques` | string | MITRE ATT&をトリガーしたアクティビティに関連付けられた CK テクニックを使用します。 |
-| `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を and 列と組み合わせて `DeviceName` 使用する必要 `Timestamp` があります。 |
-| `Table` | 文字列 | イベントの詳細を含むテーブル |
+|列名|データ型|説明|
+|---|---|---|
+|`AlertId`|string|アラートの一意識別子|
+|`Timestamp`|datetime|イベントが記録された日付と時刻|
+|`DeviceId`|string|サービス内のデバイスの一意の識別子|
+|`DeviceName`|string|デバイスの完全修飾ドメイン名 (FQDN)|
+|`Severity`|文字列|アラートで識別された脅威インジケーターまたは侵害アクティビティの起こりうる影響 (高、中、低) を示します。|
+|`Category`|文字列|アラートで識別された脅威インジケーターまたは侵害アクティビティの種類|
+|`Title`|文字列|アラートのタイトル|
+|`FileName`|文字列|記録されたアクションが適用されたファイルの名前|
+|`SHA1`|文字列|記録されたアクションが適用されたファイルの SHA-1|
+|`RemoteUrl`|文字列|に接続されていた URL または完全修飾ドメイン名 (FQDN)|
+|`RemoteIP`|文字列|に接続されていた IP アドレス|
+|`AttackTechniques`|string|MITRE ATT&をトリガーしたアクティビティに関連付けられた CK テクニックを使用します。|
+|`ReportId`|long|繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を and 列と組み合わせて `DeviceName` 使用する必要 `Timestamp` があります。|
+|`Table`|文字列|イベントの詳細を含むテーブル|
 
 ## <a name="related-topics"></a>関連項目
+
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-reference.md)

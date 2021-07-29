@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a0718f8e3aba27e6fbfc92a4308278f4c629275f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 14c06cbfe8913f24082bccc6e0f607f871043425
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843796"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591165"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前はMicrosoft Flow)、Azure Functions
 
@@ -33,7 +33,7 @@ ms.locfileid: "52843796"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 セキュリティ手順の自動化は、最新のセキュリティ 運用センターの標準要件です。 専門的なサイバー防御者がいないので、SOC は最も効率的な方法で作業し、自動化が必要です。 Microsoft Power Automateは、このために正確に構築されたさまざまなコネクタをサポートしています。 数分以内にエンドツーエンドのプロシージャオートメーションを構築できます。
 
@@ -55,7 +55,7 @@ Microsoft Defender API には、多くの機能Flow公式のコネクタがあ�
 
     ![編集資格情報のイメージ2](images/api-flow-1.png)
 
-3. ユーザーの名前を選択Flowトリガーとして "Microsoft Defender ATPトリガー" を検索し、新しいアラート トリガーを選択します。
+3. ユーザーの名前を選択しFlow"Microsoft Defender ATP Triggers" をトリガーとして検索し、新しいアラート トリガーを選択します。
 
     ![編集資格情報のイメージ3](images/api-flow-2.png)
 
@@ -69,7 +69,7 @@ Microsoft Defender API には、多くの機能Flow公式のコネクタがあ�
 
 ### <a name="get-the-alert-entity-using-the-connector"></a>コネクタを使用して Alert エンティティを取得する
 
-1. 新 **しいMicrosoft Defender ATP** を選択します。
+1. 新しい **手順で [Microsoft Defender ATP]** を選択します。
 
 2. [アラート **] - [単一のアラート API を取得する] を選択します**。
 
@@ -83,7 +83,7 @@ Microsoft Defender API には、多くの機能Flow公式のコネクタがあ�
 
 2. アラートの重大度が High に **等しいか確認** します。
 
-   [はい] の場合Microsoft Defender ATP **コンピューター** の操作を [コンピューター ID とコメントで分離する] を追加します。
+   [はい] の場合は **、[コンピューター ID]** とコメントを含む Microsoft Defender ATP - [コンピューターの分離] アクションを追加します。
 
     ![資格情報の編集のイメージ6](images/api-flow-5.png)
 

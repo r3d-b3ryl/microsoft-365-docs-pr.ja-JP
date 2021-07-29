@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7f8d3b10cee0b3c4a561dfd1f7567fa9818e7686
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 91e57b9941764d5f26ae47e137f584cd9f2c5f5d
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289465"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595764"
 ---
 # <a name="create-alert-api"></a>アラート API の作成
 
@@ -31,7 +31,7 @@ ms.locfileid: "53289465"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -75,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 Content-Type | 文字列 | application/json. **必須**
@@ -91,7 +91,7 @@ reportId | String | 高度な狩猟から取得したイベントの reportId。
 machineId | String | イベントが識別されたデバイスの ID。 **必須**
 severity | String | アラートの重大度。 プロパティの値は、'Low'、'Medium'、および 'High' です。 **必須**
 title | String | アラートのタイトル。 **必須**
-説明 | String | アラートの説明。 **必須**
+description | String | アラートの説明。 **必須**
 recommendedAction| String | アラートの分析時にセキュリティ担当者が実行するアクションを推奨します。 **必須**
 category| String | アラートのカテゴリ。 プロパティの値は、"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"エクスプロイト"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" が必要です。
 

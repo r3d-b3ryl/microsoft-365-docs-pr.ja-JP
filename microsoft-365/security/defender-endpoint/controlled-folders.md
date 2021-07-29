@@ -17,14 +17,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: c60620d2a589c8473764b810d1fcb0e24f674451
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 82cc897cf8ae2289c83111a27bb8d82b401a86c9
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904058"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595752"
 ---
-# <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダー アクセスを制御して重要なフォルダーを保護する
+# <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダーへのアクセス制御で重要なフォルダーを保護する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "52904058"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>フォルダー アクセスの制御とは
 
@@ -89,9 +89,9 @@ Windowsシステム フォルダーは、既定で保護され、他のいくつ
 
 フォルダー アクセスの制御には、リアルタイムMicrosoft Defender ウイルス対策[を有効にする必要があります](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Defender ポータルで管理されたフォルダー アクセス イベントMicrosoft 365確認する
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>管理されたフォルダー アクセス イベントを Microsoft 365 Defenderする
 
-Defender for Endpoint は、イベントとブロックに関する詳細[](investigate-alerts.md)なレポートを、Microsoft 365 Defender ポータルのアラート調査シナリオの一部として提供します。 [(「Microsoft Defender for Endpoint in Microsoft 365」を参照](../defender/microsoft-365-security-center-mde.md)してください。
+Defender for Endpoint は、イベントとブロックに関する詳細[](investigate-alerts.md)なレポートを、イベント ポータルのアラート調査シナリオの一部Microsoft 365 Defenderします。 [(「Microsoft Defender for Endpoint in Microsoft 365 Defender」を参照](../defender/microsoft-365-security-center-mde.md)してください。
 
 高度な検索を使用して、Microsoft Defender for Endpoint データ [を照会できます](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)。 監査モード[を使用している](audit-windows-defender.md)場合は、高度な検索[](advanced-hunting-overview.md)を使用して、フォルダー アクセスの制御設定が有効になっている場合に環境に与える影響を確認できます。
 
@@ -107,7 +107,7 @@ DeviceEvents
 次のイベント ログWindows確認して、フォルダー アクセス ブロック (または監査) の制御時に作成されるイベントをアプリで確認できます。
 
 1. 評価パッケージ [をダウンロードし](https://aka.ms/mp7z2w) 、デバイス上 *cfa-events.xmlアクセスしやすい* 場所にファイルを抽出します。
-2. [**スタート] メニューに**「イベント ビューアー」と入力し、イベント ビューアー Windows開きます。
+2. [**イベント ビューアー]** と入力スタート メニューイベント ビューアー Windows開きます。
 3. 左側のパネルの [アクション] **で、[** カスタム ビュー **のインポート... を選択します**。
 4. 抽出した場所に *移動cfa-events.xml選択* します。 または [、XML を直接コピーします](event-views.md)。
 5. **[OK]** を選択します。

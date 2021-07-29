@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4cf60ea73ea907be9c10b2dd9562a0ea60127f2d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2b0b987f12888de6c04d33f711112bf2e400d448
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289897"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591297"
 ---
 # <a name="collect-investigation-package-api"></a>調査パッケージ API の収集
 
@@ -32,12 +32,11 @@ ms.locfileid: "53289897"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## <a name="api-description"></a>API の説明
 
@@ -51,10 +50,10 @@ ms.locfileid: "53289897"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については [、「Use Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション | Machine.CollectForensics | 'collect forensics'
-委任 (職場または学校のアカウント) | Machine.CollectForensics | 'collect forensics'
+アプリケーション|Machine.CollectForensics|'collect forensics'
+委任 (職場または学校のアカウント)|Machine.CollectForensics|'collect forensics'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -70,18 +69,18 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前|種類|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
-Content-Type | string | application/json. **必須**
+Authorization|String|ベアラー {token}。 **必須**
+Content-Type|string|application/json. **必須**
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 種類 | 説明
+パラメーター|種類|説明
 :---|:---|:---
-コメント | 文字列 | アクションに関連付けるコメント。 **必須**
+コメント|文字列|アクションに関連付けるコメント。 **必須**
 
 ## <a name="response"></a>応答
 

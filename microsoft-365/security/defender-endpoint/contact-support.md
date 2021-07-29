@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b4954906ace6e2171a18e23a4eb64c66e1cf844
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 1c65b4b617ce0d1f156f7bf078ebac1f03706f88
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543388"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595788"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
 
@@ -32,7 +32,7 @@ ms.locfileid: "53543388"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint は最近、サポート プロセスをアップグレードして、よりモダンで高度なサポート エクスペリエンスを提供しました。 
 
@@ -83,9 +83,10 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 > Microsoft とのパーミエ サポート契約がある場合は、ウィジェットにプレミア タグが表示されます。 設定されていない場合は、Microsoft アカウント マネージャーに問い合わせください。
 
 ### <a name="contact-support"></a>サポートにお問い合せください
-このオプションは、ヘッドセットのように見えるアイコンをクリックして使用できます。 その後、サポート ケースを提出する次のページが表示されます。サポート :::image type="content" source="../../media/contactsupport2.png" alt-text="2 に問い合わせ":::
+このオプションは、ヘッドセットのように見えるアイコンをクリックして使用できます。 次に、サポート ケースを提出する次のページが表示されます。 </br>
 
-![サービス要求ウィジェットを開くイメージ](images/contact-support-screen.png)
+:::image type="content" source="../../media/contactsupport2.png" alt-text="連絡先のサポート 2"::: </br>
+
 
 1. 直面している問題のタイトルと説明、およびお客様に連絡する可能性がある電話番号と電子メール アドレスを入力します。
 
@@ -94,6 +95,6 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 3. 該当する場合は、タイム ゾーンと別の言語を選択します。 要求は Microsoft サポート チームに送信されます。 チームは、サービス要求にまもなく応答します。
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [サービスに関する問題のトラブルシューティング](troubleshoot-mdatp.md)
 - [サービス正常性の確認](service-status.md)

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium で、管理者のヘルプ、オンライン サポート、または電話でのサポートを受けるためには、ビジネス サブスクリプションの管理者であることが必要です。
-ms.openlocfilehash: c33506a17ea7c99902025b613e27168606e7ff03
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 982c36ba5c941b2269fbdc59a66fa65e1baa903c
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394823"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595020"
 ---
 # <a name="get-support"></a>サポートを受ける
 
@@ -46,15 +46,11 @@ ms.locfileid: "53394823"
 
 オンラインでのお問い合わせを開始すると、時間が節約されます。ここでは、解決策の検索やテクニカル サポートへの連絡をお手伝いします。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーが管理者ではないことを意味します。(詳細については、「[Who has admin permissions in my business? (社内の管理者アクセス許可の所有者)](admin-center-overview.md#who-has-admin-permissions-in-my-business)」を参照してください。)
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーが管理者ではないことを意味します。(詳細については、「[Who has admin permissions in my business? (社内の管理者アクセス許可の所有者)](admin-center-overview.md#who-has-admin-permissions-in-my-business)」を参照してください。)
 
-2. [**ヘルプが必要ですか?**] ボタンを選択します。 
+1. 問題が解決されない場合は、[**サポートに問い合わせる**] を選択します。
 
-3. [**ヘルプが必要ですか?**] ウィンドウで、必要なヘルプの内容を入力し、[**Enter**] を押します。
-
-4. 問題が解決されない場合は、[**サポートに問い合わせる**] を選択します。
-
-5. 問題の説明を入力し、自分の連絡先番号とメール アドレスを確認し、希望する連絡方法を選択し、[**連絡を希望する**] を選択します。 ご連絡を差し上げるまでにかかる予想時間は、[**ヘルプが必要ですか?**] ウィンドウに表示されます。
+1. 問題の説明を入力し、自分の連絡先番号とメール アドレスを確認し、希望する連絡方法を選択し、[**連絡を希望する**] を選択します。 ご連絡を差し上げるまでにかかる予想時間は、[**ヘルプが必要ですか?**] ウィンドウに表示されます。
 
 ## <a name="phone-support"></a>電話によるサポート
 

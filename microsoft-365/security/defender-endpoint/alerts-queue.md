@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Alerts キューの表示と整理
+title: Microsoft Defender for Endpoint アラート キューを表示して整理する
 description: Microsoft Defender for Endpoint アラート キューの動作と、アラートの一覧を並べ替えてフィルター処理する方法について説明します。
 keywords: アラート、キュー、アラート キュー、並べ替え、順序、フィルター、アラートの管理、新規、進行中、解決済み、最新、キュー内の時間、重大度、期間、Microsoft 脅威専門家のアラート
 search.product: eADQiWindows 10XVcnh
@@ -17,21 +17,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 48a3ff8dba5bccd62d7d43b295c136a814056a15
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4570e04b53f5469242f1c05d808e6aae80663b6d
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934335"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591273"
 ---
-# <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Microsoft Defender for Endpoint Alerts キューの表示と整理
+# <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Microsoft Defender for Endpoint アラート キューを表示して整理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 - [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink)
 
 アラート **キューには** 、ネットワーク内のデバイスからフラグが設定されたアラートの一覧が表示されます。 既定では、キューには、グループ化されたビューで過去 30 日間に表示されたアラートが表示されます。 最新のアラートがリストの上部に表示され、最新のアラートを最初に確認できます。
 
@@ -54,7 +54,7 @@ ms.locfileid: "51934335"
 
 次のフィルターを適用して、アラートの一覧を制限し、より集中してアラートを表示できます。
 
-### <a name="severity"></a>重要度
+### <a name="severity"></a>重大度
 
 アラートの重大度 | 説明
 :---|:---
@@ -86,13 +86,13 @@ Defender for Endpoint アラートの重大度は、検出された動作の重�
 
 | 新しいカテゴリ       | API カテゴリ名   | 検出された脅威のアクティビティまたはコンポーネント                                                                                                 |
 |----------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Collection           | Collection          | エクスフィルトレーション用のデータの検索と収集                                                                                         |
+| コレクション           | コレクション          | エクスフィルトレーション用のデータの検索と収集                                                                                         |
 | コマンドとコントロール  | CommandAndControl   | 攻撃者が制御するネットワーク インフラストラクチャに接続してデータを中継したり、コマンドを受信したりする                                          |
 | 資格情報へのアクセス    | CredentialAccess    | ネットワーク内のデバイスや他のリソースに対する制御を拡張するための有効な資格情報の取得                                       |
 | 防御回避      | DefenseEvasion      | たとえば、セキュリティ アプリのオフ、インプラントの削除、ルートキットの実行によるセキュリティ制御の回避                        |
-| Discovery            | Discovery           | 管理者コンピューター、ドメイン コントローラー、ファイル サーバーなどの重要なデバイスとリソースに関する情報の収集  |
+| 検出            | 検出           | 管理者コンピューター、ドメイン コントローラー、ファイル サーバーなどの重要なデバイスとリソースに関する情報の収集  |
 | 実行            | 実行           | 攻撃者ツールと悪意のあるコード (RAT やバックドアを含む) の起動                                                             |
-| Exfiltration         | Exfiltration        | ネットワークから外部の攻撃者が制御する場所へのデータの抽出                                                         |
+| 流出         | 流出        | ネットワークから外部の攻撃者が制御する場所へのデータの抽出                                                         |
 | Exploit              | Exploit             | コードの悪用と悪用の可能性のあるアクティビティ                                                                                       |
 | 初期アクセス       | InitialAccess       | ターゲット ネットワークへの最初のエントリを取得する (通常はパスワード推測、悪用、フィッシングメールを含む)                      |
 | 横方向の動き     | LateralMovement     | ターゲット ネットワーク内のデバイス間を移動して重要なリソースに到達するか、ネットワークの永続性を得る                                |

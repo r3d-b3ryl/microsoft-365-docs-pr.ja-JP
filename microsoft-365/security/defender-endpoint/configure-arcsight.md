@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a52f810647c387c5a5726b9d31998c34add4092e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c8397731941a3344638edb0b57e77272f4fae930
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166187"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590997"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>エンドポイント検出用の Defender をプルする Micro Focus ArcSight の構成
 
@@ -32,11 +32,12 @@ ms.locfileid: "51166187"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink)
 
 エンドポイント検出用の Defender を取得するために、Micro Focus ArcSight を使用する一部のファイルとツールをインストールして構成する必要があります。
 
->[!Note]
+> [!NOTE]
+>
 >- [Defender for Endpoint Alert](alerts.md) は、1 つ以上の検出から構成されます。
 >- [エンドポイント検出の Defender は](api-portal-mapping.md) 、デバイスで発生した疑わしいイベントとその関連するアラートの詳細から構成されます。
 
@@ -88,7 +89,6 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
    - WDATP-connector.properties: C: folder_location \\ \current\user\agent\flexagent\
 
    > [!NOTE]
-   > 
    > 構成ファイルは、この場所に置く必要があります *。folder_locationツールを* インストールした場所を表します。
 
 4. コア コネクタのインストールが完了すると、[コネクタのセットアップ] ウィンドウが開きます。 [コネクタのセットアップ] ウィンドウで、[コネクタの **追加] を選択します**。
@@ -97,47 +97,32 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
 
 6. パラメーターの詳細フォームに次の情報を入力します。 フォーム内の他のすべての値は省略可能で、空白のままにすることができます。
 
-   <table>
-    <tbody style="vertical-align:top;">
-    <tr>
-    <th>フィールド</th>
-    <th>値</th>
-    </tr>
-    <tr>
-    <td>構成ファイル</td>
-    <td>クライアント プロパティ ファイルの名前を入力します。 名前は、ダウンロードしたファイルに含.zip一致する必要があります。
-たとえば、flexagent ディレクトリの構成ファイルの名前がWDATP-Connector.jsonparser.properties の場合は、クライアント プロパティ ファイルの名前として &quot; &quot; &quot; &quot; &quot; WDATP-Connector と入力 &quot; する必要があります。</td>
-    </tr>
-    <td>イベント URL</td>
-    <td>データセンターの場所に応じて、EU または米国の URL を選択します。 </br></br> <b>EU の</b>場合 : <i></i> https:// wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME <br>
-   </br><b>米国の場合:</b> https:// <i></i> wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME <br> <br> <b>英国 :</b>https:// <i></i> wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME</td>
-    <tr>
-    <td>認証の種類</td>
-    <td>OAuth 2</td>
-    </tr>
-    <td>OAuth 2 クライアント プロパティ ファイル</td>
-    <td><em>wdatp-connector.properties ファイルの場所を参照</em>します。 名前は、ダウンロードしたファイルに含.zip一致する必要があります。</td>
-    <tr>
-    <td>更新トークン</td>
-    <td>更新トークンは <b>、SIEM</b> 設定ページから更新トークンを生成するか、restutil ツールを使用する方法の 2 つの方法で取得できます。 <br><br> Preferences セットアップから更新トークンを生成する方法<b></b>の詳細については、「Defender for Endpoint で SIEM 統合を有効<a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)">にする」を参照してください</a>。 </br> </br><b>restutil ツールを使用して更新トークンを取得します。</b> </br> a. コマンド プロンプトを開きます。 ツールをインストールした場所<em>folder_location\current\bin</em>folder_location C:\ に移動します。 <em></em> </br></br> b. Type: <code>arcsight restutil token -config</code> from the bin directory.たとえば <b>、arcsight restutil boxtoken -proxy proxy.location.hp.com:8080</b> Web ブラウザー ウィンドウが開きます。 </br> </br>c. 資格情報を入力し、パスワード フィールドをクリックしてページをリダイレクトします。 ログイン プロンプトで、資格情報を入力します。 </br> </br>d. 更新トークンがコマンド プロンプトに表示されます。 </br></br> e. [トークンの更新] フィールドに <b>コピーして貼り付</b> けます。
-    </td>
-    </tr>
-    </tr>
-    </table><br/>
-    
+   <br>
+
+   ****
+
+   |フィールド|値|
+   |---|---|
+   |構成ファイル|クライアント プロパティ ファイルの名前を入力します。 名前は、ダウンロードしたファイルに含.zip一致する必要があります。 <p> たとえば、"flexagent" ディレクトリの構成ファイルの名前が "WDATP-Connector.jsonparser.properties" の場合は、クライアント プロパティ ファイルの名前として "WDATP-Connector" と入力する必要があります。|
+   |イベント URL|データセンターの場所に応じて、EU または米国の URL を選択します。 <ul><li>**EU の場合**:  `https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**米国の場合**: `https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**英国の場合**: `https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
+   |認証の種類|OAuth 2|
+   |OAuth 2 クライアント プロパティ ファイル|*wdatp-connector.properties ファイルの場所を参照* します。 名前は、ダウンロードしたファイルに含.zip一致する必要があります。|
+   |更新トークン|更新トークンは **、SIEM** 設定ページから更新トークンを生成するか、restutil ツールを使用する方法の 2 つの方法で取得できます。 <p> Preferences セットアップから更新トークンを生成する方法の詳細については、「Defender for Endpoint で SIEM 統合を有効[にする」を参照してください](enable-siem-integration.md)。 <p> **restutil ツールを使用して更新トークンを取得します**。 <ol><li>コマンド プロンプトを開きます。 [C: フォルダーの場所\current\bin] に移動し、フォルダーの場所はツールをインストール \\ した場所を表 *\_* します。 *\_*</li><li>Type: `arcsight restutil token -config` from the bin directory. たとえば **、arcsight restutil boxtoken -proxy proxy.location.hp.com:8080。** Web ブラウザー ウィンドウが開きます。</li><li>資格情報を入力し、パスワード フィールドをクリックしてページをリダイレクトします。 ログイン プロンプトで、資格情報を入力します。</li><li>更新トークンがコマンド プロンプトに表示されます。</li><li>[トークンの更新] フィールドに **コピーして貼り付** けます。|
+   |
+
 7. コネクタによってブラウザー ウィンドウが開きます。 アプリケーション資格情報を使用してログインします。 ログイン後、OAuth2 クライアントにアクセス許可を与えるメッセージが表示されます。 コネクタ構成を認証するには、OAuth 2 クライアントにアクセス許可を与える必要があります。
 
    https <code>redirect_uri</code> URL の場合は、ローカル ホスト上の URL にリダイレクトされます。 ローカル ホストで実行されているコネクタによって提供される証明書を信頼する要求をするページが表示されます。 証明書が https の場合は、この証明書redirect_uri必要があります。
-   
+
    ただし、証明書の http URL を指定redirect_uri、証明書の信頼に同意する必要はございません。
 
 8. [Micro Focus ArcSight Connector Setup] ウィンドウに戻って、コネクタのセットアップを続行します。
 
 9. 移動先 **として ArcSight Manager (暗号化)** を選択し、[次へ] を **クリックします**。
 
-10. [マネージャーのホスト名] に宛先 IP/ホスト名を **入力** し、パラメーター フォームに資格情報を入力します。 フォーム内の他のすべての値は、既定値と一緒に保持する必要があります。 **[次へ]** をクリックします。
+10. [マネージャーのホスト名] に宛先 IP/ホスト名を **入力** し、パラメーター フォームに資格情報を入力します。 フォーム内の他のすべての値は、既定値と一緒に保持する必要があります。 [**次へ**] をクリックします。
 
-11. コネクタの詳細フォームにコネクタの名前を入力します。 フォーム内の他のすべての値は省略可能で、空白のままにすることができます。 **[次へ]** をクリックします。
+11. コネクタの詳細フォームにコネクタの名前を入力します。 フォーム内の他のすべての値は省略可能で、空白のままにすることができます。 [**次へ**] をクリックします。
 
 12. ESM Manager インポート証明書ウィンドウが表示されます。 [証明書 **を宛先からコネクタにインポートする] を選択し、[** 次へ] を **クリックします**。 [ **コネクタの概要の追加]** ウィンドウが表示され、証明書がインポートされます。
 
@@ -145,9 +130,9 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
 
 14. [サービス **としてインストール] を選択し、[** 次へ] を **クリックします**。
 
-15. [サービスの内部名] **フィールドに名前を入力** します。 フォーム内の他のすべての値は、既定値または空白のままにして保持できます。 **[次へ]** をクリックします。
+15. [サービスの内部名] **フィールドに名前を入力** します。 フォーム内の他のすべての値は、既定値または空白のままにして保持できます。 [**次へ**] をクリックします。
 
-16. サービス パラメーターを入力し、[次へ] を **クリックします**。 [サービスの概要の **インストール] ウィンドウが** 表示されます。 **[次へ]** をクリックします。
+16. サービス パラメーターを入力し、[次へ] を **クリックします**。 [サービスの概要の **インストール] ウィンドウが** 表示されます。 [**次へ**] をクリックします。
 
 17. [終了] と [次へ] を **選択してインストール** を **完了します**。
 
@@ -177,12 +162,11 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
 
 9. [アクティブ なチャネル **セット] [**  >  **新しい条件**  >  **デバイスデバイス製品]**  >  **に移動します**。
 
-10. デバイス **製品を設定する = Microsoft Defender ATP。** イベントがツールに流れ込むのを確認した後、プロセスを再度停止し、[Windows サービス] に移動し、ArcSight FlexConnector REST を開始します。
+10. デバイス **製品を設定する = Microsoft Defender ATP**. イベントがツールに流れ込むのを確認した後、プロセスを再度停止し、[Windows サービス] に移動し、ArcSight FlexConnector REST を開始します。
 
 これで、Micro Focus ArcSight コンソールでクエリを実行できます。
 
 Defender for Endpoint detections は個別のイベントとして表示され、ベンダーは "Microsoft"、デバイス名は "Windows Defender ATP" として表示されます。
-
 
 ## <a name="troubleshooting-micro-focus-arcsight-connection"></a>Micro Focus ArcSight 接続のトラブルシューティング
 
@@ -206,6 +190,7 @@ Defender for Endpoint detections は個別のイベントとして表示され�
 > もう一度プロセスを停止して、コネクタが実行されている状態を確認します。 次に、コネクタを再度起動すると、ブラウザー ウィンドウは表示されません。
 
 ## <a name="related-topics"></a>関連項目
+
 - [Defender for Endpoint で SIEM 統合を有効にする](enable-siem-integration.md)
 - [SIEM ツールへの検出のプル](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)
 - [REST API を使用したエンドポイント検出用の Defender のプル](pull-alerts-using-rest-api.md)

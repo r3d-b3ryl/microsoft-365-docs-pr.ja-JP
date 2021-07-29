@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f980c7121a8796f2cf48cc85c401ed499b4b581b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: f998a39a1e6407e0f14530b6bb237bc8b6aba6fd
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542287"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591081"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender 用の異なるモバイル デバイス管理 (MDM) システムを使用した展開
 
@@ -68,7 +68,7 @@ Microsoft Defender for Endpoint on macOS は、ベンダー固有の機能に依
 
 ### <a name="package"></a>パッケージ
 
-インストール パッケージ[](mac-install-with-jamf.md)(wdav.pkg) をインストール パッケージからダウンロードして、必要なアプリケーション パッケージの展開[Microsoft Defender セキュリティ センター。](mac-install-with-jamf.md)
+インストール パッケージ[](mac-install-with-jamf.md)(wdav.pkg) をポータルからダウンロードして、必要なアプリケーション パッケージの[展開Microsoft 365 Defenderします](mac-install-with-jamf.md)。
 
 パッケージを企業に展開するには、MDM ソリューションに関連付けられている手順を使用します。
 
@@ -78,7 +78,7 @@ Microsoft Defender for Endpoint on macOS は、ベンダー固有の機能に依
 
 macOS 上の Microsoft Defender for Endpoint は macOS の一部では設定、MDM ソリューションは"Custom 設定 プロファイル" と呼ぶ場合があります。
 
-プロパティ リスト jamf/WindowsDefenderATPOnboarding.plist を使用します。これは、Microsoft Defender セキュリティ センター からダウンロードされたオンボーディング パッケージ[から抽出できます](mac-install-with-jamf.md)。
+プロパティ リスト jamf/WindowsDefenderATPOnboarding.plist を使用します。これは、Microsoft 365 Defender ポータルからダウンロードされたオンボーディング[パッケージから抽出できます](mac-install-with-jamf.md)。
 システムが XML 形式の任意のプロパティ リストをサポートしている場合があります。 その場合は、jamf/WindowsDefenderATPOnboarding.plist ファイルを as-is でアップロードできます。
 または、最初にプロパティ リストを別の形式に変換する必要があります。
 
@@ -116,7 +116,7 @@ KEXT またはカーネル拡張ポリシーを設定します。 Microsoft が�
 
 ### <a name="network-extension-policy"></a>ネットワーク拡張ポリシー
 
-エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft 365 セキュリティ センター ポータルに報告します。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイント検出および応答機能の一環として、macOS 上の Microsoft Defender for Endpoint はソケット トラフィックを検査し、この情報を Microsoft 365 Defenderします。 次のポリシーでは、ネットワーク拡張機能でこの機能を実行できます。
 
 - フィルターの種類: プラグイン
 - プラグイン バンドル識別子: `com.microsoft.wdav`

@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 7da28ea308994663549c2c490f53a3e0e75a0857
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: ba376288b759f9a9c331450f3f48c918b0171e51
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339264"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595692"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -180,12 +180,12 @@ ms.locfileid: "53339264"
 
 1. デバイスで管理者特権のコマンド ライン プロンプトを開きます。
    1. **[スタート]** をクリックし、「_cmd_」と入力します。
-   2. [コマンド プロンプト] を **右クリックし、[** 管理者として **実行] を選択します**。
+   2. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
 2. 次のコマンドを入力し、Enter キーを **押します**。
 
     ```console
-    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]
@@ -346,7 +346,7 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 
 - [クラウドによる保護](#cloud-delivered-protection)
 - [望ましくない可能性のあるアプリケーションの修復](#remediation-for-potentially-unwanted-applications)
-- [自動調査と修復](#automated-investigation-and-remediation)
+- [調査と修復の自動化](#automated-investigation-and-remediation)
 
 ### <a name="cloud-delivered-protection"></a>クラウドによる保護
 
