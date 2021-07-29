@@ -10,24 +10,21 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b65ad2a6ac1a9b9abe06cc108a980be21152bc86
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 99bfaf40ab2bce2878af76650f92dda9f528be59
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844960"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622114"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Autopilot と登録ステータス ページの初回実行時エクスペリエンス
 
 Microsoft マネージド デスクトップ[は、Windows](/windows/deployment/windows-autopilot/windows-autopilot)と Microsoft Intuneの登録状態ページ[(ESP)](/windows/deployment/windows-autopilot/enrollment-status)の両方を使用して、可能な限り最高の初回実行エクスペリエンスをユーザーに提供します。
 
-[登録の状態] ページは現在パブリック プレビュー中です。
-
 ## <a name="initial-deployment"></a>初期展開
 
 ESP エクスペリエンスを提供するには、デバイスをサービスに登録Microsoft マネージド デスクトップがあります。 登録の詳細については、「新[](../get-started/register-devices-self.md)しいデバイスを自分で登録する」または「デバイスを登録する[パートナー向け手順」を参照してください](../get-started/register-devices-partner.md)。
-
-デバイスがサービスに登録された後、管理ポータルを通じてサポート チケットを提出することで、Microsoft マネージド デスクトップ デバイスの ESP を[有効にできます](https://portal.azure.com/)。 チケットをファイルするときに、最初に ESP 構成をテスト グループに展開します。 24 時間ごとに他の後続の展開グループ (First、Fast、および Broad) に展開されます。 展開を一時停止するには、Operations に保留を求める別のチケットをファイルします。
+事前プロビジョニングされた展開の登録状態ページと自動パイロットは、既定で Microsoft マネージド デスクトップ。
 
 ## <a name="autopilot-profile-settings"></a>Autopilot プロファイルの設定
 
@@ -44,9 +41,9 @@ Microsoft マネージド デスクトップユーザーのデバイスに使用
 |言語 (地域)|ユーザーの選択|
 |キーボードを自動的に構成する|いいえ|
 |Microsoft ソフトウェア ライセンス条項|非表示|
-|プライバシーの設定|非表示|
+|プライバシー設定|非表示|
 |アカウントの変更オプションを非表示にする|Show|
-|ユーザー アカウントの種類|標準|
+|ユーザー アカウントの種類|Standard|
 |Allow White Glove OOBE|はい|
 |デバイス名テンプレートの適用|はい|
 |名前を入力する|MMD-%RAND:11%|
@@ -64,14 +61,13 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 |---|---|
 |アプリとプロファイルの構成の進行状況を表示する|はい|
 |インストール時間が指定した分数より長い場合にエラーを表示する|60|
-|制限時間エラーが発生した場合にカスタム メッセージを表示する|はい|
-|エラー メッセージ|はい、デバイスのセットアップに予想よりも少し時間がかかります。 以下をクリックして開始すると、バックグラウンドでの設定が完了します|
+|制限時間エラーが発生した場合にカスタム メッセージを表示する|いいえ|
 |インストール エラーに関するログの収集をユーザーに許可する|はい|
 |ページを既定のエクスペリエンス (OOBE) によってプロビジョニングされたデバイスにのみ表示する|はい|
 |すべてのアプリとプロファイルがインストールされるまでデバイスの使用をブロックする|はい|
 |インストール エラーが発生した場合、ユーザーにデバイスのリセットを許可する|はい|
 |インストール エラーが発生した場合、ユーザーにデバイスの使用を許可する|はい|
-|ユーザー/デバイスに割り当てられている場合、これらの必須アプリがインストールされるまでデバイスの使用をブロックする|モダン ワークプレース - 時間の修正|
+|ユーザー/デバイスに割り当てられている場合、これらの必須アプリがインストールされるまでデバイスの使用をブロックする|モダン ワークプレース - 時間の修正|モダン ワークプレース - クライアント ライブラリ|
 |
 
 登録状態ページのエクスペリエンスは、3 つのフェーズで発生します。 詳細については、「登録状態 [ページの追跡情報」を参照してください](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)。
@@ -88,14 +84,9 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 
 ![「デバイスの準備」フェーズと「デバイスセットアップ」フェーズを示す自動パイロットセットアップのスタート ページ。](../../media/mmd-autopilot-screenshot.png)
 
-## <a name="autopilot-for-pre-provisioned-deployment"></a>事前プロビジョニングされた展開の自動パイロット
-
-> [!NOTE]
-> Autopilot for pre-provisioned deployment in Microsoft マネージド デスクトップ現在パブリック プレビュー中です。
 
 ## <a name="additional-prerequisites-for-autopilot-for-pre-provisioned-deployment"></a>事前プロビジョニングされた展開のための Autopilot のその他の前提条件
 
-- 登録状態ページ (ESP) が有効になっている必要があります。 詳細については、「初期展開」 [を参照してください](#initial-deployment)。
 - デバイスに有線ネットワーク接続が必要です。
 - 2020 年 8 月より前に Microsoft マネージド デスクトップポータルを使用して登録されているデバイスがある場合は、登録を取りやめて再度登録します。
 - デバイスには、2020 年 11 月の累積的な更新プログラム[19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3)または[20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e)を含むファクトリ イメージが必要です。または最新の Microsoft マネージド デスクトップ イメージでイメージを再作成する必要があります。
@@ -130,7 +121,7 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 ### <a name="enrollment-status-page-settings-change"></a>登録状態ページの設定の変更
 
 - "インストールに指定した分数より長い時間がかかる場合にエラーを表示する" 設定の分数が長くなります。
-- 表示されるエラー メッセージ
+- 表示されるエラー メッセージ。
 - [ユーザー/デバイスに割り当てられている場合、必要なアプリがインストールされるまでデバイスの使用をブロックする] 設定でアプリケーションを追加または削除します。
 
 ## <a name="required-applications"></a>必須のアプリケーション
@@ -140,4 +131,4 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 - 必要なアプリケーションを、ユーザーがデバイスにサインインするときにすぐに必要なコア アプリケーションにのみ制限します。
 - アプリケーションのインストール フェーズ中にタイムアウトを回避するには、すべてのアプリケーションの合計サイズをまとめて 1 GB 以下にしてください。
 - 理想的には、アプリには依存関係を持つ必要があります。 依存関係が必要 *なアプリがある* 場合は、ESP 評価の一環としてアプリを構成、テスト、検証してください。
-- ESP のパブリック プレビューには、"user" コンテキスト (たとえば、Teams) を必要とするアプリケーションを含めません。
+- Microsoft Teams ESP に含めません。

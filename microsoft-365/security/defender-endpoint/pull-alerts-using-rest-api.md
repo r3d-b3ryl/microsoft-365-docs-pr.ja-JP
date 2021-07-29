@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6716b0eb029b49ec08cb52ebefc23e50b19036ca
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 90e63ead4debd7a5b7033f1a8c9d6b0fd50cfe81
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771671"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622053"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>SIEM REST API を使用したエンドポイント検出用の Microsoft Defender のプル
 
@@ -33,7 +33,7 @@ ms.locfileid: "52771671"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -107,7 +107,7 @@ Defender for Endpoint API への要求 *access_tokenフィールドの* 値を�
 アクセス トークンを使用すると、アプリは Microsoft Defender for Endpoint API に対して認証された要求を行います。 アプリで各要求の Authorization ヘッダーにアクセス トークンを追加する必要があります。
 
 ### <a name="request-syntax"></a>要求構文
-Method | 要求 URI
+メソッド | 要求 URI
 :---|:---|
 GET| 地域に適用可能な URI を使用します。 <br><br> **EU の場合**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **米国の場合**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **英国の場合**: `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
@@ -125,7 +125,7 @@ Authorization | string | 必須です。 Azure ADベアラー トークンとい
 sinceTimeUtc | DateTime | フィールドに基づいて、取得される下限時間のアラートを定義します。 <br> `LastProcessedTimeUtc` <br> 時間範囲は次の値です。sinceTimeUtc 時刻から現在の時刻までです。 <br><br> **注**: 指定しない場合、過去 2 時間に生成されたアラートはすべて取得されます。
 untilTimeUtc | DateTime | 取得される上限時間のアラートを定義します。 <br> 時間範囲は、次の場合に `sinceTimeUtc` 指定 `untilTimeUtc` します。 <br><br> **注**: 指定しない場合、既定値は現在の時刻になります。
 前 | string | 次の時間範囲のアラートを引き `(current_time - ago)` 出 `current_time` します。 <br><br> 値は ISO **8601 期間形式に従って** 設定する必要があります <br> 例: `ago=PT10M` 過去 10 分間に受信したアラートをプルします。
-limit | int | 取得するアラートの数を定義します。 最新のアラートは、定義された番号に基づいて取得されます。<br><br> **注**: 指定しない場合、時間範囲内で使用可能なすべてのアラートが取得されます。
+limit | 整数 | 取得するアラートの数を定義します。 最新のアラートは、定義された番号に基づいて取得されます。<br><br> **注**: 指定しない場合、時間範囲内で使用可能なすべてのアラートが取得されます。
 machinegroups | string | アラートをプルするデバイス グループを指定します。 <br><br> **注**: 指定しない場合、すべてのデバイス グループからのアラートが取得されます。 <br><br> 例: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | string | レジストリからの単一のデバイス タグ。
 CloudCreatedMachineTags | string | このページで作成されたデバイス Microsoft Defender セキュリティ センター。

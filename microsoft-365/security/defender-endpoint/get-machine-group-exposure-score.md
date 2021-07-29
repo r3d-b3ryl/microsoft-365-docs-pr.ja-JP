@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a7f343db64174fe3c48eaf8b584b03b53921edcb
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 243d29f460f0454d88c65baa0a9ed6bef9821733
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843616"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622666"
 ---
 # <a name="list-exposure-score-by-device-group"></a>デバイス グループ別の露出スコアの一覧表示
 
@@ -31,7 +31,7 @@ ms.locfileid: "52843616"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -45,22 +45,22 @@ ms.locfileid: "52843616"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
-:---|:---|:---
-アプリケーション | Score.Read.All | 'Read Threat and Vulnerability Management score'
-委任 (職場または学校のアカウント) | Score.Read | 'Read Threat and Vulnerability Management score'
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
+---|---|---
+アプリケーション|Score.Read.All|'Read Threat and Vulnerability Management score'
+委任 (職場または学校のアカウント)|Score.Read|'Read Threat and Vulnerability Management score'
 
 ## <a name="http-request"></a>HTTP 要求
 
-```
+```http
 GET /api/exposureScore/ByMachineGroups
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前        | 種類 | 説明
-|:--------------|:-------|:--------------|
-| Authorization | String | ベアラー {token}。**必須**。
+名前|種類|説明
+---|---|---
+|Authorization|String|ベアラー {token}。**必須**。
 
 ## <a name="request-body"></a>要求本文
 
@@ -72,20 +72,19 @@ Empty
 
 ## <a name="example"></a>例
 
-### <a name="request"></a>要求
+### <a name="example-request"></a>要求の例
 
 以下は、要求の例です。
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
 ```
 
-### <a name="response"></a>応答
+### <a name="example-response"></a>応答の例
 
 以下は、応答の例です。
 
 ```json
-
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#ExposureScore",
     "value": [

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 05c103cba051c7d5e7f45e5dd3feb288013ee367
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 1d1e001bd90592d51bf144908caf8afebdbaa80d
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454819"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622534"
 ---
 # <a name="manage-automation-folder-exclusions"></a>自動化フォルダーの除外を管理する 
 
@@ -32,7 +32,7 @@ ms.locfileid: "53454819"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
 オートメーション フォルダーの除外を使用すると、自動調査がスキップするフォルダーを指定できます。 
 
@@ -65,7 +65,7 @@ ms.locfileid: "53454819"
 
 3. フォルダーの詳細を入力します。
 
-    - Folder
+    - フォルダー
     - 拡張機能
     - ファイル名
     - 説明

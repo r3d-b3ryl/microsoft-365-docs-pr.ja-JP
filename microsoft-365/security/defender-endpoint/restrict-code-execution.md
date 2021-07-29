@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7195e91a3a9b7aef6977c925f2c8689d3e461815
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: f9990bc7cca76394c4e1afa37a74ecfaf9219da3
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771575"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622486"
 ---
 # <a name="restrict-app-execution-api"></a>アプリの実行 API の制限
 
@@ -33,62 +33,65 @@ ms.locfileid: "52771575"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>API の説明
+
 定義済みのセットを除くデバイス上のすべてのアプリケーションの実行を制限します。
 
-
 ## <a name="limitations"></a>制限事項
-1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
+1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   Machine.RestrictExecution | 'コードの実行を制限する'
-委任 (職場または学校のアカウント) | Machine.RestrictExecution | 'コードの実行を制限する'
+アプリケーション|Machine.RestrictExecution|'コードの実行を制限する'
+委任 (職場または学校のアカウント)|Machine.RestrictExecution|'コードの実行を制限する'
 
->[!Note]
+> [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
->- ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Active 修復アクション' (詳細については、「役割の作成と管理 [」](user-roles.md) を参照してください)
->- ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
+>
+> - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'Active 修復アクション' (詳細については、「役割の作成と管理 [」](user-roles.md) を参照してください)
+> - ユーザーは、デバイス グループ設定に基づいてデバイスにアクセスする必要があります (詳細については、「 [デバイス](machine-groups.md) グループの作成と管理」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/restrictCodeExecution
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前|種類|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
-Content-Type | string | application/json. **必須**
+Authorization|String|ベアラー {token}。 **必須**
+Content-Type|string|application/json. **必須**
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 種類    | 説明
+パラメーター|種類|説明
 :---|:---|:---
-コメント |   文字列 |    アクションに関連付けるコメント。 **必須**
+コメント|文字列|アクションに関連付けるコメント。 **必須**
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。
 
+成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request"></a>要求
 
 以下は、要求の例です。
 
@@ -100,7 +103,6 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 {
   "Comment": "Restrict code execution due to alert 1234"
 }
-
 ```
 
 - デバイスからコード実行制限を削除するには、「アプリの制限を [削除する」を参照してください](unrestrict-code-execution.md)。

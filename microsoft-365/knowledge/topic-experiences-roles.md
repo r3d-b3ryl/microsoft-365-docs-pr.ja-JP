@@ -1,7 +1,7 @@
 ---
-title: Microsoft Viva トピックのロール
-ms.author: efrene
-author: efrene
+title: ユーザーの役割Microsoft Viva トピック
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,14 +14,14 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: ビバ トピックのユーザー ロールについて説明します。
-ms.openlocfilehash: 9f1d3667ee9eeb05201613c15dc360b2b006cecb
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: e26f47e5826ac6db6c41e1b0648dd23398f51c43
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288073"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622294"
 ---
-# <a name="microsoft-viva-topics-roles"></a>Microsoft Viva トピックのロール 
+# <a name="roles-in-microsoft-viva-topics"></a>ユーザーの役割Microsoft Viva トピック
 
 特定の環境で Viva Topics をMicrosoft 365、ユーザーは次の役割を果たします。
 
@@ -54,9 +54,9 @@ ms.locfileid: "53288073"
 
 ## <a name="knowledge-managers"></a>知識マネージャー
 
-知識マネージャーとは、組織内のトピックを管理するユーザーのことです。  トピック管理は、トピック センターの [トピック管理] ページで行われ、知識マネージャーにのみ表示されます。
+知識マネージャーとは、組織内のトピックを管理するユーザーのことです。  トピック管理は、トピック センターの **[トピックの** 管理] ページで行われ、ナレッジ マネージャーにのみ表示されます。
 
-[トピック管理] ページでは、知識マネージャーは次のタスクを実行できます:
+[トピックの **管理] ページ** で、ナレッジ マネージャーは次のタスクを実行できます。
 
 - AI が提案するトピックを表示できます。
 - トピックを確認して、有効なトピックを確認します。

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87d9d768a81d8e6ddd72753fe7372f18c13254e1
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d70825f8bdcd47f17d2f61834f4353c537a033ed
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542953"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622570"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストの表示と整理
 
@@ -33,7 +33,6 @@ ms.locfileid: "53542953"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
-
 
 [ **デバイス] リストには** 、アラートが生成されたネットワーク内のデバイスの一覧が表示されます。 既定では、キューには過去 30 日間に表示されたデバイスが表示されます。  
 
@@ -67,7 +66,7 @@ ms.locfileid: "53542953"
 
 露出レベルに 「データが使用できない」と表示される場合は、次の理由が考えられません。
 
-- デバイスが 30 日以上レポートを停止しました 。その場合は非アクティブと見なされ、露出は計算されません
+- デバイスが 30 日間以上レポートを停止しました。 その場合は非アクティブと見なされ、露出は計算されません
 - デバイス OS はサポートされていません - Microsoft Defender for Endpoint の最小 [要件を参照してください。](minimum-requirements.md)
 - 古いエージェントを持つデバイス (非常に可能性が低い)
 
@@ -79,9 +78,9 @@ ms.locfileid: "53542953"
 
 次のデバイスの正常性状態でフィルター処理します。
 
-- **Active** – センサー データをサービスにアクティブに報告しているデバイス。
-- **非** アクティブ – 7 日間以上信号の送信を完全に停止したデバイス。
-- **正しく構成されていない** – サービスとの通信に障害が生じ、センサー データを送信できないデバイス。 構成が正しく設定されていないデバイスは、さらに次のように分類できます。
+- **Active**: センサー データをサービスにアクティブに報告しているデバイス。
+- **非** アクティブ : 7 日間以上、信号の送信を完全に停止したデバイス。
+- **正しく構成されていない**: サービスとの通信に障害が生じ、センサー データを送信できないデバイス。 構成が正しく設定されていないデバイスは、さらに次のように分類できます。
   - センサー データなし
   - 通信障害
 
@@ -111,6 +110,6 @@ ms.locfileid: "53542953"
 
 個々のデバイスに追加したグループ化とタグ付けに基づいてリストをフィルター処理します。 「デバイス [タグの作成と管理」および「](machine-tags.md) デバイス [グループの作成と管理」を参照してください](machine-groups.md)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint Devices リストのデバイスを調査する](investigate-machines.md)

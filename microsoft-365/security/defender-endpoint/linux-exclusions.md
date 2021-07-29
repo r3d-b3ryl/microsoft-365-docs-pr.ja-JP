@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b55572509e9837f2858f96b01a13fbf259b2b770
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0fbcdaf4a9882f80578d871def3dd33674a7231f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393789"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622210"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント向け Microsoft Defender の除外を構成および検証する
 
@@ -51,22 +51,22 @@ ms.locfileid: "53393789"
 
 次の表に、Defender for Endpoint on Linux でサポートされる除外の種類を示します。
 
-除外 | 定義 | 例
+除外|定義|例
 ---|---|---
-ファイル拡張子 | 拡張子が付いたすべてのファイル(デバイス上の任意の場所) | `.test`
-ファイル | 完全パスで識別される特定のファイル | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-フォルダー | 指定したフォルダーの下のすべてのファイル (再帰的) | `/var/log/`<br/>`/var/*/`
-プロセス | 特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル | `/bin/cat`<br/>`cat`<br/>`c?t`
+ファイル拡張子|拡張子が付いたすべてのファイル(デバイス上の任意の場所)|`.test`
+File|完全パスで識別される特定のファイル|`/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+フォルダー|指定したフォルダーの下のすべてのファイル (再帰的)|`/var/log/`<br/>`/var/*/`
+プロセス|特定のプロセス (完全なパスまたはファイル名で指定) と、そのプロセスで開くすべてのファイル|`/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
 > 正常に除外するには、上記のパスは、シンボリック リンクではなくハード リンクである必要があります。 パスがシンボリック リンクである場合は、実行して確認できます `file <path-name>` 。
 
 ファイル、フォルダー、およびプロセスの除外は、次のワイルドカードをサポートします。
 
-ワイルドカード | 説明 | 例 | 一致 | 一致しない
+ワイルドカード|説明|例|一致|一致しない
 ---|---|---|---|---
-\* |    none を含む任意の数の文字と一致します (パス内でこのワイルドカードを使用すると、1 つのフォルダーのみを置き換える点に注意してください) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
-? | 任意の 1 文字に一致する | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
+\*|none を含む任意の数の文字と一致します (パス内でこのワイルドカードを使用すると、1 つのフォルダーのみを置き換える点に注意してください)|`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+?|任意の 1 文字に一致する|`file?.log`|`file1.log`<br/>`file2.log`|`file123.log`
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>除外の一覧を構成する方法
 
@@ -92,6 +92,7 @@ mdatp exclusion
     ```bash
     mdatp exclusion extension add --name .txt
     ```
+
     ```Output
     Extension exclusion configured successfully
     ```
@@ -101,6 +102,7 @@ mdatp exclusion
     ```bash
     mdatp exclusion file add --path /var/log/dummy.log
     ```
+
     ```Output
     File exclusion configured successfully
     ```
@@ -110,10 +112,10 @@ mdatp exclusion
     ```bash
     mdatp exclusion folder add --path /var/log/
     ```
+
     ```Output
     Folder exclusion configured successfully
     ```
-
 
 - 2 番目のフォルダーの除外を追加します。
 
@@ -121,10 +123,10 @@ mdatp exclusion
     mdatp exclusion folder add --path /var/log/
     mdatp exclusion folder add --path /other/folder
     ```
+
     ```Output
     Folder exclusion configured successfully
     ```
-
 
 - ワイルドカードが含まれているフォルダーの除外を追加します。
 
@@ -134,10 +136,11 @@ mdatp exclusion
 
     > [!NOTE]
     > これは *、/var/* より下の 1 つのレベルのパスのみを除外しますが、より深くネストされたフォルダーは除外されません。たとえば *、/var/this-subfolder/but-not-this-subfolder*.
-    
+
     ```bash
     mdatp exclusion folder add --path "/var/"
     ```
+
     > [!NOTE]
     > これにより、親が */var/ であるすべてのパスが除外されます*。たとえば *、/var/this-サブフォルダー/and-this-サブフォルダーも同様です*。
 
@@ -150,10 +153,10 @@ mdatp exclusion
     ```bash
     mdatp exclusion process add --name cat
     ```
-    ```Output    
+
+    ```Output
     Process exclusion configured successfully
     ```
-
 
 - 2 番目のプロセスの除外を追加します。
 
@@ -161,7 +164,8 @@ mdatp exclusion
     mdatp exclusion process add --name cat
     mdatp exclusion process add --name dog
     ```
-    ```Output    
+
+    ```Output
     Process exclusion configured successfully
     ```
 

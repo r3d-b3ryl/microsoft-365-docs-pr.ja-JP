@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6447aa4182846020312e9be870c5548d9415ac71
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 154d9abcbf4a2d37cd852b91412a076c22cb6c47
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842832"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622594"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 
@@ -52,7 +52,7 @@ MAU には *msupdate* と呼ばれるコマンド ライン ツールが含ま�
 
 MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプリケーション識別子は *WDAV00 です*。 macOS の Microsoft Defender for Endpoint の最新の更新プログラムをダウンロードしてインストールするには、ターミナル ウィンドウから次のコマンドを実行します。
 
-```
+```dos
 ./msupdate --install --apps wdav00
 ```
 
@@ -62,13 +62,13 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 
 ### <a name="set-the-channel-name"></a>チャネル名を設定する
 
-チャネルは、MAU を通じて提供される更新プログラムの種類と頻度を決定します。 デバイスは `Beta` 、デバイスの前に新しい機能を試 `Preview` し `Current` 、. 
+チャネルは、MAU を通じて提供される更新プログラムの種類と頻度を決定します。 デバイスは `Beta` 、デバイスの前に新しい機能を試 `Preview` し `Current` 、.
 
 チャネル `Current` には、製品の最も安定したバージョンが含まれている。
 
->[!IMPORTANT]
-> Microsoft AutoUpdate バージョン 4.29 より前のチャネルの名前は異なります。 
-> 
+> [!IMPORTANT]
+> Microsoft AutoUpdate バージョン 4.29 より前のチャネルの名前は異なります。
+>
 > - `Beta` という名前 `InsiderFast` が付けられた (Insider Fast)
 > - `Preview` という名前 `External` が付けられた (Insider Slow)
 > - `Current` という名前が付けられた `Production`
@@ -77,15 +77,16 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 >新機能をプレビューし、早期のフィードバックを提供するには、企業内の一部のデバイスを構成するか、またはに構成をお `Beta` 勧めします `Preview` 。
 
 |Section|値|
-|:--|:--|
-| **ドメイン** | `com.microsoft.autoupdate2` |
-| **Key** | ChannelName |
-| **データ型** | String |
-| **指定可能な値** | ベータ版 <br/> プレビュー <br/> Current |
+|---|---|
+|**ドメイン**|`com.microsoft.autoupdate2`|
+|**キー**|ChannelName|
+|**データ型**|String|
+|**指定可能な値**|ベータ版 <p> Preview <p> Current|
 |||
 
 >[!WARNING]
 >この設定は、Microsoft AutoUpdate を通じて更新されるすべてのアプリケーションのチャネルを変更します。 macOS 上の Microsoft Defender for Endpoint のチャネルのみを変更するには、目的のチャネルに置き換えた後、次のコマンド `[channel-name]` を実行します。
+>
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
@@ -95,77 +96,72 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 MAU が更新プログラムを検索する頻度を変更します。
 
 |Section|値|
-|:--|:--|
-| **ドメイン** | `com.microsoft.autoupdate2` |
-| **Key** | UpdateCheckFrequency |
-| **データ型** | 整数 |
-| **既定値** | 720 (分) |
-| **コメント** | この値は分で設定されます。 |
-
+|---|---|
+|**ドメイン**|`com.microsoft.autoupdate2`|
+|**キー**|UpdateCheckFrequency|
+|**データ型**|整数|
+|**既定値**|720 (分)|
+|**コメント**|この値は分で設定されます。|
 
 ### <a name="change-how-mau-interacts-with-updates"></a>MAU と更新プログラムのやり取り方法を変更する
 
 MAU が更新プログラムを検索する方法を変更します。
 
 |Section|値|
-|:--|:--|
-| **ドメイン** | `com.microsoft.autoupdate2` |
-| **Key** | HowToCheck |
-| **データ型** | String |
-| **指定可能な値** | 手動 <br/> AutomaticCheck <br/> AutomaticDownload |
-| **コメント** |  AutomaticDownload はダウンロードを実行し、可能であればサイレント インストールします。 |
-
+|---|---|
+|**ドメイン**|`com.microsoft.autoupdate2`|
+|**キー**|HowToCheck|
+|**データ型**|String|
+|**指定可能な値**|Manual <p> AutomaticCheck <p> AutomaticDownload|
+|**コメント**|AutomaticDownload はダウンロードを実行し、可能であればサイレント インストールします。|
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>[更新プログラムの確認] ボタンが有効になっているかどうかを変更する
 
 ローカル ユーザーが Microsoft AutoUpdate ユーザー インターフェイスの [更新プログラムの確認] オプションをクリックできるかどうかを変更します。
 
 |Section|値|
-|:--|:--|
-| **ドメイン** | `com.microsoft.autoupdate2` |
-| **Key** | EnableCheckForUpdatesButton |
-| **データ型** | Boolean |
-| **可能な値** | True (既定) <br/> False |
-
+|---|---|
+|**ドメイン**|`com.microsoft.autoupdate2`|
+|**キー**|EnableCheckForUpdatesButton|
+|**データ型**|ブール型|
+|**指定可能な値**|True (既定) <p> False|
 
 ### <a name="disable-insider-checkbox"></a>Insider チェック ボックスを無効にする
 
 true に設定すると、"Insider Program.Office参加" になります。チェックボックスが使用できない/ユーザーにグレー表示されます。
 
 |Section|値|
-|:--|:--|
-| **ドメイン** | `com.microsoft.autoupdate2` |
-| **Key** | DisableInsiderCheckbox |
-| **データ型** | Boolean |
-| **可能な値** | False (既定) <br/> True |
-
+|---|---|
+|**ドメイン**|`com.microsoft.autoupdate2`|
+|**キー**|DisableInsiderCheckbox|
+|**データ型**|ブール型|
+|**指定可能な値**|False (既定) <p> True|
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>MAU から送信されるテレメトリを制限する
 
 最小限のハートビート データ、アプリケーションの使用状況、および環境の詳細を送信するには、false に設定します。
 
 |Section|値|
-|:--|:--|
-| **ドメイン** | `com.microsoft.autoupdate2` |
-| **Key** | SendAllTelemetryEnabled |
-| **データ型** | Boolean |
-| **可能な値** | True (既定) <br/> False |
-
+|---|---|
+|**ドメイン**|`com.microsoft.autoupdate2`|
+|**キー**|SendAllTelemetryEnabled|
+|**データ型**|ブール型|
+|**指定可能な値**|True (既定) <p> False|
 
 ## <a name="example-configuration-profile"></a>構成プロファイルの例
 
 次の構成プロファイルを使用して、次の構成プロファイルを使用します。
+
 - デバイスを実稼働チャネルに配置する
 - 更新プログラムを自動的にダウンロードしてインストールする
 - ユーザー インターフェイスで [更新プログラムの確認] ボタンを有効にする
 - デバイス上のユーザーが Insider チャネルに登録を許可する
 
+> [!WARNING]
+> 次の構成は構成の例であり、設定の適切な確認と構成の調整なしに実稼働環境で使用する必要があります。
 
->[!WARNING]
->次の構成は構成の例であり、設定の適切な確認と構成の調整なしに実稼働環境で使用する必要があります。
-
->[!TIP]
->新機能をプレビューし、早期のフィードバックを提供するには、企業内の一部のデバイスを構成するか、またはに構成をお `Beta` 勧めします `Preview` 。
+> [!TIP]
+> 新機能をプレビューし、早期のフィードバックを提供するには、企業内の一部のデバイスを構成するか、またはに構成をお `Beta` 勧めします `Preview` 。
 
 ### <a name="jamf"></a>JAMF
 
@@ -251,6 +247,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 ```
 
 MAU を構成するには、企業が使用している管理ツールからこの構成プロファイルを展開できます。
+
 - JAMF から、この構成プロファイルをアップロードし、Preference ドメインを *com.microsoft.autoupdate2 に設定します*。
 - Intune から、この構成プロファイルをアップロードし、カスタム構成プロファイル名を *com.microsoft.autoupdate2 に設定します*。
 

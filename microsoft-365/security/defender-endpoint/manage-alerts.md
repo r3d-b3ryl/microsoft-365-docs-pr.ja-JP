@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f03c2209b369e6fb9e001452c53073daeb5fe1c6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1885d508b26e517fde4dd2ba45a562f9393ffd75
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187003"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622558"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>エンドポイント通知の Microsoft Defender の管理
 
@@ -127,7 +127,7 @@ Defender for Endpoint は、悪意のあるイベント、属性、コンテキ�
 
 ## <a name="related-topics"></a>関連項目
 - [抑制ルールの管理](manage-suppression-rules.md)
-- [Microsoft Defender for Endpoint Alerts キューの表示と整理](alerts-queue.md)
+- [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [Microsoft Defender for Endpoint アラートの調査](investigate-alerts.md)
 - [Microsoft Defender for Endpoint アラートに関連付けられたファイルを調査する](investigate-files.md)
 - [Microsoft Defender for Endpoint Devices リストのデバイスを調査する](investigate-machines.md)

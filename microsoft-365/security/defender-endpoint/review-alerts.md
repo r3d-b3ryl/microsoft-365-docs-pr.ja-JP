@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: b17af7931b181a5fa30271a3eee07c7abf10a010
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c05858184df57b148b83dabee402fde29d98e95e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844024"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622041"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のアラートを確認する
 
@@ -32,7 +32,7 @@ ms.locfileid: "52844024"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 Microsoft Defender for Endpoint のアラート ページは、選択したアラートに関連する攻撃信号とアラートを組み合わせて、詳細なアラート ストーリーを作成することで、アラートに対する完全なコンテキストを提供します。
 
@@ -49,25 +49,25 @@ Defender for Endpoint でアラートの名前を選択すると、アラート 
 3. アラート **ストーリーには、** ツリー ビューによって相互接続されたアラートに関連するエンティティすべてが表示されます。 タイトル内のアラートは、選択したアラートのページに最初に移動するときにフォーカスが入ったアラートです。 アラート ストーリー内のエンティティは展開可能でクリック可能で、アラート ページのコンテキストでアクションを実行することで、追加情報を提供し、応答を迅速に行うことができます。 アラート ストーリーを使用して調査を開始します。 詳細については [、「Microsoft Defender for Endpoint のアラートを調査する」を参照してください](/microsoft-365/security/defender-endpoint/investigate-alerts)。
 4. 詳細 **ウィンドウには、** 最初に選択したアラートの詳細が表示され、このアラートに関連する詳細とアクションが表示されます。 アラート ストーリーで影響を受けるアセットまたはエンティティを選択すると、詳細ウィンドウが変更され、選択したオブジェクトのコンテキスト情報とアクションが提供されます。
 
-アラートの検出状態に注意してください。 
-- [防止] – 不審なアクションが回避されました。 たとえば、ファイルがディスクに書き込まれたり、実行された場合などです。
-![脅威を示すアラート ページが防止されました](images/detstat-prevented.png)
-- Blocked – 疑わしい動作が実行され、ブロックされました。 たとえば、プロセスは実行されましたが、その後疑わしい動作が発生したため、プロセスは終了しました。
-![脅威がブロックされたという警告ページ](images/detstat-blocked.png)
-- 検出された – 攻撃が検出され、現在もアクティブな可能性があります。
-![脅威を示すアラート ページが検出されました](images/detstat-detected.png)
+アラートの検出状態に注意してください。
 
+- [防止] : 不審なアクションが回避されました。 たとえば、ファイルがディスクに書き込まれたり、実行された場合などです。
 
+  ![脅威を示すアラート ページが防止されました](images/detstat-prevented.png)
 
+- ブロック: 疑わしい動作が実行され、ブロックされました。 たとえば、プロセスは実行されましたが、その後疑わしい動作が発生したため、プロセスは終了しました。
+
+  ![脅威がブロックされたという警告ページ](images/detstat-blocked.png)
+
+- 検出: 攻撃が検出され、現在もアクティブである可能性があります。
+
+  ![脅威を示すアラート ページが検出されました](images/detstat-detected.png)
 
 その後、アラートの詳細ウィンドウで自動調査の詳細を確認し、既に実行されたアクションを確認し、推奨されるアクションに関するアラートの説明を読み取ります。
 
 ![警告の説明と自動調査セクションが強調表示された詳細ウィンドウのスニペット](images/alert-air-and-alert-description.png)
 
 アラートが開いた場合に詳細ウィンドウで使用できるその他の情報には、MITRE の手法、ソース、その他のコンテキストの詳細が含まれます。
-
-
-
 
 ## <a name="review-affected-assets"></a>影響を受けるアセットを確認する
 
@@ -80,7 +80,6 @@ Defender for Endpoint でアラートの名前を選択すると、アラート 
 - **ユーザーの** 場合、詳細ウィンドウには、ユーザーの SAM 名や SID などの詳細なユーザー情報と、このユーザーが実行するログオンの種類、およびユーザーに関連するアラートとインシデントが表示されます。 [ユーザー ページを *開く]* を選択すると、そのユーザーの視点から調査を続行できます。
 
    ![ユーザーが選択されている場合の詳細ウィンドウのスニペット](images/user-page-details.png)
-
 
 ## <a name="related-topics"></a>関連項目
 

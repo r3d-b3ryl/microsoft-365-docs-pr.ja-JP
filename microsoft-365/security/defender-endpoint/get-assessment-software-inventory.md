@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6a0bc142d8fa353e7e5910b0a5eba4842cd7ff50
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 6f2198c9d2cb3a977457f892f40b70d5316d7e37
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053169"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622678"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>デバイスごとのソフトウェア インベントリ評価のエクスポート
 
@@ -34,21 +34,17 @@ ms.locfileid: "53053169"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
->
 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 データの量が多い場合は、次の 2 つの方法で取得できます。
 
 - [ソフトウェア インベントリ評価 **JSON 応答のエクスポート**](#1-export-software-inventory-assessment-json-response) API は、組織内のすべてのデータを Json 応答としてプルします。 この方法は _、100 K_ 未満のデバイスを持つ小規模な組織に最適です。 応答がページ分割されたので、応答から \@ odata.nextLink フィールドを使用して次の結果を取得できます。
 
 - [ファイルを介してソフトウェア インベントリ評価 **をエクスポートする**](#2-export-software-inventory-assessment-via-files)  この API ソリューションを使用すると、大量のデータを高速かつ確実に取得できます。 そのため、100 K を超えるデバイスを使用する大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとして取得します。 応答には、すべてのデータをダウンロードする URL が含Azure Storage。 この API を使用すると、すべてのデータを次のようにAzure Storageダウンロードできます。
-
   - API を呼び出して、すべての組織データを含むダウンロード URL の一覧を取得します。
-
   - ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
 
 収集されるデータ _(Json_ 応答またはファイル _経由)_ は、現在の状態の現在のスナップショットであり、古いデータは含まれておりません。 過去のデータを収集するには、ユーザーがデータを独自のデータ ストレージに保存する必要があります。
 
-> [!Note]
->
+> [!NOTE]
 > 特に示されていない限り、一覧表示されているエクスポート評価方法はすべて、**** 完全なエクスポートと **_デバイス別_**(デバイス単位とも **_呼_** ばれます) です。
 
 ## <a name="1-export-software-inventory-assessment-json-response"></a>1. ソフトウェア インベントリ評価のエクスポート (JSON 応答)
@@ -60,17 +56,16 @@ ms.locfileid: "53053169"
 #### <a name="limitations"></a>制限事項
 
 - 最大ページ サイズは 200,000 です。
-
 - この API のレート制限は、1 分あたり 30 回の呼び出しと 1 時間あたり 1000 回の呼び出しです。
 
 ### <a name="12-permissions"></a>1.2 アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
-アプリケーション | Software.Read.All | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント) | Software.Read | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
+アプリケーション|Software.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント)|Software.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ### <a name="13-url"></a>1.3 URL
 
@@ -80,45 +75,45 @@ GET /api/machines/SoftwareInventoryByMachine
 
 ### <a name="14-parameters"></a>1.4 パラメーター
 
-- pageSize (既定値 = 50,000) – 応答の結果の数。
-
-- $top – 返す結果の数 (@odata.nextLink を返すので、すべてのデータを取得しない)
+- pageSize (既定値 = 50,000): 応答の結果の数。
+- $top: 返す結果の数 (@odata.nextLink を返すので、すべてのデータを取得しない)
 
 ### <a name="15-properties"></a>1.5 プロパティ
 
->[!NOTE]
+> [!NOTE]
 >
->- 各レコードのデータは約 0.5 KB です。 正しい pageSize パラメーターを選択する場合は、これを考慮する必要があります。
->
->- 次の表で定義されているプロパティは、プロパティ ID によってアルファベット順に一覧表示されます。 この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
->
->- 応答で追加の列が返される場合があります。 これらの列は一時的なもので、削除される場合があります。文書化された列のみを使用してください。
+> - 各レコードのデータは約 0.5 KB です。 正しい pageSize パラメーターを選択する場合は、これを考慮する必要があります。
+> - 次の表で定義されているプロパティは、プロパティ ID によってアルファベット順に一覧表示されます。 この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
+> - 応答で追加の列が返される場合があります。 これらの列は一時的なもので、削除される場合があります。文書化された列のみを使用してください。
 
-<br/>
+<br>
 
-プロパティ (ID) | データ型 | 説明 | 返される値の例
+****
+
+プロパティ (ID)|データ型|説明|返される値の例
 :---|:---|:---|:---
-DeviceId | 文字列 | サービス内のデバイスの一意の識別子。 | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | 文字列 | デバイスの完全修飾ドメイン名 (FQDN)。 | johnlaptop.europe.contoso.com
-DiskPaths | Array[string]  | 製品がデバイスにインストールされていることを示すディスク証拠。 | [ "C: \\プログラム ファイル (x86) \\ Microsoft \\ Silverlight \\ アプリケーション \\silverlight.exe" ]
-EndOfSupportDate | 文字列 | このソフトウェアのサポートが終了または終了する日付。 | 2020-12-30
-EndOfSupportStatus | 文字列 | サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。 | 今後の EOS
-ID | string | レコードの一意の識別子。 | 123ABG55_573AG&mnp!
-NumberOfWeaknesses | int | このデバイス上のこのソフトウェアの弱点の数 | 3
-OSPlatform | 文字列 | デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。 | Windows10
-RbacGroupName | 文字列 | 役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。 | Servers
-RegistryPaths | Array[string] | 製品がデバイスにインストールされていることを示すレジストリ証拠。 | [ "HKEY_LOCAL_MACHINE \\SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
-SoftwareFirstSeenTimestamp | 文字列 | このソフトウェアがデバイスで初めて見られた。 | 2019-04-07 02:06:47
-SoftwareName | 文字列 | ソフトウェア製品の名前。 | Silverlight
-SoftwareVendor | 文字列 | ソフトウェア ベンダーの名前。 | microsoft
-SoftwareVersion | 文字列 | ソフトウェア製品のバージョン番号。 | 81.0.4044.138
+DeviceId|string|サービス内のデバイスの一意の識別子。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。|johnlaptop.europe.contoso.com
+DiskPaths|Array[string]|製品がデバイスにインストールされていることを示すディスク証拠。|[ "C: \\プログラム ファイル (x86) \\ Microsoft \\ Silverlight \\ アプリケーション \\silverlight.exe" ]
+EndOfSupportDate|string|このソフトウェアのサポートが終了または終了する日付。|2020-12-30
+EndOfSupportStatus|string|サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。|今後の EOS
+ID|string|レコードの一意の識別子。|123ABG55_573AG&mnp!
+NumberOfWeaknesses|整数|このデバイス上のこのソフトウェアの弱点の数|3
+OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。|Windows10
+RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。|Servers
+RegistryPaths|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。|[ "HKEY_LOCAL_MACHINE \\SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
+SoftwareFirstSeenTimestamp|string|このソフトウェアがデバイスで初めて見られた。|2019-04-07 02:06:47
+SoftwareName|string|ソフトウェア製品の名前。|Silverlight
+SoftwareVendor|string|ソフトウェア ベンダーの名前。|microsoft
+SoftwareVersion|string|ソフトウェア製品のバージョン番号。|81.0.4044.138
+|
 
 ### <a name="16-examples"></a>1.6 例
 
 #### <a name="161-request-example"></a>1.6.1 要求の例
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pageSize=5  &sinceTime=2021-05-19T18%3A35%3A49.924Z 
+GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pageSize=5  &sinceTime=2021-05-19T18%3A35%3A49.924Z
 ```
 
 #### <a name="162-response-example"></a>1.6.2 応答の例
@@ -229,10 +224,10 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
-アプリケーション | Software.Read.All | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
-委任 (職場または学校のアカウント) | Software.Read | \'脅威と脆弱性管理の脆弱性情報の読み取り\'
+アプリケーション|Software.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+委任 (職場または学校のアカウント)|Software.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ### <a name="23-url"></a>2.3 URL
 
@@ -242,24 +237,25 @@ GET /api/machines/SoftwareInventoryExport
 
 ### <a name="parameters"></a>パラメーター
 
-- sasValidHours – ダウンロード URL が有効になる時間数 (最大 24 時間)
+- sasValidHours: ダウンロード URL が有効になる時間数 (最大 24 時間)
 
 ### <a name="25-properties"></a>2.5 プロパティ
 
->[!Note]
+> [!NOTE]
 >
->- ファイルは、複数行 JSON 形式& gzip 圧縮ファイルです。
->
->- ダウンロード URL は 3 時間のみ有効です。 それ以外の場合は、パラメーターを使用できます。
->
->- データの最大ダウンロード速度を得る場合は、データが存在するのと同じ Azure 地域からダウンロードしてください。
+> - ファイルは、複数行 JSON 形式& gzip 圧縮ファイルです。
+> - ダウンロード URL は 3 時間のみ有効です。 それ以外の場合は、パラメーターを使用できます。
+> - データの最大ダウンロード速度を得る場合は、データが存在するのと同じ Azure 地域からダウンロードしてください。
 
-<br/><br/>
+<br>
 
-プロパティ (ID) | データ型 | 説明 | 返される値の例
+****
+
+プロパティ (ID)|データ型|説明|返される値の例
 :---|:---|:---|:---
-ファイルのエクスポート | 配列 \[ 文字列\] | 組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧 | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | 文字列 | エクスポートが生成された時刻。 | 2021-05-20T08:00:00Z ]
+ファイルのエクスポート|配列 \[ 文字列\]|組織の現在のスナップショットを保持するファイルのダウンロード URL の一覧|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+GeneratedTime|string|エクスポートが生成された時刻。|2021-05-20T08:00:00Z
+|
 
 ### <a name="26-examples"></a>2.6 例
 
@@ -286,13 +282,10 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 ## <a name="see-also"></a>関連項目
 
 - [デバイスごとの評価方法とプロパティのエクスポート](get-assessment-methods-properties.md)
-
 - [デバイスごとのセキュリティで保護された構成評価をエクスポートする](get-assessment-secure-config.md)
-
 - [デバイスごとのソフトウェアの脆弱性評価のエクスポート](get-assessment-software-vulnerabilities.md)
 
 その他の関連
 
 - [リスクベースの脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
-
 - [組織の脆弱性](tvm-weaknesses.md)

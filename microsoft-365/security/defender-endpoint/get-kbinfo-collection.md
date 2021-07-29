@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 7becfc4a7246dc32aa244dc96ea423f5d31877f9
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 22faf080245598957a90122a3ea6b4c5cf3faca4
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167176"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622102"
 ---
 # <a name="get-kb-collection-api"></a>KB コレクション API の取得
 
@@ -32,7 +32,7 @@ ms.locfileid: "51167176"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,30 +40,34 @@ ms.locfileid: "51167176"
 
 KB と KB の詳細のコレクションを取得します。
 
-## <a name="permissions"></a>権限
+## <a name="permissions"></a>アクセス許可
+
 ユーザーには読み取りアクセス許可が必要です。
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 GET /testwdatppreview/kbinfo
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-ヘッダー | 値 
+ヘッダー|値 
 :---|:---
-Authorization | ベアラー {token}。 **必須**
-コンテンツ タイプ | application/json
+Authorization|ベアラー {token}。 **必須**
+コンテンツ タイプ|application/json
 
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答
+
 成功した場合 - 200 OK。
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request-example"></a>要求の例
 
 以下は、要求の例です。
 
@@ -71,7 +75,7 @@ Empty
 GET https://graph.microsoft.com/testwdatppreview/KbInfo
 ```
 
-**応答**
+### <a name="response-example"></a>応答の例
 
 以下は、応答の例です。
 
@@ -87,6 +91,6 @@ GET https://graph.microsoft.com/testwdatppreview/KbInfo
             "version": "10.0.10240.16549",
             "architecture": "Amd64"
         },
-        …
+        ...
 }
 ```

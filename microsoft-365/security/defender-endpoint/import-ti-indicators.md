@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b1777adf7b97083fae2daf4213a4bda742ba097d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8f9f46e56543e0ea4cbd4f6e8a9df325d7bb70af
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198247"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622234"
 ---
 # <a name="import-indicators-api"></a>インポート インジケーター API
 
@@ -28,59 +28,63 @@ ms.locfileid: "51198247"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>API の説明
+
 Indicator エンティティのバッチを [送信または](ti-indicator.md) 更新します。
-<br>IPs の CIDR 表記はサポートされていません。
+
+IPs の CIDR 表記はサポートされていません。
 
 ## <a name="limitations"></a>制限事項
+
 1. この API のレート制限は、1 分あたり 30 回の呼び出しです。
-2. テナントごとに 15,000 のアクティブ [なインジケーターの制限](ti-indicator.md) があります。 
+2. テナントごとに 15,000 のアクティブ [なインジケーターの制限](ti-indicator.md) があります。
 3. 1 つの API 呼び出しの最大バッチ サイズは 500 です。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「開始する」 [を参照してください。](apis-intro.md)
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   Ti.ReadWrite |  '読み取りおよび書き込みインジケーター'
-アプリケーション |   Ti.ReadWrite.All |  'すべてのインジケーターの読み取りと書き込み'
-委任 (職場または学校のアカウント) |    Ti.ReadWrite |  '読み取りおよび書き込みインジケーター'
-
+アプリケーション|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
+アプリケーション|Ti.ReadWrite.All|'すべてのインジケーターの読み取りと書き込み'
+委任 (職場または学校のアカウント)|Ti.ReadWrite|'読み取りおよび書き込みインジケーター'
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/indicators/import
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 型 | 説明
+名前|種類|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
-Content-Type | string | application/json. **必須**
+Authorization|String|ベアラー {token}。 **必須**
+Content-Type|string|application/json. **必須**
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター | 型    | 説明
+パラメーター|種類|説明
 :---|:---|:---
-インジケーター | リスト<[インジケーター](ti-indicator.md)> | インジケーターの [一覧](ti-indicator.md)。 **Required**
-
+インジケーター|リスト<[インジケーター](ti-indicator.md)>|インジケーターの [一覧](ti-indicator.md)。 **必須**
 
 ## <a name="response"></a>応答
+
 - 成功した場合、このメソッドは、インジケーターごとのインポート結果の一覧を含む 200 - OK 応答コードを返します。以下の例を参照してください。
 - 成功しない場合: このメソッドは 400 - Bad Request を返します。 通常、不適切な要求は、不適切な本文を示します。
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request-example"></a>要求の例
 
 以下は、要求の例です。
 
@@ -120,7 +124,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 }
 ```
 
-**応答**
+### <a name="response-example"></a>応答の例
 
 以下は、応答の例です。
 
@@ -144,4 +148,5 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 ```
 
 ## <a name="related-topic"></a>関連トピック
+
 - [インジケーターの管理](manage-indicators.md)

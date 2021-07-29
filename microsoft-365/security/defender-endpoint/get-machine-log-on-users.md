@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 634a381ca862dc7580d82168a4b9540acc0cd394
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c789e48e1902253b66b1b54bab4432f1d42aecbd
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229025"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622654"
 ---
 # <a name="get-machine-logon-users-api"></a>コンピューター ログオン ユーザー API の取得
 
@@ -45,9 +45,10 @@ ms.locfileid: "53229025"
 2. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 |アクセス許可|アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション |User.Read.All |'ユーザー プロファイルの読み取り'
 委任 (職場または学校のアカウント) | User.Read.All | 'ユーザー プロファイルの読み取り'
@@ -66,7 +67,7 @@ GET /api/machines/{id}/logonusers
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 

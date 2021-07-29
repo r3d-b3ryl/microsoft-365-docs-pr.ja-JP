@@ -2,8 +2,8 @@
 title: アプリのコンプライアンスへの取り組みを決定する
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリのコンプライアンスへの取り組みを決定する。
-ms.openlocfilehash: 152f68e8fe0e7d7340d2e048bc73684bc079386f
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: c991c1eb513184c2dd2a64d85f64fc6190f0320f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438026"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622462"
 ---
 # <a name="determine-your-app-compliance-posture"></a>アプリのコンプライアンスへの取り組みを決定する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-Microsoft アプリ ガバナンスを使用すると、[Microsoft 365 コンプライアンス センター](https://aka.ms/appgovernance)のアプリ ガバナンスの概要ページから、サード パーティ製アプリのコンプライアンスへの取り組みと、Microsoft 365 テナント内のデータへのアクセスを迅速に評価できます。
+Microsoft アプリ ガバナンスを使用すると、Microsoft 365 コンプライアンス センターのアプリ ガバナンスの概要ページから、サード パーティ製アプリのコンプライアンスへの取り組みと、Microsoft 365 テナント内のデータへのアクセスを迅速に評価できます。
 
 ![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス概要] ページ](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 

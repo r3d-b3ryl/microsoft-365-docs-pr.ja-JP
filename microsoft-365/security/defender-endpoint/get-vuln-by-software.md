@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 18a2cf87cd0e6b898a9f2aa4d6ecd47a86a8c7f6
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9b450346384d5eead63043828f43d273e261d474
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769919"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622246"
 ---
 # <a name="list-vulnerabilities-by-software"></a>ソフトウェアによる脆弱性の一覧表示
 
@@ -31,7 +31,7 @@ ms.locfileid: "52769919"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,34 +43,37 @@ ms.locfileid: "52769919"
 インストールされているソフトウェアの脆弱性の一覧を取得します。 
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション | Software.Read.All | '脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校のアカウント) | Software.Read | '脅威と脆弱性管理ソフトウェア情報の読み取り'
+アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 GET /api/Software/{Id}/vulnerabilities
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前        | 種類 | 説明
-|:--------------|:-------|:--------------|
-| Authorization | String | ベアラー {token}。**必須**。
+|名前|種類|説明
+|---|---|---|
+|Authorization|String|ベアラー {token}。**必須**。
 
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは 200 OK を返し、指定したソフトウェアによって公開される脆弱性の一覧を返します。 
 
+成功した場合、このメソッドは 200 OK を返し、指定したソフトウェアによって公開される脆弱性の一覧を返します。 
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request-example"></a>要求の例
 
 以下は、要求の例です。
 
@@ -78,7 +81,7 @@ Empty
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities 
 ```
 
-**応答**
+### <a name="response-example"></a>応答の例
 
 以下は、応答の例です。
 
@@ -105,4 +108,3 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulne
         ]
 }
 ```
-

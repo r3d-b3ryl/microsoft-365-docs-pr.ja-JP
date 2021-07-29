@@ -1,7 +1,7 @@
 ---
-title: Microsoft Viva Topics のトピック センターの概要
-author: chuckedmonson
+title: トピック センターの概要 (Microsoft Viva トピック
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -11,19 +11,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-ROBOTS: ''
 localization_priority: None
-description: Microsoft Viva Topics のトピック センターについて説明します。
-ms.openlocfilehash: bd3bdbc368ca95b1c795043c5c083aaebfcf5742
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: トピック センターの詳細については、Microsoft Viva トピック。
+ms.openlocfilehash: 17dec65a1347d3e65ea7794d3b6129267776d6a2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287283"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624454"
 ---
-# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva Topics のトピック センターの概要
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a>トピック センターの概要 (Microsoft Viva トピック
 
-Microsoft Viva Topics では、トピック センターは、組織SharePoint知識の中心として役立つ最新のサイトです。 このファイルは、ビバ[トピックのセットアップ中に](set-up-topic-experiences.md)作成Microsoft 365 管理センター。
+このMicrosoft Viva トピックトピック センターは、組織SharePoint知識の中心として役立つ最新のサイトです。 このファイルは、ビバ[トピックのセットアップ中に](set-up-topic-experiences.md)作成Microsoft 365 管理センター。
 
 トピック センターには、ライセンスを取得したユーザー全員が、接続先のトピックを表示できる Topics Web パーツを含む既定のホーム ページがあります。
 

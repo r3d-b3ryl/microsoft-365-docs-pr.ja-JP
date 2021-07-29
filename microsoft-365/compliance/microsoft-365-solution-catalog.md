@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: ソリューション カタログMicrosoft 365含まれるもの、取得する方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5118cf6ef80513f5c276f5635ab380bdc979db46
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d98684fd7f839cb0340cce4126e1c45b43b107b8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288301"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622017"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューション カタログ
 
@@ -82,15 +82,9 @@ ms.locfileid: "53288301"
 
 **ソリューション カタログが表示Microsoft 365しない理由**
 
-最初に、適切なライセンスとアクセス許可を持っている必要があります。 次に、グローバル管理者、コンプライアンス管理者、またはコンプライアンス データ管理者 [https://compliance.microsoft.com](https://compliance.microsoft.com) としてサインインします。
+最初に、適切なライセンスとアクセス許可を持っている必要があります。 次に、グローバル管理者、コンプライアンス管理者、またはコンプライアンス データ管理者 [https://compliance.microsoft.com](https://compliance.microsoft.com) としてサインインします。 
 
-**ソリューション カタログ ページに一覧表示されているコンプライアンス機能の一部は、Microsoft 365 コンプライアンス センター。どうしようか。**
-
-常に、ソリューション カタログとソリューション カタログに新しいMicrosoft 365 コンプライアンス センター追加する作業を行っています。 ナビゲーション領域に特定のソリューションが見当たらない場合は、サブスクリプションでソリューションを利用できる場合にアクセスできます。
-
-既存のコンプライアンス ソリューションを探しているが、Microsoft 365 コンプライアンス センター ではまだ使用できない場合は、常に [セキュリティ コンプライアンス センター] にアクセスして、既存のセキュリティ コンプライアンス センターのソリューションに &amp; アクセスできます [https://protection.office.com](https://protection.office.com) 。 または、Microsoft 365 コンプライアンス センター の左側のナビゲーションで [その他のリソース] タブをクリックし、Office 365コンプライアンス センター カードを選択します。  
-
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - **Microsoft Compliance Manager に** アクセスすると、組織の主要な標準と規制への準拠状態を理解できます。 コンプライアンスの全体的な姿勢を強化するために実行できる推奨アクションを提供し、これらのアクションを効率的に実行するためのワークフロー機能を提供します。 詳細については、「コンプライアンス マネージャー」 [を参照してください](compliance-manager.md)。
 

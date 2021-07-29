@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: eb009a01e36739ab5e9ec009d053a7bd4e177907
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c43a118b722cb4c42f434c097dab2b313dfddbb2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841536"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622690"
 ---
 # <a name="list-all-recommendations"></a>すべての推奨事項を一覧表示する
 
@@ -32,7 +32,7 @@ ms.locfileid: "52841536"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,35 +43,37 @@ ms.locfileid: "52841536"
 組織に影響を与えるすべてのセキュリティ推奨事項の一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
 
-アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション |   SecurityRecommendation.Read.All |   '脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
-委任 (職場または学校のアカウント) | SecurityRecommendation.Read |  '脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
+アプリケーション|SecurityRecommendation.Read.All|'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
+委任 (職場または学校のアカウント)|SecurityRecommendation.Read |'脅威と脆弱性管理のセキュリティに関する推奨事項情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```http
 GET /api/recommendations
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前|種類|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
-
+Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
+
 Empty
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは 200 OK を返し、本文のセキュリティ推奨事項の一覧を返します。
 
+成功した場合、このメソッドは 200 OK を返し、本文のセキュリティ推奨事項の一覧を返します。
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request"></a>要求
 
 以下は、要求の例です。
 
@@ -79,10 +81,9 @@ Empty
 GET https://api.securitycenter.microsoft.com/api/recommendations
 ```
 
-**応答**
+### <a name="response"></a>応答
 
 以下は、応答の例です。
-
 
 ```json
 {
@@ -120,7 +121,8 @@ GET https://api.securitycenter.microsoft.com/api/recommendations
      ]
 }
 ```
+
 ## <a name="see-also"></a>関連項目
+
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&脆弱性のセキュリティに関する推奨事項](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
-

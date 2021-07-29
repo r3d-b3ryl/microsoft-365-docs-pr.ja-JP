@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e98142e4076c5e695f16eb06c062bc69d3d7dd55
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 90e15fbd28d8b7a57b9d65c2f7ea46e625a42038
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935067"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622630"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のユーザー アカウントを調査する
 
@@ -35,7 +35,7 @@ ms.locfileid: "51935067"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
 
 ## <a name="investigate-user-account-entities"></a>ユーザー アカウント エンティティの調査
 
@@ -99,7 +99,7 @@ ms.locfileid: "51935067"
 
 ## <a name="related-topics"></a>関連項目
 
-- [Microsoft Defender for Endpoint Alerts キューの表示と整理](alerts-queue.md)
+- [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
 - [Microsoft Defender for Endpoint アラートの調査](investigate-alerts.md)
 - [Defender for Endpoint アラートに関連付けられたファイルを調査する](investigate-files.md)

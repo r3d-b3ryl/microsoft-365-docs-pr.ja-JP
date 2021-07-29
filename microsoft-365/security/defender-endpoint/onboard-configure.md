@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eebdad9b545c22e7a5a7b7fbdc37d37c5c0f538c
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: c471f2b0d88219ac04a1c64343c950604fec2183
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538915"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622510"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>デバイスを Microsoft Defender for Endpoint サービスにオンボードする
 
@@ -33,9 +33,9 @@ ms.locfileid: "53538915"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Defender for Endpoint ポータルのオンボーディング セクションに移動して、サポートされているデバイスをオンボードする必要があります。 デバイスに応じて、適切な手順と、デバイスに適した管理および展開ツールのオプションが提供されます。 
+Defender for Endpoint ポータルのオンボーディング セクションに移動して、サポートされているデバイスをオンボードする必要があります。 デバイスに応じて、適切な手順と、デバイスに適した管理および展開ツールのオプションが提供されます。
 
 一般に、デバイスをサービスにオンボードするには、次の情報を使用します。
 
@@ -44,31 +44,30 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 - デバイスに適切な管理ツールと展開方法を使用する
 - 検出テストを実行して、デバイスが適切にオンボードされ、サービスに報告されていることを確認する
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
 ## <a name="onboarding-tool-options"></a>オンボーディング ツールのオプション
+
 次の表に、オンボードする必要があるエンドポイントに基づいて使用可能なツールを示します。
 
-| Endpoint     | ツール オプション                       |
-|--------------|------------------------------------------|
-| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)  |
-| **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
-| **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-| **iOS**      | [アプリベース](ios-install.md)                                |
-| **Android**  | [Microsoft エンドポイント マネージャー](android-intune.md)               | 
-
-
-
+|Endpoint|ツール オプション|
+|---|---|
+|**Windows**|[ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <p> [グループ ポリシー](configure-endpoints-gp.md) <p> [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI スクリプト](configure-endpoints-vdi.md) <p> [Azure Defender との統合](configure-server-endpoints.md#integration-with-azure-defender)|
+|**macOS**|[ローカル スクリプト](mac-install-manually.md) <p> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <p> [JAMF Pro](mac-install-with-jamf.md) <p> [モバイル デバイス管理](mac-install-with-other-mdm.md)|
+|**Linux Server**|[ローカル スクリプト](linux-install-manually.md) <p> [Puppet](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
+|**iOS**|[アプリベース](ios-install.md)|
+|**Android**|[Microsoft エンドポイント マネージャー](android-intune.md)|
 
 ## <a name="in-this-section"></a>このセクションの内容
-トピック | 説明
-:---|:---
-[以前のバージョンの Windows をオンボードする](onboard-downlevel.md)| Defender for Endpoint Windows 7 および Windows 8.1デバイスをオンボードします。 
-[Windows 10 デバイスのオンボード](configure-endpoints.md) | Defender for Endpoint サービスに報告するには、デバイスをオンボードする必要があります。 エンタープライズでデバイスを構成するために使用できるツールと方法について説明します。
-[オンボード サーバー](configure-server-endpoints.md) |  Windows Server 2008 R2 SP1、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC) バージョン 1803 以降、Windows Server 2019 以降、Windows Server 2019 コア エディションを Defender for Endpoint に搭載します。
-[Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md) | Defender for Endpoint は、セキュリティ プラットフォームだけでなく、Windowsプラットフォームにも一元的なセキュリティWindows提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートを、組織のネットワークMicrosoft Defender セキュリティ センター保護することができます。 このエクスペリエンスは、サードパーティのセキュリティ製品のセンサー データを活用します。 
-[新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md) | 新しくオンボードされたデバイスでスクリプトを実行して、Defender for Endpoint サービスに適切に報告されていることを確認します。
-[プロキシとインターネットの設定を構成する](configure-proxy-internet.md)| プロキシとインターネット接続の設定を構成して、Defender for Endpoint クラウド サービスとの通信を有効にします。
-[オンボーディングに関する問題のトラブルシューティング](troubleshoot-onboarding.md) | オンボーディング中に発生する可能性のある問題の解決について説明します。
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+トピック|説明
+:---|:---
+[以前のバージョンの Windows をオンボードする](onboard-downlevel.md)|Defender for Endpoint Windows 7 および Windows 8.1デバイスをオンボードします。
+[Windows 10 デバイスのオンボード](configure-endpoints.md)|Defender for Endpoint サービスに報告するには、デバイスをオンボードする必要があります。 エンタープライズでデバイスを構成するために使用できるツールと方法について説明します。
+[オンボード サーバー](configure-server-endpoints.md)|Windows Server 2008 R2 SP1、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC) バージョン 1803 以降、Windows Server 2019 以降、Windows Server 2019 コア エディションを Defender for Endpoint に搭載します。
+[Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)|Defender for Endpoint は、セキュリティ プラットフォームだけでなく、Windowsプラットフォームにも一元的なセキュリティWindows提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートを、組織のネットワークMicrosoft Defender セキュリティ センター保護することができます。 このエクスペリエンスは、サードパーティのセキュリティ製品のセンサー データを活用します。
+[新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md)|新しくオンボードされたデバイスでスクリプトを実行して、Defender for Endpoint サービスに適切に報告されていることを確認します。
+[プロキシとインターネットの設定を構成する](configure-proxy-internet.md)|プロキシとインターネット接続の設定を構成して、Defender for Endpoint クラウド サービスとの通信を有効にします。
+[オンボーディングに関する問題のトラブルシューティング](troubleshoot-onboarding.md)|オンボーディング中に発生する可能性のある問題の解決について説明します。
+
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

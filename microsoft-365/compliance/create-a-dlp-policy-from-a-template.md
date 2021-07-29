@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: この記事では、データベースに含まれるテンプレートのいずれかを使用して DLP ポリシーを作成する方法についてOffice 365。
-ms.openlocfilehash: 0088381698b47b2451f52fde32716a2436e8c073
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ae0284cfdbdc28db350dd655f9ceeda38830285c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113969"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622450"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
@@ -58,7 +58,7 @@ OneDrive for Business アカウントを使用すると、組織内のユーザ�
     
 ### <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
-1. [https://protection.office.com](https://protection.office.com) に移動します。
+1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
     
 2. 職場または学校のアカウントを使用してサインインします。 これで、セキュリティ コンプライアンス センターに &amp; 入っています。
     

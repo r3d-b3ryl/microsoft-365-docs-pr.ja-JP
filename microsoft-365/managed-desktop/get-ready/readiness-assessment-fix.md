@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 866d1a2de820fca4c66537583dc5f55098149931
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 65ccc2cf551eeb52b9751a2457f8f1ba66e83fc7
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327013"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622702"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -102,13 +102,9 @@ Intune 管理者の役割には、このチェックに対する十分なアク�
 
 Azure 組織の Intune デバイス コンプライアンス ポリシー ADデバイスにMicrosoft マネージド デスクトップがあります。
 
-**使用不可能**
-
-すべてのユーザーを対象とする少なくとも 1 つのコンプライアンス ポリシーがあります。 Microsoft マネージド デスクトップデバイスを対象とするコンプライアンス ポリシー Microsoft マネージド デスクトップ含まれます。  ポリシーを変更して、ユーザーまたはデバイスAD含む特定の Azure Microsoft マネージド デスクトップグループをターゲットにします。 手順については、「コンプライアンス ポリシー[を作成する」を参照Microsoft Intune。](/mem/intune/protect/create-compliance-policy)
-
 **アドバイザリ**
 
-コンプライアンス ポリシーがユーザーを対象とMicrosoft マネージド デスクトップします。 手順については、「コンプライアンス ポリシー[を作成する」を参照Microsoft Intune。](/mem/intune/protect/create-compliance-policy)
+すべてのユーザーを適用する少なくとも 1 つのコンプライアンス ポリシーがあります。 Microsoft マネージド デスクトップデバイスに適用されるコンプライアンス ポリシー Microsoft マネージド デスクトップ含まれます。 組織が作成した、競合が発生Microsoft マネージド デスクトップデバイスに適用されるコンプライアンス ポリシーを確認します。 手順については、「コンプライアンス ポリシー[を作成する」を参照Microsoft Intune。](/mem/intune/protect/create-compliance-policy)
 
 
 
@@ -118,7 +114,7 @@ Azure 組織の Intune デバイス構成プロファイルAD、Microsoft Manage
 
 **使用不可能**
 
-すべてのユーザー、すべてのデバイス、または両方を対象とする構成プロファイルが少なくとも 1 つあります。 プロファイルをリセットして、特定の Azure ADデバイスを含Microsoft マネージド デスクトップします。 手順については、「カスタム設定[を使用してプロファイルを作成する」を参照Microsoft Intune。](/mem/intune/configuration/custom-settings-configure)
+すべてのユーザー、すべてのデバイス、または両方に適用される少なくとも 1 つの構成プロファイルがあります。 プロファイルをリセットして、特定の Azure ADデバイスを含Microsoft マネージド デスクトップします。 手順については、「カスタム設定[を使用してプロファイルを作成する」を参照Microsoft Intune。](/mem/intune/configuration/custom-settings-configure)
 
 **アドバイザリ**
 
@@ -343,7 +339,7 @@ SSPR **Selected 設定** にユーザーが含Microsoft マネージド デス�
 
 Microsoft マネージド デスクトップユーザーは、登録後に自分のデバイスに対してローカルMicrosoft マネージド デスクトップ特権を持つ必要があります。
 
-## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
+## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for Enterprise
 
 ### <a name="onedrive"></a>OneDrive
 
