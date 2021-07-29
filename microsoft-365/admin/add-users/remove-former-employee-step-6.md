@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 次の手順に従って、元Microsoft 365ライセンスを削除します。
-ms.openlocfilehash: ed86eb28cc6d4996f7def8cb567f0e4085e67624
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7303c881e93d3ecb0c6637936ad12d8da227392c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244214"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541567"
 ---
 # <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>手順 6 - 元従業員Microsoft 365ライセンスを削除する
 

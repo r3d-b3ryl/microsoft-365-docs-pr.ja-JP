@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 063870c58377d7327f621ec49855b684065f436b
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2c9cbff0a1637636e310ca83523319dd6fe236f2
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286767"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541711"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>PowerShell、WMI、およびエンドポイントを使用して Microsoft Defender for Endpoint をMPCmdRun.exe
 
@@ -80,9 +80,9 @@ WMI は、設定を取得、変更、および更新できるスクリプト イ
 |---|---|
 |**管理Microsoft Defender ウイルス対策**|[サーバーを使用してMicrosoft Defender ウイルス対策を構成mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)|
 
-## <a name="configure-your-microsoft-defender-security-center"></a>サーバーを構成Microsoft Defender セキュリティ センター
+## <a name="configure-your-microsoft-365-defender-portal"></a>ポータルをMicrosoft 365 Defenderする
 
-まだ行っていない場合は **、Microsoft Defender セキュリティ センター** ( ) を構成して、アラートの表示、脅威保護機能の構成、組織の全体的なセキュリティ体制に関する詳細情報 [https://securitycenter.windows.com](https://securitycenter.windows.com) の表示を行います。
+まだ実行していない場合は[、Microsoft 365 Defender](https://security.microsoft.com/)ポータルを構成して、アラートの表示、脅威保護機能の構成、組織の全体的なセキュリティ体制に関する詳細情報の表示を行います。
 
 また、エンド ユーザーに表示される機能と機能を構成Microsoft Defender セキュリティ センター。
 
@@ -92,7 +92,7 @@ WMI は、設定を取得、変更、および更新できるスクリプト イ
 
 ## <a name="next-steps"></a>次の手順
 
-- [アプリケーションの概要を脅威と脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
 - [セキュリティ操作ダッシュボードMicrosoft Defender セキュリティ センターアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 

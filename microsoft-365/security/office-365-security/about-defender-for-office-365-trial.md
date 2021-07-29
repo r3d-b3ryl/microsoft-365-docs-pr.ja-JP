@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理者は、管理者向け Microsoft Defender の試用版モードについてOffice 365
-ms.openlocfilehash: 50060e36a0dd6d82ccbdf6d2bb8a00b2bf5e9d6d
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 9bd762f60dac6e9a0cf88890c5cf5bfd313733ac
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195011"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567790"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版
 
@@ -34,10 +34,28 @@ Microsoft Defender for Office 365、電子メール メッセージ、リンク 
 - **脅威の調査および反応機能**: 最先端のツールを使用して、脅威を調査、把握、シミュレーション、および回避を行います。
 - **自動調査および対応機能**: 脅威の調査と軽減にかかる時間と労力を節約します。
 
-Microsoft Defender for Office 365 試用版は、Office 365 用の Defender の機能を試す最も簡単な方法であり、セットアップには 2 回のクリックが必要です。 試用版のセットアップが完了すると、Office 365プラン 1 とプラン 2 のすべての Defender 機能が組織内で最大 90 日間利用できます。
+Microsoft Defender for Office 365 試用版は、Office 365 用の Defender の機能を試す最も簡単な方法であり、セットアップには 2 回のクリックが必要です。 試用版のセットアップが完了すると、Office 365プラン 1 とプラン 2 のすべての Defender 機能が組織内で最大 90 日間利用できます。 これらの高レベル機能については、次の一覧で説明します。
+
+<br>
+
+****
+
+|機能|説明|
+|---|---|
+|[フィッシング対策ポリシーの排他的設定](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|ユーザー偽装保護、ドメイン偽装保護、メールボックス インテリジェンス、高度なフィッシングしきい値を取得します。|
+|[安全な添付ファイル](safe-attachments.md)|制御されたデトレーション環境で電子メールの添付ファイルや他のファイルを検査して、新しいマルウェアや回避的なマルウェアをキャッチします。|
+|[リンク保護](safe-links.md)|クリック時のチェックを実行して、初期検査に合格した可能性がある URL が武器化されていないか確認します。|
+|[脅威トラッカー](threat-trackers.md)<sup>\*</sup>|有益なウィジェットとビューを使用して、組織に影響を与える可能性のあるサイバーセキュリティの問題を特定します。|
+|[脅威エクスプローラー](threat-explorer.md)<sup>\*</sup>|メール内の脅威に関するほぼリアルタイムの情報をOffice 365します。|
+|[自動調査と対応 (AIR)](office-365-air.md)<sup>\*</sup>|アラートがトリガーされると、脅威オブジェクトを自動的に見つけて修復します。|
+|[攻撃シミュレーションのトレーニング](attack-simulation-training.md)<sup>\*</sup>|フィッシング攻撃を識別し、適切に対応するためにユーザーをトレーニングします。|
+|[キャンペーン ビュー](campaigns.md)<sup>\*</sup>|大規模な悪意のある電子メール アクティビティを調査して対応します。|
+|[Defender を使用したレポートOffice 365機能](view-reports-for-mdo.md)|脅威保護の状態、URL の脅威保護、メールの待機時間などのレポートを表示します。|
+
+<sup>\*</sup>Defender for Office 365試用版の一部として利用可能なプラン 2 の機能。
 
 > [!NOTE]
-> この記事で説明されている自動構成は現在パブリック プレビューに含まれるので、現在の場所では使用できない場合があります。
+> この記事で説明する自動構成は現在パブリック プレビューに含まれるので、組織では使用できない場合があります。
 
 ## <a name="terms-and-conditions"></a>使用条件
 
@@ -112,7 +130,7 @@ Defender for Office 365については、この対話型ガイドを[参照し�
 
 - [攻撃シミュレーション トレーニングの使用を開始する](attack-simulation-training-get-started.md)
 
-### <a name="secure-posture"></a>セキュリティで保護された姿勢
+### <a name="security-posture"></a>セキュリティの姿勢
 
 推奨されるテンプレートと構成に関する分析情報は、お客様が安全にアクセスし、安全を確保するのに役立ちます。
 

@@ -1,5 +1,5 @@
 ---
-title: ユーザーの露出スコア脅威と脆弱性の管理
+title: 脅威と脆弱性の管理における露出スコア
 description: この脅威と脆弱性の管理は、組織がサイバーセキュリティの脅威に対してどのように脆弱かを反映しています。
 keywords: 露出スコア、Microsoft Defender for Endpoint 露出スコア、Microsoft Defender for Endpoint tvm 露出スコア、組織の露出スコア、tvm 組織の露出スコア、脅威と脆弱性の管理、Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fcea240fe1dc0ce97a2800391320b04c39c84336
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: af21b0ae3e03ebacae9412fc48693d57f32c81e6
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934107"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568006"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>露出スコア - 脅威と脆弱性の管理
 
@@ -37,7 +37,7 @@ ms.locfileid: "51934107"
 
 >Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-露出スコアは、ユーザーの脅威と脆弱性の管理[ダッシュボード](tvm-dashboard-insights.md)に表示Microsoft Defender セキュリティ センター。 これは、組織がサイバーセキュリティの脅威に対してどのように脆弱かを反映しています。 露出スコアが低いということは、デバイスが悪用の影響を受けやすいという意味です。
+露出スコアは、ポータルの[[脅威と脆弱性の管理]](tvm-dashboard-insights.md)ダッシュボードにMicrosoft 365 Defenderされます。 これは、組織がサイバーセキュリティの脅威に対してどのように脆弱かを反映しています。 露出スコアが低いということは、デバイスが悪用の影響を受けやすいという意味です。
 
 - 組織のセキュリティの状態に関する高レベルのテイクアウトを迅速に理解し、特定します。
 - 現在の状態を改善するために調査またはアクションが必要な領域を検出して対応します。
@@ -61,7 +61,7 @@ ms.locfileid: "51934107"
 
 セキュリティに関する推奨事項を修正することで、脅威と脆弱性の暴露 [を削減します](tvm-security-recommendation.md)。 最も重要なセキュリティ推奨事項を修復して、露出スコアに最も大きな影響を与えます。これは、脅威と脆弱性の管理[ダッシュボードで確認できます](tvm-dashboard-insights.md)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)

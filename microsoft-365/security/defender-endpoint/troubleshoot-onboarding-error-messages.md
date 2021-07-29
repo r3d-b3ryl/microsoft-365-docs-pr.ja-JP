@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b8e15f27ffe4babe730870fb576980c62cb0fd59
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 03d102ec116b9f5507c3eaa869231a9197d3041c
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844037"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568078"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>サブスクリプションとポータル アクセスの問題のトラブルシューティング
 
@@ -35,11 +35,11 @@ ms.locfileid: "52844037"
 
 このページでは、Microsoft Defender for Endpoint サービスのセットアップ時に発生する可能性がある問題をトラブルシューティングするための詳細な手順について説明します。
 
-エラー メッセージが表示された場合、Microsoft Defender セキュリティ センター問題と関連するリンクが提供される内容に関する詳細な説明が表示されます。
+エラー メッセージが表示された場合、Microsoft 365 Defenderの内容と関連するリンクが提供される詳細な説明が表示されます。
 
 ## <a name="no-subscriptions-found"></a>サブスクリプションが見つかりません
 
-Microsoft Defender セキュリティ センター にアクセス中にサブスクリプションが見つからないというメッセージが表示される場合は、ユーザーのポータルへのログインに使用される Azure Active Directory (Azure AD) が Microsoft Defender for Endpoint ライセンスを持っていないという意味です。
+Microsoft 365 Defender にアクセス中にサブスクリプションが見つからないというメッセージが表示される場合は、ユーザーのポータルへのログインに使用される Azure Active Directory (Azure AD) が Microsoft Defender for Endpoint ライセンスを持っていないという意味です。
 
 潜在的な理由:
 - Windows E5 ライセンスと Office E5 ライセンスは、別のライセンスです。
@@ -53,7 +53,7 @@ Microsoft Defender セキュリティ センター にアクセス中にサブ�
 
 ## <a name="your-subscription-has-expired"></a>サブスクリプションの有効期限が切れています
 
-サブスクリプションへのアクセス中Microsoft Defender セキュリティ センターサブスクリプションの有効期限が切れているメッセージが表示される場合、オンライン サービスサブスクリプションの有効期限が切れています。 Microsoft Defender for Endpoint サブスクリプションは、他のオンライン サービス サブスクリプションと同様に有効期限があります。 
+サブスクリプションへのアクセス中Microsoft 365 Defenderサブスクリプションの有効期限が切れているメッセージが表示される場合、オンライン サービスサブスクリプションの有効期限が切れています。 Microsoft Defender for Endpoint サブスクリプションは、他のオンライン サービス サブスクリプションと同様に有効期限があります。 
 
 ライセンスの更新または延長は、任意の時点で選択できます。 有効期限が切れた後にポータルにアクセスすると、サブスクリプションの有効期限が切れたメッセージが表示され、ライセンスを更新しない場合は、デバイスのオフボード パッケージをダウンロードするオプションが表示されます。
 
@@ -74,7 +74,7 @@ Microsoft Defender セキュリティ センター にアクセス中にサブ�
 
 ![現在使用できないデータの画像](images/atp-data-not-available.png)
 
-その下のすべてのサブドメインを許可 `securitycenter.windows.com` する必要があります。 たとえば、`*.securitycenter.windows.com` などです。
+その下のすべてのサブドメインを許可 `security.windows.com` する必要があります。 たとえば、`*.security.windows.com` などです。
 
 
 ## <a name="portal-communication-issues"></a>ポータル通信の問題

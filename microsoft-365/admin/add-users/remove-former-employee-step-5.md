@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 次の手順に従って、元従業員のモバイル デバイス アクセスをブロックします。
-ms.openlocfilehash: 1ce12b06b6a0a74615ff8ac43b8f333456a469bb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 603192f2ad2f22056f56157751c35a30a4502d12
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244239"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541579"
 ---
 # <a name="step-5---wipe-and-block-a-former-employees-mobile-device"></a>手順 5 - 元従業員のモバイル デバイスをワイプしてブロックする
 
@@ -44,3 +45,7 @@ ms.locfileid: "52244239"
 5. **[保存]** を選択します。
    > [!TIP]
    > オンプレミスの Blackberry Enterprise サービスからユーザーを削除またはEnterpriseしてください。 さらに、そのユーザーのすべての Blackberry デバイスを無効にする必要もあります。 ユーザーを無効にする具体的な手順については、「Blackberry Business Cloud Services Administration Guide」 (Blackberry Business Cloud Services 管理ガイド) を参照してください。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[Exchange Online の Exchange 管理センター](/exchange/exchange-admin-center)

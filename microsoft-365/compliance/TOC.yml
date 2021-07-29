@@ -558,7 +558,7 @@
 - name: アプリ ガバナンスを管理する
   items:
     - name: アプリを保護して管理する
-      href: app-governance-manage-app-protection-governance.md
+      href: app-governance-manage-app-governance.md
     - name: アプリ ガバナンスの使用を開始する
       href: app-governance-get-started.md
     - name: アプリ ガバナンスに関するフィードバックを送信する
@@ -730,8 +730,14 @@
           href: overview-ediscovery-20.md
         - name: Advanced eDiscovery を設定する
           href: get-started-with-advanced-ediscovery.md
-        - name: ケースの作成と管理
-          href: create-and-manage-advanced-ediscoveryv2-case.md
+        - name: Advanced eDiscovery ケースを作成する
+          items:
+            - name: ケースの作成と管理
+              href: create-and-manage-advanced-ediscoveryv2-case.md
+            - name: 大規模なケースを使用する (プレビュー)
+              href: advanced-ediscovery-large-cases.md
+        - name: Teams コンテンツの Advanced 3Discovery ワークフロー (プレビュー)
+          href: teams-workflow-in-advanced-ediscovery.md
         - name: カストディアンおよび非カストディアンのデータ ソースを使用する
           href: managing-custodians.md
           items:

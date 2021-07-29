@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 次の手順に従って、元従業員のメールを別の従業員に転送するか、共有メールボックスに変換します。
-ms.openlocfilehash: 5ab66cf9d71a597a7f33c9a5e3a180738592faca
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: df8652f89df5715ba45408f87755bd2ee238884c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244246"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541603"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>手順 3 - 元従業員のメールを別の従業員に転送するか、共有メールボックスに変換する
 
@@ -56,3 +57,10 @@ ms.locfileid: "52244246"
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。 [転送 **先住所]** ボックスに、メールを取得する現在の従業員のメール アドレスを入力します。
 5. **[保存]** を選択します。
 6. 元従業員のアカウントを削除しないよう注意してください。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[共有メールボックスを開いて使用Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd) 
+[他のユーザーのメールボックスにアクセスする](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081) 
+[Exchangeの管理センター Exchange Online](/exchange/exchange-admin-center) 
+[他のユーザーのメールと予定表アイテムを管理する](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)

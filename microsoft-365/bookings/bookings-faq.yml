@@ -9,16 +9,16 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Microsoft Bookings のよく寄せられる質問。
-  ms.openlocfilehash: 956d423ef89454fa87524ce15165ffd3c8b59507
-  ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+  ms.openlocfilehash: 4f8066e8d6ade84cbe5aa9e41b14784870353ddf
+  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/30/2021
-  ms.locfileid: "53227705"
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "53541471"
 title: Microsoft Bookings に関するよく寄せられる質問
 summary: ''
 sections:
-- name: 全般
+- name: 一般
   questions:
   - question: >
       Microsoft Bookings とは
@@ -69,7 +69,7 @@ sections:
   - question: >
       元の Bookings Web アプリのすべての機能は、アプリ内でMicrosoft Teams?
     answer: >
-      軽量バージョンの Bookings が、アプリとしてアプリとして使用Teams。 最初のアナウンスはここ [です](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/)。 Web アプリにはディープ リンク機能が備わっています。セットアップ後、予約の毎日の使用は、Web アプリから離れることなく行Teams。 プラットフォーム間の情報フロー。
+      軽量バージョンの Bookings が、アプリとしてアプリとして使用Teams。 詳細については[、「Bookings アプリ](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b)の概要」を参照Teams。 Web アプリにはディープ リンク機能が備わっています。セットアップ後、予約の毎日の使用は、Web アプリから離れることなく行Teams。 プラットフォーム間の情報フロー。
   - question: >
       Bookings は小規模ビジネス向け製品か、Enterprise提供か、その両方ですか?
     answer: >
@@ -335,7 +335,7 @@ sections:
          > [!div class="mx-imgBorder"]
          > ![[予定表の共有] 画面のイメージと [忙しいときに表示できる] が有効になっている](../media/bookings-view-busy.png)
 
-      1. **[完了]** を選択します。
+      1. [**完了**] を選択します。
   - question: >
       組織のスタッフ メンバーが見当たらない
     answer: >

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織の個人データを処理するためのポリシーを作成および管理する方法について説明します。Microsoft 365通知への対応、および問題の修復を行います。
-ms.openlocfilehash: f9df027d01ffe4629654db1ddd006d141d57e387
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 9597d0f55f6dc21004fd23ff94d53bf3838ef177
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378571"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541795"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>プライバシー管理でポリシーを作成および管理する (プレビュー)
 
@@ -50,7 +50,7 @@ ms.locfileid: "53378571"
 部署や地域の境界を越えてデータを転送すると、暗号化されていない電子メールや未承認の受信者に送信される場合など、データが暴露されるリスクが高くなる可能性があります。 このようなアクションは、規制上の影響を及ぼす可能性や、プライバシーに関する確立された慣行に反する可能性があります。 データ転送テンプレートを使用してプライバシー管理ポリシーを作成すると、そのような転送を特定して制限することができます。
 
 > [!NOTE]
-> パブリック プレビュー中に、データ転送ポリシーを実行して地域間の転送を検出するテナントの中には、Exchange および Teams データのポリシー一致の可視性に影響を与える同期の問題が発生する場合があります。 このポリシーの種類をプレビュー SharePoint、OneDriveデータに注目することをお勧めします。 この問題の更新プログラムは、2021 年秋に予定されています。
+> パブリック プレビュー中に、データ転送ポリシーを実行して地域間の転送を検出するテナントの中には、Exchange および Teams データのポリシー一致の可視性に影響を与える同期の問題が発生する場合があります。 このポリシーの種類をプレビュー SharePoint、OneDriveデータに注目することをお勧めします。
 
 ### <a name="data-minimization"></a>データの最小化
 

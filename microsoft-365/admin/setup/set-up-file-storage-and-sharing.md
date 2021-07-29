@@ -30,12 +30,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: ストレージとファイル共有をOneDrive共有するために、Microsoft 365サイトとチーム Microsoft 365する方法について学習します。
-ms.openlocfilehash: 40c62842f59fe932fdf297629b456acd595a7b0d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 4b0d39f4ab8d6ff84b50e1563de054ecea8d0cbd
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393501"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541483"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>ファイルストレージと共有を設定する方法は、Microsoft 365
 
@@ -60,7 +60,7 @@ ms.locfileid: "53393501"
 サイトとチーム サイトを一緒に使用する場合に、各場所にOneDrive推奨事項を次に示します。<br/>
 
   
-|ストレージの場所|何のために|保存するファイル|
+|保存場所|何のために|保存するファイル|
 |:-----|:-----|:-----|
 |**OneDrive** |ファイルにコンテンツをOneDriveは、コンピューターにファイルを保存する場合と同じ方法です。他の誰も簡単にアクセスできます。<br/> 詳細については、「What [is is OneDrive for Business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |他のチーム メンバーが定期的に共同作業を行ったり、アクセスしたりする必要がないビジネス ファイル。<br/> |
 |**SharePoint チーム サイト** <br/> |コラボレーション。 Microsoft 365 グループ (Microsoft 365 管理センター、Outlook、Microsoft Teams でチームを作成する場合など) を作成すると、そのグループに対して SharePoint チーム サイトが作成されます。 同様に、SharePoint ホーム ページまたは新しい SharePoint 管理センターから新しい SharePoint チーム サイトを作成すると、Microsoft 365 グループも作成されます。 詳細については、「チーム サイトとは[SharePointオンライン](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)でチーム サイトを作成する[」をSharePointしてください](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)。  <br/> |共有所有権を持つファイル。 組織内の作業単位ごとにチーム サイトを分けすることをお勧めします。 たとえば、人員と財務ドキュメントを小さなチームに非公開にするには、別のチーム サイトを作成します。  <br/> |
@@ -78,7 +78,7 @@ ms.locfileid: "53393501"
   
 チームの各ユーザーがファイルの作成と共有をOneDrive方法を次に示します。
 
-1. [パスワード] <a href="https://admin.mirosoft.com/ " target="_blank">Microsoft 365 管理センター</a>に移動し、ユーザー名とパスワードでサインインします。
+1. [パスワード] <a href="https://admin.microsoft.com/ " target="_blank">Microsoft 365 管理センター</a>に移動し、ユーザー名とパスワードでサインインします。
 
 2. アプリ起動ツールで、[アプリの起動]**をOneDrive。**
 

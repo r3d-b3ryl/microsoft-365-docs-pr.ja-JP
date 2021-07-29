@@ -20,17 +20,18 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: このソリューションの手順に従って、組織のデータを保護Microsoft 365元の従業員を削除します。
-ms.openlocfilehash: dcc206cc0b088749c3936dcf1c548cc83b6fa595
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 00706f0dac37fe7be538a45908372ed1084dc9d0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394293"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541543"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概要: 元従業員とセキュリティで保護されたデータを削除する
 
@@ -38,7 +39,7 @@ ms.locfileid: "53394293"
 
 :::image type="content" source="../../media/delete-user-overview.png" alt-text="スクリーンショット: 元従業員を削除するための概要手順":::
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 このソリューションの手順を完了するには、グローバル管理者である必要があります。
 

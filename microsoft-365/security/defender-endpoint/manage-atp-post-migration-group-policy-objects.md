@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: ce204c1a90e57a651cf9c97974a8b35d405878cc
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: e7d5d7cf2e550ce91ec5d17fcf57d214e3db9b25
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908294"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541735"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>グループ ポリシー オブジェクトを使用して Microsoft Defender for Endpoint を管理する
 
@@ -56,21 +56,21 @@ ms.locfileid: "52908294"
 |**ネットワーク保護を有効** にして、従業員が悪意のあるコンテンツをインターネット上で使用するアプリを使用するのを防ぐ <br/><br/>*テスト環境で [ネットワーク保護のために](/microsoft-365/security/defender-endpoint/evaluate-network-protection) 監査モードを最初に使用して、展開前にブロックされるアプリを確認することをお勧めします。* |[グループ ポリシーを使用してネットワーク保護を有効にする](/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)  |
 |**ランサムウェアから保護するためにフォルダー** アクセスの制御を構成する <br/><br/>*[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders) は、アンチランソイエムウェア保護とも呼ばれます。*  |[グループ ポリシーを使用してフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy) |
 |**インターネット上Microsoft Defender SmartScreen** 悪意のあるサイトやファイルから保護する方法を構成します。  |[グループ Microsoft Defender SmartScreenを使用して、グループ ポリシーとモバイル デバイス管理 (MDM) の設定を構成する](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)  |
-|**暗号化と暗号化BitLocker** を構成して、組織で実行されているデバイスの情報を保護Windows |[BitLockerグループ ポリシーの設定](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings) |
-|**資格情報の盗難攻撃から** 保護するために Microsoft Defender Credential Guard を構成する |[グループ ポリシー Windows Defender Credential Guardしてグループ ポリシーを有効にする](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy) |
+|**暗号化と BitLocker を構成** して、組織で実行されているデバイスの情報を保護Windows |[BitLocker グループ ポリシーの設定](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings) |
+|**資格情報の盗難攻撃から** 保護するために Microsoft Defender Credential Guard を構成する |[グループ ポリシー Windows Defenderして Credential Guard を有効にする](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy) |
 
-## <a name="configure-your-microsoft-defender-security-center"></a>サーバーを構成Microsoft Defender セキュリティ センター
+## <a name="configure-your-microsoft-365-defender-portal"></a>ポータルをMicrosoft 365 Defenderする
 
-まだ実行していない場合は、Microsoft 365 Defender ポータルを構成して、アラートの表示、脅威保護機能の構成、組織の全体的なセキュリティ体制に関する詳細情報の表示を行います。 「Microsoft Defender セキュリティ センター」[を参照してください](microsoft-defender-security-center.md)。 また、エンド ユーザーが Defender ポータルで表示できる機能と機能Microsoft 365することもできます。
+まだ実行していない場合は、Microsoft 365 Defender ポータルを構成して、アラートの表示、脅威保護機能の構成、組織の全体的なセキュリティ体制に関する詳細情報の表示を行います。 「Microsoft 365 Defender」[を参照してください](microsoft-defender-security-center.md)。 エンド ユーザーがポータルで表示できる機能と機能を構成Microsoft 365 Defenderすることもできます。
 
-- [アプリケーションのMicrosoft Defender セキュリティ センター](/microsoft-365/security/defender-endpoint/use)
+- [概要 Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 
-- [エンドポイント保護: Microsoft Defender セキュリティ センター](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+- [エンドポイント保護: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## <a name="next-steps"></a>次の手順
 
-- [アプリケーションの概要を脅威と脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [セキュリティ操作ダッシュボードMicrosoft Defender セキュリティ センターアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [ポータルのセキュリティMicrosoft 365 Defenderダッシュボードにアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 
 - [Intune を使用してエンドポイント用 Microsoft Defender を管理する](manage-atp-post-migration-intune.md)

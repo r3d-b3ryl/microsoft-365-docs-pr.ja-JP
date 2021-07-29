@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 5ca16e125b1eb8377c3a591d039eb7da65b873fb
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 127d27e84cd7fc1fdaf530bc149f5d6e0d950337
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229097"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541723"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Intune を使用してエンドポイント用 Microsoft Defender を管理する
 
@@ -79,16 +79,16 @@ ms.locfileid: "53229097"
 |**組織のデバイスでアプリ** を監査または信頼するかどうかを選択する Microsoft Defender アプリケーションコントロールを構成する <br/><br/>*Microsoft Defender アプリケーションコントロールは [AppLocker とも呼ばれます](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)。*|[Microsoft Defender アプリケーション制御ポリシーを展開するには、次のMicrosoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune)<br/><br/>[エンドポイント保護: Microsoft Defender アプリケーション制御](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control)<br/><br/>[AppLocker CSP](/windows/client-management/mdm/applocker-csp)|
 |**デバイス制御と USB 周辺機器へのアクセスを** 構成して、承認されていない周辺機器の脅威がデバイスを侵害するのを防ぐ |[Microsoft Defender for Endpoint と Intune を使用して USB デバイスや他のリムーバブル メディアを制御する](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)  |
 
-## <a name="configure-your-microsoft-defender-security-center"></a>サーバーを構成Microsoft Defender セキュリティ センター
+## <a name="configure-your-microsoft-365-defender-portal"></a>ポータルをMicrosoft 365 Defenderする
 
-まだ実行していない場合は、Microsoft 365 Defender ポータルを構成して、アラートの表示、脅威保護機能の構成、組織の全体的なセキュリティ体制に関する詳細情報の表示を行います。 「Microsoft Defender セキュリティ センター」[を参照してください](microsoft-defender-security-center.md)。 エンド ユーザーがポータルで表示できる機能と機能を構成Microsoft 365 Defenderすることもできます。
+まだ実行していない場合は、Microsoft 365 Defender ポータルを構成して、アラートの表示、脅威保護機能の構成、組織の全体的なセキュリティ体制に関する詳細情報の表示を行います。 「Microsoft 365 Defender」[を参照してください](microsoft-defender-security-center.md)。 エンド ユーザーがポータルで表示できる機能と機能を構成Microsoft 365 Defenderすることもできます。
 
-- [アプリケーションのMicrosoft Defender セキュリティ センター](/microsoft-365/security/defender-endpoint/use)
+- [概要 Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 
-- [エンドポイント保護: Microsoft Defender セキュリティ センター](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+- [エンドポイント保護: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-- [アプリケーションの概要を脅威と脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [セキュリティ操作ダッシュボードMicrosoft Defender セキュリティ センターアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [ポータルのセキュリティMicrosoft 365 Defenderダッシュボードにアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

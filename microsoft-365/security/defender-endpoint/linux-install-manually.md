@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aa653b7f40be232c345f21ec00f7fadb60a4af0a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 28de961d49953af1a8e90a7cc411cd598368954f
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544651"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590974"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux での Microsoft Defender for Endpoint の手動展開
 
@@ -279,7 +279,7 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
 2. 最初のドロップダウン メニューで、オペレーティング システム **として [Linux Server]** を選択します。 2 番目のドロップダウン メニューで、展開 **方法として [ローカル スクリプト** ] を選択します。
 3. [オンボード **パッケージのダウンロード] を選択します**。 ファイルを [ファイル名] WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft 365 Defenderポータルのスクリーンショット](images/atp-portal-onboarding-linux.png)
+    ![Microsoft 365 Defenderポータルのスクリーンショット](images/portal-onboarding-linux.png)
 
 4. コマンド プロンプトから、ファイルが存在するように確認します。
     アーカイブの内容を抽出します。

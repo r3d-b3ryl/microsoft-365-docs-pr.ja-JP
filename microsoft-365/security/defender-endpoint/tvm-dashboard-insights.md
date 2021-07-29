@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82b6123a99eb406918708c6bf23b870ef3bc3d79
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d4ec716f82fb3dd2352183be8f8cf0d81bcebfff
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934143"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568046"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>ダッシュボードの分析情報 - 脅威と脆弱性の管理
 
@@ -44,7 +44,7 @@ ms.locfileid: "51934143"
 - インシデント調査中の貴重なデバイスの脆弱性コンテキスト
 - 組み込みの修復プロセスは、Microsoft IntuneとMicrosoft Endpoint Configuration Manager  
   
-次のコマンドで[脅威と脆弱性の管理機能Microsoft Defender セキュリティ センター](https://securitycenter.windows.com/)使用できます。
+このポータルでは、脅威と脆弱性の管理機能[Microsoft 365 Defender使用](https://security.microsoft.com/)できます。
 
 - 露出スコアと Microsoft Secure Score for Devices を、セキュリティ上の推奨事項、ソフトウェアの脆弱性、修復アクティビティ、公開されたデバイスと共に表示する
 - 分析情報EDRエンドポイントの脆弱性と関連付け、それらを処理する
@@ -60,13 +60,13 @@ ms.locfileid: "51934143"
 
 ## <a name="threat-and-vulnerability-management-dashboard"></a>脅威と脆弱性の管理ダッシュボード
 
- ![Microsoft Defender for Endpoint portal](images/tvm-dashboard-devices.png)
+:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="デバイスの脅威と脆弱性管理ダッシュボード":::
 
 分野 | 説明
 :---|:---
 **選択したデバイス グループ (#/#)**   | ダッシュボードに脅威と脆弱性の管理するデータをフィルター処理し、デバイス グループ別にカードをフィルター処理します。 フィルターで選択した項目は、ページ全体に脅威と脆弱性の管理されます。
-[**暴露スコア**](tvm-exposure-score.md)   | 組織のデバイスが脅威や脆弱性にさらされている現在の状態を確認します。 デバイスで検出された弱点、デバイスが侵害される可能性、組織に対するデバイスの価値、デバイスで検出された関連アラートなど、組織の露出スコアに影響を与える要因がいくつかあります。 目標は、組織の露出スコアを下げ、より安全に行う方法です。 スコアを減らすには、セキュリティに関する推奨事項に記載されている関連するセキュリティ構成の問題を修復する必要があります。
-[**デバイス向けの Microsoft セキュア スコア**](tvm-microsoft-secure-score-devices.md) | 組織のオペレーティング システム、アプリケーション、ネットワーク、アカウント、およびセキュリティ制御のセキュリティ体制を参照してください。 目標は、関連するセキュリティ構成の問題を修復して、デバイスのスコアを上げです。 バーを選択すると、[セキュリティの推奨事項] **ページに移動** します。
+[**露出スコア**](tvm-exposure-score.md)   | 組織のデバイスが脅威や脆弱性にさらされている現在の状態を確認します。 デバイスで検出された弱点、デバイスが侵害される可能性、組織に対するデバイスの価値、デバイスで検出された関連アラートなど、組織の露出スコアに影響を与える要因がいくつかあります。 目標は、組織の露出スコアを下げ、より安全に行う方法です。 スコアを減らすには、セキュリティに関する推奨事項に記載されている関連するセキュリティ構成の問題を修復する必要があります。
+[**デバイスの Microsoft Secure Score**](tvm-microsoft-secure-score-devices.md) | 組織のオペレーティング システム、アプリケーション、ネットワーク、アカウント、およびセキュリティ制御のセキュリティ体制を参照してください。 目標は、関連するセキュリティ構成の問題を修復して、デバイスのスコアを上げです。 バーを選択すると、[セキュリティの推奨事項] **ページに移動** します。
 **デバイスの露出の分布** | 露出レベルに基づいて公開されるデバイスの数を確認します。 ドーナツ グラフのセクションを選択して、[デバイス] リストページに移動し、影響を受けるデバイス名、露出レベル、リスク レベル、その他の詳細 (ドメイン、オペレーティング システム プラットフォーム、正常性状態、最後に表示された状態、タグなど) を表示します。
 **セキュリティに関する推奨事項の上位** | 組織のリスクエクスポージャーと必要な緊急性に基づいて並べ替え、優先順位が付けられている照合されたセキュリティ推奨事項を参照してください。 [ **詳細を表示]** を選択すると、一覧に残りのセキュリティ推奨事項が表示されます。 例外 **がある推奨事項の一** 覧の [例外の表示] を選択します。
 **脆弱なソフトウェアの上位** | ネットワークのデバイスにインストールされている脆弱なソフトウェアのスタックランクのリストと、そのソフトウェアが組織の露出スコアに与える影響について、組織のソフトウェア インベントリをリアルタイムで可視化します。 [ソフトウェア インベントリ]ページで、脆弱なソフトウェアリストの残りの部分を表示するには、詳細のアイテムを選択するか、[詳細を表示]**を選択** します。
@@ -76,7 +76,7 @@ ms.locfileid: "51934143"
 ポータル全体で使用されるアイコンの詳細については [、「Microsoft Defender for Endpoint アイコン」を参照してください](portal-overview.md#microsoft-defender-for-endpoint-icons)。
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [暴露スコア](tvm-exposure-score.md)

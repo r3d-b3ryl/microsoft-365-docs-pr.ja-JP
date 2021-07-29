@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 371208433cbb0f65ab5a2808318c03dae6bb6d8b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c86a8fb2021baeb34082cdbcc60a7372da407a4f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842288"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541774"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS での Microsoft Defender for Endpoint の展開
 
@@ -37,7 +37,7 @@ ms.locfileid: "52842288"
 
 このトピックでは、登録されているデバイス上の iOS での Defender for Endpoint の展開Intune ポータル サイト説明します。 Intune デバイスの登録の詳細については、「Intune に [iOS/iPadOS デバイスを登録する」を参照してください](/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Microsoft Endpoint Manager 管理センター [へのアクセス権を持っている必要があります](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -106,10 +106,10 @@ iOS 上の Defender for Endpoint を展開するには、Intune ポータル サ
 
 2. [Defender for Endpoint] アプリ アイコン (MSDefender) をタップし、画面の指示に従ってオンボーディングの手順を完了します。 詳細には、iOS 上の Defender for Endpoint で必要な iOS アクセス許可のエンド ユーザーによる承諾が含まれます。
 
-3. オンボードが正常に完了すると、デバイスはデバイス の [デバイス] リストに表示Microsoft Defender セキュリティ センター。
+3. オンボードが成功すると、デバイスはポータルの [デバイス] リストに表示Microsoft 365 Defenderされます。
 
     > [!div class="mx-imgBorder"]
-    > ![自動的に生成された携帯電話の説明のスクリーンショット](images/e07f270419f7b1e5ee6744f8b38ddeaf.png)
+    > ![自動的に生成された携帯電話の説明のスクリーンショット](images/device-inventory-screen.png)
 
 ## <a name="configure-microsoft-defender-for-endpoint-for-supervised-mode"></a>監視モード用に Microsoft Defender for Endpoint を構成する
 
@@ -166,4 +166,5 @@ Intune を使用すると、アプリ構成ポリシーを使用して Defender 
 
 ## <a name="next-steps"></a>次の手順
 
-[iOS の機能でエンドポイント用 Defender を構成する](ios-configure-features.md)
+- [Defender for Endpoint リスクシグナル (MAM) を含めるアプリ保護ポリシーを構成する](ios-install-unmanaged.md)
+- [iOS の機能でエンドポイント用 Defender を構成する](ios-configure-features.md)

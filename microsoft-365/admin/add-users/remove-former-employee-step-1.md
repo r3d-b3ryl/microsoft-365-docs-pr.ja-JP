@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 元従業員のログインをブロックし、サービスへのアクセスMicrosoft 365します。
-ms.openlocfilehash: 58b65a0a886460e8be01635c857433773cfc9059
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 69108539a87e9db4aa72851e5622a5f3856d3a45
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177119"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541627"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>手順 1 - 元従業員のログインを防止し、サービスへのアクセスMicrosoft 365する
 
@@ -38,7 +39,7 @@ ms.locfileid: "53177119"
 > [!NOTE]
 > 他の管理者のサインアウトを開始するには、グローバル管理者である必要があります。 管理者以外のユーザーの場合は、ユーザー管理者またはヘルプデスク管理者ユーザーを使用してこのアクションを実行できます。 [管理者ロールの詳細](about-admin-roles.md)
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 2. ユーザーの名前の横にあるボックスを選択し、[パスワードのリセット] **を選択します**。
 3. 新しいパスワードを入力し、[リセット] を **選択します**。 (送信しない。
 4. ユーザーの名前を選択してプロパティ ウィンドウに移動し、[アカウント]タブで [すべてのセッションからサインアウト]**を選択します**。
@@ -57,7 +58,7 @@ PowerShell を使用してユーザーをすぐにサインアウトするには
 > [!IMPORTANT]
  > アカウントをブロックすると、有効に 24 時間かかる場合があります。 ユーザーのサインイン アクセスを直ちに防止する必要がある場合は、上記の手順に従ってパスワードをリセットします。
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 2. ブロックする従業員の名前を選択し、ユーザーの名前の下にある [このユーザーをブロックする] の記号 **を選択します**。
 3. [ **ユーザーのサインインをブロックする**] を選択し、[保存] を **選択します**。
 
@@ -68,4 +69,9 @@ Microsoft 365 サブスクリプションの一部としてメールがある場
 1. <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange 管理センター</a>に移動します。
 2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
 3. ユーザーをダブルクリックし、[メール アプリ] の [メール アプリ **の設定の管理** ] **に移動します**。 すべての **オプション** のスライダーをオフにします。**モバイル (Exchange ActiveSync)** **、Outlook on the web**、Outlook **デスクトップ (MAPI)** **、Exchange Web** サービス **、POP3、****および IMAP** です。
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[Exchangeの管理センター Exchange Online](/exchange/exchange-admin-center) 
+[ユーザーの復元](restore-user.md)

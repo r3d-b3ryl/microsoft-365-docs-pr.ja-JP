@@ -23,22 +23,31 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 グループでは、メンバーは会話用のグループ メールおよび共有ワークスペース、ファイル、カレンダー イベント、ストリーム、Planner を利用できます。
-ms.openlocfilehash: 12da954beb4d019b7652ef4df2e18cb30ff542ed
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: c043a1cd796789e9da51cbb6c1f59d7a7c8df07d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393261"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541651"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
 Microsoft 365 管理センターの [ **グループ**] セクションでは、次の種類のグループを作成および管理できます。 
 
-- **Microsoft 365 グループ** (旧称 Office 365 グループ) は、会社の内外のユーザー間での共同作業に使用されます。
+- **Microsoft 365 グループ** は、社内外のユーザー間での共同作業に使用されます。 これには、SharePoint や Planner などのコラボレーション サービスが含まれます。
 - **配布グループ** は、ユーザーのグループにメール通知を送信するのに使用されます。
 - **セキュリティ グループ** は、SharePoint サイトなどのリソースへのアクセスを許可するために使用されます。
 - **メールが有効なセキュリティ グループ** は、SharePoint などのリソースへのアクセスを許可し、それらのユーザーにメールで通知を送信するために使用されます。
 - **共有メールボックス** は、会社情報やサポート メール アドレスなど、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。
+
+一部のグループでは、動的メンバーシップまたはメールが許可されます。
+
+||Microsoft 365 グループ|配布グループ|セキュリティ グループ|メールが有効なセキュリティ グループ|共有メールボックス|
+|:----|:----|:----|:----|:----|:----|
+|**メールが有効**|はい|はい|いいえ|はい|はい|
+|**Azure AD での動的メンバーシップ**|はい|いいえ|はい|いいえ|なし|
+
+これらのグループの種類はすべて、Power Automate で使用できます。
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365 グループ
 

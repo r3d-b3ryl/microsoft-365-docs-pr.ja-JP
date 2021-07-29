@@ -20,17 +20,18 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: この記事の手順に従って、別の従業員に元従業員のデータとOneDriveアクセスOutlookします。
-ms.openlocfilehash: b5868ab1622fea68cc3dabb54a3d06208ccaa165
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 67ec651361aac2b687fa1b0f851271ced5e634ed
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394305"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541591"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする
 
@@ -188,6 +189,4 @@ Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファ�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理者アカウントに管理者を追加OneDriveする](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)(記事)\
-[削除されたファイルを復元OneDrive](/onedrive/restore-deleted-onedrive) (記事)\
-[OneDrive保持と削除 (](/onedrive/retention-and-deletion)記事)
+[OneDrive](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)アカウントで管理者を追加および削除する (記事) 削除済み[OneDrive](/onedrive/restore-deleted-onedrive) ([記事)](/onedrive/retention-and-deletion) OneDrive 保持と削除 (記事) OneDrive ファイルとフォルダーを[共有](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)する

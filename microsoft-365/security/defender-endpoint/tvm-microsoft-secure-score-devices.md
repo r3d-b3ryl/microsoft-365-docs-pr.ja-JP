@@ -1,5 +1,5 @@
 ---
-title: デバイス向けの Microsoft セキュア スコア
+title: デバイスの Microsoft Secure Score
 description: デバイスのスコアは、アプリケーション、オペレーティング システム、ネットワーク、アカウント、およびセキュリティ制御全体にわたるデバイスの一括セキュリティ構成状態を示します。
 keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, 脅威と脆弱性の管理, security controls, improvement opportunitis, security configuration score over time, security posture, baseline
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13307d3205818d41e7b2219b4e3a4ed6e9f2d5bb
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: bddd635506f5a37585bc8c06fb44e1c2fbffd721
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454792"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567958"
 ---
-# <a name="microsoft-secure-score-for-devices"></a>デバイス向けの Microsoft セキュア スコア
+# <a name="microsoft-secure-score-for-devices"></a>デバイスの Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,6 +56,7 @@ ms.locfileid: "53454792"
 Microsoft Defender for Endpoint シグナルを転送し、Microsoft Secure Score をデバイスのセキュリティ状態に可視化します。 転送されたデータは、Microsoft Secure Score データと同じ場所に保存および処理されます。
 
 変更は、ダッシュボードに反映するために数時間かかる場合があります。
+
 
 1. ナビゲーション ウィンドウで、[**エンドポイントの全般** 設定  >  **機能]**  >    >  **に移動します。** 
 
@@ -110,7 +111,7 @@ Microsoft Secure Score for Devices カードのデータは、細心の注意を
 >1. [Microsoft Update [Catalog] に移動します](https://www.catalog.update.microsoft.com/home.aspx)。
 >2. ダウンロードする必要があるセキュリティ更新プログラムの KB 番号をキーインし、[検索] を **クリックします**。  
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

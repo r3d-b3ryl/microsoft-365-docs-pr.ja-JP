@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) と Microsoft Defender で使用できるフィッシング対策ポリシーについてOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9abed7f9601872eeb14ceb294c54a1cb54f63c2f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: d214692e5511e7fcb10f2d1c79c9a8797ec04fff
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229109"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568138"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -221,7 +221,7 @@ EOP および Defender のフィッシング対策ポリシーでは、次のス
   - **メッセージを配信し、他のアドレスを Bcc 行に追加する**
   - **配信前にメッセージを削除する**
 
-- **信頼できる送信者とドメインを追加する**: 偽装保護設定の例外。 指定された送信者および送信者ドメインからのメッセージは、ポリシーによって偽装ベースの攻撃として分類されません。 つまり、保護された送信者、保護されたドメイン、またはメールボックス インテリジェンス保護のアクションは、これらの信頼できる送信者または送信者ドメインには適用されません。 これらのリストの最大制限は、約 1000 エントリです。
+- **信頼できる送信者とドメインを追加する**: 偽装保護設定の例外。 指定された送信者および送信者ドメインからのメッセージは、ポリシーによって偽装ベースの攻撃として分類されません。 つまり、保護された送信者、保護されたドメイン、またはメールボックス インテリジェンス保護のアクションは、これらの信頼できる送信者または送信者ドメインには適用されません。 これらのリストの最大制限は 1024 エントリです。
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender のフィッシング対策ポリシーの高度なフィッシングOffice 365
 

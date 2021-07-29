@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 次の手順に従って、元従業員のユーザー アカウントを削除します。
-ms.openlocfilehash: e2e1b234eaee3818321761af8f737bad8d131b62
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 3db2eb7fd4c73854a759ee4026d6f9b9c12dfa82
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286324"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541555"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>手順 7 - 元従業員のユーザー アカウントを削除する
 
@@ -38,7 +39,7 @@ ms.locfileid: "53286324"
 > [!IMPORTANT]
 > メールの転送を設定した場合や、アカウントを共有メールボックスに変換した場合、アカウントを削除しないでください。いずれの場合も、メール転送および共有メールボックスを固定するには、アカウントが必要です。
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 2. 削除する従業員の名前を選択します。
 3. ユーザーの名前の下で、[ユーザーの削除] **を選択します**。 このユーザーに必要なオプションを選択し、[ユーザーの削除] **を選択します**。 既に別のユーザーにこのユーザーの電子メールへのアクセス権を与え、OneDrive場合は、ここでもう一度行う必要はありません。
 
@@ -48,7 +49,7 @@ ms.locfileid: "53286324"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="does-your-organization-use-active-directory"></a>組織では Active Directory を使用していますか。
 

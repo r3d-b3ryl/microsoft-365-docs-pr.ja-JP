@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定されたファイルを使用してテンプレートを作成Excelします。
-ms.openlocfilehash: 4386f5be67d01d3d6961ccc4bd51ecf729bc8a38
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 60b453faf44ae80a8bd066e93f759cd23413ce3b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419585"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541867"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーでの評価テンプレートの操作
 
@@ -30,7 +30,11 @@ ms.locfileid: "53419585"
 
 ## <a name="templates-overview"></a>テンプレートの概要
 
-テンプレートは、コンプライアンス マネージャーで評価を作成するためのコントロールのフレームワークです。 当社の包括的なテンプレートセットは、データの収集と使用を管理する国内、地域、および業界固有の要件を組織が遵守するのに役立ちます。 テンプレートは、EU GDPR テンプレートや ISO/IEC 27701:2019 テンプレートなど、基になる認定または規制と同じ名前で参照されます。 コンプライアンス管理はさまざまな種類の製品を評価するために使用できます。各テンプレートには、Microsoft 365 に適用されるバージョンと、選択した製品に合わせてカスタマイズできるユニバーサル バージョンの 2 つのバージョンがあります。
+テンプレートは、コンプライアンス マネージャーで評価を作成するためのコントロールのフレームワークです。 当社の包括的なテンプレートセットは、データの収集と使用を管理する国内、地域、および業界固有の要件を組織が遵守するのに役立ちます。
+
+テンプレートは、EU GDPR テンプレートや ISO/IEC 27701:2019 テンプレートなど、基になる認定または規制と同じ名前で参照されます。 コンプライアンス管理はさまざまな種類の製品を評価するために使用できます。各テンプレートには、Microsoft 365 に適用されるバージョンと、選択した製品に合わせてカスタマイズできるユニバーサル バージョンの 2 つのバージョンがあります。
+
+米国政府Community (GCC) 中程度、GCC 高、および国防総省 (DoD) のお客様は現在、Microsoft 365 テンプレート バージョンを使用できますが、ユニバーサルではありません。
 
 ## <a name="template-availability-and-licensing"></a>テンプレートの可用性とライセンス
 

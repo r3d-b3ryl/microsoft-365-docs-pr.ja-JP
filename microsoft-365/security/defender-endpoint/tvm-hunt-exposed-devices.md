@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9a8ebcc89c3009cd93fbb42f2a74bbb9ffcc31b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c47d11bd1afe247b687b8736b4cad8fa4e906bb1
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934095"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567994"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>公開されているデバイスのハント - 脅威と脆弱性の管理
 
@@ -55,7 +55,7 @@ ms.locfileid: "51934095"
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>重大度の高いアラートに関係するデバイスを確認する
 
-1. [高度 **な検索] に** 移動するには、アプリの左側のナビゲーション ウィンドウMicrosoft Defender セキュリティ センター。
+1. ポータルの **左側** のナビゲーション ウィンドウから [ハンティングの高度な  >  Microsoft 365 Defenderします。
 
 2. TVM 高度なハンティング スキーマまで下にスクロールして、列名を理解します。
 
@@ -75,7 +75,7 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 | order by NumOfVulnerabilities desc
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [セキュリティ上の推奨事項](tvm-security-recommendation.md)
