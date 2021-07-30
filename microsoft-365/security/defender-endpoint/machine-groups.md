@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 33d3cf5d8f42f21f62f3542342092a0330c17ee5
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 84fb4be9bb6b1f86b8203bef32f890ba5ec1a36f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622582"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652913"
 ---
 # <a name="create-and-manage-device-groups"></a>デバイス グループの作成と管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "53622582"
 - Azure Active Directory
 - Office 365
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 エンタープライズ シナリオでは、通常、セキュリティ操作チームには一連のデバイスが割り当てられます。 これらのデバイスは、ドメイン、コンピューター名、指定されたタグなどの一連の属性に基づいてグループ化されます。

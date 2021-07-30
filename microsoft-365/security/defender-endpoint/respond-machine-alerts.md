@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ef2ce805eca6e82779eca0ced1c2f03441574cc4
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 458173fc9c35e59c667ac05f6179b2b48ca77a0e
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621813"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656669"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -30,7 +30,7 @@ ms.locfileid: "53621813"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-respondmachine-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
 デバイスを分離するか、調査パッケージを収集することで、検出された攻撃に迅速に対応します。 デバイスでアクションを実行した後、アクション センターでアクティビティの詳細を確認できます。
 

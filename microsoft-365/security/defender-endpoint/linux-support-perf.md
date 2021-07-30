@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 998d8c500613ffa9fc6d790535e555ff9503f590
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: edad9446575ae1165f9268de1bb61ed7cc2f4893
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281019"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53653021"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のパフォーマンスの問題のトラブルシューティング
 
@@ -32,7 +32,7 @@ ms.locfileid: "52281019"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 この記事では、Defender for Endpoint on Linux に関連するパフォーマンスの問題を絞り込む一般的な手順について説明します。
 
@@ -147,7 +147,7 @@ ms.locfileid: "52281019"
 
 5. パフォーマンスの問題に寄与するプロセスまたはディスクの場所を除外して、Microsoft Defender for Endpoint on Linux を構成し、リアルタイム保護を再び有効にしてください。
 
-    詳細については [、「Configure and validate exclusions for Microsoft Defender for Endpoint on Linux」を参照してください](linux-exclusions.md)。
+    詳細については、「[Linux 用の Microsoft Defender for Endpoint の除外を構成および検証する](linux-exclusions.md)」 を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [エージェントの正常性に関する問題の調査](health-status.md)

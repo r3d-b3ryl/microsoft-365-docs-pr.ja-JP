@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9fe35f5bac942cc5a4e9fa95a5eaf9759072d832
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 7fff23a0dca7e365a9580ff5a72a61d97a7671fe
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542191"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53653180"
 ---
 # <a name="resources"></a>リソース
 
@@ -35,7 +35,7 @@ ms.locfileid: "53542191"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="collect-diagnostic-information"></a>診断情報の収集
 
@@ -148,7 +148,7 @@ Linux で Defender for Endpoint をアンインストールするには、いく
 Defender for Endpoint ポータルには、次の 2 つのカテゴリの情報が表示されます。
 
 - 次のウイルス対策アラートを含む。
-  - 重大度
+  - 緊急度
   - スキャンの種類
   - デバイス情報 (ホスト名、デバイス識別子、テナント識別子、アプリのバージョン、OS の種類)
   - ファイル情報 (名前、パス、サイズ、ハッシュ)

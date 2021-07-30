@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9c31d62933ecb34d75e048101891fa7fa7b4256d
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 333cacf1bce50463fdfbac4023ae724a7564809c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587698"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656585"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>ソフトウェア インベントリ - 脅威と脆弱性の管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "53587698"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ソフトウェア インベントリは、脅威と脆弱性の管理共通プラットフォーム列挙[(CPE)](https://nvd.nist.gov/products/cpe)を使用して組織内の既知のソフトウェアの一覧です。 公式 CPE のないソフトウェア製品には、脆弱性が公開されません。 また、ベンダーの名前、弱点の数、脅威、公開されているデバイスの数などの詳細も含まれています。
 

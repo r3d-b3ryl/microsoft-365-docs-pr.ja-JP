@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 07/29/2021
+ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: fedd48d935ec023b8cd929cb978f5181914f546c
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: a285815a3f05054627d46144aa11f2790cce1535
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53663877"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652901"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Intune を使用してエンドポイント用 Microsoft Defender を管理する
 
@@ -44,7 +44,7 @@ ms.locfileid: "53663877"
 ## <a name="find-your-microsoft-defender-for-endpoint-settings-in-intune"></a>Intune で Microsoft Defender for Endpoint の設定を検索する
 
 > [!IMPORTANT]
-> この記事で説明する設定を構成するには、Intune でグローバル管理者またはサービス管理者の役割が割り当てられている必要があります。 詳細については、「管理者の **[種類 (Intune)」を参照してください](/mem/intune/fundamentals/users-add#types-of-administrators)**。
+> この記事で説明する設定を構成するには、Intune のグローバル管理者またはサービス管理者である必要があります。 詳細については、「管理者の **[種類 (Intune)」を参照してください](/mem/intune/fundamentals/users-add#types-of-administrators)**。
 
 1. Azure portal ( ) に移動 [https://portal.azure.com](https://portal.azure.com) し、サインインします。
 

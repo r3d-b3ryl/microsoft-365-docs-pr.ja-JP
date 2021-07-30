@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0d44f59f69c590ecd8d61207de8784af3e32197d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e207978dbb65863764c66c5afc5c467552100461
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844888"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656657"
 ---
 # <a name="advanced-hunting-using-powershell"></a>PowerShell を使用した高度な追求
 
@@ -30,7 +30,7 @@ ms.locfileid: "52844888"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -129,5 +129,5 @@ $results | ConvertTo-Json | Set-Content file1.json
 
 ## <a name="related-topic"></a>関連トピック
 - [エンドポイント API 用 Microsoft Defender](apis-intro.md)
-- [高度な追及 API](run-advanced-query-api.md)
+- [高度な追求 API](run-advanced-query-api.md)
 - [Python を使用した高度な追求](run-advanced-query-sample-python.md)

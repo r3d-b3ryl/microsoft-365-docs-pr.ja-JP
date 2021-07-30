@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: acd6a20fa0ba1fd7d005854f980421d19644752a
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 73935cad9372676a6711a575e157c24ce4955dc4
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623722"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656741"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Microsoft 365 Defender ポータルの概要
 
@@ -33,7 +33,7 @@ ms.locfileid: "53623722"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Enterpriseチームは、Microsoft 365 Defenderを使用して、潜在的な永続的な脅威アクティビティやデータ侵害の警告を監視および支援できます。
 
