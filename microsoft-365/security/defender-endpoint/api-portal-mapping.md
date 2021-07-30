@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81f4280e86ec2e914cff5c713bf71c1c3bd03ec2
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 0f3b33335eb331cfebdfbeb358b74b8b5275e704
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587995"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650585"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender for Endpoint detections API フィールド
 
@@ -31,7 +31,7 @@ ms.locfileid: "53587995"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
 検出 API の一部として公開されるデータ フィールドと、そのデータ フィールドが検出 API にマップMicrosoft 365 Defender。
 
@@ -54,7 +54,7 @@ ms.locfileid: "53587995"
 > |ポータル ラベル|SIEM フィールド名|ArcSight フィールド|値の例|説明|
 > |---|---|---|---|---|
 > |1|AlertTitle|name|Microsoft Defender AV が 「ミカッツ」 の重大度の高いマルウェアを検出しました|すべての検出で使用可能な値。|
-> |2|重大度|deviceSeverity|高い|すべての検出で使用可能な値。|
+> |2|緊急度|deviceSeverity|高い|すべての検出で使用可能な値。|
 > |3|カテゴリ|deviceEventCategory|マルウェア|すべての検出で使用可能な値。|
 > |4 |検出ソース|sourceServiceName|ウイルス対策|Microsoft Defender ウイルス対策または Defender for Endpoint。 すべての検出で使用可能な値。|
 > |5 |MachineName|sourceHostName|desktop-4a5ngd6|すべての検出で使用可能な値。|

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint の展開を準備する
+title: Microsoft Defender for Endpoint 展開の準備
 description: Microsoft Defender for Endpoint を展開するために、関係者の承認、タイムライン、環境に関する考慮事項、導入順序を準備する
 keywords: 展開、準備、関係者、タイムライン、環境、エンドポイント、サーバー、管理、導入
 search.product: eADQiWindows 10XVcnh
@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7841197594941354b21bd2104cd27ef37a1a25c9
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 58e5c388ceb2fa03782c073bc0802da5b6d06564
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964598"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651041"
 ---
-# <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開を準備する
+# <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint 展開の準備
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "52964598"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
@@ -111,9 +111,9 @@ Defender for Endpoint では、アクセス許可を管理する 2 つの方法�
 
 | 階層   | 説明                                                                                                                                                                                                 | アクセス許可が必要 |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| 階層 1 | **ローカル セキュリティ運用チーム /IT チーム**<br>このチームは通常、地理的位置内に含まれるアラートをトリアージして調査し、アクティブな修復が必要な場合は階層 2 にエスカレートします。                                              |                     |
-| 階層 2 | **地域のセキュリティ運用チーム**<br>このチームは、地域のすべてのデバイスを表示し、修復アクションを実行できます。                                                                                                                        |        データの表示               |
-| 階層 3 | **グローバル セキュリティ運用チーム**<br>このチームはセキュリティ専門家で構成され、ポータルからすべてのアクションを表示して実行する権限があります。 | データの表示 <br>  アラートの調査 アクティブな修復アクション <br> アラートの調査 アクティブな修復アクション <br> ポータル システム設定の管理 <br> セキュリティ設定の管理 |
+| 階層 1 | **ローカル セキュリティ運用チーム / IT チーム**<br>このチームは通常、地理的位置内に含まれるアラートをトリアージして調査し、アクティブな修復が必要な場合は階層 2 にエスカレートします。                                              |                     |
+| 階層 2 | **地域のセキュリティ運用チーム**<br>このチームは、地域のすべてのデバイスを表示し、修復アクションを実行できます。                                                                                                                        |        データを表示               |
+| 階層 3 | **グローバル セキュリティ運用チーム**<br>このチームはセキュリティ専門家で構成され、ポータルからすべてのアクションを表示して実行する権限があります。 | データを表示 <br>  アラートの調査 アクティブな修復アクション <br> アラートの調査 アクティブな修復アクション <br> ポータル システム設定の管理 <br> セキュリティ設定の管理 |
 
 
 
@@ -126,10 +126,10 @@ Defender for Endpoint では、アクセス許可を管理する 2 つの方法�
 
 | コンポーネント                               | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 導入順序ランク |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| エンドポイント検出&応答 (EDR)     | Defender for Endpoint エンドポイントでの検出と対応機能は、ほぼリアルタイムでアクション可能な高度な攻撃検出を提供します。 セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 <br> [詳細情報](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
-|脅威&脆弱性管理 (TVM)|脅威&脆弱性管理は、Microsoft Defender for Endpoint のコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、次の固有の値を提供します。 <br> - エンドポイントの脆弱性エンドポイントでの検出と対応関連EDRリアルタイムの分析情報 <br> - インシデント調査中の貴重なデバイスの脆弱性コンテキスト <br> - 組み込みの修復プロセスは、Microsoft Intuneおよび Microsoft System Center Configuration Manager <br> [詳細情報](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845) を参照してください。| 2 |
+| エンドポイント検出&応答 (EDR)     | Defender for Endpoint endpoint detection and response capabilitis provide advanced attack detections are near real-time and actionable. セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 <br> [詳細情報](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
+|脅威&脆弱性管理 (TVM)|脅威&脆弱性管理は、Microsoft Defender for Endpoint のコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、次の固有の値を提供します。 <br> - エンドポイントの脆弱性と関連するリアルタイムEDR検出と応答 (EDR) 分析情報 <br> - インシデント調査中の貴重なデバイスの脆弱性コンテキスト <br> - 組み込みの修復プロセスは、Microsoft Intuneおよび Microsoft System Center Configuration Manager <br> [詳細情報](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845) を参照してください。| 2 |
 | 次世代保護 (NGP)        | Microsoft Defender ウイルス対策は、デスクトップ、ポータブル コンピューター、およびサーバーに次世代の保護を提供する組み込みのマルウェア対策ソリューションです。 Microsoft Defender ウイルス対策には、次のものが含まれます。 <br> -クラウドによって提供される、新しい脅威や新しい脅威のほぼ瞬時の検出とブロックに対する保護。 機械学習やインテリジェント セキュリティ グラフに加えて、クラウドによる保護は Microsoft Defender ウイルス対策を強化する次世代テクノロジの一部です。   <br> - 高度なファイルとプロセスの動作監視、その他のヒューリスティック ("リアルタイム保護" とも呼ばれる) を使用した常時スキャン。 <br> - 機械学習、人間および自動化されたビッグ データ分析、および詳細な脅威耐性の調査に基づく専用の保護更新プログラム。 <br> [詳細情報](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) を参照してください。                                                                                                                                                                                                                                                                                                                                                                       |3                   |
-| 攻撃表面の縮小 (ASR)          | Microsoft Defender for Endpoint の攻撃表面の縮小機能は、新しい脅威や新たな脅威から組織内のデバイスとアプリケーションを保護するのに役立ちます。 <br> [詳細情報](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)                                                                                                                                                                                                                                                                                                                                                                                       | 4                   |
+| 攻撃表面の縮小 (ASR)          | Microsoft Defender for Endpoint の攻撃表面の縮小機能は、新しい脅威や新たな脅威から組織内のデバイスとアプリケーションを保護するのに役立ちます。 <br> [詳細情報](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)                                                                                                                                                                                                                                                                                                                                                                                       | 4                    |
 | 自動調査&修復 (AIR)  | Microsoft Defender for Endpoint では、自動調査を使用して、個別に調査する必要があるアラートの量を大幅に削減します。 自動調査機能は、さまざまな検査アルゴリズムと、アナリストが使用するプロセス (プレイブックなど) を活用してアラートを調べ、違反を解決するために直ちに修復アクションを実行します。 これにより、アラート量が大幅に削減され、セキュリティ運用の専門家は、より高度な脅威やその他の価値の高い業務に集中できるようになります。 <br>[詳細情報](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) | 該当なし      |
 | Microsoft 脅威エキスパート (MTE)          | Microsoft 脅威エキスパートは、セキュリティ オペレーション センター (SOC) にエキスパート レベルの監視と分析を提供するマネージ ハンティング サービスで、固有の環境における重大な脅威を見逃すのを防いでお手伝いします。 <br>[詳細情報](/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | 該当なし      |
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7997a1367126cd22417683b22409e6254204e1bf
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: fbce67602006a86c71bf3b802d8b69e2cd367104
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567130"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664071"
 ---
 # <a name="configure-device-discovery"></a>デバイス検出の構成
 
@@ -51,7 +51,7 @@ ms.locfileid: "53567130"
 1. [デバイスの検出 **設定 >に移動します**。
 2. オンボード デバイスで使用する検出モードを選択します。
 3. 標準検出を使用する場合は、アクティブなプロブに使用するデバイス (すべてのデバイスまたはデバイス タグを指定してサブセット上) を選択します。
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>デバイスが標準検出でアクティブにプローブされるのを除外する
 
@@ -108,6 +108,19 @@ DeviceNetworkInfo
 | extend NetworkName = tostring(ConnectedNetworks ["Name"]), Description = tostring(ConnectedNetworks ["Description"]), NetworkCategory = tostring(ConnectedNetworks ["Category"])
 | where NetworkName == "<your network name here>"
 ```
+
+## <a name="get-information-on-device"></a>デバイスの情報を取得する
+
+次の高度な検索クエリを使用して、特定のデバイスの最新の完全な情報を取得できます。
+
+```kusto
+DeviceInfo
+| where DeviceName == "<device name here>" and isnotempty(OSPlatform)
+| summarize arg_max(Timestamp, *) by DeviceId 
+```
+
+
+
 
 ## <a name="see-also"></a>関連項目
 

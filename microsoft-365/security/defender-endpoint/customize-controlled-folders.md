@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: e12368b6241a2c79eead66ed77b30b7864af3955
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: d8db481c06df22592897389656601be2dc9ab0c4
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326534"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657305"
 ---
 # <a name="customize-controlled-folder-access"></a>制御されたフォルダー アクセスをカスタマイズする
 
@@ -29,7 +29,7 @@ ms.locfileid: "52326534"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 フォルダー アクセスの制御により、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019 WindowsクライアントでWindows 10されます。 この記事では、フォルダー アクセスの制御機能をカスタマイズする方法について説明し、次のセクションを示します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "52326534"
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>アプリを使用Windows セキュリティフォルダーを保護する
 
-1. タスク バー Windows セキュリティシールド アイコンを選択するか、[スタート] メニューでセキュリティを検索して、アプリ *を開* きます。
+1. タスク バー Windows セキュリティシールド アイコンを選択するか、タスク バーでセキュリティを検索して、アプリを開スタート メニュー。
 
 2. [ **ウイルス対策&保護] を** 選択し、[ランサムウェア保護] セクション **まで下にスクロール** します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "52326534"
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>PowerShell を使用して追加のフォルダーを保護する
 
-1. [**スタート] メニューに「PowerShell」** と入力し、[管理者 **Windows PowerShellを右** クリックし、[管理者として **実行] を選択します。**
+1. **[PowerShell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します。**
 
 2. 次の PowerShell コマンドレットを入力し、フォルダーのパス (など) `<the folder to be protected>` に置き換えてください `"c:\apps\"` 。
 
@@ -134,7 +134,7 @@ ms.locfileid: "52326534"
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>PowerShell を使用して特定のアプリを許可する
 
-1. [**スタート] メニューに「PowerShell」** と入力し、[管理者 **Windows PowerShellを右** クリックし、[管理者として **実行] を選択します。**
+1. **[PowerShell]** と入力スタート メニューを **右クリックし**、[管理者Windows PowerShell **実行] を選択します。**
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
@@ -171,6 +171,6 @@ Microsoft Defender for Endpoint 証明書とファイル インジケーター�
 
 ## <a name="see-also"></a>関連項目
 
-- [フォルダー アクセスを制御して重要なフォルダーを保護する](controlled-folders.md)
+- [フォルダーへのアクセス制御で重要なフォルダーを保護する](controlled-folders.md)
 - [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md)
 - [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)

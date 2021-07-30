@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cb819daa11a50ef54c758a6aa696a5fc645029c
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: ed5ddc90df8ee3d0e938c0db9bca367a424f0413
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363981"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651053"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 
@@ -33,9 +33,9 @@ ms.locfileid: "53363981"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 macOS のデバイスコントロールには、次の前提条件があります。
 
@@ -55,7 +55,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **Key** | deviceControl |
+| **キー** | deviceControl |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 | **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
 
@@ -75,7 +75,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **Key** | navigationTarget |
+| **キー** | navigationTarget |
 | **データ型** | String |
 | **コメント** | 定義されていない場合、製品は、製品が実行したアクションを説明する汎用ページを指す既定の URL を使用します。 |
 
@@ -89,7 +89,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **Key** | removableMediaPolicy |
+| **キー** | removableMediaPolicy |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 | **コメント** | 辞書の内容の説明については、以下のセクションを参照してください。 |
 
@@ -125,7 +125,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **Key** | enforcementLevel |
+| **キー** | enforcementLevel |
 | **データ型** | String |
 | **指定可能な値** | 監査 (既定) <br/> block |
 
@@ -150,9 +150,9 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **Key** | アクセス許可 |
+| **キー** | アクセス許可 |
 | **データ型** | 文字列の配列 |
-| **可能な値** | none <br/> read <br/> write <br/> execute |
+| **指定可能な値** | none <br/> read <br/> write <br/> execute |
 
 #### <a name="restrict-removable-media-by-vendor-product-and-serial-number"></a>ベンダー、製品、シリアル番号によってリムーバブル メディアを制限する
 
@@ -165,7 +165,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **Key** | ベンダー |
+| **キー** | ベンダー |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 
 ベンダーごとに、そのベンダーのデバイスに必要なアクセス許可レベルを指定できます。
@@ -173,16 +173,16 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **Key** | アクセス許可 |
+| **キー** | アクセス許可 |
 | **データ型** | 文字列の配列 |
-| **可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
+| **指定可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
 
 さらに、必要に応じて、より詳細なアクセス許可が定義されているベンダーに属する製品のセットを指定できます。 ディクショナリ `products` には 1 つ以上のエントリが含まれるので、各エントリは製品 ID で識別されます。 
 
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **Key** | 製品 |
+| **キー** | 製品 |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 
 製品ごとに、その製品の目的のアクセス許可レベルを指定できます。
@@ -190,9 +190,9 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **Key** | アクセス許可 |
+| **キー** | アクセス許可 |
 | **データ型** | 文字列の配列 |
-| **可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
+| **指定可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
 
 さらに、より詳細なアクセス許可が定義されているシリアル番号のオプション セットを指定できます。
 
@@ -201,7 +201,7 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **Key** | serialNumbers |
+| **キー** | serialNumbers |
 | **データ型** | 辞書 (入れ子になった基本設定) |
 
 シリアル番号ごとに、目的のアクセス許可レベルを指定できます。
@@ -209,9 +209,9 @@ macOS のデバイスコントロールを構成するには、組織内で設�
 |Section|値|
 |:---|:---|
 | **ドメイン** | `com.microsoft.wdav` |
-| **Key** | アクセス許可 |
+| **キー** | アクセス許可 |
 | **データ型** | 文字列の配列 |
-| **可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
+| **指定可能な値** | 既定のアクセス [許可レベルと同じ](#default-permission-level) |
 
 #### <a name="example-device-control-policy"></a>デバイス制御ポリシーの例
 

@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/20/2021
+ms.date: 07/29/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 064cc66dfa273209bea5dc14c0e8cf0f39d7c6ac
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9106ee8a89ca0a42fc3a010fb790816ff9871b52
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655793"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664119"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードでのエンドポイントEDR応答 (EDR)
 
@@ -84,7 +84,7 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理。](
 
 | 要件  | 詳細  |
 |---------|---------|
-| アクセス許可 | [グローバル管理者] または [セキュリティ管理者] ロールが [管理者] に割り当てられている[必要Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 詳細については、「基本アクセス許可 [」を参照してください](basic-permissions.md)。 |
+| アクセス許可 | [グローバル管理者] または [セキュリティ管理者] ロールが [管理者] に割り当てられている必要[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 詳細については、「基本アクセス許可 [」を参照してください](basic-permissions.md)。 |
 | オペレーティング システム     | デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows。 <br/>- Windows 10 (すべてのリリース) <br/>- Windows Server バージョン 1803 以降 <br/>- Windows Server 2019 <br/>- Windows Server 2016 (Microsoft Defender ウイルス対策モードの場合のみ)     |
 | Microsoft Defender for Endpoint     | デバイスは Defender for Endpoint にオンボードされている必要があります。 「 [エンドポイント用 Microsoft Defender の最小要件」を参照してください](minimum-requirements.md)。       |
 | Microsoft Defender ウイルス対策  | デバイスには、アクティブ Microsoft Defender ウイルス対策パッシブ モードでインストールおよび実行されている必要があります。 [アクティブMicrosoft Defender ウイルス対策パッシブ モードの状態を確認します](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。 |

@@ -18,16 +18,16 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: 組織内のユーザーのスクリプトOffice設定を管理する方法について学習します。
-ms.openlocfilehash: fea50838cf1089b73a6af5bbf86d490293831085
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 17a243c8eaa31be82b956967acb75c1f1001492e
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392673"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650741"
 ---
 # <a name="manage-office-scripts-settings"></a>Office スクリプトの設定を管理する
 
-[Officeスクリプトを使用](/office/dev/scripts)すると、ユーザーは Web 上でスクリプトを記録、編集、実行することでExcel自動化できます。 Officeスクリプトは、Power Automateと機能し、ユーザーはオンライン (Business) コネクタを使用してブックExcelスクリプトを実行します。 Microsoft 365管理者は、Officeスクリプトの設定を管理Microsoft 365 管理センター。
+[Officeスクリプトを使用](/office/dev/scripts)すると、ユーザーはスクリプトを記録、編集、実行することでタスクを自動化Excel on the web。 Officeスクリプトは、Power Automateと機能し、ユーザーはオンライン (Business) コネクタを使用してブックExcelスクリプトを実行します。 Microsoft 365管理者は、Officeスクリプトの設定を管理Microsoft 365 管理センター。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -35,17 +35,17 @@ ms.locfileid: "53392673"
 
 - 組織内のユーザーが、Microsoft 365 または Office 365 の商用プランまたは EDU プランに対して有効なライセンスを持ち、Office デスクトップ アプリ (以下のいずれかのプランなど) にアクセスできます。
 
-    - Microsoft 365 Business Standard
-    - Microsoft 365 Apps for business
-    - Microsoft 365 Apps for enterprise
-    - Office 365 E3
-    - Office 365 E5
-    - Office 365 A3
-    - Office 365 A5
+- Microsoft 365 Business Standard
+- Microsoft 365 Apps for business
+- Microsoft 365 Apps for enterprise
+- Office 365 E3
+- Office 365 E5
+- Office 365 A3
+- Office 365 A5
 
 ## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>スクリプトの可用性Officeスクリプトの共有を管理する
 
-1. [組織のMicrosoft 365 管理センター] タブの [組織 \> **設定] タブ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">に移動</a>します。
+1. [組織のMicrosoft 365 管理センター] タブの [組織 \> **設定] タブ** \> **[に移動](https://go.microsoft.com/fwlink/p/?linkid=2053743)** します。
 
 2. [スクリプト **Office選択します**。
 
@@ -60,16 +60,16 @@ ms.locfileid: "53392673"
         - 配布グループ
         - セキュリティ グループ
         - メールが有効なセキュリティ グループ
-    
+
         さまざまな種類のグループの詳細については、「グループの比較」 [を参照してください](../create-groups/compare-groups.md)。
 
 5. Office スクリプトへのアクセス権を持つユーザーが組織内の他のユーザーとスクリプトを共有するには **、[Office スクリプト** にアクセスできるユーザーが組織内の他のユーザーとスクリプトを共有する] を選択します。 組織外でのスクリプトの共有は許可されません。
- 
+
     > [!NOTE]
     > 後で組織のスクリプト共有をオフにした場合でも、ユーザーは以前に共有したスクリプトを実行できます。
- 
+
 6. スクリプトでスクリプトを共有できるユーザー Officeを指定します。
-    
+
     - スクリプトへのアクセス権を持つすべてのOfficeスクリプトを共有するには、[すべての **ユーザー]** (既定) を選択のままにします。
 
     - Office スクリプトへのアクセス権を持つ特定のグループのメンバーだけがスクリプトを共有するには、[特定のグループ] を選択し、グループの名前または電子メール エイリアスを入力して許可リストに追加します。 許可リストに追加できるグループは 1 つのみであり、次のいずれかの種類である必要があります。
@@ -77,7 +77,7 @@ ms.locfileid: "53392673"
         - 配布グループ
         - セキュリティ グループ
         - メールが有効なセキュリティ グループ
-    
+
         さまざまな種類のグループの詳細については、「グループの比較」 [を参照してください](../create-groups/compare-groups.md)。
 
 7. ユーザーが Power Automate フロー内で Office スクリプトを実行するには、[Office スクリプトへのアクセス権を持つユーザーにスクリプトを実行 **Power Automate。** これにより、ユーザーは[オンライン] ([ビジネス) コネクタExcel実行](/connectors/excelonlinebusiness)スクリプト オプションを使用してフロー ステップ **を追加** できます。
@@ -98,7 +98,7 @@ ms.locfileid: "53392673"
 
     Office スクリプトの設定の変更が有効になるまで、最大で 48 時間かかる場合があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Office スクリプトは Power Automate で動作しますので、ユーザーが Office スクリプトを使用している間に組織のデータが保護されたままになるために、既存のデータ損失防止 (DLP) ポリシーを確認することをお勧めします。 詳細については、「[データ損失防止 (DLP) ポリシー](/power-automate/prevent-data-loss)」を参照してください。
 
