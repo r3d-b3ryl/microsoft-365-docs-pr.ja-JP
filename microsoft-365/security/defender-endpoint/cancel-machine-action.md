@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 490ee91d5f2d2c02174be94c52fc83fd0ec0fc5e
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 966ed7356024bcc3dedf149024d55171805a3af5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879757"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657365"
 ---
-#   <a name="cancel-machine-action-api"></a>マシン アクション API のキャンセル 
+# <a name="cancel-machine-action-api"></a>マシン アクション API のキャンセル
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "52879757"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,16 +49,16 @@ ms.locfileid: "52879757"
 
 ## <a name="limitations"></a>制限事項
 
-1.  この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可を選択する方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
 
-|     アクセス許可の種類     |     アクセス許可     |    アクセス許可の表示名     |
-|-|-|-|
-|    <br>アプリケーション    |    <br>Machine.CollectForensic<br>   Machine.Isolate   <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantine<br>   Machine.LiveResponse    |    forensics の収集   <br>コンピューターを分離する<br>コードの実行を制限する<br>  スキャン マシン<br>  オフボード マシン<br>   停止と検疫<br>   特定のコンピューターでライブ応答を実行する    |
-|    <br>委任 (仕事または学校のアカウント)    |    Machine.CollectForensic<br>   Machine.Isolate    <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantineMachine.LiveResponse    |    forensics の収集<br>   コンピューターを分離する<br>  コードの実行を制限する<br> スキャン マシン<br>オフボード マシン<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する    |
+|アクセス許可の種類|アクセス許可|アクセス許可の表示名|
+|---|---|---|
+|アプリケーション|Machine.CollectForensic <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|forensics の収集 <br>マシンの隔離<br>コードの実行を制限する<br>  スキャン マシン<br>  マシンのオフボード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
+|委任 (職場または学校のアカウント)|Machine.CollectForensic<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|forensics の収集<br> マシンの隔離<br>  コードの実行を制限する<br> スキャン マシン<br>マシンのオフボード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
 
 
 ## <a name="http-request"></a>HTTP 要求
@@ -70,16 +70,16 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前      | 型 | 説明                 |
-|---------------|----------|---------------------------------|
-| Authorization | String   | ベアラー {トークン}。必須。   |
-| Content-Type  | string   | application/json. Required. |
+|名前|種類|説明|
+|---|---|---|
+|Authorization|String|ベアラー {トークン}。必須。|
+|Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-| パラメーター | 型 | 説明                        |
-|---------------|----------|----------------------------------------|
-| コメント       | 文字列   | キャンセル アクションに関連付けるコメント。  |
+|パラメーター|種類|説明|
+|---|---|---|
+|コメント|文字列|キャンセル アクションに関連付けるコメント。|
 
 ## <a name="response"></a>応答
 
@@ -87,7 +87,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request"></a>要求
 
 以下は、要求の例です。
 
@@ -95,7 +95,6 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 POST
 https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/cancel
 ```
-
 
 ```JSON
 {

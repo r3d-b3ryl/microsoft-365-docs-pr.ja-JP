@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 110b379863b4c6e23c947c56faf831e136231237
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 6439088073b9b6cfd86988a395028d64a8981a99
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688479"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651665"
 ---
 # <a name="respond-to-web-threats"></a>Web の脅威への対応
 
@@ -31,16 +31,19 @@ ms.locfileid: "51688479"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 Microsoft Defender for Endpoint の Web 保護を使用すると、カスタム インジケーター リスト内の悪意のある Web サイトや Web サイトに関連するアラートを効率的に調査して対応できます。
 
 ## <a name="view-web-threat-alerts"></a>Web 脅威アラートの表示
-Microsoft Defender for Endpoint は、悪意のある Web アクティビティまたは疑 [わしい](manage-alerts.md) Web アクティビティに関する次のアラートを生成します。
-- **ネットワーク保護によって** ブロックされる疑わしい接続 - このアラートは、悪意のある Web サイトまたはカスタム インジケーター リスト内のWeb サイトへのアクセスがブロック モードでネットワーク保護によって停止された場合 *に生成* されます。
-- **ネットワーク保護によって検出** された疑わしい接続 - このアラートは、悪意のある Web サイトまたはカスタム インジケーター リスト内の Web サイトにアクセスしようとした場合に、監査専用モードでネットワーク保護によって *検出された場合に生成* されます。
 
-各アラートは、次の情報を提供します。 
+Microsoft Defender for Endpoint は、悪意のある Web アクティビティまたは疑 [わしい](manage-alerts.md) Web アクティビティに関する次のアラートを生成します。
+
+- **ネットワーク保護によって** ブロックされる疑わしい接続 : このアラートは、悪意のある Web サイトまたはカスタム インジケーター リスト内のWeb サイトへのアクセスがブロック モードでネットワーク保護によって停止された場合 *に生成* されます。
+- **ネットワーク保護によって検出** された疑わしい接続 : このアラートは、悪意のある Web サイトまたはカスタム インジケーター リスト内の Web サイトにアクセスしようとした場合に、監査専用モードでネットワーク保護によって検出 *された場合に生成* されます。
+
+各アラートは、次の情報を提供します。
+
 - ブロックされた Web サイトにアクセスしようとしたデバイス
 - Web 要求の送信に使用されるアプリケーションまたはプログラム
 - カスタム インジケーター リスト内の悪意のある URL または URL
@@ -48,11 +51,13 @@ Microsoft Defender for Endpoint は、悪意のある Web アクティビティ�
 
 ![Web 脅威保護に関連するアラートのイメージ](images/wtp-alert.png)
 
->[!Note]
->Microsoft Defender for Endpoint は、アラートの量を減らすために、同じデバイス上の同じドメインの Web 脅威検出を毎日 1 つのアラートに統合します。 1 つのアラートだけが生成され [、Web 保護レポートにカウントされます](web-protection-monitoring.md)。
+> [!NOTE]
+> Microsoft Defender for Endpoint は、アラートの量を減らすために、同じデバイス上の同じドメインの Web 脅威検出を毎日 1 つのアラートに統合します。 1 つのアラートだけが生成され [、Web 保護レポートにカウントされます](web-protection-monitoring.md)。
 
 ## <a name="inspect-website-details"></a>Web サイトの詳細を検査する
+
 アラートで Web サイトの URL またはドメインを選択すると、より深く掘り下げできます。 これにより、次に示すさまざまな情報を含む特定の URL またはドメインに関するページが開きます。
+
 - Web サイトにアクセスしようとしたデバイス
 - Web サイトに関連するインシデントとアラート
 - 組織のイベントで Web サイトが表示された頻度
@@ -62,6 +67,7 @@ Microsoft Defender for Endpoint は、悪意のある Web アクティビティ�
 [URL またはドメイン エンティティ ページの詳細](investigate-domain.md)
 
 ## <a name="inspect-the-device"></a>デバイスを検査する
+
 ブロックされた URL にアクセスしようとしたデバイスを確認することもできます。 アラート ページでデバイスの名前を選択すると、デバイスに関する包括的な情報を含むページが開きます。
 
 [デバイス エンティティ ページの詳細](investigate-machines.md)
@@ -77,6 +83,7 @@ Microsoft Defender for Endpoint の Web 保護を使用すると、エンド ユ
  *Chrome Web ブラウザーの画像*
 
 ## <a name="related-topics"></a>関連項目
+
 - [Web 保護の概要](web-protection-overview.md)
 - [Web コンテンツ フィルタリング](web-content-filtering.md)
 - [Web の脅威に対する保護](web-threat-protection.md)

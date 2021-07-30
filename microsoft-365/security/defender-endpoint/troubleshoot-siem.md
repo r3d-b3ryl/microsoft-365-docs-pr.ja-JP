@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 9c4f3da57796903fc22314574f389bcdd92ca4b3
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 95b4b82b87fc633afe716c9c7b403808bedac65d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311990"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651701"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM ツール統合に関する問題のトラブルシューティング
 
@@ -33,14 +33,14 @@ ms.locfileid: "52311990"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 SIEM ツールで検出を引き出す際に問題のトラブルシューティングが必要になる場合があります。
 
 このページでは、発生する可能性がある問題をトラブルシューティングするための詳細な手順を示します。
 
-
 ## <a name="learn-how-to-get-a-new-client-secret"></a>新しいクライアント シークレットを取得する方法について
+
 クライアント シークレットの有効期限が切れた場合、または SIEM ツール アプリケーションを有効にするときに提供されたコピーを置き忘れた場合は、新しいシークレットを取得する必要があります。
 
 1. Azure 管理ポータル [にログインします](https://portal.azure.com)。
@@ -57,8 +57,8 @@ SIEM ツールで検出を引き出す際に問題のトラブルシューティ
 
 7. 値をコピーし、安全な場所に保存します。
 
-
 ## <a name="error-when-getting-a-refresh-access-token"></a>更新アクセス トークンを取得するときにエラーが発生する
+
 脅威インテリジェンス API または SIEM ツールを使用するときに更新トークンを取得しようとするときにエラーが発生した場合は、関連するアプリケーションの返信 URL を Azure Active Directory に追加する必要があります。
 
 1. Azure 管理ポータル [にログインします](https://ms.portal.azure.com)。
@@ -73,18 +73,17 @@ SIEM ツールで検出を引き出す際に問題のトラブルシューティ
    - EU の場合: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`
    - 英国の場合: `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
    - 米国の場合:  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` .
- 
+
 6. **[保存]** をクリックします。
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>SIEM コネクタ アプリケーションを有効にしている間のエラー
+
 SIEM コネクタ アプリケーションを有効にしようとするときにエラーが発生した場合は、ブラウザーのポップアップ ブロッカー設定を確認してください。 機能を有効にするときに開いている新しいウィンドウがブロックされている可能性があります。
 
-
-
-
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshootsiem-belowfoldlink)
 
 ## <a name="related-topics"></a>関連項目
+
 - [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
 - [エンドポイント検出用の Microsoft Defender をプルする ArcSight の構成](configure-arcsight.md)
 - [SIEM ツールへの検出のプル](configure-siem.md)

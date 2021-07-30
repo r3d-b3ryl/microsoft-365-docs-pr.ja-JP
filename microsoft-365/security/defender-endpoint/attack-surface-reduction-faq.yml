@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: d32bcdb3e17ccc7b94d47dd67f12c04d115da550
-  ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+  ms.openlocfilehash: bb03140622cc848f9c668bdaa72e833fe35c5b37
+  ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/26/2021
-  ms.locfileid: "53591093"
+  ms.lasthandoff: 07/30/2021
+  ms.locfileid: "53664114"
 title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -77,7 +77,7 @@ sections:
 
       |:--|:--|:--|
 
-      |JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|D3E037E1-3EB8-44C8-A917-57927947596D|サポートされていません|
+      |JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|d3e037e1-3eb8-44c8-a917-57927947596d|サポートされていません|
 
       |WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|サポートされていません|
 

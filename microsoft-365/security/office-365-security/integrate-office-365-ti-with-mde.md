@@ -19,12 +19,12 @@ description: Microsoft Defender for Office 365 Microsoft Defender for Endpoint �
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fed3a04a7a699b4689cd9d6d9d335a8ba51d2fd8
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 4ca22633006e047628d5b256bf79c19719da57a3
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083382"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664131"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint とOffice 365 Microsoft Defender を使用する
 
@@ -44,11 +44,11 @@ Microsoft Defender for Office 365 Microsoft Defender for Endpoint と統合す�
 > [!TIP]
 > 新しいMicrosoft 365 Defenderポータルは、ユーザーを置き換Microsoft Defender セキュリティ センター。 「Microsoft [Defender for Endpoint in Microsoft 365 Defender」を参照してください](../defender/microsoft-365-security-center-mde.md)。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 - 組織には、Microsoft Defender for Office 365 (Office 365 E5) と Microsoft Defender for Endpoint が必要です。
 
-- グローバル管理者か、セキュリティ管理者の役割 (セキュリティ管理者など) が管理者に割り当てられている必要Microsoft 365。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
+- 管理者にグローバル管理者またはセキュリティ管理者の役割が割り当てられている必要Microsoft 365。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
 - エクスプローラー (またはリアルタイム検出) にアクセス [できる必要があります](threat-explorer.md)。
 
@@ -56,23 +56,25 @@ Microsoft Defender for Office 365 Microsoft Defender for Endpoint と統合す�
 
 Microsoft Defender for Endpoint Office 365 Microsoft Defender の統合は、Defender for Endpoint と Defender for Endpoint の両方Office 365。
 
-1. グローバル管理者またはセキュリティ管理者として、Microsoft 365 Defender ポータル ( ) を開き、[電子メール <https://security.microsoft.com> **&] に移動** \> **します**。 エクスプローラー ページに直接移動 **するには、 を** 使用します <https://security.microsoft.com/threatexplorer> 。
+1. ポータル ( ) にMicrosoft 365 Defenderサインイン [https://security.microsoft.com](https://security.microsoft.com) します。
 
-2. [エクスプローラー **] ページ** の画面の右上隅にある **[MDE** ファイル] をクリック設定。
+2. [電子メール **] グループ & エクスプローラーに** \> **移動します**。 
 
-3. 表示される **Microsoft Defender for Endpoint** 接続のフライアウトで、[エンドポイント用 Microsoft **Defender** Connect ] (トグルオン) をオンにし、[閉じる] アイコンをクリック ![ ](../../media/scc-toggle-on.png) ![ ](../../media/m365-cc-sc-close-icon.png) **します**。
+3. [エクスプローラー **] ページ** の画面の右上隅にある **[MDE** ファイル] を選択設定。
+
+3. 表示される **Microsoft Defender for Endpoint** 接続のフライアウトで、[エンドポイント用 Microsoft **Defender** Connect] (トグルオン) をオンにし、[閉じる] ![ ](../../media/scc-toggle-on.png) を **選択します**。
 
     :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE 接続":::
 
-4. ナビゲーション ウィンドウに戻り、[次へ]**を設定。** [エンドポイント]**設定[** エンドポイント]**を選択します。**
+4. ナビゲーション ウィンドウで、[次へ]**を設定。** [エンドポイント]**設定[** エンドポイント]**を選択します。**
 
 5. 開く **[エンドポイント] ページで** 、[高度な機能] **を選択します**。
 
 6. [脅威インテリジェンス]**接続Office 365下に** スクロールし、オンにします ( ![ トグルオン ](../../media/scc-toggle-on.png) )。
 
-   完了したら、[基本設定の保存] **をクリックします**。
+   完了したら、[基本設定の保存 **] を選択します**。
 
-## <a name="related-articles"></a>関連記事
+## <a name="see-also"></a>関連項目
 
 [脅威の調査と対応機能 (Office 365](office-365-ti.md)
 
