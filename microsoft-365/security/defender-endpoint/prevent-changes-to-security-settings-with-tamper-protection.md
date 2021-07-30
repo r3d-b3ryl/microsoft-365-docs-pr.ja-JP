@@ -17,12 +17,12 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 07/27/2021
-ms.openlocfilehash: 5d11be17cba8683344e631e799df98d3cf11dbf8
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 39f32fe71bfa84fc9806c02d265d93cd00e17da1
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623125"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664143"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -58,7 +58,7 @@ ms.locfileid: "53623125"
 - PowerShell コマンドレットによる設定の変更
 - グループ ポリシーによるセキュリティ設定の編集または削除
 
-改ざん防止では、セキュリティ設定を表示できない場合があります。 また、改ざん防止は、サードパーティのウイルス対策アプリがアプリに登録する方法Windows セキュリティではありません。 組織が E5 のWindows 10 Enterprise場合、個々のユーザーは改ざん防止の設定を変更できます。このような場合、改ざん防止はセキュリティ チームによって管理されます。
+改ざん防止では、セキュリティ設定を表示できない場合があります。 また、改ざん防止は、Microsoft 以外のウイルス対策アプリがアプリに登録する方法Windows セキュリティではありません。 組織が E5 のWindows 10 Enterprise場合、個々のユーザーは改ざん防止の設定を変更できます。このような場合、改ざん防止はセキュリティ チームによって管理されます。
 
 ### <a name="what-do-you-want-to-do"></a>目的に合ったトピックをクリックしてください
 
@@ -96,7 +96,7 @@ ms.locfileid: "53623125"
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-365-defender-portal"></a>ポータルでの改ざん防止の管理Microsoft 365 Defender要件
 
-- グローバル管理者、セキュリティ [管理者、](/microsoft-365/security/defender-endpoint/assign-portal-access)セキュリティ操作など、適切なアクセス許可が必要です。
+- グローバル管理者、セキュリティ [管理者、](/microsoft-365/security/defender-endpoint/assign-portal-access) セキュリティ操作など、適切なアクセス許可が割り当てられている必要があります。
 
 - デバイスWindows次のいずれかのバージョンのデバイスを実行している必要Windows。
 
@@ -129,7 +129,7 @@ ms.locfileid: "53623125"
 
 ### <a name="requirements-for-managing-tamper-protection-in-intune"></a>Intune でタンパープロテクションを管理するための要件
 
-- グローバル管理者、セキュリティ [管理者、](/microsoft-365/security/defender-endpoint/assign-portal-access)セキュリティ操作など、適切なアクセス許可が必要です。
+- グローバル管理者、セキュリティ [管理者、](/microsoft-365/security/defender-endpoint/assign-portal-access) セキュリティ操作など、適切なアクセス許可が割り当てられている必要があります。
 
 - 組織は Intune を [使用してデバイスを管理します](/intune/fundamentals/what-is-device-management)。 ([Intune ライセンスが](/intune/fundamentals/licenses)必要です。Intune は、次のMicrosoft 365 E5)に含まれます。
 
@@ -143,7 +143,7 @@ ms.locfileid: "53623125"
 
 ![Intune で改ざん防止を有効にする](images/turnontamperprotect-MEM.png)
 
-1. 管理センターの[Microsoft エンドポイント マネージャーに移動し](https://endpoint.microsoft.com)、仕事または学校のアカウントでサインインします。
+1. 管理センターの[Microsoft エンドポイント マネージャーに移動し](https://endpoint.microsoft.com)、サインインします。
 
 2. [**デバイス**  >  **構成プロファイル] を選択します**。
 
@@ -198,7 +198,7 @@ Configuration Manager のバージョン [2006](/mem/configmgr/core/plan-design/
 > [!NOTE]
 > タンパープロテクション ブロックは、レジストリMicrosoft Defender ウイルス対策設定を変更します。
 >
-> 改ざん防止がサード パーティのセキュリティ製品や、これらの設定を変更するエンタープライズ インストール スクリプトを妨げないよう **、Windows セキュリティ** に移動し、セキュリティ インテリジェンスをバージョン 1.287.60.0 以降に更新します。 (「セキュリティ [インテリジェンスの更新プログラム」を参照](https://www.microsoft.com/wdsi/definitions)してください。
+> 改ざん防止が Microsoft 以外のセキュリティ製品や、これらの設定を変更するエンタープライズ インストール スクリプトを妨げないよう **、Windows セキュリティ** に移動し、セキュリティ インテリジェンスをバージョン 1.287.60.0 以降に更新します。 (「セキュリティ [インテリジェンスの更新プログラム」を参照](https://www.microsoft.com/wdsi/definitions)してください。
 >
 > この更新プログラムを作成すると、改ざん防止はレジストリ設定を保護し続け、ログはエラーを返さずに変更を試みる。
 
@@ -242,7 +242,7 @@ Configuration Manager バージョン 2006 をテナント接続で使用して�
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>改ざん防止は、Microsoft 以外のウイルス対策アプリの登録Windows セキュリティしますか?
 
-いいえ。 サードパーティのウイルス対策製品は、引き続きアプリケーションにWindows セキュリティされます。
+いいえ。 Microsoft 以外のウイルス対策製品は、引き続きアプリケーションにWindows セキュリティされます。
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>デバイスでMicrosoft Defender ウイルス対策がアクティブではない場合は、どうなるでしょうか。
 

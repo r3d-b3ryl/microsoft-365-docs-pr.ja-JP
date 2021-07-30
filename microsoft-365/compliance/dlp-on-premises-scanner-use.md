@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) を使用する
+title: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを使用する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: オンプレミスのスキャナーで Microsoft 365 データ損失防止を使用して、保存されているデータをスキャンし、オンプレミスのファイル共有とオンプレミスの SharePoint フォルダーとドキュメント ライブラリに保護アクションを実装する方法について説明します。
-ms.openlocfilehash: b2512c47b82ab3624d892d349611dd3f1e5aed3c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 3d7c2e30092eee022fc0ed2a7ef6a8be7b82e3f1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289177"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657377"
 ---
-# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) を使用する
+# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Microsoft 365 のデータ損失防止のオンプレミス スキャナーを使用する
 
 DLP オンプレミス機能、および DLP ポリシーで表示される方法を把握するために、いくつかのシナリオをまとめてましたので、確認してください。
 
@@ -48,7 +48,7 @@ DLP オンプレミス スキャナーのデータが複数の領域に表示さ
 
 #### <a name="microsoft-365-audit-log"></a>Microsoft 365 監査ログ
 
-パブリック プレビュー中、DLP ルールの一致は監査ログ UI で利用できます。「[コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」か、「[Search-UnifiedAuditLogPowerShell](/powershell/module/exchange/search-unifiedauditlog)」からアクセスできます。 
+DLP ルールの一致は、監査ログ UI で利用できます。「[コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」をご覧になるか、または[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell からアクセスできます。
 
 #### <a name="aip"></a>AIP
 
@@ -80,8 +80,8 @@ DLP オンプレミス スキャナーのデータが複数の領域に表示さ
 
 ## <a name="see-also"></a>関連項目
 
-- [DLP オンプレミス スキャナーの前提条件 (プレビュー)](dlp-on-premises-scanner-learn.md)
-- [DLP オンプレミス スキャナーの使用を開始する (プレビュー)](dlp-on-premises-scanner-get-started.md)
+- [DLP オンプレミス スキャナーの詳細情報](dlp-on-premises-scanner-learn.md)
+- [DLP オンプレミス スキャナーの使用を開始する](dlp-on-premises-scanner-get-started.md)
 - [データ損失防止について](dlp-learn-about-dlp.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)

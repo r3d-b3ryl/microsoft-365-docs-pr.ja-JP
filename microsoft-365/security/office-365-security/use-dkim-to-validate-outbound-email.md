@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ffe1a2e7c57d98594a6ab401caf6e2ef1746f4fd
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: f728e49d742b20cf8434ca83eaf29e7e91b725ee
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622162"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657029"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -41,7 +41,7 @@ ms.locfileid: "53622162"
 この記事の内容:
 
 - [悪意のあるスプーフィング防止の点で DKIM のしくみが SPF 単独よりも優れているといえる理由](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
-- [Microsoft 365 Defender ポータルから DKIM を有効または無効にする手順]
+- [Microsoft 365 Defender ポータルから DKIM を作成、有効化、無効化する手順](#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
 - [手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする手順](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
 - [DKIM を手動で設定する手順](#steps-to-manually-set-up-dkim)
 - [DKIM の複数のドメインを構成する手順](#to-configure-dkim-for-more-than-one-custom-domain)

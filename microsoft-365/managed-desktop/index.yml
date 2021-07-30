@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft マネージド デスクトップのドキュメント
-summary: Microsoft マネージド デスクトップは、エンドポイント管理とセキュリティ監視を組み合わせた独自の ITaaS ソリューションで、IT 担当者が信頼できる安全で生産性の高いデバイス エクスペリエンスをユーザーに提供します。
+summary: Microsoft マネージド デスクトップは、エンドポイント管理とセキュリティ監視を組み合わせた独自の ITaaS ソリューションであり、IT 担当者が信頼できる安全で生産性の高いデバイス エクスペリエンスをユーザーに提供します。
 metadata:
   title: Microsoft マネージド デスクトップのドキュメント
   description: Microsoft マネージド デスクトップは、Microsoft 365 Enterprise、Microsoft によるクラウドベースのデバイス管理、およびセキュリティ監視を統合し、IT チームを解放してコア ビジネス ニーズに集中できるようにします。
@@ -10,12 +10,12 @@ metadata:
   author: jaimeo
   ms.author: jaimeo
   ms.date: 12/04/2020
-  ms.openlocfilehash: b2feb587c93d9bc6f0bc208ad48f3bfff8266d5a
-  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+  ms.openlocfilehash: 20780ee49f9e43872a9c02c22714e2451522672f
+  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/19/2021
-  ms.locfileid: "50920634"
+  ms.lasthandoff: 07/29/2021
+  ms.locfileid: "53648437"
 landingContent:
 - title: Microsoft マネージド デスクトップについて
   linkLists:

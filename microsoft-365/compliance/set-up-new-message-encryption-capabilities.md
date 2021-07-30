@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の内外のユーザーと保護されたメールでのコミュニケーションを可能にする新しい Office 365 Message Encryption 機能についてご確認ください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b738c0f93b8958e441b34b458942c2b34c16661
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fedbfc753250cd9b2a080aab91342d904876e0ef
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228581"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655481"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>新しい Message Encryption 機能を設定する
 
@@ -72,21 +72,21 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
 
 3. 次の構文を使用して Test-IRMConfiguration コマンドレットを実行します:
 
-     ```powershell
-     Test-IRMConfiguration [-Sender <email address >]
-     ```
+   ```powershell
+   Test-IRMConfiguration [-Sender <email address> -Recipient <email address>]
+   ```
 
    **例**:
 
-     ```powershell
-     Test-IRMConfiguration -Sender securityadmin@contoso.com
-     ```
+   ```powershell
+   Test-IRMConfiguration -Sender securityadmin@contoso.com -Recipient securityadmin@contoso.com
+   ```
 
-     - 送信者の電子メールの提供はオプションですが、システムに追加のチェックを強制的に実行させます。 Microsoft 365 テナントの任意のユーザーのメール アドレスを使用します。
+   - 送信者と受信者の場合は、Microsoft 365 テナント内の任意のユーザーのメール アドレスを使用します。
 
      結果は次のようになります:
 
-     ```text
+     ```console
      Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not
             Forward.

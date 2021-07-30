@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のデータ損失防止のオンプレミス スキャナーについての詳細情報 (プレビュー)
+title: Microsoft 365 のデータ損失防止のオンプレミス スキャナーについての詳細情報
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 データ損失防止オンプレミス スキャナーは、ファイル アクティビティの監視とそれらのファイルの保護アクションを、オンプレミスのファイル共有と SharePoin tフォルダーおよびドキュメント ライブラリに拡張します。 ファイルは、Azure Information Protection (AIP) スキャナーによってスキャンおよび保護されます
-ms.openlocfilehash: f0a34a13630e42c5dd29734ad708b3c11bb1d587
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c59c6b90f6c219528cbff8a4aadc6472a48ecd23
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114165"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657389"
 ---
-# <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Microsoft 365 のエンドポイントのデータ損失防止について学ぶ (プレビュー) 
+# <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明します
 
 Microsoft Data Loss Prevention (オンプレミス スキャナー) は、Microsoft 365 サービス全体で機密アイテムを検出して保護する Microsoft 365 Data Loss Prevention (DLP) スイートの機能の一部です。 MicrosoftのすべてのDLP製品の詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。
 

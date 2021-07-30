@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Endpoint データ損失防止 (プレビュー) を開始する
+title: Microsoft 365 のデータ損失防止のオンプレミス スキャナーの使用を開始する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを設定する
-ms.openlocfilehash: 0390ac48b351b30b75109a3e3a5d18c80847c9d2
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: fbaf28c1a88f1654154cc53ce731d2f56bfae382
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289201"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657401"
 ---
-# <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>データ損失防止のオンプレミス スキャナー (プレビュー) を開始する
+# <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>データ損失防止のオンプレミス スキャナーの使用を開始する
 
 この記事では、Microsoft 365 データ損失防止オンプレミス スキャナーの前提条件と構成について説明します。
 
@@ -34,7 +34,7 @@ ms.locfileid: "53289201"
 
 ### <a name="skusubscriptions-licensing"></a>SKU /サブスクリプションライセンス
 
-DLP オンプレミス スキャナーの使用を開始する前に、[Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) およびアドオンを確認する必要があります。 プレビューに参加するには、DLP ルールを設定する管理者アカウントに次のライセンスのいずれかを割り当てる必要があります。
+DLP オンプレミス スキャナーの使用を開始する前に、[Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) およびアドオンを確認する必要があります。 DLP ルールを設定する管理者アカウントに次のライセンスのいずれかを割り当てる必要があります:
 
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance 
@@ -66,7 +66,7 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
     1. ネットワーク検出ジョブの構成はオプションの手順です。 これをスキップして、コンテンツ スキャン ジョブでスキャンする特定のリポジトリを定義できます。
     2. コンテンツ スキャン ジョブを作成し、DLP エンジンによる評価が必要なファイルをホストするリポジトリを指定する必要があります。
     3. 作成したコンテンツ スキャン ジョブで DLP ルールを有効にし、DLP 有効化段階に直接進む場合を除いて、**[有効にする]** オプションを **[オフ]** に設定します。
-3. コンテンツ スキャン ジョブが適切なクラスターに割り当てられていることを確認します。それでもコンテンツ スキャン ジョブを作成しなかった場合は、新しいジョブを作成して、パブリック プレビュー バージョンを実行するスキャナー ノードを含むクラスターに割り当てます。
+3. コンテンツ スキャン ジョブが適切なクラスターに割り当てられていることを確認します。それでもコンテンツ スキャン ジョブを作成しなかった場合は、新しいジョブを作成して、スキャナー ノードを含むクラスターに割り当てます。
 
 4. [Azure ポータルの Azure Information Protection](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) 拡張機能に接続し、スキャンを実行するコンテンツ スキャン ジョブにリポジトリを追加します。
 
@@ -82,7 +82,7 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
 
 7. **[ポリシーの作成]** を選択し、テスト DLP ポリシーを作成します。 ポリシーの作成についてサポートが必要な場合は、「[テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)」を参照してください。 この機能に慣れるまで、必ずテストで実行してください。 ポリシーには、次のパラメータを使用します。
     1. 必要に応じて、DLP オンプレミス スキャナー ルールを特定の場所にスコープします。 **[場所]** のスコープを **[すべて]** に設定すると、スキャナーによってスキャンされたすべてのファイルが DLP ルールの照合と適用の対象になります。
-    1. 場所を指定するときは、除外リストまたは包含リストのいずれかを使用できます。 パブリック プレビュー中は、両方を設定することはできません。 ルールは、包含リストにリストされているパターンの 1 つに一致するパスにのみ関連するか、包含リストにリストされているパターンに一致するファイルを除くすべてのファイルに関連するように定義できます。 ローカル パスはサポートされていません。 有効なパスの例を次に示します。
+    1. 場所を指定するときは、除外リストまたは包含リストのいずれかを使用できます。 ルールは、包含リストにリストされているパターンの 1 つに一致するパスにのみ関連するか、包含リストにリストされているパターンに一致するファイルを除くすべてのファイルに関連するように定義できます。 ローカル パスはサポートされていません。 有効なパスの例を次に示します。
       - \\\server\share
       - \\\server\share\folder1\subfolderabc
       - \*\\folder1
@@ -115,18 +115,18 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
 
 2. オンプレミス スキャナーの場所のすべてのデータにアクセスしてフィルタリングするには、「[Activity エクスプローラースタートガイド](data-classification-activity-explorer.md)」の手順に従ってください。
 
-3. [[コンプライアンス センターの監査ログ]](https://security.microsoft.com/auditlogsearch) を開きます。 パブリック プレビューの間、DLP ルールの一致は監査ログ UI で利用可能であるか、[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell からアクセスできます。 
+3. [[コンプライアンス センターの監査ログ]](https://security.microsoft.com/auditlogsearch) を開きます。 DLP ルールの一致は監査ログ UI で利用可能であるか、[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell からアクセスできます。 
 
 
 ## <a name="next-steps"></a>次のステップ
 DLP オンプレミス の場所のテスト ポリシーを展開し、アクティビティ エクスプローラーでアクティビティ データを表示できるようになったので、機密アイテムを保護する DLP ポリシーを作成する次のステップに進む準備ができました。
 
-- [オンプレミスでのDLPの使用 (プレビュー)](dlp-on-premises-scanner-use.md)
+- [DLP オンプレミスの使用](dlp-on-premises-scanner-use.md)
 
 ## <a name="see-also"></a>関連項目
 
-- [DLP オンプレミス スキャナーの前提条件 (プレビュー)](dlp-on-premises-scanner-learn.md)
-- [DLP オンプレミス スキャナーを使用する (プレビュー)](dlp-on-premises-scanner-use.md)
+- [DLP オンプレミス スキャナーの詳細情報](dlp-on-premises-scanner-learn.md)
+- [DLP オンプレミス スキャナーの使用](dlp-on-premises-scanner-use.md)
 - [データ損失防止について](dlp-learn-about-dlp.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)

@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: 新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 809f31682fbcb690aaaf2483ec8b72c766282cf5
-  ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+  ms.openlocfilehash: 2e59d4b4d2d077921e1c6c9496d14e59bae2317a
+  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/15/2021
-  ms.locfileid: "53453827"
+  ms.lasthandoff: 07/29/2021
+  ms.locfileid: "53657017"
 title: メッセージの暗号化に関する FAQ
 summary: >
   新しいメッセージ保護機能がどのように機能するかについて質問がありますか? ここで答えを確認してください。 また、Azure Information Protection のデータ保護サービス Azure Rights Management に関する質問に対する回答については [、Azure Information Protection](/information-protection/get-started/faqs-rms) のデータ保護に関してよく寄せられる質問を参照してください。
@@ -141,10 +141,6 @@ sections:
     answer: >
       管理者は、暗号化を削除するメール フロー ルールを設定できます。 メールが暗号化専用保護を使用して暗号化されていない限り、別の組織によって適用されるメールからメール フロー ルールを使用して暗号化を削除できない。
   - question: >
-      委任アクセスはサポートされていますか?
-    answer: >
-      現時点ではできません。
-  - question: >
       共有メールボックスとして送信し、電子メールを暗号化できますか?
     answer: >
       暗号化メール フロー ルールに一致するメール メッセージを誰かが送信すると、メッセージは送信される前に暗号化されます。
@@ -173,9 +169,9 @@ sections:
 
       | Outlook for Mac    | はい | はい                |
 
-      | Outlook for Android| はい | いいえ                 |
+      | Outlook for Android| はい | なし                 |
 
-      | Outlook for iOS    | はい | いいえ                 |
+      | Outlook for iOS    | はい | なし                 |
 
       |
 
@@ -201,9 +197,9 @@ sections:
          Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
          ```
   - question: >
-      Fullaccess を使用して、別のユーザーのメールボックスに送信される暗号化されたメッセージを開く方法はありますか?
+      委任されたアクセスは、暗号化されたメッセージを開いてサポートされていますか? 代理人が別のユーザーのメールボックスにフル アクセスできる場合でも?
     answer: >
-      いいえ。 暗号化されたメッセージは、共有メールボックスでのみ開くことができます。
+      暗号化されたメールの委任されたアクセスは、Outlook on the web、Outlook for Mac、Outlook iOS、および Android Outlookでサポートされています。  OutlookのWindowsアクセスはサポートされていません。
   - question: >
       要求した後に 1 回のパス コードを受け取らない場合は、どうしますか。
     answer: >-
