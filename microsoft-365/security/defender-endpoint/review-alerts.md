@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: c05858184df57b148b83dabee402fde29d98e95e
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: bc3ef2737afed17ca46d4715992b9c8cc82758cb
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622041"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649865"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のアラートを確認する
 
@@ -32,7 +32,7 @@ ms.locfileid: "53622041"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 Microsoft Defender for Endpoint のアラート ページは、選択したアラートに関連する攻撃信号とアラートを組み合わせて、詳細なアラート ストーリーを作成することで、アラートに対する完全なコンテキストを提供します。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 894b628575c0788b6a5d4bb23a8fe512d7c467bc
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 54f1cb3ee31571af7cb664f7327a80016ab2fa6b
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845608"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650525"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS のエンドポイント向け Microsoft Defender の新機能
 
@@ -33,7 +33,7 @@ ms.locfileid: "52845608"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="1117240101"></a>1.1.17240101
 - Intune を介したモバイル アプリケーション管理 (MAM) のサポートは、通常、このバージョンで利用できます。 詳細については [、「Microsoft Defender for Endpoint risk signals for your App protection policies」を参照してください。](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322)
@@ -45,7 +45,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 - **脱獄検出は** プレビュー中です。 詳細については、「デバイス リスク信号 [に基づく条件付きアクセス ポリシーのセットアップ」を参照してください](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
 - **VPN プロファイルの自動セットアップは、** 登録されたデバイスのプレビューで、アプリ (Intune) Microsoft エンドポイント マネージャーされます。 詳細については、「登録済み [iOS デバイスの自動セットアップ VPN プロファイル」を参照してください](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
-- これでMicrosoft Defender ATP製品名がアプリ ストアの Microsoft Defender for Endpoint に更新されました。
+- Microsoft Defender ATP 製品名が、アプリ ストアの Microsoft Defender for Endpoint に更新されました。
 - サインイン エクスペリエンスが向上しました。
 - バグ修正。
 

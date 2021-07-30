@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ee6fd4bd8d60f828bb474fc80cb987f4f94edcbe
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 05bfd6652395b7a1687320ec78d49caba67dc160
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581096"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656201"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センターの概要
 
@@ -33,7 +33,7 @@ ms.locfileid: "51581096"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-usewdatp-abovefoldlink)
 
 Microsoft Defender セキュリティ センターは、Microsoft Defender for Endpoint の機能にアクセスできるポータルです。
 

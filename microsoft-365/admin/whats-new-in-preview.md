@@ -21,12 +21,12 @@ description: '[Microsoft 365 管理センター- 今月追加された機能に�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 497d1f78b2d0c17cfcaa23571838c4dc363b7017
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1071826fde079ca13626eb8034f41b9c522961d6
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394712"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649949"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>新しい機能Microsoft 365 管理センター
 
@@ -143,7 +143,7 @@ Microsoft Ignite へようこそ。 Microsoft [Ignite 2021](https://myignite.mic
 
 ### <a name="whats-new-features"></a>新機能
 
-アプリ内のユーザーの "新機能" 機能の表示方法が改善Officeしました。 これで、ユーザーが表示できる Whats の新しいウィンドウにリッチ コンテンツを表示できます。 また、機能についてユーザーに知らせる前に、この機能の詳細を確認できます。 詳細については、「新機能」[にOffice機能を管理するを参照してください](manage/show-hide-new-features.md)。
+アプリ内のユーザーの "新機能" 機能の表示方法が改善Officeしました。 これで、ユーザーが表示できる [新機能] ウィンドウにリッチ コンテンツを表示できます。 また、機能についてユーザーに知らせる前に、この機能の詳細を確認できます。 詳細については、「新機能」[にOffice機能を管理するを参照してください](manage/show-hide-new-features.md)。
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="スクリーンショット: Officeの改善点を示す新しいページをアプリにPower BI":::
 
@@ -251,7 +251,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 
 ![「リモート ワーカーに権限を与Microsoft 365ソリューションドキュメント」の新しいランディング ページ。](../media/MAC-WN-M365Docspage.png)
 
-## <a name="july-2020"></a>2020 年7 月
+## <a name="july-2020"></a>2020 年 7 月
 
 ### <a name="getting-ready-for-ignite-2020"></a>Ignite 2020 の準備
 
@@ -447,7 +447,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)Web シリーズの新機能 : 今月のエピソードでは、Microsoft Teams の 3 年の記念日を強調し、オンライン会議でのオーディオ品質の向上、Shifts アプリを使用したファーストライン マネージャー向けターゲットコミュニケーション、Teams と Skype コンシューマーの相互運用性などの新機能について説明します。
 
-## <a name="february-2020"></a>2020 年 2 月
+## <a name="february-2020"></a>2020年2月
 
 ### <a name="featured-feedback-fix-multi-organization-switcher"></a>おすすめフィードバックの修正: 複数組織の切り替え機能
 

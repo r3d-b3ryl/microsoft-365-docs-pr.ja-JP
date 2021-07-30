@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint の更新プログラムを Linux に展開する
+title: Linux 用 Microsoft Defender for Endpoint の更新プログラムを展開する
 ms.reviewer: ''
 description: エンタープライズ環境で Microsoft Defender for Endpoint の更新プログラムを Linux に展開する方法について説明します。
 keywords: microsoft、defender、Microsoft Defender for Endpoint、Linux、更新プログラム、展開
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fc5a64f4be1b782c423c2ae9e2222a1424be97e0
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7de99494a373a2e741e7dff2da4b59d94115cc33
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274726"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650501"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint の更新プログラムを Linux に展開する
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint の更新プログラムを展開する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "52274726"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft は、パフォーマンス、セキュリティ、および新機能の提供を行うソフトウェア更新プログラムを定期的に発行しています。
 

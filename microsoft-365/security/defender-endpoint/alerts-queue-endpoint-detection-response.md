@@ -1,5 +1,5 @@
 ---
-title: アラート キュー (Microsoft 365 Defender
+title: Microsoft 365 Defender のアラート キュー
 ms.reviewer: ''
 description: ユーザーに表示される通知を表示および管理Microsoft 365 Defender
 keywords: ''
@@ -18,21 +18,21 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
-ms.openlocfilehash: ed65c836e74d5394d3b291ca3ebb5e781e37afa8
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: fbd8a5fa5bbb42ea8040c2a1364a9a9a4c90bcbd
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339564"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650081"
 ---
-# <a name="alerts-queue-in-microsoft-365-defender"></a>アラート キュー (Microsoft 365 Defender
+# <a name="alerts-queue-in-microsoft-365-defender"></a>Microsoft 365 Defender のアラート キュー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 デバイス、ファイル、ユーザー アカウントなどのエンティティに見られる脅威を効果的に調査するために、キューを表示および管理する方法について説明します。
 

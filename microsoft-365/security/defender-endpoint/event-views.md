@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 342e471c897c6722e9a7d67578e10b85719d5bd8
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 081808a99f7ea18216107f22ff2912cd022eab82
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595992"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655757"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53595992"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 イベント ビューアーで攻撃表面の縮小イベントを確認し、動作しているルールや設定を監視します。 また、設定が "ノイズ" すぎるか、毎日のワークフローに影響を与えるかどうかを判断することもできます。
 

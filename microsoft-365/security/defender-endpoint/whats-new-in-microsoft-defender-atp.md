@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9fa03a11a548cfd60e9b9911eb2a87be0af37015
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 33bd21cb338d5c792e6241ac61f75712ecc1ad45
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542635"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656069"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -32,7 +32,7 @@ ms.locfileid: "53542635"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) と、Windows 10 および Windows Server のセキュリティ機能が提供されています。
 
@@ -200,7 +200,7 @@ Threat Analytics は、新たな脅威やアウトブレイクが特定される
   - USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする
   - メール クライアントと Web メールから実行可能なコンテンツをブロックする
 
-- [自動調査と修復](automated-investigations.md)<BR> 自動調査を使用して、脅威を調査および修復します。
+- [調査と修復の自動化](automated-investigations.md)<BR> 自動調査を使用して、脅威を調査および修復します。
 
     > [!NOTE]
     > バージョン 1803 Windows 10以降のバージョンから使用できます。

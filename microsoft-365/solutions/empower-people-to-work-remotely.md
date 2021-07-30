@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在宅勤務、在宅勤務、ハイブリッド、リモート ワーカー、ハイブリッド ワーク、リモート従業員、ハイブリッド接続、リモート アクセス、在宅勤務、テレワーク、テレワーク、モバイル ワーク、リモート ジョブ、どこからでも作業、柔軟な職場
 description: ハイブリッド ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
-ms.openlocfilehash: fed23a4607cfb47049a6540dfb592d9a8baf9d21
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 75c8ee6bc736bbe53638cb9040cf2bb68e333201
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229373"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650189"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Microsoft 365 を使用したハイブリッドワーク用のインフラストラクチャを設定する
 
@@ -82,22 +82,22 @@ Microsoft 365 には、ハイブリッド ワーカーがオンサイトまた�
 
 ハイブリッド ワーカーに対して Microsoft 365 の機能を有効にするには、これらの Microsoft 365 機能を使用します。
 
-| 機能 | 説明 | ライセンス |
-|:-------|:-----|:-------|
-| セキュリティの既定値が適用されている MFA   | サインインには、2 つ目の認証形式を要求することで、ID とデバイスを侵害から保護します。セキュリティの既定値では、すべてのユーザー アカウントに MFA が必要です。   | Microsoft 365 E3 または E5 |
-| 条件付きアクセスが適用されている MFA| 条件付きアクセス ポリシーを使用したサインインのプロパティに基づいて MFA を要求します。    | Microsoft 365 E3 または E5 |
-| リスクベースの条件付きアクセスが適用されている MFA   | ユーザーが Microsoft Defender for Identity でサインインするリスクに基づいて MFA を要求します。 | Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3 |
-| セルフサービスによるパスワードのリセット (SSPR)    | ユーザーによるパスワードまたはアカウントのリセットまたはロック解除を許可します。  | Microsoft 365 E3 または E5 |
-| Azure AD アプリケーション プロキシ    | イントラネット サーバーでホストされている Web ベースのアプリケーションに安全なリモート アクセスを提供します。   | 別の有料 Azure サブスクリプションが必要 |
-| Azure ポイント対サイト VPN   | Azure 仮想ネットワークを介してリモート ワーカーのデバイスからイントラネットへの安全な接続を作成します。   | 別の有料 Azure サブスクリプションが必要 |
-| Windows Virtual Desktop   | Azure で実行されている仮想デスクトップで、個人の管理されていないデバイスのみを使用できるリモート ワーカーをサポートします。 | 別の有料 Azure サブスクリプションが必要 |
-| リモート デスクトップ サービス (RDS) | 従業員によるイントラネット上の Windows ベースのコンピューターへの接続を許可します。 | Microsoft 365 E3 または E5 |
-| リモート デスクトップ サービス ゲートウェイ   | 通信を暗号化し、RDS ホストがインターネットに直接公開されないようにします。 | 別の Windows サーバー ライセンスが必要 |
-| Microsoft Intune | デバイスとアプリケーションを管理します。   | Microsoft 365 E3 または E5 |
-| 構成マネージャーを使用するための | デバイスでのソフトウェアのインストール、更新、設定を管理します | 別の Configuration Manager ライセンスが必要 |
-| Desktop Analytics | Windows クライアントの更新プログラムの準備状況を確認します。   | 別の Configuration Manager ライセンスが必要 |
-| Windows Autopilot | 生産的に使用するために、新しいWindows 10デバイスをセットアップして事前構成します。   | Microsoft 365 E3 または E5 |
-| Microsoft Teams、Exchange Online、SharePoint Online、OneDrive、Microsoft 365 アプリ、Microsoft Power Platform、Yammer | 作成、連絡、共同作業を行います。 | Microsoft 365 E3 または E5 |
+|機能|説明|ライセンス|
+|---|---|---|
+|セキュリティの既定値が適用されている MFA|サインインには、2 つ目の認証形式を要求することで、ID とデバイスを侵害から保護します。セキュリティの既定値では、すべてのユーザー アカウントに MFA が必要です。|Microsoft 365 E3 または E5|
+|条件付きアクセスが適用されている MFA|条件付きアクセス ポリシーを使用したサインインのプロパティに基づいて MFA を要求します。|Microsoft 365 E3 または E5|
+|リスクベースの条件付きアクセスが適用されている MFA|ユーザーが Microsoft Defender for Identity でサインインするリスクに基づいて MFA を要求します。|Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3|
+|セルフサービスによるパスワードのリセット (SSPR)|ユーザーによるパスワードまたはアカウントのリセットまたはロック解除を許可します。|Microsoft 365 E3 または E5|
+|Azure AD アプリケーション プロキシ|イントラネット サーバーでホストされている Web ベースのアプリケーションに安全なリモート アクセスを提供します。|別の有料 Azure サブスクリプションが必要|
+|Azure ポイント対サイト VPN|Azure 仮想ネットワークを介してリモート ワーカーのデバイスからイントラネットへの安全な接続を作成します。|別の有料 Azure サブスクリプションが必要|
+|Windows Virtual Desktop|Azure で実行されている仮想デスクトップで、個人の管理されていないデバイスのみを使用できるリモート ワーカーをサポートします。|別の有料 Azure サブスクリプションが必要|
+|リモート デスクトップ サービス (RDS)|従業員によるイントラネット上の Windows ベースのコンピューターへの接続を許可します。|Microsoft 365 E3 または E5|
+|リモート デスクトップ サービス ゲートウェイ|通信を暗号化し、RDS ホストがインターネットに直接公開されないようにします。|別の Windows サーバー ライセンスが必要|
+|Microsoft Intune|デバイスとアプリケーションを管理します。|Microsoft 365 E3 または E5|
+|構成マネージャーを使用するための|デバイスでのソフトウェアのインストール、更新、設定を管理します|別の Configuration Manager ライセンスが必要|
+|Desktop Analytics|Windows クライアントの更新プログラムの準備状況を確認します。|別の Configuration Manager ライセンスが必要|
+|Windows Autopilot|生産的に使用するために、新しいWindows 10デバイスをセットアップして事前構成します。|Microsoft 365 E3 または E5|
+|Microsoft Teams、Exchange Online、SharePoint Online、OneDrive、Microsoft 365 アプリ、Microsoft Power Platform、Yammer|作成、連絡、共同作業を行います。|Microsoft 365 E3 または E5|
 ||||
 
 セキュリティとコンプライアンスの基準については、「[リモート ワーカーのためのセキュリティとコンプライアンスの展開](empower-people-to-work-remotely-security-compliance.md)」を参照してください。

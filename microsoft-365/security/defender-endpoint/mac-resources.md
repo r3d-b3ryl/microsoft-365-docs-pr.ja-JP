@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fa5d5b4470644e1ff50af46a8dd3f035cd9b3184
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2a4d588e869fed684c4424578025a50d36a2280e
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842868"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650417"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上のエンドポイント用 Microsoft Defender のリソース
 
@@ -34,7 +34,7 @@ ms.locfileid: "52842868"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="collecting-diagnostic-information"></a>診断情報の収集
 
@@ -110,8 +110,8 @@ macOS で Microsoft Defender for Endpoint をアンインストールするに�
 |構成|PUA 保護をオフにする                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
 |構成|PUA 保護の監査モードを有効にする      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
 |構成|パッシブ モードのオン/オフ                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
-|Diagnostics  |ログ レベルの変更                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|Diagnostics  |診断ログの生成                   |`mdatp diagnostic create --path [directory]`                                      |
+|診断  |ログ レベルの変更                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
+|診断  |診断ログの生成                   |`mdatp diagnostic create --path [directory]`                                      |
 |正常性       |製品の正常性を確認する                 |`mdatp health`                                                                    |
 |正常性       |spefic 製品属性を確認する       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
 |保護   |パスをスキャンする                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b467a7b661b96f5b293f2671d3645533143d67f
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 384ea6f07a1b84421e8961d43bb97fd589c0c39a
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587671"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656189"
 ---
 # <a name="monitor-web-browsing-security"></a>Web 閲覧のセキュリティを監視する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53587671"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 Web 保護を使用すると、組織の Web 閲覧のセキュリティを監視するために、>ポータルの **[レポート** と Web 保護Microsoft 365 Defenderできます。 レポートには、Web 脅威検出の統計情報を提供するカードが含まれます。
 

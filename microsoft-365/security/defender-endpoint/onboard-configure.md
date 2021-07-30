@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c471f2b0d88219ac04a1c64343c950604fec2183
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 4792489abf721993fe55dc642f132c51442c21a5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622510"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655541"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>デバイスを Microsoft Defender for Endpoint サービスにオンボードする
 
@@ -33,7 +33,7 @@ ms.locfileid: "53622510"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 Defender for Endpoint ポータルのオンボーディング セクションに移動して、サポートされているデバイスをオンボードする必要があります。 デバイスに応じて、適切な手順と、デバイスに適した管理および展開ツールのオプションが提供されます。
 
@@ -70,4 +70,4 @@ Defender for Endpoint ポータルのオンボーディング セクションに
 [プロキシとインターネットの設定を構成する](configure-proxy-internet.md)|プロキシとインターネット接続の設定を構成して、Defender for Endpoint クラウド サービスとの通信を有効にします。
 [オンボーディングに関する問題のトラブルシューティング](troubleshoot-onboarding.md)|オンボーディング中に発生する可能性のある問題の解決について説明します。
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

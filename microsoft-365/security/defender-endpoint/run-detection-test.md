@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 10090fdd1dff6b020d06c82afa8456d7a157ff91
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d73a07bdd57748a5756d0fabddeff3aee0cd4d5d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843308"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656285"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する 
 
@@ -39,18 +39,18 @@ ms.locfileid: "52843308"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 新しくオンボードされたデバイスで次の PowerShell スクリプトを実行して、Defender for Endpoint サービスに適切に報告されていることを確認します。
 
-1. フォルダーを作成する: 'C:\test-test-test'MDATPを作成します。
+1. フォルダーを作成する: 'C:\test-MDATP-test'。
 2. デバイスで管理者特権のコマンド ライン プロンプトを開き、スクリプトを実行します。
 
    1. **[スタート]** をクリックし、「**cmd**」と入力します。
 
    1. [コマンド プロンプト] を **右クリックし、[** 管理者として **実行] を選択します**。
 
-      ![[ウィンドウのスタート] メニューの [管理者として実行] をポイントする](images/run-as-admin.png)
+      ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ](images/run-as-admin.png)
 
 3. プロンプトで、次のコマンドをコピーして実行します。
 

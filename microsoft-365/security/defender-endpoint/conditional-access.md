@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3d52e9d2d6fc10cfd58a6d658bb01f5b7bfa1c83
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 2c547fd5691332044082b918f07e5da7c7c92bcf
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591309"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655433"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>条件付きアクセスを有効にして、ユーザー、デバイス、およびデータをより良く保護する 
 
@@ -31,7 +31,7 @@ ms.locfileid: "53591309"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
 
 条件付きアクセスは、セキュリティで保護されたデバイスだけがアプリケーションにアクセスし、ユーザーとエンタープライズ情報をより適切に保護するのに役立つ機能です。
 

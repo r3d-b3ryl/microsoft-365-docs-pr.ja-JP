@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: abcfa00f13857fa5b3fcd83a2e4ee073c6143540
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c032c54f8b80114e00fcff432a0da37a9d836f35
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621837"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656309"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>ユーザー設定Microsoft Defender セキュリティ センター構成する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53621837"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
 一般的な **設定** メニューを使用して、一般的な設定、高度な機能を変更し、プレビュー エクスペリエンス、電子メール通知、カスタム脅威インテリジェンス機能を有効にします。
 

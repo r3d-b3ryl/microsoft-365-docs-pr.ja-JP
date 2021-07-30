@@ -15,12 +15,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: 組織のユーザー向け試用版パイロット プログラムを計画SharePoint Syntexする方法について学習します。
-ms.openlocfilehash: 2668c0c85d6b8c73d377ac9efffc7f777fc7add6
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 6b3aadd635e8abb41e0b3eb1bb9414d40fc1192b
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327116"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655469"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の試用版を実行SharePoint Syntex
 
@@ -38,22 +38,22 @@ ms.locfileid: "53327116"
 - [[SharePoint Syntex] ページ](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:overviewtab)
 
 - この[Microsoft 365 管理センター](https://admin.microsoft.com)
-    1.  [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
-    2.  [課金購入 **サービス**  >  **] に移動します**。
-    3.  **[アドオン]** セクションまで下にスクロールします。
-    4.  [詳細] タイルSharePoint Syntex[詳細] を **選択します**。
-    5.  **[無料試用版を取得]** を選択します。
-    6.  試用版を確認するには、残りのウィザードの手順に従います。
+    1. [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
+    2. [課金購入 **サービス**  >  **] に移動します**。
+    3. **[アドオン]** セクションまで下にスクロールします。
+    4. [詳細] タイルSharePoint Syntex[詳細] を **選択します**。
+    5. **[無料試用版を取得]** を選択します。
+    6. 試用版を確認するには、残りのウィザードの手順に従います。
 
 試用版をアクティブにするには、Microsoft 365管理者または課金管理者である必要があります。
 
 ### <a name="who-should-be-involved-in-a-trial"></a>Whoに関与する必要がある場合
 
-|役割  |アクティビティ  |
-|---------|---------|
-|Microsoft 365管理者または請求管理者    |     試用版をアクティブ化し、ライセンスを割り当てる    |
-|Microsoft 365管理者または管理者SharePointする     |   コンテンツ センター SharePoint Syntex作成する方法を構成する      |
-|ビジネス ユーザー     |    モデルの構築とテスト     |
+|役割|アクティビティ|
+|---|---|
+|Microsoft 365管理者または請求管理者|試用版をアクティブ化し、ライセンスを割り当てる|
+|Microsoft 365管理者または管理者SharePointする|コンテンツ センター SharePoint Syntex作成する方法を構成する|
+|ビジネス ユーザー|モデルの構築とテスト|
 
 ### <a name="before-you-activate-a-trial"></a>試用版をアクティブにする前に
 
@@ -80,7 +80,7 @@ ms.locfileid: "53327116"
 
 - 関連するユーザーにライセンスを割り当てる。
 - 追加[のセットアップを実行SharePoint Syntex。](set-up-content-understanding.md)
-    - 追加のコンテンツ センター [を作成する場合があります](create-a-content-center.md)。
+  - 追加のコンテンツ センター [を作成する場合があります](create-a-content-center.md)。
 
 試用版をアクティブ化した後、モデルを作成し、ファイルを処理できます。 モデル作成 [のガイダンスを参照してください](create-a-content-center.md)。
 
@@ -104,7 +104,7 @@ ms.locfileid: "53327116"
 
 - 新しいモデルを作成できない。
 - モデルを実行していたライブラリは、ファイルを自動的に分類したり、モデルを抽出したりしなくなりました。
-- 以前に分類されたファイルや抽出されたメタデータは影響を受け取らない。 
+- 以前に分類されたファイルや抽出されたメタデータは影響を受け取らない。
 - コンテンツ センターとドキュメントを理解するモデルは自動的に削除されません。 今後ライセンスを購入する場合は、これらは引き続き使用できます。
 - フォーム処理モデルは、既定の Power Platform 環境の Common Data Services (CDS) インスタンスに格納されます。 これらは、将来のライセンスや power プラットフォームSharePoint Syntex AI ビルダー機能で使用できます。
 

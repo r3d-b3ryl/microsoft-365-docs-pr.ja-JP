@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74b89d86b770cb47a0855b45d457ea8ce5fb9802
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: e55e4c78290d84393c06f0a58ef425bad5eb4dcc
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454759"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655949"
 ---
 # <a name="manage-suppression-rules"></a>抑制ルールの管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "53454759"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 ポータルへのアラートの表示を抑制する必要がある場合があります。 組織内の既知のツールやプロセスなど、無実と知られている特定のアラートに対して抑制ルールを作成できます。 アラートを抑制する方法の詳細については、「アラートを抑制する」 [を参照してください](manage-alerts.md)。

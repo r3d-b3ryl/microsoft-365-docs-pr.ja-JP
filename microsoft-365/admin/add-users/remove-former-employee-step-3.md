@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 次の手順に従って、元従業員のメールを別の従業員に転送するか、共有メールボックスに変換します。
-ms.openlocfilehash: df8652f89df5715ba45408f87755bd2ee238884c
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: f9d5cefd761d95a3df03864aa14de1bcfb608d04
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541603"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650117"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>手順 3 - 元従業員のメールを別の従業員に転送するか、共有メールボックスに変換する
 
@@ -60,7 +60,10 @@ ms.locfileid: "53541603"
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[共有メールボックスを開いて使用Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd) 
-[他のユーザーのメールボックスにアクセスする](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081) 
-[Exchangeの管理センター Exchange Online](/exchange/exchange-admin-center) 
+[Outlook で共有メールボックスを開いて使用する](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
+
+[別のユーザーのメールボックスにアクセスする](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081)
+
+[Exchange Online の Exchange 管理センター](/exchange/exchange-admin-center)
+
 [他のユーザーのメールと予定表アイテムを管理する](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)

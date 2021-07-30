@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87bcfaababa0007b5d56c8eed8b391d7519fc001
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 939a2ef1620b8539c398f320d5e9cf61021eb5fe
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622066"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650069"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "53622066"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]  
 > [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 04-13-2021 に公開されたネットワーク デバイスの検出と脆弱性評価ブログでは、Defender for Endpoint の新しいネットワーク デバイス検出機能に関する分析情報を \) 提供します。 この記事では、ネットワーク デバイスの検出が対処するように設計されている課題の概要と、これらの新機能の使用を開始する方法に関する詳細な情報を提供します。

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 669aea2b0e21e9be421a5bdc68a558a02a659ffd
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 162130c73a24ad5a7d3f45f353b13ba57a5cd362
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623182"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655577"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 
@@ -34,7 +34,7 @@ ms.locfileid: "53623182"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 Microsoft 脅威エキスパートは、セキュリティ運用センター (SOC) に専門家レベルの監視と分析を提供し、固有の環境における重大な脅威を見逃しなくするための管理された脅威検出サービスです。

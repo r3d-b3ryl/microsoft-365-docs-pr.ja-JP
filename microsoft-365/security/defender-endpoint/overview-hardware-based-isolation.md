@@ -16,12 +16,12 @@ ms.topic: conceptual
 ms.author: macapara
 ms.date: 09/07/2018
 ms.technology: mde
-ms.openlocfilehash: 68a21e832ca81054411a6e3720921edaa6c9301e
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 0aefbc0ed39a7749ad5456b1bee4be80905f8e03
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622810"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649985"
 ---
 # <a name="hardware-based-isolation-in-windows-10"></a>Windows 10 のハードウェア ベースの分離
 
@@ -31,7 +31,7 @@ ms.locfileid: "53622810"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 ハードウェア ベースの分離は、Microsoft Defender for Endpoint と統合Windows 10システムの整合性を保護するのに役立ちます。 

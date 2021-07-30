@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fd8e1e007031a19a0520e11c8b2497e64e721a74
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 551eddb42f7b0bdbbd84f6294f3413b4435c1dc1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595944"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655769"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の評価 
 
@@ -32,11 +32,11 @@ ms.locfileid: "53595944"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037) は、予防的な保護、侵害後の検出、自動調査、対応のための統一されたプラットフォームです。
 
-無料試用版を開始することで、組織内の Microsoft Defender for Endpoint [を評価できます](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。
+無料試用版を開始することで、組織内の Microsoft Defender for Endpoint [を評価できます](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial)。
 
 次の手順を使用して、Microsoft Defender for Endpoint でさまざまなセキュリティ機能を評価できます。
 

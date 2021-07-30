@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4f7aca5cb532510d55042c70d04d65f2aa08baa3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 24022d71802bdaa299547b4885bcb0d23ddd0c57
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844756"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650261"
 ---
 # <a name="configure-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>Microsoft Defender Microsoft Cloud App Securityエンドポイントの構成
 
@@ -32,13 +32,13 @@ ms.locfileid: "52844756"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 Microsoft Defender for Endpoint クラウド アプリ検出シグナルの恩恵を受けるには、統合を有効Microsoft Cloud App Securityしてください。
 
 >[!NOTE]
->この機能は[、Windows 10](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)バージョン 1709 (OS ビルド 16299.1085 および[KB4493441)](https://support.microsoft.com/help/4493441)を実行しているデバイスで Enterprise Mobility + Security の E5 ライセンスで使用できますWindows 10 バージョン 1803 (OS ビルド 17134.704 [KB4493464)](https://support.microsoft.com/help/4493464)、Windows 10 バージョン 1809 (OS ビルド 17763.379 および[KB4489899)](https://support.microsoft.com/help/4489899)以降の Windows 10 バージョン。
+>この機能は、E5 ライセンスを使用して[、Enterprise Mobility + Securityを実行](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)しているWindows 10 バージョン 1709 (OS ビルド 16299.1085 および[KB4493441)](https://support.microsoft.com/help/4493441)、Windows 10 バージョン 1803 (OS ビルド 17134.704 KB449364)、Windows 10 Version 1809 (OS ビルド 17763.379 および[KB4489899](https://support.microsoft.com/help/4489899)Windows 10 以降) [](https://support.microsoft.com/help/4493464)
 
 > [Microsoft Defender for Endpoint とエンドポイント](/cloud-app-security/mde-integration)の詳細Microsoft Cloud App Security統合については、「Microsoft Defender for Endpoint integration with Microsoft Cloud App Security」を参照してください。 
 

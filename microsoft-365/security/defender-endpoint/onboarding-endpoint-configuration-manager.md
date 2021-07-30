@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e04535268c94478c862998cfd91df1680eb22fc0
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 5e8cb3b843ce3f8bbbec6d1dc96bf2aa237eaa2a
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542095"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655565"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager を使用したオンボーディング
 
@@ -33,7 +33,7 @@ ms.locfileid: "53542095"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 この記事は展開ガイドの一部であり、オンボーディング方法の例として機能します。 
@@ -117,9 +117,9 @@ Defender for Endpoint はさまざまなエンドポイントとツールのオ�
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>手順 2: Microsoft Defender for Endpoint の機能を構成する 
 このセクションでは、デバイス上のデバイスを使用して次の機能Microsoft Endpoint Configuration Manager構成Windowsします。
 
-- [**エンドポイントの検出と応答**](#endpoint-detection-and-response)
+- [**エンドポイントでの検出と対応**](#endpoint-detection-and-response)
 - [**次世代の保護**](#next-generation-protection)
-- [**攻撃表面の縮小**](#attack-surface-reduction)
+- [**攻撃面の減少**](#attack-surface-reduction)
 
 
 ### <a name="endpoint-detection-and-response"></a>エンドポイントの検出および応答
@@ -154,7 +154,7 @@ Microsoft 365 Defender ポータル内から、System Center Configuration Manag
 
 9. 上記の手順 4 からダウンロードしたファイルの場所に移動します。
 
-10. **[次へ]** をクリックします。
+10. [**次へ**] をクリックします。
 11. 適切なサンプル (None または All ファイルの種類)**を使用****してエージェントを構成します**。
 
     ![構成設定のイメージ1](images/configmgr-config-settings.png)

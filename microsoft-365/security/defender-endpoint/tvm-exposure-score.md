@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: af21b0ae3e03ebacae9412fc48693d57f32c81e6
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 15611500ae45f2406daf033d27b49de0e2cc3070
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53568006"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656225"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>露出スコア - 脅威と脆弱性の管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "53568006"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 露出スコアは、ポータルの[[脅威と脆弱性の管理]](tvm-dashboard-insights.md)ダッシュボードにMicrosoft 365 Defenderされます。 これは、組織がサイバーセキュリティの脅威に対してどのように脆弱かを反映しています。 露出スコアが低いということは、デバイスが悪用の影響を受けやすいという意味です。
 
@@ -47,13 +47,13 @@ ms.locfileid: "53568006"
 
 ![露出スコア カード](images/tvm_exp_score.png)
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>仕組み
 
 露出スコアは、次のレベルに分割されます。
 
-- 0 ~ 29: 低露出スコア
-- 30 ~ 69: 中程度の露出スコア
-- 70 ~ 100: 高い露出スコア
+- 0~29: 低露出スコア
+- 30~69: 中程度の露出スコア
+- 70~100: 高い露出スコア
 
 優先度の高いセキュリティ推奨事項に基づいて問題を修復[](tvm-security-recommendation.md)し、露出スコアを下ろします。 各ソフトウェアには、推奨事項に変換され、組織のリスクに基づいて優先順位が付けられた弱点があります。
 
@@ -61,7 +61,7 @@ ms.locfileid: "53568006"
 
 セキュリティに関する推奨事項を修正することで、脅威と脆弱性の暴露 [を削減します](tvm-security-recommendation.md)。 最も重要なセキュリティ推奨事項を修復して、露出スコアに最も大きな影響を与えます。これは、脅威と脆弱性の管理[ダッシュボードで確認できます](tvm-dashboard-insights.md)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a232bd8d600df37d5b9b01921859556476ced345
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: cab209af0ef2f8294ab47ca877b2c0b63206a00d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822372"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655637"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>プライバシー情報 - Microsoft Defender for Endpoint on iOS
 
@@ -31,7 +31,7 @@ ms.locfileid: "52822372"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
 > iOS のエンドポイントの Defender は、VPN を使用して Web 保護機能を提供します。 これは通常の VPN ではなく、デバイスの外部でトラフィックを受け取らないローカルまたは自己ループ VPN です。 **Microsoft または組織では、閲覧アクティビティが表示されない。**
