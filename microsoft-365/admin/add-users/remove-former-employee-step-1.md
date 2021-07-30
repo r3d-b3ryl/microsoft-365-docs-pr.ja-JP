@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 元従業員のログインをブロックし、サービスへのアクセスMicrosoft 365します。
-ms.openlocfilehash: 69108539a87e9db4aa72851e5622a5f3856d3a45
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: da1ad9236a8380dd3ce5bdebb86675b7c6e09cbd
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541627"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648677"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>手順 1 - 元従業員のログインを防止し、サービスへのアクセスMicrosoft 365する
 
@@ -68,10 +68,11 @@ Microsoft 365 サブスクリプションの一部としてメールがある場
   
 1. <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange 管理センター</a>に移動します。
 2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
-3. ユーザーをダブルクリックし、[メール アプリ] の [メール アプリ **の設定の管理** ] **に移動します**。 すべての **オプション** のスライダーをオフにします。**モバイル (Exchange ActiveSync)** **、Outlook on the web**、Outlook **デスクトップ (MAPI)** **、Exchange Web** サービス **、POP3、****および IMAP** です。
+3. 一覧からユーザー メールボックスを選択し、詳細ウィンドウ *(右側*) で、[メール アプリ]の下の [メール アプリの設定を管理する]**を選択します**。 すべての **オプション** のスライダーをオフにします。**モバイル (Exchange ActiveSync)** **、Outlook on the web**、Outlook **デスクトップ (MAPI)** **、Exchange Web** サービス **、POP3、****および IMAP** です。
 4. [**保存**] を選択します。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Exchangeの管理センター Exchange Online](/exchange/exchange-admin-center) 
-[ユーザーの復元](restore-user.md)
+[Exchange Online の Exchange 管理センター](/exchange/exchange-admin-center)
+
+[ユーザーを復元する](restore-user.md)

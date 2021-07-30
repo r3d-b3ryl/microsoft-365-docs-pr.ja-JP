@@ -1,5 +1,5 @@
 ---
-title: デバイスの Microsoft Secure Score
+title: デバイス向けの Microsoft セキュア スコア
 description: デバイスのスコアは、アプリケーション、オペレーティング システム、ネットワーク、アカウント、およびセキュリティ制御全体にわたるデバイスの一括セキュリティ構成状態を示します。
 keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, 脅威と脆弱性の管理, security controls, improvement opportunitis, security configuration score over time, security posture, baseline
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bddd635506f5a37585bc8c06fb44e1c2fbffd721
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: cc25da8c4cffa5c67747ea02a0f431c0c2c7a436
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567958"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652625"
 ---
-# <a name="microsoft-secure-score-for-devices"></a>デバイスの Microsoft Secure Score
+# <a name="microsoft-secure-score-for-devices"></a>デバイス向けの Microsoft セキュア スコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "53567958"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 
 >[!NOTE]
@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint シグナルを転送し、Microsoft Secure Scor
 
 3. [基本 **設定の保存] を選択します**。
 
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>仕組み
 
 >[!NOTE]
 > Microsoft Secure Score for Devices は現在、グループ ポリシーを介して設定された構成をサポートしています。 現在の部分的な Intune のサポートにより、Intune を介して設定されている可能性がある構成が正しく構成されていないと表示される場合があります。 組織が安全な構成管理のために Intune を使用している場合に、IT 管理者に問い合わせて実際の構成状態を確認します。
@@ -111,7 +111,7 @@ Microsoft Secure Score for Devices カードのデータは、細心の注意を
 >1. [Microsoft Update [Catalog] に移動します](https://www.catalog.update.microsoft.com/home.aspx)。
 >2. ダウンロードする必要があるセキュリティ更新プログラムの KB 番号をキーインし、[検索] を **クリックします**。  
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

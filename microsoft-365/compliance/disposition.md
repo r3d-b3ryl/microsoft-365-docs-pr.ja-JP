@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 処理確認を利用する場合や、レコードとしてマークされたアイテムが構成した設定に従って自動的に削除される場合、コンテンツの処理を監視および管理します。
-ms.openlocfilehash: 577cf25ffc8735be19434496bd16202a8e383761
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 2a7330cff56f053f7714a88d8d3519cb0cd3cbaa
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878126"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621669"
 ---
 # <a name="disposition-of-content"></a>コンテンツの処理
 
@@ -49,7 +49,7 @@ Microsoft 365 コンプライアンス センターの [**処理**] タブに正
 
 ユーザーに、保持およびレコード管理用の他の機能を表示および構成するためのアクセス許可を付与せずに、処理確認に必要なアクセス許可のみを付与するには、カスタムの役割グループ (たとえば、"処理確認" という名前) を作成して、このグループに **処理管理** の役割を付与します。
 
-これらのアクセス許可を構成する手順については、「[Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
+ユーザーを既定の役割に追加する手順、または独自の役割グループを作成する手順については、「[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
 
 さらに:
 

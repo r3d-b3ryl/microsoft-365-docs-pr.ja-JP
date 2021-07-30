@@ -1,19 +1,18 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|クライアント|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>モダン アプリ|
+|クライアント|Android|iOS|Mac|Windows 10<br>デスクトップ|Windows 10<br>モダン アプリ|
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|該当なし|該当なし|該当なし|✔|該当なし|
 |AZURE ACTIVE DIRECTORY ADMIN|該当なし|該当なし|該当なし|✔|該当なし|
 |AZURE ADMIN|該当なし|該当なし|該当なし|該当なし|該当なし|
 |ポータル サイト|✔|✔|✔|該当なし|✔|
 |CORTANA|該当なし|該当なし|該当なし|該当なし|✔|
-|DELVE|✔|✔|該当なし|該当なし|該当なし|
 |EXCEL|✔|✔|✔|✔|✔|
 |EXCHANGE 管理者|該当なし|該当なし|該当なし|✔|該当なし|
 |FORMS|該当なし|該当なし|該当なし|該当なし|該当なし|
 |KAIZALA|✔|✔|該当なし|該当なし|該当なし|
 |MICROSOFT ROOMS|計画済み|計画済み|該当なし|該当なし|該当なし|
 |OFFICE 365 ADMIN|✔|該当なし|該当なし|該当なし|該当なし|
-|OFFICE LENS|✔|✔|該当なし|該当なし|✔|
+|OFFICE LENS|✔|✔|該当なし|該当なし|該当なし|
 |OFFICE MOBILE|✔|✔|該当なし|該当なし|該当なし|
 |OFFICE.COM|該当なし|該当なし|該当なし|該当なし|✔|
 |ONEDRIVE|✔|✔|✔|✔|✔|

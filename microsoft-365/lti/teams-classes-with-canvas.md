@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teamsクラスを統合する
-ms.openlocfilehash: e8ab45de84fe8325f6d5b349deb96aa831d54e36
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9baf4f3607673e48472e297ce42a1ad461df5b84
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454687"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652433"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Canvas でMicrosoft Teamsクラスを使用する
 
@@ -62,9 +62,9 @@ Instructure Canvas 内の Microsoft Teams 統合を管理する前に、Canvas �
 
 LTI 1.3 Microsoft Teamsをセットアップします。
 
-Canvas 管理者として、環境内に LTI Microsoft Teamsクラスを追加する必要があります。 アプリの LTI クライアント ID をメモします。
+Canvas 管理者として、環境内に LTI Microsoft Teamsクラスを追加する必要があります。 メイン アカウントの開発者キーの一覧にアクセスし、継承されたキーに切り替えて、LTI ツールTeams有効にします。 アプリの LTI クライアント ID をメモします。
 
- - Microsoft Teamsクラス - 17000000000000570
+ - Microsoft Teamsクラス - 170000000000570
 
 1. Access **Admin settings**  >  **Apps**.
 

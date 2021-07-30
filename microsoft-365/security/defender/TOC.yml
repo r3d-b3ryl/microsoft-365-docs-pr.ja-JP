@@ -116,8 +116,16 @@
               href: microsoft-secure-score-whats-new.md
         - name: ID を保護する
           items:
+            - name: センサーの設定と正常性
+              href: ../defender-identity/sensor-health.md
+            - name: VPN 統合
+              href: ../defender-identity/vpn-integration.md
+            - name: エンティティ タグの設定
+              href: ../defender-identity/entity-tags.md
             - name: セキュリティ アラートの管理
               href: ../defender-identity/manage-security-alerts.md
+            - name: メールと Syslog の通知
+              href: ../defender-identity/notifications.md
     - name: 脅威の調査と対応
       items:
         - name: インシデント
@@ -152,6 +160,22 @@
                       href: first-incident-path-phishing.md
                     - name: ID
                       href: first-incident-path-identity.md
+            - name: Microsoft 365 Defender をセキュリティ運用に統合する
+              items:
+                - name: はじめに
+                  href: integrate-microsoft-365-defender-secops.md
+                - name: 手順 1. 運用の前提条件
+                  href: integrate-microsoft-365-defender-secops-plan.md
+                - name: 手順 2. ゼロ トラストを使用した準備評価
+                  href: integrate-microsoft-365-defender-secops-readiness.md
+                - name: 手順 3. SOC サービスとの統合
+                  href: integrate-microsoft-365-defender-secops-services.md
+                - name: 手順 4. 役割、責任、および監視
+                  href: integrate-microsoft-365-defender-secops-roles.md
+                - name: 手順 5.  テストのユース ケース
+                  href: integrate-microsoft-365-defender-secops-use-cases.md
+                - name: 手順 6. SOC メンテナンス タスク
+                  href: integrate-microsoft-365-defender-secops-tasks.md
             - name: インシデント対応プレイブック
               href: /security/compass/incident-response-playbooks
             - name: メール通知

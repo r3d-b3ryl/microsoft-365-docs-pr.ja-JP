@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のプライバシー管理を設定し、役割とアクセス許可を設定し、重要な設定を構成する方法について説明します。
-ms.openlocfilehash: f6989de8e9a3926f5d9e43cf08240ce76c85a0c9
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0486c073da8061b72eedb9a7fac44adf6d38ae19
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541015"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648605"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>プライバシー管理の開始 (プレビュー)
 
@@ -113,7 +113,7 @@ ms.locfileid: "53541015"
 
 ### <a name="user-notification-emails"></a>ユーザー通知メール
 
-データ処理ポリシーの一致が検出されると、プライバシー管理は、影響を受けるユーザーに対して、実行する修正アクションとプライバシー トレーニングへのリンクを含む電子メールを送信できます。 この設定、プライバシー管理全体の電子メール通知機能を有効または無効にできます。 ポリシーを作成または編集するときに、個別の通知をアクティブ化し、電子メールの頻度を設定し、トレーニング URL を指定できます。 通知機能が無効になっている場合、設定メールに対するポリシー レベルの構成は無効になります。 ポリシーの詳細については、「ポリシーの作成と [管理」を参照してください](privacy-management-policies.md)。
+データ処理ポリシーの一致が検出されると、プライバシー管理は、修正アクションとプライバシー トレーニングへのリンクを含む電子メールをユーザーに送信できます。 この設定、プライバシー管理全体の電子メール通知機能を有効または無効にできます。 ポリシーを作成または編集するときに、個別の通知をアクティブ化し、電子メールの頻度を設定し、トレーニング URL を指定できます。 通知機能が無効になっている場合、設定メールに対するポリシー レベルの構成は無効になります。 ポリシーの詳細については、「ポリシーの作成と [管理」を参照してください](privacy-management-policies.md)。
 
 ### <a name="teams-collaboration"></a>Teams のコラボレーション
 

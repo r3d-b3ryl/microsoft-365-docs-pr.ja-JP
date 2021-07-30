@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
 ms.technology: mde
-ms.openlocfilehash: 0c69b5287551f731a68701d5dbcbb461974598e3
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 3cb6aaecd0578af26baf00aa34edbba37d6835fe
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591117"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648413"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>ユーザー アクセスをユーザー に割り当Microsoft Defender セキュリティ センター
 
@@ -36,7 +36,7 @@ ms.locfileid: "53591117"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint では、アクセス許可を管理する 2 つの方法がサポートされています。
 

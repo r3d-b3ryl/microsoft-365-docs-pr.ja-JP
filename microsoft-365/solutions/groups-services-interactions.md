@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ サービスのやり取り
-ms.openlocfilehash: f9b0d7ca61d55e3d23aa94577fc8257073b26675
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 13331ea53b69b4559bfe21074dd5c7d998aa68af
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539205"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652469"
 ---
 # <a name="groups-services-interactions"></a>グループ サービスのやり取り
 
@@ -63,13 +63,13 @@ Microsoft 365グループは、管理者とエンド ユーザーの両方で、
 
 **Microsoft 365 管理センター**
 
-管理者センター Microsoft 365、所有者がゲストを追加できる機能と同様に、グループへのゲスト アクセスが既定で有効になっています。 この管理センターからグループに使用できる組織レベルのコントロールはありません。
+このページMicrosoft 365 管理センター、所有者がゲストを追加できる機能と同様に、グループへのゲスト アクセスが既定で有効になっています。 この管理センターからグループに使用できる組織レベルのコントロールはありません。
 
 **Azure AD 管理センター**
 
 Azure AD管理センターには、ユーザーがグループを作成するか、Azure ポータルで所有者を割り当てるか、有効期限と名前付けポリシーの設定を制御できます。
 
-管理センターには、Microsoft 365 管理センター以外のゲストを招待できるかどうかを制限する機能など、Microsoft 365 管理センター以外のゲスト招待制御手段も多数用意されています。
+管理センターには、Microsoft 365 管理センター 以外の所有者がゲストを招待できるかどうかを制限する機能など、Microsoft 365 管理センター 以外のゲスト招待制御手段も多数用意されています。
 
 **SharePoint**
 
@@ -80,18 +80,23 @@ SharePointサイトは、所有者、メンバー、および訪問者のセキ�
 エンド ユーザーは、グループ内のいくつかのサービスからグループをMicrosoft 365、他のユーザーはグループとのみ共有できます。
 
 次のサービスでは、エンド ユーザーによるグループの作成が可能です。
-                         
-OutlookPlanner Project Web サイトのストリーム SharePointのMicrosoft Teams Yammer
 
-**グループ作成の制限**
+- Outlook
+- Planner
+- Project for the web
+- SharePoint
+- Stream
+- Microsoft Teams
+- Yammer
+
+#### <a name="restriction-of-group-creation"></a>グループ作成の制限
 
 チームの広がりを制御する一般的な方法は、作成できるユーザーを制限する方法です。 これは、グループの作成を制限することでのみ実行できます。 これにより、エンド ユーザーに必要になる可能性がある他のサービスからグループを作成する機能に影響します。 Microsoft 365グループは、一部のアプリやサービスからのグループの作成を制限し、他のアプリやサービスからグループを許可する機能をサポートしていない。
 
 グループ作成の制限のエクスペリエンスは、アプリとサービスによって異なります。
 
-
 |アプリまたはサービス|エクスペリエンス|
-|:-------------|:---------|
+|---|---|
 |Outlook|**[ユーザー] ページ** の [新しいメニュー] から新しいグループ オプションが削除されました|
 |Planner|**新しいプラン** では、グループの作成がオフになっていることを説明し、既存のグループにプランを追加するオファーを提供します。|
 |Projectロードマップの詳細|**[グループの作成** ] メニューでは、グループの作成が制限され、既存のグループの使用を提案します。|
@@ -111,18 +116,18 @@ OutlookPlanner Project Web サイトのストリーム SharePointのMicrosoft Te
 次の表に、さまざまなサービスとのグループMicrosoft 365の概要を示します。
 
 |製品|機能|サービスを実行する<br>グループが存在しない場合|サービスを実行できる<br>グループを作成する|を削除します。<br>インスタンスがグループを削除しますか?|
-|:---|:---|:---|:---|:---|
+|---|---|---|---|---|
 |Azure AD|メンバーシップ、グループ コントロール、ゲスト|はい|はい|はい|
 |Exchange|予定表、メールボックス|はい|はい|はい|
-|フォーム|フォーム|はい|いいえ|いいえ|
-|OneNote|Notebook|はい|いいえ|いいえ|
+|フォーム|フォーム|はい|いいえ|なし|
+|OneNote|Notebook|はい|いいえ|なし|
 |Planner|タスク ボード|いいえ|はい|はい|
-|Power Appsアプリ|アプリ|はい|いいえ|いいえ|
-|Power Automate|ワークフロー|はい|いいえ|いいえ|
+|Power Appsアプリ|アプリ|はい|いいえ|なし|
+|Power Automate|ワークフロー|はい|いいえ|なし|
 |Power BI (クラシック)|Workspace|いいえ|はい|はい|
 |Power BI (新しい)|Workspace|はい|いいえ|はい|
-|Web 用 Project|Project plan|はい|はい|いいえ|
-|ロードマップ|ロードマップ|はい|はい|いいえ|
+|Project for the web|Project plan|はい|はい|なし|
+|ロードマップ|ロードマップ|はい|はい|なし|
 |SharePoint|Site|はい|はい|はい|
 |Stream|チャネル、ビデオ|はい|はい|はい|
 |Teams|チーム|いいえ|はい|はい|
@@ -176,7 +181,7 @@ Teamsは、さまざまな Microsoft およびサード パーティのサービ
 
 - 会話
 - チャネル&タブ
-- 会議
+- Meetings
 
 **グループTeams作成できますか?**
 
@@ -470,7 +475,7 @@ Power BI で新しいワークスペースを作成しても Microsoft 365 グ�
 
 はい、グループ内のワークスペースPower BIグループとグループに関連付けられたサービスとコンテンツが削除されます。
 
-## <a name="project-for-the-web"></a>Web 用 Project
+## <a name="project-for-the-web"></a>Project for the web
 
 Projectは、プロジェクト 計画、ガント チャート、ロードマップを作成する機能を提供します。
 グループに提供される主な機能。

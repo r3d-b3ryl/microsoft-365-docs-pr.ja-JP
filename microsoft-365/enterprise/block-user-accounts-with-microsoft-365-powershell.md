@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: PowerShell を使用して、アカウントへのアクセスをブロックおよびブロック解除するMicrosoft 365方法。
-ms.openlocfilehash: 90d712cdb6eb34d0588fc262e3a02673accfbd9e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d6ccedf68772d6774ed327e75f080f9200eb5684
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287223"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648617"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントをブロックする
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 アカウントへのアクセスをブロックすると、だれもがアカウントを使用してサインインし、組織のサービスとデータにアクセスMicrosoft 365します。 PowerShell を使用して、個々のユーザー アカウントまたは複数のユーザー アカウントへのアクセスをブロックできます。
 
@@ -85,7 +85,7 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 ユーザー アカウントのブロックされた状態を確認するには、次のコマンドを使用します。
 
 ```powershell
-Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
+Get-AzureADUser  -ObjectID <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
 ### <a name="block-multiple-user-accounts"></a>複数のユーザー アカウントをブロックする

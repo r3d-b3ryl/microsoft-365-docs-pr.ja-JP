@@ -2,8 +2,8 @@
 title: 可視性と分析情報の使用を開始する
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可視性と分析情報の使用を開始します。
-ms.openlocfilehash: 93be3557c32345e81c7126b669ead8edf8ebac21
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: f4cac209ed7372f78bd861ee9d683a93f0c36b28
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430482"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621549"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>可視性と分析情報の使用を開始する
 
@@ -29,15 +29,17 @@ ms.locfileid: "53430482"
 
 ![Microsoft 365 コンプライアンス センターの [アプリ ガバナンス概要] ページ](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
-**[Microsoft 365 管理センター] > [Microsoft 365 コンプライアンス センター] > [アプリ ガバナンス] > [概要ページ]** からアプリ ガバナンス ダッシュボードにアクセスすることもできます。
+**[Office 365] > [Microsoft 365 コンプライアンス センター] > [アプリ ガバナンス] > [概要ページ]** からアプリ ガバナンス ダッシュボードにアクセスすることもできます。
 
 ## <a name="whats-available-on-the-dashboard"></a>ダッシュボードで使用できる機能
 
 ダッシュボードには、テナント内の Microsoft 365 アプリ エコシステムのコンポーネントの概要が含まれています。
 
 - **テナントの概要**: 主要なアプリとアラートのカテゴリの数。
-- **検出およびポリシー アラート**: テナント内の最新のアクティブなアラート
-- **データとリソースへのアクセス**: アプリケーション API アクセスと、テナント内の上位リソースの全体的な使用状況を集約します。 グラフの各月の列にマウスでポイントすると、対応する値が表示されます。
+- **上位のアラート**: テナント内の最新のアクティブなアラート 10 件
+- **データとリソースへのアクセス**: グラフの各月の列にマウスでポイントすると、対応する値が表示されます。
+    - **過去 4 か月間のデータ アクセス**: 過去 4 か月間に Graph API を通じてテナント内のすべてのアプリがアクセスした合計データを追跡します。 現在、メールとファイルのアップロード/ダウンロードの使用状況のみが含まれています。
+    - **過去 4 か月間の上位のリソース データ アクセス**: 過去 4 か月間のデータ使用量 (リソースの種類別)。 現在、メールとファイルのアップロード/ダウンロードの使用状況のみが含まれています
 - **アプリの保護とガバナンスの改善**: アプリの使用法やアクセス許可ポリシーの作成など、推奨されるアクション。
 - **カテゴリ別の上位アプリ**: 次のカテゴリ別に並べ替えられた上位アプリ:
   

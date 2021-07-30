@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 2f873482dc351050a87993420e718f6de87ac218
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3f1d3a7ee191377a22f5411578f5e267c8e7d345
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227533"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624238"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -85,7 +85,7 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
 
 |機能または動作|ラベル設定: ファイルやメールの自動ラベル付け  |ポリシー: 自動ラベル付け|
 |:-----|:-----|:-----|
-|アプリの依存関係|[はい](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |いいえ \* |
+|アプリの依存関係|はい ([最小バージョン](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |いいえ \* |
 |場所による制限|いいえ |はい |
 |条件: トレーニング可能な分類子|はい |いいえ |
 |条件: メールの共有オプションと追加オプション|いいえ |はい |
@@ -142,33 +142,17 @@ DLP ポリシーを構成する場合と同様に、インスタンス数と一�
 また、DLP ポリシー構成と同様に、条件で検知する必要があるのは、機密情報の種類のすべてか、またはそのうちの 1 つだけかを選択できます。 また、条件をより柔軟または複雑にするには、[グループを追加し、グループ間で論理演算子を使用](data-loss-prevention-policies.md#grouping-and-logical-operators)できます。
 
 > [!NOTE]
-> カスタムの機密情報の種類に基づく自動ラベル付けポリシーは、OneDrive および SharePoint で新しく作成または変更されたコンテンツにのみ適用されます。既存のコンテンツには適用されません。
+> カスタムの機密情報の種類に基づく自動ラベル付けは、OneDrive および SharePoint で新しく作成または変更されたコンテンツにのみ適用されます。既存のコンテンツには適用されません。この制限は、自動ラベル付けポリシーにも適用されます。
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>ラベルのトレーニング可能な分類子を構成する
 
-このオプションは現在プレビューの段階です。 このオプションを使用する場合は、自動ラベル付け用に構成された少なくとも 1 つの他の秘密度ラベルと[機密情報の種類のオプション](#configuring-sensitive-info-types-for-a-label)をテナントに公開していることを確認してください。
+このオプションを使用する場合は、自動ラベル付け用に構成された少なくとも 1 つの他の秘密度ラベルと[機密情報の種類のオプション](#configuring-sensitive-info-types-for-a-label)をテナントに公開していることを確認してください。
 
 **トレーニング可能な分類子** のオプションを選択する場合、Microsoft から 1 つ以上のトレーニング可能な組み込み分類子を選択します。 独自のトレーニング可能なカスタム分類子を作成している場合は、以下を選択できます。
 
 ![トレーニング可能な分類子と秘密度ラベルのオプション](../media/sensitivity-labels-classifers.png)
 
-> [!CAUTION]
-> 組み込みの [**不快な言葉**] は、誤検知の数が多いため、廃止予定です。 この組み込み分類子を使用しないでください。現在使用している場合は、ビジネス プロセスを移動する必要があります。 代わりに、[**個人を標的にしたハラスメント**]、[**冒涜的表現**]、および [**脅威**] の組み込み分類子を使用することをお勧めします。
-
 これらの分類子の詳細については、「[トレーニング可能な分類子 (プレビュー) の詳細](classifier-learn-about.md)」を参照してください。
-
-このオプションのプレビュー期間中は、次のアプリが秘密度ラベルのトレーニング可能な分類子をサポートします。
-
-- Microsoft 365 Apps for enterprise ([以前の Office 365 ProPlus](/deployoffice/name-change)) for Windows は、現在、バージョン 2006 以降で[最新機能提供チャネル](/deployoffice/overview-update-channels#current-channel-overview) に展開中です。
-    - Word
-    - Excel
-    - PowerPoint
-
-- [SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする機能 (パブリック プレビュー)](sensitivity-labels-sharepoint-onedrive-files.md) が有効になっている場合の Web アプリ用の Office:
-    - Word
-    - Excel
-    - PowerPoint
-    - Outlook
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>ユーザーが秘密度ラベルを適用することを推奨
 
@@ -194,7 +178,7 @@ Office アプリでの自動ラベル付けと推奨ラベル付けの実装は�
 
 - Word のデスクトップ バージョンにおける推奨ラベルでは、推奨をトリガーした機密コンテンツにフラグが付けられるので、ユーザーが確認して、推奨されている秘密度ラベルを適用しないで機密コンテンツを削除できます。
 
-- こうしたラベルが Office アプリで適用される方法、スクリーンショット例、機密情報の検出方法について詳しくは、「[Office のファイルとメールに秘密度ラベルを自動的に適用、または推奨する](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)」を参照してください。
+- こうしたラベルが Office アプリで適用される方法、スクリーンショット例、機密情報の検出方法について詳しくは、「[Office のファイルとメールに秘密度ラベルを自動的に適用、または推奨する](https://support.office.com/ja-JP/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)」を参照してください。
 
 Azure Information Protection 統合ラベル付けクライアントに関してのみ以下の点が当てはまります。
 
@@ -219,7 +203,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
     - 自動ラベル付けポリシーの実行時に、別のプロセスまたはユーザーがファイルを開いておくことはできません。 編集用にチェックアウトされたファイルは、このカテゴリに分類されます。
 
 - 組み込みの機密度の種類ではなく、[カスタムの機密情報の種類](sensitive-information-type-learn-about.md)を使用する場合は、次の操作を行います。
-    - カスタムの機密情報の種類は、カスタムの機密情報の種類が適用された後に SharePoint または OneDrive で追加または変更されたコンテンツにのみ適用されます。
+    - カスタムの機密情報の種類は、カスタムの機密情報の種類が作成された後に SharePoint または OneDrive で追加または変更されたコンテンツにのみ適用されます。
     - 新しいカスタムの機密情報の種類をテストするには、自動ラベル付けポリシーを作成する前に作成してから、テスト用のサンプル データを使用して新しいドキュメントを作成します。
 
 - 自動ラベル付けポリシー用に選択できる、[作成および公開された](create-sensitivity-labels.md) (少なくとも 1 人のユーザーに対して) 1 つ以上の秘密度ラベル。 これらのラベルの場合:

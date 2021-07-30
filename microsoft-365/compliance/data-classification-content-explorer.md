@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: b39dd09012e7cde6c19ea88a0915154da84c712a
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ad08bc1435f950b2c97ae13112b1d5b0b3aa6f83
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114217"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624046"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -64,7 +64,7 @@ ms.locfileid: "52114217"
 > [!IMPORTANT]
 > これらのアクセス許可は、アイテムにローカルに割り当てられるアクセス許可の代わりに、コンテンツの表示を許可します。 
 
-コンテンツ エクスプローラーへのアクセスを許可する 2 つの役割があり、[Microsoft セキュリティ/コンプライアンス センター](https://protection.office.com/permissions)を使用して許可されます。
+コンテンツ エクスプローラーへのアクセスを許可する 2 つの役割があり、[コンプライアンス センター](https://compliance.microsoft.com/permissions)を使用して許可されます。
 
 - **コンテンツ エクスプローラーのリスト ビューアー**: この役割のグループのメンバーシップにより、ユーザーは各アイテムおよびその場所をリスト ビューで確認することができます。 この役割グループには、`data classification list viewer` 役割が事前に割り当てられています。
 

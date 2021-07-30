@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 4570e04b53f5469242f1c05d808e6aae80663b6d
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 1c45bec7e38a849160a14adb3011a303085b00e6
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591273"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648449"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Microsoft Defender for Endpoint アラート キューを表示して整理する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53591273"
 **適用対象:**
 - [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-alertsq-abovefoldlink)
 
 アラート **キューには** 、ネットワーク内のデバイスからフラグが設定されたアラートの一覧が表示されます。 既定では、キューには、グループ化されたビューで過去 30 日間に表示されたアラートが表示されます。 最新のアラートがリストの上部に表示され、最新のアラートを最初に確認できます。
 
@@ -54,7 +54,7 @@ ms.locfileid: "53591273"
 
 次のフィルターを適用して、アラートの一覧を制限し、より集中してアラートを表示できます。
 
-### <a name="severity"></a>重大度
+### <a name="severity"></a>緊急度
 
 アラートの重大度 | 説明
 :---|:---

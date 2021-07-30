@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b5e852e26d1fc336a52255ea8fc7a90ab384c64c
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ffe1a2e7c57d98594a6ab401caf6e2ef1746f4fd
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544483"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622162"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -41,6 +41,7 @@ ms.locfileid: "53544483"
 この記事の内容:
 
 - [悪意のあるスプーフィング防止の点で DKIM のしくみが SPF 単独よりも優れているといえる理由](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
+- [Microsoft 365 Defender ポータルから DKIM を有効または無効にする手順]
 - [手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする手順](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
 - [DKIM を手動で設定する手順](#steps-to-manually-set-up-dkim)
 - [DKIM の複数のドメインを構成する手順](#to-configure-dkim-for-more-than-one-custom-domain)
@@ -80,6 +81,30 @@ SPF ではメッセージ エンベロープに情報を追加しますが、DKI
 
 > [!TIP]
 > DKIM では秘密キーを使用して、暗号化された署名をメッセージ ヘッダーに挿入します。 署名ドメイン、つまり送信ドメインは、**d=** フィールドの値としてヘッダーに挿入されます。 確認ドメイン、つまり受信者のドメインは、**d=** フィールドを使用して、DNS から公開キーを検索し、メッセージを認証します。 メッセージが確認されれば、DKIM チェックは合格です。
+
+## <a name="steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルから DKIM を作成、有効、無効にする手順
+テナントの承認済みドメインはすべて、Microsoft 365 Defender ポータルの DKIM ページに表示されます。 表示されない場合は、[ドメイン ページ](/microsoft-365/admin/setup/add-domain?view=o365-worldwide#add-a-domain)から承認済みドメインを追加します。
+ドメインが追加されたら、以下に示す手順に従って DKIM を構成します。
+
+手順 1: DKIM ページ![画像](https://user-images.githubusercontent.com/3039750/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)で DKIM を構成するドメインをクリックします
+
+手順 2: キーの作成![画像](https://user-images.githubusercontent.com/3039750/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)をクリックします
+
+手順 3: ポップアップ ウィンドウの![画像](https://user-images.githubusercontent.com/3039750/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)に表示される CNAME をコピーします
+
+手順 4: コピーした CNAME レコードを DNS サービス プロバイダーに公開します。 DNS プロバイダーの Web サイトで、有効にする DKIM の CNAME レコードを追加します。 フィールドが次の値に設定されていることを確認します。
+
+レコードの種類: CNAME (エイリアス) ホスト: DKIM ページからコピーした値を貼り付けます。
+アドレス指定するポイント: DKIM ページから値をコピーします。
+TTL: 3600 (またはプロバイダーの既定値)
+
+手順 5: DKIM ページに戻って DKIM ![画像](https://user-images.githubusercontent.com/3039750/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)を有効にします
+
+CNAME レコードが存在しないというエラーが表示された場合は、次が原因である可能性があります
+1. DNS サーバーとの同期は、数秒から数時間かかる場合があります。問題が解決しない場合は、手順をもう一度繰り返します。
+2. 追加のスペースやタブなど、コピーと貼り付けのエラーがないか確認します。
+
+DKIM を無効にする場合は、元に戻して無効モードに切り替えます
 
 
 ## <a name="steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする

@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: この記事の手順に従って、別の従業員に元従業員のデータとOneDriveアクセスOutlookします。
-ms.openlocfilehash: 67ec651361aac2b687fa1b0f851271ced5e634ed
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0051f9c20508f0682d34ad3ad17d3e4d8cccf60f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541591"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648689"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>手順 4 - 別の従業員にデータとOneDriveアクセスOutlookする
 
@@ -185,8 +185,14 @@ Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファ�
 > 既存のユーザーのデータと電子メール データにアクセスする場合OneDrive手順は変わりません。
 
 > [!TIP]
-> Outlook データ ファイル (.pst) からいくつかのアイテムのみをインポートまたは復元する場合は、Outlook データ ファイルを開くことができます。 次に、ナビゲーション ウィンドウで、Outlook データ ファイル フォルダーから既存の Outlook フォルダーにアイテムをドラッグします。 
+> Outlook データ ファイル (.pst) からいくつかのアイテムのみをインポートまたは復元する場合は、Outlook データ ファイルを開くことができます。 次に、ナビゲーション ウィンドウで、Outlook データ ファイル フォルダーから既存の Outlook フォルダーにアイテムをドラッグします。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[OneDrive](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)アカウントで管理者を追加および削除する (記事) 削除済み[OneDrive](/onedrive/restore-deleted-onedrive) ([記事)](/onedrive/retention-and-deletion) OneDrive 保持と削除 (記事) OneDrive ファイルとフォルダーを[共有](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)する
+[ユーザー アカウントで管理者を追加およびOneDriveする](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)(記事)
+
+[削除済みファイルのOneDrive](/onedrive/restore-deleted-onedrive)する (記事)
+
+[OneDrive保持と削除 (](/onedrive/retention-and-deletion)記事)
+
+[OneDrive のファイルとフォルダーを共有する](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)

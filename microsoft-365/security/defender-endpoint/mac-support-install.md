@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5166de3a7c7017979a93ac7026636ba24671892e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 776cd18146fa4f726ef5d25433c564510b8a0e67
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935151"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651972"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint のインストールの問題のトラブルシューティング
 
@@ -32,11 +32,11 @@ ms.locfileid: "51935151"
 
 **適用対象:**
 
-- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [macOS 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="installation-failed"></a>インストールに失敗しました
 
@@ -58,9 +58,9 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 この例では、実際の理由の先頭に . が付く `[ERROR]` 。
 これらのバージョン間のダウングレードがサポートされていないため、インストールに失敗しました。
 
-## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATPログが見つからないか更新されていない場合
+## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP インストール ログが見つからないか更新されない
 
-まれに、インストールでは、MDATPの /Library/Logs/Microsoft/mdatp/install.log ファイルにトレースが残りありません。
+まれに、インストールは MDATP の /Library/Logs/Microsoft/mdatp/install.log ファイルにトレースを残しません。
 macOS ログを照会することで、インストールが発生したことを確認し、考えられるエラーを分析できます (これは、クライアント UI がない場合、MDM の展開に役立ちます)。 細いタイム ウィンドウを使用してクエリを実行し、膨大な量の情報が含むので、ログ プロセス名でフィルター処理することをお勧めします。
 
 ```bash

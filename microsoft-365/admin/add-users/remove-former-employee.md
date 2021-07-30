@@ -26,22 +26,30 @@ search.appverid:
 - MET150
 - MOE150
 description: このソリューションの手順に従って、組織のデータを保護Microsoft 365元の従業員を削除します。
-ms.openlocfilehash: 00706f0dac37fe7be538a45908372ed1084dc9d0
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 7c9667b771300a75a91588727f1d333ff2215302
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541543"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648665"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概要: 元従業員とセキュリティで保護されたデータを削除する
 
-よく聞く質問は、「従業員が組織を離れるときにデータを保護し、アクセスを保護するために何をすべきですか? この記事シリーズでは、Microsoft 365 へのアクセスをブロックする方法、データをセキュリティで保護するために実行する必要がある手順、および他の従業員がデータにアクセスする方法について説明します。
+よく聞く質問は、「従業員が組織を離れるときにデータを保護し、アクセスを保護するために何をすべきですか? この記事シリーズでは、Microsoft 365 へのアクセスをブロックして、これらのユーザーが Microsoft 365 にサインインできない方法、組織データをセキュリティで保護するために実行する手順、および他の従業員が電子メールと OneDrive データにアクセスする方法について説明します。
 
-:::image type="content" source="../../media/delete-user-overview.png" alt-text="スクリーンショット: 元従業員を削除するための概要手順":::
-
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 このソリューションの手順を完了するには、グローバル管理者である必要があります。
+
+このシリーズの手順を完了するには、これらの機能と機能Microsoft 365使用します。
+
+|製品またはコンポーネント|機能|
+|---|---|
+|Microsoft 365 管理センター|メールボックスの変換、メールの転送、アクセスの取り消し、ユーザーの削除 |
+|Exchange 管理センター|ユーザーのブロック、電子メールへのアクセスのブロック、デバイスのワイプ |
+|OneDrive と SharePoint |他のユーザーにアクセス権を与える |
+|Outlook|pst ファイルのインポート、メールボックスの追加 |
+|Active Directory|ハイブリッド環境でユーザーを削除する |
 
 ## <a name="solution-remove-a-former-employee"></a>解決策: 元従業員を削除する
 

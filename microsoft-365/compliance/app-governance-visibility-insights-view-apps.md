@@ -2,8 +2,8 @@
 title: アプリを表示する
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,25 +14,25 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリを表示します。
-ms.openlocfilehash: 48a1a2140a3b59091796ca013a12eeefb8a284b9
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 5a11e161fb7b37405b61866599a616874ad4a190
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420261"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623028"
 ---
 # <a name="view-your-apps"></a>アプリを表示する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-Microsoft アプリ ガバナンスを使用すると、テナント内の Microsoft 365 アプリに関する詳細な分析情報をすばやく得ることができます。 たとえば、次が表示されます。
+Microsoft アプリ ガバナンスを使用すると、テナント内の Microsoft 365 アプリに関する詳細な分析情報をすばやく得ることができます。たとえば、次が表示されます。
 
 - Microsoft Graph API を使用するテナント内の OAuth 対応アプリのリストと、関連するアプリのメタデータおよび使用状況データ。
 - リストからアプリを選択することにより詳細な分析情報を備えたアプリの詳細。
 
 ## <a name="getting-a-list-of-all-the-apps-in-your-tenant"></a>テナント内のすべてのアプリのリストを取得する
 
-テナント内のアプリの概要については、**[Microsoft 365 コンプライアンス センター] > [アプリの保護とガバナンス] > [アプリ]** にアクセスします。
+テナント内のアプリの概要については、**[Microsoft 365 コンプライアンス センター] > [アプリ ガバナンス] > [アプリ]** にアクセスします。
 
 ![Microsoft 365 コンプライアンス センターの MAPG アプリの概要ページ](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
@@ -44,7 +44,7 @@ Microsoft アプリ ガバナンスを使用すると、テナント内の Micro
 
 - アプリ名
 - 発行元
-- アプリ証明書
+- M365 認定
 
   アプリが Microsoft のテクノロジと互換性があり、クラウド アプリのセキュリティのベスト プラクティスに準拠し、Microsoft によってサポートされているかどうかを示します。
 
@@ -74,12 +74,12 @@ Microsoft アプリ ガバナンスを使用すると、テナント内の Micro
 | タブ名 | 説明 |
 |:-------|:-----|
 | 詳細 | 最初に同意した日付やアプリ ID など、アプリに関する追加データを表示します。 Azure AD に登録されているアプリのプロパティを表示するには、**[Azure AD のアプリを表示]** を選択します。 |
-| 使用法 | テナント内のアプリがアクセスするデータを確認し、データ使用量をプロットして、上位 \<x> ユーザーと[優先アカウント](/microsoft-365/admin/setup/priority-accounts)を持つユーザーによる使用状況を表示します。 |
+| 使用法 |テナント内のアプリがアクセスするデータを確認し、SharePoint および Exchange リソースのデータ使用量をプロットします。 |
 | ユーザー | アプリを使用しているユーザーのリスト、ユーザーが優先アカウントであるかどうか、ダウンロードおよびアップロードされたデータの量を表示します。 |
 | アクセス許可 | アプリに付与されて使用されるアクセス許可の概要と、特定のアクセス許可のリストを表示します。 詳細については、「[Microsoft Graph のアクセス許可リファレンス](/graph/permissions-reference)」を参照してください。 |
 |||
 
-有効なアプリの場合、選択したアプリの使用を無効にする **[アプリの無効化]** コントロールと、無効にしたアプリの使用を有効にする **[アプリの有効化]** コントロールがあります。 これらのアクションには、次の[管理者の役割](app-governance-get-started.md#administrator-roles)が必要です。
+有効なアプリの場合、選択したアプリの使用を無効にする **[アプリの無効化]** コントロールと、無効にしたアプリの使用を有効にする **[アプリの有効化]** コントロールがあります。これらのアクションには、次の管理者の役割が必要です。
 
 - コンプライアンス管理者
 - グローバル管理者

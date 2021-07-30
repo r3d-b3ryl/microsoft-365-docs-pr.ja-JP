@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 セキュリティ/コンプライアンス センターでキーワード ディクショナリを作成する基本的な手順について説明します。
-ms.openlocfilehash: 8d313650f298f2ab26989bec9df1260918f7dd5c
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 1815605d78f3b623eba34bf4d0ec2899256e6385
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300110"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624214"
 ---
 # <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
 
@@ -73,7 +73,7 @@ Remove-Item $rawFile
 
 辞書のキーワードを、さまざまなソースから作成することができます。一般的な例として、サービスにインポートされたファイルや PowerShell コマンドレットでインポートされたファイル (.csv または .txt リストなど)、PowerShell コマンドレットで直接入力するリスト、または既存の辞書などがあります。キーワード辞書を作成するときには、次の同じ基本手順に従います。
   
-1. **セキュリティ/コンプライアンス センター** ([https://protection.office.com](https://protection.office.com)) を使用するか、**セキュリティ &amp; コンプライアンス センター PowerShell** に接続します。
+1. **コンプライアンス センター** ([https://compliance.microsoft.com](https://compliance.microsoft.com)) を使用するか、**セキュリティ &amp; コンプライアンス センター PowerShell** に接続します。
     
 2. **目的のソースからキーワードを定義または読み込みます**。 ウィザードとコマンドレットの両方でコンマ区切りキーワード リストを使ってカスタム キーワード ディクショナリを作成できるので、この手順はキーワードがどこから得られるかによって多少異なります。 いったん読み込まれたキーワードは、インポートされる前にエンコードされてバイト配列に変換されます。
     
@@ -83,7 +83,7 @@ Remove-Item $rawFile
 
 ユーザー辞書のキーワードを作成してインポートするには、次の手順を実行します。
 
-1. セキュリティ/コンプライアンス センターに接続します ([https://protection.office.com](https://protection.office.com))。
+1. コンプライアンス センターに接続します ([https://compliance.microsoft.com](https://compliance.microsoft.com))。
 
 2. **[分類] > [機密情報の種類]** の順に移動します。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f52d1e9ea0d3e4c2da2ec413085a0f14efc453c7
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: 9784b4768b346ec9c6614a000f4cfc92ecd4f98a
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363805"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648185"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Intune のデバイス制御ポリシーの例
 
@@ -33,7 +33,7 @@ ms.locfileid: "53363805"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 このドキュメントには、独自の組織用にカスタマイズできるデバイス制御ポリシーの例が記載されています。 これらの例は、Intune を使用して企業内のデバイスを管理する場合に適用されます。
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: e5eda862f253f1df2fd4b2d394601b99258ce446
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: a487148601f9565a82f8046019fcf6cb4c2825c1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587887"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652649"
 ---
 # <a name="troubleshoot-service-issues"></a>サービスに関する問題のトラブルシューティング
 
@@ -31,7 +31,7 @@ ms.locfileid: "53587887"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 このセクションでは、Microsoft Defender for Endpoint サービスを使用する際に発生する可能性のある問題について説明します。
 
@@ -81,7 +81,7 @@ Microsoft [](event-error-codes.md) Defender for Endpoint サービスによっ�
 
 数値の区切り記号としてコンマを使用するサポートはサポートされていません。 数字がコンマで区切られ、1000 を示す領域では、ドットが区切り記号としてのみ表示されます。 たとえば、15,5K は 15.5K と表示されます。
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Microsoft Defender for Endpoint テナントがヨーロッパで自動的に作成されました
 

@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56fd5aa10cf30e7bdcad213a68430b460e65647c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: b9a146d2dd66222d405243ea5db66486c2678412
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844228"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53647885"
 ---
-# <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Microsoft Defender for Endpoint Incidents キューの表示と整理
+# <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Microsoft Defender for Endpoint インシデント キューを表示して整理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "52844228"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 インシデント **キューには、** ネットワーク内のデバイスからフラグが設定されたインシデントのコレクションが表示されます。 これにより、インシデントを分類して優先順位を付け、情報に基づいたサイバーセキュリティ対応の決定を作成できます。
 
@@ -53,11 +53,11 @@ ms.locfileid: "52844228"
 ## <a name="sort-and-filter-the-incidents-queue"></a>インシデント キューの並べ替えとフィルター処理
 次のフィルターを適用して、インシデントの一覧を制限し、より集中したビューを取得できます。
 
-### <a name="severity"></a>重要度
+### <a name="severity"></a>緊急度
 
 インシデントの重大度 | 説明
 :---|:---
-高 </br>(赤) | 多くの場合、高度な永続的な脅威 (APT) に関連付けられている脅威。 これらのインシデントは、デバイスに与える損害の重大度が高いリスクを示しています。
+高い </br>(赤) | 多くの場合、高度な永続的な脅威 (APT) に関連付けられている脅威。 これらのインシデントは、デバイスに与える損害の重大度が高いリスクを示しています。
 中 </br>(オレンジ) | 異常なレジストリ変更、疑わしいファイルの実行、攻撃段階の一般的な動作など、組織でまれに観察される脅威。
 低い </br>(黄色) | 組織を標的とする高度な脅威を必ずしも示すわけではない、一般的なマルウェアやハッキング ツールに関連する脅威。
 情報 </br>(灰色) | 情報インシデントはネットワークに悪影響を及ぼすとは見なされませんが、追跡しておいた方が良い場合があります。
@@ -65,7 +65,7 @@ ms.locfileid: "52844228"
 ## <a name="assigned-to"></a>割り当て先
 ユーザー割り当てられているものまたは自分に割り当てられているものを選択することで、リストをフィルター処理することを選択できます。
 
-### <a name="category"></a>Category
+### <a name="category"></a>カテゴリ
 インシデントは、サイバーセキュリティキル チェーンが含むステージの説明に基づいて分類されます。 このビューは、脅威アナリストがコンテキストに基づいて展開する優先度、緊急性、対応する対応戦略を決定するのに役立ちます。
 
 ### <a name="status"></a>状態

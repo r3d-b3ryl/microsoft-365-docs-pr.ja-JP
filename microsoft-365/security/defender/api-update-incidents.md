@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 60f1209331862eb21d3b1949265f0873dcf2e5a7
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c30d9918e4e61973dc03e6a2e621ffda5e7e01e5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287821"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652517"
 ---
 # <a name="update-incidents-api"></a>インシデント API の更新
 
@@ -40,7 +40,7 @@ ms.locfileid: "53287821"
 
 ## <a name="api-description"></a>API の説明
 
-既存のインシデントのプロパティを更新します。 更新可能なプロパティは ```status``` ```determination``` ```classification``` 、、、、、、 ```assignedTo``` ```tags``` です ```comments``` 。
+既存のインシデントのプロパティを更新します。 更新可能なプロパティは `status` `determination` `classification` 、、、、、、 `assignedTo` `tags` です `comments` 。
 
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>クォータ、リソース割り当て、その他の制約
 
@@ -53,10 +53,10 @@ ms.locfileid: "53287821"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「Access [the Microsoft 365 Defender API」を参照してください](api-access.md)。
 
-アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
--|-|-
-アプリケーション | Incident.ReadWrite.All | すべてのインシデントの読み取りおよび書き込み
-委任 (職場または学校のアカウント) | Incident.ReadWrite | インシデントの読み取りおよび書き込み
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
+---|---|---
+アプリケーション|Incident.ReadWrite.All|すべてのインシデントの読み取りおよび書き込み
+委任 (職場または学校のアカウント)|Incident.ReadWrite|インシデントの読み取りおよび書き込み
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合、ユーザーはポータルでインシデントを更新するアクセス許可を持っている必要があります。
@@ -69,23 +69,23 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
--|-|-
-Authorization | String | ベアラー {token}。 **必須**
-Content-Type | 文字列 | application/json. **必須**
+名前|種類|説明
+---|---|---
+Authorization|String|ベアラー {token}。 **必須**
+Content-Type|文字列|application/json. **必須**
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、更新するフィールドの値を指定します。 要求本文に含まれていない既存のプロパティは、関連する値の変更のために再計算する必要がない限り、値を維持します。 最適なパフォーマンスを得る場合は、変更していない既存の値を省略する必要があります。
 
-プロパティ | 種類 | 説明
--|-|-
-status | 列挙 | インシデントの現在の状態を指定します。 使用できる値は ```Active``` ```Resolved``` 、、、および ```Redirected``` です。
-assignedTo | string | インシデントの所有者。
-classification | 列挙 | インシデントの仕様。 可能な値は、```Unknown```、```FalsePositive```、```TruePositive``` です。
-決定 | 列挙 | インシデントの決定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
-tags | string List | インシデント タグの一覧。
-comment | string | インシデントに追加するコメント。
+プロパティ|種類|説明
+---|---|---
+status|列挙|インシデントの現在の状態を指定します。 使用できる値は `Active` `Resolved` 、、、および `Redirected` です。
+assignedTo|string|インシデントの所有者。
+classification|列挙|インシデントの仕様。 可能な値は、`Unknown`、`FalsePositive`、`TruePositive` です。
+決定|列挙|インシデントの決定を指定します。 可能な値は、`NotAvailable`、`Apt`、`Malware`、`SecurityPersonnel`、`SecurityTesting`、`UnwantedSoftware`、`Other` です。
+tags|string List|インシデント タグの一覧。
+comment|string|インシデントに追加するコメント。
 
 ## <a name="response"></a>応答
 
@@ -93,7 +93,7 @@ comment | string | インシデントに追加するコメント。
 
 ## <a name="example"></a>例
 
-**要求**
+### <a name="request-example"></a>要求の例
 
 要求の例を次に示します。
 
@@ -101,7 +101,7 @@ comment | string | インシデントに追加するコメント。
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
 
-**応答**
+### <a name="response-example"></a>応答の例
 
 ```json
 {

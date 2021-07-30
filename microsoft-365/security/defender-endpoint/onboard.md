@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c58d7d4192afd0aa13a5ffb0c7f3204b4eaf0315
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 1fee26356a7a705b1e4d8a5bebb36b9adbcfd123
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844408"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651857"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>Microsoft Defender for Endpoint の機能を構成および管理する
 
@@ -35,7 +35,7 @@ ms.locfileid: "52844408"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint の機能を構成および管理し、組織に最適なセキュリティ保護を得る方法について説明します。
 
@@ -49,5 +49,5 @@ Defender for Endpoint の機能を構成および管理し、組織に最適な�
 [攻撃面の減少機能を構成する](configure-attack-surface-reduction.md) | 攻撃表面の縮小機能を構成し、設定が適切に適用され、悪用の軽減方法が設定されていることを確認します。
 [次世代の保護を構成する](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | 次世代の保護を構成して、すべての種類の新しい脅威をキャッチします。
 [機能Microsoft 脅威エキスパート構成する](configure-microsoft-threat-experts.md) | セキュリティ脅威インテリジェンスを構成および管理するには、Microsoft 脅威エキスパート。
-[Defender 統合Microsoft 365構成する](/microsoft-365/security/defender-endpoint/threat-protection-integration) | Defender for Endpoint と統合する他のソリューションを構成します。
+[統合Microsoft 365 Defender構成する](/microsoft-365/security/defender-endpoint/threat-protection-integration) | Defender for Endpoint と統合する他のソリューションを構成します。
 [管理と API のサポート](/microsoft-365/security/defender-endpoint/management-apis) | セキュリティ情報とイベント管理 (SIEM) にアラートをプルするか、API を使用してカスタム アラートを作成します。 レポートを作成Power BI作成します。

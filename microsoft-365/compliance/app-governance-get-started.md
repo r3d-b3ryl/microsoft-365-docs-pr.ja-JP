@@ -3,7 +3,7 @@ title: アプリ ガバナンスの使用を開始する
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
-author: JoeDavies-MSFT
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -14,20 +14,58 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリを管理するためのアプリ ガバナンス機能の使用を開始します。
-ms.openlocfilehash: d4bf5314772ab37c2b79c1895e3094fdb2b66593
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: c4cdc83d41a888fbf395d2c13e442bbaaf7da54e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53594912"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621681"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>アプリ ガバナンスの使用を開始する (プレビュー版)
 
 Microsoft Cloud App Security のアプリ ガバナンス アドオンの使用を開始するには、次の手順に従います。
 
-1. アカウントが適正なレベルのライセンスを保持しているか検証する。アプリ ガバナンスは、Microsoft Cloud App Security (MCAS) のアドオン機能であり、アカウントに MCAS がスタンドアロン製品または以下の各種ライセンス パッケージの一部として存在している必要があります。
-1. ポータルのアプリ ガバナンス ページにアクセスするには、以下のいずれかの管理者の役割が必要です。
+1. アカウントが[適正なレベルのライセンス](#licensing-for-app-governance)を保持しているか検証する。アプリ ガバナンスは、Microsoft Cloud App Security (MCAS) のアドオン機能であり、アカウントに MCAS がスタンドアロン製品または以下の各種ライセンス パッケージの一部として存在している必要があります。
+1. ポータルのアプリ ガバナンス ページにアクセスするには、以下のいずれかの[管理者の役割](#administrator-roles)が必要です。
 1. 所属している組織のテナント登録は、[北米、欧州、アフリカ](app-governance-countries.md)のいずれかのサポート エリア内である必要があります。
+
+## <a name="add-app-governance-to-your-microsoft-365-account"></a>Microsoft 365 アカウントにアプリ ガバナンスを追加する
+
+Microsoft 365 の新しいお客様の場合:
+
+1. このページの上部にある  **[無料アカウント]**  ボタンをクリックします。
+1.  **[Microsoft 365 for business を試す]**  で、 **[1 か月の無料試用版を試す]** をクリックします。
+1. サインアップの手順を完了します。
+
+既存の Microsoft 365 のお客様の場合:
+
+1. Microsoft 365 管理センターで、 **[請求]** > **[サービスの購入]**  に移動し、 **[アドオン]** をクリックします。 検索バーを使用して、**アプリ ガバナンス** を見つけます。
+1. アプリ ガバナンス カードで、 **[詳細]** をクリックします。
+1.  **[無料使用版を有効化]** をクリックします。
+
+## <a name="add-integration-with-mcas"></a>MCAS との統合を追加 
+
+前提条件:
+
+- Office 365 は、Cloud App Security で接続されています。
+- Office 365 Azure AD アプリが有効化されています
+
+Cloud App Security を使用してアプリ ガバナンスの同期を有効にするには、以下の手順に従ってください。
+
+1. Microsoft Cloud App Security ポータルに移動する - [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
+1. 歯車アイコン (右上) をクリックし、[**設定**] を選択します。
+1. [**脅威の防止**] から [**アプリ ガバナンス**] を選択します。
+1. [**アプリ ガバナンスの統合を有効にする**] をクリックして、[**保存**] を選択します。
+
+次に、MCAS で新たに有効化されたポリシーを確認します。 統合が有効化されてから新しいポリシーが表示されるまでに数分かかる場合があります。
+
+- Microsoft 365 OAuth アプリの評価
+- Microsoft 365 OAuth フィッシング検出
+- Microsoft 365 OAuth アプリ ガバナンス
+- MCAS ダッシュボードのアプリ ガバナンス ウィジェットを確認する
+- MCAS アラートで新しく生成されたアプリ ガバナンスのアラートを確認する
+- アプリ ガバナンス ポリシー一覧で MCAS M365 OAuth ポリシーを確認する
+- アプリ ガバナンス アラートで新しく生成された MCAS M365 OAuth アラートを確認する
 
 ## <a name="licensing-for-app-governance"></a>アプリ ガバナンスのライセンス
 
@@ -57,6 +95,9 @@ Microsoft Cloud App Security のアプリ ガバナンス アドオンの使用�
 - Microsoft 365 A5 (電話会議なし) 学生使用特典
 
 ## <a name="administrator-roles"></a>管理者の役割
+
+> [!NOTE]
+> グローバル管理者の役割のみが、アプリ ガバナンスの無料試用版を有効化できます。
 
 アプリ ガバナンス ページを表示したり、ポリシーや設定を管理したりするには、以下のいずれかの管理者の役割が必要です。
 
@@ -91,57 +132,6 @@ Microsoft Cloud App Security のアプリ ガバナンス アドオンの使用�
 |||||||||| | |
 
 各役割に関する詳細については、「[管理者の役割のアクセス許可](/azure/active-directory/roles/permissions-reference)」を参照してください。
-
-## <a name="add-app-governance-to-your-microsoft-365-account"></a>Microsoft 365 アカウントにアプリ ガバナンスを追加する
-
-既存の Microsoft 365 のお客様の場合:
-
-1. [Microsoft 365 管理センター](https://admin.microsoft.com)で、**[請求 - サービスの購入]** に移動し、**[アドオン]** をクリックします。
-1. アプリ ガバナンス カードで、**[詳細]** をクリックします。
-1. **[無料試用版を開始]** をクリックします。
-1. 必要な情報を入力し、選択済みのテナントにアプリ ガバナンスを追加します。 新規のお客様の場合、まずアカウントを作成するための情報を提供し、試用期間中のテナントを作成する必要があります。 これが完了すると、試用版にアプリ ガバナンスを追加できます。
-
-Microsoft 365 の新しいお客様の場合:
-
-1. このページの上部にある **[無料アカウント]** ボタンをクリックします。
-1. **[Microsoft 365 for business を試す]** で、**1 ヶ月の無料試用版を試す]** をクリックします。
-
-両者向け:
-
-1. サインアップ ポータルでは、試用版に使用するメール アドレスを入力します。 既存のお客様の場合は、アカウントに関連付けられたメールを使用します。 [**次へ**] をクリックします。
-1. サインインしたら、**[今すぐ試す]** をクリックして、無料体験版を入手します。
-1. **[続行]** をクリックしてページを閉じ、使用番の設定を開始します。 新しいアプリ ガバナンスのお客様の場合、アプリ ガバナンスのインスタンスが利用可能になるまで、最大で 2 時間かかります。 既存のお客様については、既存のサービスに支障はありません。
-
-  > [!NOTE]
-  アカウントをお持ちでない場合は、試用版の使用を開始する前に、新しいアカウントを設定するためのメッセージが表示されます。
-
-1. AAD テナントの利用可能なドメイン名を入力し、**[利用可能か確認]** をクリックします。 管理者の役割が自動的に割り当てられます (アプリ ガバナンスのための既存の役割がない場合)。ドメイン名の変更やテナントの追加購入は、Microsoft 365 管理センター経由で後からでも可能です。
-1. アカウントへのログインに使用するユーザー名とパスワードを入力します。 [**サインアップ**] をクリックします。
-1. **[今すぐ開始]** をクリックしてアプリ ガバナンスポータルに移動するか、**[サブスクリプションの管理]** をクリックして Microsoft 365 管理センターに移動します。
-
-## <a name="add-integration-with-mcas"></a>MCAS との統合を追加 
-
-前提条件:
-
-- Office 365 は、Cloud App Security で接続されています。
-- Office 365 Azure AD アプリが有効化されています
-
-Cloud App Security を使用してアプリ ガバナンスの同期を有効にするには、以下の手順に従ってください。
-
-1. Microsoft Cloud App Security ポータルに移動する - [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
-1. 歯車アイコン (右上) をクリックし、[**設定**] を選択します。
-1. [**脅威の防止**] から [**アプリ ガバナンス**] を選択します。
-1. [**アプリ ガバナンスの統合を有効にする**] をクリックして、[**保存**] を選択します。
-
-次に、MCAS で新たに有効化されたポリシーを確認します。 統合が有効化されてから新しいポリシーが表示されるまでに数分かかる場合があります。
-
-- Microsoft 365 OAuth アプリの評価
-- Microsoft 365 OAuth フィッシング検出
-- Microsoft 365 OAuth アプリ ガバナンス
-- MCAS ダッシュボードのアプリ ガバナンス ウィジェットを確認する
-- MCAS アラートで新しく生成されたアプリ ガバナンスのアラートを確認する
-- アプリ ガバナンス ポリシー一覧で MCAS M365 OAuth ポリシーを確認する
-- アプリ ガバナンス アラートで新しく生成された MCAS M365 OAuth アラートを確認する
 
 ## <a name="canceling-your-trial"></a>試用版のキャンセル
 

@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: ドメインを確認し、Microsoft 365 で DNS レコードを作成する方法を学びます。
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: 95b1caadfe0e5b331b2bd777263bd86a88bb581f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 64984cc6631e4585b208b67970b1fc91402881ed
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050656"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648629"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Microsoft 365 にドメインを接続する
 
@@ -45,11 +45,12 @@ MX レコードの情報は、管理センターのドメイン セットアッ�
 - Priority: 使用可能な最高の値を設定します。通常は `0` です。
 - Host Name: `@`
 - Points to address: 管理センターから値をコピーし、ここに貼り付けます。
-- TTL: `3600‎` (またはプロバイダーの既定値)
+- TTL: `3600` (またはプロバイダーの既定値)
 
 レコードを保存して、他の MX レコードを削除します。
 
 ## <a name="add-a-cname-record-to-connect-users-to-their-mailboxes"></a>CNAME レコードを追加して、ユーザーをメールボックスに接続します
+
 CNAME レコードの情報は、管理センターのドメイン セットアップ ウィザードから取得されます。
 
 ホスティング プロバイダーの Web サイトで、以下の CNAME レコードを追加します。 フィールドが次の値に設定されていることを確認します。
@@ -57,9 +58,10 @@ CNAME レコードの情報は、管理センターのドメイン セットア�
 - Record Type: `CNAME (Alias)`
 - Host: 管理センターからコピーした値をここに貼り付けます。
 - Points to address: 管理センターから値をコピーし、ここに貼り付けます。
-- TTL: `3600‎` (またはプロバイダーの既定値)
+- TTL: `3600` (またはプロバイダーの既定値)
 
 ## <a name="add-a-txt-record-to-help-prevent-spam"></a>迷惑メールの防止に役立つ SPF の TXT レコードを追加する
+
 **開始する前に:** 使用しているドメインに既に SPF レコードがある場合は、Microsoft 365 用に新しいレコードを作成しないでください。 代わりに、ホスティング プロバイダーの Web サイトの現在のレコードに Microsoft 365 で必要になる値を追加して、元々の値と追加する値の組み合わせが *1 つ* の SPF レコードに含まれるようにします。
 
 ホスティング プロバイダーの Web サイトで、既存の SPF レコードを編集するか、SPF レコードを作成します。
@@ -68,14 +70,14 @@ CNAME レコードの情報は、管理センターのドメイン セットア�
 - Record Type: `TXT (Text)`
 - Host: `@`
 - TXT Value: `v=spf1 include:spf.protection.outlook.com -all`
-- TTL: `3600‎` (またはプロバイダーの既定値)
+- TTL: `3600` (またはプロバイダーの既定値)
 
 レコードを保存します。
 
 SPF レコードを検証するには、[SPF 検証ツール](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)のいずれかを使用します。
 
-SPF はスプーフィングの防止に役立ちますが、SPF では保護できないスプーフィング方法があります。 これらから保護するために、SPF をセットアップした後、Microsoft 365 のために DKIM と DMARC も構成する必要があります。
+SPF はスプーフィングの防止に役立ちますが、SPF では保護できないスプーフィング方法があります。それらから保護するには、SPF のセットアップ後に、DKIM と DMARC を Microsoft 365 用に構成する必要もあります。
 
-使用を開始する場合は、「[DKIM を使用して、Microsoft 365 のドメインから送信される送信電子メールを検証する](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md)」、「[DMARC を使用して Microsoft 365 のメールを検証する](../../security/defender-365-security/use-dmarc-to-validate-email.md)」を参照してください。
+使用を開始する場合は、「[DKIM を使用して、Microsoft 365 のドメインから送信される送信電子メールを検証する](../../security/office-365-security/use-dkim-to-validate-outbound-email.md)」、「[DMARC を使用して Microsoft 365 のメールを検証する](../../security/office-365-security/use-dmarc-to-validate-email.md)」を参照してください。
 
 最後に、管理センターのドメイン セットアップ ウィザードに戻って設定を完了します。

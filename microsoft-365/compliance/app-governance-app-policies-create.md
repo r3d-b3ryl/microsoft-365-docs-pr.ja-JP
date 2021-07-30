@@ -2,8 +2,8 @@
 title: アプリ ポリシーを作成する
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリ ポリシーを作成します。
-ms.openlocfilehash: 66d8dda7c9cd768d6971e2b58dca4c9c5437e5bb
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 317254714188bd1118a5ba285c5cc91f050abd28
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438062"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619173"
 ---
 # <a name="create-app-policies"></a>アプリ ポリシーを作成する
 
@@ -50,7 +50,7 @@ Microsoft アプリ ガバナンスのアプリ ポリシーには一連の機�
 
 | テンプレート名 | 説明 |
 |:-------|:-----|
-| 大量のデータ アクセスが可能な新しいアプリ | 大量のデータ アクセスが可能な最近登録されたアプリを強調表示し、それらのデータ パターンが期待されたものであることを確認します。 <br><br> 既定では、このポリシーは、過去 7 日間に登録され、その期間中に 1GB 以上のデータ アクセスがあったすべてのアプリにフラグを設定します。 このポリシーは、詳細な条件やアクションをカスタマイズすることができます。 |
+| 大量のデータ アクセスが可能な新しいアプリ | 大量のデータ アクセスが可能な最近登録されたアプリを強調表示し、それらのデータ パターンが期待されたものであることを確認します。 <br><br> 既定では、このポリシーは、過去7日間に登録され、その期間に 1 GB を超えるデータ アクセスがあったすべてのアプリにフラグを設定します。 このポリシーは、より多くの条件とアクションでカスタマイズできます。 |
 |||
 
 ### <a name="app-permissions"></a>アプリの権限
@@ -63,13 +63,13 @@ Microsoft アプリ ガバナンスのアプリ ポリシーには一連の機�
 | 高い特権のアクセス許可を持つ新しいアプリ | このポリシーでは、高い特権のアクセス許可があるすべての新しいアプリを強調表示して、詳しい調査が必要な占有領域の大きいアプリを特定します。 <br><br> 既定では、このポリシーは、過去 7 日以内に登録された、対象範囲の広いアクセス許可があるすべてのアプリにフラグを設定します。 |
 |||
 
-### <a name="app-certification"></a>アプリ証明書
+### <a name="m365-certification"></a>M365 認定
 
-アプリ ガバナンスには、これらのテンプレートが含まれており、アプリ証明書に関するアラートを生成します。
+M365 ガバナンスには、これらのテンプレートが含まれており、アプリ証明書に関するアラートを生成します。
 
 | テンプレート名 | 説明 |
 |:-------|:-----|
-| 認証されていない新しいアプリ | アプリ認証プロセスを経ていない新しいアプリを強調表示して、テナントで期待されていることを確認します。 <br><br> 既定では、このポリシーは、過去 7 日間に登録され、認定されていないすべてのアプリにフラグを設定します。 |
+| 認証されていない新しいアプリ | M365 認証プロセスを経ていない新しいアプリを強調表示して、テナントで期待されていることを確認します。 <br><br> 既定では、このポリシーは、過去 7 日間に登録され、認定されていないすべてのアプリにフラグを設定します。 |
 |||
 
 ## <a name="custom-app-policies"></a>カスタム アプリ ポリシー
@@ -109,7 +109,7 @@ Microsoft アプリ ガバナンスのアプリ ポリシーには一連の機�
 |条件 | 承諾済みの条件値 | 詳細情報 |
 |:-------|:-----|:-------|
 | アプリの登録年齢 | 過去 X 日以内 |  |
-| アプリ証明書 | 基本的なコンプライアンス、MCAS コンプライアンス、または該当なし | [Microsoft 365 認定](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
+| M365 認定 | 基本的なコンプライアンス、MCAS コンプライアンス、または該当なし | [Microsoft 365 認定](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
 | Publisher の検証 | [はい] または [いいえ] | [Publisher の検証](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) |
 | アプリケーションのアクセス許可 | 1 つ以上のエントリをリストから選択します。 | [Microsoft Graph のアクセス許可のリファレンス](https://docs.microsoft.com/graph/permissions-reference) |
 | 委任されたアクセス許可 | 1 つ以上の API アクセス許可をリストから選択します | [Microsoft Graph のアクセス許可のリファレンス](https://docs.microsoft.com/graph/permissions-reference) |
@@ -127,11 +127,7 @@ Microsoft アプリ ガバナンスのアプリ ポリシーには一連の機�
 | エラー率 | 過去 7 日間のエラー率が X% を超えています (X は管理者が定義した値)。 |  |
 ||||
 
-<!--
-NOTE TO WRITER: Replace X in the above table with correct values.
--->
-
-このアプリ ポリシーを適用するには、指定された条件をすべて満たす必要があります。
+このアプリ ポリシーがアラートを生成するには、指定された条件をすべて満たす必要があります。
 
 条件の指定が完了したら、**[保存]** を選択し、**[次へ]** を選択します。
 

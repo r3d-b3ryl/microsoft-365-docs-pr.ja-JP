@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベルを実装して組織のデータを管理しようと思っても、どこから始めればよいかかわりませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: bd3ed5e354ee80831cb1af073b6da6f277418b51
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: a58b50aeea2cfd223e54d1dd4d2c4aa91026afe8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689039"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624022"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの使用を開始する
 
@@ -56,9 +56,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 この既定の役割を使用する代わりに、新しい役割グループを作成し、このグループに **保持管理** 役割を追加することもできます。 読み取り専用の役割の場合は、**閲覧限定の保持管理** を使用します。 
 
-役割グループと役割の詳細については、「[セキュリティ/コンプライアンス センターの権限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
-
-ユーザーを役割グループに追加して役割を割り当てる手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
+ユーザーを既定の役割に追加する手順、または独自の役割グループを作成する手順については、「[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
 
 これらのアクセス許可は、アイテム保持ポリシーと保持ラベルの作成、構成、適用にのみ必要です。 これらのポリシーとラベルを構成するユーザーは、コンテンツへのアクセスを必要としません。
 

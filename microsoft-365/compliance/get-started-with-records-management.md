@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツを管理する、Microsoft 365 向けのレコード管理ソリューションが必要であるのに、どこから開始すればいいかわからなくなっていませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 173086799e4ae7cec3192f95248f0a7f26a10552
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8e6f32a7f1bc68449f1b43531725f07999043b82
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226577"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624034"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
 
@@ -53,9 +53,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 読み取り専用の役割の場合は、新しい役割グループを作成し、このグループに **閲覧限定レコード管理** の役割を追加することができます。
 
-役割グループと役割の詳細については、「[セキュリティ/コンプライアンス センターの権限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
-
-ユーザーを役割グループに追加して役割を割り当てる手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」をご覧ください。
+ユーザーを既定の役割に追加する手順、または独自の役割グループを作成する手順については、「[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
 
 これらの権限は、レコードを宣言し、処理を管理する保持ラベルを作成、構成、適用するためにのみ必要です。 保持ラベルを構成するユーザーは、コンテンツへのアクセスを必要としません。
 

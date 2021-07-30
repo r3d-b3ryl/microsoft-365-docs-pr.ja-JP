@@ -1,6 +1,6 @@
 ---
 title: デバイスを登録するためのパートナー向け手順
-description: Microsoft Managed Desktop でデバイスを管理できるよう、パートナーがデバイスを登録する方法
+description: パートナーがデバイスを登録して、デバイスをユーザーが管理Microsoft マネージド デスクトップ
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,17 +11,17 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 227786fdcf1e490be1e3ce74bbc1be1c5f21acfe
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 64686f84d8e4cc7dca40a875d8b54508ea9a1fc9
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689235"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648473"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>デバイスを登録するためのパートナー向け手順
 
 
-この記事では、パートナーがデバイスを登録するための手順について説明します。 デバイスを自分で登録するプロセスについては、「Microsoft Managed Desktop のデバイスを自分で登録する [」に記載されています](register-devices-self.md)。
+この記事では、パートナーがデバイスを登録するための手順について説明します。 デバイスを自分で登録するプロセスについては、「デバイスを自分で登録[する」にMicrosoft マネージド デスクトップ記載されています](register-devices-self.md)。
 
 
 
@@ -30,7 +30,7 @@ ms.locfileid: "51689235"
 
 
 > [!NOTE]
-> このドキュメントは、パートナーと OEM 専用です。 自己登録のプロセスについては、「Microsoft Managed Desktop のデバイスを自分で登録 [する」に記載されています](register-devices-self.md)。
+> このドキュメントは、パートナーと OEM 専用です。 自己登録のプロセスについては、「デバイスを自分で登録[する」にMicrosoft マネージド デスクトップ記載されています](register-devices-self.md)。
 
 
 ## <a name="register-devices-by-using-partner-center"></a>パートナー センターを使用してデバイスを登録する
@@ -47,15 +47,15 @@ ms.locfileid: "51689235"
 |---------|---------|
 |機密性の高いデータ     |**Microsoft365Managed \_ SensitiveData**    |
 |Power User     | **Microsoft365Managed \_ PowerUser**          |
-|標準     | **Microsoft365Managed \_ Standard**        |
+|Standard     | **Microsoft365Managed \_ Standard**        |
 
 > [!IMPORTANT]
-> グループ名は、大文字と特殊文字を含む、表に記載されている名前と完全に一致する必要があります。 これにより、新しく登録されたデバイスに Microsoft Managed Desktop Autopilot プロファイルを割り当てることができます。
+> グループ名は、大文字と特殊文字を含む、表に記載されている名前と完全に一致する必要があります。 これにより、新しく登録されたデバイスに Autopilot プロファイルMicrosoft マネージド デスクトップ割り当てることができます。
 
 >[!NOTE]
-> デバイスの購入時にこの.csvファイルを受け取っている必要があります。 ファイルを受け取らなかった [.csv、Windows Autopilot](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)にデバイスを追加するの手順に従って、自分で作成できます。 このWindows PowerShellは [、Microsoft Managed Desktop Admin](./register-devices-self.md#obtain-the-hardware-hash)ポータルで使用されるスクリプトとは異なります。 パートナーは [、Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) を使用して、Microsoft マネージ デスクトップ デバイスのデバイスをパートナー センターに登録する必要があります。
+> デバイスの購入時にこの.csvファイルを受け取っている必要があります。 ファイルを受け取らなかった.csv、Autopilot にデバイスを追加するの手順に従って[、Windows作成できます](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)。 追加の列はサポートされていません。 引用符はサポートされていません。 ANSI 形式のテキスト ファイルのみを使用できます (Unicode は使用できません)。 ヘッダーでは大文字と小文字が区別されます。 これらの要件のために、Excelを編集して CSV ファイルとして保存すると、使用できるファイルは生成できません。 デバイスのシリアル番号の先頭に 0 が残っている必要があります。 パートナーは[、Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)を使用して、パートナー センターでデバイスMicrosoft マネージド デスクトップデバイスを登録する必要があります。
 
-ファイルのアップロード中にエラー メッセージが表示.csvファイルの形式を確認します。 列の順序が「新しいデバイスで [Windows Autopilot](/partner-center/autopilot#add-devices-to-a-customers-account)プロファイルを使用して顧客のアウトボックス エクスペリエンスをカスタマイズする」で説明されている順序と一致するようにします。 [デバイスの追加] の横にあるリンク.csvサンプル ファイルを使用して、デバイス リストを作成することもできます。 
+ファイルのアップロード中にエラー メッセージが表示.csvファイルの形式を確認します。 列の順序が、「新しいデバイスで自動操縦プロファイルWindows使用して顧客のアウトボックス エクスペリエンスをカスタマイズする」で説明されている順序と一致するように[します](/partner-center/autopilot#add-devices-to-a-customers-account)。 [デバイスの追加] の横にあるリンク.csvサンプル ファイルを使用して、デバイス リストを作成することもできます。 
 
 パートナー シナリオでの自動パイロットの詳細については、「デバイスを [顧客のアカウントに追加する」を参照してください](/partner-center/autopilot#add-devices-to-a-customers-account)。
 
@@ -71,7 +71,7 @@ ms.locfileid: "51689235"
 |---------|---------|
 |機密性の高いデータ     | **Microsoft365Managed \_ SensitiveData**     |
 |Power User     | **Microsoft365Managed \_ PowerUser**          |
-|標準     | **Microsoft365Managed \_ Standard**      |
+|Standard     | **Microsoft365Managed \_ Standard**      |
 
 > [!IMPORTANT]
-> グループ タグは、大文字と特殊文字を含む、表に記載されているタグと完全に一致する必要があります。 これにより、新しく登録されたデバイスに Microsoft Managed Desktop Autopilot プロファイルを割り当てることができます。
+> グループ タグは、大文字と特殊文字を含む、表に記載されているタグと完全に一致する必要があります。 これにより、新しく登録されたデバイスに Autopilot プロファイルMicrosoft マネージド デスクトップ割り当てることができます。
