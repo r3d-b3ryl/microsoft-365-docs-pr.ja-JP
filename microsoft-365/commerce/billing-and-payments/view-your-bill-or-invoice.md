@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 07/31/2020
-ms.openlocfilehash: 463b1b1a34a14c1283ad31fb2e1236ba913b0594
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 319d8469ebdf1500f5f10e7fb84f69b9d87bed7c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394487"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650093"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
@@ -81,6 +81,12 @@ ms.locfileid: "53394487"
 > [発票管理システム](https://go.microsoft.com/fwlink/p/?linkid=837465)にアクセスするには、登録済みのアカウントが必要です。 アカウントをまだ設定していない場合は、「[21Vianet が運営する Office 365 の発票の申請](../../admin/services-in-china/apply-for-a-fapiao.md)」を参照してください。
 
 ::: moniker-end
+
+> [!NOTE]
+> 
+> Microsoft 365 サービスでは、領収書は提供されません。
+> クレジット カードでのお支払いについては、請求書とクレジット カードの請求明細書を使用してお支払いを照合してください。
+
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>請求明細書のコピーをメールで受け取る
 

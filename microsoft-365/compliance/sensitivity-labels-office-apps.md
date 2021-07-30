@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3790b3ca48e733cd2637356547dcb6a6159396e0
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 04c87543f25cf3349f179fa4a7f3ebc523e3d6ec
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622138"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656513"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -64,11 +64,11 @@ Windows コンピューターでのみ実行される Azure Information Protecti
 |[変数を使用した動的マーキング](#dynamic-markings-with-variables)                                              | 2010 以上           | 16.42 以上     | 2.42 以上 | 16.0.13328 以上 | ロール アウト |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910 以上          | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ユーザーに権限の割り当てをさせる: <br /> - ユーザーに求める](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 以上 | 16.35 以上   | レビュー中   | レビュー中         | レビュー中                                                        |
-|[ラベル関連のユーザー アクティビティを監査する](data-classification-activity-explorer.md)                      | 2011 以上 | 16.43 以上 | 2.46 以上 | ロール アウト: 16.0.13628 以上 | はい <sup>\*</sup>                                                        |
+|[ラベル関連のユーザー アクティビティを監査する](data-classification-activity-explorer.md)                      | 2011 以上 | 16.43 以上 | 2.46 以上 | 16.0.13628 以上 | はい <sup>\*</sup>                                                        |
 |[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101 以上             | 16.45 以上         | 2.47 以上 | 16.0.13628 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - 機密情報の種類の使用                    | 2009 以上                                  | 16.44 以上  | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 2009 以上                                  | レビュー中 | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|ラベル付きおよび暗号化されたドキュメントの[共同編集と自動保存をサポート](sensitivity-labels-coauthoring.md) | 2105: 6 月 18 日以降 |  16.50 以上 | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|ラベル付きおよび暗号化されたドキュメントの[共同編集と自動保存をサポート](sensitivity-labels-coauthoring.md) | 2106 以上 |  16.50 以上 | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **脚注:**
