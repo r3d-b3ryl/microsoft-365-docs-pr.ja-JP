@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: プラン for Microsoft Viva トピック
-ms.openlocfilehash: bd732edf9d206f6d62ed0cb3040b1d077b1948ca
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8f02d917a6a977dfcd8fdca6745abcdc66142aaa
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542395"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649649"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>計画を立Microsoft Viva トピック
 
@@ -54,6 +54,8 @@ Topics を使用するユーザーには、トピック エクスペリエンス
 - **選択したサイト以外のすべて**: 指定したサイトを除くすべてのサイト。 今後作成されるサイトは、トピック検出のソースとして含まれます。 
 - **選択したサイトのみ**: 指定したサイトのみ。 今後作成されるサイトは、トピック検出のソースとして含められません。
 - **サイトなし**: SharePoint サイトを含めない。
+
+少なくとも 20,000 のドキュメントを含めるのに十分なサイトを選択して、Viva Topics から最適な結果を得る方法をお勧めします。
 
 [すべて] **(選択** したサイトを除く) または選択したサイトのみを選択した場合は、サイトの一覧.csvファイルをアップロードできます。 これらのオプションは、パイロットを実行し、開始するサイトの数を制限する場合に便利です。
 

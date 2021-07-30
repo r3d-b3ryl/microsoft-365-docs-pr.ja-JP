@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: fd7c6a217c1bc1ce3b278afb911988b94a6951e0
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: b1aae75f411af4f9d745c67831222c5ceee6bb0d
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062154"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663829"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>サードパーティの HIPS から ASR ルールへの移行
 
@@ -79,7 +79,7 @@ ms.locfileid: "53062154"
 - **プロセス**- winword.exe、powerpnt.exe、excel.exe
 - **操作**- プロセスの実行
 - **ファイル/フォルダー、レジストリ キー/** 値、プロセス、サービス - powershell.exe、cmd.exe、wscript.exe、mshta.exe、EQNEDT32.EXE、regsrv32.exe
-- 攻撃 **表面** の縮小ルール - ASR ルールには、Office アプリによる子プロセスの起動を防止する組み込みのルールがあります。"すべての Office アプリケーションによる子プロセスの作成をブロックする"、GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A"。
+- 攻撃 **表面** の縮小ルール - ASR ルールには、Office アプリが子プロセスを起動するのを防ぐための組み込みのルールがあります。"すべての Office アプリケーションによる子プロセスの作成をブロックする"、GUID "d4f940ab-401b-4efc-aadc-ad5f3c50688a"。
 - **その他の推奨機能**- N/A
     
 ### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>アプリOfficeプロセスの起動と実行可能コンテンツの作成をブロックする
@@ -96,7 +96,7 @@ ms.locfileid: "53062154"
 - **プロセス**- wscript.exe
 - **操作**- ファイルの読み取り
 - **ファイル/** フォルダー、レジストリ キー/値、プロセス、サービスの例 - C:\Users *\AppData**.js、C:\Users*\Downloads**.js
-- **攻撃表面の縮小** ルール - 信頼性とパフォーマンスの問題により、ASR ルールは特定のプロセスが特定のスクリプト ファイルの種類を読み取るのを防ぐ機能を持っていません。 これらのシナリオから発生する可能性がある攻撃ベクトルを防止するルールがあります。 ルール名は"JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする" です (GUID "D3E037E1-3EB8-44C8-A917-57927947596D" ") および "難読化される可能性のあるスクリプトの実行をブロックする" (GUID " 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC")。
+- **攻撃表面の縮小** ルール - 信頼性とパフォーマンスの問題により、ASR ルールは特定のプロセスが特定のスクリプト ファイルの種類を読み取るのを防ぐ機能を持っていません。 これらのシナリオから発生する可能性がある攻撃ベクトルを防止するルールがあります。 ルール名は"JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする" です (GUID "d3e037e1-3eb8-44c8-a917-57927947596d" ") および "難読化される可能性のあるスクリプトの実行をブロックする" (GUID " 5beb7efe-fd9a-4556-801d-275e5ffc04cc")。
 - その他の推奨機能 **-** これらのシナリオ内には特定の攻撃ベクトルを軽減する特定の ASR ルールが含まれていますが、AV は既定でマルウェア対策スキャン インターフェイス (AMSI) を介してスクリプト (PowerShell、Windows スクリプト ホスト、JavaScript、VBScript など) をリアルタイムで検査できる点に言及することが重要です。 詳しくは、マルウェア対策スキャン インターフェイス [(AMSI) をご覧ください](/windows/win32/amsi/antimalware-scan-interface-portal)。
 
 ### <a name="block-launch-of-child-processes"></a>子プロセスの起動をブロックする

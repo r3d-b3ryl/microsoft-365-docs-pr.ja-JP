@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 2c1878dc9095fc4c4cfbd307154097cc6ff572f1
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 6cd7b69d154444bb6b39e61bc3446ea01d54321a
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623998"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663853"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>ゲスト アカウントの前提条件
 
@@ -45,6 +45,7 @@ Microsoft マネージド デスクトップアカウントアクセスには、
 > [はい] を選択した後は、この設定を元に **戻すことはできません**。
 
 詳細については、「ライセンスのない管理者」[を参照Microsoft Intune。](/mem/intune/fundamentals/unlicensed-admins)
+
 ## <a name="steps-to-get-ready"></a>準備の手順
 
 1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。

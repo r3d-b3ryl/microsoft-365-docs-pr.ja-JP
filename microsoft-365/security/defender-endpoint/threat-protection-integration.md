@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aeb6d93017f138ce898d25f7d76e05cdcf3e90c5
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: a5bd08de8e685dc30908647b6d2a0544309b074e
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878570"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649109"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>エンドポイント向け Microsoft Defender および他の Microsoft ソリューション
 
@@ -32,7 +32,7 @@ ms.locfileid: "52878570"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="integrate-with-other-microsoft-solutions"></a>他の Microsoft ソリューションとの統合
 
@@ -66,13 +66,13 @@ Microsoft Cloud App Securityは、Microsoft Defender for Endpoint エンドポ�
 このSkype for Business統合により、アナリストはポータルからの簡単なボタンを使用して、侵害される可能性のあるユーザーまたはデバイスの所有者と通信できます。
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
-Microsoft 365 Defender、Microsoft Defender for Endpoint、およびさまざまな Microsoft セキュリティ ソリューションは、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応する統合された侵害前および侵害後のエンタープライズ防御スイートを形成します。 
+Microsoft 365 Defender では、Microsoft Defender for Endpoint およびさまざまな Microsoft セキュリティ ソリューションが統合された侵害前および侵害後のエンタープライズ防御スイートを形成し、エンドポイント、ID、電子メール、およびアプリケーション間でネイティブに統合され、高度な攻撃を検出、防止、調査、および自動的に対応できます。 
  
-[Defender の詳細Microsoft 365する](/microsoft-365/security/defender/microsoft-365-defender)
+[詳細については、Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 
 ## <a name="related-topics"></a>関連項目
 - [統合などの高度な機能を構成する](advanced-features.md)
-- [Microsoft 365Defender の概要](/microsoft-365/security/defender/microsoft-threat-protection)
+- [Microsoft 365 Defender概要](/microsoft-365/security/defender/microsoft-threat-protection)
 - [Microsoft 365 Defender を有効にする](/microsoft-365/security/defender/mtp-enable)
 - [条件付きアクセスを使用してユーザー、データ、デバイスを保護する](conditional-access.md)

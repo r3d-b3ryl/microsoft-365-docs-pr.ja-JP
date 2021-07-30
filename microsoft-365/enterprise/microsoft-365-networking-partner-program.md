@@ -16,12 +16,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: このMicrosoft 365 ネットワーク パートナー プログラムを使用すると、デバイスがデバイスの操作として認定Microsoft 365。
 hideEdit: true
-ms.openlocfilehash: 2c57974bd15e5bac11a2275472255982a20aefac
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1330015d11179f67cc60077f2e4b51382af2d1a3
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923150"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663841"
 ---
 # <a name="microsoft-365-networking-partner-program"></a>Office 365 ネットワーク パートナー プログラム
 
@@ -36,7 +36,3 @@ Microsoft 365 への接続性を高め、エンタープライズ ネットワ�
 このMicrosoft 365 ネットワーク パートナー プログラムは、これらの質問に答えるのに役立ち、お客様が最適なエクスペリエンスを提供するためにネットワーク アーキテクチャを構築し最適化するための Microsoft の取り組Microsoft 365示しています。 このMicrosoft 365チームは、ネットワーク製品とソリューションに最適な接続の主な原則をネイティブに組み込むのに役立つ、多くのネットワーク業界パートナーと協力しています。
 
 このMicrosoft 365 ネットワーク パートナー プログラムは、修飾されたネットワーク ソリューションを "ネットワークソリューションと一緒に動作する" Microsoft 365。 microsoft の厳しいテスト要件を満たすデバイスまたはソリューションのみ、セットアップのシームレスなエクスペリエンスを持ち、Microsoft 365 で使用する場合に高品質のネットワーク エクスペリエンスを実証する場合は、「works with Microsoft 365」という指定を受け取ります。 これらの検証済みパートナー ソリューションは、[Microsoft 365 ネットワーク パートナー プログラム] ページに表示され、ソリューションの詳細と詳細情報へのリンクが表示されます。 [](https://www.microsoft.com/microsoft-365/partners/O365networkingpartners)
-
-お客様のMicrosoft 365、このページでネットワーク ソリューション プロバイダーにこのプログラムを認識させる方法があります [https://aka.ms/Office365NPP]() 。
-
-ネットワーク ソリューション プロバイダーに関する問い合わせは、Microsoft 365 ネットワーク パートナー プログラムフォームに入力してください [https://aka.ms/NPPsignup](https://aka.ms/NPPsignup) 。 皆様のご興味に感謝し、美しいパートナーシップを楽しみにしています。

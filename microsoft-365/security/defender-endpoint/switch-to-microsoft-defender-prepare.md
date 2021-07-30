@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: e2bce4d202c36e0174592fa3dd5e0edee08490ee
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 306536e62b8ab47a8428882ffa43cd337805d4fb
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544543"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663889"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
 
@@ -63,7 +63,7 @@ ms.locfileid: "53544543"
 
 組織のデバイスの更新に関するヘルプが必要ですか? 以下のリソースを参照してください。
 
-|OS | Resource |
+|OS | リソース |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Mac でソフトウェアを更新する方法](https://support.apple.com/HT201541)|
@@ -79,14 +79,14 @@ ms.locfileid: "53544543"
 
 2. ライセンスが適切にプロビジョニングされていることを確認します。 [ライセンスの状態を確認します](production-deployment.md#check-license-state)。
 
-3. グローバル管理者またはセキュリティ管理者として、Defender for Endpoint の専用クラウド インスタンスをセットアップします。 「Defender [for Endpoint setup: Tenant configuration」を参照してください](production-deployment.md#tenant-configuration)。
+3. Defender for Endpoint の専用クラウド インスタンスをセットアップします。 「Defender [for Endpoint setup: Tenant configuration」を参照してください](production-deployment.md#tenant-configuration)。
 
 4. 組織内のエンドポイント (デバイスなど) がプロキシを使用してインターネットにアクセスする場合は [、「Defender for Endpoint setup: Network configuration」を参照してください](production-deployment.md#network-configuration)。
  
 この時点で、管理者ポータル () を使用するセキュリティ管理者およびセキュリティオペレーターにアクセス権を付与Microsoft 365 Defenderできます [https://security.microsoft.com](https://security.microsoft.com) 。 
 
 > [!NOTE]
-> ポータルMicrosoft 365 Defender Defender for Endpoint ポータルと呼ばれる場合があります。. [https://security.microsoft.com](https://security.microsoft.com) 
+> ポータルMicrosoft 365 Defender Defender for Endpoint ポータルと呼ばれる場合があります。. [https://security.microsoft.com](https://security.microsoft.com) 以前のMicrosoft Defender セキュリティ センター ( https://securitycenter.windows.com) は、すぐにポータルにMicrosoft 365 Defenderされます。 詳細については、「ポータルの概要[Microsoft 365 Defender」を参照してください](portal-overview.md)。
 
 ## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>ポータルへのアクセス権をMicrosoft 365 Defenderする
 

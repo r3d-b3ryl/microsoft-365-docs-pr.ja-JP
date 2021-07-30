@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 06/11/2021
+ms.date: 07/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 127d27e84cd7fc1fdaf530bc149f5d6e0d950337
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: fedd48d935ec023b8cd929cb978f5181914f546c
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541723"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663877"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Intune を使用してエンドポイント用 Microsoft Defender を管理する
 
@@ -35,7 +35,7 @@ ms.locfileid: "53541723"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 デバイス (エンドポイント[ともMicrosoft エンドポイント マネージャー)](/mem)に対する組織の脅威保護機能を管理するには、Microsoft Intune (Intune) を含むセキュリティ 保護機能を使用することをお勧めします。 [詳細については、「エンドポイント マネージャー」 を参照してください](/mem/endpoint-manager-overview)。
 
@@ -44,7 +44,7 @@ ms.locfileid: "53541723"
 ## <a name="find-your-microsoft-defender-for-endpoint-settings-in-intune"></a>Intune で Microsoft Defender for Endpoint の設定を検索する
 
 > [!IMPORTANT]
-> この記事で説明する設定を構成するには、Intune のグローバル管理者またはサービス管理者である必要があります。 詳細については、「管理者の **[種類 (Intune)」を参照してください](/mem/intune/fundamentals/users-add#types-of-administrators)**。
+> この記事で説明する設定を構成するには、Intune でグローバル管理者またはサービス管理者の役割が割り当てられている必要があります。 詳細については、「管理者の **[種類 (Intune)」を参照してください](/mem/intune/fundamentals/users-add#types-of-administrators)**。
 
 1. Azure portal ( ) に移動 [https://portal.azure.com](https://portal.azure.com) し、サインインします。
 
@@ -87,7 +87,7 @@ ms.locfileid: "53541723"
 
 - [エンドポイント保護: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 

@@ -19,12 +19,12 @@ description: 組織の SIEM サーバーを Microsoft Defender と統合して�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e11d1e64b7c8c3b9d5b93516fe05aed3d5937290
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 0cf5206b1b821f876aa810ba2bf280ba2f426544
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105634"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663865"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM との Microsoft Defender との統合 (Office 365
 
@@ -57,20 +57,16 @@ SIEM サーバーまたは他の同様のシステムは **、audit.general** �
 
 次の表に、Microsoft Defender のイベントに関連する **AuditLogRecordType** の値Office 365示します。
 
-<br>
-
-****
-
-|値|メンバ名|説明|
+| 値 | メンバ名 | 説明 |
 |---|---|---|
-|28|ThreatIntelligence|Exchange Online Protection と Microsoft Defender for Office 365 からのフィッシングとマルウェアのイベント。|
-|41|ThreatIntelligenceUrl|セーフMicrosoft Defender のタイム オブ ブロックイベントとブロック オーバーライド イベントをリンクして、Office 365。|
-|47|ThreatIntelligenceAtpContent|Microsoft Defender for SharePoint オンライン、OneDrive for Business、Microsoft Teamsのファイルのフィッシングイベントとマルウェア イベントOffice 365。|
-|64|AIR 調査|Microsoft Defender for microsoft Defender for Office 365プラン 2 の調査の詳細や関連する成果物などの、自動調査およびOffice 365イベント。|
+| 28| ThreatIntelligence | Exchange Online Protection と Microsoft Defender for Office 365 からのフィッシングとマルウェアのイベント。 |
+| 41| ThreatIntelligenceUrl | セーフMicrosoft Defender のタイム オブ ブロックイベントとブロック オーバーライド イベントをリンクして、Office 365。 |
+| 47| ThreatIntelligenceAtpContent | Microsoft Defender for SharePoint オンライン、OneDrive for Business、Microsoft Teamsのファイルのフィッシングイベントとマルウェア イベントOffice 365。 |
+| 64| AIR 調査 | Microsoft Defender for microsoft Defender for Office 365プラン 2 の調査の詳細や関連する成果物などの、自動調査およびOffice 365イベント。 |
 |
 
 > [!IMPORTANT]
-> Microsoft Defender との SIEM 統合をセットアップするには、グローバル管理者またはセキュリティ管理者の役割が Microsoft 365 Defender ポータルに割り当てられている必要Office 365。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
+> Microsoft Defender との SIEM 統合をセットアップするには、Microsoft 365 Defender ポータルでグローバル管理者またはセキュリティ管理者の役割が割り当てられている必要Office 365。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 >
 > 監査ログは、ユーザーの環境Microsoft 365する必要があります。 このヘルプを表示するには、「監査ログ検索 [を有効またはオフにする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
 
