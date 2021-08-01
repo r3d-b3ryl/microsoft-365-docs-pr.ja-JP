@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/17/2021
+ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a6bcc023571e544819ae7f276e6c3af5c1fc1335
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: ef0805644112552c3ee9faf21f43decdfa42eeab
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007402"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664083"
 ---
 # <a name="turn-on-block-at-first-sight"></a>事前ブロックを有効にする
 
@@ -190,7 +190,7 @@ Windows セキュリティ アプリを使用して、個々のクライアン�
 
 ## <a name="not-an-enterprise-admin-or-it-pro"></a>エンタープライズ管理者でも IT プロでもありませんか?
 
-エンタープライズ管理者でも IT Pro でもないが、事前ブロックについて質問がある場合は、このセクションが役に立ちます。 事前ブロックするは、マルウェアを数秒以内に検出してブロックする脅威保護機能です。 「事前ブロック」と呼ばれる特定の設定はありませんが、デバイスで特定の設定が構成されている場合、この機能は有効になります。
+エンタープライズ管理者や IT Pro でなくても、事前ブロックについて質問がある場合は、このセクションが役に立ちます。 事前ブロックするは、マルウェアを数秒以内に検出してブロックする脅威保護機能です。 「事前ブロック」と呼ばれる特定の設定はありませんが、デバイスで特定の設定が構成されている場合、この機能は有効になります。
 
 ### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>自分のデバイスで事前ブロックをオンまたはオフに管理する方法
 

@@ -58,6 +58,8 @@
           href: insider-risk-management-activities.md
         - name: インサイダー リスクのケースに対処する
           href: insider-risk-management-cases.md
+        - name: ブラウザーの信号検出について説明し構成する
+          href: insider-risk-management-browser-support.md
         - name: インサイダーリスク監査ログを使用してアクティビティを確認する
           href: insider-risk-management-audit-log.md
         - name: インサイダー リスク コンテンツ エクスプローラーを使用してデータを確認する
