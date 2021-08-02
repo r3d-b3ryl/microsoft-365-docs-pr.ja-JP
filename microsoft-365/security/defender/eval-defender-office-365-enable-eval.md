@@ -46,16 +46,16 @@ ms.locfileid: "53544519"
 - [手順 4: 受信コネクタを監査する](#step-4-audit-inbound-connectors)
 - [手順 5: 評価をアクティブ化する](#step-5-activate-the-evaluation)
 
-## <a name="step-1-activate-trial-licenses&quot;></a>手順 1: 試用版ライセンスをアクティブ化する
+## <a name="step-1-activate-trial-licenses"></a>手順 1: 試用版ライセンスをアクティブ化する
 
 既存の Microsoft Defender にログオンして、Office 365管理ポータルにログオンします。
 
 1. 管理ポータルに移動します。
 2. クイック 起動から [サービスの購入] を選択します。
 
-   :::image type=&quot;content&quot; source=&quot;../../media/mdo-eval/1_m365-purchase-services.png&quot; alt-text=&quot;[サービスの購入] をクリックします。このページのナビゲーション ウィンドウOffice 365。&quot;:::
+   :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="[サービスの購入] をクリックします。このページのナビゲーション ウィンドウOffice 365。":::
 
-3. 下にスクロールして 、[Add-On] セクション (または &quot;Defender") を検索して、Microsoft Defender のプランをOffice 365します。
+3. 下にスクロールして 、[Add-On] セクション (または "Defender") を検索して、Microsoft Defender のプランをOffice 365します。
 4. 評価するプランの横にある [詳細] をクリックします。
 
    :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="[詳細] ボタンをクリックし、次へをクリックします。":::
