@@ -22,7 +22,7 @@ description: ユーザー ライセンスが 25 未満の場合は、いつで�
 ms.date: 04/08/2021
 ms.openlocfilehash: 2d6fbe653c860c67f9897b80ffb68e6cb2859f53
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53394931"

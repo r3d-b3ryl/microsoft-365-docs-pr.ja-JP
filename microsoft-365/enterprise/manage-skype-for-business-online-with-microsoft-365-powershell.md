@@ -16,7 +16,7 @@ ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: PowerShell for Microsoft 365 を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。
 ms.openlocfilehash: 4ea4858e4ca334cdb0268312e69bef77bc9bbd86
 ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/03/2021
 ms.locfileid: "53288985"

@@ -25,7 +25,7 @@ ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 グループでは、メンバーは会話用のグループ メールおよび共有ワークスペース、ファイル、カレンダー イベント、ストリーム、Planner を利用できます。
 ms.openlocfilehash: c043a1cd796789e9da51cbb6c1f59d7a7c8df07d
 ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/23/2021
 ms.locfileid: "53541651"

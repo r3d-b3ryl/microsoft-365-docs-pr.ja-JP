@@ -28,7 +28,7 @@ ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Microsoft Business Premium、Microsoft 365 Business Standard、Microsoft 365 Business Basic、Microsoft 365 Apps for business、または Office 365 Education サブスクリプションをセットアップする方法について説明します。
 ms.openlocfilehash: 139235926d6e7ad740b16169fa6ec08fd55b74be
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53393801"

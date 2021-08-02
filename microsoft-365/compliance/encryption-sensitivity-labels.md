@@ -18,7 +18,7 @@ description: アクセスと使用を制限してデータを保護する暗号�
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: f6fff2bc595e9317ef037929a8a6828935b15bbf
 ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52624683"

@@ -21,7 +21,7 @@ keywords: 在宅勤務、在宅勤務、ハイブリッド、リモート ワー
 description: ハイブリッド ワーカーがオンプレミスおよび Microsoft 365 のリソースに安全にアクセスできるように、インフラストラクチャのレイヤーをステップ スルーします。
 ms.openlocfilehash: 75c8ee6bc736bbe53638cb9040cf2bb68e333201
 ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/29/2021
 ms.locfileid: "53650189"

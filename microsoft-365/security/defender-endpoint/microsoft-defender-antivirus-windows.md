@@ -17,7 +17,7 @@ ms.custom: nextgen
 ms.technology: mde
 ms.openlocfilehash: ceaf694d8b81e6b06ffe74efc4ad3d4d73471752
 ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2021
 ms.locfileid: "53323055"

@@ -24,7 +24,7 @@ ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '会議室メールボックスまたは備品用メールボックスを作成すると、組織の全ユーザーが Outlook を使用して会議やイベント用にそのメールボックスを予約できます。 '
 ms.openlocfilehash: 0d999cb04161b1284025aa1b587fe7368c25eb4f
 ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/30/2021
 ms.locfileid: "53227933"

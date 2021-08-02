@@ -19,7 +19,7 @@ search.appverid:
 description: 2つのテストアカウントのみを使用して、カスタムドメインから Microsoft 365 メールボックスに電子メール機能をパイロットする方法について説明します。
 ms.openlocfilehash: b2017da30aba3b48b51de26b7907167dc5dd3e6e
 ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52623647"

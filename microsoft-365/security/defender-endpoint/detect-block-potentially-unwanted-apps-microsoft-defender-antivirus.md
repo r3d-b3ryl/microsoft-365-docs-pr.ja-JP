@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 06/02/2021
 ms.openlocfilehash: d7f411c81e839d3929d4aa1a52fda29399c59dca
 ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52772379"

@@ -20,7 +20,7 @@ recommendations: false
 description: Teams のゲストとのタスク、会話、ドキュメントの共同作業を行うためチームをセットアップするのに必要な Microsoft 365 の構成手順について説明します。
 ms.openlocfilehash: 9c05c91738f2cbb992d65aa147673e0f1a1ba8f4
 ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/23/2021
 ms.locfileid: "53544471"

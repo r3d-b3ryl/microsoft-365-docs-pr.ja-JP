@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 description: コンプライアンス センターを使用して、組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効にする方法を説明します。
 ms.openlocfilehash: 72aa3f194197140cd86463598a17ab07fbbd647a
 ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/09/2021
 ms.locfileid: "53341690"

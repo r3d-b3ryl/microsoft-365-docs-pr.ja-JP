@@ -21,7 +21,7 @@ description: Microsoft 365 コンプライアンス センターを使用して�
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: a3c7f88441b05d6c64470f6632b9c63ac67b295c
 ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/10/2021
 ms.locfileid: "53363957"

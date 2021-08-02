@@ -19,7 +19,7 @@ search.appverid:
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
 ms.openlocfilehash: ac87608a2a7c4913811c090ae3c2befadaf2327e
 ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/03/2021
 ms.locfileid: "53286623"

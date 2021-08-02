@@ -17,7 +17,7 @@ ms.topic: article
 ms.date: 05/13/2021
 ms.openlocfilehash: 1a1083d15698eb5bbdf2f6080b152b6f326c689a
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52539277"
@@ -191,7 +191,7 @@ Windows Server 上のプライマリ ウイルス対策ソリューションと�
 バージョン 1803 の Windows Server、または Windows Server 2019 では、次のレジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定できます。
 - パス: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - 名前: `ForceDefenderPassiveMode`
-- 種類: `REG_DWORD`
+- 種類`REG_DWORD`
 - 値: `1`
 
 ### <a name="disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard"></a>役割と機能の削除ウィザードを使用して Microsoft Defender ウイルス対策を無効にする

@@ -22,7 +22,7 @@ feedback_system: None
 ms.date: 7/28/2020
 ms.openlocfilehash: 3f0c184cd0e0e6392f66d049b46930031e054bbe
 ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2021
 ms.locfileid: "52705668"

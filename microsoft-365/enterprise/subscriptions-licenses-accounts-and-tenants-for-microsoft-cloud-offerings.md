@@ -22,7 +22,7 @@ ms.custom:
 description: Microsoft のクラウドプランの組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの関係について理解する。
 ms.openlocfilehash: 34e920e6b5a48adaffcc31150090e96f9c8d8b0e
 ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "51604323"

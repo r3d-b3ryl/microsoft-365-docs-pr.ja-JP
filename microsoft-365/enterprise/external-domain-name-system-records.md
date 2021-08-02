@@ -24,7 +24,7 @@ ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Office 365 の展開を計画するときに使用する外部ドメインネームシステムレコードの参照リスト。
 ms.openlocfilehash: 2cbbbcb6105feccdaed1f7b6ce05a84b374024c0
 ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/14/2021
 ms.locfileid: "52926265"
@@ -134,8 +134,8 @@ Office 365 に対して Exchange Online メールだけを使用するのでは�
 |1  <br/> |すべてのメール システム (必須)  <br/> |この値で始まるすべての SPF レコード  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (一般的)  <br/> |Exchange Online だけで使用します  <br/> |include:spf.protection.outlook.com  <br/> |
 |3  <br/> |サード パーティのメール システム (あまり一般的でない)  <br/> ||\<email system like mail.contoso.com\> の内容を含める  <br/> |
-|4  <br/> |オンプレミスのメール システム (あまり一般的でない)  <br/> |Exchange Online Protection または Exchange Online と別のメール システムを使用している場合に使用します  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> \<mail.contoso.com\> の内容を含めます。  <br/> 山かっこ (\<\>) 内の値は、自分のドメインにメールを送信する他のメール システムにする必要があります。  <br/> |
-|5  <br/> |すべてのメール システム (必須)  <br/> ||-all  <br/> |
+|4   <br/> |オンプレミスのメール システム (あまり一般的でない)  <br/> |Exchange Online Protection または Exchange Online と別のメール システムを使用している場合に使用します  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> \<mail.contoso.com\> の内容を含めます。  <br/> 山かっこ (\<\>) 内の値は、自分のドメインにメールを送信する他のメール システムにする必要があります。  <br/> |
+|5   <br/> |すべてのメール システム (必須)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>例: 既存の SPF レコードへの追加
 <a name="bkmk_addtospf"> </a>

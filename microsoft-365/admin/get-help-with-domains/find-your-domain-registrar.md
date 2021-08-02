@@ -24,7 +24,7 @@ ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: InterNIC 検索を使用して、ドメイン レジストラーと DNS ホスティング プロバイダーを探す方法を説明します。
 ms.openlocfilehash: 77e4776946d51cb4f8dfe1a746e85d74a9e0a700
 ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/30/2021
 ms.locfileid: "53228029"

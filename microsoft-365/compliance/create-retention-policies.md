@@ -19,7 +19,7 @@ search.appverid:
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
 ms.openlocfilehash: 512bf7ed8eeaf8bea58d0a1a1e54d0ad2315bddc
 ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/23/2021
 ms.locfileid: "53542047"

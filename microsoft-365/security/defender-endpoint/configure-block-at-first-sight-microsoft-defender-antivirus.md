@@ -17,7 +17,7 @@ ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: ef0805644112552c3ee9faf21f43decdfa42eeab
 ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/30/2021
 ms.locfileid: "53664083"

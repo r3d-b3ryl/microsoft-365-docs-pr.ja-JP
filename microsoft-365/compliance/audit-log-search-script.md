@@ -19,7 +19,7 @@ ms.custom: seo-marvel-apr2020
 description: PowerShell スクリプトを使用して、Exchange Online で Search-UnifiedAuditLog コマンドレットを実行し、監査ログを検索します。 このスクリプトは、大規模なセット (最大 50,000 件) の監査レコードを返すように最適化されています。 これらのレコードはスクリプトによって CSV ファイルにエクスポートされ、ユーザーは Excel の Power Query を使用して表示および変換することができます。
 ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
 ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/09/2021
 ms.locfileid: "53341010"

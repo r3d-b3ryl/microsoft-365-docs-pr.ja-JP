@@ -27,7 +27,7 @@ search.appverid:
 description: Microsoft 365 Business Basic サブスクリプションのセットアップ方法について説明します。
 ms.openlocfilehash: f7569645753f292760f32ba932aac7b83c602b72
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53393825"

@@ -15,7 +15,7 @@ localization_priority: Priority
 description: Microsoft SharePoint Syntex のドキュメント理解について説明します。
 ms.openlocfilehash: 631afa9379b3c902c140c25aee4de493e49ab47f
 ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/24/2021
 ms.locfileid: "53578423"

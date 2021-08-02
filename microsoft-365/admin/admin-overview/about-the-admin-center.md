@@ -27,7 +27,7 @@ ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理者アクセス許可で Microsoft 365 管理センターにサインインして、クラウドで組織を設定し、ユーザーとサブスクリプションを管理します。
 ms.openlocfilehash: 786392b84564d9f8cf9ce3cdf870c52cc93b15f2
 ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2021
 ms.locfileid: "53394245"

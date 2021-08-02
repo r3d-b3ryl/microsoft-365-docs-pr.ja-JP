@@ -14,7 +14,7 @@ description: 金融サービス機関が、Microsoft 365 と Teams を使用し�
 f1.keywords: NOCSH
 ms.openlocfilehash: 64f0968dac4dd33b7333455a48d491f89b555524
 ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/30/2021
 ms.locfileid: "53229385"

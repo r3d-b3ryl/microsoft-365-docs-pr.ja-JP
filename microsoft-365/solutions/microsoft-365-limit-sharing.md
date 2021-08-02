@@ -22,7 +22,7 @@ recommendations: false
 description: Microsoft 365 で共有を制限または無効にするオプションについて説明します。
 ms.openlocfilehash: f237df883bb401342a3a5c93432beeb5028cfce6
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52539193"
