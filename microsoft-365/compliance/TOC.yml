@@ -968,8 +968,6 @@
           href: compliance-manager-mcca.md
         - name: よく寄せられる質問 (FAQ)
           href: compliance-manager-faq.yml
-        - name: コンプライアンス マネージャー (クラシック)
-          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
     - name: 業界固有のガイダンス

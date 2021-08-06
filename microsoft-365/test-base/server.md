@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 38e20e1eae61236c35c6e4783702e8e87ec02e56
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 70ad9d19fac15f7fb0b996a5afc759a0c3e69279d79bea406da9d22d314a4f56
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648701"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798509"
 ---
 # <a name="windows-server-application-testing"></a>Windowsサーバー アプリケーションのテスト
 

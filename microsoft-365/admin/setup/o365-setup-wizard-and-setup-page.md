@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: セットアップ ウィザードと [セットアップ] ページの違いについて説明します。
-ms.openlocfilehash: 5e081df7800b5e1f3400f1525afddf2c230a13e4
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 18dd1e6cd2aae0c1222bc0a63025c413946dbd8619231c307ec5a938c97a1bef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579112"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821702"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>セットアップ ウィザードと [セットアップ] ページの違い
 

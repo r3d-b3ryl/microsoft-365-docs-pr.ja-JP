@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: caefcd7ce19073a10139a9f4d6d84c49e93c392f
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 7e3077980755f81a3ca86569b53051a2851191de
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623350"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757056"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -139,6 +139,7 @@ netsh winhttp reset proxy
 |
 
 プロキシまたはファイアウォールで HTTPS スキャン (SSL 検査) が有効になっている場合は、上記の表に示されているドメインを HTTPS スキャンから除外します。
+ファイアウォールで、地理列が WW であるすべての URL を開きます。 地理列が WW ではない行の場合は、特定のデータの場所の URL を開きます。 データの場所の設定を確認するには、「データストレージの場所を確認し、Microsoft Defender for Endpoint のデータ保持設定 [を更新する」を参照してください](/microsoft-365/security/defender-endpoint/data-retention-settings)。
 
 > [!NOTE]
 > settings-win.data.microsoft.com は、バージョン 1803 以前Windows 10デバイスを使用している場合にのみ必要です。<br>
@@ -192,7 +193,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 
 プロキシ構成が正常に完了したことを確認します。WinHTTP は環境内のプロキシ サーバーを介して検出および通信でき、プロキシ サーバーは Defender for Endpoint サービス URL へのトラフィックを許可します。
 
-1. エンドポイント クライアント [アナライザー用の Micrsofot Defender](https://aka.ms/mdeanalyzer) ツールを、Defender for Endpoint センサーが実行されている PC にダウンロードします。
+1. エンドポイント センサー [の Defender が実行](https://aka.ms/mdeanalyzer) されている PC に Microsoft Defender for Endpoint Client Analyzer ツールをダウンロードします。
 
 2. デバイス上のMDEClientAnalyzer.zipを抽出します。
 
@@ -236,7 +237,7 @@ Defender for Endpoint センサーがシステム コンテキストから接続
 >
 > TelemetryProxyServer がレジストリまたはグループ ポリシーを介して設定されている場合、Defender for Endpoint は、定義されたプロキシにアクセスできない場合、直接に戻されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)

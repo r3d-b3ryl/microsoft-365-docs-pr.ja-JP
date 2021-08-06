@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ec5fdc978b8303d832509ce253f110a15b1e7caf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ce9687f75f7c3d599bf7d6189bbe355bd65850d056897b6fa1add789bd52d8ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843289"
 ---
 # <a name="payment-information-for-indonesia"></a>インドネシアのお支払い情報
 

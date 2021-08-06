@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 電子メールをビジネス向けMicrosoft 365する方法について学習します。
-ms.openlocfilehash: 7049642d071ff6b16a489a89c9355b35667a1e58
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a40a51773dc62d11272eb02102c421aecf70f2b5a6c02a2867c94b47177668e6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578893"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843529"
 ---
 # <a name="import-email-to-microsoft-365-for-business"></a>ビジネス向けメールMicrosoft 365インポートする 
 

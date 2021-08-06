@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: テナント用Windowsデバイス、Office アプリ、Office サーバーを移行Microsoft 365します。
-ms.openlocfilehash: 336dee2e62c6d0917c437252ba1d741c304998fa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9bef3b3128a43c75f5f465d22c82b0bc4431b53b7a86059dfc09ba982e4f94fd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798557"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>手順 4. エンタープライズ テナントのMicrosoft 365移行
 
@@ -29,10 +29,10 @@ ms.locfileid: "50929146"
 
 エンタープライズ統合製品スイートMicrosoft 365のビジネス価値を最大化するには、次のリリースを移行するための戦略の計画と実装を開始します。
 
-| From | へ |
+| From | 宛先 |
 |:-------|:-----|
 | Windows 7 と Windows 8.1 | Windows 10 Enterprise |
-| Officeのデバイスにインストールされているクライアント製品を管理する | Microsoft 365 Apps for enterprise |
+| Officeのデバイスにインストールされているクライアント製品を管理する | Microsoft 365 Apps for Enterprise |
 | Officeサーバーにインストールされているサーバー製品を管理する | 同じクラウド ベースのサービスをMicrosoft 365 |
 |  |  |
 

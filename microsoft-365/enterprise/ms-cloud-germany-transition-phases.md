@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 37c8e1d879bc296b226fb4d616d798d4c38b4a0d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: eefc1f54f20d1d59a8732cdd75356039bc434f91
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542023"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757008"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -43,7 +43,7 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 Global サー�
 |Step(s)|期間|責任ある当事者|説明|
 |---|---|---|---|
 |Opt-In|時間|顧客|組織に移行を選択します。|
-|プレワーク|日数|顧客|ユーザー、ワークステーション、およびネットワークを移行用に準備するために必要な作業を完了します。|
+|プレワーク|Days|顧客|ユーザー、ワークステーション、およびネットワークを移行用に準備するために必要な作業を完了します。|
 |Azure Active Directory (Azure AD)|1~ 2 日|Microsoft|Azure AD組織を世界中に移行します。|
 |Azure|週|顧客|新しい世界中の Azure サブスクリプションを作成し [、Azure サービスを移行します](/azure/azure-resource-manager/management/move-resource-group-and-subscription)。|
 |サブスクリプション&ライセンス移行|1~ 2 日|Microsoft|世界中のサブスクリプションを購入し、Microsoft Cloud Deutschland サブスクリプションをキャンセルし、ユーザー ライセンスを移行します。|
@@ -259,7 +259,7 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 オンライン移行[の移行前の手順Skype for Business確認](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online)し、すべての手順を完了してください。
 このフェーズでは、Skype for Businessに移行Microsoft Teams。 既存Skype for Business顧客は、ヨーロッパの Office 365 Global サービスに移行され、Office 365 サービスの地域 "ドイツ" の Microsoft Teams に移行されます。
 
-- ユーザーは移行日にログインしてSkype for Businessを行う必要があります。 移行の 10 日前に、移行がいつ行われますか、また移行が開始されたときに再び通知するメッセージが管理センターに表示されます。
+- ユーザーは移行日にログインしてSkype for Businessを行う必要があります。
 - ポリシー構成が移行されます。
 - ユーザーはユーザーにTeamsされ、移行後にユーザーにSkype for Businessアクセスできなくなりました。
 - ユーザーには、デスクトップ クライアントMicrosoft Teamsがインストールされている必要があります。 インストールは、Skype for Business インフラストラクチャのポリシーを介して 10 日間に行われますが、失敗した場合でも、ユーザーはクライアントをダウンロードするか、サポートされているブラウザーに接続する必要があります。

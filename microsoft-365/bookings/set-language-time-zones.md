@@ -9,22 +9,22 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Microsoft Bookings で言語とタイム ゾーンの設定を変更します。 予約が間違った時刻に作成された場合、間違ったタイム ゾーンに対して予約が設定されている可能性があります。
-ms.openlocfilehash: 3e7709666d6426b11c275e46a18d43e7b7ab3526
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 7c1ae42f327291062fb6bc4512ef3b1b85709b45814a816222958405327e054c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962433"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843621"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Microsoft Bookings で言語とタイム ゾーンを設定する
 
 Microsoft Bookings を使用している場合、間違った時刻に予約が作成された場合は、タイム ゾーンの設定を変更する必要があります。 同様に、一部の予約が間違った言語である場合は、言語設定の変更が必要になる場合があります。
 
-Bookings には、2 つの言語とタイム ゾーンの設定があります。 最初の設定は、予約カレンダーの言語とタイム ゾーンを制御し、ログインしているユーザーの個人用予定表の web 設定の Outlook を使用して設定されます。 2 番目の設定は、ユーザーが使用するセルフサービス予約ページに影響し、そのページの言語とタイム ゾーンのみを制御する "地域設定" ページを使用して設定されます。
+Bookings には、2 つの言語とタイム ゾーンの設定があります。 最初の設定は、予約カレンダーの言語とタイム ゾーンを制御し、ログインしているユーザーの個人用予定表の Outlook on the web 設定を使用して設定されます。 2 番目の設定は、ユーザーが使用するセルフサービス予約ページに影響し、そのページの言語とタイム ゾーンのみを制御する "地域設定" ページを使用して設定されます。
 
 ## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>予約予定表の言語とタイム ゾーンの設定
 
-予約カレンダーは、ログインしているユーザーの言語とタイム ゾーンの設定を使用します。 たとえば、ログインしているユーザーのタイム ゾーンが東部標準時 (EST) に設定されている場合、予約カレンダーには既存の予定の開始時刻と終了時刻が EST で表示されます。 このタイム ゾーンは、ユーザーのアカウントと web アカウントMicrosoft 365作成Outlook設定されました。
+予約カレンダーは、ログインしているユーザーの言語とタイム ゾーンの設定を使用します。 たとえば、ログインしているユーザーのタイム ゾーンが東部標準時 (EST) に設定されている場合、予約カレンダーには既存の予定の開始時刻と終了時刻が EST で表示されます。 このタイム ゾーンは、ユーザーのアカウントとユーザー アカウントMicrosoft 365作成Outlook on the web設定されました。
 
 予約カレンダーの言語とタイム ゾーンを設定するには、次の方法を実行します。
 
@@ -36,7 +36,7 @@ Bookings には、2 つの言語とタイム ゾーンの設定があります�
 
 1. [言語] ボックスまたは [現在のタイム ゾーン] ボックスでドロップダウン矢印を選択し、目的の設定を選択して、言語またはタイム ゾーンを変更します。
 
-1. **[保存]** をクリックします。 [設定] パネルが閉Outlook、Web 再起動時に新しい言語とタイム ゾーンの設定が適用されます。
+1. [**保存**] をクリックします。 [設定] パネルが閉じOutlook on the web再起動し、新しい言語とタイム ゾーンの設定が適用されます。
 
 ## <a name="setting-the-language-and-time-zone-for-the-booking-page"></a>予約ページの言語とタイム ゾーンの設定
 

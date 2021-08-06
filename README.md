@@ -42,7 +42,7 @@
 
 トピックのメタデータで識別されたライターに通知が送信され、最終的に変更を確認して承認し、トピックが更新 docs.microsoft.com。 更新プログラムに関する質問や問題がある場合は、作成者から連絡があります。
 
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open Source Code of Conduct
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft オープンソース倫理規定
 
 このプロジェクトでは、[Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/) が採用されています。
 

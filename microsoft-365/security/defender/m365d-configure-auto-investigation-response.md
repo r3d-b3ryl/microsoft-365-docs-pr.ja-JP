@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 4275339e048a4197590c91c5904733ce99b22f9f
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: c9ede5f9e21dcf2c2e7081286a2cf5df55e7f850f3398534a59c8e1ee87c349a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53792631"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>自動調査と応答機能を構成する方法は、Microsoft 365 Defender
 

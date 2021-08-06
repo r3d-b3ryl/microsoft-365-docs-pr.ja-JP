@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: 使用状況分析、アクティビティ レポート、導入Microsoft 365のアクティブ ユーザーについて学習します。
-ms.openlocfilehash: 21663722d1a3850389db2ad79321daf363d314c6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 792dbace925f316f2258030de8cef6d99437e936d4e4ef9106672c4ac6d83064
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843601"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>使用状況レポートのMicrosoft 365ユーザー
 
@@ -46,7 +46,7 @@ ms.locfileid: "51579076"
 
 [Microsoft 365分析には](usage-analytics.md)、アクティブ ユーザーに関連する追加の導入指標が含まれているので、時間の過ぎた製品の採用を示します。 これらの指標は、選択した月、年、および製品に対して有効であり、次のように定義されます。 
   
-|**測定基準**|**説明**|
+|**測定基準**|**Description**|
 |:-----|:-----|
 |EnabledUsers  <br/> |その月に製品を使用できるユーザーの数。  <br/> |
 |ActiveUsers  <br/> |月にアクティブなユーザーの数。  <br/> |

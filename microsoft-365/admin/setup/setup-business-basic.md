@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Basic サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: f7569645753f292760f32ba932aac7b83c602b72
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: MT
+ms.openlocfilehash: 07e2aae24b74f12925d94eb1bd2104654cd89fb00e418a943da990c15c6b0445
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393825"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821521"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Microsoft 365 Business Basic のセットアップ
 

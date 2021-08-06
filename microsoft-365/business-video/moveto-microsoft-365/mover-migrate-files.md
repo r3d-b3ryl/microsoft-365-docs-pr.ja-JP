@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Mover を使用して Google ファイルをビジネス向Microsoft 365移行する方法について説明します。
-ms.openlocfilehash: 6feabff7e36e84f7dba56e74333648325cf43920
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6791655f5ee8a9fc867266d5fe153cde6ec9adaa6148191c4c0eb3aedbfe0141
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913576"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843493"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>Google ファイルをビジネス向Microsoft 365に移行する 
 
