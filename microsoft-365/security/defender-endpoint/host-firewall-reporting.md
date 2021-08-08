@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint のホスト ファイアウォール レポート
+title: Microsoft Defender for Endpoint でのホスト ファイアウォール レポート
 description: セキュリティ センターでファイアウォールレポートをホストMicrosoft 365表示します。
 keywords: Windows Defender, ファイアウォール
 search.product: eADQiWindows 10XVcnh
@@ -14,14 +14,14 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0289d6f920fd6ff35fd446f9c2b8c5516883a4d2
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 23986024db239da6c8a69792ff8abbd01adc54d87354146d7c3847ee3a9dd539
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800272"
 ---
-# <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のホスト ファイアウォール レポート
+# <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でのホスト ファイアウォール レポート
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "52809306"
 
 - サーバー 2019 Windows 10またはWindowsする必要があります。
 - デバイスを Microsoft Defender for Endpoint サービスにオンボードするには、こちらを参照 [してください](onboard-configure.md)。 
-- セキュリティ センター Microsoft 365データの受信を開始するには、Advanced Security を使用して監査イベントを **有効Windows Defender ファイアウォール必要** があります。 
+- セキュリティ センター Microsoft 365データの受信を開始するには、Advanced **Security** を使用するファイアウォールの監査イベントWindows Defender有効にする必要があります。 
     - [監査フィルター プラットフォーム のパケット ドロップ](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
     - [監査フィルター プラットフォーム接続](/windows/security/threat-protection/auditing/audit-filtering-platform-connection) 
 - グループ ポリシー オブジェクト エディター、ローカル セキュリティ ポリシー、またはグループ ポリシー コマンドを使用して、これらのイベントauditpol.exeします。 詳細については、こちらを参照 [してください](/windows/win32/fwp/auditing-and-logging)。 
@@ -50,7 +50,7 @@ ms.locfileid: "52809306"
 - イベントを有効にすると、Microsoft 365センターがデータの監視を開始します。
     - リモート IP、リモート ポート、ローカル ポート、ローカル IP、コンピューター名、受信接続と送信接続間のプロセス。
 - 管理者は、ここでホストWindowsアクティビティを確認[できます](https://security.microsoft.com/firewall)。
-    - カスタム レポート スクリプトをダウンロードして、[](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)カスタム レポートを使用してアクティビティのWindows Defender ファイアウォールを監視することで、Power BI。 
+    - カスタム レポート スクリプトをダウンロードして、[](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)カスタム レポートを使用してファイアウォールのWindows Defenderを監視することで、Power BI。 
     - データが反映されるまで最大 12 時間かかる場合があります。
 
 ## <a name="supported-scenarios"></a>サポートされるシナリオ
@@ -88,6 +88,6 @@ Ring0 Preview では、次のシナリオがサポートされています。
 
 クエリを実行し、過去 30 日間のすべての関連ファイアウォール イベントを確認できます。 
 
-追加のレポート、またはカスタムの変更については、クエリをレポートにエクスポートしてPower BI分析できます。 カスタム レポートは、カスタム レポート[](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)スクリプトをダウンロードして、カスタム レポート を使用してWindows Defender ファイアウォールアクティビティをPower BI。 
+追加のレポート、またはカスタムの変更については、クエリをレポートにエクスポートしてPower BI分析できます。 カスタム レポートは、カスタム レポート[](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)スクリプトをダウンロードして、カスタム レポート を使用してファイアウォールWindows Defender監視することでPower BI。 
 
  

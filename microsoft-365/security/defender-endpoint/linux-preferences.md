@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d39316b4377665b8269e352c853742a744dc517
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b8fff1c53575b7de7d3c627c5bc79d00f97d6e39
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657101"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757332"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -77,7 +77,7 @@ ms.locfileid: "53657101"
 |説明|値|
 |---|---|
 |**キー**|enableRealTimeProtection|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 |
 
@@ -98,7 +98,7 @@ ms.locfileid: "53657101"
 |説明|値|
 |---|---|
 |**キー**|passiveMode|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|Defender for Endpoint version 100.67.60 以上で使用できます。|
 |
@@ -177,7 +177,7 @@ ms.locfileid: "53657101"
 |説明|値|
 |---|---|
 |**キー**|isDirectory|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
 |
@@ -367,7 +367,7 @@ ms.locfileid: "53657101"
 |説明|値|
 |---|---|
 |**キー**|enabled|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 |
 
@@ -416,7 +416,7 @@ ms.locfileid: "53657101"
 |説明|値|
 |---|---|
 |**キー**|automaticDefinitionUpdateEnabled|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 |
 
@@ -470,6 +470,7 @@ ms.locfileid: "53657101"
 {
    "antivirusEngine":{
       "enableRealTimeProtection":true,
+      "maximumOnDemandScanThreads":1,
       "passiveMode":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[

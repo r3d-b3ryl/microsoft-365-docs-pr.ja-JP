@@ -17,35 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager は、組織がリスク評価を簡素化および自動化するのに役立ち、リスクに対処するために推奨されるアクションを提案します。
-ms.openlocfilehash: 536a1c02a820b0ea36fc4fe39ca1d0d31f7bc994
-ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
+ms.openlocfilehash: c19655e3cd509d141878e8d917d248cc2ce42aa5
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53330943"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757248"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャー
 
 **この記事では、次の情報を参照してください。** コンプライアンス マネージャーとは何か、コンプライアンスの簡素化とリスクの軽減に役立つ方法、および重要なコンポーネントについて説明します。
 
-## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新機能: コンプライアンス マネージャーの GA リリース
+## <a name="what-is-compliance-manager"></a>コンプライアンス マネージャーとは?
 
-コンプライアンス マネージャーは、一般に利用できる (GA) のコンプライアンス管理ソリューションとして[、Microsoft 365 コンプライアンス センター。](microsoft-365-compliance-center.md) このリリースでは、コンプライアンス マネージャーは Microsoft Service Trust Portal の以前の場所からの移行を完了します。 コンプライアンス マネージャーは、米国政府機関 (Community) (GCC) 中程度、GCC高、および国防総省 (DoD) のお客様にも利用できます。
-
-コンプライアンス スコアのパブリック プレビューから始まったのは、強化されたコンプライアンス管理機能と使いやすさを備えた一元化されたツールに進化しました。  GA リリースでは、コンプライアンス 活動の拡大に役立つ、事前に構築された評価のコレクションが大きくなります。
-
-**GA リリースの詳細については、次の情報を参照してください。**
-- よく [寄せられる質問は](compliance-manager-faq.yml) 、進化の詳細を説明します。
-- このブログ記事の GA 機能拡張 [について説明します](https://aka.ms/compliancemanager/GAblog)。
+[Microsoft コンプライアンス マネージャー](https://compliance.microsoft.com/compliancemanager)は、組織[](microsoft-365-compliance-center.md)Microsoft 365 コンプライアンス センターのコンプライアンス要件を簡単に管理し、利便性を高め、管理するのに役立つ機能です。 コンプライアンス マネージャーは、データ保護リスクのインベントリの取得から、制御の実装の複雑さの管理、規制と認定の最新の状態を確保すること、監査人への報告まで、コンプライアンスの取り組み全体を通じてお手伝いします。
 
 コンプライアンス マネージャーが組織がコンプライアンスを管理する方法を簡略化する方法については、以下のビデオをご覧ください。
 <br>
 <br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
-
-## <a name="what-is-compliance-manager"></a>コンプライアンス マネージャーとは
-
-[Microsoft コンプライアンス マネージャー](https://compliance.microsoft.com/compliancemanager)は、組織[](microsoft-365-compliance-center.md)Microsoft 365 コンプライアンス センターのコンプライアンス要件を簡単に管理し、利便性を高め、管理するのに役立つ機能です。 コンプライアンス マネージャーは、データ保護リスクのインベントリの取得から、制御の実装の複雑さの管理、規制と認定の最新の状態を確保すること、監査人への報告まで、コンプライアンスの取り組み全体を通じてお手伝いします。
 
 コンプライアンス マネージャーは、次の機能を提供することで、コンプライアンスの簡素化とリスクの軽減に役立ちます。
 

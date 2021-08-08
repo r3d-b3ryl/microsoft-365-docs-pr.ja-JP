@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: ユーザー Microsoft 365保持ラベルとポリシーを使用して、ユーザー環境で個人Microsoft 365管理します。
-ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 06d3c19918d7e2963bffbb0f663971bbbbb209891f62ee9c83ebcc59b74e16d1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843877"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を管理する
 

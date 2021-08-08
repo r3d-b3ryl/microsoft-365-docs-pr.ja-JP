@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーのユーザー アクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: 4791948f6fe3ca6df620a0e93851dbf4e11edd98
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9b6885d101529d18201084b3364c6412bbbc4f4d
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454019"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725830"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -72,9 +72,7 @@ ms.locfileid: "53454019"
 
 8. ユーザーの割り当てが完了したら、**[完了]** を選択し、**[保存]**、**[閉じる]** の順に選択します。
 
-Microsoft Service Trust Portal で従来のバージョンのコンプライアンス マネージャーにアクセスする必要がある場合は、サービス信頼ポータルの管理者設定によって、役割を割り当てる別の方法が提供されます (手順[の](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)表示)。 このような役割は、機能的に制限されていることに注意してください。
-
-##### <a name="more-about-azure-ad"></a>Azure AD の詳細
+#### <a name="more-about-azure-ad"></a>Azure AD の詳細
 
 Azure AD で役割を割り当て、アクセス許可を設定するには、「[Azure Active Directory で管理者の役割と管理者以外の役割をユーザーに割り当てる](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)」を参照してください。
 

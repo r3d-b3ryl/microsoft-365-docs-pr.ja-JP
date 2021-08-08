@@ -20,12 +20,12 @@ ms.collection:
 description: 管理者は、セキュリティ設定を昇格し、組織の優先度アカウントに関するレポート、アラート、および調査をMicrosoft 365できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7617dd5af6a7e3b66fb33818208f01c8d8a338e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 1cf813706a5fc0180ed36943c6bc7ae54e35ae346aba3d2b0251489e05cc715b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055259"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844108"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>優先アカウントのセキュリティMicrosoft 365
 
@@ -118,12 +118,12 @@ Microsoft 365、組織内のユーザーに通知するための次のリソー�
 
 ****
 
-|概念|リソース|説明|
+|概念|リソース|Description|
 |---|---|---|
 |Microsoft 365|[カスタマイズ可能な学習経路](/office365/customlearning/)|これらのリソースは、組織内のユーザーのトレーニングをまとめる上で役立ちます。|
 |Microsoft 365 セキュリティ|[ラーニングモジュール: 組み込みのインテリジェント なセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365)|このモジュールを使用すると、セキュリティ機能Microsoft 365機能を説明し、これらのセキュリティ機能の利点を明確にできます。|
 |多要素認証|[2 段階認証: 追加の検証ページとは](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|この記事は、エンド ユーザーが多要素認証とは何か、および組織で使用される理由を理解するのに役立ちます。|
-|攻撃シミュレーションのトレーニング|[攻撃シミュレーション トレーニングの使用を開始する](attack-simulation-training-get-started.md)|Microsoft Defender for Office 365 プラン 2 の攻撃シミュレーション トレーニングを使用すると、管理者は特定のユーザー グループに対するシミュレートされたフィッシング攻撃を構成、起動、追跡できます。|
+|攻撃シミュレーション トレーニング|[攻撃シミュレーション トレーニングの使用を開始する](attack-simulation-training-get-started.md)|Microsoft Defender for Office 365 プラン 2 の攻撃シミュレーション トレーニングを使用すると、管理者は特定のユーザー グループに対するシミュレートされたフィッシング攻撃を構成、起動、追跡できます。|
 
 さらに、Microsoft では、この記事で説明されているアクションを実行するようにお勧めします。アカウントとデバイスをハッカーやマルウェア [から保護します](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)。 それらの操作を次に示します。
 

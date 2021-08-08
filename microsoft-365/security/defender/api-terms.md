@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365Defender API のライセンスと使用条件
-description: Defender での API のライセンスと使用条件Microsoft 365説明
+title: Microsoft 365 DefenderAPI ライセンスと使用条件
+description: API のライセンスと使用条件のMicrosoft 365 Defender
 keywords: api、apis、ライセンス、条項、API、法律、通知、行動規範
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b70311726b6c1c5bedf34a18ee1763255c93ba3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e40910defa4fba006cdfdd02f6eeebe53ce7006db2f2c99de88397027869237e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062035"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844249"
 ---
-# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365Defender API のライセンスと使用条件
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 DefenderAPI ライセンスと使用条件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "51062035"
 
 ## <a name="official-terms"></a>公式の用語
 
-Microsoft 365Defender API は、Microsoft API ライセンスと使用条件[によって管理されます](/legal/microsoft-apis/terms-of-use)。
+Microsoft 365 DefenderAPI は、Microsoft API ライセンスと[使用条件によって管理されます](/legal/microsoft-apis/terms-of-use)。
 
 ## <a name="legal-notices"></a>法的通知
 
@@ -63,7 +63,7 @@ Microsoft および投稿者は、それぞれの著作権、特許、または�
 
 ### <a name="quotas-and-resource-allocation"></a>クォータとリソース割り当て
 
-Defender api Microsoft 365調整のしきい値があります。
+この api Microsoft 365 Defender調整のしきい値があります。
 
 - **インシデント API**: 1 分あたり最大 50 回の呼び出し、または 1 時間あたり 1500 回の呼び出し。
 - **高度なハンティング API**: 1 分あたり最大 15 回の通話、1 時間あたり 10 分の実行時間、1 日あたり 4 時間の実行時間。
@@ -74,6 +74,6 @@ Defender api Microsoft 365調整のしきい値があります。
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365Defender API の概要](api-overview.md)
+- [Microsoft 365 DefenderAPI の概要](api-overview.md)
 - [サポートされている Microsoft 365 Defender API](api-supported.md)
-- [Defender API Microsoft 365アクセスする](api-access.md)
+- [API にMicrosoft 365 Defenderする](api-access.md)

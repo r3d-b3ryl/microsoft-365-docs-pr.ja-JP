@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 48a51b8ec880726bdd2121f2eaf0d78f5cd6b3e0
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 4b2775bfe94eb53851e108ed7b7d436f233beea267b3485385801534748ef16c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844064"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>脅威保護機能を全体にわたって構成Microsoft 365
 
@@ -103,7 +103,7 @@ Microsoft 365 Defenderは、アラート、インシデント、自動調査と�
 
 |構成、保護、および検出機能|自動化、調査、修復、および教育機能|
 |---|---|
-|[添付ファイル保護](../security/office-365-security/safe-attachments.md) <p> [リンク保護](../security/office-365-security/safe-links.md) <p> [安全なドキュメント](../security/office-365-security/safe-docs.md) <p> [SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](../security/office-365-security/mdo-for-spo-odb-and-teams.md) <p> [アプリ内のフィッシング対策Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[脅威トラッカー](../security/office-365-security/threat-trackers.md) <p> [脅威エクスプローラー](../security/office-365-security/threat-explorer.md) <p> [自動調査および対応](../security/office-365-security/office-365-air.md) <p> [攻撃シミュレーションのトレーニング](../security/office-365-security/attack-simulation-training.md)|
+|[添付ファイル保護](../security/office-365-security/safe-attachments.md) <p> [リンク保護](../security/office-365-security/safe-links.md) <p> [安全なドキュメント](../security/office-365-security/safe-docs.md) <p> [SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](../security/office-365-security/mdo-for-spo-odb-and-teams.md) <p> [アプリ内のフィッシング対策Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[脅威トラッカー](../security/office-365-security/threat-trackers.md) <p> [脅威エクスプローラー](../security/office-365-security/threat-explorer.md) <p> [自動調査および対応](../security/office-365-security/office-365-air.md) <p> [攻撃シミュレーション トレーニング](../security/office-365-security/attack-simulation-training.md)|
 |
 
 Microsoft Defender for Office 365を使用すると、組織全体のユーザーは、電子メール コンテンツとドキュメントに対する脅威の保護を利用して、より安全にコミュニケーションとOfficeできます。
@@ -125,7 +125,7 @@ Microsoft Defender for Office 365を使用すると、組織全体のユーザ�
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection) は、組織のデバイス (エンドポイントとも呼ばれます) をサイバー脅威、高度な攻撃、およびデータ侵害から保護します。 セキュリティ チームは、エンドポイントのセキュリティを管理する方が効率的です。 堅牢なツールは、脅威と脆弱性の管理を使用して脆弱性検出を使用して、組織がパッチされていないシステムに対応 [するのに役立ちます](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)。 攻撃表面の縮小、次世代保護、エンドポイントの[](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)検出と応答、[](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)自動調査と修復などの[](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)自動検出および修復機能は、デバイスをマルウェアから安全に保つのに役立ちます。 [](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) これらの機能の上に、オプトイン管理ハンティング サービスの一環として、お客様はプロアクティブな通知を受け取り、Microsoft 脅威エキスパートオンデマンドで問い合わせできます。
 
-### <a name="set-up-microsoft-defender-for-endpoint"></a>エンドポイント用 Microsoft Defender のセットアップ
+### <a name="set-up-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のセットアップ
 
 ![Microsoft Defender for Endpoint を展開するプロセス](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 

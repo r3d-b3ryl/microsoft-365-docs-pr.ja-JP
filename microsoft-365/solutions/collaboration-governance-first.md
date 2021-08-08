@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: コラボレーション ガバナンス 計画を作成する方法について説明します。
-ms.openlocfilehash: c371d97c211275ffb1019e6f6dfc165295ed729f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 062648ca2e4eb2c3909b38d376f568df726ac2bef3abb5b82b1e86db879a1887
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539241"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843985"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>コラボレーション ガバナンス 計画の作成
 
@@ -65,7 +65,7 @@ Microsoft 365ガバナンスは、オンプレミス環境を管理する既存�
 
 ## <a name="think-about-governance-first"></a>ガバナンスについて最初に考える
 
-Microsoft 365 への投資は、可能なコンテンツとエクスペリエンスの価値と同じだけなので、ジャーニーの開始時点でガバナンスについて考えても、各決定の影響を理解して評価する機会を得る前に、ロックダウンや有効化を行いすぎずに行います。 管理センターと個々のサイトとチームに対して、Microsoft 365とダイヤルを有効にできる複数の "ノブとダイヤル" があります。 効果的なガバナンス計画は、ビジネス目標を達成するために不可欠ですが、ガバナンスとはリスクとメリットのバランスを取る方法です。 すべてをロックダウンすると、作業を完了するためにルールを回避する方法が見つからされます。
+Microsoft 365 への投資は、可能なコンテンツとエクスペリエンスの価値と同じだけなので、ジャーニーの開始時点でガバナンスについて考えても、各決定の影響を理解して評価する機会を得る前に、ロックダウンや有効化を行いすぎずに行います。 複数の "ツマミとダイヤル" を使用すると、Microsoft 365 管理センターサイトとチームに対して有効にできます。 効果的なガバナンス計画は、ビジネス目標を達成するために不可欠ですが、ガバナンスとはリスクとメリットのバランスを取る方法です。 すべてをロックダウンすると、作業を完了するためにルールを回避する方法が見つからされます。
 
 ガバナンスについて最初に考える場合は、次の機能を使用できます。
 
@@ -133,7 +133,7 @@ Microsoft 365 への投資は、可能なコンテンツとエクスペリエン
 
 - 組織用にMicrosoft 365チャンピオン プログラムを作成できますか? さらに、世界中の[Microsoft 365](https://aka.ms/O365Champions)チャンピオン プログラムに参加して、独自のチャンピオン プログラムのアイデアとアプローチを取得し、Microsoft 内および周辺の同じ考え方の人々や思考リーダーと接続する方法を検討してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

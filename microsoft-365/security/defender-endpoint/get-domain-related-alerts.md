@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f7e3c95c75c8da2aff24d9588bae797338ec9605
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d4d84ff64399bdecc936ae8876c0e1713cbf3482ab9dbf1faf848b736bfa6a09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800380"
 ---
 # <a name="get-domain-related-alerts-api"></a>ドメイン関連のアラート API を取得する
 

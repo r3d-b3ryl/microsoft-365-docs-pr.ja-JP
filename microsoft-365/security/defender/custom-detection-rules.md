@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e7b48ef5dcd98a948b8af0dc2f6f61ac1bb81f4d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3066ccf803d5a2cad907ae7f983f3cafbb41112d
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542611"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725854"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -90,14 +90,16 @@ ms.locfileid: "53542611"
 
 より複雑なクエリがこれらの列を返すには、さまざまな方法があります。 たとえば、次のような列の下のエンティティ別に集計してカウントする場合でも、各一意のイベントを含む最新のイベントから取得 `DeviceId` `Timestamp` `ReportId` できます `DeviceId` 。
 
+
 > [!IMPORTANT]
 > 列を使用してカスタム検出をフィルター処理 `Timestamp` しないようにします。 カスタム検出に使用されるデータは、検出頻度に基づいて事前にフィルター処理されます。
+
 
 以下のサンプル クエリは、ウイルス対策の検出を含む一意のデバイス ( ) の数をカウントし、この数を使用して 5 つを超える検出を持つデバイス `DeviceId` のみを検索します。 最新の値と `Timestamp` 対応する値を取得 `ReportId` するには、関数と `summarize` 一緒に演算子を使用 `arg_max` します。
 
 ```kusto
 DeviceEvents
-| where Timestamp > ago(1d)
+| where ingestion_time() > ago(1d)
 | where ActionType == "AntivirusDetection"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | where count_ > 5

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8d16d4640a926697363e7bb7588d80a8c28439df
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ca71b8431972085d2e4b13d0669219a9187246e6
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541987"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726154"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 
@@ -38,7 +38,16 @@ Microsoft Secure Score は、セキュリティ https://security.microsoft.com/s
 
 ## <a name="july-2021"></a>2021 年 7 月
 
+### <a name="added-improvement-action-related-to-microsoft-teams"></a>アプリに関連する改善アクションをMicrosoft Teams
+
+- ダイヤルイン ユーザーによる会議ロビーのバイパスを制限する
+- 外部参加者が会議で制御を行Teamsする
+- 匿名ユーザーによる会議の開始Teams制限する
+- 会議に対してロビーをセットアップTeamsする
+- 会議に参加できるユーザーをTeamsする
+
 ### <a name="added-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint に関連する改善アクションを追加しました
+
 - MacOS 用の Microsoft Defender for Endpoint センサー データ収集を修正する
 - MacOS の Microsoft Defender for Endpoint 障害のある通信を修正する
 - macOS でパスワードの最小長を 15 文字以上に設定する

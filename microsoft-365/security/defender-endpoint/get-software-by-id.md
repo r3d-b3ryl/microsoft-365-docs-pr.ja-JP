@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 205b24ac09bd49201daa9ee7b6243159e77bbad4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 19e15393714a62e070ba7854854ab29f0e804bd45e275e4c620488076504b0cd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655289"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800296"
 ---
 # <a name="get-software-by-id"></a>Id でソフトウェアを取得する
 
@@ -96,7 +96,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
