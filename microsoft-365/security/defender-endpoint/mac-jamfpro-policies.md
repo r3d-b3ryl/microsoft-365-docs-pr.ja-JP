@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c73a1a4ca5a85e4c6867cbe2cb79a33cfe0bfac9
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 7b180808422c3c71adf430d1d9c5d4283ef9b90e801f54ccd5492a8d070504e1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623794"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53812263"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf の macOS ポリシーで Microsoft Defender for Endpoint をセットアップPro
 
@@ -164,7 +164,7 @@ JAMF Pro GUI を使用して Microsoft Defender 構成の個々の設定を編�
 
     ![カスタム スキーマの追加](images/4137189bc3204bb09eed3aabc41afd78.png)
 
-4. [ `com.microsoft.wdav` 基本設定ドメイン] として入力し、[スキーマの追加] をクリックし **アップロード** 手順 1 でschema.jsを選択します。 **[保存]** をクリックします。
+4. [ `com.microsoft.wdav` 基本設定ドメイン] として入力し、[スキーマの追加] をクリックし **アップロード** 手順 1 でschema.jsを選択します。 [**保存**] をクリックします。
 
     ![アップロードスキーマ](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365管理センター レポート - ユーザー Microsoft Teamsアクティビティ
+title: Microsoft 365 管理センターレポート - Microsoft Teamsアクティビティ
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: ユーザー アクティビティ レポートのMicrosoft Teamsを取得し、組織のアクティビティTeamsを得る方法について学習します。
-ms.openlocfilehash: c824a0ce285a085c9ae8b7326647ad4bcdf5f013
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 2136401bcebf012ae5ceb38772c3552af8ad05a43e480d81b68a003895098804
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797701"
 ---
-# <a name="microsoft-365-admin-center-reports---microsoft-teams-user-activity"></a>Microsoft 365管理センター レポート - ユーザー Microsoft Teamsアクティビティ
+# <a name="microsoft-365-admin-center-reports---microsoft-teams-user-activity"></a>Microsoft 365 管理センターレポート - Microsoft Teamsアクティビティ
 
 Microsoft 365 の [**レポート**] ダッシュボードには、組織内での製品全体に関するアクティビティが表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft Teams ユーザー アクティビティ レポートで、組織内の Microsoft Teams アクティビティに関する分析情報を取得します。
   

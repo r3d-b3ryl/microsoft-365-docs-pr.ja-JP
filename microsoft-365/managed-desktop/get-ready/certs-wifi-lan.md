@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a59add6f6821824f189703b3dedd35fda313ec31
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e6c6c6f2e77ef81efae29f98baa85feafada9724cc12623bf1501316a91a38f5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574585"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819201"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する  
  
@@ -44,7 +44,7 @@ SCEP または PKCS 証明書を Microsoft マネージド デスクトップ �
  
 ## <a name="wired-connectivity-requirements-and-8021x-authentication"></a>有線接続要件と 802.1x 認証 
  
-802.1x 認証を使用してデバイスからローカル エリア ネットワーク (LAN) へのアクセスをセキュリティで保護する場合は、必要な構成の詳細を Microsoft マネージド デスクトップ デバイスにプッシュする必要があります。 Microsoft マネージド デスクトップバージョン 1809 以降Windows 10を実行しているデバイスでは、WiredNetwork 構成サービス プロバイダー (CSP) による 802.1x 構成の展開がサポートされています。 詳細については [、「WiredNetwork CSP のドキュメント」を参照](/windows/client-management/mdm/wirednetwork-csp) してください。 
+802.1x 認証を使用してデバイスからローカル エリア ネットワーク (LAN) へのアクセスをセキュリティで保護する場合は、必要な構成の詳細を Microsoft マネージド デスクトップ デバイスにプッシュする必要があります。 Microsoft マネージド デスクトップ以降Windows 10 Version 1809デバイスは、WiredNetwork 構成サービス プロバイダー (CSP) による 802.1x 構成の展開をサポートします。 詳細については [、「WiredNetwork CSP のドキュメント」を参照](/windows/client-management/mdm/wirednetwork-csp) してください。 
  
 有線ネットワーク構成プロファイルをデバイスに展開する前Microsoft マネージド デスクトップ、有線企業ネットワークに関する組織の要件を収集します。 そのために、以下の手順に従ってください。 
  

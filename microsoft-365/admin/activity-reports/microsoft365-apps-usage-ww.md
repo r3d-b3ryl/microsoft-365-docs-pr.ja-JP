@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: '[レポート] ダッシュボードの [Microsoft 365 Apps] ダッシュボードを使用して使用状況レポートMicrosoft 365を取得する方法についてMicrosoft 365 管理センター。'
-ms.openlocfilehash: 3147aebc10ff774b8af3ff10f9a76d52a2db87b2
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 58fe420f13bcd41bceaea9605d9ced2c539c8857e56335ebfff8fcef672fd222
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377243"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797667"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365管理センターのレポート - Microsoft 365 Apps使用状況
 
@@ -47,7 +47,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Apps使用状況レポート](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
-|項目|説明|
+|アイテム|説明|
  |:-----|:-----|
  |1. <br/> |**[Microsoft 365 Apps利用状況** レポートは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、表 (7) には、(レポートが生成された日付ではなく) 現在の日付から最大 28 日間のデータが表示されます。 <br/> |
  |2. <br/> |各レポートのデータは、通常、過去 2 日間までカバーされます。 6 日ごとに、データの品質を確保するために、マイナーな更新プログラムを使用してレポートを更新します。 <br/> |

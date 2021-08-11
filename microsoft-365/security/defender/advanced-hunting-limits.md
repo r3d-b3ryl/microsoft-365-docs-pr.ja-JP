@@ -1,7 +1,7 @@
 ---
-title: Defender の高度な検索クォータとMicrosoft 365パラメーター
+title: 高度な検索クォータと使用状況パラメーター (Microsoft 365 Defender
 description: 高度なハンティング サービスの応答性を維持するさまざまなクォータと使用状況パラメーター (サービス制限) を理解する
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ、kusto、CPU 制限、クエリ制限、リソース、最大結果、クォータ、パラメーター、割り当て
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ、kusto、CPU 制限、クエリ制限、リソース、最大結果、クォータ、パラメーター、割り当て
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7563a8299bbe7d543b065bb25eeb3bc90a854b9
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5108e1b50b7544fcb11cef8bf573fd42cbfad2411f83e8628fecd59a895c1c55
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245602"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833233"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>高度な検索クォータと使用状況パラメーター
 
@@ -39,7 +39,7 @@ ms.locfileid: "52245602"
 
 既存のクォータと使用状況パラメーターを理解するには、次の表を参照してください。
 
-| クォータまたはパラメーター | Size | 更新サイクル | 説明 |
+| クォータまたはパラメーター | Size | 更新サイクル | Description |
 |--|--|--|--|
 | データ範囲 | 30 日間 | すべてのクエリ | 各クエリは、過去 30 日間までのデータを検索できます。 |
 | 結果セット | 10,000 行 | すべてのクエリ | 各クエリは、最大 10,000 レコードを返します。 |
@@ -49,7 +49,7 @@ ms.locfileid: "52245602"
 >[!NOTE] 
 >API を介して実行される高度な検索クエリには、個別のクォータとパラメーターのセットが適用されます。 [高度な狩猟 API について読む](./api-advanced-hunting.md)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [高度な狩猟のベスト プラクティス](advanced-hunting-best-practices.md)
 - [高度なハンティング エラーの処理](advanced-hunting-errors.md)

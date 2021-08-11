@@ -1,5 +1,5 @@
 ---
-title: アーキテクチャの確認、評価環境の有効化またはアクティブ化、パイロットの構築など、Microsoft Defender for Endpoint の概要を評価します。
+title: アーキテクチャの確認など、エンドポイントの Microsoft Defender の概要を評価する
 description: 試用版ラボまたはパイロット環境Microsoft 365 Defenderセットアップの手順。 組織のデバイス、ID、データ、アプリを保護するようにセキュリティ ソリューションがどのように設計されているのかテストして体験します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f4f66c6a7bd5f375ffedc822a3ad5bb5a4f5a431
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: f3ec24e4d73ac9297e4ca0bec5659b987f9e33d7bae182a1f7f1853ee72d6876
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833212"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>エンドポイントの Microsoft Defender の概要を評価する
 

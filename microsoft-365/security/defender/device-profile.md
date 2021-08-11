@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 47b25ba541264d79216748753e9f41fb7435fc10
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b9f73150d858efc8eecf7a027035011d88098e9359ab87c9ce5c2f992cd8857e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229481"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805696"
 ---
 # <a name="device-profile-page"></a>[デバイス プロファイル] ページ
 
@@ -178,7 +178,7 @@ Microsoft Defender for Endpoint に登録されているデバイスには、タ
 
 アイテムを選択すると、更新プログラムにリンクするフライアウトが開きます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 * [Microsoft 365 Defender概要](microsoft-365-defender.md)
 * [Microsoft 365 Defender を有効にする](m365d-enable.md)

@@ -1,5 +1,5 @@
 ---
-title: 手順 5.  ハイブリッド ワーカー生産性向上アプリとサービスを展開する
+title: 手順 5. ハイブリッド ワーカー生産性向上アプリとサービスを展開する
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,14 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
-ms.openlocfilehash: ed35f06f3dcee9c7981a086278040fc0a44519b3
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 7a26d89e04d9739434208c4b3c4a536be5c5c5075a00dabdc06b8c4abd318838
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788904"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53777773"
 ---
-# <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>手順 5.  ハイブリッド ワーカー生産性向上アプリとサービスを展開する
+# <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>手順 5. ハイブリッド ワーカー生産性向上アプリとサービスを展開する
 
 生産性を高めるには、リモートワーカー間のコミュニケーションとコラボレーションが重要です。 会議、音声やテキストでのチャット、新しいコンテンツの作成と情報やファイルの共有、メールのやりとり、予定表やタスクの管理を行う必要があります。 Microsoft 365 は、次の主要な機能すべてをクラウドベースのサービスで実現します。
 
