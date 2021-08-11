@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8db0a8bb2c48077921b40b010656b52850f68ec0
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e14188a797a99b506e3714ab3f0974e5d9f0c4578c495ae1c620db96180807f8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890530"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>管理セキュリティ サービス プロバイダー (MSSP) アクセス権の付与 (プレビュー)
 
@@ -132,7 +132,7 @@ ms.locfileid: "53648377"
 
     この時点で、アナリスト アクセスが準備され、各アナリストが顧客のサービスにアクセスMicrosoft Defender セキュリティ センター。`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
 - [アラート通知を構成する](configure-mssp-notifications.md)

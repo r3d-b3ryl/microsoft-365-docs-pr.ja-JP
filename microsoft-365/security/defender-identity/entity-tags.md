@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: eb1d927d239b0fba8d7a8718360ae08747107547
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2dcb7767be7145420c08161782f27a51ec38727ae5d427459c4af1d9676cd37d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844808"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Defender for Identity entity tags in Microsoft 365 Defender
 

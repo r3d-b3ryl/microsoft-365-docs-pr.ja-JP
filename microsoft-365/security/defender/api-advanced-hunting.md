@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365Defender advanced hunting API
-description: Defender の高度な狩猟 API を使用して高度なMicrosoft 365を実行する方法について説明します。
+title: Microsoft 365 Defender高度なハンティング API
+description: 高度な検索 API を使用して高度なMicrosoft 365 Defenderを実行する方法について説明します。
 keywords: Advanced Hunting, API, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4064a2d4469fb842a6446c1a869de44a48f2b627cdb25ae4f7999a255c3d04f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53792916"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365Defender Advanced hunting API
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender高度なハンティング API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "52769588"
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-[高度な検索](advanced-hunting-overview.md)は、特別に構築されたクエリ[](advanced-hunting-query-language.md)を使用して、Defender の過去 30 日間のイベント データを調べる脅威Microsoft 365です。 高度な検索クエリを使用して、異常なアクティビティを検査し、可能な脅威を検出し、攻撃にも対応できます。 高度な検索 API を使用すると、イベント データをプログラムでクエリできます。
+[高度な検索](advanced-hunting-overview.md)は、特別に構築されたクエリ[](advanced-hunting-query-language.md)を使用して、過去 30 日間のイベント データを調査する脅威Microsoft 365 Defender。 高度な検索クエリを使用して、異常なアクティビティを検査し、可能な脅威を検出し、攻撃にも対応できます。 高度な検索 API を使用すると、イベント データをプログラムでクエリできます。
 
 ## <a name="quotas-and-resource-allocation"></a>クォータとリソース割り当て
 
@@ -54,9 +54,9 @@ ms.locfileid: "52769588"
 > [!NOTE]
 > 上記のすべてのクォータ (たとえば、1 分あたり 15 回の呼び出し) はテナント サイズごとに設定されます。 これらのクォータは最小です。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
-高度な検索 API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については[、「Access the Defender Protection API Microsoft 365」を参照してください。](api-access.md)
+高度な検索 API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については[、「Access the Microsoft 365 Defender保護 API」を参照してください。](api-access.md)
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 -|-|-
@@ -88,7 +88,7 @@ Content-Type | application/json
 
 パラメーター | 種類 | 説明
 -|-|-
-クエリ | テキスト | 実行するクエリ。 **注: 必須**
+Query | テキスト | 実行するクエリ。 **注: 必須**
 
 ## <a name="response"></a>応答
 
@@ -104,7 +104,7 @@ Content-Type | application/json
 
 次の例では、ユーザーが以下のクエリを送信し、、 、および を含む API 応答オブジェクト `Stats` `Schema` を受け取ります `Results` 。
 
-### <a name="query"></a>クエリ
+### <a name="query"></a>Query
 
 ```json
 {
@@ -177,9 +177,9 @@ Content-Type | application/json
 }
 ```
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
-- [Defender API Microsoft 365アクセスする](api-access.md)
+- [API にMicrosoft 365 Defenderする](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)
 - [エラー コードについて](api-error-codes.md)
 - [高度な追求の概要](advanced-hunting-overview.md)

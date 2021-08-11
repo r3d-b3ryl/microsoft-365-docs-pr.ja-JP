@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: acbad7a1c5fa541ee83da668768cc42af7a5afda
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: 9ef0495b1eae033a6a7cc8b6929344967ea4591c165ea647923afd3bb5daefb9
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53464011"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803178"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -40,6 +40,76 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 > - [Microsoft 365 Defender の新機能](../security/defender/whats-new.md)
 >
 > また、「Microsoft 365[](https://www.microsoft.com/microsoft-365/roadmap)ロードマップ」を参照して、Microsoft 365、展開中、開発中、キャンセル済み、または以前にリリースされた機能について説明します。
+
+## <a name="july-2021"></a>2021 年 7 月
+
+### <a name="advanced-ediscovery"></a>高度な電子情報開示
+
+- [Advanced eDiscoveryケースを](teams-workflow-in-advanced-ediscovery.md)使用してMicrosoft Teamsコンテンツのワークフローを作成すると、コンテンツを管理するためのエンド Teams ワークフローが追加Advanced eDiscovery。には、新しい会話トランスクリプト機能のプレビューに関する詳細が含まれます。
+- [大規模なケース](advanced-ediscovery-large-cases.md)を使用Advanced eDiscovery、レビュー セットとケースの制限を拡張し、Teams および Yammer チャット会話の会話トランスクリプトをサポートする新しい大きなケース形式のプレビューを追加しました。
+
+### <a name="app-governance"></a>アプリのガバナンス
+
+- アプリ ガバナンス アドオン (MCAS) [Microsoft Cloud App Security](app-governance-manage-app-governance.md)パブリック プレビューに入りました。 アプリ ガバナンスは、M365 テナント内の OAUth ベースのアプリを監視し、マルウェアや不適切なレベルのアクセス許可を表す可能性のあるアクティビティに関するアラートを生成します。
+
+### <a name="compliance-offerings"></a>コンプライアンス認証
+
+- [コンプライアンスの提供は、](/compliance/regulatory/offering-home) 該当するサービス範囲と更新プログラムに焦点を当てた変更点を示し、該当する規制の [Azure](/azure/compliance) 製品とより密接に一致します。
+
+### <a name="compliance--service-assurance"></a>コンプライアンス&サービス アシュアランス
+
+- [サービス アシュア](/compliance/) ランス (更新、四半期ごとにコンテンツの更新を確認して、認定と適用性に関する声明を確認する)
+    - クラウドのバックグラウンド チェック
+    - 従業員の転送&終了
+    - ガバナンス
+    - 人事管理
+    - インシデント管理
+    - 就職前スクリーニング
+    - セキュリティ インシデント管理 (SIM)
+    - SIM – 格納、根絶、および回復
+    - SIM – 検出&分析
+    - SIM – インシデント後のレポート
+    - SIM – 準備
+    - テナントの分離
+
+### <a name="data-classification"></a>データの分類
+
+- [データ分類について説明します](data-classification-overview.md)。 判別トレーニング可能分類子の GA リリース用に更新されました。
+
+### <a name="data-loss-prevention"></a>データ損失防止
+
+- [デバイスの常Microsoft 365ファイル](endpoint-dlp-learn-about.md)アクティビティに関するエンドポイント データ損失防止に関する更新されたガイダンスについて説明します。
+- [GA リリース用に更新されたデータ](dlp-on-premises-scanner-get-started.md) 損失防止オンプレミス スキャナーの使用を開始します。
+- [GA リリース用にMicrosoft 365データ](dlp-on-premises-scanner-learn.md)損失防止オンプレミス スキャナーの詳細について学習します。
+- [GA リリースMicrosoft 365データ損失防止オンプレミス スキャナー](dlp-on-premises-scanner-use.md)を使用します。
+- GA[リリースと](dlp-use-policies-non-microsoft-cloud-apps.md)MIP-MCAS 統合用に更新された Microsoft 以外のクラウド アプリのデータ損失防止ポリシーを使用します。
+
+### <a name="insider-risk-management"></a>インサイダー リスクの管理
+
+- [インサイダー リスク管理アクティビティを調査し](insider-risk-management-activities.md) 、新しいユーザー アクティビティ レポートのコンテンツ更新プログラムを追加し、複数のアラートプレビュー機能を新しく却下します。
+- [インサイダー リスク管理設定](insider-risk-management-settings.md) を使用して、新しい RBAC 機能のコンテンツ更新プログラムを追加し、優先ユーザー グループプレビュー機能のレビュー担当者を選択します。
+
+### <a name="privacy-management"></a>プライバシー管理
+
+- Microsoft [のプライバシー管理は](privacy-management.md) パブリック プレビューに入りました。 プライバシー管理により、組織は、Microsoft 365環境内の個人データを理解および管理し、潜在的なプライバシー リスクを修復し、サブジェクトの権利要求を満たします。
+
+### <a name="retention-and-records-management"></a>保持とレコードの管理
+- プレビュー:[アイテム保持ポリシー](create-retention-policies.md#retention-policy-for-teams-locations)をTeamsポリシーを作成または編集するときに、プライベート チャネルを新Teams場所としてサポートする
+- ファイル プランを [インポートする手順](file-plan-manager.md#import-retention-labels-into-your-file-plan) が更新され、規制レコードが含まれると、各エントリの依存関係が一覧表示されます。
+
+### <a name="sensitive-information-types"></a>機密情報の種類
+
+次のページが追加されました。
+
+- [カスタムの機密情報の種類のフィルター リファレンス](sit-custom-sit-filters.md)
+- [PowerShell を使用してカスタム機密情報の種類を変更する](sit-modify-a-custom-sensitive-information-type-in-powershell.md)
+- [PowerShell を使用してカスタム機密情報の種類を削除する](sit-remove-a-custom-sensitive-information-type-in-powershell.md)
+
+### <a name="sensitivity-labels"></a>秘密度ラベル
+- トレーニング可能な分類子は、Windows および web (Office Online) 用の[Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)アプリで自動ラベル付けOfficeできます。
+- 必須のラベル付けは、(プレビューで) Power BI[に拡張されました。](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
+- 感度 [ラベルで]( sensitivity-labels-coauthoring.md)暗号化されたファイルの共同編集 : 条件として感度ラベルを使用する DLP ポリシーと電子メールの暗号化されていない添付ファイルのサポートを展開する
+- macOS、iOS、Outlook Android でイベントを監査し、ユーザーに対して展開Outlook on the web
 
 ## <a name="june-2021"></a>2021 年 6 月
 
@@ -202,7 +272,7 @@ Outlookと更新プログラム:
 - **[暗号化のみ] を使用Outlook。** [ユーザーにアクセス許可Outlook割りEncrypt-Onlyを許可する] を選択すると、暗号化オプションにアクセス[許可が追加されます](encryption-sensitivity-labels.md#let-users-assign-permissions)。
 - **アプリに組み込みのラベルをOfficeします**。 Azure [](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) Information Protection 統合ラベル付けクライアントがインストールされている場合に、Officeアプリに組み込みラベルを適用する方法のガイダンスが更新されました。
 
-## <a name="february-2021"></a>2021 年 2 月
+## <a name="february-2021"></a>2021年2月
 
 2 月のコンプライアンス ソリューションMicrosoft 365コンテンツに対する変更点を次に示します。
 
@@ -224,8 +294,8 @@ Outlookと更新プログラム:
 
 - [エンドポイント DLP の詳細](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - [メール通知を送信して、DLP ポリシーのヒントを表示する](/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [データ損失防止Microsoft 365オンプレミス スキャナーの詳細](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
-- [データ損失防止オンプレミス スキャナーの使用を開始する](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
+- [Microsoft 365 のエンドポイントのデータ損失防止について説明します](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [データ損失防止のオンプレミス スキャナーの使用を開始する](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
 - [FCI または他のプロパティを含むドキュメントを保護するために DLP ポリシーを作成する](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
 - [エンドポイントのデータ損失防止の使用](/microsoft-365/compliance/endpoint-dlp-using)
 - [エンドポイント データ損失防止の使用を開始する](/microsoft-365/compliance/endpoint-dlp-getting-started)
@@ -276,22 +346,3 @@ Outlookと更新プログラム:
 
 - **SharePoint共有を行います**。 コンテナー[ラベルの](sensitivity-labels-teams-groups-sites.md)場合は、サイトからの外部共有SharePoint一般公開されました。 さらに、これらのMicrosoft 365 管理センターの適用がサポートされています。 
 - **共同編集と自動保存**。 暗号化された [ファイルの共同編集と自動保存](sensitivity-labels-coauthoring.md) のサポートは、非実稼働テナントでのテストのプレビューとしてリリースされます。
-
-## <a name="january-2021"></a>2021 年 1 月
-
-### <a name="support-for-card-content-in-teams"></a>カード コンテンツのサポート (Teams
-
-コンプライアンス ソリューションMicrosoft 365、アプリを介して生成されたカード[](/microsoftteams/platform/task-modules-and-cards/what-are-cards)コンテンツの検出を、メッセージ内でサポートTeamsしています。
-
-- **コアとAdvanced eDiscovery**. カード コンテンツを保留 [にしたり](create-ediscovery-holds.md#preserve-card-content) 、検索に含め [したりできます](/microsoftteams/ediscovery-investigation#search-for-card-content) (コンテンツ検索にも適用されます)。
-- **監査**. これで、カードアクティビティ [が監査ログに記録されます](/microsoftteams/audit-log-events#teams-activities)。
-- **アイテム保持ポリシー**。 アイテム保持ポリシーを使用して、カード [コンテンツを保持および削除できます](retention-policies-teams.md#whats-included-for-retention-and-deletion)。
-
-### <a name="information-governance-and-records-management"></a>情報ガバナンスとレコード管理
-
-[ニュージーランド公的](retention-regulatory-requirements.md#new-zealand-public-records-act) 記録法のコンプライアンス義務を満たすのに役立つ情報ガバナンスとレコード管理を使用して対処するための新しい評価。
-
-### <a name="sensitivity-labels"></a>秘密度ラベル
-
-- 米国政府機関のテナント (GCC および GCC-H) では、GCCラベルがサポートされています。
-- macOS [の新しい自動](sensitivity-labels-office-apps.md) ラベル付けサポート。

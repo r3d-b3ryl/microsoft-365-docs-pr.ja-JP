@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8063e1b0e76241df946a29ef2c5115bc0dc39aad
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: f97bd20334aceabd4d0763c6b8eca4b14271ab70a2099c4dfa97bb2560882742
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363769"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803142"
 ---
 # <a name="user-support"></a>ユーザー サポート
 
@@ -51,7 +51,7 @@ IT 管理者は、次の項目を担当します。
 
 - サポート プロバイダーと一緒にユーザー サポートのサービス レベル契約を設定および管理する
 - 承認済みサポート スタッフの管理者特権の管理。 詳細については、「ユーザー サポート機能 [を有効にする」を参照してください。](../get-started/enable-support.md)
-- 複数のユーザーに影響を与えるデバイスの問題がある場合は、管理者サポート プロセスを使用してMicrosoft マネージド デスクトップエスカレートします。 詳細については、「管理者向け[サポート」を参照Microsoft マネージド デスクトップ。](../working-with-managed-desktop/admin-support.md)
+- ユーザーに影響を与えるデバイスの問題がある場合は、管理者サポート プロセスを使用してMicrosoft マネージド デスクトップをエスカレートします。 詳細については、「管理者向け[サポート」を参照Microsoft マネージド デスクトップ。](../working-with-managed-desktop/admin-support.md)
 - ハードウェア関連の問題を適切なベンダーまたはサプライヤーにルーティングする
 - 設定したポリシーが変更されるのを防Microsoft マネージド デスクトップデバイスのデバイス セキュリティ ポリシー設定を維持および保護します。
 
@@ -74,7 +74,7 @@ IT 管理者は、次の項目を担当します。
 
 ユーザーの問題をユーザーにエスカレートMicrosoft マネージド デスクトップ場合は、問題を指示するチームを特定すると便利です。 ケースは適切に転送できますが、最初から適切な場所にルーティングする時間が節約されます。
 
-- サービスに固有Microsoft マネージド デスクトップ問題 (たとえば、サービス自体によって展開されるポリシーや設定など) は、Operations チームに直接エスカレートします。 詳細については、「Getting help for users 」 [を参照してください](../working-with-managed-desktop/end-user-support.md)。
+- Microsoft マネージド デスクトップに固有の問題 (サービス自体によって展開されるポリシーや設定など): 新しいサポート要求を作成して、Operations チームに直接エスカレートします。 詳細については、「Getting help for users 」 [を参照してください](../working-with-managed-desktop/end-user-support.md)。
 - ハードウェアの問題: ハードウェアサプライヤーまたはベンダーに直接問い合う
 - その他の問題: 既存のサポート チャネルを介してエスカレートします。これは統合サブスクリプションかプレミア サブスクリプションかです。
 
@@ -83,7 +83,7 @@ IT 管理者は、次の項目を担当します。
 
 ### <a name="elevation-portal"></a>昇格ポータル 
 
-既定Microsoft マネージド デスクトップデバイスは標準ユーザーで実行されます。一部のタスクでは特権の昇格が必要です。 ユーザー アカウント制御の詳細については、「ユーザー アカウント制御 [」を参照してください](/windows/security/identity-protection/user-account-control/user-account-control-overview)。 サポート スタッフがユーザーの問題のトラブルシューティング[](../working-with-managed-desktop/end-user-support.md#elevation-requests)中にタスクを実行するために、管理者アカウントへの "just-in-time" アクセスを提供します。 このパスワードは、指定したパスワードのみによって安全にアクセスされ、数時間ごとにローテーションされます。  
+既定Microsoft マネージド デスクトップデバイスは標準ユーザーで実行されます。一部のタスクでは特権の昇格が必要です。 ユーザー アカウント制御の詳細については、「ユーザー アカウント制御 [」を参照してください](/windows/security/identity-protection/user-account-control/user-account-control-overview)。 サポート スタッフがユーザーの問題のトラブルシューティング[](../working-with-managed-desktop/end-user-support.md#elevation-requests)中にタスクを実行するために、管理者アカウントへの "just-in-time" アクセスを提供します。 このパスワードには、指定したパスワードだけが安全にアクセスされ、数時間ごとにローテーションされます。  
 
 このポータルへのアクセスをユーザーに設定する方法の手順については、「ユーザー サポート機能を有効 [にする」を参照してください](../get-started/enable-support.md)。
 
@@ -91,7 +91,7 @@ IT 管理者は、次の項目を担当します。
 
 ### <a name="escalation-portal"></a>エスカレーション ポータル 
 
-運用チームへのエスカレーションがMicrosoft マネージド デスクトップ場合、指定されたサポート スタッフは IT 管理者のサポート要求と同様に指示する場合があります。  
+運用チームへのエスカレーションが必要な問題Microsoft マネージド デスクトップ、指定されたサポート スタッフが IT 管理者のサポート要求と同様に指示する場合があります。  
 
 > [!NOTE]
 > この方法でファイルできるのは Sev C サポート要求のみです。 他の重大度の説明と一致する問題については、適切な IT 管理者に連絡してファイルを作成してください。 詳細については、「サポート要求の [重大度の定義」を参照してください](../working-with-managed-desktop/admin-support.md#support-request-severity-definitions)。

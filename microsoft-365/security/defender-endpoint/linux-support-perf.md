@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: edad9446575ae1165f9268de1bb61ed7cc2f4893
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 362e0f20b23068027e65199f3800bd4f315ec2a0
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653021"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757380"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux のパフォーマンスの問題のトラブルシューティング
 
@@ -123,7 +123,7 @@ ms.locfileid: "53653021"
     cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
     ```
 
-      上記の出力は、パフォーマンスの問題に対する上位の投稿者の一覧です。 最初の列はプロセス識別子 (PID)、2 番目の列は te プロセス名、最後の列はスキャンされたファイルの数で、影響順に並べ替えます。
+      上記の出力は、パフォーマンスの問題に対する上位の投稿者の一覧です。 最初の列はプロセス識別子 (PID)、2 番目の列はプロセス名、最後の列はスキャンされたファイルの数であり、影響によって並べ替えます。
     たとえば、コマンドの出力は次のようになります。 
 
     ```Output

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a24797d39ece34d615dde26811da8b7d7d2b9a6d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7395e7fb22c8ad090ab35868d385fa240700505c
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647897"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757359"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -43,7 +43,7 @@ Web コンテンツ フィルターは [、Microsoft Defender](web-protection-ov
 
 デバイス グループ全体のポリシーを構成して、特定のカテゴリをブロックします。 カテゴリをブロックすると、指定したデバイス グループ内のユーザーは、そのカテゴリに関連付けられた URL にアクセスできません。 ブロックされていないカテゴリの場合、URL は自動的に監査されます。 ユーザーは中断することなく URL にアクセスできます。また、アクセス統計を収集して、よりカスタム ポリシーの決定を作成できます。 表示しているページ上の要素がブロックされたリソースを呼び出している場合、ユーザーにブロック通知が表示されます。
 
-Web コンテンツ フィルターは主要な Web ブラウザーで利用できます。ブロックは Windows Defender SmartScreen (Microsoft Edge) とネットワーク保護 (Chrome、Firefox、Brave、Opera) によって実行されます。 ブラウザーのサポートの詳細については、「前提条件」セクションを参照してください。
+Web コンテンツ フィルターは主要な Web ブラウザーで利用できます。ブロックは Windows Defender SmartScreen (Microsoft Edge) とネットワーク保護 (Chrome、Firefox、Brave、および Opera) によって実行されます。 ブラウザーのサポートの詳細については、「前提条件」セクションを参照してください。
 
 利点の概要:
 
@@ -51,19 +51,18 @@ Web コンテンツ フィルターは主要な Web ブラウザーで利用で�
 - セキュリティ チームは、Microsoft Defender for Endpoint の役割ベースのアクセス制御設定で定義されているデバイス グループを使用して、ユーザーのグループにポリシーを簡単に [展開できます。](/microsoft-365/security/defender-endpoint/rbac)
 - セキュリティ チームは、同じ中央の場所にある Web レポートにアクセスし、実際のブロックと Web 使用状況を可視化できます。
 
-## <a name="user-experience"></a>ユーザー エクスペリエンス
-
-サードパーティがサポートするブラウザーのブロック エクスペリエンスは、ネットワーク保護によって提供されます。これは、ブロックされた接続をユーザーに通知するシステム レベルのトーストを提供します。 ユーザーフレンドリーでブラウザー内でのエクスペリエンスを向上するには、ユーザーエクスペリエンスの使用Microsoft Edge。
-
 ## <a name="prerequisites"></a>前提条件
 
 この機能を試す前に、次の要件を満たしていることを確認してください。
 
-- Windows 10 EnterpriseE5、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3 + Microsoft 365 E5 Securityまたは Microsoft Defender for Endpoint スタンドアロン ライセンス。 
+- Windows 10 EnterpriseE5、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3 + Microsoft 365 E5 Securityアドオン、または Microsoft Defender for Endpoint スタンドアロン ライセンス。 
 - ポータルへのMicrosoft 365 Defender ( https://security.microsoft.com) .
 - Anniversary update (Windows 10 1607) 以降で最新の MoCAMP 更新プログラムを使用して実行されているデバイス。
 - Windows DefenderSmartScreen とネットワーク保護が有効です。
 
+## <a name="user-experience"></a>ユーザー エクスペリエンス
+
+サード パーティでサポートされているブラウザーのブロック エクスペリエンスは、ネットワーク保護によって提供されます。これは、ブロックされた接続をユーザーに通知するシステム レベルのトーストを提供します。 ユーザーフレンドリーでブラウザー内でのエクスペリエンスを向上するには、ユーザーエクスペリエンスの使用Microsoft Edge。
 
 ## <a name="data-handling"></a>データの処理
 
@@ -108,13 +107,19 @@ Web コンテンツ フィルターでブロックされたカテゴリを上書
 
 3. ポリシー アクションを [許可] に **設定します**。  
 
-### <a name="reporting-inaccuracies"></a>不正確なレポート
+### <a name="dispute-categories"></a>紛争カテゴリ
 
-誤って分類されたドメインが発生した場合は、[Web コンテンツ フィルター レポート] ページから不正確な情報を直接報告できます。 この機能は、新しいセキュリティ センター (Microsoft 365) でのみ security.microsoft.com。
+誤って分類されたドメインが発生した場合は、ポータルから直接カテゴリに異議を申し立てできます。 
 
-不正確な情報を報告するには、[レポート Web保護 Web コンテンツ フィルターの詳細ドメイン]  >    >  **に**  >  **移動します**。 Web コンテンツ フィルター レポートの [ドメイン] タブに、各ドメインの横に省略記号が表示されます。 この省略記号にカーソルを合わせると、[ **不正確なレポート] を選択します**。
+ドメインのカテゴリに異議を申し立てするには、[レポート Web 保護 Web コンテンツ フィルターの  >    >  **詳細ドメイン**]  >  **に移動します**。 Web コンテンツ フィルター レポートの [ドメイン] タブに、各ドメインの横に省略記号が表示されます。 この省略記号にカーソルを合わせると、[争議カテゴリ] **を選択します**。
 
 パネルが開き、優先度を選択し、再分類の推奨カテゴリなどの詳細を追加できます。 フォームが完成したら、[送信] を **選択します**。 チームは 1 営業日以内に要求を確認します。 ブロック解除を直ちに行う場合は、カスタム許可 [インジケーターを作成します](indicator-ip-domain.md)。
+
+### <a name="url-category-lookup"></a>URL カテゴリの参照
+
+Web サイトのカテゴリを確認するには、ポータル ( ) で使用できる URL 検索Microsoft 365 Defender使用できます https://security.microsoft.com) 。 URL 検索結果では、[URL/ドメインの詳細] の下に Web コンテンツ フィルター **カテゴリが表示されます**。 管理者は、下の図に示すように、このページから直接ドメインのカテゴリに異議を申し立てすることもできます。 カテゴリの結果が表示されない場合、URL は現在、既存の Web コンテンツ フィルター カテゴリに割り当てられていない。
+
+![Web コンテンツ フィルター カテゴリの参照結果の画像](../../media/web-content-filtering-category-lookup.png)
 
 ## <a name="web-content-filtering-cards-and-details"></a>Web コンテンツ フィルター カードと詳細
 
@@ -158,7 +163,7 @@ Web コンテンツ フィルターでブロックされたカテゴリを上書
 
 ### <a name="limitations-and-known-issues-in-this-preview"></a>このプレビューの制限事項と既知の問題
 
-- デバイスMicrosoft Edgeの OS 構成が Server **(cmd**  >  **Systeminfo**  >  **OS Configuration)** の場合にのみサポートされます。 ネットワーク保護は、サポートされているサードパーティのブラウザー間のトラフィックをセキュリティ保護するサーバー デバイスの検査モードでのみサポートされます。
+- デバイスMicrosoft Edgeの OS 構成が Server **(cmd**  >  **Systeminfo**  >  **OS Configuration)** の場合にのみサポートされます。 ネットワーク保護は、サポートされているサード パーティ製ブラウザー間のトラフィックのセキュリティ保護を担当するサーバー デバイスの検査モードでのみサポートされます。
 
 - 割り当てられていないデバイスでは、レポート内に正しくないデータが表示されます。 [レポートの **詳細]**[デバイス グループ] ピボットに、空白の [デバイス グループ] フィールド  >  を含む行が表示される場合があります。 このグループには、割り当てられていないデバイスが指定したグループに入る前に含まれる。 この行のレポートには、デバイスの正確な数やアクセス数が含まれている可能性があります。
 

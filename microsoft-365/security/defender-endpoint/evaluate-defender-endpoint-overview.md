@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2996ccbdc0ebb3f5f41774ade8dfae62b936f4ee
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9b497770086537beaf0e20bd4fc5773257ace5e2f40aae3fe7695c99f009d38b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458177"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890613"
 ---
 # <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>エンドポイントMicrosoft 365 Defenderの概要を評価する
 

@@ -13,16 +13,44 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 6b18de29b339c3367bfacb8bdc8ec9725481e3e4
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 38c4d1ed871027157488d8d721d7cc80c685c07b966c171c5a0c9a1c693c76b6
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779857"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834506"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
 この記事では、ドキュメントの新しい記事と更新された[Microsoft マネージド デスクトップします](index.yml)。 「更新された」記事には、重要な追加や修正が含め、誤字、スタイル、書式設定の問題の修正などのマイナーな修正は一覧に表示されません。 特定のコミットの履歴 (変更の詳細を含む) を表示するには、常にリポジトリにアクセス[GitHub。](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+
+
+## <a name="july-2021"></a>2021 年 7 月
+新しい記事または変更された記事 | 説明
+--- | ---
+[デバイスの画像](service-description/device-images.md)| 更新された記事
+[準備評価ツールで見つかった問題を修正する](get-ready/readiness-assessment-fix.md) | 更新された記事
+[Microsoft マネージド デスクトップの役割と責任](intro/roles-and-responsibilities.md) | 更新された記事
+[ユーザー サポート機能を有効にする](get-started/enable-support.md) | 新しい記事
+[Enterprise State Roaming を有効にする](get-started/enterprise-state-roaming.md) | 更新された記事
+[Microsoft マネージド デスクトップと Windows 11](intro/win11-overview.md) | 新しい記事
+[Microsoft マネージド デスクトップを使用して Windows 11 をプレビューおよびテストする](working-with-managed-desktop/test-win11-mmd.md) | 新しい記事
+[デバイスを登録するためのパートナー向け手順](get-started/register-devices-partner.md) | 更新された記事
+[新しいデバイスをユーザー自身が登録する](get-started/register-devices-self.md) |更新された記事
+[Microsoft マネージド デスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新された記事
+[Autopilot と登録ステータス ページの初回実行時エクスペリエンス](get-started/esp-first-run.md) | 更新された記事
+[Microsoft マネージド デスクトップ操作と監視](service-description/operations-and-monitoring.md) | 更新された記事
+[ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 更新された記事
+
+## <a name="june-2021"></a>2021 年 6 月
+新しい記事または変更された記事 | 説明
+--- | ---
+[レポートを操作する](working-with-managed-desktop/reports.md) | 更新された記事
+[概要](service-description/privacy-personal-data.md) | 更新された記事
+[Microsoft マネージド デスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新された記事
+[準備評価ツールで見つかった問題を修正する](get-ready/readiness-assessment-fix.md) | 更新された記事
+[Microsoft マネージド デスクトップの前提条件](get-ready/prerequisites.md) | 更新された記事
+[Enterprise State Roaming を有効にする](get-started/enterprise-state-roaming.md) | 更新された記事
 
 ## <a name="may-2021"></a>2021 年 5 月
 新しい記事または変更された記事 | 説明
@@ -62,7 +90,7 @@ ms.locfileid: "52779857"
 [Microsoft マネージド デスクトップサポートされている地域](service-description/regions-languages.md) | 更新された記事
 [ユーザー エクスペリエンスをローカライズ](get-started/localization.md) | 新しい記事
 
-## <a name="february-2021"></a>2021 年 2 月
+## <a name="february-2021"></a>2021年2月
 新しい記事または変更された記事 | 説明
 --- | ---
 [管理ポータルへのアクセス](get-started/access-admin-portal.md) | 更新された記事
@@ -70,7 +98,7 @@ ms.locfileid: "52779857"
 [デバイスの要件](service-description/device-requirements.md) | 更新された記事
 [準備評価ツールで見つかった問題を修正する](get-ready/readiness-assessment-fix.md) | 更新された記事
 [Microsoft OneDrive](get-started/onedrive.md) | 新しい記事
-[コンプライアンス](intro/compliance.md) | 更新済み
+[コンプライアンス](intro/compliance.md) | 更新あり
 [Microsoft 365 Apps for enterprise](get-started/m365-apps.md) | 更新された記事
 [準備状況評価ツール](get-ready/readiness-assessment-tool.md) | 更新された記事
 
@@ -87,7 +115,7 @@ ms.locfileid: "52779857"
 [管理ポータルへのアクセス](get-started/access-admin-portal.md) | 更新された記事
 
 
-## <a name="december-2020"></a>2020年12月
+## <a name="december-2020"></a>2020 年 12 月
 新しい記事または変更された記事 | 説明
 --- | ---
 [Microsoft マネージド デスクトップとは](./intro/index.md) | 更新された記事
@@ -317,7 +345,7 @@ Windows セキュリティ更新プログラムの分析情報| 新しい記事
 --- | ---
 [デバイスIntune ポータル サイトインストールMicrosoft マネージド デスクトップする](get-started/company-portal.md) | 新しい記事
 [デバイスにMicrosoft Projectと Microsoft VisioをMicrosoft マネージド デスクトップする](get-started/project-visio.md) | 新しい記事 
-[Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](get-ready/authentication.md) | 新しい記事
+[Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](get-ready/authentication.md) | 新しい記事
 [デバイスをデバイスに登録Microsoft マネージド デスクトップ](get-started/register-devices-self.md) | 新しい記事
 [パートナー向けMicrosoft マネージド デスクトップデバイスを登録する](get-started/register-devices-partner.md) | 新しい記事
 [アプリをデバイスにMicrosoft マネージド デスクトップする](get-started/deploy-apps.md) | 更新された記事

@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: クライアント コンピューター接続の履歴を確認して、新しい問題を早期に検出する方法について説明します。
-ms.openlocfilehash: 460bde30a0b292569b045c339066df2860c50989
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 8ce4e98a78d3353aa964533b0dfbe269584b637cd829d011ef827d070d7bf95b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800897"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>ベースラインとパフォーマンス履歴を使用して、Office 365 のパフォーマンスをチューニングする
 

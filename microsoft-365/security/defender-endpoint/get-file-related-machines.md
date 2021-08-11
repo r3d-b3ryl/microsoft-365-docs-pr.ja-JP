@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 99a0cab51c7e083817d521833be8d21832587784
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 432f8e640d8bbc0f2464af2c2476c57bcd9539f38c23ae2c91b864afd585e6f7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651413"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890493"
 ---
 # <a name="get-file-related-machines-api"></a>ファイル関連のコンピューター API を取得する
 

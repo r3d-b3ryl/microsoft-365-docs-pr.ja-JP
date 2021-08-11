@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータを、ユーザーのメールボックスにインポートするMicrosoft 365します。
-ms.openlocfilehash: 512f08a621487fb2c3f2fd9f6b5d8ac00e49ac5e
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 48fadb6ba6e0b67575b6454d49a0f275c880ea42ed54166d84ea5258be0e2158
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541075"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520413"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -95,7 +95,7 @@ Microsoft 365 でサード パーティ製のデータをアーカイブする�
 |[区切られたテキスト](archive-text-delimited-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[Webex チーム](archive-webexteams-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Web ページ](archive-webpagecapture-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
-|[Facebookからの職場](archive-workplacefromfacebook-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Workplace from Facebook](archive-workplacefromfacebook-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[XIP](archive-xip-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[XSLT/XML](archive-xslt-xml-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|||
 |[Yieldbroker](archive-yieldbroker-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
@@ -117,6 +117,7 @@ TeleMessage データ コネクタは、米国政府機関クラウドGCC環境�
 |[Bell ネットワーク](archive-bell-network-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[エンタープライズ番号](archive-enterprise-number-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[O2 ネットワーク](archive-o2-network-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[ロジャーズ ネットワーク](archive-rogers-network-archiver-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Signal](archive-signal-archiver-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[テレグラム](archive-telegram-archiver-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[TELUS ネットワーク](archive-telus-network-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
@@ -146,6 +147,7 @@ Microsoft 365 でサード パーティ製のデータをアーカイブする�
 |[Quip](archive-17a-4-quip-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Refinitiv Eikon Messenger](archive-17a-4-refinitiv-messenger-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[ServiceNow](archive-17a-4-servicenow-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+[Skype for Business Server](archive-17a-4-skype-for-business-server-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[余裕期間](archive-17a-4-slack-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[SQL](archive-17a-4-sql-database-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Symphony](archive-17a-4-symphony-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
@@ -255,14 +257,17 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 |TeleMessage データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android Archiver | はい | いいえ | なし |
-|AT&T SMS/MMS Network Archiver | はい | いいえ | なし |
-|Bell SMS/MMS Network Archiver | はい | いいえ | なし |
-|Enterprise Number Archiver | はい | いいえ | なし |
-|O2 SMS と Voice Network Archiver | はい         | いいえ | なし |
-|TELUS SMS ネットワーク アーカイブ | はい | いいえ | なし |
-|Verizon SMS/MMS Network Archiver | はい | いいえ | なし |
-|WhatsApp Archiver | はい | いいえ | なし |
+|Android Archiver | はい | いいえ | いいえ |
+|AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|Enterprise Number Archiver | はい | いいえ | いいえ |
+|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
+|Signal Archiver | はい | いいえ | いいえ |
+|Telegram Archiver | はい | いいえ | いいえ |
+|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
+|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
+|WeChat Archiver | はい | いいえ | いいえ |
+|WhatsApp Archiver | はい | いいえ | いいえ |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする

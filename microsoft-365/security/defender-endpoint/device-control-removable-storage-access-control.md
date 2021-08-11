@@ -16,170 +16,175 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 47463952bb631f31d20411466bf3469c1ef6ff8d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d7b4ab2ccdb072171b8e311d6464230229fbaf691c04a1730893073158000f00
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542983"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803238"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+> [!NOTE]
+> この製品のグループ ポリシー管理は、一般的に有効です (4.18.2106): [「Tech Community ブログ: Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806)でリムーバブル ストレージとプリンターを保護する」を参照してください。 
+
 
 Microsoft Defender for Endpoint Device Control リムーバブル Storageアクセス制御を使用すると、次のタスクを実行できます。
 
 - 除外の付いたリムーバブル 記憶域への読み取り、書き込み、または実行アクセスの監査、許可、または防止
 
-|特権 |アクセス許可  |
-|---------|---------|
-|Access    |  読み取り、書き込み、実行       |
-|アクション モード    |    監査、許可、防止     |
-|CSP サポート   |   はい      |
-|GPO サポート    |   はい      |
-|ユーザー ベースのサポート     |   はい      |
-|コンピューター ベースのサポート    |    はい     |
+<br>
 
-## <a name="licensing"></a>ライセンス
+****
 
-リムーバブル アクセス制御の使用を開始するStorage、サブスクリプション[を確認Microsoft 365必要があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 リムーバブル アクセス制御にアクセスして使用Storage、次の情報が必要です。
-
-- Microsoft 365 E3/ポリシーの展開に関する情報を提供します。
-- Microsoft 365 E5レポートの場合。
+| 特権 | アクセス許可 |
+|:---|:---|
+| Access | 読み取り、書き込み、実行 |
+| アクション モード | 監査、許可、防止 |
+| CSP サポート | はい |
+| GPO サポート | はい |
+| ユーザー ベースのサポート | はい |
+| コンピューター ベースのサポート | はい |
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
 マルウェア対策クライアント Storage **4.18.2103.3** 以降の Windows 10 デバイスにリムーバブル アクセス制御を展開します。
 
 - **4.18.2104** 以降: SerialNumberId の追加、VID_PID、ファイルパス ベースの GPO のサポート、ComputerSid
-
 - **4.18.2105** 以降 : HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId のワイルドカード サポートの追加、特定のコンピューター上の特定のユーザーの組み合わせ、削除可能な SSD (SanDisk Extreme SSD)/USB Attached SCSI (UAS) のサポート
-
 - **4.18.2107** 以降 : ポータブル Windows (WPD) のサポートを追加する (タブレットなどのモバイル デバイスの場合)
 
 :::image type="content" source="images/powershell.png" alt-text="PowerShell インターフェイス":::
 
 > [!NOTE]
-> どのコンポーネントWindows セキュリティアクティブである必要もありません。リムーバブル アクセス制御は、Storage状態とはWindows セキュリティできます。
+> リムーバブル アクセスWindows セキュリティ状態とは別にリムーバブル アクセス制御を実行Storage、すべてのコンポーネントをアクティブWindows セキュリティ必要があります。
 
 ## <a name="policy-properties"></a>ポリシーのプロパティ
 
 次のプロパティを使用して、リムーバブル 記憶域グループを作成できます。
 
-**プロパティ名: グループ ID**
+### <a name="property-name-group-id"></a>プロパティ名: グループ ID
 
-1. 説明: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)、一意の ID は、グループを表し、ポリシーで使用されます。
+**説明**: 一意の ID である GUID は、グループを表し、ポリシーで使用されます。
 
-**プロパティ名: DescriptorIdList**
+### <a name="property-name-descriptoridlist"></a>プロパティ名: DescriptorIdList
 
-2. 説明: グループでカバーするデバイス プロパティを一覧表示します。
+**説明**: グループ内で使用するデバイス プロパティを一覧表示します。
+
 各デバイス プロパティの詳細については、上記 **の「デバイスのプロパティ** 」セクションを参照してください。
 
-3. オプション:
-    - PrimaryId
-        - RemovableMediaDevices
-        - CdRomDevices
-        - WpdDevices
-    - DeviceId
-    - HardwareId
-    - InstancePathId: InstancePathId は、システム内のデバイスを一意に識別する文字列です (たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0)。 末尾の番号 (たとえば、&**0)** は使用可能なスロットを表し、デバイス間で変更される場合があります。 最適な結果を得る場合は、末尾にワイルドカードを使用します。 たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
-    - FriendlyNameId
-    - SerialNumberId
-    - VID
-    - PID
-    - VID_PID
-        - 0751_55E0: この完全な VID/PID ペアと一致する
-        - _55E0: PID=55E0 で任意のメディアを一致する
-        - 0751_: 任意のメディアを VID=0751 と一致する
-        
-**プロパティ名: MatchType** 
+**オプション**:
 
-1. 説明: DescriptorIDList で複数のデバイス プロパティが使用されている場合、MatchType はリレーションシップを定義します。
+- プライマリ ID
+  - RemovableMediaDevices
+  - CdRomDevices
+- DeviceId
+- HardwareId
+- InstancePathId: InstancePathId は、システム内のデバイスを一意に識別する文字列です (たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0)。
 
-2. オプション:
+末尾の番号 (たとえば、&**0)** は使用可能なスロットを表し、デバイス間で変更される場合があります。 最適な結果を得る場合は、末尾にワイルドカードを使用します。 たとえば、`USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*` などです。
 
-    - MatchAll: DescriptorIdList の下の属性は **And** リレーションシップです。たとえば、管理者が DeviceID と InstancePathID を置く場合、接続されている USB ごとに、システムは USB が両方の値を満たするかどうかを確認します。
-    - MatchAny: DescriptorIdList の下の属性は **Or リレーションシップ** です。たとえば、管理者が DeviceID と InstancePathID を置く場合、接続されている USB ごとに、USB が同じ **DeviceID** または **InstanceID** 値を持っている限り、システムは強制を実行します。
+- FriendlyNameId
+- SerialNumberId
+- VID
+- PID
+- VID_PID
+  - 0751_55E0: この完全な VID/PID ペアと一致する
+  - _55E0: PID=55E0 で任意のメディアを一致する
+  - 0751_: 任意のメディアを VID=0751 と一致する
+
+### <a name="property-name-matchtype"></a>プロパティ名: MatchType
+
+**説明**: DescriptorIDList で複数のデバイス プロパティが使用されている場合、MatchType はリレーションシップを定義します。
+
+**オプション**:
+
+- MatchAll: DescriptorIdList の下の属性は **And** リレーションシップです。たとえば、管理者が DeviceID と InstancePathID を置く場合、接続されている USB ごとに、システムは USB が両方の値を満たするかどうかを確認します。
+- MatchAny: DescriptorIdList の下の属性は **Or リレーションシップ** です。たとえば、管理者が DeviceID と InstancePathID を置く場合、接続されている USB ごとに、USB が同じ **DeviceID** または **InstanceID** 値を持っている限り、システムは強制を実行します。
 
 アクセス制御ポリシーのプロパティは次のとおりです。
 
-**プロパティ名: PolicyRuleId**
+### <a name="property-name-policyruleid"></a>プロパティ名: PolicyRuleId
 
-1. 説明: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)、一意の ID はポリシーを表し、レポートとトラブルシューティングで使用されます。
+**説明**: 一意の ID である GUID はポリシーを表し、レポートとトラブルシューティングで使用されます。
 
-**プロパティ名: IncludedIdList**
+### <a name="property-name-includedidlist"></a>プロパティ名: IncludedIdList
 
-1. 説明: ポリシーが適用されるグループ。 複数のグループが追加されている場合、ポリシーは、すべてのグループ内の任意のメディアに適用されます。
+**説明**: ポリシーが適用されるグループ。 複数のグループが追加されている場合、ポリシーは、すべてのグループ内の任意のメディアに適用されます。
 
-2. オプション: このインスタンスでグループ ID/GUID を使用する必要があります。
+**オプション** このインスタンスでは、グループ ID/GUID を使用する必要があります。
 
 次の例は、GroupID の使用法を示しています。
 
 `<IncludedIdList> <GroupId>{EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`
 
-**プロパティ名: ExcludedIDList**
+### <a name="property-name-excludedidlist"></a>プロパティ名: ExcludedIDList
 
-説明: ポリシーを適用しないグループ。
+**説明**: ポリシーが適用されないグループ。
 
-オプション: このインスタンスでグループ ID/GUID を使用する必要があります。
+**オプション**: このインスタンスでは、グループ ID/GUID を使用する必要があります。
 
-**プロパティ名: エントリ ID**
+### <a name="property-name-entry-id"></a>プロパティ名: エントリ ID
 
-1. 説明: 1 つの PolicyRule に複数のエントリを指定できます。一意の GUID を持つ各エントリは、デバイスコントロールに 1 つの制限を指示します。
+**説明**: 1 つの PolicyRule に複数のエントリを指定できます。一意の GUID を持つ各エントリは、デバイスコントロールに 1 つの制限を指示します。
 
-**プロパティ名: Type**
+### <a name="property-name-type"></a>プロパティ名: Type
 
-1. 説明: IncludedIDList のリムーバブル 記憶域グループのアクションを定義します。
-    - 適用: 許可または拒否
-    - 監査: AuditAllowed または AuditDenied 
+**説明**: IncludedIDList のリムーバブル 記憶域グループのアクションを定義します。
 
-2. オプション:
+- 適用: 許可または拒否
+- 監査: AuditAllowed または AuditDenied
 
-    - 許可
-    - 拒否
-    - AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します。
-    - AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。
+**オプション**:
+
+- 許可
+- 拒否
+- AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します。
+- AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。
 
 同じメディアに対して競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として、[許可] と **[拒否]** **があります**。
 
-**プロパティ名: Sid**
+### <a name="property-name-options"></a>プロパティ名: オプション
 
-説明: ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のユーザー またはユーザー グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの Sid を含め、Sid を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。
+**説明**: 通知を表示するかどうかを定義します。
 
-**プロパティ名: ComputerSid**
+:::image type="content" source="images/device-status.png" alt-text="デバイスの状態を確認できる画面":::
 
-説明: ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの ComputerSid を指定し、ComputerSid を使用しないエントリはコンピューター上にポリシーを適用します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。
+**オプション**: 0 ~ 4。
 
-**プロパティ名: オプション**
+[許可] **または [拒否]** **の種類** が選択されている場合:
 
-説明: 通知を表示するかどうかを定義します。
+- 0: 何も
+- 4: この **エントリに対して AuditAllowed** と **AuditDenied を** 無効にします。 ブロックが **発生** し **、AuditDenied** が構成されている場合でも、システムは通知を表示されません。
 
-   :::image type="content" source="images/device-status.png" alt-text="デバイスの状態を確認できる画面":::
+Type **AuditAllowed または** **AuditDenied が** 選択されている場合:
 
-オプション: 0 ~ 4。 [許可] または [拒否] の種類が選択されている場合:
+- 0: 何も
+- 1: 通知の表示、AuditDenied でのみ動作
+- 2: 送信イベント
+- 3: 通知を表示し、イベントを送信します。 AuditAllowed にこれを適用すると、レポートのイベントだけが発生しますが、通知は表示されません。
 
-   - 0: 何も
-   - 4: この **エントリに対して AuditAllowed** と **AuditDenied を** 無効にします。 ブロックが **発生** し **、AuditDenied** が構成されている場合でも、システムは通知を表示されません。
+### <a name="property-name-sid"></a>プロパティ名: Sid
 
-   Type **AuditAllowed または** **AuditDenied が** 選択されている場合:
+**説明**: このポリシーを特定のユーザー またはユーザー グループに適用するかどうかを定義します。1 つのエントリに最大 1 つの SID を設定し、SID を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。
 
-   - 0: 何も
-   - 1: 通知を表示する
-   - 2: 送信イベント
-   - 3: 通知を表示し、イベントを送信する
+### <a name="property-name-computersid"></a>プロパティ名: ComputerSid
 
-**プロパティ名: AccessMask**
+**説明**: このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの ComputerSID を指定し、ComputerSID を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、SID と ComputerSID の両方を同じエントリに追加します。
 
-説明: アクセスを定義します。
+### <a name="property-name-accessmask"></a>プロパティ名: AccessMask
+
+**説明**: アクセスを定義します。
 
 オプション 1 ~ 7:
-  - 1: 読み取り
-  - 2: 書き込み
-  - 3: 読み取りおよび書き込み
-  - 4: 実行
-  - 5: 読み取りおよび実行
-  - 6: 書き込みと実行
-  - 7: 読み取りおよび書き込みと実行
+
+- 1: 読み取り
+- 2: 書き込み
+- 3: 読み取りおよび書き込み
+- 4: 実行
+- 5: 読み取りおよび実行
+- 6: 書き込みと実行
+- 7: 読み取りおよび書き込みと実行
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>一般的なリムーバブル Storage アクセス制御のシナリオ
 
@@ -188,35 +193,27 @@ Microsoft Defender for Endpoint Removable Storageアクセス制御について�
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>シナリオ 1: すべてのユーザーへの書き込みおよび実行アクセスを防止するが、特定の承認済み USB を許可する
 
 1. グループを作成する
-
     1. グループ 1: リムーバブル 記憶域と CD/DVD。 リムーバブル ストレージと CD/DVD の例として、グループ **9b28fae8-72f7-4267-a1a5-685f747a7146** のサンプル (Any Removable Storage および [CD-DVD Group.xmlファイル](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)) があります。
-    
-    2. グループ 2: デバイスのプロパティに基づく承認済み USB。 この使用例の例は、サンプル承認済み [USB Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ファイルのインスタンス ID – グループ **65fa649a-a111-4912-9294-fb6337a25038** です。
+    2. グループ 2: デバイスのプロパティに基づく承認済み USB。 この使用例の例は、サンプル承認済み [USB Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ファイルのインスタンス ID - グループ **65fa649a-a111-4912-9294-fb6337a25038** です。
 
     > [!NOTE]
     > 値に置き `&` 換 `&amp;` える必要があります。
 
 2. ポリシーの作成
-
     1. ポリシー 1: 書き込みおよび実行アクセスをブロックしますが、承認済みの USB を許可します。 この使用例の例は、シナリオ [1](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ブロック書き込みおよび実行アクセスのサンプルの PolicyRule **c544a991-5786-4402-9402-a032cb790d0e** ですが、承認された USBs.xmlファイルを許可します。
-    
     2. ポリシー 2: 許可された USB への書き込みおよび実行アクセスを監査します。 この使用例の例として、PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** (シナリオ [1 監査](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) 書き込みおよび承認済み USBs.xmlファイルへのアクセスの実行) があります。
 
 ### <a name="scenario-2-audit-write-and-execute-access-to-all-but-block-specific-unapproved-usbs"></a>シナリオ 2: 特定の承認されていない USB をブロックするを含むすべてのユーザーへの書き込みおよび実行アクセスを監査する
 
 1. グループを作成する
-
     1. グループ 1: リムーバブル 記憶域と CD/DVD。 この使用例の例は、サンプル Any Removable Storage および [CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ファイルのグループ **9b28fae8-72f7-4267-a1a5-685f747a7146** です。
-    
-    2. グループ 2: サンプルの未承認の USB Group.xmlファイルのデバイス プロパティに基づく未承認 [の USB(](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ベンダー ID/製品 ID、フレンドリー名 – グループ **65fa649a-a111-4912-9294-fb6337a25038** など)。 
+    2. グループ 2: サンプルの未承認の USB Group.xmlファイルのデバイス プロパティに基づく未承認 [の USB(](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ベンダー ID/製品 ID、フレンドリー名 – グループ **65fa649a-a111-4912-9294-fb6337a25038** など)。
 
     > [!NOTE]
     > 値に置き `&` 換 `&amp;` える必要があります。
 
 2. ポリシーの作成
-
     1. ポリシー 1: 特定の承認されていない USB をブロックする権限を持つすべてのユーザーに対する書き込みおよび実行アクセスをブロックします。 この使用例の例として、PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** のサンプルシナリオ [2](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) Audit Write and Execute access to all but block specific 未承認の USBs.xmlファイルがあります。
-    
     2. ポリシー 2: 他のユーザーへの書き込みおよび実行アクセスを監査します。 この使用例の例は、「シナリオ [2](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) Audit Write and Execute access to others.xmlfile」の PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** です。
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>グループ ポリシーによるポリシーの展開と管理
@@ -229,23 +226,25 @@ Microsoft Defender for Endpoint Removable Storageアクセス制御について�
 
 ### <a name="deploying-policy-via-group-policy"></a>グループ ポリシーによるポリシーの展開
 
-1. すべてのグループを 1 つの `<Groups>` `</Groups>` xml ファイルに結合します。 
+1. すべてのグループを 1 つの `<Groups>` `</Groups>` xml ファイルに結合します。
 
     次の図は、シナリオ 1: 書き込みおよび実行アクセスを許可するが、特定の承認済み USB を許可するの例 [を示しています](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)。
-    
+
     :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="デバイスで特定の承認済み USB を許可する構成設定を表示する画面":::
-    
-2. すべてのルールを 1 つの `<PolicyRules>` `</PolicyRules>` xml ファイルに結合します。 
+
+2. すべてのルールを 1 つの `<PolicyRules>` `</PolicyRules>` xml ファイルに結合します。
 
     特定のユーザーを制限する場合は、エントリに SID プロパティを使用します。 ポリシー Entry に SID がない場合、エントリはコンピューターのすべてのログイン インスタンスに適用されます。
-    
+
     次の図は、SID プロパティの使用法を示しています。シナリオ [1:](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)書き込みおよび実行のアクセスをすべて防ぐが、特定の承認済み USB を許可する例を示します。
-    
+
     :::image type="content" source="images/usage-sid-property.png" alt-text="SID プロパティ属性の使用法を示すコードを表示する画面":::
 
-3. ルールとグループ XML ファイルの両方をネットワーク共有フォルダーに保存し、ネットワーク共有フォルダー パスを [グループ ポリシー] 設定に格納します。[コンピューターの構成] -> [管理用テンプレート] -> Windows コンポーネント **-> Microsoft Defender ウイルス対策 ->** Device Control: 'デバイス コントロール ポリシー グループの定義' と [デバイス制御ポリシー ルールの定義] です。
+3. ルールとグループ XML ファイルの両方をネットワーク共有フォルダーに保存し、ネットワーク共有フォルダー パスを [グループ ポリシー] 設定に格納します。[コンピューター構成管理テンプレート] Windows \>  \> **Components** \> **Microsoft Defender ウイルス対策** \> Device Control : 'デバイス制御ポリシー グループの定義' と [デバイス制御ポリシー ルールの定義] です。
 
-    - ポリシーを持つには、ターゲット コンピューターがネットワーク共有にアクセスできる必要があります。 ただし、ポリシーを読み取った後は、コンピューターの再起動後も、ネットワーク共有接続は不要になります。
+   グループ ポリシーでポリシー構成 UX が見つからない場合は、[Raw] を選択してから [名前を付けて保存] を選択して [、WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml)ファイルと [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx)ファイルを **ダウンロードできます**。
+
+   - ポリシーを持つには、ターゲット コンピューターがネットワーク共有にアクセスできる必要があります。 ただし、ポリシーを読み取った後は、コンピューターの再起動後も、ネットワーク共有接続は不要になります。
 
     :::image type="content" source="images/device-control.png" alt-text="[デバイス制御] 画面":::
 
@@ -253,7 +252,7 @@ Microsoft Defender for Endpoint Removable Storageアクセス制御について�
 
 リムーバブル アクセスStorage機能を使用すると、OMA-URI を介してユーザーまたはデバイス、または両方にポリシーを適用できます。
 
-### <a name="licensing"></a>ライセンス
+### <a name="licensing-requirements"></a>ライセンスの要件
 
 リムーバブル アクセス制御の使用を開始するStorage、サブスクリプションを確認 [するMicrosoft 365があります](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 リムーバブル アクセス制御にアクセスして使用Storageするには、リムーバブル アクセスコントロールまたはMicrosoft 365 E3必要Microsoft 365 E5。
 
@@ -272,30 +271,30 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
 1. グループごとに、OMA-URI ルールを作成します。
     - OMA-URI: 
 
-      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b **GroupGUID**%7d/GroupData
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData`
 
       たとえば、サンプル **内のリムーバブル 記憶域と CD/DVD** グループの場合、リンクは次のようになります。
 
-      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
 
     - データ型: 文字列 (XML ファイル)
+
+      :::image type="content" source="images/xml-data-type-string.png" alt-text="STRING データ型の xml ファイル":::
 
 2. ポリシーごとに、OMA-URI も作成します。
-
     - OMA-URI: 
 
-      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData`
 
-      たとえば、ブロック書き込みおよび実行アクセスの場合、サンプルで承認 **された USB** ルールを許可するには、次のリンクが必要です。 
+      たとえば、ブロック書き込みおよび実行アクセスの場合、サンプルで承認 **された USB** ルールを許可するには、次のリンクが必要です。
 
-      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData。
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData`
 
     - データ型: 文字列 (XML ファイル)
-
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Intune ユーザー インターフェイスを使用したポリシーの展開と管理
 
-この機能 (Microsoft エンドポイント マネージャー 管理センター ( > Devices > Configuration profiles > Create profile > Platform: Windows 10 以降の https://endpoint.microsoft.com/) & Profile: Device Control) はまだ利用できません。 
+この機能 (Microsoft エンドポイント マネージャー 管理センター ( ) デバイス構成プロファイル プロファイル プロファイルプラットフォームの作成: Windows 10 以降の & <https://endpoint.microsoft.com/> \> \> \> \> プロファイル: Device Control) はまだ使用できません。
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint Storageデバイス コントロールリムーバブル アクセス制御データを表示する
 
@@ -306,22 +305,22 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
 ```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
-| where ActionType == "RemovableStoragePolicyTriggered" 
-| extend parsed=parse_json(AdditionalFields) 
-| extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess)  
-| extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict)  
-| extend MediaBusType = tostring(parsed.BusType)  
+| where ActionType == &quot;RemovableStoragePolicyTriggered&quot;
+| extend parsed=parse_json(AdditionalFields)
+| extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess) 
+| extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict) 
+| extend MediaBusType = tostring(parsed.BusType) 
 | extend MediaClassGuid = tostring(parsed.ClassGuid)
 | extend MediaClassName = tostring(parsed.ClassName)
-| extend MediaDeviceId = tostring(parsed.DeviceId) 
-| extend MediaInstanceId = tostring(parsed.DeviceInstanceId) 
-| extend MediaName = tostring(parsed.MediaName) 
-| extend RemovableStoragePolicy = tostring(parsed.RemovableStoragePolicy)  
-| extend MediaProductId = tostring(parsed.ProductId)  
-| extend MediaVendorId = tostring(parsed.VendorId)  
-| extend MediaSerialNumber = tostring(parsed.SerialNumber)  
-| extend MediaVolume = tostring(parsed.Volume)  
-| project Timestamp, DeviceId, DeviceName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, MediaVolume 
+| extend MediaDeviceId = tostring(parsed.DeviceId)
+| extend MediaInstanceId = tostring(parsed.DeviceInstanceId)
+| extend MediaName = tostring(parsed.MediaName)
+| extend RemovableStoragePolicy = tostring(parsed.RemovableStoragePolicy) 
+| extend MediaProductId = tostring(parsed.ProductId) 
+| extend MediaVendorId = tostring(parsed.VendorId) 
+| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend MediaVolume = tostring(parsed.Volume) 
+| project Timestamp, DeviceId, DeviceName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, MediaVolume
 | order by Timestamp desc
 ```
 
@@ -329,28 +328,31 @@ DeviceEvents
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**USB の最大数に対するリムーバブル 記憶域メディアの制限は何ですか?**
+### <a name="what-is-the-removable-storage-media-limitation-for-the-maximum-number-of-usbs"></a>USB の最大数に対するリムーバブル 記憶域メディアの制限は何ですか?
 
 100,000 メディアを持つ 1 つの USB グループ (最大 7 MB のサイズ) を検証しました。 このポリシーは、パフォーマンスの問題なく Intune と GPO の両方で動作します。
 
-**ポリシーが機能しない理由**
+### <a name="why-does-the-policy-not-work"></a>ポリシーが機能しない理由
 
 最も一般的な理由は、必要なマルウェア [対策クライアントのバージョンがない場合です](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints)。
 
 もう 1 つの理由は、XML ファイルの "&" 文字に適切なマークダウン書式を使用しないなど、XML ファイルが正しく書式設定されていないか、テキスト エディターがファイルの先頭にバイト オーダー マーク (BOM) 0xEF 0xBB 0xBF を追加し、XML 解析が機能しないことです。 1 つの簡単な解決策は、サンプル ファイルを [ダウンロード](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) することです **([Raw]** を選択 **し、[名前** を付けて保存] を選択して) 更新します。
 
-値が設定され、ポリシーがグループ ポリシーによって管理されている場合は、クライアント デバイスがポリシー XML パスにアクセスできるかどうかを確認します。
+### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>グループ ポリシーに [デバイス制御ポリシー グループの定義] と [デバイス制御ポリシー ルールの定義] の構成 UX はありません。
 
-**組織で最新のマルウェア対策クライアント バージョンを使用しているコンピューターを確認する方法**
+グループ ポリシー構成 UX はバックポートしないが [、WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) ファイルと [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) ファイルで [Raw] と [名前を付けて保存] をクリックすると、関連する adml ファイルと admx ファイルを取得できます。
+
+### <a name="how-can-i-know-which-machine-is-using-out-of-date-antimalware-client-version-in-the-organization"></a>組織で最新のマルウェア対策クライアント バージョンを使用しているコンピューターを確認する方法
 
 次のクエリを使用して、セキュリティ ポータルでマルウェア対策クライアントのMicrosoft 365できます。
+
 ```kusto
 //check the antimalware client version
 DeviceFileEvents
-| where FileName == "MsMpEng.exe"
-| where FolderPath contains @"C:\ProgramData\Microsoft\Windows Defender\Platform\"
-| extend PlatformVersion=tostring(split(FolderPath, "\\", 5))
-//| project DeviceName, PlatformVersion // check which machine is using legacy platformVersion
-| summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
-| order by PlatformVersion desc
+|where FileName == "MsMpEng.exe"
+|where FolderPath contains @"C:\ProgramData\Microsoft\Windows Defender\Platform\"
+|extend PlatformVersion=tostring(split(FolderPath, "\\", 5))
+//|project DeviceName, PlatformVersion // check which machine is using legacy platformVersion
+|summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
+|order by PlatformVersion desc
 ```

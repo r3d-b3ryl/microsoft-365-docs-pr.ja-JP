@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 25518383131e4f7ecb7451965ef7a42b1c6eee4b
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: f39a0c5a83d28510fbd60bfc6c66442f341cfeae734afca1f886f236be094947
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844885"
 ---
 # <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>[Windows管理インストルメンテーション (WMI) を使用して、デバイスを構成および管理Microsoft Defender ウイルス対策
 
@@ -45,7 +45,7 @@ WMI で行われた変更は、変更が展開または行われたエンドポ�
 
 ローカル ポリシー [の上書きを使用してローカルで上書きできる設定を構成できます](configure-local-policy-overrides-microsoft-defender-antivirus.md)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [管理および構成ツールのリファレンス トピック](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

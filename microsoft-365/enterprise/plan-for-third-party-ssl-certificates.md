@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: '概要: Exchange オンプレミスおよびハイブリッド、AD FS、Exchange Online サービス、および Exchange Web サービスを使用する SSO に必要な SSL 証明書について説明します。'
-ms.openlocfilehash: f2505a40e87ab36c96c0ed24514420b56d1479d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 041365e1da16a92dc1a5262909c8871f62b22902931f45867cf1fa65c6f5e89b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927490"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800788"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-microsoft-365"></a>Microsoft 365 のサードパーティの SSL 証明書の計画
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 クライアントとサーバー環境間の通信を暗号化Microsoft 365、サード パーティ製の Secure Socket Layer (SSL) 証明書をインフラストラクチャ サーバーにインストールする必要があります。
 
