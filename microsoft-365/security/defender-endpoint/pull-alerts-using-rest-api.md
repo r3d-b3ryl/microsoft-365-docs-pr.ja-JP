@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a72c7d363ab57c8c108279c71a3e1424e88a577
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2bf5d76b0f5f9638105870a872fdc4efa38157b6df4a694b1610ff3e21964257
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649877"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845029"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>SIEM REST API を使用したエンドポイント検出用の Microsoft Defender のプル
 
@@ -107,7 +107,7 @@ Defender for Endpoint API への要求 *access_tokenフィールドの* 値を�
 アクセス トークンを使用すると、アプリは Microsoft Defender for Endpoint API に対して認証された要求を行います。 アプリで各要求の Authorization ヘッダーにアクセス トークンを追加する必要があります。
 
 ### <a name="request-syntax"></a>要求構文
-メソッド | 要求 URI
+Method | 要求 URI
 :---|:---|
 GET| 地域に適用可能な URI を使用します。 <br><br> **EU の場合**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **米国の場合**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **英国の場合**: `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
@@ -329,13 +329,13 @@ echo $apiResponse
 ## <a name="error-codes"></a>エラー コード
 Microsoft Defender for Endpoint REST API は、無効な要求によって引き起こされた次のエラー コードを返します。
 
-HTTP エラー コード | 説明
+HTTP エラー コード | Description
 :---|:---
 401 | 不正な形式の要求または無効なトークン。
 403 | 承認されていない例外 - テナント管理者によって管理されていないドメインまたはテナントの状態が削除されます。
 500 | サービスのエラー。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [エンドポイント向け Microsoft Defender で SIEM 統合を有効にする](enable-siem-integration.md)
 - [エンドポイント検出用の Microsoft Defender をプルする ArcSight の構成](configure-arcsight.md)
 - [SIEM ツールへの検出のプル](configure-siem.md)

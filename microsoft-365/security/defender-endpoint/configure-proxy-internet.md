@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7e3077980755f81a3ca86569b53051a2851191de
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 493273f9827680205714cd53ef12ea327b15ddf993c2ba8e58d31bbca83f1cdd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890708"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -133,7 +133,7 @@ netsh winhttp reset proxy
 <br>
 
 **** 
-|ドメインリストのスプレッドシート|説明|
+|ドメインリストのスプレッドシート|Description|
 |---|---|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |

@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: ff5a2277edc820ee03cb7c545595bd456aed27d86e41723347cce8d80d25af19
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844897"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>グループ ポリシー設定を使用して、グループ ポリシーの構成とMicrosoft Defender ウイルス対策
 
@@ -94,7 +94,7 @@ ms.locfileid: "52302102"
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了するために、時刻のローカル設定の上書きを構成する | [ユーザーによるポリシー設定のローカル変更を防止または許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了する日を指定する | [スケジュールされたスキャンMicrosoft Defender ウイルス対策構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | 修復 | スケジュールされたフル スキャンを実行して修復を完了する時刻を指定する | [スケジュールされたスキャンMicrosoft Defender ウイルス対策構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| Reporting | 拡張通知を無効にする | [エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
+| レポート | 拡張通知を無効にする | [エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
 | ルート | [オフにする] Microsoft Defender ウイルス対策 | 使用しない (インストールされているサード パーティ製ウイルス対策アプリが正しく動作するように、この設定を [構成されていない] に設定する必要があります)
 | ルート | プロキシ サーバーをバイパスするアドレスを定義する | 不使用 |
 | ルート | ネットワークに接続するためのプロキシの自動構成 (.pac) を定義する | 不使用 |

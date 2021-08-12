@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0137bef845cace589247c35763bbf4253398cbc6
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3b0909e0537c0090ef1bcb8c0803e6f0c7dd5e46435c0980268ee3f2cf810291
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890848"
 ---
 # <a name="device-inventory-report"></a>デバイス一覧レポート
 

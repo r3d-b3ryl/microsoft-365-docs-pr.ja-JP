@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 54b57cb70c0c9eecc1e77e717998bc4cdac89f68
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 8b082a45913a8a4b1df30b6c420f1b33ca456dfb6e0f996e90fe23858156e50d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649589"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890733"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Microsoft Defender for Endpoint コミュニティ センターにアクセスする
 

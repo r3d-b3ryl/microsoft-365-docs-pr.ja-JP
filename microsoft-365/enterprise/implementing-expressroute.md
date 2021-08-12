@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute for Office 365を実装する方法について説明します。これは、インターネットに接続している多数のサービスへの代替ルーティング パスOffice 365します。
-ms.openlocfilehash: 3ad6102193a12325de0e4bb2ff16087738688587
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: f0f429d2fce1c83109e19191f1f3c60190046176c1ce03a31c159aa3591e21b4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801127"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 ExpressRoute for Office 365は、インターネットに接続している多数のサービスへの代替ルーティング Office 365します。 Office 365 の ExpressRoute のアーキテクチャは、インターネット上で既にアクセス可能な Office 365 サービスのパブリック IP プレフィックスを、その後ネットワークに再配布するために、プロビジョニング済みの ExpressRoute 回線に基づいて行います。 ExpressRoute を使用すると、インターネット経由と ExpressRoute 経由で、さまざまなルーティング パスを有効にし、多くのサービスOffice 365できます。 ネットワーク上のルーティングのこの状態は、内部ネットワーク トポロジの設計方法に大きな変化を与える可能性があります。
   
@@ -571,11 +571,11 @@ QoS は、オンラインの音声および会議の利点を取得Skype for Bus
   
 ExpressRoute 接続を使用して Office 365 を展開する場合は、ExpressRoute のネットワーク構成の両方が最適に設計され、クライアント コンピューターなどのネットワーク上の他のコンポーネントも最適化されている必要があります。 この計画ガイドを使用して、見逃した可能性のある手順のトラブルシューティングに加えて、パフォーマンスのトラブルシューティング計画も作成[Office 365。](https://support.office.com/article/Performance-troubleshooting-plan-for-Office-365-e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c)
   
-ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/implementexpressroute365]()
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/implementexpressroute365]()
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   
@@ -599,6 +599,6 @@ ExpressRoute 接続を使用して Office 365 を展開する場合は、Express
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 の URL および IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 URL および IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)

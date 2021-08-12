@@ -16,18 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d7b4ab2ccdb072171b8e311d6464230229fbaf691c04a1730893073158000f00
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: 4765477c4faf583fd9906aaa700aafc3fb26a992172f81eb4d3f6978724724be
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803238"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520698"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
-> [!NOTE]
-> この製品のグループ ポリシー管理は、一般的に有効です (4.18.2106): [「Tech Community ブログ: Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806)でリムーバブル ストレージとプリンターを保護する」を参照してください。 
-
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender for Endpoint Device Control リムーバブル Storageアクセス制御を使用すると、次のタスクを実行できます。
 
@@ -37,14 +35,15 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 ****
 
-| 特権 | アクセス許可 |
-|:---|:---|
-| Access | 読み取り、書き込み、実行 |
-| アクション モード | 監査、許可、防止 |
-| CSP サポート | はい |
-| GPO サポート | はい |
-| ユーザー ベースのサポート | はい |
-| コンピューター ベースのサポート | はい |
+|特権|アクセス許可|
+|---|---|
+|Access|読み取り、書き込み、実行|
+|アクション モード|監査、許可、防止|
+|CSP サポート|はい|
+|GPO サポート|はい|
+|ユーザー ベースのサポート|はい|
+|コンピューター ベースのサポート|はい|
+|||
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
@@ -340,7 +339,7 @@ DeviceEvents
 
 ### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>グループ ポリシーに [デバイス制御ポリシー グループの定義] と [デバイス制御ポリシー ルールの定義] の構成 UX はありません。
 
-グループ ポリシー構成 UX はバックポートしないが [、WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) ファイルと [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) ファイルで [Raw] と [名前を付けて保存] をクリックすると、関連する adml ファイルと admx ファイルを取得できます。
+グループ ポリシー構成 UX のバックポートは行いますが [、WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) ファイルと [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) ファイルで [Raw] と [名前を付けて保存] をクリックすると、関連する adml ファイルと admx ファイルを取得できます。
 
 ### <a name="how-can-i-know-which-machine-is-using-out-of-date-antimalware-client-version-in-the-organization"></a>組織で最新のマルウェア対策クライアント バージョンを使用しているコンピューターを確認する方法
 

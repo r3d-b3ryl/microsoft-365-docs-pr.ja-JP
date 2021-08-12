@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9dde952f8dd67084cf8d2b466f51d3077fcc4458
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9d36aad47928424c233ab68607732bcaafa6db3879e69e8de1ae54b84de6aa96
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648898"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844993"
 ---
 # <a name="release-device-from-isolation-api"></a>分離 API からデバイスを解放する
 
@@ -46,6 +46,12 @@ ms.locfileid: "53648898"
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+> [!IMPORTANT]
+>
+> - 完全な分離は、バージョン 1703 Windows 10デバイスで使用できます。
+> - 選択的分離は、バージョン 1709 以降Windows 10デバイスで使用できます。
+> - デバイスを分離する場合は、特定のプロセスと宛先だけが許可されます。 したがって、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpoint にスプリット トンネリング VPN を使用し、クラウド ベースMicrosoft Defender ウイルス対策トラフィックを使用することをお勧めします。
 
 ## <a name="permissions"></a>アクセス許可
 
