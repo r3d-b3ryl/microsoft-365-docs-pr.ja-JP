@@ -18,16 +18,16 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: PowerShell を使用してユーザー アカウントにライセンスを割り当て、特定のサービス プランを同時に無効にする方法Microsoft 365。
-ms.openlocfilehash: ca5becb8709eeab7b5c535747ac93d36fefa0da8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 1e4015873fd4461269ff77697010334d1b1a5d6703c8d965a81a4c9ce3141319
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841081"
 ---
 # <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>ユーザー ライセンスの割り当Microsoft 365サービスへのアクセスを無効にする
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365には、個々のサービスのサービス プランが用意されています。 Microsoft 365管理者は、ユーザーにライセンスを割り当てる際に、特定のプランを無効にする必要があります。 この記事の手順では、個々のユーザー アカウントまたは複数のユーザー アカウントに対して PowerShell を使用して特定のサービス プランを無効にしながら、Microsoft 365 ライセンスを割り当てできます。
 

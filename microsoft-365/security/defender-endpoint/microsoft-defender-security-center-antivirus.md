@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c15e68a74c9bf518822fce211d6c7d5c4dbc3f2c
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 0de5817d4eb741885be6e43133b0886e90488bd4af04699a8c9dd970fbae8491
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007450"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793336"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender ウイルス対策アプリでWindows セキュリティする
 
@@ -104,7 +104,7 @@ ms.locfileid: "53007450"
 
 次の表に、除外の種類と実行内容の概要を示します。
 
-|除外の種類  |によって定義される  |結果  |
+|除外の種類  |によって定義される  |動作  |
 |---------|---------|---------|
 |**ファイル** |場所 <br/>例: `c:\sample\sample.test` |特定のファイルは、特定のファイルによってMicrosoft Defender ウイルス対策。 |
 |**Folder**    |場所 <br/>例: `c:\test\sample`       |指定したフォルダー内のすべてのアイテムは、指定されたフォルダー Microsoft Defender ウイルス対策。         |

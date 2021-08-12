@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '概要: PowerShell を使用して管理する必要がある理由Microsoft 365場合によっては、より効率的に、必要に応じて他の場合にも説明します。'
-ms.openlocfilehash: cbbceddc98bebaed030f4cff2f183d473d716df6
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 1c575cc71186dcf5c82e11f03c266086abac730a7340d89ae5d8c1a005d4496c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807303"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Microsoft 365 で PowerShell を使用する理由
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 ユーザー アカウントMicrosoft 365 管理センター、ユーザー アカウントとライセンスMicrosoft 365管理できます。 また、オンライン、Microsoft 365、オンラインなどのExchange OnlineサービスTeams管理SharePointできます。 代わりに PowerShell を使用してこれらのサービスを管理する場合は、コマンド ラインとスクリプト言語環境を利用して、速度、自動化、追加機能を利用できます。
 

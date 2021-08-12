@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリ ガバナンス ポリシーを管理します。
-ms.openlocfilehash: d5133a9702d54607a0eb3d3886402fd93d1ab7d8
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 7da710675ab76a9bdbbf81b0186e4364ce77b84b4c6d2d6ae910ba33ea26a8a5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820728"
 ---
 # <a name="manage-app-policies"></a>アプリ ポリシーを管理する
 

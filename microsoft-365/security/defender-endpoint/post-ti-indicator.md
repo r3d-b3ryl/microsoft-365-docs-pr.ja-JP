@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 42d6ed79868b9f32f8ea3cfe77bb78f1a86a8bea
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 464ed75474256e62ccb75756b3949441aae24d04483ccc4ca653db1439d0015b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656693"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793312"
 ---
 # <a name="submit-or-update-indicator-api"></a>インジケーター API の送信または更新
 

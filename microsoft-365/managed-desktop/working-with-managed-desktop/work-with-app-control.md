@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 31cc897fe28f557a65cba9c99e5dcecbf7c2b0e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0a0072cbc5738ae78c151650d8186eb34f952602015b7068909a2d276664684a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917642"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807158"
 ---
 # <a name="work-with-app-control"></a>アプリ制御を操作する
 

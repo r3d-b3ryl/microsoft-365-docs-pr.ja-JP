@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365接続テスト ツール
-ms.openlocfilehash: 8cb25dfc8d11ca28d1a3c35985d84126f0652439
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: f143cf8f9cd838bafa8e21ac258d0fcc09f3221d738f14013ee81e09e9dbdc1c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470594"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840991"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365接続テスト ツール
 
-ネットワークMicrosoft 365テスト ツールは、 に位置します <https://connectivity.office.com> 。 このツールは、正常性サーバーの下の Microsoft 365 管理センターで利用可能なネットワーク評価およびネットワーク分析情報の| **[接続]** メニュー。
+ネットワークMicrosoft 365テスト ツールは、 に位置します <https://connectivity.office.com> 。 このツールは、正常性レポートの下にあるネットワーク評価およびネットワーク分析情報にMicrosoft 365 管理センター **ツール|[接続]** メニュー。
 
 > [!IMPORTANT]
 > すべてのテスト レポートが管理者と共有され、サインイン中にテナントにアップロードされる場合は、Microsoft 365 テナントにサインインすることが重要です。
@@ -34,12 +34,12 @@ ms.locfileid: "52470594"
 >[!NOTE]
 >ネットワーク接続テスト ツールは、WW Commercial および Germany のテナントをサポートしますが、モデレート、GCC、GCC、中国ではサポートされません。
 
-Microsoft 365 管理センターのネットワークインサイトは、Microsoft 365 テナントの定期的な製品内測定値に基づいており、毎日集計されます。 一方、ネットワーク接続テストMicrosoft 365ネットワーク分析情報は、ツール内でローカルで 1 回実行されます。 製品内で実行できるテストは制限され、ユーザーにローカルでテストを実行することで、より多くのデータを収集し、より深い分析情報を得られる可能性があります。 次に、Microsoft 365 管理センターのネットワーク分析情報に、特定のオフィスの場所で Microsoft 365を使用するネットワーク上の問題が表示されます。 接続Microsoft 365テストは、推奨されるネットワーク パフォーマンス向上アクションにつながる問題の根本原因を特定するのに役立ちます。
+Microsoft 365 管理 センターのネットワーク分析情報は、Microsoft 365 テナントの定期的な製品内測定値に基づいており、毎日集計されます。 一方、ネットワーク接続テストMicrosoft 365ネットワーク分析情報は、ツール内でローカルで 1 回実行されます。 製品内で実行できるテストは制限され、ユーザーにローカルでテストを実行することで、より多くのデータを収集し、より深い分析情報を得られる可能性があります。 次に、Microsoft 365 管理 センターのネットワーク分析情報に、特定のオフィスの場所で Microsoft 365を使用するネットワーク上の問題が表示されます。 接続Microsoft 365テストは、推奨されるネットワーク パフォーマンス向上アクションにつながる問題の根本原因を特定するのに役立ちます。
 
-これらの分析情報を一緒に使用して、Microsoft 365 管理センターの各オフィスの場所についてネットワーク品質の状態を評価し、Microsoft 365 接続テストに基づくテストの展開後に詳細を確認することをお勧めします。
+これらの分析情報を一緒に使用して、Microsoft 365 管理 センターの各オフィスの場所でネットワーク品質の状態を評価し、Microsoft 365 接続テストに基づくテストの展開後に詳細を確認することをお勧めします。
 
 >[!IMPORTANT]
->Microsoft 365 管理センターのネットワーク分析情報、パフォーマンスの推奨事項、評価は現在プレビュー状態であり、機能プレビュー プログラムに登録されている Microsoft 365 テナントでのみ使用できます。
+>Microsoft 365 管理 センターのネットワーク分析情報、パフォーマンスの推奨事項、評価は現在プレビュー状態であり、機能プレビュー プログラムに登録されている Microsoft 365 テナントでのみ使用できます。
 
 ## <a name="what-happens-at-each-test-step"></a>各テスト ステップで何が起こるか
 
@@ -80,7 +80,7 @@ Web ブラウザーのテストが完了した後、Web サイトから高度な
 
 ### <a name="sharing-with-your-microsoft-account-team-support-or-other-personnel"></a>Microsoft アカウント チーム、サポート、その他の担当者との共有
 
-テスト レポート (個人識別を除く) は、Microsoft の従業員と共有されます。 この共有は既定で有効になり、正常性サーバーで管理者が **無効|管理センターの**[ネットワークMicrosoft 365] ページ。
+テスト レポート (個人識別を除く) は、Microsoft の従業員と共有されます。 この共有は既定で有効になり、正常性サーバーで管理者が **無効|[ネットワーク接続]** ページ (Microsoft 365 管理センター)。
 
 ### <a name="sharing-with-other-users-who-sign-in-to-the-same-office-365-tenant"></a>同じテナントにサインインする他のユーザー Office 365する
 
@@ -122,7 +122,7 @@ ReportID リンクへのアクセスを提供することで、テスト レポ�
 
 サーバー側のネットワーク出力 IP アドレスを識別します。 場所データベースは、ネットワーク出力のおおよその場所を検索するために使用されます。 これらのデータベースは通常、IP アドレスの約 90% の精度を持っています。 ネットワーク出力 IP アドレスから探した場所が正確ではない場合は、このテストで誤った結果が発生します。 特定の IP アドレスに対してこのエラーが発生している場合は、パブリックアクセス可能なネットワーク IP アドレスの場所 Web サイトを使用して、実際の場所と比較できます。
 
-#### <a name="your-distance-from-the-network-egress-location"></a>ネットワーク出力場所からの距離
+#### <a name="your-distance-from-the-network-egress-location"></a>ネットワークの出口からの距離
 
 その場所からオフィスの場所までの距離を決定します。 これは、TCP 待機時間が 25 ミリ秒を超える可能性が高く、ユーザー エクスペリエンスに影響を与える可能性がある距離が **500** マイル (800 キロメートル) を超える場合のネットワーク分析情報として表示されます。
 
@@ -214,7 +214,7 @@ Outlook がこれを行うのと同じ方法で、Exchange サービス フロ�
 
 クライアントからサービス フロント ドアへの 10 秒間のテスト オーディオ呼び出しで測定Microsoft Teams UDP パケット損失を表示します。 これは、パスの **場合は 1.00% より** 低くする必要があります。
 
-#### <a name="latency"></a>Latency
+#### <a name="latency"></a>遅延
 
 **100ms** より低い UDP 待機時間を示します。
 
@@ -250,7 +250,7 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 > [!div class="mx-imgBorder"]
 > ![ネットワーク正常性の状態](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
 よく寄せられる質問の一部に対する回答を次に示します。
 
@@ -277,9 +277,9 @@ Microsoft 365サービス フロント ドアは、Microsoft のグローバル 
 
 インターネット出力場所は、ネットワーク トラフィックがエンタープライズ ネットワークから出てインターネットに接続する場所です。 これは、ネットワーク アドレス変換 (NAT) デバイスを持ち、通常はインターネット サービス プロバイダー (ISP) に接続する場所として識別されます。 場所とインターネットの出力場所との距離が長い場合は、WAN バックホールが重要な場合があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-[管理センターでのネットワークMicrosoft 365 (プレビュー)](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365パフォーマンス分析情報 (プレビュー)](office-365-network-mac-perf-insights.md)
 

@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: PowerShell を使用して、ステージ移行を使用して移行元の電子メール システムからコンテンツを移行する方法についてMicrosoft 365。
-ms.openlocfilehash: 6a458f6164a842394ec87f59df11939a8c435ea2
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: dd78d466c62303ffe208137f39ee5188c0d03c283fca04263842e63982183b92
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229649"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807254"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Microsoft 365 への段階的な移行に PowerShell を使用する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 ステージ移行を使用して、ユーザー メールボックスの内容をソース 電子メール システムからMicrosoft 365に移行できます。
 

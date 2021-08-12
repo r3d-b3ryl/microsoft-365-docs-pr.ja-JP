@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35bcc532c492acbd0856a5b5410176df58af574a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 65bfcf003ff1fc29187f0c66d2c39cf177b75b11ed792a5566ec0ef81b71d705
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656345"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793516"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -138,5 +138,3 @@ EndPoint 向け Microsoft Defender は、次のようなさまざまな Microsof
 EndPoint 向け Microsoft Defender および各種の Microsoft セキュリティ ソリューションは、Microsoft 365 Defender とともに侵害前と侵害後の統合されたエンタープライズ防御スイートを形成し、高度な攻撃の検出、防止、調査、およびそれに対する自動対応を、エンドポイント、ID、メール、アプリケーション全体でネイティブに統合します。
 
 
-## <a name="related-topic"></a>関連トピック
-[高度な脅威の検出に役立つ EndPoint 向け Microsoft Defender](https://www.microsoft.com/itshowcase/microsoft-defender-atps-antivirus-capabilities-boost-malware-protection)

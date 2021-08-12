@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: この記事では、PowerShell を使用してオンライン サイト グループMicrosoft 365管理SharePointを見つける。
-ms.openlocfilehash: 383536a6ad5ac5742cf1e38081a9be984ce4806b
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: db5f044de7f70cf27e0f7de37c9fceba12249cb6c09891102557fb3c95efcb52
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841060"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>PowerShell を使用して SharePoint Online サイト グループを管理する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 このサイトを使用Microsoft 365 管理センター、PowerShell を使用してオンライン サイト Microsoft 365管理することもできますSharePoint管理できます。
 

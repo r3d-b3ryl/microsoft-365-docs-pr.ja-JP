@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: ハードウェア ベースの分離の最新情報を取得します。 悪用や悪意のあるリンクのような現在および新しい攻撃が従業員の生産性と企業のセキュリティを妨げるのを防ぐ。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 39d6a9c3a3c3a5e2c736025a26c22588f9f08bb0
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 6eabad2b52dc83c65b6a36ea4bb057573ce83e5d4dfc18b298ba1e287a8a696d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055265"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828268"
 ---
 # <a name="application-guard-for-office-for-admins"></a>管理者向け Application Guard for Office
 
