@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: ドキュメント ライブラリ、リスト、ハブを使用して、SharePointサイトをカスタマイズ、整理、および管理する方法について説明します。
-ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 27eeed7b6826ea3ba145cbbfea367ab70173dfdefd77d0d0639dbf47f67f9188
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822025"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>ファイルの保存と共有のためにチーム サイトをカスタマイズする
 

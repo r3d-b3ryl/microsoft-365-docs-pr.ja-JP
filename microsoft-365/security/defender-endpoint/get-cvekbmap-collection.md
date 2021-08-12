@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 04191c2f4ce4a640878596d0eba810cc8351cfa6
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 1c17d0b5a51dfa800590bcd76c061fe6f7413933a243a5398945bf5d464952ce
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656801"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793869"
 ---
 # <a name="get-cve-kb-map-api"></a>CVE-KB マップ API の取得
 

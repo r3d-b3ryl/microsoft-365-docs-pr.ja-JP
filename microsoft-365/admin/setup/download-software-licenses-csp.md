@@ -1,5 +1,5 @@
 ---
-title: クラウド ソリューション プロバイダー (CSP) プログラムを通じて購入した永続的なソフトウェアおよび製品ライセンス キーをダウンロードする
+title: ソフトウェア (CSP) プログラムで購入した永続的なソフトウェアと製品クラウド ソリューション プロバイダーをダウンロードする
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,18 +17,18 @@ search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
-description: クラウド ソリューション プロバイダー (CSP) プログラムを通じて購入した永続的なソフトウェアのソフトウェア および製品ライセンス キーをダウンロードする方法について説明します。
+description: CSP プログラムで購入した永続的なソフトウェアのソフトウェアおよび製品ライセンス キーをダウンロードするクラウド ソリューション プロバイダー説明します。
 ms.date: 01/27/2021
-ms.openlocfilehash: 85dfdb8952278b8c1c3dd23a2ceca7481a683989
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7ab5cfef9ae5e17ae2ab34fff05ed482e9dd7a859f9ab72132e9bfc6264bea59
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821989"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>永久ソフトウェアと製品のライセンス キーをダウンロードする
 
-この記事では、クラウド ソリューション プロバイダー (CSP) プログラムを通じて購入された永続的なソフトウェアのソフトウェアおよび製品ライセンス キーをダウンロードする方法について説明します。
+この記事では、CSP プログラムを通じて購入された永続的なソフトウェアのソフトウェアおよび製品ライセンス キーをダウンロードクラウド ソリューション プロバイダー説明します。
 
 ## <a name="before-you-begin"></a>はじめに
 

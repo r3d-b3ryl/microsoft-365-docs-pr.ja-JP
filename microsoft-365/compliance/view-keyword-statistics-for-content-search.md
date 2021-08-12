@@ -14,14 +14,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: 検索統計機能を使用して、コア電子情報開示ケースに関連付けられたコンテンツ検索と検索の統計をコンプライアンス センターで表示するMicrosoft 365説明します。
+description: 検索統計機能を使用して、コア電子情報開示ケースに関連付けられたコンテンツ検索と検索の統計を表示する方法についてMicrosoft 365 コンプライアンス センター。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a0e543c89b91560520a4e4bf31feb8471c91da4a
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 25884f0b450c1bc90cb6487e64fe636ef5f8af16dd30ad7bb4e7ed28402da03f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311115"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835549"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>電子情報開示検索結果の統計情報を表示する
 
@@ -35,11 +35,11 @@ ms.locfileid: "52311115"
 
 コンテンツ検索またはコア電子情報開示ケースに関連付けられた検索の統計情報を表示するには、次の方法を実行します。
   
-1. [コンプライアンス センター Microsoft 365で、[すべて **表示]** をクリックし、次のいずれかの操作を行います。
+1. [すべて表示 **Microsoft 365 コンプライアンス センター]** をクリックし、次のいずれかの操作を行います。
 
    - [ **コンテンツ検索] を** クリックし、検索を選択して、フライアウト ページを表示します。
 
-     OR
+     または
 
    - [**電子情報開示**  >  **コア]** をクリックし、ケースを選択し、[検索] タブで検索を **選択** して、フライアウト ページを表示します。
 
@@ -97,7 +97,7 @@ ms.locfileid: "52311115"
 
 キーワード リストを作成し、検索のキーワード統計を表示するには、次の方法を使用します。
   
-1. コンプライアンス センター Microsoft 365、新しいコンテンツ検索または Core 電子情報開示ケースに関連付けられた検索を作成します。
+1. 次のMicrosoft 365 コンプライアンス センター、新しいコンテンツ検索または Core 電子情報開示ケースに関連付けられた検索を作成します。
 
 2. 検索ウィザード **の [** 条件] ページで、次の手順を実行します。 [キーワード リスト **の表示] チェック ボックスを** オンにします。
 

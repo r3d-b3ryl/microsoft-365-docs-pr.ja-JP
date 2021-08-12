@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: ed07361f8c433a318342ae3c8ad750549992c285
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: df6d0e98eae9c66d1fc366014f94ff6aeb479e4b36a7f0825982872ce416b6f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842305"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>二重キー暗号化に関するよく寄せられる質問
 
@@ -65,7 +65,7 @@ Double Key Encrypted ドキュメントは、オンプレミスまたはクラ�
 
 ## <a name="what-regions-and-languages-is-double-key-encryption-available-in-is-double-key-encryption-available-worldwide"></a>利用可能な二重キー暗号化とは、どの地域と言語ですか? ダブル キー暗号化は世界中で利用できますか?
 
-DKE ラベルは、Microsoft Information Protection の他の感度ラベルと同じ言語にローカライズされます。 ダブル キー暗号化は世界中で利用できます。
+DKE ラベルは、他の感度ラベルと同じ言語にローカライズMicrosoft Information Protection。 ダブル キー暗号化は世界中で利用できます。
 
 ## <a name="can-i-convert-a-non-dke-label-to-a-dke-label"></a>DKE 以外のラベルを DKE ラベルに変換できますか?
 

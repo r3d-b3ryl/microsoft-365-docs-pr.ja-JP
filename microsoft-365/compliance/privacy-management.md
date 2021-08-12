@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft のプライバシー管理は、組織が保管している個人データをMicrosoft 365、プライバシー リスクの特定と修復に役立つソリューションを提供します。
-ms.openlocfilehash: df3fa07271321d6bc1fedb4e0d06b40b3483b238
-ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
+ms.openlocfilehash: f4beecb0c9249c9eba530526e835bd2958be8cfab4c409365dc536f64b1b2caf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53455387"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835741"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Microsoft プライバシー管理 (プレビュー)
 
@@ -70,8 +70,6 @@ EU の一般データ保護規則 (GDPR) など、特定のプライバシー規
 
 プライバシー管理は、Microsoft 365要求ソリューションを通じてこれらの問い合わせを処理するのに役立ちます。 Microsoft 365 に保存した件名データを検索し、結果を確認し、適切なファイルを選択し、レポートを作成するために、自動化とワークフロー機能を提供します。 その途中で、組織内の他の専門家と安全に共同作業を行い、要求を完了することができます。
 
-このサブジェクト権限要求ソリューションは、コンプライアンス センターの元のデータ主体要求 (DSR) ソリューションを超える機能を提供し、2 つの間にワークフローの接続や共有はありません。
-
 詳細については、「対象権限要求 [の管理」を参照してください](privacy-management-subject-rights-requests.md)。
 
 ## <a name="how-we-evaluate-your-data"></a>データの評価方法
@@ -88,7 +86,7 @@ Microsoft 365 環境で個人情報を表示し、そのデータを管理し、
 
 ### <a name="where-privacy-management-identifies-personal-data"></a>プライバシー管理が個人データを識別する場所
 
-Microsoft 365 のプライバシー管理ソリューションは、Microsoft 365 のクラウド サービスに組織によって保存されたデータとファイルを評価し、その領域でプライバシー リスクを特定および管理するのに役立ちます。 これには以下が含まれます。
+Microsoft 365 のプライバシー管理ソリューションは、Microsoft 365 のクラウド サービスに組織によって保存されたデータとファイルを評価し、その領域でプライバシー リスクを特定および管理するのに役立ちます。 保持されるデータには以下が含まれます。
 
 - Microsoft Exchange
 - Microsoft SharePoint

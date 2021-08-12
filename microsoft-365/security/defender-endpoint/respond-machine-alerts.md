@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dce9f77e7c45aba8a49322348d0cb16d9a7e48f72c9972b973589b01d2b4a10c
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 01f9e286c785defa2cc182685be300e695ee181ea9f51de71c821b2290a665ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829040"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
@@ -84,10 +84,6 @@ ms.locfileid: "54520737"
 ## <a name="collect-investigation-package-from-devices"></a>デバイスから調査パッケージを収集する
 
 調査または対応プロセスの一環として、デバイスから調査パッケージを収集できます。 調査パッケージを収集することで、デバイスの現在の状態を特定し、攻撃者が使用するツールと手法をさらに理解できます。
-
-> [!IMPORTANT]
->
-> - これらの応答アクションは、バージョン 1703 以降Windows 10デバイスでのみ使用できます。
 
 パッケージ (Zip ファイル) をダウンロードし、デバイスで発生したイベントを調査するには
 

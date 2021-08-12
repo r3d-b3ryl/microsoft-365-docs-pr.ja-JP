@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 管理者は、組織外のユーザーと共有されるリソースを識別するために、Microsoft 365監査ログで共有監査を使用する方法について学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 302ad7665c83ee9061b2e1965ef03ec25d0aab58
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: e77d02351763caee74137108a8d4f7b6a6f7bd3dd59abc8ce312a9290e6a7789
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801487"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>監査ログで共有監査を使用する
 
@@ -100,7 +100,7 @@ ms.locfileid: "53341510"
 
 2. 職場または学校のアカウントを使用してサインインします。
 
-3. ウィンドウの左側のウィンドウで、[監査Microsoft 365 コンプライアンス センターを **クリックします**。
+3. Microsoft 365 コンプライアンス センターの左側のウィンドウで、**[監査]** をクリックします。
 
     [**監査**] ページが表示されます。
 

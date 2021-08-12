@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: 'スプレッドシートまたは他の CSV 形式のファイルMicrosoft 365リストから複数のユーザーをビジネス用に追加する方法について説明します。 YouTube で、アカウントをユーザーに追加する方法を説明するビデオをMicrosoft 365。 このプロセスの最後に、アカウントを持つ各ユーザーにメールボックスがMicrosoft 365されます。 '
-ms.openlocfilehash: 6b3e8d885466e44a4aa23427a54cfc98b2eebdf3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bb0ed6212cde61693024bcd2fdca9f1d6c3f42dbb063f67324be3d87219f46cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905622"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835417"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>複数のユーザーを同時にユーザーに追加する - Microsoft 365 ヘルプ
 
@@ -38,7 +38,7 @@ ms.locfileid: "50905622"
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>管理センターに複数のユーザーをMicrosoft 365する
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>サーバーに複数のユーザーを追加Microsoft 365 管理センター
 
 1. 職場または学校のアカウントを使用して、Microsoft 365 にサインインします。
 

@@ -1,5 +1,5 @@
 ---
-title: 高度な電子情報開示での関連性分析の追跡
+title: '[関連度の分析を追跡する] Advanced eDiscovery'
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,17 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
-description: 高度な電子情報開示のケースの問題に関する関連性トレーニングの状態と結果を表示および解釈する方法について説明します。
-ms.openlocfilehash: 224337969b5e662d45c5b804fa5a0ee045f4fb84
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+description: 関連度トレーニングの状態と結果を表示および解釈する方法については、Advanced eDiscovery。
+ms.openlocfilehash: f0c0ab94b328a715739c7c8aec32ac041b6dc97f6fd998865a5b2e282bff42eb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801736"
 ---
-# <a name="track-relevance-analysis-in-advanced-ediscovery"></a>高度な電子情報開示での関連性分析の追跡
+# <a name="track-relevance-analysis-in-advanced-ediscovery"></a>[関連度の分析を追跡する] Advanced eDiscovery
   
-Advanced eDiscovery では、[関連性の追跡] タブには、[タグ] タブで実行される関連性トレーニングの計算された有効性が表示され、関連性の反復トレーニング プロセスで実行する次の手順を示します。 
+このAdvanced eDiscovery、[関連性の追跡] タブには、[タグ] タブで実行された関連性トレーニングの計算された有効性が表示され、関連性の反復トレーニング プロセスで実行する次の手順を示します。 
   
 ## <a name="tracking-relevance-training-status"></a>関連性トレーニングの状態の追跡
 
@@ -59,7 +59,7 @@ Advanced eDiscovery では、[関連性の追跡] タブには、[タグ] タブ
 
 ### <a name="reaching-stable-training-levels"></a>安定したトレーニング レベルに達する
 
-評価ファイルが安定したレベルのトレーニングを達成した後、高度な電子情報開示はバッチ計算の準備が整いました。
+評価ファイルが安定したレベルのトレーニングを達成した後Advanced eDiscoveryバッチ計算の準備が整いました。
   
 > [!NOTE]
 > 通常、3 つの安定したトレーニング サンプルの後、次の手順は "バッチ計算" です。 たとえば、以前のサンプルからのファイルのタグ付けに変更が加えられた場合や、シード ファイルが追加された場合など、例外が発生する場合があります。 
@@ -79,7 +79,7 @@ Advanced eDiscovery では、[関連性の追跡] タブには、[タグ] タブ
   
 ### <a name="assessing-tagging-consistency"></a>タグ付けの一貫性の評価
 
-ファイルのタグ付けに不整合がある場合は、分析に影響を与える可能性があります。 高度な電子情報開示タグ付けの一貫性プロセスは、結果が最適ではない場合や一貫性が疑わしい場合に使用できます。 タグが一貫性のない可能性があるファイルの一覧が返され、必要に応じて確認および再タグ付けできます。
+ファイルのタグ付けに不整合がある場合は、分析に影響を与える可能性があります。 タグAdvanced eDiscovery一貫性プロセスは、結果が最適ではない場合や一貫性が疑わしい場合に使用できます。 タグが一貫性のない可能性があるファイルの一覧が返され、必要に応じて確認および再タグ付けできます。
   
 > [!NOTE]
 > 評価後の 7 つ以上のトレーニング ラウンドの後、タグ付けの一貫性は、[関連性トラックの問題] [詳細な結果] \>  \>  \> **トレーニングの** 進行状況 \> **で確認できます**。 このレビューは、一度に 1 つの問題に対して行われます。
@@ -108,11 +108,11 @@ Advanced eDiscovery では、[関連性の追跡] タブには、[タグ] タブ
   
 ### <a name="keywords"></a>キーワード
 
-キーワードは、ファイルが関連するかどうかを示す重要な指標として、Advanced eDiscovery によって識別されるファイル内の一意の文字列、単語、語句、または一連の単語です。 "Include" columns list keyword and weights in files the relevant, and the "Exclude" columns lists keywords and the exclude" columns lists keywords and weights in files tagged in not relevant.
+キーワードは、Advanced eDiscovery によってファイルが関連するかどうかを示す重要な指標として識別される、ファイル内の一意の文字列、単語、語句、または一連の単語です。 "Include" columns list keyword and weights in files the relevant, and the "Exclude" columns lists keywords and the exclude" columns lists keywords and weights in files tagged in not relevant.
   
-高度な電子情報開示では、負または正のキーワードの重み値が割り当てされます。 重み付けが大きいほど、バッチ計算時にキーワードが表示されるファイルに高い関連性スコアが割り当てられる可能性が高くなります。
+Advanced eDiscoveryまたは正のキーワードの重み値を割り当てる必要があります。 重み付けが大きいほど、バッチ計算時にキーワードが表示されるファイルに高い関連性スコアが割り当てられる可能性が高くなります。
   
-キーワードの高度な電子情報開示リストを使用して、専門家によって作成されたリストを補完したり、ファイル レビュー プロセスの任意の時点で間接的なサニティ チェックとして使用できます。
+キーワードAdvanced eDiscoveryリストを使用して、専門家によって作成されたリストを補完したり、ファイル レビュー プロセスの任意の時点で間接的なサニティ チェックとして使用できます。
   
 ### <a name="training-progress"></a>トレーニングの進捗状況
 
@@ -128,7 +128,7 @@ Advanced eDiscovery では、[関連性の追跡] タブには、[タグ] タブ
 
 - **警告**: 多くのファイルに一貫性のないタグが付く場合があります。 (赤色の光が表示されます)
 
-**トレーニングの進行状況グラフ**: 多くの関連性トレーニング サイクル後の関連性トレーニングの安定性の度合いを、F-measure 値と比較して示します。 グラフを左から右に移動すると、信頼区間が狭く、高度な電子情報開示の関連性によって F メジャーと共に使用され、関連性トレーニングの結果が最適化される安定性を判断します。
+**トレーニングの進行状況グラフ**: 多くの関連性トレーニング サイクル後の関連性トレーニングの安定性の度合いを、F-measure 値と比較して示します。 グラフを左から右に移動すると、信頼区間が狭く、F メジャーと共に Advanced eDiscovery Relevance によって使用され、関連性トレーニングの結果が最適化される際の安定性が判断されます。
   
 > [!NOTE]
 > 関連性は F2 を使用し、呼び出しは精度の 2 倍の重みを受け取ります。 リッチ度が高い (25% を超える) 場合、関連性は F1 (1:1 比率) を使用します。 F-measure 比率は、[関連性の設定] [ **詳細設定]** \> **で構成できます**。
@@ -152,7 +152,7 @@ Advanced eDiscovery では、[関連性の追跡] タブには、[タグ] タブ
   
 ### <a name="training-statistics"></a>トレーニング統計
 
-[ **トレーニング統計] ウィンドウ** には、高度な電子情報開示関連性トレーニングの結果に基づいて統計とグラフが表示されます。 
+[**トレーニング統計] ウィンドウ** には、関連性トレーニングの結果に基づいて統計とグラフAdvanced eDiscovery表示されます。 
   
 ![関連性トラックのトレーニング統計情報](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   

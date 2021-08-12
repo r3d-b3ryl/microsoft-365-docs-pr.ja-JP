@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: Office 365 GCC DoD には追加のネットワーク セキュリティ要件があります'
 hideEdit: true
-ms.openlocfilehash: f4c03d364e84d89a1b12e4d858ab46eb3be6ae5e
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 393a581043531165aa9339e1435660431c593408f16c49f5229cd6415a9a67ef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926561"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835393"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Office 365 GCC High および DOD の追加のネットワーク セキュリティ要件
 

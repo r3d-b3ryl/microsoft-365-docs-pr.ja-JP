@@ -20,43 +20,51 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
+ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: 組織で 365 Business Windows購入する方法と、ユーザーがクラウド PC の使用を開始する方法について学習します。
-ms.openlocfilehash: e3172171a52bbb92fd7e49f800ff2ccc502ea06b8f49547e02e0e6a61cf6de43
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: b5b09761c264074c8f848a9394a59c1f8e8b47c8373f1e40c0b31227ce94b8a9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520449"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821907"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>365 Business Windowsクラウド PC の使用を開始する
 
-この記事は、組織で 365 Business をWindows設定する予定のユーザー向けです。
+この記事は、組織で 365 Business をWindows設定する予定のユーザー向けです。 
   
-[Windows 365 Business](https://www.microsoft.com/windows-365/business)は Windows 365 のバージョンで、小規模な企業 (最大 300 シート) で使用されます。 これにより、組織はクラウド PC をユーザーに提供する簡単で合理化された方法を提供できます。  365 Windows 365 クラウド PC を使用すると、Microsoft クラウドからアプリ、データ、コンテンツ、設定、ストレージをストリーミングできます。
+[Windows 365 Business](https://www.microsoft.com/windows-365/business)は Windows 365 のバージョンで、小規模な企業 (最大 300 シート) で使用されます。 これにより、組織はクラウド PC をユーザーに提供する簡単で合理化された方法を提供できます。  365 Windows 365 クラウド PC を使用すると、Microsoft クラウドからアプリ、データ、コンテンツ、設定、ストレージをストリーミングできます。 
 
 > [!NOTE]  
-> 開始する前に、ユーザーの [Azure](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) ADデバイス設定が **[すべて**] に設定されている Azure ADに参加する可能性 **があります。**
+> 開始する前に、ユーザーの [Azure](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) ADデバイス設定が **[すべて**] に設定されている Azure ADに参加する可能性 **があります。** 
 
    ![ユーザーはデバイスを Azure ユーザー設定ADできます](../../media/deschutes/azure-device-settings.png)
+
 ## <a name="prerequisites"></a>前提条件
 365 Business をセットアップするためのWindowsはありません。
+
+
 ## <a name="buy-subscriptions"></a>サブスクリプションを購入する
 
 ユーザー向け 365 Business サブスクリプションを購入Windows 2 つの方法があります。
-
 - [365 Windowsサイト](https://www.microsoft.com/windows-365/business/compare-plans-pricing)
 - Microsoft 365 管理センター
 
-サブスクリプションを購入した後、組織のユーザーにライセンスMicrosoft 365 管理センター割り当てるには、サブスクリプションを使用できます。
+サブスクリプションを購入した後、組織のユーザーにライセンスMicrosoft 365 管理センター割り当てるには、サブスクリプションを使用できます。 
+
+
 ### <a name="buy-subscriptions-through-the-windows-365-products-site"></a>365 製品サイトWindowsサブスクリプションを購入する
 
-Microsoft 365 サブスクリプションをまだ持ってない場合は、Windows 365 製品サイトで Windows [365](https://www.microsoft.com/windows-365/business/compare-plans-pricing)Business サブスクリプションWindows購入できます。 次の手順を使用して、[Windows 365 製品] ページから Windows 365 Business サブスクリプションを購入します。
+Microsoft 365 サブスクリプションをまだ持ってない場合は、Windows 365 製品サイトで Windows [365](https://www.microsoft.com/windows-365/business/compare-plans-pricing)Business サブスクリプションWindows購入できます。 次の手順を使用して、[Windows 365 製品] ページから Windows 365 Business サブスクリプションを購入します。   
 
-1. [[365 Windows] ページで、[](https://www.microsoft.com/windows-365/business)プランと価格 **を表示する] を選択します**。
+
+1. [[365 Windows] ページで、[](https://www.microsoft.com/windows-365/business)プランと価格 **を表示する] を選択します**。 
 2. 次のページで、購入するサブスクリプションを選択し、[今すぐ購入] **を選択します**。
 3. **[365 Business Windowsして** ありがとうございます] ページで、手順に従ってアカウントを設定します。
 4. 手順 **5 - 確認** の詳細で、ユーザーにライセンスを割り当てる準備が整った場合は、[開始する] を選択して、Windows 365 のホーム ページに移動します https://windows365.microsoft.com 。
 5. [365 Windows] ホーム ページの[クイック アクション] セクションで、[組織の **管理] を選択します**。 これにより、ユーザーにライセンスMicrosoft 365 管理センター割り当て可能な場所にアクセスできます。
+
+
 
 ### <a name="buy-a-subscription-through-the-microsoft-admin-center"></a>Microsoft 管理センターを通じてサブスクリプションを購入する
 
@@ -68,14 +76,13 @@ Microsoft 365 テナントが既に存在し、グローバル管理者または
 4. [チェックアウト **] ページ** で、購入するサブスクリプションの数と支払い情報を入力します。 次に、[ **注文の配置] を選択します**。
 5. **You'all set!** ページが表示され、購入の確認が表示されます。
 
-## <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
+
+## <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる 
 
 Windows 365 製品サイトまたは Microsoft 365 管理センター を通じてサブスクリプションを購入した場合は、Microsoft 365 管理センター の [課金][](/microsoft-365/admin/manage/assign-licenses-to-users)ページからユーザーにライセンスを割り当てできます。
 
-365 Business ライセンスの種類Windows、ユーザーのビジネス の必要性に基づいて、ユーザーに異なる種類のライセンスを割り当てできます。 ユーザー[に適Windowsするライセンスの種類については、「365 Business](windows-365-business-sizing.md)のサイズ変更オプション」を参照してください。
+365 Business ライセンスの種類Windows、ユーザーのビジネス の必要性に基づいて、ユーザーに異なる種類のライセンスを割り当てできます。 ユーザー[に適Windowsするライセンスの種類については、「365 Business](windows-365-business-sizing.md)のサイズ変更オプション」を参照してください。 
 
-> [!IMPORTANT]
-> テナントに Windows 365 ライセンスが初めて割り当てられると、"CloudPCBPRT" というシステム アカウントが自動的に作成Azure Active Directory。 このアカウントを削除しない。 システム アカウントが削除された場合、セットアップが失敗する可能性があります。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能やテナントへのアクセス権を持ち合わせない。 このユーザーを削除する場合は、サポート セントラルを通じてチケットをファイルします。
 
 ## <a name="get-your-users-started-with-cloud-pc"></a>ユーザーにクラウド PC の使用を開始する
 
@@ -88,7 +95,7 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
 
 ユーザーは、自分の **https://windows365.microsoft.com** クラウド PC にアクセスするために移動できます。  
 
-ユーザーは Windows 365 のホーム ページで、[クラウド PC] セクションにアクセスできるクラウド **PC が表示** されます。
+ユーザーは Windows 365 のホーム ページで、[クラウド PC] セクションにアクセスできるクラウド **PC が表示** されます。 
 
 ![Windows 365 home](../../media/deschutes/cloudpc-home.png)
 
@@ -105,6 +112,7 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
 
 - **再起動**: クラウド PC を再起動します。
 
+
 - **リセット**: リセットは、次の手順を実行します。
 
     - 再インストールWindows 10。
@@ -115,7 +123,7 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
     > [!IMPORTANT]  
     > クラウド PC をリセットする前に、クラウド ストレージ サービスまたは外部ストレージに保持する必要がある重要なファイルを必ずバックアップしてください。 クラウド PC をリセットすると、これらのファイルが削除されます。
 
-- **Rename**: 365 ホーム ページのユーザーに表示されるクラウド PC のWindows変更します。
+- **Rename**: 365 ホーム ページのユーザーに表示されるクラウド PC のWindows変更します。 
 
 - **トラブルシューティング**: ユーザーがクラウド PC に接続しない可能性がある問題のトラブルシューティングと修正を試みる。 次の表は、チェックによって発生する可能性がある状態を示しています。
 
@@ -126,20 +134,24 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
     |クラウド PC に接続できません。 修正に取り組み、後でもう一度やり直します。 |接続に必要な Microsoft サービスは利用できません。 後でもう一度接続してみてください。 |
     |クラウド PC の問題を修正できません。 管理者に問い合わせてください。 |問題が検出されましたが、修正できません。 これは、継続的な更新プログラムまたは別Windows原因である可能性があります。 このエラーが長い期間続く場合は、クラウド PC をリセットする必要があります。 |
 
+
+
+
 ### <a name="remote-desktop"></a>リモート デスクトップ
 
-このMicrosoft リモート デスクトップアプリを使用すると、ユーザーはクラウド PC を含むリモート PC にアクセスして制御できます。 Windows 365 ユーザーは、365 ホーム ページから必要なリモート デスクトップ Windowsインストールできます。
+このMicrosoft リモート デスクトップアプリを使用すると、ユーザーはクラウド PC を含むリモート PC にアクセスして制御できます。 Windows 365 ユーザーは、365 ホーム ページから必要なリモート デスクトップ Windowsインストールできます。 
 
 #### <a name="install-the-microsoft-remote-desktop-app"></a>アプリをMicrosoft リモート デスクトップする
 
 リモート デスクトップ クライアントをセットアップするには、次の手順を実行します。
 
-1. **[365 Windows]** ホーム ページで、[アプリ] Microsoft リモート デスクトップ (ホーム アイコンの下) を選択します。
-2. [アプリの **Microsoft リモート デスクトップ] ページ** で、必要なリモート デスクトップ アプリをダウンロードしてインストールします。
+1. **[365 Windows]** ホーム ページで、[アプリ] Microsoft リモート デスクトップ (ホーム アイコンの下) を選択します。 
+2. [アプリの **Microsoft リモート デスクトップ] ページ** で、必要なリモート デスクトップ アプリをダウンロードしてインストールします。 
 
    ![リモート デスクトップ クライアント](../../media/deschutes/remote-desktop-apps.png)
 
-オペレーティング システム別のクライアントの一覧については、「リモート デスクトップ [クライアント」を参照してください](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)。
+オペレーティング システム別のクライアントの一覧については、「リモート デスクトップ [クライアント」を参照してください](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)。 
+
 
 ## <a name="installing-apps"></a>アプリをインストールする
 
@@ -147,10 +159,8 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
 
 すべての Windows 365 Business ユーザーは、クラウド PC でローカル管理者特権を持つ必要があります。そのため、アプリをワークスペースにインストールするために必要なアクセス許可が必要です。
 
-> [!IMPORTANT]
-> ユーザーがクラウド PC で Microsoft 365 Business Standard ライセンスを使用しようとすると、「アカウントの問題: アカウントで見つかった製品を使用して、共有コンピューターのシナリオで Office をアクティブ化できません」というエラーが表示される場合があります。 このシナリオでは、ユーザーはクラウド PC にインストールされているOfficeバージョンをアンインストールし、Office.com から新しいコピーをインストールする必要があります。
 
-## <a name="management-through-intune"></a>Intune による管理
+ ## <a name="management-through-intune"></a>Intune による管理
 
 Windows 365 Business では、プロビジョニング プロセスの一環としてクラウド PC が[Intune](/mem/intune/fundamentals/what-is-intune)に登録されません。 組織とユーザーが適切にライセンスされている場合、Intune にコンピューターを登録する場合と同じ手順を使用して、クラウド PC[を Intune に](/mem/intune/user-help/enroll-windows-10-device)登録Windows 10できます。
 
@@ -161,6 +171,8 @@ Windows 365 Business では、プロビジョニング プロセスの一環と�
 ## <a name="how-to-get-help"></a>解決策の見つけ方
 
 365 Business のセットアップ中にヘルプをWindowsする必要がある場合Microsoft 365 管理センターヘルプまたはサポートを[参照してください](/microsoft-365/business-video/get-help-support)。
+
+
 
 ## <a name="related-content"></a>関連コンテンツ
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 推定検索結果と実際の検索結果が、電子情報開示ツールを使用して実行される検索で異なる理由をOffice 365。
-ms.openlocfilehash: 17a4c2eea9833afa2112fa8ab918dcda074eeb36
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 70a2f22250010204298bb4e9ea5e4f3833013d04027bbdb4bcb0d25653ca47d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653513"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808092"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>推定電子情報開示検索結果と実際の電子情報開示検索結果の違い
 
@@ -33,7 +33,7 @@ ms.locfileid: "52653513"
 - コンテンツ検索
 - コア電子情報開示
 
-電子情報開示検索を実行すると、使用しているツールは、検索条件に一致するアイテム数 (および合計サイズ) の推定値を返します。 たとえば、コンプライアンス センターで検索を実行Microsoft 365、選択した検索のフライアウト ページに推定検索結果が表示されます。
+電子情報開示検索を実行すると、使用しているツールは、検索条件に一致するアイテム数 (および合計サイズ) の推定値を返します。 たとえば、検索結果で検索を実行Microsoft 365 コンプライアンス センター、選択した検索のフライアウト ページに推定検索結果が表示されます。
   
 ![検索フライアウト ページに表示される結果の推定値](../media/EstimatedSearchResults1.png)
   

@@ -17,14 +17,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: この記事では、365 監査ログ レコードの結果をエクスポートするときに含まれるOffice説明します。
+description: この記事では、監査ログ レコードの結果をエクスポートするときに含まれる追加Office 365説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 69a34f4de948bc9533ef2872d94171134e50ffea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a3641b40b76c2839f5cd29c22c28dfb5652ce42515d4e0ffe7e3edce0dcd3a7f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927075"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808142"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>監査ログの詳細なプロパティ
 
@@ -37,7 +37,7 @@ ms.locfileid: "50927075"
 > [!TIP]
 > Excel の Power Query に含まれる JSON 変換機能を使用すると、[**AuditData**] 列を複数の列に分割し、プロパティごとに個別の列を設定できます。 このようにすると、これらの 1 つ以上のプロパティで並べ替えやフィルター処理を行うことができます。 これを行う方法については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。 
   
-|**Property**|**説明**|**このプロパティを持つ Microsoft 365 サービス**|
+|**Property**|**説明**|**Microsoft 365を持つサービス**|
 |:-----|:-----|:-----|
 |Actor|アクションを実行したユーザーまたはサービス アカウント。|Azure Active Directory|
 |AddOnName|チームで追加、削除、または更新されたアドオンの名前。 Microsoft Teams のアドオンの種類には、ボット、コネクタ、またはタブがあります。|Microsoft Teams|

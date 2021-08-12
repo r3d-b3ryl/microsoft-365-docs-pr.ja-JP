@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 07/12/2021
-ms.openlocfilehash: 1b773549909f376a67e0dc407d35ed4a6152ada8
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.date: 08/04/2021
+ms.openlocfilehash: d90ae4b8281015c675535f483b23e5c027e6918abc57627e8da3440db9b03064
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800092"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -82,6 +82,23 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 - 統合の改善 (クラウド[、Microsoft 365 Defender)。](/microsoft-365/security/defender/microsoft-365-defender)
 <br/>
 <details>
+<summary> 2021 年 7 月 (プラットフォーム: 4.18.2107.4 |エンジン: 1.1.18400.x)</summary>
+
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **x.xxx.xx.x**  
+&ensp;リリース日: **2021 年**  
+&ensp;プラットフォーム: **4.18.2107.4**  
+&ensp;エンジン: **1.1.18400.x**  
+&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**
+    
+### <a name="whats-new"></a>新機能
+- ポータブル デバイスのデバイス制御Windows追加
+- 望ましくない可能性のあるアプリケーション (PUA) 保護は、コンシューマーに対して既定で有効になっています (「望ましくない可能性のあるアプリは既定でブロックされる」[を参照)](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)
+- グループ ポリシー オブジェクト管理システムのスケジュールされたスキャンは、ユーザーが構成したスキャン時間に従います 
+
+### <a name="known-issues"></a>既知の問題
+既知の問題はありません  
+<br/>
+</details><details>
 <summary> 2021 年 6 月 (プラットフォーム: 4.18.2106.5 |エンジン: 1.1.18300.4)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.343.17.0**  
@@ -115,13 +132,18 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
+
+新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。 
+<details>
 <summary> 2021 年 4 月 (プラットフォーム: 4.18.2104.14 |エンジン: 1.1.18100.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.337.2.0**  
 &ensp;リリース: **2021**  年 4 月 26 日 (エンジン: 1.1.18100.6 リリース 2021 年 5 月 5 日) &ensp; プラットフォーム: **4.18.2104.14**  
 &ensp;エンジン: **1.1.18100.5**  
-&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**
+&ensp;サポート フェーズ: **テクニカル アップグレード のサポート (のみ)**
     
 ### <a name="whats-new"></a>新機能
 - その他の動作監視ロジック
@@ -132,12 +154,7 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: 技術アップグレードのサポートのみ
-
-新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートにのみ縮小されます。 このセクションに記載されているバージョンより古いバージョンで、テクニカル アップグレード のサポートにのみ提供されます。 
-<details>
+</details><details>
 <summary> 2021 年 3 月 (プラットフォーム: 4.18.2103.7 |エンジン: 1.1.18000.5)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.335.36.0**  

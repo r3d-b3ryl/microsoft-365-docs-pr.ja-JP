@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 62db58a58aeb400ddd02fa094cb0962e870bd8d9
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9361e791eafad1a3d7243a0d11821c9286c5e3bebf64f878af1e72cda6bfa952
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656297"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829113"
 ---
 # <a name="recommendation-resource-type"></a>おすすめリソースの種類
 
@@ -40,7 +40,7 @@ ms.locfileid: "53656297"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="methods"></a>メソッド
-メソッド |戻り値の型 |説明
+メソッド |戻り値の型 |Description
 :---|:---|:---
 [すべての推奨事項を一覧表示する](get-all-recommendations.md) | おすすめコレクション | 組織に影響を与えるすべてのセキュリティ推奨事項の一覧を取得します。
 [ID による推奨事項の取得](get-recommendation-by-id.md) | 推奨事項 | セキュリティの推奨事項を ID で取得します。
@@ -61,9 +61,9 @@ recommendedVersion | String | 推奨バージョン
 recommendationCategory | String | おすすめカテゴリ。 使用できる値は、"Accounts"、"Application"、"Network"、"OS"、"SecurityStack" です。
 subCategory | String | おすすめサブカテゴリ
 severityScore | Double | 組織の Microsoft Secure Score for Devices に対する構成の潜在的な影響 (1-10)
-publicExploit | ブール型 | パブリックエクスプロイトが利用可能 
-activeAlert | ブール型 | アクティブなアラートは、この推奨事項に関連付けられている
-associatedThreats | 文字列コレクション | 脅威分析レポートは、この推奨事項に関連付けられている
+publicExploit | Boolean | パブリックエクスプロイトが利用可能 
+activeAlert | Boolean | アクティブなアラートは、この推奨事項に関連付けられている
+associatedThreats | String コレクション | 脅威分析レポートは、この推奨事項に関連付けられている
 remediationType | String | 修復の種類。 指定できる値は、"ConfigurationChange"、"Update"、"Upgrade"、"Uninstall" です。
 状態 | 列挙 | 推奨事項の例外の状態。 指定できる値は、"Active" と "Exception" です。
 configScoreImpact | Double | デバイスの Microsoft Secure Score の影響

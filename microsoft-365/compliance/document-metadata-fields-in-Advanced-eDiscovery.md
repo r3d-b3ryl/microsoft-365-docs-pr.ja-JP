@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、レビュー セット内のドキュメントのメタデータ フィールドを、レビュー セット内の Advanced eDiscovery定義Microsoft 365。
-ms.openlocfilehash: 4c9fe8713d1953719f614dfa4b8b85ec64a63eab
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4e5a4e60a5788c93f9ba0407616c4417c47ed46bfe20880d067ffa04a5a42dd1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655493"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842317"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Advanced eDiscovery のドキュメントメタデータフィールド
 
@@ -42,7 +42,7 @@ ms.locfileid: "53655493"
 
 ****
 
-|フィールド名と表示フィールド名|検索可能なフィールド名|エクスポートされたフィールド名|説明|
+|フィールド名と表示フィールド名|検索可能なフィールド名|エクスポートされたフィールド名|Description|
 |---|---|---|---|
 |添付ファイルのコンテンツ ID|AttachmentContentId||アイテムの添付ファイルコンテンツ ID。|
 |弁護士クライアント特権スコア|AttorneyClientPrivilegeScore||弁護士クライアント特権モデルのコンテンツ スコア。|
@@ -172,7 +172,7 @@ ms.locfileid: "53655493"
 |タグ|タグ|タグ|レビュー セットに適用されるタグ。|
 |Teamsチャネル名|TeamsChannel|Channel_Name|チャネルの名前は、Microsoft Teams。|
 |テーマリスト|ThemesList|Themes_list|分析用に計算されたテーマの一覧。|
-|Title|Title|Doc_title|ドキュメント メタデータのタイトル。 ドキュメント メタデータのタイトル。 コンテンツTeamsおよびYammer、これは ConversationName プロパティの値です。|
+|タイトル|タイトル|Doc_title|ドキュメント メタデータのタイトル。 ドキュメント メタデータのタイトル。 コンテンツTeamsおよびYammer、これは ConversationName プロパティの値です。|
 |宛先|宛先|Email_to|メッセージの種類をフィールドに指定します。 Format is **DisplayName \<SmtpAddress>**|
 |メール セットで一意|UniqueInEmailSet||**メール** セットに添付ファイルが重複している場合は False。|
 |バージョン グループ ID||Version_Group_Id|同じドキュメントの異なるバージョンをグループ分けします。|

@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: ファイルをそれぞれの関連度でスコアリングして分析結果を生成するには、Advanced eDiscovery で関連度トレーニングを設定するための推奨事項を参照してください。
-ms.openlocfilehash: 8ba09babc91f233514cd0195c3e1da08b07ccb3c
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 9a6dd5cee08ea795d8f7b2381145d2b7303ae2fb61dde395974dfc7aa6f00cdf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760211"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842173"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Advanced eDiscovery (クラシック) で関連度の設定を管理する
 

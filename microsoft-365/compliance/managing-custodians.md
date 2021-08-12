@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: カストディアン管理ツールを使用して、Advanced eDiscoveryケースのデータを管理する方法について説明します。
-ms.openlocfilehash: 22297edbf73f561ad46e5fae521abeb371fdc88d
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 92102a0748f37b2d6d18ab36baf6d50ef95e699e64c278bf5daf273e6c94b312
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528133"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842151"
 ---
 # <a name="work-with-custodians-and-non-custodial-data-sources-in-advanced-ediscovery"></a>管理担当者と管理されていないデータ ソースを管理Advanced eDiscovery
 
