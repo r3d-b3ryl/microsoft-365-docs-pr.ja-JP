@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2b9914c67ba9e98d68e053b8c3613c7d883f82a5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 165130eeb5cfa8616c2256eb390ac669b466500c
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649637"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567698"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Defender for Endpoint で高度な機能を構成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "53649637"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 使用する Microsoft セキュリティ製品によっては、Defender for Endpoint を統合できる高度な機能がいくつか用意されている場合があります。
 
@@ -230,8 +230,8 @@ Intune 統合を有効にした場合、Intune は従来の条件付きアクセ
 > [!NOTE]
 > Intune によって作成される従来の CA ポリシー[](/azure/active-directory/conditional-access/overview/)は、エンドポイントの構成に使用される最新の条件付きアクセス ポリシーとは異なります。
 
-## <a name="device-discovery"></a>デバイス検出
 
+## <a name="device-discovery"></a>デバイス検出
 追加のアプライアンスや面倒なプロセス変更を必要とせずに、企業ネットワークに接続されている管理されていないデバイスを見つけるのに役立ちます。 オンボード デバイスを使用すると、ネットワーク内の管理されていないデバイスを見つけて、脆弱性とリスクを評価できます。 詳細については、「デバイスの検出 [」を参照してください](device-discovery.md)。
 
 > [!NOTE]
@@ -243,11 +243,7 @@ Defender for Endpoint プレビュー リリースの新機能について説明
 
 今後の機能にアクセスできます。これは、機能が一般に利用可能になる前に全体的なエクスペリエンスを向上させるためにフィードバックを提供できます。
 
-## <a name="download-quarantined-files"></a>検疫済みファイルのダウンロード
-
-検疫済みファイルを安全で準拠した場所にバックアップし、検疫から直接ダウンロードできます。 [ **ファイルのダウンロード]** ボタンは常にファイル ページで使用できます。 この設定は既定でオンになっています。 [要件の詳細](respond-file-alerts.md#download-quarantined-files)
-
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [データ保持設定の更新](data-retention-settings.md)
 - [アラート通知を構成する](configure-email-notifications.md)

@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきではないメッセージを識別する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b74ff33fe2ed2581e033511b6ee8069696439a58
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 88235051a50197be56f20dcce22e868ce6bf4b3e
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591177"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726202"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -30,9 +30,6 @@ ms.locfileid: "53591177"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
-> この記事で説明する機能はプレビューで、すべてのユーザーが利用できるとは言え、変更される可能性があります。
 
 既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアまたは高信頼フィッシングとして識別されるメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 例:
 
@@ -65,7 +62,7 @@ ms.locfileid: "53591177"
 
 - <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 [高度な配信] ページに **直接移動するには** 、を開きます <https://security.microsoft.com/advanceddelivery> 。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+- セキュリティ/コンプライアンス センターの PowerShell に接続するには、「[セキュリティ/コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
 
 - この記事の手順を実行するには、アクセス許可を割り当てる必要があります。
   - 高度な配信ポリシーで構成された設定を作成、変更、または削除するには、Microsoft 365 Defender ポータルのセキュリティ管理者役割グループのメンバーであり **、Exchange Online** の組織の管理役割グループ **のメンバーである必要があります**。
@@ -106,7 +103,13 @@ ms.locfileid: "53591177"
 
 3. 開く **[サード パーティ製フィッシング シミュレーションの編集] フライ** アウトで、次の設定を構成します。 
 
+アドレス (MAIL FROM アドレス、P1 送信者、封筒送信者とも呼ばれる) は、メッセージの SMTP 送信で使用される電子メール `5321.MailFrom` アドレスです。 
+
    - **送信ドメイン**: この設定を展開し、ボックスをクリックして値を入力し、Enter キーを押したり、ボックスの下に表示される値を選択して、少なくとも 1 つの電子メール アドレス ドメイン (contoso.com など) を入力します。 必要な回数だけこの手順を繰り返します。 最大 10 のエントリを追加できます。
+
+     > [!NOTE]
+     > メッセージの SMTP 送信で使用されるアドレス `5321.MailFrom` **(MAIL FROM** アドレス、P1 送信者、封筒送信者とも呼ばれる) のドメインを使用します。 この電子メール アドレスは、通常、メッセージ ヘッダー **の Return-Path** ヘッダー フィールドに記録されます。
+
    - **送信 IP**: この設定を展開し、ボックスをクリックして値を入力し、Enter キーを押するか、ボックスの下に表示される値を選択して、少なくとも 1 つの有効な IPv4 アドレスを入力します。 必要な回数だけこの手順を繰り返します。 最大 10 のエントリを追加できます。 有効な値は次のとおりです。
      - 単一 IP: たとえば、192.168.1.1。
      - IP 範囲: たとえば、192.168.0.1-192.168.0.254 です。
@@ -132,9 +135,9 @@ ms.locfileid: "53591177"
 
 - **レビュー中** の誤検知 : 管理者の申請を通じて Microsoft によって分析中の特定の [](admin-submission.md)メッセージを一時的に許可して、Microsoft に不適切とマークされている既知の良いメッセージ (誤検知) を報告することができます。 すべての上書きと同様に、これらの許容量 **_は_** 一時的なものとすることを強くお勧めします。
 
-## <a name="exchange-online-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Exchange Online高度な配信ポリシーの SecOps メールボックスの PowerShell の手順
+## <a name="security--compliance-center-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>セキュリティ&高度な配信ポリシーの SecOps メールボックスのコンプライアンス センター PowerShell の手順
 
-PowerShell Exchange Online、高度な配信ポリシーの SecOps メールボックスの基本的な要素は次のとおりです。
+セキュリティ コンプライアンス & PowerShell では、高度な配信ポリシーの SecOps メールボックスの基本的な要素は次のとおりです。
 
 - **SecOps オーバーライド ポリシー**: **\* -SecOpsOverridePolicy コマンドレットによって** 制御されます。
 - **SecOps オーバーライド ルール**: **\* -SecOpsOverrideRule** コマンドレットによって制御されます。
@@ -178,7 +181,7 @@ New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo secops@contoso.com
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 ```
 
-**注**: **指定した Name 値に関係なく、ルール名は SecOpsOverrideRule になります。一意の GUID 値 \<GUID\> \<GUID\> (たとえば、6fed4b63-3563-495d-a481-b24a311f8329 など)。
+**注**: 指定した Name 値に関係なく、ルール名は SecOpsOverrideRule になります。これは一意の GUID 値 \<GUID\> です \<GUID\> (たとえば、6fed4b63-3563-495d-a481-b24a311f8329 など)。
 
 構文とパラメーターの詳細については [、「New-SecOpsOverrideRule」を参照してください](/powershell/module/exchange/new-secopsoverriderule)。
 
@@ -262,9 +265,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 構文とパラメーターの詳細については [、「Remove-SecOpsOverrideRule」を参照してください](/powershell/module/exchange/remove-secopsoverriderule)。
 
-## <a name="exchange-online-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Exchange Online高度な配信ポリシーでのサード パーティのフィッシング シミュレーションの PowerShell 手順
+## <a name="security--compliance-center-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>高度&におけるサード パーティのフィッシング シミュレーションに関するコンプライアンス センター PowerShell のセキュリティ手順
 
-PowerShell Exchange Online、高度な配信ポリシーのサード パーティフィッシング シミュレーションの基本的な要素は次のとおりです。
+セキュリティ & コンプライアンス センター PowerShell では、高度な配信ポリシーのサード パーティフィッシング シミュレーションの基本的な要素は次のとおりです。
 
 - **フィッシング シミュレーションの上書きポリシー**: **\* -PhishSimOverridePolicy** コマンドレットによって制御されます。
 - **フィッシング シミュレーションの上書きルール**: **\* -PhishSimOverrideRule** コマンドレットによって制御されます。

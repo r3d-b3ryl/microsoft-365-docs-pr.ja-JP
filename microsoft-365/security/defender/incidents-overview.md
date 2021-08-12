@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b6830c77a0c5cc93ea202844a8793c5f69f07650
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 303391a5ed9368e94fe744cf405e2502af0e6ec6
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028525"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622738"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>インシデントのMicrosoft 365 Defender
 
@@ -54,7 +54,7 @@ Microsoft 365やアプリは、疑わしいイベントや悪意のあるイベ�
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-関連するアラートをインシデントにグループ化すると、攻撃の包括的なビューが得されます。 たとえば、次の情報を表示できます。
+関連するアラートをインシデントにグループ化すると、攻撃の包括的なビューが得されます。 たとえば、次が表示されます。
 
 - 攻撃が開始された場所。
 - どのような戦術が使用されたのか。
@@ -179,7 +179,7 @@ Microsoft 製品全体の SecOps の詳細については、次のリソース�
 - [ベスト プラクティス](/security/compass/security-operations)
 - [ビデオとスライド](/security/compass/security-operations-videos-and-decks)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 **セキュリティ分析とインシデント** 対応に関する情報が必要な場合は、次の情報を参照してください。
 
@@ -194,6 +194,8 @@ Microsoft 製品全体の SecOps の詳細については、次のリソース�
   - [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。
 
   - インシデント [の調査](investigate-incidents.md) を実行します。
+
+- セキュリティ 運用センター [(SOC) にMicrosoft 365 Defenderを統合する方法を参照してください](integrate-microsoft-365-defender-secops.md)。
 
 - フィッシング攻撃 [、パスワード スプレー攻撃](/security/compass/incident-response-playbooks) 、アプリ同意許可攻撃の詳細なガイダンスについては、次のインシデント対応プレイブックを参照してください。
 

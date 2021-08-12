@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/29/2021
+ms.date: 07/20/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 9106ee8a89ca0a42fc3a010fb790816ff9871b52
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 822d0cb12aa42d62fde3df1ec3632e400019d2e1
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664119"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591225"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードでのエンドポイントEDR応答 (EDR)
 
@@ -35,7 +35,7 @@ ms.locfileid: "53664119"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>ブロック モードEDR機能とは
 
@@ -84,7 +84,7 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理。](
 
 | 要件  | 詳細  |
 |---------|---------|
-| アクセス許可 | [グローバル管理者] または [セキュリティ管理者] ロールが [管理者] に割り当てられている必要[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 詳細については、「基本アクセス許可 [」を参照してください](basic-permissions.md)。 |
+| アクセス許可 | [グローバル管理者] または [セキュリティ管理者] ロールが [管理者] に割り当てられている[必要Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 詳細については、「基本アクセス許可 [」を参照してください](basic-permissions.md)。 |
 | オペレーティング システム     | デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows。 <br/>- Windows 10 (すべてのリリース) <br/>- Windows Server バージョン 1803 以降 <br/>- Windows Server 2019 <br/>- Windows Server 2016 (Microsoft Defender ウイルス対策モードの場合のみ)     |
 | Microsoft Defender for Endpoint     | デバイスは Defender for Endpoint にオンボードされている必要があります。 「 [エンドポイント用 Microsoft Defender の最小要件」を参照してください](minimum-requirements.md)。       |
 | Microsoft Defender ウイルス対策  | デバイスには、アクティブ Microsoft Defender ウイルス対策パッシブ モードでインストールおよび実行されている必要があります。 [アクティブMicrosoft Defender ウイルス対策パッシブ モードの状態を確認します](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。 |

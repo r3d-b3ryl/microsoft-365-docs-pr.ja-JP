@@ -2,8 +2,8 @@
 title: アプリを表示する
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリを表示します。
-ms.openlocfilehash: 5a11e161fb7b37405b61866599a616874ad4a190
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 448ca4cd7fab13ce25c3bcc18c350d227461ee45
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623028"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541107"
 ---
 # <a name="view-your-apps"></a>アプリを表示する
 
@@ -32,7 +32,7 @@ Microsoft アプリ ガバナンスを使用すると、テナント内の Micro
 
 ## <a name="getting-a-list-of-all-the-apps-in-your-tenant"></a>テナント内のすべてのアプリのリストを取得する
 
-テナント内のアプリの概要については、**[Microsoft 365 コンプライアンス センター] > [アプリ ガバナンス] > [アプリ]** にアクセスします。
+テナント内のアプリの概要については、**[Microsoft 365 コンプライアンス センター] > [アプリの保護とガバナンス] > [アプリ]** にアクセスします。
 
 ![Microsoft 365 コンプライアンス センターの MAPG アプリの概要ページ](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
@@ -74,12 +74,12 @@ Microsoft アプリ ガバナンスを使用すると、テナント内の Micro
 | タブ名 | 説明 |
 |:-------|:-----|
 | 詳細 | 最初に同意した日付やアプリ ID など、アプリに関する追加データを表示します。 Azure AD に登録されているアプリのプロパティを表示するには、**[Azure AD のアプリを表示]** を選択します。 |
-| 使用法 |テナント内のアプリがアクセスするデータを確認し、SharePoint および Exchange リソースのデータ使用量をプロットします。 |
+| 使用法 | テナント内のアプリがアクセスするデータを確認し、データ使用量をプロットして、上位 \<x> ユーザーと[優先アカウント](/microsoft-365/admin/setup/priority-accounts)を持つユーザーによる使用状況を表示します。 |
 | ユーザー | アプリを使用しているユーザーのリスト、ユーザーが優先アカウントであるかどうか、ダウンロードおよびアップロードされたデータの量を表示します。 |
 | アクセス許可 | アプリに付与されて使用されるアクセス許可の概要と、特定のアクセス許可のリストを表示します。 詳細については、「[Microsoft Graph のアクセス許可リファレンス](/graph/permissions-reference)」を参照してください。 |
 |||
 
-有効なアプリの場合、選択したアプリの使用を無効にする **[アプリの無効化]** コントロールと、無効にしたアプリの使用を有効にする **[アプリの有効化]** コントロールがあります。これらのアクションには、次の管理者の役割が必要です。
+有効なアプリの場合、選択したアプリの使用を無効にする **[アプリの無効化]** コントロールと、無効にしたアプリの使用を有効にする **[アプリの有効化]** コントロールがあります。 これらのアクションには、次の管理者の役割が必要です。
 
 - コンプライアンス管理者
 - グローバル管理者

@@ -18,14 +18,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 潜在的な脅威、データ損失、およびアクセス許可の問題Microsoft 365 コンプライアンス センター監視するために、Microsoft 365 コンプライアンス センターまたは Microsoft 365 Defender ポータルにアラート ポリシーを作成します。
-ms.openlocfilehash: 531ce27d8335216f76b5ff1516ecc8263f24bb51
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: a6a1f9dfeec6e59f51a4ad0dba364610341e6e5b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567394"
+ms.locfileid: "53541840"
 ---
-# <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
+# <a name="alert-policies-in-the-microsoft-365"></a>[アラート ポリシー] Microsoft 365
 
 Microsoft 365 コンプライアンス センター または Microsoft 365 Defender ポータルのアラート ポリシーとアラート ダッシュボード ツールを使用して、アラート ポリシーを作成し、ユーザーがアラート ポリシーの条件に一致するアクティビティを実行するときに生成されるアラートを表示できます。 Exchange Online での管理者特権の割り当て、マルウェア攻撃、フィッシング キャンペーン、ファイルの削除や外部共有の異常なレベルなど、アクティビティを監視するのに役立つ既定のアラート ポリシーがいくつかあります。
 

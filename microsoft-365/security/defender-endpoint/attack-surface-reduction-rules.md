@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: b79fc88c7e69b27c6af47065ef02ada98fad4821
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: eeda30297133c9bfd2d030f602cb76fdf1c39ba9
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664059"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591285"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 
@@ -36,7 +36,7 @@ ms.locfileid: "53664059"
 
 ## <a name="supported-operating-systems"></a>サポートされているオペレーティング システム 
 
-次の表に、攻撃表面の縮小ルールをアルファベット順に示します。 チェック マークは、ルールが、その列に一覧表示されているオペレーティング システムでサポートされている状態を示します。
+この表で参照されているオペレーティング システムのバージョンに関する情報へのリンクは、次の表の下に示します。
 
 > [!Note]
 >
@@ -63,6 +63,18 @@ ms.locfileid: "53664059"
 |[Win32 API 呼び出しをブロックOfficeマクロ](#block-win32-api-calls-from-office-macros) | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
 |[ランサムウェアに対する高度な保護の使用](#use-advanced-protection-against-ransomware) | ![サポート対象](images/checkmark.png) <br><br> バージョン 1803 以降 | ![サポートされる](images/checkmark.png) <br><br> | ![サポートされる](images/checkmark.png) <br><br> |  |  |
 | **ルール名** |  **&nbsp;Windows10** | **&nbsp;WindowsServer 2019** | **&nbsp;Windowsサーバー** | **&nbsp;WindowsServer 2016** | **&nbsp;WindowsServer 2012 R2** |
+
+### <a name="operating-system-version"></a>オペレーティング システムのバージョン
+
+- [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows 10 Proバージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows 10 Enterpriseバージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows 10バージョン 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows 10 Version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
+
+- [WindowsServer バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803)
+- [Windowsサーバー、バージョン 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="supported-configuration-management-systems"></a>サポートされている構成管理システム
 
@@ -135,7 +147,7 @@ Intune 名: `Office apps launching child processes`
 
 Configuration Manager 名: `Block Office application from creating child processes`
 
-GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
+GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする
 
@@ -163,7 +175,7 @@ Intune 名: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropp
 
 Microsoft エンドポイント マネージャー名:`Block executable content from email client and webmail`
 
-GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
+GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 > [!NOTE]
 > [メール **クライアントと Web メールからの** 実行可能なコンテンツをブロックする] というルールには、使用するアプリケーションに応じて、次の別の説明があります。
@@ -205,7 +217,7 @@ Intune 名: `Obfuscated js/vbs/ps/macro code`
 
 Configuration Manager 名: `Block execution of potentially obfuscated scripts`
 
-GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
+GUID: `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする
 
@@ -217,7 +229,7 @@ Intune 名: `js/vbs executing payload downloaded from Internet (no exceptions)`
 
 Configuration Manager 名: `Block JavaScript or VBScript from launching downloaded executable content`
 
-GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
+GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>実行可能Office作成するアプリケーションのブロック
 
@@ -229,7 +241,7 @@ Intune 名: `Office apps/macros creating executable content`
 
 SCCM 名: `Block Office applications from creating executable content`
 
-GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
+GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>アプリケーションOffice他のプロセスへのコードの挿入をブロックする
 
@@ -245,7 +257,7 @@ Intune 名: `Office apps injecting code into other processes (no exceptions)`
 
 Configuration Manager 名: `Block Office applications from injecting code into other processes`
 
-GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
+GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>通信Officeプロセスの作成をブロックする
 
@@ -317,7 +329,7 @@ Intune 名: `Win32 imports from Office macro code`
 
 Configuration Manager 名: `Block Win32 API calls from Office macros`
 
-GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
+GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 
 ### <a name="use-advanced-protection-against-ransomware"></a>ランサムウェアに対する高度な保護の使用
 

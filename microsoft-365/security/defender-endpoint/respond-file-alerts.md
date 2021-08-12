@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 813a6e425801bbcad24255839e9f6250aaefa87599f51a45d1adecb29efc9245
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 57494202a401edd920ac43defc40f6bebcde778a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793127"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541687"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 
@@ -33,7 +33,7 @@ ms.locfileid: "53793127"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-responddile-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
 検出された攻撃に迅速に対応するには、ファイルを停止および検出するか、ファイルをブロックします。 ファイルに対してアクションを実行した後、アクション センターでアクティビティの詳細を確認できます。
 
@@ -51,17 +51,12 @@ ms.locfileid: "53793127"
 
 一部のアクションでは、特定のアクセス許可が必要です。 次の表では、ポータブル実行可能ファイル (PE) および非 PE ファイルに対して特定のアクセス許可が実行できるアクションについて説明します。
 
-<br>
-
-****
-
-|アクセス許可|PE ファイル|PE 以外のファイル|
-|:---------------------|:------:|:----------:|
-|データを表示|X|X|
-|アラートの調査|&#x2611;|X|
-|ライブ応答の基本|X|X|
-|ライブ応答の詳細設定|&#x2611;|&#x2611;|
-|
+| アクセス許可             | PE ファイル | PE 以外のファイル |
+| :--------------------- | :------: | :----------: |
+| データを表示              |     X    |       ○      |
+| アラートの調査   | &#x2611; |       ○      |
+| ライブ応答の基本    |     X    |       ○      |
+| ライブ応答の詳細設定 | &#x2611; |   &#x2611;   |
 
 役割の詳細については、「役割ベースのアクセス制御の役割の作成と管理 [」を参照してください](user-roles.md)。
 
@@ -102,7 +97,7 @@ ms.locfileid: "53793127"
    ![停止ファイルと検疫ファイルのモーダル ウィンドウのイメージ](images/atp-stop-quarantine.png)
 
    アクション センターには、申請情報が表示されます。
-
+   
    ![ファイルの停止と検疫のアクション センターのイメージ](images/atp-stopnquarantine-file.png)
 
    - **申請時間** - アクションが送信された時刻を示します。
@@ -112,8 +107,7 @@ ms.locfileid: "53793127"
 
 4. アクションの詳細を表示するには、状態インジケーターを選択します。 たとえば、[失敗] **を選択して** 、アクションが失敗した場所を確認します。
 
-#### <a name="notification-on-device-user"></a>デバイス ユーザーの通知
-
+**デバイス ユーザーの通知**:</br>
 ファイルがデバイスから削除されると、次の通知が表示されます。
 
 ![デバイス ユーザーの通知のイメージ](images/atp-notification-file.png)
@@ -130,12 +124,12 @@ ms.locfileid: "53793127"
 
    1. **[スタート]** をクリックし、「_cmd_」と入力します。
 
-   1. **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
+   1. [コマンド プロンプト] を **右クリックし、[** 管理者として **実行] を選択します**。
 
 2. 次のコマンドを入力し、Enter キーを **押します**。
 
-   ```dos
-   "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
+   ```console
+   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
    > [!NOTE]
@@ -150,31 +144,9 @@ ms.locfileid: "53793127"
 
 応答アクション **から [ファイル** のダウンロード] を選択すると、ファイルを含むローカルのパスワードで保護された.zipをダウンロードできます。 ファイルをダウンロードする理由を記録し、パスワードを設定できるフライアウトが表示されます。
 
-既定では、検疫中のファイルをダウンロードできる必要があります。
+既定では、検疫中のファイルをダウンロードできない。
 
 ![ダウンロード ファイルアクションのイメージ](images/atp-download-file-action.png)
-
-### <a name="download-quarantined-files"></a>検疫済みファイルのダウンロード
-
-ユーザーまたはセキュリティ チームMicrosoft Defender ウイルス対策検疫されたファイルは、サンプル申請の構成に従って準拠[した方法で保存されます](enable-cloud-protection-microsoft-defender-antivirus.md)。 セキュリティ チームは、[ファイルのダウンロード] ボタンを使用してファイルの詳細ページから直接ファイルをダウンロードできます。 **このプレビュー機能は既定で 'On' になっています**。
-
-場所は、組織の地域設定 (EU、英国、または米国) によって異なります。 検疫済みファイルは、組織ごとに 1 回のみ収集されます。 サービス信頼ポータルからの Microsoft のデータ保護の詳細については、 を参照してください https://aka.ms/STP 。
-
-この設定を有効にすると、セキュリティ チームが潜在的に悪いファイルを調べ、インシデントを迅速かつリスクの低い方法で調査するのに役立ちます。 ただし、この設定をオフにする必要がある場合は、[エンドポイントの詳細設定] 設定[検疫済みファイルのダウンロード] に移動して設定  >    >    >  を調整します。 [高度な機能の詳細](advanced-features.md)
-
-#### <a name="backing-up-quarantined-files"></a>検疫済みファイルのバックアップ
-
-ユーザーは、サンプル申請の構成に応じて、検疫済みファイルをバックアップする前に明示的な同意 [を求めるメッセージが表示される場合があります](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection)。
-
-この機能は、サンプル申請がオフになっている場合は機能しません。 自動サンプル申請がユーザーからのアクセス許可を要求するために設定されている場合、ユーザーが送信に同意したサンプルだけが収集されます。
-
->[!IMPORTANT]
->検疫済みファイルの要件をダウンロードします。
->- 組織がアクティブ モードMicrosoft Defender ウイルス対策を使用する 
->- ウイルス対策エンジンのバージョンは 1.1.17300.4 以降です。 「 [月次プラットフォームとエンジンのバージョン」を参照してください。](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
->- クラウドベースの保護が有効になっています。 「 [クラウドによる保護を有効にする」を参照してください。](enable-cloud-protection-microsoft-defender-antivirus.md)
->- サンプル提出が有効になっている
->- デバイスのバージョンWindows 10 1703 以降、またはサーバー 2016 または 2019 Windowsインストールされている
 
 ### <a name="collect-files"></a>ファイルの収集
 
@@ -188,7 +160,7 @@ ms.locfileid: "53793127"
 
 > [!IMPORTANT]
 >
-> - この機能は、組織でクラウド配信Microsoft Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウド配信保護 [の管理」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+> - この機能は、組織でクラウド配信Microsoft Defender ウイルス対策が有効になっている場合に使用できます。 詳細については、「クラウド提供の [保護を管理する」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 >
 > - マルウェア対策クライアントのバージョンは、4.18.1901.x 以降である必要があります。
 > - この機能は、疑わしいマルウェア (または悪意のある可能性のあるファイル) が Web からダウンロードされるのを防ぐために設計されています。 現在、ポータブル実行可能ファイル (PE) ファイルがサポートされています 。このファイルには、.exe _ファイル.dll__があります。_ 対象範囲は時間の長い期間延長されます。
@@ -203,7 +175,6 @@ ms.locfileid: "53793127"
 ### <a name="enable-the-block-file-feature"></a>ブロック ファイル機能を有効にする
 
 ファイルのブロックを開始するには、最初に[](advanced-features.md)ブロックまたは許可機能を有効にする必要設定。
-
 ### <a name="allow-or-block-file"></a>ファイルを許可またはブロックする
 
 ファイルのインジケーター ハッシュを追加すると、組織内のデバイスがファイルの実行を試みるたびに、アラートを発生してファイルをブロックできます。
@@ -248,11 +219,10 @@ ms.locfileid: "53793127"
 
 詳細な分析の結果は脅威インテリジェンスと一致し、一致すると適切なアラートが生成されます。
 
-ディープ分析機能を使用して、通常、アラートの調査中、または悪意のある動作が疑われるその他の理由で、ファイルの詳細を調査します。 この機能は、ファイルのプロファイル **ページ** の [詳細分析] タブで使用できます。
+ディープ分析機能を使用して、通常、アラートの調査中、または悪意のある動作が疑われるその他の理由で、ファイルの詳細を調査します。 この機能は、ファイルのプロファイル **ページ** の [詳細分析] タブで使用できます。<br/>
+<br/>
 
-<br/><br/>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0]
 
 **詳細分析用** の送信は、Defender for Endpoint バックエンド サンプル コレクションでファイルが使用できる場合、またはディープ分析への送信をサポートする Windows 10 デバイスでファイルが観察された場合に有効になります。
 
@@ -282,7 +252,7 @@ ms.locfileid: "53793127"
    進行状況バーが表示され、分析の異なるステージに関する情報が提供されます。 分析が完了したら、レポートを表示できます。
 
 > [!NOTE]
-> デバイスの可用性に応じて、サンプルの収集時間は異なる場合があります。 サンプル コレクションには 3 時間のタイムアウトがあります。 コレクションは失敗し、その時点でデバイスレポートにオンライン のWindows 10操作が中止されます。 詳細な分析のためにファイルを再送信して、ファイルに新しいデータを取得できます。
+> デバイスの可用性に応じて、サンプルの収集時間は異なる場合があります。 サンプル コレクションには 3 時間のタイムアウトがあります。 コレクションは失敗し、その時点でデバイスレポートにオンライン のWindows 10操作が中止されます。 ファイルを再送信して詳細な分析を行い、ファイルの新しいデータを取得できます。
 
 ### <a name="view-deep-analysis-reports"></a>詳細な分析レポートの表示
 
@@ -312,18 +282,18 @@ ms.locfileid: "53793127"
 
 4. サンプル コレクション ポリシーが構成されていない場合、既定の動作はサンプル コレクションを許可します。 構成されている場合は、ファイルを再度送信する前に、ポリシー設定でサンプル コレクションが許可されていることを確認します。 サンプル コレクションが構成されている場合は、次のレジストリ値を確認します。
 
-    ```text
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
     Hexadecimal value :
-      Value = 0 - block sample collection
-      Value = 1 - allow sample collection
+      Value = 0 – block sample collection
+      Value = 1 – allow sample collection
     ```
 
-5. グループ ポリシーを使用して組織単位を変更します。 詳細については、「グループ ポリシーで [構成する」を参照してください](configure-endpoints-gp.md)。
+1. グループ ポリシーを使用して組織単位を変更します。 詳細については、「グループ ポリシーで [構成する」を参照してください](configure-endpoints-gp.md)。
 
-6. これらの手順で問題が解決しない場合は、 [次の](mailto:winatp@microsoft.com)winatp@microsoft.com。
+1. これらの手順で問題が解決しない場合は、 [次の](mailto:winatp@microsoft.com)winatp@microsoft.com。
 
 ## <a name="related-topics"></a>関連トピック
 

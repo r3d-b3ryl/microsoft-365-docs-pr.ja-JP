@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d3d4e13c5884edc562e1a791c2435148320cf485
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: b9311844bbe7bffa0d22d064f4a285af755d0432
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622870"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726190"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS のエンドポイント用 Microsoft Defender の基本設定を設定する
 
@@ -70,7 +70,7 @@ ms.locfileid: "53622870"
 |:---|:---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**キー**|enableRealTimeProtection|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 
 #### <a name="enable--disable-passive-mode"></a>パッシブ モードを有効/無効にする
@@ -87,7 +87,7 @@ ms.locfileid: "53622870"
 |:---|:---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**キー**|passiveMode|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|Microsoft Defender for Endpoint version 100.67.60 以上で使用できます。|
 
@@ -167,7 +167,7 @@ path プロパティが *ファイル* またはディレクトリを参照し�
 |:---|:---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**キー**|isDirectory|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|適用 *できるのは、$type**が excludedPath である場合のみです。*|
 
@@ -309,7 +309,7 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 |:---|:---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**キー**|enabled|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 
 #### <a name="diagnostic-collection-level"></a>診断コレクション レベル
@@ -331,7 +331,7 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 |:---|:---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**キー**|automaticSampleSubmission|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>セキュリティ インテリジェンスの自動更新を有効または無効にする
@@ -341,7 +341,7 @@ macOS 上の Microsoft Defender for Endpoint のクラウド駆動型保護機�
 |Section|値|
 |:---|:---|
 |**キー**|automaticDefinitionUpdateEnabled|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|true (既定) <p> false|
 
 ### <a name="user-interface-preferences"></a>ユーザー インターフェイスの基本設定
@@ -363,7 +363,7 @@ macOS 上の Microsoft Defender for Endpoint のユーザー インターフェ�
 |:---|:---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**キー**|hideStatusMenuIcon|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
 
 #### <a name="show--hide-option-to-send-feedback"></a>フィードバックを送信するオプションを表示/非表示にする
@@ -581,6 +581,8 @@ tag の値を指定します。
         <true/>
         <key>passiveMode</key>
         <false/>
+        <key>maximumOnDemandScanThreads</key>
+        <integer>1</integer>
         <key>exclusions</key>
         <array>
             <dict>
@@ -731,6 +733,8 @@ tag の値を指定します。
                     <true/>
                     <key>passiveMode</key>
                     <false/>
+                    <key>maximumOnDemandScanThreads</key>
+                    <integer>1</integer>
                     <key>exclusions</key>
                     <array>
                         <dict>
@@ -870,7 +874,7 @@ JAMF コンソールで、[**コンピューター** 構成プロファイル] �
 
 5. 構成プロファイルを開き、ファイルを `com.microsoft.wdav.xml` アップロードします。 (このファイルは手順 3 で作成されました。
 
-6. **[OK]** を選択します。
+6. **[OK]** をクリックします。
 
 7. [割 **り当**  >  **ての管理] を選択します**。 [含める **] タブ** で、[すべてのユーザーに割り当てる] & **を選択します**。
 

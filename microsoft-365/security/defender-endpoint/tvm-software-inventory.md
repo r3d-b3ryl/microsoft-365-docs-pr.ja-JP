@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c35ce53c28beb83232edb5c1cb805b6f6e51ce1c92f10e21ecb0d6b655e76c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b2d4817849d3008c231015b805b13b0a1abdb4af
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792993"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567658"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>ソフトウェア インベントリ - 脅威と脆弱性の管理
 
@@ -34,9 +34,9 @@ ms.locfileid: "53792993"
 - [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-ソフトウェア インベントリは、脅威と脆弱性の管理共通プラットフォーム列挙[(CPE)](https://nvd.nist.gov/products/cpe)を使用して組織内の既知のソフトウェアの一覧です。 公式 CPE のないソフトウェア製品には、脆弱性が公開されません。 また、ベンダーの名前、弱点の数、脅威、公開されているデバイスの数などの詳細も含まれています。
+ソフトウェア インベントリは、脅威と脆弱性の管理共通プラットフォーム列挙[(CPE)](https://nvd.nist.gov/products/cpe)を使用して組織内の既知のソフトウェアの一覧です。 公式 CPEのないソフトウェア製品では、脆弱性が公開されません。 また、ベンダーの名前、弱点の数、脅威、公開されているデバイスの数などの詳細も含まれています。
 
 ## <a name="how-it-works"></a>メカニズム
 
@@ -107,11 +107,12 @@ CPE を持つソフトウェアは、このデバイス固有のソフトウェ�
 - ベンダー情報を含むサイド パネル、組織内のソフトウェアの普及率 (インストールされているデバイスの数、パッチが適用されていない公開されたデバイスを含む)、利用可能かどうかと悪用の可否、および露出スコアへの影響。
 - 脆弱性と構成ミスの数と重大度を示すデータの視覚化。 また、公開されているデバイスの数を示すグラフも表示されます。
 - 次のような情報を示すタブ。
-  - 特定された弱点と脆弱性に対する対応するセキュリティ推奨事項。
-  - 検出された脆弱性の名前付き CVEs。
-  - ソフトウェアがインストールされているデバイス (デバイス名、ドメイン、OS などと共に)。
-  - ソフトウェア のバージョン 一覧 (バージョンがインストールされているデバイスの数、検出された脆弱性の数、インストールされているデバイスの名前を含む)。
+    - 特定された弱点と脆弱性に対する対応するセキュリティ推奨事項。
+    - 検出された脆弱性の名前付き CVEs。
+    - ソフトウェアがインストールされているデバイス (デバイス名、ドメイン、OS などと共に)。
+    - ソフトウェア のバージョン 一覧 (バージョンがインストールされているデバイスの数、検出された脆弱性の数、インストールされているデバイスの名前を含む)。
 
+    ![ソフトウェアの詳細、Visual Studio、公開されているデバイスなど、2017 年のソフトウェアサンプル ページ。](images/tvm-software-page-example.png)
     :::image type="content" alt-text="ソフトウェアの詳細、Visual Studio、公開されているデバイスなど、2017 年のソフトウェアサンプル ページ。" source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
 ## <a name="report-inaccuracy"></a>レポートの不正確さ

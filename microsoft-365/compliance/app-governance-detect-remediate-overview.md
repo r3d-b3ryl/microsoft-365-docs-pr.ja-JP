@@ -2,8 +2,8 @@
 title: アプリの脅威の検出と修復に関する詳細情報
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリの脅威の検出と修復について説明します。
-ms.openlocfilehash: 70f39ac3506ff6962ab028009cab54dfb83cd47b
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 89db65cc8115a20bac0e8790d511c036127d6921
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624226"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541219"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>アプリの脅威の検出と修復に関する詳細情報
 

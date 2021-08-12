@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Blackboard learn ultra Microsoft Teamsクラスを使用する
-ms.openlocfilehash: a97d5bf56e1e045ccb0ef7cc66ecef7dfba4041a
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: fc2bb1fa222dd47917d14c5c055c8f52fcbe7390
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454640"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726214"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Blackboard learn ultra Microsoft Teamsクラスを使用する
 
@@ -46,7 +46,7 @@ ms.locfileid: "53454640"
  2 つの電子メール アドレスが異なる場合は、次のいずれかを実行します。
 
 - どのソースが優先順位を持ち、人物と教育機関の両方の電子メールとして受け取られるかについて決定する必要があります。
-  または、
+  または
 - インスティテューションは、インスティテューションメールでユーザー設定フィールドマッピングを設定できます。これは潜在的な競合を解決できます。
 
 教育機関 **のメール フィールド** マッピングは、Advanced Configuration 設定 ユーザーがオブジェクト型フィールド マッピングを学習するで、**既存のすべての** SIS 統合タイプ  >    >  **で使用できます**。
@@ -178,5 +178,3 @@ Blackboard Learn Ultra にアクセスするためのアクセス許可を付与
    - 同意が承認されていない場合は、説明されている手順に従って、同意の URL を生成し、承認のためにグローバル管理者Microsoft 365に送信します。
 
 5. 承認の確認が完了したら、[再試行] を選択 **して** 確認し、[送信] を **選択します**。
-
-   ![アクセスがブロックされたかどうかを示すダイアログ](media/blocked-access.png)
