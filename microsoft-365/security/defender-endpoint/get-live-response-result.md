@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8fde75f8f7b65f9d74362a40b881b335129e4bee
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3240b0c56b94c365f070935542ae100a94c0375847fa097cb29dc9886b210b79
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829353"
 ---
 #  <a name="get-live-response-results"></a>ライブ応答の結果を取得する
 
@@ -50,6 +50,25 @@ ms.locfileid: "53652193"
 ## <a name="limitations"></a>制限事項
 
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+
+## <a name="minimum-requirements"></a>最小要件
+
+デバイスでセッションを開始する前に、次の要件を満たしていることを確認してください。
+
+- **サポートされているバージョンのファイルを** 実行Windows。
+
+  デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows
+
+  - **Windows 10**
+    - [バージョン 1909](/windows/whats-new/whats-new-windows-10-version-1909) 以降
+    - [バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903) [(KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)のバージョン[1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809)
+    - [バージョン 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [バージョン 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+
+  - **WindowsServer 2019 - パブリック プレビューにのみ適用**
+    - バージョン 1903 以降 [(KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)を使用)
+    - バージョン 1809 [(KB4537818 付](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)き)
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -127,7 +146,7 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [コンピューター アクション API の取得](get-machineaction-object.md)
 - [マシン アクションのキャンセル](cancel-machine-action.md)

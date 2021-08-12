@@ -15,12 +15,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 0470f4f03ba5fd6fc768a1e652f51b8c44207107
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 894f2da81365b176afd7789635a4c9830c6d8ab681478df91e5aedd3a6579cc0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925557"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794392"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>プロセスによって開いたファイルの除外を構成する
 
@@ -182,7 +182,7 @@ $WDAVprefs.ExclusionProcess
 
 PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [カスタム スキャンで除外を構成Microsoft Defender ウイルス対策する](configure-exclusions-microsoft-defender-antivirus.md)
 - [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成および検証する](configure-extension-file-exclusions-microsoft-defender-antivirus.md)

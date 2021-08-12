@@ -9,18 +9,18 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 69d55ba27573abe29cbb2570693247e04740ca76
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 041f493e81a38b09fd064eaac866af74913e0b5c9986dd6e752eec80ba86a9e8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794620"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの管理者サポート
 
 サポート チケットまたはフィードバック要求を Microsoft に送信するには、管理者ポータルMicrosoft マネージド デスクトップ使用します。 サポート要求は、フィードバックの送信よりも常に優先されます。 サポート要求は、重大度定義テーブルに示されている重大度に従ってトリアージされ [、管理されます](#sev)。 フィードバックが確認され、要求された場合に応答が提供されます。
 
-## <a name="open-a-new-support-request"></a>新しいサポート要求を開く
+## <a name="open-a-new-support-request"></a>新しいサポート リクエストを開く
 
 1. サインイン [して[テナント](https://endpoint.microsoft.com/)Microsoft エンドポイント マネージャー]メニュー **に移動** します。
 2. [サービス要求] セクションMicrosoft マネージド デスクトップし、[サービス要求]**を選択します**。

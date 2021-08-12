@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: セキュリティ、プライバシー、コンプライアンスの実践に役立つ Microsoft Service Trust Portal にアクセスして使用する方法について説明します。
-ms.openlocfilehash: a3a46884a41be31779b82a74bc2b6750dea697c5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 38a5295d225df1ec04fba756b0e88639ab5c3dad7a67e8597456ca318f004d09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197764"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814088"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft Service Trust Portal の使用を開始する
 
@@ -69,7 +69,7 @@ Service Trust Portal の機能およびコンテンツはメイン メニュー�
 ### <a name="compliance-manager"></a>コンプライアンス マネージャー
 
 > [!IMPORTANT]
-> コンプライアンス マネージャーは、サービス信頼ポータルからコンプライアンス センター内の新しい[Microsoft 365に移動しました](https://compliance.microsoft.com/)。 すべての顧客データが新しい場所に移動されたので、コンプライアンス マネージャーを中断することなく使用できます。 セットアップ情報と [新機能については、](compliance-manager.md) コンプライアンス マネージャーのドキュメントを参照してください。 従来のバージョンのコンプライアンス マネージャーはサービス信頼ポータルに残りますが、すべてのユーザーはコンプライアンス センターでコンプライアンス マネージャー Microsoft 365勧めされます。
+> コンプライアンス マネージャーは、サービス信頼ポータルから新しい場所に移動[Microsoft 365 コンプライアンス センター。](https://compliance.microsoft.com/) すべての顧客データが新しい場所に移動されたので、コンプライアンス マネージャーを中断することなく使用できます。 セットアップ情報と [新機能については、](compliance-manager.md) コンプライアンス マネージャーのドキュメントを参照してください。 従来のバージョンのコンプライアンス マネージャーはサービス信頼ポータルに残りますが、すべてのユーザーは、コンプライアンス マネージャーを使用して、コンプライアンス マネージャーを使用Microsoft 365 コンプライアンス センター。
 
 ### <a name="trust-documents"></a>トラスト ドキュメント
 

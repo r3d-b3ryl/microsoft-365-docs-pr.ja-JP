@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: トピックを検索する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: 0a29bb4578ead314c362959a4e410665114c7fbb
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c73cfba29aaa95463e75e46b81bcfc464ae9a64782d5fb7a7fc76dd6c9144393
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624346"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794635"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>[Microsoft Searchを使用して、トピックを検索Microsoft Viva トピック
 

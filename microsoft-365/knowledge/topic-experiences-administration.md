@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva Topics でトピック センターの名前を変更する
+title: トピック センターの名前を変更Microsoft Viva トピック
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,21 +9,21 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: トピック センターの名前を変更する方法については、「Microsoft Viva Topics」を参照してください。
-ms.openlocfilehash: 91f0693ba24e412812e1b8db19cfcf0febd2ec66
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+description: トピック センターの名前を変更する方法については、Microsoft Viva トピック。
+ms.openlocfilehash: ba172df38a42ac00267496e2126c9d01058bb45bc925bfa8f75b3e3e98111247
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107725"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794681"
 ---
-# <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Microsoft Viva Topics でトピック センターの名前を変更する
+# <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>トピック センターの名前を変更Microsoft Viva トピック
 
-トピック センターの名前は、管理センターでMicrosoft 365[変更できます](https://admin.microsoft.com)。 これらのタスクを実行するには、グローバル管理者SharePoint管理者である必要があります。
+トピック センターの名前は、次のページで[Microsoft 365 管理センター。](https://admin.microsoft.com) これらのタスクを実行するには、グローバル管理者SharePoint管理者である必要があります。
 
-## <a name="to-access-topics-management-settings"></a>トピックの管理設定にアクセスするには、次の方法を実行します。
+## <a name="to-access-topics-management-settings"></a>トピック管理設定にアクセスするには:
 
-1. 管理センターでMicrosoft 365をクリックし、[組織 **設定]****をクリックします**。
+1. [組織] Microsoft 365 管理センター、[組織の **設定]****の順にクリックします**。
 2. [サービス] **タブで** 、[トピック エクスペリエンス] **をクリックします**。
 
     ![Connectを知る](../media/admin-org-knowledge-options-completed.png) 
@@ -32,7 +32,7 @@ ms.locfileid: "50107725"
 
     ![ナレッジ ネットワーク設定](../media/knowledge-network-settings-topic-center.png) 
 
-##  <a name="update-your-topic-center-name"></a>トピック センター名を更新する
+##  <a name="update-your-topic-center-name"></a>トピック センターの名前を更新する
 
 トピック センターの名前を変更するには
 
@@ -44,8 +44,8 @@ ms.locfileid: "50107725"
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft Viva Topics でトピックの検出を管理する](topic-experiences-discovery.md)
+[トピックの検出を管理Microsoft Viva トピック](topic-experiences-discovery.md)
 
-[Microsoft Viva Topics でのトピックの表示を管理する](topic-experiences-knowledge-rules.md)
+[トピックの表示を管理Microsoft Viva トピック](topic-experiences-knowledge-rules.md)
 
-[Microsoft Viva Topics でトピックのアクセス許可を管理する](topic-experiences-user-permissions.md)
+[トピックのアクセス許可を管理Microsoft Viva トピック](topic-experiences-user-permissions.md)

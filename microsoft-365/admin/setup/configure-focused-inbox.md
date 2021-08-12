@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: すべてのユーザー用のメール設定の構築を担当している場合は、この記事でユーザー用の優先受信トレイの設定方法が確認できます。
-ms.openlocfilehash: 74663342adc3dd29f35d462b2dee7bbbc771f8f0
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: e67bac55102dde5c59b3a09571c426782ec16604abf30307fac72b5534311df0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822284"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>組織内のすべてのユーザー用に優先受信トレイを構成する
 

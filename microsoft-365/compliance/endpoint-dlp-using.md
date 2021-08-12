@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: 1a0297271c3e0e8fb94a476982f146aa8c221e7a
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 02cc958f816c2335a24923cf7fc16b80b9806d9c7811457e88080be50438ce48
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809133"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814183"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 

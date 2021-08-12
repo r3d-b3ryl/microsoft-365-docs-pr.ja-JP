@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 059ebba84f96a24f4ac855d7bb84c3abed64f0c3
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3b30d73572f6d1f0b67c7bdd434400cd28c86d5e1a69bc0fcda1410fe50a1df9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794434"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>マルウェア感染を防ぐために攻撃面の減少ルールを使用する
 
@@ -73,7 +73,7 @@ ms.locfileid: "53543727"
 
 Microsoft Defender ウイルス対策モードでリアルタイム保護を実行している[必要があります](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
 
-さらに、マルウェア対策[Microsoft Defender ウイルス対策更新プログラムがインストールされていることを](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)確認します。
+また、マルウェア対策[Microsoft Defender ウイルス対策更新プログラムがインストールされていることを](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)確認します。
 
 - プラットフォームリリースの最小要件: `4.18.2008.9`
 - エンジンリリースの最小要件: `1.1.17400.5`
@@ -88,15 +88,15 @@ Microsoft Defender ウイルス対策モードでリアルタイム保護を実�
 - [WMI イベント サブスクリプション (GUID) による永続](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription) 化をブロック `e6db77e5-3df2-4cf1-b95a-636979351e5b` する
 - [ランサムウェアに対する高度な保護を使用](attack-surface-reduction-rules.md#use-advanced-protection-against-ransomware) する `c1db55ab-c21a-4637-bb3f-a12568109d35` (GUID)
 
-さらに、以前のバージョンのバージョンのデバイスで警告モードはサポートWindows。 このような場合、警告モードで実行するように構成された攻撃表面の縮小ルールは、ブロック モードで実行されます。
+また、警告モードは、以前のバージョンのサーバーを実行しているデバイスではWindows。 このような場合、警告モードで実行するように構成された攻撃表面の縮小ルールは、ブロック モードで実行されます。
 
 ## <a name="notifications-and-alerts"></a>通知とアラート
 
 攻撃表面の縮小ルールがトリガーされるたびに、デバイスに通知が表示されます。 会社の詳細や連絡先情報を使用して[通知をカスタマイズ](customize-attack-surface-reduction.md#customize-the-notification)することができます。
 
-さらに、特定の攻撃表面の縮小ルールがトリガーされると、アラートが生成されます。
+また、特定の攻撃表面縮小ルールがトリガーされると、アラートが生成されます。
 
-通知と生成されたアラートは、Microsoft 365 Defender ポータル ( ) (以前は [https://security.microsoft.com](https://security.microsoft.com) Microsoft Defender セキュリティ センター)[で表示できます](microsoft-defender-security-center.md)。
+通知と生成されたアラートは、Microsoft 365 Defender ポータル ( ) (以前は [https://security.microsoft.com](https://security.microsoft.com) Microsoft 365 Defender)[で表示できます](microsoft-defender-security-center.md)。
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>高度な狩猟と攻撃表面の縮小イベント
 
@@ -147,7 +147,7 @@ DeviceEvents
 
 4. 抽出された場所 *cfa-events.xml* ファイルを選択します。 または [、XML を直接コピーします](event-views.md)。
 
-5. **[OK]** を選択します。
+5. **[OK]** をクリックします。
 
 イベントをフィルター処理して、次のイベントのみを表示するカスタム ビューを作成できます。そのすべては、フォルダー アクセスの制御に関連しています。
 

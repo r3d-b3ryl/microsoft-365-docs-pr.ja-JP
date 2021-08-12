@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 62664e77cfb8a2f6b4bf4411f010745796a3371a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e4888bfd83f70170bfd360275777845c1049ac96c4bd93b7a52d251f326fdd95
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796876"
 ---
 # <a name="payment-information-for-kyrgyzstan"></a>キルギスの支払い情報
 
@@ -30,6 +30,6 @@ ms.locfileid: "52536492"
 
 **Bank:** シティバンク(ロンドン)  
 **SWIFT コード:** CITIGB2L  
-**IBAN:** 12510049、  
+**IBAN: 12510049、**  
 **アカウント番号:** GB95CITI18500812510049  
 **アカウント名:** MICROSOFT

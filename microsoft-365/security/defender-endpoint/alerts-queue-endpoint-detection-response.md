@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
-ms.openlocfilehash: fbd8a5fa5bbb42ea8040c2a1364a9a9a4c90bcbd
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: bd105f1f6c75ae084ce5b60e9585ef30be1058e2e1f9f1d4ad1ba8f3241f8d8e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794452"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>Microsoft 365 Defender のアラート キュー
 

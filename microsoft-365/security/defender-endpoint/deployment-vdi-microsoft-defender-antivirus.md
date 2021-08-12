@@ -15,12 +15,12 @@ ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: baec5e1e35c93213be67df1163113cfe3cb3dd29
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 8a4cd421121f9cfae94724bfaab29df2bf873ab8748f1605d68f5a9813f99102
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596268"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794368"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
 
@@ -113,7 +113,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 2. 名前をセキュリティ インテリジェンス **アンパックとして入力します**。 [トリガー] タブ **に移動** します。[**新規]を選択します。**  > **[日**] を選択し **、[OK] を選択します**。
 
-3. [アクション] タブ **に移動** します。[ **新規]を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [ `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` 引数の追加 **] フィールドに入力** します。 **[OK]** を選択します。
+3. [アクション] タブ **に移動** します。[ **新規]を選択します。** [ **プログラム/スクリプト]** フィールドに **「PowerShell」と入力** します。 [ `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` 引数の追加 **] フィールドに入力** します。 **[OK]** をクリックします。
 
 4. 必要に応じて、追加の設定を構成できます。
 
@@ -211,7 +211,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. ポリシーを [有効] に **設定します**。
 
-4. **[OK]** を選択します。
+4. **[OK]** をクリックします。
 
 5. 通常と同じ方法でグループ ポリシー オブジェクトを展開します。
 

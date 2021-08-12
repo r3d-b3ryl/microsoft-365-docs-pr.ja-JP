@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 996a62f6098ae494b42de5f055ab1ddeb08db35c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 30428565f082610c64c65da88fad614ef755e557fa56b0fc278cc62bf9d88c26
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655313"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829317"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>デバイス ID で不足している KB を取得する
 
@@ -93,7 +93,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

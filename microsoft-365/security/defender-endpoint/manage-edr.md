@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.openlocfilehash: bf153d785c5feb96506b7902fa79595e58de6073
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c81d84785404674781e21c7421921aa0a3a8bab0b3bd1a727f555d5cadf1a399
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806738"
 ---
 # <a name="manage-endpoint-detection-and-response-capabilities"></a>エンドポイントの検出および応答機能の管理
 

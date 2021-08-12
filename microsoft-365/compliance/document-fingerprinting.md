@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 組織内のインフォメーション ワーカーは、日常的にさまざまな種類の機密情報を処理します。 ドキュメント フィンガープリンティングは、組織全体で使用される標準フォームを特定することによってこの情報の保護を容易にします。 このトピックでは、ドキュメント フィンガープリントの背後にある概念と、PowerShell を使用して作成する方法について説明します。
-ms.openlocfilehash: 392b42e779de249dddc0acb4c7c757a009f9f743
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: e82d4947cac96550c9c720a6c55ec21dca4152ba45c7ce114eb3ba07a276a223
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814224"
 ---
 # <a name="document-fingerprinting"></a>ドキュメント フィンガープリンティング
 

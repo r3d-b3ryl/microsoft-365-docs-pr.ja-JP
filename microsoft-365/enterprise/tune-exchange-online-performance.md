@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: この記事には、パフォーマンスを向上させる方法を示す一般的なヒントと他のリソースへのリンクExchange Online。
-ms.openlocfilehash: a7d3268f9f3cf1922319b03cf69d3f044272b27f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0f1a55648b90cfc07a81928f3e30196f9d928bd5271073828500e58138a4007c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794656"
 ---
 # <a name="tune-exchange-online-performance"></a>Exchange Online のパフォーマンスをチューニングする
 
@@ -37,7 +37,7 @@ ms.locfileid: "50909444"
     
 - **インターネット トラフィックが低く、オンプレミスでの使用が少ない期間中にメールボックスの移動をExchangeします。** 移動をスケジュールする場合、移行要求はメールボックス レプリケーション プロキシに送信され、すぐには実行されない場合があります。 
     
-- **Web 上のユーザーにOutlookポップアウトを使用します。** リーン ポップアウトは、Microsoft Edge または Internet Explorer で一部のコンポーネントをレンダリングすることにより、Microsoft Edge または Internet Explorer の特定の電子メール メッセージのメモリ負荷の小さいバージョンを提供します。 詳細については、「無駄のないポップアウトを使用して、メール メッセージを読み取る際に [使用されるメモリを減らす」を参照してください](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf)。
+- **ユーザーにリーン ポップアウトをOutlook on the web。** リーン ポップアウトは、Microsoft Edge または Internet Explorer で一部のコンポーネントをレンダリングすることにより、Microsoft Edge または Internet Explorer の特定の電子メール メッセージのメモリ負荷の小さいバージョンを提供します。 詳細については、「無駄のないポップアウトを使用して、メール メッセージを読み取る際に [使用されるメモリを減らす」を参照してください](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf)。
 
 
 ## <a name="general-advice"></a>一般的なアドバイス

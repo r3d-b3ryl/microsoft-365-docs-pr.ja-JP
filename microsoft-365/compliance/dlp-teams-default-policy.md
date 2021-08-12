@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: このページの既定のデータ損失防止ポリシーについてMicrosoft Teams
-ms.openlocfilehash: c6b7413fdd4017fe1211e804c00a2e9c0684468d
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 6358ec692142aa5f2c47007133cb99ec080621f8452234f1260a65e5cd7f9c21
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149120"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814248"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Microsoft Teams の既定のデータ損失防止ポリシーについて学ぶ (プレビュー)
 

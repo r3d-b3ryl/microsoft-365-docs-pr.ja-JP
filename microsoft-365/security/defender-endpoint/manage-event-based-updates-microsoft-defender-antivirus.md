@@ -16,12 +16,12 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 82aff7adedc9e490520851ad8c8e87fad60abf0a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 0fc7b51988f67c0f2e570e23bdb58e1aa32d35fe55347d1ace550de80f4d6fb6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806726"
 ---
 # <a name="manage-event-based-forced-updates"></a>イベントベースの強制更新プログラムを管理する
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: ae51d32343bbcf81d2d659121f475837cf0abe95
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0822ef527429e48f6eb301af0838081ed597b5d9c5b1cb6825f6a53cfb93d19a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541450"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836849"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -85,7 +85,7 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
 
 |機能または動作|ラベル設定: ファイルやメールの自動ラベル付け  |ポリシー: 自動ラベル付け|
 |:-----|:-----|:-----|
-|アプリの依存関係|[はい](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |いいえ \* |
+|アプリの依存関係|はい ([最小バージョン](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |いいえ \* |
 |場所による制限|いいえ |はい |
 |条件: トレーニング可能な分類子|はい |いいえ |
 |条件: メールの共有オプションと追加オプション|いいえ |はい |
@@ -146,26 +146,13 @@ DLP ポリシーを構成する場合と同様に、インスタンス数と一�
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>ラベルのトレーニング可能な分類子を構成する
 
-このオプションは現在プレビューの段階です。 このオプションを使用する場合は、自動ラベル付け用に構成された少なくとも 1 つの他の秘密度ラベルと[機密情報の種類のオプション](#configuring-sensitive-info-types-for-a-label)をテナントに公開していることを確認してください。
+このオプションを使用する場合は、自動ラベル付け用に構成された少なくとも 1 つの他の秘密度ラベルと[機密情報の種類のオプション](#configuring-sensitive-info-types-for-a-label)をテナントに公開していることを確認してください。
 
 **トレーニング可能な分類子** のオプションを選択する場合、Microsoft から 1 つ以上のトレーニング可能な組み込み分類子を選択します。 独自のトレーニング可能なカスタム分類子を作成している場合は、以下を選択できます。
 
 ![トレーニング可能な分類子と秘密度ラベルのオプション](../media/sensitivity-labels-classifers.png)
 
 これらの分類子の詳細については、「[トレーニング可能な分類子 (プレビュー) の詳細](classifier-learn-about.md)」を参照してください。
-
-このオプションのプレビュー期間中は、次のアプリが秘密度ラベルのトレーニング可能な分類子をサポートします。
-
-- Microsoft 365 Apps for enterprise ([以前の Office 365 ProPlus](/deployoffice/name-change)) for Windows は、現在、バージョン 2006 以降で[最新機能提供チャネル](/deployoffice/overview-update-channels#current-channel-overview) に展開中です。
-    - Word
-    - Excel
-    - PowerPoint
-
-- [SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする機能 (パブリック プレビュー)](sensitivity-labels-sharepoint-onedrive-files.md) が有効になっている場合の Web アプリ用の Office:
-    - Word
-    - Excel
-    - PowerPoint
-    - Outlook
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>ユーザーが秘密度ラベルを適用することを推奨
 
@@ -191,7 +178,7 @@ Office アプリでの自動ラベル付けと推奨ラベル付けの実装は�
 
 - Word のデスクトップ バージョンにおける推奨ラベルでは、推奨をトリガーした機密コンテンツにフラグが付けられるので、ユーザーが確認して、推奨されている秘密度ラベルを適用しないで機密コンテンツを削除できます。
 
-- こうしたラベルが Office アプリで適用される方法、スクリーンショット例、機密情報の検出方法について詳しくは、「[Office のファイルとメールに秘密度ラベルを自動的に適用、または推奨する](https://support.office.com/ja-JP/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)」を参照してください。
+- こうしたラベルが Office アプリで適用される方法、スクリーンショット例、機密情報の検出方法について詳しくは、「[Office のファイルとメールに秘密度ラベルを自動的に適用、または推奨する](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)」を参照してください。
 
 Azure Information Protection 統合ラベル付けクライアントに関してのみ以下の点が当てはまります。
 

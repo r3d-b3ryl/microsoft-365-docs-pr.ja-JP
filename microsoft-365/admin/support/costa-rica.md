@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d85110a4a92b4490717125b6148461127c0f0e49
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 0cfe75516c89cda7da8ef8628ee2fa33bb1f98d688c0ba14c25322ba7b7033cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296313"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821297"
 ---
 # <a name="contact-support-for-costa-rica"></a>コスタリカのサポートに問い合わせ
 

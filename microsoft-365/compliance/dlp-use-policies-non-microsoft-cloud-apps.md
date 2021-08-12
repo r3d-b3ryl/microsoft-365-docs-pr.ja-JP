@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 以外のクラウド アプリで dlp ポリシーを使用する方法について説明します。
-ms.openlocfilehash: 4bda45a6da6b9626391da37eb9a806b3308c5e7f
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: ef4482c66f9774057d5027b191cb32c8cf40becb0e28faa36fc0641fe2e51832
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322319"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814283"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する
 
