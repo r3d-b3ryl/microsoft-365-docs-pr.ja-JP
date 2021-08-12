@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コア電子情報開示の使用を開始する方法についてMicrosoft 365。 電子情報開示のアクセス許可を割り当て、ケースを作成したら、メンバーの追加、電子情報開示ホールドの作成、調査に関連するコンテンツの検索とエクスポートを行います。
-ms.openlocfilehash: 9466b2e3268a447a4008363e88290d4d02558c76
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 8b0e1c91f0816df3b443933d4e14c6c36f41b143a27d06516cf66e46a0f054a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819912"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>コア電子情報開示の使用をMicrosoft 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "53341474"
 
   - Office 365 E1プラン 2 または Exchange Online アドオン ライセンスExchange Online Archivingライセンスを使用する場合
 
-  AND
+  および
 
   - Office 365 E1プラン 2 または SharePointプラン 2 OneDrive for Business ライセンスを使用するライセンス
   

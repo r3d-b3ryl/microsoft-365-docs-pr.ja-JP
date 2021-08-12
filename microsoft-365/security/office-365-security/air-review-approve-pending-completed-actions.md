@@ -19,12 +19,12 @@ description: Microsoft Defender for microsoft Defender for Office 365プラン 2
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 987771616acfd2f2faf425e525505b320155388e
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 91b1af53f69cc464726bb6040f6d9af2bb11566804898db85dedc658704e8a4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828345"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>修復アクションを確認および管理Office 365
 

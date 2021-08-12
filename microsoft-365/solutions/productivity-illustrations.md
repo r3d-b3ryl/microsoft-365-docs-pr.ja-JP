@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: e052f3c287a6523174259a0a58017421bc989071
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 2a183c6ead446fce331d33350172359650a38327d4a7ee00cf6a6c7a18a6a3db
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827829"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
@@ -27,7 +27,7 @@ ms.locfileid: "53229613"
 ## <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 の Microsoft Teams と関連生産性サービス
 Microsoft Teamsをリードする Microsoft 365 での生産性サービスの論理的なアーキテクチャ。
 
-| 項目 | 説明 |
+| アイテム | 説明 |
 |:-----|:-----|
 |[![Teamsアーキテクチャのポスター](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2021 年 1 月更新   |マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <br/> <br/>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
 
@@ -35,7 +35,7 @@ Microsoft Teamsをリードする Microsoft 365 での生産性サービスの�
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 のグループ
 この図には、IT アーキテクト向け情報がMicrosoft 365されています。 組織内のグループとチームをMicrosoft 365管理する方法については、「Microsoft 365 との安全なコラボレーションをセットアップする」および[「](/microsoft-365/solutions/setup-secure-collaboration-with-teams)コラボレーション ガバナンスとは」を[参照してください](/microsoft-365/solutions/collaboration-governance-overview)。
 
-| 項目 | 説明 |
+| アイテム | 説明 |
 |:-----|:-----|
 |[![グループ インフォグラフィックのサムネイル](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 2020 年 5 月更新|これらの図は、さまざまな種類のグループがどのように作成および管理されているか、そしていくつかのガバナンスの推奨事項を詳述しています。|
 
@@ -43,7 +43,7 @@ Microsoft Teamsをリードする Microsoft 365 での生産性サービスの�
 
 Microsoft では、移行中のコンテンツのセキュリティの保護と確保に重点を置いて、オンプレミスのネットワーク ファイル共有と SharePoint Server サイトを Microsoft 365 に移行するためのツールを提供しています。 この一連の図は、SharePoint、Teams、OneDrive にコンテンツを移動するために使用できるさまざまな方法と、プロセスを通じてデータがどのように流れるのかを示しています。
 
-| 項目 | 説明 |
+| アイテム | 説明 |
 |:-----|:-----|
 |[![モデル ポスター: [モデルに移行Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> 2021 年 3 月更新 |含まれる内容: <ul><li> ファイル共有の移行</li><li>SharePoint サーバーの移行</li></ul> <p> 詳細については、「コンテンツを[移行する」を参照Microsoft 365。](/sharepointmigration/migrate-to-sharepoint-online)|
 
@@ -62,7 +62,7 @@ Microsoft 365情報保護とコンプライアンス機能の幅広いセット�
 ## <a name="security-and-information-protection-for-multi-region-organizations"></a>多地域組織向けのセキュリティと情報保護
 1 つのテナントを使用する複数地域組織のセキュリティとMicrosoft 365保護
 
-| 項目 | 説明 |
+| アイテム | 説明 |
 |:-----|:-----|
 |[![複数地域のインフォグラフィック](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>更新日: 2020 年 3 月 |グローバル組織で単一の Microsoft 365 テナントを使用することは、さまざまな理由で最適な選択肢と経験です。 ただし、多くのアーキテクトは、さまざまな地域でセキュリティおよび情報保護の目標を達成する方法に取り組んでいます。 このトピックでは、推奨事項について説明します。 |
 
@@ -71,7 +71,7 @@ Microsoft 365情報保護とコンプライアンス機能の幅広いセット�
 環境に応じて、一部のツールは特定のアーキテクチャに適しています。
 
 
-| 項目 | 説明 |
+| アイテム | 説明 |
 |:-----|:-----|
 |[![Microsoft Defender for Endpoint 展開戦略のサム イメージ](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) <br>更新日: 2020 年 2 月 | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li>
 
@@ -81,7 +81,7 @@ Microsoft 365情報保護とコンプライアンス機能の幅広いセット�
 
 Azure AD アプリケーション プロキシで公開された、Microsoft 365、その他の SaaS サービス、およびオンプレミス アプリケーションにアクセスする ID とデバイスを保護するための推奨機能。
 
-| 項目 | 説明 |
+| アイテム | 説明 |
 |:-----|:-----|
 |[![モデルポスター: ID とデバイス保護のMicrosoft 365](../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [PDF として表示する](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[アプリとしてダウンロードVisio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020 年 9 月更新|データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 このモデルは、ID とデバイスを保護する機能の詳細と比較できる機能を示します。  <br/> |
 
@@ -90,7 +90,7 @@ Azure AD アプリケーション プロキシで公開された、Microsoft 365
 
 Advanced eDiscovery環境内を含む、エンドツーエンドのワークフローとMicrosoft 365フローを提供します。
 
-| 項目 | 説明 |
+| アイテム | 説明 |
 |:-----|:-----|
 |[![モデル ポスター: Advanced eDiscovery アーキテクチャ Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [画像として表示する](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \|[PDF としてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[アプリとしてダウンロードVisio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 更新日: 2020 年 10 月|含まれる内容: <ul><li>  単一の環境でのエンドツーエンドのワークフロー</li><li>複数地域環境でのエンド Microsoft 365ワークフロー </li><li>EDRM ワークフローをサポートするエンドツーエンドのデータ フロー</li> |
 
@@ -100,7 +100,7 @@ Advanced eDiscovery環境内を含む、エンドツーエンドのワークフ�
 
 Microsoft では、Microsoft クラウド内の Teams の使用を開始する際に使用できるいくつかのオプションをサポートしています。このポスターは、どの Microsoft テレフォニー ソリューション (クラウド内の電話システムまたはオンプレミスのエンタープライズ ボイス) が組織のユーザーに適しているかを判断し、組織を公衆交換電話網 (PSTN) に接続する方法を決定するのに役立ちます。
 
-| 項目 | 説明 |
+| アイテム | 説明 |
 |:-----|:-----|
 |[![Microsoft テレフォニー ソリューションのポスター](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021 年 3 月更新 | 詳細については、「Plan [your your Teams 音声ソリューション」を参照してください](/microsoftteams/cloud-voice-landing-page)。|
 

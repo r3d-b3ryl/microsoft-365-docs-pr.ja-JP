@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 694c09c5136f874550fa4a47586f3268ee2d0833
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: ed8fd13aa84fc807c75db99f7ed06fab8dcfbf65631c51bf51afcf295f66c965
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007186"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794164"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>クラウドによる保護を有効にする
 
@@ -96,7 +96,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
 
 4. ツリーを展開して **、MAPS Windowsコンポーネント> Microsoft Defender ウイルス対策 >します。**
 
-5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 **[OK]** を選択します。
+5. [Microsoft **MAPS に参加する] をダブルクリックします**。 オプションがオンになっていることを確認し、[基本マップ] または **[高度なマップ** ] **に設定します**。 **[OK]** をクリックします。
 
 6. 詳細な分析が **必要な場合は、[ファイル サンプルの送信] をダブルクリックします**。 最初のオプションが [有効] に設定 **され** 、他のオプションが次のどちらかに設定されている必要があります。
 
@@ -107,7 +107,7 @@ Intune デバイス プロファイルの作成および構成方法など、Int
         > [ **安全なサンプルを送信する** (1)] オプションは、ほとんどのサンプルが自動的に送信されるという意味です。 個人情報が含まれている可能性があるファイルは、引き続きプロンプトが表示され、追加の確認が必要です。
         > オプションを Always **Prompt** (0) に設定すると、デバイスの保護状態が低下します。 [送信しない **]** (2) に設定 [](configure-block-at-first-sight-microsoft-defender-antivirus.md)すると、Microsoft Defender for Endpoint の一目でブロック機能が機能しません。
 
-7. **[OK]** を選択します。
+7. **[OK]** をクリックします。
 
 ## <a name="use-powershell-cmdlets-to-turn-on-cloud-delivered-protection"></a>PowerShell コマンドレットを使用してクラウド配信の保護を有効にする
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: データをインポートおよびアーカイブする方法については、Microsoft 365 コンプライアンス センターでコネクタを設定して使用して、Skype for BusinessからMicrosoft 365。
-ms.openlocfilehash: 4a66ee19530860bd482168297a8c935153442fee
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: f265d0599525cc6fd9f9d26a0d8d04f0c8e7e008927a2b4215d4fc40ad771215
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796555"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>データをアーカイブするコネクタをSkype for Businessする
 

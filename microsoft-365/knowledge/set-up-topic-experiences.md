@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva のトピックを設定する
+title: 設定Microsoft Viva トピック
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Microsoft Viva のトピックを設定する方法について説明します。
-ms.openlocfilehash: 42f84b9b792907d7fe118e0b15c3767674ddf19b
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: ユーザー設定のMicrosoft Viva トピック
+ms.openlocfilehash: 65c679889c60b69ae60a4649b64224f7970f57e58feb5f40a391e0acc257966c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229589"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834891"
 ---
-# <a name="set-up-microsoft-viva-topics"></a>Microsoft Viva のトピックを設定する
+# <a name="set-up-microsoft-viva-topics"></a>設定Microsoft Viva トピック
 
 [トピック] セクションを使用Microsoft 365 管理センタートピックを設定および構成[できます](topic-experiences-overview.md)。 
 
-環境内でトピックをセットアップおよび構成する最善の方法を計画することが重要です。 この記事の手順を [開始する前に、「Plan for Microsoft Viva Topics」](plan-topic-experiences.md) を必ずお読みください。
+環境内でトピックをセットアップおよび構成する最善の方法を計画することが重要です。 この記事の手順[を開始する前Microsoft Viva トピック](plan-topic-experiences.md)を必ずお読みください。
 
 ビバ トピックに[アクセスして](https://www.microsoft.com/microsoft-viva/topics)トピックを設定するには、ビバ トピックにサブスクライブし、グローバル管理者または管理者SharePoint Microsoft 365 管理センター管理者である必要があります。
 
@@ -52,7 +52,7 @@ ms.locfileid: "53229589"
 4. [**アプリ]** で、[コネクタGraphインデックス付き検索 **(Viva Topics)** と **Viva Topics** の両方が選択されている必要があります。
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva Topics のライセンスは、Microsoft 365 管理センター](../media/topic-experiences-licenses.png)
+   > ![Microsoft Viva トピックのライセンスのMicrosoft 365 管理センター](../media/topic-experiences-licenses.png)
 
 5. **[変更の保存]** をクリックします。
 
@@ -153,10 +153,10 @@ ms.locfileid: "53229589"
 
 トピックの設定が完了したら、セットアップ時に選択した設定を [トピック] で変更[Microsoft 365 管理センター。](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) 次の参考資料を参照してください:
 
-- [Microsoft Viva Topics でトピックの検出を管理する](topic-experiences-discovery.md)
-- [Microsoft Viva Topics でのトピックの表示を管理する](topic-experiences-knowledge-rules.md)
-- [Microsoft Viva Topics でトピックのアクセス許可を管理する](topic-experiences-user-permissions.md)
-- [Microsoft Viva Topics でトピック センターの名前を変更する](topic-experiences-administration.md)
+- [トピックの検出を管理Microsoft Viva トピック](topic-experiences-discovery.md)
+- [トピックの表示を管理Microsoft Viva トピック](topic-experiences-knowledge-rules.md)
+- [トピックのアクセス許可を管理Microsoft Viva トピック](topic-experiences-user-permissions.md)
+- [トピック センターの名前を変更Microsoft Viva トピック](topic-experiences-administration.md)
 
 ## <a name="see-also"></a>関連項目
 

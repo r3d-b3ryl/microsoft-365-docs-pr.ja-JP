@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 18e8f6e0ea18fc129f317f8df36052568c0350e6
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6f527a907d9ad809fe75a39c5613798174902f3e13e53c93e75b6b68c33d514d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806488"
 ---
 # <a name="supported-managed-security-service-providers"></a>サポート対象マネージド セキュリティ サービス プロバイダー
 
@@ -60,5 +60,5 @@ ms.locfileid: "53648269"
 ![Wortell のクラウド SOC ロゴの画像](images/wortell-logo.png)| [Wortell のクラウド SOC](https://go.microsoft.com/fwlink/?linkid=2108415) | 24 時間 365 日のエンドポイント 対応を監視する 24 時間 365 日& Defender
 ![ゼロトラスト分析プラットフォーム (ZTAP) ロゴのイメージ](images/ztap-logo.png)| [ゼロトラスト分析プラットフォーム (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | アラートを 99% 削減し、モバイル デバイスからさまざまなセキュリティ機能にアクセスする
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [管理サービス セキュリティ プロバイダーの統合を構成する](configure-mssp-support.md)

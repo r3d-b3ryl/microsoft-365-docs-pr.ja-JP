@@ -1,5 +1,5 @@
 ---
-title: 高度な電子情報開示でのタグ付けと関連性のトレーニング
+title: タグ付けと関連性のトレーニング (Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
-description: Advanced eDiscovery の関連性トレーニング ステージで、タグ付けしてから 40 ファイルのトレーニング サンプルを使用する手順について説明します。
-ms.openlocfilehash: ae4a9f2e9fd87fdd0679bbfd8f287b6eaa98e41f
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+description: タグを付け、40 ファイルのトレーニング サンプルを使用する手順について説明します。この手順は、Advanced eDiscovery。
+ms.openlocfilehash: a510d331da39cfec7e861148a20200c6f3a1239f7ca0fc6387ffc7de56fa38fd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769222"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813610"
 ---
-# <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>高度な電子情報開示でのタグ付けと関連性のトレーニング
+# <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>タグ付けと関連性のトレーニング (Advanced eDiscovery
   
-この記事では、Advanced eDiscovery の関連性トレーニング モジュールを操作する手順について説明します。
+この記事では、関連トレーニング モジュールを操作する手順について説明します。Advanced eDiscovery。
   
-Advanced eDiscovery で評価が完了し、関連性トレーニング ステージに入った後、40 ファイルのトレーニング サンプルがタグ付けのために [タグ] タブに表示されます。
+評価が Advanced eDiscovery で完了し、関連性トレーニング ステージに入った後、40 ファイルのトレーニング サンプルがタグ付けのために [タグ] タブに表示されます。
   
 ## <a name="performing-relevance-training"></a>関連性トレーニングの実行
 
@@ -44,7 +44,7 @@ Advanced eDiscovery で評価が完了し、関連性トレーニング ステ�
 
 2. 次の表に示すように、[タグ付け] オプション アイコン ボタンまたはキーボード ショートカットを使用して、ケースの問題に対するファイルの関連性を判断し、ファイルにタグを付けることができます。
 
-   |**タグ付けオプション**|**説明**|**ショートカット キー**|**一括タグ付けキーボード ショートカット (複数の問題の場合)**|
+   |**タグ付けオプション**|**Description**|**ショートカット キー**|**一括タグ付けキーボード ショートカット (複数の問題の場合)**|
    |-----|-----|-----|-----|
    |R  <br/> |関連する  <br/> |Z  <br/> |`Shift + Z`  <br/> |
    |NR  <br/> |関連性が高い  <br/> |X  <br/> |`Shift + X`  <br/> |

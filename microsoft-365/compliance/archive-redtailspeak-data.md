@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Red tail Speak データを Veritas から他のユーザーにインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: ee9540b4000387454eb177f864407e03abd25bc6
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 28a547dfa74286a27414d1fda6c6ef5c0a786fc7fe2b68f7abad0fbcc8cc5e99
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164151"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796675"
 ---
 # <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Redtail Speak データをアーカイブするコネクタをセットアップする
 
-コンプライアンス センターの Veritas コネクタをMicrosoft 365、Redtail Speak to user Mailboxs からデータをインポートおよびアーカイブする場合は、Microsoft 365します。 Veritas は [、Redtail](https://globanet.com/redtail/) からアイテムを受信する組織の SFTP サーバーからアイテムをキャプチャするように構成された Redtail Speak コネクタを提供します。 コネクタはコンテンツを Redtail Speak から電子メール メッセージ形式に変換し、それらのアイテムをユーザーのメールボックスにインポートMicrosoft 365。
+Redtail Speak to user mailboxs からデータをインポートおよびアーカイブするには、Microsoft 365 コンプライアンス センター内の Veritas コネクタを使用して、Microsoft 365します。 Veritas は [、Redtail](https://globanet.com/redtail/) からアイテムを受信する組織の SFTP サーバーからアイテムをキャプチャするように構成された Redtail Speak コネクタを提供します。 コネクタはコンテンツを Redtail Speak から電子メール メッセージ形式に変換し、それらのアイテムをユーザーのメールボックスにインポートMicrosoft 365。
 
 Redtail Speak データをユーザー のメールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルMicrosoft 365コンプライアンス機能を適用できます。 Redtail Speak コネクタを使用してデータをインポートおよびアーカイブMicrosoft 365、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -35,7 +35,7 @@ Redtail Speak データをユーザー のメールボックスに格納した�
 
 2. 24 時間に 1 回、Redtail Speak アイテムが Veritas Merge1 サイトにコピーされます。 また、コネクタは Redtail Speak アイテムを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成した Redtail Speak コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内のセキュリティで保護された Azure Storage 場所にメッセージを転送します。
+3. Microsoft 365 コンプライアンス センター で作成した Redtail Speak コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内のセキュリティで保護された Azure Storage 場所にメッセージを転送します。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換された Redtail Speak アイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **Redtail Speak** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー のメールボックスに作成され、そのフォルダーにアイテムがインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべての Redtail Speak アイテムには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
@@ -45,11 +45,11 @@ Redtail Speak データをユーザー のメールボックスに格納した�
 
 - 手順 2 では、組織の SFTP サーバーを指定する必要があります。 この手順は、Veritas Merge1 が SFTP を介して Redtail Speak データを収集するために接続するために必要です。
 
-- 手順 1 で Redtail Speak Importer コネクタを作成し (および手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、コンプライアンス センターの [データ コネクタ] ページにコネクタMicrosoft 365必要です。 この役割は、既定では、既定では、Exchange Onlineグループには割り当てられていない。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- 手順 1 で Redtail Speak Importer コネクタを作成し (および手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、データ コネクタ ページの [データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 この役割は、既定では、既定では、Exchange Onlineグループには割り当てられていない。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
 
 ## <a name="step-1-set-up-the-redtail-speak-connector"></a>手順 1: Redtail Speak コネクタをセットアップする
 
-最初の手順は、コンプライアンス センターの [データ コネクタ] ページMicrosoft 365し、Redtail Speak データのコネクタを作成することです。
+最初の手順は、アプリの[データ コネクタ] ページにアクセスし、redtail Speak Microsoft 365 コンプライアンス センターコネクタを作成することです。
 
 1. [データ コネクタ [https://compliance.microsoft.com](https://compliance.microsoft.com/) ] に移動 **して[Redtail** &gt; **Speak] を選択します**。
 
@@ -65,7 +65,7 @@ Redtail Speak データをユーザー のメールボックスに格納した�
 
 2 番目の手順は、Merge1 サイトで Redtail Speak コネクタを構成することです。 Redtail Speak コネクタを構成する方法については [、「Merge1 サードパーティ](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Redtail%20Speak%20User%20Guide%20.pdf)コネクタ ユーザー ガイド」を参照してください。
 
-[完了 **&] を選択すると**、コンプライアンスセンターのコネクタ ウィザードの [ユーザー マッピング] Microsoft 365表示されます。
+[ファイルの保存と **&完了**] を選択すると、コネクタ ウィザードの [ユーザー マッピング] ページが表示Microsoft 365 コンプライアンス センターされます。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
@@ -77,7 +77,7 @@ Redtail Speak データをユーザー のメールボックスに格納した�
 
 ## <a name="step-4-monitor-the-redtail-speak-connector"></a>手順 4: Redtail Speak コネクタを監視する
 
-Redtail Speak コネクタを作成した後、コンプライアンス センターでコネクタのMicrosoft 365できます。
+Redtail Speak コネクタを作成した後は、コネクタの状態を [メッセージ] ページMicrosoft 365 コンプライアンス センター。
 
 1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com/) ナビゲーションで **[データ コネクタ]** に移動して選択します。
 

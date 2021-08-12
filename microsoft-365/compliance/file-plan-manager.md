@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイルプランでは、アイテム保持ラベルに高度な管理機能が提供されます。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 6aa47048d9654c46694e8a8eb0626b18b8b52f69
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 81400dd6cad1caa83bb5dcfa3fc530f6db38796bd0ed4e28d908c3041b87a902
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430650"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820078"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>ファイルプランを使用して保持ラベルを管理する
 
@@ -156,14 +156,14 @@ A *.csv ファイルは既存の全ての保持ラベルを開く、を含みま
    |RetentionDuration|文字列|いいえ、**RetentionAction** または **RetentionType** が指定されていない場合です|このプロパティは、コンテンツを保持する日数を指定します。有効な値は次のとおりです。</br>**Unlimited**: アイテムは無期限に保持されます。 </br>**_n_*: 日付の正の整数です (例: _ **365**)。 サポート可能な最大数は 24,855 で、これは 68 年です。 この最大値よりも長い期間を必要とする場合は、代わりに Unlimited 版を使用します。</br> </br> グループの依存関係: このプロパティが指定された場合、RetentionAction および RetentionType も指定される必要があります。
    |RetentionType|String|いいえ、**RetentionAction** または **RetentionDuration** が指定されていない場合です|プロパティは、コンテンツ作成日、イベント日、ラベルが付けられた日、または最終変更日のいずれから保持期間 (指定された場合) を計算するかを指定します。有効な値は次のとおりです。</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** </br> </br> グループの依存関係: このプロパティが指定された場合、RetentionAction および RetentionDuraction も指定される必要があります。|
    |ReviewerEmail|SmtpAddress|いいえ|このプロパティが指定された場合、保持期間が終了すると、廃棄のレビューがトリガーされます。 プロパティは、**KeepAndDelete** の保持期間用アクションのレビュー担当者の電子メール アドレスを指定します。 </br> </br> テナント内の個々のユーザー、配布グループまたはセキュリティ グループのメール アドレスを含めることが出来ます。 複数のメール アドレスをセミコロンで区切って指定します。 </br> </br> グループの依存関係: このプロパティが指定された場合、**RetentionAction** (**KeepAndDelete** である必要があります)、**RetentionDuration**、および **RetentionType** も指定される必要があります。|
-   |ReferenceId|文字列|いいえ|このプロパティは、**参照 ID** ファイル計画記述子に表示される値を指定します。そしてこれは組織の固有の値として使うことが出来ます。| 
+   |ReferenceId|String|いいえ|このプロパティは、**参照 ID** ファイル計画記述子に表示される値を指定します。そしてこれは組織の固有の値として使うことが出来ます。| 
    |DepartmentName|文字列|いいえ|このプロパティは、**業務/部署** ファイル計画記述子に表示される値を指定します。|
    |カテゴリ|文字列|いいえ|このプロパティは、**カテゴリ** ファイル計画記述子に表示される値を指定します。|
    |下位カテゴリ|文字列|いいえ|このプロパティは、**サブカテゴリ** ファイル計画記述子に表示される値を指定します。|
    |AuthorityType|文字列|いいえ|このプロパティは、**管理組織の種類** ファイル計画記述子に表示される値を指定します。|
-   |CitationName|文字列|いいえ|このプロパティは、**プロビジョニング/引用** ファイル計画記述子に表示される引用の名前を指定します。 例として、「2002 年米国企業改革法」。 |
+   |CitationName|String|いいえ|このプロパティは、**プロビジョニング/引用** ファイル計画記述子に表示される引用の名前を指定します。 例として、「2002 年米国企業改革法」。 |
    |CitationUrl|文字列|いいえ|このプロパティは、**規定/引用** ファイル計画記述子に表示される URL を指定します。|
-   |CitationJurisdiction|文字列|いいえ|このプロパティは、**規定/引用** ファイル計画記述子に表示される管理規則または機関を指定します (例: 「米国証券取引委員会 (SEC)」)。|
+   |CitationJurisdiction|String|いいえ|このプロパティは、**規定/引用** ファイル計画記述子に表示される管理規則または機関を指定します (例: 「米国証券取引委員会 (SEC)」)。|
    |Regulatory|文字列|いいえ|このプロパティでは、ラベルがコンテンツをレコードより[制限された](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) Regulatory レコードとしてマークするかどうかを指定します。 このラベル構成を使用するには、[コンテンツを Regulatory レコードとしてマークするオプションを表示する](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)ようにテナントを構成する必要があり、そうでない場合はインポートの検証が失敗します。 有効な値は次のとおりです。 </br>**TRUE**: ラベルは、Regulatory レコードとしてアイテムをマークします。 また、**IsRecordLabel** プロパティを TRUE に設定する必要があります。</br>**FALSE**: ラベルは、コンテンツを Regulatory レコードとしてマークしません。 これが既定値です。|
    |EventType|文字列|いいえ、**RetentionType** が **EventAgeInDays** ではない場合です|このプロパティは、[イベントベースの保持](event-driven-retention.md)に使用するイベントの種類を指定します。 **[レコード管理]**、 > **[イベント]**、 > **[イベントの種類の管理]** に表示されている既存のイベントの種類を指定します。 または、[Get-CompianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) コマンドレットを使用して、利用可能なイベントの種類を表示します。 **従業員活動** や **製品ライフタイム** など、いくつかの組み込みのイベントの種類がありますが、独自のイベントの種類を作成することもできます。 </br> </br> 独自のイベントの種類を指定する場合、インポート プロセスの一環として名前が検証されるため、そのイベントの種類がインポート前に存在している必要があります。|
    |||

@@ -15,16 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 米国政府機関クラウドの管理者は、組織の人事 (HR) システムから従業員データをインポートするデータ コネクタをMicrosoft 365。 これにより、内部リスク管理ポリシーで人事データを使用して、組織に内部的な脅威を与える可能性のある特定のユーザーによるアクティビティを検出できます。
-ms.openlocfilehash: 16d6d72d557744e30d41795d5f8c8a17db81c6a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3c471fed07fc1f9cb5c86a027884f2973bf05ac5db53522f4e21a8eded5e7c7a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905929"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813840"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>米国政府機関で人事データをインポートするコネクタをセットアップする
 
-コンプライアンス センターでデータ コネクタを設定Microsoft 365人事 (HR) データを米国政府機関にインポートできます。 人事関連のデータには、従業員が辞職を提出した日付と、従業員の最終日の日付が含まれます。 この人事データは、内部での悪意のある活動やデータの盗難から組織[](insider-risk-management.md)を保護するために、内部リスク管理ソリューションなどの Microsoft の情報保護ソリューションで使用できます。 HR コネクタのセットアップは、コネクタによる認証に使用される Azure Active Directory でアプリを作成し、人事データを含む CSV マッピング ファイルを作成し、コンプライアンス センターでデータ コネクタを作成し、CSV ファイル内の HR データを Microsoft クラウドに取り込むスクリプト (スケジュールに基づいて) を実行します。 その後、データ コネクタはインサイダー リスク管理ツールによって使用され、米国政府機関にインポートされた人事データMicrosoft 365アクセスします。
+人事 (HR) データを米国政府機関にインポートMicrosoft 365 コンプライアンス センターデータ コネクタをセットアップできます。 人事関連のデータには、従業員が辞職を提出した日付と、従業員の最終日の日付が含まれます。 この人事データは、Microsoft の情報保護 リスク管理ソリューションなどの Microsoft の情報保護 ソリューションで使用[](insider-risk-management.md)して、組織内の悪意のあるアクティビティやデータの盗難から組織を保護できます。 HR コネクタのセットアップは、コネクタによる認証に使用される Azure Active Directory でアプリを作成し、人事データを含む CSV マッピング ファイルを作成し、コンプライアンス センターでデータ コネクタを作成し、CSV ファイル内の HR データを Microsoft クラウドに取り込むスクリプト (スケジュールに基づいて) を実行します。 その後、データ コネクタはインサイダー リスク管理ツールによって使用され、米国政府機関にインポートされた人事データMicrosoft 365アクセスします。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -71,7 +71,7 @@ CSV ファイルの最初の行 (ヘッダー行) には、必要な列名が一
 
 ## <a name="step-3-create-the-hr-connector"></a>手順 3: HR コネクタを作成する
 
-次の手順では、コンプライアンス センターに HR コネクタMicrosoft 365します。 手順 4 でスクリプトを実行すると、作成する HR コネクタが CSV ファイルから組織に HR データMicrosoft 365されます。 この手順では、コネクタの作成時に生成されるジョブ ID を必ずコピーしてください。 スクリプトの実行時にジョブ ID を使用します。
+次の手順では、HR コネクタを作成します。Microsoft 365 コンプライアンス センター。 手順 4 でスクリプトを実行すると、作成する HR コネクタが CSV ファイルから組織に HR データMicrosoft 365されます。 この手順では、コネクタの作成時に生成されるジョブ ID を必ずコピーしてください。 スクリプトの実行時にジョブ ID を使用します。
 
 1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、左側の **ナビゲーションで [** データ コネクタ] をクリックします。
 
@@ -157,7 +157,7 @@ HR コネクタをセットアップする最後の手順は、CSV ファイル 
 
 ## <a name="step-5-monitor-the-hr-connector"></a>手順 5: HR コネクタを監視する
 
-HR コネクタを作成し、スクリプトを実行して人事データをアップロードした後、コネクタを表示し、コンプライアンス センターでMicrosoft 365できます。 スクリプトを定期的に自動的に実行するスケジュールを設定した場合は、前回スクリプトを実行した後に現在の状態を表示することもできます。
+HR コネクタを作成し、スクリプトを実行して HR データをアップロードした後、コネクタを表示し、そのコネクタの状態をアップロードMicrosoft 365 コンプライアンス センター。 スクリプトを定期的に自動的に実行するスケジュールを設定した場合は、前回スクリプトを実行した後に現在の状態を表示することもできます。
 
 1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com) ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
 
@@ -211,7 +211,7 @@ HR コネクタを作成し、スクリプトを実行して人事データを�
 
    1. [引数 **の追加 (オプション)]** ボックスに、手順 4 で実行したのと同じスクリプト コマンドを貼り付けます。 たとえば、`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"` のように指定します。
 
-   1. [スタート **] (オプション) ボックス** に、手順 4 で実行したスクリプトのフォルダーの場所を貼り付けます。 たとえば、「 `C:\Users\contosoadmin\Desktop\Scripts` 」のように入力します。
+   1. [スタート **] (オプション) ボックス** に、手順 4 で実行したスクリプトのフォルダーの場所を貼り付けます。 たとえば、`C:\Users\contosoadmin\Desktop\Scripts` などです。
 
    1. **[OK] を** クリックして、新しいアクションの設定を保存します。
 
