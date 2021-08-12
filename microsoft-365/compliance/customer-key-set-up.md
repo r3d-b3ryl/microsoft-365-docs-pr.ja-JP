@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定する方法についてMicrosoft 365。
-ms.openlocfilehash: e187c01a355cc9b926e892cb3326b5a527c714a4
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 2db1aff638818fea18a55e331093fcd26ca30071995447ca817234f450798047
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796288"
 ---
 # <a name="set-up-customer-key"></a>顧客キーの設定
 
@@ -32,7 +32,7 @@ ms.locfileid: "52344676"
 
 開始する前に、組織に適切な Azure サブスクリプションとライセンスを持っている必要があります。 有料の Azure サブスクリプションを使用するには、Enterprise Agreementまたはクラウド サービス プロバイダーを使用します。 クレジット カードベースの支払いは受け付けておかねない。 請求に必要なアカウントを承認して設定します。 無料、試用版、スポンサーシップ、MSDN サブスクリプション、および従来のサポートで取得したサブスクリプションは対象外です。
 
-Office 365E5、Microsoft 365 E5、Microsoft 365 E5 Compliance、Microsoft 365 E5ガバナンス SKU は&顧客キーを提供します。 Office 365 Advanced ComplianceSKU は、新しいライセンスの調達に使用できなくなりました。 既存のOffice 365 Advanced Complianceライセンスは引き続きサポートされます。
+Office 365 E5、Microsoft 365 E5、Microsoft 365 E5 Compliance、Microsoft 365 E5、Microsoft 365 E5ガバナンス SKU はカスタマー &キーを提供します。 Office 365 Advanced ComplianceSKU は、新しいライセンスの調達に使用できなくなりました。 既存のOffice 365 Advanced Complianceライセンスは引き続きサポートされます。
 
 この記事の概念と手順については [、Azure Key Vault のドキュメントを参照](/azure/key-vault/) してください。 また、Azure で使用される用語 (Azure テナントなど) [をADします](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)。
   

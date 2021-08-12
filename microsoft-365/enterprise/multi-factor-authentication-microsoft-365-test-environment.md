@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for enterprise test environment multi-factor authentication
+title: Microsoft 365テスト環境の多要素認証の機能
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,35 +15,35 @@ ms.custom:
 - TLG
 - Ent_TLGs
 - seo-marvel-apr2020
-description: エンタープライズ テスト環境向け Microsoft 365 のスマートフォンに送信されるテキスト メッセージを使用して、多要素認証を構成します。
-ms.openlocfilehash: aeb8940a9499909b8c568d1230f9aa45aee07b3d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: エンタープライズ テスト環境でスマートフォンに送信されるテキスト メッセージを使用して多要素Microsoft 365構成します。
+ms.openlocfilehash: 4f410b7e8a57a119ecce33626354639af89c0e65aea01b123d213908735dbb00
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813020"
 ---
-# <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向け Microsoft 365 の多要素認証
+# <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向けMicrosoft 365要素認証
 
-*このテスト ラボ ガイドは、Microsoft 365 for enterprise と 365 Enterprise テストOffice両方に使用できます。*
+*このテスト ラボ ガイドは、エンタープライズ環境とテスト環境Microsoft 365両方Office 365 Enterprise使用できます。*
 
-Microsoft 365 またはサブスクリプションに Azure AD テナントを使用するサービスまたはアプリケーションにサインインする追加のレベルのセキュリティについては、アカウントを確認するためにユーザー名とパスワード以上を必要とする Azure AD 多要素認証を有効にできます。
+Microsoft 365 またはサブスクリプションに Azure AD テナントを使用するサービスまたはアプリケーションにサインインするセキュリティの追加レベルについては、アカウントを確認するためにユーザー名とパスワード以上の必要がある Azure AD 多要素認証を有効にできます。
 
 多要素認証では、ユーザーは、パスワードを正しく入力した後、電話を確認したり、テキスト メッセージで送信された検証コードを入力したり、スマートフォンでアプリで認証を確認したりする必要があります。 この 2 番目の認証要素が満たされた後にのみサインインできます。
   
 この記事では、特定のユーザー アカウントのテキスト メッセージ ベース認証を有効にしてテストする方法について説明します。
   
-エンタープライズ テスト環境用に Microsoft 365 でアカウントの多要素認証を設定するには、2 つのフェーズと 3 番目のオプション フェーズが必要です。
-- [フェーズ 1: エンタープライズ テスト環境向け Microsoft 365 を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+エンタープライズ テスト環境向け Microsoft 365アカウントの多要素認証のセットアップには、2 つのフェーズと 3 番目のオプション フェーズが含まれる。
+- [フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [フェーズ 2:User 2 アカウントに対して、多要素認証を有効にしてテストする](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
 - [フェーズ 3: 条件付きアクセス ポリシーを使用して多要素認証を有効にしてテストする](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Microsoft 365 for enterprise Test Lab Guide スタックのすべての記事へのビジュアル マップについては [、「Microsoft 365 for enterprise Test Lab Guide Stack」を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境向け Microsoft 365 を構築する
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する
 
 最小要件で軽量な方法で多要素認証をテストする場合は、「Lightweight 基本構成」の手順 [に従います](lightweight-base-configuration-microsoft-365-enterprise.md)。
   
@@ -70,7 +70,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
     
 7. [成功した **更新プログラム] ダイアログ ボックス** で、[閉じる] を **選択します**。
     
-8. **[Microsoft 365 管理** センター] タブで、右上のユーザー アカウント アイコンを選択し、[サインアウト]**を選択します**。
+8. [ユーザー  Microsoft 365 管理センター] タブで、右上のユーザー アカウント アイコンを選択し、[サインアウト]**を選択します**。
     
 9. ブラウザー インスタンスを閉じます。
    
@@ -78,7 +78,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
   
 1. ブラウザーの新しいプライベート インスタンスを開きます。
     
-2. [Microsoft 365 管理センターに移動](https://admin.microsoft.com)し、User 2 アカウント名とパスワードでサインインします。
+2. [[ユーザー]](https://admin.microsoft.com) Microsoft 365 管理センターに移動し、User 2 アカウント名とパスワードを使用してサインインします。
     
 3. サインイン後、詳細については、アカウントのセットアップを求めるメッセージが表示されます。 **[次へ]** を選択します。
     
@@ -98,17 +98,17 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
     
 8. User 2 アカウントでサインインするのが今回で初めての場合、パスワードの変更を求められます。 元のパスワードと新しいパスワードを 2 回入力し、[パスワードの更新とサインイン **] を選択します**。 新しいパスワードを安全な場所に記録します。
     
-    ブラウザーの [ホームOffice] タブにユーザー 2 Microsoft Office **ポータル** が表示されます。
+    ブラウザーの [Officeホーム] タブにユーザー 2 Microsoft Office **ポータル** が表示されます。
 
 ## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>フェーズ 3: 条件付きアクセス ポリシーを使用して多要素認証を有効にしてテストする
 
-*このフェーズは、エンタープライズ テスト環境用の Microsoft 365 でのみ使用できます。*
+*このフェーズは、エンタープライズ テスト環境のMicrosoft 365にのみ使用できます。*
 
 このフェーズでは、グループと条件付きアクセス ポリシーを使用して、User 3 アカウントの多要素認証を有効にします。
 
 次に、MFAUsers という名前の新しいグループを作成し、ユーザー 3 アカウントを追加します。
 
-1. **[Microsoft 365 管理** センター]タブで、左側のナビゲーションで [グループ] を選択し、[グループ] を **選択します**。
+1. [グループ] **Microsoft 365 管理センター** 左側のナビゲーションで [**グループ**] を選択し、[グループ] を **選択します**。
 2. [グループ **の追加] を選択します**。
 3. [グループの **種類の選択] ウィンドウで** 、[セキュリティ] **を選択** し、[次へ] を **選択します**。
 4. [基本 **の設定] ウィンドウで、[グループの作成** ] を選択 **し**、[閉じる] を **選択します**。
@@ -120,7 +120,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
 次に、MFAUsers グループのメンバーに多要素認証を要求する条件付きアクセス ポリシーを作成します。
 
 1. ブラウザーの新しいタブで、 に移動します [https://portal.azure.com](https://portal.azure.com) 。
-2. [Azure **Active Directory セキュリティ**  >  **の条件付**  >  **きアクセス] を選択します**。
+2. [セキュリティ **Azure Active Directory**  >  **アクセス**  >  **] を選択します**。
 3. [条件付き **アクセス - ポリシー] ウィンドウで、[** 新しいポリシー] **を選択します**。
 4. [新しい **] ウィンドウ** で、[名前] **ボックスにユーザー アカウント** の MFA と **入力** します。
 5. [割り **当て] セクションで** 、[ユーザーと **グループ] を選択します**。
@@ -129,7 +129,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
 8. [新しい **] ウィンドウの** [アクセス制御] セクション **で、[** 許可] を **選択します**。
 9. [付与 **] ウィンドウで** 、[多 **要素認証を要求** する] を選択し、[選択] を **選択します**。
 10. [新しい **] ウィンドウで**、[ポリシーの有効化 **] で [オン****] を** 選択し、[作成] を **選択します**。
-11. Azure portal **タブと Microsoft** **365 管理センター タブを閉** じます。
+11. Azure portal を **閉じ、** タブ **Microsoft 365 管理センター** します。
 
 このポリシーをテストするには、サインアウトして User 3 アカウントでサインインします。 MFA の構成を求めるメッセージが表示されます。 これは、MFAUsers ポリシーが適用されているのを示しています。
 

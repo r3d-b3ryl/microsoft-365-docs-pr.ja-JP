@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Exchange Online メールボックスに無制限のアーカイブ記憶域を提供する自動拡張アーカイブについて説明します。
-ms.openlocfilehash: d61d3649ed65a93298928cced21180bbeca6aa95
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 20be08209bbd4bad3bf0bdb0e7de4d602ee995a2873116981a9f7d892ffd1e46
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476268"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841274"
 ---
 # <a name="overview-of-unlimited-archiving"></a>無制限アーカイブの概要
 

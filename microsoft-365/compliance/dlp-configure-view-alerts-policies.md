@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止ポリシーのアラートを定義および管理する方法について説明します。
-ms.openlocfilehash: ee04f6080edcde86dc39c7f4aa43130223fee8bf
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 75483989e18ab519aae7d8f5a0cd257b31c6aad33981b1d0ab6b7acda4293585
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51750039"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796133"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>データ損失防止ポリシーのアラートを構成および表示する
 
-データ損失防止 (DLP) ポリシーは、機密アイテムの意図しない共有を防止するために保護措置を取る場合があります。 機密性の高いアイテムに対してアクションが実行された場合は、DLP のアラートを構成することで通知を受け取る可能性があります。 この記事では、データ損失防止 (DLP) ポリシーにリンクされているリッチ アラート ポリシーを定義する方法について説明します。 新しい DLP アラート管理ダッシュボードを Microsoft 365 コンプライアンス センターで使用して、DLP ポリシー違反のアラート、[イベント、および](https://compliance.microsoft.com/)関連するメタデータを表示する方法について説明します。
+データ損失防止 (DLP) ポリシーは、機密アイテムの意図しない共有を防止するために保護措置を取る場合があります。 機密性の高いアイテムに対してアクションが実行された場合は、DLP のアラートを構成することで通知を受け取る可能性があります。 この記事では、データ損失防止 (DLP) ポリシーにリンクされているリッチ アラート ポリシーを定義する方法について説明します。 DLP ポリシー違反のアラート、イベント、および関連するメタデータを表示[](https://compliance.microsoft.com/)するには、Microsoft 365 コンプライアンス センターで新しい DLP アラート管理ダッシュボードを使用する方法について説明します。
 
 <!-- LEFT OFF HERE-->
 
@@ -37,7 +37,7 @@ ms.locfileid: "51750039"
 
 次の機能は、この一部です。
 
--   **DLP アラート管理ダッシュボード**: コンプライアンス センター [Microsoft 365、](https://compliance.microsoft.com/)このダッシュボードには、次のワークロードに適用される DLP ポリシーのアラートが表示されます。
+-   **DLP アラート管理ダッシュボード**: このダッシュボード [Microsoft 365 コンプライアンス センター、次](https://compliance.microsoft.com/)のワークロードに適用される DLP ポリシーに関するアラートが表示されます。
 
     -   Exchange
     -   SharePoint
@@ -101,7 +101,7 @@ DLP アラート管理ダッシュボードにアクセスするには、[アラ
 
 DLP アラート管理ダッシュボードを操作するには、次の操作を行います。
 
-1.  コンプライアンス センター [Microsoft 365、](https://www.compliance.microsoft.com)データ損失防止 **に移動します**。
+1.  [データ [損失Microsoft 365 コンプライアンス センター]](https://www.compliance.microsoft.com)**に移動します**。
 
 2.  [アラート] **タブを** 選択して、DLP アラート ダッシュボードを表示します。
 

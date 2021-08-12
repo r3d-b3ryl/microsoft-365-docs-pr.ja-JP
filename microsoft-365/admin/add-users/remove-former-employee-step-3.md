@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 次の手順に従って、元従業員のメールを別の従業員に転送するか、共有メールボックスに変換します。
-ms.openlocfilehash: f9d5cefd761d95a3df03864aa14de1bcfb608d04
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 07973e47dd7f79ad4adc9121c9a2f6d368bb699e22d6d2cbacb91d3b8fce4fbf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827361"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>手順 3 - 元従業員のメールを別の従業員に転送するか、共有メールボックスに変換する
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーで使用できるラベル付けアクティビティの一覧。
-ms.openlocfilehash: 6dbfe8341e714c49795d8aaf7991988bec901496bf28b2bbd4d4711bdbd81c23
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: e9c1fadfda0d0e0fbfc5d942378035ea60ffaf266b64c117dfeb400411b30053
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520485"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796108"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>アクティビティ エクスプローラーで使用できるアクティビティのラベル付け
 
@@ -39,7 +39,7 @@ ms.locfileid: "54520485"
 |ソース  |アクティビティ エクスプローラーで報告される | 注  |
 |---------|---------|---------|
 | Word、Excel、PowerPoint|はい |
-|Outlook| はい | |
+|Outlook| はい |From Win 32 |
 |SharePointオンライン、OneDrive|はい | |
 |Exchange        |はい         | |
 |Azure Information Protection (AIP) 統合クライアントと AIP 統合スキャナー |はい |AIP の *新しいラベル* アクションは、アクティビティ エクスプローラー *に適用されるラベル* にマップされます。   |
@@ -63,7 +63,7 @@ ms.locfileid: "54520485"
 |ソース  |アクティビティ エクスプローラーで報告される|注  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |はい         |
-|Outlook         |はい         |
+|Outlook         |はい         |Win 32|
 |SharePointオンライン、OneDrive         |はい         |
 |Exchange         |はい         |
 |AIP 統合クライアント         |はい         |
@@ -84,7 +84,7 @@ ms.locfileid: "54520485"
 |ソース  |アクティビティ エクスプローラーで報告される | 注  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |はい         |
-|Outlook         |はい         ||
+|Outlook         |はい         |Win 32|
 |SharePointオンライン、OneDrive         |はい         |
 |Exchange         |はい         |
 |AIP 統合クライアント         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。|

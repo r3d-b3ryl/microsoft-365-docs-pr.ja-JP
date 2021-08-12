@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: コンテンツを保存、収集、レビュー、エクスポートする方法については、Microsoft TeamsのAdvanced eDiscovery。
-ms.openlocfilehash: fc6fcc7973d9582714106506a41058bb2a905372
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: e5e899b3ee6268c0214dbcfe6b53566072fc75ed045e728a0f7845f25354e552
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544027"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841345"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscoveryケースを使用して、Microsoft Teamsのワークフローを確認する (プレビュー)
 
@@ -261,7 +261,7 @@ Advanced eDiscovery で使用されるロジックは、Teams コンテンツの
 
 次の表に、コンテンツのメタデータ プロパティTeams示します。
 
-|Metadata プロパティ  |説明  |
+|Metadata プロパティ  |Description  |
 |:---------|:---------|
 |ContainsEditedMessage      | トランスクリプト ファイルに編集されたメッセージが含まれているかどうかを示します。 トランスクリプト ファイルを表示すると、編集されたメッセージが識別されます。|
 |ConversationId|アイテムが関連付けられている会話を識別する GUID。 同じ会話のトランスクリプト ファイルと添付ファイルは、このプロパティの値が同じです。|
@@ -271,7 +271,7 @@ Advanced eDiscovery で使用されるロジックは、Teams コンテンツの
 |FamilyId|チャット会話のトランスクリプト ファイルを識別する GUID。 添付ファイルには、ファイルが添付されたメッセージを含むトランスクリプト ファイルと同じ値がこのプロパティに設定されます。|
 |FileClass     |コンテンツの種類を示します。 チャットのTeamsは値です `Conversation` 。 これに対し、Exchangeメッセージの値はです `Email` 。|          |
 |MessageKind     | メッセージの種類プロパティ。 Teamsコンテンツに値があります `microsoftteams , im` 。 |
-|Recipients     | トランスクリプト会話内でメッセージを受け取ったすべてのユーザーの一覧。|
+|受信者     | トランスクリプト会話内でメッセージを受け取ったすべてのユーザーの一覧。|
 |TeamsChannelName     | トランTeamsのチャネル名またはプライベート チャネル名を指定します。|
 |||
 

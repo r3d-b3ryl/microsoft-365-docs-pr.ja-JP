@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure ExpressRoute で BGP コミュニティを使用して、複数のシナリオで必要な IP プレフィックスと必要な帯域幅の数を管理するOffice 365します。
-ms.openlocfilehash: 9cb6980c1d8cc120f99cac087602856aeacf1adf
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7dd274524ece89c6114be594c24e1a5ee049de77f139fd2116f32c6dd3adc502
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905214"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819573"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>ExpressRoute での BGP コミュニティの使用によるOffice 365シナリオ
 
@@ -107,9 +107,9 @@ BGP コミュニティを利用して、ExpressRoute のアドバタイズ方法
 
 戻って来るのに使用できる短いリンクを次に示します [https://aka.ms/bgpexpressroute365]() 。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   

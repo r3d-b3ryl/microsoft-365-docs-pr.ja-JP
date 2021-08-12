@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 64686f84d8e4cc7dca40a875d8b54508ea9a1fc9
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 37e6559e0fbdf6ceef853b4587fee61d622f4905f7e4be0ab524f076791e9fb5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648473"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834625"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>デバイスを登録するためのパートナー向け手順
 
@@ -47,7 +47,7 @@ ms.locfileid: "53648473"
 |---------|---------|
 |機密性の高いデータ     |**Microsoft365Managed \_ SensitiveData**    |
 |Power User     | **Microsoft365Managed \_ PowerUser**          |
-|Standard     | **Microsoft365Managed \_ Standard**        |
+|標準     | **Microsoft365Managed \_ Standard**        |
 
 > [!IMPORTANT]
 > グループ名は、大文字と特殊文字を含む、表に記載されている名前と完全に一致する必要があります。 これにより、新しく登録されたデバイスに Autopilot プロファイルMicrosoft マネージド デスクトップ割り当てることができます。
@@ -71,7 +71,7 @@ ms.locfileid: "53648473"
 |---------|---------|
 |機密性の高いデータ     | **Microsoft365Managed \_ SensitiveData**     |
 |Power User     | **Microsoft365Managed \_ PowerUser**          |
-|Standard     | **Microsoft365Managed \_ Standard**      |
+|標準     | **Microsoft365Managed \_ Standard**      |
 
 > [!IMPORTANT]
 > グループ タグは、大文字と特殊文字を含む、表に記載されているタグと完全に一致する必要があります。 これにより、新しく登録されたデバイスに Autopilot プロファイルMicrosoft マネージド デスクトップ割り当てることができます。

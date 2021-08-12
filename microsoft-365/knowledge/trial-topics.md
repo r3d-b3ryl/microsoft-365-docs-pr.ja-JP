@@ -12,12 +12,12 @@ ms.custom: ''
 search.appverid: ''
 localization_priority: Normal
 description: 組織のユーザー向け試用版パイロット プログラムを計画Microsoft Viva トピックする方法について学習します。
-ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 529d201203c45a5b3f39d1c6ac0f1a3a7f691aaba23098dafc32a42911247aca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649625"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834685"
 ---
 # <a name="run-a-trial-of-microsoft-viva-topics"></a>テストの試用版を実行Microsoft Viva トピック
 

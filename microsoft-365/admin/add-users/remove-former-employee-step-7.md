@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 次の手順に従って、元従業員のユーザー アカウントを削除します。
-ms.openlocfilehash: 6f1f307a7029bcf1cbf71a2ce85908b9ccb28ba5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: be7f46ebae50c078ab90b4eb00fd658e3dbe0c008bd1862fa88162b76c5e07cb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827349"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>手順 7 - 元従業員のユーザー アカウントを削除する
 

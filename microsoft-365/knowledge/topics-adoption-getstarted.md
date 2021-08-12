@@ -1,6 +1,6 @@
 ---
-title: Microsoft Viva Topics の導入を開始する
-description: 組織での Microsoft Viva Topics の導入を促進する方法について説明します。
+title: ユーザーの導入を促進するMicrosoft Viva トピック
+description: 組織でのユーザーの導入を促進Microsoft Viva トピックする方法について学習します。
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: e8d7ca4786893fb5eb39090d9a271ace1c62d321
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 591b83823aac1679209ed6cdd0069d559e9fe3e7adfbf7a3f24f0730f37ce912
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596970"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834710"
 ---
-# <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Microsoft Viva Topics の導入を開始する
+# <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>ユーザーの導入を促進するMicrosoft Viva トピック
 
 導入を開始する前に、ナレッジ管理とビバ トピックに関する概念を理解する必要があります。 次の図は、トピックの検出とキュレーション中に何が起こるかを示しています。
 
@@ -69,7 +69,7 @@ Viva トピックを最大限に活用するため、この前提条件のリス
     - コミュニティの構築を開始し、これらの異なるグループによって組織全体でビバ トピックを使用する方法について考え始める。
 
 3. 組織のトレーニング: ほとんどのユーザーは、トピックの概念と、トピック カードが関連情報をコンパイルする方法を直感的に理解し、その価値を理解して確認します。 ただし、独自の文化と組織に合わせたトレーニングを作成して、ビバ トピックの使用方法を示す場合があります。 いくつかのトレーニング リソース:
-    - [Projectコーテックス リソース センター](https://aka.ms/projectcortex). 概要と機能情報、記録されたオフィス時間のビデオとプレゼンテーション、パートナーとその提供に関する情報が含まれます。
+    - [プロジェクト Cortex リソース センター](https://aka.ms/projectcortex). 概要と機能情報、記録されたオフィス時間のビデオとプレゼンテーション、パートナーとその提供に関する情報が含まれます。
     - 近日公開予定の、エンド ユーザー向けトレーニング ビデオとヘルプ。
 
 4. [チャンピオン ネットワークを構築する](#build-a-champion-network):
@@ -87,7 +87,7 @@ Viva トピックを最大限に活用するため、この前提条件のリス
 
 人事マネージャーは、新入社員に情報を提供する必要があります。 これらのユーザーは、迅速かつ効率的にオンボードする必要がある適切なリソース、ドキュメント、およびチーム メンバーを指し示す必要があります。 新入社員は、複数のリポジトリ間で検索したり、既に使用しているアプリケーションを離れることなく、必要な情報をすばやく見つけ出すソリューションを探しています。
 
-以下に例を示します。
+次に例を示します。
 
 - 従業員 (ヨルダン) が新しい役割を引き受け、または新しく採用され、役割から始まるばかりです。 ヨルダンは、可能な限り迅速に関与し、生産性を高めてほしいと考えています。 しかし、ヨルダンでは、開始場所を見つける際の支援も必要です。
 - ヨルダンがトピック ページを作成する前に役割を果たした同僚 (Kim) は、新入社員や、その情報を探している他の誰かを助けることができるトピック ページを作成しました。

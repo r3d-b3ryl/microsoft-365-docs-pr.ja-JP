@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas からテキスト区切りデータをインポートおよびアーカイブするコネクタを設定して、Microsoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 9a8265766dd08a78c3f218710a3bc4b623f7f670
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: fa4a3ed6e03f20c4fe63ceb9019620a76e943d963a583062193d5c1dc78c669f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796315"
 ---
 # <a name="set-up-a-connector-to-archive-text-delimited-data"></a>テキスト区切りデータをアーカイブするコネクタをセットアップする
 
-コンプライアンス センターの Veritas コネクタをMicrosoft 365、テキスト区切りデータをインポートして、組織のユーザー メールボックスMicrosoft 365します。 Veritas には[](https://globanet.com/text-delimited)、サードパーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成されたテキスト区切りコネクタが提供されています。 コネクタは、テキストで区切られたデータ ソースから電子メール メッセージ形式にコンテンツを変換し、それらのアイテムをユーザーのメールボックスにインポートMicrosoft 365。
+テキスト区切りデータをインポートおよびアーカイブするには、Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、組織内のユーザー メールボックスMicrosoft 365します。 Veritas には[](https://globanet.com/text-delimited)、サードパーティのデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成されたテキスト区切りコネクタが提供されています。 コネクタは、テキストで区切られたデータ ソースから電子メール メッセージ形式にコンテンツを変換し、それらのアイテムをユーザーのメールボックスにインポートMicrosoft 365。
 
 テキストで区切られたデータをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルなどの Microsoft 365 コンプライアンス機能を適用できます。 テキストで区切られたデータ コネクタを使用してデータをインポートおよびアーカイブする方法は、Microsoft 365規制ポリシーに準拠し、組織を維持するのに役立ちます。
 
@@ -35,7 +35,7 @@ ms.locfileid: "51163941"
 
 2. 24 時間に 1 回、テキストで区切られたソースからのチャット メッセージが Veritas Merge1 サイトにコピーされます。 コネクタは、コンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成するテキスト区切りコネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage 場所にメッセージを転送します。
+3. Microsoft 365 コンプライアンス センター で作成するテキスト区切りコネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内のセキュリティで保護された Azure Storage 場所にメッセージを転送します。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたメッセージ アイテムを特定のユーザーのメールボックスにインポートします。 Text- **Delimited** という名前の受信トレイ フォルダー内の新しいサブフォルダーがユーザー のメールボックスに作成され、メッセージ アイテムがそのフォルダーにインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべてのメッセージには、このプロパティが含まれるので、すべての参加者の電子メール アドレスが設定されます。
 
@@ -43,11 +43,11 @@ ms.locfileid: "51163941"
 
 - Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://globanet.com/ms-connectors-contact)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 
-- 手順 1 でテキスト区切りコネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、コンプライアンス センターの [**データ** コネクタ] ページにコネクタを追加Microsoft 365必要です。 既定では、この役割はグループ内の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- 手順 1 でテキスト区切りコネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、データ コネクタ ページの[データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 既定では、この役割はグループ内の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
 
 ## <a name="step-1-set-up-the-text-delimited-connector"></a>手順 1: テキスト区切りコネクタを設定する
 
-最初の手順は、コンプライアンス センターの [データ コネクタ] ページMicrosoft 365、テキストで区切られたデータのコネクタを作成することです。
+最初の手順は、ページの[データ コネクタ] ページにアクセスしMicrosoft 365 コンプライアンス センター区切られたデータのコネクタを作成することです。
 
 1. [データ コネクタ [https://compliance.microsoft.com](https://compliance.microsoft.com/) テキスト区切り] に移動  >  **し、[データ コネクタ] をクリックします**。
 
@@ -63,11 +63,11 @@ ms.locfileid: "51163941"
 
 2 番目の手順は、Merge1 サイトでテキスト区切りコネクタを構成することです。 Veritas Merge1 サイトでテキスト区切りコネクタを構成する方法については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20text-delimited%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 
-[ファイルの **保存と&完了**] をクリックすると、コンプライアンス センターのコネクタ ウィザードの [ユーザー Microsoft 365] ページが表示されます。
+[ファイルの **保存と&完了**] をクリックすると、コネクタ ウィザードの [ユーザー マッピング] ページが表示Microsoft 365 コンプライアンス センターされます。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
-ユーザーをマップし、コンプライアンス センターでコネクタMicrosoft 365するには、次の手順を実行します。
+ユーザーをマップし、コネクタのセットアップを完了するには、次Microsoft 365 コンプライアンス センター手順を実行します。
 
 1. [外部ユーザー **をユーザーにマップMicrosoft 365] ページで**、自動ユーザー マッピングを有効にします。 テキスト区切りソース アイテムには、組織内のユーザーの電子メール アドレスを含む *Email* というプロパティが含まれます。 コネクタでこのアドレスをユーザーに関連付Microsoft 365、アイテムはユーザーのメールボックスにインポートされます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "51163941"
 
 ## <a name="step-4-monitor-the-text-delimited-connector"></a>手順 4: テキスト区切りコネクタを監視する
 
-テキスト区切りコネクタを作成した後、コンプライアンス センターでコネクタのMicrosoft 365できます。
+テキスト区切りコネクタを作成した後、コネクタの状態を [テキスト区切り] Microsoft 365 コンプライアンス センター。
 
 1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com) ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
 

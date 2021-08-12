@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーでトレーニング可能な分類子にフィードバックを提供する方法について学習します。
-ms.openlocfilehash: ef0539a3d474ffecaeac8633b4a58aa068a5c182
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: fddb25bb1ebf702d19767c13f65df4f925fcfc78a7036eb769b96241b271471c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796348"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>コンテンツ エクスプローラーで分類子を再トレーニングする方法
 
@@ -61,7 +61,7 @@ ms.locfileid: "52793066"
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>コンテンツ エクスプローラーで分類子を再トレーニングする方法
 
-1. コンプライアンス管理者またはセキュリティ管理者Microsoft 365アクセスしてコンプライアンス センターにサインインし、コンプライアンス センター **データ** Microsoft 365コンテンツ エクスプローラー  >  **を**  >  **開きます**。 
+1. コンプライアンス管理者またはセキュリティ管理者Microsoft 365 コンプライアンス センターアクセス権を持つユーザーにサインインし、データ **Microsoft 365 コンプライアンス センター**  >  **コンテンツ エクスプローラーを**  >  **開きます**。 
 2. [ラベル、 **情報の種類、または** カテゴリのフィルター] ボックスの一覧で、[トレーニング可能な **分類子] を展開します**。
 
 > [!IMPORTANT]

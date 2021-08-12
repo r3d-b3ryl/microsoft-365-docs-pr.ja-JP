@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceFileEvents テーブル
 description: 高度なハンティング スキーマの DeviceFileEvents テーブルのファイル関連イベントについて説明します。
-keywords: 高度なハンティング、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、filecreationevents、DeviceFileEvents、ファイル、パス、ハッシュ、sha1、sha256、md5
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、filecreationevents、DeviceFileEvents、ファイル、パス、ハッシュ、sha1、sha256、md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1b716a37aa39dffc8dc541335f42265ae47fe989
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 980cac2d3997e062758a5d8f95f86ff5fa65a8988e94b2485136ed5eca49a7d1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806162"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -77,12 +77,12 @@ ms.locfileid: "52023006"
 |` InitiatingProcessVersionInfoInternalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの内部ファイル名 |
 | `InitiatingProcessVersionInfoOriginalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの元のファイル名 |
 | `InitiatingProcessVersionInfoFileDescription` | string | イベントを担当するプロセス (イメージ ファイル) のバージョン情報の説明 |
-| `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
+| `InitiatingProcessId` | 整数 | イベントを開始したプロセスのプロセス ID (PID) |
 | `InitiatingProcessCommandLine` | string | イベントを開始したプロセスの実行に使用されるコマンド ライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日時 |
 | `InitiatingProcessIntegrityLevel` | string | イベントを開始したプロセスの整合性レベル。 Windows、インターネットダウンロードから起動した場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てる必要があります。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
 | `InitiatingProcessTokenElevation` | string | イベントを開始したプロセスに適用されるユーザー アクセス制御 (UAC) 特権昇格の有無を示すトークンの種類 |
-| `InitiatingProcessParentId` | int | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
+| `InitiatingProcessParentId` | 整数 | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
 | `InitiatingProcessParentFileName` | string | イベントを担当するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
 | `RequestProtocol` | string | ネットワーク プロトコル (該当する場合) を使用してアクティビティを開始します。不明、ローカル、SMB、または NFS |
@@ -95,14 +95,14 @@ ms.locfileid: "52023006"
 | `InitiatingProcessFileSize` | long | イベントの処理を実行したファイルのサイズ |
 | `SensitivityLabel` | string | 電子メール、ファイル、または他のコンテンツに適用されるラベルを情報保護のために分類する |
 | `SensitivitySubLabel` | string | 電子メール、ファイル、または他のコンテンツに適用されるサブラベルを、情報保護のために分類します。感度サブラベルは、感度ラベルの下でグループ化されますが、個別に処理されます。 |
-| `IsAzureInfoProtectionApplied` | boolean | ファイルが Azure Information Protection によって暗号化されているかどうかを示します。 |
+| `IsAzureInfoProtectionApplied` | ブール値 | ファイルが Azure Information Protection によって暗号化されているかどうかを示します。 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
 | `AppGuardContainerId` | string | ブラウザーのアクティビティを分離するために Application Guard が使用する仮想化コンテナーの識別子 |
 | `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
 >[!NOTE]
 > ファイル ハッシュ情報は、利用可能なときに常に表示されます。 ただし、SHA1、SHA256、または MD5 を計算できない理由はいくつか考えられる。 たとえば、ファイルがリモート ストレージに置かれているか、別のプロセスによってロックされている、圧縮されている、または仮想としてマークされている可能性があります。 これらのシナリオでは、ファイル ハッシュ情報は空に表示されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

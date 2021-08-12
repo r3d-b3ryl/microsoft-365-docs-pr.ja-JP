@@ -14,12 +14,12 @@ ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
 ms.collection:
 - M365-security-compliance
 description: Office 365 Message Encryption により、電子メール ユーザーは、組織の内外の人々に暗号化されたメッセージを送信することができます。 管理者は、暗号化の条件Office 365 Message Encryptionメール フロー ルール (トランスポート ルールとも呼ばれる) を作成することで、メール フロールールを有効にできます。
-ms.openlocfilehash: 18c934b0529554a757af5fdb3de02678ee8cefa8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3976af62fac02d0ad772c0fd7f270487b306e42e4e80a85e1ddaa55f48ef5ab4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795904"
 ---
 # <a name="enable-message-encryption-and-decryption"></a>メッセージの暗号化と復号化を有効にする
 

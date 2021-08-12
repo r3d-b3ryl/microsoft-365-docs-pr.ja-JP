@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 問題が発生した場合に Microsoft サポート エンジニアがデータにアクセスする方法を制御できるカスタマー ロックボックス要求について説明します。
-ms.openlocfilehash: 6a6a1d45bfbc8b7c65d9ac8d58eb246643505c4f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4669abefe039d0f4ba75f22d267c54696cb680aee44df560befd93006c515ae5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922711"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796247"
 ---
 # <a name="customer-lockbox-in-office-365"></a>顧客ロックボックス (Office 365
 
@@ -54,9 +54,9 @@ Microsoft のエンジニアが、サポート プロセスで報告された問
 
     ![顧客ロックボックスの電子メール通知の例](../media/CustomerLockbox1.png)
 
-   管理センターで顧客[ロック](/office365/admin/add-users/about-admin-roles)ボックス アクセス承認者の管理者ロールが割り当てられているMicrosoft 365、顧客ロックボックス要求を承認できます。
+   顧客ロックボックス アクセス[承認者](/office365/admin/add-users/about-admin-roles)の管理者ロールが割り当てられているユーザーは、Microsoft 365 管理センターを承認できます。
 
-6. 承認者は管理者センターにMicrosoft 365し、要求を承認します。 この手順では、監査ログの検索によって使用可能な監査レコードの作成が開始されます。 詳細については [、「Auditing Customer Lockbox requests」を参照してください](#auditing-customer-lockbox-requests)。
+6. 承認者は、ユーザーにサインインMicrosoft 365 管理センター要求を承認します。 この手順では、監査ログの検索によって使用可能な監査レコードの作成が開始されます。 詳細については [、「Auditing Customer Lockbox requests」を参照してください](#auditing-customer-lockbox-requests)。
 
    顧客が要求を拒否した場合、または 12 時間以内に要求を承認しない場合、要求の有効期限が切れ、Microsoft エンジニアにアクセス権は付与されません。
 
@@ -167,7 +167,7 @@ Microsoft 365 管理センターで、カスタマー ロックボックス コ�
 
 ### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>Microsoft のエンジニアによって実行されたアクションの監査レコード
 
-カスタマー ロックボックス要求が承認された後 Microsoft のエンジニアが実行するアクション (顧客コンテンツへのアクセスにつながる可能性があります) は、監査ログに記録されます。 これらのレコードには、次の情報が含まれています。
+カスタマー ロックボックス要求が承認された後、Microsoft のエンジニアが実行するアクション (顧客コンテンツへのアクセスにつながる可能性があります) は、監査ログに記録されます。これらのレコードには、次の情報が含まれます。
 
 | 監査レコードのプロパティ| 説明|
 |:---------- |:----------|
@@ -185,7 +185,7 @@ Microsoft 365 管理センターで、カスタマー ロックボックス コ�
 
 #### <a name="is-customer-lockbox-available-to-all-customers"></a>顧客ロックボックスは、すべての顧客が利用できますか?
 
-カスタマー ロックボックスは Microsoft 365 または Office 365 E5 サブスクリプションに含まれており、情報保護とコンプライアンス、または高度なコンプライアンス アドオン サブスクリプションを使用して他のプランに追加できます。 詳細については [、「プランと価格」](https://products.office.com/business/office-365-enterprise-e5-business-software) を参照してください。
+顧客ロックボックスは Microsoft 365 または Office 365 E5 サブスクリプションに含まれており、情報保護とコンプライアンス、または高度なコンプライアンス アドオン サブスクリプションを使用して他のプランに追加できます。 詳細については [、「プランと価格」](https://products.office.com/business/office-365-enterprise-e5-business-software) を参照してください。
 
 #### <a name="what-is-customer-content"></a>顧客コンテンツとは
 
@@ -219,7 +219,7 @@ Microsoft 365 管理センターで、カスタマー ロックボックス コ�
 
 #### <a name="how-do-i-opt-in-to-customer-lockbox"></a>カスタマー ロックボックスにオプトインする方法
 
-グローバル管理者は、管理者センターまたは管理センターで顧客ロックMicrosoft 365構成Microsoft 365できます。
+グローバル管理者は、管理者または管理者のアカウントで顧客ロックボックスを有効Microsoft 365構成Microsoft 365 管理センター。
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>Customer Lockbox 要求を承認した場合、エンジニアは何を行い、Microsoft エンジニアが何を行ったのかをどのように知るのですか?
 
@@ -227,7 +227,7 @@ Customer Lockbox 要求を承認すると、Microsoft エンジニアは事前�
 
 #### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>Microsoft が承認プロセスに従っているのを知る方法
 
-組織の管理者と承認者に送信される電子メール承認通知を、管理者センターの Customer Lockbox 要求履歴と相互参照Microsoft 365できます。
+組織内の管理者と承認者に送信される電子メール承認通知を、組織内の顧客ロックボックス要求履歴と相互参照Microsoft 365 管理センター。
 
 顧客ロックボックスは、最新の [SOC 1 SSAE 16 監査レポートに含まれています](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports)。 詳細については、Microsoft Service Trust Portal で最新のレポート [を確認できます](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports)。
 
@@ -241,11 +241,11 @@ Customer Lockbox 要求を承認すると、Microsoft エンジニアは事前�
 
 #### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Customer Lockbox 要求が承認されると、アクセス許可はどのくらい有効ですか?
 
-現在、Microsoft のエンジニアに付与されるアクセス許可の最長期間は 4 時間です。 Microsoft のエンジニアは、より短い期間を要求することもできます。
+現在、Microsoft のエンジニアに付与されるアクセス許可の最長期間は 4 時間です。Microsoft のエンジニアは、より短い期間を要求することもできます。
 
 #### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>すべての Customer Lockbox 要求の履歴を取得する方法
 
-すべての Customer Lockbox 要求は、管理センター Microsoft 365表示されます。
+すべての顧客ロックボックス要求は、ユーザーのMicrosoft 365 管理センター。
 
 #### <a name="how-do-i-correlate-the-content-access-requests-with-the-related-audit-logs"></a>コンテンツ アクセス要求と関連する監査ログを関連付ける方法
 

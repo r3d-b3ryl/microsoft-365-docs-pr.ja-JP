@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b98ee3bfb4c7bc8cb3c8c098215d53eddd6c99db
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8116d5d1caaa24951ad9baf9e291bf3fd850abfbe7ae2402022f8fafcf883673
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834601"
 ---
 # <a name="work-with-reports"></a>レポートを操作する
 
