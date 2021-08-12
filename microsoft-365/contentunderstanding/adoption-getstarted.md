@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 8a5442fcf8dd50cdee6be97ba7c9bbf5e21408a3
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: aec8eeeacb520c8ac035a099639e8f788c4cf1c96f8d42588cda8d992fb9d2f3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288157"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795385"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex導入: 使い始める
 
@@ -70,10 +70,10 @@ ms.locfileid: "53288157"
 
 組織内でモデルを構築および管理するユーザーを決定しますか? 次の役割が関係している可能性があります。
 
-| SharePoint/ナレッジ管理者 | Power プラットフォーム管理者 | 知識マネージャー | モデル所有者 |
+| SharePoint/知識管理者 | Power プラットフォーム管理者 | 知識マネージャー | モデル所有者 |
 |:-------|:-------|:-------|:-------|
 | AAD の役割| AAD の役割 | AAD の役割 | チャンピオン |
-| フォームの処理を構成する | フォーム処理用に共通データ サービス環境を構成する | 使用例の収集 | ビジネスの使用例を収集する |
+| フォーム処理を構成する | フォーム処理用に共通データ サービス環境を構成する | 使用例の収集 | ビジネスの使用例を収集する |
 | コンテンツ センターとアクセス許可を管理する| AIB クレジットの購入と割り当て | ベスト プラクティスを確立し、モデル分析を確認する | モデルの作成と適用 |
 
 ナレッジ マネージャー、ビジネス プロセス所有者、およびコンテンツ モデル所有者は、組織でサンプル モデルとチャンピオン導入を作成します。
@@ -123,7 +123,7 @@ ms.locfileid: "53288157"
 1. 終了状態を計画する
     - ドキュメント理解モデルは、最後ではなく手段です。
     - 抽出されたメタデータの値を次の値で活用する計画を立て、
-      - Search
+      - 検索
       - フィルター処理と表示の書式設定
       - コンプライアンス
       - オートメーション
@@ -146,4 +146,4 @@ ms.locfileid: "53288157"
 
 ## <a name="see-also"></a>関連項目
 
-[ユーザーのシナリオと使用SharePoint Syntex](adoption-scenarios.md)
+[SharePoint Syntex のシナリオとユース ケース](adoption-scenarios.md)

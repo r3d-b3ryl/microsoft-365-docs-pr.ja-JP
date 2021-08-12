@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: 008f944937e79132839aee165e8ee8c4db04533f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 1219497a2b9145c19ec316e20bb4bd58056a4e67ccbc71a4c2f9c9f9e49994d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794008"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>PowerShell を使用したエンドポイント API 用 Microsoft Defender
 

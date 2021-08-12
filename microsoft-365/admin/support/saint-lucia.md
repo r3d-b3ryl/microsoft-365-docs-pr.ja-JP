@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 17abaa21428f92fc7add1c851cd57bea0f0885b3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: e11d5afe18ce2a65111275043335db52b43d3b4e23fbc24c4a50201054737222
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295477"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804278"
 ---
 # <a name="contact-support-for-saint-lucia"></a>セントルシアのサポートに問い合わせ
 

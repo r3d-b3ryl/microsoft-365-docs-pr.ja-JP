@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: デバイスで Microsoft 365 サービスを使用する前に、最初にデバイスの Basic Mobility and Security に登録する必要Microsoft 365。
-ms.openlocfilehash: 9da3424409a950670e3be45354a5c399fec52372
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 65f3d224b6dd3832416d1f1c1b9d9a6d933f3305a419abebe997a4fb765a5989
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826773"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>基本モビリティとセキュリティを使用してモバイル デバイスを登録する
 
@@ -77,6 +77,6 @@ Google Play ストアに移動し、アプリをダウンロードしてイン�
 
 ポータル サイトを使用してWindows電話または PC に接続して構成するには、「Microsoft 365でのWindowsデバイスの登録」を[参照Intune ポータル サイト。](/intune-user-help/windows-enrollment-company-portal)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 デバイスが Basic Mobility and Security に登録された後、デバイス上の Office アプリの使用を開始して、電子メール、予定表、連絡先、ドキュメントを操作できます。

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 各ドキュメントで主なAdvanced eDiscoveryを見つけることで、レビュー セットを整理するには、ページの [テーマ] を使用します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3dfc0dca0c6ed62e3ce8384efa2fd3ea407c3ce8
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 342984d2482ea0027b9f6a77bdba911ede2404a6428f7b6bf4fb7a397c8c65a7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285533"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795436"
 ---
 # <a name="themes-in-advanced-ediscovery"></a>[テーマ] Advanced eDiscovery
 

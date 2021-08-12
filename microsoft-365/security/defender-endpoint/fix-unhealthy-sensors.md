@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 737a0e4b7e75b24bde486b79667da8e7771bbefa
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 73c63374b980eea272d8940b7c6e62827788075c3827341dfe1ff039d4c6fa58
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649325"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833893"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で問題が発生したセンサーの修正
 

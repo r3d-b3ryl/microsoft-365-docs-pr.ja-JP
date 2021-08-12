@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 6df23e0d7e3ea0ecd7ebacd96f00cb47b9e0aa84
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 22d49a85ae4d89e3d596a00a0d47468ed213788c1b46d850914d2eaecef56ec1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819237"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する
 
@@ -34,7 +34,7 @@ Azure Active Directoryを使用すると、ユーザーはシングル Sign-On (
 
 ## <a name="single-sign-on-for-on-premises-resources"></a>オンプレミス Sign-Onの単一のリソース
 
-UPN Sign-Onを使用したシングル Sign-On (SSO) は、デバイスで既定でMicrosoft マネージド デスクトップされます。 ただし、ユーザーは Hello for Business Windowsを使用できます。追加のセットアップ手順が必要です。 
+UPN Sign-Onを使用したシングル Sign-On (SSO) は、デバイスで既定でMicrosoft マネージド デスクトップされます。 ただし、ユーザーはビジネス向けWindows Helloを使用できますが、追加のセットアップ手順が必要です。 
 
 ### <a name="single-sign-on-by-using-upn-and-password"></a>UPN Sign-Onパスワードを使用した単一のデバイス
 
@@ -47,9 +47,9 @@ UPN Sign-Onを使用したシングル Sign-On (SSO) は、デバイスで既定
     - ユーザーの SAM アカウント名
 
 
-### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Hello for Business Sign-Onを使用Windows単一のユーザー
+### <a name="single-sign-on-by-using-windows-hello-for-business"></a>ビジネスSign-Onを使用した単一Windows Helloサービス
 
-Microsoft マネージド デスクトップデバイスは、Hello for Business を採用することで、ユーザーにパスワードを使用しない高速Windowsを提供します。 Windows Hello for Business が、ユーザーがそれぞれの UPN とパスワードを指定せずに動作するようにするには、「Azure AD に参加しているデバイスをオンプレミス用に構成する Single-Sign On using [Windows Hello for Business」](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)を参照して要件を確認し、次に示す手順に従います。
+Microsoft マネージド デスクトップデバイスは、ビジネス向けアプリを採用することで、ユーザーに迅速でパスワードレスWindows Hello提供します。 ユーザーがそれぞれの UPN とパスワードを指定せずに Windows Hello for Business が動作するようにするには、「Azure AD に参加しているデバイスをオンプレミス用に構成する Single-Sign On using [Windows Hello for Business」](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)を参照して要件を確認し、そこに示されている手順に従います。
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>認証を使用するアプリとリソース

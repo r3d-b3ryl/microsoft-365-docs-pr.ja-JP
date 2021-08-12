@@ -20,19 +20,19 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: PowerShell でさまざまなモジュールを使用してユーザー アカウントを削除するMicrosoft 365説明します。
-ms.openlocfilehash: 32081d1ce0cbc7aac89b337cf8b5d08bc8e43dfa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 33a5a8d79413549d98bc0289dc1239e88cbc7c109334245cb6a7fa536477a89d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819429"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントを削除する
 
 PowerShell を使用して、ユーザー Microsoft 365を削除および復元できます。
 
 >[!Note]
->管理者センターを[使用してユーザー](../admin/add-users/restore-user.md)アカウントを復元するMicrosoft 365説明します。
+>ユーザー アカウントを[復元する方法については、Microsoft 365 管理センター。](../admin/add-users/restore-user.md)
 >
 >その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
 >   

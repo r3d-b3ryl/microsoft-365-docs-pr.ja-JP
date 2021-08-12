@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: 電子情報開示アクセス許可が割り当てられたユーザーがコンテンツ検索、コア電子情報開示、およびコンプライアンス センターでAdvanced eDiscoveryタスクを実行するときに記録されるイベントMicrosoft 365します。
+description: 電子情報開示アクセス許可が割り当てられたユーザーがコンテンツ検索、コア電子情報開示、および Advanced eDiscovery タスクを実行するときに記録されるイベントMicrosoft 365 コンプライアンス センター。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cca0cdc02e2c23231637acf6eba2b07144266e36
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 097e78c85af5bc75998e1a75fe6148b64afec0eb36d7c19851153920c59a4de0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795544"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>監査ログで電子情報開示アクティビティを検索する
 
-Microsoft 365 コンプライアンス センターで実行するか、対応する PowerShell コマンドレットを実行して実行されるコンテンツ検索および電子情報開示関連のアクティビティ (Core eDiscovery および Advanced eDiscovery の場合) は、監査ログに記録されます。 管理者または電子情報開示マネージャー (または電子情報開示アクセス許可が割り当てられたユーザー) が、コンプライアンス センターで次のコンテンツ検索タスクとコア電子情報開示タスクを実行すると、イベントMicrosoft 365されます。
+Microsoft 365 コンプライアンス センター または対応する PowerShell コマンドレットを実行して実行されるコンテンツ検索および電子情報開示関連のアクティビティ (Core eDiscovery および Advanced eDiscovery の場合) は、監査ログに記録されます。 イベントは、管理者または電子情報開示マネージャー (または電子情報開示アクセス許可が割り当てられたユーザー) が、次のコンテンツ検索タスクとコア電子情報開示タスクを実行するときにログに記録Microsoft 365 コンプライアンス センター。
   
 - コアケースとセキュリティ ケースのAdvanced eDiscovery管理する
 
@@ -40,15 +40,15 @@ Microsoft 365 コンプライアンス センターで実行するか、対応�
 
 - 電子情報開示管理者の役割の管理
   
-監査ログの検索、必要なアクセス許可、検索結果のエクスポートの詳細については、「コンプライアンス センターで監査ログを検索する」を参照Microsoft 365[してください](search-the-audit-log-in-security-and-compliance.md)。
+監査ログの検索、必要なアクセス許可、および検索結果のエクスポートの詳細については、「監査ログを検索する」を参照[Microsoft 365 コンプライアンス センター。](search-the-audit-log-in-security-and-compliance.md)
   
 ## <a name="how-to-search-for-and-view-ediscovery-activities"></a>電子情報開示アクティビティを検索して表示する方法
 
 現在、監査ログに記録された電子情報開示アクティビティを表示するには、いくつかの特定の操作を実行する必要があります。 これを行うには、次の操作を実行します。
   
-1. 仕事または <https://compliance.microsoft.com> 学校のアカウントを使用して、アクセスしてサインインします。
+1. <https://compliance.microsoft.com>に移動し、職場または学校アカウントを使用してサインインします。
 
-2. コンプライアンス センターの左側のナビゲーション ウィンドウで、[監査Microsoft 365をクリック **します**。
+2. 左側のナビゲーション ウィンドウで、[監査] をMicrosoft 365 コンプライアンス センターを **クリックします**。
 
 3. [アクティビティ **] ドロップダウン** リストの [**電子** 情報開示アクティビティ] または [Advanced eDiscovery] で、検索する 1 つ以上のアクティビティをクリックします。
 
@@ -71,7 +71,7 @@ Microsoft 365 コンプライアンス センターで実行するか、対応�
 
 ## <a name="ediscovery-activities"></a>電子情報開示アクティビティ
 
-次の表に、管理者または電子情報開示マネージャーがコンプライアンス センターを使用して電子情報開示関連のアクティビティを実行するときにログに記録されるコンテンツ検索アクティビティとコア電子情報開示アクティビティMicrosoft 365示します。 この一覧でアクティビティAdvanced eDiscovery検索すると、一部のアクティビティが返される場合があります。
+次の表では、管理者または電子情報開示マネージャーが電子情報開示関連のアクティビティを Microsoft 365 コンプライアンス センター を使用して実行するときにログに記録されるコンテンツ検索およびコア電子情報開示アクティビティについて説明します。 この一覧でアクティビティAdvanced eDiscovery検索すると、一部のアクティビティが返される場合があります。
   
 > [!NOTE]
 > このセクションに示されている電子情報開示アクティビティは、次のセクションで説明される電子情報開示コマンドレットのアクティビティと同様の情報を示しています。 電子情報開示アクティビティは 30 分以内に監査ログの検索結果に表示されるため、このセクションで示されている電子情報開示アクティビティを使用することをお勧めします。 電子情報開示コマンドレットのアクティビティが監査ログの検索結果に表示するには、最大で 24 時間かかる場合があります。
@@ -108,7 +108,7 @@ Microsoft 365 コンプライアンス センターで実行するか、対応�
 |コンテンツ検索で実行された消去アクションが削除されました  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |コンテンツ検索の消去アクションが削除されました。  <br/> |
 |検索レポートが削除されました  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |コンテンツ検索のエクスポート レポート アクションが削除されました。  <br/> |
 |コンテンツ検索の分析が開始されました  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |コンテンツ検索の結果が、Advanced eDiscovery の分析用に準備されました。  <br/> |
-|コンテンツ検索が開始されました  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |コンテンツ検索が開始されました。 コンプライアンス センターを使用してコンテンツ検索を作成または変更するとMicrosoft 365自動的に検索が開始されます。<br/> |
+|コンテンツ検索が開始されました  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |コンテンツ検索が開始されました。 ユーザー設定を使用してコンテンツ検索を作成または変更するとMicrosoft 365 コンプライアンス センター自動的に検索が開始されます。<br/> |
 |コンテンツ検索のエクスポートが開始されました  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |ユーザーがコンテンツ検索の結果をエクスポートしました。  <br/> |
 |レポートのエクスポートが開始されました  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |ユーザーがコンテンツ検索レポートをエクスポートしました。  <br/> |
 |コンテンツ検索が停止されました  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |ユーザーがコンテンツ検索を停止しました。  <br/> |

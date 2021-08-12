@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本モビリティとセキュリティを使用して、デバイス のセキュリティ ポリシーとアクセス ルールを設定します。
-ms.openlocfilehash: 1d1376ec39f7249dfffb94c666b2fdcfa07641a0
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 6ae42b9d7515e027e826fe7735a63b23ffd0eff04cb37995d28c60c9dddfada1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394077"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826848"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>基本モビリティとセキュリティの概要 (Microsoft 365
 

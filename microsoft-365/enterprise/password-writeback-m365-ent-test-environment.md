@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境用のパスワードの書き戻しを構成する。'
-ms.openlocfilehash: f1118c22ad1f65ea29bb14afacb7506a60d1fe1a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5b75cc99d9f0f8f8d28a99d597406a605001721a29f60b6177e68a596a54e3a1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921482"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840853"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードの書き戻し
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 149c75e827eaea3c5fb77a78e22b878b2f7fa0ed
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f90d946d7ec73a2d1066ecfde00851b1dc6f49b9b37c095ad672d2e098a26b2c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296529"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804290"
 ---
 # <a name="contact-support-for-bermuda"></a>バミューダ諸島のサポートに問い合わせ
 

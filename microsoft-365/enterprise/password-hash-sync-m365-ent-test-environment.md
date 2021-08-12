@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワード ハッシュ同期とサインインを構成して実例を示します。'
-ms.openlocfilehash: 9c61745fe322dce4cb2b537b18963634a97c697a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d6fdeb6391d452aee310ae9f2eecfec0e177ae4fdd76b71dcbe7a987144067dc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840933"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワード ハッシュ同期
 
@@ -118,7 +118,7 @@ testlab.<*パブリック* ドメイン>に注意してください。
     
 13. **[User1] アカウントを選択** し、[ライセンスとアプリ **] を選択します**。
     
-14. [**製品ライセンス]** で、場所 (必要に応じて) を選択し **、E5** ライセンスOffice 365無効にしてから、ライセンスを有効 **Microsoft 365 E5します。** 
+14. [**製品ライセンス]** で、場所 (必要に応じて) を選択し、Office 365 E5ライセンスを無効にしてから、Microsoft 365 E5 **します。** 
 
 15. ページ **の下部** にある [保存] を選択し、[閉じる] を **選択します**。
     
@@ -136,7 +136,7 @@ User1 は、TESTLAB AD DS ドメインのドメイン管理者のアクセス許
 
 この構成は、次の内容で成立します。 
   
-- Microsoft 365 E5、Office 365のドメイン名が登録されている E5 試用版または有料サブスクリプションDNS ドメイン TESTLAB.<を>します。 
+- Microsoft 365 E5、Office 365 E5 TESTLAB.DNS ドメインを使用して試用版または有料サブスクリプション<登録 *>* します。
 - Azure 仮想ネットワークのサブネット上の DC1、APP1、および CLIENT1 仮想マシンで構成される、インターネットに接続された簡略化された組織イントラネット。 AZURE AD Connect APP1 で実行され、TESTLAB AD DS ドメインを、ADサブスクリプションの Azure ADテナントにMicrosoft 365します。
 - TESTLAB AD DS ドメインの User1 アカウントは、Azure AD テナントと同期されています。
 

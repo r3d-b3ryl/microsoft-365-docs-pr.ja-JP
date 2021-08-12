@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: サンプル モデルを使用したドキュメント理解モデルについて説明します。
-ms.openlocfilehash: 9d8c4d7d241c9de49c0e6d64cc585edb6b67419b
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: 52b66a30bb9b28dabde0a9af092e942522db58150acaacc48a23bc105fcb1dce
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578555"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795412"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>サンプル モデルを通じてドキュメント理解モデルについて学ぶ
 
@@ -46,7 +46,7 @@ Microsoft SharePoint Syntex は、調査に使用できるサンプル モデル
 ## <a name="see-also"></a>関連項目
 [分類子を作成する](create-a-classifier.md)
 
-[抽出子を作成する](create-an-extractor.md)
+[エクストラクターを作成する](create-an-extractor.md)
 
 [ドキュメント理解の概要](document-understanding-overview.md)
 

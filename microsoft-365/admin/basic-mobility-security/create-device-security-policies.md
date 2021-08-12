@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security を使用して、組織情報を保護するデバイス ポリシーを作成します。
-ms.openlocfilehash: 5c8794b53dc11d1cee2fc13c8fbc4933e18dd9a3
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 8c6731b6f206b8c30f0d2abfa0d61d251658c3401ab37042a1b6ba31f0df00c4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394089"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827004"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する
 

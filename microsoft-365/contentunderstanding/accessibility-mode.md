@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Normal
 description: ユーザー補助モードを使用してモデルをトレーニングする方法についてSharePoint Syntex。
-ms.openlocfilehash: 168b64563ef720d659996d1093c8b181b145046d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 349c9ff2fee37e4f40185c4d61592eb379d83382d373961980bfb615db7040c3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543223"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795460"
 ---
 # <a name="sharepoint-syntex-accessibility-mode"></a>SharePoint Syntex アクセシビリティ モード
 
