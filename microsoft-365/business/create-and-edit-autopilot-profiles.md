@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: AutoPilot プロファイルを作成してデバイスに適用する方法と、プロファイルを編集または削除する方法、またはデバイスからプロファイルを削除する方法について学習します。
-ms.openlocfilehash: 414243da88fb6f39f8e6067d19d49ffe955f725f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d2a3038346b7879006dc2eb50ebe2e70cc6fae92c020a38465cec9d468c638b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797216"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>AutoPilot プロファイルを作成し編集する
 
@@ -40,7 +40,7 @@ ms.locfileid: "51580256"
 
 プロファイルがデバイスまたはデバイスのグループに割り当てられます。
   
-1. [管理センター Microsoft 365で、[**デバイスの** \> **自動パイロット] を選択します**。
+1. [デバイス] Microsoft 365 管理センター[**デバイス** \> **の自動パイロット] を選択します**。
   
 2. **[AutoPilot] ページで**、[プロファイル] タブ **の [プロファイルの作成** \> **] を選択します**。
     

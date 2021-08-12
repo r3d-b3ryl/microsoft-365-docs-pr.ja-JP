@@ -21,12 +21,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 2ea5db8cbd68a6c0dd600730fac408dc4bb75e2a
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 2327e889bbe0d4101f6f92b003dbee21902e9a403ec74c2e8527227bd6074766
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664047"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797124"
 ---
 # <a name="tax-information"></a>税金情報
 
@@ -140,7 +140,7 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 2. **[製品]** タブで、更新するサブスクリプションを選択します。
-3. [サブスクリプションの詳細] ページの [サービス利用状況アドレス **] セクションで** 、[サービス使用状況アドレスの **編集] を選択します**。
+3. [サブスクリプションの詳細] ページの **[サービスの利用先住所]** セクションで、**[サービスの利用先住所の編集]** を選択します。
 4. [サービス利用状況 **アドレスの編集** ] ウィンドウの **[VAT** 番号] ボックスに、プレフィックスを含む VAT ID を入力し、スペースを使用せずに入力します。
 5. **[保存]** を選択します。
 

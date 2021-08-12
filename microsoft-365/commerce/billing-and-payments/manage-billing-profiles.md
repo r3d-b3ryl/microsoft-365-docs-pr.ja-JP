@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 請求プロファイルが請求書をサポートする方法について学習します。
 ms.date: 04/02/2021
-ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f5fc1e162e6471feb62e886d65755b4b434bdf4a834be59bcf7b37f76f23f129
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394631"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797148"
 ---
 # <a name="understand-billing-profiles"></a>課金プロファイルを理解する
 
@@ -41,7 +41,7 @@ ms.locfileid: "53394631"
 
 課金プロファイルのロールには、購入を制御し、請求書を表示および管理するためのアクセス許可があります。 これらの役割を、請求書の追跡、整理、支払いを行うユーザーに割り当てます。 たとえば、組織内の調達チームのメンバーです。
 
-| Role                         | 説明                                                                      |
+| 役割                         | 説明                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
 | 課金プロファイルの所有者        | 課金プロファイルに関するすべてを管理する                                          |
 | 課金プロファイル投稿者  | 課金プロファイルのアクセス許可を除くすべてを管理する                        |

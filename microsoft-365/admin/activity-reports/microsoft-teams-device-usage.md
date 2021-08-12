@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
 description: '[レポート] からアプリMicrosoft Teamsレポートを取得して、組織で使用Microsoft Teamsアプリに関するMicrosoft 365します。'
-ms.openlocfilehash: 453b5767a6da1361ba8121fa2d49d9db8224aa68
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 50ef246773deef84af193cfcccf4a3ffdc2d85122710bda53cecda67c474a409
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579628"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797821"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365管理センターのレポート - Microsoft Teamsの使用状況
 

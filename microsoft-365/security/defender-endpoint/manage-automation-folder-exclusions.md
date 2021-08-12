@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 21a62e8e58d201515bfe3df18d4aff5a423b0813
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e469bc9d9ce3de8cd1425231f4b4b90247da2317a6ffc90ded86f5e4880563cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650045"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806750"
 ---
 # <a name="manage-automation-folder-exclusions"></a>自動化フォルダーの除外を管理する 
 
@@ -70,7 +70,7 @@ ms.locfileid: "53650045"
     - ファイル名
     - 説明
 
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 >[!NOTE]
 > 除外されたファイルを収集または調べる Live Response コマンドは、"ファイルが除外されました" というエラーで失敗します。 さらに、自動調査では除外されたアイテムは無視されます。
@@ -87,6 +87,6 @@ ms.locfileid: "53650045"
 2. [除外 **の削除] をクリックします**。 
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [許可/ブロックされたリストの自動化を管理する](manage-indicators.md)
 - [自動化ファイルのアップロードを管理する](manage-automation-file-uploads.md)

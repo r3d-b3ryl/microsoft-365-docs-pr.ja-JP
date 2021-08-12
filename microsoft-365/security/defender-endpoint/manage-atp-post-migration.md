@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 01/26/2021
 ms.reviewer: chventou
-ms.openlocfilehash: d75f6ed9ffda3f1476f6965618c4325ad0b101c7
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 55211867e4ca020844f57b9e530d41330474227225dcee1cfaf0a4370218868d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652853"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806822"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-post-migration"></a>Microsoft Defender for Endpoint の管理、移行後
 

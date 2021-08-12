@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 04/02/2021
-ms.openlocfilehash: 73acb6a12499953e56eda7d4274160c6e79ee440
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 1d820f2d44719caf254b07aee279f1b8121106009e014afddd8fc121bd5d1cc6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797136"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>課金プロファイルを使用してサブスクリプションの支払いを行う方法
 
@@ -219,7 +219,7 @@ ms.locfileid: "52331984"
 
 ## <a name="can-i-pay-my-invoice-online"></a>請求書をオンラインで支払うことはできますか?
 
-請求プロファイルで定期的な請求がオフになっている場合は、クレジット カードを使用して請求書をオンラインで支払えます。 支払いを行う場合は、Microsoft 365 管理センターの請求書の [今すぐ支払う] ボタンを使用します。 請求書を見つけるには、「請求書または [請求書を表示する」を参照してください](view-your-bill-or-invoice.md)。
+請求プロファイルで定期的な請求がオフになっている場合は、クレジット カードを使用して請求書をオンラインで支払えます。 支払いを行う場合は、請求書の [今すぐ支払う] ボタンを使用Microsoft 365 管理センター。 請求書を見つけるには、「請求書または [請求書を表示する」を参照してください](view-your-bill-or-invoice.md)。
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>現在の支払い方法から請求書による支払いに変更できますか?
 
