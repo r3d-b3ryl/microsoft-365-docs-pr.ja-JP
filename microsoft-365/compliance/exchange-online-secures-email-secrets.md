@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 のセキュリティ、プライバシー、コンプライアンス情報を提供する Office 365 セキュリティ センターに加えて、Microsoft がデータセンターに保存するシークレットを保護する方法を知りたい場合があります。 分散キー マネージャー (DKM) というテクノロジを使用します。
-ms.openlocfilehash: 2f6e51b7fe9cd75cbd265c3135050a08130f34d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Microsoft 365 Office 365 のセキュリティ、プライバシー、コンプライアンス情報を提供する Office 365 セキュリティ センターに加えて、Microsoft がデータセンターに保存するシークレットを保護する方法を知りたい場合があります。 分散キー マネージャー (DKM) というテクノロジを使用します。
+ms.openlocfilehash: fe049f600f9ffef496febae2e1c773d562e5693c2ab66fdc37ee377cb66f01e1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906963"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795868"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Exchange Online がメールの機密情報をセキュリティで保護する方法
 
@@ -29,7 +29,7 @@ ms.locfileid: "50906963"
   
 ## <a name="how-do-we-secure-secret-information-provided-by-you"></a>お客様が提供する秘密情報をセキュリティで保護する方法
 
-Office 365 のセキュリティ、プライバシー、コンプライアンス情報を提供する [Office 365](./get-started-with-service-trust-portal.md)セキュリティ センターに加えて、Microsoft がデータセンターで提供するシークレットを保護する方法を知りたい場合があります。 分散キー マネージャー (DKM) というテクノロジを使用します。
+Office 365 のセキュリティ、プライバシー、コンプライアンス情報を提供する[Office 365](./get-started-with-service-trust-portal.md)セキュリティ センターに加えて、Microsoft がデータセンターで提供するシークレットを保護する方法を知りたい場合があります。 分散キー マネージャー (DKM) というテクノロジを使用します。
   
 [分散キー マネージャー](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) (DKM) は、一連のシークレット キーを使用して情報を暗号化および復号化するクライアント側の機能です。 DKM で暗号化されたデータを復号化するには、Active Directory ドメイン サービスの特定のセキュリティ グループのメンバーだけがこれらのキーにアクセスできます。 Exchange Online では Exchange プロセスの実行に使用する特定のサービス アカウントだけが、そのセキュリティ グループに属します。 データセンター内の標準運用手順の一環として、このセキュリティ グループに属する資格情報は人間には付与されないため、人間はだれもこれらの機密情報を解読できるキーにアクセスできません。
   
@@ -37,15 +37,15 @@ Office 365 のセキュリティ、プライバシー、コンプライアンス
   
 特別な保護のために、DKM テクノロジには自動キー ロールオーバーとアーカイブが含まれています。 これにより、同じキーに無期限に依存することなく、古いコンテンツに引き続きアクセスできます。
   
-## <a name="where-does-exchange-online-make-use-of-dkm"></a>Exchange Online は DKM をどこで利用しますか?
+## <a name="where-does-exchange-online-make-use-of-dkm"></a>DKM をExchange Onlineする場所
 
-Microsoft では、 [分散キー マネージャーを](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) 使用して Exchange Online データセンター内のシークレットを暗号化します。 以下に例を示します。
+Microsoft では、[分散キー マネージャーを](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)使用して、データ センター内のExchange Online暗号化します。 次に例を示します。
   
 - 接続されたアカウントの電子メール アカウント資格情報。 接続されたアカウントは、アプリ、Gmail、Yahoo などのHotmailサード パーティのアカウントです。 メール アカウント。
 
 - 顧客キー。 顧客キーで [サービス暗号化を使用している場合](customer-key-overview.md)は [、Azure Key Vault](/azure/key-vault/key-vault-whatis) を使用してシークレットを保護します。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 での暗号化](encryption.md)
   

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Deutschland からの移行に関する電子情報開示移行手順。'
-ms.openlocfilehash: 0128c8563b2043e4ec41d2c5ab1b208bd3977511
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d73a0bccf870999e63f9d05eaff796e7066a90240c45c7b93208fd715a0d2baa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844252"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795076"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>Microsoft Cloud Deutschland からの移行中の電子情報開示エクスペリエンスに関する情報
 次のセクションでは、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスに移行する際の電子情報開示エクスペリエンスに関する追加情報を提供します。
@@ -42,7 +42,7 @@ ms.locfileid: "52844252"
 - 「ファイルとフォルダーを SharePoint または OneDrive for Business OneDrive からダウンロードする」の手順に従って、SharePoint Online または OneDrive for Business サイトからサイトを直接[SharePointダウンロードします](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)。 このメソッドでは、SharePointの管理者アクセス許可または読み取り専用のアクセス許可が必要です。
 - [「OneDrive](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)または SharePoint からファイルとフォルダーをダウンロードする」で説明したように、制限を超えた場合は、SharePoint ファイルと Teams ファイルをコンピューターと同期する[](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)のガイダンスに従って、OneDrive for Business 同期クライアントを使用できます。
 
-- 詳細については[、「インプレース電子情報開示」をExchange Server。](/Exchange/policy-and-compliance/ediscovery/ediscovery)
+- 詳細については、「インプレイス[電子情報開示」を参照Exchange Server。](/Exchange/policy-and-compliance/ediscovery/ediscovery)
 
 
 ## <a name="ediscovery-administration-after-phase-9"></a>フェーズ 9 以降の電子情報開示の管理

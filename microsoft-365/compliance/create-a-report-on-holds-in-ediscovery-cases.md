@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ケースに関連付けられているすべてのホールドに関する情報を含むレポートを生成する方法について説明します。
-ms.openlocfilehash: 04282f6f2481d892fa16d685936efeec55feae77
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 70895e07b652054e27cb382267da003c99d2e7a2a1d6a6c0c557e0bbc25ce635
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802498"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースの保留リストのレポートを作成する
 
@@ -43,7 +43,7 @@ ms.locfileid: "50908411"
 
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>手順 1: コンプライアンス Connect PowerShell &にアクセスする
 
-最初の手順は、組織のセキュリティ &コンプライアンス センター PowerShell に接続します。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
+最初の手順は、組織のセキュリティ/コンプライアンス センターの PowerShell に接続することです。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>手順 2: スクリプトを実行して、電子情報開示ケースに関連付けられた保留を報告する
 
@@ -162,7 +162,7 @@ ms.locfileid: "50908411"
 
    ![スクリプトの実行後のCaseHoldsReport.ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 このケースには、この記事のスクリプトを実行するときに作成されたレポートが保持されます。各保留に関する次の情報が含まれます。 前に説明したように、組織内のすべての保留に関する情報を返す電子情報開示管理者である必要があります。 ケースホールドの詳細については、「電子情報開示ケース [」を参照してください](./get-started-core-ediscovery.md)。
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用して Microsoft Microsoft 365利用状況レポートを取得するMicrosoft 365 管理センター。'
-ms.openlocfilehash: 2f6f287e5a8642d94c9581fc73525b7bfaafb41b
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 7225b3b1d2c86dd917bc4cb69d2cf3ca398221619710e9f0268e9d861d8d261b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377207"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798211"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365管理センターのレポート - Microsoft ブラウザーの使用状況
 
@@ -41,7 +41,7 @@ ms.locfileid: "53377207"
 
 ![Microsoft ブラウザー使用状況レポート](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
 
-|項目|説明|
+|アイテム|説明|
  |:-----|:-----|
  |1. <br/> |**Microsoft ブラウザー使用状況レポート** は、過去 7 日間、30 日間、90 日、または 180 日間の傾向を確認できます。  <br/> |
  |2. <br/> |各レポートのデータは、通常、過去 7 日間までカバーされます。 <br/> |

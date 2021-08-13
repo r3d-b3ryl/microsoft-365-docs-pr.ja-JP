@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d901366e74969b0b128a49a6bd65a56046049085
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ccb61bb84581ce98f0cd095b39bf53426997d4308efee4666011e9c85b9100d0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656273"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799708"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>脅威インテリジェンスの概念を理解する
 
@@ -73,5 +73,5 @@ IOC は、アラート定義と多対 1 の関係を持ち、アラート定義�
 
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [インジケーターの管理](manage-indicators.md)

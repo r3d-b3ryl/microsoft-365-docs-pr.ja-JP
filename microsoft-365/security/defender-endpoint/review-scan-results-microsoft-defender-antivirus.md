@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: bc7c84e089b08c440512f8a8bf7583f41394f2ca
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: c7860c284d82ee2fbdb9f8e2eae6299f56f6387b45b8c6f3d88eb2733ee7cd72
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799780"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>スキャンMicrosoft Defender ウイルス対策確認する
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 電子情報開示と検索ツールを使用して、組織内のデータ流出インシデントを管理して対応します。
-ms.openlocfilehash: f92887018a7ab1cec35526c2a36cce4b0889172e
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 5fb9e7a4a744bf05990634c433b6a5b56f21f94dea9b30326be7e124b926c8cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802124"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューション シリーズ: データ流出シナリオ - 検索と削除
 
@@ -87,7 +87,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
   
 確認するメールボックスごとに 1,000 以上のメールボックスまたは 100 以上の電子メール メッセージがある場合は、日付範囲や送信者/受信者などの追加のキーワードや条件を使用して、最初の検索を複数の検索に分割し、各検索の結果を個別に確認できます。 手順 [7](#step-7-permanently-delete-the-spilled-data)でメッセージを削除するときに使用する検索クエリはすべてメモしてください。
 
-保管担当者またはエンド ユーザーに Office 365 E5 ライセンスが割り当てられている場合は、Advanced eDiscovery を使用して一度に最大 10,000 件の検索結果を確認できます。 確認する電子メール メッセージが 10,000 件を超える場合は、検索結果が日付で並べ替わるので、検索クエリを日付範囲で分割し、各結果を個別に確認できます。 このAdvanced eDiscovery、プレビュー パネルの **[** ラベルとしてラベル] 機能を使用して検索結果にタグを付け、ラベル付けしたタグで検索結果をフィルター処理できます。 これは、セカンダリ レビューアーと共同作業する場合に役立ちます。 Advanced eDiscovery で光学式文字認識、電子メール スレッド、予測コーディングなどの分析ツールを使用すると、何千ものメッセージをすばやく処理して確認し、タグ付けして詳細を確認できます。 詳細については[、「クイック セットアップ」を参照Advanced eDiscovery。](./get-started-with-advanced-ediscovery.md)
+保管担当者またはエンド ユーザーに Office 365 E5 ライセンスが割り当てられている場合は、Advanced eDiscovery を使用して一度に最大 10,000 件の検索結果を調Advanced eDiscovery。 確認する電子メール メッセージが 10,000 件を超える場合は、検索結果が日付で並べ替わるので、検索クエリを日付範囲で分割し、各結果を個別に確認できます。 このAdvanced eDiscovery、プレビュー パネルの **[** ラベルとしてラベル] 機能を使用して検索結果にタグを付け、ラベル付けしたタグで検索結果をフィルター処理できます。 これは、セカンダリ レビューアーと共同作業する場合に役立ちます。 Advanced eDiscovery で光学式文字認識、電子メール スレッド、予測コーディングなどの分析ツールを使用すると、何千ものメッセージをすばやく処理して確認し、タグ付けして詳細を確認できます。 詳細については[、「クイック セットアップ」を参照Advanced eDiscovery。](./get-started-with-advanced-ediscovery.md)
 
 こぼれたデータを含む電子メール メッセージを見つけたら、メッセージの受信者を確認して、外部で共有されたかどうかを確認します。 メッセージをさらに追跡するには、送信者情報と日付範囲を収集して、メッセージ 追跡ログを使用できます。 このプロセスについては、「手順 [5」で説明します](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)。
 
@@ -205,7 +205,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>データ流出調査プロセスの監査
 
-監査ログで、調査中に実行された電子情報開示アクティビティを検索できます。 監査ログを検索して、手順 7 で実行した **New-ComplianceSearchAction -Purge** コマンドの監査レコードを返して、こぼれたデータを削除することもできます。 詳しくは、以下を参照してください。
+監査ログで、調査中に実行された電子情報開示アクティビティを検索できます。 監査ログを検索して、手順 7 で実行した **New-ComplianceSearchAction -Purge** コマンドの監査レコードを返して、こぼれたデータを削除することもできます。 詳細については、以下を参照してください。
 
 - [監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
 

@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: メールボックスを非アクティブなメールボックスに変換して、元の従業員のメールボックスコンテンツを保持する方法について説明します。
-ms.openlocfilehash: 6aeb10f1557a991523b60b8e8e85a99fc61f4b87
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3badfacad1ffc58a686efd1f1971ce6dd015398e6662512c1de4ccb463ee98ef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911253"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801928"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>非アクティブなメールボックスの概要
 
@@ -42,7 +42,7 @@ ms.locfileid: "50911253"
 
 ## <a name="inactive-mailboxes-and-microsoft-365-retention-policies"></a>非アクティブなメールボックスMicrosoft 365保持ポリシー
 
-訴訟ホールドに加えて、Microsoft 365 コンプライアンス センターで新しいアイテム保持ポリシー Microsoft 365を使用する方法は、メールボックスを非アクティブにするもう 1 つの方法です。 To use a retention policy to make an inactive mailbox:
+訴訟ホールドに加えて、Microsoft 365アイテム保持ポリシー機能を使用Microsoft 365 コンプライアンス センターメールボックスを非アクティブにするもう 1 つの方法です。 To use a retention policy to make an inactive mailbox:
 
 - コンテンツを保持するか、コンテンツを保持してから削除するように構成する必要があります。 アイテム保持ポリシーがコンテンツのみを削除するように構成されている場合、ユーザー アカウントを削除しても、ポリシーが適用されているメールボックスは非アクティブにならない。
 

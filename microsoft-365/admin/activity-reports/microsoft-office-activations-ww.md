@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: ライセンス認証レポートを取得して、Officeサブスクリプションをアクティブ化したユーザーを知り、追加のOffice必要なユーザーを特定する方法について学習します。
-ms.openlocfilehash: 1247b3ce9b055a3e7dc9f75bee6a072787c1a890
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: ee803dece4e66ede794677b99b3d27de29b53aed11ab590486b1a7bcd1a6c78b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611927"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797890"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365管理センターのレポート - Microsoft Officeアクティブ化
 

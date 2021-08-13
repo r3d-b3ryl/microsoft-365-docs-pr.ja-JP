@@ -13,12 +13,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee410bf455e770087da7999ad2019c17419a8e00
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 79247ad0018f8bfb08e58254870fd510ca6fb0ad291a72b2bee4d16b9113ac4a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919733"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795856"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>情報バリア ポリシーの属性
 

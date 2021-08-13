@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: REST API を使用して、モデルとそれが適用されているライブラリに関する情報を取得します。
-ms.openlocfilehash: 29240a6210e2079a082be6c3a07aae890d932719
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4c800f20a7dc9d8e188cf83fd1715d2ae3aa72c1aeea530e788386bdcc40a02e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795280"
 ---
 # <a name="get-model-and-library-information"></a>モデルとライブラリの情報を取得する
 

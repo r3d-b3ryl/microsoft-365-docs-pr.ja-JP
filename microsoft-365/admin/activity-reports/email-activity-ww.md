@@ -18,13 +18,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
-description: 管理センターの [レポート] ダッシュボードを使用してMicrosoft 365アクティビティ レポートを取得Microsoft 365します。
-ms.openlocfilehash: 65ef74ccd05aa4b55fc127985c03a490bb109b4b
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+description: '[レポート] ダッシュボードの [レポート] ダッシュボードを使用してMicrosoft 365アクティビティ レポートを取得する方法についてMicrosoft 365 管理センター。'
+ms.openlocfilehash: b6c045af6e82f791ed8cb010b6b1f18122242ebc5a4bf52ac34d595fad620107
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921996"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798184"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Microsoft 365管理センターのレポート - メール アクティビティ
 

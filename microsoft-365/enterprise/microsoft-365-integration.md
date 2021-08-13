@@ -22,23 +22,23 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: この記事では、既存のディレクトリ サービスMicrosoft 365オンプレミス環境と統合する方法について学習します。
-ms.openlocfilehash: c0453b7685254ccbbb301a17749fe48549fae78d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 48d7066ea51647cc0e7594dd774201d736471369b6158550cb1a238b65fa0d0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795136"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365環境との統合
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 を既存のオンプレミス Active Directory ドメイン サービス (AD DS) と、Exchange Server、Skype for Business Server 2015、または SharePoint Server のオンプレミス インストールと統合できます。
   
  - DS を統合AD、両方の環境のユーザー アカウントを同期および管理できます。 また、パスワード ハッシュ同期 (PHS) またはシングル サインオン (SSO) を追加して、ユーザーがオンプレミスの資格情報を使用して両方の環境にログオンすることもできます。
  - オンプレミスのサーバー製品と統合する場合は、ハイブリッド環境を作成します。 ハイブリッド環境は、ユーザーまたは情報を Microsoft 365 に移行する場合や、一部のユーザーまたは一部の情報をオンプレミスとクラウドに引き続き持つ場合に役立ちます。 ハイブリッド環境の詳細については、「ハイブリッド クラウド」 [を参照してください](../solutions/cloud-architecture-models.md#hybrid)。
 
-Microsoft 365 管理センターのカスタマイズされたセットアップ ガイダンスには、Azure Active Directory (Azure AD) アドバイザーを使用できます (Microsoft 365 にサインインする必要があります)。
+Microsoft 365 管理センター のカスタマイズされたセットアップ ガイダンスには、Azure Active Directory (Azure AD) アドバイザーを使用できます (Microsoft 365 にサインインする必要があります)。
 
 - [Azure ADセットアップ ガイド](https://aka.ms/aadpguidance)
 - [組織のディレクトリからユーザーを同期する](https://aka.ms/aadconnectpwsync)

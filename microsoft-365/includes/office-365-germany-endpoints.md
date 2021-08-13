@@ -7,9 +7,9 @@
 
 ID | カテゴリ | ER | 住所 | ポート
 -- | -------------------- | -- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------
-1  | 最適化<BR>必須 | いいえ | `outlook.office.de`<BR>`51.4.64.0/23, 51.5.64.0/23` | **TCP:** 443、80
-2  | 既定値<BR>必須 | いいえ | `r1.res.office365.com` | **TCP:** 443、80
-3  | 既定値<BR>必須 | いいえ | `outlook.office.de` | **TCP:** 143、25、587、993、995
+1 | 最適化<BR>必須 | いいえ | `outlook.office.de`<BR>`51.4.64.0/23, 51.5.64.0/23` | **TCP:** 443、80
+2 | 既定値<BR>必須 | いいえ | `r1.res.office365.com` | **TCP:** 443、80
+3 | 既定値<BR>必須 | いいえ | `outlook.office.de` | **TCP:** 143、25、587、993、995
 4  | 既定値<BR>必須 | いいえ | `attachments.office365-net.de, autodiscover-s.outlook.de` | **TCP:** 443、80
 5  | 許可<BR>必須 | いいえ | `*.protection.outlook.de`<BR>`51.4.72.0/24, 51.4.80.0/27, 51.5.72.0/24, 51.5.80.0/27, 2a01:4180:4050:400::/64, 2a01:4180:4050:800::/64, 2a01:4180:4051:400::/64, 2a01:4180:4051:800::/64` | **TCP:** 25、443
 
@@ -20,9 +20,9 @@ ID | カテゴリ | ER | 住所 | ポート
 8  | 最適化<BR>必須 | いいえ | `<tenant>.sharepoint.de`<BR>`51.4.66.0/23, 51.5.66.0/23, 2a01:4180:4030::/44` | **TCP:** 443、80
 9  | 既定値<BR>必須 | いいえ | `odc.osi.office.de` | **TCP:** 443、80
 10  | 既定値<BR>必須 | いいえ | `*.wns.windows.com` | **TCP:** 443、80
-11  | 既定値<BR>必須 | いいえ | `officeapps.live.com` | **TCP:** 443、80
+11 | 既定値<BR>必須 | いいえ | `officeapps.live.com` | **TCP:** 443、80
 12  | 既定値<BR>必須 | いいえ | `shellprod.msocdn.de, spoprod-a.akamaihd.net, static.sharepointonline.com` | **TCP:** 443、80
-13  | 既定値<BR>必須 | いいえ | `*.search.production.de.azuretrafficmanager.de` | **TCP:** 443
+13 | 既定値<BR>必須 | いいえ | `*.search.production.de.azuretrafficmanager.de` | **TCP:** 443
 14  | 既定値<BR>必須 | いいえ | `odc.officeapps.live.com, officeclient.microsoft.com` | **TCP:** 443、80
 15 | 既定値<BR>必須 | いいえ | `mobile.pipe.aria.microsoft.com, ssw.live.com, watson.telemetry.microsoft.com` | **TCP:** 443、80
 16  | 既定値<BR>必須 | いいえ | `oneclient.sfx.ms` | **TCP:** 443、80

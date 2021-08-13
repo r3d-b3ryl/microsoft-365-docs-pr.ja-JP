@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: メール アプリの使用状況レポートを取得して、ユーザーが使用しているメール アプリと Exchange Onlineに接続Outlookを確認する方法について学習します。
-ms.openlocfilehash: f2a7b79a00b47896dac4427c532f85dccb931c60
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: b371b0b421ab92f80a31d98ed469061806dd1c60899efc0879b43f0a8556b832
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798148"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Microsoft 365管理センターのレポート - メール アプリの使用状況
 

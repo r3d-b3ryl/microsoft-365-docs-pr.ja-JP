@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 管理センターの [レポート] ダッシュボードを使用して Microsoft Dynamics 365 Customer Voice アクティビティ Microsoft 365を取得するMicrosoft 365説明します。
-ms.openlocfilehash: 7975db1f3681ab0823e222f017f6addb514dafd7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Microsoft Dynamics 365 Customer Voice アクティビティ レポートを取得する方法については、Microsoft 365 の [レポート] ダッシュボードを使用Microsoft 365 管理センター。
+ms.openlocfilehash: 3b7e326a8661523865235880b0d0affd98c8836f531908943670caab0ad4fec4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797974"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365管理センターのレポート - Dynamics 365 Customer Voice アクティビティ
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 法的保留通知の送信、収集、および追跡Advanced eDiscovery場合は、通信ツールを使用します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 026670b9ed45f366ff3d711d8f2b2d0274be5a19
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8b33165e6d39a1829f99e0a0194bc7938b95b9600e2977dec920e0dbb97c56d9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227105"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802443"
 ---
 # <a name="create-a-legal-hold-notice"></a>法的保留通知を作成する
 
@@ -91,7 +91,7 @@ ms.locfileid: "53227105"
 
 4. 保管担当者に提供する内容または追加の指示を指定します (必須)。 手順 2 で定義したポータル コンテンツが発行通知の末尾に追加されます。
 
-5. **[保存]** をクリックします。
+5. [**保存**] をクリックします。
 
 ### <a name="re-issuance-notification"></a>Re-Issuance通知
 
@@ -107,7 +107,7 @@ ms.locfileid: "53227105"
 
 4. 保管担当者に提供する内容または追加の指示を指定します (必須)。 手順 2 で定義したポータル コンテンツは、再発行通知の最後に追加されます。
 
-5. **[保存]** をクリックします。
+5. [**保存**] をクリックします。
 
 > [!NOTE]
 > (通信の編集ウィザードの [ポータルコンテンツの定義]ページで) ポータル コンテンツが変更された場合、再発行通知は通知に割り当てられているすべての保管担当者に自動的に送信されます。 通知が送信された後、保管担当者は保留通知の再確認を求めるメッセージが表示されます。 リマインダーまたはエスカレーション ワークフローを設定している場合は、これらのワークフローも再び開始されます。 他のケース管理イベントによって通信がトリガーされるイベントの詳細については、「通知をトリガー [するイベント」を参照してください](#events-that-trigger-notifications)。

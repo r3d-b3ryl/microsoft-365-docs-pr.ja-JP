@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 検索結果をローカル コンピューターにエクスポートするには、Microsoft 365 コンプライアンス センター内のコンテンツ検索からエクスポートします。 電子メールの結果は PST ファイルとしてエクスポートされます。 サイトおよびSharePointサイトOneDrive for Businessコンテンツは、ネイティブ ドキュメントとしてOfficeされます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3ae14fc0ac31e50d579668c7fafba5390c5b8fc
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: 3b05544ff77ef2d0c3d3a1c379248408a95949ca6130f83c10889fc3e8e57282
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802297"
 ---
 # <a name="export-content-search-results"></a>コンテンツ検索結果のエクスポート
 

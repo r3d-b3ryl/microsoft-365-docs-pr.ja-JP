@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 作業の開始
+    - name: 概要
       href: setup/index.yml
       items:
         - name: サインアップ
@@ -10,6 +10,12 @@
           href: ../commerce/try-or-buy-microsoft-365.md
         - name: セットアップを計画する
           href: setup/plan-your-setup.md
+        - name: Windows 365 Business の計画
+          items:
+            - name: Windows 365 Business および Cloud PC の概要
+              href: setup/get-started-windows-365-business.md
+            - name: Windows 365 Business のサイズ設定オプション
+              href: setup/windows-365-business-sizing.md
         - name: ガイド付きのセットアップを使用して組織をセットアップする
           items:
             - name: Microsoft 365 Business Basic
@@ -289,6 +295,8 @@
               href: usage-analytics/active-user-in-usage-reports.md
             - name: レポートをカスタマイズする
               href: usage-analytics/customize-reports.md
+            - name: Microsoft 365 GCC の利用状況分析
+              href: usage-analytics/connect-to-gcc-data-with-usage-analytics.md
             - name: 利用状況分析のデータ モデルについて
               href: usage-analytics/usage-analytics-data-model.md
             - name: 利用状況分析に関するエラーのトラブルシューティング

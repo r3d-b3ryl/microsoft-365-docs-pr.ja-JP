@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f14da0e999a0ec38c9be7ef36e47b2c786e12e97
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b64ba9bec7de209ec8458c6b9215b766b51f7349052b94d7a2b19cdf8d1519fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799732"
 ---
 # <a name="software-resource-type"></a>ソフトウェア リソースの種類
 
@@ -61,7 +61,7 @@ id | String | ソフトウェア ID
 名前 | String | ソフトウェア名
 ベンダー | String | ソフトウェア ベンダー名
 弱点 | Long | 検出された脆弱性の数
-publicExploit | ブール型 | 一部の脆弱性に対してパブリックエクスプロイトが存在する
-activeAlert | ブール型 | アクティブアラートは、このソフトウェアに関連付けられている
+publicExploit | Boolean | 一部の脆弱性に対してパブリックエクスプロイトが存在する
+activeAlert | Boolean | アクティブアラートは、このソフトウェアに関連付けられている
 exposedMachines | Long | 公開されているデバイスの数
 impactScore | Double | このソフトウェアの露出スコアの影響
