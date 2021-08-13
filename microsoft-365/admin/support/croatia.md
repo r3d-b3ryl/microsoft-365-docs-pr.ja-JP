@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 69b444dcb4195c322cfb5b3475fec8b1c22623ba
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 05febe21a802edcdfc22050564e9a44ef91afcbe1c16b9f9f95e59b76b7a2740
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838321"
 ---
 # <a name="contact-support-for-croatia"></a>クロアチアのサポートに問い合わせ
 

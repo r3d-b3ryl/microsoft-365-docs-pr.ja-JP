@@ -1,5 +1,5 @@
 ---
-title: 21Vianet が運用Office 365 の Fapiao を申請する
+title: 21Vianet が運用するOffice 365 Fapiao を申請する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -22,14 +22,14 @@ search.appverid:
 description: 中国の 21Vianet が運営する Office 365 で支払いを行った後、Fapiao 要求を 21Vianet Fapiao 管理システムに送信する方法について説明します。
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: 605e1bf001f6c6acb3a8b5044adeb66e110641b0
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: b39794db35e3077021761776cafaf6ca6d6a9cdf695153e8942dfb137af248f8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332464"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822536"
 ---
-# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>21Vianet が運用Office 365 の Fapiao を申請する
+# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>21Vianet が運用するOffice 365 Fapiao を申請する
 
 Fapiao 要求は、支払い後約 3 日後に 21Vianet Fapiao 管理システムに送信できます。 Fapiao 要求を送信すると、2 日後に処理されます。
   
@@ -39,18 +39,18 @@ Fapiao 要求は、支払い後約 3 日後に 21Vianet Fapiao 管理システ�
 
 Fapiao を申請するには、次の 2 つの方法があります。
   
-1. 21Vianet Web サイトが運営する Office 365 で支払いを行った後、注文番号と Fapiao 管理システムへのリンクを含む注文確認メールが届きます。 電子メールのリンクを使用して <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">、21Vianet Fapiao</a>情報管理システムでアカウントを作成できます。
+1. 21Vianet web サイトが運営する Office 365 で支払いを行った後、注文番号と Fapiao 管理システムへのリンクを含む注文確認メールが届きます。 電子メールのリンクを使用して <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">、21Vianet Fapiao</a>情報管理システムでアカウントを作成できます。
 
     または
 
 2. 管理センターから Fapiao を申請 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">できます</a>。
 
-    ![Microsoft 365 管理センターの [請求書] ページ。](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
+    ![[請求書] ページが表示Microsoft 365 管理センター。](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>手順 2: 21Vianet Fapiao 管理システムに登録する
 
 > [!NOTE]
-> 365 アカウントと同じメール名とパスワードOffice使用するか、別のメール名を使用できます。
+> アカウントと同じメール名とパスワードを使用Office 365、別のメール名を使用できます。
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao 情報管理システムに移動します</a>。
 
@@ -109,7 +109,7 @@ Fapiao が使用されなき場合、システムは通知を表示し、Fapiao 
   
 ![21Vianet Fapiao 管理システムが使い切れた場合に表示されるエラー メッセージ。](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
-## <a name="faqs"></a>よく寄せられる質問
+## <a name="faqs"></a>FAQ
 
 ### <a name="what-services-can-i-get-from-online-support"></a>オンライン サポートからどのようなサービスを受け取れるか。
 

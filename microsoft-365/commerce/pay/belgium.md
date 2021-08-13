@@ -12,12 +12,12 @@ ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 412a7e44eda23244c519629757d8ad3f8e782827
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 204ddfe5fd7e367775148e31895fdab15a17c982dcb498f07ba11aa59ebb4dc9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802888"
 ---
 # <a name="payment-information-for-belgium"></a>ベルギーの支払い情報
 
@@ -32,7 +32,7 @@ Microsoft Ireland Operations **Limited** が請求する請求書がある場合
 **Bank:** シティバンク(ロンドン)  
 **SWIFT コード:** CITIGB2L  
 **IBAN コード:** GB31CITI18500812207591  
-**SORT コード:** 185008  
+**SORT コード: 185008**  
 **アカウント番号:** 12207591  
 **アカウント名:** MICROSOFT
 

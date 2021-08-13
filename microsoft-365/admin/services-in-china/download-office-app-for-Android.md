@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet がMicrosoft Officeする Android Office 365アプリと、中国の顧客向けアプリをダウンロードする方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: af66123ecee91e6c8f5ddd7cd1b441494ce8ca97
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: e898ea33d97d41640d4c0e6996742dc3e975baa0ce7e3350a117f5b9529f112d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809025"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822417"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>Office アプリ 21Vianet Office 365 Android 用のアプリ
 

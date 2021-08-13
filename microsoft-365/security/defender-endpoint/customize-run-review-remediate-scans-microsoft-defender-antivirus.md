@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: bce3fe1b6490803cb571a1a8a2387c19cc589114
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: d00cb3a3c708573d7283c83d79ebaabcb45f6ce68a649109cb874c77c6cfabc3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53847501"
 ---
 # <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>スキャンと修復の結果をカスタマイズ、開始Microsoft Defender ウイルス対策確認する
 

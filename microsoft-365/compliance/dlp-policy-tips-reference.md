@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加する方法について、DLP ポリシーと競合するコンテンツを操作しているユーザーに通知する方法について学習します。
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 0c42569da3fcac40d3121a59f7dc004f25dd3f74
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 785d7fad1cf35bab56594e5b0c11287c153eaa44aedcf2cf6b44a742ed93ee74
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814461"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>データ損失防止ポリシーヒントのリファレンス
 
@@ -34,9 +34,9 @@ Outlook Web Access の DLP ポリシー ヒントは、以下を除き、DLP ポ
 
 - Sender Is
 - Sender Domain Is
-- 受信者は、
+- 受信者が次のメンバーの場合
 - ヘッダーには、単語または語句が含まれています
-- ヘッダーがパターンと一致する
+- ヘッダーがパターンと一致している
 - ドキュメント のサイズが等しいか、またはより大きい
 - メッセージの種類は次の値です。
 - メッセージの重要度は、

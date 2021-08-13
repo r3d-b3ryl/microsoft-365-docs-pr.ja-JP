@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7de9aec29b0a57e85e3539fc2e99384de545c52a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f1d3bcf269211dc00702c08c22ff0c6f6055b1b63f6bfd351d5aba7679b82978
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804752"
 ---
 # <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>ネットワークアップ (クラウドまで) - 1 人のアーキテクトの視点
 
@@ -104,11 +104,11 @@ UDP を使用するOffice 365サービスは、Skype (間もなく廃止され�
 
 スプリット トンネリングを許可する一方で、一般的な Web トラフィックにもプロキシを使用する場合は、PAC ファイルで、VPN トンネルを通過するトラフィックに関する興味深いトラフィックを定義する方法と同様に、直接行う必要がある処理を定義してください。 サンプル PAC ファイルを提供 [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) しています。これにより、管理が容易になります。
 
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>結論
 
 ほぼすべての Fortune 500 を含む数万の組織は、ミッション クリティカルな機能Office 365毎日使用しています。 セキュリティで保護され、インターネットを使用して行います。
 
-どのようなセキュリティ目標を達成しても、VPN 接続、プロキシ サーバー、TLS のブレークアンド検査、またはインターネットの一元化を必要としない方法があります。ネットワークからユーザーのトラフィックを迅速に取得し、ネットワークが会社の本社、リモート オフィスかどうかに関係なく、最高のパフォーマンスを提供します。、または自宅で作業しているユーザー。 このガイダンスは、サービスの構築方法Office 365、セキュリティで保護されたパフォーマンスの高いユーザー エクスペリエンスを確保するために基づいて行います。
+どのようなセキュリティ目標を達成しても、VPN 接続、プロキシ サーバー、TLS のブレークと検査、またはインターネットの一元化を必要としない方法があります。ネットワークからユーザーのトラフィックを迅速に取得し、ネットワークが会社の本社かどうかに関係なく、最高のパフォーマンスを提供します。、リモート オフィス、または自宅で作業しているユーザー。 このガイダンスは、サービスの構築方法Office 365、セキュリティで保護されたパフォーマンスの高いユーザー エクスペリエンスを確保するために基づいて行います。
 
 ## <a name="further-reading"></a>その他の読み取り
 

@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 5aaaa0ae3c36e04a73f65df114c8927e59b6a259
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 952916fe3f27a9aa8519682f88de5ee1a3838b0e97f97ece519b6f906c016dc7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650105"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838453"
 ---
 # <a name="test-package-guidelines"></a>テスト パッケージのガイドライン
 
@@ -112,7 +112,7 @@ ms.locfileid: "53650105"
 > [!NOTE]
 > アップロードされた zip ファイルの名前にスペースや特殊文字を含めることはできません
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 次の記事に進み、よく寄せられる **質問 (FAQ) を表示する**
 > [!div class="nextstepaction"]

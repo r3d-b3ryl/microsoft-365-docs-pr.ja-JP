@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 479f2fc7f0aecce7498d8bfd11144a2f21b54497
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 4f804db42fd48d0a60848e5947d6136c0bc3a10e1f7dacdb43bc238245b84cc7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838333"
 ---
 # <a name="contact-support-for-comoros"></a>Comoros のサポートに問い合わせ
 

@@ -21,12 +21,12 @@ ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
 description: 'DNS レコードを管理するときに、21Vianet Office 365の DNS レコードを作成する方法について学習します。 '
 monikerRange: o365-21vianet
-ms.openlocfilehash: 1eaa2bcc7263eaa12e53131246abd591006b0536
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8cd021c204424910d88133076ce0ce7af9a240952d116dbf9e9f4d4562fe41ec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822429"
 ---
 # <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>DNS レコードを管理するときにOffice 365 DNS レコードを作成する
 
