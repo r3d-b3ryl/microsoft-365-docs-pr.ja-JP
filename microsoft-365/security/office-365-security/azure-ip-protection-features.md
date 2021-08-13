@@ -19,12 +19,12 @@ ms.custom:
 description: この記事では、Azure Information Protection の保護機能に対して展開される変更について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77d45c8521e67c480b9e5557b05eed8ba5dd2645
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7ec45d7e01c6b0bdb6d49aa5c282189b022d6b2a8a814f38acab750732572d80
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56769979"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Azure Information Protection の保護機能が既存のテナントに展開される
 
@@ -40,7 +40,7 @@ ms.locfileid: "51206010"
 
 2018 年 7 月 1 日より、Microsoft は Azure Information Protection の保護機能をすべての組織で有効にし、次のいずれかのサブスクリプション プランを使用します。
 
-- Office 365 Message Encryptionは、Office 365 E3 および E5、Microsoft E3 と E5、Office 365 A1、A3、および A5、および G3 および G5 のOffice 365として提供されます。 Azure Information Protection を利用した新しい保護機能を受け取る場合は、追加のライセンスは不要です。
+- Office 365 Message Encryptionは、Office 365 E3 および E5、Microsoft E3 と E5、Office 365 A1、A3、および A5、および Office 365 G3 および G5 の一部として提供されます。 Azure Information Protection を利用した新しい保護機能を受け取る場合は、追加のライセンスは不要です。
 
 - また、Azure Information Protection Plan Office 365 Message Encryption 1 を次のプランに追加して、Exchange Online プラン 1、Exchange Online プラン 2、Office 365 F1、Microsoft 365 Business Basic、Microsoft 365 Business Standard、Office 365 Enterprise E1 の新しい機能を受け取る必要があります。
 
@@ -95,6 +95,6 @@ ACTIVE DIRECTORY RIGHTS MANAGEMENT サービス[(AD RMS)](/azure/information-pro
 
 これを有効にすると、オプトアウトしていない場合は[、Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)で発表された新しいバージョンの Office 365 Message Encryption の使用を開始し、Azure Information Protection の暗号化と保護機能を活用できます。
 
-![Web 上の OME で保護されたメッセージをOutlookスクリーンショット。](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
+![OME で保護されたメッセージを表示するスクリーンショットをOutlook on the web。](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 
 新しい拡張機能の詳細については、「Office 365 Message Encryption」 を[参照してください](../../compliance/ome.md)。

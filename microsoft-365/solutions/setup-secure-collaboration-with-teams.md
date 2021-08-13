@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたコンテンツ コラボレーションを設定し、Teamsに基づいてデータを保護する方法について学習します。
-ms.openlocfilehash: 227f63284f6fb2bdae52fe32d1c011698d3f44fd
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ee131718d06e5359e0c4b42d4a79b30e2c92249eeafd0101502f674142a28f3d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657053"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804872"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>ユーザーとユーザーとの安全なMicrosoft 365をMicrosoft Teams
 

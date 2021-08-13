@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Microsoft Bookings のビジネス名、住所、電話番号、Web サイトの URL、ロゴ、営業時間など、会社情報ページを作成するには、次の手順に従います。
-ms.openlocfilehash: 0424794d4627d7c6770f86f32d81d4653f889163
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: fae790405d6691d35f5c0bfe806b6d7d46c3b555ecfd14660d3fb89b34b3efe8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962503"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803850"
 ---
 # <a name="enter-your-business-information"></a>勤務先情報を入力する
 

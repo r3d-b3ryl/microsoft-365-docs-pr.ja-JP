@@ -18,12 +18,12 @@ description: 不正な同意許可攻撃を認識して修復する方法につ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 1f2e5139ed9c16026ec49eab9318588b7704a0fb7f690fef5ea6cc4ce3274fde
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56769969"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>不正同意の付与を検出して修復する
 

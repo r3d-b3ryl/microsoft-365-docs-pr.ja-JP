@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 59a9ae07b6d8073bd46a36a803abda3b419cc4cb33e3739250474a2217fbbf8a
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 09ec44a90c93272da814fd1deba49c364cd8776e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523371"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58243947"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>静的プロキシ検出用に Microsoft Defender for Endpoint on Linux を構成する
 

@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5c7bc0a7378225d027e42ddfc1d08f946ad5046
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 7b2a03cac1f81af4d55f3eb1d79de114abe9599094dbbf484c44dc204f0e8290
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595776"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523431"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法
 
@@ -66,7 +66,6 @@ Defender for Endpoint Advanced Hunting クエリの例については[、「Micr
 |[デバイス インスタンスの一致する ID を使用して、特に承認された周辺機器のインストールと使用を許可する](#allow-installation-and-usage-of-specifically-approved-peripherals-with-matching-device-instance-ids)|これらのデバイス インスタンスの ID に一致する承認済み周辺機器のみをインストールして使用できます。|
 |[デバイス インスタンスの一致する ID を使用して、特に禁止されている周辺機器のインストールと使用を防止する](#prevent-installation-and-usage-of-specifically-prohibited-peripherals-with-matching-device-instance-ids)|これらのデバイス インスタンスの ID に一致する禁止周辺機器をインストールまたは使用することはできません。|
 |[サービスを使用するサービスBluetooth](#limit-services-that-use-bluetooth)|サービスを使用できるサービスを制限Bluetooth。|
-|[エンドポイントの基準設定に Microsoft Defender を使用する](#use-microsoft-defender-for-endpoint-baseline-settings)|Defender for Endpoint セキュリティ ベースラインを使用して、ATP の推奨構成を設定できます。|
 |
 
 ### <a name="restrict-usb-drives-and-other-peripherals"></a>USB ドライブなどの周辺機器を制限する
@@ -118,7 +117,7 @@ USB ドライブや他の周辺機器のインストールと使用を許可す�
 
 デバイス ID を検索するには、「デバイス [ID を検索する」を参照してください](#look-up-device-id)。 
 
-例:
+以下に例を示します。
 
 1. これらのデバイスのセットアップに一致するドライバーを使用してデバイスのインストールを許可するからクラス USBDevice **を削除します**。
 2. [これらのデバイス ID に一致するデバイスのインストールを許可する] で、許可するデバイス **ID を追加します**。 
@@ -238,12 +237,6 @@ Intune を使用すると、"許可されたサービス" を使用して、Blue
 > [!div class="mx-imgBorder"]
 > ![[設定] ページBluetoothスクリーンショット](images/bluetooth.png)
 
-### <a name="use-microsoft-defender-for-endpoint-baseline-settings"></a>エンドポイントの基準設定に Microsoft Defender を使用する
-
-Microsoft Defender for Endpoint のベースライン設定は、脅威保護に推奨される構成を表します。 基準計画の構成設定は、構成設定の [プロファイルの編集] ページに表示されます。
-
-> [!div class="mx-imgBorder"]
-> ![MEM のベースライン](images/baselines.png)
 
 ## <a name="prevent-threats-from-removable-storage"></a>リムーバブル 記憶域からの脅威を防止する
   
@@ -365,7 +358,7 @@ Microsoft Defender for Endpoint カスタム検出ルールを使用して、カ
 
 たとえば、どちらの方法でも、USB デバイスがコンピューターにマウントMicrosoft Defender ウイルス対策自動的に実行できます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [ユーザーのリアルタイム保護を構成Microsoft Defender ウイルス対策](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
 - [Defender/AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)

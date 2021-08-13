@@ -9,19 +9,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 10/16/2019
+ms.date: 08/11/2021
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: 高度なメッセージ暗号化は、管理者が保護されたメッセージを使用してさらに多くのことを行うのを有効にすることで、組織がコンプライアンスの義務を果たすのに役立ちます。
-ms.openlocfilehash: d1021d4d424a1ecb984bfd5afa176e9ae3a3451c006df0dd307a5b59d9e4d0e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dbd19c2028a3453d43dc2ce9082955a5ec1165db
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813657"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58243929"
 ---
 # <a name="advanced-message-encryption"></a>高度なメッセージ暗号化
 
@@ -39,10 +39,10 @@ Office 365 Advanced Message Encryptionは[、Microsoft 365 Enterprise E5、Offic
 
 既にセットアップされていない場合Office 365 Message Encryption、新しい機能をセットアップする[Office 365 Message Encryption参照してください](set-up-new-message-encryption-capabilities.md)。
 
-高度なメッセージ暗号化を使用すると、1 つのブランド テンプレートに限定されません。 代わりに、複数のブランド テンプレートを作成して使用できます。 詳細については、「 [暗号化されたメッセージに組織のブランドを追加する」を参照してください](add-your-organization-brand-to-encrypted-messages.md)。
+高度なメッセージ暗号化では、1 つのブランド テンプレートに限定されません。 代わりに、複数のブランド テンプレートを作成して使用できます。 詳細については、「 [暗号化されたメッセージに組織のブランドを追加する」を参照してください](add-your-organization-brand-to-encrypted-messages.md)。 カスタム ブランドを使用すると、外部の受信者は、OME ポータルへのリンクを含む通知メールを受信します。 メール フロー ルールは、通知メールと OME ポータルで使用するブランド テンプレートを決定します。 これにより、セキュリティで保護されたコンテンツは組織外に送信されません。
+
+メッセージを取り消し、ユーザーがポータルを通じて受信するメッセージにのみ有効期限を適用できます。 つまり、カスタム ブランド テンプレートが適用されている電子メール。 詳細と例については、「すべての外部受信者が OME ポータルを使用して暗号化されたメールを読み取る」の [ガイダンスを参照してください](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail)。
 
 [ユーザーが暗号化した電子メールの有効期限をOffice 365 Advanced Message Encryption。](ome-advanced-expiration.md) セキュリティで保護された Web ポータルから暗号化された電子メールへのアクセスを期限切れにすることで保護を強化する自動ポリシーを使用して、組織外で共有される機密性の高いメールを制御します。
 
 [ユーザーが暗号化した電子メールをOffice 365 Advanced Message Encryption](revoke-ome-encrypted-mail.md)します。 セキュリティで保護された Web ポータルから暗号化されたメールへのアクセスを取りやめ、組織外で共有される機密性の高いメールを制御し、保護を強化します。  
-
-カスタム Office 365 Advanced Message Encryptionを適用すると、Microsoft はテンプレートを適用するメール フロー ルールに適合するラッパーを電子メールに適用します。 メッセージを取り消し、ユーザーがポータルを通じて受信するメッセージにのみ有効期限を適用できます。 つまり、カスタム ブランド テンプレートが適用されている電子メール。 詳細と例については、「すべての外部受信者が OME ポータルを使用して暗号化されたメールを読み取る」の [ガイダンスを参照してください](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail)。

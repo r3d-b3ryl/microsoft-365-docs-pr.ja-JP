@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 description: 一般法人向け Microsoft 365 の新しいライセンスを購入する方法について説明します。
 ms.date: 05/11/2021
-ms.openlocfilehash: 239d650bdb765875b60669a4d556f47bcd06dc92
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c9734f4e3c2584241aadf1d7ed9558beebae1a8c18a6eac7173ac7915f56cec1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821417"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803764"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Microsoft 365 のライセンスを購入する
 

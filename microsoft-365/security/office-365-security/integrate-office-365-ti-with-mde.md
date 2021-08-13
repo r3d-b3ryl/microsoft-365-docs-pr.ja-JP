@@ -19,12 +19,12 @@ description: Microsoft Defender for Office 365 Microsoft Defender for Endpoint �
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4ca22633006e047628d5b256bf79c19719da57a3
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 0b9bf8bcd15b52ea94cfc823c04f5501e17c2364e708f6375dd3000a376ed800
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56770772"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint とOffice 365 Microsoft Defender を使用する
 

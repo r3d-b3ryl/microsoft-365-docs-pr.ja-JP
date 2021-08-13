@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: サービス名、説明、場所、期間、価格などのサービス提供情報を入力する手順。 また、サービスを提供する資格がある従業員にタグを付けることもできます。
-ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 8a287e08a64fd2f7ca94e83f7b99c277f9e0124673697b202eda9ad86b0ff9e4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962539"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804028"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Bookings でサービス提供を定義する
 
@@ -98,13 +98,13 @@ Microsoft Bookings でサービス提供を定義する場合は、サービス�
 
         :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Bookings メールの追加情報":::
 
-14. **顧客のテキスト メッセージ通知を有効にする** 選択されている場合携帯ショートメールメッセージは顧客に送信されますが、オプトインした場合にのみ送信されます。
+14. **顧客のテキスト メッセージ通知を有効にする** 選択されている場合、SMS メッセージは顧客に送信されますが、ユーザーがオプトインした場合にのみ送信されます。
 
     - 手動の予約とページの [オプトイン] ボックスSelf-Serviceします。
 
         :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Bookings のオプトイン ボックス":::
 
-    - テキスト メッセージ通知は次のようになります (現在、携帯ショートメールは北米でのみ利用可能です)。
+    - テキスト メッセージ通知は次のようになります (現在、SMS 通知は北米でのみ利用可能です)。
 
         :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Bookings からのテキスト通知":::
 

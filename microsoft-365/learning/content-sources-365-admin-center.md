@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva ラーニング (プレビュー) の学習コンテンツ ソースを構成Microsoft 365 管理センター
+title: '[コンテンツ] ウィンドウでMicrosoft Viva ラーニング (プレビュー) の学習コンテンツ ソースを構成Microsoft 365 管理センター'
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,15 +14,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: Microsoft Viva ラーニング (Preview) の学習コンテンツ ソースを構成する方法については、Microsoft 365 管理センター。
-ms.openlocfilehash: ac9ec6196f758d3ed02d3a102fef80b8a7adeeaa
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: 学習コンテンツ ソースを構成する方法については、Microsoft Viva ラーニング (プレビュー) のページでMicrosoft 365 管理センター。
+ms.openlocfilehash: f7a712d2b7d4fa2635a27f4d1e36893c75c6f9b120503efba676bdd37e0ab1d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891239"
 ---
-# <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Microsoft Viva ラーニング (プレビュー) の学習コンテンツ ソースを構成Microsoft 365 管理センター
+# <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>[コンテンツ] ウィンドウでMicrosoft Viva ラーニング (プレビュー) の学習コンテンツ ソースを構成Microsoft 365 管理センター
 
 > [!NOTE]
 > この記事の情報は、商用リリース前に大幅に変更される可能性があるプレビュー製品に関連しています。 
@@ -115,4 +115,4 @@ Microsoft 以外のサービスの提供者と一緒に作業し、Microsoft 以
 
 ## <a name="next-step"></a>次の手順
 
-[Microsoft Viva SharePointのラーニング コンテンツ ソースとしてラーニング構成する (プレビュー)](configure-sharepoint-content-source.md)
+[コンテンツ SharePointコンテンツ ソースとして構成する (Microsoft Viva ラーニング プレビュー)](configure-sharepoint-content-source.md)
