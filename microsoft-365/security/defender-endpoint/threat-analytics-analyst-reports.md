@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 39949e7a6c51cbad9ea0a34180fde729802f63f3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 150ae09184298cf57887cfb7e9b7efe96a600445ea1a246944e5085b48d9ec0d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817344"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>脅威分析のアナリスト レポート
 
@@ -98,7 +98,7 @@ EDRは、Microsoft Defender for Endpoint にオンボードされている[デ�
 
 アナリスト レポートの高度な検索クエリは、Microsoft アナリストによって確認され、高度な検索クエリ エディターで実行 [する準備が整いました](https://securitycenter.windows.com/advanced-hunting)。 クエリを使用して、将来の一致に関するアラート [をトリガー](custom-detection-rules.md) するカスタム検出ルールを作成することもできます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威の分析の概要](threat-analytics.md)
 - [高度な検索で脅威を事前に検出する](advanced-hunting-overview.md)

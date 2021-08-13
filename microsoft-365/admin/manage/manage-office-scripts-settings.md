@@ -18,12 +18,12 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: 組織内のユーザーのスクリプトOffice設定を管理する方法について学習します。
-ms.openlocfilehash: 17a243c8eaa31be82b956967acb75c1f1001492e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 103c8a6ce2e71cf5cb3660d4ed8b3aadbd249ff3b37b76ef5243c6132b8cfe54
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650741"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825057"
 ---
 # <a name="manage-office-scripts-settings"></a>Office スクリプトの設定を管理する
 
@@ -98,7 +98,7 @@ ms.locfileid: "53650741"
 
     Office スクリプトの設定の変更が有効になるまで、最大で 48 時間かかる場合があります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Office スクリプトは Power Automate で動作しますので、ユーザーが Office スクリプトを使用している間に組織のデータが保護されたままになるために、既存のデータ損失防止 (DLP) ポリシーを確認することをお勧めします。 詳細については、「[データ損失防止 (DLP) ポリシー](/power-automate/prevent-data-loss)」を参照してください。
 

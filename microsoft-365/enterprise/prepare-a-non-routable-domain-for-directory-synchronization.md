@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: 展開できないドメインがオンプレミスのユーザー アカウントに関連付けられている場合の操作を、テナントと同期する前にMicrosoft 365します。
-ms.openlocfilehash: e4d0e020c5792c610d501c33e8f3d5131b7a1ff0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 97e4a0b634b66a439d96496b3e742659b9d99496271fddd8db2ddf7c6ee7cee9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927398"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794862"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
 

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: ユーザーのテナントをセットアップするためのロードマップMicrosoft 365。
-ms.openlocfilehash: 4b94540293b86bd922ce4b29f970e52eb1245a01
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: d96d6246bfe38c9e3a5f3aadf04bf5cfe19ccd2f54697141a7c5463c72a6aea2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53464035"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794716"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>テナントのロードマップMicrosoft 365
 

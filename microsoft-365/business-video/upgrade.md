@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: アプリをアップグレードしてWindows 10 HomeするWindows 10 Pro。
-ms.openlocfilehash: 319152f8a587c123b25907db060b0572ec3a7cf3
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 934928ce44ffe1b3139dc346011ff32b0cfbcbd5186419b5eb531cbb348d9285
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809494"
 ---
 # <a name="upgrade-from-windows-10-home-to-windows-10-pro"></a>Windows 10 Home から Windows 10 Pro
 

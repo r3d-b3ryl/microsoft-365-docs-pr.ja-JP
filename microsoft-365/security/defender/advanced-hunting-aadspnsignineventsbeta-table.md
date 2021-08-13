@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6aa709fe4534bf049c6f8c097bc4bd85a9d6793b
-ms.sourcegitcommit: 93eeaefc0d509c75e4c2210029155298ecca7583
+ms.openlocfilehash: b1cb2b9f7a9f3feddc86fdd5eda5323f5459b427412e334044433f589a85f594
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53347909"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833389"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -52,23 +52,23 @@ ms.locfileid: "53347909"
 |-----|-----|-----|
 | `Timestamp` | datetime | レコードが作成された日付と時刻 |
 | `Application` | 文字列 | 記録されたアクションを実行したアプリケーション |
-| `ApplicationId` | 文字列 | アプリケーションの一意の識別子 |
+| `ApplicationId` | string | アプリケーションの一意の識別子 |
 | `IsManagedIdentity`    | ブール値       | マネージ ID によってサインインが開始されたかどうかを示します。 |
 | `ErrorCode`    | 整数 | サインイン エラーが発生した場合のエラー コードを格納します。 特定のエラー コードの説明を見つけるには、 を参照してください <https://aka.ms/AADsigninsErrorCodes> 。 |
-| `CorrelationId`        | 文字列        | サインイン イベントの一意の識別子 |
-| `ServicePrincipalName` | 文字列        | サインインを開始したサービス プリンシパルの名前  |
-| `ServicePrincipalId`   | 文字列        | サインインを開始したサービス プリンシパルの一意の識別子  |
-| `ResourceDisplayName`  | 文字列        | アクセスされたリソースの表示名  |
-| `ResourceId`           | 文字列        | アクセスされるリソースの一意の識別子  |
-| `ResourceTenantId`     | 文字列        | アクセスされるリソースのテナントの一意の識別子 |
-| `IPAddress`            | 文字列        | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス  |
-| `Country`          | 文字列        | クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード |
-| `State`                | 文字列        | 使用可能な場合は、サインインが発生した状態 |
-| `City`                 | 文字列        | アカウント ユーザーが保存されている都市  |
-| `Latitude`             | 文字列        | サインイン場所の北から南の座標 |
-| `Longitude`            | 文字列        | サインイン場所の東から西への座標 |
-| `RequestId`            | 文字列        | 要求の一意の識別子 |
-|`ReportId` | 文字列 | イベントの一意識別子 |
+| `CorrelationId`        | string        | サインイン イベントの一意の識別子 |
+| `ServicePrincipalName` | string        | サインインを開始したサービス プリンシパルの名前  |
+| `ServicePrincipalId`   | string        | サインインを開始したサービス プリンシパルの一意の識別子  |
+| `ResourceDisplayName`  | string        | アクセスされたリソースの表示名  |
+| `ResourceId`           | string        | アクセスされるリソースの一意の識別子  |
+| `ResourceTenantId`     | string        | アクセスされるリソースのテナントの一意の識別子 |
+| `IPAddress`            | string        | エンドポイントに割り当て、関連するネットワーク通信中に使用される IP アドレス  |
+| `Country`          | string        | クライアント IP アドレスが地理的に位置付けされている国を示す 2 文字のコード |
+| `State`                | string        | 使用可能な場合は、サインインが発生した状態 |
+| `City`                 | string        | アカウント ユーザーが保存されている都市  |
+| `Latitude`             | string        | サインイン場所の北から南の座標 |
+| `Longitude`            | string        | サインイン場所の東から西への座標 |
+| `RequestId`            | string        | 要求の一意の識別子 |
+|`ReportId` | string | イベントの一意識別子 |
 
  
 

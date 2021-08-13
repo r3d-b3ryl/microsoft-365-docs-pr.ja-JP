@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1ece9618ea84209f25ebc4f1626932f03cc7eb40
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7e3a84b2f1ace627906a0235d6ad27904aba8d6b312199f1df1eae133e907143
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817197"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>役割ベースのアクセス制御の役割を作成および管理する
 

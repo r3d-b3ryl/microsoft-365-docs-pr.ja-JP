@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 567916e9e1a1d96d77bc6c187b384a1ec3be72a5
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: a9d8d2fe7fe26b90719502fffebaa96526a26d24207b49136e52373fc058d94b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799371"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 次の条件に従ってアラートをフィルター処理できます。
 
-- 重要度
+- 緊急度
 - 状態
 - カテゴリ
 - 検出ソース

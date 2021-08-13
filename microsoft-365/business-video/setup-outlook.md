@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 詳しくは、電子メールのOutlook設定Microsoft 365してください。
-ms.openlocfilehash: 9dc0ed41df4aaadee060e0c7606600ba5512df09
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ce6ec27043f363f0a4aecd0981e78f7b474e97776d766ecda8ac34a808c44b90
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809566"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>ビジネス メールOutlook for Microsoft 365設定する 
 
@@ -35,7 +35,7 @@ ms.locfileid: "51578641"
 
 アプリをインストールOffice、&#39;、Outlook連絡先の使用を開始する必要があります。 ここでは&#39;方法を示します。
 
-1. [スタート] メニューを開きます。 ユーザーを検索Outlookし、それを選択します。
+1. ファイルを開スタート メニュー。 ユーザーを検索Outlookし、それを選択します。
 2. メール アドレスをMicrosoft 365し、[メール アドレス] を **選択Connect。**
 3. 以前のメール アドレスや個人のメール アドレスなど、使用する追加の電子メール アドレスを入力します。 [次  **へ] を選択します**。
 4. メッセージが表示されたら、パスワードを入力し、[サインイン]  **を選択します**。

@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c0c3e87644b7666c006f2eaf0632827173f5362f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 558e73d00218e7e9f63ed346ff35e1b996adafab8fd5c7739fca8e9cd38a86ca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833533"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>ベストな組み合わせ: Microsoft Defender ウイルス対策と Office 365
 
@@ -67,7 +67,7 @@ Microsoft Defender for Office 365 Microsoft Defender for Endpoint と統合す�
 
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)は、電子メール メッセージ、電子メール添付ファイル、およびリンク (URL) 内の悪意のある脅威から組織を保護Officeします。
 
-    AND
+    および
 
 - [Microsoft Defender for Endpoint は](microsoft-defender-endpoint.md) 、デバイスをサイバー脅威から保護し、高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化し、セキュリティ態勢を改善します。
 

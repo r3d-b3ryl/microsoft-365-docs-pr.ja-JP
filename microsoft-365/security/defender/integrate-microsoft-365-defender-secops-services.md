@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0fc4d68cba89c3ee372baf17c303b21422eb441e
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: a790d81d1e8c97ffad85be921abf5fc0efb87ad2aaaddb72629eac9b5d9d392b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623840"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799300"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>手順 3. サービスの SOC Microsoft 365 Defenderとの統合を計画する
 

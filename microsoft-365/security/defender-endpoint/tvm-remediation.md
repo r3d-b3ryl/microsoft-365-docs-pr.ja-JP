@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3bedc28f6af13d91c73dca7f8512379989f2d0e2
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: be72659ef5784cdda9f478ab876a35e0408f4a9936937197b997bb39af00e6fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647993"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799620"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>脆弱性を修復脅威と脆弱性の管理
 

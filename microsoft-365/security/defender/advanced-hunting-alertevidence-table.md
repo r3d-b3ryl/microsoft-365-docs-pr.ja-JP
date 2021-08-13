@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの AlertEvidence テーブル
 description: 高度な検索スキーマの AlertEvidence テーブルのアラートに関連付けられている情報について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、AlertInfo、アラート、エンティティ、証拠、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、AlertInfo、アラート、エンティティ、証拠、ファイル、IP アドレス、デバイス、コンピューター、ユーザー、アカウント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5ecab217a6181096e4689d78fa2bdddc0a767d0d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eb5358e3751ab10fcad0f4a162fc3e43c0dba61427f710632732893413b6ea7e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932585"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833353"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -51,7 +51,7 @@ ms.locfileid: "51932585"
 | `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダー |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは、通常は入力されません。使用可能な場合は SHA1 列を使用します。 |
-| `FileSize` | int | ファイルのサイズ (バイト単位) |
+| `FileSize` | 整数 | ファイルのサイズ (バイト単位) |
 | `ThreatFamily` | string | 疑わしいファイルまたは悪意のあるファイルまたはプロセスが分類されたマルウェア ファミリは、 |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
@@ -73,7 +73,7 @@ ms.locfileid: "51932585"
 | `RegistryValueName` |string | 記録されたアクションが適用されたレジストリ値の名前 |
 | `RegistryValueData` |string | 記録されたアクションが適用されたレジストリ値のデータ |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc25da8c4cffa5c67747ea02a0f431c0c2c7a436
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 8d086c2aa86b144a08337182b4631e0bab46c66f5a892e76588d9950ba918d33
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652625"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799649"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>デバイス向けの Microsoft セキュア スコア
 
@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint シグナルを転送し、Microsoft Secure Scor
 
 3. [基本 **設定の保存] を選択します**。
 
-## <a name="how-it-works"></a>仕組み
+## <a name="how-it-works"></a>メカニズム
 
 >[!NOTE]
 > Microsoft Secure Score for Devices は現在、グループ ポリシーを介して設定された構成をサポートしています。 現在の部分的な Intune のサポートにより、Intune を介して設定されている可能性がある構成が正しく構成されていないと表示される場合があります。 組織が安全な構成管理のために Intune を使用している場合に、IT 管理者に問い合わせて実際の構成状態を確認します。
@@ -111,7 +111,7 @@ Microsoft Secure Score for Devices カードのデータは、細心の注意を
 >1. [Microsoft Update [Catalog] に移動します](https://www.catalog.update.microsoft.com/home.aspx)。
 >2. ダウンロードする必要があるセキュリティ更新プログラムの KB 番号をキーインし、[検索] を **クリックします**。  
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

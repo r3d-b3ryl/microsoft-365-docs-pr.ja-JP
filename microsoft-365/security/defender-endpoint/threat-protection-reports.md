@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6aa112f0d0219394445ebd57cacdfeb2df83ec4c
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: a82b88683eaf1e7033115ce98773abf810602264dda8e48f5004d4ee5bf1cdc6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817272"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の脅威に対する保護のレポート
 
@@ -33,7 +33,7 @@ ms.locfileid: "53567802"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 脅威保護レポートは、組織で生成されたアラートに関する高レベルの情報を提供します。 このレポートには、検出元、カテゴリ、重大度、状態、分類、および時間の間のアラートの決定を示す傾向情報が含まれています。
 

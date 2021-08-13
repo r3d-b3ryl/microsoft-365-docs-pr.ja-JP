@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: 組織内のすべてのユーザーに適用Windows 10デバイス ポリシーを構成し、セキュリティで保護された方法で接続する方法について説明します。
-ms.openlocfilehash: c7d27b903734f9348471bb7765b88650caeed9d5
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 42ebfe2784ff42302daa778f1851e528e5aa28ff1c03f1a8cf5ff66b1afdfa4e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809446"
 ---
 # <a name="configure-windows-10-devices"></a>Windows 10 デバイスを構成する
 

@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの IdentityLogonEvents テーブル
 description: 高度なハンティング スキーマの IdentityLogonEvents テーブルで Active Directory によって記録される認証イベントについて説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、IdentityLogonEvents、Azure AD、Active Directory、Microsoft Defender for Identity、IDENTITY
+keywords: 高度なハンティング、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、IdentityLogonEvents、Azure AD、Active Directory、Microsoft Defender for Identity、IDENTITY
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3cd0c0f371c73a515704791e829be7266d400580
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: d7f5c40030f019f309b143db9271e62b8ba8172c83d10d479b2df60277394eca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799480"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -74,7 +74,7 @@ ms.locfileid: "52572755"
 | `ReportId` | long | イベントの一意識別子 |
 | `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

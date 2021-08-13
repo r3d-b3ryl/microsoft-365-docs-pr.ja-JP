@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 43d1e11ebea2933f8a101b640690f44089e2087d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e11efcf73a6fcf91e6260ef4ecf376cf6b453dca770585a37681ebd4524b701d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649836"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833521"
 ---
 # <a name="raw-data-streaming-api"></a>Raw Data Streaming API
 
@@ -46,7 +46,7 @@ Microsoft Defender for Endpoint は[](../defender/advanced-hunting-overview.md)�
 [エンドポイント イベントの Microsoft Defender を Azure イベント ハブにストリーミングする](raw-data-export-event-hub.md)|テナントでストリーミング API を有効にし、Defender for Endpoint を構成して高度なハンティングを [イベント](advanced-hunting-overview.md) ハブにストリーミングする方法について説明します。
 [エンドポイントイベントの Defender を Azure ストレージ アカウントにストリーミングする](raw-data-export-storage.md)|テナントでストリーミング API を有効にし、Defender for Endpoint を構成して Azure ストレージ アカウントに [高度](advanced-hunting-overview.md) なハンティングをストリーミングする方法について説明します。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [Azure Event Hubs のドキュメント](/azure/event-hubs/)

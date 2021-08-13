@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9c974da84dfffeeb655e29e934e2fe37c9af94bc
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a27761cc6f907905e9aa1a4fb2c1a1dc8120f5acfb15574cae6b170d75d51ec1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833485"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>デバイスでライブ応答コマンドを実行する
 
@@ -60,6 +60,25 @@ ms.locfileid: "53650933"
 
 5.  ライブ応答コマンドが失敗すると、フォローしているすべてのアクションは実行されません。
 
+## <a name="minimum-requirements"></a>最小要件
+
+デバイスでセッションを開始する前に、次の要件を満たしていることを確認してください。
+
+- **サポートされているバージョンのファイルを** 実行Windows。
+
+  デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows
+
+  - **Windows 10**
+    - [バージョン 1909](/windows/whats-new/whats-new-windows-10-version-1909) 以降
+    - [バージョン 1903](/windows/whats-new/whats-new-windows-10-version-1903) [(KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)のバージョン[1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809)
+    - [バージョン 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [バージョン 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+
+  - **WindowsServer 2019 - パブリック プレビューにのみ適用**
+    - バージョン 1903 以降 [(KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)を使用)
+    - バージョン 1809 [(KB4537818 付](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)き)
+    
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可を選択する方法など、詳細については、「開始する」 [を参照してください](apis-intro.md)。
@@ -203,7 +222,7 @@ HTTP/1.1 200 Ok
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [コンピューター アクション API の取得](get-machineaction-object.md)
 - [ライブ応答結果の取得](get-live-response-result.md)
