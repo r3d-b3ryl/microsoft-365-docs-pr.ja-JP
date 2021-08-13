@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: df56e2bdb35a4c7912a470c17951074cb5f5c1a5
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 96e66728ed423f839a60c38ff711a1a8280584128aeb24887d0341337d996a8b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295417"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843781"
 ---
 # <a name="contact-support-for-seychelles"></a>Seychelles のサポートに問い合わせ
 

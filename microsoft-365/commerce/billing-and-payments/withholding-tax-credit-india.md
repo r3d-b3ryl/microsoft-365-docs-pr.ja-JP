@@ -21,12 +21,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 68afdd9c5dddc071faa96a78981c68cc2c20e1ed
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: b588f95309fcaa16bcee1ad71eaaf21ef053eadcd897bc0955eb58c2fc950b9e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694223"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809091"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>アカウントの源泉徴収税のクレジットを要求する (インドのお客様)
 
@@ -67,7 +67,7 @@ Microsoft サポートでチケットを開いて WHT 要求を送信する
 | 1 | 4 月 ~ 6 月 | 15 -8 月 | 31 -8 月 |
 | 2 | 7 月 ~ 9 月 | 15-11 月 | 30-11 月 |
 | 3 | 10 月 ~ 12 月 | 15-Feb | 28-Feb |
-| 4 | 1 月 ~ 3 月 | 15-6 月 | 30-6 月 |
+| 4  | 1 月 ~ 3 月 | 15-6 月 | 30-6 月 |
 
 > [!IMPORTANT]
 >

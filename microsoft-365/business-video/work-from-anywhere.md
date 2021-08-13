@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: どこからでも作業Microsoft 365方法の概要。
-ms.openlocfilehash: 1b8bfe4f452b1a7d9501ba7b92554f86492a36e6
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d2a11f4094e85e2514c1016c3fb7566359d32bce843e2d8070c39f41591cb437
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803599"
 ---
 # <a name="work-from-anywhere---overview"></a>どこからでも作業する - 概要
 
@@ -94,9 +94,9 @@ Android iOS にインストールする方法Office アプリ[詳細](install-ap
 **[オンライン] を使用してブラウザー Officeする**
 
 - [オンラインのOfficeを開始するMicrosoft 365](https://support.microsoft.com/office/5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
-- [Word for the web の使用を開始する](https://support.microsoft.com/office/b406a6f9-341e-45f2-b9ac-ed85b6f7b8f6)
+- [ユーザー設定のWord for the web](https://support.microsoft.com/office/b406a6f9-341e-45f2-b9ac-ed85b6f7b8f6)
 - [オンラインのExcelする](https://support.microsoft.com/office/63b50461-38c4-4c93-a17e-36998be0e3d0)
-- [Web のPowerPointを開始する](https://support.microsoft.com/office/21360025-7eef-4173-9d7c-08281d55f64a)
+- [ユーザー設定のPowerPoint for the web](https://support.microsoft.com/office/21360025-7eef-4173-9d7c-08281d55f64a)
 
 ### <a name="join-online-meetings-remotely"></a>オンライン会議にリモートで参加する
 

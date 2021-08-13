@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: プランをアップグレードする最も簡単な方法は、管理センターの [アップグレード] タブを使用する方法です。 ただし、[アップグレード] タブが常にサポートされているわけではありません。
 ms.date: 04/21/2021
-ms.openlocfilehash: a4db0934767beb7913939475d8615f2a0184d0a3
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: e97933bdf8d4368ac476e0173f7611b1d89493792567a876de54476d82f128e4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394763"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808910"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 

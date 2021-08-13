@@ -14,11 +14,11 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365スコアのベンチマークと比較
-ms.openlocfilehash: e84a6dd63376c55c7da0abd4c414577c94f760d4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: b57055155505423118a9f51bca328add29dc8fdaa9a1c804acf222689209f6a9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858449"
 ---
 # <a name="office-365-network-score-benchmarks-and-comparisons"></a>Office 365スコアのベンチマークと比較

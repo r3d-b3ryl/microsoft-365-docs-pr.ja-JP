@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 32 ビット アプリをコンピューターに自動的Officeし、Windows 10する方法について学習します。
-ms.openlocfilehash: 843be426d817da1173769b3b66dc4c054179f0fd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 134d5f2918e3f28c2025b282b9ae0325b64fe0474ae8123d0637bb43c4730c55
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803574"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>ビジネス向けOfficeクライアントの展開Microsoft 365準備する
 
@@ -53,7 +53,7 @@ To determine if you have the Click-to-Run version of Office, in any Office app g
   
 次の PC を持つエンドユーザー:
   
-- **ユーザー** ライセンスWindows 10 Business、ビジネス ライセンス、Microsoft 365クリエーター更新プログラムWindows 10アクティブなユーザー ライセンスを持ち、Azure Active Directory。 
+- **ユーザー** ライセンスWindows 10 Business、ビジネス ライセンスMicrosoft 365アクティブなWindows 10 Creators Update持ち、Azure Active Directory。 
     
 - **64** ビット アプリ (Word、Office、Excel など) をPowerPoint。 64 ビット Office アプリが必要な場合、ビジネス管理コンソール用の Microsoft 365 から 64 ビット 2016 クイック実行 バージョンの Office をトリガーするサポートが存在しないので、この機能は適しています。 
     

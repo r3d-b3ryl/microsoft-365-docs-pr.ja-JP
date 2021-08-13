@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e7941297ea523cb395ab0ac36707bd7d224ea60a0bfeadfae9f28e5df6d3c70a
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 35db4a7728fff40e6bf81b2c7992db229048964f60fc1ed2db829cf2c86b0749
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835897"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>通信コンプライアンスの詳細については、Microsoft 365
 
@@ -47,8 +47,6 @@ ms.locfileid: "54523350"
 - [より優れたMicrosoft Teams - コミュニケーション コンプライアンスにおける最新のネイティブ Teams統合機能の詳細](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 コミュニケーション コンプライアンスの概要については、「職場での嫌がらせを検出し、Microsoft Mechanics チャネルの Microsoft 365でコミュニケーション[コンプライアンス](https://youtu.be/z33ji7a7Zho)に対応する」[を参照してください](https://www.youtube.com/user/OfficeGarageSeries)。
-
-[TD 証券が通信](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance)コンプライアンスを使用して規制上の義務に対処し、セキュリティと安定性のニーズを満たす方法をご確認ください。
 
 ## <a name="scenarios-for-communication-compliance"></a>情報コンプライアンスのシナリオ
 

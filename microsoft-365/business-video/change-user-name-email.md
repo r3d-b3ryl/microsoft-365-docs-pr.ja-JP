@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 表示名、エイリアス、または電子メール アドレスを変更して、ユーザーの名前または電子メール アドレスを変更する方法について説明します。
-ms.openlocfilehash: c7d960daa8b1b83149db90b10b7af4236d535a9d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 238d4a81853a490fcc92858480e841aeb7aaa8b7c054ae4bd39e5caee11b91d7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394835"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803632"
 ---
 # <a name="change-a-users-name-or-email-address"></a>ユーザーの名前または電子メール アドレスを変更する
 

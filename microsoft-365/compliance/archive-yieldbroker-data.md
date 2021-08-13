@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas からユーザーに Yieldbroker データをインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 1f2ca6850057112cc0a97b08811532961a213e89
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3bad62c5914faa31e9ba4f116ad3885e50db1985fbd369f396412ae19e9cb2cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163788"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835852"
 ---
 # <a name="set-up-a-connector-to-archive-yieldbroker-data"></a>Yieldbroker データをアーカイブするコネクタをセットアップする
 
-コンプライアンス センターの Veritas コネクタMicrosoft 365使用して、Yieldbroker から組織のユーザー メールボックスにデータをインポートMicrosoft 365します。 Veritas は、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成された[Yieldbroker](https://globanet.com/yieldbroker/)コネクタをMicrosoft 365。 コネクタは、コンテンツを Yieldbroker から電子メール メッセージ形式に変換し、それらのアイテムをユーザーのメールボックスにインポートMicrosoft 365。
+サーバーの Veritas コネクタを使用Microsoft 365 コンプライアンス センター、Yieldbroker からユーザー メールボックスにデータをインポートしてアーカイブMicrosoft 365します。 Veritas は、サードパーティのデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートするように構成された[Yieldbroker](https://globanet.com/yieldbroker/)コネクタをMicrosoft 365。 コネクタは、コンテンツを Yieldbroker から電子メール メッセージ形式に変換し、それらのアイテムをユーザーのメールボックスにインポートMicrosoft 365。
 
 Yieldbroker をユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルMicrosoft 365コンプライアンス機能を適用できます。 Yieldbroker コネクタを使用してデータをインポートおよびアーカイブMicrosoft 365、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -35,7 +35,7 @@ Yieldbroker をユーザー メールボックスに格納した後、訴訟ホ�
 
 2. 24 時間に 1 回、Yieldbroker アイテムは Veritas Merge1 サイトにコピーされます。 コネクタは、コンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成した Yieldbroker コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage 場所にメッセージを転送します。
+3. Microsoft 365 コンプライアンス センター で作成した Yieldbroker コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage 場所にメッセージを転送します。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの Email プロパティの値を使用して、変換された *Yieldbroker* アイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **Yieldbroker** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべての Yieldbroker には、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
@@ -43,11 +43,11 @@ Yieldbroker をユーザー メールボックスに格納した後、訴訟ホ�
 
 - Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 アカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
 
-- 手順 1 で Yieldbroker コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、コンプライアンス センターの [データ コネクタ] ページにコネクタMicrosoft 365必要です。 既定では、この役割は、グループ内の任意の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- 手順 1 で Yieldbroker コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、データ コネクタ ページの [データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 既定では、この役割は、グループ内の任意の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
 
 ## <a name="step-1-set-up-the-yieldbroker-connector"></a>手順 1: Yieldbroker コネクタをセットアップする
 
-最初の手順は、コンプライアンス センターの [データ コネクタ] ページMicrosoft 365、Yieldbroker のコネクタを作成することです。
+最初の手順は、次のページの [データ コネクタ] ページMicrosoft 365 コンプライアンス センター、Yieldbroker のコネクタを作成することです。
 
 1. [データ コネクタ [https://compliance.microsoft.com](https://compliance.microsoft.com/) Yieldbroker] **に** 移動し、[ &gt; **データ コネクタ] をクリックします**。
 
@@ -63,7 +63,7 @@ Yieldbroker をユーザー メールボックスに格納した後、訴訟ホ�
 
 2 番目の手順は、Merge1 サイトで Yieldbroker コネクタを構成することです。 Yieldbroker を構成する方法の詳細については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Yieldbroker%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 
-[ファイルの **保存と&完了**] をクリックすると、コンプライアンス センターのコネクタ ウィザードの [ユーザー Microsoft 365] ページが表示されます。
+[ファイルの **保存と&完了**] をクリックすると、コネクタ ウィザードの [ユーザー マッピング] ページが表示Microsoft 365 コンプライアンス センターされます。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
@@ -75,7 +75,7 @@ Yieldbroker をユーザー メールボックスに格納した後、訴訟ホ�
 
 ## <a name="step-4-monitor-the-yieldbroker-connector"></a>手順 4: Yieldbroker コネクタを監視する
 
-Yieldbroker コネクタを作成した後、コンプライアンス センターでコネクタのMicrosoft 365できます。
+Yieldbroker コネクタを作成した後は、コネクタの状態を[表示]ページでMicrosoft 365 コンプライアンス センター。
 
 1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com/) ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
 

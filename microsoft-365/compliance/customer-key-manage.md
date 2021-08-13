@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定した後、AKV キーを復元し、アクセス許可を管理し、データ暗号化ポリシーを作成および割り当て、管理する方法について説明します。
-ms.openlocfilehash: da806ec9dcf1327ec5fdd6b0a0c9e7f22c89584e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 263f5d13a554ab06c140101595e39c98ae1bc9488dbeff13da0eda9c02d334fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345060"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835837"
 ---
 # <a name="manage-customer-key"></a>顧客キーの管理
 
@@ -41,9 +41,9 @@ ms.locfileid: "52345060"
 
    - *PolicyName* は、ポリシーに使用する名前です。 名前にスペースを含めることはできません。 たとえば、Contoso_Global。
 
-   - *KeyVaultURI1 は* 、ポリシーの最初のキーの URI です。 たとえば、「 <https://contosoWestUSvault1.vault.azure.net/keys/Key_01> 」のように入力します。
+   - *KeyVaultURI1 は* 、ポリシーの最初のキーの URI です。 たとえば、<https://contosoWestUSvault1.vault.azure.net/keys/Key_01> などです。
 
-   - *KeyVaultURI2* は、ポリシー内の 2 番目のキーの URI です。 たとえば、「 <https://contosoCentralUSvault1.vault.azure.net/keys/Key_02> 」のように入力します。 2 つの URI をコンマとスペースで区切ります。
+   - *KeyVaultURI2* は、ポリシー内の 2 番目のキーの URI です。 たとえば、<https://contosoCentralUSvault1.vault.azure.net/keys/Key_02> などです。 2 つの URI をコンマとスペースで区切ります。
 
    - *ポリシーの* 説明は、ポリシーの内容を思い出すのに役立つ、ユーザーフレンドリーなポリシーの説明です。 説明にスペースを含めることができます。 たとえば、「テナント内のすべてのユーザーに対する複数のワークロードのルート ポリシー」です。
 
@@ -93,9 +93,9 @@ DEP は、Azure Key Vault に格納されている一連のキーに関連付け
 
    - *ポリシーの* 説明は、ポリシーの内容を思い出すのに役立つ、ユーザーフレンドリーなポリシーの説明です。 説明にスペースを含めることができます。 たとえば、「米国とその地域のメールボックスのルート キー」です。
 
-   - *KeyVaultURI1 は* 、ポリシーの最初のキーの URI です。 たとえば、「 <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01> 」のように入力します。
+   - *KeyVaultURI1 は* 、ポリシーの最初のキーの URI です。 たとえば、<https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01> などです。
 
-   - *KeyVaultURI2* は、ポリシー内の 2 番目のキーの URI です。 たとえば、「 <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02> 」のように入力します。 2 つの URI をコンマとスペースで区切ります。
+   - *KeyVaultURI2* は、ポリシー内の 2 番目のキーの URI です。 たとえば、<https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02> などです。 2 つの URI をコンマとスペースで区切ります。
 
    例:
   

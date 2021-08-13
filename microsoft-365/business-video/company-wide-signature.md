@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 会社全体の電子メール署名を作成する方法について学習します。
-ms.openlocfilehash: 669c61d17784641d1ecc88ac0952a46575c7898b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2fa201a8c01aa69046a3e126a4ff774b728fa49d0631129f109bcf6a1cc7e6fe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706264"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803620"
 ---
 # <a name="create-a-company-wide-email-signature"></a>会社全体のメール署名を作成する
 
@@ -38,7 +38,7 @@ ms.locfileid: "52706264"
 
 ## <a name="try-it"></a>お試しください!
 
-1. 管理センターで **、[Microsoft 365]** を選択Exchange。
+1. [ファイル] でMicrosoft 365 管理センターを **選択Exchange。**
 1. [メール **フロー] を選択します**。
 1. [ **追加+] を選択** し、[免責事項の **適用] を選択します**。
 1. [新しい **ルール] ページで、次の設定を** 行います。

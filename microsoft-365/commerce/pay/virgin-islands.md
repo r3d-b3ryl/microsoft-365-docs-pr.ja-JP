@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 18ed76f9bf777d6a9782dfb7fff75e1c5465123d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5e45a3269a31023d919f80a547a7236221edb353ba1944b0de193a3df2310caa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536180"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808898"
 ---
 # <a name="payment-information-for-virgin-islands-us"></a>米国領バージン諸島の支払い情報
 

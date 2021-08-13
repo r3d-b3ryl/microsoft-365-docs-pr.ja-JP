@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 読み込みセットの管理について詳しくは、Advanced eDiscovery。
-ms.openlocfilehash: 38eb0e19c7e62a42df85343d3328b941332adc03
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 6256cd9b2772bd2ee86841cd00cab4ca307ac2a72eb09fc5d58b3d0caeaf88bf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285603"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835765"
 ---
 # <a name="manage-load-sets-in-advanced-ediscovery"></a>読み込みセットを管理Advanced eDiscovery
 

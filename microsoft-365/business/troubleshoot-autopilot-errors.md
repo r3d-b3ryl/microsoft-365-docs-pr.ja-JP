@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
 description: このページで AutoPilot デバイス ファイルを操作している間に表示される可能性のあるエラーのトラブルシューティングMicrosoft 365 Business Premium。
-ms.openlocfilehash: 1078ab74b07952e4bb565555a081b98ecce9db5c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b74c57acbaa5682f6db97e7d8a090e6e28a40dcc3246f00cacc7984cb52cc758
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578089"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809182"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>AutoPilot デバイス エラーのトラブルシューティング
 

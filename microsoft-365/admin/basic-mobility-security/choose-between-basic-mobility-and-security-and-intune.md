@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本モビリティとセキュリティは、重要なMicrosoft 365です。
-ms.openlocfilehash: 4da5175ece5da0e6e2f5aaadb26a177835d90fcf39f727b748b83685c1c355d7
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 69d1c285d234d0884400cfc6325fcecfbff5a2d3bb62769682ec974b53a85f7e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834511"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827037"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>基本モビリティとセキュリティまたは Intune の間で選択する
 
@@ -71,6 +71,7 @@ Microsoft Intune組み込みの Basic Mobility and Security では、どちら�
 |デバイスのポリシー準拠|デバイス レベルの PIN ロックや脱獄の検出など、セキュリティ ポリシーを設定および管理します。 |Android 9 以降のデバイスの制限事項。 詳細を [参照してください](capabilities.md)。 |はい|
 |デバイスのコンプライアンスに基づく条件付きアクセス |準拠しないデバイスがクラウドから企業の電子メールとデータにアクセスしなかからな |このページではWindows 10。<br/>オンライン、オンライン、およびExchange Online、SharePointへのアクセスを制御Outlook。 |はい |
 |デバイス構成  |デバイス設定を構成する (たとえば、カメラを無効にする)|制限された設定のセット。|はい|
+|デバイスのポリシー準拠  |デバイス レベルの PIN ロックや脱獄の検出など、セキュリティ ポリシーを設定および管理します。 |Android 9 以降のデバイスの制限事項。 詳細を [参照してください](capabilities.md)。 |はい|
 |電子メール プロファイル  |デバイスでネイティブメール プロファイルをプロビジョニングします。 |はい|はい|
 |WiFi プロファイル |デバイスでネイティブ WiFi プロファイルをプロビジョニングします。 |いいえ|はい|
 |VPN プロファイル |デバイスにネイティブ VPN プロファイルをプロビジョニングします。 |いいえ|はい|

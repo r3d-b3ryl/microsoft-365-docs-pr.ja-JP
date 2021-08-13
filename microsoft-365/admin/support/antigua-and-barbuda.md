@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a49295700ca31bca2deddb5c8a940213884657ff
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6540fc02d90fda1aa63710eecc1f886f14c7d37bfe70a95d5c66dcf907018292
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296974"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843817"
 ---
 # <a name="contact-support-for-antigua-and-barbuda"></a>アンティグアバーブーダのサポートに問い合わせ
 

@@ -26,12 +26,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: ユーザーのサインアップ プロセスを実行する前に知る必要があるOffice 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: 8c9598215b5f5da7b4a62ca89bbc0fa5a94fe12d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 00745f4d936c0ee7f0a16270720fc87cb5dab2b179de4ce48b7628764152ab6a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394233"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827109"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 

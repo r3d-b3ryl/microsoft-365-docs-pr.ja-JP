@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティ保護と管理に役立ちます。
-ms.openlocfilehash: 5619ce6a8fa2c705acc6be08e3af8ad6f90a6d99
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: e69ad327add8ced4f3bacfa47c5b9424f3601b63a18360983e20c9a68ea83b53
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393309"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827073"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
@@ -61,9 +61,9 @@ Basic Mobility and Security を使用すると、次のデバイスをセキュ�
 
 次の表に示すさまざまな種類のモバイル デバイスでサポートされているアプリは、ユーザーのデバイスに適用される新しいモバイル デバイス管理ポリシーが作成され、ユーザーがデバイスを以前に登録しなかった場合に、Basic Mobility and Security に登録するようユーザーに求めるメッセージを表示します。 ポリシーの設定方法によっては、ユーザーのデバイスがポリシーに準拠しない場合、ユーザーがこれらのアプリの Microsoft 365 リソースにアクセスできないか、アクセス権を持っている可能性がありますが、Microsoft 365 はポリシー違反を報告します。
 
-|**Product**|**iOS 10.0 以降**|**Android 5.0 以降**|
+|**製品**|**iOS 10.0 以降**|**Android 5.0 以降**|
 |:-----|:-----|:-----|
-|**Exchange Exchange ActiveSync** バージョン 14.1 以降を使用する、組み込みの電子 Exchange ActiveSyncメールアプリとサードパーティ製アプリ (TouchDown など) が含まれています。 |メール |Email |
+|**Exchange Exchange ActiveSync** バージョン 14.1 以降を使用する、組み込みの電子 Exchange ActiveSyncメールアプリとサードパーティ製アプリ (TouchDown など) が含まれています。 |メール |電子メール |
 |**Office**  と  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**電話とタブレットの場合**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **電話のみ:** <br/> Office Mobile |
 
 > [!NOTE]

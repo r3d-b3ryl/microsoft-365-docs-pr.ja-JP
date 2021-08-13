@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: ユーザーがモバイル デバイスからアプリや作業ファイルにアクセスする方法Office保護ポリシーについて説明します。
-ms.openlocfilehash: 7602b712f2dfc3ba369fd76979baaaa8d5da5c5c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6e48ef857de8046854a94d470b28ba5db96b373bc8b190dc1062d4f408a9802c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925281"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809254"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>ユーザーによるモバイル デバイスの Office ドキュメントのアクセス方法を管理する
 

@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online サービス エンドポイントへの呼び出し数を制限することにより、SharePoint Onlineで最新および従来の発行サイト ページを最適化する方法を学びます。
-ms.openlocfilehash: cab0f6a020bd1148a0e852b5a393a6ad907f9771
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 83a9fdaef8b5441955be7e7ebc8fc8553030892eebb7ddd8e518750e9cd26c0a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921620"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858538"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online の最新および従来の発行サイト ページでページ呼び出しを最適化する
 
@@ -71,7 +71,7 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 >[!NOTE]
 >ページ読み込み時間は、ネットワーク負荷、時間帯、その他の一時的な状態など、さまざまな要素によって異なります。 結果を平均化するために、変更の前後に数回に渡ってページ読み込み時間をテストする必要があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
 

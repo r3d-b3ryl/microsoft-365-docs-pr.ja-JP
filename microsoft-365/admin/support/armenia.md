@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fe8c12deb0d7c674d5e3eb5ab9ce33f8831ed11c
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: dd264b3556228c639f379386587cadb4101b945058dde49f421f7f4862266619
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296962"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843793"
 ---
 # <a name="contact-support-for-armenia"></a>アルメニアのサポートに問い合わせ
 
