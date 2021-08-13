@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、コア電子情報開示のケースを作成、閉じる、再度開く、削除する方法についてMicrosoft 365。
-ms.openlocfilehash: 517819ce542d5f53587d21c2ee08c9d5d96cd27d
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: d8d2a185d32445639b99243d50fa1e21ff09872548de12c8505dc4e6776fe9c2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551455"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850617"
 ---
 # <a name="manage-cases-in-core-ediscovery"></a>コア電子情報開示のケースを管理する
 
@@ -30,7 +30,7 @@ ms.locfileid: "43551455"
 
 ## <a name="close-a-case"></a>ケースを閉じる
 
-## <a name="reopen-a-case"></a>ケースを再度開く
+## <a name="reopen-a-case"></a>ケースを再び開く
 
 ## <a name="delete-a-case"></a>ケースの削除
 

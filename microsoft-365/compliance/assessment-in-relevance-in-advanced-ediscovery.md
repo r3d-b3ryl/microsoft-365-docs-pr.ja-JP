@@ -18,12 +18,12 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: 評価ステージの概要と、関連度トレーニング中の問題の豊富さを判断する際の役割Microsoft 365 Advanced eDiscovery。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8930f362d217ed87fc0e16b88b7588ab781164e8
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: c3965d15f64559da51b2071679913f02979d89f83db6124703c0d393608effe4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769278"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808574"
 ---
 # <a name="assessment-in-the-relevance-module-in-advanced-ediscovery"></a>[関連度] モジュールの評価Advanced eDiscovery
   

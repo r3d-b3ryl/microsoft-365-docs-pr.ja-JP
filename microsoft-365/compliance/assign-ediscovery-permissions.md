@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 電子情報開示関連のタスクを実行するために必要なアクセス許可を、Microsoft 365 コンプライアンス センター。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06e75a18c338d2634ae3be93514ee518d9e91860
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 080514ba2d802ca0aa3438e00966cc84df59f32149ff9392a180344949d9ec26
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194675"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808460"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>電子情報開示のアクセス許可をユーザーに割り当Microsoft 365 コンプライアンス センター
 
@@ -77,7 +77,7 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 
 次の表に、Microsoft 365 コンプライアンス センター の電子情報開示関連の RBAC ロールを示し、各役割が既定で割り当てられている組み込みの役割グループを示します。
   
-| 役割 | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織の管理 | レビュー担当者 |
+| 役割 | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織管理 | レビュー担当者 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |ケース管理 <br/> |![チェック マーク](../media/checkmark.png) <br/> |![チェック マーク](../media/checkmark.png) <br/> |![チェック マーク](../media/checkmark.png) <br/> | <br/> |
 |コミュニケーション <br/> | <br/> |![チェック マーク](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -145,7 +145,7 @@ Microsoft 365 コンプライアンス センターの [アクセス許可] ペ�
 
 この役割では、コンテンツ検索から返された項目の一覧を表示できます。 一覧から各項目を開いて表示し、項目の内容を確認することもできます。
 
-### <a name="review"></a>レビュー
+### <a name="review"></a>確認
 
 この役割を使用すると、ユーザーはユーザーがレビュー セットに[アクセスAdvanced eDiscovery。](overview-ediscovery-20.md) この役割が割り当てられているユーザーは、自分がメンバーである Microsoft 365 コンプライアンス センター の [電子情報開示 > **Advanced]** ページでケースの一覧を表示して開きます。 ユーザーがケースにアクセスしたAdvanced eDiscovery、ケース データにアクセスするために **[** セットの確認] を選択できます。 この役割では、ユーザーがケースに関連付けられているコレクション検索の結果をプレビューしたり、その他の検索またはケース管理タスクを実行したりできない。 この役割を持つユーザーは、レビュー セット内のデータにのみアクセスできます。
 

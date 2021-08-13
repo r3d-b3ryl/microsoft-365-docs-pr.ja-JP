@@ -11,82 +11,76 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 9a1a86c84728dd6a45dbbabebcdee2e64ab380cf
-  ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
-  ms.translationtype: HT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/26/2021
-  ms.locfileid: "52023823"
 landingContent:
-- title: サービスの状態を監視する
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Microsoft 365 の使用状況レポート - 概要
-      url: ../activity-reports/activity-reports.md
-    - text: 生産性スコア - 概要
-      url: ../productivity/productivity-score.md
-    - text: Microsoft 365 利用状況分析 - PowerBI
-      url: ../usage-analytics/usage-analytics.md
-  - linkListType: how-to-guide
-    links:
-    - text: 利用状況分析を有効化する
-      url: ../usage-analytics/enable-usage-analytics.md
-    - text: 組織の連絡先情報を変更する
-      url: change-address-contact-and-more.md
-    - text: 管理者の連絡先情報を更新する
-      url: update-phone-number-and-email-address.md
-    - text: リリース オプションをセットアップする
-      url: release-options-in-office-365.md
-    - text: 新機能の表示と非表示を切り替える
-      url: show-hide-new-features.md
-- title: ユーザーアクセスをブロックし、データをバックアップする
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 元ユーザーのデータにアクセスしてバックアップを作成する
-      url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
-    - text: メールの保持をセットアップする (Microsoft 365 Business Premium)
-      url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
-    - text: デバイスから会社のデータを削除する (Microsoft 365 Business Premium)
-      url: ../../business/remove-company-data.md
-- title: アドインとアプリを管理する
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 最新のアプリへとユーザーをアップグレードする
-      url: ../setup/upgrade-users-to-latest-office-client.md
-    - text: アプリ起動ツールをカスタマイズする
-      url: customize-the-app-launcher.md
-    - text: アドインの一元展開の要件
-      url: centralized-deployment-of-add-ins.md
-    - text: 一元展開でアドインをインストールして管理する
-      url: manage-deployment-of-add-ins.md
-    - text: Office スクリプトの設定を管理する
-      url: manage-office-scripts-settings.md
-- title: Microsoft Teams
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Microsoft Teams 管理ドキュメント
-      url: https://docs.microsoft.com/microsoftteams/
-    - text: Outlook と Teams を同時に使用する
-      url: ../../business-video/collab-outlook-teams.md
-  - linkListType: learn
-    links:
-    - text: Microsoft Teams のトレーニング
-      url: https://support.microsoft.com/office/4f108e54-240b-4351-8084-b1089f0d21d7
-- title: OneDrive と SharePoint
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: IT 担当者および管理者向け SharePoint ドキュメント
-      url: /sharepoint/
-    - text: IT 担当者および管理者向け OneDrive ドキュメント
-      url: /onedrive/
-  - linkListType: how-to-guide
-    links:
-    - text: OneDrive と SharePoint の共有を管理する
-      url: /onedrive/manage-sharing
-    - text: サイトを作成、管理する。
-      url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center
+  - title: サービスの状態を監視する
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft 365 の使用状況レポート - 概要
+            url: ../activity-reports/activity-reports.md
+          - text: 生産性スコア - 概要
+            url: ../productivity/productivity-score.md
+          - text: Microsoft 365 利用状況分析 - PowerBI
+            url: ../usage-analytics/usage-analytics.md
+      - linkListType: how-to-guide
+        links:
+          - text: 利用状況分析を有効化する
+            url: ../usage-analytics/enable-usage-analytics.md
+          - text: 組織の連絡先情報を変更する
+            url: change-address-contact-and-more.md
+          - text: 管理者の連絡先情報を更新する
+            url: update-phone-number-and-email-address.md
+          - text: リリース オプションをセットアップする
+            url: release-options-in-office-365.md
+          - text: 新機能の表示と非表示を切り替える
+            url: show-hide-new-features.md
+  - title: ユーザーアクセスをブロックし、データをバックアップする
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: 元ユーザーのデータにアクセスしてバックアップを作成する
+            url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
+          - text: メールの保持をセットアップする (Microsoft 365 Business Premium)
+            url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
+          - text: デバイスから会社のデータを削除する (Microsoft 365 Business Premium)
+            url: ../../business/remove-company-data.md
+  - title: アドインとアプリを管理する
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: 最新のアプリへとユーザーをアップグレードする
+            url: ../setup/upgrade-users-to-latest-office-client.md
+          - text: アプリ起動ツールをカスタマイズする
+            url: customize-the-app-launcher.md
+          - text: アドインの一元展開の要件
+            url: centralized-deployment-of-add-ins.md
+          - text: 一元展開でアドインをインストールして管理する
+            url: manage-deployment-of-add-ins.md
+          - text: Office スクリプトの設定を管理する
+            url: manage-office-scripts-settings.md
+  - title: Microsoft Teams
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft Teams 管理ドキュメント
+            url: 'https://docs.microsoft.com/microsoftteams/'
+          - text: Outlook と Teams を同時に使用する
+            url: ../../business-video/collab-outlook-teams.md
+      - linkListType: learn
+        links:
+          - text: Microsoft Teams のトレーニング
+            url: 'https://support.microsoft.com/office/4f108e54-240b-4351-8084-b1089f0d21d7'
+  - title: OneDrive と SharePoint
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: IT 担当者および管理者向け SharePoint ドキュメント
+            url: /sharepoint/
+          - text: IT 担当者および管理者向け OneDrive ドキュメント
+            url: /onedrive/
+      - linkListType: how-to-guide
+        links:
+          - text: OneDrive と SharePoint の共有を管理する
+            url: /onedrive/manage-sharing
+          - text: サイトを作成、管理する。
+            url: 'https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center'

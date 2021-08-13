@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 弁護士クライアントの特権検出モデルを使用して、機械学習ベースの特権コンテンツの検出を使用して、ユーザーのケースでコンテンツをAdvanced eDiscoveryします。
-ms.openlocfilehash: 73a0efeece7bc331045e9bbe1a1da56f9fd24700
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: a6389d68a73813dff9853cf904bd79c2ce47b9fc4de4000250bb75e0e0c8bc86
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358043"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808514"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>アプリケーションで弁護士とクライアントの特権の検出をAdvanced eDiscovery
 
 電子情報開示プロセスのレビュー フェーズの主要でコストの高い側面は、特権コンテンツのドキュメントを確認する方法です。 Advanced eDiscovery、このプロセスをより効率的にするための、機械学習ベースの特権コンテンツの検出を提供します。 この機能は、弁護士 *とクライアントの特権の検出と呼ばれる。*
 
-## <a name="how-does-it-work"></a>どのような仕組みなのか。
+## <a name="how-does-it-work"></a>どのような仕組みですか?
 
 弁護士クライアント特権の検出が有効になっている場合、レビュー セット内のデータを分析すると、レビュー セット内のすべてのドキュメントが弁護士クライアント特権[](analyzing-data-in-review-set.md)検出モデルによって処理されます。 モデルは、次の 2 つのことを探します。
 
@@ -73,7 +73,7 @@ ms.locfileid: "47358043"
 
 弁護士クライアント特権検出モデルで使用する弁護士リストをアップロードするには、次のコマンドを実行します。
 
-1. .csvファイル (見出し行なし) を作成し、適切な各人のメール アドレスを別々の行に追加します。 このファイルをローカル コンピューターに保存します。
+1. .csvファイル (ヘッダー行を含まない) を作成し、メール アドレスを各行に分かれた対応するユーザーに追加します。このファイルをローカル コンピューターに保存します。
 
 2. **[Advanced eDiscovery]** ホーム ページの [設定] タイルで、[実験機能の構成]**を選択** し、[弁護士とクライアントの特権設定の管理]**を選択します**。
 

@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 教育機関向け価格に対する学校の適格性をMicrosoft 365 Educationする方法について学習します。
 ms.date: 07/21/2020
-ms.openlocfilehash: 7da6fbc73ece51c5d9b845487e344bbbdec679cf
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: b861092b0168fa83a8bac423caa3e29621837bc1f08d5af95502cde94c97ff4a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808850"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>サブスクリプションの学業Microsoft 365 Education確認する
 
@@ -71,7 +71,7 @@ ms.locfileid: "52333088"
 
 学校の資格が確認された後は、学術価格でサブスクリプションを購入できます。 無料試用版 [を有料サブスクリプションに変換できます](../try-or-buy-microsoft-365.md)。 試用版サブスクリプションを変換する場合は、試用期間の終了前にこれを行う必要があります。
 
-1. 管理センター Microsoft 365、[課金の購入サービス] \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">ページに移動</a>します。
+1. [サービス] Microsoft 365 管理センター、[課金の購入サービス **]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">ページに移動</a>します。
 2. 学術的なオファーを表示するには、[教育機関] タブ **を選択** します。
 
     > [!NOTE]
@@ -102,8 +102,8 @@ ms.locfileid: "52333088"
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365 Education IT 管理者向けドキュメント](/education/itadmins)(記事リンク)\
-[Microsoft Teams (製品](https://microsoft.com/education/products/teams/default.aspx)ページ)\
+[Microsoft Teams for Education](https://microsoft.com/education/products/teams/default.aspx) (製品ページ)\
 [ビジネス向けサービスのサブスクリプションMicrosoft 365ライセンス](../licenses/subscriptions-and-licenses.md)について (記事)\
-[ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md)(記事)\
-[サブスクリプション ライセンスの購入または削除](../licenses/buy-licenses.md) (記事)\
+[ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md) (記事)\
+[サブスクリプション ライセンスを購入または削除する](../licenses/buy-licenses.md) (記事)\
 [ユーザーを別のサブスクリプションに移動する](move-users-different-subscription.md) (記事)

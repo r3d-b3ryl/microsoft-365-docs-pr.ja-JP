@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: bc3ef2737afed17ca46d4715992b9c8cc82758cb
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e379e50eb0b7762f42a7ae945a31ec8b82bd83a625fd171f007d541802fc12b1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833653"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のアラートを確認する
 
@@ -81,7 +81,7 @@ Defender for Endpoint でアラートの名前を選択すると、アラート 
 
    ![ユーザーが選択されている場合の詳細ウィンドウのスニペット](images/user-page-details.png)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [インシデント キューの表示と整理](view-incidents-queue.md)
 - [インシデントの調査](investigate-incidents.md)

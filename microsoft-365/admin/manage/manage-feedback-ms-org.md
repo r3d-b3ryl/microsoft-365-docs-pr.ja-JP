@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーが Microsoft 製品に関して Microsoft に送信できるフィードバックを管理します。
-ms.openlocfilehash: 990ae811145d9586307cd3181724866198063a1b
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 517a8ebc080c33399a018e666de9b7f81d50b98d075cc6e67891123611cdacda
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825237"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>組織に対する Microsoft フィードバックを管理する
 
@@ -43,7 +43,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 |**OneDrive**|[他のコントロールによって現在管理されている設定の一部。](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook**|近日公開|近日公開|近日公開|近日公開|
 |**PowerPoint**|はい|はい|はい|はい|
-|**プロジェクト**|近日公開|近日公開|近日公開|近日公開|
+|**Project**|近日公開|近日公開|近日公開|近日公開|
 |**発行元**|はい|はい|はい|はい|
 |**SharePoint**|[他のコントロールによって現在管理されている設定の一部。](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[他のコントロールによって現在管理されている設定の一部。](/microsoftteams/manage-feedback-policies-in-teams)||||
@@ -76,7 +76,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 ### <a name="feedback-policies"></a>フィードバック ポリシー
 
-|**[ポリシー名]**|**既定の状態**|**コントロールの概要**|
+|**ポリシー名**|**既定の状態**|**コントロールの概要**|
 |:-----|:-----|:-----|
 |ユーザーが Microsoft にフィードバックを送信するを許可する|オン|アプリケーション全体のフィードバック エントリ ポイントを制御する|
 |ユーザーが Microsoft から製品内アンケートを受け取り、対応できる|オン|製品内のアンケート プロンプトを制御する|

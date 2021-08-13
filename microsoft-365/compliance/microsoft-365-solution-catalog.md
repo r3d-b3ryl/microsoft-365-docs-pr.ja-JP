@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: ソリューション カタログMicrosoft 365含まれるもの、取得する方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d98684fd7f839cb0340cce4126e1c45b43b107b8
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 7ca34e9bb091d98af999b0c7e019421bbd2b023961c2b9c348c38fdd65dd6e51
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622017"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807822"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューション カタログ
 
@@ -84,7 +84,7 @@ ms.locfileid: "53622017"
 
 最初に、適切なライセンスとアクセス許可を持っている必要があります。 次に、グローバル管理者、コンプライアンス管理者、またはコンプライアンス データ管理者 [https://compliance.microsoft.com](https://compliance.microsoft.com) としてサインインします。 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - **Microsoft Compliance Manager に** アクセスすると、組織の主要な標準と規制への準拠状態を理解できます。 コンプライアンスの全体的な姿勢を強化するために実行できる推奨アクションを提供し、これらのアクションを効率的に実行するためのワークフロー機能を提供します。 詳細については、「コンプライアンス マネージャー」 [を参照してください](compliance-manager.md)。
 
