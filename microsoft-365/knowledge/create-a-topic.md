@@ -14,12 +14,12 @@ ms.service: ''
 search.appverid: ''
 localization_priority: Normal
 description: 新しいトピックを作成する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: 5b275741cad759348bc42ebb6bc7fe0d04199ea5
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 4f6ae1444770f26cdb2aff9c6b7516dc2b9e14f0126bf2833e825f05c75dc779
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596304"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840603"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>新しいトピックを作成Microsoft Viva トピック
 
@@ -29,7 +29,7 @@ ms.locfileid: "53596304"
 > AI によって収集されるトピックの情報はセキュリティでトリミング[](topic-experiences-security-trimming.md)されますが、手動で作成したトピックのトピックの説明とユーザー情報は、トピックを表示する権限を持つすべてのユーザーに表示されます。 
 
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 新しいトピックを作成するには、次の必要があります。
 - Viva トピック ライセンスを持っている。
@@ -92,7 +92,7 @@ ms.locfileid: "53596304"
 
 7. [ **関連トピック] セクション** には、トピック間に存在する接続が表示されます。 関連するトピック ボタンに **Connect** を選択し、関連するトピックの名前を入力し、検索結果から選択することで、別のトピックに接続を追加できます。 
 
-   ![関連項目](../media/knowledge-management/related-topic.png)  
+   ![関連トピック](../media/knowledge-management/related-topic.png)  
 
     次に、トピックの関連付け方法について説明し、[更新] を選択 **します**。
 

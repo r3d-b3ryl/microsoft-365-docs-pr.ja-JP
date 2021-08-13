@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 5785d21d-1abd-4571-a04a-8cc5a65ca9b5
 ROBOTS: NOINDEX
 description: 従業員が組織を離れるときにMicrosoft 365アクセスをブロックする方法について学習します。
-ms.openlocfilehash: 0c4b210f9802995a23acbf64241997b8924c00c0
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: d9099f375af4d3fb6ff7c4583ec2bb925e7f0c342711ade8b8f83c4676cdc4d1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924769"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824202"
 ---
 # <a name="compare-ways-to-block-access"></a>アクセスをブロックする方法を比較する
 
@@ -37,7 +37,7 @@ ms.locfileid: "52924769"
 |ユーザー パスワードを再設定する  <br/> |ユーザーがパスワードにアクセスMicrosoft 365もう 1 つの方法は、パスワードをリセットする方法です。 これにより、以前にダウンロードまたは同期された電子メールやドキュメントを表示することができますが、アカウントを使用できません。 その後、ユーザーとしてサインインし、パスワードを選択したパスワードに変更できます。  <br/> |従業員が突然組織を離れ、今後戻る様子がなく、ビジネス データに問題があると思われる場合に使用します。  <br/> |
 |割り当てられたすべてのライセンスを削除する  <br/> |別のオプションは、ユーザーに割りMicrosoft 365ライセンスを削除する方法です。 これにより、Office スイート、Office アプリなど、web、Yammer、および SharePoint Online のようなアプリケーションとサービスを使用SharePointします。 サインインすることはできますが、これらのサービスを使用することはできません。  <br/> |このユーザーが特定の機能にアクセスする必要がなくなったと感じた場合にMicrosoft 365。  <br/> <br> **重要:** ライセンスを削除すると、ユーザーのメールボックスは 30 日後に削除されます。
    
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 [ユーザーをオフボードMicrosoft 365](../add-users/remove-former-employee.md)
     

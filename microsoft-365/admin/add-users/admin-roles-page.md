@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理者の役割は、ビジネス機能にマップされ、管理センターで特定のタスクを実行するためのアクセス許可を提供します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 20ba46c94f94267df7117d4baf020bbdc21cad7c
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 5e1555d022801eb59bf4a4996c12c95e25037efbde9314e1157b06fa793a1ae2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394389"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815938"
 ---
 # <a name="get-started-with-the-roles-page"></a>[役割] ページの使用を開始する
 
@@ -101,5 +101,5 @@ Azure、Microsoft 365、およびサービスのサービス要求を作成す�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理者Microsoft 365について](about-admin-roles.md)(記事)\
+[Microsoft 365 管理者ロールについて](about-admin-roles.md) (記事)\
 [管理者の役割を割り当てる](assign-admin-roles.md) (記事)

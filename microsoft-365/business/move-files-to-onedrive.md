@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: 簡単な手順で、個人用の作業ファイルと機密性の高い会社OneDrive for Businessを移動する方法について説明します。
-ms.openlocfilehash: 6def1c733093417162ca37906c1d55c0eab23e7d
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: db66c65913bae3c3590a9d5b9bfba186a14ea01bc171aa82164c840e02fd4ed8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856434"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>OneDrive for Business にファイルを移動する
 
@@ -37,7 +37,7 @@ ms.locfileid: "53339312"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../business-video/index.yml)」をご覧ください。
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>OneDrive for Business にファイルを移動する

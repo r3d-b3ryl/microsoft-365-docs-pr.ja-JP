@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な仕事用アカウントまたは学校アカウントを持つCortana、Microsoft 365レベルのセキュリティOffice 365を満たすエクスペリエンスを利用できます。
-ms.openlocfilehash: 06df3e6cbb700971f8429dd99ed1dc9f9c247949
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f81fd357ec69a8cf50c2f55875a65b61b0f7d9348662f8c0c1f8f11864419630
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393837"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824200"
 ---
 # <a name="cortana-in-microsoft-365"></a>CortanaのMicrosoft 365
 
@@ -84,7 +84,7 @@ Windows 10 バージョン 2004 から、Cortana は Windows でプレインス�
 ### <a name="cortana-voice-assistance-in-teams"></a>Cortanaでの音声サポートのTeams
 
 > [!NOTE]
-> Cortanaは、米国、英国、カナダ、インド、オーストラリアのユーザー向け英語の iOS および Android および Microsoft Teams ディスプレイ用の[Microsoft Teams](/microsoftteams/devices/teams-displays)モバイル アプリでサポートされています。  Microsoft Teams ミーティングのWindowsは、米国のユーザーにのみサポートされます。 Cortanaサポートは、現在、GCC-High、DoD、EDU テナントGCC使用できません。 追加の言語と地域への拡張は、今後のリリースの一環として行い、管理者のお客様にはメッセージ センターと新しいロードマップを通[Microsoft 365されます](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=65346)。
+> Cortanaは、米国、英国、カナダ、インド、オーストラリアのユーザー向け英語の iOS および Android および Microsoft Teams ディスプレイ用の[Microsoft Teams](/microsoftteams/devices/teams-displays)モバイル アプリでサポートされています。  Microsoft TeamsWindowsは、米国のユーザーに対してのみサポートされます。 Cortanaサポートは、現在、GCC-High、DoD、EDU テナントGCC使用できません。 追加の言語と地域への拡張は、今後のリリースの一環として行い、管理者のお客様にはメッセージ センターと新しいロードマップを通[Microsoft 365されます](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=65346)。
 
 Cortana Teams モバイル アプリおよび Microsoft Teams ディスプレイ デバイスでの音声サポートを使用すると、Microsoft 365 Enterprise ユーザーは話し声の自然言語を使用して、コミュニケーション、コラボレーション、会議関連のタスクを合理化できます。 ユーザーは Cortana、Teams モバイル アプリの右上にあるマイク ボタンを選択するか、Microsoft Teams ディスプレイで &#8220;Cortana&#8221; とMicrosoft Teamsします。 チームにハンズフリーで素早く接続し、移動中に、ユーザーは &#8220;から Megan&#8221; または &#8220;に電話などのクエリを言って、次の会議&#8221; にメッセージを送信できます。 ユーザーは、次の会議に参加&#8220;、音声&#8221;を使用してファイルを共有し、予定表を確認する、などと言って会議に参加することもできます。 これらの音声支援エクスペリエンスは、Office 365 のプライバシー、セキュリティ、およびコンプライアンスの約束を完全に遵守する Cortana エンタープライズ レベルのサービスを使用して提供されます。これは、オンライン サービス規約[(OST)](https://www.microsoft.com/licensing/product-licensing/products)に反映されています。
 

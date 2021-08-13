@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 新入社員をメール、Microsoft 365、およびアプリのビジネスSkypeにOfficeします。
-ms.openlocfilehash: 24b31e22423fe7f0d51da5a71c4c14b54f1525f0
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 56b38d19b67fd6437b968455d9462d1ba16fcf947fb13844d52216e72f8dd41e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394113"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815877"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>新しい従業員を新しい従業員にMicrosoft 365
 

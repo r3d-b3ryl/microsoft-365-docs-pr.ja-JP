@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: dd197d58-5bf6-4d18-b9f8-d16db603fae2
 description: Information Rights Management (IRM) が Microsoft SharePoint 2013 の IRM で保護されたライブラリにアップロードおよびダウンロードされた PDF ドキュメントを保護する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 175681dcc3255f34ef26d1564f63140a9a491b60
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e1e5516e3eca1043715a7d553488b8ea4004137677a0064767e1e62eddde8ac3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807602"
 ---
 # <a name="sharepoint-compatible-pdf-readers-that-support-microsoft-information-rights-management-services"></a>Microsoft Information Rights Management サービスをサポートする SharePoint 対応 PDF リーダー
 

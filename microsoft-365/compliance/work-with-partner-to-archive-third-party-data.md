@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: カスタム コネクタをセットアップして、Salesforce Chatter、Yahoo Messenger、またはデータ ソースなどのデータ ソースからサードパーティのデータをインポートするYammer。
-ms.openlocfilehash: 2026e3c584cb0bc467a2db3903c51b7ed50e51e1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e388ab360ccd82b6391272e01a36b78fca99971d0f43ab20b447e33113eef282
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807590"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>パートナーと共同作業して、サード パーティのデータをアーカイブする
 
@@ -158,7 +158,7 @@ Microsoft 365 でサード パーティのデータをアーカイブするた�
 
 - Bloomberg メール
 
-- 検索ボックス
+- Box
 
 - CipherCloud for Salesforce Chatter
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 各チーム メンバーは、一般法人向け Microsoft 365 にサインインしてアクセスする前に、ユーザー アカウントが必要になります。ユーザーを追加して、ライセンスを割り当てる方法について説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: aaba152e73fc7284f54a9f307783a66fb055a55c
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: MT
+ms.openlocfilehash: 5d18bfbd396bc13496cc06c80dcb5cc6fbf7f84e9432936c1d745877f0074141
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394101"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815913"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>ユーザーを追加して同時にライセンスを割り当てる
 

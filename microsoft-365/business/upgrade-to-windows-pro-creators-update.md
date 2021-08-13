@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 高度なセキュリティとビジネス ネットワーク機能をWindows、Windows 10 Proデバイスをアップグレードする方法を確認します。
-ms.openlocfilehash: e87a9bc4ebbb4d5437e2174dc9f41c4700346ffd
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: ed9713fe321269e5d18c424dc9cf2ad03c4ed2225d8fcfd5b77c3dd2abc303e6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856409"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>デバイスWindowsにアップグレードWindows 10 Pro
 
@@ -44,7 +44,7 @@ ms.locfileid: "53394153"
 
 ## <a name="upgrade-to-windows-10-pro"></a>Windows 10 Pro にアップグレードする
 
-サーバーにアップグレードWindows 10 Pro、いくつかのオプションがあります。 次の操作を実行できます。
+サーバーにアップグレードWindows 10 Pro、いくつかのオプションがあります。 次の操作を行うことができます:
 
 - Microsoft ソフトウェアダウンロード サイトから [アップグレードをインストールします](https://go.microsoft.com/fwlink/?LinkID=836951)。
   - ログインしているデバイスが更新するデバイスと同じデバイスにある場合は、このオプションを選択します。

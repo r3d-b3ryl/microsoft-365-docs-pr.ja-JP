@@ -28,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理センターで特定のタスクを実行できるよう、管理者の役割をビジネス内のユーザーまたは複数のユーザーに割り当てる方法について説明します。
-ms.openlocfilehash: 575d1d8c6b0ffce40877fb41d28df82c24e84d04
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0b959dd9349a032d6825d010d103bfd74d080a595b072be950a61e98f3765dbb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815865"
 ---
 # <a name="assign-admin-roles"></a>管理者ロールを割り当てる
 
@@ -106,7 +106,7 @@ PowerShell を知っている場合は [、「PowerShell を使用して役割�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[管理者Microsoft 365について](about-admin-roles.md)(記事)\
+[Microsoft 365 管理者ロールについて](about-admin-roles.md) (記事)\
 [管理者ロールのアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)(Azure Active Directory)\
 [PowerShell を使用してユーザー アカウントに役割を割り当てる](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (記事)\
 [パートナー関係の承認または削除](../misc/add-partner.md) (記事)

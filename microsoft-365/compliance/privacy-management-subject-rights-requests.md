@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft プライバシー管理のサブジェクト権限要求ソリューションは、個人データを検索し、コンテンツのレビューとレポートの作成に関して共同作業を行う際に役立ちます。
-ms.openlocfilehash: b266708c97ee4b81af6ba61dfa6716c57ff6026e
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 4db9c744468cd75fb09bc8ff45ef9f15d26684a7c2b446557914be9e26b45ccc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807686"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>プライバシー管理で件名の権利要求を管理する (プレビュー)
 

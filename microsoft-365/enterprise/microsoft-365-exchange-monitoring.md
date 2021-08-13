@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Exchange Online の監視を使用して、Microsoft 365 でのメールのインシデントや勧告の情報について確認します。
-ms.openlocfilehash: 3d88378449879d451b21ba8bf2a7b5c3032a2c07
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: fd0e71a33a502f21e9a072a43cbe35dc76582a31def8f7a6ca1e9d2f2ad2592e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286443"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807436"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 の Exchange Online の監視
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Microsoft SharePoint Syntex で分類子を作成する方法について説明します。
-ms.openlocfilehash: 62c6b985bbc713940e2f140f77daeb2d920982d2
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 7694337e28a1d18ddf1eed3bddc0d4d8c9e2ebaee4f5c575cb057b1d4ef58af7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543157"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850406"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexで分類子を作成する
 

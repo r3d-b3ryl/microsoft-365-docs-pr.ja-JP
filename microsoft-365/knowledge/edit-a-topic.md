@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 localization_priority: Normal
 description: 既存のトピックを編集する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: 47c9254c91e08cda6dc33c40768689d94e5ceeef
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 748b626dcdf6d118794872d5865a06678293d90da95d7e74057f019df749a1c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840408"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>既存のトピックを編集Microsoft Viva トピック 
 
@@ -34,7 +34,7 @@ Viva Topics では、既存のトピックを編集できます。 既存のト�
 > [!Note] 
 > AI によって収集されるトピックの情報はセキュリティによってトリミング[](topic-experiences-security-trimming.md)されます。既存のトピックを編集するときに手動で追加するトピックの説明とユーザー情報は、トピックを表示する権限を持つすべてのユーザーに表示されます。 
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 既存のトピックを編集するには、次の必要があります。
 - Viva トピック ライセンスを持っている。
