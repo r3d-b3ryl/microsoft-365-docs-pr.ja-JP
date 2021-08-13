@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 772636fd72074c8fad30daa3eb25b785519e7772
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a7baac7b4af572884e329964ea30831976ec5f0258d81e6b9a1d44e4ed28fd6b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890913"
 ---
 # <a name="validate-new-devices"></a>新しいデバイスを検証する
 

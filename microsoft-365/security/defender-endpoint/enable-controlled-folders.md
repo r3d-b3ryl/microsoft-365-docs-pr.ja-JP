@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 36bd812bfe41ca5113fe9ceb5710de3ded15210ca5e4eda4a9065fc1c1a11cdf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb5efb5bd001a2659b0c3780af5f195b77b3103b2e8a7d0c7d1eee6915a6e303
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794116"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523356"
 ---
 # <a name="enable-controlled-folder-access"></a>制御されたフォルダー アクセスを有効にする
 
@@ -36,19 +36,19 @@ ms.locfileid: "53794116"
 
 次の方法を使用して、フォルダーアクセスの制御を有効にできます。
 
-* [Windows セキュリティアプリ](#windows-security-app)
-* [Microsoft エンドポイント マネージャー](#endpoint-manager)
-* [モバイル デバイス管理 (MDM)](#mobile-device-management-mdm)
-* [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
-* [グループ ポリシー](#group-policy)
-* [PowerShell](#powershell)
+- [Windows セキュリティアプリ](#windows-security-app)
+- [Microsoft エンドポイント マネージャー](#endpoint-manager)
+- [モバイル デバイス管理 (MDM)](#mobile-device-management-mdm)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [グループ ポリシー](#group-policy)
+- [PowerShell](#powershell)
 
 [監査モード](evaluate-controlled-folder-access.md) を使用すると、デバイスの通常の使用に影響を与えることなく、機能の動作をテスト (およびイベントの確認) を行えます。
 
 ローカル管理者リストのマージを無効にするグループ ポリシー設定は、フォルダー アクセスの制御設定を上書きします。 また、フォルダー アクセスの制御によってローカル管理者が設定した保護フォルダーと許可されたアプリも上書きされます。 これらのポリシーには、次のものが含まれます。
 
-* Microsoft Defender ウイルス対策 **リストのローカル管理者のマージ動作を構成する**
-* System Center Endpoint Protection **ユーザーによる除外と上書きの追加を許可する**
+- Microsoft Defender ウイルス対策 **リストのローカル管理者のマージ動作を構成する**
+- System Center Endpoint Protection **ユーザーによる除外と上書きの追加を許可する**
 
 ローカル リストのマージを無効にする方法の詳細については、「ユーザーが Microsoft Defender AV ポリシー設定をローカルで変更するを防止または許可する」 [を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus)。
 
@@ -119,13 +119,13 @@ ms.locfileid: "53794116"
 3. ツリーを展開して **、Exploit Guard Windowsアクセス> Microsoft Defender ウイルス対策 > Windows Defender管理>コンポーネントを表示します**。
 
 4. [フォルダー アクセスの構成 **] 設定** をダブルクリックし、オプションを [有効] に **設定します**。 [オプション] セクションで、次のいずれかのオプションを指定する必要があります。
-    * **有効** - 悪意のあるアプリや疑わしいアプリでは、保護されたフォルダー内のファイルを変更することはできません。 通知は、イベント ログWindowsされます。
-    * **無効 (既定)** - フォルダー アクセスの制御機能が機能しません。 すべてのアプリは、保護されたフォルダー内のファイルを変更できます。
-    * **監査モード** - 悪意のあるアプリや疑わしいアプリが保護されたフォルダー内のファイルに変更を加えた場合、変更が許可されます。 ただし、組織への影響を評価Windowsイベント ログに記録されます。
-    * **[ディスクの変更** をブロックする] - 信頼されていないアプリがディスク セクターに書き込む試みは、Windowsログに記録されます。 これらのログは、Microsoft  > のアプリケーションとサービス > Windows > Windows Defender > ID 1123 >確認できます。
-    * ディスク **の** 変更の監査のみ - 保護されたディスク セクターへの書き込みのみを Windows イベント ログに記録します([アプリケーションとサービス ログ Microsoft Windows Windows Defender  >    >    >    >  **運用**  >  **ID 1124]** の下)。 保護されたフォルダー内のファイルを変更または削除しようとすると、記録されません。
+   - **有効** - 悪意のあるアプリや疑わしいアプリでは、保護されたフォルダー内のファイルを変更することはできません。 通知は、イベント ログWindowsされます。
+   - **無効 (既定)** - フォルダー アクセスの制御機能が機能しません。 すべてのアプリは、保護されたフォルダー内のファイルを変更できます。
+   - **監査モード** - 悪意のあるアプリや疑わしいアプリが保護されたフォルダー内のファイルに変更を加えた場合、変更が許可されます。 ただし、組織への影響を評価Windowsイベント ログに記録されます。
+   - **[ディスクの変更** をブロックする] - 信頼されていないアプリがディスク セクターに書き込む試みは、Windowsログに記録されます。 これらのログは、運用 **ID** \> \> \> \> \> 1123 Windows Windows Defenderで確認できます。
+   - ディスク **の** 変更の監査のみ - 保護されたディスク セクターへの書き込みのみを Windows イベント ログに記録します([アプリケーションとサービス ログ Microsoft Windows Windows Defender  >   \>  \>  \> **運用** \> **ID 1124]** の下)。 保護されたフォルダー内のファイルを変更または削除しようとすると、記録されません。
 
-      ![グループ ポリシー オプションのスクリーンショット [有効] と [監査モード] がドロップダウンで選択されている](/microsoft-365/security/defender-endpoint/images/cfa-gp-enable)
+      ![グループ ポリシー オプションのスクリーンショット [有効] と [監査モード] がドロップダウンで選択されている](../../media/cfa-gp-enable.png)
 
 > [!IMPORTANT]
 > 管理されたフォルダー アクセスを完全に有効にするには、[グループ ポリシー] オプションを [有効] に設定し、[オプション] ドロップダウン メニューの [ブロック] を選択する必要があります。
@@ -146,6 +146,6 @@ ms.locfileid: "53794116"
 
 ## <a name="see-also"></a>関連項目
 
-* [フォルダーへのアクセス制御で重要なフォルダーを保護する](controlled-folders.md)
-* [制御されたフォルダー アクセスをカスタマイズする](customize-controlled-folders.md)
-* [Microsoft Defender for Endpoint の評価](evaluate-mde.md)
+- [フォルダーへのアクセス制御で重要なフォルダーを保護する](controlled-folders.md)
+- [制御されたフォルダー アクセスをカスタマイズする](customize-controlled-folders.md)
+- [Microsoft Defender for Endpoint の評価](evaluate-mde.md)

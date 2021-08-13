@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a9d8d2fe7fe26b90719502fffebaa96526a26d24207b49136e52373fc058d94b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e85231278a03b4c9495e9331e50734f643d3c17def30fdcc4ba3c385aac94b8a
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799371"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834753"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>[アラートの調査] Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 - 緊急度
 - 状態
-- カテゴリ
+- Category
 - 検出ソース
 - タグ
 - ポリシー
@@ -74,8 +74,6 @@ Microsoft Defender for Endpoint、Microsoft Defender for endpoint、Microsoft De
 
 - アラート ストーリー(このアラートに関連するイベントとアラートの連鎖を時系列順に示す)
 - 概要の詳細
-
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="ポータル内のアラートの詳細ページMicrosoft 365 Defender例":::
 
 アラート ページ全体で、任意のエンティティの横にある省略記号 (**...**) を選択して、アラート ページを開く、またはアラートを別のインシデントにリンクするなどの使用可能なアクションを表示できます。
 

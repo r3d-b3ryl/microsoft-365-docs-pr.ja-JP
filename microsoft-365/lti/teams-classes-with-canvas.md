@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teamsクラスを統合する
-ms.openlocfilehash: 9baf4f3607673e48472e297ce42a1ad461df5b84
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7743e7064bf31d87513c8c274f0ef8d0f70e7e8b9f97f530a2ad2f1826dd0542
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652433"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803622"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Canvas でMicrosoft Teamsクラスを使用する
 
@@ -28,13 +28,13 @@ Microsoft Teamsクラスは、ラーニング ツール相互運用性 (LTI) ア
 
 > [!NOTE]
 > LTI の現在Teamsクラスは、キャンバス ユーザーと制限されたスコープ内Microsoft Azure Active Directory (AAD) の同期のみをサポートします。 
-> - テナントは、Microsoft AAD のキャンバス フィールド (電子メール、ユーザー ID、または SIS ID) と UPN の間で完全に一致している必要があります。 同期機能に柔軟に対応するために取り組み中ですが、その間、Canvas のユーザーが AAD の UPN と一致しない場合、Canvas と同期された Teams クラスには追加されません。 
+> - テナントに Microsoft Education ライセンスが必要です。
 > - Canvas と Microsoft の間でユーザーをマッピングするには、1 つの Microsoft テナントのみを使用できます。
 > - グループの重複を回避するには、LTI クラスを使用する前Teams SDS をオフにする必要があります。
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理者
 
-Instructure Canvas 内の Microsoft Teams 統合を管理する前に、Canvas の管理セットアップを完了する前に、キャンバスの **microsoft-Teams-Sync-for-Canvas** Azure アプリを Microsoft Azure テナントの教育機関の Microsoft Office 365 管理者によって承認することが重要です。
+Instructure Canvas 内で Microsoft Teams 統合を管理する前に、Canvas の管理セットアップを完了する前に、キャンバスの **microsoft-Teams-Sync-for-Canvas** Azure アプリを教育機関の Microsoft Office 365 管理者が Microsoft Azure テナントで承認することが重要です。
 
 1. Canvas にサインインします。
 
@@ -43,12 +43,15 @@ Instructure Canvas 内の Microsoft Teams 統合を管理する前に、Canvas �
 3. 管理ナビゲーションで、[リンク]**リンクを** 設定、[統合]**タブを選択** します。
 
 4. トグルMicrosoft Teamsして同期を有効にします。
+   
+   ![Canvas Teams同期 更新された png](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
 
-   ![teams-sync](media/teams-sync.png)
+5. Microsoft テナント名、login 属性、ドメイン サフィックス、および AAD 参照属性を入力します。
 
-5. Microsoft テナント名とログイン属性を入力します。
-
-   login 属性は、Canvas ユーザーをユーザーに関連付Azure Active Directoryされます。
+   これらのフィールドは、キャンバス内のユーザーとユーザーの照合に使用Microsoft Azure Active Directory。 
+   * Login Attribute は、照合に使用される Canvas ユーザー属性です。
+   * サフィックス フィールドは省略可能で、Canvas 属性と Microsoft AAD フィールドの間に正確なマッピングが設定されていない場合にドメインを指定できます。 たとえば、Microsoft AAD の UPN が 'name' の場合、Canvas メールが 'name@example.edu' の場合は、接尾辞フィールドに 「example.edu」 と入力してユーザーを一致できます。
+   * Active Directory Lookup Attribute は、Canvas 属性が一致する Microsoft 側のフィールドです。 UPN、プライマリ メール アドレス、または電子メール エイリアスの間で選択します。
 
 6. [完了 **したら設定** 更新] を選択します。
 

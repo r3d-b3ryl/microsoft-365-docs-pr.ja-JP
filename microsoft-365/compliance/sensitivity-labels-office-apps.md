@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 199132216b8dfafa5626e25427d9e9661854502f1894e819951db1ac734de85d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fa41e172f970dcac818d989b60a69bbd2ddbfe1c945eff971a4bfc2cca63d02
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842029"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834765"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -44,11 +44,16 @@ Windows コンピューター上で Office のこれらのスタンドアロン 
 Office アプリの新しいバージョンは、さまざまな更新チャネルでさまざまな時間に利用できるようになります。 関心のある新しいラベル付け機能をテストできるように更新プログラム チャネルを構成する方法など、詳細については、「[Microsoft 365 Apps 用更新プログラム チャネルの概要](/DeployOffice/overview-update-channels)」を参照してください。 プライベート プレビューにある新機能は表に含まれていませんが、組織を [Microsoft Information Protection プライベート プレビュー プログラム](https://aka.ms/mip-preview)に指定することで、これらのプレビューに参加できる場合があります。
 
 > [!NOTE]
-> Office アプリの更新プログラム チャネルの名前が最近変更されました。 たとえば、月次チャネルは最新チャネルになり、Office Insider はベータ チャネルになりました。 詳細については、「[Microsoft 365 Apps の更新プログラム チャネルの変更](/deployoffice/update-channels-changes)」を参照してください。
+> Office アプリの更新プログラム チャネルの名前が 2020 年 5 月に変更されました。 たとえば、月次チャネルは最新チャネルになり、Office Insider はベータ チャネルになりました。 詳細については、「[Microsoft 365 Apps の更新プログラム チャネルの変更](/deployoffice/update-channels-changes)」を参照してください。
 
 Office for iOS および Office for Android: 秘密度ラベルは [Office アプリ](https://www.microsoft.com/ja-JP/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)に組み込まれています。
 
 Windows コンピューターでのみ実行される Azure Information Protection 統合ラベル付けクライアントをインストールすると、追加の機能を利用できます。 これらの詳細については、「[Windows コンピューターのラベル付けクライアントを比較する](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)」を参照してください。
+
+> [!TIP]
+> テーブル内の最小バージョンと、使用しているバージョンとを比較するときは、先行するゼロを省略するリリース バージョンの一般的な方法を覚えておいてください。
+> 
+> たとえば、お使いのバージョン 4.2128.0 であり、4.7.1 以降が最小バージョンであることを確認します。 比較しやすいように言うと、4.7.1 (先頭のゼロなし) は (4 **7000**.1 ではなく) 4 **0007**.1 と読んでください。 4.2128.0 のバージョンが 4.0007.1 より大きいため、お使いのバージョンがサポートされています。
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Word、Excel、および PowerPoint での秘密度ラベル機能
 
@@ -159,7 +164,7 @@ Azure Information Protection 統合ラベル付けクライアントは、Open X
 
 組み込みのラベル付けを使用している場合、Office 365 Message Encryption に定義したものなど、管理者が定義した[保護テンプレート](/azure/information-protection/configure-policy-templates)は Office アプリに表示されません。 この簡素化されたエクスペリエンスにより、保護テンプレートを選択する必要はありません。暗号化が有効になっている秘密度ラベルに同じ設定が含まれているためです。
 
-既存の保護テンプレートをラベルに変換する必要がある場合は、Azure portal と次の手順を使用してください: 「[テンプレートをラベルに変換するには](/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels)」。
+*EncryptionTemplateId* パラメーターを指定して [New-Label](/powershell/module/exchange/new-label) コマンドレットを使用すると、既存のテンプレートを秘密度ラベルに変換できます。
 
 ## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>Information Rights Management (IRM) オプションと秘密度ラベル
 

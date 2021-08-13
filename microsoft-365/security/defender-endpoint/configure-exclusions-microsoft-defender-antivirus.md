@@ -15,17 +15,14 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: c6daa760dcec7c170cba15619eea380b6a1b882ff5baa7c3fc74c2b88f90ee62
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f3c44ba70debfdf4ecebb089f2015214e92f4b2cef037da5bdf5f7ad0e99c40
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854137"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803634"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>スキャンの除外を構成およびMicrosoft Defender ウイルス対策する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 
@@ -50,15 +47,15 @@ ms.locfileid: "53854137"
 
 除外を定義する場合は、次の点に注意してください。  
 
-- 除外は技術的には保護のギャップです。 除外を定義する場合は、常に軽減策を検討してください。 その他の軽減策は、除外された場所に適切なアクセス制御リスト (ACL)、監査ポリシー、最新のソフトウェアなどによって処理されるのを確認するのと同じほど簡単です。
+- 除外は技術的には保護のギャップです。 除外を定義する場合は、すべてのオプションを検討してください。 その他のオプションは、除外された場所に適切なアクセス制御リスト (ACL) を設定するか、最初はポリシーを監査モードに設定するのと同じほど簡単です。
 
 - 除外を定期的に確認します。 レビュー プロセスの一環として軽減策を再確認し、再適用します。
 
-- 予防的な除外を定義しないようにするのが理想的です。 たとえば、将来問題になる可能性があるからといって、何かを除外しない。 除外は、除外が軽減する可能性のあるパフォーマンスやアプリケーションの互換性に関連する問題など、特定の問題にのみ使用します。
+- 予防的に取り組む際に除外を定義しないようにするのが理想的です。 たとえば、将来問題になる可能性があるからといって、何かを除外しない。 除外は、除外が軽減する可能性のあるパフォーマンスやアプリケーションの互換性に関連する問題など、特定の問題にのみ使用します。
 
-- 除外リストの変更を監査します。 セキュリティ管理者は、特定の除外が追加された理由に関する十分なコンテキストを保持する必要があります。 特定のパスが除外された理由について、特定の理由で回答を提供できる必要があります。
+- 除外リストに対する変更を確認および監査します。 セキュリティ チームは、後で混乱を避けるために、特定の除外が追加された理由に関するコンテキストを保持する必要があります。 セキュリティ チームは、除外が存在する理由に関する質問に対する具体的な回答を提供できる必要があります。
 
-## <a name="related-articles"></a>関連記事
+## <a name="see-also"></a>関連項目
 
 - [Microsoft Defender ウイルス対策の除外Windows Server 2016](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [除外を定義する際に避ける必要のある一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)

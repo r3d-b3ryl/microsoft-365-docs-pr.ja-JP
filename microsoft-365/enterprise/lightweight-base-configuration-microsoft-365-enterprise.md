@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、エンタープライズ向けテスト環境をテストMicrosoft 365作成します。
-ms.openlocfilehash: 2de0760cef7339f62229575b1e0a54b3c67a4e9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e6ead4dd5c8e0d127b7fc2674111272bffade2f55935b391709a305dca996394
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909708"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803490"
 ---
 # <a name="the-lightweight-base-configuration"></a>軽量な基本構成
 
@@ -71,7 +71,7 @@ Microsoft 365 E5 試用版サブスクリプションを開始するには、最
 
 1. ブラウザーで、 に移動します [https://aka.ms/e5trial](https://aka.ms/e5trial) 。
     
-2. **[E5]** ページを選択してOffice 365の手順 1 で、新しいメール アカウント アドレスを入力します。
+2. [パスワードを選択してありがとう] ページの **手順 1 でOffice 365 E5** メール アカウントのアドレスを入力します。
 3. 証跡サブスクリプション プロセスの手順 2 で、要求された情報を入力し、検証を実行します。
 4. 手順 3 で、組織名を入力し、サブスクリプションのグローバル管理者になるアカウント名を入力します。
 5. 手順 4 では、ここにサインイン ページを記録します (選択してコピー): ![線](../media/Common-Images/TableLine.png)
@@ -79,7 +79,7 @@ Microsoft 365 E5 試用版サブスクリプションを開始するには、最
    安全な場所に入力したパスワードを記録します。
    この値を **全体管理者名** と呼ぶことにします。
 7. [セットアップ **に移動] を選択します**。
-8. [E5 Office 365] で、[組織 **の.onmicrosoft.com** を使用してメールとサインインを続行する] を選択し、[終了して後で続行する] を **選択します**。
+8. [Office 365 E5] で、[組織 **の.onmicrosoft.com** を使用してメールとサインインを続行する] を選択し、[終了して後で続行する]**を選択します**。
 
 Microsoft 365 管理センターが表示されます。
     
@@ -100,29 +100,17 @@ $commonPW="<common user account password>"
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.Password=$commonPW
 
-$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
 $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
 $LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
 $LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
-$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+for($i=2;$i -le 4; $i++) {
+    $userUPN= "user$($i)@$($orgName).onmicrosoft.com"
+    New-AzureADUser -DisplayName "User $($i)" -GivenName User -SurName $i -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user$($i)"
+    $userObjectID = (Get-AzureADUser -SearchString $userupn).ObjectID
+    Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
+}
 ```
 > [!NOTE]
 > ここで共通のパスワードを使用するのは、自動化およびテスト環境の構成を容易にするためです。 運用環境のサブスクリプションは避けるように強くお勧めします。 
@@ -167,9 +155,9 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
   
 まず、Microsoft 365 E5 試用版サブスクリプションを追加して、新しい Microsoft 365 ライセンスを全体管理者アカウントに割り当てます。
   
-1. インターネット ブラウザーのプライベート ウィンドウで、グローバル管理者アカウントの資格情報を使用して、Microsoft 365にサインインします [https://admin.microsoft.com](https://admin.microsoft.com) 。
+1. インターネット ブラウザーのプライベート ウィンドウで、グローバル管理者アカウントの資格情報を使用して、Microsoft 365 管理センターにサインインします [https://admin.microsoft.com](https://admin.microsoft.com) 。
     
-2. [管理 **センター Microsoft 365] ページの** 左側のナビゲーションで、[サービスの購入>**選択します**。
+2. [サービスの **Microsoft 365 管理センター** 左側のナビゲーションで、[サービスの購入] を選択 **>選択します**。
     
 3. [サービスの **購入] ページ** で、[無料試用版Microsoft 365 E5]**を** 選択 **します**。
 
@@ -179,7 +167,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 6. [注文受領 **書] ページで** 、[続行] を **選択します**。
 
-7. 管理センターで、[Microsoft 365アクティブ ユーザー]**を選択>選択します**。
+7. [ユーザー] Microsoft 365 管理センター[アクティブ ユーザー **] >選択します**。
 
 8. [ **アクティブ なユーザー]** で、管理者アカウントを選択します。
 
@@ -302,7 +290,7 @@ Windows 10 Enterprise の物理マシンまたは仮想マシンの作成後、�
     
 次に、WIN10 Microsoft 365 Apps for enterpriseにインストールします。
   
-1. ブラウザーをMicrosoft Edgeし、グローバル管理者アカウント資格情報を使用Microsoft 365[管理](https://admin.microsoft.com)センターにサインインします。
+1. ブラウザーをMicrosoft Edgeし、グローバル管理者アカウント資格情報を[使用](https://admin.microsoft.com)Microsoft 365 管理センターにサインインします。
     
 2. [ホーム]**タブMicrosoft Office、[** インストール]**を選択Office。**
     

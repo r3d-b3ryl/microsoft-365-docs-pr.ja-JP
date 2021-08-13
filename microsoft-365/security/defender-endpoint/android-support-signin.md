@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d46a2ff2b1faa7360c27ca8c4571bd55e72ede1e93a8bf62dbc24d9f0ea08050
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2981138d6bf8d5bd3fa49120e3469fe29301ef6fbe8bba074ed83495044ef562
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834435"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834741"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -101,3 +101,25 @@ Xiaomi デバイスのアクセス許可: "バックグラウンドで実行中�
 Xiaomi デバイスで必要なアクセス許可を有効にします。
 
 - バックグラウンドで実行中にポップアップ ウィンドウを表示します。
+
+
+## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>一部の OEM デバイスでのオンボーディング中に '永続的な保護' のアクセス許可を許可できない
+
+**適用対象:** 特定の OEM デバイスのみ。
+
+-   **Xiaomi with Android 11** 
+
+Defender App は、アプリのオンボーディングの一環としてデバイスに対するバッテリーの最適化/永続的な保護のアクセス許可を求め、許可を選択すると、アクセス許可を設定できなかったというエラーが返されます。 これは、"Permanent Protection" と呼ばれる最後のアクセス許可にのみ影響します。 
+ 
+**原因:** Xiomi は Android 11 のバッテリー最適化のアクセス許可を変更しました。 Defender は、バッテリーの最適化を無視するようにこの設定を構成することを許可されません。
+
+**ソリューション:** OEM と一緒に、アプリのオンボーディング画面からこのアクセス許可を有効にするソリューションを探しています。 この問題が解決された場合は、ドキュメントを更新します。
+ユーザーは、次の手順に従って、デバイス設定から同じアクセス許可を有効にできます。 
+
+1. デバイスの **[設定]** に移動します。
+2. [バッテリーの最適化] を **検索して選択します**。
+3. [ **アプリの特別なアクセス] で**、[バッテリーの **最適化] を選択します**。
+4. [ドロップダウン] を [すべてのアプリ] **に変更します**。
+5. [Microsoft Defender Endpoint] を見つけて、[ **最適化しない] を選択します**。
+
+[Microsoft Defender Endpoint オンボーディング] 画面に戻り、[ **許可**] を選択すると、ダッシュボード画面にリダイレクトされます。

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理者アカウントを設定して保護する方法について学習します。
-ms.openlocfilehash: 0d687407fad1cec5da49dbc33ffeb84366f1c309
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: d66ce47886a1743ea39be23df4c9b5d4977bb675e1c835c421bcb61205c1f4fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398243"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803040"
 ---
 # <a name="protect-your-administrator-accounts"></a>管理者アカウントを保護する
 
@@ -57,7 +57,7 @@ ms.locfileid: "51398243"
 
     ![管理者の役割を選択する](../media/adminroles.png)
 
- 4. [製品 **ライセンス] セクション** で、ユーザーのセレクターを [オフ] Microsoft 365 Businessに移動し、[製品ライセンスのないユーザーを作成する] を [オン **]** **に移動します**。
+ 4. [製品 **ライセンス] セクション** で、[ビジネス] のセレクター Microsoft 365  [オフ] に、[製品ライセンスのないユーザー **を** 作成する] を [オン **]** に **移動します**。
 
     ![製品ライセンスの選択](../media/productlicense.png)
 
@@ -74,7 +74,7 @@ ms.locfileid: "51398243"
 1. 管理センターに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">し、</a> 左側のナビゲーションで **[ユーザー** \> **のアクティブな** ユーザー] を選択します。
 2. [アクティブ **なユーザー]** ページで、ページの上部にある [ユーザーの追加]を選択し、[新しいユーザー] パネルで名前と他の情報を入力します。
 3. [役割] **セクションを展開** し、[ユーザー] **(管理アクセスなし) を選択します**。
-4. [製品 **ライセンス] セクション** で、ユーザーのセレクターを **[Microsoft 365 Business]** に **移動します**。
+4. [製品 **ライセンス] セクション** で、[ビジネス] の **セレクター Microsoft 365に** 移動 **します**。
 
 ## <a name="turn-on-security-defaults"></a>セキュリティの既定値を有効にする
 

@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: サブスクリプションからサブスクライブ、ドメインMicrosoft 365 Business Premium追加、セキュリティ ポリシーの設定など、ユーザーの設定手順について説明します。
-ms.openlocfilehash: 008a5c51698589667acc0d01649f67dab33b4c58
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7c09dca354781bf92f6bbecca0f3fb9875fb654515fe35c2f96cc780a894a764
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803224"
 ---
 # <a name="overview-of-setup"></a>セットアップの概要
 
@@ -40,7 +40,7 @@ ms.locfileid: "52245066"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../business-video/index.yml)」をご覧ください。
 
 ほとんどのセットアップ手順はガイド付きセットアップで実行できますが、他のオプションも一覧表示されます。
 
@@ -89,7 +89,7 @@ ms.locfileid: "52245066"
 
 - **オンプレミス リソースへのアクセス**
 
-     - 組織で Windows Server Active Directory をオンプレミスで使用している場合は、Microsoft 365 Business Premium をセットアップして Windows 10 デバイスを保護しながら、ローカル認証を必要とするオンプレミス リソースへのアクセスを維持できます。 「ドメインに参加しているデバイスをWindows 10[する](manage-windows-devices.md)」の手順に従って、Microsoft 365 Business Premiumを設定します。 これは推奨される方法であり、この状態のデバイスはハイブリッド Azure と呼ばADデバイスです。
+     - 組織で Windows Server Active Directory オンプレミスを使用している場合は、Microsoft 365 Business Premium をセットアップして Windows 10 デバイスを保護しながら、ローカル認証を必要とするオンプレミス リソースへのアクセスを維持できます。 「ドメインに参加しているデバイスをWindows 10[する](manage-windows-devices.md)」の手順に従って、Microsoft 365 Business Premiumを設定します。 これは推奨される方法であり、この状態のデバイスはハイブリッド Azure と呼ばADデバイスです。
 
     - 一部のオンプレミス リソース (ファイル共有やプリンターなど) を含むローカル Active Directory がビジネスにある場合は、azure AD に参加しているデバイスにこれらのリソースへのアクセス権を与えることができます。この手順は[、「Microsoft 365 Business Premium](access-resources.md)の Azure AD に参加しているデバイスからオンプレミス リソースにアクセスする」を参照してください。
 

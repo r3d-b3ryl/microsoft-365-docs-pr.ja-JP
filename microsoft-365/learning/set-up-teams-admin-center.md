@@ -1,5 +1,5 @@
 ---
-title: 管理センターで Microsoft Viva ラーニング (プレビュー) をTeamsする
+title: 管理センター Microsoft Viva ラーニング (プレビュー) のTeams設定する
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,15 +14,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: 管理センターで Microsoft Viva ラーニング (プレビュー) を構成するTeams説明します。
-ms.openlocfilehash: 99e63210e8f8c10e3721c35fb69df7880c7e1929
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: 管理センターでMicrosoft Viva ラーニング (プレビュー) を構成Teamsします。
+ms.openlocfilehash: 01c3ac59b1f40ba0eb743a4b14bd9c02711cb050724057544a2d6238696015ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290221"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891155"
 ---
-# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>管理センターで Microsoft Viva ラーニング (プレビュー) をTeamsする
+# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>管理センター Microsoft Viva ラーニング (プレビュー) のTeams設定する
 
 > [!NOTE]
 > この記事の情報は、商用リリース前に大幅に変更される可能性があるプレビュー製品に関連しています。 

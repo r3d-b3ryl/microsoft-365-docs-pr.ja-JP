@@ -1,5 +1,5 @@
 ---
-title: 多要素認証をセットアップする
+title: 多要素認証を設定する
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 多要素認証を設定します。
-ms.openlocfilehash: 2a0c8b8fb8451d3d8868c493ad5e1f65adc30b6c
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 43ab127d6e3c38ca72d778c94f85997769981bb32bb80c9de5227ea6146f32df
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398207"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803148"
 ---
-# <a name="set-up-multifactor-authentication"></a>多要素認証をセットアップする
+# <a name="set-up-multifactor-authentication"></a>多要素認証を設定する
 
 多要素認証は、ビジネスのセキュリティを強化します。 管理者が MFA の使用を要求した後、Microsoft Authenticator アプリをセットアップして、携帯電話でキー アプリに安全にログインできます。 
 

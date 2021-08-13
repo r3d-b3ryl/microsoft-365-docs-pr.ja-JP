@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Yammer に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: deacfafbc16c2b04b3dad8a4e9c49ffe07fdf165792c7360a31419a821c52c22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea9e1acb96de32565c4d49529af75fd0224db7885fd6431b8de8bc287969c970
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835600"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834537"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Yammer の保持の詳細
 
@@ -41,9 +41,13 @@ ms.locfileid: "53835600"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保持と削除の対象となる機能
 
-コミュニティ メッセージとユーザー メッセージの Yammer アイテムは、Yammer のアイテム保持ポリシーを使用して保持および削除できます。
+Yammer のユーザー メッセージとコミュニティ メッセージは、Yammer のアイテム保持ポリシーを使用して削除できます。また、メッセージ内のテキストに加えて、コンプライアンス上の理由により、ハイパーテキスト リンク、他の Yammer メッセージを保持することができます。
 
-絵文字の形で他人からの反応はこれらのメッセージに含まれていません。
+ユーザー メッセージには、会話内のすべてのユーザーの名前が含まれ、コミュニティ メッセージにはコミュニティ名とメッセージの件名 (提供されている場合) が含まれます。
+
+Yammer のアイテム保持ポリシーを使用する場合、絵文字の形式で他のユーザーからの反応は保持されません。
+
+Yammer で使用するファイルは、Yammer のアイテム保持ポリシーには含まれません。これらのアイテムには独自のアイテム保持ポリシーがあります。
 
 ## <a name="how-retention-works-with-yammer"></a>Yammer での保持のしくみ
 

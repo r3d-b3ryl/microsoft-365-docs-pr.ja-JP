@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cf17b631f8c9f4b6c332fe147ca14d126b8c0146
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f4b619ff72aa1f4bdd62cd760df0857912d7a3cb3afb3959283e4b15a6dca8ff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918432"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890925"
 ---
 # <a name="compliance"></a>コンプライアンス
 

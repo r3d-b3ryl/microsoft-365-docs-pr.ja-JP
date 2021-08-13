@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7b9efe1a52c108e3de46429d64f9a5535ad13e4e
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: ce61575dac211105b9c07101564a277f03d2398e7467f40ce13ffbeb9beb4a73
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362752"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803406"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft マネージド デスクトップの役割と責任
 
@@ -31,7 +31,7 @@ Microsoft は、次の主要な役割と責任を提供します。
 役割または責任 | 説明
 --- | ---
 MDM ポリシーの管理 | Microsoft は、ベスト プラクティスに従って MDM ポリシーを適用し、ポリシー変更の要求を検討します。 また、[デバイス ポリシー] に規定されているテナントにも変更 [を加えます](../service-description/device-policies.md)。
-ユーザー サポート | デバイスへのアクセスを昇格し、必要に応じて問題をエスカレートするためのメカニズムを提供します。 詳細については、「ユーザー サポート」 [を参照してください](../service-description/user-support.md)。
+ユーザー サポート | デバイスへのアクセスを昇格し、必要に応じてサポート要求を介してエスカレートする問題のメカニズムを提供します。 詳細については、「ユーザー サポート」 [を参照してください](../service-description/user-support.md)。
 Microsoft マネージド デスクトップサポート | Microsoft は、ビジネス オペレーション チームを通じて IT 部門Microsoft マネージド デスクトップ提供します。 このチームは、お客様の環境に関する技術的なトラブルシューティング、変更要求、インシデント管理をMicrosoft マネージド デスクトップします。 詳細については、「管理者向け[サポート」を参照Microsoft マネージド デスクトップ。](../working-with-managed-desktop/admin-support.md)
 セキュリティ監視 | Microsoft は、エンドポイント用 Microsoft Defender Microsoft マネージド デスクトップデバイスを監視します。 セキュリティ 運用Microsoft マネージド デスクトップ (SOC) が脅威を検出した場合は、通知、デバイスの分離、およびリモートからの問題の修正を行います。 詳細については [、「Security」を参照してください](../service-description/security.md)。
 監視と管理を更新する | Microsoft は、Microsoft Microsoft マネージド デスクトップおよびデバイスに対して最新の品質と機能更新プログラムがインストールされていることを確認するために、WindowsデバイスMicrosoft Office。 詳細については、「更新プログラムの [処理方法」を参照してください](../service-description/updates.md)。

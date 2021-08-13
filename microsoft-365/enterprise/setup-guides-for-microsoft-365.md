@@ -20,42 +20,17 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
-description: セットアップ ガイドを使用して、Microsoft 365またはOffice 365の計画と構成を加速します。
-ms.openlocfilehash: f4fd0af98b14db4f0898ad0e132f51e473649dbc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: テナントのライセンスの機能を計画、移行、および実装するためのステップバイステップのツールを取得します。 サービスまたは実行する必要があるアプリをセットアップするガイドを見つける。
+ms.openlocfilehash: 5b637ca5a7b2bcc2bfabd4f703658359ed47e5cca1532fad9719b67be7f1f9a1
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230105"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523311"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
 Microsoft 365およびOffice 365セットアップ ガイドでは、テナント、アプリ、およびサービスを計画および展開するために、カスタマイズされたガイダンスとリソースを提供します。 これらのガイドは[、FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)オンボーディング スペシャリストが個々のやり取りでMicrosoft 365共有するのと同じベスト プラクティスを使用して作成され、Microsoft 365 管理センター 内のすべての管理者が利用できます。 製品のセットアップ、セキュリティ機能の有効化、コラボレーション ツールの展開に関する情報を提供し、高度な展開を高速化するためのスクリプトを提供します。
-
-## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>ウィザードのセットアップ ガイドにアクセスするMicrosoft 365 管理センター
-
-セットアップ ガイドは、このページの[[セットアップ ガイダンス](https://aka.ms/setupguidance)] ページからMicrosoft 365 管理センター。 進捗状況を追跡し、ガイドを完了するためにいつでも戻るオプションがあります。 [セットアップ ガイダンス] **ページにアクセスするには、次の手順を実行** します。
-
-1. [ホーム [] Microsoft 365 管理センター](https://admin.microsoft.com/)ホーム ページに **移動** します。
-
-2. トレーニング ガイド **カード&見** つける。
-
-   ![トレーニング &ガイド カードのMicrosoft 365 管理センター](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
-
-3. [カスタマイズ **されたセットアップ ガイダンス] を選択します**。
-
-   ![ページの [セットアップ ガイダンス] ページのスクリーンショットMicrosoft 365 管理センター](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
-
->[!NOTE]
->テナント管理者のアクセス許可は、テナントにアクセスするためにMicrosoft 365 管理センター。
-
-## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>セットアップ ガイドは、このページでどのように機能Microsoft 365 管理センター。
-
-各ガイドには、手順、リソース、記事、および必要に応じて構成変更に使用できるスクリプトが記載されています。 これらのガイドでは、小規模組織と大規模組織の両方の特定のニーズを反映した選択肢を提供します。 さらに、ガイダンスには、新しい管理者と経験豊富な管理者の両方のサポートが含まれています。
-
-![セットアップ ガイドの例](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
-
-このガイドを使用して、計画フェーズ、展開およびロールアウト中に特定の Microsoft 365 および Office 365 機能の詳細を確認したり、展開を完了して設定を変更した後に再訪することができます。
 
 ## <a name="guides-for-initial-setup"></a>初期セットアップのガイド
 
@@ -63,9 +38,9 @@ Microsoft 365およびOffice 365セットアップ ガイドでは、テナン�
 
 「[環境を準備する」](https://aka.ms/prepareyourenvironment)ガイドは、組織の環境をサービスやサービスMicrosoft 365準備Office 365役立ちます。 目的に関係なく、展開を正常に行うには、完了する必要があるタスクがあります。 環境の準備中にエラーが発生しないようにするには、ドメインの接続、ユーザーの追加、ライセンスの割り当て、Exchange Online による電子メールのセットアップ、Office アプリのインストールまたは展開を行う手順が記載されています。
 
-### <a name="email-setup-advisor"></a>電子メール セットアップ アドバイザー
+### <a name="email-setup-guide"></a>メールのセットアップ ガイド
 
-電子[メール セットアップ アドバイザーは](https://aka.ms/office365setup)、組織のユーザー設定を構成するために必要なExchange Onlineガイダンスを提供します。 これには、新しいメール アカウントの設定、メールの移行、電子メール保護の構成が含まれます。 電子メールを正常にセットアップするには、このアドバイザーを使用して、組織の現在のメール システム、移行するメールボックスの数、およびユーザーとそのアクセスを管理する方法に基づいて、推奨される移行方法を受け取る必要があります。
+電子[メールのセットアップ ガイド](https://aka.ms/office365setup)では、組織のユーザー設定を構成するために必要Exchange Online手順を示します。 これには、新しいメール アカウントの設定、メールの移行、電子メール保護の構成が含まれます。 メールのセットアップを成功するには、このアドバイザーを使用して、組織の現在のメール システム、移行するメールボックスの数、およびユーザーとそのアクセスを管理する方法に基づいて、推奨される移行方法を受け取る必要があります。
 
 ### <a name="migrate-gmail-contacts-and-calendar-items"></a>Gmail の連絡先と予定表アイテムを移行する
 
@@ -96,6 +71,10 @@ Microsoft Edgeは、世界クラスの互換性とパフォーマンス、セキ
 
 [Microsoft Edge](https://aka.ms/edgeadvisor)セットアップ ガイドは、組織でアクセスするサイトが IE モードを使用する必要がある可能性がある場合を確認し、重要なセキュリティ機能を確認および構成し、組織の要件を満たすためにプライバシー ポリシーと追加ポリシーを構成し、デバイス上の Web アクセスを管理するために、Enterprise Site Discovery を構成するのに役立ちます。 個々のデバイスMicrosoft Edgeダウンロードするか、Configuration Manager または組織の複数のユーザーに展開する方法を示Microsoft Intune。
 
+### <a name="configure-ie-mode-for-microsoft-edge"></a>IE モードを構成Microsoft Edge
+
+Microsoft Edge を既に展開し、IE モードのみを構成する場合は、[Microsoft Edge 用[の IE](https://aka.ms/configureiemode)モードの構成] ガイドでは、Enterprise Site Discovery の構成を自動化するためのスクリプトを提供します。 また、クラウド ベースのツールから IE モードの推奨事項を取得し、ユーザーに展開する Enterprise モード サイト 一覧を作成するのに役立ちます。
+
 ### <a name="microsoft-search-setup-guide"></a>Microsoft Search セットアップ ガイド
 
 Microsoft Search作業を完了するために必要な情報を組織が見つけるのに役立ちます。 ユーザー、ファイル、組織のグラフ、サイト、または一般的な質問に対する回答を検索する場合でも、組織は、Microsoft Search を使用して回答を取得できます。
@@ -114,9 +93,9 @@ Microsoft Search作業を完了するために必要な情報を組織が見つ�
 
 また、セルフサービス パスワードのリセット、条件付きアクセス、オプションの高度な ID 保護やユーザー プロビジョニングの自動化を含むサードパーティの統合サインオンの有効化に関する重要な情報も含まれています。
 
-### <a name="sync-users-from-your-orgs-directory"></a>組織のディレクトリからユーザーを同期する
+### <a name="sync-users-from-your-windows-server-active-directory"></a>ユーザーを自分のアカウントから同期Windows Server Active Directory
 
-組織 [のディレクトリからユーザー](https://aka.ms/directorysyncsetup) を同期するウィザードでは、ディレクトリ同期を有効にする手順を示します。 これにより、オンプレミス ID とクラウド ID が一緒になり、アクセスが容易になり、管理が簡素化されます。 シングル サインオン、セルフサービス オプション、自動アカウント プロビジョニング、条件付きアクセス制御、コンプライアンス ポリシーなど、新しい機能のロックを解除します。 これにより、ユーザーはどこからでも必要なリソースにアクセスできます。
+[[ユーザーの同期] ウィザードWindows Server Active Directory、](https://aka.ms/directorysyncsetup)ディレクトリ同期を有効にする手順を示します。 これにより、オンプレミス ID とクラウド ID が一緒になり、アクセスが容易になり、管理が簡素化されます。 シングル サインオン、セルフサービス オプション、自動アカウント プロビジョニング、条件付きアクセス制御、コンプライアンス ポリシーなど、新しい機能のロックを解除します。 これにより、ユーザーはどこからでも必要なリソースにアクセスできます。
 
 ### <a name="plan-your-passwordless-deployment"></a>パスワードレス展開の計画
 
@@ -146,9 +125,9 @@ Microsoft Search作業を完了するために必要な情報を組織が見つ�
 
 [Microsoft Intune[セットアップ](https://aka.ms/intunesetupguide)ガイドを使用して、デバイスとアプリのコンプライアンス ポリシーを設定し、アプリ保護ポリシーを割り当て、デバイスとアプリ保護の状態を監視します。
 
-### <a name="microsoft-defender-for-endpoint-advisor"></a>エンドポイント アドバイザー用 Microsoft Defender
+### <a name="microsoft-defender-for-endpoint-setup-guide"></a>Microsoft Defender for Endpoint セットアップ ガイド
 
-[Microsoft Defender for Endpoint アドバイザー](https://aka.ms/mdatpsetup)は、エンタープライズ ネットワークが高度な脅威を防止、検出、調査、および対応するのに役立つ手順を提供します。 組織の脆弱性について十分な情報に基づいて評価し、どの展開パッケージと構成方法が最適かを判断します。
+[Microsoft Defender for Endpoint セットアップ ガイドには](https://aka.ms/mdatpsetup)、高度な脅威を防止、検出、調査、および対応するためのエンタープライズ ネットワークに役立つ手順が記載されています。 組織の脆弱性について十分な情報に基づいて評価し、どの展開パッケージと構成方法が最適かを判断します。
 
 >[!NOTE]
 >Microsoft Defender for Endpoint には、Microsoft ボリューム ライセンスが必要です。
@@ -159,11 +138,15 @@ Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアか�
 
 Exchange Online Protection セットアップ[ガイド](https://aka.ms/EOPguidance)を使用して、3 つの展開シナリオのオンプレミス メールボックス、ハイブリッド (オンプレミスとクラウドの組み合わせ) メールボックス、またはすべてのクラウド メールボックスが組織に適合するかを選択して、EOP を &mdash; 設定します。 &mdash; このガイドでは、ユーザーのライセンスの設定と確認、Microsoft 365 管理センター でのアクセス許可の割り当て、セキュリティ & コンプライアンス センターでの組織のマルウェア対策ポリシーとスパム ポリシーの構成に関する情報とリソースを提供します。
 
-### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender for Office 365 アドバイザー
+### <a name="microsoft-defender-for-office-365-setup-guide"></a>Microsoft Defender for Office 365 のセットアップ ガイド
 
-[Microsoft Defender for Office 365アドバイザー](https://aka.ms/oatpsetup)は、電子メール メッセージ、リンク、およびサード パーティ製のコラボレーション ツールを通じて、環境で発生する可能性のある悪意のある脅威から組織を保護します。 このガイドでは、組織のニーズに合わせて計画を立てOffice 365 Defender の準備と識別に役立つリソースと情報を提供します。
+[Microsoft Defender for Office 365セットアップ](https://aka.ms/oatpsetup)ガイドは、電子メール メッセージ、リンク、およびサード パーティ製のコラボレーション ツールを通じて、環境が発生する可能性のある悪意のある脅威から組織を保護します。 このガイドでは、組織のニーズに合わせて計画を立てOffice 365 Defender の準備と識別に役立つリソースと情報を提供します。
 
-### <a name="microsoft-information-protection-setup-guide"></a>Microsoft の情報保護セットアップ ガイド
+### <a name="microsoft-defender-for-identity-setup-guide"></a>Microsoft Defender for Identity セットアップ ガイド
+
+[Microsoft Defender for Identity セットアップ ガイド](https://aka.ms/DefenderforIdentitysetup)には、ユーザー ID を侵害する可能性のある高度な脅威を特定、検出、および調査するためのセキュリティ ソリューションセットアップ ガイダンスが提供されています。 これには、不審なユーザーアクティビティの検出や、組織に向けられた悪意のあるインサイダーアクションが含まれます。 Defender for Identity インスタンスを作成し、組織の Active Directory に接続し、センサー、アラート、通知を設定し、独自のポータルの基本設定を構成します。 
+
+### <a name="microsoft-information-protection-setup-guide"></a>Microsoft Information Protection セットアップ ガイド
 
 機密情報が保護されたと確信できるよう、情報保護戦略に適用できる機能の概要を確認します。 機密情報を発見、分類、保護、および監視する 4 段階のライフサイクル アプローチを使用します。 [Microsoft の情報保護のセットアップ ガイド](https://aka.ms/mipsetupguide) には、これらの各段階を完了するためのガイダンスが記載されています。
 
@@ -172,6 +155,10 @@ Exchange Online Protection セットアップ[ガイド](https://aka.ms/EOPguida
 [Microsoft 情報ガバナンスの設定ガイド](https://aka.ms/migsetupguide)には、設定した特定のライフサイクルのガイドラインに従ってデータを分類および管理するため、組織のガバナンス戦略の設定と管理に必要な情報が提供されています。 このガイドでは、組織の再利用可能なコンテンツおよびコンプライアンス レコードに適用されるラベル、ラベル ポリシー、アイテム保持ポリシーを作成、自動適用、公開する方法について説明します。 また、一括処理のシナリオ、または個々のドキュメントに手動で適用するために、ファイル計画を使用した CSV ファイルのインポートに関する情報を入手できます。
 
 ## <a name="guides-for-collaboration"></a>コラボレーションのガイド
+
+### <a name="build-your-employee-experience"></a>従業員エクスペリエンスの構築
+
+従業員が従業員エクスペリエンス ダッシュボードと一緒に作業 [する方法を変革します](https://aka.ms/EmployeeExperienceDashboard)。 シームレスなチームワークを実現するには、Microsoft 365を使用して生産性の高いチームを作成し、従業員がリーダーシップと組織の残りの部分に従事し続ける必要があります。 すべての作業活動で従業員が効果的に働く。 これらのガイドでは、SharePoint、Teams、Yammerを使用して組織全体のコラボレーションを構築して生産性を向上させる方法について説明します。
 
 ### <a name="microsoft-365-apps-deployment-advisor"></a>Microsoft 365 Apps展開アドバイザー
 
@@ -216,3 +203,32 @@ Office 展開ツールを使用して、インストールをカスタマイズ�
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Configuration Manager を使用してMicrosoft 365 Appsを展開および更新する
 
 Configuration Manager を使用している組織では、「[Configuration Manager アドバイザーを使用して、Microsoft 365 Apps の展開と更新を行う](https://aka.ms/oppinstall)」に沿って、FastTrack エンジニアが推奨するベスト プラクティスを使用して、Microsoft 365 Apps の展開を自動的に構成するスクリプトを生成することができます。 このガイドを使用して、展開グループを作成し、Office のアプリと機能をカスタマイズし、動的またはリーン インストールを構成します。その後、スクリプトを実行して、展開を対象にする必要があるアプリケーション、自動展開ルール、デバイス コレクションを作成します。
+
+### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager の共同管理セットアップ ガイド
+
+Intune [Configuration Manager](https://aka.ms/comanagementsetup)共同管理セットアップ ガイドを使用して、組織が Microsoft Intune と Configuration Manager の両方と共同管理する既存の Configuration Manager クライアント デバイスと新しいインターネット ベースのデバイスをセットアップします。 共同管理を使用すると、Windows 10デバイスを管理し、組織のデバイスに新しい機能を追加しながら、両方のソリューションのメリットを受けることができます。
+
+## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>ウィザードのセットアップ ガイドにアクセスするMicrosoft 365 管理センター
+
+セットアップ ガイドは、このページの[[セットアップ ガイダンス](https://aka.ms/setupguidance)] ページからMicrosoft 365 管理センター。 進捗状況を追跡し、ガイドを完了するためにいつでも戻るオプションがあります。 [セットアップ ガイダンス] **ページにアクセスするには、次の手順を実行** します。
+
+1. [ホーム [] Microsoft 365 管理センター](https://admin.microsoft.com/)ホーム ページに **移動** します。
+
+2. トレーニング ガイド **カード&見** つける。
+
+   ![トレーニング &ガイド カードのMicrosoft 365 管理センター](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+
+3. [ **ステップ バイ ステップ ガイド] を選択します**。
+
+   ![ページの [セットアップ ガイダンス] ページのスクリーンショットMicrosoft 365 管理センター](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+
+> [!NOTE]
+> テナント管理者のアクセス許可は、テナントにアクセスするためにMicrosoft 365 管理センター。
+
+## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>セットアップ ガイドは、このページでどのように機能Microsoft 365 管理センター。
+
+各ガイドには、手順、リソース、記事、および必要に応じて構成変更に使用できるスクリプトが記載されています。 これらのガイドでは、小規模組織と大規模組織の両方の特定のニーズを反映した選択肢を提供します。 さらに、ガイダンスには、新しい管理者と経験豊富な管理者の両方のサポートが含まれています。
+
+![セットアップ ガイドの例](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
+
+このガイドを使用して、計画フェーズ、展開およびロールアウト中に特定の Microsoft 365 および Office 365 機能の詳細を確認したり、展開を完了して設定を変更した後に再訪することができます。
