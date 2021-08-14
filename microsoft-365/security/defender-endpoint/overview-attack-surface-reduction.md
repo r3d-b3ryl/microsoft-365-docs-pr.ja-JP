@@ -19,12 +19,12 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: e2065daf89bdebb2e4df6de35ad4c09c21df0a26
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a736ff05bf729e69f89bdb9050a0c8dec2d033f74101fed7a2f46372872464e0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656321"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817707"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>攻撃表面の縮小機能の概要
 

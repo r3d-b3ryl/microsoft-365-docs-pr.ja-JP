@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6b080c209292c8cac1aa64d748926734f4be964c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5e5222214d4a5f98b140bbfc1f094de4733ceebe88ce298b434de0ed01c057dc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817485"
 ---
 # <a name="techniques-in-the-device-timeline"></a>デバイスタイムラインのテクニック
 

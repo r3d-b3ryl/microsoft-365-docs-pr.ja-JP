@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f34d4fd9cc845855e8ec3b1f719824d06157cf23
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7d6d077aa1e17bed75577a162c83d3d1105add4d2f6e7d7a91bf7000ad34b493
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653217"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817872"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Linux での Microsoft Defender for Endpoint の展開 (Puppet を使用)
 

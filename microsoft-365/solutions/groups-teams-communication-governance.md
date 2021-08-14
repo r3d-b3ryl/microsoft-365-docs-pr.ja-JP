@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: コミュニケーション ガバナンスのコラボレーション シナリオについて説明します。
-ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a85a88c79d9a08750c6ca2e9c16028c6a0407aeec68c8eb205f7f8132735d807
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893521"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>コラボレーション シナリオのコミュニケーション ガバナンス
 
@@ -29,16 +29,16 @@ Microsoft 365、メッセージングや会議の設定など、組織内のコ�
 
 次の表は、次の表で使用できる通信コントロールのクイック リファレンスを示Microsoft 365。 詳細については、次のセクションで説明します。
 
-|カテゴリ|説明|参照|
+|カテゴリ|説明|Reference|
 |:-------|:----------|:--------|
 |メッセージング|||
 ||ユーザーがメッセージを送信している間に実行できる操作をTeams。|[Teams のメッセージング ポリシーを管理する](/microsoftteams/messaging-policies-in-teams)|
 ||チャネル内の投稿を開始および返信できるユーザーを制御します。|[チャネル モデレートの設定と管理を行Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
-|会議|||
+|Meetings|||
 ||会議参加者が実行できる操作を管理します。|[Teams での会議ポリシーを管理する](/microsoftteams/meeting-policies-in-teams)|
 ||匿名ユーザーによる会議への参加を許可または防止します。|[匿名ユーザーによる会議への参加を許可する](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
 |コミュニケーション コンプライアンス|||
-||無注意で過失な通信に対する表面化と対応|[Microsoft 365 での通信コンプライアンス](../compliance/communication-compliance.md)|
+||無注意で過失な通信に対する表面化と対応|[Microsoft 365 のコミュニケーション コンプライアンス](../compliance/communication-compliance.md)|
 
 ## <a name="messaging"></a>メッセージング
 
@@ -50,7 +50,7 @@ Microsoft 365、メッセージングや会議の設定など、組織内のコ�
 
 [チャネル モデレートの設定と管理を行Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)
 
-## <a name="meetings"></a>会議
+## <a name="meetings"></a>Meetings
 
 スケジュール設定、コンテンツ共有、参加者、音声およびビデオ ポリシーなどTeams会議参加者に利用可能な機能を制御できます。
 
@@ -65,9 +65,9 @@ Microsoft 365、メッセージングや会議の設定など、組織内のコ�
 
 社内の通信コンプライアンスMicrosoft 365、不快な言語、機密情報、内部および規制基準に関連する情報に関する通信を調べできます。 チャットの通信、メールボックス、Yammerメッセージはすべて監視し、アラートを生成できます。 管理ツールを使用すると、ポリシーの一致を含むメッセージをすばやく特定してアクションを実行できます。
 
-[Microsoft 365 での通信コンプライアンス](../compliance/communication-compliance.md)
+[Microsoft 365 のコミュニケーション コンプライアンス](../compliance/communication-compliance.md)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

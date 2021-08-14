@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 07/19/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: a019d13bd7a051c386cfc848672c7aa95a23225a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 958c7fbf01db148973c0fd6a478595caa4da7215c7120cd31f8391cc4ece838c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541675"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817785"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>エンドポイントの Microsoft Defender に切り替える - フェーズ 2: セットアップ
 

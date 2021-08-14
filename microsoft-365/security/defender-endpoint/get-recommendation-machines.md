@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4cd11665983127a920c162cb6e945b0e45d2d077
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: cbaa328f7bf0f72fd05f76c9cd4b06e2cf19ef558b0f37dd538ae2889e0ede56
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651265"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53847249"
 ---
 # <a name="list-devices-by-recommendation"></a>推奨事項別にデバイスを一覧表示する
 
@@ -97,7 +97,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&脆弱性のセキュリティに関する推奨事項](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

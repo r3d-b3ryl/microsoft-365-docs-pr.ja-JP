@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceEvents テーブル
 description: 高度なハンティング スキーマのその他のデバイス イベント (DeviceEvents) テーブルのウイルス対策、ファイアウォール、その他のイベントの種類について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、データ型、セキュリティ イベント、ウイルス対策、ファイアウォール、エクスプロイト ガード、DeviceEvents
+keywords: 高度なハンティング、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、セキュリティ イベント、ウイルス対策、ファイアウォール、エクスプロイト ガード、DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 63a2d41714329918192caccd384587a4e4f04112
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 3a55e5647299e5c093c631ea10504e1a63698ea5d6b729caa25980d21a527f45
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023203"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817101"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -60,7 +60,7 @@ ms.locfileid: "52023203"
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `RemoteDeviceName` | 文字列 | 影響を受けるコンピューターでリモート操作を実行したコンピューターの名前。 報告されるイベントに応じて、この名前には完全修飾ドメイン名 (FQDN)、NetBIOS 名、またはドメイン情報のないホスト名を指定できます。 |
-| `ProcessId` | int | 新しく作成されたプロセスのプロセス ID (PID) |
+| `ProcessId` | 整数 | 新しく作成されたプロセスのプロセス ID (PID) |
 | `ProcessCommandLine` | string | 新しいプロセスの作成に使用するコマンド ライン |
 | `ProcessCreationTime` | 日付型 | プロセスが作成された日時 |
 | `ProcessTokenElevation` | string | 新しく作成されたプロセスに適用されるユーザー アクセス制御 (UAC) 特権昇格の有無を示すトークンの種類 |
@@ -69,9 +69,9 @@ ms.locfileid: "52023203"
 | `RegistryValueName` | string | 記録されたアクションが適用されたレジストリ値の名前 |
 | `RegistryValueData` | string | 記録されたアクションが適用されたレジストリ値のデータ |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
-| `RemotePort` | int | 接続されているリモート デバイスの TCP ポート |
+| `RemotePort` | 整数 | 接続されているリモート デバイスの TCP ポート |
 | `LocalIP` | string | 通信中に使用されるローカル コンピューターに割り当てられた IP アドレス |
-| `LocalPort` | int | 通信中に使用されるローカル コンピューター上の TCP ポート |
+| `LocalPort` | 整数 | 通信中に使用されるローカル コンピューター上の TCP ポート |
 | `FileOriginUrl` | string | ファイルがダウンロードされた URL |
 | `FileOriginIP` | string | ファイルがダウンロードされた IP アドレス |
 | `InitiatingProcessSHA1` | string | イベントを開始したプロセス (イメージ ファイル) の SHA-1 |
@@ -80,7 +80,7 @@ ms.locfileid: "52023203"
 | `InitiatingProcessFileName` | string | イベントを開始したプロセスの名前 |
 | `InitiatingProcessFileSize` | long | イベントの処理を実行したファイルのサイズ |
 | `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (イメージ ファイル) を含むフォルダー |
-| `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
+| `InitiatingProcessId` | 整数 | イベントを開始したプロセスのプロセス ID (PID) |
 | `InitiatingProcessCommandLine` | string | イベントを開始したプロセスの実行に使用されるコマンド ライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日時 |
 | `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
@@ -94,7 +94,7 @@ ms.locfileid: "52023203"
 |` InitiatingProcessVersionInfoInternalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの内部ファイル名 |
 | `InitiatingProcessVersionInfoOriginalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの元のファイル名 |
 | `InitiatingProcessVersionInfoFileDescription` | string | イベントを担当するプロセス (イメージ ファイル) のバージョン情報の説明 |
-| `InitiatingProcessParentId` | int | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
+| `InitiatingProcessParentId` | 整数 | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
 | `InitiatingProcessParentFileName` | string | イベントを担当するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
 | `InitiatingProcessLogonId` | string | イベントを開始したプロセスのログオン セッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |
@@ -102,7 +102,7 @@ ms.locfileid: "52023203"
 | `AppGuardContainerId` | string | ブラウザーのアクティビティを分離するために Application Guard が使用する仮想化コンテナーの識別子 |
 | `AdditionalFields` | string | JSON 配列形式のイベントに関する追加情報 |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

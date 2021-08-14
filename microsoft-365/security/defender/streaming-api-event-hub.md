@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2e43b75e49d01a05fdacae0adf63ea3337631dfd
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c7745538471a2e8eae3b4708de06a789f4e0daff0150fd83f18a32b85461f892
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893737"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>高度Microsoft 365 Defenderイベントを Azure イベント ハブにストリーミングするように構成する
 
@@ -115,7 +115,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
   ![イベント ハブ リソース Id2 のイメージ](../defender-endpoint/images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [Microsoft 365 Defender API](streaming-api.md)

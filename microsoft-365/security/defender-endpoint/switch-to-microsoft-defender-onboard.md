@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 8b0065b2d73dd0051c3230e292265676d05498d0
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3faa24c8d28fb7f6d8182d58f573679da8c9fb5506d4bd4c5c8b02daeff63549
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544819"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817619"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>エンドポイント向け Microsoft Defender への切り替え - フェーズ 3: オンボード
 

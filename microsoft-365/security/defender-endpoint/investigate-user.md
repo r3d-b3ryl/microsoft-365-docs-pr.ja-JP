@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: cda1a2fb4840e072fa4523ae4d0b2c0475035976
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 00d42e237e5fbe5d0c9fd904bd51c3dc94fd3668d0a12249a46d9cd48f06adad
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817851"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のユーザー アカウントを調査する
 
@@ -97,7 +97,7 @@ ms.locfileid: "53653232"
 - 30 日間
 - 6 か月
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)

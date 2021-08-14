@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 895431f48b2ffede1ac93cdbd55c16f9bc025529
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a57e9b33cf581f274bc858729f17e2fb98ec696c0e4947d2a6386fcdfb3b6d41
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53847261"
 ---
 # <a name="get-machines-security-states-collection-api"></a>Get Machines セキュリティ状態コレクション API
 
@@ -37,7 +37,7 @@ ms.locfileid: "53656009"
 
 デバイスのセキュリティ状態のコレクションを取得します。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>Permissions
 
 ユーザーには読み取りアクセス許可が必要です。
 
