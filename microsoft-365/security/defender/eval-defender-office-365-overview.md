@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender の概要、Office 365評価方法、評価手順を評価する
+title: Microsoft Defender の概要に関するOffice 365評価する
 description: この概要を使用して、要件、eval の有効化またはアクティブ化、パイロットのセットアップなど、MDO パイロットをセットアップする手順について説明します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c39f5823d87ab7b7ff7795014925ca7c22231a3f
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 1971f70752b7787540e3edd470bece5e609d5bcd6171a7c6a8ef39af44c0ce4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458110"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893912"
 ---
 # <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 

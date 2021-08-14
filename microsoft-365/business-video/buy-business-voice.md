@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新しいアドオンを購入Microsoft 365 Business Voiceする方法について学習します。
-ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e04d88bdabc1f7e9bf6e26fb3b7d5171cd6f893321b3cacafdcb41c16ddb3ec9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821105"
 ---
 # <a name="buy-business-voice"></a>ビジネスボイスの購入
 
@@ -36,7 +36,7 @@ ms.locfileid: "50422989"
 
 ## <a name="try-it"></a>お試しください!
 
-1. 管理センターでMicrosoft 365に移動し、[サービスの購入]**を選択します**。
+1. [サービス] Microsoft 365 管理センター[課金] に移動 **し**、[サービスの購入]**を選択します**。
 1. 下にスクロールして、[ **アドオン] を選択します**。 
 1. [Microsoft 365 Business Voice]**を選択します**。
 

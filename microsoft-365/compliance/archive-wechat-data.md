@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: WeChat データをインポートおよびアーカイブするには、Microsoft 365 コンプライアンス センターでコネクタを設定して使用Microsoft 365。
-ms.openlocfilehash: e610b58421c2d84402010c9a5d5ad33ec6da5b04
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: d99b96b97cbf0be01dfe12d38fe9c655372be24a2724a30fa3cb33be68932381
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054614"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820512"
 ---
 # <a name="set-up-a-connector-to-archive-wechat-data"></a>WeChat データをアーカイブするコネクタをセットアップする
 

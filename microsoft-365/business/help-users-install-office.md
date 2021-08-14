@@ -26,19 +26,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: ユーザーがデバイスにOfficeアプリWindows 10し、Office管理センター Windows 10 PC にMicrosoft 365できます。
-ms.openlocfilehash: 74c17533995b74655be57524b77d9c508f703c50
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: ユーザーがデバイスにOfficeアプリWindows 10し、Office PC にWindows 10簡単にインストールMicrosoft 365 管理センター。
+ms.openlocfilehash: bfd0d9baba177bd68b4d3174eba7c5ffb3a38aa8c690c7b8314e5b298bdbdfc1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821005"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>ユーザーがデバイスにOfficeをWindows 10する
 
 [![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
-管理センターから、Office PC にWindows 10簡単にインストールMicrosoft 365できます。
+デバイスから PC にすばやく簡単Office Windows 10インストールMicrosoft 365 管理センター。
   
 以前にインストールした Office アプリでこれがどのように機能するかを理解するには、開始する前に、「[Microsoft 365 Business による Office クライアントの展開を準備する](prepare-for-office-client-deployment.md)」をお読みください。
 
@@ -46,7 +46,7 @@ ms.locfileid: "52245166"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../business-video/index.yml)」をご覧ください。
 
 ## <a name="manage-office-deployments"></a>Office 展開を管理する
 

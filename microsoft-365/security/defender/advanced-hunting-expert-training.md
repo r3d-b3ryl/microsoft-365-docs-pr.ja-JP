@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0b816956442408c9a61f662827f1fd45d9b6511f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 909247e914453cebbe86115561818cde7cb7c44e3ed8a4d1a8149db301b55031
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538857"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893989"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>高度な狩猟に関する専門家のトレーニングを受け取る
 
@@ -38,17 +38,17 @@ ms.locfileid: "52538857"
 
 新しいセキュリティ アナリストや経験豊富な脅威ハンター向け Web キャスト シリーズである Tracking _the adversary_ を使用して、高度な狩猟に関する知識を迅速に強化します。 このシリーズでは、独自の高度なクエリを作成する方法の基本について説明します。 基本に関する最初のビデオから始めるか、エクスペリエンスのレベルに合った高度なビデオにジャンプします。
 
-| タイトル | 説明 | ウォッチ | クエリ | 
+| タイトル | Description | 視聴する | クエリ | 
 |--|--|--|--|
-| エピソード 1: KQL の基本 | このエピソードでは、Defender での高度な狩猟のMicrosoft 365説明します。 使用可能な高度な検索データと基本的な KQL 構文と演算子について説明します。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
+| エピソード 1: KQL の基本 | このエピソードでは、高度な狩猟の基本について説明Microsoft 365 Defender。 使用可能な高度な検索データと基本的な KQL 構文と演算子について説明します。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
 | エピソード 2: 参加 | 高度な検索のデータと、テーブルを一緒に結合する方法について学び続ける。 、、および結合について説明し、既定の Kusto 結合のニュアンス `inner` `outer` `unique` `semi` を理解 `innerunique` します。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
 | エピソード 3: データの要約、ピボット、および視覚化 | データをフィルター処理、操作、結合する方法を学んだので、データの要約、定量化、ピボット、視覚化を行います。 このエピソードでは、スキーマに追加のテーブルを導入しながら、演算子とさまざまな `summarize` 計算について説明します。 また、分析情報の抽出に役立つグラフにデータセットを変換する方法も学習します。 | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.txt) |
 | エピソード 4: ハントしましょう! インシデント追跡への KQL の適用 | このエピソードでは、攻撃者のアクティビティを追跡する方法について説明します。 攻撃を追跡するには、Kusto と高度な狩猟に関する改善された理解を使用します。 サイバーセキュリティの ABC やインシデント対応に適用する方法など、現場で使用される実際のトリックについて学習します。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt) 
 
 
-*L33TSP3AK* を使用して、より専門的なトレーニングを受け取る: Microsoft 365 Defender の高度な狩猟は、Microsoft 365 Defender の高度な狩猟を使用してセキュリティ調査を行う技術的な知識と実践的なスキルを拡張するアナリスト向け web キャスト シリーズです。 
+*L33TSP3AK* を使用して、より専門的なトレーニングを受け取る: Microsoft 365 Defender での高度な捜し方、Microsoft 365 Defender で高度な狩猟を使用してセキュリティ調査を行う技術的な知識と実践的なスキルを拡張するアナリスト向け Web キャスト シリーズです。 
 
-| タイトル | 説明 | ウォッチ | クエリ | 
+| タイトル | Description | 視聴する | クエリ | 
 |--|--|--|--|
 | エピソード 1  | このエピソードでは、高度な検索クエリを実行する場合のさまざまなベスト プラクティスについて説明します。 対象となるトピックの中には、クエリを最適化する方法、ランサムウェアの高度な検索を使用する方法、動的型として JSON を処理する方法、および外部データ演算子を操作する方法があります。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | エピソード 2 | このエピソードでは、不審なログオン場所や異常なログオン場所や受信トレイ転送ルールを介したデータの侵入を調査して対応する方法について学習します。 Sebastien Molendijk、クラウド セキュリティ CxE のシニア プログラム マネージャーは、高度なハンティングを使用して、Microsoft Cloud App Security データを使用して複数ステージのインシデントを調査する方法をMicrosoft Cloud App Securityしています。 | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
@@ -90,7 +90,7 @@ CloudAppEvents
 | sort by Timestamp desc
 ```
      
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [高度な捜索のクエリ言語について学習する](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: iOS デバイスにアプリをOfficeする方法について学習します。
-ms.openlocfilehash: 0cb7cae3a4569d83a1b2e6b27ca42de2142f30e5
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4f5bdf92f2c221509a8e36f97531bb42e928e38553b4fb0cae6190bea18f5ed2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821071"
 ---
 # <a name="install-outlook-and-office-apps-on-ios-devices"></a>iOS OutlookにOfficeアプリをインストールする
 
@@ -42,7 +42,7 @@ ms.locfileid: "51580560"
 5. 仕事用メール アドレスを入力します。
 6. [  **アカウントの追加]** を選択し、パスワードを入力し、[サインイン]  **を選択します**。
 7. (オプション)、[**Let's Do It **] を選択してアカウントを追加するか、[  **後**  で実行] を選択してこの手順をスキップします。
-8. **[OK]** を選択してアプリを再起動Microsoft 365 Businessデータを保護Outlookします。
+8. **[OK]** を選択してアプリを再起動し、Microsoft 365データを保護Outlookします。
 9. もうOutlook開き、確認メッセージが表示されます。 **[OK] を選択します**。
 10. アプリや他のアプリOutlook PIN をOfficeし、確認します。 今後は、この PIN を使用してすべてのデータを保護Office アプリされます。
 11. [オン  **にする] を選択**  して、電子メール通知を有効にします。

@@ -20,12 +20,12 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 ms.date: 03/17/2021
-ms.openlocfilehash: c590c2d47699c4c3cbea4b5145bea9e7c9fc79ec
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5866fd7ae42a8e127250a2f02c7378381b736da54027ab80bab1228fbef23e33
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820913"
 ---
 # <a name="manage-licenses-for-devices"></a>デバイスのライセンスを管理する
 
@@ -43,7 +43,7 @@ Education (デバイス) Microsoft 365 Apps for enterprise (デバイス) また
 
 グループにライセンスを割り当てると、グループ内のすべてのデバイスにライセンスが割り当てされます。 割り当て可能なサブスクリプションは、1 つのグループに 1 つのみです。
 
-1. 管理センター Microsoft 365、[課金ライセンス]**ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">に移動</a>します。
+1. [請求Microsoft 365 管理センター] ページ **に**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">移動</a>します。
 2. [ライセンス **] ページで**、[教育Microsoft 365 Apps **(デバイス)** または Microsoft 365 Apps for enterprise **(デバイス) を選択します**。
 3. 次のページで、サブスクリプションを選択し、[ライセンスの割り当て **] を選択します**。
 4. [グループに **ライセンスを割り当** てる] ウィンドウで、グループ名の入力を開始し、結果から選択してリストに追加します。

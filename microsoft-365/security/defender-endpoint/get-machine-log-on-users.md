@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cd62bfe568bafb8ad921860ee45f9054dcecf0f4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6dbf38c28abfb361dbefadf96cd3ffc56bca2fa51f77c02eabeba68367c0e0d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655349"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53818734"
 ---
 # <a name="get-machine-logon-users-api"></a>コンピューター ログオン ユーザー API の取得
 

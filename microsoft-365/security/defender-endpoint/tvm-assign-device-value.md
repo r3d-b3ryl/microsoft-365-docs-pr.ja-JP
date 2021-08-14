@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 15ab851cfe59d92663fc484b5bb0364c25af4f30
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 687b125b0b48a6f2adbaaaff9019c7202e1b2228b043160e2d13a6d91a3eeb14
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894063"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>デバイス値の割り当て - 脅威と脆弱性の管理
 
@@ -45,9 +45,9 @@ ms.locfileid: "53656237"
 
 デバイス値のオプション:
 
-- 低い
+- 低
 - 標準 (既定値)
-- 高い
+- 高
 
 高い値を割り当てる必要があるデバイスの例を次に示します。
 
@@ -76,7 +76,7 @@ ms.locfileid: "53656237"
 - 高い値のデバイスには、NumberOfAssets / 10 の重みがあります。
     - デバイスが 100 台の場合、各高価値デバイスの重みは 10 (100/10) になります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [露出スコア](tvm-exposure-score.md)

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ウイルス対策のネットワーク トラフィック検査用の追加の定義セットを指定する
-description: Microsoft Defender ウイルス対策のネットワーク トラフィック検査用の追加の定義セットを指定します。
+title: ネットワーク トラフィック検査用の追加の定義セットを指定Microsoft Defender ウイルス対策
+description: ネットワーク トラフィック検査用の追加の定義セットを指定Microsoft Defender ウイルス対策。
 keywords: Microsoft Defender ウイルス対策、マルウェア対策、セキュリティ、防御者、ネットワーク トラフィック検査
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 82568df0a6ad2225fd31b4c0fa4a654710f1e98b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ee2e3f8a1071828c9d8b87b32bcd15f38374d13d37b5215a0cefae14cabde8f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894085"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>ネットワーク トラフィック検査用の追加の定義セットを指定する
 
@@ -37,7 +37,7 @@ ms.locfileid: "52300197"
 
 1. グループ ポリシー管理エンドポイントで、グループ ポリシー管理 [コンソールを開きます](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
 
-2. **[Windows** コンポーネント]  >  **[Microsoft Defender ウイルス対策**  >  **ネットワーク検査システム] に移動します**。 
+2. [ネットワーク検査 **システムWindowsコンポーネントMicrosoft Defender ウイルス対策**  >    >  **に移動します**。 
 
 3. [ネットワーク **トラフィック検査の追加の定義セットを指定する] を選択します**。 既定では、このポリシーは [構成されていません] **に設定されています**。 
 
@@ -52,7 +52,7 @@ ms.locfileid: "52300197"
 7. **[OK] を** 選択し、更新されたグループ ポリシー オブジェクトを展開します。 「 [グループ ポリシー管理コンソール」を参照してください](/windows/win32/srvnodes/group-policy)。
 
 > [!TIP]
-> オンプレミスでグループ ポリシー オブジェクトを使用していますか? クラウドでの翻訳方法を確認します。 Microsoft Endpoint Manager - Preview でグループ ポリシー分析を使用して、[オンプレミスのグループ ポリシー オブジェクトを分析します](/mem/intune/configuration/group-policy-analytics)。 
+> オンプレミスでグループ ポリシー オブジェクトを使用していますか? クラウドでの翻訳方法を確認します。 [[プレビュー] でグループ ポリシー分析を使用して、オンプレミスのグループ ポリシー Microsoft エンドポイント マネージャーを分析します](/mem/intune/configuration/group-policy-analytics)。 
   
 ## <a name="related-articles"></a>関連記事
 
