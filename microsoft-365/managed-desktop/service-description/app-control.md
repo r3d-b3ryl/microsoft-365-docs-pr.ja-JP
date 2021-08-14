@@ -10,18 +10,18 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6f5cc923b5a18b1f45dd186e88228db8c3a891cc
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: b3bf016af1951c8df19708cd89802e4e5d117da9b5cdacc186170103aec6f678
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841305"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863909"
 ---
 # <a name="app-control"></a>アプリ コントロール
 
-アプリコントロールは、クライアント デバイスでのコードの実行を制限する Microsoft Managed Desktop のオプションのセキュリティプラクティスです。 このコントロールは、お客様が承認した発行元リストによって署名されたコードのみを実行する必要が生じ、マルウェアや悪意のあるスクリプトのリスクを軽減します。 このコントロールには多くのセキュリティ上の利点がありますが、主にクライアント ベースの悪用からデータと ID を保護することです。
+アプリコントロールは、クライアント デバイスでのコードMicrosoft マネージド デスクトップを制限する、オプションのセキュリティプラクティスです。 このコントロールは、お客様が承認した発行元リストによって署名されたコードのみを実行する必要が生じ、マルウェアや悪意のあるスクリプトのリスクを軽減します。 このコントロールには多くのセキュリティ上の利点がありますが、主にクライアント ベースの悪用からデータと ID を保護することです。
 
-Microsoft Managed Desktop は、コア生産性シナリオを可能にする基本ポリシーを作成することで、アプリ制御ポリシーの管理を簡素化します。 環境内のアプリとスクリプトに固有の他の署名者に信頼を拡張できます。 
+Microsoft マネージド デスクトップの生産性シナリオを可能にする基本ポリシーを作成することで、アプリ制御ポリシーの管理を簡略化できます。 環境内のアプリとスクリプトに固有の他の署名者に信頼を拡張できます。 
 
 
 セキュリティ テクノロジには、ユーザー エクスペリエンス、セキュリティ、コストのバランスが必要です。 アプリ制御は、環境内の悪意のあるソフトウェアの脅威を軽減しますが、ユーザーに影響を及び、IT 管理者に対するさらなるアクションがあります。
@@ -35,19 +35,19 @@ Microsoft Managed Desktop は、コア生産性シナリオを可能にする基
 - アプリをテストして、アプリがアプリケーション制御ポリシーによってブロックされるかどうかを確認する責任があります。
 - アプリがブロックされている (またはブロックされる) 場合は、必要な署名者の詳細を特定し、管理者ポータルを通じて変更を要求する責任があります。
 
-**Microsoft Managed Desktop の責任:**
+**Microsoft マネージド デスクトップ責任:**
 
-- Microsoft Managed Desktop は、M365 Apps、Windows、Teams、OneDrive など、Microsoft のコア製品を有効にする基本ポリシーを維持しています。
-- Microsoft Managed Desktop は、信頼できる署名者を挿入し、更新されたポリシーをデバイスに展開します。
+- Microsoft マネージド デスクトップは、M365 Apps、Windows、Teams、OneDriveなど、Microsoft のコア製品を有効にする基本ポリシーを維持します。
+- Microsoft マネージド デスクトップ署名者を挿入し、更新されたポリシーをデバイスに展開します。
 
 
 ## <a name="managing-trust-in-applications"></a>アプリケーションの信頼の管理
 
-Microsoft Managed Desktop は、Microsoft テクノロジのコア コンポーネントを信頼する基本ポリシーを管理します。 その後 *、既* に信頼しているアプリケーションとスクリプトを Microsoft Managed Desktop に通知することで、独自のアプリケーションとスクリプトに対する信頼を追加します。
+Microsoft マネージド デスクトップ、Microsoft テクノロジのコア コンポーネントを信頼する基本ポリシーを管理します。 その後 *、既* に信頼しているアプリケーションとスクリプトMicrosoft マネージド デスクトップを通知して、独自のアプリケーションとスクリプトの信頼を追加します。
 
 ### <a name="base-policy"></a>基本ポリシー
 
-Microsoft Managed Desktop は、Microsoft サイバーセキュリティの専門家と共同で、コードのコンパイルや信頼されていないファイルの実行などの危険なアクティビティをブロックしながら、Microsoft Intune を通じて展開されるほとんどのアプリを有効にする標準ポリシーを作成し、維持します。
+Microsoft マネージド デスクトップ Microsoft のサイバーセキュリティ専門家と共同で、コードのコンパイルや信頼されていないファイルの実行などの危険なアクティビティをブロックしながら、Microsoft Intune を通じて展開されるほとんどのアプリを有効にする標準ポリシーを作成し、維持します。
 
 基本ポリシーは、ソフトウェアの実行を制限するために次の方法を採用します。
 
@@ -65,7 +65,7 @@ Microsoft Managed Desktop は、Microsoft サイバーセキュリティの専�
 
 ## <a name="audit-and-enforced-policies"></a>監査ポリシーと適用ポリシー
 
-Microsoft Managed Desktop では、次の 2 つの Microsoft Intune ポリシーを使用してアプリ制御を提供します。
+Microsoft マネージド デスクトップ 2 つのポリシーをMicrosoft Intuneして、アプリコントロールを提供します。
 
 ### <a name="audit-policy"></a>監査ポリシー
 このポリシーは、アプリまたはスクリプトが強制ポリシーによってブロックされるかどうかを記録するログを作成します。 監査ポリシーはアプリ制御ルールを適用しません。また、アプリケーションが発行者の除外を必要とするかどうかを特定するためのテスト目的を目的とします。 指定したアプリまたはスクリプトの実行またはインストールをブロックするのではなく、イベント ビューアーに警告 (8003 イベントまたは 8006 イベント) を記録します。

@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceInfo テーブル
 description: 高度な検索スキーマの DeviceInfo テーブルで、OS、コンピューター名、その他のコンピューター情報について説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、machineinfo、DeviceInfo、デバイス、マシン、OS、プラットフォーム、ユーザー
+keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、machineinfo、DeviceInfo、デバイス、コンピューター、OS、プラットフォーム、ユーザー
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 99a07b1517058b0e5ab241aaae9c6899e2994432
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 6400e34e50baef8122886027683e6f75277cf85caa2ca539b81a79412462491d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884225"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -52,7 +52,7 @@ ms.locfileid: "52689111"
 | `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
 | `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、特定のオペレーティング システム (同じファミリ内のバリエーション (Windows 10および Windows 7 など) を示します。 |
 | `OSBuild` | string | コンピューターで実行されているオペレーティング システムのバージョンをビルドする |
-| `IsAzureADJoined` | boolean | コンピューターがコンピューターに参加しているかどうかを示すブールAzure Active Directory |
+| `IsAzureADJoined` | ブール値 | コンピューターがコンピューターに参加しているかどうかを示すブールAzure Active Directory |
 | `AadObjectId` | string | Azure のデバイスの一意の識別子AD |
 | `LoggedOnUsers` | string | JSON 配列形式のイベント時にコンピューターにログオンしているすべてのユーザーの一覧 |
 | `RegistryDeviceTag` | string | レジストリを介して追加されたコンピューター タグ |
@@ -82,7 +82,7 @@ DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId 
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

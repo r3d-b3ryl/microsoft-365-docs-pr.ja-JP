@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Azure の仮想マシンに Azure AD Connectを展開して、オンプレミス ディレクトリと Azure サーバー テナントの間でアカウントを同期するADします。
-ms.openlocfilehash: 52c1bb2eb53cc4e6753d528e0d82822b2a0eebc5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6f7744ab894346e7468f3b90c211d0f8247ba253b291a4a8eda0b292e7409f04
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835215"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>ディレクトリMicrosoft 365を展開するMicrosoft Azure
 
@@ -175,7 +175,7 @@ Azure AD Connect がインターネット リソースにアクセスできる�
 
 Azure AD Connect は、オンプレミスの AD DS から Microsoft 365 サブスクリプションにアカウントを追加しますが、ユーザーが Microsoft 365 にサインインしてサービスを使用するには、アカウントを場所とライセンスで構成する必要があります。 次の手順で、適切なユーザーアカウントに場所を追加し、ライセンス認証を行います。
   
-1. 管理センターにサインインMicrosoft 365 [し、[](https://admin.microsoft.com)管理] を **クリックします**。
+1. [管理者] の順に [Microsoft 365 管理センター](https://admin.microsoft.com)し、[管理者] を **クリックします**。
     
 2. 左側のナビゲーションで、 **[ユーザー] > [アクティブなユーザー]** をクリックします。
     

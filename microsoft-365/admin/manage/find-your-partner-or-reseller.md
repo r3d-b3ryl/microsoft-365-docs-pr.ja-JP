@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: '新しいパートナーを見つけるMicrosoft 365、過去に作業したパートナーの連絡先情報を取得する方法について学習します。 '
-ms.openlocfilehash: 189eda83f3eca957e6f9fa720e2f6ccdd07db171
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 81beb661783e1bff223245b2abd8904686bd50e8308bb7178b161fb84da455d5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825453"
 ---
 # <a name="find-your-partner-or-reseller"></a>パートナーまたは販売店を検索する
 
@@ -47,7 +47,7 @@ Open Volume Licensing を使用して Microsoft 365を購入または更新す�
 ## <a name="find-contact-information-for-a-partner-youve-worked-with-in-the-past"></a>過去に協力したことのあるパートナーの連絡先情報をさがす
 
 > [!NOTE]
-> 場合によっては、過去に作業したパートナー Microsoft 365管理センターで情報を見つける場合があります。 ただし、このような情報は古い場合があります。 ベスト プラクティスとしては、組織内で購入の担当者または担当部署に連絡して、協力するパートナーを見つけることをお勧めします。 
+> 場合によっては、過去に作業Microsoft 365 管理センターパートナー向けページで情報を見つける場合があります。 ただし、このような情報は古い場合があります。 ベスト プラクティスとしては、組織内で購入の担当者または担当部署に連絡して、協力するパートナーを見つけることをお勧めします。 
   
 ## <a name="get-partner-info-in-the-admin-center"></a>管理センターでパートナー情報を取得する
 

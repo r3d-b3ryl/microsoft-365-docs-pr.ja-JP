@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 正常性の詳細 - Microsoft 365 Apps生産性スコア。
-ms.openlocfilehash: d8e9cb1f29c8138616c1cc2461bfa07fb9dafd9c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: def83cb3a468a31ce5d714af4337f786ef660ebd89293ead9c6c92d9ec23c34d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823400"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 アプリの正常性 – テクノロジ エクスペリエンス
 
@@ -73,7 +73,7 @@ ms.locfileid: "51580872"
 
 :::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="現在サポートされているチャネル内のデバイス数を示すグラフ。":::
 
-1. **ヘッダー:** モーメントチャネル上のデバイスの割合がサポートされているバージョンのデバイスを実行Microsoft 365 Apps  
+1. **ヘッダー:** 現在のチャネルでサポートされているバージョンのデバイスを実行しているデバイスの割合を強調表示Microsoft 365 Apps
 1. **本文:** 推奨チャネルでアプリを実行しているデバイスMicrosoft 365情報を提供します。
 1. **視覚化:** 視覚化の内訳は、次のように、最新バージョンおよびサポートされているバージョンの Microsoft 365 アプリのデバイスの割合を表します。
     - **サポートされているバージョン:** 青いバーは、サポートされているバージョンのアプリで実行されているデバイスのMicrosoft 365します。
@@ -84,7 +84,7 @@ ms.locfileid: "51580872"
 
 :::image type="content" source="../../media/device-supported-versions.png" alt-text="最新バージョンおよびサポートされているバージョンのアプリを実行しているデバイスの数を示すグラフ。":::
 
-1. **ヘッダー:** モーメントを実行しているデバイスと、最新バージョンを実行しているデバイスの割合を示します。  
+1. **ヘッダー:**  サポートされているバージョンと最新バージョンを実行しているデバイスを実行しているデバイスの割合を強調表示します。
 1. **本文:**  推奨チャネルおよびサポートされている/最新バージョンでデバイスを実行している値に関する情報を提供します。
 1. **視覚化:** 視覚化の内訳は、サポートされているバージョンと最新バージョンのアプリを実行しているデバイスの数を表示する範囲を表Microsoft 365されています。
     - **サポートされているバージョン:** バーの青い (色付き) 部分とバーの分数 (分子/分母) は、サポートされているバージョンの Microsoft 365 アプリを実行しているデバイスの割合を表します。

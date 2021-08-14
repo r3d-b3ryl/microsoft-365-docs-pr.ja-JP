@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6df569c2919e9941bc5c7c6ee92970fa694af225
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 5e67cf54e18209c71693621db1d6df30717f03500db8d1bf3ddc292609256c0b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296097"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856753"
 ---
 # <a name="contact-support-for-heard-island-and-mcdonald-islands"></a>聞き取り諸島とマクドナルド諸島のサポートにお問い合わせください
 

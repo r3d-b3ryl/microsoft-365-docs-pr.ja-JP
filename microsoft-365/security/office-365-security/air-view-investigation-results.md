@@ -19,12 +19,12 @@ description: ワークフローの自動調査中およびMicrosoft 365結果と
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef91a3b218c2dda671bf7d07bf2615001bd20ebc
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 1795d8c4d52f0ea8c9bb2ccdf374d3d508e99404131878ba61cd3e737c14ad72
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884129"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>自動調査の詳細と結果Microsoft 365
 

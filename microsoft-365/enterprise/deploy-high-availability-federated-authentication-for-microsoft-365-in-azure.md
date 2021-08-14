@@ -18,17 +18,17 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: '概要: Microsoft Azure で Microsoft 365 サブスクリプションの高可用性フェデレーション認証を構成します。'
-ms.openlocfilehash: 3989ebb06b4ac5dfa1cded5e07c086c4778f94e7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: '概要: ユーザーサブスクリプションの高可用性フェデレーション認証を構成Microsoft 365でMicrosoft Azure。'
+ms.openlocfilehash: e8060b9af085791ff8e11ad0e5be8cb307b7f5870dc92311a1f1375fbd3acfd5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919154"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835168"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Azure に Microsoft 365 の高可用性フェデレーション認証を展開する
 
-この記事では、次の仮想マシンを使用して Azure インフラストラクチャ サービスに Microsoft Microsoft 365 の高可用性フェデレーション認証を展開する手順について説明します。
+この記事では、次の仮想マシンを使用して Azure インフラストラクチャ サービスに Microsoft Microsoft 365の高可用性フェデレーション認証を展開する手順について説明します。
   
 - 2 つの Web アプリケーション プロキシ サーバー
     
@@ -40,9 +40,9 @@ ms.locfileid: "50919154"
     
 各サーバーのプレース ホルダー名を使用した構成がこちらです。
   
-**Azure の Microsoft 365 インフラストラクチャの高可用性フェデレーション認証**
+**Azure のインフラストラクチャの高可用性フェデレーションMicrosoft 365認証**
 
-![Azure での高可用性 Microsoft 365 フェデレーション認証インフラストラクチャの最終的な構成](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Azure のフェデレーション認証インフラストラクチャMicrosoft 365の最終的な構成](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 すべての仮想マシンが単一のクロスプレミス Azure 仮想ネットワーク (VNet) に入っています。 
   
@@ -96,15 +96,15 @@ ms.locfileid: "50919154"
     
 - [フェーズ 4: Web アプリケーション プロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。2 つの Web アプリケーション プロキシ サーバーを作成して構成します。
     
-- [フェーズ 5: Microsoft 365 のフェデレーション認証を構成します](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。 Microsoft 365 サブスクリプションのフェデレーション認証を構成します。
+- [フェーズ 5: フェデレーション認証を構成Microsoft 365。](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) サブスクリプションのフェデレーション認証をMicrosoft 365します。
     
-これらの記事では、Azure インフラストラクチャ サービスにおける Microsoft 365 の機能的で高可用性のフェデレーション認証を作成する、定義済みのアーキテクチャに関する、事前に説明された段階的なガイドを提供します。 以下の点にご注意ください。
+これらの記事では、Azure インフラストラクチャ サービスで機能する高可用性フェデレーション認証を作成する定義済みのアーキテクチャに関する、段階的な事前Microsoft 365ガイドを提供します。 以下の点にご注意ください。
   
 - 経験豊富な AD FS の実行者である場合、フェーズ 3 と 4 の手順を自由に適応させて、自分のニーズに最適なサーバーのセットを構築できます。
     
 - 既存のクロスプレミスの仮想ネットワークを使用した既存の Azure ハイブリッド クラウド展開がある場合は、フェーズ 1 と 2 の手順を自由に適応させるかスキップして、AD FS と Web アプリケーション プロキシ サーバーを適切なサブネットに配置できます。
     
-開発/テスト環境またはこの構成の概念実証を構築するには [、「Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)開発/テスト環境のフェデレーション ID」を参照してください。
+開発/テスト環境またはこの構成の概念実証を構築するには、「フェデレーション id for your [Microsoft 365/テスト環境」を参照してください](federated-identity-for-your-microsoft-365-dev-test-environment.md)。
   
 ## <a name="next-step"></a>次の手順
 

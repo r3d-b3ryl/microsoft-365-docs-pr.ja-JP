@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 147de81d7056799b0d7e4f0e022a344d9d693836
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 557e3c7174b47b81939bf8ca699f5719210611abeff3bff21ba77920dc5dc0a2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295953"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856741"
 ---
 # <a name="contact-support-for-liberia"></a>Liberia のサポートに問い合わせ
 

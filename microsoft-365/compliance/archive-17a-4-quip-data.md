@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 Quip DataParser コネクタをセットアップして使用して、Quip データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: e3379e238b0142522d4161149fd38892843e6eae
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: ebe8593e2474dd67a163e27a60f9effc8771eadbc836965199afcfebbfc76819
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454447"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872632"
 ---
 # <a name="set-up-a-connector-to-archive-quip-data"></a>Quip データをアーカイブするコネクタをセットアップする
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva Topics でトピックのアクセス許可を管理する
+title: トピックのアクセス許可を管理Microsoft Viva トピック
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,26 +9,26 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: トピックのアクセス許可を管理する方法については、「Microsoft Viva Topics」を参照してください。
-ms.openlocfilehash: 6592103526a86671a3ff42c698c1243f63be7fef
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+description: トピックのアクセス許可を管理する方法については、Microsoft Viva トピック。
+ms.openlocfilehash: 2d7720f3e3c3272ba8ec3088fbd417d4977a2f4b7494ce4dfc9e2934f017f2b0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107393"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863965"
 ---
-# <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Microsoft Viva Topics でトピックのアクセス許可を管理する
+# <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>トピックのアクセス許可を管理Microsoft Viva トピック
 
-トピックのアクセス許可の設定は、管理センター Microsoft 365[管理できます](https://admin.microsoft.com)。 これらのタスクを実行するには、グローバル管理者SharePoint管理者である必要があります。
+トピックのアクセス許可の設定は、次のページ[でMicrosoft 365 管理センター。](https://admin.microsoft.com) これらのタスクを実行するには、グローバル管理者SharePoint管理者である必要があります。
 
 トピックのアクセス許可の設定では、次の項目を選択できます。
 
 - トピックを作成および編集できるユーザー: 検出中に見つからなかった新しいトピックを作成するか、既存のトピックの詳細を編集します。
 - トピックを管理できるユーザー: トピック管理センターにアクセスし、トピックに関するフィードバックを表示し、ライフサイクルを通じてトピックを移動します。
 
-## <a name="to-access-topics-management-settings"></a>トピックの管理設定にアクセスするには、次の方法を実行します。
+## <a name="to-access-topics-management-settings"></a>トピック管理設定にアクセスするには:
 
-1. 管理センターでMicrosoft 365をクリックし、[組織 **設定]****をクリックします**。
+1. [組織] Microsoft 365 管理センター、[組織の **設定]****の順にクリックします**。
 2. [サービス] **タブで** 、[トピック エクスペリエンス] **をクリックします**。
 
     ![Connectを知る](../media/admin-org-knowledge-options-completed.png) 
@@ -47,7 +47,7 @@ ms.locfileid: "50107393"
     - **選択したユーザーまたはセキュリティ グループのみ**
     - **だれも**
 
-    ![トピックの作成と編集](../media/k-manage-who-can-create-and-edit.png)  
+    ![トピックの作成と編集を行う](../media/k-manage-who-can-create-and-edit.png)  
 
 3. **[保存]** を選択します。
 
@@ -64,8 +64,8 @@ ms.locfileid: "50107393"
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft Viva Topics でトピックの検出を管理する](topic-experiences-discovery.md)
+[トピックの検出を管理Microsoft Viva トピック](topic-experiences-discovery.md)
 
-[Microsoft Viva Topics でのトピックの表示を管理する](topic-experiences-knowledge-rules.md)
+[トピックの表示を管理Microsoft Viva トピック](topic-experiences-knowledge-rules.md)
 
-[Microsoft Viva Topics でトピック センターの名前を変更する](topic-experiences-administration.md)
+[トピック センターの名前を変更Microsoft Viva トピック](topic-experiences-administration.md)

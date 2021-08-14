@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 1 つの場所からテナントを管理する機能を提供するテナント スイッチアビューとマルチテナント ビューを使用する方法について学習します。
-ms.openlocfilehash: e0bf6c872d4998c0cd0263fd8474ac5e9c99ef14
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 9573106ca7c82f92582fbe9eeebfdb7bc5bab751e67b105f55c35bed397f7d4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823607"
 ---
 # <a name="multi-tenant-management"></a>マルチテナント管理
 
@@ -36,7 +36,7 @@ ms.locfileid: "52706156"
 
 ## <a name="move-between-tenants"></a>テナント間の移動
 
-1. 管理センター Microsoft 365組織名を選択します。
+1. [組織] Microsoft 365 管理センター組織名を選択します。
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="マルチテナント スイッチを使用します。":::
 
@@ -46,7 +46,7 @@ ms.locfileid: "52706156"
 
 ## <a name="view-all-tenants-page"></a>[すべてのテナントの表示] ページ
 
-1. 管理センター Microsoft 365左側のナビゲーションで、[すべてのテナント]**を選択します**。
+1. 左側のMicrosoft 365 管理センターで、[すべてのテナント]**を選択します**。
 - [すべての **テナント] ページ** で、次の方法を実行できます。
   - サービスの正常性を評価する
   - ライセンスの使用状況を確認する
@@ -59,7 +59,7 @@ ms.locfileid: "52706156"
 
 サービス正常性ビューには、テナントに影響を与えるインシデントやアドバイザリが表示されます。 また、影響を受ける管理テナントの数も示されます。
 
-1. 管理センター Microsoft 365マルチテナント ビューで、[サービス正常性]**を選択します**。
+1. [サービス] Microsoft 365 管理センター、マルチテナント ビューで、[サービス正常性]**を選択します**。
 2. [ **サービス正常性]** ページの集計ビューでは、インシデントの総数、管理テナントに影響を与えるアドバイザリの総数、アクティブなインシデントを持つサービスの数も確認できます。 また、インシデントやアドバイザリの影響を受けるテナントの数も確認できます。
 
     - フィルター オプションを使用して、問題の種類またはサービス別に問題を表示できます。
@@ -73,9 +73,9 @@ ms.locfileid: "52706156"
 
 影響を受けるテナントの一覧を CSV 形式にエクスポートして、管理者がサポート チームと共有できます。
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>管理センターで 1 つのテナントMicrosoft 365表示する
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>テナント内の 1 つのテナントを表示Microsoft 365 管理センター
 
-[すべてのテナント] ページMicrosoft 365任意のテナントの管理センター **に戻** ります。
+[すべてのテナント] ページMicrosoft 365 管理センター任意のテナントのアカウント **に戻** ります。
 
 1. [すべての **テナント] ページ** で、管理センターを表示するテナント名を選択します。
 2. そのテナントの管理センターに移動します。

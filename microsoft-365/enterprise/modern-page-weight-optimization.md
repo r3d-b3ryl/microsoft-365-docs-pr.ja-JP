@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: ページ診断ツールを使用して、オンラインモダン サイト ページでページの重SharePointする方法について説明します。
-ms.openlocfilehash: 780d8ca0debbc5efb834f8f3543b9a5a8d168108
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 95a8a978d0451c36416fbe22ae3135962d34bf22a3dae68688a9dafe59be52c0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848812"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>SharePoint Online の最新のサイト ページでページのウエイトを最適化する
 
@@ -77,7 +77,7 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 >[!NOTE]
 >ページ読み込み時間は、ネットワーク負荷、時間帯、その他の一時的な状態など、さまざまな要素によって異なります。 結果を平均化するために、変更の前後に数回に渡ってページ読み込み時間をテストする必要があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
 

@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: この記事では、Azure ExpressRoute for Office 365ネットワーク計画に利用する方法について説明します。
-ms.openlocfilehash: 440d4fafadd7e9b504dc4ffdac1123a2956ed798
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 33e8a078a8bfd2dec5fc643a73e1d17201c3d7f51f9b491f7e53d25389104d39
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835045"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute のネットワーク計画
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 ExpressRoute for Office 365ネットワークと Microsoft のデータセンター間のレイヤー 3 接続を提供します。 回線は、クライアントのフロントエンド サーバーのボーダー ゲートウェイ プロトコル (BGP) Office 365アドバタイズを使用します。 オンプレミス デバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代替手段と見なされます。
   
@@ -191,12 +191,12 @@ Woodgrove がリージョンごとに複数の Azure ExpressRoute 回線を持�
   
 プロバイダーまたはプロバイダーと一緒に、最適な接続オプション、ポイント対ポイント、マルチポイント、またはホスト型を選択します。 帯域幅や他の冗長コンポーネントがルーティングと高可用性の設計をサポートしている限り、接続オプションを混在して一致できます。
   
-ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/planningexpressroute365]()
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/planningexpressroute365]()
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 <a name="BKMK_high-availability"> </a>
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   
@@ -220,7 +220,7 @@ Woodgrove がリージョンごとに複数の Azure ExpressRoute 回線を持�
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 の URL および IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 URL および IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
   

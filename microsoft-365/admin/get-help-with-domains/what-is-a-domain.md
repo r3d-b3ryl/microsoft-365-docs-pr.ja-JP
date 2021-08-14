@@ -24,12 +24,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 949bce3c287c9b7764562586e28bc031fd0d56b6
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 7de7c2d96a07988c87309768a12ddfac38f745047b5d654d5ffe38960cd8d938
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825657"
 ---
 # <a name="what-is-a-domain"></a>ドメインとは
 

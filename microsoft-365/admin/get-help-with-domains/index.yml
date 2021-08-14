@@ -3,7 +3,7 @@ title: ドメインの管理
 summary: 一般的なドメイン タスクでこれらのリソースを確認するか、左側のナビゲーション ウィンドウで完全な一覧を確認してください。
 metadata:
   title: ドメインの管理
-  description: Microsoft 365 のドメインのすべての側面を管理します。
+  description: ドメインのすべての側面を管理Microsoft 365。
   ms.service: O365-administration
   ms.topic: landing-page
   author: pebaum
@@ -11,12 +11,12 @@ metadata:
   ms.date: 03/25/2021
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 38cf5ad6b551763b5ffc6520617b393b07f2646e
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: 0bc7853d6915a7498771a7e830698b0dde7fe4454d861dce841fe30c0d6d7c56
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52332584"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53825729"
 landingContent:
 - title: ドメインの管理
   linkLists:
