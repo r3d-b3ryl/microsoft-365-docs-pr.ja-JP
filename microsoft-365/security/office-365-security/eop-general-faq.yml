@@ -16,12 +16,12 @@ metadata:
   description: EOP (EOP) クラウドホスト型メール フィルター サービスに関する最Exchange Online Protection一般的な質問に対する回答を取得します。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: e7ae5858841384c31acf9b785fc0071607ba5f1d
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: c46f918b644fdfb85b9290a09a8dea03571840b69d8c9d8508d3be5c9d7d428f
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52625367"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "56807511"
 title: EOP の一般的な FAQ
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -81,7 +81,7 @@ sections:
   - question: >
       EOP には、既知の問題や想定される解決策を見つけることのできる通信ポータルがありますか。 新機能についてはどうですか。
     answer: >
-      管理者Microsoft 365には、この情報の一部が含まれる必要があります。 サービス レベル イベントの影響を受け取った場合は、Microsoft 365 管理センターにサインインした後、通信アラート (通常はベル アイコンが付きます) が表示されます。 その項目を参照して、適切に対応することをお勧めします。
+      このMicrosoft 365 管理センター情報の一部が含まれる可能性があります。 サービス レベル イベントの影響を受け取った場合は、メッセージ にサインインした後に、通信アラート (通常はベル アイコンを伴う) が表示Microsoft 365 管理センター。 その項目を参照して、適切に対応することをお勧めします。
 
 
       新しい EOP 機能に[](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)関して、Microsoft 365のロードマップは、今後の新機能に関する情報を見つけ出す良いリソースです。 また、新しい機能に関するブログ記事をブログの web サイトMicrosoft 365[投稿](https://www.microsoft.com/microsoft-365/blog/)します。

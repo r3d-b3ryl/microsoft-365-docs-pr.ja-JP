@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事には、Microsoft 365 コンプライアンス センターのコンテンツ検索電子情報開示ツールに関する参照情報が含まれており、コンテンツ検索に関する多くの詳細情報を知ることができます。
-ms.openlocfilehash: c66ef036e7a44e64a4e4e99aec3c81da287590d0
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0bde0c6610e1280a23a7382babf302cc1a8839497e06361a5d4554274903315d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227273"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892429"
 ---
 # <a name="feature-reference-for-content-search"></a>コンテンツ検索の機能のリファレンス
 

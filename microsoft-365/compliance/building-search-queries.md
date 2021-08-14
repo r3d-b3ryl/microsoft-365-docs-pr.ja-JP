@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: キーワードと条件を使用して、データを検索する際に検索範囲を絞り込むには、Advanced eDiscoveryをMicrosoft 365。
-ms.openlocfilehash: e0df319257776d3995a4b8e37781d7b5dad54d82
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: cbb96e6ba58a5e7af6a3f8472ccfd10986cc698e510869b466784f24bb66e580
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838483"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814797"
 ---
 # <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>データベース内のコレクションの検索クエリをAdvanced eDiscovery
 

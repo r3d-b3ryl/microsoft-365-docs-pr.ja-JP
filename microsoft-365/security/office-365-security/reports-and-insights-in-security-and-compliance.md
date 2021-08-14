@@ -19,12 +19,12 @@ description: セキュリティ & コンプライアンス センターで利用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9408f99b72821e6510927755a9fe6f3aa525a5e0
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 360151fa68309d53f788c18637aa95d61374b62be4815669dc22a6325caa1283
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56807502"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのスマート レポートと分析情報
 
@@ -66,7 +66,7 @@ ms.locfileid: "53108621"
 |**監査ログ** <p> Microsoft 365 のアクティビティ、ユーザー、ファイルまたはフォルダーなどに関する情報|セキュリティ コンプライアンス センターで&調査監査ログ **&検索** \> **に移動します。**|[セキュリティ/コンプライアンス センターで監査ログを検索する](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**コンプライアンス レポート** <p> FedRAMP のレポート、ガバナンス、リスクとコンプライアンス レポート、ISO 情報セキュリティ管理レポート、Service Organization Controls の監査レポートと評価レポート|セキュリティ コンプライアンス センター&サービス アシュアランス **コンプライアンス レポート** \> **に移動します。**|[セキュリティ とコンプライアンスの&を計画Office 365](../../compliance/plan-for-security-and-compliance.md)|
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 Defender ポータル](../defender/overview-security-center.md)
 

@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online および Exchange Online Protection の IPv6 ソースからの匿名受信メールのサポートを構成する方法について学習できます。
+description: 管理者は、IPv6 ソースから匿名受信メールのサポートを構成する方法について、Exchange OnlineおよびExchange Online Protection。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80fdcc9dcfe3006ef8b21aa19856fe8c0ea3ff70
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2db948447677a4925ac4c788c888e78d9a9715c8e266c140e9e25a4a0a7d1d5c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56806882"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Microsoft 365 で IPv6 を使用して匿名受信メールのサポートを追加する
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>IPv6 を使用して匿名受信メールのサポートを追加Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "52300051"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスを持つ Microsoft 365 組織と、Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織は、IPv6 上の匿名の受信メールをサポートします。 送信元 IPv6 メール サーバーは、次の両方の要件を満たしている必要があります。
+Microsoft 365メールボックスExchange Onlineスタンドアロン Exchange Online Protection (EOP) 組織を持つ組織では、Exchange Online IPv6 を使用した匿名の受信メールがサポートされます。 送信元 IPv6 メール サーバーは、次の両方の要件を満たしている必要があります。
 
 - 送信元 IPv6 アドレスには、宛先が IPv6 アドレスからドメイン名を検索できる有効な逆引き DNS 参照 (PTR) レコードが必要です。
 

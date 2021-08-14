@@ -19,12 +19,12 @@ description: '要約: 選挙運動の開発/テスト環境向けのユーザー
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2e21cdfb0aabbdb10397d6d16c879756449a498e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d96d91d264911343bac32baee5eee7da08064f5546ac787730ad62a80c441cac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204966"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56809376"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
@@ -45,7 +45,7 @@ ms.locfileid: "51204966"
 
 次に、EMS E5 試用版サブスクリプションにサインアップして、試用版サブスクリプションと同じ組織に追加します。
 
-1. 必要に応じて、試用版サブスクリプション用の全体管理者アカウントの資格情報で管理センターにサインインします。 詳細については、「[サインインする場所](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. 必要に応じて、管理センターに、試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。ヘルプについては、「[サインインする場所](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
 
 2. **[管理者]** タイルをクリックします。
 
@@ -71,7 +71,7 @@ ms.locfileid: "51204966"
 
 最初に、Azure portal で一般的な選挙運動グループのセットを作成します。
 
-1. ブラウザーで別のタブを開き、Azure portal <https://portal.azure.com> にアクセスします。 必要に応じて、Office 365 E5 の試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。
+1. ブラウザーの別タブで、Azure portal (<https://portal.azure.com>) に移動します。必要に応じて、Office 365 E5 試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。
 
 2. Azure portal で **[Azure Active Directory] > [ユーザーとグループ] > [すべてのグループ]** の順にクリックします。
 

@@ -18,12 +18,12 @@ description: カスタム フォーム のルールとカスタム フォームO
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0846051b65b34ec26358f87bb4ca49302573e6e7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 33fc889b2ddb42dcbbacb1e2b6030e3bf1b409fc07970927e99e06a2747bc21d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205919"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56807523"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>ルールとカスタム フォームOutlook攻撃を検出して修復する
 

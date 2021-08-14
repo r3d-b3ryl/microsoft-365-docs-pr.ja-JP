@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66afaa56efa93faef3fcc6ff8346df24681a0a50
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
-ms.translationtype: MT
+ms.openlocfilehash: 2f4ae80e22ce41e85580b2ed118fa270c285f23f5b71e0d85b07ba338254939e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083022"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56808591"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 

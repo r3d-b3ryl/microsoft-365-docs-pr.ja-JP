@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 サービス正常性の状態
-ms.openlocfilehash: d0e32fb34cf1d14a5da8c10a07551cee00e2421a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a8e91f3f7a5c5454413a57e8e57749ccb918d9af630b1065522fee677c4c867c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813140"
 ---
 # <a name="microsoft-365-network-health-status"></a>Microsoft 365 ネットワーク正常性の状態
 

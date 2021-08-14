@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f099d7bd180843530d23d0bbcee89dc8ae35cdbb
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e46141ea879013ef7f21b1e29c1ac98b2bcef809e3cb9c87bf7ec5941aa7a5e0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814701"
 ---
 # <a name="get-started-with-communication-compliance"></a>コミュニケーション コンプライアンスの使用を開始する
 

@@ -19,12 +19,12 @@ localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用してスプーフィング、フィッシング、およびスパムを防ぐ方法を確認できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4815924714845b641819021ea793baa465cfc812
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 38fccc89b7fa3717bd000a23a61b1cf6b69e10488756678d862598f290cf1832
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538293"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56806855"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 

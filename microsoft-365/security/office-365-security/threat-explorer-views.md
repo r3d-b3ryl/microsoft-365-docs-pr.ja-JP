@@ -13,16 +13,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 脅威エクスプローラーとリアルタイム検出レポートを使用して、Defender ポータルで脅威を調査して対応するMicrosoft 365します。
+description: 脅威エクスプローラーとリアルタイム検出レポートを使用して、脅威の調査と対応を行う方法について、Microsoft 365 Defenderします。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c79cc717a2dbe345627f99830590c674fa02f09
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: fb58b8c605354dcecf82f11176955f89e9aeae04403af1f0ae591f14ae5f9141
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929637"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56808207"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーのビューとリアルタイム検出
 
@@ -46,10 +46,10 @@ ms.locfileid: "52929637"
 
 |サブスクリプション|ユーティリティ|データの日数|
 |---|---|---|
-|Microsoft Defender for Office 365 P1 試用版|リアルタイムの検出|7|
+|Microsoft Defender for Office 365 P1 試用版|リアルタイムの検出|7 |
 |Microsoft Defender for Office 365 P1 有料|リアルタイムの検出|30|
-|Microsoft Defender for Office 365 P1 有料テスト Defender for Office 365 P2 試用版|脅威エクスプローラー|7|
-|Microsoft Defender for Office 365 P2 試用版|脅威エクスプローラー|7|
+|Microsoft Defender for Office 365 P1 有料テスト Defender for Office 365 P2 試用版|脅威エクスプローラー|7 |
+|Microsoft Defender for Office 365 P2 試用版|脅威エクスプローラー|7 |
 |Microsoft Defender for Office 365 P2 paid|脅威エクスプローラー|30|
 |
 

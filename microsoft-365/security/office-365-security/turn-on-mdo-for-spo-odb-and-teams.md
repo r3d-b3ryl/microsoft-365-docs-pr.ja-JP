@@ -20,12 +20,12 @@ description: 管理者は、セーフ SharePoint、OneDrive、Microsoft Teams、
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80c35b91de046642a7b4ff4c66d1a42f76976c5b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 396a1fa3ee2c6ba4f9ffb75c57513bb97f94f93dee677372b930eed4d3ec4b6d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543247"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56808566"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
@@ -85,7 +85,7 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 Set-SPOTenant -DisallowInfectedFileDownload $true
 ```
 
-**注意**: 
+**注意**:
 
 - この設定は、ユーザーと管理者の両方に影響します。
 - ユーザーは引き続き悪意のあるファイルを削除できます。

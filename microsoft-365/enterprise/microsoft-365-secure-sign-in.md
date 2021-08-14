@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: ユーザーが多要素認証（MFA）およびその他の機能を使用して安全にサインインすることを要求します。
-ms.openlocfilehash: 32a33822d33d5be881e02089d064866db5d8e111
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3520a76b3007befda335ef26609ae89fe8b2a7b92821bb9f72e9213087df5fb5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051260"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813236"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Microsoft 365 テナントへのユーザー サインインの保護
 
@@ -62,7 +62,7 @@ Microsoft 365 プランに基づき管理者またはユーザーに MFA の使�
 |---------|---------|
 |Microsoft 365 のすべてのプラン (Azure AD Premium P1 または P2 ライセンスなし)     |[Azure AD でセキュリティの既定値を有効にします](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。   |
 |Microsoft 365 E3 (Azure AD Premium P1 ライセンスを含む)     | [一般的な条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br>- [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [すべてのユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (Azure AD Premium P2 ライセンスを含む)     | Azure AD Identity Protection を利用して、次の 2 つのポリシーを作成して、Microsoft の[条件付きアクセスと関連ポリシーの推奨されるセット](../security/defender-365-security/identity-access-policies.md)の実装を開始します。<br> - [サインインのリスクが中、または高のときに MFA を要求する](../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [高リスク ユーザーはパスワードを変更する必要がある](../security/defender-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (Azure AD Premium P2 ライセンスを含む)     | Azure AD Identity Protection を利用して、次の 2 つのポリシーを作成して、Microsoft の[条件付きアクセスと関連ポリシーの推奨されるセット](../security/office-365-security/identity-access-policies.md)の実装を開始します。<br> - [サインインのリスクが中、または高のときに MFA を要求する](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [高リスク ユーザーはパスワードを変更する必要がある](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ### <a name="security-defaults"></a>セキュリティの既定値
@@ -122,7 +122,7 @@ ID とデバイスのアクセス ポリシーは、3つの層で使用するよ
 
 これらの層とそれに対応する構成は、データ、ID、およびデバイス全体で一貫したレベルの保護を提供します。
 
-マイクロソフトは、Microsoft Teams、Exchange Online、SharePointの特定の設定を含む、組織内のID とデバイスのアクセス ポリシーを構成および展開することを強くお勧めします。 詳細については、[ID とデバイスのアクセス設定](../security/defender-365-security/microsoft-365-policies-configurations.md)を参照してください。
+マイクロソフトは、Microsoft Teams、Exchange Online、SharePointの特定の設定を含む、組織内のID とデバイスのアクセス ポリシーを構成および展開することを強くお勧めします。 詳細については、[ID とデバイスのアクセス設定](../security/office-365-security/microsoft-365-policies-configurations.md)を参照してください。
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
@@ -132,8 +132,8 @@ Azure AD Identity Protection では次の作業を実行できます。
 
 |機能|説明|
 |:---------|:---------|
-| 組織の ID における潜在的な脆弱性の洗い出しと対処 | Azure AD では機械学習を使用して、サインインやサインイン後のアクティビティなどの異常や不審なアクティビティを検出します。 このデータを使用して、Azure AD Identity Protection でレポートとアラートを生成すると、ユーザーによる問題の評価と措置に役立ちます。|
-|組織の ID に関連する不審なアクションの検出と自動対応|特定のリスク レベルに到達すると自動的に検出された問題に対処するよう、リスクベースのポリシーを構成できます。 Azure AD および Microsoft Intune で提供されている他の条件付きアクセス コントロールにこれらのポリシーが加わると、その次のサインイン用のパスワードのリセットや Azure AD 多要素認証を含め、自動的にアクセスをブロックしたり、修正処置を取ったりすることができます。 |
+| 組織の ID における潜在的な脆弱性の洗い出しと対処 | Azure AD では、機械学習を使用して異常や不審なアクティビティ (サインインとサインイン後の活動など) を検出します。Azure AD Identity Protection はこのデータを使用して、問題の評価と対処の実施に役立つレポートとアラートを生成します。|
+|組織の ID に関連する不審なアクションの検出と自動対応|指定されているリスク レベルに達した時点で、検出された問題に対し自動的に対応するリスクベースのポリシーを構成できます。このリスクベースのポリシーと、Azure AD と Microsoft Intune の他の条件付きアクセス制御との組み合わせにより、自動的にアクセスをブロックするか、または修正処置 (パスワード リセットと後続のサインインでの Azure AD 多要素認証の義務付けなど) を実行することができます。 |
 | 不審なインシデントを調査し、管理操作によって解決する | セキュリティ インシデントに関する情報を使用して、リスク イベントを調査できます。調査の追跡と修復処理 (パスワードのリセットなど) の開始のための基本的なワークフローを利用できます。 |
 |||
 
@@ -147,7 +147,7 @@ Azure AD Identity Protection では次の作業を実行できます。
 - [Microsoft 365 の ID ロードマップ](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD トレーニング ビデオ](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Azure AD 多要素認証の登録ポリシーの構成](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [ID とデバイスのアクセス構成](../security/defender-365-security/microsoft-365-policies-configurations.md)
+- [ID とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>次のステップ
 

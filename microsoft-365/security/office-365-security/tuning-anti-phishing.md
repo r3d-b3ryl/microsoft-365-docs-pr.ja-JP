@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、Microsoft 365 でフィッシング メッセージが通過した理由と方法、および今後のフィッシング メッセージを防ぐための対策について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5093981c5f0166d3f53c3b6c7d24371312633c99
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 89ff91b0f160675e10ca52c2f7476cbc53b4ff4a696727e1c1dc2b42bc57a1d9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56808567"
 ---
 # <a name="tune-anti-phishing-protection"></a>フィッシング対策保護を調整する
 

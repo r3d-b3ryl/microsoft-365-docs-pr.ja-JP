@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: サード パーティ製のデータ Microsoft 365 API を使用してコンプライアンス ソリューションを拡張する方法Graph説明します。
-ms.openlocfilehash: 1fed5ac72c7dbfa4b1be370ec03678e1beecdcd2
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: df3fcf74fb7e042bb13d482fe4433c36dc4c4896c15d094ffb5f408dd3925908
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651058"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892269"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365の拡張性
 
@@ -39,21 +39,21 @@ Microsoft 365ソリューションは、組織がコンプライアンス リス
 
 ## <a name="data-connectors"></a>データ コネクタ
 
-Microsoft は、コンプライアンス センターで構成できるサード パーティ製Microsoft 365提供しています。 Microsoft が提供するデータ コネクタの一覧については、「サード パーティ製データ コネクタ」 [の表を参照](archiving-third-party-data.md#third-party-data-connectors) してください。 また、サード パーティ製データ コネクタの表には、Microsoft 365 でデータをインポートおよびアーカイブした後にサード パーティデータに適用できるコンプライアンス ソリューションと、各コネクタの詳細な手順へのリンクも示されています。
+Microsoft は、サード パーティ製のデータ コネクタを提供し、このコネクタで構成Microsoft 365 コンプライアンス センター。 Microsoft が提供するデータ コネクタの一覧については、「サード パーティ製データ コネクタ」 [の表を参照](archiving-third-party-data.md#third-party-data-connectors) してください。 また、サード パーティ製データ コネクタの表には、Microsoft 365 でデータをインポートおよびアーカイブした後にサード パーティデータに適用できるコンプライアンス ソリューションと、各コネクタの詳細な手順へのリンクも示されています。
 
-データ コネクタの詳細Microsoft 365については、「サードパーティ データのアーカイブ[」を参照してください](archiving-third-party-data.md)。 Microsoft 365 コンプライアンス センターで使用できるデータ コネクタでサード パーティ製のデータ型がサポートされていない場合は、カスタム コネクタを提供できるパートナーと一緒に作業できます。 この方法で作業できるパートナーの一覧と、この方法の手順については、「パートナーと協力してサード パーティのデータをアーカイブする」 [を参照してください](work-with-partner-to-archive-third-party-data.md)。
+データ コネクタの詳細Microsoft 365については、「サードパーティ データのアーカイブ[」を参照してください](archiving-third-party-data.md)。 Microsoft 365 コンプライアンス センター で使用できるデータ コネクタでサード パーティ製のデータ型がサポートされていない場合は、カスタム コネクタを提供できるパートナーと作業できます。 この方法で作業できるパートナーの一覧と、この方法の手順については、「パートナーと協力してサード パーティのデータをアーカイブする」 [を参照してください](work-with-partner-to-archive-third-party-data.md)。
 
 ### <a name="prerequisites-for-data-connectors"></a>データ コネクタの前提条件
 
-Microsoft 365 コンプライアンス センターでサード パーティのデータをインポートおよびアーカイブするために使用できるデータ コネクタの多くは、サードパーティのデータ ソースで構成タスクを準備して実行する必要があります。 これらの前提条件は、サードパーティのデータ コネクタごとに詳細に説明されています。
+サード パーティのデータをインポートおよびアーカイブするために、Microsoft 365 コンプライアンス センターで使用できるデータ コネクタの多くは、サード パーティのデータ ソースで構成タスクを準備して実行する必要があります。 これらの前提条件は、サードパーティのデータ コネクタごとに詳細に説明されています。
 
-Microsoft のパートナーが提供する Microsoft 365 コンプライアンス センターのデータ コネクタの場合、コネクタを展開する前に、組織はパートナーとのビジネス関係を必要とします。
+Microsoft のパートナー Microsoft 365 コンプライアンス センター提供されるデータ コネクタの場合、コネクタを展開する前に、組織はパートナーとのビジネス関係を必要とします。
 
 サード パーティ製データ コネクタのライセンス要件については、「コンプライアンス ライセンス[Microsoft 365」を参照](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)してください。
 
 ## <a name="apis"></a>API
 
-Microsoft 365コンプライアンス API は、Microsoft Information Protection SDK、Microsoft Graph API、および Office 365管理アクティビティ API で使用できます。 一部のコンプライアンス API は、Microsoft 365 のお客様、独立したソフトウェア ベンダー、システム インテグレーター、およびマネージド セキュリティ サービス プロバイダーの開発者が価値の高いセキュリティおよびコンプライアンス ソリューションを構築できる新しいセキュリティおよびコンプライアンス API の一部です。
+Microsoft 365 API は、Microsoft Information Protection SDK、Microsoft Graph API、および Office 365管理アクティビティ API で利用できます。 一部のコンプライアンス API は、Microsoft 365 のお客様、独立したソフトウェア ベンダー、システム インテグレーター、およびマネージド セキュリティ サービス プロバイダーの開発者が価値の高いセキュリティおよびコンプライアンス ソリューションを構築できる新しいセキュリティおよびコンプライアンス API の一部です。
 
 API にアクセスする方法の詳細については、「Graphの[概要」を参照Graph。](/graph/overview)
 
@@ -97,5 +97,5 @@ Enterprise情報アーカイブ (EIA) Microsoft Teamsは、規制要件を解決
 
 ### <a name="microsoft-graph-connector-apis-preview"></a>Microsoft Graph コネクタ API (プレビュー)
 
-[Microsoft Graphコネクタを使用](/microsoftsearch/connectors-overview)すると、組織はサードパーティのデータをインデックス化して、Microsoft 検索結果に表示できます。 この機能は、生産性アプリとより広範な Microsoft エコシステムで検索Microsoft 365コンテンツ ソースの種類を拡張します。 サード パーティのデータは、オンプレミスまたはパブリック クラウドまたはプライベート クラウドでホストできます。 このAdvanced eDiscovery、接続されたアプリに組み込みのコンプライアンス値を開発者Microsoft 365しています。 これにより、シームレスなコンプライアンス エクスペリエンスをユーザーに提供Microsoft 365エコシステムに統合するアプリのコンプライアンスが可能となります。 Microsoft Graph コネクタ API をアプリ ビューに組み込む方法の詳細については、「Microsoft Graph で接続を作成、更新、および削除する」[を参照してください](/graph/search-index-manage-connections)。
+[Microsoft Graphコネクタを使用](/microsoftsearch/connectors-overview)すると、組織はサードパーティのデータをインデックス化して、そのデータが結果にMicrosoft Searchできます。 この機能は、Microsoft 365 の生産性向上アプリと Microsoft の広範なエコシステムで検索可能な、コンテンツ ソースの種類を拡大しています。 サード パーティのデータは、オンプレミスまたはパブリック クラウドまたはプライベート クラウドでホストできます。 このAdvanced eDiscovery、接続されたアプリに組み込みのコンプライアンス値を開発者Microsoft 365しています。 これにより、シームレスなコンプライアンス エクスペリエンスをユーザーに提供Microsoft 365エコシステムに統合するアプリのコンプライアンスが可能となります。 Microsoft Graph コネクタ API をアプリ ビューに組み込む方法の詳細については、「Microsoft Graph で接続を作成、更新、および削除する」[を参照してください](/graph/search-index-manage-connections)。
 

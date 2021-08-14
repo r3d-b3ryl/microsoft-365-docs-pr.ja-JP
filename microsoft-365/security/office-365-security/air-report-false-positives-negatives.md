@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 8e1812d8b6df9b48377978715e3a213e66993965ad1d0e6108457150ad1d3d12
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56809388"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能で誤検知/陰性を報告する方法
 
@@ -82,7 +82,7 @@ Threat Explorer を使用すると、セキュリティ運用チームは、ア�
 
 アクション センターでは、実行された修復アクションを確認し、アクションを元に戻す可能性があります。
 
-1. Defender ポータル ( ) Microsoft 365移動します <https://security.microsoft.com> 。
+1. [ポータル] () Microsoft 365 Defender移動します <https://security.microsoft.com> 。
 2. ナビゲーション ウィンドウで、[アクション センター] **を選択します**。
 3. [履歴] **タブを** 選択して、完了したアクションの一覧を表示します。
 4. アイテムを選択します。 そのフライアウト ウィンドウが開きます。

@@ -12,12 +12,12 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードでキュー ウィジェットを使用して、送信コネクタを超えるオンプレミスまたはパートナー組織への失敗したメール フローを監視する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65452b0ad7c31673c910ba48c9c6709995e563ce
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 9b4bee0a8be6b7fdcc022add2092fb16b88d5d2f3f245e6a998036d66ed490af
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56809017"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>コンプライアンス センターのセキュリティ &キューの分析情報
 

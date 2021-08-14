@@ -21,19 +21,19 @@ search.appverid: MET150
 description: '[無料] からビジネス サブスクリプションMicrosoft Teams新しいMicrosoft 365アップグレードする方法について学習します。'
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 8aab61819f7f335d4865e162ca752aa307f8f7ac
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 326c76c2939e6312eb6ef9865e1197b16e6d0c702af1594517913bc3ba7d52f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345108"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892257"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>ビジネス向けMicrosoft Teams無料Microsoft 365アップグレード
 
 > [!IMPORTANT]
 > この記事は、インドのMicrosoft Teams組織にのみ適用されます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 無料の組織をアップグレードするにはMicrosoft Teams無料の管理者Microsoft Teams必要があります。 無料の組織を作成した場合は、自動的に管理者Microsoft Teamsされます。
 
@@ -79,6 +79,6 @@ ms.locfileid: "52345108"
 
 [無料のMicrosoft Teamsへようこそ](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)(記事)\
 [サブスクリプションMicrosoft Teams無料でアップグレード](/microsoftteams/upgrade-freemium)する (記事)\
-[サブスクリプション ライセンスの購入または削除](../licenses/buy-licenses.md) (記事)\
+[サブスクリプション ライセンスを購入または削除する](../licenses/buy-licenses.md) (記事)\
 [ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md)(記事)\
 [ユーザーからのライセンスの割り当てを解除する](../../admin/manage/remove-licenses-from-users.md) (記事)

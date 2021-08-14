@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) の保護のアプリケーションの順序と、保護ポリシーの優先度の値によって適用されるポリシーがどのように決定されるのかについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9dea01324e37a56fbff049e4e46cd5882f1fabad
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 522af9171b9188bd817708ce7de5eb90cd0df7c8412c60ab5d79a128b75d6ff4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409130"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56808590"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子メール保護の順序と優先順位
 
@@ -45,11 +45,11 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
   ****
 
-  |優先度|電子メールの保護|カテゴリ|管理する場所|
+  |優先度|電子メールの保護|Category|管理する場所|
   |---|---|---|---|
-  |1|マルウェア|CAT:MALW|[EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
-  |2|フィッシング|CAT:PHSH|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |3|高確度スパム|CAT:HSPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |1 |マルウェア|CAT:MALW|[EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
+  |2 |フィッシング|CAT:PHSH|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |3 |高確度スパム|CAT:HSPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |4 |スプーフィング|CAT:スプーフィング|[EOP でのスプーフィング インテリジェンスの分析情報](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|ユーザー偽装 (保護されたユーザー)|UIMP|[Microsoft Defender でフィッシング対策ポリシーを構成Office 365](configure-mdo-anti-phishing-policies.md)|
   |6<sup>\*</sup>|ドメイン偽装 (保護されたドメイン)|DIMP|[Microsoft Defender でフィッシング対策ポリシーを構成Office 365](configure-mdo-anti-phishing-policies.md)|
@@ -72,8 +72,8 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 |ポリシー名|優先度|ユーザー偽装|スプーフィング対策|
 |---|---|---|---|
-|ポリシー A|1|オン|オフ|
-|ポリシー B|2|オフ|オン|
+|ポリシー A|1 |オン|オフ|
+|ポリシー B|2 |オフ|オン|
 |
 
 1. スプーフィングの優先度がユーザー偽装 (5) よりも高い (4) ため、メッセージはスプーフィングとしてマークされ、処理されます。

@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、ポータル起動スケジューラを使用してポータルを起動する方法について説明します。
-ms.openlocfilehash: dd2b6bdabae5f4d24882912709d6f16a637a9721
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 14bbbe671d1708bf0d6674ecab93955066b4093d80b2ced9790030559673dc4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430422"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813366"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>ポータル起動スケジューラを使用してSharePointを起動する
 
@@ -135,7 +135,7 @@ ms.locfileid: "53430422"
 
 **次の手順を実行します。**
 
-1. <https://admin.microsoft.com> に移動します。
+1. <https://admin.microsoft.com>に移動します。
 2. 新しい管理センター プレビューを使用している
 3. 左側のナビゲーション ウィンドウで、[サポート] を **選択し**、[新しい **サービス要求] を選択します。**
 

@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、フィッシング対策の保護機能について、Exchange Online Protection (EOP) と Microsoft Defender for Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2a28e2ecc45be941dbd6e346f9918e1692357840
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 8c1f28aa46b4f20c2ba12eaf7c688089d98ff8b37c08b27e0facb92a672ff2f7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083106"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56806846"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>アプリ内のフィッシング対策Microsoft 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "53083106"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-*フィッシング* は、正当または信頼された送信者から送られたように見えるメッセージで、機密情報を盗もうとする電子メール攻撃です。 フィッシングには特定のカテゴリがあります。 例:
+*フィッシング* は、正当または信頼された送信者から送られたように見えるメッセージで、機密情報を盗もうとする電子メール攻撃です。 フィッシングには特定のカテゴリがあります。 以下に例を示します。
 
 - **スピアフィッシング** では、対象となる受信者に合わせて特別にカスタマイズされた、フォーカスのあるカスタマイズされたコンテンツを使用します (通常、攻撃者による受信者の偵察後)。
 

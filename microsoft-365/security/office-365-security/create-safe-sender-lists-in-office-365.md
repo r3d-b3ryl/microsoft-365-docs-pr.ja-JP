@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、受信メッセージ (EOP) で受信メッセージを許可するための使用可能なオプションと優先Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f76b34a439d2eaf2c8315d174483b0b30d3b3b0b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 81ab9b0aabc9b9699e0cee27b0046748a2a585df511f271316e01200ce552221
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56807526"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP で差出人セーフ リストを作成する
 
@@ -113,7 +113,7 @@ EOP およびスタンドアロン EOP Exchange Onlineフロー ルールでは�
 
 前述のようにメール フロー ルールを使用できない場合は、接続フィルター ポリシーで送信元メール サーバーまたはサーバーを IP 許可一覧に追加します。 詳細については [、「EOP で接続フィルターを構成する」を参照してください](configure-the-connection-filter-policy.md)。
 
-**注**:
+**注意**:
 
 - 許可される IP アドレスの数を最小限に抑える必要があります。そのため、可能な限り IP アドレス範囲全体を使用しないようにしてください。
 

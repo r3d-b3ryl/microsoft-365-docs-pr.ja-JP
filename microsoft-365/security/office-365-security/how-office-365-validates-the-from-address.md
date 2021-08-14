@@ -19,12 +19,12 @@ description: 管理者は、Exchange Online Protection (EOP) および Outlook.c
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5a02313bf8c36fe0be91340e421c69a8dc5c0842
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0451f89501a9247b80d5696a085728a5edc66af882a57788063e702733c9cd97
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205376"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56807839"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP がフィッシングを防止するために From アドレスを検証する方法
 
@@ -37,7 +37,7 @@ ms.locfileid: "51205376"
 
 フィッシング攻撃は、メール組織にとって絶え間ない脅威です。 攻撃者は、ス [プーフィングされた (偽造された)](anti-spoofing-protection.md)送信者の電子メール アドレスの使用に加えて、インターネット標準に違反する差出人アドレスの値を使用する場合が多い。 この種類のフィッシングを防止するために、Exchange Online Protection (EOP) と Outlook.com では、この記事で説明するように RFC 準拠の From アドレスを含める受信メッセージが必要になります。 この適用は 2017 年 11 月に有効になっています。
 
-**注**:
+**注意**:
 
 - この記事の説明に従って、不正な形式のアドレスを持つ組織から定期的にメールを受信する場合は、これらの組織に最新のセキュリティ標準に準拠するように電子メール サーバーを更新するようお勧めします。
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: パートナー組織がチャネルを使用してどのように展開および更新するか。
-ms.openlocfilehash: 8d75d9e0a546b5bfc0dd8493e9b85e7e98b41b12
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 65f644c9888d3ef9998299660b5d97ff7129fab4551a04d63d28975677c875ae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288541"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813212"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>展開および更新プログラム チャネルの構成例
 

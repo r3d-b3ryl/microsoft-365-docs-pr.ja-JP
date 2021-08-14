@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: ローカル スクリプトを使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: 55109d8fda52db6651d4398cd84ffd6668b4d871
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9b5df749d71ac3c7b6004f2c44e5d0015595a935a749061eb74b581ae44951cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843448"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892132"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>ローカル スクリプトを使用した Windows 10 デバイスのオンボード
 
@@ -52,13 +52,13 @@ ms.locfileid: "52843448"
 
 8.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-    ![[ウィンドウのスタート] メニューの [管理者として実行] をポイントする](../media/dlp-run-as-admin.png)
+    ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ](../media/dlp-run-as-admin.png)
 
 9.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd」と入力します。*
 
 10.  Enter キーを **押** するか **、[OK] をクリックします**。
 
-デバイスが準拠し、センサー データが正しく報告されていることを手動で検証する方法については、「トラブルシューティング」を参照Microsoft Defender Advanced Threat Protection[を参照してください](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
+デバイスが準拠し、センサー データが正しく報告されていることを手動で検証する方法については [、「Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)オンボーディングの問題のトラブルシューティング」を参照してください。
 
 ## <a name="offboard-devices-using-a-local-script"></a>ローカル スクリプトを使用してデバイスをオフボードする
 セキュリティ上の理由から、Offboard デバイスに使用されるパッケージは、ダウンロード日から 30 日後に期限切れになります。 デバイスに送信された期限切れのオフボード パッケージは拒否されます。 オフボード パッケージをダウンロードすると、パッケージの有効期限が通知され、パッケージ名にも含まれます。
@@ -82,7 +82,7 @@ ms.locfileid: "52843448"
 
 8.  **[コマンド プロンプト]** を右クリックして **[管理者として実行]** を選択します。
 
-    ![[ウィンドウのスタート] メニューの [管理者として実行] をポイントする](../media/dlp-run-as-admin.png)
+    ![[管理者スタート メニュー実行] をポイントするウィンドウ のウィンドウ](../media/dlp-run-as-admin.png)
 
 9.  スクリプト ファイルの場所を入力します。 ファイルをデスクトップにコピーした場合は *、「%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd」と入力します。*
 
@@ -105,10 +105,10 @@ ms.locfileid: "52843448"
 3. デバイスが表示されているのを確認します。
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [グループ ポリシー Windows 10デバイスのオンボード](dlp-configure-endpoints-gp.md)
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](dlp-configure-endpoints-vdi.md)
 - [新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [オンボーディングMicrosoft Defender Advanced Threat Protectionのトラブルシューティング](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Microsoft Defender Advanced Threat Protection オンボーディングの問題のトラブルシューティング](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

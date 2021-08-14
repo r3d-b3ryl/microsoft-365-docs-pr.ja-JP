@@ -20,12 +20,12 @@ description: 管理者は、管理者ポータルで使用できるレポート�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8bb03202139137adf55c4c10230b1c4e99253ba
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: ca1013e631c0a041d2fa4475081588a65c299129fc017e98235f57c95cba88f1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454723"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56809622"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>ポータルでレポートOffice 365 Defender をMicrosoft 365 Defenderする
 
@@ -217,7 +217,7 @@ PowerShell レポートコマンドレット:
 
 - **組織の管理**
 - **セキュリティ管理者**
-- **セキュリティ閲覧者**
+- **セキュリティ リーダー**
 - **グローバル閲覧者**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。

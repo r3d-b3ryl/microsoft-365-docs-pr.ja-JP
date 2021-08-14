@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: ケースAdvanced eDiscoveryすべてのレビュー セットに適用されるユーザー設定を構成します。 これには、分析と光学式文字認識の設定が含まれます。
-ms.openlocfilehash: 2b9c438e28b8d9b84ec8cc29bf85911e5bdc3c8d
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: fd1d71a7f617ad836b5c8d2cdcc2beea4b37fdc5aeb14031c80984ca2676db5b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453899"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892369"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>[検索と分析] の設定を構成Advanced eDiscovery
 
@@ -90,7 +90,7 @@ ms.locfileid: "53453899"
 
 - 他のデータ ソース (保管担当者に関連付けされていないコンテンツで、保管されていないデータ ソースのケースに追加されたコンテンツ) がレビュー セットに追加される場合。
 
-データをレビュー セットに追加すると、画像テキストを確認、検索、タグ付け、分析できます。 抽出されたテキストは、レビュー セットで選択したイメージ ファイルのテキスト ビューアーで表示できます。 詳しくは、次のトピックを参照してください。
+データをレビュー セットに追加すると、画像テキストを確認、検索、タグ付け、分析できます。 抽出されたテキストは、レビュー セットで選択したイメージ ファイルのテキスト ビューアーで表示できます。 詳細については、以下を参照してください。
 
 - [カストディアン データの詳細なインデックス処理](indexing-custodian-data.md)
 

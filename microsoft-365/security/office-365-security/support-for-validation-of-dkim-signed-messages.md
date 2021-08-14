@@ -16,12 +16,12 @@ ms.collection:
 description: DKIM 署名済みメッセージの検証について、Exchange Online ProtectionおよびExchange Online
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8695e25000390cf6c5d58adf63db1984c873d75b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a1986ebee428f047d02388e1c30a76a54fa32517208744b2c9fea6cbf327f024
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56808579"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>DKIM 署名付きメッセージの検証をサポートする
 

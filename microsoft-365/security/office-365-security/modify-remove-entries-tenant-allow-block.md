@@ -1,5 +1,5 @@
 ---
-title: テナント許可/ブロック一覧のエントリを変更および削除する
+title: テナントの許可/禁止リストのエントリを変更および削除する
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,14 +16,14 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧でエントリを変更および削除する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 23c390babc64909aa860554437b60e2370d0fd1f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 03f2d3f61bc61862bc221f338e6115b035fd2ea349be5531ca2035558046ba06
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56807198"
 ---
-# <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧のエントリを変更および削除する
+# <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストのエントリを変更および削除する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

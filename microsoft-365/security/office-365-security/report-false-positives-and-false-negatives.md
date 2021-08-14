@@ -13,12 +13,12 @@ ms.collection:
 description: レポート メッセージ機能を使用して、誤検知と誤Outlookを報告する方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 458e7d16e2614e7bac3a0aac5a4310e6353ab569
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: ac0dbb205e6205a9c92cc56922b7399c6dd2c65cde276854b2901edf89b29503
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56806883"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Outlook の誤検出と検出漏れを報告する
 

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f951fd2ecb1d52c4bb7985c271d6622c21a4cb24
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 738a154e6d543c5764e74d68e87153edf5e7de7abbf20ab47f3af9f751fdd303
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536708"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814981"
 ---
 # <a name="payment-information-for-guyana"></a>ガイアナのお支払い情報
 

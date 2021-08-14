@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーのユーザー アクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: 9b6885d101529d18201084b3364c6412bbbc4f4d
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 3d6eb3abac41106d48794b7f1859d7c809602489db93e99a46a4eed44efd6d30
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725830"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892313"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 

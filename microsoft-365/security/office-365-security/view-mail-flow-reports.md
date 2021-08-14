@@ -19,12 +19,12 @@ description: 管理者は、セキュリティ コンプライアンス セン�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f2bdb32d2afde3d0d40261cd3ecf30740dc0ccf
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 087b9fea8b22a9d1f99f2bc3a74217a0b21aa264d7e26764e6abfe71f5d84075
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56808555"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ コンプライアンス センターの [レポート] ダッシュボードでメール フロー レポート&表示する
 
@@ -36,9 +36,9 @@ ms.locfileid: "53029478"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> このトピックで説明するレポートの大部分は、Exchange 管理センター (EAC) で利用できます。 詳細については、「新しい [Exchange 管理センターのメール フロー レポート」を参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。 [Exchange トランスポート ルール レポートは](view-email-security-reports.md#exchange-transport-rule-report)、Microsoft 365 Defender ポータルで使用できます。
+> このトピックで説明するレポートの大部分は、管理センター (EAC) でExchange使用できます。 詳細については、「新しい管理センターのメール フロー レポート[Exchange参照してください](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。 トランスポート[Exchangeレポートは](view-email-security-reports.md#exchange-transport-rule-report)、ポータルでMicrosoft 365 Defenderできます。
 
-セキュリティ & コンプライアンス センターのメール フロー[](mail-flow-insights-v2.md)ダッシュボードで使用できるメール フロー レポートに加えて、Microsoft 365 組織の監視に役立つさまざまなメール フロー レポートをレポート ダッシュボードで利用できます。
+セキュリティ & コンプライアンス センターのメール フロー[](mail-flow-insights-v2.md)ダッシュボードで使用できるメール フロー レポートに加えて、レポート ダッシュボードには、Microsoft 365 組織の監視に役立つさまざまなメール フロー レポートがあります。
 
 必要なアクセス許可 [がある](#what-permissions-are-needed-to-view-these-reports)場合は、[レポート ダッシュボード] に移動して、セキュリティ & [コンプライアンス](https://protection.office.com) センターでこれらのレポート **を表示** \> **できます**。 レポート ダッシュボードに直接移動するには、を開きます <https://protection.office.com/insightdashboard> 。
 
@@ -98,29 +98,29 @@ ms.locfileid: "53029478"
 
 レポート ビューに戻る場合は、[レポートの表示] **をクリックします**。
 
-## <a name="exchange-transport-rule-report"></a>Exchange トランスポート ルール レポート
+## <a name="exchange-transport-rule-report"></a>Exchangeトランスポート ルール レポート
 
-**Exchange トランスポート ルール レポートには**、組織内の受信メッセージと送信メッセージに対するメール フロー ルール (トランスポート ルールとも呼ばれる) の影響が表示されます。
+トランスポート **Exchangeレポートには**、組織内の受信メッセージと送信メッセージに対するメール フロー ルール (トランスポート ルールとも呼ばれる) の影響が表示されます。
 
-レポートを表示するには、コンプライアンス センターのセキュリティ & [開](https://protection.office.com)き、[レポート **ダッシュボード]** に移動し \> 、[Exchange **トランスポート** ルール **] を選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ETRRuleReport> 。
+レポートを表示するには、セキュリティ コンプライアンス センター&[開](https://protection.office.com)き、[レポートダッシュボード] に移動し、[トランスポート ルールExchange \> **選択します**。 レポートに直接移動するには、を開きます <https://protection.office.com/reportv2?id=ETRRuleReport> 。
 
-![レポート ダッシュボードの Exchange トランスポート ルール ウィジェット](../../media/transport-rule-report-widget.png)
+![Exchangeダッシュボードでトランスポート ルール ウィジェットを作成する](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Exchange トランスポート ルール レポートのレポート ビュー
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>トランスポート ルール レポートのExchangeビュー
 
 レポート ビューでは、次のグラフを使用できます。
 
-- **データの表示方法: Exchange トランスポート ルール** \>**[ブレークダウン]: [方向]**: このグラフには、トランスポート ルールの影響を受けた受信メッセージと送信メッセージの数が表示されます。
+- **データの表示方法: Exchangeトランスポート ルール** \>**[ブレークダウン]: [方向]**: このグラフには、トランスポート ルールの影響を受けた受信メッセージと送信メッセージの数が表示されます。
 
-- **データの表示方法: Exchange トランスポート ルール** \>**[分類]: [重大度]**: このグラフには、重大度の高いメッセージと中程度の重大度メッセージ、および **低重大度メッセージの数が表示** されます。 重大度レベルは、ルールのアクションとして設定します **(重大度** レベルまたは _SetAuditSeverity_ でこのルールを監査します)。 詳細については [、「Exchange Online のメール フロー ルールアクション」を参照してください](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+- **データの表示方法: Exchangeトランスポート ルール** \>**[分類]: [重大度]**: このグラフには、重大度の高いメッセージと中程度の重大度メッセージ、および **低重大度メッセージの数が表示** されます。 重大度レベルは、ルールのアクションとして設定します **(重大度** レベルまたは _SetAuditSeverity_ でこのルールを監査します)。 詳細については、「メール フロー ルール[のアクション」を参照Exchange Online。](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- **データの表示方法: DLP Exchange トランスポート ルール** \>**[ブレークダウン]: [方向]**: このグラフは、データ損失防止 (DLP) トランスポート ルールの影響を受けた受信メッセージと送信メッセージの数を示します。 次のオプションをオンにすることで、グラフをさらに絞り込みできます。
+- **データの表示方法: DLP Exchangeトランスポート ルール** \>**[ブレークダウン]: [方向]**: このグラフは、データ損失防止 (DLP) トランスポート ルールの影響を受けた受信メッセージと送信メッセージの数を示します。 次のオプションをオンにすることで、グラフをさらに絞り込みできます。
 
   - **データの表示: すべての DLP トランスポート ルール**
   - **データの表示: 侵害されたユーザー**
   - **データの表示: 検出されたコンテンツの量が少ない米国愛国者法**
 
-- **データの表示方法: DLP Exchange トランスポート ルール** \>**[分類: 方向]**: このビューには、DLP トランスポートルールの影響を受けた重大度の高いメッセージと中程度の重大度メッセージの数が表示されます。  次のオプションをオンにすることで、グラフをさらに絞り込みできます。
+- **データの表示方法: DLP Exchangeトランスポート ルール** \>**[分類: 方向]**: このビューには、DLP トランスポートルールの影響を受けた重大度の高いメッセージと中程度の重大度メッセージの数が表示されます。  次のオプションをオンにすることで、グラフをさらに絞り込みできます。
 
   - **データの表示: すべての DLP トランスポート ルール**
   - **データの表示: 侵害されたユーザー**
@@ -132,9 +132,9 @@ ms.locfileid: "53029478"
 - 方向の値
 - 重大度の値
 
-![Exchange トランスポート ルール レポートのレポート ビュー](../../media/transport-rule-report-report-view.png)
+![トランスポート ルール レポートのレポート Exchangeビュー](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Exchange トランスポート ルール レポートの詳細テーブル ビュー
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>トランスポート ルール レポートのExchangeテーブル ビュー
 
 [詳細テーブル **の表示]** をクリックすると、表示される情報は、表示されているグラフによって異なります。
 
@@ -142,22 +142,22 @@ ms.locfileid: "53029478"
 
   - **Date**
   - **トランスポート ルール**
-  - **[件名]**
+  - **Subject**
   - **[送信者のアドレス]**
   - **受信者のアドレス**
   - **重大度**
-  - **[方向]**
+  - **Direction**
 
-- **データの表示方法: DLP Exchange トランスポート ルール**:
+- **データの表示方法: DLP Exchangeルール**:
 
   - **Date**
   - **DLP ポリシー**
   - **トランスポート ルール**
-  - **[件名]**
+  - **Subject**
   - **[送信者のアドレス]**
   - **受信者のアドレス**
   - **重大度**
-  - **[方向]**
+  - **Direction**
 
 詳細テーブル ビューで **[フィルター]** をクリックすると、次のフィルターを使用して結果を変更できます。
 
@@ -248,8 +248,8 @@ Mailflow **状態レポートは**、送信済 [](#sent-and-received-email-repor
 
 データ テーブルには、次の情報が含まれます。
 
-- **[方向]**
-- **種類**
+- **Direction**
+- **型**
 - **24 時間**
 - **3 日間**
 - **7 日間**
@@ -472,8 +472,8 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 [別の **方向] または [** 方向] の [方向 **]** ビューで [詳細テーブルの表示] をクリック **すると** 、次の情報が表示されます。
 
 - **日付 (UTC)**
-- **種類**
-- **[方向]**
+- **型**
+- **Direction**
 - **メッセージ数**
 
 詳細テーブル ビューで **[フィルター]** をクリックすると、次のフィルターを使用して結果を変更できます。
@@ -550,7 +550,7 @@ Tech **ビューは、** ファネル **ビューに** 似ています。構成�
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ リーダー**
-- **グローバル リーダー**
+- **グローバル閲覧者**
 
 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
