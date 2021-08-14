@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 93f6164e875ad6cf918bc8ba9fedf37b80656d69
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: acddaecf5a845c442a7c3acfe967057abee9502fb9f1ef0179dd138418c564db
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656957"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811476"
 ---
 # <a name="behavioral-blocking-and-containment"></a>動作ブロックと封じ込め
 
@@ -117,7 +117,7 @@ Defender for Endpoint の動作ベースのデバイス学習モデルは、攻�
 
 この例では、動作のブロックと封じ込め機能を使用すると、脅威が検出され、格納され、自動的にブロックされます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Defender for Endpoint の詳細](overview-endpoint-detection-response.md)
 

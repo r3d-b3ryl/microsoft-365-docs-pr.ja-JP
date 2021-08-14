@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7365bc28e05c22cdba3ac52fcbda109c192bbe7e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c2154351dd3f7db7e3300dde86bdb3e7f1b6e4d55853c59449d11aa5ef12a643
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651749"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810980"
 ---
 # <a name="restrict-app-execution-api"></a>アプリの実行 API の制限
 
@@ -48,6 +48,13 @@ ms.locfileid: "53651749"
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+
+> [!IMPORTANT]
+>
+> - このアクションは、バージョン 1709 以降Windows 10デバイスで使用できます。
+> - この機能は、組織で使用している機能がMicrosoft Defender ウイルス対策。
+> - このアクションは、アプリケーションコントロールのコード整合性Windows Defenderの形式と署名要件を満たす必要があります。 詳細については、「コード整合性 [ポリシーの形式と署名」を参照してください](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
 
 ## <a name="permissions"></a>アクセス許可
 

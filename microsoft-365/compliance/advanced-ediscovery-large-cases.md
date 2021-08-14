@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 大規模なケースを使用Advanced eDiscovery、アイテムを追加してセットを確認し、その他の制限を増やします。
-ms.openlocfilehash: d4737b6c715ac96fc9e16c40e2f4fa784a66e5d1
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 739fa2a7bb3e1d1d650ef736ca1c480c8b704e6f4c2cc12b6c7fdd7e03fec2ed
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542465"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523659"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>大規模なケースを使用してAdvanced eDiscovery (プレビュー)
 
@@ -60,6 +60,12 @@ ms.locfileid: "53542465"
 さらに、新しい大きなケース形式には、ケース内の各レビュー セットの合計サイズを表示する更新されたユーザー インターフェイスが含まれています。 レビュー セットのサイズは、[レビュー セット] タブの列と、ケース内のすべてのタブを保持するフライアウト ウィンドウに表示されます。
 
 ![ユーザー インターフェイスでの大Advanced eDiscovery統計](..\media\LargeCaseUI.png)
+
+## <a name="known-issues"></a>既知の問題
+
+- ルーズ ファイルと **PST** としてコンテンツをエクスポートするオプションは、現在、大きなケースではサポートされていません (このオプションは灰色表示です)。 大規模なケースのこのエクスポート オプションは、近日サポートされます。 コンテンツのエクスポートの詳細については、「ドキュメントをレビュー セットからエクスポートする」を参照[Advanced eDiscovery。](export-documents-from-review-set.md)
+
+- ケースに保管担当者と非保管データ ソースを追加するときに発生する高度なインデックス作成は、現在、大きなケースではサポートされていません。 インデックス ジョブは作成されますが、完了できません。 大規模な場合の高度なインデックス作成は、近日サポートされます。 高度なインデックス作成の詳細については、「保管担当者データ [の高度なインデックス作成」を参照してください](indexing-custodian-data.md)。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

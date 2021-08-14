@@ -1,5 +1,5 @@
 ---
-title: セキュリティ操作へのMicrosoft 365 Defenderの概要
+title: セキュリティMicrosoft 365 Defenderに統合する
 description: セキュリティ操作にMicrosoft 365 Defenderの基本。
 keywords: インシデント、アラート、調査、相関関係、攻撃、デバイス、ユーザー、ID、ID、メールボックス、メール、365、microsoft、m365、インシデント対応、サイバー攻撃、secops、セキュリティ操作、soc
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a90ef363b869b5b10352a0aedcd6210a336e4a8c2a32b806aa3d3b583287b515
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e1fa33358dbaa63e99e4e0645a04766ab72477b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862601"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58243919"
 ---
-# <a name="introduction-to-integrating-microsoft-365-defender-into-your-security-operations"></a>セキュリティ操作へのMicrosoft 365 Defenderの概要
+# <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>セキュリティMicrosoft 365 Defenderに統合する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -45,8 +45,10 @@ ms.locfileid: "53862601"
 - [Microsoft 365 Defender の使用を開始する](get-started.md)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)
 
+組織が既存のアーキテクチャとプロセスをMicrosoft 365 Defender場合、これらの記事は既存のアーキテクチャとプロセスを肯定または改善できます。
+
 >[!Note]
->組織が既存のアーキテクチャとプロセスをMicrosoft 365 Defender場合、これらの記事は既存のアーキテクチャとプロセスを肯定または改善できます。
+>Microsoft のパートナーである Protiviti は、この記事のために情報や重要なフィードバックを提供してくれました。
 >
 
 ## <a name="target-audience"></a>対象となる読者

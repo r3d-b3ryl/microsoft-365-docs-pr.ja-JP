@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 0822ef527429e48f6eb301af0838081ed597b5d9c5b1cb6825f6a53cfb93d19a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1aa318c75dcfcb339ae1f7c52832938805593e47b966d68694380e3d760f0569
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836849"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523786"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -63,7 +63,7 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
         - これらのファイルは、自動ラベル付けポリシーが作成される前または後に、保存時に自動ラベル付けできます。 開いているセッションの一部である (ファイルが開いている) 場合、ファイルに自動ラベル付けはできません。
         - 現在、リスト アイテムへの添付はサポートされておらず、自動ラベル付けされません。
     - テナント内で 1 日あたり最大 25,000 個の自動的にラベル付けされたファイル。
-    - テナントあたり最大 10 個の自動ラベル付けポリシーが作成されます。各ポリシーは、最大 10 サイト (SharePoint サイトまたは OneDrive サイト) を対象としています。
+    - テナントあたり最大 10 個の自動ラベル付けポリシーが作成されます。各ポリシーは、最大 10 サイト (SharePoint サイトまたは OneDrive サイト) を対象としています。 [現在展開中の最近の機能強化](#recent-enhancements-for-auto-labeling-policies)では、これらの数は 100 ポリシーに増加し、個別に指定すると 100 サイトに増加します。 すべてのサイトを指定することもできます。この構成は最大 100 サイトから除外されます。
     - シミュレーション モードの場合、およびラベルが適用される場合、自動ラベル付けポリシーの結果として、変更、変更者、変更日の既存の値は変更されません。
     - ラベルが暗号化を適用する場合、[Rights Management 発行者と Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) は、ファイルを最後に変更したアカウントです。
 
@@ -87,6 +87,7 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
 |:-----|:-----|:-----|
 |アプリの依存関係|はい ([最小バージョン](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |いいえ \* |
 |場所による制限|いいえ |はい |
+|条件: カスタムの機密情報の種類に関する Exact Data Match|はい |いいえ |
 |条件: トレーニング可能な分類子|はい |いいえ |
 |条件: メールの共有オプションと追加オプション|いいえ |はい |
 |条件: 例外|いいえ |はい (メールのみ) |
@@ -144,6 +145,12 @@ DLP ポリシーを構成する場合と同様に、インスタンス数と一�
 > [!NOTE]
 > カスタムの機密情報の種類に基づく自動ラベル付けは、OneDrive および SharePoint で新しく作成または変更されたコンテンツにのみ適用されます。既存のコンテンツには適用されません。この制限は、自動ラベル付けポリシーにも適用されます。
 
+#### <a name="custom-sensitive-information-types-with-exact-data-match"></a>Exact Data Match によるカスタムの機密情報の種類
+
+秘密度ラベルは、カスタムの機密情報の種類に [Exact Data Match (EDM) ベースの分類](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) を使用するように構成できます。 ただし、現時点では、EDM を使用しない機密情報の種類を少なくとも 1 つ指定する必要があります。 たとえば、**クレジット カード番号** など、組み込みの機密情報の種類のうちの 1 つ。
+
+機密情報の種類の条件に対して EDM のみを使用して秘密度ラベルを構成した場合、ラベルの自動ラベル付け設定は自動的にオフになります。
+
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>ラベルのトレーニング可能な分類子を構成する
 
 このオプションを使用する場合は、自動ラベル付け用に構成された少なくとも 1 つの他の秘密度ラベルと[機密情報の種類のオプション](#configuring-sensitive-info-types-for-a-label)をテナントに公開していることを確認してください。
@@ -178,7 +185,7 @@ Office アプリでの自動ラベル付けと推奨ラベル付けの実装は�
 
 - Word のデスクトップ バージョンにおける推奨ラベルでは、推奨をトリガーした機密コンテンツにフラグが付けられるので、ユーザーが確認して、推奨されている秘密度ラベルを適用しないで機密コンテンツを削除できます。
 
-- こうしたラベルが Office アプリで適用される方法、スクリーンショット例、機密情報の検出方法について詳しくは、「[Office のファイルとメールに秘密度ラベルを自動的に適用、または推奨する](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)」を参照してください。
+- こうしたラベルが Office アプリで適用される方法、スクリーンショット例、機密情報の検出方法について詳しくは、「[Office のファイルとメールに秘密度ラベルを自動的に適用、または推奨する](https://support.office.com/ja-JP/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)」を参照してください。
 
 Azure Information Protection 統合ラベル付けクライアントに関してのみ以下の点が当てはまります。
 
@@ -189,6 +196,9 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 - ドキュメントやメール内の本文、およびヘッダーとフッターに含まれる機密情報が検出されますが、件名やメールの添付ファイルのものは検知されません。
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>SharePoint、OneDrive、Exchange の自動ラベル付けポリシーを構成する方法
+
+> [!IMPORTANT]
+> 現在、より高速なシミュレーション結果、より多くのファイルやサイトのサポート、メール通知を含む自動ラベル付けポリシーの新しい機能強化を展開しているところです。 詳細については、「[自動ラベル付けポリシーの最近の機能強化](#recent-enhancements-for-auto-labeling-policies)」を参照してください。
 
 自動ラベル付けポリシーを構成する前に、前提条件を必ずご確認ください。
 
@@ -222,6 +232,8 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 1. 自動ラベル付けポリシーを作成して構成する。
 
 2. ポリシーをシミュレーション モードで実行します。完了までに 48 時間かかる場合があります。
+    
+    [最近の機能強化がロールアウト](#recent-enhancements-for-auto-labeling-policies)が現在展開されていますが、これにより、この時間は 12 時間に短縮され、シミュレーションが完了すると、[アクティビティ アラート](alert-policies.md)を受信するように構成されたユーザー宛てにメール通知が送られます。
 
 3. 結果を確認し、必要に応じてポリシーを調整します。 シミュレーション モードを再実行し、シミュレーションが再度完了するまで待機します。
 
@@ -261,12 +273,12 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 6. [**ラベルを適用する場所を選択する**] ページの場合: Exchange、SharePoint サイト、OneDrive の場所を選択して指定します。 [**次へ**] を選択します。
 
     ![[場所の選択] ページの自動ラベル付けウィザード](../media/locations-auto-labeling-wizard.png)
+    
+    個々の OneDrive アカウントを指定するには: ユーザーの OneDrive アカウントの URL は次の形式になります: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
-    個々の SharePoint サイトと OneDrive アカウントを指定する必要があります。 OneDrive の場合、ユーザーの OneDrive アカウントの URL は次の形式になります。`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    たとえば、 "rsimone" のユーザー名を持つ contoso テナント内のユーザーの場合: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
-    たとえば、「rsimone」のユーザー名を持つ contoso テナント内のユーザーの場合: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-    テナントの構文を確認し、ユーザーの URL を特定するには、「[組織内のすべてのユーザーの OneDrive URL のリストを取得する](/onedrive/list-onedrive-urls)」を参照してください。
+    テナントの構文を確認し、ユーザーの OneDrive URL を特定するには、「[組織内のすべてのユーザーの OneDrive URL のリストを取得する](/onedrive/list-onedrive-urls)」を参照してください。
 
 7. [**一般または詳細ルールの設定**] ページの場合: 既定の [**一般的なルール**] のままにして、選択したすべての場所でラベル付けするコンテンツを識別するルールを定義します。 場所ごとに異なるルールが必要な場合は、[**詳細ルール**] を選択します。 [**次へ**] を選択します。
 
@@ -367,6 +379,43 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 - [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
+
+## <a name="recent-enhancements-for-auto-labeling-policies"></a>自動ラベル付けポリシーの最近の機能強化
+
+現在展開中の OneDrive と SharePoint の自動ラベル付けポリシーの最近の機能強化では、以前のバージョンと比較して、次の機能強化が含まれています:
+
+- テナントあたり最大 100 個の自動ラベル付けポリシー。(以前は最大 10 個)
+
+- すべての OneDrive サイトと SharePoint サイト (新しいポリシーの既定値) のサポートと、これまでのように URL で各サイトを入力することなしに使用可能な SharePoint サイトを選択する機能。 新しい既定値である **All** を使用すると、テナント内のすべての既存の SharePoint サイトと OneDrive アカウント、および新しく作成されたすべてのサイトとアカウントがポリシーに自動的に含められます。 SharePoint の **サイトの選択** を選択しても、必要に応じて URL でサイトを手動で入力できます。
+
+- 自動ラベル付けポリシーで個々のサイトを指定すると、従来のように 10 サイトではなく最大 100 サイトがサポートされるようになりました。
+
+- 自動ラベル付けポリシーあたり最大 1,000,000 個の一致ファイルが使えますが、1 日あたりテナント内で自動的にラベル付けされるファイルは今までどおり合計 25,000 個です。
+
+- シミュレーションの改善
+    - シミュレーション モードで自動ラベル付けポリシーを実行すると、最大 48 時間以内ではなく 12 時間以内に完了します。
+    - 一致するすべてのアイテムではなく、各サイト (OneDrive または SharePoint) のレビュー用に最大 100 個のランダムにサンプリングされた一致ファイルを提供することで、パフォーマンスが向上します。
+    - シミュレーションが完了すると、 [アクティビティ アラート](alert-policies.md)を受信するように構成されたユーザーにメール通知が送信されます。
+
+- 一致したアイテムを確認するのに役立つ機能強化:
+    - サンプリングされた一致項目の追加メタデータ情報。
+    - SharePoint サイト名やファイル所有者など、一致するアイテムに関する情報をエクスポートする機能。 この情報を使用して、一致したファイルをピボットして分析し、必要に応じてファイル所有者に委任して確認してもらうことができます。
+
+> [!TIP]
+> サポートされるポリシーとサイトの数を増やすには、PowerShell を使用して新しいポリシーを効率的に作成し、既存のポリシーにサイトを追加します。 詳細については、このページの「[PowerShell を使用した自動ラベル付けポリシー](#use-powershell-for-auto-labeling-policies)」のセクションを参照してください。
+
+### <a name="how-to-determine-whether-your-tenant-has-the-new-enhancements"></a>テナントに新しい拡張機能があるかどうかを確認する方法
+
+テナントに新しい拡張機能が追加されると、**[自動ラベル付け]** タブに次の通知が表示されるようになります:
+
+![テナントに新しい拡張機能があることを確認するバナー](../media/auto-labeling-updatedbanner.png)
+
+この通知が表示されない場合は、テナントに新しい拡張機能が追加されていませんが、数日後にもう一度確認してみてください。
+
+> [!NOTE]
+> テナントが新しい拡張機能を受け取ったときに、シミュレーション モードだった自動ラベル付けポリシーがある場合は、シミュレーションを再実行する必要があります。 このシナリオが当てはまる場合は、シミュレーションを確認するときに、**シミュレーションの再起動** を選択するように求められます。 シミュレーションを再起動しない場合、シミュレーションは完了しません。
+> 
+> ただし、機能強化は、シミュレーションなしで実行されているすべての自動ラベル付けポリシーと、作成するすべての新しい自動ラベル付けポリシーに引き続き適用されます。
 
 ## <a name="tips-to-increase-labeling-reach"></a>ラベル付けの範囲を拡大するためのヒント
 

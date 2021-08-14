@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0828d19f875767ec2285057824c931e3a67477641cdc923bac0a2513e4325ac8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7eb71d0547c0ee242e02697e949bd39c3bdb2f3012adeaf159ca90f953268aa
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800332"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523635"
 ---
 # <a name="get-package-sas-uri-api"></a>パッケージ SAS URI API の取得
 
@@ -38,7 +38,9 @@ ms.locfileid: "53800332"
 ## <a name="api-description"></a>API の説明
 調査パッケージのダウンロードを許可する [URI を取得します](collect-investigation-package.md)。
 
-
+> [!IMPORTANT]
+>
+> - これらのアクションは、バージョン 1703 以降Windows 10デバイスでのみ使用できます。
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Access the Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)

@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 08/04/2021
-ms.openlocfilehash: d90ae4b8281015c675535f483b23e5c027e6918abc57627e8da3440db9b03064
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.date: 08/05/2021
+ms.openlocfilehash: 80dba315e8293e6a88e8cca7db3bbe12a30226ffb4b6daa4b9cad2343ac9e4a7
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800092"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523647"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する
 
@@ -82,18 +82,19 @@ Microsoft Defender ウイルス対策プラットフォーム更新 [プログ�
 - 統合の改善 (クラウド[、Microsoft 365 Defender)。](/microsoft-365/security/defender/microsoft-365-defender)
 <br/>
 <details>
-<summary> 2021 年 7 月 (プラットフォーム: 4.18.2107.4 |エンジン: 1.1.18400.x)</summary>
+<summary> 2021 年 7 月 (プラットフォーム: 4.18.2107.4 |エンジン: 1.1.18400.4)</summary>
 
-&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **x.xxx.xx.x**  
-&ensp;リリース日: **2021 年**  
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.345.13.0**  
+&ensp;リリース日: **2021** 年 8 月 5 日  
 &ensp;プラットフォーム: **4.18.2107.4**  
-&ensp;エンジン: **1.1.18400.x**  
+&ensp;エンジン: **1.1.18400.4**  
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**
     
 ### <a name="whats-new"></a>新機能
 - ポータブル デバイスのデバイス制御Windows追加
 - 望ましくない可能性のあるアプリケーション (PUA) 保護は、コンシューマーに対して既定で有効になっています (「望ましくない可能性のあるアプリは既定でブロックされる」[を参照)](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)
 - グループ ポリシー オブジェクト管理システムのスケジュールされたスキャンは、ユーザーが構成したスキャン時間に従います 
+- 動作監視エンジンの機能強化
 
 ### <a name="known-issues"></a>既知の問題
 既知の問題はありません  
@@ -513,6 +514,20 @@ Windows 10 (Enterprise、Pro、ホーム エディション)、Windows Server 20
 詳細については、「Microsoft Defender update for Windows オペレーティング システムのインストール[イメージ」を参照してください](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
 <details>
+<summary>1.1.2108.01</summary>
+
+&ensp;パッケージのバージョン: **1.1.2108.01**    
+&ensp;プラットフォーム バージョン: **4.18.2107.4**   
+&ensp;エンジンのバージョン: **1.1.18300.4**  
+&ensp;署名バージョン: **1.343.2244.0**    
+    
+### <a name="fixes"></a>修正プログラム
+- なし
+
+### <a name="additional-information"></a>追加情報
+- なし  
+<br/>
+</details><details>
 <summary>1.1.2107.02</summary>
 
 &ensp;パッケージのバージョン: **1.1.2107.02**    

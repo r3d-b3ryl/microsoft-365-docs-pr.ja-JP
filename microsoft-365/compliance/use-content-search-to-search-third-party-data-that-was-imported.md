@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: コンテンツ検索電子情報開示ツールを使用して、クエリを作成して、Microsoft 365データ ソースからメールボックスにインポートされたアイテムを検索します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 24ca63cf78b85f7b8b5181d5babd16058b641128
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 3f493640ecb1e0e0bb03ce315055e2faac37d0a5a05b47711c29d68e13a46a6c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891669"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>コンテンツ検索を使用して、カスタム パートナー コネクタによってインポートされたサードパーティのデータを検索する
 
@@ -80,11 +80,11 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |BlackBerry 通話ログ  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
 |BlackBerry Messenger  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
 |BlackBerry PIN  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
-|BlackBerry 携帯ショートメール  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
+|BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |ブルームバーグ  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
 |Bloomberg メッセージ  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
 |ブルームバーグ メッセージング  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
-|検索ボックス  <br/> | `ipm.externaldata.Box*` <br/> |
+|Box  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco IM &amp; Presence Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud for Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |

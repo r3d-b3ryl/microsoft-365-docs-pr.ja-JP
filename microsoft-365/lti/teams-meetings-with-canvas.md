@@ -13,16 +13,24 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teams会議を統合する
-ms.openlocfilehash: 5ba812ba2f5694dd7860131479f01fceaba9ab2a040d1ba828306aa022665f74
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3c2692aa44b8e711cfd9e4f1cb321dfba7cd80ae1e9186c95b1931705676016
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819287"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834777"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Canvas でMicrosoft Teams会議を使用する
 
 Microsoft Teamsは、ラーニング ツール相互運用性 (LTI) アプリであり、教育者と学生が ラーニング 管理システム (LMS) と Teams の間を簡単に移動するのに役立ちます。 ユーザーは、自分のコースに関連付けられているクラス チームに、自分の LMS 内から直接アクセスできます。
+
+## <a name="prerequisites-before-deployment"></a>展開前の前提条件
+
+> [!NOTE]
+> 現在の会議Teams LTI では、キャンバス ユーザーと制限されたスコープMicrosoft Azure Active Directory (AAD) の同期のみをサポートしています。 
+> - テナントに Microsoft Education ライセンスが必要です。
+> - Canvas と Microsoft の間でユーザーをマッピングするには、1 つの Microsoft テナントのみを使用できます。
+> - グループの重複を回避するには、LTI クラスを使用する前Teams SDS をオフにする必要があります。
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理者
 
@@ -34,17 +42,23 @@ Instructure Canvas 内の Microsoft Teams 統合を管理する前に、Canvas �
 
 3. 管理ナビゲーションで、[リンク]**リンクを** 設定、[統合]**タブを選択** します。
 
-4. Microsoft テナント名とログイン属性を入力します。
+![Canvas Teams同期 更新された png](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
 
-   login 属性は、Canvas ユーザーをユーザーに関連付Azure Active Directoryされます。
+4. Microsoft テナント名、login 属性、ドメイン サフィックス、および AAD 参照属性を入力します。 これらのフィールドは、キャンバス内のユーザーとユーザーの照合に使用Microsoft Azure Active Directory。 
+   * Login Attribute は、照合に使用される Canvas ユーザー属性です。
+   * サフィックス フィールドは省略可能で、Canvas 属性と Microsoft AAD フィールドの間に正確なマッピングが設定されていない場合にドメインを指定できます。 たとえば、Microsoft AAD の UPN が 'name' の場合、Canvas メールが 'name@example.edu' の場合は、接尾辞フィールドに 「example.edu」 と入力してユーザーを一致できます。
+   * Active Directory Lookup Attribute は、Canvas 属性が一致する Microsoft 側のフィールドです。 UPN、プライマリ メール アドレス、または電子メール エイリアスの間で選択します。
 
 5. [完了 **したら設定** 更新] を選択します。
 
 6. Canvas の **Microsoft-Teams-Sync-for-Canvas** Azure アプリへのアクセスを承認するには、[テナント アクセスを **許可する] リンクを選択** します。 Microsoft Identity Platform Admin Consent Endpoint にリダイレクトされます。
 
-   ![permissions](media/permissions.png)
+   ![アクセス許可](media/permissions.png)
 
-7. **[同意する]** を選択します。
+7. **[同意する]** を選択します。 
+
+> [!NOTE]
+> 同期は、LMS パートナーによって管理され、Microsoft グラフ API を使用してコース レベルで Teams チームにメンバーシップを同期するために使用される機能です。 これは主に、教育者がコース レベルで true としてオンに切り替える機能です。 その後、メンバーの追加または削除のために LMS 側で行われたメンバーシップの変更は、LMS パートナーによって実装された同期を使用して反映されます。 このプロセスが教育者に対して有効にされる前でさえ、M365 教育機関管理者は、以下に示す同期アクセス許可モーダルを使用して、教育者が同期にアクセスできます。 これらのアクセス許可は、LMS パートナーに付与され、教育者が LMS コースとクラス チーム間でメンバーシップTeamsできます。
 
 8. トグルをオンにしてMicrosoft Teams同期を有効にします。
 
@@ -75,6 +89,8 @@ Canvas Admin として、環境内に会議 LTI Microsoft Teamsを追加する�
 5. **[インストール]** を選択します。
 
    会議Microsoft Teams LTI アプリが外部アプリの一覧に追加されます。
+
+6. Canvas 管理者アカウントの開発者キーに移動し、継承を選択し、会議のトグルを "オン" にすることで、アプリMicrosoft Teamsします。
    
 ## <a name="enable-for-canvas-courses"></a>キャンバス コースを有効にする
 

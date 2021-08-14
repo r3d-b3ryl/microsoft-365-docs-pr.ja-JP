@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place保持、訴訟ホールド、Microsoft 365保持ポリシーを使用すると、規制遵守と電子情報開示の要件を満たすためにメールボックス のコンテンツを保持できます。
-ms.openlocfilehash: f00ed951fb68778b9c62ae874c2cca964bd6cb5c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80481a5b7c85167742e79c86c6d60e52f80aa0e4b1dd9b128e7ce188f5ddf09a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927943"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891813"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>電子情報開示のために Bcc および展開された配布グループの受信者を保持する
   
-In-Place保持、訴訟ホールド[、Microsoft 365](./retention.md)保持ポリシー (セキュリティ & コンプライアンス センターで作成) を使用すると、規制遵守と電子情報開示の要件を満たすためにメールボックスのコンテンツを保持できます。 メッセージの [宛先] フィールドと [Cc] フィールドで直接アドレス指定された受信者に関する情報は、既定ですべてのメッセージに含まれます。 ただし、組織では、メッセージのすべての受信者に関する詳細を検索して再現する機能が必要な場合があります。 これには、次の内容が含まれます。
+In-Place保持、訴訟ホールド[、Microsoft 365](./retention.md)保持ポリシー (セキュリティ & コンプライアンス センターで作成) を使用すると、規制遵守と電子情報開示の要件を満たすためにメールボックスのコンテンツを保持できます。 メッセージの [宛先] フィールドと [Cc] フィールドで直接アドレス指定された受信者に関する情報は、既定ですべてのメッセージに含まれます。 ただし、組織では、メッセージのすべての受信者に関する詳細を検索して再現する機能が必要な場合があります。 保持されるデータには以下が含まれます。
   
 - **メッセージの Bcc フィールドを使用してアドレス指定された受信者。** BCC 受信者は送信者のメールボックス内のメッセージに格納されますが、受信者に配信されるメッセージのヘッダーには含まれません。 
     

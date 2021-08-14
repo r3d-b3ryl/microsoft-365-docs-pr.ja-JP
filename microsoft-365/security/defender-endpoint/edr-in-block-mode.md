@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/29/2021
+ms.date: 08/05/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: ee163b8a32bde00fe247dcc4f570ce7768c33a55e1c4c8ffc88ad7fbe08dc080
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3169cbd5aa834e22a5d354066b01b1da04adafe59bf780da99367da21774e359
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833942"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523707"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードでのエンドポイントEDR応答 (EDR)
 
@@ -84,7 +84,7 @@ EDRモードのデータは、脅威の検出[と統合& 脆弱性の管理。](
 
 | 要件  | 詳細  |
 |---------|---------|
-| Permissions | [グローバル管理者] または [セキュリティ管理者] ロールが [管理者] に割り当てられている必要[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 詳細については、「基本アクセス許可 [」を参照してください](basic-permissions.md)。 |
+| アクセス許可 | [グローバル管理者] または [セキュリティ管理者] ロールが [管理者] に割り当てられている必要[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 詳細については、「基本アクセス許可 [」を参照してください](basic-permissions.md)。 |
 | オペレーティング システム     | デバイスは、次のいずれかのバージョンのデバイスを実行している必要Windows。 <br/>- Windows 10 (すべてのリリース) <br/>- Windows Server バージョン 1803 以降 <br/>- Windows Server 2019 <br/>- Windows Server 2016 (Microsoft Defender ウイルス対策モードの場合のみ)     |
 | Microsoft Defender for Endpoint     | デバイスは Defender for Endpoint にオンボードされている必要があります。 「 [エンドポイント用 Microsoft Defender の最小要件」を参照してください](minimum-requirements.md)。       |
 | Microsoft Defender ウイルス対策  | デバイスには、アクティブ Microsoft Defender ウイルス対策パッシブ モードでインストールおよび実行されている必要があります。 [アクティブMicrosoft Defender ウイルス対策パッシブ モードの状態を確認します](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。 |
@@ -129,7 +129,7 @@ Windows 10、Windows Server、バージョン 1803 以降、または Windows Se
 
 アクティブ モードまたはパッシブ Microsoft Defender ウイルス対策実行されているかどうかを確認するには、コマンド プロンプトまたは PowerShell を、アクティブ モードで実行しているデバイスでWindows。
 
-|Method  |Procedure  |
+|メソッド  |Procedure  |
 |---------|---------|
 | PowerShell     | 1. 選択したスタート メニュー入力を開始し、結果 `PowerShell` でWindows PowerShellを開きます。 <p>2. と入力します `Get-MpComputerStatus` 。 <p>3. 結果の一覧の **[AMRunningMode]** 行で、次のいずれかの値を探します。 <br/>- `Normal` <br/>- `Passive Mode` <p>詳細については [、「Get-MpComputerStatus」を参照してください](/powershell/module/defender/get-mpcomputerstatus)。        |
 |コマンド プロンプト     | 1. コマンド を選択スタート メニュー入力を開始し、結果 `Command Prompt` Windowsコマンド プロンプトを開きます。 <p>2. と入力します `sc query windefend` 。 <p>3. 結果の一覧の **STATE** 行で、サービスが実行されているのを確認します。         |
@@ -159,7 +159,7 @@ PowerShell を使用して、パッシブ モードでEDRでブロック モー�
 
 アクティブ Windows Server 2016でMicrosoft Defender ウイルス対策し、エンドポイントが Defender for Endpoint にオンボードされている場合は、ブロック モードの EDRが技術的にサポートされます。 ただし、EDRモードのユーザーは、エンドポイントのプライマリ ウイルス対策ソリューションMicrosoft Defender ウイルス対策保護を強化することを目的とします。 このような場合、Microsoft Defender ウイルス対策モードで実行されます。 
 
-現在、パッシブ モードMicrosoft Defender ウイルス対策の実行は、パッシブ モードではサポートWindows Server 2016。 詳細については、「microsoft Microsoft Defender ウイルス対策/マルウェア対策ソリューション」[を参照してください](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)。
+現在、パッシブ モードMicrosoft Defender ウイルス対策の実行は、パッシブ モードではサポートWindows Server 2016。 詳細については、「Passive [mode and Windows Server」](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)および[「Microsoft Defender ウイルス対策」を参照してください](microsoft-defender-antivirus-compatibility.md)。
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>ブロック モードで無効にEDRにどのくらいの時間が必要ですか?
 

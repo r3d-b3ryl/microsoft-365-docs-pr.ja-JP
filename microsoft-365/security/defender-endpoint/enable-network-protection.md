@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3f3ee0590fcbbbbcdb58680e13d154ddc4b2918e48a0c494f8ebdbdf70757bc7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8058109abb8462849af4fea04e43c934ebfce1ad440053c60f8b8e070171e76e
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794032"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523762"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -44,24 +44,24 @@ ms.locfileid: "53794032"
 
 2. サイド **メニュー HKEY_LOCAL_MACHINE** を選択する
 
-3. 入れ子になったメニューから **Software**  >  **Microsoft Windows Defender Windows Defender**  >    >  **Exploit Guard ネットワーク保護に**  >  **移動します。**
+3. 入れ子になったメニューから **ソフトウェア** ポリシーへの移動 Microsoft  >  **Windows Defender Windows Defender**  >    >    >  **Exploit Guard**  >  **ネットワーク保護**
 
 4. デバイス上のネットワーク保護の現在の状態を表示するには **、[EnableNetworkProtection]** を選択します。
 
-    * 0 または **Off**
-    * 1、または **On**
-    * 2、または **監査** モード
-    
-    ![networkprotection](https://user-images.githubusercontent.com/3296790/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.PNG)
+   - 0 または **Off**
+   - 1、または **On**
+   - 2、または **監査** モード
+
+    ![ネットワーク保護レジストリ キー](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
 
 ## <a name="enable-network-protection"></a>ネットワーク保護を有効にする
 
 次の方法を使用してネットワーク保護を有効にする。
 
-* [PowerShell](#powershell)
-* [モバイル デバイス管理 (MDM)](#mobile-device-management-mdm)
-* [Microsoft エンドポイント マネージャー / Intune](#microsoft-endpoint-manager-formerly-intune)
-* [グループ ポリシー](#group-policy)
+- [PowerShell](#powershell)
+- [モバイル デバイス管理 (MDM)](#mobile-device-management-mdm)
+- [Microsoft エンドポイント マネージャー / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [グループ ポリシー](#group-policy)
 
 ### <a name="powershell"></a>PowerShell
 
@@ -106,13 +106,13 @@ ms.locfileid: "53794032"
 
 3. ツリーを展開して **、Exploit Guard ネットワークWindows保護**  >  **Microsoft Defender ウイルス対策Windows Defender**  >  **コンポーネント**  >  **を展開します**。
 
-> [!NOTE]
-> 以前のバージョンの Windowsでは、グループ ポリシー パスは "Windows Defender ウイルス対策" ではなく "Microsoft Defender ウイルス対策" と表示Microsoft Defender ウイルス対策。
+   > [!NOTE]
+   > 以前のバージョンの Windowsでは、グループ ポリシー パスは "Windows Defender ウイルス対策" ではなく "Microsoft Defender ウイルス対策" と表示Microsoft Defender ウイルス対策。
 
 4. [ユーザーとアプリによる **危険** な Web サイトへのアクセスを防止する] 設定をダブルクリックし、オプションを [有効] に **設定します**。 [オプション] セクションで、次のいずれかのオプションを指定する必要があります。
-    * **ブロック** - ユーザーが悪意のある IP アドレスとドメインにアクセスできない
-    * **無効 (既定)** - ネットワーク保護機能が機能しません。 ユーザーが悪意のあるドメインにアクセスできない
-    * **監査モード**- ユーザーが悪意のある IP アドレスまたはドメインにアクセスした場合、イベントはイベント ログWindowsされます。 ただし、ユーザーはアドレスへのアクセスをブロックされません。
+    - **ブロック** - ユーザーが悪意のある IP アドレスとドメインにアクセスできない
+    - **無効 (既定)** - ネットワーク保護機能が機能しません。 ユーザーが悪意のあるドメインにアクセスできない
+    - **監査モード**- ユーザーが悪意のある IP アドレスまたはドメインにアクセスした場合、イベントはイベント ログWindowsされます。 ただし、ユーザーはアドレスへのアクセスをブロックされません。
 
 > [!IMPORTANT]
 > ネットワーク保護を完全に有効にするには、[グループ ポリシー] オプションを[有効]に設定し、[オプション] ドロップダウン メニューの [ブロック] を選択する必要があります。
@@ -124,12 +124,12 @@ ms.locfileid: "53794032"
 2. [ファイル] に **移動HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. **[EnableNetworkProtection] を選択し**、値を確認します。
-   * 0=Off
-   * 1=On
-   * 2=Audit
+   - 0=Off
+   - 1=On
+   - 2=Audit
 
 ## <a name="see-also"></a>関連項目
 
-* [ネットワーク保護](network-protection.md)
-* [ネットワーク保護を評価する](evaluate-network-protection.md)
-* [ネットワーク保護のトラブルシューティング](troubleshoot-np.md)
+- [ネットワーク保護](network-protection.md)
+- [ネットワーク保護を評価する](evaluate-network-protection.md)
+- [ネットワーク保護のトラブルシューティング](troubleshoot-np.md)

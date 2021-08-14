@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7fff23a0dca7e365a9580ff5a72a61d97a7671fe
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 0ec48f75765dfafac81fa82f578b956180378fab1aa380c4f9750ec997105e2d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653180"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811190"
 ---
 # <a name="resources"></a>リソース
 

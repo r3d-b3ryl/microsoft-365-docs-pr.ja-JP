@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7395e7fb22c8ad090ab35868d385fa240700505c
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 9ee25f7f9e227cbaf5691489bcdea9c421762b40e9984d7ddaf641028fcf9e66
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726421"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834801"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -62,7 +62,7 @@ Web コンテンツ フィルターは主要な Web ブラウザーで利用で�
 
 ## <a name="user-experience"></a>ユーザー エクスペリエンス
 
-サード パーティでサポートされているブラウザーのブロック エクスペリエンスは、ネットワーク保護によって提供されます。これは、ブロックされた接続をユーザーに通知するシステム レベルのトーストを提供します。 ユーザーフレンドリーでブラウザー内でのエクスペリエンスを向上するには、ユーザーエクスペリエンスの使用Microsoft Edge。
+サード パーティでサポートされているブラウザーのブロック エクスペリエンスは、ネットワーク保護によって提供されます。これは、ブロックされた接続をユーザーに通知するシステム レベルのメッセージを提供します。 ユーザーフレンドリーでブラウザー内でのエクスペリエンスを向上するには、ユーザーエクスペリエンスの使用Microsoft Edge。
 
 ## <a name="data-handling"></a>データの処理
 
@@ -117,7 +117,7 @@ Web コンテンツ フィルターでブロックされたカテゴリを上書
 
 ### <a name="url-category-lookup"></a>URL カテゴリの参照
 
-Web サイトのカテゴリを確認するには、ポータル ( ) で使用できる URL 検索Microsoft 365 Defender使用できます https://security.microsoft.com) 。 URL 検索結果では、[URL/ドメインの詳細] の下に Web コンテンツ フィルター **カテゴリが表示されます**。 管理者は、下の図に示すように、このページから直接ドメインのカテゴリに異議を申し立てすることもできます。 カテゴリの結果が表示されない場合、URL は現在、既存の Web コンテンツ フィルター カテゴリに割り当てられていない。
+Web サイトのカテゴリを確認するには、ポータル ([エンドポイント検索] の下にある ) でMicrosoft 365 Defender URL 検索 https://security.microsoft.com) **機能を使用**  >  **できます**。 URL 検索結果では、[URL/ドメインの詳細] の下に Web コンテンツ フィルター **カテゴリが表示されます**。 管理者は、次の図に示すように、このページからドメインのカテゴリに直接異議を申し立てすることもできます。 カテゴリの結果が表示されない場合、URL は現在、既存の Web コンテンツ フィルター カテゴリに割り当てられていない。
 
 ![Web コンテンツ フィルター カテゴリの参照結果の画像](../../media/web-content-filtering-category-lookup.png)
 
@@ -176,4 +176,3 @@ Web サイトのカテゴリを確認するには、ポータル ( ) で使用�
 - [Web セキュリティの監視](web-protection-monitoring.md)
 - [Web の脅威への対応](web-protection-response.md)
 - [ネットワーク保護の要件](web-content-filtering.md)
-

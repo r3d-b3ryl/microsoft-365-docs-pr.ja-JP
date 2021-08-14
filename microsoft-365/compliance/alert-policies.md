@@ -18,14 +18,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 潜在的な脅威、データ損失、およびアクセス許可の問題Microsoft 365 コンプライアンス センター監視するために、Microsoft 365 コンプライアンス センターまたは Microsoft 365 Defender ポータルにアラート ポリシーを作成します。
-ms.openlocfilehash: a6a1f9dfeec6e59f51a4ad0dba364610341e6e5b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 36f3b44db75d02e21f409095de316841e7b8098d860983ff077b82cffe09030b
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541840"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523671"
 ---
-# <a name="alert-policies-in-the-microsoft-365"></a>[アラート ポリシー] Microsoft 365
+# <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
 
 Microsoft 365 コンプライアンス センター または Microsoft 365 Defender ポータルのアラート ポリシーとアラート ダッシュボード ツールを使用して、アラート ポリシーを作成し、ユーザーがアラート ポリシーの条件に一致するアクティビティを実行するときに生成されるアラートを表示できます。 Exchange Online での管理者特権の割り当て、マルウェア攻撃、フィッシング キャンペーン、ファイルの削除や外部共有の異常なレベルなど、アクティビティを監視するのに役立つ既定のアラート ポリシーがいくつかあります。
 
@@ -133,8 +133,10 @@ Microsoft は、管理者のアクセス許可の悪用、マルウェアのExch
 |**転送/リダイレクト ルールの作成**|組織内のユーザーが、別の電子メール アカウントにメッセージを転送またはリダイレクトするメールボックスの受信トレイ ルールを作成すると、アラートを生成します。 このポリシーは、PowerShell または PowerShell Outlook on the web (以前は Outlook Web App) をExchange Onlineします。 このポリシーには、[ **情報の重大度]** 設定があります。 受信トレイ ルールを使用してメールを Outlook on the web で転送およびリダイレクトする方法の詳細については、「Outlook on the web でルールを使用してメッセージを別のアカウントに自動的に転送する」を[参照してください](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。|脅威の管理|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**eDiscovery 検索が開始またはエクスポートされました**|セキュリティとコンプライアンス センターでコンテンツ検索ツールを使用すると、アラートが生成されます。 次のコンテンツ検索アクティビティが実行されると、アラートがトリガーされます。 <br/><br/>* コンテンツ検索が開始される<br/>* コンテンツ検索の結果がエクスポートされる<br/>* コンテンツ検索レポートがエクスポートされる<br/><br/>以前のコンテンツ検索アクティビティが電子情報開示ケースに関連付けで実行されると、アラートもトリガーされます。 このポリシーには、[ **情報の重大度]** 設定があります。 コンテンツ検索アクティビティの詳細については、「監査ログで電子情報開示アクティビティを検索 [する」を参照してください](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)。|脅威の管理|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**管理者特権Exchange昇格**|ユーザーが組織の管理者アクセス許可を割り当てられたときにアラートExchange Onlineします。 たとえば、ユーザーが組織の管理役割グループに追加された場合、Exchange Online。 このポリシーの重大度 **が低** い設定です。|アクセス許可|E1/F1/G1、E3/F3/G3、または E5/G5|
-|**マルウェアを含んだメール メッセージが配信後に削除されました**|マルウェアを含むメッセージが組織内のメールボックスに配信される場合にアラートを生成します。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して、Exchange Onlineメールボックスから感染したメッセージ[を削除します](../security/office-365-security/zero-hour-auto-purge.md)。 このポリシーには[**情報の重大度]** 設定が設定され、自動調査と自動応答が自動的にトリガー [Office 365。](../security/office-365-security/office-365-air.md)|脅威の管理|E5/G5 または Microsoft Defender for Office 365 P2 アドオン サブスクリプション|
-|**フィッシング URL を含んだメール メッセージが配信後に削除されました**|フィッシングを含むメッセージが組織内のメールボックスに配信される場合にアラートを生成します。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して、Exchange Onlineメールボックスから感染したメッセージ[を削除します](../security/office-365-security/zero-hour-auto-purge.md)。 このポリシーには[**情報の重大度]** 設定が設定され、自動調査と自動応答が自動的にトリガー [Office 365。](../security/office-365-security/office-365-air.md)|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
+|**配信後に削除された悪意のあるファイルを含むメール メッセージ**|悪意のあるファイルを含むメッセージが組織内のメールボックスに配信される場合にアラートを生成します。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して、Exchange Onlineメールボックスから感染したメッセージ[を削除します](../security/office-365-security/zero-hour-auto-purge.md)。 このポリシーには[**情報の重大度]** 設定が設定され、自動調査と自動応答が自動的にトリガー [Office 365。](../security/office-365-security/office-365-air.md) この新しいポリシーの詳細については[、「Microsoft Defender for microsoft Defender の](new-defender-alert-policies.md)新しいアラート ポリシー」を参照Office 365。|脅威の管理|E5/G5 または Microsoft Defender for Office 365 P2 アドオン サブスクリプション|
+|**配信後に削除された悪意のある URL を含む電子メール メッセージ**|悪意のある URL を含むメッセージが組織内のメールボックスに配信される場合にアラートを生成します。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して、Exchange Onlineメールボックスから感染したメッセージ[を削除します](../security/office-365-security/zero-hour-auto-purge.md)。 このポリシーには[**情報の重大度]** 設定が設定され、自動調査と自動応答が自動的にトリガー [Office 365。](../security/office-365-security/office-365-air.md) この新しいポリシーの詳細については[、「Microsoft Defender for microsoft Defender の](new-defender-alert-policies.md)新しいアラート ポリシー」を参照Office 365。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
+|**キャンペーンからのメール メッセージが配信され、後で削除されました**|キャンペーンに関連付けられているメッセージが組織内のメールボックス[](../security/office-365-security/campaigns.md)に配信される場合にアラートを生成します。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して、Exchange Onlineメールボックスから感染したメッセージ[を削除します](../security/office-365-security/zero-hour-auto-purge.md)。 このポリシーには[**情報の重大度]** 設定が設定され、自動調査と自動応答が自動的にトリガー [Office 365。](../security/office-365-security/office-365-air.md) この新しいポリシーの詳細については[、「Microsoft Defender for microsoft Defender の](new-defender-alert-policies.md)新しいアラート ポリシー」を参照Office 365。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
+|**メール メッセージが配信後に削除されました**|悪意のあるエンティティ (URL またはファイル) が含まれているか、キャンペーンに関連付けられている悪意のあるメッセージが組織内のメールボックスに配信される場合にアラートを生成します。 このイベントが発生した場合、Microsoft はゼロ時間自動削除を使用して、Exchange Onlineメールボックスから感染したメッセージ[を削除します](../security/office-365-security/zero-hour-auto-purge.md)。 このポリシーには[**情報の重大度]** 設定が設定され、自動調査と自動応答が自動的にトリガー [Office 365。](../security/office-365-security/office-365-air.md) この新しいポリシーの詳細については[、「Microsoft Defender for microsoft Defender の](new-defender-alert-policies.md)新しいアラート ポリシー」を参照Office 365。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオン サブスクリプション|
 |**ユーザーによってマルウェアまたはフィッシングとして報告されたメール**|組織のユーザーがレポート メッセージ アドインを使用してフィッシング メールとしてメッセージを報告すると、アラートを生成します。 このポリシーの重大度 **が低** い設定です。 このアドインの詳細については、「レポート メッセージ アドイン [を使用する」を参照してください](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 Defender for Office 365 P2、E5、G5 のお客様に対して、このアラートは自動的に自動調査と応答をトリガー [Office 365。](../security/office-365-security/office-365-air.md)|脅威の管理|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**電子メール送信の制限を超えました**|組織内のユーザーが送信スパム ポリシーで許可されているメールよりも多くのメールを送信した場合に、アラートを生成します。 これは通常、ユーザーがメールを送信しすぎるか、アカウントが侵害される可能性を示します。 このポリシーには、中 **程度の重大度設定** があります。 このアラート ポリシーによって生成されたアラートを受け取った場合は、ユーザー アカウントが侵害されているかどうかを確認 [してください](../security/office-365-security/responding-to-a-compromised-email-account.md)。|脅威の管理|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**フィッシング詐欺の可能性が原因でフォームがブロックされる**|組織のユーザーが、繰り返しフィッシングの試み動作が検出された場合に、Microsoft Forms を使用してフォームの共有や応答の収集が制限されている場合にアラートを生成します。 このポリシーには、 **重大度の高い設定** があります。|脅威の管理|E1、E3/F3、または E5|
