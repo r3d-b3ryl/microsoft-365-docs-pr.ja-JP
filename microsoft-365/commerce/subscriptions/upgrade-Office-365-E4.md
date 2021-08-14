@@ -20,12 +20,12 @@ search.appverid: MET150
 description: E4 サブスクリプションからアップグレードするOffice 365します。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ee90038bb80120ed727cd2dee0c43a894053440f
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 3131f163bcf846c623213a3e2d7c88e6d21cd1479f64185d2b70be81de102c23
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344628"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892629"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>E4 サブスクリプションOffice 365アップグレードする
 
@@ -36,7 +36,7 @@ ms.locfileid: "52344628"
 
 ## <a name="what-are-my-options-for-how-to-upgrade"></a>アップグレード方法に関するオプションは何ですか?
 
-プランをアップグレードする最も簡単な方法は、管理センターの [アップグレード] Microsoft 365使用します。 ただし、[アップグレード] **タブの** 使用は、すべての状況でサポートされるわけではありません。 シナリオがサポートされていない場合は、プランを手動でアップグレードできる場合があります。
+プランをアップグレードする最も簡単な方法は、プランの [アップグレード] タブを使用Microsoft 365 管理センター。 ただし、[アップグレード] **タブの** 使用は、すべての状況でサポートされるわけではありません。 シナリオがサポートされていない場合は、プランを手動でアップグレードできる場合があります。
 
 ## <a name="what-is-the-upgrade-tab"></a>[アップグレード] タブとは
 
@@ -66,15 +66,15 @@ ms.locfileid: "52344628"
 
 ## <a name="will-a-credit-check-be-required"></a>クレジット チェックが必要ですか?
 
-新しいプランの支払いを請求書で行う場合、または購入金額が一定の金額を超えた場合、クレジット カードの与信審査が必要になることがあります。 クレジット チェックが必要な場合、アップグレードには最大 2 営業日かかる場合があります。 管理者は、クレジット チェックが完了するまでMicrosoft 365管理センターにアクセスできます。 ただし、アップグレードが完了するまで、ユーザーは引き続き E4 プランにフル アクセスできます。
+新しいプランの支払いを請求書で行う場合、または購入金額が一定の金額を超えた場合、クレジット カードの与信審査が必要になることがあります。 クレジット チェックが必要な場合、アップグレードには最大 2 営業日かかる場合があります。 管理者は、クレジット チェックが完了するまでMicrosoft 365 管理センターにアクセスできます。 ただし、アップグレードが完了するまで、ユーザーは引き続き E4 プランにフル アクセスできます。
 
 ## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>[アップグレード] タブを使用してプランをアップグレードする
 
-### <a name="before-you-begin"></a>始める前に
+### <a name="before-you-begin"></a>はじめに
 
 ここでは、操作を始める前に知っておく必要がある重要な点について説明します。
 
-- **管理のダウンタイムを計画します。** 管理者は、プランのアップグレード中Microsoft 365管理センターを使用することはできません。 ユーザーの数に応じて、アップグレードには数分から数時間かかる場合があります。 管理者センターを使用して更新を行う必要がない場合は、アップグレードをMicrosoft 365勧めします。
+- **管理のダウンタイムを計画します。** 管理者は、プランのアップグレード中Microsoft 365 管理センターを使用することはできません。 ユーザーの数に応じて、アップグレードには数分から数時間かかる場合があります。 更新プログラムを使用して更新を行う必要がない場合は、アップグレードを行うMicrosoft 365 管理センター。
 
     ユーザーは、プランのアップグレード中にサービスの中断が発生しない - アップグレード プロセス中に E4 サブスクリプションにフル アクセスし続ける。 アップグレードが完了すると、ユーザーは新しいプランにアクセスできます。
 - **ユーザー、ライセンス、課金、およびカスタム ドメイン。** アップグレード中にユーザーとライセンスがどのように処理されるのか、プランのアップグレードが請求にどのように影響するのか、カスタム ドメインを処理する方法を理解するには、「プランをアップグレードするとサービスと課金に対して何が行われるか」を参照 [してください。](upgrade-to-different-plan.md#what-does-upgrading-a-plan-do-to-my-service-and-billing)
@@ -127,7 +127,7 @@ ms.locfileid: "52344628"
 
 ### <a name="step-3-reassign-licenses-to-users"></a>手順 3: ユーザーにライセンスを再割り当てする
 
-管理センターの Microsoft 365を使用して、一度に最大 20 人のユーザーのライセンスを再割り当てできます。 方法については、「ユーザーを別の [サブスクリプションに移動する」を参照してください](move-users-different-subscription.md)。
+一度に最大 20 Microsoft 365 管理センターライセンスを再割り当てする場合は、このツールを使用できます。 方法については、「ユーザーを別の [サブスクリプションに移動する」を参照してください](move-users-different-subscription.md)。
 
 > [!TIP]
 > ユーザーが多い場合は、PowerShell を使用してOffice 365[ライセンスを一括で割り当てできます](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
@@ -139,5 +139,5 @@ ms.locfileid: "52344628"
 ## <a name="related-content"></a>関連コンテンツ
 
 [別のプランにアップグレード](upgrade-to-different-plan.md) する (記事)\
-[サブスクリプション ライセンスの購入または削除](../licenses/buy-licenses.md) (記事)\
+[サブスクリプション ライセンスを購入または削除する](../licenses/buy-licenses.md) (記事)\
 [ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md) (記事)

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Facebook Business ページをインポートおよびアーカイブするネイティブ コネクタを設定して、そのページMicrosoft 365。 このデータを Microsoft 365 にインポートした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Facebook データのガバナンスを管理できます。
-ms.openlocfilehash: b771c50eb5c2eb5f99269f1f399d27043ebee6bb
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 773893884aebba3d55e063e7e4f8fa331553eb215a2e20f6b8833b00811d7c12
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619953"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892805"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>コネクタを展開して Facebook Business ページのデータをアーカイブする
 
@@ -180,13 +180,13 @@ ms.locfileid: "49619953"
 
    - **Facebook Webhooks はトークンを確認します。** 手順 3 で作成した検証トークン。
 
-   - **AAD アプリケーション ID:** 手順 1 で作成した Azure Active Directory アプリのアプリケーション ID。
+   - **AAD アプリケーション ID:** 手順 1 で作成Azure Active Directoryアプリのアプリケーション ID。
 
    - **AAD アプリケーション シークレット:** 手順 1 で作成した APISecretKey シークレットの値。
 
 5. [保存 **] を** クリックしてコネクタ設定を保存します。
 
-## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>手順 5: Microsoft 365 コンプライアンス センターで Facebook コネクタをセットアップする
+## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>手順 5: アプリケーションで Facebook コネクタをセットアップMicrosoft 365 コンプライアンス センター
 
 1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、左側の **ナビゲーションで [** データ コネクタ] をクリックします。
 
@@ -210,7 +210,7 @@ ms.locfileid: "49619953"
 
 6. 接続が正常に検証された後、[次へ] を **クリックします**。
 
-7. [ **データのインポートを Microsoft 365** に承認する] ページで、APISecretKey を再度入力または貼り付け、[Web アプリのログイン] **をクリックします**。
+7. [データの **インポートMicrosoft 365承認する**] ページで、APISecretKey を再度入力または貼り付け、[Web アプリのログイン]**をクリックします**。
 
 8. [Facebook **コネクタ アプリの構成** ] ページで **、[Facebook** でログイン] をクリックし、組織の Facebook Business ページのアカウントの資格情報を使用してログインします。 ログインした Facebook アカウントに、組織の Facebook Business ページの管理者ロールが割り当てられているか確認します。
 
@@ -224,7 +224,7 @@ ms.locfileid: "49619953"
 
 11. [フィルター **の設定] ページ** で、フィルターを適用して、特定の年齢のアイテムを最初にインポートできます。 年齢を選択し、[次へ] を **クリックします**。
 
-12. [保存 **場所の選択** ] ページで、Facebook アイテムをインポートする Microsoft 365 メールボックスの電子メール アドレスを入力し、[次へ] を **クリックします**。
+12. [保存 **場所の選択**] ページで、Facebook アイテムのインポート先Microsoft 365メールボックスの電子メール アドレスを入力し、[次へ] を **クリックします**。
 
 13. [ **次へ]** をクリックしてコネクタの設定を確認し、[完了] を **クリックして** コネクタのセットアップを完了します。
 

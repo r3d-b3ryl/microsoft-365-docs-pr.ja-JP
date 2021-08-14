@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
 description: Bookings モバイル アプリはまだ世界中で利用できません。 この記事では、アプリが現在利用可能な地域の一覧を示します。
-ms.openlocfilehash: 910b80b372d0ef2e27d38dd4f01bd7b639d8c3aa
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 551ce6efb3c310d7864b24d29190d662445e6b226babf3870a56a1643c3d067b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815092"
 ---
 # <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>iOS と Android 用の Microsoft Bookings アプリを取得する
 
