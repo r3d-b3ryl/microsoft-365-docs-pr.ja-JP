@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 生産性スコアでプライバシーを保護する方法。
-ms.openlocfilehash: 5b5997532ddcd1fdf43b4124f8e2d8183bb3d89e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 928dfc8677cc452fb3c6309d6a42e4390a238d52b7dffa0217a4b4507c8d72a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579172"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822912"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>生産性スコアのプライバシーコントロール
 
@@ -53,7 +53,7 @@ ms.locfileid: "51579172"
 
 変更管理と導入を担当しているが、必ずしも IT 管理者ではないすべてのユーザーに、レポート リーダーまたは利用状況概要レポート リーダーの役割を割り当てる。 この役割を使用すると、管理者センターで生産性スコアMicrosoft 365できます。
 
-利用状況の概要レポート 閲覧者の役割は、2020 年後半に管理者センターから割り当て可能になるまで、Power Microsoft 365 Shell コマンドレットを使用して割り当てる必要があります。
+利用状況の概要レポート 閲覧者の役割は、2020 年後半に PowerShell コマンドレットから割り当て可能になるまで、Microsoft 365 管理センター割り当てる必要があります。
 
 PowerShell を使用して利用状況の概要レポート 閲覧者の役割を割り当てるには、次のコマンドを実行します。
 

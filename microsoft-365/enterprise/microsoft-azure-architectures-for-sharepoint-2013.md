@@ -15,17 +15,17 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: Microsoft Azure 仮想マシンでホストできる SharePoint 2013 ソリューションの種類と、ホストする Azure をセットアップする方法について説明します。
-ms.openlocfilehash: eed74e2dcbe383f0f63e7f6ea2fc70fe7b51b1b3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 2013 SharePoint 2013 ソリューションの種類を、Microsoft Azure仮想マシンでホストできる方法、および Azure をホストするように設定する方法について説明します。
+ms.openlocfilehash: d7405909e25078086147e2bab7504375b6527ff07c14a1750c9b5971592a4858
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924178"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858790"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 用の Microsoft Azure アーキテクチャ
 
-Azure は SharePoint Server 2013 ソリューションをホストするための優れた環境です。 ほとんどの場合、Microsoft 365 をお勧めしますが、Azure でホストされている SharePoint Server ファームは、特定のソリューションにとって良い選択肢になります。 この記事では、SharePoint ソリューションが Azure プラットフォームに適合するように設計する方法について説明します。 次の 2 つのソリューションが例として使用されています。
+Azure は SharePoint Server 2013 ソリューションをホストするための優れた環境です。 ほとんどの場合、Azure でホストMicrosoft 365サーバー ファームSharePoint特定のソリューションに使用することをお勧めします。 この記事では、SharePoint ソリューションが Azure プラットフォームに適合するように設計する方法について説明します。 次の 2 つのソリューションが例として使用されています。
   
 - [Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -39,14 +39,14 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
 |:-----|:-----|
 |開発環境とテスト環境  <br/> |これらの環境を簡単に作成して管理できます。  <br/> |
 |Azure に対するオンプレミス SharePoint ファームの障害復旧  <br/> |**ホストされているセカンダリ データセンター** 別の地域にあるセカンダリ データセンターに投資するのではなく、Azure を使用します。 <br/> **低コストの障害復旧環境** オンプレミスの障害復旧環境よりも維持するリソースが少なく、費用も低く抑えられます。リソースの数は、コールド スタンバイ、ウォーム スタンバイ、ホット スタンバイのどの障害復旧環境を選択するかに応じて異なります。<br/> **より柔軟なプラットフォーム** 障害時には、負荷要件を満たすためにご使用の復旧 SharePoint ファームを簡単にスケールアウトできます。それらのリソースが不要になった場合にはスケールインします。<br/> 「[Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)」をご覧ください。  <br/> |
-|Microsoft 365 では利用できない機能とスケールを使用するインターネット向けサイト  <br/> |**作業の重点** インフラストラクチャの構築ではなく、魅力的なサイトの構築のほうに集中できます。 <br/> **Azure でのサイズの柔軟性を活用** 必要に応じて新しいサーバーを追加してファームのサイズを変更し、必要なリソースに対してのみ支払いを行います。動的なマシンの割り当てはサポートされていません (自動スケール)。<br/> **Azure Active Directory (AD) の使用** ユーザー アカウントに関して Azure AD を活用します。 <br/> **Microsoft 365 で使用できない SharePoint 機能の追加** 詳細なレポートと Web 分析を追加します。 <br/> 「[SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)」をご覧ください。  <br/> |
-|Microsoft 365 またはオンプレミス環境をサポートするアプリ ファーム  <br/> |**アプリのビルド、テスト、ホスト** Azure で、オンプレミス環境とクラウド環境の両方をサポートできます。 <br/> **このロールのホスト** オンプレミス環境用の新しいハードウェアを購入する代わりに、Azure で行います。 <br/> |
+|機能を使用し、スケールを使用するインターネット向けサイトは、Microsoft 365  <br/> |**作業の重点** インフラストラクチャの構築ではなく、魅力的なサイトの構築のほうに集中できます。 <br/> **Azure でのサイズの柔軟性を活用** 必要に応じて新しいサーバーを追加してファームのサイズを変更し、必要なリソースに対してのみ支払いを行います。動的なマシンの割り当てはサポートされていません (自動スケール)。<br/> **Azure Active Directory (AD) の使用** ユーザー アカウントに関して Azure AD を活用します。 <br/> **[SharePointで使用できない機能を追加Microsoft 365** 詳細なレポートと Web 分析を追加します。 <br/> 「[SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)」をご覧ください。  <br/> |
+|アプリ ファームで、Microsoft 365オンプレミス環境をサポートする  <br/> |**アプリのビルド、テスト、ホスト** Azure で、オンプレミス環境とクラウド環境の両方をサポートできます。 <br/> **このロールのホスト** オンプレミス環境用の新しいハードウェアを購入する代わりに、Azure で行います。 <br/> |
    
 イントラネットとコラボレーションのソリューション、およびワークロードに関しては、以下の選択肢を考慮してください。
   
-- Microsoft 365 がビジネス要件を満たしているのか、それともソリューションの一部になるか判断します。 Microsoft 365 には、常に最新の豊富な機能セットが提供されています。
+- ビジネス要件Microsoft 365、またはソリューションの一部とすることができるかどうかを判断します。 Microsoft 365は、常に最新の豊富な機能セットを提供します。
     
-- Microsoft 365 がすべてのビジネス要件を満たしていない場合は、Microsoft コンサルティング サービス (MCS) からオンプレミスの SharePoint 2013 の標準実装を検討してください。 標準のアーキテクチャは、カスタマイズされたアーキテクチャよりもソリューションの実装が迅速かつ安価で、なおかつ簡単です。 
+- すべてのMicrosoft 365要件を満たしていない場合は、Microsoft Consulting Services (MCS) からオンプレミスの SharePoint 2013 の標準実装を検討してください。 標準のアーキテクチャは、カスタマイズされたアーキテクチャよりもソリューションの実装が迅速かつ安価で、なおかつ簡単です。 
     
 - 標準実装がビジネス要件を満たさない場合には、カスタマイズされたオンプレミスのソリューションを考慮します。
     

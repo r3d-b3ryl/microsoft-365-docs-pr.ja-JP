@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Microsoft 製品とサービスの購入に役立つ提案について説明します。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 5dece5ccc0cc26b157ae0cc33ec9bb1fe44c44b3
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 10d4d531acc0e4a323cde6d1034c626419a58a4b06b40be76c0d292c7679ac28
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852033"
 ---
 # <a name="understand-the-proposal-workflow"></a>提案ワークフローの理解
 
@@ -62,7 +62,7 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 これが新しい請求アカウントで、誰も契約を受け入れていない場合は、次の条件を指定して、自動的に請求アカウントの所有者になります。
 
 - 提案で名前が付けられた人物か\
-    OR
+    または
 - 組織のAzure Active Directory[管理者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)である
 
 ## <a name="what-is-the-overall-workflow"></a>全体的なワークフローは何ですか?
@@ -100,7 +100,7 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 
 [ **組織] セクション** には、関連付けられた請求アカウントが表示されます。 課金アカウント情報は、既存の請求アカウントから取得するか、Microsoft 担当者が作成します。 組織が別の組織の関連会社である場合は、その組織の名前と住所を含む [リード組織] セクションも表示されます。
 
-組織が Microsoft との商用関係を初めて確立し、まだ MCA に署名していない場合は、組織またはリード組織の下の情報が正しくない場合は、担当者に連絡して変更を加えます。 MCA を受け入れてから、組織の住所と連絡先情報を確認および変更するには、管理センターの[](https://go.microsoft.com/fwlink/p/?linkid=2084771)[請求アカウント] ページMicrosoft 365できます。 組織名が変更された場合は、サービス要求を開き、更新します。 [サービス要求を開く方法について](../business-video/get-help-support.md)
+組織が Microsoft との商用関係を初めて確立し、まだ MCA に署名していない場合は、組織またはリード組織の下の情報が正しくない場合は、担当者に連絡して変更を加えます。 MCA を受け入れてから、組織の住所と連絡先情報を確認して変更するには、ページの [[](https://go.microsoft.com/fwlink/p/?linkid=2084771)請求アカウント] ページMicrosoft 365 管理センター。 組織名が変更された場合は、サービス要求を開き、更新します。 [サービス要求を開く方法について](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>お客様の情報
 
@@ -118,7 +118,7 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 
 提案には、次の情報が含まれます。
 
-| Section | [説明] |
+| Section | Description |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 組織名 | 提案が準備された組織の名前。 |
 | 有効な有効期限 | 提案オファーの有効期限が切れる日付。 この有効期限を過ぎた場合は、Microsoft 担当者に連絡して、提案に興味を持っているユーザーに連絡してください。 |

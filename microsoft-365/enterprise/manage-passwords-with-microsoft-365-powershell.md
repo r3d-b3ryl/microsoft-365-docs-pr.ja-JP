@@ -17,18 +17,18 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: PowerShell を使用してパスワードを管理する方法について説明します。
-ms.openlocfilehash: ac0a47edb4ccbed93c1a3b88df083d463784b4a4
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: d3f5ebfb7f7171cd45cf5ad1749b7bbb807068f812ee2a37f78ead7f6e8660c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073214"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858749"
 ---
 # <a name="manage-passwords-with-powershell"></a>PowerShell を使用してパスワードを管理する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-PowerShell を使用して、Microsoft 365管理センターの代わりに、Microsoft 365でパスワードを管理Microsoft 365。 
+PowerShell を使用して、Microsoft 365の代わりに、Microsoft 365 管理センターパスワードを管理Microsoft 365。 
 
 この記事のコマンド ブロックで変数値を指定する必要がある場合は、次の手順を使用します。
 

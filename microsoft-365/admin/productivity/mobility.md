@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: モビリティの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d3ea6e4803a1aa5d12084d626b60c058dd578832d8707e8269419683a0ed223d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823053"
 ---
 # <a name="mobility--people-experiences"></a>モビリティ – ユーザー エクスペリエンス
 
-生産性スコアは、Microsoft 365 の使用とそれをサポートするテクノロジ エクスペリエンスを通じて、組織のデジタル変換の旅に関する洞察を提供します。 組織のスコアは、ユーザーとテクノロジ エクスペリエンスの測定値を反映し、類似した組織のベンチマークと比較できます。 モビリティ カテゴリは、ユーザーエクスペリエンスの対策の一部です。 詳細については、「生産性スコアの概要」 [を参照し](productivity-score.md) 、「Microsoft のプライバシーに関 [する声明」を参照してください](https://privacy.microsoft.com/privacystatement)。
+生産性スコアは、組織のデジタル変換の取り組みについて、Microsoft 365をサポートするテクノロジ エクスペリエンスを通じて分析情報を提供します。 組織のスコアは、ユーザーとテクノロジ エクスペリエンスの測定値を反映し、類似した組織のベンチマークと比較できます。 モビリティ カテゴリは、ユーザーエクスペリエンスの対策の一部です。 詳細については、「生産性スコアの概要」 [を参照し](productivity-score.md) 、「Microsoft のプライバシーに関 [する声明」を参照してください](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -47,7 +47,7 @@ ms.locfileid: "51580848"
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>組織がモビリティ スコア&#39;重要な理由
 
-組織の生産性の基本的な柱は、どこにいても柔軟に作業できる人の力です。 Microsoft 365 を使用すると、Outlook、Microsoft Teams、およびユーザーとの接続をYammer。 また、Word、Excel、PowerPoint、OneNote を使用して、任意の場所やプラットフォームからコンテンツをシームレスに共同作業することもできます。
+組織の生産性の基本的な柱は、どこにいても柔軟に作業できる人の力です。 ユーザー Microsoft 365、ユーザーはユーザーとOutlook、Microsoft Teams、Yammer。 また、Word、Excel、PowerPoint、およびOneNoteを使用してコンテンツをシームレスに共同作業できます。
 
 ## <a name="how-we-calculate-the-score"></a>スコアの計算方法
 
@@ -55,17 +55,17 @@ ms.locfileid: "51580848"
 
 ### <a name="primary-insight"></a>主な分析情報
 
-Microsoft 365 では、Microsoft Outlook、Word、Excel、PowerPoint、OneNote、Microsoft Teams、Yammer、Skype for Business など、さまざまなアプリで柔軟に作業できます。 ユーザーは、デスクトップ、Web、モバイル プラットフォーム間でシームレスなエクスペリエンスを使用してどこからでも作業できます。 主な分析情報は、組織内のユーザーに対して有効になっている製品と、少なくとも 2 つのプラットフォームでアクティブになっているこれらのユーザーの数を確認します。
+Microsoft 365では、Microsoft Outlook、Word、Excel、PowerPoint、OneNote、Microsoft Teams、Yammer、Skype for Business などのアプリ間で柔軟に作業できます。 ユーザーは、デスクトップ、Web、モバイル プラットフォーム間でシームレスなエクスペリエンスを使用してどこからでも作業できます。 主な分析情報は、組織内のユーザーに対して有効になっている製品と、少なくとも 2 つのプラットフォームでアクティブになっているこれらのユーザーの数を確認します。
 
 :::image type="content" source="../../media/primary-mobility.png" alt-text="モビリティの主な分析情報を示すグラフ - ユーザーは生産性スコアを経験します。":::
 
-1. **ヘッダー:** 組織で Microsoft 365 アプリにアクセスできるユーザーと、複数のプラットフォームでこれらのアプリケーションの少なくとも 1 つでアクティブなユーザーの割合を表示します。
+1. **ヘッダー:** 組織で、任意の Microsoft 365 Apps にアクセスできるユーザーと、複数のプラットフォームでこれらのアプリケーションの少なくとも 1 つでアクティブなユーザーの割合を表示します。
 2. **本文:** 複数のプラットフォームでこれらのアプリケーションを使用すると、効率と満足度を向上させる方法について詳しくは、説明します。
-3. **視覚化 (現在の状態):** 少なくとも 1 つの Microsoft 365 (以下の一覧) に対して、デスクトップ、モバイル、および Web で複数のプラットフォームを使用するユーザーの数を次に示します。
+3. **視覚化 (現在の状態):** デスクトップ、モバイル、および Web 全体で複数のプラットフォームを使用するユーザーの数を、少なくとも 1 つのユーザー (以下Microsoft 365) に表示します。
     - **青色 (** 色付き) 部分がヘッダーで表されるパーセンテージを表す水平バー。
     - **バーの** 端数は、ヘッダー内のパーセンテージの計算に使用される (分子/分母) を強調表示します。
-        - Numerator: 過去 28 日間にデスクトップ、Web、およびモバイルから複数のプラットフォームで、Microsoft Outlook、Word、Excel、PowerPoint、OneNote、Microsoft Teams、Yammer、および Skype 内の任意のアプリケーションを使用している組織のユーザーの数。
-        - 分母: 過去 28 日間のうち少なくとも 1 日間、Microsoft 365 Apps、Exchange、Yammer、Microsoft Teams、または Skype のライセンスを取得したユーザーの数。
+        - Numerator: 過去 28 日間に、デスクトップ、Web、およびモバイルから複数のプラットフォームで、Microsoft Outlook、Word、Excel、PowerPoint、OneNote、Microsoft Teams、Yammer、および Skype 内の任意のアプリケーションを使用している組織のユーザーの数。
+        - 分母: Microsoft 365 Apps、Exchange、Yammer、Microsoft Teams、Skype に対して、過去 28 日間のうち少なくとも 1 日間のライセンスを取得したユーザーの数。
     - キー **メトリックのピア** ベンチマーク値もパーセンテージとして表示されます。
 4. **モビリティ リソースの表示:** ヘルプ コンテンツを表示するには、このリンクを選択します。
 
@@ -77,7 +77,7 @@ Microsoft 365 では、Microsoft Outlook、Word、Excel、PowerPoint、OneNote�
 
 ### <a name="scoring-framework"></a>スコアリング フレームワーク
 
-組織のモビリティ スコアは、Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer、Skype など、さまざまなプラットフォーム (デスクトップ、Web、モバイル) で Microsoft 365 アプリを使用しているか(集計) レベルで測定します。
+組織のモビリティ スコアは、Microsoft 365 Apps - Outlook、Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer、Skype の異なるプラットフォーム (デスクトップ、Web、モバイル) を使用しているかのレベルで測定します。
 
 スコアは個々のユーザー レベルでは提供されない。
 
@@ -85,53 +85,53 @@ Microsoft 365 では、Microsoft Outlook、Word、Excel、PowerPoint、OneNote�
 
 また、組織内のユーザーがプラットフォーム間でどのように作業を行うのかの可視化に役立つ情報も提供します。 これらの追加の指標は、生産性スコアに直接貢献するのではなく、デジタル変換の一環としてアクション プランを作成するのに役立ちます。  
 
-### <a name="use-of-outlook-across-platforms"></a>プラットフォーム間での Outlook の使用
+### <a name="use-of-outlook-across-platforms"></a>プラットフォーム間でのOutlookの使用
 
-:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="複数のプラットフォームで Outlook を使用しているユーザーの数を示すグラフ。":::
+:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="複数のプラットフォームで使用しているユーザー数Outlookグラフ。":::
 
-1. **ヘッダー:** 複数のプラットフォームで Outlook を使用している Outlook でアクティブなユーザーの割合を表示します。
-2. **本文:** Outlook on mobile devices を使用して電子メール上のどこからでも接続を行う際に役立つ値に関する情報を提供します。
-3. **視覚化:** Outlook でアクティブで、1 つ以上のプラットフォームを使用しているユーザーの割合を示します。
+1. **ヘッダー:** 複数のプラットフォームでユーザーを使用しているユーザー Outlookアクティブなユーザー Outlookを表示します。
+2. **本文:** モバイル デバイスでモバイル デバイスで Outlookを使用して、電子メール上のどこからでも接続できる値に関する情報を提供します。
+3. **視覚化:** 1 つ以上のプラットフォームを使用しているOutlookユーザーの割合を示します。
       - **複数のプラットフォーム:**
-        - Numerator: 過去 28 日間にデスクトップ、モバイル、または Web から少なくとも 2 つのプラットフォームで Outlook を使用したユーザーの数。
-        - 分母: 過去 28 日間に Outlook を少なくとも 1 回使用したユーザーの数。
+        - Numerator: 過去 28 日間Outlookデスクトップ、モバイル、または Web から少なくとも 2 つのプラットフォームでユーザーを使用したユーザーの数。
+        - 分母: 過去 28 日間に 1 Outlookを使用したユーザーの数。
       - **デスクトップのみ:**
-        - Numerator: 過去 28 日間にデスクトップ プラットフォームでのみ Outlook を使用したユーザーの数。
-        - 分母: 過去 28 日間に少なくとも 1 回 Outlook を使用したユーザーの数
+        - Numerator: 過去 28 日間にデスクトップ プラットフォームOutlookを使用したユーザーの数。
+        - 分母: 過去 28 日間に 1 Outlookを使用したユーザーの数
       - **Web のみ:**
-        - Numerator: 過去 28 日間に Web プラットフォームでのみ Outlook を使用したユーザーの数。
-        - 分母: 過去 28 日間に Outlook を少なくとも 1 回使用したユーザーの数。
+        - Numerator: 過去 28 日間に web プラットフォームOutlookを使用したユーザーの数。
+        - 分母: 過去 28 日間に 1 Outlookを使用したユーザーの数。
       - **モバイルのみ:**
-        - Numerator: 過去 28 日間にモバイル プラットフォームでのみ Outlook を使用したユーザーの数。
-        - *分母: 過去 28 日間に Outlook を少なくとも 1 回使用したユーザーの数。
+        - Numerator: 過去 28 日間にモバイル Outlookでのみ使用したユーザーの数。
+        - *分母: 過去 28 日間に 1 Outlookを使用したユーザーの数。
 
-### <a name="use-of-teams-across-platforms"></a>プラットフォーム間での Teams の使用
+### <a name="use-of-teams-across-platforms"></a>複数のプラットフォームTeamsの使用
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="複数のプラットフォームで Teams を使用しているユーザーの数を示すグラフ。":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="複数のプラットフォームでユーザーが使用しているユーザー Teamsを示すグラフ。":::
 
-1. **ヘッダー:** Microsoft Teams でアクティブなユーザーが複数のプラットフォームで使用している割合を示します。
-2. **本文:** モバイル デバイスで Teams を使用して、ユーザーが任意の場所から作業している間、メッセージを最新の情報に更新するのに役立つ情報を提供します。
-3. **視覚化:** 単一のプラットフォームまたは複数のプラットフォームで使用している Microsoft Teams でアクティブなユーザーの割合を示します。 
+1. **ヘッダー:** 複数のプラットフォームでアクティブなユーザー Microsoft Teamsの割合を表示します。
+2. **本文:** ユーザーが任意の場所から作業している間、Teamsを最新の情報に残す際に役立つモバイル デバイス上でのデータの使用の値に関する情報を提供します。
+3. **視覚化:** 1 つのプラットフォームまたは複数のプラットフォームMicrosoft Teamsユーザーがアクティブなユーザーの割合を表示します。 
     - **複数のプラットフォーム:**
         - Numerator: デスクトップ、モバイル、または Web の 2 つ以上のプラットフォームで過去 28 日間に Teams を使用したユーザーの数。
-        - 分母: 過去 28 日間に少なくとも 1 回、Microsoft Teams を使用したユーザーの数。
+        - 分母: 過去 28 日間に 1 Microsoft Teamsを使用したユーザーの数。
     - **デスクトップのみ:**
-        - Numerator: 過去 28 日間にデスクトップ プラットフォームでのみ Microsoft Teams を使用したユーザーの数
-        - 分母: 過去 28 日間に少なくとも 1 回 Teams を使用したユーザーの数
+        - Numerator: 過去 28 日間にデスクトップ Microsoft Teamsでのみ使用したユーザーの数
+        - 分母: 過去 28 日間に 1 Teamsを使用したユーザーの数
     - **Web のみ:**
-        - Numerator: 過去 28 日間に Web プラットフォームでのみ Microsoft Teams を使用したユーザーの数
-        - 分母: 過去 28 日間に少なくとも 1 回 Microsoft Teams を使用したユーザーの数
+        - Numerator: 過去 28 日間に web Microsoft Teamsでのみ使用したユーザーの数
+        - 分母: 過去 28 日間に 1 Microsoft Teamsを使用したユーザーの数
     - **モバイルのみ:**
-        - Numerator: 過去 28 日間にモバイル プラットフォームでのみ Microsoft Teams を使用したユーザーの数
-        - 分母: 過去 28 日間に少なくとも 1 回 Teams を使用したユーザーの数
+        - Numerator: 過去 28 日間にモバイル Microsoft Teamsでのみ使用したユーザーの数
+        - 分母: 過去 28 日間に 1 Teamsを使用したユーザーの数
 
-### <a name="use-of-microsoft-365-apps-across-platforms"></a>プラットフォーム間での Microsoft 365 アプリの使用
+### <a name="use-of-microsoft-365-apps-across-platforms"></a>プラットフォーム間でのMicrosoft 365 Appsの使用
 
-:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="複数または単一のプラットフォームで Microsoft 365 アプリを使用するユーザーの数を示すグラフ。":::
+:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="複数または単一のプラットフォームでアプリをMicrosoft 365ユーザーの数を示すグラフ。":::
 
 1. **ヘッダー:** 複数のプラットフォームで Microsoft 365 Apps (Word、Excel、PowerPoint、OneNote) でアクティブなユーザーの割合を表示します。
 2. **本文:** 組織内のユーザーに、どこからでもファイルにアクセスできる柔軟性を提供する価値に関する情報を提供します。
-3. **視覚化:** グループ化された垂直方向は、Word、Excel、PowerPoint、OneNote と見なされる各アプリを単一または複数のプラットフォームで使用しているユーザーの数を表します。 これらのアプリケーションごとに、バーは次の値を表します。
+3. **視覚化:** グループ化された垂直方向は、単一または複数のプラットフォームで、Word、Excel、PowerPoint、および OneNote と見なされる各アプリを使用しているユーザーの数を表します。 これらのアプリケーションごとに、バーは次の値を表します。
       - **複数のプラットフォーム:** 過去 28 日間に少なくとも 2 つのプラットフォームでアプリでアクティブなユーザーの数。
       - **デスクトップのみ:** 過去 28 日間にデスクトップ プラットフォーム上でのみアプリでアクティブなユーザーの数。
       - **Web のみ:** 過去 28 日間に Web プラットフォーム上でのみアプリでアクティブなユーザーの数。
@@ -143,7 +143,7 @@ Microsoft 365 では、Microsoft Outlook、Word、Excel、PowerPoint、OneNote�
 
 1. **ヘッダー:** 自宅または会社のネットワーク外の場所からのみ働くユーザーの割合を表示します。
 2. **本文:** 組織の物理的なオフィスにアクセスせずにリモート作業を促進することの重要性を強調します。
-3. **視覚化:** リモートでのみ働くユーザーの 1 日の割合と、オンサイトで働くユーザーの 1 日の割合の傾向線を表示します。 ユーザーは、1 日に Microsoft 365 Apps で少なくとも 3 時間のアクティビティを実行する場合、オンサイトと見なされます。
+3. **視覚化:** リモートでのみ働くユーザーの 1 日の割合と、オンサイトで働くユーザーの 1 日の割合の傾向線を表示します。 ユーザーは、1 日に 1 回に 3 時間以上のアクティビティMicrosoft 365 Apps見なされます。
 
 ## <a name="related-content"></a>関連コンテンツ
 

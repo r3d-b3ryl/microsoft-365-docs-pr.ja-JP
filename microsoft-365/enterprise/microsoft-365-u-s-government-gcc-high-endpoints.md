@@ -20,12 +20,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: この記事では、米国政府機関の高いプランを使用しているOffice 365エンドポイントGCC見つける予定です。
 hideEdit: true
-ms.openlocfilehash: 2febfec744dfb527dd99b205f3b2b78f5b9af4e7
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 52027e4c9b503edfb5b051be96c5f238e731c825626b70ee66a2de53f7759dbd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286359"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813047"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 米国政府機関の高 GCC エンドポイント
 
@@ -39,7 +39,7 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 ****
 
-|Notes|ダウンロード|
+|備考|ダウンロード|
 |---|---|
 |**最終更新日:** 2021 年 5 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** JSON 形式の完全な [リスト](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |

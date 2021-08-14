@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 会議の詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: 47a29ee208f9c6957a3fcf7d1a4b0c71518c680b
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: e9de4ab128628b4308b1796ac0c83637283bba7f505e348206c36179a8c19e73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779724"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823146"
 ---
 # <a name="meetings--people-experiences"></a>会議 - ユーザー エクスペリエンス
 
@@ -83,7 +83,7 @@ Microsoft TeamsカレンダーとOutlook統合し、会議をより魅力的で�
 
 :::image type="content" source="../../media/videouse-meetings.png" alt-text="会議の主な分析情報を示すグラフ - ユーザー エクスペリエンス。":::
 
-1. **ヘッダー: モーメント** 分析情報とスコアリングMicrosoft Teamsビデオのベスト プラクティスを使用するオンライン 会議の割合を指定します。  
+1. **ヘッダー:** 主な分析情報とスコアMicrosoft Teamsビデオのベスト プラクティスを使用するオンライン 会議の割合を強調表示します。
 2. **本文:** Hrovides は、会議中にこれらのプラクティスを使用して、より魅力的にするための価値に関する情報を提供します。 
 3. **視覚化:** 視覚化の内訳は、オンライン 会議が次のベスト プラクティスMicrosoft Teamsどの程度に従うのかを表すものです。 
     - **ビデオ**: 色付き部分と分数は、ビデオが有効になっている会議Microsoft Teamsの割合を表します。 分数は次の値から構成されます。 
@@ -121,7 +121,7 @@ Microsoft TeamsカレンダーとOutlook統合し、会議をより魅力的で�
 
 :::image type="content" source="../../media/percentparticipation-meetingtypes.jpg" alt-text="異なる会議の種類への参加率を示すグラフ。":::
 
-1. **ヘッダー:** モーメント 30 分未満Microsoft Teams 28 日間のインスタント オンライン 会議の割合を示します。
+1. **ヘッダー:** 30 分未満のMicrosoft Teams 28 日間のインスタント オンライン 会議の割合を強調表示します。
 2. **本文:** チャネル機能で Meet を今すぐ使用する値 &quot; &quot; Microsoft Teamsします。
 3. **視覚化:** オンライン会議や会議に参加しているユーザーが参加している会議の種類Microsoft Teamsします。 各会議の種類は水平バーとして表され、色付き部分と分数は次のように表されます。
     - **インスタント 1:1 の呼び出し**:

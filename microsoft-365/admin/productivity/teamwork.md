@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: チームワークの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: 0924114a73a9bcf55a74744ee371de8c2d326d1c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: db948c7a510c1bfe959b9f8aa07544f0ed9faf03909da9ec182ec18abdea5e82
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822969"
 ---
 # <a name="teamwork--people-experiences"></a>チームワーク - ユーザー エクスペリエンス
 
@@ -71,7 +71,7 @@ ms.locfileid: "51579160"
 1. **本文:** 共有ワークスペース内でコンテンツとの通信と操作を行う方法について、組織の生産性にプラスの結果を与える方法について説明します。
 2. **視覚化 (現在の状態):**
       - 青い部分がヘッダーで表されるパーセンテージを表す水平バー
-      - モーメントに表示されるパーセンテージの計算に使用される分数 (分子/分母) を指定します。
+      - ヘッダーに表示されるパーセンテージの計算に使用される分数 (分子/分母) を強調表示します。
         - Numerator: Exchange を介してグループ メールボックスに電子メールを送信する組織内のユーザー、または Teams を介してチャネル メッセージを送信している人、または SharePoint チーム サイトでコンテンツを読み取って作成するユーザーの数。
         - 分母: Exchange 経由でメールを送信する、Microsoft Teams でメッセージ (チャットまたはチャネル メッセージ) を送信する、または OneDrive または SharePoint でコンテンツを読み取って作成し、Exchange、Microsoft Teams、または SharePoint の少なくとも 1 つのサービスにアクセスできる組織のユーザーの数。
    - キー メトリックのピア ベンチマーク値もパーセンテージとして表示されます。
