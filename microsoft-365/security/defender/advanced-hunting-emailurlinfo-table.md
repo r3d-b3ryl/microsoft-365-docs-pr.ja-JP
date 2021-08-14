@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a3baea57a2237ca6eb3f85cd5bd4a204d45d4bc0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d57de219daca5fd8a6eb3762014496262f7f0b6409b5ae5c4f222808afcb48d6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935463"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810848"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -47,7 +47,7 @@ ms.locfileid: "51935463"
 | `UrlDomain` | string | URL のドメイン名またはホスト名 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法をOffice 365。
 ms.technology: mdo
-ms.openlocfilehash: ac7963b71c466e8dfdc513a2563776cd4e10af95
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ecd7b539aa22d2935f96860769b30751022d89ea43151a94222caeec9b309928
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878762"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810380"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>攻撃シミュレーショントレーニングのカスタム ペイロードを作成する
 
@@ -32,6 +32,9 @@ Microsoft は、攻撃シミュレーション トレーニングと組み合わ
 次に、関連付けられた手法を選択します。 技術の詳細については [、「Selecting a social engineering technique 」を参照してください](attack-simulation-training.md#selecting-a-social-engineering-technique)。
 
 次の手順では、ペイロードに名前を付けています。 必要に応じて、説明を指定できます。
+
+> [!NOTE]
+> 特定の商標、ロゴ、記号、インスグニア、その他のソース識別子は、地方、州、および連邦の法令および法律の下で高い保護を受けます。 このようなインジケーターを不正に使用すると、刑事罰金を含む罰則がユーザーに科される可能性があります。 広範なリストではありませんが、これには、大統領、副大統領、および議会のシール、CIA、FBI、社会保障、メディケアとメディケイド、米国内歳入サービス、およびオリンピックが含まれます。 これらの商標のカテゴリを超えて、サードパーティの商標の使用と変更は、固有のリスクを伴います。 ペイロードで独自の商標とロゴを使用すると、リスクが低く、特に組織が使用を許可している場合はリスクが低い可能性があります。 ペイロードを作成または構成する際に、何が適切か、または適切ではないかについてさらに質問がある場合は、法務アドバイザーに相談してください。
 
 ## <a name="configure-payload"></a>ペイロードの構成
 

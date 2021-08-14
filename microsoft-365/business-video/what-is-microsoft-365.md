@@ -20,12 +20,12 @@ search.appverid:
 description: IT 部分をケアするサブスクリプション サービス、Microsoft 365 Business Premium について説明します。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 3f0c184cd0e0e6392f66d049b46930031e054bbe
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
-ms.translationtype: MT
+ms.openlocfilehash: 3dd2a4c549e38660a7df928645cd6932e1a5b09af72f3f2ec3805a4c7aef1e68
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705668"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838033"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 

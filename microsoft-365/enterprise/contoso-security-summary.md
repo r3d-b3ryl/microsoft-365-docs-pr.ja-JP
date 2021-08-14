@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社がエンタープライズ向けサービスのセキュリティMicrosoft 365使用する方法。
-ms.openlocfilehash: 59eed0b7e08aae8397bb037e6d1b515bf6aa0ba8
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 8e207ac55b7d7280adfeb356cef20dec1ada0da89298945f1318bbf656a2310f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113452"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855205"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation のMicrosoft 365セキュリティの概要
 
@@ -77,11 +77,11 @@ Contoso 社は、次の手順に従って、エンタープライズ向けサー
 
 - Windows Hello for Business
 
-  Contoso 社Windows [Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification)を展開し、最終的には、パスワードを実行している PC とモバイル デバイスで強力な 2 要素認証を使用してパスワードをWindows 10 Enterprise。
+  Contoso は[、Windows Helloを](/windows/security/identity-protection/hello-for-business/hello-identity-verification)実行している PC とモバイル デバイスでの強力な 2 要素認証を通じて、最終的にパスワードの必要性を排除するために、Windows 10 Enterprise。
 
 - Windows Defender Credential Guard
 
-  管理特権を持つオペレーティング システムで実行されている標的型攻撃とマルウェアをブロックするために[](/windows/security/identity-protection/credential-guard/credential-guard)、Contoso は DS グループ Windows Defender Credential GuardをADを有効にしました。
+  管理特権を持つオペレーティング システムで実行されている標的型攻撃とマルウェアをブロックするために、Contoso は DS グループ ポリシーを使用Windows Defender [Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) ADを有効にしました。
 
 ## <a name="threat-protection"></a>脅威保護
 

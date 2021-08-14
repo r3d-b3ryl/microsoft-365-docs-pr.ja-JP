@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: c5f5837f4e4069a67bc080178fefd10bd2a08629
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 755dbd892d5e772a2bfda3b8e6e959027b74815a2e69ab27659f7f5e4a29bf26
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599853"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805250"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -49,7 +49,7 @@ ActiveSync クライアントをブロックする新しいポリシー Exchange
 
 ポリシーの設定時Exchange OnlineポリシーのOutlookをポリシーのスコープに含める場合は、ActiveSync クライアントをブロックする新しいポリシーを作成する必要があります。 次の表に示すポリシーを確認し、推奨される追加を行うか、既に含まれているか確認します。 各ポリシーは、共通 ID およびデバイス アクセス ポリシーの関連する [構成手順にリンクします](identity-access-policies.md)。
 
-|保護レベル|ポリシー|詳細情報|
+|保護レベル|ポリシー|詳細|
 |---|---|---|
 |**Baseline**|[サインイン リスクが中程度または高の場合に MFA *を* 要求 *する*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド Exchange Online割り当てにアプリを含める|
 ||[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|クラウド Exchange Online割り当てにアプリを含める|
@@ -70,9 +70,9 @@ ActiveSync クライアントをブロックする新しいポリシー Exchange
 
 また、認証ポリシーを使用して基本[](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)認証を無効にし、すべてのクライアント アクセス要求で最新の認証を使用できます。
 
-## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Web 上のExchange OnlineからのOutlookアクセスを制限する
+## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>ユーザーからのアクセスをExchange Online制限Outlook on the web
 
-ユーザーが umnanaged デバイス上の web 上Outlookから添付ファイルをダウンロードする機能を制限できます。 これらのデバイス上のユーザーは、デバイスにファイルを漏洩して保存することなく、Office Online を使用してこれらのファイルを表示および編集できます。 ユーザーが管理されていないデバイスで添付ファイルを見るのをブロックすることもできます。
+ユーザーが umnanaged デバイス上のユーザーから添付ファイルをダウンロードOutlook on the web制限できます。 これらのデバイス上のユーザーは、デバイスにファイルを漏洩して保存することなく、Office Online を使用してこれらのファイルを表示および編集できます。 ユーザーが管理されていないデバイスで添付ファイルを見るのをブロックすることもできます。
 
 それらのステップは次のとおりです。
 

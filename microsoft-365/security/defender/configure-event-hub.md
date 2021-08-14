@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: d28ad22721e22dfd0dc5962bd46bab2b45469781
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: afe1b37d80a074c0011a3d1ea58c3b15fab96ef6d4f1701f11bd1ab73dc06979
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810704"
 ---
 # <a name="configure-your-event-hub"></a>イベント ハブを構成する
 

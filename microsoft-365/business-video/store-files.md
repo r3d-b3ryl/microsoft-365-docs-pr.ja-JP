@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向けファイルの格納場所Microsoft 365説明します。
-ms.openlocfilehash: d1f0a35c3b9b253b8f847ae8578e26a7deec18bb
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9354e5512b8271849b25ea2f4a7253abbddedbf5b03287df6bbd78ebd297662d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838057"
 ---
 # <a name="where-to-store-files"></a>ファイルを保存する場所
 

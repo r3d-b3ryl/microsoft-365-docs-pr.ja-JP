@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva Topics でトピックの検出を管理する
+title: トピックの検出を管理Microsoft Viva トピック
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,21 +9,21 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: トピックの検出を管理する方法については、「Microsoft Viva Topics」を参照してください。
-ms.openlocfilehash: 53e304dc69ccf2ca6fe01d29f0997c539406b0fe
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+description: トピックの検出を管理する方法については、Microsoft Viva トピック。
+ms.openlocfilehash: 39ecd7ab79267d560b614e981f1ef7ad14fd807db94c64a9483b1603d0e2733a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870095"
 ---
-# <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>Microsoft Viva Topics でトピックの検出を管理する
+# <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>トピックの検出を管理Microsoft Viva トピック
 
-トピックの検出設定は、管理センターでMicrosoft 365[管理できます](https://admin.microsoft.com)。 これらのタスクを実行するには、グローバル管理者SharePoint管理者である必要があります。
+トピック検出の設定は、次のページ[でMicrosoft 365 管理センター。](https://admin.microsoft.com) これらのタスクを実行するには、グローバル管理者SharePoint管理者である必要があります。
 
-## <a name="to-access-topics-management-settings"></a>トピックの管理設定にアクセスするには、次の方法を実行します。
+## <a name="to-access-topics-management-settings"></a>トピック管理設定にアクセスするには:
 
-1. 管理センターでMicrosoft 365をクリックし、[組織 **設定]****をクリックします**。
+1. [組織] Microsoft 365 管理センター、[組織の **設定]****の順にクリックします**。
 2. [サービス] **タブで** 、[トピック エクスペリエンス] **をクリックします**。
 
     ![Connectを知る](../media/admin-org-knowledge-options-completed.png) 
@@ -47,7 +47,7 @@ Site name,URL
 トピック検出用のサイトを選択するには
 
 1. **[トピック検出]** タブの **[SharePoint トピック ソースの選択]** で、**[編集]** を選択します。
-2. [トピック **ソースSharePoint選択**] ページで、検出中にトピックSharePointとしてクロールするサイトを選択します。 これには、次の内容が含まれます。
+2. [トピック **ソースSharePoint選択**] ページで、検出中にトピックSharePointとしてクロールするサイトを選択します。 保持されるデータには以下が含まれます。
     - **すべてのサイト**: テナントSharePointサイトのすべてのサイト。 これにより、現在および将来のサイトがキャプチャされます。
     - **[すべて] (選択したサイトを** 除く): 除外するサイトの名前を入力します。  検出からオプトアウトするサイトの一覧をアップロードできます。 今後作成されるサイトは、トピック検出のソースとして含められます。 
     - **選択したサイトのみ**: 含めるサイトの名前を入力します。 サイトのリストをアップロードできます。 今後作成されるサイトは、トピック検出のソースとして含められません。
@@ -55,7 +55,7 @@ Site name,URL
 
     ![トピックソースSharePointインターフェイスのスクリーンショット](../media/k-manage-select-topic-source.png)
    
-3. **[保存]** をクリックします。
+3. [**保存**] をクリックします。
 
 ## <a name="exclude-topics-by-name"></a>トピックを名前で除外する
 
@@ -64,7 +64,7 @@ Site name,URL
 1. **[トピックの検出]** タブの **[トピックの除外]** で、**[編集]** を選択します。
 2. [名前 **でトピックを除外する] をクリックします**。
 3. リストを作成する必要がある場合は、.csvテンプレートをダウンロードし、除外するトピックを追加します (以下の「.csv *を使用する」を参照* してください)。 ファイルの準備ができたら、[参照] を **クリックして** ファイルをアップロードします。 既存のリストがある場合は、リストを含む.csvダウンロードできます。
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
     ![除外トピックのユーザー インターフェイスのスクリーンショット](../media/km-manage-exclude-topics.png)
 

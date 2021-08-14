@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '必要に応じて、毎月のサブスクリプションのライセンス数を減らします。 '
-ms.openlocfilehash: c9f72b9448fe1f844cc216baec9ba8249d387c71
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 853046c0af843ea7b30e485e2ec18c8487628622aeae745594bd99ab68483a18
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064595"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838045"
 ---
 # <a name="remove-existing-licenses"></a>既存のライセンスを削除する
 

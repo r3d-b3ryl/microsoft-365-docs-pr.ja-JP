@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: ビジネス向けMicrosoft 365、セットアップ方法、ユーザーのデバイスと PC を準備して、ユーザーがビジネス向けデバイスで保護Microsoft 365します。
-ms.openlocfilehash: 2ab0079da7a8f30d481cdb3d3dc6d165b4a19e99
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 3ac8ec3c831d14cfa6d0018340458b2b494b2dd746a7f2bd61d2eba0b4eaf0a1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339292"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837911"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>ビジネス向けMicrosoft 365を開始する
 
@@ -65,7 +65,7 @@ Microsoft 365は、最大 300 ライセンスを使用します。 ライセン�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../business-video/index.yml)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../business-video/index.yml)」をご覧ください。
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: ビジネス向Microsoft 365を設定する (管理者)
@@ -78,7 +78,7 @@ Microsoft 365は、最大 300 ライセンスを使用します。 ライセン�
     
 2. [セットアップ ウィザードを使用してビジネス向けMicrosoft 365セットアップする](set-up.md)
     
-    ローカル **の Active Directory** からクラウドに完全に移動する場合は、Microsoft 365 管理センター に移動してセットアップ ウィザードを使用してユーザーを手動で追加するか、Azure AD Connect と 1 回の同期を行うことができます。 これを行うには次に示す 2 つの方法があります。 
+    ローカル **の Active Directory** からクラウドに完全に移動する場合は、Microsoft 365 管理センター に移動してセットアップ ウィザードを使用してユーザーを手動で追加するか、Azure AD Connect と 1 回の同期を行うことができます。 このようにするには、次の 2 つの方法があります。 
     
     - Exchange 2010、Exchange 2013、または Exchange 2016 サーバーがある場合は、最小限のハイブリッドを使用して Exchange メールボックスをすばやく Microsoft 365 に[移行できます](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。 最小限のハイブリッド手順には、Azure ADへのユーザーの 1 回の同期、およびオンプレミスからクラウドへの電子メールの移行が含まれます。 電子メールの移行が完了すると、このメソッドを使用すると、ディレクトリ同期が自動的に無効になります。
     
@@ -99,7 +99,7 @@ Microsoft 365は、最大 300 ライセンスを使用します。 ライセン�
 一部のオンプレミス リソース (ファイル共有やプリンターなど) を含むローカル Active Directory を保持する場合は、Azure AD に参加しているデバイスにこれらのリソースへのアクセス権を与えることができます。次の手順を実行します。ビジネス向け Microsoft 365 で [Azure](access-resources.md) **AD** に参加しているデバイスからオンプレミス リソースにアクセスします。
   
   
-## <a name="contact-support"></a>サポートにお問い合せください
+## <a name="contact-support"></a>サポートに問い合わせる
 
  **サポートに連絡する場合:**
   

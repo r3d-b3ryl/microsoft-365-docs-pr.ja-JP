@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 詳しくは、アプリをセットアップするMicrosoft 365 Business Premium。
-ms.openlocfilehash: 2e6cdf3c2280b527571d62f5e3535dcea6ad3523
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8824755d8215af6a1459ae73d1cd9ba08f5897c574b07e8e99f6b78cfee439c1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578653"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838021"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップ
 
@@ -33,7 +33,7 @@ ms.locfileid: "51578653"
 
 ## <a name="try-it"></a>お試しください!
 
-1. 管理センターにサインインMicrosoft 365し、[セットアップに移動 **] を選択します**。 セットアップ ウィザードが起動します。
+1. [セットアップに移動] Microsoft 365 管理センターにサインインし、[**セットアップに移動] を選択します**。 セットアップ ウィザードが起動します。
 2.  [アプリ **のインストールOffice]** ページで、コンピューターにアプリをOfficeするか、[続行] を選択 **します**。
 3.  [ドメインは  **ビジネス ID] ページ**  で、ビジネスのドメイン名を入力し、[このドメインを使用する]  **を選択します**。 WordPress や GoDaddy のような一般的なレジストラーを使用する場合、レコードはこのページに自動的に追加されます。
 4. [ドメイン **の確認] ページで**、[確認] を選択してドメインの所有権を確認し、ドメイン レジストラー アカウントにサインインします。  Microsoft がアカウント検証用の TXT レコードを追加するには、[確認] を  **選択します**。

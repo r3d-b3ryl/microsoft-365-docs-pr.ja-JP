@@ -20,16 +20,16 @@ f1.keywords:
 - NOCSH
 description: 2010 および Sharepoint Server 2010 SharePointアップグレードする情報とリソースを検索します。 2021 年 4 月 13 日の両方のサポート。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4fa82fb0e382a244cdc126609ac62d17280b9702
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 67b8174aa23027b64132cc4676e2e7bfb5675cd1deb4684d18945d58b5cf63ad
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848156"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からのアップグレード
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Microsoft SharePoint 2010 および SharePoint Server 2010 は **、2021** 年 4 月 13 日にサポートが終了します。 この記事では、既存の SharePoint Server 2010 データを Microsoft 365 の SharePoint Online に移行したり、オンプレミスの SharePoint Server 2010 環境をアップグレードしたりするのに役立つリソースを提供します。
 
@@ -269,7 +269,7 @@ Office 2010 サーバー/クライアント、および Windows 7のアップグ
 
 [2007 または 2010 Office 2010 サーバーとクライアントからのアップグレードに役立つリソース](upgrade-from-office-2010-servers-and-products.md)
 
-[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](/SharePoint/upgrade-and-update/overview-of-the-upgrade-process-from-sharepoint-2010-to-sharepoint-2013)
+[SharePoint 2010 から SharePoint 2013 へのアップグレード プロセスの概要](/SharePoint/upgrade-and-update/overview-of-the-upgrade-process-from-sharepoint-2010-to-sharepoint-2013)
 
 [SharePoint 2010 から SharePoint 2013 へのアップグレードのベスト プラクティス](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013)
 

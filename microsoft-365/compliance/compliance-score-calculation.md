@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Microsoft コンプライアンス マネージャーがリスクへの対処と、コンプライアンスに対する方針の改善のために実行するアクションに基づいて個人用スコアを計算する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e1e3f4b90b0a5e83a1e068cd30f76b3a8c7bb22
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: cbbef643005904e8ca913df69382e9e6012e5b371c9cb5ff132990e1ba74c535
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149168"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820476"
 ---
 # <a name="compliance-score-calculation"></a>コンプライアンス スコアの計算
 
@@ -113,7 +113,7 @@ ms.locfileid: "53149168"
 |**種類**|**割り当てられたスコア**|
 |:-----|:-----|
 | 予防および必須 | 27 |
-| 予防および任意 | 9 |
+| 予防および任意 | 9  |
 | 検出および必須 | 3 |
 | 検出および任意 | 1 |
 | 修正および必須 | 3 |

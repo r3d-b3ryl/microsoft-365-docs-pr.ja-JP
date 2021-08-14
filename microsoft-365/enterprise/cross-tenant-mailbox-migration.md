@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 471682b6f830609ef4ff9241bdaa515c97ca2d8d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 09a8e608153d9d985b0f407c01f0d68c7de2e2a315ca5d00447fd3bad30fde4c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394907"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855168"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -724,7 +724,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
       |Information Protection for Office 365 - Standard|
       |インサイト By MyAnalytics|
       |Microsoft 365高度な監査|
-      |Microsoft Bookings|
+      |Microsoft の予約|
       |Microsoft Business Center|
       |Microsoft MyAnalytics (フル機能)|
       |Office 365 Advanced eDiscovery|
