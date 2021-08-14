@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6e8073fe0d2dcbce28745eaeb8e8881c1f3b7a93
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 0f2d0888c9dbe7550f4967f85691d4e56e4320c2d0220812fc095aa2c1cd96dc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622394"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862772"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>手順 5.  使用例の開発とテスト
 
@@ -46,7 +46,7 @@ SOC は、SOC Oversight チームによって規制される、使用例を開�
 
 使用例の開発に関連する SOC 監視アクティビティには、次のものが含まれます。 
 
-- 要件
+- Requirements
 - スタッフまたはトレーニングのニーズ
 - ソフトウェア ライセンス
 - ベンダー契約

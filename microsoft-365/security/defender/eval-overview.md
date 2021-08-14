@@ -1,5 +1,5 @@
 ---
-title: XDR Microsoft 365 Defender評価およびパイロットを行い、エンドポイント、ID、アプリ、電子メール、共同作業アプリケーション、データを防止、検出、調査、応答します。
+title: XDR のMicrosoft 365 Defender評価とパイロット
 description: デバイス、Microsoft 365 Defender、アプリケーションを保護するように設計されたセキュリティ ソリューションをテストおよびエクスペリエンスするために、テストラボまたはパイロット環境を計画します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ade3087543f45439664868fbe02f1746e1f5e762
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: e8dc4d61fb0d43d2864245223923936fe4a646e88e93a3c6eda2a672d459b137
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458336"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862824"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>評価とパイロットMicrosoft 365 Defender
 
@@ -106,7 +106,7 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 |4      | [エンドポイントの Defender を有効にする ](eval-defender-endpoint-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。         |
 |5      | [[有効Microsoft Cloud App Security](eval-defender-mcas-overview.md)        |  アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。        |
 |6      | [脅威の調査と対応](eval-defender-investigate-respond.md)        |   攻撃をシミュレートし、インシデント対応機能の使用を開始します。      |
-|7      | [試用版を実稼働環境に昇格する](eval-defender-promote-to-production.md)        | 1 Microsoft 365コンポーネントを 1 つ 1 つ生産に昇格します。        |
+|7      | [試用版を製品版に昇格する](eval-defender-promote-to-production.md)        | 1 Microsoft 365コンポーネントを 1 つ 1 つ生産に昇格します。        |
 | | | |
 
 これは、通常、機能の展開と構成に必要な労力に基づいて、機能の価値を迅速に得るために設計された一般的に推奨される順序です。 たとえば、Defender for Office 365 Defender for Endpoint のデバイスを登録するために必要なよりもはるかに高速に構成できます。 もちろん、ビジネス ニーズを満たすためにコンポーネントに優先順位を付け、これらを別の順序で有効にすることもできます。

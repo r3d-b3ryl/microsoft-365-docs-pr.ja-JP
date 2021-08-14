@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 Content Delivery Network (CDN) クイック スタート
-ms.openlocfilehash: 3539ad1f11b27c60b5641976ae66a1480ef4be98
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b005c670bce80d84e7d1762eb2d8b2fc57bc7b55d0f5da9e7de13ec144742169
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870304"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 Content Delivery Network (CDN) クイック スタート
 

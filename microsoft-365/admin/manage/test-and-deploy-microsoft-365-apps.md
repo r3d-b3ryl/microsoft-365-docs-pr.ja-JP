@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 組織内のユーザーおよびグループ向け Microsoft および Microsoft パートナー アプリを検索、テスト、展開するには、組織の統合アプリ ポータルMicrosoft 365 管理センター。
-ms.openlocfilehash: dcd4a91d9e43c0a740094615cd3dca0b0e8bc0f6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 7a4daff76262e2fc08b5d205eba81bd8016718f8b7461c930a5967454cdaa2eb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007059"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824542"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>統合アプリ ポータルMicrosoft 365 Appsパートナーによるテストと展開
 
@@ -141,24 +141,24 @@ Word、Excel、PowerPointアドインの場合、ユーザーは次のいずれ�
 
 このOutlook、ユーザーは次のいずれかを使用している必要があります。 
 - バージョン 1701 以降の Microsoft 365 Enterprise ライセンス (E3/E5/F3) または Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)。 
-- バージョン 1808 以降の Office Professional Plus 2019 または Office 2019。 
-- Office Professional Plus 2016 (MSI) または Office Standard 2016 (MSI) のバージョン 16.0.4494.1000 以降。
+- バージョン 1808 以降のバージョンOffice Professional Plus 2019 2019 Office Standard。 
+- バージョン 16.0.4494.1000 以降の Office Professional Plus 2016 (MSI) または Office Standard 2016 (MSI)。
     > [!NOTE]
-    > MSI バージョンの Outlook では、管理者がインストールしたアドインが適切な Outlook リボンに表示され、[マイ アドイン] セクションは表示されません。  
-- バージョン 15.0.4937.1000 以降の Office Professional Plus 2013 (MSI) または Office Standard 2013 (MSI)。
-- バージョン 16.0.9318.1000 以降のバージョン Office 2016 for Mac 用。 
-- iOS 用 Outlook モバイルのバージョン 2.75.0 以降。 
-- Android 用 Outlook モバイルのバージョン 2.2.145 以降。 
+    > MSI バージョンの Outlookは、管理者がインストールしたアドインを [マイ アドイン] セクションではなく、Outlook リボンに表示します。  
+- バージョン 15.0.4937.1000 以降の Office Professional Plus 2013 (MSI) または Office Standard (MSI)
+- バージョン 16.0.9318.1000 以降のバージョンOffice 2016 for Mac。 
+- iOS 用モバイル用のバージョン 2.75.0 以降Outlookバージョン 2.75.0 以降。 
+- Android 用モバイル版のバージョン 2.2.145 以降Outlookバージョン 2.2.145 以降。 
 
 
 
-### <a name="exchange-online-requirements"></a>Exchange Online の要件 
-Microsoft Exchange は、アドイン マニフェストを組織のテナント内に格納します。 アドインを展開する管理者と、それらのアドインを受け取るユーザーは、OAuth 認証をサポートするバージョンの Exchange Online 上にある必要があります。 
+### <a name="exchange-online-requirements"></a>Exchange Online要件 
+Microsoft Exchangeは、組織のテナント内にアドイン マニフェストを格納します。 アドインを展開する管理者と、それらのアドインを受け取るユーザーは、OAuth 認証をサポートする Exchange Online上にある必要があります。 
 
 組織の Exchange 管理者に、どの構成を使用できるのかを確認してください。 ユーザーごとの OAuth 接続は [、Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity)PowerShell コマンドレットを使用   して確認できます。 
 
 ### <a name="user-and-group-assignments"></a>ユーザーとグループの割り当て
-現在、アドインの展開は、Microsoft 365 グループ、配布リスト、セキュリティ グループなど、Azure Active Directory でサポートされている大部分のグループでサポートされています。 展開では、上位レベルのグループまたは親グループのないグループのユーザーがサポートされますが、入れ子になったグループまたは親グループを持つグループのユーザーはサポートできません。 
+現在、アドインの展開は、Azure Active Directory グループ、配布リスト、セキュリティ グループなど、Azure Active Directory Microsoft 365 でサポートされているグループの大部分でサポートされています。 展開では、上位レベルのグループまたは親グループのないグループのユーザーがサポートされますが、入れ子になったグループまたは親グループを持つグループのユーザーはサポートできません。 
 
 > [!NOTE]
 > メールが有効ではないセキュリティ グループは、現段階ではサポートされていません。 
@@ -169,15 +169,15 @@ Microsoft Exchange は、アドイン マニフェストを組織のテナント
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>グループにネストされたグループが含まれているかどうかを調べる
 
-グループにネストされたグループが含まれているかどうかを調べる最も簡単な方法は、Outlook 内のグループの連絡先カードを確認することです。 電子メールの **[To]** フィールドにグループ名を入力し、解決時にグループ名を選択すると、グループ名にユーザーまたは入れ子になったグループが含まれているか   が表示されます。 次の例では、テスト **** グループの Outlook 連絡先カードの [メンバー] タブに、ユーザーは表示され、サブ グループ   は 2 つのみです。 
+グループにネストされたグループが含まれているかどうかを調べる最も簡単な方法は、Outlook 内のグループの連絡先カードを確認することです。 電子メールの **[To]** フィールドにグループ名を入力し、解決時にグループ名を選択すると、グループ名にユーザーまたは入れ子になったグループが含まれているか   が表示されます。 次の例では、テスト **** グループの連絡先カードの [メンバー] Outlook、ユーザーは表示され、サブ グループは   2 つのみです。 
 
-![Outlook 連絡先カードの [メンバー] タブ](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![連絡先カードの [Outlook] タブ](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
-反対のクエリを実行するには、グループを解決して、グループが任意のグループのメンバーである場合を確認します。 次の例では、サブグループ 1 <b></b>がテスト グループのメンバーである Outlook 連絡先カードの [メンバーシップ] タブ   で確認できます。 
+反対のクエリを実行するには、グループを解決して、グループが任意のグループのメンバーである場合を確認します。 次の例では、サブグループ 1 <b></b>がテスト グループのメンバー Outlook連絡先カードの [メンバーシップ] タブ   で確認できます。 
 
-![Outlook 連絡先カードの [メンバーシップ] タブ](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![連絡先カードの [Outlook] タブ](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-Azure Active Directory Graph API を使用してクエリを実行して、グループ内のグループの一覧を検索できます。 詳細については、「グループに対する [操作」を参照|Graph API リファレンス](/previous-versions/azure/ad/graph/api/groups-operations)。 
+Azure Active Directory Graph API を使用してクエリを実行して、グループ内のグループの一覧を検索できます。 詳細については、「グループに対する [操作」を参照|GraphAPI リファレンス](/previous-versions/azure/ad/graph/api/groups-operations)。 
 
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Office アドインを展開する際に推奨される方法 
 段階的なアプローチを使用してアドインをロールアウトするには、次の手順を実行することをお勧めします。 
@@ -191,7 +191,7 @@ Azure Active Directory Graph API を使用してクエリを実行して、グ�
 
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>管理センターを使用して Office アドインを展開する 
 
-1. 管理センターで、[設定] を **選択し**、[統合アプリ **] を選択します**。 
+1. 管理センターで、[アプリ] を選択 **設定** 統合 **アプリを選択します**。 
 
 2. ページ **の上部にある [** アプリの取得] を選択します。 AppSource は埋め込み形式で読み込む。 アドインを検索するか、左側のナビゲーションにある [製品] をクリックして検索します。  アドインが ISV によって SaaS アプリまたは他のアプリやアドインにリンクされている場合、SaaS アプリが有料アプリの場合は、ライセンスを購入するか Deploy を購入するダイアログ ボックスが表示されます。 ライセンスを購入したかどうかに関係なく、展開を進めできます。 **[展開]** を選択します。  
 
@@ -199,20 +199,20 @@ Azure Active Directory Graph API を使用してクエリを実行して、グ�
 
 4. [ **すべてのユーザー** **]、[特定のユーザー/グループ**]、または [自分だけ] を選択して、アドインの展開先 ****   を指定します。 [検索] ボックスを使用して、特定のユーザーまたはグループを検索します。 アドインをテストする場合は、[これはテスト展開です] **を選択します**。 
 
-5. **[次へ]** を選択します。 アプリに Microsoft 365 認定がある場合は、すべてのアプリの機能とアクセス許可が認定情報と共に 1 つのウィンドウに表示されます。 認定ロゴを選択すると、ユーザーは認定の詳細を確認できます。  
+5. **[次へ]** を選択します。 すべてのアプリの機能とアクセス許可は、アプリが認定を受け取った場合、認定情報と共に 1 つのウィンドウMicrosoft 365されます。 認定ロゴを選択すると、ユーザーは認定の詳細を確認できます。  
 
 6. [確認] をクリックし、[展開の完了 **] を選択します**。  
 
 7. アドインを展開すると、緑色の "ティック" アイコンが表示されます。 ページ上の指示に従ってアドインをテストします。 
 
 > [!NOTE]
-> アプリ リボンにアドイン アイコンをOfficeするには、ユーザーがアプリを再起動する必要がある場合があります。 Outlook アドインは、アプリリボンに表示するには最大 24 時間かかる場合があります。 
+> アプリ リボンにアドイン アイコンをOfficeするには、ユーザーがアプリを再起動する必要がある場合があります。 Outlookアドインがアプリ リボンに表示するには、最大で 24 時間かかる場合があります。 
 
 展開されたアドインが利用可能なユーザーとグループに通知する方法をお試しください。 アドインを使用する場合と方法を説明する電子メールの送信を検討してください。 アドインに問題がある場合に役立つ可能性のあるコンテンツまたは FAQ を含めるか、リンクします。 
 
 ## <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>ユーザーやグループにアドインを割り当てる時期を検討する 
 
-グローバル管理者と Exchange 管理者は、すべてのユーザーまたは特定のユーザーとグループにアドインを割り当てできます。 各オプションには、次のような意味があります。 
+グローバル管理者と管理者Exchange、すべてのユーザーまたは特定のユーザーとグループにアドインを割り当てできます。 各オプションには、次のような意味があります。 
 
 - **すべてのユーザー**  このオプションは、組織内のすべてのユーザーにアドインを割り当てる。 対象のアドインが組織全体で汎用な場合にのみ、このオプションを慎重に使用します。 
 
@@ -232,17 +232,17 @@ Office アドインに結合されている XML マニフェスト ファイル�
 
 Office アドインの種類と機能の詳細については [、「Office](/office/dev/add-ins/overview/office-add-ins)アドイン プラットフォームの概要」、特に「Office アドインの構造」を参照してください。 
 
-ユーザーのドキュメントを操作するには、アドインがマニフェストで必要なアクセス許可を宣言する必要があります。 5 レベルの JavaScript API アクセス許可モデルは、作業ウィンドウ アドインのユーザーのプライバシーとセキュリティの基礎を提供します。Office ストア内のアドインの大部分は、少なくとも ReadDocument レベルをサポートするほとんどすべてのアドインで、レベル ReadWriteDocument です。 アクセス許可レベルの詳細については、「コンテンツ アドインと作業ウィンドウ アドインでの API 使用のアクセス許可の要求」 [を参照してください](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)。 
+ユーザーのドキュメントを操作するには、アドインがマニフェストで必要なアクセス許可を宣言する必要があります。 5 レベルの JavaScript API アクセス許可モデルは、作業ウィンドウ アドインのユーザーのプライバシーとセキュリティの基礎を提供します。Office ストアのアドインの大部分は、少なくとも ReadDocument レベルをサポートするほとんどすべてのアドインを含む、レベル ReadWriteDocument です。 アクセス許可レベルの詳細については、「コンテンツ アドインと作業ウィンドウ アドインでの API 使用のアクセス許可の要求」 [を参照してください](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)。 
 
 マニフェストを更新するとき、一般的に変更されるのはアドインのアイコンとテキストです。場合によっては、アドイン コマンドが変更されます。ただし、アドインのアクセス許可は変更されません。アドインのすべてのコードとロジックが実行される Web アプリケーションは、Web アプリケーションの性質上、いつでも変更される可能性があります。 
 
 アドインの更新は次のように発生します。 
 - **Line-of-business** アドイン : この場合、管理者がマニフェストを明示的にアップロードした場合、アドインでは、管理者がメタデータの変更をサポートするために新しいマニフェスト ファイルをアップロードする必要があります。 次に関連する Office アプリケーションが起動すると、アドインが更新されます。 Web アプリケーションはいつでも変更できます。 
 
-- **Office ストア** アドイン : 管理者が Office ストアからアドインを選択すると、Office ストアでアドインが更新された場合、次回関連する Office アプリケーションが起動すると、アドインが更新されます。 Web アプリケーションはいつでも変更できます。 
+- **Office ストア** アドイン : 管理者が Office ストアからアドインを選択した場合、Office ストアでアドインが更新された場合、関連する Office アプリケーションが次回起動すると、アドインが更新されます。 Web アプリケーションはいつでも変更できます。 
 
 > [!NOTE]
-> Word では、Excel と PowerPoint は [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)アプリ カタログを使用して、Microsoft 365 への接続や SharePoint アドインのサポートが必要なオンプレミス環境のユーザーにアドインを展開します。   Outlook では、Exchange コントロール パネルを使用して、Microsoft 365 に接続せずにオンプレミス環境に展開します。  
+> Word の場合、Excel と PowerPoint は [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)アプリ カタログを使用して、Microsoft 365 への接続や SharePoint アドインのサポートが不要なオンプレミス環境のユーザーにアドインを展開します。   たとえばOutlookコントロール Exchangeを使用して、ユーザーに接続せずにオンプレミス環境に展開Microsoft 365。  
 
 ## <a name="add-in-states"></a>アドインの状態
 アドインは[オン]または **[オフ]**   のいずれかの状態 **に**   できます。 

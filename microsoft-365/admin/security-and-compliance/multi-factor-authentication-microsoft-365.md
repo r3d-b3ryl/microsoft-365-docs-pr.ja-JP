@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 多要素認証 (MFA) は、強力なパスワードと追加の検証方法の両方を使用します。
-ms.openlocfilehash: 9b3347f1a8e7b1f62c9bbfe77a7f14c221ef28b5
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: afe93f3b9432c26ba38e007e929e718853816b7b9f45d9d1d4053c30898a88a5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393645"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822797"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>ユーザーの多要素認証Microsoft 365
 
@@ -151,7 +151,7 @@ Microsoft 365 管理センターの **アクティブなユーザー** ウィン
 
 この表は、セキュリティの既定値、条件付きアクセス ポリシー、およびユーザーごとのアカウント設定で MFA を有効にした結果を示しています。
 
-|*アイテム*|Enabled|無効|第 2 の認証方法|
+|*アイテム*|有効|無効|第 2 の認証方法|
 |---|---|---|---|
 |**セキュリティの既定値**|条件付きアクセス ポリシーを使用できない|条件付きアクセス ポリシーを使用できる|Microsoft Authenticator アプリ|
 |**条件付きアクセス ポリシー**|有効になっている場合は、セキュリティの既定値を有効にできません|すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます|MFA 登録中にユーザーが指定|
@@ -177,5 +177,5 @@ Microsoft 365 管理センターでは、ユーザー単位およびサービス
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[多要素認証 (ビデオ](../../business-video/turn-on-mfa.md) ) を有効にする\
-[電話の多要素認証を有効にする](../../business-video/set-up-mfa.md) (ビデオ)
+[多要素認証をオンにする](../../business-video/turn-on-mfa.md) (ビデオ)\
+[スマートフォンの多要素認証をオンにする](../../business-video/set-up-mfa.md) (ビデオ)

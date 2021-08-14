@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: この記事では、アプリケーションがアクセスしようとするエンドポイントOffice for Mac URL、および提供されるサービスについて説明します。
-ms.openlocfilehash: b777b4ea7e03495cb6389be8fe05e96a26fd9664
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 48a2dd266e0ed9379651e62ad835f4d27a5228b726b5f0e6da03ed8a55e23606
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691937"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848485"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Office for Mac でのネットワーク要求
 
@@ -70,7 +70,7 @@ URL の種類は次のように定義されます。
 |```https://client-office365-tas.msedge.net/```  <br/> |WXPON  <br/> |ST  <br/> |'Flighting' ネットワーク構成テスト  <br/> |
 |```https://officeclient.microsoft.com/```  <br/> |WXPON  <br/> |ST  <br/> |OfficeConfiguration Service - サービス エンドポイントのマスター リスト。  <br/> |
 |```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |OfficeRules Telemetry download - テレメトリ サービスにアップロードするデータとイベントについてクライアントに通知します。  <br/> |
-|```https://mobile.pipe.aria.microsoft.com/```  <br/> |×  <br/> |CS  <br/> |OneNoteテレメトリ サービス  <br/> |
+|```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |CS  <br/> |OneNoteテレメトリ サービス  <br/> |
 |```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Officeテレメトリ アップロードレポート - "Heartbeart" と、クライアントで発生するエラー イベントがテレメトリ サービスにアップロードされます。  <br/> |
 |```https://templateservice.office.com/```  <br/> |WXP  <br/> |CS  <br/> |OfficeTemplate Service - オンライン ドキュメント テンプレートをユーザーに提供します。  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |CS  <br/> |Officeテンプレートのダウンロード - PNG Storageの画像を表示します。  <br/> |
@@ -82,9 +82,9 @@ URL の種類は次のように定義されます。
 |```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |SS  <br/> |構成とリソースOfficeウィキペディア アプリ。  <br/> |
 |```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |Bing構成とリソースOfficeアプリをマップします。  <br/> |
 |```https://peoplegraph.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |ユーザー Graph構成とリソースOfficeアプリを作成します。  <br/> |
-|```https://www.onenote.com/```  <br/> |×  <br/> |ST  <br/> |[新しいコンテンツ] OneNote。  <br/> |
-|```https://site-cdn.onenote.net/```  <br/> |×  <br/> |ST  <br/> |ユーザーの新しいOneNote。  <br/> |
-|```https://site-cdn.onenote.net/```  <br/> |×  <br/> |SS  <br/> |新しい画像のOneNote。  <br/> |
+|```https://www.onenote.com/```  <br/> |N  <br/> |ST  <br/> |[新しいコンテンツ] OneNote。  <br/> |
+|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |ST  <br/> |ユーザーの新しいOneNote。  <br/> |
+|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |SS  <br/> |新しい画像のOneNote。  <br/> |
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |ST  <br/> |アプリ内サポート サービス。  <br/> |
 |```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |ST  <br/> |メール アカウント検出サービス。  <br/> |
 |```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |ST  <br/> |Outlook自動情報開示  <br/> |
@@ -96,7 +96,7 @@ URL の種類は次のように定義されます。
   
  **サインイン**
   
-クラウド ベースのストレージにサインインするときに、次のネットワーク エンドポイントに接続されます。 アカウントの種類に応じて、さまざまなサービスに連絡する場合があります。 以下に例を示します。
+クラウド ベースのストレージにサインインするときに、次のネットワーク エンドポイントに接続されます。 アカウントの種類に応じて、さまざまなサービスに連絡する場合があります。 次に例を示します。
   
 - **MSA: Microsoft アカウント** - 一般消費者および小売シナリオで使用される 
     
@@ -147,11 +147,11 @@ URL の種類は次のように定義されます。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Insights Web サービス  <br/> |
+|```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |インサイトWeb サービス  <br/> |
 |```https://ajax.googleapis.com/```  <br/> |WXPN  <br/> |CS  <br/> |JQuery ライブラリ  <br/> |
 |```https://cdnjs.cloudflare.com/```  <br/> |WXPN  <br/> |CS  <br/> |JavaScript ライブラリのサポート  <br/> |
-|```https://www.bing.com/```  <br/> |WXPN  <br/> |CS  <br/> |Insights コンテンツ プロバイダー  <br/> |
-|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |CS  <br/> |Insights コンテンツ プロバイダー  <br/> |
+|```https://www.bing.com/```  <br/> |WXPN  <br/> |CS  <br/> |インサイトコンテンツ プロバイダー  <br/> |
+|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |CS  <br/> |インサイトコンテンツ プロバイダー  <br/> |
    
  **PowerPoint デザイナー**
   
@@ -159,7 +159,7 @@ URL の種類は次のように定義されます。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint デザイナー Web サービス  <br/> |
+|```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPointDesigner Web サービス  <br/> |
    
  **PowerPoint クイックスターター**
   
@@ -224,7 +224,7 @@ URL の種類は次のように定義されます。
 |```https://wikipedia.firstpartyappssandbox.oappseperate.com/```  <br/> |W  <br/> |SS  <br/> |Wikipedia サンドボックス フレーム  <br/> |
 |```https://*.virtualearth.net/```  <br/> |X  <br/> |SS  <br/> |マップ テンプレート  <br/> |
    
- **安全なリンク**
+ **リンク保護**
   
 次のネットワーク エンドポイントは、サブスクリプションOfficeのすべてのMicrosoft 365適用されます。
   
@@ -239,7 +239,7 @@ URL の種類は次のように定義されます。
 |**URL**|**型**|**説明**|
 |:-----|:-----|:-----|
 |```https://watson.microsoft.com/```  <br/> |ST  <br/> |Microsoft Error Reporting Service  <br/> |
-|```https://officeci.azurewebsites.net/```  <br/> |ST  <br/> |OfficeCollaborative Insights Service  <br/> |
+|```https://officeci.azurewebsites.net/```  <br/> |ST  <br/> |Officeコラボレーション インサイト サービス  <br/> |
    
 ## <a name="options-for-reducing-network-requests-and-traffic"></a>ネットワーク要求とトラフィックを削減するためのオプション
 
@@ -272,7 +272,7 @@ URL の種類は次のように定義されます。
 ユーザーの完全な機能を再確立するには、基本設定を '2' に設定するか、削除します。
   
 > [!NOTE]
-> この設定では、Office for Macビルド 15.25 [160726] 以降が必要です。 
+> この基本設定では、Office for Mac 15.25 [160726] 以降をビルドする必要があります。 
   
 ### <a name="telemetry"></a>テレメトリ
   

@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 7ee6f3a7fc01fa998e3b984683ddad1402fe5587
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: MT
+ms.openlocfilehash: 1649282a1ea63d03732744265a916fb96e6e85f1c109525918526d4b15dc319a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822705"
 ---
 # <a name="set-up-multifactor-authentication"></a>多要素認証を設定する
 

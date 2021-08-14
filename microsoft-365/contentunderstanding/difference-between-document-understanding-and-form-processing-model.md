@@ -3,7 +3,7 @@ title: ドキュメント理解とフォーム処理モデルの違い
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: ドキュメント理解とフォーム処理モデルの主な違いについて説明します。
-ms.openlocfilehash: 31bb5677f3a49fb1820e869319d92ff0e09bad8b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
+ms.openlocfilehash: dc909cd809e3fff1c7f0a4008154cfe7af40740d7e5bbcda4d4cbe8283a47160
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543025"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855448"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>ドキュメント理解とフォーム処理モデルの違い 
 

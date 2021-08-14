@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet が運用する 21Vianet Office 365 Azure Information Protection (AIP) の詳細と、中国の顧客向け構成方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 8b85ae43df31bb1947b841d616cc83c3a0b614e4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4ccd3a6e86a39931cd30335825adcc0fefe660cc54e0334a62d95ac58b9d4e3f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822381"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet がOffice 365 Azure Information Protection のサポート
 
@@ -58,7 +58,7 @@ ms.locfileid: "52535844"
 中国の顧客向け AIP を構成するには、次の手順を行います。
 1. [テナントの権限管理を有効にします](#step-1-enable-rights-management-for-the-tenant)。
 
-1. [Microsoft Information Protection Sync Service サービス プリンシパルを追加します](#step-2-add-the-microsoft-information-protection-sync-service-service-principal)。
+1. [同期サービス Microsoft Information Protectionを追加します](#step-2-add-the-microsoft-information-protection-sync-service-service-principal)。
 
 1. [DNS 暗号化を構成します](#step-3-configure-dns-encryption)。
 
@@ -82,11 +82,11 @@ ms.locfileid: "52535844"
 
 2. 機能状態がである場合は `Disabled` 、実行します `Enable-AipService` 。
 
-### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>手順 2: Microsoft Information Protection Sync Service サービス プリンシパルを追加する
+### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>手順 2: 同期サービス Microsoft Information Protectionを追加する
 
-**Microsoft Information Protection Sync Service サービス** プリンシパルは、Azure China テナントでは既定では使用できません。Azure Information Protection では必須です。
+同期 **Microsoft Information Protectionサービス** プリンシパルは、Azure China テナントでは既定では使用できません。Azure Information Protection には必須です。
 
-1. [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal)コマンドレットと Microsoft Information Protection Sync Service のアプリケーション ID を使用して、このサービス プリンシパルを手動 `870c4f2e-85b6-4d43-bdda-6ed9a579b725` で作成します。 
+1. [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal)コマンドレットと同期サービスのアプリケーション ID を使用して、このサービス `870c4f2e-85b6-4d43-bdda-6ed9a579b725` プリンシパルMicrosoft Information Protection作成します。 
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
@@ -119,7 +119,7 @@ ms.locfileid: "52535844"
 
 3. Azure portal のテナントにカスタム ドメインを関連 [付ける](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)。 これにより、DNS のエントリが追加され、DNS 設定に値を追加した後に検証に数分かかる場合があります。
 
-4. 対応するグローバル管理者資格情報Microsoft 365管理センターにログインし、ユーザー作成用のドメイン (たとえば `contoso.cn` ) を追加します。 検証プロセスでは、追加の DNS 変更が必要になる場合があります。 検証が完了すると、ユーザーを作成できます。
+4. 対応するグローバル管理者資格情報Microsoft 365 管理センターにログインし、ユーザー作成用のドメイン (たとえば `contoso.cn` ) を追加します。 検証プロセスでは、追加の DNS 変更が必要になる場合があります。 検証が完了すると、ユーザーを作成できます。
 
 #### <a name="configure-dns-encryption---mac-ios-android"></a>DNS 暗号化の構成 - Mac、iOS、Android
 
@@ -207,7 +207,7 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
       Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>
       ```
 
-      以下に例を示します。
+      次に例を示します。
 
       ```PowerShell
       $pscreds = Get-Credential CONTOSO\scanner
@@ -225,7 +225,7 @@ AIP オンプレミス スキャナーをインストールして、ネットワ
 
 1. [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob)コマンドレットを実行して、既定のコンテンツ スキャン ジョブを作成します。
 
-    **Set-AIPScannerContentScanJob** コマンドレットで必要なパラメーターは、強制 **のみです**。 ただし、この時点でコンテンツ スキャン ジョブの他の設定を定義することもできます。 以下に例を示します。
+    **Set-AIPScannerContentScanJob** コマンドレットで必要なパラメーターは、強制 **のみです**。 ただし、この時点でコンテンツ スキャン ジョブの他の設定を定義することもできます。 次に例を示します。
 
     ```powershell
     Set-AIPScannerContentScanJob -Schedule Manual -DiscoverInformationTypes PolicyOnly -Enforce Off -DefaultLabelType PolicyDefault -RelabelFiles Off -PreserveFileDetails On -IncludeFileTypes '' -ExcludeFileTypes '.msg,.tmp' -DefaultOwner <account running the scanner>

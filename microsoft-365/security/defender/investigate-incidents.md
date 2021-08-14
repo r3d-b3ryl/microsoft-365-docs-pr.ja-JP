@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fe2733a93f39c491d423076bc8f972cf8f6e901f2e8fe53256162360b18d9622
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 6672723f6a4f3319e837fbb85442a031414e5cba67809197312eebf411a301e4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834650"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862683"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>インシデントを調査Microsoft 365 Defender
 
@@ -64,23 +64,21 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 [ **概要] ページ** では、インシデントに関する一番上の情報をスナップショットで確認できます。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="ポータル内のインシデントの [概要] ページMicrosoft 365 Defender例":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="セキュリティ センターのインシデントの概要ページMicrosoft 365例":::
 
-情報は、これらのセクションで整理されています。
+攻撃カテゴリを使用すると、キル チェーンに対する攻撃の進行状況を視覚的および数値的に確認できます。 他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender CK フレームワークの[MITRE ATT &trade;&配置](https://attack.mitre.org/)されます。
 
-| Section | 説明 |
-|:-------|:-----|
-| アラートとカテゴリ | キル チェーンに対する攻撃の進行状況を視覚的および数値的に表示します。 他の Microsoft セキュリティ製品と同様に、Microsoft 365 Defender CK フレームワークの[MITRE ATT &trade;&配置](https://attack.mitre.org/)されます。 アラートのタイムラインには、アラートが発生した時系列の順序と、それぞれの状態と名前が表示されます。 |
-| スコープ |  影響を受けたデバイス、ユーザー、メールボックスの数を表示し、リスク レベルと調査の優先度の順にエンティティを一覧表示します。 |
-| 証拠 | インシデントの影響を受けるエンティティの数を表示します。 |
-| インシデント情報 | タグ、状態、重大度などのインシデントのプロパティを表示します。 |
-|||
+範囲セクションでは、このインシデントの一部である最も影響を受ける資産の一覧が表示されます。 この資産に関する特定の情報 (リスク レベル、調査の優先順位、資産のタグ付けなど) がある場合は、その情報もこのセクションに表示されます。
 
-[概要 **] ページを使用** して、インシデントの相対的な重要度を評価し、関連付けられたアラートと影響を受けたエンティティにすばやくアクセスします。
+アラートのタイムラインでは、アラートが発生した時系列の順序と、これらのアラートがこのインシデントにリンクされている理由を確認できます。
+
+最後に、 - 証拠セクションには、インシデントに含まれるさまざまなアーティファクトの数とその修復状態の概要が示されています。そのため、必要なアクションが必要な場合は直ちに特定できます。
+
+この概要は、インシデントの最初のトリアージを支援するために、注意する必要があるインシデントの最高の特性に関する洞察を提供します。
 
 ## <a name="alerts"></a>アラート
 
-[アラート **] タブ** で、インシデントに関連するアラートや、次のようなアラートに関するその他の情報について、アラート キューを表示できます。
+[アラート **] タブ** で、インシデントに関連するアラートや、次のようなアラートに関するその他の情報のアラート キューを表示できます。
 
 - 重大度。
 - アラートに関与したエンティティ。
@@ -91,27 +89,19 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="インシデントのアラート ページの例":::
 
-既定では、アラートは時系列的に順序付けされ、時間の間に攻撃がどのように実行されたのか確認できます。 インシデント内でアラートを選択すると、Microsoft 365 Defenderのコンテキストに固有のアラート情報が表示されます。 
+既定では、アラートは時系列的に順序付けされ、インシデントが時間の間にどのように再生されたのか確認できます。 インシデント内でアラートを選択すると、Microsoft 365 Defenderのコンテキストに固有のアラート情報が表示されます。 
 
-アラートのイベント、その他のトリガーされたアラートによって現在のアラートが発生したイベント、およびデバイス、ファイル、ユーザー、メールボックスなど、攻撃に関連する影響を受けるすべてのエンティティとアクティビティを確認できます。
+アラートのイベント、その他のトリガーされたアラートによって現在のアラートが発生したイベント、およびファイル、ユーザー、メールボックスなど、攻撃に関連する影響を受けるすべてのエンティティとアクティビティを確認できます。
 
 次に例を示します。
 
 :::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="インシデント内のアラートの詳細ページの例":::
 
-インシデント通知ページには、次のセクションがあります。
+このインシデント アラート ページは、次のセクションで構成されます。
 
-- アラート ストーリー:次の内容が含まれます。
-
-   - どうしたのですか
-
-   - 実行された処理
-
-   - 関連イベント
-
-- 右側のウィンドウのアラート プロパティ (状態、詳細、説明など)
-
-すべてのアラートに、[アラート ストーリー] セクションに一覧表示されているサブセクション **が表示される場合** があります。
+- アラート ストーリー(発生した内容の概要を含む)
+- 関連するイベントとアラート
+- 概要の詳細
 
 アラートの調査でアラート キューとアラート ページを使用する方法 [について説明します](investigate-alerts.md)。
 
@@ -121,14 +111,14 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 :::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="インシデントのデバイス ページの例":::
 
-デバイスのチェック マークを選択すると、デバイス、ディレクトリ データ、アクティブなアラート、ログオンしているユーザーの詳細を確認できます。 デバイスの名前を選択すると、Microsoft Defender for Endpoints デバイス インベントリにデバイスの詳細が表示されます。 次に例を示します。
+デバイスのチェック マークを選択すると、デバイス、ディレクトリ データ、アクティブなアラート、ログオンしているユーザーの詳細を確認できます。 デバイスの名前を選択すると、Microsoft Defender for Endpoints デバイス インベントリにデバイスの詳細が表示されます。
 
 :::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Microsoft Defender for Endpoints のデバイス ページの例":::
 
 デバイス ページから、すべての通知、タイムライン、セキュリティに関する推奨事項など、デバイスに関する追加情報を収集できます。 たとえば、[タイムライン]タブから、コンピューターのタイムラインをスクロールして、発生したアラートと一緒に、コンピューター上で観察されたイベントと動作を時系列順に表示できます。
 
 > [!TIP]
-> デバイス ページでオンデマンド スキャンを実行できます。 [デバイス] Microsoft 365 Defenderで、[エンドポイント] を **選択>デバイス インベントリを選択します**。 通知があるデバイスを選択し、ウイルス対策スキャンを実行します。 ウイルス対策スキャンなどのアクションは追跡され、[デバイス インベントリ] ページ **に表示** されます。 詳細については、「デバイスでスキャン[を実行Microsoft Defender ウイルス対策」を参照してください](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
+> デバイス ページでオンデマンド スキャンを実行できます。 セキュリティ センターでMicrosoft 365デバイス インベントリの **[エンドポイント] >を選択します**。 通知があるデバイスを選択し、ウイルス対策スキャンを実行します。 ウイルス対策スキャンなどのアクションは追跡され、[デバイス インベントリ] ページ **に表示** されます。 詳細については、「デバイスでスキャン[を実行Microsoft Defender ウイルス対策」を参照してください](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
 
 ## <a name="users"></a>ユーザー
 
@@ -151,7 +141,7 @@ Microsoft 365 Defender、デバイス、ユーザー、およびメールボッ�
 
 ## <a name="investigations"></a>調査
 
-[ **調査] タブ** には、このインシデントのアラート [によって](m365d-autoir.md) トリガーされる自動調査の一覧が表示されます。 自動調査は、Microsoft Defender for Endpoint および Defender for Office 365 で実行するように自動調査を構成した方法に応じて、修復アクションを実行するか、アナリストによるアクションの承認を待機します。
+[ **調査] タブ** には、このインシデントのアラート [によって](m365d-autoir.md) トリガーされる自動調査の一覧が表示されます。 調査は、Microsoft Defender for Endpoint および Defender for Office 365 で実行するように自動調査を構成した方法に応じて、修復アクションを実行するか、アナリストによるアクションの承認を待機します。
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="インシデントの [調査] ページの例":::
 

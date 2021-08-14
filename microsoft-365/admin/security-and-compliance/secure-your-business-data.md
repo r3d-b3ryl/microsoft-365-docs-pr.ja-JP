@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなどのサイバー脅威からビジネス メールとデータを保護する方法。
-ms.openlocfilehash: 8ee8e34ef984cb466f472e5503ad7cc14c181030
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0088e3404227d1340af2801157027c250f5066f11604b2d46afd9910cd622d3e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822749"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>ビジネス プランのセキュリティをMicrosoft 365するトップ 10 の方法
 
@@ -242,7 +242,7 @@ Officeメッセージ暗号化は、メールを送信するときに 2 つの�
 
 Defender for Office 365でフィッシング対策ポリシーを作成するには、短いトレーニング ビデオ[](../../business-video/setup-anti-phishing.md)を表示するか、次の手順を実行します。
 
-1. <https://protection.office.com> に移動します。
+1. <https://protection.office.com>に移動します。
 
 2. セキュリティ コンプライアンス センター&左側のナビゲーション ウィンドウの [脅威 **の管理]** で、[ポリシー] を **選択します**。
 

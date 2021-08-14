@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 9d976ee46cc6feb7897e67294077b8a1fbaa0f12
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 1577b20cfa4f18a8db4fcba8d05a27bdacd693074ed3d14319101c6122cb443f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834109"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ デバイスのオンボーディング
 
@@ -35,7 +35,7 @@ ms.locfileid: "53567850"
 - 仮想デスクトップ インフラストラクチャ (VDI) デバイス
 - Windows 10、Windows Server 2019、Windows Server 2008R2/2012R2/2016
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
 
@@ -89,13 +89,13 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 
 4. 実装するメソッドに応じて、適切な手順に従います。
 
-   - デバイスごとに 1 つのエントリの場合:
+    - デバイスごとに 1 つのエントリの場合:
    
-     **[PowerShell スクリプト]** タブを選択し、[追加] **(Windows** オンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます) をクリックします。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1` 。 他のファイルは自動的にトリガーされますので、指定する必要はありません。
+         **[PowerShell スクリプト]** タブを選択し、[追加] **(Windows** オンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます) をクリックします。 PowerShell スクリプトのオンボーディングに移動します `Onboard-NonPersistentMachine.ps1` 。 他のファイルは自動的にトリガーされますので、指定する必要はありません。
    
-   - 各デバイスの複数のエントリの場合:
+    - 各デバイスの複数のエントリの場合:
    
-     [スクリプト **] タブを** 選択し、[追加]**をクリック** します (Windows、以前にオンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます)。 オンボーディング bash スクリプトに移動します `WindowsDefenderATPOnboardingScript.cmd` 。
+         [スクリプト **] タブを** 選択し、[追加]**をクリック** します (Windows、以前にオンボーディング スクリプトをコピーしたパスでエクスプローラーが直接開きます)。 オンボーディング bash スクリプトに移動します `WindowsDefenderATPOnboardingScript.cmd` 。
 
 5. ソリューションをテストします。
 
@@ -109,13 +109,14 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
       
    1. 実装するメソッドに応じて、適切な手順に従います。
 
-        - デバイスごとに 1 つのエントリの場合: 
+   - デバイスごとに 1 つのエントリの場合: 
 
-            ポータルで 1 つのエントリMicrosoft 365 Defenderします。
+     ポータルで 1 つのエントリMicrosoft 365 Defenderします。
 
-        - 各デバイスの複数のエントリの場合: 
+   - 各デバイスの複数のエントリの場合: 
 
-            ポータルで複数のエントリMicrosoft 365 Defenderします。
+     ポータルで複数のエントリMicrosoft 365 Defenderします。
+
 
 6. [ナビゲーション **] ウィンドウの [** デバイス] リストをクリックします。
 
@@ -177,7 +178,7 @@ DISM コマンドとオフライン サービスの詳細については、以�
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センター の 「Office の新機能」機能を使用して、ユーザーが Office アプリ on Windows で [ヘルプ > 新機能] を選択した場合に表示または非表示にする Office 機能を決定します。
-ms.openlocfilehash: 66665aaf7fda869492d7bdfc12feaf45869f847b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 882616a8ed0f4a4198bd7987ea596fe2c0cfc83dbe844e2ca5e354bbca768bcc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655505"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824577"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>新機能にOffice機能を管理する
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 33db334ecf977b351ac963107c647c7eff414cc0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2cfd687b3f34c1857fa5128cefa236ceb71f6b8ba7ba00a86a3dfceb43b60062
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288889"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870333"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 と Office 365 展開ラボ キット
 
@@ -47,7 +47,7 @@ ms.locfileid: "53288889"
 結果のラボは、次の試験に接続するように設計されています。
 
 - Microsoft 365 E5
-- Microsoft 365 Apps for enterprise
+- Microsoft 365 Apps for Enterprise
 - Office 365 E5 Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>ステップ バイ ステップ ラボ
@@ -111,7 +111,7 @@ ms.locfileid: "53288889"
 - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](https://www.aka.ms/watchhowtoshift)
 - [Microsoft Endpoint Configuration Manager OS の展開](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 - [Windows 10 の展開計画](/windows/deployment/planning/index)
-- [Microsoft 365 アプリの展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Intune が会社のためにできることとは。](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>関連リソース

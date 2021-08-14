@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 21Vianet がMicrosoft Officeする iOS Office 365アプリと、中国のお客様向けダウンロード方法について詳しくは、ご覧ください。
 monikerRange: o365-21vianet
-ms.openlocfilehash: f1179b21b8db9b6ba7ff9016d575e687d802fbda
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bb78402bb4b3365d4fc52c2a7bffeb2fa0f187fc1dab96773da80695832264df
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644797"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822393"
 ---
 # <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a>Office アプリ 21Vianet Office 365 iOS の場合
 

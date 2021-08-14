@@ -1,5 +1,5 @@
 ---
-title: パイロット Microsoft Cloud App Security、Microsoft 365 Defenderグループの作成、条件付きアクセス制御の構成、機能の試し、テストの一部としてのセットアップを行Microsoft 365 Defender
+title: パイロット Microsoft Cloud App SecurityとMicrosoft 365 Defender
 description: デバイス、ID、Microsoft 365 Defenderアプリケーションを保護するように設計されたセキュリティ ソリューションをテストおよびエクスペリエンスするために、テストラボまたはパイロット環境をセットアップします。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 672b01258c68f1cbcbfe3e2315c4b7cbcb36021e
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: a4aeb40e7386ae3648a392b6869551c3f16c2514b459ab1abf11c8ae6ceee46b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587947"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862858"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>パイロット Microsoft Cloud App SecurityとMicrosoft 365 Defender
 
@@ -83,7 +83,7 @@ SaaS アプリをMicrosoft Cloud App Securityする最初の手順は、これ�
 
 データの高度な検索の詳細についてはMicrosoft Cloud App Securityビデオを参照[してください](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa)。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [パイロット環境で、Microsoft 365 Defenderを使用して調査と対応を行う](eval-defender-investigate-respond.md)
 
