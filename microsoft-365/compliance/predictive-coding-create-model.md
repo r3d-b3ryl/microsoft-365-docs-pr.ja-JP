@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 予測コーディング モデルを作成する方法については、Advanced eDiscovery。 これは、レビュー セット内の関連性の高い、関連性のAdvanced eDiscoveryなコンテンツを特定するのに役立つ、Advanced eDiscoveryの機械学習機能を使用する最初の手順です。
-ms.openlocfilehash: ab84f529169c780e58888cc2726fbabfef33219e
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 37ff12ea723127b322e7a2b2a1e049b66b72bb92a7625c97efdff4dcdb64b976
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891993"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>予測コーディング モデルの作成 (プレビュー)
 
@@ -61,6 +61,6 @@ ms.locfileid: "53226229"
 
 - システムは、トレーニングの第 1 ラウンドのトレーニング セットに含まれるレビュー セットから 40 項目をランダムに選択します。 したがって、トレーニングの最初のラウンドには、ラベル付け用の 50 アイテムが含まれます。トレーニング セットから 40 アイテム、コントロール セットから 10 アイテムです。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 レビュー セットのモデルを作成した後、次の手順では、調査に関連するコンテンツを識別するためにモデルを "ティーチ" するためのトレーニング ラウンドを実行します。 詳細については、「Train [a 予測コーディング モデル」を参照してください](predictive-coding-train-model.md)。

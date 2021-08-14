@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 2018 Office 365 Message Encryption (OME) ビューアー アプリは、Android ストアと Apple ストアから削除されました。
-ms.openlocfilehash: bb96601a8a542d53f6732ab9316051c1a820ba46
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: dc12eaa783c43fb80fb8ecbe984ecbcd0cda315f33b2cd1d3bc65e8932d77bda
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892089"
 ---
 # <a name="deprecating-message-encryption-viewer-app"></a>メッセージ暗号化ビューアー アプリの非推奨
 
