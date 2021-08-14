@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365Defender データのセキュリティとプライバシー
+title: Microsoft 365 Defenderのセキュリティとプライバシー
 description: サービスのプライバシーとデータのセキュリティについて説明します。
 keywords: プライバシー、データ、セキュリティ、トラスト センター、情報コレクション
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 196c3d5ddcec082433d3e459a0b122e2f7052e9d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9740ab52b19a767735b3d484a70b17ca07686b982a23bf65b7a5d952728601da
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060734"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828633"
 ---
-# <a name="microsoft-365-defender-data-security-and-privacy"></a>Microsoft 365Defender データのセキュリティとプライバシー
+# <a name="microsoft-365-defender-data-security-and-privacy"></a>Microsoft 365 Defenderのセキュリティとプライバシー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51060734"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft 365Defender は、Microsoft Azure、英国、および米国のデータ センターで動作します。 サービスによって収集された顧客データは、(a) プロビジョニング中に特定されたテナントの地理的な場所に保存され、(b) Microsoft 365 Defender が別の Microsoft オンライン サービスを使用してそのようなデータを処理する場合は、その他のオンライン サービスのデータストレージ ルールで定義される地理的位置に保存されます。
+Microsoft 365 Defenderは、Microsoft Azure、英国、および米国のデータ センターで動作します。 サービスによって収集された顧客データは、(a) プロビジョニング中に特定されたテナントの地理的な場所に保存され、(b) Microsoft 365 Defender が別の Microsoft オンライン サービスを使用してそのようなデータを処理する場合は、その他のオンライン サービスのデータストレージ ルールで定義されている位置情報に保存されます。
 
 仮名化された形式の顧客データは、米国の中央ストレージおよび処理システムにも格納される場合があります。
 

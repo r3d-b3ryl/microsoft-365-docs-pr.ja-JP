@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 303391a5ed9368e94fe744cf405e2502af0e6ec6
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 5975931dab77752da4ba139b3203fcf1b142150fc642379275a149d84a968120
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828621"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>インシデントのMicrosoft 365 Defender
 
@@ -179,7 +179,7 @@ Microsoft 製品全体の SecOps の詳細については、次のリソース�
 - [ベスト プラクティス](/security/compass/security-operations)
 - [ビデオとスライド](/security/compass/security-operations-videos-and-decks)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 **セキュリティ分析とインシデント** 対応に関する情報が必要な場合は、次の情報を参照してください。
 

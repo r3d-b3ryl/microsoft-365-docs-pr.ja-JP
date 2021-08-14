@@ -14,16 +14,16 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 2007 Exchange Server サポートが終了した後のオプションについて説明し、Microsoft 365、Office 365、または Exchange 2016 への移行の計画を開始します。
-ms.openlocfilehash: d7e8f50118dab6fcb618273f5c28497c80d4a549
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a6de134db567d3c932d4455409653f1bfd40b3e35960f84691cbcef247b1cfe5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924202"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855085"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 のサポート終了ロードマップ
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Exchange Server 2007 年 4 月にサポートが終了しました。 Exchange 2007 から Microsoft 365、Office 365、または Exchange 2016 への移行を開始していない場合は、計画を開始します。
   
@@ -45,7 +45,7 @@ Exchange Serverほぼすべての Microsoft 製品と同様に、サポート �
   
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-以下のことを実行できます。
+次の操作を行うことができます:
   
 - カットオーバー、Microsoft 365、またはハイブリッド移行を使用して、ユーザーに移行します。
     
@@ -253,6 +253,6 @@ Microsoft 365 への移行中に問題が発生し、FastTrack を使用して�
     
 - [カスタマー サポート](https://support.microsoft.com/gp/support-options-for-business)
     
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [2007 年のサーバー Officeアップグレードに役立つリソース](upgrade-from-office-2007-servers-and-products.md)

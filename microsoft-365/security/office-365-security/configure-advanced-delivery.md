@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきではないメッセージを識別する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 88235051a50197be56f20dcce22e868ce6bf4b3e
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 0338cdd6dd45596e31650680d15c9fa31126929ae355389cce66e2045437bfcb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726202"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810326"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -31,7 +31,7 @@ ms.locfileid: "53726202"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアまたは高信頼フィッシングとして識別されるメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 例:
+既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアまたは高信頼フィッシングとして識別されるメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 次に例を示します。
 
 - **サード パーティのフィッシング シミュレーション**: シミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、脆弱なユーザーを特定するのに役立ちます。
 - **セキュリティ操作 (SecOps)** メールボックス: セキュリティ チームがフィルター処理されていないメッセージ (良いメッセージと悪いメッセージの両方) を収集および分析するために使用する専用のメールボックス。
@@ -55,7 +55,7 @@ ms.locfileid: "53726202"
 - [Defender for Office 365](threat-explorer.md)プラン 2 の脅威エクスプローラー/リアルタイム検出 : 管理者は、システムオーバーライド ソースでフィルター処理し、フィッシング シミュレーションまたは **SecOps メールボックスを選択できます**。
 - 脅威 [エクスプローラー/](mdo-email-entity-page.md)リアルタイム検出のメール エンティティ ページ : 管理者は、[オーバーライド **]** セクションの [テナントの上書き] の下で **、SecOps** メールボックスまたはフィッシング シミュレーションによって組織ポリシーによって許可されたメッセージを表示できます。
 - 脅威 [保護の状態](view-email-security-reports.md#threat-protection-status-report)レポート : 管理者は、ドロップダウン メニューの **システム** オーバーライドによってビュー データをフィルター処理し、フィッシング シミュレーション システムの上書きによって許可されるメッセージを表示する場合に選択できます。 SecOps メールボックスの上書きで許可されるメッセージを表示するには、[理由] ドロップダウン メニューの [グラフの内訳] で、配信場所別にグラフの **内訳を選択** できます。
-- [Microsoft Defender for Endpoint](../defender-endpoint/advanced-hunting-overview.md)での高度な検索 : フィッシング シミュレーションと SecOps メールボックス システムの上書きは、EmailEvents の OrgLevelPolicy 内のオプションとして表示されます。 
+- [Microsoft Defender for Endpoint](../defender-endpoint/advanced-hunting-overview.md)での高度な検索 : フィッシング シミュレーションと SecOps メールボックス システムの上書きは、EmailEvents の OrgLevelPolicy 内のオプションとして表示されます。
 - [キャンペーン ビュー](campaigns.md): 管理者は、システム オーバーライド ソース **を** フィルター処理し、 **フィッシング** シミュレーションまたは **SecOps メールボックスを選択できます**。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
@@ -75,7 +75,7 @@ ms.locfileid: "53726202"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>高度な配信Microsoft 365 Defender SecOps メールボックスを構成するには、次のポータルを使用します。
 
-1. このポータルMicrosoft 365 Defender、[メールの送信] & **[** ルールの脅威ポリシー&] セクションの [詳細な配信 \>  \>  \> ] \> **に移動します**。
+1. [ルール] Microsoft 365 Defenderで、[ルール]セクションの&ルールの脅威&詳細な配信を電子メールで送信する] \>  \>  \> **に移動** します。
 
 2. [高度 **な配信] ページ** で **、[SecOps** メールボックス] タブが選択されていることを確認し、次のいずれかの手順を実行します。
    - [編集 ![ ] アイコン [ ](../../media/m365-cc-sc-edit-icon.png) **編集] をクリックします**。
@@ -95,20 +95,18 @@ ms.locfileid: "53726202"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>高度な配信Microsoft 365 Defenderでサード パーティのフィッシング シミュレーションを構成するには、Microsoft 365 Defender ポータルを使用します。
 
-1. このポータルMicrosoft 365 Defender、[メールの送信] & **[** ルールの脅威ポリシー&] セクションの [詳細な配信 \>  \>  \> ] \> **に移動します**。
+1. [ルール] Microsoft 365 Defenderで、[ルール]セクションの&ルールの脅威&詳細な配信を電子メールで送信する] \>  \>  \> **に移動** します。
 
 2. [高度 **な配信] ページ** で、[フィッシング シミュレーション] **タブを選択** し、次のいずれかの手順を実行します。
    - [編集 ![ ] アイコン [ ](../../media/m365-cc-sc-edit-icon.png) **編集] をクリックします**。
    - フィッシング シミュレーションが構成されていない場合は、[追加] を **クリックします**。
 
-3. 開く **[サード パーティ製フィッシング シミュレーションの編集] フライ** アウトで、次の設定を構成します。 
-
-アドレス (MAIL FROM アドレス、P1 送信者、封筒送信者とも呼ばれる) は、メッセージの SMTP 送信で使用される電子メール `5321.MailFrom` アドレスです。 
+3. 開く **[サード パーティ製フィッシング シミュレーションの編集] フライ** アウトで、次の設定を構成します。
 
    - **送信ドメイン**: この設定を展開し、ボックスをクリックして値を入力し、Enter キーを押したり、ボックスの下に表示される値を選択して、少なくとも 1 つの電子メール アドレス ドメイン (contoso.com など) を入力します。 必要な回数だけこの手順を繰り返します。 最大 10 のエントリを追加できます。
 
      > [!NOTE]
-     > メッセージの SMTP 送信で使用されるアドレス `5321.MailFrom` **(MAIL FROM** アドレス、P1 送信者、封筒送信者とも呼ばれる) のドメインを使用します。 この電子メール アドレスは、通常、メッセージ ヘッダー **の Return-Path** ヘッダー フィールドに記録されます。
+     > メッセージの SMTP 送信で使用されるアドレス `5321.MailFrom` **(MAIL FROM** アドレス、P1 送信者、封筒送信者とも呼ばれる) のドメインを使用します。
 
    - **送信 IP**: この設定を展開し、ボックスをクリックして値を入力し、Enter キーを押するか、ボックスの下に表示される値を選択して、少なくとも 1 つの有効な IPv4 アドレスを入力します。 必要な回数だけこの手順を繰り返します。 最大 10 のエントリを追加できます。 有効な値は次のとおりです。
      - 単一 IP: たとえば、192.168.1.1。
@@ -117,7 +115,7 @@ ms.locfileid: "53726202"
    - **許可** するシミュレーション URL : この設定を展開し、必要に応じて、フィッシング シミュレーション キャンペーンの一部である特定の URL を入力します。この URL は、ボックス内をクリックして値を入力し、Enter キーを押したり、ボックスの下に表示される値を選択したりしてブロックまたは削除する必要があります。 最大 10 のエントリを追加できます。 URL 構文の形式については、「テナント許可/ブロック一覧」の URL 構文 [を参照してください](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)。
 
    既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
-   
+
    > [!NOTE]
    > Advanced Delivery でサードパーティのフィッシング シミュレーションを構成するには、少なくとも 1 つの送信ドメインと少なくとも 1 つの送信 **IP** を指定する必要があります。 必要に応じて、 **シミュレーション URL** を含め、シミュレーション メッセージに存在する URL がブロックされないのを確認できます。 各フィールドに最大 10 のエントリを指定できます。 少なくとも 1 つの送信ドメインと **1** つの送信 **IP** に一致する必要がありますが、値間の関連付けは維持されません。
 
