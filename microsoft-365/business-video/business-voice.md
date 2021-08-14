@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 詳細については、Microsoft 365 Business Voice。
-ms.openlocfilehash: edffbbe615b7098377297f96a6015929d5825694
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 3e909d77d0206c6f4506030340965d8bd7c756a2ba66ab9e2619f2a706adaa3a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809708"
 ---
 # <a name="overview-of-business-voice"></a>Business Voice の概要
 
@@ -56,7 +56,7 @@ Business Voice は、ユーザーの一部なので、あらゆる場所にMicro
 1. 最後に、既存の電話番号を別の電話番号にMicrosoft Teams。
 1. 電話番号が利用可能になったら、従業員Teams主なビジネス番号に割り当てる必要があります。 これで、コンピューター、電話、タブレットで新しいビジネスTeamsアプリを使用する準備ができました。
 
-## <a name="how-to-use"></a>使用方法
+## <a name="how-to-use"></a> の使用法
 
 電話を行う場合は、コンピューター、タブレット、Teamsのアプリを開き、[通話] を選択します。 割り当てられた電話番号とダイヤル パッドが表示され、任意の番号に通話できます。 または、連絡先または電話から連絡先Outlookを選択し、直接呼び出します。
 

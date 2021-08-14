@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 99f44398bc95958ca890ddcd4203b50ff95034b4
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: c5fc256049d2b10a450b9e941bedee95c00c5883962cbc6a1e08db12e312399b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53818985"
 ---
 # <a name="microsoft-managed-desktop-supported-regions"></a>Microsoft マネージド デスクトップサポートされている地域
 

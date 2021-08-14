@@ -19,12 +19,12 @@ ms.custom:
 description: Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 828d76b95a1e3f8d1a1851121d28603a1922f486
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d5677d8840226551d31e8f846f8763bcee85c19acd79535939d1688083b5e176
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810188"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
@@ -148,7 +148,7 @@ SPF は、ユーザーの代わりにメールを送信できるメール サー
 
 ## <a name="next-steps-dkim-and-dmarc"></a>次の手順: DKIM と DMARC
 
- SPF はスプーフィングの防止に役立ちますが、SPF では保護できないスプーフィング テクニックがあります。 それらから保護するには、SPF のセットアップ後に、DKIM と DMARC を Office 365 用に構成する必要があります。
+ SPF はスプーフィングの防止に役立ちますが、SPF では保護できないスプーフィング方法があります。それらから保護するには、SPF のセットアップ後に、DKIM と DMARC を Office 365 用に構成する必要があります。
 
 [DKIM](use-dkim-to-validate-outbound-email.md) メール認証の目標は、メールの内容が改ざんされていないと証明することです。
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft 365 Defender ポータルでの攻撃シミュレーション トレーニングが従業員にどのように影響するかを学習し、シミュレーションとトレーニングの結果から分析情報を得る方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: e189864a42d025bb5ce720a6edb6c1c2c8c84623
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 7df504bb5f94a5c14792e278c03776ff45df7e8cdf788720c717e83b28baeb96
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862538"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>攻撃シミュレーション トレーニングを通して洞察を得る
 
@@ -25,7 +25,7 @@ ms.locfileid: "52878378"
 
 攻撃シミュレーション トレーニングでは、従業員が行ったシミュレーションとトレーニングの結果に基づいて分析情報を提供します。 これらの分析情報は、従業員の脅威の準備状況に関する情報を提供し続けるのに役立ちます。また、従業員と環境を攻撃に備える次の手順を推奨します。
 
-お客様が利用できる分析情報の拡大に継続的に取り組み続けます。 動作への影響と推奨されるアクションは現在利用できます。 まず、Defender ポータルの攻撃シミュレーション トレーニングにMicrosoft 365[します](https://security.microsoft.com/attacksimulator?viewid=overview)。
+お客様が利用できる分析情報の拡大に継続的に取り組み続けます。 動作への影響と推奨されるアクションは現在利用できます。 まず、ポータルで攻撃[シミュレーション トレーニングにMicrosoft 365 Defenderします](https://security.microsoft.com/attacksimulator?viewid=overview)。
 
 ## <a name="behavior-impact-on-compromise-rate"></a>侵害率に対する動作の影響
 

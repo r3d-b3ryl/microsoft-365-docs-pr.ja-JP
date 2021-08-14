@@ -19,12 +19,12 @@ description: 1 つのレビュー セットからドキュメントを選択し�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: e03cd042ac11c36838e712ccd945bc249b849f43
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: b307f538d40a0c1be1a3355f26fdfcae3dc061a29a242cfcedff51f4c7471ee3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837133"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>別のレビュー セットからレビュー セットにデータを追加
 

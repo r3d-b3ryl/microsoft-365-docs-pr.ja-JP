@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 177089e9659ee3780207a363d417909bc1e444a6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f3ee1f1d343bfdf6a3820928da85467b5c8f0d1c59390afba77c2d8ca81d789d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536744"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837181"
 ---
 # <a name="payment-information-for-guam"></a>グアムのお支払い情報
 

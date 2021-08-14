@@ -15,16 +15,16 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: この記事では、クライアントおよびサービス アプリのMicrosoft 365詳細を確認します。
-ms.openlocfilehash: e380efffc1bf29cbd4d3a77d32e4d1f8b2994da3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c3ca331329719511c834cc0b5c10af511c5450c9fcb684e22cadbc356f26d6d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855037"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365サービス アプリのサポート
 
-Microsoft は、お客様のデータを安全に保つ幅広いセキュリティ、認証、コンプライアンス機能をサポートし、IT 管理者は、Microsoft 365 管理センター内のポリシーをユーザー向けにカスタマイズできます。 次の機能は、サブスクリプションに応じて構成できる多数のエンタープライズ機能Microsoft 365です。
+Microsoft では、お客様のデータを安全に保つ幅広いセキュリティ、認証、コンプライアンス機能をサポートし、IT 管理者はユーザーに合わせて、Microsoft 365 管理センター内のポリシーをカスタマイズできます。 次の機能は、サブスクリプションに応じて構成できる多数のエンタープライズ機能Microsoft 365です。
 
 ## <a name="client-and-service-support"></a>クライアントとサービスのサポート
 

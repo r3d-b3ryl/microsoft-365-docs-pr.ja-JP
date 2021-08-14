@@ -136,7 +136,7 @@
           href: tenant-wide-setup-for-increased-security.md
         - name: 事前設定されたセキュリティ ポリシー
           href: preset-security-policies.md
-        - name: 事前設定されたセキュリティ ポリシーの構成アナライザー
+        - name: 保護ポリシーの構成アナライザー
           href: configuration-analyzer-for-security-policies.md
         - name: Defender for Office 365 の攻撃シミュレータ
           href: attack-simulator.md

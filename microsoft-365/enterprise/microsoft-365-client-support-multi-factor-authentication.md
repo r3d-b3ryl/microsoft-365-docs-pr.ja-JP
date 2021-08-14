@@ -16,16 +16,16 @@ f1.keywords:
 - NOCSH
 description: この記事では、複数要素認証をサポートするプラットフォーム、クライアント、および PowerShell モジュールについてMicrosoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8749c05e3f7ce5dacf7d3ed1eaa46a46a20482d5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d18ce34ef3b963b66ca2309f8ef0c9cc244aaeb6da4865e9a16a91623430c735
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286455"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855018"
 ---
 # <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365クライアント アプリのサポート: 多要素認証
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 サインインに追加レベルのセキュリティを提供するために、クライアントは、次に基づいてユーザー パスワードと別のユーザー検証方法の両方を使用する多要素認証 (MFA) を使用するように構成できます。
 

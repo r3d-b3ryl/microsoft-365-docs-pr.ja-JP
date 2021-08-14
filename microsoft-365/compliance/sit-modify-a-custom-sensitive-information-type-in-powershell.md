@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: PowerShell を使用してカスタム機密情報を変更する方法について説明します。
-ms.openlocfilehash: 9f8a9ef119e632c695113320ab86a3bdfef8a197
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: fc4d58fee2cdb70d3d4e7e2b80c42c8b6ac2ea7dba631fc1310c35a72f876cde
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322961"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819717"
 ---
 # <a name="modify-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタム機密情報の種類を変更する
 
