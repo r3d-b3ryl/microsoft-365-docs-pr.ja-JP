@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '組織全体OneDrive for Businessのファイルと記憶域の総数を確認するには、使用状況レポートを参照してください。 '
-ms.openlocfilehash: 92dd18c8e8f6ded655ac6f41d1179e96ef81090b
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 5b668880d03c2b14ee09361a68757ce5f6efb694f38e71e765d11a000fb04b61
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393345"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816309"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365管理センターのレポート - OneDrive for Business使用状況
 
@@ -51,12 +51,12 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 
 また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   
-|項目|説明|
+|アイテム|説明|
 |:-----|:-----|
 |**測定基準**|**定義**|
 |URL  <br/> |ユーザーのアカウントの web OneDrive。 <br/> |
 |Deleted  <br/> |ファイルの削除OneDrive。 アカウントを削除済みとしてマークするには、少なくとも 7 日かかります。  <br/> |
-|Owner  <br/> |管理者のプライマリ管理者のOneDrive。   <br/> |
+|所有者  <br/> |管理者のプライマリ管理者のOneDrive。   <br/> |
 |所有者プリンシパル名  <br/> |ユーザーの所有者の電子メール OneDrive。 <br/> |
 |最終アクティビティ日 (UTC)  <br/> | ファイル アクティビティがレポート で実行された最新のOneDrive。 OneDrive にファイル アクティビティがなかった場合、値は空白になります。  <br/> |
 |ファイル  <br/> |ファイル内のファイルのOneDrive。 <br/>|

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Architecture
 description: テスト ラボ ガイドを使用して、開発Microsoft 365環境のソリューションとシナリオを作成します。
-ms.openlocfilehash: 10ddfc9cb9f9135b352be50c555811342ae0bd2b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2e7544c7d1b39e8cba198b0fce6bbf2814e7332d0af00bdeca748b4b660f8a1a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816633"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>ソリューションとシナリオのテスト ラボ ガイド
 

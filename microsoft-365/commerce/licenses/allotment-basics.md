@@ -18,12 +18,12 @@ ms.custom:
 - commerce_licensing
 description: 新しいアロットメント機能について学習します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 0910673ce54f3f977ed8ecbc3d6c77ac2ebad0cc
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: eacb738da3f2b2a3a76333040c945de7f26dee86862b87fcf10210b33e4ae835
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893129"
 ---
 # <a name="allotment-basics"></a>Allotment の基本
 
@@ -40,17 +40,17 @@ Allotments は、グループ ベースのライセンスを使用して、ユ�
 ユーザーが使用できる任意の製品で割り当てを使用できます。
 
 - Officeスイートとスタンドアロン製品
-- エンタープライズおよびモビリティ製品
+- Enterpriseモビリティ製品
 - Dynamics 365 製品
 
 次の製品は、アロットメントでは使用できません。
 
-- Microsoft Store アプリ
+- Microsoft Storeアプリ
 - 永続的なソフトウェア、またはライセンスがない場合にユーザーに直接割り当てられるソフトウェア。
 - Azure リソース
 
 割り当ての開始には、グローバル管理者またはライセンス管理者である必要があります。
 
-## <a name="getting-started"></a>作業を開始する
+## <a name="getting-started"></a>はじめに
 
 このアロットメント機能は、プライベート プレビューで使用できるユーザー数はわずかです。 参加する場合は、次のフォームに入力します [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) 。

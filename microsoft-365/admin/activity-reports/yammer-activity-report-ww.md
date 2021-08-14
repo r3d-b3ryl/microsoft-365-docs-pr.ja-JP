@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '[アクティビティ] Yammerレポートを取得し、メッセージの投稿、Yammer読み取りを行うユーザー数の詳細を知ります。'
-ms.openlocfilehash: 49be460141c419355af1a42d1cc0f93275700f2d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 1f76b253b6f9d8de2de0eec6d01299ad1e55897424e10a2b03f00171f32183ed
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816147"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365管理センターのレポート - Yammerレポート
 

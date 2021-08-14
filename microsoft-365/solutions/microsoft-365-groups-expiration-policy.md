@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: グループのMicrosoft 365ポリシーについて説明します。
-ms.openlocfilehash: a5a57591e1659cf04b46f419bda3d3bca672729c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 831253a64ad30cf37370ec9e93e3f1d8172befc94705758e77367c3697c41686
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816660"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365有効期限ポリシー
 
@@ -36,7 +36,7 @@ ms.locfileid: "52925925"
 
 アクティブに使用されているグループは自動的に更新されます。 次のアクションは、グループを自動更新します。
 - SharePoint - ファイルの表示、編集、ダウンロード、移動、共有、またはアップロードを行います。 (自動更新SharePointページを表示しても、アクションとしてカウントされません。
-- Outlook - グループへの参加、グループからのグループ メッセージの読み取りまたは書き込み、およびメッセージ (Outlookなど)。
+- Outlook - グループへの参加、グループからのグループ メッセージの読み取りまたは書き込み、およびメッセージ (Outlook on the web)。
 - Teams - Teams チャネルを訪問します。
 
 グループの自動更新をYammerするアクティビティは、コミュニティ内でのドキュメントのアップロードSharePointに注意してください。
@@ -47,11 +47,11 @@ ms.locfileid: "52925925"
 有効期限が既定でオフになっていることを確認することが重要です。 管理者が使用する場合は、組織で有効にする必要があります。
 
 > [!NOTE]
-> Microsoft 365 グループの有効期限ポリシーを構成して使用するには、有効期限ポリシーが適用されるすべてのグループのメンバーに Azure AD プレミアム ライセンスを割り当てる必要がありますが、必ずしも割り当てる必要はありません。 詳細については[、「Getting started with Azure Active Directory プレミアム」 を参照してください](/azure/active-directory/active-directory-get-started-premium)。
+> Microsoft 365 グループの有効期限ポリシーを構成して使用するには、有効期限ポリシーが適用されるすべてのグループのメンバーに Azure AD Premium ライセンスを割り当てる必要がありますが、必ずしも割り当てる必要はありません。 詳細については[、「Getting started with Azure Active Directory Premium」 を参照してください](/azure/active-directory/active-directory-get-started-premium)。
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Whoグループの有効期限ポリシーを構成Microsoft 365使用できますか?
 
-|ロール|実行できる操作|
+|役割|実行できる操作|
 |---------|---------|
 |Office 365管理者 (Azure、会社管理者)、ユーザー管理者|有効期限ポリシー設定を作成、読み取り、更新Microsoft 365削除します。|
 |User|自分が[所有するMicrosoft 365](/azure/active-directory/users-groups-roles/groups-restore-deleted)グループを更新または復元する|
@@ -84,7 +84,7 @@ ms.locfileid: "52925925"
 
 使用する予定がないグループがあるが、そのコンテンツを保持する場合は、「アーカイブ グループ、チーム、[および Yammer」](end-life-cycle-groups-teams-sites-yammer.md)を参照して、さまざまなグループ サービスから情報をエクスポートする方法について確認してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 61a11d2f8a70381004cb06837df424e5106c498b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 34eedf0dfa784f168d974e06c74af4ffb88211eb67aaaccb35150fe4f04997cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893415"
 ---
 # <a name="contact-support-for-british-virgin-islands"></a>英国領バージン諸島のサポートに問い合わせ
 

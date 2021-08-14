@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Microsoft 365 のグループ レポートで、グループとそのアクティビティについて確認します。
-ms.openlocfilehash: a013e8fd7ff555cfb1700260cb26ce83f4d07339
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: f899b742cb4d7098c1b8bcf7b51563e009dcd0217c74fb71f6bc98944650c681
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53408950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816381"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターでの Microsoft 365 レポート - Microsoft 365 グループ
 
@@ -59,7 +59,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 |Deleted |削除されたグループの数。 削除されたがレポート期間中にアクティビティがあるグループは、グリッドでこのフラグが true に設定されることで示されます。 |
 |グループ所有者 |グループ所有者の名前。 |
 |最終アクティビティ日 (UTC) |グループがメッセージを受信した最新の日付。 これはメールの会話、Yammer またはサイトでアクティビティが発生した最後の日付です。 |
-|型 |グループの種類。 これにはプライベート グループとパブリック グループがあります。 |
+|種類 |グループの種類。 これにはプライベート グループとパブリック グループがあります。 |
 |受信したメールは、Exchange |グループによって受信されたメッセージの数。|
 |[メール] Exchange (合計) |グループのメールボックス内のアイテムの総数。 |
 |メールボックス ストレージは、Exchange (MB) に使用されます。 |グループのメールボックスで使用される記憶域。 |

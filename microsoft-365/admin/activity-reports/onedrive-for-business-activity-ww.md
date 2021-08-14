@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織のOneDriveレポートを取得し、すべてのユーザーのアクティビティ、共有OneDriveファイルの数、およびストレージ使用率を確認します。
-ms.openlocfilehash: 8257d8e85819ff5edae96967fd4a687be3a903a1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3f651732a6684389aa3be5214600385797d4b202b79491379f53712dc61f8ac2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244094"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816345"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365管理センターのレポート - OneDrive for Businessアクティビティ
 
@@ -58,7 +58,7 @@ Microsoft 365 の [**レポート**] ダッシュボードには、組織内で�
 |同期されたファイル  <br/> |ユーザーのローカル デバイスからユーザー アカウントに同期されたファイルOneDriveします。 <br/> |
 |内部で共有されるファイル  <br/> | 組織内のユーザー、またはグループ内のユーザーと共有されているファイルの数 (外部ユーザーを含む場合があります)。  <br/> |
 |外部で共有されるファイル  <br/> |組織外のユーザーと共有されているファイルの数。 <br/>|
-|削除済み  <br/> | これは、ユーザーのライセンスが削除されたかどうかを示します。  <br/> 注: 削除されたユーザーのアクティビティは、選択した期間中にライセンスを取得された場合でも、レポートに表示されます。 [ **削除済み** ] 列は、アクティブではない状態になったユーザーが引き続きレポート内のデータに影響している可能性に注意するのに役立ちます。  <br/> |
+|Deleted  <br/> | これは、ユーザーのライセンスが削除されたかどうかを示します。  <br/> 注: 削除されたユーザーのアクティビティは、選択した期間中にライセンスを取得された場合でも、レポートに表示されます。 [ **削除済み** ] 列は、アクティブではない状態になったユーザーが引き続きレポート内のデータに影響している可能性に注意するのに役立ちます。  <br/> |
 |削除日  <br/> |ユーザーのライセンスが削除された日付。 <br/>|
 |割り当てられた製品  <br/> |ユーザー Microsoft 365ライセンスされている製品の一覧です。|
 |||

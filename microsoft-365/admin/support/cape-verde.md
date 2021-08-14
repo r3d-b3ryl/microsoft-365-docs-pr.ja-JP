@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9c25ba7fc49d5b26dd2e95262e9ef87a02a93308
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: e3fb91a47b23b49f71c9b835f262f1c68aa6847b3cd8accee9e94f4e405755c5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296385"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893399"
 ---
 # <a name="contact-support-for-cape-verde-cabo-verde"></a>カーボベルデ (カーボベルデ) の連絡先のサポート
 

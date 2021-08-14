@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso Corporation が COVID-19 パンデミックに対してどのように対応し、ハイブリッド作業用のソフトウェア のインストールと更新インフラストラクチャを設計したのかについて説明します。
-ms.openlocfilehash: 2d28b0513221f6c14526baba69bf0f5986154805
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: e40e655801cb8a980dcde4e9be2167b81f12f74cccd2bd43878c66a5aeac5ca5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788381"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816705"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Contoso 社の COVID-19 の応答とハイブリッド作業のサポート
 

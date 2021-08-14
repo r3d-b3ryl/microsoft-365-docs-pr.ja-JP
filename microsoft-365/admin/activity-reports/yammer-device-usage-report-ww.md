@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーがYammerを使用しているデバイスを確認するには、デバイス使用状況レポートをYammerします。
-ms.openlocfilehash: 817627cac791d35f49cd240ceb48de15ef328ef8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6130da9e6cb7c982489ea50fe80aa661bc2a512967284237ef63e7dc9cafc429
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241846"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816201"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Microsoft 365管理センターのレポート - デバイスYammerレポート
 

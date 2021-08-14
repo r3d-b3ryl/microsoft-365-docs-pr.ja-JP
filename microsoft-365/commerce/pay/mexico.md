@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5300552fdd2b33986c96ad5f59e827e3e309ca47
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 460ba16b68263d8c56858b4b833e37737fde5052b732247539144643596aa62e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535424"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893105"
 ---
 # <a name="payment-information-by-deposit-or-electronic-transfer-only-for-mexico"></a>入金または電子転送による支払い情報 (メキシコのみ)
 
