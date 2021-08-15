@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 SQL DataParser コネクタを設定して使用して、SQL データをインポートおよびアーカイブするMicrosoft 365。
-ms.openlocfilehash: 67ad3332a05356702df7b0624ee05519ff30bcac
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 6820400d215f2ed94f9741e877bee54c11ab746ebb0f6933840f3d5e9b3792dc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454031"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872250"
 ---
 # <a name="set-up-a-connector-to-archive-sql-data"></a>データをアーカイブするコネクタをSQLする
 

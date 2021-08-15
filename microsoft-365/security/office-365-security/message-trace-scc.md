@@ -14,12 +14,12 @@ ms.custom:
 description: 管理者は、ポータルのメッセージ トレース リンクをMicrosoft 365 Defender、メッセージに何が起こったのかを確認できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7b6f7b12086e46c6ad93b60e8c510ea533815a1
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 406e091793d12ee40729ba792d7ac82790463f506a82ffb1612c64563b179969
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108129"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56885492"
 ---
 # <a name="message-trace-in-the-microsoft-365-defender-portal"></a>ポータル内のMicrosoft 365 Defenderトレース
 

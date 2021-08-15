@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4fddd6e6744c9bd6a27ac13acbf1a9c269878359
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0c8e738cdd9fc0111289fa5fa6da4039a472519b0671897dd35f8e0e3e30aa53
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535652"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831381"
 ---
 # <a name="payment-information-for-afghanistan"></a>アフガニスタンの支払い情報
 

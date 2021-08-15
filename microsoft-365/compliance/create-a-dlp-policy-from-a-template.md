@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: この記事では、データベースに含まれるテンプレートのいずれかを使用して DLP ポリシーを作成する方法についてOffice 365。
-ms.openlocfilehash: 729f9ba742b2263ee557c076c987e511a9bdfcc2
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3c2b4d6164b56cdfdc00cf030046fcb7ba07ea49755a4e9a4b79d12fffb8c56c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886714"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 

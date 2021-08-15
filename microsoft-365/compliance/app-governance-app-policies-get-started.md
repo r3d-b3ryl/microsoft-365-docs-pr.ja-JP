@@ -2,8 +2,8 @@
 title: アプリ ポリシーの使用を開始する
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリ ポリシーついて説明をします。
-ms.openlocfilehash: 96acc17322cf811ba2ce36345df972f36b7706c7
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: fae9afa65c4bef1d7288493e92c8b78c6fb9d08fa4426c1087622856b4cec921
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541285"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861310"
 ---
 # <a name="get-started-with-app-policies"></a>アプリ ポリシーの使用を開始する
 
@@ -27,7 +27,7 @@ ms.locfileid: "53541285"
 
 Microsoft アプリ ガバナンスのアプリ ポリシーは、より積極的または事後対応的な条件を実装して、組織内のアプリ コンプライアンスに関する特定のニーズに対するアラートまたは自動修復を作成する方法です。
 
-現在のアプリ ポリシーの一覧を表示するには **[Microsoft 365 コンプライアンス センター] > [アプリ保護とガバナンス] > [ポリシー]** に移動します。
+現在のアプリ ポリシーの一覧を表示するには、**[Microsoft 365 コンプライアンス センター] > [アプリ ガバナンス] > [ポリシー]** に移動します。
 
 ![Microsoft 365 コンプライアンス センターの MAPG ポリシーの概要ページ](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
@@ -61,7 +61,7 @@ Microsoft アプリ ガバナンスのアプリ ポリシーは、より積極�
 以下のことも実行できます。
 
 - 新しいポリシーを作成します。アプリの使用ポリシーまたはアクセス許可ポリシーから始めることができます。
-- ポリシー一覧をコンマ区切り値 (CSV) ファイルにエクスポートします。 たとえば、Microsoft Excel で CSV ファイルを開き、**重大度** と **アラートの合計数** でポリシーを並べ替えることができます。
+- ポリシー一覧をコンマ区切り値 (CSV) ファイルにエクスポートします。たとえば、Microsoft Excel で CSV ファイルを開き、**重大度** と **アラートの合計数** でポリシーを並べ替えることができます。
 - ポリシー一覧を検索します。
 
 ## <a name="next-step"></a>次の手順

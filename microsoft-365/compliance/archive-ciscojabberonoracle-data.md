@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Oracle の Cisco Jabber からデータをインポートおよびアーカイブするために、Microsoft 365 コンプライアンス センターでコネクタをセットアップして使用する方法について説明Microsoft 365。
-ms.openlocfilehash: 8c8e95a9a96767aa227c463c96b04a30d8aac7dc
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5765cbd761bda785c1b6d617455d41cb39abc78008c4083f37a7e12dbf00b4a2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861130"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Oracle データで Cisco Jabber をアーカイブするコネクタをセットアップする
 

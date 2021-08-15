@@ -15,12 +15,12 @@ ms.custom:
 description: この記事では、EOP (EOP) 管理者が使用できるレポートとトラブルシューティング Microsoft Exchange Onlineについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 8131fcd655d423438f80d3f2b4b5cbaf9acc32be056ef2b7a62e6647dd67ee70
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054383"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56886181"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP でのレポートとメッセージの追跡
 

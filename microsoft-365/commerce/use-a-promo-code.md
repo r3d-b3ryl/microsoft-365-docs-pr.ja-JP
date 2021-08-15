@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150 S
 description: 価格を下Microsoft 365プロモーション コードを Microsoft 365する方法と、エラーが発生した場合のプロモーション コードのトラブルシューティング方法について説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 2a75f3e31a417e505c0f91044c61270f8bad8bae
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 01a185229f7ca07b7f665fa0515ed479490b92f4e8499787711bb847e2cb51e9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344652"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872661"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>プロモーション コードを使用して価格を下
 

@@ -19,12 +19,12 @@ ms.collection:
 description: 詳細については、「Microsoft Defender for microsoft Defender for Office 365」を参照してください。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba619c5341913190bfb84dbc34b938deee8f42ca
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: d1b080968675de25374019ea96e68cb6e9a63aa2fe72533759065cd4fbbc44c0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56885522"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender のキャンペーン ビュー (Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "52879134"
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 
-キャンペーン ビューは、Microsoft Defender for Office 365 プラン 2 の機能です (たとえば、Microsoft 365 E5 または Office 365 プラン 2 アドオンの Defender を持つ組織)。 Defender ポータルのキャンペーン ビュー Microsoft 365、サービス内のフィッシング攻撃を識別して分類します。 キャンペーン ビューは、次の目的に使用できます。
+キャンペーン ビューは、Microsoft Defender for Office 365 プラン 2 の機能です (たとえば、Microsoft 365 E5 または Office 365 プラン 2 アドオンの Defender を持つ組織)。 ポータルのキャンペーン ビュー Microsoft 365 Defender、サービス内のフィッシング攻撃を識別して分類します。 キャンペーン ビューは、次の目的に使用できます。
 
 - フィッシング攻撃を効率的に調査し、対処する。
 - 攻撃対象を正確に理解する。
@@ -54,11 +54,11 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 キャンペーンの期間が短い場合や、アクティブな期間と非アクティブな期間がある数日、数週間、または数か月に及んでいる可能性があります。 特定の組織に対してキャンペーンが開始される場合や、組織が複数の企業で大規模なキャンペーンに参加している可能性があります。
 
-## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Defender ポータルのキャンペーン ビュー Microsoft 365表示
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルのキャンペーン ビュー
 
-キャンペーン ビューは、Microsoft 365 Defender ポータル ( ) の [メール &] で、または直接 <https://security.microsoft.com>  \>  <https://security.microsoft.com/campaigns> .
+キャンペーン ビューは、Microsoft 365 Defenderポータル ( ) の [メール &] で、または直接 <https://security.microsoft.com>  \> . <https://security.microsoft.com/campaigns>
 
-![Defender ポータルのキャンペーンMicrosoft 365概要](../../media/campaigns-overview.png)
+![Microsoft 365 Defender ポータルのキャンペーンの概要](../../media/campaigns-overview.png)
 
 また、次の場所からキャンペーン ビューを取得できます。
 
@@ -67,7 +67,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 - **メール&コラボレーション** \>**エクスプローラー** \>**表示** \>**フィッシング** \>**[キャンペーン**] タブ
 - **メール&コラボレーション** \>**エクスプローラー** \>**表示** \>**マルウェア** \>**[キャンペーン**] タブ
 
-キャンペーン ビューにアクセスするには、Defender ポータルの組織の管理、セキュリティ管理者、またはセキュリティリーダーの役割グループのメンバー Microsoft 365必要があります。  詳細については、「Defender ポータル[のアクセス許可」をMicrosoft 365してください](permissions-microsoft-365-security-center.md)。
+キャンペーン ビューにアクセスするには、組織の管理、セキュリティ管理者、またはセキュリティリーダーの役割グループのメンバーである必要があります。Microsoft 365 Defenderします。  詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
 ## <a name="campaigns-overview"></a>キャンペーンの概要
 
@@ -88,7 +88,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 - **種類**: この値は、**フィッシングまたはマルウェア****のいずれかです**。
 
-- **サブ** タイプ : この値には、キャンペーンの詳細が含まれる。 以下に例を示します。
+- **サブ** タイプ : この値には、キャンペーンの詳細が含まれる。 例:
   - **フィッシング**: 利用可能な場合は、このキャンペーンによってフィッシングされているブランド。 たとえば `Microsoft` `365` `Unknown` 、、、、、、、 `Outlook` `DocuSign` などです。
   - **マルウェア**: たとえば、 `HTML/PHISH` または `HTML/<MalwareFamilyName>` .
 
@@ -127,7 +127,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
   - **送信者**
   - **受信者**
   - **送信元ドメイン**
-  - **[件名]**
+  - **Subject**
   - **添付ファイルの名前**
   - **マルウェア ファミリ**
   - **タグ**: 指定したユーザー タグが適用されているユーザーまたはグループ (優先度アカウントを含む)。 ユーザー タグの詳細については、「ユーザー タグ」 [を参照してください](user-tags.md)。

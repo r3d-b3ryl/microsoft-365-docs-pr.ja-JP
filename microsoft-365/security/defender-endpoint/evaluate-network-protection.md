@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 98e4c80c2e0262712885f1e7a2da82886b2ebe80
-ms.sourcegitcommit: b6e63febe24ef1f1793dfb3ecc5ed41a4e730578
+ms.openlocfilehash: f32e6be475ad61b83220a76527b625f2aa06580d6a181cdd8f8133eba2d27211
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53309368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898416"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 
@@ -61,7 +61,7 @@ ms.locfileid: "53309368"
 
 ブロックされているアプリを確認するには、Microsoft-Windows-Windows-Defender/Operational ログでイベント ビューアーを開き、イベント ID 1125 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
 
-| イベント ID | 提供/ソース | 説明 |
+| イベント ID | 提供/ソース | Description |
 |-|-|-|
 |5007 | Windows Defender (運用) | 設定が変更された場合のイベント |
 |1125 | Windows Defender (運用) | ネットワーク接続が監査された場合のイベント |

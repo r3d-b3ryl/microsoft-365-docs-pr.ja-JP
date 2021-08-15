@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 17228f634dc4aee9cfd416ca676920a5b4e0fba2
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 61735abbce8445d4c3293085c320c9d253c745dcef66ace90fbfb8ba73ebe89b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56886211"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 

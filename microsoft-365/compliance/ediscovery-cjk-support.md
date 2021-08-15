@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 2 Advanced eDiscovery文字セットMicrosoft 365使用する中国語、日本語、韓国語 (CJK) 言語をサポートする方法について学習します。
-ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7301903effa11dbe090197f0445f572b754fb44ca267b39b8cdc18ed27459fb4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926603"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905885"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>CJK 言語サポートのAdvanced eDiscovery
 

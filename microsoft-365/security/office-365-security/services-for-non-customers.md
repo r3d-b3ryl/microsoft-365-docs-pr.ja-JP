@@ -17,12 +17,12 @@ ms.collection:
 description: 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3213cae1b04b3f1a1b861e8f2cfc698576013546
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3a8ad98029fdc7f008ff6b22c2e8fa3e738b9fc7c0caa13b0aaca918a40f4d3e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56886172"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>ユーザーにメールを送信する非顧客Microsoft 365
 

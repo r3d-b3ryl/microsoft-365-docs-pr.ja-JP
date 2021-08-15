@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、スパム対策ポリシー (EOP) で使用できる高度なスパム フィルター (ASF) 設定Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77676277678bd6f8dcfade2b6929a9e1e113bf4b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5f2646863c7b31fae6aa292cca23181996c266b158f168c471675d0f4c6bab69
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878234"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56886212"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP の高度なスパム フィルター (ASF) 設定
 
@@ -47,7 +47,7 @@ ms.locfileid: "52878234"
 > - 検疫でフィルター処理されたメッセージの存在。
 > - この記事 `X-CustomSpam:` の説明に従ってメッセージに追加される特定の X ヘッダー フィールド。
 
-以下のセクションでは、Microsoft 365 Defender ポータルおよび Exchange Online PowerShell またはスタンドアロン EOP PowerShell[(New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy)および[Set-HostedContentFilterPolicy)](/powershell/module/exchange/set-hostedcontentfilterpolicy)でスパム対策ポリシーで使用できる ASF 設定とオプションについて説明します。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+以下のセクションでは、Microsoft 365 Defender ポータルおよび Exchange Online PowerShell またはスタンドアロン EOP PowerShell[(New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy)および[Set-HostedContentFilterPolicy)](/powershell/module/exchange/set-hostedcontentfilterpolicy)のスパム対策ポリシーで使用可能な ASF 設定とオプションについて説明します。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ## <a name="enable-disable-or-test-asf-settings"></a>ASF 設定を有効、無効、またはテストする
 
@@ -58,9 +58,9 @@ ASF 設定ごとに、スパム対策ポリシーで次のオプションを使�
 - **Test**: ASF は、対応する X ヘッダー フィールドをメッセージに追加します。 メッセージに何が起こるかは、テスト モード **(** *TestModeAction*) の値によって決まります。
   - **なし**: メッセージ配信は ASF 検出の影響を受けません。 メッセージは、EOP の他の種類のフィルター処理とルールの対象です。
   - **既定の X ヘッダー テキスト (*AddXHeader*) を** 追加する: X ヘッダー値 `X-CustomSpam: This message was filtered by the custom spam filter option` がメッセージに追加されます。 受信トレイ ルールまたはメール フロー ルール (トランスポート ルールとも呼ばれる) でこの値を使用すると、メッセージの配信に影響を与える可能性があります。
-  - **Bcc メッセージの送信 (*BccMessage*)**: 指定した電子メール アドレス *(PowerShell の TestModeBccToRecipients* パラメーター値) がメッセージの Bcc フィールドに追加され、メッセージは追加の BCC 受信者に配信されます。 Defender ポータルMicrosoft 365、複数の電子メール アドレスをセミコロン (;)) で区切ります。 PowerShell では、複数の電子メール アドレスをコンマで区切ります。
+  - **Bcc メッセージの送信 (*BccMessage*)**: 指定した電子メール アドレス *(PowerShell の TestModeBccToRecipients* パラメーター値) がメッセージの Bcc フィールドに追加され、メッセージは追加の BCC 受信者に配信されます。 このポータルMicrosoft 365 Defender、複数の電子メール アドレスをセミコロン (;)) で区切ります。 PowerShell では、複数の電子メール アドレスをコンマで区切ります。
 
-  **注**:
+  **注意**:
 
   - テスト モードは、次の ASF 設定では使用できません。
     - **条件付き送信者 ID フィルター: ハード失敗** (*MarkAsSpamFromAddressAuthFail*)

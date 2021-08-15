@@ -15,12 +15,12 @@ ms.custom:
 description: この記事では、オンプレミスの電子メール衛生アプライアンスまたはクラウドベースの保護サービスから Exchange Online Protection (EOP) に切り替える方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dfbbc44ebfed6cafb97e36b18a4fc34c91840d9b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 610ac3633516be12fe42cdfb77b0b240f7408746203284f6dba227021d314ed1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624015"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56886171"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Google Postini、Barracuda Spam、Virus Firewall、Cisco IronPort から EOP に切り替える
 

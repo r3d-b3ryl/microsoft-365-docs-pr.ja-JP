@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: プレゼンテーションまたは外部レビュー用のレビュー セットからコンテンツを選択Advanced eDiscoveryダウンロードする方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9508a12e07440d16058b1c5303f0eb5f8f92b743
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: adda9d1ee8594137a68994f8fc908297991ff525341af4421535536cf77b346f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905868"
 ---
 # <a name="download-selected-documents-from-a-review-set"></a>レビュー セットから選択したドキュメントをダウンロードする
 

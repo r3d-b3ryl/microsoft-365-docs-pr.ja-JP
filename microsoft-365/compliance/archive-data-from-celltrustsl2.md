@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: CellTrust SL2 データ コネクタをセットアップして使用して、モバイル通信データをインポートおよびアーカイブする方法について学習します。
-ms.openlocfilehash: c437df7715e41fc0977142b60356ed4decf62027
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 802d5e08354d5fbdc179c01a7c72145a5d0c7ac3f12907b06632cd5db758ee0f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541135"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861085"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>CellTrust SL2 からデータをアーカイブMicrosoft 365
 
@@ -99,7 +99,7 @@ CellTrust の SL2 プラットフォームは、複数のソースからの通�
 
 [CellTrust SL2 データ](https://www.celltrust.com/contact-us/#support)コネクタのセットアップに関するヘルプについては、CellTrust への問い合わせの詳細については、CellTrust カスタマー サポート ページを参照してください。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - ドメイン管理者は、そのドメインまたはそのドメイン内の任意の OUs のコネクタを設定できます。 OU 管理者アカウントを使用する場合は、その特定の OU のコネクタのみを設定できます。
 

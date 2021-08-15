@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: レビュー セット内のドキュメントを Azure Storage アカウントにエクスポートし、Azure Storage Explorerを使用してローカル コンピューターにダウンロードします。
-ms.openlocfilehash: b7638e33a40a2ac46f4bb69b869e4c2cf6d48f65
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e4dee3eb6da53b58e79993f39e4540e0c2d1951f41be13c370fb3631138f5208
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256509"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906044"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>レビュー セット内のドキュメントをアカウントにAzure Storageする
 
@@ -115,7 +115,7 @@ Advanced eDiscovery ケースのレビュー セットからドキュメント�
 > [!NOTE]
 > エクスポート ジョブ全体をダウンロードする代わりにAzure Storage Explorerダウンロードして表示する特定のアイテムを選択できます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - エクスポート ジョブ フォルダーには、次の項目が含まれます。 エクスポート フォルダー内の実際のアイテムは、エクスポート ジョブの作成時に構成されたエクスポート オプションによって決まります。 これらのオプションの詳細については、「レビュー セットからドキュメントをエクスポート [する」を参照してください](export-documents-from-review-set.md)。
 

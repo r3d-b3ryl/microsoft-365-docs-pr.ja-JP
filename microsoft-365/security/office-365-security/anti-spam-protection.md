@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、スパム対策 (EOP) でスパムを防止するのに役立つスパム対策設定とフィルター Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9b960894b6923633489c005ee75307ec02b248f5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2145637500376944f1adf038e33c41549479a5f4da89fb456b590da8a5c78bb8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56885531"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP でのスパム対策保護
 
