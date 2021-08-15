@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: アプリのセットアップに必要なMicrosoft 365 Business Premium。
-ms.openlocfilehash: 70d0bf00afaa1a504097ac80598f9c1b1a184b05
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9a88b5269b4c3c4b566f50baf535a5896e9ad2bdde148eb82323b31dcdb64420
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831580"
 ---
 # <a name="overview-of-microsoft-365-business-premium-setup"></a>セットアップのMicrosoft 365 Business Premium概要
 
@@ -55,7 +55,7 @@ ms.locfileid: "51580404"
 
 - メール[Office 365 Business Essentials](https://www.microsoft.com/en-us/p/office-365-business-essentials/cfq7ttc0k59v?rtc=1&amp;activetab=pivot:overviewtab)ドキュメント作成、コラボレーション、クラウド ストレージ用のオンライン アプリ (Web ブラウザーでアクセスできるアプリ) を使用する場合は、[アプリ] を選択します。 これには、Word Online、Excelオンライン、PowerPointオンライン、SharePointが含まれます。
 - PC [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) Mac 上で直接実行する Word、Excel、Teams など、機能豊富なバージョンの Office アプリが必要な場合は、[Office 365 Business Premium] を選択します。 これは、オンライン アプリに加えてです。
-- すべての[Microsoft 365 Business、](https://www.microsoft.com/microsoft-365/business?rtc=1)クラウド セキュリティとデバイス管理をOfficeする場合は、[アプリ] を選択します。 これには、ウイルス、マルウェア、ランサムウェアなどの保護、デバイスの管理と暗号化が含まれます。 また、以前のバージョンのWindows 10 ProアップグレードWindows Professional取得します。
+- すべての[アプリMicrosoft 365、](https://www.microsoft.com/microsoft-365/business?rtc=1)クラウド セキュリティとデバイス管理をOffice場合は、[ビジネス] を選択します。 これには、ウイルス、マルウェア、ランサムウェアなどの保護、デバイスの管理と暗号化が含まれます。 また、以前のバージョンのWindows 10 ProアップグレードWindows Professional取得します。
 - ビジネスが大きい場合や、より複雑な IT アプリやサービスが必要な場合は、お客様のビジネス プランMicrosoft 365 Enterprise[してください](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 
 
@@ -79,7 +79,7 @@ ms.locfileid: "51580404"
 
 ## <a name="5-manage-and-secure-your-devices"></a>5. デバイスの管理とセキュリティ保護
 
-- このMicrosoft 365 Business Premium、デバイスの保護、オンラインの脅威からの保護、偶発的なデータ損失からの保護を受けられます。 また、アプリのWindows Defender、BitLocker、自動更新プログラムWindows 10 ProをOfficeできます。
+- このMicrosoft 365 Business Premium、デバイスの保護、オンラインの脅威からの保護、偶発的なデータ損失からの保護を受けられます。 また、アプリのWindows Defender、BitLocker、自動更新プログラムWindows 10 Pro取得Officeします。
 - 多要素認証 (MFA)、電子メール暗号化、マルウェア保護、ランサムウェア保護をセットアップして、デバイスやデータへの不正アクセスを防止できます。
 - PC、デバイス、またはモバイル デバイスにローカルに保存SharePoint、OneDrive for Business作業データを保護できます。 Microsoft 365 用の組み込みのモバイル デバイス管理 (MDM) を使用すると、iPhone、iPad、Android、Windows 電話など、&#39; モバイル デバイスのユーザーのセキュリティ保護と管理に役立ちます。 MDM を使用すると、デバイスのセキュリティ ポリシーを作成および管理したり、リモートでデバイスをワイプしたり、詳細なデバイス レポートを参照できます。
 

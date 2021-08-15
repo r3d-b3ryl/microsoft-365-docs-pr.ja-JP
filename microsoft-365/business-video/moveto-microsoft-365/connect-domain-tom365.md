@@ -15,19 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ドメインをドメインに接続する方法についてMicrosoft 365。
-ms.openlocfilehash: 1bec66a43026321ddf1979c73902a533bee3a07b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b91b6fcc297449906e54a8f61f52b9d3c8b01ca6d009d43fa69a5873b81eb873
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925112"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887865"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>Connectをビジネス向Microsoft 365に設定する
 
@@ -54,6 +53,6 @@ Google Workspace からメール データMicrosoft 365設定して移動した�
 1. [データ **] フィールド** に、コピーしたレコードを貼り付けます。
 1. 次に **[追加]** を選択します。
 1. CNAME レコードと TXT レコードの処理を繰り返し、Google DNS 管理ページに値を追加します。
-1. 管理センターに戻り、[続行Microsoft 365を選択 **します**。
+1. [次へ] をクリックMicrosoft 365 管理し、[続行] を **選択します**。
 
     ドメインのセットアップが完了しました。

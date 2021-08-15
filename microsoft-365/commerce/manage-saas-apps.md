@@ -17,18 +17,18 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: 管理センターでサード パーティ製アプリをアクティブ化および管理するMicrosoft 365します。
+description: サード パーティ製アプリをアクティブ化して管理する方法については、Microsoft 365 管理センター。
 ms.date: 04/15/2021
-ms.openlocfilehash: f061137270416d13db1f1cd32aa17f50f2f8c5d2
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: d7de6613ae77d70631b926ac1c2e72fab8b1837bacaf6f6f0e5a4735ef5dd06b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866609"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831437"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織のサード パーティ製アプリのサブスクリプションを管理する
 
-新しい管理センターでサード パーティ製アプリのライセンスと請求をMicrosoft 365できます。 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの改善、請求書管理の柔軟性の向上が含まれます。 サブスクリプション管理は、Microsoft の更新されたコマース プラットフォームに基づいて行います。 これは、顧客が直接購入するサービスとしてのソフトウェア アプリ、またはサード パーティ プロバイダーから適用されます。
+新しいアプリでサード パーティ製アプリのライセンスと請求を管理Microsoft 365 管理センター。 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの改善、請求書管理の柔軟性の向上が含まれます。 サブスクリプション管理は、Microsoft の更新されたコマース プラットフォームに基づいて行います。 これは、顧客が直接購入するサービスとしてのソフトウェア アプリ、またはサード パーティ プロバイダーから適用されます。
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>サービスとしてのソフトウェア アプリを取得する方法
 
@@ -38,7 +38,7 @@ ms.locfileid: "52866609"
 - **パートナー購入** – パートナー センターを通じてパートナーと一緒にサブスクリプションを購入します。
 - **Microsoft の提案** – サード パーティ製アプリを含む Microsoft Sales からの提案に応答します。
 
-お客様がアプリを購入し、Microsoft カスタマー 契約に同意すると、管理センターまたは管理センター Microsoft 365で管理ビジネス向け Microsoft Store。
+お客様がアプリを購入し、Microsoft カスタマー 契約に同意すると、ユーザーはアプリの管理Microsoft 365 管理センター、ビジネス向け Microsoft Store。
 
 アプリ プロバイダーは、アプリを一定額で販売するか、ユーザーのライセンスを購入します。
 
@@ -74,7 +74,7 @@ ms.locfileid: "52866609"
 
 ## <a name="manage-third-party-apps"></a>サードパーティ製のアプリを管理する
 
-管理者は、管理センターとサード パーティ アプリ プロバイダーのポータルの 2 つの場所Microsoft 365サードパーティ アプリを管理します。
+管理者は、サードパーティ アプリを 2 つの場所Microsoft 365 管理センターサードパーティ アプリ プロバイダーのポータルで管理します。
 
 各ポータルで実行できる操作を次に示します。
 

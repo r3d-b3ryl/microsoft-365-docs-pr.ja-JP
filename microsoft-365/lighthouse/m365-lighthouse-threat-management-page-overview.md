@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: '[脅威の管理] ページを使用Microsoft 365 Lighthouseマネージド サービス プロバイダー (MSP) について説明します。'
-ms.openlocfilehash: 10f39737bb69f4a5080b343cfbe6c6cfe5908d72
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 2c53c10922befea999a8025e35d53da2225aafc4a9543f13f04a35ca8e7f2ecd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898982"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse脅威管理ページの概要 
 
@@ -59,7 +59,7 @@ Microsoft Defender ウイルス対策、ユーザー、デバイスを、ウイ�
 
 | 脅威の状態 | 定義 |
 |--|--|
-| Active | デバイスで脅威がアクティブです。 |
+| アクティブ | デバイスで脅威がアクティブです。 |
 | 状態なし | 脅威の状態は使用できません。 デバイスでフル スキャンを実行して、脅威Microsoft Defender ウイルス対策再検出します。 |
 | アクションが失敗しました | デバイスが危険にさらされていない。 アクションは失敗しましたが、潜在的な脅威は停止され、デバイスでアクティブではありません。 デバイスでフル スキャンを実行します。 |
 | 手動で必要な手順 | 脅威は停止されましたが、完全スキャンやデバイスの再起動など、手動で手順を完了する必要があります。 |
@@ -67,7 +67,7 @@ Microsoft Defender ウイルス対策、ユーザー、デバイスを、ウイ�
 | 再起動が必要 | デバイスの再起動が必要です。 |
 | 重大でないエラーで修復される | 脅威は修復され、それ以上のアクションは必要とされません。 |
 | 検疫済み | 脅威は検疫済みです。 それ以上のアクションは不要です。 |
-| 削除 | 脅威がデバイスから正常に削除されました。 それ以上のアクションは不要です。 |
+| 削除済み | 脅威がデバイスから正常に削除されました。 それ以上のアクションは不要です。 |
 | Cleaned | Microsoft Defender ウイルス対策ファイルを回復および駆除しました。 それ以上のアクションは不要です。 |
 | 可 | 脅威は、管理者がデバイスに残るのを許可します。 | 
 

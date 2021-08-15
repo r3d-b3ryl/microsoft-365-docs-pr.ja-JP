@@ -64,7 +64,7 @@ productDirectory:
       url: get-help-support.md
 additionalContent:
   sections:
-    - title: 詳細はこちら
+    - title: 詳細情報
       items:
         - title: 詳細については、Office
           summary: Word、Excel、PowerPointアプリのOfficeします。

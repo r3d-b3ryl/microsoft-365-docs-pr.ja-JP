@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織がコミュニケーションと共同作業を行うMicrosoft 365サービスを採用する方法の概要を確認します。
-ms.openlocfilehash: 77c1d8a2d2fe0288e7fbe8534ef76760baeac0aa
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 9e1518d85a583af100ea2734fdc1f526599e55b82882733c4516c7f88dcc2451
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394679"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887909"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 
@@ -60,7 +60,7 @@ Microsoft 365分析には、次のセクションで詳細なレポートが多�
 
 - **コミュニケーション** &ndash;組織内のユーザーが、Teams、Yammer、メール、または通話を使用して連絡を取り合うSkype確認できます。 従業員間のコミュニケーション ツールの使用にパターンが変化している場合は、確認できます。 
 
-- **コラボレーション** &ndash;組織内のユーザーがドキュメントを保存し、OneDrive SharePointする方法と、これらの傾向が月ごとにどのように進化していくのかをご覧ください。 また、内部または外部で共有されるドキュメントの数、および所有者や他の共同作業者によって分け分け、積極的に使用されている SharePoint サイトまたは OneDrive アカウントの数を確認することもできます。
+- **コラボレーション** &ndash;組織内のユーザーがドキュメントを保存し、OneDrive SharePointする方法と、これらの傾向が月ごとにどのように進化していくのかをご覧ください。 また、内部または外部でドキュメントを共有したユーザーの数、および所有者や他の共同作業者によって分解された SharePoint サイトまたは OneDrive アカウントを使用したユーザーの数も確認できます。
 
 - **Storage** &ndash;このレポートを使用して、メールボックス、ユーザー、およびサイトOneDriveクラウド ストレージSharePointします。
 
@@ -80,9 +80,9 @@ Microsoft 365分析には、次のセクションで詳細なレポートが多�
 
 ## <a name="user-activity"></a>ユーザー アクティビティ
 
-ユーザー アクティビティ レポートは、特定の個々のサービスで使用できます。 これらのレポートは、Active Directory 属性と結合されたユーザー レベルの詳細使用状況データを提供します。 さらに、部門導入レポートを使用すると、Active Directory 属性でスライスして、すべての個々のサービスでアクティブなユーザーを確認できます。 すべての指標は、最新の完全な月に集計されます。
+ユーザー アクティビティ レポートは、特定の個々のサービスで使用できます。 これらのレポートは、Active Directory 属性と結合されたユーザー レベルの詳細使用状況データを提供します。 さらに、部門導入レポートを使用すると、Active Directory 属性でスライスして、すべての個々のサービスでアクティブなユーザーを確認できます。 すべての指標は、最新の完全な月に集計されます。 コンテンツの日付を表示するには、テーブル ページに移動し、TimeFrame の下の値がレポート期間を提供する UserActivity テーブルを選択します。 
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>このテンプレート アプリは購入によって利用できるか、それとも無料になるか。
 

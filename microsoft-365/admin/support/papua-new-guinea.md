@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: aaf783902301243b6265139cddb6e5d55f25817c
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ed679cbf9cf795a4e555849b5e5ceeef06b72752daaa706030833c6d90f0fbec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887949"
 ---
 # <a name="contact-support-for-papua-new-guinea"></a>パプアニューギニアのサポートへのお問い合わせ
 

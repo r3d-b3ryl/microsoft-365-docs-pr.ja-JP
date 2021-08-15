@@ -18,13 +18,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: E3、Office 365、Microsoft 365 Business Standard、またはMicrosoft 365 Business Premiumを決定します。
-ms.openlocfilehash: 2f8c59e0af619730060862fc8ee24a702ca00343
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: ビジネスにOffice 365 E3、Microsoft 365 Business Standard、またはMicrosoft 365 Business Premiumを決定します。
+ms.openlocfilehash: f186e61bff7962911864904415d1a4326931db819abf4f885a87132fd23290f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579824"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861561"
 ---
 # <a name="what-subscription-is-right-for-your-small-business"></a>中小企業に適切なサブスクリプションは何ですか?
 

@@ -22,21 +22,21 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス サブスクリプションの請求頻度を変更する方法について学習します。
 ms.date: 04/02/2021
-ms.openlocfilehash: 52bf7f3eda473e241f5fef7c5d7c8e7417ab841e
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 14eef03bd156987fe3aa485f8276b37849a58b9cc31e14505de712dbc5655349
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861425"
 ---
 # <a name="change-your-billing-frequency"></a>請求頻度の変更
 
 サブスクリプションを購入する場合、月単位の課金か年単位の課金かを選択できます。 サブスクリプションの請求頻度を変更するには、次の手順を実行します。
 
-1. 管理センターで、**[課金]**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
+1. 管理センターで、[製品の請求]  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ページに移動</a>します。
 2. **[製品]** タブで、変更するサブスクリプションを選択します。
 3. サブスクリプションの詳細ページの **[サブスクリプションと支払い設定]** セクションで、**[請求頻度の編集]** を選択します。
-4. [請求 **頻度の編集]** ウィンドウで、請求頻度のオプションを選択し、[変更] を **選択します**。
+4. **[請求頻度の編集]** ウィンドウで、請求する頻度のオプションを選択し、**[変更]** を選択します。
 
 ## <a name="related-content"></a>関連コンテンツ
 

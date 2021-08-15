@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4ff9056421d32abf83970356f9f99d9aea2adc3f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 21711c1e992ef5c6cee0ead839f35327f90a04fe855213913b29283637cb273c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535340"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906461"
 ---
 # <a name="payment-information-for-new-zealand"></a>ニュージーランドのお支払い情報
 
@@ -36,13 +36,13 @@ MICROSOFT REGIONAL **SALES PTE LTD** によって請求される請求書があ�
 **SWIFT コード:** CITINZ2X  
 **サフィックス (3 桁):** 004  
 **サフィックス (2 桁):** 04  
-**アカウント番号:** 0026181  
+**アカウント番号: 0026181**  
 **アカウント名:** MICROSOFT
 
 2021 年 3 月 1 日から注文と消費に対して **Microsoft New Zealand Limited** によって請求された請求書がある場合は、次の銀行情報を使用します。
 
 **Bank:** シティバンク、N.A. ニュージーランド支店  
 **SWIFT コード:** CTINZ2X  
-**BSB:** 312825  
+**BSB: 312825**  
 **アカウント番号:** 0008655083  
 **アカウント名:** MICROSOFT

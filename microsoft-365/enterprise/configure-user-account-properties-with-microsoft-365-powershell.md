@@ -18,16 +18,16 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: PowerShell を使用して、Microsoft 365テナント内の個々または複数のユーザー アカウントのプロパティMicrosoft 365します。
-ms.openlocfilehash: aeb9b586c42a0bdfb8d69b8d297998fedc1124e6
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2bed1d15c54b1f025cf4173d8e6a0b1be2757054587a306bc7c31187c2b89962
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850137"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントのプロパティを構成する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 このプロパティを使用Microsoft 365 管理センターテナントのユーザー アカウントのプロパティをMicrosoft 365できます。 PowerShell では、管理センターで実行できないその他の操作も実行できます。
   

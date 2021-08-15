@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: GEA150
 description: 無料の 30 日間の試用版にサインアップして、Microsoft 365 Business Standard、Microsoft 365 Business Premium、Microsoft 365 Apps for business。
 ms.date: 08/07/2020
-ms.openlocfilehash: 1ef3ceffb795a25ebad0bac1e37dd12df6f62d90
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 794b278be829a30bbea4833253ef45d75f1f1048add2ce493b2b65c1093b5de4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394871"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861329"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>一般法人向け Microsoft 365 サブスクリプションを試用する/購入する
 
@@ -76,9 +76,9 @@ Microsoft 365は、Microsoft が IT の管理を行っている間にクラウ�
 購入する前に、ビジネス向けサービスの機能を試Microsoft 365時間が必要ですか? 試用版サブスクリプションの期限切れまでの期間が 15 日以内になり、その前に試用版を延長していない場合、試用版をさらに 30 日間延長できます。 延長できるのは 1 回のみです。
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
-2. [製品 **] タブ** で、拡張する試用版サブスクリプションを選択します。
+2. **[製品]** タブで、延長する試用版サブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの [ **サブスクリプションと支払** いの設定] セクションで、[終了日の **延長] を選択します**。
-4. [終了日 **の延長] ウィンドウ** で、内線情報を確認し、必要に応じて支払い方法を選択します。 完了したら、[試用版の延長] **を選択します**。
+4. **[Extend end date]** (終了日の延長) ウィンドウで延長の情報を確認し、必要に応じて支払方法を選択します。 完了したら、**[試用期間の延長]** を選択します。
 
 購入する準備ができたら、「試用版を購入 [する」を参照してください](#buy-a-subscription-from-your-free-trial)。
 

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 49a78fc43616ed1e179142948bc5ca6284a3b6b8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a9ec7124659913e067a0071ad7e183aa670b8dafadc791a7dee68f38006734ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535376"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872908"
 ---
 # <a name="payment-information-for-namibia"></a>ナミビアのお支払い情報
 

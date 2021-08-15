@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 localization_priority: None
 description: M365 ラーニング ツール相互運用性 (LTI) Office アプリと、Office アプリを ラーニング 管理システム (LMS) に統合する際の教育者の支援方法について説明します。
-ms.openlocfilehash: 34956eac57a7e3af44ca1c8cf8ae2714327e3e96
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 350d0d2618275ec628f9ac884fb0de4f019021aaa4397af57129fa29bbfcb86b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898841"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Microsoft 製品とサービス管理システム (LMS) ラーニング統合する
 

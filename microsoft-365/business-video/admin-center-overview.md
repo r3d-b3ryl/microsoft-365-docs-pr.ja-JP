@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 一般的なタスクやダッシュボード ビュー Microsoft 365、より複雑な設定とタスクを管理するには、ビューの簡略化されたビューを使用します。
-ms.openlocfilehash: 61b2fb004ab4c1a84b5550065dd44f7ff7e432d8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 585deb5d4d1b7bf5758854ee90f31150ef1ed9e08b06c4402c90b7324965fad8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227657"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873161"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
@@ -157,7 +157,7 @@ Microsoft 365 管理センターは、Microsoft 365 を管理するすべての�
 |スペイン語 | es |
 |英語 | en |
 |エストニア語 | et |
-|バスク語 | eu |
+|Basque | eu |
 |フィンランド語 | fi |
 |フランス語 | fr |
 |ガリシア語 | gl |
