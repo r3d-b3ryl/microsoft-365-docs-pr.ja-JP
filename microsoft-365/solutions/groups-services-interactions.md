@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ サービスのやり取り
-ms.openlocfilehash: 13331ea53b69b4559bfe21074dd5c7d998aa68af
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3cf68b0abcf15515ebe724fe795b9b31c5ebd2b6f8b3dd6c9ca76b7b706c8508
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853069"
 ---
 # <a name="groups-services-interactions"></a>グループ サービスのやり取り
 
@@ -119,15 +119,15 @@ SharePointサイトは、所有者、メンバー、および訪問者のセキ�
 |---|---|---|---|---|
 |Azure AD|メンバーシップ、グループ コントロール、ゲスト|はい|はい|はい|
 |Exchange|予定表、メールボックス|はい|はい|はい|
-|フォーム|フォーム|はい|いいえ|なし|
-|OneNote|Notebook|はい|いいえ|なし|
+|フォーム|フォーム|はい|いいえ|いいえ|
+|OneNote|Notebook|はい|いいえ|いいえ|
 |Planner|タスク ボード|いいえ|はい|はい|
-|Power Appsアプリ|アプリ|はい|いいえ|なし|
-|Power Automate|ワークフロー|はい|いいえ|なし|
+|Power Appsアプリ|アプリ|はい|いいえ|いいえ|
+|Power Automate|ワークフロー|はい|いいえ|いいえ|
 |Power BI (クラシック)|Workspace|いいえ|はい|はい|
 |Power BI (新しい)|Workspace|はい|いいえ|はい|
-|Project for the web|Project plan|はい|はい|なし|
-|ロードマップ|ロードマップ|はい|はい|なし|
+|Project for the web|Project plan|はい|はい|いいえ|
+|ロードマップ|ロードマップ|はい|はい|いいえ|
 |SharePoint|Site|はい|はい|はい|
 |Stream|チャネル、ビデオ|はい|はい|はい|
 |Teams|チーム|いいえ|はい|はい|
@@ -646,7 +646,7 @@ Yammer プラットフォームが Microsoft 365 グループに接続されて�
 
 はい、グループを削除すると、Yammer関連する Microsoft グループとグループ関連のサービスとコンテンツが削除されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

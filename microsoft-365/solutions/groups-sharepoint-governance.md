@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループとグループ間の設定のMicrosoft 365についてSharePoint
-ms.openlocfilehash: 23e9553ce07514b18bafada5c93bcadab19806fe
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6f24f18a91e897467a85a31945efe34c78b51db74dd2ffc0aa65322fd936a9ae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538161"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853050"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>設定グループとグループ間Microsoft 365の相互作用SharePoint
 
@@ -31,7 +31,7 @@ Microsoft 365グループとSharePointのMicrosoft 365、特に共有とグル�
 
 ## <a name="the-effects-of-sharepoint-settings-on-microsoft-365-groups"></a>グループに対するSharePoint設定Microsoft 365影響
 
-|SharePoint設定|説明|グループへのMicrosoft 365影響|推奨事項|
+|SharePoint設定|Description|グループへのMicrosoft 365影響|推奨事項|
 |:-----------------|:----------|:-----------------------------|:-------------|
 |組織とサイトの外部共有|サイト、ファイル、フォルダーを組織外のユーザーと共有できるかどうかを指定します。|グループSharePoint設定が一致しない場合は、グループ内のゲストがサイトへのアクセスをブロックされる場合や、サイト内で外部アクセスを利用できますが、グループ内でアクセスできない場合があります。|共有設定を変更する場合は、グループ設定とグループSharePointチーム サイトのサイト設定の両方を確認します。<br><br>「サイト [内のゲストと共同作業する」を参照してください](./collaborate-in-site.md)。|
 |ドメインの許可/ブロック|指定したドメインとコンテンツが共有されるのを許可または防止します。|グループはリストを許可SharePointブロックする機能を認識しない。 グループ内で許可SharePointユーザーは、グループSharePointアクセスできます。|Azure のドメイン許可/ブロック リストを管理し、ADをSharePointします。 ドメインを許可およびブロックする組織全体のガバナンス プロセスを作成します。<br><br>「SharePoint[の設定」および](/sharepoint/restricted-domains-sharing)「Azure ドメイン設定[AD」を参照してください。](/azure/active-directory/b2b/allow-deny-list)|
@@ -41,14 +41,14 @@ Microsoft 365グループとSharePointのMicrosoft 365、特に共有とグル�
 
 ## <a name="the-effects-of-microsoft-365-groups-setting-on-sharepoint"></a>グループ設定がMicrosoft 365に及SharePoint
 
-|Microsoft 365グループの設定|説明|データに対するSharePoint|推奨事項|
+|Microsoft 365グループの設定|Description|データに対するSharePoint|推奨事項|
 |:---------------------------|:----------|:-------------------|:-------------|
 |名前付けポリシー|グループ名のプレフィックスとサフィックス、およびグループ作成のブロックされた単語を指定します。|ポリシーは、グループに接続されたチーム サイトを作成するユーザーに適用されますが、他のテンプレートとの通信サイトやサイトには適用されません。|必要に応じて、通信サイトの個別の名前付けガイダンスを作成します。|
 |グループのゲスト アクセス|組織外のユーザーをグループに追加できる場合に指定します。|グループSharePoint設定が一致しない場合は、グループ内のゲストがサイトへのアクセスをブロックされる場合や、サイト内で外部アクセスを利用できますが、グループ内でアクセスできない場合があります。|共有設定を変更する場合は、グループ設定とグループSharePointチーム サイトのサイト設定の両方を確認します。<br><br>「サイト [内のゲストと共同作業する」を参照してください。](./collaborate-in-site.md)|
 |セキュリティ グループによるグループ作成|グループを作成できるのは、特定のセキュリティ グループのメンバーのみです。|セキュリティ グループのメンバーではないユーザーは、グループに接続されたチーム サイトを作成できます。|グループを要求するプロセスに、サイトを要求する手順が含まれています。|
 |グループの有効期限ポリシー|アクティブに使用されていないグループが自動的に削除される期間を指定します。|グループが削除された場合、関連付SharePointサイトも削除されます。 アイテム保持ポリシーによって保護されたコンテンツは保持されます。|有効期限ポリシーを使用して、未使用のグループとサイトの広がりを回避します。|
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

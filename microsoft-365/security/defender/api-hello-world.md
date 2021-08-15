@@ -1,6 +1,6 @@
 ---
 title: Hello World for Microsoft 365 Defender REST API
-description: アプリを作成し、トークンを使用して Defender API にアクセスする方法Microsoft 365説明します。
+description: アプリを作成し、トークンを使用してアプリ API にアクセスするMicrosoft 365 Defenderする
 keywords: アプリ、トークン、アクセス、aad、アプリ、アプリケーション登録、powershell、スクリプト、グローバル管理者、アクセス許可、microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ffdcf91da6b5def7d63e5fdb8ff51ddbdb1ec550
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 50316659caf811410b9422151e47feb17fbead8055bec08a3e4e342d61f2d83b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888856"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World for Microsoft 365 Defender REST API
 
@@ -52,10 +52,10 @@ ms.locfileid: "51064716"
 
 3. 登録フォームで、アプリケーションの名前を選択し、[登録] を **選択します**。 リダイレクト URI の選択はオプションです。 この例を完了するために必要な情報は不要です。
 
-4. アプリケーション ページで **、[API アクセス** 許可] [アクセス許可の追加] を選択し、組織で使用するアクセス許可 API >、Microsoft Threat Protectionを入力し、[Microsoft Threat Protection]  >    >  **を選択します**。  これで、アプリは Defender にMicrosoft 365できます。
+4. アプリケーション ページで **、[API アクセス** 許可] [アクセス許可の追加] を選択し、組織で使用するアクセス許可 API > Microsoft Threat Protection と入力し  >    >  **、[Microsoft** Threat **Protection] を選択します**。 これで、アプリはアプリにアクセスMicrosoft 365 Defender。
 
    > [!TIP]
-   > *Microsoft Threat Protection* Defender の元の名前Microsoft 365元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
+   > *Microsoft Threat Protection* は、元のMicrosoft 365 Defenderの名前であり、元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
    ![API アクセス許可の選択のイメージ](../../media/apis-in-my-org-tab.PNG)
 
    - [**アプリケーションのアクセス許可**  >  **インシデント.Read.All] を選択し、[** アクセス許可 **の追加] を選択します**。
@@ -172,10 +172,10 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365Defender API の概要](api-overview.md)
-- [Defender API Microsoft 365アクセスする](api-access.md)
-- [ユーザーなしで Defender にアクセスMicrosoft 365アプリを作成する](api-create-app-web.md)
-- [ユーザーに代わって Defender API Microsoft 365アクセスするアプリを作成する](api-create-app-user-context.md)
-- [複数テナントパートナーが Defender API にアクセスできるアプリMicrosoft 365作成する](api-partner-access.md)
+- [Microsoft 365 DefenderAPI の概要](api-overview.md)
+- [API にMicrosoft 365 Defenderする](api-access.md)
+- [ユーザーなしでアプリを作成してMicrosoft 365 Defenderにアクセスする](api-create-app-web.md)
+- [ユーザーに代わって API にMicrosoft 365 Defenderするアプリを作成する](api-create-app-user-context.md)
+- [複数テナントパートナーによる API へのアクセス権を持つアプリをMicrosoft 365 Defenderする](api-partner-access.md)
 - [Azure Key Vault を使用してサーバー アプリのシークレットを管理する](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 ユーザー サインインと API アクセスの承認](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

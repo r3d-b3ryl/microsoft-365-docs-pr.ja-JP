@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 95c82f815c794662f7eb0ffaabcfb5f81df3e828
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 0ecc3f7a91b79651b0a970553576a3c8d93320b25c258dd3f793552a4acf31a8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888777"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>アクション センターでのアクションの表示と管理
 
@@ -36,7 +36,7 @@ ms.locfileid: "52782995"
 **適用対象:**
 - Microsoft 365 Defender
 
-Defender の脅威保護機能Microsoft 365特定の修復アクションが発生する可能性があります。 次に、いくつかの例を示します:
+特定の修復アクションMicrosoft 365 Defender脅威保護機能が提供されます。 次に、いくつかの例を示します:
 
 - [自動調査によって、](m365d-autoir.md) 修復アクションが自動的に実行される、または承認を待つ可能性があります。
 - ウイルス対策、マルウェア対策、その他の脅威保護機能により、ファイル、URL、プロセスのブロック、検疫への成果物の送信など、修復アクションが発生する可能性があります。

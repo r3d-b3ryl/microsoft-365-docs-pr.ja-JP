@@ -1,5 +1,5 @@
 ---
-title: パイロット環境、攻撃シミュレーション、応答、修復Microsoft 365 Defender分離された環境で攻撃シミュレーションを実行する
+title: パイロット環境で攻撃シミュレーションMicrosoft 365 Defender実行する
 description: アラートとインシデントMicrosoft 365 Defender分析情報の取得、脅威の迅速な修復方法を確認するために、攻撃シミュレーションを実行します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ebea0a8eeed737712c55eb80b9ce3c68e06853c1
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 8abbc10c9e8ca5ae9c75210ce2c698f7b7ddd41bc2336e4636a9b365cdba838c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458147"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853441"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>パイロット環境で攻撃シミュレーションMicrosoft 365 Defender実行する
 

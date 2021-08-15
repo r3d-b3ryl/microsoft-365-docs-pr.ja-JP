@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0497ac31c11d04d812e9d8aca81304369ef459fb
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: fbc7e7147868649982defec9593b8852737a6ca7642faec4f125eca471c4e89d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853357"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>インシデント API をリストMicrosoft 365 Defender
 
@@ -95,7 +95,7 @@ Authorization|String|ベアラー {token}。 **必須**
 
 ### <a name="incident-metadata"></a>インシデント メタデータ
 
-フィールド名|説明|値の例
+フィールド名|Description|値の例
 ---|---|---
 incidentId|インシデントを表す一意の識別子|924565
 redirectIncidentId|インシデント処理ロジックの一部として、インシデントが別のインシデントとグループ化されている場合にのみ設定されます。|924569
@@ -114,7 +114,7 @@ comments|インシデントの管理時に secops によって作成されたコ
 
 ### <a name="alerts-metadata"></a>アラート メタデータ
 
-フィールド名|説明|値の例
+フィールド名|Description|値の例
 ---|---|---
 alertId|アラートを表す一意の識別子|caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId|このアラートが関連付けられているインシデントを表す一意の識別子|924565
@@ -140,7 +140,7 @@ mitreTechniques|攻撃手法は [、MITRE ATT](https://attack.mitre.org/)およ�
 
 ### <a name="device-format"></a>デバイスの形式
 
-フィールド名|説明|値の例
+フィールド名|Description|値の例
 ---|---|---
 DeviceId|Microsoft Defender for Endpoint で指定されているデバイス ID。|24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId|デバイス ID は、デバイス ID で指定[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-whatis) ドメインに参加しているデバイスでのみ使用できます。|null
@@ -150,12 +150,12 @@ osBuild|デバイスが実行されている OS のビルド バージョン。|
 rbacGroupName|デバイス [に関連付けられた役割ベース](/azure/role-based-access-control/overview) のアクセス制御 (RBAC) グループ。|WDATP-Ring0
 firstSeen|デバイスが最初に表示された時刻。|2020-02-06T14:16:01.9330135Z
 healthStatus|デバイスの正常性状態。|アクティブ
-riskScore|デバイスのリスク スコア。|高い
+riskScore|デバイスのリスク スコア。|高
 エンティティ|特定のアラートの一部として、または関連付けと識別されたすべてのエンティティ。|\[\] (以下のエンティティ フィールドの詳細を参照してください)
 
 ### <a name="entity-format"></a>エンティティの形式
 
-フィールド名|説明|値の例
+フィールド名|Description|値の例
 ---|---|---
 entityType|特定のアラートの一部または関連付けと識別されたエンティティ。<br>プロパティの値は次 *のとおりです*。 ユーザー 、 *Ip*、 *Url*、*ファイル*、*プロセス*、 MailBox 、 *MailMessage*、  *MailCluster*、*レジストリ*|User
 sha1|entityType が File の場合に *使用できます*。<br>ファイルまたはプロセスに関連付けられたアラートのファイル ハッシュ。|5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd

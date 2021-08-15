@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 description: 会社、仕事、業界に関連するニュース、傾向、ストーリーの毎日のラウンドアップは、受信トレイに新しく配信されます。
-ms.openlocfilehash: 811fbf981d740735d140c14d786b505eebaa05f4
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: ac88ccb709f23a95046ad5361fef60a1270a125ac4350e13cc0e192adcdf17b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51649964"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823893"
 ---
 # <a name="microsoft-industry-updates"></a>Microsoft Industry Updates
 
@@ -27,7 +27,7 @@ ms.locfileid: "51649964"
 
 Microsoft の Bing 検索エンジンの機能を活用して、業界の更新プログラムは、Web の周りから最も重要な作業ニュースのコレクションです。
 
-## <a name="how-does-it-work"></a>どのような仕組みなのか。
+## <a name="how-does-it-work"></a>どのような仕組みですか?
 
 トピックと興味に従ってエクスペリエンスをカスタマイズします。 会社に関するニュースを取得し、業界の傾向を追跡し、主要な製品の立ち上げについて最初に知る。 さらに、キャリアを成長させるのに必要なスキルと情報に追い付く。
 

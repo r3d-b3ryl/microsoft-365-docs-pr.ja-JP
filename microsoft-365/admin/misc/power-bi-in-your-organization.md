@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 組織のユーザー Power BIこのビジネス分析サービスを使用する方法について詳しくは、こちらをご覧ください。
-ms.openlocfilehash: 6da25932e1813744aa38bab2b399d6ac30c3429a
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: d9e7aa90803dc87aece4246a369f9b4ae83bb7e867fae5790cb82ba615b8385b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683369"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823860"
 ---
 # <a name="power-bi-in-your-organization"></a>組織内の Power BI
 
@@ -40,7 +40,7 @@ Microsoft Power BI は、直感的な新しい方法でデータの可視化、�
   
 ## <a name="how-do-users-sign-up-for-power-bi"></a>ユーザーが Power BI にサインアップする方法
 
-管理者であるユーザーは、[Power BI Web サイト](https://powerbi.microsoft.com/en-us/)を通じて Power BI にサインアップできます。 管理センターの [購入サービス] ページからサインアップMicrosoft 365することもできます。 管理者が Power BI にサインアップすると、アクセス権が必要なユーザーにユーザー サブスクリプション ライセンスを割り当てることができます。
+管理者であるユーザーは、[Power BI Web サイト](https://powerbi.microsoft.com/en-us/)を通じて Power BI にサインアップできます。 また、アプリの [サービスの購入] ページからサインアップMicrosoft 365 管理センター。 管理者が Power BI にサインアップすると、アクセス権が必要なユーザーにユーザー サブスクリプション ライセンスを割り当てることができます。
   
 また、組織の個々のユーザーは、[Power BI Web サイト](https://powerbi.microsoft.com/en-us/)を通じて Power BI にサインアップできる場合もあります。 組織のユーザーが Power BI にサインアップする場合、そのユーザーには Power BI ライセンスが自動的に割り当てられます。
   

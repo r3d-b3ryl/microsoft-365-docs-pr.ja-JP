@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ、グループ、グループ、Microsoft 365、およびTeamsアクセスの管理SharePoint。
-ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 37ea23956e4d4953da631eeb47bc227ad1059a335e68752c5c5b9ab82cef6deb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538149"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853009"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>グループ、グループ、Microsoft 365、およびTeamsのアクセスを管理SharePoint
 
@@ -29,7 +29,7 @@ ms.locfileid: "52538149"
 
 次の表は、次の表で使用できるアクセス制御のクイック リファレンスを示Microsoft 365。 詳細については、次のセクションで説明します。
 
-|カテゴリ|説明|参照|
+|カテゴリ|説明|Reference|
 |:-------|:----------|:--------|
 |メンバーシップ|||
 ||プライベート チームの検出|[プライベート チームの検出を管理Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)|
@@ -42,7 +42,7 @@ ms.locfileid: "52538149"
 ||場所に基づいてサイト アクセスを制御する|[ネットワークの場所に基づいて SharePoint と OneDrive のデータへのアクセスを制御する](/sharepoint/control-access-based-on-network-location)|
 |ゲスト アクセス|||
 ||指定したドメインSharePoint共有を許可またはブロックします。|[ドメイン別の SharePoint および OneDrive コンテンツの共有を制限する](/sharepoint/restricted-domains-sharing)|
-||指定したドメインからチームまたはグループのメンバーシップを許可またはブロックします。|[特定の組織からの B2B ユーザーへの招待を許可またはブロックする](/azure/active-directory/b2b/allow-deny-list)|
+||指定したドメインからチームまたはグループのメンバーシップを許可またはブロックします。|[B2B ユーザーに対する特定組織からの招待を許可またはブロックする](/azure/active-directory/b2b/allow-deny-list)|
 ||匿名共有を防止します。|[[すべてのユーザー] リンクをオフにする](./share-limit-accidental-exposure.md#turn-off-anyone-links)|
 ||匿名アクセス リンクのアクセス許可を制御します。|[[ユーザー] リンクのリンクのアクセス許可を設定する](./best-practices-anonymous-sharing.md#set-link-permissions)|
 ||匿名共有リンクの有効期限を制御します。|[[すべてのユーザー] リンクの有効期限を設定する](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)|
@@ -100,7 +100,7 @@ SharePointサイトでは、グループまたはチームのメンバーシッ�
 
 - [ドメイン別の SharePoint および OneDrive コンテンツの共有を制限する](/sharepoint/restricted-domains-sharing)
 
-- [特定の組織からの B2B ユーザーへの招待を許可またはブロックする](/azure/active-directory/b2b/allow-deny-list)
+- [B2B ユーザーに対する特定組織からの招待を許可またはブロックする](/azure/active-directory/b2b/allow-deny-list)
 
 Microsoft 365リンクを使用して、ファイルとフォルダーの匿名共有 *を* 許可します。 *リンク* は誰でも転送可能で、リンクを持つユーザーは共有アイテムにアクセスできます。 データの感度に応じて、リンクを完全にオフにしたり、リンクのアクセス許可を読み取り専用に制限したり、そのリンクの有効期限を設定したりなど、すべてのユーザーのリンクの使用方法を管理する方法を検討してください。
 
@@ -162,7 +162,7 @@ Microsoft 365は、情報を共有するさまざまな方法を提供します�
 
 - [Azure Active DirectoryID ガバナンス](/azure/active-directory/governance)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

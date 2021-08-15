@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4e2718806679514af9defb10dd2e5462a7b9982d
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: d8ae4b902bd7544940834f3661d4461f1baebea7ba8170bd87248553dfe5cb05
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53568066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828861"
 ---
 # <a name="troubleshoot-service-issues"></a>サービスに関する問題のトラブルシューティング
 
@@ -31,20 +31,20 @@ ms.locfileid: "53568066"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
-
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 このセクションでは、Microsoft Defender for Endpoint サービスを使用する際に発生する可能性のある問題について説明します。
 
 ## <a name="server-error---access-is-denied-due-to-invalid-credentials"></a>サーバー エラー - 無効な資格情報が原因でアクセスが拒否されました
+
 サービスにアクセスしようとするときにサーバー エラーが発生した場合は、ブラウザーの Cookie 設定を変更する必要があります。
 Cookie を許可するブラウザーを構成します。
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>ポータルに存在する要素またはデータ
+
 一部の要素やデータがMicrosoft 365 Defenderプロキシ設定によってブロックされている可能性があります。
 
 プロキシ許可リスト `*.security.microsoft.com` が含まれているか確認します。
-
 
 > [!NOTE]
 > 次のエンドポイントを追加する場合は、HTTPS プロトコルを使用する必要があります。
@@ -61,27 +61,33 @@ Microsoft [](event-error-codes.md) Defender for Endpoint サービスによっ�
 
 ## <a name="known-issues-with-regional-formats"></a>地域の形式に関する既知の問題
 
-**日付と時刻の形式**<br>
-時刻と日付の形式にはいくつかの既知の問題があります。 
+### <a name="date-and-time-formats"></a>日付と時刻の形式
+
+時刻と日付の形式にはいくつかの既知の問題があります。
 
 次の日付形式がサポートされています。
+
 - MM/dd/yyyy
 - dd/MM/yyyy
 
 現在、次の日付と時刻の形式はサポートされていません。
+
 - 日付形式 yyyy/MM/dd
 - 日付形式 dd/MM/yyy
 - yy の日付形式。 yyyy のみを表示します。
 - 時間形式 HH:mm:ss はサポートされていません (12 時間 AM/PM 形式はサポートされていません)。 24 時間形式だけがサポートされています。
 
-**コンマを使用して千を示す**<br>
+### <a name="use-of-comma-to-indicate-thousand"></a>コンマを使用して千を示す
+
 数値の区切り記号としてコンマを使用するサポートはサポートされていません。 数字がコンマで区切られ、1000 を示す領域では、ドットが区切り記号としてのみ表示されます。 たとえば、15,5K は 15.5K と表示されます。
 
->Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Microsoft Defender for Endpoint テナントがヨーロッパで自動的に作成されました
+
 Azure Defender を使用してサーバーを監視すると、Microsoft Defender for Endpoint テナントが自動的に作成されます。 Microsoft Defender for Endpoint データは、既定でヨーロッパに保存されます。
 
 ## <a name="related-topics"></a>関連トピック
+
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](troubleshoot-onboarding.md)
 - [イベント ビューアーを使用してイベントとエラーを確認する](event-error-codes.md)

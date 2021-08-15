@@ -1,7 +1,7 @@
 ---
-title: Defender REST API Microsoft 365コードの一般的な説明
-description: Defender REST API エラー コードMicrosoft 365一般的な方法について説明します。
-keywords: api、 error, codes, common error, Microsoft 365 Defender, API エラー コード
+title: REST API Microsoft 365 Defenderコードに関する一般的な情報
+description: REST API エラー コードの一Microsoft 365 Defenderについて説明します。
+keywords: api、エラー、コード、一般的なエラー、Microsoft 365 Defender API エラー コード
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: b972bc1710a5edbb3d351f2a33f966c80266fe4d9f13cfbfa6f6bf320764a93c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930273"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888873"
 ---
-# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Defender REST API Microsoft 365コードの一般的な説明
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>REST API Microsoft 365 Defenderコードに関する一般的な情報
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "52930273"
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-エラー コードは、任意の Defender API 上の操作Microsoft 365返される場合があります。 すべてのエラー応答にエラー メッセージが含まれるので、問題の解決に役立ちます。 テーブル セクションのエラー メッセージ列には、いくつかのサンプル メッセージが表示されます。 実際のメッセージの内容は、応答をトリガーした要因によって異なります。 変数の内容は、表に角かっこで示されます。
+エラー コードは、任意の API 上の操作によってMicrosoft 365 Defenderがあります。 すべてのエラー応答にエラー メッセージが含まれるので、問題の解決に役立ちます。 テーブル セクションのエラー メッセージ列には、いくつかのサンプル メッセージが表示されます。 実際のメッセージの内容は、応答をトリガーした要因によって異なります。 変数の内容は、表に角かっこで示されます。
 
 ## <a name="error-codes"></a>エラー コード
 
@@ -97,9 +97,9 @@ InternalServerError | 内部サーバー エラー (500) | *注: エラー メ�
 
 各エラー応答には、追跡用の一意の ID パラメーターが含まれる。 このパラメーターのプロパティ名は target *です*。 エラーについてお問い合わせの際に、この ID を添付すると、問題の根本原因を見つけるのに役立ちます。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365Defender API の概要](api-overview.md)
+- [Microsoft 365 DefenderAPI の概要](api-overview.md)
 - [サポートされている Microsoft 365 Defender API](api-supported.md)
-- [Defender API Microsoft 365アクセスする](api-access.md)
+- [API にMicrosoft 365 Defenderする](api-access.md)
 - [API の制限とライセンスの詳細](api-terms.md)

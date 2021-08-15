@@ -1,5 +1,5 @@
 ---
-title: 評価環境をMicrosoft 365 Defender、評価Microsoft 365 Defender、評価を試す、評価を維持する、生産評価を行う
+title: 評価環境Microsoft 365 Defenderを Production に昇格する
 description: この記事を使用して、MDI、MDO、MDE、MCAS のエバルを、Microsoft 365 Defender または M365D のライブ環境に昇格します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3204a5453e3b441e2899a347df6d9e5a6cca2808
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 475260ee10bd1d85c895bcbd69df78b338367931e63a115466a75e9e836b189d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53588127"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853321"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>評価環境Microsoft 365 Defenderを実稼働環境に昇格する
 
