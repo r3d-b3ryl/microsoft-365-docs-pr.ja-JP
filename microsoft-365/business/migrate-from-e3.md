@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: サブスクリプションを持Office 365 E3 300 人を超える従業員がいない場合は、サブスクリプションへの切り替Microsoft 365 Business Premium。
-ms.openlocfilehash: c1b4da07b3bf28cce1a48424ab45cde6ea54d367
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 89bf493b39250d88fcb47585d71e7dadd6600c4c3fff0658bb72e51b9ff386c5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394173"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837665"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Office 365 E3からMicrosoft 365 Business Premium
 
@@ -50,7 +50,7 @@ Microsoft 365 Business Premiumは、クラス最高のクラウドベースの�
 | OneDrive for Business    | ユーザーあたり 1 TB のストレージ制限    | 無制限 | 
 | Yammer, SharePoint, Planner, Stream    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データにOffice 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データにOffice 365 E3](../media/check-mark.png) |
-| **脅威の保護**        | | |
+| **脅威保護**        | | |
 | Microsoft Defender for Office 365 プラン 1 | ![Microsoft 365 Business Premium](../media/check-mark.png)    | 含まれていませんが、追加できます |
 | **ID 管理**        | | |
 | ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービス パスワードリセット、Azure AD 多要素認証 (MFA)、条件付きアクセス、オンプレミス ID のパスワード 書き戻し|     ![Microsoft 365 Business Premium](../media/check-mark.png)    |  |

@@ -20,16 +20,16 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: PowerShell を使用して、組織で利用可能なライセンス プラン、サービス、ライセンスに関する情報を表示するMicrosoft 365します。
-ms.openlocfilehash: 08f48301001ee6a40318428f3310eab8b0d0a351
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: faf7589cacee5d945ef136c602dd1f3f18ac92dba5e361adc1a9e43580afe24f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830145"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>PowerShell Microsoft 365ライセンスとサービスを表示する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 サブスクリプションMicrosoft 365は、次の要素で構成されます。
 

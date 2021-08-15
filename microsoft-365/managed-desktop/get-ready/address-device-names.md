@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 8c82acb5306e3add7c41fd4e6f7e313782d47574
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 0acca0a1c04fa1391527991ff63e0cc19364d548937a8fb2d4a7f33ef73060a9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870003"
 ---
 # <a name="address-device-name-dependency"></a>アドレス デバイス名の依存関係
 

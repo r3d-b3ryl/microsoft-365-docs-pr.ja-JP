@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 65ccc2cf551eeb52b9751a2457f8f1ba66e83fc7
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c153d664ca658c50789b7372de0bd20e3423199f5f82242f76470c375b3a530c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622702"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869879"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -87,7 +87,7 @@ Microsoft マネージド デスクトップ IT 管理者は、ユーザーが�
 
 条件付きアクセス ポリシーを使用すると、Microsoft マネージド デスクトップサービスを管理Microsoft マネージド デスクトップがあります。 登録時に、関連する条件付きアクセス Microsoft マネージド デスクトップサービス アカウントを除外し、これらのアカウントへのアクセスを制限する新しい条件付きアクセス ポリシーを適用します。 これらのサービス アカウントの詳細については、「Standard operating [procedures」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
-**Error**
+**エラー**
 
 Intune 管理者の役割には、このチェックに対する十分なアクセス許可が付与されません。 このチェックを実行するには、次の Azure ADロールが割り当てられている必要があります。
 
@@ -164,7 +164,7 @@ ESP の既定のプロファイルが [アプリとプロファイルの構成�
 
 条件付きアクセス ポリシーでは、複数要素認証が必要になります。この場合、Microsoft マネージド デスクトップサービスを管理Microsoft マネージド デスクトップがあります。 登録時に、関連する条件付きアクセス Microsoft マネージド デスクトップサービス アカウントを除外し、これらのアカウントへのアクセスを制限する新しい条件付きアクセス ポリシーを適用します。 これらのサービス アカウントの詳細については、「Standard operating [procedures」を参照してください](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
-**Error**
+**エラー**
 
 Intune 管理者の役割には、このチェックに対する十分なアクセス許可が付与されません。 このチェックを実行するには、次の Azure ADロールが割り当てられている必要があります。
 

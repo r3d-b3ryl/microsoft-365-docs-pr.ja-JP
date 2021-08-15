@@ -10,16 +10,16 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: eec6bdff2e494e0f55b06cb581c5775d3ffeb9e3
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8ddc078e2d62881706c4e78d269268373c7e5fef9f25df3980ff411517f2b056
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581036"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869921"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>ダウンロード可能な準備状況の評価チェック
 
-Microsoft Managed Desktop とうまく機能するには、デバイスがハードウェアと設定に関する特定の要件を満たしている必要があります。 また、各デバイスが主要なエンドポイントに到達できる必要があります。 このツールをダウンロードして実行して、HTML レポートを取得し、結果を表示し、アクションを実行します。 ツールとサポート ファイルをダウンロードし、Microsoft Managed Desktop に登録する各デバイスで手動で実行する必要があります。
+デバイスを使用してMicrosoft マネージド デスクトップ、ハードウェアと設定に関する特定の要件を満たす必要があります。 また、各デバイスが主要なエンドポイントに到達できる必要があります。 このツールをダウンロードして実行して、HTML レポートを取得し、結果を表示し、アクションを実行します。 ツールとサポート ファイルをダウンロードし、アプリに登録する各デバイスで手動で実行する必要Microsoft マネージド デスクトップ。
 
 チェックごとに、ツールは次の 3 つの結果のいずれかを報告します。
 
@@ -53,39 +53,39 @@ Microsoft Managed Desktop とうまく機能するには、デバイスがハー
 
 ### <a name="hardware"></a>ハードウェア
 
-Microsoft Managed Desktop を使用するには、デバイスが特定のハードウェア要件を満たしている必要があります。 現時点では、特定 [の承認済みデバイス](../service-description/device-list.md) のみ登録が許可されています。 
+デバイスがデバイスを使用するには、特定のハードウェア要件を満たすMicrosoft マネージド デスクトップ。 現時点では、特定 [の承認済みデバイス](../service-description/device-list.md) のみ登録が許可されています。 
 
-デバイスがチェックに失敗した場合、Microsoft Managed Desktop と互換性がありません。
+デバイスがチェックに失敗した場合は、デバイスと互換性Microsoft マネージド デスクトップ。
 
 ### <a name="network-endpoints"></a>ネットワーク エンドポイント
 
-デバイスは、Microsoft Managed Desktop [で動作](network.md) するいくつかの主要なエンドポイントに多く到達できます。
+デバイスは、多くの場合、複数の[主要な](network.md)エンドポイントにアクセスして、Microsoft マネージド デスクトップ。
 
 ツールが [準備完了] **の結果を** 報告する場合は、詳細なレポートを参照して、到達不能だったエンドポイントを確認します。 その後、ファイアウォールまたは他のネットワーク設定を調整して、それらのエンドポイントに到達可能にしてください。
 
 ### <a name="other-settings"></a>その他の設定
 
-#### <a name="enterprise-wi-fi-profiles"></a>エンタープライズ Wi-Fi プロファイル
+#### <a name="enterprise-wi-fi-profiles"></a>Enterprise Wi-Fi プロファイル
 
 アドバイザリ **の結果** は、証明書とプロファイルが適切に動作する必要があるいくつかの Wi-Fi プロファイルを使用しているという意味です。 詳細については、「証明書の [展開」および「Wi-Fi/VPN プロファイル」を参照してください](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)。
 
 #### <a name="lan-profiles"></a>LAN プロファイル
 
-アドバイザリ **の結果** は、証明書とプロファイルが適切に動作する必要がある LAN を持っているという意味です。 詳細については [、「Prepare certificates and network profiles for Microsoft Managed Desktop」を参照してください](certs-wifi-lan.md)。
+アドバイザリ **の結果** は、証明書とプロファイルが適切に動作する必要がある LAN を持っているという意味です。 詳細については、「証明書とネットワーク プロファイルを準備する」[を参照Microsoft マネージド デスクトップ。](certs-wifi-lan.md)
 
 #### <a name="vpn-profiles"></a>VPN プロファイル
 
-アドバイザリ **の結果** は、仮想プライベート ネットワーク (VPN) を使用しているという意味です。 Microsoft Intune と統合された証明書を展開する VPN プロファイルを作成します。 詳細については [、「Prepare certificates and network profiles for Microsoft Managed Desktop」を参照してください](certs-wifi-lan.md)。
+アドバイザリ **の結果** は、仮想プライベート ネットワーク (VPN) を使用しているという意味です。 サーバーに統合された証明書を展開する VPN プロファイルをMicrosoft Intune。 詳細については、「証明書とネットワーク プロファイルを準備する」[を参照Microsoft マネージド デスクトップ。](certs-wifi-lan.md)
 
 #### <a name="mapped-drives"></a>マップされたドライブ
 
-アドバイザリ **の結果** は、マップされたドライブがいくつかあるという意味で、推奨されません。 詳細については、「マップされたドライブ [を Microsoft Managed Desktop 用に準備する」を参照してください](mapped-drives.md)。
+アドバイザリ **の結果** は、マップされたドライブがいくつかあるという意味で、推奨されません。 詳細については、「マップされたドライブの[準備」を参照Microsoft マネージド デスクトップ。](mapped-drives.md)
 
 #### <a name="print-queues"></a>印刷キュー
 
-アドバイザリ **の結果** は、未処理の印刷キューがいくつかあるという意味で、推奨されません。 1 つの解決策は、クラウド印刷を使用する方法です。 詳細については [、「Microsoft Managed Desktop の印刷リソースを準備する」を参照してください](printing.md)。
+アドバイザリ **の結果** は、未処理の印刷キューがいくつかあるという意味で、推奨されません。 1 つの解決策は、クラウド印刷を使用する方法です。 詳細については、「印刷リソースの[準備」を参照Microsoft マネージド デスクトップ。](printing.md)
 
 #### <a name="proxies"></a>プロキシ
 
-アドバイザリ **の結果** は、プロキシ サーバーが使用されているという意味です。 詳細については [、「Microsoft Managed Desktop のネットワーク構成」を参照してください](network.md)。
+アドバイザリ **の結果** は、プロキシ サーバーが使用されているという意味です。 詳細については、「ネットワーク構成 for [Microsoft マネージド デスクトップ」 を参照してください](network.md)。
 

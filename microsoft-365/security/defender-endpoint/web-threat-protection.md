@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 124abd254b8e8155ad60d400fede3419e754c83d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3ba4c4dbb2b5b8315fb09023b9fa0c0e29c4fd1c3b3f95da0328522a7d839ffc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649841"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884261"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Web 脅威から組織を保護する
 
@@ -50,7 +50,7 @@ Web 保護は、ネットワーク保護を使用して、ブラウザーおよ�
 > [!NOTE]
 > ネットワーク保護を [監査のみ] **に設定すると**、ブロックは使用できません。 また、悪意のある Web サイトや望ましくない Web サイトにアクセスしようとする試みを検出してログに記録できるのは、Microsoft Edgeのみです。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Web 保護の概要](web-protection-overview.md)
 - [Web の脅威に対する保護](web-threat-protection.md)

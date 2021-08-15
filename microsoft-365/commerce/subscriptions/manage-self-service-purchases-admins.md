@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーが行ったセルフサービス購入を管理する方法について学習できます。
 ms.date: 03/26/2021
-ms.openlocfilehash: a4ac4b79a9a73f80fc22e6f14696e25925df9faf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3ab07fac52a55518f2d8259b35f1de808bb544685ef4c463ac9c5e9d3706a973
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852237"
 ---
 # <a name="manage-self-service-purchases-admin"></a>セルフサービスによる購入を管理する (管理者)
 
@@ -38,19 +38,19 @@ ms.locfileid: "52536096"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
 
 2. [製品 **] タブ** で、フィルター アイコンを選択し、[セルフサービス] **を選択します**。
@@ -90,11 +90,11 @@ ms.locfileid: "52536096"
 
 組織内のユーザーに対してセルフサービス購入を無効または有効にできます。 **MSCommerce** PowerShell モジュールには **AllowSelfServicePurchase** の **PolicyID** パラメーター値が含まれています。
 
-**MSCommerce PowerShell** モジュールを使用すると、次の目的で使用できます。
+**MSCommerce** PowerShell モジュールを使用すると以下のことができます。
 
 - **AllowSelfServicePurchase** パラメーター値の既定の状態を表示する (製品によって有効または無効になっているかどうか)
-- 該当する製品の一覧とセルフサービス購入が有効か無効かを表示する
-- 特定の製品の現在の設定を表示または変更して、有効または無効にする
+- 利用可能な製品の一覧およびセルフサービス購入の有効または無効を表示する
+- 特定の製品の現在の設定を表示または変更し、有効または無効にする
 
 詳細については、「[MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する](allowselfservicepurchase-powershell.md)」を参照してください。
 
@@ -142,7 +142,7 @@ ms.locfileid: "52536096"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 
@@ -173,7 +173,7 @@ ms.locfileid: "52536096"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 ::: moniker-end
 

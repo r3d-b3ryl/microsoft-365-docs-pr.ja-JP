@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: d6fb8dc510e004fa88bf99583cc2cc33ae8c63bb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 820300be1a8c68dab4b000b61023819ce1b75cf800e7cc16915f2aa7a696dfd2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884477"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>PowerShell コマンドレットを使用して、サーバーの構成とMicrosoft Defender ウイルス対策
 
@@ -55,7 +55,7 @@ PowerShell は通常、フォルダーの下にインストールされます `%
 3. PowerShell コマンドとパラメーターを入力します。
 
 > [!NOTE]
-> 管理者モードで PowerShell を開く必要がある場合があります。 [スタート] メニューのアイテムを右クリックし、[管理者として実行] をクリック **し、アクセス** 許可のプロンプト **で [は** い] をクリックします。
+> 管理者モードで PowerShell を開く必要がある場合があります。 [管理者] ウィンドウでアイテムを右クリックしスタート メニュー管理者として実行] をクリックし、アクセス許可のプロンプト **で [は** い] をクリックします。
 
 コマンドレットのオンライン ヘルプを開く場合は、次を入力します。
 
@@ -65,7 +65,7 @@ Get-Help <cmdlet> -Online
 
 ローカルに `-online` キャッシュされたヘルプを取得するには、パラメーターを省略します。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [管理および構成ツールのリファレンス トピック](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)

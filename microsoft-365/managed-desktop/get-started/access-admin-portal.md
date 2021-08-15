@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 345ae56a1c328dad7b777468dd03bcab40f9b4e1
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 44b5fed8c99f9d2c738abfcdad99e1f4c020d3bca97591c3645ae3c8ac6c1029
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869845"
 ---
 # <a name="access-the-admin-portal"></a>管理ポータルへのアクセス
 

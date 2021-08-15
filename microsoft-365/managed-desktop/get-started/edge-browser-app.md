@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2bf1fab504ae77a1e66235f49333c3b123e38904
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 8ba59668f0f2571a2ce03fcbbb6eac68fb8f63f77416585d021c6fcf22387795
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822252"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869833"
 ---
 # <a name="new-microsoft-edge-app"></a>新Microsoft Edgeアプリ
 

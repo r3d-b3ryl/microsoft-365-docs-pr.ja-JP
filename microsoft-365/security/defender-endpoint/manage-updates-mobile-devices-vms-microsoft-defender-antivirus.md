@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 809f4573c91f7f1882693cbd8c63d88b06b55c67
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: badf2f18f85b2f8776dec4b119e58ad3839c9074db17f24083ca648c8c24e730
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884549"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>モバイル デバイスと仮想マシン (VM) の更新プログラムを管理する
 
@@ -98,7 +98,7 @@ PC が有線Microsoft Defender ウイルス対策接続されている場合に�
 
 この操作により、PC がバッテリ電源をオンにしている場合に保護更新プログラムがダウンロードされなかから保護されます。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [更新し、Microsoft Defender ウイルス対策のWindows 10](deploy-manage-report-microsoft-defender-antivirus.md)

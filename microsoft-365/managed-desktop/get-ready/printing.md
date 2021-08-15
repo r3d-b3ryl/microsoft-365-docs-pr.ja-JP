@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3f77074aa11e9dc82c8fac9763fdebfd2fc49d99
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 480106eacbcc809007ff1aa45d776bb89beaf78cb7aaeefce41df33dfc000af9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287211"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869943"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、印刷リソースを準備する
 

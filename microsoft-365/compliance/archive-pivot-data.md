@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas からピボット データをインポートおよびアーカイブするコネクタを、Microsoft 365。 このコネクタを使用すると、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 8e88f5166ebcc4d1285a81e041b6d97be46786e3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: fb832c1d2ea6347a39fb1d00270019d44fbb0b30e8f9767f740f0ead096d0966
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164198"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860962"
 ---
 # <a name="set-up-a-connector-to-archive-pivot-data"></a>ピボット データをアーカイブするコネクタをセットアップする
 
-コンプライアンス センターの Veritas コネクタをMicrosoft 365、ピボット プラットフォームから組織のユーザー メールボックスにデータをインポートおよびアーカイブMicrosoft 365します。 Veritas は、サードパーティ[](https://globanet.com/pivot/)のデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成されたピボット コネクタを提供します。 Pivot は、金融市場参加者とのコラボレーションを可能にするインスタント メッセージング プラットフォームです。 コネクタは、チャット メッセージなどのアイテムをユーザーのピボット アカウントから電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
+ピボット プラットフォームからデータをインポートおよびアーカイブするには、Microsoft 365 コンプライアンス センターの Veritas コネクタを使用して、組織のユーザー メールボックスMicrosoft 365します。 Veritas は、サードパーティ[](https://globanet.com/pivot/)のデータ ソースからアイテムを (定期的に) キャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成されたピボット コネクタを提供します。 Pivot は、金融市場参加者とのコラボレーションを可能にするインスタント メッセージング プラットフォームです。 コネクタは、チャット メッセージなどのアイテムをユーザーのピボット アカウントから電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
 
 ピボット データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、保持ポリシーと保持ラベル、通信コンプライアンスなどのコンプライアンス機能Microsoft 365を適用できます。 ピボット コネクタを使用してデータをインポートおよびアーカイブMicrosoft 365、組織が政府機関および規制ポリシーに準拠しつ付けるのに役立ちます。
 
@@ -35,7 +35,7 @@ ms.locfileid: "51164198"
 
 2. 24 時間に 1 回、ピボット アイテムは Veritas Merge1 サイトにコピーされます。 コネクタは、ピボットアイテムを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成したピボット コネクタは、毎日 Veritas Merge1 サイトに接続し、ピボット アイテムを Microsoft クラウド内の安全な Azure Storage 場所に転送します。
+3. Microsoft 365 コンプライアンス センター で作成したピボット コネクタは、毎日 Veritas Merge1 サイトに接続し、ピボット アイテムを Microsoft クラウドの安全な Azure Storage 場所に転送します。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、ピボット アイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 Pivot という名前の受信トレイフォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは、Email プロパティの値を使用して *これを行* います。 すべてのピボット アイテムには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
@@ -43,7 +43,7 @@ ms.locfileid: "51164198"
 
 - Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 このアカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/)。 手順 1 でコネクタを作成するときに、このアカウントにサインインします。
 
-- 手順 1 でピボット コネクタを作成し (および手順 3 で完了する) ユーザーは、次の手順のメールボックスインポートエクスポートの役割に割り当Exchange Online。 この役割は、コンプライアンス センターの [データ コネクタ] ページにコネクタMicrosoft 365必要です。 既定では、この役割はグループ内の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- 手順 1 でピボット コネクタを作成し (および手順 3 で完了する) ユーザーは、次の手順のメールボックスインポートエクスポートの役割に割り当Exchange Online。 この役割は、データ コネクタ ページの [データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 既定では、この役割はグループ内の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
 
 ## <a name="step-1-set-up-the-pivot-connector"></a>手順 1: ピボット コネクタをセットアップする
 
@@ -63,7 +63,7 @@ ms.locfileid: "51164198"
 
 2 番目の手順は、Merge1 サイトでピボット コネクタを構成することです。 Veritas Merge1 サイトでピボット コネクタを構成する方法については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Pivot%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 
-[ファイルの **保存と&完了**] をクリックすると、コンプライアンス センターのコネクタ ウィザードの [ユーザー Microsoft 365] ページが表示されます。
+[ファイルの **保存と&完了**] をクリックすると、コネクタ ウィザードの [ユーザー マッピング] ページが表示Microsoft 365 コンプライアンス センターされます。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
@@ -75,7 +75,7 @@ Microsoft 356 コンプライアンス センターでユーザーをマップ�
 
 ## <a name="step-4-monitor-the-pivot-connector"></a>手順 4: ピボット コネクタを監視する
 
-ピボット コネクタを作成した後、コンプライアンス センターでコネクタのMicrosoft 365できます。
+ピボット コネクタを作成した後、コネクタの状態を [ピボット コネクタ] Microsoft 365 コンプライアンス センター。
 
 1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com) ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
 

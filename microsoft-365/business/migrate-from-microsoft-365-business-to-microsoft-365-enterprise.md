@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: ビジネスを移行する方法については、Microsoft 365 Business PremiumからMicrosoft 365 E3。
-ms.openlocfilehash: 6502d79dbb283db37b00e4fccf89b15ab4291ce5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: d3030518f7f4467c7b2e16897dc7b100764d9d5a36c50169b58f1adcd7bef209
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837651"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Microsoft 365 Business Premium から Microsoft 365 E3 への移行
 
@@ -46,11 +46,11 @@ Microsoft 365 Business Premiumは、クラス最高のクラウドベースの�
 
 次の表は、ユーザーとユーザーのMicrosoft 365 Business PremiumをMicrosoft 365 E3。
 
-| 機能    | Microsoft 365 Business Premium    | Microsoft 365 E3 |
+| 特徴    | Microsoft 365 Business Premium    | Microsoft 365 E3 |
 |:-------|:-----|:-----|
 | **社内**        | | |
 | Windows 10    | Windows 10 Business  |     Windows 10 EnterpriseE3|
-| Officeアプリ*    | [Microsoft 365 Apps for business](#office-365-business)    | Microsoft 365 Apps for enterprise |
+| Officeアプリ*    | [Microsoft 365 Apps for business](#office-365-business)    | Microsoft 365 Apps for Enterprise |
 | **クラウド生産性アプリ**        | | |
 | Exchange OnlineとOutlook    | メールボックスあたり 50 GB のストレージ制限と無制限のExchange Onlineアーカイブ    | メールボックスあたり 100 GB のストレージ制限と無制限のExchange Onlineアーカイブ |
 | Teams    | ![Microsoft 365 Business Premium](../media/check-mark.png)    | ![データに含まれるMicrosoft 365 E3](../media/check-mark.png) |

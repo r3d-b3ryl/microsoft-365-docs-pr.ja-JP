@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 基本モビリティとセキュリティの問題を追跡するには、次の手順を実行します。
-ms.openlocfilehash: b8df8c17f3a2fc5b7b6cce21769ca20742dbd397
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 1ba964f052169b3937ecbc086abd4a686c0a66bb959c4b38d4280c1bbb0225a2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876854"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826713"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>基本的なモビリティとセキュリティのトラブルシューティング
 
@@ -61,7 +61,7 @@ ms.locfileid: "49876854"
 
 - Basic Mobility and Security を使用するには、ドメインMicrosoft 365設定してください。 詳細については、「Set [up Basic Mobility and Security 」を参照してください](set-up.md)。
     
-- この設定がないAzure Active Directory プレミアム、ユーザーが [デバイス管理にのみ登録する] **** を選択し、[デバイスの管理] を選択   Connect。 ****
+- この設定がないAzure Active Directory Premium、ユーザーが [デバイス管理にのみ登録する] **** を選択し、[デバイスの管理] を選択   Connect。 ****
 
 ## <a name="android-phone-or-tablet"></a>Android スマートフォンまたはタブレット
 

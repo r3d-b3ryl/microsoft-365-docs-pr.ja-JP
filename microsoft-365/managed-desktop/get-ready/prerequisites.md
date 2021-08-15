@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c2b0cc6db8ade434e94db92ae225140f7b1aec69
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4ca75cdd3721f8a49f36b59f4ada0cd6f3dee49e1bf1d139240d52f83899fbb7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289585"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869955"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの前提条件
 
@@ -48,7 +48,7 @@ Microsoft マネージド デスクトップ機能するには、特定のライ
 - Microsoft Intune
 - Windows 10 Enterprise  
 - Microsoft Defender for Endpoint
-- Microsoft 365 Apps for enterprise
+- Microsoft 365 Apps for Enterprise
 - Microsoft Teams
 - [SharePoint Online プラン 2](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
 - [Exchange Online プラン 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans)

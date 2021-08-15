@@ -18,16 +18,16 @@ search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学習できます。
 ms.date: 03/17/2021
-ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 581a142eb18e64bfec237e6108564d68d715e21ca20b74e39337afbb7ac86491
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852201"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
-ユーザーは、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てできます。 セルフサービス購入の支払いは、お客様が行う責任があります。 サブスクリプションは、管理センターの Microsoft 365で管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com。</a>
+ユーザーは、特定の製品のサブスクリプションを購入し、それらのサブスクリプションのライセンスをチーム内のユーザーに割り当てできます。 セルフサービス購入の支払いは、お客様が行う責任があります。 サブスクリプションの管理は、Microsoft 365 管理センターで<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com。</a>
 
 管理者は、購入したサブスクリプションに対する読み取り専用ビューを持っています。 購入したサブスクリプションごとに、製品、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーを確認できます。
 
@@ -145,7 +145,7 @@ ms.locfileid: "52683669"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
 ::: moniker-end
-2. **[製品]** タブで、キャンセルするサブスクリプションを見つけます。 3 つのドット(他のアクション) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
+2. **[製品]** タブで、キャンセルするサブスクリプションを見つけます。3 つのドット (その他の操作) を選択し、**[サブスクリプションのキャンセル]** を選択します。
 3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。 必要に応じて、フィードバックを提供します。
 4. **[保存]** を選択します。
 

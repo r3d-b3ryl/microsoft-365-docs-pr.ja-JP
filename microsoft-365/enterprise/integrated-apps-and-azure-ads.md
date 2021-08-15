@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Azure Office 365に統合されたアプリAD登録および管理する方法について説明します。グローバル管理者レベルでのアプリの承認を許可します。
-ms.openlocfilehash: 0b7392984b77b01abb0992fea5db62b80ed9fb6c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 54825d551c39dde75596615080618d9a0693ac90ada420373d28bcc6881e4b09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909776"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830217"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>管理者向け統合AD Azure Microsoft 365
 

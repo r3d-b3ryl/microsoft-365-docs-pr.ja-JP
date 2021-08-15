@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空の代表的なグローバル組織が企業に対してどのようにMicrosoft 365採用したのか。
-ms.openlocfilehash: e14c2747837ed91a63e7609ce46307b0f38aa758
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: deef90fc670c0baca49d79ea6c285cd6fb2ee4f9151d83b6a336e0e7b81b0ff5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830277"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Contoso Corporation のエンタープライズ向けサービス
 
