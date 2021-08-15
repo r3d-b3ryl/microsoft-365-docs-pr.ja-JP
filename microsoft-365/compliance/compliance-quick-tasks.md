@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: コンプライアンスを迅速に開始するのに役立つタスクについては、Microsoft 365。
-ms.openlocfilehash: 61a057c3666faae51a012dd9db2d4c63ded0f77a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3d8c767c82642c40a9f16792da7697ed7ab85711c95a7834937334bba3504a4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227261"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830985"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスを開始するためのクイック タスク
 
@@ -58,7 +58,7 @@ ms.locfileid: "53227261"
 
 インサイトログによって提供される機能は、コンプライアンス要件と、改善が必要なコンプライアンス領域の管理と監視に役立つソリューションを満たすのに役立つ貴重なツールです。 監査ログは、アクティビティが記録される前と監査ログを検索する前に有効にする必要があります。 有効にすると、組織のユーザーと管理者のアクティビティが監査ログに記録され、ユーザーに割り当てられたライセンスに応じて 90 日間、最大 1 年間保持されます。
 
-監査を有効にする手順については、「監査ログ検索を有効またはオフにする」 [を参照してください](turn-audit-log-search-on-or-off.md)。
+監査を有効にする詳しい手順については、「[監査ログ検索を有効または無効する](turn-audit-log-search-on-or-off.md)」を参照してください。
 
 ## <a name="task-4-create-policies-to-alert-you-about-potential-compliance-issues"></a>タスク 4: ポリシーを作成して、潜在的なコンプライアンスの問題について通知する
 
@@ -124,7 +124,7 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 
 アクティビティ エクスプローラーを使用する手順については、「アクティビティ エクスプローラーの使用を開始 [する」を参照してください](data-classification-activity-explorer.md)。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 組織のコンプライアンス管理の基本を構成しましたので、Microsoft 365 で次のコンプライアンス ソリューションを検討して、機密情報を保護し、追加のインサイダー リスクを検出して行動します。
 

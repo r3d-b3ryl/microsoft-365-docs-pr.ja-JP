@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71c8ca842d9c88086dee041316899bbc08f943fe
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 156bc4cc6a68d8c2e6fc0d8074e31f6533e6e1f549f15f1fd8bfe66c9348298c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56879502"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Microsoft Defender の修復アクション (Office 365
 
@@ -51,7 +51,7 @@ Microsoft Defender for Office 365修復アクションは自動的には実行�
 
 Microsoft Defender for Office 365さまざまな脅威に対処するための修復アクションが含まれています。 自動調査では、多くの場合、1 つ以上の修復アクションを確認して承認します。 場合によっては、自動調査によって特定の修復アクションが発生しない場合があります。 さらに調査し、適切なアクションを実行するには、次の表のガイダンスを使用します。
 
-|カテゴリ|脅威/リスク|修復アクション|
+|Category|脅威/リスク|修復アクション|
 |:---|:---|:---|
 |メール|マルウェア|メール/クラスターのソフト削除 <p> クラスター内の一握り以上の電子メール メッセージにマルウェアが含まれている場合、クラスターは悪意のあるメッセージと見なされます。|
 |メール|悪意のある URL <br> (悪意のある URL がリンク[によってセーフされました](safe-links.md)。)|メール/クラスターのソフト削除 <br> ブロック URL (クリック時の検証) <p> 悪意のある URL を含む電子メールは、悪意のあるメールと見なされます。|

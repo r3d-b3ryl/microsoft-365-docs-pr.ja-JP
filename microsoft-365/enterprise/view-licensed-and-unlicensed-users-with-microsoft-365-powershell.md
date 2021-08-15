@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: この記事では、PowerShell を使用してライセンスおよびライセンスのないユーザー アカウントを表示するMicrosoft 365説明します。
-ms.openlocfilehash: b38ee7674abaea6b63d0661ba79a9814f8c54229
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: 3bbc68e8e4e2b7186e95d8d534525181bcf885e2992476955a7df15c514b546d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651386"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840733"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>PowerShell を使用して、ライセンスMicrosoft 365ライセンスされていないユーザーを表示する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 組織のユーザー アカウントMicrosoft 365、組織内で利用可能なライセンス プランから、利用可能なライセンスの一部、すべて、または割り当てられていない可能性があります。 PowerShell を使用して、Microsoft 365ライセンスユーザーとライセンスのないユーザーをすばやく検索できます。
 
@@ -46,7 +46,7 @@ Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLice
 ライセンス プラン (ライセンス ユーザー) が割り当てられている組織内のすべてのユーザー アカウントの一覧を表示するには、次のコマンドを実行します。
   
 ```powershell
-Get-AzureAdUser | ForEach { $licensed=$True ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
+Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
 
 >[!Note]

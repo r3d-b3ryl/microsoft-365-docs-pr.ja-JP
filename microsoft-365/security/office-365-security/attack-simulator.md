@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、セキュリティ & Complance センターで攻撃シミュレーターを使用して、Microsoft 365 E5 または Microsoft Defender で Office 365 プラン 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: aa10c30644562a156964ebaa1d63145047ca9264
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 902673c39e0f2c9c68e8408073dc25bb7f92c87189e10568c80a1be21e2c7b02
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082866"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56878261"
 ---
 # <a name="attack-simulator-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの攻撃&シミュレーター
 

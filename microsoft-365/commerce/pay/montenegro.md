@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 423affe20b070afd6f3a9f5938cb8c66c638522a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a44671636e9900ce26b4931853343c26eba2a4fa95fd8399c0e68f2069aa1cce
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535388"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900341"
 ---
 # <a name="payment-information-for-montenegro"></a>モンテネグロの支払い情報
 

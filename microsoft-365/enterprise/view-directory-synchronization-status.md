@@ -21,12 +21,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: この記事では、ディレクトリ同期の状態を確認する方法について、Office 365。
-ms.openlocfilehash: cbaae8bbd31f6124c2b0f4984b9a625ffbde538f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 766e3ef112ac9493863df0aa6c9958e89ec93c0e2e0c9e307e7371b536f3cb01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840757"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>[ディレクトリ同期の状態を表示する] Microsoft 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "50924662"
   
 ## <a name="view-directory-synchronization-status"></a>ディレクトリ同期の状態を表示する
 
-- 管理センターにサインイン [Microsoft 365ホーム](https://admin.microsoft.com)ページで **[DirSync Status]** を選択します。
+- ホーム ページに [サインインMicrosoft 365 管理センター](https://admin.microsoft.com)し、ホーム ページ **で [DirSync Status]** を選択します。
 - または、[ユーザー] [アクティブな **ユーザー]** に移動し、[アクティブなユーザー] ページで [その他のディレクトリ \> 同期] \> **を選択します**。 [ディレクトリ同期 **] ウィンドウで****、[DirSync 管理に移動] を選択します**。
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>[ディレクトリ同期の管理] ページの情報

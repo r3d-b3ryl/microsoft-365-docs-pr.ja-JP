@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '使用状況分析が API に接続する方法と、さまざまなサービスの使用状況の毎月の傾向Microsoft 365します。  '
-ms.openlocfilehash: 877ad005e3ff7f7537247963fafcab5fb1ff6c74
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e18233532f7a570129f31141bb21e7c3dd9450603d09f6db636db846fea20edc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580752"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867273"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 

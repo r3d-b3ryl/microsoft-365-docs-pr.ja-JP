@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 4d49772eb3932ae98840d2be94c447183e94fade
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 60e7a5c9a6ed413e7e100d6c9c1d829b0cb94ff91955cee7553b71bffff8b9ad
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029623"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867537"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップ スコア
 

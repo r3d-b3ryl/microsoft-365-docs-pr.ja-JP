@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 949cd97a06d936021678380ccf5ec6fc4da08d50
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 0beb7148e3797f969de5ab27db8adee21f9455c4e81da859e35924ba92812a10
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867309"
 ---
 # <a name="contact-support-for-suriname"></a>Suriname のサポートに問い合わせ
 

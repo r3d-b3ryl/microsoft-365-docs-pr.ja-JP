@@ -15,12 +15,12 @@ ms.date: 06/10/2021
 description: Microsoft Defender for Office 365 プラン 2 の自動調査と対応機能を使用して、侵害されたユーザー アカウントを検出して対処するプロセスをスピードアップする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd1ad6f52114340153f3958441bfb9500db67215
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 0f72b876570f7551694053d81d716dce8f92379c1d57a3f4bd8b1a83ffa57f7b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108587"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867509"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>調査と対応を自動化して、侵害されたユーザー アカウントに対処する
 

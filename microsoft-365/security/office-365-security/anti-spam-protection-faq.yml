@@ -20,12 +20,12 @@ metadata:
   description: 管理者は、迷惑メール対策 (EOP) でスパム対策に関するよく寄せられる質問とExchange Online Protection表示できます。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: b15e7409c275810a9d5e70d1376a9c3accd07ab9
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: 1643e94de99b06cee9ea55e03bc6bc12fefa1de9bc4c1fc9f08f0c655315019b
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52624911"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "56878262"
 title: スパム対策保護に関する FAQ
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド展開では、メッセージに追加される EOP スパム フィルター ヘッダーを検出するために、2 つの Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) をオンプレミス Exchange 組織に構成する必要があります。 詳細については、「ハイブリッド環境の迷惑メール フォルダーにスパムを配信する [EOP の構成」を参照してください](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
+      > EOP がオンプレミスの Exchange メールボックスを保護するハイブリッド展開では、メッセージに追加される EOP スパム フィルター ヘッダーを検出するために、2 つの Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) をオンプレミス Exchange 組織に構成する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するように EOP を構成する](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)」を参照してください。
 
        **送信メッセージの場合:** メッセージは、リスクの高い配信 [](high-risk-delivery-pool-for-outbound-messages.md)プールを経由するか、配信不可レポート (NDR またはバウンス メッセージとも呼ばれる) で送信者に返されます。 送信スパム保護の詳細については、「送信スパムコントロール [」を参照してください](outbound-spam-controls.md)。
   - question: >
@@ -111,7 +111,7 @@ sections:
   - question: >
       スパム報告を取得できますか?
     answer: >
-      はい、たとえば、管理者センターでスパム検出レポートをMicrosoft 365できます。 このレポートには、スパム ボリュームが一意のメッセージの数として表示されます。 レポートの詳細については、次のリンクを参照してください。
+      はい、たとえば、スパム検出レポートをメール で取得Microsoft 365 管理センター。 このレポートには、スパム ボリュームが一意のメッセージの数として表示されます。 レポートの詳細については、次のリンクを参照してください。
 
 
       Exchange Online顧客:[監視、レポート、](/exchange/monitoring/monitoring)およびメッセージ トレース (Exchange Online

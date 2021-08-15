@@ -14,12 +14,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、コネクタ (メール フロー インテリジェンスとも呼ばれる) を使用してメッセージ配信に関連付けられているエラー コードについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44f2272c98f0c011c05cbe728e720f4d3180c09d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 32b613cbd3251c58602a292c50ba48d56a02291fd9388c5433b4c8d9a836d314
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844672"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56877791"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP でのメール フロー インテリジェンス
 

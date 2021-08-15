@@ -15,12 +15,12 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6b96d3d656a89e7102550d09a2f5052fdb5ae818
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 0e5f75f0523af7f2a81ce9f1d74ae8f323c78816c828cd9fdfba4210afc912fe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52792958"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56879492"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>外部メールの自動転送を制御Microsoft 365
 
@@ -56,7 +56,7 @@ ms.locfileid: "52792958"
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>送信スパム フィルター ポリシー設定が他の自動メール転送コントロールとどのように機能する
 
-管理者は、電子メールの自動転送を許可またはブロックするように他のコントロールを既に構成している可能性があります。 以下に例を示します。
+管理者は、電子メールの自動転送を許可またはブロックするように他のコントロールを既に構成している可能性があります。 例:
 
 - [一部またはすべての](/exchange/mail-flow-best-practices/remote-domains/remote-domains) 外部ドメインへの自動メール転送を許可またはブロックするリモート ドメイン。
 - メール フロー ルール (トランスポート[Exchangeとも](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)呼ばれる) で、自動的に転送されたメッセージを検出して外部受信者にブロックする条件とアクション。

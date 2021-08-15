@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: メタデータを使用してコンテンツを分類し、ラベルを自動的に適用し、イベントベースの保持を使用して保持期間を開始することにより、保持ラベルを使用して SharePoint のドキュメントのライフサイクルを管理する方法。
-ms.openlocfilehash: 3bc2d6f5baa2f11e7905ccf98e16145fef24d64d
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6a58e339bd3c99bff85bf933d1cf3e079551c84462fad49874487cc7d4fcb9f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881293"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>保持ラベルを使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する
 

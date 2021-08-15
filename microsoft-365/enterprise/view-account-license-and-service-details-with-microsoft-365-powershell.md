@@ -19,16 +19,16 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: PowerShell を使用して、ユーザーに割り当Microsoft 365サービスを特定する方法について説明します。
-ms.openlocfilehash: 163a92ec31f700aa6157e58b49e23a1cec587815
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 040f296468e3bc3ad3b4b69df4a4420defa202f4dc8e50441f5cbece71399613
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840745"
 ---
 # <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>PowerShell Microsoft 365アカウント のライセンスとサービスの詳細を表示する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 このMicrosoft 365ライセンス プラン (SKU または Microsoft 365 プランとも呼ばれる) のライセンスにより、ユーザーはそれらのプランに対して定義されている Microsoft 365 サービスにアクセスできます。 しかし、ユーザーは、現在割り当てられているライセンスで使用可能なすべてのサービスにアクセスできるとは限りません。 PowerShell を使用して、Microsoft 365サービスの状態を表示できます。 
 

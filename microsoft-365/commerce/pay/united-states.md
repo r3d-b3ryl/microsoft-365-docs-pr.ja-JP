@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f8f5cd4acb6bf8029ba3f953b2681d0619330776
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 291335b0a88de457e9deb931a148fe41635f4d05619d16763bd2c7cba6f6fd5b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536240"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830961"
 ---
 # <a name="payment-information-for-united-states"></a>米国のお支払い情報
 
@@ -30,7 +30,7 @@ ms.locfileid: "52536240"
 
 **受取人:** Microsoft  
 **郵送先住所:**  
-標準メール: PO Box 842103, Dallas, TX 75284-2103  
+標準メール: PO Box 842103、ダラス、TX 75284-2103  
 Express Mail: Lockbox 842103, 1950 N. Stemmons Frwy, Ste. 5010, Dallas, TX 75207-2103
 
 ## <a name="electronic-funds-transfer"></a>電子決済

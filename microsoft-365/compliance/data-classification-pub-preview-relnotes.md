@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類についてのリリース ノート。
-ms.openlocfilehash: bbce01555367c6151a7b16b551d5580ebcaf9d43
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: ac6fea2892ab8f57d445d6cc0158326d240388cadc1defb7a8545decb01d0ecd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086708"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830805"
 ---
 # <a name="data-classification-release-notes"></a>データ分類のリリース ノート
 

@@ -18,12 +18,12 @@ description: 管理者とエンド ユーザーは、分析のために Microsof
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0d48c3c6f6d082085390d6e246a088b6d3f6bf0
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: a6dd7314162fd91be487684be2191c1ea2b50d740fd86fc27bc91e7c0d978196
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105550"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56878212"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のために Microsoft にメッセージを手動で送信する
 

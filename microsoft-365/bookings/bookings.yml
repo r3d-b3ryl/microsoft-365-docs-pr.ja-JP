@@ -2,7 +2,7 @@
 title: Microsoft Bookings
 summary: Microsoft Bookings で予定をスケジュールおよび管理します。 通知と自動通知Outlook統合が含まれます。
 metadata:
-  title: Microsoft Bookings
+  title: Microsoft の予約
   description: Microsoft Bookings で予定をスケジュールおよび管理します。 通知と自動通知Outlook統合が含まれます。
   ms.service: bookings
   ms.topic: landing-page
@@ -11,12 +11,12 @@ metadata:
   manager: serdars
   audience: Admin
   ms.date: 07/21/2020
-  ms.openlocfilehash: 7fb9456dfeb6481aebe1f81307a30c4cfad0ec02
-  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+  ms.openlocfilehash: f8a428cb7d52eddd067e236b0a31c0cc10ab0b7d5f9f9d44e589b3cb88b580d1
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "47419890"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53867249"
 landingContent:
 - title: Microsoft Bookings について
   linkLists:
