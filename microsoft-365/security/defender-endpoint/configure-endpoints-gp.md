@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 0d53e0fa2912c5cb318cb1e7eb9d23149e1c67a4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 406a7cf3e234bc8d9d4fdb314c39d4ee8cbc9aaad7ff4aea96308595c2b1736a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651509"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857791"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>グループ ポリシーをWindows 10デバイスにオンボードする 
 
@@ -71,9 +71,11 @@ ms.locfileid: "53651509"
 
 7. [ **ユーザーがログオンするかどうかを実行する] を選択し** 、[最高の特権で実行する **] チェック ボックスを** オンにします。
 
-8. [操作] タブ **に移動し** 、[新規] **をクリックします。** [アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。 共有  *WindowsDefenderATPOnboardingScript.cmd* ファイルの NetBIOS パスを入力します。
+8. [名前] フィールドに、スケジュールされたタスクの適切な名前 (Defender for Endpoint Deployment など) を入力します。
 
-9. **[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。
+9. [操作] タブ **に移動し** 、[新規] **を選択します。** [アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。 共有 *WindowsDefenderATPOnboardingScript.cmd* ファイルのファイル サーバーの完全修飾ドメイン名 (FQDN) を使用して、UNC パスを入力します。
+
+10. **[OK] を選択** し、開いている GPMC ウィンドウを閉じます。
 
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint デバイスで検出テストを実行 [する」を参照してください](run-detection-test.md)。
@@ -148,9 +150,9 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 ポリシー | Setting
 :---|:---
 リアルタイム保護をオフにする|無効
-動作の監視を有効にする|有効
-ダウンロードしたファイルと添付ファイルをスキャンする|有効
-コンピューター上のファイルとプログラムのアクティビティを監視する|有効
+動作の監視を有効にする|Enabled
+ダウンロードしたファイルと添付ファイルをスキャンする|Enabled
+コンピューター上のファイルとプログラムのアクティビティを監視する|Enabled
 
 <br>
 
@@ -160,7 +162,7 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 
 ポリシー | Setting 
 :---|:---
-スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |有効
+スケジュールされたスキャンを実行する前に、最新のウイルスとスパイウェアのセキュリティ インテリジェンスを確認する |Enabled
 
 <br>
 
@@ -214,9 +216,11 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 
 7. [ **ユーザーがログオンするかどうかを実行する] を選択し** 、[最高の特権で実行する **]** チェック ボックスをオンにします。
 
-8. [アクション] タブ **に移動し** 、[ **新規...] をクリックします**。[アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。 共有ファイル *-MM-DD.cmd ファイルWindowsDefenderATPOffboardingScript_valid_until_YYYY NetBIOS パスを入力* します。
+8. [名前] フィールドに、スケジュールされたタスクの適切な名前 (Defender for Endpoint Deployment など) を入力します。
 
-9. **[OK] を** クリックし、開いている GPMC ウィンドウを閉じます。
+9. [アクション] タブ **に移動し** 、[ **新規...] を選択します**。[アクション **] フィールドで [プログラム** の開始] が選択 **されている必要** があります。 ファイル サーバーの完全修飾ドメイン名 (FQDN) を使用して、共有ファイル *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* ファイルの UNC パスを入力します。
+
+10. **[OK] を選択** し、開いている GPMC ウィンドウを閉じます。
 
 > [!IMPORTANT]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。
@@ -234,7 +238,7 @@ Microsoft MAPS に参加する | 有効、高度なマップ
 > [!NOTE]
 > デバイスが [デバイス] リストに表示を開始するには、数日 **かかる場合があります**。 これには、ポリシーがデバイスに配布される時間、ユーザーがログオンする前にかかる時間、エンドポイントがレポートを開始するのにかかる時間が含まれます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)

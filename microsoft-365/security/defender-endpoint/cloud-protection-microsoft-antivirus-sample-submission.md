@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 07/22/2021
-ms.openlocfilehash: 520f500ce6e0ec10f7d37d1d08efcc91c8910352cdf551ee6e37e4904c459688
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 347d9a6b5de1d9045baf8d4a0778788a18514600bfc6f56652951e4ad420f1bb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834242"
 ---
 # <a name="cloud-delivered-protection-antivirus-sample-submission"></a>クラウド配信の保護ウイルス対策サンプルの申請
 
@@ -35,11 +35,11 @@ Microsoft Defender for Endpoint Antivirus (Defender for Endpoint Antivirus) は�
 - "すべてのサンプルを自動的に送信する"  
 - "サンプルを送信しない"  
 
-Intune、Configuration Manager、GPO、または PowerShell を使用した構成オプションの詳細については、「クラウドによる保護を有効にする」を参照[Microsoft Defender ウイルス対策。](enable-cloud-protection-microsoft-defender-antivirus.md)  
+Intune、Configuration Manager、GPO、または PowerShell を使用した構成オプションの詳細については、「クラウドによる保護を有効にする」を参照[Microsoft Defender ウイルス対策。](/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus)  
 
 ## <a name="customer-data-cloud-protection-and-sample-submission"></a>顧客データ、クラウド保護、サンプル申請
 
-Defender for Endpoint にオンボーディングを行う場合、Defender for Endpoint は、すべてのファイル サンプルを顧客データとして扱い、顧客が選択した地域とデータ保持の両方の選択肢を尊重します。 地域とデータ保持の選択肢については [、Microsoft Defender for Endpoint データストレージとプライバシーについて説明します](data-storage-privacy.md#data-storage-location)。
+Defender for Endpoint にオンボーディングを行う場合、Defender for Endpoint は、すべてのファイル サンプルを顧客データとして扱い、顧客が選択した地域とデータ保持の両方の選択肢を尊重します。 地域とデータ保持の選択肢については [、Microsoft Defender for Endpoint データストレージとプライバシーについて説明します](/security/defender-endpoint/data-storage-privacy#data-storage-location)。
 この製品は複数のコンプライアンス認定を受け、高度なコンプライアンス管理のセットへの継続的な遵守を実証しています。
 
 - ISO 27001
@@ -47,7 +47,7 @@ Defender for Endpoint にオンボーディングを行う場合、Defender for 
 - SOC I、II、III
 - および PCI
 
-[Azure Compliance Offerings は、](/azure/storage/common/storage-compliance-offerings) これらの認定に関する詳細を提供します。 Microsoft Defender for Endpoint のすべての認定成果物は、関連付けられた[](https://servicetrust.microsoft.com/)各 Azure 認定レポート内の Microsoft のサービス信頼ポータルにあります。
+[Azure Compliance Offerings は、](/azure/compliance/#compliance-offerings) これらの認定に関する詳細を提供します。 Microsoft Defender for Endpoint のすべての認定成果物は、関連付けられた[](https://servicetrust.microsoft.com/)各 Azure 認定レポート内の Microsoft のサービス信頼ポータルにあります。
 
 ## <a name="cloud-protection-mechanisms"></a>クラウド保護メカニズム
 
@@ -111,12 +111,11 @@ _図 3.クラウドによる保護とレイヤー化された機械学習_
 
 ## <a name="cloud-delivered-protection-levels"></a>クラウドによって提供される保護レベル
 
-マルウェア検出では、可能な限り強力な保護を提供する一方で、誤検知の数を最小限に抑えることのバランスを取る必要があります。 異なる環境では、保護に対する許容範囲と誤検知のリスクがあります。 クラウド配信の保護レベルを使用すると、お客様は特定の環境に適した許容範囲レベルを定義できます。 クラウド配信保護を有効にした場合、正当なファイルを検出するリスクを高めることなく、強力な検出を提供するように保護レベルが自動的に構成されます。 別の保護レベルを構成する場合は、「クラウド配信の保護レベルを指定する」を参照[Microsoft Defender ウイルス対策。](specify-cloud-protection-level-microsoft-defender-antivirus.md)  
+マルウェア検出では、可能な限り強力な保護を提供する一方で、誤検知の数を最小限に抑えることのバランスを取る必要があります。 異なる環境では、保護に対する許容範囲と誤検知のリスクがあります。 クラウド配信の保護レベルを使用すると、お客様は特定の環境に適した許容範囲レベルを定義できます。 クラウド配信保護を有効にした場合、正当なファイルを検出するリスクを高めることなく、強力な検出を提供するように保護レベルが自動的に構成されます。 別の保護レベルを構成する場合は、「クラウド配信の保護レベルを指定する」を参照[Microsoft Defender ウイルス対策。](/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)  
 
 > [!Note]
 >
 > 保護レベルを変更すると、誤検知のレベルが高くなる可能性があります。変更する前に注意深く評価する必要があります。
->
 
 ## <a name="other-file-sample-submission-scenarios"></a>その他のファイルサンプル提出シナリオ
 
@@ -126,10 +125,10 @@ Defender for Endpoint では、上記のクラウド保護設定に関連しな�
 
 デバイスを Microsoft Defender for Endpoint EDRオンボーディングする場合、デバイスからのサンプル コレクションを有効にする設定が設定されています。これは、上記の設定と混同される可能性があります。 この設定は、Defender for Endpoint 管理ポータルから要求された場合にデバイスからのファイル サンプル コレクションを制御します。これは、既に確立されている役割とアクセス許可の対象です。 この設定では、Defender for Endpoint ポータルのディープ分析などの機能について、エンドポイントからのファイルコレクションを許可またはブロックできます。 この設定が構成されていない場合、既定ではサンプル コレクションを有効にします。
 
-Defender for Endpoint 構成設定の詳細については、「Defender for Endpoint でのデバイスのオンボード ツール[とメソッドWindows 10」を参照してください。](configure-endpoints.md)
+[エンドポイント構成の追加の Defender 設定](/configure-endpoints#additional-defender-for-endpoint-configuration-settings)
 
 ### <a name="automated-investigation-and-response-content-analysis"></a>自動調査と応答のコンテンツ分析
 
 自動調査がデバイスで実行されている場合 (アラートに応答して自動的に実行するか、手動で実行するように構成されている場合)、疑わしいと識別されたファイルをエンドポイントから収集して、詳細な検査を行うことができます。 Defender for Endpoint ポータルでは、自動調査のファイル コンテンツ分析機能を無効にできます。 ファイル拡張子の名前を変更して、自動調査中に自動的に提出される他のファイルの種類の拡張子を追加または削除することもできます。
 
-[自動化ファイルのアップロードを管理する](manage-automation-file-uploads.md)
+[自動化ファイルのアップロードを管理する](/manage-automation-file-uploads)

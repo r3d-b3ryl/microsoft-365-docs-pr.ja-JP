@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 Fuze DataParser コネクタをセットアップして使用して、Fuze データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: 9f3c7590a033c2c19d9b588167d67c24f917ec5f
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: b19a3a6147583a6951aee5ab9e933345351a73c8f9001ce9e80bc9e259fc4940
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454507"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836104"
 ---
 # <a name="set-up-a-connector-to-archive-fuze-data"></a>Fuze データをアーカイブするコネクタをセットアップする
 

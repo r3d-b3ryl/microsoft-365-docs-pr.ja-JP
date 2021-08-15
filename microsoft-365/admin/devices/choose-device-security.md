@@ -18,19 +18,19 @@ ms.custom:
 search.appverid:
 - MET150
 description: 異なる MDM メソッドと MAM メソッドの間で選択します。
-ms.openlocfilehash: 462fe28b1240681380d6a1d26ae362575c0d7c86
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 933aacd950f67eaab9b538fd6b029a4b6f71d807a27bd33c9139650f57f1d7b7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579364"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826233"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>デバイスとアプリ データを保護するためのオプション
 
 組織のデバイスとデータをビジネスおよび企業向けMicrosoft 365保護するには、いくつかの方法があります。 次のスタンドアロン プランを使用できます。
 
 - Intune (Microsoft エンドポイント管理の一部)
-- Azure Active Directory プレミアムプラン。
+- Azure Active Directory Premiumプラン。
 - Basic Mobility and Security (ビジネスおよびエンタープライズ プランのMicrosoft 365に含まれる)、または以前のスタンドアロン プランの一部またはすべてを含むサブスクリプションを使用します。
 
 - 300 Microsoft 365 Business Premium以下の小規模ビジネス向けセキュリティと脅威の保護を含む、新しいサブスクリプション。
@@ -48,8 +48,8 @@ ms.locfileid: "51579364"
 
 - **Azure Active Directory (AD) プレミアム** プランはスタンドアロン プランであり、ビジネスおよびエンタープライズ プランの一部Microsoft 365含むスタンドアロン プランです。 詳細については、「Azure AD価格 [」を参照してください](https://azure.microsoft.com/pricing/details/active-directory/)。
 
-     Azure AD プレミアム P1 と Azure AD プレミアム P2 を使用すると、条件付きアクセス機能、セルフサービス パスワードのリセットなどを設定できます。プランの機能の詳細については、「Azure プレミアム価格[」AD参照](https://azure.microsoft.com/pricing/details/active-directory/)してください。
-- **Microsoft 365 Business Premium** には、Intune と P1 と Azure Active Directory プレミアム高度な脅威Office 365が含まれます。 
+     Azure AD Premium P1とAzure AD Premium P2、条件付きアクセス機能、セルフサービス パスワードのリセットなどを設定できます。プランの機能の詳細については、「Azure プレミアム価格[」AD参照](https://azure.microsoft.com/pricing/details/active-directory/)してください。
+- **Microsoft 365 Business Premium** Intune と高度な脅威Azure Active Directory Premium P1とOffice 365が含まれます。 
  
     Microsoft 365 Business Premiumデバイスとアプリ データをセキュリティ保護するための一連のポリシー テンプレートを提供します。 これは、300 ユーザー以下のほとんどの企業に対して、優れたレベルのセキュリティと脅威の保護を提供します。 詳細については、「セットアップ ウィザード[のMicrosoft 365 Business Premium](../../business/set-up.md)セットアップ」、コンピューター Windows 10セキュリティと[](../../business/secure-win-10-pcs.md)コンプライアンスMicrosoft 365 Business Premium[を参照してください](../../business/security-features.md)。
 

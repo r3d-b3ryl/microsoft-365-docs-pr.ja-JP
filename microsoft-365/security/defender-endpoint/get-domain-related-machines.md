@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 82c1d0f1caf9a6814beb99c38cd6bc1d49eacf27
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: dc6b2f1edcd7387ac144f4cd989cf3c65889dd232d887360187fbf84062cba78
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656021"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53874101"
 ---
 # <a name="get-domain-related-machines-api"></a>Get domain related machines API
 

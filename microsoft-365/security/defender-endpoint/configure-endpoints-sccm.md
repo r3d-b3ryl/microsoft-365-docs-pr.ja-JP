@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 8f12185a9ef7f988aecfa6a807ff707f5102e18c
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 925e76c595b8714ebc0aaf41329b5edb94967434b6acce46431d326047d4c572
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53568114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53874120"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用Windows 10デバイスのオンボード
 
@@ -35,7 +35,7 @@ ms.locfileid: "53568114"
 - Microsoft Endpoint Configuration Manager現在のブランチ
 - System Center 2012 R2 構成マネージャー
 
->Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 ## <a name="supported-client-operating-systems"></a>サポートされているクライアント オペレーティング システム
 
@@ -87,14 +87,14 @@ Configuration Manager バージョン 2002 から、次のオペレーティン�
     a. パッケージを展開する定義済みのデバイス コレクションを選択します。
 
 > [!NOTE]
-> Defender for Endpoint は、アウトオブボックス エクスペリエンス [(OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) フェーズ中のオンボーディングをサポートしない。 インストールまたはアップグレードの実行後にユーザーが OOBE をWindows確認します。
+> Defender for Endpoint は、アウトオブボックス エクスペリエンス [(OOBE)](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) フェーズ中のオンボーディングをサポートしない。 インストールまたはアップグレードの実行後にユーザーが OOBE をWindows確認します。
 
->[!TIP]
+> [!TIP]
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint デバイスで検出テストを実行 [する」を参照してください](run-detection-test.md)。
 >
 > Configuration Manager アプリケーションで検出ルールを作成して、デバイスがオンボードされたのを継続的に確認できます。 アプリケーションは、パッケージやプログラムとは異なる種類のオブジェクトです。
 > デバイスがまだオンボードされていない場合 (保留中の OOBE の完了その他の理由により)、Configuration Manager は、ルールが状態の変更を検出するまで、デバイスのオンボードを再試行します。
-> 
+>
 > この動作は、"OnboardingState" レジストリ値 (タイプ REG_DWORD) が 1 の場合に検出ルールチェックを作成することで実現できます。
 > このレジストリ値は、"HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status" の下にあります。
 詳細については[、「Configure Detection Methods in System Center 2012 R2 Configuration Manager」を参照してください](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)。
@@ -103,8 +103,8 @@ Configuration Manager バージョン 2002 から、次のオペレーティン�
 
 デバイスごとに構成値を設定して、Microsoft 365 Defender から詳細分析用にファイルを送信する要求が行われたときに、デバイスからサンプルを収集できるかどうかを示します。
 
->[!NOTE]
->これらの構成設定は、通常、Configuration Manager を介して行われます。
+> [!NOTE]
+> これらの構成設定は、通常、Configuration Manager を介して行われます。
 
 Configuration Manager で構成アイテムのコンプライアンス ルールを設定して、デバイスのサンプル共有設定を変更できます。
 
@@ -112,58 +112,62 @@ Configuration Manager で構成アイテムのコンプライアンス ルール
 
 構成は、次のレジストリ キー エントリを使用して設定されます。
 
-```console
+```text
 Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-ここで、<br>
-キーの種類は D-WORD です。 <br>
-使用可能な値は次のいずれかです。
-- 0 - このデバイスからのサンプル共有を許可しない
-- 1 - このデバイスからすべての種類のファイルを共有できます
+ここで、キーの種類は D-WORD です。 使用可能な値は次のいずれかです。
+
+- 0: このデバイスからのサンプル共有を許可しない
+- 1: このデバイスからすべての種類のファイルを共有できます
 
 レジストリ キーが存在しない場合の既定値は 1 です。
 
 コンプライアンスの詳細については、「System Center Configuration Manager [System Center 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))Configuration Manager のコンプライアンス設定の概要」を参照してください。
 
-
 ## <a name="other-recommended-configuration-settings"></a>その他の推奨構成設定
+
 デバイスをサービスにオンボーディングした後、以下の推奨構成設定でデバイスを有効にすることで、含まれている脅威保護機能を活用することが重要です。
 
 ### <a name="device-collection-configuration"></a>デバイス コレクションの構成
+
 バージョン 2002 以降のエンドポイント構成マネージャーを使用している場合は、展開を拡大してサーバーまたはダウンレベルのクライアントを含める方法を選択できます。
 
-
 ### <a name="next-generation-protection-configuration"></a>次世代の保護構成
+
 次の構成設定をお勧めします。
 
-**スキャン** <br>
+#### <a name="scan"></a>スキャン
+
 - USB ドライブなどのリムーバブル 記憶域デバイスをスキャンする: はい
 
-**リアルタイム保護** <br>
+#### <a name="real-time-protection"></a>リアルタイム保護
+
 - 動作監視を有効にする: はい
 - ダウンロード時およびインストール前に望ましくない可能性があるアプリケーションに対する保護を有効にする: はい
 
-**クラウド保護サービス**
+#### <a name="cloud-protection-service"></a>クラウド保護サービス
+
 - Cloud Protection Service メンバーシップの種類: 高度なメンバーシップ
 
-**攻撃表面の縮小** 使用可能なすべてのルールを [監査] に構成します。
+#### <a name="attack-surface-reduction"></a>攻撃面の縮小
 
->[!NOTE]
+使用可能なすべてのルールを [監査] に構成します。
+
+> [!NOTE]
 > これらのアクティビティをブロックすると、正当なビジネス プロセスが中断される可能性があります。 最善の方法は、すべてを監査に設定し、有効にしても安全な設定を特定し、誤検知検出を持つエンドポイントでこれらの設定を有効にします。
 
+#### <a name="network-protection"></a>ネットワーク保護
 
-**ネットワーク保護** <br>
-監査モードまたはブロック モードでネットワーク保護を有効にする前に、サポート ページから入手できるマルウェア対策プラットフォーム更新プログラムがインストール [されていることを確認してください](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
+監査モードまたはブロック モードでネットワーク保護を有効にする前に、サポート ページから入手できるマルウェア対策プラットフォーム更新プログラムがインストール [されていることを確認してください](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
 
+#### <a name="controlled-folder-access"></a>フォルダー アクセスの制御
 
-**制御されたフォルダー アクセス**<br>
 監査モードで機能を 30 日以上有効にします。 この期間が終了した後、検出を確認し、保護されたディレクトリへの書き込みを許可するアプリケーションの一覧を作成します。
 
 詳細については、「管理フォルダー アクセス [の評価」を参照してください](evaluate-controlled-folder-access.md)。
-
 
 ## <a name="offboard-devices-using-configuration-manager"></a>Configuration Manager を使用したオフボード デバイス
 
@@ -180,24 +184,19 @@ Value: 0 or 1
 
 
 1. ポータルからオフボード パッケージ[Microsoft 365 Defenderします](https://security.microsoft.com/)。
-
     1. ナビゲーション ウィンドウで、[エンドポイント **デバイス** 設定  >  **オフ**  >  **ボード]**  >   **を選択します**。
-
     1. オペレーティング システムWindows 10を選択します。
-
     1. [展開方法 **] フィールド** で、[System Center Configuration Manager **2012/2012 R2/1511/1602] を選択します**。
-    
     1. [ **パッケージのダウンロード]** を選択し、ファイルを.zipします。
 
 2. パッケージを展開するネットワーク管理者がアクセスできる共有の読み取り専用の場所に、.zip ファイルの内容を抽出します。 *-MM-DD.cmd WindowsDefenderATPOffboardingScript_valid_until_YYYYという名前のファイルが必要です*。
 
 3. [2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))の「パッケージとプログラム」の記事の手順に従ってSystem Centerパッケージを展開します。
 
-    a. パッケージを展開する定義済みのデバイス コレクションを選択します。
+   パッケージを展開する定義済みのデバイス コレクションを選択します。
 
 > [!IMPORTANT]
 > Offboarding を使用すると、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (通知への参照を含む) は最大 6 か月間保持されます。
-
 
 ## <a name="monitor-device-configuration"></a>デバイス構成の監視
 
@@ -240,6 +239,7 @@ Value: "1"
 詳細については[、「2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))Configuration Manager のコンプライアンスSystem Center概要」を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
+
 - [グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md)

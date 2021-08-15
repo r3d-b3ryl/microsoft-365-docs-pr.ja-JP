@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 InvestEdge DataParser コネクタをセットアップして使用して、InvestEdge データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: b20d9809c4bea113580a62c7a414321ed15da6ad
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: d8ce18dc8e9e6b5048e034494c858c10b5937de0d3dc679502d66545583b63ff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454471"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836128"
 ---
 # <a name="set-up-a-connector-to-archive-investedge-data"></a>InvestEdge データをアーカイブするコネクタをセットアップする
 

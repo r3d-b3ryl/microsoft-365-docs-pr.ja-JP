@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: ドメインを確認し、Microsoft の電子メール、Skype for Business、その他のサービスWindows DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 86deaac256c0d657ad9604be91349b113e9c0ded
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 3a1b11eb9663a68f7787b026c7c7402db8ef4a854e4b9ecdb3356bb1074e2610
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393729"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826209"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Microsoft の DNS レコードを作成するには、Windowsベースの DNS を使用します。
 
@@ -54,7 +54,7 @@ DNS レコードを追加した後のメール フローなどの問題に関す
     - ホスト名: 
     - @Address: ここで、Microsoft からコピーしたアドレス値にポイントを貼り付けます。  
     - Pref: 
-- [変更 **の保存] を選択します**。
+- [**変更を保存**] を選択します。
 - 古い MX レコードをすべて削除します。 電子メールを別の場所にルーティングするこのドメインの古い MX レコードがある場合は、各古いレコードの横にあるチェックボックスをオンにし、[OK の削除] を  >  **選択します**。 
    
 ## <a name="add-cname-records"></a>CNAME レコードの追加
@@ -78,14 +78,14 @@ SIP CNAME レコードを追加します。
     - ホスト名: sip
     - 種類: CNAME
     - アドレス: sipdir.online.lync.com
-- **[OK]** を選択します。
+- **[OK]** をクリックします。
 
 オンライン自動Skype for Business CNAME レコードを追加します。  
 - ドメインの [DNS マネージャー] ページで、[アクション \> **CNAME] (CNAME) に移動します**。 [新しい **リソース レコード]** ダイアログ ボックスで、フィールドが次の値に正確に設定されている必要があります。  
     - ホスト名: lyncdiscover
     - 種類: CNAME
     - アドレス: webdir.online.lync.com
-- **[OK]** を選択します。
+- **[OK]** をクリックします。
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Microsoft のモバイル デバイス管理 (MDM) に 2 つの CNAME レコードを追加する
 
@@ -99,7 +99,7 @@ MDM Enterpriseregistration CNAME レコードを追加します。
 - ホスト名: enterpriseregistration
 - 種類: CNAME
 - アドレス: enterpriseregistration.windows.net
-- **[OK]** を選択します。 
+- **[OK]** をクリックします。 
 
 MDM Enterpriseenrollment CNAME レコードを追加します。 
 -  ドメインの [DNS マネージャー] ページで、[アクション \> **CNAME] (CNAME) に移動します**。 
@@ -107,7 +107,7 @@ MDM Enterpriseenrollment CNAME レコードを追加します。
     - ホスト名: enterpriseenrollment
     - 種類: CNAME
     - アドレス: enterpriseenrollment-s.manage.microsoft.com
-- **[OK]** を選択します。
+- **[OK]** をクリックします。
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 <a name="BKMK_add_TXT"> </a>
@@ -127,7 +127,7 @@ MDM Enterpriseenrollment CNAME レコードを追加します。
 -  レコードの種類: TXT
 -  アドレス: v=spf1 include:spf.protection.outlook.com -all 
          
--  **[OK]** を選択します。
+-  **[OK]** をクリックします。
    
 ## <a name="add-srv-records"></a>SRV レコードの追加
 <a name="BKMK_add_SRV"> </a>
@@ -144,7 +144,7 @@ Microsoft に必要な 2 つの SRV レコードを追加します。
     -  重み: 1
     -  ポート: 443
     -  ターゲット (ホスト名): sipdir.online.lync.com
--  **[OK]** を選択します。 
+-  **[OK]** をクリックします。 
 
 
 オンライン フェデレーションの SIP SRV レコードSkype for Business追加します。  
@@ -157,7 +157,7 @@ Microsoft に必要な 2 つの SRV レコードを追加します。
     -  重み: 1
     -  ポート: 5061
     -  ターゲット (ホスト名): sipfed.online.lync.com
--  **[OK]** を選択します。 
+-  **[OK]** をクリックします。 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>まだドメインを所有していない場合は、レコードを追加してドメインを所有している必要があります。
 <a name="BKMK_verify"> </a>

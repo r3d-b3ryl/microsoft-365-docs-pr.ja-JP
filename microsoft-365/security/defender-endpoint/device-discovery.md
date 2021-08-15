@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4d44fef395ad7da336e55f4cd0ca6eed46e9393d
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 75b47d9d7c95bd2e1f0c2654e59c3d24e7e838fc6a4d1d543976829e9c96c149
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596292"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834134"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -136,7 +136,7 @@ DeviceNetworkEvents
 2. 管理されていないデバイスは、定義された条件に基づいて既存のデバイス グループに割り当てられます。
 3. まれに、標準検出によってネットワーク モニターやセキュリティ ツールでアラートがトリガーされる場合があります。 このようなイベントが発生した場合は、これらの問題が繰り返されるのを防ぐためのフィードバックをお寄せください。 特定のターゲットまたはサブネット全体が Standard Discovery によってアクティブにプローブされるのを明示的に除外できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [デバイス検出の構成](configure-device-discovery.md)
 - [デバイスの検出に関するよくある質問](device-discovery-faq.md)

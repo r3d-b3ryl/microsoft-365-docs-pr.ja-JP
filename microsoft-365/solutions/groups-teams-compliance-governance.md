@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ、グループ、グループMicrosoft 365、およびTeamsのコンプライアンス オプションSharePointします。
-ms.openlocfilehash: 236b977b22066830e1b36bc87676fd5fa2c9d3f5
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9ffd08d217d7b79db69778021e0629ae7929edb61b2342317c105d60aee181cb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538125"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896957"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>グループ、グループ、Microsoft 365、およびTeamsのコンプライアンス SharePointオプション
 
@@ -29,22 +29,22 @@ Microsoft 365共同作業時にコンプライアンスを維持するための�
 
 次の表に、コンプライアンス コントロールのクイック リファレンスを示します。Microsoft 365。 詳細については、次のセクションで説明します。
 
-|カテゴリ|説明|参照|
+|カテゴリ|説明|Reference|
 |:-------|:----------|:--------|
 |情報の保持|||
 ||グループのメールとコンテンツSharePoint保持する|[SharePoint と OneDrive のアイテム保持ポリシーの詳細](../compliance/retention-policies-sharepoint.md)|
 ||チャットとメッセージを保持する|[Microsoft Teams のアイテム保持ポリシーの詳細](../compliance/retention-policies-teams.md)|
 |情報の分類|||
 ||グループとチームを分類する|[秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||機密コンテンツを自動的に分類する|[機密ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)|
+||機密コンテンツを自動的に分類する|[秘密度ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)|
 ||機密性の高いコンテンツを暗号化する|[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](../compliance/encryption-sensitivity-labels.md)|
 |情報保護|||
 ||機密情報の損失を防止する|[データ損失防止について](../compliance/dlp-learn-about-dlp.md)|
 ||チャット内の機密情報を保護します。|[データ損失防止と Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
-||組織の機密情報を定義する|[カスタムの機密情報の種類](../compliance/sensitive-information-type-learn-about.md)|
+||組織の機密情報を定義する|[カスタムの機密情報タイプ](../compliance/sensitive-information-type-learn-about.md)|
 |ユーザーのセグメント化|||
 ||ユーザー セグメント間の通信を制限する|[情報障壁](../compliance/information-barriers.md)|
-|データの保存場所|||
+|データ所在地|||
 ||特定の地域の場所にデータを保存する|[Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)|
 
 ## <a name="information-retention"></a>情報の保持
@@ -79,7 +79,7 @@ Microsoft 365共同作業時にコンプライアンスを維持するための�
 
 機密情報の種類の検出やトレーニング可能な分類子とのパターンマッチングなど、指定した条件に基づいてファイルや電子メールに機密ラベルを自動適用する Microsoft 365 を構成できます。
 
-- [機密ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)
+- [秘密度ラベルをコンテンツに自動的に適用する](../compliance/apply-sensitivity-label-automatically.md)
 
 秘密度ラベルを使用してファイルを暗号化し、ファイルの暗号化を解除して読み取る権限を持つユーザーのみを許可できます。
 
@@ -104,7 +104,7 @@ DLP ポリシーを使用すると、ユーザー、およびユーザー間でS
 
 プロジェクト コード名など、組織に固有の機密情報がある場合は、独自の機密情報の種類を作成して DLP ポリシーに適用して、グループ、チーム、および Sharepoint のコンテンツを保護できます。
 
-- [カスタムの機密情報の種類](../compliance/sensitive-information-type-learn-about.md)
+- [カスタムの機密情報タイプ](../compliance/sensitive-information-type-learn-about.md)
 
 ## <a name="user-segmentation"></a>ユーザーのセグメント化
 
@@ -116,7 +116,7 @@ DLP ポリシーを使用すると、ユーザー、およびユーザー間でS
 
 - [情報バリアを使用してSharePoint](/sharepoint/information-barriers)
 
-## <a name="data-residency"></a>データの保存場所
+## <a name="data-residency"></a>データ所在地
 
 複数地域Microsoft 365を使用すると、データ常駐の要件を満たすために選択した地域の場所にデータをプロビジョニングして保存できます。 複数地域環境では、Microsoft 365 テナントは中央の場所 (Microsoft 365 サブスクリプションが最初にプロビジョニングされた場所) と、データを格納できる 1 つ以上のサテライトの場所で構成されます。
 
@@ -124,7 +124,7 @@ DLP ポリシーを使用すると、ユーザー、およびユーザー間でS
 
 - [Microsoft 365 Multi-Geo の計画](/microsoft-365/enterprise/plan-for-multi-geo)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

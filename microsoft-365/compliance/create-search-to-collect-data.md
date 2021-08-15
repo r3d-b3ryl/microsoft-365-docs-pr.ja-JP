@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: ケース内の検索の保管担当者と保管場所を作成、定義、および選択するAdvanced eDiscoveryします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1d9051824ff3f28484d0750b982edd70334a9b88
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f5eadf89d0f4eae3c206c82609f7b7d33fbe1ad15953808acab52880f00da274
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035769"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886439"
 ---
 # <a name="create-a-search"></a>検索を作成する
 

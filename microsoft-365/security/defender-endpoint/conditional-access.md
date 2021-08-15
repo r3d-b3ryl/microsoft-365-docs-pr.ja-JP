@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c547fd5691332044082b918f07e5da7c7c92bcf
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7bfe9006a42bc2599c6883b5b27d5565a4df57a49fc8ba7cb4faf1d00fe29a9d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655433"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834217"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>条件付きアクセスを有効にして、ユーザー、デバイス、およびデータをより良く保護する 
 

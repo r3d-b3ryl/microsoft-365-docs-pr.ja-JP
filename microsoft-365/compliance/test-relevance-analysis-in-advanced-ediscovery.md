@@ -1,5 +1,5 @@
 ---
-title: 高度な電子情報開示での関連性のテスト分析
+title: テストの関連性分析 (Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
-description: 高度な電子情報開示のバッチ計算後に [テスト] タブを使用して、処理の全体的な品質をテスト、比較、検証する方法について説明します。
-ms.openlocfilehash: 3ac12c176f2e46ac0321976a7e0689fbd8893bba
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+description: バッチ計算の後に [テスト] タブを使用してAdvanced eDiscovery処理の全体的な品質をテスト、比較、検証する方法について説明します。
+ms.openlocfilehash: 97adafae8cc6113fbc2f34a1c9a95276439fc834e14ef0b45b345e1deb577ca9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769172"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865248"
 ---
-# <a name="test-relevance-analysis-in-advanced-ediscovery"></a>高度な電子情報開示での関連性のテスト分析
+# <a name="test-relevance-analysis-in-advanced-ediscovery"></a>テストの関連性分析 (Advanced eDiscovery
   
-Advanced eDiscovery の [テスト] タブを使用すると、処理の全体的な品質をテスト、比較、検証できます。 これらのテストは、バッチ計算後に実行されます。 コレクション内のファイルにタグを付け、専門家は、タグ付けされた各ファイルがケースに関連するかどうかを最終的に判断します。
+[テスト] タブAdvanced eDiscovery、処理の全体的な品質をテスト、比較、検証できます。 これらのテストは、バッチ計算後に実行されます。 コレクション内のファイルにタグを付け、専門家は、タグ付けされた各ファイルがケースに関連するかどうかを最終的に判断します。
   
 単一および複数の問題のシナリオでは、通常、テストは問題ごとに実行されます。 各テストの後に結果を表示し、指定したサンプル テスト ファイルを使用してテスト結果を再作業できます。
   
 ## <a name="testing-the-rest"></a>残りのテスト
 
-"残りのテスト" テストは、最終的な高度な電子情報開示結果に基づいて特定の関連性カットオフ スコアより上のファイルのみを確認する場合など、カリングの決定を検証するために使用されます。 エキスパートは、選択したカットオフ スコアの下にあるファイルのサンプルをレビューして、そのセット内の関連ファイルの数を評価します。
+"残りのテスト" テストは、カリングの決定を検証するために使用されます。たとえば、最終結果に基づいて特定の関連性カットオフ スコアより上のファイルのみを確認Advanced eDiscoveryします。 エキスパートは、選択したカットオフ スコアの下にあるファイルのサンプルをレビューして、そのセット内の関連ファイルの数を評価します。
   
 このテストでは、レビュー セットと残りの母集団の統計と比較を提供します。 レビュー セットの結果は、トレーニング中に関連性によって計算された結果です。 結果には、次のような設定と入力パラメーターに基づく計算が含まれます。
   

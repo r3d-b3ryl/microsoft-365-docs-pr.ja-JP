@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、特定のケースを作成および管理するAdvanced eDiscovery説明します。 最初の手順は、ケースを作成し、新しい機能Advanced eDiscovery使用を開始します。
-ms.openlocfilehash: 95e88bb071476de1ed66b3ffaa8942f0a9df89c2
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 31b19f48ba6deabe3d4150544ce16c3669d18efe1607652d8224a2ebb1f81bb2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311642"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886464"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>ケースの作成と管理Advanced eDiscoveryする
 
@@ -34,7 +34,7 @@ ms.locfileid: "52311642"
 
 ## <a name="create-a-case"></a>ケースを作成する
 
-ケースを作成し、メンバーを追加するには、次の手順を実行します。 ケースを作成するユーザーは、メンバーとして自動的に追加されます。 ケースのメンバーは、コンプライアンス センターのケースにMicrosoft 365し、Advanced eDiscoveryできます。
+ケースを作成し、メンバーを追加するには、次の手順を実行します。 ケースを作成するユーザーは、メンバーとして自動的に追加されます。 ケースのメンバーは、ケース内のケースにアクセスし、Microsoft 365 コンプライアンス センタータスクAdvanced eDiscovery実行できます。
 
 1. 電子情報開示 <https://compliance.microsoft.com> のアクセス許可が割り当てられているユーザー アカウントの資格情報を使用して、アクセスしてサインインします。 組織の管理役割グループのメンバーは、組織のケースAdvanced eDiscovery作成することもできます。
 

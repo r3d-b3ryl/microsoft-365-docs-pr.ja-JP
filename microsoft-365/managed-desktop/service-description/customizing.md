@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 59a2b8227eb7e410ecf8506ce288978213537edc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 83c5ce953b298c61502f2bc10a5d01191bfb98d1d39690a9472509058d8f37db
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245518"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857893"
 ---
 # <a name="exceptions-to-the-service-plan"></a>サービス プランの例外
 
@@ -24,7 +24,7 @@ Microsoft マネージド デスクトップは、ユーザーに安全で生産
 
 例外は、基本構成の追加または変更Microsoft マネージド デスクトップです。例は、USB ポート構成から新しいデバイス ドライバーの展開までです。 次のようにさまざまな例外をグループ化します。
 
-|型  |説明  |
+|種類  |説明  |
 |---------|---------|
 |生産性向上ソフトウェア     |  アプリケーション要件によって制限されるユーザーが必要とするフォアグラウンド [ソフトウェア](mmd-app-requirements.md)       |
 |VPN の&エージェント     |  デバイスまたはネットワークの動作をセキュリティで保護、監視、または変更するために使用されるソフトウェア       |

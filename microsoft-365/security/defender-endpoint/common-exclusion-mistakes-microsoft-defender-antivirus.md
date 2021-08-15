@@ -16,18 +16,18 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/15/2021
-ms.openlocfilehash: f9ca83fcfba4b79898a0fed527e38947a4c230d6
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: e7ea71848c2e64eb7d67605ca108ac9fc90709747af633e6a01b5da67cd8baed
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950133"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857765"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>除外を定義する際に避ける必要のある一般的な間違い
 
 スキャンしないアイテムの除外リストをMicrosoft Defender ウイルス対策できます。 このような除外されたアイテムには、デバイスを脆弱にする脅威が含まれている可能性があります。 この記事では、除外を定義するときに回避する必要がある一般的な間違いについて説明します。 
 
-除外リストを定義する前に、除外[おすすめを参照してください](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)。
+除外リストを定義する前に、「 [除外を定義するための推奨事項」を参照してください](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)。
 
 ## <a name="excluding-certain-trusted-items"></a>特定の信頼済みアイテムを除外する
 

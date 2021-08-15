@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: PowerShell スクリプトを使用した検索の作成やレポートの実行など、コンテンツ検索タスクを自動化する方法については、Office 365 のセキュリティ & コンプライアンス センターで説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6155a0bf411cc83fd58291efe7797e7f68370708
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: ba42baa399e92e65228d18028043c53d8e90fc78f2c6ae614c39d68efc3482d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994964"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886505"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 

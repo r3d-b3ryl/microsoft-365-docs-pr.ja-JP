@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: ユーザーが特定のアクティビティを実行するときに、&通知を送信Microsoft 365セキュリティ コンプライアンス センターでアクティビティ通知を追加および管理する
-ms.openlocfilehash: 5ca3b7d49490b3bd43eb82e2f230e804ad769386
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 1411e69229dc2baa60578bfa60a7c2c18184fd10a759081e68c13d87a482d7cb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542059"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886554"
 ---
 # <a name="create-activity-alerts"></a>アクティビティアラートの作成
 
@@ -97,7 +97,7 @@ ms.locfileid: "53542059"
 
 アクティビティアラートをオンに戻す場合は、これらの手順を繰り返し、[ **オフ** ] トグル スイッチをクリックして状態を [オン] に **変更します**。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - セキュリティ & コンプライアンス センターの [このアラートの送信先] フィールド (および [アクティビティ通知] ページの[受信者]に一覧表示) で指定されているユーザーに送信される電子メール通知の例を次に示します。
 

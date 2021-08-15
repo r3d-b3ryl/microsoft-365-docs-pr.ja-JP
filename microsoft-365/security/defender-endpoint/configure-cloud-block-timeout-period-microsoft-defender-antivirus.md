@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/04/2021
-ms.openlocfilehash: dfb75b77119d9550931c3e476323bde67a3b148f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 4bca279f4fbb9a521fb436a91d2ff772dc4660e7d7c72f861bf010dfc03194cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789089"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53874149"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>クラウド ブロックのタイムアウト期間の構成
 
@@ -69,6 +69,6 @@ ms.locfileid: "52789089"
 
    クラウドの決定を待っている間にファイルが実行されるのを防ぐための余分な時間を指定します。 1 秒から 50 秒の余分な時間を秒で指定します。 指定した値は、既定の 10 秒に追加されます。
 
-5. **[OK]** を選択します。
+5. **[OK]** をクリックします。
 
  

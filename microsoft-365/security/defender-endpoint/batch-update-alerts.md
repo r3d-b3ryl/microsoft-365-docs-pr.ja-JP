@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e6e84fb611e22462b11f6c32a14b10a52ef6e45
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d5307eba16184c8eb3aa3dadf32ad3d2ea69448fd53bdbc27d1db13bef1a40ec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655877"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857813"
 ---
 # <a name="batch-update-alerts"></a>バッチ更新の通知
 

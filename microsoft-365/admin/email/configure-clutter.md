@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'PowerShell を使用して、組織内のすべてのユーザーまたは特定のユーザーに対してクラッター機能を有効または無効Exchangeします。 '
-ms.openlocfilehash: 91098047bdf2ab8190283990bdc6b0292e3e57ba
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1bca3c8353d756ff5b7a9cb20f083313a3ee13117c784049a5277e677110058b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393981"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826185"
 ---
 # <a name="configure-clutter-for-your-organization"></a>組織での低優先メールの構成
 

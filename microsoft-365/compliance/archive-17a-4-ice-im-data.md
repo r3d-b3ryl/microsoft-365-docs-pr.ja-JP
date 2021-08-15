@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 ICE Connect Chat DataParser コネクタをセットアップして使用して、MICROSOFT 365 で ICE Connect チャット データをインポートおよびアーカイブする方法について学習します。
-ms.openlocfilehash: 0aac5c701f122eaf99497635281ebc07d835fc2e
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 3a81db4cfc5881ee8f68637fa50755a1967f365055fdc4382469526a4e76dc78
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454483"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836146"
 ---
 # <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>ICE データとチャット データをアーカイブするConnect設定する
 
