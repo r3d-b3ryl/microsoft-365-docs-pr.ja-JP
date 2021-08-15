@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: エンタープライズ テスト環境用に、グループ ベースのライセンスと動的Microsoft 365メンバーシップを構成します。
-ms.openlocfilehash: 26840e2884202a0fa9c4bb563f3d7c653482ef87
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8835498f0b56eeafbc86f49a0be2df840359afbfdeb5518ca6fe521b64c8c652
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859085"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向けライセンスとグループ Microsoft 365を自動化する
 
@@ -51,7 +51,7 @@ ms.locfileid: "50905370"
 
 まず、Sales という名前の新しいグループを作成し、部署が Sales に設定されているユーザー アカウントが自動的に **Sales** グループに参加する動的グループ メンバーシップ ルールを追加します。
 
-1. インターネット ブラウザーのプライベート インスタンスで、Microsoft 365 テスト[](https://admin.microsoft.com)ラボ サブスクリプションのグローバル管理者アカウントMicrosoft 365 E5サインインします。
+1. インターネット ブラウザーのプライベート インスタンスで、テスト ラボ[サブスクリプション](https://admin.microsoft.com)のMicrosoft 365 管理センター管理者アカウントを使用して、Microsoft 365 E5にサインインします。
 2. ブラウザーの別のタブで、Azure portal に移動します [https://portal.azure.com](https://portal.azure.com) 。
 3. Azure portal で、検索ボックスに **グループ** を入力し、[グループ] を **選択します**。
 4. [すべてのグループ **] ウィンドウで** 、[新しいグループ] **を選択します**。
@@ -75,7 +75,7 @@ ms.locfileid: "50905370"
 次に、User 4 アカウントで動的グループ メンバーシップと自動ライセンスをテストします。
 
 1. ブラウザーの **[Microsoft Office] タブ** で、[管理] を **選択します**。
-2. [管理センター **Microsoft 365] タブで**、[アクティブなユーザー]**を選択します**。
+2. [ユーザー]**タブMicrosoft 365 管理センター[** アクティブ ユーザー]**を選択します**。
 3. [アクティブ な **ユーザー] ページ** で、[ **ユーザー 4] アカウントを選択** します。
 4. [ユーザー **4] ウィンドウで** 、[製品ライセンスの **編集** ] **を選択します**。
 5. [製品ライセンス **] ウィンドウ** で、ライセンスを無効Microsoft 365 E5し、[閉 **じる** 保存]**を**  >  **選択します**。

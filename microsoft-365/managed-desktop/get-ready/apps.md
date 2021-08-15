@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 37f533f34753d66d975cb557239b2b168ac78f8e
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: b248af7d098fa8b78632b248e37248840f0f1d8302a658061489f6ea68e4fd85
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430770"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877747"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのアプリ
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
-ms.openlocfilehash: d53c95ac636af38d458c1259f8d75c1e59f9d775
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 60d78f243c757596aa5b3d493d0b79848ebe033a109858e8fd8fbd7ae6bf5f9c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587923"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877793"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
 
@@ -60,7 +60,7 @@ ms.locfileid: "53587923"
     > [!NOTE]
     > サインアップが完了すると、顧客データが顧客データに表示されるのに最大で 48 時間Microsoft 365 Lighthouse。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [ポータル Microsoft 365 Lighthouseの構成](m365-lighthouse-configure-portal-security.md) 
 

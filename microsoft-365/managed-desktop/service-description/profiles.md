@@ -12,18 +12,18 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 5b5421d2b4001b813d3bcc1e804cae7fb05d0fa7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4bfbf817279512c32f3862baa1aba75720eb81a8e5d385a5433951eaa4c29aff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877706"
 ---
 # <a name="device-profiles"></a>デバイス プロファイル
 
 デバイスに異なる事前設定構成 ("デバイス プロファイル") を割り当て、各構成を特定の種類のユーザーのニーズに合って最適化できます。 次の 3 つのデバイス プロファイルを使用できます。
 
-- 標準
+- Standard
 - 機密データ
 - Power User
 
@@ -48,7 +48,7 @@ ms.locfileid: "52842004"
 
 ****
 
-|機能|機密データ|Power User|標準|
+|特徴|機密データ|Power User|Standard|
 |---|:---:|:---:|:---:|
 |**外部ファイルのブロックStorage**|はい|はい|いいえ|
 |**[クラウド ブロック レベル](/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)**|高|高|高|

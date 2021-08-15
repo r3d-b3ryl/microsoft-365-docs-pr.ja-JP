@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 特定のグループにゲストが追加されるのを防ぐ方法について説明します。
-ms.openlocfilehash: 83fb123a3512e767270cf69f6ff56813e27903d4
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: ad83ab0b0ec739691721627b09924e1e0ab8ee1d07513634606525f2371d0f6d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621741"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827736"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>ゲストが特定のグループまたはチームにMicrosoft 365されるMicrosoft Teamsする
 
@@ -105,7 +105,7 @@ Get-AzureADUser -Filter "userType eq 'Guest'"
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

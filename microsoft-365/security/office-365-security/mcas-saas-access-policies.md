@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 414d6ae0586078551c737e45763ea665d5eec4e6
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 0051b138d155ed4bdf41786f4a73439bba22c738ba7d2a73da44341437ba5c0c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838573"
 ---
 # <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>SaaS Microsoft Cloud App Security推奨されるポリシー
 Microsoft Cloud App Security Azure AD 条件付きアクセス ポリシーを基にして、ダウンロード、アップロード、コピー、貼り付け、印刷のブロックなど、SaaS アプリによる詳細なアクションをリアルタイムで監視および制御できます。 この機能は、企業リソースが管理されていないデバイスやゲスト ユーザーからアクセスされる場合など、固有のリスクを伴うセッションにセキュリティを追加します。
@@ -50,7 +50,7 @@ SaaS アプリのコレクション全体のデータを保護するために、
 
 次の表に、Azure サーバーで作成する必要がある新しい条件付きアクセス AD。
 
-|保護レベル|ポリシー|詳細情報|
+|保護レベル|ポリシー|詳細|
 |---|---|---|
 |すべての保護レベル|[サーバーで条件付きアクセス アプリ制御を使用Cloud App Security](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|これにより、IdP (Azure AD) を構成して、Cloud App Security。|
 ||||

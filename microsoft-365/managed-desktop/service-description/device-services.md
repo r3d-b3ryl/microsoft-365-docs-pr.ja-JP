@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e843ae91536cfa24ad8c8a257764cc7fd88b8883
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: d8c7c4a47f4332351e632821adaf05b64bc6cf21c840a71b5b08bf8aedf063c0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664042"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877679"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft マネージド デスクトップデバイス サービス
 

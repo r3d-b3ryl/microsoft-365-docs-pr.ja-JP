@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 0ee214cf7ff5d5998a7fa35688574a23f8b082f0
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 15268fb8203aad48c0515277851f38f22719d8f06a1fc2af12c84e37df8b6b46
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877655"
 ---
 # <a name="overview"></a>概要
 
@@ -73,7 +73,7 @@ Microsoft Intuneおよびサービスをサポートするために、データ�
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 Microsoft Defender for Endpoint は、管理、追跡、およびレポートの目的で、Microsoft マネージド デスクトップデバイスの情報を収集および保存します。 収集される情報には、ファイル データ (ファイル名、サイズ、ハッシュなど)、プロセス データ (実行中のプロセス、ハッシュ)、レジストリ データ、ネットワーク接続データ、デバイスの詳細 (デバイス識別子、デバイス名、オペレーティング システムのバージョンなど) が含まれます。 [Microsoft Defender for Endpoint のデータ](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)収集とストレージの場所の詳細については、「Microsoft Defender for Endpoint data storage and privacy」を参照してください。 
 
-## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise 
+## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for Enterprise 
 Microsoft 365 Apps for enterpriseは、Microsoft マネージド デスクトップ Microsoft マネージド デスクトップ によって管理される定義済みの更新チャネルに基づいて、これらのアプリが最新バージョンで最新のバージョンに更新されるのを確認するために、Microsoft マネージド デスクトップ とデータを収集および共有します。 Microsoft [Defender for Endpoint のデータストレージとプライバシーを参照](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)して、Microsoft 365 Appsのデータ収集と保存場所の詳細について説明します。
 
 ## <a name="major-data-change-notification"></a>メジャー データ変更通知

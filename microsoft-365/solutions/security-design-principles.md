@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 7cd9098766024093a0b9fa2d6e95131bf13d09df
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d0d4fe867664d090359b1a9f7ab13d3ad46497ce8673a9d1615a112bfe8d78ff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827688"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>セキュリティ上のハードル :1 人の建築家の視点
 
@@ -49,7 +49,7 @@ ms.locfileid: "51052484"
 
 次に、ゼロ信頼アーキテクチャアプローチを採用します。 これは、ID ベースの最新のセキュリティ境界の構築から始まります。 セキュリティ アーキテクチャを設計し、オンプレムでもクラウドでも、すべてのアクセス試行が検証されるまで信頼されていないと処理されます。"信頼しない、常に確認する"。 この設計アプローチは、セキュリティと生産性を向上させるだけでなく、ユーザーが任意の種類のデバイスでどこからでも作業することもできます。 高度なクラウド コントロールは、Microsoft 365レベルに基づいて貴重なリソースへのアクセスを制御しながら、ユーザーの ID を保護するのに役立ちます。
 
-推奨される構成については、「Identity and [device access configurations」を参照してください](../security/defender-365-security/microsoft-365-policies-configurations.md)。
+推奨される構成については、「Identity and [device access configurations」を参照してください](../security/office-365-security/microsoft-365-policies-configurations.md)。
 
 ## <a name="transition-security-controls-to-the-cloud"></a>セキュリティ制御をクラウドに移行する
 
@@ -75,7 +75,7 @@ ms.locfileid: "51052484"
 
 これらのハードルをクリアするために、Microsoft は、セキュリティ戦略と実装に対して方法的なアプローチを取るのを助けるために設計されたいくつかのリソースを管理しました。
 
-|Resource   |詳細情報  |
+|リソース   |詳細情報  |
 |---------|---------|
 |[自宅での作業をサポートするセキュリティ チームの主なタスク](../security/top-security-tasks-for-remote-work.md)      | ほとんどが在宅の従業員を突然サポートしている場合、この記事はセキュリティを迅速に強化するのに役立ちます。 これには、ライセンス計画に基づいて推奨される最も推奨されるタスクが含まれます。    |
 |[Microsoft 365ビジネス上の意思決定者向けセキュリティ](../security/Microsoft-365-security-for-bdm.md)    | より包括的な計画を立てる時間がある場合、この記事には、攻撃の表面によって優先順位付けされた、Microsoft 365にまたがった推奨事項が含まれています。 また、ライセンスと領域 (ID、脅威保護、監視など) で並べ替えに使用できるスプレッドシートも付属しています。  |

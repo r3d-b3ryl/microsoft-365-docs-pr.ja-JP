@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 060a9781-c8a2-4e85-a769-31e6417d05b3
 description: さまざまな指標は、メインの [予約] ページで利用でき、収益と顧客のアクティビティを簡単に追跡できます。
-ms.openlocfilehash: a7185ac12d1f2185a3824ea3b27d52c89933cfbe
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 1ea7e863c4fdcf0697027dff9154885315db0de77dee810dfb485ff8bb4ed267
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419827"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838177"
 ---
 # <a name="microsoft-bookings-metrics-and-activity-tracking"></a>Microsoft Bookings の指標とアクティビティの追跡
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーでは、ラベル付きコンテンツを取り扱うユーザーの操作の確認およびフィルター処理を行い、データ分類機能の機能性を完全なものにします。
-ms.openlocfilehash: 414ef4e5d9f6472180a5eaef391d3eba33463b02
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5570cecdf3b7e6b6959bb20ca2c2fcdd0ad2e6ebd6b579f7caf7a018049beaeb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886417"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 
@@ -115,4 +115,4 @@ ms.locfileid: "52114009"
 - [秘密度ラベルの詳細](sensitivity-labels.md)
 - [アイテム保持ポリシーと保持ラベルの詳細](retention.md)
 - [機密情報の種類に関する詳細情報](sensitive-information-type-learn-about.md)
-- [データ分類について](data-classification-overview.md)
+- [データ分類の説明](data-classification-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: 管理者Microsoft 365アプリについて
+title: モバイル アプリMicrosoft 365 管理について
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,17 +22,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 管理者アプリMicrosoft 365取得し、携帯電話またはタブレットからオンライン組織を管理する方法について学習します。
-ms.openlocfilehash: f8834aca0835a209a4df32a934eca736c5f7808f
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+description: アプリをMicrosoft 365 管理、携帯電話やタブレットからオンライン組織を管理する方法について学習します。
+ms.openlocfilehash: c6990e8eed4a234c205b0a80b0a14faf18d0eeea6d607eb07b00682d17c40ab5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827187"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>管理者Microsoft 365アプリについて
 
-通常は移動中の管理者ですか? そうでなくても、スマートフォンやタブレットからアプリを管理するMicrosoft 365場合があります。 Web ベースの[管理センター](https://go.microsoft.com/fwlink/?LinkID=627216)Microsoft 365、無料の管理者アプリをMicrosoft 365してください。 アプリは [、Apple App Store から、Google Play ストア](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)から [ダウンロードできます](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)。
+通常は移動中の管理者ですか? そうでなくても、スマートフォンやタブレットからアプリを管理するMicrosoft 365場合があります。 無料のアプリ[Microsoft 365 管理、Web](https://go.microsoft.com/fwlink/?LinkID=627216)ベースのアプリに最適なMicrosoft 365 管理センター。 アプリは [、Apple App Store から、Google Play ストア](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)から [ダウンロードできます](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)。
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="スクリーンショット: モバイル アプリのホーム ページの管理、検索、メッセージ センター、正常性、クイック リンクの表示":::
 
@@ -93,7 +93,7 @@ ms.locfileid: "52683237"
   
 ### <a name="what-languages-are-supported-by-the-app"></a>このアプリではどの言語がサポートされますか?
 
-このアプリは、Web ベースの管理センターでサポートMicrosoft 365 39 言語すべてサポートしています。 言語を変更するには、管理センターの左側のナビゲーション メニューから **設定** Language に移動するか、管理モバイル アプリのホーム ページの [クイック リンク] セクションの [言語] アイコン  >  を選択します。  
+アプリは、Web ベースのユーザーがサポートする 39 Microsoft 365 管理センターサポートしています。 言語を変更するには、管理センターの左側のナビゲーション メニューから **設定** Language に移動するか、管理モバイル アプリのホーム ページの [クイック リンク] セクションの [言語] アイコン  >  を選択します。  
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>組織の他のユーザーとサービス インシデントやメッセージを共有するにはどうすればよいですか?
 

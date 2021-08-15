@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configuration Manager を使用してデバイスに構成パッケージを展開し、サービスにオンボードします。
-ms.openlocfilehash: d2db35e50d31a0a19076965da6dcecf9cfeef826
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: febe5148d6f4a341cd29d3950bc319d36bcfa0a6f0d4a4afe2c4ebb9038613b0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226899"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886344"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Configuration Manager を使用した Windows 10 デバイスのオンボード
 
@@ -201,7 +201,7 @@ Value: “1”
 ```
 詳細については[、「2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10))Configuration Manager のコンプライアンスSystem Center概要」を参照してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [グループ ポリシー Windows 10デバイスのオンボード](dlp-configure-endpoints-gp.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows 10 デバイスのオンボード](dlp-configure-endpoints-script.md)

@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: 削除されたメールボックスの内容を保持するには、削除されたメールボックスの非アクティブなメールボックス機能を使用Microsoft 365。
-ms.openlocfilehash: acd00fedcf0949b7d0c9f85c17039105e9b34821
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: 7e0fa04d82a52bf41d763255239421eed8e47700b88756140bda81505c4d08f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866437"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>非アクティブなメールボックスを作成および管理する
 
@@ -74,9 +74,9 @@ Microsoft 365 では、削除済みメールボックスのコンテンツを保
 
 組織内の非アクティブなメールボックスの一覧を表示するには:
 
-1. <https://compliance.microsoft.com> に移動し、組織の管理者アカウントの資格情報を使用してサインインします。
+1. 組織のグローバル管理者またはコンプライアンス管理者アカウントの資格情報を使用して、アクセスして <https://compliance.microsoft.com> サインインします。
 
-2. コンプライアンス センターの左側のナビゲーション ウィンドウMicrosoft 365[すべて表示]をクリックし、[情報ガバナンスと保持] **>クリックします**。
+2. ページの左側のナビゲーション ウィンドウMicrosoft 365 コンプライアンス センター [すべて表示]をクリックし、[情報ガバナンスと保持] **>クリックします**。
 
    ![[保持] ページの [非アクティブなメールボックス] ボタンをクリックします。](../media/MCCInactiveMailboxes1.png)
 

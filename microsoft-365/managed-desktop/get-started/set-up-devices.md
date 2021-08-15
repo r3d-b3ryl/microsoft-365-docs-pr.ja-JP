@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 7cc63c9a911c772d1723233dd311ab3489f16be2
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6b113879329f21940ccff7fa7fc487145a7299a13f6f8f2390a18911f67b2ab8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245398"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877725"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Microsoft マネージド デスクトップのデバイスをセットアップする
 

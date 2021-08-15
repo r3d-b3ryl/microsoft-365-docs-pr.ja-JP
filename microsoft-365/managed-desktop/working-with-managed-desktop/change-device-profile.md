@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 5d8b0b95668cb46adf8d2da59939b5659e702ad6
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 576a891d683b970ff13f148b302e5c01c86901f3dd559850972522a0ae40cf71
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51691263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877643"
 ---
 # <a name="reassign-profiles"></a>プロファイルの再割り当て
 

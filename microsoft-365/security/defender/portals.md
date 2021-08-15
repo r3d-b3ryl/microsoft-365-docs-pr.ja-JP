@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 182d44c8ad46b8c711705c46aabba3393f4e0801
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 42f4a4e19fbb062789532e1786bfe2f37bdb3448f2671ec9ac3dcd2a0770b6c9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838621"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティ ポータルと管理センター
 
@@ -38,7 +38,7 @@ Microsoft 365[センター](overview-security-center.md)は、ID、データ、�
 セキュリティオペレーターと管理者は、次のポータルにアクセスして、セキュリティ固有の設定を管理し、可能な脅威アクティビティを調査し、アクティブな脅威に対応し、IT 管理者と協力して問題を修復できます。
 <p></p>
 
-| ポータル名 | 説明 | リンク |
+| ポータル名 | Description | リンク |
 |---|---|---| 
 | Microsoft 365 セキュリティ センター | 脅威アクティビティを監視して対応し、ID、電子メール、データ、エンドポイント、アプリのセキュリティ体制を強化Microsoft 365 Defender [](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender セキュリティ センター | Microsoft Defender for Endpoint で提供される機能を使用して、エンドポイントの脅威アクティビティを監視して [対応する](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
@@ -53,7 +53,7 @@ Microsoft 365[センター](overview-security-center.md)は、ID、データ、�
 これらのポータルはセキュリティを管理するための特別な機能ではありませんが、セキュリティに影響を与える可能性があるさまざまなワークロードとタスクをサポートします。 ID、アクセス許可、デバイス設定、およびデータ処理ポリシーを管理するには、これらのポータルにアクセスします。
 <p></p>
 
-| ポータル名 | 説明 | リンク | 
+| ポータル名 | Description | リンク | 
 |---|---|---| 
 | Azure portal | リソースとすべての Azure [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)を表示および[管理する](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Microsoft 365 コンプライアンス センター | データ処理ポリシーを管理し、規制 [に準拠する](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teamsチャネルは、データ損失防止 (DLP) ポリシーをサポートします。
-ms.openlocfilehash: fa7e0967e24d8fa5e64b84fbccf54ff8cf45d1d6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c71001ec81326df07362c4caa34a2f9d382fb3eb3b18d790a3883f369b41aba7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53851291"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -31,13 +31,13 @@ ms.locfileid: "52843544"
     > [!NOTE]
     > DLP for Microsoft Teamsは、次の権限を持つユーザーと共有Microsoft Teamsコンテンツをブロックします。<br/>- [チームとチャネル](/MicrosoftTeams/guest-access) でのゲスト アクセス。または<br/>- [会議およびチャット](/MicrosoftTeams/manage-external-access) セッションでの外部アクセス。 <p>外部チャット セッションの DLP は、送信者と受信者の両方が Teams モードでネイティブ フェデレーションMicrosoft Teams[使用している場合にのみ機能します](/microsoftteams/manage-external-access)。 ユーザーの DLP Teams、またはネイティブ以外[](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business)のフェデレーション チャット セッションとの相互運用Skype for Businessメッセージをブロックしません。
 
-- **例 2: ドキュメント内の機密情報を保護します**。 ユーザーがチャネルまたはチャットのゲストとドキュメントを共有しようとMicrosoft Teams機密情報が含まれているとします。 これを防ぐために DLP ポリシーが定義されている場合、ドキュメントはそれらのユーザーに対して開かれません。 保護を適用するには、DLP ポリシーに SharePoint と OneDrive を含める必要があります。 これは、Microsoft Teams に表示される SharePoint の DLP の例であり、Office 365 DLP (Office 365 E3 に含まれる) のライセンスをユーザーに与える必要がありますが、Office 365 Advanced Compliance のライセンスを取得する必要はありません)。
+- **例 2: ドキュメント内の機密情報を保護します**。 ユーザーがチャネルまたはチャットのゲストとドキュメントを共有しようとMicrosoft Teams機密情報が含まれているとします。 これを防ぐために DLP ポリシーが定義されている場合、ドキュメントはそれらのユーザーに対して開かれません。 保護を適用するには、DLP ポリシーに SharePoint と OneDrive を含める必要があります。 これは、Microsoft Teams に表示される SharePoint の DLP の例であり、Office 365 DLP (Office 365 E3 に含まれる) のライセンスをユーザーに要求しますが、Office 365 Advanced Compliance のライセンスをユーザーに要求しません)。
 
 ## <a name="dlp-licensing-for-microsoft-teams"></a>DLP ライセンス Microsoft Teams
 
 [データ損失防止機能](dlp-learn-about-dlp.md)は、次のようなプライベート チャネル メッセージMicrosoft Teams含む、チャットメッセージやチャネル メッセージを含 **む機能が拡張** されました。
 
-- Office 365E5/A5
+- Office 365 E5/A5
 - Microsoft 365 E5/A5
 - Microsoft 365 の情報保護とガバナンス
 - Office 365 Advanced Compliance
@@ -70,7 +70,7 @@ DLP 保護は、エンティティに対してTeamsされます。
 
 ## <a name="policy-tips-help-educate-users"></a>ポリシー ヒントは、ユーザーの教育に役立ちます
 
-web 上の[Exchange、Outlook、Outlook、SharePoint](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web) [Online、OneDrive for Business](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)サイト、および[Office](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)デスクトップ クライアントでの DLP の動作と同様に、アクションが DLP ポリシーでトリガーされるとポリシー ヒントが表示されます。 ポリシー ヒントの例を次に示します。
+[Exchange、Outlook、Outlook on the web、SharePoint](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web) [Online、OneDrive for Business](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)サイト、および Office デスクトップ クライアントでの DLP の動作と同様に、アクションが DLP ポリシーでトリガーされるとポリシー ヒント[が](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)表示されます。 ポリシー ヒントの例を次に示します。
 
 ![[ブロックされたメッセージの通知] Teams](../media/dlp-teams-blockedmessage-notification.png)
 
@@ -138,7 +138,7 @@ web 上の[Exchange、Outlook、Outlook、SharePoint](data-loss-prevention-polic
     
 6. **[次へ]** を選択します。
 
-7. **[保存]** をクリックします。
+7. [**保存**] をクリックします。
 
 変更がデータ センターを通じて動作し、ユーザー アカウントに同期するために約 1 時間を許可します。
 <!-- again, why user accounts? -->
@@ -226,7 +226,7 @@ web 上の[Exchange、Outlook、Outlook、SharePoint](data-loss-prevention-polic
 > [!div class="mx-imgBorder"]
 > ![外部アクセスがブロックされている](../media/dlp-teams-external-sharing/external-access-blocked.png)
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [メール通知を送信して、DLP ポリシーのヒントを表示する](use-notifications-and-policy-tips.md)

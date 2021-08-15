@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: c4d4958c03bee7301465c16fef2cd4ff8adb1722
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: e347f4393c45ba54d1ddb286fcc001193bc647f635dda64dcbb446be190a5dba
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288457"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838658"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Secure Score を使用してセキュリティの態勢を評価する
 

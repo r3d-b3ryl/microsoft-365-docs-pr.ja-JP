@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: ad08bc1435f950b2c97ae13112b1d5b0b3aa6f83
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c66bfd02c83e8d6d7f63c4f80db5f32a7c376dfa3ce52516e5681a86bbbb5c4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624046"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886385"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 

@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Bookings アクティビティの 4 か月ビューを表示する方法を確認する
-ms.openlocfilehash: ad0a21454cfe28cec521e545e587105e8f8a7454
-ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
+ms.openlocfilehash: 8fc8a41a982135550ae711e435905c9bd39460994b1f6757b633aea49a7a48a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51887229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838213"
 ---
 # <a name="reporting-info-for-bookings"></a>Bookings のレポート情報
 
@@ -47,7 +47,7 @@ ms.locfileid: "51887229"
 - **顧客の住所**
 - **スタッフ**
 - **サービス**
-- **Location**
+- **場所**
 - **期間 (分)**
 - **イベントの種類**
 
@@ -58,6 +58,6 @@ ms.locfileid: "51887229"
 - **通貨**   ビジネス用に設定された通貨の種類。
 - **Cc Attendees**   予約の電子メール通知を受信する受信者。 これは、予約の作成時にTeamsアプリから指定できます。
 - **サインアップした出席者数**   グループ予約サービスを予約したユーザーの数。
-- **テキスト通知が有効**  ユーザーがテキスト関連の通知携帯ショートメールを受け取るかどうかを指定します。
+- **テキスト通知が有効**   顧客が SMS テキスト関連の通知を受信できるかどうか。
 - **ユーザー設定フィールド**   1 つの予約に関連する質問と回答はすべて、このフィールドに組み合わされます。
 - **予約 ID**   これは、グループ サービスの同じ予約を識別するのに役立ちます。

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b17585f7449f1151c7a5f5cd75d06b8e723fbe4b
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 559cec70c4f699d0f6a849aec8235a22903a5050becb4469824b17908025f32d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438014"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877667"
 ---
 # <a name="device-requirements"></a>デバイスの要件
 
