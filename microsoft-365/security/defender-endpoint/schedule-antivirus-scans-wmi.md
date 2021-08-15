@@ -16,14 +16,14 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 1aa174f4601fb57eebbc4fb7c78e1809b9f072c8
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: b2f7b9ff7997719b42e55676f082efc05a81b875e9fe2c9df9ca03b06222e85e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839485"
 ---
-# <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>管理インストルメンテーション (WMI) Windowsウイルス対策スキャンをスケジュールする
+# <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>Windows Management Instrumentation (WMI) を使用してウイルス対策スキャンをスケジュールする
 
 **適用対象:**
 

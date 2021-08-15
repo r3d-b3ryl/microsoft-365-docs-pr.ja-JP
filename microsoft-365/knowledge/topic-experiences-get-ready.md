@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 84a07211126e2007b0f5740c18ef871d24497d8746d369acabf0aa9adf0203b9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864154"
 ---
 # <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>環境の準備を整Microsoft Viva トピック
 
@@ -107,7 +107,7 @@ ms.locfileid: "52984882"
 管理者は、Microsoft 365 管理センターでインデックス作成を構成できます。 Viva Topics を設定 [すると、次](set-up-topic-experiences.md)の実行が可能です。
 
 - すべての SharePoint サイトでの検出を許可するか、トピック ソースとして含めるまたは除外するサイトを指定します。
-- 機密性の高い用語がある場合は、名前でトピックを除外することもできます。 たとえば、ユーザーのアクセス許可に関係なく、強調表示やカードを表示したくない機密性の高いプロジェクトの名前がある場合は、そのプロジェクト名を除外できます。
+- 機密性の高い用語がある場合は、名前でトピックを除外することもできます。たとえば、ユーザーのアクセス許可に関係なく、強調表示やカードを表示したくない機密性の高いプロジェクトの名前がある場合は、そのプロジェクト名を除外できます。
 
 コンテンツ レベルでは、検出可能な内容を制御できます。 コンテンツを検索から除外するために行った構成は、コンテンツ検出でも使用されます。 たとえば、特定のドキュメント ライブラリを検索結果に表示しない場合、このドキュメント ライブラリはトピックの検出には使用されません。
 

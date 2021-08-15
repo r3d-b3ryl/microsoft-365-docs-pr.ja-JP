@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a8c21b49e4de23b2f8a822eb06a3d172202d3cf4b8b1c38bec6f23bf08e381b7
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: e4541bf39c034973057f53513afb7b5376d51b0ba7a2232f9fc5594ef64d76f0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523323"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839545"
 ---
 # <a name="run-antivirus-scan-api"></a>ウイルス対策スキャン API の実行
 
@@ -44,11 +44,6 @@ ms.locfileid: "54523323"
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
-
-> [!IMPORTANT]
->
-> - このアクションは、バージョン 1709 以降Windows 10デバイスで使用できます。
-> - Microsoft Defender AV Microsoft Defender ウイルス対策(Microsoft Defender AV) スキャンは、アクティブなウイルス対策ソリューションかどうかに関して、他のウイルス対策ソリューションと一緒に実行できます。 Microsoft Defender AV はパッシブ モードにできます。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 ## <a name="permissions"></a>アクセス許可
 

@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse に関するよく寄せられる質問 (FAQ) に対する回答をMicrosoft 365 Lighthouse。
-  ms.openlocfilehash: 5f15453f21ef48fcc1f8266d9474fc0cbc4190c2
-  ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+  ms.openlocfilehash: f144e2a1535054508e548a8b2848600e45c4adba1763de85194879965a8358af
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/13/2021
-  ms.locfileid: "53415538"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53840133"
 title: Microsoft 365 Lighthouseよく寄せられる質問 (FAQ)
 summary: >
   > [!NOTE]
@@ -79,4 +79,16 @@ sections:
 
       テナントの詳細については、「テナントリストMicrosoft 365 Lighthouse[概要」を参照してください](m365-lighthouse-tenant-list-overview.md)。
   - question: 顧客Microsoft 365 Lighthouse他のサブスクリプションがある場合、ユーザーは機能しますかMicrosoft 365 Business Premium。
-    answer: Microsoft 365 Lighthouseユーザーのライセンスが設定されているMicrosoft 365 Business Premiumテナントを管理するのに役立ちます。 Business ライセンスを持プレミアム顧客テナントのMicrosoft 365 Lighthouse機能は制限されます。 たとえば、Intune を含むライセンスがユーザーに不足している場合、そのユーザーのデバイス、デバイスのコンプライアンス状態、および脅威の状態は使用できません。また、Azure AD P1 を含むライセンスがユーザーに不足している場合、そのユーザーのパスワードとサインイン管理は使用できません。 詳細については[、「Requirements for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-requirements.md)。
+    answer: >
+      Microsoft 365 Lighthouseユーザーのライセンスが設定されているMicrosoft 365 Business Premiumテナントを管理するのに役立ちます。 Business ライセンスを持プレミアム顧客テナントのMicrosoft 365 Lighthouse機能は制限されます。 たとえば、Intune を含むライセンスがユーザーに不足している場合、そのユーザーのデバイス、デバイスのコンプライアンス状態、および脅威の状態は使用できません。また、Azure AD P1 を含むライセンスがユーザーに不足している場合、そのユーザーのパスワードとサインイン管理は使用できません。 詳細については[、「Requirements for Microsoft 365 Lighthouse」 を参照してください](m365-lighthouse-requirements.md)。
+  - question: カスタマー クラウド PC を管理する資格を取得するには、Microsoft 365 Lighthouse?
+    answer: >
+      アプリケーションを使用する要件を満たしているMicrosoft 365 Lighthouse、顧客のクラウド PC を管理する資格Microsoft 365 Lighthouse。 現在の要件の一覧については、「要件[」を参照Microsoft 365 Lighthouse。](m365-lighthouse-requirements.md)
+  - question: お客様にWindows 365 (Cloud PC) ライセンスはどこで購入できますか?
+    answer: >
+      利用可能なすべての Microsoft 商用Windows 365 ライセンスを購入できます。 購入した 1 つのライセンスは、1 つのクラウド PC の購入と同等です。 現在、各ユーザーには同じ SKU タイプのクラウド PC を 1 つしか割り当てできませんが、SKU の種類が異なる場合は、複数のクラウド PC を割り当てることができます。 365 Windowsと価格を比較するには、「自分に合った[365 クラウド PC](https://www.microsoft.com/windows-365/business/compare-plans-pricing)Windowsを取得する」を参照してください。
+  - question: ヘルプとサポートを受ける方法
+    answer: >
+      [Microsoft 365 Lighthouseで、 を選択 **します。** アイコンをクリックして、ヘルプ ウィンドウ **を開** きます。 ここから、セルフヘルプ記事にアクセスしたり、サポートに問い合わせすることができます。 ヘルプとサポート オプションの詳細については、「[ヘルプ](m365-lighthouse-get-help-and-support.md)とサポートを受ける」を参照Microsoft 365 Lighthouse。
+  - question: フィードバックやアイデアの提出先
+    answer: フィードバックは重要であり、当社にとって重要です。 [Intune フィードバック] ページでフィードバックまたは機能[のアイデアMicrosoft エンドポイント マネージャー送信します](https://go.microsoft.com/fwlink/?linkid=2151507)。 365 のMicrosoft 365 Lighthouseおよび Windowsに関する会話を開始したり、他のパートナーや Microsoft の従業員に質問したり、機能フィードバックを提供したりできます。

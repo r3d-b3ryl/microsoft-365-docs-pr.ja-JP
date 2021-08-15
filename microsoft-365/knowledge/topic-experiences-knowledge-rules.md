@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva Topics でのトピックの表示を管理する
+title: トピックの表示を管理Microsoft Viva トピック
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Microsoft Viva Topics でトピックの表示を管理する方法について説明します。
-ms.openlocfilehash: 07679b2de668ba5e0c9fdf206310233ce7af84a4
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+description: トピックの表示を管理する方法については、Microsoft Viva トピック。
+ms.openlocfilehash: 6ac247ba758929f367c99b963a19b0619ab588c077687c8027c2807d98732211
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137753"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864120"
 ---
-# <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Microsoft Viva Topics でのトピックの表示を管理する
+# <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>トピックの表示を管理Microsoft Viva トピック
 
 トピックのハイライト、トピック カード、トピック センターを表示できるユーザーは、このページで管理[Microsoft 365 管理センター。](https://admin.microsoft.com) これらのタスクを実行するには、グローバル管理者または管理者SharePointグループ管理者である必要があります。
 
@@ -51,9 +51,9 @@ ms.locfileid: "53137753"
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft Viva Topics でトピックの検出を管理する](topic-experiences-discovery.md)
+[トピックの検出を管理Microsoft Viva トピック](topic-experiences-discovery.md)
 
-[Microsoft Viva Topics でトピックのアクセス許可を管理する](topic-experiences-user-permissions.md)
+[トピックのアクセス許可を管理Microsoft Viva トピック](topic-experiences-user-permissions.md)
 
-[Microsoft Viva Topics でトピック センターの名前を変更する](topic-experiences-administration.md)
+[トピック センターの名前を変更Microsoft Viva トピック](topic-experiences-administration.md)
 

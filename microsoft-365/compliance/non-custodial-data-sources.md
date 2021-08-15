@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保管されていないデータ ソースをケースにAdvanced eDiscoveryし、データ ソースに保留を設定できます。 保管されていないデータ ソースはインデックスが再作成され、部分的にインデックスとしてマークされたコンテンツは再処理され、完全かつ迅速に検索できます。
-ms.openlocfilehash: 097b054bdcc1dc37f74f86703ac8d7061b76ebba
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: bb43c7fe6a57a45e8eea9ff87601c13e018bff5707e474206e97fe05c6c3a6e7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855933"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>非保管データ ソースをサポートケースにAdvanced eDiscoveryする
 

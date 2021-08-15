@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: Microsoft 製品またはサービスを購入する際の登録番号とレビュー中の通知について説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: ad1d4fe68ad42a33a2cdfa8b78c1bb5b168e9059
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: a03815e8c5da48c52ef43d11d613ade86657d368b908fff9ecbce5e30291e301
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925225"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873019"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>登録番号とレビュー中の通知について
 

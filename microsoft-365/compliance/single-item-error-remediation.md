@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 一括エラー修復プロセスに従わずに、Advanced eDiscovery内のドキュメントの処理エラーを修正できます。
-ms.openlocfilehash: 8e5d8d00f507dc5792a1beda018d4c76632b82f7
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 038be8d60851dcbd14452d293bad29be4f9de3f8b4c86aab6e7ee7e905b2d13a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751584"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830593"
 ---
 # <a name="single-item-error-remediation-in-advanced-ediscovery"></a>単一アイテムのエラー修復 (Advanced eDiscovery
 

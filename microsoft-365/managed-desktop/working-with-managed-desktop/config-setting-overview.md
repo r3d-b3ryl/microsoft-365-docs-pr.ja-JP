@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bf8672ee6c3332ea6f8522f5086d72e58d1b9048
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: 2d10b64e357b1cabb0d0d999c14f38ede6d6e99b5740849475055e8d66435554
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904277"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>構成可能な設定 - Microsoft マネージド デスクトップ
 
@@ -43,7 +43,7 @@ Microsoft マネージド デスクトップによって管理されるすべて
 
 各設定カテゴリは、独自にカスタマイズおよび展開できます。 複数の設定カテゴリに同時に変更を展開することもできますが、設定カテゴリには一度に 1 つの変更のみを展開できます。
 
-以下に例を示します。
+次に例を示します。
 - デスクトップの背景画像と信頼できるサイトに対する変更を、それぞれ独自の展開として同時に展開できます。 
 - 2 つの展開をブラウザーのスタート ページに同時に展開できない。 最新の展開では、まだ進行中の以前の展開が停止します。
 

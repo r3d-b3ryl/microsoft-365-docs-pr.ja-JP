@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 54187862f805c8232aac80199b30dcce7fef2c5b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 92e017d4b068de289204dc891cdee7d3a5c30a214a7e251e977d77909d8429ea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652361"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904121"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>マネージド セキュリティ サービス プロバイダーの統合を構成する
 
@@ -74,7 +74,7 @@ MSSP がこれらのアクションを実行する前に、MSSP のお客様は�
 
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
 - [アラート通知を構成する](configure-mssp-notifications.md)

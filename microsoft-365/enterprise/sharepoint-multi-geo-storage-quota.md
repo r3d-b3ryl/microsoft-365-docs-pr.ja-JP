@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 複数地域SharePointのストレージ クォータの管理方法と、オンライン管理者がクォータを管理するSharePoint説明します。
-ms.openlocfilehash: 0843407e7926027e28cdd1f5893c4aafec4e1cd5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: d7c45831c5168313e52c373a3d420a3ef480bef9bb8f01c2c69c34273bae8b41
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230093"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904297"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>複数地域環境における SharePoint ストレージ クォータ
 

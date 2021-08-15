@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 組織でビバ トピックを使用する方法について説明します。
-ms.openlocfilehash: 943b257750c11bb280fa864a1f8f49a2fb291fc2
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: d8e8de3cead0fc389212b2f3b028769d6b2850138b864c379b87bc9f00dfd8bd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864099"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva トピックの概要 
 

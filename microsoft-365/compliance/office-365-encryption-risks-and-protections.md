@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: この記事では、セキュリティ保護に対するリスクとOffice 365暗号化テクノロジについて学習します。
-ms.openlocfilehash: 6bb0e705095b4f31c730a21921985131785dc3f0
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: bb82e1379219fc1dbf14fcd27e4fed59fbcf2c7ac6dd24c418ab7c68c437deba
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226265"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855817"
 ---
 # <a name="encryption-risks-and-protections"></a>暗号化のリスクと保護
 

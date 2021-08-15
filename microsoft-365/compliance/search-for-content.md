@@ -10,27 +10,25 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: セキュリティ & コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Skype for Business のインスタント メッセージング会話をすばやく検索します。
-ms.openlocfilehash: a70c234331d1329fb80f32fb81762391a862d487
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: Microsoft 365 コンプライアンス センター のコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Skype for Business でのインスタント メッセージング会話をすばやく検索します。
+ms.openlocfilehash: d56c2e9532611593fe41df8ac2bee4860b3920b175e50a188abbc8de67812473
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855637"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索する
 
-セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、Exchange メールボックスのメール、SharePoint サイトおよび OneDrive ロケーションのドキュメント、Skype for Business のインスタント メッセージングの会話をすばやく検索できます。 コンテンツ検索ツールを使用して、メール、ドキュメント、インスタント メッセージングの会話を、グループやグループなどのコラボレーション Microsoft Teams検索Microsoft 365できます。
-
+Microsoft 365 コンプライアンス センター のコンテンツ検索ツールを使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Skype for Business でのインスタント メッセージング会話をすばやく検索します。 コンテンツ検索ツールを使用して、メール、ドキュメント、インスタント メッセージングの会話を、グループやグループなどのコラボレーション Microsoft Teams検索Microsoft 365できます。
+  
 ## <a name="search-for-content"></a>コンテンツを検索する
 
 最初の手順は、コンテンツ検索ツールを使用してコンテンツの場所を選択し、特定のアイテムを検索するキーワード クエリを検索して構成します。 または、クエリを空白のままにして、ターゲットの場所のすべてのアイテムを返す方法があります。
-
+  
 - [コンテンツ検索の](content-search.md) 作成と実行
 
-- [機能参照] for Content search (content-search-reference.md)
+- [コンテンツ検索の](content-search-reference.md) 機能参照
 
 - [検索クエリを作成し、条件を使用して](keyword-queries-and-search-conditions.md) 検索を絞り込む
 
@@ -46,24 +44,24 @@ ms.locfileid: "53226061"
 
 - [複数の検索](bulk-edit-content-searches.md) のクエリとコンテンツの場所を一括編集する
 
-- [コンテンツ検索を再試行して](retry-failed-content-search.md) コンテンツの場所のエラーを解決する
+- [コンテンツの場所エラーを解決](retry-failed-content-search.md) するためにコンテンツ検索を再試行する
 
 - [BCC 受信者を保持](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) してそれらを検索する
 
 ## <a name="perform-actions-on-content-you-find"></a>見つけたコンテンツに対してアクションを実行する
 
 検索を実行し、必要に応じて絞り込み後、次の手順では、検索によって返される結果を使用して何かを行います。 結果をエクスポートしてローカル コンピューターにダウンロードするか、組織に対する電子メール攻撃の場合は、ユーザー メールボックスから検索の結果を削除できます。
-
+  
 - [コンテンツ検索の結果をエクスポートし](export-search-results.md) 、ローカル コンピューターにダウンロードする
 
-- [ウイルス、危険な添付ファイル](search-for-and-delete-messages-in-your-organization.md) 、フィッシング メッセージを含むメッセージなどの電子メール メッセージを検索および削除する
+- [ウイルス、危険な添付ファイル](search-for-and-delete-messages-in-your-organization.md)、フィッシング メッセージを含むメッセージなどの電子メール メッセージを検索および削除する
 
 - [実際の結果を](export-a-content-search-report.md) エクスポートせずに、コンテンツ検索の結果に関するレポートをエクスポートする
 
 ## <a name="learn-more-about-content-search"></a>コンテンツ検索の詳細
 
 コンテンツ検索は使いやすいですが、強力なツールです。 舞台裏では、多くの問題が起こっています。 その動作とその制限を理解すればする度に、組織の検索と調査のニーズに使用できます。 以下について調べます。
-
+  
 - [検索結果をエクスポートおよびダウンロードするときに](partially-indexed-items-in-content-search.md)、ExchangeおよびSharePointに部分的にインデックス付けされたアイテムと、それらを含めるまたは除外する方法
 
 - [部分的にインデックス付けされたアイテムを調査](investigating-partially-indexed-items-in-ediscovery.md) し、組織のアイテムへの露出を判断する

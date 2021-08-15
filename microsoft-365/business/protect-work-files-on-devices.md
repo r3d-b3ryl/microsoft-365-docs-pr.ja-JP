@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: 'ユーザーの個人用モバイル デバイス上の会社データを保護するための既定の構成とアプリケーション管理ポリシーの追加について説明します。 '
-ms.openlocfilehash: 7e3967dad47508e938b760d0eb96ba8685d886a1
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0d6fb41a74f18e8b821b6ae82a82aa734854c78603144896867e5265cf5b5a6c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580036"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873057"
 ---
 # <a name="protect-work-files-on-devices"></a>デバイス上の作業ファイルを保護する
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d171e0975779b9c1c8858418db7e38a7bdb65c96
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 5afc965ab72ccdf062826a4157c6949f9a83fd165feb5b31f72dd67fda4e9e93
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650321"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839581"
 ---
 # <a name="machine-resource-type"></a>コンピューター リソースの種類
 
@@ -41,7 +41,7 @@ ms.locfileid: "53650321"
 
 ## <a name="methods"></a>メソッド
 
-メソッド|戻り値の型 |説明
+メソッド|戻り値の型 |Description
 :---|:---|:---
 [マシンの一覧表示](get-machines.md) | [machine](machine.md) コレクション | 組織のコンピューター [エンティティ](machine.md) のセットを一覧表示します。
 [コンピューターの取得](get-machine-by-id.md) | [コンピューター](machine.md) | コンピューターの [ID を](machine.md) 使用してコンピューターを取得します。
@@ -76,7 +76,7 @@ rbacGroupName | String | コンピューター グループ名。
 riskScore | Null 許容列挙 | Microsoft Defender for Endpoint によって評価されるリスク スコア。 指定できる値は、'None'、'Informational'、'Low'、'Medium'、および 'High' です。
 exposureScore | Null 許容列挙 | [Microsoft](tvm-exposure-score.md) Defender for Endpoint によって評価される露出スコア。 指定できる値は、'None'、'Low'、'Medium'、および 'High' です。
 aadDeviceId | Null 許容表現 Guid | AAD デバイス ID ( [コンピューターが](machine.md) AAD 参加している場合)。
-machineTags | 文字列コレクション | コンピューター タグ [の](machine.md) セット。
+machineTags | String コレクション | コンピューター タグ [の](machine.md) セット。
 exposureLevel | Null 許容列挙 | Microsoft Defender for Endpoint によって評価される露出レベル。 指定できる値は、'None'、'Low'、'Medium'、および 'High' です。
 deviceValue | Null 許容列挙 | デバイス [の値](tvm-assign-device-value.md)です。 指定できる値は、'Normal'、'Low'、および 'High' です。
 ipAddresses | IpAddress コレクション | ***IpAddress オブジェクトの*** セット。 「Get [machines API」を参照してください](get-machines.md)。

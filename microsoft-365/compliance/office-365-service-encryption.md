@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: データの復元性についてMicrosoft Office 365。'
-ms.openlocfilehash: 89f3fbcc90cee0ad822156014ee4ac9e04fe3371
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 290debbcbb58c7ded884a2443a7c4f31a4b2f92c396500ff1d63f3fcc7221942
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058550"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855697"
 ---
 # <a name="service-encryption"></a>サービスの暗号化
 
@@ -33,7 +33,7 @@ Microsoft は、サービス暗号化のルート キーを含むすべての暗
 
 サービスの暗号化には、次の複数の利点があります。
 
-- ユーザーの上に追加の保護層を提供BitLocker。
+- BitLocker の上に追加の保護層を提供します。
 
 - オペレーティング システム管理者Windows、オペレーティング システムによって保存または処理されるアプリケーション データへのアクセスから分離します。
 

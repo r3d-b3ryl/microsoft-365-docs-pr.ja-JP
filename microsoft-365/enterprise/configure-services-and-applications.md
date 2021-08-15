@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: サービスMicrosoft 365 Enterpriseアプリケーション (SharePoint、Exchange、Skype for Business) を構成します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 86033532dfd08e45a10bb5b2d7caf2db139f7e6a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: a36330f86d30bcfde30762eb8fb5d38fe84d71744c4f0e90bf28c079a50a358a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924953"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830313"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>サービスMicrosoft 365 Enterpriseアプリケーションを構成する
 
@@ -39,5 +39,5 @@ ms.locfileid: "52924953"
 |**サイト** <br> (SharePoint Online) | -Configure hybrid functionalits for [SharePoint Server 2013](/SharePoint/hybrid/hybrid)<br> - [サイト テンプレートを作成して使用](https://support.office.com/article/Create-and-use-site-templates-60371B0F-00E0-4C49-A844-34759EBDD989) し、SharePoint Online の外観をカスタマイズする <br> - [SharePoint Online 計画ガイド](https://support.office.com/article/SharePoint-Online-Planning-Guide-for-Office-365-for-business-d5089cdf-3fd2-4230-acbd-20ecda2f9bb8)または[SharePoint Online 展開アドバイザー](https://aka.ms/spoguidance)を使用してその他の機能の計画と構成をする <br> - ビデオ ポータル [を管理する](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da) |
 |**IM および オンライン会議** <br> (Skype for Business Online) | - Lync Server [2013 または 2015](/previous-versions/office/lync-server-2013/lync-server-2013-lync-server-2013-hybrid) Skype for Business[の構成](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)<br> - [Skype for Business Online のセットアップ](https://support.office.com/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e)を行い、通話ルーティング、電話会議、共有などの一般的な機能を構成する  <br> - [Skype for Business 展開アドバイザー](/MicrosoftTeams/faq-journey)を使用して、 カスタマイズしたセットアップ ガイダンスを使う |
 | **ファイル ストレージおよび共有** <br> (OneDrive for Business と SharePoint Online) | - [ファイル ストレージMicrosoft 365共有](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_WhatDif)のセットアップ : ファイルの保存に OneDrive for Businessを使用する必要がある場合と、ShharePoint Online チーム サイトを使用する必要がある場合について説明します。 <br> - [ファイルストレージと共有を設定](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_MoveDocsVideo)する : ユーザーとチーム サイトでファイルをアップロードするOneDrive for Business方法SharePoint確認する <br> - [ファイルストレージと共有を設定する](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_Store): ファイルをアップロードするためのすべての手順を、OneDrive for Businessチーム サイトに取得します。 ファイル共有のヒントを学ぶ <br> - [OneDrive for Business セットアップ ガイド](https://aka.ms/OD4Bguidance)を使用して、カスタマイズしたセットアップ ガイダンスを使う |
-|**Microsoft 365アプリケーション** | - Microsoft 365管理者は、Office展開またはアップグレード[](/deployoffice)の計画に関するヘルプをMicrosoft 365 Apps for enterpriseする必要があります。  <br> - [Power BI管理センター Microsoft 365の詳細](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Office Delve管理者Microsoft 365向け](https://support.office.com/article/Office-Delve-for-Office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b) <br> - [Sway についてよく寄せられる質問](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075) <br> - [Project Online の使用を開始する](https://support.office.com/article/Get-started-with-Project-Online-e3e5f64f-ada5-4f9d-a578-130b2d4e5f11)。  <br> - [Microsoft Intune 展開アドバイザー](/mem/intune/) |
+|**Microsoft 365アプリケーション** | - Microsoft 365管理者は、Office展開またはアップグレード[](/deployoffice)の計画に関するヘルプをMicrosoft 365 Apps for enterpriseする必要があります。  <br> - [Power BI Microsoft 365 管理センター](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Office Delve管理者Microsoft 365向け](https://support.office.com/article/Office-Delve-for-Office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b) <br> - [Sway についてよく寄せられる質問](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075) <br> - [Project Online の使用を開始する](https://support.office.com/article/Get-started-with-Project-Online-e3e5f64f-ada5-4f9d-a578-130b2d4e5f11)。  <br> - [Microsoft Intune 展開アドバイザー](/mem/intune/) |
 |**エンタープライズ ソーシャル** <br> (Yammer) | - [[Yammerを使用Microsoft 365](https://support.office.com/article/Plan-for-Yammer-integration-with-Office-365-4086681f-6de1-4d39-aa72-752b2af1cbd7)  <br> - [Yammer Enterprise セットアップ ガイド](https://aka.ms/yammerdeploy)を使用して、カスタマイズしたセットアップ ガイダンスを使う |

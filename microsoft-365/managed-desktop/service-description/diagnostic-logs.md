@@ -9,50 +9,50 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ef7d19fef989610c10323c2a9820a5314d5e1641
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 04de03e22e270099c647a0dd1ac6d3bb9826ccf87014031bb13ed77b0b580870
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272897"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840121"
 ---
 # <a name="diagnostic-logs"></a>診断ログ
 
-Microsoft Managed Desktop が管理するデバイスに関する問題のトラブルシューティングを行う場合は、報告したデバイスか、サービスによって識別されたデバイスかを問わずに、ユーザーの介入なしにデバイスから特定の診断ログを収集する必要があります。 ユーザーが生成したコンテンツや情報をユーザー ディレクトリから収集しません。 デバイスの正常性と状態に関する診断データとログ データのみを収集します。
+Microsoft マネージド デスクトップ が管理するデバイスの問題をトラブルシューティングする場合、報告したデバイスまたはサービスによって識別されたデバイスのトラブルシューティングを行う場合は、ユーザーの介入なしにデバイスから特定の診断ログを収集する必要があります。 ユーザーが生成したコンテンツや情報をユーザー ディレクトリから収集しません。 デバイスの正常性と状態に関する診断データとログ データのみを収集します。
 
 収集されたログは 28 日間保存され、削除されます。 データ処理標準に従ってデバイスから収集されたログ [を処理します](privacy-personal-data.md)。
 
 ## <a name="data-collected"></a>収集されるデータ
 
-この一覧には、Microsoft Managed Desktop が診断ログを収集する可能性があるすべてのフォルダー、イベント ログ、実行可能ファイル、またはレジストリの場所が含まれます。 収集される実際のデータは、このリストのサブセットであり、特定された問題に依存します。
+この一覧には、診断ログを収集する可能性があるすべてのフォルダー、イベント ログ、実行可能ファイルMicrosoft マネージド デスクトップレジストリの場所が含まれます。 収集される実際のデータは、このリストのサブセットであり、特定された問題に依存します。
 
 ### <a name="registry-keys"></a>レジストリ キー
 
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Services
 - HKLM \\ SOFTWARE \\ Microsoft \\ Surface
-- HKLM \\ ソフトウェア ポリシー Microsoft Windows \\ \\ \\ \\ WindowsUpdate
+- HKLM \\ SOFTWARE \\ Policies Microsoft Windows \\ \\ \\ WindowsUpdate
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ MUI \\ UILanguages
 - HKLM \\ ソフトウェア ポリシー Microsoft \\ \\ \\ WindowsStore
-- HKLM \\ ソフトウェア Microsoft Windows \\ \\ \\ CurrentVersion \\ WindowsStore \\ WindowsUpdate
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows NT \\ CurrentVersion
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows NT \\ CurrentVersion
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows \\ CurrentVersion \\ AppModel
+- HKLM \\ Software Microsoft Windows \\ \\ \\ CurrentVersion \\ WindowsStore \\ WindowsUpdate
+- HKLM \\ SOFTWARE Microsoft Windows NT \\ \\ \\ CurrentVersion
+- HKLM \\ SOFTWARE Microsoft Windows NT \\ \\ \\ CurrentVersion
+- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion \\ AppModel
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ FirmwareResources
 - HKLM \\ SOFTWARE \\ Microsoft \\ WindowsSelfhost
 - HKLM \\ ソフトウェア \\ Microsoft \\ WindowsUpdate
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows \\ CurrentVersion \\ Appx
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows NT \\ CurrentVersion \\ Superfetch
+- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion \\ Appx
+- HKLM \\ SOFTWARE Microsoft Windows NT \\ \\ \\ CurrentVersion \\ Superfetch
 - HKLM \\ SYSTEM \\ Setup
 - HKLM \\ ソフトウェア \\ Microsoft \\ IntuneManagementExtension
 - HKLM \\ SOFTWARE \\ Microsoft \\ SystemCertificates \\ AuthRoot
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows Advanced Threat Protection
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows \\ CurrentVersion \\ Authentication \\ LogonUI
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows \\ CurrentVersion \\ Internet Settings
-- HKLM \\ ソフトウェア Microsoft Windows \\ \\ \\ CurrentVersion \\ アンインストール
+- HKLM \\ SOFTWARE Microsoft Windows Advanced Threat \\ \\ Protection
+- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion 認証 \\ \\ LogonUI
+- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion Internet \\ 設定
+- HKLM \\ Software Microsoft Windows \\ \\ \\ CurrentVersion \\ アンインストール
 - HKLM \\ ソフトウェア \\ ポリシー
 - HKLM \\ SOFTWARE \\ Policies \\ Microsoft \\ Cryptography \\ Configuration \\ SSL
-- HKLM \\ ソフトウェア ポリシー Microsoft Windows Advanced Threat \\ \\ \\ Protection
-- HKLM \\ SOFTWARE \\ WOW6432Node \\ Microsoft \\ Windows \\ CurrentVersion \\ Uninstall
+- HKLM \\ SOFTWARE \\ Policies Microsoft Windows Advanced Threat \\ \\ Protection
+- HKLM \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion \\ アンインストール
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ SecurityProviders \\ SCHANNEL
 
 ### <a name="commands"></a>コマンド
@@ -92,12 +92,12 @@ Microsoft Managed Desktop が管理するデバイスに関する問題のトラ
 ### <a name="event-logs"></a>イベント ログ
 
 - アプリケーション
-- Microsoft-Windows-AppLocker/EXE および DLL
+- Microsoft-Windows-AppLocker/EXE と DLL
 - Microsoft-Windows-AppLocker/MSI とスクリプト
 - Microsoft-Windows-AppLocker/Packaged app-Deployment
 - Microsoft-Windows-AppLocker/Packaged app-Execution
 - Microsoft-Windows-Bitlocker/Bitlocker 管理
-- Microsoft-Windows-SENSE/Operational
+- Microsoft-Windows-SENSE/操作
 - Microsoft-Windows-SenseIR/Operational
 - セットアップ
 - System
@@ -107,8 +107,8 @@ Microsoft Managed Desktop が管理するデバイスに関する問題のトラ
 - %ProgramData% \\ Microsoft \\ DiagnosticLogCSP \\ コレクター \\ \* .etl
 - %ProgramData% \\ \\ Microsoft IntuneManagementExtension \\ Logs \\ \* .\*
 - %ProgramData% \\ Microsoft Windows Defender サポート \\ \\ \\MpSupportFiles.cab
-- %ProgramData% \\ \\ Microsoft Windows \\ WlanReport \\wlan-report-latest.html
-- %ProgramData% \\ \\ Microsoft Windows \\ WlanReport -SourceFileName wlan-report-latest.html
+- %ProgramData% \\ Microsoft Windows \\ \\ WlanReportwlan-report-latest.htm\\ l
+- %ProgramData% \\ Microsoft Windows \\ \\ WlanReport -SourceFileName wlan-report-latest.html
 - %windir% \\ ccm \\ ログ \* .log
 - %windir% \\ ccmsetup \\ ログ \* .log
 - %windir% \\ ログ \\ CBS \\ cbs.log
@@ -121,8 +121,8 @@ Microsoft Managed Desktop が管理するデバイスに関する問題のトラ
 - %windir% \\ SoftwareDistribution \\ DataStore \\ DataStore.edb
 - %windir% \\ ログ \\ \\ dism dism.log
 - %SystemRoot% \\ System32 \\ Winevt \\ ログ\\
-- %appdata% \\ Microsoft Teams メディア スタック \\ \\ \\ \* .blog
-- %appdata% \\ Microsoft \\ Teams \\ skylib \\ \* .blog
-- %appdata% \\ Microsoft Teams メディア スタック \\ \\ \\ \* .etl
-- %appdata% \\ Microsoft \\ Teams \\logs.txt
+- %appdata% \\ Microsoft Teams スタック \\ \\ \\ \* .blog
+- %appdata% \\ Microsoft Teams \\ \\ skylib \\ \* .blog
+- %appdata% \\ Microsoft Teams スタック \\ \\ \\ \* .etl
+- %appdata% \\ Microsoft \\ \\ Teamslogs.txt
 - %windir% \\ Windows \\ System32 \\ winevt \\ \* .\*

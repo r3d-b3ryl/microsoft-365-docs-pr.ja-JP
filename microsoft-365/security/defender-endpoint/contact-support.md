@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 78a7aca31a4e103c5abe98bffc0e60048e8b0426
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ee2fe84fcacd5f8f6b6eb2d6e1c2fca2d22af6595549ac5c464303f979d0d93b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656897"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904086"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
 
@@ -82,7 +82,7 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 > [!Note]
 > Microsoft とのパーミエ サポート契約がある場合は、ウィジェットにプレミア タグが表示されます。 設定されていない場合は、Microsoft アカウント マネージャーに問い合わせください。
 
-### <a name="contact-support"></a>サポートにお問い合せください
+### <a name="contact-support"></a>サポートに問い合わせる
 このオプションは、ヘッドセットのように見えるアイコンをクリックして使用できます。 次に、サポート ケースを提出する次のページが表示されます。 </br>
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="連絡先のサポート 2"::: </br>
@@ -95,6 +95,6 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 3. 該当する場合は、タイム ゾーンと別の言語を選択します。 要求は Microsoft サポート チームに送信されます。 チームは、サービス要求にまもなく応答します。
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [サービスに関する問題のトラブルシューティング](troubleshoot-mdatp.md)
 - [サービス正常性の確認](service-status.md)

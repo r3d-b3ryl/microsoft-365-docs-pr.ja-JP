@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 詳細については、「デバイス ポリシーを使用Windows 10 Proデバイス ポリシーを管理するMicrosoft 365 Business Premium。
-ms.openlocfilehash: 0f7cfff227e1ab4ea992414b513e341adbd9ef22
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: fa639da2b12f97e833d892d2b83939d42481c766f8c57c6f52adf7eb5fae0011
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873113"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>デバイス ポリシー Windows 10 Pro管理する
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSL?autoplay=false]
 
-ユーザーは、Microsoft 365 Businessを使用して、Windows Defender ウイルス対策デバイスWindows 10、Microsoft の更新プログラムがユーザーのデバイスに自動的にダウンロードされます。
+Microsoft 365 Business を使用して、Windows Defender ウイルス対策デバイスでライセンスWindows 10、Microsoft の更新プログラムがユーザーのデバイスに自動的にダウンロードされます。
 
 ## <a name="try-it"></a>お試しください!
 

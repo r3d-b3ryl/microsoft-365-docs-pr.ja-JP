@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2460b1aac746e706175524e7f201610a1888c255
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 281a9391fdc512882a4a7aef2dfecf51e28ce77a9724f0ba1882d75f7bbff935
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839857"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で条件付きアクセスを構成する
 
@@ -77,7 +77,7 @@ Intune ポータル、Intune ポータル、および Azure Microsoft 365 Defend
 1. [Azure portal](https://portal.azure.com) にサインインします。
 2. [デバイス **コンプライアンス**  >  **] [Microsoft Defender ATP] を選択します**。
 3. Microsoft Defender advanced threat protection **Connect Windows 10.0.15063+** デバイスを On に設定 **します**。
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>手順 3: Intune でコンプライアンス ポリシーを作成する
 
