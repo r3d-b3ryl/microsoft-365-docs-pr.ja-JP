@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーのメールボックスで迷惑メール設定を構成するExchange Onlineできます。 これらの設定の多くは、OutlookまたはOutlook on the web。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c9a787c02273eeaf9e3db5174607f1b65a3c65a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2ca7de6cda731fbcbdb43af705527d1f66fe1d601a6f8178b100a71213aca2ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652481"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56884601"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Exchange Online メールボックスで迷惑メール設定を構成する
 

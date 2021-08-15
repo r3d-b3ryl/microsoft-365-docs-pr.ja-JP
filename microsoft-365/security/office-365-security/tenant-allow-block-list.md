@@ -16,14 +16,14 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを管理する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a09229eb9c7794742248f857384d138e41313b73
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 814ba0695b8b07defbfe991da1c3ed24d0ea0a88679ef36cf43dc49ecefd7a35
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538855"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56884561"
 ---
-# <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの URL を管理する
+# <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -118,13 +118,13 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
      - **Action**: 値 **Block**.
      - **最終更新日時**
      - **Remove on**
-     - **注**
+     - **メモ**
    - **Files**
      - **値**: ファイル ハッシュ。
      - **Action**: 値 **Block**.
      - **最終更新日時**
      - **Remove on**
-     - **注**
+     - **メモ**
    - 「**スプーフィング**」
      - **スプーフィングされたユーザー**
      - **インフラストラクチャの送信**

@@ -19,12 +19,12 @@ ms.custom:
 description: 新しいセキュリティ ダッシュボードを使用して、脅威Office 365状態を確認し、セキュリティアラートを表示して処理します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1504c84f0657dd049b63908d56c4ec6cca4871de
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 95f0a804491e8f2fe4963379efd68873336966f164fda9692ca289d4bc60253b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56881951"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>セキュリティ 管理コンプライアンス センター&ダッシュボード
 

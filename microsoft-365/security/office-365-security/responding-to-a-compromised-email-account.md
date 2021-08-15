@@ -20,12 +20,12 @@ search.appverid:
 description: Microsoft 365 で利用可能なツールを使用して、侵害された電子メール アカウントを認識して対処する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 090253806295d0a5db67afbe769c9c0ca8be4b39
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: dc34894998fda5ec28db6752f50c9122d3a2b416c5e5d7bd443e756681ce50b7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054346"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56807922"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 
@@ -136,7 +136,7 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 
 4. <https://admin.exchange.microsoft.com> で Exchange 管理センター (EAC) を開き、[**受信者**] \>> [**メールボックス**] に移動します。
 
-5. ユーザを見つけて選択します。 開いたメールボックスの詳細ポップアップで、次の手順を行います。
+5. ユーザを見つけて選択します。開いたメールボックスの詳細ポップアップで、次の手順を行います。
    - **メール アプリ** セクションで、トグルを右に動かして ![[無効]](../../media/scc-toggle-on.png) にし、利用可能なすべての設定をブロックします。
      - **Outlook on the web**
      - **Outlook デスクトップ (MAPI)**

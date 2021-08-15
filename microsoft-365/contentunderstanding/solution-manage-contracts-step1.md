@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: ソリューションを使用して、SharePoint Syntexファイルを識別し、データを抽出する方法についてMicrosoft 365します。
-ms.openlocfilehash: b73f7b96a1f1a9159770fb1bfb20bf2718f08c07
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d26a11edfbfadfa9b8905e9cb7643cfefeef9b1e1f6e7e0516c50305fe974d71
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287355"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859527"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>手順 1. 契約ファイルSharePoint Syntexデータの抽出に使用する方法
 
@@ -97,9 +97,9 @@ ms.locfileid: "53287355"
 
     b. [説明 **の種類]** フィールドで、[語句の一 **覧**] を選択します。テキスト文字列を追加します。
 
-    c.  [語句 **] リスト ボックス** に、文字列 ("AGREEMENT" など) を入力します。 文字列で大文字 **と小文字を** 区別する必要がある場合は、[大文字と小文字を区別する] を選択できます。
+    c. [語句 **] リスト ボックス** に、文字列 ("AGREEMENT" など) を入力します。 文字列で大文字 **と小文字を** 区別する必要がある場合は、[大文字と小文字を区別する] を選択できます。
 
-    d.  [保存 **してトレーニング] を選択します**。
+    d. [保存 **してトレーニング] を選択します**。
 
     ![[説明の作成] パネルのスクリーンショット。](../media/content-understanding/contract-classifier-create-explanation.png) 
 
@@ -159,7 +159,7 @@ ms.locfileid: "53287355"
 
     b. [説明の **種類] フィールドで** 、[パターン一覧] **を選択します**。
 
-    c.  [値 **] フィールド** に、サンプル ファイルに表示される日付バリエーションを指定します。 たとえば、0/00/0000 として表示される日付形式がある場合は、次のようなドキュメントに表示されるバリエーションを入力します。
+    c. [値 **] フィールド** に、サンプル ファイルに表示される日付バリエーションを指定します。 たとえば、0/00/0000 として表示される日付形式がある場合は、次のようなドキュメントに表示されるバリエーションを入力します。
 
     - 0/0/0000
     - 0/00/0000
@@ -186,7 +186,7 @@ ms.locfileid: "53287355"
 
    ![[ライブラリにモデルを適用する] オプションが強調表示された [コントラクト] ページを示すスクリーンショット。](../media/content-understanding/key-actions-apply-model.png)
 
-2. [契約 **の追加]** パネルで、モデルSharePointするドキュメント ライブラリを含むサイトを選択します。 リストにサイトが表示されない場合は、検索ボックスを使用して検索します。 [**追加**] を選択します。
+2. [契約 **の追加]** パネルで、モデルSharePointするドキュメント ライブラリを含むサイトを選択します。 リストにサイトが表示されない場合は、検索ボックスを使用して検索します。 **[追加]** を選択します。
 
     > [!NOTE]
     > モデルを適用しようとしているドキュメントライブラリへの *リスト管理* 許可を持っているかまたは、*編集* 権限を持っていなければなりません。

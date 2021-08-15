@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0f167e1634071eefe6a5563bc1ed0fe92cfcc2d6
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b13c8553f942f4b6932361fd91e78e528d255cee7db5e5cb91e47aa9cd294259
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295405"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901145"
 ---
 # <a name="contact-support-for-singapore"></a>シンガポールのサポートに問い合わせ
 

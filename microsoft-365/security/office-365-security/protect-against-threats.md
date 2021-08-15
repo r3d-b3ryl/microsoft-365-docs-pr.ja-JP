@@ -20,12 +20,12 @@ description: 管理者は、組織の脅威保護Microsoft 365、組織で使用
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7e37b67dbed75e3283070ba94321fcb03979a5a6
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: bba4d6546454b16090910809cf8b99ec907853ad0ac0d810a2ab091b0939f36e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105394"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56881952"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 

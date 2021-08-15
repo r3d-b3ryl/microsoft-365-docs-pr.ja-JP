@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、電子メール (EOP) 内のメッセージに適用されるスパム信頼度 (SCL) Exchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55e64c72cc472e98baa8eb71e23dafb6b276ba01
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 0d93f0ba26e164209aa36dac8d8849bc0cb8be7ecf1c7b4faf624d4b1acab6f8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625283"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56883111"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP のスパム信頼レベル (SCL)
 
@@ -46,7 +46,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 |-1|メッセージはスパム フィルター処理をスキップしました。 たとえば、メッセージは差出人セーフ リストからのメッセージ、安全な受信者への送信、または IP 許可一覧の電子メール ソース サーバーからのメッセージです。 詳細については、「EOP で差出人 [セーフ リストを作成する」を参照してください](create-safe-sender-lists-in-office-365.md)。|受信者の受信トレイにメッセージを配信します。|
 |0, 1|スパム フィルターは、メッセージがスパムではないと判断しました。|受信者の受信トレイにメッセージを配信します。|
 |5, 6|スパム フィルターでメッセージがスパムとしてマーク **された**|受信者の迷惑メール フォルダーにメッセージを配信します。|
-|9|スパム フィルターでメッセージが高信頼スパム **としてマークされた**|受信者の迷惑メール フォルダーにメッセージを配信します。|
+|9 |スパム フィルターでメッセージが高信頼スパム **としてマークされた**|受信者の迷惑メール フォルダーにメッセージを配信します。|
 |
 
 SCL 2、3、4、7、8 はスパム フィルター処理では使用されません。
@@ -57,4 +57,4 @@ SCL と同様に、バルク 苦情レベル (BCL) は、不良バルク メー�
 
 ****
 
-![LinkedIn Learning New ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **to Microsoft 365** LinkedIn Learning によって提供される、Microsoft 365管理者と **IT** プロ向け無料のビデオ コースをご覧ください。
+![LinkedIn の短いアイコン ラーニング ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新しいファイルをMicrosoft 365?** LinkedIn Microsoft 365によって提供される、管理者および **IT** プロ向け無料のビデオ コースラーニング。

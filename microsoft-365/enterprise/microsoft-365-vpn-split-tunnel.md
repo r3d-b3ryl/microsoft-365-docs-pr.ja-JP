@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 で VPN スプリット トンネリングを使用して、リモート ユーザーの Office 365 の接続を最適化する方法のガイダンスです。
-ms.openlocfilehash: c92599469431732136637cee2bb6a029c4eb4037
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: dc9e9fa6b730ac6a98879c692f349b2480d3dcf14320c7817d5d5b14eb6ac825
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848909"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する
 <!---
@@ -33,7 +33,7 @@ ms.locfileid: "52259249"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
 -->
 
-リモート ワーカー デバイスを VPN を使用して企業ネットワークまたはクラウド インフラストラクチャに接続する場合、Microsoft **Teams、SharePoint** **Online、****および Exchange Online** の主要な Office 365 シナリオを _VPN_ 分割トンネル構成を使用してルーティングを行う必要があります。 これは、COVID-19 危機などの大規模な在宅作業時の従業員の生産性を高める最初のライン戦略として特に重要になります。
+リモート ワーカー デバイスを VPN を使用して企業ネットワークまたはクラウド インフラストラクチャに接続する場合は、主要な Office 365 シナリオ **Microsoft Teams、SharePoint** **Online、** および **Exchange Online** を _VPN_ 分割トンネル構成でルーティングする必要があります。 これは、COVID-19 危機などの大規模な在宅作業時の従業員の生産性を高める最初のライン戦略として特に重要になります。
 
 ![スプリット トンネル VPN 構成](../media/vpn-split-tunneling/vpn-model-2.png)
 
@@ -51,7 +51,7 @@ _図 1: サービスに直接送信された、定義済み Office 365 例外を
 
 - インターネットへのトラフィックを含む他の接続のルーティング方法を変更しないことで、お客様の VPN 実装のセキュリティ体制を維持する
 
-  推奨される構成では、VPN トラフィックの例外に対する **最小限の特権** の原則に従い、ユーザーやインフラストラクチャを追加のセキュリティ リスクにさらすことなく、スプリット トンネル VPN を実装することができます。 Office 365 エンドポイントに直接ルーティングされるネットワーク トラフィックは暗号化され、Office クライアント アプリケーション スタックによって整合性が検証され、アプリケーション レベルとネットワーク レベルの両方で強化された Office 365 サービス専用の IP アドレスにスコープ設定されます。 詳細については、「[セキュリティ専門家と IT による、現代のユニークなリモート ワーク シナリオで最新のセキュリティ管理を実現するための代替的な方法 (Microsoft セキュリティ チーム ブログ)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)」を参照してください。
+  推奨される構成では、VPN トラフィックの例外に対する **最小限の特権** の原則に従い、ユーザーやインフラストラクチャを追加のセキュリティ リスクにさらすことなく、スプリット トンネル VPN を実装することができます。 Office 365 エンドポイントに直接ルーティングされるネットワーク トラフィックは暗号化され、Office クライアント アプリケーション スタックによって整合性が検証され、アプリケーション レベルとネットワーク レベルの両方で強化される Office 365 サービス専用の IP アドレスにスコープが設定されます。 詳細については、「[セキュリティ専門家と IT による、現代のユニークなリモート ワーク シナリオで最新のセキュリティ管理を実現するための代替的な方法 (Microsoft セキュリティ チーム ブログ)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)」を参照してください。
 
 - ほとんどのエンタープライズ VPN プラットフォームでネイティブにサポートされている
 
@@ -62,7 +62,7 @@ _図 1: サービスに直接送信された、定義済み Office 365 例外を
 
 完全な実装の詳細については、「[Office 365 向け VPN スプリット トンネリングの実装](microsoft-365-vpn-implement-split-tunnel.md)」を参照してください。
 
-リモート ワーカー用に Microsoft 365 を構成する手順については、「リモート作業用にインフラストラクチャをセットアップする」[を参照してください](..\solutions\empower-people-to-work-remotely.md)。
+リモート ワーカー用にユーザー を構成するMicrosoft 365手順については、「リモート作業用にインフラストラクチャを[セットアップする」を参照してください。](..\solutions\empower-people-to-work-remotely.md)
 
 ## <a name="the-vpn-split-tunnel-strategy"></a>VPN スプリット トンネリング戦略
 
@@ -76,7 +76,7 @@ _図 2: 接続先に関係なく、すべてのトラフィックを社内ネッ
 
 新型コロナウイルス感染症の危機により、この問題はさらに悪化し、大多数の組織に即時のソリューションが必要になりました。 この危機で必要とされているような 100% リモート ワークのシナリオには、強制 VPN モデルでは十分なスケーラビリティやパフォーマンスが得られないことに、多くのお客様が気付きました。 これらの組織が効率的に運用を続けるには、迅速なソリューションが必要です。
 
-Office 365 サービスでは、この問題を念頭に置いてサービスの接続要件を設計しました。この点を念頭に置いて、集中型、緊密に制御され、比較的静的な一連のサービス エンドポイントを非常に簡単かつ迅速に最適化して、サービスにアクセスするユーザーに高いパフォーマンスを提供し、VPN インフラストラクチャの負荷を軽減して、必要なトラフィックで使用できます。
+Office 365 サービスでは、この問題を念頭に置いてサービスの接続要件を設計しました。この点を念頭に置いて、集中型、厳しく制御され、比較的静的な一連のサービス エンドポイントを非常に簡単かつ迅速に最適化して、サービスにアクセスするユーザーに高いパフォーマンスを提供し、VPN インフラストラクチャの負荷を軽減して、それでも必要なトラフィックで使用できます。
 
 Office 365 では、Office 365 に必要なエンドポイントは 3 つのカテゴリ (**最適化**、**許可**、**既定**) に分類されています。 **最適化** のエンドポイントはここでの焦点であり、次の特徴があります。
 
@@ -92,7 +92,7 @@ Office 365 では、Office 365 に必要なエンドポイントは 3 つのカ�
 
 DLP、AV 保護、認証、アクセス制御などのセキュリティ要素はすべて、サービス内の異なる層でこれらのエンドポイントに対してはるかに効率的に配信できます。 また、トラフィック ボリュームの大部分を VPN ソリューションから遠く離すので、それでも依存しているビジネス クリティカル なトラフィックの VPN 容量が解放されます。 この新しい動作方法に対処するための、多くの場合長期にわたり費用のかかるアップグレード プログラムを実行する必要もなくなります。
 
-![スプリット トンネル VPN 構成の詳細](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![VPN Tunnel詳細の分割](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _図 3: サービスに直接送信された、定義済み Office 365 例外を使用している VPN スプリット トンネル ソリューション。他のすべてのトラフィックは、接続先に関係なく社内ネットワークに強制的に戻されます。_
 

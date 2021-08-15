@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止リファレンス 資料
-ms.openlocfilehash: 3a6d051338784ce4a4fb3ce91a9e2e3cca6a7d49
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: abddda78d8d2eab3cf3931ec4adbc0fa74b8fd657d13f782fc5d93788ec99561
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227141"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842917"
 ---
 # <a name="data-loss-prevention-reference"></a>データ損失防止リファレンス
 

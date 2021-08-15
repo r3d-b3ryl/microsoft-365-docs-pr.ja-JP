@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、Intune デバイス コンプライアンス ポリシーをエンタープライズ テスト環境Microsoft 365に追加します。
-ms.openlocfilehash: d42c9a603ca581941cb5a8f30b9ecd9d6f780759
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 697837a93b92006f51aca5d20a5ad62bf130f1bbfaf2c4d00caddfe8ea7d12e1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367097"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858905"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境Microsoft 365デバイス コンプライアンス ポリシー
 
@@ -50,7 +50,7 @@ Intune デバイスコンプライアンス ポリシーを追加するには、
 
 このフェーズでは、デバイスのコンプライアンス ポリシーを作成し、Windows 10します。 このフェーズでは、Microsoft Intune管理センター Microsoft エンドポイント マネージャー[を使用](https://go.microsoft.com/fwlink/?linkid=2109431)してグループを追加し、コンプライアンス ポリシーを作成します。
 
-1. 管理者センターに[Microsoft 365](https://admin.microsoft.com)し、グローバル管理者アカウントでテスト ラボMicrosoft 365にサインインします。 管理センター **エンドポイント マネージャー** 選択します。 管理[エンドポイント マネージャーが開](https://go.microsoft.com/fwlink/?linkid=2109431)きます。
+1. [管理者] [Microsoft 365 管理センター](https://admin.microsoft.com)に移動し、グローバル管理者アカウントMicrosoft 365テスト ラボ サブスクリプションにサインインします。 管理センター **エンドポイント マネージャー** 選択します。 管理[エンドポイント マネージャーが開](https://go.microsoft.com/fwlink/?linkid=2109431)きます。
 
     [デバイス管理を有効にしていない] に似たメッセージがまだ表示 **されている** 場合は、MDM 機関として [Intune] を選択します。 具体的な手順については、「モバイル デバイス管理 [機関の設定」を参照してください](/mem/intune/fundamentals/mdm-authority-set)。
 

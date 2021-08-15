@@ -18,21 +18,21 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: PowerShell を使用してグループ内のメンバーシップを維持するMicrosoft 365します。
-ms.openlocfilehash: 9696c9093ae6f24a2edaf544e80794bde45d18d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e60aaa0200a4cbc972f9157ead3db81a92fb7f4e7049d9ab27c2e420b94c2169
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909576"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858953"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>PowerShell を使用してセキュリティ グループ メンバーシップを維持する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-PowerShell を管理センター Microsoft 365代わりに使用して、Microsoft 365のセキュリティ グループ メンバーシップを維持Microsoft 365。 
+PowerShell を使用して、Microsoft 365の代わりに、Microsoft 365 管理センターグループ のメンバーシップを維持Microsoft 365。 
 
 >[!Note]
->[管理センターでグループ Microsoft 365メンバーシップを維持](../admin/create-groups/add-or-remove-members-from-groups.md)するMicrosoft 365について学習します。 その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
+>[グループ メンバーシップを管理Microsoft 365する方法について](../admin/create-groups/add-or-remove-members-from-groups.md)Microsoft 365 管理センター。 その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する

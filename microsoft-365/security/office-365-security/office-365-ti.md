@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365プランの脅威調査と対応機能について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b0a9ff9c06f7e97d6f74c901c156bfae6c9eb91d
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 19e41fbca984ed74dc204eb665fdee481738a1a02e078cd8c0aa0f7f8bd3180e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56885462"
 ---
 # <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
@@ -51,7 +51,7 @@ ms.locfileid: "53083706"
 
 - [Explorer](#explorer)
 - [インシデント](#incidents)
-- [攻撃シミュレーションのトレーニング](attack-simulation-training.md)
+- [攻撃シミュレーション トレーニング](attack-simulation-training.md)
 - [自動調査および対応](automated-investigation-response-office.md)
 
 ### <a name="explorer"></a>エクスプローラー
@@ -72,7 +72,7 @@ ms.locfileid: "53083706"
 
 ![セキュリティ コンプライアンス センターで&の管理レビューを選択 \> します。](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
-### <a name="attack-simulation-training"></a>攻撃シミュレーションのトレーニング
+### <a name="attack-simulation-training"></a>攻撃シミュレーション トレーニング
 
 攻撃シミュレーション トレーニングを使用して、組織内で現実的なサイバー攻撃を設定して実行し、実際のサイバー攻撃がビジネスに影響を与える前に脆弱なユーザーを特定します。 詳細については、「フィッシング攻撃 [をシミュレートする」を参照してください](attack-simulation-training.md)。
 

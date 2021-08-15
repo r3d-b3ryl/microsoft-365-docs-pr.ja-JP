@@ -1,5 +1,5 @@
 ---
-title: アーキテクチャ要件と Microsoft Defender for Identity の技術的フレームワーク、アーキテクチャ図、MDI を確認する
+title: アーキテクチャ要件と Microsoft Defender for Identity の技術フレームワークを確認する
 description: Microsoft Defender for Identity in Microsoft 365 Defenderテクニカル ダイアグラムは、試用版ラボまたはパイロット環境を構築する前Microsoft 365の ID を理解するのに役立ちます。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8f0c736d07a2a66420416d30ae2dc45ae5fee37a
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: cb243c0100bab3b13939422f61618a2d7e1d77772bbdd14b25007988ea626024
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458304"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867590"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity のアーキテクチャ要件と主な概念を確認する
 

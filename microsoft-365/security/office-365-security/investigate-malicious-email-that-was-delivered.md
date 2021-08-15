@@ -20,12 +20,12 @@ description: 脅威の調査と対応機能を使用して悪意のあるメー�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e49963d1ffaeb7bce20f21f82f37fd3675b9cdd3
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 00a56df1b4c924bb2d1a4edbabac18e7f94747d956f58557d71e8af8cd2c5938
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56880581"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>メールで配信された悪意のある電子メールをMicrosoft 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "53083358"
 > [!NOTE]
 > 修復に関する記事については、こちらを参照 [してください](remediate-malicious-email-delivered-office-365.md)。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 次の要件が満たされていることを確認してください。
 
@@ -63,15 +63,15 @@ ms.locfileid: "53083358"
 
 |アクティビティ|役割グループ|役割のプレビューが必要ですか?|
 |---|---|---|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する |グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|いいえ|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メール メッセージのヘッダーを表示し、検疫済みメール メッセージをプレビューおよびダウンロードする|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|いいえ|
+|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する |グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|不要|
+|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メール メッセージのヘッダーを表示し、検疫済みメール メッセージをプレビューおよびダウンロードする|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者|不要|
 |脅威エクスプローラーを使用して、ヘッダーの表示、メールのプレビュー (電子メール エンティティ ページ内のみ)、メールボックスに配信される電子メール メッセージのダウンロード|グローバル管理者 <p> セキュリティ管理者 <p> セキュリティ閲覧者 <p> プレビュー|はい|
 |
 
 > [!NOTE]
 > *プレビュー* は役割で、役割グループではありません。 プレビュー ロールは、ポータル () の既存の役割グループMicrosoft 365 Defenderする必要があります <https://security.microsoft.com> 。 [アクセス許可 **] に移動** し、既存の役割グループを編集するか、プレビュー 役割が割り当てられた新しい役割グループ **を** 追加します。
 >
-> グローバル管理者の役割には 、Microsoft 365 管理センター ( ) が割り当て、セキュリティ管理者とセキュリティ リーダーの役割が [セキュリティ管理者] <https://admin.microsoft.com> () にMicrosoft 365 Defenderされます <https://security.microsoft.com> 。 役割とアクセス許可の詳細については、「アクセス許可」を参照Microsoft 365 Defender[してください](permissions-microsoft-365-security-center.md)。
+> グローバル管理者の役割には 、Microsoft 365 管理センター ( ) が割り当て、セキュリティ管理者とセキュリティ リーダーの役割が [セキュリティ管理者] <https://admin.microsoft.com> () にMicrosoft 365 Defenderされます <https://security.microsoft.com> 。 役割とアクセス許可の詳細については、「[Microsoft 365 Defender　ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
 メールのプレビューとダウンロードは機密性の高いアクティビティであり、監査が有効になっていると理解しています。 管理者が電子メールでこれらのアクティビティを実行すると、監査ログは同じに対して生成され、Microsoft 365 Defenderポータル ( ) に表示されます <https://security.microsoft.com> 。 [検索の **監査** \> **] タブに** 移動し、[ユーザー] ボックスの管理名を **フィルター処理** します。 フィルター処理された結果には、アクティビティ **AdminMailAccess が表示されます**。 行を選択して、プレビューまたはダウンロードした **メールの詳細** セクションで詳細を表示します。
 

@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、良いメッセージと悪いメッセージやファイルを分析のために Microsoft に報告するさまざまな方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a89ea8a41a31c9544284566fade0e603d48af759
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b257033c4dc5ebe8d6b28c315484cdccf48b5d6581d23c038433f4fc21424aa4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56885422"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>メッセージとファイルを Microsoft に報告する
 

@@ -15,12 +15,12 @@ ms.custom:
 description: 管理者は、メール フローとルーティングを構成するためのオプションについて、メール フロー (EOP) でExchange Online Protectionできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9636025796aee1ba2027edff38a16f131974134f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 21702d1b7c57e1d102503cc806fa5699627eedabbb0945e34be91c2c2eb1fedf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56884572"
 ---
 # <a name="mail-flow-in-eop"></a>EOP のメール フロー
 

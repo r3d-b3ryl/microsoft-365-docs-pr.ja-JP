@@ -20,33 +20,33 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: 使用状況分析テンプレート アプリに関する問題のトラブルシューティングMicrosoft 365説明します。
-ms.openlocfilehash: 74ee32ae015421a2352474daefa0eaa0a53fbbc9
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b0978edd23809d61a7160cb423cf279d425dd0c13c0451798d8d54535a78c284
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901132"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>使用状況分析Microsoft 365トラブルシューティング
 
 次のエラー メッセージの一覧を参照して、使用状況分析に関する最も一般的な問題Microsoft 365確認してください。
   
     
-## <a name="we-are-unable-to-process-your-request-you-have-to-first-subscribe-to-this-data-from-the-microsoft-365-admin-center"></a>リクエストを処理できません。 最初に管理センターからこのデータをサブスクライブするMicrosoft 365があります
+## <a name="we-are-unable-to-process-your-request-you-have-to-first-subscribe-to-this-data-from-the-microsoft-365-admin-center"></a>リクエストを処理できません。 最初に、このデータを登録する必要Microsoft 365 管理センター
 
  **エラー コード:** 422 
   
  **このメッセージが表示される場所:** このPower BI Usage Analytics テンプレート アプリに接続する場合、Microsoft 365レポート API を直接呼び出す場合Microsoft 365です。 
   
- **原因:** アプリに接続する前に、管理センターからデータをサブスクライブMicrosoft 365があります。 この手順を最初に行わなくても、テナント ID を指定した場合でも、テンプレート アプリMicrosoft 365できません。 
+ **原因:** アプリに接続する前に、アプリからデータをサブスクライブするMicrosoft 365 管理センター。 この手順を最初に行わなくても、テナント ID を指定した場合でも、テンプレート アプリMicrosoft 365できません。 
   
  **このエラーを修正するには、次の手順を実行します。** データをサブスクライブするには、管理センターの [レポートの使用状況] に移動し、メイン ダッシュボード ページで [Microsoft 365利用状況分析 \>  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank"></a>] タイルを探します。 [作業の **開始]** ボタンを選択し、開く [レポート] ウィンドウで、[データの使用状況分析でデータを使用Microsoft 365する] Power BIをオンにし、[保存]**を****オンにします**。
   
 ## <a name="we-are-processing-your-data"></a>データを処理しています
 
- **このメッセージが表示される場所:** 管理センター **Microsoft 365の** 利用状況ダッシュボードの [使用状況分析] Microsoft 365表示されます。 
+ **このメッセージが表示される場所:**[使用状況 **Microsoft 365] タイルの**[使用状況]ダッシュボードの [Microsoft 365 管理センター。 
   
- **原因:** Microsoft 365 管理 [センター](enable-usage-analytics.md)からテンプレート アプリのデータを表示することを選択すると、Microsoft 365 システムは組織の使用状況履歴データの生成を開始します。 テナントのサイズによっては、この手順に 2 時間から 48 時間かかることがあります。 
+ **原因:** テンプレート アプリ [内の](enable-usage-analytics.md)データを Microsoft 365 管理センター から表示することを選択すると、Microsoft 365 システムは組織の使用状況履歴データの生成を開始します。 テナントのサイズによっては、この手順に 2 時間から 48 時間かかることがあります。 
   
  **これを修正するには、次の手順を実行します。** お待ちください。ただし、メッセージが 3日後にデータに変更されない場合は、Microsoft 365 [に問い合わせください](../../business-video/get-help-support.md)。
   

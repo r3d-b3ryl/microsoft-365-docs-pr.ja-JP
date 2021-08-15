@@ -16,14 +16,14 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧でブロックを構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38347850b66c2a83708df12aaa3233a0afe01444
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ad3cf9a4080a5ec50bdff1de623118d70f90bc1240a7eb5b6a09f0b6fe7b2a45
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56881961"
 ---
-# <a name="add-blocks-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧にブロックを追加する
+# <a name="add-blocks-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの禁止リストを追加する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -72,7 +72,7 @@ ms.locfileid: "53544096"
 
 ### <a name="create-spoofed-sender-block-entries"></a>スプーフィングされた送信者ブロック エントリを作成する
 
-**注意**: 
+**注意**:
 
 - スプー _フィング_ されたユーザーと、ドメイン ペアで定義されている送信インフラストラクチャの組み合わせだけが、スプーフィングを許可またはブロックされます。
 - ドメイン ペアの許可エントリまたはブロック エントリを構成すると、そのドメイン ペアからのメッセージはスプーフィング インテリジェンスインサイトに表示されなくなりました。

@@ -1,5 +1,5 @@
 ---
-title: 評価環境Microsoft 365 Defender作成します。 試用版ライセンスをアクティブ化または有効にし、Microsoft Defender for Identity (MDI) に進む。
+title: 評価環境Microsoft 365 Defender作成する
 description: 試用版のライセンスをMicrosoft 365 Defenderして、試用版ラボまたはパイロット環境をセットアップします。 次に、Microsoft Defender for Identity (MDI) と他のすべての M365D 評価をセットアップします。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 04f7a746788ebcf67525020515cdc7bb20c41bb6
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 6e89591b57be2bf79664547715906074b92b54649e1858bde9ffe06cb2be9335
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458267"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867621"
 ---
 # <a name="create-the-microsoft-365-defender-evaluation-environment"></a>評価環境Microsoft 365 Defender作成する
 

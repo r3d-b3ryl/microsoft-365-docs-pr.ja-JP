@@ -20,12 +20,12 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 05/27/2021
-ms.openlocfilehash: 1d18cd6e43a755661997e2b3a9a3295ef6f05de1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c5e239968fb7048f6bd7a52c3b893ee3292aee1f1a6d93d4bde25689b27b5fca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881449"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>アカウントの源泉徴収税のクレジットを要求する (グローバルユーザー)
 

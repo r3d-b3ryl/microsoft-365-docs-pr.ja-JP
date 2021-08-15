@@ -16,15 +16,15 @@ metadata:
   ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-  description: 管理者は、Exchange Online Protection (EOP) でスプーフィング防止保護に関するよく寄せられる質問と回答を表示できます。
+  description: 管理者は、ユーザー設定 (EOP) でスプーフィング防止に関するよく寄せられる質問と回答Exchange Online Protection表示できます。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: cab4af2dd359b878cdf417a2378c05d2aa706107
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: 8765b287e1f6ca25b21b518bda4b642929251fbb63ac8b6a967eabfaa850d3df
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334045"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "56882532"
 title: スプーフィング対策保護に関する FAQ
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -39,7 +39,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  この記事では、Exchange Online のメールボックスを持つ Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織に対するスプーフィング防止保護に関するよく寄せられる質問と回答を提供します。
+  この記事では、Exchange Online のメールボックスを持つ Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織のスプーフィング防止に関するよく寄せられる質問と回答を提供します。
 
 
   スパム対策保護に関する質問と回答については、「スパム対策保護に関する [よく寄せられる質問」を参照してください](anti-spam-protection-faq.yml)。
@@ -61,9 +61,9 @@ sections:
 
       Microsoft 自体は、最初に新しい電子メール認証要件を数週間前に採用してから、顧客に展開しました。 最初のうちは混乱もありましたが、それも次第に収まりました。
   - question: >
-      スプーフィング インテリジェンスは、365 の場合、Defender なしで Microsoft 365 Officeできますか?
+      スプーフィング インテリジェンスは、Defender Microsoft 365のユーザーが利用Office 365?
     answer: >
-      はい。 2018 年 10 月現在、スプーフィング インテリジェンスは、Exchange Online のメールボックスを持つすべての組織、および Exchange Online メールボックスのないスタンドアロンの EOP 組織で利用できます。
+      はい。 2018 年 10 月の現在、スプーフィング インテリジェンスは、Exchange Online 内のメールボックスを持つすべての組織と、Exchange Online メールボックスのないスタンドアロン EOP 組織で利用できます。
   - question: >
       スパムまたは非スパムのメッセージについて、どのように Microsoft に報告すればよいですか
     answer: >

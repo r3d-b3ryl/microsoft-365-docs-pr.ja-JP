@@ -13,12 +13,12 @@ description: 管理者は、セキュリティ コンプライアンス セン�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 39f7b43db62fd19f7500972a3016fdd8dd0875b6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7b38bb50bd72ea3391cd908e6e058e050003a17b41777df9d8d2663a50977904
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206290"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56882511"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのメール追跡の分析情報
 
@@ -74,7 +74,7 @@ ms.locfileid: "51206290"
 - **コンプライアンス センターの** セキュリティ & MailFlow 管理者。 アカウントが組織の管理または管理者役割グループのメンバーでExchange場合は、次の問題を検討してください。
   - ユーザーは、コンプライアンス センターのセキュリティ &に直接サインインする必要があります <https://protection.office.com> 。
   - ユーザーは、メール フロー ダッシュボードに対する読み取り専用のアクセス許可のみを持つ。
-  - ユーザーは管理センターにアクセスMicrosoft 365使用します。
+  - ユーザーはユーザーにアクセスMicrosoft 365 管理センター。
 
 アクセス許可の詳細については、「Security [&](permissions-in-the-security-and-compliance-center.md) コンプライアンス センターのアクセス許可」および「セキュリティ コンプライアンス センターへのアクセス許可をユーザーに付与する」 [を参照&してください](grant-access-to-the-security-and-compliance-center.md)。
 
