@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: レビュー セットAdvanced eDiscoveryダッシュボードを使用して、コーパスをすばやく分析し、レビュー戦略の策定に役立つ傾向や主要な統計を特定します。
-ms.openlocfilehash: 36f30689047eec7ff2c2c49c6b0d54f1a60470e4
-ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
+ms.openlocfilehash: 2128f2b2caa719cf2fc9b966ff70e1cfc74a1852896a10c85a17c407ffdddfea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44741699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836533"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscoveryのダッシュボード
 
@@ -77,7 +77,7 @@ ms.locfileid: "44741699"
 
 4. 完了したら、[クエリとして保存]をクリックして、条件をレビュー セットの新しい検索クエリとして保存します。
 
-   ![クエリ](../media/savequery.png)
+   ![Query](../media/savequery.png)
 
 5. [検索] **プロファイル ビューを閉** じて、検索結果ビューに戻します。
 

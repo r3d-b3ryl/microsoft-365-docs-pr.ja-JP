@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: プレフィックス フィルター、セキュリティ、コンプライアンスOffice 365構成する共通領域など、ExpressRoute for Office 365を管理する方法について学習します。
-ms.openlocfilehash: e8de0763df7d592bc41802b1ead48df06891e6dc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bb6f2a4f0c6c8d2d00fc8f8dcf05e33399f4f8a1695f03402a53d07cf329dc5c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878783"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Office 365 向け ExpressRoute の接続を管理する
 
@@ -102,9 +102,9 @@ Microsoft がネットワークへの接続を開始する必要があるいく�
 
 コンプライアンスコントロールに使用するルーティング パスには依存しない。 ExpressRoute またはインターネット回線を通Office 365サービスに接続しても、コンプライアンス制御は変更されません。 組織のニーズを満たす最適な選択肢を把握するには、Office 365のコンプライアンスとセキュリティの認定レベルを確認する必要があります。
   
-ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/manageexpressroute365]()
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/manageexpressroute365]()
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コンテンツ配信ネットワーク](content-delivery-networks.md)
   

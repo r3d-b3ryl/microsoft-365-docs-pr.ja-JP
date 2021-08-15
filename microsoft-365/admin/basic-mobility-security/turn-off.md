@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: グループまたはポリシーを削除して、Basic Mobility and Security をオフにします。
-ms.openlocfilehash: 7ec4ec0d47668c21824d8e01e3845d637b9b0922
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 06d53af28239721f08804949a53cd6b2251f89f44dc8709ea384e29872bf1c37
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826701"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>基本的なモビリティとセキュリティをオフにする
 

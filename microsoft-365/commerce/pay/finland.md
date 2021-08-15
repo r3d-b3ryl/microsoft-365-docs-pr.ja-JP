@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 046c6e75253d1ad51fb6fb4a8fb55c694473f7ea
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2869797fa6eeed3f81353e8667332fd4531f74530f1cf1675ad45e2081b2539f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535508"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887261"
 ---
 # <a name="payment-information-for-finland"></a>フィンランドのお支払い情報
 

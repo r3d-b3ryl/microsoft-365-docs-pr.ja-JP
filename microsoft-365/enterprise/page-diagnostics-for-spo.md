@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Web サイトのページ診断ツールSharePoint使用して、SharePointのモダン ポータルページとクラシック発行ページを事前に定義されたパフォーマンス条件のセットに対して分析します。
-ms.openlocfilehash: b55e5c04f56bac4e6313284de60753d1beaaaed1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 742c55fcdcb527b3544650918d2e404045318619abba7df79f736dead31d07ca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878413"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>[ページ診断] ツールを使用SharePointする
 
@@ -98,7 +98,7 @@ SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://ww
 
 1. [[**診断テスト] タブ**](#how-to-use-the-diagnostic-tests-tab)には、分析結果が 3 つのカテゴリで表示されます。**アクションは必要ありません**。**改善の機会と****注意が必要です**。 各テスト結果は、次の表で説明するように、これらのカテゴリの 1 つの項目で表されます。
 
-    |カテゴリ  |色  |説明  |
+    |カテゴリ  |色  |Description  |
     |---------|---------|---------|
     |**注意が必要** |赤 |テスト結果は基準値を外れ、ページのパフォーマンスに影響を与えます。 修復のガイダンスに従います。|
     |**改善の機会** |黄 |テスト結果は基準値を外れ、パフォーマンスの問題に寄与する可能性があります。 テスト固有の条件が適用される場合があります。|
@@ -171,7 +171,7 @@ SharePoint のページ診断ツールを使用して SharePoint モダン ポ�
   
     CorrelationID (ツールの上部に表示) をメモし、サポート担当者に提供して、診断セッションに関する追加情報を収集できます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
 

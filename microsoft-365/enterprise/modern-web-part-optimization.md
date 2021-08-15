@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: ページ診断を使用して、Web パーツのパフォーマンスを最適化する方法については、「オンラインモダン サイト SharePointページ」を参照してください。
-ms.openlocfilehash: fab5b0bc9d0b04ede0815856af7366e277dbf909
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: bfa508840045d9222798254e02e1363ea5b480829605f82e3cbd211846dc9d3d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288901"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878722"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページで Web パーツのパフォーマンスを最適化する
 
@@ -105,7 +105,7 @@ Web パーツのパフォーマンスが低い場合に考えられる原因の�
 >[!NOTE]
 >ページ読み込み時間は、ネットワーク負荷、時間帯、その他の一時的な状態など、さまざまな要素によって異なります。 結果を平均化するために、変更の前後に数回に渡ってページ読み込み時間をテストする必要があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
 
