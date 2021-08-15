@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 27cbc0ec7286812cebc500952bc68adad3586eb8
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: fab50cd24bd8b3bf8e07717d14503ca1cf2106e227d5e28efea25f87e80b4455
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623841"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838844"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>手順 2. ゼロトラスト フレームワークを使用して SOC 統合準備評価を実行する
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: トレーニングMicrosoft 365分類子は、ラボリングやポリシー アプリケーション用にさまざまな種類のコンテンツを認識するために、正のサンプルと負のサンプルを見てトレーニングできるツールです。
-ms.openlocfilehash: 2a98d3d889b1f2d51c795a8668c46ef4e0d7d93e
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 25bbec395b1bb229f62122caf23845c18f5305e324a37cd0a6856e81286d1ee5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53594948"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872101"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 

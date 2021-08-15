@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: トランスポート層Exchange Onlineセキュリティ (TLS) Microsoft 365転送秘密 (FS) を使用して電子メール通信をセキュリティで保護する方法について学習します。 また、Microsoft によって発行された証明書に関する情報も取得Exchange Online。
-ms.openlocfilehash: cc7ca631f9322fdc8a85cfaba197e63d06d08aee
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ff2b7bf948e9ceead83b3d871073eb9be9c52d6a3898437212f717ff5cd4493e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906953"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895273"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>メール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
 

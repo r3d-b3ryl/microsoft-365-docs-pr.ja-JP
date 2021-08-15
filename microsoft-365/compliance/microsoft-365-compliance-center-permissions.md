@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: アクセス許可を管理する方法については、Microsoft 365 コンプライアンス センター。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 676c07aa6379a765f3b6b3a0cc56beceeb1802c1
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 8787deb94cbe8a0f2f5b3a17b220c933df48e7b21fb023f5bbc78f154e7008d5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622005"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871773"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センターでのアクセス許可
 
@@ -67,10 +67,10 @@ Microsoft 365 コンプライアンス センター で使用可能なすべて�
 2. [アクセス許可Microsoft 365 コンプライアンス センター]**に移動します**。 リンクを選択して、コンプライアンス ロールを表示および管理Microsoft 365。
 3. [コンプライアンス センター] **セクションを展開し** 、[役割] を **選択します**。
 4. [コンプライアンス センター **の役割] ページ** で、ユーザーを追加するコンプライアンス 役割グループを選択し、詳細ウィンドウで [役割グループの編集] を選択します。
-5. 左側 **のナビゲーション ウィンドウから** [メンバーの選択] を選択し、[編集] を **選択します**。
-6. [ **追加] を** 選択し、役割グループに追加するすべてのユーザーのチェック ボックスをオンにします。
-7. [**追加**] を選択し、[**完了**] を選択します。
-8. [保存 **] を** 選択して、ユーザーを役割グループに追加します。 [閉 **じる] を** 選択して手順を完了します。
+5. 左側のナビゲーション ウィンドウから **[メンバーの選択]** を選択し、**[編集]** を選択します。
+6. **[追加]** を選択し、ロール グループに追加するすべてのユーザーのチェック ボックスをオンにします。
+7. **[追加]** を選択し、**[完了]** を選択します。
+8. **[保存]** を選択して、ユーザーをロール グループに追加します。 **[閉じる]** を選択して手順を完了します。
 
 ## <a name="remove-users-from-a-compliance-role-group"></a>コンプライアンス 役割グループからユーザーを削除する
 
@@ -80,16 +80,16 @@ Microsoft 365 コンプライアンス センター で使用可能なすべて�
 2. [アクセス許可Microsoft 365 コンプライアンス センター]**に移動します**。 リンクを選択して、コンプライアンス ロールを表示および管理Microsoft 365。
 3. [コンプライアンス センター] セクションを展開し、[役割] を **選択します**。
 4. [コンプライアンス センター **の役割] ページ** で、ユーザーを削除するコンプライアンス 役割グループを選択し、詳細ウィンドウで [役割グループの編集] を選択します。
-5. 左側 **のナビゲーション ウィンドウから** [メンバーの選択] を選択し、[編集] を **選択します**。
+5. 左側のナビゲーション ウィンドウから **[メンバーの選択]** を選択し、**[編集]** を選択します。
 6. [ **削除]** を選択し、役割グループから削除するすべてのユーザーのチェック ボックスをオンにします。
 7. [削除 **] を選択** し、[完了] **を選択します**。
-8. [ **保存] を** 選択して、役割グループからユーザーを削除します。 [閉 **じる] を** 選択して手順を完了します。
+8. [ **保存] を** 選択して、役割グループからユーザーを削除します。 **[閉じる]** を選択して手順を完了します。
 
 ## <a name="create-a-custom-role-group"></a>カスタム役割グループの作成
 
 カスタム役割グループを作成するには、次の手順を実行します。
 
-1. 組織の [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) 管理者アカウントの資格情報を使用してサインインMicrosoft 365します。
+1. Microsoft 365 組織の管理者アカウントの資格情報を使って、[https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) にサインインします。
 2. [アクセス許可Microsoft 365 コンプライアンス センター]**に移動します**。
 3. [アクセス許可 **と役割&] ページで** 、[コンプライアンス センター] **[ロール] >選択します**。
 4. [コンプライアンス センター **の役割] ページで、[** 作成] を **選択します**。
@@ -106,7 +106,7 @@ Microsoft 365 コンプライアンス センター で使用可能なすべて�
 
 カスタム役割グループを更新するには、次の手順を実行します。
 
-1. 組織の [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) 管理者アカウントの資格情報を使用してサインインMicrosoft 365します。
+1. Microsoft 365 組織の管理者アカウントの資格情報を使って、[https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) にサインインします。
 2. [アクセス許可Microsoft 365 コンプライアンス センター]**に移動します**。
 3. [アクセス許可 **と役割&] ページで** 、[コンプライアンス センター] **[ロール] >選択します**。
 4. [コンプライアンス センター **の役割] ページで** 、更新する役割グループを選択します。
@@ -123,7 +123,7 @@ Microsoft 365 コンプライアンス センター で使用可能なすべて�
 
 カスタム役割グループを更新するには、次の手順を実行します。
 
-1. 組織の [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) 管理者アカウントの資格情報を使用してサインインMicrosoft 365します。
+1. Microsoft 365 組織の管理者アカウントの資格情報を使って、[https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) にサインインします。
 2. [アクセス許可Microsoft 365 コンプライアンス センター]**に移動します**。
 3. [アクセス許可 **と役割&] ページで** 、[コンプライアンス センター] **[ロール] >選択します**。
 4. [コンプライアンス センター **の役割] ページで** 、更新する役割グループを選択します。

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 219689783dbd98c1b6dfa09a2164cc4d350ffd9c
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: a3895b2d3e5ee435f0aeb1bb9b2becf23b6da71ecd387bbbc06fac3f1941a8d7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029635"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838821"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender for Office 365 Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ ms.locfileid: "53029635"
 |レコード管理||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |情報ガバナンス||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |脅威の管理|[メール &コラボレーション](https://security.microsoft.com/homepage)|||
-|アクセス許可|[ロール&アクセス許可](https://security.microsoft.com/emailandcollabpermissions)|詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
+|Permissions|[ロール&アクセス許可](https://security.microsoft.com/emailandcollabpermissions)|詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |メール フロー|||「[管理Exchange」を参照してください。](https://admin.exchange.microsoft.com/#/)|
 |データのプライバシー||詳細[については、「Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/homepage)||
 |検索|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|検索 (コンテンツ検索)||

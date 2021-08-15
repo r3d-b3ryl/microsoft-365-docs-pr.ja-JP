@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Advanced eDiscoveryジョブを使用すると、さまざまなタスクの実行に関連する長時間実行されるプロセスのAdvanced eDiscoveryできます。
-ms.openlocfilehash: 27ac98d1f98e85800c8ca3dfc91cc5e0803ae2e8
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 09b114ad39f2bbc7868a5ea6bf2871e0f3cba4a386d359316518bbf1bbe886a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471080"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871795"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>ジョブを管理Advanced eDiscovery
 
 次に、ケースの [ジョブ] タブで追跡されるジョブ (通常は長時間実行されるプロセス)の一覧を示Advanced eDiscovery。 これらのジョブは、ケースを使用および管理するときにユーザーの操作によってトリガーされます。
 
-| ジョブの種類            | 説明     |
+| ジョブの種類            | Description     |
 | :----------------- | :----------     |
 |レビュー セットへのデータの追加 | ユーザーがレビュー セットにコレクションを追加します。 このジョブは、次の 2 つのサブ ジョブで構成されます。 </br>• **エクスポート** - コレクション内のアイテムの一覧が生成されます。 </br>• イン **ジェスト & インデックス** 作成 - 検索クエリに一致するコレクション内のアイテムが Azure Storage の場所 (インジェストと呼ばれる *プロセスで)* にコピーされ、Azure Storage の場所にあるアイテムが再インデックス化されます。 この新しいインデックスは、データ セット内のアイテムのクエリと分析に使用されます。 </br></br>詳細については、「レビュー セット [に検索結果を追加する」を参照してください](add-data-to-review-set.md)。 |
 |別のレビュー セットへのデータの追加 | ユーザーは、同じケースで 1 つのレビュー セットから別のレビュー セットにドキュメントを追加します。 詳細については、「別のレビュー [セットからレビュー セットにデータを追加する」を参照してください](add-data-to-review-set-from-another-review-set.md)。|

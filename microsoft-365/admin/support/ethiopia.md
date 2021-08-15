@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3c75d318ea469f03fc30d84a46436ab3c18267ca
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 0962e24807bcc7baeeb739d3c0ca321d83e8135eb020345428d614c2fd959d4e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296253"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862241"
 ---
 # <a name="contact-support-for-ethiopia"></a>エチオピアのサポートに問い合わせ
 

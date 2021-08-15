@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
-ms.openlocfilehash: 7652a53e0d63e52d92e0d0506207c28f67459029
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7d7a711514e471a3d239918eaa576746a43dded02da81f8103f5c6213df20839
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287055"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872064"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
 
@@ -111,9 +111,9 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
   | 8  | 韓国 |
   | 9  | 北アメリカ (カナダを除く) |
   | 10  | 南アメリカ |
-  | 11  | 南アフリカ |
+  | 11 | 南アフリカ |
   | 12  | スイス |
-  | 13  | アラブ首長国連邦 |
+  | 13 | アラブ首長国連邦 |
   | 14  | 英国 |
 
 
@@ -163,7 +163,7 @@ DLP の場合、推奨される情報に基づいて事前に生成された Pow
 
 改善アクションの右側にある **[おすすめ** ] ラベルの横にあるドロップダウンを選択します。 改善アクションに関連する組織の現在のMicrosoft 365の概要と、推奨されるベスト プラクティスが表示されます。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 MCCA のインストール、セットアップ、および使用の詳細については、「GitHub」の[README](https://github.com/OfficeDev/MCCA#overview) GitHub参照してください。
 

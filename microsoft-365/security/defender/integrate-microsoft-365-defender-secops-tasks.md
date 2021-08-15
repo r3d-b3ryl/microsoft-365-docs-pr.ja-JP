@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 229dbfd12ddca4e3a1444e2e9ca5771896ba07e0
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 6dabb757d5d51110f9b7a77b095b818bdfc61a1fb79506fe9a543a7d6bbc1240
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623889"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838846"
 ---
 # <a name="step-6-identify-soc-maintenance-tasks"></a>手順 6. SOC のメンテナンス タスクを特定する
 
@@ -52,6 +52,6 @@ ms.locfileid: "53623889"
 
 これらのタスクを現在の SOC プロセスに統合します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 このコンテンツおよび[Microsoft 365 Defender](/microsoft-365/security/defender)ライブラリで参照されているガイドを確認して、Microsoft 365 Defender の独自の実装を構造化および統合する方法を決定する必要があります。

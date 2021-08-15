@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da5f609b6f5a4e8bab42a58ec45128ca8ae697c2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: d73a6999d8512d0c0796d32cff0c469a0e8257101999aef6bc69ce693ee3c914
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298387"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862157"
 ---
 # <a name="contact-support-for-madagascar"></a>マダガスカルのサポートに問い合わせ
 

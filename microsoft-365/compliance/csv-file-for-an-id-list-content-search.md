@@ -18,12 +18,12 @@ ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
 description: 既存のコンテンツ検索の CSV ファイルを使用して、特定の電子メール アイテムを返す ID リスト検索を作成します。
-ms.openlocfilehash: 37a398d0896fcfd7b7282bda1f6a549ed9f53601
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: db22ac702e71004d73728350acf4242c9a5ac25d59749584dc8a7948ff2d1065
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871952"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>ID リストコンテンツ検索用の CSV ファイルを準備する
 
@@ -33,7 +33,7 @@ ms.locfileid: "52311540"
 
 ID リスト検索を作成するプロセスの簡単な概要を次に示します。
 
-1. コンプライアンス センターで新しい検索を作成Microsoft 365実行します。
+1. 新しい検索を作成して実行するには、Microsoft 365 コンプライアンス センター。
 
 2. コンテンツ検索結果またはコンテンツ検索レポートをエクスポートします。 詳細については、以下を参照してください。
 
@@ -100,6 +100,6 @@ CSV ファイルは、サイトおよび SharePoint アカウントOneDrive含�
 
 6. ID リスト検索で返されるアイテムをプレビューまたはエクスポートします。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 ID リスト検索の作成後にメールボックスを移動した場合、検索のクエリは指定されたアイテムを返します。 これは、メールボックスアイテムの **DocumentId** プロパティが、メールボックスを移動するときに変更されるためです。 まれに、ID リスト検索を作成した後にメールボックスを移動する場合は、新しいコンテンツ検索を作成し (または既存の検索の検索結果を更新する) し、検索結果またはレポートをエクスポートして、新しい ID リスト検索の作成に使用できる更新された CSV ファイルを生成する必要があります。

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 379580c2c404a1a0669cad4fb657c28857072c1c
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8509b2487af980e871189ac98d7b37eb9fa3c10f9ec4f4bdc6a7c2f1af5fc488
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298940"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901841"
 ---
 # <a name="contact-support-for-denmark"></a>デンマークのサポートに問い合わせ
 

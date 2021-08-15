@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: a4c7b711c0a977e0980cd0c72f9369833e9e5c65
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0f4ccadd48759f3aa3de959df3ef8104df21520e2dcd59b65567891be31d314a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423598"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871836"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>データの情報Microsoft 365
 

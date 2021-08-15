@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: ブラウザーとブラウザーでレポートをカスタマイズする方法についてPower BI Desktop。
-ms.openlocfilehash: c48e20d234e6e3de75ab54daaf2c169eef3a42ad
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 0b9b9f7c107b6c59bbbc07c0e956457e354926a23b97fbcd5de63c10b5e185d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862036"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>使用状況分析でレポートMicrosoft 365カスタマイズする
 

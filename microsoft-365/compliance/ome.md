@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: 組織内外のユーザー間で暗号化された電子メール メッセージを送受信する方法について学習します。
-ms.openlocfilehash: 504fa9918636cd596cde0d242083ccb7b9817e69
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 779d23222dd3308ed6464f195cc63ee11da0fc35cf32986c15cc4f7008ac0a97
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895285"
 ---
 # <a name="message-encryption"></a>メッセージの暗号化
 
@@ -42,7 +42,7 @@ Office 365 Message Encryption は、Azure Information Protection の一部であ
 
 管理者は、この保護を適用するメール フロー ルールを定義することもできます。 たとえば、特定の受信者宛てのすべてのメッセージや件名行に特定の言葉が含まれるメッセージの暗号化を要求したり、受信者はメッセージのコンテンツのコピーや印刷の禁止を規定したりするルールを作成できます。
 
-以前のバージョンの OME とは異なり、新しい機能は、組織内でメールを送信する場合でも、Microsoft 365 以外の受信者にメールを送信する場合でも、統一された送信者エクスペリエンスを提供します。 さらに、Outlook 2016 または web 上の Outlook の Microsoft 365 アカウントに送信された保護された電子メール メッセージを受信する受信者は、メッセージを表示するために他のアクションを実行する必要はありません。 シームレスに動作します。 また、他のメール クライアントやメール サービス プロバイダーを使用している受信者の操作性も向上しました。 詳細については、「[Office 365 の保護されたメッセージについて](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67)」および「[保護されたメッセージを開く方法を教えてください](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098)」を参照してください。
+以前のバージョンの OME とは異なり、新しい機能は、組織内でメールを送信する場合でも、Microsoft 365 以外の受信者にメールを送信する場合でも、統一された送信者エクスペリエンスを提供します。 さらに、Outlook 2016 または Outlook on the web の Microsoft 365 アカウントに送信された保護された電子メール メッセージを受け取った受信者は、メッセージを表示するために他のアクションを実行する必要はありません。 シームレスに動作します。 また、他のメール クライアントやメール サービス プロバイダーを使用している受信者の操作性も向上しました。 詳細については、「[Office 365 の保護されたメッセージについて](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67)」および「[保護されたメッセージを開く方法を教えてください](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098)」を参照してください。
 
 以前のバージョンの OME と新しい OME の間での機能の違いの詳細一覧は、「[OME のバージョンを比較する](ome-version-comparison.md)」をご覧ください。
 
@@ -80,7 +80,7 @@ Office 365 Message Encryption の新機能を有効にする方法の 1 つと�
 
 Office 365 Message Encryption では、Outlook と Outlook on the web から暗号化されたメールを送信できます。 さらに、管理者は、キーワードの一致や他の条件に基Microsoft 365メールを自動的に暗号化するメール フロー ルールを設定できます。
 
-組織の暗号化されたメッセージの受信者は、pc、Outlook for Mac、web 上の Outlook、iOS の Outlook、Android 用 Outlook など、任意のバージョン Outlook Outlook でそれらのメッセージをシームレスに読み取る事が可能です。 他のメール クライアントで暗号化されたメッセージを受信するユーザーは、OME ポータルでメッセージを表示できます。
+組織の暗号化されたメッセージの受信者は、Outlook for PC、Outlook for Mac、Outlook on the web、Outlook for iOS、Android 用 Outlook など、任意のバージョン Outlook でそれらのメッセージをシームレスに読み取る事が可能です。 他のメール クライアントで暗号化されたメッセージを受信するユーザーは、OME ポータルでメッセージを表示できます。
 
 暗号化されたメッセージを送信および表示する方法の詳細なガイダンスについては、次の記事を参照してください。
 
