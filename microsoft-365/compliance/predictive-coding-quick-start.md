@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 予測コーディング モジュールの使用を開始する方法については、Advanced eDiscovery。 この記事では、予測コーディングを使用して、調査に最も関連性の高いレビュー セット内のコンテンツを識別するエンドツーエンドのプロセスについて説明します。
-ms.openlocfilehash: 16fb92af5048ae6cd953e522b2e5e5d8f5a7256f
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: fe0e19c61f441f7ae01ba1c8245301ab8c6e00a3c3b1c8ddf601476bcd1f4301
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822559"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866700"
 ---
 # <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>クイック スタート: クイック スタートでの予測Advanced eDiscovery (プレビュー)
 
@@ -37,7 +37,7 @@ ms.locfileid: "52822559"
 
 最初の手順は、レビュー セットに新しい予測コーディング モデルを作成します。
 
-1. コンプライアンス センターでMicrosoft 365ケースを開Advanced eDiscovery、[レビュー セット]**タブを選択** します。
+1. [ファイル] Microsoft 365 コンプライアンス センターケースを開Advanced eDiscovery、[レビュー セット]**タブを選択** します。
 
 2. レビュー セットを開き **、[Analytics 予測** コーディングの  >  **管理 (プレビュー) ] をクリックします**。
 

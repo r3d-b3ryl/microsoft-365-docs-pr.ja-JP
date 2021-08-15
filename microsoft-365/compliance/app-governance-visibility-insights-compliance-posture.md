@@ -2,8 +2,8 @@
 title: アプリのコンプライアンスへの取り組みを決定する
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリのコンプライアンスへの取り組みを決定する。
-ms.openlocfilehash: 08fccdb5b6d82e798a8c0eda99db988505800610
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2f53a3267b4c33b532251b34e0f2509a1075486996c01e8aaeecf68a12c70609
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541195"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887105"
 ---
 # <a name="determine-your-app-compliance-posture"></a>アプリのコンプライアンスへの取り組みを決定する
 

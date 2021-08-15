@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
 description: トレーニング コース、ブログ Microsoft 365、記事、その他のリソースへのリンク。
-ms.openlocfilehash: 6e6e224eb1f08effeae6c6189f61699834897172
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7c1a17a08362fa563d9214a4f71f34ec9705b60b803af70a7e2b185b687db32c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878145"
 ---
 # <a name="tune-microsoft-365-performance"></a>Microsoft 365 のパフォーマンスをチューニングする
 

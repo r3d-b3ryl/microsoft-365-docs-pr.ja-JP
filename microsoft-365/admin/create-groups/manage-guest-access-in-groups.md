@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: ゲストをグループに追加し、Microsoft 365ユーザーを表示し、PowerShell を使用してゲスト アクセスを制御する方法について説明します。
-ms.openlocfilehash: 41a42a0b4fc76b71892f758519db56f4c1adc897
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: dd29775aebc9b5a6434e7ce5bdbd46b6a874d548b6a82f61f2e525f51b638c27
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826491"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>グループ内のゲスト アクセスMicrosoft 365する
 

@@ -12,13 +12,13 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 localization_priority: Priority
-description: Project Cortex のコンテンツ理解をセットアップする
-ms.openlocfilehash: 7497d21cc85449ee2141ac1362f82d092f150b4b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+description: SharePoint Syntex の設定
+ms.openlocfilehash: 423c69a3c199cd3b1f0c71b93d3632e555125e1e47c4e5b5c8db95f7c52d195d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544711"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859196"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -53,17 +53,9 @@ SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブ�
 - SharePoint Syntex - SPO の種類
 - SharePoint Syntex の共通データ サービス
 
-将来 SharePoint Syntex サブスクリプションを解約すると (または試用期間が終了すると)、ユーザーはドキュメントの理解またはフォーム処理モデルを作成または実行できなくなり、コンテンツ センター テンプレートは使用できなくなります。 さらに、用語ストア レポート、SKOS 分類インポート、およびコンテンツの種類のプッシュは使用できなくなります。 コンテンツが削除されたり、サイトのアクセス許可が変更されたりすることはありません。
+フォーム処理を使用するには、AI ビルダー クレジットも必要です。 ライセンス ユーザーが 300 人以上の場合、AI ビルダー クレジットの割り当てが毎月提供されます。
 
-### <a name="ai-builder-credits"></a>AI ビルダークレジット
-
-組織に300以上のSharePoint Syntex用 SharePoint Syntexライセンスがある場合は、100万のAI Builder クレジットが割り当てられます。 ライセンス数が300未満の場合、フォーム処理を使用するには、AI ビルダークレジットを購入する必要があります。
-
-Ai builder の容量は、[ [AI ビルダー電卓](https://powerapps.microsoft.com/ai-builder-calculator)を使用して見積もることができます。
-
-カスタム Power Platform 環境を使用する場合は、 [その環境にクレジット割り当てる](/power-platform/admin/capacity-add-on)必要があります。
-
-「[Power Platform 管理センター](https://admin.powerplatform.microsoft.com/resources/capacity)」 に移動して、クレジットと使用状況を確認します。
+SharePoint Syntex ライセンスの詳細については、「[SharePoint Syntex ライセンス](syntex-licensing.md)」を参照してください
 
 ## <a name="to-set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 

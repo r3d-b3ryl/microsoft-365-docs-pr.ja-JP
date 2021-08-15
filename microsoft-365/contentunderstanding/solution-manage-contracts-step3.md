@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: カスタム ソリューションを使用してPower Automateを作成して契約を処理する方法についてMicrosoft 365します。
-ms.openlocfilehash: e6c1d1e53363f996241efb2394189853d840c6c2
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: ddf9df71c53af9f3a68dcbfd9a5b1882b67c4fbd4600e89ecec36e283848ac3e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859277"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>手順 3. 契約Power Automate処理するフローを作成するには、次の情報を使用します。
 
@@ -160,7 +160,7 @@ ms.locfileid: "53054469"
     | 承認状態  | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['submitActionId']         |
     | 承認済み     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responder']['displayName']        |
     | 承認日     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responseTime']         |
-    | コメント     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']         |
+    | Comment     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']         |
     
     次の使用例は、数式ボックスを使用して式をPower Automateする方法を示しています。
 

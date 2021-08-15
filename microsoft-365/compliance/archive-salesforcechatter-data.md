@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Salesforce Chatter データを Veritas からユーザーにインポートおよびアーカイブするためのコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: c04dc3026eaa5abb23b332dbae826c052344da31
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0d4a547f7f0caffabfa978c71b0be010da084db07a929629be733621b613b702
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866554"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Salesforce Chatter データをアーカイブするためのコネクタのセットアップ
 
-コンプライアンス センターの Veritas コネクタMicrosoft 365使用して、Salesforce Chatter プラットフォームから組織のユーザー メールボックスにデータをインポートおよびアーカイブMicrosoft 365します。 Veritas には[、サードパーティ](http://globanet.com/chatter/)のデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートする Salesforce Chatter コネクタMicrosoft 365。 コネクタは、チャット、添付ファイル、投稿などのコンテンツを Salesforce Chatter から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
+サーバー内の Veritas コネクタをMicrosoft 365 コンプライアンス センター、Salesforce Chatter プラットフォームから組織のユーザー メールボックスにデータをインポートおよびアーカイブMicrosoft 365します。 Veritas には[、サードパーティ](http://globanet.com/chatter/)のデータ ソースからアイテムをキャプチャし、それらのアイテムをデータ ソースにインポートする Salesforce Chatter コネクタMicrosoft 365。 コネクタは、チャット、添付ファイル、投稿などのコンテンツを Salesforce Chatter から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
 Salesforce Chatter データをユーザーメールボックスに保存した後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルなどのコンプライアンス機能Microsoft 365を適用できます。 Salesforce Chatter コネクタを使用して組織のデータをインポートおよびアーカイブMicrosoft 365、組織が政府機関および規制ポリシーに準拠し続けるのに役立ちます。
 
@@ -35,7 +35,7 @@ Salesforce Chatter データをユーザーメールボックスに保存した�
 
 2. 24 時間に 1 回、Salesforce Chatter アイテムが Veritas Merge1 サイトにコピーされます。 コネクタは、メール メッセージ形式への Salesforce Chatter アイテムも含まれます。
 
-3. Microsoft 365 コンプライアンス センターで作成した Salesforce Chatter コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage 場所に Chatter コンテンツを転送します。
+3. Microsoft 365 コンプライアンス センター で作成した Salesforce Chatter コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内のセキュリティで保護された Azure Storage 場所に Chatter コンテンツを転送します。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 **Salesforce Chatter** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 すべての Chatter アイテムには、このプロパティが含まれるので、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
@@ -45,11 +45,11 @@ Salesforce Chatter データをユーザーメールボックスに保存した�
 
 - Salesforce アプリケーションを作成し、 でトークンを取得します [https://salesforce.com](https://salesforce.com) 。 Salesforce アカウントに管理者としてログインし、ユーザー個人トークンを取得してデータをインポートする必要があります。 また、更新、削除、および編集をキャプチャするには、Chatter サイトでトリガーを公開する必要があります。 これらのトリガーはチャネルに投稿を作成し、Merge1 はチャネルから情報をキャプチャします。 アプリケーションを作成してトークンを取得する方法の詳細な手順については [、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 
-- 手順 1 で Salesforce Chatter コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、コンプライアンス センターの [**データ** コネクタ] ページにコネクタを追加Microsoft 365必要です。 既定では、この役割は、グループ内の任意の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- 手順 1 で Salesforce Chatter コネクタを作成し (手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、データ コネクタ ページの[データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 既定では、この役割は、グループ内の任意の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
 
 ## <a name="step-1-set-up-the-salesforce-chatter-connector"></a>手順 1: Salesforce Chatter コネクタをセットアップする
 
-最初の手順は、コンプライアンス センターの [データ コネクタ] ページMicrosoft 365、Chatter データ用のコネクタを作成することです。
+最初の手順は、[データ コネクタ] ページの [データ コネクタ] ページMicrosoft 365 コンプライアンス センター、Chatter データ用のコネクタを作成します。
 
 1. [データ コネクタ [https://compliance.microsoft.com](https://compliance.microsoft.com/) ]   >  **[Salesforce Chatter] に移動し、[データ コネクタ] をクリックします**。
 
@@ -65,11 +65,11 @@ Salesforce Chatter データをユーザーメールボックスに保存した�
 
 2 番目の手順は、Veritas Merge1 サイトで Salesforce Chatter コネクタを構成することです。 Salesforce Chatter コネクタを構成する方法の詳細については [、「Merge1 サードパーティ](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf)コネクタ ユーザー ガイド」を参照してください。
 
-[ファイルの **保存と&完了]** をクリックすると、コンプライアンス センターのコネクタ ウィザードMicrosoft 365が表示されます。
+[ファイルの **保存と&完了]** をクリックすると、コネクタ ウィザードの [ユーザー マッピング] ページが表示Microsoft 365 コンプライアンス センターされます。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
-ユーザーをマップし、コンプライアンス センターでコネクタMicrosoft 365するには、次の手順を実行します。
+ユーザーをマップし、コネクタのセットアップを完了するには、次Microsoft 365 コンプライアンス センター手順を実行します。
 
 1. [Salesforce **Chatter ユーザーをユーザーにマップMicrosoft 365]** ページで、自動ユーザー マッピングを有効にしてください。 Salesforce Chatter アイテムには、組織内のユーザーのメール アドレスを含む *Email* というプロパティが含まれます。 コネクタでこのアドレスをユーザーに関連付Microsoft 365、アイテムはユーザーのメールボックスにインポートされます。
 
@@ -77,7 +77,7 @@ Salesforce Chatter データをユーザーメールボックスに保存した�
 
 ## <a name="step-4-monitor-the-salesforce-chatter-connector"></a>手順 4: Salesforce Chatter コネクタを監視する
 
-Salesforce Chatter コネクタを作成した後、コンプライアンス センターでコネクタのMicrosoft 365できます。
+Salesforce Chatter コネクタを作成した後で、コネクタの状態を [ネットワーク] Microsoft 365 コンプライアンス センター。
 
 1. 左側の [https://compliance.microsoft.com](https://compliance.microsoft.com/) ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
 

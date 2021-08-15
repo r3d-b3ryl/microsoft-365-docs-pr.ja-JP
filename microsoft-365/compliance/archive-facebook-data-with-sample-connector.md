@@ -14,23 +14,23 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Microsoft 365 コンプライアンス センターでコネクタ&を使用して、Facebook Business ページから & にアーカイブ データをインポートする方法についてMicrosoft 365。
-ms.openlocfilehash: 616466a3af83c1558184526aa463f68c10ef9e70
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: このページでコネクタを&して、Facebook Business Microsoft 365 コンプライアンス センターページから&にアーカイブ データをインポートする方法についてMicrosoft 365。
+ms.openlocfilehash: 9327da8f3e37d64300ff1bafeb375f65e77fda67cc2d13bf0d1a3227b9bca693
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866657"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Facebook データをアーカイブするコネクタをセットアップする (プレビュー)
 
-コンプライアンス センターのコネクタをMicrosoft 365して、Facebook Business ページからデータをインポートおよびアーカイブMicrosoft 365。 コネクタを設定して構成すると、(スケジュールに基づいて) Facebook Business ページに接続し、Facebook アイテムのコンテンツを電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のメールボックスにインポートします。
+ページのコネクタを使用Microsoft 365 コンプライアンス センター、Facebook Business ページからデータをインポートおよびアーカイブして、Microsoft 365。 コネクタを設定して構成すると、(スケジュールに基づいて) Facebook Business ページに接続し、Facebook アイテムのコンテンツを電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のメールボックスにインポートします。
 
 Facebook データをインポートした後、訴訟ホールド、コンテンツ検索、In-Place アーカイブ、監査、通信コンプライアンス、Microsoft 365 保持ポリシーなどの Microsoft 365 コンプライアンス機能を Facebook データに適用できます。 たとえば、メールボックスが訴訟ホールドに置かれたり、アイテム保持ポリシーに割り当てられたりすると、Facebook データは保持されます。 コンテンツ検索を使用してサード パーティのデータを検索したり、Facebook データが保管担当者に保存されているメールボックスを特定のケースに関連付Advanced eDiscoveryできます。 コネクタを使用して Facebook データをインポートおよびアーカイブMicrosoft 365、組織が政府および規制ポリシーに準拠しつ付けるのに役立ちます。
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Facebook Business ページのコネクタを設定するための前提条件
 
-Microsoft 365 コンプライアンス センターでコネクタを設定および構成して、組織の Facebook Business ページからデータをインポートおよびアーカイブする前に、次の前提条件を満たします。 
+組織の Facebook Business ページからデータをインポートおよびアーカイブするために、Microsoft 365 コンプライアンス センターコネクタをセットアップして構成する前に、次の前提条件を満たします。 
 
 - 組織のビジネス ページ用の Facebook アカウントが必要です (コネクタをセットアップする場合は、このアカウントにサインインする必要があります)。 現時点では、Facebook Business ページからのみデータをアーカイブできます。個々の Facebook プロファイルからデータをアーカイブできない。
 
@@ -45,7 +45,7 @@ Microsoft 365 コンプライアンス センターでコネクタを設定お�
 
 - Facebook Business ページのコネクタは、1 日に合計 200,000 アイテムをインポートできます。 1 日に 200,000 件を超える Facebook Business アイテムがある場合、それらのアイテムはいずれも 1 日にインポートMicrosoft 365。
 
-- コンプライアンス センター (手順 5) でカスタム Microsoft 365 コネクタを設定するユーザーには、カスタム コンプライアンス センターでメールボックスインポートエクスポートの役割を割り当てる必要Exchange Online。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- (手順 5 で) Microsoft 365 コンプライアンス センターでカスタム コネクタを設定するユーザーには、メールボックスのインポート エクスポートの役割が割り当てられている必要Exchange Online。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: アプリをアプリで作成Azure Active Directory
 
@@ -107,11 +107,11 @@ Microsoft 365 コンプライアンス センターでコネクタを設定お�
 
 - Azure Active Directory アプリケーション シークレット (手順 1 で取得した AAD アプリケーション シークレット)
 
-## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>手順 5: コンプライアンス センターで Facebook Business ページ コネクタをMicrosoft 365する
+## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>手順 5: Facebook Business ページ コネクタをセットアップするには、Microsoft 365 コンプライアンス センター
 
-最後の手順は、Facebook Business ページからデータをインポートする Microsoft 365 コンプライアンス センターのコネクタを、そのページ内の指定されたメールボックスにMicrosoft 365。 この手順を完了すると、Microsoft 365インポート サービスが Facebook Business ページからデータのインポートを開始Microsoft 365。
+最後の手順では、Facebook Business ページからデータをインポートするコネクタを、Microsoft 365 コンプライアンス センター で指定したメールボックスにインポートするコネクタをMicrosoft 365。 この手順を完了すると、Microsoft 365インポート サービスが Facebook Business ページからデータのインポートを開始Microsoft 365。
 
-手順については、「手順 5: コンプライアンス センターで Facebook コネクタをセットアップする」[をMicrosoft 365してください](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center)。 
+手順については、「手順[5:](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center)Facebook コネクタをセットアップする」を参照Microsoft 365 コンプライアンス センター。 
 
 この手順の完了時 (手順の手順に従って) は、次の情報 (手順の完了後にテキスト ファイルにコピーした情報) を提供します。
 

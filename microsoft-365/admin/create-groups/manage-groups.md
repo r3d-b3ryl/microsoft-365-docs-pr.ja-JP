@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループ メンバーのMicrosoft 365、電子メール アドレス、グループ名、または説明の編集、グループの動作のカスタマイズなど、さまざまなグループを管理する方法について説明します。
-ms.openlocfilehash: 2ec8198b7e28b47bcbbf40818fbe624b2744f0ee
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: f568ef170125c72a8280a354091f9a3f18b65069d33dc455f31671d8ec8b16ae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826499"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>グループを管理するMicrosoft 365 管理センター
 
@@ -66,7 +66,7 @@ ms.locfileid: "53454579"
 
 3. [グループ **メッセージ設定]** タブで、[グループの会話とイベントのコピーをグループ メンバーに送信する] を選択します。メンバーがグループ メッセージと予定表アイテムのコピーを自分の受信トレイで受信する場合。
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ## <a name="let-people-outside-the-organization-email-the-group"></a>組織外のユーザーがグループにメールを送信する
 
@@ -78,7 +78,7 @@ ms.locfileid: "53454579"
 
 3. 管理センター グループの一覧で、変更するグループの名前を選択し、[設定] タブ **で、[** このグループにメールを送信する外部送信者を許可する] を **選択します**。
     
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>グループを完全Microsoft 365する
 

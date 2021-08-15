@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コア電子情報開示ケースからコンテンツをエクスポートおよびダウンロードする方法について説明します。Microsoft 365。
-ms.openlocfilehash: 8eb54e23369ef682e8aa1ebf7e681eb34444f1cd
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: c74cf79ffc5defe495ed03ac45182dbd8e36582418879d6cf367242b96095eb9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850822"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>コア電子情報開示ケースからコンテンツをエクスポートする
 
@@ -32,7 +32,7 @@ Core 電子情報開示ケースに関連付けられた検索が正常に実行
 
 1. 適切な電子情報開示アクセス許可が割り当てられているユーザー アカウントの資格情報を使用して、アクセスして [https://compliance.microsoft.com](https://compliance.microsoft.com) サインインします。
 
-2. コンプライアンス センターの左側のナビゲーション ウィンドウでMicrosoft 365を表示]をクリックし、[電子情報開示] をクリックして [コア>**します**。
+2. ウィンドウの左側のナビゲーション ウィンドウMicrosoft 365 コンプライアンス センター [すべて表示] をクリックし、[電子情報開示] [コア] **>クリックします**。
 
 3. [コア **電子情報開示]** ページで、保留リストを作成するケースの名前をクリックします。
 

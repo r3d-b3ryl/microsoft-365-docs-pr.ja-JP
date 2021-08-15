@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、MS サーバーからデータをインポートおよびアーカイブするコネクタをSQL Database。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 494e91085494ba027a80480faba3cfb189cbd928
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 9f42e7616a844849d0c77b62c307e2c53972a4ceffce91223b68e3cc6040dc8f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164218"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866638"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>MS サーバーからデータをアーカイブするコネクタをSQL Database
 
-コンプライアンス センターの Veritas コネクタをMicrosoft 365して、MS SQL Database から組織のユーザー メールボックスにデータをMicrosoft 365します。 Veritas は、XML 構成ファイルを使用してデータベースからアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された MS SQL Database Importer コネクタを提供します。 コネクタは、MS ファイルからメール メッセージSQL Database形式にコンテンツを変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
+サーバーの Veritas コネクタをMicrosoft 365 コンプライアンス センター、MS SQL Databaseから組織のユーザー メールボックスにデータをMicrosoft 365します。 Veritas は、XML 構成ファイルを使用してデータベースからアイテムをキャプチャし、それらのアイテムを Microsoft 365 にインポートするように構成された MS SQL Database Importer コネクタを提供します。 コネクタは、MS ファイルからメール メッセージSQL Database形式にコンテンツを変換し、それらのアイテムをユーザー メールボックスにインポートMicrosoft 365。
 
 ユーザー メールボックスに保存されている MS SQL Databaseコンテンツの後、訴訟ホールド、電子情報開示、保持ポリシー、保持ラベルなどのMicrosoft 365コンプライアンス機能を適用できます。 MS SQL Databaseコネクタを使用して、Microsoft 365のデータをインポートおよびアーカイブすると、組織が政府と規制のポリシーに準拠しつ付けるのに役立ちます。
 
@@ -35,7 +35,7 @@ ms.locfileid: "51164218"
 
 2. 24 時間に 1 回、MS SQL Databaseは Veritas Merge1 サイトにコピーされます。 コネクタは、このコンテンツを電子メール メッセージ形式に変換します。
 
-3. Microsoft 365 コンプライアンス センターで作成する MS SQL Database Importer コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内の安全な Azure Storage 場所にメッセージを転送します。
+3. Microsoft 365 コンプライアンス センター で作成する MS SQL Database インポート コネクタは、毎日 Veritas Merge1 サイトに接続し、Microsoft クラウド内のセキュリティで保護された Azure Storage 場所にメッセージを転送します。
 
 4. コネクタは、手順 3 で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換された MS SQL Database アイテムを特定のユーザーのメールボックス [にインポートします](#step-3-map-users-and-complete-the-connector-setup)。 MS という名前の受信トレイ フォルダーのサブフォルダー **SQL Databaseユーザー** メールボックスにインポートツールが作成され、そのフォルダーにアイテムがインポートされます。 コネクタは *、Email* プロパティの値を使用してアイテムをインポートするメールボックスを決定します。 MS サーバーからのすべてのアイテムSQL Databaseこのプロパティが含まれる。このプロパティには、アイテムのすべての参加者の電子メール アドレスが設定されます。
 
@@ -43,7 +43,7 @@ ms.locfileid: "51164218"
 
 - Microsoft コネクタ用の Veritas Merge1 アカウントを作成します。 アカウントを作成するには [、Veritas カスタマー サポートにお問い合わせください](https://www.veritas.com/content/support/)。 手順 1 でコネクタを作成する場合は、このアカウントにサインインする必要があります。
 
-- 手順 1 で MS SQL Database Importer コネクタを作成し (および手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、コンプライアンス センターの [データ コネクタ] ページにコネクタMicrosoft 365必要です。 既定では、この役割は、グループ内の任意の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
+- 手順 1 で MS SQL Database Importer コネクタを作成し (および手順 3 で完了する) ユーザーは、Exchange Online のメールボックスインポートエクスポートの役割に割り当てる必要があります。 この役割は、データ コネクタ ページの [データ コネクタ] ページにコネクタを追加Microsoft 365 コンプライアンス センター。 既定では、この役割は、グループ内の任意の役割グループExchange Online。 [メールボックスのインポートエクスポート] 役割は、組織の [組織の管理] 役割グループに追加Exchange Online。 または、役割グループを作成し、メールボックスインポートエクスポートの役割を割り当て、適切なユーザーをメンバーとして追加できます。 詳細については、「グループ内の[役割グループを](/Exchange/permissions-exo/role-groups#create-role-groups)管理[](/Exchange/permissions-exo/role-groups#modify-role-groups)する」の「役割グループの作成」または「役割グループの変更」セクションを参照Exchange Online。
 
 ## <a name="step-1-set-up-the-ms-sql-database-importer-connector"></a>手順 1: MS インポート コネクタをSQL Databaseする
 
@@ -63,7 +63,7 @@ ms.locfileid: "51164218"
 
 2 番目の手順は、Merge1 サイトSQL Database MS コネクタを構成することです。 MS コネクタ を Importer で構成するSQL Databaseについては[、「Merge1 サード](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20MS%20SQL%20Database%20Importer%20User%20Guide%20.pdf)パーティ コネクタ ユーザー ガイド」を参照してください。
 
-[ファイルの **保存と&完了**] をクリックすると、コンプライアンス センターのコネクタ ウィザードの [ユーザー Microsoft 365] ページが表示されます。
+[ファイルの **保存と&完了**] をクリックすると、コネクタ ウィザードの [ユーザー マッピング] ページが表示Microsoft 365 コンプライアンス センターされます。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップし、コネクタのセットアップを完了する
 
@@ -75,7 +75,7 @@ ms.locfileid: "51164218"
 
 ## <a name="step-4-monitor-the-ms-sql-database-importer-connector"></a>手順 4: MS データ インポートSQL Database監視する
 
-Ms SQL Database Importer コネクタを作成した後、コンプライアンス センターでコネクタのMicrosoft 365できます。
+MS インポート コネクタを作成SQL Database、コネクタの状態を [アプリケーション] で表示Microsoft 365 コンプライアンス センター。
 
 1. 左側の <https://compliance.microsoft.com/> ナビゲーションで [ **データ コネクタ] に** 移動してクリックします。
 

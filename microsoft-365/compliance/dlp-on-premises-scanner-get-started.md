@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを設定する
-ms.openlocfilehash: fbaf28c1a88f1654154cc53ce731d2f56bfae382
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ca87bbaffd2698370a05b41804857e826b27771cb06d1796e877d74a955892a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657401"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53851097"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>データ損失防止のオンプレミス スキャナーの使用を開始する
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 組み込みの Basic Mobility and Security を使用して、登録済みデバイスから情報を削除します。
-ms.openlocfilehash: c3cc547ce5e135ccdabf9a09b0d572f1b2530f47
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e8e5f9327a2145bcaaa5415e4d269de5ae351d2500838f5b2c972418041c218a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228149"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826584"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Basic Mobility and Security でモバイル デバイスをワイプする
 

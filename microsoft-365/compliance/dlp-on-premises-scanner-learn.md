@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 データ損失防止オンプレミス スキャナーは、ファイル アクティビティの監視とそれらのファイルの保護アクションを、オンプレミスのファイル共有と SharePoin tフォルダーおよびドキュメント ライブラリに拡張します。 ファイルは、Azure Information Protection (AIP) スキャナーによってスキャンおよび保護されます
-ms.openlocfilehash: c59c6b90f6c219528cbff8a4aadc6472a48ecd23
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6f86d77ea9b6249225f3b0ee2cdd1f91c230ce1de4b2e62cabda7719de27bfa9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657389"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53851085"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明します
 

@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: この記事では、Azure を使用してオンプレミスのファームに障害復旧環境を作成するSharePoint説明します。
-ms.openlocfilehash: 01a49cfa19711caa36190a795792635431dd7d04
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bb048b9b0cf297ba5e5cd61e09f9f3164464a41a37fecfe2d27d0ef7be82f37b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878261"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
@@ -114,7 +114,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
   
 **表: ソリューションによる復旧対象**
 
-|**項目**|**説明**|
+|**アイテム**|**Description**|
 |:-----|:-----|
 |サイトおよびコンテンツ  <br/> |復旧環境で、サイトとコンテンツを利用できます。  <br/> |
 |検索の新しいインスタンス  <br/> |このウォーム スタンバイ ソリューションの場合、検索は検索データベースから復元されません。復旧ファームにある検索コンポーネントは、可能な限り運用ファームと同様に構成されます。サイトとコンテンツが復元された後、フル クロールが開始され、検索インデックスが再作成されます。クロールが完了するまで待たなくても、サイトとコンテンツは利用できます。  <br/> |
@@ -124,7 +124,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
   
 **表: MCS またはパートナーが対応できるその他のアイテム**
 
-|**項目**|**説明**|
+|**アイテム**|**Description**|
 |:-----|:-----|
 |カスタム ファーム ソリューションの同期  <br/> |復旧ファーム構成と運用ファームが同じであることが理想的です。コンサルタントやパートナーと共に作業し、カスタム ファーム ソリューションのレプリケートを行うかどうか、2 つの環境を同期された状態に保つためのプロセスが適切かどうかを評価できます。  <br/> |
 |オンプレミスのデータ ソースへの接続  <br/> |バックアップ ドメイン コントローラー (BDC) 接続などのバックエンド データ システムへの接続のレプリケート、およびコンテンツ ソースの検索は実際的ではない場合があります。  <br/> |
@@ -642,7 +642,7 @@ Ipconfig /flushdns
 
 ## <a name="additional-resources"></a>その他の技術情報
 
-[サポートされている SharePoint データベース用の高可用性と障害回復のオプション](/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
+[サポートされている SharePoint データベース用の高可用性のオプションと障害復旧のオプション](/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
 [SQL Server 2012 の AlwaysOn 可用性グループを SharePoint 2013 用に構成する](/SharePoint/administration/configure-an-alwayson-availability-group)
   
