@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium で、管理者のヘルプ、オンライン サポート、または電話でのサポートを受けるためには、ビジネス サブスクリプションの管理者であることが必要です。
-ms.openlocfilehash: 982c36ba5c941b2269fbdc59a66fa65e1baa903c
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
-ms.translationtype: MT
+ms.openlocfilehash: 56aae6fc6ad966aeefb7d1fede4b86e1300babd393f51f5c28839f3220d985e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595020"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882541"
 ---
 # <a name="get-support"></a>サポートを受ける
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 未成年者の個人データを管理する一般データ保護規則 (GDPR) の規制について学ぶ。
-ms.openlocfilehash: e7f53a5a6b64f29f5029f0080fef44439c926edb
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 7ec9e54865ce21a55dc2bd5bf777e293f105c51e99625bf95ebc1a6dabb7ee22
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580920"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824985"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>未成年者とストアからアドインを取得する
 

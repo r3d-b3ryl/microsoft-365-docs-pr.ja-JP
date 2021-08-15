@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 新しいツール相互運用性アプリを使用して、課題の作成と採点、コース コンテンツの構築とキュレーション、ファイルMicrosoft OneDrive ラーニング共同作業を行います。
-ms.openlocfilehash: bcb374ed1666f23fa5f3d4692f43a4369670e891
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: a1a07173b756d8eb86158bb669113d7e9f7202bf1b666ebc2a086f1aed732d2e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322223"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830085"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>LTI Microsoft OneDriveキャンバスとの統合
 
@@ -96,4 +96,4 @@ LTI Microsoft OneDrive Canvas との統合は、2 つのステッププロセス
 > コラボレーションは、個々の学生と学生のグループに割り当てることができます。 個々の学生への割り当ては、既定で動作します。 学生のグループに共同作業を割り当てるには、次の手順を実行します。
 
 1. 管理者としてログインし、[開発者キー] **セクションに移動** します。
-1. 値 170000000000000710 のキーを検索し、[オン] に **設定します**。
+1. キーの値を指定して170000000000710を On に **設定します**。

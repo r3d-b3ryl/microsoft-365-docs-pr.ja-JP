@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: テナントと組織Microsoft 365コラボレーションがどのように機能し、さまざまな組織が安全に連携できるのかについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a0a9d15608e046e72ba579b77ba44092ed2ecb46
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 36e16beb852b99a17f0252217cfd6f148dcf0a0a15feb9770adcc3d5b9d268b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229853"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870547"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365間のコラボレーション
 
@@ -100,7 +100,7 @@ Microsoft 365間のコラボレーション オプションには、ファイル
 
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>ドメイン名前空間を複数のテナントMicrosoft 365できますか?
 
-その必要はありません。 組織のドメイン名 (fabrikam.com、tailspintoys.com など) は、1 つのテナントにのみ関連付け、Microsoft 365できます。 各テナントには、独自の名前空間が必要です。 UPN、SMTP、および SIP 名前空間は、テナント間で共有できません。
+いいえ。 組織のドメイン名 (fabrikam.com、tailspintoys.com など) は、1 つのテナントにのみ関連付け、Microsoft 365できます。 各テナントには、独自の名前空間が必要です。 UPN、SMTP、および SIP 名前空間は、テナント間で共有できません。
 
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>ハイブリッド コンポーネントとテナント間のMicrosoft 365についてはどうでしょうか。
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouseデバイスコンプライアンス ページについて説明します。
-ms.openlocfilehash: 3568f5b362df86955a1ea6ce15928658c854a584
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 396417729184bf7bc9190193482a6567267098e8bdfb142b32e874014d0ce731
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854631"
 ---
 # <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouseデバイス コンプライアンス ページの概要
 

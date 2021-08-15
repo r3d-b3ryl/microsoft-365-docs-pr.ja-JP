@@ -1,5 +1,5 @@
 ---
-title: ユーザー設定のTeams
+title: Teams の使用を開始する
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 小規模ビジネスでアプリをMicrosoft Teamsする方法について学習します。
-ms.openlocfilehash: 75e5c4aad1ef65e63ed7809cc667fce4b48934e2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5ba2dee81602cf6c474728879435998b699a1b5439ae751033a3511b17940361
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537369"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882447"
 ---
-# <a name="get-started-with-teams"></a>ユーザー設定のTeams
+# <a name="get-started-with-teams"></a>Teams の使用を開始する
 
 リモートで作業するためにビジネスを変更し始め始める場合は、適切な場所に来たことになります。 このMicrosoft 365、オンライン会議、チャット、ファイル共有、および Microsoft Teams での通話を通じて、ビジネスを仮想的に管理し、[](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline)従業員、パートナー、顧客と連絡を取り合Microsoft Teams。 
 
@@ -65,7 +65,7 @@ Microsoft Teams..の機能について詳Microsoft Teams。
 
 ### <a name="secure-your-business-as-it-runs-remotely"></a>リモートで実行されるビジネスをセキュリティで保護する
 
-高度に推奨されるセキュリティ機能は、多要素認証 (MFA) です。 リモート従業員に MFA を追加するには、ユーザーがログインするときにテキスト、電話、または認証アプリで受信したセキュリティ コードを入力する必要Microsoft 365。 ハッカーがフィッシング攻撃を通じてパスワードを保持した場合、そのパスワードを使用して会社のアカウントとデータにアクセスすることはできません。 [管理センター: モバイル デバイスの MFA のMicrosoft 365] から MFA 保護[を追加できます](set-up-mfa.md)。
+高度に推奨されるセキュリティ機能は、多要素認証 (MFA) です。 リモート従業員に MFA を追加するには、ユーザーがログインするときにテキスト、電話、または認証アプリで受信したセキュリティ コードを入力する必要Microsoft 365。 ハッカーがフィッシング攻撃を通じてパスワードを保持した場合、そのパスワードを使用して会社のアカウントとデータにアクセスすることはできません。 MFA 保護は、[モバイル デバイス用に MFA Microsoft 365 管理する] から[追加できます](set-up-mfa.md)。
 
 ### <a name="microsoft-teams-templates"></a>Microsoft Teamsテンプレート
 

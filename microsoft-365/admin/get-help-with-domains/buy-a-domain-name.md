@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: ドメイン名を購入する方法については、Microsoft 365。
-ms.openlocfilehash: 4d2a6546703c93f4b4d6a55e82c309120e384ead
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: ca64f1f2dd7d3d158850f556a4855fc503c4ba9ab68f2cc9c8c3da3908d34f7b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393129"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825892"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
 

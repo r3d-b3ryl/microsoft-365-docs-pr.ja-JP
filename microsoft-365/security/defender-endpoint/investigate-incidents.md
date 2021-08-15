@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee567df3fa53cad407b494e924c9f7e3d60c0328
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 064d157fb59e8f8dba3e268b4658f8f6b8fa674925bf6287bdf10eea39a441bd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623746"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839737"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でインシデントを調査する
 
@@ -99,7 +99,7 @@ Microsoft Defender for Endpoint は、脅威情報をインシデントに集約
 
 ![インシデントの詳細の画像](images/atp-incident-graph-details.png)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [インシデント キュー](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Microsoft Defender for Endpoint でインシデントを調査する](/microsoft-365/security/defender-endpoint/investigate-incidents)

@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: d8db481c06df22592897389656601be2dc9ab0c4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: de715a0b19b708932f6094a02561e414e2758ea643d5cdeb84f35ff5c520ed4e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657305"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829774"
 ---
 # <a name="customize-controlled-folder-access"></a>制御されたフォルダー アクセスをカスタマイズする
 

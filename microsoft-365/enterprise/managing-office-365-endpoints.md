@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ組織のネットワーク Office 365で動作するエンドポイントを管理する方法について説明します。
-ms.openlocfilehash: fa727c5c80521b6ff67c50d202d0c11c643b021e
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 4c6f291627fc3b0b24f53ef3dd11698dba7d1fa4958886dd8f70ce7f34ccb9e2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870564"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 
@@ -216,7 +216,7 @@ Office 365 を使用しようとして、サード パーティのサービス�
 
 Office 365 では、必要なすべてのネットワークエンド ポイント用 IP アドレスは提供されません。 一部は URL としてだけ提供され、既定に分類されます。 必須の既定のカテゴリの URL は、プロキシ サーバー経由で許可する必要があります。 プロキシ サーバーを使用しない場合は、ユーザーが Web ブラウザーのアドレス バーに入力する URL の Web 要求を構成した方法を確認します。ユーザーは IP アドレスも指定しません。 IP Office 365を提供しない既定のカテゴリ URL は、同じ方法で構成する必要があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 IP アドレスと URL の Web サービス](microsoft-365-ip-web-service.md)
 

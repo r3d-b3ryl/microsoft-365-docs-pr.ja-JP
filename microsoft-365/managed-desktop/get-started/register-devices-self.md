@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a6071a8cb13fc7c785a1b3914f65cd8eca27f28f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e68a2013a2c883356f11b94d21ac68169faa42d8b719f8a41af1b73cbadc970f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651617"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854461"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 

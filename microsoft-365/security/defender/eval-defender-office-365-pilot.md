@@ -1,5 +1,5 @@
 ---
-title: パイロット Microsoft Defender for Office 365、実稼働環境での評価の使用、実稼働環境での評価の促進、Defender の評価方法の学習
+title: Microsoft Defender をパイロットOffice 365、実稼働環境で評価を使用する
 description: Microsoft Defender の機能を適切にテストするために、アクティブユーザーと既存のユーザーのグループを使用して評価をOffice 365。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 86f8dcc7b5e06605042f609ede4027510663cc65
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: ce1d08abb6c66df2eb75fd6c9349dcf085096394453375e5f85c5089e908147a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862947"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>パイロット Microsoft Defender for Office 365
 **適用対象:**
@@ -122,7 +122,7 @@ MDO を評価する際に推奨されるベースライン ポリシーから始
 
 次の表は、カスタム保護ポリシーの構成と割り当てに関するリファレンスと追加のガイダンスを示しています。
 
-|ポリシー   |説明  |参照  |
+|ポリシー   |Description  |Reference  |
 |:---------:|---------|---------|
 |接続フィルター     |    IP アドレスを使用して、適切または悪い送信元メール サーバーを識別します。     |     [EOP で既定の接続フィルター ポリシーを構成する](../office-365-security/configure-the-connection-filter-policy.md)    |
 |マルウェア対策    |    ユーザーを電子メール マルウェアから保護します。その中には、実行するアクションやマルウェアが検出された場合に通知するユーザーが含されます。     |    [EOP でマルウェア対策ポリシーを構成する](../office-365-security/configure-anti-malware-policies.md)     |

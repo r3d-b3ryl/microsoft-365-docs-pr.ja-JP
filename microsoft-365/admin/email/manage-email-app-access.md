@@ -1,5 +1,5 @@
 ---
-title: 管理センターで電子メール アプリMicrosoft 365を管理する
+title: 電子メール アプリのアクセスを管理Microsoft 365 管理センター
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: ユーザーがメール、予定表、連絡先にアクセスするために使用できるモバイル アプリを選択する方法について学習します。
-ms.openlocfilehash: f114aa43b4bbade09d53f415aae4c5c033c20694
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d38730df158758ceb310ba25f45f222d7893afe2d0aefc601a17663e85787552
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825981"
 ---
-# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>管理者センターで電子メール アプリMicrosoft 365管理する
+# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>メール アプリのアクセスを管理するには、Microsoft 365 管理センター
 
 モバイル メール アクセス設定を使用して、組織内のユーザーが自分の仕事または学校のアカウントにアクセスしてメール、予定表、連絡先にアクセスするために使用できるモバイル アプリを選択します。
   

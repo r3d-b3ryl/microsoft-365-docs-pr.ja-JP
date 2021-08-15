@@ -258,6 +258,7 @@
 #### [クラウド配信保護と Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)
 ##### [クラウドによる保護を有効にする](enable-cloud-protection-microsoft-defender-antivirus.md)
 ##### [クラウドによる保護レベルを指定する](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [クラウド配信保護 Microsoft Defender ウイルス対策サンプルの提出](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)
 #### [改ざん防止機能を使用してセキュリティ設定を保護する](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [事前ブロックを有効にする](configure-block-at-first-sight-microsoft-defender-antivirus.md)

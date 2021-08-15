@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '概要: Microsoft 365 テスト環境用にフェデレーション認証を構成します。'
-ms.openlocfilehash: 0fb8c55f5b7291cdc6bcec636981a9d31015e723
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: e4d287f82fd267b3a56bcfad8266389e2dffa194c16f9c2fb9048cebe4773232
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870881"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のフェデレーション ID
 
@@ -201,9 +201,9 @@ New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
   
 1. [ **スタート] を** 選択し、mmc.exe入力し **、Enter** キーを **押します**。
     
-2. [**ファイル**  >  **の追加と削除] スナップを選択します**。
+2. [ファイル **の**  >  **追加と削除] スナップインを選択します**。
     
-3. [**アドインの追加とスナップ]** で、使用可能なスナップインの一覧で [証明書] をダブルクリックし、[**コンピューター** アカウント] を選択し、[次へ] を選択 **します**。
+3. [**スナップインの追加** と削除] で、使用可能なスナップインの一覧で [証明書] をダブルクリックし、[**コンピューター** アカウント] を選択し、[次へ] を選択 **します**。
     
 4. [ **コンピューターの選択]** で、[ **完了] を選択** し **、[OK] を選択します**。
     
@@ -277,9 +277,9 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
   
 1. [ **スタート] を** 選択し、mmc.exe入力し **、Enter** キーを **押します**。
     
-2. [**ファイル] >アドインの追加と削除スナップ選択します**。
+2. [ **ファイル] >スナップインの追加と削除を選択します**。
     
-3. [**アドインの追加とスナップ]** で、使用可能なスナップインの一覧で [証明書] をダブルクリックし、[**コンピューター** アカウント] を選択し、[次へ] を選択 **します**。
+3. [**スナップインの追加** と削除] で、使用可能なスナップインの一覧で [証明書] をダブルクリックし、[**コンピューター** アカウント] を選択し、[次へ] を選択 **します**。
     
 4. [ **コンピューターの選択]** で、[ **完了] を選択** し **、[OK] を選択します**。
     

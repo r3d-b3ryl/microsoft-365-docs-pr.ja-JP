@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva Topics のトピックへのアクセスを制限する
+title: サイト内のトピックへのアクセスを制限Microsoft Viva トピック
 description: トピックが検出されるのを防ぐためにトピックを除外する方法。
 author: efrene
 ms.author: efrene
@@ -13,16 +13,16 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: d6dfb2f7f432a40c5b6e96a9437f50ba47e23387
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: e0fc8d2bce8de471049f36194696fd5600b05476ccceb362a448d7ba79be45d7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500877"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854677"
 ---
-# <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>Microsoft Viva Topics のトピックへのアクセスを制限する
+# <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>サイト内のトピックへのアクセスを制限Microsoft Viva トピック
 
-Microsoft Viva では、組織内の関係者は、特定のトピックが検出され、ライセンスを受け取ったユーザーに公開されていないことを確認する必要があります。 たとえば、まだ情報を公開しないプロジェクトに取り組む場合があります。 サイトOffice 365、ファイル、その他のリソースに対するアクセス許可を使用すると、Topic Experiences ユーザーはトピック内の機密情報を表示することはできませんが、特定のトピックが検出されるのを防ぐための追加のセーフガードがあります。
+このMicrosoft Viva、組織内の関係者は、特定のトピックが検出され、ライセンスを受け取ったユーザーに公開されていないことを確認する必要があります。 たとえば、まだ情報を公開しないプロジェクトに取り組む場合があります。 サイトOffice 365、ファイル、その他のリソースに対するアクセス許可を使用すると、Topic Experiences ユーザーはトピック内の機密情報を表示することはできませんが、特定のトピックが検出されるのを防ぐための追加のセーフガードがあります。
 
 ナレッジ管理者が設定を制御してトピックが検出されるのを防ぐ一方で、ナレッジ マネージャーや他の利害関係者は、作業を共同で行う方法を知る必要があります。
 
@@ -31,7 +31,7 @@ Microsoft Viva では、組織内の関係者は、特定のトピックが検�
 
 ## <a name="prevent-topics-from-being-identified"></a>トピックが識別されるのを防ぐ
 
-ナレッジ管理者は、最初のインデックス作成で特定のトピックが見つからないのを防ぐことで、特定のトピックへのアクセスを制限できます。 このタスクを実行するには、管理センターの [ビバ トピック] 管理Microsoft 365があります。
+ナレッジ管理者は、最初のインデックス作成で特定のトピックが見つからないのを防ぐことで、特定のトピックへのアクセスを制限できます。 このタスクを実行するには、次の 2 つの方法が[ビバ トピック] 管理設定Microsoft 365 管理センター。
  
 - [トピックSharePoint除外](./topic-experiences-discovery.md#select-sharepoint-topic-sources)するサイトを選択します。この設定を使用すると、特定のサイトがトピックSharePointクロールされるのを防ぐことが可能です。
 - [名前でトピックを除外する](./topic-experiences-discovery.md#exclude-topics-by-name): 管理者は、この設定を使用して、特定のトピックが名前で検出されるのを防ぐ場合があります。 ビバ トピックの管理設定では、管理者は CSV ファイルで除外するトピックの一覧をアップロードできます。 トピック名に完全一致または部分的に一致するトピックを除外できます。

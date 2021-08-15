@@ -15,19 +15,19 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: Microsoft Azure で Microsoft 365 の高可用性フェデレーション認証AD FS サーバーを作成および構成する方法について説明します。
-ms.openlocfilehash: 388a99aa496c4ecd9145759d4dfb1b9441b4fb2c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 高可用性フェデレーション認証用の FS ADを作成および構成する方法について、Microsoft 365をMicrosoft Azure。
+ms.openlocfilehash: 23297f9ee38dcc1753f004aa225ee8eb32438c2eff08418aedfa9b5362c90c7f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870702"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性フェデレーション認証のフェーズ 3: AD FS サーバーを構成する
 
-Azure インフラストラクチャ サービスで Microsoft 365 フェデレーション認証の高可用性を展開するこのフェーズでは、内部ロード バランサーと 2 台の FS サーバーをADします。
+Azure インフラストラクチャ サービスにフェデレーション認証用の高可用性Microsoft 365展開するこのフェーズでは、内部ロード バランサーと 2 台の FS サーバーをADします。
   
-[フェーズ 4: Web アプリケーション プロキシの構成] に進む前に、この [フェーズを完了する必要があります](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 すべての [フェーズについては、「Azure での Microsoft 365](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) の高可用性フェデレーション認証の展開」を参照してください。
+[フェーズ 4: Web アプリケーション プロキシの構成] に進む前に、この [フェーズを完了する必要があります](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 すべての[フェーズについては、「高可用性フェデレーション認証を Azure Microsoft 365展開](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)する」を参照してください。
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Azure に AD FS サーバー仮想マシンを作成する
 
@@ -48,12 +48,12 @@ Azure インフラストラクチャ サービスで Microsoft 365 フェデレ�
 フェーズ 2 でテーブル M を定義した [場合:フェーズ 1:](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) Configure Azure でドメイン コントローラーとテーブル R、V、S、I、および A を [構成します](high-availability-federated-authentication-phase-1-configure-azure.md)。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「Azure [PowerShell の使用を開始する」を参照してください](/powershell/azure/get-started-azureps)。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「[使い始める」を参照Azure PowerShell。](/powershell/azure/get-started-azureps) 
   
 まず、2 つの AD FS サーバー用に Azure の内部ロード バランサーを作成します。 変数の値を指定し、文字を削除 \< and > します。 適切な値をすべて指定したら、その結果のブロックを Azure PowerShell コマンド プロンプトまたは PowerShell ISE で実行します。
   
 > [!TIP]
-> カスタム設定に基づいてすぐに実行できる PowerShell コマンド ブロックを生成するには、この Microsoft Excel 構成ブック [を使用します](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
+> カスタム設定に基づいてすぐに実行できる PowerShell コマンド ブロックを生成するには、次の構成[ブックMicrosoft Excel使用します](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 ```powershell
 # Set up key variables
@@ -135,7 +135,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 仮想マシンごとに、お好みのリモート デスクトップ クライアントを使用して、リモート デスクトップ接続を作成します。イントラネット DNS を使用するか、ローカル管理者アカウントのコンピューター名と資格情報を使用します。
   
-仮想マシンごとに、これらのコマンドを使用して、適切な Active Directory ドメイン サービス (AD DS) ドメインに参加Windows PowerShellします。
+各仮想マシンに対して、これらのコマンドを使用して適切な Active Directory ドメイン サービス (AD DS) ドメインに参加Windows PowerShellします。
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -148,7 +148,7 @@ Restart-Computer
   
 **フェーズ 3:Azure での高可用性フェデレーション認証インフラストラクチャ用の AD FS サーバーと内部ロード バランサー**
 
-![Azure の高可用性 Microsoft 365 フェデレーション認証インフラストラクチャのフェーズ 3 と FS サーバー ADフェーズ 3](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Azure のフェデレーション認証インフラストラクチャMicrosoft 365 FS サーバーとの高可用性ADフェーズ 3](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>次の手順
 
@@ -158,4 +158,4 @@ Restart-Computer
 
 [Azure に Microsoft 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Microsoft 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[開発/テスト環境Microsoft 365フェデレーション ID](federated-identity-for-your-microsoft-365-dev-test-environment.md)

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 210356dd21b36efbb27d8faa4f8616145584159c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a98f3a4d1bda182331f81de0c0c5cf232940819c864b638fb738ae192ff9cc4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929502"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854502"
 ---
 # <a name="windows-10-location-service"></a>Windows 10 の位置情報サービス
 

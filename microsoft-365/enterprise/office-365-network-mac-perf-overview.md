@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: ネットワーク接続の概要 (Microsoft 365 管理 センター)
-ms.openlocfilehash: 05247c73bec3a11905890d26db84f8fe1a288a99
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 3d22d3d3ee4081ab905c3848a39f5f9df9a9e667b503899b946c1ebec8110dc8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419801"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870466"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 センターのネットワーク接続
 
@@ -203,7 +203,7 @@ CSV ファイルでは、検出された都市の場所が userEntered 列に空
    > [!div class="mx-imgBorder"]
    > ![CSV インポートの準備完了メッセージ](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>サービス のフロント Microsoft 365とは何ですか?
 
@@ -224,7 +224,7 @@ Microsoft 365サービス フロント ドアは、Microsoft のグローバル 
 
 ユーザーにアクセスできるライセンスが必要Microsoft 365 管理センター。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365分析情報 (プレビュー)](office-365-network-mac-perf-insights.md)
 

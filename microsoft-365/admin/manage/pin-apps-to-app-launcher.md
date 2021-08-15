@@ -13,12 +13,12 @@ ms.collection:
 ms.service: o365-administration
 localization_priority: Normal
 description: グローバル管理者は、ユーザーのアプリ 起動ツールに最大 3 つのアプリをピン留めできます。
-ms.openlocfilehash: 786368f1236c7a86a6fbd0dd863ad0296cb65fac
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6569b05f29a2219c9d1d6c847e65cd29043d80fd82d5e499e2af57ba96af0da9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579268"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825012"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>ユーザーのアプリ 起動ツールにアプリをピン留めする
 
@@ -28,7 +28,7 @@ Azure Active Directory ポータルのコントロールを使用して、最大
 
 ## <a name="use-the-azure-active-directory-portal-to-pin-apps"></a>アプリをピン留Azure Active Directoryポータルを使用する
 
-1. [管理センター] Microsoft 365に移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
+1. で、Microsoft 365 管理センターに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
 2. 左側のナビゲーションで、[すべて **表示]** を選択し、[管理センター] の下の **[管理** センター] で 、[Azure Active Directory]**を選択します**。
 3. **[Azure Active Directory]** で、[アプリケーション **Enterprise設定]**  >  **を選択します**。
 4. [アプリケーションの **追加Office 365 設定]** セクションで、[アプリケーションの追加]**を選択します**。
@@ -46,7 +46,7 @@ Azure Active Directory ポータルのコントロールを使用して、最大
 3. アプリケーションの名前を入力し、[ユーザーとグループ] タブで **ユーザーを割り当** てる。
 4. [プロパティ **] タブ** を使用して、アプリのアイコンをアップロードします。
 5. アプリに URL を割り当てるには、[シングル サインオン]タブで[リンク] を選択し、URL を入力します。
-6. **[保存]** を選択します。
+6. 保存] を選択します。
 
 ## <a name="create-application-collections"></a>アプリケーション コレクションの作成
 
