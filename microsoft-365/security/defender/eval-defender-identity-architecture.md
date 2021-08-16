@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cb243c0100bab3b13939422f61618a2d7e1d77772bbdd14b25007988ea626024
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 778ff1aebf7ea0a559d2ec5fb036de7218865df9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867590"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256884"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity のアーキテクチャ要件と主な概念を確認する
 
@@ -76,7 +76,7 @@ Defender for Identity のアーキテクチャの詳細については、「Micr
 | ネットワーク名の解決    |  ネットワーク名解決 (NNR) は、ネットワーク トラフィック、Windows イベント、ETW などに基づいてアクティビティをキャプチャし、この生データを各アクティビティに関係する関連するコンピューターに関連付ける MDI 機能のコンポーネントです。       | [ネットワーク名の解決とは](/defender-for-identity/nnr-policy)      |
 | レポート    | Defender for Identity レポートを使用すると、システムとエンティティの状態情報を提供するレポートをスケジュールまたは即座に生成およびダウンロードできます。  システムの正常性、セキュリティアラート、および環境で検出された潜在的な横方向の移動パスに関するレポートを作成できます。   | [Microsoft Defender for Identity Reports ](/defender-for-identity/reports)       |
 | 役割グループ    | Defender for Identity は、管理者、ユーザー、閲覧者を含む組織の特定のセキュリティとコンプライアンスのニーズに応じて、役割ベースのグループと委任されたアクセスを提供します。        |  [Microsoft Defender for Identity の役割グループ](/defender-for-identity/role-groups)       |
-| 管理ポータル    |  セキュリティ センターにMicrosoft 365、Defender for Identity ポータル キャブを使用して、疑わしいアクティビティの監視と対応を行います。      | [Microsoft Defender for Identity ポータルの操作](/defender-for-identity/workspace-portal)        |
+| 管理ポータル    |  セキュリティ ポータルにMicrosoft 365 Defender、Defender for Identity ポータル キャブを使用して、疑わしいアクティビティの監視と対応を行います。      | [Microsoft Defender for Identity ポータルの操作](/defender-for-identity/workspace-portal)        |
 | Microsoft Cloud App Security統合   | Microsoft Cloud App Security Microsoft Defender for Identity と統合して、クラウド アプリとオンプレミスの両方のハイブリッド環境全体でユーザー エンティティの動作分析 (UEBA) を提供する   | Id 統合用 Microsoft Defender  |
 | | | |
 

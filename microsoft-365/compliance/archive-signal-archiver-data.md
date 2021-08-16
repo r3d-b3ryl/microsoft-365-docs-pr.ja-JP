@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタをセットアップして、シグナル通信データをインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 40f9c29e873be488964e44a2e7f4bf937384d4c0198f4013a15e88b10c539791
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d6d129c69f2258457c2cdcc0dee28ac4e6738dff
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796579"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256627"
 ---
 # <a name="set-up-a-connector-to-archive-signal-communications-data"></a>シグナル通信データをアーカイブするコネクタをセットアップする
 

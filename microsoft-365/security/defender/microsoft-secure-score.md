@@ -1,7 +1,7 @@
 ---
 title: Microsoft セキュア スコア
-description: Microsoft 365 セキュリティ センターの Microsoft セキュア スコアについて、どのようにセキュリティ体制を改善するか、セキュリティ管理者がどんなことを期待できるかについて説明します。
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
+description: Microsoft Secure Score について、Microsoft 365 Defenderポータルで説明します。セキュリティの態勢を改善する方法、およびセキュリティ管理者が期待できる機能について説明します。
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender ポータル, 改善アクション
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 9d922ed8fbcbace8cc804e33e00af8939c7ff5f0ac67610303deab2095ce326e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3cf1130e13b90c60334b8af76f31d232a084f37a
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893749"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256865"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 これは、セキュリティ センター https://security.microsoft.com/securescore のMicrosoft 365[にあります](overview-security-center.md)。
+Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 このファイルは、ポータル https://security.microsoft.com/securescore のMicrosoft 365 Defender[表示されます](overview-security-center.md)。
 
-セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 組織は、Microsoft 365 セキュリティ センターの一元的なダッシュボードから、ユーザー ID、アプリ、デバイスのセキュリティを監視Microsoft 365作業できます。
+セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 組織は、Microsoft 365 Defender ポータルの一元的なダッシュボードから、ユーザー ID、アプリ、デバイスのセキュリティを監視Microsoft 365作業できます。
 
 セキュア スコアは、次のような方法で組織の役に立ちます。  
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9314b1b99afeed1738d03a5f11c513166c37dfa002784b21d3c3b461183b0077
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: ad3b53a9936fb40c8d699f656f88bf5a3fff20b9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803430"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256670"
 ---
 # <a name="getting-help-for-users"></a>ユーザーのヘルプ
 

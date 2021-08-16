@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 45858943dab6f6cb2964cc2751c245f182f3ea9e61ab5a8565a238e3aad715e1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3053740119c09b56b6fa01434d79fe9cd31d826e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808178"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256706"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -74,7 +74,7 @@ ms.locfileid: "53808178"
 3. 「**ポリシー ページを適用する場所の選択**」で、 以下の Teams の場所のいずれかまたはすべてを選択します。
     - **Teams チャネルメッセージ**: 標準チャネル チャットおよび標準チャネル会議からのメッセージですが、独自のポリシーの場所を持つ [プライベート チャネル](/microsoftteams/private-channels)からのメッセージではありません。
     - **Teams チャット**: プライベート 1:1 チャット、グループ チャット、および会議チャットからのメッセージ。
-    - **Teams プライベート チャネル メッセージ**: プライベート チャネル チャットおよびプライベート チャネル 会議からのメッセージ。 このオプションは現在プレビューで展開されており、表示されない場合は、数日後に再試行してください。
+    - **Teams プライベート チャネル メッセージ**: プライベート チャネル チャットおよびプライベート チャネル 会議からのメッセージ。
     
    既定では、[すべてのチームとすべてのユーザーが選択されています](#a-policy-that-applies-to-entire-locations)が、**[編集]** オプションを選択して [特定の包含または除外](#a-policy-with-specific-inclusions-or-exclusions)のアイテム保持ポリシーを構成することにより、これを調整できます。 ただし、この既定の選択を変更する前に、アイテム保持ポリシーが次を対象または除外対象とするために構成されるときに、メッセージを削除する点について注意してください。
     

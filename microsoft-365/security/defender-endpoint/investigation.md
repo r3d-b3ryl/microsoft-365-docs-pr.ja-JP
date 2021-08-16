@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f06fb5c425327156a4acf78e9eb3f6864b2317ff23b31cd90a8aded764cff8d5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 54e060f1cc98f62ca048ce8d561247c47f189f24
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889665"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256796"
 ---
 # <a name="investigation-resource-type"></a>調査リソースの種類
 
@@ -45,7 +45,7 @@ Defender for Endpoint の自動調査エンティティを表します。
 
 ## <a name="methods"></a>メソッド
 
-メソッド|戻り値の型|Description
+メソッド|戻り値の型|説明
 :---|:---|:---
 [リスト調査](get-investigation-collection.md)|調査コレクション|調査のコレクションを取得する
 [単一の調査を取得する](get-investigation-object.md)|調査エンティティ|単一の Investigation エンティティを取得します。
@@ -59,7 +59,7 @@ id|String|調査エンティティの ID。
 startTime|DateTime Nullable|調査が作成された日時。
 endTime|DateTime Nullable|調査が完了した日時。
 cancelledBy|String|その調査を取り消したユーザー/アプリケーションの ID。
-investigationState|列挙|調査の現在の状態。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''
+state|列挙|調査の現在の状態。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''
 statusDetails|String|調査の状態に関する追加情報。
 machineId|String|調査が実行されるデバイスの ID。
 computerDnsName|String|調査が実行されるデバイスの名前。

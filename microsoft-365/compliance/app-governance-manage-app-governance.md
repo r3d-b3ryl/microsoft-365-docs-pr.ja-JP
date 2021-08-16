@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft アプリ ガバナンス機能を実装し、アプリを管理します。
-ms.openlocfilehash: e36ab9e3f8d19c68027e6b665bd0755839e1accf952b7df8ca1fe1694c0a8bae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2b11893b17c93bb92301bc07fda3422ad4c36228
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887213"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256841"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security へのアプリ ガバナンス アドオン (プレビュー版)
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
 > [!NOTE]
-> アプリ ガバナンスにサインアップするには、「[アプリ ガバナンスの開始 (プレビュー)](app-governance-get-started.md#add-app-governance-to-your-microsoft-365-account)」を参照してください。
+> アプリ ガバナンスにサインアップするには、「[アプリ ガバナンスの開始 (プレビュー)](app-governance-get-started.md#sign-up-for-free-trial-of-app-governance)」を参照してください。
 
 サイバー攻撃は、オンプレミスやクラウドのインフラに展開しているアプリケーションを悪用する方法がますます巧妙になっており、特権の昇格、横方向の移動、データの流出の開始点となっています。 潜在的なリスクを理解し、この種の攻撃を阻止するためには、組織のアプリ コンプライアンス姿勢を明確に可視化し、アプリが異常な動作を示した場合には迅速に特定し、これらの動作が環境、データ、ユーザーにリスクとなる場合には対応する必要があります。
 

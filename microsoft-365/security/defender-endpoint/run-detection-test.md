@@ -1,6 +1,6 @@
 ---
-title: 新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する
-description: 新しくオンボードされたデバイスで検出スクリプトを実行して、Microsoft Defender for Endpoint サービスに正しくオンボードされていることを確認します。
+title: Microsoft Defender for Endpoint デバイスにデバイスを追加した後で検出テストを実行する
+description: Microsoft Defender for Endpoint サービスに最近追加されたデバイスで検出スクリプトを実行して、適切にオンボードされていることを確認する
 keywords: 検出テスト、検出、powershell、スクリプト、検証、オンボーディング、エンドポイントオンボーディング用 Microsoft Defender、クライアント、サーバー、テスト
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 82f34d345663df77c7b713f06b0d7b9760c86e1f374a033b5386bfdbdb0fcc41
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ae3f6cfbdf1452b47f1bd91029c6a481eff5761
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867885"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256915"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する 
 
@@ -41,6 +41,11 @@ ms.locfileid: "53867885"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+オンボード デバイスは、Microsoft Defender for Endpoint サービスにデバイスを追加する方法です。 これにより、デバイスはサービスに信号を報告できます。  
+
+デバイスがサービスに正常に追加されたことを確認することが、展開プロセス全体の重要なステップです。 
+
+## <a name="verify-onboarding-using-a-detection-test"></a>検出テストを使用してオンボーディングを確認する
 新しくオンボードされたデバイスで次の PowerShell スクリプトを実行して、Defender for Endpoint サービスに適切に報告されていることを確認します。
 
 1. フォルダーを作成する: 'C:\test-MDATP-test'。
@@ -60,7 +65,7 @@ ms.locfileid: "53867885"
 
 [コマンド プロンプト] ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、約 10 分でオンボード デバイスのポータルに新しいアラートが表示されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [オンボード サーバー](configure-server-endpoints.md)
 - [Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

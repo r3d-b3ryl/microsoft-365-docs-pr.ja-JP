@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b72218f1174eb06a99b5cc0fbb4788b40c867038fd5edfb3f76632b072ed3f73
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: 3e8c7de35576324a24f51c2a59df3432acdb0daa
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803478"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256682"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの管理者サポート
 

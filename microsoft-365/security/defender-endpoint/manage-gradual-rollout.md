@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: deef2ee379c1804f2ed1d07fc3fbdb2aa04646d2e9b51aa842e12a0afa3e7017
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 56ccdc577c85a91dfbeb22c466251607a330c30f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806702"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256732"
 ---
 #  <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Microsoft Defender 更新プログラムの段階的なロールアウト プロセスを管理する
 
@@ -42,13 +42,13 @@ ms.locfileid: "53806702"
 機能は、次の複数のコンポーネントを介して提供されます。 
 
 - [エンドポイント検出&応答](overview-endpoint-detection-response.md) 
-- [クラウドによる保護による](microsoft-defender-antivirus-in-windows-10.md#microsoft-defender-antivirus-your-next-generation-protection)[次世代の保護](cloud-protection-microsoft-defender-antivirus.md) 
+- [クラウドによる保護による](microsoft-defender-antivirus-windows.md)[次世代の保護](cloud-protection-microsoft-defender-antivirus.md) 
 - [攻撃表面の縮小](overview-attack-surface-reduction.md)
 
 更新プログラムは、段階的なリリース プロセスを使用して毎月リリースされます。 このプロセスは、早期障害検出が発生した時点で影響をキャッチし、大規模なロールアウトの前に迅速に対処するのに役立ちます。 
 
 > [!NOTE]
-> 日次定義の更新を制御する方法の詳細については、「定義の更新をスケジュールする - Microsoft Defender ウイルス対策[のWindowsを参照|Microsoft Docs](manage-protection-update-schedule-microsoft-defender-antivirus.md).定義の更新により、クラウドによる保護がエンドポイントで利用できない場合でも、次世代の保護が新しい脅威から防御されます。
+> 毎日のセキュリティ インテリジェンス更新プログラムを制御する方法の詳細については、「セキュリティ保護更新プログラムのスケジュール[Microsoft Defender ウイルス対策を参照してください](manage-protection-update-schedule-microsoft-defender-antivirus.md)。 更新プログラムにより、クラウド配信の保護がエンドポイントで利用できない場合でも、次世代の保護が新しい脅威から防御されます。
 
 ## <a name="microsoft-gradual-rollout-model"></a>Microsoft 段階的ロールアウト モデル
 
@@ -87,9 +87,9 @@ Windows Server Update Services (WSUS) や Microsoft Endpoint Configuration Manag
 | 現在のチャネル (Broad) | 段階的なリリースの最後に更新プログラムを取得する  | 段階的なリリース サイクルが完了した後にのみ、デバイスに更新プログラムが提供されます。 実稼働人口 (~10~100%)の幅広いデバイスセットに適用する必要があります。  |
 | (既定)  |   | このポリシーを無効にするか構成しない場合、デバイスは現在のチャネル (既定) に残ります。段階的なリリース サイクル中に自動的に最新の状態を維持します。 ほとんどのデバイスに適しています。  |
 
-### <a name="update-channels-for-daily-definition-updates"></a>毎日の定義更新のチャネルを更新する
+### <a name="update-channels-for-daily-updates"></a>毎日の更新プログラムのチャネルを更新する
 
-コンピューターをチャネルに割り当て、毎日の定義更新を受け取るケイデンスを定義できます。 月次プロセスとは異なり、Beta チャネルは提供され、この段階的なリリース サイクルは 1 日に複数回発生します。
+コンピューターをチャネルに割り当て、毎日更新プログラムを受け取るケイデンスを定義できます。 月次プロセスとは異なり、Beta チャネルは提供され、この段階的なリリース サイクルは 1 日に複数回発生します。
   
 | チャネル名  | 説明  | アプリケーション  |
 |-|-|-|

@@ -26,7 +26,7 @@
   items:
     - name: '[ユーザー] ページの概要'
       href: m365-lighthouse-users-page-overview.md
-- name: デバイスを管理する
+- name: デバイスの管理
   items:
     - name: デバイス コンプライアンス ページの概要
       href: m365-lighthouse-device-compliance-page-overview.md
