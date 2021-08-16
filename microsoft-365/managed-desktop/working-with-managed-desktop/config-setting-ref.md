@@ -1,6 +1,6 @@
 ---
-title: Microsoft Managed Desktop の構成可能な設定リファレンス
-description: Microsoft Managed Desktop で構成可能な設定のカテゴリを設定する
+title: 構成可能な設定リファレンス (Microsoft マネージド デスクトップ
+description: 構成可能な設定のカテゴリを設定Microsoft マネージド デスクトップ
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -9,21 +9,21 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1245268b6128aa022a972fd0282009573558ec47
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3dd3f072ef041b20acd470727e90ab705e9ed72450bb46c8c56d89dc729e84e2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863813"
 ---
-# <a name="configurable-settings-reference---microsoft-managed-desktop"></a>構成可能な設定リファレンス - Microsoft Managed Desktop
+# <a name="configurable-settings-reference---microsoft-managed-desktop"></a>構成可能な設定リファレンス - Microsoft マネージド デスクトップ
 
-このトピックでは、Microsoft Managed Desktop で構成できる設定カテゴリの一覧を示します。 各設定カテゴリには、要件、ベスト プラクティス、設定カテゴリのカスタマイズ方法に関する情報が含まれます。 
+このトピックでは、ユーザーが構成できる設定カテゴリの一覧をMicrosoft マネージド デスクトップ。 各設定カテゴリには、要件、ベスト プラクティス、設定カテゴリのカスタマイズ方法に関する情報が含まれます。 
 
 ## <a name="desktop-background-picture"></a>デスクトップの背景画像
-組織内の Microsoft Managed Desktop デバイスのデスクトップの背景画像をカスタマイズできます。 これを使用して、会社のブランドまたはマーケティング 資料を適用できます。 
+組織内のデバイスのデスクトップの背景画像Microsoft マネージド デスクトップカスタマイズできます。 これを使用して、会社のブランドまたはマーケティング 資料を適用できます。 
 
-### <a name="requirements"></a>要件
+### <a name="requirements"></a>Requirements
 
 デスクトップの背景画像では、次の要件を満たす必要があります。
 - ピクチャ ファイル形式 - .jpg、jpeg、または .png
@@ -33,37 +33,37 @@ ms.locfileid: "50917706"
 ### <a name="customize-and-deploy-desktop-background-picture"></a>デスクトップの背景画像をカスタマイズして展開する
 
 **カスタム デスクトップの背景画像を追加するには**
-1. Microsoft Endpoint Manager に [サインインし、[](https://endpoint.microsoft.com/) デバイス] メニュー **に移動** します。
-2. [Microsoft Managed Desktop] セクションを探し、[設定] を **選択します**。
-3. [設定 **] ワークスペース** で、[デスクトップの **背景画像] を選択します**。 
+1. サインインして [デバイス [Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)メニュー **に移動** します。
+2. [ファイル] セクションを探Microsoft マネージド デスクトップ、次を選択 **設定。**
+3. [**デスクトップ設定]** で、[デスクトップの **背景画像] を選択します**。 
 4. 使用する画像の場所を入力します。 
 5. [ **ステージ展開] を** 選択して変更を保存し、テスト グループに展開します。 
 
 ## <a name="browser-start-pages"></a>ブラウザーの開始ページ
-ユーザーが Microsoft Edge を起動すると、ブラウザーの開始ページが個々のタブで開きます。 ユーザーが頻繁に使用する一連のサイトを簡単に開く場合は、サイトごとにブラウザーの開始ページを追加します。 
+ブラウザーのスタート ページは、ユーザーがページを開始するときに個々のタブMicrosoft Edge。 ユーザーが頻繁に使用する一連のサイトを簡単に開く場合は、サイトごとにブラウザーの開始ページを追加します。 
 
-### <a name="requirements"></a>要件
+### <a name="requirements"></a>Requirements
 
 ブラウザーのスタート ページにイントラネットまたはインターネット サイトの完全修飾ドメイン名 (FQDN) を指定する必要があります。 内部サイトが構成されている場合、これらのサイトへのアクセスは、社内ネットワークに接続されている場合、または VPN 接続に接続されている場合にのみ許可されていることをユーザーに知らせて下さい。 
 
 ### <a name="customize-and-deploy-browser-start-pages"></a>ブラウザーの開始ページのカスタマイズと展開
 
 **ブラウザーの開始ページを追加するには**
-1. Microsoft Endpoint Manager に [サインインし、[](https://endpoint.microsoft.com/) デバイス] メニュー **に移動** します。
-2. [Microsoft Managed Desktop] セクションを探し、[設定] を **選択します**。
-3. [設定 **] ワークスペースで** 、[ブラウザーの **開始ページ] を選択します**。 
+1. サインインして [デバイス [Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)メニュー **に移動** します。
+2. [ファイル] セクションを探Microsoft マネージド デスクトップ、次を選択 **設定。**
+3. [**ブラウザー設定]** ワークスペースで、[ブラウザーの **開始ページ] を選択します**。 
 4. [スタート **ページの追加] を選択します**。
 5. [ **ブラウザーの開始ページの追加]** で、使用するサイトの URL を入力し、[スタート ページの追加 **] を選択します**。 
 6. 追加のブラウザーの開始ページについては、手順 1 ~ 5 を繰り返します。 
 7. [ **ステージ展開] を** 選択して変更を保存し、テスト グループに展開します。
 
-## <a name="enterprise-mode-site-list-location"></a>エンタープライズ モードのサイト一覧の場所
+## <a name="enterprise-mode-site-list-location"></a>Enterprise モードのサイト一覧の場所
 
-Microsoft Edge との互換性に問題がある特定の Web サイトとアプリがある場合は、エンタープライズ モード サイト一覧を使用して、web サイトが 11 を使用して自動的に開Internet Explorerできます。 また、イントラネット サイトが Microsoft Edge で正しく動作しない場合は、すべてのイントラネット サイトを自動的に 11 を使用して開Internet Explorerできます。 エンタープライズ モードを使用すると、Microsoft Edge を既定のブラウザーとして引き続き使用できる一方で、アプリが 11 で引き続き動作Internet Explorerします。 エンタープライズ モード サイトリストの詳細については [、「Enterprise Mode and Enterprise Mode Site Lists」を参照してください](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode)。 
+Microsoft Edge との互換性に問題がある特定の Web サイトやアプリがある場合は、Enterprise モード サイト一覧を使用して、Internet Explorer 11 を使用して web サイトを自動的に開きます。 また、イントラネット サイトが Microsoft Edge で正しく動作しない場合は、すべてのイントラネット サイトを 11 を使用して自動的に開Internet Explorerできます。 [Enterprise モードを使用すると、Microsoft Edgeブラウザーとして引き続き使用できる一方で、アプリが 11 で引き続き動作Internet Explorerします。 エンタープライズ モード サイト一覧の詳細については、「Enterprise モードと Enterprise[リスト」を参照してください](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode)。 
 
 エンタープライズ モード サイト一覧 https:// ホストしている内部共有の場所、または場所を指定できます。 
 
-### <a name="requirements"></a>要件
+### <a name="requirements"></a>Requirements
 
 エンタープライズ モードのサイト 一覧ファイルでは、次の要件を満たす必要があります。
 - ファイル形式 - ファイル要件を満たす [XML ファイル](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
@@ -73,16 +73,16 @@ Microsoft Edge との互換性に問題がある特定の Web サイトとアプ
 ### <a name="best-practices"></a>ベスト プラクティス
 
 これらのベスト プラクティスは、お客様が IT インフラストラクチャの最新化を決定する上で役立ちます。
-- **限られた数の** サイトを選択します。 Microsoft Managed Desktop は、組織の全体的なセキュリティとユーザーの使いやすさを向上させるために、優先ブラウザーとして Microsoft Edge を使用します。 この一覧のほとんどのサイトは、古いバージョンのブラウザーを必要とする従来の Web アプリ向けで、多くのセキュリティ機能が含まれます。 
+- **限られた数** のサイトをMicrosoft マネージド デスクトップ、Microsoft Edgeの全体的なセキュリティとユーザーの使いやすさを向上させるために、優先ブラウザーとして使用します。 この一覧のほとんどのサイトは、古いバージョンのブラウザーを必要とする従来の Web アプリ向けで、多くのセキュリティ機能が含まれます。 
 - **別のサイトを検討** する – 古いブラウザーを必要としない別のサイトまたは Web アプリを検討してください。 または、新しいブラウザーを使用できるようサイトを更新する方法を検討してください。 新しいブラウザーは最新のテクノロジを使用し、セキュリティの向上に役立ちます。
 
-### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>エンタープライズ サイト モードの一覧の場所をカスタマイズして展開する
+### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>サイト モードの一Enterprise場所をカスタマイズして展開する
 
 **エンタープライズ サイト モードの一覧の場所を追加するには**
 
-1. Microsoft Endpoint Manager に [サインインし、[](https://endpoint.microsoft.com/) デバイス] メニュー **に移動** します。
-2. [Microsoft Managed Desktop] セクションを探し、[設定] を **選択します**。
-3. [設定 **] ワークスペース** で、[エンタープライズ モード **のサイト一覧の場所] を選択します**。 
+1. サインインして [デバイス [Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)メニュー **に移動** します。
+2. [ファイル] セクションを探Microsoft マネージド デスクトップ、次を選択 **設定。**
+3. **[設定]** ワークスペースで、[サイト 一 **覧Enterpriseの場所] を選択します**。 
 4. サイト一覧の https の場所を入力します。 
 5. [ **ステージ展開] を** 選択して変更を保存し、テスト グループに展開します。
 
@@ -94,7 +94,7 @@ Microsoft Edge との互換性に問題がある特定の Web サイトとアプ
 - ゾーン 3 – インターネット ゾーン
 - ゾーン 4 – 制限付きサイト ゾーン
 
-### <a name="requirements"></a>要件
+### <a name="requirements"></a>Requirements
 
 信頼済みサイトごとにイントラネットまたはインターネット サイトの完全修飾ドメイン名 (FQDN) を指定します。 
 
@@ -102,31 +102,31 @@ Microsoft Edge との互換性に問題がある特定の Web サイトとアプ
 
 **信頼できるサイトを追加するには**
 
-1. Microsoft Endpoint Manager に [サインインし、[](https://endpoint.microsoft.com/) デバイス] メニュー **に移動** します。
-2. [Microsoft Managed Desktop] セクションを探し、[設定] を **選択します**。
-3. [設定 **] ワークスペース** で、[信頼済 **みサイト] を** 選択し、[信頼できるサイトの **追加] を選択します**。 
+1. サインインして [デバイス [Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)メニュー **に移動** します。
+2. [ファイル] セクションを探Microsoft マネージド デスクトップ、次を選択 **設定。**
+3. **[設定]** ワークスペースで、[信頼済 **みサイト] を** 選択し、[信頼済みサイトの **追加] を選択します**。 
 4. [ **信頼済みサイトの追加**] で、URL を入力し、セキュリティ ゾーンを選択し、[信頼済みサイトの追加 **] を選択します**。 
 5. 追加する信頼済みサイトごとに手順 1 ~ 4 を繰り返します。 
 6. [ **ステージ展開] を** 選択して変更を保存し、テスト グループに展開します。
 
 **信頼できるサイトを削除するには**
 
-1. Microsoft Endpoint Manager に [サインインし、[](https://endpoint.microsoft.com/) デバイス] メニュー **に移動** します。
-2. [Microsoft Managed Desktop] セクションを探し、[設定] を **選択します**。
-3. [設定 **] ワークスペースで** 、[信頼済み **サイト] を選択します**。 
+1. サインインして [デバイス [Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)メニュー **に移動** します。
+2. [ファイル] セクションを探Microsoft マネージド デスクトップ、次を選択 **設定。**
+3. [信頼 **設定]** ワークスペースで、[信頼済みサイト]**を選択します**。 
 4. 削除するサイトを選択し、[削除] を **選択します**。 
 5. 削除する信頼済みサイトごとに手順 1 ~ 4 を繰り返します。 
 6. [ **ステージ展開] を** 選択して変更を保存し、テスト グループに展開します。
 
 ## <a name="proxy"></a>プロキシ
-組織のネットワーク プロキシ設定を管理できます。 プロキシ サーバーとポート番号を追加し、プロキシ サイトの例外を追加します。 Microsoft Managed Desktop には、サービスを動作するために必要な一連の既定のプロキシ例外が含まれています。 既定の除外リストは、Microsoft Managed Desktop サービスによってのみ変更できます。  詳細については [、「Microsoft Managed Desktop のネットワーク構成」を参照してください](../get-ready/network.md)。 
+組織のネットワーク プロキシ設定を管理できます。 プロキシ サーバーとポート番号を追加し、プロキシ サイトの例外を追加します。 Microsoft マネージド デスクトップには、サービスの動作に必要な一連の既定のプロキシ例外が含まれています。 既定の除外リストは、サービスによってのみMicrosoft マネージド デスクトップがあります。  詳細については、「ネットワーク構成 for [Microsoft マネージド デスクトップ」 を参照してください](../get-ready/network.md)。 
 
-Microsoft Managed Desktop ポータルに追加するプロキシ サイトの例外は、Microsoft Managed Desktop サービスに含まれる既定のプロキシ例外に追加されます。 
+サイト ポータルに追加するプロキシ サイトMicrosoft マネージド デスクトップは、Microsoft マネージド デスクトップ サービスに含まれる既定のプロキシ例外に追加されます。 
 
 > [!NOTE]
 > 既定のプロキシ例外リストの更新は、常に顧客の展開よりも優先されます。 つまり、既定のプロキシ例外リストの展開がある場合、ステージ展開は一時停止されます。  
 
-### <a name="requirements"></a>要件
+### <a name="requirements"></a>Requirements
 
 プロキシ サーバーとプロキシ サイトの例外に対して、次の要件を満たす必要があります。
 - 有効なサーバー アドレスとポート番号である必要があります
@@ -136,9 +136,9 @@ Microsoft Managed Desktop ポータルに追加するプロキシ サイトの�
 
 **個々のプロキシ サイトの例外を追加するには**
 
-1. Microsoft Endpoint Manager に [サインインし、[](https://endpoint.microsoft.com/) デバイス] メニュー **に移動** します。
-2. [Microsoft Managed Desktop] セクションを探し、[設定] を **選択します**。
-3. [設定 **] ワークスペースで** 、[プロキシ] **を選択します**。 
+1. サインインして [デバイス [Microsoft エンドポイント マネージャー]](https://endpoint.microsoft.com/)メニュー **に移動** します。
+2. [ファイル] セクションを探Microsoft マネージド デスクトップ、次を選択 **設定。**
+3. [設定] ワークスペース **で**、[プロキシ] を **選択します**。 
 4. プロキシ サーバー **のアドレス** と **ポート番号** を入力し、[プロキシ例外の追加 **] を選択します**。 
 5. 有効な http サイトの URL を入力し、[プロキシ例外の追加 **] を選択します**。 
 6. 追加する信頼済みサイトごとに手順 1 ~ 5 を繰り返します。 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 95ad09a3aca9b756752ef7fd05886e4d8c98befc
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 253c055198547852c55a44b60910e3a38229737e89fa5e2fa467e74089ee20d6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655829"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863801"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices-in-defender-for-endpoint"></a>Defender for Endpoint のデバイスWindows 10オンボーディング ツールとメソッド
 

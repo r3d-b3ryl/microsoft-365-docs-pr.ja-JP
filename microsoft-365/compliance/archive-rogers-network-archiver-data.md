@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタをセットアップして、ロジャース ネットワーク のデータをインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 857f7c0953912f4224f8ab565265ccde166784420376c5584818af1b40ebcb1a
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: c17b81095e9113cdd0948c33ec2e2b7e4909fe73
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520763"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257544"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data-preview"></a>ロジャース ネットワーク データをアーカイブするコネクタをセットアップする (プレビュー)
 

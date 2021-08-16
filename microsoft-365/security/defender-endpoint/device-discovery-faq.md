@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cc13c14f2e85dd2f217001be24a6b94a0d8426ea03dc09129200afd94700314c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d4ae05517583a8368ba7936a942e5ec06a9414f7
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890625"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257326"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>デバイスの検出に関するよく寄せられる質問
 
@@ -74,7 +74,7 @@ ms.locfileid: "53890625"
  デバイス検出ではパッシブ メソッドを使用してネットワーク内のデバイスを検出します。企業ネットワーク内のオンボード デバイスと通信するデバイスは、インベントリ内で検出および一覧表示されます。 アクティブなプロビリングからのみデバイスを除外できます。
 
 ## <a name="how-frequent-is-the-active-probing"></a>アクティブなプロブの頻度はどのくらいですか?
- デバイスの特性の変化が観察された場合 (1 ~ 3 週間ごとに) デバイスがアクティブに調査され、既存の情報が最新の状態に更新されます。
+ デバイスの特性の変化が観察された場合、デバイスはアクティブにプローブされ、既存の情報が最新の状態に更新されます (通常、デバイスは 3 週間に 1 回までプローブされます)
 
 ## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>セキュリティ ツールによって開始されたUnicastScanner.ps1スキャン アクティビティに関するアラートが発生しました。何を行う必要がありますか?
  アクティブなプロブ スクリプトは Microsoft によって署名され、安全です。 除外リストに次のパスを追加できます。 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`
@@ -93,3 +93,26 @@ ms.locfileid: "53890625"
 
 ## <a name="ive-noticed-that-unmanaged-device-health-state-is-always-active-why-is-that"></a>管理されていないデバイスの正常性状態が常に "Active" であるのに気付いたのですが、なぜですか?
 一時的に、管理されていないデバイスの正常性状態は、実際の状態に関係なく、デバイス インベントリの標準保持期間中に "Active" になります。
+
+
+## <a name="does-standard-discovery-look-like-malicious-network-activity"></a>標準の検出は、悪意のあるネットワーク アクティビティのように見えるでしょうか。
+Standard discovery を検討する場合は、プロブの影響、特にセキュリティ ツールが悪意のあるアクティビティを疑う可能性があるかどうかについて疑問に思う場合があります。 次のサブセクションでは、ほとんどの場合、組織が Standard Discovery を有効にするための懸念を持つ必要がない理由について説明します。  
+
+### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>Probing は、ネットワーク上のすべてのWindowsデバイスに分散されます。
+通常、侵害されたデバイスの数が少ないネットワーク全体をスキャンする悪意のあるアクティビティとは対照的に、Microsoft Defender for Endpoint の Standard Discovery probing は、オンボードのすべての Windows デバイスから開始され、アクティビティは無害で異常ではありません。 プロブは、ネットワークでサポートされているオンボード デバイス間の試みをバランスを取るクラウドから一中心に管理されます。  
+
+### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>アクティブなプロブは、余分なトラフィックのごくわずかの量を生成します
+非管理対象デバイスは通常、3 週間に 1 回までプローブを受け取り、50 KB 未満のトラフィックを生成します。 悪意のあるアクティビティには、通常、繰り返しの多い試み、場合によっては、ネットワーク監視ツールによって異常を特定できる大量のネットワーク トラフィックを生成するデータの侵入が含まれます。 
+
+### <a name="your-windows-device-already-runs-active-discovery"></a>デバイスWindowsアクティブな検出が既に実行されている
+アクティブな検出機能は、Windows オペレーティング システムに常に埋め込まれているので、近くのデバイス、エンドポイント、プリンターを検索して、ネットワーク内のエンドポイント間での "プラグ アンド プレイ" エクスペリエンスとファイル共有を容易にします。 同様の機能は、モバイル デバイス、ネットワーク機器、インベントリ アプリケーションにも実装されています。  
+
+標準検出では、同じ検出方法を使用してデバイスを識別し、デバイス インベントリ内のネットワーク内のすべてのデバイスを統合Microsoft 365 Defenderします。 たとえば、標準検出では、ネットワーク内の利用可能なプリンターをリストする場合と同Windows近くのエンドポイントを識別します。 
+
+ネットワーク セキュリティおよび監視ツールは、ネットワーク上のデバイスによって実行されるこのようなアクティビティに対して無関心です。 
+
+### <a name="only-unmanaged-devices-are-being-probed"></a>プローブされているのは管理されていないデバイスのみです
+デバイス検出機能は、ネットワーク上の管理されていないデバイスのみを検出して識別するために構築されています。 つまり、Microsoft Defender for Endpoint で既にオンボードされている以前に検出されたデバイスはプローブされません。 
+
+### <a name="you-can-exclude-network-lures-from-active-probing"></a>アクティブなプロビリングからネットワーク ルアーを除外できます
+標準検出では、アクティブなプロブからのデバイスまたは範囲 (サブネット) の除外がサポートされています。 ネットワーク ルアーが展開されている場合は、Device Discovery 設定を使用して、IP アドレスまたはサブネット (IP アドレスの範囲) に基づいて除外を定義できます。 これらの除外を定義すると、これらのデバイスがアクティブにプローブされ、通知されません。 これらのデバイスはパッシブ メソッドのみを使用して検出されます (基本検出モードと同様)。

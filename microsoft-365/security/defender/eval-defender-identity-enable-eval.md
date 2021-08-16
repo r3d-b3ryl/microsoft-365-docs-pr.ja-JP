@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cff8a37999014cc037a0d76e99ff5b9a05ec44d28acab66e3238d0b4576969fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93c3b15dc9ee47c076d4f17a60530d6660dea112
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839008"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247183"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity の評価環境を有効にする
 
@@ -44,25 +44,25 @@ ms.locfileid: "53839008"
 - [手順 3.センサーを使用してコンピューターのイベント ログとプロキシ設定を構成する](#step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor)
 - [手順 4.Defender for Identity で他のコンピューター上のローカル管理者を識別する許可](#step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers)
 
-## <a name="step-1-set-up-the-defender-for-identity-instance"></a>手順 1. Id インスタンスの Defender をセットアップする
+## <a name="step-1-set-up-the-defender-for-identity-instance"></a>手順 1。 Id インスタンスの Defender をセットアップする
 
 Defender for Identity ポータルにサインインしてインスタンスを作成し、このインスタンスを Active Directory 環境に接続します。 
 
 |  |手順     |詳細  |
 |---------|---------|---------|
-|1     | Defender for Identity インスタンスを作成する        | [クイック スタート: Microsoft Defender for Identity インスタンスを作成する](/defender-for-identity/install-step1)        |
-|2     | Connect Defender for Identity インスタンスを Active Directory フォレストに移動する   | [クイック スタート: Connect Active Directory フォレストにアクセスする](/defender-for-identity/install-step2)  |
+|1      | Defender for Identity インスタンスを作成する        | [クイック スタート: Microsoft Defender for Identity インスタンスを作成する](/defender-for-identity/install-step1)        |
+|2      | Connect Defender for Identity インスタンスを Active Directory フォレストに移動する   | [クイック スタート: Connect Active Directory フォレストにアクセスする](/defender-for-identity/install-step2)  |
 | | |
 
-## <a name="step-2-install-and-configure-the-sensor"></a>手順 2. センサーのインストールと構成
+## <a name="step-2-install-and-configure-the-sensor"></a>手順 2。 センサーのインストールと構成
 
 次に、ドメイン コントローラーおよびオンプレミス環境の FS AD Defender for Identity センサーをダウンロード、インストール、および構成します。
 
 |  |手順     |詳細  |
 |---------|---------|---------|
-|1     | 必要な Microsoft Defender for Identity センサーの数を決定します。        | [Microsoft Defender for Identity の容量を計画する](/defender-for-identity/capacity-planning)   |
-|2     | センサー セットアップ パッケージをダウンロードする  |  [クイック スタート: Microsoft Defender for Identity センサーセットアップ パッケージをダウンロードする](/defender-for-identity/install-step3)   |
-|3     | Defender for Identity センサーのインストール    |  [クイック スタート: Microsoft Defender for Identity センサーのインストール](/defender-for-identity/install-step4)       |
+|1      | 必要な Microsoft Defender for Identity センサーの数を決定します。        | [Microsoft Defender for Identity の容量を計画する](/defender-for-identity/capacity-planning)   |
+|2      | センサー セットアップ パッケージをダウンロードする  |  [クイック スタート: Microsoft Defender for Identity センサーセットアップ パッケージをダウンロードする](/defender-for-identity/install-step3)   |
+|3      | Defender for Identity センサーのインストール    |  [クイック スタート: Microsoft Defender for Identity センサーのインストール](/defender-for-identity/install-step4)       |
 |4      | センサーを構成する       |  [Microsoft Defender for Identity センサーの設定を構成する ](/defender-for-identity/install-step5)   |
 |   |         |         |
 
@@ -72,8 +72,8 @@ Defender for Identity ポータルにサインインしてインスタンスを�
 
 |  |手順     |詳細  |
 |---------|---------|---------|
-|1     | イベント Windowsコレクションを構成する         | [イベント コレクションWindows構成する](/defender-for-identity/configure-windows-event-collection)        |
-|2     | インターネット プロキシ設定の構成        | [Microsoft Defender for Identity Sensor のエンドポイント プロキシとインターネット接続の設定を構成する](/defender-for-identity/configure-proxy)        |
+|1      | イベント Windowsコレクションを構成する         | [イベント コレクションWindows構成する](/defender-for-identity/configure-windows-event-collection)        |
+|2      | インターネット プロキシ設定の構成        | [Microsoft Defender for Identity Sensor のエンドポイント プロキシとインターネット接続の設定を構成する](/defender-for-identity/configure-proxy)        |
 |   |         |         |
 
 ## <a name="step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers"></a>手順 4. Defender for Identity で他のコンピューター上のローカル管理者を識別する許可

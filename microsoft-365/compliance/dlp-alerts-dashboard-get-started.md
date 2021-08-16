@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止ポリシーのアラートの定義と管理について説明します。
-ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f8c8474a3bb70c46ab087572bd5c2bd2eb4138dbd51d0d7a43c2d7ca7e1590b3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843868"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895705"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>データ損失防止の警告ダッシュボードを開始する
 
@@ -115,7 +115,7 @@ DLP ポリシーでアラートを構成する方法については、「デー�
 
 DLP アラート管理ダッシュボードを操作するには、次の操作を行います。
 
-1. コンプライアンス センター [Microsoft 365、](https://www.compliance.microsoft.com)データ損失防止 **に移動します**。
+1. [データ [損失Microsoft 365 コンプライアンス センター]](https://www.compliance.microsoft.com)**に移動します**。
 2. [アラート] **タブを** 選択して、DLP アラート ダッシュボードを表示します。
 3. アラートを選択して詳細を表示します。
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1ca9b9795e5f3f3738f235b0fc389ecda7968d61
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: d49fa299bae244c4c870ee0c31e18303e8324abd21d5881980e1206f5af8480e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296577"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862313"
 ---
 # <a name="contact-support-for-bahamas"></a>Bahamas のサポートに問い合わせ
 

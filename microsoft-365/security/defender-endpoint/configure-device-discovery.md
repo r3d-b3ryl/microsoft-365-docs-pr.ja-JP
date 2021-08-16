@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fbce67602006a86c71bf3b802d8b69e2cd367104
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 2c58fb68ec96f802621c3b4c3a25d4174fc6017dd7f2855850fbcd6ea052d82d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664071"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863825"
 ---
 # <a name="configure-device-discovery"></a>デバイス検出の構成
 
@@ -51,7 +51,7 @@ ms.locfileid: "53664071"
 1. [デバイスの検出 **設定 >に移動します**。
 2. オンボード デバイスで使用する検出モードを選択します。
 3. 標準検出を使用する場合は、アクティブなプロブに使用するデバイス (すべてのデバイスまたはデバイス タグを指定してサブセット上) を選択します。
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>デバイスが標準検出でアクティブにプローブされるのを除外する
 

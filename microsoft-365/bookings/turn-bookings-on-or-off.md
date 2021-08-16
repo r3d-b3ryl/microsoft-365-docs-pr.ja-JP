@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Microsoft Bookings にアクセスする方法については、Microsoft 365。
-ms.openlocfilehash: 7b1582a480ac4fdcd5a131febcc59450aa13e299
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bcd7581a456ec570bacae64ca5bd1b96c23eddf95b0aa110530f156d3db6e9a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913768"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861893"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Microsoft Bookings を有効または無効にする
 
@@ -23,9 +23,9 @@ ms.locfileid: "50913768"
 > [!NOTE]
 > これらのセクションで説明する管理コントロールは、21Vianet (中国) Office 365によって運用されているユーザーには使用できません。
 
-## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>管理センターを使用して組織の予約を有効またはMicrosoft 365する
+## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>ユーザー設定を使用して組織の予約を有効またはMicrosoft 365 管理センター
 
-1. 管理者センターにMicrosoft 365グローバル管理者としてサインインします。
+1. グローバル管理者としてMicrosoft 365 管理センターサインインします。
 
 2. 管理センターで、[組織] **** ページに移動   \> **設定、[設定]** **を選択します**。
 
@@ -34,7 +34,7 @@ ms.locfileid: "50913768"
    > [!NOTE]
    > Bookings をオフにすると、Bookings ページの作成と管理を含むサービスへのすべてのアクセスが無効になります。
 
-4. [変更 **の保存] を選択します**。
+4. [**変更を保存**] を選択します。
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>PowerShell を使用して組織の予約を有効またはオフにする
 
@@ -48,7 +48,7 @@ PowerShell コマンドレット[Set-OrganizationConfig](/powershell/module/exch
 
 個々のユーザーの予約を無効にできます。
 
-1. 管理センターに移動Microsoft 365、[ユーザー] [アクティブな **ユーザー]** \> **を選択します**。
+1. [ユーザー] に移動Microsoft 365 管理センター、[ユーザー] [アクティブユーザー **]** \> **を選択します**。
 
 1. 目的のユーザーを選択し、[ライセンスとアプリ **] を選択します**。
 
@@ -56,17 +56,17 @@ PowerShell コマンドレット[Set-OrganizationConfig](/powershell/module/exch
 
 ## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>空き時間情報を共有する前にスタッフの承認を要求する
 
-管理者は、予約ページを通じて予約可能になる前に、利用可能な情報を共有する前に、組織内の従業員にオプトインを要求できます。 この設定は、[予約] の下 **Microsoft 365管理センター** \> **設定設定** \> **使用できます**。
+管理者は、予約ページを通じて予約可能になる前に、利用可能な情報を共有する前に、組織内の従業員にオプトインを要求できます。 この設定は、[予約] の [Microsoft 365 管理センター] の \> **設定設定** \> **使用できます**。
 
 この設定を有効にすると、予約カレンダーにスタッフとして追加された従業員は、受信した電子メール通知に [承認/拒否] リンクを見つける。
 
-この機能は、世界中の顧客に徐々にMicrosoft 365されています。 管理センターでこのオプションが表示Microsoft 365、すぐに確認してください。
+この機能は、世界中の顧客に徐々にMicrosoft 365されています。 このオプションが [インストール] ページに表示Microsoft 365 管理センターすぐに確認してください。
 
 ## <a name="block-social-sharing-options"></a>ソーシャル共有オプションをブロックする
 
-管理者は、予約ページをソーシャル ネットワーク上で共有する方法を制御できます。 この設定は、[予約] の下 **Microsoft 365管理センター** \> **設定設定** \> **使用できます**。
+管理者は、予約ページをソーシャル ネットワーク上で共有する方法を制御できます。 この設定は、[予約] の [Microsoft 365 管理センター] の \> **設定設定** \> **使用できます**。
 
-この機能は、世界中の顧客に徐々にMicrosoft 365されています。 管理センターでこのオプションが表示Microsoft 365、すぐに確認してください。
+この機能は、世界中の顧客に徐々にMicrosoft 365されています。 このオプションが [インストール] ページに表示Microsoft 365 管理センターすぐに確認してください。
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>選択したユーザーにのみ予約カレンダーの作成を許可する
 
@@ -105,6 +105,6 @@ PowerShell を使用して次のコマンドを実行Exchange Onlineがありま
 
 OWA メールボックス ポリシーの詳細については、次のトピックを参照してください。
 
-- [Web メールボックス ポリシー Outlookポリシーに対するポリシーを作成Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [メールボックス ポリシー Outlook on the web作成するExchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
 
-- [サーバー内のメールボックスOutlookの Web メールボックス ポリシーに対してメールボックスを適用または削除Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [メールボックス内のメールボックスにOutlook on the webメールボックス ポリシーを適用または削除Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)

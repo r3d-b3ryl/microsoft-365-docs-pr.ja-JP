@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 機能の制限やメールボックスの配置など、Exchange Onlineの複数地域機能について説明します。
-ms.openlocfilehash: c7c7699906b92e09f88f59bb9d34d1c3b2c36135
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 1a6d5ff5dfe6072266a707e7263ae673d6605eb4f7e531bb8a62ebd60606bb27
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229805"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864197"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online の Multi-Geo 機能
 

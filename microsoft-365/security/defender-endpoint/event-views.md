@@ -8,18 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: accebb69977600950b2c88b35f9223db1379f56cb6e8e44179b503ea9748f03d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7752c5af144ca5b02f05bbdd6632df808cf2f63c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807015"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257656"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
@@ -59,8 +59,8 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 3. [アクション **の**  >  **インポート] [カスタム ビュー...] を選択します。**
 
-  > [!div class="mx-imgBorder"]
-  > ![[Even ビューアー] ウィンドウの左側にあるカスタム ビューのインポートを強調表示するアニメーション](images/events-import.gif)
+   > [!div class="mx-imgBorder"]
+   > ![[Even ビューアー] ウィンドウの左側にあるカスタム ビューのインポートを強調表示するアニメーション](images/events-import.gif)
 
 4. 必要なカスタム ビューの XML ファイルを抽出した場所に移動し、選択します。
 
@@ -74,14 +74,14 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 2. 左側のパネルの [アクション] で **、[** カスタム ビューの **作成]を選択します。**
 
-  > [!div class="mx-imgBorder"]
-  > ![イベント ビューアー ウィンドウでカスタム ビューの作成オプションを強調表示するアニメーション](images/events-create.gif)
+   > [!div class="mx-imgBorder"]
+   > ![イベント ビューアー ウィンドウでカスタム ビューの作成オプションを強調表示するアニメーション](images/events-create.gif)
 
 3. [XML] タブに移動し、[クエリの手動編集 **] を選択します**。 XML オプションを使用すると、[フィルター] タブを使用してクエリを編集できないという警告が表示されます。 **[はい]** を選択します。
 
 4. イベントをフィルター処理する機能の XML コードを XML セクションに貼り付けます。
 
-5. **[OK]** をクリックします。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
+5. **[OK]** を選択します。 フィルターの名前を指定します。 これにより、その機能に関連するイベントのみを表示するためにフィルター処理するカスタム ビューが作成されます。
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻撃表面の縮小ルール イベントの XML
 
@@ -148,42 +148,47 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
    ![イベント ビューアーを使用したアニメーションの表示](images/event-viewer.gif)
 
-特徴 | プロバイダー/ソース | イベント ID | 説明
-:-|:-|:-:|:-
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 1 | ACG の監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 2 | ACG の実施
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 3 | [Do not allow child processes] (子プロセスを許可しない) 監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 4  | [Do not allow child processes] (子プロセスを許可しない) ブロック
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 5  | [Block low integrity images] (整合性が低いイメージのブロック) 監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 6  | [Block low integrity images] (整合性が低いイメージのブロック) ブロック
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 7  | [Block remote images] (リモート イメージのブロック) 監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 8  | [Block remote images] (リモート イメージのブロック) ブロック
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 9  | [Disable win32k system calls] (win32k システム呼び出しの無効化) 監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 10  | [Disable win32k system calls] (win32k システム呼び出しの無効化) ブロック
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 11 | [Code integrity guard] (コードの整合性の保護) 監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 12  | [Code integrity guard] (コードの整合性の保護) ブロック
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 13 | EAF の監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 14  | EAF の実施
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 15 | EAF+ の監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 16  | EAF+ の実施
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 17  | IAF の監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 18  | IAF の実施
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 19 | ROP StackPivot の監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 20 | ROP StackPivot の実施
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) |  21 | ROP CallerCheck の監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 22 | ROP CallerCheck の実施
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 23 | ROP SimExec の監査
-エクスプロイト保護 | Security-Mitigations (カーネル モード/ユーザー モード) | 24 | ROP SimExec の実施
-エクスプロイト保護 | WER-Diagnostics | 5  | CFG のブロック
-エクスプロイト保護 | Win32K (運用) | 260 | 信頼されていないフォント
-ネットワーク保護 | Windows Defender (運用) | 5007 | 設定が変更された場合のイベント
-ネットワーク保護 | Windows Defender (運用) | 1125 | 監査モードでネットワーク保護が発生した場合のイベント
-ネットワーク保護 | Windows Defender (運用) | 1126 | ブロック モードでネットワーク保護が発生した場合のイベント
-フォルダー アクセスの制御 | Windows Defender (運用) | 5007 | 設定が変更された場合のイベント
-フォルダー アクセスの制御 | Windows Defender (運用) | 1124 | 監査された制御フォルダー アクセス イベント
-フォルダー アクセスの制御 | Windows Defender (運用) | 1123 | ブロックされたフォルダー アクセスイベントの制御
-フォルダー アクセスの制御 | Windows Defender (運用) | 1127 | ブロックされたフォルダー アクセスのセクター書き込みブロック イベント
-フォルダー アクセスの制御 | Windows Defender (運用) | 1128 | 監査された制御フォルダー アクセス セクター書き込みブロック イベント
-攻撃面の縮小 | Windows Defender (運用) | 5007 | 設定が変更された場合のイベント
-攻撃面の縮小 | Windows Defender (運用) | 1122 | 監査モードでルールが発生した場合のイベント
-攻撃面の縮小 | Windows Defender (運用) | 1121 | ブロック モードでルールが発生した場合のイベント
+<br>
+
+****
+
+|機能|プロバイダー/ソース|イベント ID|説明|
+|---|---|:---:|---|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|1 |ACG の監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|2 |ACG の実施|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|3 |[Do not allow child processes] (子プロセスを許可しない) 監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|4 |[Do not allow child processes] (子プロセスを許可しない) ブロック|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|5 |[Block low integrity images] (整合性が低いイメージのブロック) 監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|6 |[Block low integrity images] (整合性が低いイメージのブロック) ブロック|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|7 |[Block remote images] (リモート イメージのブロック) 監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|8 |[Block remote images] (リモート イメージのブロック) ブロック|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|9 |[Disable win32k system calls] (win32k システム呼び出しの無効化) 監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|10|[Disable win32k system calls] (win32k システム呼び出しの無効化) ブロック|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|11 |[Code integrity guard] (コードの整合性の保護) 監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|12 |[Code integrity guard] (コードの整合性の保護) ブロック|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|13 |EAF の監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|14 |EAF の実施|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|15 |EAF+ の監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|16 |EAF+ の実施|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|17 |IAF の監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|18 |IAF の実施|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|19|ROP StackPivot の監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|20|ROP StackPivot の実施|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)| 21|ROP CallerCheck の監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|22|ROP CallerCheck の実施|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|23|ROP SimExec の監査|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|24|ROP SimExec の実施|
+|エクスプロイト保護|WER-Diagnostics|5 |CFG のブロック|
+|エクスプロイト保護|Win32K (運用)|260|信頼されていないフォント|
+|ネットワーク保護|Windows Defender (運用)|5007|設定が変更された場合のイベント|
+|ネットワーク保護|Windows Defender (運用)|1125|監査モードでネットワーク保護が発生した場合のイベント|
+|ネットワーク保護|Windows Defender (運用)|1126|ブロック モードでネットワーク保護が発生した場合のイベント|
+|フォルダー アクセスの制御|Windows Defender (運用)|5007|設定が変更された場合のイベント|
+|フォルダー アクセスの制御|Windows Defender (運用)|1124|監査された制御フォルダー アクセス イベント|
+|フォルダー アクセスの制御|Windows Defender (運用)|1123|ブロックされたフォルダー アクセスイベントの制御|
+|フォルダー アクセスの制御|Windows Defender (運用)|1127|ブロックされたフォルダー アクセスのセクター書き込みブロック イベント|
+|フォルダー アクセスの制御|Windows Defender (運用)|1128|監査された制御フォルダー アクセス セクター書き込みブロック イベント|
+|攻撃面の縮小|Windows Defender (運用)|5007|設定が変更された場合のイベント|
+|攻撃面の縮小|Windows Defender (運用)|1122|監査モードでルールが発生した場合のイベント|
+|攻撃面の縮小|Windows Defender (運用)|1121|ブロック モードでルールが発生した場合のイベント|
+|

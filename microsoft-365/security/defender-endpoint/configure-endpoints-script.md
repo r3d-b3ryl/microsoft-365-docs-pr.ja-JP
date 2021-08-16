@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1dbed6f157a9ec9aec7d8dc47061063f81f8330f14065e8ca4d3514740ba6273
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 58a2e8adef517d79d270795002b92f67bb7de982
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818823"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257449"
 ---
 # <a name="onboard-the-windows-10-devices-using-a-local-script"></a>ローカル スクリプトをWindows 10デバイスにオンボードする
 
@@ -98,6 +98,8 @@ Value: 0 or 1
 
 レジストリ キーが存在しない場合の既定値は 1 です。
 
+## <a name="run-a-detection-test-to-verify-onboarding"></a>検出テストを実行してオンボーディングを確認する
+デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。
 
 ## <a name="offboard-devices-using-a-local-script"></a>ローカル スクリプトを使用してデバイスをオフボードする
 セキュリティ上の理由から、Offboard デバイスに使用されるパッケージは、ダウンロード日から 30 日後に期限切れになります。 デバイスに送信された期限切れのオフボード パッケージは拒否されます。 オフボード パッケージをダウンロードすると、パッケージの有効期限が通知され、パッケージ名にも含まれます。
@@ -145,7 +147,7 @@ Value: 0 or 1
 
 3. デバイスが表示されているのを確認します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)

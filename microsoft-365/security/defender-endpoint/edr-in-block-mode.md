@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 3169cbd5aa834e22a5d354066b01b1da04adafe59bf780da99367da21774e359
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 498b5d78ee67b4eedc3cea2a0580af6876d8d52e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523707"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257314"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードでのエンドポイントEDR応答 (EDR)
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 19465d2d2f077859490c106b9c01f08beb6e3906
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 253d6d48d9fcd38ea56a8ff52154f7c8898b66e735304ed9f871944dc7a04e1f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863837"
 ---
 # <a name="assign-devices-to-a-deployment-group"></a>展開グループへのデバイスの割り当て
 

@@ -19,23 +19,23 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: スマートフォンに管理者用モバイル Microsoft 365をインストールする方法について学習します。
-ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 携帯電話にモバイル アプリをMicrosoft 365 管理する方法について学習します。
+ms.openlocfilehash: 591a5440d3257afad9728b75013737daebad73694322774db19e8eacb0700abb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580704"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861869"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>電話に Microsoft 365管理者モバイル アプリをインストールする
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>スマートフォンにMicrosoft 365 管理モバイル アプリをインストールする
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-管理者モバイル アプリMicrosoft 365使用して、ユーザーの管理、サービスの正常性の監視、その他の管理タスクを携帯電話から実行できます。
+モバイル アプリの Microsoft 365 管理を使用して、ユーザーの管理、サービスの正常性の監視、電話からのその他の管理タスクの実行を行うことができます。
 
 ## <a name="try-it"></a>お試しください!
 
-1. 管理者モバイル Microsoft 365を取得するには、デバイスMicrosoft 365 **アプリ** ストアで管理者を検索してインストールします。
+1. モバイル アプリをMicrosoft 365 管理するには、デバイス **Microsoft 365 管理ストアで** アプリ を検索してインストールします。
 2. グローバル管理者の電子メール アドレスでサインインし、ダッシュボードを表示してサービスの正常性を確認し、ユーザー ライセンスを監視し、メッセージとサービス要求を確認します。
 3. アプリで実行できる一般的なタスクを次に示します。
 

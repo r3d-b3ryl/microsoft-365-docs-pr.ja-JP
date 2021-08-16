@@ -9,20 +9,20 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.date: 03/27/2019
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: c10505dc84b6f05055f7bc4bed2f32a581fe03bd
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d857e3bea343a98c785b2ceed12c77285ddc3bd6
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650873"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257637"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻撃表面の縮小ルールのトラブルシューティング
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3066ccf803d5a2cad907ae7f983f3cafbb41112d
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 62c8fda1276089ba4c9f6e7bd7a0839ddf88256d3c30f8c62f9eb25daadf7b40
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725854"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863218"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -45,6 +45,8 @@ ms.locfileid: "53725854"
 - **セキュリティ管理者**:この役割を持Azure Active Directory [ユーザーは](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)、セキュリティ センターや他のポータルMicrosoft 365サービスでセキュリティ設定を管理できます。
 
 - **セキュリティ オペレーター**-このセキュリティ Azure Active Directory [ロール](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)を持つユーザーは、アラートを管理し、セキュリティ センター内のすべての情報を含む、セキュリティ関連の機能に対するグローバルな読み取り専用Microsoft 365できます。 この役割は、Microsoft Defender for Endpoint で役割ベースのアクセス制御 (RBAC) がオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC が構成されている場合は、Defender **for** Endpoint のセキュリティ設定の管理アクセス許可も必要です。
+
+また、特定のソリューションのデータに適用されるカスタム検出Microsoft 365 Defenderアクセス許可がある場合は管理できます。 たとえば、Microsoft 365 DefenderのOfficeを管理する場合は、テーブルを使用してカスタム検出を作成できますが、テーブルは `Email` 作成 `Identity` できません。  
 
 必要なアクセス許可を管理するには、グローバル **管理者は次の機能を使用** できます。
 

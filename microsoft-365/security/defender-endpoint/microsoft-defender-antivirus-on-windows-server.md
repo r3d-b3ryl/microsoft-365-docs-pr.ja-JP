@@ -14,13 +14,13 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 05/13/2021
-ms.openlocfilehash: d31f60c05e8b07f3230bddf242f58fe1f38595942c9e6d4ea9722c828f319f0c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.date: 08/05/2021
+ms.openlocfilehash: 85e3eea9eb2b19bde7516c91409e73e0747a0523
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845166"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257582"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上の Microsoft Defender ウイルス対策
 
@@ -51,7 +51,7 @@ Microsoft Defender ウイルス対策は、次のエディション/バージョ
 4. [マルウェア対策セキュリティ インテリジェンスを更新します](#update-antimalware-security-intelligence)。
 5. (必要に応じて) [サンプルを送信します](#submit-samples)。
 6. (必要に応じて) [自動除外を構成します](#configure-automatic-exclusions)。
-7. (必要な場合のみ) [Microsoft Defender ウイルス対策 をパッシブ モードに設定します](#need-to-set-microsoft-defender-antivirus-to-passive-mode)。
+7. (必要な場合のみ)サーバー [Windowsパッシブ モードに設定します](#passive-mode-and-windows-server)。
 
 ## <a name="enable-the-user-interface-on-windows-server"></a>Windows Server でユーザー インターフェイスを有効にする
 
@@ -178,13 +178,17 @@ sc query Windefend
 
 詳細については、「[Windows Server 上の Microsoft Defender ウイルス対策で除外を構成する](configure-server-exclusions-microsoft-defender-antivirus.md)」を参照してください。 
 
-## <a name="need-to-set-microsoft-defender-antivirus-to-passive-mode"></a>Microsoft Defender ウイルス対策 をパッシブ モードに設定する必要がありますか?
+## <a name="passive-mode-and-windows-server"></a>パッシブ モードと Windows サーバー
 
 Windows Server 上のプライマリ ウイルス対策ソリューションとして Microsoft 以外のウイルス対策製品を使用している場合は、Microsoft Defender ウイルス対策をパッシブ モードまたは無効モードに設定する必要があります。
 
-- バージョン 1803 以降の Windows Server、または Windows Server 2019 では、Microsoft Defender ウイルス対策をパッシブ モードに設定してください。  
+- バージョン 1803 以降の Windows Server、または Windows Server 2019 では、Microsoft Defender ウイルス対策をパッシブ モードに設定してください。  次のセクションを参照してください。
+   
+   - [レジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定する](#set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key)
+   - [役割と機能の削除ウィザードを使用して Microsoft Defender ウイルス対策を無効にする](#disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard)
+   - [PowerShell を使用して Microsoft Defender ウイルス対策ユーザー インターフェイスをオフにする](#turn-off-the-microsoft-defender-antivirus-user-interface-using-powershell) 
 
-- Windows Server 2016 では、Microsoft Defender ウイルス対策は Microsoft 以外のウイルス対策/マルウェア対策製品と一緒にサポートできません。 このような場合は、Microsoft Defender ウイルス対策を無効モードに設定する必要があります。
+- Windows Server 2016 では、Microsoft Defender ウイルス対策は Microsoft 以外のウイルス対策/マルウェア対策製品と一緒にサポートできません。 このような場合は、Microsoft Defender ウイルス対策を無効モードに設定する必要があります。 「[アンインストールまたは無効化」を参照Microsoft Defender ウイルス対策Windows Server 2016](#uninstalling-or-disabling-microsoft-defender-antivirus-on-windows-server-2016)
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key"></a>レジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定する
 
@@ -212,24 +216,16 @@ Microsoft Defender ウイルス対策 GUI をオフにするには、次の Powe
 Uninstall-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-### <a name="are-you-using-windows-server-2016"></a>Windows Server 2016 を使用していますか?
+### <a name="uninstalling-or-disabling-microsoft-defender-antivirus-on-windows-server-2016"></a>アンインストールまたは無効にする方法は、Microsoft Defender ウイルス対策でWindows Server 2016
 
-Windows Server 2016 と一緒に Microsoft が提供または開発を行っていないサード パーティのマルウェア対策/ウイルス対策製品を使用している場合は、Microsoft Defender ウイルス対策を無効またはアンインストールする必要があります。 
+Microsoft 以外のマルウェアWindows Server 2016ウイルス対策製品と一緒に使用している場合は、ユーザー設定を無効またはアンインストールするMicrosoft Defender ウイルス対策。 次のいずれかの方法を使用できます。
 
-> [!NOTE]
-> Windows セキュリティ アプリをアンインストールすることはできませんが、次の手順でインターフェイスを無効にできます。
-
-次の PowerShell コマンドレットで、Windows Server 2016 上の Microsoft Defender ウイルス対策をアンインストールできます。
-
-```PowerShell
-Uninstall-WindowsFeature -Name Windows-Defender
-```
-
-Windows Server 2016 で Microsoft Defender ウイルス対策を無効にするには、次の PowerShell コマンドレットを使用します。
-
-```PowerShell
-Set-MpPreference -DisableRealtimeMonitoring $true
-```
+| プロシージャ  | 説明  |
+|---------|---------|
+| グループ ポリシー Microsoft Defender ウイルス対策使用して無効にする     | ローカル グループ ポリシー エディターで、[グループポリシー] に移動し、[Windows Defenderをオフにする]**をWindows Defender ウイルス対策。**        |
+| レジストリ Microsoft Defender ウイルス対策を使用して無効にする     | [DisableAntiSpyware レジストリ](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)キーを使用するには、に移動し、という DWORD エントリを設定または `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` 作成します `DisableAntiSpyware` 。 その値を `1` (レジストリ キーの値を true に設定する) に *設定します*。         |
+| PowerShell をMicrosoft Defender ウイルス対策する方法を無効にする | 次の PowerShell コマンドレットを使用します。 `Set-MpPreference -DisableRealtimeMonitoring $true` |
+| PowerShell をMicrosoft Defender ウイルス対策をアンインストールする | 次の PowerShell コマンドレットを使用します。 `Uninstall-WindowsFeature -Name Windows-Defender` |
 
 ## <a name="see-also"></a>関連項目
 

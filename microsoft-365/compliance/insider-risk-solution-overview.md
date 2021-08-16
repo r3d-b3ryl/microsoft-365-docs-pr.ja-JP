@@ -1,5 +1,5 @@
 ---
-title: Insider リスク ソリューション
+title: インサイダー リスク ソリューション
 description: インサイダー リスク ソリューションを使用して、組織内のリスクを最小限に抑える方法についてMicrosoft 365。
 keywords: Microsoft 365、インサイダー リスク、コンプライアンス
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: c40c30c44e5b8010112adc11d7faee49563761bf
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6967931f2c6a9382825218f36cdf6480d39b9ec3070d4c5f659ec881f1bd6c6e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838272"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879835"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 のインサイダー リスク ソリューション
 
@@ -64,7 +64,7 @@ Microsoft 365リスク防止機能は、インサイダー リスク製品とソ
 - Microsoft 365 G5 コンプライアンス アドオンが含まれている Microsoft 365 G5 サブスクリプション。
 - Microsoft 365 G5 インサイダー リスク管理アドオンが含まれている Microsoft 365 G5 サブスクリプション。
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
-- Office 365 A5サブスクリプション (有料版または試用版)
+- Office 365 A5 サブスクリプション (有料または試用版)
 - Office 365 Advanced Compliance アドオンが含まれている Office 365 Enterprise E3 サブスクリプション (新しいサブスクリプションでは利用できなくなりました)
 
 ### <a name="insider-risk-management"></a>インサイダー リスクの管理
@@ -82,7 +82,7 @@ Insider リスク管理は、次のサブスクリプションで利用できま
 - Microsoft 365 G5 サブスクリプション (有料または試用版)
 - Microsoft 365 G3 + G5 コンプライアンス Microsoft 365アドオン
 - Microsoft 365 G3 + G5 Insider Risk Management アドオンMicrosoft 365 G5 Insider Risk Management アドオン
-- Office 365E3 サブスクリプション + Enterprise モビリティとセキュリティ E3 + Microsoft 365 E5 Compliance アドオン
+- Office 365 E3サブスクリプション + Enterprise モビリティとセキュリティ E3 + Microsoft 365 E5 Compliance アドオン
 
 ### <a name="information-barriers"></a>情報バリア
 
@@ -93,7 +93,7 @@ Insider リスク管理は、次のサブスクリプションで利用できま
 - Microsoft 365 E5 サブスクリプション (有料または試用版)
 - Microsoft 365 A5 サブスクリプション (有料または試用版)
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
-- Office 365 A5サブスクリプション (有料版または試用版)
+- Office 365 A5 サブスクリプション (有料または試用版)
 - Office 365 Advanced Complianceアドオン (新しいサブスクリプションでは使用できなくなりました)
 - Microsoft 365 E5 コンプライアンス アドオンが含まれている Microsoft 365 E3 サブスクリプション。
 - Microsoft 365 E5 インサイダー リスク管理アドオンが含まれている Microsoft 365 E3 サブスクリプション。
@@ -109,11 +109,11 @@ Insider リスク管理は、次のサブスクリプションで利用できま
 - Microsoft 365 E5 サブスクリプション (有料または試用版)
 - Microsoft 365 A5 サブスクリプション (有料または試用版)
 - Office 365 Enterprise E5 サブスクリプション (有料または試用版)
-- Office 365 A5サブスクリプション (有料版または試用版)
+- Office 365 A5 サブスクリプション (有料または試用版)
 - Microsoft 365 E5 コンプライアンス アドオンが含まれている Microsoft 365 E3 サブスクリプション。
 - Microsoft 365 E3 + Microsoft 365 E5情報保護とガバナンス アドオン
 - Microsoft 365 A5 コンプライアンス アドオンが含まれている Microsoft 365 A3 サブスクリプション。
-- Microsoft 365A3 サブスクリプション + Microsoft 365 A5 情報保護とガバナンス アドオン
+- Microsoft 365 A3 + Microsoft 365 A5情報保護とガバナンス アドオン
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>インサイダー Microsoft 365ソリューションを展開する
 
@@ -143,7 +143,7 @@ Microsoft 365、組織内のこれらのユーザーに情報を提供し、ト�
 | ソリューション/エリア | リソース |
 |:------------------|:--------------|
 | Microsoft 365 で insider リスクを管理する |[完全な学習パス](/learn/paths/m365-compliance-insider) <br> この学習パスには、コミュニケーションコンプライアンス、インサイダーリスク管理、情報障壁、特権アクセス管理のための個々のソリューション モジュールが含まれます。 すべてのモジュールを完了するには、この学習パスを選択します。 |
-| コミュニケーション コンプライアンス | [学習モジュール: コミュニケーション コンプライアンスを準備する Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> このモジュールは、通信コンプライアンスを使用して行動規範ポリシー違反を特定して修復する方法、通信コンプライアンス ポリシーを作成する前に必要な前提条件をカバーする方法、および通信コンプライアンスにおける組み込みの定義済みポリシー テンプレートの種類について説明します。 |
-| インサイダー リスクの管理 | [ラーニング モジュール: インサイダー リスク管理 (Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> このモジュールは、Microsoft 365 のインサイダー リスク管理が組織内の内部リスクの防止、検出、および格納に役立つ方法、組み込みの定義済みポリシー テンプレートの種類、インサイダー リスク ポリシーを作成する前に必要な基本的な前提条件を理解する方法、およびインサイダー リスク管理ケースで実行できるアクションの種類について説明します。 |
-| 情報バリア | [学習モジュール: 情報バリアを計画する](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> このモジュールは、組織が関連する業界標準および規制への準拠を維持するのに役立つ情報バリア ポリシー、情報障壁が適用される状況の種類、情報バリア ポリシーの作成プロセスの説明、および情報バリアの実施後の予期しない問題のトラブルシューティング方法を説明する方法を説明するのに役立ちます。 |
-| 特権アクセス管理 | [学習モジュール: 特権アクセス管理の実装](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> このモジュールは、特権アクセス管理と特権 ID 管理の違いを理解し、特権アクセス管理プロセス フローを理解し、特権アクセス管理を構成および有効にする方法の基本を理解するのに役立ちます。 |
+| コミュニケーション コンプライアンス | [ラーニングモジュール: 通信コンプライアンスを準備Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> このモジュールは、通信コンプライアンスを使用して行動規範ポリシー違反を特定して修復する方法、通信コンプライアンス ポリシーを作成する前に必要な前提条件をカバーする方法、および通信コンプライアンスにおける組み込みの定義済みポリシー テンプレートの種類について説明します。 |
+| インサイダー リスクの管理 | [ラーニングモジュール: インサイダー リスク管理 (Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> このモジュールは、Microsoft 365 のインサイダー リスク管理が組織内の内部リスクの防止、検出、および格納に役立つ方法、組み込みの定義済みポリシー テンプレートの種類、インサイダー リスク ポリシーを作成する前に必要な基本的な前提条件を理解する方法、およびインサイダー リスク管理ケースで実行できるアクションの種類について説明します。 |
+| 情報バリア | [ラーニングモジュール: 情報バリアを計画する](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> このモジュールは、組織が関連する業界標準および規制への準拠を維持するのに役立つ情報バリア ポリシー、情報障壁が適用される状況の種類、情報バリア ポリシーの作成プロセスの説明、および情報バリアの実施後の予期しない問題のトラブルシューティング方法を説明する方法を説明するのに役立ちます。 |
+| 特権アクセス管理 | [ラーニングモジュール: 特権アクセス管理の実装](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> このモジュールは、特権アクセス管理と特権 ID 管理の違いを理解し、特権アクセス管理プロセス フローを理解し、特権アクセス管理を構成および有効にする方法の基本を理解するのに役立ちます。 |

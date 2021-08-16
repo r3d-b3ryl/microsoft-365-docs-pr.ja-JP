@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: ユーザーとオンプレミスの Active Directory の間Microsoft 365同期を設定する方法について学習します。
-ms.openlocfilehash: 14b44523c0a560a71ed8dc9182f677f2ebc0b865
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 53a64b2fdf2ff16f024425f516a5752b7788fadcabec94da772ace32ed9cdc0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926528"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904457"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>ユーザーのディレクトリ同期をMicrosoft 365
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365は、Azure Active Directory (Azure AD) テナントを使用して、クラウドベースのリソースにアクセスするための認証とアクセス許可の ID を格納および管理します。 
 
@@ -87,7 +87,7 @@ Azure [Azure Active Directory Connect](/azure/active-directory/hybrid/how-to-con
 
 次の手順を実行します。
 
-1. 管理センターのMicrosoft 365 [サインインし](https://admin.microsoft.com)、 https://admin.microsoft.com) 左側のナビゲーションで [**ユーザー** \> **のアクティブユーザー** ] を選択します。
+1. [ユーザー] ウィンドウに [サインインMicrosoft 365 管理センター](https://admin.microsoft.com)し https://admin.microsoft.com) 、左側のナビゲーションで [**ユーザー** \> **のアクティブユーザー** ] を選択します。
 2. [アクティブ ユーザー **] ページで** 、[その他 ( **3** つのドット) ディレクトリ同期] \> **を選択します**。
   
 3. [準備 **Azure Active Directoryページで**、[ダウンロード センターに移動] を選択して **、[Azure AD Connectツール**] リンクを取得して開始します。 

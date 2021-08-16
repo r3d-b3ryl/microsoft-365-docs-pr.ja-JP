@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからサードパーティ のデータを、ユーザーのメールボックスにインポートするMicrosoft 365します。
-ms.openlocfilehash: 5e8523e9c91ce49734d1aaddce6aade455062a67945be55433c4be13d163cf2b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cdb1b92d971d4c5c179717b38f2106ad54dc4686
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851910"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257207"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>サードパーティのデータをアーカイブMicrosoft 365
 
@@ -117,6 +117,7 @@ TeleMessage データ コネクタは、米国政府機関クラウドGCC環境�
 |[Bell ネットワーク](archive-bell-network-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[エンタープライズ番号](archive-enterprise-number-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[O2 ネットワーク](archive-o2-network-data.md)     |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[ロジャーズ ネットワーク](archive-rogers-network-archiver-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Signal](archive-signal-archiver-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[テレグラム](archive-telegram-archiver-data.md)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[TELUS ネットワーク](archive-telus-network-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
@@ -146,10 +147,11 @@ Microsoft 365 でサード パーティ製のデータをアーカイブする�
 |[Quip](archive-17a-4-quip-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Refinitiv Eikon Messenger](archive-17a-4-refinitiv-messenger-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[ServiceNow](archive-17a-4-servicenow-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+[Skype for Business Server](archive-17a-4-skype-for-business-server-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[余裕期間](archive-17a-4-slack-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[SQL](archive-17a-4-sql-database-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 |[Symphony](archive-17a-4-symphony-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
-|[拡大](archive-17a-4-zoom-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
+|[Zoom](archive-17a-4-zoom-data.md)    |![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)||
 ||||||||
 
 ### <a name="celltrust-data-connectors"></a>CellTrust データ コネクタ
@@ -191,7 +193,7 @@ Microsoft 365 でサード パーティのデータをアーカイブする前�
 
 この[ページの](records-management.md)レコード管理機能Microsoft 365、サード パーティのデータをレコードとして宣言できます。 これは、メールボックス内のサードパーティ データをレコードとしてマークするアイテム保持ラベルを適用するユーザーが手動で行うことができます。 または、サードパーティ データ内の機密情報、キーワード、またはコンテンツ タイプを識別して、保持ラベルを自動適用することもできます。
 
-### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
+### <a name="communication-compliance"></a>通信コンプライアンス
 
 コミュニケーション コンプライアンスを [使用して](communication-compliance.md) 、サード パーティのデータを調べて、組織のデータ標準に準拠しているか確認できます。 これを行うには、組織内の不適切なメッセージを検出、キャプチャ、および修復アクションを実行します。 たとえば、インポートするサード パーティのデータを監視して、不快な言語、機密情報、規制遵守を確認できます。
 
@@ -255,17 +257,17 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 |TeleMessage データ コネクタ  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Android Archiver | はい | いいえ | いいえ |
-|AT&T SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Bell SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|Enterprise Number Archiver | はい | いいえ | いいえ |
-|O2 SMS と Voice Network Archiver | はい         | いいえ | いいえ |
-|Signal Archiver | はい | いいえ | いいえ |
-|Telegram Archiver | はい | いいえ | いいえ |
-|TELUS SMS ネットワーク アーカイブ | はい | いいえ | いいえ |
-|Verizon SMS/MMS Network Archiver | はい | いいえ | いいえ |
-|WeChat Archiver | はい | いいえ | いいえ |
-|WhatsApp Archiver | はい | いいえ | いいえ |
+|Android Archiver | はい | 不要 | 不要 |
+|AT&T SMS/MMS Network Archiver | はい | 不要 | 不要 |
+|Bell SMS/MMS Network Archiver | はい | 不要 | 不要 |
+|Enterprise Number Archiver | はい | 不要 | 不要 |
+|O2 SMS と Voice Network Archiver | はい         | 不要 | 不要 |
+|Signal Archiver | はい | 不要 | 不要 |
+|Telegram Archiver | はい | 不要 | 不要 |
+|TELUS SMS ネットワーク アーカイブ | はい | 不要 | 不要 |
+|Verizon SMS/MMS Network Archiver | はい | 不要 | 不要 |
+|WeChat Archiver | はい | 不要 | 不要 |
+|WhatsApp Archiver | はい | 不要 | 不要 |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Microsoft パートナーと作業してサード パーティのデータをアーカイブする

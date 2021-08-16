@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 会社のファイルを会社のファイルに移動するSharePoint。
-ms.openlocfilehash: e7a778fea9d358d2c5b3e7944edfbb8b2b7fb0f1
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 965eac5570a665109b39ecd700b3208f4cebc339db2e88add59a97078ae4c0b4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580608"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861833"
 ---
 # <a name="move-files-to-sharepoint"></a>ファイルをファイルに移動SharePoint
 

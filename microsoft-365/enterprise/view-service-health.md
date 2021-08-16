@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: アクティブ サービスが中断していないかどうかを確認するため、サポートに連絡する前に、Microsoft 365 サービスの正常性状態を表示します。
-ms.openlocfilehash: 2b856b7851f569324d1cccabb6b2da2d098b2fbe
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 85488297911613c7664890f3d7fe1be5ecf507aa253cd08c803cdba55969da75
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543451"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864237"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Microsoft 365 サービス正常性を確認する方法
 
@@ -102,7 +102,7 @@ Microsoft 365 サービスで問題が発生し、それが [**サービス正�
 
 ### <a name="translate-service-health-details"></a>サービス正常性の詳細を翻訳する
 
-機械翻訳を利用し、ユーザーの優先言語でメッセージを自動表示しています。言語の設定方法については、「[メッセージ センターの投稿の言語の翻訳](/microsoft-365/admin/manage/language-translation-for-message-center-posts)」を参照してください。
+機械翻訳を利用し、自動的にお客様のご希望の言語でメッセージを表示します。 言語設定する方法の詳細については、[サービス正常性ダッシュボードの言語翻訳](lang-service-health.md) に関する記事を参照してください。
 
 ### <a name="definitions"></a>定義
 

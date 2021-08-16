@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: aadda22c397839c39e95732b02dcc9d6e681e82f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 42850b4da918fddd91c34a6e62ec1ea761efcdeb1c2daa73136266295096a958
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651281"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853909"
 ---
 # <a name="get-recommendation-by-id"></a>ID による推奨事項の取得
 
@@ -108,7 +108,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&脆弱性のセキュリティに関する推奨事項](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

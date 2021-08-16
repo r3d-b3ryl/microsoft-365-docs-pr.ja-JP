@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: この記事では、Azure ExpressRoute ルーティング要件、回線、およびルーティング ドメインについて説明します。Office 365。
-ms.openlocfilehash: b27e3cfe41af8cf5e444f1221f1cee2e3bbf5826
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: e36730f457f17ca6e789bd0ba06998824a6c590a45c53f9050f497c762f5985b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194795"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904495"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのルーティング
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Azure ExpressRoute を使用して Office 365 へのルーティング トラフィックを適切に理解するには、ExpressRoute ルーティングのコア要件と[ExpressRoute](/azure/expressroute/expressroute-routing)回線とルーティング ドメインをしっかりと把握する[必要があります](/azure/expressroute/expressroute-circuit-peerings)。 これらは、お客様が信頼する ExpressRoute を使用Office 365を示しています。
   
@@ -227,7 +227,7 @@ ExpressRoute を使用した選択的ルーティングは、テスト、ユー�
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   

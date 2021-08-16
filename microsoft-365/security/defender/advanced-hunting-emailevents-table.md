@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: be0239e4d414dd82b6f37866e1e7980f6681dd41ae222a7796d0ebd421372a61
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 76f0478167c020d470fec32f2f2020a9263b0b44
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799516"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247199"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -41,6 +41,9 @@ ms.locfileid: "53799516"
 > テーブルでサポートされるイベントの種類 (値) の詳細については、セキュリティ センターで使用できる組み込みのスキーマ参照 `ActionType` を使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
+
+> [!IMPORTANT]
+> 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
@@ -78,8 +81,9 @@ ms.locfileid: "53799516"
 | `UserLevelAction` | string | 受信者によって定義されたメールボックス ポリシーとの一致に応答して電子メールに対して実行されるアクション |
 | `UserLevelPolicy` | string | 電子メールで実行されたアクションをトリガーしたエンド ユーザー メールボックス ポリシー |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |
+| `AuthenticationDetails` | string | DMARC、DKIM、SPF、複数の認証の種類の組み合わせ (CompAuth) のような電子メール認証プロトコルによる合格または失敗の評決の一覧 |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)

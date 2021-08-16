@@ -1,7 +1,6 @@
 ---
-title: 実稼働環境で Microsoft Defender の評価Office 365を有効にし、評価、ライセンス認証をアクティブ化する
+title: 実稼働環境で Microsoft Defender の評価Office 365を有効にする
 description: Microsoft Defender for Office365 評価をアクティブ化する手順、試用版ライセンス、MX レコード処理、&ドメインと受信接続の監査を実行します。
-keywords: Microsoft 365 Defender試し、Microsoft 365 Defender を試し、Microsoft 365 Defender、Microsoft 365 Defender 評価ラボ、Microsoft 365 Defender パイロット、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度なハンティングを評価する
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: eebf6b6a07ed051a59ce9563497be25367ad3878
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3a771c463c5f41aa9c74a8fb318b248f92bfb0ca159e84714c53ff43d378dc5f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544519"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863092"
 ---
 # <a name="enable-the-evaluation-environment"></a>評価環境を有効にする
 

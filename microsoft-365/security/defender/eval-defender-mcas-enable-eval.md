@@ -1,7 +1,6 @@
 ---
 title: ユーザーの評価環境を有効Microsoft Cloud App Security
 description: Microsoft Defender 内の MCAS のアーキテクチャについて説明し、Office 365製品間の相互作用をMicrosoft 365 Defenderします。
-keywords: Microsoft 365 Defender試し、Microsoft 365 Defender を試し、Microsoft 365 Defender、Microsoft 365 Defender 評価ラボ、Microsoft 365 Defender パイロット、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度なハンティングを評価する
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6ada9613f852e085158b7002cbbb9a9928d36d58
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 761a8fcb3c6f7efe82c542001dac1f62eb365f1473268df0866bb5dfae0ed302
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863194"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>ユーザーの評価環境を有効Microsoft Cloud App Security
 

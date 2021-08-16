@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: afe1b37d80a074c0011a3d1ea58c3b15fab96ef6d4f1701f11bd1ab73dc06979
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 553f9502803bb10fbc6d22a60c2b1d35d877380f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810704"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257250"
 ---
 # <a name="configure-your-event-hub"></a>イベント ハブを構成する
 
@@ -73,7 +73,7 @@ ms.locfileid: "53810704"
 1. イベント ハブ名前空間を作成します。
 
     [Event **Hubs \> Add]** に移動し、予想される負荷に適した価格レベル、スループット 単位、自動インフレート (標準の価格と機能が必要) を選択します。  
-    詳細については[、「Pricing - Event Hubs Microsoft Azure \| ](https://azure.microsoft.com/en-us/pricing/details/event-hubs/)
+    詳細については[、「Pricing - Event Hubs Microsoft Azure \| ](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     >[!NOTE]
     > 既存のイベント ハブを使用できますが、スループットとスケーリングは名前空間レベルで設定されます。そのため、イベント ハブは、その名前空間に配置する必要があります。
@@ -105,7 +105,7 @@ ms.locfileid: "53810704"
 >[!NOTE]
 > イベント ハブ クラスターの一部ではないイベントハブ名前空間を使用している場合は、Azure のイベント ハブ名前空間あたり 10 イベント ハブの制限により、定義した各エクスポート 設定 でエクスポートするイベント の種類 (テーブル) を最大 10 つまで選択できます。
 
-次に例を示します。
+以下に例を示します。
 
 ![イベント ハブの例のイメージ](../../media/005c1f6c10c34420d387f594987f9ffe.png)
 

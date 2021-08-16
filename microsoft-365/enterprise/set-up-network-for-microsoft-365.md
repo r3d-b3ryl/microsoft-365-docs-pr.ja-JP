@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: ネットワーク接続の概要やエンドポイントの一覧など、Microsoft 365の設定に役立つ情報を含む記事へのリンクを検索します。
-ms.openlocfilehash: f0e0499c70745d31399240372c190758285408aa
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2feed0b600a107158b2ae32734169ae9d68294228d7eb449170dfe8a92511def
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691678"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904433"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>ネットワークをセットアップMicrosoft 365
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 オンボーディングの重要なMicrosoft 365は、ネットワークとインターネット接続が最適化されたアクセス用にセットアップされている点です。 グローバルに分散された Software-as-a-Service (SaaS) クラウドにアクセスするためのオンプレミス ネットワークの構成は、オンプレミスデータセンターへのトラフィックと中央インターネット接続用に最適化された従来のネットワークとは異なります。 
 
@@ -40,7 +40,7 @@ ms.locfileid: "46691678"
 次の記事を参照して、接続の概要を確認Microsoft 365。
 
 - [Microsoft 365 ネットワーク接続の概要](microsoft-365-networking-overview.md)
-- [Microsoft 365接続の原則](microsoft-365-network-connectivity-principles.md)
+- [Microsoft 365 ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)
 - [Microsoft 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
 パフォーマンスの向上に関するアドバイスについては、「ネットワークの計画とパフォーマンスの調整」[を参照Microsoft 365。](network-planning-and-performance.md)
@@ -59,7 +59,7 @@ Office 365 のクラウドベース サービスのパフォーマンスを最�
 
 現在、5 つの異なる Office 365 クラウドがあります。この表からそれぞれのクラウドのエンドポイント一覧へ移動できます。
 
-| エンドポイント | 説明 |
+| エンドポイント | Description |
 |:-------|:-----|
 | [世界中のエンドポイント](urls-and-ip-address-ranges.md) | 米国政府機関向けコミュニティ クラウド (GCC) を含む、世界中の Office 365 サブスクリプションのエンドポイント。 |
 | [米国政府の DoD エンドポイント](microsoft-365-u-s-government-dod-endpoints.md) | 米国国防総省 (DoD) のサブスクリプションのエンドポイント。 |

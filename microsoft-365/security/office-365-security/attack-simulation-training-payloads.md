@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法をOffice 365。
 ms.technology: mdo
-ms.openlocfilehash: ecd7b539aa22d2935f96860769b30751022d89ea43151a94222caeec9b309928
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a597fd05c9b975c54518828ebbd2433bc47b835
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810380"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257437"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>攻撃シミュレーショントレーニングのカスタム ペイロードを作成する
 

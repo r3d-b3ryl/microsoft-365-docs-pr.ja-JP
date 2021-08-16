@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: 特定のメールボックスまたはサイト フォルダー内Microsoft 365 コンプライアンス センターを検索する対象となるコレクションを実行するには、フォルダー内のコンテンツ検索を使用します。
-ms.openlocfilehash: 60f0f51c713abf98109362fd57e3950d2ee17ce307b3c16b6483ada69385c2f1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b165e52835165980da3621634ef29247a87490fe
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891789"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257345"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>対象のコレクションにコンテンツ検索を使用する
 
@@ -59,11 +59,11 @@ Microsoft 365 コンプライアンス センター のコンテンツ検索ツ�
 
 - **電子メール アドレスまたはサイト URL**: 保管担当者の電子メール アドレスを入力して、メールボックス フォルダーとフォルダーのExchange一覧を返します。 または、指定したサイトのパスSharePointリストをOneDrive for Businessサイトの URL を入力します。 次に、いくつかの例を示します:
 
-  - **Exchange**: stacig@contoso.onmicrosoft <spam> <spam> .com
+  - **Exchange:**`stacig@contoso.onmicrosoft.com`
 
-  - **SharePoint**: https <span>://</span>contoso.sharepoint.com/sites/marketing
+  - **SharePoint:**`https://contoso.sharepoint.com/sites/marketing`
 
-  - **OneDrive for Business**: https <span>://</span>contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com
+  - **OneDrive for Business:**`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
 - **ユーザー資格情報**: スクリプトは、資格情報を使用して、最新の認証を使用Exchange Online PowerShell またはセキュリティ &コンプライアンス センター PowerShell に接続します。 前に説明したように、このスクリプトを正常に実行するには、適切なアクセス許可を割り当てる必要があります。
 

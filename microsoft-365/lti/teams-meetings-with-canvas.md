@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teams会議を統合する
-ms.openlocfilehash: c3c2692aa44b8e711cfd9e4f1cb321dfba7cd80ae1e9186c95b1931705676016
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: b9507847b569ea999b45c1ea33b336360cc485d5
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834777"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257461"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Canvas でMicrosoft Teams会議を使用する
 

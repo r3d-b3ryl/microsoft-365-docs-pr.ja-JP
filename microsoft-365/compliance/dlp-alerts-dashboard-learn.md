@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: データ損失防止アラートとアラート ダッシュボードについて学習します。
-ms.openlocfilehash: b6fd698e535e006149f6ce3a2a5bc57d0c92c7e2
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 0474c5609fcd979fa8db7e47857c099cbed7be365bb55ee80e507ad3375da660
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760781"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895661"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>データ損失防止の警告ダッシュボードについて
 
@@ -35,7 +35,7 @@ ms.locfileid: "51760781"
 
 ## <a name="workloads"></a>ワークロード
 
-DLP[アラート管理ダッシュボードは](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)、コンプライアンス センター [Microsoft 365、](https://compliance.microsoft.com/)次のワークロードに対する DLP ポリシーのアラートを表示します。
+DLP[アラート管理ダッシュボードは](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)、次[](https://compliance.microsoft.com/)のMicrosoft 365 コンプライアンス センターに DLP ポリシーのアラートを表示します。
 
 - Exchange
 - SharePoint
@@ -60,7 +60,7 @@ DLP ポリシーで構成できるアラートには、2 種類があります�
 
 ### <a name="event-details"></a>イベントの詳細
 
-|プロパティ名  |説明  |イベントの種類  |
+|プロパティ名  |Description  |イベントの種類  |
 |---------|---------|---------|
 |ID |イベントに関連付けられた一意の ID |すべてのイベント |
 |場所 |イベントが検出されたワークロード|すべてのイベント |
@@ -68,14 +68,14 @@ DLP ポリシーで構成できるアラートには、2 種類があります�
 
 ### <a name="impacted-entities"></a>影響を受け取ったエンティティ
 
-|プロパティ名 |説明| イベントの種類|
+|プロパティ名 |Description| イベントの種類|
 |---------|---------|---------|
-|user | ポリシーの一致を引き起こしたアクションを実行したユーザー | すべてのイベント|
+|ユーザー | ポリシーの一致を引き起こしたアクションを実行したユーザー | すべてのイベント|
 |ホスト名 | DLP ポリシーの一致が発生したコンピューターのホスト名 | デバイス イベント|
 |IP アドレス | DLP ポリシーの一致が発生したコンピューターの IP アドレス | デバイス イベント|
 |sha1 |ファイルの SHA-1 ハッシュ | デバイス イベント|
 |sha256 | ファイルの SHA-256 ハッシュ | デバイス イベント|
-|MDATP ID | エンドポイント デバイス MDATP ID|
+|MDATP デバイス ID | エンドポイント デバイス MDATP ID|
 |ファイル サイズ | ファイルのサイズ| SharePoint、OneDrive、デバイス イベント|
 |ファイル パス | DLP ポリシーの一致に関連するアイテムの絶対パス | SharePoint、OneDriveデバイス イベント|
 |電子メールの受信者 |電子メールが DLP ポリシーと一致する機密性の高いアイテムである場合、このフィールドには、その電子メールの受信者が含まれます。| Exchangeイベント|
@@ -90,7 +90,7 @@ DLP ポリシーで構成できるアラートには、2 種類があります�
 
 ### <a name="policy-details"></a>ポリシーの詳細
 
-|プロパティ名 |説明 |イベントの種類 |
+|プロパティ名 |Description |イベントの種類 |
 |---------|---------|---------|
 |DLP ポリシーの一致 |一致する DLP ポリシーの名前 |すべてのイベント|
 |ルールの一致 |一致する DLP ポリシー ルールの名前 |すべてのイベント|
