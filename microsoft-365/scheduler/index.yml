@@ -1,0 +1,32 @@
+### YamlMime:Hub
+title: Scheduler for Microsoft 365
+summary: スケジュール設定を使用して会議をスケジュールMicrosoft 365スケジューラを設定する方法Cortana。
+brand: m365
+metadata:
+  title: Scheduler for Microsoft 365
+  description: スケジュール設定を使用して会議をスケジュールMicrosoft 365スケジューラを設定する方法Cortana。
+  ms.service: exchange-online
+  ms.topic: hub-page
+  author: AshaIyengar21
+  ms.author: v-aiyengar
+  manager: serdars
+  audience: Admin
+  ms.date: 04/23/2021
+additionalContent:
+  sections:
+    - items:
+        - title: Scheduler for Microsoft 365
+          summary: スケジューラの機能Microsoft 365、そのメリットとそのメリットについて説明します。
+          url: scheduler-overview.md
+        - title: 信頼とプライバシー
+          summary: Scheduler for Microsoft 365、信頼とプライバシーが確実に保護される方法について説明します。
+          url: scheduler-trust-privacy.md
+        - title: Scheduler for Microsoft 365 を設定する
+          summary: スケジューラをセットアップするために必要なMicrosoft 365。
+          url: scheduler-setup.md
+        - title: スケジューラを使用してMicrosoft 365
+          summary: スケジューラを使用してユーザーにMicrosoft 365。
+          url: scheduler-using.md
+        - title: スケジューラに関する FAQ
+          summary: スケジューラでよく寄せられる質問の詳細とMicrosoft 365答えについて説明します。
+          url: scheduler-faqs.md

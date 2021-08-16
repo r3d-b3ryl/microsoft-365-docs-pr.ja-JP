@@ -15,12 +15,12 @@ ms.collection:
 description: 管理者は、標準ポリシーと厳密なポリシー設定を、Exchange Online Protection (EOP) と Microsoft Defender の保護機能全体に適用する方法をOffice 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61166c78f31a86882ef0e2dc2a79683aea794040
-ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
+ms.openlocfilehash: cfabb6a33c2d107e4f4822ed57e6e9ff1f8cc718
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53383464"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258440"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender でセキュリティ ポリシーを事前に設定Office 365
 
@@ -99,7 +99,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 3. カスタム セキュリティ ポリシー
 4. 既定のセキュリティ ポリシー
 
-つまり、厳密な保護ポリシーの設定は、既定のポリシーの設定を上書きするカスタム ポリシーの設定を上書きする標準保護ポリシーの設定を上書きします。 
+つまり、厳密な保護ポリシーの設定は、既定のポリシーの設定を上書きするカスタム ポリシーの設定を上書きする標準保護ポリシーの設定を上書きします。
 
 たとえば、標準保護にセキュリティ設定が存在し、管理者がユーザーの標準保護を有効にしている場合、標準保護設定は、カスタム ポリシーまたは既定のポリシー (同じユーザーの場合) の設定に対して構成されている設定の代わりに適用されます。  特定のニーズを満たすために組織内の他のユーザーにカスタム ポリシーを適用する際に、標準または厳密な保護ポリシーのみを適用する組織の一部が所属している場合があります。
 
@@ -121,7 +121,7 @@ EOP 保護は、Microsoft Defender 以外のユーザーに適用して、保護
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>ユーザーに事前Microsoft 365 Defenderポリシーを割り当てるには、このポータルを使用します。
 
-1. [セキュリティ ポリシー Microsoft 365 Defender] ポータルで、[メール &**グループ**&ルールの脅威ポリシー] ページの [事前設定されたセキュリティ ポリシー] セクション \>  \>  \>  \> **に移動します**。
+1. このポータルMicrosoft 365 Defender、[テンプレート ポリシー] セクションの&ルール脅威ポリシー&セキュリティ ポリシーの事前設定] に \>  \>  \> **移動** します。
 
 2. [標準 **保護] または [****厳密な保護] で、[** 編集] を **クリックします**。
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f728e49d742b20cf8434ca83eaf29e7e91b725ee
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7a7b1522046926fb0ec3998564f83fdb3d28cb74
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657029"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258432"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -83,29 +83,43 @@ SPF ではメッセージ エンベロープに情報を追加しますが、DKI
 > DKIM では秘密キーを使用して、暗号化された署名をメッセージ ヘッダーに挿入します。 署名ドメイン、つまり送信ドメインは、**d=** フィールドの値としてヘッダーに挿入されます。 確認ドメイン、つまり受信者のドメインは、**d=** フィールドを使用して、DNS から公開キーを検索し、メッセージを認証します。 メッセージが確認されれば、DKIM チェックは合格です。
 
 ## <a name="steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルから DKIM を作成、有効、無効にする手順
-テナントの承認済みドメインはすべて、Microsoft 365 Defender ポータルの DKIM ページに表示されます。 表示されない場合は、[ドメイン ページ](/microsoft-365/admin/setup/add-domain?view=o365-worldwide#add-a-domain)から承認済みドメインを追加します。
+
+テナントの承認済みドメインはすべて、Microsoft 365 Defender ポータルの DKIM ページに表示されます。 表示されない場合は、[ドメイン ページ](/microsoft-365/admin/setup/add-domain#add-a-domain)から承認済みドメインを追加します。
 ドメインが追加されたら、以下に示す手順に従って DKIM を構成します。
 
-手順 1: DKIM ページ![画像](https://user-images.githubusercontent.com/3039750/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)で DKIM を構成するドメインをクリックします
+手順 1: DKIM ページで DKIM を構成するドメインをクリックします。
 
-手順 2: キーの作成![画像](https://user-images.githubusercontent.com/3039750/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)をクリックします
+![ドメインが選択された Microsoft 365 Defender ポータルの DKIM ページ](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
-手順 3: ポップアップ ウィンドウの![画像](https://user-images.githubusercontent.com/3039750/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)に表示される CNAME をコピーします
+手順 2: [DKIM キーの作成] をクリックします。
 
-手順 4: コピーした CNAME レコードを DNS サービス プロバイダーに公開します。 DNS プロバイダーの Web サイトで、有効にする DKIM の CNAME レコードを追加します。 フィールドが次の値に設定されていることを確認します。
+![[DKIM キーの作成] ボタンを使用したドメイン詳細ポップアップ](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
 
-レコードの種類: CNAME (エイリアス) ホスト: DKIM ページからコピーした値を貼り付けます。
-アドレス指定するポイント: DKIM ページから値をコピーします。
-TTL: 3600 (またはプロバイダーの既定値)
+手順 3: ポップアップ ウィンドウに表示される CNAME をコピーします
 
-手順 5: DKIM ページに戻って DKIM ![画像](https://user-images.githubusercontent.com/3039750/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)を有効にします
+![コピーする 2 つの CNAME レコードを含む [CNAME の公開] ポップアップ ウィンドウ](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
-CNAME レコードが存在しないというエラーが表示された場合は、次が原因である可能性があります
+手順 4: コピーした CNAME レコードを DNS サービス プロバイダーに公開します。
+
+DNS プロバイダーの Web サイトで、有効にする DKIM の CNAME レコードを追加します。 フィールドが次の値に設定されていることを確認します。
+
+```text
+Record Type: CNAME (Alias)
+> Host: Paste the values you copy from DKIM page.
+Points to address: Copy the value from DKIM page.
+TTL: 3600 (or your provider default)
+```
+
+手順 5: DKIM ページに戻って DKIM を有効にします。
+
+![トグルを [有効] にスライドして、DKIM を有効にする](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+
+CNAME レコードが存在しないというエラーが表示された場合は、次が原因である可能性があります。
+
 1. DNS サーバーとの同期は、数秒から数時間かかる場合があります。問題が解決しない場合は、手順をもう一度繰り返します。
 2. 追加のスペースやタブなど、コピーと貼り付けのエラーがないか確認します。
 
 DKIM を無効にする場合は、元に戻して無効モードに切り替えます
-
 
 ## <a name="steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>手動で 1024 ビット キーを 2048 ビット DKIM 暗号化キーにアップグレードする
 <a name="1024to2048DKIM"> </a>
@@ -223,7 +237,7 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 
 1. Microsoft 365 Defender ポータルを開くには [職場または学校のアカウントを使用します](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。.
 
-2. **[メールとコラボレーション]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** ページ \> **[ルール]** セクション \> **[DKIM]** の順に移動します。 または、DKIM ページに直接移動するには、<https://security.microsoft.com/dkimv2>を使用します。
+2. **[ルール]** セクションの **[メールとコラボレーション]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[DKIM]** に移動します。 または、DKIM ページに直接移動するには、<https://security.microsoft.com/dkimv2>を使用します。
 
 3. **DKIM** ページで、名前をクリックしてドメインを選択します。
 
@@ -383,4 +397,4 @@ DKIM はスプーフィングを防止するように設計されていますが
 
 ## <a name="more-information"></a>詳細情報
 
-PowerShell を介したキー ローテーション [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
+PowerShell を介したキー ローテーション: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センター の 「Office の新機能」機能を使用して、ユーザーが Office アプリ on Windows で [ヘルプ > 新機能] を選択した場合に表示または非表示にする Office 機能を決定します。
-ms.openlocfilehash: 882616a8ed0f4a4198bd7987ea596fe2c0cfc83dbe844e2ca5e354bbca768bcc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 22801436a4502dd27e9b290080bcb6f1936550ac
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824577"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346258"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>新機能にOffice機能を管理する
 
@@ -39,14 +39,13 @@ ms.locfileid: "53824577"
 
 ## <a name="show-or-hide-new-features"></a>新機能の表示と非表示を切り替える
 
-1. [組織の設定 **Microsoft 365 管理センターで、[** 組織設定]**を選択します**。
-2. [サービス **] タブで**、[サービスの新機能] を選択 **Office。**
-3. 機能名をクリックすると、フライアウト パネルが表示され、次の情報が表示されます。
+1. [Microsoft 365 管理センター] で、[組織設定] を選択し、[サービス] タブ <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"></a>を選択し、[組織の新機能]**をOffice。** 
+1. 機能名をクリックすると、フライアウト パネルが表示され、次の情報が表示されます。
      - 機能の簡単な説明。
      - 機能の詳細については、記事へのリンクを参照してください。
      - このOffice表示されるアプリケーションの一部です。
      - この機能がチャネルで使用できる最初のバージョン (リリース) です。
-4. [ユーザー **から非表示にする] を選択します**。 または、以前に機能を非表示にした場合は、[ユーザーに **表示] を選択します**。
+1. [ユーザー **から非表示にする] を選択します**。 または、以前に機能を非表示にした場合は、[ユーザーに **表示] を選択します**。
 
 [新機能] ページに表示Office機能の管理] で複数の機能を選択し、[非表示] または [表示]**を** 選択 **することもできます**。
 

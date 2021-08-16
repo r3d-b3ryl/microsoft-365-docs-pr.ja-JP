@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 自分の管理者パスワードをリセットする場合は、管理センターで管理者の電話番号とメール アドレスを更新します。
-ms.openlocfilehash: bbd7e40f8349b067837e8faadc502a96edac046fc10b95393ce0c946475cc8a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 685f6c55c3b83cb8ec52725a06a5c3d53d35118a
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824493"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346114"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>管理者の電話番号とメール アドレスを更新する
 
@@ -41,7 +41,7 @@ ms.locfileid: "53824493"
 
 [セキュリティ **情報] ページを** 使用して、携帯電話番号と代替メール アドレスを変更します。 代替メール アドレスは、管理者パスワード (コンピューターの管理者パスワードではなく) のリセットなど、重要な通知に使用されます。 
   
-1. [ファイル] を参照Microsoft 365 管理センター。
+1. を<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">参照して</a>、Microsoft 365 管理センター。
 
 2. ヘッダーで、プロファイル アイコン [マイ アカウント \> **のセキュリティ情報]** \> **を選択します**。
 

@@ -1,7 +1,7 @@
 ---
 title: マネージド セキュリティ サービス プロバイダー (MSSP) アクセスを提供する
-description: セキュリティ センターへの変更Microsoft Defender セキュリティ センター詳細Microsoft 365する
-keywords: Microsoft 365 セキュリティ センター、microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、単一ウィンドウ のガラス、コンバージド ポータル、セキュリティ ポータル、Defender セキュリティ ポータルの使用を開始する
+description: ポータルからポータルへのMicrosoft Defender セキュリティ センターについてMicrosoft 365 Defenderする
+keywords: Microsoft 365 Defender ポータル、microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、単一ウィンドウのガラス、コンバージド ポータル、セキュリティ ポータル、Defender セキュリティ ポータルの開始
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: ddc28149ca2ab43b7c14d3bdbaeeecdad1b18387
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 232cb81080a8d478b57b2f87a8b98752e51b0c20
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289765"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258408"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>マネージド セキュリティ サービス プロバイダー (MSSP) アクセスを提供する 
 
@@ -38,25 +38,25 @@ ms.locfileid: "53289765"
 
 マルチテナント委任アクセス ソリューションを実装するには、次の手順を実行します。
 
-1. セキュリティ[センターの](/windows/security/threat-protection/microsoft-defender-atp/rbac)Defender for Endpoint で役割ベース Azure Active Directoryのアクセス制御を有効Microsoft 365(Azure AD) グループに接続します。
+1. ポータル[で](/windows/security/threat-protection/microsoft-defender-atp/rbac)Defender for Endpoint で役割ベース Azure Active Directoryのアクセス制御を有効にし、Microsoft 365 Defender (Azure AD) グループに接続します。
 
 2. アクセス [要求とプロビジョニング用にガバナンス](/azure/active-directory/governance/identity-governance-overview) アクセス パッケージを構成します。
 
 3. Microsoft Myaccess でアクセス要求と監査 [を管理します](/azure/active-directory/governance/entitlement-management-request-approve)。
 
-## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>セキュリティ センターで Microsoft Defender for Endpoint で役割ベースのアクセスMicrosoft 365有効にする
+## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>Microsoft Defender for Endpoint で役割ベースのアクセス制御を有効にする (Microsoft 365 Defender ポータル)
 
 1. **顧客 AAD で MSSP リソースのアクセス グループを作成する: グループ**
 
-    これらのグループは、セキュリティ センターの Defender for Endpoint で作成したMicrosoft 365されます。 これを行うには、テナントの顧客AD 3 つのグループを作成します。 この例のアプローチでは、次のグループを作成します。
+    これらのグループは、このポータルの Defender for Endpoint で作成したMicrosoft 365 Defenderされます。 これを行うには、テナントの顧客AD 3 つのグループを作成します。 この例のアプローチでは、次のグループを作成します。
 
     - Tier 1 Analyst
     - Tier 2 Analyst
     - MSSP アナリスト承認者  
 
-2. セキュリティ センターの役割とグループ内の Customer Defender for Endpoint で適切なアクセス レベルMicrosoft 365 Defender for Endpoint の役割を作成します。
+2. ポータルの役割とグループ内の Customer Defender for Endpoint で適切なアクセス レベルに対応Microsoft 365 Defender Defender for Endpoint ロールを作成します。
 
-    カスタマー Microsoft 365 セキュリティ センターで RBAC を有効にするには、グローバル管理者またはセキュリティ管理者権限を持つユーザー アカウントを使用して、> **Endpoints** の役割 & > Roles にアクセスします。
+    カスタマー Microsoft 365 Defender ポータルで RBAC を有効にするには、グローバル管理者またはセキュリティ管理者権限を持つユーザー アカウントを使用して、> **Endpoints** の役割 & グループ > Roles にアクセスします。
 
     ![MSSP アクセスのイメージ](../../media/mssp-access.png)
 
@@ -125,9 +125,9 @@ ms.locfileid: "53289765"
 
 2. UI の [承認] セクション **で要求を** 承認または拒否します。
 
-     この時点でアナリスト アクセスが準備され、各アナリストは顧客のセキュリティ センターにMicrosoft 365があります。
+     この時点でアナリスト アクセスが準備され、各アナリストは顧客のポータルにMicrosoft 365 Defenderがあります。
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 割り当てられたアクセス許可とロールを使用します。
 
 > [!IMPORTANT]
-> 現在、セキュリティ センターの Microsoft Defender for Endpoint への委任アクセスでは、Microsoft 365ウィンドウごとに 1 つのテナントにアクセスできます。
+> Microsoft Defender for Endpoint への委任されたアクセスは、現在、Microsoft 365 Defenderウィンドウごとに 1 つのテナントにアクセスできます。

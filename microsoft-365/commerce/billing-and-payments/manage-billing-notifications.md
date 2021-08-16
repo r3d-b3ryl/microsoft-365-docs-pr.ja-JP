@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 請求通知メールと請求書添付ファイルを受け取るユーザーを管理する方法について学習します。
 ms.date: 03/17/2021
-ms.openlocfilehash: a49598cd1b361a85af8455b0aff19e11fcf96526
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: fd9bae82d08170ce2aaee392df872d83bd5c5b8dbfa7aa258f448144370f0103
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896289"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>請求通知と請求書の添付ファイルを管理する
 

@@ -29,13 +29,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: AutoPilot プロファイルは、ユーザー デバイスにインストールWindows方法を制御するのに役立ちます。 プロファイルには、Cortana のインストールをスキップするなど、既定とオプションの設定が含まれる。
-ms.openlocfilehash: 86f8718131f0a0b93e18e65e39e02e7d65aded1a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: AutoPilot プロファイルは、ユーザー デバイスにインストールWindows方法を制御するのに役立ちます。 プロファイルには、インストールのスキップなど、既定の設定とオプションCortana含まれる。
+ms.openlocfilehash: 67ad6e92583d71207e2807657a7ad00261e1249291e2e6a7546f544ea924b394
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578509"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896325"
 ---
 # <a name="about-autopilot-profile-settings"></a>AutoPilot プロファイルの設定について
 
@@ -47,7 +47,7 @@ AutoPilot プロファイルを使用して、ユーザー デバイスWindows�
   
 |**設定**|**説明**|
 |:-----|:-----|
-|Cortana、OneDrive、OEM 登録をスキップする  <br/> |Cortana や個人用アプリなど、コンシューマー アプリのインストールOneDrive。 デバイスユーザーは、ユーザーがデバイスのローカル管理者である限り、後でこれらをインストールできます。 デバイスはユーザーによって管理されるので、元の製造元の登録はスキップMicrosoft 365 Business Premium。  <br/> |
+|[Cortana、OneDrive OEM 登録をスキップする  <br/> |アプリや個人用アプリなど、コンシューマー アプリのインストールCortanaスキップOneDrive。 デバイスユーザーは、ユーザーがデバイスのローカル管理者である限り、後でこれらをインストールできます。 デバイスはユーザーによって管理されるので、元の製造元の登録はスキップMicrosoft 365 Business Premium。  <br/> |
 |会社のブランドが表示されたサインイン画面  <br/> |会社に [会社[](../admin/setup/customize-sign-in-page.md)のブランドをサインインに追加Microsoft 365] ページがある場合、デバイス ユーザーはサインイン時にそのエクスペリエンスを取得します。  <br/> |
 |構成済み AAD アカウントを使用した MDM 自動登録  <br/> |ユーザー ID は Azure Active Directory によって管理され、ユーザーは自分の資格情報を使用して WindowsおよびMicrosoft 365にサインインMicrosoft 365 Business Premiumされます。  <br/> |
    

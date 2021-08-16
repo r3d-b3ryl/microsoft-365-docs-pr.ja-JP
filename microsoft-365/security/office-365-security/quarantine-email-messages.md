@@ -19,15 +19,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、潜在的に危険なメッセージや望ましくないメッセージを保持する Exchange Online Protection (EOP) の検疫について学習できます。
+description: 管理者は、潜在的に危険なメッセージまたは望ましくないメッセージExchange Online Protection (EOP) の検疫について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2a11f5f9e1e730a3b0cc09625ec8e8cb592d869
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: f0ca5a61a7e71a2414fcaf1c0b02aec04820ca17
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333808"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258435"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>EOP で検疫された電子メール メッセージ
 
@@ -38,11 +38,11 @@ ms.locfileid: "52333808"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスのない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織のメールボックスを持つ Microsoft 365 組織では、潜在的に危険なメッセージや望ましくないメッセージを保持するために検疫を利用できます。
+Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、潜在的に危険なメッセージや望ましくないメッセージを保持するために検疫を利用できます。
 
 マルウェア対策ポリシーは、添付ファイルにマルウェアが含まれていると検出された場合、メッセージを自動的に検疫します。 詳細については [、「EOP でマルウェア対策ポリシーを構成する」を参照してください](configure-anti-malware-policies.md)。
 
-既定では、スパム対策はフィッシング メッセージを検疫し、スパムメッセージとバルク メール メッセージをユーザーの迷惑メール フォルダーに配信します。 ただし、スパム対策ポリシーを作成およびカスタマイズして、スパムメッセージとバルクメール メッセージを検疫することもできます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+既定では、スパム対策はフィッシングメッセージと高信頼フィッシング メッセージを検疫し、スパム、高信頼スパム、バルク メール メッセージをユーザーの迷惑メール フォルダーに配信します。 ただし、スパム対策ポリシーを作成およびカスタマイズして、スパム、高信頼スパム、バルク メール メッセージを検疫することもできます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ユーザーと管理者の両方が検疫済みメッセージを処理できます。
 

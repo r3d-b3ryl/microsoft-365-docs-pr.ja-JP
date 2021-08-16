@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 92fdffa086e467c7f5fa4fdbefcbf9749095feec
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e587bcfba3ecef438e9ddf456077347adb62668725d2de88e933e75cb891775b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536408"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896241"
 ---
 # <a name="payment-information-for-morocco"></a>モロッコのお支払い情報
 

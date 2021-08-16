@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f342a4a104fb908bc8b8c05d2d53d190de8d64c9a826fb87be641e63921bb456
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 478a187494ff247c7d3e8a258e8ac73eb921d4d2
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793828"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346030"
 ---
 # <a name="get-file-related-alerts-api"></a>ファイル関連のアラート API を取得する
 
@@ -44,6 +44,7 @@ ms.locfileid: "53793828"
 ## <a name="limitations"></a>制限事項
 
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+2. SHA-1 ハッシュ関数だけがサポートされています (MD5 または SHA-256 ではありません)。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -80,7 +81,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合とファイルが存在する場合 - 本文の[](alerts.md)アラート エンティティの一覧で 200 OK。 ファイルが存在しない場合 - 404 が見つかりません。
+成功した場合とファイルが存在する場合 - 本文の[](alerts.md)アラート エンティティの一覧で 200 OK。 ファイルが存在しない場合 - 空のセットで 200 OK。
 
 ## <a name="example"></a>例
 

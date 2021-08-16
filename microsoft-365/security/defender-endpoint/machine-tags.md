@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f4426803f89be1bb41c9b704d4f56e8d249ee6e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 02368ff4c8f122b3bca2deac22b3fa994e6bf82d38fce4e44ff40ba12c882730
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650333"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53874013"
 ---
 # <a name="create-and-manage-device-tags"></a>デバイス タグの作成と管理
 

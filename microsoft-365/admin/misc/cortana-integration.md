@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な仕事用アカウントまたは学校アカウントを持つCortana、Microsoft 365レベルのセキュリティOffice 365を満たすエクスペリエンスを利用できます。
-ms.openlocfilehash: f81fd357ec69a8cf50c2f55875a65b61b0f7d9348662f8c0c1f8f11864419630
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8462d4bf3838c5080a7f4f00380fa03dab2c01b9
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824200"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346102"
 ---
 # <a name="cortana-in-microsoft-365"></a>CortanaのMicrosoft 365
 
@@ -173,7 +173,7 @@ Cortanaは、タスクとコミットメントを含む個別のブリーフィ�
 
 組織のCortanaデータへのアクセスをオフにする
 
-1. [組織のMicrosoft 365 管理センター] で、[組織  >  **設定]** 設定を選択Cortana。 
+1. [組織の <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター]</a>で、[組織  >  **設定]** 設定を選択Cortana。 
 
 2. Windows 10 (バージョン **1909** 以前) の Cortana と iOS と Android の Cortana アプリのチェック ボックスをオフにして、組織内のユーザーに代わって Microsoft ホスト型データにアクセスして Cortana 接続エクスペリエンスを無効にします。
 

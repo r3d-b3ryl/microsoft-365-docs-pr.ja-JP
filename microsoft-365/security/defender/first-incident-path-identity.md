@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 204530b8b4a87215053ddcb0434e40e45271da3d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 57a324310458dc15f5edcd6012ab381bb4d5041d902b8871d85cb318f0e7023e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841008"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873637"
 ---
 # <a name="example-of-an-identity-based-attack"></a>ID ベースの攻撃の例
 
@@ -36,11 +36,11 @@ ms.locfileid: "52841008"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft Defender for Identity は、組織内の ID を侵害する悪意のある試みを検出するのに役立ちます。 Defender for Identity は Microsoft 365 Defender と統合されます。セキュリティ アナリストは、Netlogon 特権昇格の疑いなど、Defender for Identity から入ってくる脅威を可視化できます。
+Microsoft Defender for Identity は、組織内の ID を侵害する悪意のある試みを検出するのに役立ちます。 Defender for Identity は Microsoft 365 Defender と統合されますので、セキュリティ アナリストは、Netlogon 特権昇格の疑いなど、Defender for Identity からの脅威を可視化できます。
 
 ## <a name="analyzing-the-attack-in-microsoft-defender-for-identity"></a>Microsoft Defender for Identity での攻撃の分析
 
-Microsoft 365Defender を使用すると、アナリストはインシデント ページの[アラート] タブで検出ソースによってアラートをフィルター処理できます。 次の例では、検出ソースは Defender for **Identity にフィルター処理されます**。 
+Microsoft 365 Defenderアナリストは、[インシデント] ページの [アラート] タブで検出ソースによってアラートをフィルター処理できます。 次の例では、検出ソースは Defender for **Identity にフィルター処理されます**。 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Defender for Identity の検出ソースをフィルター処理する例":::
 

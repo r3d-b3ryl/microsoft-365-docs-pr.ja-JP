@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: ウイルス、マルウェアMicrosoft Defender ウイルス対策スパイウェアWindowsソフトウェアの脅威からデバイスを保護する方法について学習します。
-ms.openlocfilehash: 7c5d000e2a8c30e17d1f890cef69fe88beed75bb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 79ec44a44c3939a4a868b98d75ab4f24eaf949fcd9bbafb7c0a3173e267f4680
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198365"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896305"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策によって検出された脅威
 
@@ -64,7 +64,7 @@ Microsoft 以外のウイルス対策ソリューションをアンインスト�
 
 - ユーザーはユーザー[に通知を受け取Windows。](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e) 
 - 検出は、[保護履歴] ページ [Windows セキュリティアプリ](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)の **一覧に表示** されます。  
-- Windows 10 デバイスをセキュリティで保護して[Intune](/mem/intune/enrollment/windows-enrollment-methods)に登録し、組織に 800 以下のデバイスが登録されている場合は、[脅威とウイルス対策] ページの Microsoft 365 管理センター<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>に脅威の検出と分析情報が表示されます。この情報は、ホーム ページの[Microsoft Defender ウイルス対策](secure-win-10-pcs.md)カードから (または [正常性の脅威& ウイルス対策] を選択してナビゲーション ウィンドウからアクセスできます)。   >  
+- Windows 10 デバイスをセキュリティで保護し[、Intune](/mem/intune/enrollment/windows-enrollment-methods)に登録し、組織に 800 以下のデバイスが登録されている場合は、[脅威とウイルス対策] ページの Microsoft 365 管理センター に脅威<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>の検出と分析情報が表示されます。これは、ホーム ページの[Microsoft Defender ウイルス対策](secure-win-10-pcs.md)カード (または [正常性の脅威& ウイルス対策] を選択してナビゲーション ウィンドウからアクセスできます。   >  
 
     組織に Intune に登録されているデバイスが 800 台を超えている場合は、[脅威とウイルス対策] ページではなく[、Microsoft エンドポイント マネージャー](/mem/endpoint-manager-overview)からの脅威の検出と分析情報を表示するように求められます。
  

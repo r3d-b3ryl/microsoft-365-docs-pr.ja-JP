@@ -20,12 +20,12 @@ description: Microsoft 365 Defender ポータルの制限されたユーザー �
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 924db948103a4d3b45c499f433961762a45931af
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b06cf477ab8d713e0684c0d62567199c6c57cb32
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082854"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258483"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Microsoft 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
 
@@ -83,7 +83,7 @@ Microsoft 365 Defender ポータルの **制限されたユーザー** ページ
 6. **[はい]** をクリックして変更を確定します。
 
    > [!NOTE]
-   > ユーザーからすべての制限を削除するには、最大で 24 時間かかる可能性があります。
+   > ユーザーからすべての制限を削除するには、最大で 1 時間かかる可能性があります。
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>制限されたユーザーのアラート設定を確認する
 

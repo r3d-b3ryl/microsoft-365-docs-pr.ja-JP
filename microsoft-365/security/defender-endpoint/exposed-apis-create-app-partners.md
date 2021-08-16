@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77a70a6d05d62d9ca93dcca18f0801f9f2635d2d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 36cd53e5cf88fee136689af503a68b3119dac0af4a8576f6dbad36f11351aafd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898514"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender for Endpoint API を介したパートナー アクセス
 
@@ -132,7 +132,7 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
    さらに、トークンを取得する際には、顧客にテナント ID を要求し、将来使用するために保存する必要があります。
 
-- **完成です！** アプリケーションの登録に成功しました!
+- **完了!** アプリケーションの登録に成功しました!
 - トークンの取得と検証については、以下の例を参照してください。
 
 ## <a name="get-an-access-token-example"></a>アクセス トークンの例を取得する

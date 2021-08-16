@@ -1,6 +1,6 @@
 ---
 title: ファイル API の停止と検疫
-description: デバイスでのファイルの実行を停止し、Microsoft Defender for Endpoint でファイルを削除する方法について説明します。 例を参照してください。
+description: デバイスでのファイルの実行を停止し、Microsoft Defender for Endpoint でファイルを削除する方法について説明します。 「例」を参照してください。
 keywords: apis、graph api、サポートされている API、停止および検疫ファイル
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2d37eef37400f67421434e36aa3e7b36487afaf4
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d9ae988df82a2cc1cf5106f832ae22f0c5a95dbdfbf28e6dc773cea3e8208798
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873825"
 ---
 # <a name="stop-and-quarantine-file-api"></a>ファイル API の停止と検疫
 

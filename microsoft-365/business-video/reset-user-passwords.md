@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向けユーザー パスワードをMicrosoft 365する方法について学習します。
-ms.openlocfilehash: 42832bd48f637589687b75c4995ae58154b62226
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: db89626096f151f9ebc446e08ff970a8f02c4aa2a966f6c882a7012745b96f07
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580488"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896513"
 ---
 # <a name="reset-passwords-for-your-users"></a>ユーザーのパスワードをリセットする
 
@@ -37,7 +37,7 @@ ms.locfileid: "51580488"
 ## <a name="try-it"></a>お試しください!
 
 1. ユーザーが新しいパスワードを要求すると、電子メールでパスワードリセット要求を受信します。 パスワードをリセットするには、アプリ起動ツールを開き、[管理者] を **選択します**。
-1. 管理センター Microsoft 365[ユーザー] **、[アクティブ** ユーザー]の順に選択し、リセットを要求したユーザーの横にあるキー アイコンを選択します。
+1. [ユーザー] Microsoft 365 管理センター [ユーザー] **、[アクティブ** なユーザー]**の順に** 選択し、リセットを要求したユーザーの横にあるキー アイコンを選択します。
 1. [ **パスワードの自動生成] を選択** すると、ランダムなパスワードが自動的に作成されます。
 1. [リセット] **を選択します**。
 1. [メールで **パスワードを送信する] チェック ボックス** をオンにします。

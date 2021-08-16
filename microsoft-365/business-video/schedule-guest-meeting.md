@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 外部ユーザーとの会議をスケジュールTeamsする方法について学習します。
-ms.openlocfilehash: e4fec84613dc968298569284c7f026de47005ce3
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 2c6e1087cb20bad7ca799159d05d09b61c04bfdeaf146890127d10365155a2b4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896381"
 ---
 # <a name="schedule-a-teams-meeting-with-external-users"></a>外部ユーザーとのTeams会議をスケジュールする
 

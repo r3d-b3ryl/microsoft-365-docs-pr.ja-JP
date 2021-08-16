@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - FRP150
 description: サブスクリプション名の新しいMicrosoft 365を確認します。
-ms.openlocfilehash: 5757b802dcc5897e720249314d91974c35d0d3e3bce6acd8d564065bdc8a891c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2885a4c7dc30cb9431b4389f30e5a0d443cf0f62
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823545"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346043"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 は Microsoft 365 になりました
 
-Microsoft では、Office 365 と Microsoft 365 のサブスクリプション名の一部を変更しました。 お客様に操作していただくことは何もありません。 サービス、アプリ、機能、そしてサブスクリプションの料金も、今までと変わりません。 サブスクリプション名は 2020 年 4 月 21 日Microsoft 365 管理センター以降に更新されます。
+Microsoft では、Office 365 と Microsoft 365 のサブスクリプション名の一部を変更しました。 お客様に操作していただくことは何もありません。 サービス、アプリ、機能、そしてサブスクリプションの料金も、今までと変わりません。 サブスクリプション名は 2020 年<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">4</a>月 21 日Microsoft 365 管理センター、請求明細書は 2020 年 4 月 21 日以降に更新されます。
 
 - **Office 365 Business Essentials** が表示 **Microsoft 365 Business Basic**
 - **Office 365 Business Premium** が表示 **Microsoft 365 Business Standard**

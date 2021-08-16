@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d18dd7f5dc702f08a722652394aeb0102f100ef
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 4ce1ea9e06167f0fec4431438c48c967f12a8a46
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409058"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258400"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -140,6 +140,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
      - **提出の理由**<sup>\*</sup>
      - **再スキャンの状態**<sup>\*</sup>
      - **再スキャンの結果**<sup>\*</sup>
+     - **タグ**<sup>\*</sup>
      - **フィルターの評決**
      - **配信/ブロックの理由**
      - **申請 ID**
@@ -159,6 +160,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
      - **申請 ID**: すべての申請に割り当てられている GUID 値。
      - **ネットワーク メッセージ ID**
      - **Sender**
+     - **Tags**
 
      完了したら、[適用] を **クリックします**。
 
@@ -201,6 +203,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
      - **[送信者]**<sup>\*</sup>
      - **報告された理由**<sup>\*</sup>
      - **再スキャンの結果**<sup>\*</sup>
+     - **タグ**<sup>\*</sup>
      - **メッセージの報告 ID**
      - **ネットワーク メッセージ ID**
      - [**Sender IP (送信者の IP)**]
@@ -217,6 +220,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
      - **Sender**
      - **報告された理由**:**迷惑メール、****フィッシング、スパム****ではありません**。
      - **フィッシングシミュレーション**:**はいまたは****いいえ**
+     - **Tags**
 
      完了したら、[適用] を **クリックします**。
 

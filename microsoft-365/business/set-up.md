@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: ドメインとユーザーの追加Microsoft 365 Business Premiumセキュリティ ポリシーの設定など、ユーザーのセットアップ手順について説明します。
-ms.openlocfilehash: 74a98e915577cf86ec32a706bd3b8f558f49db95
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8158e911a8520c07cf5f85fea8b64d65820d603d7f9f49938849ff2df6fc45ed
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882011"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>セットアップ ウィザードMicrosoft 365 Business Premiumの設定
 
@@ -69,7 +69,7 @@ ms.locfileid: "53227641"
     ![[サインインのカスタマイズ] ページのスクリーンショット。](../media/adddomain.png)
 
     
-4. ウィザードの手順に従って、ドメインを所有Microsoft 365 DNS ホスティング プロバイダー[で DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)レコードを作成します。 ドメイン ホストがわかっている場合は、「ドメインをドメインに追加[する」も参照Microsoft 365。](/microsoft-365/admin/setup/add-domain)
+4. ウィザードの手順に従って、ドメインを所有Microsoft 365 DNS ホスティング プロバイダー[で DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)レコードを作成します。 ドメイン ホストがわかっている場合は、「[Microsoft 365 にドメインを追加する](/microsoft-365/admin/setup/add-domain)」も参照してください。
 
     ご利用のホスティング プロバイダーが GoDaddy または [Domain Connect](/office365/admin/get-help-with-domains/domain-connect) を有効にした別のホストである場合、プロセスは簡単です。サインインし、お客様に代わって Microsoft が認証するよう自動的に求められます。
 

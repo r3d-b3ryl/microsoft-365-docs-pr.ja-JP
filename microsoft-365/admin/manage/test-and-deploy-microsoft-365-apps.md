@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 組織内のユーザーおよびグループ向け Microsoft および Microsoft パートナー アプリを検索、テスト、展開するには、組織の統合アプリ ポータルMicrosoft 365 管理センター。
-ms.openlocfilehash: 7a4daff76262e2fc08b5d205eba81bd8016718f8b7461c930a5967454cdaa2eb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5bcbdebbacf8d9e4710dd7f9168d3f6dbcb4af5a
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824542"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346126"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>統合アプリ ポータルMicrosoft 365 Appsパートナーによるテストと展開
 
@@ -60,7 +60,7 @@ ms.locfileid: "53824542"
 
 [統合アプリ] ページの一覧にまだ表示されない発行済みアプリを検索、テスト、および完全に展開できます。 管理センターからアプリを購入してライセンスを取得することで、Microsoft と Microsoft のパートナー アプリを 1 つの場所からリストに追加できます。
 
-1. 管理センターの左側のナビゲーションで、[アプリ] を選択 **設定、[** 統合アプリ]**を選択します**。
+1. 管理センターの左側のナビゲーションで、[アプリ] を選択 **設定、[** 統合アプリ]<a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**を選択します**</a>。
 
 2. [アプリ **の取得] を** 選択してアプリのビューを取得します。
 
@@ -199,7 +199,7 @@ Azure Active Directory Graph API を使用してクエリを実行して、グ�
 
 4. [ **すべてのユーザー** **]、[特定のユーザー/グループ**]、または [自分だけ] を選択して、アドインの展開先 ****   を指定します。 [検索] ボックスを使用して、特定のユーザーまたはグループを検索します。 アドインをテストする場合は、[これはテスト展開です] **を選択します**。 
 
-5. **[次へ]** を選択します。 すべてのアプリの機能とアクセス許可は、アプリが認定を受け取った場合、認定情報と共に 1 つのウィンドウMicrosoft 365されます。 認定ロゴを選択すると、ユーザーは認定の詳細を確認できます。  
+5. [**次へ**] を選択します。 すべてのアプリの機能とアクセス許可は、アプリが認定を受け取った場合、認定情報と共に 1 つのウィンドウMicrosoft 365されます。 認定ロゴを選択すると、ユーザーは認定の詳細を確認できます。  
 
 6. [確認] をクリックし、[展開の完了 **] を選択します**。  
 

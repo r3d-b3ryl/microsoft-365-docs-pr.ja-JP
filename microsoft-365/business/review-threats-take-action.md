@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: デバイス上のユーザーが検出した脅威を確認Microsoft Defender ウイルス対策管理するWindows 10します。
-ms.openlocfilehash: 15e99fb75e4a3ac1af842ca7d0b900e02cbc6bd4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f2edd27c527cc2b9fd8c986191a0bad5c0844da68880f8d8d775491e3480babd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912788"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882095"
 ---
 # <a name="review-detected-threats-and-take-action"></a>検出された脅威を確認して対処する
 
@@ -32,7 +32,7 @@ Microsoft Defender ウイルス対策検出し、次の種類の脅威から保�
 - フィッシングの試行
 - データ盗難の試行
 
-IT プロフェッショナル/管理者は、管理者センターで[Intune](/mem/intune/enrollment/device-enrollment)に登録されている Windows 10 デバイス間の脅威検出に関する情報Microsoft 365できます。 次のような概要情報が表示されます。
+IT プロフェッショナル/管理者は、Intune に登録されている複数のデバイスWindows 10[](/mem/intune/enrollment/device-enrollment)の脅威検出に関する情報をMicrosoft 365 管理センター。 次のような概要情報が表示されます。
 
 - ウイルス対策保護が必要なデバイスの数
 - セキュリティ ポリシーに準拠していないデバイスの数
@@ -40,8 +40,8 @@ IT プロフェッショナル/管理者は、管理者センターで[Intune](/
 
 脅威の検出とデバイスに関する特定の情報を表示するには、いくつかのオプションがあります。
 
-- 管理 **センターの**[アクティブな <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365] ページ</a>です。 この記事 [の「Active Devices」ページの「脅威検出の管理」](#manage-threat-detections-on-the-active-devices-page) を参照してください。
-- 管理 **センターの**[アクティブ <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">なMicrosoft 365] ページ</a>です。 この記事 [の「アクティブな脅威」ページの「脅威検出の管理」](#manage-threat-detections-on-the-active-threats-page) を参照してください。
+- [**デバイスのアクティブ** なデバイス]<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">ページMicrosoft 365 管理センター。</a> この記事 [の「Active Devices」ページの「脅威検出の管理」](#manage-threat-detections-on-the-active-devices-page) を参照してください。
+- [**アクティブな脅威**] ページ <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター。</a> この記事 [の「アクティブな脅威」ページの「脅威検出の管理」](#manage-threat-detections-on-the-active-threats-page) を参照してください。
 - [**ウイルス対策**] ページ <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">(Microsoft エンドポイント マネージャー)</a> この記事[の「](#manage-threat-detections-in-microsoft-endpoint-manager)脅威検出Microsoft エンドポイント マネージャー管理する」を参照してください。
 
 詳細については、「脅威が検出[された脅威」を参照Microsoft Defender ウイルス対策。](threats-detected-defender-av.md)
@@ -50,7 +50,7 @@ IT プロフェッショナル/管理者は、管理者センターで[Intune](/
 
 以下の手順は、お客様がご利用のお客様Microsoft 365 Business Premium。
 
-1. 管理センターのMicrosoft 365に移動し <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 、サインインします。
+1. [開く] Microsoft 365 管理センターに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> し、サインインします。
 
 2. ナビゲーション ページで、[デバイスのアクティブな **デバイス]**  >  **を選択します**。 アクティブなデバイスの一覧と、保護状態、ウイルス対策 (AV) 保護状態、検出されたアクティブな脅威の数などの詳細が表示されます。
 
@@ -63,7 +63,7 @@ IT プロフェッショナル/管理者は、管理者センターで[Intune](/
 > [!NOTE]
 > **[Microsoft Defender ウイルス対策** とアクティブな脅威] ページは段階的に展開され、すぐにアクセスできない場合があります。
 
-1. 管理センターのMicrosoft 365に移動し <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 、サインインします。
+1. [開く] Microsoft 365 管理センターに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> し、サインインします。
 
 2. [アクティブな **脅威Microsoft Defender ウイルス対策** 表示] を選択 **します**。 (または、ナビゲーション ウィンドウで [正常性] を **選択します。**  > **ウイルス対策&脅威**.)
 

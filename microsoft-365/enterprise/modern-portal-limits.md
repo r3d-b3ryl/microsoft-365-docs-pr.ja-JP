@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Sharepoint および外部エンドポイントへの呼び出しの制限など、SharePoint Online のモダン サイトのパフォーマンスに関する推奨事項について説明します。
-ms.openlocfilehash: 2429869c5397e0260876ee5a765ea18ae3fc42a1
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6ae0ab89d0b940d41ee2f8056d4cdaf35f7c957784a315612413cb37fd219c58
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288877"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899213"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePointオンラインモダン ポータル サイトの制限
 
@@ -61,7 +61,7 @@ ms.locfileid: "53288877"
 |UPA サービスへの呼び出し  <br/> |ユーザー 1 人あたり 1 時間あたり 1  <br/> |UPA (User  Profile Application) サービスに対する要求呼び出しごとに行う必要はありません。 [Microsoft Graph API](/graph/call-api)と[PageContext](/javascript/api/sp-page-context/pagecontext)を使用して、ユーザー情報のクエリを実行できます。  <br/> UPA サービス呼び出しが必要な場合は、必要に応じて 1 回の呼び出しを行い、同じセッションで再利用するために情報をキャッシュします。 |
 |分類サービスへの呼び出し  <br/> |1 時間あたりのユーザーあたり 5  <br/> |Taxonomy サービスに対する _要求呼び出し_ ごとに行う必要はありません。 分類サービス呼び出しが必要な場合は、同じセッションで再利用するために情報をキャッシュします。 <br/> 詳細については、「オンラインモダンおよびクラシック発行サイト ページ[でのページSharePointの最適化」を参照してください](modern-page-call-optimization.md)。 <br/> |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [正常なポータルSharePointする](/sharepoint/portal-health)
 
