@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d1e65fc2a5626a48b7673374c764d4a7c5a0d2b3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7863cc2f6ee11f5736fca8077d766a9c1b5ba39819623a3a91bb853bfe09257d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649181"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863609"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスへのオンボード
 
@@ -92,7 +92,7 @@ Defender for Endpoint を展開するために必要な手順は次のとおり�
 - 次世代の保護構成
 - 攻撃表面の縮小構成
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Endpoint Configuration Manager を使用したオンボーディング](onboarding-endpoint-configuration-manager.md)
 - [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)

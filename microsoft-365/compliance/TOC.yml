@@ -251,7 +251,7 @@
               href: endpoint-dlp-learn-about.md
             - name: Microsoft Teams の既定のデータ損失防止ポリシーについて学ぶ (プレビュー)
               href: dlp-teams-default-policy.md
-            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーについての詳細情報 (プレビュー)
+            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーについての詳細情報
               href: dlp-on-premises-scanner-learn.md
             - name: Microsoft Compliance Extension の詳細情報
               href: dlp-chrome-learn-about.md
@@ -269,7 +269,7 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: DLP ポリシーの作成、テスト、調整
               href: create-test-tune-dlp-policy.md
-            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) の使用を開始する
+            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーの使用を開始する
               href: dlp-on-premises-scanner-get-started.md
             - name: エンドポイント データ損失防止を開始する
               href: endpoint-dlp-getting-started.md
@@ -299,7 +299,7 @@
               href: dlp-microsoft-teams.md
             - name: エンドポイント データ損失防止の使用
               href: endpoint-dlp-using.md
-            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナー (プレビュー) を使用する
+            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを使用する
               href: dlp-on-premises-scanner-use.md
             - name: DLP ポリシーで通知とポリシー ヒントを使用する
               href: use-notifications-and-policy-tips.md
@@ -425,7 +425,7 @@
               href: archive-reuterseikon-data.md
             - name: Reuters FX
               href: archive-reutersfx-data.md
-            - name: RingCentral (プレビュー)
+            - name: RingCentral
               href: archive-ringcentral-data.md
             - name: Salesforce Chatter
               href: archive-salesforcechatter-data.md
@@ -465,6 +465,8 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS および Voice Network Archiver
               href: archive-o2-network-data.md
+            - name: Rogers Network Archiver (プレビュー)
+              href: archive-rogers-network-archiver-data.md
             - name: Signal Archiver
               href: archive-signal-archiver-data.md
             - name: Telegram Archiver
@@ -505,6 +507,8 @@
               href: archive-17a-4-refinitiv-messenger-data.md
             - name: ServiceNow DataParser
               href: archive-17a-4-servicenow-data.md
+            - name: Skype for Business Server DataParser (プレビュー)
+              href: archive-17a-4-skype-for-business-server-data.md
             - name: Slack DataParser
               href: archive-17a-4-slack-data.md
             - name: SQL DataParser
@@ -982,6 +986,10 @@
       href: privacy-management.md
     - name: プライバシー管理の使用を開始する
       href: privacy-management-setup.md
+    - name: プライバシー管理でユーザーのアクセス許可を設定する
+      href: privacy-management-permissions.md
+    - name: プライバシー管理設定の管理
+      href: privacy-management-settings.md
     - name: プライバシー管理における個人情報の検索および可視化
       href: privacy-management-data-profile.md
     - name: プライバシー管理におけるポリシー作成および管理

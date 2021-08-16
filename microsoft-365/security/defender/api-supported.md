@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: acd8ec28fb1d78e3724cb0ca0ebee48133e7310f
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 2ecd4080ed0c8cf527fa31f3c41bcd0921b489b5284651378483cce637f04ba7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863405"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>サポートされている Microsoft 365 Defender API 
 
@@ -57,7 +57,7 @@ ms.locfileid: "52985086"
 
 パスに沿ったすべての `/api` API は [、OData プロトコル](/odata/overview) を使用します。たとえば、 https://api.security.microsoft.com/api/incidents です。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [Microsoft 365 DefenderAPI の概要](api-overview.md)
 - [API にMicrosoft 365 Defenderする](api-access.md)

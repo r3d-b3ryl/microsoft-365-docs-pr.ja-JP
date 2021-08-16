@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Microsoft リストについて説明します。 Microsoft リストを使用すると、顧客の種類、注文のフルフィルメント、注文の進捗状況など、顧客の詳細を追跡できます。
-ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3f427e32bf0b8ce6933eedd56bb3fac8e7e5d2ae3da667f8c7e8d5d95c00931f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245194"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900585"
 ---
 # <a name="use-microsoft-lists-to-track-business-info"></a>Microsoft リストを使用してビジネス情報を追跡する
 

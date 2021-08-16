@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9784b4768b346ec9c6614a000f4cfc92ecd4f98a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: badd29f758691e253544c7816408f93fa222f3d0dcc87d2a891bba7c611a8846
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863621"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Intune のデバイス制御ポリシーの例
 
@@ -424,6 +424,6 @@ ms.locfileid: "53648185"
 </plist>
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [macOS のデバイス制御の概要](mac-device-control-overview.md)

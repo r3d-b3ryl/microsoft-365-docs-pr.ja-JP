@@ -1,5 +1,5 @@
 ---
-title: パイロットMicrosoft 365 Defenderインシデント対応機能を試して、インシデントの優先順位付けと管理、自動調査と対応の構成、高度な検索の使用を行います。
+title: パイロットMicrosoft 365 Defenderインシデント対応機能を試す
 description: インシデント対応機能を試Microsoft 365 Defender、インシデントの優先順位付けと管理、調査の自動化、脅威検出での高度な検出の使用を行います。
 keywords: Microsoft 365 Defender試し、Microsoft 365 Defender を試し、Microsoft 365 Defender、Microsoft 365 Defender 評価ラボ、Microsoft 365 Defender パイロット、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度なハンティングを評価する
 search.product: eADQiWindows 10XVcnh
@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6f8e8ed59c38c00c2158292b343d5ce347ebf297
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: aaf30aa5f598fffc5f8f53fc92fef5571b3c851b0bd9e48ef3ca8b60ad9e5e43
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544735"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863320"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>パイロットMicrosoft 365 Defenderインシデント対応機能を試す
 

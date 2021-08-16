@@ -22,22 +22,22 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: パスワードMicrosoft 365オンプレミス環境ADシングル サインオンを行う場合は、Azure Microsoft 365と統合します。
-ms.openlocfilehash: f977969634401d59d7598136f9323cb0e37f9ece
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 68ec6098d6873177d573e866e0361b3775be25df1b7751a77f5b589adf5503ac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878899"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Azure と Microsoft 365
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365は、Azure Active Directory (Azure AD) を使用して、ユーザー ID を管理します。 Microsoft 365 サブスクリプションには無料の Azure AD サブスクリプションが含まれるので、オンプレミスの Active Directory ドメイン サービス (AD DS) を統合してユーザー アカウントとパスワードを同期したり、シングル サインオンを設定したりできます。 また、高度な機能を購入して、アカウントの管理を向上することもできます。
   
 Azure ADは、統合アプリの管理など、他の機能も提供します。この機能を使用すると、アプリのサブスクリプションを拡張Microsoft 365できます。
   
-azure AD 展開アドバイザーを使用して、Microsoft 365 管理センターでのガイド付きセットアップと構成エクスペリエンスを利用できます (Microsoft 365 にサインインする必要があります)。
+Azure AD 展開アドバイザーを使用して、Microsoft 365 管理センター のガイド付きセットアップと構成エクスペリエンスをMicrosoft 365。
 
  - [Azure AD Connect アドバイザー](https://aka.ms/aadconnectpwsync)
  - [AD FS 展開アドバイザー](https://aka.ms/adfsguidance)
@@ -45,7 +45,7 @@ azure AD 展開アドバイザーを使用して、Microsoft 365 管理センタ
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Azure ADエディションとMicrosoft 365 ID 管理
 
-有料サブスクリプションを利用している場合Microsoft 365、無料の Azure サブスクリプションADがあります。 Azure ADを使用して、ユーザー アカウントとグループ アカウントを作成および管理できます。 このサブスクリプションをアクティブ化するには、1 回の登録を完了する必要があります。 その後、管理者センターから Azure ADにMicrosoft 365アクセスできます。 
+有料サブスクリプションを利用している場合Microsoft 365、無料の Azure サブスクリプションADがあります。 Azure ADを使用して、ユーザー アカウントとグループ アカウントを作成および管理できます。 このサブスクリプションをアクティブ化するには、1 回の登録を完了する必要があります。 その後、Azure ADにアクセスMicrosoft 365 管理センター。 
 
 無料の Azure AD サブスクリプションを登録する手順については、「無料の Azure ADサブスクリプション [を使用する」を参照してください](../compliance/use-your-free-azure-ad-subscription-in-office-365.md)。 azure.microsoft.com に直接アクセスしてサインアップしたり、Microsoft 365 で無料の Azure AD サブスクリプションとは別の Microsoft Azure の試用版または有料サブスクリプションが終了したりします。 
   

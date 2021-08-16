@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9855a7aa8af9d380f192285ddbdb5c30a7a734d4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: dde4eef3382c3a1c5e22a78b1965c30b46c9749dcb847c707ea418898aa7a3e5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647969"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863561"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>セキュリティに関する推奨事項 - 脅威と脆弱性の管理
 
@@ -44,7 +44,7 @@ ms.locfileid: "53647969"
 > [!TIP]
 > 新しい脆弱性イベントに関する電子メールを取得するには [、「Configure vulnerability email notifications in Microsoft Defender for Endpoint」を参照してください。](configure-vulnerability-email-notifications.md)
 
-## <a name="how-it-works"></a>仕組み
+## <a name="how-it-works"></a>メカニズム
 
 組織内の各デバイスは、3 つの重要な要素に基づいてスコア付けされます。
 

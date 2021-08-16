@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: fb4dd3114c411385f1a38cf7b0fd391a1b159b99
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6b7ef857e09e01a1a9ba550dc679708c88dfce1751cd2644156ce38d1b8f42c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924473"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863489"
 ---
 # <a name="specify-the-cloud-delivered-protection-level"></a>クラウドによる保護レベルを指定する
 
@@ -58,7 +58,7 @@ ms.locfileid: "52924473"
 
 > [!TIP]
 > いくつかのヘルプが必要ですか? 以下のリソースを参照してください。
-> - [構成Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+> - [Endpoint Protection を構成する](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 > - [Intune でエンドポイント保護設定を追加する](/mem/intune/protect/endpoint-protection-configure)
   
 
@@ -89,7 +89,7 @@ ms.locfileid: "52924473"
 > [!TIP]
 > オンプレミスでグループ ポリシー オブジェクトを使用していますか? クラウドでの翻訳方法を確認します。 [[プレビュー] でグループ ポリシー分析を使用して、オンプレミスのグループ ポリシー Microsoft エンドポイント マネージャーを分析します](/mem/intune/configuration/group-policy-analytics)。 
   
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md)

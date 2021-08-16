@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b5e57fec83217c8df00d333bb4c71f375cac23bb
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: e7ca7d70d867b623692d2eb0d87b178e528acf285fb32cf274c68837408c8f24
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863453"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -63,7 +63,7 @@ ms.locfileid: "52024263"
 | `ProcessVersionInfoInternalFileName` | string | 新しく作成されたプロセスのバージョン情報からの内部ファイル名 |
 | `ProcessVersionInfoOriginalFileName` | string | 新しく作成されたプロセスのバージョン情報からの元のファイル名 |
 | `ProcessVersionInfoFileDescription` | string | 新しく作成されたプロセスのバージョン情報からの説明 |
-| `ProcessId` | int | 新しく作成されたプロセスのプロセス ID (PID) |
+| `ProcessId` | 整数 | 新しく作成されたプロセスのプロセス ID (PID) |
 | `ProcessCommandLine` | string | 新しいプロセスの作成に使用するコマンド ライン |
 | `ProcessIntegrityLevel` | string | 新しく作成されたプロセスの整合性レベル。 Windows、ダウンロードしたインターネットから起動した場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てる必要があります。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
 | `ProcessTokenElevation` | string | 新しく作成されたプロセスに適用されるトークン昇格の種類を示します。 指定できる値: TokenElevationTypeLimited (制限あり)、TokenElevationTypeDefault (standard)、TokenElevationTypeFull (昇格) |
@@ -93,11 +93,11 @@ ms.locfileid: "52024263"
 | `InitiatingProcessVersionInfoInternalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの内部ファイル名 |
 | `InitiatingProcessVersionInfoOriginalFileName` | string | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) からの元のファイル名 |
 | `InitiatingProcessVersionInfoFileDescription` | string | イベントを担当するプロセス (イメージ ファイル) のバージョン情報の説明 |
-| `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
+| `InitiatingProcessId` | 整数 | イベントを開始したプロセスのプロセス ID (PID) |
 | `InitiatingProcessCommandLine` | string | イベントを開始したプロセスの実行に使用されるコマンド ライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日時 |
 | `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (イメージ ファイル) を含むフォルダー |
-| `InitiatingProcessParentId` | int | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
+| `InitiatingProcessParentId` | 整数 | イベントを担当するプロセスを生成した親プロセスのプロセス ID (PID) |
 | `InitiatingProcessParentFileName` | string | イベントを担当するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
 | `InitiatingProcessSignerType` | string | イベントを開始したプロセス (イメージ ファイル) のファイル 署名者の種類 |
@@ -107,7 +107,7 @@ ms.locfileid: "52024263"
 | `AdditionalFields` | string | JSON 配列形式のイベントに関する追加情報 |
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

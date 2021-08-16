@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2354a6b86f88ac8d49956677d318700c8e104719
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 05ea44a0ffdf66a96c9915ca84639033bc59be7e946263ec2332b902e6d17daf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53588139"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863633"
 ---
 # <a name="create-indicators-based-on-certificates"></a>証明書に基づいてインジケーターを作成する
 
@@ -72,7 +72,7 @@ ms.locfileid: "53588139"
 
 4. [概要] タブで詳細を確認し、[保存] を **クリックします**。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [インジケーターの作成](manage-indicators.md)
 - [ファイルのインジケーターを作成 ](indicator-file.md)

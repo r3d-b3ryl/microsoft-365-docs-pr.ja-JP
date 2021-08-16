@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 91891af35def83f21b3db8c7e8fa4b320bef563c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 5aa38bc1209b6ad114892805aef4ee3c462fdf1844775946b86801f2796cb96d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926165"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863513"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のレポート
 
@@ -48,7 +48,7 @@ Windowsイベントは、セキュリティ アカウント マネージャー (
 
 PowerShell、WMI、またはサーバーを使用して状態を監視または決定Microsoft Azure、(展開、管理、およびレポートオプションの表)[を参照してください](deploy-manage-report-microsoft-defender-antivirus.md#ref2)。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [Windows Server 2016 および 2019 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)

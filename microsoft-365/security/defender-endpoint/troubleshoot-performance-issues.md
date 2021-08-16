@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 146cda79ef70500ccc016f5064d1b1847b69b6ff
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d760a122527c3d5c9578188043ec2fdc56c5840b457a2f177263bfb9fcc4ad93
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656609"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889480"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング
 
@@ -58,7 +58,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
 
 `Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%`
 
-|フィールド名|説明|
+|フィールド名|Description|
 |---|---|
 |ProcessImageName|プロセス イメージ名|
 |TotalTime|このプロセスによってアクセスされたファイルのスキャンに費やされた累積時間 (ミリ秒単位)|
@@ -121,7 +121,7 @@ Microsoft Defender for Endpoint のリアルタイム保護サービスに関連
         >
         > ![Procmon の最小化](images/procmon-minimize.png)
 
-7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 **[OK]** を選択します。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
+7. 手順 6 の手順の 1 つを実行すると、次にフィルターを設定するオプションが表示されます。 **[OK]** をクリックします。 キャプチャが完了したら、いつでも結果をフィルター処理できます。
 
     ![[フィルター処理名] は [システム除外]](images/procmon-filter-options.png)
 

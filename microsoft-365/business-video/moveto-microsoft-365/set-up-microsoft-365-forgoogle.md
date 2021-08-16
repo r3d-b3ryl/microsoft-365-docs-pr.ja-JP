@@ -15,19 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Google Workspace からの移行のMicrosoft 365準備が整った状態で設定する方法について説明します。
-ms.openlocfilehash: 42b8cd86ec03c4d4b43a4d32a1cee56e94bb7147
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 231847c9d3a0b34e4422a8e2f8fb93bc59e0c39f3e01be42b0c0c71ea8963a2a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928188"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831625"
 ---
 # <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Google ワークスペースのMicrosoft 365の設定
 
@@ -38,7 +37,7 @@ Google Workspace からメール、予定表、連絡先を移行するには、
 ## <a name="try-it"></a>お試しください! 
 
 1. サインインして [[管理者](https://office.com)office.com] を **選択します**。
-1. [管理センター Microsoft 365で、[ガイド付きセットアップ **に移動] を選択します**。 
+1. [ガイド付きMicrosoft 365 管理センター] で、[**ガイド付きセットアップに移動] を選択します**。 
 1. 必要に応じて、アプリOfficeインストールし、[続行] を **選択します**。 
 1. Google ワークスペースから移行する場合は、既定のドメインを選択し、[このドメインを使用する **] を選択します**。 
 1. ユーザーの名前と必要なユーザー名を入力し、ユーザーのパスワードを受け取る電子メール アドレスを確認してから、[ユーザーの追加とライセンスの割り当て] を **選択します**。 

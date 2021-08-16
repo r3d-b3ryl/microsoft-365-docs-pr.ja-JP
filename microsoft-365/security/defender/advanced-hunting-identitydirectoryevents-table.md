@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの IdentityDirectoryEvents テーブル
 description: 高度なハンティング スキーマの IdentityDirectoryEvents テーブルのドメイン コントローラーイベントと Active Directory イベントについて説明します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、IdentityDirectoryEvents、ドメイン コントローラー、Active Directory、Microsoft Defender for Identity、IDENTITY
+keywords: 高度なハンティング、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、description、IdentityDirectoryEvents、ドメイン コントローラー、Active Directory、Microsoft Defender for Identity、IDENTITY
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b42ff09f1e363f115ecc06c361c8386b328b0bcb
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 8b4c886984696f2d6223ea84ae5c4e2572c72a9e1487679d6cdd4d015b2c6695
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933003"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863429"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -68,7 +68,7 @@ ms.locfileid: "51933003"
 | `ReportId` | long | イベントの一意識別子 |
 | `AdditionalFields` | string | エンティティまたはイベントに関する追加情報 |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

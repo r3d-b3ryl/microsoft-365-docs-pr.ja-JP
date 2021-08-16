@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 感度ラベルを作成および管理する方法について学習します。
-ms.openlocfilehash: 26697265088a2a59ac145eeff2816b816b95a149
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f47e57c1085e054dc5b1936fcd83e2a41f3bd9980a1d69f6ac41451e1596a2e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537381"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900654"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>感度ラベルを使用してドキュメントを保護する
 

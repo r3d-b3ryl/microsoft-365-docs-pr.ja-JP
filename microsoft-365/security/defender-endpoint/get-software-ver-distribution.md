@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fadfce8b6602800610f547c782e78903462f238c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c8ef316dbd25436221a15777f992faf943c3dc6ee2783dd92afa270d4e72cfdf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655661"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863657"
 ---
 # <a name="list-software-version-distribution"></a>ソフトウェア バージョンの配布を一覧表示する 
 
@@ -102,7 +102,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/distr
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

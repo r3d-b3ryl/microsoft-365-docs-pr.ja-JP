@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a4d2db1ce27d6da9ba32baa2f646ea0872c2636f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2e0bab73601f9c30b13ceec23dacd711eafd20e9c4fb3a87f2efd42059911f81
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852453"
 ---
 # <a name="payment-information-for-faroe-islands"></a>フェロー諸島の支払い情報
 
@@ -31,6 +31,6 @@ ms.locfileid: "52535544"
 **Bank:** シティバンク(ロンドン)  
 **SWIFT コード/BIC:** CITIGB2L  
 **IBAN:** GB31CITI18500812207591  
-**SORT コード:** 185008  
+**SORT コード: 185008**  
 **アカウント番号:** 12207591  
 **アカウント名:** MICROSOFT

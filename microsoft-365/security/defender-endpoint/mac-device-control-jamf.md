@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3b96bc33763ded81a760e3d0d0ba6459fa2b5857
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f4a5771cc78f1872d57fb8301cdfb1d7d47ae27c64a4aa6f1ab2e0333ba5548f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655589"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863597"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>JAMF のデバイス制御ポリシーの例
 
@@ -219,6 +219,6 @@ ms.locfileid: "53655589"
 </plist> 
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [macOS のデバイス制御の概要](mac-device-control-overview.md)

@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 5f339d999f45cdd756e8d9170b2ac784062c003c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ffcb986198cbe672b935980aea39f340bab947b9f3ba21ad890feadf6cc8f2ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657329"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863681"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダーへのアクセス制御で重要なフォルダーを保護する
 
@@ -110,7 +110,7 @@ DeviceEvents
 2. [**イベント ビューアー]** と入力スタート メニューイベント ビューアー Windows開きます。
 3. 左側のパネルの [アクション] **で、[** カスタム ビュー **のインポート... を選択します**。
 4. 抽出した場所に *移動cfa-events.xml選択* します。 または [、XML を直接コピーします](event-views.md)。
-5. **[OK]** を選択します。
+5. **[OK]** をクリックします。
 
 次の表に、フォルダー アクセスの制御に関連するイベントを示します。
 

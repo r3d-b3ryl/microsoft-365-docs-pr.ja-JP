@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ba47c83a81797f30c956ca16023b299e167566e5
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: eb8387ea5e18ce438b901fcc4159868fb3e41cbdb91ed1ccf68434f70e9aac0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536960"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852525"
 ---
 # <a name="payment-information-for-china-prc"></a>中国の支払い情報 (PRC)
 
@@ -31,7 +31,7 @@ CNY で支払いを行い、支払い送金の会社名と請求書番号を参�
 **Bank:** シティバンク  
 **ブランチ:** 香港  
 **SWIFT コード:** CITIHKHX  
-**CNAP コード:** 989584000600  
+**CNAP コード: 989584000600**  
 **アカウント番号:** 1199527009  
 **アカウント名:** MICROSOFT REGIONAL SALES CORP  
 **備考: HK の RMB RTGS チャネルを通じて支払います。**
