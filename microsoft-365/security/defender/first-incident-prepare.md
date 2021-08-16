@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fcdce7f5a41c23dfe33eb75ef15b579ac12c8742
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: aa4080c6cfbbf0af93587e00b9b6d7489e6ed2da0e3fde1a0be8f84595026b7f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897890"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>最初のインシデントのセキュリティ態勢を準備する
 
@@ -45,7 +45,7 @@ Microsoft 365 Defender、インシデント防止のいくつかの側面に対�
 - 脅威と脆弱性管理の脆弱性評価による [脅威の防止](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - 最新のセキュリティ脅威を理解して、セキュリティ脅威に備える
 
-## <a name="step-1-implement-zero-trust"></a>手順 1。 ゼロ信頼の実装
+## <a name="step-1-implement-zero-trust"></a>手順 1. ゼロ信頼の実装
 
 [ゼロトラスト](/security/zero-trust/) は、モバイルワークフォース、ユーザー、デバイス、アプリケーション、データなど、モダンな環境の複雑な性質を考慮した統合セキュリティ哲学とエンドツーエンド戦略です。 Microsoft 365 Defender では、すべての検出を一貫した方法で管理するための単一のウィンドウを提供することで、セキュリティ運用チームがゼロトラストの指針を簡単に[](/security/zero-trust/#guiding-principles-of-zero-trust)実装できます。 
 
@@ -55,7 +55,7 @@ Microsoft 365 Defender のコンポーネントは、デバイス コンプラ�
 
 自動化は、ゼロトラスト環境を実装して維持する上で重要な部分であり、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数も減らします。 Microsoft 365 Defender のコンポーネントは、修復アクション[(Microsoft 365](m365d-autoir.md)セキュリティ センターでのインシデントの調査と呼ばれる)、通知アクション[、ServiceNow](https://microsoft.service-now.com/sp/)などのサポート チケットの作成など、自動化できます。
 
-## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2。 組織のセキュリティ体制を決定する
+## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2. 組織のセキュリティ体制を決定する
 
 次に、組織は Microsoft [Secure Score](microsoft-secure-score.md)を使用して、Microsoft 365 Defenderを決定し、その改善方法に関する推奨事項を検討できます。 スコアが高いほど、組織によってセキュリティに関する推奨事項と改善のアクションが多くなります。 セキュリティで保護されたスコアの推奨事項は、さまざまな製品間で取り上げ、組織がスコアを上げるのをさらに高くすることができます。 
 
@@ -76,8 +76,8 @@ Microsoft 365 Defender のコンポーネントは、デバイス コンプラ�
 - アクティブな脅威アクターとそのキャンペーン
 - 人気のある新しい攻撃手法
 - 重大な脆弱性
-- 一般的な攻撃の表面
-- 一般的なマルウェア
+- 一般的な攻撃対象領域
+- 流行しているマルウェア
 
 また、脅威分析では、構成とアラートを確認して、危険にさらされている方法と、レポートに適用されるアクティブなアラートが発生したかどうかを判断します。
 

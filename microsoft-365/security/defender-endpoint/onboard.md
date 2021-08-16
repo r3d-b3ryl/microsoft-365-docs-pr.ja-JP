@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1fee26356a7a705b1e4d8a5bebb36b9adbcfd123
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 18d3023900d624afe9b85c71d350c6e8e89f552386a23acc6f5b623d03e7b1f9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651857"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898061"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>Microsoft Defender for Endpoint の機能を構成および管理する
 

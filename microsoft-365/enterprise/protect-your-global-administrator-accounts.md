@@ -22,16 +22,16 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: この記事では、サブスクリプションへのグローバル管理者アクセスの保護に関Microsoft 365します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c929651f3e70a1aeef16cdf48d853d675820833
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 97ef59ff9b08ba9d763b18381b76a697de2e4338f28fbfb3799eba53d89e9c09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926549"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904697"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>グローバル管理者Microsoft 365アカウントを保護する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 サブスクリプションのセキュリティ侵害 (情報の収集やフィッシング攻撃など) は、通常、Microsoft 365 グローバル管理者アカウントの資格情報を侵害することで行われます。 クラウドのセキュリティは、お客様と Microsoft のパートナーシップです。
   
@@ -52,7 +52,7 @@ Microsoft では、組織の保護に役立つ機能を提供していますが�
 
 役割をユーザー アカウントに割り当てるなど、グローバル管理者特権を必要とする管理タスクは比較的少ない。 したがって、グローバル管理者の役割が割り当てられている日常のユーザー アカウントを使用する代わりに、次の手順を実行します。
   
-1. グローバル管理者の役割が割り当てられているユーザー アカウントのセットを決定します。 この操作は、管理センター Microsoft 365、または次の Azure Active (Azure AD) Directory PowerShell を使用して、Graphできます。
+1. グローバル管理者の役割が割り当てられているユーザー アカウントのセットを決定します。 この操作は、Microsoft 365 管理センターまたは次の Azure Active (Azure AD) ディレクトリ PowerShell Graphします。
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName

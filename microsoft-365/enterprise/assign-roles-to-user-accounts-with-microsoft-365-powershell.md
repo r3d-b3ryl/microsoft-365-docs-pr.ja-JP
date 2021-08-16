@@ -20,21 +20,21 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: この記事では、管理者ロールをユーザー アカウントに割り当てるMicrosoft 365 PowerShell を使用する方法について説明します。
-ms.openlocfilehash: 84e785052c970ca15487540c3904eacdd0e9ca28
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ef02c57037e17d17455ea19e78beefd221fc678386fe1fbb68f465da0fe0df36
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904913"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して管理者の役割Microsoft 365ユーザー アカウントに割り当てる
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 PowerShell を使用してユーザー アカウントに役割を簡単に割り当Microsoft 365。
 
 >[!Note]
->管理者の役割を[管理センターで](../admin/add-users/assign-admin-roles.md)ユーザー アカウントに割り当てるMicrosoft 365します。
+>管理者ロールを[ユーザー アカウントに割](../admin/add-users/assign-admin-roles.md)り当てる方法については、Microsoft 365 管理センター。
 >
 >その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
 >
@@ -48,7 +48,7 @@ PowerShell を使用してユーザー アカウントに役割を簡単に割�
 次に、ロールの名前を決めます。 「[管理者ロールのアクセス許可」を参照Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 >[!Note]
->この記事のメモに注意してください。 一部の役割名は、Azure Active Directory (Azure AD) PowerShell で異なります。 たとえば、管理者センター SharePoint *管理者* ロールは、Azure Microsoft 365 PowerShell SharePointサービス管理者ADです。
+>この記事のメモに注意してください。 一部の役割名は、Azure Active Directory (Azure AD) PowerShell で異なります。 たとえば、Azure *SharePoint PowerShell* の Microsoft 365 管理センター管理者SharePoint管理者ADします。
 >
 
 次に、サインイン名と役割名を入力し、次のコマンドを実行します。
@@ -156,7 +156,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayNam
   Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
-    このコマンドは、ユーザー アカウントの UPN を UPN で並べ替え、一度に 1 つの画面で一覧表示します。 Where コマンドレットを使用 **して** リストをフィルター処理できます。 次に例を示します:
+    このコマンドは、ユーザー アカウントの UPN を UPN で並べ替え、一度に 1 つの画面で一覧表示します。 Where コマンドレットを使用 **して** リストをフィルター処理できます。 次に例を示します。
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More

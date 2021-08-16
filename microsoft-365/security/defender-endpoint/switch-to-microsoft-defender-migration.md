@@ -24,12 +24,12 @@ ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: cff0810a4469d3c2d9ff2fe0fe5100b7a37408ae
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: eeb2a64c82d5edec57e7f53a00d8dcedcfadc2900161462b826392a1fea4c2be
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897751"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Microsoft 以外のエンドポイント保護から Microsoft Defender for Endpoint への切り替え
 
@@ -55,7 +55,7 @@ Defender for Endpoint への移行プロセスは、次の表に示す 3 つの�
 
 この移行ガイドでは、Defender for [](microsoft-defender-antivirus-in-windows-10.md) Endpoint への移行[](overview-endpoint-detection-response.md)の開始点として、次世代の保護とエンドポイントの検出および応答機能に重点を置いています。 ただし、Defender for Endpoint には、ウイルス対策やエンドポイント保護以外の機能が含まれています。 Defender for Endpoint は、予防保護、侵害後の検出、自動調査、および対応のための統合プラットフォームです。 次の表に、Defender for Endpoint の機能の概要を示します。 
 
-| 機能/機能 | 説明 |
+| 機能/機能 | Description |
 |---|---|
 | [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md) | 脅威& 脆弱性の管理機能は、エンドポイント (デバイスなど) 全体の弱点を特定、評価、修復するのに役立ちます。 |
 | [攻撃面の減少](overview-attack-surface-reduction.md) | 攻撃表面の縮小ルールは、組織のデバイスとアプリケーションをサイバー脅威や攻撃から保護するのに役立ちます。 |
@@ -63,7 +63,7 @@ Defender for Endpoint への移行プロセスは、次の表に示す 3 つの�
 | [エンドポイントでの検出と対応](overview-endpoint-detection-response.md) | エンドポイントの検出および応答機能は、侵入の試みとアクティブな侵害を検出、調査、および対応します。  |
 | [高度な追求](advanced-hunting-overview.md) | 高度な検出機能により、セキュリティ運用チームは既知または潜在的な脅威のインジケーターとエンティティを検索できます。 |
 | [動作ブロックと封じ込め](behavioral-blocking-containment.md) | 動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作に基づいて脅威を特定し、停止し、ツリーを処理するのに役立ちます。 |
-| [自動調査と修復](automated-investigations.md) | 自動調査および応答機能は、アラートを調べ、侵害を解決するために直ちに修復アクションを実行します。 |
+| [調査と修復の自動化](automated-investigations.md) | 自動調査および応答機能は、アラートを調べ、侵害を解決するために直ちに修復アクションを実行します。 |
 | [脅威の検出サービス](microsoft-threat-experts.md)(Microsoft 脅威エキスパート) | 脅威検出サービスは、セキュリティ運用チームに専門家レベルの監視と分析を提供し、重要な脅威を見逃しなくするために役立ちます。 |
 
 **詳細については、次の情報を参照してください。「Defender [for Endpoint」を参照してください](microsoft-defender-endpoint.md)。**

@@ -12,16 +12,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 はサポートの終了に達しました。 この計画ロードマップを使用して、Exchange Onlineまたは新しいバージョンのExchange Server準備します。
-ms.openlocfilehash: bbc7fb83537621a47a866bf0ca129a38e21f055e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: dc7a9355be8232daefb158ca143fac377949480e714de77a644b5f8b1bdc3c6a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289129"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904956"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 のサポート終了のロードマップ
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Exchange Server 2010 年 10 月 **13** 日にサポートが終了しました。 Exchange 2010 から Microsoft 365、Office 365、または Exchange 2016 への移行をまだ開始していない場合は、計画を開始します。
 
@@ -199,7 +199,7 @@ Exchange 2016 には、以前のリリースのすべての機能が含Exchange�
 
 ****
 
-|考慮事項|詳細情報|
+|考慮事項|詳細|
 |---|---|
 |サポート終了日|2010 Exchangeと同様に、各バージョンExchangeサポート終了日が設定されています。 <p> Exchange 2013 - 2023 年 4 月 <p> Exchange 2016 - 2025 年 10 月 <p> サポート終了日より早く、別の移行を実行する必要があります。 2023 年 4 月は、思ったよりずっと近いです。|
 |2013 Exchange 2016 への移行パス|2010 Exchange から新しいバージョンへの移行パスは、2013 年または 2016 年Exchange選択Exchangeです。 <p> 2013 Exchange 2016 を既存の 2010 組織Exchangeインストールします。 <p> サービスおよび他のインフラストラクチャを 2013 または 2016 Exchangeに移動します。 <p> メールボックスとパブリック フォルダーを 2013 または 2016 Exchange 2010 サーバーの残りの使用停止Exchange移動します。|

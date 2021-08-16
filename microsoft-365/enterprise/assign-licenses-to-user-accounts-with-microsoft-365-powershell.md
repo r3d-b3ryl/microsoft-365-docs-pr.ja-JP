@@ -21,20 +21,20 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: この記事では、PowerShell を使用してライセンスのないユーザーにライセンス Microsoft 365割り当てる方法について説明します。
-ms.openlocfilehash: 6d7e005aff018394810082de57c68ea289057f8e
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 5ce0a8a5cab4acf5db2e72f56526228a8f78b7809677026267bd6caceff77004
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572623"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904889"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>PowerShell Microsoft 365アカウントにライセンスを割り当てる
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 ユーザーは、アカウントにライセンス プランMicrosoft 365が割り当てられるまで、すべてのサービスを使用できません。 PowerShell を使用すると、ライセンスのないアカウントにライセンスをすばやく割り当てできます。 
 
-ユーザー アカウントには、最初に場所を割り当てる必要があります。 場所の指定は、管理センターで新しいユーザー アカウントを作成するMicrosoft 365[です](../admin/add-users/add-users.md)。 
+ユーザー アカウントには、最初に場所を割り当てる必要があります。 場所の指定は、ユーザー アカウントで新しいユーザー アカウントを作成する際に[必要Microsoft 365 管理センター。](../admin/add-users/add-users.md) 
 
 オンプレミスの Active Directory ドメイン サービスから同期されたアカウントは、既定では場所が指定されていません。 これらのアカウントの場所は、次の場所から構成できます。
 
@@ -43,7 +43,7 @@ ms.locfileid: "52572623"
  - [Azure portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) ( Active **Directory Users**  >  **>** プロファイル連絡先>**国**  >    >  または地域)
 
 >[!Note]
->[管理者センターでユーザー アカウントに](../admin/manage/assign-licenses-to-users.md)ライセンスを割り当てるMicrosoft 365します。 その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
+>[ユーザー アカウントにライセンスを割り当てる方法については](../admin/manage/assign-licenses-to-users.md)、Microsoft 365 管理センター。 その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
@@ -117,7 +117,7 @@ Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-例:
+次に例を示します。
 
 ```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 58e5c388ceb2fa03782c073bc0802da5b6d06564
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 994e192be3e3570734cc88ad815fee5499bfaca8acb9a6c7d6d5934365673ace
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898080"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint 展開の準備
 
@@ -60,7 +60,7 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 -   I = このプロジェクトの通知
 
-| 名前                 | 役割                                                                                                                                                                                                          | アクション |
+| 名前                 | 役割                                                                                                                                                                                                          | Action |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 名前とメールを入力する | **最高情報セキュリティ責任者 (CISO)** 新しいテクノロジ展開の組織の内部でスポンサーを務め、役員 *の代表者。*                                                  | だから     |
 | 名前とメールを入力する | **サイバー防御運用センター (CDOC)** の代表は *、CDOC* チームの担当者で、この変更が顧客のセキュリティ運用チームのプロセスとどのように一致するのか定義します。       | だから     |
@@ -74,7 +74,7 @@ Defender for Endpoint の展開は、次の 3 フェーズプロセスです。
 
 このセクションは、環境が関係者によって深く理解され、テクノロジやプロセスに必要な潜在的な依存関係や変更を特定するのに役立ちます。
 
-| 内容                                  | 説明 |
+| 内容                                  | Description |
 |---------------------------------------|-------------|
 | エンドポイント数                        |    オペレーティング システム別のエンドポイントの総数。         |
 | サーバー数                          |    オペレーティング システムのバージョン別のサーバーの総数。    |

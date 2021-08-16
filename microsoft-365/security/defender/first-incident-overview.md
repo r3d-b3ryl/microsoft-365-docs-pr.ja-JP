@@ -1,6 +1,6 @@
 ---
 title: 最初のインシデントへの対応の概要
-description: Defender の最初のインシデントに対応するMicrosoft 365。
+description: ユーザーの最初のインシデントに対応する基本Microsoft 365 Defender。
 keywords: インシデント、アラート、調査、相関関係、攻撃、デバイス、ユーザー、ID、ID、メールボックス、電子メール、365、microsoft、m365、インシデント対応、サイバー攻撃
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6e65a12f42b9f5f75c1a19cb9c4a261c94feaf31
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: bec4ca87c3827c8b24fa7017c01b40a60fce80eecb636d6d91adf0ceb9b8ecf1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897780"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>最初のインシデントへの対応の概要
 
@@ -38,7 +38,7 @@ ms.locfileid: "52841716"
 
 組織のインシデント対応戦略は、ますます破壊的なセキュリティ インシデントやサイバー犯罪に対処する能力を決定します。 予防措置を講じすることは重要ですが、検出されたインシデントを迅速に取り込み、根絶し、復旧する能力は、損害とビジネス上の損失を最小限に抑える可能性があります。
 
-このインシデント対応のチュートリアルでは、セキュリティ運用チームの一員として、Defender 内の主要なインシデント対応手順のほとんどを実行Microsoft 365します。 それらのステップは次のとおりです。
+このインシデント対応のチュートリアルでは、セキュリティ運用チームの一員として、インシデントの主要な対応手順のほとんどを、Microsoft 365 Defender。 それらのステップは次のとおりです。
 
 - セキュリティ態勢の準備
 - インシデントごとに次の値を指定します。
@@ -48,7 +48,7 @@ ms.locfileid: "52841716"
 
 セキュリティ インシデントは、国立標準技術研究所 (NIST) によって「情報システムの機密性、整合性、または可用性を実際または潜在的に危険にさらす発生」と定義されます。またはシステムが処理、保存、または送信する情報。または、セキュリティ ポリシー、セキュリティ手順、または許容される使用ポリシーに対する違反または差し迫った脅威を構成します。
 
-Defender のインシデントMicrosoft 365分析とインシデント対応の論理的な開始点です。 インシデントの分析と修復は、通常、ほとんどのセキュリティ運用チームのタスクを構成します。
+インシデントはMicrosoft 365 Defender分析およびインシデント対応の論理的な開始点です。 インシデントの分析と修復は、通常、ほとんどのセキュリティ運用チームのタスクを構成します。
 
 ## <a name="next-step"></a>次の手順
 
@@ -58,7 +58,7 @@ Defender のインシデントMicrosoft 365分析とインシデント対応の�
 
 ## <a name="see-also"></a>関連項目
 
-Defender のインシデント対応Microsoft 365:
+次のインシデント対応Microsoft 365 Defender。
 
 - [インシデントの概要](incidents-overview.md)
 - [インシデントの調査](investigate-incidents.md)

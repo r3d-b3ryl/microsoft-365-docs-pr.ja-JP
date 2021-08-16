@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f60208b06e66c1e9803e05ee1fc41376824e9b56
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 8413b4af84a0c68137c42f2defc495478c81695335a84ad8ee57e67658423adf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022536"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857197"
 ---
 # <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>ユーザーの誤検知または誤検知に対処Microsoft 365 Defender
 

@@ -19,16 +19,16 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: 2017 年 10 月 10 日、Project Server 2007、Project ポートフォリオ サーバー、および Project 2007 のサポートが終了しました。 この記事を使用して、今すぐアップグレードを計画します。
-ms.openlocfilehash: 12447eb2a021b3f92e3557b2c3ea87e859841346
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3ac7a40ec9fbaa8e495f9dd9321712b77aaf5b4b4b171c391593420eda45ddd7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904711"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Project Server 2007 のサポート終了ロードマップ
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 2017 年Office 2007 サーバーとアプリケーションのサポートは終了し、移行の計画を検討する必要があります。 現在、サーバー 2007 およびProject製品を使用している場合は、次のサポート終了日に注意してください。
   
@@ -219,7 +219,7 @@ Projectポートフォリオ サーバー 2007 は、ポートフォリオ戦略
     
 - [Microsoft Office Project 2007 移行ガイドを参照してください。](https://go.microsoft.com/fwlink/p/?linkid=841279)
     
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [SharePointServer 2007 のサポート終了ロードマップ](sharepoint-2007-end-of-support.md)
   

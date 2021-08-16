@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ、チーム、およびグループのライフサイクルのYammer。
-ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9532fb7f7c57cf883a0c4d989c5372239eab1c9666890dabfa598cacdbb652cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538833"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833017"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>グループ、チーム、およびグループのライフサイクルのYammer
 
@@ -267,6 +267,6 @@ Microsoft TeamsのMicrosoft Teams、Yammerユーザーと管理者の両方が�
 
 Yammer管理者がネットワーク[データをエクスポートします](/yammer/manage-security-and-compliance/export-yammer-enterprise-data)。 ただし、そうすると、ネットワーク全体のすべての会話がエクスポートされます。 結果のエクスポートには、グループ ID が一覧表示されます。 この ID に基づいて会話をフィルター処理できます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [元従業員を削除し、データをセキュリティで保護する](/microsoft-365/admin/add-users/remove-former-employee)
