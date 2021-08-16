@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '会議室メールボックスまたは備品用メールボックスを作成すると、組織の全ユーザーが Outlook を使用して会議やイベント用にそのメールボックスを予約できます。 '
-ms.openlocfilehash: 44233261f266a6caf4b4bea78d0dbf83d98daefe537121e0ba37748e71900462
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b5db5cfbbcacf501a280df98c4d1f9fc21fe509
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824912"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346774"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会議室メールボックスと備品用メールボックス
 
@@ -61,7 +61,7 @@ ms.locfileid: "53824912"
     
 ## <a name="set-up-room-and-equipment-mailboxes"></a>会議室メールボックスと備品用メールボックスをセットアップする
 
-会議室メールボックスまたは備品用メールボックスを設定するには、Microsoft 365 管理センターに移動します  (この操作には管理者アクセス許可が必要です。) メールボックスを作成し、会議やイベントの予約に使用できることを全ユーザーに知らせます。
+会議室または備品用メールボックスを設定するには、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に移動します。 (この操作には管理者アクセス許可が必要です。) メールボックスを作成し、会議やイベントの予約に使用できることを全ユーザーに知らせます。
   
 1. 管理センターで、[**リソース**] \> [[会議室&amp;備品](https://go.microsoft.com/fwlink/p/?linkid=2067334)] ページの順に移動します。
   
