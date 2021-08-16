@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで集中展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: cc2051bf28dca082c3468fd2c292eff23c4e857e4b896ccfd03f78e5bb53552e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65f7d6c292d351a25b2d5ba499bd3791f5b260e8
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825297"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346798"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>管理センターでアドインを展開する
 
-Office アドインは、ドキュメントをカスタマイズしたり、Web 上の情報にアクセスする方法を効率化したりする際に役立ちます (「[Office アドインの使用を開始する](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)」を参照)。 管理者は、Officeの集中展開機能を使用して、組織内のユーザーに対してMicrosoft 365 管理センター。 集中展開は、ほとんどの管理者が組織内のユーザーとグループにアドインを展開するための、推奨される機能豊富な方法です。
+Office アドインは、ドキュメントをカスタマイズしたり、Web 上の情報にアクセスする方法を効率化したりする際に役立ちます (「[Office アドインの使用を開始する](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)」を参照)。 管理者は、Officeの一元展開機能を使用して、組織内のユーザーのアドインを展開<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター。</a> 集中展開は、ほとんどの管理者が組織内のユーザーとグループにアドインを展開するための、推奨される機能豊富な方法です。
 
 組織が集中展開をサポートできるかどうかを判断する方法の詳細については、「アドインの集中展開が組織に対して機能するかどうかを判断する」 [を参照してください](centralized-deployment-of-add-ins.md)。
 

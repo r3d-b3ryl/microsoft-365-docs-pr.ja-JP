@@ -1,7 +1,7 @@
 - name: Microsoft 365 管理センターのヘルプ
   href: index.yml
   items:
-    - name: 概要
+    - name: 作業の開始
       href: setup/index.yml
       items:
         - name: サインアップ
@@ -268,7 +268,7 @@
             - name: 管理センターでアドインを管理する
               href: manage/manage-addins-in-the-admin-center.md
             - name: 一元展開に関する FAQ
-              href: manage/centralized-deployment-faq.md
+              href: manage/centralized-deployment-faq.yml
         - name: 業界ニュースを管理する
           href: manage/manage-industry-news.md
         - name: Office スクリプトの設定を管理する
@@ -425,3 +425,5 @@
       href: /office/troubleshoot/
     - name: サポートに連絡
       href: ../business-video/get-help-support.md
+    - name: ナビゲーション ガイド
+      href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json

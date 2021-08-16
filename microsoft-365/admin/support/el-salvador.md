@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4151df013ffd1116a65740dc44aed1707c6f3950
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f05b7a0ddee67cabac0b80303ded53bc7509e21579e4b512df657427cee609b9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296277"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883205"
 ---
 # <a name="contact-support-for-el-salvador"></a>エルサルバドルのサポートに問い合わせ
 

@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: グループを管理する方法Microsoft 365します。
-ms.openlocfilehash: 529bdb874661329497b103a1207b90625ad33a4b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4658f046ec6ce7fbd8039556f0faf30ee2860a7416dd99baff45e3efb4a532fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899333"
 ---
 # <a name="manage-microsoft-365-groups"></a>Microsoft 365 グループを管理する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-構成に応じてMicrosoft 365グループを複数の方法で管理できます。 ユーザー アカウントは[、Microsoft 365](../admin/add-users/index.yml)管理センター、PowerShell、Active Directory ドメイン サービス (AD DS)、または Azure Active Directory [(Azure AD)](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)管理センターで管理できます。 
+構成に応じてMicrosoft 365グループを複数の方法で管理できます。 ユーザー アカウントは、Microsoft 365 管理センター、PowerShell、Active Directory ドメイン サービス (AD DS)、または Azure Active Directory [(Azure AD) 管理センターで管理できます](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)。 [](../admin/add-users/index.yml) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>グループを管理する場所と方法を計画する
 

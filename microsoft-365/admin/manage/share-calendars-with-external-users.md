@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: ユーザーが組織の内部または外部Microsoft 365 管理センター予定表を共有できるよう、予定表の共有を有効にします。
-ms.openlocfilehash: ed0ee14c37f5c23d262d98408114143a3f84803ba8830461a659b4dc6c010902
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3183eb9f45333e26685c09d586b5f3c5137a4a56
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824589"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346750"
 ---
 # <a name="share-calendars-with-external-users"></a>予定表を外部ユーザーと共有する
 
@@ -39,15 +39,13 @@ ms.locfileid: "53824589"
 > [!NOTE]
 > Exchange Server 2013 (オンプレミスのソリューション) を使用する組織と予定表を共有する場合は、Exchange 管理者がクラウドとの認証リレーションシップをセットアップする必要があります。 これはフェデレーションと呼ばれる、最低限のソフトウェア要件を満たす必要があります。 詳細については、「[共有](/exchange/sharing-exchange-2013-help)」を参照してください。
   
-## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>[予定表] を使用して予定表の共有を有効Microsoft 365 管理センター
+## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Office 365 管理センターを使用して予定表の共有を有効にする
 
-1. 管理センターで、[組織の管理]**設定** \> **に移動設定。**
-
-2. [サービス] **タブで** 、[予定表] を **選択します**。
+1. 管理センターで、[組織の設定] 設定に移動し **、[** サービス] タブで [予定表 \> ] を **選択します**。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"></a>
   
 3. [予定表 **] ページ** で、ユーザーが自分の予定表を組織外のユーザーと共有するかどうかを選択Microsoft 365またはExchange。 匿名ユーザー (資格情報のないユーザー) がメールの招待を介して予定表にアクセスできるかどうかを選択します。
 
-4. ユーザーが利用できる予定表情報の種類を選択します。 すべての情報を許可するか、時間のみ、または時間、件名、場所にのみ制限できます。
+4. ユーザーが利用できるようにする予定表の情報の種類を選択します。 すべての情報を許可することも、時間のみ、時間、件名、場所のみに制限することもできます。
 
 ## <a name="invite-people-to-access-calendars"></a>予定表にアクセスできるようにユーザーを招待する
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: デバイスで Microsoft 365 サービスを使用する前に、最初にデバイスの Basic Mobility and Security に登録する必要Microsoft 365。
-ms.openlocfilehash: 65f3d224b6dd3832416d1f1c1b9d9a6d933f3305a419abebe997a4fb765a5989
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3bc3980b0716276acaaef172c04b6e742b4f8f7f
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826773"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346942"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>基本モビリティとセキュリティを使用してモバイル デバイスを登録する
 
@@ -32,7 +32,7 @@ ms.locfileid: "53826773"
 組織では、従業員がモバイル デバイスを使用して仕事用メール、予定表、およびドキュメントに安全にアクセスできる一方で、ビジネスが重要なデータをセキュリティで保護し、コンプライアンス要件を満たしていることを確認するために、Basic Mobility and Security を選択します。詳細については、「基本モビリティとセキュリティ[の概要」を参照Microsoft 365。](overview.md) 詳細については、「デバイスを登録するときに組織に表示できる [情報」を参照してください](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)。
 
 > [!IMPORTANT]
-> Microsoft 365 の Basic Mobility and Security にデバイスを登録する場合、作業組織がデバイスをワイプするオプションを許可すると共に、パスワードの設定が必要になる場合があります。 たとえば、パスワードが何度も誤って入力された場合、または使用条件が壊れている場合に、デバイスからすべてのデータを削除するために、Microsoft 365 管理センター からデバイスワイプを実行できます。
+> Microsoft 365 の Basic Mobility and Security にデバイスを登録する場合、作業組織がデバイスをワイプするオプションを許可すると共に、パスワードの設定が必要になる場合があります。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>からデバイス ワイプを実行すると、パスワードが何度も誤って入力された場合や、使用条件が壊れている場合など、デバイスからすべてのデータを削除できます。
 
 ## <a name="supported-devices"></a>サポート対象のデバイス
 

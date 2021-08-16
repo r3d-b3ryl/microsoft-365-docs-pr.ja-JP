@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: この記事では、PowerShell のグループに対して一般的な管理Microsoft 365する方法について説明します。
-ms.openlocfilehash: 22bf4d1f3187746483d8d904378e675562a62142
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 48555dd41ff18941a6cbce3ef9f25cb5e3727735c7c7cedfe1e6050556e96dfb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899426"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>PowerShell Microsoft 365グループを管理する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 この記事では、Microsoft PowerShell でグループの一般的な管理タスクを行うための手順について説明します。 また、グループの PowerShell コマンドレットを示します。 SharePoint サイトを管理する方法の詳細については、「[PowerShell を使用して SharePoint Online サイトを管理する](/sharepoint/manage-team-and-communication-sites-in-powershell)」を参照してください。
 
@@ -48,7 +48,7 @@ ms.locfileid: "52730560"
 ## <a name="allow-users-to-send-as-the-microsoft-365-group"></a>ユーザーがグループとして送信Microsoft 365する
 <a name="BK_LinkToGuideLines"> </a>
 
-グループを "送信者" にMicrosoft 365する場合は[、Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)コマンドレットと[Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission)コマンドレットを使用してこれを構成します。 この設定を有効にすると、Microsoft 365 グループ ユーザーは web 上の Outlook または Outlook を使用して、電子メールを送信し、電子メールに返信Microsoft 365できます。 ユーザーはグループに移動し、新しいメールを作成して、「メールボックス所有者として送信する」フィールドをグループのメール アドレスに変更することができます。
+グループを "送信者" にMicrosoft 365する場合は[、Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)コマンドレットと[Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission)コマンドレットを使用してこれを構成します。 この設定を有効にすると、Microsoft 365 ユーザーは Outlook または Outlook on the web を使用して電子メールを送信および返信Microsoft 365できます。 ユーザーはグループに移動し、新しいメールを作成して、「メールボックス所有者として送信する」フィールドをグループのメール アドレスに変更することができます。
 
 ([Exchange 管理センターでもこれを行うことができます](/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。)
 
@@ -150,7 +150,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>グループの表示名をMicrosoft 365する
 
-表示名は、グループの名前Microsoft 365します。 この名前は、Exchange 管理センターまたは管理センター Microsoft 365確認できます。 次のコマンドを実行して、グループの表示名を編集したり、既存のグループに表示Microsoft 365割り当Set-UnifiedGroupできます。
+表示名は、グループの名前Microsoft 365します。 この名前は、Exchange 管理センターまたは exchange 管理センター Microsoft 365 管理センター。 次のコマンドを実行して、グループの表示名を編集したり、既存のグループに表示Microsoft 365割り当Set-UnifiedGroupできます。
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
@@ -190,7 +190,7 @@ Microsoft 365既定では、Outlookグループは Private として作成され
 |[Set-UserPhoto](/powershell/module/exchange/set-userphoto) <br/> |ユーザーの写真をアカウントに関連付けるために使用します。 パスワードは Active Directory に格納されます。  <br/> |
 |[Remove-UserPhoto](/powershell/module/exchange/remove-userphoto) <br/> |グループの写真をMicrosoft 365する  <br/> |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [配布リストをグループにMicrosoft 365する](/office365/admin/manage/upgrade-distribution-lists)
 

@@ -561,7 +561,7 @@
 ####### [推奨メソッドとプロパティ](recommendation.md)
 ####### [すべての推奨事項を一覧表示する](get-all-recommendations.md)
 ####### [ID による推奨事項の取得](get-recommendation-by-id.md)
-####### [ソフトウェアによる推奨事項の取得](get-recommendation-software.md)
+####### [ソフトウェアによる推奨事項の取得](list-recommendation-software.md)
 ####### [推奨事項によるマシンの一覧表示](get-recommendation-machines.md)
 ####### [推奨事項による脆弱性の一覧表示](get-recommendation-vulnerabilities.md)
 
@@ -666,6 +666,17 @@
 ##### [非アクティブ デバイス](fix-unhealthy-sensors.md#inactive-devices)
 ##### [誤って構成されたデバイス](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [イベント ビューアーを使用して、マシン上のセンサー イベントとエラーを確認する](event-error-codes.md)
+
+#### [クライアント アナライザーを使用したセンサーの正常性の問題のトラブルシューティング]()
+##### [クライアント アナライザーの概要](overview-client-analyzer.md)
+##### [クライアント アナライザーのダウンロードと実行](download-client-analyzer.md)
+##### [Windows でのクライアント アナライザーの実行](run-analyzer-windows.md)
+##### [macOS または Linux でのクライアント アナライザーの実行](run-analyzer-macos-linux.md)
+##### [Windows で高度なトラブルシューティングを行うためのデータ収集](data-collection-analyzer.md)
+##### [アナライザー HTML レポートの理解](analyzer-report.md)
+##### [クライアント アナライザー ツールに関するフィードバックを提供する](analyzer-feedback.md)
+
+  
 
 #### [Microsoft Defender for Endpoint サービスに関する問題のトラブルシューティング]()
 ##### [サービスに関する問題のトラブルシューティング](troubleshoot-mdatp.md)

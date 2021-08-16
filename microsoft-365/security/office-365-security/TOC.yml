@@ -168,7 +168,7 @@
               href: manage-tenant-allows.md
             - name: テナントの許可/禁止リストのエントリを変更および削除する
               href: modify-remove-entries-tenant-allow-block.md
-        - name: セキュリティ/コンプライアンス センター のメッセージ追跡
+        - name: メッセージの追跡
           href: message-trace-scc.md
         - name: メッセージとファイルを Microsoft に報告する
           href: report-junk-email-messages-to-microsoft.md
@@ -182,6 +182,8 @@
           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
         - name: ゼロアワー自動消去 - スパムまたはマルウェアからの保護
           href: zero-hour-auto-purge.md
+        - name: 外部メールの自動転送を制御する
+          href: external-email-forwarding.md
     - name: 検出する
       items:
         - name: Defender for Office 365 用脅威エクスプローラー

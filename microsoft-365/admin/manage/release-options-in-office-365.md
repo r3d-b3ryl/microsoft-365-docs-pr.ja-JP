@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 新しい製品と機能の更新プログラムのリリース オプションを設定する方法については、Microsoft 365 管理センター。
-ms.openlocfilehash: 69cae62a2a468c27a210a5db65d1858046b758859c2dae0ed4ab90c1acf78d9c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c9a3478c15ad5505bae73b6821fc8ed9511f9b3e
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825039"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346786"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準リリースオプションまたはターゲット リリース オプションを設定する
 
@@ -95,7 +95,7 @@ ms.locfileid: "53825039"
 > [!IMPORTANT]
 > 以下の変更が適用される場合は、最大で 24 時間かかる場合Microsoft 365。 対象指定リリースをいったん有効にした後に無効にすると、予定された標準リリースにまだ到達していない機能にアクセスできなくなる可能性があります。 
   
-1. 管理センターで、[組織の設定] 設定に移動し **、[** 組織プロファイル] タブの [基本設定のリリース  >  ]**を選択します**。 
+1. 管理センターで、[組織の設定]の [組織設定] に移動し、[組織プロファイル] タブの [基本設定のリリース  >  ]<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"></a>**を選択します**。
 
 5. 対象リリースを無効にするには、[標準リリース] **を選択し**、[変更の保存] **を選択します**。 
     

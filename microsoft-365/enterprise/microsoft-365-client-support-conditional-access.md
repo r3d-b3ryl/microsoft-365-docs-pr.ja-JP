@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、条件付きアプリケーションをサポートするプラットフォーム、クライアント、および PowerShell モジュールAccess for Microsoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 763380429b8643c5dd01971117fccb040a9a0210
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 3548e692d81dc426fa03b4001db2b27b16d4a474dd9f8f531000ca6d57dab803
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286563"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899365"
 ---
 # <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365クライアント アプリのサポート: 条件付きアクセス
 

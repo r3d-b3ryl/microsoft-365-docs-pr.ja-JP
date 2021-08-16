@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループ メンバーのMicrosoft 365、電子メール アドレス、グループ名、または説明の編集、グループの動作のカスタマイズなど、さまざまなグループを管理する方法について説明します。
-ms.openlocfilehash: f568ef170125c72a8280a354091f9a3f18b65069d33dc455f31671d8ec8b16ae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6bdab4d473433622326e96b8f1e561a30eec1e80
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826499"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346858"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>グループを管理するMicrosoft 365 管理センター
 
@@ -34,7 +34,7 @@ ms.locfileid: "53826499"
 
 ## <a name="edit-the-group-name-or-description"></a>グループ名または説明を編集する
 
-1. 管理センターで、[グループ] を **展開し**、[グループ] を **クリックします**。
+1. 管理センターで、[グループ] を **展開し**、[グループ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**クリックします**</a>。
 
 2. 編集するグループを選択し、[名前と説明の編集 **] をクリックします**。
 
@@ -42,7 +42,7 @@ ms.locfileid: "53826499"
 
 ## <a name="manage-group-owners-and-members"></a>グループの所有者とメンバーを管理する
 
-1. 管理センターで、[グループ] を **展開し**、[グループ] を **クリックします**。
+1. 管理センターで、[グループ] を **展開し**、[グループ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**クリックします**</a>。
 
 2. 管理するグループの名前をクリックして、設定ウィンドウを開きます。
 
@@ -60,7 +60,7 @@ ms.locfileid: "53826499"
 
 グループ メンバーは、グループ内のグループに従うのを停止することを選択して、これらのメールの受信をOutlook。
 
-1. 管理センターで、[グループ] を **展開し**、[グループ] を **クリックします**。
+1. 管理センターで、[グループ] を **展開し**、[グループ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**クリックします**</a>。
 
 2. 管理するグループの名前をクリックして、設定ウィンドウを開きます。
 
@@ -72,7 +72,7 @@ ms.locfileid: "53826499"
 
 このオプションは、会社の電子メール アドレス (電子メール アドレスなど) を使用する場合 info@contoso.com。
  
-1. 管理センターで、[グループ] を **展開し**、[グループ] を **クリックします**。
+1. 管理センターで、[グループ] を **展開し**、[グループ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**クリックします**</a>。
 
 2. 管理するグループの名前をクリックして、設定ウィンドウを開きます。
 

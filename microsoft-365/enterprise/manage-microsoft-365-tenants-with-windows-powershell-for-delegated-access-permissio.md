@@ -17,21 +17,21 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: この記事では、PowerShell を使用して顧客のテナンシー Microsoft 365管理する方法について説明します。
-ms.openlocfilehash: 96c2c148b64d638ea977922f6a0ae3d5e23a8ace
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2bbe59f5c5c27830569be2c357a586152ced849c62de0b62e3d29fcc6d926d37
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289105"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899321"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任Microsoft 365アクセス許可 (DAP) パートナー Windows PowerShellを使用してテナントを管理する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Windows PowerShell、Syndication および クラウド ソリューション プロバイダー (CSP) パートナーは、顧客のテナント設定を管理し、レポートを簡単に行うことができます。この設定は、Microsoft 365 管理センター。 パートナー管理者アカウントが顧客テナンシーに接続するためには、「代理で管理」(AOBO) のアクセス許可が必要であることに注意してください。
 
 委任アクセス許可 (DAP) パートナー とは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。 他の会社のネットワーク プロバイダーまたは通信プロバイダーであることもよくあります。 ユーザーは、Microsoft 365サービスサービスにサブスクリプションをバンドルします。 Microsoft 365 サブスクリプションを販売すると、顧客テナンシーに対する管理 (AOBO) アクセス許可が自動的に付与され、顧客テナンシーの管理と報告が可能になります。
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 このトピックの手順では、PowerShell を使用してConnect[にMicrosoft 365する必要があります](connect-to-microsoft-365-powershell.md)。
 

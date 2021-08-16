@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ユーザーのテナントの計画、展開、および継続的なMicrosoft 365概要。
-ms.openlocfilehash: 7cc7ead75781ab2d8ac4776e3f6075de89fef8db
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 18a4f4f39b2c3fd530aecb9202032a2b571a9c7f4cf38fec489dfa88a81a2a98
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883225"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>エンタープライズ向けMicrosoft 365テナント管理
 
@@ -136,7 +136,7 @@ Microsoft 365テナントは、ヨーロッパや北アメリカなどの特定�
 |基本的なモビリティとセキュリティ|この組み込みサービスを使用して、iPhone、iPad、Android、Windows携帯電話など、ユーザーのモバイル デバイスをセキュリティで保護して管理します。|Microsoft 365 E3 または E5|
 ||||
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 これらの手順を使用して、テナントの設定と管理Microsoft 365します。
 

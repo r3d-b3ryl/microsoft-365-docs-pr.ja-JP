@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ef3a678e1ae23878701ca0305c16484786927399
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b955ad0deac5907aed998a3a7f31db625eedc6772df5bfe8dda1b57959a314cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297574"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882931"
 ---
 # <a name="contact-support-for-tanzania"></a>タンザニアのサポートに問い合わせ
 

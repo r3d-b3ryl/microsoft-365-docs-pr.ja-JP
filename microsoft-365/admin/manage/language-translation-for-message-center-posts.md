@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: メッセージ センターの投稿は英語のみですが、ユーザーが指定した言語で自動的に表示Microsoft 365。
-ms.openlocfilehash: ab0819b22e6f046af401ced778a8f9c06f43e4569f42f0ca7caef62130a154a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7256fe69fb010ce2c3bf77c99de91a4ee42285a7
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825333"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346810"
 ---
 # <a name="language-translation-for-message-center-posts"></a>メッセージ センターの投稿の言語の翻訳
 
@@ -38,7 +38,7 @@ ms.locfileid: "53825333"
   
 ## <a name="set-your-preferred-language"></a>優先する言語を設定する
 
-1. Microsoft 365 管理センターまたはホーム ページで、ウィンドウの右上隅にある [設定] アイコンを選択します。 
+1. ウィンドウまたは<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>から、ウィンドウの右上隅にある設定アイコンを選択します。
   
 2. **[言語とタイム ゾーン]** で、**[すべて表示]** を選択して、利用可能なオプションを表示します。 ドロップダウン メニューから目的の言語を選択し、**[保存]** を選択します。 Microsoft 365 で設定が更新され、新しい言語が表示されます。 すぐに設定が変更されない、または長く時間がかかる場合は、ブラウザーを最新の情報に更新するか、一度サインアウトしてからサインインし直します。
   

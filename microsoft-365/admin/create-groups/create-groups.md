@@ -23,33 +23,33 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループの作成と削除、Microsoft 365メンバーの追加と削除、グループの動作のカスタマイズについて説明します。
-ms.openlocfilehash: 98e4243705a027ab660099a4a1fbce470a9844d83b8f62715b6c62d2dde9d207
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 07546d32c8bd55ae1548b8f690d046e6b319bf87
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826509"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346870"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>グループを作成するMicrosoft 365 管理センター
   
-ユーザーは Outlook または他のアプリから Microsoft 365 グループを作成することができますが、管理者として、グループの作成または削除、メンバーの追加または削除、および動作のカスタマイズが必要な場合があります。 このMicrosoft 365 管理センターは、これを行う場所です。 
+ユーザーは Outlook または他のアプリから Microsoft 365 グループを作成することができますが、管理者として、グループの作成または削除、メンバーの追加または削除、および動作のカスタマイズが必要な場合があります。 この<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 管理センター</a>を実行する場所です。 
 
 > [!TIP]
 > Microsoft 365接続Yammerグループは、Yammer で作成する必要がありますが、他のグループと同様に、Microsoft 365 管理センターでMicrosoft 365できます。 詳細については、「グループとグループ[Yammer」をMicrosoft 365してください](/yammer/manage-yammer-groups/yammer-and-office-365-groups)。 
 
 ## <a name="create-a-microsoft-365-group"></a>Microsoft 365 グループを作成する
 
-1. 管理センターで、[グループ] を **展開し**、[グループ] を **クリックします**。
+1. 管理センターで、[グループ] を **展開し**、[グループ] を <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**クリックします**</a>。
 
 2. [グループ **の追加] を選択します**。
   
 3. [グループの **種類の選択] ページで**、[グループの種類]**をOffice 365し、[次** へ] を **選択します**。
 
-4. [基本 **] ページ** で、グループの名前を入力し、必要に応じて説明を入力します。 **[次へ]** を選択します。
+4. [基本 **] ページ** で、グループの名前を入力し、必要に応じて説明を入力します。 [**次へ**] を選択します。
     
 5. [設定 **の編集]** ページで、グループの一意の電子メール アドレスを入力し、プライバシー オプションを選択し、グループを追加するかどうかをMicrosoft Teams、[次へ] を選択 **します**。
     
-6. [所有者 **]** で、グループの管理に指定される 1 人または複数のユーザーの名前を選択します。 グループの所有者のみが、グループの受信トレイからメールを削除できます。 他のメンバーはグループの受信トレイからメールを削除することはできません。 **[次へ]** を選択します。
+6. [所有者 **]** で、グループの管理に指定される 1 人または複数のユーザーの名前を選択します。 グループの所有者のみが、グループの受信トレイからメールを削除できます。 他のメンバーはグループの受信トレイからメールを削除することはできません。 [**次へ**] を選択します。
     
 7. 設定を確認して変更を加えた後、[グループの作成] **を選択します**。
 

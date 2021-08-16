@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: グループMicrosoft 365グループを使用すると、グループのユーザーに共有リソースのコレクションへのアクセス権を与えることによって、Microsoft 365全体のチームワークを促進できます。
-ms.openlocfilehash: f054578e13fb4ee43aa158f615d3a2810769d6982981fcd534bb4ca8d234a70c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d6e8d394cf659d511a0ab069911d00c18428a1c
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826449"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346834"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -54,7 +54,7 @@ Microsoft 365グループは、グループ全体のすべてのチームワー�
 - **メンバー** - メンバーはグループ内のすべてのデータにアクセスできますが、グループの設定は変更できません。 既定では、グループ メンバーはゲストを招待してグループに参加させることができますが、[その設定は制御](manage-guest-access-in-groups.md)できます。
 - **ゲスト** - グループ ゲストは、組織外のメンバーです。
 
-グローバル管理者、ユーザー管理者、およびグループ管理者だけが、グループを作成および管理Microsoft 365 管理センター。 代理管理者 (たとえば、代理の管理者であるコンサルタント) になることはできません。
+管理者がグループを作成および管理できるのは、グローバル管理者、ユーザー管理者、および<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループMicrosoft 365 管理センター。</a> 代理管理者 (たとえば、代理の管理者であるコンサルタント) になることはできません。
 
 管理者は次のことが可能です。
 
