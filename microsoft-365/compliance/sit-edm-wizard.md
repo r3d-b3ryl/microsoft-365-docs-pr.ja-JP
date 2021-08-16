@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全一致スキーマと機密情報の種類ウィザードrを使用する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cbbb02528e898f775d63bf023b641bdaaeeb07e
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 082bc5e9731a7abb0a8f1d9bd9b6f2e4e4a77dd07363dd475ec350c0c983b250
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543607"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895352"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>完全一致スキーマと機密情報の種類ウィザードを使用する
 

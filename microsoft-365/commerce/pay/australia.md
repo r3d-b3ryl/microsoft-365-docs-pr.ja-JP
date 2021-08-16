@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e396618984b90053c2f4918201f6abfe5ca915df
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fc68c11a23d6d2282c8cc8c59e27f078057fe3fa17d446782418ded366ada763
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537225"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866957"
 ---
 # <a name="payment-information-for-australia"></a>オーストラリアのお支払い情報
 
@@ -40,8 +40,8 @@ Microsoft Regional **Sales Pte Ltd** が請求する請求書がある場合は�
 
 **Bank:** シティバンク、N.A. シドニー  
 **SWIFT コード:** CITIAU2X  
-**BSB コード:** 248053  
-**アカウント番号:** 100001074  
+**BSB コード: 248053**  
+**アカウント番号: 100001074**  
 **アカウント名:** MICROSOFT  
 
 現地の Microsoft 子会社から発行された請求書は、VAT/売上税/GST の標準税率で発行され、VAT/売上税/GST の目的で国内のサービス供給と見なされます。

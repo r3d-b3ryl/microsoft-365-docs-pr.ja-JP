@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c7745538471a2e8eae3b4708de06a789f4e0daff0150fd83f18a32b85461f892
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1b121ca196ba1b416b0031e3a0a7a8516bc7299
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893737"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256506"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>高度Microsoft 365 Defenderイベントを Azure イベント ハブにストリーミングするように構成する
 
@@ -33,13 +33,13 @@ ms.locfileid: "53893737"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 1. テナントに [イベント ハブ](/azure/event-hubs/) を作成します。
 
 2. Azure テナントに [ログイン](https://ms.portal.azure.com/)し、[サブスクリプション] > サブスクリプション > リソース プロバイダー> **Microsoft.インサイト** に登録します。
 
-3. イベント ハブ名前空間を作成し、[イベント ハブ] **>[** 追加] に移動し、予想される負荷に適した価格レベル、スループット単位、自動インフレートを選択します。 詳細については、「価格 - イベント ハブ[」を参照|Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
+3. イベント ハブ名前空間を作成し、[イベント ハブ] **>[** 追加] に移動し、予想される負荷に適した価格レベル、スループット単位、自動インフレートを選択します。 詳細については [、「Event Hubs の価格」を参照してください](https://azure.microsoft.com/pricing/details/event-hubs/)。  
 
 ### <a name="add-contributor-permissions"></a>共同作成者のアクセス許可を追加する
 
@@ -101,7 +101,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
 イベント プロパティのデータ型を取得するには、次の操作を行います。
 
-1. セキュリティ センターにMicrosoft 365[し、[](https://security.microsoft.com)高度な検索][ページに移動します](https://security.microsoft.com/hunting-package)。
+1. ポータルにログインし[Microsoft 365 Defender[](https://security.microsoft.com)高度な検索][ページに移動します](https://security.microsoft.com/hunting-package)。
 
 2. 次のクエリを実行して、各イベントのデータ型マッピングを取得します。
 
@@ -115,7 +115,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
   ![イベント ハブ リソース Id2 のイメージ](../defender-endpoint/images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度なハンティングの概要](advanced-hunting-overview.md)
 - [Microsoft 365 Defender API](streaming-api.md)

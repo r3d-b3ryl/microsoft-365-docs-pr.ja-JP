@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7e3a84b2f1ace627906a0235d6ad27904aba8d6b312199f1df1eae133e907143
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 60a0d59bd199e46e52623e36fa962465b313c9bd
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256340"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>役割ベースのアクセス制御の役割を作成および管理する
 
@@ -82,8 +82,8 @@ ms.locfileid: "53817197"
     - **基本的な** コマンド:
         - ライブ応答セッションを開始する
         - リモート デバイスで読み取り専用のライブ応答コマンドを実行する (ファイルのコピーと実行を除く)
-    - **高度な** コマンド:
         - ライブ応答を介してリモート デバイスからファイルをダウンロードする
+    - **高度な** コマンド:
         - ファイル ページから PE ファイルと PE 以外のファイルをダウンロードする
         - アップロードデバイスにファイルを送信する
         - ファイル ライブラリからスクリプトを表示する

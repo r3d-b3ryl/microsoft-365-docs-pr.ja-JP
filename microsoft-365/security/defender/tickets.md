@@ -1,6 +1,6 @@
 ---
-title: ServiceNow チケットをセキュリティ センター Microsoft 365コンプライアンス センターに統合する
-description: ServiceNow でセキュリティ センターとコンプライアンス センターからチケットを作成Microsoft 365追跡する方法について学習します。
+title: ServiceNow チケットをポータルとコンプライアンス センター Microsoft 365 Defender統合する
+description: ServiceNow でチケットを作成および追跡する方法については、Microsoft 365 Defenderコンプライアンス センターから確認します。
 keywords: セキュリティ、Microsoft 365、M365、コンプライアンス、コンプライアンス センター、セキュリティ センター、ServiceNow、チケット、タスク、SNOW、接続
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 2b0f25f0dafb48a6b9c707c64a4498b57ea7c57c1eda3a0fb45952db03bd0f4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1803d4408d50ecfd0e4f0a3c78016cd8914760f1
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810416"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256494"
 ---
-# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>ServiceNow チケットをセキュリティ センター Microsoft 365コンプライアンス センターに統合する
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-defender-portal-and-compliance-center"></a>ServiceNow チケットをポータルとコンプライアンス センター Microsoft 365 Defender統合する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

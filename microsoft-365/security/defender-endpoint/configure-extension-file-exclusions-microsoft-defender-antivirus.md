@@ -14,42 +14,33 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 52370c38f4d668d0678a04ef0caaf79a212baa8687b493697d2b2920876c2ea1
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: f9c5031bc41cc3afc27d22e14990da3d2f7d73002561850aa8120bac7cf9e7ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894584"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
 **適用対象:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
-- Microsoft Defender ウイルス対策
-
-スケジュールされたスキャン、オンデマンド スキャンMicrosoft Defender ウイルス対策常時オン、リアルタイムの[](schedule-antivirus-scans.md)保護と監視[](run-scan-microsoft-defender-antivirus.md)に適用されるアプリケーションの除外[を定義できます](configure-real-time-protection-microsoft-defender-antivirus.md)。 **一般に、除外を適用する必要はない必要があります**。 除外を適用する必要がある場合は、いくつかの異なる種類から選択できます。 
-
-- ファイル拡張子とフォルダーの場所に基づく除外 (この記事で説明)
-- [プロセスによって開くファイルの除外](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) 
 
 > [!IMPORTANT]
 > Microsoft Defender ウイルス対策除外は、エンドポイントの検出と応答[(EDR)、](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)攻撃表面の縮小[(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)ルール、フォルダー アクセスの制御など、他の Microsoft Defender for Endpoint 機能には[適用されません](/microsoft-365/security/defender-endpoint/controlled-folders)。 この記事で説明する方法を使用して除外するファイルは、アラートや他の検出EDRトリガーできます。 ファイルを広く除外するには、Microsoft Defender for Endpoint カスタム インジケーターに [ファイルを追加します](/microsoft-365/security/defender-endpoint/manage-indicators)。
 
-## <a name="before-you-begin"></a>開始する前に
-
-除外 [リストを定義する前に、「除外を](configure-exclusions-microsoft-defender-antivirus.md) 定義するための推奨事項」を参照してください。
-
 ## <a name="exclusion-lists"></a>除外リスト
 
-特定のファイルをスキャンからMicrosoft Defender ウイルス対策するには、除外リストを変更します。 Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるファイルなど) に基づく多くの自動除外が含まれます。
+除外リストを変更することで、特定のファイルMicrosoft Defender ウイルス対策スキャンから除外できます。 **一般に、除外を適用する必要はない必要があります**。 Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるファイルなど) に基づく多くの自動除外が含まれます。
 
 > [!NOTE]
 > 除外は、望ましくない可能性のあるアプリ (PUA) の検出にも適用されます。
->
-> 自動除外は、ユーザーおよびWindows Server 2016にのみ適用されます。 これらの除外は、アプリと PowerShell のWindows セキュリティ表示されません。
 
-次の表に、ファイル拡張子とフォルダーの場所に基づく除外の例を示します。 <br/><br/>
+> [!NOTE]
+> 自動除外は、その他のWindows Server 2016にのみ適用されます。 これらの除外は、アプリと PowerShell のWindows セキュリティ表示されません。
+
+この記事では、ファイルとフォルダーの除外リストを構成する方法について説明します。 除外 [リストを定義する前に、「除外を](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) 定義するための推奨事項」を参照してください。
 
 | 除外 | 例 | 除外リスト |
 |:---|:---|:---|
@@ -58,36 +49,34 @@ ms.locfileid: "57803382"
 | 特定のフォルダー内の特定のファイル | ファイル `c:\sample\sample.test` のみ | ファイルとフォルダーの除外 |
 | 特定のプロセス | 実行可能ファイル `c:\test\process.exe` | ファイルとフォルダーの除外 |
 
-## <a name="characteristics-of-exclusion-lists"></a>除外リストの特性
+除外リストには、次の特性があります。
 
 - フォルダーの除外は、サブフォルダーが再解析ポイントである場合を含め、そのフォルダーの下のすべてのファイルとフォルダーに適用されます。 Reparse ポイントサブフォルダーは個別に除外する必要があります。
-
 - パスまたはフォルダーが定義されていない場合、ファイル拡張子は、定義された拡張子を持つ任意のファイル名に適用されます。
 
-## <a name="important-notes-about-exclusions-based-on-file-extensions-and-folder-locations"></a>ファイル拡張子とフォルダーの場所に基づく除外に関する重要な注意事項
+> [!IMPORTANT]
+> - アスタリスク ( ) などのワイルドカードを使用 \* すると、除外ルールの解釈方法が変更されます。 ワイルドカードの [動作に関する重要な](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 情報については、「ファイル名とフォルダー パスまたは拡張子の除外リストでワイルドカードを使用する」セクションを参照してください。
+> - マップされたネットワーク ドライブを除外することはできません。 実際のネットワーク パスを指定する必要があります。
+> - Microsoft Defender ウイルス対策 サービスの開始後に作成され、除外リストに追加された再解析ポイントであるフォルダーは含まれません。 新しい再解析ポイントを有効な除外ターゲットとして認識するには、Windows を再起動してサービスを再起動する必要があります。
 
-- アスタリスク ( ) などのワイルドカードを使用 \* すると、除外ルールの解釈方法が変更されます。 ワイルドカードの [動作に関する重要な](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 情報については、「ファイル名とフォルダー パスまたは拡張子の除外リストでワイルドカードを使用する」セクションを参照してください。
+特定のプロセスで開いたファイルを除外するには、「プロセスで開いたファイルの除外を構成して検証 [する」を参照してください](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)。
 
-- マップされたネットワーク ドライブを除外しない。 実際のネットワーク パスを指定します。
+除外は、スケジュールされたスキャン[、](scheduled-catch-up-scans-microsoft-defender-antivirus.md)[オンデマンド](run-scan-microsoft-defender-antivirus.md)スキャン、リアルタイム保護[に適用されます](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
-- Microsoft Defender ウイルス対策 サービスの開始後に作成され、除外リストに追加された再解析ポイントであるフォルダーは含まれません。 新しい再解析ポイントが有効な除外ターゲットとして認識されるWindowsサービスを再起動します(再起動Windows)。
+> [!IMPORTANT]
+> グループ ポリシーで行われた除外リストの変更 **は、** アプリ内のリスト [にWindows セキュリティされます](microsoft-defender-security-center-antivirus.md)。
+> アプリで行われたWindows セキュリティ **グループ** ポリシー リストには表示されない。
 
-- 除外は、スケジュール[されたスキャン](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、[オンデマンド](run-scan-microsoft-defender-antivirus.md)スキャン、リアルタイム保護[](configure-real-time-protection-microsoft-defender-antivirus.md)に適用されますが、Defender for Endpoint 全体には適用されません。 Defender for Endpoint 全体で除外を定義するには、カスタム インジケーター [を使用します](manage-indicators.md)。
+既定では、リストに対して行われたローカルの変更 (PowerShell および WMI による変更を含む管理者特権を持つユーザー) は、グループ ポリシー、Configuration Manager、Intune によって定義 (展開) されたリストと結合されます。 グループ ポリシーの一覧は、競合がある場合に優先されます。
 
-- 既定では、リストに対して行われたローカルの変更 (PowerShell および WMI による変更を含む管理者特権を持つユーザー) は、グループ ポリシー、Configuration Manager、Intune によって定義 (展開) されたリストと結合されます。 グループ ポリシーの一覧は、競合がある場合に優先されます。 さらに、グループ ポリシーで行われた除外リストの変更は、アプリ内Windows セキュリティ[表示されます](microsoft-defender-security-center-antivirus.md)。
-
-- ローカルの変更による管理展開設定の上書きを許可するには、ローカルで定義された除外リストとグローバルに定義された除外リストの結合方法 [を構成します](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists)。
+ローカルで [定義された除外リスト](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) とグローバルに定義された除外リストの結合方法を構成して、ローカルの変更で管理展開設定を上書きできます。
 
 ## <a name="configure-the-list-of-exclusions-based-on-folder-name-or-file-extension"></a>フォルダー名またはファイル拡張子に基づいて除外の一覧を構成する
 
-複数の方法から選択して、ユーザーの除外を定義Microsoft Defender ウイルス対策。
-
 ### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Intune を使用してファイル名、フォルダー、またはファイル拡張子の除外を構成する
 
-次の記事をご覧ください。   
-
+次の記事をご覧ください。
 - [デバイス制限の設定を構成Microsoft Intune](/intune/device-restrictions-configure)
-
 - [Microsoft Defender ウイルス対策 Intune のデバイス制限Windows 10設定](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Configuration Manager を使用してファイル名、フォルダー、またはファイル拡張子の除外を構成する
@@ -99,7 +88,7 @@ ms.locfileid: "57803382"
 >[!NOTE]
 >ファイルへの完全修飾パスを指定すると、そのファイルだけが除外されます。 フォルダーが除外で定義されている場合、そのフォルダーの下のすべてのファイルとサブディレクトリは除外されます。
 
-1. グループ ポリシー管理コンピューターで、[[グループ ポリシー管理コンソール]](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) を開き、構成するグループ ポリシー オブジェクトを右クリックして、**[編集]** をクリックします。
+1. グループ ポリシー管理コンピューターで、グループ ポリシー [管理](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))コンソールを開き、構成するグループ ポリシー オブジェクトを右クリックし、[編集] をクリック **します**。
 
 2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に **移動し、[** 管理用 **テンプレート] を選択します**。
 
@@ -108,17 +97,17 @@ ms.locfileid: "57803382"
 4. 編集用 **に [パスの除外]** 設定を開き、除外を追加します。
 
     1. オプションを [有効] に **設定します**。
-    2. [オプション] **セクションで** 、[表示] **を選択します**。
-    3. [値名] 列の下の各フォルダーを独自 **の行に指定** します。
-    4. ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。 [値 **] 列に「0」****と入力** します。
+    1. [オプション] **セクションで** 、[表示] **をクリックします**。
+    1. [値名] 列の下の各フォルダーを独自 **の行に指定** します。
+    1. ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。 [値 **] 列に「0」****と入力** します。
 
 5. その後で、**[OK]** を選択します。
 
 6. [拡張機能 **の除外] 設定を** 開いて編集し、除外を追加します。
 
     1. オプションを [有効] に **設定します**。
-    2. [オプション] **セクションで** 、[表示] **を選択します**。
-    3. [値名] 列の下に、それぞれのファイル拡張子 **を独自の行に入力** します。  [値 **] 列に「0」****と入力** します。
+    1. [オプション] **セクションで** 、[表示] **を選択します**。
+    1. [値名] 列の下に、それぞれのファイル拡張子 **を独自の行に入力** します。  [値 **] 列に「0」****と入力** します。
 
 7. その後で、**[OK]** を選択します。
 
@@ -134,7 +123,7 @@ PowerShell を使用して、拡張子、場所、またはファイル名に基
 <cmdlet> -<exclusion list> "<item>"
 ```
 
-次の表に、PowerShell コマンドレットの部分で使用 `<cmdlet>` できるコマンドレットを示します。
+以下を次のように使用できます `<cmdlet>` 。
 
 | 構成アクション | PowerShell コマンドレット |
 |:---|:---|
@@ -142,7 +131,7 @@ PowerShell を使用して、拡張子、場所、またはファイル名に基
 |リストに追加する | `Add-MpPreference` |
 |リストからアイテムを削除する | `Remove-MpPreference` |
 
-次の表に、PowerShell コマンドレットの部分で使用できる `<exclusion list>` 値を示します。
+以下を次のように使用できます `<exclusion list>` 。
 
 | 除外の種類 | PowerShell パラメーター |
 |:---|:---|
@@ -158,22 +147,20 @@ PowerShell を使用して、拡張子、場所、またはファイル名に基
 Add-MpPreference -ExclusionExtension ".test"
 ```
 
-> [!TIP]
-> 詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender コマンドレット](/powershell/module/defender/)」を参照してください。
+詳細については、「[PowerShell コマンドレットを使用して Microsoft Defender ウイルス対策を構成および実行する](use-powershell-cmdlets-microsoft-defender-antivirus.md)」および「[Defender コマンドレット](/powershell/module/defender/)」を参照してください。
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>[Windows管理命令 (WMI) を使用して、ファイル名、フォルダー、またはファイル拡張子の除外を構成する
 
-次の [プロパティのクラスの Set メソッド、Add メソッド、Remove](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) メソッドMSFT_MpPreference使用します。
+次の [**プロパティの****クラスの** **Set メソッド、Add** **メソッド、Remove**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))メソッドMSFT_MpPreference使用します。
 
 ```WMI
 ExclusionExtension
 ExclusionPath
 ```
 
-**Set、Add、Remove** を使用すると、PowerShell の対応するユーザーと類似 `Set-MpPreference` しています。 `Add-MpPreference` `Remove-MpPreference`
+**Set、Add、****および** **Remove** の使用は、PowerShell の対応するユーザーと類似 `Set-MpPreference` しています。 `Add-MpPreference` `Remove-MpPreference`
 
-> [!TIP]
-> 詳細については[、「WMIv2 API Windows Defenderを参照してください](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)。
+詳細については[、「WMIv2 API Windows Defenderを参照してください](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)。
 
 <a id="man-tools"></a>
 
@@ -195,11 +182,12 @@ ExclusionPath
 
 次の表では、ワイルドカードの使用方法と例を示します。
 
-| ワイルドカード  | 例  |
+
+|ワイルドカード  |例  |
 |:---------|:---------|
-| `*` (アスタリスク) <p> ファイル **名とファイル拡張子** の組み込みでは、アスタリスクは任意の数の文字を置き換え、引数で定義された最後のフォルダー内のファイルにのみ適用されます。 <p> フォルダー **の除外では、** アスタリスクによって 1 つのフォルダーが置き換されます。 複数のフォルダー `*` スラッシュを使用して、 `\` 複数の入れ子になったフォルダーを示します。 ワイルドカード フォルダーと名前付きフォルダーの数を一致した後、すべてのサブフォルダーも含まれます。   | `C:\MyData\*.txt` を含む `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` に含まれるファイル `C:\somepath\Archives\Data` とそのサブフォルダー、およびサブ `C:\somepath\Authorized\Data` フォルダー <p> `C:\Serv\*\*\Backup` に含まれるファイル `C:\Serv\Primary\Denied\Backup` とそのサブフォルダー `C:\Serv\Secondary\Allowed\Backup` とそのサブフォルダー     |
-| `?` (疑問符)  <p> ファイル **名とファイル拡張子** の包含では、疑問符は 1 文字を置き換え、引数で定義された最後のフォルダー内のファイルにのみ適用されます。 <p> フォルダー **の除外では、** 疑問符はフォルダー名の 1 文字を置き換えます。 ワイルドカード フォルダーと名前付きフォルダーの数を一致した後、すべてのサブフォルダーも含まれます。   | `C:\MyData\my?.zip` を含む `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` ファイルとそのサブフォルダー `C:\somepath\P\Data` を含む  <p> `C:\somepath\test0?\Data` ファイルとそのサブフォルダー `C:\somepath\test01\Data` が含まれる場合          |
-| 環境変数 <p> 定義された変数は、除外が評価される際にパスとして設定されます。          |`%ALLUSERSPROFILE%\CustomLogFiles` を含む `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
+|`*` (アスタリスク) <p> ファイル **名とファイル拡張子** の組み込みでは、アスタリスクは任意の数の文字を置き換え、引数で定義された最後のフォルダー内のファイルにのみ適用されます。 <p> フォルダー **の除外では、** アスタリスクによって 1 つのフォルダーが置き換されます。 複数のフォルダー `*` スラッシュを使用して、 `\` 複数の入れ子になったフォルダーを示します。 ワイルドカード フォルダーと名前付きフォルダーの数を一致した後、すべてのサブフォルダーも含まれます。   | `C:\MyData\*.txt` を含む `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` に含まれるファイル `C:\somepath\Archives\Data` とそのサブフォルダー、およびサブ `C:\somepath\Authorized\Data` フォルダー <p> `C:\Serv\*\*\Backup` に含まれるファイル `C:\Serv\Primary\Denied\Backup` とそのサブフォルダー `C:\Serv\Secondary\Allowed\Backup` とそのサブフォルダー     |
+|`?` (疑問符)  <p> ファイル **名とファイル拡張子** の包含では、疑問符は 1 文字を置き換え、引数で定義された最後のフォルダー内のファイルにのみ適用されます。 <p> フォルダー **の除外では、** 疑問符はフォルダー名の 1 文字を置き換えます。 ワイルドカード フォルダーと名前付きフォルダーの数を一致した後、すべてのサブフォルダーも含まれます。   |`C:\MyData\my?.zip` を含む `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` ファイルとそのサブフォルダー `C:\somepath\P\Data` を含む  <p> `C:\somepath\test0?\Data` ファイルとそのサブフォルダー `C:\somepath\test01\Data` が含まれる場合          |
+|環境変数 <p> 定義された変数は、除外が評価される際にパスとして設定されます。          |`%ALLUSERSPROFILE%\CustomLogFiles` を含む `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
         
 
 > [!IMPORTANT]
@@ -346,7 +334,7 @@ $WDAVprefs.ExclusionPath
 
 コマンドレットまたは .NET WebClient クラスで PowerShell を使用してテスト ファイルをダウンロードすることで、除外リストが機能している `Invoke-WebRequest` のを検証できます。
 
-次の PowerShell スニペットで、除外 `test.txt` ルールに準拠したファイルに置き換えます。 たとえば、拡張機能を除外した場合は、 `.testing` に置き換 `test.txt` える `test.testing` 。 パスをテストする場合は、そのパス内でコマンドレットを実行してください。
+次の PowerShell スニペットで、除外ルール *test.txt* ファイルに置き換えます。 たとえば、拡張機能を除外した場合は、 `.testing` に置き換 `test.txt` える `test.testing` 。 パスをテストする場合は、そのパス内でコマンドレットを実行してください。
 
 ```PowerShell
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
@@ -354,7 +342,7 @@ Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.t
 
 マルウェアMicrosoft Defender ウイルス対策報告する場合、ルールは機能していません。 マルウェアの報告がない場合、ダウンロードしたファイルが存在する場合は、除外が機能しています。 ファイルを開き、内容が EICAR テスト ファイル Web サイトで説明されている内容と [同じことを確認できます](http://www.eicar.org/86-0-Intended-use.html)。
 
-また、次の PowerShell コードを使用して、.NET WebClient クラスを呼び出して、コマンドレットと同様にテスト ファイルをダウンロードし、検証するルールに準拠したファイルに置き換 `Invoke-WebRequest` `c:\test.txt` えることができます。
+また、次の PowerShell コードを使用して、.NET WebClient クラスを呼び出して、コマンドレットと同様にテスト ファイルをダウンロードし、c:\test.txtを検証するルールに準拠したファイルに置き換えることができます `Invoke-WebRequest` 。 
 
 ```PowerShell
 $client = new-object System.Net.WebClient
@@ -369,12 +357,9 @@ $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt"
 
 文字列を空白のテキスト ファイルにコピーして、ファイル名または除外するフォルダーに保存することもできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [カスタム スキャンで除外を構成Microsoft Defender ウイルス対策する](configure-exclusions-microsoft-defender-antivirus.md)
-
 - [プロセスによって開いたファイルの除外を構成および検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-
 - [サーバー Microsoft Defender ウイルス対策の除外をWindowsする](configure-server-exclusions-microsoft-defender-antivirus.md)
-
 - [除外を定義する際に避ける必要のある一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)

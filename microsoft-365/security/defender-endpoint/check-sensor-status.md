@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 91318cf3638b71ad14bf283185d31fba5280d983f961f591ebfc1c75bd7f75a2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8168977629f80923ed65e84127478eea0b526597
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811376"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256371"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のセンサーの正常性状態を確認する
 
@@ -60,5 +60,10 @@ ms.locfileid: "53811376"
 
 構成が正しく設定されていないデバイスまたは非アクティブなデバイスをクリックすると、デバイスの詳細を表示できます。
 
-## <a name="related-topic"></a>関連トピック
+## <a name="see-also"></a>関連項目
 - [Defender for Endpoint で不健康なセンサーを修正する](fix-unhealthy-sensors.md)
+- [クライアント アナライザーの概要](overview-client-analyzer.md)
+- [クライアント アナライザーをダウンロードして実行する](download-client-analyzer.md)
+- [クライアント アナライザーをコンピューターで実行Windows](run-analyzer-windows.md)
+- [macOS または Linux でクライアント アナライザーを実行する](run-analyzer-macos-linux.md)
+- [詳細なトラブルシューティングを行うデータのWindows](data-collection-analyzer.md)

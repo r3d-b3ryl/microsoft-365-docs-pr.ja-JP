@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス ファイルを共有する方法の概要。
-ms.openlocfilehash: 408979728e4f834acb57f39a6eed3ac40057feba
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a377735f077df81556621a06e2367929d966aaf45f36e9f4425309f5dabaae0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244910"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867185"
 ---
 # <a name="overview-of-sharing-business-files"></a>ビジネス ファイルの共有の概要
 
@@ -50,7 +50,7 @@ ms.locfileid: "52244910"
 プロジェクトの一部として共有する または、ビジネス パートナーまたはサプライヤーとの継続的な関係の一部として? もう少し時間を入れて、チームをチームMicrosoft Teams共有し、一緒に作業することができます。 ビジネスの外部のユーザーと簡単に作業できます。また、追加のサプライヤーやパートナー向けに個別のチャネルを設定して、すべてまっすぐに維持できます。
 
 1. チームを作成します。
-1. アップロードファイルを削除します。
+1. ファイルをアップロードします。
 1. パートナーまたはサプライヤーを "ゲスト" ユーザーとしてチームに招待し、アクセス権を与えます。
 
 セキュリティで保護されたリンクを使用して組織 [外のファイルを共有する方法について説明します](securely-share-files-externally.md)。
@@ -60,7 +60,7 @@ ms.locfileid: "52244910"
 ビジネス内で共有するファイルを操作する場合は、ビジネスでチームを設定Microsoft Teams。 そこでファイルを共有し、ビジネスのすべてのユーザーが簡単にファイルを見つけて編集し、同じページで作業しているのが分かっています。
 
 1. チームを作成し、チームを招待します。
-1. アップロードファイルを削除します。
+1. ファイルをアップロードします。
 
 会社のファイルストレージ [と従業員ファイルストレージ](files-to-sharepoint.md) の [詳細については、次のリンクを参照してください](files-to-onedrive.md)。
 

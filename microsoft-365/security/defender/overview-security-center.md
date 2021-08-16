@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 687195eeb9bbc53be3f50e9b7662faaeed208b5502e9972801ee3d105c35c1ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 58cc9548983d75593ae77af016ef894dc9f82547
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888718"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256321"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender概要
 
@@ -121,7 +121,7 @@ Microsoft 365 Defender、Microsoft Defender  for microsoft Defender for Office 3
 
 ### <a name="quickly-view-your-microsoft-365-environment"></a>Microsoft 365 環境をすばやく表示する
 
-**ホーム** ページには、セキュリティ チームが必要とする一般的なカードの多くが表示されます。 カードとデータの構成は、ユーザーの役割によって異なります。 セキュリティ センター Microsoft 365役割ベースのアクセス制御を使用する場合、役割ごとに、毎日のジョブにとってより意味のあるカードが表示されます。  
+**ホーム** ページには、セキュリティ チームが必要とする一般的なカードの多くが表示されます。 カードとデータの構成は、ユーザーの役割によって異なります。 ポータルMicrosoft 365 Defender役割ベースのアクセス制御を使用する場合、役割ごとに、毎日のジョブにとってより意味のあるカードが表示されます。  
 
 この一目でわかる情報は、組織内の最新の活動についていくのに役立ちます。 Microsoft 365 Defender異なるソースからの信号をまとめ、さまざまなソース環境の全体的なMicrosoft 365します。
 
@@ -143,7 +143,7 @@ Microsoft 365 Defender、Microsoft Defender  for microsoft Defender for Office 3
 
 ## <a name="a-centralized-learning-hub"></a>一元化されたラーニング ハブ
 
-Microsoft 365センターには、Microsoft セキュリティ ブログ、YouTube の Microsoft セキュリティ コミュニティ、および docs.microsoft.com の公式ドキュメントなどのリソースからの公式ガイダンスを吹き込む学習ハブが含まれています。
+Microsoft 365 Defenderには、Microsoft セキュリティ ブログ、YouTube の Microsoft セキュリティ コミュニティ、および docs.microsoft.com の公式ドキュメントなどのリソースからの公式ガイダンスを吹き込む学習ハブが含まれています。
 
 学習ハブ内では、Email & Collaboration (Microsoft Defender for Office 365) ガイダンスは、エンドポイント (Microsoft Defender for Endpoint) および Microsoft 365 Defender ラーニング リソースと並べて示されています。
 

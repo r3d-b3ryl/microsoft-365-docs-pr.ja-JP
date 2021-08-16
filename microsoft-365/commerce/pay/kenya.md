@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 52bdb8745d2ffeef590846828c4f79ff4176d712
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8e1703a2a44319960c843cd21415211082eb2c6cf298e89ea419283a66fa5fe5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536528"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866885"
 ---
 # <a name="payment-information-for-kenya"></a>ケニアのお支払い情報
 

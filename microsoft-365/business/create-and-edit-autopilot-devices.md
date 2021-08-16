@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: AutoPilot を使用してデバイスをアップロードする方法については、Microsoft 365 Business Premium。 プロファイルは、デバイスまたはデバイスのグループに割り当てできます。
-ms.openlocfilehash: 506ff44e3cb6656b19174e82688b5af141ea2b79
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ae3a760db4b94aac50301685a0c4f468e46ec8e9aa907a1b6fb35e03a9e541f0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578489"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867037"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>AutoPilot デバイスを作成し編集する
 
@@ -45,7 +45,7 @@ ms.locfileid: "51578489"
     
 - 最新のエクスペリエンスをWindowsした新しいデバイス
 
-1. [管理センター Microsoft 365で、[**デバイスの** \> **自動パイロット] を選択します**。
+1. [デバイス] Microsoft 365 管理センター[**デバイス** \> **の自動パイロット] を選択します**。
   
 2. [自動 **パイロット] ページで** 、[デバイス] **タブ** [デバイスの追加] \> **を選択します**。
     

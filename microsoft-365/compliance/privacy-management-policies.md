@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織の個人データを処理するためのポリシーを作成および管理する方法について説明します。Microsoft 365通知への対応、および問題の修復を行います。
-ms.openlocfilehash: 8add0ba2122c8ae73d6a9da075e346c74395084a243db68361a0df03aea8f00c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 548e8b6960b2cd27ba786aa6bd184f771a5fcb75
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842124"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256437"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>プライバシー管理でポリシーを作成および管理する (プレビュー)
 
@@ -117,7 +117,7 @@ ms.locfileid: "53842124"
 
 通知は、カスタム ポリシーの作成時またはポリシーの編集時に、個々のポリシーに対して有効にできます。 [結果] セクションを使用して、これらの通知を有効にするオプションを含む、ポリシーの一致が検出された場合の状況を定義し、これらのダイジェストを配信する頻度を設定します。
 
-電子メール通知機能は、電子メール通知内のグローバル レベル設定。 これは既定では有効になっています。 この設定をオフにすると、特定の通知が個々のポリシー レベルで構成されている場合でも、すべてのメールが停止します。 詳細については、「プライバシー管理の開始」の「 [設定の構成」を参照してください](privacy-management-setup.md#configure-settings)。
+電子メール通知機能は、電子メール通知内のグローバル レベル設定。 これは既定では有効になっています。 この設定をオフにすると、特定の通知が個々のポリシー レベルで構成されている場合でも、すべてのメールが停止します。 詳細については、「プライバシー管理設定 [の管理」を参照してください](privacy-management-settings.md)。
 
 ## <a name="view-policy-details"></a>ポリシーの詳細を表示する
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: この記事では、監査ログ レコードの結果をエクスポートするときに含まれる追加Office 365説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a3641b40b76c2839f5cd29c22c28dfb5652ce42515d4e0ffe7e3edce0dcd3a7f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0daae4136b9b10da5580d168b7cbf4e9a7e7afe5
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808142"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256449"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>監査ログの詳細なプロパティ
 
@@ -90,12 +90,8 @@ ms.locfileid: "53808142"
 |UserSharedWith|リソースが共有されたユーザー。**Operation** プロパティの値が **SharingSet** の場合は、このプロパティが含まれます。このユーザーは、レポートの **[共有ユーザー]** 列にも表示されます。|SharePoint|
 |UserType|操作を実行したユーザーの種類。次の値によって、ユーザーの種類が示されます。<br/> <br/> **0** - 標準のユーザー。 <br/>**2** - 組織の管理者Microsoft 365します。<sup>1</sup> <br/>**3** - Microsoft データセンター管理者またはデータセンターのシステム アカウント。 <br/>**4** - システム アカウント。 <br/>**5** - アプリケーション。 <br/>**6** - サービス プリンシパル。<br/>**7** - カスタム ポリシー。<br/>**8** - システム ポリシー。|すべて|
 |Version|ログに記録された (**Operation** プロパティで識別された) アクティビティのバージョン番号を示します。|すべて|
-|Workload|アクティビティMicrosoft 365発生したサービスを指定します。|すべて|
+|ワークロード|アクティビティMicrosoft 365発生したサービスを指定します。|すべて|
 ||||
 
 > [!NOTE]
-><sup>1</sup> Azure Active Directory 関連のイベントの場合、管理者の値は監査レコードで使用されません。 管理者によって実行されたアクティビティの監査レコードは、通常のユーザー (たとえば、**UserType: 0**) がアクティビティを実行したことを意味します。 **UserID** プロパティは、アクティビティを実行したユーザー (通常のユーザーまたは管理者) を識別します。<br/>
-
-上記のプロパティは、特定のイベントの詳細が表示されている状態で [**詳細情報**] をクリックした場合にも表示されます。
-  
-![[詳細情報] をクリックして監査ログのイベント レコードの詳細なプロパティを表示する](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+><sup>1</sup> Azure Active Directory 関連のイベントの場合、管理者の値は監査レコードで使用されません。 管理者によって実行されたアクティビティの監査レコードは、通常のユーザー (たとえば、**UserType: 0**) がアクティビティを実行したことを意味します。 **UserID** プロパティは、アクティビティを実行したユーザー (通常のユーザーまたは管理者) を識別します。

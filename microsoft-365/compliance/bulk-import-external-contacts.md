@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 管理者が PowerShell と CSV Exchange Onlineを使用して、外部連絡先をグローバル アドレス一覧に一括インポートする方法について説明します。
-ms.openlocfilehash: 178e3676f8dc5fb59cdad9cc46d7ecbd9dddb90e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cb6195f82ed794ea5b6741a6b8bdf3007cdf366411ad7a464688b6ffbf5d9cb0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895965"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>外部連絡先を連絡先に一括インポートExchange Online
 
@@ -90,10 +90,10 @@ ms.locfileid: "50918213"
   
 5. 必要に応じて、[ **更新]** をクリックしてリストを更新し、インポートされた外部連絡先を確認します。 
     
-    インポートされた連絡先は、Web 上の共有アドレス帳Outlook、Outlookに表示されます。
+    インポートされた連絡先は、共有アドレス帳の [連絡先] および [連絡先] OutlookにOutlook on the web。
     
     > [!NOTE]
-    > [ユーザーの連絡先] に移動して、Microsoft 365管理センターで連絡先 **を表示** \> **できます**。 
+    > [ユーザーの連絡先] にアクセスして、Microsoft 365 管理センター連絡先を **表示** \> **できます**。 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>手順 3: 外部連絡先のプロパティに情報を追加する
 
@@ -125,7 +125,7 @@ ms.locfileid: "50918213"
     
 2. 連絡先をクリックし、[編集 **]** アイコン ![ をクリック ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) して連絡先のプロパティを表示します。 
     
-手順は以上です。 ユーザーは、連絡先と追加情報を Web 上のアドレス帳Outlook、Outlook確認できます。
+手順は以上です。 ユーザーは、連絡先と追加情報をアドレス帳のアドレス帳に表示Outlook、Outlook on the web。
   
 ## <a name="add-more-external-contacts"></a>外部連絡先の追加
 

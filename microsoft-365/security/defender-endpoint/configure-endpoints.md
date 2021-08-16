@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 253c055198547852c55a44b60910e3a38229737e89fa5e2fa467e74089ee20d6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb71cc8ee014c1e96f4e57fb58785e0c15b4602a
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863801"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256601"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices-in-defender-for-endpoint"></a>Defender for Endpoint のデバイスWindows 10オンボーディング ツールとメソッド
 
@@ -39,19 +39,16 @@ Defender for Endpoint サービスがセンサー データを取得できるよ
 
 次の展開ツールとメソッドがサポートされています。
 
-- グループ ポリシー
-- Microsoft Endpoint Configuration Manager
-- モバイル デバイスの管理 (Microsoft Intune を含む)
-- ローカル スクリプト
-
-## <a name="in-this-section"></a>このセクションの内容
 
 トピック|説明
 :---|:---
-[グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)|グループ ポリシーを使用して、構成パッケージをデバイスに展開します。
-[デバイスWindowsデバイスのオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)|Microsoft エンドポイント マネージャー (現在のブランチ) バージョン 1606 または Microsoft エンドポイント マネージャー (現在のブランチ) バージョン 1602 以前を使用して、デバイスに構成パッケージを展開できます。
-[モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)|デバイスに構成パッケージを展開するには、Microsoft Intune管理ツールまたはモバイル デバイス管理ツールを使用します。
-[ローカル スクリプトを使用した Windows 10 デバイスのオンボード](configure-endpoints-script.md)|ローカル スクリプトを使用してエンドポイントに構成パッケージを展開する方法について説明します。
+[グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)|グループ ポリシーを使用して、構成パッケージをデバイスに展開します。
+[Microsoft Endpoint Configuration Manager を使用したデバイスのオンボード](configure-endpoints-sccm.md)|Microsoft エンドポイント マネージャー (現在のブランチ) バージョン 1606 または Microsoft エンドポイント マネージャー (現在のブランチ) バージョン 1602 以前を使用して、デバイスに構成パッケージを展開できます。
+[モバイル デバイス管理ツールを使用したデバイスのオンボード](configure-endpoints-mdm.md)|デバイスに構成パッケージを展開するには、Microsoft Intune管理ツールまたはモバイル デバイス管理ツールを使用します。
+[ローカル スクリプトを使用したデバイスのオンボード](configure-endpoints-script.md)|ローカル スクリプトを使用してエンドポイントに構成パッケージを展開する方法について説明します。
 [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)|構成パッケージを使用して VDI デバイスを構成する方法について説明します。
 
 > Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpoints-belowfoldlink)
+
+
+デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。

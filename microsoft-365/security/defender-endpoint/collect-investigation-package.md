@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4dec522f41a2dc580038f0ee5ae007221a596046
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 85a29e312240d416f7a9870bf904865e78e5e59bbc704792269167e8544a5c68
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894601"
 ---
 # <a name="collect-investigation-package-api"></a>調査パッケージ API の収集
 
@@ -45,10 +45,6 @@ ms.locfileid: "58247851"
 ## <a name="limitations"></a>制限事項
 
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
-
-> [!IMPORTANT]
->
-> - これらの応答アクションは、バージョン 1703 以降Windows 10デバイスでのみ使用できます。
 
 ## <a name="permissions"></a>アクセス許可
 

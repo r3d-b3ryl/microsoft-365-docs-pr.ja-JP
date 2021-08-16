@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 6f3c44ba70debfdf4ecebb089f2015214e92f4b2cef037da5bdf5f7ad0e99c40
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: 77a5d01b16a181067b347ab72220d722dc2ab447
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803634"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256561"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>スキャンの除外を構成およびMicrosoft Defender ウイルス対策する
 

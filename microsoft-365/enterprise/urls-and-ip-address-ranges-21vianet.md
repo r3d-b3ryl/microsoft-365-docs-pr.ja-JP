@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、中国で 21Vianet がOffice 365の URL と IP アドレスの範囲を示します。
 hideEdit: true
-ms.openlocfilehash: 80d9dd6626214215a4d84273297f881441992f14
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 07cc0f00ef2922d448cc3bc99767deb0f670576ed3244c4bb705c9ca8bb5ab99
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925195"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894884"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet が運営する Office 365の URL と IP アドレス範囲
 

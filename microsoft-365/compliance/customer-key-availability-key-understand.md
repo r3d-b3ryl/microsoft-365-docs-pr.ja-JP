@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 紛失した顧客キーの回復に使用される可用性キーについて学習します。
-ms.openlocfilehash: 0f65721856cd046f28a399701e625239decbd9b6
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: 573c7bb7426dea8594f3a2e73991f845153146996f8a03cab4766855482a7de1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53463999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895799"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>カスタマー キーの可用性キーの詳細
 

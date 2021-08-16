@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager は、組織がリスク評価を簡素化および自動化するのに役立ち、リスクに対処するために推奨されるアクションを提案します。
-ms.openlocfilehash: c19655e3cd509d141878e8d917d248cc2ce42aa5
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: b763560d48f4e07a01fdd3baaf7286327c78cca508984c65f88aff1c73ee47b6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726443"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895749"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft コンプライアンス マネージャー
 
@@ -30,7 +30,7 @@ ms.locfileid: "53726443"
 
 ## <a name="what-is-compliance-manager"></a>コンプライアンス マネージャーとは?
 
-[Microsoft コンプライアンス マネージャー](https://compliance.microsoft.com/compliancemanager) は [、Microsoft 365](microsoft-365-compliance-center.md) コンプライアンス センターの機能であり、組織のコンプライアンス要件を簡単で便利に管理するのに役立ちます。 コンプライアンス マネージャーは、データ保護リスクのインベントリの取得から、制御の実装の複雑さの管理、規制と認定の最新の状態を確保すること、監査人への報告まで、コンプライアンスの取り組み全体を通じてお手伝いします。
+[Microsoft コンプライアンス マネージャー](https://compliance.microsoft.com/compliancemanager)は、組織[](microsoft-365-compliance-center.md)Microsoft 365 コンプライアンス センターのコンプライアンス要件を簡単に管理し、利便性を高め、管理するのに役立つ機能です。 コンプライアンス マネージャーは、データ保護リスクのインベントリの取得から、制御の実装の複雑さの管理、規制と認定の最新の状態を確保すること、監査人への報告まで、コンプライアンスの取り組み全体を通じてお手伝いします。
 
 コンプライアンス マネージャーが組織がコンプライアンスを管理する方法を簡略化する方法については、以下のビデオをご覧ください。
 <br>
@@ -85,7 +85,7 @@ ms.locfileid: "53726443"
 
 ### <a name="assessments"></a>評価
 
-評価とは、特定の規制、標準、またはポリシーからのコントロールのグループ化です。 評価は、標準、規則、または法律の要件を満たすのに役立つ評価内で処置を完了します。 たとえば、その中のすべてのアクションを完了すると、MICROSOFT 365 の設定を ISO 27001 の要件に合ったものにするのに役立つという評価を受ける場合があります。
+評価とは、特定の規制、標準、またはポリシーからのコントロールのグループ化です。 評価は、標準、規則、または法律の要件を満たすのに役立つ評価内で処置を完了します。 たとえば、その中のすべてのアクションを完了すると、ISO 27001 の要件に沿った Microsoft 365 設定を作成するのに役立つ評価を受ける場合があります。
 
 評価には、次のいくつかのコンポーネントがあります。
 

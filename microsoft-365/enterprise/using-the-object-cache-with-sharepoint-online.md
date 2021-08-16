@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: この記事では、オンプレミスのサーバー 2013 および SharePoint Online でオブジェクト キャッシュを使用するSharePoint説明します。
-ms.openlocfilehash: 279d156a941aad6fbe7adbcf052c57f5b58c652f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 669a68e949c5e83be794644e0d4b9ae117c69e6282f2d0ea15f96a0ad3e90461
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894855"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Online でオブジェクト キャッシュをSharePointする
 

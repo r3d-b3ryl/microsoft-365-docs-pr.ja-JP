@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7e4042b0323500bdfc5b212abdd7902fbdd75efb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e0e3aef57e4b7458d21f5b0917352728733505eb8b003cfc9a2e778754946fc9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896169"
 ---
 # <a name="payment-information-for-saint-vincent-and-the-grenadines"></a>セント ビンセントとグレナディーン諸島の支払い情報
 

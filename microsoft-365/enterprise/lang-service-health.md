@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - IWA160
 description: サービス正常性ダッシュボードの投稿は英語のみですが、ユーザーが指定した言語で自動的に表示Microsoft 365。
-ms.openlocfilehash: 9f5ce6dbb918f7a3dddf43b6332d28142446f179
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: d6ad788ef5847dc8bd5c30742db8950ffabbb395b2757b16029438ef542f35cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596063"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864629"
 ---
 # <a name="language-translation-for-service-health-dashboard"></a>サービス正常性ダッシュボードの言語変換
 
@@ -53,7 +53,7 @@ ms.locfileid: "53596063"
 
 サービス正常性ダッシュボードの投稿を優先言語で自動的に機械翻訳および表示に設定するには、[正常性] >に移動します。 ビューの上部に自動翻訳のオンとオフを切り替えるスイッチが表示されます。 When this setting is off, posts are shown in English. When this setting is on, messages display in your preferred language. 選択した設定は、訪問ごとに保持されます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 サービス正常性を確認する方法](view-service-health.md)
 

@@ -9,12 +9,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 92eb8819afddf7a1c9807164ada4ddf148318365
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4aa3d84f8e0134739f847605d0e6c725f03cb34e25d0fcd09f39f4e2e4511ec6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894788"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップへの登録準備
 

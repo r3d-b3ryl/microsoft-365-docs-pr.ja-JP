@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4b31a47ecfa887185673d75947fbab89332caa2a156bed8a35b158b63c2e8b95
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 815b962d56ca75dbd864579d7f26e24a587b74df
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805599"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256542"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -40,7 +40,7 @@ ms.locfileid: "53805599"
 
 ## <a name="try-your-first-query"></a>最初のクエリを試してみる
 
-セキュリティ Microsoft 365で、[ハンティング] に移動 **して** 最初のクエリを実行します。 次の例を使用してください。
+このポータルMicrosoft 365 Defender[ハンティング] に移動 **して**、最初のクエリを実行します。 次の例を使用してください。
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -185,7 +185,7 @@ Kusto クエリ言語およびサポートされる演算子の詳細につい�
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpoint では使用できない場合があります。 [複数のデータ Microsoft 365 Defender](m365d-enable.md)を使用して脅威を検出するには、このオプションをオンにしてください。 高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動するには、「Advanced Hunting [queries](advanced-hunting-migrate-from-mde.md)を Microsoft Defender for Endpoint から移行する」の手順に従います。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

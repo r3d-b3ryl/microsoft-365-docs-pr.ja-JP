@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 処理確認を利用する場合や、レコードとしてマークされたアイテムが構成した設定に従って自動的に削除される場合、コンテンツの処理を監視および管理します。
-ms.openlocfilehash: 2a7330cff56f053f7714a88d8d3519cb0cd3cbaa
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 8a223a49e0fe648dee3bb8c47449538b8f0bfa5614066f4bfecc76e622e1ae65
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895893"
 ---
 # <a name="disposition-of-content"></a>コンテンツの処理
 

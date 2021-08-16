@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 電子情報開示アクセス許可が割り当てられたユーザーがコンテンツ検索、コア電子情報開示、および Advanced eDiscovery タスクを実行するときに記録されるイベントMicrosoft 365 コンプライアンス センター。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 097e78c85af5bc75998e1a75fe6148b64afec0eb36d7c19851153920c59a4de0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 637785a86e7fa28c0c058e9f729fcf2c1604a6f3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795544"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256418"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>監査ログで電子情報開示アクティビティを検索する
 
@@ -192,10 +192,10 @@ Microsoft 365 コンプライアンス センター または対応する PowerS
 
 ## <a name="detailed-properties-for-ediscovery-activities"></a>電子情報開示アクティビティの詳細なプロパティ
 
-次の表は、検索結果にリストされた電子情報開示アクティビティの [**詳細**] ページで [**詳細情報**] をクリックしたときに含まれるプロパティについて説明しています。 これらのプロパティは、監査ログの検索結果をエクスポートしたときに、CSV ファイルにも含まれます。 電子情報開示アクティビティの監査ログ記録には、以下にリストされている詳細なプロパティがすべて含まれているわけではありません。
+次の表では、検索結果に記載されている電子情報開示アクティビティのフライアウト ページに含まれるプロパティについて説明します。 これらのプロパティは、監査ログの検索結果をエクスポートしたときに、CSV ファイルにも含まれます。 電子情報開示アクティビティの監査ログ記録には、以下にリストされている詳細なプロパティがすべて含まれているわけではありません。
   
 > [!TIP]
-> 検索結果をエクスポートすると、CSV ファイルには、[**詳細**] という名前の列が作成され、この列には、次の表の複数値プロパティで説明される詳細プロパティが含まれます。 Excel の Power Query 機能を使用して、この列を複数の列に分割して、プロパティごとに個別の列を設定することができます。 このようにすると、これらの 1 つ以上のプロパティで並べ替えやフィルター処理を行うことができます。 詳細については、「[監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)」の「検索結果をファイルにエクスポートする」セクションを参照してください。 
+> 検索結果をエクスポートすると、CSV ファイルには **AudtiData** という名前の列が含まれます。この列には、複数値プロパティの次の表に示す詳細なプロパティが含まれます。 Excel の Power Query 機能を使用して、この列を複数の列に分割して、プロパティごとに個別の列を設定することができます。 このようにすると、これらの 1 つ以上のプロパティで並べ替えやフィルター処理を行うことができます。 詳細については、「[監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file)」の「検索結果をファイルにエクスポートする」セクションを参照してください。 
   
 |**Property**|**説明**|
 |:-----|:-----|
