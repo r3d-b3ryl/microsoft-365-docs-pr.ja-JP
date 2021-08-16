@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: スマート タグを使用すると、ケース内のコンテンツを確認するときに機械学習機能をAdvanced eDiscoveryできます。 スマート タグ グループを使用して、弁護士クライアント特権モデルなどの機械学習検出モデルの結果を表示します。
-ms.openlocfilehash: 3d3852a13410a3aa57932e19031cc5d00ce52a96
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4b793b53001a9d03e53d9aadac1bd39d2d6c98d8ab498d91be12d9a6886e185b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859781"
 ---
 # <a name="set-up-smart-tags-in-advanced-ediscovery"></a>スマート タグを設定Advanced eDiscovery
 

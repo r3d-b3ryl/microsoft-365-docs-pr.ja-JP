@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
-description: スクリプトを実行して、& OneDrive for Businessコンプライアンス センターの電子情報開示ケースに関連付けられた新しい保留リストにMicrosoft 365します。
-ms.openlocfilehash: d6e6ff1ca053fd8c729054490e78ef42dc64e829
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: スクリプトを実行して、& OneDrive for Businessの電子情報開示ケースに関連付けられた新しい保留リストにメールボックスを追加するMicrosoft 365 コンプライアンス センター。
+ms.openlocfilehash: 7f1b5f9d3b8106ca899079d22fd4a46a8270771470be5a288ef5d1f77f1a6cce
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909917"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859769"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>スクリプトを使用してコア電子情報開示ケースの保留リストにユーザーを追加する
 
@@ -105,7 +105,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 スクリプトが求める情報を収集した後、最後にスクリプトを実行して新しい保留リストを作成し、ユーザーを追加します。
   
-1. ファイル名のサフィックスを使用してWindows PowerShellスクリプト ファイルに次のテキストを保存します `.ps1` 。 たとえば、「 `AddUsersToHold.ps1` 」のように入力します。
+1. ファイル名のサフィックスを使用してWindows PowerShellスクリプト ファイルに次のテキストを保存します `.ps1` 。 たとえば、`AddUsersToHold.ps1` などです。
 
 ```powershell
 #script begin

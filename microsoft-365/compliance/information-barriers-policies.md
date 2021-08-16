@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08a0b3722bad18b2823b0ba0e5c998d570f3654e
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8b29c2f5256c991e327e8962f02a96a294a6bec6
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362584"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246558"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
 
@@ -29,7 +29,7 @@ ms.locfileid: "53362584"
 この記事では、情報バリア ポリシーを計画、定義、実装、および管理する方法について説明します。 いくつかの手順が関係し、作業フローはいくつかの部分に分かれています。 情報バリア ポリシーの定義[](#prerequisites)(または編集) を開始する前に、前提条件とプロセス全体を必ずお読みください。
 
 > [!TIP]
-> この記事には、シナリオ[の例](#example-contosos-departments-segments-and-policies)と、情報バリア ポリシーを計画[Excel](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)定義するためのダウンロード可能なブックが含まれています。
+> この記事では、情報 [バリア ポリシー](#example-contosos-departments-segments-and-policies) の計画と定義に役立つシナリオの例を示します。
 
 ## <a name="concepts-of-information-barrier-policies"></a>情報バリア ポリシーの概念
 
@@ -98,7 +98,7 @@ ms.locfileid: "53362584"
 すべての前提条件が満たされた場合は、次のセクションに進みます。
 
 > [!TIP]
-> 計画の準備を支援するために、この記事にはシナリオの例が含まれています。 [「Contoso の部署、セグメント、ポリシー」を参照してください](#example-contosos-departments-segments-and-policies)。<p>さらに、ダウンロード可能なExcelブックを使用して、セグメントとポリシーの計画と定義 (および PowerShell コマンドレットの作成) に役立ちます。 [ブックを取得します](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)。
+> 計画の準備を支援するために、この記事にはシナリオの例が含まれています。 [「Contoso の部署、セグメント、ポリシー」を参照してください](#example-contosos-departments-segments-and-policies)。
 
 ## <a name="part-1-segment-users"></a>パート 1: ユーザーのセグメント化
 
@@ -284,7 +284,7 @@ Contoso には、人事、営業、マーケティング、リサーチ、製造
 | セグメント | に連絡できます | に連絡できません |
 |:----------|:--------------|:-----------------|
 | 人事 | すべてのユーザー | (制限なし) |
-| 営業 | 人事、マーケティング、製造 | 研究 |
+| 営業 | 人事、マーケティング、製造 | リサーチ |
 | マーケティング | すべてのユーザー | (制限なし) |
 | リサーチ | 人事、マーケティング、製造 | 営業 |
 | 製造 | 人事、マーケティング | 人事またはマーケティング以外のユーザー |
@@ -313,7 +313,7 @@ Contoso は、次のように、Azure Active Directoryの Department 属性を�
 
 ### <a name="contosos-information-barrier-policies"></a>Contoso の情報バリアポリシー
 
-Contoso は、次の表で説明するように、3 つのポリシーを定義します。
+Contoso は、次の表で示すように 3 つのポリシーを定義します。
 
 | ポリシー | ポリシー定義 |
 |:---------|:--------------------|

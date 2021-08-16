@@ -4,7 +4,7 @@ metadata:
   ms.author: cmcatee
   author: cmcatee-MSFT
   manager: scotv
-  ms.reviewer: 'racheg, armanv'
+  ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: article
@@ -12,236 +12,188 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: プロダクト キーに関するよく寄せられる質問
+  ms.openlocfilehash: f50bd78e745e19cf97a4e6138d3d677fc30f5e16
+  ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 08/13/2021
+  ms.locfileid: "58247066"
 title: プロダクト キーに関するよく寄せられる質問
 summary: ''
 sections:
-  - name: 全般
-    questions:
-      - question: |
-          プロダクト キーとは
-        answer: |
-          プロダクト キーを使用すると、特定のボリューム ライセンス プログラムでライセンスを取得したソフトウェア製品を使用できます。 この製品に記載されているプロダクト Microsoft 365 管理センターボリューム ライセンス製品でのみ使用し、組織でのみ使用することを目的とします。
+- name: 全般
+  questions:
+  - question: >
+      What are product keys?
+    answer: >
+      A product key allows you to use a software product you have licensed under a specific volume licensing program. The product keys listed in the Microsoft 365 admin center should be used only with volume license products and are intended for use only by your organization.
 
-          Online Service Activation (OSA) キーは、サブスクリプションのアクティブ化に使用される単一Microsoft Online Servicesです。
 
-          詳細については、「Online [Service Activation for Open programs FAQ」を参照してください](/licensing/online-service-activation-faq)。
-      - question: |
-          製品キーを検索する方法をMicrosoft 365 管理センター?
-        answer: |
-          1. アカウントにサインインMicrosoft 365 管理センター。 
-          2. [製品の  >  **請求]**  >  **[ボリューム ライセンス]** に移動&キー>をクリックし、[キーの表示]  >  **を選択します**。
+      An Online Service Activation (OSA) key is a single-use product key used to activate Microsoft Online Services subscriptions.
 
-          各製品のプロダクト キー情報、ライセンスの種類 (ボリューム ライセンス キー、キー管理サービス (KMS)、および複数のライセンス認証キー (MAK))、および使用できる MAK ライセンス認証の数を確認できます。
 
-          [ **すべてのプロダクト キーをダウンロードする]** を選択して、ライセンスに表示されるキーをローカル ドライブにダウンロードします。
-      - question: |
-          プロダクト キーをSQL Serverする方法
-        answer: |
-          ライセンス SQLは、管理センターに表示されるのではなく、ソフトウェアのライセンス認証ウィザードに埋め込まれているので、インストール中に自動的に検出されます。 詳細については、「[SQL Server インストール ガイド] (/sql/database-engine/install-windows/install-sql-server)」を参照してください。
+      For more information, see [Online Service Activation for Open programs FAQ](/licensing/online-service-activation-faq).
+  - question: >
+      How do I find product keys in the Microsoft 365 admin center?
+    answer: "1. Sign into the Microsoft 365 admin center. \n2. Go to **Billing** > **Your products** > **Volume licensing** > **Downloads & keys** > hover on product and select **View keys**.\n\nYou’ll find product key information for each product, the type of licensing (Volume Licensing Key, Key Management Service (KMS), and Multiple Activation Key (MAK)) and the number of used and available MAK activations.\n\nSelect **Download all product keys** to download the keys displayed for a license to a local drive.\n"
+  - question: >
+      How do I find SQL Server product keys?
+    answer: >
+      The SQL license key is embedded in the software’s activation wizard rather than displayed in the admin center and is detected automatically during installation. For more information, see [The SQL Server Installation Guide] (/sql/database-engine/install-windows/install-sql-server).
 
-          また、管理センターから ISO ファイルSQLダウンロードして、キー>できます。\x64 フォルダー> DefaultSetup.iniします。 新しいエディションをインストールまたはアップグレードする前に、既存のバージョンをSQLしてください。 製品のインストールまたはオンライン サービスのライセンス認証中に技術的な問題のトラブルシューティングに関するヘルプが必要な場合は、テクニカル サポート要求を送信して Microsoft テクニカル サポートに [問い合わせください](https://support.microsoft.com/oas)。
-      - question: |
-          ボリューム ライセンス購入のプロダクト キーを見つける方法
-        answer: |
-          契約でキーが必要な製品へのアクセスを承認する場合は、[製品のボリューム ライセンスのダウンロード] &に移動して、それらのキー  >    >    >  **を見つける必要があります**。 
 
-          ただし、プロダクト キーを必要としない製品があります。 この情報は、[ダウンロードとキー] カタログの製品の説明に記載されています。
+      You can also find the key by downloading the SQL ISO file from the admin center > ..\x64 folder > DefaultSetup.ini file. Make sure to back up any existing version before installing or upgrading SQL editions. If you need help troubleshooting technical issues during product installation or online service activation, contact Microsoft Technical Support by submitting a [Technical Support request](https://support.microsoft.com/oas).
+  - question: >
+      How do I find a product key for Volume Licensing purchase?
+    answer: "If your agreement authorizes access to a product that requires a key, you can find those keys by going to **Billing** > **Your products** > **Volume licensing** > **Downloads & keys**. \n\nHowever, some products don’t require a product key. This information is listed in the product description in the Downloads and Keys catalog.\n\nTo determine if your product requires a key, go to [Product activation and key information](https://licensingapps.microsoft.com/product-activation). Under Find Products, choose a product or search for your product name.\n"
+  - question: >
+      What is a setup key?
+    answer: >
+      A setup key is used for each product/version combination to unlock the product by bypassing activation. You can get a setup key in one of two ways:
 
-          製品にキーが必要かどうかを確認するには、[製品のライセンス認証とキー [情報] に移動します](https://licensingapps.microsoft.com/product-activation)。 [製品の検索] で、製品を選択するか、製品名を検索します。
-      - question: |
-          セットアップ キーとは
-        answer: |
-          製品/バージョンの組み合わせごとにセットアップ キーを使用して、ライセンス認証をバイパスして製品のロックを解除します。 セットアップ キーは、次の 2 つの方法で取得できます。
+        - **Physical fulfillment** For products acquired through physical fulfillment, the setup key is printed on the media sleeve.
+        - **Download fulfillment** For products acquired by download from the admin center, the setup key is displayed on the download screen and could be accompanied by the following text: Some products available for download require setup keys. Note the setup key as it's' needed during product installation. For more on setup keys, see [KMS client setup keys](/windows-server/get-started/kmsclientkeys).
+  - question: >
+      What determines which product keys are associated with my agreements?
+    answer: >
+      Volume License product keys are provided for each Licensing ID listed in your [Microsoft Relationship Summary](/licensing/license-faq). This Relationship Summary is on the Volume Licensing Service Center. For more information, see [What is a Licensing ID](/licensing/license-faq#what-is-a-licensing-id). You could have several Licensing IDs:
 
-            - **物理的なフルフィルメント** 物理的なフルフィルメントによって取得された製品の場合、セットアップ キーはメディア スリーブに印刷されます。
-            - **フルフィルメントのダウンロード** 管理センターからダウンロードして取得した製品では、セットアップ キーがダウンロード画面に表示され、次のテキストが表示される場合があります。ダウンロード可能な一部の製品にはセットアップ キーが必要です。 製品のインストール中に必要なセットアップ キーに注意してください。 セットアップ キーの詳細については、「クライアント[セットアップ KMS」を参照してください](/windows-server/get-started/kmsclientkeys)。
-      - question: |
-          契約に関連付けられているプロダクト キーは何ですか?
-        answer: |
-          ボリューム ライセンスプロダクト キーは、Microsoft Relationship Summary に記載されている各ライセンス ID [に対して提供されます](/licensing/license-faq)。 このリレーションシップの概要は、ボリューム ライセンス サービス センターにあります。 詳細については [、「What is a Licensing ID」を参照してください](/licensing/license-faq#what-is-a-licensing-id)。 ライセンスの数種類の ID を使用できます。
+        - Enterprise Agreement (EA) and Select Plus customers receive product keys per product pool (Systems, Servers, and Applications).
+        - Select Agreement customers receive product keys per product pool (Systems, Servers, and Applications) based on their purchasing forecasts.
+        - Open License customers and Open Value customers receive applicable product keys based on their license purchases.
 
-            - Enterprise Agreement (EA) および Select Plus のお客様は、製品プール (システム、サーバー、およびアプリケーション) ごとにプロダクト キーを受け取ります。
-            - [契約のお客様は、購入予測に基づいて製品プール (システム、サーバー、およびアプリケーション) ごとにプロダクト キーを受け取る] を選択します。
-            - Open License のお客様と Open Value のお客様は、ライセンス購入に基づいて該当するプロダクト キーを受け取ります。
+      For more information, see the [License Summary FAQ](/licensing/license-faq).
 
-          詳細については、「ライセンスの概要 [に関するよく寄せられる質問」を参照してください](/licensing/license-faq)。
 
-          **メモ** すべてのお客様は、再イメージングおよびダウングレードの目的でプロダクト キーを使用する権利を持っています。 [プラス]、Enterprise Agreement (EA)、および [顧客のトレーニングとバックアップの評価権限が制限されています] を選択します。 詳細については、「製品ライセンス [ブリーフ」を参照してください](/licensing/learn-more/volume-licensing-briefs)。
-  - name: ボリューム ライセンス認証
-    questions:
-      - question: |
-          ボリュームライセンス認証とは
-        answer: |
-          ボリューム ライセンス認証は、ボリューム ライセンス プログラムでライセンスされているオペレーティング システムを実行しているコンピューターでWindowsのライセンス認証プロセスを自動化および管理するのに役立つ構成可能なソリューションです。 ボリューム ライセンス認証は、ボリューム ライセンス契約に基Officeボリューム ライセンス認証をサポートする、Microsoft の他のソフトウェアでも使用されます。 詳細については、以下を参照してください。
-            - [ユーザーのボリューム ライセンス認証を管理Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
-            - [ユーザーのボリューム ライセンス認証Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
+      **Note** All customers have the right to use product keys for re-imaging and downgrade purposes. Select Plus, Enterprise Agreement (EA), and Select customers have limited evaluation rights for training and back-up. For more information, see [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
+- name: ボリューム ライセンス認証
+  questions:
+  - question: >
+      What is volume activation?
+    answer: >
+      Volume activation is a configurable solution that helps automate and manage the product activation process on computers running Windows operating systems licensed under a volume licensing program. Volume activation is also used with other software from Microsoft, including the Office suites, sold under volume licensing agreements and that support volume activation. For more information, see:
+        - [Tools to manage volume activation of Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
+        - [Volume Activation for Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 
-          ボリューム ライセンス認証は、ボリューム ライセンス プログラムの対象となるシステムにのみ適用され、ライセンス認証のツールとして厳密に使用されます。 ライセンスの請求や請求には関連付けではありません。
+      Volume activation applies only to systems covered under a Volume Licensing program and is used strictly as a tool for activation. It’s not tied to license invoicing or billing.
 
-          ボリュームライセンス認証には、ボリュームライセンス認証を完了するための 2 つの方法があります。 お客様が組織のシステムをアクティブ化するには、次のいずれかのキーの種類または両方のキーを使用できます。
-            - キー管理サービス (KMS) を使用すると、組織は独自のネットワーク内でシステムをアクティブ化できます。
-            - 複数のライセンス認証キー (MAK) は、Microsoft ホスト型ライセンス認証サービスを使用して、一度にシステムをアクティブ化します。
-      - question: |
-          (キー管理サービス) のKMS?
-        answer: |
-          KMSは、製品のライセンス認証のために個々のコンピューターが Microsoft に接続する必要がなくなるので、組織が独自のネットワーク内のシステムをアクティブ化できるライセンス認証サービスです。 専用のシステムは不要で、他のサービスを提供するシステムで共同ホストできます。
 
-          KMS環境の物理コンピューターまたは仮想コンピューターの最小数が必要です。 ライセンス認証のしきい値と呼ばれるこれらの最小値は、顧客が簡単に満たEnterpriseされます。
+      Volume activation provides two ways to complete volume activations. Either or both key types can be used by customers to activate systems in their organization:
+        - Key Management Service (KMS) allows organizations to activate systems within their own network.
+        - Multiple Activation Key (MAK) activates systems on a one-time basis, using Microsoft hosted activation services.
+  - question: >
+      What is the Key Management Service (KMS)?
+    answer: >
+      KMS is an activation service that allows organizations to activate systems within their own network by eliminating the need for individual computers to connect to Microsoft for product activation. It doesn’t require a dedicated system and can be co-hosted on a system that provides other services.
 
-            - ライセンス認証のしきい値Windows
-              - サーバーを実行しているサーバーをアクティブ化するには、組織に少なくとも 5 台のコンピューター Windows必要があります。
-              - 組織で、クライアント システムをアクティブ化するには、25 台以上のコンピューターが必要です。Windows。
-            - ライセンス認証のしきい値Office
-              - 組織では、インストール済み製品をライセンス認証するために、Officeエディションを実行Office 5 台以上のコンピューター KMS。
 
-          アクティブ化のしきい値の詳細については、「ボリューム ライセンス認証計画 [ガイド」を参照してください](/windows/deployment/volume-activation/volume-activation-windows-10)。
-      - question: |
-          ホスト キー KMSは何ですか?
-        answer: |
-          このKMSは、Microsoft ライセンス認証サーバーを使用して KMS ホスト コンピューターをアクティブ化するために使用され、ホストごとに 10 回のライセンス認証を行う最大 6 KMS ホストをアクティブ化できます。 各KMSホストは、無制限の数のコンピューターをアクティブ化できます。
-      - question: |
-          オープン ライセンスのお客様KMSにMicrosoft 365 管理センターキーが表示されない理由
-        answer: |
-          KMSライセンス認証キー (MAK) を使用する場合、Open 契約に事前割り当てされていないキーは、ライセンス認証の推奨方法です。
+      KMS requires a minimum number of either physical or virtual computers in a network environment. These minimums, called activation thresholds, are set so that they are easily met by Enterprise customers.
 
-          KSM キーは、例外として、KMS Server、OS、および Office の最小 KMS Windows ライセンス認証しきい値を満たすユーザーに割り当Office。 例外を要求するには、Web フォーム要求を Microsoft サポートに送信します。
+        - Activation thresholds for Windows
+          - Your organization must have at least 5 computers to activate servers running Windows Server.
+          - Your organization must have at least 25 computers to activate client systems running Windows.
+        - Activation thresholds for Office
+          - Your organization must have at least 5 computers running an edition of Office to activate installed Office products using KMS.
 
-          例外を要求するには、VLSC 管理者、キー管理者、またはキー ビューアーのアクセス許可を持ち、次の情報を提供する必要があります。
-            
-            - 契約/登録番号またはライセンス ID と承認。
-            - 製品名 (バージョンとエディションを含む)。
-            - プロダクト キーの最後の 5 文字。
-            - 必要なホストライセンス認証の数。
-            - ビジネスの正当性または展開の理由。
-      - question: |
-          追加のホストが必要なKMS?
-        answer: |
-          6 つ以上のホストKMSアクティブ化するために追加のライセンス認証が必要KMS、サポートに Web フォーム要求をMicrosoft 365 管理センターしてください。 
+      For more information about activation thresholds, see the [Volume Activation Planning Guide](/windows/deployment/volume-activation/volume-activation-windows-10).
+  - question: >
+      What is a KMS host key?
+    answer: >
+      A KMS key is used to activate the KMS host computer with a Microsoft activation server and can activate up to 6 KMS hosts with 10 activations per host. Each KMS host can activate an unlimited number of computers.
+  - question: >
+      Why is no KMS key displayed on Microsoft 365 admin center for Open License customers?
+    answer: "KMS keys are no longer pre-assigned to Open agreements as use of Multiple Activation Key (MAK) is the preferred method for activation.\n\nKSM keys can be assigned, by exception, to Open customers who meet the minimum KMS activation threshold for Windows Server, OS, and Office. To request an exception, submit a web form request to Microsoft Support.\n\nTo request an exception, you must have VLSC Administrator, Key Administrator, or Key Viewer permissions and provide the following information:\n  \n  - Agreement / Enrollment Number or License ID and Authorization.\n  - Product Name (including version and edition).\n  - Last 5 characters of the product key.\n  - The number of host activations required.\n  - Business justification or reason for deployment.\n"
+  - question: >
+      What if I need additional KMS hosts?
+    answer: "If you require additional KMS activations for activating more than 6 KMS hosts, submit a web form request to Microsoft 365 admin center support. \n\nTo request an exception, you must have VLSC Administrator, Key Administrator, or Key Viewer permissions and provide the following information:\n  \n  - Agreement / Enrollment Number or License ID and Authorization.\n  - Product Name (including version and edition).\n  - Last 5 characters of the product key.\n  - The number of host activations required.\n  - Business justification or reason for deployment.\n"
+  - question: >
+      What is a Multiple Activation Key (MAK)?
+    answer: >
+      A Multiple Activation Key (MAK) activates systems on a one-time basis, using Microsoft hosted activation services that require connection with a Microsoft activation server. Once computers are activated, no further communication with Microsoft is required.
 
-          例外を要求するには、VLSC 管理者、キー管理者、またはキー ビューアーのアクセス許可を持ち、次の情報を提供する必要があります。
-            
-            - 契約/登録番号またはライセンス ID と承認。
-            - 製品名 (バージョンとエディションを含む)。
-            - プロダクト キーの最後の 5 文字。
-            - 必要なホストライセンス認証の数。
-            - ビジネスの正当性または展開の理由。
-      - question: |
-          複数のライセンス認証キー (MAK) とは何ですか?
-        answer: |
-          複数ライセンス認証キー (MAK) は、Microsoft ライセンス認証サーバーとの接続を必要とする Microsoft ホスト型ライセンス認証サービスを使用して、一度にシステムをアクティブ化します。 一度コンピューターがライセンス認証されれば、それ以上マイクロソフトと通信する必要はありません。
 
-          **重要** 許可される MAK ライセンス認証の数は、ボリューム ライセンス契約に基づいて行います。
-      - question: |
-          提供されている MAK ライセンス認証の数が、購入したライセンスの数と一致しない理由
-        answer: |
-          複数のライセンス認証キー (MAK) KMSを使用することをお勧めします。 KMSは、大規模展開に推奨されるライセンス認証方法です。 多くの要因によって、購入したライセンス、顧客の購入価格レベル、ボリューム ライセンス プログラムなど、各 MAK に関連付けられているライセンス認証の数が決まっています。
+      **Important** The number of allowed MAK activations is based on your Volume Licensing agreement.
+  - question: >
+      Why doesn’t the number of MAK activations provided match the number of licenses we purchased?
+    answer: >
+      We recommend customers use KMS to activate Multiple Activation Keys (MAK). KMS is the preferred activation method for large scale deployments. Many factors determine the number of activations associated with each MAK, including licenses purchased, the customer purchase pricing level, and their Volume Licensing program.
 
-          製品で使用可能なライセンス認証の数が、購入したライセンスの数と必ずしも一致するとは限らない。 通常、一部の製品を再インストールしてアクティブ化する必要がある場合に備え、より多くのライセンス認証を受け取る必要があります。 ライセンス数を表示するには、契約の [ライセンスの概要] セクションを確認します。
-      - question: |
-          MAK ライセンス認証制限の引き上げを要求する方法
-        answer: |
-          MAK ライセンス認証数量の増加は、Web フォームを介して要求できます。例外によって付与されます。 カナダと米国の場合は、ボリューム ライセンス [サポート要求を送信します](https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f)。 その他のすべての国については、サポート Web [フォームを送信します](/licensing/contact-us)。 
 
-          MAK ライセンス認証の制限を要求するには、VLSC 管理者、キー管理者、またはキー ビューアーのアクセス許可を持ち、次の情報を提供する必要があります。
+      The number of activations available for a product won’t always match the number of licenses purchased. Usually, you receive a more activations in case you need to reinstall and activate some of your products. Check the Licensing Summary section of your agreement to view the number of licenses.
+  - question: >
+      How do I request an increase to MAK activation limits?
+    answer: "Increases to MAK activation quantity can be requested via web form and are granted by exception. For Canada and the United States, submit [Volume Licensing Support Requests](https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f). For all other countries, submit a [Support Web Form](/licensing/contact-us). \n\nTo request a MAK activation limit, you must have VLSC Administrator, Key Administrator, or Key Viewer permissions and provide the following information:\n\n  - Agreement/Enrollment Number or License ID and Authorization.\n  - Product Name (including version and edition).\n  - Last 5 characters of the product key.\n  - The number of host activations required.\n  - Business justification or reason for deployment.\n"
+  - question: >
+      How do I activate licenses using a Multiple Activation Key (MAK)?
+    answer: >
+      You can activate licenses in one of two ways using MAK:
 
-            - 契約/登録番号またはライセンス ID と承認。
-            - 製品名 (バージョンとエディションを含む)。
-            - プロダクト キーの最後の 5 文字。
-            - 必要なホストライセンス認証の数。
-            - ビジネスの正当性または展開の理由。
-      - question: |
-          複数のライセンス認証キー (MAK) を使用してライセンスをアクティブ化する方法
-        answer: |
-          MAK を使用してライセンスをアクティブ化するには、次の 2 つの方法のいずれかを使用します。
+        - MAK Independent Activation Each computer individually connects to Microsoft by using the web or telephone to complete activation.
+        - MAK Proxy Activation One centralized activation request is made on behalf of multiple computers with a single connection to Microsoft online or by telephone. This method uses the Volume Activation Management Tool (VAMT), which is a part of the Windows Automated Installation Kit (WAIK). VAMT enables IT Professionals to automate and centrally manage the Volume Activation process using MAK and includes a check on the number of activations on the MAK.
+  - question: >
+      What is the Volume Activation Management Tool (VAMT)?
+    answer: >
+      The Volume Activation Management Tool (VAMT) is a tool that allows network administrators and other IT professionals to automate and centrally manage the volume- and retail-activation process for Windows, Microsoft Office, and select other Microsoft products. VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the Windows Key Management Service (KMS). VAMT is a standard Microsoft Management Console (MMC) snap-in that requires the Microsoft Management Console (MMC) 3.0.
 
-            - MAK 独立ライセンス認証 各コンピューターは、Web または電話を使用して Microsoft に個別に接続してライセンス認証を完了します。
-            - MAK プロキシライセンス認証 Microsoft にオンラインまたは電話で 1 つの接続を持つ複数のコンピューターに代わって 1 つの集中ライセンス認証要求が行います。 このメソッドは、ボリューム ライセンス認証管理ツール (VAMT) を使用します。このメソッドは、WINDOWS自動インストール キット (WAIK) の一部です。 VAMT IT プロフェッショナルは、MAK を使用してボリューム ライセンス認証プロセスを自動化および一部管理し、MAK のライセンス認証の数のチェックを含む機能を提供します。
-      - question: |
-          (ボリューム ライセンス認証管理ツール) のVAMT?
-        answer: |
-          ボリューム ライセンス認証管理ツール (VAMT) は、ネットワーク管理者や他の IT 担当者が、Windows、Microsoft Office、および他の Microsoft 製品のボリュームライセンス認証プロセスと小売ライセンス認証プロセスを自動化し、一方的に管理できるツールです。 VAMTライセンス認証キー (MAK) または複数のライセンス認証キー (WINDOWS キー管理サービス) をKMS。 VAMTは、Microsoft 管理コンソール (MMC) 3.0 を必要とする標準の Microsoft 管理コンソール (MMC) スナップインです。
 
-          詳細については、「VAMT」を参照してください。
+      For information on VAMT, see:
 
-            - [ボリューム ライセンス認証管理ツール (VAMT) テクニカル リファレンス](/windows/deployment/volume-activation/volume-activation-management-tool)
-            - [[ライセンス認証の管理] ボリューム ライセンス認証管理ツール (VAMT)](/previous-versions/tn-archive/ff686876(v=technet.10))
-            - ダウンロード[ボリューム ライセンス認証管理ツール (VAMT)](https://www.microsoft.com/download/details.aspx?id=11936)
-      - question: |
-          クライアントをアクティブ化するWindowsサーバーをKMSする方法Windows。
-        answer: |
-          ライセンス認証方法として Windows (キー管理サービス) KMSを使用して展開する場合は、次の点に注意してください。
-            
-            - Windowsサーバーは、サーバーをアクティブ化KMSホストとしてWindows。
-            - クライアント WindowsのKMSを許可する更新プログラムを取得するには、サーバー サーバー Windowsが必要です。 最新の更新プログラムについては、「[ボリューム](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office)ライセンス バージョンのアクティブ化をKMSホスト コンピューターを構成する」を参照Office。 
+        - [Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool)
+        - [Managing Activation Using the Volume Activation Management Tool (VAMT)](/previous-versions/tn-archive/ff686876(v=technet.10))
+        - Download [Volume Activation Management Tool (VAMT)](https://www.microsoft.com/download/details.aspx?id=11936)
+  - question: >
+      What should I know about using Windows Server as the KMS host to activate Windows clients?
+    answer: "If you deploy Windows using Key Management Service (KMS) as the activation method, note that:\n  \n  - Windows Server is not supported as a KMS host to activate Windows.\n  - A Windows Server KMS key is required to get a patch to allow activation of Windows client machines. For the latest patch, see [Configure a KMS host computer to activate volume licensed versions of Office](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office). \n\nIf you’re using Windows Server as a KMS host, you can:\n  \n  - Upgrade the KMS host machine to Windows Server.\n  - Downgrade the machine to Windows Server 2003.\n  - Run the KMS host on a Windows volume edition machine.\n  - Run a Windows Server virtual machine.\n"
+  - question: >
+      What should I know about Volume Activation for Office, Project, and Visio?
+    answer: >
+      The following Volume Activation changes are related to Office, Project and Visio:
+        - Office KMS Host activates any Office suite or application.
+        - Only one Office KMS key should be installed and used for activation.
 
-          サーバーをホストとしてWindowsしているKMS、次のコマンドを実行できます。
-            
-            - ホスト コンピューター KMSサーバーにアップグレードWindowsします。
-            - コンピューターをサーバー 2003 Windowsダウングレードします。
-            - ボリューム エディションKMSコンピューターでWindowsホストを実行します。
-            - サーバー仮想マシンWindows実行します。
-      - question: |
-          ボリューム ライセンス認証について、Office、Project、およびVisio。
-        answer: |
-          次のボリューム ライセンス認証の変更は、ユーザー、Office、Projectに関連Visio。
-            - Office KMS Host は、任意のスイートOfficeアプリケーションをアクティブ化します。
-            - ライセンス認証Office KMS使用する必要があるキーは 1 つのみです。
+      If you deploy Office using Key Management Service (KMS) as the activation method, note that:
+        - You can’t activate Office using KMS if you use Windows Server as the KMS host.
+        - A patch is not available to allow activation of Office clients.
 
-          ライセンス認証方法として Office (キー管理サービス) KMSを使用して展開する場合は、次の点に注意してください。
-            - サーバーをホストとしてOffice KMS場合WindowsをKMSできません。
-            - 更新プログラムは、クライアントのライセンス認証を許可Officeできません。
+      If you’re using Windows Server 2008 as a KMS host, you can:
+        - Upgrade the KMS host machine to Windows Server.
+        - Downgrade the machine to an older version of Windows Server.
+        - Run the KMS host on a Windows PC.
+        - Run a Windows Server virtual machine on a newer version of Windows Server.
+  - question: >
+      How do I activate Windows Terminal Server and Remote Desktop Service (RDS)?
+    answer: >
+      After you download your server media from the VLSC you can activate it by using the product activation wizard. You don’t need to locate a volume license key or product set up key in the VLSC. Completing all the activation wizard steps prompts the Server to connect with the Microsoft Clearing House via the internet to validate the data. Alternatively, for offline servers the activation wizard offers phone or web activation.
 
-          サーバー 2008 WindowsホストとしてKMS場合は、次のKMS実行できます。
-            - ホスト コンピューター KMSサーバーにアップグレードWindowsします。
-            - コンピューターを以前のバージョンのサーバーにダウンWindowsします。
-            - PC 上KMSホストをWindowsします。
-            - 新しいバージョンWindowsサーバーでサーバー仮想マシンを実行Windowsします。
-      - question: |
-          サーバーとリモート デスクトップ Windows ターミナル (RDS) をアクティブ化する方法
-        answer: |
-          VLSC からサーバー メディアをダウンロードしたら、製品ライセンス認証ウィザードを使用してライセンス認証できます。 VLSC でボリューム ライセンス キーまたは製品セットアップ キーを見つける必要はない。 すべてのライセンス認証ウィザードの手順を完了すると、サーバーはインターネット経由で Microsoft クリアリング ハウスに接続してデータを検証するように求めるメッセージが表示されます。 または、オフライン サーバーの場合、ライセンス認証ウィザードは電話または Web ライセンス認証を提供します。
 
-          まず、サーバーのリモート デスクトップ ライセンスの役割 **([** 管理ツール サーバー マネージャーの起動]) を割り当て、リモート デスクトップ ライセンス マネージャーから  >    >  RDS サービスをアクティブにします。 [**管理**  >  **ツールのリモート**  >  **デスクトップ サービスの開始**] を選択し、[リモート デスクトップ/ターミナル ライセンス マネージャー]**を選択します**。
+      To begin, assign a Remote Desktop Licensing role for the server, (**Start** > **Administrative Tools** > **Server Manager**) and then activate the RDS Service from your Remote Desktop License Manager. Select **Start** > **Administrative Tools** > **Remote Desktop Services**, and then select **Remote Desktop/Terminal License Manager**.
 
-          ライセンス認証中に、ライセンス プログラムと契約番号を選択する必要があります。 [オープン ライセンスのお客様] に、承認番号を入力します。 MPSA の場合は、購入アカウント番号 (MPSA 契約番号ではなく) を入力します。 CAL ライセンスの購入に使用するライセンス ID のプログラムの種類が不明な場合は **、[VLSC リレーションシップ** の概要] に移動し、[親プログラム] 列 **を参照** してください。
 
-          ターミナル サーバーのライセンスの詳細については、「 [ターミナル サーバー のライセンス」を参照してください](/troubleshoot/windows-server/remote/terminal-server-licensing)。 リモート デスクトップ ライセンスの役割をインストールしてライセンス サーバーをアクティブ化する方法については[](/windows-server/remote/remote-desktop-services/rds-activate-license-server)、「リモート デスクトップ サービス ライセンス サーバーをアクティブ化する」および「RD ライセンス サーバーが利用できないので[、RDS](/troubleshoot/windows-server/remote/cannot-connect-rds-no-license-server)に接続できません」を参照してください。
-      - question: |
-          同じ所有権構造内の組織は、同じキーを使用して製品を展開できますか?
-        answer: |
-          ライセンスコンプライアンスとアセット管理は、キーのアクティブ化とは独立しています。 お客様は、特定のライセンス ID (契約、登録、アフィリエイト、またはライセンス) の下で提供されるキーを使用する必要があります。 親組織に個別の契約がある場合は、同じキーを使用して、親組織と子組織に製品を展開できます。 この柔軟性により、お客様は契約/ライセンスに固有のキーを使用するか、すべてのユーザーに対して 1 セットのキーを使用して展開イメージを一中心に管理できます。
-      - question: |
-          ボリューム ライセンス キーを使用して再イメージング権限を行使できますか?
-        answer: |
-          はい。 再イメージング権限は、すべての Microsoft ボリューム ライセンスのお客様に付与されます。 これらの権利の下で、ボリューム ライセンス メディアから作成されたコピーが元のライセンス製品と同一である場合、お客様は契約に基いて提供されたメディアを使用して、元の機器メーカー (OEM) またはフル パッケージ製品 (FPP) ライセンス コピーを再イメージできます。 ボリューム ライセンスのお客様は、プロダクト キー ページでボリューム ライセンス キーを見つけるか、Microsoft ライセンス認証センターからキーを [要求できます](https://licensingapps.microsoft.com/product-activation)。
+      During activation, you’re asked to select the License Program and Agreement Number. For Open License customers, enter your Authorization Number. For MPSA, enter your Purchase Account Number (not the MPSA Agreement number). If you’re unsure of the program type for the License ID used to purchase your CAL licenses, go to the **VLSC Relationship Summary** and refer to the **Parent Program** column.
 
-          **メモ** Open License のお客様の場合は、製品メディアへのアクセスを取得してプロダクト キーを受け取るために、イメージを変更する製品のユニットを少なくとも 1 つ購入する必要があります。
 
-          再イメージング権限の詳細については、「製品ライセンス ブリーフ [」を参照してください](/licensing/learn-more/volume-licensing-briefs)。
-      - question: |
-          ローカル ファイルにキーをダウンロードする方法
-        answer: |
-          このMicrosoft 365 管理センターは、後で使用するためにプロダクト キーをローカル ファイルにダウンロードするオプションを提供します。 [ダウンロードとキー] ページからプロダクト キーをダウンロードすると、管理センター プロファイルの契約に関連付けられているすべてのボリューム ライセンス キーがファイルに含まれる。 ただし、[リレーションシップの概要] ページの [ライセンス ID] ビューからキーをダウンロードすると、表示するライセンス ID に関連付けられたキーだけがファイルに含まれる。
+      For information about licensing Terminal Server, see [Terminal Server licensing](/troubleshoot/windows-server/remote/terminal-server-licensing). For information on how to install the remote desktop licensing role and activate the license server, see [Activate the Remote Desktop Services license server](/windows-server/remote/remote-desktop-services/rds-activate-license-server) and  [Cannot connect to RDS because no RD Licensing servers are available](/troubleshoot/windows-server/remote/cannot-connect-rds-no-license-server).
+  - question: >
+      Can organizations within the same ownership structure use the same key to deploy a product?
+    answer: >
+      License compliance and asset management are independent of key activation. Customers don’t have to use the keys provided under a specific Licensing ID (agreement, enrollment, affiliate, or license). If a parent organization has an individual agreement, it can use the same key to deploy a product across parent and child organizations. This flexibility allows customers to centrally manage their deployment image by using either keys specific to agreements/licenses or one set of keys for all.
+  - question: >
+      Can I use my Volume License Keys to exercise my re-imaging rights?
+    answer: >
+      Yes. Re-imaging rights are granted to all Microsoft Volume Licensing customers. Under these rights, customers can re-image Original Equipment Manufacturer (OEM) or Full Packaged Product (FPP) licensed copies by using media provided under their agreement if the copies made from the Volume Licensing media are identical to the original licensed product. As a Volume Licensing customer, you can find the Volume License Keys on the product key page or request your keys through a [Microsoft Activation Center](https://licensingapps.microsoft.com/product-activation).
 
-          ダウンロード可能なプロダクト キー ファイルはタブ区切り形式で、Excel またはテキスト エディターで開いてキーを並べ替え、表示できます。 これらは、ファイルに含まれる列です。ライセンス **ID、****親** プログラム、**組織**、**製品**、プロダクト キー、**種類****、MAK ライセンス認証-使用済み/利用可能、シート、および OSA 状態** です。  
 
-          ダウンロードしたファイルをダウンロードして開Excel手順を実行します。
-            1. Microsoft Excel を開きます。
-            2. [**ファイルを**  >  **開く]** を選択し、ダウンロードした CSV ファイルを選択します。
-            3. [ **区切り]** (既定値) を選択し、[ **タブ** 区切り] を選択します (1 つの列内のすべてのデータが表示されるのを防ぐ場合)。
-            4. **[完了]** を選択します。 
+      **Note** If you’re an Open License customer, you must purchase at least one unit of the product that you want to re-image to obtain access to the product media and receive a product key.
 
-          ファイル.CSVが開き、Excel列にデータが表示されます。
-  - name: サポート
-    questions:
-      - question: |
-          サポートへの問い合わせ方法
-        answer: |
-          Microsoft 365 管理センターお客様は、電話または Web フォームでサポートに問い合わせできます。 Microsoft は 24 時間以内に Web フォームの申請に応答します。 サポートに問い合わせするには、「お問い [合わせ」をご覧ください](/licensing/contact-us)。
-additionalContent: |
 
-  ## <a name="additional-resources"></a>その他のリソース
-
-  - [ダウンロードに関する FAQ](downloads-faq.yml)
-
-  - [Open プログラムのオンライン サービスのアクティブ化に関する FAQ](online-service-activation-faq.yml)
+      For more information on re-imaging rights, see [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
+  - question: >
+      How do I download my keys to a local file?
+    answer: "The Microsoft 365 admin center offers an option to download product keys to a local file for later use. When you download product keys from the Downloads and Keys page, the file contains all Volume License Keys associated with agreements in your admin center profile. However, if you download keys from the Licensing ID view on the Relationship Summary page, the file contains only the keys associated with the Licensing ID you’re viewing.\n\nA downloadable product key file is in a tab-delimited format and can be opened in Excel or a text editor to sort and view keys. These are the columns included in the file: **License ID**, **Parent Program**, **Organization**, **Product**, **Product Key**, **Type**, and **MAK Activations-Used/Available, Seats and OSA Status**. \n\nTo open a downloaded file in Excel, complete these steps:\n  1. Open Microsoft Excel.\n  2. Select **File** > **Open**, and then select the downloaded CSV file.\n  3. Select **Delimited** (the default), and then select **Tab-separated** (to prevent the display of all data in a single column).\n  4. Select **Finish**. \n\nThe .CSV file opens in Excel and the data is displayed in separate columns.\n"
+- name: サポート
+  questions:
+  - question: >
+      How do I contact support?
+    answer: >
+      Microsoft 365 admin center customers can contact support by phone or by web form. Microsoft responds to web form submissions within 24 hours. To contact support, see [Contact Us](/licensing/contact-us).
+additionalContent: "\n## Additional resources\n\n- [Downloads FAQ](downloads-faq.yml)\n\n- [Online service activation for Open programs FAQ](online-service-activation-faq.yml)"

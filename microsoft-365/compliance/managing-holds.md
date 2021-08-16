@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 保管担当者とそのデータ ソースに保留を設定して、ユーザーのケースに関連するコンテンツを保持するAdvanced eDiscoveryします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 70390a933de788a6b1190e42b5087b85a175b9a2
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5c5781d5dd2ce08c3b57695fa08720c1cc3ab38c6f41bceeb6f12a388232c70c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570591"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859805"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Advanced eDiscovery の保留を管理する
 
@@ -36,7 +36,7 @@ ms.locfileid: "51570591"
 
 保管担当者の保留ポリシーを表示するには、次の方法を実行します。
 
-1. [コンプライアンス Microsoft 365] センターで、[電子情報開示] > **[詳細設定**] をクリックして、組織のケースの一覧を表示します。
+1. [詳細] Microsoft 365 コンプライアンス センター[電子情報開示] >**を** クリックして、組織のケースの一覧を表示します。
 
 2. [ソース] **タブに移動** して、ケース内に保管担当者を追加します。 保管担当者を追加して保留にできる方法については、「ケースに保管担当者Advanced eDiscoveryを追加する」を[参照してください](add-custodians-to-case.md)。 カストディアンを既に追加して保留にしている場合は、手順 3 に進みます。
 
@@ -54,7 +54,7 @@ ms.locfileid: "51570591"
 
 ケースに対して非保管ホールドをAdvanced eDiscoveryするには、次のAdvanced eDiscoveryします。
 
-1. [コンプライアンス Microsoft 365] センターで、[電子情報開示] > **[詳細設定**] をクリックして、組織のケースの一覧を表示します。
+1. [詳細] Microsoft 365 コンプライアンス センター[電子情報開示] >**を** クリックして、組織のケースの一覧を表示します。
   
 2. 保留リストを作成するケースの横の [**開く**] をクリックします。
   
@@ -137,7 +137,7 @@ Microsoft Teamsグループに基Office 365されます。 したがって、そ
 
  - ユーザーのメールボックスが検索された場合Microsoft 365メンバーであるグループまたは Microsoft チームは検索されません。 同様に、グループまたは Microsoft チームMicrosoft 365を配置すると、グループ メールボックスとグループ サイトだけが保留されます。グループ メンバーのメールボックスとOneDrive for Businessサイトは、明示的に保管担当者として追加するか、データ ソースを保持しない限り、保留にされません。 したがって、特定の保管担当者に対して Microsoft 365 グループまたは Microsoft チームを保留にする必要がある場合は、グループ サイトとグループ メールボックスを保管担当者にマッピングする方法を検討してください (「Advanced eDiscovery の管理保管担当者」を参照)。 管理者グループMicrosoft 365 Microsoft チームが 1 人の保管担当者に帰属しない場合は、ソースを非保管ホールドに追加する方法を検討してください。 
  
- - Microsoft 365 グループまたは Microsoft チームのメンバーの一覧を取得するには、Microsoft 365 管理センターの [ホーム > グループ] ページでプロパティを表示できます。 または、Exchange Online PowerShell で次のコマンドを実行できます。
+ - Microsoft 365 グループまたは Microsoft チームのメンバーの一覧を取得するには、> グループのホーム ページでプロパティを表示Microsoft 365 管理センター。 または、Exchange Online PowerShell で次のコマンドを実行できます。
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

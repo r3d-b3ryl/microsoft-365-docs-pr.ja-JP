@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d7bc7485ae66ad249a81b56592358507cffb539
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 510ef468374cae09f450751c7fb6d39439c885e260e32fa61f97f60a9c4678fd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873309"
 ---
 # <a name="contact-support-for-cayman-islands"></a>ケイマン諸島のサポートに問い合わせ
 

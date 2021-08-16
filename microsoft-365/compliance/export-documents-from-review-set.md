@@ -1,5 +1,5 @@
 ---
-title: レビュー セットからドキュメントをエクスポートする
+title: レビューセットからドキュメントをエクスポートする
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: プレゼンテーションまたは外部レビューのレビュー セットAdvanced eDiscoveryコンテンツを選択してエクスポートする方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ceb735b4ebce5ef26eb7e7216e1e0f81897c7c0cfbdbb5982b632e6f355e442a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ec92c432d693a46151cd92e9d65e5b6fc9c2734
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905808"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246586"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>[ドキュメント] のレビュー セットからドキュメントをエクスポートAdvanced eDiscovery
 
@@ -76,6 +76,8 @@ ms.locfileid: "53905808"
   - テキスト ファイル: このオプションには、エクスポートに抽出されたテキスト バージョンのネイティブ ファイルが含まれます。
   
   - 編集されたネイティブを変換された PDF に置き換える: レビュー中に編集された PDF ファイルが生成された場合、これらのファイルはエクスポートできます。 (このオプションを選択しない場合) やり直されたネイティブ ファイルのみをエクスポートするか、実際のやり直しを含む PDF ファイルをエクスポートするには、このオプションを選択できます。
+
+  - 個別のチャット メッセージの代わりに会話 PDF: このチェック ボックスをオンにすると、PDF ファイルにチャット会話がエクスポートされます。 同じ会話のすべてのチャット メッセージが同じ PDF ファイルにエクスポートされます。 このチェック ボックスをオフのままにすると、チャット会話内の各一意のメッセージがスタンドアロン アイテムとしてエクスポートされます。 ファイルは、メールボックスと同じ形式でエクスポートされます。 特定の会話では、複数の .msg ファイルを受信します。
 
 次のセクションでは、緩いファイルと圧縮ディレクトリ構造オプションのフォルダー構造について説明します。 エクスポートは、圧縮されていないコンテンツの最大サイズが 75 GB の ZIP ファイルに分割されます。 エクスポート サイズが 75 GB 未満の場合、エクスポートはサマリー ファイルと 1 つの ZIP ファイルで構成されます。 75 GB を超える圧縮されていないデータをエクスポートする場合は、複数の ZIP ファイルが作成されます。 ダウンロード後、ZIP ファイルを 1 つの場所に圧縮解除して、完全なエクスポートを再作成できます。
 
