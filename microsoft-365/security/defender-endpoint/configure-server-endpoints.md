@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a740586151666d62c96796a75988ebc10d8d5c56bc009ac1d321c352718f0ab6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 693575d507d77d7ac34422f0ddef0b0d4a41ecf2
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854265"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257864"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -70,10 +70,8 @@ System Center Operations Manager (SCOM) または Azure Monitor (旧称:Operatio
   3. センサー データを Defender for Endpoint に報告するサーバーの MMA をインストールして構成します。
   4. クライアントの構成と更新System Center Endpoint Protectionします。
 
-> [!TIP]
-> デバイスのオンボード後、検出テストを実行して、サービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Defender for Endpoint エンドポイントで検出テストを実行 [する」を参照してください](run-detection-test.md)。
 
-#### <a name="before-you-begin"></a>はじめに
+#### <a name="before-you-begin"></a>始める前に
 
 オンボーディング要件を満たすために、次の手順を実行します。
 
@@ -222,6 +220,10 @@ Defender for Endpoint は、エンドポイントとSystem Center Endpoint Prote
 - [2017 年 1](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)月のマルウェア対策プラットフォーム更新プログラムをクライアントEndpoint Protectionします。
 
 - [SCEP クライアント Cloud Protection Service メンバーシップを Advanced](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 設定に **構成** します。
+
+## <a name="run-a-detection-test-to-verify-onboarding"></a>検出テストを実行してオンボーディングを確認する
+デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。
+
 
 ## <a name="offboard-windows-servers"></a>オフボード Windows サーバー
 
@@ -372,7 +374,7 @@ Server 2008 R2 のオンボーディングに関するドキュメントで特�
 
 Windows Server 2008 R2 をオンボーディングする前に、KB が存在する必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)

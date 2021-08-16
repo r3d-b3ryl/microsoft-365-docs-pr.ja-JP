@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 06/14/2021
+ms.date: 08/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 99954e7d5bfeffdbe611aa06dae3e7bf6fd4653a757f6ed11c74f1df7b606fb3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a9202cf5da326bd573e85459591f408b04ddad03
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863501"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257732"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
 
@@ -57,7 +57,7 @@ ms.locfileid: "53863501"
 
 既存のエンドポイント保護ソリューションを最新の状態に保ち、組織のデバイスに最新のセキュリティ更新プログラムが含まれています。 
 
-サポートが必要な場合 ソリューション プロバイダーのドキュメントを参照してください。
+お困りの際は、 ソリューション プロバイダーのドキュメントを参照してください。
 
 ### <a name="make-sure-your-organizations-devices-are-up-to-date"></a>組織のデバイスが最新の情報を提供する
 
@@ -112,12 +112,12 @@ ms.locfileid: "53863501"
 
 | 機能  | オペレーティング システム | リソース |
 |:--|:--|:--|
-| [エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)  | [コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md) |
-| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-| EDR  | macOS:<p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave)   | [macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)  |
-| [Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
-| ウイルス対策 | macOS:<p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave) | [macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections) |
-| ウイルス対策 | Linux: <p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS 以上の LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections) |
+| [エンドポイントの検出と応答](overview-endpoint-detection-response.md)(EDR) | [Windows 10](/windows/release-health/release-information) <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)  | [コンピューター プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md) |
+| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
+| EDR  | macOS: 11.3.1 (Big Sur);10.15 (Catalina);10.14 (Mojave)   | [macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)  |
+| [Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windowsサーバー 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <br/>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md) |
+| ウイルス対策 | macOS: 11.3.1 (Big Sur);10.15 (Catalina);10.14 (Mojave) | [macOS 上のエンドポイントの Defender: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections) |
+| ウイルス対策 | Linux: RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 以上の LTS。SLES 12+;Debian 9+;Oracle Linux 7.2 | [Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections) |
 
 ## <a name="next-step"></a>次の手順
 

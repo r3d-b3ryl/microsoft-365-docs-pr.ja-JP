@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: 571e9fb4bcfc097e502fbf4d3696574ec880e23e3348b84056725977196c0464
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1120d695bd8dd81931b92f11b92308ae363db4ea
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794252"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257838"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -131,7 +131,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    > [!div class="mx-imgBorder"]
    > ![MEM の基本的な属性](images/mem03-1-basics.png)
 
-4. **[次へ]** をクリックします。 手順 **2 構成設定が開** きます。 [OMA-URI] の設定をクリック **します**。 2 つのオプションが表示 **されます。**
+4. [**次へ**] をクリックします。 手順 **2 構成設定が開** きます。 [OMA-URI] の設定をクリック **します**。 2 つのオプションが表示 **されます。**
 
    > [!div class="mx-imgBorder"]
    > ![MEM 構成の設定](images/mem04-2-configuration-settings.png)
@@ -172,7 +172,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    > [!div class="mx-imgBorder"]
    > ![MEM 適用ルール](images/mem07-5-applicability-rules.png)
 
-10. **[次へ]** をクリックします。 手順 **6 [レビュー] + [作成**] で、選択して入力した設定と情報を確認し、[作成] を **クリックします**。
+10. [**次へ**] をクリックします。 手順 **6 [レビュー] + [作成**] で、選択して入力した設定と情報を確認し、[作成] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
     > ![MEM レビューと作成](images/mem08-6-review-create.png)

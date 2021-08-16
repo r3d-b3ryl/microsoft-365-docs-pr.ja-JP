@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: bb5efb5bd001a2659b0c3780af5f195b77b3103b2e8a7d0c7d1eee6915a6e303
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: a4961b7a9ae2bdf24e4ac105f2b3ff0a153c1399
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523356"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257816"
 ---
 # <a name="enable-controlled-folder-access"></a>制御されたフォルダー アクセスを有効にする
 
@@ -73,7 +73,7 @@ ms.locfileid: "54523356"
 
 3. [**プラットフォーム] を** 選択 **し、[Windows 10] 以降を** 選択し、プロファイル攻撃表面縮小ルール [作成]**を**  >  **選択します**。
 
-4.  ポリシーに名前を付け、説明を追加します。 **[次へ]** を選択します。
+4.  ポリシーに名前を付け、説明を追加します。 次へ] を選択します。
 
 5.  下までスクロールし、[フォルダー保護を有効にする] ドロップダウンを選択し、[有効にする] を **選択します**。
 

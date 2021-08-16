@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c2154351dd3f7db7e3300dde86bdb3e7f1b6e4d55853c59449d11aa5ef12a643
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2eda900a659879fcfe07052e8b51ba3e5a03e633
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810980"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257708"
 ---
 # <a name="restrict-app-execution-api"></a>アプリの実行 API の制限
 
