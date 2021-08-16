@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: この情報を使用して、Office 365 がコンテンツ配信ネットワーク (CDN) を使用してパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: 1a963d14df14e8644072a159e35c8590f953dae6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.openlocfilehash: 853c145e616739fb9cbc1e15a9939dbc38c2b2cf1803e5bfca1b36d2dc254373
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870949"
 ---
 # <a name="content-delivery-networks-cdns"></a>コンテンツ配信ネットワーク (CDN)
 

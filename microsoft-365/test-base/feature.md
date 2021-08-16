@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: ce048796acd52e6daf8d4694cf72a0bd17c75ab4
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 91fcbdfeeec0a4127f0e1642049fd421a30df00ed4bd757a89d582015d477fc6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53323331"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888330"
 ---
 # <a name="windows-feature-update-validation"></a>Windows機能更新プログラムの検証
 

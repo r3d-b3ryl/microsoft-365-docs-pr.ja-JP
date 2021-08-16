@@ -1,8 +1,7 @@
 ---
-title: Microsoft Viva Topics のトピック センターでトピックを管理する
-description: トピック センターでトピックを管理する方法。
-author: chuckedmonson
+title: トピック センターのトピックを管理Microsoft Viva トピック
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ergradel
 audience: admin
@@ -13,14 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: f2429b0ffdd4a238bc9322ae9199eebbbfd407b5
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+description: トピック センターのトピックを管理する方法については、Microsoft Viva トピック。
+ms.openlocfilehash: 53fbc338d69c87029a6e1a65917abcc9b003f36f959e440165405527fdca87e5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651161"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840265"
 ---
-# <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Microsoft Viva Topics のトピック センターでトピックを管理する
+# <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>トピック センターのトピックを管理Microsoft Viva トピック
 
 </br>
 
@@ -30,13 +30,13 @@ ms.locfileid: "52651161"
 
 ビバ トピック センターでは、ナレッジ マネージャーが[トピックの管理] ページを表示して、ナレッジ管理者が指定したソースの場所で特定されたトピックを確認できます。  
 
-   ![トピック センター](../media/knowledge-management/topic-center.png)  
+   ![トピック センター。](../media/knowledge-management/topic-center.png)  
 
 ## <a name="topic-stages"></a>トピック ステージ
 
 ナレッジ マネージャーは、さまざまなトピック ライフサイクル ステージ (推奨、確認済み、発行済み、削除済 **み)** を通じて、検出されたトピックをガイド **するのに役立ちます**。
 
-   ![トピック ライフサイクル グラフ](../media/knowledge-management/topic-lifecycle.png) 
+   ![トピック ライフサイクル グラフ。](../media/knowledge-management/topic-lifecycle.png) 
 
 - **提案済み**: AI によって特定されたトピックであり、十分な裏付けとなるリソース、コネクション、プロパティを持っています。 (これらは、UI で **推奨トピック** としてマークされます)。
 
@@ -54,12 +54,12 @@ ms.locfileid: "52651161"
 
    - トピック カードのフィードバック メカニズムを使用して、複数のユーザーが否定的な票を投じます。 トピックを削除するには、ユーザーから受け取った 2 つの負の投票の正味が必要です。 たとえば、1 人のユーザーが否定的な投票を行い、1 人のユーザーが特定のトピックに対して正の投票を行った場合でも、そのトピックを削除するには、さらに 2 つの否定的な投票が必要になります。
 
-  発行済みトピックを削除すると、キュアされた詳細を含むページは、トピック センターのページ ライブラリを使用して手動で削除する必要があります。
+  発行済みトピックを削除する場合は、トピック センターの Pages ライブラリを使用して、詳細を選択したページを手動で削除する必要があります。
 
 > [!Note] 
 > [トピック **の管理]** ページでは、各ナレッジ マネージャーは、トピックに接続されている基になるファイルとページにアクセスできるトピックのみを表示できます。 このアクセス許可のトリミングは、[提案済み]、[確認済み]、[発行済み]、および [削除済み] タブに表示されるトピックの一覧に **反映** されます。  ただし、このトピックでは、アクセス許可に関係なく、組織内の合計カウントが表示されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 トピック センターでトピックを管理するには、次の必要があります。
 - Viva トピック ライセンスを持っている。
@@ -70,11 +70,11 @@ ms.locfileid: "52651161"
 
 トピック センターでは、ナレッジ マネージャーは、指定したソースの場所で特定されたトピックを確認し、確認または削除できます。 ナレッジ マネージャーは、トピックの検出で新しいトピック ページが見つからない場合は新しいトピック ページを作成して発行したり、更新する必要がある場合は既存のトピック ページを編集することもできます。
 
-## <a name="review-suggested-topics"></a>推奨されるトピックを確認する
+## <a name="suggested-topics"></a>推奨されるトピック
 
 [トピック **の管理]** ページで、指定したソースの場所でSharePointされたトピックが [提案] タブ **に表示** されます。必要に応じて、ナレッジ マネージャーは未確認のトピックを確認し、確認または削除を選択できます。
 
-   ![推奨されるトピック](../media/knowledge-management/quality-score.png) 
+   ![推奨されるトピックのスクリーンショット。](../media/knowledge-management/quality-score.png) 
 
 提案されたトピックを確認するには、次の方法を使用します。
 
@@ -116,9 +116,21 @@ ms.locfileid: "52651161"
 
 ## <a name="published-topics"></a>公開済みトピック
 
-公開されたトピックは編集され、特定の情報がページに遭遇したユーザーに常に表示されます。 手動で作成したトピックもこちらに一覧表示されます。
+[トピック **の管理]** ページで、指定したソースの場所でSharePointされたトピックが [発行済み] タブに **表示** されます。公開されたトピックは編集され、特定の情報がページに遭遇したユーザーに常に表示されます。 手動で作成したトピックもこちらに一覧表示されます。
 
    ![トピックの管理](../media/knowledge-management/manage-topics-new.png)
+
+## <a name="removed-topics"></a>削除されたトピック
+
+[トピックの **管理]** ページで、指定したソースの場所でSharePointされたトピックが [削除] タブに **表示** されます。トピック センターのトピック カードに関するエンド ユーザーの投票に基づいて、いくつかの推奨トピックがここに表示されます。
+
+削除されたトピックは、必要に応じて表示可能なトピックとして後で追加できます。 削除したトピックを表示可能なトピックとして追加する場合は、次のようにします。
+
+1. [削除] **タブ** で、トピックを選択します。
+
+2. [レビュー **と発行] を選択します**。
+
+   ![[レビューと発行] オプションを示す [削除] タブのスクリーンショット。](../media/knowledge-management/review-and-publish-removed-topic.png)
 
 ## <a name="topic-count-dashboard"></a>トピック数ダッシュボード
 
@@ -126,4 +138,4 @@ ms.locfileid: "52651161"
 
 ナレッジ マネージャーは、[トピックの管理] ページのトピックの一覧で表されるトピックの数がダッシュボードに表示される数とは異なる場合があります。 これは、ナレッジ マネージャーがすべてのトピックにアクセスできない可能性があるためです。 ダッシュボード ビューに表示されるカウントは、アクセス許可トリミングを適用する前に行います。 
 
-   ![トピック数ダッシュボードのスクリーンショット](../media/knowledge-management/topic-count-dashboard.png)
+   ![トピック数ダッシュボードのスクリーンショット。](../media/knowledge-management/topic-count-dashboard.png)

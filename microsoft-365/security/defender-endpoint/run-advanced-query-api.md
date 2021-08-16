@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7f37dc12e14561b46e264f46cb7e07c4a9cc757083bbe8402f07bdf4705f08f1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 54883ab437dcf01b042b5458bdc6312eaf24d179
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817695"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256976"
 ---
 # <a name="advanced-hunting-api"></a>高度なハンティング API
 
@@ -50,6 +50,8 @@ ms.locfileid: "53817695"
 4. 1 つの要求の最大実行時間は 10 分です。
 
 5. 429 応答は、要求数または CPU によってクォータ制限に達した値を表します。 応答本文を読み取り、どの制限に達したのかを理解します。 
+
+6. 1 つの要求のクエリ結果の最大サイズは 124 MB を超えすることはできません。 超過した場合、HTTP 400 Bad Request メッセージ "クエリの実行が許可された結果サイズを超えました。 結果の量を制限してクエリを最適化し、もう一度やり直してください」と表示されます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -155,7 +157,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint API の概要](apis-intro.md)
 - [ポータルからの高度な検索](advanced-hunting-query-language.md)

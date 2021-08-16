@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: 以前のバージョンの Office 365 Message Encryptionは、Microsoft Azure Rights Management (以前は Windows Azure Active Directory Rights Management) に依存します。
-ms.openlocfilehash: 978a8027c79de574b80aeedabcbbd51fa6f9e2a0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 611e8f645b9149898e5c3cb0f10305e49deb90cd92b14aad7c946ead147e8fd9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919493"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871371"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>以前のバージョンのメッセージ暗号化用に Azure Rights Management を設定する
 
@@ -58,7 +58,7 @@ TPD は、組織の権限管理設定に関する情報を含む XML ファイ�
 
 2. 組織の地理的な場所に対応するキー共有 URL を選択します。
 
-|**Location**|**キー共有場所の URL**|
+|**場所**|**キー共有場所の URL**|
 |:-----|:-----|
 |北アメリカ  <br/> |https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |欧州連合  <br/> |https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
@@ -94,7 +94,7 @@ TPD は、組織の権限管理設定に関する情報を含む XML ファイ�
 
    とりわけ、このコマンドレットは Azure Rights Management サービスとの接続をチェックし、TPD をダウンロードし、その有効性を確認します。
 
-6. [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)コマンドレットを次のように実行して、Azure Rights Management テンプレートが Web 上の Outlookおよびサーバーで使用Outlook。 
+6. [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)コマンドレットを次のように実行して、Azure Rights Management テンプレートが Azure Rights Management テンプレートで使用Outlook on the web無効Outlook。 
 
    ```powershell
    Set-IRMConfiguration -ClientAccessServerEnabled $false

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 17f424d368c0df2f07cda41917f005e4163e5750
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 32afec539e63c9ce411bb49c52a2facc7f99e9eae84bff3e0bf65f670f1b4dd0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935871"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857245"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -40,7 +40,7 @@ ms.locfileid: "51935871"
 高度 `CloudAppEvents` な検索スキーマの[表](advanced-hunting-overview.md)には、さまざまなクラウド アプリとサービスのアクティビティに関する情報が含Microsoft Cloud App Security。 完全なリストについては、「対象のアプリ [とサービス」に移動します](#apps-and-services-covered)。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。 
 
 >[!IMPORTANT]
->この表には、表で使用できる情報が含 `AppFileEvents` まれています。 2021 年 3 月 7 日から、この日付以降のクラウド サービスでファイル関連のアクティビティを検索するユーザーは、代わりにテーブルを `CloudAppEvents` 使用する必要があります。 <br><br>テーブルを引き続き使用するクエリとカスタム検出ルールを検索し、テーブル `AppFileEvents` を使用するために編集 `CloudAppEvents` してください。 影響を受けるクエリの変換に関する詳細なガイダンスについては、「Defender Advanced hunting を使用したクラウド アプリアクティビティMicrosoft 365[ハント」を参照してください](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)。
+>この表には、表で使用できる情報が含 `AppFileEvents` まれています。 2021 年 3 月 7 日から、この日付以降のクラウド サービスでファイル関連のアクティビティを検索するユーザーは、代わりにテーブルを `CloudAppEvents` 使用する必要があります。 <br><br>テーブルを引き続き使用するクエリとカスタム検出ルールを検索し、テーブル `AppFileEvents` を使用するために編集 `CloudAppEvents` してください。 影響を受けるクエリの変換に関する詳細なガイダンスについては、「高度な検索を使用したクラウド アプリアクティビティ全体のハントMicrosoft 365 Defender[参照してください](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)。
 
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
@@ -85,7 +85,7 @@ ms.locfileid: "51935871"
 - Office 365
 - Yammer 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

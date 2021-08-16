@@ -1,5 +1,5 @@
 ---
-title: アーキテクチャ要件とアーキテクチャの構造を確認し、Microsoft Cloud App Securityのフレームワークを知って構成と設計Cloud App Security計画Microsoft 365 Defender
+title: アーキテクチャ要件とアーキテクチャの構造を確認Microsoft Cloud App Security
 description: Microsoft Cloud App Security図では、パイロット環境の構築に役立つMicrosoft 365 Defenderのアーキテクチャについて説明します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a3fa9670262b90d1566c375680946a131bb9c78a
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: f06804e7a6944f119401f8cf2ea5cc0496fd30e841129cef061d8caee4964887
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458014"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839065"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>アーキテクチャの要件と主要な概念を確認Microsoft Cloud App Security
 
@@ -58,7 +58,7 @@ Microsoft Cloud App Securityは、クラウド アクセス セキュリティ �
 ![アーキテクチャ Microsoft Cloud App Security - クラウド検出](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 この図では、ネットワーク トラフィックを監視し、組織で使用されているクラウド アプリを検出するために使用できる 2 つの方法があります。
-- 回答。 クラウド アプリの検出は、Microsoft Defender for Endpoint とネイティブに統合されます。 Defender for Endpoint は、IT 管理デバイスからアクセスされるクラウド アプリとサービスWindows 10します。 
+- A. クラウド アプリの検出は、Microsoft Defender for Endpoint とネイティブに統合されます。 Defender for Endpoint は、IT 管理デバイスからアクセスされるクラウド アプリとサービスWindows 10します。 
 - B. ネットワークに接続されているすべてのデバイスでのカバレッジの場合、Cloud App Securityログ コレクターがファイアウォールや他のプロキシにインストールされ、エンドポイントからデータを収集します。 このデータは、分析のためにCloud App Security送信されます。
 
 #### <a name="managing-cloud-apps"></a>クラウド アプリの管理
@@ -122,7 +122,7 @@ Microsoft Cloud App Security は、この図の右側に焦点を当て、移動
 |接続されたアプリ |Cloud App Securityは、Cloud-to-Cloud 統合、API コネクタ、条件付きアプリ アクセス制御を活用したリアルタイム アクセスおよびセッション制御を使用して、接続されたアプリに対するエンドツーエンドの保護を提供します。 |[接続されたアプリの保護](/cloud-app-security/protect-connected-apps) |
 | | | |
 
-## <a name="review-architecture-requirements"></a>アーキテクチャ要件の確認
+## <a name="review-architecture-requirements"></a>アーキテクチャ要件を確認する
 
 ### <a name="discovering-cloud-apps"></a>クラウド アプリの検出
 

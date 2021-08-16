@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2981138d6bf8d5bd3fa49120e3469fe29301ef6fbe8bba074ed83495044ef562
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 2ed53a3e8feb9531e4cb75bc9531718d33528870
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834741"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246417"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -117,9 +117,24 @@ Defender App は、アプリのオンボーディングの一環としてデバ�
 ユーザーは、次の手順に従って、デバイス設定から同じアクセス許可を有効にできます。 
 
 1. デバイスの **[設定]** に移動します。
+   
 2. [バッテリーの最適化] を **検索して選択します**。
+   
+   ![[バッテリーの最適化] を検索して選択します。](images/search-battery-optimisation.png)
+
 3. [ **アプリの特別なアクセス] で**、[バッテリーの **最適化] を選択します**。
+   
+   ![[アプリの特別なアクセス] で、[バッテリーの最適化] を選択します。](images/special-app-access.png)
+
 4. [ドロップダウン] を [すべてのアプリ] **に変更します**。
+
+   ![[すべてのアプリ] を表示するドロップダウンを変更します。](images/show-all-apps-2.png)
+
+   ![[すべてのアプリ] を表示するドロップダウンを変更します。](images/show-all-apps-1.png)
+
 5. [Microsoft Defender Endpoint] を見つけて、[ **最適化しない] を選択します**。
+
+   ![[Microsoft Defender Endpoint] を見つけて、[最適化しない] を選択します。](images/select-dont-optimise.png)
+
 
 [Microsoft Defender Endpoint オンボーディング] 画面に戻り、[ **許可**] を選択すると、ダッシュボード画面にリダイレクトされます。

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d7eb71d0547c0ee242e02697e949bd39c3bdb2f3012adeaf159ca90f953268aa
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: b9bc82bff9be84c74b9d908b79572b926a943bab
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523635"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257095"
 ---
 # <a name="get-package-sas-uri-api"></a>パッケージ SAS URI API の取得
 

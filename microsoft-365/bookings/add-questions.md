@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: オンラインで予定を予約するときに顧客に質問する必要がある場合は、予約ページにカスタムの質問と必要な質問を追加できます。
-ms.openlocfilehash: ebbb07857fd8bb196f769dfb7e71ad25a85dfd54
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 7ee5710d20145dc1cb819c03c0a86336241ba829173f8abc3b4fdf2a96aa719e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900894"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>予約ページにカスタムおよび必須の質問を追加する
 
@@ -57,7 +57,7 @@ ms.locfileid: "47419900"
 
    ![複数のサービスに対して表示される質問のイメージ](../media/bookings-questions-services.png)
 
-予約ページが既に公開されている場合は、他に何もする必要はありません。 顧客は、次回一緒に予約する場合に質問を表示します。 予約ページがまだ公開されていない場合は、web サイトから予約ページに移動Outlookし、[保存して発行] を **選択します**。
+予約ページが既に公開されている場合は、他に何もする必要はありません。 顧客は、次回一緒に予約する場合に質問を表示します。 予約ページがまだ公開されていない場合は、予約ページに移動し、[保存して発行] Outlook on the webを **選択します**。
 
 > [!WARNING]
 > マスター リストから質問を削除できます。 ただし、質問を削除すると、すべてのサービスから削除されます。 質問を選択して、他のサービスに影響を及ぼすことを確認して無効にすることをお勧めします。 強調表示された四角形に囲まれない場合は、質問が無効になっているのを確認できます。

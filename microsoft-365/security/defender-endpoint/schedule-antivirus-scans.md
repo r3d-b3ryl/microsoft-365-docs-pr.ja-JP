@@ -16,12 +16,12 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 5566050e4a64713f6f8b4ac2cb4a7188d3a241c8
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: c0d6c979dfc69a81417126671810ee7f000e439e8405f425458a8b0adf40610a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857281"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>スケジュールされたクイックまたは完全な Microsoft Defender ウイルス スキャンを構成する
 
@@ -38,7 +38,7 @@ ms.locfileid: "52879727"
 - [[ウイルスWindows PowerShellスキャンのスケジュール設定] を使用する](schedule-antivirus-scans-powershell.md)
 - [管理Windowsを使用してウイルス対策スキャンをスケジュールする](schedule-antivirus-scans-wmi.md)
 
-## <a name="keep-the-following-points-in-mind"></a>以下の点に気を付ける
+## <a name="keep-the-following-points-in-mind"></a>以下の点にご注意ください。
 
 - 既定では、Microsoft Defender ウイルス対策スキャンの時刻の 15 分前に更新プログラムがチェックされます。 保護更新 [プログラムをダウンロードして適用するスケジュール](manage-protection-update-schedule-microsoft-defender-antivirus.md) を管理して、この既定を上書きできます。 
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: このページを使用して、スタッフ リストを作成し、スタッフ メンバーの詳細 (名前、電話番号、電子メール アドレスなど) を管理します。
-ms.openlocfilehash: 23757c492986936125eff1203e6a99231164da22
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: fca6ac7d76c4ce680209eba297894b582a824355b3a9c6f736c861dc9559fe82
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52768947"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900847"
 ---
 # <a name="add-staff-to-bookings"></a>Bookings にスタッフを追加する
 

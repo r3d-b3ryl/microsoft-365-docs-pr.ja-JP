@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 06fdea1c4d84ca4cd23aeb7e715c0087f65275b1
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c71a3e5169334adc5d6d6f2b901d82678e5aa27bee47bd20faf06e569a14b63c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648125"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857305"
 ---
 # <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 
@@ -83,7 +83,7 @@ ms.locfileid: "53648125"
 
 ## <a name="navigation-pane"></a>ナビゲーション ウィンドウ 
 
-分野 | 説明
+分野 | Description
 :---|:---
 **ダッシュボード**   | 組織の露出スコア、Microsoft Secure Score for Devices、デバイスの露出分布、トップ セキュリティ推奨事項、脆弱なソフトウェアの上位、トップ修復アクティビティ、および公開されているデバイス データの上位レベルのビューを取得します。
 [**セキュリティに関する推奨事項**](tvm-security-recommendation.md) | セキュリティに関する推奨事項と関連する脅威情報の一覧を参照してください。 リストからアイテムを選択すると、フライアウト パネルが開き、脆弱性の詳細、ソフトウェア ページを開くリンク、修復と例外のオプションが表示されます。 デバイスがエンドポイント経由で参加し、Defender for Endpoint で Intune 接続を有効にしている場合Azure Active Directory Intune でチケットを開く方法もできます。

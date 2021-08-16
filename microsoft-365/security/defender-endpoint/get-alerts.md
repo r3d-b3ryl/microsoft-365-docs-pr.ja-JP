@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c200e2e0b214b634b3a893d07cc8044995190f8eb89f8adad1e3b96ad1f7ae19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e295d4014231242bf1e3ae7dceaeb38dfea2fa1c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818775"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246318"
 ---
 # <a name="list-alerts-api"></a>アラート API の一覧表示
 
@@ -43,7 +43,7 @@ ms.locfileid: "53818775"
 アラートのコレクションを取得します。
 <br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 <br>OData でサポートされている演算子:
-<br>```$filter``` on: ```alertCreationTime``` ```lastUpdateTime``` , , , , ```incidentId``` and ```InvestigationId``` ```status``` ```severity``` ```category``` properties.
+<br>```$filter``` on: ```alertCreationTime``` ```lastUpdateTime``` , , , , ```incidentId``` , , , , , and ```InvestigationId``` ```id``` ```asssignedTo``` ```detectionSource``` ```lastEventTime``` ```status``` ```severity``` ```category``` properties.
 <br>```$top``` 最大値が 10,000 の場合
 <br>```$skip```
 <br>```$expand``` の ```evidence```

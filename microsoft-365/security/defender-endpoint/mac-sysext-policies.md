@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0d1edd11f378f91dabd7e1ca7910070ab6961e90
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 49ea9fff9ab6d12cd9483c574d33f1e8d247ac7fe1728383311a4e65195eec8b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652949"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857391"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS Catalina および macOS の新しいバージョンの新しい構成プロファイル
 
@@ -308,7 +308,7 @@ sysext.xml: OK
 1. Intune で、[デバイス構成の **管理**  >  **] を開きます**。 [プロファイル **の**  >  **管理] [プロファイルの**  >  **作成] を選択します**。
 2. プロファイルの名前を選択します。 **Platform=macOS と** **Profile type=Custom を変更します**。 [構成 **] を選択します**。
 3. 構成プロファイルを開 **き、sysext.xml。** このファイルは、前の手順で作成されました。
-4. **[OK]** を選択します。
+4. **[OK]** をクリックします。
 
     ![Intune のスクリーンショットのシステム拡張機能](images/mac-system-extension-intune.png)
 

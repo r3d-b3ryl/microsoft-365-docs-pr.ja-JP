@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: SharePoint Syntex の設定
-ms.openlocfilehash: 423c69a3c199cd3b1f0c71b93d3632e555125e1e47c4e5b5c8db95f7c52d195d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b856cafb7c2be292ed912fc94329ae6f3f23bb5f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859196"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257107"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -54,8 +54,6 @@ SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブ�
 - SharePoint Syntex の共通データ サービス
 
 フォーム処理を使用するには、AI ビルダー クレジットも必要です。 ライセンス ユーザーが 300 人以上の場合、AI ビルダー クレジットの割り当てが毎月提供されます。
-
-SharePoint Syntex ライセンスの詳細については、「[SharePoint Syntex ライセンス](syntex-licensing.md)」を参照してください
 
 ## <a name="to-set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 

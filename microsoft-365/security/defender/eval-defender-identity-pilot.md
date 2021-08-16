@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Identity のパイロット、構成ベンチマーク、標準、ガイドラインの設定、および偵察、資格情報の侵害、横方向の移動、ドメインの支配、および外用アラートなど、さまざまな Identity の脅威の検出と修復に関するチュートリアルを実行し、ユーザー、コンピューター、エンティティ、および横方向の移動パスの調査を実行します。
+title: Id の Microsoft Defender のパイロット
 description: パイロット Microsoft Defender for Identity, set benchmarks, take tutorials on reconnaissance, 侵害された資格情報, 横方向の動き, ドメインの支配, および外用アラート, とりわけ.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 14c5b9252e980d1f693139393d26b9405cb1b812
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9d3eb0668b855745aee32ac0d070613a60a20b93ec13fef6ff564f2f4c7944a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857226"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Id の Microsoft Defender のパイロット
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、組織のユーザーと管理者が実行する監査アクティビティの検索を開始できるよう、基本監査を設定する方法について説明します。
-ms.openlocfilehash: 59b5c85003ef0e19f7d3dd7417f764f446244652
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 59a1af0946fbfbef6f2a1f5f6b8c3d7be002786239f1665d0ddbff09af254d1e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52564831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871306"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>[基本監査] を [Microsoft 365
 
@@ -48,7 +48,7 @@ ms.locfileid: "52564831"
 
 ## <a name="step-2-assign-permissions-to-search-the-audit-log"></a>手順 2: 監査ログを検索するためのアクセス許可を割り当てる
 
-監査ログを検索するには、調査チームの管理者とメンバーに、View-Only監査ログまたは監査ログの役割Exchange Online割り当てる必要があります。 既定では、これらの役割は Exchange 管理センターの [**アクセス許可**] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 組織と組織Office 365 Microsoft 365のグローバル管理者は、組織の組織の管理役割グループのメンバーとして自動的にExchange Online。 最小限の特権レベルで監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、閲覧限定の監査ログまたは監査ログの役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。 詳細については、「[Exchange Online で役割グループを管理する](/Exchange/permissions-exo/role-groups)」を参照してください。
+監査ログを検索するには、調査チームの管理者とメンバーに、View-Only監査ログまたは監査ログの役割Exchange Online割り当てる必要があります。 既定では、これらの役割は Exchange 管理センターの [**アクセス許可**] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 Office 365 および Microsoft 365 のグローバル管理者は自動的に、組織管理役割グループのメンバーとして Exchange Online に追加されます。 最小限の特権レベルで監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、閲覧限定の監査ログまたは監査ログの役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。 詳細については、「[Exchange Online で役割グループを管理する](/Exchange/permissions-exo/role-groups)」を参照してください。
 
 次のスクリーンショットは、管理センターの組織の管理役割グループに割り当てられた 2 つの監査Exchange示しています。
 
@@ -56,11 +56,11 @@ ms.locfileid: "52564831"
 
 ## <a name="step-3-search-the-audit-log"></a>手順 3: 監査ログを検索する
 
-これで、コンプライアンス センターで監査ログを検索Microsoft 365準備ができました。
+これで、監査ログを検索する準備ができました。Microsoft 365 コンプライアンス センター。
 
 1. 適切な <https://compliance.microsoft.com> 監査アクセス許可が割り当てられているアカウントを使用して、アクセスしてサインインします。
 
-2. コンプライアンス センターの左側のナビゲーション ウィンドウMicrosoft 365、[すべて表示]をクリックし、[監査] を **クリックします**。
+2. 左側のナビゲーション ウィンドウで、[すべて表示] をMicrosoft 365 コンプライアンス センターし、[監査] を **クリックします**。
 
 3. [監査 **] ページ** で、[検索] タブの次の条件を使用して検索 **を構成** します。 
 

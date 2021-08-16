@@ -9,14 +9,14 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Web ベースの予約カレンダーを含み、Outlook と統合してスタッフの予定表を最適化し、顧客に予定を柔軟に予約できる Microsoft Bookings アプリの概要を示します。
-ms.openlocfilehash: 4ad488761fa4cdbb6df1d4b70d3a7d73121295b5
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 6ea7d7105efd917674b56ddd952b754310623c98f17eef15b9bad9b50841c353
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962551"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900821"
 ---
-# <a name="microsoft-bookings"></a>Microsoft Bookings
+# <a name="microsoft-bookings"></a>Microsoft の予約
 
 Microsoft Bookings を使用すると、予定のスケジュール設定と管理が簡単になります。 予約には、Web ベースの予約カレンダーが含まれています。Outlook と統合して、スタッフの予定表を最適化し、お客様に最適な時間を柔軟に予約できます。 自動通知メールは、ノーショーを減らし、顧客満足度を高め、組織は繰り返しスケジュールタスクを削減して時間を節約します。 柔軟性とカスタマイズ機能を備えた Bookings は、組織の多くの異なる部分の状況とニーズに合わせて設計できます。 Bookings 予定表は、ユーザーのメールボックスExchange Online。
 
