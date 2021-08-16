@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 432f8e640d8bbc0f2464af2c2476c57bcd9539f38c23ae2c91b864afd585e6f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 722c4a28ab477b34fc3e52cb3eb3efddf319d0d8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890493"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246236"
 ---
 # <a name="get-file-related-machines-api"></a>ファイル関連のコンピューター API を取得する
 
@@ -44,6 +44,7 @@ ms.locfileid: "53890493"
 ## <a name="limitations"></a>制限事項
 
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+2. SHA-1 ハッシュ関数だけがサポートされています (MD5 または SHA-256 ではありません)。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -80,7 +81,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合とファイルが存在する場合 - 本文の[](machine.md)コンピューター エンティティの一覧で 200 OK。 ファイルが存在しない場合 - 404 が見つかりません。
+成功した場合とファイルが存在する場合 - 本文の[](machine.md)コンピューター エンティティの一覧で 200 OK。 ファイルが存在しない場合 - 空のセットで 200 OK。
 
 ## <a name="example"></a>例
 

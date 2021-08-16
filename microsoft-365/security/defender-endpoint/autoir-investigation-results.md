@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: a10442bc9d92bb6004149180da30b86b646dd5de
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 31d272705fa5b93f57c34b811fea2a7717058df415df065885ced2537b692941
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290161"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884789"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果を表示する
 
@@ -87,7 +87,7 @@ Microsoft Defender for Endpoint[](automated-investigations.md)では、自動調
 | **Alerts** | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス上の脅威保護機能、アプリ、Office、その他のCloud App Security機能Microsoft 365 Defenderがあります。|
 | **デバイス** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは、デバイス グループ [のオートメーション レベルに対応します](automation-levels.md)。) |
 | **メールボックス** |検出された脅威の影響を受けたメールボックスを一覧表示します。  |
-| **ユーザー**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
+| **Users**  | 検出された脅威の影響を受けたユーザー アカウントを一覧表示します。 |
 | **証拠** | アラート/調査によって発生した証拠の一部を一覧表示します。 評決 (悪意のある、疑 *わしい、* または脅威が見 *つからない*) と修復の状態が含まれます。 |
 | **Entities** | 各エンティティの種類 (悪意のある、疑わしい、または脅威が見つからない)の評決を含む、分析された各エンティティの詳細 *を提供します*。|
 |**Log** | アラートがトリガーされた後に行ったすべての調査アクションの時系列的で詳細なビューを提供します。|

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: c6c0ad005a4485151a1404165b09648478cc1831
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6fb72c68d69c6844c981c7575bcfed3811a8d20e55a51485d78e26ec447becfe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651893"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867981"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -50,7 +50,7 @@ ms.locfileid: "53651893"
 
 監査モードを使用 [して、](audit-windows-defender.md) ネットワーク保護が有効になっている場合に組織に与える影響を評価することもできます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 ネットワーク保護には、Windows 10 ProまたはEnterprise、リアルタイムMicrosoft Defender ウイルス対策保護が必要です。
 
@@ -82,7 +82,7 @@ DeviceEvents
 
 1. [XML を直接コピーします](event-views.md)。
 
-2. **[OK]** を選択します。
+2. **[OK]** をクリックします。
 
 この手順では、ネットワーク保護に関連する次のイベントのみを表示するためにフィルター処理するカスタム ビューを作成します。
 

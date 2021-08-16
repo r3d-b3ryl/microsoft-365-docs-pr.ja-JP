@@ -1,5 +1,5 @@
 ---
-title: Defender の高度な検索でエラーをMicrosoft 365する
+title: 高度な検索でエラーを処理Microsoft 365 Defender
 description: 高度な検索を使用する場合に表示されるエラーを理解する
 keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ、kusto、タイムアウト、リソース、エラー、不明なエラー、制限、クォータ、パラメーター、割り当て
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 32d50103c6476a89f24568edeea75a206e37e227
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 25280ecb6b241c135f3ec1523b45fbd7ba379c88adef9cc49f2a6d46e076f88b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952682"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897713"
 ---
 # <a name="handle-advanced-hunting-errors"></a>高度なハンティング エラーの処理
 
@@ -51,7 +51,7 @@ ms.locfileid: "51952682"
 
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な狩猟のベスト プラクティス](advanced-hunting-best-practices.md)
 - [クォータと使用パラメータ](advanced-hunting-limits.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f1ebb1d476f58109a32e367581f764774b894670
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 5081822d31d3e127dbe6511719afdaddd6f6b4fdf078bf5c6e09aee4caff725e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884940"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>エンドポイント API 用 Microsoft Defender - Hello World
 
@@ -100,7 +100,7 @@ ms.locfileid: "53650621"
 
    ![作成されたアプリ ID のイメージ](images/app-and-tenant-ids.png)
 
-完成です！ アプリケーションの登録に成功しました!
+完了! アプリケーションの登録に成功しました!
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>手順 2 - アプリを使用してトークンを取得し、このトークンを使用して API にアクセスします。
 

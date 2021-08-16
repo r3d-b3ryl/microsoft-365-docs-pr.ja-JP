@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 既存のOffice 365ユーザーは、その国のサービス データを新しい地域に移動Microsoft 365前に要求を提出する必要があります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4421b034c31adc3e8b0b017067b12086d364564
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: dbd1984520019296026bc5f57328a20837591c27830f4fe9b32fc425123b6550
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908247"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904644"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -49,9 +49,9 @@ ms.locfileid: "52908247"
 
 ## <a name="how-to-request-a-move"></a>移行をリクエストする方法
 
-対象となる顧客には、Microsoft 365 管理センターにページが表示され、コア顧客データを新しいデータセンター領域に移動できます。  
+対象となるお客様は、Microsoft 365 管理センターにページを表示し、コア顧客データを新しいデータセンター領域に移動できます。  
   
-管理センターのMicrosoft 365にアクセスするには、左側のナビゲーション ウィンドウで [設定]**を展開** し、[組織] 設定 を **クリックします**。
+ページにアクセスするには、左側Microsoft 365 管理センターナビゲーション ウィンドウで 、[組織] を展開し、[組織] 設定 をクリック **設定。**
 [組織プロファイル] **タブを選択** し、[データ常駐 **] オプションを選択します**。
   
 テナントが移行プログラムの対象ではない場合は、このセクションMicrosoft 365表示されます。  組織にデータ常駐の要件がある場合、移行を要求する必要がある場合は、チェック ボックスをオンにして、[保存] を **クリックします**。
@@ -70,7 +70,7 @@ ms.locfileid: "52908247"
 
 2020 年 1 月の現在、対象となるOffice 365のお客様は、チャット サービス データの移行Microsoft Teamsオプトインできます。  以前に移行を選択したお客様Data Residency、ローカル データセンター geo Teams移行する必要があります。  これらの顧客は追加のアクションを必要とします。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コア データを新しい Office 365 データ センター geo に移行する](moving-data-to-new-datacenter-geos.md)
 

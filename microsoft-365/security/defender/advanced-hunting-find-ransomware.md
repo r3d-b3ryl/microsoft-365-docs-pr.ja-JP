@@ -1,7 +1,7 @@
 ---
 title: 高度な検索でランサムウェアを検索する
 description: 高度な検索を使用して、ランサムウェアの影響を受ける可能性のあるデバイスを見つける。
-keywords: 高度な狩猟、ランサムウェア、脅威狩り、サイバー脅威の狩猟、検索、クエリ、テレメトリ、Microsoft 365、Microsoft 365 Defender
+keywords: 高度な狩猟、ランサムウェア、脅威狩り、サイバー脅威狩り、検索、クエリ、テレメトリ、Microsoft 365、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b6d88f5383cef052ac1b0871b4f0556ba3ba160e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4dac86ca9125359b07c4acfb7500b6920baa019bd2d4df2ca6eff32dde412735
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934815"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867770"
 ---
 # <a name="hunt-for-ransomware"></a>ランサムウェアを探す
 
@@ -34,11 +34,11 @@ ms.locfileid: "51934815"
 **適用対象:**
 - Microsoft 365 Defender
 
-ランサムウェアは、個々のコンピューター ユーザーに影響を与える単純なコモディティ マルウェアから、業界や政府機関に深刻な影響を与える企業の脅威に急速に進化しています。 [Microsoft 365 Defender](microsoft-365-defender.md)には、ランサムウェアや関連する侵入アクティビティを検出およびブロックする多くの機能が備え付けられている一方で、侵害の兆候を事前に確認すると、ネットワークの保護を維持できます。
+ランサムウェアは、個々のコンピューター ユーザーに影響を与える単純なコモディティ マルウェアから、業界や政府機関に深刻な影響を与える企業の脅威に急速に進化しています。 [Microsoft 365 Defender、](microsoft-365-defender.md)ランサムウェアや関連する侵入アクティビティを検出およびブロックする多くの機能を提供しますが、侵害の兆候を事前に確認すると、ネットワークの保護を維持できます。
 
 > [人が操作するランサムウェアについて読む](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-Defender[で高度](advanced-hunting-overview.md)なMicrosoft 365を使用すると、ランサムウェア アクティビティに関連付けられている個々のアーティファクトを検索するクエリを作成できます。 また、より高度なクエリを実行して、アクティビティの兆候を探し、それらの兆候の重さを量って、すぐに注意を必要とするデバイスを見つけられます。
+高度[な検索機能](advanced-hunting-overview.md)をMicrosoft 365 Defender、ランサムウェア アクティビティに関連付けられた個々のアーティファクトを検索するクエリを作成できます。 また、より高度なクエリを実行して、アクティビティの兆候を探し、それらの兆候の重さを量って、すぐに注意を必要とするデバイスを見つけられます。
 
 ## <a name="signs-of-ransomware-activity"></a>ランサムウェアアクティビティの兆候
 Microsoft のセキュリティ研究者は、高度な侵入者によって立ち上げられた多くのランサムウェア キャンペーンで、さまざまな一般的でありながら微妙なアーティファクトを観察しています。 これらの兆候は、主にシステム ツールを使用して暗号化の準備、検出の防止、および明らかな法医学証拠を含む。
@@ -245,7 +245,7 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 | where UniqueEvidenceCount > 2
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

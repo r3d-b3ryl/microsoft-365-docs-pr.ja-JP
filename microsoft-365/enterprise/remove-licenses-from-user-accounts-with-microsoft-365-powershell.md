@@ -20,19 +20,19 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: PowerShell を使用して、以前にユーザーに割り当Microsoft 365ライセンスを削除する方法について説明します。
-ms.openlocfilehash: 9944d1ab056d109b6bf71a44fe01acef78ce1f14
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 42ed344a0cff959b2e99027b847cd6ab30fb5e62bc8d86b3b5901b7539a44965
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904673"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>PowerShell Microsoft 365アカウントからユーザー ライセンスを削除する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 >[!Note]
->[管理者センターでユーザー アカウントから](../admin/manage/remove-licenses-from-users.md)ライセンスを削除するMicrosoft 365します。 その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
+>[ユーザー アカウントからライセンスを削除する方法については](../admin/manage/remove-licenses-from-users.md)、Microsoft 365 管理センター。 その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
@@ -110,7 +110,7 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
 ```
 
 >[!Note]
->コマンドレットを使用して `Set-MsolUserLicense` 、キャンセルされたライセンスからユーザーの割り当 *てを解除* することはできません。 この操作は、管理センターのユーザー アカウントごとに個別Microsoft 365必要があります。
+>コマンドレットを使用して `Set-MsolUserLicense` 、キャンセルされたライセンスからユーザーの割り当 *てを解除* することはできません。 この操作は、ユーザー アカウント内のユーザー アカウントごとに個別に行Microsoft 365 管理センター。
 >
 
 既存のライセンスユーザーのグループからすべてのライセンスを削除するには、次のいずれかの方法を使用します。

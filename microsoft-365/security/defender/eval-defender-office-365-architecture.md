@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender のアーキテクチャ要件と計画の概念をOffice 365、構築、構築、および設計フレームワーク
+title: Microsoft Defender のアーキテクチャ要件と計画の概念を確認Office 365
 description: Microsoft Defender for Office 365 Microsoft 365 Defenderの技術図は、Microsoft 365ラボまたはパイロット環境を構築する前に、ユーザーの ID を理解するのに役立ちます。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 15c84921dcfb4644241cf83ce4ffb6403180b9d4
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 2a62756522ad82d04c72995508ca8ada1e575f94c9bc9940069d59057f7de63f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458277"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897685"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Microsoft Defender のアーキテクチャ要件Office 365主な概念について確認する
 
@@ -77,7 +77,7 @@ Defender for Office 365を有効にする前に、アーキテクチャを理解
 
 Microsoft Defender for Officeに含まれる機能の詳細については[、「Microsoft Defender for Office 365」を参照してください](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
-## <a name="review-architecture-requirements"></a>アーキテクチャ要件の確認
+## <a name="review-architecture-requirements"></a>アーキテクチャ要件を確認する
 成功した MDO 評価または実稼働パイロットは、次の前提条件を前提とします。
 - すべての受信者メールボックスは現在、Exchange Online。
 - パブリック MX レコードは EOP またはサード パーティの SMTP ゲートウェイに直接解決し、受信外部メールを EOP に直接中継します。

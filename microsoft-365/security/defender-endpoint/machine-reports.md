@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint のデバイスの正常性とコンプライアンス レポート
-description: デバイスの正常性とコンプライアンス レポートを使用して、デバイスの正常性状態の検出、ウイルス対策の状態、OS プラットフォーム、Windows 10バージョンを追跡する
+description: デバイスの正常性とコンプライアンス レポートを使用して、デバイスの正常性状態の検出、ウイルス対策の状態、OS プラットフォーム、および Windows 10 バージョンを追跡する
 keywords: 正常性状態、ウイルス対策、OS プラットフォーム、Windows 10 バージョン、バージョン、正常性、コンプライアンス、状態
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 23d099d01791fcdd5f5265c8683d6faca9fb857d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 480b5c10c17925bb4a37bd89f3ec909627f89f2c4533407446440567afed1e7b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53868072"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のデバイスの正常性とコンプライアンス レポート
 
@@ -35,7 +35,7 @@ ms.locfileid: "53651941"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-デバイスの状態レポートは、組織内のデバイスに関する高レベルの情報を提供します。 このレポートには、センサーの正常性状態、ウイルス対策の状態、OS プラットフォーム、および最新バージョンを示すWindows 10含まれています。
+デバイスの状態レポートは、組織内のデバイスに関する高レベルの情報を提供します。 このレポートには、センサーの正常性状態、ウイルス対策の状態、OS プラットフォーム、および Windows 10 バージョンを示す傾向情報が含まれています。
 
 ダッシュボードは、デバイス レポートのイメージという 2 ![ つのセクションに構成されています。](images/device-reports.png)
  
@@ -72,11 +72,11 @@ Section | 説明
  
 - **正常性状態**: デバイス上のセンサー状態に関する情報を表示し、アクティブなデバイス、通信障害、非アクティブ、またはセンサー データが見られないデバイスの集計ビューを提供します。
   
-- **アクティブなデバイスのウイルス対策Windows 10:** デバイスの数とデバイスの状態をMicrosoft Defender ウイルス対策。
+- **アクティブな Windows 10 デバイスのウイルス対策の状態**: デバイスの数と Microsoft Defender ウイルス対策の状態を示します。
     
 - **OS プラットフォーム**: 組織内に存在する OS プラットフォームの配布を示します。 
  
-- **Windows 10バージョン**: 組織のデバイスとWindows 10の配布を示します。
+- **Windows 10 バージョン**: 組織内の Windows 10 デバイスとそのバージョンの配布を示します。
  
  
  
@@ -89,10 +89,10 @@ Section | 説明
 >[!NOTE]
 >これらのフィルターは、 **レポート内のすべての** カードに適用されます。
  
-たとえば、アクティブ センサーの正常性状態を持Windows 10デバイスに関するデータを表示するには、次の方法を実行します。
+たとえば、アクティブ センサーの正常性状態を持つ Windows 10 デバイスに関するデータを表示するには、次の方法を実行します。
  
 1. [ **フィルター] >センサーの正常性状態>アクティブです**。
-2. 次に **、[OS プラットフォーム]** を> Windows 10します。
+2. 次に **、[Windows 10 > OS プラットフォーム] を選択します**。
 3. **[適用]** を選択します。
 
 

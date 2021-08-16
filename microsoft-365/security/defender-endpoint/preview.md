@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 43a086475eb9a052d86c1ef2ac7d2b4de96ef758
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 0ed7926c0fbb9e0eb10f7826e66ca5b96691e8e318e17f2b5d53a0cae8ba6d4a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652733"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867897"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint プレビュー機能
 

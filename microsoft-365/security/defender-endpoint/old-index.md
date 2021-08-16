@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3c49575e7a1d88c15907fdd7c118b71071949b23
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 6286df3fa7b099df9cbe3f910434e0da99f521607148d872ed13e6b97a5d26a6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622846"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867993"
 ---
 # <a name="threat-protection"></a>脅威保護
 

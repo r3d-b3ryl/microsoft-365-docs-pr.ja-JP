@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3c7a861e5cf342bbf1e6705729ac36dde0ae9c81
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6d64b3998aabf7ff6435ea9cf32518eb4f827dd833fd05a650339ec3a96d25ef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651977"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53868334"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS で Microsoft Defender for Endpoint の更新プログラムを展開する
 
@@ -81,7 +81,7 @@ MAU では、macOS 上のエンドポイント用 Microsoft Defender のアプ�
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**キー**|ChannelName|
 |**データ型**|String|
-|**指定可能な値**|ベータ版 <p> Preview <p> Current|
+|**指定可能な値**|ベータ版 <p> プレビュー <p> Current|
 |||
 
 >[!WARNING]
@@ -123,7 +123,7 @@ MAU が更新プログラムを検索する方法を変更します。
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**キー**|EnableCheckForUpdatesButton|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|True (既定) <p> False|
 
 ### <a name="disable-insider-checkbox"></a>Insider チェック ボックスを無効にする
@@ -134,7 +134,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**キー**|DisableInsiderCheckbox|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|False (既定) <p> True|
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>MAU から送信されるテレメトリを制限する
@@ -145,7 +145,7 @@ true に設定すると、"Insider Program.Office参加" になります。チ�
 |---|---|
 |**ドメイン**|`com.microsoft.autoupdate2`|
 |**キー**|SendAllTelemetryEnabled|
-|**データ型**|ブール型|
+|**データ型**|Boolean|
 |**指定可能な値**|True (既定) <p> False|
 
 ## <a name="example-configuration-profile"></a>構成プロファイルの例

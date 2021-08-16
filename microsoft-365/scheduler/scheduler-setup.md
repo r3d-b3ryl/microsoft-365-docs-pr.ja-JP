@@ -8,19 +8,19 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: スケジューラの設定 Microsoft 365。
-ms.openlocfilehash: 924b25e3d921f402c97632f7475ed5beea98d5c7
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 36d273dc75dbb2ff208c4f5036915b1b241de0b743f8ca6c95498a110daf8334
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362548"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884921"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Scheduler for Microsoft 365 を設定する
 
 
 スケジューラをセットアップするには、Microsoft 365前提条件を次に示します。
 
-| 必要なもの | 説明 |
+| 必要なもの | Description |
 |-------------------|-------------|
 |Cortanaメールボックス |テナント管理者は、"Cortana" メールボックス (つまり、cortana@yourdomain.com) として機能するメールボックスを設定する必要があります。         |
 |Exchange Online メールボックス |ユーザーはメールと予定表Exchange Online必要があります         |

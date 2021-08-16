@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c032c54f8b80114e00fcff432a0da37a9d836f35
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 333e69c910e5800332261f9a7a2e23983f2615d7bac13f2139604747874b40b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656309"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867945"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>ユーザー設定Microsoft Defender セキュリティ センター構成する
 
@@ -40,7 +40,7 @@ ms.locfileid: "53656309"
 トピック | 説明
 :---|:---
 全般設定 | オンボーディング プロセスの一部として以前に定義された一般的な設定を変更します。
-アクセス許可 | RBAC とデバイス グループを使用してポータル アクセスを管理します。
+Permissions | RBAC とデバイス グループを使用してポータル アクセスを管理します。
 API | 脅威の Intel と SIEM の統合を有効にする。
 ルール | 抑制ルールとオートメーション設定を構成します。
 デバイスの管理 | オンボードデバイスとオフボード デバイス。

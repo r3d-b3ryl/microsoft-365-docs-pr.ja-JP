@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: 組織の法的調査を管理するには、&コンプライアンス センター Office 365電子情報開示ケースを使用します。
-ms.openlocfilehash: c052daab8de33e21cccc3c638ab4995a007f60fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f422695b8d5aea05442cf4e17bf58c472caa3c54a0e0624572438bbc91472480
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903461"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856057"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Microsoft 365 で法的調査を管理する
 

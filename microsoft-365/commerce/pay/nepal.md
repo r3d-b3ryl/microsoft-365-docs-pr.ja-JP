@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1f6db897a89588e0e89fa4b2a8317537a106ba7c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2e03ea7cb7e64ebbec584dc7a736ba91bd2968d5c988f3ece17e2db5f3e5a6e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535364"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856201"
 ---
 # <a name="payment-information-for-nepal"></a>ネパールのお支払い情報
 
