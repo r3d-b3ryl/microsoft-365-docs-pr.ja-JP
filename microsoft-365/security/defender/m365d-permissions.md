@@ -1,5 +1,5 @@
 ---
-title: セキュリティ センターでMicrosoft 365 DefenderデータへのアクセスMicrosoft 365管理する
+title: ポータルでMicrosoft 365 DefenderデータへのアクセスをMicrosoft 365 Defenderする
 description: データに対するアクセス許可を管理する方法については、Microsoft 365 Defender
 keywords: Access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 33b53356f4569954b2e5905b953bc1edaa7f750f8dff0d09133ec520a67ec615
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 61d76d873005c2bdd37fc37f05cf6e520a302647
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902201"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247966"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>グローバル ロールを使用Microsoft 365 DefenderアクセスAzure Active Directory管理する
 
@@ -46,7 +46,7 @@ ms.locfileid: "53902201"
 - グローバル閲覧者
 - セキュリティ閲覧者
 
-これらのロールを持つアカウントを確認するには、[Microsoft 365 セキュリティ センターで権限を表示](https://security.microsoft.com/permissions)します。
+これらの役割を持つアカウントを確認するには、[ポータルの [アクセス許可Microsoft 365 Defender表示します](https://security.microsoft.com/permissions)。
 
 **カスタム ロール アクセス** は、Microsoft Defender 365 Microsoft 365 Defenderの新しい機能であり、特定のデータ、タスク、および機能へのアクセスを管理できます。 カスタム ロールは、グローバル Azure ADロールよりも多くの制御を提供し、必要な最小限の役割で必要なアクセスのみをユーザーに提供します。  カスタム ロールは、グローバル Azure ロールとカスタム ロールにADできます。 [カスタム ロールの詳細を参照してください](custom-roles.md)。
 
@@ -67,7 +67,7 @@ Microsoft Defender for Endpoint Microsoft 365 Defenderアクセス制御 (RBAC) 
 ### <a name="microsoft-cloud-app-security-access-controls"></a>Microsoft Cloud App Security のアクセス制御
 プレビュー中に、Microsoft 365 Defender設定に基づいてアクセス制御をCloud App Security行う必要があります。 これらの設定Microsoft 365 Defenderデータへのアクセスは影響されません。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [ユーザーの役割ベースのアクセス制御のカスタム ロールMicrosoft 365 Defender](custom-roles.md)
 - [Azure AD ロール](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 - [エンドポイント RBAC 用 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)

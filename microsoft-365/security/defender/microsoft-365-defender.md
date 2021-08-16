@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 26b68fe1adcf9841b69f86000c4c0d77d1db860fc64e713f2c186ad295b63ffc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7357c05809ffc31783f985adc04cabc70742dbe9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888671"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247953"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -93,7 +93,7 @@ Microsoft 365 Defender機能には、次のものが含まれます。
 
 
 ## <a name="get-started"></a>作業の開始
-Microsoft 365 Defenderセキュリティ センターでサービスを有効にする前に、ライセンス要件を満Microsoft 365する[必要 security.microsoft.com。](https://security.microsoft.com) 詳細については、以下を参照してください。
+Microsoft 365 Defenderポータルでサービスを有効にする前に、ライセンス要件を満Microsoft 365 Defender必要[security.microsoft.com。](https://security.microsoft.com) 詳細については、以下を参照してください。
 - [ライセンス要件](prerequisites.md#licensing-requirements)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)
 

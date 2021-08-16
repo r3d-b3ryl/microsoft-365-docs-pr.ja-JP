@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 8058109abb8462849af4fea04e43c934ebfce1ad440053c60f8b8e070171e76e
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: b81752cbc77f4be2025d0f4d90699cbfd1facbf0
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523762"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248026"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
