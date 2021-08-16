@@ -16,12 +16,12 @@ ms.collection:
 description: 詳細については、「セーフドキュメント」または「Microsoft 365 E5」をMicrosoft 365 E5 Security。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e1bd2150a04e51e0d06c6cd1c17a71a032df1a5
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: dd9928034c8043f7852df0eeecdae870c9393c66
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108609"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254929"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 
@@ -52,7 +52,7 @@ ms.locfileid: "53108609"
   >
   > - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Microsoft はデータを処理する方法を説明します。
 
@@ -62,7 +62,7 @@ ms.locfileid: "53108609"
 
 ## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>ドキュメントを構成Microsoft 365 Defenderするには、セーフを使用します。
 
-1. [メール] Microsoft 365 Defenderを開き、[メール &**グループ** ポリシー&ポリシー] ページの [添付ファイル] セーフ \>  \>  \>  \> **移動します**。
+1. [ポリシー] Microsoft 365 Defenderを開き、[ポリシー] セクション&の [&脅威ポリシーと添付ファイルセーフメール] に \>  \>  \> **移動** します。
 
 2. [添付ファイル **セーフ] ページで**、[グローバル設定]**をクリックします**。
 
@@ -103,7 +103,7 @@ Microsoft Defender for Endpoint を展開するには、展開のさまざまな
 
 ドキュメントを有効にし、構成セーフするには、次の手順を実行します。
 
-- Microsoft 365 Defender ポータルで、[メール & **Collaboration** \> **Policies & Rules** Threat Policies page \> **Policies]** セクション セーフ Attachments Global settings に移動し \>  \>  \> **、[Office** クライアントの セーフ ドキュメントを有効にする] と [セーフ ドキュメントがファイルを悪意のある設定として識別した場合でも、保護されたビューをクリックするユーザーを許可する] を確認します。
+- Microsoft 365 Defender ポータルで、[ポリシー] セクションの[& Collaboration \> **Policies & Rules** Threat \> **Policies** セーフ \> **Attachments]** に移動し \> **、[Office** クライアントの セーフ ドキュメントを有効にする] と [セーフ ドキュメントがファイルを悪意のある設定として識別した場合でも、保護されたビューをクリックするユーザーを許可する] を確認します。
 
 - PowerShell で次のコマンドをExchange Onlineし、プロパティの値を確認します。
 

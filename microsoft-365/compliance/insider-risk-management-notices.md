@@ -1,7 +1,7 @@
 ---
 title: インサイダー リスク管理通知のテンプレート
 description: インサイダー リスク管理通知テンプレートの詳細については、Microsoft 365
-keywords: Microsoft 365、インサイダーリスク管理、リスク管理、コンプライアンス
+keywords: Microsoft 365, インサイダー リスク管理, リスク管理, コンプライアンス
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3a74c62e84c1cb9e4c749a364c0e5b6da25a8af9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: efb44f098bb18ee25bfc39b2b1c46faa057faa5e7996b24a22af89277e135742
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416481"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860686"
 ---
 # <a name="insider-risk-management-notice-templates"></a>インサイダー リスク管理通知のテンプレート
 
@@ -53,11 +53,11 @@ Insider リスク管理通知テンプレートを使用すると、ユーザー
 
 ## <a name="create-a-new-notice-template"></a>新しい通知テンプレートを作成する
 
-新しいインサイダー リスク管理通知テンプレートを作成するには、コンプライアンス センターの **Insider** リスク管理ソリューションで通知ウィザードMicrosoft 365します。
+新しいインサイダー リスク管理通知テンプレートを作成するには、インサイダーリスク管理ソリューションの通知ウィザードを使用Microsoft 365 コンプライアンス センター。
 
 新しいインサイダー リスク管理通知テンプレートを作成するには、次の手順を実行します。
 
-1. コンプライアンス センターで [Microsoft 365 Insider](https://compliance.microsoft.com)リスク管理に **移動** し、[通知テンプレート **] タブを選択** します。
+1. [通知] [Microsoft 365 コンプライアンス センター[Insider](https://compliance.microsoft.com)リスク管理]**に移動し**、[通知テンプレート **] タブを選択** します。
 2. [通知 **テンプレートの作成] を** 選択して通知ウィザードを開きます。
 3. [新しい **通知テンプレートの作成] ページで** 、次のフィールドに入力します。
     - **テンプレート名**: 通知の表示名を入力します。 この名前は、ケースから通知を送信するときに、通知ダッシュボードの通知の一覧と通知の選択リストに表示されます。
@@ -71,7 +71,7 @@ Insider リスク管理通知テンプレートを使用すると、ユーザー
 
 既存のインサイダー リスク管理通知テンプレートを更新するには、次の手順を実行します。
 
-1. コンプライアンス センターで [Microsoft 365 Insider](https://compliance.microsoft.com)リスク管理に **移動** し、[通知テンプレート **] タブを選択** します。
+1. [通知] [Microsoft 365 コンプライアンス センター[Insider](https://compliance.microsoft.com)リスク管理]**に移動し**、[通知テンプレート **] タブを選択** します。
 2. 通知ダッシュボードで、管理する通知テンプレートを選択します。
 3. 通知の詳細ページで、[編集] を **選択します。**
 4. [編集 **] ページ** で、次のフィールドを編集できます。
@@ -86,7 +86,7 @@ Insider リスク管理通知テンプレートを使用すると、ユーザー
 
 既存のインサイダー リスク管理通知テンプレートを削除するには、次の手順を実行します。
 
-1. コンプライアンス センターで [Microsoft 365 Insider](https://compliance.microsoft.com)リスク管理に **移動** し、[通知テンプレート **] タブを選択** します。
+1. [通知] [Microsoft 365 コンプライアンス センター[Insider](https://compliance.microsoft.com)リスク管理]**に移動し**、[通知テンプレート **] タブを選択** します。
 2. 通知ダッシュボードで、削除する通知テンプレートを選択します。
 3. ツールバーの **[削除** ] アイコンを選択します。
 4. 通知テンプレートを削除するには、削除ダイアログ **で [は** い] を選択します。 削除を取り消す場合は、[キャンセル] を **選択します**。

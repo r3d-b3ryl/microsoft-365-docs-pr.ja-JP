@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: ''
 description: データのケース データを分析する場合は、ほぼ重複した検出を使用して、テキスト的に類似したドキュメントをグループ化Advanced eDiscovery。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 255531897a1706904005034c56cab00d0032b7f3
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 100b7cf735e9ecdfa37b146519d0a13c2ff6f1ee3d087fed6b1e98869471fc27
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48286023"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885533"
 ---
 # <a name="near-duplicate-detection-in-advanced-ediscovery"></a>データの重複検出に近いAdvanced eDiscovery
 
 サブセットが同じテンプレートに基づいており、ほとんど同じ定型言語を持つ一連のドキュメントを検討します。ここではいくつかの違いがあります。 レビュー者がこのサブセットを特定し、そのうちの 1 つを徹底的に確認し、残りの部分の違いを確認できる場合、一意の情報を見逃す必要はありません。一方で、すべてのドキュメントを読み取る時間はほんの一部です。 準重複の検出グループは、テキスト的に類似したドキュメントをまとめてグループ化し、レビュープロセスをより効率的にします。
 
-## <a name="how-does-it-work"></a>どのような仕組みなのか。
+## <a name="how-does-it-work"></a>どのような仕組みですか?
 
 準重複の検出が実行されると、システムはテキストを含むすべてのドキュメントを解析します。 次に、すべてのドキュメントを互いに比較して、それらの類似度を設定したしきい値よりも大きいかどうかを判断します。 大きい場合は、ドキュメントはグループ化されます。 すべてのドキュメントが比較およびグループ化されると、各グループのドキュメントが「ピボット」としてマークされます。ドキュメントのレビューでは、最初にピボットをレビューし、同じ準重複セット内の他のドキュメントをレビューして、ピボットとレビュー中のドキュメントの違いに焦点を合わせることができます。

@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 0f471d9ffb559314e1c5d9ea0ee297cdf3e9866d17d87583974438c9bca74c71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3ec44716cd466b3bfe4440c6cdf63fe00376f75
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799828"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255200"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows の Microsoft Defender ウイルス対策
 
@@ -41,7 +41,7 @@ Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の�
 | モード  | 動作  |
 |---------|---------|
 | アクティブ モード | アクティブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されます。 ファイルがスキャンされ、脅威が修正され、検出された脅威が組織のセキュリティ レポートと Windows セキュリティ アプリに一覧表示されます。 |
-| パッシブ モード | パッシブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されません。 ファイルがスキャンされ、検出された脅威が報告されますが、脅威は Microsoft Defender ウイルス対策によって修正されません。   |
+| パッシブ モード | パッシブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されません。 ファイルがスキャンされ、検出された脅威が報告されますが、脅威は Microsoft Defender ウイルス対策によって修正されません。 <br/><br/>**重要**: Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint にオンボードされているエンドポイントでのみパッシブ モードで実行できます。 「[Microsoft Defender ウイルス対策をパッシブ モードで実行するための要件](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode)」を参照してください。  |
 | 無効またはアンインストール済み  | 無効にするかアンインストールすると、Microsoft Defender ウイルス対策は使用されません。 ファイルのスキャン、脅威の修復は行われません。 一般に、Microsoft Defender ウイルス対策を無効にしたりアンインストールしたりすることはお勧めしません。  |
 
 詳細については、「[Microsoft Defender ウイルス対策互換性](microsoft-defender-antivirus-compatibility.md)」を参照してください。
@@ -69,11 +69,15 @@ Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の�
 3. 結果のリストで、**AMRunningMode** 行を確認します。
 
    - **通常** は、Microsoft Defender ウイルス対策がアクティブ モードで実行されていることを意味します。
-   - **パッシブ モード** は、Microsoft Defender ウイルス対策が実行されていることを意味しますが、デバイス上の主要なウイルス対策/マルウェア対策製品ではありません。
-   - **EDR ブロック モード** は、Microsoft Defender ウイルス対策が実行されており、「ブロック モードの EDR」と呼ばれる Microsoft Defender for Endpoint の機能が有効になっていることを意味します。 (「[ブロック モードのエンドポイントでの検出と対応 (EDR)](edr-in-block-mode.md)」を参照してください。)
-   - **SxS パッシブ モード** は、Microsoft Defender ウイルス対策が別のウイルス対策/マルウェア対策製品と一緒にパッシブ モードで実行されており、デバイスが Microsoft Defender for Endpoint にオンボードされていないことを意味します。 この場合、Microsoft Defender ウイルス対策には限定された定期的なスキャンが使用されます。 詳細については、「[Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する](limited-periodic-scanning-microsoft-defender-antivirus.md)」を参照してください。
 
-Get-MpComputerStatus PowerShell コマンドレットの詳細については、リファレンス記事 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) を参照してください。
+   - **パッシブ モード** は、Microsoft Defender ウイルス対策が実行されていることを意味しますが、デバイス上の主要なウイルス対策/マルウェア対策製品ではありません。 パッシブ モードは、Microsoft Defender for Endpoint にオンボードされており、特定の要件を満たすデバイスでのみ使用できます。 詳細については、「[Microsoft Defender ウイルス対策をパッシブ モードで実行するための要件](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode)」を参照してください。
+
+   - **EDR ブロック モード** は、Microsoft Defender ウイルス対策が実行されており、Microsoft Defender for Endpoint の機能である[ブロック モードでのエンドポイントの検知と応答 (EDR)](edr-in-block-mode.md) が有効になっていることを意味します。
+
+   - **SxS パッシブ モード** とは、Microsoft Defender ウイルス対策が別のウイルス対策/マルウェア対策製品と一緒に実行されており、[定期的なスキャンが制限されている](limited-periodic-scanning-microsoft-defender-antivirus.md)ことを意味します。
+
+> [!TIP]
+> Get-MpComputerStatus PowerShell コマンドレットの詳細については、リファレンス記事 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) を参照してください。
 
 ## <a name="get-your-antivirusantimalware-platform-updates"></a>ウイルス対策/マルウェア対策プラットフォームの更新プログラムを取得する
 

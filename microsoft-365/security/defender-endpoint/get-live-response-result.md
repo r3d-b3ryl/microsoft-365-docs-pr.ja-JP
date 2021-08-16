@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3240b0c56b94c365f070935542ae100a94c0375847fa097cb29dc9886b210b79
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0d76c34ae2c610933285f93e349459497de7cb79
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829353"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255527"
 ---
 #  <a name="get-live-response-results"></a>ライブ応答の結果を取得する
 
@@ -104,10 +104,10 @@ Empty
 
 |プロパティ|説明|
 |---|---|
-|name|実行されたスクリプト名|
+|script_name|実行されたスクリプト名|
 |exit_code|実行されたスクリプトの終了コード|
 |script_output|実行されたスクリプトの標準出力|
-|script_error|実行されたスクリプトの標準エラー出力|
+|script_errors|実行されたスクリプトの標準エラー出力|
 
 ## <a name="example"></a>例
 
@@ -142,11 +142,11 @@ HTTP/1.1 200 Ok
     "exit_code": 0,
     "script_output": "Transcript started, output file is C:\\ProgramData\\Microsoft\\Windows Defender Advanced Threat Protection\\Temp\\PSScriptOutputs\\PSScript_Transcript_{TRANSCRIPT_ID}.txt
 C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
-    "script_error":""
+    "script_errors":""
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [コンピューター アクション API の取得](get-machineaction-object.md)
 - [マシン アクションのキャンセル](cancel-machine-action.md)

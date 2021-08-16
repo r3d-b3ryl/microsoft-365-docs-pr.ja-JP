@@ -8,18 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 22c3235c5d381bc14bd40e474ef0b8a6452db7c2
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f77f09716adbb48804bfc5c00bc448ecb6a4f863
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656117"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255539"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>攻撃面の減少ルールをカスタマイズする
 
@@ -72,19 +72,19 @@ ms.locfileid: "53656117"
 |:----|:----|
 | 悪用された脆弱な署名済みドライバーの悪用をブロックする | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
 | Adobe Reader の子プロセスの作成をブロックする | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| すべてのアプリケーションOffice子プロセスの作成をブロックする | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
+| すべてのアプリケーションOffice子プロセスの作成をブロックする | `d4f940ab-401b-4efc-aadc-ad5f3c50688a` |
 | ローカル セキュリティ機関サブシステムからの資格情報のWindowsをブロックする (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
-| メール クライアントと Web メールから実行可能なコンテンツをブロックする | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` |
+| メール クライアントと Web メールから実行可能なコンテンツをブロックする | `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550` |
 | 有病率、年齢、または信頼できるリスト条件を満たしない限り、実行可能ファイルの実行をブロックする | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
-| 難読化される可能性のあるスクリプトの実行をブロックする | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
-| JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする | `D3E037E1-3EB8-44C8-A917-57927947596D` |
-| 実行可能Office作成するアプリケーションのブロック | `3B576869-A4EC-4529-8536-B80A7769E899` |
-| アプリケーションOffice他のプロセスへのコードの挿入をブロックする | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
+| 難読化される可能性のあるスクリプトの実行をブロックする | `5beb7efe-fd9a-4556-801d-275e5ffc04cc` |
+| JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする | `d3e037e1-3eb8-44c8-a917-57927947596d` |
+| 実行可能Office作成するアプリケーションのブロック | `3b576869-a4ec-4529-8536-b80a7769e899` |
+| アプリケーションOffice他のプロセスへのコードの挿入をブロックする | `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84` |
 | 通信Office子プロセスの作成をブロックする | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
 | WMI イベント サブスクリプションによる永続化のブロック | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
 | PSExec および WMI コマンドから発生するプロセス作成をブロックする | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
 | USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| Win32 API 呼び出しをブロックOfficeマクロ | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
+| Win32 API 呼び出しをブロックOfficeマクロ | `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b` |
 | ランサムウェアに対する高度な保護の使用 | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
 
 各ルールの [詳細については、攻撃表面](attack-surface-reduction.md) の縮小に関するトピックを参照してください。

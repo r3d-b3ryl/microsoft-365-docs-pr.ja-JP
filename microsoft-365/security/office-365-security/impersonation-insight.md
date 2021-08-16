@@ -19,12 +19,12 @@ description: 管理者は、偽装の分析情報がどのように機能する�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b7254dce40f72ecc01dc532f1b6c51f252a2b3ac
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: b17fd2f0b14cd7dfd6d8a4326a911c7e9a8db5f8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108633"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254865"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Defender for Office 365
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender ポータルの偽装インサイトを使用して、偽
   - **組織の管理**
   - **セキュリティ管理者**
   - **セキュリティ リーダー**
-  - **グローバル リーダー**
+  - **グローバル閲覧者**
 
   詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
@@ -66,7 +66,7 @@ Microsoft 365 Defender ポータルの偽装インサイトを使用して、偽
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>偽装の分析情報をポータルで開Microsoft 365 Defenderする
 
-1. [メール Microsoft 365 Defender] ポータルで、[メール &**グループ**&ルールの脅威ポリシー] ページの [フィッシング対策] \>  \>  \>  \> **セクションに移動します**。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー]セクション&[&脅威ポリシーのフィッシング対策] に \>  \>  \> **移動** します。
 
 2. [フィッシング **対策] ページでは** 、偽装の分析情報は次のように表示されます。
 

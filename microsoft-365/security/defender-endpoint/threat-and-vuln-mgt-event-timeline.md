@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d63dc8978692652e2d18900b434223d726c0d304
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 8bfca50816f0efc3ea0c2c8fa17521d038570b839508d6fe67b5db7ba03b379b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902406"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>イベントタイムライン - 脅威と脆弱性の管理
 
@@ -130,7 +130,7 @@ ms.locfileid: "53656597"
 
 ![[イベント タイムライン] タブを含むソフトウェア ページ](images/tvm-event-timeline-software-pages.png)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威と脆弱性の管理概要](next-gen-threat-and-vuln-mgt.md)
 - [ダッシュボード](tvm-dashboard-insights.md)

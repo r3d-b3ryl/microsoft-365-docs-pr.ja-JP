@@ -1,6 +1,6 @@
 ---
 title: 試用版ラボまたはMicrosoft 365 Defender環境をセットアップする
-description: ポータルMicrosoft 365 Defenderアクセスし、試用版ラボ環境Microsoft 365 Defenderセットアップする
+description: セキュリティ Microsoft 365にアクセスし、試用版ラボ環境Microsoft 365 Defenderセットアップする
 keywords: Microsoft 365 Defenderセットアップ、パイロットMicrosoft 365 Defender、評価ラボのMicrosoft 365 Defender、Microsoft 365 Defender試す
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 30edfb5a40c62f56da1a431f34c6ddd80f12799e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f447e4303e1e7524e8e3f8e10b2f3082ea3316cc4b71253dd2c43834c0003f80
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58252100"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902541"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>ラボ環境でMicrosoft 365 Defender試用版をセットアップする 
 
@@ -71,7 +71,7 @@ ms.locfileid: "58252100"
 
    ![[Go setup] Office 365 E5をクリックするように求める試用版登録セットアップ ページのイメージ](../../media/mtp-eval-15.png)
 
-8. ConnectドメインをテナントにOffice 365します。 [省略可能]**[Connect所有しているドメインを選択し、** ドメイン名を入力します。 [**次へ**] をクリックします。
+8. ConnectドメインをテナントにOffice 365します。 [省略可能]**[Connect所有しているドメインを選択し、** ドメイン名を入力します。 **[次へ]** をクリックします。
 
    ![サインインとメールOfficeカスタマイズする必要がある 365 E5 セットアップ ページの画像](../../media/mtp-eval-16.png)
  

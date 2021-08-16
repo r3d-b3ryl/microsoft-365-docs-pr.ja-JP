@@ -17,12 +17,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: パートナー組織の管理ゲストと B2B エクストラネット サイトまたはチームを作成する方法について説明します。
-ms.openlocfilehash: d76951da5d8affa1dac08cbdc68a91329ca069ed
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ab88ba8b12c6eb53bc3c0b3c4b22cb09919ce38256b68fa65256e64d7ff81bdd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538245"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883797"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>管理されたゲストで B2B エクストラネットを作成する
 
@@ -36,7 +36,7 @@ ms.locfileid: "52538245"
 
 ## <a name="license-requirements"></a>ライセンス要件
 
-この機能を使用するには、Azure AD プレミアム P2 ライセンスが必要です。 
+この機能を使用するには、ライセンスAzure AD Premium P2必要です。 
 
 Azure Germany や Azure China 21Vianet などの特殊なクラウドは、現在使用できません。
 

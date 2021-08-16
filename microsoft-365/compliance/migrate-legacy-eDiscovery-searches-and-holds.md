@@ -14,21 +14,21 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: aaae5e6bddc48f29cc0766fe26a1976672c7dd49
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 0867e2b28bc693d50d5d79f4ba8e0a8cb89578d76853584f28c3db65ee7b692a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310797"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885669"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>従来の電子情報開示検索と保持を Microsoft 365 コンプライアンス センターに移行する
 
-Microsoft 365 コンプライアンス センターでは、電子情報開示の使用に関するエクスペリエンスが向上します。信頼性の向上、パフォーマンスの向上、および電子情報開示ワークフローに合わせた機能 (重要なコンテンツを整理するケースを含む)、コンテンツと分析を確認するためのレビュー セットが含まれており、ほぼ重複グループ化、電子メール スレッド、テーマ分析、予測コーディングなどのデータを確認するのに役立ちます。
+Microsoft 365 コンプライアンス センター では、電子情報開示の使用に関するエクスペリエンスが向上します。信頼性の向上、パフォーマンスの向上、および電子情報開示ワークフローに合わせた多くの機能 (問題別にコンテンツを整理するケースを含む)、コンテンツと分析を確認するためのセットをレビューして、ほぼ重複グループ化、電子メール スレッド、テーマ分析、予測コーディングなどのデータを確認するのに役立ちます。
 
-お客様が新機能と強化された機能を利用するために、この記事では、In-Place 電子情報開示の検索と保持を Exchange 管理センターから Microsoft 365 コンプライアンス センターに移行する方法に関する基本的なガイダンスを提供します。
+この記事では、お客様が新機能と強化された機能を利用するために、Exchange 管理センターから Microsoft 365 コンプライアンス センター に In-Place 電子情報開示検索とホールドを移行する方法に関する基本的なガイダンスを提供します。
 
 > [!NOTE]
-> さまざまなシナリオが考えられますので、この記事では、検索を移行する一般的なガイダンスを提供し、コンプライアンス センターの主要な電子情報開示ケースMicrosoft 365提供します。 電子情報開示ケースの使用は必ずしも必要とは限らないが、組織内の電子情報開示ケースにアクセスできるユーザーを制御するためのアクセス許可を割り当て、セキュリティの層を追加します。
+> さまざまなシナリオが考えられますので、この記事では、検索を移行し、電子情報開示の主要なケースに移行する一般的なガイダンスを提供Microsoft 365 コンプライアンス センター。 電子情報開示ケースの使用は必ずしも必要とは限らないが、組織内の電子情報開示ケースにアクセスできるユーザーを制御するためのアクセス許可を割り当て、セキュリティの層を追加します。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -130,23 +130,23 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ![PowerShell のNew-ComplianceSearch例](../media/MigrateLegacyeDiscovery6.png)
 
-## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>手順 8: コンプライアンス センターでケース、ホールド、およびMicrosoft 365確認する
+## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>手順 8: ケースを確認し、保持し、検索を行Microsoft 365 コンプライアンス センター
 
-すべてが正しく設定されていることを確認するには、コンプライアンス センターの [Microsoft 365] に移動し、[電子情報開示] > [https://compliance.microsoft.com](https://compliance.microsoft.com) **クリックします**。
+すべてが正しく設定されていることを確認するには、[電子情報開示] の [Microsoft 365 コンプライアンス センター] に移動し、[電子情報開示] > [https://compliance.microsoft.com](https://compliance.microsoft.com) **クリックします**。
 
 ![Microsoft 365コンプライアンス センターの電子情報開示](../media/MigrateLegacyeDiscovery7.png)
 
 手順 3 で作成したケースは、[コア電子情報開示] ページ **に一覧表示** されます。 ケースを開き、[保持] タブの一覧にある手順 4 で作成した保留リストに **気付** きます。保留リストを選択すると、保持が適用されたメールボックスの数や配布状態など、フライアウト ページで詳細を表示できます。
 
-![電子情報開示は、コンプライアンス センター Microsoft 365保持します](../media/MigrateLegacyeDiscovery8.png)
+![電子情報開示は、電子情報開示のMicrosoft 365 コンプライアンス センター](../media/MigrateLegacyeDiscovery8.png)
 
 手順 7 で作成した検索は、ケースの **[検索** ] タブに表示されます。
 
-![コンプライアンス センターでの電子情報開示Microsoft 365検索](../media/MigrateLegacyeDiscovery9.png)
+![電子情報開示ケースの検索 (Microsoft 365 コンプライアンス センター](../media/MigrateLegacyeDiscovery9.png)
 
-電子情報開示検索In-Place移行するが、電子情報開示ケースに関連付けなかった場合は、Microsoft 365 コンプライアンス センターの [コンテンツ検索] ページに一覧表示されます。
+電子情報開示検索In-Place移行するが、電子情報開示ケースに関連付けなかった場合は、電子情報開示の [コンテンツ検索] ページに表示Microsoft 365 コンプライアンス センター。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - 管理センターの電子情報開示In-Place保持&詳細Exchangeを参照してください。
   
@@ -170,4 +170,4 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- コンプライアンス センターの詳細については、「Microsoft 365コンプライアンス センターの概要[」をMicrosoft 365してください](microsoft-365-compliance-center.md)。
+- アプリケーションの詳細については、「Microsoft 365 コンプライアンス センター[の概要」を参照Microsoft 365 コンプライアンス センター。](microsoft-365-compliance-center.md)

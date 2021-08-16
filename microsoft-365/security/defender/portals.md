@@ -17,30 +17,30 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 42f4a4e19fbb062789532e1786bfe2f37bdb3448f2671ec9ac3dcd2a0770b6c9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 81fe9d058a1144c67a1d95d02a3e8b47e3c2104b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838621"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255439"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティ ポータルと管理センター
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 365[センター](overview-security-center.md)は、ID、データ、デバイス、アプリ全体のセキュリティを監視および管理するための新しいホームですが、特定の特殊なタスクのためにさまざまなポータルにアクセスする必要があります。
+Microsoft 365 Defender[ポータル](overview-security-center.md)は、ID、データ、デバイス、およびアプリ全体のセキュリティを監視および管理するための新しいホームですが、特定の特殊なタスクのためにさまざまなポータルにアクセスする必要があります。
 
 > [!TIP] 
-> セキュリティ センターからさまざまな関連ポータルMicrosoft 365するには、ナビゲーション ウィンドウで [その他 **のリソース**] を選択します。
+> さまざまな関連するポータルにアクセスするには、Microsoft 365 Defenderウィンドウで [その他 **のリソース**] を選択します。
 
 ## <a name="security-portals"></a>セキュリティ ポータル
 
 セキュリティオペレーターと管理者は、次のポータルにアクセスして、セキュリティ固有の設定を管理し、可能な脅威アクティビティを調査し、アクティブな脅威に対応し、IT 管理者と協力して問題を修復できます。
 <p></p>
 
-| ポータル名 | Description | リンク |
+| ポータル名 | 説明 | リンク |
 |---|---|---| 
-| Microsoft 365 セキュリティ センター | 脅威アクティビティを監視して対応し、ID、電子メール、データ、エンドポイント、アプリのセキュリティ体制を強化Microsoft 365 Defender [](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
+| Microsoft 365 Defender ポータル | 脅威アクティビティを監視して対応し、ID、電子メール、データ、エンドポイント、アプリのセキュリティ体制を強化Microsoft 365 Defender [](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender セキュリティ センター | Microsoft Defender for Endpoint で提供される機能を使用して、エンドポイントの脅威アクティビティを監視して [対応する](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
 | セキュリティ/コンプライアンス センター | メール[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)コラボレーション サービスOffice 365保護し、さまざまなデータ処理規制への準拠を確保するために、Microsoft Defender for Exchange Online Protectionおよび[Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365)を管理する | [protection.office.com](https://protection.office.com) |
 | Azure Defender ポータル | [Azure Defender を使用](/azure/security-center/security-center-intro)して、クラウド内のデータ センターとハイブリッド ワークロードのセキュリティ体制を強化する | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
@@ -53,7 +53,7 @@ Microsoft 365[センター](overview-security-center.md)は、ID、データ、�
 これらのポータルはセキュリティを管理するための特別な機能ではありませんが、セキュリティに影響を与える可能性があるさまざまなワークロードとタスクをサポートします。 ID、アクセス許可、デバイス設定、およびデータ処理ポリシーを管理するには、これらのポータルにアクセスします。
 <p></p>
 
-| ポータル名 | Description | リンク | 
+| ポータル名 | 説明 | リンク | 
 |---|---|---| 
 | Azure portal | リソースとすべての Azure [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)を表示および[管理する](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Microsoft 365 コンプライアンス センター | データ処理ポリシーを管理し、規制 [に準拠する](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |

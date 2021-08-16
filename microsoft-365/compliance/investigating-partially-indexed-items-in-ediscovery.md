@@ -18,16 +18,16 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれる) を、Exchange、SharePoint、OneDrive for Businessから管理する方法について学習します。
-ms.openlocfilehash: 539fd2687735a5ee14be543750becca8c6c3154c
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: bd3e9f1da3b3404f1ca99d44c01fc4fa85ad391c3b0ede8889319044072bed8a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860221"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックス付きアイテムを調査する
 
-コンプライアンス センターから実行する電子情報開示検索Microsoft 365、検索を実行すると、推定検索結果に部分的にインデックス付きアイテムが自動的に含まれます。 部分的にインデックス付けされたExchangeは、SharePoint サイトおよび OneDrive for Business サイト上のメールボックス アイテムとドキュメントに基OneDrive for Business で、何らかの理由で検索用に完全にインデックスが作成されたのではなかっています。 ほとんどの電子メール メッセージとサイト ドキュメントは、電子メール メッセージのインデックスの制限に含まれますので、インデックス作成 [に成功しています](limits-for-content-search.md#indexing-limits-for-email-messages)。 ただし、一部のアイテムは、これらのインデックスの制限を超える可能性があります。部分的にインデックスが作成されます。 電子情報開示検索を実行すると、アイテムを検索用にインデックス化できない理由と、部分的にインデックス付きアイテムとして返されるその他の理由を次に示します。
+検索を実行すると、Microsoft 365 コンプライアンス センター検索結果に部分的にインデックス付きアイテムが自動的に含まれます。 部分的にインデックス付けされたExchangeは、SharePoint サイトおよび OneDrive for Business サイト上のメールボックス アイテムとドキュメントに基OneDrive for Business で、何らかの理由で検索用に完全にインデックスが作成されたのではなかっています。 ほとんどの電子メール メッセージとサイト ドキュメントは、電子メール メッセージのインデックスの制限に含まれますので、インデックス作成 [に成功しています](limits-for-content-search.md#indexing-limits-for-email-messages)。 ただし、一部のアイテムは、これらのインデックスの制限を超える可能性があります。部分的にインデックスが作成されます。 電子情報開示検索を実行すると、アイテムを検索用にインデックス化できない理由と、部分的にインデックス付きアイテムとして返されるその他の理由を次に示します。
   
 - 電子メール メッセージには、イメージ ファイルなどの有効なハンドラーのない添付ファイルがあります。これは、部分的にインデックスが作成された電子メール アイテムの最も一般的な原因です。
 
@@ -94,7 +94,7 @@ ms.locfileid: "52311456"
   
 インデックス作成エラーの一覧と、エラーの考えられる原因の説明を次に示します。
   
-| エラー タグ | 説明 |
+| エラー タグ | Description |
 |:-----|:-----|
 | `attachmentcount` <br/> |電子メール メッセージの添付ファイルが多すぎて、これらの添付ファイルの一部が処理されません。  <br/> |
 | `attachmentdepth` <br/> |コンテンツレトリバーとドキュメント パーサーは、他の添付ファイル内に入れ子になった添付ファイルのレベルが多すぎます。 これらの添付ファイルの一部は処理されません。  <br/> |
@@ -164,7 +164,7 @@ ms.locfileid: "52311456"
      }
    ```
 
-2. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/exchange-online-powershell)。
+2. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/exchange-online-powershell)。
 
 3. [セキュリティ & コンプライアンス センター PowerShell] で、手順 1 でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 

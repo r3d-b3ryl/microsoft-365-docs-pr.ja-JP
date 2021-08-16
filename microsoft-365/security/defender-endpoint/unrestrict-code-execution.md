@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cb71f31cb047d7310b9534cd75350b25ebc7e7b865f403b7fcf22fa01ffe1718
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cb0a64b6f6d63e0439a03805e4e8cfc1d05116c7
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889029"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255477"
 ---
 # <a name="remove-app-restriction-api"></a>アプリ制限 API の削除
 

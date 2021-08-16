@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、プラン 2 の Microsoft Defender でユーザー タグを持つユーザーの特定のグループOffice 365学習できます。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別Office 365に使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 836c8e538ac62809c15094d6ecade796429f9bce
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 9f3a3f82b510d0910858784bedae3f1be724efd099398e3b1dcbfe57978e3f8b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254107"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883925"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365
 
@@ -46,7 +46,6 @@ ms.locfileid: "58254107"
 - [[メール エンティティ] ページ](mdo-email-entity-page.md#other-innovations)
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
 - [キャンペーン ビュー](campaigns.md)
-- [管理者およびユーザーの申請](admin-submission.md)
 - 優先度アカウントの場合は、管理センター [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) (EAC) の [優先アカウントの電子メールExchangeレポートを使用できます。
 
 この記事では、ポータルでユーザー タグを構成するMicrosoft 365 Defenderします。 ユーザー タグを管理するためのMicrosoft 365 Defenderポータルにはコマンドレットはありません。
@@ -127,7 +126,7 @@ ms.locfileid: "58254107"
 
 3. 表示される詳細フライアウトでは、この記事の「Microsoft 365 Defender ポータルを使用してユーザー タグ[](#use-the-microsoft-365-defender-portal-to-create-user-tags)を作成する」セクションで説明したように、同じウィザードと設定を使用できます。
 
-   **注意**:
+   **注意**: 
 
    - [ **タグの定義** ] ページは組み込みの **Priority アカウント** システム タグでは使用できないので、このタグの名前を変更したり、説明を変更したりすることはできません。
    - カスタム タグの名前は変更できますが、説明は変更できます。

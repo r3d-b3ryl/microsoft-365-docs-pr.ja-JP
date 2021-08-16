@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 関連する機能を管理する方法については、Microsoft 365、Teams、SharePoint、およびYammer。
-ms.openlocfilehash: 3b526297a3f131364a2098b92de09245ab45feb8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5c18dec0f2394273482366dcf230489b13b1b2e90e4d8459a006bc31fabbc6a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538953"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883720"
 ---
 # <a name="what-is-collaboration-governance"></a>共同作業のガバナンスとは?
 
@@ -42,7 +42,7 @@ ms.locfileid: "52538953"
 
 組織で安全なコラボレーションを行うMicrosoft 365グループとTeamsを展開するための多くのオプションがあります。 組織に最適なコラボレーション ソリューションを作成するには、Microsoft 365 および関連記事とのセキュリティで保護されたコラボレーションをセットアップするとともに、[この](setup-secure-collaboration-with-teams.md)ガバナンス コンテンツを使用することをお勧めします。
 
-### <a name="data-residency"></a>データの保存場所
+### <a name="data-residency"></a>データ所在地
 
 組織が複数国間で、さまざまな地域のデータ常駐要件がある場合は、Microsoft 365[複数](/microsoft-365/enterprise/microsoft-365-multi-geo)地域をコラボレーション ガバナンス 計画の一部として含める必要があります。
 
@@ -148,9 +148,9 @@ Microsoft 365 でコラボレーション機能を使用する方法を決定す
 |ドメインの許可/ブロック|組織外のユーザーとの共有を、特定のドメインのユーザーに制限します。|Microsoft 365 E5または E3|
 |セルフサービス サイト作成|ユーザーが自分のサイトを作成SharePointします。|Microsoft 365 E5または E3|
 |制限付きサイトとファイル共有|サイト、ファイル、およびフォルダー共有を特定のセキュリティ グループのメンバーに制限します。|Microsoft 365 E5または E3|
-|制限付きグループの作成|チームとグループの作成を特定のセキュリティ グループのメンバーに制限します。|Microsoft 365 E5 EDU ライセンスを使用する Azure AD プレミアムまたは Azure AD E3|
-|グループの名前付けポリシー|グループ名とチーム名にプレフィックスまたはサフィックスを適用します。|Microsoft 365 E5 EDU ライセンスを使用する Azure AD プレミアムまたは Azure AD E3|
-|グループの有効期限ポリシー|非アクティブなグループとチームの有効期限を設定し、指定した期間が経過すると削除されます。|Microsoft 365 E5または E3 と Azure AD プレミアム ライセンス|
+|制限付きグループの作成|チームとグループの作成を特定のセキュリティ グループのメンバーに制限します。|Microsoft 365 E5 EDU ライセンスAzure AD Premium Azure ライセンスAD E3|
+|グループの名前付けポリシー|グループ名とチーム名にプレフィックスまたはサフィックスを適用します。|Microsoft 365 E5 EDU ライセンスAzure AD Premium Azure ライセンスAD E3|
+|グループの有効期限ポリシー|非アクティブなグループとチームの有効期限を設定し、指定した期間が経過すると削除されます。|Microsoft 365 E5ライセンスを持つ e3 Azure AD Premiumまたは E3|
 |グループごとのゲスト アクセス|グループ単位で組織外のユーザーとのチームとグループの共有を許可または防止します。|Microsoft 365 E5または E3|
 
 ## <a name="collaboration-governance-planning-step-by-step"></a>コラボレーション ガバナンス計画のステップ バイ ステップ

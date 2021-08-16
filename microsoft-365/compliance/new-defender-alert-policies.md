@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Microsoft Defender for Office 365 の新しいアラート ポリシーをリリースします。 また、新しいものに置き換えられた 2 つの既存のアラート ポリシーを廃止します。
-ms.openlocfilehash: 3fc25c50a5e9a2c30ebd06328edf60b5641168035e5275ac58ae81b8b63bf760
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c4edbb59d3328bb933825ab6a85ab561db93741
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856017"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255361"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新しいアラート ポリシー
 
@@ -69,8 +69,8 @@ Microsoft Defender for Office 365 のゼロ時間自動パージ (ZAP) が受信
 | **配信後に削除された悪意のあるファイルを含むメール メッセージ** (新) | アラートは 2021 年 4 月 11 日にトリガーを開始します |
 | **キャンペーンからのメール メッセージが配信され、後で削除されました** (新) | アラートは 2021 年 5 月 28 日にトリガーを開始します|
 | **悪意のあるメールが配信され、後で削除されました** (新) | アラートは 2021 年 5 月 28 日にトリガーを開始します|
-| **フィッシング URL を含むメール メッセージが配信後に削除されました**（既存、削除されます）| アラート ポリシーは 2021 年 5 月 28 日に削除されます。 「[これらの変更に備えるために必要なこと](#what-you-need-to-do-to-prepare-for-these-changes)」のセクションを参照してください。|
-| **マルウェアを含んだメール メッセージが配信後に削除されました**（既存、削除されます） | アラート ポリシーは 2021 年 5 月 28 日に削除されます。 「[これらの変更に備えるために必要なこと](#what-you-need-to-do-to-prepare-for-these-changes)」 セクションを参照してください。 |
+| **フィッシング URL を含むメール メッセージが配信後に削除されました**（既存、削除されます）| アラート ポリシーは 2021 年 6 月に削除されました。 「[これらの変更に備えるために必要なこと](#what-you-need-to-do-to-prepare-for-these-changes)」のセクションを参照してください。|
+| **マルウェアを含んだメール メッセージが配信後に削除されました**（既存、削除されます） | アラート ポリシーは 2021 年 6 月に削除されました。 「[これらの変更に備えるために必要なこと](#what-you-need-to-do-to-prepare-for-these-changes)」 セクションを参照してください。 |
 |||
 
 アラートの重大度の変更は、2021 年 5 月 14 日までにすべての組織に展開されます。

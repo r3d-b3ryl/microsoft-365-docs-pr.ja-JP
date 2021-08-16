@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 326910f4b556837b319c53cb1d257af09efbbe7a6ba8b92a4784d38a50b43fbe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09274557ea35c87cb4346e797d1b5e5e26e96aa3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792904"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255181"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>データの自動調査とMicrosoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "53792904"
 **適用対象:**
 - Microsoft 365 Defender
 
-組織が Microsoft 365 Defender[](microsoft-365-defender.md)を使用している場合、悪意のあるアクティビティや疑わしいアクティビティやアーティファクトが検出されると、セキュリティ運用チームは Microsoft 365 セキュリティ センター内で警告を受け取ります。 一見終わりのない脅威の流れを考えると、セキュリティ チームは多くの場合、アラートの大きな量に対処するという課題に直面します。 幸いMicrosoft 365 Defender、セキュリティ運用チームが脅威に効率的かつ効果的に対処するのに役立つ自動調査と応答 (AIR) 機能が含まれています。
+組織が Microsoft 365 Defender[](microsoft-365-defender.md)を使用している場合、悪意のあるアクティビティや疑わしいアクティビティまたはアーティファクトが検出されると、セキュリティ運用チームは Microsoft 365 Defender ポータル内で警告を受け取ります。 一見終わりのない脅威の流れを考えると、セキュリティ チームは多くの場合、アラートの大きな量に対処するという課題に直面します。 幸いMicrosoft 365 Defender、セキュリティ運用チームが脅威に効率的かつ効果的に対処するのに役立つ自動調査と応答 (AIR) 機能が含まれています。
 
 この記事では、AIR の概要を説明し、次の手順と追加のリソースへのリンクを含みます。
 

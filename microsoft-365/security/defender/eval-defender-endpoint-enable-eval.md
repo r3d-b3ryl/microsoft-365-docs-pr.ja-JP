@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b57026ab2af53cbd941ecd3f4e9f9e6dff7f99c7eb44e0b1b9b2ffb462408415
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88506e546cc359a3cdf042c8661fcc54b217d6d4
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902246"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255451"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>エンドポイント評価環境で Microsoft Defender を有効にする
 
@@ -60,7 +60,7 @@ Microsoft Defender for Endpoint の評価を有効にするには、次の手順
 
     ![課金ライセンスのイメージ](../../media/defender/atp-billing-subscriptions.png)
 
-## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2. サポートされている管理ツールを使用したオンボード エンドポイント
+## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2。 サポートされている管理ツールを使用したオンボード エンドポイント
 
 ライセンス状態が適切にプロビジョニングされていることを確認した後、サービスへのデバイスのオンボーディングを開始できます。 
 
