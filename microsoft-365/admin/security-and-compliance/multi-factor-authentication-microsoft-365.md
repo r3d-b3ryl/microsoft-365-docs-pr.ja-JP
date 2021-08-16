@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 多要素認証 (MFA) は、強力なパスワードと追加の検証方法の両方を使用します。
-ms.openlocfilehash: afe93f3b9432c26ba38e007e929e718853816b7b9f45d9d1d4053c30898a88a5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 40eeff86811d97c307fe4684203668a475a64f72
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822797"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347110"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>ユーザーの多要素認証Microsoft 365
 
@@ -141,7 +141,7 @@ Azure AD Identity Protection とリスク ベースの条件付きアクセス �
 
 ユーザー アカウントのサインインに MFA を要求するには、セキュリティの既定値または条件付きアクセス ポリシーを使用する必要があります。これらのいずれも使用できない場合は、あらゆるサイズのサブスクリプションについて、管理者ロール、特にグローバル管理者ロールを持つユーザー アカウントに対する MFA を強く推奨します。
 
-Microsoft 365 管理センターの **アクティブなユーザー** ウィンドウで、各ユーザー アカウントに対して MFA を有効にします。
+ユーザー アカウントごとに MFA を有効にするには、ユーザー アカウント <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**の [**</a>アクティブなユーザー] ウィンドウMicrosoft 365 管理センター。
 
 ![[アクティブ ユーザー] ページの [多要素認証オプションの画像]](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
@@ -151,7 +151,7 @@ Microsoft 365 管理センターの **アクティブなユーザー** ウィン
 
 この表は、セキュリティの既定値、条件付きアクセス ポリシー、およびユーザーごとのアカウント設定で MFA を有効にした結果を示しています。
 
-|*アイテム*|有効|無効|第 2 の認証方法|
+|*Item*|Enabled|無効|第 2 の認証方法|
 |---|---|---|---|
 |**セキュリティの既定値**|条件付きアクセス ポリシーを使用できない|条件付きアクセス ポリシーを使用できる|Microsoft Authenticator アプリ|
 |**条件付きアクセス ポリシー**|有効になっている場合は、セキュリティの既定値を有効にできません|すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます|MFA 登録中にユーザーが指定|
@@ -169,7 +169,7 @@ Azure ポータルでは、次のことができます。
 - セキュリティの既定値を有効または無効にする
 - 条件付きアクセス ポリシーを構成する
 
-Microsoft 365 管理センターでは、ユーザー単位およびサービス用の MFA 設定を構成できます。
+[ユーザー Microsoft 365 管理センター、ユーザーごとの MFA 設定とサービス MFA 設定<a href="https://go.microsoft.com/fwlink/p/?linkid=2169174" target="_blank">を構成できます</a>。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0963d80699e171ea72c8873a36da28800bb5bf88
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1c046bf15cf3ccfbbbfb8969b0f0bc48db1ad4f5
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247442"
+ms.locfileid: "58349898"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -41,6 +41,11 @@ ms.locfileid: "58247442"
 [このビデオ](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3)を見て詳細をご確認ください。
 > [!TIP]
 > Microsoft Defender for Office 365ありませんか? [試用版を開始するために販売に問い合わせ。](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
+
+## <a name="august-2021"></a>2021 年 8 月
+
+- [報告されたメッセージの管理レビュー](admin-review-reported-message.md): 管理者は、報告されたメッセージを確認した後、テンプレートメッセージをエンド ユーザーに送り返す機能を持つ。 テンプレートは、組織に合わせてカスタマイズし、管理者の評決にも基づいてカスタマイズできます。
+- [[テナント許可/](manage-tenant-allows.md)ブロック一覧の追加] : [許可] をテナント許可/ブロックリストに直接追加することはできませんが、ブロックされたメッセージが管理者申請プロセスの一部として送信された場合に使用できます。 発生したブロックに応じて、URL、ファイル、送信者の許可がテナント許可/ブロック一覧に追加されます。 ほとんどの場合、許可はシステムに時間を与え、保証されている場合は自然に許可するために追加されます。 場合によっては、Microsoft が許可を管理します。
 
 ## <a name="july-2021"></a>2021 年 7 月
 

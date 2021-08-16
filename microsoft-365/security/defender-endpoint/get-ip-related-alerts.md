@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a68402571ff86c8b130b168e4fd1164abf46b3c01b6906c1ec8cfc7c1123cfa2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 12317627c497999f0821a09bc6639aedc2515933
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811256"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347242"
 ---
 # <a name="get-ip-related-alerts-api"></a>IP 関連のアラート API を取得する
 
@@ -80,7 +80,8 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合と IP が存在する場合 -[](alerts.md)本文のアラート エンティティの一覧で 200 OK。 IP が存在しない場合 - 404 が見つかりません。
+成功した場合と IP が存在する場合 -[](alerts.md)本文のアラート エンティティの一覧で 200 OK。 IP アドレスが不明で有効な場合は、空のセットが返されます。
+IP アドレスが無効な場合は、HTTP 400 が返されます。
 
 ## <a name="example"></a>例
 

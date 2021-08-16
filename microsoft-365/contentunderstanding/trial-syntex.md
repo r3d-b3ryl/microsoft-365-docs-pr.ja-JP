@@ -15,12 +15,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: 組織のユーザー向け試用版パイロット プログラムを計画SharePoint Syntexする方法について学習します。
-ms.openlocfilehash: 6b3aadd635e8abb41e0b3eb1bb9414d40fc1192b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 490952d0bf1ba4d6fb61a7199a8c08170ff4476159a8c2665c4e39638ab5865e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899633"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の試用版を実行SharePoint Syntex
 

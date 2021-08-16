@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5975931dab77752da4ba139b3203fcf1b142150fc642379275a149d84a968120
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d9c244b048685824abfece8302c2528fa51a5802
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828621"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349994"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>インシデントのMicrosoft 365 Defender
 
@@ -100,10 +100,6 @@ Microsoft 365やアプリは、疑わしいイベントや悪意のあるイベ�
 
   インシデント内のアラートでサポートされているイベントと疑わしいエンティティすべて。
 
-- Graph (プレビューで)
-
-  組織内の影響を受け取った資産へのアラートの接続を示す図。
-
 インシデントとデータの関係と、インシデントポータルのインシデントのタブMicrosoft 365 Defenderします。
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="インシデントとそのデータと、ポータル内のインシデントのタブMicrosoft 365 Defender関係":::
@@ -170,6 +166,8 @@ Microsoft 製品全体のインシデント対応の詳細については、こ�
 年次タスクには、スタッフ、システム、およびプロセスをテストする重大なインシデントや違反の演習を実行できます。 
 
 毎日、月次、四半期、年次のタスクを使用して、プロセス、ポリシー、およびセキュリティ構成を更新または調整できます。
+
+詳細[については、「セキュリティMicrosoft 365 Defender統合」](integrate-microsoft-365-defender-secops.md)を参照してください。
 
 ### <a name="secops-resources-across-microsoft-products"></a>Microsoft 製品全体の SecOps リソース
 

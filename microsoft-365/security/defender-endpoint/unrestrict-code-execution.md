@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cb0a64b6f6d63e0439a03805e4e8cfc1d05116c7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 38c34198f20c55e1dc6dd2518f30764bf6d58493
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255477"
+ms.locfileid: "58349778"
 ---
 # <a name="remove-app-restriction-api"></a>アプリ制限 API の削除
 
@@ -93,6 +93,8 @@ Content-Type|string|application/json. **必須**
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。
+
+同じデバイスのアプリ制限を削除するために複数の API 呼び出しを送信すると、"保留中のコンピューター アクション" または HTTP 400 が返されます。"Action is already progress" というメッセージが表示されます。
 
 ## <a name="example"></a>例
 

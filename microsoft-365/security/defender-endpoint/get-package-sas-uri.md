@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b9bc82bff9be84c74b9d908b79572b926a943bab
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f04fac6783f07918639e54b3f318b63ed32838fe
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257095"
+ms.locfileid: "58349286"
 ---
 # <a name="get-package-sas-uri-api"></a>パッケージ SAS URI API の取得
 
@@ -41,6 +41,11 @@ ms.locfileid: "58257095"
 > [!IMPORTANT]
 >
 > - これらのアクションは、バージョン 1703 以降Windows 10デバイスでのみ使用できます。
+
+## <a name="limitations"></a>制限事項
+
+この API のレート制限は、1 分あたり 2 回の呼び出しと 1 時間あたり 120 回の呼び出しです。 
+
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Access the Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
@@ -74,7 +79,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、パッケージへのリンクを "value" パラメーターに保持するオブジェクトを持つ 200 Ok 応答コードを返します。 このリンクは非常に短い時間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。
+成功した場合、このメソッドは、パッケージへのリンクを "value" パラメーターに保持するオブジェクトを持つ 200 Ok 応答コードを返します。 このリンクは非常に短い時間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。 コレクションのコンピューター アクションが存在するが完了していない場合は、404 Not Found が返されます。
 
 ## <a name="example"></a>例
 

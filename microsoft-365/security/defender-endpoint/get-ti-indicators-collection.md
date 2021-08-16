@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b69de3add4ca159793eada07ff6c121e7e29690a751be682285ffea24ee46ff5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d04590eee8f771fe8001f44dfae490645e270e64
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829305"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349610"
 ---
 # <a name="list-indicators-api"></a>リスト インジケーター API
 
@@ -41,7 +41,9 @@ ms.locfileid: "53829305"
 
 [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 
-OData のクエリは、およびプロパティ `$filter` `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` で `action` サポート `severity` されています。
+OData のクエリは `$filter` 、次のプロパティで `application` `createdByDisplayName` `expirationTime` `generateAlert` `title` `rbacGroupNames` `rbacGroupIds` `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` `action` サポート `severity` されています。
+<br>```$stop``` 最大値は 10,000 です。 
+<br>```$skip```.
 
 Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
 

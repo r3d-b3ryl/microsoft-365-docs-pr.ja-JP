@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 53abd7fa11d7e49059daef39be58f923e2c858d65bc9b6051c12886ac8a9137d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a8b87a7cee3bb03a0946773012ed6f18bbd75b9
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792964"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58350006"
 ---
 # <a name="score-resource-type"></a>スコア リソースの種類
 
@@ -55,3 +55,4 @@ ms.locfileid: "53792964"
 スコア|Double|現在のスコア。
 Time|DateTime|この API の呼び出しが行われた日時。
 RbacGroupName|String|デバイス グループ名。
+RbacGroupId|String|デバイス グループ ID。

@@ -3,7 +3,6 @@ title: Microsoft Cloud Deutschland から新しいドイツのデータセンタ
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: 0c5e4418a44c463ab05f920f53f4c46b8fdc7c521d84deca48bdfdbfb207befa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 327c7e5d15b006acd9a8b0df829cd2aadbdf8010
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813002"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349910"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Deutschland から新しいドイツのデータセンター地域Office 365サービスへの移行
 
@@ -121,7 +120,9 @@ Azure ADがワールドワイド サービスに切り替わると、すべて�
 
 ### <a name="is-migration-required"></a>移行は必要ですか ?
 
-Microsoft では、Office 365ドイツの新しいデータセンター地域で、Microsoft Cloud Deutschland から Office 365 サービスへのテナント移行を無料で提供しています。 新しいドイツのデータセンター地域への移行をオプトインすることを強く推奨しますが、Microsoft Cloud Deutschland 地域に必要なセキュリティ更新プログラムを引き続き提供します。
+Microsoft は、Office 365ドイツの新しいデータセンター地域で、Microsoft Cloud Deutschland から Office 365 サービスへのテナント移行を無料で提供しました。 すべての対象となる Microsoft Cloud Germany (Microsoft Cloud Deutschland) のお客様が移行されました。 自動化されたプロセスを通じて、それ以上の顧客は移行されません。 残りの Microsoft Cloud Germany サブスクリプションとテナントは、サービスの終了アクティビティの一環として、2021 年 9 月に非アクティブ化およびプロビジョニング解除されます。
+
+サービスが終了するまで、Microsoft Cloud Deutschland 地域に必要なセキュリティ更新プログラムを引き続き提供します。 
 
 Office 365ドイツのデータセンター地域のサービスを次に示します。
 
@@ -180,7 +181,7 @@ Microsoft Cloud Deutschland クラウド サービスでは、次の 15 のサ�
 23. Web 用 Office
 24. Planner
 25. Sway
-26. Microsoft 365 アプリ
+26. Microsoft 365 Apps
 27. Outlook モバイル
 28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1、Intune、および Rights Management Service)
 29. Yammer Enterprise
@@ -188,7 +189,7 @@ Microsoft Cloud Deutschland クラウド サービスでは、次の 15 のサ�
 31. Power AutomateのOffice 365
 32. Power Virtual AgentsのOffice 365
 33. PowerApps for Office 365
-34. Microsoft の予約
+34. Microsoft Bookings
 35. To-Do
 36. Whiteboard
 37. Microsoft StuffHub
@@ -203,13 +204,9 @@ Azure のお客様のみである場合は、Azure[](/azure/germany/germany-migr
 
 azure に Office 365、Dynamics 365、または Power BI がある場合は、まず Office 365 サービスの移行プロセスに従って、Azure AD の移行を成功に向け、その前に Azure AD の自動移行を開始する必要があります。 Azure の移行を完了してからテナント移行を完了し、Azure のワークロードを Azure AD組織Office 365があります。 詳細については [、「移行フェーズのアクションと Microsoft Cloud Deutschland](ms-cloud-germany-transition-phases.md) からの移行に対する影響」を参照してください。
 
-**Office 365**
+**Office 365、Dynamics 365、および Power BI**
 
-今すぐ、Microsoft 主導の移行に[オプトイン](./ms-cloud-germany-migration-opt-in.md)してください。 移行を開始する準備が整った場合は、メッセージ センターのメッセージ センターを通じて、Microsoft 365 管理センター。
-
-**Dynamics 365 および Power BI**
-
-[Dynamics 365 Customer Engagement](/dynamics365/get-started/migrate-data-german-region)の Microsoft による移行にオプトインし、Power BI[します。](/power-bi/admin/service-admin-migrate-data-germany) 移行を開始する準備ができたら、Microsoft 365 管理センターのメッセージ センターからお知らせします。
+すべての対象となる Microsoft Cloud Germany (Microsoft Cloud Deutschland) のお客様が移行されました。 自動化されたプロセスを通じて、それ以上の顧客は移行されません。 残りの Microsoft Cloud Germany サブスクリプションとテナントは、サービスの終了アクティビティの一環として、2021 年 9 月に非アクティブ化およびプロビジョニング解除されます。
 
 ### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>使用しているサービスの価格Office 365変更されますか?
 
@@ -338,7 +335,7 @@ For Business Skypeのすべてのユーザーは、ユーザーにMicrosoft Team
 
 [移行のオプトイン](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

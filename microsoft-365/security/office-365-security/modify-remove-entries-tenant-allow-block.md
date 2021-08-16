@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧でエントリを変更および削除する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 03f2d3f61bc61862bc221f338e6115b035fd2ea349be5531ca2035558046ba06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 951468fb9b3245135356d956e488c55390e9c6f9
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56807198"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349790"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストのエントリを変更および削除する
 
@@ -41,11 +41,15 @@ ms.locfileid: "56807198"
 1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
 
 2. 変更するエントリの種類を含むタブを選択します。
+   - **Senders)
    - **URL**
    - **Files**
    - 「**スプーフィング**」
 
 3. 変更するエントリを選択し、[編集] アイコン [編集] ![ を ](../../media/m365-cc-sc-edit-icon.png) **クリックします**。 表示されるフライアウトで変更できる値は、前の手順で選択したタブによって異なっています。
+   - [**Senders (送信者)**]
+     - **有効期限や有効期限** はありません。
+     - **省略可能なメモ**
    - **URL**
      - **有効期限や有効期限** はありません。
      - **省略可能なメモ**
@@ -56,11 +60,15 @@ ms.locfileid: "56807198"
      - **アクション**: 値を [許可] または [ブロック **] に****変更できます**。
 4. 完了したら、**[保存]** をクリックします。
 
+> [!NOTE]
+> 拡張できるのは、作成日から最大 30 日後です。 ブロックは最大 90 日間延長できますが、許可とは異なり、[有効期限が切れることはありません] に設定できます。
+
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧からエントリを削除する
 
 1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
 
 2. 削除するエントリの種類を含むタブを選択します。
+   - [**Senders (送信者)**]
    - **URL**
    - **Files**
    - 「**スプーフィング**」
@@ -73,10 +81,10 @@ ms.locfileid: "56807198"
 
 ### <a name="modify-block-file-and-url-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧のブロック ファイルと URL エントリを変更する
 
-テナント許可/ブロック一覧のブロック ファイルと URL エントリを変更するには、次の構文を使用します。
+テナント許可/ブロック一覧のブロック送信者、ファイル、および URL エントリを変更するには、次の構文を使用します。
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
+Set-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
 ```
 
 次の使用例は、指定したブロック URL エントリの有効期限を変更します。
@@ -89,10 +97,10 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 ### <a name="remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧から URL またはファイル エントリを削除する
 
-テナント許可/ブロック一覧からファイルエントリと URL エントリを削除するには、次の構文を使用します。
+テナント許可/ブロック一覧から送信者、ファイル、および URL エントリを削除するには、次の構文を使用します。
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 次の使用例は、指定したブロック URL エントリをテナント許可/ブロック一覧から削除します。

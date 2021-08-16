@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 07b3b6174b8f99123cb4184c68fa22fdddf6ca8e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 2ae3c72387b2617bc8fe88349272d27675af16a5
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255758"
+ms.locfileid: "58349214"
 ---
 # <a name="run-antivirus-scan-api"></a>ウイルス対策スキャン API の実行
 
@@ -95,6 +95,8 @@ ScanType|String|スキャンの種類を定義します。 **必須**
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは応答本文に 201、Created 応答コード _、MachineAction_ オブジェクトを返します。
+
+同じデバイスに対してウイルス対策スキャンを実行するために複数の API 呼び出しを送信すると、"保留中のコンピューター アクション" または HTTP 400 が返されます。"Action is already progress" というメッセージが表示されます。
 
 ## <a name="example"></a>例
 

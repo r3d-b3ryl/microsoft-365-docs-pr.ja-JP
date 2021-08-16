@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange の保持のしくみについて説明します。
-ms.openlocfilehash: 39c8e9ec5a94cf9f50ac4d98ac8a789e6f007949
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f735520841531360e5fa943ebecd832ab60cfc858a61c84feec572af04eebf71
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899917"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Exchange の保持の詳細
 
@@ -83,7 +83,7 @@ Exchange データに保持設定を適用すると、[回復可能なアイテ�
 
 ## <a name="user-notification-of-expiry-date"></a>有効期限のユーザー通知
 
-Exchange のアイテム保持ポリシーは、他のMicrosoft 365 ワークロードのアイテム保持ポリシーとは異なり、各メール メッセージの上部にアイテムの有効期限が最も短いアイテム保持ポリシーの名前と、そのアイテムの計算された有効期限を表示することで、ユーザー プレゼンスを提供します。アイテム保持ポリシーがアイテムを削除しない (保持のみ) 場合、ユーザーにはこの通知は表示されません。
+Exchange のアイテム保持ポリシーは、他のMicrosoft 365 ワークロードのアイテム保持ポリシーとは異なり、各メール メッセージの上部にアイテムの有効期限が最も短いアイテム保持ポリシーの名前と、そのアイテムの計算された有効期限を表示することで、ユーザープレゼンスを提供します。 アイテム保持ポリシーがアイテムを削除しない (保持のみ) 場合、ユーザーにはこの通知は表示されません。
 
 保持ラベルが電子メール メッセージに適用されている場合、そのラベルの名前と対応する有効期限が常に表示され、メールボックスに適用されるすべてのアイテム保持ポリシーの名前と日付が置き換えられます。
 

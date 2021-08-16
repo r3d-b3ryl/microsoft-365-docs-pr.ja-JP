@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを管理する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 814ba0695b8b07defbfe991da1c3ed24d0ea0a88679ef36cf43dc49ecefd7a35
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09a710a5fb1518b819704e881534efda15236520
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56884561"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349970"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -34,8 +34,9 @@ ms.locfileid: "56884561"
 
 > [!NOTE]
 >
-> この記事で説明する機能はプレビューで、変更される可能性があります。一部の組織では利用できません。  この記事で説明するスプーフィング機能が組織に存在しない場合は [、「EOP](walkthrough-spoof-intelligence-insight.md)のスプーフィング インテリジェンス ポリシーとスプーフィング インテリジェンスインサイトを使用してスプーフィング送信者を管理する」で、以前のスプーフィング管理エクスペリエンスを参照してください。
-
+> この記事で説明する機能の一部はプレビューで、変更される可能性があります。一部の組織では利用できません。
+> 
+> この記事で説明するスプーフィング機能が組織に存在しない場合は [、「EOP](walkthrough-spoof-intelligence-insight.md)のスプーフィング インテリジェンス ポリシーとスプーフィング インテリジェンスインサイトを使用してスプーフィング送信者を管理する」で、以前のスプーフィング管理エクスペリエンスを参照してください。
 
 Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、EOP フィルターの評決に同意しない可能性があります。 たとえば、メッセージが正しい (誤検知) とマークされている場合や、悪いメッセージが許可される場合があります (偽陰性)。
 
@@ -43,9 +44,11 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 - ブロックする URL。
 - ブロックするファイル。
+- ブロックする送信者の電子メールまたはドメイン。
 - 許可またはブロックするスプーフィングされた送信者。 スプーフィング インテリジェンスインサイトで許可またはブロックの[](learn-about-spoof-intelligence.md)評決を上書きすると、スプーフィングされた送信者は、テナント許可/ブロック一覧の [スプーフィング] タブにのみ表示される手動の許可またはブロックエントリになります。 スプーフィング インテリジェンスによって検出される前に、スプーフィングされた送信者のエントリを手動で作成またはブロックすることもできます。
 - 許可する URL。
-- 許可するファイル。 
+- 許可するファイル。
+- 許可する送信者の電子メールまたはドメイン。
 
 この記事では、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つ Microsoft 365 組織の Exchange Online PowerShell、Exchange Online メールボックスのない組織のスタンドアロン EOP PowerShell) でエントリを構成する方法について説明します。
 
@@ -63,7 +66,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 - 使用可能な URL 値については、この記事の後半の「 [テナント許可/](#url-syntax-for-the-tenant-allowblock-list) ブロック一覧」セクションの URL 構文で説明します。
 
-- テナント許可/ブロック一覧では、URL に対して最大 500 エントリ、ファイル ハッシュのエントリを 500 エントリまで使用できます。
+- テナント許可/ブロック一覧では、送信者に対して最大 500 エントリ、URL に対して 500 エントリ、ファイル ハッシュのエントリを 500 エントリまで使用できます。
 
 - 各エントリの最大文字数は次の値です。
   - ファイル ハッシュ = 64
@@ -76,8 +79,8 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - この記事の手順を実行する際には、あらかじめExchange Online でアクセス許可を割り当てる必要があります。
-  - **URL とファイル**:
-    - テナント許可/ブロック一覧の値を追加および削除するには、組織の管理またはセキュリティ管理者の役割グループのメンバー **である** 必要があります。
+  - **送信者、URL、およびファイル**:
+    - テナント許可/ブロック一覧から値を追加および削除するには、組織の管理、セキュリティ管理者、またはセキュリティオペレーターの役割グループのメンバーである必要があります。または、テナント **AllowBlockList Manager** の役割が割り当てられている必要があります。
     - テナント許可/ブロック一覧への読み取り専用アクセスでは、グローバル リーダーまたはセキュリティリーダーの役割グループの **メンバーである** 必要があります。
   - **スプーフィン** グ: 次のいずれかの組み合わせ。
     - **組織の管理**
@@ -89,7 +92,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
   >
   > - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 ## <a name="configure-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧の構成
 
@@ -113,15 +116,21 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 2. 必要なタブを選択します。 使用可能な列は、選択したタブによって異なる。
 
+   - **送信者**:
+     - **値**: 送信者ドメインまたは電子メール アドレス。
+     - **Action**: 値 Allow **or** **Block**.
+     - **最終更新日時**
+     - **Remove on**
+     - **メモ**
    - **URL**:
      - **値**: URL。
-     - **Action**: 値 **Block**.
+     - **Action**: 値 Allow **or** **Block**.
      - **最終更新日時**
      - **Remove on**
      - **メモ**
    - **Files**
      - **値**: ファイル ハッシュ。
-     - **Action**: 値 **Block**.
+     - **Action**: 値 Allow **or** **Block**.
      - **最終更新日時**
      - **Remove on**
      - **メモ**
@@ -135,6 +144,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
    [グループ化] **をクリック** すると、結果をグループ化できます。 使用可能な値は、選択したタブによって異なる。
 
+   - **送信者 :** アクションで結果をグループ化 **できます**。
    - **URL :** アクションで結果をグループ化 **できます**。
    - **ファイル**: アクションで結果をグループ **化できます**。
    - **スプーフィン** グ : アクションまたはスプーフィングの種類 **で結果** を **グループ化できます**。
@@ -143,6 +153,11 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
    [フィルター **] をクリック** して結果をフィルター処理します。 表示されるフィルター フライアウト **で** 使用できる値は、選択したタブによって異なる。
 
+   - [**Senders (送信者)**]
+     - **Action**
+     - **有効期限が切れることはありません**
+     - **最終更新日**
+     - **Remove on**
    - **URL**
      - **Action**
      - **有効期限が切れることはありません**
@@ -161,12 +176,12 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 4. 完了したら、**[追加]** をクリックします。
 
-## <a name="view-block-file-or-url-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧でブロック ファイルまたは URL エントリを表示する
+## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧で送信者、ファイル、または URL エントリを表示する
 
-テナント許可/ブロック一覧でブロック ファイルまたは URL エントリを表示するには、次の構文を使用します。
+テナント許可/ブロック一覧でブロック送信者、ファイル、または URL エントリを表示するには、次の構文を使用します。
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType <FileHash | URL> [-Entry <FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
+Get-TenantAllowBlockListItems -ListType <Sender | FileHash | URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
 ```
 
 次の使用例は、指定したファイル ハッシュ値の情報を返します。

@@ -13,16 +13,16 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: 9309d0b1bc5a83495af344b699b45e6e21d7e1d65dab6511e31880ee11ec4bfb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43c32f12a125386d6c27a8e1df5bba9875001afc
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811327"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347218"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>デバイスコントロールを使用して組織のデータを保護する
 
-**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint デバイスコントロールは、リムーバブル ストレージ デバイスや USB ドライブの使用など、組織内のデバイスによるメディアの使用を監視および制御することで、データ損失から保護します。
 

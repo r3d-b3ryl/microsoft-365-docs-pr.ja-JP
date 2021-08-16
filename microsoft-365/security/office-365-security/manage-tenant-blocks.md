@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧でブロックを構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad3cf9a4080a5ec50bdff1de623118d70f90bc1240a7eb5b6a09f0b6fe7b2a45
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dd3ff63482340cb69a432e73d7ca8ff258f86522
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56881961"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349958"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの禁止リストを追加する
 
@@ -33,6 +33,24 @@ ms.locfileid: "56881961"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## <a name="use-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用する 
+
+### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧でブロック送信者エントリを作成する
+
+1. このポータルMicrosoft 365 Defender、[ポリシー] & **[** 脅威ポリシー ルール] セクションの [テナントの許可/ブロックリスト \>  \>  \> **] に移動します**。
+
+2. [テナントの **許可/ブロック一覧**] ページで、[送信者] タブが選択されているのを確認し、[ブロック] アイコン [ブロック] ![ を ](../../media/m365-cc-sc-create-icon.png) **クリックします**。
+
+3. 表示される **[送信者のブロック]** フライアウトで、次の設定を構成します。
+   - **送信者の電子メール アドレスまたはドメイン**: 1 行に 1 つの送信者 (電子メール アドレスまたはドメイン) を入力し、最大 20 人まで入力します。
+   - **有効期限が切れる** ことはありません: 次のいずれかの手順を実行します。
+     - 設定がオフ (トグルオフ) になっていることを確認し、[削除] ボックスを使用してエントリの有効期限 ![ ](../../media/scc-toggle-off.png) を指定します。 
+
+       または
+
+     - 切り替えボタンを右に移動して、有効期限が切れなきエントリを構成します。 ![オンに切り替え](../../media/scc-toggle-on.png).
+   - **省略可能な** メモ: エントリの説明テキストを入力します。
+
+4. 完了したら、**[追加]** をクリックします。
 
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧でブロック URL エントリを作成する
 
@@ -72,7 +90,7 @@ ms.locfileid: "56881961"
 
 ### <a name="create-spoofed-sender-block-entries"></a>スプーフィングされた送信者ブロック エントリを作成する
 
-**注意**:
+**注**:
 
 - スプー _フィング_ されたユーザーと、ドメイン ペアで定義されている送信インフラストラクチャの組み合わせだけが、スプーフィングを許可またはブロックされます。
 - ドメイン ペアの許可エントリまたはブロック エントリを構成すると、そのドメイン ペアからのメッセージはスプーフィング インテリジェンスインサイトに表示されなくなりました。
@@ -94,12 +112,18 @@ ms.locfileid: "56881961"
 
 ## <a name="use-powershell"></a>PowerShell を使う
 
-### <a name="add-block-file-or-url-entries-to-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧にブロック ファイルまたは URL エントリを追加する
+### <a name="add-block-sender-file-or-url-entries-to-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧にブロック送信者、ファイル、または URL エントリを追加する
 
-テナント許可/ブロック一覧にブロック ファイルまたは URL エントリを追加するには、次の構文を使用します。
+テナント許可/ブロック一覧にブロック送信者、ファイル、または URL エントリを追加するには、次の構文を使用します。
 
 ```powershell
-New-TenantAllowBlockListItems -ListType <FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
+New-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
+```
+
+次の使用例は、特定の日付に有効期限が切れる、指定した送信者のブロック送信者エントリを追加します。
+
+```powershell
+New-TenantAllowBlockListItems -ListType Sender -Block -Entries "test@badattackerdomain.com", "test2@anotherattackerdomain.com" -ExpirationDate 8/20/2021
 ```
 
 次の使用例は、有効期限が切れることはありません指定したファイルのブロック ファイル エントリを追加します。

@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: 365 Business ユーザー向けクラウド PC のWindowsについて説明します。
-ms.openlocfilehash: 9119148b7b698b65de8d619e6598558b83d6b2e5624487648dae9aff21b35753
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 82fe7093d27fe3d1302e43da415df9ddce2a6064
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838441"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58350066"
 ---
 # <a name="windows-365-business-sizing-options"></a>Windows 365 Business のサイズ設定オプション
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: データのプライバシーに関する規制、関連するシナリオ、準備状況、および機密情報の種類を特定し、Microsoft 365します。
-ms.openlocfilehash: 106bc0d15c04e44e17bf4c0528b541c5d5fd6d8e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 04dc67ee6316f4549e7d215f997cdc171b0038024f3740d544d6acb214f9be1e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651653"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883444"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>データプライバシーリスクを評価し、機密アイテムを特定Microsoft 365
 
@@ -178,7 +178,7 @@ GDPR に固有の質問ですが、 [無料の Microsoft GDPR](https://www.micro
 
 GDPR 評価は、次のセクションで構成されます。
 
-|Section|説明|
+|Section|Description|
 |:-------|:-----|
 |ガバナンス|<ol><li>プライバシー ポリシーには、処理されるデータ情報が明示的に示されていますか? </li><li>プライバシー影響評価 (PIA) を定期的に実行していますか? </li><li> ツールを使用して個人情報 (PI) を管理していますか? </li><li> 特定の個人の PI データを使用してビジネスを行う法的権限はありますか? データに対する同意を追跡しますか? </li><li> 監査コントロールを追跡、実装、および管理しますか? データリークを監視しますか? </li></ol>|
 |削除と通知|<ol><li>ユーザーのデータにアクセスする方法について明示的に指示しますか? </li><li> オプトアウトの同意を処理するプロセスを文書化していますか? </li><li> データの自動削除プロセスはありますか? </li><li> 顧客と関わりを持つ際に ID を検証するプロセスはありますか? </li></ol>|

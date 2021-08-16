@@ -28,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理センターで特定のタスクを実行できるよう、管理者の役割をビジネス内のユーザーまたは複数のユーザーに割り当てる方法について説明します。
-ms.openlocfilehash: 0b959dd9349a032d6825d010d103bfd74d080a595b072be950a61e98f3765dbb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 55eaf8f37a61e12ec57b386a509dfddf2ca05ff8
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815865"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347002"
 ---
 # <a name="assign-admin-roles"></a>管理者ロールを割り当てる
 
@@ -58,7 +58,7 @@ Microsoft Business サブスクリプションを購入したユーザーは、�
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>ロールを使用して管理者ロールをユーザーに割り当てる
 
-1. 管理センターで、[ロール] に **移動します**。 組織で **使用できるAD** を表示するには、[Azure の管理者] タブまたは **[Intune]** タブを選択します。
+1. 管理センターで、[役割の割り当 <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**て] に移動します**</a>。 組織で **使用できるAD** を表示するには、[Azure の管理者] タブまたは **[Intune]** タブを選択します。
 2. ユーザーを割り当てる管理者の役割を選択します。
 3. [割 **り当てられた管理者の追加]**  >  **を選択します**。
 4. ユーザーの表示 **名またはユーザー** 名を **入力** し、候補の一覧からユーザーを選択します。

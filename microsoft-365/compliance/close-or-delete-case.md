@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: ケースが閉じたり削除された場合に、調査または法的ケースがサポートAdvanced eDiscoveryどうなるかを確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: efbcbe34e6d7d8b564bcfa0cf9bbd8a1fbb59709
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: f67fbbbc57af2802da8aa73803c3ba106b1a9fc55d608a1468feec327bc99fec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194634"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900132"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>ケースを閉じるAdvanced eDiscovery削除する
 

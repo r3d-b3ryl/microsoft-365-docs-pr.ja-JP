@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社がエンタープライズ向け Microsoft 365の情報保護機能を使用して、クラウド内のデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: bb797fa4f71b699069f8542b8bc7a353a9ee1698
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 25a9c27d13ff55201a72bb936abbd44a5138a787b912db64ff6bc5aa798a05fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288673"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899685"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -41,7 +41,7 @@ Contoso 社はデータの分析を実行し、次の分類レベルを決定し
 次の表に、Contoso の情報ポリシーを示します。
 
 
-| Value | Access | データ保存期間 | 情報保護 |
+| 値 | Access | データ保存期間 | 情報保護 |
 |:-------|:-----|:-----|:-----|
 | 低いビジネス価値 (レベル 1: ベースライン) | すべてのユーザーへのアクセスを許可します。  | 6 か月 | 暗号化を使用します。 |
 | 中程度のビジネス価値 (レベル 2: 機密) | Contoso の従業員、下請け業者、パートナーへのアクセスを許可します。 <BR><BR> MFA、トランスポート層セキュリティ (TLS)、およびモバイル アプリケーション管理 (MAM) を使用します。 | 2 年  | データ整合性のためにハッシュ値を使用します。  |

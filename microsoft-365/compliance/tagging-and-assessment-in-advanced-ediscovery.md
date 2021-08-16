@@ -1,5 +1,5 @@
 ---
-title: 高度な電子情報開示でのタグ付けと評価
+title: タグ付けと評価 (Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,17 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 ROBOTS: NOINDEX, NOFOLLOW
-description: ファイルのタグ付け、高度な電子情報開示での評価結果の確認など、評価トレーニングを実行する手順を確認します。
-ms.openlocfilehash: 15bc8254ea1589d9afa17a74eaf3bfbcdfd4bba0
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+description: ファイルのタグ付け、評価結果のレビューなど、評価トレーニングを実行する手順を確認Advanced eDiscovery。
+ms.openlocfilehash: 4e1b9f3e79ee35866322e713412690af068ce1837c668c0331d1091cd84a2786
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899863"
 ---
-# <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>高度な電子情報開示の関連性モジュールでのタグ付けと評価
+# <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>関連度モジュールのタグ付けと評価Advanced eDiscovery
   
-このセクションでは、高度な電子情報開示の関連性モジュールの Assessment の手順について説明します。
+このセクションでは、このセクションの [関連性] モジュールの Assessment の手順についてAdvanced eDiscovery。
   
 ## <a name="performing-assessment-training-and-analysis"></a>評価のトレーニングと分析の実行
 
@@ -106,7 +106,7 @@ ms.locfileid: "49769192"
 
 - 必要な追加の評価ファイル (レビュー用)
 
-現在のエラーマージンの評価は、Advanced eDiscovery によって推奨されるエラー マージンです。 "必要な追加の評価ファイル" に表示される番号は、その推奨事項に対応します。
+評価の現在のエラーマージンは、エラーマージンを使用して推奨Advanced eDiscovery。 "必要な追加の評価ファイル" に表示される番号は、その推奨事項に対応します。
   
 [評価の進行状況] インジケーターは、現在のエラーマージンを考えると、評価の完了レベルを示します。 評価が進行中の場合、ユーザーは別の評価サンプルにタグを付けします。
   
@@ -114,7 +114,7 @@ ms.locfileid: "49769192"
   
 展開された [トラック] 画面には、推奨される次の手順、評価の統計、および詳細な結果へのアクセスが表示されます。
   
-リッチ度が非常に低い場合、有用な統計を生成するために関連するファイルの数を最小限に抑えるのに必要な追加の評価ファイルの数は非常に多いです。 高度な電子情報開示では、トレーニングへの移行をお勧めします。 評価の進行状況インジケーターは網掛けされ、統計情報は使用できません。
+リッチ度が非常に低い場合、有用な統計を生成するために関連するファイルの数を最小限に抑えるのに必要な追加の評価ファイルの数は非常に多いです。 Advanced eDiscoveryトレーニングへの移行をお勧めします。 評価の進行状況インジケーターは網掛けされ、統計情報は使用できません。
   
 統計的に基づく安定化がない場合、精度と信頼度のレベルが低い結果が得られます。 ただし、これらの結果は、見つかった関連ファイルの割合を知る必要がない場合に、関連するファイルを検索するために使用できます。 同様に、この状態を使用して、関連性スコアが特定の問題に関連するファイルへのアクセスを加速する可能性がある、リッチ度の低い問題をトレーニングできます。
   

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b71ed4cb81da800069df826f9d95737134822ae896dc23cbe37363275264219e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93e76fb5730140d06f9805e91ecd1a175a4f7cfb
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847417"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347146"
 ---
 # <a name="get-domain-statistics-api"></a>ドメイン統計 API の取得
 
@@ -44,6 +44,7 @@ ms.locfileid: "53847417"
 ## <a name="limitations"></a>制限事項
 
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+2. の最大値は `lookbackhours` 720 時間 (30 日) です。
 
 ## <a name="permissions"></a>アクセス許可
 

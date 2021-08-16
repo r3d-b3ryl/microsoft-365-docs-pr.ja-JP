@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 20c5e392f80a497d58f9f50d6e72996b87741f469bf78994a11c9db50511f987
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 73dd701eff97d7afb3fee7f4480a16296fa3d983
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857581"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347122"
 ---
 # <a name="list-investigations-api"></a>リスト調査 API
 
@@ -43,7 +43,9 @@ ms.locfileid: "53857581"
 
 [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 
-OData のクエリは `$filter` 、次のプロパティ `startTime` `state` で `machineId` サポート `triggeringAlertId` されています。
+OData のクエリは `$filter` 、次のプロパティ `startTime` `id` で `state` `machineId` サポート `triggeringAlertId` されています。
+<br>```$stop``` 最大値が 10,000 の場合
+<br>```$skip```
 
 Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
 

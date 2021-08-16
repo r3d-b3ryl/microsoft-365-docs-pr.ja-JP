@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd249fd7872d0d7d1a170ae064bf0b88e5d912cb6307df2bc25f5c60eda1a5dc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3678101be4f519f621a5fa0dd6b85c3f68e6ef68
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863756"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347254"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Microsoft 脅威エキスパートの機能を構成および管理する
 
@@ -155,7 +155,7 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 - ターゲット攻撃の通知を受け取ったのは、Microsoft 脅威エキスパート。 インシデント対応チームに渡すデータを提供できますか?
 
   > [!NOTE]
-  > Microsoft 脅威エキスパートは、インシデント対応サービスではなく、管理されたサイバーセキュリティハンティング サービスです。 ただし、専門家は必要に応じて、調査を Microsoft サイバーセキュリティ ソリューション グループ (CSG) の検出および応答チーム (DART) サービスにシームレスに移行できます。 また、インシデント対応チームと関わり、インシデント対応が必要な問題に対処できます。
+  > Microsoft 脅威エキスパートは、インシデント対応サービスではなく、管理されたサイバーセキュリティハンティング サービスです。 ただし、インシデント対応チームと関わり、インシデント対応が必要な問題に対処できます。 独自のインシデント対応チームをお持ちで、Microsoft のサポートが必要な場合は、CSS サイバーセキュリティ インシデント対応チーム (CIRT) に参加できます。 チケットを開き、お問い合わせに対応できます。
 
 ## <a name="scenario"></a>シナリオ
 

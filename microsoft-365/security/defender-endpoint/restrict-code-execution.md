@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2eda900a659879fcfe07052e8b51ba3e5a03e633
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bd43fc2bfb8ef83eff988481a87dd48b1b53566b
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257708"
+ms.locfileid: "58350018"
 ---
 # <a name="restrict-app-execution-api"></a>アプリの実行 API の制限
 
@@ -95,6 +95,8 @@ Content-Type|string|application/json. **必須**
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。
+
+同じデバイスのアプリの実行を制限するために複数の API 呼び出しを送信すると、"保留中のコンピューター アクション" または HTTP 400 が返されます。"Action is already in progress" というメッセージが表示されます。
 
 ## <a name="example"></a>例
 

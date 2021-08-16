@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: このOffice 365コンテンツは、利用可能な最も強力な暗号化、プロトコル、およびテクノロジを使用して、保存時および転送中に暗号化されます。 暗号化の概要については、Office 365。
-ms.openlocfilehash: c54508434c5ae5126a79eba1cb6dab3851d8f746
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1dcfb16c08eae1cddde10f250093df9ffc43cbc11944745c96e38e3ff0279670
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900065"
 ---
 # <a name="encryption"></a>暗号化
 
@@ -53,7 +53,7 @@ ms.locfileid: "50926445"
   
 |**コンテンツの種類**|**暗号化テクノロジ**|**追加情報**|
 |:-----|:-----|:-----|
-|デバイス上のファイル。 これらのファイルには、フォルダーに保存された電子メール メッセージ、Officeタブレット、または電話に保存されたドキュメント、または Microsoft クラウドに保存されたデータが含まれます。  <br/> |BitLockerデータセンターで使用します。 BitLockerコンピューターやタブレットなどのクライアント コンピューター Windows使用することもできます。  <br/> Microsoft データセンターの分散キー マネージャー (DKM)  <br/> 顧客キーのMicrosoft 365  <br/> |[WindowsIT センター: BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft Trust Center: 暗号化](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [クラウド セキュリティ制御シリーズ: 保存時のデータの暗号化](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online がメールの機密情報をセキュリティで保護する方法](exchange-online-secures-email-secrets.md) <br/> [カスタマー キーによるサービスの暗号化](customer-key-overview.md) <br/> |
+|デバイス上のファイル。 これらのファイルには、フォルダーに保存された電子メール メッセージ、Officeタブレット、または電話に保存されたドキュメント、または Microsoft クラウドに保存されたデータが含まれます。  <br/> |Microsoft データセンターの BitLocker。 BitLocker は、コンピューターやタブレットなどのクライアント コンピューター Windows使用することもできます。  <br/> Microsoft データセンターの分散キー マネージャー (DKM)  <br/> 顧客キーのMicrosoft 365  <br/> |[WindowsIT センター: BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft Trust Center: 暗号化](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [クラウド セキュリティ制御シリーズ: 保存時のデータの暗号化](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online がメールの機密情報をセキュリティで保護する方法](exchange-online-secures-email-secrets.md) <br/> [カスタマー キーによるサービスの暗号化](customer-key-overview.md) <br/> |
 |ユーザー間で転送中のファイル。 これらのファイルには、ユーザー Office共有されるSharePointリスト アイテムを含めることもできます。  <br/> |転送中のファイルの TLS  <br/> |[OneDrive for Business および SharePoint Online におけるデータ暗号化](data-encryption-in-odb-and-spo.md) <br/> [Skype for Businessオンライン: セキュリティとアーカイブ](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features) <br/> |
 |受信者間の転送中の電子メール。 この電子メールには、ユーザーがホストする電子メールExchange Online。  <br/> |Office 365 Message Encryptionメールの Azure Rights Management、S/MIME、TLS を使用したメールの送信  <br/> |[Office 365 Message Encryption (OME)](ome.md) <br/> [Office 365 での電子メールの暗号化](email-encryption.md) <br/> [Exchange Online が TLS を使って Office 365 のメール接続をセキュリティで保護する方法](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 |メッセージを使用して受信者間で転送中のチャット、メッセージ、およびMicrosoft Teams。 <br/> |Teams TLS と MTLS を使用してインスタント メッセージを暗号化します。 メディア トラフィックは、Secure RTP (SRTP) を使用して暗号化されます。 Teamsは、暗号化キー交換に FIPS (連邦情報処理標準) 準拠のアルゴリズムを使用します。 <br/> |[ユーザーの暗号化Teams](/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
@@ -85,7 +85,7 @@ Microsoft 365は、ボリューム暗号化、ファイル暗号化、および�
 |ドキュメントから暗号化を削除する  <br/> |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> [保護の **削除] セクションを** 選択し、「パスワード暗号化の削除 **」を参照してください**。  |
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [セキュリティとMicrosoft 365機能の計画](plan-for-security-and-compliance.md)
 

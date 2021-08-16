@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定されたファイルを使用してテンプレートを作成Excelします。
-ms.openlocfilehash: 40ee83defc901805841530404b384671bbcbbd68761476146cff2e4d55993943
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1b1bc9ea01905e38f695707db1b302c160ea5818
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892329"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349874"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーでの評価テンプレートの操作
 
@@ -38,14 +38,24 @@ ms.locfileid: "53892329"
 
 ## <a name="template-availability-and-licensing"></a>テンプレートの可用性とライセンス
 
-使用できるテンプレートは、組織のライセンス契約 (ライセンスの詳細の表示)[に基づいて作成されます](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。 テンプレートには、組み込みとプレミアムの 2 つのカテゴリがあります。
+コンプライアンス マネージャーには、組み込みテンプレートとプレミアム テンプレートの 2 つのカテゴリがあります。
 
-#### <a name="included-and-premium-templates"></a>含まれるテンプレートとプレミアム テンプレート
+1. **含まれるテンプレートは** 、コンプライアンス マネージャー のライセンスによって付与され、主要な規制と要件をカバーします。 ライセンス契約で使用できるテンプレートの詳細については、「ライセンスの詳細」 [を参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
+2. **プレミアムのニーズ** とシナリオをカバーするテンプレートは、テンプレート ライセンスを購入することで入手できます。
 
-1. **含まれるテンプレートは** 、ライセンスによって付与され、主要な規制と要件をカバーします。
-2. **プレミアムテンプレートを購入** して、ライブラリを拡張し、特定のニーズに対応できます。 購入後は、必要に応じてテンプレートから評価を作成できます。 [プレミアム テンプレートを購入する方法について説明します](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
+評価の作成を開始すると、コンプライアンス マネージャーはアクティブなテンプレートの数を追跡し、使用状況を監視できます。 詳細については、「アクティブなテンプレート [と非アクティブなテンプレート」を参照してください](compliance-manager-templates.md#active-and-inactive-templates)。
 
-テンプレートの [完全な一覧を表示します](compliance-manager-templates-list.md)。
+コンプライアンス マネージャー [で使用できるテンプレートの](compliance-manager-templates-list.md) 完全な一覧を表示します。
+
+### <a name="purchase-premium-template-licenses"></a>プレミアム テンプレート ライセンスの購入
+
+テンプレート ライセンスは、管理センターで購入できます (サブスクリプション、ライセンス、請求の[詳細を参照)。](/microsoft-365/commerce/) 購入するライセンスの数と支払いプランを選択します。 また、プログラムまたはボリューム ライセンスへの参加を通クラウド ソリューション プロバイダー[ライセンス](https://partner.microsoft.com/membership/cloud-solution-provider)[を取得できます](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
+
+購入が完了すると、テンプレートは 48 時間以内にテナントで利用できます。
+
+### <a name="try-out-premium-templates"></a>プレミアム テンプレートを試す
+
+購入前にプレミアム テンプレートを試す場合は、ライセンスの試用版を入手することもできます。 試用版ライセンスは、90 日間、最大 25 のテンプレートに対して良好です。 試用版ライセンスを取得すると、テンプレートは 48 時間以内にテナントで利用できます。
 
 #### <a name="active-and-inactive-templates"></a>アクティブなテンプレートと非アクティブなテンプレート
 

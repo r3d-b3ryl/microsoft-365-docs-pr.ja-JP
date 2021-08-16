@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 紛失した顧客キーの回復に使用される可用性キーについて学習します。
-ms.openlocfilehash: 573c7bb7426dea8594f3a2e73991f845153146996f8a03cab4766855482a7de1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4de9df3fd60a8afe8608615f90d51486d42b6a20
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895799"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349922"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>カスタマー キーの可用性キーの詳細
 
@@ -65,7 +65,7 @@ Microsoft は、悪意のあるアクターが Microsoft Cloud に保存され�
 
 Microsoft 365は、可用性キーの誤用を防ぐために構築されています。 アプリケーション層は、可用性キーを含むキーを使用してデータの暗号化と解読を行う唯一の方法です。 暗号化Microsoft 365復号化アクティビティのキー階層を解釈および走査できるのは、サービス コードのみです。 論理的な分離は、顧客キー、可用性キー、その他の階層キー、および顧客データの保存場所の間に存在します。 この分離により、1 つ以上の場所が侵害された場合にデータが漏洩するリスクが軽減されます。 階層内の各レイヤーには、格納されているデータとシークレットを保護するために 24 時間 365 日の侵入検出機能が組み込まれています。
 
-アクセス制御は、可用性キー シークレット ストアを含む内部システムへの不正アクセスを防止するために実装されています。 Microsoft のエンジニアは、可用性キー シークレット ストアに直接アクセスできます。 アクセス制御の詳細については、「管理アクセス制御」を参照[Microsoft 365。](/compliance/office-365-administrative-access-controls-overview)
+アクセス制御は、可用性キー シークレット ストアを含む内部システムへの不正アクセスを防止するために実装されています。 Microsoft のエンジニアは、可用性キー シークレット ストアに直接アクセスできます。 アクセス制御の詳細については、「管理アクセス制御」を参照[Microsoft 365。](/compliance/assurance/assurance-administrative-access-controls-overview)
 
 技術的な制御により、Microsoft の担当者は特権の高いサービス アカウントにログインすることを防止します。この場合、攻撃者がユーザーを偽装するために使用Microsoft サービス。 たとえば、これらのコントロールは対話型ログオンを防止します。
 

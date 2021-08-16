@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2e4e01ebb90389f02b7e141a7412927319135e94b63536f19ec0dea8754a262
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6e08f8379189bf221ae8eb450666084932a950b3
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800368"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347134"
 ---
 # <a name="get-file-statistics-api"></a>ファイル統計 API の取得
 
@@ -44,6 +44,7 @@ ms.locfileid: "53800368"
 ## <a name="limitations"></a>制限事項
 
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+2. 最大値は `lookbackhours` 720 Hours(30 日) です。
 
 ## <a name="permissions"></a>アクセス許可
 

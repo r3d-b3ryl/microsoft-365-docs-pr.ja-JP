@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 85a29e312240d416f7a9870bf904865e78e5e59bbc704792269167e8544a5c68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cb4de76bacc794805a79597c9088491f057e3ce0
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894601"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349262"
 ---
 # <a name="collect-investigation-package-api"></a>調査パッケージ API の収集
 
@@ -45,6 +45,10 @@ ms.locfileid: "53894601"
 ## <a name="limitations"></a>制限事項
 
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+
+> [!IMPORTANT]
+>
+> - これらの応答アクションは、バージョン 1703 以降Windows 10デバイスでのみ使用できます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -84,7 +88,7 @@ Content-Type|string|application/json. **必須**
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。
+成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。 コレクションが既に実行されている場合は、400 Bad Request が返されます。
 
 ## <a name="example"></a>例
 

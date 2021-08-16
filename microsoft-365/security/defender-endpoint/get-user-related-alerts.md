@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0f9002e9a54af37fa2b75e9a4053676bc784678bde8544ee4b93ffad7c0cdd06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 28ea0cfa3d22405d80fdf457cc60ce4627caf9de
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53903773"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349598"
 ---
 # <a name="get-user-related-alerts-api"></a>ユーザー関連の通知 API を取得する
 
@@ -83,7 +83,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功し、ユーザーが存在する場合 - 200 OK。 ユーザーが存在しない場合 - 404 が見つかりません。 
+成功し、ユーザーが存在する場合 - 200 OK。 ユーザーが存在しない場合 - 空のセットで 200 OK。 
 
 ## <a name="example"></a>例
 

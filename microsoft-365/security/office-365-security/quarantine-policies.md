@@ -17,19 +17,19 @@ ROBOTS: NOINDEX
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 966136e2b4c81b188735da656ff57504ef3f6347
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b72b77e6a6c8079684c9830e58497ecdd56f15d1
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256148"
+ms.locfileid: "58349226"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
 > [!NOTE]
 > この記事で説明する機能は、現在プレビュー中であり、すべてのユーザーが利用できる機能ではなく、変更される可能性があります。
 
-Exchange Online Protection (EOP) の検疫ポリシー (以前は検疫タグと呼ばれる) を使用すると、管理者は、メッセージが検疫に到着した方法に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を制御できます。
+Exchange Online Protection (EOP) の検疫ポリシー (以前は検疫 _タグと呼_ ばれる) を使用すると、管理者は、メッセージが検疫に到着した方法に基づいて、検疫済みメッセージに対してユーザーが実行できる操作を制御できます。
 
 EOP は、従来、検疫およびエンド ユーザーのスパム通知のメッセージに[](find-and-release-quarantined-messages-as-a-user.md)対して、特定のレベルの対話機能を許可または[防止しています](use-spam-notifications-to-release-and-report-quarantined-messages.md)。 たとえば、ユーザーはスパム対策フィルターによって検疫されたメッセージをスパムまたは一括として表示および解放できますが、高信頼フィッシングとして検疫されたメッセージを表示または解放できない (管理者だけが実行できます)。
 
@@ -219,21 +219,21 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 |機能|検疫ポリシーがサポートされていますか?|使用される既定の検疫ポリシー|
 |---|:---:|---|
 |[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** (_SpamAction_)</li><li>**高信頼スパム** (_HighConfidenceSpamAction_)</li><li>**フィッシング** (_PhishSpamAction_)</li><li>**高信頼フィッシング** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|はい|<ul><li>DefaultFullAccessPolicy (フル アクセス)</li><li>DefaultFullAccessPolicy (フル アクセス)</li><li>DefaultFullAccessPolicy (フル アクセス)</li><li>AdminOnlyAccessPolicy (アクセスなし)</li><li>DefaultFullAccessPolicy (フル アクセス)</li></ul>|
-|フィッシング対策ポリシー: <ul><li>[スプーフィング インテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**偽装ユーザーとしてメッセージが検出された場合** (_TargetedUserProtectionAction_)</li><li>**偽装ドメインとしてメッセージが検出された場合** (_TargetedDomainProtectionAction_)</li><li>**メールボックス インテリジェンスがユーザーを検出して偽装した場合** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|はい|<ul><li>DefaultFullAccessPolicy (フル アクセス)</li><li>DefaultFullAccessPolicy (フル アクセス)</li></ul>|
+|フィッシング対策ポリシー: <ul><li>[スプーフィング インテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)(Defender for Office 365): <ul><li>**偽装ユーザーとしてメッセージが検出された場合** (_TargetedUserProtectionAction_)</li><li>**偽装ドメインとしてメッセージが検出された場合** (_TargetedDomainProtectionAction_)</li><li>**メールボックス インテリジェンスがユーザーを検出して偽装した場合** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|はい|<ul><li>DefaultFullAccessPolicy (フル アクセス)</li><li>DefaultFullAccessPolicy (フル アクセス)</li></ul>|
 |[マルウェア対策ポリシー](configure-anti-malware-policies.md): 検出されたメッセージはすべて常に検疫されます。|はい|AdminOnlyAccessPolicy (管理者のみアクセス)|
-|[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)|はい|AdminOnlyAccessPolicy (管理者のみアクセス)|
-|[アクションを含む](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) メール フロー ルール (トランスポート ルールとも呼ばれる): メッセージをホストされた検疫 (検疫) **に** 配信 _します_。|不要|該当なし|
+|[セーフ、SharePoint、OneDrive、Microsoft Teams](mdo-for-spo-odb-and-teams.md)の添付ファイル (Defender for Office 365)|はい|AdminOnlyAccessPolicy (管理者のみアクセス)|
+|[アクションを含む](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) メール フロー ルール (トランスポート ルールとも呼ばれる): メッセージをホストされた検疫 (検疫) **に** 配信 _します_。|いいえ|該当なし|
 |
 
-<sup>\*</sup>偽装保護の設定は、Microsoft Defender のフィッシング対策ポリシーでのみOffice 365。
-
-既定の検疫ポリシーによって提供されるエンド ユーザーのアクセス許可に満足している場合は、何もする必要はありません。 エンド ユーザーのスパム通知または検疫済みメッセージの詳細でエンド ユーザー機能 (使用可能なボタン) をカスタマイズする場合は、カスタム検疫ポリシーを割り当てできます。
+既定の検疫ポリシーによって提供される既定のエンド ユーザーのアクセス許可に満足している場合は、何もする必要はありません。 エンド ユーザースパム通知または検疫済みメッセージの詳細でエンド ユーザー機能 (使用可能なボタン) を追加または削除する場合は、カスタム検疫ポリシーを割り当てできます。
 
 ### <a name="assign-quarantine-policies-in-anti-spam-policies-in-the-microsoft-365-defender-portal"></a>スパム対策ポリシーで検疫ポリシーを割り当てるには、Microsoft 365 Defenderします。
 
 スパム対策ポリシーを作成および変更する手順の詳細については、「EOP でのスパム対策ポリシーの構成」 [を参照してください](configure-your-spam-filter-policies.md)。
 
-1. [メール Microsoft 365 Defender] ポータルで、[メール &**ポリシー** ] &[スパム対策] \>  \>  \> **セクションに移動します**。 または、 を開きます <https://security.microsoft.com/antispam> 。
+1. [メール Microsoft 365 Defender] ポータルで、[ルール] セクション&[&脅威ポリシースパム対策] に \>  \>  \> **移動** します。
+
+   または **、[Ant-spam** ポリシー] ページに直接移動するには、 を使用します <https://security.microsoft.com/antispam> 。
 
 2. [スパム **対策ポリシー] ページで** 、次のいずれかの手順を実行します。
    - 既存の受信スパム対策 **ポリシーを** 検索して選択します。
@@ -243,7 +243,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
    - **既存のスパム対策ポリシーを** 編集する : ポリシーの詳細フライアウトで、[アクション] セクションに移動し、[アクションの編集]**をクリックします**。
    - **新しいスパム対策ポリシーを作成する**: 新しいポリシー ウィザードで、[アクション] ページ **に移動** します。
 
-4. [操作 **] ページ** で。 検疫メッセージ アクションを持つすべての評決には、対応する検疫ポリシーを選択する [検疫ポリシーの選択] ボックスも表示されます。
+4. [アクション **] ページ** で、[検疫メッセージ] アクションを持つすべての評決には、対応する検疫ポリシーを選択する [検疫ポリシーの選択] ボックスも表示されます。
 
    **注**: 新しいポリシーを作成する場合、空の **[** 検疫ポリシーの選択] の値は、その評決の既定の検疫ポリシーが使用されます。 後でポリシーを編集すると、前の表で説明したように、空白の値が実際の既定の検疫ポリシー名に置き換えられる。
 
@@ -271,7 +271,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 - 対応する検疫ポリシー パラメーターのないスパム フィルターの評決は、[](#step-2-assign-a-quarantine-policy-to-supported-features)その評決の既定の検疫ポリシーが使用されるという意味です。
 
-  検疫済みメッセージの既定のエンド ユーザー機能を変更する場合は、既定の検疫ポリシーをカスタム検疫ポリシーに置き換える必要があります。
+  既定の検疫ポリシーをカスタム検疫ポリシーに置き換える必要があるのは、その特定の評決に対する検疫済みメッセージの既定のエンド ユーザー機能を変更する場合のみです。
 
 - PowerShell の新しいスパム対策ポリシーには **、New-HostedContentFilterPolicy** コマンドレットを使用するスパム フィルター ポリシー (設定) と **、New-HostedContentFilterRule** コマンドレットを使用する新しいスパム フィルター ルール (受信者フィルター) が必要です。 手順については [、「Use PowerShell を使用してスパム対策ポリシーを作成する」を参照してください](configure-your-spam-filter-policies.md#use-powershell-to-create-anti-spam-policies)。
 

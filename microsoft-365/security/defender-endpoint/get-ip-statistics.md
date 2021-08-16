@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e59f59158e36def392255e3034e0123c98ffac7a83548bf5c0284f92bea03a8a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6bcabc069bd79444802ca7487de93719cb2bee00
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853921"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347206"
 ---
 # <a name="get-ip-statistics-api"></a>IP 統計 API の取得
 
@@ -42,6 +42,7 @@ ms.locfileid: "53853921"
 
 ## <a name="limitations"></a>制限事項
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
+2. Lookbackhours の最大値は 720 Hours(30days) です。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -80,7 +81,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合と ip が存在する場合 - 200 OK 本文の統計データを使用します。 IP が存在しない - 404 が見つかりません。
+成功した場合と ip が存在する場合 - 200 OK 本文の統計データを使用します。 IP は有効ですが、存在しません - organizationPrevalence 0、IP は無効です - HTTP 400。
 
 ## <a name="example"></a>例
 

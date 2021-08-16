@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空ではあるが代表的なグローバル組織が、Microsoft 365 ソリューションをどのように展開してきたか。
-ms.openlocfilehash: 3112dc452ff03fbd661ffff80b6b25b1f38f8a66
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 88360580ddebbaa597d7fbfd138c9a310486ef434e2f8d8dad14a9a583ea0fb7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788333"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883565"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 ソリューション
 

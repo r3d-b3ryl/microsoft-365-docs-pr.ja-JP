@@ -22,12 +22,12 @@ ms.custom:
 description: 管理者は、潜在的に危険なメッセージまたは望ましくないメッセージExchange Online Protection (EOP) の検疫について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0ca5a61a7e71a2414fcaf1c0b02aec04820ca17
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c68351b690ecab2f60990695dc0e550b5ff0aff7
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258435"
+ms.locfileid: "58349946"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>EOP で検疫された電子メール メッセージ
 
@@ -48,7 +48,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 - 管理者は、すべてのユーザーのすべての種類の検疫済みメッセージを処理できます。 マルウェア、高信頼フィッシング、またはメール フロー ルール (トランスポート ルールとも呼ばれる) の結果として検疫されたメッセージは、管理者だけが処理できます。 詳細については、「[EOP の管理者として検疫済みのメッセージやファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。
 
-- ユーザーは、メッセージがスパム、バルク メール、または (2020 年 4 月現在) フィッシングとして検疫された場合、受信者である検疫済みメッセージを操作できます。 詳細については、「EOP で検疫済みメッセージをユーザーとして検索して解放する [」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
+- ユーザーは、受信者であり、メッセージがスパム、バルク メール、または (2020 年 4 月現在) フィッシングとして検疫された検疫済みメッセージを操作できます。 詳細については、「EOP で検疫済みメッセージをユーザーとして検索して解放する [」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
 
   ユーザーが検疫済みフィッシング メッセージを管理しきれなくするために、管理者はスパム対策ポリシーのフィッシングメール フィルターの評決に対して別のアクションを構成できます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 

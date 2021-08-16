@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 80089d9bb12970c759e0beffb492f9c1a9a04c0c8548574da127ab2770cc96c8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 28eb524645ecbc3867a342bea1fa34a717a3dde5
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818721"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349802"
 ---
 # <a name="list-machineactions-api"></a>MachineActions API の一覧表示
 
@@ -42,7 +42,9 @@ Machine Actions のコレクション [を取得します](machineaction.md)。
 
 [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 
-OData のクエリは `$filter` 、次のプロパティ `status` `machineId` で `type` `requestor` サポート `creationDateTimeUtc` されています。
+OData のクエリは、プロパティで `$filter` `id` `status` `machineId` `type` `requestor` サポート `creationDateTimeUtc` されています。
+<br>```$stop``` 最大値が 10,000 の場合
+<br>```$skip```
 
 Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
 
@@ -203,6 +205,6 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [エンドポイント用 Microsoft Defender を使用した OData クエリ](exposed-apis-odata-samples.md)

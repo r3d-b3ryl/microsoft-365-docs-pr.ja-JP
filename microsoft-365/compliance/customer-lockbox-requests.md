@@ -17,22 +17,24 @@ search.appverid:
 - MET150
 - MOE150
 description: 問題が発生した場合に Microsoft サポート エンジニアがデータにアクセスする方法を制御できるカスタマー ロックボックス要求について説明します。
-ms.openlocfilehash: 4669abefe039d0f4ba75f22d267c54696cb680aee44df560befd93006c515ae5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa1a53e2f18f186a31673fa240e1d7bd9b71b5f8
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796247"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58350054"
 ---
 # <a name="customer-lockbox-in-office-365"></a>顧客ロックボックス (Office 365
 
-この記事では、Customer Lockbox の展開と構成のガイダンスを提供します。 Customer Lockbox は、オンライン、オンライン、およびオンラインのExchange OnlineデータSharePoint要求をサポートOneDrive for Business。 他のサービスのサポートをお勧めするには[、UserVoice](https://office365.uservoice.com/)のOffice 365してください。
 
-2020 年 4 月 1 日現在の Microsoft 365 コンプライアンスの提供を含む、Microsoft 365 コンプライアンスの提供からユーザーにライセンスを提供するためのオプションについては、セキュリティ & コンプライアンスに関する Microsoft 365 ライセンス[ガイダンスを参照](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)してください。
 
-カスタマー ロックボックスを使用すると、Microsoft は明示的な承認なしにサービス操作を実行するためにコンテンツにアクセスできません。 Customer Lockbox を使用すると、コンテンツにアクセスする要求の承認ワークフローが表示されます。
+この記事では、Customer Lockbox の展開と構成のガイダンスを提供します。 Customer Lockbox は、オンライン、オンライン、およびオンラインのExchange OnlineデータSharePoint要求をサポートOneDrive for Business。 他のサービスのサポートをお勧めするには[、UserVoice](https://office365.uservoice.com/)のOffice 365送信してください。
 
-Microsoft のエンジニアが、サポート プロセスで報告された問題のトラブルシューティングと修正に役立つ場合があります。 通常、Microsoft がサービスの広範な利用統計情報とデバッグ ツールを使用して問題を修正します。 ただし、根本原因を特定して問題を解決するために、Microsoft のエンジニアが顧客コンテンツにアクセスする必要がある場合があります。 カスタマー ロックボックスでは、承認ワークフローの最終ステップとして、エンジニアが顧客にアクセス要求を行う必要があります。 これにより、組織は、これらの要求を承認または拒否し、顧客に直接アクセス制御を提供できます。
+ユーザーにコンプライアンスサービスのメリットを提供するMicrosoft 365については、「セキュリティとコンプライアンスMicrosoft 365の&[参照してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+
+Customer Lockbox を使用すると、明示的な承認なしに Microsoft がコンテンツにアクセスしてサービス操作を実行できます。 Customer Lockbox を使用すると、承認された要求のみがコンテンツへのアクセスを許可するために Microsoft が使用する承認ワークフロー プロセスが表示されます。 Microsoft のワークフロー プロセスの詳細については[、「Privileged access management in Microsoft 365」 を参照してください](privileged-access-management-solution-overview.md)。
+
+Microsoft のエンジニアが、サービスで発生する問題のトラブルシューティングと修正に役立つ場合があります。 通常、エンジニアは、Microsoft がサービスのために用意している広範な利用統計情報とデバッグ ツールを使用して問題を修正します。 ただし、根本原因を特定して問題を解決するために、Microsoft のエンジニアがコンテンツにアクセスする必要がある場合があります。 顧客ロックボックスでは、承認ワークフローの最終ステップとして、エンジニアがユーザーからのアクセスを要求する必要があります。 これにより、組織の要求を承認または拒否し、コンテンツに直接アクセス制御を提供できます。
 
 ### <a name="customer-lockbox-overview-video"></a>カスタマー ロックボックスの概要ビデオ
 
@@ -94,15 +96,14 @@ Microsoft 365 管理センターで、カスタマー ロックボックス コ�
 
 3. 顧客ロックボックス要求を選択し、[承認] または [**拒否] を****選択します**。
 
-    ![顧客ロックボックス要求を承認または拒否する](../media/CustomerLockbox7.png)
+    ![顧客ロックボックス要求の承認](../media/CustomerLockbox7.png)
 
     顧客ロックボックス要求の承認に関する確認メッセージが表示されます。
 
-    ![顧客ロックボックス要求を承認または拒否する](../media/CustomerLockbox8.png)
+    ![顧客ロックボックス要求を拒否する](../media/CustomerLockbox8.png)
 
 > [!NOTE]
 > Set-AccessToCustomerDataRequest コマンドレットを使用して、Microsoft のサポート エンジニアがデータへのアクセスを制限する Microsoft 365 カスタマー ロックボックス要求を承認、拒否、キャンセルします。 詳細については [、「Set-AccessToCustomerDataRequest」を参照してください](/powershell/module/exchange/set-accesstocustomerdatarequest)。
-
 
 ## <a name="auditing-customer-lockbox-requests"></a>カスタマー ロックボックス要求を監査する
 

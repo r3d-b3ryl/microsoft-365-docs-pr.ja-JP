@@ -21,12 +21,12 @@ description: '[Microsoft 365 管理センター- 今月追加された機能に�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 8f174644438205b8ae37495212bf51f71a340ecd0cbdaf61dae58d70d20298e6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c02a6948ffd5e0a811f5e562687f637f848a8bf5
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901522"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347170"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>新しい機能Microsoft 365 管理センター
 
@@ -54,7 +54,7 @@ ms.locfileid: "53901522"
 
 ### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 管理センター検索
 
-これで、インシデントの 1 つでインシデントのMICROSOFT 365 管理センター。 現在のインシデントについては、ソーシャル メディア、業界の出版物、または他の管理者から確認できます。 これで、管理センターに移動してインシデントの詳細を確認し、組織への影響を理解できます。 管理センターでインシデント ID を検索します。
+これで、インシデントの情報でインシデントの<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">MICROSOFT 365 管理センター。</a> 現在のインシデントについては、ソーシャル メディア、業界の出版物、または他の管理者から確認できます。 これで、管理センターに移動してインシデントの詳細を確認し、組織への影響を理解できます。 管理センターでインシデント ID を検索します。
 
 :::image type="content" source="../media/incident-id.png" alt-text="スクリーンショット: 管理センターでインシデント ID を検索する":::
 
@@ -74,7 +74,7 @@ ms.locfileid: "53901522"
 
 :::image type="content" source="../media/SuppInsight-date-sev.PNG" alt-text="スクリーンショット: サポート チケットの並べ替えを重大度と日付で示す表。":::
 
-これらの更新プログラムを確認するにはMicrosoft 365 管理センター左側のナビゲーション ウィンドウの [**サポート**  >  **ビュー サービス** 要求] に移動します。
+これらの更新プログラムを[Microsoft 365 管理センター] で確認 <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">するには、</a>左側のナビゲーション ウィンドウの [**サービス** 要求の表示  >  ] に移動します。
 
 ## <a name="june-2021"></a>2021 年 6 月
 
@@ -168,7 +168,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 
 ### <a name="monitor-your-most-important-accounts"></a>最も重要なアカウントを監視する
 
-ビジネスに大きな影響を与えるユーザー (CEO など) に送信された、失敗または遅延した電子メール メッセージを監視および追跡できます。 優先度アカウントを追跡するには、ユーザーを優先アカウントリストに追加Microsoft 365 管理センター。 機密情報または優先度の高い情報にアクセスできる役員、リーダー、マネージャー、その他のユーザーを追加します。
+ビジネスに大きな影響を与えるユーザー (CEO など) に送信された、失敗または遅延した電子メール メッセージを監視および追跡できます。 優先度アカウントを追跡するには、ユーザーを [優先アカウント] ボックスの一覧に<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">追加</a>Microsoft 365 管理センター。 機密情報または優先度の高い情報にアクセスできる役員、リーダー、マネージャー、その他のユーザーを追加します。
 
 優先度アカウントは、次の両方の要件を満たす組織でのみ使用できます。
 
@@ -233,7 +233,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 - DKIM セットアップに関する問題の解決方法
 - Intune ユーザー登録エラーの診断
 
-また、他の管理センターの一部に対して、Microsoft 365 管理センターで既に表示されている新しいサポート エクスペリエンスと改善されたサポート エクスペリエンスを展開しています。 Teams管理センターとセキュリティおよびコンプライアンス管理センターには、既にこの新しいエクスペリエンスがあります。 すぐに **、Exchange センター** **、SharePoint** 管理センター **、Office.com** が管理者向けこの新しいヘルプ エクスペリエンスと共に更新されます。
+また、他の管理センターの一部にMicrosoft 365 管理センターサポート エクスペリエンスを展開しています<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank"></a>。 Teams管理センターとセキュリティ管理センターとコンプライアンス管理センターには、この新しいエクスペリエンスが既に備え付けされています。 すぐに **、Exchange センター** **、SharePoint** 管理センター **、Office.com** が管理者向けこの新しいヘルプ エクスペリエンスと共に更新されます。
 
 ### <a name="manage-changes-with-microsoft-planner"></a>Microsoft Planner を使用して変更を管理する
 
@@ -251,7 +251,7 @@ Microsoft Ignite へようこそ - 最初のオンライン専用 Ignite。 Micr
 
 ![「リモート ワーカーに権限を与Microsoft 365ソリューションドキュメント」の新しいランディング ページ。](../media/MAC-WN-M365Docspage.png)
 
-## <a name="july-2020"></a>2020 年 7 月
+## <a name="july-2020"></a>2020 年7 月
 
 ### <a name="getting-ready-for-ignite-2020"></a>Ignite 2020 の準備
 
@@ -295,7 +295,7 @@ Microsoft で Ignite シーズンに移行する中で、セッション中に�
 
 5 月 12 日に、新しい更新プログラム チャネルの可用性をOffice月次Enterpriseしました。 この更新プログラム チャネルは、月に 1 回Office、月の第 2 火曜日に新しい機能をユーザーに提供します。
 
-ユーザーがポータルからサイトを自己Office許可する場合は、[月次Enterpriseチャネル] を選択できます。 これを行うには、[組織の設定を表示する] Microsoft 365 管理センターにサインインし、[すべての組織の設定を表示設定ソフトウェアのダウンロードOffice  >   >    >    >  **に移動します**。 [月 **1** 回 (月次 Enterprise チャネル) を選択した場合、Office の新しい自己インストールは、月次チャネルを使用するようにEnterpriseされます。
+ユーザーがポータルからサイトを自己Office許可する場合は、[月次Enterpriseチャネル] を選択できます。 これを行うには、[組織の設定を表示する] Microsoft 365 管理センターにサインインし、[すべての組織の設定を表示設定ソフトウェアのダウンロードOffice  >   >    >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"></a>  >  **に移動します**。 [月 **1** 回 (月次Enterprise チャネル) を選択した場合は、月次チャネルを使用するように Office の新しい自己インストールがEnterpriseされます。
 
 Monthly Enterprise チャネルのリリースに合わせて、既存の更新プログラム チャネルの名前も変更しています。 たとえば、月次チャネルの名前が現在のチャネルに変更されています。 新しい名前は、2020 年 6 月 9 日に有効になります。
 
@@ -303,7 +303,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 ### <a name="new-admin-roles"></a>新しい管理者ロール
 
-管理者ロールに新しいAzure Active Directoryが追加Microsoft 365 管理センター。
+管理者ロールに新しいAzure Active Directoryが追加<Microsoft 365 管理センター。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>
 
 - ハイブリッド ID 管理者の役割を使用すると、ユーザーはクラウド プロビジョニングサービスと認証サービスを管理できます。
 - ネットワーク管理者の役割を使用すると、ユーザーはネットワークの場所を管理し、サービス Microsoft 365ソフトウェアのネットワーク分析情報を確認できます。
@@ -336,7 +336,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 [2020 年 4 月](#april-2020)
 
-さて、私たちはそれをやった! 統一された役割エクスペリエンスに向けて第 2 のステップを踏み、この手順で Intune の役割を管理Microsoft 365 管理センター。 ロールを検索し、役割のアクセス許可を表示する機能などの機能を活用することもできます。 つまり、ユーザーと Intune の役割を管理するための 2 つの個別Microsoft 365必要ない。 アプリにサインインするとMicrosoft 365 管理センター[ロール] ページに 2 つのピボットが表示されます。1 つは Azure ADと Intune 用です。
+さて、私たちはそれをやった! 統合された役割エクスペリエンスに向けて 2 番目のステップを踏み、Intune の役割を管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター。</a> ロールを検索し、役割のアクセス許可を表示する機能などの機能を活用することもできます。 つまり、ユーザーと Intune の役割を管理するための 2 つの個別Microsoft 365必要ない。 [ロール] ページに<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>サインインすると、[ロール] ページに 2 つのピボットが表示され、1 つは Azure AD、もう 1 つは Intune 用です。
 
 ![Intune ピボットが選択されている [役割] ページ](../media/MAC-WN-IntuneRoles.png)
 
@@ -348,11 +348,11 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 ### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>"ヘルプが必要ですか? セキュリティとコンプライアンス センター Teams管理センター&で開始
 
-管理者Teams、セキュリティ センター、コンプライアンス センターが同じ "ヘルプが必要ですか? ヘルプの検索Microsoft 365 管理センターサポートへの問い合わせに使用する機能を提供します。 管理者から、同じレベルのヘルプとサポートが必要というフィードバックが多く寄せられているので、喜んでお客様にお寄せください。 試してみて、フィードバックをお寄せください。
+管理者Teams、セキュリティ センター、コンプライアンス センターが同じ "ヘルプが必要ですか? ヘルプの検索<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 管理センター</a>サポートへの問い合わせに使用する機能を提供します。 管理者から、同じレベルのヘルプとサポートが必要というフィードバックが多く寄せられているので、喜んでお客様にお寄せください。 試してみて、フィードバックをお寄せください。
 
 #### <a name="need-chat"></a>チャットが必要ですか?
 
-サポート エージェントは自宅で作業を続けながら、自宅で作業している間も、顧客のケースやインターネット帯域幅の制限を受け入れながら、顧客の通話品質に影響を与える可能性があります。 引き続きサポートを行う目的で、商用顧客向けライブ チャット サポート オプションが開始Microsoft 365 管理センター。
+サポート エージェントは自宅で作業を続けながら、自宅で作業している間も、顧客のケースやインターネット帯域幅の制限を受け入れながら、顧客の通話品質に影響を与える可能性があります。 引き続きサポートを行う目的で、商用顧客向けライブ チャット サポート オプションが開始<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 管理センター。</a>
 
 サービス要求の作成中に、電話とメールに加えて、オプションとしてチャットが表示されます。 コミュニケーションの優先チャネルとしてチャットを選択し、要求を作成します。 要求を作成したら、Microsoft エージェントとチャットする準備ができたら、チャットを開始できます。
 
@@ -419,7 +419,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>組織のモバイル アプリテーマSharePointカスタマイズする
 
-アプリをMicrosoft 365 管理センター、iOS および Android 用モバイル アプリSharePointモバイル アプリで組織SharePointをカスタマイズできます。 この機能は、モバイル イントラネット アプリのエクスペリエンスを提供し、移動中の従業員SharePointオンラインに一致できます。 テーマのカスタマイズには、ロゴ画像、ナビゲーション バーの色、テキストとアイコンの色、アクセントの色が含まれています。認識が容易になります。
+このMicrosoft 365 管理センター<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">を</a>使用して、iOS および Android 用モバイル アプリSharePointモバイル アプリで組織SharePointをカスタマイズできます。 この機能は、モバイル イントラネット アプリのエクスペリエンスを提供し、移動中の従業員SharePointオンラインに一致できます。 テーマのカスタマイズには、ロゴ画像、ナビゲーション バーの色、テキストとアイコンの色、アクセントの色が含まれています。認識が容易になります。
 
 ![管理センターの設定をモバイル アプリにマッピングする図。](../media/MAC-WN-CustThemeSP.png)
 
@@ -447,7 +447,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 
 [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)Web シリーズの新機能 : 今月のエピソードでは、Microsoft Teams の 3 年の記念日を強調し、オンライン会議でのオーディオ品質の向上、Shifts アプリを使用したファーストライン マネージャー向けターゲットコミュニケーション、Teams と Skype コンシューマーの相互運用性などの新機能について説明します。
 
-## <a name="february-2020"></a>2020年2月
+## <a name="february-2020"></a>2020 年 2 月
 
 ### <a name="featured-feedback-fix-multi-organization-switcher"></a>おすすめフィードバックの修正: 複数組織の切り替え機能
 
@@ -455,7 +455,7 @@ Monthly Enterprise チャネルのリリースに合わせて、既存の更新�
 > [!TIP]
 > 少なくとも 1 つの組織のパートナーである限り、組織の切り替え者を表示するために何もする必要はありません。
 
-1. [組織] Microsoft 365 管理センター組織名を選択します。
+1. [組織] <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>組織名を選択します。
 ![画面キャプチャ: 切り替えアイコンを含む組織プロファイル名を示すホーム ページの上部。](../media/MAC-Organization-switcher.png)
 
 2. 組織の切り替えプログラムで、管理する組織を選択します。

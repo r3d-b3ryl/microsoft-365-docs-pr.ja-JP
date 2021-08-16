@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.openlocfilehash: 059e1653d7db9140dbc80fd69fe36e95a744b079
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 02cc7298afe202ae004a1fff84ea6961535c5b2e2972d08da6527946d7253fae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900019"
 ---
 # <a name="learn-about-privileged-access-management"></a>特権アクセス管理の詳細
 
@@ -35,7 +35,7 @@ ms.locfileid: "50126606"
 
 ## <a name="layers-of-protection"></a>保護レイヤー
 
-特権アクセス管理は、セキュリティ アーキテクチャ内の他のデータおよびアクセス機能Microsoft 365補完します。 セキュリティに対する統合的で層的なアプローチの一部として特権アクセス管理を含め、機密情報とセキュリティ構成設定の保護を最大化するMicrosoft 365提供します。 図に示すように、特権アクセス管理は、Microsoft 365 データのネイティブ暗号化と Microsoft 365 サービスの役割ベースのアクセス制御セキュリティ モデルで提供される保護に基づいて構築されています。 Azure AD Privileged Identity Management[と](/azure/active-directory/active-directory-privileged-identity-management-configure)一緒に使用する場合、これらの 2 つの機能は、さまざまなスコープで Just-in-time アクセスを使用してアクセス制御を提供します。
+特権アクセス管理は、Microsoft 365 セキュリティ アーキテクチャ内の他のデータおよびアクセス機能保護を補完します。 セキュリティへの統合および階層化アプローチの一部として特権アクセス管理を含めると、機密情報と Microsoft 365 の構成設定の保護を最大化するセキュリティ モデルが実現されます。 図に示すように、特権アクセス管理は、Microsoft 365 データのネイティブ暗号化と Microsoft 365 サービスの役割ベースのアクセス制御セキュリティ モデルで提供される保護に基づいて構築されています。 Azure AD Privileged Identity Management[と](/azure/active-directory/active-directory-privileged-identity-management-configure)一緒に使用する場合、これらの 2 つの機能は、さまざまなスコープで Just-in-time アクセスを使用してアクセス制御を提供します。
 
 ![ユーザーのレイヤー Microsoft 365](../media/pam-layered-protection.png)
 
@@ -51,13 +51,13 @@ ms.locfileid: "50126606"
 
 ### <a name="step-1-configure-a-privileged-access-policy"></a>手順 1: 特権アクセス ポリシーを構成する
 
-Microsoft 365 管理センターまたは[Exchange](https://admin.microsoft.com)管理 PowerShell を使用して特権アクセス ポリシーを構成する場合は、ポリシーと特権アクセス機能プロセスとポリシー属性を Microsoft 365 基体で定義します。 アクティビティはセキュリティ コンプライアンス センターに &amp; 記録されます。 ポリシーが有効になり、承認の受信要求を処理する準備が整いました。
+Microsoft 365 管理センター または[Exchange](https://admin.microsoft.com) Management PowerShell を使用して特権アクセス ポリシーを構成する場合は、ポリシーと特権アクセス機能プロセスとポリシー属性を Microsoft 365 基板に定義します。 アクティビティはセキュリティ コンプライアンス センターに &amp; 記録されます。 ポリシーが有効になり、承認の受信要求を処理する準備が整いました。
 
 ![手順 1: ポリシーの作成](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>手順 2: アクセス要求
 
-管理者センター [Microsoft 365](https://admin.microsoft.com)管理 PowerShell を使用してExchange管理者特権タスクまたは特権タスクへのアクセスを要求できます。 特権アクセス機能は、構成された特権アクセス ポリシーに対して処理Microsoft 365要求を送信し、セキュリティ コンプライアンス センター ログにアクティビティを &amp; 記録します。
+管理者または[Microsoft 365 管理センター](https://admin.microsoft.com)管理 PowerShell で、ユーザーは管理者特権Exchangeタスクへのアクセスを要求できます。 特権アクセス機能は、構成された特権アクセス ポリシーに対して処理Microsoft 365要求を送信し、セキュリティ コンプライアンス センター ログにアクティビティを &amp; 記録します。
 
 ![手順 2: アクセス要求](../media/pam-step2-access-request.jpg)
 

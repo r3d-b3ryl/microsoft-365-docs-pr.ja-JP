@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1aa13e51114691426a9d898d61f2faff0593b9ef9997784d8980b6ebcc2f6978
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 110b86974badde65450f4264daf9373f46f8993d
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847237"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58350030"
 ---
 # <a name="list-software-inventory-api"></a>ソフトウェア インベントリ API の一覧表示
 
@@ -35,7 +35,15 @@ ms.locfileid: "53847237"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
+## <a name="api-description"></a>API の説明
+
 組織のソフトウェア インベントリを取得します。
+<br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+<br>OData でサポートされている演算子:
+<br>```$filter``` on:  ```id``` ```name``` 、、および ```vendor``` プロパティ。
+<br>```$top``` 最大値は 10,000 です。
+<br>```$skip```.
+<br>Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください](exposed-apis-odata-samples.md)。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -99,7 +107,7 @@ GET https://api.securitycenter.microsoft.com/api/Software
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

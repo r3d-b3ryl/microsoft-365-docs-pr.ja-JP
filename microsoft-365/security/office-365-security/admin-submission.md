@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4ce1ea9e06167f0fec4431438c48c967f12a8a46
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: be666d89c7a7d67a6b041e12fc53f005829ad455
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258400"
+ms.locfileid: "58349982"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -58,6 +58,8 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
   
     この記事で後述するように、カスタム メールボックスへの[](#view-user-submissions-to-microsoft)ユーザー申請を表示するには、この役割グループのメンバーシップが必要です。
 
+- 管理者は、メールボックスで引き続き使用できるメッセージであり、ユーザーまたは別の管理者によって削除されない場合は、30 日間の古いメッセージを送信できます。
+
 - ユーザーがメッセージとファイルを Microsoft に送信する方法の詳細については、「メッセージとファイルを Microsoft に報告する」 [を参照してください](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="report-suspicious-content-to-microsoft"></a>疑わしいコンテンツを Microsoft に報告する
@@ -78,9 +80,6 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 2. [ネットワーク **メッセージ ID の追加または電子メール** ファイルのアップロード] セクションで、次のいずれかのオプションを使用します。
    - 電子メール ネットワーク メッセージ **ID** を追加する: これは、メッセージ内の **X-MS-Exchange-Organization-Network-Message-Id** ヘッダー、または検疫済みメッセージの **X-MS-Office365-Filtering-Correlation-Id** ヘッダーで使用できる GUID 値です。
    - **アップロード ファイル (.msg または .eml)** をクリックします。[ファイルの参照]**をクリックします**。 開いたダイアログで、.eml ファイルまたは .msg ファイルを見つけて選択し、[開く] を **クリックします**。
-
-   > [!NOTE]
-   > 30 日という古いメッセージを送信する機能は、ユーザーのユーザーに対して Defender Office 365されています。 管理者は 7 日間だけ戻って行くことができます。
 
 3. [問題 **が発生した受信者の選択** ] ボックスで、ポリシー チェックを実行する受信者を指定します。 ポリシー チェックは、ユーザーまたは組織のポリシーが原因で電子メールがスキャンをバイパスしたかどうかを判断します。
 
@@ -169,7 +168,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
    - エントリをグループ化するには、[グループ] を **クリック** し、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
-     - **型**
+     - **種類**
      - **理由**
      - **状態**
      - **再スキャンの結果**
@@ -244,9 +243,9 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 ユーザーが不審なメールをカスタム メールボックスに送信すると、ユーザーと管理者は申請を元に戻すオプションを使用できません。 ユーザーが電子メールを回復する場合は、削除済みアイテムまたは迷惑メール フォルダーで回復できます。
 
-### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>カスタム メールボックスから Microsoft にメッセージを送信する
+### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>ユーザーが報告したメッセージをカスタム メールボックスから管理者申請に変換する 
 
-Microsoft にメッセージを送信せずにユーザーが報告したメッセージを傍受するようにカスタム メールボックスを構成している場合は、特定のメッセージを見つけて分析のために Microsoft に送信できます。 これにより、ユーザーの申請が管理者申請に効果的に移動されます。
+Microsoft にメッセージを送信せずにユーザーが報告したメッセージを傍受するようにカスタム メールボックスを構成している場合は、特定のメッセージを見つけて分析のために Microsoft に送信できます。
 
 [ユーザー **報告メッセージ** ] タブで、一覧でメッセージを選択し、[分析のために **Microsoft** に送信] をクリックし、ドロップダウン リストから次のいずれかの値を選択します。
 

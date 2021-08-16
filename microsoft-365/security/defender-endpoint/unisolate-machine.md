@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 69d892fef4dc83cfc3ef3ff04acc34b873ecc382
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 848d422828a4c0a8c8e5c7aa63c31f0727ea12f4
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254667"
+ms.locfileid: "58349934"
 ---
 # <a name="release-device-from-isolation-api"></a>分離 API からデバイスを解放する
 
@@ -92,6 +92,8 @@ Content-Type|string|application/json. **必須**
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは応答本文に 201 - Created response code and [Machine Action](machineaction.md) を返します。
+
+同じデバイスの分離を削除するために複数の API 呼び出しを送信すると、"保留中のマシン アクション" または HTTP 400 が返されます。"Action is already progress" というメッセージが表示されます。
 
 ## <a name="example"></a>例
 
