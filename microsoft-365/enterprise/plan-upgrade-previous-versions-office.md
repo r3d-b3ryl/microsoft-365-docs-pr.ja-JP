@@ -1,7 +1,7 @@
 ---
 title: 2007 Office 2010 サーバーとクライアントからのアップグレードを計画する
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: overview
@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事には、2007 年または 2010 年Office 2010 年Officeアップグレードの計画に役立つユーザー向けリソースが含まれている。
-ms.openlocfilehash: d93a1a00e2738d907fdfc9a9c9cad8a64f23519c647315166f093d424e7217b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1fbbf13f267f191f567f413dd777d12e43abc096
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794932"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356902"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 サーバー/クライアントからアップグレードする計画を立てる
 
@@ -81,7 +81,7 @@ Microsoft 365は、Microsoft クラウドによって有効およびセキュリ
 
 - パートナーまたはボリューム ライセンススペシャリストと一緒に作業します。 [パートナーまたはリセラー Microsoft 365探します](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)。 
 
-- 組織が対象となる数のライセンスを購入Microsoft 365 FastTrack チームがセットアップ プロセスを支援します。 詳細については[、「FastTrack for Microsoft 365」 を参照してください](https://www.microsoft.com/fasttrack/microsoft-365)。
+- 組織が対象となる数のライセンスを購入Microsoft 365、FastTrackチームがセットアップ プロセスを支援します。 詳細については[、「FastTrack」を参照Microsoft 365。](https://www.microsoft.com/fasttrack/microsoft-365)
 
 - 小規模な組織の一部である場合、または組織の Office アップグレードを自分で処理する場合は[、「Microsoft 365 Business](/office365/admin/setup/upgrade-users-to-latest-office-client)ユーザーを最新の Office クライアントにアップグレードする」を参照してください。 
   
@@ -112,6 +112,6 @@ Microsoft 365は、Microsoft クラウドによって有効およびセキュリ
 - [Office 2007 サーバー/クライアントからアップグレードする](upgrade-from-office-2007-servers-and-products.md)
 - [Office 2010 サーバー/クライアントからアップグレードする](upgrade-from-office-2010-servers-and-products.md)
    
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
   
 [Microsoft のライフサイクル ポリシー](/lifecycle/)

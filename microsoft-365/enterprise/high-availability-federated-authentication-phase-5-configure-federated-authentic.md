@@ -1,7 +1,7 @@
 ---
 title: 高可用性フェデレーション認証 フェーズ 5 サーバーのフェデレーション認証を構成Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro
@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: '概要: Azure AD Connectサーバーの高可用性フェデレーション認証用にMicrosoft 365構成Microsoft Azure。'
-ms.openlocfilehash: 7953e7655b484250576352eb805042e1a435ccf5bf6cea25cf6a5dc7eb3a4bc8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ecd5eac14279bb79c0e4bc574a9340314cc77574
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870668"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356530"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>高可用性フェデレーション認証 フェーズ 5: サーバーのフェデレーション認証を構成Microsoft 365
 

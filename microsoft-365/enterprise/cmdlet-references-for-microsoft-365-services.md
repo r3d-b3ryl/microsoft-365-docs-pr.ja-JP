@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 サービスのコマンドレット リファレンス
-ms.author: josephd
-author: JoeDavies-MSFT
+title: Microsoft 365 サービスのコマンドレットリファレンス
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/16/2020
 audience: ITPro
@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Azure AD、Exchange Online、SharePoint Online、Skype for Business Online の Microsoft 365 PowerShell コマンドレット リファレンスに関するトピックをご覧ください。
-ms.openlocfilehash: 8dbff4261ae3403b1851b30c817277d4838be5ee3455fa5027a070e80ace229e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fc6cb250fe968c8dd8222422c517ce59352e4d69
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830376"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356566"
 ---
-# <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 サービスのコマンドレット リファレンス
+# <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 サービスのコマンドレットリファレンス
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 この記事では、PowerShell がサポートするさまざまな Microsoft 365 サービスのコマンドレット リファレンスと 各 Microsoft 365 サービスの接続手順について説明します。
 

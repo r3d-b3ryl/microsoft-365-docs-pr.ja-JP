@@ -2,8 +2,8 @@
 title: エンタープライズ テスト環境向けライセンスとグループ Microsoft 365を自動化する
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/09/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: エンタープライズ テスト環境用に、グループ ベースのライセンスと動的Microsoft 365メンバーシップを構成します。
-ms.openlocfilehash: 8835498f0b56eeafbc86f49a0be2df840359afbfdeb5518ca6fe521b64c8c652
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7c871c7005163aa81e911b15f8a3c91e8ea9c43
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859085"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356590"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向けライセンスとグループ Microsoft 365を自動化する
 
@@ -64,7 +64,7 @@ ms.locfileid: "53859085"
    - [等号 **] 演算子を選択** します。
    - [値] **ボックスに** 「Sales」と **入力します**。
 10. **[保存]** を選択します。
-11. [**作成**] を選択します。
+11. **[作成]** を選択します。
 
 次に、メンバーにライセンスが自動的に割り当てMicrosoft 365 E5構成します。
 

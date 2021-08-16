@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a156600d22a42ce9af28623765cc32e68595712ef9dcfc4b5a26b703b5c0544d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 612c1629869a5cc777c0d00ba8169fe1707b78ed
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853897"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355834"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>IP および URL/ドメインのインジケーターを作成
 
@@ -39,18 +39,20 @@ Defender for Endpoint は、Microsoft が悪意のある IPS/URL と見なす動
 
 このための脅威インテリジェンス データ セットは、Microsoft によって管理されています。
 
-IP と URL またはドメインのインジケーターを作成することで、独自の脅威インテリジェンスに基づいて、IPs、URL、またはドメインを許可またはブロックできます。 特定のグループが他のグループよりも多かれ少なかれ危険にさらされている場合は、設定ページまたはコンピューター グループを使用してこれを行えます。
+IP と URL またはドメインのインジケーターを作成することで、独自の脅威インテリジェンスに基づいて、IPs、URL、またはドメインを許可またはブロックできます。 危険なアプリを開いた場合は、ユーザーにプロンプトを表示するように警告することもできます。 プロンプトはアプリの使用を停止しませんが、アプリの適切な使用方法を説明するカスタム メッセージと会社ページへのリンクを提供できます。 ユーザーは警告をバイパスし、必要に応じてアプリを引き続き使用できます。
+
+
+特定のグループが他のグループよりも多かれ少なかれ危険にさらされている場合は、設定ページまたはコンピューター グループを使用してこれを行えます。
 
 > [!NOTE]
 > IP アドレスInter-Domainクラスレス ルーティング (CIDR) 表記はサポートされていません。
 
-### <a name="before-you-begin"></a>はじめに
-
+## <a name="before-you-begin"></a>はじめに
 IPS、URL、またはドメインのインジケーターを作成する前に、次の前提条件を理解することが重要です。
 
 - URL/IP 許可とブロックは、Defender for Endpoint コンポーネントのネットワーク保護をブロック モードで有効にしています。 ネットワーク保護と構成手順の詳細については、「ネットワーク保護を有効 [にする」を参照してください](enable-network-protection.md)。
-- マルウェア対策クライアントのバージョンは、4.18.1906.x 以降である必要があります。
-- バージョン 1709 以降Windows 10コンピューターでサポートされます。
+- マルウェア対策クライアントのバージョンは、4.18.1906.x 以降である必要があります。 
+- バージョン 1709 以降Windows 10コンピューターでサポートされます。 
 - [高度 **な機能] の [** エンドポイント] で **カスタム Microsoft 365 Defender > 設定 >が>確認します**。 詳細については、「高度な機能 [」を参照してください](advanced-features.md)。
 - iOS でのインジケーターのサポートについては、「カスタム インジケーターの [構成」を参照してください](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)。
 
@@ -70,7 +72,23 @@ IPS、URL、またはドメインのインジケーターを作成する前に�
 >
 > アクションが実行され、URL と IP がブロックされる時間の間に最大 2 時間の待機時間 (通常は少ない) が発生する場合があります。
 
-### <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>設定ページから、IPs、URL、またはドメインのインジケーターを作成する
+
+警告モードを使用する場合は、次のコントロールを構成できます。
+
+**バイパス機能**
+- エッジの [許可] ボタン
+- トーストの [許可] ボタン (Microsoft 以外のブラウザー)
+- インジケーターのバイパス期間パラメーター
+- Microsoft ブラウザーと Microsoft 以外のブラウザーで適用をバイパスする 
+
+**リダイレクト URL** 
+- インジケーターのリダイレクト URL パラメーター
+- エッジのリダイレクト URL
+- トーストのリダイレクト URL (Microsoft 以外のブラウザー)
+
+詳細については、「エンドポイント用 [Microsoft Defender で検出されたアプリを管理する」を参照してください](/cloud-app-security/mde-govern)。
+
+## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>設定ページから、IPs、URL、またはドメインのインジケーターを作成する
 
 1. ナビゲーション ウィンドウで、[エンドポイントインジケーター]**設定**  >  **([** ルール]  >  **の下)** を **選択します**。
 
@@ -85,7 +103,7 @@ IPS、URL、またはドメインのインジケーターを作成する前に�
 
 5. [概要] タブで詳細を確認し、[保存] を **クリックします**。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [インジケーターの作成](manage-indicators.md)
 - [ファイルのインジケーターを作成 ](indicator-file.md)

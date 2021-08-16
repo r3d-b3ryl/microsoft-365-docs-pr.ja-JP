@@ -1,7 +1,7 @@
 ---
 title: 組織のデータを組織のデータに移行Microsoft 365 Enterprise
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: この記事では、組織のデータを組織のデータをユーザーに移行するのに役立つMicrosoft 365。
-ms.openlocfilehash: 6eff9d525f25817f7042e2ce77cfaf0e08170df794db22b13cced81fa791f43e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80efbafe17d0a35da323c6f6274e18af270c4985
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858689"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355954"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>組織のデータを組織のデータに移行Microsoft 365 Enterprise
 
@@ -30,7 +30,7 @@ ms.locfileid: "53858689"
 
 基本的[なセットアップ手順は](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)、すべてのユーザーが、可能な限り短時間でMicrosoft 365サービスとアプリケーションを使用するのに役立ちます。 これにより、ハイブリッド シナリオと、ハイブリッド シナリオに移行するより高度なMicrosoft 365。 
   
-Microsoft 365 セットアップのヘルプが必要な場合は[、FastTrack](https://fasttrack.microsoft.com/office)が Microsoft 365 を展開する最も簡単な方法です。また、Microsoft 365 サービスのセットアップ ガイドにサインイン[して使用](setup-guides-for-microsoft-365.md)できます。
+Microsoft 365 のセットアップに関するヘルプが必要な場合は[、FastTrack](https://fasttrack.microsoft.com/office)が Microsoft 365 を展開する最も簡単な方法です。Microsoft 365 サービスのセットアップ ガイドにサインインして[使用できます](setup-guides-for-microsoft-365.md)。
 
 ## <a name="migrate-email-to-microsoft-365"></a>メールをメールに移行Microsoft 365
 - [Exchange 展開アシスタントを使って Exchange ハイブリッド](https://technet.microsoft.com/exdeploy2013)の移行をする。(管理者)

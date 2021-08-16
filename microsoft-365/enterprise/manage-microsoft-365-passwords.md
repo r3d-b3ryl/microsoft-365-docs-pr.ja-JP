@@ -1,7 +1,7 @@
 ---
 title: ユーザー Microsoft 365パスワードの管理
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: ユーザー アカウントのパスワードをMicrosoft 365する方法について説明します。
-ms.openlocfilehash: ac83ef8a52bd0f0c3a6a8d1c0164c6eb6c0a4f4b20045d5c23ad2c1fb7a6b6da
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 85d3c42a7aca977472e44fce63af3968fc8e9705
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899309"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356662"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>ユーザー Microsoft 365パスワードの管理
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 ID 構成にMicrosoft 365、ユーザー アカウント のパスワードを管理できます。 ユーザー アカウントは[、Microsoft 365 管理センター、Active](../admin/add-users/index.yml)Directory ドメイン サービス (AD DS)、または Azure Active Directory (Azure AD) 管理センターで管理できます。
 

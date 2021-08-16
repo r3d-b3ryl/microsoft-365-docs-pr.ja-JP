@@ -1,7 +1,7 @@
 ---
 title: PowerShell を使用して Skype for Business Online を管理する
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: '概要: PowerShell を使用して、ポリシーを使用Skype for Business Online ユーザー アカウントのプロパティを管理します。'
-ms.openlocfilehash: 51218d2158558e527f5ce9b3c12388e69cd3d87c140641762247a90d6e78043c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aea57c836403918e4c236f766ed211a31ea2ceec
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835057"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357043"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>PowerShell を使用して Skype for Business Online を管理する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Skype for Business Online のユーザー アカウントの多くのプロパティを管理するには、PowerShell を使用してポリシーのプロパティとして指定する必要Microsoft 365。
   

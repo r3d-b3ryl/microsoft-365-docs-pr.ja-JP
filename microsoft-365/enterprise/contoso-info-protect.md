@@ -1,9 +1,9 @@
 ---
 title: Contoso Corporation の情報保護
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 ms.date: 10/02/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社がエンタープライズ向け Microsoft 365の情報保護機能を使用して、クラウド内のデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 25a9c27d13ff55201a72bb936abbd44a5138a787b912db64ff6bc5aa798a05fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7240e226cf70b2666f6e0bc9180aea3ee63bdc91
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899685"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356302"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -100,7 +100,7 @@ Contoso 社は、Exchange Online および SharePoint のロールアウトの�
 
 次の表は、Contoso のデータ レベルをエンタープライズ向けサービスの情報保護Microsoft 365マップします。
 
-| Level | Microsoft 365クラウド サービス | Windows 10 および Microsoft 365 Apps for enterprise | セキュリティとコンプライアンス |
+| レベル | Microsoft 365クラウド サービス | Windows 10 および Microsoft 365 Apps for enterprise | セキュリティとコンプライアンス |
 |:-------|:-----|:-----|:-----|
 | レベル 1: ベースライン  | SharePoint および Exchange Online の条件付きアクセス ポリシー <BR> SharePoint サイトのアクセス許可 | 機密ラベル <BR> BitLocker <BR> Windows 情報保護 | デバイスの条件付きアクセス ポリシーとモバイル アプリケーション管理ポリシー |
 | レベル 2: 機密 | レベル 1 プラス: <BR> <BR> 秘密度ラベル <BR> SharePoint サイトの Microsoft 365 保持ラベル <BR> SharePoint および Exchange Online 用のデータ損失防止 <BR> 分離した SharePoint サイト  | レベル 1 プラス: <BR> <BR> デジタル資産の機密ラベル  | レベル 1 |

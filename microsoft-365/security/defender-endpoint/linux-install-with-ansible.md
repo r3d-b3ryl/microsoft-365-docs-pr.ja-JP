@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2bb51c5162dcf89619d893e573e9275c002da4afb0bd21fbd03d7349488a2ac4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e9f65d7280ccbc2b780a693e1c259e3f3d6c6400
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898181"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357007"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 
@@ -41,7 +41,7 @@ ms.locfileid: "53898181"
 - [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)
 - [Ansible YAML ファイルの作成](#create-ansible-yaml-files)
 - [展開](#deployment)
-- [関連情報](#references)
+- [References](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
@@ -138,7 +138,7 @@ ms.locfileid: "53898181"
     > [!WARNING]
     > 最初のインストール後にチャネルを切り替える場合は、製品を再インストールする必要があります。 製品チャネルを切り替える: 既存のパッケージをアンインストールし、新しいチャネルを使用するデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
 
-    配布とバージョンをメモし、その下の最も近いエントリを識別します `https://packages.microsoft.com/config/` 。
+    配布とバージョンをメモし、その下の最も近いエントリを識別します `https://packages.microsoft.com/[distro]/` 。
 
     次のコマンドで *、[distro]* と *[version]* を、特定した情報に置き換える必要があります。
 

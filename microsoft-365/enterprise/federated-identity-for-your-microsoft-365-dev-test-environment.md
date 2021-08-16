@@ -2,8 +2,8 @@
 title: Microsoft 365 テスト環境のフェデレーション ID
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 05/26/2019
 audience: ITPro
@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '概要: Microsoft 365 テスト環境用にフェデレーション認証を構成します。'
-ms.openlocfilehash: e4d287f82fd267b3a56bcfad8266389e2dffa194c16f9c2fb9048cebe4773232
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dea2c5fe85ffb30f6195e4f76765422fb22f20b4
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870881"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356758"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のフェデレーション ID
 
@@ -253,7 +253,7 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
     
   - [ **フェデレーション サービスの表示名]** に、架空の組織の名前を入力します。
     
-  - **[次へ]** を選択します。
+  - [**次へ**] を選択します。
     
 7. [サービス アカウント **の指定] ページで** 、[アカウント **名の選択]** **を選択します**。
     
@@ -335,7 +335,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
   - [パスワード **] ボックス** に、User1 アカウントのパスワードを入力します。
     
-  - **[次へ]** を選択します。
+  - [**次へ**] を選択します。
     
 6. [FS **プロキシAD]** ページで、下矢印を選択し、フェデレーション サービス FQDN の証明書を選択し、[次へ] を選択 **します**。
     

@@ -3,7 +3,6 @@ title: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいド�
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,22 +18,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: '
-ms.openlocfilehash: 959aee9662c843fa89851924c3f5e878d73a382b8ea19258eca2a332ff404169
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7207a175a900b45e081e40e438495c0b0ed6874
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899081"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356170"
 ---
 # <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域のOffice 365サービスへの新しい移行をオプトインする方法
 
 > [!NOTE]
-> この記事は、Microsoft Cloud Germany (Microsoft Cloud Deutschland) のお客様にのみ適用されます。
+> 移行オプトイン期間は、2021 年 6 月 1 日現在で終了しています。  すべての対象となる Microsoft Cloud Germany (Microsoft Cloud Deutschland) のお客様が移行されました。  自動化されたプロセスを通じて、それ以上の顧客は移行されません。  残りの Microsoft Cloud Germany サブスクリプションとテナントは、サービスの終了アクティビティの一環として、2021 年 9 月に非アクティブ化およびプロビジョニング解除されます。  
 >
 
 ## <a name="how-to-request-migration"></a>移行を要求する方法
 
-Microsoft Cloud Germany (Microsoft Cloud Deutschland) でサービスがプロビジョニングされている対象顧客で、テナント (グローバル) 管理者としてサインインしている場合は、Microsoft 365 管理センター のページで移行をオプトインできます。
+Microsoft Cloud Germany (Microsoft Cloud Deutschland) でサービスがプロビジョニングされている対象顧客で、テナント (グローバル) 管理者としてサインインしていた場合、Microsoft 365 管理センター のページで移行をオプトインできます。 このOpt-InページではMicrosoft 365 管理センター登録が許可されなくなりましたが、このプロセスは参照用に以下に概説されています。  
 
 ページにアクセスするには、左側 **設定ウィンドウで**[組織プロファイル] を展開し、[組織プロファイル]**をクリックします**。
 
@@ -68,7 +67,7 @@ Microsoft Cloud Germany (Microsoft Cloud Deutschland) でサービスがプロ�
 
 [移行中のカスタマー エクスペリエンスを理解する](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

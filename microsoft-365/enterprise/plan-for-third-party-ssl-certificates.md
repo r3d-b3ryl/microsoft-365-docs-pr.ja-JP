@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 のサードパーティの SSL 証明書の計画
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.date: 05/15/2019
@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: '概要: Exchange オンプレミスおよびハイブリッド、AD FS、Exchange Online サービス、および Exchange Web サービスを使用する SSO に必要な SSL 証明書について説明します。'
-ms.openlocfilehash: 041365e1da16a92dc1a5262909c8871f62b22902931f45867cf1fa65c6f5e89b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f2ad14bd35d68067cdc462706bed763e894455f8
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800788"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355930"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-microsoft-365"></a>Microsoft 365 のサードパーティの SSL 証明書の計画
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 クライアントとサーバー環境間の通信を暗号化Microsoft 365、サード パーティ製の Secure Socket Layer (SSL) 証明書をインフラストラクチャ サーバーにインストールする必要があります。
 

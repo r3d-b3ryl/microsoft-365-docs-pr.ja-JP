@@ -19,12 +19,12 @@ search.appverid:
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 05d31ac36fbdc687c60ec3c03efac9be43da9c39
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: e0d5803560ea965e222669027be30860d8a17328b2d097705dabe9bb88e5c42c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57002687"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -58,7 +58,7 @@ DLP レポートを使用すると、以下のことを行えます。
 
 さらに、テスト モードで実行するときに、DLP レポートを使用して DLP ポリシーを微調整することができます。
 
-DLP レポートは、Microsoft 365 コンプライアンス センターにあります。 **[レポート]** \> **[組織データ]** セクションに移動して、**DLP ポリシーの一致**、**DLP インシデント**、および **DLP の誤検知と上書き** のレポートを検索します。
+DLP レポートは、Microsoft 365 コンプライアンス センターにあります。**[レポート]** \> **[組織データ]** セクションに移動して、**DLP ポリシーの一致**、**DLP インシデント**、および **DLP の誤検知と上書き** のレポートを検索します。
 
 詳細については、「[データ損失防止のレポートの表示](../../compliance/view-the-dlp-reports.md)」を参照してください。
 

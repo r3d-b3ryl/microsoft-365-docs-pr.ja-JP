@@ -1,7 +1,7 @@
 ---
 title: サービスMicrosoft 365 Enterpriseアプリケーションを構成する
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -19,18 +19,18 @@ f1.keywords:
 - NOCSH
 description: サービスMicrosoft 365 Enterpriseアプリケーション (SharePoint、Exchange、Skype for Business) を構成します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a36330f86d30bcfde30762eb8fb5d38fe84d71744c4f0e90bf28c079a50a358a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1253f5d36621c252a0fd37b35a73cdf6269ebd5
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830313"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356554"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>サービスMicrosoft 365 Enterpriseアプリケーションを構成する
 
 基本的[なセットアップ手順は](../admin/setup/setup.md)、すべてのユーザーが、可能な限り短時間でMicrosoft 365サービスとアプリケーションを使用するのに役立ちます。 すべてのユーザーが使用を開始する前に構成された情報が優先される場合があります。 たとえば、メール ルーティング、ファイル ストレージ、または共有ポリシーを構成する場合。 
   
-セットアップに関するヘルプをMicrosoft 365場合は **[、FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)** またはセットアップ ガイドを使用して、Microsoft 365 [サービスOffice 365してください](setup-guides-for-microsoft-365.md)。
+セットアップに関するヘルプが必要Microsoft 365場合は、FastTrackまたはセットアップ **[](https://www.microsoft.com/fasttrack/microsoft-365)** ガイドを使用して、Microsoft 365 [サービスOffice 365してください](setup-guides-for-microsoft-365.md)。
   
 |**サービスおよびアプリケーション**|**リソース**|
 |:-----|:-----|

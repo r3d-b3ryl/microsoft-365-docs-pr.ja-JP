@@ -1,7 +1,7 @@
 ---
 title: DAP パートナー用にドメインをクライアント テナントにWindows PowerShellする
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,16 +17,16 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: '概要: PowerShell を使用Microsoft 365既存の顧客テナントに別のドメイン名を追加します。'
-ms.openlocfilehash: a7a1039f29b73cef50ed14fe6ad3189faf3365087e9526f5517b866ac0440f77
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 90eec48de55a01dd2298bed1ff0dc068d57da3bb
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835453"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356122"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 新しいドメインを作成し、顧客のテナントと PowerShell を関連付け、Microsoft 365を使用するよりもMicrosoft 365 管理センター。
 
@@ -49,7 +49,7 @@ ms.locfileid: "53835453"
 
 ## <a name="create-domains"></a>ドメインを作成する
 
- 顧客から、既定の<domain>.onmicrosoft.comドメインを世界に対して自企業を表す主ドメインにしたくないため、追加のドメインを作成して顧客のテナンシーに関連付けるよう依頼される可能性があります。この手順では、ドメインを新規作成して顧客のテナンシーに関連付ける方法を順を追って説明します。
+ 顧客から、既定の\<domain>.onmicrosoft.comドメインを世界に対して自企業を表す主ドメインにしたくないため、追加のドメインを作成して顧客のテナンシーに関連付けるよう依頼される可能性があります。この手順では、ドメインを新規作成して顧客のテナンシーに関連付ける方法を順を追って説明します。
 
 > [!NOTE]
 > これらの操作の一部を実行するには、Microsoft 365 管理センター の管理アカウントの詳細にある [サポートする企業への管理アクセスの割り当て] 設定で、サインインするパートナー管理者アカウントを [完全な管理] に設定する必要があります。 パートナー管理者の役割の管理の詳細については、「パートナー: 委任された管理を提供 [する」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=532435)。

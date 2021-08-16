@@ -1,7 +1,7 @@
 ---
 title: PerformancePoint Server 2007 のサポート終了ロードマップ
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -16,16 +16,16 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: PerformancePoint Server 2007、ProClarity、および SharePoint Server 2007 はサポートの終了に達しました。 この記事を読んで、BI ソリューションのアップグレードを計画する方法についてお読みください。
-ms.openlocfilehash: 6a0803354044f6c94a1907dc919adc2851483e38d7755da84a354075eb623c34
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88818fe4ecc0a2be7a63abe615bd4206c50ead3b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885161"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356482"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 のサポート終了ロードマップ
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Office 2007 のサーバーとアプリケーションは、ビジネス インテリジェンス (BI) ソリューションの一部として使用する可能性があるサーバーやアプリケーションなど、サポートの最後に達しています。 次の表に、影響を受ける BI アプリケーションの一覧を示します。
   
@@ -95,7 +95,7 @@ SharePoint Excel サーバーの *Excel Services* とも呼ばれる Excel を�
 
 このサービスにMicrosoft 365、最新のサービスとアプリケーション (最新のサービスとアプリケーションを含む) がExcel 2016。 PerformancePoint Servicesでは使用できないMicrosoft 365、PerformancePoint ダッシュボード のコンテンツをブックや他のレポートExcel置き換えます。 良いニュースは、Excel 2016多くの新しいグラフの種類を持ち、新しいグラフで印象的なダッシュボードを作成する方がこれまで以上にExcel。 また、新しい機能は定期的に追加されます。 詳細については[、「What's New in Excel 2016」をWindows。](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)
   
-また、50 シート以上のシートを購入Microsoft 365 Microsoft FastTrack チームがセットアップを支援できます。 詳細については [、「FastTrack」を参照してください](https://www.microsoft.com/fasttrack/microsoft-365)。
+また、50 シート以上のシートを購入Microsoft 365、Microsoft FastTrackチームがセットアップを支援できます。 詳細については、「FastTrack」[を参照してください](https://www.microsoft.com/fasttrack/microsoft-365)。
   
 #### <a name="excel-with-sharepoint-server-on-premises"></a>Excel サーバー SharePoint (オンプレミス)
 
@@ -151,6 +151,6 @@ PerformancePoint Server 2007 は、サーバー 2007 からSharePoint販売さ�
 
 オンプレミスにアップグレードする場合も、Microsoft 365に移行する場合も、Microsoft パートナーと一緒に作業することをお勧めします。 認定パートナーは、ビジネス ニーズに最適なソリューションを特定し、展開に役立ちます。 Microsoft パートナー [センターにアクセスし](https://go.microsoft.com/fwlink/?linkid=841249)、検索フィルターを使用してソリューション プロバイダーを検索します。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース](upgrade-from-office-2007-servers-and-products.md)

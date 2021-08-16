@@ -1,7 +1,7 @@
 ---
 title: PowerShell を使用してセキュリティ グループを管理する
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,16 +17,16 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: PowerShell を使用してセキュリティ グループを管理する方法について説明します。
-ms.openlocfilehash: fbefc5d483c327daa1082debd8ca504bc8df36e52dd49a0c3ad50ee356e45e48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e9842585fbb88711c0efa6e515ca8b54c124338e
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878887"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356266"
 ---
 # <a name="manage-security-groups-with-powershell"></a>PowerShell を使用してセキュリティ グループを管理する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 PowerShell を使用して、Microsoft 365グループを管理する代わりに、Microsoft 365 管理センターを使用できます。 
 

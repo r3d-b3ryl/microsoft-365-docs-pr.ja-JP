@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365専用 ID
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
@@ -26,22 +26,22 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: サブスクリプションでクラウド専用 ID を使用している場合Microsoft 365グループを作成する方法について説明します。
-ms.openlocfilehash: c12b3bea5523430c89c89f1e310308925a04c3c6fe6bd0a4b1a033dadd57501f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa3bef4b25327b675f18b2ea0bb9dfea15b2a81a
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864989"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356098"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365専用 ID
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 クラウド専用 ID を使用すると、すべてのユーザー、グループ、連絡先が Azure Active Directory (Azure AD) テナントの Microsoft 365 サブスクリプションに格納されます。 クラウド専用 ID の基本的なコンポーネントを次に示します。
  
 ![クラウド専用 ID の基本的なコンポーネント](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-組織のユーザーとユーザー アカウントは、さまざまな方法で分類できます。 たとえば、従業員であり、永続的なステータスを持つユーザーもいます。 一部のベンダー、請負業者、または一時的なステータスを持つパートナーがあります。 一部のユーザー は、ユーザー アカウントを持たず、対話とコラボレーションをサポートするために特定のサービスとリソースへのアクセスを許可する必要がある外部ユーザーです。 次に例を示します。
+組織のユーザーとユーザー アカウントは、さまざまな方法で分類できます。 たとえば、従業員であり、永続的なステータスを持つユーザーもいます。 一部のベンダー、請負業者、または一時的なステータスを持つパートナーがあります。 一部のユーザー は、ユーザー アカウントを持たず、対話とコラボレーションをサポートするために特定のサービスとリソースへのアクセスを許可する必要がある外部ユーザーです。 例:
 
 - テナント アカウントは、組織内でクラウド サービスのライセンスを付与したユーザーを表します。
 

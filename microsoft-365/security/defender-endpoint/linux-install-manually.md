@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 704e44a61a89e176433058bc62ed02ed96001ed28fda38354b85e1cbc977545d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea48f3e69630a61c8e3156ab156fb0365ff9c100
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806876"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356182"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux での Microsoft Defender for Endpoint の手動展開
 
@@ -74,28 +74,34 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
     ```bash
     sudo yum install yum-utils
     ```
+- 配布とバージョンに注意し、その下の最も近いエントリ (メジャー、マイナー) を識別します `https://packages.microsoft.com/rhel/` 。
 
-- 配布とバージョンに注意し、その下の最も近いエントリ (メジャー、マイナー) を識別します `https://packages.microsoft.com/config/` 。 たとえば、RHEL 7.9 は 8 よりも 7.4 に近いです。
+    次の表を使用して、パッケージを見つけるのに役立ちます。 
 
-    以下のコマンドで *、[distro]* と *[version]* を、特定した情報に置き換える必要があります。
+    |     Distro &バージョン    |     パッケージ    |
+    |---|---|
+    |     RHEL 8.0-8.5 の場合    |     https://packages.microsoft.com/rhel/8/prod/    |
+    |     RHEL 7.2-7.9 の場合    |     https://packages.microsoft.com/rhel/7/prod/    |
+
+    次のコマンドで *、[version] と* *[channel] を* 、特定した情報に置き換える必要があります。
 
     > [!NOTE]
     > Oracle Linux の場合 *、[distro] を "rhel"* に置き換える。
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/[version]/[channel].repo
     ```
 
     たとえば、CentOS 7 を実行し、Prod チャネルから Linux 上の Defender for Endpoint を展開する場合は、次の *コマンドを実行* します。
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/prod.repo
     ```
 
     または、選択したデバイス上の新機能を確認する場合は、Linux 上の Microsoft Defender for Endpoint を *insiders-fast チャネルに展開* できます。
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/insiders-fast.repo
     ```
 
 - Microsoft GPG 公開キーをインストールします。
@@ -112,18 +118,18 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
 
 ### <a name="sles-and-variants"></a>SLES とバリアント
 
-- 配布とバージョンをメモし、その下で最も近いエントリ (メジャー、マイナー) を識別します `https://packages.microsoft.com/config/` 。
+- 配布とバージョンをメモし、その下で最も近いエントリ (メジャー、マイナー) を識別します `https://packages.microsoft.com/sles/` 。
 
     次のコマンドで *、[distro]* と *[version]* を、特定した情報に置き換える必要があります。
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/[distro]/[version]/[channel].repo
     ```
 
     たとえば、SLES 12 を実行し、Prod チャネルから Linux 上の Microsoft Defender for Endpoint を展開する場合は、次の *コマンドを実行* します。
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
+    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/sles/12/prod.repo
     ```
 
 - Microsoft GPG 公開キーをインストールします。
@@ -146,18 +152,18 @@ Defender for Endpoint on Linux は、以下のいずれかのチャネル *([cha
     sudo apt-get install libplist-utils
     ```
 
-- 配布とバージョンに注意し、その下の最も近いエントリ (メジャー、マイナー) を識別します `https://packages.microsoft.com/config` 。
+- 配布とバージョンに注意し、その下の最も近いエントリ (メジャー、マイナー) を識別します `https://packages.microsoft.com/[distro]/` 。
 
     次のコマンドで *、[distro]* と *[version]* を、特定した情報に置き換える必要があります。
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
+    curl -o microsoft.list https://packages.microsoft.com/[distro]/[version]/[channel].list
     ```
 
-    たとえば、Ubuntu 18.04 を実行し *、Prod* チャネルから Linux 用 MDE を展開する場合は、次のようにします。
+    たとえば、Ubuntu 18.04 を実行し *、Prod* チャネルから Linux 上の Microsoft Defender for Endpoint を展開する場合は、次のようにします。
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
+    curl -o microsoft.list https://packages.microsoft.com/ubuntu/18.04/prod.list
     ```
 
 - リポジトリ構成をインストールします。
@@ -428,7 +434,7 @@ Options:
     sudo yum-config-manager --disable packages-microsoft-com-fast-prod
     ```
 
-1. "実稼働チャネル" を使用して Linux 用 MDE を再展開します。
+1. "実稼働チャネル" を使用して、Microsoft Defender for Endpoint on Linux を再展開します。
 
 ## <a name="uninstallation"></a>アンインストール
 

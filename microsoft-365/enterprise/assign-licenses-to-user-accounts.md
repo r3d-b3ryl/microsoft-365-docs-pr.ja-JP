@@ -1,7 +1,7 @@
 ---
 title: ユーザー アカウントMicrosoft 365ライセンスを割り当てる
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ユーザー アカウントにライセンスを割りMicrosoft 365個別に、またはグループ メンバーシップに基づいて割り当てる方法について説明します。
-ms.openlocfilehash: e2550f7532c332de3a6d2939a2249788aa04bf1122d00359f860bf8cae349b6f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2d2afe7b9989ef7b82920a45e3dacd574cd51b5c
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855217"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356936"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>ユーザー アカウントMicrosoft 365ライセンスを割り当てる
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 クラウド専用 ID モデルの場合、作成方法に応じて、Microsoft 365ライセンスを作成時にユーザー アカウントに割り当てできます。
 

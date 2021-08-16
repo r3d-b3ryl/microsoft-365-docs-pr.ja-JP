@@ -2,8 +2,8 @@
 title: デスクトップ展開センター
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/10/2020
 audience: ITPro
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 非推奨のデスクトップ展開センターと同等のリソースを取得する方法。
-ms.openlocfilehash: 4e71d80496ff700e9b662d7109383e04a8ef805045e1ac0085eb195b041b65fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b74072593b3345c2c0ffef495b117af47f1f88a3
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53849861"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356782"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>デスクトップ展開センター (非推奨)
 
@@ -33,7 +33,7 @@ ms.locfileid: "53849861"
 
 Microsoft Mechanics からデスクトップ展開 [シリーズのビデオを表示できます](https://www.aka.ms/watchhowtoshift)。
 
-デスクトップ展開のヘルプは、Microsoft パートナーと [FastTrack から確認できます](https://www.microsoft.com/fasttrack/microsoft-365)。
+また、Microsoft パートナーおよびマイクロソフト のパートナーからデスクトップの展開に関する[ヘルプFastTrack。](https://www.microsoft.com/fasttrack/microsoft-365)
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 

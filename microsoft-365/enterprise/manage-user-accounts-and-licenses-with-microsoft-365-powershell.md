@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/13/2020
 audience: ITPro
@@ -17,16 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: PowerShell を使用してユーザー Microsoft 365、ライセンス、およびグループを管理する方法について説明します。
-ms.openlocfilehash: c3ba0202da4281955ec8287b6b06be90937e851ce0b00b702655e7c5449177f3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 77aa0003186eb44ce201e0e4b332c2a119c72069
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835069"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356074"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Microsoft 365 ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365管理者は、ユーザー アカウント、ライセンス、およびグループを管理する必要があります。 これらのタスクのほとんどを PowerShell で実行Microsoft 365 管理センター PowerShell の方が簡単です。
 

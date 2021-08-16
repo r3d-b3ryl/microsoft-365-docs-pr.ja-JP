@@ -1,7 +1,7 @@
 ---
 title: 組織Microsoft 365 Enterpriseを展開する
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2019
 audience: ITPro
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: これらの概要手順は、ネットワークのセットアップ、ID の作成、id の展開、Microsoft 365 Apps移行を行うのに役立ちます。
-ms.openlocfilehash: ef984ba4e076ca6665dee6a75a456c2abc09c1a8cb1fb04933ab08a2a98c0d85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ce19d135b46bb848aecb557610bc1ed1703fc686
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898925"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355870"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>組織Microsoft 365 Enterpriseを展開する
 
@@ -34,9 +34,9 @@ ms.locfileid: "53898925"
 
 この記事では、2 つの展開オプションについて説明します。ヘルプを必要とするか、自分で実行するかについて説明します。 それぞれのケースで、Microsoft は展開の成功のために従うガイド付きパスを提供します。
 
-## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>FastTrack Microsoft 365 Enterpriseガイド付きセットアップ プロセス
+## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>ガイド付Microsoft 365 Enterpriseセットアップ プロセスとFastTrack
 
-**[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** は、サーバーを展開する場合に最適なMicrosoft 365。 FastTrack を使用すると、最も一般的な展開を構成する手順が表示され、質問に回答しながら構成できます。 
+**[FastTrackはMicrosoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** 展開に最適な方法Microsoft 365。 FastTrack を使用すると、最も一般的な展開を構成する手順が表示され、質問に回答しながら構成できます。 
 
 一連のセットアップ ガイドにアクセスするには、Microsoft 365サブスクリプションにサインインし、[セットアップ ガイダンス][に移動します](https://aka.ms/o365fasttrack)。
 

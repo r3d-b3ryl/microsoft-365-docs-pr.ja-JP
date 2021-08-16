@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 用 PowerShell の使用を開始する
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
@@ -17,16 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: '概要: powerShell for Microsoft 365、Microsoft 365 テナントに接続する方法、およびヘルプを取得する場所について説明します。'
-ms.openlocfilehash: 07d40ef94d72c3d12ff305d329c43d11859fd752b701c670282ce4fefe5cab08
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3f9bb352a198ba5491063ee4475611a49d21c31b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801064"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356722"
 ---
 # <a name="get-started-with-powershell-for-microsoft-365"></a>Microsoft 365 用 PowerShell の使用を開始する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 PowerShell のコマンドとスクリプトを使用して、Microsoft 365を管理Microsoft 365作業を効率化できます。 Microsoft 365 の管理に PowerShell for Microsoft 365 が重要である理由、Microsoft 365 サブスクリプションに接続してレポートを作成する方法、Microsoft 365 コミュニティから詳細な情報を取得する場所については、次の情報を参照してください。
   
@@ -48,7 +48,7 @@ PowerShell のコマンドとスクリプトを使用して、Microsoft 365を�
     
     まず、PowerShell for Microsoft 365モジュールをインストールし、オートメーション コマンドを使用してレポートをすばやく作成する方法について説明します。
     
-- [**Microsoft 365 サービスのコマンドレット リファレンス**](cmdlet-references-for-microsoft-365-services.md)
+- [**Microsoft 365 サービスのコマンドレットリファレンス**](cmdlet-references-for-microsoft-365-services.md)
     
     モジュールの PowerShell のコマンドレットについてMicrosoft 365します。
     
@@ -56,6 +56,6 @@ PowerShell のコマンドとスクリプトを使用して、Microsoft 365を�
     
     PowerShell コミュニティに接続し、PowerShell を使用して PowerShell を使用する方法の詳細については、こちらをMicrosoft 365。
     
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [PowerShell で Microsoft 365を管理する](manage-microsoft-365-with-microsoft-365-powershell.md)

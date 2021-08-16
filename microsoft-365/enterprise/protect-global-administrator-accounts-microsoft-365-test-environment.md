@@ -2,8 +2,8 @@
 title: エンタープライズ テスト環境用に、Microsoft 365管理者アカウントを保護する
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/12/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 次の手順を使用して、エンタープライズ テスト環境用にMicrosoft 365管理者アカウントを保護します。
-ms.openlocfilehash: 17aca0060501a4df3c694c4c7e4aa2aef98248d54b36d27ff3c99780648274b5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7d49e82fd53e5383a86bbcafcbf8d8c750195ab
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904733"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356350"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境用に、Microsoft 365管理者アカウントを保護する
 
@@ -56,7 +56,7 @@ ms.locfileid: "53904733"
 2. [ユーザー **の**  >  **アクティブなユーザー]** を選択し、[ユーザー **の追加] を選択します**。
 3. [ユーザーの **追加] ウィンドウ** で、[名]、[表示名]、および [ユーザー名] ボックスに **「DedicatedAdmin」****と** 入力します。
 4. [ **パスワード] を** 選択 **し、[パスワードを作成する**] を選択し、強力なパスワードを入力します。 この新しいアカウントのパスワードを安全な場所に記録します。
-5. **[次へ]** を選択します。
+5. [**次へ**] を選択します。
 6. [製品ライセンス **の割り当て**] ウィンドウで、[ライセンスの割 **り当て] Microsoft 365 E5** し、[次へ] を **選択します**。
 7. [オプションの **設定] ウィンドウで**、[役割管理センター **アクセス**  >  **グローバル** 管理者  >  **次へ] を**  >  **選択します**。
 8. [ほぼ **完了] ウィンドウで、[** 追加の完了] を選択し、[閉じる] を **選択します**。

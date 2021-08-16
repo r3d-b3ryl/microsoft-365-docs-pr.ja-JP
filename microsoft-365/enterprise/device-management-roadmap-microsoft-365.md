@@ -1,8 +1,8 @@
 ---
 title: Microsoft 365 のデバイス管理ロードマップ
 keywords: Microsoft 365、Microsoft 365、Microsoft 365、モバイル デバイス管理、Intune
-author: JoeDavies-MSFT
-ms.author: josephd
+author: kelleyvice-msft
+ms.author: kvice
 manager: laurawi
 ms.date: 08/10/2020
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: デバイス管理をセットアップするためのロードマップは、Microsoft 365。
-ms.openlocfilehash: 9efb9659c4c6dcfe20b8f52c1a451b3644dcc0023e4087723141d6574db082ea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2155d33aa57da5bb80dbc83623ac87a94a300f28
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819417"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356770"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 のデバイス管理ロードマップ
 

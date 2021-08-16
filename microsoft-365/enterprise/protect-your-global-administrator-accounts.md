@@ -1,7 +1,7 @@
 ---
 title: グローバル管理者Microsoft 365アカウントを保護する
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
@@ -22,16 +22,16 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: この記事では、サブスクリプションへのグローバル管理者アクセスの保護に関Microsoft 365します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 97ef59ff9b08ba9d763b18381b76a697de2e4338f28fbfb3799eba53d89e9c09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3a43c8b6ac5389be99581302c249e431853ba99b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904697"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355918"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>グローバル管理者Microsoft 365アカウントを保護する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 サブスクリプションのセキュリティ侵害 (情報の収集やフィッシング攻撃など) は、通常、Microsoft 365 グローバル管理者アカウントの資格情報を侵害することで行われます。 クラウドのセキュリティは、お客様と Microsoft のパートナーシップです。
   
@@ -48,7 +48,7 @@ Microsoft では、組織の保護に役立つ機能を提供していますが�
 > [!Note]
 > この記事ではグローバル管理者アカウントを中心に説明しますが、電子情報開示管理者やセキュリティ管理者アカウント、コンプライアンス管理者アカウントなど、サブスクリプション内のデータにアクセスするための広範なアクセス許可を持つ追加のアカウントを同じ方法で保護するかどうかを検討する必要があります。 <br > グローバル管理者アカウントは、ライセンスを追加せずに作成できます。
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1. グローバル管理者アカウントMicrosoft 365専用のアカウントを作成し、必要な場合にのみ使用する
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1。 グローバル管理者アカウントMicrosoft 365専用のアカウントを作成し、必要な場合にのみ使用する
 
 役割をユーザー アカウントに割り当てるなど、グローバル管理者特権を必要とする管理タスクは比較的少ない。 したがって、グローバル管理者の役割が割り当てられている日常のユーザー アカウントを使用する代わりに、次の手順を実行します。
   
@@ -91,7 +91,7 @@ Microsoft では、組織の保護に役立つ機能を提供していますが�
 > [!NOTE]
 > これには、日常のユーザー アカウントとしてサインアウトし、専用のグローバル管理者アカウントでサインインするための追加の手順が必要です。 ただし、これはグローバル管理者の操作に対して時折行う必要があります。 グローバル管理者アカウント侵害後にMicrosoft 365サブスクリプションを回復するには、さらに多くの手順が必要です。
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>手順 2. グローバル管理者アカウント専用の複数要素認証Microsoft 365構成する
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>手順 2。 グローバル管理者アカウント専用の複数要素認証Microsoft 365構成する
 
 多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Microsoft 365は、次の追加の検証方法をサポートしています。
   

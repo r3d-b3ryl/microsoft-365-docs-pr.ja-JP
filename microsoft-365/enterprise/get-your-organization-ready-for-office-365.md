@@ -1,7 +1,7 @@
 ---
 title: 計画を立Microsoft 365 Enterprise
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/12/2019
 audience: Admin
@@ -22,20 +22,20 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: この記事では、展開を計画するためのチェックリストと他のリソースMicrosoft 365 Enterpriseします。
-ms.openlocfilehash: fb3a62dd1751c51530bec1927e101c0dc5fd35bcf05ce8d7ac62d9fa5809909b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e914d5ea5f145197e348fd88fe7cf2b287a883f8
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870721"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356734"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>計画を立Microsoft 365 Enterprise
 
 エンタープライズ組織を組織を組織に移行Microsoft 365、IT 展開とユーザー導入を合理化する重要な設計上の決定を計画し、決定することが重要です。 
 
-## <a name="planning-with-microsoft-365-fasttrack"></a>FastTrack のMicrosoft 365計画
+## <a name="planning-with-microsoft-365-fasttrack"></a>計画とMicrosoft 365 FastTrack
 
-[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)は、Microsoft からユーザーの展開を計画するためのサポートを得るMicrosoft 365です。 FastTrack は、最も一般的な設計上の考慮事項を説明し、途中で質問に答えるのに役立ちます。 
+[FastTrackのMicrosoft 365](https://www.microsoft.com/fasttrack/microsoft-365)展開を計画するための Microsoft からのヘルプを取得するための最良のMicrosoft 365です。 FastTrack設計上の最も一般的な考慮事項を説明し、途中で質問に答えるのに役立ちます。 
 
 >[!Note]
 >Microsoft パートナーからヘルプを [受け取る方法も確認できます](https://www.microsoft.com/solution-providers/home)。

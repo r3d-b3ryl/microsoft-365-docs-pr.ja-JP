@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse 365 (クラウド PC) ページWindowsを参照してください。
-ms.openlocfilehash: 14ec611bc3c6238661acbc8389984783351a3161
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1ad05cf2cae824c0bab61635f05cbce13f6fcbd57dfcb904c0e53fd3b25e9ab0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255820"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53907196"
 ---
 # <a name="windows-365-cloud-pcs-page-overview"></a>Windows 365 (クラウド PC) ページの概要  
 

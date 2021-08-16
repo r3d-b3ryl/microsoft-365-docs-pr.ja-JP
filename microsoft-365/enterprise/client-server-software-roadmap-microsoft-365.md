@@ -2,8 +2,8 @@
 title: クライアントおよびサーバー ソフトウェアのロードマップ (Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/10/2020
 audience: ITPro
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: このロードマップを使用して、クライアントソフトウェアとサーバー ソフトウェアをセットアップMicrosoft 365。
-ms.openlocfilehash: 6fe2a271c8a6837bdd2dcf98f3aa5ca45f880ddd560b72979fb3e9a5b666caa0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 66d6483df4d1bec1ea0c935f7a0b936f2e0fddcf
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865006"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356134"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>クライアントおよびサーバー ソフトウェアのロードマップ (Microsoft 365
 
@@ -54,7 +54,7 @@ Office 2007 を実行しているコンピューターを Office 2010、Office 2
 
 1. ユーザーのライセンスを取得Microsoft 365割り当てる。
 2. コンピューター Office 2007 をアンインストールします。
-3. 個別Microsoft 365 Apps for enterpriseまたは IT ロールアウト中に、このファイルをインストールします。 詳細については、「展開ガイド[for Microsoft 365 Apps」 を参照してください](/deployoffice/deployment-guide-microsoft-365-apps)。
+3. 個別Microsoft 365 Apps for enterpriseまたは IT ロールアウト中に、このファイルをインストールします。 詳細については、「[Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
 
 Microsoft 365 Apps for enterprise更新プログラムが自動的にインストールされます。 クラウドベースのサービスを利用して、セキュリティと生産性を向上させることができます。
 
@@ -66,7 +66,7 @@ Microsoft 365 Apps for enterprise更新プログラムが自動的にインス�
 
 1. ユーザーのライセンスを取得Microsoft 365割り当てる。
 2. コンピューター Office 2010 をアンインストールします。
-3. 個別Microsoft 365 Apps for enterpriseまたは IT ロールアウト中に、このファイルをインストールします。 詳細については、「展開ガイド[for Microsoft 365 Apps」 を参照してください](/deployoffice/deployment-guide-microsoft-365-apps)。
+3. 個別Microsoft 365 Apps for enterpriseまたは IT ロールアウト中に、このファイルをインストールします。 詳細については、「[Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
 
 Microsoft 365 Apps for enterprise更新プログラムと新しい機能更新プログラムの両方が自動的にインストールされます。 クラウド ベースのサービスを利用して、セキュリティMicrosoft 365生産性を向上させることができます。
 
@@ -78,7 +78,7 @@ Office 2013 または Office 2016 の最新のセキュリティ更新プログ�
 
 1. ユーザーのライセンスを取得Microsoft 365割り当てる。
 2. コンピューター Office 2013 または Office 2016 をアンインストールします。
-3. 個別Microsoft 365 Apps for enterpriseまたは IT ロールアウト中に、このファイルをインストールします。 詳細については、「展開ガイド[for Microsoft 365 Apps」 を参照してください](/deployoffice/deployment-guide-microsoft-365-apps)。
+3. 個別Microsoft 365 Apps for enterpriseまたは IT ロールアウト中に、このファイルをインストールします。 詳細については、「[Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
 
 Microsoft 365 Apps for enterprise、セキュリティ更新プログラムと新機能更新プログラムの両方が自動的にインストールされます。 クラウド ベースのサービスを利用して、セキュリティMicrosoft 365生産性を向上させることができます。
 
@@ -123,7 +123,7 @@ Office 2010、Office 2013、または Office 2016 のリリースでは、Office
 
 Office 2013 または Office 2016 のリリースのサーバー製品を使用して、Office 2010 リリースでこれらのサーバー製品をアップグレードするのではなく、次の手順を実行してください。
 
-1. 2010 年 2010 年Officeにデータを移行Microsoft 365。 詳細については[、「FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) Microsoft パートナーを採用する」を参照してください。
+1. 2010 年 2010 年Officeにデータを移行Microsoft 365。 詳細については、「Microsoft パートナーの[FastTrack Microsoft 365」](https://fasttrack.microsoft.com/microsoft365)を参照してください。
 2. 新しい機能と作業プロセスをユーザーにロールアウトします。
 3. 2010 サーバー製品を実行しているオンプレミス サーバー Office場合は、使用を停止します。
 
@@ -131,7 +131,7 @@ Office 2013 または Office 2016 のリリースのサーバー製品を使用�
 
 2013 Officeリリースのサーバー製品では、サポートの終了は決定されていません。 Office 2016 リリースのサーバー製品を使用して Office 2013 リリースでサーバー製品をアップグレードするのではなく、次の手順を実行してください。
 
-1. 2013 年 2013 年Officeにデータを移行Microsoft 365。 詳細については[、「FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) Microsoft パートナーを採用する」を参照してください。
+1. 2013 年 2013 年Officeにデータを移行Microsoft 365。 詳細については、「Microsoft パートナーの[FastTrack Microsoft 365」](https://fasttrack.microsoft.com/microsoft365)を参照してください。
 2. 新しい機能と作業プロセスをユーザーにロールアウトします。
 3. 2013 サーバー製品を実行しているオンプレミス サーバー Office場合は、使用を停止します。
 
@@ -139,7 +139,7 @@ Office 2013 または Office 2016 のリリースのサーバー製品を使用�
 
 2016 年Officeリリースのサーバー製品では、サポートの終了は決定されていません。 クラウド ベースのサービスと拡張機能を活用してビジネスをデジタル変換するには、次の手順を検討してください。
 
-1. 2016 年 2016 年Officeサーバー上のデータを移行して、Microsoft 365。 詳細については[、「FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) Microsoft パートナーを採用する」を参照してください。
+1. 2016 年 2016 年Officeサーバー上のデータを移行して、Microsoft 365。 詳細については、「Microsoft パートナーの[FastTrack Microsoft 365」](https://fasttrack.microsoft.com/microsoft365)を参照してください。
 2. 新しい機能と作業プロセスをユーザーにロールアウトします。
 3. 2016 サーバー製品を実行しているオンプレミス サーバーが不要になった場合Office使用を停止します。
 

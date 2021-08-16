@@ -2,8 +2,8 @@
 title: Microsoft 365 の ID ロードマップ
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: ユーザーの ID に対するロードマップMicrosoft 365。
-ms.openlocfilehash: 555f0ceba66280f1142b0af492eb61acf37e34d5a4b8d1db6333e7da01ff968c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 520f80152bccfd9a01b812f08e7c75f6770a9bc4
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801019"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356710"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 の ID ロードマップ
 
@@ -41,14 +41,14 @@ ms.locfileid: "53801019"
 
 また、この [ポスターをダウンロードして](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) 、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
 
-## <a name="plan"></a>計画
+## <a name="plan"></a>プラン
 
 ID の実装を計画するには、次の方法を実行します。
 
 - [さまざまな ID モデルを理解する](about-microsoft-365-identity.md)
 - [ハイブリッド ID とディレクトリ同期を計画する](plan-for-directory-synchronization.md)
 
-## <a name="deploy"></a>展開
+## <a name="deploy"></a>展開する
 
 ID 実装を展開するには、次の方法を実行します。
 

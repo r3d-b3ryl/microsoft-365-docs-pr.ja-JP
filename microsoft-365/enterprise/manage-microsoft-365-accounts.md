@@ -1,7 +1,7 @@
 ---
 title: ユーザー Microsoft 365を管理する
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: ユーザー アカウントを管理するMicrosoft 365を確認します。
-ms.openlocfilehash: 8fd2b537c83fcbab5c33c282487f02cba72bed514e01d8ecc1261d0554793331
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2fb2fe71c73f99979b35e7ca9998302f387b9035
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858881"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356026"
 ---
 # <a name="manage-microsoft-365-user-accounts"></a>ユーザー Microsoft 365を管理する
 

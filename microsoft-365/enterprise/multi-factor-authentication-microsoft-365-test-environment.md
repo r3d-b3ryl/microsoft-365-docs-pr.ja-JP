@@ -2,8 +2,8 @@
 title: Microsoft 365テスト環境の多要素認証の機能
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/12/2019
 audience: ITPro
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: エンタープライズ テスト環境でスマートフォンに送信されるテキスト メッセージを使用して多要素Microsoft 365構成します。
-ms.openlocfilehash: 4f410b7e8a57a119ecce33626354639af89c0e65aea01b123d213908735dbb00
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 772fc5d5a05ca08f2fcb851f1e5399c1dd77828f
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813020"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356230"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境向けMicrosoft 365要素認証
 
@@ -80,7 +80,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
     
 2. [[ユーザー]](https://admin.microsoft.com) Microsoft 365 管理センターに移動し、User 2 アカウント名とパスワードを使用してサインインします。
     
-3. サインイン後、詳細については、アカウントのセットアップを求めるメッセージが表示されます。 **[次へ]** を選択します。
+3. サインイン後、詳細については、アカウントのセットアップを求めるメッセージが表示されます。 [**次へ**] を選択します。
     
 4. **[追加のセキュリティ確認]** ページで、次の手順を実行します。 
     
@@ -90,7 +90,7 @@ Microsoft 365 またはサブスクリプションに Azure AD テナントを�
     
    - [ **メソッド] で**、[ **テキスト メッセージでコードを送信する] を選択します**。
     
-5. **[次へ]** を選択します。
+5. [**次へ**] を選択します。
     
 6. スマートフォンで受信したテキスト メッセージから確認コードを入力し、[確認] を **選択します**。
     
