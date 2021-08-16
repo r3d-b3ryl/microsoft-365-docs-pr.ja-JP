@@ -16,12 +16,12 @@ ms.date: 01/06/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a847e65adb0402d4c5f98e19424677ccdc1011da
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 665d278e2e05bbe131abfd84f9628798d99253538e8fe4a79fa8f30603ee51bc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53903833"
 ---
 # <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を展開して有効にする
 
@@ -40,7 +40,7 @@ ms.locfileid: "52925745"
 
 このセクションの残りの記事では、VDI またはリモート デスクトップ サービス[(RDS)](deployment-vdi-microsoft-defender-antivirus.md)環境で仮想マシン (VM) で Microsoft Defender ウイルス対策 をセットアップするためのエンド to エンドのアドバイスとベスト プラクティスについて説明します。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [更新プログラムの展開、管理、およびレポートの作成Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)

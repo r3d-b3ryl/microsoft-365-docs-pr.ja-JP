@@ -1,6 +1,6 @@
 ---
 title: 手順 3. 最初のインシデントのインシデント後レビューを実行する
-description: Defender で最初のインシデントのレビューを実行Microsoft 365します。
+description: 最初のインシデントのレビューを実行する方法については、Microsoft 365 Defender。
 keywords: インシデント、アラート、調査、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6b5311a2923d7b299ba4f70ef3c2e8d91809e7c8
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 7098da4150b95b2567f068d83afa431ad3a71ca3b4ff996e5f0a2b7588f0c256
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873477"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>手順 3. 最初のインシデントのインシデント後レビューを実行する
 
@@ -38,7 +38,7 @@ ms.locfileid: "52651370"
 
 国立標準技術研究所 (NIST) は、攻撃から回復するためにすべての手順が実行された後、組織はインシデントを確認して、そこから学び、セキュリティの態勢またはプロセスを改善する必要があります。 インシデント処理のさまざまな側面を評価することが、次のインシデントの準備において重要になります。
 
-Microsoft 365Defender は[、MITRE ATT](https://attack.mitre.org/)および CK Framework に合ったアラートを組織に提供することで、インシデント発生後の&支援できます。 すべての Microsoft Defender ソリューションは、CK の戦術または手法に基&攻撃をラベル付けします。 
+Microsoft 365 Defender [MITRE ATT](https://attack.mitre.org/)および CK Framework に合ったアラートを組織に提供することで、インシデント後のアクティビティの実行&できます。 すべての Microsoft Defender ソリューションは、CK の戦術または手法に基&攻撃をラベル付けします。 
 
 この業界フレームワークにアラートをマッピングすると、次の機能を使用できます。
 

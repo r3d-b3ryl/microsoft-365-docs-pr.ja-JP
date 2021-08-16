@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e328a2d832cc903cc865bce8e7b4ad658f47a6f7
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e2d2addf5195f52eac94c22453e8cef08a4c6cc18bd3a21b6178bca527cc8038
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656681"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894191"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint の展開をセットアップする
 
@@ -173,7 +173,7 @@ v20 を含む URL は、バージョン 1803 以降のデバイスWindows 10場�
 
 ****
 
-|ドメインリストのスプレッドシート|説明|
+|ドメインリストのスプレッドシート|Description|
 |---|---|
 |![Microsoft Defender for Endpoint URL スプレッドシートのサム イメージ](images/mdatp-urls.png)|サービスの場所、地理的な場所、および OS の特定の DNS レコードのスプレッドシート。 <p> [ここにスプレッドシートをダウンロードします。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |

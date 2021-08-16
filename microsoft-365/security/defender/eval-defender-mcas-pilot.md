@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a4aeb40e7386ae3648a392b6869551c3f16c2514b459ab1abf11c8ae6ceee46b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 255aa361badf79e3ea4e4b0fe208ea22bb7a26db
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862858"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58249368"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>パイロット Microsoft Cloud App SecurityとMicrosoft 365 Defender
 
@@ -46,12 +46,12 @@ ms.locfileid: "53862858"
 - [手順 3.機能を試す - 環境を保護するためのチュートリアルの詳細](#step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment) 
 
 
-## <a name="step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups"></a>手順 1. パイロット グループの作成 - パイロット展開を特定のユーザー グループにスコープ設定する
+## <a name="step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups"></a>手順 1。 パイロット グループの作成 - パイロット展開を特定のユーザー グループにスコープ設定する
 
 Microsoft Cloud App Securityを使用すると、展開の範囲を指定できます。 スコープを使用すると、アプリの監視対象または監視から除外する特定のユーザー グループを選択できます。 ユーザー グループを含めるか除外できます。 パイロット展開の範囲を設定するには [、「Scoped Deployment」を参照してください](/cloud-app-security/scoped-deployment)。
 
 
-## <a name="step-2-configure-protection--conditional-access-app-control"></a>手順 2. 保護の構成 - 条件付きアクセス アプリ制御
+## <a name="step-2-configure-protection--conditional-access-app-control"></a>手順 2。 保護の構成 - 条件付きアクセス アプリ制御
 
 構成できる最も強力な保護の 1 つは、条件付きアクセス アプリ制御です。 これには、Azure Active Directory (Azure AD) との統合が必要です。 これにより、関連するポリシー (正常なデバイスの要求など) を含む条件付きアクセス ポリシーを、承認したクラウド アプリに適用できます。 
 

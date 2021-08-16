@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 E5 または Microsoft Defender for Office 365 プラン 2 組織の攻撃シミュレーションとトレーニングに関する展開に関する考慮事項とよく寄せられる質問について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 12d00fee09ca21245812917fb00cff89c322e4112df970b25f853032344f6faf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873407"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
 
@@ -51,7 +51,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>ネットワーク プロキシ ソリューションとフィルター ドライバーによってブロックされるフィッシング シミュレーションと管理 URL
 
-フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 以下に例を示します。
+フィッシング シミュレーション URL と管理 URL の両方が、中間セキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 次に例を示します。
 
 - ファイアウォール
 - Web アプリケーション ファイアウォール (WAF) ソリューション
@@ -69,7 +69,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 シミュレーション電子メール メッセージを実際に受信するユーザーの数が、シミュレーションの対象となったユーザーの数よりも少ない可能性があります。 次の種類のユーザーは、ターゲットの検証の一部として除外されます。
 
 - 受信者の電子メール アドレスが無効です。
-- ゲスト ユーザー。
+- ゲストユーザー
 - 現在アクティブでなくなったユーザー (Azure Azure Active Directory) AD。
 
 有効なメールボックスを持つゲスト以外のユーザーだけがシミュレーションに含まれます。 配布グループまたはメールが有効なセキュリティ グループを使用してユーザーを対象とする場合は[、Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)の[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember)コマンドレットを使用して配布グループメンバーを表示および検証できます。
@@ -118,7 +118,7 @@ URL レピュテーション サービスは、攻撃シミュレーション �
 
 ### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>ユーザーがフィッシングとして報告したメッセージがシミュレーション レポートに表示されない
 
-攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 以下に例を示します。
+攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザーのアクティビティに関する詳細を提供します。 次に例を示します。
 
 - メッセージ内のリンクをクリックしたユーザー。
 - 資格情報を渡したユーザー。
@@ -172,7 +172,7 @@ A: はい、可能です。 ウィザードの最後 **の [シミュレーシ�
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>Q: 同じシミュレーション キャンペーンの一環として、別のテナントに属するユーザーをターゲットにできますか?
 
-A: いいえ。 現在、テナント間シミュレーションはサポートされていません。 すべての対象ユーザーが同じテナントに入っていることを確認します。 テナント間のユーザーまたはゲスト ユーザーは、シミュレーション キャンペーンから除外されます。
+回答: いいえ。 現在、テナント間シミュレーションはサポートされていません。 すべての対象ユーザーが同じテナントに入っていることを確認します。 テナント間のユーザーまたはゲスト ユーザーは、シミュレーション キャンペーンから除外されます。
 
 ### <a name="q-how-does-region-aware-delivery-work"></a>Q: 地域対応配信の動作について
 

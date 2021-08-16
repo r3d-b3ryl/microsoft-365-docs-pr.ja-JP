@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 2fe7bf71d4db9854f03a56ed75a3b9a670602197
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: ef2742f57f44b9fb15aa0720f359ae4aeb872741
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567574"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248040"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -73,7 +73,7 @@ ms.locfileid: "53567574"
 - TeamsとYammerのメッセージ： **SubstrateHolds** という名前の隠しフォルダーに Exchange **回復可能アイテム** フォルダー内のサブフォルダーとして保存されます。
 
 > [!NOTE]
-> アイテム保管ライブラリは、サイトのストレージ クォータから除外されていないストレージを消費します。 SharePoint グループや Microsoft 365 グループに対して保持設定を使用する場合は、ストレージを増やすことが必要な場合があります。
+> アイテム保管ライブラリはサイトのストレージ クォータに含まれているため、SharePoint および Microsoft 365 グループの保持設定を使用する場合は、ストレージを増やすことが必要な場合があります。
 > 
 セキュリティで保護されているこれらの場所や保持されているコンテンツは、ほとんどのユーザーには表示されません。 ほとんどの場合、ユーザーは自分が作業しているコンテンツが保持設定の対象であることを知る必要さえありません。
 
@@ -248,7 +248,7 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
 |機能|アイテム保持ポリシー |保持ラベル|
 |:-----|:-----|:-----|:-----|
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
-|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
+|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> 不要 <br /> 不要 <br /> いいえ |
 |保持の自動適用 | はい | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリとキーワード、トレーニング可能な分類子| いいえ | はい |
 |保持の手動適用 | いいえ | はい |
@@ -260,7 +260,7 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
 |廃棄の証明 (最大 7 年間) | いいえ |はい、処分レビューを使用するか、アイテムがレコードとしてマークされている場合|
 |管理者アクティビティを監査する| はい | はい|
 |保持アクションの監査| いいえ | はい <sup>\*</sup> |
-|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> いいえ | <br /> はい <br /> はい|
+|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> 不要 | <br /> はい <br /> はい|
 
 **脚注:**
 
@@ -493,11 +493,17 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
 
 情報ガバナンスを目的として、Microsoft 365 のコンテンツをプロアクティブに保持または削除する必要がある場合は、次に示す以前の機能の代わりにアイテム保持ポリシーと保持ラベルを使用することをお勧めします。
 
-これらの以前の機能を現在使用している場合、それらもアイテム保持ポリシーおよび保持ラベルと並行して機能し続けます。 ただし、今後はアイテム保持ポリシーと保持ラベルを使用することをお勧めします。 それらは、Microsoft 365 全体でコンテンツの保持と削除の両方を集中管理する単一のメカニズムを提供します。
+これらの以前の機能を現在使用している場合、それらも Microsoft 365 のアイテム保持ポリシーおよび保持ラベルと並行して機能し続けます。 ただし、今後は、Microsoft 365 のアイテム保持ポリシーと保持ラベルを使用して、Microsoft 365 の複数のワークロードにわたるコンテンツの保持と削除の両方を管理する単一のソリューションを活用することをお勧めします。
 
 **Exchange Online の古い機能:**
 
 - [メッセージング レコード管理 (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) とも呼ばれる、[保持タグおよびアイテム保持ポリシー](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) (削除のみ)
+    
+    ただし、次の MRM 機能を使用する場合は、現在 Microsoft 365 のアイテム保持ポリシーでサポートされていないことに注意してください。
+    
+    - 指定された期間が経過すると、ユーザーのプライマリ メールボックスからアーカイブ メールボックスにメールを自動的に移動する[アーカイブ メールボックス](enable-archive-mailboxes.md)のアーカイブ ポリシー。 アーカイブ ポリシー (任意の設定) は、ユーザーのプライマリ メールボックスとアーカイブ メールボックスに適用される Microsoft 365 のアイテム保持ポリシーと組み合わせて使用できます。
+    
+    - 管理者がメールボックス内の特定のフォルダーに適用するアイテム保持ポリシー。 Microsoft 365 のアイテム保持ポリシーは、メールボックス内のすべてのフォルダーに適用されます。 ただし、管理者は、ユーザーが Outlook のフォルダーに[既定の保持ラベル](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)として適用できる保持ラベルを使用して、さまざまな保持設定を構成できます。
 
 **SharePoint と OneDrive の古い機能:**
 
@@ -505,7 +511,7 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
     
 - [インプレース レコード管理の構成](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (保持のみ) 
     
-- [サイトのクローズと削除のポリシーを使用する](https://support.microsoft.com/ja-JP/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (削除のみ)
+- [サイトのクローズと削除のポリシーを使用する](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (削除のみ)
     
 - [情報管理ポリシー](intro-to-info-mgmt-policies.md) (削除のみ)
      

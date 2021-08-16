@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ba4c4dbb2b5b8315fb09023b9fa0c0e29c4fd1c3b3f95da0328522a7d839ffc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d309f8851720578dfdd321efff862f15afd9bca8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884261"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250550"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Web 脅威から組織を保護する
 
@@ -50,7 +50,32 @@ Web 保護は、ネットワーク保護を使用して、ブラウザーおよ�
 > [!NOTE]
 > ネットワーク保護を [監査のみ] **に設定すると**、ブロックは使用できません。 また、悪意のある Web サイトや望ましくない Web サイトにアクセスしようとする試みを検出してログに記録できるのは、Microsoft Edgeのみです。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="configure-web-threat-protection"></a>Web 脅威保護の構成
+
+次の手順では、管理者センターを使用して Web 脅威保護を構成Microsoft エンドポイント マネージャー説明します。
+
+1. 管理センター ( ) Microsoft エンドポイント マネージャーに [https://endpoint.microsoft.com](https://endpoint.microsoft.com) 移動し、サインインします。
+ 
+2. [**エンドポイント セキュリティ攻撃**  >  **の表面縮小] を** 選択し、[+**ポリシーの作成] を選択します**。
+
+3. プラットフォームを選択します(Windows 10 **など)、Web** 保護プロファイルを選択し、[**作成**] を **選択します**。 
+
+4. [基本] **タブで** 、名前と説明を指定し、[次へ] を **選択します**。
+
+5. [構成設定 **] タブで****、[Web Protection] を展開** し、設定を指定し、[次へ] を **選択します**。
+
+   - [ネットワーク **保護を有効にする]** **を [有効] に設定** して、Web 保護を有効にします。 または、ネットワーク保護を監査モード **に設定** して、環境での動作を確認することもできます。 監査モードでは、ネットワーク保護によってユーザーがサイトやドメインにアクセスできませんが、検出はイベントとして追跡されます。 
+   - 潜在的なフィッシング詐欺や悪意のあるソフトウェアからユーザーを保護するには、[ユーザーに SmartScreen を要求する] を **[はいMicrosoft Edge 従来版** する] を **オンにします**。
+   - 悪意のある可能性のあるサイトに関する警告をユーザーがバイパスするのを防ぐには、[悪意のあるサイトへのアクセスをブロックする] を [は **い** ] に **設定します**。
+   - ユーザーが警告をバイパスして未確認のファイルをダウンロードできない場合は、[未確認ファイルのダウンロードをブロック **する]** を [はい] に設定 **します**。 
+
+6. [スコープ **タグ] タブ** で、組織でスコープ タグを使用している場合は、[+ スコープ タグの選択] を選択し、[次へ] を **選択します**。 (スコープ タグを使用していない場合は、[次へ] を **選択** します。スコープ タグの詳細については [、「Use role-based access control (RBAC)](/mem/intune/fundamentals/scope-tags)and scope tags for distributed IT」を参照してください。
+
+7. [割 **り当て] タブ** で、Web 保護ポリシーを受信するユーザーとデバイスを指定し、[次へ] を **選択します**。
+
+8. [確認 **と作成] タブで** 、ポリシー設定を確認し、[作成] を **選択します**。
+
+## <a name="related-topics"></a>関連項目
 
 - [Web 保護の概要](web-protection-overview.md)
 - [Web の脅威に対する保護](web-threat-protection.md)

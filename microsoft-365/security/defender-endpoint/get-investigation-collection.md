@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7d4f8843d3625851fe6d40dfb28c3ff56a70e82e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 20c5e392f80a497d58f9f50d6e72996b87741f469bf78994a11c9db50511f987
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857581"
 ---
 # <a name="list-investigations-api"></a>リスト調査 API
 

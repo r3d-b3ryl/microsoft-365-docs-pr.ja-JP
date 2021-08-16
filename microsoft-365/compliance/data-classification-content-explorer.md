@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: c66bfd02c83e8d6d7f63c4f80db5f32a7c376dfa3ce52516e5681a86bbbb5c4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fbe99e07a9fa881656df15e2be1d673f87bc523
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886385"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58251907"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -57,6 +57,9 @@ ms.locfileid: "53886385"
 > [!IMPORTANT]
 > これらの役割グループのメンバーシップでは、コンテンツ エクスプローラーでアイテムの一覧を表示したり、コンテンツ エクスプローラーでアイテムの内容を表示したりすることができません。
 
+> [!IMPORTANT]
+> グローバル管理者のみが、コンプライアンス センターで他のユーザーに対してアクセス許可を管理または割り当てることができます。 詳細については、｢[セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+> 
 ### <a name="required-permissions-to-access-items-in-content-explorer"></a>コンテンツ エクスプローラーでアイテムにアクセスするために必要なアクセス許可
 
 コンテンツ エクスプローラーへのアクセスは、スキャンしたファイルのコンテンツを読み取ることができるため、厳しく制限されています。

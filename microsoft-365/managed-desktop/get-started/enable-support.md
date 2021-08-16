@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: e0dac3752d28d1e8888ba16e28cfc9e3cd012130
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 6645f8f5822ba01960ebb6bf619e19c1bdb0ce347faa1ca4a9882c001e50668b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362784"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869821"
 ---
 # <a name="enable-user-support-features"></a>ユーザー サポート機能を有効にする
 

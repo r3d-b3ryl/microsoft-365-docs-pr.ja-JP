@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: edce65314062f731673926195be791f77d1cb823
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 684585d38bd66e5a62df82e9c757a80775f4403e42d4f28c929d1f6e3fe3852f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952550"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873372"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>ID およびデバイス アクセス ポリシーを実装するための前提条件作業
 
@@ -116,7 +116,7 @@ BYOD デバイスWindows、ユーザーは [仕事または学校の **アカウ
 
 ## <a name="protecting-administrator-accounts"></a>管理者アカウントの保護
 
-ユーザー Microsoft 365 E3 E5 または個別の Azure AD プレミアム P1 または P2 ライセンスの場合は、手動で作成された条件付きアクセス ポリシーを使用して管理者アカウントに MFA を要求できます。 詳細 [については、「条件付きアクセス: 管理者に MFA を要求する」](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) を参照してください。
+ユーザー Microsoft 365 E3 E5 または個別の Azure AD Premium P1または P2 ライセンスを使用する場合は、手動で作成された条件付きアクセス ポリシーを使用して管理者アカウントに MFA を要求できます。 詳細 [については、「条件付きアクセス: 管理者に MFA を要求する」](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) を参照してください。
 
 条件付きアクセスをMicrosoft 365またはOffice 365のエディションでは、セキュリティの既定値を有効にして、すべてのアカウントに[](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)MFA を要求できます。
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 41a2c73ce5e1c3060d88572f4fa7afe63e193f46
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 16599fc3941c2e3e86600ee5f45b3ea2eb43c6924259468c00edfdc773577338
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299990"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873552"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>フィッシングメール攻撃の例
 
@@ -36,13 +36,13 @@ ms.locfileid: "52299990"
 **適用対象:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender は、電子メールを介して配信される悪意のある添付ファイルを検出するのに役立ちます。 Office [365](https://protection.office.com/) セキュリティ/コンプライアンス センターは Microsoft 365 Defender と統合されています。セキュリティ アナリストは、Office 365 からの脅威 (電子メールの添付ファイルなど) を可視化できます。
+Microsoft 365 Defenderメール経由で配信される悪意のある添付ファイルを検出するのに役立ちます。 [Office 365](https://protection.office.com/)セキュリティとコンプライアンス センターは Microsoft 365 Defender と統合されていますので、セキュリティ アナリストは電子メールの添付ファイルなど、Office 365 から入ってくる脅威を可視化できます。
 
 たとえば、アナリストに複数ステージのインシデントが割り当てられたとします。
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="複数ステージインシデントの例"::: 
 
-インシデントの **[アラート** ] タブに、Defender から 365 Office Microsoft Cloud App Security のアラートが表示されます。 アナリストは、電子メール メッセージの通知を選択Office 365 アラートの Defender にドリルダウンできます。 アラートの詳細がサイド ウィンドウに表示されます。
+インシデントの **[アラート**] タブに、Defender からのアラートが表示Office 365、Microsoft Cloud App Security表示されます。 アナリストは、電子メール メッセージ通知を選択して、Office 365の Defender にドリルダウンできます。 アラートの詳細がサイド ウィンドウに表示されます。
 
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="電子メールアラートの例":::
  
@@ -54,7 +54,7 @@ Microsoft 365 Defender は、電子メールを介して配信される悪意の
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="アラートの詳細の例"::: 
 
-これにより、アナリストが [脅威の管理] ページに移動し、電子メールの件名、受信者、送信者、その他の情報が表示されます。 **[特別な** アクション **] の下の** ZAP は、ゼロ時間自動削除機能が実装されたとアナリストに指示します。 ZAP は、組織全体のメールボックスから悪意のあるメッセージやスパム メッセージを自動的に検出して削除します。 詳細については [、「Exchange Online のゼロ時間自動削除 (ZAP)」を参照してください](../office-365-security/zero-hour-auto-purge.md)。
+これにより、アナリストが [脅威の管理] ページに移動し、電子メールの件名、受信者、送信者、その他の情報が表示されます。 **[特別な** アクション **] の下の** ZAP は、ゼロ時間自動削除機能が実装されたとアナリストに指示します。 ZAP は、組織全体のメールボックスから悪意のあるメッセージやスパム メッセージを自動的に検出して削除します。 詳細については、「ゼロ時間自動削除[(ZAP)」を参照Exchange Online。](../office-365-security/zero-hour-auto-purge.md)
 
 [アクション] を選択すると、特定のメッセージに対して他のアクションを **実行できます**。 
  

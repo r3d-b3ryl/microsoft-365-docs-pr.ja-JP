@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0a73e8269f4be23d97ead5a2befb677706c7486a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4f1c9ee4c5a4581bf9af73a9474574b31c253ca9f00488c7a7168f687c42f538
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656705"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53903763"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Id で 1 つの修復アクティビティを取得する
 
@@ -73,7 +73,7 @@ dueOn|DateTime|この修復アクティビティの作成者セットの期限|2
 fixedDevices||固定されているデバイスの数|2
 id|String|この修復アクティビティの ID|097d9735-5479-4899-b1b7-77398899df92
 nameId|String|関連する製品名|Microsoft Silverlight
-priority|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)|高い
+priority|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)|高
 productId|String|関連する製品 ID|microsoft-_-silverlight
 productivityImpactRemediationType|String|いくつかの構成変更は、ユーザーに影響がないデバイスに対してだけ要求できます。 この値は、「すべての公開デバイス」または「ユーザーに影響を与えないデバイスのみ」の選択を示します。|AllExposedAssets
 rbacGroupNames|String|関連するデバイス グループ名|[ "Windows サーバー", "Windows 10" ]

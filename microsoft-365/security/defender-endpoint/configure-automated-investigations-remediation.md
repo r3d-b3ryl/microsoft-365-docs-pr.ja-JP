@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 2415bace353e3ee5596117e37eb860c7a206c96b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4c1e3671e68d291d2f9a78f3d25a94abb82269059c8c220d9117048f0481f1cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869675"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で自動調査および修復機能を構成する
 
@@ -60,7 +60,7 @@ ms.locfileid: "53656945"
    - [ユーザー **アクセス] タブ** で [](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)、Azure Active Directoryするデバイス グループにアクセスする必要があるグループを選択します。
 4. デバイス **グループの** 設定が完了したら、[完了] を選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [アクション センターにアクセスして、保留中の修復アクションと完了済み修復アクションを表示する](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
 - [保留中のアクションの確認と承認](/microsoft-365/security/defender-endpoint/manage-auto-investigation)

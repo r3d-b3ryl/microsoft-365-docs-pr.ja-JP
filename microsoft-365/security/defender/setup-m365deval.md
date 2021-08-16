@@ -1,6 +1,6 @@
 ---
 title: 試用版ラボまたはMicrosoft 365 Defender環境をセットアップする
-description: セキュリティ Microsoft 365にアクセスし、試用版ラボ環境Microsoft 365 Defenderセットアップする
+description: ポータルMicrosoft 365 Defenderアクセスし、試用版ラボ環境Microsoft 365 Defenderセットアップする
 keywords: Microsoft 365 Defenderセットアップ、パイロットMicrosoft 365 Defender、評価ラボのMicrosoft 365 Defender、Microsoft 365 Defender試す
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6db3003aa6465df90a3d2e4af55b28ccccf44100
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 30edfb5a40c62f56da1a431f34c6ddd80f12799e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454735"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58252100"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>ラボ環境でMicrosoft 365 Defender試用版をセットアップする 
 
@@ -71,7 +71,7 @@ ms.locfileid: "53454735"
 
    ![[Go setup] Office 365 E5をクリックするように求める試用版登録セットアップ ページのイメージ](../../media/mtp-eval-15.png)
 
-8. ConnectドメインをテナントにOffice 365します。 [省略可能]**[Connect所有しているドメインを選択し、** ドメイン名を入力します。 **[次へ]** をクリックします。
+8. ConnectドメインをテナントにOffice 365します。 [省略可能]**[Connect所有しているドメインを選択し、** ドメイン名を入力します。 [**次へ**] をクリックします。
 
    ![サインインとメールOfficeカスタマイズする必要がある 365 E5 セットアップ ページの画像](../../media/mtp-eval-16.png)
  
@@ -126,7 +126,7 @@ ms.locfileid: "53454735"
 
    ![Image of_Microsoft 365 E5 無料試用版ページを開始するには、[今すぐ試す] ボタンを起動する必要があります。](../../media/mtp-eval-27.png)
  
-6. [センター ユーザー]**の [Microsoft 365 管理アクティブ**  >  **ユーザー]**  >  **に移動します**。 ユーザー アカウントを選択し、[製品ライセンス **の管理]** を選択し、ライセンスを [ライセンス] から [Office 365 E5 Microsoft 365 E5。  **[保存]** をクリックします。
+6. [センター ユーザー]**の [Microsoft 365 管理アクティブ**  >  **ユーザー]**  >  **に移動します**。 ユーザー アカウントを選択し、[製品ライセンス **の管理]** を選択し、ライセンスを [ライセンス] から [Office 365 E5 Microsoft 365 E5。  [**保存**] をクリックします。
 
    ![イメージ of_Microsoft 365 管理センター ページで、ライセンスを選択Microsoft 365 E5できます。](../../media/mtp-eval-28.png)
  

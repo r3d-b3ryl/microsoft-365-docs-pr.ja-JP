@@ -1,7 +1,7 @@
 ---
 title: Microsoft Secure Score の新機能
-description: セキュリティ センターの Microsoft Secure Score に加えた新しい変更Microsoft 365説明します。
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
+description: Microsoft Secure Score に対して行った新しい変更について説明します。Microsoft 365 Defenderします。
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender ポータル
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: c0abdd26456fe9c7d2ee6111f8c15805af3f66b7738b42ee79fb1a230e08239d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ff06a12d6d0639b00091a93b9ba7162d7cb6264
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884141"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58249059"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 
@@ -34,7 +34,7 @@ ms.locfileid: "53884141"
 
 Microsoft Secure Score をセキュリティの姿勢をより良くするために、いくつかの変更を加えた。 今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
 
-Microsoft Secure Score は、セキュリティ https://security.microsoft.com/securescore センターのMicrosoft 365[にあります](overview-security-center.md)。
+Microsoft Secure Score は、ポータルの https://security.microsoft.com/securescore Microsoft 365 Defender[で確認できます](overview-security-center.md)。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
@@ -83,7 +83,7 @@ Microsoft Secure Score は、セキュリティ https://security.microsoft.com/s
 
 ### <a name="compatibility-with-graph-api"></a>API とのGraph互換性
 
-Microsoft Secure Score の推奨事項は、Graph API を介して配信され、セキュリティ センターで現在表示されている推奨事項と同じようにMicrosoft 365されます。
+Graph API を介して配信される Microsoft Secure Score の推奨事項は、Microsoft 365 Defender ポータルで現在参照されている推奨事項と同じように表示され、重み付Microsoft 365 Defenderされます。
 
 ## <a name="january-2021"></a>2021 年 1 月
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9361e791eafad1a3d7243a0d11821c9286c5e3bebf64f878af1e72cda6bfa952
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65486a046967ef3a3961220af0c9077a7d3fbd94
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829113"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253417"
 ---
 # <a name="recommendation-resource-type"></a>おすすめリソースの種類
 
@@ -40,11 +40,11 @@ ms.locfileid: "53829113"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="methods"></a>メソッド
-メソッド |戻り値の型 |Description
+メソッド |戻り値の型 |説明
 :---|:---|:---
 [すべての推奨事項を一覧表示する](get-all-recommendations.md) | おすすめコレクション | 組織に影響を与えるすべてのセキュリティ推奨事項の一覧を取得します。
 [ID による推奨事項の取得](get-recommendation-by-id.md) | 推奨事項 | セキュリティの推奨事項を ID で取得します。
-[おすすめソフトウェアを取得する](get-recommendation-software.md)| [ソフトウェア](software.md) | 特定のソフトウェアに関連するセキュリティ推奨事項を取得します。
+[おすすめソフトウェアを取得する](list-recommendation-software.md)| [ソフトウェア](software.md) | 特定のソフトウェアに関連するセキュリティ推奨事項を取得します。
 [おすすめデバイスを取得する](get-recommendation-machines.md)|MachineRef コレクション | セキュリティ推奨事項に関連付けられているデバイスの一覧を取得します。
 [推奨事項の脆弱性を取得する](get-recommendation-vulnerabilities.md) | [脆弱性の](vulnerability.md) コレクション | セキュリティ推奨事項に関連付けられている脆弱性の一覧を取得します。
 
@@ -61,9 +61,9 @@ recommendedVersion | String | 推奨バージョン
 recommendationCategory | String | おすすめカテゴリ。 使用できる値は、"Accounts"、"Application"、"Network"、"OS"、"SecurityStack" です。
 subCategory | String | おすすめサブカテゴリ
 severityScore | Double | 組織の Microsoft Secure Score for Devices に対する構成の潜在的な影響 (1-10)
-publicExploit | Boolean | パブリックエクスプロイトが利用可能 
-activeAlert | Boolean | アクティブなアラートは、この推奨事項に関連付けられている
-associatedThreats | String コレクション | 脅威分析レポートは、この推奨事項に関連付けられている
+publicExploit | ブール値 | パブリックエクスプロイトが利用可能 
+activeAlert | ブール値 | アクティブなアラートは、この推奨事項に関連付けられている
+associatedThreats | String collection | 脅威分析レポートは、この推奨事項に関連付けられている
 remediationType | String | 修復の種類。 指定できる値は、"ConfigurationChange"、"Update"、"Upgrade"、"Uninstall" です。
 状態 | 列挙 | 推奨事項の例外の状態。 指定できる値は、"Active" と "Exception" です。
 configScoreImpact | Double | デバイスの Microsoft Secure Score の影響

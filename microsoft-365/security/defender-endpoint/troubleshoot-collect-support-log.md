@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 69c6bb7a054841cdb7ee7feded55d8f27b3fb93c9e411c3c69853e49141723ed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 518194e3cbf185da415104991e1d7186f5912953
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839211"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250571"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>ライブ応答を使用して Microsoft Defender for Endpoint のサポート ログを収集する
 
@@ -81,3 +81,13 @@ ms.locfileid: "53839211"
 >   ```
 >
 > - コンピューターが Microsoft Defender for Endpoint クラウド サービスと通信していない場合、または Microsoft Defender for Endpoint ポータルに予期した通り表示されない場合に、コンピューターでローカルにデータを収集する方法の詳細については、「Verify client [connectivity to Microsoft Defender for Endpoint](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)service URL」を参照してください。
+
+
+## <a name="see-also"></a>関連項目
+- [クライアント アナライザーの概要](overview-client-analyzer.md)
+- [クライアント アナライザーをダウンロードして実行する](download-client-analyzer.md)
+- [クライアント アナライザーをコンピューターで実行Windows](run-analyzer-windows.md)
+- [macOS または Linux でクライアント アナライザーを実行する](run-analyzer-macos-linux.md)
+- [詳細なトラブルシューティングを行うデータのWindows](data-collection-analyzer.md)
+- [アナライザー HTML レポートについて](analyzer-report.md)
+

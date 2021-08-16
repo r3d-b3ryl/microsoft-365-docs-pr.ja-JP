@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4d793d49d669510b722a72160ae396ee73ab9699
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: f504ac86dcef68bf4427819babea119b2418512bee59e169ffd72e51a6dd92dd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028513"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873465"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>グループ内のインシデントに優先順位をMicrosoft 365 Defender
 
@@ -67,10 +67,10 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 
 次の表に、使用可能なフィルター名を示します。
 
-| フィルター名 | 説明 |
+| フィルター名 | Description |
 |:-------|:-----|
 | 割り当て先 | 自分に割り当てられているアラート、または自動化によって処理されたアラートを表示できます。 |
-| Categories | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
+| カテゴリ | カテゴリを選択して、見られる特定の戦術、テクニック、または攻撃コンポーネントに焦点を当てる。 |
 | 分類 | 関連するアラートの一連の分類に基づいてインシデントをフィルター処理します。 値には、true アラート、false アラート、または設定されていないが含まれます。 |
 | データの機密性 | 一部の攻撃では、機密データや貴重なデータを排除することを目的としています。 機密データがインシデントに関与しているかどうかを確認するためにフィルター処理を適用することにより、機密情報が侵害されている可能性があるかどうかを迅速に判断し、それらのインシデントへの対処に優先順位を付けることができます。 <br><br> Microsoft Information Protection が有効になっている場合にのみ適用されます。|
 | デバイス グループ | 定義済みのデバイス グループでフィルター処理します。 |
@@ -79,7 +79,7 @@ Microsoft 365 Defender関連するアラートと、さまざまな製品から�
 | 複数のサービス ソース  | フィルターを適用して、さまざまなソースからの通知を含むインシデントのみを表示します (Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365)。 |
 | OS プラットフォーム | オペレーティング システムによってインシデント キュー ビューを制限します。 |
 | サービス ソース | 特定のソースを選択すると、選択したソースから 1 つ以上のアラートを含むインシデントに焦点を当てることができます。 |
-| 重要度 | インシデントの重大度は、資産に与える影響を示しています。 重大度が高いほど、影響は大きく、通常は最も迅速な注意が必要です。 |
+| 緊急度 | インシデントの重大度は、資産に与える影響を示しています。 重大度が高いほど、影響は大きく、通常は最も迅速な注意が必要です。 |
 | 状態 | 状態に基づいて表示されるインシデントのリストを制限して、アクティブなインシデントまたは解決されたインシデントを確認できます。 |
 |||
 

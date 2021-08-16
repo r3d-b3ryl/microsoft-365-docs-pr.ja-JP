@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Facebook Business ページをインポートおよびアーカイブするネイティブ コネクタを設定して、そのページMicrosoft 365。 このデータを Microsoft 365 にインポートした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Facebook データのガバナンスを管理できます。
-ms.openlocfilehash: 773893884aebba3d55e063e7e4f8fa331553eb215a2e20f6b8833b00811d7c12
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 14793931ec6e58571dd870bd48b2150d2d00fa09
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892805"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248068"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>コネクタを展開して Facebook Business ページのデータをアーカイブする
 
@@ -124,7 +124,7 @@ ms.locfileid: "53892805"
 
    ![[製品の追加] をクリックし、[**Webhooks] をクリックします。](../media/FBCimage32.png)
 
-9. Webhooks コールバック URL を追加し、確認トークンを追加します。 コールバック URL の形式は **<connectorserviceuri> 、/api/FbPageWebhook** という形式を使用します。connectorserviceuri の値は、組織の Azure アプリ サービス URL です。たとえば、 を指定します `https://fbconnector.azurewebsites.net` 。
+9. Webhooks コールバック URL を追加し、確認トークンを追加します。 コールバック URL の形式は、connectorserviceuri の値が組織の Azure アプリ サービス URL である形式を `<connectorserviceuri>/api/FbPageWebhook` 使用します。たとえば `https://fbconnector.azurewebsites.net` 。
 
    確認トークンは強力なパスワードと似ている必要があります。 確認トークンをテキスト ファイルまたは他の保存場所にコピーします。
 

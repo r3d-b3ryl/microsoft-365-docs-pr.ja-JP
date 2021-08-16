@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ab8562eb1ae9a9d45baa31952b0a88ed4a1d9f36
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 518cf05d271c534caa2e0d1c6aafe854aa1da0b7ee4874bc42d57fa20c27bb48
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873441"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>[セキュリティとコンプライアンス センター Office 365アカウントをユーザーにリダイレクトMicrosoft 365 Defender
 

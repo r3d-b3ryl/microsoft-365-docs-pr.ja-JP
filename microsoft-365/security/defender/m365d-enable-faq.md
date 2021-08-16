@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cec25a877e7039fc3b00d693ecc63e798492131e8eba6c12e4a97b77824da150
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e630b2cdb7164157e2dd42e8f1ee8d09676dfbfb
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828513"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58252084"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>ユーザー設定をオンにするときによく寄せられる質問Microsoft 365 Defender
 
@@ -63,13 +63,13 @@ Microsoft 365 Defenderデータが処理および保存されるデータ セン
 >[!NOTE]
 >Microsoft Defender for Endpoint は、Azure Defender を使用してオンにした場合、EU (EU) データ センターで自動的にプロビジョニングします。 Microsoft 365 Defender、この方法で Microsoft Defender for Endpoint をプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングされます。
 
-データ センターの場所は、サービスがプロビジョニングされる前と後に、[データ センターの設定] ページに表示Microsoft 365 Defender **(** 設定 > Microsoft 365 Defender)。 別のデータ センターの場所を使用する場合は、Microsoft サポートに問い合Microsoft 365セキュリティ センターで [ヘルプが必要か] を選択します。
+データ センターの場所は、サービスがプロビジョニングされる前と後に、[データ センターの設定] ページに表示Microsoft 365 Defender **(** 設定 > Microsoft 365 Defender)。 別のデータ センターの場所を使用する場合は、Microsoft サポートに問い合わせMicrosoft 365 Defenderポータルで [ヘルプが必要か] を選択します。
 
 ## <a name="where-can-i-access-microsoft-365-defender"></a>アクセスできる場所Microsoft 365 Defender?
 
-Microsoft 365 Defenderは、セキュリティ センター Microsoft 365利用できます。 セキュリティ センターに移動するには、URL を参照します <https://security.microsoft.com> 。
+Microsoft 365 Defenderは次の場所で利用できます <https://security.microsoft.com> 。
 
-## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender-in-microsoft-365-security-center"></a>セキュリティ センターでアクセスする必要Microsoft 365 DefenderアクセスMicrosoft 365は何ですか?
+## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>ユーザーにアクセスするために必要なアクセス許可Microsoft 365 Defender。
 
 次の役割 (Azure Azure Active Directory) AD割り当てられたアカウントは、Microsoft 365 Defender機能とデータにアクセスできます。
 
@@ -99,7 +99,7 @@ Microsoft は、以下を含むさまざまなチャネルを通じて定期的�
 
 現時点では、使用できません。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft 365 Defender概要](microsoft-365-defender.md)
 - [[設定] をオンMicrosoft 365 Defender。](m365d-enable.md)

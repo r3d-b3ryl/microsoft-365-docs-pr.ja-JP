@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0bf041210aac90a1aa5b0c360b0b5dd55d8cd8c6
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: bd51b218bfa31496c708f61e4469246ce3d0e0c12e5551063929f65d06337f85
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657233"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857605"
 ---
 # <a name="get-alert-related-user-information-api"></a>アラート関連のユーザー情報 API を取得する
 

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: ユーザーのアーカイブ メールボックスにアイテムを自動的に移動するMicrosoft 365のアーカイブ および削除ポリシーを作成する方法について説明します。
-ms.openlocfilehash: 45d6428f5b0a856538d500b1d1f0447447b9dfe9
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: a7367bc8861f02b31a4782770e28c86c133b5b46add0fa22da30f2f078f47881
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341642"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871547"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>組織のメールボックスについて、アーカイブ削除ポリシーを設定する
 
@@ -63,7 +63,7 @@ ms.locfileid: "53341642"
 > [!NOTE]
 > アーカイブ メールボックスは、プロセスを完了する前に、ある時点で有効になっている限り、このプロセス中にいつでも有効にできます。 アーカイブ メールボックスが有効になっていない場合、アーカイブ または削除ポリシーが割り当てられているアイテムに対してアクションは実行されません。
   
-1. <https://compliance.microsoft.com> に移動します。
+1. <https://compliance.microsoft.com>に移動します。
 
 2. グローバル管理者アカウントを使用してサインインします。
     
@@ -277,13 +277,13 @@ PowerShell に接続し、組織内Exchange Onlineで管理フォルダー ア�
 
 4. 手順 2 のコマンドを再実行して、既定のメールボックス プランに割り当てられているアイテム保持ポリシーが変更されたと確認できます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - 保持期間の計算方法 メールボックス アイテムの保持期間は、送信されていないがユーザーが作成する下書きメッセージなどのアイテムの配信日または作成日から計算されます。 管理フォルダー アシスタントがメールボックス内のアイテムを処理する際、 [削除して回復を許可する] または [完全に削除する] の保存期間用アクション付き保持タグの付いたすべてのアイテムに開始日と有効期限をスタンプします。 アーカイブ タグを持つアイテムには、移動日がスタンプされます。 
 
 - 次の表は、このトピックの手順に従って作成されたカスタム保持ポリシーに追加される各保持タグの詳細を示しています。
 
-    | 保持タグ | このタグの動作 | 組み込みかカスタムか。 | 型 |
+    | 保持タグ | このタグの動作 | 組み込みかカスタムか。 | 種類 |
     |:-----|:-----|:-----|:-----|
     |アルパイン ハウス 3 年アーカイブへの移行  <br/> |1095 日 (3 歳) のアイテムをアーカイブ メールボックスに移動します。  <br/> |カスタム (「手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを[作成する」を参照)](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)  <br/> |既定のポリシー タグ (アーカイブ)。このタグはメールボックス全体に自動的に適用されます。  <br/> |
     |アルパイン ハウス 7 年の完全削除  <br/> |プライマリ メールボックスまたはアーカイブ メールボックス内のアイテムが 7 歳のときに完全に削除されます。  <br/> |カスタム (「手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを[作成する」を参照)](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)  <br/> |既定のポリシー タグ (削除)。このタグはメールボックス全体に自動的に適用されます。  <br/> |

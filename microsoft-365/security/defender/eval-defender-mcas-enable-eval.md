@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 761a8fcb3c6f7efe82c542001dac1f62eb365f1473268df0866bb5dfae0ed302
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: efb6bcde04411b3409d3076d09251423d436265c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863194"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58252149"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>ユーザーの評価環境を有効Microsoft Cloud App Security
 
@@ -62,7 +62,7 @@ ms.locfileid: "53863194"
 
 それでも問題が発生する場合は、「ネットワーク要件 [」を確認してください](/cloud-app-security/network-requirements)。
 
-## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>手順 2. エンドポイント向け Microsoft Defender との統合
+## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>手順 2。 エンドポイント向け Microsoft Defender との統合
 
 Microsoft Cloud App Security Microsoft Defender for Endpoint とネイティブに統合されます。 この統合により、クラウド探索のロールアウトが簡素化され、クラウド探索機能が企業ネットワークを超えて拡張され、デバイスベースの調査が可能です。 この統合により、IT 管理デバイスからアクセスされるクラウド アプリとサービスWindows 10されます。 
 

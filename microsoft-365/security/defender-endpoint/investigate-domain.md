@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 0571197882c32f6cf591106de4e5221fdebaf786
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7ce64c7e04030e64427ea44e038c402de34990ce309891f314e60b9808906e66
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648365"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894230"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpoint アラートに関連付けられているドメインを調査する
 
@@ -81,7 +81,7 @@ URL ビューでは、次のセクションから情報を確認できます。
 4. 検索条件を定義するには、検索フィルターを使用します。 タイムライン検索ボックスを使用して、URL との通信が観察された組織内のすべてのデバイス、通信に関連付けられたファイル、および観測された最後の日付の表示結果をフィルター処理することもできます。
 5. デバイス名をクリックすると、そのデバイスのビューにアクセスし、報告されたアラート、動作、およびイベントを引き続き調査できます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)
 - [Microsoft Defender for Endpoint アラートの調査](investigate-alerts.md)

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f06804e7a6944f119401f8cf2ea5cc0496fd30e841129cef061d8caee4964887
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f79372a210a256720654c92e5ce580d772ef4527
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839065"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58249668"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>アーキテクチャの要件と主要な概念を確認Microsoft Cloud App Security
 

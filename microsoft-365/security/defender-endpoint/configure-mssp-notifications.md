@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb81bcc96fa6a9c99afca2578c001a6ffeab9e7e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 03d33f89ad4edc34ebc7aa6783442100c52fea87fd3681a0b752f521d40a9280
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857677"
 ---
 # <a name="configure-alert-notifications-that-are-sent-to-mssps"></a>MSSP に送信されるアラート通知を構成する 
 
@@ -48,7 +48,7 @@ ms.locfileid: "53657341"
 - **[テナント固有のポータル リンクを含める** ] - アラート リンク URL には、ターゲット テナント ポータルに直接アクセスできるテナント固有のパラメーター (tid=target_tenant_id) が含まれます。
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
 - [顧客テナントからアラートを取得する](fetch-alerts-mssp.md)

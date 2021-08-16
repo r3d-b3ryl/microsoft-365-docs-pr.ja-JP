@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: a7a838bb15cd011b750fbfa3d6df100ddf9f713c
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 6829e12cdfd6a2942b60e8a0b8df166686ff0485c65d739ef19285628d140305
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985410"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857653"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>エンドポイントMicrosoft Defender ウイルス対策通知を構成する
 
@@ -94,7 +94,7 @@ ms.locfileid: "52985410"
 
 5. [すべての通知を **非表示にする] をダブルクリック** し、オプションを [有効] に **設定します**。 
 
-6. **[OK]** を選択します。 これにより、追加の通知が表示されません。
+6. **[OK]** をクリックします。 これにより、追加の通知が表示されません。
 
 ### <a name="use-group-policy-to-hide-reboot-notifications"></a>グループ ポリシーを使用して再起動通知を非表示にする
 
@@ -110,5 +110,5 @@ ms.locfileid: "52985410"
 
 5. [再起動通知を **抑制する] をダブルクリックし** 、オプションを [有効] に **設定します**。 
 
-5. **[OK]** を選択します。 これにより、追加の通知が表示されません。
+5. **[OK]** をクリックします。 これにより、追加の通知が表示されません。
 
