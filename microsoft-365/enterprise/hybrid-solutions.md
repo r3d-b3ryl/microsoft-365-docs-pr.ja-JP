@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: サーバー ワークロードの展開に役立つ情報へのリンクOffice一覧をMicrosoft Azure。
-ms.openlocfilehash: 47e885d3db7d9211b917414d03efdc5b716dcd1e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b63f2fff61a9fb8a7eb99bd15da13d5c909af86c3362618ab7a438e0a610316
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907494"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885389"
 ---
 # <a name="hybrid-solutions"></a>ハイブリッド ソリューション
 
@@ -48,7 +48,7 @@ Azure Microsoft 365 ID インフラストラクチャの場合:
 - [SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/index.yml)
   

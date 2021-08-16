@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6eb3f9db21299b5a763480e5c50a0999cb2925b7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: dd4b762ba22880b1ae0693cbf69bd7e36e974c3f48d65583e1a3d3f6e34e3a07
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866873"
 ---
 # <a name="payment-information-for-luxembourg"></a>ルクセンブルクの支払い情報
 
@@ -31,6 +31,6 @@ ms.locfileid: "52535484"
 **Bank:** シティバンク(ロンドン)  
 **SWIFT コード:** CITIGB2L  
 **IBAN:** GB31CITI18500812207591  
-**SORT コード:** 185008  
+**SORT コード: 185008**  
 **アカウント番号:** 12207591  
 **アカウント名:** MICROSOFT

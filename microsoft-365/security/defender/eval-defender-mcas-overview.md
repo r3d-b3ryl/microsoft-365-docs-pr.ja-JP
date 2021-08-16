@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 045516352ba9e27895f5c72ce90d29e50e13d04917f602c0543041089514b80b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 386a7efcc5cb47df835e8465c323e5cdfdf486c7
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897700"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247579"
 ---
 # <a name="evaluate-microsoft-cloud-app-security"></a>評価Microsoft Cloud App Security
 

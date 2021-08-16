@@ -4,7 +4,7 @@ metadata:
   ms.author: cmcatee
   author: cmcatee-MSFT
   manager: scotv
-  ms.reviewer: 'racheg, armanv'
+  ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: article
@@ -12,109 +12,99 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: ダウンロードに関してよく寄せられるMicrosoft 365 管理センター質問です。
+  ms.openlocfilehash: c10fbf7260324e4b0a6511c112d91dc3d87aa10a
+  ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 08/13/2021
+  ms.locfileid: "58247570"
 title: よく寄せられる質問のダウンロード
 summary: ''
 sections:
-  - name: 一般
-    questions:
-      - question: |
-          アプリケーションからソフトウェアをダウンロードするための要件Microsoft 365 管理センター?
-        answer: |
-          インストールを完了するには、ダウンロードする予定の製品のライセンスを購入し、各ライセンスの有効なプロダクト キーにアクセスする必要があります。 製品をダウンロードする前に、使用許諾契約書を確認してください。
+- name: 全般
+  questions:
+  - question: >
+      What are the requirements for downloading software from the Microsoft 365 admin center?
+    answer: "You must purchase a license for the products you plan to download and have access to a valid product key for each license to complete the installation. Verify your license agreement before you download products.\n\nYou can find the system requirements for each product by signing into the admin center and going to **Your products** > **Downloads** page > **Product description**. \n\n**Note** Not all products require a product key.\n"
+  - question: >
+      What products can I download from the admin center?
+    answer: >
+      If your download rights are associated with the Open License, Open Value, or Open Value Subscription program, you can download only those products you've already purchased. The admin center displays downloads only for licenses you’ve purchased.
 
-          各製品のシステム要件は、管理センターにサインインし、[製品のダウンロード] ページおよび [製品の説明] に移動>  >  **確認できます**。 
 
-          **メモ** プロダクト キーが必要な製品は一部ではありません。
-      - question: |
-          管理センターからダウンロードできる製品
-        answer: |
-          ダウンロード権が Open License、Open Value、または Open Value Subscription プログラムに関連付けられている場合は、既に購入した製品のみをダウンロードできます。 管理センターには、購入したライセンスのダウンロードだけが表示されます。
+      Other licensing programs (Select Plus, Enterprise, Campus, or School) allow you to download any product from the catalog before you purchase licenses.
 
-          その他のライセンス プログラム (Select Plus、Enterprise、キャンパス、または学校) を使用すると、ライセンスを購入する前にカタログから製品をダウンロードできます。
 
-          プロファイルが Open と他のライセンス プログラムの両方にリンクされている場合は、カタログ全体を表示できます。
+      If your profile is linked to both Open and other licensing programs, you can view the entire catalog.
 
-          製品がダウンロードの対象かどうかを確認するには、次の方法を実行します。
 
-            1. [ **ボリューム ライセンス] を** 選択し、製品またはダウンロード **の表示を選択します**。
-            2. [ **ダウンロード]** で、製品が使用できない場合は、「この製品はダウンロードできません」と表示されます。
-      - question: |
-          クライアント アクセス ライセンス (CAL) とは
-        answer: |
-          クライアント アクセス ライセンス (CAL) は、サーバーのサービスにアクセスする権限をユーザーに与えるライセンスです。
+      To determine if a product is eligible for download:
 
-          CAL をアクティブ化するソフトウェア ダウンロード ファイルやプロダクト キーは必要ない。 代わりに、製品がアクティブ化され、ライセンス認証ウィザードを使用してコンピューターから直接インストールされます。
+        1. Select **Volume Licensing**, and then select the product or **View downloads**.
+        2. Under **Download**, if the product is not available, you’ll see “This product is not available for download.”
+  - question: >
+      What is a Client Access License (CAL)?
+    answer: >
+      A Client Access License (CAL) is a license that gives a user the right to access the services of the server.
 
-          URL の例を次に示します。
-            - Windows Server
-            - SQL Server
-            - Exchange Server
-            - Skype for Business Server
-            - SharePoint Server
-            - System Center
-            - Project Server
-      - question: |
-          ファイルをダウンロードするOffice for Mac? 
-        answer: |
-          ボリューム ライセンス バージョンのボリューム ライセンス Office for Mac、次のファイルをダウンロードしてインストールする必要があります。
-            - ボリューム[ライセンス (VL) シリアライザー](/deployoffice/mac/volume-license-serializer)パッケージは、Office for Macファイルに保存されます。
-            - インストール[Office for Mac パッケージ](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac)です。 個々のアプリケーションのインストーラー パッケージ ファイルは、アプリケーションのMicrosoft 365 管理センター。 Office for Mac VL Serializer を使用してボリューム ライセンス バージョンのライセンス認証を行うので、プロダクト キーはOffice for Mac。
-      - question: |
-          管理センターで製品をダウンロードする方法
-        answer: |
-          管理センターで製品をダウンロードするには、次の方法を実行します。
-          1. [ **ボリューム ライセンス] を** 選択し、製品またはダウンロード **の表示を選択します**。
-          2. [ **ダウンロード]** で、コンポーネントを選択し、ダウンロード アクションまたはダウンロード アイコンを選択します。 
 
-          管理センターでダウンロードにアクセスするには、組織内の VLSC 管理者が、次のいずれかの役割にユーザーを割り当て、アクセス権を提供できます。
-            - 管理者
-            - ダウンロード
-            - ソフトウェア アシュアランス マネージャー
-      - question: |
-          ダウンロード設定を変更する方法
-        answer: |
-          管理センターのダウンロード設定にアクセスするには、次の方法を実行します。
-          1. [ **ボリューム ライセンス] を** 選択し、製品またはダウンロード **の表示を選択します**。
-          2. [**ダウンロード] で**、[言語と **オペレーティング システム****の種類] を選択します**。
+      You don’t need a software download file or product key to activate a CAL. Instead, the product is activated and installed through the activation wizard directly from your computer.
 
-          **メモ** ポップアップ ブロックは、ダウンロードをブロックできます。 管理センターからソフトウェアをダウンロードするときにポップアップ ブロックが無効になっているか確認します。
-      - question: |
-          EXE ファイルと ISO ファイルとは何ですか?
-        answer: |
-          管理センターから製品をダウンロードするときに、次の 2 種類のファイルを選択できます。
-            
-            - **実行可能ファイル (EXE) は** 、同じシステムにダウンロードしてインストールできますが、他のコンピューターにインストールするために個別のブート ディスクを作成できません。
-            - **ISO (国際規格組織) イメージ ファイルは** 、コンテンツと論理形式の正確な表現です。 パッケージをダウンロードしたり、他のコンピューターに配布およびインストールするためにディスクにファイルを書き込む場合に使用するコンピューターにインストールできます。
 
-          **メモ** すべての製品がすべての言語およびすべての形式で使用できる場合があります。
-      - question: |
-          ISO イメージ ファイル ソフトウェアを使用して ISO イメージ ファイルをダウンロードして CD-R または DVD-R ディスクに保存する方法
-        answer: |
-          オペレーティング システムで PC をWindows場合は、CD-R または DVD-R を書き込む追加のソフトウェアは必要ない。 ダウンロードした ISO ファイルをダブルクリックし、イメージ バーナー ウィザードの手順に従います。
+      Examples of CALs include:
+        - Windows Server
+        - SQL Server
+        - Exchange Server
+        - Skype for Business Server
+        - SharePoint Server
+        - System Center
+        - Project Server
+  - question: "How do I download Office for Mac? \n"
+    answer: >
+      To run a volume licensing version of Office for Mac, you must download and install the following files:
+        - The [Volume License (VL) Serializer](/deployoffice/mac/volume-license-serializer) package located in the Office for Mac download file.
+        - The [Office for Mac installation package](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Installer package files for individual applications are also available on the Microsoft 365 admin center. Office for Mac doesn’t require a product key because the VL Serializer is used to activate a volume licensed version of Office for Mac.
+  - question: >
+      How do I download products in the admin center?
+    answer: "To download products in the admin center:\n1. Select **Volume Licensing**, and then select the product or **View downloads**.\n2. Under **Download**, select a component and select a download action or the download icon. \n\nTo access downloads in the admin center, a VLSC administrator in your organization can provide access by assigning you to one of these roles:\n  - Administrator\n  - Download\n  - Software Assurance Manager\n"
+  - question: >
+      How do I change my download settings?
+    answer: >
+      To access download settings in the admin center:
 
-          他のオペレーティング システムを使用している場合Windowsソフトウェアが必要になる場合があります。 コンピューターに CD/DVD バーナが装備されている場合は、ソフトウェアが PC に読み込まれている可能性があります。 ほとんどの CD-R/DVD-R 書き込みソフトウェアでは、イメージ ファイルからディスクを作成できます。 [イメージを CD にコピー **] や [イメージの書き込み** ] などのメニュー項目を選択 **して、** この機能にアクセスします。
-      - question: |
-          ISO ファイルを仮想デバイスとしてマウントしてアクセスする方法
-        answer: |
-          コンピューターに CD/DVD バーナーがインストールされていないか、メディアが使用できない場合は、ISO ファイルを仮想ドライブとしてマウントできます。 この方法を使用すると、コンピューターはファイルが実際のディスク ドライブと見なされ、この仮想ディスクからファイルを読み取ることができるようになりました。
+      1. Select **Volume Licensing**, and then select the product or **View downloads**.
 
-          **メモ** この方法は、システムのアップグレードやマイナー システムのアップグレードなどのOfficeインストールする場合にのみお勧めできます。 インストール中に仮想ドライブが消えるので、この方法を使用してオペレーティング システムをインストールできない。
-      - question: |
-          ダウンロードした製品のサポートを受け取る方法
-        answer: |
-          サポート オプションの一覧については [、「Microsoft サポート」を参照してください](https://support.microsoft.com/)。 一部のボリューム ライセンスのお客様は、ソフトウェア アシュアランス特典である問題解決サポートを使用できます。 ソフトウェア アシュアランスの特典を確認して、適格性を確認します。
-      - question: |
-          この FAQ で説明されているトピックのサポートはどこで確認できますか?
-        answer: |
-          ビデオを含むトレーニング リソースの詳細については [、「Microsoft Volume Licensing Service Center のトレーニングとリソース」を参照してください](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)。
-      - question: |
-          Microsoft サポートへの問い合わせ方法
-        answer: |
-          VLSC のお客様の電話または Web フォームのサポートについては、「お問い合 [わせ」を参照してください](/licensing/contact-us)。 Microsoft は 24 時間以内に Web フォームの申請に応答します。
-additionalContent: |
+      2. Under **Download**, select the **Language** and **Operating System Type**.
 
-  ## <a name="additional-resources"></a>その他のリソース
 
-  - [プロダクト キーに関する FAQ](product-keys-faq.yml)
+      **Note** Pop-up blockers can block downloads. Make sure pop-up blockers are disabled when you download software from the admin center.
+  - question: >
+      What are EXE and ISO files?
+    answer: "You can select two file types when you download products from the admin center:\n  \n  - **Executable (EXE) files** can be downloaded and installed on the same system, but you can’t create separate boot disks for installation on other computers.\n  - **ISO (International Standards Organization) image files** are exact representations of the content and the logical format. You can install these on the computer used to download the package or write the files to disks for distribution and installation on other computers.\n\n**Note** Not all products are available in all languages and in all formats.\n"
+  - question: >
+      How do I use ISO image file software to download and save ISO image file to a CD-R or a DVD-R disk?
+    answer: >
+      If you’re using a PC with the Windows operating system, you don't need additional software to burn a CD-R or DVD-R. Double-click the ISO file you downloaded, and then follow the steps in the Image Burner Wizard.
 
-  - [Open プログラムのオンライン サービスのライセンス認証に関する FAQ](online-service-activation-faq.yml)
+
+      If you’re using any operating system other than Windows, you might need additional software. If your computer is equipped with a CD/DVD burner, the software is probably loaded on your PC. Most CD-R/DVD-R writing software allows you to create a disk from an image file. Select a menu item such **Copy Image to CD** or **Burn Image to access** to access this feature.
+  - question: >
+      How do I mount and access ISO files as a virtual device?
+    answer: >
+      If you don't have a CD/DVD burner installed on your computer or media isn't available, you can mount the ISO file as a virtual drive. With this method, your computer believes that the file is a real disk drive, and you can read files from this virtual disk.
+
+
+      **Note** This approach is advisable only for installing applications such as Office or minor system upgrades. You can’t install an operating system using this approach because the virtual drive disappears during the installation.
+  - question: >
+      How do I get support for downloaded products?
+    answer: >
+      For a list of support options, see [Microsoft Support](https://support.microsoft.com/). Some Volume Licensing customers can use Problem Resolution Support, a Software Assurance Benefit. Review your Software Assurance Benefits to verify your eligibility.
+  - question: >
+      Where can I find support for the topics covered in this FAQ?
+    answer: >
+      For more training resources, including videos, see [Microsoft Volume Licensing Service Center training and resources](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
+  - question: >
+      How can I contact Microsoft Support?
+    answer: >
+      For VLSC customer phone or web form support, see [Contact Us](/licensing/contact-us). Microsoft responds to web form submissions within 24 hours.
+additionalContent: "\n## Additional resources\n\n- [Product keys FAQ](product-keys-faq.yml)\n\n- [Online services activation for Open programs FAQ](online-service-activation-faq.yml)"

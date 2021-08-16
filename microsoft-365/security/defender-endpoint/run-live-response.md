@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a27761cc6f907905e9aa1a4fb2c1a1dc8120f5acfb15574cae6b170d75d51ec1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3edacef44021211d82b1b7d8c477683185c87f00
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833485"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247615"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>デバイスでライブ応答コマンドを実行する
 
@@ -58,7 +58,9 @@ ms.locfileid: "53833485"
 
 4.  RunScript コマンドは 10 分後にタイムアウトします。
 
-5.  ライブ応答コマンドが失敗すると、フォローしているすべてのアクションは実行されません。
+5.  ライブ応答コマンドをキューに入れ、一度に 1 つしか実行できません。 
+
+6.  1 つの API 呼び出しで複数のライブ応答コマンドを実行できます。 ただし、ライブ応答コマンドが失敗した場合、次のすべてのアクションは実行されません。
 
 ## <a name="minimum-requirements"></a>最小要件
 
@@ -118,7 +120,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="response"></a>応答
 
-- 成功した場合、このメソッドは 200 Ok を返します。
+- 成功した場合、このメソッドは 201 Created を返します。
 
   アクション エンティティ。 指定した ID を持つコンピューターが見つからない場合 - 404 Not Found。
 
@@ -222,7 +224,7 @@ HTTP/1.1 200 Ok
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [コンピューター アクション API の取得](get-machineaction-object.md)
 - [ライブ応答結果の取得](get-live-response-result.md)

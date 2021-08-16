@@ -14,12 +14,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 836025b42bbe6142f462ee31f266a636f5101fe9
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.date: 06/03/2021
+ms.openlocfilehash: a6e4e76f75bc5eebdf17ce4768eb13327abe630d5aff6d66033ffab43d9ad263
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52783007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854341"
 ---
 # <a name="cloud-delivered-protection-and-microsoft-defender-antivirus"></a>クラウド配信保護と Microsoft Defender ウイルス対策
 
