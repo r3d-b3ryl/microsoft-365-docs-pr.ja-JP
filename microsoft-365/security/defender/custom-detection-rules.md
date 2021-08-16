@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 62c8fda1276089ba4c9f6e7bd7a0839ddf88256d3c30f8c62f9eb25daadf7b40
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f17a06aa34274cf61b1979c64a008e7fe70d676b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863218"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254594"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -42,9 +42,9 @@ ms.locfileid: "53863218"
 
 カスタム検出を管理するには、次のいずれかの役割を割り当てる必要があります。
 
-- **セキュリティ管理者**:この役割を持Azure Active Directory [ユーザーは](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)、セキュリティ センターや他のポータルMicrosoft 365サービスでセキュリティ設定を管理できます。
+- **セキュリティ管理者**:この役割を持 [Azure Active Directoryユーザーは](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)、ポータルや他のポータルやサービスMicrosoft 365 Defender設定を管理できます。
 
-- **セキュリティ オペレーター**-このセキュリティ Azure Active Directory [ロール](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)を持つユーザーは、アラートを管理し、セキュリティ センター内のすべての情報を含む、セキュリティ関連の機能に対するグローバルな読み取り専用Microsoft 365できます。 この役割は、Microsoft Defender for Endpoint で役割ベースのアクセス制御 (RBAC) がオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC が構成されている場合は、Defender **for** Endpoint のセキュリティ設定の管理アクセス許可も必要です。
+- **セキュリティ オペレーター**-この [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)Azure Active Directory ロールを持つユーザーは、アラートを管理し、セキュリティ関連の機能 (Microsoft 365 Defender ポータルのすべての情報を含む) へのグローバルな読み取り専用アクセス権を持つ。 この役割は、Microsoft Defender for Endpoint で役割ベースのアクセス制御 (RBAC) がオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC が構成されている場合は、Defender **for** Endpoint のセキュリティ設定の管理アクセス許可も必要です。
 
 また、特定のソリューションのデータに適用されるカスタム検出Microsoft 365 Defenderアクセス許可がある場合は管理できます。 たとえば、Microsoft 365 DefenderのOfficeを管理する場合は、テーブルを使用してカスタム検出を作成できますが、テーブルは `Email` 作成 `Identity` できません。  
 
@@ -59,7 +59,7 @@ ms.locfileid: "53863218"
 ## <a name="create-a-custom-detection-rule"></a>カスタム検出ルールの作成
 ### <a name="1-prepare-the-query"></a>1. クエリを準備します。
 
-セキュリティ Microsoft 365で、[高度な検索] に **移動し、** 既存のクエリを選択するか、新しいクエリを作成します。 新しいクエリを使用する場合は、クエリを実行してエラーを特定し、考えられる結果を理解します。
+このポータルMicrosoft 365 Defender[高度な検索] に **移動し、** 既存のクエリを選択するか、新しいクエリを作成します。 新しいクエリを使用する場合は、クエリを実行してエラーを特定し、考えられる結果を理解します。
 
 >[!IMPORTANT]
 >サービスがあまりにも多くのアラートを返さなすぎ防止するために、各ルールは、実行されるたびに 100 件のアラートのみを生成するに制限されます。 ルールを作成する前に、クエリを調整して、通常の毎日のアクティビティに対する警告を回避してください。

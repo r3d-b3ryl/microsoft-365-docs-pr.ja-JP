@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 3a771c463c5f41aa9c74a8fb318b248f92bfb0ca159e84714c53ff43d378dc5f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09c3b40b54133f43dba5ab09e600cf89206adca4
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863092"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254500"
 ---
 # <a name="enable-the-evaluation-environment"></a>評価環境を有効にする
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft のプライバシー管理は、組織が保管している個人データをMicrosoft 365、プライバシー リスクの特定と修復に役立つソリューションを提供します。
-ms.openlocfilehash: f4beecb0c9249c9eba530526e835bd2958be8cfab4c409365dc536f64b1b2caf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 339407dcd22742ce089b18f6b70172754a09a4cc
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835741"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254613"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Microsoft プライバシー管理 (プレビュー)
 
@@ -86,7 +86,7 @@ Microsoft 365 環境で個人情報を表示し、そのデータを管理し、
 
 ### <a name="where-privacy-management-identifies-personal-data"></a>プライバシー管理が個人データを識別する場所
 
-Microsoft 365 のプライバシー管理ソリューションは、Microsoft 365 のクラウド サービスに組織によって保存されたデータとファイルを評価し、その領域でプライバシー リスクを特定および管理するのに役立ちます。 保持されるデータには以下が含まれます。
+Microsoft 365 のプライバシー管理ソリューションは、Microsoft 365 のクラウド サービスに組織によって保存されたデータとファイルを評価し、その領域でプライバシー リスクを特定および管理するのに役立ちます。 これには、次の内容が含まれます。
 
 - Microsoft Exchange
 - Microsoft SharePoint

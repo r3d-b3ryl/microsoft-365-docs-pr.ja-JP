@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 870b3491bd0556b2d72de901917713c6d6643a5f3c31871ab33f5eb459fefaf2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2b21df0592c2ca6f3f45500236e2cd07ab7128c1
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802784"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247555"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -127,6 +127,16 @@ ms.locfileid: "53802784"
 
 - [トレーニング可能な分類子の一致](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
+3 つの条件はすべて、メールの送受信時に保持ラベルをメールに自動的に適用できますが、メールボックス内の既存のアイテム (保存データ) には適用できません。 SharePoint と OneDrive のアイテムの場合、次の表を使用して、保持ラベルをアイテムに自動的に適用できるタイミングを特定します。
+
+|条件|新規または変更されたアイテム |既存のアイテム (保存データ)|
+|:-----|:-----|:-----|
+|機密情報の種類 - 組み込み| はい | はい |
+|機密情報の種類 - カスタム| はい | 不要 |
+|特定のキーワードまたは検索可能なプロパティ| はい |はい |
+|トレーニング可能な分類子| はい | はい (過去 6 か月のみ) |
+
+
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>特定の種類の機密情報によるコンテンツへのラベルの自動適用
 
 > [!WARNING]
@@ -148,7 +158,7 @@ ms.locfileid: "53802784"
 
 機密情報の種類を使用して保持ラベルの自動適用を検討する場合:
 
-- 新しいアイテムや変更されたアイテムには、自動的にラベルを付けることができます。
+- カスタムの機密情報の種類を使用する場合、SharePoint および OneDrive の既存のアイテムに自動ラベルを付けることはできません。
 
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>キーワードまたは検索可能なプロパティによるコンテンツへの自動適用ラベル
 
@@ -161,8 +171,6 @@ ms.locfileid: "53802784"
 クエリ ベースの自動適用ポリシーは、電子情報開示コンテンツの検索と同じ検索インデックスを使用してコンテンツを識別します。 使用できる検索可能なプロパティの詳細については、「[キーワード クエリとコンテンツ検索の検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
 
 キーワードまたは検索可能なプロパティを使用して保持ラベルを自動適用する際の考慮事項:
-
-- 新規、変更、および既存のアイテムには、SharePoint、OneDrive、および Exchange の自動ラベルが付けられます。
 
 - SharePoint の場合、クロールされたプロパティとカスタム プロパティは、これらの KQL クエリではサポートされていないため、ドキュメントには事前定義された管理プロパティのみを使用する必要があります。 ただし、既定で絞り込み条件として有効になっている管理プロパティ (RefinableDate00-19、RefinableString00-99、RefinableInt00-49、RefinableDecimals00-09、および RefinableDouble00-09) を使用して、テナント レベルでマッピングを使用できます。 詳細については、「[クロールされたプロパティと管理プロパティの概要 (SharePoint Server)](/SharePoint/technical-reference/crawled-and-managed-properties-overview)」を参照してください。手順については、「[新しい管理プロパティの作成](/sharepoint/manage-search-schema#create-a-new-managed-property)」を参照してください。
 
@@ -255,7 +263,7 @@ ProgID:Media AND ProgID:Meeting
 
 トレーニング可能な分類子を使用して保持ラベルの自動適用を検討する場合:
 
-- 新規アイテムと変更されたアイテム、および過去 6 か月の既存のアイテムにはラベルを付けることができます。
+- 6 か月以上経過した SharePoint および OneDrive アイテムに自動ラベルを付けることはできません。
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保持ラベルが有効になるまでの所要時間
 

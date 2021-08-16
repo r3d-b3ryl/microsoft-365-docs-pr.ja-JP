@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: b2a6ee7c3f3ea2fb31b31d2f1db178bfd9847fbc
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 0aedcdc310b10218afbfd6253dc1c02117f3428eafc5ffd668f35489d9bc2e14
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898121"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Microsoft Defender オフライン スキャンの結果を実行してレビューする
 
@@ -57,7 +57,7 @@ Microsoft Defender オフラインはWindows 10ハードウェア要件と同じ
 Microsoft Defender オフラインエンドポイントで利用可能な最新の保護更新プログラムを使用します。更新されるたびに更新Windows Defender ウイルス対策されます。 
 
 > [!NOTE]
-> オフライン スキャンを実行する前に、Microsoft Defender AV 保護の更新を試みる必要があります。 グループ ポリシーを使用して更新を強制するか、通常はエンドポイントに更新プログラムを展開するか、最新の保護更新プログラムを マイクロソフト マルウェア プロテクション センター から手動でダウンロードして[インストールすることもできます](https://www.microsoft.com/security/portal/definitions/adl.aspx)。
+> オフライン スキャンを実行する前に、Microsoft Defender AV 保護の更新を試みる必要があります。 グループ ポリシーを使用して更新を強制するか、通常はエンドポイントに更新プログラムを展開するか、最新の保護更新プログラムを手動でダウンロードしてインストール[Microsoft マルウェア プロテクション センター。](https://www.microsoft.com/security/portal/definitions/adl.aspx)
 
 詳細については[、「セキュリティ インテリジェンスMicrosoft Defender ウイルス対策更新プログラムの管理」](manage-protection-updates-microsoft-defender-antivirus.md)を参照してください。
 

@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、カスタム機密情報の種類にエンコードできるフィルターの一覧を示します。
-ms.openlocfilehash: 6dfa562d581f14c0b1ac41c4ce803e2367a94636
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 8cf5e60aeb27ff7426837b8885597a7d03e9e868073262bed263a7f70bbb301b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879195"
 ---
-# <a name="custom-sensitive-information-type-filters-reference"></a>カスタムの機密情報の種類フィルターリファレンス
+# <a name="custom-sensitive-information-type-filters-reference"></a>カスタムの機密情報の種類のフィルター リファレンス
 
 Microsoft では、カスタム機密情報の種類 (SIT) を作成する際にフィルターや追加のチェックを定義できます。
 
@@ -30,7 +30,7 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
 
 ### <a name="alldigitssame-exclude"></a>AllDigitsSame Exclude
 
-説明: 111111111 や 111-111-111 など、すべての数字が重複する一致を除外できます。
+説明: すべての数字が重複する数字 (111111111 または 111-111-111 など) の一致を除外できます。
 
 フィルターの定義
 ```xml
@@ -149,9 +149,9 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
 
 ### <a name="textmatchfilter-full"></a>TextMatchFilter Full
 
-説明: 特定の一致を禁止して、ルールをトリガーすることを禁止できます。 たとえば、有効なクレジット カード一致の一覧から 4111111111111 を除外します。
+説明: 特定の一致を禁止して、ルールをトリガーすることを禁止できます。 たとえば、有効なクレジット 4111111111111111一致の一覧から除外します。
 
-たとえば、次のようなリストで 41111111111111111 や 32418910311113111 のようなクレジット カード番号を除外するには、次のようにします。
+たとえば、次のようなリストで、4111111111111111や3241891031113111クレジット カード番号を除外します。
 
 - 4485 3647 3952 7352
 - 4111111111111111
@@ -172,7 +172,7 @@ Microsoft では、カスタム機密情報の種類 (SIT) を作成する際に
   </Keyword>
 ```
 
-たとえば、次のようなリストに 41111111111111111 や 32418910311113111 などのクレジット カード番号を含めるには、次のようにします。
+たとえば、次のようなクレジット カード番号を4111111111111111、3241891031113111に含めるには、次のようにします。
 
 - 4485 3647 3952 7352
 - 4111111111111111

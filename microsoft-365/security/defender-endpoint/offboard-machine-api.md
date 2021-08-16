@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 83e43a36df3d4b4d0efdfd655e929c8aa39aeb74
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 23e9ffea59eb874ef80345f9a75b7cb64137069b8bcbf2c54d5ddc0b76359233
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898137"
 ---
 # <a name="offboard-machine-api"></a>オフボード マシン API
 

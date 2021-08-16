@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、プラン 2 の Microsoft Defender でユーザー タグを持つユーザーの特定のグループOffice 365学習できます。 タグ フィルターは、Microsoft Defender のアラート、レポート、および調査で、タグ付けされたユーザーをすばやく識別Office 365に使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9dba3657c442ac183e67206629bd2e6bfa7345c78a337e55beb91f445f6afe6b
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 836c8e538ac62809c15094d6ecade796429f9bce
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834561"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254107"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender のユーザー タグ (Office 365
 
@@ -127,7 +127,7 @@ ms.locfileid: "57834561"
 
 3. 表示される詳細フライアウトでは、この記事の「Microsoft 365 Defender ポータルを使用してユーザー タグ[](#use-the-microsoft-365-defender-portal-to-create-user-tags)を作成する」セクションで説明したように、同じウィザードと設定を使用できます。
 
-   **注意**: 
+   **注意**:
 
    - [ **タグの定義** ] ページは組み込みの **Priority アカウント** システム タグでは使用できないので、このタグの名前を変更したり、説明を変更したりすることはできません。
    - カスタム タグの名前は変更できますが、説明は変更できます。

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager は、Microsoft Service Trust Portal の無料のワークフロー ベースのリスク評価ツールです。 コンプライアンス マネージャーを使用すると、Microsoft クラウド サービスに関連する規制コンプライアンス活動を追跡、割り当て、検証できます。
-ms.openlocfilehash: 69e6551620fb654cb09d46554e6e3c98b6a2fc60
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc58bf9b38b08ddd7218dfe0be07013a72ad0608dec931a3a5992193f75b0a25
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595804"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880547"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft コンプライアンス マネージャーと GDPR
 

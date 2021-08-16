@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Microsoft Bookings アプリで予約ページの色のテーマを変更します。
-ms.openlocfilehash: c930c06300a83ee17f1efdaaf42761ddfdebdd7b
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: e1d5eeea44194ea0ad152c51fbf506f1c4e3cbd1e41f59621c76bd955f49dd6b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896731"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>予約ページをカスタマイズして公開する
 

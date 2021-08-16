@@ -16,12 +16,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ef3fce82a10792c8289a4a3c4e3cb5639a4d178
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b9c9657521265890b842c910286d92c655297612f6c545c4abf12faa46e5d999
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051879"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880197"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>情報バリアについて詳しくは、Microsoft 365
 
@@ -83,10 +83,10 @@ Microsoft Teams、SharePointオンライン、およびOneDrive for Businessサ�
 情報バリアは現在展開中で、次のようなサブスクリプションに含まれています。
 
 - Microsoft 365 E5/A5
-- Office 365E5/A5
+- Office 365 E5/A5
 - Office 365 Advanced Compliance
 - Microsoft 365コンプライアンス E5/A5
-- Microsoft 365Insider リスク管理
+- Microsoft 365 インサイダー リスク管理
 
 詳細については、「セキュリティとコンプライアンス[Microsoft 365ライセンス ガイダンス」を&してください](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
@@ -97,7 +97,7 @@ Microsoft Teams、SharePointオンライン、およびOneDrive for Businessサ�
 - コンプライアンス管理者
 - IB コンプライアンス管理
 
-(役割とアクセス許可の詳細については、「コンプライアンス センターのセキュリティ Office 365アクセス[&」を参照](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)してください。
+(役割とアクセス許可の詳細については、「コンプライアンス センターのセキュリティ Office 365アクセス[&」を参照](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)してください。
 
 情報バリア ポリシーを定義、検証、または編集するには、PowerShell コマンドレットに精通している必要があります。 方法に関する記事では、PowerShell コマンドレットのいくつかの例[](information-barriers-policies.md)を示しますが、組織のパラメーターなど、他の詳細を知る必要があります。
 
@@ -107,5 +107,5 @@ Microsoft Teams、SharePointオンライン、およびOneDrive for Businessサ�
 - [オンラインでの情報バリアの詳細SharePointする](/sharepoint/information-barriers)
 - [詳細については、「情報バリア」を参照OneDrive](/onedrive/information-barriers)
 - [情報バリア ポリシーに使用できる属性を確認する](information-barriers-attributes.md)
-- [情報バリアのポリシーを定義する](information-barriers-policies.md)
+- [情報バリアに対するポリシーを定義する](information-barriers-policies.md)
 - [情報バリア ポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md)

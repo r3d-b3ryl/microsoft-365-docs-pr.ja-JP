@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9d36aad47928424c233ab68607732bcaafa6db3879e69e8de1ae54b84de6aa96
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 69d892fef4dc83cfc3ef3ff04acc34b873ecc382
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844993"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254667"
 ---
 # <a name="release-device-from-isolation-api"></a>分離 API からデバイスを解放する
 

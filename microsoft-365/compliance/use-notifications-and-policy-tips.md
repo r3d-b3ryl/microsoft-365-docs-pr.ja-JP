@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作しているユーザーに通知する方法について学習します。
-ms.openlocfilehash: f8b1c4228dcccf82a8dadb8b942d2587f92ba382
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 0eb30101dc42ab25eef5625f2fa952cac8f8bda89e6c72a5f7f46186ac96f652
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623050"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859971"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -286,7 +286,7 @@ DLP ポリシーのポリシー ヒントにこれらのオプションが設定
 ## <a name="more-information"></a>詳細情報
 
 - [データ損失防止について](dlp-learn-about-dlp.md)
-- [テンプレートからの DLP ポリシーの作成](create-a-dlp-policy-from-a-template.md)
+- [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
 - [DLP ポリシーの条件、例外、およびアクション (プレビュー)](./dlp-microsoft-teams.md)
 - [FCI または他のプロパティを含むドキュメントを保護するために DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)

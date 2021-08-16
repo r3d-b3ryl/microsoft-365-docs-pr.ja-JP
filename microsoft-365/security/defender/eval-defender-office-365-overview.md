@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1971f70752b7787540e3edd470bece5e609d5bcd6171a7c6a8ef39af44c0ce4f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 90660b9b95e7724437972d280b5f179a774c00c3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893912"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254376"
 ---
 # <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "53893912"
 | |手順  |説明  |
 |---------|---------|---------|
 |1|[アーキテクチャ要件と主な概念を確認する](eval-defender-office-365-architecture.md)    | Defender for Officeを理解し、Exchange Online環境がアーキテクチャの前提条件を満たしていることを確認します。       |
-|2|[評価環境を有効にする](eval-defender-office-365-enable-eval.md)     |   手順に従って、評価環境をセットアップします。      |
-|3|[パイロットのセットアップ ](eval-defender-office-365-pilot.md)    |    パイロット グループを作成し、保護を構成し、主要な機能とダッシュボードに慣れ親しんでください。     |
+|2 |[評価環境を有効にする](eval-defender-office-365-enable-eval.md)     |   手順に従って、評価環境をセットアップします。      |
+|3 |[パイロットのセットアップ ](eval-defender-office-365-pilot.md)    |    パイロット グループを作成し、保護を構成し、主要な機能とダッシュボードに慣れ親しんでください。     |
 ||||
 

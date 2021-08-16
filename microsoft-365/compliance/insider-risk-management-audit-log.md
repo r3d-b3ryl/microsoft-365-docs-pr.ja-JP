@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b7eb225f04f531c3b6de71bf72df0f8062a8c93d
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fad8d20e0c3e6e1d3e8a9587a211fb109d869d1ab849c8e6948b9f476e543820
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226505"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880178"
 ---
 # <a name="insider-risk-management-audit-log"></a>Insider リスク管理監査ログ
 
