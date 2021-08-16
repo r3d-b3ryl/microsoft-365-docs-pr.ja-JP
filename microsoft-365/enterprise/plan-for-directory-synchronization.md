@@ -1,7 +1,7 @@
 ---
 title: ハイブリッド ID とディレクトリ同期によるMicrosoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: ディレクトリの同期と Microsoft 365、Active Directory ドメイン サービスのクリーンアップ、およびネットワーク ツールAzure Active Directory Connectします。
-ms.openlocfilehash: 10fe97f13f02aa19371b40284ca0549d6f14285042bf19ae174a833e44130343
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62c8246e6a825ff57583dbbccb1028cd9035f72e
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848444"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354406"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>ハイブリッド ID とディレクトリ同期によるMicrosoft 365
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 ビジネス ニーズと技術的要件に応じて、ハイブリッド ID モデルとディレクトリ同期は、ハイブリッド ID モデルとディレクトリ同期を採用している企業のお客様にとって最も一般的な選択肢Microsoft 365。 ディレクトリ同期を使用すると、Active Directory ドメイン サービス (AD DS) 内の ID を管理し、ユーザー アカウント、グループ、連絡先に対する更新はすべて、Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントに同期されます。
 

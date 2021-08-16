@@ -1,7 +1,7 @@
 ---
 title: Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/01/2018
 audience: ITPro
@@ -24,16 +24,16 @@ f1.keywords:
 - NOCSH
 description: この記事では、2007 年のサポートが終了したOffice 2007 サーバーとクライアントからのアップグレードに役立つリソースOffice提供します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 661dfca0c9d38d48a083eb9724aeafb9d433d9fffad2d2cc882078c17860d265
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3f90bed99816378d4e44bb714b4c6104a9302b7
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878077"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354190"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 2007 年 2007 Officeを使用している場合は、これらのアプリケーションのサポートが終了しました。 Microsoft クラウドへの移行を検討してください。このMicrosoft 365。 この記事を開始点として使用して、オプションを確認し、アップグレードを計画します。
       

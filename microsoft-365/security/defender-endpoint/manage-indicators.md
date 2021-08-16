@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a015755d0848b0287854db67021599917851d889bb178ff4f4129e02c09919db
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c12e832fbbe1628593cbfee4d861803ac1b513b7
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806302"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354370"
 ---
 # <a name="create-indicators"></a>インジケーターの作成
 
@@ -59,6 +59,11 @@ Defender for Endpoint のクラウド検出エンジンは、収集されたデ�
 - 許可
 - 通知のみ
 - 通知とブロック
+- 警告
+
+
+>[!NOTE]
+> 警告モードを使用すると、危険なアプリを開いたユーザーに警告が表示されます。 プロンプトはアプリの使用をブロックしませんが、アプリの適切な使用方法を説明するカスタム メッセージと会社ページへのリンクを提供できます。 ユーザーは警告をバイパスし、必要に応じてアプリを引き続き使用できます。 詳細については、「エンドポイント用 [Microsoft Defender で検出されたアプリを管理する」を参照してください](/cloud-app-security/mde-govern)。
 
 
 次のインジケーターを作成できます。

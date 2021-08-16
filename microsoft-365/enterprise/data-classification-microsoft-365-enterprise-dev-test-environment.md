@@ -2,8 +2,8 @@
 title: エンタープライズ テスト環境Microsoft 365データ分類
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境のドキュメントに保持ラベルを作成Microsoft 365使用します。
-ms.openlocfilehash: 79002397be7c44c5c160d80288d3fea6e9c1f9594a024f5aa4dc501f86dda886
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c4527f751881750c5f6427ea085baa9516f0bd73
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891321"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354310"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境Microsoft 365データ分類
 

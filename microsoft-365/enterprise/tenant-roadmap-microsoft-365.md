@@ -2,8 +2,8 @@
 title: テナントのロードマップMicrosoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: ユーザーのテナントをセットアップするためのロードマップMicrosoft 365。
-ms.openlocfilehash: d96d6246bfe38c9e3a5f3aadf04bf5cfe19ccd2f54697141a7c5463c72a6aea2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d041c87e12bfb3025592cb14cda5413c805dc880
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794716"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354214"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>テナントのロードマップMicrosoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "53794716"
 
 ネットワークがオンプレミスワーカーとリモート ワーカーの両方に対して Microsoft 365 へのアクセス用に最適化された後、次の大きなタスクは、DNS ドメイン 名、一般的なサービス、およびセキュリティで保護されたユーザー サインインをサポートする id インフラストラクチャ用に Microsoft 365 テナントを計画し、構成します。
 
-### <a name="plan"></a>計画
+### <a name="plan"></a>プラン
 
 テナントの実装を計画するには、次の方法を実行します。
 
@@ -45,7 +45,7 @@ ms.locfileid: "53794716"
 - [2007 Officeおよび 2010 Officeアップグレードを計画する](plan-upgrade-previous-versions-office.md)
 - [テナントの分離について](/compliance/assurance/microsoft-365-isolation-controls)
 
-### <a name="deploy"></a>展開
+### <a name="deploy"></a>展開する
 
 テナントを展開するには、次の方法を実行します。 
 

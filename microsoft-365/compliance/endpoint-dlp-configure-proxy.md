@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: エンドポイント DLP のデバイス プロキシとインターネット接続の構成方法について説明します。
-ms.openlocfilehash: 801f3cf4f2215002fb80f7c4d68c2f5b83f5d04d
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: a05afb4ac8d5c66e1bbcbba0e8cd8e13b3d8a6d46c73899ea40e5205898036e4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226709"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886039"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>エンドポイント DLP のデバイス プロキシとインターネット接続の構成
 

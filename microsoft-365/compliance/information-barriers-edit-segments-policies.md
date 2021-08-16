@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 668ca8e26371d80f068c2723357ce3ee407db03a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5d0a24afb895afbce800b29b0f235c4a67e598f130de930c0e31b2909c077dcb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885977"
 ---
 # <a name="manage-information-barrier-policies"></a>情報バリア ポリシーの管理
 
@@ -33,7 +33,7 @@ ms.locfileid: "50925553"
 | [ポリシーを非アクティブな状態に設定する](#set-a-policy-to-inactive-status) |ポリシーを変更する場合、またはポリシーを有効にしない場合は、ポリシーを非アクティブ状態に設定します。 |
 | [ポリシーを削除する](#remove-a-policy) | 特定のポリシーが不要になった場合は、情報バリア ポリシーを削除します。 |
 | [ポリシー アプリケーションを停止する](#stop-a-policy-application) | 情報バリア ポリシーの適用プロセスを停止する場合は、このアクションを実行します。<br/> ポリシー アプリケーションを停止しても、ユーザーに既に適用されているポリシーは元に戻されません。 |
-| [情報バリアのポリシーを定義する](information-barriers-policies.md) | このようなポリシーが設定されていない場合に情報バリア ポリシーを定義し、特定のユーザー グループ間の通信を制限または制限する必要があります。 |
+| [情報バリアに対するポリシーを定義する](information-barriers-policies.md) | このようなポリシーが設定されていない場合に情報バリア ポリシーを定義し、特定のユーザー グループ間の通信を制限または制限する必要があります。 |
 | [情報バリアのトラブルシューティング](information-barriers-troubleshooting.md) | 情報バリアで予期しない問題が発生した場合は、この記事を参照してください。 |
 
 > [!IMPORTANT]
@@ -119,7 +119,7 @@ ms.locfileid: "50925553"
 この時点で、1 つ以上の情報バリア ポリシーが非アクティブ状態に設定されます。 ここから、次の操作を実行できます。
 
 - この状態を維持します (ポリシー セットを非アクティブな状態に設定すると、ユーザーには影響しません)
-- [ポリシーの編集](#edit-a-policy) 
+- [ポリシーを編集する](#edit-a-policy) 
 - [ポリシーを削除する](#remove-a-policy)
 
 ## <a name="remove-a-policy"></a>ポリシーを削除する
@@ -165,7 +165,7 @@ ms.locfileid: "50925553"
 ## <a name="resources"></a>リソース
 
 - [情報バリアの概要を取得する](information-barriers.md)
-- [情報バリアのポリシーを定義する](information-barriers-policies.md)
+- [情報バリアに対するポリシーを定義する](information-barriers-policies.md)
 - [詳細については、Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [オンラインでの情報バリアの詳細SharePointする](/sharepoint/information-barriers)
 - [詳細については、「情報バリア」を参照OneDrive](/onedrive/information-barriers)

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ed4fe1e24a4414c4dad8f596df75705d1f6231a4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: cb0f84cac5b03f6b51d2853966be26686f8a13ec417230da670cae3106ced20c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657144"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885965"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection-preview"></a>内部リスク管理ブラウザーのシグナル検出 (プレビュー) について説明し、構成する
 

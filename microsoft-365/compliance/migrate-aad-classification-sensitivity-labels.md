@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 description: この記事では、従来の分類Azure Active Directoryラベルについて説明します。
-ms.openlocfilehash: 07bc09afb3e490961a8cc5a88857ec49dd962856
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 8999451af155462cbd2f4c08354b01115ac2763cb15da715d5a31ef7836a4d6b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221752"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885833"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Azure Active Directoryグループの分類とMicrosoft 365ラベル
 
@@ -32,7 +32,7 @@ ms.locfileid: "51221752"
 ## <a name="scenario-1-tenant-never-used-classic-aad-classifications-or-sensitivity-labels-for-documents-and-emails"></a>シナリオ 1: テナントは、従来の AAD 分類またはドキュメントおよび電子メールの感度ラベルを使用したことがない
 
 - テナント管理者は、AAD powershell コマンドレットを介してテナント フラグ "EnableMIPLabels" を true に設定することにより、グループの感度ラベルを有効にします。
-- テナント管理者は、コンプライアンス センターにMicrosoft 365[を作成します](https://compliance.microsoft.com)。
+- テナント管理者は、管理者に感度[ラベルを作成](https://compliance.microsoft.com)Microsoft 365 コンプライアンス センター。
     - テナント管理者は、暗号化や透かし付けなど、ファイルと電子メールに関連するアクションを選択できます。
     - テナント管理者は、[グループ] Microsoft 365を選択しSharePointラベルに対するオンライン サイト関連のアクションを選択できます。
 - テナント管理者がポリシーを発行します。
@@ -58,7 +58,7 @@ ms.locfileid: "51221752"
 
 ### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>ケース A: テナントがドキュメントと電子メールの感度ラベルを使用したことがない
 
-1. コンプライアンス センター [Microsoft 365、](https://compliance.microsoft.com)既存の従来の Azure サーバー ラベルと同じ名前のAD勧めします。
+1. このページ[Microsoft 365 コンプライアンス センター、](https://compliance.microsoft.com)既存の従来の Azure ラベルラベルと同じ名前のAD勧めします。
 2. PowerShell コマンドレットを使用して、名前マッピングを使用して既存の Microsoft 365およびSharePointにこれらの感度ラベルを適用します。
 3. 管理者は、従来の Azure ドメイン ラベルをADできます。
     - 互換性のあるワークロードでは、これらの感度ラベルとグループが一緒に作成されます。
@@ -88,7 +88,7 @@ ms.locfileid: "51221752"
 
 1. 管理者がテナントフラグ 'EnableMIPLabels' を true に設定してテナントの感度ラベル機能を有効にすると、グループ/サイト/チームのドキュメントと電子メールの感度ラベルが表示され、ダイアログ ボックスが表示されます。
 2. 管理者は、関連するグループ設定を指定することで、同じドキュメントと電子メールの感度ラベルを使用して、グループ/サイト/チームにプライバシーと外部ユーザー アクセスを適用できます。
-    1. [コンプライアンス センター [Microsoft 365で、[](https://compliance.microsoft.com)サイトとグループ **] タブを選択** します。
+    1. [サイトと [Microsoft 365 コンプライアンス センター]](https://compliance.microsoft.com)タブ **を選択** します。
     2. ドキュメントまたは電子メールの感度ラベルを編集します。
 
 ## <a name="sample-script"></a>サンプル スクリプト

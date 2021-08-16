@@ -1,7 +1,7 @@
 ---
 title: PowerShell を使用して Sway へのアクセスを無効Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
@@ -18,16 +18,16 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
 description: 組織で Sway へのアクセスをManageSway.ps1できる PowerShell スクリプトをダウンロードするMicrosoft 365します。
-ms.openlocfilehash: b659b428d28f033fe58d6badbc369b9dc374a4f89888c21461b6ae6155accbd7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c441e3087ce85e2f41b200ce0a76f5f6196ea4cf
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819405"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354286"
 ---
 # <a name="disable-access-to-sway-with-powershell-for-microsoft-365"></a>PowerShell を使用して Sway へのアクセスを無効Microsoft 365
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 PowerShell ManageSway.ps1スクリプトを使用すると、Sway を含む組織のMicrosoft 365を表示および無効化できます。 このスクリプトは、次のトピックで説明されている手順を自動化します。
   

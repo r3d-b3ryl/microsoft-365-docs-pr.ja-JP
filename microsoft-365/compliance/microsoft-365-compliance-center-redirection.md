@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: セキュリティとコンプライアンス センターのOffice 365ユーザーを自動的にユーザーにリダイレクトする方法Microsoft 365 コンプライアンス センター。。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 167a38d4f4cd06f98993f401d72f9b6dafa29f40
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ca5768eca9cdf0be9699c24c63ddd1fc72f5f4169ee9b8dd1b5dbf1dc46fa804
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543631"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885845"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>セキュリティとコンプライアンス センター Office 365ユーザーをサーバーにリダイレクトMicrosoft 365 コンプライアンス センター
 

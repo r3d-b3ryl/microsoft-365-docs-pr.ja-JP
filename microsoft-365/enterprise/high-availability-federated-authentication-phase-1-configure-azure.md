@@ -1,7 +1,7 @@
 ---
 title: 高可用性フェデレーション認証 フェーズ 1 Azure の構成
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro
@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '概要: 高可用性フェデレーション認証をホストMicrosoft Azureインフラストラクチャを構成して、ユーザーにMicrosoft 365。'
-ms.openlocfilehash: e9b68fe1fa2c4028186d86b5cf6d419f63cfc79d57d5de8c4817c762791b3a55
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 759b6f72a0d86a090c0db265abd23feea6aa1543
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864766"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354274"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1: Azure を構成する
 

@@ -1,9 +1,9 @@
 ---
 title: Microsoft 365 Contoso Corporation のエンタープライズ向けサービス
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空の代表的なグローバル組織が企業に対してどのようにMicrosoft 365採用したのか。
-ms.openlocfilehash: deef90fc670c0baca49d79ea6c285cd6fb2ee4f9151d83b6a336e0e7b81b0ff5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 90d8e0c9d0cd81d415fc8ca9751b0cecd4331623
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830277"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354334"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Contoso Corporation のエンタープライズ向けサービス
 

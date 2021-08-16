@@ -1,7 +1,7 @@
 ---
 title: PowerShell を使用して、ライセンスMicrosoft 365ライセンスされていないユーザーを表示する
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/21/2020
 audience: Admin
@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: この記事では、PowerShell を使用してライセンスおよびライセンスのないユーザー アカウントを表示するMicrosoft 365説明します。
-ms.openlocfilehash: 3bbc68e8e4e2b7186e95d8d534525181bcf885e2992476955a7df15c514b546d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0f1b590dade1d07499ac6c9b5f8888d7cab7ecd6
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840733"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354394"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>PowerShell を使用して、ライセンスMicrosoft 365ライセンスされていないユーザーを表示する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 組織のユーザー アカウントMicrosoft 365、組織内で利用可能なライセンス プランから、利用可能なライセンスの一部、すべて、または割り当てられていない可能性があります。 PowerShell を使用して、Microsoft 365ライセンスユーザーとライセンスのないユーザーをすばやく検索できます。
 

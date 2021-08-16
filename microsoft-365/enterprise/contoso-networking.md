@@ -1,9 +1,9 @@
 ---
 title: Contoso Corporation のネットワーク
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso のネットワーク インフラストラクチャと、企業が SD-WAN テクノロジを使用して、エンタープライズ クラウド サービスに最適なネットワーク パフォーマンスをMicrosoft 365について説明します。
-ms.openlocfilehash: a7b57a4a126b455b3a063abba9e215ec8d02f2b1b630234e647347fdd14dce6e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad7bac187a81564c3d222069bce06756dd176a58
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899539"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354322"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation のネットワーク
 

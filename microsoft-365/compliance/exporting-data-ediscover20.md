@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: プレゼンテーションまたは外部レビュー用のレビュー セットからコンテンツをエクスポートまたはダウンロードする方法については、Advanced eDiscoveryします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 25c64cad6877a05dba9df418955a6a79a539993a
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 8710f505d06e21d52a2445cd82780e8f0dff9b075623447a53be067bb9fe8d9d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399255"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886001"
 ---
 # <a name="export-case-data-in-advanced-ediscovery"></a>ファイル内のケース データをエクスポートAdvanced eDiscovery
 

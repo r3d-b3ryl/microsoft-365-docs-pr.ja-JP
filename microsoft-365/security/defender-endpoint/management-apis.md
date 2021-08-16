@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 82cfac1498ae11afe108e68a3c9caf70bf8645e3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 49a9d668182a065f3b0a5168f14ed9c7472e00ac37615518c31a252d22191861
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652829"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902796"
 ---
 # <a name="overview-of-management-and-apis"></a>管理と API の概要
 
@@ -89,7 +89,7 @@ Defender for Endpoint イベント情報は、長期的なデータ保持のた�
 
 セキュリティ情報とイベント管理 (SIEM) 統合を有効にした場合、SIEM ソリューションを使用するか、検出 REST API に直接接続することで、Microsoft Defender セキュリティ センター から検出を取得できます。 これにより、値が事前に設定された SIEM コネクタ アクセスの詳細セクションがアクティブ化され、アプリケーションが Azure Active Directory (Azure AD) テナントの下に作成されます。 詳細については [、「SIEM 統合」を参照してください](enable-siem-integration.md)。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint API にアクセスする](apis-intro.md)
 - [サポートされている API](exposed-apis-list.md)

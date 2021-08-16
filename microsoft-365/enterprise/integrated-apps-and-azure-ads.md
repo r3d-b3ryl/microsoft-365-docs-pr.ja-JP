@@ -1,7 +1,7 @@
 ---
 title: 管理者向け統合AD Azure Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Azure Office 365に統合されたアプリAD登録および管理する方法について説明します。グローバル管理者レベルでのアプリの承認を許可します。
-ms.openlocfilehash: 54825d551c39dde75596615080618d9a0693ac90ada420373d28bcc6881e4b09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f604260646aa4e6793540003346c9e83d7a6b269
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830217"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354226"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>管理者向け統合AD Azure Microsoft 365
 

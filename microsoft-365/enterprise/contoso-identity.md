@@ -1,9 +1,9 @@
 ---
 title: Contoso 社の ID
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
-ms.openlocfilehash: 47a9492f0924f777da12361b2c161ef9b5b0770d24d720ac927b02b44f369bc8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9138e0743e5194e98213ab2d2c2bfe457500b0de
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899752"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58353794"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso 社の ID
 
