@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: モバイル デバイスからメールにアクセスする方法について学習します。
-ms.openlocfilehash: 1c1033d98d9035767e9d7d8608a33421c7c30cbd
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: a2a4df56a6f17a8e4d5a1c7b9165b58971c46170fdfa08b808b1cc7ca2563d66
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832840"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>モバイル デバイスからメールにアクセスするためのオプション
 

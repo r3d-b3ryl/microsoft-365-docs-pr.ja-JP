@@ -18,12 +18,12 @@ ms.custom:
 description: セキュリティ情報とイベント管理 (SIEM) サーバーとクラウド サービスとアプリケーションMicrosoft 365概要を確認する
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea4d844595aaab8d8148666430187edef463b92e
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 3b4f0275ed9f63aaf3e5717a3511caa28055f0bf0e469c1c17a46e17e4a25a56
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105598"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57003107"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>セキュリティ情報とイベント管理 (SIEM) サーバーとサービスMicrosoft 365アプリケーションとの統合
 
@@ -34,7 +34,7 @@ ms.locfileid: "53105598"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-## <a name="summary"></a>概要
+## <a name="summary"></a>要約
 
 組織がセキュリティ情報とイベント管理 (SIEM) サーバーを使用または取得する計画を立てましたか? どのように統合されるか疑問に思うMicrosoft 365またはOffice 365。 この記事では、SIEM サーバーとサービスおよびアプリケーションを統合するために使用できるリソースMicrosoft 365示します。
 

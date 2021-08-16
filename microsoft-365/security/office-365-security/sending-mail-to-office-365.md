@@ -19,12 +19,12 @@ ms.custom:
 description: 外部送信者として、ユーザーに電子メールを配信する機能を増やMicrosoft 365。 また、フィッシング詐欺の試みを外部ユーザー&迷惑メールを報告する方法も学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4869b0f02415b3802b34625789817068cbe14c57
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e4ca59fdcabe96bb91c4b49d4e30c6129783755a0c06c310d0d9f3948fe514c9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205631"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57002654"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>メールをメールにMicrosoft 365
 

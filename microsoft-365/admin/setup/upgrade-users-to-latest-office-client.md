@@ -24,12 +24,12 @@ ms.custom:
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 組織のユーザー向けMicrosoft OfficeクライアントにOfficeアップグレードする方法について学習します。
 ms.topic: article
-ms.openlocfilehash: 877659e420079ed607adc13e5bbe44bdc979f5ac
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 15f798d413cb12cb0a44da9f853e663c0a2ae436f0aeb8a583398a13d9f4f9dc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924697"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832765"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>ビジネス ユーザー Microsoft 365最新のクライアントにアップグレードOfficeする
 

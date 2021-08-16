@@ -12,12 +12,12 @@ ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで、転送される新しいドメインを使用して、転送されたことがない外部ドメインにメッセージを転送するユーザーを調査する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f3a5f125a045176f152ccd079ebe7f7e40bc39f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 98705d1f865886db91c8073188beaa0b3bc6b6da711839c0e43f6c81b1a7eae4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57002694"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターで電子メールの分析情報を転送&ドメイン
 

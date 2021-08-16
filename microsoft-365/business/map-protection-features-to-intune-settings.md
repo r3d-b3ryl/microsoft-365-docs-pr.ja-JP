@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: アプリ内の保護機能が Intune Microsoft 365 Business Premiumマップする方法について学習します。 サブスクリプションは、Intune 設定を変更するライセンスを提供します。
-ms.openlocfilehash: 9a6dcf014e009389e49860fa96486c264c22f501
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 844b83bca9483f72fd322d666803c42b90fee41d3e0047ea93b4b6b07717b0dd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580116"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852733"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Intune の設定にマップMicrosoft 365 Business Premium保護機能の方法
 
@@ -104,7 +104,7 @@ Intune 設定を見つけるには、Microsoft 365 Business Premium 管理者資
 |Microsoft Edge で Web ベースの脅威から PC を保護する  <br/> |[ **Microsoft Edge ブラウザーの設定**] の [ **SmartScreen**] が [ **必須**] に設定されます。  <br/> |
 |指定の時間アイドル状態が続いた場合にデバイスの画面をオフにする (分)  <br/> |画面がロックされるまでの非アクティブな最長時間 (分)  <br/> |
 |ユーザーが Microsoft Storeからアプリをダウンロードすることを許可する  <br/> |カスタム URI ポリシー  <br/> |
-|ユーザーが Cortana にアクセスすることを許可する  <br/> |**全般** \>**Cortana** が Intune でブロック **に** 設定されているのは、ユーザーのアカウントで **オフ** に設定Microsoft 365 Business Premium。  <br/> |
+|ユーザーが Cortana にアクセスすることを許可する  <br/> |**全般** \>**Cortana** でオフに **設定** すると、Intune でブロックMicrosoft 365 Business Premium。   <br/> |
 |ユーザーが Microsoft から Windows のヒントと広告を受け取ることを許可する  <br/> |**Windowsスポットライト** の場合、この設定が [オフ]に設定されている場合は、すべてブロックMicrosoft 365 Business Premium。  <br/> |
 |Windows 10 デバイスを自動的に最新の状態に維持する  <br/> | この設定は、[サービスMicrosoft Intune - Windows 10リング] の順に選択し、[Windows 10 デバイスのポリシーの更新] \> **を選択** し、[プロパティ] \> 設定。  <br/>  [設定] Microsoft 365 Business Premiumが **[オン**] に設定されている場合、次のすべての設定が設定されます。  <br/> **サービス ブランチは** **CB** に設定されます (この機能が無効になっている場合は CBB Microsoft 365 Business Premium)。  <br/> **Microsoft 製品の更新プログラム**: **許可**  <br/> **Windows ドライバー**: **許可**  <br/> **自動更新の動作**: **メンテナンス時に自動的にインストールする**  <br/> **アクティブ時間の開始**: **6 AM**  <br/> **アクティブ時間の終了**: **10 PM**  <br/> **品質更新プログラムの延期期間 (日数)**: **0**  <br/> **機能更新プログラムの延期期間 (日数)**: **0**  <br/> **配信の最適化ダウンロード モード**: **HTTP と同じ NAT でのピアリングの組み合わせ**  <br/> |
 |||

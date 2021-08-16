@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: ユーザーのメールボックスに配置できるさまざまな種類の保留リストを特定するExchange OnlineをMicrosoft 365。
-ms.openlocfilehash: 1b7c8d2db782ca811e02783115b621ccba772066
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: 2e781fea46706415525ef9396485310ad15ffc5e600c6664817b8637c84e44b7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578435"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895321"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -94,7 +94,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 次の表では **、Get-OrganizationConfig** コマンドレットの実行時に *InPlaceHolds* プロパティに含まれる GUID に基づいて、さまざまな種類の組織全体のホールドと各種類を識別する方法について説明します。
 
-| ホールドの種類                                                                                                | 値の例                           | 説明                                                                                                                                                                                                                                                            |
+| ホールドの種類                                                                                                | 値の例                           | Description                                                                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Microsoft 365、パブリック フォルダー、ExchangeチャットExchange保持ポリシー Teams適用される | `mbx7cfb30345d454ac0a989ab3041051209:2` | Exchange メールボックス、Exchange パブリック フォルダー、および Microsoft Teams の 1xN チャットに適用される組織全体の保持ポリシーは、プレフィックスで始まる GUID によって識別 `mbx` されます。 メモ 1xN チャットは、個々のチャット参加者のメールボックスに格納されます。  |
 | Microsoft 365グループおよびチャネル メッセージにMicrosoft 365されるTeams保持ポリシー                | `grp1a0a132ee8944501a4bb6a452ec31171:3` | 組織全体の保持ポリシーは、Microsoft 365グループおよびチャネル メッセージに適用Microsoft Teamsプレフィックスで始まる GUID によって識別 `grp` されます。 メモ チャネル メッセージは、Microsoft チームに関連付けられているグループ メールボックスに格納されます。 |
@@ -282,7 +282,7 @@ $ht.MailboxLog | Convertfrom-Json
 
 アイテム保持ポリシーがメールボックスに適用されなくなった場合、コンテンツの削除を防ぐために、ユーザーに一時的な遅延ホールドを設定します。 コマンドを実行すると、遅延ホールドを無効 `Set-Mailbox -RemoveDelayHoldApplied` にできます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 メールボックスに適用される保留リストを特定した後、保留期間の変更、保留期間の一時的または完全な削除、Microsoft 365 アイテム保持ポリシーから非アクティブなメールボックスの除外などのタスクを実行できます。 保留リストに関連するタスクの実行の詳細については、次のいずれかのトピックを参照してください。
 

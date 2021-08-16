@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーに対するこれらのセキュリティ推奨事項Microsoft 365 Business Premiumユーザーに与える影響とデータの保護について学習します。
-ms.openlocfilehash: ce64189d721bc3eb356a39f431af01e67973516a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8e2ce13b694aa526c3c063bec7a4dc8c7699244f2c00f4dfee5d38bfe5208b1b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924257"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881690"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>これらのセキュリティ推奨事項がユーザーに与える影響
 
@@ -72,7 +72,7 @@ ms.locfileid: "52924257"
 
 |**Windows 10**|**Mac**|
 |:-----|:------|
-|デバイス保護BitLocker有効にする<p><p> [Windows Defenderをオンに維持する <p>ファイアウォールのWindowsする| FileVault を使用して Mac ディスクを暗号化する <p><p>信頼性の高いウイルス対策ソフトウェアを使用する <p>ファイアウォール保護を有効にする|
+|BitLocker デバイス保護を有効にする<p><p> [Windows Defenderをオンに維持する <p>ファイアウォールのWindowsする| FileVault を使用して Mac ディスクを暗号化する <p><p>信頼性の高いウイルス対策ソフトウェアを使用する <p>ファイアウォール保護を有効にする|
 
 これらの推奨事項の詳細については、「アカウントとデバイスをハッカーやマルウェアから保護 [する」を参照してください](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)。
 

@@ -17,16 +17,16 @@ f1.keywords:
 - NOCSH
 description: ハイブリッドモダン認証 (HMA) Skype for Businessを使用して、より安全なユーザー認証と承認を提供するために、オンプレミスのユーザー認証を構成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9695815d0a085931b10f7f64b9fca2e997af9077
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 74046b89ba5ded65c9a645ca43e94b195ddf74896b0fd8832653ac8d96606b5f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286059"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864912"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 モダン認証は、より安全なユーザー認証と承認を提供する ID 管理の方法であり、Skype for Business サーバーオンプレミスおよび Exchange サーバーオンプレミス、およびスプリットドメイン Skype for Business ハイブリッドで利用できます。
 
@@ -82,7 +82,7 @@ ms.locfileid: "53286059"
 
 - **SIP/SMTP ドメイン**
 
-  - Ex. contoso.com (サーバーとOffice 365)
+  - 例 contoso.com (サーバーとOffice 365)
 
 - **テナント ID**
 
@@ -96,9 +96,9 @@ ms.locfileid: "53286059"
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
 ```
 
-- Ex. 内部: https://lyncwebint01.contoso.com
+- 例 内部: https://lyncwebint01.contoso.com
 
-- Ex. 外部: https://lyncwebext01.contoso.com
+- 例 外部: https://lyncwebext01.contoso.com
 
 サーバーを使用しているStandard Edition内部 URL は空白になります。 この場合は、内部 URL にプール fqdn を使用します。
 

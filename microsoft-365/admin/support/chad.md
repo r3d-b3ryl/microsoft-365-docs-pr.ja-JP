@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 653cd5901923fe4b2b10abd50462acc4d1090bc4
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2cfd80ad1c0493912c87437485b8e6aa418624f33ee3bc19f4bf80a409f43a85
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296361"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832609"
 ---
 # <a name="contact-support-for-chad"></a>チャドのサポートに問い合わせ
 

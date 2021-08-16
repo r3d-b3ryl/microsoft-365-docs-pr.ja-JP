@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) の送信スパム コントロールと、大量メールを送信する必要がある場合の処理について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0fb6bfe5d83c551c0a93cc7b453b27a2d7b476bc
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2207283857cd15bf2e8fcadf223532ecd810da4a1f0908cc4d391b7aee89263b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57002678"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>EOP での送信スパム保護
 
@@ -42,7 +42,7 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>送信スパムを制御するために管理者が実行できる操作
 
-- **組** み込みの通知を使用する : ユーザーがサービスまたは送信 [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)スパム ポリシー [](configure-the-outbound-spam-policy.md)の送信制限を超え、電子メールの送信が制限されている場合、Userという名前の既定のアラート ポリシーは、メールの送信を制限された状態で **、TenantAdmins** ( Global **admins**) グループのメンバーに電子メール通知を送信します。 これらの通知を受け取る他のユーザーを構成するには、「制限付き [ユーザーのアラート設定を確認する」を参照してください](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 また、メール送信制限という名前の既定のアラート ポリシーが超過し、疑わしいメール送信パターンが **検出され、TenantAdmins** ( Global **admins**) グループのメンバーに電子メール通知を送信しました。 アラート ポリシーの詳細については、「アラート ポリシー」[を参照Microsoft 365。](../../compliance/alert-policies.md)
+- **組** み込みの通知を使用する : ユーザーがサービスまたは送信 [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)スパム ポリシー [](configure-the-outbound-spam-policy.md)の送信制限を超え、電子メールの送信が制限されている場合、Userという名前の既定のアラート ポリシーは、メールの送信を制限された状態で **、TenantAdmins** ( Global **admins**) グループのメンバーに電子メール通知を送信します。 これらの通知を受け取る他のユーザーを構成するには、「制限付き [ユーザーのアラート設定を確認する」を参照してください](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 また、メール送信制限という名前の既定のアラート ポリシーが超過し、疑わしいメール送信パターンが **検出され、TenantAdmins** ( Global **admins**) グループのメンバーに電子メール通知を送信しました。 アラート ポリシーの詳細については、「[Alert policies in Microsoft 365 (Microsoft 365 でのアラート ポリシー)](../../compliance/alert-policies.md)」を参照してください。
 
 - サードパーティの電子メール プロバイダーからのスパム苦情を確認する **:** Outlook.com、Yahoo、AOL などの多くの電子メール サービスでは、サービス内のユーザーが Microsoft 365 からのメールをスパムとしてマークした場合、メッセージがパッケージ化され、レビューのために返送されるフィードバック ループが提供されます。 Outlook.com の送信者のサポートの詳細については、「」 を参照してください <https://sendersupport.olc.protection.outlook.com/pm/services.aspx> 。
 

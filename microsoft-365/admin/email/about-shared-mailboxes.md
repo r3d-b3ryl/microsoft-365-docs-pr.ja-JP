@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスは、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。 共有メールボックスを作成する前に知っておくべきことを説明します。
-ms.openlocfilehash: f6c03787db890e1963f659aa9d2ece052d50a82c
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: cdbe76fa5a0daee9d469e76ebc695d61dd52584186e0c56c6ee285d427fcbe3e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832885"
 ---
 # <a name="about-shared-mailboxes"></a>共有メールボックスについて
 
@@ -36,7 +36,7 @@ ms.locfileid: "53541639"
 
 グループ メールボックスへのアクセス許可を持つユーザーは、管理者がそのユーザーに対して必要なアクセス許可を付与している場合、メールボックスのメール アドレスとして送信したり、メールボックスのメール アドレスの代わりに送信したりできます。 これは、ユーザーが "Contoso サポート" や "建物 A の受付デスク" からメールを送信できるため、ヘルプとサポートのメールボックスとして特に役立ちます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 [共有メールボックスを作成する](create-a-shared-mailbox.md)前に、知っておくべきことがいくつかあります。
 

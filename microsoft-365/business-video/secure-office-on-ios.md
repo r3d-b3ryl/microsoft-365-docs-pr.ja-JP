@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: アプリを使用して iOS Officeアプリをセキュリティで保護するMicrosoft 365 Business Premium。
-ms.openlocfilehash: 5a5f52f87fe63fdec6df9611a5ea44a2ecf4466b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: bdab7e1ddbd55e64c1c568cc65ff3f700223d9dfd4c93213f51e8c0909fbc6c3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580464"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852769"
 ---
 # <a name="secure-office-apps-on-ios"></a>iOS の Office アプリをセキュリティで保護する
 

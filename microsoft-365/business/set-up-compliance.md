@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: コンプライアンス機能を設定して、データ損失を防止し、お客様と顧客の機密情報を安全に保ちます。
-ms.openlocfilehash: 945f8a283b90b89da2fbe67a073e0807b80d198f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ae5e5727db1f372c40aa4468329021525b6dfc8c5ebbf34705184e461df069e5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881855"
 ---
 # <a name="set-up-compliance-features"></a>コンプライアンス機能をセットアップする
 

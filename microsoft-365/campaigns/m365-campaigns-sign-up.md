@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンのユーザー向けMicrosoft 365手順を実行します。 メール、データ、コミュニケーションに対するサイバーセキュリティの脅威からキャンペーンを保護します。
-ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: eaba43a9163b4ee1db5b653b04c0eedea7716297e510edd4eb5926b41a554bda
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398219"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881726"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>キャンペーンにMicrosoft 365サインアップする 
 
@@ -49,7 +49,7 @@ ms.locfileid: "51398219"
 1. [キャンペーン] メールMicrosoft 365招待で、[組織の登録] を選択 **>。** これにより、サインアップMicrosoft 365にアクセスできます。
     > [!NOTE]
     > ビジネス サブスクリプション用の既存の Microsoft 365 を既に持ち、Microsoft 365 for Campaigns オファーを追加する場合は、「Microsoft 365 [for Campaigns」](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)を既存のサブスクリプションに追加します。
-1. **[ビジネス 情報Microsoft 365 Business] ページ** で、ビジネスの詳細を入力します。 [ **ビジネス用メール アドレス] では**、現在のメール アドレスを使用します。 このアドレスは、セットアップ プロセス中に連絡を取り合う場合にのみ必要です。 **[次へ]** を選択します。
+1. **[ビジネスMicrosoft 365] ページで**、ビジネスの詳細を入力します。 [ **ビジネス用メール アドレス] では**、現在のメール アドレスを使用します。 このアドレスは、セットアップ プロセス中に連絡を取り合う場合にのみ必要です。 **[次へ]** を選択します。
 1. **[ユーザー ID の作成] ページで、次の情報を使用します**。
     1. [ **ユーザー名**] に、メール アドレスに使用する名前またはエイリアスを入力します。 たとえば、Alice または Rob と呼ばれる場合があります。 大規模なキャンペーンでは、AliceC または AliceChavez の方が理にかなっている可能性があります。
     2. [ **会社]** に、作業するキャンペーンの名前を入力します。 たとえば、ContosoCampaign。 既にドメインを所有している場合は、ここでその名前を使用します。 

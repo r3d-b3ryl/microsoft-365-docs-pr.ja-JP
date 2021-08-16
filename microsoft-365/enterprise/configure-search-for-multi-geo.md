@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 複数地域環境で検索を構成する方法について学習します。 複数地域環境で結果OneDrive返すクライアントは、一部のクライアントのみです。
-ms.openlocfilehash: dfc9e3dd986132810f363ba47ba18eae45666fc7
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 65f74ce9d21fd9323cd2a3421875399c3a5d8346fd55e9820398c3363e099e9b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362272"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864948"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Office 365 Multi-Geo ために検索を構成する
 

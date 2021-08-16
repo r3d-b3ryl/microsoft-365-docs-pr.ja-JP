@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: PowerShell を使用して個々のユーザー アカウントまたは複数のユーザー アカウントMicrosoft 365する方法。
-ms.openlocfilehash: c3676acdec3bbba328809ee1528206bbc44f94f1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c3889c7611d4c0442eeac2e42fcaea0cb71aeb7b8467f8f6e88d11c8ac2fad21
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907566"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864809"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>PowerShell Microsoft 365ユーザー アカウントを作成する
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 PowerShell を使用して、複数Microsoft 365含むユーザー アカウントを効率的に作成できます。
 
@@ -45,7 +45,7 @@ PowerShell でユーザー アカウントを作成する場合、特定のア�
 |**UsageLocation** <br/> |いいえ  <br/> |これは、有効な ISO 3166-1 α-2 の国コードです。 たとえば、 *米国の場合* は米国、フランスの *場合は FR* です。 一部のサービスは一部の国ではMicrosoft 365利用できないので、この値を提供することが重要です。 アカウントにこの値が構成されていない限り、ユーザー アカウントにライセンスを割り当てすることはできません。 詳細については、「ライセンス制限 [について」を参照してください](https://go.microsoft.com/fwlink/p/?LinkId=691730)。<br/> |
 
 >[!Note]
->[管理者センターを使用してユーザー アカウント](../admin/add-users/add-users.md)を作成Microsoft 365します。
+>[ユーザー アカウントを作成する方法については](../admin/add-users/add-users.md)、Microsoft 365 管理センター。
 > 
 > その他のリソースの一覧については、「ユーザーと [グループの管理」を参照してください](../admin/add-users/index.yml)。
 >   

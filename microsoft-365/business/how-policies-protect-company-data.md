@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: ユーザーの個人用デバイス上の会社のデータを保護するには、特定のデバイスとセキュリティ グループを対象とするポリシーを使用します。
-ms.openlocfilehash: 5c6a4b85b080c6c1afaf6ac5bec046f2a539ee20
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: cb8bb7dc8c98e5860281ad265130e18dddefe00014928835e303ad8247b2e7ba
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852753"
 ---
 # <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>ビジネス向けポリシー Microsoft 365企業データを保護する方法
 

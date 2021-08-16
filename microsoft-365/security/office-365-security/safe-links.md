@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: この記事では、管理者は、フィッシングや悪意のある URL を使用する他の攻撃から組織を保護するために、Office 365 用 Defender の セーフ リンク保護について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1921b9cdd8e42cc83e2a8a0cda23965fd82a9f1
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 75509ea5c1d340347db75f5eba91b1abf1b795f07077977b096dde1e803388f8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725890"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57002658"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>セーフMicrosoft Defender for Office 365
 
@@ -62,7 +62,7 @@ ms.locfileid: "53725890"
 
 - **Office 365 :** セーフアプリOffice 365のリンク保護は、サポートされているデスクトップ、モバイル、および Web アプリで利用できます。 リンク **ポリシー** セーフ外Office 365グローバル設定で、アプリのリンク保護セーフ構成します。  手順については、「Microsoft Defender for セーフリンクのグローバル設定を構成する」[を参照Office 365。](configure-global-settings-for-safe-links.md)
 
-  セーフOffice 365 アプリのリンク保護は、ユーザーがアクティブな セーフ Links ポリシーに含まれているかどうかに関係なく、Office 365 の Defender のライセンスを取得している組織内のすべてのユーザーに適用されます。
+  Office 365 アプリ向けの安全なリンクの保護は、Microsoft Defender for Office 365 のライセンスを付与された組織内のすべてのユーザーに適用され、そのユーザーがアクティブな安全なリンク ポリシーに含まれているかどうかは関係ありません。
 
   セーフ アプリの セーフ リンク保護の詳細Office 365、この記事の後半の[](#safe-links-settings-for-office-365-apps)「セーフ リンクの設定Office 365」セクションを参照してください。
 
@@ -256,7 +256,7 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 [リンク] のグローバル設定で URL の一覧をセーフします。 手順については [、「Configure the Configure the following URL」リストを参照してください](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)。
 
-**注意**: 
+**注意**:
 
 - あらゆる場所でブロックされている URL の本当に汎用的なリストについては、「Manage [the Tenant Allow/Block List」を参照してください](tenant-allow-block-list.md)。
 - [次の URL を **ブロックする] リストの制限** 。
@@ -293,7 +293,7 @@ Standard および Strict ポリシー設定の推奨値の詳細については
 
 新規または既存の セーフ リンク ポリシーのリストにエントリを追加するには、「Create[セーフ Links ポリシー](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) 」または「セーフ リンク ポリシーを変更する」[を参照してください](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
 
-**注意**: 
+**注意**:
 
 - 次のクライアントは、[リンク] ポリシーの [次の **URL** を書き換えセーフしません。 ポリシーに含まれるユーザーは、次のクライアントでのリンク スキャンの結果に基づいて URL へのアクセスをブロックセーフできます。
   - Microsoft Teams

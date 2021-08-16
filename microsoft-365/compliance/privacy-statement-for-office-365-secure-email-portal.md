@@ -16,12 +16,12 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: '最終更新日: 2017 年 5 月'
-ms.openlocfilehash: 069b47305557ef8a6a4e0a732288977842b52a5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ac7bc50b621930244e7e549c27489436c4bbf6a19302c3cd16310d9f69108b1b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626631"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895297"
 ---
 # <a name="privacy-statement-for-secure-email-portal"></a>Secure Email Portal のプライバシーに関する声明
 
@@ -37,7 +37,7 @@ Microsoft アカウント、仕事用アカウント、学校アカウント、G
   
 復号化プロセス中に、受信した暗号化されたメールは、新しい OME 機能ポータルによって保存されません。これは、新しい OME 機能ポータルの外部にいつでも送信されません。
   
-新しい OME 機能ポータルでは、新しい OME 機能の使用とパフォーマンスに関するデータ ポイント (暗号化されたメッセージの表示頻度、ブラウザーまたはアプリの使用、発生したエラーなど) を収集する場合があります。これは、この機能および他の Microsoft アプリ、製品の品質、セキュリティ、および整合性を向上させる目的で集約して分析される場合があります。、またはサービス。 この情報は、お客様に対する広告の識別、連絡、またはターゲット設定には使用されません。
+新しい OME 機能ポータルでは、新しい OME 機能の使用とパフォーマンスに関するデータ ポイント (暗号化されたメッセージの表示頻度、ブラウザーまたはアプリの使用、発生したエラーなど) を収集する場合があります。これは、この機能と他の Microsoft アプリの品質、セキュリティ、整合性を向上させる目的で集約して分析される場合があります。、製品、またはサービス。 この情報は、お客様に対する広告の識別、連絡、またはターゲット設定には使用されません。
   
 ## <a name="for-more-information"></a>詳細情報
 
