@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: 4d2834294ff747859526f8af687b2ccabc59decf885828bb7569a3cceb2b519f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c357f0fd7ba729156b5a632aa46510c39683ac2d
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825501"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247901"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -45,7 +45,7 @@ ms.locfileid: "53825501"
 
 すべてのユーザーのクライアントにアドインが表示されるには、最大 24 時間かかる場合があります。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 アドインの一元展開では、ユーザーが Microsoft 365 Enterprise SKU E3/E5/F3 または Business SKU: Business Basic、Business Standard、Business プレミアム (および組織 ID を使用して Office にサインイン)を使用し、Exchange Online メールボックスとアクティブな Exchange Online メールボックスを持っている必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリに存在するか、サブスクリプション ディレクトリにAzure Active Directory。
 次の手順に従って、OfficeとExchange要件を確認したり、集中展開の互換性チェックを[使用できます](#centralized-deployment-compatibility-checker)。
@@ -164,6 +164,6 @@ web 用の Office アプリ (Word、Excel など) の使用中にアドインの
 
 [管理センターにアドインを展開](../manage/manage-deployment-of-add-ins.md) する (記事)\
 [管理センターでアドインを管理](manage-addins-in-the-admin-center.md) する (記事)\
-[集中展開に関する FAQ](../manage/centralized-deployment-faq.md) (記事)\
+[集中展開に関する FAQ](../manage/centralized-deployment-faq.yml) (記事)\
 [ビジネス ユーザー Microsoft 365最新の Officeクライアント](../setup/upgrade-users-to-latest-office-client.md)にアップグレードする (記事)
  

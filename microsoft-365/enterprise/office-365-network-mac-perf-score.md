@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365ネットワーク評価
-ms.openlocfilehash: c09e34b1bc3a8bf0f82a4a1e3c72e67f320abd43
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: c9533cb4189709ad4e32194371fb0863b4b5fa3f38eb035f7f0bdc505152b731
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854732"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365ネットワーク評価
 
-管理センター Microsoft 365ネットワーク接続では、ネットワーク評価によって、多くのネットワーク パフォーマンス 指標の集約がエンタープライズ ネットワーク境界正常性のスナップショットに集約されます。 ネットワーク評価は、顧客の責任あるネットワーク設計がユーザー エクスペリエンスに与える影響Office 365示します。 ネットワーク評価の対象は、テナント全体と、ユーザーがテナントに接続する地理的な場所の両方です。 この評価により、Microsoft 365管理者は、企業のネットワーク正常性を即座に確認し、グローバルオフィスの場所に関する詳細なレポートをすばやくドリルダウンできます。
+Microsoft 365 管理センターのネットワーク接続では、ネットワーク評価によって、多くのネットワーク パフォーマンス 指標の集約がエンタープライズ ネットワーク境界の正常性のスナップショットに集約されます。 ネットワーク評価は、顧客の責任あるネットワーク設計がユーザー エクスペリエンスに与える影響Office 365示します。 ネットワーク評価の対象は、テナント全体と、ユーザーがテナントに接続する地理的な場所の両方です。 この評価により、Microsoft 365管理者は、企業のネットワーク正常性を即座に確認し、グローバルオフィスの場所に関する詳細なレポートをすばやくドリルダウンできます。
 
 ネットワーク評価ポイントの値は 0 ~ 100 で、TCP 待機時間、ダウンロード速度、UDP 接続品質メトリックの平均です。 これらの指標は、1 日 1 回コンパイルされます。 Microsoft 所有のネットワークのパフォーマンス 指標は、評価結果が明確で企業ネットワークに固有の結果を得る場合に、これらの測定値から除外されます。
 
@@ -42,7 +42,7 @@ ms.locfileid: "52470486"
 | 0                  | ネットワークの問題に関する一般的なトピック |
 
 >[!IMPORTANT]
->Microsoft 365 管理センターのネットワーク分析情報、パフォーマンスの推奨事項、評価は現在プレビュー状態であり、機能プレビュー プログラムに登録されている Microsoft 365 テナントでのみ使用できます。
+>Microsoft 365 管理 センターのネットワーク分析情報、パフォーマンスの推奨事項、評価は現在プレビュー状態であり、機能プレビュー プログラムに登録されている Microsoft 365 テナントでのみ使用できます。
 
 ## <a name="network-assessment-panel"></a>ネットワーク評価パネル
 
@@ -97,9 +97,9 @@ ms.locfileid: "52470486"
 
 これらの UDP 測定値から 1 ~ 5 のスケールの平均オピニオン スコアを計算します。 次に、ネットワーク評価の 0 ~ 100 ポイントスケールMicrosoft Teamsマップします。  全体的な良い点は 87.5 ポイントを超え、全体的に悪い点は 50 ポイントを下回っています。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-[管理センターでのネットワークMicrosoft 365 (プレビュー)](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365パフォーマンス分析情報 (プレビュー)](office-365-network-mac-perf-insights.md)
 

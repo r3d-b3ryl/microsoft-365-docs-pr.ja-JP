@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: データセンターの新Office 365地域について、およびデータ常駐オプションを使用してコア データの新しい geo への移行を要求する方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 797ac69e2c60c2e4c3ece38b376406027ff65e36
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: ddf0caa30f80033a9cfdbbc4cd19f0811f92fcd5e4f28bb98d0e949f9f67412c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854713"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>コア データを新しいデータ センター geos にMicrosoft 365する
 

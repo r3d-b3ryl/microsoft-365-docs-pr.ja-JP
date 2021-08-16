@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender を有効にする
+title: セキュリティ センターでMicrosoft 365 Defenderを有効Microsoft 365する
 description: セキュリティ インシデントと対応のMicrosoft 365 Defenderを有効にし、統合を開始する方法について学習します。
 keywords: 開始する、Microsoft 365 Defender、Microsoft 365 Defender、M365、セキュリティ、データの場所、必要なアクセス許可、ライセンスの適格性、設定ページを有効にする
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cf3337aa169deb21209f3396742b1764b2b191a6
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6b17bbdb11f66a9a7b01fb6cebecdce23348770870d4f43160cf5c77a3d5e83a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888640"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender を有効にする
 
@@ -35,13 +35,13 @@ ms.locfileid: "58247256"
 **適用対象:**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender、Microsoft](microsoft-365-defender.md) Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、および Microsoft Defender for Identity を統合することで、インシデント対応プロセスを統合します。 この統合エクスペリエンスは、ポータルでアクセスできる強力な機能Microsoft 365 Defenderします。
+[Microsoft 365 Defender、Microsoft](microsoft-365-defender.md) Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security、および Microsoft Defender for Identity を統合することで、インシデント対応プロセスを統合します。 この統合されたエクスペリエンスにより、Microsoft 365 セキュリティ センターでアクセスできる強力な機能が追加されました。
 
-Microsoft 365 Defenderアクセス許可を持つ対象ユーザーがポータルにアクセスすると、自動的にMicrosoft 365 Defenderされます。 この記事では、さまざまな前提条件とプロビジョニングのMicrosoft 365 Defender説明します。
+Microsoft 365 Defenderアクセス許可を持つ対象ユーザーがセキュリティ センターにアクセスすると、自動的Microsoft 365オンになります。 この記事では、さまざまな前提条件とプロビジョニングのMicrosoft 365 Defender説明します。
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>ライセンスの適格性と必要なアクセス許可を確認する
 
-一般に、Microsoft 365製品のライセンスは、追加のライセンス コストなしでMicrosoft 365 Defenderを使用できます。 サポートされているサービスへのアクセスを提供するライセンスMicrosoft 365 E5 E5 Security、A5、A5 セキュリティ ライセンス、または有効なライセンスの組み合わせを取得することをお勧めします。
+一般に、Microsoft 365製品のライセンスは、追加のライセンスコストなしでMicrosoft 365 Defender Microsoft 365を使用できます。 サポートされているサービスへのアクセスを提供するライセンスMicrosoft 365 E5 E5 Security、A5、A5 セキュリティ ライセンス、または有効なライセンスの組み合わせを取得することをお勧めします。
 
 ライセンスの詳細については、「ライセンス [要件」を参照してください](prerequisites.md#licensing-requirements)。
 
@@ -62,7 +62,7 @@ Microsoft 365 Defender、既に展開したさまざまなサポートされて�
 
 Microsoft 365 Defenderは、Microsoft Defender for Endpoint で使用されるのと同じ場所にデータ[を格納して処理します](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。 Microsoft Defender for Endpoint をお持ちでない場合は、アクティブなセキュリティ サービスの場所に基づいて、新しいデータ センター Microsoft 365選択されます。 選択したデータ センターの場所が画面に表示されます。
 
-別 **のデータ センターの場所** でのMicrosoft 365 Defenderに関する Microsoft サポートに問い合Microsoft 365 Defenderする場合は、[ヘルプが必要か] を選択します。
+セキュリティ **センターで [ヘルプが必要** Microsoft 365] を選択して、別のデータ センターの場所でのプロビジョニングに関Microsoft 365 Defender Microsoft サポートに問い合わせします。
 
 > [!NOTE]
 > Azure Defender を使用してオンにした場合、Microsoft Defender for Endpoint は欧州連合 (EU) データ センターで自動的にプロビジョニングされました。 Microsoft 365 Defender、過去にこの方法で Defender for Endpoint をプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングされます。
@@ -77,8 +77,8 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint で使用される�
 - [高度なハンティング](advanced-hunting-overview.md) 機能
 - 脅威の分析
 
-![インシデント管理Microsoft 365 Defender機能を備えたMicrosoft 365 DefenderポータルMicrosoft 365 Defenderナビゲーション ウィンドウ ](../../media/overview-incident.png)
- *のイメージ*
+![インシデント管理Microsoft 365その他の機能Microsoft 365 Defenderセキュリティ Microsoft 365機能を備えたセキュリティ センター ナビゲーション ウィンドウ ](../../media/overview-incident.png)
+ *Microsoft 365 Defender画像*
 
 ### <a name="getting-microsoft-defender-for-identity-data"></a>Id データの Microsoft Defender の取得 
 サーバーとの統合を有効Microsoft Cloud App Security、少なくとも 1 回は、Microsoft Cloud App Securityする必要があります。
@@ -87,9 +87,9 @@ Microsoft 365 Defenderは、Microsoft Defender for Endpoint で使用される�
 
 ユーザー設定のオンに関する最も一般的な質問に対する回答をMicrosoft 365 Defender FAQ[を参照してください](m365d-enable-faq.md)。
 
-Microsoft サポート スタッフは、テナントのサービスおよび関連リソースのプロビジョニングまたはプロビジョニング解除を支援できます。 サポートについては、ポータルの **[ヘルプが必要ですかMicrosoft 365 Defender** します。 サポートに問い合わせする場合は、Microsoft 365 Defender。
+Microsoft サポート スタッフは、テナントのサービスおよび関連リソースのプロビジョニングまたはプロビジョニング解除を支援できます。 サポートについては、セキュリティ センターで [ヘルプ **が必要Microsoft 365** 選択します。 サポートに問い合わせする場合は、Microsoft 365 Defender。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [よく寄せられる質問](m365d-enable-faq.md)
 - [ライセンス要件およびその他の前提条件](prerequisites.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ed5ddc90df8ee3d0e938c0db9bca367a424f0413
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 40f783e8a99ef5bcbd3db516f65ff43812e83091fe93ace49562f5b45926afd1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651053"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53868428"
 ---
 # <a name="device-control-for-macos"></a>macOS のデバイスコントロール
 
@@ -35,7 +35,7 @@ ms.locfileid: "53651053"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 macOS のデバイスコントロールには、次の前提条件があります。
 
@@ -348,7 +348,7 @@ mdatp device-control removable-media devices list
 
 上記の例では、デバイスに配信されたデバイス制御ポリシーに従って、接続されているリムーバブル メディア デバイスが 1 つしか接続され、アクセス許可が `read` `execute` 付与されています。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Intune のデバイス制御ポリシーの例](mac-device-control-intune.md)
 - [JAMF のデバイス制御ポリシーの例](mac-device-control-jamf.md)

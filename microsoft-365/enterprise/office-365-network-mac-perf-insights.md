@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365ネットワークインサイト
+title: Microsoft 365ネットワーク インサイト
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365ネットワークインサイト
-ms.openlocfilehash: 10b1c66a8f9aae555c2841b2b290f341bec3c7ec
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+description: Microsoft 365ネットワーク インサイト
+ms.openlocfilehash: ef844598d505e42f4fb99cb52321fc9709dbd4a2411884f7b8b4fff51c3a62d2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470558"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854787"
 ---
-# <a name="microsoft-365-network-insights"></a>Microsoft 365ネットワークインサイト
+# <a name="microsoft-365-network-insights"></a>Microsoft 365ネットワーク インサイト
 
-**ネットワーク分析情報は**、Microsoft 365 テナントから収集されたパフォーマンス 指標であり、テナントの管理ユーザーだけが表示できます。 インサイトは、管理センターの Microsoft 365に表示されます <https://portal.microsoft.com/adminportal/home#/networkperformance> 。
+**ネットワーク分析情報は**、Microsoft 365 テナントから収集されたパフォーマンス 指標であり、テナントの管理ユーザーだけが表示できます。 インサイトセンターにMicrosoft 365 管理表示されます <https://portal.microsoft.com/adminportal/home#/networkperformance> 。
 
-インサイトは、オフィスの場所のネットワーク境界を設計する場合に役立ちます。 各分析情報は、ユーザーがテナントにアクセスしている地理的な場所ごとに、特定の一般的な問題のパフォーマンス特性に関するライブの詳細を提供します。
+インサイトは、オフィスの場所のネットワーク境界の設計に役立ちます。 各分析情報は、ユーザーがテナントにアクセスしている地理的な場所ごとに、特定の一般的な問題のパフォーマンス特性に関するライブの詳細を提供します。
 
 各オフィスの場所に表示される可能性がある 6 つの特定のネットワーク分析情報があります。
 
@@ -43,7 +43,7 @@ ms.locfileid: "52470558"
 - [SharePointの問題の影響を受け、サンプルされた接続を確認する](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
->Microsoft 365 管理センターのネットワーク分析情報、パフォーマンスの推奨事項、評価は現在プレビュー状態であり、機能プレビュー プログラムに登録されている Microsoft 365 テナントでのみ使用できます。
+>Microsoft 365 管理 センターのネットワーク分析情報、パフォーマンスの推奨事項、評価は現在プレビュー状態であり、機能プレビュー プログラムに登録されている Microsoft 365 テナントでのみ使用できます。
 
 ## <a name="backhauled-network-egress"></a>バックホールされたネットワーク出力
 
@@ -54,7 +54,7 @@ ms.locfileid: "52470558"
 > [!div class="mx-imgBorder"]
 > ![バックホールされたネットワーク出力](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
-### <a name="what-does-this-mean"></a>シナリオ
+### <a name="what-does-this-mean"></a>これはどういう意味ですか?
 
 これは、オフィスの場所とネットワーク出力の間の距離が 500 マイル (800 キロメートル) を超える場合を識別します。 Office の場所は難読化されたクライアント コンピューターの場所によって識別され、ネットワーク出力の場所は、場所データベースへの逆 IP アドレスを使用して識別されます。 コンピューターで Location Services が無効になっている場合Windowsオフィスの場所が不正確になる可能性があります。 逆 IP アドレス データベース情報が不正確な場合、ネットワーク出力場所が不正確になる可能性があります。
 
@@ -72,7 +72,7 @@ ms.locfileid: "52470558"
 
 Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エンドポイントがネットワーク仲介デバイスによって傍受および復号化された場合の SSL ブレークとインスペクションが示されているネットワーク仲介の分析情報の 1 つです。
 
-### <a name="what-does-this-mean"></a>シナリオ
+### <a name="what-does-this-mean"></a>これはどういう意味ですか?
 
 プロキシ サーバー、VPN、データ損失防止デバイスなどのネットワーク仲介デバイスは、トラフィックが中間的な Microsoft 365 クライアントのパフォーマンスと安定性に影響を与える可能性があります。
 
@@ -89,7 +89,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 > [!div class="mx-imgBorder"]
 > ![相対ネットワークパフォーマンス](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
 
-### <a name="what-does-this-mean"></a>シナリオ
+### <a name="what-does-this-mean"></a>これはどういう意味ですか?
 
 この分析情報は、このオフィスの場所と同Microsoft 365顧客の集計パフォーマンスを調べる。 この分析情報は、ユーザーの平均待機時間が隣接テナントの平均待機時間より 10% 大きい場合に表示されます。
 
@@ -106,7 +106,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 > [!div class="mx-imgBorder"]
 > ![最適ではない EXO フロント ドア](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
-### <a name="what-does-this-mean"></a>シナリオ
+### <a name="what-does-this-mean"></a>これはどういう意味ですか?
 
 優れたパフォーマンスExchange Onlineオフィスの場所から使用に適したサービス フロント ドアの一覧を示します。 現在のテストで、このリストに含Exchange Onlineサービス フロント ドアの使用が示されている場合は、この推奨事項を呼び出します。
 
@@ -123,7 +123,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 > [!div class="mx-imgBorder"]
 > ![最適でない SPO フロント ドア](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
-### <a name="what-does-this-mean"></a>シナリオ
+### <a name="what-does-this-mean"></a>これはどういう意味ですか?
 
 テスト クライアントがSharePointしているオンライン サービスのフロント ドアを特定します。 次に、オフィスの場所の都市について、その都市のSharePointオンライン サービスのフロント ドアと比較します。 一致しない場合は、この推奨事項を作成します。
 
@@ -137,7 +137,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 
 この分析情報は、一部の概要ビューで "スループット" と省略されます。
 
-### <a name="what-does-this-mean"></a>シナリオ
+### <a name="what-does-this-mean"></a>これはどういう意味ですか?
 
 ユーザーがオンラインおよび SharePoint および OneDrive for Business から取得できるダウンロード速度は、1 秒あたりのメガバイト (MBps) 単位で測定されます。 この値が 1 MBps 未満の場合は、この分析情報を提供します。
 
@@ -149,7 +149,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 
 この分析情報は、中国のユーザーが他の地理的な場所Microsoft 365に接続している場合に表示されます。 
 
-### <a name="what-does-this-mean"></a>シナリオ
+### <a name="what-does-this-mean"></a>これはどういう意味ですか?
 
 組織にプライベート WAN 接続がある場合は、次の場所でインターネットへのネットワーク出力を持つ中国のオフィスの場所からネットワーク WAN 回線を構成することをお勧めします。
 
@@ -170,7 +170,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 
 この分析情報は、サンプリングされた接続の 50% 以上が影響を受け取る場合に表示されます。 影響は、サンプルごとに 60% 未満Exchange評価によって定義されます。
 
-### <a name="what-does-this-mean"></a>シナリオ
+### <a name="what-does-this-mean"></a>これはどういう意味ですか?
 
 これは、ユーザーの大半が、ユーザーに接続するユーザーエクスペリエンスの問題が発生している可能性が高Outlook示Exchange Online。 サンプルの割合は、60 ポイントを下回るユーザーの割合を表している可能性があります。  
 
@@ -182,7 +182,7 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 
 この分析情報は、サンプリングされた接続の 50% 以上が影響を受け取る場合に表示されます。 影響は、各サンプルSharePoint 40% 未満の評価によって定義されます。
 
-### <a name="what-does-this-mean"></a>シナリオ
+### <a name="what-does-this-mean"></a>これはどういう意味ですか?
 
 これは、ユーザーの大半が、ユーザーエクスペリエンスの問題が発生している可能性が高SharePoint示OneDrive。 サンプルの割合は、40 ポイントを下回るユーザーの割合を表している可能性があります。  
 
@@ -190,9 +190,9 @@ Exchange、SharePoint、Teams の重要な Office 365 ネットワーク エン�
 
 オフィスの場所ネットワーク接続の可視性を有効にする (まだ有効にしていない場合)。 SharePoint に影響を与えるネットワーク接続の不十分な影響を受け、ユーザーを Microsoft のネットワークに接続する各オフィスでネットワーク境界を改善する方法を見つける必要があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-[管理センターでのネットワークMicrosoft 365 (プレビュー)](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理 センターのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365評価 (プレビュー)](office-365-network-mac-perf-score.md)
 

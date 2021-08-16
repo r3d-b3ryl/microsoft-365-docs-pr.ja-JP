@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365Defender インシデント API とインシデント リソースの種類
-description: Defender のインシデント リソースの種類のメソッドとプロパティMicrosoft 365する
+title: Microsoft 365 Defender API とインシデント リソースの種類
+description: '[インシデント] リソースの種類のメソッドとプロパティについて説明Microsoft 365 Defender'
 keywords: インシデント、インシデント、API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 5fbdb1725249797ea87104cac5f25eaac9f5bff05967ee11cccb7ae14c349d55
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888435"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888765"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365Defender インシデント API とインシデント リソースの種類
+# <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API とインシデント リソースの種類
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "52888435"
 > [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-インシデント [とは](incidents-overview.md) 、攻撃の説明に役立つ関連アラートのコレクションです。 組織内の異なるエンティティからのイベントは、Defender によって自動的にMicrosoft 365されます。 インシデント API を使用して、組織のインシデントと関連するアラートにプログラムでアクセスできます。
+インシデント [とは](incidents-overview.md) 、攻撃の説明に役立つ関連アラートのコレクションです。 組織内の異なるエンティティからのイベントは、ユーザーが自動的にMicrosoft 365 Defender。 インシデント API を使用して、組織のインシデントと関連するアラートにプログラムでアクセスできます。
 
 ## <a name="quotas-and-resource-allocation"></a>クォータとリソース割り当て
 
@@ -46,15 +46,15 @@ ms.locfileid: "52888435"
 
 HTTP 応答コードは、送信された要求の数または割り当てられた実行時間のいずれかによって、クォータに達 `429` したかどうかを示します。 応答本文には、到達したクォータがリセットされるまでの時間が含まれます。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>Permissions
 
 インシデント API では、それぞれのメソッドに対してさまざまな種類のアクセス許可が必要です。 必要なアクセス許可の詳細については、それぞれのメソッドの記事を参照してください。
 
 ## <a name="methods"></a>メソッド
 
-メソッド | 戻り値の型 | 説明
+メソッド | 戻り値の型 | Description
 -|-|-
-[インシデントを一覧表示する](api-list-incidents.md) | [インシデント リスト](api-incident.md) | インシデントの一覧を取得します。
+[インシデントをリストする](api-list-incidents.md) | [インシデント リスト](api-incident.md) | インシデントの一覧を取得します。
 [インシデントを更新する](api-update-incidents.md) | [インシデント](api-incident.md) | 特定のインシデントを更新します。
 [インシデントの取得](api-get-incident.md) | [インシデント](api-incident.md) | 1 つのインシデントを取得します。
 
@@ -64,7 +64,7 @@ HTTP 応答コードは、送信された要求の数または割り当てられ
 
 ## <a name="common-properties"></a>共通プロパティ
 
-プロパティ | 型 | 説明
+プロパティ | 種類 | 説明
 -|-|-
 incidentId | long | インシデントの一意の ID。
 redirectIncidentId | null 許容長 | 現在のインシデントが結合されたインシデント ID。
@@ -80,9 +80,9 @@ tags | string List | インシデント タグの一覧。
 comments | インシデント コメントの一覧 | インシデント コメント オブジェクトには、コメント文字列、createBy 文字列、createTime 日付時刻が含まれます。
 アラート | アラート リスト | 関連するアラートの一覧。 「List Incidents [API」のドキュメントの例](api-list-incidents.md) を参照してください。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
-- [Microsoft 365Defender API の概要](api-overview.md)
+- [Microsoft 365 DefenderAPI の概要](api-overview.md)
 - [インシデントの概要](incidents-overview.md)
 - [インシデント API の一覧表示](api-list-incidents.md)
 - [インシデント API の更新](api-update-incidents.md)

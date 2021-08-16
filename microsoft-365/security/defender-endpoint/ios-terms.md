@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: a8cea87e9f26262b4c54e7991add7affc8013033
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a107cf53b249d2f7a1e13fa37bbcdfa2cc6da562b974407913d045d9400eeedd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857461"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios-application-license-terms"></a>Microsoft Defender for Endpoint on iOS アプリケーション ライセンス条項
 

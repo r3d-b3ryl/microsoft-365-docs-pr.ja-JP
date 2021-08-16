@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 におけるセキュリティについて、EOP、Defender for Office 365 プラン 1 およびプラン 2、セキュリティの標準構成と厳格な構成の違いなどを説明します。 お持ちのセキュリティ製品を理解し、組織のメールやファイルを保護する方法を学びます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b9db76654e19309816b29e5cfe607c064b8d364
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 622ee49dc0fed1f094496e0e25b2f52466b281a242638d484f13ab8a905c09f8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542233"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888513"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender for Office 365セキュリティの概要
 

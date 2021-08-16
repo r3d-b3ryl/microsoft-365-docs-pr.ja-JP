@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: この記事では、Connectivity Optics のMicrosoft 365説明します。
-ms.openlocfilehash: 952990a63d4ad064b2027c6f2364e8082342fa34
-ms.sourcegitcommit: 2abc6bf9939b14a427647e88f319dbb70de49ca6
+ms.openlocfilehash: e4020fc21492f3c261e10b8fad3c60c43c64bad24d12f1b1145773489f2fa3b0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53455979"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854893"
 ---
 # <a name="microsoft-365-connectivity-optics"></a>Microsoft 365Connectivity Optics
 
@@ -38,7 +38,7 @@ ms.locfileid: "53455979"
 光学は現在、すべてのデバイスでまれなサンプリングを使用して収集されます。 一般的な問題として、特定のイテレーションで測定される光学および宛先 (サービス エンドポイント) の特定のセットは、サービス要件に基づいて Microsoft によって構成され、サンプリング目的でランダム化されます。
 各光学コレクション間隔で、次の測定値の 1 つ以上を測定元としてエンド ユーザー デバイスを使用し、Microsoft 365 サービス エンドポイントを測定先として収集できます。
 
-| 測定 | 説明 |
+| 測定 | Description |
 | --- | --- |
 | 遅延 | HTTP 経由で小さなファイルを取得するために必要な時間 |
 | スループット | HTTP 経由で大きなファイルを取得するために必要な時間 (帯域幅の過剰消費を避けるためにほとんど測定されない) |
@@ -47,11 +47,11 @@ ms.locfileid: "53455979"
 
 各測定値は通常、次の項目を含む追加情報に関連付けられる場合があります。
 
-| 項目 | 説明 |
+| アイテム | 説明 |
 | --- | --- |
 | テナント ID | エンド ユーザー デバイスに関連付けられているAzure Active Directoryの一意の識別子。 |
 | モニター ID | 測定を実行しているクライアント アプリケーションによって提供される要求 (Outlook、OneDrive など) を生成するアプリケーションの識別子。 |
-| 要求 ID | Microsoft が提供する測定構成で指定された測定要求の識別子。 |
+| リクエスト ID | Microsoft が提供する測定構成で指定された測定要求の識別子。 |
 | リモート IP | クライアントからサービス エンドポイントへの要求に関連付けられたマスクされたソース IP。測定要求を受信したサーバーによって提供され、Microsoft に表示されるクライアント ソース IP アドレスに基づいて計算されます。 IP アドレスは、IPv4 アドレスの /24 サブネット、または IPv6 アドレスの /48 サブネットにマスクされ、Microsoft が個々のデバイスまたはユーザーを識別できないことを確認します。 |
 | フロントエンド | Microsoft 365要求を受け取ったサーバーによって提供されるサービス フロントエンド識別子。 |
 | Endpoint | Microsoft 365を受け取ったサーバーによって提供されるサービス エンドポイントの場所を指定します。 |

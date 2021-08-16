@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8e37572b07c6d81abc531e204a8cb060f1f6402c
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 687195eeb9bbc53be3f50e9b7662faaeed208b5502e9972801ee3d105c35c1ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888718"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender概要
 

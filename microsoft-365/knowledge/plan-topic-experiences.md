@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: プラン for Microsoft Viva トピック
-ms.openlocfilehash: 8f02d917a6a977dfcd8fdca6745abcdc66142aaa
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 639c76567f3f14ac9c885ae277ee2631ca26dec5bdf8b3184ad6ee212a7c4c1f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649649"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854701"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>計画を立Microsoft Viva トピック
 
@@ -36,7 +36,7 @@ ms.locfileid: "53649649"
 
 ビバ トピックでは、ユーザーが毎日使用するサイトやファイルにアクセスする必要があります。 テスト環境または開発環境にビバ トピックを展開すると、有用な結果が得られるとは言い得ない場合があります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 ビバ トピックに[アクセスして](https://www.microsoft.com/microsoft-viva/topics)トピックを設定するには、ビバ トピックにサブスクライブし、グローバル管理者または管理者SharePoint Microsoft 365 管理センター管理者である必要があります。
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 88eee1b57e7203a0407238c55e9b0c5307bf0bcb20ace02f00429b77d2402639
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3b4c99f78173466e2a4d5802be54fd98cf312849
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895377"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247891"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -71,7 +71,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 次のセクションの表を使用して、最も影響力のあるビジネス要件にマッピングされる上位 1 つまたは 2 つのシナリオを特定することをお勧めします。 これらのシナリオが展開されたら、リストに戻り、次に展開する優先順位の 1 つまたは 2 つを特定します。
 
-追加の一般的なガイダンスは、ダウンロード可能な「データ損失防止と Microsoft Information Protection 展開の促進ガイド」を参照してください。 詳細については、「[Microsoft 365 の情報保護とコンプライアンス展開の促進ガイド](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404)」ブログ投稿を参照してください。
+[Customer Acceleration Team (CAT)](https://microsoft.github.io/ComplianceCxE/) サイトのリソースの 1 つである、「[Microsoft の情報保護およびデータ損失防止の導入加速ガイド](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/)」に、追加の一般的な展開ガイダンスとベスト プラクティスがあります。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>秘密度ラベルの一般的なシナリオ
 
@@ -106,8 +106,8 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 基本的な手順については、次のリソースを使用することもできます:
 
-- [Office 内のファイルやメールに秘密度ラベルを適用する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Office の秘密度ラベルに関する既知の問題](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Office 内のファイルやメールに秘密度ラベルを適用する](https://support.microsoft.com/ja-JP/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Office の秘密度ラベルに関する既知の問題](https://support.microsoft.com/ja-JP/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [Office のファイルとメールに秘密度ラベルを自動的に適用、または推奨する](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [機密度ラベルの自動適用または推奨に関する既知の問題](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

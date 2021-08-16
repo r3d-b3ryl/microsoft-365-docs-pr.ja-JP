@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 32de0d16d2a8e754a36d0def296b3913e2fc04d5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c1620de251a0cd16ab61e0ecb41abb1b481535161d5db5b9d791501229e6fc13
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649805"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889365"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>更新プログラムのコンプライアンスでの Microsoft Defender ウイルス対策レポートのトラブルシューティング
 
@@ -73,7 +73,7 @@ ms.locfileid: "53649805"
 > [!div class="nextstepaction"]
 > [更新コンプライアンスのトラブルシューティングの診断データを収集する](collect-diagnostic-data.md)  
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Secure Score を通じてセキュリティの態勢を評価する
-description: セキュリティ センターで Microsoft Secure Score を改善するためのアクションを実行するMicrosoft 365説明します。
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
+description: Microsoft Secure Score を向上させるためにアクションを実行する方法について説明します。Microsoft 365 Defenderします。
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender ポータル, 改善アクション
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: e347f4393c45ba54d1ddb286fcc001193bc647f635dda64dcbb446be190a5dba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b1d684687c271150fa7e297c0a243ba61bd1b39
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838658"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247932"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Secure Score を使用してセキュリティの態勢を評価する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 これは、セキュリティ センター https://security.microsoft.com/securescore のMicrosoft 365[にあります](overview-security-center.md)。
+Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 このファイルは、ポータル https://security.microsoft.com/securescore のMicrosoft 365 Defender[表示されます](overview-security-center.md)。
 
 必要な情報を迅速に見つけるために、Microsoft の改善アクションはグループに整理されています。
 

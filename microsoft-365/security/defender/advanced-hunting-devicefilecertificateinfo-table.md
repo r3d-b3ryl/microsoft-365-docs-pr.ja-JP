@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの DeviceFileCertificateInfo テーブル
 description: 高度なハンティング スキーマの DeviceFileCertificateInfo テーブルのファイル署名情報について説明します。
-keywords: 高度なハンティング、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、デジタル署名、証明書、ファイル署名、DeviceFileCertificateInfo
+keywords: 高度な検索、脅威の検出、サイバー脅威の検出、Microsoft 365 Defender、microsoft 365、m365、検索、クエリ、テレメトリ、スキーマ参照、kusto、table、column、data type、デジタル署名、証明書、ファイル署名、DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1f894f3fc8cff2113004ff9c9e34ec2ca0144799
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8327d0c8973de60aa6d860bcb6ad008203fc52d94520b66174147a53f543618a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902213"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -46,7 +46,7 @@ ms.locfileid: "52023215"
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
-| `IsSigned` | boolean | ファイルが署名されているかどうかを示します。 |
+| `IsSigned` | ブール値 | ファイルが署名されているかどうかを示します。 |
 | `SignatureType` | string | 署名情報をファイル自体に埋め込みコンテンツとして読み取ったか、外部カタログ ファイルから読み取ったかを示します。 |
 | `Signer` | string | ファイルの署名者に関する情報 |
 | `SignerHash` | string | 署名者を識別する一意のハッシュ値 |
@@ -57,11 +57,11 @@ ms.locfileid: "52023215"
 | `CertificateCreationTime` | 日付型 | 証明書が作成された日時 |
 | `CertificateExpirationTime` | 日付型 | 証明書の有効期限が設定されている日時 |
 | `CertificateCountersignatureTime` | 日付型 | 証明書が署名された日時 |
-| `IsTrusted` | boolean | 不明なルート証明書情報、無効な署名、失効した証明書、その他の疑いがある属性をチェックする WinVerifyTrust 関数の結果に基づいてファイルが信頼されているかどうかを示します。 |
-| `IsRootSignerMicrosoft` | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
+| `IsTrusted` | ブール値 | 不明なルート証明書情報、無効な署名、失効した証明書、その他の疑いがある属性をチェックする WinVerifyTrust 関数の結果に基づいてファイルが信頼されているかどうかを示します。 |
+| `IsRootSignerMicrosoft` | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 | 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

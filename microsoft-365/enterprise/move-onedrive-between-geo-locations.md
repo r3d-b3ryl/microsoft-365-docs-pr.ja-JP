@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: サイトの移動をスケジュールするOneDrive、ユーザーに期待を伝える方法など、さまざまな地域の場所にサイトを移動する方法に関する情報を確認します。
-ms.openlocfilehash: 9e75c8e4102f82d4ab6e0f99ea26e1c0ad8b4bab
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 1e571993a4d83d3e9a61f783fee9b1df5f9de4bb3d9184a9565c280677faf21c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362248"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854862"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 

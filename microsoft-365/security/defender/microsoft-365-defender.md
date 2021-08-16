@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender
-description: Microsoft 365Defender は、デバイス、ID、データ、およびアプリケーションを保護するように設計された、調整された脅威保護ソリューションです。
+description: Microsoft 365 Defenderは、デバイス、ID、データ、アプリケーションを保護するように設計された協調脅威保護ソリューションです。
 keywords: MMicrosoft 365 Defender の概要、サイバーセキュリティ、高度な永続的脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な検出
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 21a80abd36fd8e7e33f0ccf9b145d409119205ec
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 26b68fe1adcf9841b69f86000c4c0d77d1db860fc64e713f2c186ad295b63ffc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842652"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888671"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -40,10 +40,10 @@ ms.locfileid: "52842652"
 
 Microsoft 365 Defender は、エンドポイント、ID、メール、およびアプリケーション全体での検出、防止、調査、応答をネイティブに調整し、高度な攻撃に対する統合された保護を提供する、侵害の前後に対応した統合エンタープライズ防御スイートです。
 
-統合されたセキュリティ Microsoft 365 Defender ソリューションを使用すると、セキュリティ専門家は、これらの各製品が受け取る脅威信号を一緒にまとめ、脅威の全範囲と影響を特定できます。環境に入った方法、影響を受けるもの、組織に現在どのように影響を与えています。 Microsoft 365Defender は、攻撃を防止または停止し、影響を受けるメールボックス、エンドポイント、およびユーザー ID を自己回復する自動アクションを実行します。  
+統合されたMicrosoft 365 Defenderソリューションを使用すると、セキュリティ専門家は、これらの各製品が受け取る脅威信号を一緒にまとめ、脅威の全範囲と影響を特定できます。環境に入った方法、影響を受けるもの、組織に現在どのように影響を与えています。 Microsoft 365 Defender攻撃を防止または停止し、影響を受けるメールボックス、エンドポイント、およびユーザー ID を自己回復する自動アクションを実行します。  
 
 
-<center><h2>Microsoft 365Defender サービス</center></h2>
+<center><h2>Microsoft 365 Defenderサービス</center></h2>
 <table><tr><td><center><b><a href="/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>エンドポイント用 Microsoft Defender</b></center></a></td>
 <td><center><b><a href="/office365/securitycompliance/office-365-atp"><b>Microsoft Defender for Office 365</b></center></a></td>
 <td><center><b><a href="/azure-advanced-threat-protection/"><b>Microsoft Defender for Identity</b></a></center></td>
@@ -52,9 +52,9 @@ Microsoft 365 Defender は、エンドポイント、ID、メール、および�
 </table>
 <br>
 
-## <a name="microsoft-365-defender-interactive-guide"></a>Microsoft 365Defender 対話型ガイド
+## <a name="microsoft-365-defender-interactive-guide"></a>Microsoft 365 Defenderガイド
 
-この対話型ガイドでは、Defender を使用して組織を保護するMicrosoft 365します。 セキュリティ リスクの検出、組織Microsoft 365、有害なアクティビティの自動的な防止に役立つ方法が、Defender によって確認されます。
+この対話型ガイドでは、組織をセキュリティで保護する方法についてMicrosoft 365 Defender。 セキュリティ リスクの検出、Microsoft 365 Defender攻撃の調査、有害なアクティビティの自動防止に役立つ情報が表示されます。
 
 [対話型のガイドをチェックしてください](https://aka.ms/M365Defender-InteractiveGuide)
 
@@ -68,7 +68,7 @@ Microsoft 365 Defender スイートは次のものを保護します。
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
-Microsoft 365Defender の固有のクロスプロダクト レイヤーは、個々のスイート コンポーネントを次の機能に拡張します。
+Microsoft 365 Defender固有のクロスプロダクト レイヤーは、個々のスイート コンポーネントを次の値に拡張します。
 - 信号の共有と自動化されたアクションを通じて、攻撃から保護し、スイート全体の防御応答を調整するのに役立ちます
 - アラート、疑わしいイベント、影響を受けた資産に関するデータを 「インシデント」 に参加することで、セキュリティ チームの製品アラート、動作、コンテキスト全体にわたる攻撃の全ストーリーを説明します。
 - 影響を受け取ったアセットの自己修復を自動修復でトリガーすることで、侵害への対応を自動化する
@@ -84,16 +84,16 @@ Microsoft 365Defender の固有のクロスプロダクト レイヤーは、個
 電子メールとエンドポイントの生データの上でのクエリ ベースの検索
 
 
-Microsoft 365Defender のクロスプロダクト機能には、次のものが含まれます。 
+Microsoft 365 Defender機能には、次のものが含まれます。 
 - **ガラスの** 製品間単一ウィンドウ - 中央には、security.microsoft.com の 1 つのキューと 1 つのウィンドウで、検出、影響を受けるアセット、自動アクション、および関連する証拠に関 [するすべての情報が表示されます](https://security.microsoft.com)。 
 - **複合インシデント** キュー - セキュリティ専門家が攻撃範囲全体を確保することで重要な作業に集中するために、影響を受けたアセットと自動修復アクションがグループ化され、適切な時期に表示されます。 
-- **脅威への自動対応**- 重要な脅威情報は、攻撃の進行を停止するために、Microsoft 365 Defender 製品間でリアルタイムで共有されます。 たとえば、Microsoft Defender for Endpoint で保護されたエンドポイントで悪意のあるファイルが検出された場合、すべての電子メール メッセージからファイルをスキャンして削除するように defender に Office 365 に指示します。 このファイルは、セキュリティ スイート全体によってMicrosoft 365されます。
-- 侵害 **されたデバイス**、ユーザー ID、メールボックスの自己修復 - Microsoft 365 Defender は、AI による自動アクションとプレイブックを使用して、影響を受け取ったアセットを安全な状態に戻します。 Microsoft 365Defender はスイート製品の自動修復機能を活用して、インシデントに関連する影響を受けたすべての資産を可能な限り自動的に修復します。
-- **製品間の脅威** の検出 - セキュリティ チームは、独自の組織の知識を活用して、さまざまな保護製品によって収集された生データに対して独自のカスタム クエリを作成することで、侵害の兆候を探し出します。 Microsoft 365Defender は、エンドポイント全体で 30 日間の過去の生信号とアラート データへのクエリ ベースのアクセスを提供し、データを収集するために Microsoft Defender Office 365します。 
+- **脅威への自動対応**- 重大な脅威情報は、攻撃の進行を停止するために、Microsoft 365 Defender製品間でリアルタイムで共有されます。 たとえば、Microsoft Defender for Endpoint で保護されたエンドポイントで悪意のあるファイルが検出された場合、すべての電子メール メッセージからファイルをスキャンして削除するように defender に Office 365 に指示します。 このファイルは、セキュリティ スイート全体によってMicrosoft 365されます。
+- **侵害されたデバイス**、ユーザー ID、メールボックスの自己修復 - Microsoft 365 Defender は、AI による自動アクションとプレイブックを使用して、影響を受け取ったアセットを安全な状態に戻します。 Microsoft 365 Defenderスイート製品の自動修復機能を活用して、インシデントに関連する影響を受けたすべての資産を可能な限り自動的に修復します。
+- **製品間の脅威** の検出 - セキュリティ チームは、独自の組織の知識を活用して、さまざまな保護製品によって収集された生データに対して独自のカスタム クエリを作成することで、侵害の兆候を探し出します。 Microsoft 365 Defenderは、エンドポイント全体で 30 日間の過去の生信号とアラート データにクエリ ベースのアクセスを提供し、データをOffice 365します。 
 
 
-## <a name="get-started"></a>開始する
-Microsoft 365Defender のライセンス要件を満たす必要があります。その前に、セキュリティ センター (Microsoft 365) でサービスを[有効](https://security.microsoft.com)security.microsoft.com。 詳細については、以下を参照してください。
+## <a name="get-started"></a>作業の開始
+Microsoft 365 Defenderセキュリティ センターでサービスを有効にする前に、ライセンス要件を満Microsoft 365する[必要 security.microsoft.com。](https://security.microsoft.com) 詳細については、以下を参照してください。
 - [ライセンス要件](prerequisites.md#licensing-requirements)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)
 
