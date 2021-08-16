@@ -22,12 +22,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: この記事は、パフォーマンスの問題Office 365トラブルシューティングを行い、最も一般的な問題の一部を修正するのに役立ちます。
-ms.openlocfilehash: 6ef459d6469881c71ea7d1da3a32eb42eb3ead6b
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 4c6291956dd42dbe6254c6fa016d2d5bcbfb6d0dbc4ca1db61e1d5ed74067ea0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229937"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905173"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 のパフォーマンス トラブルシューティング計画
 
@@ -143,7 +143,7 @@ HTTPWatch はブラウザー プラグインなので、ブラウザーでツー
 
 3. 手順 **が完了したら** 、[レコードの停止] をクリックします。 パフォーマンスの問題がページ レンダリングである場合は、記録を停止する前にページがレンダリングされるのを待ちます。
 
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 ![ステップ レコーダーまたはステップ レコーダーのスクリーン PSR.exe。](../media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
 

@@ -1,7 +1,7 @@
 ---
 title: 欧州連合のデータの場所
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を欧州連合内で確認する
-ms.openlocfilehash: 581b4b4a1c3861025518219c7ca5a4c4d4e29e5fc45fcb68d88f4a5627d79ee3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2099f6b81fa7ecfff4c641d0e18bed3c9b0f4d7c
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835489"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355042"
 ---
 # <a name="data-locations-for-the-european-union"></a>欧州連合のデータの場所
 

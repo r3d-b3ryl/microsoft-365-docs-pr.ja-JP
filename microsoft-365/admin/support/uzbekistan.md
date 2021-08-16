@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1c5cfb89da148b140840b664856f516fff144e4a
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6d05c541b0e267f5d323029dc93ea0949744e9a7594ff5000e677249b422078f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52294997"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53907033"
 ---
 # <a name="contact-support-for-uzbekistan"></a>ウズベキスタンのサポートに問い合わせ
 

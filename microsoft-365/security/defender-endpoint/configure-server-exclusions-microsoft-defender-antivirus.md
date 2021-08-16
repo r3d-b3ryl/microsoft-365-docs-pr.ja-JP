@@ -16,12 +16,12 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 02/10/2021
-ms.openlocfilehash: 31d5c22d11a28c9604b2be3145ebd46715a6e5b3
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6e0636122a5ef2d173e6eee53c4c303bb8cc46c8df7b1eeaa5d7b026f1c04ea0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925517"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904037"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策の除外をWindowsする
 

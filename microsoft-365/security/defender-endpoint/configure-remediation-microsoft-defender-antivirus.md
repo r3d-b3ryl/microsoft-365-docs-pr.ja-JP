@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 9b765d14e31d6c4890aeace41e4fe79bafdd889e
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: a08be838fdfb23e7f24677694fb0fe2f896ca8412d0f77df937af6a7b732053e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925577"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904025"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Microsoft Defender ウイルス対策検出の修復を構成する
 
@@ -46,7 +46,7 @@ PowerShell コマンドレットまたは WMI クラス[ `Set-MpPreference` を�
 
 4. 次の表を使用して場所を選択し、必要に応じてポリシーを編集します。 
 
-5. **[OK]** を選択します。
+5. **[OK]** をクリックします。
 
 |場所 | Setting | 説明 | 既定の設定 (構成されていない場合) |
 |:---|:---|:---|:---|

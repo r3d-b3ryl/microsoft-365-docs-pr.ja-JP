@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b29c2f5256c991e327e8962f02a96a294a6bec6
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: aec023a2d60d188900cf6afcc97f0f03cfc0aec4ea6860abb2782f7fd554342d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246558"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905561"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
 
@@ -29,7 +29,7 @@ ms.locfileid: "58246558"
 この記事では、情報バリア ポリシーを計画、定義、実装、および管理する方法について説明します。 いくつかの手順が関係し、作業フローはいくつかの部分に分かれています。 情報バリア ポリシーの定義[](#prerequisites)(または編集) を開始する前に、前提条件とプロセス全体を必ずお読みください。
 
 > [!TIP]
-> この記事では、情報 [バリア ポリシー](#example-contosos-departments-segments-and-policies) の計画と定義に役立つシナリオの例を示します。
+> この記事には、シナリオ[の例](#example-contosos-departments-segments-and-policies)と、情報バリア ポリシーを計画[Excel](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)定義するためのダウンロード可能なブックが含まれています。
 
 ## <a name="concepts-of-information-barrier-policies"></a>情報バリア ポリシーの概念
 
@@ -98,7 +98,7 @@ ms.locfileid: "58246558"
 すべての前提条件が満たされた場合は、次のセクションに進みます。
 
 > [!TIP]
-> 計画の準備を支援するために、この記事にはシナリオの例が含まれています。 [「Contoso の部署、セグメント、ポリシー」を参照してください](#example-contosos-departments-segments-and-policies)。
+> 計画の準備を支援するために、この記事にはシナリオの例が含まれています。 [「Contoso の部署、セグメント、ポリシー」を参照してください](#example-contosos-departments-segments-and-policies)。<p>さらに、ダウンロード可能なExcelブックを使用して、セグメントとポリシーの計画と定義 (および PowerShell コマンドレットの作成) に役立ちます。 [ブックを取得します](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)。
 
 ## <a name="part-1-segment-users"></a>パート 1: ユーザーのセグメント化
 
@@ -301,7 +301,7 @@ Contoso には、人事、営業、マーケティング、リサーチ、製造
 
 Contoso は、次のように、Azure Active Directoryの Department 属性を使用してセグメントを定義します。
 
-| 部署 | セグメント定義 |
+| 部門 | セグメント定義 |
 |:-------------|:---------------------|
 | 人事 | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` |
 | 営業 | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"` |

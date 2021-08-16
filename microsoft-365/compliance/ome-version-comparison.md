@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: この記事では、さまざまなバージョンのバージョンの違いについて説明Office 365 Message Encryption。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 92beb3625c0b115fe77f1667a448bf0bf9589040
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 5e94183ef90d5e55512f8d62db38be28f14d69d1fa8a5925b4de2afa660db26c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760135"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905489"
 ---
 # <a name="compare-versions-of-ome"></a>OME のバージョンを比較する
 
@@ -56,7 +56,7 @@ Exchange Onlineには、電子メール メッセージと添付ファイルの�
 新しい機能には、次の利点があります。
 
 - 暗号化専用オプション (安全な共同作業を可能にする)、転送しないオプション、およびカスタム制限を使用する機能。
-- 送信者は、Web クライアント上のデスクトップ、Outlook、Outlook for Mac、Outlookで暗号化されたメールを送信できます。
+- 送信者は、新しい機能で暗号化されたメールをデスクトップ、デスクトップ、Outlook、Outlook for MacクライアントOutlook on the webできます。
 - Microsoft 365は、サポートされているクライアントでインライン エクスペリエンスを使用Outlookします。 または、管理者は、ブランド化されたエクスペリエンスをMicrosoft 365受信者に表示する方法を選択できます。
 - Gmail、Yahoo、Microsoft アカウントMicrosoft 365外部のアカウントは、これらの受信者に優れたユーザー エクスペリエンスを提供する OME ポータルとフェデレーションされます。 他のすべての ID は、暗号化されたメッセージにアクセスするために 1 回きりパス コードを使用します。
 - 管理者は、ブランド化をカスタマイズし、複数のブランド 化テンプレートを作成できます。
@@ -83,9 +83,9 @@ Office 365 Advanced Message Encryption High ではサポートGCCされません
 
 ### <a name="encrypted-email-between-gcc-high-and-gcc-high-recipients"></a>高い受信者と高GCC高GCC間の暗号化された電子メール
 
-送信者は、Outlook for PC と Mac、および web 上の Outlook で電子メールを手動で暗号化するか、組織が Exchange メール フロー ルールを使用して電子メールを暗号化するポリシーを設定できます。
+送信者は、pc および Mac および Outlook on the web の Outlook で電子メールを手動で暗号化するか、組織が Exchange メール フロー ルールを使用して電子メールを暗号化するポリシーを設定できます。
 
-GCC High 内の受信者は、PC と Mac の Outlook でインライン読み取りエクスペリエンスを受け取り、Outlook他のすべてのユーザーと同じ web 上で読み取りを行います。
+GCC High 内の受信者は、PC および Mac と他のすべてのユーザーと同Outlook読み取りOutlook on the webインライン読み取りエクスペリエンスを受け取る。
 
 ### <a name="encrypted-email-between-gcc-high-and-non-gcc-high-recipients"></a>高受信者と非GCC受信者の間GCC電子メール
 
@@ -101,7 +101,7 @@ GCC High 以外のすべての受信者 (商用 Microsoft 365 ユーザー、Out
 
 - 新しい機能を指定するには、[メール フロールールの適用] Exchangeと権限保護 **を適用するOffice 365 Message Encryptionを使用します**。
 
-ユーザーは、Web Outlook 上のデスクトップ、デスクトップ、Outlook for Mac、およびOutlook for MacからOutlookメールを手動で送信できます。
+ユーザーは、デスクトップ、およびサーバーから新しい機能でOutlookメールを手動Outlook for Mac送信Outlook on the web。
 
 ## <a name="migrate-from-legacy-ome-to-the-new-capabilities"></a>従来の OME から新しい機能への移行
 

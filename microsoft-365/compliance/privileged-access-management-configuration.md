@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: この記事では、特権アクセス管理を有効にし、構成する方法の詳細について説明Office 365。
-ms.openlocfilehash: 13b600c60e1b9c88285ee58efcf80a7ff5ea17fe
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 70af2d3582bd2a8166645ab7507369d48e5c17f0b43dae8543dac9e427bf2285
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905477"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特権アクセス管理の使用を開始する
 
@@ -48,7 +48,7 @@ ms.locfileid: "53226121"
 特権アクセス管理要求を送信および応答するユーザーには、上記のいずれかのライセンスが割り当てられている必要があります。
 
 > [!IMPORTANT]
-> Office 365 Advanced Complianceスタンドアロン サブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れると、お客様は上記のサブスクリプションの 1 つ (同じコンプライアンス機能または追加のコンプライアンス機能を含む) に移行する必要があります。
+> Office 365 Advanced Compliance はスタンドアロン サブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れると、お客様は、同じまたは追加のコンプライアンス機能を含む上記のいずれかのサブスクリプションに移行する必要があります。
 
 既存の Office 365 Enterprise E5 プランをお持ちで、特権アクセス管理を試す場合は、Microsoft 365 を既存の[Office 365](/office365/admin/try-or-buy-microsoft-365)サブスクリプションに追加するか、Microsoft 365 Enterprise E5 の[](https://www.microsoft.com/microsoft-365/enterprise)試用版にサインアップできます。
 

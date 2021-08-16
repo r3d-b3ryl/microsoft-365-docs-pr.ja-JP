@@ -2,8 +2,8 @@
 title: エンタープライズ テストMicrosoft 365のセキュリティMicrosoft 365強化
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/09/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境Microsoft 365セキュリティ設定Microsoft 365を有効にします。
-ms.openlocfilehash: 3decba5b8e75525c8988f07e8e3af3e236ed5e2e597266901bec5346cec8660c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad739ed76d903ece388dde4c4fbc6337bb230051
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835153"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354442"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テストMicrosoft 365のセキュリティMicrosoft 365強化
 

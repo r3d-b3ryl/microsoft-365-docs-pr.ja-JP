@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 79795b6166b5a0b513ab4558effe509cc6637849
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 155195ef2c7083bf6d792ccd1b77584d43ba3be27414ac3b27013af6f774cd09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256694"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905517"
 ---
 # <a name="insider-risk-management-policies"></a>インサイダー リスクの管理。
 
@@ -209,8 +209,6 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 推奨事項または警告の詳細については、**[ポリシー]** タブでポリシーを選択して、ポリシーの詳細カードを開きます。 推奨事項と警告に関する詳細情報 (これらの問題に対処する方法のガイダンスなど) は、詳細カードの [通知] セクションに表示されます。
 
 ![インサイダー リスク管理ポリシーの正常性](../media/insider-risk-policy-health.png)
-
-### <a name="notification-messages"></a>通知メッセージ
 
 次の表では、推奨事項、警告通知、および潜在的な問題を解決するために実行するアクションについて説明します。
 
