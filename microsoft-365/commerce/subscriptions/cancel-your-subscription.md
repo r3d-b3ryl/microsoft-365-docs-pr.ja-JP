@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: ユーザー ライセンスが 25 未満の場合は、いつでも管理センターから一般法人向け Microsoft 365 の試用版または有料版サブスクリプションをキャンセルできます。
 ms.date: 04/08/2021
-ms.openlocfilehash: 78aa65e2b96d902dad53713ce694058f0e86c329def401c023263b3d38184826
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 900fd5f544a405b5f337623ba35a353cefaf9bab
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843228"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255701"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -50,14 +50,6 @@ ms.locfileid: "53843228"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
-2. キャンセルするサブスクリプションを見つけて、3 つのドット (その他の操作) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
-3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。必要に応じて、フィードバックを提供します。
-4. **[保存]** を選択します。
-
-これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されます。 一般法人向け Microsoft 365 の有料サブスクリプションをキャンセルした場合に予期される動作の詳細については、「[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)」を参照してください。
-
-> [!NOTE]
-> サブスクリプションを明示的に削除すると、期限切れや無効なステージはスキップされ、OneDrive を含む SharePoint Online のデータやコンテンツは直ちに削除されます。
 
 ::: moniker-end
 
@@ -70,14 +62,17 @@ ms.locfileid: "53843228"
 ::: moniker range="o365-21vianet"
 
 1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[お使いの製品]</a> ページの順に移動します。
+
 ::: moniker-end
 
-2. **[製品]** タブを選択します。
-3. キャンセルするサブスクリプションを見つけて、3 つのドット (その他の操作) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
-4. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。必要に応じて、フィードバックを提供します。
-5. **[保存]** を選択します。
+2. キャンセルするサブスクリプションを見つけて、3 つのドット (その他の操作) を選択してから、**[サブスクリプションのキャンセル]** を選択します。
+3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。必要に応じて、フィードバックを提供します。
+4. **[保存]** を選択します。
 
 これでサブスクリプションは **[無効]** 状態で表示され、削除されるまで機能が制限されます。 一般法人向け Microsoft 365 の有料サブスクリプションをキャンセルした場合に予期される動作の詳細については、「[一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?](what-if-my-subscription-expires.md)」を参照してください。
+
+> [!NOTE]
+> サブスクリプションを明示的に削除すると、期限切れや無効なステージはスキップされ、OneDrive を含む SharePoint Online のデータやコンテンツは直ちに削除されます。
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合
 

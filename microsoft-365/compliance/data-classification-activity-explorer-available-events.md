@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーで使用できるラベル付けアクティビティの一覧。
-ms.openlocfilehash: e9c1fadfda0d0e0fbfc5d942378035ea60ffaf266b64c117dfeb400411b30053
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5816bb897705e25ebf85b7f97df786cf2331bfb2
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796108"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255682"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>アクティビティ エクスプローラーで使用できるアクティビティのラベル付け
 
@@ -39,14 +39,14 @@ ms.locfileid: "53796108"
 |ソース  |アクティビティ エクスプローラーで報告される | 注  |
 |---------|---------|---------|
 | Word、Excel、PowerPoint|はい |
-|Outlook| はい |From Win 32 |
+|Outlook| はい | |
 |SharePointオンライン、OneDrive|はい | |
 |Exchange        |はい         | |
 |Azure Information Protection (AIP) 統合クライアントと AIP 統合スキャナー |はい |AIP の *新しいラベル* アクションは、アクティビティ エクスプローラー *に適用されるラベル* にマップされます。   |
 |Microsoft の情報保護 (MIP) SDK         |はい|AIP の *新しいラベル* アクションは、アクティビティ エクスプローラー *に適用されるラベル* にマップされます。|
 |Rights Management Service (RMS)         |該当なし         | |
-|Power BIと Web        | いいえ| 監査ログでMicrosoft 365アクセス可能         |
-|Microsoft Cloud App Security (MCAS)         |いいえ|         |
+|Power BIと Web        | no| 監査ログでMicrosoft 365アクセス可能         |
+|Microsoft Cloud App Security (MCAS)         |no|         |
 
 ## <a name="sensitivity-label-changed"></a>感度ラベルの変更
 
@@ -63,7 +63,7 @@ ms.locfileid: "53796108"
 |ソース  |アクティビティ エクスプローラーで報告される|注  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |はい         |
-|Outlook         |はい         |Win 32|
+|Outlook         |はい         |
 |SharePointオンライン、OneDrive         |はい         |
 |Exchange         |はい         |
 |AIP 統合クライアント         |はい         |
@@ -71,7 +71,7 @@ ms.locfileid: "53796108"
 |MIP SDK         |はい         |
 |RMS サービス         |該当なし         |
 |Power BIと Web         |いいえ         |監査ログでMicrosoft 365アクセス可能 |
-|MCAS     |いいえ         |         |
+|MCAS     |no         |         |
 
 ## <a name="sensitivity-label-removed"></a>[感度ラベルの削除]
 
@@ -84,15 +84,15 @@ ms.locfileid: "53796108"
 |ソース  |アクティビティ エクスプローラーで報告される | 注  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |はい         |
-|Outlook         |はい         |Win 32|
+|Outlook         |はい         ||
 |SharePointオンライン、OneDrive         |はい         |
 |Exchange         |はい         |
 |AIP 統合クライアント         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。|
 |AIP 統合スキャナー         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。 |
 |MIP SDK         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。 |
 |RMS サービス         |該当なし         |
-|Power BIと Web         |いいえ         |監査ログでMicrosoft 365アクセス可能 |
-|MCAS     |いいえ         |         |
+|Power BIと Web         |no         |監査ログでMicrosoft 365アクセス可能 |
+|MCAS     |no         |         |
  
 
 ## <a name="sensitivity-label-file-read"></a>感度ラベル ファイルの読み取り
@@ -104,13 +104,13 @@ ms.locfileid: "53796108"
 |Word、Excel、PowerPoint         |はい         |
 |Outlook         |いいえ         |
 |SharePointオンライン、OneDrive         |いいえ         |
-|Exchange         |いいえ         |
+|Exchange         |no         |
 |AIP 統合クライアント         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
 |AIP 統合スキャナー         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
 |MIP SDK         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
 |RMS サービス         |はい         |アクセス *アクションは* 、アクティビティ エクスプローラーの *ファイル読み取* りアクションにマップされます。 |
 |Power BIと Web         |いいえ         |監査ログでMicrosoft 365アクセス可能 |
-|MCAS     |いいえ         |         |
+|MCAS     |no         |         |
 
 
 ## <a name="files-discovered"></a>検出されたファイル
@@ -143,8 +143,8 @@ ms.locfileid: "53796108"
 |Exchange         |該当なし         |
 |AIP 統合クライアント         |いいえ         |
 |AIP 統合スキャナー         |いいえ         |
-|MIP SDK         |いいえ         |
-|RMS サービス         |いいえ      |
+|MIP SDK         |no         |
+|RMS サービス         |no      |
 |Power BIと Web         |いいえ         |
 |MCAS     |いいえ         |         |
 
@@ -190,7 +190,7 @@ ms.locfileid: "53796108"
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
 |Word、Excel、PowerPoint         |いいえ         |
-|Outlook         |いいえ         |
+|Outlook         |no         |
 |SharePointオンライン、OneDrive         |該当なし           |
 |Exchange         |いいえ       |
 |AIP 統合クライアント         |はい            |
@@ -230,7 +230,7 @@ ms.locfileid: "53796108"
 |Windows 10 デバイス         |はい |
 |MAC         |いいえ     |
 |オンプレミス         |いいえ|
-|MCAS     |いいえ        | 
+|MCAS     |no        | 
 
 デバイス (エンドポイント DLP) Windows 10イベントは次のとおりです。
 
@@ -253,7 +253,7 @@ ms.locfileid: "53796108"
 
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
-|Exchange         |いいえ       |
+|Exchange         |no       |
 |SharePoint Online|はい          |
 |OneDrive |はい|
 
@@ -277,7 +277,7 @@ ms.locfileid: "53796108"
 
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
-|Exchange         |いいえ       |
+|Exchange         |no       |
 |SharePoint Online|はい          |
 |OneDrive |はい|
 

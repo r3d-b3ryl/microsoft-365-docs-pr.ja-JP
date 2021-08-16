@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d87efcd940fd9e19c9f28250f85e0f7915febc05
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c0337c83419e2584c779abdd1bc88b75e6c1a63a5c7cc38fe1a719a6d6908029
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255501"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894385"
 ---
 # <a name="get-user-related-machines-api"></a>ユーザー関連のコンピューター API を取得する
 
@@ -82,7 +82,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功し、ユーザーが存在する場合 - 本文のコンピューター[](machine.md)エンティティの一覧で 200 OK。 ユーザーが存在しない場合 - 空のセットで 200 OK。
+成功し、ユーザーが存在する場合 - 本文のコンピューター[](machine.md)エンティティの一覧で 200 OK。 ユーザーが存在しない場合 - 404 が見つかりません。
 
 ## <a name="example"></a>例
 

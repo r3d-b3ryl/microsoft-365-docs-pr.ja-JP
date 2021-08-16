@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
 description: 検索を実行する前に、電子情報開示検索のキーワード クエリでエラーと入力ミスを検出する方法について説明します。
-ms.openlocfilehash: 9c041ca690df3306347cbca77df3ba9639801245
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 0f1e319c9ae3e332e58645d9ff1703062975a714278ab3322cdb156b6c62badf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886885"
 ---
 # <a name="check-your-search-query-for-errors"></a>検索クエリでエラーを確認する
   

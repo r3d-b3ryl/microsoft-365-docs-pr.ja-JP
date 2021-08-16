@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 84fad9dc273d020ee48e53c5d9edb57c88041e99dd077151f4b41e8de93da3e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 75c18feba1b7d293f954582d83357d1efcff98ed
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862553"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256309"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender前提条件
 
@@ -38,7 +38,7 @@ ms.locfileid: "53862553"
 ライセンスと、ライセンスのプロビジョニングと使用に関するその他の要件について[Microsoft 365 Defender。](microsoft-365-defender.md)
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
-これらのライセンスは、追加コストなしで、Microsoft 365 Defenderセキュリティ センター Microsoft 365機能にアクセスできます。
+これらのライセンスは、追加コストなしで、Microsoft 365 DefenderポータルMicrosoft 365 Defender機能にアクセスできます。
 
 - Microsoft 365 E5 または A5
 - Microsoft 365 E3アドオンMicrosoft 365 E5 Securityを使用する
@@ -65,7 +65,7 @@ ms.locfileid: "53862553"
 サーバーを有効に **するには、** グローバル管理者またはセキュリティ管理者Azure Active Directory必要Microsoft 365 Defender。 データへのアクセスを規制する方法Microsoft 365 Defender使用するために必要な役割の一覧については、「データへのアクセスの管理」を[参照](m365d-permissions.md)Microsoft 365 Defender。
 
 ## <a name="browser-requirements"></a>ブラウザー要件
-Microsoft 365 Defender、Microsoft 365 11、または HTML 5 準拠の web ブラウザーをMicrosoft Edge、Internet Explorerセキュリティ センターでアクセスします。
+11 Microsoft 365 Defender HTML 5 準拠の web ブラウザー Microsoft 365 Defender、Microsoft Edge 11 Internet Explorerを使用して、Microsoft 365 Defender ポータルでアクセスします。
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>米国の政府機関GCC、GCC、その他の米国政府機関への可用性
 現在、Microsoft 365 Defender *を使用* できません。
@@ -86,7 +86,7 @@ Microsoft 365 Defender、Microsoft 365 11、または HTML 5 準拠の web ブ�
 - アラブ首長国連邦 
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Microsoft 365 Defender概要](microsoft-365-defender.md)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)
 - [アクセスとアクセス許可の管理](m365d-permissions.md)

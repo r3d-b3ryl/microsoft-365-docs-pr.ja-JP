@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0e44e876c6eadc4c1b95081091346ce20ad4493bb0c258958fdbc1346e9659f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 66f9f571411c61bd8944ceb01a13f237ecd1d483
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867916"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255784"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーがユーザー インターフェイスを表示または操作Microsoft Defender ウイルス対策防止する
 
@@ -40,7 +40,7 @@ ms.locfileid: "53867916"
 
 設定を [有効] に **設定します**。
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Windows セキュリティアイコンとウイルスと脅威の保護セクションがない場合":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="シールド アイコンWindows セキュリティウイルスと脅威の保護のセクションを含むファイルのスクリーンショット":::
 
 設定が [無効] または **[** 構成されていない] に設定されている場合:
 

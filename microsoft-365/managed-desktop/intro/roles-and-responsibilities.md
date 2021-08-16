@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 07fdea2e8fc007491dfc2ab920a53f50f55b71b4f0f37cb0674f5ff4a9cc1014
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a7c322f75cc05406169fc3a1ce36f1550bbd95ce
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898649"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255932"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft マネージド デスクトップの役割と責任
 
@@ -28,10 +28,10 @@ ms.locfileid: "53898649"
 
 Microsoft は、次の主要な役割と責任を提供します。
 
-役割または責任 | Description
+役割または責任 | 説明
 --- | ---
 MDM ポリシーの管理 | Microsoft は、ベスト プラクティスに従って MDM ポリシーを適用し、ポリシー変更の要求を検討します。 また、[デバイス ポリシー] に規定されているテナントにも変更 [を加えます](../service-description/device-policies.md)。
-ユーザー サポート | デバイスへのアクセスを昇格し、必要に応じて問題をエスカレートするためのメカニズムを提供します。 詳細については、「ユーザー サポート」 [を参照してください](../service-description/user-support.md)。
+ユーザー サポート | デバイスへのアクセスを昇格し、必要に応じてサポート要求を介してエスカレートする問題のメカニズムを提供します。 詳細については、「ユーザー サポート」 [を参照してください](../service-description/user-support.md)。
 Microsoft マネージド デスクトップサポート | Microsoft は、ビジネス オペレーション チームを通じて IT 部門Microsoft マネージド デスクトップ提供します。 このチームは、お客様の環境に関する技術的なトラブルシューティング、変更要求、インシデント管理をMicrosoft マネージド デスクトップします。 詳細については、「管理者向け[サポート」を参照Microsoft マネージド デスクトップ。](../working-with-managed-desktop/admin-support.md)
 セキュリティ監視 | Microsoft は、エンドポイント用 Microsoft Defender Microsoft マネージド デスクトップデバイスを監視します。 セキュリティ 運用Microsoft マネージド デスクトップ (SOC) が脅威を検出した場合は、通知、デバイスの分離、およびリモートからの問題の修正を行います。 詳細については [、「Security」を参照してください](../service-description/security.md)。
 監視と管理を更新する | Microsoft は、Microsoft Microsoft マネージド デスクトップおよびデバイスに対して最新の品質と機能更新プログラムがインストールされていることを確認するために、WindowsデバイスMicrosoft Office。 詳細については、「更新プログラムの [処理方法」を参照してください](../service-description/updates.md)。
@@ -41,7 +41,7 @@ Microsoft マネージド デスクトップサポート | Microsoft は、ビ�
 
 この一般的な役割と責任のセットは展開に必要ですが、Microsoft によって提供されるのではありません。 これは網羅的ではありませんが、ほとんどの組織に適用されます。 ユーザーと Microsoft の両方が責任を共有する項目がいくつかある。 
 
-役割または責任 | Description
+役割または責任 | 説明
 --- | ---
 変更管理 | Microsoft は、お客様の環境に変更を加える必要がある場合は、事前にお客様Microsoft マネージド デスクトップします。 詳細については、「サービスの変更 [と通信」を参照してください](../service-description/servicechanges.md)。<br><br>独自の変更管理プロセスを持ち、運用チームと連絡先をMicrosoft マネージド デスクトップ必要があります。 また、これらの変更を確認および承認するリソースも必要です。 詳細については、「操作と監視 [」を参照してください](../service-description/operations-and-monitoring.md)。  
 ID 管理 | ユーザー アカウントを作成し、ユーザーをグループに割り当て、メタデータを最新の状態に保つ責任があります。 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: トピック センターのトピックを管理する方法については、Microsoft Viva トピック。
-ms.openlocfilehash: 53fbc338d69c87029a6e1a65917abcc9b003f36f959e440165405527fdca87e5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 33d706a0801d8a91d22767b5b03461ba79cf8ff7
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840265"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255620"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>トピック センターのトピックを管理Microsoft Viva トピック
 
@@ -59,7 +59,7 @@ ms.locfileid: "53840265"
 > [!Note] 
 > [トピック **の管理]** ページでは、各ナレッジ マネージャーは、トピックに接続されている基になるファイルとページにアクセスできるトピックのみを表示できます。 このアクセス許可のトリミングは、[提案済み]、[確認済み]、[発行済み]、および [削除済み] タブに表示されるトピックの一覧に **反映** されます。  ただし、このトピックでは、アクセス許可に関係なく、組織内の合計カウントが表示されます。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 トピック センターでトピックを管理するには、次の必要があります。
 - Viva トピック ライセンスを持っている。

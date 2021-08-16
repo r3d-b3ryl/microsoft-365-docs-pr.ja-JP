@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: ビジネスのスケジュール ポリシーを設定する方法について説明します。 スケジュール ポリシーには、予定の長さ、および受け入れ可能なリードとキャンセルの時間が含まれます。
-ms.openlocfilehash: 82cc9a66e82665040a1f0d08635cae10cd413d4b
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: e4cfc3d22b662a1fb87e66f70a9b30a0c59d332060cea85ed9c0b409ec1e289d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419830"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906913"
 ---
 # <a name="set-your-scheduling-policies"></a>スケジュール ポリシーを設定する
 

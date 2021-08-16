@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: '概要: アプリケーションのさまざまなアプリケーション内での分離とアクセス制御のMicrosoft 365。'
-ms.openlocfilehash: 53f60c09b94bdcc2515bcc5ff70dfbcd47f42bb4
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 6f8a668c1d479d249a85b889689f61f20f2a050beb1dcaf50f51d660631b5cc4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332330"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864382"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Microsoft 365 での分離とアクセス制御
 
@@ -43,7 +43,7 @@ Exchange Online内に顧客データを格納します。 メールボックス�
 - 予定表と空き時間情報
 - 連絡先
 - タスク
-- 備考
+- メモ
 - グループ
 - 推論データ
 

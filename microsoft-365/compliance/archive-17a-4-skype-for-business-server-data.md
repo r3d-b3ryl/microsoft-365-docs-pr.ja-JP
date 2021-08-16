@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 Skype for Business Server DataParser コネクタをセットアップして使用して、Skype for Business Server データをインポートおよびアーカイブするMicrosoft 365。
-ms.openlocfilehash: a536234aff66d5da1d91a9e3a85e08521246b0deb2b2df554170c1ec0b1bd59e
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: f01e0a81895bc460608ad555a9206ad91c105a20
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523812"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256062"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data-preview"></a>データをアーカイブするコネクタをSkype for Business Serverする (プレビュー)
 

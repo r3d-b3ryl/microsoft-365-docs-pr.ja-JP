@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーのユーザー アクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: 3d6eb3abac41106d48794b7f1859d7c809602489db93e99a46a4eed44efd6d30
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e13620413c81e5a6492c85d54d284f48308f5578
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892313"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256034"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -58,7 +58,7 @@ ms.locfileid: "53892313"
 
 1. [アクセス許可] [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/compliancemanager)し、左側 **のナビゲーションで**[アクセス許可] を選択します。
 
-2. [コンプライアンス センター] **ドロップダウンで** 、[役割] を **選択します**。 
+2. [コンプライアンス センター] **ドロップダウンで** 、[役割] を **選択します**。
 
 3. 1 人以上のユーザーを追加する役割グループを探し、グループ名の左にあるチェック ボックスをオンにします。 ([以下の役割と関連する機能の一覧](#role-types)を参照してください。 役割グループ名は、ロール名を模倣します)。
 

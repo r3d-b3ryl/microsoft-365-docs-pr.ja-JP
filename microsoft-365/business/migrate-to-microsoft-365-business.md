@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: ユーザーとユーザーのMicrosoft 365 Business StandardとMicrosoft 365 Business Premiumアップグレードする方法について説明Microsoft 365 Business Premium。
-ms.openlocfilehash: 0968b877820590987f6f3ceca3efbd106b62cbd1
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 563df2610351e2c025c618086c038750999c03df60b93b757865f76fbf86c834
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906729"
 ---
 # <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>アップグレードして、Microsoft 365 Business PremiumからMicrosoft 365 Business Standard
 
@@ -46,7 +46,7 @@ ms.locfileid: "52705492"
 
 これら 2 つのプランのサイド バイ サイド比較を、サービスの説明にMicrosoft 365 Business Premium[しました](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。 
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - **アップグレードの選択が必要な場合** 1 つのプランに割り当てられているすべてのユーザーをアップグレードする場合は、アップグレードが適切な選択です。 アップグレードを選択すると、すべてのプラン ユーザーが同時に別のプランに切り替えます。 1 つのプランに割り当てられているすべてのユーザーをアップグレードしない場合は、新しいプランのライセンス (この場合は Microsoft 365 Business Premium)[](../admin/manage/assign-licenses-to-users.md)を購入し、アップグレードする各ユーザーにライセンスを個別に割り当てる必要があります。
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーがパスワードをリセットする方法については、Microsoft 365 Business Premium。
-ms.openlocfilehash: b3cdd388c27b0f75bddb2544e36bd3ade210955b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5492bc357fb58e9d3ca5ed4e557449726657257109d9450e09c131115510982b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841320"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906745"
 ---
 # <a name="set-up-self-service-password-reset"></a>セルフサービスによるパスワードのリセットを設定する
 
@@ -36,7 +36,7 @@ ms.locfileid: "52841320"
 
 ## <a name="try-it"></a>お試しください!
 
-1. 管理センター Microsoft 365左側のナビゲーション ウィンドウで、[セキュリティ] を選択し、[セキュリティ] 設定 **プライバシーを&します**。
+1. 左側のMicrosoft 365 管理センターで、[セキュリティ] を選択し、[セキュリティ]設定 **プライバシーを&します**。
 1. [ **ユーザーが自分のパスワードをリセットする**] で **、[Azure ADを選択します**。
 1. 左側のナビゲーション ウィンドウで、[ **ユーザー**] を選択し、[ユーザー **-** すべてのユーザー] ページで、[パスワードのリセット] **を選択します**。
 1. [ **すべて] を** 選択してセルフサービス パスワードのリセットを有効にし、[保存] を **選択します**。

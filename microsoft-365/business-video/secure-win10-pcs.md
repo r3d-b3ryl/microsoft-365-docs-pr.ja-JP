@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: セキュリティ保護ポリシーを使用してWindows 10ポリシーを設定する方法Microsoft 365 Business Premium。
-ms.openlocfilehash: a7049f96ecba317bd58fee9f9dc6b7e124f5f9d2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: fe75bda2559c6c41b69f85864f7d945e3b9deaf672a91d82eab01ce55b0e9f92
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580452"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906877"
 ---
 # <a name="secure-windows-10-pcs"></a>Windows 10 PC をセキュリティで保護する
 
@@ -33,9 +33,9 @@ ms.locfileid: "51580452"
  
 ## <a name="try-it"></a>お試しください!  
 
-コンピューターでデバイス保護を設定Microsoft 365 Business、次の手順に従ってコンピューターを保護Windows 10します。
+Microsoft 365 Business でデバイス保護を設定した後、次の手順に従って、コンピューター Windows 10します。
 
-1. 管理センターでMicrosoft 365を選択 **します**。
+1. [設定] Microsoft 365 管理センター[セットアップ] を **選択します**。
 2. [コンピューター **をセキュリティで保護Windows] で、[** 表示] を **選択します**。
 3. ポリシーとポリシーがユーザーに与える影響を理解 **Windows 10、[** コンピューターのセキュリティで保護] ページの情報を確認します。
 4. [スタート  **] を選択します**。
@@ -43,4 +43,4 @@ ms.locfileid: "51580452"
 6. [**ポリシー Who適用する必要がありますか?** をクリックして、選択内容を組織内のすべてのユーザーまたは特定のセキュリティ グループに適用するかどうかを選択します。
 7. [変更  **の保存] を選択します**。
 
-Microsoft 365 Businessコンピューターの保護に役立Windows 10しています。
+Microsoft 365ビジネスは現在、コンピューターを保護Windows 10しています。

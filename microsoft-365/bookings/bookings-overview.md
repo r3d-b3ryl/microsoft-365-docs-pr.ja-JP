@@ -9,14 +9,14 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Web ベースの予約カレンダーを含み、Outlook と統合してスタッフの予定表を最適化し、顧客に予定を柔軟に予約できる Microsoft Bookings アプリの概要を示します。
-ms.openlocfilehash: 6ea7d7105efd917674b56ddd952b754310623c98f17eef15b9bad9b50841c353
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 339c8c2457b340dd863b5c9f8e0382b84ef43c08
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900821"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256129"
 ---
-# <a name="microsoft-bookings"></a>Microsoft の予約
+# <a name="microsoft-bookings"></a>Microsoft Bookings
 
 Microsoft Bookings を使用すると、予定のスケジュール設定と管理が簡単になります。 予約には、Web ベースの予約カレンダーが含まれています。Outlook と統合して、スタッフの予定表を最適化し、お客様に最適な時間を柔軟に予約できます。 自動通知メールは、ノーショーを減らし、顧客満足度を高め、組織は繰り返しスケジュールタスクを削減して時間を節約します。 柔軟性とカスタマイズ機能を備えた Bookings は、組織の多くの異なる部分の状況とニーズに合わせて設計できます。 Bookings 予定表は、ユーザーのメールボックスExchange Online。
 
@@ -29,6 +29,13 @@ Bookings には、主に 3 つのコンポーネントがあります。
 - Web ベースのビジネス向けページのセットを含む Web アプリで、組織内の Bookings 予定表の所有者と管理者は、予定の種類と詳細を定義し、スタッフのスケジュールと可用性を管理し、営業時間を設定し、予定のスケジュールをカスタマイズできます。 これらのページでは、汎用性と、ユーザーまたは組織の多様なニーズに合わせて予約カレンダーをカスタマイズできます。
 
 - 会社用モバイル アプリを使用して、Bookings カレンダーの所有者や管理者は全予約の閲覧、顧客リストと連絡先情報へのアクセス、外出先での手動予約を行うことができます。
+
+## <a name="before-you-begin"></a>始める前に
+
+Microsoft Bookings は、次のサブスクリプションで利用できます。
+
+- Office 365: A3、A5、E3、E5、F1、F3
+- Microsoft 365: A3、A5、E3、E5、F1、F3、Business プレミアム
 
 ## <a name="get-started-using-bookings"></a>Bookings の使用を開始する
 

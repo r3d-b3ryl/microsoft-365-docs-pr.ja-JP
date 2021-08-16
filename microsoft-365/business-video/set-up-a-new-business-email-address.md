@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 新しいビジネス メール アドレスを設定する方法について学習します。
-ms.openlocfilehash: 004cdd3abf9b8f8dec34dbfe9739102af081c769
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: a263a04f88880d4043b8a32dd2c7afdb557f11a6025d2f6ab5523f430124e2ac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906853"
 ---
 # <a name="set-up-a-new-business-email-address"></a>新しいビジネス メール アドレスを設定する
 

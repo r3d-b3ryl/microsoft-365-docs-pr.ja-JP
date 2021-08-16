@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: データ損失防止ポリシーの設定を管理する方法について説明します。
-ms.openlocfilehash: 04dbbcfd39186b8161fb497b72ddb070fbfb7471
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 1da9629aa5a04aab2875484b41f1867e2b36e20d66119a122827cc3eb6f7d873
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580440"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906805"
 ---
 # <a name="prevent-data-loss-with-dlp"></a>DLP によるデータ損失の防止
 

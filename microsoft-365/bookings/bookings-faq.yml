@@ -9,365 +9,349 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Microsoft Bookings のよく寄せられる質問。
-  ms.openlocfilehash: 4f8066e8d6ade84cbe5aa9e41b14784870353ddf
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: cbd4ecbc50a54b8b20d145ef360e4ea7db79be34
+  ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53541471"
+  ms.lasthandoff: 08/13/2021
+  ms.locfileid: "58255746"
 title: Microsoft Bookings に関するよく寄せられる質問
 summary: ''
 sections:
-- name: 一般
+- name: 全般
   questions:
   - question: >
-      Microsoft Bookings とは
+      What is Microsoft Bookings?
     answer: >
-      Microsoft Bookings は、スケジュールMicrosoft 365管理を容易にするアプリです。 予約には Web ベースの予約カレンダーが含まれています。Outlook と統合してスタッフの予定表を最適化し、お客様が最適な時間を柔軟に予約できます。 自動通知メールはノーショーを削減し、組織は繰り返しスケジュールタスクを削減して時間を節約します。 予約は、Skype または Microsoft Teams 経由で仮想予定を簡単に実施するのに役立ち、Teams の Bookings アプリを介して毎日のスケジュールを管理するのに役立ちます。 組み込みのカスタマイズ機能を備え、Bookings は組織の複数の部分のニーズを満たすことができます。
+      Microsoft Bookings is a Microsoft 365 app that makes scheduling and managing appointments easy. Bookings includes a Web-based booking calendar and integrates with Outlook to optimize your staff’s calendar, giving your customers flexibility to book a time that works best for them. Automated notification emails reduce no-shows, and organizations save time with a reduction in repetitive scheduling tasks. Bookings helps you easily conduct virtual appointments via Skype or Microsoft Teams, and helps you manage day-to-day scheduling via the Bookings app in Teams. With built-in ability to customize, Bookings is designed to meet the needs of multiple parts of any organization.
   - question: >
-      Microsoft Bookings の使い方
+      How do I use Microsoft Bookings?
     answer: >
-      予約はオンライン サービスなので、何もダウンロードする必要はありません。 Web エクスペリエンス内のアプリ選択Microsoft 365移動します。 管理者は、Bookings コンパニオン アプリを使用して、顧客とその予定に関する最新情報を最新の状態に更新することもできます。
+      Bookings is an online service, so you don't need to download anything. Just go to the app chooser within the Microsoft 365 Web experience. Administrators can also use the Bookings companion app to stay current with the latest information about customers and their appointments.
   - question: >
-      Who Microsoft Bookings にアクセスできますか?
+      Who has access to Microsoft Bookings?
     answer: >
-      予約は、世界中の Microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、E5 のユーザーに対して、既定で利用可能でアクティブになっています。 予約は、21Vianet がOffice 365で利用できます。
+      Bookings is available and active by default for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, and E5 customers worldwide. Bookings is also available in Office 365 operated by 21Vianet.
   - question: >
-      ユーザーに個人用カレンダーまたはビジネス カレンダーが表示されますか?
+      Will my customers see my personal or business calendar?
     answer: >
-      顧客には、登録を選択したサービス、時間、およびスタッフに対してオンラインで発行する予約カレンダーだけが表示されます。
+      Your customers will only see the Bookings calendar that you publish online for the services, times, and staff that you choose to register.
   - question: >
-      [スタッフの管理] で予約可能な属性を変更する方法
+      How do I change a bookable attribute under Manage staff?
     answer: >
-      スタッフメンバーが追加された場合、要求を受け入れるか拒否するメールを受け取ったと思います。 同じメールを開き、[拒否] を選択すると、予約が可能でなかれません。 現在、アプリ内からこれを切り替える方法は存在しない。
+      When staff members were added, they would have received an email to accept or reject the request. They can open the same email and select "Reject" to make them so that they aren't bookable. We currently do not have a way to toggle this from inside the app.
   - question: >
-      エンド ユーザーが Bookings アプリにアクセスする方法
+      How do end users access the Bookings app?
     answer: >
-      Microsoft 365 Business Premium、Microsoft 365 Business Standard、A3、A5、E3、E5 のライセンスを取得しているユーザー、または管理者または閲覧者の役割でスタッフ メンバーとして追加されたユーザーは、Microsoft 365 Web エクスペリエンス内のアプリ選択ツールで Bookings にアクセスできます。 iOS と Android で利用できるコンパニオン アプリもあります。
+      Anyone who is licensed for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There is also a companion app available for iOS and Android.
   - question: >
-      自分の Web サイトで Bookings を使用できますか?
+      Can I use Bookings in my own Web site?
     answer: >
-      はい。 iFrame を介してサイトに Bookings カレンダーを埋め込む方法を提供します。 リンク埋め込みコードは、Bookings アプリ内の **[Bookings] ページ** タブにあります。
+      Yes. We provide a way for you to embed your Bookings calendar in your site via an iFrame. Link embedding code is located in the **Bookings page** tab within the Bookings app.
   - question: >
-      ビジネス用の Web ページがなくても、Bookings を使用できますか?
+      Can I use Bookings even if I don’t have a Web page for my business?
     answer: >
-      はい。 Web アプリの [予約ページ] タブ **内で予約** ページへのリンクを提供します。 そのリンクを顧客またはクライアントに提供する必要があるだけで、ビジネスの最新の可用性情報が表示されます。 または、予約ページをソーシャル メディアで共有したり、埋め込み機能を使用して iFrame でホストすることもできます。 直接検索エンジンのインデックス作成を無効にし、組織内のユーザーにのみアクセスを制限することで、ページにアクセスできるユーザーを制御することもできます。
+      Yes. We provide a link to your booking page within the **Booking page** tab in the Web app. You just need to provide that link to your customers or clients, and they will see the latest availability information for your business. Alternatively, you can share the booking page in social media or even use the embed feature to host it in an iFrame. You also have the ability to control who can access the page by disabling direct search engine indexing and restricting access to only those within your organization.
   - question: >
-      IT 部門は、エンド ユーザーが Bookings にアクセスできるかどうかを制御できますか?
+      Can our IT department control whether end users can access Bookings?
     answer: >
-      予約は既定で Microsoft 365 Business Premium、Microsoft 365 Business Standard、M365 A3/A5、E3/E5 テナントで利用できますが、管理者は選択した場合は Microsoft 365 管理センター でオフにできます。 これを行うには、 [次の手順に従います](turn-bookings-on-or-off.md)。
+      Bookings is available in Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 A3/A5 and E3/E5 tenants by default, but administrators can turn it off in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](turn-bookings-on-or-off.md).
 
 
-      テナント内の特定の適格なライセンスに対する Bookings へのアクセスを無効にする場合は、グループ ポリシーを使用してライセンスを制限するか、新しい Bookings カレンダーを作成できるユーザーを制限する OWA メールボックス ポリシーを実装できます。
+      If a customer wants to disable access to Bookings for certain eligible licenses in their tenant, they can either use a group policy to restrict licenses or implement an OWA Mailbox policy that will restrict who is able to create new Bookings calendars.
 
 
-      OWA メールボックス ポリシーを使用して Bookings へのアクセスを無効にすると、すべてのユーザーが Bookings ライセンスを取得しますが、アプリにアクセスしようとすると、ポリシーの一部である場合、または既存の Bookings カレンダーにスタッフとして追加されている場合にのみ成功します。 [ [選択した](turn-bookings-on-or-off.md) ユーザーのみ予約カレンダーの作成を許可する] セクションの詳細を示します。
+      If you use an OWA Mailbox policy to disable access to Bookings, all users will have a Bookings license, however when they attempt to access the app, they will only be successful if they are part of the policy or if they have been added to an existing Bookings calendar as staff. Details [here](turn-bookings-on-or-off.md) in the “Allow only selected users to create Bookings calendars” section.
   - question: >
-      予約はカスタマイズ可能ですか?
+      Is Bookings customizable?
     answer: >
-      はい、予約はカスタマイズ可能で、さまざまなシナリオで使用できます。 Bookings カレンダーを設定する場合、Web ベースのスケジュール ページの多くの側面、ビジネス情報、スタッフの詳細、サービスの種類、スケジュール ポリシーをカスタマイズできます。
+      Yes, Bookings is customizable and can be used for various scenarios. When setting up a Bookings calendar, many aspects of the Web-based scheduling page, your business information, staff details, service types, and scheduling policies can be customized.
   - question: >
-      元の Bookings Web アプリのすべての機能は、アプリ内でMicrosoft Teams?
+      Is all the functionality of the original Bookings Web app available in Microsoft Teams?
     answer: >
-      軽量バージョンの Bookings が、アプリとしてアプリとして使用Teams。 詳細については[、「Bookings アプリ](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b)の概要」を参照Teams。 Web アプリにはディープ リンク機能が備わっています。セットアップ後、予約の毎日の使用は、Web アプリから離れることなく行Teams。 プラットフォーム間の情報フロー。
+      A lightweight version of Bookings is now available as an app in Teams. More information on it can be found in [Overview of the Bookings app in Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b). There is deep link functionality to pop out in the Web app, and after setup, day-to-day use of Bookings can be done without ever leaving Teams. Information flows across platforms.
   - question: >
-      Bookings は小規模ビジネス向け製品か、Enterprise提供か、その両方ですか?
+      Is Bookings a small business offering or an Enterprise offering or both?
     answer: >
-      予約は、さまざまな業界の顧客と小規模Enterpriseの両方に最適なソリューションです。 使用例は次のとおりです。
+      Bookings is an ideal solution for both Enterprise and small business customers, across various industries. Use cases include:
 
 
-      - 金融サービス
-          - コンサルティング
-          - 銀行サービスと保険サービス
-          - 税務申告
+      - Financial services
+          - consultations
+          - banking and insurance services
+          - tax filings
 
-      - 人事 (HR)
-          - 候補者のインタビュー
-          - オンボーディング
-          - 特典の支援
-          - トレーニングとセミナー
+      - Human resources (HR)
+          - candidate interviews
+          - onboarding
+          - benefits assistance
+          - training and seminars
 
-      - 医療
-          - 患者の訪問
-          - プロバイダー間のコラボレーション
-          - 保険に関するコンサルティング
+      - Healthcare
+          - patient visits
+          - provider-to-provider collaboration
+          - insurance consults
 
-      - 政府機関&公共部門
-          - 裁判所の審理と裁判
-          - パブリック サービス
-          - 部署の予定
+      - Government & Public Sector
+          - court hearings and trials
+          - public services
+          - department appointments
 
       - Education -- K-12
-          - 親教師会議
-          - 学校の町役場
-          - 学生カウンセラーの訪問
+          - parent-teacher conferences
+          - school town hall
+          - student-counselor visits
 
       - Education -- Higher Ed
-          - 営業時間
-          - 家庭教師
-          - 学生向けサービス
-          - 試験のサインアップ
+          - office hours
+          - tutoring
+          - student services
+          - exam sign-up
 
-      - 小売
-          - アシストショッピング
-          - 契約者のスケジュール
-          - デザイン サービス
+      - Retail
+          - assisted shopping
+          - contractor scheduling
+          - design services
 
-      - 一般的Enterpriseおよび小規模ビジネス のニーズ
-          - 顧客とクライアントの会議
-          - 技術サポート
-          - 法的レビュー
-          - 施設
+      - General Enterprise and small business needs
+          - customer and client meetings
+          - tech support
+          - legal reviews
+          - facilities
 - name: 価格とライセンス
   questions:
   - question: >
-      Microsoft Bookings の取得方法
-    answer: >
-      予約は、Office 365 A3、A5、E3、E5、Microsoft 365 Business Standard、Microsoft 365 Business Premium、A3、A5、E3、E5 をお持ちのお客様に利用できます。 iOS と Android コンパニオン アプリで予約を使用できます。 予約はスタンドアロン アプリとして利用できません。 Outlook Web AppまたはOutlook on the webにデータを格納する場合、Bookings を使用するには、有効にするOutlook。
-
-
-      Bookings ライセンスは、カレンダーの作成と管理など、製品に対して完全な機能を提供します。 また、管理者または閲覧者の役割でユーザーがスタッフとして追加された場合に、ユーザーが既存の予定表を表示および編集することもできます。
+      How do I get Microsoft Bookings?
+    answer: "Bookings is available with the following subscriptions: \n- Office 365: A3, A5, E3, E5, F1, F3\n- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Premium. \nYou can use Bookings with an iOS and Android companion app. Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.\n\nA Bookings license provides full functionality to the product, including creating and managing calendars. It also enables the ability for users to view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.\n"
   - question: >
-      現在のプロバイダーからメール アカウントを現在のプロバイダーに移行するMicrosoft 365?
+      Do I need to migrate my email account from my current provider to Microsoft 365?
     answer: >
-      現在のプロバイダーは保持できますが、Bookings はユーザーアカウントで使用されている電子メールに対してすべての通知Microsoft 365します。
+      You can keep your current provider, but Bookings will send all notifications to the email used in your Microsoft 365 account.
   - question: >
-      従業員が予約アカウントなしで予約をMicrosoft 365できますか?
+      Can my employees use Bookings without a Microsoft 365 account?
     answer: >
-      はい。 任意のメールでスタッフを追加することもできますが、誰かが予定を予約すると、メールの確認と予定表の招待が引き続き受け取ります。
+      Yes. You can add your staff with any email, and they will still get the email confirmation and the calendar invite when someone books an appointment with them.
   - question: >
-      同じアカウントの下に複数の Bookings カレンダーをMicrosoft 365し、その間を切り替えできますか?
+      Can I create more than one Bookings calendar under the same Microsoft 365 account and switch between them?
     answer: >
-      はい。 1 つのアカウントで複数の予約カレンダーを作成および管理できます。 Bookings Web アプリのビジネス名の横にあるキャレットを使用して、それらを切り替えます。
-  - question: >
-      組織に F1/F3、E1、E3/E5 との混在ライセンスがある場合は、どうしますか。
-    answer: >
-      多くの組織では、ライセンスの組み合Microsoft 365認識しています。 たとえば、顧客は本社の従業員に対して M365 E3 ライセンスを持ち、M365 E1 (または F1 または F3) のライセンスを店舗従業員に持つ場合があります。
-
-
-      この例では、M365 E3 ライセンスを持つ本社の従業員が Bookings にフル アクセスできます。つまり、新しい予定表の作成、設定の編集、スタッフの追加、予約ページの発行、予定表内の予定の作成と管理、レポートのプルが可能です。
-
-
-      E1/F1/F3 ライセンスを持つ従業員、またはライセンスがない従業員は、ゲスト ロールの予定表にスタッフとして追加し、予定のために予約を受け取り、予約時に確認メールを受け取ります。 [スタッフ] タブに表示されている利用可能時間またはスケジュールされた時間に予約できます。Bookings カレンダーの空き時間は、設定した時間とサービス時間によって予約可能な時間を制限します。
-
-
-      また、Bookings Web アプリを通じてその時点で予定が既にスケジュールされている場合、ストアの従業員は予約で利用できないと表示されます。 Bookings で予約された予定は、予約内のスタッフ メンバーの予定表にビジー状態として反映されます。 予約が有効でないライセンスを持つスタッフは、同じテナント内にある場合でも、個人用カレンダーが Bookings の可用性に影響を与える可能性があります。
-
-
-      ゲスト ロールのユーザーは、最初の予定の作成で顧客が提供した情報を表示できます。 たとえば、予定を予約したストア担当者が、予定の前に顧客に電話する必要がある場合、顧客はスケジュールプロセス中に顧客が提供する情報にアクセスできます。 予約されたスタッフメンバーは、確認メールに表示される情報、および .ics 予定表イベント (入力された場合は顧客の電話番号など) にアクセスできます。
-
-
-      ゲスト ロールのユーザーは、Bookings Web アプリにアクセスして設定を変更したり、予定を表示および管理したり (追加、キャンセル、再スケジュール) したりする機能を持つ必要があります。 ただし、顧客が予約を行うのと同じ方法で、[セルフサービス] ページを使用して顧客に代わって予定を作成できます。
-
-
-      ページと予定を設定および管理するには、各ストアのビジネス マネージャーまたは管理者に Bookings 適格ライセンスをライセンスすることをお勧めします。 その後、残りのスタッフは Bookings のライセンスを取得した従業員と一緒に作業し、予約のスケジュールを変更またはキャンセルします。
+      Yes. You can create and manage more than one Bookings calendar with one account. You can switch between them using the caret next to the business name in the Bookings Web app.
 - name: 製品の機能
   questions:
   - question: >
-      予約カレンダーは、自分のテナントにMicrosoft 365しますか?
+      Where do Bookings calendars show up in my Microsoft 365 tenant?
     answer: >
-      新しい予約カレンダーごとに、Exchange に対応するメールボックスが作成され、Azure Active Directory (AAD) に関連するエントリが作成され、エントリはライセンスのないユーザーとして一覧表示されます。
+      Each new Bookings calendar creates a corresponding mailbox in Exchange, as well as a related entry in Azure Active Directory (AAD), where the entry is listed as an unlicensed user.
   - question: >
-      以前に作成した予約カレンダーを削除できますか?
+      Can I delete a previously created Bookings calendar?
     answer: >
-      Bookings 予定表を削除するには、関連付けられているメールボックスを削除する必要Exchange。
+      To delete a Bookings calendar, you must delete the associated mailbox in Exchange.
   - question: >
-      予定表を作成し、他のユーザーが予約にアクセスできる場合、予定表を表示できますか?
+      If I create a calendar and someone else has access to Bookings, would they be able to see my calendar?
     answer: >
-      (Web アプリを通じて) 作成する予約カレンダーにアクセスできるユーザーは、管理者または閲覧者の役割でスタッフとして追加されたユーザーのみです。 テナント管理者は、管理者と AAD のすべての Bookings メールボックスExchange表示できます。
+      The only people who have access to Bookings calendars that you create (through the Web app) is anyone who has been added as staff, in either an Administrator or Viewer role. Tenant admins will be able to see a list of all Bookings mailboxes in Exchange and AAD.
   - question: >
-      ビデオ会議会議は Bookings アプリに統合されていますか?
+      Are video conferencing meetings integrated into the Bookings app?
     answer: >
-      オンライン会議は、クライアントまたはクライアントを使用する場合Skype予約Microsoft Teams利用できます。 オンライン会議はサービス レベルで有効にし、選択した会議クライアント (Skype または Teams) は、予約されたスタッフ メンバーに対して既定で 1 セットになります。 オンライン会議に参加するには、新しい予定ごとに一意の会議リンクが予定に添付され、さらに、簡単な参加オプションがイベントおよび確認メールに含まれます。
+      Online meetings are available within Bookings when using the Skype or Microsoft Teams clients. Online meetings can be enabled at the service-level, and the meeting client you choose (Skype or Teams) will be the one set by default for a booked staff member. To join the online meetings, each new appointment will have a unique meeting link attached to the appointment, and in addition, easy join options are included in the event and in confirmation emails.
   - question: >
-      スケジュール ポリシーの動作方法
+      How does scheduling policy work?
     answer: >
-      [最大リードタイム **] という設定によって** 、予約が可能な最も遠い時間 (日数単位) が決定されます。 最小リードタイム (予約とキャンセルの最小リードタイム、時間数) と最大リードタイムの間には、少なくとも 24 時間が必要です。 [最小リードタイム] が 0 時間に設定されている場合、最大リードタイムを 1 日に設定できます。この場合、顧客は予約を開始するまでキャンセルし、予定が翌日の場合にのみ予約をスケジュールできます。
+      A setting called **Maximum lead time** determines the farthest in advance (measured in days) that a booking can be made. There must be at least 24 hours between **Minimum lead time** (the minimum lead time, in hours, for bookings and cancellations) and Maximum lead time. Maximum lead time can be set to one day if Minimum lead time is set to 0 hours, which in this case means a customer can cancel a booking up until the time that it starts, and customers can only schedule bookings if the appointment is within the next day.
 
 
-      :::image type="content" source="media/bookings-faq-scheduling.png" alt-text="予約のスケジュール設定":::
+      :::image type="content" source="media/bookings-faq-scheduling.png" alt-text="Scheduling in Bookings":::
   - question: >
-      予約はタイム ゾーン全体でどのように機能しますか?
+      How does Bookings work across time zones?
     answer: >
-      既定では、すべての時間がビジネス タイム ゾーン (ローカル タイム ゾーン) にあります。 予約カレンダーに対して構成した設定 (勤務時間など) は、このタイム ゾーンに表示されます。 セルフサービス ページには、エンド ユーザーのタイム ゾーン内のすべての予定時間を表示する機能があります。必要に応じてオフにできます。[ **予約] ページ タブ** で [ビジネス タイム ゾーンにタイム スロットを常に表示する] がオフのままである場合、ページを訪れたユーザーは、自分のローカル タイム ゾーンにタイム スロットを表示します。
+      All times are in the business time zone (your local time zone) by default. Any setting that you configure for a Bookings calendar, such as working hours, will appear in this time zone. The Self-service page has the ability to display all the appointment times in the end-user's time zone, which can be turned off if desired. If **Always show time slots in business time zone** remains unchecked on the Bookings page tab, then people visiting the page will see time slots in their own local time zones.
 
 
-      :::image type="content" source="media/bookings-faq-region.png" alt-text="地域とタイム ゾーンの設定を予約する":::
+      :::image type="content" source="media/bookings-faq-region.png" alt-text="Bookings region and time zone settings":::
 
 
-      Bookings にスタッフのタイム ゾーンを設定する準備はありません。 スタッフのタイム ゾーン、つまり営業時間は、ビジネス タイム ゾーンになります。
+      There is no provision to set time zone for staff in Bookings. Staff time zone, and thus business hours, will be in the business time zone.
   - question: >
-      テナント ドメイン名として電子メール通知を送信できますか?
+      Can email notifications be sent as the tenant domain name?
     answer: >
-      電子メール アドレスは、ユーザー設定レベルでMicrosoft 365管理され、ドメイン構成の設定に応じて異なります。 詳細については、こちらを参照 [してください](/powershell/module/exchange/get-accepteddomain)。
+      The email addresses are controlled and managed at the Microsoft 365 settings level and depend on the domain configuration settings there. More information can be found [here](/powershell/module/exchange/get-accepteddomain).
   - question: >
-      SMS メッセージを送信する機能は、別のサービスまたは特定の構成に依存していますか?
+      Is the ability to send SMS messages dependent on a different service or specific configuration?
     answer: >
-      現在、SMS メッセージは北米で利用できます。SMS 配信にはSkype Twilio アカウントが使用されます。
+      SMS messages are currently available in North America, and a Skype or Twilio account will be used for SMS delivery.
   - question: >
-      予約の予定をユーザーの予定表に表示する方法
+      How can Bookings appointments show up on a person’s calendar?
     answer: >
-      予約の確認は、サービス プロバイダーと顧客の受信トレイの両方に送信されます。 確認メールには *.ics ファイルの添付ファイルが含まれているので、関連するすべての予定の詳細をユーザーの予定表に追加できます。
+      The confirmation of the booking is sent to both the service provider’s and customer’s inboxes. The confirmation email contains an *.ics file attachment, which can then be added to the user’s calendar with all relevant appointment details.
   - question: >
-      サービス プロバイダーまたはスタッフと顧客のメールをトリガーする理由
+      What triggers service provider or staff and customer emails?
     answer: >
-      電子メールは、Bookings Web アプリの [サービス] タブの設定に基づいてトリガーされます。 顧客がセルフサービス ページまたは Bookings Web アプリの [予定表] タブで行った予約は、確認メールやリマインダー メールをトリガーします。 確認メールまたは Web アプリ内の [予約の管理]ボタンを使用して予約に変更を行った場合も、同じことが発生します。 リマインダーメールは、Bookings Web アプリの [サービス] タブで詳細に説明されている、予定の前に指定された期間に送信されます。
+      Emails are triggered based on settings in the Services tab in the Bookings Web app. A booking made by the customer on the Self-service page, or on the Calendar tab in the Bookings Web app, will trigger a confirmation and/or a reminder email. The same thing will happen when someone makes a change to the booking via the **Manage booking** button in the confirmation email or within the Web app. Reminder emails are sent at a specified time period prior to an appointment, as detailed in the Services tab in the Bookings Web app.
   - question: >
-      1:1 ではなく 1:多の教室スタイルの予定を予約できますか?
+      Can I book classroom-style appointments that are 1:many instead of 1:1?
     answer: >
-      はい、複数のユーザーが同じ予定を同時に予約できるグループ予約機能があります (フィットネス クラスなど)。 この機能の詳細については、こちらを参照 [してください](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)。
+      Yes, we have a group bookings functionality that allows multiple people to book the same appointment at the same time (such as for a fitness class). This functionality is described in detail [here](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120).
   - question: >
-      予定表は公開されていないまま (パブリック向けではない) ままでも、指定されたユーザーがアクセスできますか?
+      Can calendars remain unpublished (not public-facing) but still accessible to designated users?
     answer: >
-      はい。 Web アプリの [予約ページ] タブにチェック ボックスがあります。予約するには、組織Microsoft 365またはOffice 365アカウントを **要求します**。 このチェック ボックスをオンにすると、セルフサービス ページへのアクセスはテナント内のページ アクセスにのみ制限されます。 作成および管理のために Web アプリ内にある予約カレンダーには、管理者または閲覧者の役割を持つページにスタッフとして追加された個人だけがアクセスできます。
+      Yes. There is a check box on the Booking page tab in the Web app: **Require a Microsoft 365 or Office 365 account from my organization to book**. Selecting this check box restricts Self-service page access to only those that are within your tenant. The Bookings calendar that sits within the Web app for creation and management can only be accessed by those individuals added as staff to the page with Administrator or Viewer roles.
 
 
-      :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Bookings でのページ アクセス制御の予約":::
+      :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Booking page access control in Bookings":::
   - question: >
-      ホーム ページの更新頻度
+      How frequently does the Home page update?
     answer: >
-      Web アプリが読み込まれるたびに、ホーム ページにリンクされた最新のデータが取得されます。 Bookings によって追跡される情報の種類の詳細については、このサポート記事を [参照してください](metrics-and-activity-tracking.md)。
+      The latest data linked to your Home page is retrieved  whenever the Web app is loaded. For further details on the type of information tracked by Bookings, see this [support article](metrics-and-activity-tracking.md).
   - question: >
-      [時間オフ] のメール通知をオフにできますか?
+      Can I turn off the email notifications for Time Off?
     answer: >
-      Bookings Web アプリ内でタイム オフを記録すると、常にスタッフ メンバーへの通知メールがトリガーされます。 スタッフメンバーが通知について混乱している場合は、管理者側で何が起こっているのかをスタッフに通知するために、Time Off 通知のメモまたはタイトルに詳細を追加することをお勧めします。
+      Recording Time Off within the Bookings Web app will always trigger a notification email to staff members. If any staff members are confused about the notification, we recommend you add more detail in the notes or title of the Time Off notification, to better inform staff about what is occurring on the admin side.
   - question: >
-      Bookings カレンダーを複製または複製して、簡単にスケーリングできるようテンプレート化できますか?
+      Can Bookings calendars be cloned or duplicated, and can they be templatized for easy scaling?
     answer: >
-      このプロセスでは、Graph API を使用してメールボックスの詳細を取得し、その詳細を使用して新しいメールボックスを作成します。 API のドキュメントは [ここです](/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
+      The process would be to use the Graph API to get mailbox details, and then use those details to create a new mailbox. API documentation is [here](/graph/api/resources/booking-api-overview?view=graph-rest-beta).
   - question: >
-      Bookings で利用できるレポート
+      What reporting is available in Bookings?
     answer: >
-      管理者ロールに割り当てられているすべての Bookings スタッフは、タブ区切りの値をダウンロードできます (。過去 120 日間に行われたすべての予約を含む TSV) ファイル。 予約レポートはでダウンロードできます。[予約] ページの [ホーム] タブの TSV フォーム。 Bookings API は、よりカスタマイズされた特定の目的のためにこのデータを収集するためにも使用できます。
+      All Bookings staff assigned to the Administrator role can download a tab-separated values (.TSV) file with all bookings made in the past 120 days. Bookings reports can be downloaded in .TSV form from the Home tab of the Bookings page. The Bookings API can also be used to collect this data for more customized and specific purposes.
   - question: >
-      セルフサービス ページで一度に共有できるサービスは 1 つのみですか。
+      Is it possible to share only one service on the Self-service page at a time?
     answer: >
-      はい、サービスごとに個別の予約カレンダーを作成するか、[サービス] タブに移動してサービスを編集し、ページの上部に特定のサービスの URL のみを共有するオプションが表示されます。
+      Yes, you can either create separate Bookings calendars for each service, or you can go to the Services tab, edit a service, and at the top of the page you will see an option to share a URL only for that specific service.
   - question: >
-      予定を予約するユーザーの同意フォームまたは開示を埋め込むには、どのようなオプションがありますか?
+      What options are available for embedding a consent form or disclosure for those booking an appointment?
     answer: >
-      [予約] ページで **[顧客データ** の使用状況の同意] チェック ボックスをオンにし、組織の開示または同意の要件を適切に伝えるために文言をカスタマイズすることをお勧めします。 もう 1 つのオプションは、同意フォームへのリンクを含むユーザー設定フィールドをサービスに追加し、顧客が予定を作成する前にフォームを完了したという確認を要求する方法です。 確認メールやリマインダーメールに同意フォームの URL を追加メモとして追加することもできますが、これによりユーザーが予定を予約することはできません。
+      We recommend enabling the **Customer data usage consent** check box in the Booking page and customizing the wording to properly convey your organization's disclosure or consent requirements. Another option is to add a custom field to the service that includes a link to the consent form, and require customers to confirm that they have completed the form before they can proceed with making an appointment. You can also add the consent form URL as additional notes in confirmation and reminder emails, but this will not prevent users from booking an appointment.
   - question: >
-      セルフサービス予約ページのスタッフ選択機能に加える変更点
+      What changes can be made to the staff selection capability on the Self-service booking page?
     answer: >
-      顧客が予約時に特定のスタッフ メンバーを選択する機能を完全に削除するには、[予約]ページまたは [サービス] セクションから [顧客に予約の特定のユーザーを選択する] オプションを選択できません。 予約は、スタッフの空き時間に基づいて、利用可能なスタッフ メンバーをランダムに予約に自動的に割り当てられます。
+      The ability for customers to select specific staff members when booking can be removed completely by de-selecting the **Allow customers to choose a specific person for the booking** option from the Booking page or the Services section. Bookings will automatically assign an available staff member at random to the booking, based on staff availability.
   - question: >
-      Bookings は多数の同時予約要求とセルフサービス ページの訪問をサポートできますか?
+      Can Bookings support many concurrent booking requests and Self-service page visits?
     answer: >
-      予約は、一度に大量の訪問者と予約をサポートできます。 ページに大量のトラフィックが発生した場合、ユーザーは "サーバービジー" エラーを受け取ります。 予定の空き時間は、ページが読み込まれるときと、予約が行われたときに更新されます。 複数のユーザーが一度に同じ予定を予約しようとしている場合、Bookings は、その時間を 1 人のユーザーだけが予約し、他の潜在的な顧客に通知メッセージを送信し、別の時間を見つけするように求めるメッセージを表示します。
+      Booking can support a large quantity of visitors and bookings at one time. If the page experiences a very large volume of traffic, users will receive a “server busy” error. Appointment availability is updated when the page is loaded, as well as when a booking is made. If multiple people are trying to book the same appointment at one time, Bookings will only let one person book that time and give a notification message to the other potential customers, and prompt them to find a different time.
 - name: プライバシー
   questions:
   - question: >
-      Bookings データはどこに保存されますか?
+      Where is Bookings data stored?
     answer: >
-      Bookings はMicrosoft 365アプリです。つまり、すべてのデータは、Microsoft 365 プラットフォーム内およびExchange。 予約は、Microsoft が設定するデータ ストレージ ポリシーに従います。これは、すべてのアプリが従うのと同Officeポリシーです。 予約では、顧客、スタッフ、サービスExchange予定の詳細を格納するために、グループ内の共有メールボックスを使用します。 グループ内の共有メールボックスのコンプライアンス ポリシー Exchange、Bookings メールボックスにも適用されます。 すべての顧客データ (予約時に顧客から提供された情報を含む) は Bookings にキャプチャされ、アプリ内に格納され、Exchange 内に格納されます。 Microsoft Bookings では、ユーザーが使用するポリシーと同Microsoft 365ここで確認[できます。](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+      Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all Office apps follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it is stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
   - question: >
-      すべてのユーザーの予約カレンダーを一部管理する方法はありますか?
+      Is there a way to centrally manage Bookings calendars for all users?
     answer: >
-      各予約カレンダーは個別に管理されます。 ホーム ページのキャレットをクリックした後の検索ドロップダウン以外に、統合ビューはありません。
+      Each Bookings calendar is maintained independently. There is no consolidated view, other than the search drop-down after clicking the caret on the home page.
   - question: >
-      ユーザーの認証方法
+      How are users authenticated?
     answer: >
-      Bookings Web アプリへのアクセスには、通常の認証 (AAD) 認証Azure Active Directory認証が含まれる。 セルフサービス予約ページは、Web ページ リンクを使用してすべてのユーザーが利用できます。 ただし、[組織から予約に Microsoft 365 または **Office 365** アカウントを要求する] 設定が選択されている場合、ページは Microsoft 365 テナント内でのみ使用できます (AAD 認証を使用)。
+      Access to the Bookings Web app involves authentication through the regular Azure Active Directory (AAD) authentication. The Self-service booking page can be made available to everyone with the Web page link. However, when the **Require a Microsoft 365 or Office 365 account from my organization** to book setting is selected, the page is restricted for use only within the Microsoft 365 tenant (using AAD authentication).
 
 
-      :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Bookings でのページ アクセス制御の予約":::
+      :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Booking page access control in Bookings":::
   - question: >
-      顧客データは何らかの理由で実稼働システムから離れるか。
+      Does customer data leave the production system for any reason?
     answer: >
-      はい、Bookings は Exchange の一部であり、Graph API と Exchange Web サービス (EWS) API を使用して、ユーザーがアクセスできる独自のデータをダウンロードできます。
+      Yes, since Bookings is a part of Exchange, we allow Graph APIs and Exchange Web Services (EWS) APIs for the customers to download their own data to which they have access.
   - question: >
-      顧客の返信用に電子メール アドレスをカスタマイズする機能はありますか?
+      Is there the ability to customize email addresses for customer replies?
     answer: >
-      顧客が返信を送信する電子メール アドレスを定義する機能があります。 この設定は、[ビジネス情報 **] タブ** にあります。Bookings メールボックス名自体は、通常のメールボックスの名前変更プロセスExchange、Exchange変更できます。
+      There is the ability to define which email address customer send their replies to. This setting is on the **Business information** tab. The Bookings mailbox name itself can also be changed within Exchange, through usual Exchange mailbox renaming processes.
   - question: >
-      予約プロセス中に、お客様に利用規約に同意して下さい。 可能ですか?
+      We would like for the customer to accept our terms and conditions during the booking process. Is that possible?
     answer: >
-      この機能は、GDPR 準拠のために既に存在します。 [予約] ページには、発行の詳細セクションの右側にあるカスタム同意のフィールドがあります。 このチェック ボックスをオンにして、独自のカスタム同意メッセージを書き込むだけで、[セルフサービス] ページに必須フィールドとして表示されます。 お客様が同意を与える日時が記録されます。
+      This feature already exists for GDPR compliance. The Booking page has a field for custom consent, right under the publishing details section. Just check that box and write your own custom consent message and it will show up as a required field on the Self-service page. The date and time that the customer grants consent will be recorded.
 
 
-      このセクションではリッチ テキストはサポートされていませんが、ビジネス情報セクションの下にリンクを追加できると考え、同意チェック ボックスの下に表示されます。
+      This section does not support rich text, but think links can be added under the business information section and would show up just below the consent check box.
   - question: >
-      サイト内の Bookings 関連メールボックスをExchangeする方法
+      How can Bookings-associated mailboxes in Exchange be identified?
     answer: >
-      次のコマンドを使用して、すべての Bookings メールボックスと、そのメールボックスにアクセスできるユーザーの情報を取得できます。
+      The following command can be used to retrieve information of all Bookings mailboxes and users who have access to them.
 
 
       `Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '*@*')}`
 - name: 技術的な質問
   questions:
   - question: >
-      ユーザーがオンライン会議で構成されるサービスの予定をスケジュールする場合、オプションの電子メール アドレス フィールドを空のままにした場合、Microsoft Teams リンクを受け取る方法を説明します。
+      If a user schedules an appointment for a service consisting of an online meeting, how do they receive the Microsoft Teams link to the meeting if they leave the optional email address field empty?
     answer: >
-      システムに顧客の電子メール情報がない場合は、確認メールを顧客に配信する方法が存在し、そのため、ユーザーは Teams リンクを受け取らない。 解決策は、電子メール アドレスを必須フィールドとして設定し、予約の [サービス] タブで実行できます。 Bookings で新しいサービスを作成するたびに、顧客のメール フィールドは既定で必須フィールドとして設定されます。
-  - question: "\"すべてのユーザー\" が選択されている場合、または顧客が予定のスタッフ メンバーを選択できない場合、スタッフは予定にどのように割り当てられますか?\n"
-    answer: >
-      これらのシナリオでは、予約時に利用可能なすべてのスタッフ メンバーの中から、スタッフがランダムに割り当てられます。 現在、スタッフのすべてのメンバー間でランダムに割り当てられた予定を均等に配分したり、各スタッフ メンバーに割り当てられた予定の数を上限にしたりする方法はありません。 複数のランダムな割り当ての後にスタッフ全体で行う必要がある負荷分散がある場合は、[予約] ページの [予定表] タブで手動で行うことができます。
+      If the system does not have the customer's email information, there is no way for the confirmation mail to be delivered to the customer, and thus they will not receive a Teams link. The solution is to set the email address as a required field, which you can do on the Services tab of Bookings. Note that whenever you create a new service in Bookings, the customer email field is set as a required field by default.
   - question: >
-      以前にユーザーが既にオプトインしている場合、ユーザーは SMS メッセージの受信をオプトアウトする方法を説明します。
+      How are staff assigned to appointments when “Anyone” is selected, or when customers do not have the ability to choose a staff member for the appointment?
     answer: >
-      SMS テキスト メッセージを有効にして予定を予約すると、予約の度にオプトイン ボックスを確認するように求めるメッセージが表示されます。 また、SMS メッセージ (SMS プロバイダー) に直接返信して、メッセージを停止し、その電話番号にそれ以上のテキストを送信することはできません。 顧客が、Bookings 自体からではなく、プロバイダーからのテキスト メッセージの受信をオプトアウトした場合、予約ページからオプトインしても、今後は SMS メッセージを受信しなくなりました。
+      Staff are assigned randomly in these scenarios, out of all staff members available at the time of the appointment being booked. Currently there is no way to ensure equal distribution of randomly assigned appointments across all members of the staff, or to cap the number of assigned appointments to each staff member. If there is load-balancing that needs to be done across your staff after a number of random assignments, it can be done manually in the Calendar tab within the Bookings page.
+  - question: >
+      How can users opt out of receiving SMS messages if they have already opted in previously?
+    answer: >
+      When booking an appointment with SMS text messages enabled, customers will be prompted to check the opt in box each time they book. Customers can also reply directly to the SMS message (the SMS provider) indicating that they would like the messages to cease, and then no further texts will be sent to that phone number. If the customer opts out of receiving text messages from the provider, not from Bookings itself, they will no longer receive SMS messages in the future, even when opting in from the Bookings page.
 - name: トラブルシューティング
   questions:
   - question: >
-      このスタッフ メンバーの予定表を同期できない
-    answer: "\"このスタッフ メンバーの予定表を同期できない\" というエラーが表示された場合、このセクションには、エラーの解決に役立ついくつかのトラブルシューティング手順が含まれている。\n\n> [!NOTE]\n> 予約は、既定で有効になっているのは、サブスクリプションのMicrosoft 365 Business Standard、Microsoft 365 A3、Microsoft 365 A5です。 予約は、E3 と E5 のOffice 365 Enterpriseユーザー Office 365 Enterprise利用できますが、既定ではオフになっています。 開始するには [、「Microsoft Bookings へのアクセス権を取得する」を参照してください](get-access.md)。 予約をオンまたはオフにする方法については、「 [組織の予約を有効またはオフにする」を参照してください](turn-bookings-on-or-off.md)。\n\nスタッフの予定表の同期に関する情報を探している場合は、「予約にスタッフを追加する」 [を参照してください](add-staff.md)。 [スタッフの詳細] **ページで、[** 予定表上のイベント] **が [空き時間情報に影響する] チェック ボックスを** オンにしてください。\n"
-  - question: >
-      スタッフ メンバーが予定表のアクセス許可を変更する必要がある
+      This staff member's calendar can't be synced
     answer: >
-      Bookings がスタッフ メンバーの予定表と適切に同期するには、各スタッフ メンバーが予定表を共有する必要があります。 各スタッフメンバーは、自分の予定表を共有するために、次の手順に従う必要があります。
-
-
-      1. サインインしてMicrosoft 365し、アプリ起動ツール **Outlook** を選択します。
-
-         > [!div class="mx-imgBorder"]
-         > ![アプリ起動Outlookのイメージ](../media/bookings-applauncher-outlook.png)
-
-      1. ページの上部で、[予定表の共有] **を** \> **選択します**。
-
-         ![[予定表の共有] メニューのイメージ](../media/bookings-share-calendar.png)
-
-      1. [組織内 **のユーザー] セクション** で、[自分の組織] の横にあるドロップダウン ボックスを選択し、[忙しいときに表示できる **] を選択します**。
-
-         > [!NOTE]
-         > この設定は、空き時間情報を Bookings や組織内の他のユーザーと共有します。 スケジュールした予定の種類、予定をスケジュールしたユーザー、場所など、その他の情報は含めではありません。
-
-         > [!div class="mx-imgBorder"]
-         > ![[予定表の共有] 画面のイメージと [忙しいときに表示できる] が有効になっている](../media/bookings-view-busy.png)
-
-      1. [**完了**] を選択します。
-  - question: >
-      組織のスタッフ メンバーが見当たらない
-    answer: >
-      従業員が会社を離れ、Microsoft 365 または Office 365 組織から削除した場合でも、そのユーザーが予定表に表示され、顧客が予定を予約しないので、そのユーザーを予約から削除する必要があります。
-
-
-      1. サインインして [Microsoft 365] をクリックし **、[Bookings** \> **Staff]** に移動します。
-
-
-      1. マウス カーソルをスタッフ メンバーの名前の上に移動します。 **アイコン** の **編集と** 削除は、列の右側に **電話** されます。
-
-
-      1. [削除] **アイコンを** 選択します。
-
-
-      1. 確認ボックスで **、[OK] を選択します**。
+      If you receive the error, "This staff member's calendar can't be synced", this section contains several troubleshooting procedures to help you resolve the error.
 
 
       > [!NOTE]
 
-      > 複数の予約カレンダーがある場合は、すべての予約カレンダーからユーザーを削除する必要があります。
+      > Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
 
 
-      予定表が複数あるか確認するには、左側のメニューで会社名の横にあるドロップダウン矢印を選択し、[開く] を選択 **します**。 予定表が 1 つのみである場合は、予約カレンダーを追加するオプションだけが表示されます。 この例では、"Contoso CO" という名前の 2 番目の予定表が表示されます。
-
-
-      ![画像: 2 番目の予定表が表示されている予定表画面を選択する](../media/bookings-choose-calendar.png)
+      If you are looking for information on syncing your staff's calendar, see [Add staff to Bookings](add-staff.md). Make sure on the **Staff details** page, **Events on calendar affect availability** is checked.
   - question: >
-      識別できない同期エラーが発生しました
+      The staff member needs to change their calendar permissions
     answer: >
-      これは一時的なエラーであり、通常、インターネット接続が不安定な場合に発生します。 通常、これらの問題は数分後に解決されます。
+      In order for Bookings to properly sync with your staff members' calendars, each staff member must share their calendar. Each staff member must follow these instructions to share their own calendar.
 
 
-      このエラーが長い期間続く場合、または頻繁に表示される場合は、サポートにお問い合わせください。
-additionalContent: "\n## <a name=\"additional-resources\"></a>その他のリソース\n\n- [Microsoft Bookings がエンタープライズ ブログの可用性を拡大](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Microsoft Bookings Works ビデオの方法](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [Microsoft Bookings の使用を開始する](get-access.md)\n\n- [Microsoft Bookings を有効または無効にする](turn-bookings-on-or-off.md)\n\n- [ユーザーを個別または一括で追加する](../admin/add-users/add-users.md)\n\n- [Bookings にスタッフを追加する](add-staff.md)\n\n- [テンプレートの定義後に自動化する API コンポーネント](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [表示用の予約カレンダーへの URL](https://outlook.office.com/bookings/calendar)\n\n- [Bookings コンプライアンス ポリシー](/compliance/regulatory/gdpr-dsr-Office365#bookings)\n\n- [予約ページをカスタマイズして公開する](customize-booking-page.md)\n\n- [テナント メールボックスの構成](/powershell/module/exchange/get-accepteddomain)\n\n- [グループ予約](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [予約の指標とアクティビティの追跡](metrics-and-activity-tracking.md)\n\n- [M365 パブリック ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)\n\n- [UserVoice 経由でフィードバックを送信する](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)"
+      1. Sign in to Microsoft 365, and then select **Outlook** from the app launcher.
+
+         > [!div class="mx-imgBorder"]
+         > ![Image of Outlook in App launcher](../media/bookings-applauncher-outlook.png)
+
+      1. At the top of the page, select **Share** \> **Calendar**.
+
+         ![Image of Calendar sharing menu](../media/bookings-share-calendar.png)
+
+      1. In the **People inside your organization** section, select the drop-down box next to **My Organization**, and then select **Can view when I'm busy**.
+
+         > [!NOTE]
+         > This setting shares your free/busy information with Bookings and with other users in your organization. It does not include any other information, such as what type of appointment you have scheduled, who you have scheduled the appointment with, or the location.
+
+         > [!div class="mx-imgBorder"]
+         > ![Image of calendar sharing screen with Can view when I'm busy enabled](../media/bookings-view-busy.png)
+
+      1. Select **Done**.
+  - question: >
+      We can't find a staff member in our organization
+    answer: >
+      If an employee has left your company and you removed them from your Microsoft 365 or Office 365 organization, you still need to remove that user from Bookings so they won't show up in the calendar and to prevent customers from booking appointments with them.
+
+
+      1. Sign in to Microsoft 365, and then go to **Bookings** \> **Staff**.
+
+
+      1. Hover your mouse cursor over the staff member's name. **Edit** and **delete** icons appear to the right of the **Phone** column.
+
+
+      1. Select the **Delete** icon.
+
+
+      1. In the confirmation box, select **OK**.
+
+
+      > [!NOTE]
+
+      > If you have more than one booking calendar, you must remove the user from all of them.
+
+
+      To check if you have more than one calendar, in the left menu, select the drop-down arrow next to your company name, and then select **Open**. If you only have one calendar, then you will see only the option to add a booking calendar. This example shows that there is a second calendar named "Contoso CO".
+
+
+      ![Image of Choose a calendar screen with a second calendar shown](../media/bookings-choose-calendar.png)
+  - question: >
+      There's a syncing error we can't identify
+    answer: >
+      This is a transient error and typically occurs because of an unstable internet connection. These problems usually resolve themselves after a few minutes.
+
+
+      If you still see this error after an extended period of time or you are seeing it often, please contact support.
+additionalContent: "\n## Additional resources\n\n- [Microsoft Bookings expands availability in the enterprises blog](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [How Microsoft Bookings Works video](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [Start using Microsoft Bookings](get-access.md)\n\n- [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md)\n\n- [Add users individually or in bulk](../admin/add-users/add-users.md)\n\n- [Add staff to Bookings](add-staff.md)\n\n- [API components to automate after template has been defined](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [URL to Bookings Calendar for Display](https://outlook.office.com/bookings/calendar)\n\n- [Bookings compliance policies](/compliance/regulatory/gdpr-dsr-Office365#bookings)\n\n- [Customize and publish your booking page](customize-booking-page.md)\n\n- [Tenant Mailbox configuration](/powershell/module/exchange/get-accepteddomain)\n\n- [Group Bookings](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [Bookings metrics and activity tracking](metrics-and-activity-tracking.md)\n\n- [M365 Public Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)\n\n- Submit feedback via [UserVoice](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)"

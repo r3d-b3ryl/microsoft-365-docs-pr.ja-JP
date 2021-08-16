@@ -1,5 +1,5 @@
 ---
-title: 管理センターで ISV アプリ Microsoft 365を管理する
+title: ISV アプリ のライセンスを管理するには、Microsoft 365 管理センター
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,16 +18,16 @@ ms.custom:
 - commerce_licensing
 search.appverid:
 - MET150
-description: 管理センターで独立したソフトウェア ベンダー (ISV) アプリのライセンスを管理するMicrosoft 365します。
+description: 独立したソフトウェア ベンダー (ISV) アプリのライセンスを管理する方法については、Microsoft 365 管理センター。
 ms.date: 06/15/2021
-ms.openlocfilehash: e19277a34c896d918d545cca27b1c435ca221e6f
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 360b1a954d8b34fbc91b086fdab532685438b7874f998ef4ddb8b7b07732d15a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932808"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887529"
 ---
-# <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>管理センターで ISV アプリ Microsoft 365を管理する
+# <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>ISV アプリ のライセンスを管理するには、Microsoft 365 管理センター
 
 独立したソフトウェア ベンダー (ISV) アプリは、Microsoft 以外のソフトウェア ベンダーから購入するアプリです。
 
@@ -37,7 +37,7 @@ ms.locfileid: "52932808"
 
 ## <a name="assign-isv-app-licenses-to-users-or-groups"></a>ISV アプリ ライセンスをユーザーまたはグループに割り当てる
 
-1. 管理センター Microsoft 365、[課金ライセンス]**ページ**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">に移動</a>します。
+1. [請求Microsoft 365 管理センター] ページ **に**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">移動</a>します。
 2. ライセンスを割り当てるアプリを選択します。
 3. [ライセンスの詳細] ページで、[ライセンスの割り当て **] を選択します**。
 4. [ライセンスの **割り当** て] ウィンドウで、ユーザーまたはグループの名前の入力を開始し、結果から選択してリストに追加します。

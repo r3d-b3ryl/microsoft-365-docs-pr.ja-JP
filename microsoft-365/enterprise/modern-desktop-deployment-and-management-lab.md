@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 2cfd687b3f34c1857fa5128cefa236ceb71f6b8ba7ba00a86a3dfceb43b60062
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8831293d1b17649ae387aab9ab99063ba31bef15
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870333"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255975"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 と Office 365 展開ラボ キット
 
@@ -47,7 +47,7 @@ ms.locfileid: "53870333"
 結果のラボは、次の試験に接続するように設計されています。
 
 - Microsoft 365 E5
-- Microsoft 365 Apps for Enterprise
+- Microsoft 365 Apps for enterprise
 - Office 365 E5 Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>ステップ バイ ステップ ラボ
@@ -104,14 +104,14 @@ ms.locfileid: "53870333"
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
 > [!NOTE]
-> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに 30 ~ 45 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを得る場合は、32 GB の使用可能なメモリと 300 GB の空き領域をお勧めします。 キットの有効期限は 2021 年 8 月 23 日です。 有効期限が切る前に、新しいバージョンが発行されます。
+> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに 30 ~ 45 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを得る場合は、32 GB の使用可能なメモリと 300 GB の空き領域をお勧めします。 ラボの有効期限は 2021 年 11 月 6 日です。 有効期限が切る前に、新しいバージョンが発行されます。
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 
 - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](https://www.aka.ms/watchhowtoshift)
 - [Microsoft Endpoint Configuration Manager OS の展開](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 - [Windows 10 の展開計画](/windows/deployment/planning/index)
-- [Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Microsoft 365 アプリの展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Intune が会社のためにできることとは。](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>関連リソース

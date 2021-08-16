@@ -12,65 +12,65 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: Open プログラムのオンライン サービスのアクティブ化に関するよく寄せられる質問
-  ms.openlocfilehash: b6e095733d53cad3b5d925ea4944fb3b5bcff92d
-  ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+  ms.openlocfilehash: 943d9f3f7463f3d87b5489992c2281abd27092dca911322781a80a48dfce4f09
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "58243970"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53887481"
 title: Open プログラムのオンライン サービスのアクティブ化に関するよく寄せられる質問
 summary: ''
 sections:
-- name: 全般
+- name: 一般
   questions:
   - question: >
-      How do I activate online services purchased through the Open programs (Open, Open Value, and Open Value Subscription)?
+      Open プログラム (Open、Open Value、Open Value Subscription) を通じて購入したオンライン サービスをアクティブ化する方法
     answer: >
-      Open customers can activate online services in two ways:
+      オープンユーザーは、次の 2 つの方法でオンライン サービスをアクティブ化できます。
 
-      - After you order your online services through the Open program family, you’ll receive an email with a link and instructions to activate your services.
+      - Open プログラム ファミリを通じてオンライン サービスを注文すると、サービスをアクティブ化するリンクと手順が記載されたメールが届きます。
 
-      OR
+      または
 
-      - From the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) Open program customers can go to the Online Service Activation section and select the license to manage:
-
-
-      1. Select the manage activation link, and then select Start Activation. A product activation window opens and pre-populates the key.
-
-      2. Continue the remaining activation steps to complete product activation.
+      - ボリューム ライセンス [サービス センター (VLSC)](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) Open program customers can go to the Online Service Activation section and select the license to manage:
 
 
-      Successful activation is complete within 48 hours on the Volume Licensing Online Service Activation website.
+      1. [ライセンス認証の管理] リンクを選択し、[ライセンス認証の開始] を選択します。 製品のライセンス認証ウィンドウが開き、キーが事前設定されます。
 
-      For information about activating Microsoft Azure, see [Get Started with Azure in Open Licensing](https://azure.microsoft.com/offers/ms-azr-0111p/).
+      2. 製品のライセンス認証を完了するには、残りのライセンス認証手順を続行します。
+
+
+      ライセンス認証の成功は、ボリューム ライセンス オンライン サービスライセンス認証 Web サイトで 48 時間以内に完了します。
+
+      ライセンスをアクティブ化する方法Microsoft Azure、「オープン はじめに[で Azure を使用する」を参照してください](https://azure.microsoft.com/offers/ms-azr-0111p/)。
   - question: >
-      I don’t see my Azure order. What should I do?
+      Azure の注文が表示されます。 どうすればよいですか?
     answer: >
-      Azure orders are activated through keys. Get your keys through the Downloads and Keys tab in the VLSC and enter the key on the Get Started with [Azure in Open Licensing page](https://azure.microsoft.com/offers/azure-open/).
+      Azure の注文はキーを介してアクティブ化されます。 VLSC の [ダウンロードとキー] タブでキーを取得し、[開くライセンス] ページで Azure はじめにキーを[入力します](https://azure.microsoft.com/offers/azure-open/)。
   - question: >
-      What is a work or school account and why do I need one to activate online services?
+      仕事用または学校用のアカウントとは何か、オンライン サービスをアクティブ化するために必要な理由
     answer: >
-      A work or school account is intended for users to sign in to the organization Microsoft services. The sign-in typically uses the form username@orgname.com or username@orgname.onmicrosoft.com, where *orgname* is their organization email domain name.
+      仕事または学校のアカウントは、ユーザーが組織の管理者にサインインすることを目的Microsoft サービス。 サインインでは、通常、組織の電子メール ドメイン username@orgname.com または username@orgname.onmicrosoft.com *フォームが* 使用されます。
   - question: >
-      How do I know if my organization already has an account?
-    answer: "The organization name associated with your work or school account is taken from the License ID of the service you’re activating. If an account exists, the organization name is pre-populated in the Organizational Account set-up and already linked to your organization from the original online service order. The registration process validates whether your organization has an account. \n\nIf the field for **Company** is available, finish the registration process to sign in and activate the service. If this field is not available, you must register the organization. You must be a Global administrator to register an organization for an account.\n\nWhen you request a work or school account, your request is sent to your organization Tenant  administrator who grants or denies your registration request. Use this work or school account when you sign into Microsoft VLSC Online Service Activation.\n"
+      組織が既にアカウントを持っているかどうかは、どのように確認できますか?
+    answer: "仕事または学校のアカウントに関連付けられている組織名は、アクティブ化するサービスのライセンス ID から取得されます。 アカウントが存在する場合は、組織アカウントのセットアップに組織名が事前入力され、元のオンライン サービス注文から組織に既にリンクされています。 登録プロセスは、組織がアカウントを持つかどうかを検証します。 \n\n[会社] のフィールド **が** 使用可能な場合は、登録プロセスを完了してサインインし、サービスをアクティブ化します。 このフィールドを使用できない場合は、組織を登録する必要があります。 アカウントの組織を登録するには、グローバル管理者である必要があります。\n\n仕事用または学校のアカウントを要求すると、登録要求を許可または拒否するテナント管理者が組織に要求が送信されます。 Microsoft VLSC Online Service Activation にサインインする場合は、この仕事用または学校用のアカウントを使用します。\n"
   - question: >
-      Why does the activation portal log me out after I activate an online service?
-    answer: "When activating Online Services under the Open License program, each agreement is activated separately. To ensure that licenses are not activated on the wrong tenant, each activation is handled in a separate session. \n"
+      オンライン サービスをアクティブ化した後、ライセンス認証ポータルがログアウトする理由
+    answer: "Open License プログラムで Online Services をアクティブ化すると、各契約は個別にアクティブ化されます。 間違ったテナントでライセンスがアクティブ化されない場合、各ライセンス認証は個別のセッションで処理されます。 \n"
   - question: >
-      How does Online Service Activation work for Open License purchases?
+      Open License の購入でオンライン サービスのライセンス認証がどのように機能しますか?
     answer: >
-      Microsoft Online Services for Open Agreements has moved to a keyless handling activation model. After you order Open online services, you receive an email with a link and instructions to activate your services.
+      Microsoft Online Services契約の場合は、キーレス処理ライセンス認証モデルに移動しました。 Open online Services を注文すると、サービスをアクティブ化するリンクと手順が記載されたメールが届きます。
   - question: >
-      What if I want to assign my purchase to a different organization?
+      購入を別の組織に割り当てる場合は、
     answer: >
-      To assign products to a new organization, go through the sign-up steps to create a new organization. From there you can assign any seats or products you purchased.
+      製品を新しい組織に割り当てるには、サインアップ手順に従って新しい組織を作成します。 そこから、購入したシートまたは製品を割り当てできます。
   - question: >
-      I just activated my online service. Why does it still say I need to activate my service on the Manage Activations page on the Volume Licensing Service Center?
+      オンライン サービスをアクティブ化しました。 ボリューム ライセンス サービス センターの [ライセンス認証の管理] ページでサービスをアクティブ化する必要がある理由
     answer: >
-      It can take up to 24 hours for the service you activated to appear as status **Activated** on the **Manage Activations** page.
+      アクティブ化したサービスが [ライセンス認証の管理] ページで [アクティブ化済み] 状態として表示されるには、最大 24 **時間かかる場合** があります。
   - question: >
-      How do I contact support?
+      サポートへの問い合わせ方法
     answer: >
-      For phone or web for support, see [Contact Us](/licensing/contact-us). Microsoft responds to web form submissions within 24 hours.
-additionalContent: "\n## Additional resources\n\n- [Product keys FAQ](product-keys-faq.yml)\n\n- [Downloads FAQ](downloads-faq.yml)"
+      電話または Web でのサポートについては、「お問い合 [わせ」をご覧ください](/licensing/contact-us)。 Microsoft は 24 時間以内に Web フォームの申請に応答します。
+additionalContent: "\n## <a name=\"additional-resources\"></a>その他のリソース\n\n- [プロダクト キーに関する FAQ](product-keys-faq.yml)\n\n- [ダウンロードに関する FAQ](downloads-faq.yml)"

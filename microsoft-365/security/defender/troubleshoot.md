@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b60adc266de6b99f61712d2d8303fc22c4cb9e1bf44d99bdc66f16c2a5a09d0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c4bbc9cd47d3ceb8110a6a2f0e3136a364458abc
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792607"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255882"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>サービスMicrosoft 365 Defenderのトラブルシューティング
 
@@ -51,7 +51,7 @@ ms.locfileid: "53792607"
 
 ## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>サービスを有効にする設定ページはどこに表示されますか?
 
-この機能を有効 **Microsoft 365 Defender、設定** セキュリティ センターのナビゲーション ウィンドウからMicrosoft 365アクセスします。 このナビゲーション アイテムは、前提条件のアクセス許可とライセンスを持 [っている場合にのみ表示されます](m365d-enable.md#check-license-eligibility-and-required-permissions)。
+この機能を有効 **Microsoft 365 Defender、設定** ポータルのナビゲーション ウィンドウからアクセスMicrosoft 365 Defenderします。 このナビゲーション アイテムは、前提条件のアクセス許可とライセンスを持 [っている場合にのみ表示されます](m365d-enable.md#check-license-eligibility-and-required-permissions)。
 
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>ファイル/URL の例外を作成する方法
 
