@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0eeba9fb8678a4b71e8fdaefb05acb0ec55978
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 0963d80699e171ea72c8873a36da28800bb5bf88
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726298"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247442"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -45,16 +45,25 @@ ms.locfileid: "53726298"
 ## <a name="july-2021"></a>2021 年 7 月
 
 - [自動調査における電子メール分析の改善](email-analysis-investigations.md)
+- [高度な](configure-advanced-delivery.md)配信: ユーザーへのサード パーティのフィッシング シミュレーションの配信とセキュリティ操作メールボックスへのフィルター処理されていないメッセージの配信を構成するための新しい機能を導入します。
 - [セーフサイトのリンクMicrosoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- 次のシナリオの新しいアラート ポリシー: 侵害されたメールボックス、フォームフィッシング、上書きおよび ZAP の切り上がりにより配信される悪意のあるメール
+  - 疑わしいメール転送アクティビティ
+  - フォームの共有と応答の収集を制限されたユーザー
+  - フィッシング詐欺の可能性が原因でフォームがブロックされる
+  - フォームにフラグが設定され、フィッシングとして確認される
+  - [ZAP の新しいアラート ポリシー](../../compliance/new-defender-alert-policies.md)
+- Microsoft Defender for Office 365アラートは、統合アラート キューと統合Microsoft 365 Defenderおよび統合Microsoft 365 Defenderキュー[に統合されました](../defender/investigate-alerts.md)
+- [](user-tags.md)ユーザー タグは、Office 365 セキュリティ & コンプライアンスのアラート キューと詳細、ユーザー タグへのカスタム アラート ポリシーのスコープ設定など、Office 365 アラート エクスペリエンスのために Microsoft Defender に統合され、対象となるアラート ポリシーを作成できます。 
+  - タグは、Microsoft 365 Defender センターの統合アラート キューでも使用できます (Microsoft Defender for Office 365 プラン 2)
 
 
 ## <a name="june-2021"></a>2021 年 6 月
 
 - フィッシング対策ポリシー内安全性のヒントの連絡先と連絡先の新しい設定。 この安全性のヒントは、受信者が最初に送信者からメールを受信するか、送信者からメールを受信しない場合に表示されます。 この設定と構成方法の詳細については、次の記事を参照してください。
-
-- [最初の連絡先安全性のヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)
-- [EOP でのスパム対策ポリシーの構成](configure-anti-phishing-policies-eop.md)
-- [Microsoft Defender でフィッシング対策ポリシーを構成Office 365](configure-mdo-anti-phishing-policies.md)
+  - [最初の連絡先安全性のヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+  - [EOP でのスパム対策ポリシーの構成](configure-anti-phishing-policies-eop.md)
+  - [Microsoft Defender でフィッシング対策ポリシーを構成Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>2021 年 4 月/5 月
 

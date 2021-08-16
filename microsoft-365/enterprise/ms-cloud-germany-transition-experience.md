@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域のOffice 365サービスに移行するために何が変わったかを理解します。'
-ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: cacc6d75b890585aa7b219b8bbb8f49b3f2d6714fe4502fe1b6b1030f54b9763
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930405"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885173"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター地域Office 365サービスへの移行後に何が変わるか
 
@@ -105,7 +105,7 @@ Office 365ビデオは 2021 年 3 月 1 日に廃止され、SharePoint Online �
 
 [移行フェーズのアクションと影響について理解する](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 はじめに:
 

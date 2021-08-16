@@ -37,16 +37,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 2007 SharePointのサポートは 2017 年 10 月に終了しました。 この記事では、アップグレード、移行、およびサポート オプションについて説明します。
-ms.openlocfilehash: 224b0af90d6a314aa15a2c0dab7b60626e5abde8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: de7469e40ac377cd49384c5d67cf9ac26273f4ace74ab165c6aa38835afa8444
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924870"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885077"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 のサポート終了ロードマップ
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 **2017 年 10 月 10** 日、Microsoft Office SharePoint Server 2007 はサポートの終了に達しました。 SharePoint Server 2007 から Microsoft 365 または新しいバージョンの SharePoint Server オンプレミスに移行していない場合は、計画を開始します。 この記事では、データをオンラインに移行したり、SharePointサーバーをオンプレミスSharePointするのに役立つリソースを提供します。
   
@@ -71,7 +71,7 @@ Office 2007 サーバーとサポート終了の詳細については[、「2007
   
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-最初の停止は製品ライフサイクル [サイトである必要があります](/lifecycle/products/?alpha=Microsoft+Office+SharePoint+Server+2007)。 古いオンプレミスの Microsoft 製品がある場合は、アップグレードまたは移行をスケジュールするために 1 年かそうである必要がある場合は、サポート終了日を確認してください。 次の手順を選択する場合は、どの製品機能が十分で、より良く、最適かを検討してください。 次に例を示します: 
+最初の停止は製品ライフサイクル [サイトである必要があります](/lifecycle/products/?alpha=Microsoft+Office+SharePoint+Server+2007)。 古いオンプレミスの Microsoft 製品がある場合は、アップグレードまたは移行をスケジュールするために 1 年かそうである必要がある場合は、サポート終了日を確認してください。 次の手順を選択する場合は、どの製品機能が十分で、より良く、最適かを検討してください。 次に例を示します。 
   
 |**標準**|**良い**|**最良**|
 |:-----|:-----|:-----|

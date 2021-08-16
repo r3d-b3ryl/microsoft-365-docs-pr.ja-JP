@@ -19,12 +19,12 @@ description: 管理者は、ポータルで使用できる電子メール セキ
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc5cc9f61a1a7a34b9078cc2355f6693d2b3592f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 83371fd6db32661ca73fd6c7cb741a9b42533df9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541975"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258611"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>電子メール セキュリティ レポートを Microsoft 365 Defenderする
 
@@ -464,7 +464,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 
 申請 **レポートには** 、管理者が分析のために Microsoft に報告したアイテムに関する情報が表示されます。 詳細については、「管理申請を [使用して疑わしいスパム、フィッシング、URL、](admin-submission.md)ファイルを Microsoft に提出する」を参照してください。
 
-ポータルでレポートを表示するにはMicrosoft 365 Defender[レポートの電子メール]  & \>  \> **グループ&に移動します**。 [コラボレーション **レポートのメール&] ページで**、[申請] を探し、[詳細の表示]**をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/adminSubmissionReport> 。 ポータルで [管理者の申請に移動するには、[Microsoft 365 Defender提出](admin-submission.md)に移動 **] をクリックします**。
+ポータルでレポートを表示するにはMicrosoft 365 Defender[レポートの電子メール]  & \>  \> **グループ&に移動します**。 [コラボレーション **レポートのメール&] ページで**、[申請] を探し、[詳細の表示]**をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/adminSubmissionReport> 。 ポータルで [管理者の申請に移動するには、[Microsoft 365 Defender提出](admin-submission.md)に移動 **] をクリックします**。 管理者は過去 30 日間レポートを表示できます。 
 
 ![[コラボレーション レポートの電子メール] ページ&提出ウィジェット](../../media/submissions-report-widget.png)
 
@@ -479,7 +479,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 - **申請の種類**:
   - **電子メール**
   - **URL**
-  - **File**
+  - **ファイル**
 - **申請 ID**
 - **ネットワーク メッセージ ID**
 - **Sender**
@@ -722,7 +722,7 @@ Defender **for Office 365** のメール待機時間レポートには、組織�
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **日付 (UTC)** **開始日と****終了日**
-- **場所**
+- **Location**
 - **によって検出される**
 - **マルウェア名**
 
@@ -914,7 +914,7 @@ URL **の脅威保護レポートは**、Microsoft Defender でのみ使用で�
 
 - **組織の管理**
 - **セキュリティ管理者**
-- **セキュリティ閲覧者**
+- **セキュリティ リーダー**
 - **グローバル閲覧者**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
@@ -925,7 +925,7 @@ URL **の脅威保護レポートは**、Microsoft Defender でのみ使用で�
 
 レポートにデータが表示されない場合は、ポリシーが正しく設定されていることを確認してください。 詳細については、「脅威から保護 [する」を参照してください](protect-against-threats.md)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [EOP でのスパム対策およびマルウェア対策保護](anti-spam-and-anti-malware-protection.md)
 

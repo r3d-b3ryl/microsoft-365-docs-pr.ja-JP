@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 予測スコア フィルターを使用して、予測コーディング モデルが関連性がある、または関連性が低いと予測されるアイテムを表示します。
-ms.openlocfilehash: 0ca2770d5ccbcc3ea5f3dec8394f69d1f5117da5
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 99cc9aee90c57f6f48053a6ef7e5a622a15295aa16089416081913ac6e5d3473
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822527"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865837"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>予測スコア フィルターをレビュー セットに適用する (プレビュー)
 
@@ -39,7 +39,7 @@ Advanced eDiscovery で予測コーディング モデルを作成し、それ�
 
 ## <a name="apply-a-prediction-score-filter"></a>予測スコア フィルターを適用する
 
-1. コンプライアンス センター Microsoft 365ケースを開Advanced eDiscovery、[レビュー セット] タブを選択し、レビュー セットを開きます。
+1. [ファイル] Microsoft 365 コンプライアンス センターケースを開Advanced eDiscovery、[レビュー セット] タブを選択し、レビュー セットを開きます。
 
    ![[フィルター] をクリックして [フィルター] フライアウト ページを表示します。](..\media\PredictionScoreFilter0.png)   
 
@@ -66,6 +66,6 @@ Advanced eDiscovery で予測コーディング モデルを作成し、それ�
   > [!TIP]
   > ドキュメントに割り当てる実際の予測スコアを表示するには、閲覧ウィンドウの **[メタデータ** ] タブをクリックします。 レビュー セット内のすべてのモデルの予測スコアは **、RelevanceScores メタデータ** プロパティに表示されます。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - フィルターの使用の詳細については、「レビュー セットの [コンテンツのクエリとフィルター」を参照してください](review-set-search.md)。

@@ -19,19 +19,19 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 79d736330a40d33f5334196d165e72f487b6d959
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 908165ac4e86fe96d101644f70d0bf31047d5e5f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194783"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258491"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Microsoft Defender のセキュリティ評価Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Microsoft Defender for Office 365評価はパブリック プレビュー中です。 このプレビュー バージョンは、サービス レベル契約なしで提供されます。 一部の機能はサポートされていないか、制限された機能を持っている可能性があります。
+> Microsoft Defender for Office 365評価はパブリック プレビュー中です。 このプレビュー バージョンは、サービス レベル契約なしで提供されます。 一部の機能はサポートされないか、機能が制限される可能性があります。
 
 セキュリティ製品の徹底的な評価を実施すると、アップグレードと購入に関する情報に基づいた意思決定を行う際に役立ちます。 セキュリティ製品の機能を試して、セキュリティ運用チームの日常業務に役立つ方法を評価するのに役立ちます。
 
@@ -40,7 +40,7 @@ ms.locfileid: "53194783"
 microsoft Defender for Office 365 をサポートするライセンスをまだ持ってない場合は、[無料の 30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)日間の評価を開始し、Microsoft 365 Defender ポータルの機能をテストできます <https://security.microsoft.com> 。 クイック セットアップを楽しめ、必要に応じて簡単にオフにできます。
 
 > [!NOTE]
-> Microsoft 365 Defender ポータル ( ) を使用している場合は、ここで Office 365 評価用の Defender を開始できます。メール & コラボレーション ポリシー & <https://security.microsoft.com>  \> **Rules** \> **Threat Policies** \>  \> page Others section Evaluation mode .
+> Microsoft 365 Defender ポータル ( ) を使用している場合は、「その他」セクションの 「メール & Collaboration <https://security.microsoft.com>  \> **Policies & Rules** \> **Threat Policies** \>   Evaluation mode」で Office 365 評価用の Defender を開始できます。
 
 ## <a name="how-the-evaluation-works"></a>評価のしくみ
 
@@ -61,7 +61,7 @@ microsoft Defender for Office 365 をサポートするライセンスをまだ�
 - アクションのレポートの分析
 - 評価結果の提示
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 ### <a name="licensing"></a>ライセンス
 
@@ -82,7 +82,7 @@ Microsoft Defender for microsoft Defender for Office 365を取得するには、
 
 高度な脅威を監視および報告する評価を含む 30 日間のウィンドウがあります。 また、完全な Defender 機能を使用する場合は、有料サブスクリプションを購入Office 365があります。
 
-### <a name="roles"></a>Roles
+### <a name="roles"></a>役割
 
 **Exchange Online評価モードで** Defender を設定するには、Office 365ロールが必要です。 コンプライアンスまたはセキュリティMicrosoft 365ロールを割り当てると機能しません。
 

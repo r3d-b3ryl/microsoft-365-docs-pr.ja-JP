@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: レビュー セットを管理して、データの分析、クエリ、表示、タグ付け、エクスポートを行う方法についてAdvanced eDiscoveryします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c489fa77c8e2d40d4f50275848465d5e8334c7a1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 164c172dd4c4ad5de6b24d25466afcb8a016715fdbe1f1958616afe823aeb487
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034169"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865873"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>レビュー セットを管理Advanced eDiscovery
 

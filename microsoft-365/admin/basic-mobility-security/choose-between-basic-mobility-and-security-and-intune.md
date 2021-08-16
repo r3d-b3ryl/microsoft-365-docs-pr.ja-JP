@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本モビリティとセキュリティは、重要なMicrosoft 365です。
-ms.openlocfilehash: 69d1c285d234d0884400cfc6325fcecfbff5a2d3bb62769682ec974b53a85f7e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 74b6aeb5b768dc668a66bcb8c82f6c8393219561
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827037"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247433"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>基本モビリティとセキュリティまたは Intune の間で選択する
 
@@ -34,14 +34,14 @@ ms.locfileid: "53827037"
 
 基本モビリティとセキュリティと Intune の両方が、次の表に示すさまざまなプランに含まれています。
 
-| 計画 | 基本的なモビリティとセキュリティ | Microsoft Intune |
+| プラン | 基本的なモビリティとセキュリティ | Microsoft Intune |
 |:-----|:-----|:-----|
-|Microsoft 365 アプリ|はい|いいえ|
-|Microsoft 365 Business Basic|はい|いいえ|
-|Microsoft 365 Business Standard|はい|いいえ|
-|Office 365 E1 |はい|いいえ|
-|Office 365 E3 |はい|いいえ|
-|Office 365 E5 |はい|いいえ|
+|Microsoft 365 Apps|はい|不要|
+|Microsoft 365 Business Basic|はい|不要|
+|Microsoft 365 Business Standard|はい|不要|
+|Office 365 E1 |はい|不要|
+|Office 365 E3 |はい|不要|
+|Office 365 E5 |はい|不要|
 |Microsoft 365 Business Premium |はい|はい|
 |Microsoft 365Firstline 3 |はい|はい|
 |Microsoft 365 Enterprise E3 |はい|はい|
@@ -49,9 +49,9 @@ ms.locfileid: "53827037"
 |Microsoft 365 EducationA1 |はい|はい|
 |Microsoft 365 Education A3 |はい|はい|
 |Microsoft 365 Education A5 |はい|はい|
-|Microsoft Intune |いいえ|はい|
-|Enterpriseモビリティ &セキュリティ E3 |いいえ|はい|
-|Enterprise Mobility & Security E5 |いいえ|はい|
+|Microsoft Intune |不要|はい|
+|Enterpriseモビリティ &セキュリティ E3 |不要|はい|
+|Enterprise Mobility & Security E5 |不要|はい|
 
 > [!NOTE]
 > 基本モビリティとセキュリティの使用は、既に使用している場合はMicrosoft Intune。
@@ -71,14 +71,13 @@ Microsoft Intune組み込みの Basic Mobility and Security では、どちら�
 |デバイスのポリシー準拠|デバイス レベルの PIN ロックや脱獄の検出など、セキュリティ ポリシーを設定および管理します。 |Android 9 以降のデバイスの制限事項。 詳細を [参照してください](capabilities.md)。 |はい|
 |デバイスのコンプライアンスに基づく条件付きアクセス |準拠しないデバイスがクラウドから企業の電子メールとデータにアクセスしなかからな |このページではWindows 10。<br/>オンライン、オンライン、およびExchange Online、SharePointへのアクセスを制御Outlook。 |はい |
 |デバイス構成  |デバイス設定を構成する (たとえば、カメラを無効にする)|制限された設定のセット。|はい|
-|デバイスのポリシー準拠  |デバイス レベルの PIN ロックや脱獄の検出など、セキュリティ ポリシーを設定および管理します。 |Android 9 以降のデバイスの制限事項。 詳細を [参照してください](capabilities.md)。 |はい|
 |電子メール プロファイル  |デバイスでネイティブメール プロファイルをプロビジョニングします。 |はい|はい|
-|WiFi プロファイル |デバイスでネイティブ WiFi プロファイルをプロビジョニングします。 |いいえ|はい|
-|VPN プロファイル |デバイスにネイティブ VPN プロファイルをプロビジョニングします。 |いいえ|はい|
-|モバイル アプリケーション管理  |社内の業務用アプリとアプリ ストアからユーザーに展開します。 |いいえ|はい|
-|モバイル アプリケーション保護  |ユーザーが知っている Office モバイル アプリや業務アプリを使用して企業情報に安全にアクセスできる一方で、コピー、カット、貼り付け、保存などのアクションを企業データに対して承認されたアプリにのみ制限することで、データのセキュリティを確保できます。 デバイスが Basic Mobility and Security に登録されていない場合でも動作します。 「MAM ポリシーを使用してアプリ データを保護する」を参照してください。 |いいえ|はい|
-|管理されたブラウザー  |エッジ アプリを使用して、より安全な Web ブラウズを有効にする。 |いいえ|はい|
-|ゼロ タッチ登録プログラム (AutoPilot) |多数の企業所有デバイスを登録し、ユーザーのセットアップを簡略化します。 |いいえ|はい|
+|WiFi プロファイル |デバイスでネイティブ WiFi プロファイルをプロビジョニングします。 |不要|はい|
+|VPN プロファイル |デバイスにネイティブ VPN プロファイルをプロビジョニングします。 |不要|はい|
+|モバイル アプリケーション管理  |社内の業務用アプリとアプリ ストアからユーザーに展開します。 |不要|はい|
+|モバイル アプリケーション保護  |ユーザーが知っている Office モバイル アプリや業務アプリを使用して企業情報に安全にアクセスできる一方で、コピー、カット、貼り付け、保存などのアクションを企業データに対して承認されたアプリにのみ制限することで、データのセキュリティを確保できます。 デバイスが Basic Mobility and Security に登録されていない場合でも動作します。 「MAM ポリシーを使用してアプリ データを保護する」を参照してください。 |不要|はい|
+|管理されたブラウザー  |エッジ アプリを使用して、より安全な Web ブラウズを有効にする。 |不要|はい|
+|ゼロ タッチ登録プログラム (AutoPilot) |多数の企業所有デバイスを登録し、ユーザーのセットアップを簡略化します。 |不要|はい|
 |||
 
 前の表に示す機能に加えて、Basic Mobility and Security と Intune には、インターネットを使用してデバイスにコマンドを送信する一連のリモート アクションが含まれています。 たとえば、従業員のデバイスから Office データを削除し、個人データを一定の場所に残す (退職)、従業員のデバイスから Office アプリを削除 (ワイプ)、またはデバイスを工場出荷時の設定 (フル ワイプ) にリセットできます。

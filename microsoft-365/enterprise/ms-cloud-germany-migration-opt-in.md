@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: '
-ms.openlocfilehash: 7b99238b588363203f7aac07b3fb056d7a37e19f
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 959aee9662c843fa89851924c3f5e878d73a382b8ea19258eca2a332ff404169
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592074"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899081"
 ---
 # <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域のOffice 365サービスへの新しい移行をオプトインする方法
 
@@ -34,7 +34,7 @@ ms.locfileid: "51592074"
 
 ## <a name="how-to-request-migration"></a>移行を要求する方法
 
-Microsoft Cloud Germany (Microsoft Cloud Deutschland) でサービスがプロビジョニングされている対象顧客で、テナント (グローバル) 管理者としてサインインしている場合、Microsoft 365 管理センターのページを使用すると、移行をオプトインできます。
+Microsoft Cloud Germany (Microsoft Cloud Deutschland) でサービスがプロビジョニングされている対象顧客で、テナント (グローバル) 管理者としてサインインしている場合は、Microsoft 365 管理センター のページで移行をオプトインできます。
 
 ページにアクセスするには、左側 **設定ウィンドウで**[組織プロファイル] を展開し、[組織プロファイル]**をクリックします**。
 
@@ -48,7 +48,7 @@ Microsoft Cloud Germany (Microsoft Cloud Deutschland) でサービスがプロ�
  
 ![オプトインの承認](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-テナントに代わってオプトインすると、すべての管理者に[Microsoft **Cloud Germany (Microsoft Cloud Deutschland)** から Office 365 サービスへの移行] セクションの確認が表示されます(オプトインの日付を含む)。 管理者は、管理者管理センターのメッセージ センターでも確認Microsoft 365受け取ります。 
+テナントに代わってオプトインすると、すべての管理者に[Microsoft **Cloud Germany (Microsoft Cloud Deutschland)** から Office 365 サービスへの移行] セクションの確認が表示されます(オプトインの日付を含む)。 管理者は、メッセージ センターのメッセージ センターで確認を受け取Microsoft 365 管理センター。 
  
 ![オプトインの確認](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
@@ -62,13 +62,13 @@ Microsoft Cloud Germany (Microsoft Cloud Deutschland) でサービスがプロ�
 
 顧客テナント管理者は、Microsoft が支援する移行に対して移行へのオプトインが自動的に行われますことを通知する通知を電子メールとメッセージ センターで受け取ります。 この通知は、自動オプトインの少なくとも 30 日前に送信されます。 移行オプトイン後、すべての通信と状態の更新は、メッセージ センターの顧客テナント管理者に送信されます。
 
-顧客とパートナーのテナント管理者は、Microsoft 365 管理センターで移行をオプトインして、移行プロセスをできるだけ早く開始できます。
+顧客とパートナーのテナント管理者は、移行プロセスをできるだけ早く開始できるよう、Microsoft 365 管理センターで移行をオプトインすることを推奨します。
 
 ## <a name="next-step"></a>次の手順
 
 [移行中のカスタマー エクスペリエンスを理解する](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 はじめに:
 

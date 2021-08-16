@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: ce1d08abb6c66df2eb75fd6c9349dcf085096394453375e5f85c5089e908147a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c97d7751d56bb42a4a120deb52563a0668138ca5
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862947"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247387"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>パイロット Microsoft Defender for Office 365
 **適用対象:**
@@ -122,7 +122,7 @@ MDO を評価する際に推奨されるベースライン ポリシーから始
 
 次の表は、カスタム保護ポリシーの構成と割り当てに関するリファレンスと追加のガイダンスを示しています。
 
-|ポリシー   |Description  |Reference  |
+|ポリシー   |説明  |参照  |
 |:---------:|---------|---------|
 |接続フィルター     |    IP アドレスを使用して、適切または悪い送信元メール サーバーを識別します。     |     [EOP で既定の接続フィルター ポリシーを構成する](../office-365-security/configure-the-connection-filter-policy.md)    |
 |マルウェア対策    |    ユーザーを電子メール マルウェアから保護します。その中には、実行するアクションやマルウェアが検出された場合に通知するユーザーが含されます。     |    [EOP でマルウェア対策ポリシーを構成する](../office-365-security/configure-anti-malware-policies.md)     |

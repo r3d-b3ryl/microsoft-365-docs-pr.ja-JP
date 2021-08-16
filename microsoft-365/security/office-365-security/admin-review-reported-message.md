@@ -13,12 +13,12 @@ ms.collection:
 description: 報告されたメッセージを確認し、ユーザーにフィードバックを与える方法について学習します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 850b5846c8028342dea03bcc93c1709ef460e1ba
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: a8f278d94235f4fc36e2c05c1cfe8724843f9ff3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538947"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258566"
 ---
 # <a name="admin-review-for-reported-messages"></a>報告されたメッセージの管理者によるレビュー
 
@@ -53,18 +53,18 @@ Microsoft 365メールボックスExchange Online Microsoft Defender for Office 
 
 1. このポータルMicrosoft 365 Defender、[提出] ページに直接 **移動** します。 https://security.microsoft.com/reportsubmission}(https://security.microsoft.com/reportsubmission)
 
-2. [ **報告されたメッセージのユーザー**] をクリックし、マークして通知するメッセージを選択します。 
+2. [ **報告されたメッセージのユーザー**] をクリックし、マークして通知するメッセージを選択します。
 
-3. [マークを **付け、通知** する] ドロップダウンを選択し、[脅威が見 **つかりません]、[** フィッシング]、または [ **迷惑メール]** を **選択します**。  
+3. [マークを **付け、通知** する] ドロップダウンを選択し、[脅威が見 **つかりません]、[** フィッシング]、または [ **迷惑メール]** を **選択します**。
 
    > [!div class="mx-imgBorder"]
    > ![ポータルからメッセージを送信する](../../media/admin-review-send-message-from-portal.png)
 
-報告されたメッセージは誤検知または偽陰性としてマークされ、メッセージを報告したユーザーに通知するメールがポータル内から自動的に送信されます。 
+報告されたメッセージは誤検知または偽陰性としてマークされ、メッセージを報告したユーザーに通知するメールがポータル内から自動的に送信されます。
 
 ## <a name="customize-the-messages-used-to-notify-users"></a>ユーザーへの通知に使用するメッセージをカスタマイズする
 
-1. このポータルMicrosoft 365 Defender、[メール] グループ & **[** ルール&ポリシー] ページの [その他] セクション [ユーザーが報告したメッセージ設定] に \>  \>  \>  \> **移動します**。
+1. このポータルMicrosoft 365 Defender、[その他] セクションの [メール &グループ &ルールの脅威ポリシー] [ユーザーが報告したメッセージ設定] \>  \>  \> **に移動** します。
 
 2. [ユーザー申請] ページで、送信者の表示名を指定する場合は、[管理者レビュー結果の電子メール通知] セクションの [送信者として使用する **Office 365** 電子メール アドレスを指定する] チェック ボックスをオンにし、使用する名前を入力します。 メッセージに表示される電子メール Outlook、すべての返信がそこに送信されます。
 

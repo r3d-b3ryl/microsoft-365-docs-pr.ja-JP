@@ -1,7 +1,7 @@
 ---
-title: Defender でサポートされるサービスMicrosoft 365展開する
-description: Defender、ライセンス要件、および展開手順によって統合Microsoft 365 Microsoft セキュリティ サービスについて説明します。
-keywords: 展開、ライセンス、サポートされているサービス、プロビジョニング、構成 Microsoft 365 Defender、M365、ライセンス適格性、Microsoft Defender for Endpoint、microsoft Defender for Office 365、Microsoft Defender for Identity、Microsoft Cloud App Security、MCAS、E5、A5、EMS
+title: ユーザーがサポートするサービスをMicrosoft 365 Defender
+description: ユーザーのライセンス要件、および展開手順によって統合Microsoft 365 Defender Microsoft のセキュリティ サービスについて説明します。
+keywords: 展開、ライセンス、サポートされるサービス、プロビジョニング、構成 Microsoft 365 Defender、M365、ライセンスの適格性、Microsoft Defender for Endpoint、Office 365 用 Microsoft Defender、Microsoft Defender for Identity、Microsoft Cloud App Security、MCAS、E5、A5、EMS
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4e1b36423974e46a485727f7e1f158dc6163d834
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4a3aac06f19c7ed86af67f3b72bac8bf367628a8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935679"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258464"
 ---
 # <a name="deploy-supported-services"></a>サポートされているサービスを展開する
 
@@ -39,10 +39,10 @@ ms.locfileid: "51935679"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[Microsoft 365 Defender は、](microsoft-365-defender.md)さまざまな Microsoft セキュリティ サービスを統合して、高度な攻撃に対する一元的な検出、防止、および調査機能を提供します。 この記事では、サポートされているサービス、ライセンス要件、1 つ以上のサービスの展開に関連する利点と制限、およびそれらを個別に完全に展開する方法へのリンクについて説明します。
+[Microsoft 365 Defender](microsoft-365-defender.md) Microsoft のセキュリティ サービスを統合して、高度な攻撃に対する一元的な検出、防止、および調査機能を提供します。 この記事では、サポートされているサービス、ライセンス要件、1 つ以上のサービスの展開に関連する利点と制限、およびそれらを個別に完全に展開する方法へのリンクについて説明します。
 
 ## <a name="supported-services"></a>サポートされているサービス
-Microsoft 365 E5、E5 Security、A5、または A5 セキュリティ ライセンス、またはライセンスの有効な組み合わせにより、以下のサポートされているサービスにアクセスし、Microsoft 365 セキュリティ センターで Microsoft 365 Defender を使用できます。 [「ライセンス要件」を参照してください。](prerequisites.md#licensing-requirements)
+E5 Microsoft 365 E5、A5、または A5 のセキュリティ ライセンス、またはライセンスの有効な組み合わせにより、以下のサポートされているサービスにアクセスし、Microsoft 365 Defender を使用できます。 [「ライセンス要件」を参照してください。](prerequisites.md#licensing-requirements)
 
 | サポートされているサービス | 説明 |
 | ------ | ------ |
@@ -52,16 +52,16 @@ Microsoft 365 E5、E5 Security、A5、または A5 セキュリティ ライセ�
 | Microsoft Cloud App Security | Microsoft およびサード パーティのクラウド サービス全体でサイバー脅威を特定して対処する |
 
 ## <a name="deployed-services-and-functionality"></a>展開されたサービスと機能
-Microsoft 365Defender は、サポートされているサービスの展開に合って、より良い可視性、相関関係、修復を提供します。
+Microsoft 365 Defenderサポートされているサービスを展開する場合、より良い可視性、相関関係、および修復が提供されます。
 
 ### <a name="benefits-of-full-deployment"></a>完全展開の利点
-Defender の完全な利点を得Microsoft 365サポートされているサービスを展開することをお勧めします。 完全展開の主な利点を次に示します。
+このサービスの完全な利点を得Microsoft 365 Defenderサポートされているサービスを展開することをお勧めします。 完全展開の主な利点を次に示します。
 - インシデントは、使用可能なすべてのセンサーとサービス固有の分析機能からのアラートとイベント信号に基づいて識別され、関連付けされます。
 - 自動調査と修復 (AIR) プレイブックは、デバイス、メールボックス、ユーザー アカウントなど、さまざまなエンティティの種類に適用されます。
 - デバイス、メールボックス、その他のエンティティからのイベントおよびエンティティ データに対して、より包括的な高度なハンティング スキーマを照会できます。
 
 ### <a name="limited-deployment-scenarios"></a>限られた展開シナリオ
-展開するサポートされている各サービスは、生の信号と関連情報の非常に豊富なセットを提供します。 限定的な展開では、Microsoft 365 Defender の機能は無効にされませんが、エンドポイント、アプリ、データ、および ID 全体で包括的な可視性を提供する機能が影響を受ける可能性があります。 同時に、修復機能は、展開したサービスによって管理できるエンティティにのみ適用されます。
+展開するサポートされている各サービスは、生の信号と関連情報の非常に豊富なセットを提供します。 限定的な展開では、Microsoft 365 Defender機能がオフになされませんが、エンドポイント、アプリ、データ、および ID 全体で包括的な可視性を提供する機能が影響を受ける。 同時に、修復機能は、展開したサービスによって管理できるエンティティにのみ適用されます。
 
 次の表に、サポートされている各サービスが追加のデータを提供する方法、データを関連付けて追加の分析情報を取得する機会、および改善と対応の機能を示します。
 
@@ -82,11 +82,11 @@ Defender の完全な利点を得Microsoft 365サポートされているサー�
 | Microsoft Defender for Identity | [クイック スタート: Microsoft Defender for Identity インスタンスを作成する](/azure-advanced-threat-protection/install-atp-step1) | *「プロビジョニングの手順」を参照してください。* |
 | Microsoft Cloud App Security | *なし* | [クイック スタート: クイック スタートMicrosoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
 
-サポートされているサービスを展開したら、Defender のMicrosoft 365[します](m365d-enable.md)。
+サポートされているサービスを展開したら、[次の](m365d-enable.md)Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>関連項目
 
-- [Microsoft 365Defender の概要](microsoft-365-defender.md)
+- [Microsoft 365 Defender概要](microsoft-365-defender.md)
 - [Microsoft 365 Defender を有効にする](m365d-enable.md)
 - [Microsoft Defender for Endpoint の概要](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Microsoft Defender for Office 365概要](../office-365-security/defender-for-office-365.md)

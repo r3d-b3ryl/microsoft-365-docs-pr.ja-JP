@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8bfc53d46bdcb91c16e9f4a1ddbc8ab3f6dfb47e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 96ad8e55dc4d7bea15da89142d42531ca46c960875b79b8579a3a5e9f0ce31d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922028"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898661"
 ---
 # <a name="deploy-apps-to-devices"></a>アプリをデバイスに展開する
 アプリのオンボーディングのMicrosoft マネージド デスクトップユーザーのデバイスへのアプリの追加と展開が含まれます。 アプリ ポータルを使用Microsoft マネージド デスクトップ、アプリを追加して展開できます。 
@@ -61,7 +61,7 @@ ms.locfileid: "50922028"
 4. 製品の詳細で、[アプリの取得 **] を選択します**。 Microsoft Store、組織の **製品にアプリ** を追加します。
 
 **Intune とデバイス間の同期を強制的に行ビジネス向け Microsoft Store**
-1. 管理者センターに[サインインMicrosoft エンドポイント マネージャーします](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. Microsoft エンドポイント マネージャー管理センター
 2. [**テナント管理**  >  **コネクタとトークン] を**  >  **選択** ビジネス向け Microsoft Store。
 3. [**同期]** を選択して、アプリから購入したアプリを Intune Microsoft Store取得します。
 

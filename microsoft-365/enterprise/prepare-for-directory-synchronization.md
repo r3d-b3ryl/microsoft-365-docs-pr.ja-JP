@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用してユーザーにMicrosoft 365準備する方法と、このメソッドを使用する長期的な利点について説明します。
-ms.openlocfilehash: ee6cfe9adfe029e620d2465f08a3fbe1e9290503
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fc2fa76e61afeb0efeeef9fca7f66ac34ec83c77169551b859724b86b766c2c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229769"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885137"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepare for directory synchronization to Microsoft 365 (Microsoft 365 へのディレクトリ同期を準備する)
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 組織のハイブリッド ID とディレクトリ同期の利点は次のとおりです。
 
@@ -188,6 +188,6 @@ Active Directory は、組織内のエンド ユーザーが **sAMAccountName** 
 
 また、「 [ディレクトリ同期用に、.local](prepare-a-non-routable-domain-for-directory-synchronization.md)ドメインなど、ルートできないドメインを準備する方法」も参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 上記の手順 1 ~ 5 を実行した場合は、「ディレクトリ同期の [セットアップ」を参照してください](set-up-directory-synchronization.md)。

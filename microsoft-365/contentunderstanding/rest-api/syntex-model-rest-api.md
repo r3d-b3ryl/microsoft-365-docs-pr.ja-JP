@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: SharePoint Syntex ドキュメント理解モデル REST API の概要。
-ms.openlocfilehash: 279c624bb818e5d8d33b476f997290269ff634cb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 7dc6fe321c2cc0dd2617747860dc32a1d7753f9f229be10e5d0e5a91241d0202
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904313"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865037"
 ---
 # <a name="sharepoint-syntex-document-understanding-model-rest-api"></a>SharePoint Syntex ドキュメント理解モデル REST API
 
@@ -24,14 +24,14 @@ SharePoint REST インターフェイスを使用して、ドキュメント理�
 
 SharePoint Online (および SharePoint 2016 以降のオンプレミス) REST サービスでは、OData $batch クエリ オプションを使って、サービスに対する複数の要求を 1 つの呼び出しに統合できます。 
 
-詳細とコード サンプルへのリンクについては、[「REST API によりバッチ要求を発行する」](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis.md)を参照してください。
+詳細とコード サンプルへのリンクについては、[「REST API によりバッチ要求を発行する」](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis)を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 
 作業の開始前に、次に示す事項について十分に理解しておいてください。
 
-- [SharePoint REST サービスの概要](/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service.md) 
-- [SharePoint REST エンドポイントを使用して基本的な操作を完了する](/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints.md)
+- [SharePoint REST サービスの概要](/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service) 
+- [SharePoint REST エンドポイントを使用して基本的な操作を完了する](/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints)
 
 ## <a name="rest-commands"></a>REST コマンド
 

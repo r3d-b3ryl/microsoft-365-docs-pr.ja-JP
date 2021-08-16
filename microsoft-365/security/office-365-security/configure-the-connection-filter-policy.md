@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、電子メール サーバーからの電子メールを許可またはブロックExchange Online Protection (EOP) で接続フィルターを構成する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce1eddbf1ac788ad57ffc57da2156aae1ae69f6a
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 8aa760990eff4bff8e8c4dd26efa74042f4a9208
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108393"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258496"
 ---
 # <a name="configure-connection-filtering"></a>接続フィルターを構成する
 
@@ -64,7 +64,7 @@ Exchange Online 内のメールボックスまたは Exchange Online メール�
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory の役割にユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 許可またはブロックする電子メール サーバー (送信者) の送信元 IP アドレスを検索するには、メッセージ ヘッダーの接続 IP (**CIP**) ヘッダー フィールドを確認します。 さまざまな電子メール クライアントでメッセージ ヘッダーを表示するには、「インターネット メッセージ ヘッダーを表示する」を参照[Outlook。](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
 
@@ -74,7 +74,7 @@ Exchange Online 内のメールボックスまたは Exchange Online メール�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>既定の接続Microsoft 365 Defenderポリシーを変更するには、このポータルを使用します。
 
-1. このポータルMicrosoft 365 Defender、[メールの送信] &  [&の脅威ポリシー] ページの [スパム対策] \>  \>  \>  \> **セクションに移動します**。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー]セクション&ルール&スパム対策ポリシーにメールを送信 \>  \>  \> する」**に移動** します。
 
 2. [スパム **対策ポリシー]** ページで、ポリシーの名前をクリックして、一覧から [接続フィルター ポリシー **(既定)]** を選択します。
 
@@ -105,7 +105,7 @@ Exchange Online 内のメールボックスまたは Exchange Online メール�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>既定の接続Microsoft 365 Defenderポリシーを表示するには、次のポータルを使用します。
 
-1. このポータルMicrosoft 365 Defender、[メールの送信] &  [&の脅威ポリシー] ページの [スパム対策] \>  \>  \>  \> **セクションに移動します**。
+1. [ポリシー] Microsoft 365 Defenderで、[ポリシー]セクション&ルール&スパム対策ポリシーにメールを送信 \>  \>  \> する」**に移動** します。
 
 2. [スパム **対策ポリシー] ページで** 、ポリシーの一覧に次のプロパティが表示されます。
 
@@ -124,7 +124,7 @@ Exchange Online 内のメールボックスまたは Exchange Online メール�
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
 ```
 
-**注**:
+**注意**:
 
 - 有効な IP アドレスまたはアドレス範囲の値は次のとおりです。
   - 単一 IP: たとえば、192.168.1.1。
@@ -148,11 +148,11 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 構文とパラメーターの詳細については [、「Set-HostedConnectionFilterPolicy」を参照してください](/powershell/module/exchange/set-hostedconnectionfilterpolicy)。
 
-## <a name="how-do-you-know-this-worked"></a>実行が適切に行われたことを確認する方法
+## <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
 既定の接続フィルター ポリシーが正常に変更されたことを確認するには、次の手順を実行します。
 
-- Microsoft 365 Defender ポータルで、[メール &**コラボレーション** ポリシー & ルール脅威ポリシー] ページの [ポリシー] セクション [スパム対策] セクションで、ポリシーの名前をクリックして一覧から [接続フィルター ポリシー \>  \>  \>  \>  \> (既定 **)** を選択し、設定を確認します。
+- Microsoft 365 Defender ポータルで、[ポリシー] セクションの [メール **& コラボレーション** ポリシー & Rules Threat \>  \> **policies** \> **Anti-spam]** に移動し、ポリシーの名前をクリックして一覧から [接続フィルター ポリシー \> (既定 **)]** を選択し、設定を確認します。
 
 - PowerShell Exchange Onlineスタンドアロン EOP PowerShell で、次のコマンドを実行し、設定を確認します。
 

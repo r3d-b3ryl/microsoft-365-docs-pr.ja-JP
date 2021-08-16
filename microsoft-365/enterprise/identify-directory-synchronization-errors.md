@@ -22,27 +22,27 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: ディレクトリ同期エラーと考えられる修正プログラムを管理センターで表示するMicrosoft 365説明します。
-ms.openlocfilehash: 76717fc158aa0cee47f784919f19a295378bbd5b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: ディレクトリ同期エラーと考えられる修正プログラムを表示する方法については、Microsoft 365 管理センター。
+ms.openlocfilehash: 37bd25f46c84f2a4ec26f17accdae034487a4dc91023d798cf3459941136c0a6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885266"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>ディレクトリ同期エラーの Microsoft 365表示
 
-ディレクトリ同期エラーは、管理センター Microsoft 365表示できます。 User オブジェクトのエラーだけが表示されます。 PowerShell のエラーを表示するには [、「DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)を使用してオブジェクトを識別する」を参照してください。
+ディレクトリ同期エラーは、ディレクトリの同期エラー Microsoft 365 管理センター。 User オブジェクトのエラーだけが表示されます。 PowerShell のエラーを表示するには [、「DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)を使用してオブジェクトを識別する」を参照してください。
 
-## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>管理センターでディレクトリ同期エラー Microsoft 365表示する
+## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>ディレクトリ同期エラーを表示するMicrosoft 365 管理センター
 
-管理センターでエラー Microsoft 365するには、次のMicrosoft 365します。
+エラーを表示するには、次のMicrosoft 365 管理センター。
   
-1. グローバル管理者アカウントを[使用Microsoft 365管理センター](https://admin.microsoft.com)にサインインします。 
+1. グローバル管理者アカウントで[Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。 
     
 2. [ホーム **] ページ** に[ユーザー管理] **カードが表示** されます。 
     
-    ![管理センターのユーザー Microsoft 365カード](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![[ユーザー管理] カードのMicrosoft 365 管理センター](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
 3. カードで **、[Azure** **の同期** エラー] を選択しAD Connect[ディレクトリ同期エラー **] ページにエラーを表示** します。   
     

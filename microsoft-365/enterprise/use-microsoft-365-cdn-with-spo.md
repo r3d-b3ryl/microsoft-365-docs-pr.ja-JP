@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: オンライン アセットの配信をOffice 365 Content Delivery Network (CDN) を使用する方法SharePointします。
-ms.openlocfilehash: 24b86f059e5a59d3b6dadf989bef0ab38ad8e010
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: f2e23217e18c51bb865dd46a692db50bf3fa81ade1a09e833305cdb9a5fbadc9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419564"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885110"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -976,7 +976,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 重要な点は、SharePoint Online がプライベートオリジンのアセットに対するアイテム レベルのアクセス許可をサポートしていない点に注意してください。 たとえば、場所にあるファイルの場合、ユーザーは次の条件に従って `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` ファイルに効果的にアクセスできます。
 
-|ユーザー  |アクセス許可  |有効なアクセス  |
+|User  |Permissions  |有効なアクセス  |
 |---------|---------|---------|
 |ユーザー 1     |フォルダー 1 へのアクセス権を持つ         |サーバーからimage1.jpgアクセスCDN         |
 |ユーザー 2     |folder1 にアクセスできない         |サーバーからimage1.jpgにアクセスCDN         |

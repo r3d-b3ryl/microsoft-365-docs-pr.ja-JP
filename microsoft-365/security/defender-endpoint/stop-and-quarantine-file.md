@@ -1,6 +1,6 @@
 ---
 title: ファイル API の停止と検疫
-description: デバイスでのファイルの実行を停止し、Microsoft Defender for Endpoint でファイルを削除する方法について説明します。 「例」を参照してください。
+description: デバイスでのファイルの実行を停止し、Microsoft Defender for Endpoint でファイルを削除する方法について説明します。 例を参照してください。
 keywords: apis、graph api、サポートされている API、停止および検疫ファイル
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96009bfd61ad22b06a5d5f64351e4983db264395
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2d37eef37400f67421434e36aa3e7b36487afaf4
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651725"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247474"
 ---
 # <a name="stop-and-quarantine-file-api"></a>ファイル API の停止と検疫
 
@@ -44,6 +44,14 @@ ms.locfileid: "53651725"
 1. この API のレート制限は、1 分あたり 100 回の呼び出しと 1 時間あたり 1500 回の呼び出しです。
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+> [!IMPORTANT]
+> このアクションは、次の場合にのみ実行できます。
+>
+> - アクションを実行しているデバイスがバージョン 1703 以降Windows 10を実行している
+> - ファイルが信頼できるサード パーティの発行元に属していないか、Microsoft によって署名されていない
+> - Microsoft Defender ウイルス対策パッシブ モードで実行している必要があります。 詳細については、「互換性」[をMicrosoft Defender ウイルス対策してください](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+
 
 ## <a name="permissions"></a>アクセス許可
 
