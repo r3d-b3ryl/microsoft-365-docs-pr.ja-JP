@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理者アクセス許可で Microsoft 365 管理センターにサインインして、クラウドで組織を設定し、ユーザーとサブスクリプションを管理します。
-ms.openlocfilehash: 3eb5853a23930e1ab1e595efa6f1448dcb82894c531f0771a973318d4601c09d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1a5ebf22f874700510ff34a0f1d1fa7bb923fe0
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827169"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346978"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
@@ -38,7 +38,7 @@ ms.locfileid: "53827169"
 
 **管理者アクセス許可を持たないユーザーの場合、または Microsoft 365 Family プランを使用している場合は、管理センターはありません。** Microsoft 365 を設定するには、「[Microsoft 365 または Office 2019 を PC または Mac にダウンロードしてインストールまたは再インストールする](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)」にアクセスしてください。
 
-管理センターを使用して、クラウドでの組織の設定、ユーザーの管理、サブスクリプションの管理などを行います。この記事では、管理センターにアクセスする方法および利用可能な機能と設定について説明します。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> を使用して、クラウドでの組織の設定、ユーザーの管理、サブスクリプションの管理などを行います。この記事では、管理センターにアクセスする方法および利用可能な機能と設定について説明します。
 
 管理センターについての短いビデオを見ます。 <br><br>
 

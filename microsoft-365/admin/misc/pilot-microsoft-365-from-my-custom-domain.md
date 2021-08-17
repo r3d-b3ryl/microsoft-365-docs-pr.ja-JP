@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 2つのテストアカウントのみを使用して、カスタムドメインから Microsoft 365 メールボックスに電子メール機能をパイロットする方法について説明します。
-ms.openlocfilehash: 6172975719258e6186e6fcfdecc7bc9395b887c9f69ae835d45c1edf16626a2e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e19c04d00e533797036a29cafdfe9902e93a008
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823833"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346078"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>カスタムドメインから Microsoft 365 をパイロットする
 
@@ -89,7 +89,7 @@ Microsoft 365 では、スパム保護に Exchange Online Protection（EOP） �
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>手順 5: ユーザー アカウントを作成して主要な (返信先) アドレスを設定する
 
-1. Microsoft 365 管理センターの左側のナビゲーションで、[**ユーザー** > **アクティブユーザー**]を選択します。
+1. Microsoft 365 管理センター の左側のナビゲーションで、[**ユーザー** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**アクティブユーザー**</a>]を選択します。
 
 2. 2 つの既存のユーザーを追加して、2 つのテストアカウントを作成します。
 

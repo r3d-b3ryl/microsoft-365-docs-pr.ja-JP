@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 2b21df0592c2ca6f3f45500236e2cd07ab7128c1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: cafe6fe2628d58b80ea86753734e56996c5fdfcd
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247555"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357055"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -44,7 +44,7 @@ ms.locfileid: "58247555"
 コンテンツに機密情報、キーワード、検索可能なプロパティ、または[トレーニング可能な分類子](classifier-get-started-with.md)のマッチが含まれている場合、保持ラベルをコンテンツに自動的に適用できます。
 
 > [!TIP]
-> [Teams 会議のレコーディング](#microsoft-teams-meeting-recordings)を特定でするのに使用する検索可能なプロパティが最近リリースされました。
+> 検索可能なプロパティを使用して [Teams 会議のレコーディング](#microsoft-teams-meeting-recordings)を特定できるようになりました。
 
 保持ラベルを自動的に適用するプロセスは、次の条件に基づいています。
 
@@ -127,7 +127,7 @@ ms.locfileid: "58247555"
 
 - [トレーニング可能な分類子の一致](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-3 つの条件はすべて、メールの送受信時に保持ラベルをメールに自動的に適用できますが、メールボックス内の既存のアイテム (保存データ) には適用できません。 SharePoint と OneDrive のアイテムの場合、次の表を使用して、保持ラベルをアイテムに自動的に適用できるタイミングを特定します。
+3 つの条件はすべて、メールの送受信時 (転送中のデータ) に保持ラベルを自動的に適用できますが、メールボックス内の既存のアイテム (保存データ) には適用できません。 SharePoint と OneDrive のアイテムの場合、次の表を使用して、保持ラベルをアイテムに自動的に適用できるタイミングを特定します。
 
 |条件|新規または変更されたアイテム |既存のアイテム (保存データ)|
 |:-----|:-----|:-----|
