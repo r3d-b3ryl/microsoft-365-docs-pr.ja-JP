@@ -2,8 +2,8 @@
 title: Microsoft 365 for Enterprise の概要
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 02/01/2021
 audience: ITPro
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: 19bc4763f60fae1db914ab7c1f10354e7904cb50
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 20a7858e50a72073170be317b654de33804a5cb4
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923172"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357019"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -33,7 +33,7 @@ Microsoft 365 for Enterprise は以下で構成されています。
 |サービス|説明|
 |---|---|
 |ローカル アプリおよびクラウド ベースのアプリと生産性サービス|Microsoft 365 Apps for enterprise、お使いの PC と Mac 用の最新版の Office アプリ (Word、Excel、PowerPoint、Outlook など)、メール、ファイル ストレージと共同作業、会議、その他の一連のオンライン サービスが含まれています。|
-|Windows 10 Enterprise|大規模と中規模の組織のニーズを満たします。 これは、ユーザーにとって最も生産的かつ安全なバージョンの Windows です。 IT プロフェッショナルに対しては、包括的な展開、デバイス、アプリの管理も提供します。|
+|Windows 10 Enterprise|大規模と中規模の組織のニーズを満たします。これは、ユーザーにとって最も生産的かつ安全なバージョンの Windows です。IT プロフェッショナルに対しては、包括的な展開、デバイス、アプリの管理も提供します。|
 |デバイス管理と高度なセキュリティ サービス|Microsoft Intune が含まれています。これは、クラウドベースのエンタープライズ モビリティ管理 サービスであり、組織のデータを保護しながら、従業員の生産性を高めるのに役立ちます。|
 |||
 
@@ -134,7 +134,7 @@ Microsoft 365 for Enterprise の製品、機能、コンポーネントの展開
 
 ## <a name="best-together-with-surface-and-the-edge-browser"></a>Surface および Edge ブラウザーの Best together
 
-Microsoft 365 for Enterprise、Microsoft Surface デバイス、およびMicrosoft Edge ブラウザーの最適な組み合わせにより、ユーザーの統合された安全な生産性を最適化します。 この製品間の統合により、次のものが提供されます。
+Microsoft 365 for Enterprise、Microsoft Surface デバイス、および Microsoft Edge ブラウザーの最適な組み合わせにより、ユーザーの統合された安全な生産性を最適化します。この製品間の統合により、次のものが提供されます。
 
 - 共通の ID およびサインイン セキュリティ インフラストラクチャ。
 - 検索、コラボレーション、生産性、コンプライアンスのための統合されたローカル アプリとクラウド アプリ。
