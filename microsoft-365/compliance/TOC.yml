@@ -333,6 +333,8 @@
           items:
             - name: アイテム保持ポリシーと保持ラベル
               href: retention.md
+            - name: 保持フローチャート
+              href: retention-flowchart.md
             - name: SharePoint と OneDrive の保持
               href: retention-policies-sharepoint.md
             - name: Microsoft Teams の保持

@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 グループでは、メンバーは会話用のグループ メールおよび共有ワークスペース、ファイル、カレンダー イベント、ストリーム、Planner を利用できます。
-ms.openlocfilehash: a831ef11817af47ed1007600a1eb70bddd341b3ae474c11d0b2326a9e4debf89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5e616e95cf56a67799f4edc2608a54758a7aa0b
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826521"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346882"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
-Microsoft 365 管理センターの [ **グループ**] セクションでは、次の種類のグループを作成および管理できます。 
+Microsoft 365 管理センターの <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**[グループ]**</a> セクションでは、次の種類のグループを作成および管理できます。 
 
 - **Microsoft 365 グループ** は、社内外のユーザー間での共同作業に使用されます。 これには、SharePoint や Planner などのコラボレーション サービスが含まれます。
 - **配布グループ** は、ユーザーのグループにメール通知を送信するのに使用されます。

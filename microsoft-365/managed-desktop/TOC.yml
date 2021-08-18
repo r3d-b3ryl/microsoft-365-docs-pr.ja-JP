@@ -150,6 +150,10 @@
           items:
             - name: デバイス一覧レポート
               href: working-with-managed-desktop/device-inventory-report.md
+            - name: デバイスの状態レポート
+              href: working-with-managed-desktop/device-status-report.md
+            - name: Windows セキュリティ更新プログラム レポート
+              href: working-with-managed-desktop/security-updates-report.md
         - name: 管理者サポート
           href: working-with-managed-desktop/admin-support.md
         - name: ユーザー サポート
@@ -160,7 +164,7 @@
           href: working-with-managed-desktop/work-with-app-control.md
         - name: デバイス プロファイルを変更する
           href: working-with-managed-desktop/change-device-profile.md
-        - name: デバイスを展開に割り当てる
+        - name: デバイスを展開グループに割り当てる
           href: working-with-managed-desktop/assign-deployment-group.md
         - name: デバイスの削除
           href: working-with-managed-desktop/remove-devices.md

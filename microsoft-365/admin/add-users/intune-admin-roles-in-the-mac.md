@@ -17,20 +17,20 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 21618a078a3104af39727439c6690e31f75fbc93518e534e6759d3a914c414fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 32f910729c5e7b76389bf54898ccb9c9e197045e
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815661"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346990"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターにおける Intune 管理者の役割
 
-Microsoft 365 または Office 365 のサブスクリプションには、Microsoft 365 管理センターを使用して組織内のユーザーに割り当てることができる一連の管理者ロールがあります。各管理者ロールは一般的なビジネス機能に対応し、組織のユーザーに、管理センターで特定のタスクを実行するためのアクセス許可を付与します。
+Microsoft 365 または Office 365 のサブスクリプションには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> を使用して組織内のユーザーに割り当てることができる一連の管理者ロールがあります。各管理者ロールは一般的なビジネス機能に対応し、組織のユーザーに、管理センターで特定のタスクを実行するためのアクセス許可を付与します。
 
 Microsoft 365 管理センターを使用すると、Microsoft Intune の役割を管理できます。 ただし、これらの役割は、Intune 管理センターで使用可能な役割のサブセットです。 Microsoft Intune の役割の詳細な説明をお探しですか ? 「[Microsoft Intune の役割ベースのアクセス制御 (RBAC)](/mem/intune/fundamentals/role-based-access-control)」を確認してください。
 
-Microsoft 365 管理センターでの役割を割り当てる方法の詳細については、「[管理者ロールを割り当てる](assign-admin-roles.md)」を参照してください。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">Microsoft 365 管理センター</a>での役割を割り当てる方法の詳細については、「[管理者役割を割り当てる](assign-admin-roles.md)」を参照してください。
 
 Microsoft 365 管理センターで、[**役割**] に移動し、任意の役割を選択して詳細ウィンドウを開きます。 [**アクセス許可**] タブを選択して、実行する許可を持った役割を割り当てられた管理者についての詳細な一覧を表示します。 役割にユーザーを追加するには、**[割り当てられた]** または **[割り当てられた管理者]** タブを選択します。
 
