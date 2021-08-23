@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseベースラインを展開する方法Microsoft 365 Lighthouseします。
-ms.openlocfilehash: 70dae3e86cd5f559d0afd65406cf72835af81ebb6bd209fb1d68038b9c1be5e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 85e9c9031575aae3aec43b4200caf2338422f563
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800803"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365215"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>ベースラインMicrosoft 365 Lighthouse展開する 
 
 > [!NOTE]
 > この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウントが設定されていない場合Microsoft 365 Lighthouse[を参照してください](m365-lighthouse-sign-up.md)Microsoft 365 Lighthouse。
 
-Microsoft 365 Lighthouse基準を使用すると、テナント ユーザー、デバイス、およびデータをセキュリティで保護するための標準的な管理テナント構成を展開できます。 次の 6 つの既定の基準構成が標準でMicrosoft 365 Lighthouse。
+Microsoft 365 Lighthouse基準を使用すると、標準的な管理テナント構成を展開して、顧客テナント内のユーザー、デバイス、およびデータをセキュリティで保護できます。 次の 6 つの既定の基準構成が標準でMicrosoft 365 Lighthouse。
 
 - 管理者に MFA を要求する
 - エンド ユーザーに MFA を要求する
@@ -53,7 +53,7 @@ Microsoft 365 Lighthouse基準を使用すると、テナント ユーザー、�
 
 2. ベースライン構成を展開するテナントを選択します。
 
-3. [展開 **計画] タブを** 選択すると、テナントの展開計画に追加されたベースラインのすべての展開手順が表示されます。
+3. [展開 **計画] タブ** を選択すると、テナントの展開計画に追加されたベースラインのすべての展開手順が表示されます。
 
 4. 展開手順を選択して、展開手順ページを開きます。
 

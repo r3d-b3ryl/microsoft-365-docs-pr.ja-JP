@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順Office 365説明します。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ec120edcbccc64046b57507cd6cd6044fb583c5129c336e28890b67f369cd46
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b4c5389ec650be18c9f65e7fc85f4166a8eef14
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820161"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394590"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、解決する
 
@@ -52,7 +52,7 @@ ms.locfileid: "53820161"
    > |名前|RecipientType|
    > |---|---|
    > |エイリアス、ユーザー|MailUser|
-   > |エイリアス、ユーザー|User|
+   > |エイリアス、ユーザー|ユーザー|
 
 3. 複数のユーザーが返された場合は、競合するオブジェクトを見つけて修正します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "53820161"
 
 ## <a name="errorissue-file-not-found"></a>エラー/問題: ファイルが見つかりません
 
-オンラインとビジネス向け 1 つのドライブの場所SharePoint含む電子情報開示検索を実行すると、ファイルがサイト上にありますが、エラー `File Not Found` が表示される場合があります。 このエラーは、エクスポートの警告に表示され、errors.csvまたはスキップitems.csv。 これは、サイトでファイルが見つからない場合、またはインデックスが最新の日付でなかった場合に発生する可能性があります。 実際のエラーのテキストを次に示します (強調が追加されています)。
+オンラインとユーザーの場所SharePoint含OneDrive for Business電子情報開示検索を実行すると、ファイルがサイト上にありますが、エラー `File Not Found` が表示される場合があります。 このエラーは、エクスポートの警告に表示され、errors.csvまたはスキップitems.csv。 これは、サイトでファイルが見つからない場合、またはインデックスが最新の日付でなかった場合に発生する可能性があります。 実際のエラーのテキストを次に示します (強調が追加されています)。
 
 > 28.06.2019 10:02:19_FailedToExportItem_Failedダウンロードします。 その他の診断情報 : Microsoft。Office。Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Document 型のコンテンツ 6ea52149-91cd-4965-b5bb-82ca6a3ec9be からのダウンロードに失敗しました。 相関 ID: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft。SharePoint。Client.ServerException:***ファイルが見つかりません***。 at Microsoft.SharePoint。Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint。Client.ClientRequest.ProcessResponse() --- End of inner exception stack trace ---
 
@@ -92,7 +92,7 @@ ms.locfileid: "53820161"
 
 ## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>エラー/問題: このファイルは存在しなくなったためエクスポートされません。 このファイルは、インデックスに引き続き一覧表示されたため、推定検索結果の数に含まれていました。 ファイルは最終的にインデックスから削除され、将来エラーが発生する可能性があります。
 
-オンラインおよびビジネス向け One Drive For Business の場所を含む電子情報開示SharePointを実行すると、このエラーが表示される場合があります。 電子情報開示は、SPO インデックスを使用してファイルの場所を識別します。 ファイルが削除されたが、SPO インデックスがまだ更新されていない場合、このエラーが発生する可能性があります。
+オンラインと電子情報開示の場所を含む電子情報開示検索を実行SharePointエラー OneDrive for Businessがあります。 電子情報開示は、SPO インデックスを使用してファイルの場所を識別します。 ファイルが削除されたが、SPO インデックスがまだ更新されていない場合、このエラーが発生する可能性があります。
 
 ### <a name="resolution"></a>解決方法 
 SPO の場所を開き、このファイルが実際に開いていないか確認します。
@@ -101,8 +101,7 @@ SPO の場所を開き、このファイルが実際に開いていないか確�
 
 ## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>エラー/問題: この検索結果は、それ自体ではダウンロードできないフォルダーまたは他の成果物である場合はダウンロードされません。フォルダーまたはライブラリ内のアイテムはダウンロードされます。
 
-オンラインおよびビジネス向け One Drive For Business の場所を含む電子情報開示SharePointを実行すると、このエラーが表示される場合があります。 これは、インデックスで報告されたアイテムをエクスポートしようとしていたが、フォルダーなのでエクスポートしなかったことを意味します。 エラーで説明したように、フォルダー アイテムはエクスポートされますが、その内容はエクスポートされます。
-
+オンラインと電子情報開示の場所を含む電子情報開示検索を実行SharePointエラー OneDrive for Businessがあります。 これは、インデックスで報告されたアイテムをエクスポートしようとしていたが、フォルダーなのでエクスポートしなかったことを意味します。 エラーで説明したように、フォルダー アイテムはエクスポートされますが、その内容はエクスポートされます。
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>エラー/問題: 受信者が見つからないため、検索が失敗する
 
@@ -152,7 +151,7 @@ SPO の場所を開き、このファイルが実際に開いていないか確�
 
 ### <a name="resolution"></a>解決方法
 
-1. 必要に応じて、検索を再実行します。 検索が 7 日以上前に実行された場合は、検索を再実行する必要があります。
+1. 必要に応じて、検索を再実行します。 7 日以上前に検索が最後に実行された場合は、検索を再実行する必要があります。
 
 2. エクスポートを再起動します。
 
@@ -247,3 +246,32 @@ SPO の場所を開き、このファイルが実際に開いていないか確�
 6. 前の手順が機能しない場合は、zipping と重複除外を無効にします。
 
 7. これが機能する場合は、ローカル ウイルス スキャナーまたはディスクの問題が原因で問題が発生します。
+
+## <a name="error-your-request-cant-be-started-because-the-maximum-number-of-jobs-for-your-organization-are-currently-running"></a>エラー: "組織の最大ジョブ数が現在実行中のため、要求を開始できない"
+
+組織が同時エクスポート ジョブの最大数の制限に達しました。 すべての新しいエクスポート ジョブが調整されています。
+
+### <a name="resolution"></a>解決方法
+
+次のスクリプトを実行して、過去 7 日間に開始されたエクスポート ジョブがまだ実行されている数を確認します。
+
+1. Connect[コンプライアンス センター PowerShell &にアクセスします](/powershell/exchange/connect-to-scc-powershell)。
+
+2. 次のスクリプトを実行して、現在のエクスポート ジョブに関する情報を収集し、スロットルをトリガーします。
+
+   ```powershell
+   $date = Get-Date;
+   $exports = Get-ComplianceSearchAction -Export -ResultSize Unlimited;
+   $inprogressExports = $exports | ?{$_.Results -eq $null -or (!$_.Results.Contains("Export status: Completed") -and !$_.Results.Contains("Export status: none"))};
+   $exportJobsRunning = $inprogressExports | ?{$_.JobStartTime -ge $date.AddDays(-7)} | Sort-Object JobStartTime -Descending;
+   ```
+
+3. 次のコマンドを実行して、現在実行中のエクスポート ジョブの一覧を表示します。
+
+   ```powershell
+   $exportJobsRunning | Format-Table Name, JobStartTime, JobEndTime, Status | More;
+   ```
+
+   前のコマンドが 10 つ以上のエクスポート ジョブを返した場合、組織は同時エクスポート ジョブの数の制限に達しました。 詳細については、「電子情報開示検索 [の制限」を参照してください](limits-for-content-search.md)。
+
+4. [Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction)コマンドレットを使用して、既存のエクスポート ジョブが不要になったエクスポート ジョブを終了または削除するのを待ちます。

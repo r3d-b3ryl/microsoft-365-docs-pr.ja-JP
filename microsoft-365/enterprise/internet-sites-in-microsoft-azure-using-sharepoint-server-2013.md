@@ -15,13 +15,13 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
-description: この記事では、Azure Infrastructure Services でホストされる Sharepoint Server 2013 インターネット サイトを設計および実装するためのリソースを提供します。
-ms.openlocfilehash: 9d811900485fe42e218a2e58ec4572d993c849ffe7f5ddbcd54ab16c42887db2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: この記事では、Azure Infrastructure Services でホストされるサーバー 2013 SharePointサイトを設計および実装するためのリソースを提供します。
+ms.openlocfilehash: f0d3ef56fc204f7d4bc9579102761792762edc7f
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870597"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394710"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: この記事では、SharePoint Publishing が有効化されている SharePoint Online サイトのナビゲーション オプションについて説明します。
-ms.openlocfilehash: 4cb0406fc9f4d1496cb28282427c38f83c3ea1eac31aecbf6e33f7247660be2a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38e72811eca6487a862beb8b1d197186783d3c48
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904999"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394662"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online のナビゲーション オプション
 
@@ -39,7 +39,7 @@ ms.locfileid: "53904999"
 
 ナビゲーション プロバイダーの構成はサイト全体のパフォーマンスに大きな影響を与える可能性があるため、SharePoint サイトの要件を満たすように効果的に対応できるナビゲーション プロバイダーと構成を慎重に選択する必要があります。 2 つの既成のナビゲーション プロバイダーの他、ナビゲーションのカスタム実装が提供されています。
 
-最初のオプションである [**構造**](#using-structural-navigation-in-sharepoint-online)ナビゲーションは、サイトの構造ナビゲーション キャッシュを有効にする場合、SharePoint Online の従来の Sharepoint サイトに推奨されるナビゲーション **オプションです**。 このナビゲーション プロバイダーは、現在のサイトの下にナビゲーション 項目を表示し、必要に応じて現在のサイトとその兄弟を表示します。 セキュリティ トリミングやサイト構造の列挙などの追加機能を提供します。 キャッシュを無効にすると、パフォーマンスとスケーラビリティに悪影響が及び、調整の対象となる可能性があります。
+最初のオプションである [**構造**](#using-structural-navigation-in-sharepoint-online)ナビゲーションは、サイトの構造ナビゲーション キャッシュを有効にした場合、SharePoint Online の従来の SharePoint サイトの推奨ナビゲーション オプション **です**。 このナビゲーション プロバイダーは、現在のサイトの下にナビゲーション 項目を表示し、必要に応じて現在のサイトとその兄弟を表示します。 セキュリティ トリミングやサイト構造の列挙などの追加機能を提供します。 キャッシュを無効にすると、パフォーマンスとスケーラビリティに悪影響が及び、調整の対象となる可能性があります。
 
 2 番目のオプション [**である Managed (Metadata) ナビゲーションは**](#using-managed-navigation-and-metadata-in-sharepoint-online)、Managed Metadata 用語セットを使用したナビゲーション アイテムを表します。 セキュリティ トリミングは、必要ない限り無効にすることをお勧めします。 セキュリティ トリミングは既定によるセキュリティ保護としてこのナビゲーション プロバイダーで有効化されていますが、多くのサイトでは、サイトのすべてのユーザーに対して一貫性のあるナビゲーション要素を提供しているため、セキュリティ トリミングのオーバーヘッドは必要ありません。 推奨されているセキュリティトリミングを無効にする構成にした場合、このナビゲーション プロバイダーではサイト構造を列挙する必要がなく、パフォーマンスへの影響を許容範囲に抑えながら高い拡張性が提供されます。
 

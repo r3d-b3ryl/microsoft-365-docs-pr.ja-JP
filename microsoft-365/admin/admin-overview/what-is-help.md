@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +23,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: このツールを使用してヘルプを取得できるすべての方法についてMicrosoft 365 管理センター。
-ms.openlocfilehash: 9d36658bc94d8aae3873d7669620a17a83f1b211
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: c011b68e07843956a558d26e42d0c0cd9a328451
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346966"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394350"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 

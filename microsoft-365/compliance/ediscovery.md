@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 には、Exchange メールボックス、SharePoint サイト、OneDrive for Business サイト、Microsoft 365 グループ、Microsoft Teams 会話、Skype for Business 会話など、さまざまな場所にあるコンテンツを検索およびエクスポートするために使用できる 3 つの電子情報開示ツールがあります。 コアの電子情報開示とAdvanced eDiscovery、調査の管理に役立つ多くの追加機能を提供します。
-ms.openlocfilehash: 54882665b5e1ff7e444bccb6974f19d4b9ced19dd1225392fd0f7106b5cade92
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 50f2048ef3c8c2d0a333eeb93a8eeb79b63db31c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900189"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394554"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>電子情報開示ソリューション (Microsoft 365
 
@@ -49,34 +49,34 @@ Microsoft 365には、コンテンツ検索、Core 電子情報開示、およ�
 
 |機能|コンテンツ検索|コア電子情報開示|Advanced eDiscovery|
 |:------|:-------------|:-------------|:-------------|
-|コンテンツを検索する|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|キーワード クエリと検索条件|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|検索の統計|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|検索結果をエクスポートする|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|役割に基づくアクセス許可|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|ケース管理||![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|コンテンツの場所を法的保留に設定する||![サポート](../media/check-mark.png)|![サポート](../media/check-mark.png)|
-|保管担当者管理|||![サポート](../media/check-mark.png)|
-|法的ホールド通知|||![サポート](../media/check-mark.png)|
-|高度なインデックス作成|||![サポート](../media/check-mark.png)|
-|エラー修復|||![サポート](../media/check-mark.png)|
-|レビュー セット|||![サポート](../media/check-mark.png)|
-|クラウド添付ファイルとクラウド SharePointサポート|||![サポート](../media/check-mark.png)|
-|光学式文字認識|||![サポート](../media/check-mark.png)|
-|会話スレッド|||![サポート](../media/check-mark.png)|
+|コンテンツを検索する|![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|
+|キーワード クエリと検索条件|![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|
+|検索の統計|![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|
+|検索結果をエクスポートする|![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|
+|役割に基づくアクセス許可|![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|
+|ケース管理||![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|
+|コンテンツの場所を法的保留に設定する||![サポート済み](../media/check-mark.png)|![サポート済み](../media/check-mark.png)|
+|保管担当者管理|||![サポート済み](../media/check-mark.png)|
+|法的ホールド通知|||![サポート済み](../media/check-mark.png)|
+|高度なインデックス作成|||![サポート済み](../media/check-mark.png)|
+|エラー修復|||![サポート済み](../media/check-mark.png)|
+|レビュー セット|||![サポート済み](../media/check-mark.png)|
+|クラウド添付ファイルとクラウド SharePointサポート|||![サポート済み](../media/check-mark.png)|
+|光学式文字認識|||![サポート済み](../media/check-mark.png)|
+|会話スレッド|||![サポート済み](../media/check-mark.png)|
 |コレクションの統計とレポート|||![サポート](../media/check-mark.png)|
-|レビュー セットのフィルター処理|||![サポート](../media/check-mark.png)|
-|タグ付け|||![サポート](../media/check-mark.png)|
-|分析|||![サポート](../media/check-mark.png)|
-|予測コーディング モデル|||![サポート](../media/check-mark.png)|
-|計算されたドキュメント のメタデータ|||![サポート](../media/check-mark.png)|
-|長時間実行されるジョブの透明性|||![サポート](../media/check-mark.png)|
-|顧客所有の場所にAzure Storageする|||![サポート](../media/check-mark.png)|
+|レビュー セットのフィルター処理|||![サポート済み](../media/check-mark.png)|
+|タグ付け|||![サポート済み](../media/check-mark.png)|
+|分析|||![サポート済み](../media/check-mark.png)|
+|予測コーディング モデル|||![サポート済み](../media/check-mark.png)|
+|計算されたドキュメント のメタデータ|||![サポート済み](../media/check-mark.png)|
+|長時間実行されるジョブの透明性|||![サポート済み](../media/check-mark.png)|
+|顧客所有の場所にAzure Storageする|||![サポート済み](../media/check-mark.png)|
 |||||
 
 各電子情報開示機能の説明を次に示します。
 
-- **コンテンツを検索します**。 Exchange メールボックス、One Drive for Business アカウント、SharePoint サイト、Microsoft Teams、Microsoft 365 グループ、および Yammer Teams に格納されているコンテンツを検索します。 これには、メールボックスやサイトにデータをMicrosoft 365他のアプリによって生成されるコンテンツが含まれます。
+- **コンテンツを検索します**。 メールボックス、Exchange アカウント、OneDrive for Business サイト、SharePoint、Microsoft Teams、Microsoft 365 グループ、および Yammer Teams に格納されているコンテンツを検索します。 これには、メールボックスやサイトにデータをMicrosoft 365他のアプリによって生成されるコンテンツが含まれます。
 
 - **キーワード クエリと検索条件**。 クエリ条件に一致するコンテンツを検索する KQL キーワード検索クエリを作成します。 条件を含め、検索範囲を絞り込む方法も可能です。
 

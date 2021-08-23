@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: グループ、グループ、グループMicrosoft 365、およびTeamsのコンプライアンス オプションSharePointします。
-ms.openlocfilehash: 9ffd08d217d7b79db69778021e0629ae7929edb61b2342317c105d60aee181cb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93bf2830d29f21f2239a17b9c2e381c46e85eea1
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896957"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394614"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>グループ、グループ、Microsoft 365、およびTeamsのコンプライアンス SharePointオプション
 
@@ -102,7 +102,7 @@ DLP ポリシーを使用すると、ユーザー、およびユーザー間でS
 
 - [データ損失防止と Microsoft Teams](../compliance/dlp-microsoft-teams.md)
 
-プロジェクト コード名など、組織に固有の機密情報がある場合は、独自の機密情報の種類を作成して DLP ポリシーに適用して、グループ、チーム、および Sharepoint のコンテンツを保護できます。
+プロジェクト コード名など、組織に固有の機密情報がある場合は、独自の機密情報の種類を作成して DLP ポリシーに適用して、グループ、チーム、および SharePoint のコンテンツを保護できます。
 
 - [カスタムの機密情報タイプ](../compliance/sensitive-information-type-learn-about.md)
 
@@ -124,7 +124,7 @@ DLP ポリシーを使用すると、ユーザー、およびユーザー間でS
 
 - [Microsoft 365 Multi-Geo の計画](/microsoft-365/enterprise/plan-for-multi-geo)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

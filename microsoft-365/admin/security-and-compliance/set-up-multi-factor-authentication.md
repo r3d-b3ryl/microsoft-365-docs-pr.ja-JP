@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 08f1d17942b1fb11dd9717e96045fd0b32b2422b
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 39d9eb7aa25ac721fb7c39535404790e2af214e6
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346066"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394650"
 ---
 # <a name="set-up-multifactor-authentication"></a>多要素認証を設定する
 
@@ -45,6 +46,14 @@ ms.locfileid: "58346066"
 - 従来のユーザーごとの MFA をオンにしている場合は、[従来のユーザーごとの MFA をオフにします](#turn-off-legacy-per-user-mfa)。
 - Windows デバイスで Office 2013 クライアントを使用している場合は、[Office 2013 クライアントの最新のライセンス認証をオンにします](./enable-modern-authentication.md)。
 - 高度: Active Directory フェデレーション サービス (AD FS) を使用しているサードパーティのディレクトリ サービスがある場合は、Azure MFA Server をセットアップします。 詳細については、「[Azure AD Multifactor Authentication およびサード パーティ製 VPN ソリューションでの高度なシナリオ](/azure/active-directory/authentication/howto-mfaserver-nps-vpn)」を参照してください。
+
+### <a name="turn-off-legacy-per-user-mfa"></a>従来のユーザーごとの MFA をオフにする
+
+以前にユーザーごとの MFA をオンにしている場合は、セキュリティの既定値が有効になる前にオフにする必要があります。
+
+1. Microsoft 365 管理センターで、左側のナビゲーションの **[ユーザー]** \> **[アクティブ ユーザー]** の順に選択します。
+1. **[アクティブ ユーザー]** ページで、**[多要素認証]** を選択します。
+1. 多要素認証ページで、各ユーザーを選択し、その多要素認証ステータスを **[無効]** に設定します。
 
 ## <a name="turn-security-defaults-on-or-off"></a>セキュリティの既定値をオンまたはオフにする
 
@@ -89,6 +98,7 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> で、左側のナビゲーションの **[設定]** \> **[組織の設定]** の順に選択します。
 2. **[サービス]** タブで、**[先進認証]** を選択し、**[先進認証]** ウィンドウで、**[先進認証を有効にする]** が選択されていることを確認します。 **[変更の保存]** を選びます。
 
+
 ### <a name="turn-off-legacy-per-user-mfa"></a>従来のユーザーごとの MFA をオフにする
 
 以前にユーザーごとの MFA をオンにしている場合は、セキュリティの既定値が有効になる前にオフにする必要があります。
@@ -106,5 +116,8 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[多要素認証をオンにする](../../business-video/turn-on-mfa.md) (ビデオ)\
+
+[ビデオ: 多要素認証をオンにする](../../business-video/turn-on-mfa.md) (ビデオ)
+
 [スマートフォンの多要素認証をオンにする](../../business-video/set-up-mfa.md) (ビデオ)
+

@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: 2010 および Sharepoint Server 2010 SharePointアップグレードする情報とリソースを検索します。 2021 年 4 月 13 日の両方のサポート。
+description: 2010 年からサーバー 2010 および SharePointサーバー 2010 SharePointアップグレードする情報とリソースを検索します。 2021 年 4 月 13 日の両方のサポート。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 67b8174aa23027b64132cc4676e2e7bfb5675cd1deb4684d18945d58b5cf63ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5f0919bd80b68167ccfae38a461c79b704e2b803
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848156"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394518"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からのアップグレード
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft SharePoint 2010 および SharePoint Server 2010 は **、2021** 年 4 月 13 日にサポートが終了します。 この記事では、既存の SharePoint Server 2010 データを Microsoft 365 の SharePoint Online に移行したり、オンプレミスの SharePoint Server 2010 環境をアップグレードしたりするのに役立つリソースを提供します。
 

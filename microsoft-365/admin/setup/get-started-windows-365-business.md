@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織で 365 Business Windows購入する方法と、ユーザーがクラウド PC の使用を開始する方法について学習します。
-ms.openlocfilehash: 1b1beaf65f43361626e03ca048a9942bc14d5e7b
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: a1dfb4ad2cdda501b699423d03e257dbe314976c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349250"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394578"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Windows 365 Business および Cloud PC の概要
 
@@ -41,6 +41,9 @@ ms.locfileid: "58349250"
    ![ユーザーはデバイスを Azure ユーザー設定ADできます](../../media/deschutes/azure-device-settings.png)
 ## <a name="prerequisites"></a>前提条件
 365 Business をセットアップするためのWindowsはありません。
+
+最適なオンボーディング エクスペリエンスについては、セットアップのトラブルシューティング[](troubleshoot-windows-365-business.md)ガイドを参照して、環境の基本設定が 365 Business 用に最適化Windowsしてください。 
+
 ## <a name="buy-subscriptions"></a>サブスクリプションを購入する
 
 ユーザー向け 365 Business サブスクリプションを購入Windows 2 つの方法があります。
@@ -49,6 +52,7 @@ ms.locfileid: "58349250"
 - Microsoft 365 管理センター
 
 サブスクリプションを購入した後、組織のユーザーにライセンスMicrosoft 365 管理センター割り当てるには、サブスクリプションを使用できます。
+
 ### <a name="buy-subscriptions-through-the-windows-365-products-site"></a>365 製品サイトWindowsサブスクリプションを購入する
 
 Microsoft 365 サブスクリプションをまだ持ってない場合は、Windows 365 製品サイトで Windows [365](https://www.microsoft.com/windows-365/business/compare-plans-pricing)Business サブスクリプションWindows購入できます。 次の手順を使用して、[Windows 365 製品] ページから Windows 365 Business サブスクリプションを購入します。
@@ -58,6 +62,13 @@ Microsoft 365 サブスクリプションをまだ持ってない場合は、Win
 3. **[365 Business Windowsして** ありがとうございます] ページで、手順に従ってアカウントを設定します。
 4. 手順 **5 - 確認** の詳細で、ユーザーにライセンスを割り当てる準備が整った場合は、[開始する] を選択して、Windows 365 のホーム ページに移動します https://windows365.microsoft.com 。
 5. [365 Windows] ホーム ページの[クイック アクション] セクションで、[組織の **管理] を選択します**。 これにより、ユーザーにライセンスMicrosoft 365 管理センター割り当て可能な場所にアクセスできます。
+
+グローバルまたは課金管理者の役割を持つユーザーは、セルフサービス購入を使用して、Windows 365 Business のサブスクリプションを Windows [365 Business](https://www.microsoft.com/windows-365/business?rtc=1)製品サイトから直接購入できます。 この方法でサブスクリプションを購入するユーザーには、そのサブスクリプションのライセンスを組織内の[他](https://go.microsoft.com/fwlink/p/?linkid=2024339)のユーザーに割り当て可能な Microsoft 365 管理センター の限定ビューが付与されます。 別のユーザーにライセンスを割り当てると、Windows 365 Business Cloud PC が自動的に作成され、Windows [365](https://windows365.microsoft.com/)ホーム ページからアクセスできます。
+
+> [!NOTE]
+> セルフサービス購入は、インドまたは政府機関や教育機関のお客様にはご利用いただけません。
+
+セルフサービス購入の詳細については、「セルフサービス購入に関するよく寄せられる質問 [」を参照してください](../../commerce/subscriptions/self-service-purchase-faq.yml)。
 
 ### <a name="buy-a-subscription-through-the-microsoft-admin-center"></a>Microsoft 管理センターを通じてサブスクリプションを購入する
 

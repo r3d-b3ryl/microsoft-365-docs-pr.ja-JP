@@ -21,12 +21,13 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
-ms.openlocfilehash: 62cc6404790d711220ef80a644772e8dcd306fcb
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+- admindeeplinkMAC
+ms.openlocfilehash: 1947e8e91beb23f328e59ffe30fac0f596165121
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346822"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394506"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 

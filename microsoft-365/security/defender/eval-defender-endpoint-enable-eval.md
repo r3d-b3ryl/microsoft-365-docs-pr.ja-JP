@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 88506e546cc359a3cdf042c8661fcc54b217d6d4
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: af66b41af4d4d427988bf46d266329777d3a908c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255451"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394698"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>エンドポイント評価環境で Microsoft Defender を有効にする
 
@@ -60,11 +60,13 @@ Microsoft Defender for Endpoint の評価を有効にするには、次の手順
 
     ![課金ライセンスのイメージ](../../media/defender/atp-billing-subscriptions.png)
 
-## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2。 サポートされている管理ツールを使用したオンボード エンドポイント
+## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2. サポートされている管理ツールを使用したオンボード エンドポイント
 
 ライセンス状態が適切にプロビジョニングされていることを確認した後、サービスへのデバイスのオンボーディングを開始できます。 
 
-Microsoft Defender for Endpoint の評価を行う目的で、評価を行う 2 Windows 10デバイスを選択することをお勧めします。 
+Microsoft Defender for Endpoint の評価を行う目的で、評価を行う 2 Windows 10デバイスを選択することをお勧めします。
+
+サポートされている管理ツールを使用することもできますが、Intune は最適な統合を提供します。 詳細については、「Configure [Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure.md#enable-microsoft-defender-for-endpoint-in-intune)
 
 「 [展開の計画」](../defender-endpoint/deployment-strategy.md) トピックでは、Defender for Endpoint の展開に必要な一般的な手順について説明します。  
 

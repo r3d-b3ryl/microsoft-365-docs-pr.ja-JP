@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーで使用できるラベル付けアクティビティの一覧。
-ms.openlocfilehash: 5816bb897705e25ebf85b7f97df786cf2331bfb2
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 163231d4d1e7c6a2d1b75c0f81a17443cfafe246
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255682"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394566"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>アクティビティ エクスプローラーで使用できるアクティビティのラベル付け
 
@@ -45,8 +45,8 @@ ms.locfileid: "58255682"
 |Azure Information Protection (AIP) 統合クライアントと AIP 統合スキャナー |はい |AIP の *新しいラベル* アクションは、アクティビティ エクスプローラー *に適用されるラベル* にマップされます。   |
 |Microsoft の情報保護 (MIP) SDK         |はい|AIP の *新しいラベル* アクションは、アクティビティ エクスプローラー *に適用されるラベル* にマップされます。|
 |Rights Management Service (RMS)         |該当なし         | |
-|Power BIと Web        | no| 監査ログでMicrosoft 365アクセス可能         |
-|Microsoft Cloud App Security (MCAS)         |no|         |
+|Power BIと Web        | いいえ| 監査ログでMicrosoft 365アクセス可能         |
+|Microsoft Cloud App Security (MCAS)         |いいえ|         |
 
 ## <a name="sensitivity-label-changed"></a>感度ラベルの変更
 
@@ -71,7 +71,7 @@ ms.locfileid: "58255682"
 |MIP SDK         |はい         |
 |RMS サービス         |該当なし         |
 |Power BIと Web         |いいえ         |監査ログでMicrosoft 365アクセス可能 |
-|MCAS     |no         |         |
+|MCAS     |いいえ         |         |
 
 ## <a name="sensitivity-label-removed"></a>[感度ラベルの削除]
 
@@ -91,8 +91,8 @@ ms.locfileid: "58255682"
 |AIP 統合スキャナー         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。 |
 |MIP SDK         |はい         |AIP *削除ラベル アクション* は、アクティビティ エクスプローラーの *ラベル削除アクション* にマップされます。 |
 |RMS サービス         |該当なし         |
-|Power BIと Web         |no         |監査ログでMicrosoft 365アクセス可能 |
-|MCAS     |no         |         |
+|Power BIと Web         |いいえ         |監査ログでMicrosoft 365アクセス可能 |
+|MCAS     |いいえ         |         |
  
 
 ## <a name="sensitivity-label-file-read"></a>感度ラベル ファイルの読み取り
@@ -104,13 +104,13 @@ ms.locfileid: "58255682"
 |Word、Excel、PowerPoint         |はい         |
 |Outlook         |いいえ         |
 |SharePointオンライン、OneDrive         |いいえ         |
-|Exchange         |no         |
+|Exchange         |いいえ         |
 |AIP 統合クライアント         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
 |AIP 統合スキャナー         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
 |MIP SDK         |はい         |AIP アクセス アクション *は* 、アクティビティ エクスプローラーの *ファイル読み取り* アクションにマップされます。|
 |RMS サービス         |はい         |アクセス *アクションは* 、アクティビティ エクスプローラーの *ファイル読み取* りアクションにマップされます。 |
 |Power BIと Web         |いいえ         |監査ログでMicrosoft 365アクセス可能 |
-|MCAS     |no         |         |
+|MCAS     |いいえ         |         |
 
 
 ## <a name="files-discovered"></a>検出されたファイル
@@ -143,8 +143,8 @@ ms.locfileid: "58255682"
 |Exchange         |該当なし         |
 |AIP 統合クライアント         |いいえ         |
 |AIP 統合スキャナー         |いいえ         |
-|MIP SDK         |no         |
-|RMS サービス         |no      |
+|MIP SDK         |いいえ         |
+|RMS サービス         |いいえ      |
 |Power BIと Web         |いいえ         |
 |MCAS     |いいえ         |         |
 
@@ -190,7 +190,7 @@ ms.locfileid: "58255682"
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
 |Word、Excel、PowerPoint         |いいえ         |
-|Outlook         |no         |
+|Outlook         |いいえ         |
 |SharePointオンライン、OneDrive         |該当なし           |
 |Exchange         |いいえ       |
 |AIP 統合クライアント         |はい            |
@@ -230,7 +230,7 @@ ms.locfileid: "58255682"
 |Windows 10 デバイス         |はい |
 |MAC         |いいえ     |
 |オンプレミス         |いいえ|
-|MCAS     |no        | 
+|MCAS     |いいえ        | 
 
 デバイス (エンドポイント DLP) Windows 10イベントは次のとおりです。
 
@@ -253,7 +253,7 @@ ms.locfileid: "58255682"
 
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
-|Exchange         |no       |
+|Exchange         |いいえ       |
 |SharePoint Online|はい          |
 |OneDrive |はい|
 
@@ -277,7 +277,7 @@ ms.locfileid: "58255682"
 
 |ソース  |アクティビティ エクスプローラーで報告される |
 |---------|---------| 
-|Exchange         |no       |
+|Exchange         |いいえ       |
 |SharePoint Online|はい          |
 |OneDrive |はい|
 
@@ -286,6 +286,6 @@ ms.locfileid: "58255682"
   
 - 推奨ラベル ツール ヒントがエンド ユーザーに表示されている場合、そのヒントはキャプチャされません。 ただし、ユーザーが推奨ラベルの適用を選択した場合、ラベルは [適用方法] フィールドの下に [推奨]*として表示**されます。*  
 
-- 現在、位置合わせテキストは、Sharepoint および Sharepoint および OneDrive からの感度ラベルのダウングレードでは使用OneDrive。  
+- 位置合わせのテキストは、現在、感度ラベルのダウングレード時に、SharePointおよびOneDrive。  
 
 - 現在、機密情報の種類は、Word、Excel、PowerPoint、Outlook、および SharePoint Online、および OneDrive からの自動ラベル付けアクティビティでは使用できません。

@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: Basic Mobility and Security は、組織のモバイル デバイスのセキュリティ保護と管理に役立ちます。
-ms.openlocfilehash: 54a10bf858fa1a1f06818c13116f20dcbbb40566
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: b532d8c189598db941f3ced4095b910cfc6f0668
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346894"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394326"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>モバイル デバイス管理に登録されているデバイスを管理する (Microsoft 365
 

@@ -13,22 +13,24 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: ユーザーが Microsoft 製品に関して Microsoft に送信できるフィードバックを管理します。
-ms.openlocfilehash: 517a8ebc080c33399a018e666de9b7f81d50b98d075cc6e67891123611cdacda
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7d6d607182a546e869a9f92e84adfa31f7e02a26
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825237"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394482"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>組織に対する Microsoft フィードバックを管理する
 
-Microsoft 365 組織の管理者として、Microsoft 365 アプリケーションを使用する際にユーザーのフィードバック コレクションとカスタマー エンゲージメント エクスペリエンスを管理するのに役立ついくつかのポリシーが追加されました。 これらのポリシーごとに、組織内の既存の Azure Active directory グループを作成して使用できます。 これらの警察では、組織内の異なる部署が Microsoft にフィードバックを送信する方法を制御できます。 Microsoft は、お客様から送信されたフィードバックを確認し、このフィードバックを使用して製品を改善します。 フィードバック エクスペリエンスを **オンに保** つことで、ユーザーが使用している Microsoft 製品についてユーザーが何を言っているのかを確認できます。 ユーザーから収集したフィードバックは、すぐにこのサイトでMicrosoft 365 管理センター。
+Microsoft 365 組織の管理者として、Microsoft 365 アプリケーションを使用する際にユーザーのフィードバック コレクションとカスタマー エンゲージメント エクスペリエンスを管理するのに役立ついくつかのポリシーが追加されました。 これらのポリシーごとに、組織内の既存の Azure Active directory グループを作成して使用できます。 これらの警察では、組織内の異なる部署が Microsoft にフィードバックを送信する方法を制御できます。 Microsoft は、お客様から送信されたフィードバックを確認し、このフィードバックを使用して製品を改善します。 フィードバック エクスペリエンスを **オンに保** つことで、ユーザーが使用している Microsoft 製品についてユーザーが何を言っているのかを確認できます。 ユーザーから収集したフィードバックは、すぐにこの<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">サイトで</a>Microsoft 365 管理センター。
 
 フィードバックの種類と Microsoft がユーザー フィードバックを使用する方法の詳細については、「組織の Microsoft フィードバックについて [」を参照してください](../misc/feedback-user-control.md)。
 
@@ -36,20 +38,20 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 |**アプリ & サービス**|**製品内フィードバック** <br> |**製品内アンケート** <br> |**メタデータ コレクション** <br> |**顧客エンゲージメント** <br> |
 |:-----|:-----|:-----|:-----|:-----|
-|**Access**|はい|はい|はい|はい|
-|**Excel**|はい|はい|はい|はい|
+|**Access**|はい|はい|はい|必要|
+|**Excel**|はい|はい|はい|必要|
 |**Office.com**|近日公開|近日公開|近日公開|近日公開|
-|**OneNote**|はい|はい|はい|はい|
+|**OneNote**|はい|はい|はい|必要|
 |**OneDrive**|[他のコントロールによって現在管理されている設定の一部。](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook**|近日公開|近日公開|近日公開|近日公開|
-|**PowerPoint**|はい|はい|はい|はい|
+|**PowerPoint**|はい|はい|はい|必要|
 |**Project**|近日公開|近日公開|近日公開|近日公開|
-|**発行元**|はい|はい|はい|はい|
+|**発行元**|はい|はい|はい|必要|
 |**SharePoint**|[他のコントロールによって現在管理されている設定の一部。](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[他のコントロールによって現在管理されている設定の一部。](/microsoftteams/manage-feedback-policies-in-teams)||||
-|**Word**|はい|はい|はい|はい|
-|**Visio**|はい|はい|はい|はい|
-|**Yammer**|はい|はい|はい|はい|
+|**Word**|はい|はい|はい|必要|
+|**Visio**|はい|はい|はい|必要|
+|**Yammer**|はい|はい|はい|必要|
 
 [製品内のアンケートとフィードバックの例については、こちらを参照してください。](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
 
@@ -76,7 +78,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 ### <a name="feedback-policies"></a>フィードバック ポリシー
 
-|**ポリシー名**|**既定の状態**|**コントロールの概要**|
+|**[ポリシー名]**|**既定の状態**|**コントロールの概要**|
 |:-----|:-----|:-----|
 |ユーザーが Microsoft にフィードバックを送信するを許可する|オン|アプリケーション全体のフィードバック エントリ ポイントを制御する|
 |ユーザーが Microsoft から製品内アンケートを受け取り、対応できる|オン|製品内のアンケート プロンプトを制御する|
@@ -88,7 +90,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 
 1. に移動 [https://config.office.com](https://config.office.com) してログインします。
 1. [カスタマイズ **] を選択** し **、[ポリシーの管理] を選択します**。
-1. [**作成**] を選択します。
+1. **[作成]** を選択します。
 1. 名前 **と説明を****入力します**。
 1. 構成する Azure Active directory グループを選択します。
 1. フィードバックと **アンケートを****検索します**。

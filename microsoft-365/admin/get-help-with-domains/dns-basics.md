@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: ドメイン ネーム システムは、コンピューターのホスト名を IP アドレスにマップします。DNS とドメイン レジストラーの基礎を理解することはドメインを管理するうえで役立ちます。
-ms.openlocfilehash: 0cf8d0ef7fa5a3a6420f0cf85eea2242ac9c909faaa3f0e0a032d7902fc4b7ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37d8e885dafaa055ed5cc7eee24456b758ef8b4f
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825849"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394290"
 ---
 # <a name="dns-basics"></a>DNS の基本
 
@@ -193,7 +194,7 @@ Microsoft 365 では、ドメイン名をメール、一般向け Web サイト�
 
 ドメインで Microsoft 365 を使用するには、いくつかの DNS レコードが必要です。メールを Microsoft 365 に送信するためのドメインの MX レコードのセットアップのほか、Outlook と正しい Exchange サーバーとの自動接続の確認、インスタント メッセージングのセットアップ、迷惑メールからの保護などの作業に役立つレコードもあります。
   
-ドメインをセットアップするには、Microsoft 365 管理センターの[値の一覧を参照](information-for-dns-records.md)してください。 
+ドメインをセットアップするには、<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Microsoft 365 管理センター</a>の[値の一覧を参照](information-for-dns-records.md)してください。 
   
 また、展開を予定している場合は、Microsoft 365 に必要なすべての外部ドメイン ネーム システムの レコードの一覧、それぞれのレコードの機能、値の例も確認してください。 「[Microsoft 365 の外部ドメイン ネーム システムのレコード](../../enterprise/external-domain-name-system-records.md)」を確認してください。
   

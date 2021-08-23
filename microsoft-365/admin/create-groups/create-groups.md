@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループの作成と削除、Microsoft 365メンバーの追加と削除、グループの動作のカスタマイズについて説明します。
-ms.openlocfilehash: 07546d32c8bd55ae1548b8f690d046e6b319bf87
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 76131f434b3c4210578fe44ff7dd4e435f1fbe6b
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346870"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394386"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>グループを作成するMicrosoft 365 管理センター
   
@@ -45,11 +46,11 @@ ms.locfileid: "58346870"
   
 3. [グループの **種類の選択] ページで**、[グループの種類]**をOffice 365し、[次** へ] を **選択します**。
 
-4. [基本 **] ページ** で、グループの名前を入力し、必要に応じて説明を入力します。 [**次へ**] を選択します。
+4. [基本 **] ページ** で、グループの名前を入力し、必要に応じて説明を入力します。 **[次へ]** を選択します。
     
 5. [設定 **の編集]** ページで、グループの一意の電子メール アドレスを入力し、プライバシー オプションを選択し、グループを追加するかどうかをMicrosoft Teams、[次へ] を選択 **します**。
     
-6. [所有者 **]** で、グループの管理に指定される 1 人または複数のユーザーの名前を選択します。 グループの所有者のみが、グループの受信トレイからメールを削除できます。 他のメンバーはグループの受信トレイからメールを削除することはできません。 [**次へ**] を選択します。
+6. [所有者 **]** で、グループの管理に指定される 1 人または複数のユーザーの名前を選択します。 グループの所有者のみが、グループの受信トレイからメールを削除できます。 他のメンバーはグループの受信トレイからメールを削除することはできません。 **[次へ]** を選択します。
     
 7. 設定を確認して変更を加えた後、[グループの作成] **を選択します**。
 

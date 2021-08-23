@@ -11,14 +11,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkMAC
 description: ビジネスに大きな影響を与えるアカウントとの間で送信される、失敗したメールメッセージと遅延メール メッセージを監視します。
-ms.openlocfilehash: 63c394055f94370a09ea76cc8125a71f7061b2f3d6b66ff8106c76c2571f90cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ade66d811fd63cbf7bb28d254f21ee454741f13
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821545"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394602"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>優先アカウントを管理および監視する
 
@@ -91,6 +93,6 @@ ms.locfileid: "53821545"
 
 4. [優先度アカウント **] ページ** で、リストから削除するユーザーまたはユーザーを選択し、[アカウントの削除] **を選択します**。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [サーバーでの優先度アカウントのMicrosoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
