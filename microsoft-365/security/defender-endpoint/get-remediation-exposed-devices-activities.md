@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d4f87a292c93bd5d29d9abdcef8ce3134f65b0f0afe7430d22a64c677be7a1ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 856379aeb0264cf1c6d604050ad2a0052dab4e0b
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811232"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400249"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>1 つの修復アクティビティの暴露デバイスを一覧表示する
 
@@ -56,7 +56,7 @@ ms.locfileid: "53811232"
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|RemediationTask.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
+アプリケーション|RemediationTasks.Read.All|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 委任 (職場または学校のアカウント)|RemediationTask.Read.Read|\'脅威と脆弱性管理の脆弱性情報の読み取り\'
 
 ## <a name="properties-details"></a>プロパティの詳細
