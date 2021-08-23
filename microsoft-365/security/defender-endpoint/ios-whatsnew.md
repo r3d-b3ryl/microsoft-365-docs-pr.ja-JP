@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e7916ad50a6331baedb4a033e9b8aaa881b13e536153c4069bbfe36fa28ba670
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ccd55b7c87f33ba948bbef42b1ddc256299749c
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902849"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372810"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS のエンドポイント向け Microsoft Defender の新機能
 
@@ -34,6 +34,10 @@ ms.locfileid: "53902849"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1120020101"></a>1.1.20020101
+- UX の機能強化 - Microsoft Defender for Endpoint に新しい外観が追加されています。
+- バグ修正。
 
 ## <a name="1117240101"></a>1.1.17240101
 - Intune を介したモバイル アプリケーション管理 (MAM) のサポートは、通常、このバージョンで利用できます。 詳細については [、「Microsoft Defender for Endpoint risk signals for your App protection policies」を参照してください。](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322)

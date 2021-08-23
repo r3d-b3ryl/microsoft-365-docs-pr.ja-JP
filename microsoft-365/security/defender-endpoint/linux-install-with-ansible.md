@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e9f65d7280ccbc2b780a693e1c259e3f3d6c6400
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 452a8238499f4c083b24c6ab01a95696334e6081
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357007"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372714"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用した Linux での Microsoft Defender for Endpoint の展開
 
@@ -41,7 +41,7 @@ ms.locfileid: "58357007"
 - [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)
 - [Ansible YAML ファイルの作成](#create-ansible-yaml-files)
 - [展開](#deployment)
-- [References](#references)
+- [関連情報](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
@@ -138,7 +138,7 @@ ms.locfileid: "58357007"
     > [!WARNING]
     > 最初のインストール後にチャネルを切り替える場合は、製品を再インストールする必要があります。 製品チャネルを切り替える: 既存のパッケージをアンインストールし、新しいチャネルを使用するデバイスを再構成し、このドキュメントの手順に従って新しい場所からパッケージをインストールします。
 
-    配布とバージョンをメモし、その下の最も近いエントリを識別します `https://packages.microsoft.com/[distro]/` 。
+    配布とバージョンをメモし、その下の最も近いエントリを識別します `https://packages.microsoft.com/config/[distro]/` 。
 
     次のコマンドで *、[distro]* と *[version]* を、特定した情報に置き換える必要があります。
 
@@ -154,7 +154,7 @@ ms.locfileid: "58357007"
 
   - name: Add Microsoft apt repository for MDATP
     apt_repository:
-      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
+      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/[distro]/[version]/prod [channel] main
       update_cache: yes
       state: present
       filename: microsoft-[channel]
@@ -171,7 +171,7 @@ ms.locfileid: "58357007"
       name: packages-microsoft-com-prod-[channel]
       description: Microsoft Defender for Endpoint
       file: microsoft-[channel]
-      baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+      baseurl: https://packages.microsoft.com/config/[distro]/[version]/[channel]/
       gpgcheck: yes
       enabled: Yes
     when: ansible_os_family == "RedHat"

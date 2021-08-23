@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Exchange Online メールボックスに無制限のアーカイブ記憶域を提供する自動拡張アーカイブについて説明します。
-ms.openlocfilehash: 20be08209bbd4bad3bf0bdb0e7de4d602ee995a2873116981a9f7d892ffd1e46
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3473145231a70942311b5855036220fa247f0716
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841274"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372678"
 ---
 # <a name="overview-of-unlimited-archiving"></a>無制限アーカイブの概要
 
@@ -90,15 +90,15 @@ Outlook または Outlook on the web を使って自動拡張アーカイブに�
 
 - 自動拡張記憶域に移動されたものも含め、アーカイブ メールボックスの任意のフォルダーにアクセスできます。
 
+- アーカイブ メールボックスに少なくとも 1 つの自動拡張記憶域がある場合は、アーカイブ メールボックスまたは補助アーカイブからフォルダーを削除できません。 つまり、自動拡張ストレージ領域が準備された後、アーカイブ内のフォルダーを削除することはできません。
+
+- 自動拡張ストレージ領域内のアイテムを削除できます。 ただし、削除済みアイテムの回復機能を使用して、自動拡張ストレージ領域から削除されたアイテムを回復することはできません。
+
 - 自動拡張アーカイブの検索は、web Outlook (OWA) で使用できます。 オンライン アーカイブと同様に、追加の記憶域に移動されたアイテムを検索できます。 OWA で検索範囲としてアーカイブを選択すると、すべてのアーカイブ (自動拡張アーカイブを含む) と、それに対応するサブフォルダーが検索されます。
 
 - 自動拡張アーカイブの検索は、Outlook デスクトップの最新チャネル (プレビュー) で利用できます。 このプレビューでは、「現在のメールボックス」範囲が利用可能で、自動拡張アーカイブを検索することができます。 この機能やその他の Microsoft Search サポート機能の詳細については、「[Microsoft Search を活用して Windows 版 Outlook を Exchange Online に接続する方法](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)」を参照してください。 
 
 - 自動拡張アーカイブ内の Outlook のアイテム数および閲覧済み/未読数 (Outlook および Outlook on the web) は正しくないことがあります。
-
-- 自動拡張記憶域を参照しているサブフォルダー内のアイテムを削除することはできますが、フォルダー自体を削除することはできません。
-
-- [削除済みアイテムを復元] 機能を使って、自動拡張記憶域から削除されたアイテムを復元することはできません。
 
 ## <a name="auto-expanding-archiving-and-other-compliance-features"></a>自動拡張アーカイブとその他の法令遵守機能
 

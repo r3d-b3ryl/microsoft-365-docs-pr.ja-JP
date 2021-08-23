@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、ユーザー アカウントが侵害された場合に法医学調査を実行したり、他のセキュリティ関連のインシデントを調査したりするために高度な監査を設定する方法について説明します。
-ms.openlocfilehash: ed4e2a8c423631cfa1c846f271d8df9361ca6414002d026cc515ddcd78842784
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e23f5c9ce4212e4974de97977bb2e0785bad69ed
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841554"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58386962"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>[高度な監査] を [Microsoft 365
 
@@ -46,15 +46,15 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 
 5. チェック ボックスが選択されていない場合は、チェック ボックスをオンにして、[変更の保存] **をクリックします。**
 
-   MailItemsAccessed と Send の監査レコードのログ記録は、24 時間以内に開始されます。 手順 3 を実行して、他の 2 つの高度な監査の重要なイベントである SearchQueryInitiatedExchange と SearchQueryInitiatedSharePoint のログ記録を開始する必要があります。
+   MailItemsAccessed と Send の監査レコードのログ記録は、24 時間以内に開始されます。 手順 3 を実行して、他の 2 つの高度な監査イベント (SearchQueryInitiatedExchange と SearchQueryInitiatedSharePoint) のログ記録を開始する必要があります。
 
 グループ ベースのライセンスを使用してユーザーのグループにライセンスを割り当てている組織では、グループに対する Microsoft 365 Advanced Auditing のライセンス割り当てをオフにする必要があります。 変更を保存したら、Microsoft 365 Advanced Auditing がグループに対してオフになっていることを確認します。 その後、グループに対するライセンス割り当てをもう一度オンにします。 グループ ベースのライセンスの手順については、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](/azure/active-directory/users-groups-roles/licensing-groups-assign)」を参照してください。
 
-また、ユーザー メールボックスまたは共有メールボックスにログオンしているメールボックスアクションをカスタマイズした場合、Microsoft によってリリースされた新しい重要なイベントは、それらのメールボックスで自動的に監査されません。 ログオンの種類ごとに監査されるメールボックス操作の変更については、 「[メールボックスの監査を管理する](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)」の「既定でログに記録されるメールボックスの操作を変更または復元する」セクションを参照してください。
+また、ユーザー メールボックスまたは共有メールボックスにログオンしているメールボックスアクションをカスタマイズした場合、Microsoft がリリースした新しい Advanced Audit イベントは、それらのメールボックスで自動的に監査されません。 ログオンの種類ごとに監査されるメールボックス操作の変更については、 「[メールボックスの監査を管理する](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)」の「既定でログに記録されるメールボックスの操作を変更または復元する」セクションを参照してください。
 
-## <a name="step-2-enable-crucial-events"></a>手順 2: 重要なイベントを有効にする
+## <a name="step-2-enable-advanced-audit-events"></a>手順 2: 高度な監査イベントを有効にする
 
-ユーザーが Exchange Online と SharePoint Online で検索を実行するときに、2 つの重要なイベント (SearchQueryInitiatedExchange と SearchQueryInitiatedSharePoint) をログに記録する必要があります。 これらの 2 つのイベントをユーザーに対して監査するには、PowerShell で次のコマンド (ユーザーごとに)[をExchange Onlineします](/powershell/exchange/connect-to-exchange-online-powershell)。
+ユーザーが Exchange Online と SharePoint Online で検索を実行するときに、2 つの Advanced Audit イベント (SearchQueryInitiatedExchange と SearchQueryInitiatedSharePoint) をログに記録する必要があります。 これらの 2 つのイベントをユーザーに対して監査するには、PowerShell で次のコマンド (ユーザーごとに)[をExchange Onlineします](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
@@ -72,6 +72,6 @@ Get-Mailbox <user identity> | FL MailboxLocations
 
 Exchange、SharePoint、および Azure AD の監査記録を 1 年間保持する既定のポリシーに加えて、組織のセキュリティ運用チーム、IT チーム、およびコンプライアンス チームの要件に合わせて、監査ログの保持ポリシーを追加で作成することができます。 詳細については、「[監査ログ保持ポリシーを管理する](audit-log-retention-policies.md)」を参照してください。
 
-## <a name="step-4-search-for-crucial-events"></a>手順 4: 重要なイベントを検索する
+## <a name="step-4-search-for-advanced-audit-events"></a>手順 4: 高度な監査イベントを検索する
 
-組織に対して高度な監査が設定されたので、捜査を行う際に重要なイベントや他のアクティビティを検索できます。 手順 1 と手順 2 を完了すると、侵害されたアカウントや他の種類のセキュリティまたはコンプライアンス調査の法医学調査中に、監査ログで重要なイベントや他のアクティビティを検索できます。 MailItemsAccessed 重要なイベントを使用して侵害されたユーザー アカウントの forensics 調査を実行する方法の詳細については、「高度な監査を使用して侵害されたアカウントを調査する」を参照 [してください](mailitemsaccessed-forensics-investigations.md)。
+組織に対して高度な監査が設定されたので、高度な監査の重要なイベントや他のアクティビティを検索して、捜査を実施できます。 手順 1 と手順 2 を完了すると、侵害されたアカウントや他の種類のセキュリティまたはコンプライアンス調査の法医学調査中に、監査ログで高度な監査イベントや他のアクティビティを検索できます。 MailItemsAccessed Advanced Audit イベントを使用して侵害されたユーザー アカウントの forensics 調査を実行する方法の詳細については、「高度な監査を使用して侵害されたアカウントを調査する」を参照 [してください](mailitemsaccessed-forensics-investigations.md)。

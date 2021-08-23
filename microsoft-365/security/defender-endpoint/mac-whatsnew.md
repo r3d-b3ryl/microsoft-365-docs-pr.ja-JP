@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4be4f5048b96a744e0670a4eb0c8fb259a86a18d95eeef31cd4edbf1376553ea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f2b4c7fc980c0a5ad12e9a8570942c3c81044672
+ms.sourcegitcommit: 5566455f1872dba23cc571281609258740842e8e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898133"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58385921"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint on Mac の新機能
 
@@ -37,6 +37,10 @@ ms.locfileid: "53898133"
 
 > [!IMPORTANT]
 > macOS 11 (Big Sur) では、Microsoft Defender for Endpoint には追加の構成プロファイルが必要です。 以前のバージョンの macOS からアップグレードする既存の顧客の場合は、このページに記載されている追加の構成プロファイルを [必ず展開してください](mac-sysext-policies.md)。
+
+## <a name="1013797-20121062137970"></a>101.37.97 (20.121062.13797.0)
+
+- バグ修正&パフォーマンスの向上
 
 ## <a name="1013428-20121061134280"></a>101.34.28 (20.121061.13428.0)
 

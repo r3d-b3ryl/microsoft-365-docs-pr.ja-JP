@@ -20,12 +20,12 @@ search.appverid:
 description: IT 部分をケアするサブスクリプション サービス、Microsoft 365 Business Premium について説明します。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 3dd2a4c549e38660a7df928645cd6932e1a5b09af72f3f2ec3805a4c7aef1e68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a31ce38a0ef6b04be5ad9af90e9e4c54e7b256b
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838033"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377722"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -49,4 +49,4 @@ Microsoft 365 Business Premium にサインアップすると、Microsoft 365 Bu
 
 Microsoft Business Premium を使用している場合、以下のライブラリのガイダンスに従うと、最も手早くセキュリティ設定を行い安全に共同作業ができるでしょう: [中小企業向け Microsoft 365 およびキャンペーン ](../campaigns/index.md)。 このガイダンスは、Microsoft Defending Democracy チームと協力して開発され、高度なハッカーによるサイバー攻撃から中小企業のユーザーを保護します。 
 
-詳細については、「[Microsoft 365 Business コンテンツ](../business/index.yml)」を参照してください。
+詳細については、「[Microsoft 365 Business コンテンツ](../admin/index.yml)」を参照してください。

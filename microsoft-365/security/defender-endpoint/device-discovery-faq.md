@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d4ae05517583a8368ba7936a942e5ec06a9414f7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1ecf74b1fe53c20d72f472796c6a7eaf5ded9741
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257326"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58360121"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>デバイスの検出に関するよく寄せられる質問
 
@@ -65,7 +65,7 @@ ms.locfileid: "58257326"
  既定では、Windows 10 バージョン 1809 以降で実行されているオンボード デバイスはすべて、ARP、CDP、DHCP、DHCPv6、IP (ヘッダー)、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (ヘッダー)、UDP (ヘッダー)、WSD のプロトコルをキャプチャおよび分析しています。
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>Standard Discovery でアクティブなプロビリングに使用するプロトコルは何ですか?
- デバイスが標準検出を実行するように構成されている場合、公開されたサービスは、ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL、RPC、mDNS、DHCP、AFP、CrestonCIP、IphoneSyncR のプロトコルを使用してプローブされます。
+ デバイスが標準検出を実行するように構成されている場合、公開されたサービスは、ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL、RPC、mDNS、DHCP、AFP、CrestonCIP、IphoneSync、WinRM、VNC、SLP のプロトコルを使用してプローブされます。
 
 ## <a name="how-can-i-exclude-targets-from-being-probed-with-standard-discovery"></a>標準検出でターゲットをプローブから除外する方法を説明します。
  ネットワーク上にアクティブにプローブしないデバイスがある場合は、除外リストを定義してスキャンを防止することもできます。 構成は、[デバイスの検出設定] ページで使用できます。

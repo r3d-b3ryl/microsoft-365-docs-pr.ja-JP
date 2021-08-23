@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 21Vianet がOffice 365、中国のセキュリティで保護され、信頼性が高く、スケーラブルなクラウド サービスのニーズを満たするように設計された、21Vianet が運用するサービスの詳細をご覧ください。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3d91c452ddaca7b8214bffcfa7764515f12fac9ebee07fc6d3749767148a652a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 57126d37e8abe64ed2cbee1c1c271de91cf547d8
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822327"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399781"
 ---
 # <a name="office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365
 
@@ -55,7 +55,7 @@ Microsoft はサービス自体を運用しません。 21Vianet は、サービ
   
 ## <a name="office-365-suite"></a>Office 365 スイート
 
-|職務|可用性|
+|関数|可用性|
 |:-----|:-----|
 |カスタム ドメイン  <br/> |管理者は、中国固有のドメイン プロバイダーを通じて登録されたカスタム ドメインを作成または使用できます。 カスタム ドメインが存在しない場合は、[ドメイン名レジスト[](../get-help-with-domains/buy-a-domain-name.md)ラーからドメイン名を購入する方法] を使用できます。 既にドメイン レジストラーまたは DNS ホスティング プロバイダーを [検索](../get-help-with-domains/find-your-domain-registrar.md)します。  <br/> さらに、Office 365 SharePoint Online サービスを使用してパブリック Web サイトを作成する場合、中国のインターネット コンプライアンス ポリシーでは、インターネット コンテンツ プロバイダー (ICP) 番号を取得する必要があります。  **注:** カスタム ドメイン名の許可されていない単語の自動検証は使用できません。           |
 |サブスクリプション、課金、技術サポート  <br/> |21Vianet によって提供されます。 サポートに連絡する方法については、「ビジネス サポート[の連絡先Office 365」を参照してください](../../business-video/get-help-support.md)。  <br/> |
@@ -74,11 +74,11 @@ Microsoft はサービス自体を運用しません。 21Vianet は、サービ
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-|職務|可用性|
+|関数|可用性|
 |:-----|:-----|
 |組織外のユーザーとドキュメント、ライブラリ、またはサイトを電子メールで共有する  <br/> |この機能は使用できますが、既定では使用すると、ファイルが国外で共有される可能性があります。 Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. 組織外のユーザーと共有しようとするユーザーにも警告が表示されます。 詳細については、「Share [SharePoint ファイルまたはフォルダー」を参照Office 365。](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)  <br/> |
 |Access Services  <br/> |Access 2013サポートされますが、新しい Access アプリを追加できない場合があります。この機能はオンラインの Office 365およびSharePointされます。 Office 365 および SharePoint Online での新しい Access ベースの Web アプリと Access Web データベースの作成は、2017 年 6 月から開始され、残りの Web アプリと Web データベースは 2018 年 4 月に停止します。 さらに、Access 2010 の機能はサポートされていません。Access 2010 データベースを使用しようとすると、エラーが発生し、データが失われる可能性があります。  <br/> |
-|Microsoft PowerApps  <br/> |もうすぐです。  <br/> |
+|Microsoft Power Apps  <br/> |もうすぐです。  <br/> |
 |Information Rights Management (IRM)  <br/> |IRM 機能を組織のSharePoint設定する機能は近日公開予定です。  <br/> |
 |テキストまたはページを翻訳する機能  <br/> |使用可能ですが、既定ではオフです。 テナント管理者はこの機能を有効にできますが、翻訳クラウド サービスは国の外に位置している可能性があります。 ユーザーが翻訳クラウド サービスにコンテンツを送信しない場合は、これらの機能を無効にできます。  <br/> |
 |パブリック Web サイトの ICP 登録  <br/> |中国のインターネット コンプライアンス ポリシーでは、パブリック Web サイトのインターネット コンテンツ プロバイダー (ICP) 番号を取得する必要があります。  |
@@ -93,7 +93,7 @@ Microsoft はサービス自体を運用しません。 21Vianet は、サービ
   
 ## <a name="outlook-web-app"></a>Outlook Web App
 
-|職務|可用性|
+|関数|可用性|
 |:-----|:-----|
 |Blackberry Business Cloud Services (BBCS)  <br/> |使用できませんが、Black Enterprise berry Exchange ActiveSync サーバー (BES) を実行するには、Exchange ActiveSync デバイスまたは Research in Motion (RIM、BlackBerry ワイヤレス メール ソリューション) の製品を使用できます。  <br/> |
 |Information Rights Management  <br/> |もうすぐです。  <br/> |
@@ -127,12 +127,12 @@ Exchange Server の古いバージョンまたは混在したバージョンを�
 |:-----|:-----|:-----|:-----|
 | 2016  <br/> | 該当なし  <br/> | はい  <br/> | すべて  <br/> |
 | 2013 CU5  <br/> | 該当なし  <br/> | はい  <br/> | すべて  <br/> |
-| 2013 SP1  <br/> | 2013 CU5  <br/> | はい  <br/> | すべて  <br/> |
-| 2013 SP1  <br/> | 2013 SP1  <br/> | はい  <br/> | すべて  <br/> |
-| Mixed 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | はい  <br/> | すべて(インプレイス電子情報開示/アーカイブ、OWA アクセスを除く)(下の表を参照)  <br/> |
-| Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | はい  <br/> | 手動で構成された空き時間情報のみ  <br/> |
+| 2013 SP1  <br/> | 2013 CU5  <br/> | 必要  <br/> | すべて  <br/> |
+| 2013 SP1  <br/> | 2013 SP1  <br/> | 必要  <br/> | すべて  <br/> |
+| Mixed 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | 必要  <br/> | すべて(インプレイス電子情報開示/アーカイブ、OWA アクセスを除く)(下の表を参照)  <br/> |
+| Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | 必要  <br/> | 手動で構成された空き時間情報のみ  <br/> |
 | 2010 SP3  <br/> | 2010 SP3  <br/> | いいえ  <br/> | なし  <br/> |
-| 2007  <br/> | 2013 CU5  <br/> | はい  <br/> | 空き時間情報のみ  <br/> |
+| 2007  <br/> | 2013 CU5  <br/> | 必要  <br/> | 空き時間情報のみ  <br/> |
 | 2007  <br/> | 2013 SP1 または 2010 SP3No  <br/> | N/A  <br/> | サポートされていません  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | N/A  <br/> | サポートされていません  <br/> |
 | 2003  <br/> | 2010 SP3  <br/> | いいえ  <br/> | なし  <br/> |
@@ -154,9 +154,9 @@ Exchange Server の古いバージョンまたは混在したバージョンを�
 
 |**オンプレミスのExchangeバージョン**|**MRM (分割アーカイブ)**|**OWA アクセス (分割アーカイブ)**|**インプレース電子情報開示**|**メールボックスの監査**|**インプレイス保持/アーカイブ**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| All 2013 CU5  <br/> | サポート <br/>  | 非サポート <br/>  | サポート <br/>  | サポート  <br/> | サポート <br/> |
-| すべての 2010 SP3 <br/>  | 非サポート <br/>  | 非サポート <br/>  | サポートされている<sup>1</sup> <br/> | サポート  <br/> | サポート <br/>  |
-| 2013 年より前の CU5 サーバーが少なくとも 1 台  <br/> | サポートされている<sup>2</sup> <br/> | 非サポート  <br/> | 非サポート <br/> | サポート  <br/> | サポート <br/> |
+| All 2013 CU5  <br/> | サポート <br/>  | 非サポート <br/>  | サポート <br/>  | サポート  <br/> | サポート済み <br/> |
+| すべての 2010 SP3 <br/>  | 非サポート <br/>  | 非サポート <br/>  | サポートされている<sup>1</sup> <br/> | サポート  <br/> | サポート済み <br/>  |
+| 2013 年より前の CU5 サーバーが少なくとも 1 台  <br/> | サポートされている<sup>2</sup> <br/> | 非サポート  <br/> | 非サポート <br/> | サポート  <br/> | サポート済み <br/> |
 |||
 
 <sup>1</sup>オンプレミスメールボックスとメールボックスに対して個別のExchange Online必要です。  <br/> <sup>2</sup>つの MRM 移動からアーカイブへの移行ポリシーは、2013 CU5 以上のサーバー上Exchangeメールボックスに使用できます。 
@@ -169,7 +169,7 @@ Exchange Server の古いバージョンまたは混在したバージョンを�
 > [!IMPORTANT]
 >  Exchange Server[展開](https://go.microsoft.com/fwlink/?LinkId=506768)アシスタントは、オンプレミス組織と Office 365 の間でハイブリッド展開を構成したり、完全に Office 365 に移行したりするのに役立つ無料の web ベースのツールです。 このツールによる簡単な一連の質問に回答すると、その答えに基づき、ハイブリッド展開を構成する指示が記された専用のチェックリストが作成されます。 ハイブリッド展開を構成するには、展開アシスタントを使用することを強く推奨します。 > Exchange 2013 CU5 サーバーへのアップグレードまたは追加を希望しない組織の場合、Exchange 2013 SP1 組織は、オンプレミス組織と Exchange Online 組織間の共有予定表の空き時間情報共有を構成できます。 このハイブリッド展開機能を構成するには[、「21Vianet](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d)でExchangeハイブリッド展開機能を構成するOffice 365を参照してください。 
 
-|職務|可用性|
+|関数|可用性|
 |:-----|:-----|
 |共存と空き時間情報の共有|2 つ以上のオンプレミスの組織間で予定表の空き時間情報を共有Exchange 2 つの 21Vianet Office 365 テナント間での共有はサポートされていません。 この機能は近日公開予定です。 | 
 |予定表の共有|Exchange 2013 SP1 以上では、他のオンプレミスの組織または組織とのインターネット カレンダー共有を手動でExchangeをExchange Onlineできます。 この機能を手動で構成する方法の詳細については [、「Enable Internet Calendar Publishing」を参照してください](/exchange/enable-internet-calendar-publishing-exchange-2013-help)。 | 
@@ -177,9 +177,9 @@ Apple Exchangeの連絡先データを Apple iCloud に共有する。 |この�
 |Exchangeホストされた電子メールの暗号化  |注意事項なし。  |
 |Office 365 Message Encryption  |もうすぐです。  |
    
-## <a name="office"></a>Office
+## <a name="office"></a>事業所
 
-|職務|可用性|
+|関数|可用性|
 |:-----|:-----|
 |ファイルを開Office **..) から** \> **アプリケーションを開** きます。 button  <br/> |使用可能です。 ローミング中に実行する機能は近日公開予定です。  <br/> |
 |Microsoft アカウントOneDrive for Businessサインイン中にユーザーに保存する  <br/> |データを国内に保持するために、Microsoft アカウントを使用してユーザーにサインインしている場合、ドキュメントを組織サイト (OneDrive for Business) に保存Officeできません。  <br/> |
@@ -187,13 +187,13 @@ Apple Exchangeの連絡先データを Apple iCloud に共有する。 |この�
    
 ## <a name="office-client"></a>Office クライアント
 
-|職務|可用性|
+|関数|可用性|
 |:-----|:-----|
 |アカウントの管理 (クライアント内Office)  <br/> |この機能や、Office 365 ポータルに移動することを目的としたその他の機能は、現在世界中の Office 365 ポータルを指しています。21Vianet アカウントで運用されている Office 365 でサインインすることはできません。 これは、修正中の既知の問題です。 その間、URL を使用してアカウントにサインインし、 https://portal.partner.microsoftonline.cn/ そこから設定を管理できます。 詳細については[、「21Vianet がMicrosoft 365 Apps for enterpriseアカウントをOffice 365する」を参照してください](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)。  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
-|職務|可用性|
+|関数|可用性|
 |:-----|:-----|
 |オンライン ビデオの挿入と再生  <br/> |注意事項なし。  <br/> |
 |調査ウィンドウとサービスBing統合  <br/> |注意事項なし。  <br/> |
@@ -211,7 +211,7 @@ Apple Exchangeの連絡先データを Apple iCloud に共有する。 |この�
    
 ## <a name="skype-for-business"></a>Skype for Business
 
-|職務|可用性|
+|関数|可用性|
 |:-----|:-----|
 |サポートするドメイン プロバイダー Skype for Business  <br/> |SRV レコードをサポートする中国固有のドメイン プロバイダーにドメインを登録する必要があります。 ドメインを登録する方法の詳細については、「ドメイン レジストラーまたは DNS ホスティング プロバイダーを検索する」 [を参照してください](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> |
 |ダイヤルイン会議 (コンピューターにアクセスできないユーザーの会議に電話アクセスを追加する機能)  <br/> |ダイヤルイン会議とプロバイダーの Skype for Businessおよび Skype for Business 管理センターにオプションが表示される場合がありますが、これらの機能はまだ利用できません。 近日公開予定です。  <br/> |

@@ -1,7 +1,7 @@
 ---
 title: エンドポイント用 Microsoft Defender に切り替える - セットアップ
-description: フェーズ 2、セットアップ プロセス(Microsoft Defender for Endpoint に切り替える場合)。
-keywords: 移行、Microsoft Defender for Endpoint、edr、Windows Defender
+description: Defender for Endpoint に切り替えます。 セットアップ プロセスを確認します。これには、セットアップ プロセスのインストールMicrosoft Defender ウイルス対策。
+keywords: 移行、Microsoft Defender for Endpoint、ウイルス対策、パッシブ モード、セットアップ プロセス
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 08/11/2021
+ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 98aaf120b2c9357f53bbc21b2e6e994a76877e8d
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 22add576af2ae7272b5f63b3c4e8e317bf1d85a1
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247457"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372498"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>エンドポイントの Microsoft Defender に切り替える - フェーズ 2: セットアップ
 
@@ -48,12 +48,11 @@ ms.locfileid: "58247457"
 4. [既存のソリューションを、既存のソリューションの除外リストに追加Microsoft Defender ウイルス対策。](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus)
 5. [デバイス グループ、デバイス コレクション、および組織単位を設定します](#set-up-your-device-groups-device-collections-and-organizational-units)。
 
-
 ## <a name="reinstallenable-microsoft-defender-antivirus-on-your-endpoints"></a>エンドポイントの再インストールMicrosoft Defender ウイルス対策有効にする
 
-特定のバージョンのウイルス対策Windows、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策/マルウェア対策ソリューションがインストールされている場合、Microsoft Defender ウイルス対策がアンインストールまたは無効になっている可能性があります。 デバイスが Defender for Endpoint にオンボードされるまで、Microsoft Defender ウイルス対策非 Microsoft ウイルス対策ソリューションと共にアクティブ モードで実行されません。 詳細については、「[Microsoft Defender ウイルス対策互換性](microsoft-defender-antivirus-compatibility.md)」を参照してください。
+特定のバージョンのウイルス対策Windows、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策/マルウェア対策ソリューションがインストールされている場合、Microsoft Defender ウイルス対策がアンインストールまたは無効になっている可能性があります。 アプリケーションを実行しているWindows Defender for Endpoint にオンボードされている場合、Microsoft Defender ウイルス対策 Microsoft 以外のウイルス対策ソリューションと共にパッシブ モードで実行できます。 詳細については、「Defender [for Endpoint によるウイルス対策保護」を参照してください](microsoft-defender-antivirus-compatibility.md#antivirus-protection-with-defender-for-endpoint)。
 
-Defender for Endpoint に切り替える予定の場合は、一定の手順を実行して、エンドポイントを再インストールまたは有効にする必要Microsoft Defender ウイルス対策。 
+Defender for Endpoint に切り替える場合は、一定の手順を実行して、エンドポイントを再インストールまたは有効にする必要Microsoft Defender ウイルス対策。 次の表では、クライアントとサーバーのWindows説明します。
 
 
 | エンドポイントの種類  | 操作  |

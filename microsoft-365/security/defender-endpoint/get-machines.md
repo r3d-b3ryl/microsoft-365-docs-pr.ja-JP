@@ -16,12 +16,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1906511282b77cd7d49618779154b0ba54c5958041192435b5be6db2c53e3355
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8ffeca3d13b42e39f539e96d563aceabd464aeaf
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53903785"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372450"
 ---
 # <a name="list-machines-api"></a>マシン API の一覧
 
@@ -41,9 +41,9 @@ Microsoft Defender for Endpoint クラウド [と](machine.md) 通信したコ�
 
 [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
 
-OData のクエリは `$filter` 、で `computerDnsName` `lastSeen` `healthStatus` `osPlatform` `riskScore` サポートされています `rbacGroupId` 。
-
-Defender for Endpoint を使用した [OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
+OData のクエリは `$filter` 、で `computerDnsName` `id` `version` `deviceValue` `aadDeviceId` `machineTags` `lastSeen` `exposureLevel` `lastIpAddress` `healthStatus` `osPlatform` `riskScore` サポートされています `rbacGroupId` 。
+<br>```$stop``` 最大値が 10,000 の場合
+<br>```$skip``` Defender for Endpoint を使用した [OData クエリの例を参照してください。](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>制限事項
 
@@ -74,7 +74,7 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 
@@ -131,6 +131,6 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [エンドポイント用 Microsoft Defender を使用した OData クエリ](exposed-apis-odata-samples.md)

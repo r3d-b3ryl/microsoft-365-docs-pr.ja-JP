@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターに新しいソリューションを追加する場合、フィードバックに基づいて既存の機能を更新する場合、新しく更新されたドキュメントを展開する場合でも、Microsoft 365 を使用すると、変化し続けるコンプライアンス環境の上に立ち続けるのに役立ちます。 今月までの予定を確認します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c24108d7ccc140fecac9c6a7444a697d1526e95c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ebb491ccd84e328ea3d4d1151a2c141ca3a69168
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58244014"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450070"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンス センターの新機能
 
@@ -43,7 +43,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 ## <a name="july-2021"></a>2021 年 7 月
 
-### <a name="advanced-ediscovery"></a>高度な電子情報開示
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 - [Advanced eDiscoveryケースを](teams-workflow-in-advanced-ediscovery.md)使用してMicrosoft Teamsコンテンツのワークフローを作成すると、コンテンツを管理するためのエンド Teams ワークフローが追加Advanced eDiscovery。には、新しい会話トランスクリプト機能のプレビューに関する詳細が含まれます。
 - [大規模なケース](advanced-ediscovery-large-cases.md)を使用Advanced eDiscovery、レビュー セットとケースの制限を拡張し、Teams および Yammer チャット会話の会話トランスクリプトをサポートする新しい大きなケース形式のプレビューを追加しました。
@@ -160,7 +160,7 @@ Microsoft 365 コンプライアンス センター に新しいソリューシ�
 
 ## <a name="april-2021"></a>2021 年 4 月
 
-### <a name="advanced-ediscovery"></a>高度な電子情報開示
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 - [Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set)の制限。 組織は、レビュー セットからアイテムを 1 回エクスポートする場合に、最大 500 万アイテムまたは 500 MB をエクスポートできます(小さい方)。
 
@@ -196,7 +196,7 @@ Outlookと更新プログラム:
 
 3 月のコンプライアンス ソリューションとMicrosoft 365の変更点を次に示します。
 
-### <a name="advanced-ediscovery"></a>高度な電子情報開示
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 - **Advanced eDiscoveryコレクションは、新** しいコレクション ツール [とワークフローをサポートしています](/microsoft-365/compliance/collections-overview)。 その他の新しいトピックには、下書きコレクションの [作成](/microsoft-365/compliance/create-draft-collection)、 [下](/microsoft-365/compliance/commit-draft-collection)書きコレクションをレビュー セットにコミットする、コレクションの統計情報 [とレポートが含まれます](/microsoft-365/compliance/collection-statistics-reports)。
 - **レビュー セット内の** ドキュメントをユーザーアカウントに [Azure Storage](/microsoft-365/compliance/download-export-jobs)します。
@@ -286,7 +286,6 @@ Outlookと更新プログラム:
 次のトピックでコンテンツが追加または更新されました。
 
 - [コンテンツ エクスプローラーの使用を開始する](/microsoft-365/compliance/data-classification-content-explorer)
-- [データ分類のリリース ノート](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>データ損失防止
 

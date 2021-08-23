@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 430dae4e4432defd5d9dd80e63bc149858781a9c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 34fd5ed4338e42ea37d4ad9eacb1d881bb2bf0e6
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356830"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399805"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックスの移行 (プレビュー)
 
@@ -109,11 +109,11 @@ ms.locfileid: "58356830"
    |-CertificateName|キー コンテナーで証明書を生成または検索する場合の証明書名。|必須|
    |-CertificateSubject|AZURE Key Vault 証明書のサブジェクト名 (CN=contoso_fabrikam など)。|必須|
    |-AzureResourceLocation|Azure リソース グループとキー コンテナーの場所。|必須|
-   |-ExistingApplicationId|既に作成されている場合に使用するメール移行アプリケーション。|省略可能|
+   |-ExistingApplicationId|既に作成されている場合に使用するメール移行アプリケーション。|オプション|
    |-AzureAppPermissions|メールボックス移行アプリケーションに与える必要があるアクセス許可 (Exchange または MSGraph (メールボックスを移動するための Exchange、このアプリケーションを使用してリソース テナントに同意リンクの招待を送信するための MSGraph)。|必須|
-   |-UseAppAndCertGeneratedForSendingInvitation|移行先テナント管理者に同意リンクの招待を送信するために使用する移行用に作成されたアプリケーションを使用するパラメーター。存在しない場合は、ターゲット管理者の資格情報が Azure 招待マネージャーに接続し、招待をターゲット管理者として送信するように求めるメッセージが表示されます。|省略可能|
-   |-KeyVaultAuditStorageAccountName|Key Vault の監査ログが格納されるストレージ アカウント。|省略可能|
-   |-KeyVaultAuditStorageResourceGroup|Key Vault 監査ログを格納するためのストレージ アカウントを含むリソース グループ。|省略可能|
+   |-UseAppAndCertGeneratedForSendingInvitation|移行先テナント管理者に同意リンクの招待を送信するために使用する移行用に作成されたアプリケーションを使用するパラメーター。存在しない場合は、ターゲット管理者の資格情報が Azure 招待マネージャーに接続し、招待をターゲット管理者として送信するように求めるメッセージが表示されます。|オプション|
+   |-KeyVaultAuditStorageAccountName|Key Vault の監査ログが格納されるストレージ アカウント。|オプション|
+   |-KeyVaultAuditStorageResourceGroup|Key Vault 監査ログを格納するためのストレージ アカウントを含むリソース グループ。|オプション|
    ||||
 
     > [!NOTE]
@@ -165,7 +165,7 @@ ms.locfileid: "58356830"
 
 #### <a name="step-by-step-instructions-for-the-source-tenant-admin"></a>ソース テナント管理者の手順
 
-1. セットアップ中にターゲット管理者によって指定された -ResourceTenantAdminEmail としてメールボックスにサインインします。 ターゲット テナントから電子メールの招待状を見つけて、[メールの送信] ボタン **はじめに** します。
+1. グローバル管理者の資格情報でサインインします。 セットアップ中にターゲット管理者によって指定された -ResourceTenantAdminEmail としてメールボックスにサインインします。  ターゲット テナントから電子メールの招待状を見つけて、[メールの送信] ボタン **はじめに** します。
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="[招待された] ダイアログ ボックス":::
 
@@ -314,7 +314,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
      |属性|値|
      |---|---|
-     |Alias|LaraN|
+     |エイリアス|LaraN|
      |RecipientType|MailUser|
      |RecipientTypeDetails|MailUser|
      |UserPrincipalName|LaraN@northwintraders.onmicrosoft.com|
@@ -333,7 +333,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
      |属性|値|
      |---|---|
-     |Alias|LaraN|
+     |エイリアス|LaraN|
      |RecipientType|UserMailbox|
      |RecipientTypeDetails|UserMailbox|
      |UserPrincipalName|LaraN@contoso.onmicrosoft.com|
@@ -362,7 +362,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
     if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
     ```
 
-3. ハイブリッド以外のターゲット テナントは、次のコマンドを実行して MailUser オブジェクトの訴訟ホールドを有効にし、クォータを 100 GB に増やして、移行前に MailUsers の回復可能なアイテム フォルダーのクォータを変更できます。 `Set-MailUser -EnableLitigationHoldForMigration $TRUE` これは、ハイブリッドのテナントでは機能しません。
+3. ハイブリッド以外のターゲット テナントは、次のコマンドを実行して MailUser オブジェクトの訴訟ホールドを有効にし、クォータを 100 GB に増やして、移行前に MailUsers の回復可能なアイテム フォルダーのクォータを変更できます。 `Set-MailUser -EnableLitigationHoldForMigration` これは、ハイブリッドのテナントでは機能しません。
 
 4. ターゲット組織のユーザーは、組織に適用可能な適切なサブスクリプションExchange Onlineライセンスを受け取る必要があります。 メールボックスの移動の前にライセンスを適用できますが、対象の MailUser が ExchangeGUID とプロキシ アドレスで適切に設定されている場合にのみ適用できます。 ExchangeGUID を適用する前にライセンスを適用すると、新しいメールボックスがターゲット組織にプロビジョニングされます。
 
@@ -703,7 +703,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
       |名前|
       |---|
       |Advanced eDiscovery Storage (500 GB)|
-      |顧客ロックボックス|
+      |カスタマー ロックボックス|
       |データ損失防止|
       |Exchange Enterprise CAL サービス (EOP、DLP)|
       |Exchange Essentials|

@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 2dcb7767be7145420c08161782f27a51ec38727ae5d427459c4af1d9676cd37d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3e8ff4f94b0295b4ce42e20175a3547cfb4ae23
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844808"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58359885"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Defender for Identity entity tags in Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "53844808"
 
 ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
 
-タグの設定が [タグの設定]**列設定** されます。
+タグの設定が [エンティティ タグ] の **下に表示されます**。
 
 ![タグ設定の種類](../../media/defender-identity/tag-settings.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "53844808"
 
 ユーザー、デバイス、またはグループに機密として手動でタグを付けすることもできます。
 
-1. [機密 **タグ] を選択します**。 その後、既存の機密性の高い **ユーザー、デバイス**、 **および** グループが **表示されます**。
+1. [機密] **を選択します**。 その後、既存の機密性の高い **ユーザー、デバイス**、 **および** グループが **表示されます**。
 
     ![機密性の高いエンティティ](../../media/defender-identity/sensitive-entities.png)
 
@@ -64,7 +64,7 @@ Honeytoken エンティティは、悪意のあるアクターのトラップと
 
 ユーザーまたはデバイスに **Honeytoken** タグを付け、機密性の高いアカウントにタグ付けするのと同じ方法でタグ付けできます。
 
-1. **[Honeytoken] タグを選択します**。 次に、既存の honeytoken ユーザーと **デバイスが** 表示 **されます**。
+1. **[Honeytoken] を選択します**。 次に、既存の honeytoken ユーザーと **デバイスが** 表示 **されます**。
 
     ![Honeytoken エンティティ](../../media/defender-identity/honeytoken-entities.png)
 
@@ -80,7 +80,7 @@ Honeytoken エンティティは、悪意のあるアクターのトラップと
 
 Defender for Identity は、Exchangeを価値の高いアセットと見なし、自動的に機密としてタグ付 **けします**。 デバイスに手動でタグを付け、Exchangeすることもできます。
 
-1. [サーバー **Exchange] を選択します**。 次に、既存のデバイスにサーバー タグのラベルが付Exchange **表示** されます。
+1. [サーバー **Exchangeを選択します**。 次に、既存のデバイスにサーバー タグのラベルが付Exchange **表示** されます。
 
     ![Exchange サーバー](../../media/defender-identity/exchange-servers.png)
 

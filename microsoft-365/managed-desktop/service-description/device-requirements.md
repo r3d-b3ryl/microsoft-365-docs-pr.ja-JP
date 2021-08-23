@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 559cec70c4f699d0f6a849aec8235a22903a5050becb4469824b17908025f32d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f51208b8376ef160fe83a41e5a2ac74eb843c2f3
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877667"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372690"
 ---
 # <a name="device-requirements"></a>デバイスの要件
 
-Microsoft マネージド デスクトップに含めるデバイス要件を定期的に評価します。 この記事では、デバイスがデバイスで動作するために満たす必要があるハードウェア要件とソフトウェア要件Microsoft マネージド デスクトップ。 これらの要件に基づいて、サービスでの使用が既に承認されている特定のデバイスの一覧を確認できます。 ビジネス デバイス サイトMicrosoft マネージド デスクトップ[のサイトWindows 10 Proフィルター](https://www.microsoft.com/windowsforbusiness/view-all-devices)
+Microsoft マネージド デスクトップに含めるデバイス要件を定期的に評価します。 この記事では、デバイスがデバイスで動作するために満たす必要があるハードウェア要件とソフトウェア要件Microsoft マネージド デスクトップ。 これらの要件に基づいて、サービスでの使用が既に承認されている特定のデバイスの一覧を確認できます。 ビジネス デバイス サイトMicrosoft マネージド デスクトップ[のサイトWindows 10 Proフィルター](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)
 
 > [!NOTE]
 > これらの要件は、いつでも変更できますが、ハードウェア要件の変更に関する 30 日間の通知を提供します。 最近変更された要件は、 でマークされます **\*** 。 

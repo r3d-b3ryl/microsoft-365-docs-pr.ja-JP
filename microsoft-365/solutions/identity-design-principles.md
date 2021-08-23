@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: e17c343dbda957144d227c1c82ee83356147a6f80402846c62e5fb75342eb908
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f61c05608bfb9f3b528cf0a717dbe9effbaf31a5
+ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883518"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58418001"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>ID とそれ以降の 1 つのアーキテクトの視点
 
@@ -314,7 +314,7 @@ Azure AD、Azure、SaaS の間で高い特権の役割を分離する方法が�
 2. 承認プロセスを通じて各 1 つを送信する (Power Platform)
 3. すべてのコンポーネントが承認された後、これらを統合成果物 (Azure) (Azure) に組みGraph [API は](/azure/active-directory/develop/microsoft-graph-intro)、これらの親友です。  不可能ではないが、複数のテナントにまたがるソリューションを設計する方 [が非常に複雑です](/azure/active-directory/develop/single-and-multi-tenant-apps)。
 
-Azure Role-Based アクセス制御 (RBAC) を使用すると、Azure の詳細なアクセス管理が可能になります。 RBAC を使用すると、ユーザーにジョブの実行に必要なアクセス許可を最も少なくすることで、リソースへのアクセスを管理できます。 詳細は、このドキュメントの範囲を外していますが、RBAC の詳細については、「Azure の役割ベースのアクセス制御 [(RBAC) とは」を参照してください。](/azure/role-based-access-control/overview) RBAC は重要ですが、Azure のガバナンスに関する考慮事項の一部に限定されます。 [クラウド導入フレームワークは](/azure/cloud-adoption-framework/govern/) 、詳細を学ぶ上で最適な開始点です。 私は友人である Andres Ravinet が、アプローチを決定するためのさまざまなコンポーネントを使用して、顧客を一歩一歩く方法が好きです。 さまざまな要素 (実際の顧客モデルにアクセスするプロセスほど良いではない) のハイレベル ビューは次のようなものです。
+Azure Role-Based アクセス制御 (RBAC) を使用すると、Azure の詳細なアクセス管理が可能になります。 RBAC を使用すると、ユーザーにジョブの実行に必要なアクセス許可を最も少なくすることで、リソースへのアクセスを管理できます。 詳細は、このドキュメントの範囲を外していますが、RBAC の詳細については、「Azure の役割ベースのアクセス制御 [(RBAC) とは」を参照してください。](/azure/role-based-access-control/overview) RBAC は重要ですが、Azure のガバナンスに関する考慮事項の一部に限定されます。 [クラウド導入フレームワークは](/azure/cloud-adoption-framework/govern/) 、詳細を学ぶ上で最適な開始点です。 私は友人の [Andres Ravinet](https://www.linkedin.com/in/andres-ravinet/)が、アプローチを決定するさまざまなコンポーネントを使用して、顧客を一歩一歩進める方法が好きです。 さまざまな要素 (実際の顧客モデルにアクセスするプロセスほど良いではない) のハイレベル ビューは次のようなものです。
 
 ![委任された管理用の Azure コンポーネントのハイレベル ビュー](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 

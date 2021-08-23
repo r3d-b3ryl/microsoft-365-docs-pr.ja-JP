@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a67ec7ce5e71ed5b0275f509928d4acaa2b7c4b1f89db971353fc27fb98c650d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7ffd136bd770369248b2f0735deb42e62f372632
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884525"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372822"
 ---
 # <a name="update-machine"></a>コンピューターの更新 
 
@@ -71,7 +71,7 @@ PATCH /api/machines/{machineId}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 Content-Type|文字列|application/json. **必須**
@@ -84,7 +84,7 @@ Content-Type|文字列|application/json. **必須**
 
 最適なパフォーマンスを得る場合は、変更していない既存の値を含めてはならない。
 
-プロパティ|種類|説明
+プロパティ|型|説明
 :---|:---|:---
 machineTags|String コレクション|コンピューター タグ [の](machine.md) セット。
 deviceValue|Null 許容列挙|デバイス [の値](tvm-assign-device-value.md)です。 指定できる値は、'Normal'、'Low'、および 'High' です。
@@ -93,7 +93,7 @@ deviceValue|Null 許容列挙|デバイス [の値](tvm-assign-device-value.md)�
 
 成功した場合、このメソッドは 200 OK[](machine.md)を返し、更新されたプロパティを持つ応答本文の machine エンティティを返します。
 
-本文の machine tags コレクションに既存のコンピューター タグが含まれている場合 - 400 無効な入力と、見つからないタグ/s を通知するメッセージ。
+本文の machine tags コレクションに既存のコンピューター タグが含まれている場合は、すべてのタグが要求本文で指定されたタグに置き換わります。
 
 指定した ID を持つコンピューターが見つからない場合 - 404 Not Found。
 

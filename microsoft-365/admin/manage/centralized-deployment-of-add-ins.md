@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしていることを確認し、集中展開を使用してアドインを展開Officeします。
-ms.openlocfilehash: c357f0fd7ba729156b5a632aa46510c39683ac2d
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 98496ce57c57cbce10178cc2be99079d8733a0ca
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247901"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372510"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの集中展開が機能するかどうかを判断する
 
@@ -45,7 +45,7 @@ ms.locfileid: "58247901"
 
 すべてのユーザーのクライアントにアドインが表示されるには、最大 24 時間かかる場合があります。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 アドインの一元展開では、ユーザーが Microsoft 365 Enterprise SKU E3/E5/F3 または Business SKU: Business Basic、Business Standard、Business プレミアム (および組織 ID を使用して Office にサインイン)を使用し、Exchange Online メールボックスとアクティブな Exchange Online メールボックスを持っている必要があります。 サブスクリプション ディレクトリは、サブスクリプション ディレクトリに存在するか、サブスクリプション ディレクトリにAzure Active Directory。
 次の手順に従って、OfficeとExchange要件を確認したり、集中展開の互換性チェックを[使用できます](#centralized-deployment-compatibility-checker)。
@@ -106,9 +106,9 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
    このコマンドは *_、TenantDomain_* *(TailspinToysIncorporated.onmicrosoft など) の入力を求めるプロンプトを表示します。 </span>com)**_および TenantAdmin_* 資格情報 (グローバル管理者資格情報を使用)、同意を要求します。
 
    > [!NOTE]
-   > テナントのユーザー数によって、チェックが完了するのに数分または数時間かかる場合があります。
-
-ツールの実行が完了すると、コンマ区切り (.csv) 形式で出力ファイルが作成されます。 ファイルは既定で **C:\windows\system32 に** 保存されます。 出力ファイルには、次の情報が含まれます。
+   > テナントのユーザー数によって、チェックが完了するのに数分または数時間かかる場合があります。 
+  
+ツールの実行が完了すると、コンマ区切り (.csv) 形式で出力ファイルが作成されます。 既定では、ファイル **は現在の作業ディレクトリ** に保存されます。 出力ファイルには、次の情報が含まれます。
 
 - ユーザー名
 
@@ -155,10 +155,10 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
 
 web 用の Office アプリ (Word、Excel など) の使用中にアドインの読み込み中に問題が発生した場合は、Microsoft サポートに連絡する必要があります (方法を[](../../business-video/get-help-support.md)確認してください)。 サポート チケットに、ユーザーのMicrosoft 365情報を入力します。
 
-|**プラットフォーム**|**デバッグ情報**|
+| プラットフォーム | デバッグ情報 |
 |:-----|:-----|
-|Office  <br/> | Charles/Fiddler ログ  <br/>  テナント ID ([方法の詳細](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID。 1 つの Office ページのソースを表示し、相関 ID の値を探してサポートに送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
-|リッチ クライアント (Windows、Mac)  <br/> | Charles/Fiddler ログ  <br/>  クライアント アプリのビルド番号 (できれば **File/Account** のスクリーンショットとして)  <br/> |
+|事業所 | Charles/Fiddler ログ  <br/>  テナント ID ([方法の詳細](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID。 1 つの Office ページのソースを表示し、相関 ID の値を探してサポートに送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
+|リッチ クライアント (Windows、Mac) | Charles/Fiddler ログ  <br/>  クライアント アプリのビルド番号 (できれば **File/Account** のスクリーンショットとして) |
 
 ## <a name="related-content"></a>関連コンテンツ
 

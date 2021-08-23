@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 - AdminTemplateSet
 description: 小売店からMicrosoft 365 Business Standard購入した場合は、プロダクト キーを引き換え、サブスクリプションをアクティブ化する方法について学習します。
 ms.date: 11/13/2020
-ms.openlocfilehash: 6f812948e06b4ddf678b8112bca4c068e8d36444d7b036f95764d5bc0e7c9bde
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c9a1bba30f6c1b55688d2a36166651fe0b16a05
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820925"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387034"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクト キーを入力する
 

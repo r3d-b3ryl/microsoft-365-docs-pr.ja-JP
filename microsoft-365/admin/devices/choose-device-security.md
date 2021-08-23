@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 異なる MDM メソッドと MAM メソッドの間で選択します。
-ms.openlocfilehash: 933aacd950f67eaab9b538fd6b029a4b6f71d807a27bd33c9139650f57f1d7b7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 887dae650dd0635724a59ebb3c1ddf5bc0d38418
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826233"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377705"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>デバイスとアプリ データを保護するためのオプション
 
@@ -51,7 +51,7 @@ ms.locfileid: "53826233"
      Azure AD Premium P1とAzure AD Premium P2、条件付きアクセス機能、セルフサービス パスワードのリセットなどを設定できます。プランの機能の詳細については、「Azure プレミアム価格[」AD参照](https://azure.microsoft.com/pricing/details/active-directory/)してください。
 - **Microsoft 365 Business Premium** Intune と高度な脅威Azure Active Directory Premium P1とOffice 365が含まれます。 
  
-    Microsoft 365 Business Premiumデバイスとアプリ データをセキュリティ保護するための一連のポリシー テンプレートを提供します。 これは、300 ユーザー以下のほとんどの企業に対して、優れたレベルのセキュリティと脅威の保護を提供します。 詳細については、「セットアップ ウィザード[のMicrosoft 365 Business Premium](../../business/set-up.md)セットアップ」、コンピューター Windows 10セキュリティと[](../../business/secure-win-10-pcs.md)コンプライアンスMicrosoft 365 Business Premium[を参照してください](../../business/security-features.md)。
+    Microsoft 365 Business Premiumデバイスとアプリ データをセキュリティ保護するための一連のポリシー テンプレートを提供します。 これは、300 ユーザー以下のほとんどの企業に対して、優れたレベルのセキュリティと脅威の保護を提供します。 詳細については、「セットアップ ウィザード[のMicrosoft 365 Business Premium](../../business/set-up.md)セットアップ」、コンピューター Windows 10セキュリティと[](../../business/secure-win-10-pcs.md)コンプライアンスMicrosoft 365 Business Premium[を参照してください](/security-and-compliance/security-your-business-data.md)。
 
 - **Microsoft 365サブスクリプションの** 場合、Microsoft Intune E5 には Azure ADプレミアム プラン 1 と 2 も含まれます。
 

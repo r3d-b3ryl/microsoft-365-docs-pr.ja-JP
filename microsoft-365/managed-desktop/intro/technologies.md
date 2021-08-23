@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9cd36b1d536ae6bcfe22fdc6088b3dd0de87184ee085b60bb7e5f1423a536ab8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 89a495d5832d1a16e062c7df8e31ea3a3333bf00
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863921"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399709"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージド デスクトップのテクノロジ
 
@@ -35,7 +35,7 @@ Microsoft 365 Apps for enterprise (64 ビット) | これらのOfficeアプリ�
 OneDrive |Azure Active Directoryシングル サインオンは、ユーザーが最初にユーザーにサインインするときに有効OneDrive。<br><br>"Desktop"、"Document"、"Pictures" フォルダーの既知のフォルダー リダイレクトが含まれています。を有効にし、Microsoft マネージド デスクトップ。
 ストア アプリ | Microsoft Sway と Power BIデバイスには同梱されません。 これらのアプリは、アプリからダウンロードMicrosoft Store。
 Win32 アプリケーション | Teamsはデバイスに同梱されませんが、Microsoft によってパッケージ化され、デバイスにMicrosoft マネージド デスクトップされます。 Azure Information Protection Client はデバイスに同梱されませんが、展開用にパッケージ化できます。
-Web アプリケーション | Yammer、Office、Delve、Flow、StaffHub、PowerApps、Planner はデバイスに同梱されません。 ユーザーは、ブラウザーを使用してこれらのアプリケーションの Web バージョンにアクセスできます。
+Web アプリケーション | Yammer、Office、Delve、Flow、StaffHub、Power Apps、Planner はデバイスに同梱されません。 ユーザーは、ブラウザーを使用してこれらのアプリケーションの Web バージョンにアクセスできます。
 
 ## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Enterpriseエンドポイント用 Microsoft Defender を使用した E5 または E3
 

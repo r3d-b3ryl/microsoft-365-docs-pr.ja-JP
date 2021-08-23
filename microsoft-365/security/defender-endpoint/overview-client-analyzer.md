@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 94824039c582706d8042079b492e1b4beae2cddb
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 604a7d98b25d7b5b858db87c8b8f467ffb8edb83
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254835"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58360109"
 ---
 #  <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint Client Analyzer を使用したセンサーの正常性のトラブルシューティング
 
@@ -54,12 +54,12 @@ Secure File Exchangeの詳細については、「Secure File Exchangeを使用�
 
 ## <a name="requirements"></a>要件
 
--   アナライザーを実行する前に、プロキシまたはファイアウォールの構成で Microsoft Defender for Endpoint サービス URL へのアクセスを許可することを [確認することをお勧めします](/microsoft-365/security/defender-endpoint/configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
+-   アナライザーを実行する前に、プロキシまたはファイアウォールの構成で Microsoft Defender for Endpoint サービス URL へのアクセスを許可することを [確認することをお勧めします](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 
--   アナライザーは、Microsoft Defender for Endpoint[](/microsoft-365/security/defender-endpoint/minimum-requirements.md#supported-windows-versions)へのオンボーディングの前に、Windows、Linux、[または macOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac.md#system-requirements)のサポートされているエディションで実行できます。 [](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux.md#system-requirements)
+-   アナライザーは、Microsoft Defender for Endpoint[](minimum-requirements.md#supported-windows-versions)へのオンボーディングの前に、Windows、Linux、[または macOS](microsoft-defender-endpoint-mac.md#system-requirements)のサポートされているエディションで実行できます。 [](microsoft-defender-endpoint-linux.md#system-requirements)
 
 -   Windowsデバイスの場合、Live [Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log)を介してリモートではなく、特定のコンピューターでアナライザーを直接実行している場合は、SysInternals [PsExec.exe](/sysinternals/downloads/psexec)の実行を許可する必要があります (少なくとも一時的に)。  
     アナライザーは、クラウド接続PsExec.exeローカル システムとして実行し、SENSE サービスの動作をエミュレートするために、このツールを呼び出します。
 
     > [!NOTE]
-    > Windows デバイスで、攻撃表面縮小 (ASR) ルール[PSExec](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生するプロセスの作成をブロックする場合は、ルールを一時的に無効にするか[、ASR](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)ルールの除外を構成して、アナライザーが期待した通りクラウドに接続チェックを実行できます。
+    > Windows デバイスで、攻撃表面縮小 (ASR) ルール[PSExec](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)および WMI コマンドから発生するプロセスの作成をブロックする場合は、ルールを一時的に無効にするか[、ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)ルールの除外を構成して、アナライザーが期待した通りクラウドに接続チェックを実行できます。

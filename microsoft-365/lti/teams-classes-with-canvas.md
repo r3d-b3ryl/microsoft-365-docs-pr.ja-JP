@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: キャンバスMicrosoft Teamsクラスを統合する
-ms.openlocfilehash: 4ee5be86498c5a9eed3ebb47a7857b7cc401f00d
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 09c0033f6deca5d941dee5003391b1a0b171a0ee
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255563"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387022"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Canvas でMicrosoft Teamsクラスを使用する
 
@@ -30,7 +30,7 @@ Microsoft Teamsクラスは、ラーニング ツール相互運用性 (LTI) ア
 > LTI の現在Teamsクラスは、キャンバス ユーザーと制限されたスコープ内Microsoft Azure Active Directory (AAD) の同期のみをサポートします。 
 > - テナントに Microsoft Education ライセンスが必要です。
 > - Canvas と Microsoft の間でユーザーをマッピングするには、1 つの Microsoft テナントのみを使用できます。
-> - グループの重複を回避するには、LTI クラスを使用する前Teams SDS をオフにする必要があります。
+> - グループの重複を回避するには、学校データ同期 LTI を使用する前に、Teams (SDS) をオフにする必要があります。
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理者
 

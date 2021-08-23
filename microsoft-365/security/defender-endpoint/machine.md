@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5afc965ab72ccdf062826a4157c6949f9a83fd165feb5b31f72dd67fda4e9e93
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f56544ee8447c1bd0db5e493193357a50a1b1904
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839581"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372546"
 ---
 # <a name="machine-resource-type"></a>コンピューター リソースの種類
 
@@ -41,7 +41,7 @@ ms.locfileid: "53839581"
 
 ## <a name="methods"></a>メソッド
 
-メソッド|戻り値の型 |Description
+メソッド|戻り値の型 |説明
 :---|:---|:---
 [マシンの一覧表示](get-machines.md) | [machine](machine.md) コレクション | 組織のコンピューター [エンティティ](machine.md) のセットを一覧表示します。
 [コンピューターの取得](get-machine-by-id.md) | [コンピューター](machine.md) | コンピューターの [ID を](machine.md) 使用してコンピューターを取得します。
@@ -59,7 +59,7 @@ ms.locfileid: "53839581"
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ |   種類   |   説明
+プロパティ |   型   |   説明
 :---|:---|:---
 id | String | [マシン](machine.md) ID。
 computerDnsName | String | [コンピューター](machine.md) の完全修飾名。
@@ -73,8 +73,8 @@ lastIpAddress | String | コンピューター上のローカル NIC の最後�
 lastExternalIpAddress | String | コンピューターがインターネットに [アクセスした](machine.md) 最後の IP。
 healthStatus | 列挙 | [マシンの](machine.md) 正常性状態。 指定できる値は、"Active"、"Inactive"、"ImpairedCommunication"、"NoSensorData"、"NoSensorDataImpairedCommunication"、"Unknown" です。 
 rbacGroupName | String | コンピューター グループ名。
+rbacGroupId | String | コンピューター グループ ID。
 riskScore | Null 許容列挙 | Microsoft Defender for Endpoint によって評価されるリスク スコア。 指定できる値は、'None'、'Informational'、'Low'、'Medium'、および 'High' です。
-exposureScore | Null 許容列挙 | [Microsoft](tvm-exposure-score.md) Defender for Endpoint によって評価される露出スコア。 指定できる値は、'None'、'Low'、'Medium'、および 'High' です。
 aadDeviceId | Null 許容表現 Guid | AAD デバイス ID ( [コンピューターが](machine.md) AAD 参加している場合)。
 machineTags | String コレクション | コンピューター タグ [の](machine.md) セット。
 exposureLevel | Null 許容列挙 | Microsoft Defender for Endpoint によって評価される露出レベル。 指定できる値は、'None'、'Low'、'Medium'、および 'High' です。

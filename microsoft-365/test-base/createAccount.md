@@ -14,16 +14,16 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 8c31ed87e8662d8e0b2bdc6321f980621a7c08d7c32fa4f7b0c7d6fc285042c9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fb639139e083ed613dea018131e7748cd063e37c
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888318"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372531"
 ---
 # <a name="step-1-create-a-test-base-account"></a>手順 1: テストベース アカウントを作成する
 
-Azure サブスクリプションをお持ちでない場合は、開始する前に [無料アカウント](https://azure.microsoft.com/en-us/free/) を作成してください。
+Azure サブスクリプションをお持ちでない場合は、開始する前に [無料アカウント](https://azure.microsoft.com/free/) を作成してください。
 
 ## <a name="enter-details-for-test-base-account"></a>テストベース アカウントの詳細を入力する
  

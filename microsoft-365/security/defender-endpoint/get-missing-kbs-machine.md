@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 30428565f082610c64c65da88fad614ef755e557fa56b0fc278cc62bf9d88c26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b2305472f19ac0424861a30034c2fdd45bd753c
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829317"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399733"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>デバイス ID で不足している KB を取得する
 
@@ -42,10 +42,17 @@ ms.locfileid: "53829317"
 ```http
 GET /api/machines/{machineId}/getmissingkbs
 ```
+## <a name="permissions"></a>アクセス許可
+
+この API を呼び出すには、次のアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください](apis-intro.md)。
+
+アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
+:---|:---|:---
+アプリケーション | Software.Read.All | '脅威と脆弱性管理ソフトウェア情報の読み取り'
 
 ## <a name="request-header"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 
@@ -87,13 +94,12 @@ GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93
             "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4540673",
             "machineMissedOn": 1,
             "cveAddressed": 97
-        },
-         ...
+        }
         ]
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

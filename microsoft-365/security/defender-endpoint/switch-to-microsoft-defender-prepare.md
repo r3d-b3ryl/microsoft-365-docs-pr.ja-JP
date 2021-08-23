@@ -1,7 +1,7 @@
 ---
 title: エンドポイント用 Microsoft Defender への切り替え - 準備
-description: これは、Microsoft Defender for Endpoint に移行するフェーズ 1 の準備です。
-keywords: 移行, Microsoft Defender for Endpoint, edr
+description: Microsoft Defender for Endpoint に切り替える準備をします。 デバイスを更新し、ネットワーク接続を構成します。
+keywords: 移行、Microsoft Defender for Endpoint、ベスト プラクティス
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 08/11/2021
+ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: a9202cf5da326bd573e85459591f408b04ddad03
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 491f7bd7f45317ca6a910752c2175cfe449bfb14
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257732"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372702"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>エンドポイント用 Microsoft Defender に切り替える - フェーズ 1: 準備
 
@@ -57,7 +57,7 @@ ms.locfileid: "58257732"
 
 既存のエンドポイント保護ソリューションを最新の状態に保ち、組織のデバイスに最新のセキュリティ更新プログラムが含まれています。 
 
-お困りの際は、 ソリューション プロバイダーのドキュメントを参照してください。
+サポートが必要な場合 ソリューション プロバイダーのドキュメントを参照してください。
 
 ### <a name="make-sure-your-organizations-devices-are-up-to-date"></a>組織のデバイスが最新の情報を提供する
 

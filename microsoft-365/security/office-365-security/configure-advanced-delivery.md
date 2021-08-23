@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきではないメッセージを識別する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1bfde7c5d4decd57586f243c4eafefce8917ac4f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: fa92adbcca8f01f878649081472ef600075a06d3
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247913"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58386974"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -129,7 +129,7 @@ ms.locfileid: "58247913"
 
 高度な配信ポリシーが役立つ 2 つのシナリオに加えて、フィルター処理をバイパスする必要がある他のシナリオがあります。
 
-- **サード パーティ製フィルター**: ドメインの MXレコードが Office 365 を指していない場合 (メッセージは最初にどこか別の [](secure-by-default.md)場所にルーティングされます)、既定ではセキュリティで保護 *されません。* 保護を追加する場合は、コネクタの拡張フィルター (スキップ リストとも呼ばれる) を有効にする *必要があります*。 詳細については、「サードパーティのクラウド サービスを使用してメール フローを管理する」を参照[Exchange Online。](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud) コネクタの拡張フィルター処理が不要な場合は、メール フロー ルール (トランスポート ルールとも呼ばれる) を使用して、サード パーティのフィルター処理によって既に評価されているメッセージに対して Microsoft フィルターをバイパスします。 詳細については、「メール フロー ルール [を使用してメッセージの SCL を設定する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)。
+- **サード パーティ製フィルター**: ドメインの MXレコードが Office 365 を指していない場合 (メッセージは最初にどこか別の [](secure-by-default.md)場所にルーティングされます)、既定ではセキュリティで保護 *されません。* 保護を追加する場合は、コネクタの拡張フィルター (スキップ リストとも呼ばれる) を有効にする *必要があります*。 詳細については、「サードパーティのクラウド サービスを使用してメール フローを管理する」を参照[Exchange Online。](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud) コネクタの拡張フィルター処理を使用しない場合は、メール フロー ルール (トランスポート ルールとも呼ばれる) を使用して、サード パーティ製のフィルター処理によって既に評価されているメッセージに対して Microsoft のフィルター処理をバイパスします。 詳細については、「メール フロー ルール [を使用してメッセージの SCL を設定する」を参照してください](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)。
 
 - **レビュー中** の誤検知 : 管理者の申請を通じて Microsoft によって分析中の特定の [](admin-submission.md)メッセージを一時的に許可して、Microsoft に不適切とマークされている既知の良いメッセージ (誤検知) を報告することができます。 すべての上書きと同様に、これらの許容量 **_は_** 一時的なものとすることを強くお勧めします。
 
@@ -346,7 +346,7 @@ Get-PhishSimOverrideRule
 Get-PhishSimOverrideRule | Format-Table Name,Mode
 ```
 
-無効なルールを特定した後、この記事で後述するように **Remove-PhisSimOverrideRule** コマンドレットを使用して削除 [できます](#use-powershell-to-remove-phishing-simulation-override-rules)。
+無効なルールを特定した後、この記事で後述するように **Remove-PhishSimOverrideRule** コマンドレットを使用して削除 [できます](#use-powershell-to-remove-phishing-simulation-override-rules)。
 
 構文とパラメーターの詳細については [、「Get-PhishSimOverrideRule」を参照してください](/powershell/module/exchange/get-phishsimoverriderule)。
 
@@ -365,6 +365,23 @@ Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
 ```
 
 構文とパラメーターの詳細については [、「Set-PhishSimOverridePolicy」を参照してください](/powershell/module/exchange/set-phishsimoverridepolicy)。
+
+### <a name="use-powershell-to-modify-the-simulation-url-settings"></a>PowerShell を使用してシミュレーション URL の設定を変更する
+
+フィッシング シミュレーションオーバーライド ポリシーを変更するには、次の構文を使用します。
+
+```powershell
+New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "<url>"
+```
+URL 構文の形式については、「テナント許可/ブロック一覧」の URL 構文 [を参照してください](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)。
+
+次の使用例は、サブドメインのシミュレーション URL を追加 contoso.com。
+
+```powershell
+New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "*.contoso.com"
+```
+
+構文とパラメーターの詳細については [、「New-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/new-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-modify-a-phishing-simulation-override-rule"></a>PowerShell を使用してフィッシング シミュレーションオーバーライド ルールを変更する
 

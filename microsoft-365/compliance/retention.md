@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 1895e8a4b60a8c51e35d2b44c34a7fdcb8e0ac47
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 2adc733247ddfe9570b02c197e18b02bcf500921
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354382"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387046"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -198,7 +198,7 @@ SharePoint のドキュメントのデータ損失防止 (DLP) ポリシーの�
    
 Exchange で自動で付けることができる保持ラベルは、新しく送信されたメッセージ (送信中のデータ) にのみ適用され、現在メールボックスにあるすべてのアイテム (保存データ) には適用されません。また、機密情報の種類やトレーニング可能な分類子向けの自動適用の保持ラベルは、すべてのメールボックスにのみ適用されます。特定のメールボックスを選択することはできません。
   
-Exchange パブリックフォルダー、Skype、Teams、Yammer メッセージは保持ラベルをサポートしていません。 これらの場所のコンテンツを保持または削除するには、代わりにアイテム保持ポリシーを使用します。
+Exchange パブリックフォルダー、Skype、Teams、Yammer メッセージは保持ラベルをサポートしていません。 これらの場所のコンテンツを保持または削除するには、代わりにデータ保持ポリシーを使用します。
 
 #### <a name="only-one-retention-label-at-a-time"></a>一度に 1 つの保持ラベルのみ
 
@@ -248,7 +248,7 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
 |機能|アイテム保持ポリシー |保持ラベル|
 |:-----|:-----|:-----|:-----|
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
-|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
+|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> 必要 <br /> いいえ <br /> いいえ <br /> いいえ |
 |保持の自動適用 | はい | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリとキーワード、トレーニング可能な分類子| いいえ | はい |
 |保持の手動適用 | いいえ | はい |
@@ -513,7 +513,7 @@ Microsoft 365 コンプライアンス センターから、[**データ分類**
     
 - [インプレース レコード管理の構成](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (保持のみ) 
     
-- [サイトのクローズと削除のポリシーを使用する](https://support.microsoft.com/ja-JP/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (削除のみ)
+- [サイトのクローズと削除のポリシーを使用する](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (削除のみ)
     
 - [情報管理ポリシー](intro-to-info-mgmt-policies.md) (削除のみ)
      

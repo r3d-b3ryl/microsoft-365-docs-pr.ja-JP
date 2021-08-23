@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 738a5ae02cba8078b583b138b4e9dfa8733433f07feb69bce96b663a068aaa4e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5e1d402442b2e8fe01b55cf3d3e07858d9d592dd
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853828"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399745"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 
@@ -49,14 +49,12 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 
 これらの要件を満Windows 10プリンター保護を展開する予定のデバイスがインストールされている必要があります。
 
-1. Insider プログラムに参加します。
-
 1. 次の Windows Update がインストールされています。
     - 1809 Windows: 更新プログラム[KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46) Windowsインストールする
     - 1909 Windows: 更新プログラム[KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1) Windowsインストールする
     - 2004 Windows以降の場合
 
-1. グループ ポリシーを使用してポリシーを展開する予定の場合、デバイスは MDATP に参加している必要があります。MEM 経由でポリシーを展開する場合は、デバイスが Intune に参加している必要があります。
+2. グループ ポリシーを使用してポリシーを展開する予定の場合、デバイスは Microsoft Defender for Endpoint に参加している必要があります。ポリシーを展開する予定の場合は、Microsoft エンドポイント マネージャーを使用してデバイスを参加Microsoft Intune。
 
 ## <a name="deploy-device-control-printer-protection-policy"></a>デバイスコントロールプリンター保護ポリシーの展開
 
@@ -66,10 +64,10 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 
 ****
 
-|タイトル|Description|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
+|役職|説明|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
 |---|---|:---:|:---:|:---:|:---:|
-|**デバイスコントロールの印刷制限を有効にする**|企業以外のプリンターを使用してユーザーの印刷をブロックする|はい|はい|はい|はい|
-|**承認済みの USB 接続印刷デバイスの一覧**\*|特定の USB プリンターを許可する|はい|はい|はい|はい|
+|**デバイスコントロールの印刷制限を有効にする**|企業以外のプリンターを使用してユーザーの印刷をブロックする|はい|はい|はい|必要|
+|**承認済みの USB 接続印刷デバイスの一覧**\*|特定の USB プリンターを許可する|はい|はい|はい|必要|
 |
 
 \* このポリシーは、[デバイスコントロールの印刷制限を **有効にする] と一緒に使用する必要があります**。

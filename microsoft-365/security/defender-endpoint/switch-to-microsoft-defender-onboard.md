@@ -1,6 +1,6 @@
 ---
 title: エンドポイント用 Microsoft Defender に切り替える - オンボード
-description: これは、Microsoft 以外のソリューションから Microsoft Defender for Endpoint に移行するフェーズ 3 オンボードです。
+description: Microsoft Defender for Endpoint に切り替えます。 デバイスをオンボードし、Microsoft 以外のソリューションをアンインストールします。
 keywords: 移行, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 08/12/2021
+ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 4a3ab70906b7fd01a2687afc7022f11a5451dc17
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 07dd668f64c2b2e866ff598f6d4c9e259cc56815
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255489"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372474"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>エンドポイント向け Microsoft Defender への切り替え - フェーズ 3: オンボード
 
@@ -58,7 +58,7 @@ ms.locfileid: "58255489"
 
 3. [オンボード **プロセスを開始するオペレーティング システムの選択] ボックスの一覧で** 、オペレーティング システムを選択します。 
 
-4. [ **展開方法] で**、オプションを選択します。 リンクとプロンプトに従って、組織のデバイスをオンボードします。 お困りの際は、 [「Onboarding メソッド (この](#onboarding-methods)記事)」を参照してください。
+4. [ **展開方法] で**、オプションを選択します。 リンクとプロンプトに従って、組織のデバイスをオンボードします。 サポートが必要な場合 [「Onboarding メソッド (この](#onboarding-methods)記事)」を参照してください。
 
 > [!NOTE]
 > オンボーディング中に問題が発生した場合は、「Microsoft Defender for Endpoint オンボーディングの問題のトラブルシューティング [」を参照してください](troubleshoot-onboarding.md)。 この記事では、オンボーディングの問題とエンドポイントの一般的なエラーを解決する方法について説明します。
@@ -141,9 +141,9 @@ Microsoft Defender ウイルス対策モードで実行されている場合で�
 - 組織のデバイスを Defender for Endpoint にオンボードし、 
 - Microsoft Defender ウイルス対策がインストールされ、有効になっている場合 
 
-次に、Microsoft 以外のエンドポイント保護ソリューションをアンインストールします。 
+次に、Microsoft 以外のウイルス対策、マルウェア対策、エンドポイント保護ソリューションをアンインストールします。 Microsoft 以外のソリューションをアンインストールすると、Microsoft Defender ウイルス対策モードからアクティブ モードに切り替わります。 ほとんどの場合、これは自動的に行われます。
 
-このタスクのヘルプを表示するには、ソリューション プロバイダーのテクニカル サポート チームに問い合わせください。
+Microsoft 以外のソリューションのアンインストールに関するヘルプを入手するには、テクニカル サポート チームにお問い合わせください。 
 
 ## <a name="make-sure-defender-for-endpoint-is-working-correctly"></a>Defender for Endpoint が正しく動作するようにする
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 769ccb8f50a6eb407d5a1a338f91af0bfd8ae401
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c65fcb93740f975c34534e1af244dcca20ce043c
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246214"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387130"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage アクセス制御
 
@@ -40,10 +40,10 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 |:---|:---|
 | Access | 読み取り、書き込み、実行 |
 | アクション モード | 監査、許可、防止 |
-| CSP サポート | はい |
-| GPO サポート | はい |
-| ユーザー ベースのサポート | はい |
-| コンピューター ベースのサポート | はい |
+| CSP サポート | 必要 |
+| GPO サポート | 必要 |
+| ユーザー ベースのサポート | 必要 |
+| コンピューター ベースのサポート | 必要 |
 
 ## <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
@@ -51,7 +51,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 
 - **4.18.2104** 以降: SerialNumberId の追加、VID_PID、ファイルパス ベースの GPO のサポート、ComputerSid
 - **4.18.2105** 以降 : HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId のワイルドカード サポートの追加、特定のコンピューター上の特定のユーザーの組み合わせ、削除可能な SSD (SanDisk Extreme SSD)/USB Attached SCSI (UAS) のサポート
-- **4.18.2107** 以降 : ポータブル Windows (WPD) のサポートを追加する (タブレットなどのモバイル デバイスの場合)
+- **4.18.2107** 以降: ポータブル デバイス (WPD) Windows (タブレットなどのモバイル デバイス) のサポートを追加します。高度な検索に AccountName [を追加する](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
 :::image type="content" source="images/powershell.png" alt-text="PowerShell インターフェイス":::
 
@@ -78,7 +78,7 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storageアク�
 |IncludedIdList     | ポリシーが適用されるグループ。 複数のグループが追加されている場合、ポリシーは、すべてのグループ内の任意のメディアに適用されます。        |    このインスタンスでは、グループ ID/GUID を使用する必要があります。 </br> 次の例は、GroupID の使用法を示しています。 </br> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`    |
 |ExcludedIDList     | ポリシーが適用されないグループ。        |    このインスタンスでは、グループ ID/GUID を使用する必要があります。     |
 |エントリ ID     |  1 つの PolicyRule には複数のエントリを指定できます。一意の GUID を持つ各エントリは、デバイスコントロールに 1 つの制限を指示します。       |         |
-|種類|IncludedIDList のリムーバブル 記憶域グループのアクションを定義します。 </br>- 適用: 許可または拒否 </br>- 監査: AuditAllowed または AuditDenied|- 許可する </br>- 拒否</br> - AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します</br>- AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。 </br></br> 同じメディアに対して競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として、[許可] と **[拒否]** **があります**。|
+|型|IncludedIDList のリムーバブル 記憶域グループのアクションを定義します。 </br>- 適用: 許可または拒否 </br>- 監査: AuditAllowed または AuditDenied|- 許可する </br>- 拒否</br> - AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します</br>- AuditDenied: アクセスが拒否された場合の通知とイベントを定義します。は、Deny エントリと共 **に動作する必要** があります。 </br></br> 同じメディアに対して競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として、[許可] と **[拒否]** **があります**。|
 |Sid|ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のユーザー またはユーザー グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの Sid を含め、Sid を使用しないエントリは、コンピューター上にポリシーを適用する方法を意味します。||
 |ComputerSid|ローカル コンピューター Sid または AD オブジェクトの Sid は、このポリシーを特定のコンピューターまたはコンピューター グループに適用するかどうかを定義します。1 つのエントリには最大 1 つの ComputerSid を指定し、ComputerSid を使用しないエントリはコンピューター上にポリシーを適用します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。||
 |オプション|通知を表示するかどうかを定義します。|**0-4**: [許可] または [拒否] の種類が選択されている場合。</br></br>0: 何も</br>4: この **エントリに対して AuditAllowed** と **AuditDenied を** 無効にします。 ブロックが **発生** し、AuditDenied が構成されている場合でも、システムは通知を表示されません。 </br> </br>Type **AuditAllowed または** **AuditDenied が** 選択されている場合:</br>0: 何も</br>1: 通知を表示する</br>2: 送信イベント</br>3: 通知を表示し、イベントを送信する|
@@ -91,7 +91,7 @@ Microsoft Defender for Endpoint Removable Storageアクセス制御について�
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>シナリオ 1: すべてのユーザーへの書き込みおよび実行アクセスを防止するが、特定の承認済み USB を許可する
 
-1. グループを作成
+1. グループを作成する
     1. グループ 1: リムーバブル 記憶域と CD/DVD。 リムーバブル ストレージと CD/DVD の例として、グループ **9b28fae8-72f7-4267-a1a5-685f747a7146** のサンプル (Any Removable Storage および [CD-DVD Group.xmlファイル](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)) があります。
     2. グループ 2: デバイスのプロパティに基づく承認済み USB。 この使用例の例は、サンプル承認済み [USB Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ファイルのインスタンス ID - グループ **65fa649a-a111-4912-9294-fb6337a25038** です。
 
@@ -104,7 +104,7 @@ Microsoft Defender for Endpoint Removable Storageアクセス制御について�
 
 ### <a name="scenario-2-audit-write-and-execute-access-to-all-but-block-specific-unapproved-usbs"></a>シナリオ 2: 特定の承認されていない USB をブロックするを含むすべてのユーザーへの書き込みおよび実行アクセスを監査する
 
-1. グループを作成
+1. グループを作成する
     1. グループ 1: リムーバブル 記憶域と CD/DVD。 この使用例の例は、サンプル Any Removable Storage および [CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ファイルのグループ **9b28fae8-72f7-4267-a1a5-685f747a7146** です。
     2. グループ 2: サンプルの未承認の USB Group.xmlファイルのデバイス プロパティに基づく未承認 [の USB(](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)ベンダー ID/製品 ID、フレンドリー名 – グループ **65fa649a-a111-4912-9294-fb6337a25038** など)。
 
@@ -161,7 +161,7 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
 
 - ポリシーとプロファイル マネージャーの役割
 - デバイス構成プロファイルに対してレポートの作成/編集/更新/読み取り/削除/表示権限を有効にしたカスタム ロール
-- グローバル管理者
+- 全体管理者
 
 ### <a name="deploying-policy-via-oma-uri"></a>OMA-URI によるポリシーの展開
 
@@ -204,7 +204,7 @@ Intune でのポリシーの展開では、デバイス構成プロファイル�
 ```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
-| where ActionType == &quot;RemovableStoragePolicyTriggered&quot;
+| where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
 | extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess) 
 | extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict) 
@@ -218,8 +218,7 @@ DeviceEvents
 | extend MediaProductId = tostring(parsed.ProductId) 
 | extend MediaVendorId = tostring(parsed.VendorId) 
 | extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| extend MediaVolume = tostring(parsed.Volume) 
-| project Timestamp, DeviceId, DeviceName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, MediaVolume
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
 | order by Timestamp desc
 ```
 

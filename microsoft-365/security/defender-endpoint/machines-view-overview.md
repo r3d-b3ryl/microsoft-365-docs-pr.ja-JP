@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4cf27d7d65df613969f46f05c6b5085a448675f2cae3a325f4308d9f72ba8c4c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c6a148c6ee332800a80e0ca9f3aea8403d2053b
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868010"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58360035"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストの表示と整理
 
@@ -56,6 +56,14 @@ ms.locfileid: "53868010"
 
 次のフィルターを適用して、アラートの一覧を制限し、より集中したビューを取得できます。
 
+### <a name="device-name"></a>デバイス名
+
+調査するデバイスの名前を選択します。
+
+### <a name="domain"></a>ドメイン
+
+調査するドメインを選択します。
+
 ### <a name="risk-level"></a>リスク レベル
 
 リスク レベルは、デバイス上のアクティブなアラートの種類と重大度などの要因の組み合わせに基づいて、デバイスの全体的なリスク評価を反映します。 アクティブなアラートを解決し、修復アクティビティを承認し、後続のアラートを抑制すると、リスク レベルが低下する可能性があります。
@@ -66,50 +74,54 @@ ms.locfileid: "53868010"
 
 露出レベルに 「データが使用できない」と表示される場合は、次の理由が考えられません。
 
-- デバイスが 30 日間以上レポートを停止しました。 その場合は非アクティブと見なされ、露出は計算されません
-- デバイス OS はサポートされていません - Microsoft Defender for Endpoint の最小 [要件を参照してください。](minimum-requirements.md)
-- 古いエージェントを持つデバイス (非常に可能性が低い)
+- デバイスが 30 日間以上レポートを停止しました。 その場合、非アクティブと見なされ、露出は計算されません。
+- デバイス OS はサポートされていません - Microsoft Defender for Endpoint の [最小要件を参照してください](minimum-requirements.md)。
+- 古いエージェントを持つデバイス (可能性は低い)。
 
 ### <a name="os-platform"></a>OS プラットフォーム
 
 調査する OS プラットフォームのみを選択します。
+
+### <a name="windows-10-versions"></a>Windows 10バージョン
+
+調査するWindows 10バージョンのみを選択します。
 
 ### <a name="health-state"></a>正常性の状態
 
 次のデバイスの正常性状態でフィルター処理します。
 
 - **Active**: センサー データをサービスにアクティブに報告しているデバイス。
-- **非** アクティブ : 7 日間以上、信号の送信を完全に停止したデバイス。
+- **非** アクティブ: 7 日間以上信号の送信を停止したデバイス。
 - **正しく構成されていない**: サービスとの通信に障害が生じ、センサー データを送信できないデバイス。 構成が正しく設定されていないデバイスは、さらに次のように分類できます。
   - センサー データなし
   - 通信障害
 
   構成が正しく設定されていないデバイスの問題に対処する方法の詳細については、「異常なセンサーを修正する」 [を参照してください](fix-unhealthy-sensors.md)。
 
-### <a name="antivirus-status"></a>ウイルス対策の状態
+### <a name="onboarding-status"></a>オンボーディングの状態
 
-ウイルス対策の状態でデバイスをフィルター処理します。 アクティブなデバイスにのみWindows 10適用されます。
+オンボード状態は、デバイスが現在 Microsoft Defender for Endpoint にオンボードされているかどうかを示します。 次の状態でフィルター処理できます。
 
-- **無効** - ウイルス&保護がオフになっています。
-- **[報告しない** ] - ウイルス&保護が報告されていない場合。
-- **[更新されません** ] - ウイルス&保護が最新ではない場合。
+- **オンボード:** エンドポイントは Microsoft Defender for Endpoint にオンボードされます。
 
-詳細については、「脅威と [脆弱性管理ダッシュボード&を参照してください](tvm-dashboard-insights.md)。
+- **オンボード可能:** エンドポイントは、サポートされているデバイスとしてネットワークで検出されましたが、現在オンボードされていません。 Microsoft では、これらのデバイスのオンボーディングを強くお勧めします。
 
-### <a name="threat-mitigation-status"></a>脅威の軽減の状態
+- **サポートされていません**: エンドポイントはネットワークで検出されましたが、Microsoft Defender for Endpoint ではサポートされていません。
 
-特定の脅威の影響を受ける可能性のあるデバイスを表示するには、ドロップダウン メニューから脅威を選択し、軽減する必要がある脆弱性の側面を選択します。
+- **不十分** な情報: システムがデバイスのサポート性を判断できなかった。
 
-特定の脅威の詳細については、「Threat [analytics」を参照してください](threat-analytics.md)。 軽減策の詳細については [、「Threat &脆弱性管理」を参照してください](next-gen-threat-and-vuln-mgt.md)。
+### <a name="last-device-update"></a>最後のデバイス更新
 
-### <a name="windows-10-version"></a>Windows 10 バージョン
+デバイスが最後に更新された時間に基づいてビューをフィルター処理します。
 
-調査するWindows 10バージョンのみを選択します。
+### <a name="first-seen"></a>最初に見た
 
-### <a name="tags--groups"></a>タグ & グループ
+デバイスがネットワークで最初に見られたか、Microsoft Defender for Endpoint センサーによって最初に報告された場合に基づいて、ビューをフィルター処理します。
 
-個々のデバイスに追加したグループ化とタグ付けに基づいてリストをフィルター処理します。 「デバイス [タグの作成と管理」および「](machine-tags.md) デバイス [グループの作成と管理」を参照してください](machine-groups.md)。
+### <a name="tags"></a>タグ
 
-## <a name="related-topics"></a>関連トピック
+個々のデバイスに追加したグループ化とタグ付けに基づいてリストをフィルター処理します。 「デバイス [タグの作成と管理」を参照してください](machine-tags.md)。
+
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint Devices リストのデバイスを調査する](investigate-machines.md)

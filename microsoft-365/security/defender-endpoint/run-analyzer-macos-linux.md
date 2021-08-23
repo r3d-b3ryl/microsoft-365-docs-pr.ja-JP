@@ -1,5 +1,5 @@
 ---
-title: macOS または Linux でクライアント アナライザーを実行する
+title: macOS または Linux でのクライアント アナライザーの実行
 description: macOS または Linux で Microsoft Defender for Endpoint Client Analyzer を実行する方法について説明します。
 keywords: クライアント アナライザー、センサー、アナライザー、mdeanalyzer、macos、Linux、mdeanalyzer のトラブルシューティング
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6008e59abadc179f8e6580d56007ea88b9415ab5
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 51f85d57a7d05ed298b94632ab35cf215d5679b2
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254847"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58359975"
 ---
 #  <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS および Linux でクライアント アナライザーを実行する
 
@@ -61,7 +61,7 @@ Linux では、スクリプトに実行するアクセス許可が付与され�
 
 > [!NOTE]  
 > Linux の場合、アナライザーは結果出力を生成するために 'lxml' を必要とします。 インストールされていない場合、アナライザーは以下の Python パッケージの公式リポジトリから取得します。  
-https://files.pythonhosted.org/packages/\*/lxml \* .whl
+https://files.pythonhosted.org/packages/\*/lxml .whl また、現在、ツールのインストールには \* Python バージョン 3 以降が必要です。
 
 例:  
 

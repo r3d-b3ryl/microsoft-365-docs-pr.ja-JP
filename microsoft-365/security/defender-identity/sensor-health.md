@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 0c2d8fd75b33903696682e6fd196ef4ce12ab2ca101cfe32e23fbce0614dd8a5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2052652e1ded79d8605c5b5f84b82d8c6504fd9
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844536"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58360141"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender for Identity sensor health and settings in <DICT__Microsoft⚐365⚐Defender>Microsoft 365 Defender</DICT__Microsoft⚐365⚐Defender>
 
@@ -84,28 +84,6 @@ ms.locfileid: "53844536"
 1. Access キー **をコピーします**。 Defender for Identity センサーが Defender for Identity インスタンスに接続するには、アクセス キーが必要です。 アクセス キーは、センサーを展開する 1 回のパスワードであり、その後、認証と TLS 暗号化の証明書を使用してすべての通信が実行されます。 新しい **アクセス キーを再** 生成する必要がある場合は、[キーの再生成] ボタンを使用します。 以前に展開されたセンサーには影響を与えないので、センサーの初期登録にのみ使用されます。
 
 1. Defender for Identity センサーをインストールする専用サーバーまたはドメイン コントローラーにパッケージをコピーします。
-
-## <a name="configure-directory-services-account"></a>ディレクトリ サービス アカウントの構成
-
-センサーを Active Directory ドメインに接続するには、Directory Services アカウントを構成する必要があります。
-
-1. [[Microsoft 365 Defender]](https://security.microsoft.com/)で、[id]**設定** に **移動します**。
-
-    ![[ID] 設定に移動します。](../../media/defender-identity/settings-identities.png)
-
-1. [ **ディレクトリ サービス アカウント] を選択します**。 どのドメインに関連付けられているアカウントが表示されます。
-
-    ![ディレクトリ サービス アカウント](../../media/defender-identity/directory-service-accounts.png)
-
-1. アカウントを選択すると、そのアカウントの設定でウィンドウが開きます。
-
-    ![アカウント設定](../../media/defender-identity/account-settings.png)
-
-1. 新しい Directory Services アカウントを追加するには、[新しいアカウントの作成]**を選択し**、[アカウント名] 、[ドメイン]、および [**パスワード**] を **入力します**。 グループ管理サービス アカウント (gMSA) の場合と、単一ラベル ドメインに属している場合も **選択できます**。
-
-    ![新しいディレクトリ サービス アカウント](../../media/defender-identity/new-directory-service-account.png)
-
-1. **[保存]** を選択します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS レコードが正しく設定されていることを確認して、カスタム ドメインのセットアップ中に発生した問題を追跡する方法について説明します。
-ms.openlocfilehash: 035d5855b539efe772254fe195a99c3fb2a855d4c592e8f085e866ab4d196b22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5dd84e829ed1cd8ea1cc9738ac88eaabcba52648
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825789"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450096"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>ドメインまたは DNS レコードを追加後に問題を特定して解決する
 
@@ -56,7 +56,6 @@ ms.locfileid: "53825789"
 - [Web サイトへのアクセスが機能していませんか?](#accessing-your-website-isnt-working)
 
 ## <a name="cant-verify-your-domain"></a>ドメインを確認できませんか?
-<a name="BKMK_verify"> </a>
 
 ドメイン検証が機能しない現象には共通の原因があることが確認されています。
   
@@ -67,7 +66,6 @@ ms.locfileid: "53825789"
 3. **レコードがインターネット上で更新されません。** 通常、ユーザーへの新しいレコードの表示には数分しかかかりませんが、場合によっては、数時間かかることもあります。 
     
 ## <a name="outlook-isnt-working"></a>Outlook が機能していませんか?
-<a name="BKMK_OutlookBroken"> </a>
 
 ドメインに MX レコードとその他の DNS レコードを正しく設定しているが、メールが機能しない場合、弊社が [Outlook 問題の解消](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)を支援します。
   
@@ -86,7 +84,6 @@ ms.locfileid: "53825789"
 「Microsoft 365 ドメインを確認して所有権、非営利団体、または教育の状態を証明する、または[Yammer](../setup/domains-faq.yml)をアクティブ化する」のガイダンスを参照して、必要なすべての手順を完了してください。 状況ごとに少し異なります。 
   
 ## <a name="services-not-working-with-your-domain"></a>自分のドメインでサービスが機能しませんか?
-<a name="BKMK_Test"> </a>
 
 Microsoft では、ドメインの DNS セットアップに関わる問題を解消するためのサポートを用意しています。 [ドメインのトラブルシューティング] Microsoft 365、修正が必要なレコードと、レコードを設定する必要があるレコードが正確に表示されます。 
 
@@ -94,11 +91,10 @@ Microsoft では、ドメインの DNS セットアップに関わる問題を�
 > DNS が正しく設定されましたが、メールはデスクトップ上のOutlook機能しませんか? ビジネス向[けに適切な](/exchange/mail-flow-best-practices/mail-flow-best-practices)設定がMicrosoft 365メール フローのシナリオを確認してください。 または、電子メールに関するトラブルシューティングのヘルプの詳細については、以下を参照してください。[問題Outlook修正します](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)。 
   
 ## <a name="accessing-your-website-isnt-working"></a>自分の Web サイトにアクセスできませんか?
-<a name="BKMK_Website"> </a>
 
 DNS の問題を解決しても、引き続き問題が発生する場合は、次のいずれかを試してください。
   
-- 他のユーザーが Web サイト (www.mydomain.com) にアクセスできない場合: [Web サイトの問題を特定する](../setup/add-domain.md)
+- ユーザーが Web サイトにアクセスできない *場合:contoso.com* の問題 [を追跡する](../setup/add-domain.md)
     
 - Web サイトを指す A レコードまたは CNAME レコードを更新[Microsoft 365](../setup/add-domain.md)
 

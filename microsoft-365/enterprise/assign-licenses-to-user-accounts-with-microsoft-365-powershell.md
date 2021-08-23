@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: この記事では、PowerShell を使用してライセンスのないユーザーにライセンス Microsoft 365割り当てる方法について説明します。
-ms.openlocfilehash: 08aab95c0d864437210de557bd48b9bb0a0ee3e2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 2af81099b2771c69b642308fb50500b358d64780
+ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356038"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58417965"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>PowerShell Microsoft 365アカウントにライセンスを割り当てる
 
@@ -192,10 +192,6 @@ $subscriptionTo="<SKU part number of the new subscription>"
 # Unassign
 $license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
-$licenses.AddLicenses = $license
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
-$licenses.AddLicenses = @()
 $licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 # Assign
