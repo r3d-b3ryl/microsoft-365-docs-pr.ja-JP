@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminTemplateSet
+ms.custom:
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: メッセージ センターの投稿は英語のみですが、ユーザーが指定した言語で自動的に表示Microsoft 365。
-ms.openlocfilehash: 7256fe69fb010ce2c3bf77c99de91a4ee42285a7
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 84d88c507b16e81fd63f28261cc27be4883584c3
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346810"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394254"
 ---
 # <a name="language-translation-for-message-center-posts"></a>メッセージ センターの投稿の言語の翻訳
 

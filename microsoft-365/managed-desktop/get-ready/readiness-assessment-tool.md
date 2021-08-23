@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 7138933c1ef3b849374cda16f5072f408877dd66910808c0ce771fcd2c317d0c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc06faa8a5a18f8f63a984e6ce3f7b6bfb6cbc4b
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869857"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364951"
 ---
 # <a name="readiness-assessment-tools"></a>準備状況評価ツール
 
@@ -35,7 +35,7 @@ Microsoft マネージド デスクトップ に登録する際に最もスム�
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune設定
 
-|小切手  |Description  |
+|小切手  |説明  |
 |---------|---------|
 |自動パイロット展開プロファイル     | Autopilot 展開プロファイルの割り当てがすべてのデバイスに適用されないMicrosoft マネージド デスクトップします。        |
 |証明書コネクタ     | 証明書コネクタの状態をチェックして、アクティブな状態を確認します。   |
@@ -57,7 +57,7 @@ Microsoft マネージド デスクトップ に登録する際に最もスム�
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory設定
 
-|小切手  |Description  |
+|小切手  |説明  |
 |---------|---------|
 |"アドホック" サブスクリプションによる Enterpriseローミング     | ("false" に設定されている場合) 状態ローミングが正しく動作しない可能性があるEnterpriseを確認する方法について説明します。  |
 |Enterprise State Roaming     | 状態ローミングが有効になっているEnterprise確認する方法について説明します。       |
@@ -72,7 +72,7 @@ Microsoft マネージド デスクトップ に登録する際に最もスム�
 
 ## <a name="microsoft-365-apps-for-enterprise-settings"></a>Microsoft 365 Apps for enterprise設定
 
-|小切手  |Description  |
+|小切手  |説明  |
 |---------|---------|
 |OneDrive for Business     | サポートされていない設定OneDrive for Business使用するかどうかを確認します。        |
 
@@ -91,14 +91,16 @@ Microsoft マネージド デスクトップ に登録する際に最もスム�
 
 アプリへの登録が完了したらMicrosoft マネージド デスクトップ、Intune と Azure の特定の設定に戻ってADしてください。 詳細については、「登録後に [設定を調整する」を参照してください](../get-started/conditional-access.md)。
 
-## <a name="steps-to-get-ready"></a>準備の手順
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>インストールの準備を行うMicrosoft マネージド デスクトップ
 
 1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
-2. [準備状況の評価ツール](readiness-assessment-tool.md)を使用します。 (この記事)
-3. [ゲスト アカウントの前提条件](guest-accounts.md)
-4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
-5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
-6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
-7. [Microsoft マネージド デスクトップのアプリ](apps.md)
-8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
-9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)
+2. 準備状況評価ツールを実行します (この記事)。
+1. 購入[ポータル サイト](../get-started/company-portal.md).
+1. ゲスト [アカウントの前提条件を確認します](guest-accounts.md)。
+1. ネットワーク [構成を確認します](network.md)。
+1. [証明書とネットワーク プロファイルを準備します](certs-wifi-lan.md)。
+1. [データへのユーザー アクセスを準備します](authentication.md)。
+1. [アプリを準備します](apps.md)。
+1. [マップされたドライブを準備します](mapped-drives.md)。
+1. [印刷リソースを準備します](printing.md)。
+1. アドレス [デバイス名](address-device-names.md)。

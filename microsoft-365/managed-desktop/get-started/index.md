@@ -8,12 +8,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: d8a7bb4e17f2dd57e613aefcaad18cde42101d22f72cb320fc9200f4e858ab73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a817f863102df09c457d759151bfa516f6b2da4
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800728"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365126"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの使用を開始する
 
@@ -22,13 +22,18 @@ ms.locfileid: "53800728"
 > [!NOTE]
 > 登録を完了するには、グローバル管理者としてログインする必要があります。 詳細については、[[管理ポータルへのアクセス]](access-admin-portal.md) を参照してください。
 
-登録が完了したら、以下の手順に従ってサービスを構成します。 この順番に従うことをお勧めしますが、必須ではありません。 
+登録が完了したら、以下の手順に従ってサービスを構成します。 この順番に従うことをお勧めしますが、必須ではありません。
 
-1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)
-2. [登録後に設定を調整する](conditional-access.md)
-3. [ライセンスを割り当てる](assign-licenses.md)
-4. [Intune 会社ポータルを展開する](company-portal.md)
-5. [Enterprise State Roaming を有効にする](enterprise-state-roaming.md)
-6. [デバイスをセットアップする](set-up-devices.md)
-7. [ユーザーがデバイスを使えるようにする](get-started-devices.md)
-8. [アプリを展開する](deploy-apps.md)
+![この記事に記載されている、開始する手順の推奨されるシーケンス](../../media/mmd-getstarted-sequence.png) 
+
+1. [管理ポータル](access-admin-portal.md)にアクセスします。
+1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)。
+1. [登録後に設定を調整する](conditional-access.md)。
+1. [Intune ポータル サイト](company-portal.md)を展開して割り当てます。
+1. [ライセンスを割り当てる](assign-licenses.md)。
+1. [アプリを展開する](deploy-apps.md)。
+1. [デバイスをセットアップする](set-up-devices.md)。
+1. [Autopilot と登録ステータス ページの初回実行時エクスペリエンス](esp-first-run.md)のセットアップ。
+1. [ユーザー サポート機能を有効にする](enable-support.md)。
+1. [ユーザーがデバイスを使えるようにする](get-started-devices.md)。
+1. [アプリ制御の使用を開始する](get-started-app-control.md)。

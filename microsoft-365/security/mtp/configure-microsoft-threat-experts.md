@@ -1,6 +1,6 @@
 ---
-title: Defender を使用してMicrosoft 脅威エキスパート機能を構成およびMicrosoft 365する
-description: Microsoft Threats Experts に Microsoft 365して、毎日のセキュリティ操作とセキュリティ管理作業で構成、管理、および使用します。
+title: 管理を通じてMicrosoft 脅威エキスパート機能を構成Microsoft 365 Defender
+description: Microsoft Threats Experts にサブスクライブMicrosoft 365 Defender、毎日のセキュリティ操作およびセキュリティ管理作業で構成、管理、および使用できます。
 keywords: Microsoft 脅威エキスパート、管理された脅威ハンティング サービス、MTE、Microsoft マネージ ハンティング サービス
 search.product: Windows 10
 search.appverid: met150
@@ -14,14 +14,14 @@ localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 0ccb8482dae94de4a9f43a5ecaf7c701e6dd82a5
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: db98e147ef4453f62d4d17431286aaa99959712d
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844792"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58357470"
 ---
-# <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Defender を使用してMicrosoft 脅威エキスパート機能を構成およびMicrosoft 365する
+# <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>管理を通じてMicrosoft 脅威エキスパート機能を構成Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,13 +37,13 @@ ms.locfileid: "52844792"
 > [!IMPORTANT]
 > 適用する前に、microsoft Technical Service プロバイダーとアカウント チームと一緒に、Microsoft 脅威エキスパート - ターゲット攻撃通知管理脅威検出サービスの適格性要件について説明してください。
 
-ターゲット攻撃の通知を受け取る場合は、デバイスが登録Microsoft 365 Defender を展開する必要があります。 次に、M365 ポータルからアプリケーションを送信し、Microsoft 脅威エキスパート攻撃通知を送信します。
+ターゲット攻撃通知を受信するには、デバイスが登録されたMicrosoft 365 Defender展開する必要があります。 次に、M365 ポータルからアプリケーションを送信し、Microsoft 脅威エキスパート攻撃通知を送信します。
 
 アカウント チームまたは Microsoft 担当者に問い合わせ、Microsoft 脅威エキスパートエキスパート オンデマンドを購読してください。 オンデマンドの専門家は、関連する検出や敵対者から組織を保護する方法について、脅威の専門家と相談できます。
 
 ## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>[ターゲット攻撃通知Microsoft 脅威エキスパートを適用する]
 
-Microsoft Defender for Endpoint および Microsoft 365 Defender を既に持っている場合は、Microsoft 脅威エキスパート – ターゲット攻撃通知を自分の Defender ポータルからMicrosoft 365できます。  標的型攻撃通知は、組織にとって最も重要な脅威を特定するのに役立つ特別な洞察と分析を提供し、迅速に対応できます。
+Microsoft Defender for Endpoint および Microsoft 365 Defenderを既に持っている場合は、Microsoft 脅威エキスパート – ターゲット攻撃通知を自分のポータルからMicrosoft 365 Defenderできます。  標的型攻撃通知は、組織にとって最も重要な脅威を特定するのに役立つ特別な洞察と分析を提供し、迅速に対応できます。
 
 1. ナビゲーション ウィンドウから、[エンドポイント] 設定 > > > - ターゲット攻撃通知> Microsoft 脅威エキスパートに **移動します**。
 
@@ -67,8 +67,8 @@ Microsoft Defender for Endpoint および Microsoft 365 Defender を既に持っ
 
 ターゲット攻撃通知は、次のメディアMicrosoft 脅威エキスパートから受け取ります。
 
-- [Microsoft 365 Defender ポータルの **インシデント] ページ**
-- Defender Microsoft 365のアラート **ダッシュボード**
+- [Microsoft 365 Defenderのインシデント **]** ページ
+- ポータルMicrosoft 365 Defenderアラート **ダッシュボード**
 - OData アラート [API と](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) REST [API](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
 - [高度な検索の DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) テーブル
 - 電子メールを介してターゲット攻撃通知を送信する場合は、受信トレイ。 以下の [「電子メール通知ルールを作成する」を](#create-an-email-notification-rule) 参照してください。
@@ -91,12 +91,12 @@ Microsoft Defender for Endpoint のお客様が既に存在する場合は、Mic
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>組織内の疑わしいサイバーセキュリティアクティビティについて Microsoft の脅威専門家に相談する
 
-Defender ポータルのMicrosoft 脅威エキスパートからMicrosoft 365問い合わせできます。 専門家は、複雑な脅威や標的型攻撃の通知を理解するのに役立ちます。 アラートやインシデントに関する詳細、または侵害の処理に関するアドバイスについては、専門家と提携してください。 ポータル ダッシュボードで説明されている脅威インテリジェンス コンテキストに関する分析情報を取得します。
+連絡先は、Microsoft 脅威エキスパートポータル内Microsoft 365 Defenderできます。 専門家は、複雑な脅威や標的型攻撃の通知を理解するのに役立ちます。 アラートやインシデントに関する詳細、または侵害の処理に関するアドバイスについては、専門家と提携してください。 ポータル ダッシュボードで説明されている脅威インテリジェンス コンテキストに関する分析情報を取得します。
 
 > [!NOTE]
 >
 > - 組織のカスタマイズされた脅威インテリジェンス データに関連するアラートの問い合わせは現在サポートされていません。 詳細については、セキュリティ操作またはインシデント対応チームに問い合わせください。
-> - [脅威の専門家に相談する] フォームを使用して問い合わせを送信するには、Microsoft 365 Defender ポータルのセキュリティ センターのセキュリティ設定の管理権限 **が必要** です。
+> - [脅威の専門家に相談する] フォームから問い合わせを送信するには、Microsoft 365 Defender ポータルの [セキュリティ センターのセキュリティ設定の管理]**アクセス許可が必要** です。
 
 1. 調査する情報 (デバイス、アラート、インシデントなど) に関連するポータル **ページに移動****します**。 調査要求を送信する前に、問い合わせに関連するポータル ページが表示されている必要があります。
 
@@ -129,7 +129,7 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 
 - 新しい種類のアラートが、生きている土地のバイナリに対して表示されます。 アラート ID を指定できます。 このアラートの詳細と、さらに詳しく調査する方法を教えてください。
 - 同様の攻撃が 2 つ見られたので、どちらも悪意のある PowerShell スクリプトを実行しようとするが、異なるアラートを生成します。 1 つは "不審な PowerShell コマンド ライン" で、もう 1 つは "O365 によって提供される指示に基づいて悪意のあるファイルが検出されました" です。 違いは何ですか?
-- 今日、知名度の高いユーザーのデバイスから失敗したログインの異常数に関する奇数の警告を受け取りました。 これらの試みについてのそれ以上の証拠は見つからん。 Defender はMicrosoft 365を確認する方法を示します。 監視対象のログインの種類
+- 今日、知名度の高いユーザーのデバイスから失敗したログインの異常数に関する奇数の警告を受け取りました。 これらの試みについてのそれ以上の証拠は見つからん。 これらの試行Microsoft 365 Defender確認する方法 監視対象のログインの種類
 - 「システム ユーティリティによる疑わしい動作が観察されました」というアラートに関するコンテキストや分析情報を追加できますか?
 - "転送/リダイレクト ルールの作成" というタイトルのアラートが表示されました。 アクティビティは良性だと思います。 通知を受け取った理由を教えてください。
 
@@ -141,7 +141,7 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 ### <a name="threat-intelligence-details"></a>脅威インテリジェンスの詳細
 
 - 悪意のある Word 文書をユーザーに配信したフィッシングメールが検出されました。 このドキュメントでは、一連の疑わしいイベントが発生し、特定のマルウェア ファミリに対して複数のアラートが発生しました。 このマルウェアに関する情報はありますか? はいの場合、リンクを送信できますか?
-- 最近、業界をターゲットにしている脅威に関するブログ投稿を見ました。 この脅威アクターに対して Defender がMicrosoft 365保護を理解するのに役立ちますか?
+- 最近、業界をターゲットにしている脅威に関するブログ投稿を見ました。 この脅威アクターに対して提供されるMicrosoft 365 Defenderを理解するのに役立ちますか?
 - 最近、組織に対して行われたフィッシング キャンペーンを確認しました。 これは、特に当社または垂直に対象とされたのか教えてください。
 
 ### <a name="microsoft-threat-experts-alert-communications"></a>Microsoft 脅威エキスパートのアラート通信
@@ -151,7 +151,7 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 - ターゲット攻撃の通知を受け取ったのは、Microsoft 脅威エキスパート。 インシデント対応チームに渡すデータを提供できますか?
 
 > [!NOTE]
-> Microsoft 脅威エキスパートは、インシデント対応サービスではなく、管理された脅威検出サービスです。 ただし、専門家は必要に応じて、調査を Microsoft サイバーセキュリティ ソリューション グループ (CSG) の検出および応答チーム (DART) サービスにシームレスに移行できます。 また、インシデント対応チームと関わり、インシデント対応が必要な問題に対処できます。
+> Microsoft 脅威エキスパートは、インシデント対応サービスではなく、管理された脅威検出サービスです。 ただし、インシデント対応チームと関わり、インシデント対応が必要な問題に対処できます。 独自のインシデント対応チームをお持ちで、Microsoft のサポートが必要な場合は、CSS サイバーセキュリティ インシデント対応チーム (CIRT) に参加できます。 チケットを開き、お問い合わせに対応できます。
 
 ## <a name="scenario"></a>シナリオ
 

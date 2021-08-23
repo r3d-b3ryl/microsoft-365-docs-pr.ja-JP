@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: ナビゲーション タブとフィルターを使用してレポートを表示する方法について学習します。
-ms.openlocfilehash: 242a5f27c47fc1db0d807906f725201d2574712afe75ef421abf8848a334f2f5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8bf7d82b3c7ab8bab175da57a120ecf91e96e535
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901245"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400309"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析でレポート間を移動して活用する
 
@@ -61,7 +61,7 @@ ms.locfileid: "53901245"
 
 - 基になる[データセット](usage-analytics-data-model.md)を利用し、独自のビジュアルを作成します。
 
-- PowerBI Desktop を利用し、独自のデータ ソースを導入します。
+- 独自Power BI Desktopデータ ソースを取り込むには、このデータ ソースを使用します。
 
 レポートを共有するには、[共有] ボタンを選択します。 ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) ページの上部に表示されます。
 

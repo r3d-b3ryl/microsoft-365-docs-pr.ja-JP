@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 8503b294f60ffe7d01199cd4e910a94abc138bb9feed6c80483250e6c3f1fab5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf9b1e1a485000bee7bf672690af5979767fb34b
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869967"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365095"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのネットワーク構成
 
@@ -82,14 +82,16 @@ Microsoft Teams | \*.teams.skype.com  <br>\*.teams.microsoft.com  <br>teams.micr
 Power BI | maxcdn.bootstrapcdn.com <br>ajax.aspnetcdn.com <br>netdna.bootstrapcdn.com <br>cdn.optimizely.com <br>google-analytics.com <br>\*.mktoresp.com <br>\*.aadcdn.microsoftonline-p.com <br>\*.msecnd.com <br>\*.localytics.com <br>ajax.aspnetcdn.com <br>\*.localytics.com <br>\*.virtualearth.net <br>platform.bing.com <br>powerbi.microsoft.com <br>c.microsoft.com <br>app.powerbi.com <br>\*.powerbi.com <br>dc.services.visualstudio.com <br>support.powerbi.com <br>powerbi.uservoice.com <br>go.microsoft.com <br>c1.microsoft.com <br>\*.azureedge.net |[Power BI &エクスプレス ルート](/power-bi/service-admin-power-bi-expressroute) 
 OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*.onenote.com <br>\*.msecnd.net <br>\*.microsoft.com <br>\*.office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\*.onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*.microsoft.com | [Office 365 URL および IP アドレス範囲](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
-## <a name="steps-to-get-ready"></a>準備の手順
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>インストールの準備を行うMicrosoft マネージド デスクトップ
 
-1. 詳細については[、「前提条件」をMicrosoft マネージド デスクトップ。](prerequisites.md)
-2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。
-3. [ゲスト アカウントの前提条件](guest-accounts.md)
-4. [ネットワーク構成 (Microsoft マネージド デスクトップ](network.md)記事)
-5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
-6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
-7. [Microsoft マネージド デスクトップのアプリ](apps.md)
-8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
-9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)
+1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
+2. 準備 [状況評価ツールを実行します](readiness-assessment-tool.md)。
+1. 購入[ポータル サイト](../get-started/company-portal.md).
+1. ゲスト [アカウントの前提条件を確認します](guest-accounts.md)。
+1. ネットワーク構成を確認します (この記事)。
+1. [証明書とネットワーク プロファイルを準備します](certs-wifi-lan.md)。
+1. [データへのユーザー アクセスを準備します](authentication.md)。
+1. [アプリを準備します](apps.md)。
+1. [マップされたドライブを準備します](mapped-drives.md)。
+1. [印刷リソースを準備します](printing.md)。
+1. アドレス [デバイス名](address-device-names.md)。

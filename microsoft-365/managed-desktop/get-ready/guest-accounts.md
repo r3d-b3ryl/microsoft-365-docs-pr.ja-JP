@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9daf0ded219165f692c3e5b1b6512ab264f25d41b2fda97d085a3443cbe506a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb181ab213cc02e5289681b8c3965a96bd8b8dcb
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819129"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364999"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>ゲスト アカウントの前提条件
 
@@ -46,14 +46,16 @@ Microsoft マネージド デスクトップアカウントアクセスには、
 
 詳細については、「ライセンスのない管理者」[を参照Microsoft Intune。](/mem/intune/fundamentals/unlicensed-admins)
 
-## <a name="steps-to-get-ready"></a>準備の手順
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>インストールの準備を行うMicrosoft マネージド デスクトップ
 
 1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
-2. [準備状況の評価ツール](readiness-assessment-tool.md)を使用します。
-3. [ゲスト アカウントの前提条件](guest-accounts.md) (この記事)
-4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
-5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
-6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
-7. [Microsoft マネージド デスクトップのアプリ](apps.md)
-8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
-9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)
+2. 準備 [状況評価ツールを実行します](readiness-assessment-tool.md)。
+1. 購入[ポータル サイト](../get-started/company-portal.md).
+1. ゲスト アカウントの前提条件を確認します (この記事)。
+1. ネットワーク [構成を確認します](network.md)。
+1. [証明書とネットワーク プロファイルを準備します](certs-wifi-lan.md)。
+1. [データへのユーザー アクセスを準備します](authentication.md)。
+1. [アプリを準備します](apps.md)。
+1. [マップされたドライブを準備します](mapped-drives.md)。
+1. [印刷リソースを準備します](printing.md)。
+1. アドレス [デバイス名](address-device-names.md)。

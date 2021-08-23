@@ -1,6 +1,6 @@
 ---
 title: ファイル API の停止と検疫
-description: デバイスでのファイルの実行を停止し、Microsoft Defender for Endpoint でファイルを削除する方法について説明します。 「例」を参照してください。
+description: デバイスでのファイルの実行を停止し、Microsoft Defender for Endpoint でファイルを削除する方法について説明します。 例を参照してください。
 keywords: apis、graph api、サポートされている API、停止および検疫ファイル
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d9ae988df82a2cc1cf5106f832ae22f0c5a95dbdfbf28e6dc773cea3e8208798
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d4ed33a26bcc7583146d810db7625ed3164d7544
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873825"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408080"
 ---
 # <a name="stop-and-quarantine-file-api"></a>ファイル API の停止と検疫
 
@@ -60,6 +60,8 @@ ms.locfileid: "53873825"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Machine.StopAndQuarantine|'Stop and Quarantine'
+アプリケーション|Machine.Read.All|'すべてのコンピューター プロファイルを読み取る'
+アプリケーション|Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
 委任 (職場または学校のアカウント)|Machine.StopAndQuarantine|'Stop and Quarantine'
 
 > [!NOTE]
@@ -76,7 +78,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 Content-Type|string|application/json. **必須**
@@ -84,7 +86,7 @@ Content-Type|string|application/json. **必須**
 ## <a name="request-body"></a>要求本文
 要求本文で、JSON オブジェクトに次のパラメーターを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**
 Sha1|String|デバイスで停止して検疫するファイルの Sha1。 **必須**

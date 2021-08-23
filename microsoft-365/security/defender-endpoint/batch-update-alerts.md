@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d5307eba16184c8eb3aa3dadf32ad3d2ea69448fd53bdbc27d1db13bef1a40ec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 465aba55225aed74c838cb8ce09acf6d8b284491
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857813"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408060"
 ---
 # <a name="batch-update-alerts"></a>バッチ更新の通知
 
@@ -55,7 +55,7 @@ ms.locfileid: "53857813"
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
-アプリケーション | Alerts.ReadWrite.All | 'すべてのアラートの読み取りと書き込み'
+アプリケーション | Alert.ReadWrite.All | 'すべてのアラートの読み取りと書き込み'
 委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
 
 > [!NOTE]
@@ -72,7 +72,7 @@ POST /api/alerts/batchUpdate
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**
 Content-Type | 文字列 | application/json. **必須**
@@ -85,7 +85,7 @@ Content-Type | 文字列 | application/json. **必須**
 
 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-プロパティ | 種類 | 説明
+プロパティ | 型 | 説明
 :---|:---|:---
 alertIds | リスト &lt; 文字列&gt;| 更新するアラートの一覧。 **必須**
 status | String | 指定したアラートの更新された状態を指定します。 プロパティの値は、'New'、'InProgress'、および 'Resolved' です。

@@ -8,16 +8,20 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f7c2a72fdd212eb9a549d3b855a693f095949e0dbb203caf05d37e9ad8ace226
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a459c120e0bfb4da5c4b98ee576ff347052e358
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904338"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400381"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft マネージド デスクトップライフサイクル
 
-Microsoft マネージド デスクトップユーザーは、最高のパフォーマンス、信頼性、設計、およびセキュリティ機能 (Windows Hello などの機能のサポートなど) を提供するデバイスを常に使用する必要があります。 これを実現するために、Microsoft マネージド デスクトップ、継続的に更新された承認済みデバイスの短いカタログが保持されます。 承認済みデバイスを表示するには、ビジネス Microsoft マネージド デスクトップサイトでWindows 10 Pro[をフィルター処理](https://www.microsoft.com/windowsforbusiness/view-all-devices)します。
+> [!NOTE]
+> 2021 年 9 月 18 日の時点で、この製品Microsoft マネージド デスクトップ適用されません。 ここに示す要件はいずれも、サービス内のデバイスには適用されません。 ハードウェア要件 [だけが](device-requirements.md) 関連します。 
+
+
+Microsoft マネージド デスクトップユーザーは、最高のパフォーマンス、信頼性、設計、およびセキュリティ機能 (Windows Hello などの機能のサポートなど) を提供するデバイスを常に使用する必要があります。 これを実現するために、Microsoft マネージド デスクトップ、継続的に更新された承認済みデバイスの短いカタログが保持されます。 承認済みデバイスを表示するには、ビジネス Microsoft マネージド デスクトップサイトでWindows 10 Pro[をフィルター処理](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)します。
  
 この記事では、承認済みカタログに追加および削除されるデバイスのライフサイクルについて説明します。 
 

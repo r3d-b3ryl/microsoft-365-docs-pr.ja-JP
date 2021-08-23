@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: 327c7e5d15b006acd9a8b0df829cd2aadbdf8010
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: e301f58c3a194c6af8989f4081e733c50a4c104e
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349910"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400333"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Deutschland から新しいドイツのデータセンター地域Office 365サービスへの移行
 
@@ -188,7 +188,7 @@ Microsoft Cloud Deutschland クラウド サービスでは、次の 15 のサ�
 30. Microsoft Forms
 31. Power AutomateのOffice 365
 32. Power Virtual AgentsのOffice 365
-33. PowerApps for Office 365
+33. Power AppsのOffice 365
 34. Microsoft Bookings
 35. To-Do
 36. Whiteboard
@@ -335,7 +335,7 @@ For Business Skypeのすべてのユーザーは、ユーザーにMicrosoft Team
 
 [移行のオプトイン](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 はじめに:
 

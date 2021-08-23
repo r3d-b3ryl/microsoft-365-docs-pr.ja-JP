@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織にMicrosoft 365サブスクリプションを確認します。
-ms.openlocfilehash: f5cf6adffe54ed1930e139bf70c91e8f17b4d501b8c324ceb11512ce81f4b950
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 099104eae31cc7a615880bf9b778e6bfed548021
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900640"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400345"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>サブスクリプションをMicrosoft 365する
 
@@ -44,27 +44,27 @@ ms.locfileid: "53900640"
 
 ## <a name="compare-plans"></a>プランを比較
 
-| サービス エリア | 特徴 | Microsoft 365 Business Standard | Microsoft 365 Business Premium | Office 365 Enterprise E3 |
+| サービス エリア | 機能 | Microsoft 365 Business Standard | Microsoft 365 Business Premium | Office 365 Enterprise E3 |
 | --- | --- | --- | --- | --- |
 | **利用可能なライセンス** | ユーザーの最大数 | 300 | 300 | 無制限 |
 | **Office アプリ** | ユーザー Office 5 PC/Mac + 5 スマートフォン (Word、Excel、PowerPoint、OneNote、Access)、Office Online にインストールする | Business | Business | ProPlus |
 | **メール &amp; カレンダー** | Outlook,Exchange Online | 50 GB | 50 GB | 100 GB |
-| **チームワークのためのハブ** | チャット ベースのワークスペース、オンライン会議など、Microsoft Teams | はい | はい | はい |
+| **チームワークのためのハブ** | チャット ベースのワークスペース、オンライン会議など、Microsoft Teams | はい | はい | 必要 |
 | **ファイルの記憶域** | OneDrive for Business | ユーザーあたり 1 TB | ユーザーあたり 1 TB | 無制限 |
-| **ソーシャル、ビデオ、サイト** | Stream, Yammer, Planner, SharePoint \* Online , PowerApps \* , Microsoft Flow\* | はい | はい | はい |
-| **ビジネス アプリ** | アプリのスケジュール設定 - 予約\*\* | はい | はい | はい |
-| **脅威保護** | Office 365 Advanced Threat Protection | いいえ | はい | いいえ |
+| **ソーシャル、ビデオ、サイト** | Stream, Yammer, Planner, SharePoint \* Online , Power Apps , \* Microsoft Flow\* | はい | はい | 必要 |
+| **ビジネス アプリ** | アプリのスケジュール設定 - 予約\*\* | はい | はい | 必要 |
+| **脅威の保護** | Office 365 Advanced Threat Protection | いいえ | はい | いいえ |
  | WindowsExploit Guard の適用| | いいえ | はい | いいえ |
 | **ID 管理** | ハイブリッド アカウントのセルフサービス パスワードのリセットAzure Active Directoryする | いいえ | はい | いいえ |
  | Azure 多要素認証、条件付きアクセス ポリシー | | いいえ | はい | いいえ |
 | **デバイス &amp; アプリの管理** | Microsoft Intune、Windows、AutoPilot、Windows Pro管理 | いいえ | はい | いいえ |
- | 共有コンピューターのライセンス認証 | | いいえ | はい | はい |
+ | 共有コンピューターのライセンス認証 | | いいえ | はい | 必要 |
  | Win 7/8.1 Windows 10 Proライセンスに対するアップグレードProする | | いいえ | はい | いいえ |
  | Windows Virtual Desktop | | いいえ | はい | いいえ |
-| **情報保護** | Office 365データ損失防止 | いいえ | はい | はい |
+| **情報保護** | Office 365データ損失防止 | いいえ | はい | 必要 |
  | Azure Information Protection Plan 1, BitLocker の適用 | | いいえ | はい | いいえ |
 | **オンプレミス CAL の権限** | ECAL スイート (Exchange、SharePoint、Skype) | いいえ | いいえ | はい |
-| **コンプライアンス** | 無制限のメール アーカイブ\*\*\* | いいえ | はい | はい |
+| **コンプライアンス** | 無制限のメール アーカイブ\*\*\* | いいえ | はい | 必要 |
 
 \*E3 Microsoft 365 Business Standardプラン 2 が含Office 365 Enterpriseプラン 1 が含Office 365 Enterpriseを示します。
 

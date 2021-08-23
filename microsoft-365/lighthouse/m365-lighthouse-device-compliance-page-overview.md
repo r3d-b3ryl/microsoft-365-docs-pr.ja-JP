@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) が Microsoft 365 Lighthouseデバイスコンプライアンス ページについて説明します。
-ms.openlocfilehash: 8143f6d987145001a502616ea4a3672fba24a7f3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c87f808a3694c1f256a8a4787591a93444cf792f
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257620"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364939"
 ---
 # <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouseデバイス コンプライアンス ページの概要
 
 > [!NOTE]
 > この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウントが設定されていない場合Microsoft 365 Lighthouse[を参照してください](m365-lighthouse-sign-up.md)Microsoft 365 Lighthouse。
 
-Microsoft 365 Lighthouse左側のナビゲーション ウィンドウで [デバイス] を選択して [デバイスコンプライアンス] ページを開き、すべてのテナントの Intune デバイスコンプライアンスに関連するインサイトと情報を表示できます。 このページでは、テナント全体のコンプライアンス状態の概要を取得し、テナントごとにデバイスの一覧を表示し、コンプライアンス ポリシーと設定に関する状態レポートを取得できます。
+Microsoft 365 Lighthouse左側のナビゲーション ウィンドウで [デバイス] を選択して [デバイスコンプライアンス] ページを開き、すべての顧客テナントの Intune デバイスコンプライアンスに関連する分析情報と情報を表示できます。 このページでは、テナント全体のコンプライアンス状態の概要を取得し、テナントごとにデバイスの一覧を表示し、コンプライアンス ポリシーと設定に関する状態レポートを取得できます。
 
 ## <a name="overview-tab"></a>[概要] タブ  
   

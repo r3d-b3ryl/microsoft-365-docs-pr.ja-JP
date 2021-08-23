@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7504f29dfbd2c9de4f69f238f0b657fd535c5b3e323196bfaae2e19c3b79023d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb41361d58ccdac9c1fe0ecdca12927752214651
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863935"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365083"
 ---
 # <a name="assign-licenses"></a>ライセンスを割り当てる
 
@@ -27,11 +27,14 @@ ms.locfileid: "53863935"
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
 
-1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)
-2. [条件付きアクセスを調整する](conditional-access.md)
-3. ライセンスの割り当て (この記事)
-4. [Intune 会社ポータルを展開する](company-portal.md)
-5. [Enterprise State Roaming を有効にする](enterprise-state-roaming.md)
-6. [デバイスをセットアップする](set-up-devices.md)
-7. [ユーザーがデバイスを使えるようにする](get-started-devices.md)
-8. [アプリを展開する](deploy-apps.md)
+1. 管理 [ポータルにアクセスします](access-admin-portal.md)。
+1. [管理者ポータルで管理者連絡先を追加して確認します](add-admin-contacts.md)。
+1. [登録後に設定を調整します](conditional-access.md)。
+1. ユーザーを展開して割[り当Intune ポータル サイト](company-portal.md)します。
+1. ライセンスの割り当て (この記事)。
+1. [アプリを展開します](deploy-apps.md)。
+1. [デバイスをセットアップします](set-up-devices.md)。
+1. Autopilot と [登録の状態] ページ [を使用して、初回実行エクスペリエンスを設定します](esp-first-run.md)。
+1. [ユーザー サポート機能を有効にする](enable-support.md)。
+1. [ユーザーがデバイスを使用する準備を整えます](get-started-devices.md)。
+1. [アプリ コントロールの使用を開始します](get-started-app-control.md)。

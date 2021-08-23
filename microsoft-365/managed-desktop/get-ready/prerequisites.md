@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4ca75cdd3721f8a49f36b59f4ada0cd6f3dee49e1bf1d139240d52f83899fbb7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 999667771bc33ff6e09b5afdff80c61c91daa601
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869955"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364927"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの前提条件
 
@@ -48,7 +48,7 @@ Microsoft マネージド デスクトップ機能するには、特定のライ
 - Microsoft Intune
 - Windows 10 Enterprise  
 - Microsoft Defender for Endpoint
-- Microsoft 365 Apps for Enterprise
+- Microsoft 365 Apps for enterprise
 - Microsoft Teams
 - [SharePoint Online プラン 2](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
 - [Exchange Online プラン 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans)
@@ -56,14 +56,16 @@ Microsoft マネージド デスクトップ機能するには、特定のライ
 > [!TIP]
 > Microsoft アカウント マネージャーは、現在のライセンスとサービス プランを確認し、重複を避けながら、必要な追加のライセンスまたはサービス プランを取得するための最も効率的なパスを見つけるのに役立ちます。
 
-## <a name="steps-to-get-ready"></a>準備の手順
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>インストールの準備を行うMicrosoft マネージド デスクトップ
 
-1. 詳細については[、「前提条件」をMicrosoft マネージド デスクトップ。](prerequisites.md) (この記事)
-2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。
-3. [ゲスト アカウントの前提条件](guest-accounts.md)
-4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
-5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
-6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
-7. [Microsoft マネージド デスクトップのアプリ](apps.md)
-8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
-9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)
+1. 前提条件を確認します (この記事)。
+2. 準備 [状況評価ツールを実行します](readiness-assessment-tool.md)。
+1. 購入[ポータル サイト](../get-started/company-portal.md).
+1. ゲスト [アカウントの前提条件を確認します](guest-accounts.md)。
+1. ネットワーク [構成を確認します](network.md)。
+1. [証明書とネットワーク プロファイルを準備します](certs-wifi-lan.md)。
+1. [データへのユーザー アクセスを準備します](authentication.md)。
+1. [アプリを準備します](apps.md)。
+1. [マップされたドライブを準備します](mapped-drives.md)。
+1. [印刷リソースを準備します](printing.md)。
+1. アドレス [デバイス名](address-device-names.md)。

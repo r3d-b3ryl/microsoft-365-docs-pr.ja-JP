@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d4d84ff64399bdecc936ae8876c0e1713cbf3482ab9dbf1faf848b736bfa6a09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1511a31dfd7c86d24f3a91ceebfca65d1ce777e3
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800380"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365071"
 ---
 # <a name="get-domain-related-alerts-api"></a>ドメイン関連のアラート API を取得する
 
@@ -81,7 +81,7 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合とドメインが存在する場合 - アラート[](alerts.md)エンティティの一覧で 200 OK。 ドメインが存在しない場合 - 404 が見つかりません。
+成功した場合とドメインが存在する場合 - アラート[](alerts.md)エンティティの一覧で 200 OK。 ドメインが存在しない場合 - 空のセットで 200 OK。
 
 ## <a name="example"></a>例
 

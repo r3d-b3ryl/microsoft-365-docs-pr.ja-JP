@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: b248af7d098fa8b78632b248e37248840f0f1d8302a658061489f6ea68e4fd85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c8a501c178ae0cffb98870d4fccd44028cbf6ec0
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877747"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365107"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのアプリ
 
@@ -56,14 +56,16 @@ Microsoft は、付属のアプリの展開、更新、およびサポートの�
 - アプリは、ユーザーが管理できる状態Microsoft Intune。 このトピックの詳細については、「アプリを使用[Windows 10アプリ](/intune/apps-windows-10-app-deploy)の展開Microsoft Intune」および「アプリの追加」[を参照](/intune/apps-add)Microsoft Intune。
 - ライセンス キーの提供、ライセンス条項との契約、サーバー接続の事前設定など、その他の事前パッケージ化要件。
 
-## <a name="steps-to-get-ready"></a>準備の手順
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>インストールの準備を行うMicrosoft マネージド デスクトップ
 
-1. 詳細については[、「前提条件」をMicrosoft マネージド デスクトップ。](prerequisites.md)
-2. 準備 [状況評価ツールを使用します](readiness-assessment-tool.md)。
-3. [ゲスト アカウントの前提条件](guest-accounts.md)
-4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
-5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
-6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
-7. [アプリのMicrosoft マネージド デスクトップ](apps.md)(この記事)
-8. [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](mapped-drives.md)
-9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)
+1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
+2. 準備 [状況評価ツールを実行します](readiness-assessment-tool.md)。
+1. 購入[ポータル サイト](../get-started/company-portal.md).
+1. ゲスト [アカウントの前提条件を確認します](guest-accounts.md)。
+1. ネットワーク [構成を確認します](network.md)。
+1. [証明書とネットワーク プロファイルを準備します](certs-wifi-lan.md)。
+1. [データへのユーザー アクセスを準備します](authentication.md)。
+1. アプリを準備する (この記事)。
+1. [マップされたドライブを準備します](mapped-drives.md)。
+1. [印刷リソースを準備します](printing.md)。
+1. アドレス [デバイス名](address-device-names.md)。

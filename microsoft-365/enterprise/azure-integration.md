@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: パスワードMicrosoft 365オンプレミス環境ADシングル サインオンを行う場合は、Azure Microsoft 365と統合します。
-ms.openlocfilehash: a4c6ad7346fc1c82968db024795ddf3f148a9053
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: eaf2b42910c2d0b3a7f672262b2397f8010793ba
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356578"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400321"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Azure と Microsoft 365
 
@@ -60,7 +60,7 @@ DS 機能、双方向AD、その他の管理機能を強化する場合は、無
 |**機能**|**説明**|
 |:-----|:-----|
 |統合アプリ  <br/> |メール、予定表、連絡先、ユーザー、グループ、ファイル、フォルダーなど、Microsoft 365データへのアクセスを個々のアプリに付与できます。 また、これらのアプリをグローバル管理者レベルで承認し、Azure AD にアプリを登録することで、会社全体で利用AD。 詳細については、「統合アプリ[と Azure AD管理者Microsoft 365を参照してください](integrated-apps-and-azure-ads.md)。  <br/> 「シングル [サインオン」も参照してください](/azure/active-directory/manage-apps/what-is-single-sign-on)。  <br/> |
-|PowerApps  <br/> | Power Apps は、モバイル デバイス向けアプリであり、既存のデータ ソース (SharePointリストや他のデータ アプリなど) に接続できます。 詳細[については、「Create a PowerApp for a list in](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) SharePoint オンライン」および[「PowerApps」ページ](https://powerapps.microsoft.com/)を参照してください。  <br/> |
+|Power アプリ  <br/> | Power Appsリストや他のデータ アプリなど、既存のデータ ソースに接続できるモバイル デバイス向SharePointアプリです。 詳細[については、「Create a Power App for a list in SharePoint」](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab)および「Power Apps[ページ」](https://powerapps.microsoft.com/)を参照してください。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

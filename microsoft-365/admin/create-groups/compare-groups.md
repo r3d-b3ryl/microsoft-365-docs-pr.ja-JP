@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 グループでは、メンバーは会話用のグループ メールおよび共有ワークスペース、ファイル、カレンダー イベント、ストリーム、Planner を利用できます。
-ms.openlocfilehash: c5e616e95cf56a67799f4edc2608a54758a7aa0b
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 0b622f791de7615e45e49faec47558b0e67067f2
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346882"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393426"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
@@ -44,7 +45,7 @@ Microsoft 365 管理センターの <a href="https://go.microsoft.com/fwlink/p/?
 
 ||Microsoft 365 グループ|配布グループ|セキュリティ グループ|メールが有効なセキュリティ グループ|共有メールボックス|
 |:----|:----|:----|:----|:----|:----|
-|**メールが有効**|はい|はい|いいえ|はい|はい|
+|**メールが有効**|はい|必要|いいえ|はい|はい|
 |**Azure AD での動的メンバーシップ**|はい|いいえ|はい|いいえ|なし|
 
 これらのグループの種類はすべて、Power Automate で使用できます。

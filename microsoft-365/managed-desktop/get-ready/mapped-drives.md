@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: d272c08287dd6198d4c33b4d1df3ff8662eda12781d676b75c93189d08409de7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 01b26ff33e02a1b26e91bb6399a73c9b22a6ba19
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819093"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364963"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
 
@@ -25,7 +25,7 @@ ms.locfileid: "53819093"
 - チームがファイルを共有するために使用するマップされたドライブをオンラインにSharePointします。 
 - オンプレミスのファイル共有を使用するアプリケーションを最新化または置き換え、その要件を削除します。
   
-これらのサービスを最新化すると、ユーザー エクスペリエンスが最適Microsoft マネージド デスクトップ。 Microsoft FastTrack Services は、Microsoft Cloud Services を使用して環境を最新化する場合に役立ちます。 FastTrack サービスの対象かどうかは、「対象サービスとプラン」で[](/fasttrack/m365-eligible-services-and-plans)確認し、直接連絡してサービスの準備Microsoft マネージド デスクトップ。 FastTrack OneDrive for BusinessまたはオンラインSharePointの背景については、「データ移行」[を参照してください](/fasttrack/o365-data-migration)。
+これらのサービスを最新化すると、ユーザー エクスペリエンスが最適Microsoft マネージド デスクトップ。 Microsoft FastTrackサービスは、Microsoft Cloud Services を使用して環境を最新化する場合に役立ちます。 対象サービスとプランで、FastTrackサービスの対象かどうかを確認し、直接連絡して[](/fasttrack/m365-eligible-services-and-plans)サービスの準備をMicrosoft マネージド デスクトップ。 オンライン移行のFastTrack OneDrive for BusinessまたはSharePointについては、「データ移行」[を参照してください](/fasttrack/o365-data-migration)。
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>マップされたドライブMicrosoft マネージド デスクトップ
  
@@ -37,7 +37,7 @@ ms.locfileid: "53819093"
 - これらのファイル共有場所へのアクセスを必要とするユーザー グループ 
 - 割り当てる必要がある特定のドライブ文字 (必要な場合)
 
-次に例を示します。
+例:
 
 | ドライブ文字 | UNC パス | ユーザー グループ |
 |--------------|----------|------------|
@@ -55,14 +55,16 @@ ms.locfileid: "53819093"
 4. IT 運用が期待した通り機能するために、Microsoft マネージド デスクトップ構成をテストして確認する必要があります。 テストが完了したら、同じサポート要求の詳細にある [ディスカッション] タブをMicrosoft マネージド デスクトップして、IT 運用に通知します。  
 5. Microsoft マネージド デスクトップその後、IT 運用チームは構成を他の展開グループに展開します。 
 
-## <a name="steps-to-get-ready"></a>準備の手順
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>インストールの準備を行うMicrosoft マネージド デスクトップ
 
-1. 詳細については[、「前提条件」をMicrosoft マネージド デスクトップ。](prerequisites.md)
-2. [準備状況評価ツールを使用します](readiness-assessment-tool.md)。
-3. [ゲスト アカウントの前提条件](guest-accounts.md)
-4. [Microsoft マネージド デスクトップのネットワーク構成](network.md)
-5. [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](certs-wifi-lan.md)
-6. [Microsoft マネージド デスクトップ用にオンプレミス リソース アクセスを準備する](authentication.md)
-7. [Microsoft マネージド デスクトップのアプリ](apps.md)
-8. [マップされたドライブをMicrosoft マネージド デスクトップ](mapped-drives.md)する (この記事)
-9. [Microsoft マネージド デスクトップ用に、印刷リソースを準備する](printing.md)
+1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
+2. 準備 [状況評価ツールを実行します](readiness-assessment-tool.md)。
+1. 購入[ポータル サイト](../get-started/company-portal.md).
+1. ゲスト [アカウントの前提条件を確認します](guest-accounts.md)。
+1. ネットワーク [構成を確認します](network.md)。
+1. [証明書とネットワーク プロファイルを準備します](certs-wifi-lan.md)。
+1. [データへのユーザー アクセスを準備します](authentication.md)。
+1. [アプリを準備します](apps.md)。
+1. マップされたドライブを準備する (この記事)。
+1. [印刷リソースを準備します](printing.md)。
+1. アドレス [デバイス名](address-device-names.md)。

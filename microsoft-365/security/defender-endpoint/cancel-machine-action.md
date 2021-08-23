@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0e6e29067d2bb1223809096483b096acebf6d2be95dd42ec811e765d0cb9b6d7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 33828866b32c14b4922e936fbd279c3f7bc3b536
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894661"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408079"
 ---
 # <a name="cancel-machine-action-api"></a>マシン アクション API のキャンセル
 
@@ -45,7 +45,7 @@ ms.locfileid: "53894661"
 
 ## <a name="api-description"></a>API の説明
 
-(完了、キャンセル、失敗) まだ最終状態ではない既に起動されているコンピューターアクションをキャンセルします。
+(完了、キャンセル、失敗) まだ最終状態ではない既に起動されているコンピューター の操作をキャンセルします。
 
 ## <a name="limitations"></a>制限事項
 
@@ -57,8 +57,8 @@ ms.locfileid: "53894661"
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
-|アプリケーション|Machine.CollectForensic <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|forensics の収集 <br>マシンの隔離<br>コードの実行を制限する<br>  スキャン マシン<br>  マシンのオフボード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
-|委任 (職場または学校のアカウント)|Machine.CollectForensic<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|forensics の収集<br> マシンの隔離<br>  コードの実行を制限する<br> スキャン マシン<br>マシンのオフボード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
+|アプリケーション|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|forensics の収集 <br>マシンの隔離<br>コードの実行を制限する<br>  スキャン マシン<br>  マシンのオフボード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
+|委任 (職場または学校のアカウント)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|forensics の収集<br> マシンの隔離<br>  コードの実行を制限する<br> スキャン マシン<br>マシンのオフボード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
 
 
 ## <a name="http-request"></a>HTTP 要求
@@ -70,14 +70,14 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明|
+|名前|型|説明|
 |---|---|---|
 |Authorization|String|ベアラー {トークン}。必須。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|種類|説明|
+|パラメーター|型|説明|
 |---|---|---|
 |コメント|文字列|キャンセル アクションに関連付けるコメント。|
 
