@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事には、2007 年または 2010 年Office 2010 年Officeアップグレードの計画に役立つユーザー向けリソースが含まれている。
-ms.openlocfilehash: 1fbbf13f267f191f567f413dd777d12e43abc096
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 1e4379510ba6c4cf36200a6f49f56aa11a151140
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356902"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58378037"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 サーバー/クライアントからアップグレードする計画を立てる
 
@@ -36,7 +36,7 @@ ms.locfileid: "58356902"
 
 この記事のリソースを使用して、アップグレードを開始します。
 
-## <a name="what-is-microsoft-365"></a>Microsoft 365 とは
+## <a name="what-is-microsoft-365"></a>Microsoft 365とは
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365)は、革新的なOffice、インテリジェント クラウド サービス、世界クラスのセキュリティの組み合わせで、より多くの実現に役立ちます。
 
@@ -47,7 +47,7 @@ Microsoft 365は、Microsoft クラウドによって有効およびセキュリ
 |関連情報|説明|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|バージョンのバージョンに関する情報を取得Microsoft 365。|
-|[Microsoft 365のドキュメントの詳細](../business/index.yml)|中小企業向けMicrosoft 365のバージョンに関する詳細情報を取得します。|
+|[Microsoft 365のドキュメントの詳細](../admin/index.yml)|中小企業向けMicrosoft 365のバージョンに関する詳細情報を取得します。|
 |[Microsoft 365のドキュメントの詳細](/microsoft-365/education/)|教育機関向けアプリケーションのバージョンMicrosoft 365を取得します。|
 |[Microsoft 365ドキュメントEnterprise参照](./index.yml)|エンタープライズ組織向けアプリケーションのバージョンMicrosoft 365を取得します。|
 |||

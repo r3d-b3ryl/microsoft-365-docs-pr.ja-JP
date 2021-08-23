@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 1577b20cfa4f18a8db4fcba8d05a27bdacd693074ed3d14319101c6122cb443f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7e4d2d9813081785f3883c11a3a4ae8e8420855
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834109"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58378061"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>非永続的な仮想デスクトップ インフラストラクチャ デバイスのオンボーディング
 
@@ -73,9 +73,9 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 
     1. [パッケージ **のダウンロード] を** クリックし、.zip保存します。
 
-2. windowsDefenderATPOnboardingPackage フォルダーからファイルをコピーし、.zip ファイルからパスの `golden/master` 下のイメージにコピーします `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 。 
+2. .zip ファイルから抽出された WindowsDefenderATPOnboardingPackage フォルダーから、パスの下にあるゴールデン/マスター イメージにファイルをコピーします `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 。 
 
-    1. デバイスごとに 1 つのエントリを実装していない場合は、WindowsDefenderATPOnboardingScript.cmd をコピーします。
+    1. 各デバイスに複数のエントリ (セッションごとに 1 つ) を実装する場合は、WindowsDefenderATPOnboardingScript.cmd をコピーします。
 
     1. デバイスごとに 1 つのエントリを実装する場合は、windowsDefenderATPOnboardingScript.cmd と windowsDefenderATPOnboardingScript.cmd の両方Onboard-NonPersistentMachine.ps1コピーします。
     
@@ -123,7 +123,7 @@ VDI デバイスは、Defender for Endpoint ポータルに次のように表示
 7. デバイス名を入力して検索機能を使用し、[検索の種類として **デバイス]** を選択します。
 
 
-## <a name="for-downlevel-skus"></a>ダウンレベル SKU の場合
+## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>ダウンレベル SKU の場合 (Windows Server 2008 R2/2012 R2/2016)
 
 > [!NOTE]
 > 次のレジストリは、目的が "デバイスごとに 1 つのエントリ" を達成する場合にのみ関連します。
@@ -184,7 +184,7 @@ DISM コマンドとオフライン サービスの詳細については、以�
 
 5. 通常と同じ方法で、ゴールデン/マスター イメージを再シールします。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシー Windows 10デバイスのオンボード](configure-endpoints-gp.md)
 - [デバイスをWindows 10デバイスをオンボードMicrosoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード](configure-endpoints-mdm.md)

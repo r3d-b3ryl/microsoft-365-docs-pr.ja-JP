@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3edacef44021211d82b1b7d8c477683185c87f00
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f94e4d5e51b6a846a0439e3833a01d252c51bd0a
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247615"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392136"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>デバイスでライブ応答コマンドを実行する
 
@@ -60,7 +60,9 @@ ms.locfileid: "58247615"
 
 5.  ライブ応答コマンドをキューに入れ、一度に 1 つしか実行できません。 
 
-6.  1 つの API 呼び出しで複数のライブ応答コマンドを実行できます。 ただし、ライブ応答コマンドが失敗した場合、次のすべてのアクションは実行されません。
+6.  この API 呼び出しを実行しようとしているコンピューターが、自動修復レベルが割り当てられていない RBAC デバイス グループ内にある場合は、少なくとも特定のデバイス グループの最小修復レベルを有効にする必要があります。
+
+7.  1 つの API 呼び出しで複数のライブ応答コマンドを実行できます。 ただし、ライブ応答コマンドが失敗した場合、後続のすべてのアクションは実行されません。
 
 ## <a name="minimum-requirements"></a>最小要件
 
@@ -98,14 +100,14 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明|
+|名前|型|説明|
 |---|---|---|
 |Authorization|String|ベアラー\<token>\. 必須です。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|種類|説明|
+|パラメーター|型|説明|
 |---|---|---|
 |コメント|文字列|アクションに関連付けるコメント。|
 |コマンド|配列|実行するコマンド。 使用できる値は PutFile、RunScript、GetFile です。|

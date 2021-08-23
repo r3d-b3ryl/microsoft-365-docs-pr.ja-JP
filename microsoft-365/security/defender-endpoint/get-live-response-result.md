@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0d76c34ae2c610933285f93e349459497de7cb79
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5b1221e47d3e34832ac798fa3be0a37d607c3975
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255527"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392143"
 ---
 #  <a name="get-live-response-results"></a>ライブ応答の結果を取得する
 
@@ -76,7 +76,8 @@ ms.locfileid: "58255527"
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
-|アプリケーション|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
+アプリケーション|Machine.Read.All|''すべてのコンピューター プロファイルを読み取る'
+アプリケーション|"Machine.ReadWrite.All|'すべてのコンピューター情報の読み取りと書き込み'
 |委任 (職場または学校のアカウント)|Machine.LiveResponse|特定のコンピューターでライブ応答を実行する|
 
 ## <a name="http-request"></a>HTTP 要求
@@ -88,7 +89,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明|
+|名前|型|説明|
 |---|---|---|
 |Authorization|String|ベアラー {トークン}。必須。|
 

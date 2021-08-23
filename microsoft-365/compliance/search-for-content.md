@@ -11,12 +11,12 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Microsoft 365 コンプライアンス センター のコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Skype for Business でのインスタント メッセージング会話をすばやく検索します。
-ms.openlocfilehash: d56c2e9532611593fe41df8ac2bee4860b3920b175e50a188abbc8de67812473
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6161b84fa04b461835777ba769129b9cc32f5ab7
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855637"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377967"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索する
 
@@ -41,8 +41,6 @@ Microsoft 365 コンプライアンス センター のコンテンツ検索ツ�
 - [検索結果のキーワード統計](view-keyword-statistics-for-content-search.md) を表示し、必要に応じてクエリを絞り込む
 
 - [組織がインポートしたサード](use-content-search-to-search-third-party-data-that-was-imported.md)パーティ製のデータを検索Microsoft 365
-
-- [複数の検索](bulk-edit-content-searches.md) のクエリとコンテンツの場所を一括編集する
 
 - [コンテンツの場所エラーを解決](retry-failed-content-search.md) するためにコンテンツ検索を再試行する
 

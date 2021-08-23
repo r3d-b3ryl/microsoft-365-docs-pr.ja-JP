@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3b1e74289046f7c04b77b25448af409966117fd9836f22dfdf813bdfd732b524
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 83681c2258a140c4e7bc4757e0d4f9f63c9991db
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890961"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364591"
 ---
 # <a name="get-started-with-app-control"></a>アプリ制御の使用を開始する
 
@@ -57,5 +57,17 @@ Microsoft マネージド デスクトップ基本ポリシーを取得するよ
 
 ロールアウト中はいつでも、別のサービス要求を開き、この展開の一部を一時停止またはロールバックできます。
 
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
 
+1. 管理 [ポータルにアクセスします](access-admin-portal.md)。
+1. [管理者ポータルで管理者連絡先を追加して確認します](add-admin-contacts.md)。
+1. [登録後に設定を調整します](conditional-access.md)。
+1. ユーザーを展開して割[り当Intune ポータル サイト](company-portal.md)します。
+1. [ライセンスを割り当てる](assign-licenses.md)。
+1. [アプリを展開します](deploy-apps.md)。
+1. [デバイスをセットアップします](set-up-devices.md)。
+1. Autopilot と [登録の状態] ページ [を使用して、初回実行エクスペリエンスを設定します](esp-first-run.md)。
+1. [ユーザー サポート機能を有効にする](enable-support.md)。
+1. [ユーザーがデバイスを使用する準備を整えます](get-started-devices.md)。
+1. アプリ コントロールの使用を開始します (この記事)。
 

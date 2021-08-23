@@ -1,5 +1,5 @@
 ---
-title: 管理者の申請
+title: 申請の管理
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -19,14 +19,14 @@ ms.custom:
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: be666d89c7a7d67a6b041e12fc53f005829ad455
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 13520774191e9b593f962b8291c873303ddf8580
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349982"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400153"
 ---
-# <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
+# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -85,9 +85,9 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
 
 4. [Microsoft **に提出する理由の選択] セクション** で、次のいずれかのオプションを選択します。
    - **ブロックされていない必要があります (誤検知)**
-   - **ブロックされている必要** があります: 電子メールが表示されるセクションに分類されている必要があります。次のいずれかの値を選択します (不明な場合は、最適な判断を使用してください)。
+   - **ブロックされている必要** があります: 電子メールが表示されるセクションに分類されている必要があります。次のいずれかの値を選択します (不明な場合は、最善の判断を使用してください)。
      - **フィッシング**
-     - **スパム**
+     - **[スパム]**
      - **マルウェア**
 
 5. 完了したら、[送信] ボタン **をクリック** します。
@@ -151,7 +151,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
      - **ポリシー アクション**
      - **提出者**
 
-     完了したら、[適用] を **クリックします**。
+     完了したら、**[適用]** をクリックします。
 
    - エントリをフィルターするには、[フィルター] を **クリックします**。 使用できるフィルターは次のとおりです。
      - **提出日**:**開始日と****終了日**。
@@ -161,14 +161,14 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
      - **Sender**
      - **Tags**
 
-     完了したら、[適用] を **クリックします**。
+     完了したら、**[適用]** をクリックします。
 
      > [!div class="mx-imgBorder"]
      > ![管理者申請の新しいフィルター オプション](../../media/admin-submission-filters.png)
 
    - エントリをグループ化するには、[グループ] を **クリック** し、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
-     - **種類**
+     - **Type**
      - **理由**
      - **状態**
      - **再スキャンの結果**
@@ -208,7 +208,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
      - [**Sender IP (送信者の IP)**]
      - **フィッシング シミュレーション**
 
-     完了したら、[適用] を **クリックします**。
+     完了したら、**[適用]** をクリックします。
 
    - エントリをフィルターするには、[フィルター] を **クリックします**。 使用できるフィルターは次のとおりです。
      - **報告日**:**開始日と****終了日**。
@@ -221,7 +221,7 @@ Exchange Online メールボックスを持つ組織では、管理者は Micros
      - **フィッシングシミュレーション**:**はいまたは****いいえ**
      - **Tags**
 
-     完了したら、[適用] を **クリックします**。
+     完了したら、**[適用]** をクリックします。
 
      > [!div class="mx-imgBorder"]
      > ![ユーザー申請の新しいフィルター オプション](../../media/admin-submission-reported-messages.png)

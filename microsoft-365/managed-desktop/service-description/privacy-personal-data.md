@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 15268fb8203aad48c0515277851f38f22719d8f06a1fc2af12c84e37df8b6b46
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2964c79c586962df31c70b25f13d974a1aa90cd5
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877655"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392071"
 ---
 # <a name="overview"></a>概要
 
@@ -73,14 +73,29 @@ Microsoft Intuneおよびサービスをサポートするために、データ�
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 Microsoft Defender for Endpoint は、管理、追跡、およびレポートの目的で、Microsoft マネージド デスクトップデバイスの情報を収集および保存します。 収集される情報には、ファイル データ (ファイル名、サイズ、ハッシュなど)、プロセス データ (実行中のプロセス、ハッシュ)、レジストリ データ、ネットワーク接続データ、デバイスの詳細 (デバイス識別子、デバイス名、オペレーティング システムのバージョンなど) が含まれます。 [Microsoft Defender for Endpoint のデータ](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)収集とストレージの場所の詳細については、「Microsoft Defender for Endpoint data storage and privacy」を参照してください。 
 
-## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for Enterprise 
+## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise 
 Microsoft 365 Apps for enterpriseは、Microsoft マネージド デスクトップ Microsoft マネージド デスクトップ によって管理される定義済みの更新チャネルに基づいて、これらのアプリが最新バージョンで最新のバージョンに更新されるのを確認するために、Microsoft マネージド デスクトップ とデータを収集および共有します。 Microsoft [Defender for Endpoint のデータストレージとプライバシーを参照](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)して、Microsoft 365 Appsのデータ収集と保存場所の詳細について説明します。
 
 ## <a name="major-data-change-notification"></a>メジャー データ変更通知
 Microsoft マネージド デスクトップ、サービス通信フレームワークで説明されている変更管理プロセスに従います。 セキュリティ インシデントとサービスMicrosoft 365変更Microsoft マネージド デスクトップ管理ポータルを通じて、お客様に通知します。 収集されたデータの種類と格納場所に対する変更は、重要な変更と見なされます。 この変更に関する詳細な通知は、製品およびサービスの標準的な方法と同様に、少なくとも 30 日間Microsoft 365提供します。 詳細については、「サービスの変更 [と通信」を参照してください](/microsoft-365/managed-desktop/service-description/servicechanges)。
 
 ## <a name="compliance"></a>コンプライアンス
-Microsoft マネージド デスクトップ外部監査を受け、包括的なコンプライアンス提供のセットを取得しました。 詳細については、「コンプライアンス」Microsoft マネージド デスクトップ[参照してください](/microsoft-365/managed-desktop/intro/compliance)。 監査レポートは、Microsoft サービスセキュリティポータルでダウンロードできます。これは、Microsoft[サービス](https://aka.ms/stp)オンライン サービスのEnterprise機能します。 (Microsoft マネージド デスクトップ"監視と管理"というカテゴリの下に、これらのドキュメント内に一覧表示されます。 
+Microsoft マネージド デスクトップ外部監査を受け、包括的なコンプライアンス提供のセットを取得しました。 詳細については、「コンプライアンス」Microsoft マネージド デスクトップ[参照してください](/microsoft-365/managed-desktop/intro/compliance)。 監査レポートは、Microsoft サービスセキュリティポータルでダウンロードできます。これは、Microsoft[サービス](https://aka.ms/stp)オンライン サービスのEnterprise機能します。 (Microsoft マネージド デスクトップ"監視と管理"というカテゴリの下に、これらのドキュメント内に一覧表示されます。
+
+## <a name="data-subject-rights"></a>データ主体の権利
+
+Microsoft マネージド デスクトップ、GDPR および CCPA のプライバシー規制に従い、データ主体は個人データに対する特定の権利を与えます。 これらの権利には、個人データのコピーの取得、修正の要求、処理の制限、削除、または別のコントローラーに移動するための電子形式での受信が含まれます。 データ主体要求 (DSR) の一般的な詳細については、「データ主体要求」および [「GDPR および CCPA」を参照してください](/compliance/regulatory/gdpr-data-subject-requests)。
+
+ケース管理システムによって収集されたデータに対してデータ主体権限 (DSRs) を実行するには、Microsoft マネージド デスクトップを参照してください。
+
+- Microsoft Defender for Endpoint アラートのデータ: セキュリティ管理者は、管理ポータルでレポート要求を送信することで、Microsoft Defender for Endpoint アラートに関連する個人データの削除または抽出を [要求できます](https://aka.ms/memadmin)。 要求で、[要求の変更] 、 **カテゴリ [** セキュリティ]、および **[その** 他] のサブカテゴリを選択 **します**。 要求の説明に関連するデバイス名を指定します。
+- サポート要求Microsoft マネージド デスクトップデータ: IT 管理者は、管理者ポータルでレポート要求を送信することで、個人データ関連のサポート要求の削除または抽出を[要求できます](https://aka.ms/memadmin)。 要求で、[要求の変更] 、 **カテゴリ [** セキュリティ]、および **[その** 他] のサブカテゴリを選択 **します**。 要求の説明に関連するデバイス名またはユーザー名を指定します。
+
+サービスに関連する他の製品の DSRs については、次の記事を参照してください。
+
+- Windows[診断データ](/compliance/regulatory/gdpr-dsr-windows)
+- Microsoft [Intune データ](/compliance/regulatory/gdpr-dsr-intune)
+- Azure Active [Directory データ](/compliance/regulatory/gdpr-dsr-azure)
 
 ## <a name="legal"></a>法務
 組織のお客様が提供する製品のエンド ユーザーに対する Microsoft [](https://privacy.microsoft.com/privacystatement)のプライバシーに関する通知 **-** Microsoft プライバシーステートメントは、エンド ユーザーが仕事用アカウントを使用して Microsoft 製品にサインインするときに、自分のアカウント (プライバシー関連の設定の制御を含む) を制御および管理し、データにアクセスして処理できるとエンド ユーザーに通知します。b) Microsoft は、データを収集および処理して、組織およびエンド ユーザーにサービスを提供する場合があります。

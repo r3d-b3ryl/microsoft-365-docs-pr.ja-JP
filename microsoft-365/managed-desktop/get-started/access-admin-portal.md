@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 44b5fed8c99f9d2c738abfcdad99e1f4c020d3bca97591c3645ae3c8ac6c1029
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44bc897cd2ead4c6c8568e8dc5048cf0118e35fc
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869845"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364543"
 ---
 # <a name="access-the-admin-portal"></a>管理ポータルへのアクセス
 
@@ -82,4 +82,18 @@ ms.locfileid: "53869845"
 5. 左側 **のウィンドウから [ユーザー** とグループ] を選択し **、[+ ユーザー/グループの追加] を選択します**。
 6. [ユーザーとグループ] から必要な **グループを検索します**。
 7. [役割の選択] から該当する役割 **を検索** し、その役割を選択します。
-8. [割り当 **て] を選択します**。
+8. **[割り当て]** を選択します。
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
+
+1. 管理ポータルにアクセスする (この記事)。
+1. [管理者ポータルで管理者連絡先を追加して確認します](add-admin-contacts.md)。
+1. [登録後に設定を調整します](conditional-access.md)。
+1. ユーザーを展開して割[り当Intune ポータル サイト](company-portal.md)します。
+1. [ライセンスを割り当てる](assign-licenses.md)。
+1. [アプリを展開します](deploy-apps.md)。
+1. [デバイスをセットアップします](set-up-devices.md)。
+1. Autopilot と [登録の状態] ページ [を使用して、初回実行エクスペリエンスを設定します](esp-first-run.md)。
+1. [ユーザー サポート機能を有効にする](enable-support.md)。
+1. [ユーザーがデバイスを使用する準備を整えます](get-started-devices.md)。
+1. [アプリ コントロールの使用を開始します](get-started-app-control.md)。

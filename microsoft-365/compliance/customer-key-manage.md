@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定した後、AKV キーを復元し、アクセス許可を管理し、データ暗号化ポリシーを作成および割り当て、管理する方法について説明します。
-ms.openlocfilehash: 263f5d13a554ab06c140101595e39c98ae1bc9488dbeff13da0eda9c02d334fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cbfc93413aa7abfb37c201b8446050b1242461ac
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835837"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400261"
 ---
 # <a name="manage-customer-key"></a>顧客キーの管理
 
@@ -140,13 +140,13 @@ DEP を作成するには、サーバーを使用してオンラインSharePoint
 2. [管理シェルMicrosoft Office SharePoint Onlineで、次のようにRegister-SPODataEncryptionPolicyコマンドレットを実行します。
 
    ```powershell
-   Register-SPODataEncryptionPolicy -Identity <adminSiteCollectionURL> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
+   Register-SPODataEncryptionPolicy <adminSiteCollectionURL> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
    ```
 
    例:
   
    ```powershell
-   Register-SPODataEncryptionPolicy -Identity https://contoso.sharepoint.com -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
+   Register-SPODataEncryptionPolicy  https://contoso.sharepoint.com -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
    ```
 
    DEP を登録すると、geo のデータで暗号化が開始されます。 暗号化には時間がかかる場合があります。 このパラメーターの使用の詳細については [、「Register-SPODataEncryptionPolicy」を参照してください](/powershell/module/sharepoint-online/register-spodataencryptionpolicy?preserve-view=true&view=sharepoint-ps)。
@@ -301,7 +301,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Enabled $false
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
-次に例を示します。
+例:
   
 ```powershell
 Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -319,7 +319,7 @@ Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O3
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-次に例を示します。
+例:
 
 ```powershell
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
@@ -331,7 +331,7 @@ Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
 
-次に例を示します。
+例:
 
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
@@ -370,7 +370,7 @@ Microsoft 365削除パスを監査および検証します。 詳細について
 
 - [O365 Exit Planning に関する考慮事項](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-複数ワークロード DEP の削除は、顧客キーのMicrosoft 365サポートされていません。 マルチワークロード DEP は、すべてのテナント ユーザーで複数のワークロード間でデータを暗号化するために使用されます。 このような DEP を削除すると、複数のワークロード間のデータにアクセスできなくなります。 サービスを完全に終了Microsoft 365場合は、文書化されたプロセスごとにテナントの削除のパスを追求できます。 [Azure Active Directoy でテナントを削除する方法を参照してください](/azure/active-directory/enterprise-users/directory-delete-howto)。
+複数ワークロード DEP の削除は、顧客キーのMicrosoft 365サポートされていません。 マルチワークロード DEP は、すべてのテナント ユーザーで複数のワークロード間でデータを暗号化するために使用されます。 このような DEP を削除すると、複数のワークロード間のデータにアクセスできなくなります。 サービスを完全に終了Microsoft 365場合は、文書化されたプロセスごとにテナントの削除のパスを追求できます。 「[テナントを削除する方法」を参照Azure Active Directory。](/azure/active-directory/enterprise-users/directory-delete-howto)
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>顧客キーとユーザーキーの可用性キーをExchange Online Skype for Business
 
@@ -397,7 +397,7 @@ PowerShell コマンドレットは一度に 1 つの DEP に対してしか実�
 
 4. Microsoft のサポートに問い合わせ、データ削除 eDocument を要求します。
 
-    Microsoft は、要求に応じて、データの削除を承認および承認する法的文書を送信します。 オンボーディング中に FastTrack オファーで承認者としてサインアップした組織内のユーザーは、このドキュメントに署名する必要があります。 通常、これは会社の役員または他の指定された人物で、組織に代わって書類に署名する法的権限を持ちます。
+    Microsoft は、要求に応じて、データの削除を承認および承認する法的文書を送信します。 オンボーディング中に承認者としてFastTrack組織内のユーザーは、このドキュメントに署名する必要があります。 通常、これは会社の役員または他の指定された人物で、組織に代わって書類に署名する法的権限を持ちます。
 
 5. 代理人が法的文書に署名したら、それを Microsoft に返します (通常は eDoc 署名を通じて)。
 
@@ -413,7 +413,7 @@ Online、SharePoint、および OneDrive for BusinessファイルTeams削除パ�
 
 2. 可用性キーを削除するには、Microsoft にお問い合わせください。
 
-    可用性キーを削除するために Microsoft に連絡すると、法的文書が送信されます。 オンボーディング中に FastTrack オファーで承認者としてサインアップした組織内のユーザーは、このドキュメントに署名する必要があります。 通常、これは会社の役員または他の指定された人物で、組織に代わって書類に署名する法的権限を持ちます。
+    可用性キーを削除するために Microsoft に連絡すると、法的文書が送信されます。 オンボーディング中に承認者としてFastTrack組織内のユーザーは、このドキュメントに署名する必要があります。 通常、これは会社の役員または他の指定された人物で、組織に代わって書類に署名する法的権限を持ちます。
 
 3. 代理人が法的文書に署名したら、それを Microsoft に返します (通常は eDoc 署名を通じて)。
 

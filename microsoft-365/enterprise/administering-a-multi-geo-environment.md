@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 管理者は、複数地域の環境でSharePointサービスOneDrive管理する方法について学習できます。
-ms.openlocfilehash: e1c608425c25c018eddebe14023537b2739694d110d3683829c861dd96a61c73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5089a63f4c4f3406c146188151a145cf4b6aa7f2
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795208"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400129"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
@@ -58,9 +58,9 @@ DLP ポリシーは、そのポリシーの適用性に基づいて各地域の�
 
 地域の場所のすべてのユーザーに対する Information Protection ポリシーとデータ損失防止ポリシーの実装は、UI で使用可能なオプションではありません。その代わりに、ポリシーの適用が可能なアカウントを選択するか、すべてのアカウントにグローバルにポリシーを適用する必要があります。
 
-## <a name="microsoft-powerapps"></a>Microsoft PowerApps
+## <a name="microsoft-power-apps"></a>Microsoft Power Apps
 
-サテライト地域に作成された PowerApps は、テナントの中心地にあるエンドポイントを使用します。 Microsoft PowerApps は、Multi-Geo サービスではありません。 
+Power Apps作成されたデータは、テナントの中央の場所にある端点を使用します。 Microsoft Power Appsは、複数地域サービスではありません。 
 
 ## <a name="power-automate"></a>Power Automate
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft プライバシー管理のサブジェクト権限要求ソリューションは、個人データを検索し、コンテンツのレビューとレポートの作成に関して共同作業を行う際に役立ちます。
-ms.openlocfilehash: 4db9c744468cd75fb09bc8ff45ef9f15d26684a7c2b446557914be9e26b45ccc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d8f8a636d5322666b3a60ce7310c8cd66ac89538
+ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807686"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380238"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>プライバシー管理で件名の権利要求を管理する (プレビュー)
 
@@ -127,7 +127,7 @@ ms.locfileid: "53807686"
 
 検索クエリの編集が完了すると、以前の検索結果を置き換える新しい検索が実行されます。 これにより、[進行状況] セクションの状態が最初の手順である [データ推定] **にリセットされます**。 新しい検索の完了には最大 60 分かかる場合があります。 完了すると、要求の詳細ページに更新された結果が表示されます。
 
-### <a name="data-retention"></a>データ保持
+### <a name="data-retention"></a>データ保存期間
 
 このツールを使用して生成されたレポートと、Azure に保存された注釈付きファイルなどの関連データは、指定された期間保存されます。 この期間は、[データ保持期間] セクション **設定を通** じてグローバルレベルで定義され、30 日から 90 日間の間で選択できます。 詳細については、「プライバシー管理の [開始」を参照してください](privacy-management-setup.md)。
 
@@ -149,7 +149,7 @@ Microsoft Power Automateは、アプリケーションとサービス全体で�
 
 以下のPower Automateテンプレートがプライバシー管理に含まれています。
 
-- **ServiceNow でプライバシー管理** ケースのレコードを作成する : このテンプレートは、ServiceNow ソリューションを使用して件名の権利要求ケースを追跡する組織向けです。 ServiceNow インスタンスの詳細を入力する必要があります。 インスタンスに接続すると、サブジェクト権限要求管理者は ServiceNow でケースのレコードを作成し、必要に応じてテンプレートが選択したフィールドに設定する内容をカスタマイズできます。 コネクタの詳細については [、「ServiceNow Connector リファレンス ページ」を参照してください](/connectors/service-now/)。
+- **ServiceNow でプライバシー管理** ケースのレコードを作成する : このテンプレートは、ServiceNow ソリューションを使用して件名の権利要求ケースを追跡する組織向けです。 ServiceNow に接続するアカウントを含む、ServiceNow インスタンスの詳細を入力する必要があります。 このアカウントには、ServiceNow でインシデントを作成し、インシデントの詳細を入力する機能が必要です。 インスタンスに接続すると、サブジェクト権限要求管理者は ServiceNow でケースのレコードを作成し、必要に応じてテンプレートが選択したフィールドに設定する内容をカスタマイズできます。 コネクタの詳細については [、「ServiceNow Connector リファレンス ページ」を参照してください](/connectors/service-now/)。
 - **予定表のアラームを作成** する: このテンプレートは、件名の権利の要求に対して、Outlookカレンダーで期日通知を設定します。 このツールは、要求のプロパティ (要求の名前や期限など) から特定の詳細を入力します。 説明の詳細を追加し、受信者を指定し、その他の詳細設定を調整できます。
 
 ### <a name="create-a-new-power-automate-flow-from-a-template"></a>テンプレートから新Power Automateフローを作成する

@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft Power Apps Microsoft 365、Microsoft Flow、Dynamics 365 for Finance など、セルフサービス サインアップと利用可能なセルフサービス プログラムについて説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: e1a11db1e5fe1d6cb35d1583a6a6fc9f7bb73e16d76e98d2c8cb739223d22db3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e03f82903b8aa81db2425769a23d7ec379120526
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823809"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400213"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>組織でのセルフサービス サインアップの使用
 
@@ -50,7 +50,7 @@ ms.locfileid: "53823809"
 |**Office 365 A1Plus** <br/> |対象となる学生と教師は、上記のOffice 365 A1と他のユーザーを含む、Office 365 A1 Plus にサインアップMicrosoft 365 Apps for enterprise。 Microsoft 365 Apps for enterpriseは、デスクトップまたはラップトップ コンピューターにインストールされている Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access、Skype for Business などの生産性ソフトウェアです。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BIユーザーは、直感的な新しい方法でデータの視覚化、発見の共有、共同作業を行うことができます。 <br/> 組織が既に購読している場合は、ユーザーに制限された高度な機能への無料アクセスを提供する「Power BI Pro 個人ユーザー試用版」のライセンスが追加で表示される場合があります。  <br/> |[組織内の Power BI](./power-bi-in-your-organization.md) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**RMS (Rights Management Services)** <br/> |個人用の RMS は、Azure Rights Management (Azure RMS) で保護された機密性の高いファイルが送信されているが、IT 部門が Azure Rights Management (Azure RMS)、Active Directory Rights Management Services (AD RMS) のいずれも実装していない組織に所属するユーザーのための無料のセルフサービス サブスクリプションです。  <br/> |[個人用の RMS と Azure Rights Management](/azure/information-protection/rms-for-individuals) <br/> |[Microsoft Rights Management ポータル](https://portal.azure.com/) したがって、お客様は、特定の権利保護されたドキュメントを開くことができるかどうかをチェックできます。  <br/> |
-|**Microsoft Power Apps** <br/> |PowerApps では、管理者が作成したアプリ、または他のユーザーが作成して共有したアプリを実行することで組織データを管理することができます。アプリはスマートフォンなどのモバイル デバイスで動作します。または Dynamics 365 を開くことによって、ブラウザで実行することもできます。無限の多様性を備えるアプリを作成することができます。すべて、C# などのプログラミング言語は必要ありません。  <br/> |[PowerApps のセルフサービス サインアップ](/powerapps/maker/signup-for-powerapps) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
+|**Microsoft Power Apps** <br/> |このPower Apps、作成したアプリ、または他のユーザーが作成して共有したアプリを実行して、組織データを管理できます。 アプリは携帯電話などのモバイル デバイスで実行するか、Dynamics 365 を開いてブラウザーで実行できます。 アプリケーションなどのプログラミング言語を学習せずに、無限に多様なアプリを作成C#。  <br/> |[セルフサービスのアカウントにサインアップPower Apps](/powerapps/maker/signup-for-powerapps) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Dynamics 365 for Financials** <br/> |中小企業向けの完全なビジネス ソリューションおよび財務管理ソリューションを提供します。Dynamics 365 for Financials を使用することで、使用開始の 1 日目から注文、販売、請求書やレポートの作成が容易になります。  <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |
 |**Microsoft Dynamics 365 for Operations** <br/> |ビジネスのスピードを加速できます。Dynamics 365 for Operations の完全な ERP ツールは、グローバルなスケーラビリティとデジタル インテリジェンスを提供し、企業のペースに応じた成長をサポートします。  <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |
 |**Microsoft AppSource** <br/> |Microsoft AppSource は、Microsoft クラウド プラットフォーム上に構築された SaaS (サービスとしてのソフトウェア) のビジネス アプリを対象としています。 AppSource には、Azure、Dynamics 365、Office 365、Power BI など、Microsoft 製品の機能を拡張する何百ものアプリ、アドオン、およびコンテンツ パックが備Power BI。  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |

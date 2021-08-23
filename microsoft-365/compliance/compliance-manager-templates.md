@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定されたファイルを使用してテンプレートを作成Excelします。
-ms.openlocfilehash: 1b1bc9ea01905e38f695707db1b302c160ea5818
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: fe6b8a946edb84fbeb5eb002eb33c4af2790b23b
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349874"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393366"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーでの評価テンプレートの操作
 
@@ -49,13 +49,33 @@ ms.locfileid: "58349874"
 
 ### <a name="purchase-premium-template-licenses"></a>プレミアム テンプレート ライセンスの購入
 
-テンプレート ライセンスは、管理センターで購入できます (サブスクリプション、ライセンス、請求の[詳細を参照)。](/microsoft-365/commerce/) 購入するライセンスの数と支払いプランを選択します。 また、プログラムまたはボリューム ライセンスへの参加を通クラウド ソリューション プロバイダー[ライセンス](https://partner.microsoft.com/membership/cloud-solution-provider)[を取得できます](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
+テンプレート ライセンスは、コンプライアンス マネージャーのライセンス契約に応じて、1 つ以上の方法で取得できます。 購入が完了すると、テンプレートは 48 時間以内にテナントで利用できます。
 
-購入が完了すると、テンプレートは 48 時間以内にテナントで利用できます。
+**商用およびGCC中程度**
+
+商用アカウントGCC管理センターでテンプレート ライセンスを購入できます[(サブスクリプション](/microsoft-365/commerce/)、ライセンス、課金の詳細)。 購入するライセンスの数と支払いプランを選択します。
+
+購入リンク:
+
+- [商用](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
+- [GCCモデレート](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+
+また、プログラムまたはボリューム ライセンスへの参加を通クラウド ソリューション プロバイダー[ライセンス](https://partner.microsoft.com/membership/cloud-solution-provider)[を取得できます](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
+
+**GCC高アカウントと DOD アカウント**
+
+GCC高いアカウントと DOD アカウントは、ボリューム ライセンスを使用してテンプレート ライセンス[を購入する必要があります](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
 
 ### <a name="try-out-premium-templates"></a>プレミアム テンプレートを試す
 
 購入前にプレミアム テンプレートを試す場合は、ライセンスの試用版を入手することもできます。 試用版ライセンスは、90 日間、最大 25 のテンプレートに対して良好です。 試用版ライセンスを取得すると、テンプレートは 48 時間以内にテナントで利用できます。
+
+試用版を開始するには、組織の適切なリンクを選択します。
+
+- [商用](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/e320704d-b7c9-4012-b6a6-0a2679790360)
+- [GCCモデレート](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
+- [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
+- [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
 
 #### <a name="active-and-inactive-templates"></a>アクティブなテンプレートと非アクティブなテンプレート
 

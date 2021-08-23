@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: 20a7858e50a72073170be317b654de33804a5cb4
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 428211e890bcff816209b003566fc76072749bda
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357019"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58378003"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -120,7 +120,7 @@ Microsoft 365 for Enterprise の製品、機能、コンポーネントの展開
 
 ## <a name="additional-microsoft-365-products"></a>追加の Microsoft 365 製品
 
-- [Microsoft 365 Business Premium](../business/index.yml)
+- [Microsoft 365 Business Premium](../admin/index.yml)
 
   小規模および中規模の企業向けに、優れた生産性やコラボレーション機能と、ビジネス データを保護するためのデバイス管理およびセキュリティ ソリューションを統合します。
 

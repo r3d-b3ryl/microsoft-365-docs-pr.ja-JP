@@ -15,13 +15,13 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.date: 06/02/2021
-ms.openlocfilehash: 1120d695bd8dd81931b92f11b92308ae363db4ea
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.date: 08/17/2021
+ms.openlocfilehash: 7fff73b2887418d47358b5424e537e5de4d60ce9
+ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257838"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380250"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -147,7 +147,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    > [!div class="mx-imgBorder"]
    > ![MEM OMA URI 構成](images/mem05-add-row-oma-uri.png)
 
-6. [**保存**] をクリックします。 **[行の追加]** が閉じます。 [カスタム **] で**、[次へ] **をクリックします**。 手順 **3 スコープ タグでは、** スコープ タグは省略可能です。 次のいずれかの操作を行います。
+6. **[保存]** をクリックします。 **[行の追加]** が閉じます。 [カスタム **] で**、[次へ] **をクリックします**。 手順 **3 スコープ タグでは、** スコープ タグは省略可能です。 次のいずれかの操作を行います。
 
    - [ **スコープ タグの選択]** をクリックし、スコープ タグ (オプション) を選択し、[次へ] を **クリックします**。
    - または、[次へ] **をクリックします。**
@@ -263,7 +263,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 1. **[powershell]** と入力スタート メニュー **右クリックし**、[管理者Windows PowerShell **実行] を選択します**。
 
-2. 次の cmdlet を入力します。
+2. 次のいずれかのコマンドレットを入力します。 (ルール ID [など、詳細については、「](attack-surface-reduction-rules.md) 攻撃表面の縮小ルール」を参照してください)。
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
@@ -321,7 +321,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 ## <a name="related-articles"></a>関連記事
 
-- [攻撃表面の縮小ルールを使用して攻撃表面を削減する](attack-surface-reduction.md)
+- [攻撃面の減少ルール](attack-surface-reduction-rules.md)
 
 - [攻撃表面の縮小を評価する](evaluate-attack-surface-reduction.md)
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ca05076b1f70ec81f0263cf4d5b38ddacf399b25b4f37a04514b7d94b69a4977
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 77e7b86de5369b6a65224579de214d32c1f628e3
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854377"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377979"
 ---
 # <a name="alert-resource-type"></a>アラート リソースの種類
 
@@ -42,7 +42,7 @@ ms.locfileid: "53854377"
 メソッド |戻り値の型 |説明
 :---|:---|:---
 [警告の取得](get-alert-info-by-id.md) | [アラート](alerts.md) | 1 つのアラート [オブジェクトを取得](alerts.md) します。
-[アラートの一覧表示](get-alerts.md) | [アラート](alerts.md) コレクション | アラート [コレクションを一覧表示](alerts.md) します。
+[警告の一覧表示](get-alerts.md) | [アラート](alerts.md) コレクション | アラート [コレクションを一覧表示](alerts.md) します。
 [警告の更新](update-alert.md) | [アラート](alerts.md) | 特定のアラートを [更新します](alerts.md)。
 [バッチ更新の通知](batch-update-alerts.md) | | アラートのバッチを更新 [します](alerts.md)。
 [アラートの作成](create-alert-by-reference.md)|[アラート](alerts.md)|Advanced Hunting から取得したイベント データに基づいてアラート [を作成します](run-advanced-query-api.md)。
@@ -54,11 +54,11 @@ ms.locfileid: "53854377"
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ |    種類    |    説明
+プロパティ |    型    |    説明
 :---|:---|:---
 id | String | アラート ID。
 title | String | 警告タイトル。
-description | String | 警告の説明。
+説明 | String | 警告の説明。
 alertCreationTime | Null 許容の DateTimeOffset | アラートが作成された日付と時刻 (UTC)。
 lastEventTime | Null 許容の DateTimeOffset | 同じデバイスでアラートをトリガーしたイベントの最後の発生。
 firstEventTime | Null 許容の DateTimeOffset | そのデバイスでアラートをトリガーしたイベントの最初の発生。
@@ -68,6 +68,9 @@ incidentId | Null 許容長 | アラート [の](view-incidents-queue.md) イン
 investigationId | Null 許容長 | アラート [に](automated-investigations.md) 関連する調査 ID。
 investigationState | Null 許容列挙 | 調査の現在の [状態](automated-investigations.md)です。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''
 assignedTo | String | アラートの所有者。
+rbacGroupName | String | RBAC デバイス グループ名。
+mitreTechniques | String | Mitre Enterprise ID。
+relatedUser | String |  特定のアラートに関連するユーザーの詳細。
 severity | 列挙 | アラートの重大度。 指定できる値は、'UnSpecified'、'Informational'、'Low'、'Medium' および 'High' です。
 status | 列挙 | アラートの現在の状態を指定します。 指定できる値は、'Unknown'、'New'、'InProgress'、'Resolved' です。
 classification | Null 許容列挙 | アラートの仕様。 指定できる値は、'Unknown'、'FalsePositive'、'TruePositive'です。

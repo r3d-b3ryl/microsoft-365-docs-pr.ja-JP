@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のプライバシー管理を設定し、役割とアクセス許可を設定し、重要な設定を構成する方法について説明します。
-ms.openlocfilehash: 63a6919b2aa4c368360414c683614d8bb4305fd0
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 2603a41fd4afb83c353854e5bed4c236138dd21d
+ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350042"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380214"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>プライバシー管理の開始 (プレビュー)
 
@@ -48,7 +48,7 @@ ms.locfileid: "58350042"
 
 ### <a name="accept-privacy-management-terms"></a>プライバシー管理の条件に同意する
 
-プライバシー管理を初めて開いた場合は、条件と個人データ評価プロセス (詳細) に同意する確認を[求めるメッセージが表示されます](privacy-management.md#how-we-evaluate-your-data)。 先に進む前に、提供されたリンクを完全に確認できます。 同意すると、プライバシー管理が組織のデータに関する分析情報を提供し始めるまで、最大 24 時間かかる場合があります。
+プライバシー管理を初めて開いた場合は、条件と個人データ評価プロセス (詳細) に同意する確認を[求めるメッセージが表示されます](privacy-management.md#where-privacy-management-identifies-personal-data)。 先に進む前に、提供されたリンクを完全に確認できます。 同意すると、プライバシー管理が組織のデータに関する分析情報を提供し始めるまで、最大 24 時間かかる場合があります。
 
 サブスクリプションを取得するために必要な役割を保持しない場合や、プライバシー管理の使用条件に同意しない場合は、グローバル管理者に問い合わせて支援を求めるメッセージが表示されます。
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56752128d68fae579ab1b15fbfb8ab1b2320f5f8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6f38c052c6c1755c0717d8b64987dd69b1a5826d
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257269"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387142"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -60,6 +60,13 @@ Microsoft Defender for Endpoint の最新リリースでは、次の機能 (GA) 
    > 標準検出は、2021 年 7 月 19 日からすべてのユーザーの既定のモードになります。 基本モードは、[設定] ページで保持できます。
 
 - [デバイス グループ定義には、](/microsoft-365/security/defender-endpoint/machine-groups) 条件ごとに複数の値を含めることができます。 複数のタグ、デバイス名、ドメインを 1 つのデバイス グループの定義に設定できます。
+
+- [モバイル アプリケーション管理のサポート](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> この機能強化により、Intune がモバイル アプリケーションの管理に使用されている場合に、Microsoft Defender for Endpoint が管理アプリケーション内で組織のデータを保護できます。 モバイル アプリケーション管理の詳細については、このドキュメントを [参照してください](/microsoft-365/mem/intune/apps/mam-faq)。
+
+- [Microsoft TunnelVPN 統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft TunnelVPN 機能は、Android 用 Microsoft Defender for Endpoint アプリと統合されました。 この統合により、組織は 1 つのセキュリティ アプリでエンド ユーザー エクスペリエンスを簡素化できます。モバイル脅威防御とモバイル デバイスからプレムリソースにアクセスする機能の両方を提供し、セキュリティチームと IT チームは、使い慣れた管理者エクスペリエンスを維持できます。
+
+- [iOS での脱獄の検出](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> iOS 上の Microsoft Defender for Endpoint の脱獄検出機能が一般提供されました。 これにより、既に存在するフィッシング保護が追加されます。  詳細については、「デバイス リスク信号 [に基づく条件付きアクセス ポリシーのセットアップ」を参照してください](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
+
 
 ## <a name="march-2021"></a>2021 年 3 月
 - [アプリケーションを使用して改ざん防止を管理Microsoft Defender セキュリティ センター](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> テナント接続というメソッドを使用して、Windows 10、Windows Server 2016、Windows サーバー 2019 の改ざん防止設定 *を管理できます*。

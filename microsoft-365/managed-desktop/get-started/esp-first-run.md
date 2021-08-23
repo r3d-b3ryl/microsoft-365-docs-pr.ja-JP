@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c9cbcd9ef9e4557e30409cd471d80cbcca5a2947438ef988c7892c18eddd8a2d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3037225e2d628345b672bfae145bcba570cbbc23
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890981"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364627"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Autopilot と登録ステータス ページの初回実行時エクスペリエンス
 
@@ -44,8 +44,8 @@ Microsoft マネージド デスクトップユーザーのデバイスに使用
 |プライバシー設定|非表示|
 |アカウントの変更オプションを非表示にする|Show|
 |ユーザー アカウントの種類|Standard|
-|Allow White Glove OOBE|はい|
-|デバイス名テンプレートの適用|はい|
+|Allow White Glove OOBE|必要|
+|デバイス名テンプレートの適用|必要|
 |名前を入力する|MMD-%RAND:11%|
 |
 
@@ -59,16 +59,16 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 
 |設定|値|
 |---|---|
-|アプリとプロファイルの構成の進行状況を表示する|はい|
+|アプリとプロファイルの構成の進行状況を表示する|必要|
 |インストール時間が指定した分数より長い場合にエラーを表示する|60|
 |制限時間エラーが発生した場合にカスタム メッセージを表示する|いいえ|
-|インストール エラーに関するログの収集をユーザーに許可する|はい|
-|ページを既定のエクスペリエンス (OOBE) によってプロビジョニングされたデバイスにのみ表示する|はい|
-|すべてのアプリとプロファイルがインストールされるまでデバイスの使用をブロックする|はい|
-|インストール エラーが発生した場合、ユーザーにデバイスのリセットを許可する|はい|
-|インストール エラーが発生した場合、ユーザーにデバイスの使用を許可する|はい|
+|インストール エラーに関するログの収集をユーザーに許可する|必要|
+|ページを既定のエクスペリエンス (OOBE) によってプロビジョニングされたデバイスにのみ表示する|必要|
+|すべてのアプリとプロファイルがインストールされるまでデバイスの使用をブロックする|必要|
+|インストール エラーが発生した場合、ユーザーにデバイスのリセットを許可する|必要|
+|インストール エラーが発生した場合、ユーザーにデバイスの使用を許可する|必要|
 |ユーザー/デバイスに割り当てられている場合、これらの必須アプリがインストールされるまでデバイスの使用をブロックする|モダン ワークプレース - 時間の修正|モダン ワークプレース - クライアント ライブラリ|
-|
+
 
 登録状態ページのエクスペリエンスは、3 つのフェーズで発生します。 詳細については、「登録状態 [ページの追跡情報」を参照してください](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)。
 
@@ -132,3 +132,17 @@ Microsoft マネージド デスクトップは、次の設定を [登録状態�
 - アプリケーションのインストール フェーズ中にタイムアウトを回避するには、すべてのアプリケーションの合計サイズをまとめて 1 GB 以下にしてください。
 - 理想的には、アプリには依存関係を持つ必要があります。 依存関係が必要 *なアプリがある* 場合は、ESP 評価の一環としてアプリを構成、テスト、検証してください。
 - Microsoft Teams ESP に含めません。
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
+
+1. 管理 [ポータルにアクセスします](access-admin-portal.md)。
+1. [管理者ポータルで管理者連絡先を追加して確認します](add-admin-contacts.md)。
+1. [登録後に設定を調整します](conditional-access.md)。
+1. ユーザーを展開して割[り当Intune ポータル サイト](company-portal.md)します。
+1. [ライセンスを割り当てる](assign-licenses.md)。
+1. [アプリを展開します](deploy-apps.md)。
+1. [デバイスをセットアップします](set-up-devices.md)。
+1. Autopilot と [登録の状態] ページで最初に実行するエクスペリエンスを設定します (この記事)。
+1. [ユーザー サポート機能を有効にする](enable-support.md)。
+1. [ユーザーがデバイスを使用する準備を整えます](get-started-devices.md)。
+1. [アプリ コントロールの使用を開始します](get-started-app-control.md)。

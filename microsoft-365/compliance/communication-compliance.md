@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d3e8e68f8bdb8f2fa6f539605d2603a57e22c624
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 517938951c6bf772097f15dca1a8d3b79c568ca1
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257506"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392053"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>通信コンプライアンスの詳細については、Microsoft 365
 
@@ -98,6 +98,7 @@ Microsoft 365 のコミュニケーション コンプライアンス ポリシ�
 - **ユーザー履歴**: ポリシーの一致に関する過去の通知やエスカレーションなど、すべてのユーザー メッセージ修復アクティビティの履歴ビューにより、修復ワークフロー プロセス中にレビュー担当者によりコンテキストが追加されます。 ユーザーのポリシー一致の初回インスタンスまたは繰り返しインスタンスがアーカイブされ、簡単に表示できます。
 - **パターン検出通知**: 多くの嫌がらせやいじめのアクションは時間の流れで行い、ユーザーが同じ動作のインスタンスを再発生します。 アラートの詳細に表示される新しいパターン検出された通知は、これらのアラートとこの種類の動作に注意を向けるのに役立ちます。
 - **翻訳**: 修復ワークフローの翻訳サポートを使用して、8 つの言語でメッセージの詳細をすばやく調査します。 他の言語のメッセージは、レビューアーの表示言語に自動的に変換されます。
+- **添付ファイルの** 検出: OneDrive および Microsoft Teams から、Microsoft Teams メッセージのポリシー分類子と条件に一致するリンクされたコンテンツ (最新の添付ファイル) をスキャン、検出、およびMicrosoft Teamsします。 添付ファイルのコンテンツは、詳細な確認と操作のためにテキスト ファイルに自動的に抽出されます。
 
 ### <a name="actionable-insights"></a>対応につながるインサイト
 
