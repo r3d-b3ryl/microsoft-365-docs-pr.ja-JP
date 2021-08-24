@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: スケジューラの概要 Microsoft 365.
-ms.openlocfilehash: 970d4a37c154e3049dcbd2f5987ff9055af6bbec
-ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
+ms.openlocfilehash: 0b87555075bd9ac147579156897f545fbfe33020
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380226"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503253"
 ---
 # <a name="welcome-to-scheduler-for-microsoft-365"></a>スケジューラーへようこそ Microsoft 365
 
@@ -55,7 +55,7 @@ Scheduler を使用するには、Cortanaの電子メール アドレスを、�
 
 ## <a name="pricing-and-licensing"></a>価格とライセンス
 
-詳細:[ライセンスのスケジューラMicrosoft 365する](https://wwww.microsoft.com/microsoft-365/meeting-scheduler-pricing)
+詳細:[ライセンスのスケジューラMicrosoft 365する](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing)
 
 >[注: 会議の出席者は、スケジューラ またはユーザー ライセンスをMicrosoft 365ではありません。 <br>スケジューラ アシスタント メールボックスには、スケジューラ ライセンスまたはスケジューラ Microsoft 365は必要とされません。
 

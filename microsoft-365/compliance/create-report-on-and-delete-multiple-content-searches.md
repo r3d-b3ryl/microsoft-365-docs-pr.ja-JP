@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: PowerShell スクリプトを使用した検索の作成やレポートの実行など、コンテンツ検索タスクを自動化する方法については、Office 365 のセキュリティ & コンプライアンス センターで説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba42baa399e92e65228d18028043c53d8e90fc78f2c6ae614c39d68efc3482d4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2ca99a00c57de1c376ae3840324bd869abb73042
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886505"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58501981"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 
@@ -32,7 +32,7 @@ ms.locfileid: "53886505"
 
 ## <a name="before-you-create-a-content-search"></a>コンテンツ検索を作成する前に
 
-- このトピックで説明するスクリプトを実行するには、セキュリティ & コンプライアンス センターの電子情報開示マネージャー役割グループのメンバーである必要があります。
+- このトピックで説明するスクリプトを実行するには、Microsoft 365 コンプライアンス センターの電子情報開示マネージャー役割グループのメンバーである必要があります。
 
 - 手順 1 で CSV ファイルに追加できる組織内の OneDrive for Business サイトの URL の一覧を収集するには、「組織内のすべての OneDrive 場所の一覧を作成する」を[参照してください](/onedrive/list-onedrive-urls)。
 

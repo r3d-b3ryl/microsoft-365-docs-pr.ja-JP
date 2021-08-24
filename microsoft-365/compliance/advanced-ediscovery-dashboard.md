@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: レビュー セットAdvanced eDiscoveryダッシュボードを使用して、コーパスをすばやく分析し、レビュー戦略の策定に役立つ傾向や主要な統計を特定します。
-ms.openlocfilehash: 2128f2b2caa719cf2fc9b966ff70e1cfc74a1852896a10c85a17c407ffdddfea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 14baa47a73ac3cc4917d6e2f04614a80960ef085
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836533"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502977"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscoveryのダッシュボード
 
@@ -29,7 +29,7 @@ ms.locfileid: "53836533"
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>手順 1: レビュー セット ダッシュボードにウィジェットを作成する
 
-1. [セキュリティ & コンプライアンス センター] で、[電子情報開示] > Advanced eDiscoveryに移動して、組織内 **の** ケースの一覧を表示します。
+1. [電子情報開示Microsoft 365 コンプライアンス センター] に移動> Advanced eDiscovery **組織の** ケースの一覧を表示します。
   
 2. 既存のケースを選択します。
   
@@ -77,7 +77,7 @@ ms.locfileid: "53836533"
 
 4. 完了したら、[クエリとして保存]をクリックして、条件をレビュー セットの新しい検索クエリとして保存します。
 
-   ![Query](../media/savequery.png)
+   ![クエリ](../media/savequery.png)
 
 5. [検索] **プロファイル ビューを閉** じて、検索結果ビューに戻します。
 

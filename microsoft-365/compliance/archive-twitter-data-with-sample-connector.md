@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がネイティブ コネクタをセットアップして使用して、Twitter データをユーザーにインポートする方法Microsoft 365。
-ms.openlocfilehash: ad72f5ea621579ea6d2837931e94140e25cce934d38dca8c48a3db8e8790c3b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1b55a9af001e2ed2f67e7847fc7b70eee974bb88
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820677"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502713"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Twitter データをアーカイブするコネクタをセットアップする (プレビュー)
 
@@ -43,7 +43,7 @@ Twitter データをインポートした後、訴訟ホールド、コンテン
     - [Pay-As-Go Azure サブスクリプションにサインアップする](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Azure Active Directory[サブスクリプション](use-your-free-azure-ad-subscription-in-office-365.md)に含まれる無料のサブスクリプションMicrosoft 365は、セキュリティ コンプライアンス センターのコネクタ&しません。
+    > サブスクリプション[にAzure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)されている無料のサブスクリプションは、Microsoft 365のコネクタをサポートMicrosoft 365 コンプライアンス センター。
 
 - Twitter コネクタは、1 日に合計 200,000 アイテムをインポートできます。 1 日に 200,000 件を超える Twitter アイテムがある場合、それらのアイテムはいずれも 1 日にインポートMicrosoft 365。
 

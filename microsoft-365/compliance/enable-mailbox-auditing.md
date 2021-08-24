@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: メールボックス監査ログは、既定で有効になっています (既定Microsoft 365既定のメールボックス監査またはメールボックス監査とも呼ばれています)。 つまり、メールボックスの所有者、代理人、管理者によって実行される特定のアクションは、メールボックス監査ログに自動的に記録され、メールボックスで実行されたアクティビティを検索できます。
-ms.openlocfilehash: 9b649e1e81ba9a70e11d255ba35af17869744e9bbb9b26ba7cc84294e10afafb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62f1c7009e2d0e4dff5b6ab31efa35b8f17624bd
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796054"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503193"
 ---
 # <a name="manage-mailbox-auditing"></a>メールボックスの監査を管理する
 
@@ -39,7 +39,7 @@ ms.locfileid: "53796054"
 > [!NOTE]
 >
 > - 既定では、メールボックス監査のリリースについて覚えておく必要がある重要な点は、メールボックス監査を管理するために何もする必要はありません。 ただし、詳細については、既定の設定からメールボックス監査をカスタマイズするか、完全にオフにするか、この記事を参照してください。
-> - 既定では、E5 ユーザーのメールボックス監査イベントだけが、セキュリティ & コンプライアンス センターまたは Office 365 管理アクティビティ API を介して監査ログ検索で使用できます。 詳細については、この記事の [「詳細」](#more-information) セクションを参照してください。
+> - 既定では、E5 ユーザーのメールボックス監査イベントだけが、Microsoft 365 コンプライアンス センター または Office 365 管理アクティビティ API を介して監査ログ検索で使用できます。 詳細については、この記事の [「詳細」](#more-information) セクションを参照してください。
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>既定によるメールボックス監査の有効化がオンになっていることを確認する
 
@@ -333,11 +333,11 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 ## <a name="more-information"></a>詳細
 
-- メールボックス監査ログオンは既定ですべての組織で有効になっていますが、E5 ライセンスを持つユーザーだけが、既定でセキュリティ & コンプライアンス センターまたは [Office 365](search-the-audit-log-in-security-and-compliance.md)管理アクティビティ [API](/office/office-365-management-api/office-365-management-activity-api-reference)を介して監査ログ検索でメールボックス監査ログ イベントを **返** します。
+- メールボックス監査ログオンは既定ですべての組織で有効になっていますが [、E5](search-the-audit-log-in-security-and-compliance.md)ライセンスを持つユーザーだけが、Microsoft 365 コンプライアンス センター または [Office 365 管理](/office/office-365-management-api/office-365-management-activity-api-reference)アクティビティ API を介して監査ログ検索でメールボックス監査ログ イベントを既定で **返** します。
 
   E5 ライセンスのないユーザーのメールボックス監査ログ エントリを取得するには、次の処理を実行できます。
 
-  - 個々のメールボックスでメールボックス監査を手動で有効にします (コマンドを実行します `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` )。 この操作を行った後は、セキュリティ 管理コンプライアンス センターまたは &管理アクティビティ API を使用して監査Office 365検索を使用できます。
+  - 個々のメールボックスでメールボックス監査を手動で有効にします (コマンドを実行します `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` )。 この操作を行った後、監査ログ検索は、Microsoft 365 コンプライアンス センター管理アクティビティ API をOffice 365使用できます。
 
     > [!NOTE]
     > メールボックス監査が既にメールボックスで有効になっていると思うが、検索で結果が返されない場合は _、AuditEnabled_ パラメーターの値をに変更してからに `$false` 戻します `$true` 。

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 弁護士クライアントの特権検出モデルを使用して、機械学習ベースの特権コンテンツの検出を使用して、ユーザーのケースでコンテンツをAdvanced eDiscoveryします。
-ms.openlocfilehash: a6389d68a73813dff9853cf904bd79c2ce47b9fc4de4000250bb75e0e0c8bc86
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 814caf417de58a51b43d5c4b8ef2b99c11263986
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808514"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503109"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>アプリケーションで弁護士とクライアントの特権の検出をAdvanced eDiscovery
 
@@ -57,7 +57,7 @@ ms.locfileid: "53808514"
 
 組織内の電子情報開示管理者であるユーザー (電子情報開示マネージャー役割グループの電子情報開示管理者サブグループのメンバー) は、Advanced eDiscovery ケースでモデルを使用できる必要があります。
 
-1. セキュリティ コンプライアンス センター&、電子情報開示のページ **に** 移動> Advanced eDiscovery。
+1. [電子情報開示Microsoft 365 コンプライアンス センターに移動し、[詳細] **>します**。
 
 2. [ホーム **Advanced eDiscovery]** タイルで、[グローバル分析 **設定** 構成 **] をクリックします**。
 

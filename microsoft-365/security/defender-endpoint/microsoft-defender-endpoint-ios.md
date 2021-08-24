@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 658aba2a3061e247c9be0aaa159708bb24e97a20649fa67c2ceba0aa127e48b3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b6f682cab22b5838234e16091001c1b0be0f4126
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894241"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502809"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
 
@@ -62,7 +62,8 @@ ms.locfileid: "53894241"
 - 管理センター [Microsoft エンドポイント マネージャーアクセスして](https://go.microsoft.com/fwlink/?linkid=2109431)、組織の登録済みユーザー グループにアプリを展開します。
 
     > [!NOTE]
-    > Microsoft Intuneは、Microsoft Defender for Endpoint を展開し、Intune で Defender for Endpoint 関連のデバイス コンプライアンス ポリシーを適用する、サポートされている唯一の統合エンドポイント管理 (UEM) ソリューションです。
+    > Microsoft Defender for Endpoint では、モバイル デバイス管理 (MDM) を使用していないが、Intune を使用してモバイル アプリケーションを管理しているユーザーの管理アプリケーション内の組織のデータに対するサポートが拡張されています。 また、このサポートは、他のエンタープライズ モビリティ管理ソリューションを使用しているお客様にも拡張しますが、モバイル アプリケーション管理 [(MAM)](/mem/intune/apps/mam-faq)には Intune を使用します。
+    > この更新プログラムの前に、Microsoft Defender for Endpoint は Intune MDM のみを使用して登録されたデバイスで作業しました。  
 
 **システム要件**
 
@@ -87,3 +88,4 @@ iOS での Microsoft Defender for Endpoint の展開は、MICROSOFT エンドポ
 - [iOS の機能で Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
 - [Defender for Endpoint リスクシグナル (MAM) を含めるアプリ保護ポリシーを構成する](ios-install-unmanaged.md)
 - [Microsoft Defender for Endpoint のデバイス リスク スコアに基づいて条件付きアクセス ポリシーを構成する](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+- [モバイル アプリケーション管理 (MAM) の基本](/mem/intune/apps/app-management#mobile-application-management-mam-basics)

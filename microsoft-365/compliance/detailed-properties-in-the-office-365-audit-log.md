@@ -19,16 +19,16 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: この記事では、監査ログ レコードの結果をエクスポートするときに含まれる追加Office 365説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0daae4136b9b10da5580d168b7cbf4e9a7e7afe5
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 20965367cda41ad50070d42b306564f6a8d9bb8b
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256449"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503061"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>監査ログの詳細なプロパティ
 
-監査ログの検索結果をセキュリティ/コンプライアンス センターからエクスポートする場合は、検索条件に一致するすべての結果をダウンロードするオプションを利用できます。 このエクスポートを行うには、[**監査ログの検索**] ページで、[**結果のエクスポート**] \> [**テスト結果のダウンロード**] の順に選択します。 詳細については、「[監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+監査ログ検索の結果を Microsoft 365 コンプライアンス センターからエクスポートすると、検索条件を満たすすべての結果をダウンロードできます。 このエクスポートを行うには、[**監査ログの検索**] ページで、[**結果のエクスポート**] \> [**テスト結果のダウンロード**] の順に選択します。 詳細については、「[監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
   
  監査ログ検索のすべての結果をエクスポートすると、統合監査ログの生データが、ローカル コンピューターにダウンロードされるコンマ区切り値 (CSV) ファイルにコピーされます。 このファイルには、[**AuditData**] という名前の列にある各監査レコードからの追加情報が入っています。 この列には、監査ログ レコードからの複数のプロパティに対する複数値プロパティが含まれています。 この複数値プロパティに含まれる各 **プロパティ: 値** ペアはカンマで区切られています。 
   
@@ -71,7 +71,7 @@ ms.locfileid: "58256449"
 |Parameters|Exchange 管理者のアクティビティの場合、Operation プロパティで識別されたコマンドレットで使用された、すべてのパラメーターの名前と値。|Exchange (管理者のアクティビティ)|
 |RecordType|レコードによって示される操作の種類。 このプロパティは、操作がトリガーされたサービスまたは機能を示します。 レコードの種類とそれに対応する ENUM 値 (監査レコードの **RecordType** プロパティに表示される値) については、「監査ログ レコードの種類」 [を参照してください](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。| 
 |ResultStatus|(**Operation** プロパティで指定された) アクションが正常に終了したかどうかを示します。  <br/> Exchange 管理者アクティビティでは、値は **True** (成功) または **False** (失敗) のいずれかになります。|すべて  <br/>|
-|SecurityComplianceCenterEventType|アクティビティがセキュリティ/コンプライアンス センター イベントであることを意味します。 セキュリティ/コンプライアンス センター アクティビティはすべて、このプロパティの値が **0** です。|セキュリティ/コンプライアンス センター|
+|SecurityComplianceCenterEventType|アクティビティが特定のイベントMicrosoft 365 コンプライアンス センターします。 コンプライアンス センターのすべてのアクティビティには、このプロパティの **値が 0** になります。|セキュリティ/コンプライアンス センター|
 |SharingType|リソースが共有されたユーザーに割り当てられているアクセス許可の種類。このユーザーは、**UserSharedWith** プロパティによって識別されます。|SharePoint|
 |Site|ユーザーがアクセスしたファイルまたはフォルダーが置かれているサイトの GUID。|SharePoint|
 |SiteUrl|ユーザーがアクセスしたファイルまたはフォルダーが置かれているサイトの URL。|SharePoint|
@@ -90,7 +90,7 @@ ms.locfileid: "58256449"
 |UserSharedWith|リソースが共有されたユーザー。**Operation** プロパティの値が **SharingSet** の場合は、このプロパティが含まれます。このユーザーは、レポートの **[共有ユーザー]** 列にも表示されます。|SharePoint|
 |UserType|操作を実行したユーザーの種類。次の値によって、ユーザーの種類が示されます。<br/> <br/> **0** - 標準のユーザー。 <br/>**2** - 組織の管理者Microsoft 365します。<sup>1</sup> <br/>**3** - Microsoft データセンター管理者またはデータセンターのシステム アカウント。 <br/>**4** - システム アカウント。 <br/>**5** - アプリケーション。 <br/>**6** - サービス プリンシパル。<br/>**7** - カスタム ポリシー。<br/>**8** - システム ポリシー。|すべて|
 |Version|ログに記録された (**Operation** プロパティで識別された) アクティビティのバージョン番号を示します。|すべて|
-|ワークロード|アクティビティMicrosoft 365発生したサービスを指定します。|すべて|
+|Workload|アクティビティMicrosoft 365発生したサービスを指定します。|すべて|
 ||||
 
 > [!NOTE]

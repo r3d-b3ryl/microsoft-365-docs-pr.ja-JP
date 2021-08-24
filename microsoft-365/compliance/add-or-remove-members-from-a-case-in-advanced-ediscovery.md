@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: ケースを管理するときにケースにアクセスできるメンバーを追加または削除する方法Advanced eDiscoveryします。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b0b35503ca4e006f7a15bae8ffebc80081a9020db47d31621f67b8edbcc22667
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d4fbd3700a74da8975f46174405c73511d16af3b
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837037"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502041"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>ケースからメンバーを追加または削除する
 
-メンバーを追加または削除して、ケースにアクセスできるユーザーを管理できます。 ただし、メンバーが Advanced eDiscovery ケースにアクセスする (およびケースのタスクを実行する) 前に、セキュリティとコンプライアンス センターの [アクセス許可] ページの電子情報開示マネージャー役割グループにユーザーを追加する必要があります。 詳細については、「[セキュリティ/コンプライアンス センターで電子情報開示アクセス許可を割り当てる](./assign-ediscovery-permissions.md)」を参照してください。
+メンバーを追加または削除して、ケースにアクセスできるユーザーを管理できます。 ただし、メンバーが Advanced eDiscovery ケースにアクセスする (およびケースのタスクを実行する) 前に、セキュリティとコンプライアンス センターの [アクセス許可] ページの電子情報開示マネージャー役割グループにユーザーを追加する必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](./assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
 
 1. **Advanced eDiscovery** ページで、メンバーを追加するケースに移動します。
 

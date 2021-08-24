@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 65486a046967ef3a3961220af0c9077a7d3fbd94
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bc00136b3ca404efc2a39eb8cf7bac6dcbc84d2e
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253417"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502029"
 ---
 # <a name="recommendation-resource-type"></a>おすすめリソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "58253417"
 
 **適用対象:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -50,7 +50,7 @@ ms.locfileid: "58253417"
 
 
 ## <a name="properties"></a>プロパティ
-プロパティ |   種類   |   説明
+プロパティ |   型   |   説明
 :---|:---|:---
 id | String | 推奨事項 ID
 productName | 文字列型 (String) | 関連するソフトウェア名  
@@ -58,16 +58,18 @@ recommendationName | String | おすすめ名
 弱点 | Long | 検出された脆弱性の数
 ベンダー | String | 関連ベンダー名
 recommendedVersion | String | 推奨バージョン
-recommendationCategory | String | おすすめカテゴリ。 使用できる値は、"Accounts"、"Application"、"Network"、"OS"、"SecurityStack" です。
+recommendedProgram | String | 推奨プログラム
+recommendedVendor | String | 推奨ベンダー
+recommendationCategory | String | おすすめカテゴリ。 使用できる値は、"Accounts"、"Application"、"Network"、"OS"、"SecurityControls" です。
 subCategory | String | おすすめサブカテゴリ
 severityScore | Double | 組織の Microsoft Secure Score for Devices に対する構成の潜在的な影響 (1-10)
 publicExploit | ブール値 | パブリックエクスプロイトが利用可能 
 activeAlert | ブール値 | アクティブなアラートは、この推奨事項に関連付けられている
-associatedThreats | String collection | 脅威分析レポートは、この推奨事項に関連付けられている
+associatedThreats | String コレクション | 脅威分析レポートは、この推奨事項に関連付けられている
 remediationType | String | 修復の種類。 指定できる値は、"ConfigurationChange"、"Update"、"Upgrade"、"Uninstall" です。
 状態 | 列挙 | 推奨事項の例外の状態。 指定できる値は、"Active" と "Exception" です。
 configScoreImpact | Double | デバイスの Microsoft Secure Score の影響
-exposureImpacte | Double | 露出スコアの影響
+exposureImpact | Double | 露出スコアの影響
 totalMachineCount | Long | インストールされているデバイスの数
 exposedMachinesCount | Long | 脆弱性にさらされるインストール済みデバイスの数
 nonProductivityImpactedAssets | Long | 影響を受けないデバイスの数  

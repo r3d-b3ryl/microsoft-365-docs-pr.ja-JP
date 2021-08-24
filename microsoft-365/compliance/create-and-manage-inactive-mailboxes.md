@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: 削除されたメールボックスの内容を保持するには、削除されたメールボックスの非アクティブなメールボックス機能を使用Microsoft 365。
-ms.openlocfilehash: b8d9043d066f2500074b79b6eb06183f093907ba
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6f533cf213f28d42dee1bb470cefaa2ced186778
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247545"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503169"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>非アクティブなメールボックスを作成および管理する
 
@@ -105,7 +105,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## <a name="search-and-export-the-contents-of-an-inactive-mailbox"></a>非アクティブなメールボックスのコンテンツを検索し、エクスポートする
 
-Office 365 セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、非アクティブなメールボックスのコンテンツにアクセスできます。 非アクティブなメールボックスを検索する場合、特定のアイテムに対するキーワード検索クエリを作成したり、非アクティブなメールボックスのすべての内容を返したりできます。 検索結果をプレビューで表示したり、検索結果を Outlook データ (PST) ファイルにエクスポートしたり、個別のメール メッセージとしてエクスポートできます。 メールボックスの検索と検索結果のエクスポートの詳しい手順については、次のトピックを参照してください。
+非アクティブなメールボックスのコンテンツにアクセスするには、次のページの [コンテンツ検索] ツールをMicrosoft 365 コンプライアンス センター。 非アクティブなメールボックスを検索する場合、特定のアイテムに対するキーワード検索クエリを作成したり、非アクティブなメールボックスのすべての内容を返したりできます。 検索結果をプレビューで表示したり、検索結果を Outlook データ (PST) ファイルにエクスポートしたり、個別のメール メッセージとしてエクスポートできます。 メールボックスの検索と検索結果のエクスポートの詳しい手順については、次のトピックを参照してください。
   
 - [コンテンツ検索](content-search.md)
 

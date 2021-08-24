@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ツールMicrosoft 365電子メール メッセージに添付された暗号化されたドキュメントを処理し、SharePoint Online および OneDrive for Businessに保存する方法について説明します。
-ms.openlocfilehash: e03f5813fcd5f232119f3586cd173c40ca846cc7a7cb6908b5b71fab8e26361c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7d0f4acd34fc67738258e0f0df23535e759bd8dd
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842293"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503049"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>電子情報開示ツールMicrosoft 365復号化
 
@@ -48,10 +48,10 @@ Microsoft 電子情報開示ツールは、Microsoft 暗号化テクノロジで
 |:---------|:---------|:---------|:---------|
 |電子メールとサイト内の暗号化されたファイル内のコンテンツを検索<sup>する 1</sup>     |はい      |はい      |はい      |
 |メールに添付された暗号化されたファイルをプレビューする     |はい      |はい     |はい       |
-|暗号化されたドキュメントをプレビュー SharePointとOneDrive|いいえ      |いいえ    |はい       |
+|暗号化されたドキュメントをプレビュー SharePointとOneDrive|不要      |不要    |はい       |
 |レビュー セット内の暗号化されたファイルを確認する    |該当なし      |該当なし        | はい        |
 |電子メールに添付された暗号化されたファイルをエクスポートする    |はい       |はい  |はい    |
-|暗号化されたドキュメントを、SharePointおよびOneDrive    |いいえ       |いいえ  |はい    |
+|暗号化されたドキュメントを、SharePointおよびOneDrive    |不要       |不要  |はい    |
 |||||
 
 > [!NOTE]
@@ -73,4 +73,4 @@ Microsoft 電子情報開示ツールは、Microsoft 暗号化テクノロジで
 
 Microsoft 暗号化テクノロジで暗号化されたファイルをプレビュー、確認、およびエクスポートするには、RMS Decrypt ロールを割り当てる必要があります。 また、このロールを割り Advanced eDiscovery当てる必要があります。
 
-この役割は、コンプライアンス センターの [セキュリティ] ページの[アクセス許可] ページの電子情報開示マネージャー Office 365既定&割り当てられます。 RMS 復号化の役割の詳細については、「電子情報開示の [アクセス許可を割り当てる」を参照してください](assign-ediscovery-permissions.md#rms-decrypt)。
+この役割は、既定では、電子情報開示マネージャーの役割グループに割り当てられます。この役割は、既定で [アクセス許可] ページMicrosoft 365 コンプライアンス センター。 RMS 復号化の役割の詳細については、「電子情報開示の [アクセス許可を割り当てる」を参照してください](assign-ediscovery-permissions.md#rms-decrypt)。

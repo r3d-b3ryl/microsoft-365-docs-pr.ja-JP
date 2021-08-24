@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: メールボックスをOffice 365した後、非アクティブなメールボックスに割り当てられている保持ポリシーまたは保持ポリシー Office 365期間を変更します。
-ms.openlocfilehash: 07ff73218613ecf8b3e670db3a92720b9e08ee2dbee68e77850256bb7ee6768f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 02fb0ab1f598db3532f1544c041dfcffd3a2224a
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886901"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502893"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>非アクティブなメールボックスの保持期間を変更する
 
@@ -103,9 +103,9 @@ InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 |:-----|:-----|:-----|
 |Ann Beebe  <br/> |訴訟ホールド  <br/> |*LitigationHoldEnabled*  プロパティが  `True` に設定されています。  <br/> |
 |Pilar Pinilla  <br/> |インプレース ホールド  <br/> |*InPlaceHolds*  プロパティには非アクティブなメールボックスに設定されたインプレース ホールドの GUID が含まれています。ID がプレフィックスから始まっていないため、これはインプレース ホールドだとわかります。  <br/> Exchange Online PowerShell で  `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` コマンドを使用して、非アクティブのメールボックスのインプレース ホールドについての情報を取得できます。  <br/> |
-|Mario Necaise  <br/> |セキュリティ Microsoft 365 コンプライアンス センターの組織全体&保持ポリシー  <br/> |*InPlaceHolds*  プロパティが空になっています。 これは、1 つ以上の組織全体または (Exchange) Microsoft 365が非アクティブなメールボックスに適用されます。 この場合、PowerShell でコマンドをExchange Onlineして、組織全体のアイテム保持ポリシーの `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` GUID のMicrosoft 365取得できます。 メールボックスに適用される組織全体の保持ポリシーの GUID は、Exchangeプレフィックスで始まる。たとえば `mbx` `mbxa3056bb15562480fadb46ce523ff7b02` 、 です。  <br/> <br/>非アクティブなMicrosoft 365に適用されるアイテム保持ポリシーを識別するには、コンプライアンス センター PowerShell のセキュリティ &コマンドを実行します。  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
+|Mario Necaise  <br/> |組織全体のMicrosoft 365アイテム保持ポリシー Microsoft 365 コンプライアンス センター  <br/> |*InPlaceHolds*  プロパティが空になっています。 これは、1 つ以上の組織全体または (Exchange) Microsoft 365が非アクティブなメールボックスに適用されます。 この場合、PowerShell でコマンドをExchange Onlineして、組織全体のアイテム保持ポリシーの `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` GUID のMicrosoft 365取得できます。 メールボックスに適用される組織全体の保持ポリシーの GUID は、Exchangeプレフィックスで始まる。たとえば `mbx` `mbxa3056bb15562480fadb46ce523ff7b02` 、 です。  <br/> <br/>非アクティブなMicrosoft 365に適用されるアイテム保持ポリシーを識別するには、コンプライアンス センター PowerShell のセキュリティ &コマンドを実行します。  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
 |Carol Olson  <br/> |Microsoft 365に適用されるセキュリティ & コンプライアンス センターのアイテム保持ポリシー  <br/> |*InPlaceHolds* プロパティには、非アクティブなメールボックスにMicrosoft 365保持ポリシーの GUID が含まれる。 GUID が  `mbx` プレフィックスで始まっているため、これは特定のメールボックスに適用されたアイテム保持ポリシーであることがわかります。 非アクティブなメールボックスに適用される保持ポリシーの GUID がプレフィックスで始まった場合、保持ポリシーがユーザーの会話に適用Skype for Business `skp` されます。  <br/><br/> 非アクティブなMicrosoft 365に適用されるアイテム保持ポリシーを識別するには、コンプライアンス センター PowerShell のセキュリティ &コマンドを実行します。<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>このコマンドを実行する場合は、必ず、 `mbx` または  `skp` プレフィックスを削除してください。  <br/> |
-|Abraham McMahon  <br/> |セキュリティ コンプライアンス センターでの電子情報開示&保持  <br/> |*InPlaceHolds*  プロパティに、非アクティブなメールボックスに設定されている電子情報開示ケース ホールドの GUID が含まれています。GUID が  `UniH` プレフィックスで始まっているため、これは電子情報開示ケース ホールドであることがわかります。  <br/> Security & コンプライアンス センター PowerShell のコマンドレットを使用して、非アクティブなメールボックスの保留が関連付けられている電子情報開示ケースに関する情報  `Get-CaseHoldPolicy` を取得できます。 For example, you can run the command  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` to display the name of the case hold that's on the inactive mailbox. Be sure to remove the  `UniH` プレフィックスを削除してください。  <br/><br/> 非アクティブなメールボックスのホールドが関連付けられている電子情報開示ケースを特定するには、次のコマンドを実行します。  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **注:** 非アクティブなメールボックスに電子情報開示ホールドを使用することをお勧めしません。 That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. ある時点で、法的ケースはおそらく終了し、ケースに関連付けられている保留リストは削除され、電子情報開示ケースは閉じ (または削除) されます。 実際、非アクティブなメールボックスに配置された保留リストが電子情報開示ケースに関連付けられている場合、ホールドが解放された場合、または電子情報開示ケースが閉じたり削除された場合、非アクティブなメールボックスは完全に削除されます。 
+|Abraham McMahon  <br/> |電子情報開示ケースの保持Microsoft 365 コンプライアンス センター  <br/> |*InPlaceHolds*  プロパティに、非アクティブなメールボックスに設定されている電子情報開示ケース ホールドの GUID が含まれています。GUID が  `UniH` プレフィックスで始まっているため、これは電子情報開示ケース ホールドであることがわかります。  <br/> Security & コンプライアンス センター PowerShell のコマンドレットを使用して、非アクティブなメールボックスの保留が関連付けられている電子情報開示ケースに関する情報  `Get-CaseHoldPolicy` を取得できます。 For example, you can run the command  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` to display the name of the case hold that's on the inactive mailbox. Be sure to remove the  `UniH` プレフィックスを削除してください。  <br/><br/> 非アクティブなメールボックスのホールドが関連付けられている電子情報開示ケースを特定するには、次のコマンドを実行します。  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **注:** 非アクティブなメールボックスに電子情報開示ホールドを使用することをお勧めしません。 That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. ある時点で、法的ケースはおそらく終了し、ケースに関連付けられている保留リストは削除され、電子情報開示ケースは閉じ (または削除) されます。 実際、非アクティブなメールボックスに配置された保留リストが電子情報開示ケースに関連付けられている場合、ホールドが解放された場合、または電子情報開示ケースが閉じたり削除された場合、非アクティブなメールボックスは完全に削除されます。 
 
 アイテム保持ポリシーのMicrosoft 365詳細については、「アイテム保持ポリシーと保持ラベルについて」[を参照してください](retention.md)。
   

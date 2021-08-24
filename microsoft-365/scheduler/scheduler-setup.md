@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: スケジューラの設定 Microsoft 365。
-ms.openlocfilehash: a6d642364abcf4672d59494614daaf2d9e248208
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: c47c866748fd4635c581acb3737e67bc72658538
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386938"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502797"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Scheduler for Microsoft 365 を設定する
 
@@ -21,7 +21,7 @@ ms.locfileid: "58386938"
 
 ## <a name="licensing"></a>ライセンス
 
-詳細:[ライセンスのスケジューラMicrosoft 365する](https://wwww.microsoft.com/microsoft-365/meeting-scheduler-pricing)
+詳細:[ライセンスのスケジューラMicrosoft 365する](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing)
 
 >[メモ]会議の出席者は、スケジューラ ライセンスまたは会議出席許可Microsoft 365必要ではありません。 <br>スケジューラ アシスタント メールボックスには、スケジューラ ライセンスまたはスケジューラ Microsoft 365は必要とされません。
 

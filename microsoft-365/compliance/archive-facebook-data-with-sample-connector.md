@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: このページでコネクタを&して、Facebook Business Microsoft 365 コンプライアンス センターページから&にアーカイブ データをインポートする方法についてMicrosoft 365。
-ms.openlocfilehash: 9327da8f3e37d64300ff1bafeb375f65e77fda67cc2d13bf0d1a3227b9bca693
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 766f7858c6e5117190712d3daad68b2b7b4e37c2
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866657"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502653"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Facebook データをアーカイブするコネクタをセットアップする (プレビュー)
 
@@ -41,7 +41,7 @@ Facebook データをインポートした後、訴訟ホールド、コンテ�
     - [Pay-As-Go Azure サブスクリプションにサインアップする](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Azure Active Directory[サブスクリプション](use-your-free-azure-ad-subscription-in-office-365.md)に含まれる無料のサブスクリプションMicrosoft 365は、セキュリティ コンプライアンス センターのコネクタ&しません。
+    > サブスクリプション[にAzure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)されている無料のサブスクリプションは、Microsoft 365のコネクタをサポートMicrosoft 365 コンプライアンス センター。
 
 - Facebook Business ページのコネクタは、1 日に合計 200,000 アイテムをインポートできます。 1 日に 200,000 件を超える Facebook Business アイテムがある場合、それらのアイテムはいずれも 1 日にインポートMicrosoft 365。
 

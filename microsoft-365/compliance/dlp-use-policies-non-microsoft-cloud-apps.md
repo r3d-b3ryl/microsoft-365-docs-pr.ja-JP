@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 以外のクラウド アプリで dlp ポリシーを使用する方法について説明します。
-ms.openlocfilehash: ef4482c66f9774057d5027b191cb32c8cf40becb0e28faa36fc0641fe2e51832
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 10e5f8e78b57932c18acfe18631ae8b08d543dd5
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814283"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502821"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Microsoft 以外のクラウド アプリでデータ損失防止ポリシーを使用する
 
@@ -59,7 +59,7 @@ DLP ポリシーを Microsoft 以外の特定のクラウド アプリに使用�
 
 - [ConnectBox](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
 - [Connect Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [ConnectG-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [ConnectG-Workspace](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
 - [ConnectSalesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
 - [ConnectCisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 

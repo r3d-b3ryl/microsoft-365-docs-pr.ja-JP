@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f4c50b9058510f07ef1e64bbfe2c01198a2cc78d02af1d4474e0cf1e6ba362c5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7a339c3083c69b926f46134061a263bdb5bfeba
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793876"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502749"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>マシンとソフトウェアによる脆弱性の一覧表示
 
@@ -41,7 +41,9 @@ ms.locfileid: "53793876"
 
 - 脆弱性に修正 KB がある場合は、応答に表示されます。
 - [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
-- OData ```$filter``` は、すべてのプロパティでサポートされています。
+- OData のクエリは、プロパティで `$filter` `id` `cveId` `machineId` `fixingKbId` `productName` `productVersion` `severity` サポート `productVendor` されています。
+<br>```$stop``` 最大値が 10,000 の場合
+<br>```$skip```
 
 > [!TIP]
 > これは、統合のための素晴らしい API [Power BIです](api-power-bi.md)。
@@ -63,7 +65,7 @@ GET /api/vulnerabilities/machinesVulnerabilities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 

@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 電子情報開示検索結果をエクスポートするときに、コンピューターにダウンロードされる PST ファイルの既定のサイズを変更できます。
-ms.openlocfilehash: 76f15e590e1a12468f197f81a1963c9bce06c65008e0570df7bbbaf77b2e9d52
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c77edc4e565a76be41b274aac597c56780395d4
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851517"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58501969"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>電子情報開示検索結果をエクスポートするときに PST ファイルのサイズを変更する
 
 電子情報開示エクスポート ツールを使用して、さまざまな Microsoft 電子情報開示ツールから電子情報開示検索の電子メール結果をエクスポートする場合、エクスポートできる PST ファイルの既定のサイズは 10 GB です。 この既定のサイズを変更する場合は、検索結果のエクスポートに使用Windowsコンピューターのレジストリを編集できます。 これを行う理由の 1 つは、PST ファイルがリムーバブル メディア (DVD、コンパクト ディスク、USB ドライブなど) に収まる場合です。 
   
 > [!NOTE]
-> 電子情報開示エクスポート ツールは、セキュリティ & コンプライアンス センターのコンテンツ検索ツール、Exchange Online の In-Place 電子情報開示、SharePoint Online の電子情報開示センターを使用する場合に、検索結果をエクスポートするために使用されます。
+> 電子情報開示のエクスポート ツールを使用して、コンテンツ検索ツールを使用して検索結果をエクスポートMicrosoft 365 コンプライアンス センター。
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>電子情報開示検索結果をエクスポートするときに PST ファイルのサイズを変更するレジストリ設定を作成する
 

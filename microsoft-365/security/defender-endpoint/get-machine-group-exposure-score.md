@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5a27bebc9be678119703f931d99e07627c4355e0c64febecb067a12666edb73d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e39a1833157210e3d5e4c6a5bcc77deede295f3c
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793804"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58501993"
 ---
 # <a name="list-exposure-score-by-device-group"></a>デバイス グループ別の露出スコアの一覧表示
 
@@ -31,7 +31,7 @@ ms.locfileid: "53793804"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "53793804"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-特定のドメイン アドレスに関連するアラートのコレクションを取得します。
+各コンピューター グループの露出スコアを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -58,7 +58,7 @@ GET /api/exposureScore/ByMachineGroups
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 ---|---|---
 |Authorization|String|ベアラー {token}。**必須**。
 
@@ -103,7 +103,7 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&脆弱性の暴露スコア](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

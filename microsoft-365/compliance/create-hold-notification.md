@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 法的保留通知の送信、収集、および追跡Advanced eDiscovery場合は、通信ツールを使用します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8b33165e6d39a1829f99e0a0194bc7938b95b9600e2977dec920e0dbb97c56d9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b5bf8d070e5e1bf8fc44e16a6550a6e376e2716f
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802443"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502701"
 ---
 # <a name="create-a-legal-hold-notice"></a>法的保留通知を作成する
 
@@ -38,7 +38,7 @@ ms.locfileid: "53802443"
 
 ![[名前の通信] ページ](../media/NameCommunication.PNG)
 
-1. [セキュリティ & コンプライアンス センター] で、[電子情報開示] > Advanced eDiscoveryに移動して、組織内 **の** ケースの一覧を表示します。
+1. [詳細] Microsoft 365 コンプライアンス センター[電子情報開示] >**に** 移動して、組織のケースの一覧を表示します。
 
 2. ケースを選択し、[通信] **タブをクリック** し、[新しい通信] **をクリックします**。
 
@@ -52,7 +52,7 @@ ms.locfileid: "53802443"
 > 発行担当者が [発行担当者] **ドロップダウン** に表示するには、アクティブなメールボックスが必要です。
 
 
-4. **[次へ]** をクリックします。
+4. [**次へ**] をクリックします。
 
 ## <a name="step-2-define-the-portal-content"></a>手順 2: ポータル コンテンツを定義する
 
@@ -66,7 +66,7 @@ ms.locfileid: "53802443"
 
 2. 通知に差し込み変数を挿入して通知をカスタマイズし、Custodian コンプライアンス ポータルを共有します。
 
-3. **[次へ]** をクリックします。
+3. [**次へ**] をクリックします。
 
   > [!TIP]
   > ポータル コンテンツのコンテンツと形式をカスタマイズする方法の詳細については、「Use [the Communications Editor」を参照してください](using-communications-editor.md)。
@@ -91,7 +91,7 @@ ms.locfileid: "53802443"
 
 4. 保管担当者に提供する内容または追加の指示を指定します (必須)。 手順 2 で定義したポータル コンテンツが発行通知の末尾に追加されます。
 
-5. [**保存**] をクリックします。
+5. **[保存]** をクリックします。
 
 ### <a name="re-issuance-notification"></a>Re-Issuance通知
 
@@ -107,7 +107,7 @@ ms.locfileid: "53802443"
 
 4. 保管担当者に提供する内容または追加の指示を指定します (必須)。 手順 2 で定義したポータル コンテンツは、再発行通知の最後に追加されます。
 
-5. [**保存**] をクリックします。
+5. **[保存]** をクリックします。
 
 > [!NOTE]
 > (通信の編集ウィザードの [ポータルコンテンツの定義]ページで) ポータル コンテンツが変更された場合、再発行通知は通知に割り当てられているすべての保管担当者に自動的に送信されます。 通知が送信された後、保管担当者は保留通知の再確認を求めるメッセージが表示されます。 リマインダーまたはエスカレーション ワークフローを設定している場合は、これらのワークフローも再び開始されます。 他のケース管理イベントによって通信がトリガーされるイベントの詳細については、「通知をトリガー [するイベント」を参照してください](#events-that-trigger-notifications)。

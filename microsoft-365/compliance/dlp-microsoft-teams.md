@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teamsチャネルは、データ損失防止 (DLP) ポリシーをサポートします。
-ms.openlocfilehash: c71001ec81326df07362c4caa34a2f9d382fb3eb3b18d790a3883f369b41aba7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a2ad3cdb3666550f5205eb3e1b7d1a7f6c6b3a66
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851291"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502965"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -37,10 +37,10 @@ ms.locfileid: "53851291"
 
 [データ損失防止機能](dlp-learn-about-dlp.md)は、次のようなプライベート チャネル メッセージMicrosoft Teams含む、チャットメッセージやチャネル メッセージを含 **む機能が拡張** されました。
 
-- Office 365 E5/A5
-- Microsoft 365 E5/A5
-- Microsoft 365 の情報保護とガバナンス
-- Office 365 Advanced Compliance
+- Office 365 E5/A5/G5
+- Microsoft 365 E5/A5/G5
+- Microsoft 365 E5/A5/G5 情報保護とガバナンス
+- Microsoft 365 E5/A5/G5/F5 コンプライアンスと F5 セキュリティ & コンプライアンス
 
 Office 365およびMicrosoft 365 E3には、オンライン、SharePoint、およびOneDriveの DLP 保護Exchange Online。 また、このファイルには、Teamsを共有TeamsオンラインとSharePointをOneDriveするファイルも含まれます。
 
@@ -138,7 +138,7 @@ DLP 保護は、エンティティに対してTeamsされます。
     
 6. **[次へ]** を選択します。
 
-7. [**保存**] をクリックします。
+7. **[保存]** をクリックします。
 
 変更がデータ センターを通じて動作し、ユーザー アカウントに同期するために約 1 時間を許可します。
 <!-- again, why user accounts? -->

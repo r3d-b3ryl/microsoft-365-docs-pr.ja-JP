@@ -20,14 +20,14 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: コンテンツ検索の &実際の結果は、Office 365 のセキュリティ コンプライアンス センターでエクスポートする代わりに、検索結果レポートをエクスポートできます。 レポートには、検索結果の概要と、エクスポートされる各アイテムに関する詳細情報を含むドキュメントが含まれる。
+description: コンテンツ検索の実際の結果をエクスポートする代わりに、Microsoft 365 コンプライアンス センターレポートをエクスポートできます。 レポートには、検索結果の概要と、エクスポートされる各アイテムに関する詳細情報を含むドキュメントが含まれる。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0eae866625c9fd2424263ebfa6bff03ecc5c09a820017ffde5dad6d66f1c2164
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b5307bab55f838697e63559834653b54f06c86e7
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819984"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503097"
 ---
 # <a name="export-a-content-search-report"></a>コンテンツ検索のレポートをエクスポートする
 
@@ -37,7 +37,7 @@ Microsoft 365 コンプライアンス センターのコンテンツ検索 (ま
 
 ## <a name="before-you-export-a-search-report"></a>検索レポートをエクスポートする前に
 
-- 検索レポートをエクスポートするには、コンプライアンス センターのセキュリティ とコンプライアンス センターでコンプライアンス検索&必要があります。 この役割は、既定で組み込みの電子情報開示マネージャーと組織の管理役割グループに割り当てられます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
+- 検索レポートをエクスポートするには、ユーザーにコンプライアンス検索管理の役割を割り当Microsoft 365 コンプライアンス センター。 この役割は、既定で組み込みの電子情報開示マネージャーと組織の管理役割グループに割り当てられます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
 
 - レポートをエクスポートすると、データがローカル コンピューターにダウンロードされる前Azure Storage Microsoft クラウド内の場所に一時的に保存されます。 組織が Azure のエンドポイント **\* (.blob.core.windows.net** )に接続できます (ワイルドカードはエクスポートの一意の識別子を表します)。 検索結果データは、作成Azure Storage 2 週間後に、検索結果の場所から削除されます。
 

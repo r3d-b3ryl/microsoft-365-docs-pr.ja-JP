@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ae861a5490880c4521e4e7b6521fa724a5dd4da4
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 37cccbc8447f10288369185da8fe1374b4e6690e
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400201"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503145"
 ---
 # <a name="list-all-remediation-activities"></a>すべての修復作業を一覧表示する
 
@@ -47,6 +47,12 @@ ms.locfileid: "58400201"
 [修復アクティビティの詳細については、次の情報を参照してください](tvm-remediation.md)。
 
 **URL:** GET: /api/remediationTasks
+<br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+<br>OData でサポートされている演算子:
+<br>```$filter``` on:  ```createdon``` と ```status``` プロパティ。
+<br>```$top``` 最大値は 10,000 です。
+<br>```$skip```.
+<br>Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください](exposed-apis-odata-samples.md)。
 
 ## <a name="permissions"></a>アクセス許可
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2d2e2e53061353a4035675c6e24b8dcc19900f672a159d13fe1277bed0393461
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 32722edf149b18c7d37311e5b334f378b962c877
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806990"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502953"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>デバイスごとの評価方法とプロパティのエクスポート
 
@@ -74,20 +74,22 @@ ms.locfileid: "53806990"
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-ConfigurationCategory|string|構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御
-ConfigurationId|string|特定の構成の一意の識別子
-ConfigurationImpact|string|構成が全体の構成スコアに与える影響の評価 (1-10)
-ConfigurationName|string|構成の表示名
-ConfigurationSubcategory|string|構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。
-DeviceId|string|サービス内のデバイスの一意の識別子。
-DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。
-IsApplicable|bool|構成またはポリシーが適用可能かどうかを示します。
-IsCompliant|bool|構成やポリシーが正しく構成されているかどうかを示します
-IsExpectedUserImpact|bool|構成が適用される場合にユーザーに影響を与えるかどうかを示します。
-OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
-RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
-RecommendationReference|string|このソフトウェアに関連する推奨事項 ID への参照。
-Timestamp|string|デバイスで構成が最後に表示された時刻
+configurationCategory|string|構成が属するカテゴリまたはグループ化: アプリケーション、OS、ネットワーク、アカウント、セキュリティコントロール。
+configurationId|string|特定の構成の一意の識別子。
+configurationImpact|string|構成が全体的な構成スコア (1 ~ 10) に及ぼす影響を評価します。
+configurationName|string|構成の表示名。
+configurationSubcategory|string|構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。
+deviceId|string|サービス内のデバイスの一意の識別子。
+deviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。
+isApplicable|bool|構成またはポリシーが適用可能かどうかを示します。
+isCompliant|bool|構成またはポリシーが適切に構成されているかどうかを示します。
+isExpectedUserImpact|bool|構成が適用される場合にユーザーに影響を与えるかどうかを示します。
+osPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「TVM でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
+osVersion|string|デバイスで実行されているオペレーティング システムの特定のバージョン。
+rbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
+rbacGroupId|string|役割ベースのアクセス制御 (RBAC) グループ ID。
+recommendationReference|string|このソフトウェアに関連する推奨事項 ID への参照。
+timestamp|string|デバイスで構成が最後に表示された時刻。
 
 ### <a name="13-properties-via-files"></a>1.3 プロパティ (ファイル経由)
 
@@ -116,10 +118,10 @@ DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。
 DiskPaths|Array[string]|製品がデバイスにインストールされていることを示すディスク証拠。
 EndOfSupportDate|string|このソフトウェアのサポートが終了または終了する日付。
 EndOfSupportStatus|string|サポートの状態の終了。 これらの可能な値を含めることができます。 なし、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。
-ID|string|レコードの一意の識別子。
-NumberOfWeaknesses|整数|このデバイス上のこのソフトウェアの弱点の数
+NumberOfWeaknesses|int|このデバイス上のこのソフトウェアの弱点の数。
 OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
 RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
+rbacGroupId|string|役割ベースのアクセス制御 (RBAC) グループ ID。
 RegistryPaths|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。
 SoftwareFirstSeenTimestamp|string|このソフトウェアがデバイスで初めて見られた。
 SoftwareName|string|ソフトウェア製品の名前。
@@ -160,9 +162,10 @@ ID|string|レコードの一意の識別子。
 LastSeenTimestamp|string|デバイスで CVE が最後に表示された時刻。
 OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 詳細については、「tvm でサポートされるオペレーティング システムとプラットフォーム」を参照してください。
 RbacGroupName|string|役割ベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "割り当てられていない" になります。 組織に RBAC グループが含まれている場合、値は "None" になります。
+rbacGroupId|string|役割ベースのアクセス制御 (RBAC) グループ ID。
 RecommendationReference|string|このソフトウェアに関連する推奨事項 ID への参照。
 RecommendedSecurityUpdate|string|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。
-RecommendedSecurityUpdateId|string|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子
+RecommendedSecurityUpdateId|string|対応するガイダンスまたはナレッジ ベース (KB) 記事の該当するセキュリティ更新プログラムまたは識別子の識別子。
 レジストリ パス配列 \[ の文字列\]|製品がデバイスにインストールされていることを示すレジストリ証拠。
 SoftwareName|string|ソフトウェア製品の名前。
 SoftwareVendor|string|ソフトウェア ベンダーの名前。

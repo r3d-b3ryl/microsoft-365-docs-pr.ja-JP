@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Microsoft 365の複数地域環境での SharePoint、OneDrive、および Exchange のユーザー エクスペリエンスについて説明します。
-ms.openlocfilehash: d81220cae6e78ddb387742a83affd3e8f803a75cef0cbc292d252f7b302f4959
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5ecdfd41c496149e04bfb9586f76807db7957d0d
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848509"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502905"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>複数地域環境でのユーザー エクスペリエンス
 
@@ -78,7 +78,7 @@ OneDriveモバイル クライアントは複数地域に対応し、すべて�
 
 ## <a name="sharepoint-home"></a>SharePoint Home 
 
-[SharePoint-Geo] では、ユーザー SharePoint場所によって決定された場所で、ユーザーのホームがホストOneDriveされます。 たとえば、ユーザーが自分の OneDrive をヨーロッパのサテライトの場所でホストしている場合、その SharePoint ホームはヨーロッパからレンダリングされます。 SharePoint ホームには、地理的な場所に関係なく、ユーザーに関連するすべてのコンテンツが含まれています。 
+[SharePoint-Geo] では、ユーザー SharePoint場所によって決定された場所で、ユーザーのホームがホストOneDriveされます。 たとえば、ユーザーがヨーロッパのサテライトOneDriveホストされている場合、ユーザーのホームSharePointヨーロッパからレンダリングされます。 SharePoint ホームには、地理的な場所に関係なく、ユーザーに関連するすべてのコンテンツが含まれています。 
 
 **フォローしているサイト、サイトからのニュース、最近のサイト、よく使うサイト、そしておすすめのサイト**
 
@@ -94,7 +94,7 @@ SharePoint モバイル クライアントは複数地域に対応し、すべ�
 
 ## <a name="sharing"></a>共有
 
-連絡先の選択のエクスペリエンスでは、地理的な場所に関係なくすべてのユーザーが表示されます。 これにより、ユーザーは、同じ地域または他のテナントの地域内の他のユーザーと共有できます。 異なる地域の場所からのコンテンツは、ユーザーのOneDrive の [自分と共有] ビューに表示され、ホストされている地域の場所に関係なく、シングル Sign-On エクスペリエンスでアクセスできます。
+連絡先の選択のエクスペリエンスでは、地理的な場所に関係なくすべてのユーザーが表示されます。 これにより、ユーザーは、同じ地域または他のテナントの地域内の他のユーザーと共有できます。 異なる地域の場所のコンテンツは、ユーザーのOneDrive、Word、Excel、PowerPoint、Office.com の [自分と共有] ビューに表示され、ホストされている地域の場所に関係なく、シングル Sign-On エクスペリエンスでアクセスできます。
 
 ## <a name="teams-experience"></a>Teams のエクスペリエンス
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4b407e99b65fd3f8deb28f4e76496f64b0160150558f200149abaed896d8717a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 184d3a09c0dd4d01ad074563603e6a4f5cbc0a99
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817833"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502785"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Android 用 Microsoft Defender for Endpoint
 
@@ -62,7 +62,9 @@ ms.locfileid: "53817833"
     -   ポータルへのアクセスMicrosoft 365 Defenderします。
 
         > [!NOTE]
-        > Microsoft Intuneは、Android に Microsoft Defender for Endpoint を展開する場合にサポートされている唯一のモバイル デバイス管理 (MDM) ソリューションです。 現在、Intune で Android 関連のデバイス コンプライアンス ポリシーで Defender for Endpoint を適用する場合は、現在登録されているデバイスだけがサポートされています。 
+        > Microsoft Defender for Endpoint では、モバイル デバイス管理 (MDM) を使用していないが、Intune を使用してモバイル アプリケーションを管理しているユーザーの管理アプリケーション内の組織のデータに保護を拡張できます。 また、このサポートは、他のエンタープライズ モビリティ管理ソリューションを使用しているお客様にも拡張しますが、モバイル アプリケーション管理 [(MAM)](/mem/intune/apps/mam-faq)には Intune を使用します。
+         > この更新プログラムの前に、Microsoft Defender for Endpoint は Intune MDM のみを使用して登録されたデバイスで作業しました。  
+ 
 
     -   管理[Microsoft エンドポイント マネージャーアクセスして](https://go.microsoft.com/fwlink/?linkid=2109431)、組織の登録済みユーザー グループにアプリを展開します。
         
@@ -94,7 +96,8 @@ Android の機能で Microsoft Defender for Endpoint を構成する方法につ
 
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開](android-intune.md)
 - [Android 機能用に Microsoft Defender for Endpoint を構成する](android-configure.md)
+- [モバイル アプリケーション管理 (MAM) の基本](/mem/intune/apps/app-management#mobile-application-management-mam-basics)
 

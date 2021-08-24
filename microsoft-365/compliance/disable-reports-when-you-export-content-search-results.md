@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: ローカル コンピューター Windowsレジストリを編集して、セキュリティ コンプライアンス センターからコンテンツ検索の結果をエクスポートするときにレポートを&します。
-ms.openlocfilehash: 6424f1763a297cd2fee0e6c8b5b1b06236b95ad0173bc6e117bedd2da5502ed9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: ローカル コンピューター Windowsレジストリを編集して、コンテンツ検索の結果をローカル コンピューターからエクスポートするときにレポートを無効Microsoft 365 コンプライアンス センター。
+ms.openlocfilehash: efe9ea768b68524dbfda003796a10d60453862bc
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807998"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503157"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>コンテンツ検索の結果をエクスポートするときにレポートを無効にする
 
-電子情報開示エクスポート ツールを使用してセキュリティ & コンプライアンス センターでコンテンツ検索の結果をエクスポートすると、エクスポートされたコンテンツに関する追加情報を含む 2 つのレポートが自動的に作成およびエクスポートされます。 これらのレポートは、Results.csv ファイルと Manifest.xml ファイルです (これらのレポート[](#frequently-asked-questions-about-disabling-export-reports)の詳細については、このトピックの「エクスポート レポートの無効化に関するよく寄せられる質問」セクションを参照してください)。 これらのファイルは非常に大きいので、これらのファイルがエクスポートされるのを防ぐことで、ダウンロード時間を高速化し、ディスク領域を節約できます。 これを行うには、検索結果Windowsエクスポートするために使用するコンピューターのレジストリを変更します。 後でレポートを含める場合は、レジストリ設定を編集できます。 
+電子情報開示エクスポート ツールを使用して Microsoft 365 コンプライアンス センター でコンテンツ検索の結果をエクスポートすると、エクスポートされたコンテンツに関する追加情報を含む 2 つのレポートが自動的に作成およびエクスポートされます。 これらのレポートは、Results.csv ファイルと Manifest.xml ファイルです (これらのレポート[](#frequently-asked-questions-about-disabling-export-reports)の詳細については、このトピックの「エクスポート レポートの無効化に関するよく寄せられる質問」セクションを参照してください)。 これらのファイルは非常に大きいので、これらのファイルがエクスポートされるのを防ぐことで、ダウンロード時間を高速化し、ディスク領域を節約できます。 これを行うには、検索結果Windowsエクスポートするために使用するコンピューターのレジストリを変更します。 後でレポートを含める場合は、レジストリ設定を編集できます。 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>エクスポート レポートを無効にするレジストリ設定を作成する
 

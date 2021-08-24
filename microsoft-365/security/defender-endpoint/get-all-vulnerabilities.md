@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9e0b1da197b93fdae0cf0254b5af81808e3b744a73cbf74428dc7cc9f2da41d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bce19d10c26bbd34874af32fe493dafdc63064d6
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829401"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503241"
 ---
 # <a name="list-vulnerabilities"></a>脆弱性の一覧表示
 
@@ -39,7 +39,15 @@ ms.locfileid: "53829401"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## <a name="api-description"></a>API の説明
+
 すべての脆弱性の一覧を取得します。
+<br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+<br>OData でサポートされている演算子:
+<br>```$filter``` on:  ```id``` ```name``` 、 、 、 、 、 ```description``` ```cvssV3``` ```publishedOn``` 、 ```severity``` 、、および ```updatedOn``` プロパティ。
+<br>```$top``` 最大値は 10,000 です。
+<br>```$skip```.
+<br>Microsoft Defender [for Endpoint を使用した OData クエリの例を参照してください](exposed-apis-odata-samples.md)。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -58,7 +66,7 @@ GET /api/vulnerabilities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**
 
