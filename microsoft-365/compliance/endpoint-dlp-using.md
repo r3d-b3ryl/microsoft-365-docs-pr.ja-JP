@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: 02cc958f816c2335a24923cf7fc16b80b9806d9c7811457e88080be50438ce48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c33677d483eadca4526d2c7f977ad91de6c7340c
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814183"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450130"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
-この記事では、デバイスを場所として使用する DLP ポリシーを作成および変更する 3 つのシナリオについて説明します。
+この記事では、デバイスを場所として使用する DLP ポリシーを作成および変更する 4 つのシナリオについて説明します。
 
 ## <a name="dlp-settings"></a>DLP の設定
 
@@ -65,16 +65,28 @@ DLP うるさすぎ、関心のあるファイルが含まれないので、デ�
 
 ### <a name="unallowed-apps"></a>許可されていないアプリ
 
-ポリシーで **許可されていないアプリとブラウザーによるアクセス** の設定がオンで、ユーザーがこのアプリを使用して保護ファイルにアクセスする場合、アクティビティが許可されるかブロックされますが、ユーザーはこの制限を上書きできます。 すべてのアクティビティが監査され、アクティビティエクスプローラーで確認できます。
+許可されていないアプリとは、DLP で保護されたファイルへのアクセスが許可されないアプリケーションの一覧です。
+ポリシーで **許可されていないアプリによるアクセス** の設定がオンで、許可されていない一覧にあるアプリが保護ファイルにアクセスしようとする場合、アクティビティは許可されるか、ブロックされるか、ブロックされるもののユーザーがこの制限を上書きできるかのいずれかになります。 すべてのアクティビティが監査され、アクティビティエクスプローラーで確認できます。
 
 > [!IMPORTANT]
 > 実行可能ファイルへのパスは含めず、実行可能ファイル名 (browser.exe など) のみを含めてください。
+
+#### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>クラウド同期アプリから機密性の高いデータを保護する
+
+*onedrive.exe* などのクラウド同期アプリによって機密性の高いアイテムがクラウドに同期されないようにするには、そのクラウド同期アプリを **許可しないアプリ** 一覧に追加します。 許可されていないクラウド同期アプリが、ブロックされている DLP ポリシーで保護されたアイテムにアクセスしようとした場合は、 DLP が繰り返し通知を生成することがあります。 **許可されていないアプリ** の **自動検疫** オプションを有効にすることで、このような繰り返しの通知を防止することができます。  
+
+##### <a name="auto-quarantine-preview"></a>自動検疫 (プレビュー)
+
+有効にした場合、許可されていないアプリが DLP で保護された機密性の高いアイテムにアクセスしようとした場合に、自動検疫が作動します。 自動検疫では、機密性の高いアイテムを管理者が構成済みのフォルダーに移動し、元のファイルの代わりにプレースホルダー **.txt** ファイルを残すことができます。 プレースホルダー ファイルでテキストを構成して、ユーザーにアイテムの移動先やその他の関連情報を伝えることができます。  
+
+自動検疫を使用して、ユーザーや管理者に DLP 通知が無限に連鎖するのを防止することができます。 「[シナリオ 4: 自動検疫を使用して、クラウド同期アプリからの DLP 通知のループを回避する (プレビュー)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)」を参照してください。
 
 ### <a name="unallowed-bluetooth-apps"></a>許可されていない Bluetooth アプリ
 
 ポリシーによって保護されているファイルを特定の Bluetooth アプリ経由でユーザーが転送できないようにします。
 
 ### <a name="browser-and-domain-restrictions"></a>ブラウザーとドメインの制限
+
 ポリシーに一致する機密ファイルが、無制限のクラウド サービス ドメインと共有されるのを制限します。
 
 #### <a name="service-domains"></a>サービスドメイン
@@ -220,6 +232,115 @@ DLP ポリシー ヒントの通知で、ユーザーによる業務上の正当
    > ![エンドポイント DLP クライアントが上書き通知をブロックしました](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. イベントのアクティビティエクスプローラーを確認します。
+
+### <a name="scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview"></a>シナリオ 4: 自動検疫を使用して、クラウド同期アプリからの DLP 通知のループを回避する (プレビュー)
+
+#### <a name="before-you-begin"></a>始める前に
+
+このシナリオでは、**非常に機密性の高い社外秘** の秘密度ラベルを持つファイルの OneDrive への同期がブロックされます。 これは、複数のコンポーネントと手順からなる複雑なシナリオです。 以下が必要です。
+
+- 対象となる AAD ユーザー アカウントと、ローカルの OneDrive フォルダーと OneDrive クラウド ストレージをすでに同期させているオンボード済みの Windows 10 コンピューター。
+- 対象の Windows 10 コンピューターにインストールされた Microsoft Word
+- 構成済みで公開済みの秘密度レベル。 「[秘密度ラベルの使用を開始する](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels)」と「[秘密度ラベルとそのポリシーを作成し構成する](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)」を参照してください。
+
+3 つの手順があります。
+
+1. エンドポイント DLP の自動検疫設定を構成します。
+2. **非常に機密性の高い社外秘** の秘密度ラベルが付けられた機密性の高いアイテムをブロックするポリシーを作成します。
+3. ポリシーの対象となる Windows 10 デバイスで Word ドキュメントを作成し、ラベルを適用して、同期されるユーザー アカウントのローカル OneDrive フォルダーにコピーします。  
+
+#### <a name="configure-endpoint-dlp-unallowed-app-and-auto-quarantine-settings"></a>エンドポイント DLP の許可されていないアプリと自動検疫設定を構成する
+
+1. [[エンドポイント DLP 設定]](https://compliance.microsoft.com/datalossprevention?viewid=globalsettings) を開きます
+
+2. **[許可されていないアプリ]** を展開します。
+
+3. **[許可されていないアプリの追加または編集]** を選択し、表示名に *[OneDrive]*、実行名に *[onedrive.exe]* を追加して、onedrive.exe が「**非常に機密性の高い社外秘**」ラベルのアイテムにアクセスできないようにします。
+
+4. **[自動検疫]** を選んでから **[保存]** を選びます。
+
+5. **[自動検疫設定]** で **[自動検疫設定の編集]** を選びます。
+
+6. **[許可されていないアプリへの自動検疫]** を有効にします。
+
+7. オリジナルの機密ファイルを移動させるローカル マシン上のフォルダーへのパスを入力します。 次に例を示します。
+   
+ユーザー名 *Isaiah langer* 向けの **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** は、移動済みアイテムを配置します 
+
+*C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive* フォルダーと、元のファイル名への日時スタンプの追加。
+
+> [!NOTE]
+> DLP 自動検疫では、許可されていないアプリごとにファイルのサブフォルダーが作成されます。 つまり、許可されていないアプリの一覧に *Notepad* と *OneDrive* の両方が入っている場合、**\OneDrive** 用のサブフォルダーと **\Notepad** 用のサブフォルダーが作成されます。
+
+8. 「**ファイルを次のテキストを含む .txt ファイルに置き換える**」を選択し、プレースホルダー ファイルに必要なテキストを入力します。 たとえば、「*auto quar 1.docx*」というファイルの場合は、以下のとおりです。
+    
+**%%FileName%% には、組織がデータ損失防止 (DLP) ポリシーで保護している %%PolicyName%% が含まれ、検疫フォルダー %%QuarantinePath%% に移動されました。** 
+
+は、以下のメッセージを含む .txt ファイルを残します
+
+*auto quar 1.docx には、組織でデータ損失防止 (DLP) ポリシーで保護されている機密情報が含まれており、検疫フォルダー「C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx」に移動されました。*
+
+9. **[保存]** を選択します。
+
+#### <a name="configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential"></a>秘密度ラベルが「非常に機密性の高い社外秘」であるファイルの OneDrive 同期をブロックするポリシーを構成します。
+
+1. [データ損失防止ポリシー ページ](https://compliance.microsoft.com/datalossprevention?viewid=policies)を開きます。
+
+2. **[ポリシーの作成]** を選びます。
+
+3. このシナリオでは、**[カスタム]** を選択し、**[カスタム ポリシー]** を選択して、**[次へ]** を選択します。
+
+4. **[名前]** フィールドおよび **[説明]** フィールドに入力し、**[次へ]** を選択します。
+
+5. **状態** フィールドを **デバイス** を除くすべての場所でオフにします。 テストする特定のエンド ユーザー アカウントがある場合は、必ず範囲内で選択してください。 **次へ** を選択します。
+
+6. 既定の **[高度な DLP ルールの作成またはカスタマイズ]** の選択を承諾し、**[次へ]** を選択します。
+
+7. 以下の値でルールを作成します。
+    1. **[名前]** > *[シナリオ 4 自動検疫]*
+    1. **[条件]** > **[コンテンツに含まれている]** > **[秘密度ラベル]** > **[非常に機密性の高い社外秘]**
+    1.  **[アクション]** > **[Windows デバイス上のアクティビティの監査または制限]** > **[許可されていないアプリでアクセス]** > **[ブロック]**。 このシナリオでは、他のアクティビティをすべてクリアします。
+    1. **[ユーザー通知]** > **[オン]**
+    1. **[エンドポイント デバイス]** から、**[アクティビティの場合にユーザーにポリシー ヒント通知を表示する]** がまだ有効になっていない場合は選択します。
+    
+8. **[保存]**、**[次へ]** を選択します。
+
+9. **[今すぐオンにする]** を選択します。 **[次へ]** を選択します。
+
+10. 設定を確認し、**送信** を選択します。
+
+> [!NOTE]
+> 新しいポリシーが複製され、対象の Windows 10 コンピューターに適用されるまで 1 時間以上かかります。
+
+11. 新しい DLP ポリシーがポリシー一覧に表示されます。
+
+#### <a name="test-auto-quarantine-on-the-windows-10-device"></a>Windows 10 デバイスでの自動検疫のテスト
+
+1. 「[秘密度ラベルが「非常に機密性の高い社外秘」であるファイルの OneDrive 同期をブロックするポリシーを構成します](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential)」の手順 5 で指定したユーザー アカウントを使用して Windows 10 コンピューターにログインします。
+
+2. 内容が OneDrive に同期されないフォルダーを作成します。 次に例を示します。
+
+    *C:\auto-quarantine ソース フォルダー*
+
+3. Microsoft Word を開き、自動検疫ソース フォルダーにファイルを作成します。 「**非常に機密性の高い社外秘**」秘密度ラベルを適用します。 「[Office 内のファイルやメールに秘密度ラベルを適用する](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)」を参照してください。
+
+4. 作成したばかりのファイルを、OneDrive 同期フォルダーにコピーします。 アクションが許可されておらず、ファイルが検疫される予定であることを伝えるユーザー通知トーストが表示されます。 たとえば、ユーザー名「*Isaiah Langer*」、タイトル「*auto-quarantine doc 1.docx*」のドキュメントの場合、次のようなメッセージが表示されます。
+
+![指定されたファイルに OneDrive 同期アクションが許可されておらず、ファイルが検疫されることを示すデータ損失防止ユーザー通知ポップアップ](../media/auto-quarantine-user-notification-toast.png)
+
+メッセージは以下のとおりです。
+
+「autoquarantine doc 1.docx をこのアプリで開くことは許可されていません。 このファイルは 'C:\Users\IsaiahLanger\Microsoft DLP\OneDrive' に検疫されます」
+
+5. **[無視]** を選択します
+
+6. プレース ホルダー .txt ファイルを開きます。 **auto-quarantine doc 1.docx_ *date_time*.txt** という名前が付けられます。 
+
+7. 検疫フォルダーを開き、元のファイルがそこにあることを確認します。
+ 
+8. 監視対象エンドポイントのデータのアクティビティエクスプローラーを確認します。 デバイスがある場所のフィルターを設定し、ポリシーを追加してから、ポリシー名でフィルター処理を行って、このポリシーの影響を確認します。 必要に応じて、[アクティビティ エクスプローラーの使用を開始](data-classification-activity-explorer.md)を参照してください。
+
+9. イベントのアクティビティエクスプローラーを確認します。
 
 ## <a name="see-also"></a>関連項目
 

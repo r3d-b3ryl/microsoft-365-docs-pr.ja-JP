@@ -188,8 +188,6 @@
               href: m365d-autoir-results.md
             - name: 誤検知と否定に対処する
               href: m365d-autoir-report-false-positives-negatives.md
-            - name: Power Automate を使用する
-              href: use-power-automate.md
         - name: 高度な検出
           items:
             - name: 高度な検出の概要

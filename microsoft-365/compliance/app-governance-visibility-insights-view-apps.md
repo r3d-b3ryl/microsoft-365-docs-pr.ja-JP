@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アプリを表示します。
-ms.openlocfilehash: b711610461ec02a4e3174557f77fc0d553afd124ae13a96d858a2ae353e4a554
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9e67f5115e715f804cf91d95c24760a25fdf869c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887000"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394530"
 ---
 # <a name="view-your-apps"></a>アプリを表示する
 
@@ -74,7 +74,7 @@ Microsoft アプリ ガバナンスを使用すると、テナント内の Micro
 | タブ名 | 説明 |
 |:-------|:-----|
 | 詳細 | 最初に同意した日付やアプリ ID など、アプリに関する追加データを表示します。 Azure AD に登録されているアプリのプロパティを表示するには、**[Azure AD のアプリを表示]** を選択します。 |
-| 使用法 |テナント内のアプリがアクセスするデータを確認し、SharePoint および Exchange リソースのデータ使用量をプロットします。 |
+| 使用法 |テナント内のアプリがアクセスするデータを確認し、Microsoft Office SharePoint Online および Exchange リソースのデータ使用量をプロットします。 |
 | ユーザー | アプリを使用しているユーザーのリスト、ユーザーが優先アカウントであるかどうか、ダウンロードおよびアップロードされたデータの量を表示します。 |
 | アクセス許可 | アプリに付与されて使用されるアクセス許可の概要と、特定のアクセス許可のリストを表示します。 詳細については、「[Microsoft Graph のアクセス許可リファレンス](/graph/permissions-reference)」を参照してください。 |
 |||

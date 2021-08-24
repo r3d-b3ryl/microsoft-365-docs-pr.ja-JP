@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: cafe6fe2628d58b80ea86753734e56996c5fdfcd
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 44caa372797e627a05bc40b3fb816d50dcd5a88c
+ms.sourcegitcommit: 0ec4a6cc94ebc2ae18846011a34bbd1dd9a7ace0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357055"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470778"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> このシナリオは、[規制レコード](records-management.md#records)についてはサポートしていません。
+> このシナリオは、Microsoft Office SharePoint Online のドキュメント セットやライブラリ、Exchange のフォルダーなどの組織構造の[規制レコード](records-management.md#records)や既定のラベルではサポートされていません。 これらのシナリオでは、[発行済みアイテム保持ラベル ポリシー](create-apply-retention-labels.md#step-2-publish-retention-labels)が必要です。
 
 [保持ラベル](retention.md)の最も強力な機能の 1 つは、指定した条件に一致したコンテンツに自動的にラベルを適用することです。 この場合、組織内のユーザーが保持ラベルを適用する必要はありません。 Microsoft 365 が行います。
   
@@ -53,7 +53,7 @@ ms.locfileid: "58357055"
 次の手順を 2 つの管理手順に使用します。
 
 > [!NOTE]
-> 自動ポリシーで、保持ラベルを自動的に適用するための条件によりサービス側でのラベル付けを使用します。 次の操作を行うときにラベル ポリシーを使用して保持ラベルを自動的に適用することもできます。 
+> 自動ポリシーで、アイテムに保持ラベルを自動的に適用するための条件によりサービス側でのラベル付けを使用します。 次の操作を行うときにラベル ポリシーを使用して保持ラベルを自動的に適用することもできます。 
 >
 > - SharePoint Syntex のドキュメント理解モデルに保持ラベルを適用する
 > - SharePoint と Outlook の既定の保持ラベルを適用する
@@ -136,6 +136,7 @@ ms.locfileid: "58357055"
 |特定のキーワードまたは検索可能なプロパティ| はい |はい |
 |トレーニング可能な分類子| はい | はい (過去 6 か月のみ) |
 
+さらに、下書きになっている、または一度も公開されていない Microsoft Office SharePoint Online のアイテムは、このシナリオではサポートされていません。
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>特定の種類の機密情報によるコンテンツへのラベルの自動適用
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: 6fd9a7cbbc7db1062c22b77b1e64745e88853a13
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7671bcc99a0f1ab205312fe0aa6930255ae6cfa1
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255894"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58386998"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -55,9 +55,11 @@ Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compl
 
 特定のポリシーが他のポリシーよりも優先されるように、ポリシーおよび優先度のレベルに一致する監査レコードを保持する期間を指定することもできます。 また、組織の一部またはすべてのユーザーに対して Exchange、SharePoint、Azure Active Directory 監査レコードを 1 年未満 (または 10 年間) で保持する必要がある場合は、カスタム監査ログの保持ポリシーが既定の監査保持ポリシーよりも優先されます。 詳細については、「[監査ログ保持ポリシーを管理する](audit-log-retention-policies.md)」を参照してください。
 
-## <a name="access-to-crucial-events-for-investigations"></a>調査のための重要なイベントへのアクセス
+## <a name="advanced-audit-events"></a>高度な監査イベント
 
-高度な監査は、いつメール項目がアクセスされたか、いつメール項目が返信されたか、または転送されたか、ユーザーがいつ何を Exchange Online や SharePoint Online で検索したかなどの重要なイベントへのアクセスを提供することで、組織によるフォレンジック調査やコンプライアンス調査の実施をサポートします。 これらの重要なイベントは、起こりうる侵害を調査し、侵害の範囲を決定するのに役立ちます。  高度な監査は、次の重要なイベントを提供します。
+高度な監査は、いつメール項目がアクセスされたか、いつメール項目が返信されたか、または転送されたか、ユーザーがいつ何を Exchange Online や SharePoint Online で検索したかなどの重要なイベントへのアクセスを提供することで、組織によるフォレンジック調査やコンプライアンス調査の実施をサポートします。 これらの重要なイベントは、起こりうる侵害を調査し、侵害の範囲を決定するのに役立ちます。  Exchange と SharePoint の重要なイベントに加えて、その他の Microsoft 365 サービスにも重要なイベントとみなされるイベントがあり、ログに記録するには[適切な高度な監査ライセンス](auditing-solutions-overview.md#licensing-requirements)が必要です。
+
+高度な監査は、次の重要なイベントを提供します。
 
 - [MailItemsAccessed](#mailitemsaccessed)
 
@@ -66,6 +68,8 @@ Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compl
 - [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
 - [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+- [Microsoft 365 のその他の高度な監査イベント](#other-advanced-audit-events-in-microsoft-365)
 
 > [!NOTE]
 > <sup>*</sup>現時点では、このイベントは Office 365 および Microsoft 365 Government GCC High と Microsoft 365 Government DoD の環境では利用できません。
@@ -131,7 +135,7 @@ SearchQueryInitiatedExchange 監査レコードを検索するには、コンプ
 また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
 > [!NOTE]
-> 監査ログでこのイベントを検索するには、SearchQueryInitiatedExchange を有効にして記録する必要があります。 方法については、[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-crucial-events) を参照してください。
+> 監査ログでこのイベントを検索するには、SearchQueryInitiatedExchange を有効にして記録する必要があります。 方法については、[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) を参照してください。
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -154,7 +158,19 @@ SearchQueryInitiatedSharePoint 監査レコードを検索するには、コン�
 また、Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) を実行することもできます。
 
 > [!NOTE]
-> 監査ログでこのイベントを検索するには、SearchQueryInitiatedSharePoint を有効にして記録する必要があります。 方法については、[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-crucial-events) を参照してください。
+> 監査ログでこのイベントを検索するには、SearchQueryInitiatedSharePoint を有効にして記録する必要があります。 方法については、[高度な監査の設定](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) を参照してください。
+
+### <a name="other-advanced-audit-events-in-microsoft-365"></a>Microsoft 365 のその他の高度な監査イベント
+
+Exchange Online と SharePoint Online の重要なイベントに加えて、その他の Microsoft 365 サービスにも重要なイベントとみなされるイベントがあり、ユーザーに適切な高度な監査ライセンスが割り当てられている場合は、ログに記録されます。 次の Microsoft 365 サービスでは、重要なイベントを提供します。 対応するリンクをクリックして、これらのイベントを特定し説明する記事に移動します。
+
+- [Microsoft Forms](search-the-audit-log-in-security-and-compliance.md#microsoft-forms-activities)
+
+- [Microsoft Stream](/stream/audit-logs#actions-logged-in-stream)
+
+- [Microsoft Teams](/microsoftteams/audit-log-events#teams-activities)
+
+- [Yammer](search-the-audit-log-in-security-and-compliance.md#yammer-activities)
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Office 365 管理アクティビティ API への高帯域幅アクセス
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: SharePoint Syntex でフォーム処理モデルを作成する方法について説明します。
-ms.openlocfilehash: 026f5b07a944cf21e6f5c260093a7cb616ffe775f3f726db9fabceac0bcfa574
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1acc47244bd5989e429ebd68105d353af214cb19
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855605"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399817"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でフォーム処理モデルを作成する
 

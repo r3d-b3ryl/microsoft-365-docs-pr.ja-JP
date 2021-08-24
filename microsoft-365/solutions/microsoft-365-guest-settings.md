@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: 組織外のユーザーとの共有に影響を与える可能性がある、Microsoft 365 で使用できるゲスト共有設定について説明します。
-ms.openlocfilehash: 33cec29afa04c3f2829f055e01760a19b47f1405acd618d630641135779976a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b8b8b8481dca5074d2db6c3022d65e160cdf7b04
+ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862488"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58418027"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -149,7 +149,7 @@ OneDrive はSharePoint のサイトの階層であるため、組織レベルの
 
 **ナビゲーション:** [SharePoint 管理センター] > [共有]
 
-![SharePoint 組織レベルの共有設定のスクリーンショット](../media/sharepoint-organization-external-sharing-controls.png)
+![SharePoint 組織レベルの共有設定のスクリーンショット](../media/external-sharing.png)
 
 | 設定 | 既定値 | 説明 |
 |:-----|:-----|:-----|
@@ -160,7 +160,7 @@ OneDrive はSharePoint のサイトの階層であるため、組織レベルの
 
 **ナビゲーション:** [SharePoint 管理センター] > [共有]
 
-![SharePoint における組織レベルの追加共有設定のスクリーンショット](../media/sharepoint-organization-advanced-sharing-settings.png)
+![SharePoint における組織レベルの追加共有設定のスクリーンショット](../media/external-sharing.png)
 
 | 設定 | 既定値 | 説明 |
 |:-----|:-----|:-----|
@@ -169,6 +169,7 @@ OneDrive はSharePoint のサイトの階層であるため、組織レベルの
 |ゲストは共有への招待が送信されたアカウントと同じアカウントを使用してサインインする必要がある|オフ|招待の送信先とは別のメールアドレスを使用して、ゲストがサイト共有の招待を交換しないようにします。 <p> [SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](/sharepoint/sharepoint-azureb2b-integration-preview)では、招待の送信先のメールアドレスに基づいてすべてのゲストがディレクトリに追加されるため、この設定は使用されません。 代わりのメールアドレスは、サイトにアクセスする際に使用できません。|
 |ゲストに所有していないアイテムの共有を許可する|オン|**[オン]** の場合、ゲストは他のユーザーやゲストと自分が所有していないアイテムを共有できます。**[オフ]** の場合は共有できません。 ゲストは常にフル コントロールのあるアイテムを共有できます。|
 |認証コードを使用するユーザーに、再認証を要求するまでの日数|オフ|この設定により、ワンタイム パスコードで認証するユーザーが特定の日数後に再認証する必要があることを要求できます。|
+|サイトまたは OneDrive へのゲスト アクセスは、この数日後に自動的に期限切れになります|オン|管理者がゲスト アクセスの有効期限を設定している場合、サイトに招待したゲスト、または個別のファイルとフォルダーを共有している各ゲストには、特定の日数のアクセスが許可されます。 詳細については、「[サイトのゲストの有効期限を管理する](https://support.microsoft.com/en-us/office/manage-guest-expiration-for-a-site-25bee24f-42ad-4ee8-8402-4186eed74dea)」 をご覧ください。
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>SharePoint と OneDrive のファイルとフォルダーのリンク設定
 

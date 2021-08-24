@@ -1,5 +1,5 @@
 ---
-title: 米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
+title: Key compliance and security considerations for US banking and capital markets
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -10,326 +10,326 @@ ms.collection:
 ms.prod: microsoft-365-enterprise
 ms.custom: seo-marvel-jun2020
 localization_priority: Priority
-description: 金融サービス機関が、Microsoft 365 と Teams を使用して、財務的なセキュリテとコンプライアンスを維持し、効果的に共同作業を行う方法について説明します。
+description: Learn how financial services institutions can maintain financial security compliance and effectively collaborate using Microsoft 365 and Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 64f0968dac4dd33b7333455a48d491f89b555524
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: MT
+ms.openlocfilehash: 88aa46e08a450953e940d625e7f35cf9732d668d
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229385"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400273"
 ---
-# <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
+# <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Key compliance and security considerations for US banking and capital markets
 
-## <a name="introduction"></a>概要
-セキュリティ、コンプライアンス、ガバナンスの厳格な管理に関して、金融サービス機関ほど要求が高い営利事業はほとんどありません。 データ、個人情報、デバイス、アプリケーションの保護は事業にとって極めて重要であるだけでなく、米国証券取引委員会 (SEC)、金融取引業規制機構 (FINRA)、米連邦金融機関検査協議会 (FFIEC)、米商品先物取引委員会 (CFTC) などの規制機関からのコンプライアンス要件やガイドラインに従う必要もあります。 さらに、金融機関はドッド・フランク法や 2002 年のサーベス・オクスリー法に従う必要もあります。
+## <a name="introduction"></a>Introduction
+Financial services institutions surpass nearly all commercial businesses in their demand for stringent security, compliance, and governance controls. The protection of data, identities, devices, and applications is not only critical to their business, it's subject to compliance requirements and guidelines from regulatory bodies such as the U.S. Securities and Exchange Commission (SEC), the Financial Industry Regulatory Authority (FINRA), the Federal Financial Institutions Examination Council (FFIEC), and the Commodity Futures Trading Commission (CFTC). In addition, financial institutions are subject to laws such as Dodd-Frank and the Sarbanes-Oxley Act of 2002.
 
-セキュリティに対する警戒、インサイダー リスクの懸念、公開データの侵害が勢いを増す今日の風潮の中で、個人情報や金融資産を預ける顧客も金融機関に高いレベルのセキュリティを要求するようになっています。
+In today's climate of increased security vigilance, insider risk concerns and public data breaches, customers also demand high levels of security from their financial institutions in order to trust them with their personal data and banking assets.
 
-これまでも、金融機関が内部および外部のコラボレーションのために使用する IT システムやプラットフォームには、包括的な管理の必要性が直接的な影響を与え、制約を課してきました。 今日、金融サービスの従業員は採用しやすく使いやすい最新のコラボレーション プラットフォームを必要としています。 とはいえ金融サービスは、ユーザー、チーム、部門間のコラボレーションの柔軟性のために、ユーザーや IT システムを脅威から保護するためにポリシーを適用するセキュリティとコンプライアンスの管理を犠牲にすることはできません。
+Historically, the need for comprehensive controls directly impacted and constrained the IT systems and platforms that financial institutions use to enable collaboration internally and externally. Today, financial services employees need a modern collaboration platform that's easy to adopt and easy to use. But financial services can't trade the flexibility to collaborate between users, teams, and departments with security and compliance controls that enforce policies to protect users and IT systems from threats.
 
-金融サービス セクターでは、コラボレーション ツールやセキュリティ コントロールの構成と配置に関して、次のようなことを真剣に検討する必要があります。
-- 組織のコラボレーションやビジネス プロセスの一般的なシナリオにおけるリスク評価
-- 情報の保護とデータ ガバナンスの要件
-- サイバーセキュリティおよびインサイダーの脅威
-- 規制遵守要件
-- その他の運営上のリスク
+In the financial services sector, careful consideration is required for the configuration and deployment of collaboration tools and security controls, including:
+- Risk assessment of common organizational collaboration and business process scenarios
+- Information protection and data governance requirements
+- Cybersecurity and insider threats
+- Regulatory compliance requirements
+- Other operational risks
 
-**Microsoft 365 は、金融サービス組織が今直面している課題に対応することを可能にする、最新の職場向けクラウド環境です。セキュリティで保護された柔軟な企業全体のコラボレーションを、管理やポリシーの適用と組み合わせることにより、厳格な規制遵守フレームワークに従います。** この記事では、金融サービスがデータとシステムをセキュリティで保護し、規制を遵守しつつ、最新のコラボレーション プラットフォームに移行する際に Microsoft 365 プラットフォームがどのように役立つかを説明します。
+**Microsoft 365 is a modern workplace cloud environment that can address the contemporary challenges financial services organizations face. Secure and flexible collaboration across the enterprise is combined with controls and policy enforcement to adhere to stringent regulatory compliance frameworks.** This article describes how the Microsoft 365 platform helps financial services move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations:
 
-* Microsoft 365 と Microsoft Teams を使用して、組織および従業員の生産性を向上する
-* Microsoft 365 を使用して現代のコラボレーションを保護する 
-* 機密データを特定し、データ損失を防止する
-* 要塞を防御する
-* 記録を効率的に管理することで、データを管理し、規制を遵守する
-* 情報バリアにより、倫理的境界を確立する
-* データ流出とインサイダー リスクから保護する
+* Enable organizational and employee productivity by using Microsoft 365 and Microsoft Teams
+* Protect modern collaboration by using Microsoft 365 
+* Identify sensitive data and prevent data loss
+* Defend the fortress
+* Govern data and comply with regulations by effectively managing records
+* Establish ethical walls with information barriers
+* Protect against data exfiltration and insider risk
 
-Microsoft のパートナーである Protiviti は、この記事のために情報や重要なフィードバックを提供してくれました。
+As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
 
-次のダウンロード可能なイラストは、この記事を補足します。 Woodgrove Bank と Contoso は、この記事で説明されている機能を適用して、金融サービスの一般的な規制要件に対処する方法を示すために使用されます。 これらのイラストを自分の用途に合わせて自由にアレンジしてください。 
+The following downloadable illustrations supplement this article. Woodgrove Bank and Contoso are used to demonstrate how capabilities described in this article can be applied to address common regulatory requirements of financial services. Feel free to adapt these illustrations for your own use. 
 
-**Microsoft 365 の情報保護とコンプライアンスのイラスト**
+**Microsoft 365 information protection and compliance illustrations**
 
-| アイテム | 説明 |
+| Item | Description |
 |:-----|:-----|
-|[![モデル ポスター: Microsoft 365 の情報保護とコンプライアンスの機能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>英語: [PDF としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日本語: [PDF としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> 更新日: 2020 年 11 月|含まれる内容: <ul><li>  Microsoft の情報保護およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>コミュニケーション コンプライアンス</li><li>インサイダー リスク</li><li>サードパーティのデータの取り込み</li>|
+|[![Model poster: Microsoft 365 information protection and compliance capabilities](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>English: [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanese: [Download as a PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> Updated November 2020|Includes: <ul><li>  Microsoft information protection and data loss prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk</li><li>Third-party data ingestion</li>|
 
 
-## <a name="empower-organizational-and-employee-productivity-by-using-microsoft-365-and-teams"></a>Microsoft 365 と Teams を使用して、組織および従業員の生産性を強化する
+## <a name="empower-organizational-and-employee-productivity-by-using-microsoft-365-and-teams"></a>Empower organizational and employee productivity by using Microsoft 365 and Teams
 
-コラボレーションでは通常、ドキュメントやデータを保存したりアクセスしたりする機能や、必要に応じて他のアプリケーションを統合する機能など、様々な形態の通信が必要になります。 多くの場合、金融サービスの従業員は他の部門やチームのメンバーと共同作業を行ったり連絡したりする必要があり、時には外部の企業とそうする必要もあります。 そのため、サイロを作ったり、情報共有を難しくしたりするシステムを使用するのは理想的ではありません。 むしろ、従業員が会社のポリシーに準拠した、セキュリティで保護された方法で連絡、共同作業、情報共有ができるプラットフォームやアプリケーションを活用することが望ましいと言えます。
+Collaboration typically requires various forms of communication, the ability to store and access documents/data, and the ability to integrate other applications as needed. Employees in financial services typically need to collaborate and communicate with members of other departments or teams and sometimes with external entities. Therefore, using systems that create silos or make information sharing difficult is undesirable. Instead, it's preferable to leverage platforms and applications that enable employees to communicate, collaborate, and share information securely and according to corporate policy.
 
-クラウドベースの最新のコラボレーション プラットフォームを提供すれば、従業員は生産性を向上し、仕事をより早く終わらせるためのツールを選択し、統合することができるようになります。 Teams を、組織を保護するセキュリティ コントロールや情報ガバナンス ポリシーと組み合わせて使用することにより、従業員は効率的に連絡および共同作業できるようになります。
+Providing employees with a modern, cloud-based collaboration platform allows them to choose and integrate tools that make them more productive and empower them to find agile ways to work. Using Teams in conjunction with security controls and information governance policies that protect the organization can help your workforce communicate and collaborate effectively.
 
-Teams は組織にコラボレーション ハブを提供します。 人々をつなぎ、共通のイニシアティブやプロジェクトにおいて生産的に仕事ができるように助けます。 チーム メンバーは Teams を使用して、1:1 および複数人によるチャット、ドキュメントの共同作業や共同執筆、ファイルの保存や共有を行うことができます。 また Teams では、統合されたエンタープライズ VoIP やビデオを使用してオンライン会議を実施することもできます。 さらに、Microsoft Planner、Microsoft Dynamics 365、PowerApps、Power BI などの Microsoft 製アプリや、サードパーティ製基幹業務アプリにより、Teams をカスタマイズすることも可能です。 Teams は内部のチーム メンバーと許可された外部ユーザーの両方による使用を目的としており、これらのユーザーはチーム チャネルやチャットに参加したり、保存されたファイルにアクセスしたり、他のアプリケーションを活用したりできます。
+Teams provides a collaboration hub for the organization. It helps bring people together to work productively on common initiatives and projects. Teams lets team members conduct 1:1 and multi-party chat conversations, collaborate and coauthor documents, and store and share files. Teams also facilitates online meetings through integrated enterprise voice and video. Teams can also be customized with Microsoft apps such as Microsoft Planner, Microsoft Dynamics 365, Power Apps, Power BI, and third-party line-of-business applications. Teams is designed for use by both internal team members and permitted external users who can join team channels, participate in chat conversations, access stored files, and leverage other applications
 
-すべての Microsoft チームの背後には、Microsoft 365 グループがあります。 このグループは、Teams を含む多数の Office 365 サービスのためのメンバーシップ サービスと見なされます。 Microsoft 365 グループは、"所有者" および "メンバー" をセキュリティで保護された方法で区別し、Teams の様々な機能へのアクセスを管理するために使用されます。 適切なガバナンス コントロールと定期的に実施されるアクセス レビューにより、Teams はメンバーと所有者だけに対して、許可されたチャネルと機能の使用を許可します。
+Every Microsoft Team is backed by a Microsoft 365 group. That group is considered the membership service for numerous Office 365 services, including Teams. Microsoft 365 groups are used to securely distinguish between "owners" and "members" and to control access to various capabilities within Teams. When coupled with appropriate governance controls and regularly administered access reviews, Teams allows only members and owners to utilize authorized channels and capabilities.
 
-金融サービスにおいて Teams が役に立つ一般的なシナリオは、内部プロジェクトやプログラムを実施する場合です。 たとえば、銀行、資産管理企業、信用組合、保険会社を含む多くの金融機関では、マネー ロンダリング防止プログラムや他のコンプライアンス プログラムを実施する必要があります。 IT 部門、小売りや資産管理などの基幹業務部門、金融犯罪部門で構成される部門横断型のチームは、互いにデータを共有し、プログラムや特定の調査に関して連絡を取り合うことが必要になることがあります。 従来では、こうしたプログラムではネットワーク ドライブが使用されてきましたが、この方法には多数の課題があります。たとえば:
-* 1 度にドキュメントを編集できるのは 1 人のみ。
-* 個人を追加または削除するには IT 部門が関わることが多いため、セキュリティの管理に時間がかかる。
-* 必要な期間または望ましい期間よりもずっと長く、データが共有ネットワーク ドライブに保存されたままになる。
+A common scenario where Teams benefits financial services is when running internal projects or programs. For example, many financial institutions, including banks, wealth management firms, credit unions, and insurance providers, are required to have anti-money laundering and other compliance programs in place. A cross-functional team comprised of IT, lines of business such as retail and wealth management, and a financial crime unit may be required to share data with each other and communicate about the program or specific investigations. Traditionally, these programs have used shared network drives, but this approach can present numerous challenges, including:
+* Only one person can edit a document at a time.
+* Managing security is time-consuming because adding/removing individuals typically involves IT.
+* Data remains resident on shared network drives much longer than required or wanted.
 
-Teams では、顧客の機密データをセキュリティで保護された状態で保存し、チーム メンバー間で機密性の高い話題を話し合うためのコラボレーション スペースが提供されます。 チームの複数のメンバーが、同一のドキュメントを同時に編集または共同作業できます。 プログラムの所有者やコーディネーターをチーム所有者として設定して、必要に応じてメンバーを追加および削除することができます。
+Teams can provide a collaboration space to securely store sensitive client data and conduct conversations between team members where sensitive topics may be discussed. Multiple members of the team can edit or collaborate on a single document at the same time. The program owner or coordinator can be configured as the team owner and can then add and remove members as needed.
 
-もう一つの一般的なシナリオは、ドキュメントの共同作業、保存、管理を、安全に行うために 「仮想データ ルーム」 として Teams を利用することです。 投資銀行、資産管理企業、未公開株式投資会社内のチーム メンバーやシンジケートは、取引や投資においてセキュリティで保護された方法で共同作業できます。 部門横断型のチームはそのような取引の計画や実施に関わることが多いため、データの共有や会話をセキュリティで保護された方法で実施できることは欠かせない要件です。 関係するドキュメントを外部の投資家とセキュリティで保護された方法で共有することも重要な要件です。 Teams ではセキュリティで保護され、完全に監査可能な場所が提供され、この場所で投資のためのデータを一元的に保存、保護、共有できます。
+Another common scenario is to use Teams as a "virtual data room" to securely collaborate, including storing and managing documents. Team members and syndicates within investment banking, asset management, or private equity firms can securely collaborate on a deal or investment. Cross-functional teams are often involved in planning and fulfilling such deals, and the ability to securely share data and conduct conversations is a core requirement. Securely sharing related documents with external investors is also a key requirement. Teams provides a secure and fully auditable location from which to centrally store, protect, and share investment data.
 
-![大画面上で画像について検討する会議中のオフィス ワーカーのグループ。](../media/m365cO19-ent-dell-latitude13-5951.jpg)
+![A group of office workers in a meeting discuss images on a large scree](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
-### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: コラボレーションを改善し、コンプライアンス リスクを軽減する
+### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: Improve collaboration and reduce compliance risk
 
-Microsoft 365 では、基盤となるメンバーシップ サービスとして Microsoft 365 グループを使用することにより、その他の一般的なポリシーの機能が Teams に提供されます。 これらのポリシーは、コラボレーションを改善し、コンプライアンス ニーズを満たすのに役立ちます。
+Microsoft 365 provides other common policy capabilities for Teams through its use of Microsoft 365 groups as an underlying membership service. These policies can help improve collaboration and meet compliance needs.
 
-**Microsoft 365 グループの名前付けポリシー** により、Microsoft 365 グループおよびチームに、会社のポリシーに従った名前を付けることができます。 名前が適切でないと、問題を引き起こすことがあります。 たとえば、名前が適切に付けられていないと、従業員はどのチームと協力したり情報を共有したりすればよいかがわかりません。 グループの名前付けポリシー (接頭語/接尾語に基づくポリシーや独自の禁止単語のサポートを含む) では、優れた "予防策" を実施し、予約された単語や不適切な用語など、特定の単語の使用を防止することができます。
+**Microsoft 365 group naming policies** help ensure that Microsoft 365 groups, and therefore teams, are named according to corporate policy. Names can be problematic if they aren't appropriate. For example, employees may not know which teams to work with or share information with if names aren't appropriately applied. Group-naming policies (including support for prefix/suffix-based policies and custom blocked words) can enforce good "hygiene" and prevent use of specific words, such as reserved words or inappropriate terminology.
   
-**Microsoft 365 グループの有効期限ポリシー** では、Microsoft 365 グループおよびチームが、組織で必要とされている (または望ましい) 期間を超えて保持されることを回避できます。 この機能では、2 つの重要な情報管理の問題を防止できます。
+**Microsoft 365 group expiration policies** help ensure that Microsoft 365 groups and therefore teams, aren't retained for longer periods of time than the organization wants or needs. This capability helps prevent two key information-management issues:
 
-* 必要ではない、または使用されていないチームの増加。
-* 組織が既に必要としていない、または使用していないデータの不必要な保持 (法的ホールド/保持の場合を除く)。
+* Proliferation of teams that aren't necessary or used.
+* Over-retention of data that's no longer required or used by the organization (except in cases of legal hold/preservation).
 
-管理者は、Microsoft 365 グループの有効期限を 90 日、180 日、365 日のように指定できます。 Microsoft 365 グループを基盤とするサービスが有効期限の期間、非アクティブである場合、グループ所有者は通知を受け取ります。 何もしない場合、Microsoft 365 グループと、Teams を含むすべての関連サービスが削除されます。
+Administrators can specify an expiration period for Microsoft 365 groups, such as 90, 180, or 365 days. If a service that's backed by a Microsoft 365 group is inactive for the expiration period, group owners are notified. If no action is taken, the Microsoft 365 group and all its related services, including Teams, is deleted.
   
-Teams や他のグループ ベースのサービスに保存されているデータを不必要に保持することは、金融サービス組織にとってリスクとなり得ます。 Microsoft 365 グループの有効期限ポリシーは、必要ではなくなったデータの保持を防止するのに役立ちます。 組み込みの保持ラベルやポリシーと組み合わせることにより、Microsoft 365 は組織が会社のポリシーと規制遵守義務を果たすために必要なデータだけを保持するようにします。
+The over-retention of data that's stored in Teams and other group-based services can pose risks to financial services organizations. Microsoft 365 group expiration policies are a recommended way to help prevent retention of data that's no longer needed. Combined with built-in retention labels and policies, Microsoft 365 helps ensure that organizations are only retaining the data that's required to meet corporate policies and regulatory compliance obligations.
 
-#### <a name="teams-integrate-custom-requirements-with-ease"></a>Teams: 独自の要件を簡単に統合する
+#### <a name="teams-integrate-custom-requirements-with-ease"></a>Teams: Integrate custom requirements with ease
 
-Teams では、セルフサービスのチーム作成が既定で有効になります。 とはいえ多くの規制対象組織は、現在従業員に使用されているのはどのコラボレーション チャネルか、機密データが含まれているのはどのチャネルか、組織チャネルの所有者は誰かということを管理し、理解することを望みます。 こうしたガバナンス コントロールを促進するため、Microsoft 365 では組織はセルフサービスのチーム作成を無効にすることができます。 Microsoft Power Apps や Power Automate などのビジネス プロセス自動化ツールを使用することにより、組織は、従業員が新しいチームの作成をリクエストするためのシンプルなフォームと承認プロセスを構築して配置することができます。 承認されるとチームは自動的にプロビジョニングされ、リンクがリクエスト元に送信されます。 この方法で、組織はコンプライアンス コントロールと独自の要件を設計し、チーム作成プロセスに統合できます。
+Teams enables self-service creation of teams by default. However, many regulated organizations want to control and understand which collaboration channels are currently in use by their employees, which channels may contain sensitive data, and ownership of organizational channels. To facilitate these governance controls, Microsoft 365 lets organization disable self-service teams creation. By using business process automation tools such as Microsoft Power Apps and Power Automate, organizations can build and deploy simple forms and approval processes for employees to request creation of a new team. When approved, the team can be automatically provisioned and a link sent to the requestor. In this way, organizations can design and integrate their compliance controls and custom requirements into the team-creation process.
  
-### <a name="acceptable-digital-communication-channels"></a>許容されるデジタル通信チャネル
+### <a name="acceptable-digital-communication-channels"></a>Acceptable digital communication channels
 
-FINRA は、[規制対象企業のデジタル通信が、証券取引所法の規則 17a-3 と 17a-4、および FINRA Rule Series 4510 の記録保持要件を満たすべきであることを強調しています](https://www.finra.org/rules-guidance/key-topics/books-records)。 FINRA は、組織がコンプライアンスとリスクの管理を改善するのに役立つ、重要な調査結果、観察、効果的な慣行を含む年次報告書をリリースしています。 [2019 Report on Examination Findings and Observations](https://www.finra.org/rules-guidance/guidance/reports/2019-report-exam-findings-and-observations) (調査結果と観察についてのレポート 2019 年版) の中で FINRA は、デジタル通信は重要な分野であり、企業はこの分野において監督および記録保持の要件に従ううえで課題に直面していると報告しています。
+FINRA [emphasizes that the digital communications of regulated firms meet the record-keeping requirements of Exchange Act rules 17a-3 and 17a-4, as well as FINRA Rule Series 4510](https://www.finra.org/rules-guidance/key-topics/books-records). FINRA releases an annual report that contains key findings, observations, and effective practices to help organizations improve compliance and risk management. In its [2019 Report on Examination Findings and Observations](https://www.finra.org/rules-guidance/guidance/reports/2019-report-exam-findings-and-observations), FINRA identified digital communications as a key area where firms encounter challenges complying with supervision and record-keeping requirements.
 
-組織が従業員に対してアプリ ベースのメッセージ サービスやコラボレーション プラットフォームなどの特定のアプリケーションの使用を許可する場合、その組織はそのアプリケーションで従業員が行う業務上の記録をアーカイブし、アクティビティや通信を監督する必要があります。 組織には、FINRA の規則や証券に関する法令を遵守するためにデュー ディリジェンスを実施し、従業員によるそれらのアプリの使用に関連して、これらの規則への潜在的な違反を追跡調査する責任があります。
+If an organization permits its employees to use a specific application, such as an app-based messaging service or collaboration platform, the firm must archive business records and supervise the activities and communications of those employees in that application. Organizations are responsible for conducting due diligence to comply with FINRA rules and securities laws, and for following up on potential violations of those rules related to employee use of such apps.
   
-FINRA が推奨する効果的な慣行には次のものがあります。
-* デジタル通信チャネルのための、包括的なガバナンス プログラムを確立する。 どのデジタル通信チャネルを許可するかについての組織の決定を管理し、それぞれのデジタル チャネルに対してコンプライアンス プロセスを定義する。 急速に変化するデジタル通信チャネルの状況をしっかりと把握し、コンプライアンス プロセスを最新の状態に維持する。
-* 許容されるデジタル チャネルを明確に定義し、管理する。 承認されたデジタル チャネルと禁止されたデジタル チャネルの両方を定義する。 禁止されたデジタル チャネルの使用と、記録管理と監督の要件を遵守する組織の能力を妨げるデジタル チャネル内の禁止された機能の使用を、ブロックまたは制限する。
-* デジタル通信のトレーニングを提供する。 登録された代表者に承認されたデジタル チャネルへのアクセス権を付与する前に、必須のトレーニング プログラムを実施する。 トレーニングにより、業務上および個人的なデジタル通信に関する組織の期待が明確になり、スタッフに各チャネルの許可された機能の使い方を、法令を遵守した方法で体験させることができる。
+Effective practices recommended by FINRA include the following:
+* Establish a comprehensive governance program for digital communication channels. Manage the organization's decisions about which digital communication channels are permitted and define compliance processes for each digital channel. Closely monitor the rapidly changing landscape of digital communication channels and keep compliance processes up to date.
+* Clearly define and control permissible digital channels. Define both approved and prohibited digital channels. Block or restrict the use of prohibited digital channels, or prohibited features within digital channels, that limit the organization's ability to comply with records management and supervisory requirements.
+* Provide training for digital communications. Implement mandatory training programs before giving registered representatives access to approved digital channels. Training helps clarify an organization's expectations for business and personal digital communications, and it guides staff through using permitted features of each channel in a compliant manner.
 
-デジタル通信に関する FINRA の調査結果と観察は、すべての業務上の通信の保持に関する [SEC Rule 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4)、通信の監視とレビューに関する FINRA Rule [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) と [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120)、記録保持に関する Rule Series [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) と直接関連があります。 米商品先物取引委員会 (FTC) は 17 CFR 131 で同様の要件を公布します。 これらの規制については、この記事の後半で掘り下げて検討します。
+FINRA's findings and observations for Digital Communications relate directly to an organization's ability to comply with [SEC Rule 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) for retaining all business-related communications, FINRA rules [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) and [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) for supervision and review of communications, and Rule Series [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) for record keeping. The Commodity Futures Trading Commission (CFTC) promulgates similar requirements under 17 CFR 131. These regulations are discussed in depth later in this article.
 
-***Teams は、Microsoft 365 のコンプライアンス サービスの包括的なスイートとともに金融サービス機関が効果的にビジネスを運営し、規制を遵守するための企業のデジタル通信チャネルを提供しています。*** この記事では、情報保護、情報障壁、監督管理のための Microsoft 365 の組み込み機能により、これらの規制上の義務を果たすのに役立つ強固なツールセットが Teams に提供されていることについて説明します。
+***Teams, along with the comprehensive suite of Microsoft 365 security and compliance offerings, provides a corporate digital communication channel for financial services institutions to effectively conduct business and comply with regulations.*** The remainder of this article describes how Microsoft 365 built-in capabilities for records management, information protection, information barriers, and supervisory control gives Teams a robust toolset to help meet these regulatory obligations.
 
-## <a name="protect-modern-collaboration-with-microsoft-365"></a>Microsoft 365 により、現代のコラボレーションを保護する
+## <a name="protect-modern-collaboration-with-microsoft-365"></a>Protect modern collaboration with Microsoft 365
 
-### <a name="secure-user-identities-and-control-access"></a>ユーザー ID をセキュリティで保護し、アクセスを制御する
+### <a name="secure-user-identities-and-control-access"></a>Secure user identities and control access
 
-***顧客情報、財務書類、アプリケーションへのアクセスの保護は、ユーザー ID をセキュリティで強固に保護することから始まります。*** これには、信頼された認証手法を提供し、これらのアプリケーションへのアクセスを動的に制御する、ID を保存および管理するための企業向けのセキュリティで保護されたプラットフォームが必要です。
+***Protecting access to customer information, financial documents, and applications begins with strongly securing user identities.*** This requires a secure platform for the enterprise to store and manage identities, providing a trusted means of authentication, and dynamically controlling access to those applications.
 
-従業員は仕事中に、アプリケーションからアプリケーションに移動したり、場所やデバイスを変えたりします。 その過程で、データへのアクセスはそれぞれのステップで認証する必要があります。 ID が漏えいしないようにするためには、認証プロセスにおいて強力なプロトコルや多要素認証 (ワンタイム SMS パス コード、認証用アプリ、証明書) がサポートされている必要があります。 リスクベースのアクセス ポリシーを実施することは、金融データとアプリケーションをインサイダーの脅威、不注意なデータ漏えい、データ流出から保護するうえで極めて重要です。
+As employees work, they may move from application to application or between multiple locations and devices. Access to data must be authenticated at each step along the way. The authentication process has to support a strong protocol and multiple factors of authentication (such as one-time SMS pass code, authenticator app, and certificate) to ensure that identities aren't compromised. Enforcing risk-based access policies is critical to protecting financial data and applications from insider threats, inadvertent data leaks, and data exfiltration.
 
-Microsoft 365 は [Azure Active Directory (Azure AD)](/azure/active-directory/) によりセキュリティで保護された ID プラットフォームを提供します。そこでは ID は一元的に保存され、セキュリティで保護された方法で管理されます。 Azure AD を、関連する Microsoft 365 セキュリティ サービスと組み合わせることにより、組織を脅威から保護しつつ、セキュリティで保護された方法で仕事を進めるために必要なアクセスを従業員に許可する基盤を提供することができます。
+Microsoft 365 provides a secure identity platform in [Azure Active Directory (Azure AD)](/azure/active-directory/), where identities are centrally stored and securely managed. Azure AD, along with a host of related Microsoft 365 security services, forms the basis for providing employees with the access they need to work securely while also protecting the organization from threats.
 
-[Azure AD 多要素認証 (MFA)](/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) はプラットフォームに組み込まれており、ユーザーが機密性の高い金融データやアプリケーションにアクセスする際にユーザー ID を確認するのに役立つ、付加的な認証の証明を提供します。 Azure MFA では、パスワードと既知のモバイル デバイスなど、少なくとも 2 種類の認証が要求されます。 認証の第 2 要素のいくつかの選択肢として、次のものがサポートされています。
+[Azure AD Multi-Factor Authentication (MFA)](/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) is built into the platform and provides an additional proof of authentication to help confirm user identity when they access sensitive financial data and applications. Azure MFA requires at least two forms of authentication, such as a password plus a known mobile device. It supports several second-factor authentication options, including:
 
-- Microsoft Authenticator アプリ
-- SMS で配信されるワンタイム パスコード
-- 電話 (ユーザーは PIN を入力する必要があります)
+- The Microsoft Authenticator app
+- A one-time passcode delivered via SMS
+- A phone call where a user must enter a PIN
 
-パスワードが何らかの理由で漏えいしてしまった場合でも、ハッカーはユーザーの電話がなければ組織のデータにアクセスすることはできません。 さらに Microsoft 365 は重要なプロトコルとして先進認証を使用しており、Microsoft Outlook やその他の Microsoft Office アプリケーションなど、従業員が毎日使用するコラボレーション ツールに Web ブラウザーからアクセスする場合でも、同様の強力で十分な認証エクスペリエンスを提供できます。
+If password is somehow compromised, a potential hacker would still need the user's phone to gain access to organizational data. In addition, Microsoft 365 uses Modern Authentication as a key protocol, which brings the same strong and rich authentication experience from web browsers to the collaboration tools that employees use day to day, including Microsoft Outlook and the other Microsoft Office applications.
 
-#### <a name="passwordless"></a>パスワードレス
+#### <a name="passwordless"></a>Passwordless
 
-パスワードは、一連のセキュリティ手法において最も弱い要素です。 その他の検証手段がない場合には、単一障害点となり得ます。 金融機関の必要を満たすために、Microsoft は幅広い認証オプションをサポートしています。
+Passwords are the weakest link in a security chain. They can be a single point of failure if there's no additional verification. Microsoft supports a broad range of authentication options to fit the needs of financial institutions.
 
-*パスワードレス* の手法は、MFA をユーザーにとってさらに使いやすいものにします。 すべての MFA がパスワードレスであるわけではありませんが、パスワードレスの技術は多要素認証を取り入れています。 Microsoft、Google、その他の業界大手企業は、Fast IDentity Online (FIDO) と呼ばれるグループにおいて、より簡単でより強力な認証エクスペリエンスを Web やモバイル デバイス全体で可能にするための標準を開発しました。 最近開発された FIDO2 標準では、フィッシングを撲滅するために、ユーザーはパスワードを入力せずに簡単かつセキュリティで保護された方法で認証できるようになります。
+*Passwordless* methods help make MFA more convenient for users. While not all MFA is passwordless, passwordless technologies employ multi-factor authentication. Microsoft, Google, and other industry leaders have developed standards to enable a simpler, stronger authentication experience across the web and mobile devices in a group called Fast IDentity Online (FIDO). The recently developed FIDO2 standard enables users to authenticate easily and securely without requiring a password to eliminate phishing.
 
-パスワードレスである Microsoft MFA の手法には、次のものが含まれます。
-* [Microsoft Authenticator](/azure/active-directory/user-help/user-help-auth-app-overview): 柔軟性、利便性、コストのために、Microsoft Authenticator モバイル アプリの使用を推奨します。 Microsoft Authenticator は、Azure AD に接続されたアプリに対して生体認証、プッシュ通知、ワンタイム パスコードをサポートしています。 Apple および Android アプリ ストアから利用できます。
-*  [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-overview): PC 向けの組み込みエクスペリエンスとしては、Windows Hello の使用を推奨します。 Windows Hello では、生体情報 (顔や指紋など) を使用して自動的にサインインします。  
-* [FIDO2 セキュリティ キー](/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key) は、Microsoft パートナーである Yubico、Feitian Technologies、HID Global から、USB、NFC が有効なバッジ、生体認証キーとして提供されています。
+Microsoft MFA methods that are passwordless include:
+* [Microsoft Authenticator](/azure/active-directory/user-help/user-help-auth-app-overview): For flexibility, convenience, and cost, we recommend using the Microsoft Authenticator mobile app. Microsoft Authenticator supports biometrics, push notifications, and one-time passcodes for any Azure AD-connected app. It's available from the Apple and Android app stores.
+*  [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-overview): For a built-in experience on the PC, we recommend using Windows Hello. It uses biometric information (such as face or fingerprint) to sign in automatically.  
+* [FIDO2 Security keys](/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key) are now available from several Microsoft partners: Yubico, Feitian Technologies, and HID Global in a USB, NFC-enabled badge or biometric key.
 
-[Azure AD 条件付きアクセス](/azure/active-directory/conditional-access/) は、会社の資産を保護することを目的として、アクセス制御に関する決定を自動化し、組織のポリシーを適用するための強固なソリューションを提供します。 典型的な例は、フィナンシャル プランナーが機密性の高い顧客データが含まれるアプリケーションにアクセスする場合です。 フィナンシャル プランナーは、そのアプリケーションにアクセスする際には自動的に多要素認証を行うように要求され、アクセスは会社が管理しているデバイスからでなければなりません。 Azure 条件付きアクセスは、ユーザー、デバイス、位置情報、ネットワークのプロパティや、ユーザーがアクセスしようとしているアプリケーションなど、ユーザーのアクセス要求に関するシグナルをまとめます。 アプリケーションへのアクセスの試行を、構成されたポリシーに対して動的に評価します。 ユーザーまたはデバイスのリスクが高まるか他の条件が満たされると、Azure AD は、MFA の要求、セキュリティで保護されたパスワードのリセット、アクセスの制限やブロックなどのポリシーを自動的に適用します。 これにより、動的に変化する環境の中で、組織の機密性の高い資産が保護されます。
+[Azure AD Conditional Access](/azure/active-directory/conditional-access/) provides a robust solution for automating access control decisions and enforcing organizational policies to protect company assets. A classic example is when a financial planner wants to access an application that has sensitive customer data. They are automatically required to perform a multi-factor authentication to specifically access that application, and access must be from a corporate-managed device. Azure Conditional Access brings together signals about a user's access request, such as properties about the user, the device, location, and network, and the application that the user is trying to access. It dynamically evaluates attempts to access the application against configured policies. If user or device risk is elevated, or other conditions are not met, Azure AD can automatically enforce policies such as requiring MFA, requiring a secure password reset, or restricting or blocking access. This helps ensure that sensitive organizational assets are protected in dynamically changing environments.
  
-Azure AD と、関連する Microsoft 365 のセキュリティ サービスは基盤を提供します。この基盤の上で、金融機関に対して最新のクラウド コラボレーション プラットフォームをロール アウトすることが可能となり、データとアプリケーションへのアクセスをセキュリティで保護し、通常のコンプライアンス義務を果たすことができるようになります。これらのツールは、以下の重要な機能を提供します。
+Azure AD, and the related Microsoft 365 security services, provide the foundation on which a modern cloud collaboration platform can be rolled out to financial institutions so that access to data and applications can be secured, and regulator compliance obligations can be met. These tools provide the following key capabilities:
 
-* ユーザー ID を一元的に保存し、セキュリティで保護された方法で管理する。
-* 多要素認証を含む強力な認証プロトコルを使用してアクセス要求の際にユーザーを認証し、すべてのアプリケーションにおいて一貫した強固な認証エクスペリエンスを提供する。
-* ID、ユーザー/グループ メンバーシップ、アプリケーション、デバイス、ネットワーク、位置情報、リアルタイムのリスク スコアを含む複数のシグナルをポリシーの意思決定プロセスに組み込みつつ、すべてのアクセス要求に対して動的にポリシーを検証する。
-* ユーザーの挙動とファイル プロパティに基づいて詳細なポリシーを検証して、必要な場合には追加のセキュリティ手段を動的に適用する。
-* 組織内の "シャドウ IT" を特定し、情報セキュリティ チームがクラウド アプリケーションを認可またはブロックできるようにする。
-* Microsoft および Microsoft 以外のクラウド アプリケーションへのアクセスを監視し、制御する。
-* メールのフィッシング詐欺とランサムウェア攻撃からプロアクティブに保護する。
+* Centrally store and securely manage user identities.
+* Use a strong authentication protocol, including multi-factor authentication, to authenticate users on access requests and provide a consistent and robust authentication experience across all applications.
+* Dynamically validate policies on all access requests, incorporating multiple signals into the policy decision-making process, including identity, user/group membership, application, device, network, location, and real-time risk score.
+* Validate granular policies based on user behavior and file properties and dynamically enforce additional security measures when required.
+* Identify "shadow IT" in the organization, and allow InfoSec teams to sanction or block cloud applications.
+* Monitor and control access to Microsoft and non-Microsoft cloud applications.
+* Proactively protect against email phishing and ransomware attacks.
 
 #### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
-条件付きアクセスでは疑わしい要求からリソースを保護しますが、Identity Protection は継続的にリスクを検出して疑わしいユーザー アカウントを修正することにより、さらなる手段を講じます。 Identity Protection は、環境内での疑わしいユーザーやサインインの挙動に関する情報を、24 時間体制で報告し続けます。 自動的な対応により、漏えいした ID が悪用されることをプロアクティブに防止します。
+While Conditional Access protects resources from suspicious requests, Identity Protection goes further by providing ongoing risk detection and remediation of suspicious user accounts. Identity Protection keeps you informed of suspicious user and sign-in behavior in your environment around the clock. Its automatic response proactively prevents compromised identities from being abused.
  
-Identity Protection により、組織は 3 つの重要なタスクを実現することができます。
+Identity Protection is a tool that allows organizations to accomplish three key tasks:
 
-* ID ベースのリスクを自動的に検出して修正する。
-* ポータルのデータを使用してリスクを調査する。
-* リスク検出データをサードパーティのユーティリティにエクスポートして、さらに分析する。
+* Automate the detection and remediation of identity-based risks.
+* Investigate risks by using data in the portal.
+* Export risk detection data to third-party utilities for further analysis.
 
-ユーザーを保護するために、Identity Protection では、Azure AD を使用する組織、Microsoft アカウントを使用するコンシューマー、Xbox を使用するゲーム業界から Microsoft が積み上げてきた知識が活かされています。 Microsoft は毎日 65 兆のシグナルを分析して、脅威を特定し、顧客を保護しています。 Identity Protectin が生成し、取り込まれるシグナルは、さらに条件付きアクセスなどのツールに取り込まれ、アクセスに関する決定を行います。 それらはセキュリティ情報イベント管理 (SIEM) ツールにも取り込まれ、組織の適用ポリシーに基づいてさらに調査が行われます。
+Identity Protection uses knowledge that Microsoft has acquired from its position in organizations with Azure AD, in the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyzes 65 trillion signals per day to identify and protect customers from threats. The signals generated by and fed to Identity Protection can be further fed into tools like Conditional Access to make access decisions. They can also be fed back to a security information and event management (SIEM) tool for further investigation based on your organization's enforced policies.
 
-Identity Protection は、クラウド インテリジェンスを活用して ID 漏えいから組織を自動的に保護します。クラウド インテリジェンスは、Microsoft エコシステム全体におけるヒューリスティックなユーザーおよびエンティティ行動分析 (UEBA) と機械学習 (ML) に基づく高度な検出に支えられています。
+Identity Protection helps organizations automatically protect against identity compromise by taking advantage of cloud intelligence powered by advanced detection based on heuristics, user and entity behavior analytics (UEBA), and machine learning (ML) across the Microsoft ecosystem.
 
-![プレゼンテーションを聞く 5 人のインフォメーション ワーカー。](../media/win17-15021-00-n9.jpg)
+![Five information workers watch as another gives a presentation](../media/win17-15021-00-n9.jpg)
  
-## <a name="identify-sensitive-data-and-prevent-data-loss"></a>機密データを特定し、データ損失を防止する
-Microsoft 365 では、組み合わされた強力な機能により、組織内の機密データを特定できるようになります。機能には次が含まれます。
+## <a name="identify-sensitive-data-and-prevent-data-loss"></a>Identify sensitive data and prevent data loss
+Microsoft 365 allows all organizations to identify sensitive data within the organization through a combination of powerful capabilities, including:
 
-* **Microsoft Information Protection (MIP)** は、機密データをユーザー ベースで分類、および自動的に分類します。
-* **Office 365 データ損失防止 (DLP)** は、機密データの種類 (つまり、正規表現) とキーワード、およびポリシー適用を使用して、機密データを自動的に特定します。
+* **Microsoft Information Protection (MIP)** for both user-based classification and automated classification of sensitive data.
+* **Office 365 Data Loss Prevention (DLP)** for automated identification of sensitive data using sensitive data types (in other words, regular expressions) and keywords and policy enforcement.
 
-**[Microsoft Information Protection (MIP)](../compliance/information-protection.md)** を使用すると、組織は秘密度ラベルを使用してドキュメントやメールをインテリジェントに分類できます。 秘密度ラベルは、ユーザーが Microsoft Office アプリケーションのドキュメントや Outlook のメールに手動で適用できます。 ラベルは、ドキュメントのマーク付け、暗号化による保護、権限管理の実施を自動的に適用できます。 また、機密データを自動的に見つけて分類するためのキーワードや機密データの種類 (クレジット カード番号、社会保険番号、ID 番号など) を使用するポリシーを構成することにより、秘密度ラベルを自動的に適用することもできます。
+**[Microsoft Information Protection (MIP)](../compliance/information-protection.md)** enables organizations to classify documents and emails intelligently by using sensitivity labels. Sensitivity labels can be applied manually by users to documents in Microsoft Office applications and to emails in Outlook. The labels can automatically apply document markings, protection through encryption, and rights-management enforcement. Sensitivity labels can also be applied automatically by configuring policies that use keywords and sensitive data types (such as credit card numbers, social insurance numbers, and identity numbers) to automatically find and classify sensitive data.
 
-さらに、単純なパターン マッチングやコンテンツ内の要素ではなく、コンテンツに基づいて機密データを特定するために機械学習モデルを使用する、"トレーニング可能な分類子" も提供されています。 分類するコンテンツの大量の例を分類子に教えることにより、コンテンツの種類を特定する方法を学習させます。 分類子をトレーニングするには、まず特定のカテゴリのコンテンツの例を与えます。 これらの例から学習した後に、一致する例と一致しない例を混ぜたものをモデルに与えて、モデルをテストします。 分類子は、与えられた例がそのカテゴリに該当するかどうかを予測します。 その後、人が結果を確認し、陽性、陰性、偽陽性、偽陰性に仕分けし、分類子の予測の正確性を高めます。 トレーニングされた分類子が公開されると、分類子は Microsoft SharePoint Online、Exchange Online、OneDrive for Business のコンテンツを処理し、コンテンツを自動的に分類します。
+In addition, Microsoft provides "trainable classifiers" that use machine-learning models to identify sensitive data based on the content, as opposed to simply through pattern matching or by the elements within the content. A classifier learns how to identify a type of content by looking at numerous examples of the content to be classified. Training a classifier begins by giving it examples of content in a particular category. After it learns from those examples, the model is tested by giving it a mix of matching and non-matching examples. The classifier predicts whether a given example falls into the category or not. A person then confirms the results, sorting the positives, negatives, false positives, and false negatives to help increase the accuracy of the classifier's predictions. When the trained classifier is published, it processes content in Microsoft SharePoint Online, Exchange Online, and OneDrive for Business and automatically classifies the content.
 
-ドキュメントとメールに秘密度ラベルを適用すると、選択された秘密度を特定するメタデータがオブジェクト内に組み込まれます。 このようにして、秘密度はデータに付随するようになります。 そのため、ラベルが付けられたドキュメントがユーザーのデスクトップやオンプレミス システム内に保存された場合でも、そのドキュメントは保護されるようになります。 この機能により、Microsoft Cloud App Security などの他の Microsoft 365 ソリューションやネットワーク エッジ デバイスが、機密データを特定してセキュリティ コントロールを自動的に適用できるようになります。 秘密度データには他の利点もあり、組織内でどのデータが機密データとみなされるか、そのデータを受け取ったときにどのように扱うべきかに関して、従業員を教育することができます。
+Applying sensitivity labels to documents and emails embeds metadata that identifies the chosen sensitivity within the object. The sensitivity then travels with the data. So even if a labeled document is stored on a user's desktop or within an on-premises system, it's still protected. This functionality enables other Microsoft 365 solutions, such as Microsoft Cloud App Security or network edge devices, to identify sensitive data and automatically enforce security controls. Sensitivity labels have the added benefit of educating employees about which data within an organization is considered sensitive and how to handle that data when they receive it.
 
-**[Office 365 データ損失防止 (DLP)](../compliance/dlp-learn-about-dlp.md)** は、ドキュメント、メール、会話をスキャンして機密データを探すことにより、機密データを含むものを自動的に特定し、これらのオブジェクトにポリシーを適用します。 ポリシーは、SharePoint と OneDrive for Business のドキュメントに対して適用されます。 ポリシーは、ユーザーが送信するメールや、Teams のチャットやチャネルの会話にも適用されます。 ポリシーは、キーワード、機密データの種類、保持ラベル、データの共有先が組織内か外部かを判断するように構成することができます。 DLP ポリシーを微調整して偽陽性を減らせるように、コントロールが提供されています。 機密データが見つかった場合、カスタマイズ可能なポリシー ヒントを Microsoft 365 アプリケーション内でユーザーに対して表示し、コンテンツに機密データが含まれていることを知らせて是正措置を提案することができます。 ポリシーにより、ユーザーによるドキュメントへのアクセス、ドキュメントの共有、特定の種類の機密データを含むメールの送信を防止することもできます。 Microsoft 365 には、100 を超える機密データの種類が組み込まれています。 組織は、自分たちのポリシーに合致するように機密データの種類をカスタマイズできます。
+**[Office 365 Data Loss Prevention (DLP)](../compliance/dlp-learn-about-dlp.md)** automatically identifies documents, emails, and conversations that contain sensitive data by scanning them for sensitive data and then enforcing policy on those objects. Policies are enforced on documents in SharePoint and OneDrive for Business. They're also enforced when users send email, and in Teams chats and channel conversations. Policies can be configured to look for keywords, sensitive data types, retention labels, and whether data is shared within the organization or externally. Controls are provided to help organizations fine-tune DLP policies to reduce false positives. When sensitive data is found, customizable policy tips can be displayed to users within Microsoft 365 applications to inform them that their content contains sensitive data and then propose corrective actions. Policies can also prevent users from accessing documents, sharing documents, or sending emails that contain certain types of sensitive data. Microsoft 365 supports more than 100 built-in sensitive data types. Organizations can configure custom sensitive data types to meet their policies.
 
-組織のデータ分類についての方針やどの種類のデータが機密性が高いとみなされるかについて従業員が理解できるようにするために、MIP および DLP ポリシーのロール アウトには入念な計画とユーザー教育プログラムが欠かせません。 従業員に対して、機密データを特定し、それをどのように扱うべきかを理解するのに役立つツールや教育プログラムを提供するならば、従業員を情報セキュリティ リスクを低減するためのソリューションの一部として組み込むことができます。
+Rolling out MIP and DLP policies to organizations requires careful planning and a user education program so that employees understand the organization's data classification schema and which types of data are considered sensitive. Providing employees with tools and educational programs that help them identify sensitive data and understand how to handle it makes them part of the solution for mitigating information security risks.
 
-Identity Protection が生成して取り込まれるシグナルは、アクセスに関する決定を行う条件付きアクセスなどのツールや、組織の適用ポリシーに基づいて調査を行うためのセキュリティ情報イベント管理 (SIEM) ツールに取り込むこともできます。
+The signals generated by and fed to Identity Protection can also be fed into tools like Conditional Access to make access decisions or to a security information and event management (SIEM) tool for investigation based on an organization's enforced policies.
 
-Identity Protection は、クラウド インテリジェンスを活用して ID 漏えいから組織を自動的に保護します。クラウド インテリジェンスは、Microsoft エコシステム全体におけるヒューリスティックなユーザーおよびエンティティ行動分析と機械学習に基づく高度な検出に支えられています。
+Identity Protection helps organizations automatically protect against identity compromise by taking advantage of cloud intelligence powered by advanced detections based on heuristics, user and entity behavior analytics, and machine learning across the Microsoft ecosystem.
 
-![多数のモニターの前にいるインフォメーション ワーカーの写真](../media/clo1718-portrait-006.jpg)
+![An information worker is pictured in front of a large array of monitors](../media/clo1718-portrait-006.jpg)
 
-## <a name="defend-the-fortress"></a>要塞を防御する
+## <a name="defend-the-fortress"></a>Defend the fortress
 
-Microsoft が最近発表した Microsoft 365 Defender ソリューションは、現代の組織を進化する脅威からセキュリティで保護することを目的としています。 Threat Protection ソリューションはインテリジェント セキュリティ グラフを活用して、複数の攻撃ベクトルに対して包括的な統合セキュリティを提供します。
+Microsoft recently launched the Microsoft 365 Defender solution, which is designed to secure the modern organization from the evolving threat landscape. By leveraging the Intelligent Security Graph, the Threat Protection solution offers comprehensive, integrated security against multiple attack vectors.
 
-### <a name="the-intelligent-security-graph"></a>[インテリジェント セキュリティ グラフ](https://www.microsoft.com/security/business/intelligence) 
-Microsoft 365 が提供するセキュリティ サービスは、インテリジェント セキュリティ グラフに支えられています。 サイバー攻撃に対抗するため、インテリジェント セキュリティ グラフは高度な分析を利用して、脅威インテリジェンスを Microsoft やそのパートナーからのシグナルと結びつけます。 Microsoft はグローバル サービスを大規模に運営しており、スタック全体の保護レイヤーを強化する何兆ものセキュリティ シグナルを収集しています。 機械学習モデルがこのインテリジェンスを評価し、シグナルと脅威に関する分析情報は Microsoft の製品やサービスで幅広く共有されます。 これにより、Microsoft は脅威をすばやく検出して対応し、アクション可能な警告や情報を顧客に提供して、改善を促すことができます。 機械学習モデルは新しい分析情報によって継続的にトレーニングおよび更新されており、さらにセキュリティが強化された製品の開発や、よりプロアクティブなセキュリティの提供に役立っています。
+### <a name="the-intelligent-security-graph"></a>[The Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
+Security services from Microsoft 365 are powered by the Intelligent Security Graph. To combat cyberthreats, the Intelligent Security Graph uses advanced analytics to link threat intelligence and security signals from Microsoft and its partners. Microsoft operates global services at a massive scale, gathering trillions of security signals that power protection layers across the stack. Machine-learning models assess this intelligence, and the signal and threat insights are widely shared across our products and services. This enables us to detect and respond to threats quickly and bring actionable alerts and information to customers for remediation. Our machine learning models are continuously trained and updated with new insights, helping us build more-secure products and provide more proactive security.
 
-[Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) は、メールや Office ドキュメントで配信される悪意のあるリンクやマルウェアから組織を保護する、統合された Microsoft 365 サービスを提供します。 現在、ユーザーに影響を与える最も一般的な攻撃ベクトルの 1 つは、メールによるフィッシング攻撃です。 この攻撃は特定のユーザーをターゲットとしていて、ユーザーに悪意のあるリンクをクリックさせたり、マルウェアを含む添付ファイルを開かせたりするためのコール トゥ アクションが含まれており、非常に巧妙です。 コンピューターが感染すると、攻撃者はユーザーの認証情報を盗んで組織内を動き回るか、メールやデータを抜き出して機密情報を探します。 Defender for Office 365 は、クリック時にドキュメントやリンクを評価し、悪意があるものを発見した場合にはアクセスをブロックすることにより、添付ファイルやリンクの安全性を確認します。 メールの添付ファイルは、ユーザーのメールボックスに配信される前に保護されたサンドボックス内で開かれます。 また、不正な URL がないか Office ドキュメント内のリンクも評価します。 Defender for Office 365 はさらに、SharePoint Online、OneDrive for Business、Teams 内のリンクやファイルも保護します。 不正なファイルが検出されると Defender for Office 365 は自動的にそのファイルをロックし、潜在的な損害を抑えます。
+[Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) provides an integrated Microsoft 365 service that protects organizations from malicious links and malware delivered through email and Office documents. One of the most common attack vectors that affects users today is email phishing attacks. These attacks can be targeted at specific users and can be very convincing, with some call to action that prompts the user to click a malicious link or open an attachment that contains malware. Once a computer is infected, the attacker can either steal the user's credentials and move laterally across the organization or exfiltrate emails and data to look for sensitive information. Defender for Office 365 supports safe attachments and safe links by evaluating documents and links at click-time for potentially malicious intent and blocks access. Email attachments are opened in a protected sandbox before they're delivered to a user's mailbox. It also evaluates links in Office documents for malicious URLs. Defender for Office 365 also protects links and files in SharePoint Online, OneDrive for Business, and Teams. If a malicious file is detected, Defender for Office 365  automatically locks that file to reduce potential damage.
 
-[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) は、予防的な保護、侵害後の検出、自動調査、対応のための統一されたプラットフォームです。 Defender for Endpoint には、企業のエンドポイントでの機密データの検出と保護のための機能が組み込まれています。
+[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is a unified endpoint security platform for preventative protection, post-breach detection, and automated investigation and response. Defender for Endpoint provides built-in capabilities for discovery and protection of sensitive data on enterprise endpoints.
 
-[Microsoft Cloud App Security (MCAS)](/cloud-app-security/what-is-cloud-app-security) により、組織は詳細なレベルでポリシーを適用し、機械学習を使用して自動的に定義される個々のユーザー プロファイルに基づいて異常な挙動を検出することができるようになります。 MCAS ポリシーは Azure 条件付きアクセス ポリシーに基づいて作成することができ、ユーザーの挙動に関連する追加のシグナルや、アクセス対象のドキュメントのプロパティを評価することにより、機密性の高い会社の資産を保護します。 時とともに MCAS は、それぞれの従業員がアクセスするデータや使用するアプリケーションについて典型的な挙動を学習します。 ポリシーは、学習済みの挙動パターンに基づいて、従業員がその挙動プロファイルとは異なる行動をとった際にセキュリティ コントロールを自動的に適用できるようになります。 たとえば、通常は月曜日から金曜日の午前 9 時から午後 5 時の間に会計アプリケーションにアクセスする従業員が、突然日曜日の夜に何度もそのアプリケーションにアクセスした場合、MCAS は動的にポリシーを適用して、ユーザーに対して再認証を要求します。 これにより、ユーザーの認証情報が漏えいしていないことを確認できます。 また、MCAS は組織内の "シャドウ IT" の特定にも役立ちます。これは、情報セキュリティ チームが、必ず許可されたツールを使用して機密データを扱うことを従業員に徹底するのに役立ちます。 最後に、MCAS は Microsoft 365 プラットフォーム外も含めて、クラウドのどこででも機密データを保護することができます。 組織は特定の外部のクラウド アプリを許可することにより (または許可しないことにより)、アクセスをコントロールし、使用状況を監視できます。
+[Microsoft Cloud App Security (MCAS)](/cloud-app-security/what-is-cloud-app-security) により、組織は詳細なレベルでポリシーを適用し、機械学習を使用して自動的に定義される個々のユーザー プロファイルに基づいて異常な挙動を検出することができるようになります。 MCAS policies can build on Azure Conditional Access policies to protect sensitive company assets by evaluating additional signals related to user behavior and properties of the documents that are accessed. Over time, MCAS learns what's typical behavior for each employee with regard to the data they access and the applications they use. Based on learned behavior patterns, policies can then automatically enforce security controls if an employee acts outside of that behavioral profile. For example, if an employee typically accesses an accounting application from 9 AM to 5 PM Monday through Friday but suddenly starts to access that application heavily on a Sunday evening, MCAS can dynamically enforce policies to require the user to reauthenticate. This helps ensure that the user's credentials haven't been compromised. MCAS can also help identify "shadow IT" in the organization, which helps information security teams ensure that employees are using sanctioned tools when they work with sensitive data. Finally, MCAS can protect sensitive data anywhere in the Cloud, even outside the Microsoft 365 platform. It allows organizations to sanction (or unsanction) specific external Cloud apps, controlling access and monitoring usage.
  
-[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) はクラウドベースのセキュリティ ソリューションであり、オンプレミスの Active Directory のシグナルを活用して、組織に対する高度な脅威、ID の漏えい、内部関係者の不正な行動を特定、検出、調査します。 AATP により、セキュリティ オペレーション アナリストやセキュリティ専門家はハイブリッド環境における高度な攻撃を検出でき、次のことが可能になります。
-* 学習ベースの分析を使用して、ユーザー、エンティティの挙動、アクティビティを監視する。
-* Active Directory に保存されているユーザーの ID と認証情報の保護。
-* キル チェーン全体で疑わしいユーザー アクティビティや高度な攻撃を特定し、調査する。
-* 迅速なトリアージのために、簡潔なタイムラインで示された明確なインシデント情報を提供する。
+[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. AATP enables SecOp analysts and security professionals detect advanced attacks in hybrid environments to:
+* Monitor users, entity behavior, and activities by using learning-based analytics.
+* Protect user identities and credentials stored in Active Directory.
+* Identify and investigate suspicious user activities and advanced attacks throughout the kill chain.
+* Provide clear incident information on a simple timeline for fast triage.
 
-![小さな会議室に集まるオフィス ワーカーたちと、1人がプレゼンテーションを行う。](../media/clo1717-corporate-office-021.jpg)
+![The office workers meet in a small conference room. One gives a presentation.](../media/clo1717-corporate-office-021.jpg)
  
-## <a name="govern-data-and-manage-records"></a>データと記録の管理
+## <a name="govern-data-and-manage-records"></a>Govern data and manage records
 
-金融機関は、自社の保持スケジュールに示されている通り、規制上、法的、業務上の義務に従って、記録と情報を保持する必要があります。 たとえば、記録の種類に応じて [SEC は 3 から 5 年の保持期間を義務付けて](https://www.sec.gov/rules/interp/34-47806.htm)おり、最初の 2 年間はすぐにアクセスできるようにしておく必要があります。 データの保持期間が短い場合 (データを破棄するのが早すぎる場合)、組織は法的および規制上のコンプライアンス リスクに直面することになります。また、情報が必要ではなくなった場合に破棄を義務付ける規制にも従う必要があります。 組織にとってのコストやリスクを最小化しつつ情報を適切に破棄するために、効果的な記録管理戦略においては、実際的で一貫した手法が重要になります。
+Financial institutions must retain their records and information according to their regulatory, legal, and business obligations as represented within their corporate retention schedule. For example, the [SEC mandates retention periods](https://www.sec.gov/rules/interp/34-47806.htm) of three to six years, based on record type, with immediate accessibility for the first two years. Organizations face legal and regulatory compliance risks if data is under-retained (discarded too early), and now also manage regulations that mandate disposal when information is no longer required. Effective records-management strategies emphasize a practical and consistent approach so that information is disposed of appropriately while minimizing cost and risk to the organization.
  
-さらに、ニューヨーク州財務サービス省からの規制に関する要求は対象となるエンティティが、非公開の情報を廃棄するためのポリシーと手順を保守することを求めています。23 NYCRR 500、 第 500.13 項、データ保持の制限には、"サイバー セキュリティ プログラムの一部として、対象のエンティティごとに、ビジネス業務または対象エンティティの他の正当な業務目的で不要になったこの部分の 500.01(g)(2)-(3) で特定された公開されていない情報の定期的な廃棄についてポリシーと手順を持つことを要求しています。ただし、そのような情報を法律や規制により保持する必要がある場合は除きます。"
+In addition, regulatory mandates from the New York State Department of Financial Services require covered entities to maintain policies and procedures for disposal of nonpublic information. 23 NYCRR 500, Section 500.13, Limitations on Data Retention requires that "As part of its cybersecurity program, each Covered Entity shall include policies and procedures for the secure disposal on a periodic basis of any Nonpublic Information identified in section 500.01(g)(2)-(3) of this Part that is no longer necessary for business operations or for other legitimate business purposes of the Covered Entity, except where such information is otherwise required to be retained by law or regulation."
  
-金融機関は大量のデータを管理しています。 いくつかの保持期間は、契約の満了や従業員が組織から去るなどのイベントによって開始されます。 このような状況では、記録の保持ポリシーを適用することは課題となりえます。 組織のドキュメント全体に適切に記録保持期間を割り当てる手法は、状況によって異なることがあります。 ある組織では、保持ポリシーを広範に適用することもあれば、自動分類や機械学習のテクニックを活用することもあります。 他の組織では、個々のドキュメントに対してそれぞれの保持期間を割り当てる、もっと詳細なプロセスを必要とする手法を採用することでしょう。
+Financial institutions manage vast amounts of data. And some retention periods are triggered by events, such as a contract expiring or an employee leaving the organization. In this atmosphere, it can be challenging to apply record retention policies. Approaches to assigning record retention periods accurately across organizational documents can vary. Some apply retention policies broadly or leverage autoclassification and machine-learning techniques. Others identify an approach that requires a more granular process that assigns retention periods uniquely to individual documents.
 
-***Microsoft 365 では、保持ラベルやポリシーを定義して記録管理要件をインテリジェントに実施するための柔軟な機能が提供されます。*** 記録管理者は、従来の保持スケジュールでの "記録の種類" にあたる、保持ラベルを定義します。 保持ラベルには、次のような詳細を定義する設定が含まれます。
+***Microsoft 365 provides flexible capabilities to define retention labels and policies to intelligently implement records-management requirements.*** A record manager defines a retention label, which represents a "record type" in a traditional retention schedule. The retention label contains settings that define these details:
 
-- どのくらいの期間記録を保持するか
-- 保持期間が終了したらどうするか (ドキュメントを削除する、処理レビューを開始する、何もしない)
--  保持期間を開始する要因となるもの (作成日、最終更新日、ラベル付けされた日、イベント)、ドキュメントやメールに記録としてのマーク付け (編集や削除ができないことを意味する) をする要因となるものは何か
+- How long a record is retained
+- What occurs when the retention period expires (delete the document, start a disposition review, or take no action)
+-  What triggers the retention period to start (created date, last modified date, labeled date, or an event) and marks the document or email as a record (meaning it can't be edited or deleted)
 
-その後、保持ラベルは SharePoint または OneDrive のサイト、Exchange メールボックス、Microsoft 365 グループに公開されます。 ユーザーは、ドキュメントやメールに保持ラベルを手動で適用できます。 記録管理者は、インテリジェンスを使用してラベルを自動的に適用できます。 インテリジェンス機能は、[90 以上の組み込みの機密情報の種類](../compliance/content-search.md) (ABA ルーティング番号、米国の銀行口座番号、米国社会保障番号など) に基づくものにすることができます。 また、ドキュメントやメールに含まれるクレジット カード番号や個人を識別できるその他の情報などのキーワードや機密データに基づいて、あるいは SharePoint のメタデータに基づいて、この機能をカスタマイズすることもできます。 手動または自動のパターン マッチングでは簡単に特定できないデータに関しては、機械学習のテクニックに基づいてトレーニング可能な分類子を使用して、ドキュメントをインテリジェントに分類することもできます。
+The retention labels are then published to SharePoint or OneDrive sites, Exchange mailboxes, and Microsoft 365 groups. Users can apply the retention labels manually to documents and emails. Record managers can use intelligence to automatically apply the labels. Intelligent capabilities can be based on [ninety-plus built-in sensitive information types](../compliance/content-search.md) (such as ABA outing number, US bank account number, or US Social Security Number). They're also customizable based on keywords or sensitive data found in documents or emails, such as credit card numbers or other personally identifiable information or based on SharePoint metadata. For data that's not easily identified through manual or automated pattern matching, trainable classifiers can be used to classify documents intelligently based on machine learning techniques.
  
-**証券取引委員会 (SEC)** は、ブローカー ディーラーと他の規制対象金融機関に対して、すべての業務上の通信を保持することを要求しています。 これらの要件は、メール、ドキュメント、インスタント メッセージ、ファックスなどを含む多くの種類の通信とデータに適用されます。 **SEC Rule 17a-4** は、記録を電子データ ストレージ システムに保存するために組織が満たさなければならない基準を定義しています。 2003 年に、SEC はこれらの要件を明確化したリリースを発表しました。 これには次の基準が含まれていました。
+The **Securities and Exchange Commission (SEC)** requires broker-dealers and other regulated financial institutions to retain all business-related communications. These requirements apply to many types of communications and data, including emails, documents, instant messages, faxes, and more. **SEC rule 17a-4** defines the criteria that these organizations must meet to store records in an electronic data storage system. In 2003, the SEC issued a release that clarified these requirements. It included the following criteria:
 
-* 電子ストレージ システムに保存されるデータは、再書き込み不能、削除不能でなければならない。 これは、WORM (write once, read many) 要件と呼ばれます。
-* ストレージ システムは、召喚状またはその他の法的命令が出された場合に、規則で要求されている保持期間を超えてデータを保存することが可能でなければならない。
-* ハードウェアおよびソフトウェアの統合された制御コードを使用することにより、要求されている保持期間に記録を上書き、消去または変更することを防止する電子ストレージ システムを使用した場合、組織は当該規則の条項 (f)(2)(ii)(A) の要件に違反することにならない。
-* アクセス制御等を使用して、記録が上書きまたは消去されるリスクを "減らす" だけの電子ストレージ システムは、当該規則の要件を満たさない。
+* Data preserved by an electronic storage system must be non-rewriteable and non-erasable. This is referred to as a WORM requirement (write once, read many).
+* The storage system must be able to store data beyond the retention period required by the rule, in case of a subpoena or other legal order.
+* An organization wouldn't violate the requirement in paragraph (f)(2)(ii)(A) of the rule if it used an electronic storage system that prevents the overwriting, erasing, or otherwise altering of a record during its required retention period through the use of integrated hardware and software control codes.
+* Electronic storage systems that merely "mitigate" the risk that a record will be overwritten or erased, for example by relying on access control, don't meet the requirements of the rule.
 
-金融機関が SEC Rule 17a-4 の要件を満せるように、Microsoft 365 は、データの保持方法、ポリシーの構成方法、サービス内でのデータの保存方法に関して、一連の機能を提供します。
+To help financial institutions meet the requirements of SEC rule 17a-4, Microsoft 365 provides a combination of capabilities related to how data is retained, policies are configured, and data is stored within the service. These include:
 
-* **データの保管 (Rule 17a-4(a)、(b)(4))** - 保持ラベルとポリシーは、組織のニーズを満たせるように柔軟で、様々な種類のデータ、ドキュメント、情報に自動または手動で適用できます。 SharePoint および OneDrive for Business のドキュメント、Exchange Online メールボックス内のデータ、Teams 内のデータなど、広範な種類のデータや通信がサポートされます。  
-* **再書き込み不能、消去不能形式 (Rule 17a-4(f)(2)(ii)(A))** - 保持ポリシーのための保管ロック機能により、記録管理者と管理者は、記録を変更できないようにするなど、保持ポリシーをより厳格なものに構成できます。 これにより、誰もどんな形でも保持ポリシーを削除、無効化、変更できなくなります。 このことは、一度保管ロックが有効になると無効化できないこと、保持期間中は保持ポリシーが適用されたデータを上書き、変更、削除する方法が存在しないことを意味しています。 さらに、保持期間を短縮することはできません。 ただし、データの保持を継続するようにという法的な要求があった場合には、保持期間を延長することは可能です。<br/><br/>保持ポリシーに対して保管ロックが適用されると、次の操作ンが制限されます。
+* **Preservation of data (Rule 17a-4(a), (b)(4))** – Retention labels and policies are flexible to meet organizational needs and may be automatically or manually applied to different types of data, documents, and information. A wide variety of data types and communications are supported, including documents in SharePoint and OneDrive for Business, data within Exchange Online mailboxes, and data in Teams.  
+* **Non-rewriteable, non-erasable format (Rule 17a-4(f)(2)(ii)(A))** – Preservation Lock capability for retention policies allows records managers and administrators to configure retention policies to be restrictive, such that they can no longer be modified. This prohibits anyone from removing, disabling, or modifying the retention policy in any way. This means that once Preservation Lock is enabled, it can't be disabled, and there is no method by which any data to which the retention policy has been applied can be overwritten, modified, or deleted during the retention period. In addition, the retention period can't be shortened. However, the retention period can be lengthened, when there's a legal requirement to continue retention of data.<br/><br/>When a Preservation Lock is applied to a retention policy, the following actions are restricted:
 
-  - ポリシーの保持期間は延長のみが可能で、短縮することはできません。
-  - ユーザーをポリシーに追加することはできますが、ポリシー内で構成された既存のユーザーを削除することはできません。
-   - 組織内の管理者は、保持ポリシーを削除することができません。
+  - The retention period of the policy can only be increased. It can't be shortened.
+  - Users can be added to the policy, but existing users configured in the policy can't be removed.
+   - The retention policy can't be deleted by any administrator within the organization.
  
-  保管ロックにより、ユーザーだけでなく、最高レベルの特権アクセスを持つ管理者さえも設定を変更したり、保存されたデータを変更、上書き、削除したりできなくなり、Office 365 内のアーカイブが SEC 2003 リリースで提供されているガイダンスに沿ったものとなります。
+  Preservation Lock helps ensure that no user, not even administrators with the highest levels of privileged access, can change the settings, modify, overwrite or delete the data that has been stored, bringing archiving in Office 365 in line with the guidance provided in the SEC 2003 Release.
 
-* **データのストレージ/シリアル化およびインデックス化の品質、正確さ、検証 (Rule 17a-4(f)(2) (ii)(B) および (C))** - Office 365 ワークロードのそれぞれには、データをストレージ メディアに記録するプロセスの品質と正確さを自動的に検証する機能が含まれています。 さらに、データの効果的な検索や取得が可能になるようなインデックス化を行うために、メタデータやタイムスタンプを利用してデータを保存します。
+* **Quality, accuracy, and verification of storage/serialization and indexing of data (Rule 17a-4(f)(2) (ii)(B) and (C))** – Office 365 workloads each contain capabilities for automatically verifying the quality and accuracy of the process for recording data on storage media. In addition, data is stored by utilizing metadata and timestamps to ensure sufficient indexing to allow for effective searching and retrieval of data.
  
-* **複製コピーのための別個のストレージ (Rule 17a-4(f)(3(iii))** - Office 365 クラウド サービスは、高可用性の重要な特徴として、データの複製コピーを保存します。 これは、すべてのサーバーの物理的なレベル、データ センター内のサーバー レベル、地理的に分散されたデータ センターのサービス レベルを含む、サービスのすべてのレベルにおいて冗長性を実装することによって実現されます。
+* **Separate storage for duplicate copies (Rule 17a-4(f)(3(iii))** – The Office 365 cloud service stores duplicate copies of data as a core aspect of its high availability. This is accomplished by implementing redundancy at all levels of the service, including at the physical level on all servers, at the server level within the data center, and at the service level for geographically dispersed data centers.
 
-* **ダウンロード可能およびアクセス可能なデータ (Rule 17a-4(f)(2)(ii)(D))** - Office 365 は通常、保持のラベルが付けられたデータの検索、アクセス、指定の場所へのダウンロードを許可します。 そして、Exchange Online Archives のデータは組み込みの eDiscovery 機能を使用して検索可能になります。 その後、データは必要に応じて、EDRML や PST などの標準的な形式でダウンロードできるようになります。
+* **Downloadable and accessible data (Rule 17a-4(f)(2)(ii)(D))** – Office 365 generally permits data that's been labeled for retention to be searched for, accessed, and downloaded in place. And it allows data in Exchange Online Archives to be searchable by using built-in eDiscovery features. Data can then be downloaded as needed in standard formats, including EDRML and PST.
  
-* **監査要件 (Rule 17a-4(f)(3)(v))** - Office 365 は、データ オブジェクトの変更、保持ポリシーの構成または変更、eDiscovery 検索の実行、アクセス許可の変更に関わる、管理者およびユーザーによるすべての操作に対して、監査ログを提供します。 Office 365 は、操作の実行者、実行日時、操作の詳細、実行されたコマンドに関するデータを含む、包括的な監査証跡を維持します。 その後監査ログは出力され、必要に応じて正式な監査プロセスの一部に含められます。
+* **Audit requirements (Rule 17a-4(f)(3)(v))** – Office 365 provides audit logging for every administrative and user action that modifies data objects, configures or modifies retention policies, performs eDiscovery searches, or modifies access permissions. Office 365 maintains a comprehensive audit trail, including data about who performed an action, when it was performed, details about the action, and the commands that were performed. The audit log can then be output and included as part of formal audit processes as required.
 
-最後に、Rule 17a-4 は組織に対して、多くの種類の取引の記録を 2 年間はすぐにアクセスすることができるような状態で保持することを要求しています。 記録は、すぐにはアクセスできない状態でさらに 3 年から 6 年間保持する必要があります。 複製された記録も、オフサイトの場所で同じ期間保持しなければなりません。 Office 365 の記録管理機能により、記録管理者によって管理される期間の間、記録は変更や削除ができず、かつ簡単にアクセスできる状態で保持することができるようになります。 組織の規制遵守義務に応じて、この期間は日単位、月単位、年単位になります。
+Finally, Rule 17a-4 requires organizations to retain records for many types of transactions so that they're immediately accessible for two years. Records must be further retained for three to six years with non-immediate access. Duplicate records must also be kept for the same period at an off-site location. Office 365 records-management capabilities enable records to be retained such that they can't be modified or deleted but can be easily accessed for a time period that's controlled by the record manager. These periods can span days, months, or years, depending on the organization's regulatory-compliance obligations.
  
-組織が必要とする場合、Microsoft は要請に応じて SEC 17a-4 へのコンプライアンスの証明書を提供します。
+Upon request, Microsoft will provide an attestation letter of compliance with SEC 17a-4 if required by an organization.
 
-さらにこれらの機能により、Microsoft 365 は **米商品先物取引委員会** の [CFTC Rule 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) と、**金融取引業規制機構** の [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) で定められているストレージ要件を満たすことができます。 これらの規則は集合として、金融機関による記録の保持に関する世界的な規範的ガイダンスとなっています。
+In addition, these capabilities also help Microsoft 365 meet storage requirements for [CFTC Rule 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) from the **U.S. Commodity Futures Trading Commission** and [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) from the **Financial Industry Regulatory Authority.** Collectively, these rules represent the most-prescriptive guidance globally for financial institutions to retain records.
 
-Microsoft 365 による SEC Rule 17a-4 や他の規制の遵守に関する追加の詳細については、[Cohasset Associates による Office 365 Exchange Online SEC 17a-4(f) / CTFC 1.31(c)-(d) の評価](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)に関する資料をご覧ください。
+Additional details about how Microsoft 365 complies with SEC rule 17a-4 and other regulations is available at  [Assessment of Office 365 Exchange Online SEC 17a-4(f) / CFTC 1.31(c)-(d) by Cohasset Associates](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers).
 
-## <a name="establish-ethical-walls-with-information-barriers"></a>情報バリアにより、倫理的境界を確立する
+## <a name="establish-ethical-walls-with-information-barriers"></a>Establish ethical walls with information barriers
 
-金融機関は、特定の役割を持つ従業員が他の役割と情報交換や共同作業することを防止する規制に従わなければならないことがあります。 たとえば、FINRA が公開した規則 2241(b)(2)(G)、2242(b)(2) (D)、(b)(2)(H)(ii)、(b)(2)(H)(iii) は会員に対して次のことを要求しています。
+Financial institutions can be subject to regulations that prevent employees in certain roles from exchanging information or collaborating with other roles. For example, FINRA has published rules 2241(b)(2)(G), 2242(b)(2) (D), (b)(2)(H)(ii) and (b)(2)(H)(iii) that require members to:
 
-「(G) 調査分析員を、投資銀行業務に携わる人や、判断や監督が偏ってしまう可能性がある販売および取引の人員を含む他の人からの審査、圧力、監視を受けないようにするために合理的に設計された、情報バリアや他の制度化されたセーフガードを確立する」および「(H) 負債の調査分析員を、次に携わる人からの審査、圧力、監視を受けないように合理的に設計された、情報バリアや他の制度化されたセーフガードを確立する: (i) 投資銀行業務; (ii) 主要な取引または販売および取引業務; (iii) 判断や監督が偏ってしまう可能性がある他の人」
+"(G) establish information barriers or other institutional safeguards reasonably designed to ensure that research analysts are insulated from the review, pressure, or oversight by persons engaged in investment banking services activities or other persons, including sales and trading personnel, who might be biased in their judgment or supervision;" and "(H) establish information barriers or other institutional safeguards reasonably designed to ensure that debt research analysts are insulated from the review, pressure, or oversight by persons engaged in: (i) investment banking services; (ii) principal trading or sales and trading activities; and (iii) other persons who might be biased in their judgment or supervision;"
 
-究極的には、これらの規則は組織に対して、ポリシーを確立し、銀行業務、販売、取引に関わる役割の人が、分析員と情報共有や意思疎通を行うことができないように、情報バリアを設けることを要求しています。
+Ultimately, these rules require organizations to establish policies and implement information barriers between roles involved in banking services, sales, or trading from exchanging information and communications with analysts.
 
-[情報バリア](../compliance/information-barriers.md)により、Office 365 環境内に倫理的境界を確立することが可能になり、コンプライアンス管理者または他の権限を与えられた管理者が Teams のユーザー グループ間での通信を許可または防止できるようになります。 情報バリアは、特定の操作に対してチェックを実施し、不正な通信を防止します。 内部チームが合併/買収や機密性の高い取引に従事したり、厳重に制限すべき機密情報を扱ったりするなどのシナリオにおいても、情報バリアは通信を制限することができます。
+[Information barriers](../compliance/information-barriers.md) provides the ability to establish ethical walls within your Office 365 environment, allowing compliance administrators or other authorized administrators to define policies that allow or prevent communications between groups of users in Teams. Information barriers perform checks on specific actions to prevent unauthorized communication. Information barriers can also restrict communication in scenarios where internal teams are working on mergers/acquisitions or sensitive deals, or working with sensitive internal information that must be heavily restricted.
 
-Microsoft 365 での情報バリアは、Teams の会話やファイルをサポートしています。 情報バリアは、次のような種類の通信に関連する操作を防止して、FINRA 規制を遵守できるようにします。
+Information barriers in Microsoft 365 support conversations and files in Teams. They can prevent the following types of communications-related actions to help comply with FINRA regulations:
 
-* ユーザーの検索
-* チームへのメンバーの追加、チーム内の他のメンバーと関わり続けること
-* チャット セッションの開始または継続
-* グループ チャットの開始または継続
-* 誰かを会議に招待すること
-* 画面の共有
-* 電話の発信
+* Search for a user
+* Add a member to a team, or continue to participate with another member in a team
+* Start or continue a chat session
+* Start or continue a group chat
+* Invite someone to join a meeting
+* Share a screen
+* Place a call
 
-## <a name="implement-supervisory-control"></a>監督管理を実施する
+## <a name="implement-supervisory-control"></a>Implement supervisory control
 
-金融機関には通常、従業員の活動を監視し、適用される証券関連の法令を遵守できるようにするために、組織内に監督機能を確立して維持することが求められます。特に FINRA は、これらの監督要件を確立しました。
+Financial institutions are typically required to establish and maintain a supervisory function within their organizations to monitor the activities of employees and to help it achieve compliance with applicable securities laws. Specifically, FINRA has established these supervision requirements:
  
-* [FINRA Rule 3110 (監督)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) は、企業が監督手順書類 (written supervisory procedures, WSP) を作成し、従業員の活動と、行っている事業の種類を監督することを要求しています。 他の要件に加えて、手順には次が含まれている必要があります。
-   - 監督人員の監督
-   - 企業による投資銀行業務、証券業務、内部通信、内部調査のレビュー
-   - 内部関係者による取引のレビュー
-   - 書簡や苦情のレビュー
+* [FINRA Rule 3110 (Supervision)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) requires firms to have written supervisory procedures (WSPs) to supervise activities of its employees and the types of businesses in which it engages. In addition to other requirements, procedures must include:
+   - Supervision of supervisory personnel
+   - Review of a firm's investment banking, securities business, internal communications, and internal investigations
+   - Review of transactions for insider trading
+   - Review of correspondence and complaints
 
-   手順には、レビューの責任者、各人が行う監督活動、レビューの頻度、レビュー対象のドキュメントや通信の種類を含める必要があります。
+   Procedures must describe the individuals responsible for reviews, supervisory activity each person will perform, review frequency, and the types of documentation or communications under review.
  
-* [FINRA Rule 3120 (監督管理システム)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) は、企業が Rule 3110 で定義された監督手順書類を検証するための監督管理ポリシーと手順 (supervisory control policies and procedures, SCP) のシステムを確立することを要求しています。 企業には、WSP を作成することだけでなく、これらの手順を毎年テストして、適用される証券関連の法令への遵守能力を検証するためのポリシーを確立することも求められています。 テストの範囲を定義するために、リスクベースの手法とサンプリングを使用されることがあります。 他の要件の中でもこの規則は特に、企業に対して、テスト結果の概要と、テスト結果に対する重大な例外または修正された手順を含む年次レポートを経営陣に提出することを求めています。
+* [FINRA Rule 3120 (Supervisory Control System)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) requires firms to have a system of supervisory control policies and procedures (SCPs) that validates their written supervisory procedures as defined by Rule 3110. Firms are required not only to have WSPs but also to have policies that test these procedures annually to validate their ability to ensure compliance with applicable securities laws and regulations. Risk-based methodologies and sampling may be used to define the scope of testing. Among other requirements, this rule requires firms to provide an annual report to senior management that includes a summary of test results and any significant exceptions or amended procedures in response to test results.
 
-![画面上でグラフや表を見ているオフィス ワーカーと、後ろの方で行われている会議。](../media/wco18-desk-work-002.jpg)
+![An office worker views a chart and tables on a screen while others meet in the background.](../media/wco18-desk-work-002.jpg)
  
-### <a name="communication-compliance"></a>通信コンプライアンス
+### <a name="communication-compliance"></a>Communication compliance
 
-Microsoft 365 での通信コンプライアンスを使用すると、組織はポリシーを事前構成して、権限を与えられた監督者による監視とレビューのために従業員の通信を捕捉することが可能になります。 通信コンプライアンスのポリシーでは、内部/外部のメールや添付ファイル、Teams でのチャットやチャネルの通信、Skype for Business Online のチャット通信や添付ファイルを捕捉することができます。 通信コンプライアンスはさらに、サードパーティ サービス (Bloomberg、Thomson Reuters、LinkedIn、Twitter、Facebook、Box、Dropbox など) から通信やデータを取り込むこともできます。
-組織内で捕捉およびレビューできる通信が包括的であり、広範な状況に対してポリシーを構成できるため、通信コンプライアンスのポリシーにより、金融機関は FINRA Rule 3110 を遵守することが可能になります。 ポリシーは、個人またはグループの通信をレビューするように構成することができます。  指定された監督者を個人またはグループ レベルで割り当てることができます。 受信または送信メッセージ、ドメイン、保持ラベル、キーワードまたはフレーズ、キーワードの辞書、機密データの種類、添付ファイル、メッセージ サイズ、添付ファイル サイズに基づいて、通信を捕捉するための包括的な情報を構成することができます。 レビュー担当者はダッシュボードを使用して、フラグ付けされた通信のレビュー、ポリシー違反の可能性がある通信への対応、フラグ付けされた項目に解決とマークすることが可能です。 また、レビューの結果や、以前に解決された項目を確認することもできます。
+Communication compliance in Microsoft 365 enables organizations to pre-configure policies to capture employee communications for monitoring and review by authorized supervisors. Policies in communication compliance can capture internal/external email and attachments, Teams chat and channel communications, and Skype for Business Online chat communications and attachments. In addition, communication compliance can ingest communications and data from third-party services (such as Bloomberg, Thomson Reuters, LinkedIn, Twitter, Facebook, Box, and Dropbox).
+The comprehensive nature of communications that can be captured and reviewed within an organization, and the extensive conditions with which policies may be configured, allow communication compliance policies to help financial institutions comply with FINRA Rule 3110. Policies may be configured to review communications for individuals or groups.  Designated supervisors can be assigned at an individual or group level. Comprehensive conditions can be configured to capture communications based on inbound or outbound messages, domains, retention labels, keywords or phrases, keyword dictionaries, sensitive data types, attachments, message size, or attachment size. Reviewers get a dashboard in which they can review flagged communications, act on communications that potentially violate policies, and mark flagged items as resolved. They can also review the results of reviews and items that were previously resolved.
   
-通信コンプライアンスでは、ポリシーとレビュー担当者に基づいて、ポリシーのレビュー活動を監査できるレポートが提供されます。 レポートでは、組織の監督ポリシー書類で定義されたとおりにポリシーが機能しているかを検証することができます。 さらに、レビューが必要な通信や、会社のポリシーに準拠していない通信を特定するために使用することもできます。 最後に、ポリシーの構成と通信のレビューに関連するすべての活動は、Office 365 の統合監査ログで監査されます。 結果として、Microsoft 365 の通信コンプライアンスは、金融機関が FINRA Rule 3120 を遵守するのに役立ちます。
+Communication compliance provides reports that enable policy review activities to be audited based on the policy and the reviewer. Reports are available to validate that policies are working as defined by an organization's written supervision policies. They can also be used to identify communications that require review and those that are not compliant with corporate policy. Finally, all activities related to configuring policies and reviewing communications are audited in the Office 365 unified audit log. As a result, communication compliance in Microsoft 365 also helps financial institutions to comply with FINRA Rule 3120.
 
-FINRA 規則の遵守だけではなく、通信コンプライアンスを使用することにより、組織は他の法的要求事項、会社のポリシー、倫理規範を遵守するために通信を監視することができるようになります。 通信コンプライアンスには脅威、ハラスメント、冒涜的表現の分類子が組み込まれており、通信をレビューする際の偽陽性を減らすことができるため、レビュー担当者の調査と修正プロセスの時間を節約することができます。 また、合併や買収、経営陣の交代などの機密性の高い変化を経験する際に、組織は通信を監視することによってリスクを抑えることができるようになります。
+In addition to complying with FINRA rules, communication compliance allows organizations to monitor communications for compliance with other legal requirements, corporate policies, and ethical standards. Communication compliance provides built-in threat, harassment, and profanity classifiers that help reduce false positives when reviewing communications, saving reviewers time during the investigation and remediation process. It also allows organizations to reduce risk by monitoring communications when they undergo sensitive changes, such as mergers and acquisitions or leadership changes.
 
-![画面に集中するインフォメーション ワーカー。](../media/msc16-slalom-004.jpg)
+![An information worker focuses on a screen.](../media/msc16-slalom-004.jpg)
  
-## <a name="protect-against-data-exfiltration-and-insider-risk"></a>データ流出とインサイダー リスクから保護する
+## <a name="protect-against-data-exfiltration-and-insider-risk"></a>Protect against data exfiltration and insider risk
 
-企業にとっての共通の脅威は、データ流出や、組織からデータを抽出する行為です。 金融機関では機密性の高い情報に日々アクセスしているため、このリスクは非常に重大な懸念となりえます。 利用できる通信チャネルが増大し、データを移動するためのツールが普及しているため、データ漏えい、ポリシー違反、インサイダー リスクなどの脅威を軽減するための高度な能力が求められるようになっています。
+A common threat to enterprises is data exfiltration, or the act of extracting data from an organization. This risk can be a significant concern for financial institutions due to the sensitive nature of the information that can be accessed day to day. With the increasing number of communications channels available and the proliferation of tools for moving data, advanced capabilities are typically required to mitigate the risks of data leaks, policy violations, and insider risk.
 
-### <a name="insider-risk-management"></a>インサイダー リスクの管理
+### <a name="insider-risk-management"></a>Insider risk management
 
-どこからでもアクセスできるオンライン コラボレーション ツールを従業員が利用できるようにすることは本質的に、組織に対してリスクをもたらすことです。 従業員は意図せずに、または悪意を持って攻撃者や競合相手にデータを漏えいする可能性があります。  または、自分で使用するためにデータを抜き取ったり、将来の従業員のためにデータを持ち出すかもしれません。 こうしたシナリオは、セキュリティとコンプライアンスの両方の観点において金融サービス機関とっての重大なリスクとなります。 こうしたことが発生したときにこれらのリスクを特定し、すぐに緩和するには、データ収集のため、そして法務、人事、情報セキュリティの部門をまたぐ共同作業のためのインテリジェントなツールが必要になります。
+Enabling employees with online collaboration tools that can be accessed anywhere inherently brings risk to the organization. Employees may inadvertently or maliciously leak data to attackers or competitors.  Alternatively, they may exfiltrate data for personal use or take data with them to a future employer. These scenarios present serious risks to financial services institutions from both security and compliance standpoints. Identifying these risks when they occur and quickly mitigating them requires both intelligent tools for data collection and collaboration across departments such as legal, human resources, and information security.
 
-Microsoft 365 では最近、Microsoft 365 サービス全体のシグナルを関連付け、機械学習モデルを使用してユーザーの挙動を分析し、インサイダー リスクの隠れたパターンや兆候を見つけ出す、インサイダー リスク管理ソリューションが発表されました。 このツールはセキュリティ オペレーション、内部調査担当者、HR のコラボレーションを促進し、事前定義されたワークフローに基づいて問題を正すことができます。  
+Microsoft 365 recently launched an insider risk management solution that correlates signals across Microsoft 365 services and uses machine-learning models to analyze user behavior for hidden patterns and signs of insider risk. This tool enables collaboration between security operations, internal investigators, and HR so that they can easily remediate cases based on predetermined workflows.  
 
-たとえば、Microsoft 365 のインサイダー リスク管理では、USB ドライブへのファイルのコピーや個人メール アカウントでのメールのやり取りなど、ユーザーの Windows 10 デスクトップからのシグナルを、Office 365 メール、SharePoint Online、Microsoft Teams、OneDrive for Business などのオンライン サービスでのアクティビティと関連付け、データ流出のパターンを特定することができます。 また、こうしたアクティビティを、組織を去る従業員と関連付けることもできます。これは、よくあるデータ流出のパターンです。 インサイダー リスク管理では、長期にわたって複数のアクティビティや挙動を監視することができます。 共通するパターンが発見されると警告を発し、調査担当者が重要なアクティビティに注目して、ポリシー違反を確信をもって検証できるようにします。 インサイダー リスク管理では、調査担当者からのデータを疑似匿名化することでデータのプライバシー規制を準拠しながらも、効率的に調査を行えるようにするために重要なアクティビティを浮かび上がらせます。 修正のために事例を報告するための一般的なエスカレーション ワークフローに続いて、調査担当者は重要なアクティビティのデータをパッケージ化し、HR および法務部にセキュリティで保護された方法で送信できます。
+For example, insider risk management in Microsoft 365 can correlate signals from a user's Windows 10 desktop, such as copying files to a USB drive or emailing a personal email account, with activities from online services such as Office 365 email, SharePoint Online, Microsoft Teams, or OneDrive for Business, to identify data exfiltration patterns. It can also correlate these activities with employees leaving an organization, which is a common data exfiltration pattern. It can monitor multiple activities and behavior over time. When common patterns emerge, it can raise alerts and help investigators focus on key activities to verify a policy violation with a high degree of confidence. Insider risk management can pseudo-anonymize data from investigators to help meet data privacy regulations, while still surfacing key activities that help them perform investigations efficiently. It allows investigators to package and securely send key activity data to the HR and legal departments, following common escalation workflows for raising cases for remediation action.
 
-Microsoft 365 のインサイダー リスク管理は、インサイダー リスクを管理および調査する組織の能力を格段に高めつつ、より高いレベルでの事例への対応が必要になった場合に、組織がデータのプライバシー規制を準拠し、確立されたエスカレーションの方法を実行できるようにします。 Microsoft 365 のインサイダー リスク管理の詳細については、「[Microsoft 365 のインサイダー リスク管理における最新のリスクの問題点とワークフロー](../compliance/insider-risk-management.md)」を参照してください。
+Insider risk management in Microsoft 365 significantly increases capabilities of organizations to monitor and investigate insider risks while allowing organizations to still meet data privacy regulations and follow established escalation paths when cases require higher-level action. For more information about insider risk management in Microsoft 365, see [Modern risk pain points and Workflow in Insider risk management in Microsoft 365](../compliance/insider-risk-management.md).
 
-![パーティションで区切られたスペースで画面を見るコール センターの職員。](../media/clo17-call-center-006.jpg)
+![A call center worker in in a cubicle types while viewing a screen.](../media/clo17-call-center-006.jpg)
  
-### <a name="tenant-restrictions"></a>テナントの制限
-機密データを扱い、セキュリティを非常に重視している組織は通常、ユーザーがアクセスできるオンライン リソースを管理することを望みます。 同時に、Office 365 などのオンライン サービスを使用してセキュリティで保護されたコラボレーションを行うことも希望します。 結果として、ユーザーがアクセスできる Office 365 環境を管理するのは挑戦となります。企業向けではない Office 365 環境は、意図せずに、または悪意を持って会社のデバイスからデータを抜き取るために利用されることがあるからです。 従来、組織はユーザーが会社のデバイスからアクセスできるドメインや IP アドレスを制限してきました。 ユーザーが Office 365 サービスに正当にアクセスする必要があるクラウド ファーストの世界では、この方法は通用しません。
+### <a name="tenant-restrictions"></a>Tenant restrictions
+Organizations that deal with sensitive data and put a strict emphasis on security typically want to control the online resources that users can access. At the same time, they want to enable secure collaboration through online services such as Office 365. As a result, controlling the Office 365 environments that users can access becomes a challenge because noncorporate Office 365 environments can be used to exfiltrate data from corporate devices either maliciously or inadvertently. Traditionally, organizations restrict the domains or IP addresses that users can access from corporate devices. But this doesn't work in a cloud-first world, where users need to legitimately access Office 365 services.
 
-Microsoft 365 では、テナントの[制限](/azure/active-directory/manage-apps/tenant-restrictions)にこの課題に対処するための機能を加えています。 テナントの制限では、従業員による不正な ID (自社のディレクトリに含まれない ID) を使用した外部の Office 365 エンタープライズ テナントへのアクセスを制限するよう構成できます。 現時点で、テナントの制限はテナント全体に適用され、構成されたリストに含まれるテナントへのアクセスだけが許可されます。 Microsoft はこのソリューションの開発を続けており、今後より詳細な制御が可能になり、提供される保護が強化されていきます。
+Microsoft 365 provides the tenant [restrictions](/azure/active-directory/manage-apps/tenant-restrictions) the capability to address this challenge. Tenant restrictions can be configured to restrict employee access to external Office 365 enterprise tenants using rogue identities (identities that aren't part of your corporate directory). Today, tenant restrictions apply across the tenant, allowing access to only those tenants that appear on the list that you configure. Microsoft is continuing to develop this solution to increase granularity of control and enhance the protections it provides.
 
-![グラフィック](../media/clo1717-corporate-office-001.jpg)
+![GRAPHIC](../media/clo1717-corporate-office-001.jpg)
  
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>Conclusion
 
-Microsoft 365 と Teams は金融サービス企業に対して包括的な統合ソリューションを提供し、シンプルながらも強力なクラウドベースのコラボレーションおよびコミュニケーション機能を企業全体で利用できるようにします。 Microsoft 365 のセキュリティおよびコンプライアンスの技術を活用することにより、金融機関は、データ、ID、デバイス、アプリケーションを、サイバーセキュリティやインサイダー リスクを含む様々な運営上のリスクから保護するための強力なセキュリティ コントロールを使用して、法令を遵守しつつ、より安全に運営することが可能になります。 Microsoft 365 は本質的にセキュリティで保護されたプラットフォームを提供し、金融サービス組織はこのプラットフォームを使用して、会社、従業員、顧客を保護しながら、成長し続けることができます。
+Microsoft 365 and Teams provide an integrated and comprehensive solution for financial services companies, enabling simple yet powerful cloud-based collaboration and communications capabilities across the enterprise. By using security and compliance technologies from Microsoft 365, institutions can operate in a more secure and compliant manner  with robust security controls to protect data, identities, devices, and applications from various operational risks, including cybersecurity and insider risks. Microsoft 365 provides a fundamentally secure platform on which financial services organizations can achieve more while protecting their company, employees, and customers.

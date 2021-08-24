@@ -252,7 +252,7 @@
           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
         - name: トップ ドメインのメール フローの状態の分析情報
           href: mfi-domain-mail-flow-status-insight.md
-        - name: 管理者の送信を使用する
+        - name: 提出を管理する
           href: admin-submission.md
         - name: メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する
           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft

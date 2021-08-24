@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: e0604a6531b93a1a0df04c39ebaff4e75a0365f9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 8c78cf0f8ff49d2b81533e064a16089d8fe75d15
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248038"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400405"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -413,7 +413,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 ## <a name="auditing-sensitivity-label-activities"></a>機密ラベル アクティビティの監査
 
 > [!IMPORTANT]
-> コンテナを保護するラベルの **[グループとサイト]** スコープのみを選択してラベル分離を使用する場合: このセクションで説明する **検出されたドキュメントの機密性の不一致** の監査イベントとメールのため、**ファイルとメール** のスコープを持つラベルの前に[ラベルの順序付け](sensitivity-labels.md#label-priority-order-matters)を検討してください。 
+> コンテナを保護するラベルの **[グループとサイト]** スコープのみを選択してラベル分離を使用する場合: このセクションで説明する **検出されたドキュメントの機密性の不一致** の監査イベントとメールのため、**ファイルとメール** のスコープを持つラベルの前に [ラベルの順序付け](sensitivity-labels.md#label-priority-order-matters)を検討してください。 
 
 誰かが機密ラベルで保護されているサイトにドキュメントをアップロードし、そのドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも[優先度が高く](sensitivity-labels.md#label-priority-order-matters)なっている場合、このアクションはブロックされません。 たとえば、「**一般**」ラベルを SharePoint サイトに適用し、誰かがこのサイトに「**社外秘**」というラベルの付けられたドキュメントをアップロードしたとします。 優先度の高い機密ラベルは、優先順位の低いコンテンツよりも機密性の高いコンテンツを識別するため、この状況はセキュリティ上の懸念になる可能性があります。
 
@@ -449,5 +449,7 @@ Set-SPOTenant -BlockSendLabelMismatchEmail $True
 ## <a name="additional-resources"></a>その他のリソース
 
 [Microsoft Teams、O365 グループおよび SharePoint Online サイトでの秘密度ラベルの使用](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380)については、ウェビナーのレコーディングと回答をご覧ください。
+
+Teams 接続済みサイトとチャネル サイトの管理の詳細については[[ Teams 接続済みサイトとチャネル サイトの管理]](/SharePoint/teams-connected-sites)を参照してください。
 
 このウェビナーは、当該機能がまだプレビューに含まれているときに記録されているので、UI にいくつかの矛盾が見つかる可能性があります。 ただし、このページに記載されている新しい機能があれば、この機能の情報は正確です。
