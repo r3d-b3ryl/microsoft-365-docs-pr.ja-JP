@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: 管理センターでMicrosoft Viva ラーニング (プレビュー) を構成Teamsします。
-ms.openlocfilehash: 01c3ac59b1f40ba0eb743a4b14bd9c02711cb050724057544a2d6238696015ab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0db999306cc9cf7153d649e7ca49aca709425d6f
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891155"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483393"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>管理センター Microsoft Viva ラーニング (プレビュー) のTeams設定する
 

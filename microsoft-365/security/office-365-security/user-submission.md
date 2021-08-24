@@ -17,12 +17,12 @@ ms.collection:
 description: 管理者は、ユーザーによって報告されるスパムメールやフィッシングメールを収集するメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94e796304ed562c7464ad64362159d231ace8882
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1b7b830c35443f47af72ed0d76303b96491648bc
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258370"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483321"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーが報告したメッセージ設定
 
@@ -71,19 +71,19 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
 - ユーザー申請の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
 
   - **[組織の** 管理 **] または [** セキュリティ管理者] ポータルの [アクセス許可] [Microsoft 365 Defenderします](permissions-microsoft-365-security-center.md)。
-  
+
 - PowerShell へのアクセスExchange Online必要です。 使用しようとしているアカウントが Exchange Online PowerShell にアクセスできない場合は、申請メールボックスを指定すると、次のようなエラー メッセージが表示されます。
 
   > ドメイン内の電子メール アドレスを指定する
 
   PowerShell へのアクセスを有効または無効にする方法のExchange Online、次のトピックを参照してください。
 
-  - [Exchange Online PowerShell へのアクセスを有効または無効にする](/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Exchange Online PowerShell へのアクセスを有効または無効にする](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [クライアント アクセス ルール (Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>ユーザー申請メールボックスMicrosoft 365 Defenderポータルを使用して構成する
 
-1. このポータルMicrosoft 365 Defender、[ポリシー] &[脅威ポリシー] [その **他**] セクション [ユーザーが報告したメッセージの設定 \>  \> ] [ユーザーの申請] \>  \> **に移動します**。
+1. このポータルMicrosoft 365 Defender、[その他のユーザーの申請&ユーザーが報告したメッセージ設定に関するポリシー] に \>  \>  \> **移動します**。
 
 2. [ユーザーの **申請] ページ** で、表示される情報は **、[Microsoft** レポート メッセージ] Outlook設定が [オフ] または [オン] のOutlook **によって** 決 **まります**。
 
@@ -94,7 +94,6 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
        - **組織のメールボックス**: 表示されるボックスに、既存のメールボックスのメール アドレスをExchange Onlineします。 配布グループは許可されません。 このオプションは、最初に分析のために管理者またはセキュリティ運用チームにのみメッセージを移動する場合に使用します。 管理者が自分で転送しない限り、メッセージは Microsoft に送信されません。
 
           > [!IMPORTANT]
-          >
           > 米国政府機関 (GCC、GCC、DoD) は、自分の組織のメールボックス **のみを構成できます**。 他の 2 つのオプションは無効になっています。
           >
           > 組織がカスタム メールボックスにのみ送信するように構成されている場合、報告されたメッセージは再スキャンのために送信されません。ユーザーレポートメッセージ ポータルの結果は常に空になります。
@@ -109,6 +108,8 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
 
           > [!CAUTION]
           > Outlook on the web メールボックス ポリシーを使用して[Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)で迷惑メール報告を無効にしたが、以前の設定を構成して Microsoft にメッセージを報告した場合、ユーザーはレポート メッセージ アドインまたはレポートフィッシング アドインを使用して Outlook on the web で Microsoft にメッセージを報告できます。
+
+     **[Microsoft レポート メッセージ] Outlookトグル** オンのままにして、エンド ユーザーが検疫ポータルから誤検知メッセージ ![ ](../../media/scc-toggle-on.png) を報告できます。
 
      - **[ユーザー レポートエクスペリエンス] セクション**
        - **[レポート** の前に]タブ: [タイトル] および [メッセージ] 本文ボックスに、ユーザーがレポート メッセージ アドインまたはレポート フィッシング アドインを使用してメッセージを報告する前に表示される説明テキストを入力します。 変数 %type% を使用して、申請の種類 (迷惑メール、迷惑メール、フィッシングなど) を含めできます。
@@ -141,7 +142,7 @@ Microsoft Defender for Office 365場合は、高度なフィルター処理が�
 - 2|または迷惑メールではない
 - 3|またはフィッシング
 
-例:
+次に例を示します。
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`

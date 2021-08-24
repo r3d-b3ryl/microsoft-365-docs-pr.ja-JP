@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきではないメッセージを識別する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa92adbcca8f01f878649081472ef600075a06d3
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 14e952aacf20350fb264fecd72f626b0f3a30729
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386974"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483357"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信する構成
 
@@ -31,7 +31,7 @@ ms.locfileid: "58386974"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアまたは高信頼フィッシングとして識別されるメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 例:
+既定で組織を[](secure-by-default.md)セキュリティで保護するために、Exchange Online Protection (EOP) では、マルウェアまたは高信頼フィッシングとして識別されるメッセージの安全なリストやフィルター バイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 次に例を示します。
 
 - **サード パーティのフィッシング シミュレーション**: シミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、脆弱なユーザーを特定するのに役立ちます。
 - **セキュリティ操作 (SecOps)** メールボックス: セキュリティ チームがフィルター処理されていないメッセージ (良いメッセージと悪いメッセージの両方) を収集および分析するために使用する専用のメールボックス。
@@ -112,7 +112,7 @@ ms.locfileid: "58386974"
      - 単一 IP: たとえば、192.168.1.1。
      - IP 範囲: たとえば、192.168.0.1-192.168.0.254 です。
      - CIDR IP: たとえば、192.168.0.1/25。
-   - **許可** するシミュレーション URL : この設定を展開し、必要に応じて、フィッシング シミュレーション キャンペーンの一部である特定の URL を入力します。この URL は、ボックス内をクリックして値を入力し、Enter キーを押したり、ボックスの下に表示される値を選択したりしてブロックまたは削除する必要があります。 最大 10 のエントリを追加できます。 URL 構文の形式については、「テナント許可/ブロック一覧」の URL 構文 [を参照してください](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)。
+   - **許可** するシミュレーション URL : この設定を展開し、必要に応じて、フィッシング シミュレーション キャンペーンの一部である特定の URL を入力します。この URL は、ボックス内をクリックして値を入力し、Enter キーを押したり、ボックスの下に表示される値を選択したりしてブロックまたは削除する必要があります。 最大 10 のエントリを追加できます。 URL 構文の形式については、「テナント許可/ブロック一覧」の URL 構文 [を参照してください](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)。
 
    既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
@@ -269,6 +269,7 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 - **フィッシング シミュレーションの上書きポリシー**: **\* -PhishSimOverridePolicy** コマンドレットによって制御されます。
 - **フィッシング シミュレーションの上書きルール**: **\* -PhishSimOverrideRule** コマンドレットによって制御されます。
+- **許可されている (ブロックされていない)** フィッシング シミュレーション URL : **\* -TenantAllowBlockListItems** コマンドレットによって制御されます。
 
 この動作の結果は次のとおりです。
 
@@ -279,10 +280,13 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 ### <a name="use-powershell-to-configure-third-party-phishing-simulations"></a>PowerShell を使用してサード パーティのフィッシング シミュレーションを構成する
 
-PowerShell の高度な配信ポリシーでサード パーティ製のフィッシング シミュレーションを構成するには、次の 2 つの手順を実行します。
+PowerShell でサード パーティ製のフィッシング シミュレーションを構成するには、次の複数の手順を実行します。
 
 1. フィッシング シミュレーションオーバーライド ポリシーを作成します。
-2. ルールが適用されるポリシーを指定するフィッシング シミュレーション オーバーライド ルールを作成します。
+2. 次の値を指定するフィッシング シミュレーションオーバーライド ルールを作成します。
+   - ルールが適用されるポリシー。
+   - フィッシング シミュレーション メッセージの送信元 IP アドレス。
+3. 必要に応じて、許可する必要があるフィッシング シミュレーション URL (ブロックまたはスキャンされていない) を識別します。
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>手順 1: PowerShell を使用してフィッシング シミュレーションオーバーライド ポリシーを作成する
 
@@ -320,6 +324,24 @@ New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePoli
 
 構文とパラメーターの詳細については [、「New-PhishSimOverrideRule」を参照してください](/powershell/module/exchange/new-phishsimoverriderule)。
 
+#### <a name="step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow"></a>手順 3: (オプション) PowerShell を使用してフィッシング シミュレーション URL を識別して許可する
+
+次の構文を使用してください。
+
+```powershell
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URLN>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
+```
+
+URL 構文の詳細については、「テナント許可/ブロック一 [覧の URL 構文」を参照してください](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)。
+
+次の使用例は、有効期限が切れない、指定されたサード パーティフィッシング シミュレーション URL の URL 許可エントリを追加します。
+
+```powershell
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries *.fabrikam.com -NoExpiration
+```
+
+構文とパラメーターの詳細については [、「New-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/new-tenantallowblocklistitems)。
+
 ### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>PowerShell を使用してフィッシング シミュレーションオーバーライド ポリシーを表示する
 
 この例では、唯一のフィッシング シミュレーションオーバーライド ポリシーに関する詳細情報を返します。
@@ -350,6 +372,16 @@ Get-PhishSimOverrideRule | Format-Table Name,Mode
 
 構文とパラメーターの詳細については [、「Get-PhishSimOverrideRule」を参照してください](/powershell/module/exchange/get-phishsimoverriderule)。
 
+### <a name="use-powershell-to-view-the-allowed-phishing-simulation-url-entries"></a>PowerShell を使用して、許可されているフィッシング シミュレーション URL エントリを表示する
+
+許可されているフィッシング シミュレーション URL を表示するには、次のコマンドを実行します。
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery
+```
+
+構文とパラメーターの詳細については [、「Get-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/get-tenantallowblocklistitems)。
+
 ### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>PowerShell を使用してフィッシング シミュレーションオーバーライド ポリシーを変更する
 
 フィッシング シミュレーションオーバーライド ポリシーを変更するには、次の構文を使用します。
@@ -366,24 +398,7 @@ Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
 
 構文とパラメーターの詳細については [、「Set-PhishSimOverridePolicy」を参照してください](/powershell/module/exchange/set-phishsimoverridepolicy)。
 
-### <a name="use-powershell-to-modify-the-simulation-url-settings"></a>PowerShell を使用してシミュレーション URL の設定を変更する
-
-フィッシング シミュレーションオーバーライド ポリシーを変更するには、次の構文を使用します。
-
-```powershell
-New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "<url>"
-```
-URL 構文の形式については、「テナント許可/ブロック一覧」の URL 構文 [を参照してください](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)。
-
-次の使用例は、サブドメインのシミュレーション URL を追加 contoso.com。
-
-```powershell
-New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "*.contoso.com"
-```
-
-構文とパラメーターの詳細については [、「New-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/new-tenantallowblocklistitems)。
-
-### <a name="use-powershell-to-modify-a-phishing-simulation-override-rule"></a>PowerShell を使用してフィッシング シミュレーションオーバーライド ルールを変更する
+### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>PowerShell を使用してフィッシング シミュレーションの上書きルールを変更する
 
 フィッシング シミュレーションオーバーライド ルールを変更するには、次の構文を使用します。
 
@@ -403,6 +418,26 @@ Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b
 ```
 
 構文とパラメーターの詳細については [、「Set-PhishSimOverrideRule」を参照してください](/powershell/module/exchange/set-phishsimoverriderule)。
+
+### <a name="use-powershell-to-modify-the-allowed-phishing-simulation-url-entries"></a>PowerShell を使用して、許可されているフィッシング シミュレーション URL エントリを変更する
+
+URL 値を直接変更することはできません。 この記事 [の説明に従って、既存の URL](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries) エントリを削除し、 [新しい URL](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow) エントリを追加できます。
+
+許可されているフィッシング シミュレーション URL エントリの他のプロパティ (有効期限やコメントなど) を変更するには、次の構文を使用します。
+
+```powershell
+Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
+```
+
+変更するエントリは、その URL 値 _(Entrys_ パラメーター) または **Get-TenantAllowBlockListItems** コマンドレット _(Ids_ パラメーター) の出力から識別します。
+
+次の使用例は、指定したエントリの有効期限を変更しました。
+
+```powershell
+Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+```
+
+構文とパラメーターの詳細については [、「Set-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/set-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>PowerShell を使用してフィッシング シミュレーションオーバーライド ポリシーを削除する
 
@@ -429,3 +464,22 @@ Remove-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-932
 ```
 
 構文とパラメーターの詳細については [、「Remove-PhishSimOverrideRule」を参照してください](/powershell/module/exchange/remove-phishsimoverriderule)。
+
+### <a name="use-powershell-to-remove-the-allowed-phishing-simulation-url-entries"></a>PowerShell を使用して、許可されているフィッシング シミュレーション URL エントリを削除する
+
+既存のフィッシング シミュレーション URL エントリを削除するには、次の構文を使用します。
+
+```powershell
+Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery
+```
+
+変更するエントリは、その URL 値 _(Entrys_ パラメーター) または **Get-TenantAllowBlockListItems** コマンドレット _(Ids_ パラメーター) の出力から識別します。
+
+次の使用例は、指定したエントリの有効期限を変更しました。
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+```
+
+構文とパラメーターの詳細については [、「Remove-TenantAllowBlockListItems」を参照してください](/powershell/module/exchange/remove-tenantallowblocklistitems)。
+

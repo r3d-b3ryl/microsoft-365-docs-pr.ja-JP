@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: ''
 audience: enabler
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: '[プレビュー] (プレビュー) のリソースをMicrosoft Viva ラーニングする方法について学習します。'
-ms.openlocfilehash: dd40e32e7bf34e172a4f812e7be9fd3c0c5b03c7c17ec486f18e1682e485d26f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f868c90e0dcb280bf3bd7ca592a950d9735143de
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834646"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483345"
 ---
 # <a name="introduction-to-microsoft-viva-learning-preview"></a>概要 (Microsoft Viva ラーニング)
 
@@ -30,7 +30,7 @@ Microsoft Viva ラーニング (プレビュー) を使用すると、組織内�
 
 このページのリソースは、組織でのビバ の概要と使用を開始ラーニング(プレビュー) を使用するように設計されています。
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>開始する
 
 このセクションのリソースは、Viva ラーニング (Preview) の概要と、組織に役立つ方法について説明します。
 

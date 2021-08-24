@@ -118,6 +118,8 @@
           items:
             - name: センサーの設定と正常性
               href: ../defender-identity/sensor-health.md
+            - name: ディレクトリ サービス アカウント
+              href: ../defender-identity/directory-service-accounts.md
             - name: VPN 統合
               href: ../defender-identity/vpn-integration.md
             - name: エンティティ タグの設定
@@ -186,6 +188,8 @@
               href: m365d-autoir-results.md
             - name: 誤検知と否定に対処する
               href: m365d-autoir-report-false-positives-negatives.md
+            - name: Power Automate を使用する
+              href: use-power-automate.md
         - name: 高度な検出
           items:
             - name: 高度な検出の概要
