@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouseヘルプとサポートを取得する方法について説明します。
-ms.openlocfilehash: 1b800a9b06cf83ff6014d2377c847204d7aaa568bc7feac65631adec22772ccc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 392eed01b5519c512c89460776ec9f4391b7bda2
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830133"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506432"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>ユーザーのヘルプとサポートをMicrosoft 365 Lighthouse 
 
@@ -30,10 +30,10 @@ ms.locfileid: "53830133"
 
 ヘルプが必要な場合は、いくつかのオプションを使用できます。 まず、顧客テナント サービスの現在の正常性を確認します。
 
-1. [サービスの状態] の左側のMicrosoft 365 Lighthouse[サービスの正常性]**を選択します**。
+1. ライトハウスの左側のナビゲーション ウィンドウで、[サービスの正常性] **を選択します**。
 2. 現在および過去の問題に関する詳細情報を表示します。
 
-テナント サービスの現在の正常性をMicrosoft 365 Lighthouseするには、次のMicrosoft 365 Lighthouse確認します。
+ライトハウス テナント サービスの現在の正常性を確認するには、次の方法を実行します。
 
 1. で、Microsoft 365 管理センターに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
 2. 左側のナビゲーション ウィンドウで、[正常性サービスの **正常性]**  >  **を選択します**。
@@ -43,9 +43,9 @@ ms.locfileid: "53830133"
 いずれかのサービス正常性ダッシュボードに表示されていない問題が発生している場合は、この記事の手順に従って、セルフ ヘルプ オプションを表示するか、サービス要求を作成します。
 
 > [!NOTE]
-> プレビューでは、サポートは英語Microsoft 365 Lighthouse制限されます。
+> サポートは英語に制限されています。ライトハウスはプレビュー中です。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - サービス要求を作成および管理するには **、microsoft.office365.supportTickets/allEntities/allTasks** というプロパティ セットを使用して、少なくとも 1 つの Azure Active Directory (Azure AD) ロールが割り当てられている必要があります。 Azure ADロールの一覧については、「Azure AD [組み込みロール」を参照してください](/azure/active-directory/roles/permissions-reference)。 役割を割り当てる方法の詳細については [、「Assign Azure AD ロールをユーザーに割り当てる」を参照してください](/azure/active-directory/roles/manage-roles-portal)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "53830133"
 
 ## <a name="access-help-and-support"></a>ヘルプとサポートにアクセスする
 
-1.  [Microsoft 365 Lighthouseで、 を選択 **します。** ポータルの上部にあるアイコンをクリックして[ヘルプ] ウィンドウ **を開** き、次のいずれかの操作を行います。
+1.  [ライトハウス] で [ **?** ポータルの上部にあるアイコンをクリックして[ヘルプ] ウィンドウ **を開** き、次のいずれかの操作を行います。
     
     -  問題が発生したポータルのページにある場合は、[診断の表示] **を選択します**。
 
@@ -69,7 +69,7 @@ ms.locfileid: "53830133"
     > [!NOTE]
     > [ヘルプ **の方法]** ウィンドウが開かない場合は、グローバル管理者のアクセス許可を持つパートナー テナントのユーザーに連絡し、サポートを求める必要があります。
 
-3.  [ヘルプ **の方法] ウィンドウ** で、問題の説明を入力し、Enter キーを **押します**。 検索結果に関連するヘルプ記事が含まれる *Microsoft 365、* 説明に完全な製品名を記載することをお勧めします。
+3.  [ヘルプ **の方法] ウィンドウ** で、問題の説明を入力し、Enter キーを **押します**。 検索結果に関連するヘルプ記事が含まれるMicrosoft 365 Lighthouse完全な製品名を説明に含める必要があります。
 
 4.  推奨される記事の一覧を参照して、問題の解決に役立つ記事を確認してください。
 

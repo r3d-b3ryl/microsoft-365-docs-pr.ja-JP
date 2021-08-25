@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: メールボックスを非アクティブなメールボックスに変換して、元の従業員のメールボックスコンテンツを保持する方法について説明します。
-ms.openlocfilehash: 3badfacad1ffc58a686efd1f1971ce6dd015398e6662512c1de4ccb463ee98ef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c2e4ce0bb60d29652d66a778c16579646392d21
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801928"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507258"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>非アクティブなメールボックスの概要
 
@@ -35,7 +35,7 @@ ms.locfileid: "53801928"
 
 従業員が組織を離れる (または長期休暇に入った場合)、従業員のアカウントをMicrosoft 365できます。 従業員のメールボックス データは、アカウントが削除された後、30 日間保持されます。 この期間中も、アカウントを削除解除することでメールボックス データを回復できます。 30 日後、データは完全に削除されます。
 
-ただし、組織で元従業員のメールボックス コンテンツを保持する必要がある場合は、メールボックスを訴訟ホールドに置くか、セキュリティ & コンプライアンス センターのメールボックスに Microsoft 365 保持ポリシーを適用し、対応する Microsoft 365 アカウントを削除することで、メールボックスを非アクティブなメールボックスに変換できます。 非アクティブなメールボックスの内容は、メールボックスに置かれた訴訟ホールドの期間、またはメールボックスが削除される前に適用された保持ポリシーの保持期間に保持されます。 You can still recover the corresponding user account for a 30-day period. ただし、30 日後、保持ポリシーまたは保持ポリシーが削除されるまで、非アクティブなメールボックスMicrosoft 365保持されます。
+ただし、組織で元従業員のメールボックス コンテンツを保持する必要がある場合は、メールボックスを訴訟ホールドに置くか、Microsoft 365 コンプライアンス センター 内のメールボックスに Microsoft 365 アイテム保持ポリシーを適用し、対応する Microsoft 365 アカウントを削除することで、メールボックスを非アクティブなメールボックスに変換できます。 非アクティブなメールボックスの内容は、メールボックスに置かれた訴訟ホールドの期間、またはメールボックスが削除される前に適用された保持ポリシーの保持期間に保持されます。 You can still recover the corresponding user account for a 30-day period. ただし、30 日後、保持ポリシーまたは保持ポリシーが削除されるまで、非アクティブなメールボックスMicrosoft 365保持されます。
 
 > [!IMPORTANT]
 > メールボックスのコンテンツを保持するためにさまざまな方法に投資を続ける中、Exchange 管理センターのインプレース ホールドを廃止することを発表します。 つまり、非アクティブなメールボックスを作成するには、訴訟ホールドMicrosoft 365保持ポリシーを使用する必要があります。 2020 年 7 月 1 日以降、Exchange Online で新しいインプレース ホールドを作成することはできなくなります。 ただし、非アクティブなメールボックスに配置されたインプレース ホールドのホールド期間は引き続き変更できます。 ただし、2020 年 10 月 1 日以降、ホールド期間を変更することはできなくなります。 インプレース ホールドを削除することによってのみ、非アクティブなメールボックスを削除できます。 インプレース ホールドになっている既存の非アクティブなメールボックスは、ホールドが解除されるまで保持されます。 保留リストが廃止されるIn-Place詳細については、「従来の電子情報開示ツールの廃止 [」を参照してください](legacy-ediscovery-retirement.md)。
@@ -60,7 +60,7 @@ ms.locfileid: "53801928"
 
 - アイテム保持ポリシーは非アクティブなメールボックスにのみ適用されるので、非アクティブなメールボックスを識別する良い方法です。
 
-- 組織内の非アクティブなメールボックスに割り当てられているアイテム保持ポリシーをすばやく特定できます。 これにより、必要に応じて保持 (または削除) 設定を簡単に変更できます。 また、非アクティブなメールボックスは、セキュリティ コンプライアンス センターを使用してポリシーから削除できるので、完全に削除&します。 それ以外の場合は、Exchange Online PowerShell を使用して非アクティブなメールボックスから訴訟ホールドを削除するか、セキュリティ & コンプライアンス センター PowerShell を使用して、非アクティブなメールボックスを組織全体の Microsoft 365 保持ポリシーから除外する必要があります。
+- 組織内の非アクティブなメールボックスに割り当てられているアイテム保持ポリシーをすばやく特定できます。 これにより、必要に応じて保持 (または削除) 設定を簡単に変更できます。 また、非アクティブなメールボックスをポリシーから削除するには、サーバーを使用してポリシーから削除できるので、完全に削除Microsoft 365 コンプライアンス センター。 それ以外の場合は、Exchange Online PowerShell を使用して非アクティブなメールボックスから訴訟ホールドを削除するか、セキュリティ & コンプライアンス センター PowerShell を使用して、非アクティブなメールボックスを組織全体の Microsoft 365 保持ポリシーから除外する必要があります。
 
 - 非アクティブなメールボックス専用Microsoft 365アイテム保持ポリシーを作成する場合は、ポリシーに最大 1,000 のメールボックスを追加できます。 大規模な組織の場合は、非アクティブなメールボックスに使用する複数のアイテム保持Microsoft 365を作成する必要があります。
 
@@ -69,7 +69,7 @@ ms.locfileid: "53801928"
 
 ## <a name="inactive-mailboxes-and-ediscovery-case-holds"></a>非アクティブなメールボックスと電子情報開示のケース保持
 
-セキュリティ & コンプライアンス センターの電子情報開示ケースに関連付けられている保留リストがメールボックスに配置され、メールボックスまたはユーザーのアカウントが削除された場合、メールボックスは非アクティブなメールボックスになります。 However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. また、時間ベースの電子情報開示ホールドを作成できない。 つまり、非アクティブなメールボックス内のコンテンツは、保持が削除され、非アクティブなメールボックスが削除されるまで、永遠に保持されます。 したがって、非アクティブなメールボックスには訴訟ホールドまたはアイテム保持ポリシーを使用することをお勧めします。
+Microsoft 365 コンプライアンス センター の電子情報開示ケースに関連付けられた保留リストがメールボックスに配置され、メールボックスまたはユーザーのアカウントが削除された場合、メールボックスは非アクティブなメールボックスになります。 However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. また、時間ベースの電子情報開示ホールドを作成できない。 つまり、非アクティブなメールボックス内のコンテンツは、保持が削除され、非アクティブなメールボックスが削除されるまで、永遠に保持されます。 したがって、非アクティブなメールボックスには訴訟ホールドまたはアイテム保持ポリシーを使用することをお勧めします。
 
 電子情報開示ケースとホールドの詳細については、「電子情報開示ケース [」を参照してください](./get-started-core-ediscovery.md)。
 

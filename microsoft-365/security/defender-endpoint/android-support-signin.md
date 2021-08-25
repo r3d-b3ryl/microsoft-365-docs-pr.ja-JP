@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2ed53a3e8feb9531e4cb75bc9531718d33528870
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 38f7ff40416835e9908757456520f0a90a745dfd
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246417"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508276"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -38,9 +38,10 @@ ms.locfileid: "58246417"
 
 オンボーディング中に、アプリがデバイスにインストールされた後にサインインの問題が発生する可能性があります。
 
-この記事では、サインオンの問題に対処するためのソリューションを提供します。  
+この記事では、サインオンの問題に対処するためのソリューションを提供します。
 
 ## <a name="sign-in-failed---unexpected-error"></a>サインインに失敗しました - 予期しないエラー
+
 **サインインに失敗しました: 予期しない***エラーが発生した場合は、後で試してください*
 
 ![サインインに失敗したエラーのイメージ 予期しないエラー](images/f9c3bad127d636c1f150d79814f35d4c.png)
@@ -81,12 +82,11 @@ Google Play ストアから最新バージョン[とMicrosoft Authenticator](htt
 
 **適用対象:** 特定の OEM のみ
 
--   **Xiaomi**
+- **Xiaomi**
 
 Android 用 Defender for Endpoint によって検出されるフィッシングや有害な Web の脅威は、一部の Xiaomi デバイスではブロックされません。 次の機能は、これらのデバイスでは機能しません。
 
 ![安全でないと報告されたサイトの画像](images/0c04975c74746a5cdb085e1d9386e713.png)
-
 
 **原因:**
 
@@ -102,39 +102,41 @@ Xiaomi デバイスで必要なアクセス許可を有効にします。
 
 - バックグラウンドで実行中にポップアップ ウィンドウを表示します。
 
-
 ## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>一部の OEM デバイスでのオンボーディング中に '永続的な保護' のアクセス許可を許可できない
 
 **適用対象:** 特定の OEM デバイスのみ。
 
--   **Xiaomi with Android 11** 
+- **Xiaomi with Android 11**
 
 Defender App は、アプリのオンボーディングの一環としてデバイスに対するバッテリーの最適化/永続的な保護のアクセス許可を求め、許可を選択すると、アクセス許可を設定できなかったというエラーが返されます。 これは、"Permanent Protection" と呼ばれる最後のアクセス許可にのみ影響します。 
- 
-**原因:** Xiomi は Android 11 のバッテリー最適化のアクセス許可を変更しました。 Defender は、バッテリーの最適化を無視するようにこの設定を構成することを許可されません。
 
-**ソリューション:** OEM と一緒に、アプリのオンボーディング画面からこのアクセス許可を有効にするソリューションを探しています。 この問題が解決された場合は、ドキュメントを更新します。
+**原因:**
+
+Xiomi は Android 11 のバッテリー最適化のアクセス許可を変更しました。 Defender は、バッテリーの最適化を無視するようにこの設定を構成することを許可されません。
+
+**解決方法:**
+
+OEM と一緒に、アプリのオンボーディング画面からこのアクセス許可を有効にするソリューションを探しています。 この問題が解決された場合は、ドキュメントを更新します。
 ユーザーは、次の手順に従って、デバイス設定から同じアクセス許可を有効にできます。 
 
 1. デバイスの **[設定]** に移動します。
-   
+
 2. [バッテリーの最適化] を **検索して選択します**。
-   
+
    ![[バッテリーの最適化] を検索して選択します。](images/search-battery-optimisation.png)
 
 3. [ **アプリの特別なアクセス] で**、[バッテリーの **最適化] を選択します**。
-   
+
    ![[アプリの特別なアクセス] で、[バッテリーの最適化] を選択します。](images/special-app-access.png)
 
 4. [ドロップダウン] を [すべてのアプリ] **に変更します**。
 
-   ![[すべてのアプリ] を表示するドロップダウンを変更します。](images/show-all-apps-2.png)
+   ![[すべてのアプリ] を表示するドロップダウンを変更するには、手順 1 を実行します。](images/show-all-apps-2.png)
 
-   ![[すべてのアプリ] を表示するドロップダウンを変更します。](images/show-all-apps-1.png)
+   ![[すべてのアプリ] を表示するドロップダウンを変更するには、手順 2 を実行します。](images/show-all-apps-1.png)
 
 5. [Microsoft Defender Endpoint] を見つけて、[ **最適化しない] を選択します**。
 
    ![[Microsoft Defender Endpoint] を見つけて、[最適化しない] を選択します。](images/select-dont-optimise.png)
-
 
 [Microsoft Defender Endpoint オンボーディング] 画面に戻り、[ **許可**] を選択すると、ダッシュボード画面にリダイレクトされます。

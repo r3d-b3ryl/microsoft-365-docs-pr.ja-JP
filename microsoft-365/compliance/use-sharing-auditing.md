@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 管理者は、組織外のユーザーと共有されるリソースを識別するために、Microsoft 365監査ログで共有監査を使用する方法について学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e77d02351763caee74137108a8d4f7b6a6f7bd3dd59abc8ce312a9290e6a7789
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 54041bfc9ea2c35ab241ca5509ea8c6dd1a101f2
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801487"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508228"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>監査ログで共有監査を使用する
 
@@ -94,7 +94,7 @@ ms.locfileid: "53801487"
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>手順 1: 共有イベントを検索し、CSV ファイルに結果をエクスポートする
 
-最初の手順は、監査ログで共有イベントを検索します。 監査ログの検索に関する詳細 (必要なアクセス許可を含む) については、「セキュリティ コンプライアンス センターで監査ログを検索する」を参照& [してください](search-the-audit-log-in-security-and-compliance.md)。
+最初の手順は、監査ログで共有イベントを検索します。 監査ログの検索に関する詳細 (必要なアクセス許可を含む) については、「監査ログの検索 [」を参照してください](search-the-audit-log-in-security-and-compliance.md)。
   
 1. <https://compliance.microsoft.com> に移動します。
 

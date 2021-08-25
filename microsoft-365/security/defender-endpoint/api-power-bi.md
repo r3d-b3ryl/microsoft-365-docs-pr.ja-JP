@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 19ef2336983f315af5731fc1cf166ffef4a014bd5c9ddcb660e8cb90ef040e03
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e64ccef09af6a8ab9ff3f798a0754a605a7f122
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847708"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507748"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>ユーザー設定を使用してカスタム レポートをPower BI
 
@@ -47,7 +47,7 @@ ms.locfileid: "53847708"
 
 - Microsoft ファイルを開Power BI
 
-- [データ **の空のクエリ**  >  **の取得] をクリックします。**
+- [データ **の空のクエリ** \> **の取得] をクリックします。**
 
   ![空のクエリを作成するイメージ](images/power-bi-create-blank-query.png)
 
@@ -101,7 +101,7 @@ ms.locfileid: "53847708"
 
     ![編集資格情報のイメージ0](images/power-bi-edit-credentials.png)
 
-- [**組織アカウント]**  >  **[サインイン] の選択**
+- [ **組織アカウント]** \> **[サインイン] の選択**
 
     ![set credentials1 のイメージ](images/power-bi-set-credentials-organizational.png)
 
@@ -142,7 +142,7 @@ ms.locfileid: "53847708"
 
 レポート サンプルの Microsoft Defender for Endpoint Power BI表示します。 詳細については、「Browse [code samples 」を参照してください](/samples/browse/?products=mdatp)。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [エンドポイント API の Defender](apis-intro.md)
 - [高度な追求 API](run-advanced-query-api.md)

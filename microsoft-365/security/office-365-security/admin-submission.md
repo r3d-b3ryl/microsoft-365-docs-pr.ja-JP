@@ -1,5 +1,5 @@
 ---
-title: 申請の管理
+title: 提出を管理する
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Microsoft 365 Defender ポータルの Submits ポータルを使用して、不審なメール、フィッシングメール、スパム、その他有害な可能性のあるメッセージ、URL、および電子メールの添付ファイルを Microsoft に提出して再スキャンする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13520774191e9b593f962b8291c873303ddf8580
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: cb8df2eba816a5d70804bf47190c094ac9790073
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400153"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507628"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -37,11 +37,11 @@ ms.locfileid: "58400153"
 
 Exchange Online メールボックスを持つ組織では、管理者は Microsoft 365 Defender ポータルの Submits ポータルを使用して、電子メール メッセージ、URL、添付ファイルを Microsoft に送信してスキャンできます。 Microsoft 365
 
-電子メール メッセージを送信すると、次の情報が表示されます。
+分析用に電子メール メッセージを送信すると、次の情報が表示されます。
 
 - **電子メール認証チェック**: 電子メール認証が配信された際に合格または失敗したかどうかの詳細。
 - **ポリシーヒット**: テナントへの受信メールを許可またはブロックした可能性があるポリシーに関する情報で、サービス フィルターの評決を上書きします。
-- **ペイロード評価/デトレーション**: メッセージ内の URL と添付ファイルの検査。
+- **ペイロード評価/発起**: メッセージ内の URL と添付ファイルの最新の検査。
 - **Grader 分析**: メッセージが悪意のあるかどうかを確認するために、人間の採点者が行うレビュー。
 
 > [!IMPORTANT]

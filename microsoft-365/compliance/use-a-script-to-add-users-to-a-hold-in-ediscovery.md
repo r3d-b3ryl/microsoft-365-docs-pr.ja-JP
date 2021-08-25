@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: スクリプトを実行して、& OneDrive for Businessの電子情報開示ケースに関連付けられた新しい保留リストにメールボックスを追加するMicrosoft 365 コンプライアンス センター。
-ms.openlocfilehash: 7f1b5f9d3b8106ca899079d22fd4a46a8270771470be5a288ef5d1f77f1a6cce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 058dae2fdffa67492b611ebe8fc9f1bdb5254706
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859769"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508240"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>スクリプトを使用してコア電子情報開示ケースの保留リストにユーザーを追加する
 
-セキュリティ & コンプライアンス センター PowerShell には、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できるコマンドレットがあります。 現在、セキュリティ & コンプライアンス センターでコア電子情報開示ケースを使用して、多数の保管担当者コンテンツの場所を保留にするのに時間と準備が必要です。 たとえば、保留リストを作成する前に、保留にOneDrive for Businessサイトごとに URL を収集する必要があります。 次に、保留に設定するユーザーごとに、メールボックスとそのユーザーのOneDrive for Businessを保留に追加する必要があります。 この記事のスクリプトを使用して、このプロセスを自動化できます。
+セキュリティ & コンプライアンス センター PowerShell には、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できるコマンドレットがあります。 現在、サーバーでコア電子情報開示ケースを使用Microsoft 365 コンプライアンス センター多数の保管担当者コンテンツの場所を保留にするのに時間と準備が必要です。 たとえば、保留リストを作成する前に、保留にOneDrive for Businessサイトごとに URL を収集する必要があります。 次に、保留に設定するユーザーごとに、メールボックスとそのユーザーのOneDrive for Businessを保留に追加する必要があります。 この記事のスクリプトを使用して、このプロセスを自動化できます。
   
 このスクリプトでは、組織の My Site ドメインの名前 (URL、既存の電子情報開示ケースの名前、ケースに関連付けられた新しい保留の名前、保留するユーザーの電子メール アドレスの一覧、クエリ ベースの保持を作成する場合に使用する検索クエリなど) を求めるプロンプトが表示されます。 `contoso` https://contoso-my.sharepoint.com) 次に、スクリプトはリスト内の各ユーザーの OneDrive for Business サイトの URL を取得し、新しい保留リストを作成し、リスト内の各ユーザーのメールボックスと OneDrive for Business サイトを保留リストに追加します。 スクリプトは、新しい保留に関する情報を含むログ ファイルも生成します。
   
@@ -43,9 +43,9 @@ ms.locfileid: "53859769"
   
 ## <a name="before-you-add-users-to-a-hold"></a>ユーザーを保留リストに追加する前に
 
-- 手順 3 でスクリプトを実行するには、セキュリティ & コンプライアンス センターの電子情報開示マネージャー役割グループのメンバーであり、SharePoint Online 管理者である必要があります。 詳細については、「Assign eDiscovery permissions in the Office [365 Security & コンプライアンス センター」を参照してください](assign-ediscovery-permissions.md)。
+- 手順 3 でスクリプトを実行するには、Microsoft 365 コンプライアンス センター および SharePoint Online 管理者の電子情報開示マネージャー役割グループのメンバーである必要があります。 詳細については、「Assign eDiscovery permissions in the Office [365 Security & コンプライアンス センター」を参照してください](assign-ediscovery-permissions.md)。
 
-- セキュリティ & コンプライアンス センターの電子情報開示ケースに関連付けられているホールドに、最大 1,000 のメールボックスと 100 のサイトを追加できます。 保留にしたいすべてのユーザーに OneDrive for Business サイトが含まれると仮定すると、この記事のスクリプトを使用して最大 100 人のユーザーを保留リストに追加できます。
+- 最大 1,000 のメールボックスと 100 のサイトを、Microsoft 365 コンプライアンス センター の電子情報開示ケースに関連付けられた保留リストに追加できます。 保留にしたいすべてのユーザーに OneDrive for Business サイトが含まれると仮定すると、この記事のスクリプトを使用して最大 100 人のユーザーを保留リストに追加できます。
 
 - 手順 2 で作成したユーザーの一覧と、手順 3 のスクリプトを同じフォルダーに保存してください。 そうすると、スクリプトの実行が容易になります。
 
@@ -91,7 +91,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 - **クエリ ベースのホールドの検索クエリ:** クエリ ベースの保留リストを作成して、指定した検索条件を満たすコンテンツのみを保留にできます。 すべてのコンテンツを保留に設定するには、検索クエリの入力を求めるメッセージが表示されたら **、Enter** キーを押します。
 
-- **ホールドをオンにするか、オンにしないか:** 作成後にスクリプトを保留にするか、スクリプトを有効にせずに保持を作成できます。 スクリプトを保留にしない場合は、セキュリティ & コンプライアンス センターで後で有効にするか、次の PowerShell コマンドを実行します。
+- **ホールドをオンにするか、オンにしないか:** 作成後にスクリプトを保留にするか、スクリプトを有効にせずに保持を作成できます。 スクリプトを保留にしない場合は、後でこのスクリプトを有効にするか、Microsoft 365 コンプライアンス センター PowerShell コマンドを実行します。
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -281,7 +281,7 @@ Write-host "Script complete!" -foregroundColor Yellow
 
 4. スクリプトから求める情報を入力します。
 
-   スクリプトはセキュリティ & コンプライアンス センター PowerShell に接続し、電子情報開示ケースに新しいホールドを作成し、リスト内のユーザーのメールボックスと OneDrive for Business を追加します。 [セキュリティ] コンプライアンス センターの[電子情報開示] ページ&ケースに移動して、新しい保留リストを表示できます。
+   スクリプトはセキュリティ & コンプライアンス センター PowerShell に接続し、電子情報開示ケースに新しいホールドを作成し、リスト内のユーザーのメールボックスと OneDrive for Business を追加します。 [電子情報開示] ページの[ケース] に移動して、Microsoft 365 コンプライアンス センターを表示できます。
 
 スクリプトの実行が完了すると、次のログ ファイルが作成され、スクリプトがあるフォルダーに保存されます。
   

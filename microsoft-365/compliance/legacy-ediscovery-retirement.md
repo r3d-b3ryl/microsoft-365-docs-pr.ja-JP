@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Placeの電子情報開示とIn-Placeホールド (および対応する PowerShell コマンドレット Exchange Online) は、2020 年前半に廃止されます。 また、Search-Mailbox v1.0 Advanced eDiscoveryおよび v1.0 も同じ期間に廃止されます。
-ms.openlocfilehash: 5fbcb980d941ddd54ce76d5a44f93e5cdd9f7e052466d01a727668ffac2c89ea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 16a43122ce16a134a6068f78dadea02ac8605625
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860081"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507234"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -56,7 +56,7 @@ Microsoft 365 コンプライアンス センター でこの新しく改善さ�
 
    - [GetHoldOnMailboxes](/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
-- [Office 365 Advanced eDiscovery v1.0](./overview-ediscovery-20.md)は、Office 365 セキュリティ & コンプライアンス センターの Core 電子情報開示ケースを通じてアクセスされる Advanced eDiscovery の最初のバージョンです。 v1.0 のAdvanced eDiscoveryは、コア電子情報開示ケースを作成および管理する機能には影響を与えかねない。
+- [Office 365 Advanced eDiscovery v1.0](./overview-ediscovery-20.md)は、Advanced eDiscovery の Core 電子情報開示ケースを通じてアクセスされる最初のバージョンMicrosoft 365 コンプライアンス センター。 v1.0 のAdvanced eDiscoveryは、コア電子情報開示ケースを作成および管理する機能には影響を与えかねない。
 
 > [!NOTE]
 > 廃止される電子情報開示機能は、クラウド ベースのバージョンの Microsoft 365およびOffice 365。 オンプレミスバージョンの電子情報開示機能は、ExchangeおよびSharePointまで引き続きサポートされます。
@@ -94,7 +94,7 @@ Microsoft 365 コンプライアンス センター でこの新しく改善さ�
 <tr class="header">
 <th>機能</th>
 <th>代替ツール</th>
-<th>コメント</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -197,7 +197,7 @@ Exchange 管理センターで 2017 年 7 月 1 日に発表された元の通�
 <tr class="header">
 <th>機能</th>
 <th>代替ツール</th>
-<th>コメント</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -276,7 +276,7 @@ PowerShell **の Search-Mailbox** コマンドレットExchange Online、2018 �
 <tr class="header">
 <th>機能</th>
 <th>代替ツール</th>
-<th>コメント</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>

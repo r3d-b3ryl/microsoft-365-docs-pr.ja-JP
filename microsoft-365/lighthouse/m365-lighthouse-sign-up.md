@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーにサインアップするMicrosoft 365 Lighthouse。
-ms.openlocfilehash: 60d78f243c757596aa5b3d493d0b79848ebe033a109858e8fd8fbd7ae6bf5f9c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80e56055a89d73f53c025de05dfc1e8dabedda78
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877793"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507892"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>アカウントにサインアップMicrosoft 365 Lighthouse
 
 > [!NOTE]
 > この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウント情報がMicrosoft 365 Lighthouse、この記事の指示に従ってサインアップしてください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - Microsoft 365 Lighthouseは、顧客テナントだけでなくパートナー テナントに展開されますが、ユーザーと顧客のテナントが Microsoft 365 Lighthouse 要件に記載されている &mdash; [要件を満たしていることを確認します](m365-lighthouse-requirements.md)。
 
@@ -49,16 +49,16 @@ ms.locfileid: "53877793"
 1. [購入 **] を選択します**。
 
     > [!NOTE]
-    > Microsoft 365 Lighthouseテナントにのみ 1 つのライセンスが必要です。 パートナーに追加のユーザーごとのライセンスは必要ありません。また、顧客テナントMicrosoft 365 Lighthouseライセンスは必要ありません。 
+    > ライトハウスには、パートナー テナントのライセンスが 1 つ必要です。 パートナーに追加のユーザーごとのライセンスは必要ありません。また、どの顧客テナントでもライトハウス ライセンスは必要ありません。 
 
-    テナントにMicrosoft 365 Lighthouseが正常に追加されたことを確認するには、Microsoft 365 Lighthouseの [製品の請求>を探Microsoft 365 管理センター。 
+    ライトハウスがテナントに正常に追加されたことを確認するには、Microsoft 365 Lighthouseの [製品の請求 **>を探** Microsoft 365 管理センター。
 
-1. ポータルにリダイレクトされない場合Microsoft 365 Lighthouseに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> 。
+1. ライトハウス ポータルにリダイレクトされない場合は、 に移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> 。
 
 1. [同意 **する] &をクリックして** 、パートナー契約の修正を完了します。
 
     > [!NOTE]
-    > サインアップが完了すると、顧客データが顧客データに表示されるのに最大で 48 時間Microsoft 365 Lighthouse。
+    > サインアップが完了すると、顧客データがライトハウスに表示されるのに最大 48 時間かかる場合があります。
 
 ## <a name="next-steps"></a>次の手順
 

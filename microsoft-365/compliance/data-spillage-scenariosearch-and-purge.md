@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 電子情報開示と検索ツールを使用して、組織内のデータ流出インシデントを管理して対応します。
-ms.openlocfilehash: 40addc161b40a4b9068fbe0c3041078086d21c6a
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 96cb6362149fe056249e7ffe2d6858785335a00c
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503133"
+ms.locfileid: "58508192"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューション シリーズ: データ流出シナリオ - 検索と削除
 
@@ -172,7 +172,7 @@ Contoso のリード情報セキュリティ担当者です。 従業員が知�
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>手順 7: 流出したデータを完全に削除する
 
-手順 6 で収集して準備したメールボックスの場所と、手順 3 で作成および絞り込みされた検索クエリを使用して、こぼれたデータを含む電子メール メッセージを検索すると、流出したデータを完全に削除できます。  前に説明したように、メッセージを削除するには、組織の管理役割グループのメンバーになるか、検索と削除の管理役割を割り当てる必要があります。 ユーザーを役割グループに追加する方法の詳細については、「[セキュリティ/コンプライアンス センターの電子情報開示のアクセス許可を割り当てる](./assign-ediscovery-permissions.md)」をご覧ください。
+手順 6 で収集して準備したメールボックスの場所と、手順 3 で作成および絞り込みされた検索クエリを使用して、こぼれたデータを含む電子メール メッセージを検索すると、流出したデータを完全に削除できます。  前に説明したように、メッセージを削除するには、組織の管理役割グループのメンバーになるか、検索と削除の管理役割を割り当てる必要があります。 役割グループにユーザーを追加する方法については、「電子情報開示のアクセス許可を割り当 [てる」を参照してください](./assign-ediscovery-permissions.md)。
 
 こぼれたメッセージを削除するには、「電子メール メッセージの [検索と削除」を参照してください](search-for-and-delete-messages-in-your-organization.md)。
 

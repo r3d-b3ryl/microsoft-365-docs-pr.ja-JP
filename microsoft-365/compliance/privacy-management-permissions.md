@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: プライバシー管理のアクセス許可を設定し、ユーザーを役割グループに割り当てる方法について説明します。
-ms.openlocfilehash: 644c32aad3e4c25e5ca74e6ae973a7305476af37
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ebdd5610253ecb5bd490eb9b8bb8beb45f8b6458
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254921"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507712"
 ---
 # <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>プライバシー管理でユーザーのアクセス許可を設定し、役割を割り当てる (プレビュー)
 
@@ -66,7 +66,7 @@ ms.locfileid: "58254921"
 
 ## <a name="privacy-management-administrators-role-group"></a>プライバシー管理管理者役割グループ
 
-この役割グループのメンバーは、構成タスクと管理タスクに重点を置き、プライバシー管理ポリシーの作成、読み取り、更新、削除、件名の要求、プライバシー管理権限、プライバシー管理設定などのプライバシー管理機能に幅広くアクセスできます。
+この役割グループのメンバーは、プライバシー管理ポリシーの作成、読み取り、更新、削除、サブジェクト権限の要求、プライバシー管理のアクセス許可、プライバシー管理設定など、プライバシー管理機能に幅広くアクセスできます。
 
 役割には、次のものが含まれます。
 
@@ -87,7 +87,7 @@ ms.locfileid: "58254921"
 
 ### <a name="privacy-management-investigators-role-group"></a>プライバシー管理の調査者役割グループ
 
-このグループのメンバーは、プライバシー管理データ調査者として機能します。 ポリシーの一致を調査し、関連付けられたファイル コンテンツを表示し、修復アクションを実行できます。 このグループは、コンテンツ エクスプローラーを介してファイルにアクセスできます。 
+このグループのメンバーは、プライバシー管理データ調査者として機能します。 ポリシーの一致を調査し、関連付けられたファイル コンテンツを表示し、修復アクションを実行できます。 このグループは、コンテンツ エクスプローラーを介してファイルにアクセスできます。
 
 役割には、次のものが含まれます。
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
 description: PST ファイルをインポートする際に、Microsoft 365 インポート サービスのインテリジェント インポート機能を使用してデータをフィルター処理するMicrosoft 365。
-ms.openlocfilehash: e7faa346e78e74246264b0751a4f8648b42aca22b0465c9bb75382136dd6b736
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f56f80f635013e785918406c3edbc64621223c2
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895572"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508048"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>PST ファイルをインポートするときに、データをフィルター処理する
 
@@ -56,7 +56,7 @@ ms.locfileid: "53895572"
     
   - [ドライブの送付を使用して PST ファイルを Office 365 にインポートする](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- ネットワーク アップロードを使用してインポート ジョブを作成すると、セキュリティ & コンプライアンス センターの [インポート] ページのインポート ジョブの状態が [分析中] に設定されます。つまり、Microsoft 365 はアップロードした PST ファイル内のデータを分析しています。 [**更新]** ![ を ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) クリックして、インポート ジョブの状態を更新します。 
+- ネットワーク アップロードを使用してインポート ジョブを作成すると、Microsoft 365 コンプライアンス センター の [インポート] ページのインポート ジョブの状態が[進行中の分析] に設定されます。つまり、Microsoft 365 はアップロードした PST ファイル内のデータを分析しています。 [**更新]** ![ を ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) クリックして、インポート ジョブの状態を更新します。 
     
 - ドライブ配布インポート ジョブの場合、Microsoft データセンター担当者がハード ドライブを受け取り、組織の Azure ストレージ領域に PST ファイルをアップロードした後、データは Microsoft 365 によって分析されます。
   
@@ -113,11 +113,11 @@ PST インポート ジョブを作成した後、次の手順に従ってデー
   
     ![データ分析情報は、フィルター設定に基づいて更新されます。](../media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. **[次へ]** をクリックします。
+    d.  [**次へ**] をクリックします。
   
     フィルター設定を示す状態ページが表示されます。 繰り返しますが、任意のフィルター設定を編集できます。
   
-    e. [データ **のインポート] を** クリックしてインポートを開始します。 インポートされるデータの合計量が表示されます。 
+    e.  [データ **のインポート] を** クリックしてインポートを開始します。 インポートされるデータの合計量が表示されます。 
   
     または
   

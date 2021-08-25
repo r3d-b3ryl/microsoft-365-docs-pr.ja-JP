@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: コンテンツ検索電子情報開示ツールを使用して、クエリを作成して、Microsoft 365データ ソースからメールボックスにインポートされたアイテムを検索します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3f493640ecb1e0e0bb03ce315055e2faac37d0a5a05b47711c29d68e13a46a6c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afed5e519b789baffca4f16b95c842ccfe575b4f
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891669"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507640"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>コンテンツ検索を使用して、カスタム パートナー コネクタによってインポートされたサードパーティのデータを検索する
 
-セキュリティ &[](content-search.md)コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用して、サードパーティのデータ ソースから Microsoft 365 内のメールボックスにインポートされたアイテムを検索できます。 インポートされたサード パーティのすべてのデータ アイテムを検索するクエリを作成するか、特定のサード パーティのデータ アイテムを検索するクエリを作成できます。 また、クエリ ベースのアイテム保持ポリシーまたはクエリ ベースの電子情報開示保持を作成して、サード パーティのデータを保持することもできます。
+コンテンツ検索電子情報開示[](content-search.md)ツールを使用して、Microsoft 365 コンプライアンス センターデータ ソースから、Microsoft 365メールボックスにインポートされたアイテムを検索できます。 インポートされたサード パーティのすべてのデータ アイテムを検索するクエリを作成するか、特定のサード パーティのデータ アイテムを検索するクエリを作成できます。 また、クエリ ベースのアイテム保持ポリシーまたはクエリ ベースの電子情報開示保持を作成して、サード パーティのデータを保持することもできます。
   
 パートナーと一緒にサード パーティ データをインポートする方法と、Microsoft 365 にインポートできるサード パーティのデータ型の一覧の詳細については、「パートナーと一緒に作業して Office 365 でサード パーティのデータをアーカイブする」[を参照してください](work-with-partner-to-archive-third-party-data.md)。
 

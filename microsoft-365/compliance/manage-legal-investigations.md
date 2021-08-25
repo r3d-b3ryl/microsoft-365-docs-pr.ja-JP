@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: 組織の法的調査を管理するには、&コンプライアンス センター Office 365電子情報開示ケースを使用します。
-ms.openlocfilehash: f422695b8d5aea05442cf4e17bf58c472caa3c54a0e0624572438bbc91472480
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 組織の法的調査を管理するには、Microsoft 365 コンプライアンス センターの電子情報開示ケースを使用します。
+ms.openlocfilehash: 9eb41a67ae4ddfd39e1d40219861e0bd279fc7b8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856057"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507676"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Microsoft 365 で法的調査を管理する
 
@@ -52,7 +52,7 @@ ms.locfileid: "53856057"
   
 ## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>ソリューションを使用して法的Advanced eDiscoveryを管理Microsoft 365
 
-このAdvanced eDiscoveryソリューションはMicrosoft 365既存の電子情報開示と分析機能に基Office 365。 *Advanced eDiscovery と* 呼ばれるこの新しいソリューションは、組織の内部および外部調査に対応するコンテンツを保存、収集、レビュー、分析、エクスポートするためのエンドツーエンドのワークフローを提供します。 また、法務チームが法的ホールド通知ワークフロー全体を管理して、ケースに関係する保管担当者と通信できます。
+このAdvanced eDiscoveryソリューションはMicrosoft 365既存の電子情報開示と分析機能に基Office 365。 *Advanced eDiscovery と* 呼ばれるこの新しいソリューションは、組織の内部および外部調査に対応するコンテンツを保存、収集、レビュー、分析、エクスポートするためのエンドツーエンドのワークフローを提供します。 また、訴訟チームが法的情報保留通知ワークフロー全体を管理して、ケースに関係するカストディアンとコミュニケーションを取ることができます。
 
 Advanced eDiscovery組織に E5 サブスクリプションがMicrosoft 365必要Office 365です。 ライセンスの詳細については、「Set [up Advanced eDiscovery」 を参照してください](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)。
 

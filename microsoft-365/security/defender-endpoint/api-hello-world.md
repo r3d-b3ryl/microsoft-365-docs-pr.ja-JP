@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5081822d31d3e127dbe6511719afdaddd6f6b4fdf078bf5c6e09aee4caff725e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ec2057eefc5cb1e8ce59138a1f5a15b7ed0fdd01
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884940"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508216"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>エンドポイント API 用 Microsoft Defender - Hello World
 
@@ -43,18 +43,21 @@ ms.locfileid: "53884940"
 ## <a name="get-alerts-using-a-simple-powershell-script"></a>簡単な PowerShell スクリプトを使用してアラートを取得する
 
 ### <a name="how-long-it-takes-to-go-through-this-example"></a>この例ではどのくらいの時間が必要ですか?
+
 2 つの手順で 5 分しかかからな
+
 - アプリケーションの登録
 - 使用例: 短い PowerShell スクリプトのコピー/貼り付けだけが必要
 
 ### <a name="do-i-need-a-permission-to-connect"></a>接続するアクセス許可が必要ですか?
+
 アプリケーション登録ステージでは、ユーザー Azure Active Directory (Azure AD) テナントにグローバル管理者の役割が必要です。 
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>手順 1 - アプリを作成Azure Active Directory
 
 1. グローバル管理者ユーザー [を使用](https://portal.azure.com) して Azure **にログオン** します。
 
-2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。
+2. [アプリの **登録Azure Active Directory** \> **新しい登録]** \> **に移動します**。
 
    ![アプリケーション登録Microsoft Azureナビゲーションのイメージ](images/atp-azure-new-app2.png)
 
@@ -62,13 +65,13 @@ ms.locfileid: "53884940"
 
 4. アプリケーションが Defender for Endpoint にアクセスし、"すべてのアラートの読み取り" アクセス許可 **を割り当てるのを許可** します。
 
-   - アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API をクリックします。組織で  >    >  WindowsDefenderATP >を使用し **、[WindowsDefenderATP] をクリックします**。 
+   - アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API をクリックします。組織で \>  \> WindowsDefenderATP >を使用し **、[WindowsDefenderATP] をクリックします**。 
 
    - **注**: WindowsDefenderATP は元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
 
    ![API アクセスと API 選択のイメージ1](images/add-permission.png)
 
-   - [**アプリケーションのアクセス許可**  >  **] Alert.Read.All >** [アクセス許可の追加 **] をクリックします。**
+   - [ **アプリケーションのアクセス許可** \> **] Alert.Read.All >** [アクセス許可の追加 **] をクリックします。**
 
    ![API アクセスと API 選択のイメージ2](images/application-permissions.png)
 

@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
-ms.openlocfilehash: bd105f1f6c75ae084ce5b60e9585ef30be1058e2e1f9f1d4ad1ba8f3241f8d8e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c67f5ff58ab62e6a2a4c42446f66b753d774dfbb
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794452"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507736"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>Microsoft 365 Defender のアラート キュー
 
@@ -32,20 +32,19 @@ ms.locfileid: "53794452"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 デバイス、ファイル、ユーザー アカウントなどのエンティティに見られる脅威を効果的に調査するために、キューを表示および管理する方法について説明します。
 
 ## <a name="in-this-section"></a>このセクションの内容
-トピック | 説明 
+
+トピック|説明
 :---|:---
-[アラート キューを表示および整理する](alerts-queue.md) | ネットワークでフラグが設定されたアラートの一覧を表示します。
-[アラートの管理](manage-alerts.md) | 状態の変更、セキュリティ操作メンバーへの割り当て、アラートの履歴の確認などのアラートを管理する方法について学習します。
-[アラートの調査](investigate-alerts.md)| ネットワークに影響を与えるアラートを調査し、その意味と解決方法を理解します。
-[ファイルの調査](investigate-files.md)| 特定のアラート、動作、またはイベントに関連付けられたファイルの詳細を調査します。 
-[デバイスの調査](investigate-machines.md)| 特定のアラート、動作、またはイベントに関連付けられているデバイスの詳細を調査します。 
-[IP アドレスの調査](investigate-ip.md) | ネットワーク内のデバイスと外部インターネット プロトコル (IP) アドレス間の通信の可能性を調べる。
-[ドメインの調査](investigate-domain.md) | ネットワーク内のデバイスとサーバーが既知の悪意のあるドメインと通信している場合は、ドメインを調査します。 
-[ユーザー アカウントの調査](investigate-user.md) | 最もアクティブなアラートを使用してユーザー アカウントを特定し、潜在的に侵害された資格情報のケースを調査します。  
-
-
+[アラート キューを表示および整理する](alerts-queue.md)|ネットワークでフラグが設定されたアラートの一覧を表示します。
+[アラートの管理](manage-alerts.md)|状態の変更、セキュリティ操作メンバーへの割り当て、アラートの履歴の確認などのアラートを管理する方法について学習します。
+[アラートの調査](investigate-alerts.md)|ネットワークに影響を与えるアラートを調査し、その意味と解決方法を理解します。
+[ファイルの調査](investigate-files.md)|特定のアラート、動作、またはイベントに関連付けられたファイルの詳細を調査します。
+[デバイスの調査](investigate-machines.md)|特定のアラート、動作、またはイベントに関連付けられているデバイスの詳細を調査します。
+[IP アドレスの調査](investigate-ip.md)|ネットワーク内のデバイスと外部インターネット プロトコル (IP) アドレス間の通信の可能性を調べる。
+[ドメインの調査](investigate-domain.md)|ネットワーク内のデバイスとサーバーが既知の悪意のあるドメインと通信している場合は、ドメインを調査します。
+[ユーザー アカウントの調査](investigate-user.md)|最もアクティブなアラートを使用してユーザー アカウントを特定し、潜在的に侵害された資格情報のケースを調査します。

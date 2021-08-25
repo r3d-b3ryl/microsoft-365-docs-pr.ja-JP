@@ -19,20 +19,20 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: コンテンツ検索とこの記事のスクリプトを使用して、メールボックスを検索し、OneDrive for Businessのサイトを検索します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01014f991ba832b54b703458ca1eac7cc40902a49bf18d2b79e4e6e89d37d49e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c6dea7423eefbbbba6efdf3b9fe2bbd320cb4d7d
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813669"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508180"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーのリストを探す
 
-セキュリティ & コンプライアンス センターには、時間Windows PowerShell電子情報開示関連のタスクを自動化できるさまざまなコマンドレットがあります。 現在、セキュリティ コンプライアンス センターでコンテンツ検索を&多数の保管担当者コンテンツの場所を検索するには、時間と準備が必要です。 検索を作成する前に、各サイトの URL をOneDrive for Businessし、各メールボックスとサイトOneDrive for Businessを検索に追加する必要があります。 今後のリリースでは、セキュリティ コンプライアンス センターで行う方が&になります。 それまでは、この記事のスクリプトを使用して、このプロセスを自動化できます。 このスクリプトでは、組織の MySite ドメインの名前 (URL の **contoso** など)、ユーザーの電子メール アドレスの一覧、新しいコンテンツ検索の名前、および使用する検索クエリを求めるメッセージが表示されます。 `https://contoso-my.sharepoint.com` スクリプトは、リスト内の各ユーザーの OneDrive for Business URL を取得し、指定した検索クエリを使用して、リスト内の各ユーザーのメールボックスと OneDrive for Business サイトを検索するコンテンツ検索を作成して開始します。
+セキュリティ & コンプライアンス センター PowerShell には、時間のかかる電子情報開示関連のタスクを自動化できる多数のコマンドレットがあります。 現在、多数の保管担当者コンテンツの場所Microsoft 365 コンプライアンス センターするコンテンツ検索を作成するには、時間と準備が必要です。 検索を作成する前に、各サイトの URL をOneDrive for Businessし、各メールボックスとサイトOneDrive for Businessを検索に追加する必要があります。 今後のリリースでは、この操作は簡単に行えるMicrosoft 365 コンプライアンス センター。 それまでは、この記事のスクリプトを使用して、このプロセスを自動化できます。 このスクリプトでは、組織の MySite ドメインの名前 (URL の **contoso** など)、ユーザーの電子メール アドレスの一覧、新しいコンテンツ検索の名前、および使用する検索クエリを求めるメッセージが表示されます。 `https://contoso-my.sharepoint.com` スクリプトは、リスト内の各ユーザーの OneDrive for Business URL を取得し、指定した検索クエリを使用して、リスト内の各ユーザーのメールボックスと OneDrive for Business サイトを検索するコンテンツ検索を作成して開始します。
   
 ## <a name="permissions-and-script-information"></a>アクセス許可とスクリプト情報
 
-- 手順 3 でスクリプトを実行するには、セキュリティ & コンプライアンス センターの電子情報開示マネージャー役割グループのメンバーであり、SharePoint Online グローバル管理者である必要があります。
+- 手順 3 でスクリプトを実行するには、Microsoft 365 コンプライアンス センター および SharePoint Online グローバル管理者の電子情報開示マネージャー役割グループのメンバーである必要があります。
 
 - 手順 2 で作成したユーザーの一覧と、手順 3 のスクリプトを同じフォルダーに保存してください。 そうすると、スクリプトの実行が容易になります。
 
@@ -62,7 +62,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 この手順でスクリプトを実行すると、次の情報を求めるメッセージが表示されます。 スクリプトを実行する前に、この情報を準備してください。
   
-- ユーザー **資格情報**- スクリプトは資格情報を使用して SharePoint Online にアクセスし、OneDrive for Business URL を取得し、リモート PowerShell を使用してセキュリティ & コンプライアンス センターに接続します。 
+- **ユーザー資格情報**- スクリプトは資格情報を使用して SharePoint Online にアクセスして OneDrive for Business URL を取得し、セキュリティ & コンプライアンス センター PowerShell に接続します。 
     
 - **MySite ドメインの名前**- MySite ドメインは、組織内のすべてのサイトOneDrive for Business含むドメインです。 たとえば、MySite ドメインの URL が次の場合は、MySite ドメインの名前を求めるメッセージがスクリプトに表示されたら **https://contoso-my.sharepoint.com**  `contoso` 入力します。 
     
@@ -70,7 +70,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
 - **コンテンツ検索の名前** - スクリプトによって作成されるコンテンツ検索の名前。 
     
-- **検索クエリ** - コンテンツ検索で使用される検索クエリが作成され、実行されます。 検索クエリの詳細については、「コンテンツ検索のキーワード クエリと [検索条件」を参照してください](keyword-queries-and-search-conditions.md)。
+- **検索クエリ** - コンテンツ検索で使用される検索クエリが作成され、実行されます。 検索クエリの詳細については、「電子情報開示のキーワード クエリと [検索条件」を参照してください](keyword-queries-and-search-conditions.md)。
 
 
 **このスクリプトを実行するには、以下の手順を実行します。**
@@ -187,4 +187,4 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
     - 検索クエリ (コンテンツの場所のすべてのアイテムを返す場合は、この空白のままにします)。
     
-    スクリプトは、各サイトの URL をOneDrive for Businessし、検索を作成して開始します。 **Get-ComplianceSearch** コマンドレットをセキュリティ & コンプライアンス センター PowerShell で実行して検索の統計情報と結果を表示するか、セキュリティ &コンプライアンス センターの [コンテンツ検索] ページに移動して検索に関する情報を表示できます。
+    スクリプトは、各サイトの URL をOneDrive for Businessし、検索を作成して開始します。 セキュリティ & コンプライアンス センター PowerShell で **Get-ComplianceSearch** コマンドレットを実行して検索の統計情報と結果を表示するか、Microsoft 365 コンプライアンス センター の[コンテンツ検索] ページに移動して検索に関する情報を表示できます。

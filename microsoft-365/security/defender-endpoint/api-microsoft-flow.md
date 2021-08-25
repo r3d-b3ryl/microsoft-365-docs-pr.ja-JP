@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: adfe076160ca9499cace6807a0f5697a3055c1534bf4d88d57fd9337a130a575
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44db65f08c84cdcce819773958881320d7c99705
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834361"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507784"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前はMicrosoft Flow)、Azure Functions
 
@@ -51,7 +51,7 @@ Microsoft Defender API には、多くの機能Flow公式のコネクタがあ�
 
 1. Microsoft Power Automate[にログインします](https://flow.microsoft.com)。
 
-2. [マイ フロー **] [**  >  **新しい**  >  **自動入力から] 空白に移動します**。
+2. [マイ フロー **] [** \> **新しい** \> **自動入力から] 空白に移動します**。
 
     ![編集資格情報のイメージ2](images/api-flow-1.png)
 

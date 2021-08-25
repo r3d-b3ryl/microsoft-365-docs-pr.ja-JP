@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 84a2cba9c2711be8812ee25d38c7c3eb19746e346e5c475270a42ff55c7645dd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a31da45e56adc8838ed85df338e423070aac1a15
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873717"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507664"
 ---
 # <a name="troubleshoot-network-protection"></a>ネットワーク保護のトラブルシューティング
 
@@ -31,10 +31,9 @@ ms.locfileid: "53873717"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-
-ネットワーク保護を [使用すると、](network-protection.md) 次のような問題が発生する可能性があります。
+この記事では、次のような場合 [に](network-protection.md)、ネットワーク保護のトラブルシューティング情報を提供します。
 
 - ネットワーク保護は、安全な Web サイトをブロックします (誤検知)
 - ネットワーク保護で疑わしい Web サイトまたは既知の悪意のある Web サイトをブロックできない (false negative)
@@ -128,6 +127,11 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 ## <a name="see-also"></a>関連項目
 
 - [ネットワーク保護](network-protection.md)
+
+- [ネットワーク保護と TCP 3 ウェイ ハンドシェイク](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
 - [ネットワーク保護を評価する](evaluate-network-protection.md)
+
 - [ネットワーク保護を有効にする](enable-network-protection.md)
+
 - [Defender for Endpoint で誤検知/負のアドレスを指定する](defender-endpoint-false-positives-negatives.md)

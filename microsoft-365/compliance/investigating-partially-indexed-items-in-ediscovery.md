@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれる) を、Exchange、SharePoint、OneDrive for Businessから管理する方法について学習します。
-ms.openlocfilehash: bd3e9f1da3b3404f1ca99d44c01fc4fa85ad391c3b0ede8889319044072bed8a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 173ff913e9e355e9032e83d5c197a4ced9865257
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860221"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507270"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックス付きアイテムを調査する
 
@@ -94,7 +94,7 @@ ms.locfileid: "53860221"
   
 インデックス作成エラーの一覧と、エラーの考えられる原因の説明を次に示します。
   
-| エラー タグ | Description |
+| エラー タグ | 説明 |
 |:-----|:-----|
 | `attachmentcount` <br/> |電子メール メッセージの添付ファイルが多すぎて、これらの添付ファイルの一部が処理されません。  <br/> |
 | `attachmentdepth` <br/> |コンテンツレトリバーとドキュメント パーサーは、他の添付ファイル内に入れ子になった添付ファイルのレベルが多すぎます。 これらの添付ファイルの一部は処理されません。  <br/> |
@@ -123,7 +123,7 @@ ms.locfileid: "53860221"
 
    ```powershell
      write-host "**************************************************"
-     write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "     Security & Compliance Center PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "**************************************************"
      " " 
@@ -164,7 +164,7 @@ ms.locfileid: "53860221"
      }
    ```
 
-2. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/exchange-online-powershell)。
+2. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/exchange-online-powershell)。
 
 3. [セキュリティ & コンプライアンス センター PowerShell] で、手順 1 でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 
@@ -177,7 +177,7 @@ ms.locfileid: "53860221"
 ![部分的にインデックスが作成された電子メール アイテムへの組織の露出に関するレポートを生成するスクリプトからの出力の例](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
 
 > [!NOTE]
-> 次の点に注意してください。
+> 以下の点に注意してください。
 >  
 > - 電子メール アイテムの総数とサイズ、および部分的にインデックスが作成された電子メール アイテムの組織の比率 (カウントとサイズ別)。
 > 

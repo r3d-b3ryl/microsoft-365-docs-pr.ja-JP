@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1b121ca196ba1b416b0031e3a0a7a8516bc7299
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b19b3c23716e7a9b1f78b82b3663271310603df8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256506"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508312"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>高度Microsoft 365 Defenderイベントを Azure イベント ハブにストリーミングするように構成する
 
@@ -39,7 +39,7 @@ ms.locfileid: "58256506"
 
 2. Azure テナントに [ログイン](https://ms.portal.azure.com/)し、[サブスクリプション] > サブスクリプション > リソース プロバイダー> **Microsoft.インサイト** に登録します。
 
-3. イベント ハブ名前空間を作成し、[イベント ハブ] **>[** 追加] に移動し、予想される負荷に適した価格レベル、スループット単位、自動インフレートを選択します。 詳細については [、「Event Hubs の価格」を参照してください](https://azure.microsoft.com/pricing/details/event-hubs/)。  
+3. イベント ハブ名前空間を作成し、[イベント ハブ] **>[** 追加] に移動し、予想される負荷に適した価格レベル、スループット単位、自動インフレートを選択します。 詳細については [、「Event Hubs の価格」を参照してください](https://azure.microsoft.com/pricing/details/event-hubs/)。
 
 ### <a name="add-contributor-permissions"></a>共同作成者のアクセス許可を追加する
 
@@ -47,7 +47,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
 1. 共同作成者としてログインするユーザー Microsoft 365 Defender定義します。
 
-2. アプリケーションに接続する場合は、アプリ登録サービス プリンシパルを Reader、Azure Event Hub Data Receiver として追加します (これは、リソース グループまたはサブスクリプション レベルでも実行できます)。 
+2. アプリケーションに接続する場合は、アプリ登録サービス プリンシパルを Reader、Azure Event Hub Data Receiver として追加します (これは、リソース グループまたはサブスクリプション レベルでも実行できます)。
 
     [役割の **割り当て] > [追加と確認]** >アクセス制御 (IAM) のイベント ハブ名前空間 **に移動します**。
 
@@ -63,7 +63,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
 5. [イベント **を Azure Event Hub に転送する] を選択します**。
 
-6. イベント データを 1 つのイベント ハブにエクスポートするか、イベント ハブ名前空間内の別のイベント ハブに各イベント テーブルをエクスポートするか選択できます。 
+6. イベント データを 1 つのイベント ハブにエクスポートするか、イベント ハブ名前空間内の別のイベント ハブに各イベント テーブルをエクスポートするか選択できます。
 
 7. イベント データを 1 つのイベント ハブにエクスポートするには、イベント ハブ名とイベント ハブ **リソース ID を入力します**。
 
@@ -95,7 +95,7 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
 
 - イベントのスキーマの詳細については、「高度なMicrosoft 365 Defender概要[」を参照してください](advanced-hunting-overview.md)。
 
-- Advanced Hunting では **、DeviceInfo** テーブルに **MachineGroup** という名前の列が含まれるので、デバイスのグループが含まれる。 ここでは、すべてのイベントもこの列で装飾されます。 
+- Advanced Hunting では **、DeviceInfo** テーブルに **MachineGroup** という名前の列が含まれるので、デバイスのグループが含まれる。 ここでは、すべてのイベントもこの列で装飾されます。
 
 ## <a name="data-types-mapping"></a>データ型マッピング
 
@@ -108,10 +108,10 @@ Event Hub 名前空間が作成されると、次の処理が必要になりま�
    ```kusto
    {EventType}
    | getschema
-   | project ColumnName, ColumnType 
+   | project ColumnName, ColumnType
    ```
 
-- デバイス情報イベントの例を次に示します。 
+- デバイス情報イベントの例を次に示します。
 
   ![イベント ハブ リソース Id2 のイメージ](../defender-endpoint/images/machine-info-datatype-example.png)
 

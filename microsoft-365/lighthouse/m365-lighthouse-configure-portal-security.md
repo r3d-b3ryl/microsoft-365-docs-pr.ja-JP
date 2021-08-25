@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseセキュリティを構成する方法について説明します。
-ms.openlocfilehash: 1d9dd77fb0d8ea21985b430b00c5366d70fadbf6fc047dbd7735883bb2fb77f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9701ecc002144f791be6caad1e93230be5a83bf0
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890997"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508084"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>ポータル Microsoft 365 Lighthouseの構成
 
 > [!NOTE]
 > この記事で説明する機能はプレビューで、変更される可能性があります。要件を満たすパートナーだけが [利用できます](m365-lighthouse-requirements.md)。 組織にアカウントが設定されていない場合Microsoft 365 Lighthouse[を参照してください](m365-lighthouse-sign-up.md)Microsoft 365 Lighthouse。
 
-Managed Service Provider (MSP) がテナントにアクセス許可を委任した場合の顧客データへのアクセスの保護は、サイバーセキュリティの優先事項です。 Microsoft 365 Lighthouseポータル セキュリティの構成に役立つ必須機能とオプション機能Microsoft 365 Lighthouseがあります。
+Managed Service Provider (MSP) がテナントにアクセス許可を委任した場合の顧客データへのアクセスの保護は、サイバーセキュリティの優先事項です。 Microsoft 365 Lighthouse、ライトハウス ポータルのセキュリティを構成するのに役立つ必須機能とオプション機能の両方が付属しています。
 
 ## <a name="set-up-multifactor-authentication-mfa"></a>多要素認証 (MFA) のセットアップ
 
@@ -36,20 +36,20 @@ Managed Service Provider (MSP) がテナントにアクセス許可を委任し�
 
 > 「パスワードは関係ありませんが、MFA は重要です。 弊社の調査に基づいて、MFA を使用するとアカウントが侵害される可能性が 99.9% を超えています。
 
-ユーザーが初Microsoft 365 Lighthouseにアクセスすると、ユーザーのアカウントが既に構成されていない場合は、MFA の設定を求Microsoft 365メッセージが表示されます。 ユーザーは、必要な MFA セットアップ Microsoft 365 Lighthouse完了するまで、ユーザーはユーザーにアクセスできます。 認証方法の詳細については、「多要素認証用にサインイン[Microsoft 365を設定する」を参照してください](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)。
+ユーザーが初めてライトハウスにアクセスすると、ユーザーのアカウントにまだ構成されていない場合Microsoft 365 MFA の設定を求めるメッセージが表示されます。 必要な MFA セットアップ 手順が完了するまで、ユーザーはライトハウスにアクセスできます。 認証方法の詳細については、「多要素認証用にサインイン[Microsoft 365を設定する」を参照してください](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)。
 
 ## <a name="set-up-roles-to-manage-customer-tenants"></a>顧客テナントを管理するための役割の設定
 
-クラウド ソリューション プロバイダー (CSP) プログラムから、Microsoft 365 Lighthouseの顧客テナント データと設定へのアクセスは、管理者エージェントとヘルプデスク エージェントの役割に制限されます。
+ライトハウスの顧客テナント データと設定へのアクセスは、クラウド ソリューション プロバイダー (CSP) プログラムの管理エージェントとヘルプデスク エージェントの役割に制限されます。
 
 パートナー テナント内のユーザーが管理エージェントとヘルプデスク エージェントの役割を持っているか確認するには、[Azure AD – すべてのグループ] ページでセキュリティ [グループのメンバーシップを確認](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) します。 CSP プログラムの役割と他のアクセス許可をユーザーに割り当てる方法については、「Assign roles and permissions to users」 [を参照してください](/partner-center/permissions-overview)。 MSP として、顧客テナントへのアクセス権限をまだ委任していない場合は、「顧客のサービスまたはサブスクリプションを管理するためのアクセス許可を取得する」の記事でそれらを取得する方法について [学習](/partner-center/customers-revoke-admin-privileges)します。
 
-次の表に、管理エージェントMicrosoft 365 Lighthouseヘルプデスク エージェントの役割の顧客テナント データと設定を表示および操作するために必要な、さまざまなユーザー 設定ページとアクセス許可を示します。<br><br>
+次の表に、管理エージェントとヘルプデスク エージェントの役割の顧客テナント データと設定を表示および操作するために必要な、さまざまなライトハウス ページとアクセス許可を示します。<br><br>
 
-| Microsoft 365 Lighthouseページ | 管理者エージェントのアクセス許可 | ヘルプデスク エージェントのアクセス許可 |
+| [ライトハウス] ページ | 管理者エージェントのアクセス許可 | ヘルプデスク エージェントのアクセス許可 |
 |--|--|--|
 | ホーム | <ul><li>すべて表示する</li></ul> | <ul><li>すべて表示する</li></ul> |
-| Tenants | <ul><li>すべて表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画の表示と適用</li></ul> | <ul><li>すべて表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画の表示</li></ul> |
+| テナント | <ul><li>すべて表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画の表示と適用</li></ul> | <ul><li>すべて表示する</li><li>顧客の連絡先と Web サイトを更新する</li><li>展開計画の表示</li></ul> |
 | ユーザー | <ul><li>すべて表示する</li><li>パスワードのリセット</li><li>サインインをブロックする</li><li>MFA を有効にする</li></ul> | <ul><li>すべて表示する</li><li>パスワードのリセット</li><li>サインインをブロックする</li></ul> |
 | デバイス | <ul><li>すべて表示する</li></ul> | <ul><li>すべて表示する</li></ul> |
 | Threats | <ul><li>すべて表示する</li><li>クイック スキャンの実行</li><li>フル スキャンの実行</li><li>デバイスを再起動する</li><li>ウイルス対策の更新</li></ul> | <ul><li>すべて表示する</li></ul> |
@@ -84,8 +84,8 @@ MSP は、Azure AD Privileged Identity Management (PIM) を使用して、セキ
 
 | パートナーテナントの役割 | パートナー テナント内のアクセス許可 |
 |--|--|
-| パートナー テナントのグローバル管理者 | <ul><li>[アカウント] でMicrosoft 365 LighthouseにサインアップMicrosoft 365 管理センター。</li><li>初回実行時にパートナー契約の変更を受け入れる。</li><li>[テナント] ページで顧客テナントを表示します。\*</li><li>テナントをアクティブ化して非アクティブ化します。\*</li><li>顧客の連絡先と Web サイトを更新します。\*</li><li>タグを作成、更新、および削除します。\*</li><li>顧客テナントにタグを割り当て、削除します。\*</li></ul> |
-| 少なくとも 1 つのパートナー テナントの管理者<br> Azure ADのプロパティ セットに割り当てられている役割を指定します。<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (Azure ADロールの一覧については、「Azure AD [組み込みロール」を参照](/azure/active-directory/roles/permissions-reference)してください。 | <ul><li>サービスMicrosoft 365 Lighthouseを作成します。</li></ul> |
+| パートナー テナントのグローバル管理者 | <ul><li>[ライトハウス] にサインアップMicrosoft 365 管理センター。</li><li>初回実行時にパートナー契約の変更を受け入れる。</li><li>[テナント] ページで顧客テナントを表示します。\*</li><li>テナントをアクティブ化して非アクティブ化します。\*</li><li>顧客の連絡先と Web サイトを更新します。\*</li><li>タグを作成、更新、および削除します。\*</li><li>顧客テナントにタグを割り当て、削除します。\*</li></ul> |
+| 少なくとも 1 つのパートナー テナントの管理者<br> Azure ADのプロパティ セットに割り当てられている役割を指定します。<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (Azure ADロールの一覧については、「Azure AD [組み込みロール」を参照](/azure/active-directory/roles/permissions-reference)してください。 | <ul><li>ライトハウス サービス要求を作成します。</li></ul> |
 
 > [!NOTE]
 > 現在、表に * とマークされたアクションを実行するには、グローバル管理者が管理エージェントの役割を引き受けなければならない。

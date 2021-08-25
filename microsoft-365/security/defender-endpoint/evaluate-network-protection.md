@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f32e6be475ad61b83220a76527b625f2aa06580d6a181cdd8f8133eba2d27211
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: be5cbc03fa75d65d2c3fabbbf42594098d0d9d69
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898416"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507976"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 
@@ -51,24 +51,31 @@ ms.locfileid: "53898416"
 
 1. ユーザー Internet Explorer、Google Chrome、または任意の他のブラウザーを開きます。
 
-1. [https://smartscreentestratings2.net](https://smartscreentestratings2.net) に移動します。
+2. [https://smartscreentestratings2.net](https://smartscreentestratings2.net) に移動します。
 
 ネットワーク接続が許可され、テスト メッセージが表示されます。
 
 ![[接続がブロックされました] という通知の例: IT 管理者が、このネットワークWindows セキュリティをブロックする原因になります。 IT ヘルプ デスクにお問い合わせください。](images/np-notif.png)
 
+> [!NOTE]
+> ネットワーク保護によってサイトがブロックされている場合でも、ネットワーク接続は成功する可能性があります。 詳細については、「ネットワーク保護 [」および「TCP 3 ウェイ ハンドシェイク」を参照してください](network-protection.md#network-protection-and-the-tcp-three-way-handshake)。
+
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>イベント ビューアーでネットワーク保護イベントWindows確認する
 
 ブロックされているアプリを確認するには、Microsoft-Windows-Windows-Defender/Operational ログでイベント ビューアーを開き、イベント ID 1125 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
 
-| イベント ID | 提供/ソース | Description |
-|-|-|-|
-|5007 | Windows Defender (運用) | 設定が変更された場合のイベント |
-|1125 | Windows Defender (運用) | ネットワーク接続が監査された場合のイベント |
-|1126 | Windows Defender (運用) | ネットワーク接続がブロックされた場合のイベント |
+| イベント ID | 提供/ソース | 説明 |
+|---|---|---|
+| 5007 | Windows Defender (運用) | 設定が変更された場合のイベント |
+| 1125 | Windows Defender (運用) | ネットワーク接続が監査された場合のイベント |
+| 1126 | Windows Defender (運用) | ネットワーク接続がブロックされた場合のイベント |
 
 ## <a name="see-also"></a>関連項目
 
-* [ネットワーク保護](network-protection.md)
-* [ネットワーク保護を有効にする](enable-network-protection.md)
-* [ネットワーク保護のトラブルシューティング](troubleshoot-np.md)
+- [ネットワーク保護](network-protection.md)
+
+- [ネットワーク保護と TCP 3 ウェイ ハンドシェイク](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
+- [ネットワーク保護を有効にする](enable-network-protection.md)
+
+- [ネットワーク保護のトラブルシューティング](troubleshoot-np.md)

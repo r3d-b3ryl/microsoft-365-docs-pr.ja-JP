@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、ケースの作成と管理を開始Advanced eDiscoveryを設定する方法について説明します。 また、必要な Microsoft サブスクリプションとライセンスも説明します。 いくつかの簡単な手順を完了すると、Advanced eDiscoveryツールを使用する準備が整いました。
-ms.openlocfilehash: 1b2f7a26c96af40f28ef69cfc70d07c90b229dc86b4a78df68247c30ab4ff323
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb54b43e4361750f66371f224cd7bf6bce58d604
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814131"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508024"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>設定Microsoft 365 Advanced eDiscovery
 
@@ -42,7 +42,7 @@ Advanced eDiscovery Microsoft 365では、組織の内部および外部調査�
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>手順 2: 電子情報開示のアクセス許可を割り当てる
 
-ケースのAdvanced eDiscoveryメンバーとしてアクセスまたは追加するにはAdvanced eDiscovery適切なアクセス許可をユーザーに割り当てる必要があります。 具体的には、ユーザーをセキュリティ コンプライアンス センターの電子情報開示マネージャー役割グループのメンバー&する必要があります。 この役割グループのメンバーは、すべてのケースを作成Advanced eDiscovery管理できます。 メンバーの追加と削除、保管担当者とコンテンツの場所の保留、法的保留通知の管理、ケースに関連付けられた検索の作成と編集、レビュー セットへの検索結果の追加、レビュー セット内のデータの分析、Advanced eDiscovery ケースからのエクスポートとダウンロードを行います。
+ケースのAdvanced eDiscoveryメンバーとしてアクセスまたは追加するにはAdvanced eDiscovery適切なアクセス許可をユーザーに割り当てる必要があります。 具体的には、ユーザーを電子情報開示マネージャーの役割グループのメンバーとして追加する必要Microsoft 365 コンプライアンス センター。 この役割グループのメンバーは、すべてのケースを作成Advanced eDiscovery管理できます。 メンバーの追加と削除、保管担当者とコンテンツの場所の保留、法的保留通知の管理、ケースに関連付けられた検索の作成と編集、レビュー セットへの検索結果の追加、レビュー セット内のデータの分析、Advanced eDiscovery ケースからのエクスポートとダウンロードを行います。
 
 電子情報開示マネージャーの役割グループにユーザーを追加するには、次の手順を実行します。
 

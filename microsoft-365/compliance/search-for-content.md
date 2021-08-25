@@ -11,12 +11,12 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Microsoft 365 コンプライアンス センター のコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Skype for Business でのインスタント メッセージング会話をすばやく検索します。
-ms.openlocfilehash: 6161b84fa04b461835777ba769129b9cc32f5ab7
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 577b3af2bbeb1856f55de31123b71f2597c6604a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377967"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508300"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索する
 
@@ -72,7 +72,7 @@ Microsoft 365 コンプライアンス センター のコンテンツ検索ツ�
 
 ## <a name="use-scripts-for-advanced-scenarios"></a>高度なシナリオでスクリプトを使用する
 
-場合によっては、より高度で複雑で繰り返しのコンテンツ検索タスクを実行する必要があります。 このような場合は、セキュリティ コンプライアンス センターで PowerShell コマンドを使用する方&簡単です。 これを容易にするために、複雑なコンテンツ検索関連のタスクを完了するのに役立つ、&コンプライアンス センター PowerShell スクリプトを多数作成しました。
+場合によっては、より高度で複雑で繰り返しのコンテンツ検索タスクを実行する必要があります。 このような場合は、セキュリティ センター PowerShell でコマンドを使用する方&速くなります。 これを容易にするために、複雑なコンテンツ検索関連のタスクを完了するのに役立つ、&コンプライアンス センター PowerShell スクリプトを多数作成しました。
 
 - [ケースに対応する](use-content-search-for-targeted-collections.md) アイテムがフォルダー内にあると確信している場合に、特定のメールボックスおよびサイト フォルダー (*ターゲット コレクションと呼ばれる) を検索する
 

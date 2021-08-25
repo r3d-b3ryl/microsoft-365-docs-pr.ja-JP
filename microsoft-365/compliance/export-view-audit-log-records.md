@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: この記事では、監査ログ レコードのエクスポート、構成、およびMicrosoft 365について学習します。
-ms.openlocfilehash: 14bdd1a8a2576f622c4be63f463e5d42111fc02cd518cf488a8e4df5d39b1241
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf35f1936cebf9d3d8ba89d39f18a4977835f954
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905790"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507916"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
 
@@ -104,7 +104,7 @@ ms.locfileid: "53905790"
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>PowerShell を使用して監査ログ レコードを検索およびエクスポートする
 
-セキュリティ & コンプライアンス センターの監査ログ検索ツールを使用する代わりに、Exchange Online PowerShell の[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)コマンドレットを使用して、監査ログ検索の結果を CSV ファイルにエクスポートできます。 次に、手順 2 で説明したのと同じ手順に従って、Power Query エディターを使用して監査ログを書式設定できます。 PowerShell コマンドレットを使用する利点の 1 つは *、RecordType* パラメーターを使用して特定のサービスからイベントを検索できるという利点です。 手順 2 で説明したように、PowerShell を使用して監査レコードを CSV ファイルにエクスポートして、Power Query エディターを使用して **AuditData** 列の JSON オブジェクトを変換する例を以下に示します。
+Microsoft 365 コンプライアンス センター で監査ログ検索ツールを使用する代わりに、Exchange Online PowerShell の[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)コマンドレットを使用して、監査ログ検索の結果を CSV ファイルにエクスポートできます。 次に、手順 2 で説明したのと同じ手順に従って、Power Query エディターを使用して監査ログを書式設定できます。 PowerShell コマンドレットを使用する利点の 1 つは *、RecordType* パラメーターを使用して特定のサービスからイベントを検索できるという利点です。 手順 2 で説明したように、PowerShell を使用して監査レコードを CSV ファイルにエクスポートして、Power Query エディターを使用して **AuditData** 列の JSON オブジェクトを変換する例を以下に示します。
 
 この例では、次のコマンドを実行して、共有操作に関連SharePoint返します。
 
@@ -136,4 +136,4 @@ JSON 変換機能を使用して **AuditData** 列を複数の列に分割する
 
 - **[RecordType] 列を** フィルター処理して、特定のサービスまたは機能領域のレコードのみを表示します。 たとえば、共有に関連するイベントSharePoint表示するには **、14** (共有アクティビティによってトリガーされるレコードの列挙SharePoint選択します。 **[RecordType]** 列に表示される列挙値に対応するサービスの一覧については、「監査ログの詳細なプロパティ」[を参照してください](detailed-properties-in-the-office-365-audit-log.md)。
 
-- [操作] **列を** フィルター処理して、特定のアクティビティのレコードを表示します。 セキュリティ & コンプライアンス センターの監査ログ検索ツールで検索可能なアクティビティに対応するほとんどの操作の一覧については、「セキュリティ & コンプライアンス センターの監査ログを検索する」の「監査アクティビティ [」セクションを](search-the-audit-log-in-security-and-compliance.md#audited-activities)参照してください。
+- [操作] **列を** フィルター処理して、特定のアクティビティのレコードを表示します。 Microsoft 365 コンプライアンス センター の監査ログ検索ツールで検索可能なアクティビティに対応するほとんどの操作の一覧については、「監査ログの検索」の「監査されたアクティビティ」セクション[を参照してください](search-the-audit-log-in-security-and-compliance.md#audited-activities)。

@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 5e1d402442b2e8fe01b55cf3d3e07858d9d592dd
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 03bae05ba35b8ee332fbbb1083aa4a5763fc1cf4
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399745"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507724"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 
@@ -66,8 +66,8 @@ Intune でのポリシー展開では、OMA-URI を使用してポリシーを�
 
 |役職|説明|CSP サポート | GPO サポート | ユーザー ベースのサポート | コンピューター ベースのサポート |
 |---|---|:---:|:---:|:---:|:---:|
-|**デバイスコントロールの印刷制限を有効にする**|企業以外のプリンターを使用してユーザーの印刷をブロックする|はい|はい|はい|必要|
-|**承認済みの USB 接続印刷デバイスの一覧**\*|特定の USB プリンターを許可する|はい|はい|はい|必要|
+|**デバイスコントロールの印刷制限を有効にする**|企業以外のプリンターを使用してユーザーの印刷をブロックする|はい|はい|はい|はい|
+|**承認済みの USB 接続印刷デバイスの一覧**\*|特定の USB プリンターを許可する|はい|はい|はい|はい|
 |
 
 \* このポリシーは、[デバイスコントロールの印刷制限を **有効にする] と一緒に使用する必要があります**。
@@ -149,3 +149,36 @@ DeviceEvents
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高度な狩猟":::
+ 
+ PnP イベントを使用して、組織で使用されている USB プリンターを検索できます。
+ 
+```kusto
+//find the USB Printer VID/PID
+DeviceEvents
+| where ActionType == "PnpDeviceConnected"
+| extend parsed=parse_json(AdditionalFields)
+| extend DeviceDescription = tostring(parsed.DeviceDescription) 
+| extend PrinterDeviceId = tostring(parsed.DeviceId) 
+| extend VID_PID_Array = split(split(PrinterDeviceId, "\\")[1], "&")
+| extend VID_PID = replace_string(strcat(VID_PID_Array[0], '/', VID_PID_Array[1]), 'VID_', '')
+| extend VID_PID = replace_string(VID_PID, 'PID_', '')
+| extend ClassId = tostring(parsed.ClassId) 
+| extend VendorIds = tostring(parsed.VendorIds) 
+| where DeviceDescription == 'USB Printing Support'
+| project Timestamp , DeviceId, DeviceName, ActionType, DeviceDescription, VID_PID, ClassId, PrinterDeviceId, VendorIds, parsed
+| order by Timestamp desc
+```
+
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="高度な狩猟":::
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 

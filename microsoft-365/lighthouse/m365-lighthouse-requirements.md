@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、サービス プロバイダーで使用する要件の一覧Microsoft 365 Lighthouse。
-ms.openlocfilehash: 1d2f2812e2f22060c2e401519f18ae8dc6f1959993ef7703fa1a9add69e9ae14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2247afb35e3b0e4757d7a6786b3a6a9027491e06
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847957"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507808"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>ユーザーの要件Microsoft 365 Lighthouse
 
@@ -30,9 +30,9 @@ ms.locfileid: "53847957"
 
 Microsoft 365 Lighthouseは、Managed Service Providers (MSP) が中小企業 (SMB) のお客様に対して大規模なデバイス、データ、およびユーザーのセキュリティ保護と管理を行うのに役立つ管理ポータルです。  
 
-MSP を使用するには、クラウド ソリューション プロバイダー (CSP) プログラムに間接リセラーまたは直接請求パートナーとして登録するMicrosoft 365 Lighthouse。  
+MSP は、ライトハウスを使用するには、クラウド ソリューション プロバイダー (CSP) プログラムに間接リセラーまたはダイレクト ビル パートナーとして登録する必要があります。  
 
-さらに、各 MSP 顧客テナントは、次の要件を満Microsoft 365 Lighthouseの要件を満たす必要があります。 
+さらに、各 MSP カスタマー テナントは、次の要件を満たして、ライトハウスの対象となる必要があります。 
  
 - MSP の委任された管理者特権 (DAP) 
 - 少なくとも 1 つのMicrosoft 365 Business Premiumライセンス 

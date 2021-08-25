@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8c804aa9b557e87b15cf40721239957c122fec22
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bbc215c24c514799e617977152a7c71dd2e995e7
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247481"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507366"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府のお客様向けの Microsoft Defender for Endpoint
 
@@ -162,10 +162,9 @@ SIEM|`https://wdatp-alertexporter-us.gcc.securitycenter.windows.us`|`https://wda
 :---|:---:|:---:|:---:
 ネットワーク検出|![不要](images/svg/check-no.svg) ロール アウト|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中
 Web コンテンツ フィルタリング|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中
-統合: Azure Sentinel|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg) アラート <p> ![はい](images/svg/check-yes.svg) インシデント&生データ: プレビューで|![はい](images/svg/check-yes.svg) アラート <p> ![はい](images/svg/check-yes.svg) インシデント&生データ: プレビューで
-統合: Microsoft Cloud App Security|![はい](images/svg/check-yes.svg)|![不要](images/svg/check-no.svg) 開発中|![不要](images/svg/check-no.svg) 開発中
-統合: Microsoft コンプライアンス マネージャー|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
-統合: Microsoft Defender for Identity|![不要](images/svg/check-no.svg) ロール アウト|![不要](images/svg/check-no.svg) ロール アウト|![不要](images/svg/check-no.svg) ロール アウト
+統合: Azure Sentinel|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg) アラート <p> ![はい](images/svg/check-yes.svg) インシデント&生データ: プライベート プレビューで|![はい](images/svg/check-yes.svg) アラート <p> ![はい](images/svg/check-yes.svg) インシデント&生データ: プライベート プレビューで
+統合: Microsoft Cloud App Security|![はい](images/svg/check-yes.svg)|![不要](images/svg/check-no.svg) ロール アウト|![不要](images/svg/check-no.svg) ロール アウト
+統合: Microsoft Defender for Identity|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 統合: Microsoft Endpoint DLP|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![不要](images/svg/check-no.svg) ロール アウト
 統合: Microsoft Power Automate & Azure Logic Apps|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg) Azure Logic Apps <p> ![不要](images/svg/check-no.svg) Power Automate: 開発中
 Microsoft 脅威エキスパート|![不要](images/svg/check-no.svg) エンジニアリング バックログについて|![不要](images/svg/check-no.svg) エンジニアリング バックログについて|![不要](images/svg/check-no.svg) エンジニアリング バックログについて

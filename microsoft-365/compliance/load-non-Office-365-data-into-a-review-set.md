@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: ケース内の分析用にMicrosoft 365データをレビュー セットにインポートする方法についてAdvanced eDiscoveryします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 169b7438ced3d34f31cd793cd615ae189af52322ba67497dcc3eee950e9724ec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fe4863321997ba6b81be2257b6ef44c83bc34cb2
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807902"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508264"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>レビューセットにMicrosoft 365 以外のデータを読み込む
 
@@ -89,7 +89,7 @@ ms.locfileid: "53807902"
    > [!NOTE]
    > 前に述べたように、AzCopy v8.1 を使用して、[ファイルファイル] ページで提供されているコマンドを正常に使用アップロード **必要** があります。 指定された AzCopy コマンドが失敗した場合は、「トラブルシューティング[AzCopy in Advanced eDiscovery」 を参照してください](troubleshooting-azcopy.md)。
 
-8. [セキュリティ] コンプライアンス センターに&し、ウィザードで [次 **へ: ファイルの処理]** をクリックします。  これにより、Azure Storage の場所にアップロードされた Microsoft 365 以外のファイルの処理、テキスト抽出、インデックス作成が開始されます。  
+8. ウィザードに戻り、[次 **Microsoft 365 コンプライアンス センター: ウィザードでファイルを処理する**] をクリックします。  これにより、Azure Storage の場所にアップロードされた Microsoft 365 以外のファイルの処理、テキスト抽出、インデックス作成が開始されます。  
 
 9. [ファイルの処理] ページまたは[ジョブ] タブでファイルの処理の進行状況を追跡するには、レビュー セットに非ユーザー データMicrosoft 365を追加するという名前のジョブを **表示します**。  ジョブが完了すると、新しいファイルがレビュー セットで使用できます。
 

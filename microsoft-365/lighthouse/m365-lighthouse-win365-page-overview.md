@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) で Microsoft 365 Lighthouse 365 (クラウド PC) ページWindowsを参照してください。
-ms.openlocfilehash: 1ad05cf2cae824c0bab61635f05cbce13f6fcbd57dfcb904c0e53fd3b25e9ab0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b71beb0315c15929b20e1afd32a96bfd811a9ea9
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53907196"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507796"
 ---
 # <a name="windows-365-cloud-pcs-page-overview"></a>Windows 365 (クラウド PC) ページの概要  
 
@@ -33,7 +33,7 @@ Windows 365 は、Microsoft エンドポイント マネージャー (MEM) 管�
 365 の詳細については、「Windows [365 のWindows参照してください。](/windows-365/overview) 365 の要件のWindowsについては[、「Requirements for Windows 365」を参照してください](/windows-365/requirements)。
 
 > [!IMPORTANT]
-> 顧客テナントごとにクラウド PC をプロビジョニングするには[、MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463)に移動してクラウド PC を管理する必要Microsoft 365 Lighthouse。 Microsoft 365Lighthouse 内からプロビジョニングを行う必要があります。
+> ライトハウスでクラウド PC を管理するには [、MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) に移動して顧客テナントごとにクラウド PC をプロビジョニングする必要があります。 ライトハウス内からプロビジョニングを行う必要があります。
 
 顧客テナント用にクラウド PC をプロビジョニングすると、Microsoft 365 ホーム ページの Windows 365 カードは、プロビジョニングに失敗したクラウド PC の数やオンプレミスネットワーク接続エラーなど、アクションが必要なクラウド PC に関する簡単な通知を提供します。 詳細な状態を取得するには、Windows 365 カードのボタンを選択します (または、左側のナビゲーション ウィンドウで **Windows 365** を選択します)、Windows 365 ページを開きます。 このページから、顧客テナントに割り当てられたクラウド PC の状態の概要を取得し、管理しているすべてのクラウド PC と、そのテナントが割り当てられているテナントの一覧を表示し、顧客テナントと Azure Active Directory (Azure AD) とその状態との間のオンプレミス ネットワーク接続を表示できます。
 

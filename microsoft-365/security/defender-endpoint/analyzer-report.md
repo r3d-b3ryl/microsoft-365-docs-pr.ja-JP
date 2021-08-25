@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c2758fd51d88be2447ae6ea63ca9ff3f7349ca2f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 4027d31cd66a783b6bb83742912f94a3a017c74a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247341"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508072"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>クライアント アナライザーの HTML レポートについて
 
@@ -40,17 +40,14 @@ ms.locfileid: "58247341"
 
 ![クライアント アナライザーの結果のイメージ](images/147cbcf0f7b6f0ff65d200bf3e4674cb.png)
 
--   スクリプトのバージョンとスクリプト ランタイムの一番上に参照用の一覧が表示されます
+- スクリプトのバージョンとスクリプト ランタイムの一番上に参照用の一覧が表示されます
+- [ **デバイス情報]** セクションには、アナライザーが実行されているデバイスを一意に識別するための基本的な OS とデバイス識別子が表示されます。
+- エンドポイント **セキュリティの詳細は**、Microsoft Defender for Endpoint 関連のプロセスに関する一般的な情報を提供します(Microsoft Defender ウイルス対策センサー プロセスを含む)。 重要なプロセスが期待通りオンラインではない場合、色は赤に変わります。
 
--   [ **デバイス情報]** セクションには、アナライザーが実行されているデバイスを一意に識別するための基本的な OS とデバイス識別子が表示されます。
+  ![クライアント アナライザーの詳細な結果のイメージ](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
--   エンドポイント **セキュリティの詳細は**、Microsoft Defender for Endpoint 関連のプロセスに関する一般的な情報を提供します(Microsoft Defender ウイルス対策センサー プロセスを含む)。 重要なプロセスが期待通りオンラインではない場合、色は赤に変わります。
-
-![クライアント アナライザーの詳細な結果のイメージ](images/85f56004dc6bd1679c3d2c063e36cb80.png)
-
--   [ **結果の確認の概要]** で、アナライザーによって検出されたエラー、警告、または情報イベントの集計カウントが表示されます。
-
--   [詳細 **な結果] には** 、分析プログラムによって行われた観測値に基づいて、結果とガイダンスを含むリスト (重大度別に並べ替え) が表示されます。
+- [ **結果の確認の概要]** で、アナライザーによって検出されたエラー、警告、または情報イベントの集計カウントが表示されます。
+- [詳細 **な結果] には** 、分析プログラムによって行われた観測値に基づいて、結果とガイダンスを含むリスト (重大度別に並べ替え) が表示されます。
 
 ## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>Microsoft へのサポート チケットを開き、Analyzer の結果を含める
 

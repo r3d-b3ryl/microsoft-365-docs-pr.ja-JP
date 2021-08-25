@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: b70a2b9446d845f08ea5f309d4c1f1900d6f882e0f1da1e56f301537145dcd11
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8763d07db48f86a1c4224fc6bde4d992ef6d3701
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804471"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507556"
 ---
 # <a name="step-6-review-your-selections-to-create-your-package"></a>手順 6: 選択内容を確認してパッケージを作成します。
 
@@ -44,9 +44,9 @@ ms.locfileid: "53804471"
 
       :::image type="content" alt-text="パッケージを管理するためのイメージ。" source="Media/managepackages.png" lightbox="Media/managepackages.png":::
 
-    - テストの結果は、テストの概要、セキュリティ更新プログラムの結果、機能更新プログラムの結果ページをスケジュールされた間隔で確認できます。多くの場合、アップロード後数日後に開始します。 
-
-    - テストに失敗した場合は、新しいパッケージをアップロードする必要があります。
+    - 成功したテストでは、テストの概要、セキュリティ更新プログラムの結果、機能更新プログラムの結果ページをスケジュールされた間隔で確認できます。多くの場合、アップロードの数日後に開始します。 
+  
+    - テストに失敗した場合は、新しいパッケージをアップロードする必要があります。 
 
       テスト ログをダウンロード **して、セキュリティ** 更新プログラムの結果と機能更新プログラムの結果ページ **から詳細な分析を行** います。
 

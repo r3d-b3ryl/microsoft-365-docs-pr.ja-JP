@@ -17,23 +17,23 @@ search.appverid:
 ms.assetid: ''
 description: ケース内Advanced eDiscovery管理ツールを使用して、アクティビティに簡単にアクセスして検索します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2b13bfb05e212727faee52e29ac7ee52a02e4a96b1c43329933b1a91754b0d95
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43ec73c87efaad51711879e0574d03f571675523
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801521"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507832"
 ---
 # <a name="view-custodian-audit-activity"></a>カストディアンの監査アクティビティを表示する
 
-ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 Advanced eDiscoveryは、セキュリティ コンプライアンス センターの既存の監査ログ検索ツール&統合されています。 この埋め込みエクスペリエンスを使用すると、Advanced eDiscovery カストディアン管理ツールを使用して、ケース内の保管担当者のアクティビティに簡単にアクセスして検索することで、調査を容易に行うことができます。
+ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 Advanced eDiscoveryは、既存の監査ログ検索ツールと統合Microsoft 365 コンプライアンス センター。 この埋め込みエクスペリエンスを使用すると、Advanced eDiscovery カストディアン管理ツールを使用して、ケース内の保管担当者のアクティビティに簡単にアクセスして検索することで、調査を容易に行うことができます。
 
 ## <a name="get-permissions"></a>アクセス許可の取得
 
 監査ログを検索するには、Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらの役割は Exchange 管理センターの [アクセス許可] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 最小限の特権レベルで Advanced eDiscovery 監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、閲覧限定の監査ログまたは監査ログの役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。 詳細については、「Exchange Online で役割グループを管理する」を参照してください。
 
 > [!IMPORTANT]
-> セキュリティ & コンプライアンス センターの [アクセス許可] ページでユーザーに View-Only 監査ログまたは監査ログの役割を割り当てると、監査ログを検索することはできません。 Exchange Online でアクセス許可を割り当てる必要があります。 これは、監査ログの検索に使用される基本のコマンドレットが ExchangeOnline コマンドレットだからです。
+> Microsoft 365 コンプライアンス センターの [アクセス許可] ページでユーザーに View-Only Audit Logs (閲覧限定の監査ログ) または Audit Logs (監査ログ) の役割を割り当てると、監査ログを検索できなくなります。 Exchange Online でアクセス許可を割り当てる必要があります。 これは、監査ログの検索に使用される基本のコマンドレットが ExchangeOnline コマンドレットだからです。
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>手順 1: 保管担当者によって実行されるアクティビティの監査ログを検索する
 
@@ -110,4 +110,4 @@ ms.locfileid: "53801521"
 
 3. エクスポート オプションを選択すると、ウィンドウの下部にメッセージが表示され、CSV ファイルを開く、ダウンロード フォルダーに保存する、または特定のフォルダーに保存するように求めるメッセージが表示されます。
 
-監査ログ検索結果の表示、フィルター処理、またはエクスポートの詳細については、「Security & コンプライアンス センターで監査ログ [を検索する」を参照してください](search-the-audit-log-in-security-and-compliance.md)。
+監査ログ検索結果の表示、フィルター処理、またはエクスポートの詳細については、「監査ログの検索 [」を参照してください](search-the-audit-log-in-security-and-compliance.md)。

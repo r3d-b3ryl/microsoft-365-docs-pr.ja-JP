@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Managed Service Providers (MSP) の場合は、Microsoft 365 Lighthouseテナントを 1 つの場所でセキュリティで保護および管理する方法について説明します。
-ms.openlocfilehash: c6e92f3bdd15fe3b71a49c1c09155054dfe75c6737838ccd8bdcb1d3367f16a5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bde1aeddefd9ab29a77e324a050fc54c276c66b3
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878013"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507604"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>概要 Microsoft 365 Lighthouse
 
@@ -30,14 +30,14 @@ ms.locfileid: "53878013"
 
 Microsoft 365 Lighthouse は、管理サービス プロバイダー (MSP) が、Microsoft 365 Business Premium を使用している中小企業 (SMB) のお客様向けデバイス、データ、およびユーザーを大規模に保護および管理するのに役立つ管理ポータルです。 
 
-Microsoft 365 Lighthouseは、SMB のお客様に合わせたセキュリティ構成基準を推奨し、すべての顧客環境でマルチテナント ビューを提供することで、Microsoft 365 Business Premium テナントのオンボーディングを簡素化します。 このMicrosoft 365 Lighthouse、MSP は顧客の管理を拡大し、最も重要な点に集中し、リスクをすばやく見つけて調査し、顧客を健全で安全な状態に保つアクションを実行できます。
+ライトハウスは、SMB Microsoft 365 Business Premiumに合わせたセキュリティ構成基準を推奨し、すべての顧客環境でマルチテナント ビューを提供することで、Microsoft 365 Business Premium テナントのオンボーディングを簡素化します。 ライトハウスを使用すると、MSP は顧客の管理を拡大し、最も重要な点に集中し、リスクをすばやく見つけて調査し、顧客を健全で安全な状態に保つアクションを実行できます。
 
-サービスと接続されたデバイスの管理にMicrosoft 365 LighthouseにMicrosoft 365コストは発生します。 Microsoft 365 Lighthouseプレビュー中で、クラウド ソリューション プロバイダー (CSP) プログラムに登録され、SMB のお客様にサブスクリプションを提供する MSP でMicrosoft 365 Business Premiumできます。
+ライトハウスを使用してサービスと接続されたデバイスを管理するためにMicrosoft 365コストは発生します。 ライトハウスは現在プレビュー中で、クラウド ソリューション プロバイダー (CSP) プログラムに登録され、SMB のお客様にサービスを提供Microsoft 365 Business Premiumしています。
 
-Microsoft CSP チャネル Microsoft 365 Lighthouseパートナーが使用しているユーザーがサポートしているMicrosoft 365 Business Premium使用します。 これには、CSP パートナーが Microsoft と直接取引することや、間接プロバイダー (ディストリビューター) を介して取引するパートナーが含まれます。 
+Microsoft CSP チャネル パートナーによるライトハウスの使用は、お客様がサポートされているMicrosoft 365 Business Premium使用します。 これには、CSP パートナーが Microsoft と直接取引することや、間接プロバイダー (ディストリビューター) を介して取引するパートナーが含まれます。 
 
 > [!IMPORTANT] 
-> この機能Microsoft 365 Lighthouse、MSP とその顧客テナントは、次の要件に記載されている要件[Microsoft 365 Lighthouse必要があります](m365-lighthouse-requirements.md)。     
+> ライトハウスを使用するには、MSP とその顧客テナントが、この要件に記載されている要件Microsoft 365 Lighthouse[必要があります](m365-lighthouse-requirements.md)。     
 
 CSP プログラムの詳細については、「CSP プログラムの概要[」クラウド ソリューション プロバイダー参照してください](/partner-center/csp-overview)。
 
@@ -46,7 +46,7 @@ CSP プログラムの詳細については、「CSP プログラムの概要[�
 
 ## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse利点
 
-Microsoft 365 Lighthouse MSP は、次の方法で、Microsoft 365接続されたエンドポイントのセキュリティ保護と管理をサポートします。
+ライトハウスは、MSP が次の方法で、Microsoft 365接続されたエンドポイントをセキュリティで保護および管理するのに役立ちます。
 
 - 技術者が一貫した一連の手順に従って顧客テナントをセキュリティで保護および構成できるよう、テナントの展開の手順を提供します。 
 - 中小企業テナントを対象としたベスト プラクティスを規定する既定の SMB セキュリティ ベースラインを使用する。 

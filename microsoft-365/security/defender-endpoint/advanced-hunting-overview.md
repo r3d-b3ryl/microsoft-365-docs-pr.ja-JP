@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c824afa68b42639a82d46d70f13f4a70b266a0492f1d41ebf463cb7975bff7f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d52fe03786e4fff94ca08fdc7e5c7951a0d6e33
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829869"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506509"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>高度な狩猟で脅威を積極的に探す
 
@@ -30,7 +30,7 @@ ms.locfileid: "53829869"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
 高度な捜索は、クエリ ベースの脅威の捜索ツールで、最大 30 日間のロー データを検索できます。 ネットワーク内のイベントを事前に検査して、脅威インジケーターとエンティティを特定できます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対する拘束されていない検出が可能です。
 
@@ -61,13 +61,12 @@ ms.locfileid: "53829869"
 |**クエリ結果を使用する方法について**|グラフと、結果を表示またはエクスポートするさまざまな方法について学習します。 クエリをすばやく調整し、詳細な情報を取得するためにドリルダウンする方法について説明します。|[クエリ結果を操作する](advanced-hunting-query-results.md)|
 |**スキーマを理解する**|スキーマとその列のテーブルについて、高レベルで十分に理解してください。 クエリを作成するときにデータを検索する場所について説明します。|[スキーマ リファレンス](advanced-hunting-schema-reference.md)|
 |**定義済みクエリを使用する**|さまざまな脅威の捜索シナリオを網羅する定義済みクエリのコレクションを調べます。|[共有クエリ](advanced-hunting-shared-queries.md)|
-|**クエリを最適化し、エラーを処理する**|効率的でエラーフリーのクエリを作成する方法を理解します。|- [クエリのベスト プラクティス](advanced-hunting-best-practices.md)<br>- [エラーの処理](advanced-hunting-errors.md)|
-|**最も完全なカバレッジを取得する**|監査設定を使用して、組織のデータ範囲を向上します。|- [高度な狩猟範囲の拡張](advanced-hunting-extend-data.md)|
-|**クイック調査の実行**|高度な検索クエリをすばやく実行して、疑わしいアクティビティを調査します。|- [go hunt を使用してエンティティまたはイベント情報をすばやく *検索する*](advanced-hunting-go-hunt.md)|
-|**脅威を含め、侵害に対処する**|ファイルの quarantining、アプリの実行の制限、その他のアクションによる攻撃への対応|- [高度な検索クエリの結果に対してアクションを実行する](advanced-hunting-take-action.md)|
-|**検出ルールの作成**|高度な検索クエリを使用してアラートをトリガーし、応答アクションを自動的に実行する方法について説明します。|- [カスタム検出の概要](overview-custom-detections.md)<br>- [カスタム検出ルール](custom-detection-rules.md)|
+|**クエリを最適化し、エラーを処理する**|効率的でエラーフリーのクエリを作成する方法を理解します。|[クエリのベスト プラクティス](advanced-hunting-best-practices.md) <p> [エラーを処理する](advanced-hunting-errors.md)|
+|**最も完全なカバレッジを取得する**|監査設定を使用して、組織のデータ範囲を向上します。|[高度な狩猟範囲の拡張](advanced-hunting-extend-data.md)|
+|**クイック調査の実行**|高度な検索クエリをすばやく実行して、疑わしいアクティビティを調査します。|[go hunt を使用してエンティティまたはイベント情報をすばやく *検索する*](advanced-hunting-go-hunt.md)|
+|**脅威を含め、侵害に対処する**|ファイルの quarantining、アプリの実行の制限、その他のアクションによる攻撃への対応|[高度な検索クエリの結果に対してアクションを実行する](advanced-hunting-take-action.md)|
+|**検出ルールの作成**|高度な検索クエリを使用してアラートをトリガーし、応答アクションを自動的に実行する方法について説明します。|[カスタム検出の概要](overview-custom-detections.md) <p> [カスタム検出ルール](custom-detection-rules.md)|
 |
-
 
 ## <a name="data-freshness-and-update-frequency"></a>データの鮮度と更新頻度
 

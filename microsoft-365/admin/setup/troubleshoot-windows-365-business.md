@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 365 Business Cloud PC のセットアップWindowsトラブルシューティングする方法について説明します。
 ms.date: 08/13/2021
-ms.openlocfilehash: 420046e063bbf12ad9c3dc4cbe9bf4dca289168a
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: b639453ef55960a3526fa8354dc95efb2653f9c5
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58357495"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507342"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>365 Windows PC セットアップの問題のトラブルシューティング
 
@@ -47,9 +47,9 @@ ms.locfileid: "58357495"
 4. ユーザー **が Azure デバイスにデバイス** を参加ADに設定されていない場合は、[すべて]を選択し、[保存] を **選択します**。
 5. 手順 [2 に進みます。CloudPCBRT システム アカウントがアクティブな状態を確認します](#step-2-verify-that-the-cloudpcbrt-system-account-is-active)。
 
-## <a name="step-2-verify-that-the-cloudpcbrt-system-account-is-active"></a>手順 2. CloudPCBRT システム アカウントがアクティブな状態を確認する
+## <a name="step-2-verify-that-the-cloudpcbrt-system-account-is-active"></a>手順 2。 CloudPCBRT システム アカウントがアクティブな状態を確認する
 
-組織で初Windows 365 ライセンスが割り当てられると、"CloudPCBPRT" というシステム アカウントが Azure AD で自動的に作成されます。 このアカウントを削除しない。 システム アカウントが削除された場合、セットアップは失敗します。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能や組織へのアクセス権を持たなかったりします。 このシステム アカウントを削除する場合は、新しいサポート要求を開き、復元する必要があります。
+組織で初Windows 365 ライセンスが割り当てられると、"CloudPCBPRT" というシステム アカウントが Azure AD で自動的に作成されます。 このアカウントを削除したり、アカウントに変更を加え (名前や UPN の変更など) したりしない。 システム アカウントが削除された場合、セットアップは失敗します。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能や組織へのアクセス権を持たなかったりします。 このシステム アカウントを削除する場合は、新しいサポート要求を開き、復元する必要があります。
 
 Azure サイトで CloudPCBRT システム アカウントがアクティブAD、次の手順を実行します。
 
@@ -105,7 +105,7 @@ Microsoft Intune を既に使用している場合や、Windows 365 クラウド
 3. [構成 **] ページの** **[MDM** ユーザー スコープ] の横にある [ **一部]** または [ **すべて**] を選択し、[保存] を **選択します**。
 4. 左側のナビゲーションの [**管理] で、[モビリティ**(MDM と **MAM)]** を選択し、[登録] をMicrosoft Intuneし、**手順** 3 を繰り返します。
 
-また、Intune ライセンスを CloudPCBPRT システム アカウントに割り当て、クラウド PC を割り当てられている他のすべてのユーザーに割り当てる必要があります。
+クラウド PC が割り当てられているユーザーには、Intune ライセンスが割り当てられている必要があります。 CloudPCBPRT システム アカウントに Intune ライセンスを割り当てる必要はない。
 
 > [!IMPORTANT]
 > ライセンスを割り当てるには、グローバル管理者またはライセンス管理者か、ライセンス権限を持つロールが必要です。

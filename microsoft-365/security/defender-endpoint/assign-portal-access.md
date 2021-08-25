@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
 ms.technology: mde
-ms.openlocfilehash: 0970314509efbcfad79d7f9f52f5ae3605f3d8fe538a18b142340fe6a2cf8d1f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2d290352006b09be0d15a5df55533500db2fadb0
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857825"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507772"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>ユーザー アクセスをユーザー に割り当Microsoft Defender セキュリティ センター
 
@@ -35,8 +35,7 @@ ms.locfileid: "53857825"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint では、アクセス許可を管理する 2 つの方法がサポートされています。
 
@@ -45,12 +44,12 @@ Defender for Endpoint では、アクセス許可を管理する 2 つの方法�
 
 > [!NOTE]
 > 基本的なアクセス許可が既に割り当てられている場合は、いつでも RBAC に切り替えられます。 スイッチを作成する前に、次の点を考慮してください。
-> 
-> - フル アクセスを持つユーザー (Azure AD のグローバル管理者またはセキュリティ管理者ディレクトリ ロールが割り当てられているユーザー) には、既定の Defender for Endpoint 管理者ロールが自動的に割り当てられます。また、フル アクセス権も持っています。 RBAC に切りAD後、追加の Azure ユーザー グループを Defender for Endpoint 管理者ロールに割り当てることができます。  Defender for Endpoint 管理者ロールに割り当てられたユーザーだけが、RBAC を使用してアクセス許可を管理できます。 
+>
+> - フル アクセスを持つユーザー (Azure AD のグローバル管理者またはセキュリティ管理者ディレクトリ ロールが割り当てられているユーザー) には、既定の Defender for Endpoint 管理者ロールが自動的に割り当てられます。また、フル アクセス権も持っています。 RBAC に切りAD後、追加の Azure ユーザー グループを Defender for Endpoint 管理者ロールに割り当てることができます。 Defender for Endpoint 管理者ロールに割り当てられたユーザーだけが、RBAC を使用してアクセス許可を管理できます。 
 > - 読み取り専用アクセス権 (Security Readers) を持つユーザーは、役割が割り当てられるまでポータルへのアクセスを失います。 RBAC の下で役割AD割り当てできるのは Azure ユーザー グループのみです。
 > - RBAC に切り替えても、基本的なアクセス許可管理を使用して切り替えすることはできません。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [基本的なアクセス許可を使用してポータルにアクセスする](basic-permissions.md)
 - [RBAC を使用してポータル アクセスを管理する](rbac.md)

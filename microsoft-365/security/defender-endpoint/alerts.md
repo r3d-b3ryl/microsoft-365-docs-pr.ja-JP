@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77e7b86de5369b6a65224579de214d32c1f628e3
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377979"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508252"
 ---
 # <a name="alert-resource-type"></a>アラート リソースの種類
 
@@ -36,55 +36,64 @@ ms.locfileid: "58377979"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="methods"></a>メソッド
 
-メソッド |戻り値の型 |説明
-:---|:---|:---
-[警告の取得](get-alert-info-by-id.md) | [アラート](alerts.md) | 1 つのアラート [オブジェクトを取得](alerts.md) します。
-[警告の一覧表示](get-alerts.md) | [アラート](alerts.md) コレクション | アラート [コレクションを一覧表示](alerts.md) します。
-[警告の更新](update-alert.md) | [アラート](alerts.md) | 特定のアラートを [更新します](alerts.md)。
-[バッチ更新の通知](batch-update-alerts.md) | | アラートのバッチを更新 [します](alerts.md)。
-[アラートの作成](create-alert-by-reference.md)|[アラート](alerts.md)|Advanced Hunting から取得したイベント データに基づいてアラート [を作成します](run-advanced-query-api.md)。
-[関連するドメインを一覧表示する](get-alert-related-domain-info.md)|ドメイン コレクション| アラートに関連付けられている URL を一覧表示します。
-[関連ファイルを一覧表示する](get-alert-related-files-info.md) | [ファイル](files.md) コレクション |  アラートに [関連](files.md) 付けられているファイル エンティティを一覧表示 [します](alerts.md)。
-[関連する IPs の一覧](get-alert-related-ip-info.md) | IP コレクション | アラートに関連付けられているリストの AP。
-[関連するコンピューターを取得する](get-alert-related-machine-info.md) | [マシン](machine.md) | アラート [に](machine.md) 関連付けられている [コンピューター](alerts.md)。
-[関連ユーザーの取得](get-alert-related-user-info.md) | [ユーザー](user.md) | アラート [に](user.md) 関連付けられている [ユーザー](alerts.md)。
+<br>
+
+****
+
+|メソッド|戻り値の型|説明|
+|---|---|---|
+|[警告の取得](get-alert-info-by-id.md)|[アラート](alerts.md)|1 つのアラート [オブジェクトを取得](alerts.md) します。|
+|[アラートの一覧表示](get-alerts.md)|[アラート](alerts.md) コレクション|アラート [コレクションを一覧表示](alerts.md) します。|
+|[警告の更新](update-alert.md)|[アラート](alerts.md)|特定のアラートを [更新します](alerts.md)。|
+|[バッチ更新の通知](batch-update-alerts.md)||アラートのバッチを更新 [します](alerts.md)。|
+|[アラートの作成](create-alert-by-reference.md)|[アラート](alerts.md)|Advanced Hunting から取得したイベント データに基づいてアラート [を作成します](run-advanced-query-api.md)。|
+|[関連するドメインを一覧表示する](get-alert-related-domain-info.md)|ドメイン コレクション|アラートに関連付けられている URL を一覧表示します。|
+|[関連ファイルを一覧表示する](get-alert-related-files-info.md)|[ファイル](files.md) コレクション|アラートに [関連](files.md) 付けられているファイル エンティティを一覧表示 [します](alerts.md)。|
+|[関連する IPs の一覧](get-alert-related-ip-info.md)|IP コレクション|アラートに関連付けられているリストの AP。|
+|[関連するコンピューターを取得する](get-alert-related-machine-info.md)|[マシン](machine.md)|アラート [に](machine.md) 関連付けられている [コンピューター](alerts.md)。|
+|[関連ユーザーの取得](get-alert-related-user-info.md)|[ユーザー](user.md)|アラート [に](user.md) 関連付けられている [ユーザー](alerts.md)。|
+|
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ |    型    |    説明
-:---|:---|:---
-id | String | アラート ID。
-title | String | 警告タイトル。
-説明 | String | 警告の説明。
-alertCreationTime | Null 許容の DateTimeOffset | アラートが作成された日付と時刻 (UTC)。
-lastEventTime | Null 許容の DateTimeOffset | 同じデバイスでアラートをトリガーしたイベントの最後の発生。
-firstEventTime | Null 許容の DateTimeOffset | そのデバイスでアラートをトリガーしたイベントの最初の発生。
-lastUpdateTime | Null 許容の DateTimeOffset | アラートが最後に更新された日付と時刻 (UTC)。
-resolvedTime | Null 許容の DateTimeOffset | アラートの状態が [解決済み] に変更された日時。
-incidentId | Null 許容長 | アラート [の](view-incidents-queue.md) インシデント ID。
-investigationId | Null 許容長 | アラート [に](automated-investigations.md) 関連する調査 ID。
-investigationState | Null 許容列挙 | 調査の現在の [状態](automated-investigations.md)です。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''
-assignedTo | String | アラートの所有者。
-rbacGroupName | String | RBAC デバイス グループ名。
-mitreTechniques | String | Mitre Enterprise ID。
-relatedUser | String |  特定のアラートに関連するユーザーの詳細。
-severity | 列挙 | アラートの重大度。 指定できる値は、'UnSpecified'、'Informational'、'Low'、'Medium' および 'High' です。
-status | 列挙 | アラートの現在の状態を指定します。 指定できる値は、'Unknown'、'New'、'InProgress'、'Resolved' です。
-classification | Null 許容列挙 | アラートの仕様。 指定できる値は、'Unknown'、'FalsePositive'、'TruePositive'です。
-決定 | Null 許容列挙 | アラートの決定を指定します。 指定できる値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
-category| String | アラートのカテゴリ。
-detectionSource | String | 検出ソース。
-threatFamilyName | String | 脅威ファミリ。
-threatName | String | 脅威の名前。
-machineId | String | アラートに [関連付](machine.md) けられているコンピューター エンティティの ID。
-computerDnsName | String | [コンピューター](machine.md) の完全修飾名。
-aadTenantId | String | ユーザー ID Azure Active Directory ID。
-detectorId | String | アラートをトリガーした検出器の ID。
-comments | アラートコメントの一覧 | Alert Comment オブジェクトには、コメント文字列、createBy 文字列、createTime 日付時刻が含まれます。
-証拠 | アラート証拠の一覧 | アラートに関連する証拠。 次の例を参照してください。
+<br>
+
+****
+
+|プロパティ|型|説明|
+|---|---|---|
+|id|String|アラート ID。|
+|title|String|警告タイトル。|
+|説明|String|警告の説明。|
+|alertCreationTime|Null 許容の DateTimeOffset|アラートが作成された日付と時刻 (UTC)。|
+|lastEventTime|Null 許容の DateTimeOffset|同じデバイスでアラートをトリガーしたイベントの最後の発生。|
+|firstEventTime|Null 許容の DateTimeOffset|そのデバイスでアラートをトリガーしたイベントの最初の発生。|
+|lastUpdateTime|Null 許容の DateTimeOffset|アラートが最後に更新された日付と時刻 (UTC)。|
+|resolvedTime|Null 許容の DateTimeOffset|アラートの状態が [解決済み] に変更された日時。|
+|incidentId|Null 許容長|アラート [の](view-incidents-queue.md) インシデント ID。|
+|investigationId|Null 許容長|アラート [に](automated-investigations.md) 関連する調査 ID。|
+|investigationState|Null 許容列挙|調査の現在の [状態](automated-investigations.md)です。 指定できる値は、'Unknown'、'Terminated'、 'SuccessfullyRemediated', '良性', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'unsupportedAlertType', 'unsupportedAlertType''|
+|assignedTo|String|アラートの所有者。|
+|rbacGroupName|String|RBAC デバイス グループ名。|
+|mitreTechniques|String|Mitre Enterprise ID。|
+|relatedUser|String|特定のアラートに関連するユーザーの詳細。|
+|severity|列挙|アラートの重大度。 指定できる値は、'UnSpecified'、'Informational'、'Low'、'Medium' および 'High' です。|
+|status|列挙|アラートの現在の状態を指定します。 指定できる値は、'Unknown'、'New'、'InProgress'、'Resolved' です。|
+|classification|Null 許容列挙|アラートの仕様。 指定できる値は、'Unknown'、'FalsePositive'、'TruePositive'です。|
+|決定|Null 許容列挙|アラートの決定を指定します。 指定できる値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。|
+|category|String|アラートのカテゴリ。|
+|detectionSource|String|検出ソース。|
+|threatFamilyName|String|脅威ファミリ。|
+|threatName|String|脅威の名前。|
+|machineId|String|アラートに [関連付](machine.md) けられているコンピューター エンティティの ID。|
+|computerDnsName|String|[コンピューター](machine.md) の完全修飾名。|
+|aadTenantId|String|ユーザー ID Azure Active Directory ID。|
+|detectorId|String|アラートをトリガーした検出器の ID。|
+|comments|アラートコメントの一覧|Alert Comment オブジェクトには、コメント文字列、createBy 文字列、createTime 日付時刻が含まれます。|
+|証拠|アラート証拠の一覧|アラートに関連する証拠。 次の例を参照してください。|
+|
 
 ### <a name="response-example-for-getting-single-alert"></a>1 つのアラートを取得する場合の応答例:
 

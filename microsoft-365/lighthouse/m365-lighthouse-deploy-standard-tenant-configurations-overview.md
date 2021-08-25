@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 管理サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseを使用して標準的なテナント構成を展開する方法について説明します。
-ms.openlocfilehash: 5eea1deae1c8cf56315e121baa29273fc98feca8
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 5dc1f7da329ab1630d857ee337048a47ad06c9e9
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365203"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507940"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>基準計画を使用した標準テナント構成の展開の概要 
 
@@ -30,15 +30,15 @@ ms.locfileid: "58365203"
 
 Microsoft 365 Lighthouse基準は、複数の顧客テナント間でセキュリティ設定を評価および管理するためのMicrosoft 365スケーラブルな方法を提供します。 ベースラインは、ユーザー、デバイス、およびデータをセキュリティで保護する構成を使用して、コア セキュリティ ポリシーとテナントコンプライアンス標準を監視するのにも役立ちます。
 
-パートナーが独自のペースでセキュリティを導入するのに役立つ設計で、Microsoft 365 Lighthouse は、Microsoft 365 サービスの標準の基準パラメーターと事前定義された構成を提供します。 これらのセキュリティ構成は、テナントのセキュリティとコンプライアンスMicrosoft 365を測定するのに役立ちます。
+パートナーが独自のペースでセキュリティを導入するのに役立つ目的で設計されたライトハウスは、標準のベースライン パラメーターと、サービスの事前定義された構成Microsoft 365提供します。 これらのセキュリティ構成は、テナントのセキュリティとコンプライアンスMicrosoft 365を測定するのに役立ちます。
 
-既定の基準計画とその展開手順は、既定の基準計画内Microsoft 365 Lighthouse。 テナントにベースラインを適用するには、左側のナビゲーション ウィンドウ **で [テナント** ] を選択し、テナントを選択します。 次に、[展開計画] **タブに移動** し、目的の基準計画を実装します。
+既定の基準計画とその展開手順は、ライトハウス内から表示できます。 テナントにベースラインを適用するには、左側のナビゲーション ウィンドウ **で [テナント** ] を選択し、テナントを選択します。 次に、[展開計画] **タブに移動** し、目的の基準計画を実装します。
 
 ## <a name="standard-baseline-security-templates"></a>標準の基準計画のセキュリティ テンプレート
 
-Microsoft 365 Lighthouseワークロードの標準的なベースライン構成は、すべての管理テナントが許容可能なセキュリティ範囲とコンプライアンスの状態に達するように設計されています。
+セキュリティ ワークロードのライトハウス標準ベースライン構成は、すべての管理テナントが許容可能なセキュリティ範囲とコンプライアンス状態に達するように設計されています。
 
-次の表のベースライン構成は、既定の基準計画Microsoft 365 Lighthouse標準です。<br><br>
+次の表のベースライン構成には、ライトハウスの既定の基準計画が標準で示されています。<br><br>
 
 | ベースライン構成 | 説明 |
 |--|--|
