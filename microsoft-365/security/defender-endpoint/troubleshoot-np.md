@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: a31da45e56adc8838ed85df338e423070aac1a15
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 981e7962db35429e5f7bf02ee4a6f57fd19655d4
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507664"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509895"
 ---
 # <a name="troubleshoot-network-protection"></a>ネットワーク保護のトラブルシューティング
 
@@ -49,7 +49,8 @@ ms.locfileid: "58507664"
 
 ネットワーク保護は、次の条件を持つデバイスでのみ機能します。
 
->[!div class="checklist"]
+> [!div class="checklist"]
+>
 > - エンドポイントは、バージョン 1709 Windows 10 ProまたはEnterpriseバージョン 1709 以上で実行されています。
 > - エンドポイントは、Microsoft Defender ウイルス対策ウイルス対策保護アプリとして使用しています。 [Microsoft 以外のウイルス対策ソリューションを使用している場合の問題を確認します](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 > - [リアルタイム保護が](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 有効になっています。
@@ -69,7 +70,7 @@ ms.locfileid: "58507664"
 2. 問題の原因となっている接続アクティビティを実行します (たとえば、サイトにアクセスしようとしたり、ブロックしたりしない IP アドレスに接続したりします)。
 
 3. [ネットワーク保護イベント ログを確認](network-protection.md#review-network-protection-events-in-windows-event-viewer) して、機能が [有効] に設定されている場合に接続がブロックされた可能性を確認 **します**。
-   
+
    ネットワーク保護がブロックする必要がある接続をブロックしていない場合は、この機能を有効にします。
 
    ```PowerShell
@@ -102,7 +103,7 @@ ms.locfileid: "58507664"
    mpcmdrun -getfiles
    ```
 
-3. 提出フォームにファイルを添付します。 既定では、診断ログはで保存されます `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。 
+3. 提出フォームにファイルを添付します。 既定では、診断ログはで保存されます `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。
 
 ## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>ネットワーク保護に関する接続の問題を解決する (E5 のお客様向け)
 
@@ -114,12 +115,12 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 
 ---OR---
 
-
 ```powershell
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
 レジストリ キーは、PowerShell、Microsoft エンドポイント マネージャーグループ ポリシーを使用して構成できます。 以下に役立つリソースを示します。
+
 - [レジストリ キーの操作](/powershell/scripting/samples/working-with-registry-keys)
 - [ユーザー設定のカスタム クライアント設定を構成Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [グループ ポリシー設定を使用してグループ ポリシーをEndpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
@@ -127,11 +128,7 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 ## <a name="see-also"></a>関連項目
 
 - [ネットワーク保護](network-protection.md)
-
 - [ネットワーク保護と TCP 3 ウェイ ハンドシェイク](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
-
 - [ネットワーク保護を評価する](evaluate-network-protection.md)
-
 - [ネットワーク保護を有効にする](enable-network-protection.md)
-
 - [Defender for Endpoint で誤検知/負のアドレスを指定する](defender-endpoint-false-positives-negatives.md)

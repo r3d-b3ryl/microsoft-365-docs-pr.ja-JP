@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.openlocfilehash: 81aba6c432747563820556341d12f81d8e09b5ca
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 44f75b2912a8e54df6584a8f97d0f6e76cac6b15
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507568"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509871"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -46,11 +46,16 @@ ms.locfileid: "58507568"
 
 ネットワーク保護には、Windows 10 ProまたはEnterprise、リアルタイムMicrosoft Defender ウイルス対策保護が必要です。
 
-| Windows バージョン | Microsoft Defender ウイルス対策 |
-|:---|:---|
-| Windows 10バージョン 1709 以降 <p>Windowsサーバー 1803 以降 | [Microsoft Defender ウイルス対策保護とクラウド](configure-real-time-protection-microsoft-defender-antivirus.md)[配信保護を有効](enable-cloud-protection-microsoft-defender-antivirus.md)にする必要があります |
+<br>
 
-サービスを有効にした後、サービスとデバイス (エンドポイントとも呼ばれます) 間の接続を許可するために、ネットワークまたはファイアウォールを構成する必要がある場合があります。  
+****
+
+|Windows バージョン|Microsoft Defender ウイルス対策|
+|---|---|
+|Windows 10バージョン 1709 以降 <p> Windowsサーバー 1803 以降|[Microsoft Defender ウイルス対策保護とクラウド](configure-real-time-protection-microsoft-defender-antivirus.md)[配信保護を有効](enable-cloud-protection-microsoft-defender-antivirus.md)にする必要があります|
+|
+
+サービスを有効にした後、サービスとデバイス (エンドポイントとも呼ばれます) 間の接続を許可するために、ネットワークまたはファイアウォールを構成する必要がある場合があります。
 
 - `.smartscreen.microsoft.com`
 - `.smartscreen-prod.microsoft.com`
@@ -75,7 +80,7 @@ Microsoft Defender for Endpoint は、アラート調査シナリオの一環と
 
 ```kusto
 DeviceEvents
-| where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 ```
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>イベント ビューアーでネットワーク保護イベントWindows確認する
@@ -88,11 +93,16 @@ DeviceEvents
 
 この手順では、ネットワーク保護に関連する次のイベントのみを表示するためにフィルター処理するカスタム ビューを作成します。
 
-| イベント ID | 説明 |
-|:---|:---|
-| 5007 | 設定が変更された場合のイベント |
-| 1125 | 監査モードでネットワーク保護が発生した場合のイベント |
-| 1126 | ブロック モードでネットワーク保護が発生した場合のイベント |
+<br>
+
+****
+
+|イベント ID|説明|
+|---|---|
+|5007|設定が変更された場合のイベント|
+|1125|監査モードでネットワーク保護が発生した場合のイベント|
+|1126|ブロック モードでネットワーク保護が発生した場合のイベント|
+|
 
 ## <a name="network-protection-and-the-tcp-three-way-handshake"></a>ネットワーク保護と TCP 3 ウェイ ハンドシェイク
 
@@ -116,7 +126,7 @@ DeviceEvents
 
 3. ユーザー グループを区別する必要がある場合は、仮想デスクトップ ホスト プールと割り当てのWindows作成を検討してください。
 
-4. 監査モードでネットワーク保護をテストし、展開する前に動作を評価します。 
+4. 監査モードでネットワーク保護をテストし、展開する前に動作を評価します。
 
 5. 多数のユーザーまたは多数のマルチユーザー セッションがある場合は、展開のサイズを変更してください。
 
@@ -141,7 +151,5 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 ## <a name="see-also"></a>関連項目
 
 - [ネットワーク保護の評価|](evaluate-network-protection.md) 機能の動作と、通常作成されるイベントを示す簡単なシナリオを実行します。
-
 - [ネットワーク保護の有効化|](enable-network-protection.md) グループ ポリシー、PowerShell、MDM CSP を使用して、ネットワーク内のネットワーク保護を有効にして管理します。
-
 - [攻撃表面の縮小機能の構成Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)

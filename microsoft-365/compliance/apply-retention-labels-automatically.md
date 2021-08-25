@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 44caa372797e627a05bc40b3fb816d50dcd5a88c
-ms.sourcegitcommit: 0ec4a6cc94ebc2ae18846011a34bbd1dd9a7ace0
+ms.openlocfilehash: 55fa863dca2caf3a88c7127993c392c510953af8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470778"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506456"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -127,7 +127,16 @@ ms.locfileid: "58470778"
 
 - [トレーニング可能な分類子の一致](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-3 つの条件はすべて、送受信時のメール (転送中のデータ) に保持ラベルを自動的に適用できますが、メールボックス内の既存のアイテム (保存データ) には適用できません。 SharePoint と OneDrive のアイテムの場合、次の表を使用して、保持ラベルをアイテムに自動的に適用できるタイミングを特定します。
+次の表を使用して、保持ラベルを Exchange のアイテムに自動的に適用できるタイミングを特定します。
+
+|条件|転送中のアイテム (送信または受信) |既存のアイテム (保存データ)|
+|:-----|:-----|:-----|
+|機密情報の種類 - 組み込み| はい | 不要 |
+|機密情報の種類 - カスタム| はい | 不要 |
+|特定のキーワードまたは検索可能なプロパティ| はい |はい |
+|トレーニング可能な分類子| はい | はい (過去 6 か月のみ) |
+
+次の表を使用して、保持ラベルを SharePoint および OneDrive のアイテムに自動的に適用できるタイミングを特定します。
 
 |条件|新規または変更されたアイテム |既存のアイテム (保存データ)|
 |:-----|:-----|:-----|

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: acb2c0cc3b75ac5491f2653c60e1e9d9bab7b22292caaeb698b1c9eed70df85c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 00cf587af9eaeb6199b8058ff231c5704ca19f78
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884813"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58510063"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 
@@ -35,7 +35,6 @@ ms.locfileid: "53884813"
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 どのように動作するのかを確認したいですか? 次のビデオをご覧ください。
 
@@ -52,10 +51,15 @@ ms.locfileid: "53884813"
 
 自動調査は、アラートがトリガーされた場合、またはセキュリティオペレーターが調査を開始するときに開始できます。
 
+<br>
+
+****
+
 |状況|動作|
 |---|---|
 |アラートがトリガーされる|一般に、アラートがトリガーされると自動調査[](review-alerts.md)が開始され、インシデント[が](view-incidents-queue.md)作成されます。 たとえば、悪意のあるファイルがデバイスに存在するとします。 そのファイルが検出されると、アラートがトリガーされ、インシデントが作成されます。 自動調査プロセスは、デバイスで開始されます。 他のデバイス上の同じファイルのために他のアラートが生成されると、関連付けられたインシデントと自動調査に追加されます。|
 |調査が手動で開始される|自動調査は、セキュリティ運用チームが手動で開始できます。 たとえば、セキュリティオペレーターがデバイスのリストを確認し、デバイスのリスクレベルが高いという通知を行ったとします。 セキュリティオペレーターは、一覧でデバイスを選択してフライアウトを開き、[自動調査の開始] **を選択します**。|
+|
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>自動調査によって範囲が拡大される方法
 
@@ -71,9 +75,9 @@ ms.locfileid: "53884813"
 - *疑わしい*。または
 - *脅威が見つかりません*。
 
-評決に達すると、自動調査によって 1 つ以上の修復アクションが発生する可能性があります。 修復アクションの例としては、検疫にファイルを送信する、サービスを停止する、スケジュールされたタスクを削除する、などです。 詳細については、「修復アクション [」を参照してください](manage-auto-investigation.md#remediation-actions)。  
+評決に達すると、自動調査によって 1 つ以上の修復アクションが発生する可能性があります。 修復アクションの例としては、検疫にファイルを送信する、サービスを停止する、スケジュールされたタスクを削除する、などです。 詳細については、「修復アクション [」を参照してください](manage-auto-investigation.md#remediation-actions)。
 
-組織のオートメーション [セット](automation-levels.md) のレベルや他のセキュリティ設定に応じて、修復アクションは自動的に行われるか、セキュリティ運用チームの承認を得た場合にのみ実行されます。 自動修復に影響を与える可能性のある追加のセキュリティ設定には、望ましくない可能性のあるアプリケーション (PUA) [からの](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) 保護が含まれます。 
+組織のオートメーション [セット](automation-levels.md) のレベルや他のセキュリティ設定に応じて、修復アクションは自動的に行われるか、セキュリティ運用チームの承認を得た場合にのみ実行されます。 自動修復に影響を与える可能性のある追加のセキュリティ設定には、望ましくない可能性のあるアプリケーション (PUA) [からの](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) 保護が含まれます。
 
 保留中か完了かの修復アクションはすべて、アクション センターで [追跡されます](auto-investigation-action-center.md)。 必要に応じて、セキュリティ運用チームは修復アクションを元に戻すことができます。 詳細については、「自動調査後 [の修復アクションの確認と承認」を参照してください](/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.topic: article
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: 470b123045d2f63b6dbf6aa681762892bfd529d95ef08918689f7429f4fbcdd6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f6a86aff84eda3f9f0145e47387b4353555a3a40
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839893"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58510075"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>エンドポイント向け Microsoft Defender の攻撃表面の縮小をテストする
 
@@ -45,7 +45,7 @@ ms.locfileid: "53839893"
 
 この機能は、アプリ、スクリプト、またはファイルが変更されるのをブロックまたは防止できません。 ただし、イベント ログWindows機能が完全に有効になっている場合と同様にイベントが記録されます。 監査モードを使用すると、イベント ログを確認して、機能が有効になっている場合の影響を確認できます。
 
-監査されたエントリを見つけるには、「Applications and Services Microsoft **Windows Windows Defender**  >    >    >    >  **します**。
+監査されたエントリを見つけるには、「Applications and Services Microsoft **Windows Windows Defender** \>  \>  \>  \> **します**。
 
 Defender for Endpoint を使用して、特に攻撃表面の縮小ルールを調査するために、各イベントの詳細を取得します。 Defender for Endpoint コンソールを使用すると、アラートタイムラインと調査シナリオの一部として問題 [を調査できます](investigate-alerts.md)。
 
@@ -54,9 +54,9 @@ Defender for Endpoint を使用して、特に攻撃表面の縮小ルールを�
 > [!TIP]
 > また、テストグラウンドのWindows Defenderに[アクセスして](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)demo.wd.microsoft.com 機能を確認し、機能の動作を確認できます。
 
-| 監査オプション | 監査モードを有効にする方法 | イベントを表示する方法 |
-|---------|---------|---------|
-| 監査はすべてのイベントに適用されます | [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md) | [フォルダー アクセスイベントの制御](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
-| 監査は個々のルールに適用されます | [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md) | [攻撃表面の縮小ルール イベント](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
-| 監査はすべてのイベントに適用されます | [ネットワーク保護を有効にする](enable-network-protection.md) | [ネットワーク保護イベント](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
-| 監査は個々の軽減策に適用されます | [エクスプロイト保護を有効にする](enable-exploit-protection.md) | [エクスプロイト保護イベント](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
+|監査オプション|監査モードを有効にする方法|イベントを表示する方法|
+|---|---|---|
+|監査はすべてのイベントに適用されます|[制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md)|[フォルダー アクセスイベントの制御](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
+|監査は個々のルールに適用されます|[攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)|[攻撃表面の縮小ルール イベント](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
+|監査はすべてのイベントに適用されます|[ネットワーク保護を有効にする](enable-network-protection.md)|[ネットワーク保護イベント](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
+|監査は個々の軽減策に適用されます|[エクスプロイト保護を有効にする](enable-exploit-protection.md)|[エクスプロイト保護イベント](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: c0d82741a30bb57f7b7df4ceb642557c97f979ea446f3be41b98666bd3d5f0dd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f28c209ce179cc019a8b0edbdc698f9f9eb7daf6
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834211"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509907"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>ビジネスMicrosoft Defender ウイルス対策管理する
 
@@ -44,10 +44,10 @@ ms.locfileid: "53834211"
 
 次の記事では、これらのツールを使用してこれらのツールを管理および構成するための詳細な情報、リンク、およびリソースMicrosoft Defender ウイルス対策。
 
-| 記事 | 説明 |
+|記事|説明|
 |:---|:---|
-|[ユーザー Microsoft Defender ウイルス対策とMicrosoft Intune管理Microsoft Endpoint Configuration Manager](use-intune-config-manager-microsoft-defender-antivirus.md)|Intune と Configuration Manager を使用して組織の展開、管理、レポート、および構成に関するMicrosoft Defender ウイルス対策 |
-|[グループ Microsoft Defender ウイルス対策設定を使用して管理する](use-group-policy-microsoft-defender-antivirus.md)|ADMX テンプレートにあるすべてのグループ ポリシー設定の一覧 |
-|[PowerShell コマンドレットMicrosoft Defender ウイルス対策の管理](use-powershell-cmdlets-microsoft-defender-antivirus.md)|PowerShell コマンドレットを使用して、すべてのコマンドレットMicrosoft Defender ウイルス対策許可されたパラメーターのドキュメントへのリンクを管理する手順 |
-|[管理Microsoft Defender ウイルス対策 (WMI) Windowsを使用して管理する](use-wmi-microsoft-defender-antivirus.md)| WMI を使用してドキュメントを管理Microsoft Defender ウイルス対策、WMIv2 API のドキュメントへのリンク (すべてのクラス、メソッド、およびプロパティを含む) |
-|[コマンド ライン Microsoft Defender ウイルス対策ツールMpCmdRun.exeを管理する](command-line-arguments-microsoft-defender-antivirus.md)| 専用のコマンド ライン ツールを使用してコマンド ライン ツールを管理および使用するMicrosoft Defender ウイルス対策 |
+|[ユーザー Microsoft Defender ウイルス対策とMicrosoft Intune管理Microsoft Endpoint Configuration Manager](use-intune-config-manager-microsoft-defender-antivirus.md)|Intune と Configuration Manager を使用して組織の展開、管理、レポート、および構成に関するMicrosoft Defender ウイルス対策|
+|[グループ Microsoft Defender ウイルス対策設定を使用して管理する](use-group-policy-microsoft-defender-antivirus.md)|ADMX テンプレートにあるすべてのグループ ポリシー設定の一覧|
+|[PowerShell コマンドレットMicrosoft Defender ウイルス対策の管理](use-powershell-cmdlets-microsoft-defender-antivirus.md)|PowerShell コマンドレットを使用して、すべてのコマンドレットMicrosoft Defender ウイルス対策許可されたパラメーターのドキュメントへのリンクを管理する手順|
+|[管理Microsoft Defender ウイルス対策 (WMI) Windowsを使用して管理する](use-wmi-microsoft-defender-antivirus.md)|WMI を使用してドキュメントを管理Microsoft Defender ウイルス対策、WMIv2 API のドキュメントへのリンク (すべてのクラス、メソッド、およびプロパティを含む)|
+|[コマンド ライン Microsoft Defender ウイルス対策ツールMpCmdRun.exeを管理する](command-line-arguments-microsoft-defender-antivirus.md)|専用のコマンド ライン ツールを使用してコマンド ライン ツールを管理および使用するMicrosoft Defender ウイルス対策|

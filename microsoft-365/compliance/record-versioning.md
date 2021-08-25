@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 でのレコード管理ソリューションの実装に役立つレコードについて説明します。
-ms.openlocfilehash: 1259065e2f2fb3e2ee3ad09405e365df7fd98767
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: be85632bb4b85231f3a95680c960846fa245d97a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356326"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506528"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する
 
@@ -102,7 +102,7 @@ ms.locfileid: "58356326"
 
 レコードのロックおよびロック解除のアクションは、監査ログに記録されます。 **[ファイル アクティビティとページ アクティビティ]** から、**[レコードのステータスがロックに変更されました]** と **[レコード ステータスが、ロック解除に変更されました]** を選択します。
 
-これらのイベントの検索に関する詳細情報については、「[セキュリティ/コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)」を参照してください。
+これらのイベントの検索に関する詳細情報については、「[検索ローグの検索](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

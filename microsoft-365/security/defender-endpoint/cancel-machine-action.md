@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 33828866b32c14b4922e936fbd279c3f7bc3b536
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.openlocfilehash: 22b0a82d8101c0a2a9e21c05413b64cd7dca4e9a
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408079"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509955"
 ---
 # <a name="cancel-machine-action-api"></a>マシン アクション API のキャンセル
 
@@ -60,13 +60,11 @@ ms.locfileid: "58408079"
 |アプリケーション|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|forensics の収集 <br>マシンの隔離<br>コードの実行を制限する<br>  スキャン マシン<br>  マシンのオフボード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
 |委任 (職場または学校のアカウント)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|forensics の収集<br> マシンの隔離<br>  コードの実行を制限する<br> スキャン マシン<br>マシンのオフボード<br> 停止と検疫<br> 特定のコンピューターでライブ応答を実行する|
 
-
 ## <a name="http-request"></a>HTTP 要求
 
+```http
+POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel
 ```
-POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel  
-```
-
 
 ## <a name="request-headers"></a>要求ヘッダー
 

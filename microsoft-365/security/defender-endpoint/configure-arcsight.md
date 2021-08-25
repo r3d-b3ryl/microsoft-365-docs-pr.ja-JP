@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 66186c3e1b4509cf64cc4105975f15995523fc67b942fa8d9cfccad3a8134d2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ab7e1f31fff1e4b553d5d301eb7fbe4749de19e
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854329"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509535"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>エンドポイント検出用の Defender をプルする Micro Focus ArcSight の構成
 
@@ -32,16 +32,16 @@ ms.locfileid: "53854329"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configurearcsight-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configurearcsight-abovefoldlink)
 
 エンドポイント検出用の Defender を取得するために、Micro Focus ArcSight を使用する一部のファイルとツールをインストールして構成する必要があります。
 
 > [!NOTE]
 >
->- [Defender for Endpoint Alert](alerts.md) は、1 つ以上の検出から構成されます。
->- [エンドポイント検出の Defender は](api-portal-mapping.md) 、デバイスで発生した疑わしいイベントとその関連するアラートの詳細から構成されます。
+> - [Defender for Endpoint Alert](alerts.md) は、1 つ以上の検出から構成されます。
+> - [エンドポイント検出の Defender は](api-portal-mapping.md) 、デバイスで発生した疑わしいイベントとその関連するアラートの詳細から構成されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 Micro Focus ArcSight Connector ツールを構成するには、アプリケーション (AAD) アプリケーションから検出をプルして解析するために、いくつかの構成ファイルAzure Active Directory必要があります。
 
@@ -55,6 +55,7 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
   - OAuth 2.0 クライアント シークレット
 
 - 次の構成ファイルを準備します。
+- 
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
@@ -73,7 +74,7 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
 1. FlexConnector インストーラーに最新の 32 ビット Windowsインストールします。 この情報は、HPE ソフトウェア センターで確認できます。 ツールは通常、次の既定の場所にインストールされます `C:\Program Files\ArcSightFlexConnectors\current\bin` 。</br></br>ツールを保存する場所を選択できます (たとえば、C: \\ \current\bin folder_location\current\bin などfolder_location場所を表します。 
 
 2. インストール ウィザードに従って、次のタスクを実行します。
-   - はじめに
+   - 概要
    - [フォルダーのインストール] を選択する
    - [インストール セット] の選択
    - ショートカット フォルダーの選択
@@ -85,7 +86,6 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
 3. エクスプローラーを開き、SIEM 統合機能を有効にした場合に保存した 2 つの構成ファイルを探します。 次に示す 2 つのファイルを FlexConnector のインストール場所に置く。
 
    - WDATP-connector.jsonparser.properties: C: folder_location \\ \current\user\agent\flexagent\
-
    - WDATP-connector.properties: C: folder_location \\ \current\user\agent\flexagent\
 
    > [!NOTE]
@@ -112,17 +112,17 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
 
 7. コネクタによってブラウザー ウィンドウが開きます。 アプリケーション資格情報を使用してログインします。 ログイン後、OAuth2 クライアントにアクセス許可を与えるメッセージが表示されます。 コネクタ構成を認証するには、OAuth 2 クライアントにアクセス許可を与える必要があります。
 
-   https <code>redirect_uri</code> URL の場合は、ローカル ホスト上の URL にリダイレクトされます。 ローカル ホストで実行されているコネクタによって提供される証明書を信頼する要求をするページが表示されます。 証明書が https の場合は、この証明書redirect_uri必要があります。
+   https `redirect_uri` URL の場合は、ローカル ホスト上の URL にリダイレクトされます。 ローカル ホストで実行されているコネクタによって提供される証明書を信頼する要求をするページが表示されます。 証明書が https の場合は、この証明書redirect_uri必要があります。
 
-   ただし、証明書の http URL を指定redirect_uri、証明書の信頼に同意する必要はございません。
+   ただし、証明書の http URL を指定redirect_uri証明書の信頼に同意する必要はございません。
 
 8. [Micro Focus ArcSight Connector Setup] ウィンドウに戻って、コネクタのセットアップを続行します。
 
 9. 移動先 **として ArcSight Manager (暗号化)** を選択し、[次へ] を **クリックします**。
 
-10. [マネージャーのホスト名] に宛先 IP/ホスト名を **入力** し、パラメーター フォームに資格情報を入力します。 フォーム内の他のすべての値は、既定値と一緒に保持する必要があります。 **[次へ]** をクリックします。
+10. [マネージャーのホスト名] に宛先 IP/ホスト名を **入力** し、パラメーター フォームに資格情報を入力します。 フォーム内の他のすべての値は、既定値と一緒に保持する必要があります。 [**次へ**] をクリックします。
 
-11. コネクタの詳細フォームにコネクタの名前を入力します。 フォーム内の他のすべての値は省略可能で、空白のままにすることができます。 **[次へ]** をクリックします。
+11. コネクタの詳細フォームにコネクタの名前を入力します。 フォーム内の他のすべての値は省略可能で、空白のままにすることができます。 [**次へ**] をクリックします。
 
 12. ESM Manager インポート証明書ウィンドウが表示されます。 [証明書 **を宛先からコネクタにインポートする] を選択し、[** 次へ] を **クリックします**。 [ **コネクタの概要の追加]** ウィンドウが表示され、証明書がインポートされます。
 
@@ -130,16 +130,16 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
 
 14. [サービス **としてインストール] を選択し、[** 次へ] を **クリックします**。
 
-15. [サービスの内部名] **フィールドに名前を入力** します。 フォーム内の他のすべての値は、既定値または空白のままにして保持できます。 **[次へ]** をクリックします。
+15. [サービスの内部名] **フィールドに名前を入力** します。 フォーム内の他のすべての値は、既定値または空白のままにして保持できます。 [**次へ**] をクリックします。
 
-16. サービス パラメーターを入力し、[次へ] を **クリックします**。 [サービスの概要の **インストール] ウィンドウが** 表示されます。 **[次へ]** をクリックします。
+16. サービス パラメーターを入力し、[次へ] を **クリックします**。 [サービスの概要の **インストール] ウィンドウが** 表示されます。 [**次へ**] をクリックします。
 
 17. [終了] と [次へ] を **選択してインストール** を **完了します**。
 
 ## <a name="install-and-configure-the-micro-focus-arcsight-console"></a>Micro Focus ArcSight コンソールのインストールと構成
 
 1. インストール ウィザードに従って、次のタスクを実行します。
-   - はじめに
+   - 概要
    - 使用許諾契約書
    - 特別な通知
    - [ArcSight インストール ディレクトリの選択]
@@ -160,7 +160,7 @@ Micro Focus ArcSight Connector ツールを構成するには、アプリケー�
 
 8. Micro Focus ArcSight コンソールにログインします。
 
-9. [アクティブ なチャネル **セット] [**  >  **新しい条件**  >  **デバイスデバイス製品]**  >  **に移動します**。
+9. [アクティブ なチャネル **セット] [** \> **新しい条件** \> **デバイスデバイス製品]** \> **に移動します**。
 
 10. デバイス **製品を設定する = Microsoft Defender ATP**. イベントがツールに流れ込むのを確認した後、プロセスを再度停止し、[Windows サービス] に移動し、ArcSight FlexConnector REST を開始します。
 
@@ -180,16 +180,20 @@ Defender for Endpoint detections は個別のイベントとして表示され�
 
 1. [コネクタ] ウィンドウの [Ctrl ] + [C] をクリックして、プロセスを停止します。 「 **バッチ ジョブ Y/N** を終了する」というメッセージが表示された場合は、[Y] をクリックします。
 
-2. WDATP-connector.properties ファイルを保存したフォルダーに移動し、編集して次の値を追加します `reauthenticate=true` 。
+2. WDATP-connector.properties ファイルを保存したフォルダーに移動し、編集して次の値を追加します。
 
-3. 次のコマンドを実行してコネクタを再起動します `arcsight.bat connectors` 。
+   `reauthenticate=true`.
+
+3. 次のコマンドを実行してコネクタを再起動します。
+
+   `arcsight.bat connectors`.
 
    ブラウザー ウィンドウが表示されます。 実行を許可し、表示されなくなり、コネクタが実行されている必要があります。
 
 > [!NOTE]
 > もう一度プロセスを停止して、コネクタが実行されている状態を確認します。 次に、コネクタを再度起動すると、ブラウザー ウィンドウは表示されません。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Defender for Endpoint で SIEM 統合を有効にする](enable-siem-integration.md)
 - [SIEM ツールへの検出のプル](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)

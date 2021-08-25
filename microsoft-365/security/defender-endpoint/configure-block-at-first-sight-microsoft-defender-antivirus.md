@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 48b014c808a2d8d91f7a0adb01938bf289c1985aece314fd5ab49d3ef9542c4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 20918b3412a5534675c873fdfd9d2fb94a73ab75
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829822"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509943"
 ---
 # <a name="turn-on-block-at-first-sight"></a>事前ブロックを有効にする
 
@@ -28,7 +28,7 @@ ms.locfileid: "53829822"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-この記事では、"事前ブロック" と呼ばれるウイルス対策/マルウェア対策機能について説明し、組織で事前ブロックを有効にする方法について説明します。 
+この記事では、"事前ブロック" と呼ばれるウイルス対策/マルウェア対策機能について説明し、組織で事前ブロックを有効にする方法について説明します。
 
 > [!TIP]
 > この記事は、組織のセキュリティ設定を管理するエンタープライズ管理者および IT プロフェッショナルを対象としています。 エンタープライズ管理者や IT プロではないが、事前ブロックについて質問がある場合は、「[Not an enterprise admin or IT Pro? (エンタープライズ管理者またはITプロではありませんか?)](#not-an-enterprise-admin-or-it-pro)」を参照してください。
@@ -37,19 +37,19 @@ ms.locfileid: "53829822"
 
 事前ブロックは、数秒以内に新しいマルウェアを検出してブロックするための方法を提供する次世代の保護機能です。 特定のセキュリティ設定が有効になっている場合、事前ブロックが有効になります。 これには、以下の設定が含まれます。
 
-- クラウドによる保護 
-- 指定されたサンプル送信タイムアウト (50 秒など) そして、 
-- 高のファイルブロックレベル。 
+- クラウドによる保護
+- 指定されたサンプル送信タイムアウト (50 秒など) そして、
+- 高のファイルブロックレベル。
 
-ほとんどの企業組織では、事前ブロックを有効にするために必要な設定は、Microsoft Defender ウイルス対策の展開で構成されています。 
+ほとんどの企業組織では、事前ブロックを有効にするために必要な設定は、Microsoft Defender ウイルス対策の展開で構成されています。
 
 ## <a name="how-it-works"></a>メカニズム
 
 Microsoft Defender ウイルス対策 は、疑わしいが検出されていないファイルを検出すると、クラウド保護バックエンドにクエリを実行します。 クラウド バックエンドでは、ヒューリスティックな機械学習による自動化されたファイル分析を適用して、悪意のあるファイルか、脅威ではないファイルかを判断します。
 
-Microsoft Defender ウイルス対策は、複数の検出および防止テクノロジを使用して、正確でインテリジェントなリアルタイムの保護を提供します。 
+Microsoft Defender ウイルス対策は、複数の検出および防止テクノロジを使用して、正確でインテリジェントなリアルタイムの保護を提供します。
 
-![Microsoft Defender AV エンジンのリスト](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+![Microsoft Defender AV エンジンのリスト](images/microsoft-defender-atp-next-generation-protection-engines.png)
 
 > [!TIP]
 > 詳細については、ブログ記事「[Microsoft Defender for Endpoint の次世代保護の中核となる高度なテクノロジについて」](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)を参照してください。
@@ -71,7 +71,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
 > [!TIP]
 > Microsoft Intune (現在は、Microsoft Endpoint Manager の一部)。.
 
-1. Microsoft Endpoint Manager管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) で、**[デバイス]** > **[構成プロファイル]** に移動します。
+1. Microsoft エンドポイント マネージャー管理センター (<https://endpoint.microsoft.com>) で、**[デバイス]** \> **[構成プロファイル]** に移動します。
 
 2. **[デバイス制限]** プロファイル タイプを使用してプロファイルを選択または作成します。
 
@@ -87,6 +87,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
 4. 設定内容を保存します。
 
 > [!TIP]
+>
 > - ファイルのブロック レベルを **[高]** に設定すると、強力な検出レベルが適用されます。 万一、ファイルのブロックによって正当なファイルが誤検出された場合、セキュリティ運用チームは[隔離されたファイルを復元](./restore-quarantined-files-microsoft-defender-antivirus.md)できます。
 > - Intune での ≈ Defender ウイルス対策のデバイスの制限の構成について詳しくは、「[Microsoft Intune でデバイスの制限設定を構成する](/intune/device-restrictions-configure)」をご覧ください。
 > - Intune での Microsoft Defender ウイルス対策のデバイスの制限の一覧については、「[Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)」をご覧ください。
@@ -96,7 +97,7 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
 > [!TIP]
 > Microsoft Endpoint Configuration Manager をお探しであれば、こちらは現在 Microsoft Endpoint Manager の一部になっています。
 
-1. Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) で、**[Endpoint security]** > **[Antivirus]** に移動します。
+1. Microsoft エンドポイント マネージャー (<https://endpoint.microsoft.com>) で、**[Endpoint security]** \> **[Antivirus]** に移動します。
 
 2. 既存のポリシーを選択するか、**Microsoft Defender ウイルス対策** のプロファイル タイプを使用して新しいポリシーを作成します。
 
@@ -113,11 +114,11 @@ Microsoft Defender ウイルス対策は、複数の検出および防止テク�
 ## <a name="turn-on-block-at-first-sight-with-group-policy"></a>グループポリシーで事前ブロックを有効にする
 
 > [!NOTE]
-> Intune または Microsoft Endpoint Manager を使用して、事前ブロックを有効にすることをお勧めします。 
+> Intune または Microsoft Endpoint Manager を使用して、事前ブロックを有効にすることをお勧めします。
 
-1. グループ ポリシー管理コンピューターで、[[グループ ポリシー管理コンソール]](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) を開き、構成するグループ ポリシー オブジェクトを右クリックして、**[編集]** をクリックします。 
+1. グループ ポリシー管理コンピューターで、[[グループ ポリシー管理コンソール]](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) を開き、構成するグループ ポリシー オブジェクトを右クリックして、**[編集]** をクリックします。
 
-2. **[グループ ポリシー管理エディター]** を使用して、**[コンピューターの構成]** > **[管理用テンプレート]** > **[Windows コンポーネント]** > **[Microsoft Defender ウイルス対策** > **][MAPS]** の順に移動します。 
+2. **[グループ ポリシー管理エディター]** を使用して、**[コンピューター構成]** \> **[管理用テンプレート]** \> **[Windows コンポーネント]** \> **[Microsoft Defender ウイルス対策]** \> **[MAPS]** に移動します。
 
 3. [MAPS] セクションで、**[事前ブロックを構成する] 機能** をダブルクリックし、**[有効]** に設定して、**[OK]** を選択します。
 
@@ -141,14 +142,15 @@ Windows セキュリティ アプリを使用して、個々のクライアン�
 3. **[クラウドベースの保護]** と **[サンプルの自動送信]** がオンになっていることを確認します。
 
 > [!NOTE]
-> - 前提条件の設定が構成され、グループ ポリシーを使って展開されている場合、このセクションで説明する設定は灰色表示され、個別のエンドポイントで使用できません。 
+>
+> - 前提条件の設定が構成され、グループ ポリシーを使って展開されている場合、このセクションで説明する設定は灰色表示され、個別のエンドポイントで使用できません。
 > - グループ ポリシーを使った変更は、Windows の設定で設定を更新する前に、最初に個別のエンドポイントに展開する必要があります。
 
 ## <a name="validate-block-at-first-sight-is-working"></a>事前ブロックが機能していることを検証する
 
 この機能が機能していることを検証するには、[事前ブロックのサンプル ファイル](https://demo.wd.microsoft.com/Page/BAFS)をダウンロードします。 ファイルをダウンロードするには、セキュリティ管理者ロールまたはグローバル管理者ロールが割り当てられている Azure AD のアカウントが必要です。
 
-機能が機能していることを検証するには、「[ネットワークとクラウド間の接続を検証する](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)」のガイダンスに従ってください。 
+機能が機能していることを検証するには、「[ネットワークとクラウド間の接続を検証する](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)」のガイダンスに従ってください。
 
 ## <a name="turn-off-block-at-first-sight"></a>事前ブロックを無効にする
 
@@ -159,9 +161,9 @@ Windows セキュリティ アプリを使用して、個々のクライアン�
 
 ### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>Microsoft Endpoint Manager で事前ブロックを無効にする
 
-1. Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) に移動してサイン インします。
+1. Microsoft エンドポイント マネージャー管理センター (<https://endpoint.microsoft.com>) に移動してサインインします。
 
-2. **[エンドポイント セキュリティ]** > **[ウイルス対策]** に移動し、Microsoft Defender ウイルス対策ポリシーを選択します。
+2. **[エンドポイント セキュリティ]** \> **[ウイルス対策]** に移動し、Microsoft Defender ウイルス対策ポリシーを選択します。
 
 3. [**管理**] で [**プロパティ**] を選択します。
 
@@ -181,7 +183,7 @@ Windows セキュリティ アプリを使用して、個々のクライアン�
 
 2. **[グループ ポリシー管理エディター]** を使用して、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. **[Windows コンポーネント]** > **[Microsoft Defender ウイルス対策]** > **[MAPS]** の順にツリーを展開します。
+3. **[Windows コンポーネント]** \> **[Microsoft Defender ウイルス対策]** \> **[MAPS]** の順にツリーを展開します。
 
 4. **['事前ブロック' 機能を構成する]** をダブルクリックして、オプションを **[無効]** に設定します。
 
@@ -206,10 +208,10 @@ Windows セキュリティ アプリを使用して、個々のクライアン�
 
    - 事前ブロックを有効にするには、**[クラウドベースの保護]** と **[サンプルの自動送信]** の両方がオンになっていることを確認してください。
 
-   - 事前ブロックを無効にするには、**[クラウドベースの保護]** と **[サンプルの自動送信]** をオフにします。 <br/>
-    
+   - 事前ブロックを無効にするには、**[クラウドベースの保護]** と **[サンプルの自動送信]** をオフにします。
+
      > [!CAUTION]
-     > 事前ブロックをオフにすると、デバイスの保護レベルが低下します。 事前ブロックを完全に無効にすることはお勧めしません。 
+     > 事前ブロックをオフにすると、デバイスの保護レベルが低下します。 事前ブロックを完全に無効にすることはお勧めしません。
 
 
 ## <a name="see-also"></a>関連項目

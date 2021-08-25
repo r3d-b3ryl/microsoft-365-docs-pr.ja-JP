@@ -1,6 +1,6 @@
 ---
 title: クラウド配信保護 Microsoft Defender ウイルス対策サンプルの提出
-description: クラウドで提供される保護とセキュリティについてMicrosoft Defender ウイルス対策
+description: クラウド配信の保護とサンプル申請Microsoft Defender ウイルス対策について説明します
 keywords: Microsoft Defender ウイルス対策、次世代テクノロジ、ウイルス対策サンプル申請、次世代 AV、機械学習、マルウェア対策、セキュリティ、防御、クラウド、クラウド配信の保護
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 07/22/2021
-ms.openlocfilehash: d9330a2ce9403885e3a843619a07aaf5b5ca5847
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c2fafe62c5fecbc1e7ed9f7e622daf6a1b6c7faa
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253560"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58510047"
 ---
 # <a name="cloud-delivered-protection-antivirus-sample-submission"></a>クラウド配信の保護ウイルス対策サンプルの申請
 
@@ -28,14 +28,14 @@ Microsoft Defender for Endpoint Antivirus (Defender for Endpoint Antivirus) は�
 
 ## <a name="microsoft-defender-for-endpoint-antivirus-cloud-protection-overview"></a>Microsoft Defender for Endpoint Antivirus クラウド保護の概要
 
-クラウド保護は、Defender for Endpoint Antivirus で既定で有効になっています。 お客様は、Defender for Endpoint Antivirus でクラウド保護を無効にしない方が推奨されます。  クラウド保護を有効にすると、Defender for Endpoint ウイルス対策がクラウドに提供する情報 (サンプル申請を含む) を構成できます。 クラウド保護が有効になっているのは、他の特性に基づいて高信頼度の判断ができない場合に便利です。
+クラウド保護は、Defender for Endpoint Antivirus で既定で有効になっています。 お客様は、Defender for Endpoint Antivirus でクラウド保護を無効にしない方が推奨されます。 クラウド保護を有効にすると、Defender for Endpoint ウイルス対策がクラウドに提供する情報 (サンプル申請を含む) を構成できます。 クラウド保護が有効になっているのは、他の特性に基づいて高信頼度の判断ができない場合に便利です。
 サンプル申請を構成すると、その動作に関する質問が発生します。たとえば、データの格納方法と使用方法などです。 最も疑問を生む 3 つのクラウド保護サンプル提出オプションは次のとおりです。
 
 - "安全なサンプルを自動的に送信する" (既定の動作)
-- "すべてのサンプルを自動的に送信する"  
-- "サンプルを送信しない"  
+- "すべてのサンプルを自動的に送信する"
+- "サンプルを送信しない"
 
-Intune、Configuration Manager、GPO、または PowerShell を使用した構成オプションの詳細については、「クラウドによる保護を有効にする」を参照[Microsoft Defender ウイルス対策。](enable-cloud-protection-microsoft-defender-antivirus.md)  
+Intune、Configuration Manager、GPO、または PowerShell を使用した構成オプションの詳細については、「クラウドによる保護を有効にする」を参照[Microsoft Defender ウイルス対策。](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 ## <a name="customer-data-cloud-protection-and-sample-submission"></a>顧客データ、クラウド保護、サンプル申請
 
@@ -63,7 +63,7 @@ Defender for Endpoint ウイルス対策およびクラウド保護は、次の�
 
 4. エンドポイントで実行されている Defender for Endpoint ウイルス対策が、疑わしいファイルの意図を確認するためにより多くのインテリジェンスを必要とする場合に、高度なクラウドベースの保護が提供されます。
 
-   1. Microsoft Defender for Endpoint ウイルス対策で明確な判断ができない場合、ファイル メタデータはクラウド保護サービスに送信されます。 通常、クラウド保護サービスは、ファイルが安全か悪意のあるかをミリ秒単位で判断できます。  
+   1. Microsoft Defender for Endpoint ウイルス対策で明確な判断ができない場合、ファイル メタデータはクラウド保護サービスに送信されます。 通常、クラウド保護サービスは、ファイルが安全か悪意のあるかをミリ秒単位で判断できます。
       - ファイル メタデータのクラウド クエリは、動作、Web のマーク、または明確な判定が決定されないその他の特性の結果である可能性があります。
       - クリーンとマルウェアの評決に達する目的で、小さなメタデータ ペイロードが送信されます。
       - メタデータには、PE 属性、静的ファイル属性、動的属性、コンテキスト属性などがあります (図 1)。
@@ -83,7 +83,7 @@ Defender for Endpoint ウイルス対策およびクラウド保護は、次の�
 
       3. **すべてのサンプルを自動的に送信する**
          - 構成されている場合、すべてのサンプルが自動的に送信されます
-         - Word ドキュメントに埋め込まれたマクロを含めるサンプル申請を行う場合は、[すべてのサンプルを自動的に送信する] を選択する必要があります。  
+         - Word ドキュメントに埋め込まれたマクロを含めるサンプル申請を行う場合は、[すべてのサンプルを自動的に送信する] を選択する必要があります。
          - この設定は、macOS クラウド保護では使用できません
 
       4. **送信しない**
@@ -93,34 +93,34 @@ Defender for Endpoint ウイルス対策およびクラウド保護は、次の�
 
    3. メタデータやファイルが Defender for Endpoint クラウドに送信された後、サンプル、起案、またはビッグデータ分析機械学習モデルを使用して、評決に達することができます。  このモデルを図 3 に示します。 クラウド配信の保護をオフにした場合、分析はローカルの機械学習モデルや同様の機能を通じてクライアントが提供できる機能にのみ制限されます。
 
-_図 1 - Microsoft Defender クラウド保護に送信されるメタデータの例_
+_図 1 - Microsoft Defender クラウド保護に送信されるメタデータの例_:
 
 :::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="図 1.Microsoft Defender Cloud Protection に送信されるメタデータの例":::
 
-_図 2.クラウド配信の保護フロー_
+_図 2.クラウド配信の保護フロー_:
 
 :::image type="content" source="images/cloud-protection-flow.png" alt-text="図 2.クラウド配信の保護フロー":::
 
-_図 3.クラウドによる保護とレイヤー化された機械学習_
+_図 3.クラウドによる保護と層化された機械学習_:
 
 :::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="図 3.クラウドによる保護とレイヤー化された機械学習":::
 
-> [!Note]
+> [!NOTE]
 >
 > 「一目でブロックする (BAFS)」という語句も聞いたことがあります。 BAFS は、より正確な評決を提供する起訴など、クラウドが提供できるより広範な分析を指します。 これには、クラウド保護による尋問の下にあるファイルの開きを、評決に達するまで遅らせる場合もあります。 "サンプル申請" を無効にした場合、BAFS は無効になり、より広範な分析を行う必要があり、ファイル メタデータの分析にのみ限定されます。
 
 ## <a name="cloud-delivered-protection-levels"></a>クラウドによって提供される保護レベル
 
-マルウェア検出では、可能な限り強力な保護を提供する一方で、誤検知の数を最小限に抑えることのバランスを取る必要があります。 異なる環境では、保護に対する許容範囲と誤検知のリスクがあります。 クラウド配信の保護レベルを使用すると、お客様は特定の環境に適した許容範囲レベルを定義できます。 クラウド配信保護を有効にした場合、正当なファイルを検出するリスクを高めることなく、強力な検出を提供するように保護レベルが自動的に構成されます。 別の保護レベルを構成する場合は、「クラウド配信の保護レベルを指定する」を参照[Microsoft Defender ウイルス対策。](specify-cloud-protection-level-microsoft-defender-antivirus.md)  
+マルウェア検出では、可能な限り強力な保護を提供する一方で、誤検知の数を最小限に抑えることのバランスを取る必要があります。 異なる環境では、保護に対する許容範囲と誤検知のリスクがあります。 クラウド配信の保護レベルを使用すると、お客様は特定の環境に適した許容範囲レベルを定義できます。 クラウド配信保護を有効にした場合、正当なファイルを検出するリスクを高めることなく、強力な検出を提供するように保護レベルが自動的に構成されます。 別の保護レベルを構成する場合は、「クラウド配信の保護レベルを指定する」を参照[Microsoft Defender ウイルス対策。](specify-cloud-protection-level-microsoft-defender-antivirus.md)
 
-> [!Note]
+> [!NOTE]
 >
 > 保護レベルを変更すると、誤検知のレベルが高くなる可能性があります。変更する前に注意深く評価する必要があります。
 >
 
 ## <a name="other-file-sample-submission-scenarios"></a>その他のファイルサンプル提出シナリオ
 
-Defender for Endpoint では、上記のクラウド保護設定に関連しないファイル サンプルを要求するシナリオが 2 つ追加されています。  
+Defender for Endpoint では、上記のクラウド保護設定に関連しないファイル サンプルを要求するシナリオが 2 つ追加されています。
 
 ### <a name="manual-file-sample-collection-by-security-admin-from-defender-for-endpoint-management-portal"></a>Defender for Endpoint Management Portal からのセキュリティ管理者による手動ファイル サンプル コレクション
 

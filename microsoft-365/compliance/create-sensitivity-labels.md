@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: 63a798d0656fbbdd0bd78cf47974befa3dad7b42d2413a98486504f6c5cf3e96
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4b37aeecabdeaef3afebb7144330a5c9df811729
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851480"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508120"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -101,7 +101,7 @@ ms.locfileid: "53851480"
 
 - ユーザーがローカル言語でラベル名とヒントを表示できるように、多国籍の展開では *LocaleSettings* パラメーターを使用します。 [次のセクション](#example-configuration-to-configure-a-sensitivity-label-for-different-languages)には、フランス語、イタリア語、ドイツ語のラベル名とヒントのテキストを指定する設定例があります。
 
-- Azure Information Protection 統合ラベリング クライアントの場合のみ、ラベルの色の設定やラベルが適用されたときにカスタムプロパティを適用するなどの[詳細設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)を指定することもできます。 完全なリストについては、このクライアントの管理ガイドの「[利用できるラベルの詳細設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)」を参照してください。
+- Azure Information Protection 統合ラベル付けクライアントは、ラベルの色の設定やラベルの適用時のカスタム プロパティの適用など、[高度な設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)の広範な一覧をサポートします。 完全なリストについては、このクライアントの管理ガイドの「[利用できるラベルの詳細設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)」を参照してください。
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>異なる言語向けに機密ラベルを構成する構成例
 
@@ -181,8 +181,12 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 Windows、macOS、iOS、Android の Office アプリに組み込みのラベル付けを使用すると、ユーザーには 4 時間以内に新しいラベルが表示されます。web 上のWord、Excel、PowerPoint の場合は更新を行ってから 1 時間以内に新しいラベルが表示されます。ただし、変更がすべてのアプリとサービスに複製されるまでに最大 24 時間かかります。
 
-> [!NOTE]
-> 機密ラベルをサポートする他のアプリやサービスは、独自の更新スケジュールとポリシー更新のトリガーを使用して、24 時間以上頻繁に更新される場合があります。 詳細については、ドキュメントを確認してください。 たとえば、Azure Information Protection 統合ラベル付けクライアントの場合は、「[Azure Information Protection クライアントの詳細な比較](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients)」表の「**ポリシーの更新**」行を参照してください。
+機密ラベルをサポートする他のアプリやサービスは、独自の更新スケジュールとポリシー更新のトリガーを使用して、24 時間以上頻繁に更新される場合があります。 詳細については、ドキュメントを確認してください。 たとえば、Azure Information Protection 統合ラベル付けクライアントの場合は、「[Azure Information Protection クライアントの詳細な比較](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients)」表の「**ポリシーの更新**」行を参照してください。
+
+> [!TIP]
+> 機密ラベルとラベル ポリシーの動作が期待よりも遅れる可能性があるタイミングの依存関係を考慮に入れる必要があります。 たとえば、暗号化を適用するラベルに対して [Azure Information Protection](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) サービスによる新しいグループおよびグループ メンバーシップの変更、ネットワーク レプリケーションの待機時間と帯域幅制限、およびグループ メンバーシップのキャッシュを設定します。
+> 
+> それぞれ独自のタイミング サイクルを持つ多くの外部依存関係では、最近の変更に対するラベルとラベル ポリシーのトラブルシューティングを実施する前に 24 時間待機することをお考えください。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>セキュリティ/コンプライアンス センターの PowerShell を含むその他のラベル ポリシー設定
 

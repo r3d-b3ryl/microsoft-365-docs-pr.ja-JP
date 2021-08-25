@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: 1310ec8aafc41276e8c2e4e13d93310a4400d95d376b61612df30959683e019e
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 8b040f0de8ba510582e5201e7722137d164f2880
+  ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53869718"
+  ms.lasthandoff: 08/25/2021
+  ms.locfileid: "58509595"
 title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -49,7 +49,8 @@ sections:
       ライセンスの詳細については、「Windows ライセンス」を参照し[](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)Windows 10ボリューム ライセンス ガイド[を](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)参照Windows 10。
   - question: >
       E3 ライセンスを持っている場合、ASR はサポートされていますか?
-    answer: "はい。 ASR は E3 以上Windows Enterpriseサポートされています。 \n"
+    answer: >
+      はい。 ASR は E3 以上Windows Enterpriseサポートされています。
   - question: >
       E5 ライセンスでサポートされている機能は何ですか?
     answer: >
@@ -75,11 +76,11 @@ sections:
 
       |ルールの名前|GUID|ファイル&フォルダーの除外|
 
-      |:--|:--|:--|
+      |---|---|---|
 
-      |JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|d3e037e1-3eb8-44c8-a917-57927947596d|サポートされていません|
+      |JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|d3e037e1-3eb8-44c8-a917-57927947596d|非サポート|
 
-      |WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|サポートされていません|
+      |WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|非サポート|
 
 
       ASR ルールの除外は、ワイルドカード、パス、および環境変数をサポートします。 ASR ルールでワイルドカードを使用する方法の詳細については、「ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する [」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。
@@ -175,7 +176,14 @@ sections:
       ルールを監査モードで約 30 日間保持し、組織全体でルールが運用される場合の動作に関する良好なベースラインを取得します。 監査期間中は、ルールによってブロックされる可能性のある任意の業務用アプリケーションを特定し、除外するルールを構成できます。
   - question: >
       サードパーティのセキュリティ ソリューションから Defender for Endpoint への切り替えを行っています。 別のセキュリティ ソリューションから ASR にルールをエクスポートする "簡単な" 方法はありますか?
-    answer: "ほとんどの場合、別のセキュリティ ソリューションからルールをインポートするよりも [、Defender for Endpoint](/windows/security/threat-protection) が提案するベースライン推奨事項から始める方が簡単で優れた方法です。 次に、監査モード、監視、分析などのツールを使用して、独自のニーズに合わせて新しいソリューションを構成します。 \n\nほとんどの ASR ルールの既定の構成は、Defender for Endpoint のリアルタイム保護と組み合わせて、多数の悪用や脆弱性から保護されます。\n\nDefender for Endpoint 内から、カスタム インジケーターを使用して防御を更新し、特定のソフトウェア動作を許可およびブロックできます。 ASR では、ファイルとフォルダーの除外の形式でルールをカスタマイズすることもできます。 一般的なルールとして、一期間ルールを監査し、ブロックされる可能性がある任意の業務アプリケーションの除外を構成するのが最善です。\n"
+    answer: >
+      ほとんどの場合、別のセキュリティ ソリューションからルールをインポートするよりも [、Defender for Endpoint](/windows/security/threat-protection) が提案するベースライン推奨事項から始める方が簡単で優れた方法です。 次に、監査モード、監視、分析などのツールを使用して、独自のニーズに合わせて新しいソリューションを構成します。
+
+
+      ほとんどの ASR ルールの既定の構成は、Defender for Endpoint のリアルタイム保護と組み合わせて、多数の悪用や脆弱性から保護されます。
+
+
+      Defender for Endpoint 内から、カスタム インジケーターを使用して防御を更新し、特定のソフトウェア動作を許可およびブロックできます。 ASR では、ファイルとフォルダーの除外の形式でルールをカスタマイズすることもできます。 一般的なルールとして、一期間ルールを監査し、ブロックされる可能性がある任意の業務アプリケーションの除外を構成するのが最善です。
   - question: >
       ASR は、パスにシステム変数とワイルドカードを含むファイルまたはフォルダーの除外をサポートしていますか?
     answer: >

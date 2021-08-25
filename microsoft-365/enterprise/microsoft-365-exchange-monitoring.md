@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Exchange Online の監視を使用して、Microsoft 365 でのメールのインシデントや勧告の情報について確認します。
-ms.openlocfilehash: e3d0761cffdf9cffdf044476a2e29cef00e77d09
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 4de4104f3112126b20d51fb6fcf0616cd413b884
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503017"
+ms.locfileid: "58506444"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 の Exchange Online の監視
 
@@ -36,11 +36,11 @@ Microsoft 365 管理センターで Exchange Online の監視を使用して、�
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text="Microsoft 365 管理センターの [サービス正常性] ページ":::
 
-**[組織の問題]** の **[正常性]** 列の値は、組織のインフラストラクチャまたはサードパーティ製のソフトウェアが、組織のユーザーの Exchange Online におけるサービス正常性のエクスペリエンスに影響を与えるかどうかを示します。 勧告やインシデントを解決するには、*ユーザー* によるアクションが必要です。
+**[組織の問題]** の **[正常性]** の列の値は、組織のインフラストラクチャまたはサードパーティ製のソフトウェアが、組織のユーザーの Exchange Online におけるサービス正常性のエクスペリエンスに影響を与えるかどうかを示します。 勧告やインシデントを解決するには、*ユーザー* のアクションが必要です。
 
 **[Microsoft サービス正常性]** の **[正常性]** 列の値は、サービスが正常な状態にあるか、Microsoft が維持するクラウド サービスに基づいて勧告やインシデントがあるかどうかを示します。
 
-以下は、Microsoft 365 管理センターの Exchange Online の監視ページで、組織レベルのシナリオにおいて正常性を示しています。これは、**[正常性] > [サービス正常性] > [Exchange Online]** から利用できます。
+以下は、Microsoft 365 管理センターの Exchange Online の監視ページで、組織レベルのシナリオにおいて正常性の一例を示しています。これは、**[正常性] > [サービス正常性] > [Exchange Online]** から利用できます。
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png" alt-text="Microsoft 365 管理センターの Exchange Online の監視ページ":::
 
@@ -50,13 +50,13 @@ Microsoft 365 管理センターで Exchange Online の監視を使用して、�
 
 このプレビューは、次の要件を満たしているお客様に対して有効になっています。 
 
-- 組織に Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 の製品のいずれか 1 つまたは組み合わせから 5,000 個以上のライセンス数が必要です。
+- 組織には Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5 の製品のいずれか 1 つまたは組み合わせから 5,000 個以上のライセンス数が必要です。
 
   たとえば、組織は Office 365 E3 のライセンスを 3,000 個と Microsoft 365 E5 のライセンスを 2,500 個持つことで、条件を満たす製品から合計 5,500 個のライセンスを持つことができます。
 
 - 組織に月間 50 人以上のアクティブな Exchange Online ユーザーが必要です。
 
-- サービス正常性ダッシュボード レベルのアクセス許可を持つすべての役割は、Exchange Online の監視にアクセスできます。 詳細については、「[Microsoft 365 サービス正常性を確認する方法](view-service-health.md)」を参照してください。
+- サービス正常性ダッシュボード レベルのアクセス許可のあるロールは、Exchange Online の監視にアクセスできます。 詳細については、「[Microsoft 365 サービス正常性を確認する方法](view-service-health.md)」を参照してください。
 
 ## <a name="organization-level-scenarios"></a>組織レベルのシナリオ
 
@@ -71,20 +71,20 @@ Exchange Online の監視は次のシナリオをサポートしています。
   - Outlook Mac クライアント
   - Outlook on the web を開きます。
 
-   これらのクライアントについては、メールを読んでいるユーザーに基づいて過去 30 分間のアクティブ ユーザー数を表示すると共に、ダッシュボードのインシデントと勧告の数も表示できます。 問題がないか確認するため、このデータは前週と同じ間隔と比較されます。
+   これらのクライアントについては、メールを読んでいるユーザーに基づいて過去 30 分間のアクティブ ユーザー数を表示すると共に、ダッシュボードのインシデントと勧告の数も表示できます。 このデータは、問題があるかどうかを確認するために、前の週の同じ間隔と比較されます。
 
    >[!Note]
    > アクティブ ユーザー数は、ユーザーがメールを読むときなど、1 つのアクティビティによって測定されます。 過去 30 分間のアクティビティだけを把握しています。
 
 - **アプリ接続**: 推定接続は、組織のデバイスと Exchange Online 間の成功した代理接続の割合に基づいており、Microsoft の管理外の問題が含まれる場合があります。 
 
-- **メール フロー**: メッセージが Microsoft 365 ネットワークに配信された後に直ちに受信トレイに送信されたメッセージの数。
-
 - **基本認証と先進認証**: Exchange Online サービスで正常に検証されたユーザー数。
 
-![メール配信における Exchange の正常性を監視する例](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+- **メール フロー**: メッセージが Microsoft 365 ネットワークに到達後、遅延なくメールボックスに正常に配信されたメッセージの数。
 
-これらすべてのシナリオにおいて、鍵となる数字はメイン ダッシュボードでの過去 30 分間のものです。 これらの各シナリオの詳細表示には、7 日間のほぼリアルタイムの傾向が、前週との比較された 30 分間の集計関数と共に表示されます。
+  ![メール配信における Exchange の正常性を監視する例](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+
+これらのシナリオでは、主要な数値はメイン ダッシュボードの過去 30 分間です。 これらの各シナリオの詳細表示には、前の週と比較した 30 分の集計で、7 日間のほぼリアルタイムの傾向が示されます。
 
 ## <a name="send-us-feedback"></a>フィードバックを送信する
 
@@ -112,7 +112,7 @@ Exchange Online の監視は次のシナリオをサポートしています。
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. 各クライアントのダッシュボードのアクティブ ユーザー数が少なく表示されます。 しかし、多くの有効なライセンスがユーザーにアサインされています。 これはどういうことですか?
 
-監視に表示されるアクティブ ユーザー数は、機能が呼び出したアクティビティをユーザーが実行した 30 分間のウィンドウに基づいています。 これは、使用数とは異なることに注意してください。 使用数を表示するには、Microsoft 365 管理センターでアクティビティ レポートを使用してください (**[レポート] > [使用状況]**)。
+監視に表示されるアクティブ ユーザー数は、機能が呼び出したアクティビティをユーザーが実行した 30 分間のウィンドウに基づいています。 これを使用数と混同しないように注意してください。 使用数を表示するには、Microsoft 365 管理センターでアクティビティ レポートを使用してください (**[レポート] > [使用状況]**)。
 
 #### <a name="3-will-there-be-other-monitoring-scenarios-for-other-services-such-as-teams-and-sharepoint"></a>3. Teams や SharePoint などの他のサービスに対する他の監視シナリオは追加されますか?
 
@@ -126,7 +126,7 @@ Microsoft は、Exchange Online の監視を Microsoft 365 管理センターの
 
 #### <a name="5-is-this-a-free-included-or-paid-extra-feature"></a>5. この機能は無料 (ライセンス付属) と有料 (追加コンテンツ) のどちらですか? 
 
-これはプレビューの段階にある無料の機能で、質問 1 での要件を満たしたユーザーのみ利用できます。 このコンテンツを利用するための有料オプションはありません。
+これはプレビュー段階にある無料の機能で、質問 1 での要件を満たしたユーザーのみが利用できます。 このコンテンツを利用するための有料オプションはありません。
 
 #### <a name="6-how-do-i-provide-feedback"></a>6. フィードバックを送信するにはどうすればいいですか?
 
@@ -140,7 +140,7 @@ Microsoft は、Exchange Online の監視を Microsoft 365 管理センターの
 
 #### <a name="8-are-there-any-privacy-concerns"></a>8. プライバシーに関する懸念はありますか?
 
-監視はサービス メタデータに重点を置き、ユーザー コンテンツは監視されません。
+監視はサービス メタデータに重点を置ており、ユーザー コンテンツは監視されません。
 
 ## <a name="see-also"></a>関連項目
 
