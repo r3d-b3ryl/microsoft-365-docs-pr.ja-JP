@@ -477,6 +477,7 @@
 ####### [アラート メソッドとプロパティ](alerts.md)
 ####### [アラートの一覧表示](get-alerts.md)
 ####### [アラートの作成](create-alert-by-reference.md)
+####### [アラートのバッチ更新](batch-update-alerts.md)
 ####### [アラートの更新](update-alert.md)
 ####### [ID でアラート情報を取得する](get-alert-info-by-id.md)
 ####### [アラート関連のドメイン情報を取得する](get-alert-related-domain-info.md)

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: 9fbe99e07a9fa881656df15e2be1d673f87bc523
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5cebf4f53a331712df6a480a6d813da7232b5858
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58251907"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502917"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -77,7 +77,7 @@ ms.locfileid: "58251907"
 
 また、役割の一方または両方をカスタム役割グループに割り当てて、コンテンツ エクスプローラーへのアクセスをカスタマイズすることもできます。
 
-グローバル管理者、コンプライアンス管理者、またはデータ管理者は、必要な コンテンツ エクスプローラーのリスト ビューアー、および コンテンツ エクスプローラーのコンテンツ ビューアー の役割グループのメンバーシップを割り当てることができます。
+グローバル管理者は、必要なコンテンツ エクスプローラーのリスト ビューアーとコンテンツ エクスプローラーのコンテンツ ビューアーの役割グループ メンバーシップを割り当てることができます。
 
 ## <a name="content-explorer"></a>コンテンツ エクスプローラー
 

@@ -322,6 +322,8 @@
               href: integrate-microsoft-365-defender-secops-use-cases.md
             - name: 手順 6. SOC メンテナンス タスク
               href: integrate-microsoft-365-defender-secops-tasks.md
+        - name: Power Automate を使用する
+          href: use-power-automate.md
     - name: 使い方ガイド
       items:
         - name: 試用版ラボまたはパイロット環境を作成する
