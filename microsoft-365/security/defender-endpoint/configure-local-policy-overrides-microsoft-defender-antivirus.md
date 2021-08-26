@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: f83c62b3ae642bcff59910f668d2915bb143b8e42f818eb33d014b5540a8e30a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d70d35bc1e2baa795e024da79ea613087bf511d4
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857741"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533413"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーがポリシー設定をローカルで変更Microsoft Defender ウイルス対策または許可する
 
@@ -54,21 +54,21 @@ ms.locfileid: "53857741"
 
 5. グループ ポリシー オブジェクトを通常どおり展開します。
 
-場所 | Setting | 記事
+Location|設定|記事
 ---|---|---|---
-MAPS | Microsoft MAPS へのレポート用にローカル設定の上書きを構成する | [クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md)
-検疫する | 検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する | [スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md)
-リアルタイム保護 | コンピューター上のファイルとプログラムのアクティビティを監視するローカル設定の上書きを構成する | [常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
-リアルタイム保護 | 受信および送信ファイルのアクティビティを監視するローカル設定の上書きを構成する | [常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
-リアルタイム保護 | ダウンロードしたファイルと添付ファイルをスキャンするローカル設定の上書きを構成する | [常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
-リアルタイム保護 | オンの動作監視用にローカル設定の上書きを構成する | [常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
-リアルタイム保護 | ローカル設定の上書きを構成してリアルタイム保護を有効にする | [常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
-修復 | スケジュールされたフル スキャンを実行して修復を完了するために、時刻のローカル設定の上書きを構成する | [スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md)
-スキャン | CPU 使用率の最大割合に対するローカル設定の上書きを構成する | [スキャンの構成と実行](run-scan-microsoft-defender-antivirus.md)
-スキャン | スケジュール スキャン日のローカル設定の上書きを構成する | [スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-スキャン | スケジュールされたクイック スキャン時間のローカル設定の上書きを構成する | [スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-スキャン | スケジュールされたスキャン時間のローカル設定の上書きを構成する | [スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-スキャン | スケジュールされたスキャンに使用するスキャンの種類のローカル設定の上書きを構成する | [スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+MAPS|Microsoft MAPS へのレポート用にローカル設定の上書きを構成する|[クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md)
+検疫する|検疫フォルダーからアイテムを削除するローカル設定の上書きを構成する|[スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md)
+リアルタイム保護|コンピューター上のファイルとプログラムのアクティビティを監視するローカル設定の上書きを構成する|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
+リアルタイム保護|受信および送信ファイルのアクティビティを監視するローカル設定の上書きを構成する|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
+リアルタイム保護|ダウンロードしたファイルと添付ファイルをスキャンするローカル設定の上書きを構成する|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
+リアルタイム保護|オンの動作監視用にローカル設定の上書きを構成する|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
+リアルタイム保護|ローカル設定の上書きを構成してリアルタイム保護を有効にする|[常時オンのMicrosoft Defender ウイルス対策監視を有効にして構成する](configure-real-time-protection-microsoft-defender-antivirus.md)
+修復|スケジュールされたフル スキャンを実行して修復を完了するために、時刻のローカル設定の上書きを構成する|[スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md)
+スキャン|CPU 使用率の最大割合に対するローカル設定の上書きを構成する|[スキャンの構成と実行](run-scan-microsoft-defender-antivirus.md)
+スキャン|スケジュール スキャン日のローカル設定の上書きを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+スキャン|スケジュールされたクイック スキャン時間のローカル設定の上書きを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+スキャン|スケジュールされたスキャン時間のローカル設定の上書きを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+スキャン|スケジュールされたスキャンに使用するスキャンの種類のローカル設定の上書きを構成する|[スケジュールされたスキャンを構成する](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 
 <a id="merge-lists"></a>
 
@@ -93,7 +93,7 @@ MAPS | Microsoft MAPS へのレポート用にローカル設定の上書きを�
 > [!NOTE]
 > ローカル リストの結合を無効にすると、フォルダー アクセスの制御設定が上書きされます。 また、ローカル管理者が設定した保護されたフォルダーまたは許可されたアプリも上書きされます。 フォルダー アクセスの制御設定の詳細については、「アプリでブロック[されたアプリ](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security)を許可する」を参照Windows セキュリティ。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [ユーザーとのエンド ユーザー操作を構成Microsoft Defender ウイルス対策](configure-end-user-interaction-microsoft-defender-antivirus.md)

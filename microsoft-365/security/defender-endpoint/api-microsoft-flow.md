@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 44db65f08c84cdcce819773958881320d7c99705
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 1f61fa2e2d5231d6e9c6a879a0827144282f1285
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507784"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533257"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前はMicrosoft Flow)、Azure Functions
 
@@ -37,7 +37,7 @@ ms.locfileid: "58507784"
 
 セキュリティ手順の自動化は、最新のセキュリティ 運用センターの標準要件です。 専門的なサイバー防御者がいないので、SOC は最も効率的な方法で作業し、自動化が必要です。 Microsoft Power Automateは、このために正確に構築されたさまざまなコネクタをサポートしています。 数分以内にエンドツーエンドのプロシージャオートメーションを構築できます。
 
-Microsoft Defender API には、多くの機能Flow公式のコネクタがあります。
+Microsoft Defender API には、多くの機能Power Automate公式のコネクタがあります。
 
 ![編集資格情報のイメージ1](images/api-flow-0.png)
 

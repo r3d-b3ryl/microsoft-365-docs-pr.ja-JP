@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター地域のOffice 365サービスに移行するために何が変わったかを理解します。'
-ms.openlocfilehash: cacc6d75b890585aa7b219b8bbb8f49b3f2d6714fe4502fe1b6b1030f54b9763
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 42ac9e61632305a9e75bf7ba9de2cec3e3d658fb
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885173"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531517"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター地域Office 365サービスへの移行後に何が変わるか
 
@@ -66,7 +66,7 @@ ms.locfileid: "53885173"
 
 - テナントが新しいサービスに移行Office 365、ドイツ固有のサブスクリプションとライセンスは、新しいサービスサービスOffice 365標準化されます。 対応Office 365サービスサブスクリプションは、転送されたドイツのサブスクリプションに対して購入されます。 ドイツのライセンスを持つユーザーには、サービス Office 365割り当てられます。 完了すると、従来のドイツのサブスクリプションは取り消され、現在のサービス Office 365から削除されます。
 
-- 個々のワークロードの移行後、新しい Office 365 サービス サブスクリプションのために、Office 365 サービス (Microsoft Planner や Microsoft Flow など) を通じて追加の機能が利用できます。 組織に適した場合、テナントまたはライセンス管理者は、新しいサービスを導入する変更管理を計画している間、新しいサービス プランを無効にできます。 ユーザーのライセンスに割り当てられているサービス プランを無効にする方法のガイダンスについては、「ユーザー ライセンスを割り当てながら、Microsoft 365 サービスへのアクセスを無効にする」を[参照してください](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses)。
+- 個々のワークロードの移行後、新しい Office 365 サービス サブスクリプションのために、Office 365 サービス (Microsoft Planner や Power Automate など) を通じて追加の機能が利用できます。 組織に適した場合、テナントまたはライセンス管理者は、新しいサービスを導入する変更管理を計画している間、新しいサービス プランを無効にできます。 ユーザーのライセンスに割り当てられているサービス プランを無効にする方法のガイダンスについては、「ユーザー ライセンスを割り当てながら、Microsoft 365 サービスへのアクセスを無効にする」を[参照してください](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses)。
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -105,7 +105,7 @@ Office 365ビデオは 2021 年 3 月 1 日に廃止され、SharePoint Online �
 
 [移行フェーズのアクションと影響について理解する](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ組織のネットワーク Office 365で動作するエンドポイントを管理する方法について説明します。
-ms.openlocfilehash: 4c6f291627fc3b0b24f53ef3dd11698dba7d1fa4958886dd8f70ce7f34ccb9e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a8460dbc9dbbc8b7b7a5a8e720b8c55c0ed918c
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870564"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532657"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 
@@ -111,11 +111,11 @@ Office 365 IP アドレスと URL Web サービスを使用して、変更通知
 
 Office 365 IP アドレスと URL の Web サービスでは、Outlook で登録できる RSS フィードが提供されます。Office 365 サービス インスタンス固有の各ページに、IP アドレスと URL の RSS URL へのリンクがあります。詳細については、「[Office 365 IP アドレスと URL の Web サービス](microsoft-365-ip-web-service.md)」を参照してください。
 
-### <a name="change-notification-and-approval-review-using-microsoft-flow"></a>Microsoft Flow を使用した変更通知および承認確認
+### <a name="change-notification-and-approval-review-using-power-automate"></a>ユーザーを使用して通知と承認のレビューをPower Automate
 
-毎月行われるネットワーク エンドポイントの変更を手動で処理する必要がある方もいらっしゃるでしょう。Microsoft Flow を使用すれば、Office 365 のネットワーク エンドポイントに変更があったときに、電子メールで通知し、必要に応じて、変更の承認プロセスを実行するフローを作成できます。確認が完了したら、ファイアウォールとプロキシ サーバーの管理チームに、自動的に電子メールで変更を通知するように設定できます。
+毎月行うネットワーク エンドポイントの変更に対して手動で処理する必要がある場合があります。 Power Automateを使用して、電子メールで通知するフローを作成し、必要に応じて、ネットワーク エンドポイントに変更がある場合に変更の承認プロセスOffice 365実行できます。 確認が完了すると、ファイアウォールとプロキシ サーバー管理チームに変更を自動的にメールで送信できます。
 
-Microsoft Flow のサンプルおよびテンプレートの詳細については、「[Microsoft Flow を使用して、Office 365 IP アドレスや URL への変更のメール通知を受け取る](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)」を参照してください。
+サンプルとテンプレートの詳細Power Automate、IP アドレスと URL の変更Power Automateメールを受信するOffice 365[を参照してください](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)。
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Office 365 のネットワーク エンドポイントについてよく寄せられる質問
@@ -216,7 +216,7 @@ Office 365 を使用しようとして、サード パーティのサービス�
 
 Office 365 では、必要なすべてのネットワークエンド ポイント用 IP アドレスは提供されません。 一部は URL としてだけ提供され、既定に分類されます。 必須の既定のカテゴリの URL は、プロキシ サーバー経由で許可する必要があります。 プロキシ サーバーを使用しない場合は、ユーザーが Web ブラウザーのアドレス バーに入力する URL の Web 要求を構成した方法を確認します。ユーザーは IP アドレスも指定しません。 IP Office 365を提供しない既定のカテゴリ URL は、同じ方法で構成する必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 IP アドレスと URL の Web サービス](microsoft-365-ip-web-service.md)
 

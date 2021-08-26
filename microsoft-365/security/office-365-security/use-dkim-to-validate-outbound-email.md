@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a7b1522046926fb0ec3998564f83fdb3d28cb74
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d9f425f94843f2e37026a87a5eab2c8743acc494
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258432"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533269"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -87,7 +87,7 @@ SPF ではメッセージ エンベロープに情報を追加しますが、DKI
 テナントの承認済みドメインはすべて、Microsoft 365 Defender ポータルの DKIM ページに表示されます。 表示されない場合は、[ドメイン ページ](/microsoft-365/admin/setup/add-domain#add-a-domain)から承認済みドメインを追加します。
 ドメインが追加されたら、以下に示す手順に従って DKIM を構成します。
 
-手順 1: DKIM ページで DKIM を構成するドメインをクリックします。
+手順 1: DKIM ページで DKIM を構成するドメインをクリックします (https://security.microsoft.com/dkimv2 または https://protection.office.com/dkimv2)。
 
 ![ドメインが選択された Microsoft 365 Defender ポータルの DKIM ページ](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 

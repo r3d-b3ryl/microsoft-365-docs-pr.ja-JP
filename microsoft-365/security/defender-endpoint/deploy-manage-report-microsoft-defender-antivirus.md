@@ -16,12 +16,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 57f6f836948f377ad92234298c9935e80f27b2fc03f1e6d3f7f872e1107bf395
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf5796a7df38601c7af79ec7bd11f124865e31af
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863669"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532837"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>アプリの展開、管理、レポートMicrosoft Defender ウイルス対策
 
@@ -46,17 +46,17 @@ ms.locfileid: "53863669"
 > [!IMPORTANT]
 > ほとんどの場合、実行中Windows 10最新Microsoft Defender ウイルス対策ウイルス対策製品が見Microsoft Defender ウイルス対策場合、ウイルス対策ソフトウェアは無効になります。 サードパーティのウイルス対策製品が機能する前に、Microsoft Defender ウイルス対策アンインストールする必要があります。 サードパーティのウイルス対策製品を再び有効またはインストールする場合は、Windows 10自動的にMicrosoft Defender ウイルス対策。
 
-ツール|展開オプション (<a href="#fn2" id="ref2">2</a>)|管理オプション (ネットワーク全体の構成とポリシーまたはベースラインの展開) ([3](#fn3))|レポート オプション  
----|---|---|---  
-Microsoft Intune|[Intune でエンドポイント保護設定を追加する](/intune/endpoint-protection-configure)|[Intune でデバイス制限設定を構成する](/intune/device-restrictions-configure)| [Intune コンソールを使用してデバイスを管理する](/intune/device-management)  
-Microsoft エンドポイント マネージャー ([1](#fn1))|ポイント サイト[システムEndpoint Protectionを使用][]し、カスタム[クライアント設定でEndpoint Protectionを有効にする][]|既定[およびカスタマイズされたマルウェア対策ポリシーとクライアント][][管理][]|既定の [Configuration Manager 監視ワークスペースと電子][] メール [通知を使用する][]  
+ツール|展開オプション (<a href="#fn2" id="ref2">2</a>)|管理オプション (ネットワーク全体の構成とポリシーまたはベースラインの展開) ([3](#fn3))|レポート オプション
+---|---|---|---
+Microsoft Intune|[Intune でエンドポイント保護設定を追加する](/intune/endpoint-protection-configure)|[Intune でデバイス制限設定を構成する](/intune/device-restrictions-configure)| [Intune コンソールを使用してデバイスを管理する](/intune/device-management)
+Microsoft エンドポイント マネージャー ([1](#fn1))|ポイント サイト[システムEndpoint Protectionを使用][]し、カスタム[クライアント設定でEndpoint Protectionを有効にする][]|既定[およびカスタマイズされたマルウェア対策ポリシーとクライアント][][管理][]|既定の [Configuration Manager 監視ワークスペースと電子][] メール [通知を使用する][]
 グループ ポリシーと Active Directory (ドメイン参加)|グループ ポリシー オブジェクトを使用して構成の変更を展開し、Microsoft Defender ウイルス対策確認します。|グループ ポリシー オブジェクト (GPO) を使用して、グループ ポリシーの更新オプションを構成[Microsoft Defender ウイルス対策][]機能の[構成Windows Defenderします。][]|エンドポイント レポートは、グループ ポリシーでは使用できません。 グループ ポリシーの一覧を生成して、設定またはポリシーが適用されていない [かどうかを判断できます。][]
 PowerShell|グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager、または個々のエンドポイントに手動で展開します。|Defender モジュール [で使用できる Set-MpPreference] コマンドレットと [Update-MpSignature] コマンドレットを使用します。|Defender モジュールで [使用できる適切な Get- コマンドレットを使用する][]
 Windows Management Instrumentation|グループ ポリシー、グループ ポリシー、Microsoft Endpoint Configuration Manager、または個々のエンドポイントに手動で展開します。|クラスの [Set メソッドと MSFT_MpPreference クラス][] の Update [メソッドをMSFT_MpSignatureします。][]|WMIv2[プロバイダー MSFT_MpComputerStatus][]関連付けられているクラスの get メソッドと Windows Defender[を使用します。][]
 Microsoft Azure|Azure ポータルMicrosoft Antimalware仮想マシン構成を使用するか、または仮想マシンVisual Studioコマンドレットを使用して Azure Azure PowerShell[展開します](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios)。 Azure [Defender* にエンドポイント保護をインストールできます。](/azure/security-center/security-center-install-endpoint-protection)|仮想[Microsoft Antimalwareクラウド サービス](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets)のサーバーを構成するか、Azure PowerShellサンプル[を使用する](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|監視[Microsoft Antimalware有効にするには、仮想マシンとクラウド](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets)サービスのAzure PowerShellコマンドレットを使用します。 Azure Active Directory の利用状況レポートを確認して、疑わしいアクティビティ (感染の可能性がある[][]デバイスレポートを含む) を確認し[、Microsoft Defender ウイルス対策][]イベントを報告し、そのツールを AAD のアプリとして追加する SIEM ツールを構成することもできます。
 
 1. <span id="fn1" />クラウドによる保護に関連する一部の機能と機能の可用性は、Microsoft エンドポイント マネージャー (Current Branch) と System Center Configuration Manager で異なります。 このライブラリでは、現在のブランチWindows 10、Windows Server 2016、Microsoft エンドポイント マネージャーに焦点を当てました。 主[な違いを説明する表については](cloud-protection-microsoft-defender-antivirus.md)、「Microsoft Defender ウイルス対策で Microsoft クラウド提供の保護を使用する」を参照してください。 [(テーブルに戻る)](#ref2)
-  
+
 2. <span id="fn2" />このWindows 10、Microsoft Defender ウイルス対策は、追加のクライアントまたはサービスをインストールまたは展開せずに使用できるコンポーネントです。 サード パーティのウイルス対策製品がアンインストールまたは古い場合に自動的に有効[になります](microsoft-defender-antivirus-on-windows-server.md)(ただし、Windows Server 2016)。 したがって、従来の展開は必要ありません。 ここでの展開とは、エンドポイントまたはサーバーでMicrosoft Defender ウイルス対策コンポーネントが使用可能で有効になっているか確認する方法を指します。 [(テーブルに戻る)](#ref2)
 
 3. <span id="fn3" />製品と保護の更新プログラムの構成を含む機能と保護の構成については、[この](configure-notifications-microsoft-defender-antivirus.md)ライブラリの「Microsoft Defender ウイルス対策機能の構成」セクションで説明します。 [(テーブルに戻る)](#ref2)
@@ -69,7 +69,7 @@ Microsoft Azure|Azure ポータルMicrosoft Antimalware仮想マシン構成を�
 [電子メール通知]:  /configmgr/protect/deploy-use/endpoint-configure-alerts
 [Deploy the Microsoft Intune client to endpoints]: /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
 [custom Intune policy]:  /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#configure-microsoft-intune-endpoint-protection
- [custom Intune policy]:  /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#configure-microsoft-intune-endpoint-protection 
+ [custom Intune policy]:  /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#configure-microsoft-intune-endpoint-protection
 [manage tasks]: /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#choose-management-tasks-for-endpoint-protection
 [Monitor endpoint protection in the Microsoft Intune administration console]: /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#monitor-endpoint-protection
 [クラスの set メソッドMSFT_MpPreferenceします。]:  /previous-versions/windows/desktop/defender/set-msft-mppreference
@@ -89,6 +89,6 @@ Microsoft Azure|Azure ポータルMicrosoft Antimalware仮想マシン構成を�
 
 トピック | 説明
 ---|---
-[保護の展開と有効化Microsoft Defender ウイルス対策する](deploy-microsoft-defender-antivirus.md) | クライアントは Windows 10 のコアパーツとしてインストールされ、従来の展開は適用されませんが、Microsoft Endpoint Configuration Manager、Microsoft Intune、またはグループ ポリシー オブジェクトを使用してエンドポイントでクライアントを有効にする必要があります。 
+[保護の展開と有効化Microsoft Defender ウイルス対策する](deploy-microsoft-defender-antivirus.md) | クライアントは Windows 10 のコアパーツとしてインストールされ、従来の展開は適用されませんが、Microsoft Endpoint Configuration Manager、Microsoft Intune、またはグループ ポリシー オブジェクトを使用してエンドポイントでクライアントを有効にする必要があります。
 [更新Microsoft Defender ウイルス対策を管理し、基準計画を適用する](manage-updates-baselines-microsoft-defender-antivirus.md) | エンドポイントでのクライアントの更新Microsoft Defender ウイルス対策セキュリティ インテリジェンス (保護更新プログラム) の更新の 2 つの部分があります。 セキュリティ インテリジェンスは、さまざまな方法で、Microsoft Endpoint Configuration Manager、PowerShell、WMI を使用して更新できます。
 [保護の監視とMicrosoft Defender ウイルス対策する](report-monitor-microsoft-defender-antivirus.md) | Microsoft Intune、Microsoft Endpoint Configuration Manager、Microsoft Operations Management Suite のコンプライアンス更新アドイン、またはサードパーティの SIEM 製品 (Windows イベント ログを使用) を使用して、保護状態を監視し、エンドポイント保護に関するレポートを作成できます。

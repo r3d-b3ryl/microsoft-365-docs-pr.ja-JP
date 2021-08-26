@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: メタデータを使用してコンテンツを分類し、ラベルを自動的に適用し、イベントベースの保持を使用して保持期間を開始することにより、保持ラベルを使用して SharePoint のドキュメントのライフサイクルを管理する方法。
-ms.openlocfilehash: 6a58e339bd3c99bff85bf933d1cf3e079551c84462fad49874487cc7d4fcb9f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b26cdbe7f2b8f0d6ac3845941418b189cb3d9083
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881293"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533017"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>保持ラベルを使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する
 
@@ -269,7 +269,7 @@ KQL クエリが機能していることを確認したので、KQL クエリを
 
 **管理** > **イベントのレコード** に移動して、Microsoft 365 コンプライアンス センターでイベントを手動で作成できます。 イベントの種類を選択し、正しい資産 ID を設定して、イベントの日付を入力します。 詳細については、[「イベントが発生したときに保持を開始 」](event-driven-retention.md) を参照してください。
 
-ただし、このシナリオでは、外部の生産システムからイベントを自動的に作成します。 このシステムは、製品が生産中であるかどうかを示す単一の SharePoint リストです。 リストに関連付けられた [Power Automate](/flow/getting-started) フローが、イベントをトリガーします。 実際のシナリオでは、HR や CRM システムなど、イベントを生成するさまざまなシステムを使用できます。 Power Automate には、Microsoft Exchange、SharePoint、Teams、Dynamics 365 などの Microsoft 365 ワークロードに加え、Twitter、Box、Salesforce、Workdays などのサード パーティ アプリ向けのすぐに使用できる多くの操作と文書パーツが含まれています。 この機能を使用すると、Power Automate をさまざまなシステムと簡単に統合できます。 詳細については、「[イベント ベースの保持を自動化する](./event-driven-retention.md#automate-events-by-using-a-rest-api)」を参照してください。
+ただし、このシナリオでは、外部の生産システムからイベントを自動的に作成します。 このシステムは、製品が生産中であるかどうかを示す単一の SharePoint リストです。 リストに関連付けられた [Power Automate](/power-automate/getting-started) フローが、イベントをトリガーします。 実際のシナリオでは、HR や CRM システムなど、イベントを生成するさまざまなシステムを使用できます。 Power Automate には、Microsoft Exchange、SharePoint、Teams、Dynamics 365 などの Microsoft 365 ワークロードに加え、Twitter、Box、Salesforce、Workdays などのサード パーティ アプリ向けのすぐに使用できる多くの操作と文書パーツが含まれています。 この機能を使用すると、Power Automate をさまざまなシステムと簡単に統合できます。 詳細については、「[イベント ベースの保持を自動化する](./event-driven-retention.md#automate-events-by-using-a-rest-api)」を参照してください。
 
 次のスクリーンショットは、イベントのトリガーに使用される SharePoint リストを示しています。
 

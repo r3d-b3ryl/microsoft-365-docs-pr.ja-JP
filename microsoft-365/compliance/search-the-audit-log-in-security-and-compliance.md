@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfacd679a48c81b7a952638f2944d0fe6a8d9123
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.openlocfilehash: 34d3f7fa8c12d1509b864bc45e97717dbf01f534
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408096"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533281"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -844,7 +844,7 @@ Shifts アプリのアクティビティの説明については、「[Microsoft
 
 ### <a name="microsoft-power-automate-activities"></a>Microsoft Power Automate のアクティビティ
 
-Power Automate (旧称: Microsoft Flow) では、監査ログを検索できます。 これらのアクティビティには、フローの作成、編集、および削除と、フローのアクセス許可の変更があります。 Power Automate アクティビティの監査の詳細については、ブログ「[Microsoft 365 コンプライアンス センターで利用可能な Microsoft Flow 監査イベント](https://flow.microsoft.com/blog/security-and-compliance-center)」を参照してください。
+Power Automate (旧称: Microsoft Flow) では、監査ログを検索できます。 これらのアクティビティには、フローの作成、編集、および削除と、フローのアクセス許可の変更があります。 Power Automate アクティビティの監査の詳細については、ブログ「[Microsoft 365 コンプライアンス センターで利用可能になった Power Automate 監査イベント](https://flow.microsoft.com/blog/security-and-compliance-center)」を参照してください。
 
 ### <a name="microsoft-power-apps-activities"></a>Microsoft Power Apps アクティビティ
 

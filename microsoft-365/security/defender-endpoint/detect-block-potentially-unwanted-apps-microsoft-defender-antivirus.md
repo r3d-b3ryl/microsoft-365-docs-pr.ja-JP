@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/02/2021
-ms.openlocfilehash: 3115695bb9c73dbff0c24f677e9e6151de82feba0695eebbb3b2078f01ab8ad8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d232245ffa88ab63ebe68ac104f291d006612505
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794140"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533209"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを検出してブロックする
 
@@ -115,7 +115,7 @@ System Center 2012 Configuration Manager については、「[Configuration Man
 
 4. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-5. **[Windows コンポーネント]** > **[Microsoft Defender ウイルス対策]** の順にツリーを展開します。
+5. **[Windows コンポーネント]** \> **[Microsoft Defender ウイルス対策]** の順にツリーを展開します。
 
 6. **[望ましくない可能性のあるアプリケーションの検出を構成する]** をダブルクリックします。
 

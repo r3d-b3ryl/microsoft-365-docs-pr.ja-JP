@@ -15,12 +15,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 894f2da81365b176afd7789635a4c9830c6d8ab681478df91e5aedd3a6579cc0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea06094121f9c6a654234da1cb6d7757db5c78dd
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794392"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533293"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>プロセスによって開いたファイルの除外を構成する
 
@@ -31,16 +31,20 @@ ms.locfileid: "53794392"
 
 特定のプロセスによって開いたファイルを、特定のスキャンからMicrosoft Defender ウイルス対策できます。 除外 [リストを定義する前に、「除外を](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) 定義するための推奨事項」を参照してください。
 
-この記事では、除外リストを構成する方法について説明します。 
+この記事では、除外リストを構成する方法について説明します。
 
 ## <a name="examples-of-exclusions"></a>除外の例
 
-|除外 | 例 |
-|---|---|
-|特定のファイル名を持つ任意のプロセスによって開いたコンピューター上のファイル | 指定すると `test.exe` 、次の方法で開いたファイルが除外されます。 <br/>`c:\sample\test.exe`<br/>`d:\internal\files\test.exe` |  
-|特定のフォルダーの下の任意のプロセスによって開いたコンピューター上のファイル | 指定すると `c:\test\sample\*` 、次の方法で開いたファイルが除外されます。<br/>`c:\test\sample\test.exe`<br/>`c:\test\sample\test2.exe`<br/>`c:\test\sample\utility.exe` | 
-|特定のフォルダー内の特定のプロセスによって開いたコンピューター上のすべてのファイル | 指定すると `c:\test\process.exe` 、開いたファイルだけが除外されます。 `c:\test\process.exe` |
+<br>
 
+****
+
+|除外|例|
+|---|---|
+|特定のファイル名を持つ任意のプロセスによって開いたコンピューター上のファイル|指定すると `test.exe` 、次の方法で開いたファイルが除外されます。 <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
+|特定のフォルダーの下の任意のプロセスによって開いたコンピューター上のファイル|指定すると `c:\test\sample\*` 、次の方法で開いたファイルが除外されます。 <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
+|特定のフォルダー内の特定のプロセスによって開いたコンピューター上のすべてのファイル|指定すると `c:\test\process.exe` 、開いたファイルだけが除外されます。 `c:\test\process.exe`|
+|
 
 プロセス除外リストにプロセスを追加すると、Microsoft Defender ウイルス対策場所に関係なく、そのプロセスで開いたファイルはスキャンされません。 ただし、ファイル除外リストにも追加されていない限り、プロセス自体 [がスキャンされます](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
@@ -72,13 +76,12 @@ PowerShell コマンドレットと WMI を使用して、リストの確認な�
 
 2. グループ ポリシー **管理エディターで、[コンピューター** の構成] に **移動し、[** 管理用 **テンプレート] をクリックします**。
 
-3. ツリーを展開して、**除外Windowsコンポーネント> Microsoft Defender ウイルス対策 >展開します**。
+3. ツリーを展開して、[**除外Windowsコンポーネント \> Microsoft Defender ウイルス対策 \> 展開します**。
 
 4. [除外の処理 **] をダブルクリックし** 、除外を追加します。
-
     1. オプションを [有効] に **設定します**。
     2. [オプション] **セクションで** 、[ **表示.... をクリックします**。
-    3. [値名] 列の下に、各プロセス **を独自の行に入力** します。 さまざまな種類のプロセスの除外については、例の表を参照してください。  すべての **プロセスの [** 値] **列に 0** を入力します。
+    3. [値名] 列の下に、各プロセス **を独自の行に入力** します。 さまざまな種類のプロセスの除外については、例の表を参照してください。 すべての **プロセスの [** 値] **列に 0** を入力します。
 
 5. **[OK]** をクリックします。
 
@@ -92,16 +95,21 @@ PowerShell を使用してプロセスによって開いたファイルの除外
 <cmdlet> -ExclusionProcess "<item>"
 ```
 
-以下を次のように使用できます \<cmdlet> 。
+以下を次のように使用できます \<cmdlet\> 。
 
-|構成アクション | PowerShell コマンドレット |
+<br>
+
+****
+
+|構成アクション|PowerShell コマンドレット|
 |---|---|
-|リストを作成または上書きする | `Set-MpPreference` |
-|リストに追加する | `Add-MpPreference` |
-|リストからアイテムを削除する | `Remove-MpPreference` |
+|リストを作成または上書きする|`Set-MpPreference`|
+|リストに追加する|`Add-MpPreference`|
+|リストからアイテムを削除する|`Remove-MpPreference`|
+|
 
->[!IMPORTANT]
->コマンドレットを使用するか、または使用してリストを作成した場合は、 `Set-MpPreference` `Add-MpPreference` `Set-MpPreference` 既存のリストが上書きされます。
+> [!IMPORTANT]
+> コマンドレットを使用するか、または使用してリストを作成した場合は、 `Set-MpPreference` `Add-MpPreference` `Set-MpPreference` 既存のリストが上書きされます。
 
 たとえば、次のコード スニペットを使用すると、Microsoft Defender AV スキャンによって、指定したプロセスで開いたファイルが除外されます。
 
@@ -135,10 +143,15 @@ ExclusionProcess
 
 次の表に、プロセス除外リストでワイルドカードを使用する方法を示します。
 
-|ワイルドカード | 使用例 | 一致例 |
-|:---|:---|:---|
-|`*` (アスタリスク) <br/><br/> 任意の数の文字を置き換える | `C:\MyData\*` | によって開くすべてのファイル `C:\MyData\file.exe` |
-|環境変数 <br/><br/> 定義された変数は、除外が評価される際にパスとして設定されます。 | `%ALLUSERSPROFILE%\CustomLogFiles\file.exe` | によって開くすべてのファイル `C:\ProgramData\CustomLogFiles\file.exe` |
+<br>
+
+****
+
+|ワイルドカード|使用例|一致例|
+|---|---|---|
+|`*` (アスタリスク) <p> 任意の数の文字を置き換える|`C:\MyData\*`|によって開くすべてのファイル `C:\MyData\file.exe`|
+|環境変数 <p> 定義された変数は、除外が評価される際にパスとして設定されます。|`%ALLUSERSPROFILE%\CustomLogFiles\file.exe`|によって開くすべてのファイル `C:\ProgramData\CustomLogFiles\file.exe`|
+|
 
 ## <a name="review-the-list-of-exclusions"></a>除外の一覧を確認する
 
@@ -159,7 +172,6 @@ MpCmdRun.exe -CheckExclusion -path <path>
 
 > [!NOTE]
 > MpCmdRun で除外をチェックするには、Microsoft Defender ウイルス対策 CAMP バージョン 4.18.1812.3 (2018 年 12 月にリリース) 以降が必要です。
-
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>PowerShell を使用して、他のすべてのユーザー設定とMicrosoft Defender ウイルス対策一覧を確認する
 

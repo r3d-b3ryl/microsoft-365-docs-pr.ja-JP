@@ -21,14 +21,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c03dfef28744e2ee565c25d921902b8d11ecb7a3
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: da726aeaf82f13cef862b105e951f28c9fdf80e3
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290245"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533053"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>脅威の分析を使用して、新たな脅威を追跡し対応する 
+# <a name="track-and-respond-to-emerging-threats-with-threat-analytics-in-microsoft-365-defender"></a>脅威分析を使用して、新たな脅威を追跡し、Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -45,8 +45,8 @@ ms.locfileid: "53290245"
 - アクティブな脅威アクターとそのキャンペーン
 - 人気のある新しい攻撃手法
 - 重大な脆弱性
-- 一般的な攻撃の表面
-- 一般的なマルウェア
+- 一般的な攻撃対象領域
+- 流行しているマルウェア
 
 この短いビデオでは、脅威分析が最新の脅威の追跡と停止に役立つ方法について説明します。
 
@@ -91,7 +91,7 @@ _脅威分析ダッシュボード。検索アイコンをクリックして、�
 - [**関連するインシデント**](#related-incidents-view-and-manage-related-incidents)
 - [**影響を受け取ったアセット**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
 - [**メールの試行の防止**](#prevented-email-attempts-view-blocked-or-junked-threat-emails)
-- [**軽減策**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
+- [**緩和策**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
 
 ### <a name="overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses"></a>概要: 脅威をすばやく理解し、影響を評価し、防御を確認する
 

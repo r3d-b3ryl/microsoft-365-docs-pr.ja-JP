@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 93f84b6e65928dd2ff1e13a2d7474c4942ce4190a98eeb1e6daeb5e67e7bf944
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7adb4e306a5e76b4d135017f5f8a3d7b94c3c61
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904049"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531709"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support-for-us-government-customers"></a>米国政府機関のお客様向け Microsoft Defender for Endpoint サポートにお問い合わせください
 
@@ -35,16 +35,18 @@ ms.locfileid: "53904049"
 Defender for Endpoint は最近、サポート プロセスをアップグレードして、よりモダンで高度なサポート エクスペリエンスを提供しました。
 
 ## <a name="using-the-right-portal"></a>適切なポータルの使用
+
 サポート ケースを開く場合は、Microsoft Defender for Endpoint ポータルにログインする必要があります。
 
-環境 | ポータル URL
-:---|:---
-GCC-M on Commercial | [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)
-GCC-M | [https://gcc.securitycenter.microsoft.us](https://gcc.securitycenter.microsoft.us)
-GCC-H | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
-DoD | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
+環境|ポータル URL
+---|---
+GCC-M on Commercial|<https://securitycenter.microsoft.com>
+GCC-M|<https://gcc.securitycenter.microsoft.us>
+GCC-H|<https://securitycenter.microsoft.us>
+DoD|<https://securitycenter.microsoft.us>
 
 ポータルにログインできない場合は、電話を使用してサポート ケースを開 [く方法も](../../business-video/get-help-support.md)できます。
 
 ## <a name="opening-a-support-case"></a>サポート ケースを開く
+
 前提条件と手順については [、「Contact Microsoft Defender for Endpoint support」を参照してください](contact-support.md)。

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織で 365 Business Windows購入する方法と、ユーザーがクラウド PC の使用を開始する方法について学習します。
-ms.openlocfilehash: a1dfb4ad2cdda501b699423d03e257dbe314976c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 281700a15ef7f0560a5fa2171653eddc7048011d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394578"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532897"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Windows 365 Business および Cloud PC の概要
 
@@ -87,7 +87,7 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
 365 Business ライセンスの種類Windows、ユーザーのビジネス の必要性に基づいて、ユーザーに異なる種類のライセンスを割り当てできます。 ユーザー[に適Windowsするライセンスの種類については、「365 Business](windows-365-business-sizing.md)のサイズ変更オプション」を参照してください。
 
 > [!IMPORTANT]
-> テナントに Windows 365 ライセンスが初めて割り当てられると、"CloudPCBPRT" というシステム アカウントが自動的に作成Azure Active Directory。 このアカウントを削除しない。 システム アカウントが削除された場合、セットアップが失敗する可能性があります。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能やテナントへのアクセス権を持ち合わせない。 このユーザーを削除する場合は、サポート セントラルを通じてチケットをファイルします。
+> Windows 365 ライセンスが初めてテナントに割り当てられると **、Windows 365 BPRT 常設** ユーザーというシステム アカウントが Azure Active Directory で自動的に作成されます。 このアカウントを削除したり、アカウントに変更を加え (名前や UPN の変更など) したりしない。 システム アカウントが削除された場合、セットアップが失敗する可能性があります。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能やテナントへのアクセス権を持ち合わせない。 このユーザーを削除する場合は、サポート セントラルを通じてチケットをファイルします。
 
 ## <a name="get-your-users-started-with-cloud-pc"></a>ユーザーにクラウド PC の使用を開始する
 

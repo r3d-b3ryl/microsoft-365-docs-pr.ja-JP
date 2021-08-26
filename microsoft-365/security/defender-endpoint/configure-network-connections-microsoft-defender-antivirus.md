@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 2facf41d8d2f695c67b7609fe8aec222413ba23c855b94d8b1d1ecd0da177173
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 989e392071de0ed90b2daa964307989f664cb53a
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863700"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532957"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 
@@ -42,7 +42,7 @@ ms.locfileid: "53863700"
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>クラウド サービスへの接続Microsoft Defender ウイルス対策する
 
-クラウド Microsoft Defender ウイルス対策は、エンドポイントに高速で強力な保護を提供します。 クラウド配信保護サービスの有効化はオプションですが、エンドポイントやネットワーク全体のマルウェアに対する重要な保護を提供しますので、強くお勧めします。 [Intune、Microsoft Endpoint Configuration Manager、](enable-cloud-protection-microsoft-defender-antivirus.md)グループ ポリシー、PowerShell コマンドレット、または Windows セキュリティ アプリ内の個々のクライアントでサービスを有効にする方法の詳細については、「クラウドによる保護を有効にする」を参照してください。 
+クラウド Microsoft Defender ウイルス対策は、エンドポイントに高速で強力な保護を提供します。 クラウド配信保護サービスの有効化はオプションですが、エンドポイントやネットワーク全体のマルウェアに対する重要な保護を提供しますので、強くお勧めします。 [Intune、Microsoft Endpoint Configuration Manager、](enable-cloud-protection-microsoft-defender-antivirus.md)グループ ポリシー、PowerShell コマンドレット、または Windows セキュリティ アプリ内の個々のクライアントでサービスを有効にする方法の詳細については、「クラウドによる保護を有効にする」を参照してください。
 
 サービスを有効にした後、ネットワークまたはファイアウォールを構成して、ネットワークとエンドポイント間の接続を許可する必要がある場合があります。 保護はクラウド サービスなので、コンピューターはインターネットにアクセスし、Microsoft Defender にアクセスして機械学習サービスOffice 365必要があります。 任意の種類のネットワーク 検査から URL `*.blob.core.windows.net` を除外しない。
 
@@ -51,19 +51,23 @@ ms.locfileid: "53863700"
 
 ## <a name="services-and-urls"></a>サービスと URL
 
-このセクションの表に、サービスと関連付けられた Web サイト アドレス (URL) の一覧を示します。 
+このセクションの表に、サービスと関連付けられた Web サイト アドレス (URL) の一覧を示します。
 
 これらの URL へのアクセスを拒否するファイアウォールまたはネットワーク フィルタールールが存在しないか確認します。 それ以外の場合は、許可ルール (URL を除く) を作成する必要があります `*.blob.core.windows.net` 。 次の表の URL は、通信にポート 443 を使用します。
 
-| サービスと説明 | URL |
-|----|---- |
-| Microsoft Defender ウイルス対策 (MAPS) とも呼ばれるクラウド配信Microsoft Active Protection Service保護サービス<p>このサービスは、クラウドMicrosoft Defender ウイルス対策を提供するために、ユーザーが使用します。|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
-| Microsoft Update Service (MU) および Windows 更新サービス (WU) <p>これらのサービスにより、セキュリティ インテリジェンスと製品の更新が可能 |`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> 詳細については、「接続エンドポイント for [Windows Update」を参照してください。](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
-|セキュリティ インテリジェンスの更新代替ダウンロード場所 (ADL)<p>これは、インストールされているセキュリティ インテリジェンスがMicrosoft Defender ウイルス対策 (7 日以上遅れている) 場合のセキュリティ インテリジェンス更新プログラムの別の場所です。| `*.download.microsoft.com`  <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
-| マルウェアの送信ストレージ <p>これは、申請フォームまたは自動サンプル送信を介して Microsoft に送信されたファイルのアップロード場所です。 | `ussus1eastprod.blob.core.windows.net` <p>    `ussus2eastprod.blob.core.windows.net` <p>    `ussus3eastprod.blob.core.windows.net` <p>    `ussus4eastprod.blob.core.windows.net` <p>    `wsus1eastprod.blob.core.windows.net` <p>    `wsus2eastprod.blob.core.windows.net` <p>    `ussus1westprod.blob.core.windows.net` <p>    `ussus2westprod.blob.core.windows.net` <p>    `ussus3westprod.blob.core.windows.net` <p>    `ussus4westprod.blob.core.windows.net` <p>    `wsus1westprod.blob.core.windows.net` <p>    `wsus2westprod.blob.core.windows.net` <p>    `usseu1northprod.blob.core.windows.net` <p>    `wseu1northprod.blob.core.windows.net` <p>    `usseu1westprod.blob.core.windows.net` <p>    `wseu1westprod.blob.core.windows.net` <p>    `ussuk1southprod.blob.core.windows.net` <p>    `wsuk1southprod.blob.core.windows.net` <p>    `ussuk1westprod.blob.core.windows.net` <p>    `wsuk1westprod.blob.core.windows.net` |
-| 証明書失効リスト (CRL) <p>この一覧は、CRL をWindowsするために MAPS への SSL 接続を作成するときに使用されます。 | `http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p>   `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs` |
-| シンボル ストア <p>シンボル ストアは、修復フロー中にMicrosoft Defender ウイルス対策ファイルを復元するために使用されます。 | `https://msdl.microsoft.com/download/symbols` |
-| ユニバーサル テレメトリ クライアント <p>このクライアントは、クライアント診断Windows送信するために使用されます。<p> Microsoft Defender ウイルス対策品質監視の目的で利用統計情報を使用する場合 | この更新プログラムは SSL (TCP ポート 443) を使用してマニフェストをダウンロードし、次の DNS エンドポイントを使用する診断データを Microsoft にアップロードします。 <p> `vortex-win.data.microsoft.com` <p>   `settings-win.data.microsoft.com`|
+<br>
+
+****
+
+|サービスと説明|URL|
+|---|---|
+|Microsoft Defender ウイルス対策 (MAPS) とも呼ばれるクラウド配信Microsoft Active Protection Service保護サービス<p>このサービスは、クラウドMicrosoft Defender ウイルス対策を提供するために、ユーザーが使用します。|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
+|Microsoft Update Service (MU) および Windows 更新サービス (WU) <p>これらのサービスにより、セキュリティ インテリジェンスと製品の更新が可能|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> 詳細については、「接続エンドポイント for [Windows Update」を参照してください。](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
+|セキュリティ インテリジェンスの更新代替ダウンロード場所 (ADL)<p>これは、インストールされているセキュリティ インテリジェンスがMicrosoft Defender ウイルス対策 (7 日以上遅れている) 場合のセキュリティ インテリジェンス更新プログラムの別の場所です。|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+|マルウェアの送信ストレージ <p>これは、申請フォームまたは自動サンプル送信を介して Microsoft に送信されたファイルのアップロード場所です。|`ussus1eastprod.blob.core.windows.net` <p> `ussus2eastprod.blob.core.windows.net` <p> `ussus3eastprod.blob.core.windows.net` <p> `ussus4eastprod.blob.core.windows.net` <p> `wsus1eastprod.blob.core.windows.net` <p> `wsus2eastprod.blob.core.windows.net` <p> `ussus1westprod.blob.core.windows.net` <p> `ussus2westprod.blob.core.windows.net` <p> `ussus3westprod.blob.core.windows.net` <p> `ussus4westprod.blob.core.windows.net` <p> `wsus1westprod.blob.core.windows.net` <p> `wsus2westprod.blob.core.windows.net` <p> `usseu1northprod.blob.core.windows.net` <p> `wseu1northprod.blob.core.windows.net` <p> `usseu1westprod.blob.core.windows.net` <p> `wseu1westprod.blob.core.windows.net` <p> `ussuk1southprod.blob.core.windows.net` <p> `wsuk1southprod.blob.core.windows.net` <p> `ussuk1westprod.blob.core.windows.net` <p> `wsuk1westprod.blob.core.windows.net`|
+|証明書失効リスト (CRL) <p>この一覧は、CRL をWindowsするために MAPS への SSL 接続を作成するときに使用されます。|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
+|シンボル ストア <p>シンボル ストアは、修復フロー中にMicrosoft Defender ウイルス対策ファイルを復元するために使用されます。|`https://msdl.microsoft.com/download/symbols`|
+|ユニバーサル テレメトリ クライアント <p> このクライアントは、クライアント診断Windows送信するために使用されます。 <p> Microsoft Defender ウイルス対策品質監視の目的で利用統計情報を使用する場合|この更新プログラムは SSL (TCP ポート 443) を使用してマニフェストをダウンロードし、次の DNS エンドポイントを使用する診断データを Microsoft にアップロードします。 <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
 
 ## <a name="validate-connections-between-your-network-and-the-cloud"></a>ネットワークとクラウド間の接続を検証する
 

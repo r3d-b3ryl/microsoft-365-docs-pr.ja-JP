@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a9184805ee56a5a1154387a91734f1dd2665f82d
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c3a115cc972fa6eeb7d30395f11873c4eb409a09
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254881"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533029"
 ---
-#  <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint クライアント アナライザーをダウンロードする
+# <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint クライアント アナライザーをダウンロードする
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
@@ -36,15 +36,11 @@ Microsoft Defender for Endpoint クライアント アナライザーを、サ�
 
 ## <a name="download-client-analyzer-for-windows-os"></a>OS 用のクライアント アナライザー Windowsダウンロード
 
-1.  最新の安定版は、次の URL からダウンロードできます。 <https://aka.ms/MDEAnalyzer>
+1. 最新の安定版は、次の URL からダウンロードできます。 <https://aka.ms/MDEAnalyzer>
+2. 最新のプレビュー エディションは、次の URL からダウンロードできます。 <https://aka.ms/BetaMDEAnalyzer>
 
-2.  最新のプレビュー エディションは、次の URL からダウンロードできます。 <https://aka.ms/BetaMDEAnalyzer>
+## <a name="download-client-analyzer-for-macos-or-linux"></a>macOS または Linux 用のクライアント アナライザーをダウンロードする
 
-##  <a name="download-client-analyzer-for-macos-or-linux"></a>macOS または Linux 用のクライアント アナライザーをダウンロードする
+1. 最新の安定版は、MDE for Endpoint エージェントに統合されます。 [macOS](mac-whatsnew.md)または Linux 用に最新版を実行している必要[があります](linux-whatsnew.md)。
 
-1.  最新の安定版は、MDE for Endpoint エージェントに統合されます。  
-    [macOS](mac-whatsnew.md)または Linux 用に最新版を実行している必要[があります](linux-whatsnew.md)。
-
-2.  最新のプレビュー エディションは、次の URL から直接ダウンロードできます。 <https://aka.ms/XMDEClientAnalyzer>
-
-
+2. 最新のプレビュー エディションは、次の URL から直接ダウンロードできます。 <https://aka.ms/XMDEClientAnalyzer>

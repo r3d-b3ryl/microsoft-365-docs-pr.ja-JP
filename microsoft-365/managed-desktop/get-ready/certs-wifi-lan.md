@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c5722a0261a0e336b5d6e6b2f5a0e3bb0c21f2b6
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: e09bcee08051663191a12c4e2916d7d6512eb514
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365023"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533233"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する  
  
@@ -74,29 +74,32 @@ LAN プロファイルをエクスポートしたら、次の手順に従って�
     - OMA-URI (大文字と小文字の区別): *Enter ./Device/Vendor/MSFT/WiredNetwork/LanXML*
     - データ型: [文字列] **(XML ファイル) を選択します**。 
     - カスタム XML: アップロード XML ファイルを作成します。
-2. 管理者ポータルを使用Microsoft マネージド デスクトップ IT 運用にサポート要求Microsoft マネージド デスクトップ送信し、構成プロファイルを "モダン ワークプレース デバイス - テスト" に確認して展開します。 Microsoft マネージド デスクトップIT 操作では、管理ポータルのサポート要求を介して要求が完了した時間を知らせた。
+2. カスタム プロファイルをモダン ワークプレース デバイス *- テスト グループに割り当* てる。
+3. テスト展開グループにあるデバイスを使用して、必要と感じるテストを行います。 成功した場合は、カスタム プロファイルをモダン ワークプレース デバイス *( First*、 Modern *Workplace Devices – Fast*、 および Modern Workplace Devices – Broad グループ) に割り *当* てる必要があります。
  
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>証明書と Wi-Fi/VPN プロファイルの展開 
  
  
 証明書とプロファイルを展開するには、次の手順を実行します。
 
-1. ルート証明書と中間証明書のそれぞれについてプロファイルを作成します (「信頼できる証明書プロファイルの作成 [」を参照してください](/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles)。 これらの各プロファイルには、DD/MM/YYYYY 形式の有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは展開されません。**
-2. SCEP または PKCS 証明書ごとにプロファイルを作成します [(「SCEP](/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) 証明書プロファイルを作成する」または [「PKCS](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)証明書プロファイルを作成する」を参照) これらの各プロファイルには、DD/MM/YYYY 形式の有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは展開されません。**
+1. ルート証明書と中間証明書のそれぞれについてプロファイルを作成します (「信頼できる証明書プロファイルの作成 [」を参照してください](/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles)。 これらの各プロファイルには、DD/MM/YYYYY 形式の有効期限を含む説明が必要です。 **証明書プロファイルには有効期限が必要です。**
+2. SCEP または PKCS 証明書ごとにプロファイルを作成します [(「SCEP](/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) 証明書プロファイルを作成する」または [「PKCS](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)証明書プロファイルを作成する」を参照) これらの各プロファイルには、DD/MM/YYYY 形式の有効期限を含む説明が必要です。 **証明書プロファイルには有効期限が必要です。**
 3. 企業の WiFi ネットワークごとにプロファイルを作成します (「Wi-Fi の設定」を参照[)、Windows 10を参照してください](/intune/wi-fi-settings-windows)。
 4. 企業 VPN ごとにプロファイルを作成します (Intune を使用して VPN 接続をWindows 10、Windows [Holographic](/intune/vpn-settings-windows-10)デバイスの設定を参照してください)。
-5. Microsoft マネージド デスクトップ 管理ポータルを使用して Microsoft マネージド デスクトップ IT 運用に "証明書の展開" または "Wi-Fi プロファイルの展開" というタイトルのサポート要求を送信し、構成プロファイルを確認し、"モダン Workplace デバイス - テスト" に展開します。 Microsoft マネージド デスクトップIT 操作では、管理ポータルのサポート要求を介して要求が完了した時間を知らせた。 
+5. プロファイルをモダン ワークプレース デバイス *- テスト グループに割り当* てる。
+6. テスト展開グループにあるデバイスを使用して、必要と感じるテストを行います。 成功した場合は、カスタム プロファイルをモダン ワークプレース デバイス *( First*、 Modern *Workplace Devices – Fast*、 および Modern Workplace Devices – Broad グループ) に割り *当* てる必要があります。
+
  
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>インストールの準備を行うMicrosoft マネージド デスクトップ
 
 1. [Microsoft マネージド デスクトップの前提条件](prerequisites.md)を確認します。
-2. 準備 [状況評価ツールを実行します](readiness-assessment-tool.md)。
-1. 購入[ポータル サイト](../get-started/company-portal.md).
-1. ゲスト [アカウントの前提条件を確認します](guest-accounts.md)。
-1. ネットワーク [構成を確認します](network.md)。
+2. [準備状況の評価ツール](readiness-assessment-tool.md)を実行します。
+1. [ポータル サイト](../get-started/company-portal.md)を購入します。
+1. [ゲスト アカウントの前提条件](guest-accounts.md)を確認します。
+1. [ネットワーク構成](network.md)をチェックします。
 1. 証明書とネットワーク プロファイルを準備します (この記事)。
 1. [データへのユーザー アクセスを準備します](authentication.md)。
 1. [アプリを準備します](apps.md)。
-1. [マップされたドライブを準備します](mapped-drives.md)。
+1. [マップ済みドライブを準備します](mapped-drives.md)。
 1. [印刷リソースを準備します](printing.md)。
-1. アドレス [デバイス名](address-device-names.md)。
+1. [デバイス名](address-device-names.md)をアドレス指定します。

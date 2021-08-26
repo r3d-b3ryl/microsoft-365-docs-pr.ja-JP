@@ -18,12 +18,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender for microsoft Defender の セーフ リンク ポリシーとグローバル セーフ リンクの設定を表示、作成、変更、および削除する方法をOffice 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 684496023bff8cb7e8773403b57c4ae93740f92d
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f9b07d720ed34e9a5d788bdfdfb6dff6a635b11f
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258480"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531553"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender セーフのリンク ポリシーを設定Office 365
 
@@ -263,7 +263,7 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 この例では、Contoso All という名前の安全なリンク ポリシーを次の値で作成します。
 
 - 電子メール メッセージで URL のスキャンと書き換えを有効にする。
-- [URL のスキャン] を [Teamsオンにする (TAP プレビューのみ)。
+- [URL スキャン] をオンTeams。
 - クリックした URL (ファイルを指すクリックされたリンクを含む) のリアルタイム スキャンを有効にする。
 - メッセージを配信する前に、URL のスキャンが完了するのを待ちます。
 - 内部メッセージの URL スキャンと書き換えを有効にする。

@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 904ea83c6a4a2c8267341ae5fb324c5f2f3678e0c5458720af13f6a932c8c25f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de33384b6292fecc502e958385c2286b255002b1
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854031"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533065"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -93,7 +93,7 @@ ms.locfileid: "53854031"
 
 2. [ **アラート キュー] を** 選択し、アラートを選択します。
 
-3. 選択したアラートに対して、[アクションの管理 **]**  >  **アラートを選択します**。 フライアウト ウィンドウが開きます。
+3. 選択したアラートに対して、[アクションの管理 **]** \> **アラートを選択します**。 フライアウト ウィンドウが開きます。
 
 4. [警告の **管理] セクション** で、[True アラート] または **[False アラート** ] **を選択します**。 (False **アラートを使用して** 誤検知を分類します)。
 
@@ -134,7 +134,7 @@ ms.locfileid: "53854031"
 
 - [アクション センターから検疫済みファイルを復元する](#restore-a-quarantined-file-from-the-action-center)
 - [複数の操作を一度に元に戻す](#undo-multiple-actions-at-one-time)
-- [複数のデバイス間で検疫からファイルを削除します](#remove-a-file-from-quarantine-across-multiple-devices)。  and
+- [複数のデバイス間で検疫からファイルを削除します](#remove-a-file-from-quarantine-across-multiple-devices)。 and
 - [検疫からファイルを復元する](#restore-file-from-quarantine)
 
 誤検知の結果として実行されたアクションの確認と元に戻す操作が完了したら、除外の確認または [定義に進みます](#part-3-review-or-define-exclusions)。
@@ -220,7 +220,7 @@ Microsoft Defender for Endpoint 全体で除外を定義するには、次のタ
 
 1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
-2. [**エンドポイント セキュリティ**  >  **ウイルス対策]** を選択し、既存のポリシーを選択します。 (既存のポリシーを使用しない場合、または新しいポリシーを作成する場合は、次の手順[に進む)。](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)
+2. [ **エンドポイント セキュリティ** \> **ウイルス対策]** を選択し、既存のポリシーを選択します。 (既存のポリシーを使用しない場合、または新しいポリシーを作成する場合は、次の手順[に進む)。](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)
 
 3. [プロパティ **] を** 選択し、[構成設定] **の横にある [** 編集] を **選択します**。
 
@@ -232,7 +232,7 @@ Microsoft Defender for Endpoint 全体で除外を定義するには、次のタ
 
 1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
-2. [エンドポイント **セキュリティウイルス**  >  **対策**  >  **] + [ポリシーの作成] を選択します**。
+2. [エンドポイント **セキュリティウイルス** \> **対策** \> **] + [ポリシーの作成] を選択します**。
 
 3. プラットフォーム (Windows 10以降 **、macOS、または** Windows 10サーバー Windows **選択します**。 
 
@@ -361,7 +361,7 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 
 1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
-2. [**エンドポイント セキュリティウイルス**  >  **対策] を** 選択し、既存のポリシーを選択します。 (既存のポリシーを使用しない場合、または新しいポリシーを作成する場合は、次の手順[に進む)。](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)
+2. [ **エンドポイント セキュリティウイルス** \> **対策] を** 選択し、既存のポリシーを選択します。 (既存のポリシーを使用しない場合、または新しいポリシーを作成する場合は、次の手順[に進む)。](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)
 
 3. [管理 **] で**、[プロパティ] **を選択します**。 次に、[構成設定] **の横にある**[編集] を **選択します**。
 
@@ -373,7 +373,7 @@ Microsoft Defender for Endpoint には、さまざまな機能や機能の設定
 
 1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
-2. [エンドポイント **セキュリティの**  >  **ウイルス対策**  >  **] + [ポリシーの作成] を選択します**。
+2. [エンドポイント **セキュリティの** \> **ウイルス対策** \> **] + [ポリシーの作成] を選択します**。
 
 3. [**プラットフォーム]** でオプションを選択し、[プロファイル]で [ウイルス対策] または [ウイルス対策 **Microsoft Defender ウイルス対策を選択** します (特定のオプションは、[プラットフォーム] で選択した内容によって **異** なります)。次に、[作成]**を選択します**。
 
@@ -404,7 +404,7 @@ PUA[保護設定](/mem/endpoint-manager-overview)Microsoft エンドポイント
 
 1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
-2. [**デバイス**  >  **構成プロファイル] を選択** し、既存のポリシーを選択します。 (既存のポリシーを使用しない場合、または新しいポリシーを作成する場合は、次の手順 [に進む必要があります](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile)。)
+2. [ **デバイス** \> **構成プロファイル] を選択** し、既存のポリシーを選択します。 (既存のポリシーを使用しない場合、または新しいポリシーを作成する場合は、次の手順 [に進む必要があります](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile)。)
 
 3. [ **管理] で**、[ **プロパティ]** を選択し、[構成設定] の横にある **[編集**] を **選択します**。
 
@@ -418,7 +418,7 @@ PUA[保護設定](/mem/endpoint-manager-overview)Microsoft エンドポイント
 
 1. 管理センター ( ) Microsoft エンドポイント マネージャーに移動し <https://endpoint.microsoft.com> 、サインインします。
 
-2. [デバイス  >  **構成プロファイル] +**  >  **[プロファイルの作成] を選択します**。
+2. [デバイス \> **構成プロファイル] +** \> **[プロファイルの作成] を選択します**。
 
 3. [プラットフォーム **] で**、[デバイスの **Windows 10]** を選択し、[**プロファイル**] で [デバイスの制限 **] を選択します**。
 
@@ -446,7 +446,7 @@ PUA[保護設定](/mem/endpoint-manager-overview)Microsoft エンドポイント
 > [!IMPORTANT]
 > 自動調査と *修復には、* 完全自動化を使用することをお勧めします。 誤検知のため、これらの機能をオフにしない。 代わりに [、"許可"](#indicators-for-microsoft-defender-for-endpoint)インジケーターを使用して例外を定義し、自動的に適切なアクションを実行するために自動調査と修復を設定します。 この [ガイダンスに従って](automation-levels.md#levels-of-automation) 、セキュリティ運用チームが処理する必要があるアラートの数を減らすのに役立ちます。
 
-## <a name="still-need-help"></a>さらにヘルプが必要ですか?
+## <a name="still-need-help"></a>さらにサポートが必要な場合
 
 この記事のすべての手順を実行し、引き続きヘルプが必要な場合は、テクニカル サポートにお問い合わせください。
 

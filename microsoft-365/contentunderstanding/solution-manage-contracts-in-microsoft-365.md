@@ -13,18 +13,22 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Microsoft 365 SharePoint Syntex、Microsoft 365、SharePoint、およびMicrosoft TeamsのPower Automate。
-ms.openlocfilehash: 9a80a97ad87d407e6b0cb56fae99712b0f3b403c416fcfa67c57d4f2c9e0236d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d890305912c8b86065a89dac1b7da8f797604405
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813454"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533377"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Microsoft 365 ソリューションを使用して契約を管理する
 
 この記事では、組織の契約管理ソリューションを作成する方法について説明します。SharePoint Syntexおよびコンポーネントを使用Microsoft 365。 独自のビジネス ニーズに合ったソリューションの計画と作成に役立つフレームワークを提供します。 このソリューションでは契約管理について説明しますが、作業明細書や請求書など、他のドキュメント管理ソリューションを作成するためにそれを調整できます。
 
-*このコンテンツ セットは、Microsoft 365モダン ワーク ソリューション戦略チームと一緒に、Thomas Molbach が開発したソリューションを文書化しています。*
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJUR0]
+
+</br>
 
 ## <a name="identify-the-business-problem"></a>ビジネス上の問題を特定する
 
@@ -82,10 +86,16 @@ ms.locfileid: "53813454"
 - Microsoft Teams
 - Power Automate
 
+### <a name="learn-how-to-use-sharepoint-syntex"></a>アプリの使い方SharePoint Syntex
+
+新しいSharePoint Syntex? AI を使用してコンテンツSharePoint Syntexを管理する方法について学習します。
+
+[SharePoint Syntex](/learn/paths/syntex-get-started)ラーニング パスを使用すると、ドキュメントの理解モデルとフォーム処理モデルを使用してドキュメントを分類し、テキストを抽出し、ドキュメントにラベルを付け、すばやく簡単に知識を管理する方法について説明します。
+
 ## <a name="create-the-solution"></a>ソリューションの作成
 
 次のセクションでは、契約管理ソリューションを構成する方法について詳しく説明します。 次の 3 つの手順に分かれています。
 
 - [手順 1.契約ファイルSharePoint Syntexデータの抽出に使用する方法](solution-manage-contracts-step1.md)
 - [手順 2.契約Microsoft Teamsチャネルを作成するには、次の情報を使用します。](solution-manage-contracts-step2.md)
-- [手順 3.契約Power Automate処理するフローを作成するには、次の情報を使用します。](solution-manage-contracts-step3.md)
+- [手順 3.契約Power Automate処理するフローを作成するには、次の手順を実行します。](solution-manage-contracts-step3.md)

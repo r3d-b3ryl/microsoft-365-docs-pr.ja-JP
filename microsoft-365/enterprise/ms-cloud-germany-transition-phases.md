@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: '概要: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツデータセンター地域の Office 365 サービスへの移行フェーズのアクションと影響について説明します。'
-ms.openlocfilehash: 93b243f60b485d1dfbcca62219cf510c006fdbbc20fc264b179720f9ad2a9bcc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 51fb2da1bd30a01ed61eef612450feaf5ca4609f
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813032"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532969"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>移行フェーズアクションと Microsoft Cloud Deutschland からの移行に対する影響
 
@@ -40,7 +40,7 @@ Microsoft Cloud Deutschland (MCD) から Microsoft の Office 365 Global サー�
 
 ****
 
-|Step(s)|期間|責任ある当事者|説明|
+|Step(s)|Duration|責任ある当事者|説明|
 |---|---|---|---|
 |Opt-In|時間|顧客|組織に移行を選択します。|
 |プレワーク|Days|顧客|ユーザー、ワークステーション、およびネットワークを移行用に準備するために必要な作業を完了します。|
@@ -125,7 +125,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 |---|---|---|
 |サブスクリプションが転送される|Microsoft Cloud Deutschland サブスクリプションは、対応するグローバル サービス サブスクリプションOffice 365移行されます。 <ul><li>そのサブスクリプションOffice 365提供されるグローバル サービスは、Microsoft (オファー マッピングとも呼ばれる)_によって定義されます_。</li><li> グローバル Office 365サービス サブスクリプションは、転送された Microsoft Cloud Deutschland サブスクリプションOffice 365グローバル インスタンスで購入されます。</li><li>従来の Microsoft Cloud Deutschland サブスクリプションは、Office 365サービス テナントから削除されます。</li></ul>|<ul><li>既存のサブスクリプションへの変更は、このフェーズ中にブロックされます (たとえば、新しいサブスクリプション購入やシート 数の変更はありません)。</li><li>ライセンス割り当ての変更はブロックされます。</li><li>サブスクリプションの移行が完了すると、Office 365 サービスと Microsoft Cloud Deutschland サブスクリプションの両方が Office 365 Admin ポータルに表示され、Microsoft Cloud Deutschland サブスクリプションの状態はプロビジョニング解除されます。</li><li>Microsoft Cloud Deutschland サブスクリプションまたは SKU GUID に依存している顧客プロセスは壊れ、Office 365 サービスを提供して修正する必要があります。</li><li>Office 365 サービスの新しいサブスクリプションは、新しい用語 (毎月/四半期/年) で購入され、お客様は Microsoft Cloud Deutschland サブスクリプションの未使用残高に対して日割り払い払いを受け取る予定です。</li></ul>|
 |ライセンスが再割り当てされる|Microsoft Cloud Deutschland ライセンスが割り当てられているユーザーには、グローバル インスタンスのライセンスOffice 365割り当てられます。|<ul><li>ユーザーは、新しいサービス サブスクリプションに関連付Office 365割り当てされます。 すべてのユーザーのユーザー ライセンスが新しい機能に自動的に割り当てられます。</li><li>サービスによって提供される機能 (サービス プラン) の数は、Office 365 Microsoft Cloud Deutschland オファーよりも大きくなる場合があります。 サービスのユーザー ライセンスOffice 365同様の Microsoft Cloud Deutschland 機能 (サービス プラン) に割り当てられます。</li></ul>|
-|**管理タスク** 機能を無効にする|管理者は、必要に応じて、これらの機能を無効にする明示的なアクションを実行する必要があります。|<ul><li>ユーザーがポータルに新しい不明なサービスを表示する</li><li>テナント管理者が無効にしない限り、その他のMicrosoft Flow (Microsoft Planner や Microsoft Flowなど) を使用できます。</li></ul> <p> ユーザーのライセンスに割り当てられているサービス プランを無効にする方法については、「ユーザー ライセンスを割り当てながら、Microsoft 365 サービスへのアクセスを無効にする」を[参照してください](disable-access-to-services-while-assigning-user-licenses.md)。</li></ul>|
+|**管理タスク** 機能を無効にする|管理者は、必要に応じて、これらの機能を無効にする明示的なアクションを実行する必要があります。|<ul><li>ユーザーがポータルに新しい不明なサービスを表示する</li><li>テナント管理者が無効にしない限り、追加の機能 (Microsoft Planner や Power Automate など) を使用できます。</li></ul> <p> ユーザーのライセンスに割り当てられているサービス プランを無効にする方法については、「ユーザー ライセンスを割り当てながら、Microsoft 365 サービスへのアクセスを無効にする」を[参照してください](disable-access-to-services-while-assigning-user-licenses.md)。</li></ul>|
 |**管理タスク**|Microsoft Cloud Deutschland サブスクリプションまたは SKU GUID に依存している顧客プロセスを、サービスの提供とOffice 365変更する|顧客プロセスは引き続き機能します。|
 |
 
@@ -197,7 +197,7 @@ CNAME を指す既存の DNS エントリは、autodiscover-outlook.office.de �
 
 **PowerShell を使用Exchange Online** 管理者Exchange Online適用されます。
 
-移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 次に例を示します。
+移行フェーズ中に、PowerShell コマンドレット **New-MigrationEndpoint、Set-MigrationEndpoint、** および **Test-MigrationsServerAvailability** を使用すると、エラー (プロキシでエラー) が発生する可能性があります。  これは、調停メールボックスが世界中に移行されたが、管理者メールボックスが移行または逆の場合に発生します。 これを解決するには、テナント PowerShell セッションの作成中に **、ConnectionUri** のルーティング ヒントとして調停メールボックスを使用します。 例として以下のようなものがあります。
 
 ```powershell
 New-PSSession
@@ -298,7 +298,7 @@ Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に
 
 |Step(s)|説明|影響|
 |---|---|---|
-|Microsoft Dynamics リソース|Microsoft Dynamics をお持ちのお客様は、Microsoft Engineering または Microsoft FastTrack が Microsoft Dynamics 365 をグローバル サービス インスタンスOffice 365移行します。\*|<ul><li>移行後、管理者は組織を検証します。</li><li>管理者は、必要に応じてワークフローを変更します。</li><li>管理者は、必要に応じて AdminOnly モードをクリアします。</li><li>管理者は、必要に応じて _サンドボックスから組織_ の種類を変更します。</li><li>インスタンス (org) にアクセスする新しい URL をエンド ユーザーに通知します。</li><li>新しいエンドポイント URL への受信接続を更新します。</li><li>移行中は、ユーザーが Dynamics サービスを利用できません。</li><li>ユーザーは、各組織の移行後に組織の正常性と機能を検証する必要があります。</li></ul>|
+|Microsoft Dynamics リソース|Microsoft Dynamics をお持ちのお客様は、Microsoft Dynamics 365 をグローバル サービス インスタンスFastTrack移行するために Microsoft Engineering または Microsoft Office 365が関与します。\*|<ul><li>移行後、管理者は組織を検証します。</li><li>管理者は、必要に応じてワークフローを変更します。</li><li>管理者は、必要に応じて AdminOnly モードをクリアします。</li><li>管理者は、必要に応じて _サンドボックスから組織_ の種類を変更します。</li><li>インスタンス (org) にアクセスする新しい URL をエンド ユーザーに通知します。</li><li>新しいエンドポイント URL への受信接続を更新します。</li><li>移行中は、ユーザーが Dynamics サービスを利用できません。</li><li>ユーザーは、各組織の移行後に組織の正常性と機能を検証する必要があります。</li></ul>|
 |
 
 \* (i) Microsoft Dynamics 365 をお持ちのお客様は、提供される移行プロセスで定義されているこの移行シナリオでアクションを実行する必要があります。 (ii) お客様がアクションを実行できなかった場合、Microsoft は移行を完了できません。 (iii) お客様の不作為により Microsoft が移行を完了できない場合、お客様のサブスクリプションは 2021 年 10 月 29 日に期限切れになります。
@@ -313,7 +313,7 @@ Dynamics 365 をお持ちのお客様は、組織の Dynamics 組織を個別に
 
 |Step(s)|説明|影響|
 |---|---|---|
-|リソースのPower BI移行|Microsoft Power BI (PBI) をお持ちのお客様は、既存の PBI 移行ツールを手動でトリガーして Power BI を Office 365 Global services インスタンスに移行した後、Microsoft Engineering または Microsoft FastTrack に参加します。\*\*|<ul><li>次のPower BI _は_ 移行されません。また、アイテムを再作成する必要<</li><li>リアルタイム データセット (ストリーミング データセットやプッシュ データセットなど)。</li><li>Power BIオンプレミスのデータ ゲートウェイ構成とデータ ソースを使用します。</li><li>リアルタイム データセットの上に構築されたレポートは、移行後に使用できないので、再作成する必要があります。</li><li>Power BIユーザーは、移行中にサービスを利用できません。 サービスが利用できない時間は 24 時間を超えてはならない。</li><li>ユーザーは、移行後にデータ ソースとオンプレミス のデータ ゲートウェイを Power BIする必要があります。  そうするまで、ユーザーは、これらのデータ ソースを使用して、スケジュールされた更新を実行したり、これらのデータ ソースに対して直接クエリを実行したりすることはできません。</li><li>容量とプレミアム ワークスペースは移行できません。 移行前にすべての容量を削除し、移行後に再作成する必要があります。 ワークスペースを必要に応じて容量に戻します。</li></ul>|
+|リソースのPower BI移行|Microsoft Power BI (PBI) をお持ちのお客様は、既存の PBI 移行ツールを手動でトリガーして Power BI を Office 365 Global services インスタンスに移行した後、Microsoft Engineering または Microsoft FastTrack が関与します。\*\*|<ul><li>次のPower BI _は_ 移行されません。また、アイテムを再作成する必要<</li><li>リアルタイム データセット (ストリーミング データセットやプッシュ データセットなど)。</li><li>Power BIオンプレミスのデータ ゲートウェイ構成とデータ ソースを使用します。</li><li>リアルタイム データセットの上に構築されたレポートは、移行後に使用できないので、再作成する必要があります。</li><li>Power BIユーザーは、移行中にサービスを利用できません。 サービスが利用できない時間は 24 時間を超えてはならない。</li><li>ユーザーは、移行後にデータ ソースとオンプレミス のデータ ゲートウェイを Power BIする必要があります。  そうするまで、ユーザーは、これらのデータ ソースを使用して、スケジュールされた更新を実行したり、これらのデータ ソースに対して直接クエリを実行したりすることはできません。</li><li>容量とプレミアム ワークスペースは移行できません。 移行前にすべての容量を削除し、移行後に再作成する必要があります。 ワークスペースを必要に応じて容量に戻します。</li></ul>|
 |
 
 \*\*(i) Microsoft Power BIのお客様は、提供される移行プロセスで定義されているこの移行シナリオでアクションを実行する必要があります。 (ii) お客様がアクションを実行できなかった場合、Microsoft は移行を完了できません。 (iii) お客様の不作為により Microsoft が移行を完了できない場合、お客様のサブスクリプションは 2021 年 10 月 29 日に期限切れになります。

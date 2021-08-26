@@ -14,12 +14,12 @@ audience: ITPro
 ms.topic: conceptual
 ms.technology: mde
 ROBOTS: NOINDEX
-ms.openlocfilehash: 05123ecb52f38e87c8a2c5360d17b39605a44cfd
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: b8e44aa81c0985b296d0f19b8ead2e6251b53c1c
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399757"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533341"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法
 
@@ -32,10 +32,10 @@ Microsoft では、 [リムーバブル](https://aka.ms/devicecontrolblog)メデ
 2. 特定のリムーバブル デバイスのみを許可またはブロックし、脅威を防止するために構成します。
     1. [詳細な構成に基づいてリムーバブル](#allow-or-block-removable-devices) デバイスを許可またはブロックして、リムーバブル ディスクへの書き込みアクセスを拒否し、USB デバイスの ID を使用してデバイスを承認または拒否します。 デバイスインストール設定の柔軟なポリシー割り当ては、Azure Azure Active Directory (Azure AD) ユーザーとデバイスのグループに基づいて行います。
 
-    2. [次の機能を有効に](#prevent-threats-from-removable-storage) することで、リムーバブル 記憶域デバイスによって導入されたリムーバブル 記憶域からの脅威を防止します。  
-        - Microsoft Defender ウイルス対策保護 (RTP) を使用して、リムーバブル 記憶域をスキャンしてマルウェアを検出します。  
-        - USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする攻撃表面縮小 (ASR) USB ルール。  
-        - ユーザーがサインインするまで、カーネル DMA Protection for Thunderbolt やブロック DMA など、DMA 攻撃を軽減するためのダイレクト メモリ アクセス (DMA) 保護設定。  
+    2. [次の機能を有効に](#prevent-threats-from-removable-storage) することで、リムーバブル 記憶域デバイスによって導入されたリムーバブル 記憶域からの脅威を防止します。
+        - Microsoft Defender ウイルス対策保護 (RTP) を使用して、リムーバブル 記憶域をスキャンしてマルウェアを検出します。
+        - USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする攻撃表面縮小 (ASR) USB ルール。
+        - ユーザーがサインインするまで、カーネル DMA Protection for Thunderbolt やブロック DMA など、DMA 攻撃を軽減するためのダイレクト メモリ アクセス (DMA) 保護設定。
 
 3. [カスタム検出ルールを使用して](#create-customized-alerts-and-response-actions) 、これらのプラグ アンド プレイ イベントまたは他の Microsoft Defender for Endpoint イベントに基づいてリムーバブル デバイスの使用状況を監視するために、カスタマイズされたアラートと応答アクション [を作成します](/microsoft-365/security/defender-endpoint/custom-detection-rules)。
 
@@ -114,14 +114,14 @@ USB ドライブや他の周辺機器のインストールと使用を許可す�
 
 ![デバイス ホスト コントローラー](images/devicehostcontroller.jpg)
 
-特定のデバイスに制限する場合は、制限する周辺機器のデバイス セットアップ クラスを削除します。 次に、追加するデバイス ID を追加します。 デバイス ID は、デバイスのベンダー ID と製品 ID の値に基づいて設定されます。 デバイス ID 形式の詳細については、「Standard [USB Identifiers」を参照してください](/windows-hardware/drivers/install/standard-usb-identifiers)。 
+特定のデバイスに制限する場合は、制限する周辺機器のデバイス セットアップ クラスを削除します。 次に、追加するデバイス ID を追加します。 デバイス ID は、デバイスのベンダー ID と製品 ID の値に基づいて設定されます。 デバイス ID 形式の詳細については、「Standard [USB Identifiers」を参照してください](/windows-hardware/drivers/install/standard-usb-identifiers)。
 
-デバイス ID を検索するには、「デバイス [ID を検索する」を参照してください](#look-up-device-id)。 
+デバイス ID を検索するには、「デバイス [ID を検索する」を参照してください](#look-up-device-id)。
 
-例:
+例として以下のようなものがあります。
 
 1. これらのデバイスのセットアップに一致するドライバーを使用してデバイスのインストールを許可するからクラス USBDevice **を削除します**。
-2. [これらのデバイス ID に一致するデバイスのインストールを許可する] で、許可するデバイス **ID を追加します**。 
+2. [これらのデバイス ID に一致するデバイスのインストールを許可する] で、許可するデバイス **ID を追加します**。
 
 #### <a name="prevent-installation-and-usage-of-usb-drives-and-other-peripherals"></a>USB ドライブなどの周辺機器のインストールと使用を防止する
 
@@ -135,7 +135,7 @@ USB ドライブや他の周辺機器のインストールと使用を許可す�
 
 [**これらのデバイスの ID** と一致するデバイスのインストールを防止する] ポリシーを使用すると、インストールが妨Windowsデバイスの一覧を指定できます。
 
-これらのデバイスの ID に一致するデバイスのインストールを防止するには、次の手順を実行します。 
+これらのデバイスの ID に一致するデバイスのインストールを防止するには、次の手順を実行します。
 
 1. [インストールを防止](#look-up-device-id)するために必要なデバイスWindowsデバイス ID を参照します。
 
@@ -160,10 +160,10 @@ USB ドライブや他の周辺機器のインストールと使用を許可す�
 
 ベンダーの ID については、「USB メンバー」 [を参照してください](https://www.usb.org/members)。
 
-PowerShell を使用してデバイス ベンダー ID または製品 ID (デバイス ID の一部) を参照する例を次に示します。 
+PowerShell を使用してデバイス ベンダー ID または製品 ID (デバイス ID の一部) を参照する例を次に示します。
 
 ```powershell
-Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property * 
+Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property *
 ```
 
 [**これらのデバイス セットアップ クラス** に一致するドライバーを使用したデバイスのインストールを防止する] ポリシーを使用すると、インストールが妨Windowsデバイス セットアップ クラスを指定できます。
@@ -181,7 +181,7 @@ Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property *
 
 1. Microsoft エンドポイント マネージャー管理センター
 
-2. [デバイス **構成**  >  **プロファイル] [プロファイル**  >  **の作成] をクリックします**。
+2. [デバイス **構成** \> **プロファイル] [プロファイル** \> **の作成] をクリックします**。
 
     > [!div class="mx-imgBorder"]
     > ![デバイス構成プロファイルの作成](images/create-device-configuration-profile.png)
@@ -195,9 +195,9 @@ Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property *
    > [!div class="mx-imgBorder"]
    > ![プロファイルの作成](images/create-profile.png)
 
-4. [全般 **の構成]**  >  **をクリックします**。  
+4. [全般 **の構成]** \> **をクリックします**。
 
-5. リムーバブル **ストレージと** USB 接続 **(モバイルのみ)** の場合は、[ブロック] を **選択します**。 **リムーバブル ストレージ** には USB ドライブが含まれますが **、USB** 接続 (モバイルのみ) では USB 充電は除外されますが、モバイル デバイス上の他の USB 接続だけが含まれます。 
+5. リムーバブル **ストレージと** USB 接続 **(モバイルのみ)** の場合は、[ブロック] を **選択します**。 **リムーバブル ストレージ** には USB ドライブが含まれますが **、USB** 接続 (モバイルのみ) では USB 充電は除外されますが、モバイル デバイス上の他の USB 接続だけが含まれます。
 
    ![全般設定](images/general-settings.png)
 
@@ -216,7 +216,7 @@ Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property *
 
 Microsoft Defender for Endpoint は、次のいずれかのオプションを使用して、禁止されている周辺機器のインストールと使用をブロックします。
 
-- [管理用テンプレートは、](/intune/administrative-templates-windows) 一致するハードウェア ID またはセットアップ クラスを持つデバイスをブロックできます。  
+- [管理用テンプレートは、](/intune/administrative-templates-windows) 一致するハードウェア ID またはセットアップ クラスを持つデバイスをブロックできます。
 - [Intune のカスタム プロファイル](/windows/client-management/mdm/policy-csp-deviceinstallation) を使用したデバイス インストール CSP の設定。 特定の[デバイスの ID のインストールを防ぐか、特定](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids)[のデバイス クラスを防止できます](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses)。
 
 ### <a name="allow-installation-and-usage-of-specifically-approved-peripherals-with-matching-device-instance-ids"></a>デバイス インスタンスの一致する ID を使用して、特に承認された周辺機器のインストールと使用を許可する
@@ -238,9 +238,8 @@ Intune を使用すると、"許可されたサービス" を使用して、Blue
 > [!div class="mx-imgBorder"]
 > ![[設定] ページBluetoothスクリーンショット](images/bluetooth.png)
 
-
 ## <a name="prevent-threats-from-removable-storage"></a>リムーバブル 記憶域からの脅威を防止する
-  
+
 リムーバブル ストレージ デバイスでは、組織に追加のセキュリティ リスクが発生する可能性があります。 Microsoft Defender for Endpoint は、リムーバブル ストレージ デバイス上の悪意のあるファイルを識別してブロックするのに役立ちます。
 
 Microsoft Defender for Endpoint は、USB 周辺機器がデバイスで使用されるのを防ぎ、外部の脅威を防ぐのにも役立ちます。 これは、USB 周辺機器によって報告されたプロパティを使用して、デバイスにインストールして使用できるかどうかを判断することで行います。
@@ -248,7 +247,7 @@ Microsoft Defender for Endpoint は、USB 周辺機器がデバイスで使用�
 デバイス インストール ポリシーを使用して USB デバイスや他のデバイス クラスをブロックした場合でも、接続されているデバイス (電話など) は充電できます。
 
 > [!NOTE]
-> 組織に広く配布する前に、まずユーザーとデバイスのパイロット グループでこれらの設定をテストし、調整してください。 
+> 組織に広く配布する前に、まずユーザーとデバイスのパイロット グループでこれらの設定をテストし、調整してください。
 
 次の表は、Microsoft Defender for Endpoint がリムーバブル 記憶域からの脅威を防ぐ方法を示しています。
 
@@ -277,9 +276,9 @@ USB デバイスの制御の詳細については [、「Microsoft Defender for 
 - スケジュールされたスキャンを使用する場合は、フル スキャン中にリムーバブル デバイスをスキャンするには、DisableRemovableDriveScanning 設定 (既定で有効) を無効にする必要があります。 リムーバブル デバイスは、DisableRemovableDriveScanning 設定に関係なく、クイック スキャンまたはカスタム スキャン中にスキャンされます。
 
 > [!NOTE]
-> スキャンのリアルタイム監視を有効にすることをお勧めします。 Intune では、[デバイス制限の構成] で[デバイスのWindows 10リアルタイム監視Microsoft Defender ウイルス対策  >    >    >  **監視を有効にできます**。
+> スキャンのリアルタイム監視を有効にすることをお勧めします。 Intune では、[デバイス制限の構成] で[デバイスのWindows 10リアルタイム監視Microsoft Defender ウイルス対策 \>  \>  \> **監視を有効にできます**。
 
-<!-- Need to build out point in the preceding note. 
+<!-- Need to build out point in the preceding note.
 -->
 
 ### <a name="block-untrusted-and-unsigned-processes-on-usb-peripherals"></a>USB 周辺機器で信頼されていないプロセスと署名されていないプロセスをブロックする
@@ -295,18 +294,18 @@ USB デバイスの制御の詳細については [、「Microsoft Defender for 
 
 1. ユーザーにサインイン[Microsoft エンドポイント マネージャー。](https://endpoint.microsoft.com/)
 
-2. [デバイス **] Windows**  >    >  **構成ポリシー プロファイル**  >  **の作成] をクリックします**。 
+2. [デバイス **] Windows** \>  \> **構成ポリシー プロファイル** \> **の作成] をクリックします**。
 
     ![デバイス構成プロファイルの作成](images/create-device-configuration-profile.png)
 
 3. 次に示す設定を使用します。
-   - プラットフォーム: Windows 10以降 
+   - プラットフォーム: Windows 10以降
    - プロファイルの種類: デバイスの制限
 
    > [!div class="mx-imgBorder"]
    > ![エンドポイント保護プロファイルの作成](images/create-endpoint-protection-profile.png)
 
-4. **[作成]** をクリックします。  
+4. **[作成]** をクリックします。
 
 5. USB **から実行される署名されていないプロセスと信頼** されていないプロセスの場合は、[ブロック] を **選択します**。
 
@@ -366,5 +365,5 @@ Microsoft Defender for Endpoint カスタム検出ルールを使用して、カ
 - [Policy/DeviceInstallation CSP](/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [リムーバブル デバイスのカスタム スキャンを実行する](/samples/browse/?redirectedfrom=TechNet-Gallery)
 - [カスタム レポートPower BIデバイスコントロールテンプレート](https://github.com/microsoft/MDATP-PowerBI-Templates)
-- [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) 
+- [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md)
 - [Windows 情報保護](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md)

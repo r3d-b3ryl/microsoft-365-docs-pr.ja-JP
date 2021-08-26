@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 8ddc078e2d62881706c4e78d269268373c7e5fef9f25df3980ff411517f2b056
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ba233cf780ad428a9ecfdb6c4a3466b4ec4282da
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869921"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533365"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>ダウンロード可能な準備状況の評価チェック
 
@@ -53,7 +53,7 @@ ms.locfileid: "53869921"
 
 ### <a name="hardware"></a>ハードウェア
 
-デバイスがデバイスを使用するには、特定のハードウェア要件を満たすMicrosoft マネージド デスクトップ。 現時点では、特定 [の承認済みデバイス](../service-description/device-list.md) のみ登録が許可されています。 
+デバイスがデバイスを使用するには、特定のハードウェア要件を満たすMicrosoft マネージド デスクトップ。 詳細については、「デバイス要件 [」を参照してください](../service-description/device-list.md)。
 
 デバイスがチェックに失敗した場合は、デバイスと互換性Microsoft マネージド デスクトップ。
 

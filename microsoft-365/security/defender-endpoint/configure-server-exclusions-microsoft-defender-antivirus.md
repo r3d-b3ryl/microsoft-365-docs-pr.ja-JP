@@ -16,12 +16,12 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 08/17/2021
-ms.openlocfilehash: b64b407ac1971a43c8fd1cc640bfd5f13a348d12
-ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
+ms.openlocfilehash: d50146c3689f7b19fc6b546478bc0b01ada1fc30
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380166"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532489"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>サーバー Microsoft Defender ウイルス対策の除外をWindowsする
 
@@ -33,22 +33,26 @@ ms.locfileid: "58380166"
 
 ## <a name="summary"></a>概要
 
-この記事では、このページ以降のMicrosoft Defender ウイルス対策のWindows Server 2016説明します。 
+この記事では、このページ以降のMicrosoft Defender ウイルス対策のWindows Server 2016説明します。
 
-このMicrosoft Defender ウイルス対策は、Windows Server 2016以降に組み込むため、オペレーティング システム ファイルとサーバーの役割の除外が自動的に行われます。 ただし、カスタム除外を定義できます。 必要に応じて、自動除外をオプトアウトできます。 
+このMicrosoft Defender ウイルス対策は、Windows Server 2016以降に組み込むため、オペレーティング システム ファイルとサーバーの役割の除外が自動的に行われます。 ただし、カスタム除外を定義できます。 必要に応じて、自動除外をオプトアウトできます。
 
-この記事に含まれるセクションは次のとおりです。 <br/><br/>
+この記事に含まれるセクションは次のとおりです。
 
+<br>
 
-| Section  | 説明  |
-|---------|---------|
-| [ユーザーの自動除外Windows Server 2016以降](#automatic-exclusions-on-windows-server-2016-or-later)  | 2 つの主な種類の自動除外について説明し、自動除外の詳細な一覧を含む |
-| [自動除外のオプトアウト](#opting-out-of-automatic-exclusions) | 自動除外をオプトアウトする方法を説明する重要な考慮事項と手順が含まれています   |
-| [カスタム除外の定義](#defining-custom-exclusions) | カスタム除外の定義に関する情報へのリンクを提供します。 |
+****
 
+|Section|説明|
+|---|---|
+|[ユーザーの自動除外Windows Server 2016以降](#automatic-exclusions-on-windows-server-2016-or-later)|2 つの主な種類の自動除外について説明し、自動除外の詳細な一覧を含む|
+|[自動除外のオプトアウト](#opting-out-of-automatic-exclusions)|自動除外をオプトアウトする方法を説明する重要な考慮事項と手順が含まれています|
+|[カスタム除外の定義](#defining-custom-exclusions)|カスタム除外の定義に関する情報へのリンクを提供します。|
+|
 
 > [!IMPORTANT]
 > 次の点に注意してください。
+>
 > - カスタム除外は、自動除外よりも優先されます。
 > - 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 フル スキャン、クイック スキャン、またはオンデマンド スキャンでは、自動除外は適用されません。
 > - カスタム除外と重複除外は、自動除外と競合しない。
@@ -64,9 +68,9 @@ ms.locfileid: "58380166"
 - オペレーティング システム ファイル
 - サーバーの役割と、サーバーの役割を介して追加されるファイル
 
-このMicrosoft Defender ウイルス対策に組み込むため、そのファイルのオペレーティング システム ファイルに対する除外はWindows Server 2016必要ではありません。 さらに、Windows Server 2016 以降を実行して役割をインストールすると、Microsoft Defender ウイルス対策 には、サーバーの役割と、その役割のインストール中に追加されるファイルの自動除外が含まれます。 
+このMicrosoft Defender ウイルス対策に組み込むため、そのファイルのオペレーティング システム ファイルに対する除外はWindows Server 2016必要ではありません。 さらに、Windows Server 2016 以降を実行して役割をインストールすると、Microsoft Defender ウイルス対策 には、サーバーの役割と、その役割のインストール中に追加されるファイルの自動除外が含まれます。
 
-オペレーティング システムの除外とサーバーの役割の除外は、アプリに表示される標準の除外[リストにはWindows セキュリティされません](microsoft-defender-security-center-antivirus.md)。 
+オペレーティング システムの除外とサーバーの役割の除外は、アプリに表示される標準の除外[リストにはWindows セキュリティされません](microsoft-defender-security-center-antivirus.md)。
 
 サーバーの役割とオペレーティング システム ファイルの自動除外は、R2 のWindows Server 2012またはWindows Server 2012されません。
 
@@ -163,11 +167,16 @@ ms.locfileid: "58380166"
 
 次の表に、Hyper-V の役割をインストールするときに自動的に配信されるファイルの種類の除外、フォルダーの除外、およびプロセスの除外の一覧を示します。
 
-| 除外の種類 | 詳細 |
-|:---|:---|
-| ファイルの種類 |  `*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs` |
-| Folders |  `%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks` |
-| プロセス | `%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe` |
+<br>
+
+****
+
+|除外の種類|詳細|
+|---|---|
+|ファイルの種類|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
+|Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
+|プロセス|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
+|
 
 ##### <a name="sysvol-files"></a>SYSVOL ファイル
 
@@ -333,9 +342,9 @@ or フォルダーとすべてのサブフォルダーの現在の場所は、�
 
 2. グループ ポリシー **管理エディターで 、[** コンピューターの構成] **に移動** し、[管理用テンプレート] **を選択します**。
 
-3. ツリーを展開して、[**除外Windowsコンポーネント**  >  **Microsoft Defender ウイルス対策**  >  **展開します**。
+3. ツリーを展開して、[**除外Windowsコンポーネント** \> **Microsoft Defender ウイルス対策** \> **展開します**。
 
-4. [自動除外を **オフにする] をダブルクリック** し、オプションを [有効] に **設定します**。 次に [**OK**] を選びます。 
+4. [自動除外を **オフにする] をダブルクリック** し、オプションを [有効] に **設定します**。 次に [**OK**] を選びます。
 
 ### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server"></a>PowerShell コマンドレットを使用して、サーバー上の自動除外リストWindowsする
 
@@ -359,6 +368,7 @@ DisableAutoExclusions
 ```
 
 詳細と許可されるパラメーターについては、以下を参照してください。
+
 - [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="defining-custom-exclusions"></a>カスタム除外の定義

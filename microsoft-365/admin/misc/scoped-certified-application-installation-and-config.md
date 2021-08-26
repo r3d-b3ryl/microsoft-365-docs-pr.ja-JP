@@ -16,12 +16,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow のスコープ認定アプリケーションのインストールと構成ガイド。
-ms.openlocfilehash: 0bac2a0c12c1997627da77419a7b47d6cd4c74cb
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: f5c562122fafcbb05115519d7841800be3e71a73
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508596"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531661"
 ---
 # <a name="scoped-certified-application-installation-and-configuration-guide"></a>スコープ認定アプリケーションのインストールと構成ガイド
 
@@ -94,9 +94,9 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 |質問#1回答|質問#2回答|利用できる機能は何ですか?|構成手順|
 |--- |--- |--- |--- |
 |はい|はい|サービス正常性インシデント <br/>推奨されるソリューション </br>Microsoft サービス要求|[ServiceNow Microsoft 365認証との統合をサポートする方法を設定する](#set-up-microsoft-365-support-integration-with-servicenow-basic-authentication)|
-|はい|不要|サービス正常性インシデント <br/>推奨されるソリューション </br>Microsoft サービス要求||
-|不要|はい|サービス正常性インシデント <br/>推奨されるソリューション </br>Microsoft サービス要求|[AAD OAuth トークンMicrosoft 365サポート統合のセットアップ](#set-up-microsoft-365-support-integration-with-aad-oauth-token)|
-|不要|不要|サービス正常性インシデント <br/>推奨されるソリューション|[サポート統合Microsoft 365のセットアップのみインサイトする](#set-up-microsoft-365-support-integration-for-insights-only) |
+|はい|いいえ|サービス正常性インシデント <br/>推奨されるソリューション </br>Microsoft サービス要求||
+|いいえ|はい|サービス正常性インシデント <br/>推奨されるソリューション </br>Microsoft サービス要求|[AAD OAuth トークンMicrosoft 365サポート統合のセットアップ](#set-up-microsoft-365-support-integration-with-aad-oauth-token)|
+|いいえ|いいえ|サービス正常性インシデント <br/>推奨されるソリューション|[サポート統合Microsoft 365のセットアップのみインサイトする](#set-up-microsoft-365-support-integration-for-insights-only) |
 
 ## <a name="set-up-microsoft-365-support-integration-with-servicenow-basic-authentication"></a>ServiceNow Microsoft 365認証との統合をサポートする方法を設定する
 
@@ -162,9 +162,9 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image8.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
-### <a name="optional-whitelist-the-services-ips-of-microsoft-365-support-integration"></a>\[オプション \] のホワイトリスト サービスの Ips Microsoft 365統合
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[オプション \] サービスの Ips をサポート統合Microsoft 365許可する
 
-会社が独自のポリシーを使用してインターネット アクセスを制限している場合は、Microsoft 365 サポート統合のサービスのネットワーク アクセスを有効にし、受信 API アクセスと送信 API アクセスの両方について以下の IP アドレスをホワイトリストに登録します。
+会社が独自のポリシーでインターネット アクセスを制限している場合は、以下の IP アドレスを受信 API アクセスと送信 API アクセスの両方に許可することで、Microsoft 365 サポート統合のサービスに対するネットワーク アクセスを有効にしてください。
 
 - 52.149.152.32
 
@@ -224,13 +224,13 @@ Microsoft 365サポート統合を使用すると、ヘルプMicrosoft 365、サ
 
 - 前提条件 (基本認証) 手順 4 で作成 [した](#prerequisites-basic-authentication) 統合ユーザーを選択し、[ \# 次へ] を **選択します**。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
+:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
 7. \[ServiceNow 管理者であるユーザー リポジトリ \] ID を設定します。
 
 リポジトリ ID を指定し、[次へ] を **選択します**。
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
+:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーションの説明が自動的に生成される":::
 
 8. \[ServiceNow 管理者であるユーザー アプリケーション \] の設定を設定します。
 
@@ -411,9 +411,9 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image26.png" alt-text="グラフィカル ユーザー インターフェイス、アプリケーションの説明が自動的に生成される":::
 
-### <a name="optional-whitelist-the-services-ips-of-microsoft-365-support-integration"></a>\[オプション \] のホワイトリスト サービスの Ips Microsoft 365統合
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[オプション \] サービスの Ips をサポート統合Microsoft 365許可する
 
-会社が独自のポリシーでインターネット アクセスを制限している場合は、受信 API アクセスと送信 API アクセスの両方に対してこれらの IP アドレスをホワイトリストに登録して、Microsoft 365 サポート統合のサービスのネットワーク アクセスを有効にしてください。
+会社が独自のポリシーを使用してインターネット アクセスを制限している場合は、次の IP アドレスを受信 API アクセスと送信 API アクセスの両方に許可することで、Microsoft 365 サポート統合のサービスのネットワーク アクセスを有効にしてください。
 
 - 52.149.152.32
 
@@ -473,7 +473,7 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     1. 前提条件 [(AAD OAuth トークン)](#prerequisites-aad-oauth-token) の手順 3 で作成されたアプリケーションのクライアント ID を入力し、[ \# 次へ] を **選択します**。
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image29.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
 7. \[ServiceNow 管理者であるユーザー \] リポジトリ ID を設定します。
 
@@ -499,7 +499,7 @@ Microsoft 365サポート統合が有効になっているのは、次のいず�
 
     1. 次の情報を確認して、正しいか確認してください。
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image30.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="グラフィカル ユーザー インターフェイス、テキスト、アプリケーション、電子メールの説明が自動的に生成される":::
 
     1. [組織プロファイルMicrosoft 365 [管理ポータル](https://admin.microsoft.com)  >    >  **設定設定**  >  **に移動します**。
 

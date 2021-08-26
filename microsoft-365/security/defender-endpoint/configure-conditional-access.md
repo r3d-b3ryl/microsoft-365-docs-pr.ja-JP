@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 281a9391fdc512882a4a7aef2dfecf51e28ce77a9724f0ba1882d75f7bbff935
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a0be19a974f7a065333ff0a5045512a2eb98a85
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839857"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532921"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で条件付きアクセスを構成する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53839857"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 このセクションでは、条件付きアクセスを適切に実装するために必要なすべての手順について説明します。
 
@@ -68,21 +68,21 @@ Intune ポータル、Intune ポータル、および Azure Microsoft 365 Defend
 
 ### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>手順 1: 接続を有効Microsoft Intuneする
 
-1. ナビゲーション ウィンドウで、[エンドポイントの全般高度な **設定** 接続  >    >    >  **] を選択Microsoft Intune**  >  **します**。
+1. ナビゲーション ウィンドウで、[エンドポイントの全般高度な **設定** 接続 \>  \>  \> **] を選択Microsoft Intune** \> **します**。
 2. [設定] Microsoft Intuneを [オン] に **切り替える**。
 3. [設定 **の保存] をクリックします**。
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>手順 2: Intune で Defender for Endpoint 統合を有効にする
 
-1. [Azure portal](https://portal.azure.com) にサインインします。
-2. [デバイス **コンプライアンス**  >  **] [Microsoft Defender ATP] を選択します**。
+1. [Azure portal](https://portal.azure.com)にサインインします。
+2. [デバイス **コンプライアンス** \> **] [Microsoft Defender ATP] を選択します**。
 3. Microsoft Defender advanced threat protection **Connect Windows 10.0.15063+** デバイスを On に設定 **します**。
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>手順 3: Intune でコンプライアンス ポリシーを作成する
 
 1. Azure portal [で、[すべてのサービス](https://portal.azure.com)**]** を選択し **、Intune** でフィルター処理し、[**すべてのサービス]** を選択Microsoft Intune。
-2. [デバイス **コンプライアンス ポリシー**  >  **] [ポリシー**  >  **の作成] を選択します**。
+2. [デバイス **コンプライアンス ポリシー** \> **] [ポリシー** \> **の作成] を選択します**。
 3. [名前] **と [説明** ] を **入力します**。
 4. [**プラットフォーム] で****、[Windows 10] を選択します**。
 5. [デバイス **の正常性] 設定** で、[デバイスの脅威レベル] または [デバイスの脅威レベル] の下にあるデバイスを希望する **レベルに設定** します。
@@ -97,23 +97,23 @@ Intune ポータル、Intune ポータル、および Azure Microsoft 365 Defend
 ### <a name="step-4-assign-the-policy"></a>手順 4: ポリシーを割り当てる
 
 1. Azure portal [で、[すべてのサービス](https://portal.azure.com)**]** を選択し **、Intune** でフィルター処理し、[**すべてのサービス]** を選択Microsoft Intune。
-2. [**デバイス コンプライアンス ポリシー**  >  **] を選択>** Microsoft Defender for Endpoint コンプライアンス ポリシーを選択します。
+2. [ **デバイス コンプライアンス ポリシー** \> **] を選択>** Microsoft Defender for Endpoint コンプライアンス ポリシーを選択します。
 3. **[割り当て]** を選択します。
 4. ポリシーを割り当てるには、Azure ADグループを含めるか除外します。
 5. ポリシーをグループに展開するには、[保存] を **選択します**。 ポリシーの対象となるユーザー デバイスは、コンプライアンスについて評価されます。
 
 ### <a name="step-5-create-an-azure-ad-conditional-access-policy"></a>手順 5: 条件付きアクセス ポリシー AD Azure を作成する
 
-1. Azure portal [で、[条件付きアクセス](https://portal.azure.com)**] Azure Active Directory**  >  **ポリシーを**  >  **開きます**。
+1. Azure portal [で、[条件付きアクセス](https://portal.azure.com)**] Azure Active Directory** \> **ポリシーを** \> **開きます**。
 2. ポリシー名を入力 **し、[** ユーザーとグループ **] を選択します**。 [含める] または [除外] オプションを使用してポリシーのグループを追加し、[完了] を **選択します**。
 3. [ **クラウド アプリ] を** 選択し、保護するアプリを選択します。 たとえば、[アプリの選択 **] を** 選択し、[オンライン] と **[Office 365 SharePoint]** **を** Office 365 Exchange Online。 [**完了**] を選んで変更内容を保存します。
 
-4. [**条件**  >  **クライアント アプリ] を** 選択して、アプリとブラウザーにポリシーを適用します。 たとえば、[はい] **を選択** し、[ **ブラウザー** とモバイル アプリと **デスクトップ クライアント] を有効にします**。 [**完了**] を選んで変更内容を保存します。
+4. [ **条件** \> **クライアント アプリ] を** 選択して、アプリとブラウザーにポリシーを適用します。 たとえば、[はい] **を選択** し、[ **ブラウザー** とモバイル アプリと **デスクトップ クライアント] を有効にします**。 [**完了**] を選んで変更内容を保存します。
 
-5. [許可 **] を** 選択して、デバイスのコンプライアンスに基づいて条件付きアクセスを適用します。 たとえば、[アクセスを許可 **するデバイス**  >  **に準拠としてマークする] を選択します**。 [選択 **] を** 選択して変更を保存します。
+5. [許可 **] を** 選択して、デバイスのコンプライアンスに基づいて条件付きアクセスを適用します。 たとえば、[アクセスを許可 **するデバイス** \> **に準拠としてマークする] を選択します**。 [選択 **] を** 選択して変更を保存します。
 
 6. [ポリシー **を有効にする]** を選択し、[ **作成] を選択して** 変更を保存します。
 
 詳細については、「Intune での条件付きアクセスを使用した Microsoft Defender for Endpoint のコンプライアンスの [適用」を参照してください](/intune/advanced-threat-protection)。
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

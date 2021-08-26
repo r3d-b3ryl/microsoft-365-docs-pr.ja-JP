@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5221c7c715e6722ada2acabe2d9752cb51c18914c4b5e77ddbb6d5cac55c7ac2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 018b432ec792610c2f3d232a7ead4dfc8c75639f
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854125"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532429"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>SIEM ツールへの検出のプル
 
@@ -31,14 +31,15 @@ ms.locfileid: "53854125"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## <a name="pull-detections-using-security-information-and-events-management-siem-tools"></a>セキュリティ情報とイベント管理 (SIEM) ツールを使用したプル検出
 
->[!NOTE]
->- [Microsoft Defender for Endpoint Alert は](alerts.md) 、1 つ以上の検出から構成されます。
->- [Microsoft Defender for Endpoint Detection は](api-portal-mapping.md) 、デバイスで発生した疑わしいイベントとその関連するアラートの詳細から構成されます。
->-Microsoft Defender for Endpoint Alert API は、アラートの使用に関する最新の API であり、各アラートに関連する証拠の詳細な一覧を含む。 詳細については、「Alert メソッドと[プロパティ」および「List alerts」](alerts.md)[を参照してください](get-alerts.md)。
+> [!NOTE]
+>
+> - [Microsoft Defender for Endpoint Alert は](alerts.md) 、1 つ以上の検出から構成されます。
+> - [Microsoft Defender for Endpoint Detection は](api-portal-mapping.md) 、デバイスで発生した疑わしいイベントとその関連するアラートの詳細から構成されます。
+> -Microsoft Defender for Endpoint Alert API は、アラートの使用に関する最新の API であり、各アラートに関連する証拠の詳細な一覧を含む。 詳細については、「Alert メソッドと[プロパティ」および「List alerts」](alerts.md)[を参照してください](get-alerts.md)。
 
 Defender for Endpoint は、検出をプルするためのセキュリティ情報とイベント管理 (SIEM) ツールをサポートします。 Defender for Endpoint は、Azure でホストされている HTTPS エンドポイントを通じてアラートを公開します。 エンドポイントは、環境にインストールされている特定の SIEM コネクタを表す AAD アプリケーションの OAuth 2.0 認証プロトコルを使用して、Azure Active Directory (AAD) のエンタープライズ テナントから検出を取得するように構成できます。
 
@@ -53,7 +54,7 @@ Defender for Endpoint は現在、専用の SIEM 統合モデルを通じて、�
 
 - [Defender for Endpoint で SIEM 統合を有効にする](enable-siem-integration.md)
 - サポートされている SIEM ツールを構成します。
-     - [エンドポイント検出用の Defender をプルする Micro Focus ArcSight の構成](configure-arcsight.md)
-     - エンドポイント検出用 Defender をプルする IBM QRadar を構成する 詳細については [、「IBM Knowledge Center」を参照してください](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)。
+  - [エンドポイント検出用の Defender をプルする Micro Focus ArcSight の構成](configure-arcsight.md)
+  - エンドポイント検出用 Defender をプルする IBM QRadar を構成する 詳細については [、「IBM Knowledge Center」を参照してください](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)。
 
 検出 API で公開されているフィールドの一覧の詳細については、「Defender for Endpoint Detection [fields」を参照してください](api-portal-mapping.md)。

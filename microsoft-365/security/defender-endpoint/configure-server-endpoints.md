@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 693575d507d77d7ac34422f0ddef0b0d4a41ecf2
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 23f6b23d958a51bd84498c08ef95672ec62ff6e5
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257864"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532765"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender Windowsエンドポイント サービスへのオンボード サーバー
 
@@ -36,7 +36,7 @@ ms.locfileid: "58257864"
 - Windows Server 2019 以降
 - Windows Server 2019 Core Edition
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
 
 Defender for Endpoint では、サポートを拡張して、サーバー オペレーティング Windowsも含まれます。 このサポートは、高度な攻撃の検出と調査機能を、Microsoft 365 Defender提供します。
 
@@ -71,7 +71,7 @@ System Center Operations Manager (SCOM) または Azure Monitor (旧称:Operatio
   4. クライアントの構成と更新System Center Endpoint Protectionします。
 
 
-#### <a name="before-you-begin"></a>始める前に
+#### <a name="before-you-begin"></a>はじめに
 
 オンボーディング要件を満たすために、次の手順を実行します。
 
@@ -97,7 +97,7 @@ Server 2008 R2 SP1 Windows、次の要件を満たしていることを確認し
 1. エージェント セットアップ ファイルをダウンロードします[。Windows 64 ビット エージェントをダウンロードします](https://go.microsoft.com/fwlink/?LinkId=828603)。
 
 2. 前の手順で取得した Workspace ID と Workspace キーを使用して、次のインストール方法を選択して、エージェントをサーバーにインストールWindowsします。
-    - [セットアップを使用してエージェントを手動でインストールします](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)。 
+    - [セットアップを使用してエージェントを手動でインストールします](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)。
     [エージェント **のセットアップ オプション]** ページで、[エージェント **Connect Azure Log Analytics (OMS) に移動する] を選択します**。
     - [コマンド ラインを使用してエージェントをインストールします](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。
     - [スクリプトを使用してエージェントを構成します](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)。
@@ -118,7 +118,7 @@ Server 2008 R2 SP1 Windows、次の要件を満たしていることを確認し
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>オプション 2: Azure セキュリティ センター Windowsサーバーをオンボードする
 
-[デバイスのMicrosoft 365 Defender] ウィンドウで、[エンドポイント **デバイス** 設定  >    >  **オンボーディング]**  >  **を選択します**。
+[デバイスのMicrosoft 365 Defender] ウィンドウで、[エンドポイント **デバイス** 設定 \>  \> **オンボーディング]** \> **を選択します**。
 
 1. オペレーティング **Windowsサーバー 2008 R2 SP1、2012 R2、2016** を選択します。
 
@@ -198,7 +198,7 @@ Defender for Endpoint は、Azure Defender と統合して、包括的なサー�
     > [!NOTE]
     > Azure Defender for Servers と Microsoft Defender for Endpoint の統合は[、Windows Server 2019 と Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)をサポートするように拡張されました。
 
-- Windows監視されるサーバーは、Defender for Endpoint でも利用できます 。 Azure Defender は Defender for Endpoint テナントにシームレスに接続し、クライアントとサーバー間で 1 つのビューを提供します。  さらに、Defender for Endpoint アラートは Azure Defender コンソールで利用できます。
+- Windows監視されるサーバーは、Defender for Endpoint でも利用できます 。 Azure Defender は Defender for Endpoint テナントにシームレスに接続し、クライアントとサーバー間で 1 つのビューを提供します。 さらに、Defender for Endpoint アラートは Azure Defender コンソールで利用できます。
 
 - サーバー調査 - Azure Defender のお客様は、Microsoft 365 Defenderにアクセスして詳細な調査を実行し、潜在的な侵害の範囲を明らかにできます。
 
@@ -222,8 +222,8 @@ Defender for Endpoint は、エンドポイントとSystem Center Endpoint Prote
 - [SCEP クライアント Cloud Protection Service メンバーシップを Advanced](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 設定に **構成** します。
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>検出テストを実行してオンボーディングを確認する
-デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。
 
+デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する [」を参照してください](run-detection-test.md)。
 
 ## <a name="offboard-windows-servers"></a>オフボード Windows サーバー
 
@@ -266,7 +266,7 @@ Windows クライアント デバイスで使用できるのと同じ方法で�
 
 1. ワークスペース ID を取得します。
 
-   1. [デバイスのMicrosoft 365 Defender] ウィンドウで、[エンドポイント **デバイス** 設定  >    >  **オンボーディング]**  >  **を選択します**。
+   1. [デバイスのMicrosoft 365 Defender] ウィンドウで、[エンドポイント **デバイス** 設定 \>  \> **オンボーディング]** \> **を選択します**。
 
    1. オペレーティング **システムWindows Server 2008 R2 SP1、2012 R2、2016** を選択し、ワークスペース ID を取得します。
 
@@ -306,9 +306,9 @@ Windows クライアント デバイスで使用できるのと同じ方法で�
 **手順-2: ファイル名 DeployMMA.cmd を作成する (メモ帳を使用)** cmd ファイルに次の行を追加します。 ワークスペース ID と KEY が必要です。
 
 ```dos
-@echo off 
+@echo off
 cd "C:"
-IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" ( 
+IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" (
 exit
 ) ELSE (
 wusa.exe c:\Windows\MMA\Windows6.1-KB123456-x86.msu /quiet /norestart
@@ -369,7 +369,7 @@ Server 2008 R2 のオンボーディングに関するドキュメントで特�
 サーバー Windows 2008 R2 PS1 の場合は、次の要件を満たしていることを確認してください。
 
 - [2018 年 2 月の更新プログラムのロールアップをインストールする](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-  
+
 - [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (以降) または[KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)のいずれかをインストールする
 
 Windows Server 2008 R2 をオンボーディングする前に、KB が存在する必要があります。

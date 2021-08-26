@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 77a5d01b16a181067b347ab72220d722dc2ab447
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a6df318ccf484d750ae8010f34b5c545b115cde0
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256561"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532981"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>スキャンの除外を構成およびMicrosoft Defender ウイルス対策する
 
@@ -41,11 +41,11 @@ ms.locfileid: "58256561"
 ## <a name="recommendations-for-defining-exclusions"></a>除外を定義するための推奨事項
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるファイルなど) に基づく多くの自動除外が含まれます。  
-> 
+> Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるファイルなど) に基づく多くの自動除外が含まれます。
+>
 > 除外を定義すると、ユーザーが提供する保護がMicrosoft Defender ウイルス対策。 除外の実装に関連付けられているリスクは常に評価する必要があります。悪意がないと確信しているファイルのみを除外する必要があります。
 
-除外を定義する場合は、次の点に注意してください。  
+除外を定義する場合は、次の点に注意してください。
 
 - 除外は技術的には保護のギャップです。 除外を定義する場合は、すべてのオプションを検討してください。 その他のオプションは、除外された場所に適切なアクセス制御リスト (ACL) を設定するか、最初はポリシーを監査モードに設定するのと同じほど簡単です。
 

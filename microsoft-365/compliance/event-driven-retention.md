@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: 4b1f30b8aaa072b328307a90f2828d7b8dd0187d3fd3767d8eb13bc6104bd033
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9f5ca3c0941d2f7c72d72da34d1a840ecf42c68e
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905981"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531529"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
@@ -208,7 +208,7 @@ REST API は一連の HTTP 操作 (HTTP メソッド) をサポートするサ�
 
 REST API を使用するには、2 つのオプションがあります。
 
-- イベントの発生を自動的にトリガーする **Microsoft Power Automate または同様のアプリケーション**。 Microsoft Power Automate は、他のシステムに接続するためのオーケストレーターなので、カスタム ソリューションを作成する必要はありません。 詳細については、[Power Automate Web サイト](https://flow.microsoft.com/ja-JP/) を参照してください。
+- イベントの発生を自動的にトリガーする **Microsoft Power Automate または同様のアプリケーション**。 Microsoft Power Automate は、他のシステムに接続するためのオーケストレーターなので、カスタム ソリューションを作成する必要はありません。 詳細については、[Power Automate Web サイト](https://flow.microsoft.com/en-us/) を参照してください。
 
 - **PowerShell または HTTP クライアントで REST API** を呼び出して、カスタム ソリューションの一部である PowerShell (バージョン 6 以降) を使用してイベントを作成します。
 
@@ -226,9 +226,9 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 
 Microsoft 365 REST API を使用してイベントを作成するフローを作成します
 
-![Flow を使用してイベントを作成する](../media/automate-event-driven-retention-flow-1.png)
+![Power Automate を使用してイベントを作成する](../media/automate-event-driven-retention-flow-1.png)
 
-![Flow を使用して REST API を呼び出す](../media/automate-event-driven-retention-flow-2.png)
+![Power Automate を使用して REST API を呼び出す](../media/automate-event-driven-retention-flow-2.png)
 
 #### <a name="create-an-event"></a>イベントを作成する
 

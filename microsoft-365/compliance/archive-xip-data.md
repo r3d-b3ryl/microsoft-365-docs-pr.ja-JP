@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、XIP ソース データを Veritas から他のユーザーにインポートおよびアーカイブするコネクタをMicrosoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 664f0050586c7f40f9c770601bdf6418209aa17fa9b146253ed2f9a073def966
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a0c1758f2ee305becaf8ce0e2bf301b723144f56
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835912"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533329"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>XIP ソース データをアーカイブするコネクタをセットアップする
 
@@ -47,7 +47,7 @@ XIP ソース データをユーザー メールボックスに格納した後�
 
 ## <a name="step-1-set-up-the-xip-connector"></a>手順 1: XIP コネクタをセットアップする
 
-最初の手順は、Microsoft365 コンプライアンス センターの [データ コネクタ] ページにアクセスし、XIP ソース データのコネクタを作成することです。 
+最初の手順は、XIPソース データのコネクタを作成し、Microsoft 365 コンプライアンス センターの [データ コネクタ] ページにアクセスすることです。
 
 1. [データ コネクタ [https://compliance.microsoft.com](https://compliance.microsoft.com/) XIP] **に移動し、[データ コネクタ** \> **] をクリックします**。
 

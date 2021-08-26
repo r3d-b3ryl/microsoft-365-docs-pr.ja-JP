@@ -19,12 +19,12 @@ search.appverid:
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0d5803560ea965e222669027be30860d8a17328b2d097705dabe9bb88e5c42c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1711ce8154afb976ce89ac7760f5bec9afca7292
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57002687"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532573"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -39,7 +39,7 @@ ms.locfileid: "57002687"
 
 - まず、SharePoint Online、OneDrive for Business、転送中のメールの個人データを監視するための Microsoft 365 データ損失防止レポートから開始します。これらのレポートは、個人データを監視するための最も詳細なレベルの内容を提供します。ただし、このレポートには Office 365 のすべてのサービスが含まれているわけではありません。
 
-- 次に、アラート ポリシーと監査ログを使用して、サービス全体のアクティビティを監視します。進行中の監視を設定するか、監査ログを検索してインシデントを調査します。監査ログは、Sway、Power BI、電子情報開示、Dynamics 365、Microsoft Flow、Microsoft Teams、管理アクティビティ、OneDrive for Business、SharePoint Online、転送中のメール、保管中のメールボックスなどのサービス全体で機能します。Skype の会話は保管中のメールボックスに含まれます。
+- 次に、アラート ポリシーと監査ログを使用して、サービス全体のアクティビティを監視します。進行中の監視を設定するか、監査ログを検索してインシデントを調査します。監査ログは、Sway、Power BI、電子情報開示、Dynamics 365、Power Automate、Microsoft Teams、管理アクティビティ、OneDrive for Business、SharePoint Online、転送中のメール、保管中のメールボックスなどのサービス全体で機能します。Skype の会話は保管中のメールボックスに含まれます。
 
 - 最後に、Microsoft Cloud App Security を使用して、他の SaaS プロバイダーの機密データを含むファイルを監視します。機密情報の種類と統合ラベルを Azure Information Protection と Cloud App Security が有効な Office で使用できる機能が近日公開予定です。すべての SaaS アプリまたは特定のアプリ (Box など) に適用するポリシーを設定できます。Cloud App Security では、メールに添付されたファイルを含め、Exchange Online のファイルは検出されません。
 

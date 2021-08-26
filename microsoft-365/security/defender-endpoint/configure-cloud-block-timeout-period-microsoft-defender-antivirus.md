@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/04/2021
-ms.openlocfilehash: 4bca279f4fbb9a521fb436a91d2ff772dc4660e7d7c72f861bf010dfc03194cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 85313f279a46dbb278dbdb0014d44124a147394d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874149"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533221"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>クラウド ブロックのタイムアウト期間の構成
 
@@ -63,12 +63,12 @@ ms.locfileid: "53874149"
 
 3. グループ ポリシー **管理エディターで、[** コンピューターの構成] **に** 移動し、[管理用テンプレート] **を選択します**。
 
-3. MpEngine のコンポーネント **Windowsツリー**  >  **Microsoft Defender ウイルス対策**  >  **展開します**。
+3. MpEngine のコンポーネント **Windowsツリー** \> **Microsoft Defender ウイルス対策** \> **展開します**。
 
 4. [拡張クラウド チェック **の構成] をダブルクリックし** 、オプションが有効になっているか確認します。 
 
    クラウドの決定を待っている間にファイルが実行されるのを防ぐための余分な時間を指定します。 1 秒から 50 秒の余分な時間を秒で指定します。 指定した値は、既定の 10 秒に追加されます。
 
-5. **[OK]** をクリックします。
+5. **[OK]** を選択します。
 
  

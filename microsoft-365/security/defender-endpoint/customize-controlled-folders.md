@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: de715a0b19b708932f6094a02561e414e2758ea643d5cdeb84f35ff5c520ed4e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24e144b6134c4d32b15220ed3b3608b3b4a1c1df
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829774"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533089"
 ---
 # <a name="customize-controlled-folder-access"></a>制御されたフォルダー アクセスをカスタマイズする
 
@@ -29,7 +29,7 @@ ms.locfileid: "53829774"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 フォルダー アクセスの制御により、悪意のあるアプリやランサムウェアなどの脅威から貴重なデータを保護できます。 フォルダー アクセスの制御は、サーバー 2019 WindowsクライアントでWindows 10されます。 この記事では、フォルダー アクセスの制御機能をカスタマイズする方法について説明し、次のセクションを示します。
 
@@ -71,9 +71,9 @@ ms.locfileid: "53829774"
 
 2. 構成するグループ ポリシー オブジェクトを右クリックし、[編集] を **選択します**。
 
-3. グループ ポリシー **管理エディターで、[****コンピューター構成ポリシー**]  >  **[管理**  >  **用テンプレート] に移動します**。
+3. グループ ポリシー **管理エディターで、[****コンピューター構成ポリシー** ] \> **[管理** \> **用テンプレート] に移動します**。
 
-4. ツリーを展開して **、Exploit** Guard Windowsフォルダー アクセスMicrosoft Defender ウイルス対策Windows Defender  >    >  **コンポーネント**  >  **を展開します**。 <br/>**注**: 以前のバージョンの Windowsでは、以前のバージョン **Windows Defender ウイルス対策表示される** 場合 **Microsoft Defender ウイルス対策。**
+4. ツリーを展開して **、Exploit** Guard Windowsフォルダー アクセスMicrosoft Defender ウイルス対策Windows Defender \>  \> **コンポーネント** \> **を展開します**。 <br/>**注**: 以前のバージョンの Windowsでは、以前のバージョン **Windows Defender ウイルス対策表示される** 場合 **Microsoft Defender ウイルス対策。**
 
 5. [構成済みの **保護されたフォルダー] を** ダブルクリックし、オプションを [有効] に **設定します**。 [ **表示] を** 選択し、保護する各フォルダーを指定します。
 
@@ -128,7 +128,7 @@ ms.locfileid: "53829774"
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して **、Exploit** Guard Windowsフォルダー アクセスMicrosoft Defender ウイルス対策Windows Defender  >    >  **コンポーネント**  >  **を展開します**。
+3. ツリーを展開して **、Exploit** Guard Windowsフォルダー アクセスMicrosoft Defender ウイルス対策Windows Defender \>  \> **コンポーネント** \> **を展開します**。
 
 4. [許可されたアプリケーションの **構成] 設定をダブルクリック** し、オプションを [有効] に **設定します**。 [表示 **] を** 選択し、各アプリを入力します。
 

@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 6829e12cdfd6a2942b60e8a0b8df166686ff0485c65d739ef19285628d140305
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 143722108ef1c5df8432610ff372697fdd3407df
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857653"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532525"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>エンドポイントMicrosoft Defender ウイルス対策通知を構成する
 
@@ -38,7 +38,7 @@ ms.locfileid: "53857653"
 最近の脅威検出の概要など、追加の通知の表示は、Windows セキュリティグループ ポリシー[で](microsoft-defender-security-center-antivirus.md)構成できます。
 
 > [!NOTE]
-> このWindows 10バージョン 1607 では、この機能は拡張通知と呼ばされ、[更新プログラムの更新] Windows 設定で&  >  **構成**  >  Windows Defender。 すべてのバージョンのグループ ポリシー設定で、Windows 10機能は拡張通知と **呼ばれる。**
+> このWindows 10バージョン 1607 では、この機能は拡張通知と呼ばされ、[更新プログラムの更新] Windows 設定で& \> **構成** \> Windows Defender。 すべてのバージョンのグループ ポリシー設定で、Windows 10機能は拡張通知と **呼ばれる。**
 
 ### <a name="use-group-policy-to-disable-additional-notifications"></a>グループ ポリシーを使用して追加の通知を無効にする
 
@@ -50,9 +50,9 @@ ms.locfileid: "53857653"
 
 4. [管理 **用テンプレート] を選択します**。
 
-5. ツリーを展開して **、reporting**Windowsコンポーネント**  >  **Microsoft Defender ウイルス対策>** 展開します。
+5. ツリーを展開して **、reporting**Windowsコンポーネント** \> **Microsoft Defender ウイルス対策>** 展開します。
 
-6. [拡張通知を **オフにする] をダブルクリック** し、オプションを [有効] に **設定します**。 次に **[OK]** を選択します。 これにより、追加の通知が表示されません。
+6. [拡張通知を **オフにする] をダブルクリック** し、オプションを [有効] に **設定します**。 次に [**OK**] を選びます。 これにより、追加の通知が表示されません。
 
 > [!IMPORTANT]
 > 追加の通知を無効にすると、脅威の検出や修復アラートなどの重要な通知は無効にされません。
@@ -90,11 +90,11 @@ ms.locfileid: "53857653"
 
 3. グループ ポリシー **管理エディターで、[コンピューター** の構成] **に移動し、[** 管理用テンプレート **] を選択します**。
 
-4. ツリーを展開して **、WindowsインターフェイスMicrosoft Defender ウイルス対策**  >    >  **コンポーネントに展開します**。 
+4. ツリーを展開して **、WindowsインターフェイスMicrosoft Defender ウイルス対策** \>  \> **コンポーネントに展開します**。 
 
 5. [すべての通知を **非表示にする] をダブルクリック** し、オプションを [有効] に **設定します**。 
 
-6. **[OK]** をクリックします。 これにより、追加の通知が表示されません。
+6. **[OK]** を選択します。 これにより、追加の通知が表示されません。
 
 ### <a name="use-group-policy-to-hide-reboot-notifications"></a>グループ ポリシーを使用して再起動通知を非表示にする
 
@@ -106,9 +106,9 @@ ms.locfileid: "53857653"
 
 3. [管理 **用テンプレート] をクリックします**。
 
-4. ツリーを展開して **、WindowsインターフェイスMicrosoft Defender ウイルス対策**  >    >  **コンポーネントに展開します**。
+4. ツリーを展開して **、WindowsインターフェイスMicrosoft Defender ウイルス対策** \>  \> **コンポーネントに展開します**。
 
 5. [再起動通知を **抑制する] をダブルクリックし** 、オプションを [有効] に **設定します**。 
 
-5. **[OK]** をクリックします。 これにより、追加の通知が表示されません。
+5. **[OK]** を選択します。 これにより、追加の通知が表示されません。
 

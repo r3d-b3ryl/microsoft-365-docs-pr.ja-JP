@@ -1,5 +1,5 @@
 ---
-title: 手順 3. 契約Power Automate処理するフローを作成するには、次の情報を使用します。
+title: 手順 3. 契約Power Automate処理するフローを作成するには、次の手順を実行します。
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,14 +12,14 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: カスタム ソリューションを使用してPower Automateを作成して契約を処理する方法についてMicrosoft 365します。
-ms.openlocfilehash: ddf9df71c53af9f3a68dcbfd9a5b1882b67c4fbd4600e89ecec36e283848ac3e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1de8c0c5ed25ee9934077d015f4e66c43e07c7c8
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859277"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533245"
 ---
-# <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>手順 3. 契約Power Automate処理するフローを作成するには、次の情報を使用します。
+# <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>手順 3. 契約Power Automate処理するフローを作成するには、次の手順を実行します。
 
 契約管理チャネルを作成し、ドキュメント ライブラリにSharePointしました。 次の手順は、Power Automateモデルが識別して分類する契約を処理するSharePoint Syntex作成します。 この手順を実行するには、[ドキュメント ライブラリにPower Automateフロー SharePoint作成します](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)。
 
@@ -160,7 +160,7 @@ ms.locfileid: "53859277"
     | 承認状態  | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['submitActionId']         |
     | 承認済み     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responder']['displayName']        |
     | 承認日     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responseTime']         |
-    | Comment     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']         |
+    | コメント     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']         |
     
     次の使用例は、数式ボックスを使用して式をPower Automateする方法を示しています。
 

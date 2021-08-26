@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 732fe4748db6f3a2f1d055ee900fa87e84de57ea
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 80a3d5bee2f26e708969832c67982f679b95c0b4
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58359987"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531505"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control リムーバブル Storage保護
 
@@ -103,13 +103,13 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storage保護�
 ****
 
 |プロパティ名|適用可能なポリシー|オペレーティング システムに適用される|説明|
-|---------|---------|---------|---------|
-|デバイス クラス|- [Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法](control-usb-devices-using-intune.md)|Windows|デバイス ID 形式の詳細については、「デバイス セットアップ [クラス」を参照してください](/windows-hardware/drivers/install/overview-of-device-setup-classes)。 次の 2 つのリンクは、デバイス セットアップ クラスの完全な一覧を提供します。 'System Use' クラスは、主に、工場出荷時のコンピューター/コンピューターに含むデバイスを参照しますが、「ベンダー」クラスは、主に、既存のコンピューター/コンピューターに接続できるデバイスを参照します。ベンダーが利用できるシステム定義デバイス セットアップ クラス[- Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)ドライバーとシステム使用用に予約されたシステム定義デバイス セットアップ クラス[- Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)ドライバーです。 **注**: デバイスインストールは、リムーバブル ストレージだけでなく、任意のデバイスに適用できます。|
-|プライマリ ID|- [リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)|Windows|プライマリ ID には、リムーバブル ストレージと CD/DVD、ポータブル デバイス/WPD Windowsが含まれます。|
-|デバイス ID|- [リムーバブル 記憶域のアクセス制御](device-control-removable-storage-access-control.md)。</br>- [Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法](control-usb-devices-using-intune.md)|Windows|デバイス ID 形式の詳細については [、「Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers)」を参照してください。たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
-|ハードウェア ID|- [リムーバブル 記憶域のアクセス制御](device-control-removable-storage-access-control.md)。</br>- [Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法](control-usb-devices-using-intune.md)|Windows|USBSTOR\DiskGeneric_Flash_Disk___8.07 など、システム内のデバイスを識別した文字列。 **注**: ハードウェア ID は一意ではありません。異なるデバイスが同じ値を共有する場合があります。|
-|インスタンス ID|- [リムーバブル 記憶域のアクセス制御](device-control-removable-storage-access-control.md)。</br>- デバイスのインストール|Windows|文字列は、システム内のデバイスを一意に識別します (たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
-|フレンドリ名|- [リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)|Windows|デバイスに接続されている文字列 (汎用フラッシュ ディスク USB デバイスなど)|
-|ベンダー ID / 製品 ID|- [リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)|Windows <br/> macOS |ベンダー ID は、USB 委員会がベンダーに割り当てる 4 桁のベンダー コードです。 製品 ID は、ベンダーがデバイスに割り当てる 4 桁の製品コードです。ワイルドカードをサポートします。|
-|シリアル番号Id|- [リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)|Windows <br/> macOS |たとえば <SerialNumberId>、002324B534BCB431B000058A</SerialNumberId>|
-
+|---|---|---|---|
+|デバイス クラス|[Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法](control-usb-devices-using-intune.md)|Windows|デバイス ID 形式の詳細については、「デバイス セットアップ [クラス」を参照してください](/windows-hardware/drivers/install/overview-of-device-setup-classes)。 次の 2 つのリンクは、デバイス セットアップ クラスの完全な一覧を提供します。 'System Use' クラスは、主に、工場出荷時のコンピューター/コンピューターに含むデバイスを参照しますが、「ベンダー」クラスは、主に、既存のコンピューター/コンピューターに接続できるデバイスを参照します。ベンダーが利用できるシステム定義デバイス セットアップ クラス[- Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)ドライバーとシステム使用用に予約されたシステム定義デバイス セットアップ クラス[- Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)ドライバーです。 **注**: デバイスインストールは、リムーバブル ストレージだけでなく、任意のデバイスに適用できます。|
+|プライマリ ID|[リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)|Windows|プライマリ ID には、リムーバブル ストレージと CD/DVD、ポータブル デバイス/WPD Windowsが含まれます。|
+|デバイス ID|[リムーバブル 記憶域のアクセス制御](device-control-removable-storage-access-control.md)。 <p> [Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法](control-usb-devices-using-intune.md)|Windows|デバイス ID 形式の詳細については [、「Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers)」を参照してください。たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
+|ハードウェア ID|[リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md) <p> [Microsoft Defender for Endpoint を使用して USB デバイスや他のリムーバブル メディアを制御する方法](control-usb-devices-using-intune.md)|Windows|USBSTOR\DiskGeneric_Flash_Disk___8.07 など、システム内のデバイスを識別した文字列。 **注**: ハードウェア ID は一意ではありません。異なるデバイスが同じ値を共有する場合があります。|
+|インスタンス ID|[リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md) <p> デバイスのインストール|Windows|文字列は、システム内のデバイスを一意に識別します (たとえば、USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
+|フレンドリ名|[リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)|Windows|デバイスに接続されている文字列 (汎用フラッシュ ディスク USB デバイスなど)|
+|ベンダー ID / 製品 ID|[リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)|Windows <p> macOS|ベンダー ID は、USB 委員会がベンダーに割り当てる 4 桁のベンダー コードです。 製品 ID は、ベンダーがデバイスに割り当てる 4 桁の製品コードです。ワイルドカードをサポートします。|
+|シリアル番号Id|[リムーバブル 記憶域アクセス制御](device-control-removable-storage-access-control.md)|Windows <p> macOS |たとえば <SerialNumberId>、002324B534BCB431B000058A</SerialNumberId>|
+|

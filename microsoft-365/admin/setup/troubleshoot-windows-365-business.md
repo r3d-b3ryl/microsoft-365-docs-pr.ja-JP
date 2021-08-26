@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 365 Business Cloud PC のセットアップWindowsトラブルシューティングする方法について説明します。
 ms.date: 08/13/2021
-ms.openlocfilehash: b639453ef55960a3526fa8354dc95efb2653f9c5
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 5602df4eaf140fec86a28252bb88763bd6417f50
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507342"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532933"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>365 Windows PC セットアップの問題のトラブルシューティング
 
@@ -45,19 +45,19 @@ ms.locfileid: "58507342"
 2. [ビュー **の管理Azure Active Directory]** で、[表示]**を選択します**。
 3. 左側のナビゲーションの [管理] で **、[デバイス**] を選択 **し**、[デバイス設定] **を選択します**。
 4. ユーザー **が Azure デバイスにデバイス** を参加ADに設定されていない場合は、[すべて]を選択し、[保存] を **選択します**。
-5. 手順 [2 に進みます。CloudPCBRT システム アカウントがアクティブな状態を確認します](#step-2-verify-that-the-cloudpcbrt-system-account-is-active)。
+5. 手順[2 に進みます。365 BPRT Windowsシステム アカウントがアクティブな状態を確認します](#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active)。
 
-## <a name="step-2-verify-that-the-cloudpcbrt-system-account-is-active"></a>手順 2。 CloudPCBRT システム アカウントがアクティブな状態を確認する
+## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>手順 2。 365 BPRT Windowsシステム アカウントがアクティブな状態を確認する
 
-組織で初Windows 365 ライセンスが割り当てられると、"CloudPCBPRT" というシステム アカウントが Azure AD で自動的に作成されます。 このアカウントを削除したり、アカウントに変更を加え (名前や UPN の変更など) したりしない。 システム アカウントが削除された場合、セットアップは失敗します。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能や組織へのアクセス権を持たなかったりします。 このシステム アカウントを削除する場合は、新しいサポート要求を開き、復元する必要があります。
+Windows 365 ライセンスが組織で初めて割り当てられると **、Windows 365 BPRT 常設** ユーザーというシステム アカウントが Azure AD で自動的に作成されます。 このアカウントを削除したり、アカウントに変更を加え (名前や UPN の変更など) したりしない。 システム アカウントが削除された場合、セットアップは失敗します。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能や組織へのアクセス権を持たなかったりします。 このシステム アカウントを削除する場合は、新しいサポート要求を開き、復元する必要があります。
 
-Azure サイトで CloudPCBRT システム アカウントがアクティブAD、次の手順を実行します。
+Azure Windows 365 BPRT 常設ユーザー システム アカウントがアクティブAD、次の手順を実行します。
 
 1. Azure portal で、[概要] ページAzure Active Directory<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">移動</a>します。
 2. 左側のナビゲーションの [管理] で **、[ユーザー**] を **選択します**。
-3. 検索ボックスに **「CloudPCBRT」と入力し**、Enter キーを **押します**。
-4. CloudPCBRT システム アカウントが存在する場合は、手順 [3 に進みます。デバイス ベースの MFA がオフになっていることを確認します](#step-3-verify-that-device-based-mfa-is-turned-off)。
-5. CloudPCBRT システム アカウントが見つからない場合は、左側のナビゲーションで[新しいサポート要求] を選択してサポート チケットを開きます。 サポート チケットを閉じた後、手順 [6 に直接移動します。クラウド PC をリセットします](#step-6-reset-your-cloud-pcs)。
+3. 検索ボックスに **「365 BPRT Windowsユーザー**」と入力し、Enter キーを **押します**。
+4. 365 BPRT Windowsシステム アカウントが存在する場合は、手順[3 に進みます。デバイス ベースの MFA がオフになっていることを確認します](#step-3-verify-that-device-based-mfa-is-turned-off)。
+5. 365 BPRT Windowsシステム アカウントが見つからない場合は、左側のナビゲーションで [新しいサポート要求] を選択してサポート チケットを開きます。 サポート チケットを閉じた後、手順 [6 に直接移動します。クラウド PC をリセットします](#step-6-reset-your-cloud-pcs)。
 
 ## <a name="step-3-verify-that-device-based-mfa-is-turned-off"></a>手順 3. デバイス ベースの MFA がオフになっていることを確認する
 

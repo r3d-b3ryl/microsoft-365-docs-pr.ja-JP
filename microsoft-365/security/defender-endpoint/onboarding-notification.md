@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e62195582183f24078a2755b1773a00ceee06613f141403fe8399f798f2eb411
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c4fa624d6c0fb6ea299834fd4b57f37dd5f8f7c
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799936"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531565"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>ローカル オンボーディングスクリプトまたはオフボード スクリプトを使用する場合に通知ルールを作成する
 
@@ -45,7 +45,7 @@ ms.locfileid: "53799936"
 
 次のアクセス権が必要です。
 
-- Microsoft Flow (Flowプラン 1 を使用します)。 詳細については、「価格設定[」Flowを参照してください](https://flow.microsoft.com/pricing/)。
+- Power Automate (少なくともユーザー単位のプラン)。 詳細については、「価格設定[」Power Automateを参照してください](https://flow.microsoft.com/pricing/)。
 - Azure Table または SharePointリストまたはライブラリ/SQL DB。
 
 ## <a name="create-the-notification-flow"></a>通知フローの作成

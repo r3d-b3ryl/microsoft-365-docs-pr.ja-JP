@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b74d61f6739ba67e95e291ed287c8abaabe2c1a2079bfae23c6fa3219a0e3f57
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c3350cd45eedb590016e3456274b4e04dda1c51
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869545"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533305"
 ---
 # <a name="onboard-non-windows-devices"></a>Windows 以外のデバイスをオンボードする
 
@@ -36,26 +36,29 @@ ms.locfileid: "53869545"
 - macOS
 - Linux
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-nonwindows-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-nonwindows-abovefoldlink)
 
-Defender for Endpoint は、セキュリティ プラットフォームと非プラットフォームWindows一元的なセキュリティWindows提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートを、組織のネットワークMicrosoft 365 Defender保護するために役立ちます。 
+Defender for Endpoint は、セキュリティ プラットフォームと非プラットフォームWindows一元的なセキュリティWindows提供します。 サポートされているさまざまなオペレーティング システム (OS) からのアラートを、組織のネットワークMicrosoft 365 Defender保護するために役立ちます。
 
 統合を機能するには、Defender for Endpoint と互換性のある Linux ディストリビューションと macOS の正確なバージョンを知る必要があります。 詳細については、以下を参照してください。
-- [Microsoft Defender for Endpoint on Linux システム要件](microsoft-defender-endpoint-linux.md#system-requirements)  
+
+- [Microsoft Defender for Endpoint on Linux システム要件](microsoft-defender-endpoint-linux.md#system-requirements)
 - [Microsoft Defender for Endpoint on macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
 
 ## <a name="onboarding-non-windows-devices"></a>非デバイスのオンボードWindowsする
+
 非デバイスをオンボードするには、次の手順を実行Windows必要があります。
+
 1. オンボーディングの好みの方法を選択します。
 
    - macOS デバイスの場合は、Microsoft Defender for Endpoint またはサード パーティ製ソリューションを使用してオンボードを選択できます。 詳細については [、「Microsoft Defender for Endpoint on Mac」を参照してください](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
 
-   - その他の非接続デバイスWindowsサードパーティとの統合を通じてWindowsデバイスのオンボード **を選択します**。   
-    1. ナビゲーション ウィンドウで、[パートナーと **API パートナー アプリケーション]**  >  **を選択します**。 サード パーティ製のソリューションが一覧に表示されます。
+   - その他の非接続デバイスWindowsサードパーティとの統合を通じてWindowsデバイスのオンボード **を選択します**。
+    1. ナビゲーション ウィンドウで、[パートナーと **API パートナー アプリケーション]** \> **を選択します** 。 サード パーティ製のソリューションが一覧に表示されます。
     2. [パートナー **アプリケーション] ページ** で、ユーザー以外のデバイスをサポートするパートナー Windowsします。
     3. [表示 **] を** クリックしてパートナーのページを開きます。 ページに記載されている手順に従います。
-    4. アカウントを作成するか、パートナー ソリューションをサブスクライブした後、組織のテナントのグローバル管理者がパートナー アプリケーションからのアクセス許可要求を受け入れるという要求を受け入れるステージに進む必要があります。 アクセス許可要求を注意深く読んで、必要なサービスと一致している必要があります。 
-        
+    4. アカウントを作成するか、パートナー ソリューションをサブスクライブした後、組織のテナントのグローバル管理者がパートナー アプリケーションからのアクセス許可要求を受け入れるという要求を受け入れるステージに進む必要があります。 アクセス許可要求を注意深く読んで、必要なサービスと一致している必要があります。
+
 2. サード パーティソリューションの指示に従って検出テストを実行します。
 
 ## <a name="offboard-non-windows-devices"></a>オフボードの非Windowsデバイス
@@ -63,13 +66,13 @@ Defender for Endpoint は、セキュリティ プラットフォームと非プ
 1. サード パーティのドキュメントに従って、Microsoft Defender for Endpoint からサード パーティ製ソリューションを切断します。
 
 2. Azure のサードパーティ ソリューションのアクセス許可を削除し、ADします。
-   1. [Azure portal](https://portal.azure.com) にサインインします。
+   1. [Azure portal](https://portal.azure.com)にサインインします。
    2. [アプリケーション **Azure Active Directory > Enterprise] を選択します**。
    3. オフボードするアプリケーションを選択します。
    4. [削除] **ボタンを** 選択します。
 
+## <a name="related-topics"></a>関連項目
 
-## <a name="related-topics"></a>関連トピック
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [オンボード サーバー](configure-server-endpoints.md)
 - [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)

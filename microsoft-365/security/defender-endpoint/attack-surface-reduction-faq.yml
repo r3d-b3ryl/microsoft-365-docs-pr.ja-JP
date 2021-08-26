@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: 8b040f0de8ba510582e5201e7722137d164f2880
-  ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+  ms.openlocfilehash: 4d229ac94c7a1eb25e30c80f8e72a17d1b547be0
+  ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/25/2021
-  ms.locfileid: "58509595"
+  ms.lasthandoff: 08/26/2021
+  ms.locfileid: "58533137"
 title: 攻撃表面の縮小に関するよく寄せられる質問 (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -71,17 +71,6 @@ sections:
     answer: >
       ASR ルールの場合、除外を 1 つ追加すると、すべての ASR ルールに影響します。
 
-      次の 2 つの特定のルールでは、除外はサポートされていません。
-
-
-      |ルールの名前|GUID|ファイル&フォルダーの除外|
-
-      |---|---|---|
-
-      |JavaScript または VBScript のダウンロード済み実行可能コンテンツの起動をブロックする|d3e037e1-3eb8-44c8-a917-57927947596d|非サポート|
-
-      |WMI イベント サブスクリプションによる永続化のブロック|e6db77e5-3df2-4cf1-b95a-636979351e5b|非サポート|
-
 
       ASR ルールの除外は、ワイルドカード、パス、および環境変数をサポートします。 ASR ルールでワイルドカードを使用する方法の詳細については、「ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する [」を参照してください](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。
 
@@ -89,7 +78,7 @@ sections:
       ASR ルールの除外に関する次の項目 (ワイルドカードや env を含む) に注意してください。 変数:
 
 
-      - ASR ルールの除外は、Defender AV の除外とは独立しています
+      - ASR ルールの除外は、ユーザーの除外Microsoft Defender ウイルス対策独立しています
 
       - ワイルドカードを使用してドライブ文字を定義することはできません
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f0a28aa76189388a5e7943d8a662ddcb0b28d56828d53a4b62e6d64a34518454
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 857df1a9f088c316349fbbe02618a7345df5a075
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854305"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532777"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でアラート通知を構成する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53854305"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-emailconfig-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 Defender for Endpoint を構成して、新しい通知のために指定した受信者に電子メール通知を送信できます。 この機能を使用すると、直ちに通知を受け取り、重大度に基づいてアラートに基づいて行動できる個人のグループを識別できます。
 
@@ -50,7 +50,7 @@ Defender for Endpoint を構成して、新しい通知のために指定した�
 電子メール通知を送信するデバイスとアラートの重大度と通知受信者を決定するルールを作成できます。
 
 
-1. ナビゲーション ウィンドウで、[エンドポイント全般 **メール通知設定**  >  **を**  >    >  **選択します**。
+1. ナビゲーション ウィンドウで、[エンドポイント全般 **メール通知設定** \> **を** \>  \> **選択します**。
 
 2. [アイテム **の追加] をクリックします**。
 
@@ -66,7 +66,7 @@ Defender for Endpoint を構成して、新しい通知のために指定した�
     - **[デバイス** ] - すべてのデバイス (グローバル管理者の役割のみ) または選択したデバイス グループの通知を受信者に通知するかどうかを選択します。 詳細については、「デバイス グループの作成 [と管理」を参照してください](machine-groups.md)。
     - **アラートの重大度** - アラートの重大度レベルを選択します。
 
-4. **[次へ]** をクリックします。
+4. [**次へ**] をクリックします。
 
 5. 受信者のメール アドレスを入力し、[受信者の追加] **をクリックします**。 複数のメール アドレスを追加することができます。
 
@@ -100,7 +100,7 @@ Defender for Endpoint を構成して、新しい通知のために指定した�
 2. メール セキュリティ製品が Defender for Endpoint からの電子メール通知をブロックされていないことを確認します。
 3. Defender for Endpoint の電子メール通知をキャッチして移動する可能性がある電子メール アプリケーションルールを確認します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [データ保持設定の更新](data-retention-settings.md)
 - [高度な機能を構成する](advanced-features.md)

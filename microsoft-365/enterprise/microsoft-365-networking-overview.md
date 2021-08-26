@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365ネットワーク接続の概要
+title: Microsoft 365 ネットワーク接続の概要
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -17,16 +17,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: SaaS サービスにとってネットワークの最適化が重要である理由、ネットワークのMicrosoft 365、SaaS が他のワークロードとは異なるネットワークを必要とする方法について説明します。
-ms.openlocfilehash: 8c1d4b3f661cc10723b9419687ed5f5acbefeb8dedb39963992290ecba289aec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ce9b7f7f8011e0d0b12d9b0524cf540948f7aab8
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904937"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533161"
 ---
-# <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365 ネットワーク接続の概要
+# <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365接続の概要
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365は、さまざまなマイクロ サービスとアプリケーションのセットを通じて生産性とコラボレーション シナリオを提供する、分散されたサービスとしてのソフトウェア (SaaS) クラウドです。 Outlook、Word、PowerPoint などの Microsoft 365 のクライアント コンポーネントは、ユーザー コンピューター上で実行され、Microsoft データセンターで実行される Microsoft 365 の他のコンポーネントに接続します。 Microsoft 365 エンド ユーザー エクスペリエンスの品質を決定する最も重要な要因は、Microsoft 365 クライアントと Microsoft 365 サービス フロント ドア間のネットワークの信頼性と低遅延です。
 
@@ -57,7 +57,7 @@ Microsoft 365は、さまざまなマイクロ サービスとアプリケーシ
 ネットワーク トラフィックを簡単に識別Microsoft 365、ネットワーク ID の管理が簡単になりました。
 
 - 高度に重要なネットワーク トラフィックとインターネット遅延の影響を受けないネットワーク トラフィックを区別する新しいカテゴリのネットワーク エンドポイント。 最も重要な "最適化" カテゴリには、ほんの一握りの URL とサポート IP アドレスがあります。
-- スクリプトの使用またはデバイスの直接構成およびネットワーク識別の変更管理Microsoft 365 Web サービス。 変更は、Web サービス、RSS 形式、または電子メールのテンプレートを使用Microsoft Flowできます。
+- スクリプトの使用またはデバイスの直接構成およびネットワーク識別の変更管理Microsoft 365 Web サービス。 変更は、Web サービス、RSS 形式、または電子メールのテンプレートを使用Power Automateできます。
 - [Office 365ネットワーク接続](./microsoft-365-networking-partner-program.md)の原則に従い、簡単な構成を持つデバイスまたはサービスを提供する Microsoft パートナー Microsoft 365ネットワーク パートナー プログラムを提供します。
 
 ## <a name="securing-microsoft-365-connections"></a>セキュリティ保護Microsoft 365接続
@@ -91,7 +91,7 @@ Microsoft 365は、エンドポイント セキュリティと暗号化された
 
 ネットワーク接続の原則の理解と適用Microsoft 365については、「ネットワーク接続[Microsoft 365」を参照してください](microsoft-365-network-connectivity-principles.md)。
 
-## <a name="conclusion"></a>結論
+## <a name="conclusion"></a>まとめ
 
 ネットワークパフォーマンスMicrosoft 365最適化すると、不要な障害が取り除かされます。 ネットワーク接続Microsoft 365信頼できるトラフィックとして処理することで、パケット検査やプロキシ帯域幅の競合によって遅延が発生するのを防ぐことが可能です。 クライアント コンピューターとエンドポイント間のローカル接続Office 365、トラフィックを Microsoft グローバル ネットワーク経由で動的にルーティングできます。
 

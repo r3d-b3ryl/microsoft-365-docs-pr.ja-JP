@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e9059360c9ce9137092fec2422c563abf2f95e39c94c0fbc9b22b5c36c21161c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1563d44aded4c018a659b70d16800decf4bcd46f
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834087"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533401"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>ASR ルールの展開と検出を最適化する
 
@@ -31,7 +31,7 @@ ms.locfileid: "53834087"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 [攻撃表面の縮小 (ASR) ルールは、一](./attack-surface-reduction.md) 般的なマルウェアの悪用を特定して防止します。 悪意のあるコードを実行できる可能性のある時間と方法を制御します。 たとえば、JavaScript または VBScript がダウンロードした実行可能ファイルを起動したり、Office マクロからの Win32 API 呼び出しをブロックしたり、USB ドライブから実行されるプロセスをブロックしたりすることができます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "53834087"
 * ASR 検出を確認し、誤った検出の可能性を特定します。
 * 除外の影響を分析し、除外するファイル パスの一覧を生成します。
 
-[Go **to attack surface management Reports**  >  **Attack** surface reduction  >  **rules Add**  >  **exclusions] を選択します**。 そこから、セキュリティ センターの他のセクションMicrosoft 365移動できます。
+[Go **to attack surface management Reports** \> **Attack** surface reduction \> **rules Add** \> **exclusions] を選択します**。 そこから、セキュリティ センターの他のセクションMicrosoft 365移動できます。
 
 ![セキュリティ センターの [攻撃表面の縮小ルール] ページの [除外Microsoft 365追加する](images/secconmgmt_asr_m365exlusions.png)<br>
 セキュリティ ***センターの [** 攻撃表面縮小ルール] ページの [除外のMicrosoft 365]*

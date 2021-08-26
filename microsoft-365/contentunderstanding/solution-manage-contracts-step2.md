@@ -12,14 +12,14 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: カスタム ソリューションを使用してMicrosoft Teams管理チャネルを作成する方法について説明Microsoft 365します。
-ms.openlocfilehash: 9efd6f49954b6ed9b9dd2339ba720641a2f7fe73e6526809ad5d71d148838337
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bafce28689e4340c3ff73694d150bac294a95b5a
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855303"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532873"
 ---
-# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>手順 2. 契約Microsoft Teamsチャネルを作成するには、次の情報を使用します。
+# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>手順 2。 契約Microsoft Teamsチャネルを作成するには、次の情報を使用します。
 
 組織が契約管理ソリューションをセットアップする場合は、関係者が契約を確認および管理できる中心的な場所が必要です。 この目的のために、Microsoft Teams[を使用](/microsoftteams/)して、Teamsチャネルを設定し、Teams使用できます。
 
@@ -208,4 +208,4 @@ Teams チャネルのビューの JSON コードを表示または変更する�
 
 ## <a name="next-step"></a>次の手順
 
-[手順 3.契約Power Automate処理するフローを作成するには、次の情報を使用します。](solution-manage-contracts-step3.md)
+[手順 3.契約Power Automate処理するフローを作成するには、次の手順を実行します。](solution-manage-contracts-step3.md)
