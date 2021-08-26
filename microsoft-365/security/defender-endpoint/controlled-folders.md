@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: ffcb986198cbe672b935980aea39f340bab947b9f3ba21ad890feadf6cc8f2ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 19737781f2c22a356da2c237e2f059a362140956
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863681"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533665"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>フォルダーへのアクセス制御で重要なフォルダーを保護する
 
@@ -32,14 +32,14 @@ ms.locfileid: "53863681"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>フォルダー アクセスの制御とは
 
-フォルダー アクセスの制御により、ランサムウェアなどの悪意のあるアプリや脅威から貴重なデータを保護できます。 フォルダー アクセスの制御により、既知の信頼できるアプリの一覧に対してアプリをチェックすることで、データを保護します。 Windows Server 2019 および Windows 10 クライアントでサポートされている場合は、Windows セキュリティ App、Microsoft Endpoint Configuration Manager、Intune (管理対象デバイスの場合) を使用してフォルダー アクセスを制御できます。 
+フォルダー アクセスの制御により、ランサムウェアなどの悪意のあるアプリや脅威から貴重なデータを保護できます。 フォルダー アクセスの制御により、既知の信頼できるアプリの一覧に対してアプリをチェックすることで、データを保護します。 Windows Server 2019 および Windows 10 クライアントでサポートされている場合は、Windows セキュリティ App、Microsoft Endpoint Configuration Manager、Intune (管理対象デバイスの場合) を使用してフォルダー アクセスを制御できます。
 
 > [!NOTE]
-> スクリプト エンジンは信頼されていないので、制御された保護されたフォルダーへのアクセスを許可することはできません。  たとえば、PowerShell は、証明書とファイルインジケーターで許可されている場合でも、フォルダー アクセスの制御 [によって信頼されません](/microsoft-365/security/defender-endpoint/indicator-certificates)。 
+> スクリプト エンジンは信頼されていないので、制御された保護されたフォルダーへのアクセスを許可することはできません。 たとえば、PowerShell は、証明書とファイルインジケーターで許可されている場合でも、フォルダー アクセスの制御 [によって信頼されません](/microsoft-365/security/defender-endpoint/indicator-certificates)。
 
 フォルダー アクセスの制御は [、Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)で最適に機能します。これにより、通常のアラート調査シナリオの一環として、フォルダー アクセスの制御イベントとブロックに関する詳細なレポート [が提供されます](investigate-alerts.md)。
 
@@ -48,9 +48,9 @@ ms.locfileid: "53863681"
 
 ## <a name="how-does-controlled-folder-access-work"></a>フォルダー アクセスの制御方法
 
-フォルダー アクセスの制御は、信頼できるアプリが保護されたフォルダーにアクセスできるようにすることでのみ機能します。 保護されたフォルダーは、フォルダー アクセスの制御が構成されている場合に指定されます。 通常、一般的に使用されるフォルダー (ドキュメント、画像、ダウンロードなど) は、管理フォルダーの一覧に含まれます。 
+フォルダー アクセスの制御は、信頼できるアプリが保護されたフォルダーにアクセスできるようにすることでのみ機能します。 保護されたフォルダーは、フォルダー アクセスの制御が構成されている場合に指定されます。 通常、一般的に使用されるフォルダー (ドキュメント、画像、ダウンロードなど) は、管理フォルダーの一覧に含まれます。
 
-フォルダー アクセスの制御は、信頼できるアプリの一覧で機能します。 信頼できるソフトウェアの一覧に含まれるアプリは、期待通り動作します。 リストに含まれていないアプリは、保護されたフォルダー内のファイルに変更を加えません。 
+フォルダー アクセスの制御は、信頼できるアプリの一覧で機能します。 信頼できるソフトウェアの一覧に含まれるアプリは、期待通り動作します。 リストに含まれていないアプリは、保護されたフォルダー内のファイルに変更を加えません。
 
 アプリは、その普及率と評判に基づいてリストに追加されます。 組織全体で非常に普及しているアプリで、悪意のあると見なされる動作を一度も表示したことがないアプリは、信頼できると見なされます。 これらのアプリは自動的にリストに追加されます。
 
@@ -65,12 +65,13 @@ ms.locfileid: "53863681"
 監査モードを [使用して](audit-windows-defender.md) 、フォルダー アクセスが有効になっている場合に組織に与える影響を評価できます。 また、テスト グラウンド web サイト[Windows Defenderサイト](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)demo.wd.microsoft.com 機能が動作し、動作を確認できます。
 
 フォルダー アクセスの制御は、次のバージョンのフォルダーでサポートWindows。
+
 - [Windows 10バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709)以降
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="windows-system-folders-are-protected-by-default"></a>Windowsシステム フォルダーは既定で保護されています
 
-Windowsシステム フォルダーは、既定で保護され、他のいくつかのフォルダーと共に保護されます。 
+Windowsシステム フォルダーは、既定で保護され、他のいくつかのフォルダーと共に保護されます。
 
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
@@ -110,19 +111,24 @@ DeviceEvents
 2. [**イベント ビューアー]** と入力スタート メニューイベント ビューアー Windows開きます。
 3. 左側のパネルの [アクション] **で、[** カスタム ビュー **のインポート... を選択します**。
 4. 抽出した場所に *移動cfa-events.xml選択* します。 または [、XML を直接コピーします](event-views.md)。
-5. **[OK]** をクリックします。
+5. **[OK]** を選択します。
 
 次の表に、フォルダー アクセスの制御に関連するイベントを示します。
 
-|イベント ID | 説明 |
-|:---|:---|
-|5007 | 設定が変更された場合のイベント |
-|1124 | 監査されたフォルダー アクセス イベント | 
-|1123 | ブロックされたフォルダー アクセス イベント |
+<br>
+
+****
+
+|イベント ID|説明|
+|---|---|
+|5007|設定が変更された場合のイベント|
+|1124|監査されたフォルダー アクセス イベント|
+|1123|ブロックされたフォルダー アクセス イベント|
+|
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>保護されたフォルダーの一覧を表示または変更する
 
-Windows セキュリティアプリを使用して、フォルダー アクセスの制御によって保護されているフォルダーの一覧を表示できます。 
+Windows セキュリティアプリを使用して、フォルダー アクセスの制御によって保護されているフォルダーの一覧を表示できます。
 
 1. デバイスでWindows 10アプリを開Windows セキュリティします。
 2. **[ウイルスと脅威の防止]** を選択します。
@@ -130,9 +136,7 @@ Windows セキュリティアプリを使用して、フォルダー アクセ�
 4. フォルダー アクセスの制御がオフになっている場合は、有効にする必要があります。 保護 **されたフォルダーを選択します**。
 5. 次のいずれかの手順を実行します。
    - フォルダーを追加するには、[+ 保護 **されたフォルダーの追加] を選択します**。
-   - フォルダーを削除するには、フォルダーを選択し、[削除] を **選択します**。 
+   - フォルダーを削除するには、フォルダーを選択し、[削除] を **選択します**。
 
 > [!NOTE]
 > [Windowsシステム フォルダー](#windows-system-folders-are-protected-by-default)は既定で保護され、一覧から削除することはできません。
-
-

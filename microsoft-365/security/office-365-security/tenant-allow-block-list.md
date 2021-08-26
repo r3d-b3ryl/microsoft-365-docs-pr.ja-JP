@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で許可とブロックを管理する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 09a710a5fb1518b819704e881534efda15236520
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 6223720f6977d3c4399ad36e1ad29894feabe63d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349970"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533689"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -35,7 +35,7 @@ ms.locfileid: "58349970"
 > [!NOTE]
 >
 > この記事で説明する機能の一部はプレビューで、変更される可能性があります。一部の組織では利用できません。
-> 
+>
 > この記事で説明するスプーフィング機能が組織に存在しない場合は [、「EOP](walkthrough-spoof-intelligence-insight.md)のスプーフィング インテリジェンス ポリシーとスプーフィング インテリジェンスインサイトを使用してスプーフィング送信者を管理する」で、以前のスプーフィング管理エクスペリエンスを参照してください。
 
 Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Protection (EOP) 組織に Exchange Online メールボックスがない組織では、EOP フィルターの評決に同意しない可能性があります。 たとえば、メッセージが正しい (誤検知) とマークされている場合や、悪いメッセージが許可される場合があります (偽陰性)。
@@ -121,19 +121,19 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
      - **Action**: 値 Allow **or** **Block**.
      - **最終更新日時**
      - **Remove on**
-     - **メモ**
+     - **注**
    - **URL**:
      - **値**: URL。
      - **Action**: 値 Allow **or** **Block**.
      - **最終更新日時**
      - **Remove on**
-     - **メモ**
+     - **注**
    - **Files**
      - **値**: ファイル ハッシュ。
      - **Action**: 値 Allow **or** **Block**.
      - **最終更新日時**
      - **Remove on**
-     - **メモ**
+     - **注**
    - 「**スプーフィング**」
      - **スプーフィングされたユーザー**
      - **インフラストラクチャの送信**
@@ -154,25 +154,25 @@ Microsoft 365 Exchange Online またはスタンドアロン Exchange Online Pro
    [フィルター **] をクリック** して結果をフィルター処理します。 表示されるフィルター フライアウト **で** 使用できる値は、選択したタブによって異なる。
 
    - [**Senders (送信者)**]
-     - **Action**
+     - **操作**
      - **有効期限が切れることはありません**
      - **最終更新日**
      - **Remove on**
    - **URL**
-     - **Action**
+     - **操作**
      - **有効期限が切れることはありません**
      - **最終更新日**
      - **Remove on**
    - **Files**
-     - **Action**
+     - **操作**
      - **有効期限が切れることはありません**
      - **最終更新日時**
      - **Remove on**
    - 「**スプーフィング**」
-     - **Action**
+     - **操作**
      - **スプーフィングの種類**
 
-   完了したら、[適用] を **クリックします**。 既存のフィルターをクリアするには、[**フィルター**] をクリックし、表示される [フィルター] フライアウトで 、[フィルターのクリア]**をクリックします**。
+   完了したら、**[適用]** をクリックします。 既存のフィルターをクリアするには、[**フィルター**] をクリックし、表示される [フィルター] フライアウトで 、[フィルターのクリア]**をクリックします**。
 
 4. 完了したら、**[追加]** をクリックします。
 

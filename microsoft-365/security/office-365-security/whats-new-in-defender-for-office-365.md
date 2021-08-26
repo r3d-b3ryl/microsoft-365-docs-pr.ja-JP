@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c046bf15cf3ccfbbbfb8969b0f0bc48db1ad4f5
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: ae01a929121488399ac3a016f0b33ae7b28ff96d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349898"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533617"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -39,13 +39,25 @@ ms.locfileid: "58349898"
 この記事では、Microsoft Defender for microsoft Defender の最新リリースの新機能をOffice 365。 現在プレビュー中の機能は (プレビュー) **で示されます**。
 
 [このビデオ](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3)を見て詳細をご確認ください。
+
 > [!TIP]
 > Microsoft Defender for Office 365ありませんか? [試用版を開始するために販売に問い合わせ。](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
 ## <a name="august-2021"></a>2021 年 8 月
 
+- [報告されたメッセージの管理レビュー](admin-review-reported-message.md): 管理者は、報告されたメッセージを確認した後、テンプレートメッセージをエンド ユーザーに送り返す機能を持つ。 これは、組織に合わせてカスタマイズし、管理者の評決にも基づいてカスタマイズできます。 
+=======
+## <a name="september-2021"></a>2021 年 9 月
+
+- [検疫ポリシー](quarantine-policies.md): 管理者は、検疫済みメッセージへの受信者アクセスの詳細な制御を構成し、エンドユーザーのスパム通知をカスタマイズできます。
+  - [管理者エクスペリエンスのビデオ](https://youtu.be/vnar4HowfpY)
+  - [エンド ユーザー エクスペリエンスのビデオ](https://youtu.be/s-vozLO43rI)
+  - 検疫エクスペリエンスに追加されるその他の新機能については、このブログ記事「検疫エクスペリエンスの簡素化」 [で説明します](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388)。
+
+## <a name="august-2021"></a>2021 年 8 月
+
 - [報告されたメッセージの管理レビュー](admin-review-reported-message.md): 管理者は、報告されたメッセージを確認した後、テンプレートメッセージをエンド ユーザーに送り返す機能を持つ。 テンプレートは、組織に合わせてカスタマイズし、管理者の評決にも基づいてカスタマイズできます。
-- [[テナント許可/](manage-tenant-allows.md)ブロック一覧の追加] : [許可] をテナント許可/ブロックリストに直接追加することはできませんが、ブロックされたメッセージが管理者申請プロセスの一部として送信された場合に使用できます。 発生したブロックに応じて、URL、ファイル、送信者の許可がテナント許可/ブロック一覧に追加されます。 ほとんどの場合、許可はシステムに時間を与え、保証されている場合は自然に許可するために追加されます。 場合によっては、Microsoft が許可を管理します。
+- [[テナント許可/](manage-tenant-allows.md)ブロック一覧に許可を追加する] : ブロックされたメッセージが管理者申請プロセスの一部として送信された場合に、許可エントリをテナント許可/ブロックリストに追加できます。 ブロックの性質に応じて、送信された URL、ファイル、送信者の許可がテナント許可/ブロック一覧に追加されます。 ほとんどの場合、許可はシステムに時間を与え、保証されている場合は自然に許可するために追加されます。 場合によっては、Microsoft が許可を管理します。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
@@ -61,7 +73,6 @@ ms.locfileid: "58349898"
 - Microsoft Defender for Office 365アラートは、統合アラート キューと統合Microsoft 365 Defenderおよび統合Microsoft 365 Defenderキュー[に統合されました](../defender/investigate-alerts.md)
 - [](user-tags.md)ユーザー タグは、Office 365 セキュリティ & コンプライアンスのアラート キューと詳細、ユーザー タグへのカスタム アラート ポリシーのスコープ設定など、Office 365 アラート エクスペリエンスのために Microsoft Defender に統合され、対象となるアラート ポリシーを作成できます。 
   - タグは、Microsoft 365 Defender センターの統合アラート キューでも使用できます (Microsoft Defender for Office 365 プラン 2)
-
 
 ## <a name="june-2021"></a>2021 年 6 月
 

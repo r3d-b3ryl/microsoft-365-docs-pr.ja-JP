@@ -15,12 +15,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 0e91a48d41aded93974b47745869e5ab220170d4e41ed82726aeb9e50c1aa075
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2db625e98bd685c0dffb7820847c483b54f600fb
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834061"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533593"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>行動、ヒューリスティック、リアルタイム保護を構成する
 
@@ -43,7 +43,7 @@ Microsoft Defender ウイルス対策を使用して脅威保護を提供しま�
 
 ## <a name="in-this-section"></a>このセクションの内容
 
- トピック | 説明
+ トピック|説明
 ---|---
-[望ましくない可能性のあるアプリケーションを検出してブロックする](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | アドウェア、ブラウザー修飾子、ツール バー、不正なウイルス対策アプリや偽のウイルス対策アプリなど、ネットワークで望ましくない可能性があるアプリを検出してブロックする
-[保護機能を有効Microsoft Defender ウイルス対策構成する](configure-real-time-protection-microsoft-defender-antivirus.md) | リアルタイム保護、ヒューリスティック、その他の常時監視機能を有効Microsoft Defender ウイルス対策構成する
+[望ましくない可能性のあるアプリケーションを検出してブロックする](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)|アドウェア、ブラウザー修飾子、ツール バー、不正なウイルス対策アプリや偽のウイルス対策アプリなど、ネットワークで望ましくない可能性があるアプリを検出してブロックする
+[保護機能を有効Microsoft Defender ウイルス対策構成する](configure-real-time-protection-microsoft-defender-antivirus.md)|リアルタイム保護、ヒューリスティック、その他の常時監視機能を有効Microsoft Defender ウイルス対策構成する

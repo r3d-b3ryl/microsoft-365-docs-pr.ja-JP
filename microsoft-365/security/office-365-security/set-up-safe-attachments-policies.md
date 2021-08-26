@@ -18,12 +18,12 @@ description: メール内の悪意のあるファイルセーフ組織を保護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02a5d393e2cd13d029106bdc0975c935f052d9f1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 3a99189331b3bbfd7b0ae28ca3b7e5a33692c5bf
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254928"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533461"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender セーフの添付ファイル ポリシーをセットアップOffice 365
 
@@ -73,7 +73,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
   **注意**:
 
   - Microsoft 365 管理センター の対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可と、Microsoft 365の他の機能に対するアクセス許可が付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 添付ファイル ポリシーの推奨設定セーフ、添付ファイルの設定[セーフ参照してください](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)。
 

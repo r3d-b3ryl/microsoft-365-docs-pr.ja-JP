@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、MS サーバーからデータをインポートおよびアーカイブするコネクタをSQL Database。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 9f42e7616a844849d0c77b62c307e2c53972a4ceffce91223b68e3cc6040dc8f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf0e4d1bc9d5cf6db7538f5f75174488532871e8
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866638"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533605"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>MS サーバーからデータをアーカイブするコネクタをSQL Database
 
@@ -47,7 +47,7 @@ ms.locfileid: "53866638"
 
 ## <a name="step-1-set-up-the-ms-sql-database-importer-connector"></a>手順 1: MS インポート コネクタをSQL Databaseする
 
-最初の手順は、Microsoft365 コンプライアンス センターの [データ コネクタ] ページにアクセスし、MS サーバーのコネクタを作成SQL Database。 
+最初の手順は、サーバーの [**データ** コネクタ] ページにアクセスしMicrosoft 365 コンプライアンス センター MS コネクタのコネクタを作成SQL Database。
 
 1. に移動し [https://compliance.microsoft.com](https://compliance.microsoft.com) 、[データ コネクタ]   >  **[MS SQL Database] をクリックします**。
 

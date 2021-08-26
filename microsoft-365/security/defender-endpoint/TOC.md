@@ -600,7 +600,7 @@
 ####### [脆弱性によるマシンの一覧表示](get-machines-by-vulnerability.md)
 
 ##### [API の使用方法 - サンプル]()
-###### [Microsoft Flow](api-microsoft-flow.md)
+###### [Power Automate](api-microsoft-flow.md)
 ###### [Power BI](api-power-bi.md)
 ###### [Python を使用した高度な追求](run-advanced-query-sample-python.md)
 ###### [PowerShell を使用した高度な追求](run-advanced-query-sample-powershell.md)

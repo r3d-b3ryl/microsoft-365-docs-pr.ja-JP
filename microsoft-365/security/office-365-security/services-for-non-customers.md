@@ -17,12 +17,12 @@ ms.collection:
 description: 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a8ad98029fdc7f008ff6b22c2e8fa3e738b9fc7c0caa13b0aaca918a40f4d3e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9bed3c24fee91d746957a6418e5f5ea61babef6b
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56886172"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533641"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>ユーザーにメールを送信する非顧客Microsoft 365
 
@@ -67,4 +67,4 @@ Microsoft では、受信者へのメールの送信に問題があるユーザ�
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Exchange Online からの迷惑メールの不正使用とスパムの報告
 
-Microsoft365 は、使用条件とポリシーに違反して、迷惑メールを送信するために第三者によって使用される場合があります。 ユーザーから迷惑メールを受けOffice 365、これらのメッセージを Microsoft に報告できます。 手順については、「メッセージと [ファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。
+場合Microsoft 365の使用条件およびポリシーに違反して、第三者が迷惑メールを送信するために使用することがあります。 ユーザーから迷惑メールを受けOffice 365、これらのメッセージを Microsoft に報告できます。 手順については、「メッセージと [ファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。

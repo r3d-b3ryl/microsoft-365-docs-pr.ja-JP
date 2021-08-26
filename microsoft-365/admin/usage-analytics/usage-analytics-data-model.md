@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '使用状況分析が API に接続する方法と、さまざまなサービスの使用状況の毎月の傾向Microsoft 365します。  '
-ms.openlocfilehash: e18233532f7a570129f31141bb21e7c3dd9450603d09f6db636db846fea20edc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf53007e062db85bb17bd64851022218c0d220ba
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867273"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533545"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 
@@ -115,8 +115,8 @@ Microsoft 365分析は、多次元データ モデルを公開する API に接�
 |SPO_GroupFileSynched  <br/> |このユーザーがグループ サイトで同期したファイルの数です。  <br/> |
 |SPO_GroupFileSharedInternally  <br/> |組織内のユーザー、またはグループ内のユーザーと共有されたファイルの数 (外部ユーザーを含む場合があります)。  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |このユーザーがグループ サイトから外部共有したファイルの数です。  <br/> |
-|SPO_GroupAccessByOwner  <br/> |ユーザーが対話したファイル (自分が所有するグループ サイト上に存在する) の数です。  <br/> |
-|SPO_GroupAccessByOthers  <br/> |ユーザーが対話したファイル (別のユーザーが所有するグループ サイト上に存在する) の数です。  <br/> |
+|SPO_GroupAccessedByOwner  <br/> |ユーザーが所有するグループ サイトに存在するユーザーが操作したサイトの数。  <br/> |
+|SPO_GroupAccessedByOthers  <br/> |別のユーザーが所有するグループ サイトに存在する、ユーザーが操作したサイトの数。  <br/> |
 |SPO_OtherFileViewedModified  <br/> |このユーザーが他のサイトで操作したファイルの数。  <br/> |
 |SPO_OtherFileSynched  <br/> |このユーザーが他のサイトから同期したファイルの数。  <br/> |
 |SPO_OtherFileSharedInternally  <br/> |このユーザーが他のサイトから内部的に共有したファイルの数、またはグループ内のユーザー (外部ユーザーを含む可能性があります) の数。 <br/> |
@@ -127,8 +127,8 @@ Microsoft 365分析は、多次元データ モデルを公開する API に接�
 |SPO_TeamFileSynched  <br/> |このユーザーがチーム サイトで同期したファイルの数です。  <br/> |
 |SPO_TeamFileSharedInternally  <br/> |このユーザーがチーム サイトから内部的に共有したファイルの数、またはグループ内のユーザー (外部ユーザーを含む可能性があります) の数。  <br/> |
 |SPO_TeamFileSharedExternally  <br/> |このユーザーがチーム サイトから外部共有したファイルの数です。  <br/> |
-|SPO_TeamAccessByOwner  <br/> |ユーザーが対話したファイル (自分が所有するチーム サイト上に存在する) の数です。  <br/> |
-|SPO_TeamAccessByOthers  <br/> |ユーザーが対話したファイル (別のユーザーが所有するチーム サイト上に存在する) の数です。  <br/> |
+|SPO_TeamAccessedByOwner  <br/> |ユーザーが操作したサイトが、自分が所有するチーム サイトに存在するサイトの数。  <br/> |
+|SPO_TeamAccessedByOthers  <br/> |別のユーザーが所有するチーム サイトに存在する、ユーザーが操作したサイトの数。  <br/> |
 |Teams_ChatMessages  <br/> |送信されたチャット メッセージの数。  <br/> |
 |Teams_ChannelMessage  <br/> |チャネルに投稿されたメッセージの数。  <br/> |
 |Teams_CallParticipate  <br/> |ユーザーが参加した呼び出しの数。  <br/> |
