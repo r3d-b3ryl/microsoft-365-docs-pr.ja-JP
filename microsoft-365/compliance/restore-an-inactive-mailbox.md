@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 非アクティブなメールボックスの内容を既存のメールボックスに復元 (またはマージ) する方法についてOffice 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 19d54f239fb092f8dc29b986461028b990b8e4446bc506440d15ff704f5c3618
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09ab8893b2c663d87417fbedf0c157100b3693da
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795796"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569011"
 ---
 # <a name="restore-an-inactive-mailbox"></a>非アクティブなメールボックスを復元する
 
@@ -132,8 +132,8 @@ ms.locfileid: "53795796"
 
   **TargetRootFolder パラメーターを使用しない場合の、ターゲット メールボックス内のフォルダー階層**
 
-  ![TargetRootFolder パラメーターを使用していないときのスクリーン ショット](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
+  ![TargetRootFolder パラメーターを使用しない場合のスクリーンショット。](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
 
   **TargetRootFolder パラメーターを使用する場合の、ターゲット メールボックス内のフォルダー階層**
 
-  ![TargetRootFolder パラメーターが使用されているときのスクリーン ショット](../media/300da592-7323-48db-b8a4-07012259d113.png)
+  ![TargetRootFolder パラメーターを使用する場合のスクリーンショット。](../media/300da592-7323-48db-b8a4-07012259d113.png)

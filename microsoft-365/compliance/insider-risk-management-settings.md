@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: b6c8a616dc4040437a8caec91ab8a5e8fdc1e586
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 2d9914dec5abcf87885404adbc5092605402a045
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533173"
+ms.locfileid: "58599169"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>インサイダーリスク管理設定の使用を開始する
 
@@ -50,7 +50,7 @@ Insider リスク管理の設定は、ポリシー作成時に選択したテン
 
 - **匿名化されたバージョンの** ユーザー名を表示しない : ユーザー名は、アラートとケースに対して現在および過去のすべてのポリシー一致に対して表示されます。 ユーザー プロファイル情報 (名前、役職、エイリアス、組織または部署) は、すべてのインサイダー リスク管理アラートとケースについてユーザーに対して表示されます。
 
-![Insider リスク管理のプライバシー設定](../media/insider-risk-settings-privacy.png)
+![Insider リスク管理のプライバシー設定。](../media/insider-risk-settings-privacy.png)
 
 ## <a name="indicators"></a>インジケーター
 
@@ -150,7 +150,7 @@ Microsoft Defender for Endpoint が既に展開され、エンドポイントレ
 
 たとえば、インサイダー リスク ポリシー設定で SharePoint インジケーターを有効にし、新しいインサイダー リスク データ 漏洩ポリシーのインジケーターを構成するときに、SharePointイベントのカスタムしきい値を設定します。 インサイダー リスク ポリシー ウィザードでは、これらのイベントに関連付けられたアラートのリスク スコアに影響を与SharePointインジケーターごとに 3 つの異なる毎日のイベント レベルを構成します。
 
-![Insider リスク管理のカスタム インジケーター設定](../media/insider-risk-custom-indicators.png)
+![Insider リスク管理のカスタム インジケーター設定。](../media/insider-risk-custom-indicators.png)
 
 最初の 1 日のイベント レベルでは、1 日あたり *10* 以上のイベントにしきい値を設定して、イベントのリスク スコアへの影響を低くし、イベントのリスク スコアに中程度の影響を与えるイベントは *1 日あたり 20* イベント以上、イベントのリスク スコアに対する影響は *1 日あたり 30* 件以上に設定します。 これらの設定は、次の意味を実質的に意味します。
 
@@ -166,7 +166,7 @@ Microsoft Defender for Endpoint が既に展開され、エンドポイントレ
 - **アクティブ化** ウィンドウ : すべてのポリシー テンプレートで使用できる[アクティブ化] ウィンドウは、トリガー イベントの後にウィンドウがアクティブ化する定義済みの日数です。 このウィンドウは、ポリシーに割り当てられたすべてのユーザーに対してトリガー イベントが発生した後、1 ~ 30 日間アクティブ化されます。 たとえば、インサイダー リスク管理ポリシーを構成し、[ライセンス認証] ウィンドウを 30 日間に設定したとします。 ポリシーを構成して数か月が経過し、ポリシーに含まれるユーザーの 1 人に対してトリガー イベントが発生します。 トリガー イベントは [アクティブ化] ウィンドウ *を* アクティブ化し、トリガー イベントが発生した後 30 日間、そのユーザーのポリシーがアクティブになります。
 - **過去のアクティビティ検出**: すべてのポリシー テンプレートで使用できる[過去のアクティビティの検出] は、トリガーイベントの前にウィンドウがアクティブ化する定義済みの日数です。 このウィンドウは、ポリシーに割り当てられたユーザーに対してトリガー イベントが発生する前に 0 ~ 180 日間アクティブ化されます。 たとえば、インサイダー リスク管理ポリシーを構成し、[過去のアクティビティの検出] を 90 日間に設定したとします。 ポリシーを構成して数か月が経過し、ポリシーに含まれるユーザーの 1 人に対してトリガー イベントが発生します。 トリガー イベントは過去のアクティビティ検出をアクティブ化し、ポリシーはトリガー イベントの 90 日前に、そのユーザーの過去のアクティビティを収集します。
 
-![Insider リスク管理の時間枠設定](../media/insider-risk-settings-timeframes.png)
+![Insider リスク管理の時間枠の設定。](../media/insider-risk-settings-timeframes.png)
 
 ## <a name="intelligent-detections"></a>インテリジェントな検出
 
@@ -238,7 +238,7 @@ API を使用してインサイダー リスクアラート情報を確認する
 2. *SecurityComplianceAlerts* Office 365一般的な監査アクティビティをフィルター処理します。
 3. *InsiderRiskManagement カテゴリで SecurityComplianceAlerts* *をフィルター* 処理します。
 
-![Insider リスク管理エクスポートアラートの設定](../media/insider-risk-settings-export.png)
+![Insider リスク管理エクスポートアラート設定。](../media/insider-risk-settings-export.png)
 
 アラート情報には、セキュリティとコンプライアンスのアラート スキーマと管理アクティビティ API 共通スキーマOffice 365情報が含まれる。
 
@@ -273,7 +273,7 @@ API を使用してインサイダー リスクアラート情報を確認する
 
 組織内のユーザーは、自分の位置、機密情報へのアクセスレベル、またはリスク履歴に応じて、リスクのレベルが異なる場合があります。 これらのユーザーのアクティビティの検討とスコア付けを優先順位付けすると、組織に高い結果をもたらす可能性のある潜在的なリスクを警告するのに役立ちます。 インサイダー リスク管理の優先度の高いユーザー グループは、より詳細な検査とより機密性の高いリスク スコアリングを必要とする組織内のユーザーを定義するのに役立ちます。 優先度の高いユーザーによるセキュリティ ポリシー違反と優先ユーザー ポリシー テンプレートによるデータ 漏洩と組み合えて、優先度の高いユーザー グループに追加されたユーザーは、重大度レベルが高いインサイダー リスクアラートとアラートの可能性が高くなります。
 
-![Insider リスク管理優先度のユーザー グループ設定](../media/insider-risk-settings-priority-users.png)
+![Insider リスク管理優先度のユーザー グループ設定。](../media/insider-risk-settings-priority-users.png)
 
 すべてのアナリストや調査担当者がレビューを受け付け入れするのではなく、優先度の高いユーザー グループは、レビューアクティビティを特定のユーザーまたはインサイダーリスクの役割グループに制限する必要があります。 個々のユーザーと役割グループを割り当て、優先度の高いユーザー グループごとにユーザー、アラート、ケース、レポートを確認できます。 優先度の高いユーザー グループには、組み込みの *Insider* リスク管理 *、Insider Risk Management Analysts、Insider* Risk *Management Investigators* 役割グループ、1 つ以上の役割グループ、またはユーザーのカスタム選択に割り当てられたレビュー権限を付与できます。
 
@@ -339,7 +339,7 @@ API を使用してインサイダー リスクアラート情報を確認する
 
 Microsoft 365 で物理不良データ コネクタを有効にして、物理不良管理システムからアクセス情報をインポートし、インサイダー リスク管理で優先度の高い物理資産を指定します。 不良システムから情報をインポートし、物理的なアクセス情報をインサイダーリスク管理で特定された他のリスクアクティビティと関連付けすることで、プロジェクトのユーザーの 1 人が通常の勤務時間後にプロジェクト オフィスにアクセスし、また、通常の作業領域から個人クラウド ストレージ サービスに大量のデータをエクスポートしているのに気付きます。 オンライン アクティビティに関連付けられたこの物理的なアクセスアクティビティは、データの盗難の可能性を示している可能性があり、コンプライアンス調査員やアナリストは、このユーザーの状況に応じて適切なアクションを実行できます。
 
-![Insider リスク管理の優先度物理資産](../media/insider-risk-settings-priority-assets.png)
+![Insider リスク管理優先度の物理資産。](../media/insider-risk-settings-priority-assets.png)
 
 ### <a name="configure-priority-physical-assets"></a>優先度の物理資産を構成する
 
@@ -408,8 +408,6 @@ Microsoft 365 で物理不良データ コネクタを有効にして、物理�
 
 > [!IMPORTANT]
 > 組織内の他のユーザーがフローにアクセスする必要がある場合は、フローを共有する必要があります。
-
-![Insider リスク管理の機能によってフローが自動化される](../media/insider-risk-settings-power-automate-flows.png)
 
 ### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>インサイダー リスク管理Power Automateカスタム の管理フローを作成する
 
@@ -488,7 +486,7 @@ Microsoft 365 で物理不良データ コネクタを有効にして、物理�
 3. インサイMicrosoft Teamsの統合を有効にする。
 4. [保存 **] を選択** して構成して終了します。
 
-![Insider リスク管理Microsoft Teams](../media/insider-risk-settings-teams.png)
+![Insider リスク管理Microsoft Teams。](../media/insider-risk-settings-teams.png)
 
 ### <a name="create-a-microsoft-teams-team-for-existing-cases"></a>既存のケースMicrosoft Teamsチームを作成する
 
@@ -533,13 +531,13 @@ Insider Risk [Management Analytics](https://www.youtube.com/watch?v=5c0P5MCXNXk)
 2. [ **インサイダー リスク管理** の **概要]** タブの [組織のインサイダー リスクをスキャンする] カードの [スキャンの実行] **を選択** します。これにより、組織の分析スキャンが有効になります。 また、Insider リスク設定Analytics に移動し、テナントのユーザー アクティビティをスキャンして潜在的なインサイダー リスクを特定することで、組織内のスキャンを  >  **有効にすることもできます**。
 3. [分析 **の詳細] ウィンドウで** 、[スキャンの実行 **] を** 選択して、組織のスキャンを開始します。 分析スキャン結果は、分析情報がレポートとして確認できるまで最大 24 時間かかる場合があります。
 
-![Insider リスク管理分析の設定](../media/insider-risk-settings-analytics-enable.png)
+![Insider リスク管理分析の設定。](../media/insider-risk-settings-analytics-enable.png)
 
 ### <a name="viewing-analytics-insights-and-creating-new-policies"></a>分析インサイトの表示と新しいポリシーの作成
 
 組織の最初の分析スキャンが完了したら、ユーザーが潜在的に危険なアクティビティに関する分析情報と推奨事項を表示できます。 組織の分析をオフにしない限り、毎日のスキャンは続行されます。 組織の潜在的なリスクを表示するには、[概要]タブに移動し、[Insider リスク分析 **(プレビュー)** カードで結果を表示する] を選択します。 組織のスキャンが完了しない場合は、スキャンがまだアクティブであるというメッセージが表示されます。
 
-![Insider リスク管理分析レポート準備完了カード](../media/insider-risk-analytics-ready-card.png)
+![Insider リスク管理分析レポートの準備完了カード。](../media/insider-risk-analytics-ready-card.png)
 
 完了したスキャンでは、組織で検出された潜在的なリスクと、これらのリスクに対処する分析情報と推奨事項が表示されます。 特定されたリスクと特定の分析情報は、領域別にグループ化されたレポート、特定されたリスクを持つユーザーの総数、潜在的に危険なアクティビティを持つユーザーの割合、およびこれらのリスクを軽減するための推奨されるインサイダー リスク ポリシーに含まれます。 レポートには、次のものが含まれます。
 
@@ -547,11 +545,11 @@ Insider Risk [Management Analytics](https://www.youtube.com/watch?v=5c0P5MCXNXk)
 - **データ盗難** の分析情報: 組織外の情報の危険な共有や悪意のあるユーザーによるデータ盗難を含む、削除された Azure Active Directory アカウントを持つユーザーまたはユーザーを削除するアクティビティ。
 - **上位の外部侵入の分析** 情報 : 組織外でのデータ共有を含む可能性があるすべてのユーザーによるアクティビティ。
 
-![Insider リスク管理分析の概要レポート](../media/insider-risk-analytics-overview.png)
+![Insider リスク管理分析の概要レポート。](../media/insider-risk-analytics-overview.png)
 
 分析情報の詳細を表示するには、[詳細の表示] **を** 選択して、分析情報の詳細ウィンドウを表示します。 詳細ウィンドウには、完全な分析結果、インサイダー リスク ポリシーの推奨事項、推奨ポリシーの作成に役立つ [ポリシーの作成] ボタンが含まれます。 [ポリシーの作成] を選択すると、ポリシー ウィザードが表示され、インサイトに関連する推奨ポリシー テンプレートが自動的に選択されます。 たとえば、分析分析の分析情報がデータリーク アクティビティの場合、ポリシー ウィザードで [全般データ 漏洩] ポリシー テンプレートが事前に選択されます。
 
-![Insider リスク管理分析の詳細レポート](../media/insider-risk-analytics-details.png)
+![Insider リスク管理分析の詳細レポート。](../media/insider-risk-analytics-details.png)
 
 ### <a name="turn-off-analytics"></a>分析をオフにする
 

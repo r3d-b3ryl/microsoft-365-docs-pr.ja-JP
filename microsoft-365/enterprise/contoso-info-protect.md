@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社がエンタープライズ向け Microsoft 365の情報保護機能を使用して、クラウド内のデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 7240e226cf70b2666f6e0bc9180aea3ee63bdc91
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: c61d6ee0a3f577d27c306631ea9f57d8cb3d7c2a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356302"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552866"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -82,7 +82,7 @@ Contoso 社は、Exchange Online および SharePoint のロールアウトの�
 
 情報保護のための Contoso ポリシーのセットを次に示します。
 
-![デバイス、Exchange Online、および SharePoint の条件付きアクセス ポリシー](../media/contoso-info-protect/contoso-info-protect-fig1.png)
+![デバイス、Exchange Online、およびSharePointアクセス ポリシー。](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 >[!Note]
 >Contoso 社は、ID とサインイン用に追加の条件付きアクセス ポリシーも構成しました。 「[Contoso 社の ID](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)」を参照してください。
@@ -109,7 +109,7 @@ Contoso 社は、Exchange Online および SharePoint のロールアウトの�
 
 Contoso の情報保護構成を次に示します。
 
-![Contoso 社の結果として得られる情報保護構成](../media/contoso-info-protect/contoso-info-protect-fig2.png)
+![Contoso 社の結果として得られる情報保護の構成。](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## <a name="next-step"></a>次の手順
 

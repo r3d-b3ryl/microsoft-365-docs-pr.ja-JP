@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 155195ef2c7083bf6d792ccd1b77584d43ba3be27414ac3b27013af6f774cd09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37918c9078231b80f1b41ddf063df92f5cd2aace
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905517"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569059"
 ---
 # <a name="insider-risk-management-policies"></a>インサイダー リスクの管理。
 
@@ -36,7 +36,7 @@ ms.locfileid: "53905517"
 - **アラートに対して実行されたアクション:** 過去 365 日間に確認または無視されたアラートの総数。
 - **ポリシー アラートの有効性:** 確認されたアラートの総数をアラートに対して実行された確認済みのアクションの総数で除して求めた割合 (過去 1 年間に確認または無視されたアラートの合計)。
 
-![インサイダー リスク管理ポリシーのダッシュボード](../media/insider-risk-policy-dashboard.png)
+![Insider リスク管理ポリシー ダッシュボード。](../media/insider-risk-policy-dashboard.png)
 
 ## <a name="policy-recommendations-from-analytics-preview"></a>分析からのポリシーの推奨事項 (プレビュー)
 
@@ -72,7 +72,7 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 - このインサイダー リスク管理テンプレートに使う DLP ポリシー設定での **インシデント レポート** のルール設定が重大度 *High* のアラートに設定されていることを確認してください。 重大度 *High* は、イベントをトリガーするもので、インサイダー リスク管理のアラートは、**インシデント レポート** フィールドが *Low* または *Medium* に設定された DLP ポリシーのルールからは生成されません。
 
-    ![DLP ポリシーのアラート設定](../media/insider-risk-DLP-policy-high-severity.png)
+    ![DLP ポリシーアラートの設定。](../media/insider-risk-DLP-policy-high-severity.png)
 
      > [!NOTE]
      > 組み込みテンプレートを使用して新しい DLP ポリシーを作成する場合は、[**高度な DLP ルールを作成またはカスタマイズする**] オプションを選択して、の *High* 重大度レベルの [**インシデント レポート**] 設定を構成する必要があります。
@@ -208,7 +208,9 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 推奨事項または警告の詳細については、**[ポリシー]** タブでポリシーを選択して、ポリシーの詳細カードを開きます。 推奨事項と警告に関する詳細情報 (これらの問題に対処する方法のガイダンスなど) は、詳細カードの [通知] セクションに表示されます。
 
-![インサイダー リスク管理ポリシーの正常性](../media/insider-risk-policy-health.png)
+![Insider リスク管理ポリシーの正常性。](../media/insider-risk-policy-health.png)
+
+### <a name="notification-messages"></a>通知メッセージ
 
 次の表では、推奨事項、警告通知、および潜在的な問題を解決するために実行するアクションについて説明します。
 

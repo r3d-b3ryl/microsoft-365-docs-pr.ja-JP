@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 60fdb02da960d10b875fcd064c665ecd615ae04c0093f0f90f40ae77e4028f50
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c6e62db4a83e238c840e7e953a78c6e8856a25a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871616"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552962"
 ---
 # <a name="privileged-access-management-in-microsoft-365"></a>Microsoft 365 での特権アクセス管理
 
@@ -31,7 +31,7 @@ ms.locfileid: "53871616"
 
 組織の特権アクセス管理を構成するには、次の手順を使用します。
 
-![Insider リスク ソリューションの特権アクセス管理手順](../media/ir-solution-pam-steps.png)
+![Insider リスク ソリューションの特権アクセス管理手順。](../media/ir-solution-pam-steps.png)
 
 1. 特権アクセス[管理の詳細については](privileged-access-management-overview.md)、Microsoft 365
 2. 承認者 [のグループを作成する](privileged-access-management-configuration.md#step-1-create-an-approvers-group)

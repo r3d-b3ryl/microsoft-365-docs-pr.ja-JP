@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 組織で 365 Business Windows購入する方法と、ユーザーがクラウド PC の使用を開始する方法について学習します。
-ms.openlocfilehash: 281700a15ef7f0560a5fa2171653eddc7048011d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 19b45f3b3b26bf553830061bf63879647bfeec8f
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532897"
+ms.locfileid: "58602967"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Windows 365 Business および Cloud PC の概要
 
@@ -38,7 +38,7 @@ ms.locfileid: "58532897"
 > [!NOTE]  
 > 開始する前に、ユーザーの [Azure](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) ADデバイス設定が **[すべて**] に設定されている Azure ADに参加する可能性 **があります。**
 
-   ![ユーザーはデバイスを Azure ユーザー設定ADできます](../../media/deschutes/azure-device-settings.png)
+   ![ユーザーは、Azure の設定にデバイスADできます。](../../media/deschutes/azure-device-settings.png)
 ## <a name="prerequisites"></a>前提条件
 365 Business をセットアップするためのWindowsはありません。
 
@@ -87,7 +87,7 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
 365 Business ライセンスの種類Windows、ユーザーのビジネス の必要性に基づいて、ユーザーに異なる種類のライセンスを割り当てできます。 ユーザー[に適Windowsするライセンスの種類については、「365 Business](windows-365-business-sizing.md)のサイズ変更オプション」を参照してください。
 
 > [!IMPORTANT]
-> Windows 365 ライセンスが初めてテナントに割り当てられると **、Windows 365 BPRT 常設** ユーザーというシステム アカウントが Azure Active Directory で自動的に作成されます。 このアカウントを削除したり、アカウントに変更を加え (名前や UPN の変更など) したりしない。 システム アカウントが削除された場合、セットアップが失敗する可能性があります。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能やテナントへのアクセス権を持ち合わせない。 このユーザーを削除する場合は、サポート セントラルを通じてチケットをファイルします。
+> Windows 365 ライセンスが初めてテナントに割り当てられると **、Windows 365 BPRT 常設** ユーザーというシステム アカウントが Azure Active Directory で自動的に作成されます。 このアカウントを削除したり、アカウントに変更を加え (名前や UPN の変更など) したりしない。 システム アカウントが削除された場合、セットアップが失敗する可能性があります。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能やテナントへのアクセス権を持ち合わせない。 このユーザーを削除する場合は、次のトラブルシューティング [手順に従います](/microsoft-365/admin/setup/troubleshoot-windows-365-business?#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active)。
 
 ## <a name="get-your-users-started-with-cloud-pc"></a>ユーザーにクラウド PC の使用を開始する
 
@@ -102,7 +102,7 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
 
 ユーザーは Windows 365 のホーム ページで、[クラウド PC] セクションにアクセスできるクラウド **PC が表示** されます。
 
-![Windows 365 home](../../media/deschutes/cloudpc-home.png)
+![Windows 365 ホーム。](../../media/deschutes/cloudpc-home.png)
 
 ユーザーは、[ブラウザーで **開く] を選択** してクラウド PC を開きます。
 
@@ -113,7 +113,7 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
 
 365 Windowsページで、ユーザーはクラウド PC カードの歯車アイコンを選択して、クラウド PC でアクションを実行できます。
 
-![カード メニュー](../../media/deschutes/cloudpc-gear.png)
+![カード メニュー。](../../media/deschutes/cloudpc-gear.png)
 
 - **再起動**: クラウド PC を再起動します。
 
@@ -149,7 +149,7 @@ Windows 365 製品サイトまたは Microsoft 365 管理センター を通じ�
 1. **[365 Windows]** ホーム ページで、[アプリ] Microsoft リモート デスクトップ (ホーム アイコンの下) を選択します。
 2. [アプリの **Microsoft リモート デスクトップ] ページ** で、必要なリモート デスクトップ アプリをダウンロードしてインストールします。
 
-   ![リモート デスクトップ クライアント](../../media/deschutes/remote-desktop-apps.png)
+   ![リモート デスクトップ クライアント。](../../media/deschutes/remote-desktop-apps.png)
 
 オペレーティング システム別のクライアントの一覧については、「リモート デスクトップ [クライアント」を参照してください](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)。
 

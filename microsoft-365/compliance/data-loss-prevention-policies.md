@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: low
+localization_priority: ''
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -21,13 +21,15 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+ROBOTS: NOINDEX, NOFOLLOW
+feedback_system: None
 description: データ損失防止リファレンス 資料
-ms.openlocfilehash: abddda78d8d2eab3cf3931ec4adbc0fa74b8fd657d13f782fc5d93788ec99561
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1eba9c425e66c61e63133d39a844010a499b3eb4
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842917"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595278"
 ---
 # <a name="data-loss-prevention-reference"></a>データ損失防止リファレンス
 
@@ -70,7 +72,7 @@ With a DLP policy, you can:
 
 Microsoft 365 セキュリティ コンプライアンス センターの [データ損失防止] ページで、DLP ポリシーを作成して管理します。
 
-![Office 365 セキュリティ &amp; コンプライアンス センターの [データ損失防止] ページ](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![セキュリティ コンプライアンス センターのOffice 365ページ &amp; 。](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -82,13 +84,13 @@ A DLP policy contains a few basic things:
 
   - **Conditions** the content must match before the rule is enforced. For example, a rule might be configured to look only for content containing Social Security numbers that's been shared with people outside your organization.
 
-  - **Actions** that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification. -->
+  - **Actions** that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification.
 
-ルールを使用して特定の保護要件を満たし、DLP ポリシーを使用して一般的な保護要件をグループ化できます (たとえば、特定の規制に準拠する必要のあるすべてのルール)。
+You can use a rule to meet a specific protection requirement, and then use a DLP policy to group together common protection requirements, such as all of the rules needed to comply with a specific regulation.
 
-たとえば、Health Insurance Portability and Accountability Act (HIPAA) の対象となる情報の存在を検出する際に役立つ DLP ポリシーがあるとします。 この DLP ポリシーは、HIPAA データ (対象) をすべての SharePoint Online サイトと OneDrive for Business サイト (場所) で保護するために、組織外の人物と共有するこの機密情報が含まれるドキュメント (条件) を検出し、そのドキュメントに対するアクセスをブロックして通知を送信 (アクション) できます。 これらの要件は、個別のルールとして保存され、簡単に管理およびレポートする DLP ポリシーとしてまとめてグループ化されます。
+For example, you might have a DLP policy that helps you detect the presence of information subject to the Health Insurance Portability and Accountability Act (HIPAA). This DLP policy could help protect HIPAA data (the what) across all SharePoint Online sites and all OneDrive for Business sites (the where) by finding any document containing this sensitive information that's shared with people outside your organization (the conditions) and then blocking access to the document and sending a notification (the actions). These requirements are stored as individual rules and grouped together as a DLP policy to simplify management and reporting.
 
-![図は、DLP ポリシーに場所とルールが含まれていることを示しています。](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+![Diagram shows that DLP policy contains locations and rules.](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png) -->
 
 <!-- MOVED TO LEARN ABOUT ### Locations
 
@@ -105,196 +107,199 @@ DLP policies are applied to sensitive items across Microsoft 365 locations and c
 |Microsoft Cloud App Security |instance |
  -->
 
-Exchange に特定の配布グループを含めるように選択した場合、DLP ポリシーはそのグループのメンバーにのみ適用されます。 同様に、配布グループを除外すると、その配布グループのすべてのメンバーがポリシー評価から除外されます。 ポリシーを配布リストのメンバー、動的配布グループ、セキュリティ グループの範囲にすることができます。 DLP ポリシーには、このような追加および除外を 50 個まで含めることができます。
+<!-- moved to dlp-policy-reference.md
+If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
-特定の SharePoint サイトを含めるか、除外するかを選択した場合、DLP ポリシーに含めることができるのは、100 を超えることはできません。 こうした制限はありますが、組織全体のポリシーまたは場所全体に適用されるポリシーを適用することで、この制限を超えることができます。
+If you choose to include or exclude specific SharePoint sites, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
 
-特定の OneDrive アカウントまたはグループを含めるか、除外するかを選択した場合、DLP ポリシーに含めることができるのは、ユーザー アカウントなら 100 までで、グループなら 50 までです。
+If you choose to include or exclude specific OneDrive accounts or groups, a DLP policy can contain no more than 100 user accounts or 50 groups as inclusion or exclusion.
 
-### <a name="rules"></a>ルール
+### Rules
 
 > [!NOTE]
-> DLP ポリシーの既定の動作では、アラートが構成されていない場合、アラートまたはトリガーは実行されません。 既定の情報の種類にのみ適用されます。 ユーザー設定の情報の種類の場合、ポリシーにアクションが定義されていない場合でも、システムはアラートを発します。
+> The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 
-ルールとは、組織のコンテンツにビジネス要件を適用するものです。 ポリシーには 1 つ以上のルールが含まれ、各ルールには、条件とアクションが含まれます。 ルールごとに、条件を満たすとアクションが自動的に実行されます。 ルールは、各ポリシー内の最も高位のルールから順に実行されます。
+Rules are what enforce your business requirements on your organization's content. A policy contains one or more rules, and each rule consists of conditions and actions. For each rule, when the conditions are met, the actions are taken automatically. Rules are executed sequentially, starting with the highest-priority rule in each policy.
 
-また、ルールには、コンテンツがルールに一致していることを (ポリシー ヒントとメール通知を持つ) ユーザーと (メール インシデント レポートを持つ) 管理者に通知するオプションも用意されています。
+A rule also provides options to notify users (with policy tips and email notifications) and admins (with email incident reports) that content has matched the rule.
 
-ここでは、ルールの構成要素をそれぞれ詳しく説明します。
+Here are the components of a rule, each explained below.
 
-![DLP ルール エディターのセクション](../media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
+![Sections of the DLP rule editor.](../media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
 
-#### <a name="conditions"></a>条件
+#### Conditions
 
-条件は、探す情報の種類および操作をいつ実行するかを決定するため重要です。 たとえば、パスポート番号を含むコンテンツは、コンテンツに含まれる番号が 10 個より多く組織外のユーザーと共有されている場合以外は無視する、といった条件を作成できます。
+Conditions are important because they determine what types of information you're looking for, and when to take an action. For example, you might choose to ignore content containing passport numbers unless the content contains more than 10 such numbers and is shared with people outside your organization.
 
-条件は、探す機密情報の種類などの **コンテンツ** と、ドキュメントが共有されているユーザーなどの **コンテキスト** に注目します。 条件を使用して、さまざまな操作をリスクレベル別に割り当てることができます。 たとえば、組織内で共有されている機密コンテンツは、組織外のユーザーと共有されている機密コンテンツよりリスク レベルが低く、必要なアクションを少なくする、といったことができます。
+Conditions focus on the **content**, such as what types of sensitive information you're looking for, and also on the **context**, such as who the document is shared with. You can use conditions to assign different actions to different risk levels. For example, sensitive content shared internally might be lower risk and require fewer actions than sensitive content shared with people outside the organization.
 
-![利用可能な DLP 条件の一覧](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
+![List showing available DLP conditions.](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
 
-現在使用可能な条件では、以下のことを判定できます。
+The conditions now available can determine if:
 
-- コンテンツに機密情報が含まれている。
+- Content contains a type of sensitive information.
 
-- コンテンツにラベルが含まれている。 詳細については、以下の「[DLP ポリシーで保持ラベルを条件として使用する](#using-a-retention-label-as-a-condition-in-a-dlp-policy)」セクションを参照してください。
+- Content contains a label. For more information, see the below section [Using a retention label as a condition in a DLP policy](#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
-- コンテンツが組織の内または外のユーザーと共有されている。
+- Content is shared with people outside or inside your organization.
 
   > [!NOTE]
-  > ホストの組織の Active Directory または Azure Active Directory のテナントにゲスト以外のアカウントを持っているユーザーは、組織内のユーザーと見なされます。
+  > Users who have non-guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered as people inside the organization.
 
-#### <a name="types-of-sensitive-information"></a>機密情報の種類
+#### Types of sensitive information
 
-DLP ポリシーは、**機密情報の種類** として定義されている機密情報を保護するのに役立ちます。 Microsoft 365 には、クレジット カード番号、銀行口座番号、国内 ID 番号、パスポート番号など、さまざまな分野の一般的な機密情報の種類の定義が数多く含まれていて、すぐに使用できます。
+A DLP policy can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes definitions for many common sensitive information types across many different regions that are ready for you to use, such as a credit card number, bank account numbers, national ID numbers, and passport numbers.
 
-![使用できる機密情報の種類の一覧](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
+![List of available sensitive information types.](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
 
-DLP ポリシーによってクレジット カード番号などの機密情報の種類を検索する場合、単に 16 桁の数字を検索するわけではありません。 機密情報のそれぞれの種類が定義され、以下の組み合わせを使用して検出されます。
+When a DLP policy looks for a sensitive information type such as a credit card number, it doesn't simply look for a 16-digit number. Each sensitive information type is defined and detected by using a combination of:
 
-- キーワード。
+- Keywords.
 
-- チェックサムや構成を検証するための内部関数。
+- Internal functions to validate checksums or composition.
 
-- パターンの一致を検出するための正規表現の評価。
+- Evaluation of regular expressions to find pattern matches.
 
-- その他のコンテンツの検査。
+- Other content examination.
 
-これにより、DLP 検出処理において、作業の中断原因となる誤検知の数を減らし、正確性を高めることができます。
+This helps DLP detection achieve a high degree of accuracy while reducing the number of false positives that can interrupt peoples' work.
 
-#### <a name="actions"></a>操作
+#### Actions
 
-コンテンツがルールの条件と一致したら、操作を適用してコンテンツを自動的に保護できます。
+When content matches a condition in a rule, you can apply actions to automatically protect the content.
 
-![使用できる DLP 操作の一覧](../media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
+![List of available DLP actions.](../media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
 
-現在は次のような操作を使用できます。
+With the actions now available, you can:
 
-- **コンテンツへのアクセスを制限する** ニーズに応じて、次の 3 つの方法でコンテンツへのアクセスを制限できます。
+- **Restrict access to the content** Depending on your need, you can restrict access to content in three ways:
 
-  1. すべてのユーザーに対してコンテンツへのアクセスを制限する。
-  2. 組織外のユーザーに対してコンテンツへのアクセスを制限する。
-  3. "リンクを知っているすべてのユーザー" に対してコンテンツへのアクセスを制限する。
+  1. Restrict access to content for everyone.
+  2. Restrict access to content for people outside the organization.
+  3. Restrict access to "Anyone with the link."
 
-  サイト コンテンツの場合、これは、プライマリ サイト コレクション管理者、ドキュメントの所有者、ドキュメントを最後に変更したユーザーを除くすべてのユーザーについて、ドキュメントへのアクセス許可が制限されることを意味します。 これらのユーザーは、ドキュメントの機密情報の削除や、他の修正操作を実行できます。 ドキュメントがコンプライアンスを遵守した状態になった場合、元のアクセス許可が自動的に復元されます。 ドキュメントへのアクセスがブロックされているときは、サイトのライブラリでドキュメントに特別なポリシー ヒントのアイコンが表示されます。
+  For site content, this means that permissions for the document are restricted for everyone except the primary site collection administrator, document owner, and person who last modified the document. These people can remove the sensitive information from the document or take other remedial action. When the document is in compliance, the original permissions are automatically restored. When access to a document is blocked, the document appears with a special policy tip icon in the library on the site.
 
-  ![ドキュメントへのアクセスがブロックされていることを示すポリシー ヒント](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+  ![Policy tip showing access to document is blocked.](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
 
-  メール コンテンツの場合は、この操作によりメッセージの送信がブロックされます。 DLP ルールの構成方法によっては、NDR または (ルールで通知が使用されている場合) ポリシー ヒントやメール通知が送信者に表示されます。
+  For email content, this action blocks the message from being sent. Depending on how the DLP rule is configured, the sender sees an NDR or (if the rule uses a notification) a policy tip and/or email notification.
 
-  ![メッセージから権限のない受信者を削除する必要があることを示す警告](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+  ![Warning that unauthorized recipients must be removed from the message.](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
 
-#### <a name="user-notifications-and-user-overrides"></a>ユーザー通知とユーザーによる上書き
+#### User notifications and user overrides
 
-通知と上書きを使用して、DLP ポリシーについてユーザーを教育し、作業を妨げることなく準拠を維持できるようにします。 たとえば、ユーザーが機密情報を含むドキュメントを共有しようとした場合、DLP ポリシーは、メール通知をユーザーに送信すると共に、業務上の妥当性がある場合にはポリシーを無効にできるドキュメント ライブラリのコンテキストでポリシー ヒントを表示できます。
+You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.
 
-![DLP ルール エディターのユーザー通知とユーザーによる上書きのセクション](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
+![User notifications and user overrides sections of DLP rule editor.](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
 
-コンテンツを送信したユーザー、コンテンツを共有しているユーザー、または最後にコンテンツを変更したユーザーにメールで通知でき、サイト コンテンツについては、主要なサイト コレクション管理者とドキュメントの所有者に通知できます。 さらに、メール通知から選択したユーザーを追加または削除することができます。
+The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
 
-メール通知の送信に加えて、ユーザー通知にはポリシー ヒントも表示されます。
+In addition to sending an email notification, a user notification displays a policy tip:
 
-- Outlook および Outlook on the web の場合。
+- In Outlook and Outlook on the web.
 
-- SharePoint Online または OneDrive for Business サイトにあるドキュメントの場合。
+- For the document on a SharePoint Online or OneDrive for Business site.
 
-- DLP ポリシーに含まれるサイトにドキュメントが格納されている場合に、Excel、PowerPoint、Word。
+- In Excel, PowerPoint, and Word, when the document is stored on a site included in a DLP policy.
 
-メール通知およびポリシー ヒントでは、コンテンツが DLP ポリシーに違反している理由が説明されています。 洗濯した場合、ユーザーが誤検知を報告するか業務上の妥当性を示すことによってルールを上書きすることを、メール通知およびポリシー ヒントで許可できます。 これは、DLP ポリシーについてユーザーを教育し、ユーザーの仕事を妨げることなく DLP ポリシーを適用するのに役立ちます。 上書きおよび誤検知に関する情報は、レポート用に記録され (後の DLP レポートの詳細を参照)、インシデント レポート (次のセクションを参照) にも含まれるため、コンプライアンス責任者は定期的にこの情報を確認できます。
+The email notification and policy tip explain why content conflicts with a DLP policy. If you choose, the email notification and policy tip can allow users to override a rule by reporting a false positive or providing a business justification. This can help you educate users about your DLP policies and enforce them without preventing people from doing their work. Information about overrides and false positives is also logged for reporting (see below about the DLP reports) and included in the incident reports (next section), so that the compliance officer can regularly review this information.
 
-OneDrive for Business アカウントにおけるポリシー ヒントの表示内容を示します。
+Here's what a policy tip looks like in a OneDrive for Business account.
 
-![OneDrive アカウントでのドキュメントのポリシー ヒント](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
+![Policy tip for a document in a OneDrive account.](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
- DLP ポリシーのユーザー通知とポリシー ヒントの詳細については、「[通知とポリシー ヒントを使用する](use-notifications-and-policy-tips.md)」を参照してください。
+ To learn more about user notifications and policy tips in DLP policies, see [Use notifications and policy tips](use-notifications-and-policy-tips.md).
 
-#### <a name="alerts-and-incident-reports"></a>警告とインシデント レポート
+#### Alerts and Incident reports
 
-ルールが一致すると、コンプライアンス担当者 (または選択した任意の人物) に、アラートの詳細を記載したアラート メールを送信できます。 この警告メールには、コンプライアンス担当者が警告とイベントの詳細を表示するためにアクセスできる [DLP 警告管理ダッシュボード](dlp-configure-view-alerts-policies.md)のリンクが含まれています。 ダッシュボードには、警告をトリガーしたイベントの詳細と、一致した DLP ポリシーおよび検出された機密コンテンツの詳細が含まれています。
+When a rule is matched, you can send an alert email to your compliance officer (or any person(s) you choose) with details of the alert. This alert email will carry a link of the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md) which the compliance officer can go to view the details of alert and events. The dashboard contains details of the event that triggered the alert along with details of the DLP policy matched and the sensitive content detected.
 
-さらに、イベントの詳細を記載したインシデント レポートを送信することもできます。 このレポートには、一致したアイテム、ルールに一致した実際のコンテンツ、コンテンツの最終変更者の名前が含まれます。 メール メッセージの場合、レポートには添付ファイルとして、DLP ポリシーに適合する元のメッセージも含まれます。
+In addition, you can also send an incident report with details of the event. This report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
 
 > [!div class="mx-imgBorder"]
-> ![インシデント レポートを構成するためのページ](../media/Alerts-and-incident-report.png)
+> ![Page for configuring incident reports.](../media/Alerts-and-incident-report.png)
 
-DLP は、SharePoint Online や OneDrive for Business のアイテムとは異なる方法でメールをスキャンします。 SharePoint Online や OneDrive for Business では、DLP は新しいアイテムだけでなく既存のアイテムもスキャンして、一致が検出される場合は常に警告とインシデント レポートを生成します。 Exchange Online では、DLP は新しいメール メッセージのみをスキャンして、ポリシーとの一致が検出されるとレポートを生成します。 DLP は、メールボックスやアーカイブに保存されている既存のメール アイテムについては、スキャンや一致検出を ***実行しません***。
+DLP scans email differently from items in SharePoint Online or OneDrive for Business. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an alert and incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
 
-## <a name="grouping-and-logical-operators"></a>グループ化と論理演算子
+## Grouping and logical operators
 
-多くの場合、DLP ポリシーには、米国の社会保障番号が含まれているすべてのコンテンツを特定することなど、単純な要件が含まれています。 ただし、DLP ポリシーによって、より大まかに定義されたデータを特定する必要が生じる場合があります。
+Often your DLP policy has a straightforward requirement, such as to identify all content that contains a U.S. Social Security Number. However, in other scenarios, your DLP policy might need to identify more loosely defined data.
 
-たとえば、米国の健康保険法 (HIPAA) の適用対象のコンテンツを特定するには、次を検索する必要があります。
+For example, to identify content subject to the U.S. Health Insurance Act (HIPAA), you need to look for:
 
-- 特定の種類の機密情報 (社会保障番号や麻薬取締局 (DEA) 番号など) を含んでいるコンテンツ。
+- Content that contains specific types of sensitive information, such as a U.S. Social Security Number or Drug Enforcement Agency (DEA) Number.
 
     AND
 
-- 特定がより難しいコンテンツ (患者の治療に関する通信記録や提供された医療サービスの説明など)。 コンテンツを特定するには、国際疾病分類 (ICD-9-CM または ICD-10-CM) などの膨大なキーワード リストからキーワードを一致させる必要があります。
+- Content that's more difficult to identify, such as communications about a patient's care or descriptions of medical services provided. Identifying this content requires matching keywords from very large keyword lists, such as the International Classification of Diseases (ICD-9-CM or ICD-10-CM).
 
-このような大まかに定義されたデータを簡単に特定するには、グループ化と論理演算子 (AND、OR) を使用できます。 DLP ポリシーを作成するときに、次のことができます。
+You can easily identify such loosely defined data by using grouping and logical operators (AND, OR). When you create a DLP policy, you can:
 
-- 機密情報の種類をグループ化する。
+- Group sensitive information types.
 
-- グループ内の機密情報の種類の間、およびグループ自体の間で使用する論理演算子を選択する。
+- Choose the logical operator between the sensitive information types within a group and between the groups themselves.
 
-### <a name="choosing-the-operator-within-a-group"></a>グループ内の演算子を選択する
+### Choosing the operator within a group
 
-グループ内では、コンテンツがルールに一致するためにそのグループが満たす必要のある条件が、そのグループ内のいずれかの条件なのか、すべての条件なのかを選択できます。
+Within a group, you can choose whether any or all of the conditions in that group must be satisfied for the content to match the rule.
 
-![グループ内の演算子を表示するグループ](../media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
+![Group showing the operators within the group.](../media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
 
-### <a name="adding-a-group"></a>グループを追加する
+### Adding a group
 
-独自の条件とグループ内で演算子を持つことができるグループをすばやく追加できます。
+You can quickly add a group, which can have its own conditions and operator within that group.
 
-![[グループの追加] ボタン](../media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
+![Add group button.](../media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
 
-### <a name="choosing-the-operator-between-groups"></a>グループ間の演算子を選択する
+### Choosing the operator between groups
 
-グループ間では、コンテンツがルールに一致するためにそのグループが満たす必要のある条件が、1 つのグループの条件のみなのか、すべてのグループの条件なのかを選択できます。
+Between groups, you can choose whether the conditions in just one group or all of the groups must be satisfied for the content to match the rule.
 
-たとえば、**米国 HIPAA** の組み込みポリシーには、次を含むコンテンツを特定するために、グループ間で **AND** 演算子を使用するルールがあります。
+For example, the built-in **U.S. HIPAA** policy has a rule that uses an **AND** operator between the groups so that it identifies content that contains:
 
-- **PII 識別子** グループ (少なくとも 1 つの SSN 番号 **または** DEA 番号)
+- from the group **PII Identifiers** (at least one SSN number **OR** DEA number)
 
     **AND**
 
-- **医学用語** グループ (少なくとも 1 つの ICD-9-CM キーワード **または** ICD-10-CM キーワード)
+- from the group **Medical Terms** (at least one ICD-9-CM keyword **OR** ICD-10-CM keyword)
 
-![グループ間の演算子を表示するグループ](../media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
+![Groups showing the operator between groups.](../media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
 
-## <a name="the-priority-by-which-rules-are-processed"></a>処理するルールの優先度
+## The priority by which rules are processed
 
-ポリシーでルールを作成すると、作成した順の優先度が各ルールに割り当てられます。つまり、最初に作成したルールの優先度が最も高くなり、2 番目に作成したルールの優先度は 2 番目になります。
-
-> [!div class="mx-imgBorder"]
-> ![優先度順のルール](../media/dlp-rules-in-priority-order.png)
-
-DLP ポリシーを 1 つ以上設定したら、1 つまたは複数のポリシーの優先順位を変更できます。 変更を行うには、ポリシーを選択し、**[ポリシーの編集]** を選び、**[優先度]** の一覧で優先度を指定します。
+When you create rules in a policy, each rule is assigned a priority in the order in which it's created — meaning, the rule created first has first priority, the rule created second has second priority, and so on.
 
 > [!div class="mx-imgBorder"]
-> ![ポリシーの優先度を設定する](../media/dlp-set-policy-priority.png)
+> ![Rules in priority order.](../media/dlp-rules-in-priority-order.png)
 
-コンテンツがルールに対して評価されると、ルールは優先度順に処理されます。 コンテンツが複数のルールに一致する場合、ルールは優先度順に処理され、最も制限が厳しい操作が適用されます。 たとえば、コンテンツが以下のすべてのルールに一致する場合、最も優先度が高く、制限が厳しいルール 3 が適用されます。
+After you have set up more than one DLP policy, you can change the priority of one or more policies. To do that, select a policy, choose **Edit policy**, and use the **Priority** list to specify its priority.
 
-- ルール 1: ユーザーに通知のみを行う
+> [!div class="mx-imgBorder"]
+> ![Set priority for a policy.](../media/dlp-set-policy-priority.png)
 
-- ルール 2: ユーザーに通知する、アクセスを制限する、ユーザーによる上書きを許可する
+When content is evaluated against rules, the rules are processed in priority order. If content matches multiple rules, the rules are processed in priority order and the most restrictive action is enforced. For example, if content matches all of the following rules, Rule 3 is enforced because it's the highest priority, most restrictive rule:
 
-- ルール 3: ユーザーに通知する、アクセスを制限する、ユーザーによる上書きを許可しない
+- Rule 1: only notifies users
 
-- ルール 4: ユーザーに通知のみを行う
+- Rule 2: notifies users, restricts access, and allows user overrides
 
-- ルール 5: アクセスを制限する
+- Rule 3: notifies users, restricts access, and does not allow user overrides
 
-- ルール 6: ユーザーに通知する、アクセスを制限する、ユーザーによる上書きを許可しない
+- Rule 4: only notifies users
 
-この例では、最も制限が厳しいルールのみが適用された場合でも、すべてのルールに一致するものは監査ログに記録され、DLP レポートに表示されます。
+- Rule 5: restricts access
 
-ポリシー ヒントについては、次の点に注意してください。
+- Rule 6: notifies users, restricts access, and does not allow user overrides
 
-- 最も優先度が高く、制限が厳しいルールのポリシー ヒントのみが表示されます。 たとえば、単に通知を送信するルールのポリシー ヒントよりも、コンテンツへのアクセスを禁止するルールのポリシー ヒントの方が優先して表示されます。 これにより、ポリシー ヒントがカスケード表示されるのを防止します。
+In this example, note that matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the most restrictive rule is enforced.
 
-- 	最も制限の厳しいルールでユーザーにルールを上書きすることを許可している場合は、このルールを上書きすることで、コンテンツに一致した他のルールもすべて上書きされます。
+Regarding policy tips, note that:
+
+- Only the policy tip from the highest priority, most restrictive rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
+
+- If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
+
+-->
 
 ## <a name="tuning-rules-to-make-them-easier-or-harder-to-match"></a>一致の難易度を上下するためにルールを調整する
 
@@ -321,7 +326,7 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
 
 通常、ユーザー通知の送信など、制限の緩い操作は、少ないインスタンス数 (たとえば 1 から 9) のルールで使用します。 また、ユーザーによる上書きを許可せずにコンテンツへのアクセスを制限するなど制限の厳しい操作は、高いインスタンス数 (たとえば 10 からすべて) のルールで使用します。
 
-![ルール エディターのインスタンス数](../media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
+![ルール エディターのインスタンス数。](../media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
 
 ### <a name="match-accuracy"></a>一致精度
 
@@ -353,7 +358,7 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
 
 そのため、クレジット カードについて相互排他的な 2 つのルールを作成し、65% の一致精度のルールと 85% の一致精度のルールである場合、一致精度の範囲は次のようになります。 最初のルールでは、65% のパターンの一致のみが選択されます。 2 つ目のルールでは、**少なくとも 1 つの** 85% のパターンの一致が選択され、他の低い信頼度の一致が **選択される可能性** があります。
 
-![一致精度の範囲が異なる 2 つのルール](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
+![一致精度の範囲が異なる 2 つのルール。](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
 
 以上の理由から、一致精度が異なる複数のルールを作成する方法について説明します。
 
@@ -371,7 +376,7 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
 - 発行済みの保持ラベルを同期するには、1 から 7 日かかる場合があります。アイテム保持ポリシーで発行される保持ラベルの詳細については、「[保持ラベルが適用できるようになったとき](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)」を参照してください。自動的に発行されたアイテム保持ラベルの詳細については、「[保持ラベルが有効になるまでの所要時間](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)」を参照してください。
 - ポリシーでの保持ラベルの使用** は、SharePoint および OneDrive のアイテムに対してのみサポートされています***。
 
-  ![条件としてのラベル](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+  ![条件としてのラベル。](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   保持と廃棄の対象になっているアイテムがあり、そのアイテムに他のコントロールを適用する場合は、DLP ポリシーで保持ラベルを使用できます。例: 
 
@@ -392,13 +397,13 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
 
 - DLP ポリシーは、このコンテンツに **保護** 操作を適用できます。 ただし、これらの操作を適用する前に、DLP ポリシーにはラベルを含むコンテンツ以外にも一致する他の条件が必要です。
 
-![機密情報に適用できる機能の図](../media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
+![機密情報に適用できる機能の図。](../media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
 
 DLP ポリシーには、機密情報に適用されるラベルや保持ポリシーよりも機能性の高い検出機能があることに注意してください。 DLP ポリシーは、機密情報を含むコンテンツに保護アクションを適用できます。コンテンツから機密情報を削除すると、次回コンテンツがスキャンされたときにそれらの保護操作は取り消されます。 ただし、機密情報を含むコンテンツに保持ポリシーまたはラベルが適用されている場合は、機密情報が削除された場合でも取り消されない 1 回限りの操作になります。
 
 DLP ポリシーでラベルを条件として使用すると、そのラベルのコンテンツに保持操作と保護操作の両方を適用できます。 ラベルを含むコンテンツは機密情報を含むコンテンツとまったく同じように考えることができます。ラベルと機密情報の種類は両方とも、コンテンツの分類に使用されるプロパティです。このため、そのコンテンツに操作を適用できます。
 
-![条件としてラベルを使用する DLP ポリシーの図](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
+![ラベルを条件として使用する DLP ポリシーの図。](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
 
 ## <a name="simple-settings-vs-advanced-settings"></a>簡易設定と詳細設定
 
@@ -416,7 +421,7 @@ DLP ポリシーを作成するときは、次の簡易設定または詳細設�
 
 この目標を容易に達成するために、DLP ポリシーの作成時に [**簡易設定を使用**] を選択することができます。 簡易設定では、ルール エディターに移動することなく、最も一般的な DLP ポリシーを実装するのに必要なすべてのものが提供されます。
 
-![簡易設定と詳細設定の DLP オプション](../media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
+![簡単で高度な設定の DLP オプション。](../media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
 
 ### <a name="advanced-settings"></a>詳細設定
 
@@ -426,7 +431,7 @@ DLP ポリシーを作成するときは、次の簡易設定または詳細設�
 
 セクションにすばやく移動するには、ルール エディターの上部のナビゲーションの項目をクリックして、下のセクションに移動します。
 
-![DLP ルール エディターの上部のナビゲーション メニュー](../media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
+![DLP ルール エディターのトップ ナビゲーション メニュー。](../media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
 
 ## <a name="dlp-policy-templates"></a>DLP ポリシー テンプレート
 
@@ -434,7 +439,7 @@ DLP ポリシーの作成における最初のステップは、保護する情�
 
 構成済みの DLP ポリシー テンプレートを使用すると、HIPAA データ、PCI DSS データ、グラム リーチ ブライリー法データ、またはロケール固有の個人情報 (P.I.) などの機密情報の特定の種類を検出するのに役立ちます。 一般的な種類の機密情報を簡単に検出して保護できるように、Microsoft 365 に含まれるポリシー テンプレートには、使用開始時に必要な最も一般的な機密情報の種類が既に含まれています。
 
-![米国愛国者法のテンプレートに注目したデータ損失防止ポリシーのテンプレートの一覧](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
+![米国愛国者法のテンプレートに焦点を当てたデータ損失防止ポリシーのテンプレートの一覧。](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
 
 組織には固有の要件がある場合もあるため、その場合は、[**カスタム ポリシー**] オプションを選択して、最初から DLP ポリシーを作成できます。 カスタム ポリシーは空であり、既定のルールは含まれていません。
 
@@ -452,16 +457,16 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 3. **Start full enforcement on the policies** so that the actions in the rules are applied and the content's protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend.
 
-    ![Options for using test mode and turning on policy](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Options for using test mode and turning on policy.](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
     You can turn off a DLP policy at any time, which affects all rules in the policy. However, each rule can also be turned off individually by toggling its status in the rule editor.
 
-    ![Options for turning off a rule in a policy](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+    ![Options for turning off a rule in a policy.](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
     You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In a row for a rule, choose the ellipses (**...**), and then choose an option, such as **Move down** or **Bring to last**.
 
     > [!div class="mx-imgBorder"]
-    > ![Set rule priority](../media/dlp-set-rule-priority.png)-->
+    > ![Set rule priority.](../media/dlp-set-rule-priority.png)-->
 
 ## <a name="dlp-reports"></a>DLP レポート
 
@@ -477,7 +482,7 @@ DLP レポートを利用すると、ビジネスに関する洞察を得ると�
 
 さらに、DLP レポートを使用すると、DLP ポリシーの実行時にそれらのポリシーを調整できます。
 
-![セキュリティとコンプライアンス センターのダッシュ ボードのレポート](../media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
+![セキュリティとコンプライアンス センターのダッシュボードを報告します。](../media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
 
 ## <a name="how-dlp-policies-work"></a>DLP ポリシーのしくみ
 
@@ -510,7 +515,7 @@ DLP は、(単純なテキスト スキャンだけでなく) 詳細なコンテ
 
 ユーザーがサイトにドキュメントを追加したりドキュメントを変更したりすると、検索エンジンによってコンテンツがスキャンされるため、ユーザーが後で検索できるようになります。 これと併せて、コンテンツは機密情報に関してスキャンされ、共有されているかどうかが確認されます。 見つかった機密情報は、コンプライアンス チームだけがアクセスでき、一般ユーザーはアクセスできないように、検索インデックスに安全に保存されます。 有効にした DLP ポリシーはそれぞれバックグラウンドで (非同期に) 実行されるため、ポリシーと一致するコンテンツが頻繁に検索され、不注意によって漏えいされないようにアクションが適用されます。
 
-![DLP ポリシーが非同期にコンテンツを評価する方法を示す図](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
+![DLP ポリシーがコンテンツを非同期的に評価する方法を示す図。](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
 
 <!-- conflict with a DLP policy is bad wording --> 最後に、ドキュメントが DLP ポリシーに矛盾し、その後 DLP ポリシーに準拠するようになることがあります。たとえば、ユーザーがドキュメントにクレジット カード番号を追加する場合、DLP ポリシーによってドキュメントへのアクセスが自動的にブロックされる可能性があります。しかしユーザーが後で機密情報を削除すると、次にドキュメントが対象ポリシーに対して再び評価されるときに、アクション (この例ではブロック) が自動的に取り消されます。
 

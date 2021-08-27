@@ -13,12 +13,12 @@ description: 管理者は、セキュリティ コンプライアンス セン�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b38bb50bd72ea3391cd908e6e058e050003a17b41777df9d8d2663a50977904
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6c960b34933c6a90dcf4a1675ced63dd43f00c07
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56882511"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607071"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのメール追跡の分析情報
 
@@ -31,7 +31,7 @@ ms.locfileid: "56882511"
 
 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードを使用して、傾向、分析情報を検出し、組織内のメール フローに関連する問題を解決するためのアクションを実行できます。
 
-![セキュリティ センター コンプライアンス センターのメール フロー &ダッシュボード](../../media/mail-flow-dashboard-v2.png)
+![セキュリティ センターのメール フロー ダッシュボード&センターです。](../../media/mail-flow-dashboard-v2.png)
 
 利用可能な分析情報は次のとおりです。
 
@@ -69,7 +69,7 @@ ms.locfileid: "56882511"
 
 - **コンプライアンス センター** (グローバル管理者) &の組織の管理。
 
-- **[Exchangeの管理者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Azure Active Directory。
+- **[Exchangeの管理者](/azure/active-directory/roles/permissions-reference#exchange-administrator)** Azure Active Directory。
 
 - **コンプライアンス センターの** セキュリティ & MailFlow 管理者。 アカウントが組織の管理または管理者役割グループのメンバーでExchange場合は、次の問題を検討してください。
   - ユーザーは、コンプライアンス センターのセキュリティ &に直接サインインする必要があります <https://protection.office.com> 。

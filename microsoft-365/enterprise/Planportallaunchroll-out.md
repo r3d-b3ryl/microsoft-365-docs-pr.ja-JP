@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、SharePoint Online でポータルの起動を計画する方法と、正常に起動するために実行する手順について説明します。
-ms.openlocfilehash: abbcb1b69860046d479c4e2808a83b67cfd9e3427e16da5c175ee37cda36a4f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 82c4db0ccf544c66746c2a8b01e9b932a7f64564
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891340"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552878"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>オンラインでポータルの起動ロールアウト計画をSharePointする
 
@@ -70,7 +70,7 @@ SharePointOnline は、ファーム間でバランスが取れた共有マルチ
   
 次の図に示すように、多くの場合、招待されるユーザーの数は、実際にサイトを使用するユーザーよりも大幅に多くなります。 このイメージは、リリースをロールアウトする方法に関する戦略を示しています。 このメソッドは、ほとんどのユーザーがサイトを表示する前SharePointサイトを改善する方法を特定するのに役立ちます。
   
-![招待ユーザーとアクティブなユーザーを示すグラフ](../media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
+![Graphユーザーとアクティブ ユーザーを表示します。](../media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
   
 パイロット フェーズでは、組織が信頼し、関与を知っているというフィードバックをユーザーから受け取るのが良い方法です。 これにより、システムの使用方法とシステムの実行方法を測定できます。
   

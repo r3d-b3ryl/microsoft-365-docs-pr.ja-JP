@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: c92d53045c56adf300dc2d67c92f8e7c6b6333e6739a10f476461252321ca3bb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f652987caf977e520dc0681b54c605f7a03b3e5
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857617"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607321"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>イベント ビューアーを使用してイベントとエラーを確認する
 
@@ -46,7 +46,7 @@ ms.locfileid: "53857617"
 
 2. ログ リストの [ログの概要 **] で****、Microsoft-Windows-SENSE/操作が表示されるまでスクロールします**。 アイテムをダブルクリックしてログを開きます。
 
-   [アプリケーションとサービス ログ] を展開してログにアクセスすることもできます。Microsoft Windows SENSE をクリックし、[操作  >    >    >  ] を **クリックします**。
+   [アプリケーションとサービス ログ] を展開してログにアクセスすることもできます。Microsoft Windows SENSE をクリックし、[操作 \>  \>  \> ] を **クリックします**。
 
    > [!NOTE]
    > SENSE は、Microsoft Defender for Endpoint をサポートする動作センサーを参照するために使用される内部名です。
@@ -57,11 +57,11 @@ ms.locfileid: "53857617"
 
    ****
 
-   |イベント ID|メッセージ|Description|Action|
+   |イベント ID|メッセージ|説明|Action|
    |---|---|---|---|
-   |1|Microsoft Defender for Endpoint service が開始されました (バージョン `variable` )。|システムの起動時、シャットダウン中、オンボーディング中に発生します。|通常の動作通知。アクションは必要ありません。|
-   |2|Microsoft Defender for Endpoint service shutdown.|デバイスがシャットダウンまたはオフボードされている場合に発生します。|通常の動作通知。アクションは必要ありません。|
-   |3|Microsoft Defender for Endpoint service の開始に失敗しました。 エラー コード: `variable` .|サービスが開始しなかった。|他のメッセージを確認して、考えられる原因とトラブルシューティングの手順を確認します。|
+   |1 |Microsoft Defender for Endpoint service が開始されました (バージョン `variable` )。|システムの起動時、シャットダウン中、オンボーディング中に発生します。|通常の動作通知。アクションは必要ありません。|
+   |2 |Microsoft Defender for Endpoint service shutdown.|デバイスがシャットダウンまたはオフボードされている場合に発生します。|通常の動作通知。アクションは必要ありません。|
+   |3 |Microsoft Defender for Endpoint service の開始に失敗しました。 エラー コード: `variable` .|サービスが開始しなかった。|他のメッセージを確認して、考えられる原因とトラブルシューティングの手順を確認します。|
    |4 |Microsoft Defender for Endpoint service がでサーバーに連絡しました `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> この URL は、ファイアウォールまたはネットワーク アクティビティに表示される URL と一致します。|通常の動作通知。アクションは必要ありません。|
    |5 |Microsoft Defender for Endpoint service でサーバーへの接続に失敗しました `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> サービスは、その URL の外部処理サーバーに接続できません。|URL への接続を確認します。 「Configure [proxy and Internet connectivity」を参照してください](configure-proxy-internet.md)。|
    |6 |Microsoft Defender for Endpoint Service はオンボードされていないので、オンボーディング パラメーターが見つかりませんでした。|デバイスが正しくオンボードされていないので、ポータルに報告されません。|サービスを開始する前にオンボーディングを実行する必要があります。 <p> オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
@@ -69,10 +69,10 @@ ms.locfileid: "53857617"
    |8 |Microsoft Defender for Endpoint service では、構成のクリーンアップに失敗しました。 エラー コード: `variable` .|**オンボーディング中:** サービスは、オンボーディング中に構成のクリーンアップに失敗しました。 オンボーディング プロセスは続行されます。 <p> **オフボード中:** サービスは、オフボード中に構成のクリーンアップに失敗しました。 オフボード プロセスは終了しましたが、サービスは実行を続ける。|**オンボーディング:** アクションは不要です。 <p> **オフボード:** システムを再起動します。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
    |9 |Microsoft Defender for Endpoint service は、開始の種類を変更できなかった。 エラー コード: `variable` .|**オンボーディング中:** デバイスが正しくオンボードされていないので、ポータルに報告されません。 <p>**オフボード中:** サービスの開始の種類を変更できなかった。 オフボードプロセスは続行されます。 |オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
    |10 |Microsoft Defender for Endpoint Service は、オンボーディング情報を保持できなかった。 エラー コード: `variable` .|デバイスが正しくオンボードされていないので、ポータルに報告されません。|オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
-   |11|Defender for Endpoint サービスのオンボーディングまたは再オンボーディングが完了しました。|デバイスが正しくオンボードされました。|通常の動作通知。アクションは必要ありません。 <p> デバイスがポータルに表示されるには数時間かかる場合があります。|
+   |11 |Defender for Endpoint サービスのオンボーディングまたは再オンボーディングが完了しました。|デバイスが正しくオンボードされました。|通常の動作通知。アクションは必要ありません。 <p> デバイスがポータルに表示されるには数時間かかる場合があります。|
    |12 |Microsoft Defender for Endpoint では、既定の構成の適用に失敗しました。|サービスが既定の構成を適用できなかった。|このエラーは、短時間で解決する必要があります。|
-   |13|Microsoft Defender for Endpoint デバイス ID が計算 `variable` されます。|通常の操作プロセス。|通常の動作通知。アクションは必要ありません。|
-   |15|エンドポイントの Microsoft Defender は、URL を使用してコマンド チャネルを開始できません `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> サービスは、その URL の外部処理サーバーに接続できません。|URL への接続を確認します。 「Configure [proxy and Internet connectivity」を参照してください](configure-proxy-internet.md)。|
+   |13 |Microsoft Defender for Endpoint デバイス ID が計算 `variable` されます。|通常の操作プロセス。|通常の動作通知。アクションは必要ありません。|
+   |15 |エンドポイントの Microsoft Defender は、URL を使用してコマンド チャネルを開始できません `variable` 。|Variable = Defender for Endpoint 処理サーバーの URL。 <p> サービスは、その URL の外部処理サーバーに接続できません。|URL への接続を確認します。 「Configure [proxy and Internet connectivity」を参照してください](configure-proxy-internet.md)。|
    |17 |Microsoft Defender for Endpoint service は、接続されたユーザー エクスペリエンスとテレメトリ サービスの場所を変更できなかった。 エラー コード: `variable` .|テレメトリ サービスでエラー Windows発生しました。|[診断データ サービスが "有効" になっている](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)>診断データ サービスが有効になっているか確認します。 <p> オンボーディング設定とスクリプトが適切に展開されていることを確認します。 構成パッケージを再展開してみてください。 <p> 「[オンボード デバイスWindows 10」を参照してください](configure-endpoints.md)。|
    |18 |OOBE (Windows) が完了しました。|サービスは、更新プログラムのインストールWindows後にのみ開始されます。|通常の動作通知。アクションは必要ありません。|
    |19|OOBE (Windows) がまだ完了していません。|サービスは、更新プログラムのインストールWindows後にのみ開始されます。|通常の動作通知。アクションは必要ありません。 <p> システムの再起動後もこのエラーが解決しない場合は、すべての更新プログラムWindowsインストールされていることを確認します。|
@@ -149,8 +149,10 @@ ms.locfileid: "53857617"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
-## <a name="related-topics"></a>関連トピック
-
+## <a name="see-also"></a>関連項目
 - [Windows 10 デバイスのオンボード](configure-endpoints.md)
 - [デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
 - [Microsoft Defender for Endpoint のトラブルシューティング](troubleshoot-onboarding.md)
+- [クライアント アナライザーの概要](overview-client-analyzer.md)
+- [クライアント アナライザーのダウンロードと実行](download-client-analyzer.md)
+- [アナライザー HTML レポートの理解](analyzer-report.md)

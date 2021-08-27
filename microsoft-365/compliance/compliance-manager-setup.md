@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーのユーザー アクセス許可と役割を設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: e13620413c81e5a6492c85d54d284f48308f5578
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: e6d6c1bb9555f0cc0c80b4a4727a761bd2e99999
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256034"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603199"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -80,7 +80,7 @@ Office 365 または Microsoft 365 のサブスクリプションを所有して
 
 ### <a name="role-types"></a>役割の種類
 
-以下の表は、コンプライアンス マネージャーの各ロールで許可される機能を示しています。 また、表には各 [Azure AD ロール](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)がコンプライアンス マネージャー ロールにマッピングされる方法が示されています。 ユーザーがコンプライアンス マネージャーにアクセスするには、少なくともコンプライアンス マネージャー閲覧者ロール、または Azure AD グローバル閲覧者ロールが必要です。
+以下の表は、コンプライアンス マネージャーの各ロールで許可される機能を示しています。 また、表には各 [Azure AD ロール](/azure/active-directory/roles/permissions-reference)がコンプライアンス マネージャー ロールにマッピングされる方法が示されています。 ユーザーがコンプライアンス マネージャーにアクセスするには、少なくともコンプライアンス マネージャー閲覧者ロール、または Azure AD グローバル閲覧者ロールが必要です。
 
 
 | ユーザーは次のことを行うことができます。 | コンプライアンス マネージャー ロール | Azure AD ロール | 

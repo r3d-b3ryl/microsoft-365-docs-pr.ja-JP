@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '使用状況分析が API に接続する方法と、さまざまなサービスの使用状況の毎月の傾向Microsoft 365します。  '
-ms.openlocfilehash: cf53007e062db85bb17bd64851022218c0d220ba
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 2f271414f515d2c3a86c6e59d64dc62f44f8ef01
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533545"
+ms.locfileid: "58603305"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 
@@ -109,9 +109,9 @@ Microsoft 365分析は、多次元データ モデルを公開する API に接�
 |ODB_FileSynched  <br/> |このユーザーがいずれかの OneDrive for Business で同期したファイルの数です。  <br/> |
 |ODB_FileSharedInternally  <br/> |このユーザーが任意のユーザーから内部的に共有OneDrive for Businessグループ内のユーザー (外部ユーザーを含む可能性があります) の数。  <br/> |
 |ODB_FileSharedExternally  <br/> |このユーザーがいずれかの OneDrive for Business から外部共有したファイルの数です。  <br/> |
-|ODB_AccessByOwner  <br/> |ユーザーが対話したファイル (自分の OneDrive for Business 上に存在する) の数です。  <br/> |
-|ODB_AccessOthers  <br/> |このユーザーが対話したファイル (別のユーザーの OneDrive for Business 上に存在する) の数です。  <br/> |
-|SPO_GroupFileViewedModified  <br/> |このユーザーがグループ サイトで対話したファイルの数です。  <br/> |
+|ODB_AccessedByOwner  <br/> |ユーザーが操作したサイトが、自分のサイトに存在するOneDrive for Business。  <br/> |
+|ODB_AccessedByOthers  <br/> |このユーザーが操作した、別のユーザーのサイトに存在するサイトのOneDrive for Business。  <br/> |
+|SPO_GroupFileViewedModified  <br/> |このユーザーが任意のグループ サイトで操作したファイルの数。  <br/> |
 |SPO_GroupFileSynched  <br/> |このユーザーがグループ サイトで同期したファイルの数です。  <br/> |
 |SPO_GroupFileSharedInternally  <br/> |組織内のユーザー、またはグループ内のユーザーと共有されたファイルの数 (外部ユーザーを含む場合があります)。  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |このユーザーがグループ サイトから外部共有したファイルの数です。  <br/> |
@@ -278,7 +278,17 @@ Microsoft 365分析は、多次元データ モデルを公開する API に接�
 |YAM_LikedActivities  <br/> |アクティビティYammer数。  <br/> |
 |YAM_PostedActivties  <br/> |投稿アクティビティYammer数。  <br/> |
 |YAM_ReadActivites  <br/> |読み取Yammerの数。  <br/> |
-   
+
+### <a name="data-table---tenant-office-licenses"></a>データ テーブル - テナント Office ライセンス
+
+次の表に、ユーザーのライセンス割り当てに関する月次の概要データを示します。 
+  
+|**列名**|**列の説明**|
+|:-----|:-----|
+|LicenseName  <br/> |ライセンスの名前。  <br/> |
+|AssignedCount  <br/> |割り当てられたライセンスの数。  <br/> |
+|Timeframe  <br/> |月の値。  <br/> |
+
 ### <a name="data-table---tenant-office-activation"></a>データ テーブル - Tenant Office Activation(テナントの Office ライセンス認証)
 
 この表には、サービス プラン全体の Office サブスクリプションライセンス認証の数に関するデータ (たとえば、Microsoft 365 Apps、エンタープライズ、Visio、Project) が示されています。 デバイス (Android/iOS/Mac/PC) 別のライセンス認証数に関するデータも提供します。

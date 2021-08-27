@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7357c05809ffc31783f985adc04cabc70742dbe9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5fb3ee5abfb2f6d8f86832967ed6f88386421c9e
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247953"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607103"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -74,18 +74,18 @@ Microsoft 365 Defender固有のクロスプロダクト レイヤーは、個々
 - 影響を受け取ったアセットの自己修復を自動修復でトリガーすることで、侵害への対応を自動化する
 - セキュリティ チームがエンドポイントとデータ全体で詳細かつ効果的な脅威Office可能
 
-![インシデントの概要ページの画像](../../media/overview-incident.png) <br>
+![インシデントの概要ページのイメージ。](../../media/overview-incident.png) <br>
 製品間インシデント (概要)
 
-![アラート キューのイメージ](../../media/incident-list.png)<br>
+![アラート キューのイメージ。](../../media/incident-list.png)<br>
 スイート製品全体のすべての関連アラートが 1 つのインシデントに関連付け (アラート ビュー)
 
-![インシデント キューのイメージ](../../media/advanced-hunting.png)<br>
+![インシデント キューのイメージ。](../../media/advanced-hunting.png)<br>
 電子メールとエンドポイントの生データの上でのクエリ ベースの検索
 
 
 Microsoft 365 Defender機能には、次のものが含まれます。 
-- **ガラスの** 製品間単一ウィンドウ - 中央には、security.microsoft.com の 1 つのキューと 1 つのウィンドウで、検出、影響を受けるアセット、自動アクション、および関連する証拠に関 [するすべての情報が表示されます](https://security.microsoft.com)。 
+- **ガラスの** 製品間単一ウィンドウ - 1 つのキューと security.microsoft.com の 1 つのウィンドウで、検出、影響を受けるアセット、自動操作、および関連する証拠に関するすべての情報を中央表示 [します](https://security.microsoft.com)。 
 - **複合インシデント** キュー - セキュリティ専門家が攻撃範囲全体を確保することで重要な作業に集中するために、影響を受けたアセットと自動修復アクションがグループ化され、適切な時期に表示されます。 
 - **脅威への自動対応**- 重大な脅威情報は、攻撃の進行を停止するために、Microsoft 365 Defender製品間でリアルタイムで共有されます。 たとえば、Microsoft Defender for Endpoint で保護されたエンドポイントで悪意のあるファイルが検出された場合、すべての電子メール メッセージからファイルをスキャンして削除するように defender に Office 365 に指示します。 このファイルは、セキュリティ スイート全体によってMicrosoft 365されます。
 - **侵害されたデバイス**、ユーザー ID、メールボックスの自己修復 - Microsoft 365 Defender は、AI による自動アクションとプレイブックを使用して、影響を受け取ったアセットを安全な状態に戻します。 Microsoft 365 Defenderスイート製品の自動修復機能を活用して、インシデントに関連する影響を受けたすべての資産を可能な限り自動的に修復します。

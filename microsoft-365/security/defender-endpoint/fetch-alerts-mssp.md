@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f5f9cd4515c79513bf9690023e05a541f7495acbd19f4d51df7b46eae295dba2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a8e67bda0a33699f3d1934d943dd52db5a3354be
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853969"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610955"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>MSSP カスタマー テナントからのアラートの取得
 
@@ -33,11 +33,11 @@ ms.locfileid: "53853969"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
->[!NOTE]
->このアクションは MSSP によって実行されます。
-
+> [!NOTE]
+> このアクションは MSSP によって実行されます。
 
 アラートを取得するには、次の 2 つの方法があります。
+
 - SIEM メソッドの使用
 - API の使用
 
@@ -45,27 +45,25 @@ ms.locfileid: "53853969"
 
 SIEM システムにアラートをフェッチするには、次の手順を実行する必要があります。
 
-手順 1: サード パーティ製アプリケーションを作成する
-
-手順 2: 顧客のテナントからアクセストークンと更新トークンを取得する
- 
-手順 3: アプリケーションのインストールを許可Microsoft 365 Defender
+- 手順 1: サード パーティ製アプリケーションを作成する
+- 手順 2: 顧客のテナントからアクセストークンと更新トークンを取得する
+- 手順 3: アプリケーションのインストールを許可Microsoft 365 Defender
 
 ### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>手順 1: アプリケーションを作成する (AD Azure Azure Active Directory)
- 
+
 アプリケーションを作成し、顧客の Microsoft Defender for Endpoint テナントからアラートを取得するためのアクセス許可を付与する必要があります。
 
 1. Azure AD [ポータルにサインインします](https://aad.portal.azure.com/)。
 
-2. [アプリ  >  **Azure Active Directory] を選択します**。
- 
+2. [アプリ \> **Azure Active Directory] を選択します**。
+
 3. [新規 **登録] をクリックします**。
 
 4. 次の値を指定します。
 
     - 名前: \<Tenant_name\> SIEM MSSP コネクタ (Tenant_name表示名に置き換える)
- 
-    - サポートされているアカウントの種類: この組織ディレクトリのアカウントのみ 
+
+    - サポートされているアカウントの種類: この組織ディレクトリのアカウントのみ
     - リダイレクト URI: [Web] を選択して入力 `https://<domain_name>/SiemMsspConnector` します (<domain_name>テナント名に置き換えてください)
 
 5. **[登録]** をクリックします。 アプリケーションは、所有するアプリケーションの一覧に表示されます。
@@ -81,25 +79,24 @@ SIEM システムにアラートをフェッチするには、次の手順を実
     - 説明: キーの説明を入力します。
     - 有効期限: **[1 年間] を選択します。**
 
- 
 10. [ **追加]** をクリックし、クライアント シークレットの値を安全な場所にコピーします。次の手順でこれを行う必要があります。
- 
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>手順 2: 顧客のテナントからアクセストークンと更新トークンを取得する
+
 このセクションでは、PowerShell スクリプトを使用して顧客のテナントからトークンを取得する方法について説明します。 このスクリプトでは、前の手順のアプリケーションを使用して、OAuth 認証コード を使用してアクセス トークンと更新トークンを取得Flow。
 
 資格情報を指定した後、アプリケーションが顧客のテナントにプロビジョニングされるので、アプリケーションに同意を与える必要があります。
-
 
 1. 新しいフォルダーを作成し、名前を付きます `MsspTokensAcquisition` 。
 
 2. [LoginBrowser.psm1 モジュールをダウンロードし](https://github.com/shawntabrizi/Microsoft-Authentication-with-PowerShell-and-MSAL/blob/master/Authorization%20Code%20Grant%20Flow/LoginBrowser.psm1)、フォルダーに保存 `MsspTokensAcquisition` します。
 
-    >[!NOTE]
-    >30 行目で、 に置き `authorzationUrl` 換える `authorizationUrl` 。
+    > [!NOTE]
+    > 30 行目で、 に置き `authorzationUrl` 換える `authorizationUrl` 。
 
 3. 次の内容のファイルを作成し、フォルダーに名前 `MsspTokensAcquisition.ps1` を付けて保存します。
-    ```
+
+    ```powershell
     param (
         [Parameter(Mandatory=$true)][string]$clientId,
         [Parameter(Mandatory=$true)][string]$secret,
@@ -139,55 +136,53 @@ SIEM システムにアラートをフェッチするには、次の手順を実
     $token = $Response.access_token
     $refreshToken= $Response.refresh_token
 
-    Write-Host " -----------------------------------  TOKEN ---------------------------------- "
+    Write-Host " ----------------------------------- TOKEN ---------------------------------- "
     Write-Host $token
 
-    Write-Host " -----------------------------------  REFRESH TOKEN ---------------------------------- "
-    Write-Host $refreshToken 
+    Write-Host " ----------------------------------- REFRESH TOKEN ---------------------------------- "
+    Write-Host $refreshToken
     ```
 4. フォルダーで管理者特権の PowerShell コマンド プロンプトを開 `MsspTokensAcquisition` きます。
 
 5. 次のコマンドを実行します。`Set-ExecutionPolicy -ExecutionPolicy Bypass`
 
 6. 次のコマンドを入力します。 `.\MsspTokensAcquisition.ps1 -clientId <client_id> -secret <app_key> -tenantId <customer_tenant_id>`
- 
+
     - 前 \<client_id\> の手順 **で取得したアプリケーション (クライアント) ID** に置き換えてください。
     - 前 \<app_key\> の手順 **で作成した** クライアント シークレットに置き換える。
-    - 顧客 \<customer_tenant_id\> のテナント ID **に置き換える**。 
- 
+    - 顧客 \<customer_tenant_id\> のテナント ID **に置き換える**。
 
 7. 資格情報と同意を入力する必要があります。 ページ リダイレクトを無視します。
 
-8. PowerShell ウィンドウで、アクセス トークンと更新トークンを受け取ります。 SIEM コネクタを構成するには、更新トークンを保存します。 
- 
+8. PowerShell ウィンドウで、アクセス トークンと更新トークンを受け取ります。 SIEM コネクタを構成するには、更新トークンを保存します。
+
 ### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>手順 3: アプリケーションのインストールを許可Microsoft 365 Defender
+
 アプリで作成したアプリケーションを許可するMicrosoft 365 Defender。
- 
+
 アプリケーションを許可するには、ポータル システム設定の **管理** 権限が必要です。 それ以外の場合は、アプリケーションを許可する顧客を要求する必要があります。
 
 1. に移動 `https://security.microsoft.com?tid=<customer_tenant_id>` します ( \<customer_tenant_id\> 顧客のテナント ID に置き換えてください。
 
-2. [**エンドポイント 設定**  >    >  **SIEM] を**  >  **クリックします**。 
+2. [**エンドポイント 設定** \>  \> **SIEM] を** \> **クリックします**。
 
 3. **[MSSP] タブを選択** します。
 
 4. 最初の **手順とテナント ID** からアプリケーション ID を **入力します**。
 
-5. [アプリケーション **の承認] をクリックします**。 
+5. [アプリケーション **の承認] をクリックします**。
 
- 
 これで、SIEM に関連する構成ファイルをダウンロードし、Defender for Endpoint API に接続できます。 詳細については、「SIEM ツールにアラート [をプルする」を参照してください](configure-siem.md)。
- 
 
 - ArcSight 構成ファイル / Splunk Authentication Properties ファイルで、シークレット値を設定してアプリケーション キーを手動で記述します。
 - ポータルで更新トークンを取得する代わりに、前の手順のスクリプトを使用して更新トークンを取得 (または他の方法で取得) します。
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>API を使用して MSSP 顧客のテナントからアラートを取得する
- 
+
 REST API を使用してアラートをフェッチする方法については、「REST API を使用 [してアラートをプルする」を参照してください](pull-alerts-using-rest-api.md)。
 
-
 ## <a name="see-also"></a>関連項目
+
 - [ポータルへの MSSP アクセスを許可する](grant-mssp-access.md)
 - [MSSP カスタマー ポータルにアクセスする](access-mssp-portal.md)
 - [アラート通知を構成する](configure-mssp-notifications.md)

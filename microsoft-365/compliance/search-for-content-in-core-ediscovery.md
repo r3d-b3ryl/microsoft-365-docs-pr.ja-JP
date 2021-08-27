@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コア電子情報開示ケースに関連する可能性のあるコンテンツを検索します。
-ms.openlocfilehash: b71dfdbdee715c41c5aa2f5f1fe235c8a42412c01184a54172cf8846c3e48a14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1637d5dafcf088dd2b069cda5e951aef3a2fcd1e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871415"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569023"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>コア電子情報開示ケース内のコンテンツを検索する
 
@@ -38,7 +38,7 @@ ms.locfileid: "53871415"
 
 4. ケースの **ホーム** ページで、[検索] **タブを** クリックし、[新しい検索] **をクリックします**。
 
-   ![[新しい検索] をクリックしてコア電子情報開示検索を作成する](../media/CoreeDiscoverySearch1.png)
+   ![[新しい検索] をクリックして、コア電子情報開示検索を作成します。](../media/CoreeDiscoverySearch1.png)
 
    > [!NOTE]
    > [**ID のリストで検索**] オプションでは、Exchange ID のリストを使用して特定のメール メッセージやその他のメールボックス アイテムを検索できます。 ID リスト検索を作成するには、検索する特定のメールボックス アイテムを識別するコンマ区切り値 (CSV) ファイルを送信します。 手順については、「[ID リスト検索の CSV ファイルを準備する](csv-file-for-an-id-list-content-search.md)」を参照してください。
@@ -47,7 +47,7 @@ ms.locfileid: "53871415"
 
 6. 検索するコンテンツの [**場所**] ページで、検索するコンテンツの場所を選択します。 メールボックスとパブリック フォルダーを検索できます。
 
-    ![ホールドにするコンテンツの場所を選択する](../media/ContentSearchLocations.png)
+    ![保留に設定するコンテンツの場所を選択します。](../media/ContentSearchLocations.png)
   
    1. **Exchange メールボックス**: トグルを **On** に設定し、[**ユーザー、グループ、またはチーム** の選択] をクリックして、ホールドするメールボックスを指定します。 検索ボックスを使用して、ユーザーのメールボックス、および配布グループ (グループ メンバーのメールボックスにホールドを適用するため) を検索し、ホールドを適用します。 Microsoft チームに関連付けられているメールボックス (チャネル メッセージの場合)、Office 365 グループ、および Yammer グループを検索することもできます。 メールボックスに保存されているアプリケーション データの詳細については、[「eDiscovery のメールボックスに保存されているコンテンツ」](what-is-stored-in-exo-mailbox.md)を参照してください。
 
@@ -59,7 +59,7 @@ ms.locfileid: "53871415"
 
 7. [**検索条件の定義**] ページで、キーワード クエリを入力して作成し、必要に応じて検索クエリに条件を追加します。
 
-   ![検索クエリの構成](../media/ContentSearchQuery.png)
+   ![検索クエリを構成します。](../media/ContentSearchQuery.png)
 
    1. キーワード、送信日や受信日などのメッセージ プロパティ、またはファイル名やドキュメントの最終更新日などのドキュメント プロパティを指定できます。 **AND**、**OR**、**NOT**、**NEAR** などのブール演算子を使用するより複雑なクエリを使用できます。 このキーワード ボックスを空のままにすると、指定したコンテンツの場所にあるすべてのコンテンツが検索結果に入ります。 詳細については、「[電子情報開示のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
 

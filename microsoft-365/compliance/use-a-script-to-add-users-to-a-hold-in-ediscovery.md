@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: スクリプトを実行して、& OneDrive for Businessの電子情報開示ケースに関連付けられた新しい保留リストにメールボックスを追加するMicrosoft 365 コンプライアンス センター。
-ms.openlocfilehash: 058dae2fdffa67492b611ebe8fc9f1bdb5254706
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: a521e96cd81649acf032f7c6a79473a7507e3ba2
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508240"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599017"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>スクリプトを使用してコア電子情報開示ケースの保留リストにユーザーを追加する
 
@@ -201,7 +201,7 @@ Write-Host "Getting the URL for each user's OneDrive for Business site." -foregr
 $AdminUrl = "https://$mySiteDomain-admin.sharepoint.com"
 $mySiteUrlRoot = "https://$mySiteDomain-my.sharepoint.com"
 $urls = @()
-foreach($emailAddress in $emailAddresses)
+foreach($emailAddress in $finallist)
 {
 try
 {

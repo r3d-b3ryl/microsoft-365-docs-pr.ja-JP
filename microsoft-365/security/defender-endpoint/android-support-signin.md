@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 38f7ff40416835e9908757456520f0a90a745dfd
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: daedf3ebbf88c70cf5b3889a9d7560800ad16f5f
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508276"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595246"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -44,7 +44,7 @@ ms.locfileid: "58508276"
 
 **サインインに失敗しました: 予期しない***エラーが発生した場合は、後で試してください*
 
-![サインインに失敗したエラーのイメージ 予期しないエラー](images/f9c3bad127d636c1f150d79814f35d4c.png)
+![サインインに失敗したエラーのイメージ 予期しないエラー。](images/f9c3bad127d636c1f150d79814f35d4c.png)
 
 **メッセージ：**
 
@@ -62,7 +62,7 @@ Google Play ストアから最新バージョン[とMicrosoft Authenticator](htt
 
 **サインインに失敗しました:** *ライセンスが無効です。管理者に問い合わせてください*
 
-![サインインに失敗したイメージは、管理者に問い合わせてください](images/920e433f440fa1d3d298e6a2a43d4811.png)
+![サインインのイメージが失敗しました。管理者に問い合わせてください。](images/920e433f440fa1d3d298e6a2a43d4811.png)
 
 **メッセージ:** *無効なライセンス、管理者に問い合わせてください*
 
@@ -86,7 +86,7 @@ Google Play ストアから最新バージョン[とMicrosoft Authenticator](htt
 
 Android 用 Defender for Endpoint によって検出されるフィッシングや有害な Web の脅威は、一部の Xiaomi デバイスではブロックされません。 次の機能は、これらのデバイスでは機能しません。
 
-![安全でないと報告されたサイトの画像](images/0c04975c74746a5cdb085e1d9386e713.png)
+![安全でないと報告されたサイトの画像。](images/0c04975c74746a5cdb085e1d9386e713.png)
 
 **原因:**
 
@@ -94,7 +94,7 @@ Xiaomi デバイスには、新しいアクセス許可モデルが含まれま�
 
 Xiaomi デバイスのアクセス許可: "バックグラウンドで実行中にポップアップ ウィンドウを表示する"
 
-![ポップアップ設定のイメージ](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
+![ポップアップ設定のイメージ。](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
 
 **解決方法:**
 
@@ -112,7 +112,7 @@ Defender App は、アプリのオンボーディングの一環としてデバ�
 
 **原因:**
 
-Xiomi は Android 11 のバッテリー最適化のアクセス許可を変更しました。 Defender は、バッテリーの最適化を無視するようにこの設定を構成することを許可されません。
+Xiaomi は、Android 11 のバッテリー最適化のアクセス許可を変更しました。 Defender は、バッテリーの最適化を無視するようにこの設定を構成することを許可されません。
 
 **解決方法:**
 

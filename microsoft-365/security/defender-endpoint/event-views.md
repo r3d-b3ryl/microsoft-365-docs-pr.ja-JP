@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7752c5af144ca5b02f05bbdd6632df808cf2f63c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257656"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607219"
 ---
 # <a name="view-attack-surface-reduction-events"></a>攻撃面の減少イベントを表示する
 
@@ -57,10 +57,10 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 
 2. [**イベント ビューアー] と** 入力し、[スタート メニュー ビューアー]**を開きます**。
 
-3. [アクション **の**  >  **インポート] [カスタム ビュー...] を選択します。**
+3. [アクション **の** \> **インポート] [カスタム ビュー...] を選択します。**
 
    > [!div class="mx-imgBorder"]
-   > ![[Even ビューアー] ウィンドウの左側にあるカスタム ビューのインポートを強調表示するアニメーション](images/events-import.gif)
+   > ![[Even ビューアー] ウィンドウの左側にあるカスタム ビューのインポートを強調表示するアニメーション。](images/events-import.gif)
 
 4. 必要なカスタム ビューの XML ファイルを抽出した場所に移動し、選択します。
 
@@ -75,7 +75,7 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 2. 左側のパネルの [アクション] で **、[** カスタム ビューの **作成]を選択します。**
 
    > [!div class="mx-imgBorder"]
-   > ![イベント ビューアー ウィンドウでカスタム ビューの作成オプションを強調表示するアニメーション](images/events-create.gif)
+   > ![イベント ビューアー ウィンドウでカスタム ビューの作成オプションを強調表示するアニメーション。](images/events-create.gif)
 
 3. [XML] タブに移動し、[クエリの手動編集 **] を選択します**。 XML オプションを使用すると、[フィルター] タブを使用してクエリを編集できないという警告が表示されます。 **[はい]** を選択します。
 
@@ -146,13 +146,13 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 2. [**アプリケーションとサービス ログ]** > Microsoft > Windows展開し、次の表の [**プロバイダー/** ソース] の下にあるフォルダーに移動します。
 3. サブアイテムをダブルクリックすると、イベントが表示されます。 イベントをスクロールして、探しているイベントを見つける。
 
-   ![イベント ビューアーを使用したアニメーションの表示](images/event-viewer.gif)
+   ![イベント ビューアーを使用して表示されるアニメーション。](images/event-viewer.gif)
 
 <br>
 
 ****
 
-|機能|プロバイダー/ソース|イベント ID|説明|
+|特徴|プロバイダー/ソース|イベント ID|説明|
 |---|---|:---:|---|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|1 |ACG の監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|2 |ACG の実施|
@@ -163,7 +163,7 @@ E5 サブスクリプションを持っている場合は、Windows セキュリ
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|7 |[Block remote images] (リモート イメージのブロック) 監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|8 |[Block remote images] (リモート イメージのブロック) ブロック|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|9 |[Disable win32k system calls] (win32k システム呼び出しの無効化) 監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|10|[Disable win32k system calls] (win32k システム呼び出しの無効化) ブロック|
+|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|10 |[Disable win32k system calls] (win32k システム呼び出しの無効化) ブロック|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|11 |[Code integrity guard] (コードの整合性の保護) 監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|12 |[Code integrity guard] (コードの整合性の保護) ブロック|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|13 |EAF の監査|

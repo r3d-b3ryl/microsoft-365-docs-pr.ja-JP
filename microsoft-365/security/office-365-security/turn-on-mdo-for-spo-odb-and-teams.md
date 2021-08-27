@@ -20,12 +20,12 @@ description: 管理者は、セーフ SharePoint、OneDrive、Microsoft Teams、
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 396a1fa3ee2c6ba4f9ffb75c57513bb97f94f93dee677372b930eed4d3ec4b6d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a1020193a49dd7b4871b9b9fec53d21073b03e6
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56808566"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585574"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
@@ -45,7 +45,7 @@ Microsoft Defender for Office 365、SharePoint、OneDrive、Microsoft Teamsフ�
 
 - SharePoint、OneDrive、および Microsoft Teams の添付ファイルを有効にするには、Microsoft 365 Defender ポータルの組織の管理またはセキュリティ管理者の役割グループのメンバーである必要があります。セーフ 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-- SharePoint Online PowerShell を使用して悪意のあるファイルをダウンロードするユーザーを防ぐには、Azure [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) AD のグローバル管理者または[SharePoint 管理者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator)の役割のメンバーである必要があります。
+- SharePoint Online PowerShell を使用して悪意のあるファイルをダウンロードするユーザーを防ぐには、Azure [](/azure/active-directory/roles/permissions-reference#global-administrator) AD のグローバル管理者または[SharePoint 管理者](/azure/active-directory/roles/permissions-reference#sharepoint-administrator)の役割のメンバーである必要があります。
 
 - 組織で監査ログが有効になっているか確認します。 詳細については、「[監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」をご覧ください。
 
@@ -59,7 +59,7 @@ Microsoft Defender for Office 365、SharePoint、OneDrive、Microsoft Teamsフ�
 
 3. 表示される **[グローバル設定**] フライアウトで、[ファイルの保護] セクションSharePoint、OneDrive、Microsoft Teamsします。 
 
-   **SharePoint、OneDrive、** および Microsoft Teams の Office 365 の Defender をオンに切り替え、SharePoint、OneDrive、および Microsoft Teams の セーフ 添付ファイルをオンにします。 ![ ](../../media/scc-toggle-on.png)
+   [Defender を **有効にする] Office 365、SharePoint、OneDrive、Microsoft Teams** トグルを右のトグル オンに ![ 移動します。](../../media/scc-toggle-on.png) をクリックして、セーフ、SharePoint、OneDrive、およびMicrosoft Teams。
 
    完了したら、**[保存]** をクリックします。
 

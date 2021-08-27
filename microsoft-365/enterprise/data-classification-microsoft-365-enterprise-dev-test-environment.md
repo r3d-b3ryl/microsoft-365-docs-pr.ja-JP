@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテスト ラボ ガイドを使用して、エンタープライズ テスト環境のドキュメントに保持ラベルを作成Microsoft 365使用します。
-ms.openlocfilehash: c4527f751881750c5f6427ea085baa9516f0bd73
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: b5cc84a4d8b73b9f7dc3f64934a18b549846ba17
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354310"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552602"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境Microsoft 365データ分類
 
@@ -32,7 +32,7 @@ ms.locfileid: "58354310"
 - [フェーズ 2: 保持ラベルの作成](#phase-2-create-retention-labels)
 - [フェーズ 3: ドキュメントに保持ラベルを適用する](#phase-3-apply-retention-labels-to-documents)
 
-![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。

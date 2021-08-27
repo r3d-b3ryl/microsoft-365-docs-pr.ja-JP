@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: コラボレーション ガバナンス 計画を作成する方法について説明します。
-ms.openlocfilehash: 062648ca2e4eb2c3909b38d376f568df726ac2bef3abb5b82b1e86db879a1887
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cd6da85f43d3dc72ee7b9ccd763872dbccfbeb78
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843985"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585598"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>コラボレーション ガバナンス 計画の作成
 
@@ -117,7 +117,7 @@ Microsoft 365 への投資は、可能なコンテンツとエクスペリエン
 
 ### <a name="define-roles-and-responsibilities"></a>役割と責任を定義する
 
-ガバナンス チームに加 Microsoft 365えて、他にも重要な役割やチームがいくつかあります。 一部の役割は、同じユーザーによって結合または入力される場合と、すべての組織に適していない場合があります。 ほとんどの組織では、Microsoft 365全体のエグゼクティブ スポンサーを持ち、一部の組織には、Microsoft 365 全体またはイントラネット用の運営委員会またはチームがあります。 [詳細については、「管理者の役割とアクセス許可の概要」を参照Microsoft 365。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+ガバナンス チームに加 Microsoft 365えて、他にも重要な役割やチームがいくつかあります。 一部の役割は、同じユーザーによって結合または入力される場合と、すべての組織に適していない場合があります。 ほとんどの組織では、Microsoft 365全体のエグゼクティブ スポンサーを持ち、一部の組織には、Microsoft 365 全体またはイントラネット用の運営委員会またはチームがあります。 [詳細については、「管理者の役割とアクセス許可の概要」を参照Microsoft 365。](../admin/add-users/admin-roles-page.md)
 
 ### <a name="revisit-as-business-and-technology-changes"></a>ビジネスとテクノロジの変更に応じて再訪する
 
@@ -133,7 +133,7 @@ Microsoft 365 への投資は、可能なコンテンツとエクスペリエン
 
 - 組織用にMicrosoft 365チャンピオン プログラムを作成できますか? さらに、世界中の[Microsoft 365](https://aka.ms/O365Champions)チャンピオン プログラムに参加して、独自のチャンピオン プログラムのアイデアとアプローチを取得し、Microsoft 内および周辺の同じ考え方の人々や思考リーダーと接続する方法を検討してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [コラボレーション ガバナンス計画のステップ バイ ステップ](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

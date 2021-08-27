@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: SharePoint Syntex での画像のタグ付けに関する詳細
-ms.openlocfilehash: b125193b057d506bd18e2bdedcc0fafcefc41f4eae9bd8d73228d1e005bca544
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62055f8cb6b01fcd285aa01bb5934963b13fae6b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891688"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552902"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>SharePoint Syntex での画像のタグ付け
 
@@ -54,4 +54,4 @@ SharePoint Syntex での画像のタグ付けを使って、ユーザーは、�
 
 6. **[保存]** をクリックします。
 
-    ![画像のタグ付けコントロールのスクリーンショット](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
+    ![画像タグ付けコントロールのスクリーンショット。](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)

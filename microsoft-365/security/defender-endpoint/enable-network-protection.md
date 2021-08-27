@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1ba3c958c4a532976c8cb3c878ea4d116cf9a94c
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 480500484948beb1423cea0640c8c01a00252190
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507868"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594188"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -44,7 +44,7 @@ ms.locfileid: "58507868"
 
 2. サイド **メニュー HKEY_LOCAL_MACHINE** を選択する
 
-3. 入れ子になったメニューから **ソフトウェア** ポリシーへの移動 Microsoft  >  **Windows Defender Windows Defender**  >    >    >  **Exploit Guard**  >  **ネットワーク保護**
+3. 入れ子になったメニューから **ソフトウェア** ポリシーへの移動 Microsoft \> **Windows Defender Windows Defender** \>  \>  \> **Exploit Guard** \> **ネットワーク保護**
 
 4. デバイス上のネットワーク保護の現在の状態を表示するには **、[EnableNetworkProtection]** を選択します。
 
@@ -52,7 +52,7 @@ ms.locfileid: "58507868"
    - 1、または **On**
    - 2、または **監査** モード
 
-    ![ネットワーク保護レジストリ キー](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
+    ![ネットワーク保護レジストリ キー。](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
 
 ## <a name="enable-network-protection"></a>ネットワーク保護を有効にする
 
@@ -90,7 +90,7 @@ ms.locfileid: "58507868"
 
 2. エンドポイント保護構成プロファイル [の作成または編集](/mem/intune/protect/endpoint-protection-configure)
 
-3. [**プロファイル フロー設定** 構成] で、[ネットワーク フィルターネットワークMicrosoft Defender Exploit Guard有効または監査のみ]  >    >    >  に **移動します。**
+3. [**プロファイル フロー設定** 構成] で、[ネットワーク フィルターネットワークMicrosoft Defender Exploit Guard有効または監査のみ] \>  \>  \> に **移動します。**
 
 ### <a name="group-policy"></a>グループ ポリシー
 
@@ -104,7 +104,7 @@ ms.locfileid: "58507868"
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して **、Exploit Guard ネットワークWindows保護**  >  **Microsoft Defender ウイルス対策Windows Defender**  >  **コンポーネント**  >  **を展開します**。
+3. ツリーを展開して **、Exploit Guard ネットワークWindows保護** \> **Microsoft Defender ウイルス対策Windows Defender** \> **コンポーネント** \> **を展開します**。
 
    > [!NOTE]
    > 以前のバージョンの Windowsでは、グループ ポリシー パスは "Windows Defender ウイルス対策" ではなく "Microsoft Defender ウイルス対策" と表示Microsoft Defender ウイルス対策。

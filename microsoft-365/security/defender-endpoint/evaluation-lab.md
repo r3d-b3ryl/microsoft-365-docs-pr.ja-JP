@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6392a73541c8813179527d0da4ade57fa74794153f0d809fcb3fc667b16318dd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c1a51ec4d2e17275379eb40521f506e4a83d19ef
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829616"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595414"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評価ラボ
 
@@ -48,7 +48,7 @@ Windows 10 または Windows Server 2019 デバイスを追加して、最新の
 
 また、脅威シミュレーターをインストールできます。 Defender for Endpoint は、業界をリードする脅威シミュレーション プラットフォームと提携し、ポータルから出ることなく Defender for Endpoint の機能をテストするのに役立ちます。
 
- お好みのシミュレーターをインストールし、評価ラボ内でシナリオを実行し、プラットフォームのパフォーマンスを即座に確認できます。 また、さまざまなシミュレーションにアクセスして、シミュレーション カタログから実行できます。
+お好みのシミュレーターをインストールし、評価ラボ内でシナリオを実行し、プラットフォームのパフォーマンスを即座に確認できます。 また、さまざまなシミュレーションにアクセスして、シミュレーション カタログから実行できます。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -81,24 +81,24 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 ## <a name="setup-the-evaluation-lab"></a>評価ラボのセットアップ
 
-1. ナビゲーション ウィンドウで、[評価] &**評価ラボ]** を選択し、[セットアップ  >  ラボ]**を選択します**。
+1. ナビゲーション ウィンドウで、[評価] &**評価ラボ]** を選択し、[セットアップ \> ラボ]**を選択します**。
 
-    :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="評価ラボのウェルカム ページのイメージ":::
+    :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="評価ラボのウェルカム ページのイメージ。":::
 
 2. 評価のニーズに応じて、より長い期間、またはより短い期間のデバイスが少ない環境をセットアップできます。 好みのラボ構成を選択し、[次へ] を **選択します**。
 
-    ![ラボ構成オプションのイメージ](images/lab-creation-page.png)
+    ![ラボ構成オプションのイメージ。](images/lab-creation-page.png)
 
 3. (省略可能)ラボに脅威シミュレーターをインストールできます。
 
-    ![インストール シミュレーター エージェントのイメージ](images/install-agent.png)
+    ![インストール シミュレーター エージェントのイメージ。](images/install-agent.png)
 
-    >[!IMPORTANT]
-    >最初に、条項と情報共有に関する声明に同意し、同意する必要があります。
+   > [!IMPORTANT]
+   > 最初に、条項と情報共有に関する声明に同意し、同意する必要があります。
 
 4. 使用する脅威シミュレーション エージェントを選択し、詳細を入力します。 また、後で脅威シミュレーターをインストールすることもできます。 ラボのセットアップ中に脅威シミュレーション エージェントをインストールする場合は、追加するデバイスに脅威シミュレーション エージェントを簡単にインストールできます。
 
-    ![概要ページの画像](images/lab-setup-summary.png)
+    ![概要ページのイメージ。](images/lab-setup-summary.png)
 
 5. 概要を確認し、[セットアップ ラボ] **を選択します**。
 
@@ -137,26 +137,26 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 2. 追加するデバイスの種類を選択します。 サーバー 2019 にWindows 10またはWindows選択できます。
 
-    :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="デバイス オプションを使用したラボセットアップ":::
+    :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="デバイス オプションを使用したラボセットアップ。":::
 
-    > [!NOTE]
-    > デバイスの作成プロセスで問題が発生した場合は、通知が送信され、新しい要求を送信する必要があります。 デバイスの作成に失敗した場合は、許可された全体的なクォータに対してカウントされません。
+   > [!NOTE]
+   > デバイスの作成プロセスで問題が発生した場合は、通知が送信され、新しい要求を送信する必要があります。 デバイスの作成に失敗した場合は、許可された全体的なクォータに対してカウントされません。
 
 3. 接続の詳細が表示されます。 [ **コピー] を** 選択して、デバイスのパスワードを保存します。
 
-    > [!NOTE]
-    > パスワードは 1 回だけ表示されます。 後で使用するために必ず保存してください。
+   > [!NOTE]
+   > パスワードは 1 回だけ表示されます。 後で使用するために必ず保存してください。
 
-    :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="接続の詳細で追加されたデバイスのイメージ":::
+    :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="接続の詳細と一緒に追加されたデバイスのイメージ。":::
 
 4. デバイスのセットアップが開始されます。 これには、最大で約 30 分かかる場合があります。
 
 5. [デバイス] タブを選択して、テスト デバイスの状態、リスクと露出レベル、シミュレーターのインストールの状態 **を確認** します。
 
-    ![[デバイスのイメージ] タブ](images/machines-tab.png)
+    ![[デバイス] タブのイメージ。](images/machines-tab.png)
 
-    > [!TIP]
-    > [ **シミュレーターの状態]** 列で、情報アイコンにカーソルを合わせると、エージェントのインストール状態を確認できます。
+   > [!TIP]
+   > [ **シミュレーターの状態]** 列で、情報アイコンにカーソルを合わせると、エージェントのインストール状態を確認できます。
 
 ## <a name="request-for-more-devices"></a>その他のデバイスの要求
 
@@ -164,7 +164,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 1. 評価ラボ ダッシュボードで、[その他のデバイス **を要求する] を選択します**。
 
-   ![より多くのデバイスに対する要求のイメージ](images/request-more-devices.png)
+   ![より多くのデバイスに対する要求のイメージ。](images/request-more-devices.png)
 
 2. 構成を選択します。
 3. 要求を送信します。
@@ -200,19 +200,22 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 1. Connectを選択して、デバイスにアクセスし、攻撃シミュレーション **をConnect。**
 
-    ![テスト デバイスの接続ボタンのイメージ](images/test-machine-table.png)
+    ![テスト デバイスの接続ボタンのイメージ。](images/test-machine-table.png)
 
 2. RDP ファイルを保存し、[開く] を選択して **起動Connect。**
 
-    ![リモート デスクトップ接続のイメージ](images/remote-connection.png)
+    ![リモート デスクトップ接続のイメージ。](images/remote-connection.png)
 
-    >[!NOTE]
-    >初期セットアップ中に保存されたパスワードのコピーが存在しない場合は、メニューから [パスワードのリセット] を選択してパスワードをリセットできます。[パスワードのリセットの ![ イメージ]](images/reset-password-test-machine.png)<br>
+    > [!NOTE]
+    > 初期セットアップ中にパスワードのコピーを保存しない場合は、メニューから [パスワードのリセット] を選択して **パスワードをリセット** できます。
+    >
+    > ![パスワードのリセットのイメージ。](images/reset-password-test-machine.png)
+    >
     > デバイスは状態を "パスワードリセットの実行" に変更し、数分で新しいパスワードが表示されます。
 
 3. デバイスの作成手順中に表示されたパスワードを入力します。
 
-   ![資格情報を入力するウィンドウのイメージ](images/enter-password.png)
+   ![資格情報を入力するウィンドウのイメージ。](images/enter-password.png)
 
 4. デバイスで Do-it-yourself 攻撃シミュレーションを実行します。
 
@@ -233,13 +236,13 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 2. 脅威シミュレーターを選択します。
 
-    ![脅威シミュレーターの選択のイメージ](images/select-simulator.png)
+    ![脅威シミュレーターの選択のイメージ。](images/select-simulator.png)
 
 3. シミュレーションを選択するか、シミュレーション ギャラリーを参照して使用可能なシミュレーションを参照します。
 
     シミュレーション ギャラリーは、次の場所から取得できます。
     - シミュレーションの概要タイルの主 **な** 評価ダッシュボードまたは
-    - ナビゲーション ウィンドウの [評価] と **[チュートリアル]** から [シミュレーション] &をクリックし、[シミュレーション  >  カタログ]**を選択します**。
+    - ナビゲーション ウィンドウの [評価] と **[チュートリアル]** から [シミュレーション] &をクリックし、[シミュレーション \> カタログ]**を選択します**。
 
 4. シミュレーションを実行するデバイスを選択します。
 
@@ -247,7 +250,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 6. [シミュレーション] タブを選択して、シミュレーションの進行状況 **を表示** します。シミュレーションの状態、アクティブなアラート、その他の詳細を表示します。
 
-    ![[シミュレーションのイメージ] タブ](images/simulations-tab.png)
+    ![[シミュレーション] タブのイメージ。](images/simulations-tab.png)
 
 シミュレーションを実行した後、ラボの進行状況バーを表示し **、Microsoft Defender for Endpoint** を調べ、自動調査と修復をトリガーしてください。 機能によって収集および分析された証拠を確認します。
 
@@ -257,27 +260,27 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 Microsoft Defender for Endpoint は、さまざまな脅威シミュレーション プラットフォームと提携し、ポータル内からプラットフォームの機能を簡単にテストできます。
 
-メニューから [シミュレーションとチュートリアル]**シミュレーション** カタログに移動して、使用可能なすべての  >  **シミュレーション** を表示します。
+メニューから [シミュレーションとチュートリアル]  **シミュレーション** カタログに移動して、使用可能なすべての \> **シミュレーション**  を表示します。
 
 サポートされているサードパーティの脅威シミュレーション エージェントの一覧が一覧表示され、特定の種類のシミュレーションと詳細な説明がカタログに記載されています。
 
 カタログから任意の使用可能なシミュレーションを簡単に実行できます。
 
-![シミュレーション カタログのイメージ](images/simulations-catalog.png)
+![シミュレーション カタログのイメージ。](images/simulations-catalog.png)
 
 各シミュレーションには、攻撃シナリオの詳細な説明と、使用する MITRE 攻撃手法や実行する高度な検索クエリのサンプルなどの参照が付属しています。
 
 **例:**
 
-![シミュレーションの説明の詳細の画像1](images/simulation-details-aiq.png)
+![シミュレーションの説明の詳細 1 のイメージ。](images/simulation-details-aiq.png)
 
-![シミュレーションの説明の詳細の画像2](images/simulation-details-sb.png)
+![シミュレーションの説明の詳細の画像 2.](images/simulation-details-sb.png)
 
 ## <a name="evaluation-report"></a>評価レポート
 
 ラボ レポートは、デバイスで実施されたシミュレーションの結果を要約します。
 
-![評価レポートのイメージ](images/eval-report.png)
+![評価レポートのイメージ。](images/eval-report.png)
 
 一目でわかると、次の情報をすばやく確認できます。
 
@@ -294,4 +297,4 @@ Microsoft Defender for Endpoint は、さまざまな脅威シミュレーショ
 
 [フィードバックの提供] を選択して、ご意見 **をお寄せください**。
 
-![フィードバックを提供するイメージ](images/send-us-feedback-eval-lab.png)
+![フィードバックを提供するイメージ。](images/send-us-feedback-eval-lab.png)

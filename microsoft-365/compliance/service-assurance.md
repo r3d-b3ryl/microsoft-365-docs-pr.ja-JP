@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: サードパーティの監査をダウンロードし、Microsoft が顧客データを安全に保つ方法を確認し、OFFICE 365 を使用するときに ISO、HIPAA、FINRA、および FedRAMP に準拠する方法を知っています。
-ms.openlocfilehash: 6d0c80389364279425e8539fd9c065d34776692e9e4d189cb2105e0e078027ef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a6e6de646df2048d880ce099a90c793d11aaff89
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841599"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568975"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのサービス アシュアランス
 
@@ -73,7 +73,7 @@ ms.locfileid: "53841599"
   
 - **ドキュメントを信頼して**、次のスクリーン ショットに示Office 365方法に関する情報を表示します。 
     
-    ![[サービスアシュアランス] ページを表示する: Microsoft が提供する信頼ドキュメント](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![[サービスアシュアランス] ページを表示します。Microsoft が提供するドキュメントを信頼します。](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - **次のスクリーン** ショットに示すように、Office 365コントロールがセキュリティ、コンプライアンス、およびプライバシー要件を満たす方法に関する情報を表示する監査されたコントロール。 
     
@@ -84,7 +84,7 @@ ms.locfileid: "53841599"
 > [!NOTE]
 > サービス アシュアランス レポートとドキュメントは、発行後、または新しいバージョンのドキュメントが利用可能になるまで、少なくとも 12 か月間ダウンロードできます。 
   
-|**[サービスアシュアランス] ページ**|**利用可能なコンテンツ**|**Description**|
+|**[サービスアシュアランス] ページ**|**利用可能なコンテンツ**|**説明**|
 |:-----|:-----|:-----|
 |コンプライアンス レポート  <br/> | FedRamp  <br/>  GRC の評価  <br/>  ISO  <br/>  SOC/SSAE  <br/> |サービス コンプライアンス レポートを使用して、サービス配信操作のサード パーティの独立した監査者が行う監査評価Office 365確認します。  <br/> |
 |信頼性関連ドキュメント  <br/> | FAQ とホワイト ペーパー  <br/>  リスク管理レポート  <br/> |ホワイト ペーパー、FAQ、年末レポート、その他の Microsoft Confidential リソースを使用して、レビュー/リスク評価に関する秘密保持契約の下で利用できます。  <br/> |

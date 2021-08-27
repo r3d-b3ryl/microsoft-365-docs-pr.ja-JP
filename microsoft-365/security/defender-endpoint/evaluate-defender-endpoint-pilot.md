@@ -21,19 +21,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 94e1751c792d6762230d7e064fb1b2fe9fa73f149adc6190110ce672988e2e0d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f41739a1f48ff73b8acd1a365a34d6a721b7151
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898481"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599335"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-mde-through-simulated-attacks"></a>シミュレートされた攻撃を通じて Microsoft Defender for Endpoint (MDE) を体験する
 
->[!TIP]
+> [!TIP]
 >
->- Microsoft Defender for Endpoint の最新機能拡張: Defender for Endpoint の [新機能について説明します](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)。
->- Defender for Endpoint は、最近の MITRE 評価で業界をリードする光学機能と検出機能を実証しました。 詳細については、「[MITRE ATT&CK ベース評価の分析](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)」を参照してください。
+> - Microsoft Defender for Endpoint の最新機能拡張: Defender for Endpoint の [新機能について説明します](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)。
+> - Defender for Endpoint は、最近の MITRE 評価で業界をリードする光学機能と検出機能を実証しました。 詳細については、「[MITRE ATT&CK ベース評価の分析](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)」を参照してください。
 
 サービスに複数のデバイスをオンボードする前に、Defender for Endpoint を体験する必要がある場合があります。 これを行うには、いくつかのテスト デバイスで制御攻撃シミュレーションを実行できます。 シミュレートされた攻撃を実行した後、Defender for Endpoint が悪意のあるアクティビティを表面化する方法を確認し、効率的な対応を可能にする方法を確認できます。
 
@@ -45,7 +45,7 @@ ms.locfileid: "53898481"
 
 ## <a name="run-a-simulation"></a>シミュレーションの実行
 
-1. [**ヘルプ**  >  **シミュレーション] &で**、シミュレートする利用可能な攻撃シナリオを選択します。
+1. [ **ヘルプ** \> **シミュレーション] &で**、シミュレートする利用可能な攻撃シナリオを選択します。
 
    - **シナリオ 1: ドキュメントドロップバックドア** - ソーシャルエンジニアリングされたルアー ドキュメントの配信をシミュレートします。 このドキュメントは、攻撃者に制御を与える特別に細工されたバックドアを起動します。
 
@@ -55,13 +55,12 @@ ms.locfileid: "53898481"
 
 2. 選択したシナリオで提供される対応するチュートリアル ドキュメントをダウンロードして読み取る。
 
-3. シミュレーション ファイルをダウンロードするか、チュートリアルのヘルプ シミュレーションに移動してシミュレーション  >  **スクリプト&します**。 テスト デバイスでファイルまたはスクリプトをダウンロードすることもできますが、必須ではありません。
+3. シミュレーション ファイルをダウンロードするか、チュートリアルのヘルプ シミュレーションに移動してシミュレーション \> **スクリプト&します**。 テスト デバイスでファイルまたはスクリプトをダウンロードすることもできますが、必須ではありません。
 
 4. チュートリアル ドキュメントの指示に従って、テスト デバイスでシミュレーション ファイルまたはスクリプトを実行します。
 
 > [!NOTE]
 > シミュレーション ファイルまたはスクリプトは攻撃アクティビティを模倣しますが、実際には良性であり、テスト デバイスに害を及ぼしたり、危険にさらしたりしません。
->
 
 ## <a name="alternate-topic-text"></a>代替トピック テキスト
 
@@ -80,25 +79,27 @@ ms.locfileid: "53898481"
 
 事前に作成されたシミュレーションを探している場合は、"Do It [Yourself" 攻撃シナリオを使用できます](https://securitycenter.windows.com/tutorials)。 これらのスクリプトは安全で文書化され、使いやすいです。 これらのシナリオは、Defender for Endpoint の機能を反映し、調査のエクスペリエンスについて説明します。
 
->[!NOTE]
->テスト デバイスへの接続は RDP を使用して行われます。 ファイアウォールの設定で RDP 接続が許可されている必要があります。
+> [!NOTE]
+> テスト デバイスへの接続は RDP を使用して行われます。 ファイアウォールの設定で RDP 接続が許可されている必要があります。
 
 1. Connectを選択して、デバイスにアクセスし、攻撃シミュレーション **をConnect。**
 
-    ![テスト デバイスの接続ボタンのイメージ](images/test-machine-table.png)
+    ![テスト デバイスの接続ボタンのイメージ。](images/test-machine-table.png)
 
 2. RDP ファイルを保存し、[開く] を選択して **起動Connect。**
 
-    ![リモート デスクトップ接続のイメージ](images/remote-connection.png)
+    ![リモート デスクトップ接続のイメージ。](images/remote-connection.png)
 
-    >[!NOTE]
-    >初期セットアップ中に保存されたパスワードのコピーが存在しない場合は、メニューから [パスワードのリセット] を選択してパスワードをリセットできます。[パスワードのリセットの ![ イメージ]](images/reset-password-test-machine.png)
+    > [!NOTE]
+    > 初期セットアップ中にパスワードのコピーを保存しない場合は、メニューから [パスワードのリセット] を選択して **パスワードをリセット** できます。
+    >
+    > ![パスワードのリセットのイメージ。](images/reset-password-test-machine.png)
     >
     > デバイスは状態を "パスワードリセットの実行" に変更し、数分で新しいパスワードが表示されます。
 
 3. デバイスの作成手順中に表示されたパスワードを入力します。
 
-   ![資格情報を入力するウィンドウのイメージ](images/enter-password.png)
+   ![資格情報を入力するウィンドウのイメージ。](images/enter-password.png)
 
 4. デバイスで Do-it-yourself 攻撃シミュレーションを実行します。
 
@@ -108,24 +109,24 @@ ms.locfileid: "53898481"
 
 サード パーティプラットフォームを使用して脅威シミュレーションを実行すると、ラボ環境の範囲内で Microsoft Defender for Endpoint の機能を評価できます。
 
->[!NOTE]
+> [!NOTE]
+> シミュレーションを実行する前に、次の要件を満たしていることを確認してください。
 >
->シミュレーションを実行する前に、次の要件を満たしていることを確認してください。
-
->- 評価ラボにデバイスを追加する必要があります
->- 脅威シミュレーターは評価ラボにインストールする必要があります
+> - 評価ラボにデバイスを追加する必要があります
+> - 脅威シミュレーターは評価ラボにインストールする必要があります
 
 1. ポータルで [シミュレーションの作成 **] を選択します**。
 
 2. 脅威シミュレーターを選択します。
 
-    ![脅威シミュレーターの選択のイメージ](images/select-simulator.png)
+    ![脅威シミュレーターの選択のイメージ。](images/select-simulator.png)
 
 3. シミュレーションを選択するか、シミュレーション ギャラリーを参照して使用可能なシミュレーションを参照します。
 
-    シミュレーション ギャラリーは、次の場所から取得できます。
-    - シミュレーションの概要タイルの主 **な** 評価ダッシュボードまたは
-    - ナビゲーション ウィンドウの [評価] と **[チュートリアル]** から [シミュレーション] &をクリックし、[シミュレーション  >  カタログ]**を選択します**。
+   シミュレーション ギャラリーは、次の場所から取得できます。
+
+   - シミュレーションの概要タイルの主 **な** 評価ダッシュボードまたは
+   - ナビゲーション ウィンドウの [評価] と **[チュートリアル]** から [シミュレーション] &をクリックし、[シミュレーション \> カタログ]**を選択します**。
 
 4. シミュレーションを実行するデバイスを選択します。
 
@@ -133,8 +134,7 @@ ms.locfileid: "53898481"
 
 6. [シミュレーション] タブを選択して、シミュレーションの進行状況 **を表示** します。シミュレーションの状態、アクティブなアラート、その他の詳細を表示します。
 
-    ![[シミュレーションのイメージ] タブ](images/simulations-tab.png)
-<br>
+    ![[シミュレーション] タブのイメージ。](images/simulations-tab.png)
 
 シミュレーションを実行した後、ラボの進行状況バーを表示し **、Microsoft Defender for Endpoint** を調べ、自動調査と修復をトリガーしてください。 機能によって収集および分析された証拠を確認します。
 

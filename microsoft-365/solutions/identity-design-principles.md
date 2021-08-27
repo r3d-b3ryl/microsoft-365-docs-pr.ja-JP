@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: f61c05608bfb9f3b528cf0a717dbe9effbaf31a5
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: 6d0599d11dd5892b032bda1285b92fbc8a09354b
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58418001"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595164"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>ID とそれ以降の 1 つのアーキテクトの視点
 
@@ -27,7 +27,7 @@ ms.locfileid: "58418001"
 
 ## <a name="about-the-author"></a>筆者について
 
-![Alex Shteynberg 写真](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)
+![Alex Shteynberg 写真。](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)
 
 ニューヨーク Microsoft テクノロジ センターのプリンシパル テクニカル アーキテ [クトです](https://www.microsoft.com/mtc?rtc=1)。 主に大規模な顧客と複雑な要件を扱っています。 私の視点と意見は、これらの相互作用に基づいており、すべての状況に適用されるとは言い得ない。 しかし、私の経験では、最も複雑な課題でお客様を支援できる場合は、すべての顧客を支援できます。
 
@@ -50,7 +50,7 @@ ms.locfileid: "58418001"
 悲しいかな、言語は正確なツールではない。 多くの場合、同じ単語を使用して、異なる概念や異なる単語を意味し、同じ概念を意味します。 以下の図を使用して、いくつかのベースライン用語と "階層モデル" を確立します。
 <br><br>
 
-![テナント、サブスクリプション、サービス、およびデータの図](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)
+![テナント、サブスクリプション、サービス、およびデータの図。](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)
 
 <br>
 
@@ -108,7 +108,7 @@ XYZ SaaS は Just-in-Time (JIT) プロビジョニングをサポートしてい
 
 多くの場合、クライアント認証フローを通じて顧客を見て、誤解を明確にします。 結果は下の図のようになります。これは、そこに行く対話的なプロセスほど良くはない。
 
-![ホワイトボードの会話の例](../media/solutions-architecture-center/identity-beyond-whiteboard-example.png)
+![ホワイトボードの会話の例。](../media/solutions-architecture-center/identity-beyond-whiteboard-example.png)
 
 この種類のホワイトボード図面は、認証要求のフロー内でセキュリティ ポリシーが適用される場所を示しています。 この例では、Active Directory フェデレーション サービス (AD FS) を通じて適用されるポリシーは、最初のサービス要求には適用されますが、それ以降のサービス要求には適用されません。 これは、セキュリティコントロールを可能な限りクラウドに移動する少なくとも 1 つの理由です。
 
@@ -122,7 +122,7 @@ Wikipedia [ごとに、"](https://en.wikipedia.org/wiki/Authorization)承認す�
 
 Azure ADのポリシー エンジンは、条件付き [アクセス ポリシーを使用して実装されます](/azure/active-directory/conditional-access/overview)。 このシステムは、動的な意思決定を行うさまざまな他の脅威検出システムからの情報に依存します。 単純なビューは、次の図のようになります。
 
-![Azure のポリシー エンジンAD](../media/solutions-architecture-center/identity-and-beyond-illustration-3.png)
+![Azure のポリシー エンジンAD。](../media/solutions-architecture-center/identity-and-beyond-illustration-3.png)
 
 これらすべての信号を組み合わせることで、次のような動的ポリシーが可能です。
 
@@ -152,11 +152,11 @@ Azure ADには、詳細 [な監査およびレポート機能](/azure/active-dir
 
 焦らないで下さい！ これは、非推奨Exchange (またはSharePointなど) を意味する意味ではありません。 これは依然としてコア サービスです。 つまり、今はかなり長い間、テクノロジ プロバイダーはユーザー エクスペリエンス (UX) を複数のサービスのコンポーネントに移行しています。 このMicrosoft 365例は、「モダンな添付ファイル」です[](https://support.office.com/article/Attach-files-or-insert-pictures-in-Outlook-email-messages-BDFAFEF5-792A-42B1-9A7B-84512D7DE7FC)。電子メールの添付ファイルは、オンラインまたは電子メールのSharePointにOneDrive for Business。
 
-![ファイルを電子メールに添付する](../media/solutions-architecture-center/modern-attachments.png)
+![メールにファイルを添付する。](../media/solutions-architecture-center/modern-attachments.png)
 
 このクライアントOutlook見て、このエクスペリエンスの一部として"接続" されている多くのサービスを確認Exchange。 これには、Azure AD、Microsoft Search、アプリ、プロファイル、コンプライアンス、およびグループOffice 365含まれます。
 
-![Outlook付きインターフェイス](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
+![Outlook吹き出し付きインターフェイス。](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
 
 今後の機能[Microsoft 流動フレームワーク](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268)プレビューの詳細については、この記事を参照してください。 プレビューで、会話の読み取りと返信をTeamsで直接Outlook。 実際、クライアント[Teams、](https://products.office.com/microsoft-teams/download-app)この戦略のより顕著な例の 1 つです。
 
@@ -203,7 +203,7 @@ Azure ADには、詳細 [な監査およびレポート機能](/azure/active-dir
 
 ### <a name="azure-ad-and-microsoft-365-admin-centers"></a>Azure ADおよびMicrosoft 365管理センター
 
-組み込みの役割の長く成長 [しているリストがあります](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 各役割は、特定のアクションを実行するためにグループ化された役割のアクセス許可の一覧で構成されます。 これらのアクセス許可は、各ロール内の [説明] タブで確認できます。 または、これらのより人間が読み取り可能なバージョンを、Microsoft 365 管理できます。 組み込みロールの定義は変更できません。 一般的に、これらを 3 つのカテゴリにグループ化します。
+組み込みの役割の長く成長 [しているリストがあります](/azure/active-directory/roles/permissions-reference)。 各役割は、特定のアクションを実行するためにグループ化された役割のアクセス許可の一覧で構成されます。 これらのアクセス許可は、各ロール内の [説明] タブで確認できます。 または、これらのより人間が読み取り可能なバージョンを、Microsoft 365 管理できます。 組み込みロールの定義は変更できません。 一般的に、これらを 3 つのカテゴリにグループ化します。
 
 - **グローバル管理者**: この "すべての強力な"[](../enterprise/protect-your-global-administrator-accounts.md)役割は、他のシステムと同様に高度に保護する必要があります。 一般的な推奨事項には、永続的な割り当てなしと Azure AD Privileged Identity Management (PIM) の使用が含まれます。強力な認証。などなど。 興味深いことに、この役割は既定ではすべてのアクセス権を与えるという意味ではないものです。 通常、コンプライアンス アクセスと Azure アクセスについては、後で説明します。 ただし、この役割では、テナント内の他のサービスへのアクセスを常に割り当てできます。
 - **特定のサービス** 管理者: 一部のサービス (Exchange、SharePoint、Power BI など) は、Azure AD から高レベルの管理役割を使用します。 これは、すべてのサービスで一貫しているのではないし、後で説明するサービス固有の役割が多い。
@@ -292,7 +292,7 @@ Office 365監査ログ[が統合されています](../compliance/search-the-aud
 
 高レベルの図:
 
-![セキュリティおよびコンプライアンス プログラムのログ ソースの図](../media/solutions-architecture-center/identity-beyond-illustration-4.png)
+![セキュリティおよびコンプライアンス プログラムのログ ソースの図。](../media/solutions-architecture-center/identity-beyond-illustration-4.png)
 
 上の図は、イベント ハブや Azure Log Analytics にログを送信する組み込Azure Storageを表しています。 一部のシステムには、このアウトオブザボックスがまだ含まれる場合があります。 ただし、これらのログを同じリポジトリに送信する他の方法があります。 たとえば[、「Azure Sentinel を使用してTeams保護する」を参照してください](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761)。
 
@@ -316,10 +316,10 @@ Azure AD、Azure、SaaS の間で高い特権の役割を分離する方法が�
 
 Azure Role-Based アクセス制御 (RBAC) を使用すると、Azure の詳細なアクセス管理が可能になります。 RBAC を使用すると、ユーザーにジョブの実行に必要なアクセス許可を最も少なくすることで、リソースへのアクセスを管理できます。 詳細は、このドキュメントの範囲を外していますが、RBAC の詳細については、「Azure の役割ベースのアクセス制御 [(RBAC) とは」を参照してください。](/azure/role-based-access-control/overview) RBAC は重要ですが、Azure のガバナンスに関する考慮事項の一部に限定されます。 [クラウド導入フレームワークは](/azure/cloud-adoption-framework/govern/) 、詳細を学ぶ上で最適な開始点です。 私は友人の [Andres Ravinet](https://www.linkedin.com/in/andres-ravinet/)が、アプローチを決定するさまざまなコンポーネントを使用して、顧客を一歩一歩進める方法が好きです。 さまざまな要素 (実際の顧客モデルにアクセスするプロセスほど良いではない) のハイレベル ビューは次のようなものです。
 
-![委任された管理用の Azure コンポーネントのハイレベル ビュー](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
+![委任された管理用の Azure コンポーネントのハイレベル ビュー。](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 
 上の図から分かっている通り、他の多くのサービスはデザインの一部として考慮する必要があります [(Azure Policies、Azure](/azure/governance/policy/overview) [Blueprints、Management](/azure/governance/blueprints/overview) [Groups](/azure/governance/management-groups/)など)。
 
-## <a name="conclusion"></a>結論
+## <a name="conclusion"></a>まとめ
 
 短い要約として開始され、予想よりも長く終わりました。  組織の委任モデルの作成に関する詳細な説明に取り組む準備が整いました。  この会話は、お客様と非常に一般的です。 すべてのユーザーに対応するモデルは 1 つはありません。 Microsoft エンジニアリングからいくつかの計画的な改善を待ち、お客様に共通のパターンを文書化します。 その間、Microsoft アカウント チームと一緒に、最寄りの Microsoft テクノロジ センターへの訪問 [を手配できます](https://www.microsoft.com/mtc)。  そこでお会いしましょう!

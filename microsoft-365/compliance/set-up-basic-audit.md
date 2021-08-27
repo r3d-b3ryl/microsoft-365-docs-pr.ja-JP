@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、組織のユーザーと管理者が実行する監査アクティビティの検索を開始できるよう、基本監査を設定する方法について説明します。
-ms.openlocfilehash: 59a1af0946fbfbef6f2a1f5f6b8c3d7be002786239f1665d0ddbff09af254d1e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: caa87a34234597e36949a1a2c47b695a02b5c2b7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871306"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568963"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>[基本監査] を [Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "53871306"
 
 この記事では、基本監査のセットアップに必要な以下の手順について説明します。
 
-![基本監査を設定する手順](../media/BasicAuditingWorkflow.png)
+![基本監査を設定する手順。](../media/BasicAuditingWorkflow.png)
 
 これらの手順には、監査レコードの生成と保持に必要な適切な組織のサブスクリプションとユーザー ライセンスの確保、および監査ログを検索するためのセキュリティ操作、IT、コンプライアンス、法務チームのチーム メンバーへのアクセス許可の割り当てが含まれます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "53871306"
 
 次のスクリーンショットは、管理センターの組織の管理役割グループに割り当てられた 2 つの監査Exchange示しています。
 
-![グループ内の役割グループに割り当てられたExchange Online](../media/EACAuditRoles.png)
+![グループ内の役割グループに割り当てられたExchange Online。](../media/EACAuditRoles.png)
 
 ## <a name="step-3-search-the-audit-log"></a>手順 3: 監査ログを検索する
 
@@ -64,7 +64,7 @@ ms.locfileid: "53871306"
 
 3. [監査 **] ページ** で、[検索] タブの次の条件を使用して検索 **を構成** します。 
 
-   ![監査ログ検索の構成設定](../media/AuditLogSearchToolMCCCallouts.png)
+   ![監査ログ検索の構成設定。](../media/AuditLogSearchToolMCCCallouts.png)
 
    1. **日付と時刻の範囲** です。 日付と時間の範囲を選択し、その期間内に発生したイベントを表示します。 日付と時刻は、ローカル時刻で表示されます。 既定では、最後の 7 日間が選択されています。
   

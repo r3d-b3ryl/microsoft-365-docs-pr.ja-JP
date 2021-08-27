@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 89b34125e52de59da1254206c2681a650d4e3237
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 07d810f1588de01e4ee53294b39cc6b09b372046
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531548"
+ms.locfileid: "58594530"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Microsoft Defender for Endpoint サポートに連絡する
 
@@ -47,7 +47,7 @@ Defender for Endpoint は最近、サポート プロセスをアップグレー
 
 少なくとも、サービス サポート管理者またはヘルプ **デスク管理者の** 役割が必要です。
 
-アクセス許可を持つ役割の詳細については、「 [セキュリティ管理者のアクセス許可」を参照してください](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions)。 アクションを含むロールは `microsoft.office365.supportTickets/allEntities/allTasks` 、ケースを送信できます。
+アクセス許可を持つ役割の詳細については、「 [セキュリティ管理者のアクセス許可」を参照してください](/azure/active-directory/roles/permissions-reference#security-administrator)。 アクションを含むロールは `microsoft.office365.supportTickets/allEntities/allTasks` 、ケースを送信できます。
 
 管理者ロールの一般的な情報については、「管理者ロール [について」を参照してください](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)。
 
@@ -57,11 +57,11 @@ Defender for Endpoint は最近、サポート プロセスをアップグレー
 
 1. ポータルの右上部にある疑問符をクリックし、[Microsoft サポート] をクリックします。
 
-    :::image type="content" source="../../media/contactsupport.png" alt-text="Microsoft サポート":::
+    :::image type="content" source="../../media/contactsupport.png" alt-text="Microsoft のサポート。":::
 
 2. [ヘルプが必要 **] をクリックします。**  ポータルの右下にあるボタンMicrosoft 365 Defenderします。
 
-    ![[必要なヘルプ] ボタンの画像](images/need-help-option.png)
+    ![[必要なヘルプ] ボタンのイメージ。](images/need-help-option.png)
 
 ウィジェットでは、次の 2 つのオプションが提供されます。
 
@@ -85,7 +85,7 @@ Defender for Endpoint サポートに問い合わせ、サポート チケット
 
 ### <a name="contact-support"></a>サポートに連絡
 
-このオプションは、ヘッドセットのように見えるアイコンをクリックして使用できます。 次に、サポート ケースを提出する次のページが表示されます。
+:::image type="content" source="../../media/contactsupport2.png" alt-text="連絡先のサポート 2."::: </br>
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="連絡先のサポート 2":::
 

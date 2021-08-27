@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f142ecb530e5b6b3a1db7c146feadbe1a02c314ecd115911e531f6cf94ebd778
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 03843707ebffc6798b3d73526a2e95b884047b13
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802540"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594024"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -44,7 +44,7 @@ ms.locfileid: "53802540"
 - 機密情報をより安全に処理する
 - さまざまな Microsoft クラウド サービスで使用する
 
-![EDM ベースの分類](../media/EDMClassification.png)
+![EDM ベースの分類。](../media/EDMClassification.png)
 
 EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日更新できます。また、最大 1 億行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、EDM ベースの分類は、[データ損失防止ポリシー](dlp-learn-about-dlp.md)や [Microsoft Cloud App Security ファイル ポリシー](/cloud-app-security/data-protection-policies) などのポリシーと共に使用できます。
 
@@ -73,7 +73,7 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 
 |ポータル|世界中の GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
 |Microsoft 365 セキュリティ センター|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft 365 コンプライアンス センター|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
@@ -651,7 +651,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 10. **[条件]** セクションの **[+ 条件の追加]** リストで、**[コンテンツに機密情報の種類を含む]** を選択します。
 
-      ![機密情報の種類を含むコンテンツ](../media/edm-dlp-newrule-conditions.png)
+      ![コンテンツには、機密情報の種類が含まれる。](../media/edm-dlp-newrule-conditions.png)
 
 11. ルール パッケージのセットアップ時に作成した機密情報の種類を検索し、**[+ 追加]** を選択します。
     次に、**[完了]** を選択します。

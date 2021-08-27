@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 365 Business Cloud PC のセットアップWindowsトラブルシューティングする方法について説明します。
 ms.date: 08/13/2021
-ms.openlocfilehash: 5602df4eaf140fec86a28252bb88763bd6417f50
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 701d1ce3ae97836d6687050e16a176aad85e2995
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532933"
+ms.locfileid: "58598932"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>365 Windows PC セットアップの問題のトラブルシューティング
 
@@ -49,7 +49,7 @@ ms.locfileid: "58532933"
 
 ## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>手順 2。 365 BPRT Windowsシステム アカウントがアクティブな状態を確認する
 
-Windows 365 ライセンスが組織で初めて割り当てられると **、Windows 365 BPRT 常設** ユーザーというシステム アカウントが Azure AD で自動的に作成されます。 このアカウントを削除したり、アカウントに変更を加え (名前や UPN の変更など) したりしない。 システム アカウントが削除された場合、セットアップは失敗します。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能や組織へのアクセス権を持たなかったりします。 このシステム アカウントを削除する場合は、新しいサポート要求を開き、復元する必要があります。
+Windows 365 ライセンスが組織で初めて割り当てられると **、Windows 365 BPRT 常設** ユーザーというシステム アカウントが Azure AD で自動的に作成されます。 このアカウントを削除したり、アカウントに変更を加え (名前や UPN の変更など) したりしない。 システム アカウントが変更または削除された場合、セットアップは失敗します。 このシステム アカウントは、スムーズなセットアップ プロセスを保証し、Windows 365 Business のスコープサービス機能を超えて、書き込み機能や組織へのアクセス権を持たなかったりします。 このシステム アカウントを削除または変更する場合は、Windows 365 Business ライセンスを持つアカウントを使用して windows365.microsoft.com にログインし、トークンが更新するまで 12 時間待機する必要があります。
 
 Azure Windows 365 BPRT 常設ユーザー システム アカウントがアクティブAD、次の手順を実行します。
 
@@ -57,7 +57,7 @@ Azure Windows 365 BPRT 常設ユーザー システム アカウントがアク�
 2. 左側のナビゲーションの [管理] で **、[ユーザー**] を **選択します**。
 3. 検索ボックスに **「365 BPRT Windowsユーザー**」と入力し、Enter キーを **押します**。
 4. 365 BPRT Windowsシステム アカウントが存在する場合は、手順[3 に進みます。デバイス ベースの MFA がオフになっていることを確認します](#step-3-verify-that-device-based-mfa-is-turned-off)。
-5. 365 BPRT Windowsシステム アカウントが見つからない場合は、左側のナビゲーションで [新しいサポート要求] を選択してサポート チケットを開きます。 サポート チケットを閉じた後、手順 [6 に直接移動します。クラウド PC をリセットします](#step-6-reset-your-cloud-pcs)。
+5. Windows 365 BPRT 常設ユーザー システム アカウントが見つからない場合、または変更が行われた場合は、Windows 365 Business ライセンスが割り当てられているアカウントで windows365.microsoft.com にログインします。 新しいWindows 365 BPRT 常設ユーザーは 12 時間以内に生成されます。 トークンが再生成された後、手順 [6 に直接移動します。クラウド PC をリセットします](#step-6-reset-your-cloud-pcs)。
 
 ## <a name="step-3-verify-that-device-based-mfa-is-turned-off"></a>手順 3. デバイス ベースの MFA がオフになっていることを確認する
 
@@ -124,107 +124,14 @@ Microsoft Intune を既に使用している場合や、Windows 365 クラウド
 > [!IMPORTANT]
 > MDM 管理者ではない場合は、IT 管理者に最初に相談せずに、次のいずれかの手順を使用しません。クラウド PC がセットアップされていない場合にのみ、次の手順に従います。 構成の変更は、管理環境に影響を与える可能性があります。 ヘルプが必要な場合は [、Intune のサポートにお問い合わせください](/mem/get-support)。
 
-#### <a name="option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment"></a>オプション 1。 Azure ADポータルを使用して Intune の自動登録をオフにする
+#### <a name="use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment"></a>Azure ADポータルを使用して Intune の自動登録をオフにする
 
 1. Azure portal で、[概要] ページAzure Active Directory<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">移動</a>します。
 2. 左側のナビゲーションの [管理]**で、[モビリティ**(MDM と **MAM)]****を** 選択し、[次のMicrosoft Intune。
-3. [構成 **] ページの** [MDM ユーザー スコープ] の横にある [なし] **を選択し**、[保存] を **選択します**。
+3. [構成 **] ページ** に、次の 2 つのいずれかを表示します。 サブスクリプションを使用している場合Azure AD Premium MDM ユーザー スコープの横にある **[なし**] を選択し、[保存] を **選択します**。 サブスクリプションがインストールされていない場合は、[無効Azure AD Premiumを選択 **します**。
 4. 左側のナビゲーションの [**管理] で、[モビリティ**(MDM と **MAM)]** を選択し、[登録] をMicrosoft Intuneし、**手順** 3 を繰り返します。
 5. 手順 [6 に進みます。クラウド PC をリセットします](#step-6-reset-your-cloud-pcs)。
 
-#### <a name="option-2-use-microsoft-graph-to-turn-off-automatic-intune-enrollment"></a>オプション 2: Microsoft クライアントを使用Graph Intune の自動登録を無効にする
-
-オプション 1 の指示に従って、Microsoft Azureポータルを使用してモビリティ **(MDM** と MAM) を [構成できない場合。Azure AD](#option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment)ポータルを使用して Intune の自動登録をオフにします。警告が表示されます。"自動 MDM 登録は、一部のサブスクライバー Azure AD Premium表示されます。 この場合は、環境内の MDM Graphをオフにする必要があります。
-
-1. [エクスプローラー] Graphに移動します <a href="https://go.microsoft.com/fwlink/p/?linkid=2170005">https://developer.microsoft.com/graph/graph-explorer</a> 。
-2. **[Graph] で**、[サインインしてエクスプローラー **にサインインGraph、** グローバル管理者アカウントでサインインします。
-3. [要求されたアクセス許可] **ダイアログ ボックスが表示される場合** は、[同意する] を **選択します**。
-4. アカウント名の横にある [その他の **操作]** ボタン (3 つのドット) を選択し、[アクセス許可の選択 **] を選択します**。
-5. [アクセス **許可] ウィンドウで**、[ポリシー] を **展開し****、[Policy.Read.All]** と **[Policy.ReadWrite.MobilityManagement]** を選択し、[同意] を **選択します**。
-6. [要求されたアクセス許可 **] ダイアログ** ボックスが表示される場合は、[組織の代理として同意する] チェック ボックスをオンにし、[同意する] を **選択します**。
-7. [**ポリシー]** を再度展開し **、[Policy.Read.All]** と **Policy.ReadWrite.MobilityManagement** の [状態] 列に[同意済み] と表示され、[アクセス許可] ウィンドウを **閉** じます。 
-8. 最初のドロップダウン リストから **、[GET] を選択します**。
-9. テキスト ボックスに次の文字列を入力し、[クエリの実行] **を選択します**。  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`  
-    このクエリは、組織内のデバイス管理ポリシーの一覧を取得します。
-   応答プレビュー ウィンドウの **結果** は、次のコード スニペットのようになります。
-
-    ```
-    {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#mobilityManagementPolicies",
-        "value": [
-            {
-                "id": "0000000a-0000-0000-c000-000000000000",
-                "appliesTo": "all",
-                "complianceUrl": null,
-                "description": "Device Management Policy for Microsoft Intune",
-                "discoveryUrl": null,
-                "displayName": "Microsoft Intune",
-                "isValid": true,
-                "termsOfUseUrl": null
-            },
-            {
-                "id": "d4ebce55-015a-49b5-a083-c84d1797ae8c",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction",
-                "description": "Device Management Policy for Microsoft Intune Enrollment",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc",
-                "displayName": "Microsoft Intune Enrollment",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            }
-        ]
-    }
-    ```
-10. リストされている `"appliesTo"` ポリシーの **値が none** の場合は、手順 [6 に進みます。クラウド PC をリセットします](#step-6-reset-your-cloud-pcs)。 それ以外の場合は、手順 11 に進みます。
-11. 最初のドロップダウン リストで **、[PATCH] を選択します**。
-12. テキスト ボックスに、次の文字列を入力します。  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/0000000a-0000-0000-c000-000000000000`
-13. [要求本文 **] セクションで** 、次のコード スニペットを入力し、[クエリの実行] **を選択します**。
-    ```
-    {
-        "appliesTo": "none"
-    }
-    ```
-14. テキスト ボックスに、次の文字列を入力します。  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/d4ebce55-015a-49b5-a083-c84d1797ae8c`
-15. [要求 **本文] セクション** で、手順 13 で入力したコード スニペットを残して、[クエリの実行] **を選択します**。
-16. 最初のドロップダウン リストで **、[GET] を選択します**。
-17. [要求本文] セクションの **テキストをクリア** します。
-18. テキスト ボックスに次の文字列を入力し、[クエリの実行] **を選択します**。  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`
-
-    応答ビュー ウィンドウの **結果** は、次のコード スニペットのようになります。
-    ```
-    {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#mobilityManagementPolicies",
-        "value": [
-            {
-                "id": "0000000a-0000-0000-c000-000000000000",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction=Compliance",
-                "description": "Device Management Policy for Microsoft Intune",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc”,
-                "displayName": "Microsoft Intune",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            },
-            {
-                "id": "d4ebce55-015a-49b5-a083-c84d1797ae8c",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction",
-                "description": "Device Management Policy for Microsoft Intune Enrollment",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc",
-                "displayName": "Microsoft Intune Enrollment",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            }
-        ]
-    } 
-    ```
-
-    すべての `"appliesTo"` ポリシーの値が none に設定 **されます**。 このクエリは、組織内のデバイス管理ポリシーのスコープが正常に変更されたことを確認します。
-19. 手順 [6 に進みます。クラウド PC をリセットします](#step-6-reset-your-cloud-pcs)。
 
 ## <a name="step-6-reset-your-cloud-pcs"></a>手順 6. クラウド PC のリセット
 

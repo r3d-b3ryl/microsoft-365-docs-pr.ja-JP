@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bc7e1cc6cb19f19fcd9cdd826a6df591abb388313f6680c74a6393e13decd3be
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 903176b8c163dcd47e1e11c6c5a82c1ff7363540
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884803"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610989"
 ---
 # <a name="get-exposure-score"></a>暴露スコアを取得する
 
@@ -37,7 +37,6 @@ ms.locfileid: "53884803"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 組織の露出スコアを取得します。
@@ -46,10 +45,10 @@ ms.locfileid: "53884803"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」を参照してください。](apis-intro.md)
 
-アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
-:---|:---|:---
-アプリケーション | Score.Read.All | 'Read Threat and Vulnerability Management score'
-委任 (職場または学校のアカウント) | Score.Read | 'Read Threat and Vulnerability Management score'
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
+---|---|---
+アプリケーション|Score.Read.All|'Read Threat and Vulnerability Management score'
+委任 (職場または学校のアカウント)|Score.Read|'Read Threat and Vulnerability Management score'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -60,8 +59,8 @@ GET /api/exposureScore
 ## <a name="request-headers"></a>要求ヘッダー
 
 名前|種類|説明
-:---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
+---|---|---
+Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 
@@ -85,8 +84,8 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
 
 以下は、応答の例です。
 
->[!NOTE]
->ここに示す応答リストは、簡単に切り詰められることがあります。 
+> [!NOTE]
+> ここに示す応答リストは、簡単に切り詰められることがあります。
 
 ```json
 {
@@ -94,7 +93,6 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
     "time": "2019-12-03T07:23:53.280499Z",
     "score": 33.491554051195706
 }
-
 ```
 
 ## <a name="see-also"></a>関連項目

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 61d76d873005c2bdd37fc37f05cf6e520a302647
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7a4176e5b375c32edb1e1fae3ab74f0760f28366
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247966"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595152"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>グローバル ロールを使用Microsoft 365 DefenderアクセスAzure Active Directory管理する
 
@@ -54,7 +54,7 @@ ms.locfileid: "58247966"
 > この記事は、グローバル ロールの管理にのみAzure Active Directoryします。 カスタムの役割ベースのアクセス制御の使用の詳細については、「役割ベースのアクセス制御のカスタム [ロール」を参照してください。](custom-roles.md)
 
 ## <a name="access-to-functionality"></a>機能へのアクセス
-特定の機能へのアクセスは、[Azure AD でのロール](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)によって決まります。 ユーザーまたはユーザー グループに新しい役割を割り当てる必要がある場合は、グローバル管理者にお問い合わせください。
+特定の機能へのアクセスは、[Azure AD でのロール](/azure/active-directory/roles/permissions-reference)によって決まります。 ユーザーまたはユーザー グループに新しい役割を割り当てる必要がある場合は、グローバル管理者にお問い合わせください。
 
 ### <a name="approve-pending-automated-tasks"></a>保留中の自動化タスクを承認する
 「[調査と修復の自動化](m365d-autoir-actions.md)」 は、調査中に見つかったメール、転送ルール、ファイル、持続性機構など、その他の成果物に対処できます。 明示的な承認が必要な保留中のアクションを承認または拒否するには、Microsoft 365 に特定の役割が割り当てられている必要があります。 詳細については、「[アクションセンターの権限](m365d-action-center.md#required-permissions-for-action-center-tasks)」をご覧ください。
@@ -69,6 +69,6 @@ Microsoft Defender for Endpoint Microsoft 365 Defenderアクセス制御 (RBAC) 
 
 ## <a name="related-topics"></a>関連項目
 - [ユーザーの役割ベースのアクセス制御のカスタム ロールMicrosoft 365 Defender](custom-roles.md)
-- [Azure AD ロール](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+- [Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference)
 - [エンドポイント RBAC 用 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Cloud App Security roles](/cloud-app-security/manage-admins)

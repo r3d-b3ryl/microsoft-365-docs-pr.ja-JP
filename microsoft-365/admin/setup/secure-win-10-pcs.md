@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: デバイスをセットアップした後Windows 10 PC をセキュリティで保護する方法についてMicrosoft 365 Business Premium。
-ms.openlocfilehash: 73bfa1c1c2c10daa73e6bd7b024cd8d3dcefc107
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 23b2879b22299ad6c43ae5a8e03ee8060ec26789
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377955"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595528"
 ---
 # <a name="secure-windows-10-computers"></a>Windows 10 コンピューターをセキュリティで保護する
 
@@ -44,7 +44,7 @@ ms.locfileid: "58377955"
 
     ページの上部で、[開始] **を選択します**。
 
-4. [コンピューター **のセキュリティWindows 10] ウィンドウ** で、有効にするオプションを選択します。 設定の詳細については[、「Secure Windows 10 デバイス](/misc/secure-windows-10-devices.md)(記事)\」を参照してください。
+4. [コンピューター **のセキュリティWindows 10] ウィンドウ** で、有効にするオプションを選択します。 設定の詳細については[、「Secure Windows 10 デバイス](../misc/secure-windows-10-devices.md)(記事)\」を参照してください。
 ). 
     
     ほとんどの組織では、ここでのオプションは優れたレベルのセキュリティを提供しますが、組織のセキュリティニーズが複雑な場合は、事前に定義されたセキュリティ基準を使用して、Windows 10 デバイスをセキュリティで保護することもできます。 詳細については、「デバイスの[セキュリティ基準」をWindows 10してください](/mem/intune/protect/security-baselines)。   

@@ -15,12 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 93bc842f64139bce2ce5615868e77b4418e40f5dac7956711b7f5a08e60fcd42
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f68efdcf74317efeb1683b1cc5efcdf1f43fafa
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794020"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599293"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を評価する
 
@@ -33,11 +33,12 @@ ms.locfileid: "53794020"
 
 このガイドを使用して、ウイルス、マルウェアMicrosoft Defender ウイルス対策望ましくない可能性のあるアプリケーションからユーザーを保護する方法を判断します。
 
->[!TIP]
+> [!TIP]
 >Microsoft Defender for Endpoint のデモ Web サイト demo.wd.microsoft.com、次 [の機能が](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 動作し、動作を確認できます。
->- クラウドによる保護
->- 高速学習 (一目でブロックを含む)
->- 望ましくない可能性があるアプリケーションのブロック
+>
+> - クラウドによる保護
+> - 高速学習 (一目でブロックを含む)
+> - 望ましくない可能性があるアプリケーションのブロック
 
 小規模企業と大規模企業の両方で利用できる Microsoft Defender ウイルス対策の重要な次世代保護機能と、ネットワーク全体でマルウェアの検出と保護を強化する方法について説明します。
 
@@ -56,7 +57,7 @@ ms.locfileid: "53794020"
 >
 > ネットワーク全体での実際の展開と監視に関する最新の推奨事項については、「deploy Microsoft Defender ウイルス対策」を[参照Microsoft Defender ウイルス対策。](deploy-manage-report-microsoft-defender-antivirus.md)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender ウイルス対策 (Windows 10)](microsoft-defender-antivirus-in-windows-10.md)
 - [展開Microsoft Defender ウイルス対策](deploy-manage-report-microsoft-defender-antivirus.md)

@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Microsoft 製品とサービスの購入に役立つ提案について説明します。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 10d4d531acc0e4a323cde6d1034c626419a58a4b06b40be76c0d292c7679ac28
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 165843edcd890f4f7fc743a2b4c4181638409ff7
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852033"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599399"
 ---
 # <a name="understand-the-proposal-workflow"></a>提案ワークフローの理解
 
@@ -63,7 +63,7 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 
 - 提案で名前が付けられた人物か\
     または
-- 組織のAzure Active Directory[管理者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)である
+- 組織のAzure Active Directory[管理者](/azure/active-directory/roles/permissions-reference#global-administrator)である
 
 ## <a name="what-is-the-overall-workflow"></a>全体的なワークフローは何ですか?
 
@@ -118,7 +118,7 @@ Microsoft カスタマー 契約 (MCA) を使用すると、組織は Microsoft 
 
 提案には、次の情報が含まれます。
 
-| Section | Description |
+| Section | 説明 |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 組織名 | 提案が準備された組織の名前。 |
 | 有効な有効期限 | 提案オファーの有効期限が切れる日付。 この有効期限を過ぎた場合は、Microsoft 担当者に連絡して、提案に興味を持っているユーザーに連絡してください。 |

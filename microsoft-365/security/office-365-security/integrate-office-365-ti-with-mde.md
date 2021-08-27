@@ -19,12 +19,12 @@ description: Microsoft Defender for Office 365 Microsoft Defender for Endpoint �
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b9bf8bcd15b52ea94cfc823c04f5501e17c2364e708f6375dd3000a376ed800
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed8d433cd997166ed7fd96034f91eb117b9309cd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56770772"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558580"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint とOffice 365 Microsoft Defender を使用する
 
@@ -62,15 +62,15 @@ Microsoft Defender for Endpoint Office 365 Microsoft Defender の統合は、Def
 
 3. [エクスプローラー **] ページ** の画面の右上隅にある **[MDE** ファイル] を選択設定。
 
-3. 表示される **Microsoft Defender for Endpoint** 接続のフライアウトで、[エンドポイント用 Microsoft **Defender** Connect] (トグルオン) をオンにし、[閉じる] ![ ](../../media/scc-toggle-on.png) を **選択します**。
+3. 表示される **Microsoft Defender for Endpoint** 接続のフライアウトで、[エンドポイント用 Microsoft **Defender** Connect] (トグル オン) をオンにし、[閉じる] ![ ](../../media/scc-toggle-on.png) を **選択します**。
 
-    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE 接続":::
+    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE 接続。":::
 
 4. ナビゲーション ウィンドウで、[次へ]**を設定。** [エンドポイント]**設定[** エンドポイント]**を選択します。**
 
 5. 開く **[エンドポイント] ページで** 、[高度な機能] **を選択します**。
 
-6. [脅威インテリジェンス]**接続Office 365下に** スクロールし、オンにします ( ![ トグルオン ](../../media/scc-toggle-on.png) )。
+6. [脅威インテリジェンス] **Office 365まで** 下にスクロールし、オンにします ( ![ トグルオン ](../../media/scc-toggle-on.png) )。
 
    完了したら、[基本設定の保存 **] を選択します**。
 

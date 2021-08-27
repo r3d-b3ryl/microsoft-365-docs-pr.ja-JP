@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '概要: Office サーバーのワークロードのためにサイト間 VPN 接続を使用してクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。'
-ms.openlocfilehash: 70cd5690e687cbf2fab29f18e455fa5878056e6a
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: de8488df370b4ede9fef5ad6698d37bca6c99ac8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354358"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568939"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する
 
@@ -37,7 +37,7 @@ ms.locfileid: "58354358"
 
 Azure の仮想マシンをオンプレミス環境から分離する必要はありません。Azure の仮想マシンをオンプレミスのネットワークリソースに接続するには、クロスプレミス Azure 仮想ネットワークを構成する必要があります。次の図は、Azure において仮想マシンが含まれるクロスプレミスの Azure 仮想ネットワークを展開するために必要なコンポーネントを示しています。
   
-![サイト間 VPN 接続を使用して Microsoft Azure に接続されているオンプレミスのネットワーク](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![サイト間 VPN 接続Microsoft Azure接続されたオンプレミス ネットワーク。](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
  
 この図では、サイト間 VPN 接続によって、2 つのネットワーク (オンプレミス ネットワークと Azure 仮想ネットワーク) が接続されています。このサイト間 VPN 接続は、次のようになります。
 
@@ -145,11 +145,11 @@ Azure Virtual Network のプライベート IP アドレス空間は、仮想ネ
   
 |**アイテム**|**構成要素**|**説明**|**値**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |仮想ネットワーク名  <br/> |Azure 仮想ネットワークに割り当てる名前 (DirSyncNet など)。  <br/> |![線](../media/Common-Images/TableLine.png) |
-|2.  <br/> |仮想ネットワークの場所  <br/> |仮想ネットワークが含まれる Azure データセンター (米国西部など)。  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |VPN デバイスの IP アドレス  <br/> |インターネット上の VPN デバイスのインターフェイスのパブリック IPv4 アドレス。IT 部門に問い合わせてこのアドレスを特定してください。  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |仮想ネットワークのアドレス スペース  <br/> |仮想ネットワークのアドレス スペース (1 つのプライベート アドレス プレフィックスで定義されます)。IT 部門に尋ねてこのアドレス スペースを特定してください。アドレス スペースは、クラスレス ドメイン間ルーティング (CIDR) 形式 (別名、ネットワーク プレフィックス形式) でなければなりません。10.24.64.0/20 などです。  <br/> |![線](../media/Common-Images/TableLine.png) <br/> |
-|5.  <br/> |IPsec 共有キー  <br/> |32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。IT 部門またはセキュリティ部門に尋ねて、このキー値を決定してからそれを安全な場所に格納します。または、「[IPsec 事前共有キーのランダム文字列を作成する](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」をご覧ください。<br/> |![線](../media/Common-Images/TableLine.png) <br/> |
+|1.  <br/> |仮想ネットワーク名  <br/> |Azure 仮想ネットワークに割り当てる名前 (DirSyncNet など)。  <br/> |![line.](../media/Common-Images/TableLine.png) |
+|2.  <br/> |仮想ネットワークの場所  <br/> |仮想ネットワークが含まれる Azure データセンター (米国西部など)。  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |VPN デバイスの IP アドレス  <br/> |インターネット上の VPN デバイスのインターフェイスのパブリック IPv4 アドレス。IT 部門に問い合わせてこのアドレスを特定してください。  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |仮想ネットワークのアドレス スペース  <br/> |仮想ネットワークのアドレス スペース (1 つのプライベート アドレス プレフィックスで定義されます)。IT 部門に尋ねてこのアドレス スペースを特定してください。アドレス スペースは、クラスレス ドメイン間ルーティング (CIDR) 形式 (別名、ネットワーク プレフィックス形式) でなければなりません。10.24.64.0/20 などです。  <br/> |![line.](../media/Common-Images/TableLine.png) <br/> |
+|5.  <br/> |IPsec 共有キー  <br/> |32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。IT 部門またはセキュリティ部門に尋ねて、このキー値を決定してからそれを安全な場所に格納します。または、「[IPsec 事前共有キーのランダム文字列を作成する](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」をご覧ください。<br/> |![line.](../media/Common-Images/TableLine.png) <br/> |
    
 このソリューションのサブネットに関しては表 S に記入してください。
   
@@ -163,8 +163,8 @@ IT 部門に尋ねて、仮想ネットワークのアドレス スペースに�
   
 |**アイテム**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |Azure ゲートウェイが使用するサブネット。  <br/> |
-|2.  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |Azure ゲートウェイが使用するサブネット。  <br/> |
+|2.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
    
 仮想ネットワーク内で仮想マシンを使用するオンプレミスの DNS サーバーに関して、表 D に記入してください。各 DNS サーバーにフレンドリ名と 1 つの IP アドレスを指定します。このフレンドリ名は、DNS サーバーのホスト名またはコンピューター名と同じでなくても構いません。空白のエントリが 2 つ表示されていますが、項目は追加できます。IT 部門に尋ねてこの一覧を特定してください。
   
@@ -172,8 +172,8 @@ IT 部門に尋ねて、仮想ネットワークのアドレス スペースに�
   
 |**アイテム**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
 |:-----|:-----|:-----|
-|1.  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
    
 Azure Virtual Network から組織のネットワークにサイト間 VPN 接続を介してパケットをルーティングするには、ローカル ネットワークを使用して仮想ネットワークを構成する必要があります。このローカル ネットワークには、仮想ネットワーク内の仮想マシンが到達する必要がある組織のオンプレミス ネットワーク上のすべての場所に関するアドレス スペース (CIDR 形式) の一覧があります。オンプレミス ネットワークまたはサブネットのすべての場所になる可能性があります。ローカル ネットワークを定義するアドレス スペースの一覧は一意である必要があり、この仮想ネットワークや他のクロスプレミスの仮想ネットワークで使用するアドレス スペースと重複させることはできません。
   
@@ -183,8 +183,8 @@ Azure Virtual Network から組織のネットワークにサイト間 VPN 接�
   
 |**アイテム**|**ローカル ネットワークのアドレス スペース**|
 |:-----|:-----|
-|1.  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![line.](../media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |![線](../media/Common-Images/TableLine.png)  <br/> |
    
 ## <a name="deployment-roadmap"></a>展開のロードマップ

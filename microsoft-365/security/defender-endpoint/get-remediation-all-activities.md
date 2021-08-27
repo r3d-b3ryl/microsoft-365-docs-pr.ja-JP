@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 37cccbc8447f10288369185da8fe1374b4e6690e
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 670656ff15f33b28f66da5af9fa105606b99ca01
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503145"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594244"
 ---
 # <a name="list-all-remediation-activities"></a>すべての修復作業を一覧表示する
 
@@ -79,7 +79,7 @@ dueOn|DateTime
 fixedDevices|.|固定されているデバイスの数|2 
 id|String|この修復アクティビティの ID|097d9735-5479-4899-b1b7-77398899df92
 nameId|String|関連する製品名|Microsoft Silverlight
-priority|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)|高い
+priority|String|この修復アクティビティの作成者セットの優先度 (High\Medium\Low)|高
 productId|String|関連する製品 ID|microsoft-_-silverlight
 productivityImpactRemediationType|String|いくつかの構成変更は、ユーザーに影響がないデバイスに対してだけ要求できます。 この値は、「すべての公開デバイス」または「ユーザーに影響を与えないデバイスのみ」の選択を示します。|AllExposedAssets
 rbacGroupNames|String|関連するデバイス グループ名|[ "Windows サーバー", "Windows 10" ]
@@ -121,7 +121,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
             "requesterEmail": "user1@contoso.com",
             "status": "Active",
             "statusLastModifiedOn": "2021-02-10T13:20:36.4719698Z",
-            "description": "Update Silverlight to a later version  to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.  ",
+            "description": "Update Silverlight to a later version  to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.",
             "relatedComponent": "Microsoft Silverlight",
             "targetDevices": 18511,
             "rbacGroupNames": [

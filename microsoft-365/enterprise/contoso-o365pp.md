@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Microsoft 365 Apps for enterprise を展開する方法について説明します。
-ms.openlocfilehash: 65c73ccccd3e0ca5a3d9e09d1643692d56f5c341
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 8e0a88c85a3a2af35a83c71e7eb385b9edbdde77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356290"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552650"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 社の Microsoft 365 Apps for enterprise の展開
 
@@ -74,7 +74,7 @@ Contoso 社ではクラウドからデバイスを自動的に更新するよう
 
 Contoso のインストールと継続的Microsoft 365 Apps for enterprise展開アーキテクチャを次に示します。
 
-![Contoso の展開インフラストラクチャは、Microsoft 365 Apps for enterprise](../media/contoso-o365pp/contoso-o365pp-fig1.png)
+![Contoso の展開インフラストラクチャをMicrosoft 365 Apps for enterprise。](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
 ## <a name="next-step"></a>次の手順
 

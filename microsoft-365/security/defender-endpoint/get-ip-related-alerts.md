@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 12317627c497999f0821a09bc6639aedc2515933
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 2421a73e24e8d6ba42cb18e2d221ad09ec997d14
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347242"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585522"
 ---
 # <a name="get-ip-related-alerts-api"></a>IP 関連のアラート API を取得する
 
@@ -31,7 +31,7 @@ ms.locfileid: "58347242"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -52,7 +52,7 @@ ms.locfileid: "58347242"
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
 アプリケーション|Alert.Read.All|'すべてのアラートの読み取り'
-アプリケーション|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
+Application|Alert.ReadWrite.All|'すべてのアラートの読み取りと書き込み'
 委任 (職場または学校のアカウント) | Alert.Read | 'アラートの読み取り'
 委任 (職場または学校のアカウント) | Alert.ReadWrite | 'アラートの読み取りと書き込み'
 
@@ -60,7 +60,7 @@ ms.locfileid: "58347242"
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
 > - ユーザーは、少なくとも次の役割のアクセス許可を持っている必要があります。 'データの表示' (詳細については、「 [役割](user-roles.md) の作成と管理」を参照してください)
->- 応答には、デバイス グループ設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられたアラートだけが含まれます[](machine-groups.md)(詳細については、「デバイス グループの作成と管理」を参照してください)
+> - 応答には、デバイス グループ設定に基づいて、ユーザーがアクセスできるデバイスに関連付けられたアラートだけが含まれます[](machine-groups.md)(詳細については、「デバイス グループの作成と管理」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
 

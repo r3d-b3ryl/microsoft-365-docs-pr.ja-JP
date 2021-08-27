@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: ケース内の分析用にMicrosoft 365データをレビュー セットにインポートする方法についてAdvanced eDiscoveryします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fe4863321997ba6b81be2257b6ef44c83bc34cb2
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 65244b74cd868c4ec308327d15a070e67b9ac551
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508264"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569047"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>レビューセットにMicrosoft 365 以外のデータを読み込む
 
@@ -49,7 +49,7 @@ ms.locfileid: "58508264"
 
    ここで abraham.mcmahon@contoso.com、jewell.gordon@contoso.com、staci.gonzalez@contoso.com は、ケース内の保管担当者の SMTP アドレスです。
 
-   ![データアップロードMicrosoft 365構造以外](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+   ![データのアップロードMicrosoft 365構造以外のデータ。](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
 - 電子情報開示マネージャーの役割グループに割り当てられているアカウント (および電子情報開示管理者として追加)。
 
@@ -66,17 +66,17 @@ ms.locfileid: "58508264"
 
 4. **ファイルのアップロード** をクリックして、データ インポート ウィザードを開始します。
 
-   ![ファイルをアップロードする](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+   ![アップロードファイル。](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
    ウィザードの最初の手順で準備するセキュリティで保護された Microsoft 提供の Azure Storage に、ファイルをにアップロードします。  準備が完了したら、**次: ファイルのアップロード** ボタンがアクティブになります。
 
-   ![非インポートMicrosoft 365: 準備](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![非インポート: Microsoft 365準備します。](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 5. **次: ファイルのアップロード** をクリックします。
 
 6. [ファイルの **アップロード] ページ** で、次の操作を行います。
 
-   ![非インポートMicrosoft 365: アップロード ファイル](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   ![[非インポートMicrosoft 365: アップロードファイル。](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
    a. [ファイル **の場所への** パス] ボックスで、アップロードするデータ以外のデータを保存したルート フォルダーの場所Microsoft 365入力します。 たとえば、[開始する前に] セクションに示されているサンプルファイルの場所については **、「%USERPROFILE\Downloads」と入力し、onO365**\n入力します。 正しい場所を指定すると、パスの下のボックスに表示される AzCopy コマンドが正しく更新されます。
 
@@ -84,7 +84,7 @@ ms.locfileid: "58508264"
 
 7. コマンド プロンプトWindowsを開始し、前の手順でコピーしたコマンドを貼り付け **、Enter** キーを押して AzCopy コマンドを開始します。  コマンドを開始すると、手順 4 でMicrosoft 365した場所Azure Storageファイルがアップロードされます。
 
-   ![非Microsoft 365インポート: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   ![非インポートMicrosoft 365: AzCopy。](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
    > 前に述べたように、AzCopy v8.1 を使用して、[ファイルファイル] ページで提供されているコマンドを正常に使用アップロード **必要** があります。 指定された AzCopy コマンドが失敗した場合は、「トラブルシューティング[AzCopy in Advanced eDiscovery」 を参照してください](troubleshooting-azcopy.md)。
@@ -93,6 +93,6 @@ ms.locfileid: "58508264"
 
 9. [ファイルの処理] ページまたは[ジョブ] タブでファイルの処理の進行状況を追跡するには、レビュー セットに非ユーザー データMicrosoft 365を追加するという名前のジョブを **表示します**。  ジョブが完了すると、新しいファイルがレビュー セットで使用できます。
 
-   ![非インポートMicrosoft 365: ファイルの処理](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+   ![[非インポートMicrosoft 365: ファイルを処理します。](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 
 10. 処理が完了したら、ウィザードを閉じることができます。

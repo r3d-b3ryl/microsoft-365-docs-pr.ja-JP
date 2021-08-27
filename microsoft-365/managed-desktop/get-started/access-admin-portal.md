@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 44bc897cd2ead4c6c8568e8dc5048cf0118e35fc
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: e438e9a84b86bd4c3360022c0558480f317144e7
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364543"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602915"
 ---
 # <a name="access-the-admin-portal"></a>管理ポータルへのアクセス
 
@@ -28,7 +28,7 @@ ms.locfileid: "58364543"
 > - Chrome (最新バージョン)
 > - Firefox (最新バージョン)
 
-管理者アカウントは、管理者アカウントの管理機能にアクセスするために特定Microsoft マネージド デスクトップ必要Microsoft エンドポイント マネージャー。 役割ベースのアクセス制御を使用して、組織内のこれらの機能への管理者アクセスを管理できます。 複数Azure Active Directory (Azure AD) 管理者ロールと組み込みの Microsoft マネージド デスクトップ ロールを使用して、Microsoft マネージド デスクトップ 管理ポータル内のさまざまな機能を詳細に制御できます。 役割の詳細については、「Azure Active Directoryの[管理者役割のアクセス許可」を参照Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) さまざまな Microsoft 製品ADサービスに適用される Azure AD 管理者ロールとは異なり、組み込みの役割は Microsoft マネージド デスクトップ 固有の役割であり、このサービスの管理者機能へのアクセスのみを保証します。 管理者は、組み込みの役割をユーザーに個別に割り当てるか、Azure AD 管理者ロールと組み合わせて割り当て、既存の管理者アカウントにMicrosoft マネージド デスクトップアクセス許可を追加できます。
+管理者アカウントは、管理者アカウントの管理機能にアクセスするために特定Microsoft マネージド デスクトップ必要Microsoft エンドポイント マネージャー。 役割ベースのアクセス制御を使用して、組織内のこれらの機能への管理者アクセスを管理できます。 複数Azure Active Directory (Azure AD) 管理者ロールと組み込みの Microsoft マネージド デスクトップ ロールを使用して、Microsoft マネージド デスクトップ 管理ポータル内のさまざまな機能を詳細に制御できます。 ロールの詳細については、「Azure Azure Active Directory組み込み[AD」を参照してください](/azure/active-directory/roles/permissions-reference)。 さまざまな Microsoft 製品ADサービスに適用される Azure AD 管理者ロールとは異なり、組み込みの役割は Microsoft マネージド デスクトップ 固有の役割であり、このサービスの管理者機能へのアクセスのみを保証します。 管理者は、組み込みの役割をユーザーに個別に割り当てるか、Azure AD 管理者ロールと組み合わせて割り当て、既存の管理者アカウントにMicrosoft マネージド デスクトップアクセス許可を追加できます。
 
 ## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directoryアクセス権を持つMicrosoft マネージド デスクトップロール
 
@@ -41,7 +41,7 @@ ms.locfileid: "58364543"
 |セキュリティ管理者 | この役割を持つ管理者は、管理ポータル内のすべての機能に対する読み取り専用のアクセス許可と、Microsoft マネージド デスクトップのセキュリティ関連機能に対する書き込みアクセス許可を持つ必要があります。 |
 |セキュリティ閲覧者 |この役割を持つ管理者には **、管理者** ポータル内のすべての機能に対する読み取りMicrosoft マネージド デスクトップがあります。|
 
-役割の割り当てに関するヘルプAzure Active Directory、「管理者[ロールの](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)アクセス許可」を参照Azure Active Directory。
+役割の割り当てに関するAzure Active Directory必要な場合は[、「Azure AD組み込みロール」を参照してください](/azure/active-directory/roles/permissions-reference)。
 
 > [!IMPORTANT]
 > グローバル管理者の役割にのみ、組織を登録するために必要なアクセス許可Microsoft マネージド デスクトップ。 役割によって、Azure Active Directoryさまざまなユーザー アカウントの権限が付与Microsoft サービス。 ユーザーの登録が完了Microsoft マネージド デスクトップ、他のタスクを実行するために必要な最小の特権を持つロールを常に使用する必要があります。
@@ -87,13 +87,13 @@ ms.locfileid: "58364543"
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>データの使用を開始するMicrosoft マネージド デスクトップ
 
 1. 管理ポータルにアクセスする (この記事)。
-1. [管理者ポータルで管理者連絡先を追加して確認します](add-admin-contacts.md)。
-1. [登録後に設定を調整します](conditional-access.md)。
-1. ユーザーを展開して割[り当Intune ポータル サイト](company-portal.md)します。
+1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)。
+1. [登録後に設定を調整する](conditional-access.md)。
+1. [Intune ポータル サイト](company-portal.md)を展開して割り当てます。
 1. [ライセンスを割り当てる](assign-licenses.md)。
-1. [アプリを展開します](deploy-apps.md)。
-1. [デバイスをセットアップします](set-up-devices.md)。
-1. Autopilot と [登録の状態] ページ [を使用して、初回実行エクスペリエンスを設定します](esp-first-run.md)。
+1. [アプリを展開する](deploy-apps.md)。
+1. [デバイスをセットアップする](set-up-devices.md)。
+1. [Autopilot と登録ステータス ページの初回実行時エクスペリエンス](esp-first-run.md)のセットアップ。
 1. [ユーザー サポート機能を有効にする](enable-support.md)。
-1. [ユーザーがデバイスを使用する準備を整えます](get-started-devices.md)。
-1. [アプリ コントロールの使用を開始します](get-started-app-control.md)。
+1. [ユーザーがデバイスを使えるようにする](get-started-devices.md)。
+1. [アプリ制御の使用を開始する](get-started-app-control.md)。

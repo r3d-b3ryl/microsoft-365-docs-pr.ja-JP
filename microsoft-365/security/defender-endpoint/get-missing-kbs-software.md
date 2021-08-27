@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9c1a07c1e68694c64c185f612e237e909d2612d7eb5940aca169e6eaad0e47cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15c3ad6eef732f36a425a54673a694613c0f4b66
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874053"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598995"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>ソフトウェア ID で不足している KB を取得する
 
@@ -41,10 +41,10 @@ ms.locfileid: "53874053"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については [、「Use Microsoft Defender for Endpoint API」](apis-intro.md) を参照してください。
 
-アクセス許可の種類 |   アクセス許可   |   アクセス許可の表示名
+アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション |Software.Read.All |   '脅威と脆弱性管理ソフトウェア情報の読み取り'
-委任 (職場または学校のアカウント) | Software.Read |   '脅威と脆弱性管理ソフトウェア情報の読み取り'
+アプリケーション|Software.Read.All|'脅威と脆弱性管理ソフトウェア情報の読み取り'
+委任 (職場または学校のアカウント)|Software.Read|'脅威と脆弱性管理ソフトウェア情報の読み取り'
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -56,7 +56,7 @@ GET /api/Software/{Id}/getmissingkbs
 
 名前|種類|説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**
+Authorization|String|ベアラー {token}。 **必須**
 
 ## <a name="request-body"></a>要求本文
 
@@ -100,7 +100,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/getmi
 }
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [リスクベースの脅威&の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [脅威&ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

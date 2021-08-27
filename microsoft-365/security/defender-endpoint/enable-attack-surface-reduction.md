@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
-ms.openlocfilehash: 7fff73b2887418d47358b5424e537e5de4d60ce9
-ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
+ms.openlocfilehash: 4f1ec369913054e8fe119cebf3d647b42c133d34
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380250"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595670"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -31,7 +31,7 @@ ms.locfileid: "58380250"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [攻撃表面の縮小ルール](attack-surface-reduction.md) (ASR ルール) は、マルウェアが頻繁にデバイスやネットワークを侵害するアクションを防ぐのに役立ちます。
 
@@ -97,7 +97,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 ## <a name="intune"></a>Intune
 
-1. [デバイス **構成プロファイル**  >  **] を選択します**。 既存のエンドポイント保護プロファイルを選択するか、新しいエンドポイント保護プロファイルを作成します。 新しいプロファイルを作成するには、[プロファイルの作成] **を選択し** 、このプロファイルの情報を入力します。 [プロファイル **の種類] で**、[ **エンドポイント保護] を選択します**。 既存のプロファイルを選択した場合は、[プロパティ] を選択 **し、[プロパティ**] を選択 **設定。**
+1. [デバイス **構成プロファイル** \> **] を選択します**。 既存のエンドポイント保護プロファイルを選択するか、新しいエンドポイント保護プロファイルを作成します。 新しいプロファイルを作成するには、[プロファイルの作成] **を選択し** 、このプロファイルの情報を入力します。 [プロファイル **の種類] で**、[ **エンドポイント保護] を選択します**。 既存のプロファイルを選択した場合は、[プロパティ] を選択 **し、[プロパティ**] を選択 **設定。**
 
 2. [エンドポイント保護 **] ウィンドウで**、[Exploit **Guard] をWindows Defenderし**、[攻撃表面の縮小 **] を選択します**。 各 ASR ルールの目的の設定を選択します。
 
@@ -114,7 +114,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 1. 新しいMicrosoft エンドポイント マネージャー (MEM) 管理センターを開きます。 [ホーム] **メニューの [** デバイス] を  **クリックし**、[構成プロファイル] **を** 選択し、[プロファイルの作成] **をクリックします**。
 
    > [!div class="mx-imgBorder"]
-   > ![MEM Create Profile](images/mem01-create-profile.png)
+   > ![MEM Create Profile.](images/mem01-create-profile.png)
 
 2. [ **プロファイルの作成]** で、次の 2 つのドロップダウン リストで、次の項目を選択します。
 
@@ -124,17 +124,17 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    [カスタム **] を** 選択し、[作成] **をクリックします**。
 
    > [!div class="mx-imgBorder"]
-   > ![MEM ルール プロファイルの属性](images/mem02-profile-attributes.png)
+   > ![MEM ルール プロファイル属性。](images/mem02-profile-attributes.png)
 
 3. [カスタム テンプレート] ツールが開き、手順 **1 [基本] に進みます**。 **[1 基本]** の [**名前]** にテンプレートの名前を入力し、[説明] に説明を入力できます (オプション)。
 
    > [!div class="mx-imgBorder"]
-   > ![MEM の基本的な属性](images/mem03-1-basics.png)
+   > ![MEM の基本的な属性。](images/mem03-1-basics.png)
 
 4. [**次へ**] をクリックします。 手順 **2 構成設定が開** きます。 [OMA-URI] の設定をクリック **します**。 2 つのオプションが表示 **されます。**
 
    > [!div class="mx-imgBorder"]
-   > ![MEM 構成の設定](images/mem04-2-configuration-settings.png)
+   > ![MEM 構成の設定。](images/mem04-2-configuration-settings.png)
 
 5. [追加 **] を再度クリック** します。 [**行 OMA-URI の追加] 設定** 開きます。 [ **行の追加]** で、次の操作を行います。
 
@@ -145,7 +145,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    - [ **値]** で、GUID 値、記号、およびスペースを含む State 値 \= _(GUID=StateValue) を入力または貼り付けます_。 Where: {0 : Disable (DISABLE the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (有効な場合は ASR ルールが組織に与える影響を評価する)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
 
    > [!div class="mx-imgBorder"]
-   > ![MEM OMA URI 構成](images/mem05-add-row-oma-uri.png)
+   > ![MEM OMA URI 構成。](images/mem05-add-row-oma-uri.png)
 
 6. **[保存]** をクリックします。 **[行の追加]** が閉じます。 [カスタム **] で**、[次へ] **をクリックします**。 手順 **3 スコープ タグでは、** スコープ タグは省略可能です。 次のいずれかの操作を行います。
 
@@ -159,7 +159,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    - **すべてのデバイスを追加する**
 
    > [!div class="mx-imgBorder"]
-   > ![MEM の割り当て](images/mem06-4-assignments.png)
+   > ![MEM の割り当て。](images/mem06-4-assignments.png)
 
 8. [ **除外グループ] で**、このルールから除外するグループを選択し、[次へ] を **クリックします**。
 
@@ -170,17 +170,17 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    - [ **値]** に、該当する値または値の範囲を入力します。
 
    > [!div class="mx-imgBorder"]
-   > ![MEM 適用ルール](images/mem07-5-applicability-rules.png)
+   > ![MEM 適用性ルール。](images/mem07-5-applicability-rules.png)
 
 10. [**次へ**] をクリックします。 手順 **6 [レビュー] + [作成**] で、選択して入力した設定と情報を確認し、[作成] を **クリックします**。
 
     > [!div class="mx-imgBorder"]
-    > ![MEM レビューと作成](images/mem08-6-review-create.png)
+    > ![MEM レビューと作成。](images/mem08-6-review-create.png)
 
     > [!NOTE]
     > ルールはアクティブで、数分以内に有効です。
 
->[!NOTE]
+> [!NOTE]
 > 競合の処理:
 >
 > デバイスに 2 つの異なる ASR ポリシーを割り当てると、競合の処理方法は、異なる状態が割り当てられたルールであり、競合管理が行われるので、結果はエラーになります。
@@ -217,9 +217,9 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. この **Microsoft Endpoint Configuration Manager、Exploit** Guard の [アセットと  >  **コンプライアンス] Endpoint Protection Windows Defender**  >  **移動します**。
+1. この **Microsoft Endpoint Configuration Manager、Exploit** Guard の [アセットと \> **コンプライアンス] Endpoint Protection Windows Defender** \> **移動します**。
 
-2. [ホーム **エクスプ**  >  **ロイト ガード ポリシーの作成] を選択します**。
+2. [ホーム **エクスプ** \> **ロイト ガード ポリシーの作成] を選択します**。
 
 3. 名前と説明を入力し、[攻撃表面の縮小] を **選択** し、[次へ] を **選択します**。
 
@@ -238,7 +238,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して **、攻撃Windows縮小**  >  **Microsoft Defender ウイルス対策Microsoft Defender Exploit Guard**  >    >  **コンポーネントを表示します**。
+3. ツリーを展開して **、攻撃Windows縮小** \> **Microsoft Defender ウイルス対策Microsoft Defender Exploit Guard** \>  \> **コンポーネントを表示します**。
 
 4. [攻撃 **表面縮小ルールの構成] を選択し、[** 有効] を **選択します**。 その後、[オプション] セクションで各ルールの個別の状態を設定できます。
 
@@ -249,7 +249,7 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
    - 2 : 監査 (ASR ルールが有効な場合に組織に与える影響を評価する)
    - 6 : 警告 (ASR ルールを有効にするが、エンド ユーザーがブロックをバイパスできる)
 
-   :::image type="content" source="images/asr-rules-gp.png" alt-text="グループ ポリシーの ASR ルール":::
+   :::image type="content" source="images/asr-rules-gp.png" alt-text="グループ ポリシーの ASR ルール。":::
 
 5. ASR ルールからファイルとフォルダーを除外するには、[攻撃表面の縮小ルールからファイルとパスを除外する] 設定を選択し、オプションを [有効] に **設定します**。 [ **表示] を** 選択し、[値の名前] 列に各ファイル **またはフォルダーを入力** します。 各 **アイテムの [** 値] **列に 0** を入力します。
 
@@ -322,7 +322,5 @@ ASR ルールを有効にする次の手順には、ファイルとフォルダ�
 ## <a name="related-articles"></a>関連記事
 
 - [攻撃面の減少ルール](attack-surface-reduction-rules.md)
-
 - [攻撃表面の縮小を評価する](evaluate-attack-surface-reduction.md)
-
 - [攻撃面の減少の FAQ](attack-surface-reduction.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 検索統計機能を使用して、コア電子情報開示ケースに関連付けられたコンテンツ検索と検索の統計を表示する方法についてMicrosoft 365 コンプライアンス センター。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 25884f0b450c1bc90cb6487e64fe636ef5f8af16dd30ad7bb4e7ed28402da03f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f9948a5ae194a475f5bdcf319aa48fa32cc282f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835549"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552914"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>電子情報開示検索結果の統計情報を表示する
 
@@ -45,7 +45,7 @@ ms.locfileid: "53835549"
 
 2. 選択した検索のフライアウト ページで、[検索の統計情報] **タブをクリック** します。
   
-   ![[検索の統計情報] タブ](../media/SearchStatistics1.png)
+   ![[検索の統計情報] タブ。](../media/SearchStatistics1.png)
 
 [ **検索の統計情報]** タブには、検索に関するさまざまな種類の統計情報を含む次のセクションが含まれます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "53835549"
 
 このセクションでは、検索によって返される推定アイテムの概要をグラフィカルに表示します。 これは、検索条件に一致するアイテムの数を示します。 この情報は、検索によって返されるアイテムの推定数に関するアイデアを提供します。
 
-![検索の見積もりを検索する](../media/SearchContentReport.png)
+![検索の見積もりを検索します。](../media/SearchContentReport.png)
 
 - **場所別の推定アイテム**: 検索によって返される推定アイテムの総数。 メールボックスとサイト内にあるアイテムの特定の数も表示されます。
 
@@ -65,7 +65,7 @@ ms.locfileid: "53835549"
 
 このセクションでは、検索クエリに関する統計情報と、検索クエリの異なる部分に一致した推定アイテムの数を表示します。 これらの統計を使用して、検索クエリの各コンポーネントに一致するアイテムの数を分析できます。 これにより、検索条件を絞り込み、必要に応じて範囲を絞り込むのに役立ちます。 このレポートのコピーを CSV 形式でダウンロードできます。
 
-![条件レポート](../media/SearchContentReportNoKeywordList.png)
+![条件レポート。](../media/SearchContentReportNoKeywordList.png)
 
 - **場所の** 種類: クエリ統計が適用されるコンテンツの場所の種類。 この値は **Exchange** メールボックスの場所を示します。サイトの場所 **SharePoint** 値を指定します。
 
@@ -101,11 +101,11 @@ ms.locfileid: "53835549"
 
 2. 検索ウィザード **の [** 条件] ページで、次の手順を実行します。 [キーワード リスト **の表示] チェック ボックスを** オンにします。
 
-   ![[キーワード一覧を表示する] チェック ボックス](../media/SearchKeywordsList1.png)
+   ![[キーワード一覧を表示する] チェック ボックスをオンにします。](../media/SearchKeywordsList1.png)
 
 3. キーワード テーブルの行にキーワードまたはキーワード フェーズを入力します。 たとえば、最初の行 **に「budget」** と入力し、2 行目に **「security」** と入力し、3 行目に **「FY2021」** と入力します。
 
-   ![リストに最大 20 のキーワードまたはキーワード フレーズを入力する](../media/SearchKeywordsList2.png)
+   ![リストに最大 20 のキーワードまたはキーワード フレーズを入力します。](../media/SearchKeywordsList2.png)
 
    > [!NOTE]
    > 大規模なキーワード リストによって発生する問題を軽減するために、検索クエリのキーワード リストの最大 20 行に制限されています。
@@ -116,7 +116,7 @@ ms.locfileid: "53835549"
 
 6. [検索の **統計情報] タブ** で、[条件] レポート **をクリックして** 、検索のキーワード統計を表示します。
 
-    ![各キーワードの統計情報が表示されます](../media/SearchKeywordsList3.png)
+    ![各キーワードの統計情報が表示されます。](../media/SearchKeywordsList3.png)
   
     前のスクリーンショットで示したように、各キーワードの統計情報が表示されます。次の情報が含まれます。
 
