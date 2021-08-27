@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、セキュリティ & Complance センターで攻撃シミュレーターを使用して、Microsoft 365 E5 または Microsoft Defender で Office 365 プラン 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 902673c39e0f2c9c68e8408073dc25bb7f92c87189e10568c80a1be21e2c7b02
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 631c6d9ecfeb24ddfad16391990043d283b02a82
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56878261"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548668"
 ---
 # <a name="attack-simulator-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの攻撃&シミュレーター
 
@@ -69,7 +69,7 @@ ms.locfileid: "56878261"
 
   - これは単なるテストであり、フィッシング メッセージを認識するためのヒントを示す既定のページです。
 
-    ![ユーザーがフィッシング リンクをクリックして資格情報を入力した場合に表示される情報](../../media/attack-simulator-phishing-result.png)
+    ![ユーザーがフィッシング リンクをクリックして資格情報を入力した場合に表示される情報。](../../media/attack-simulator-phishing-result.png)
 
   - 指定したカスタム ページ (URL) です。
 
@@ -164,7 +164,7 @@ ms.locfileid: "56878261"
    - [テンプレート **の使用]** をクリックし、組み込みまたはカスタムの電子メール テンプレートを選択します。 テンプレートを選択すると、[名前]ボックスはテンプレートに基づいて自動的に入力されますが、名前を変更できます。
 
    > [!div class="mx-imgBorder"]
-   > ![フィッシングの開始ページ](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   > ![フィッシングの開始ページ。](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
    完了したら、**[次へ]** をクリックします。
 
@@ -228,7 +228,7 @@ ms.locfileid: "56878261"
    ス **ピア フィッシング (添付ファイル)** キャンペーンの場合は、メッセージの本文からリンクを削除する必要があります (それ以外の場合、メッセージにはリンクと添付ファイルの両方が含まれるので、リンクのクリックは添付ファイル キャンペーンでは追跡されません)。
 
    > [!div class="mx-imgBorder"]
-   > ![メール本文の作成](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+   > ![メール本文の作成。](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
    完了したら、**[次へ]** をクリックします。
 

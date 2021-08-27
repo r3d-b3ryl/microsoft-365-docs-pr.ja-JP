@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: ff686860455279218b55fa871327a87fe1ce3e411f3aa7cab83e2ddba00978e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f4cfd4cb55d6a89acf8f78d60006851c14e603f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888239"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548632"
 ---
 # <a name="test-base-faq"></a>テスト ベースに関する FAQ
 
@@ -79,11 +79,11 @@ Test Base 用に作成されたパッケージには、インストール、起�
 
 アウトオブボックス (OOB) テストでは、Install スクリプトに再起動が必要かどうかを _指定できます。_
 
-![画像の再起動](Media/reboot.png)
+![画像を再起動します。](Media/reboot.png)
 
 機能テストの場合は、追加するスクリプトごとに再起動が必要かどうかを指定できます。
 
-![機能テストを選択する方法](Media/functionalreboot.png)
+![機能テストを選択する方法。](Media/functionalreboot.png)
 
 **Q: サポートWindowsバージョンは何ですか?**
 

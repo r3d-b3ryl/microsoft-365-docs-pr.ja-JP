@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6e99917ad535fb639edcd92a76c5e59dc0d3040c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 01e7c83a797930ed0137aeb864f22485f1cc581d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254554"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548656"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Microsoft Defender for Endpoint アーキテクチャの要件と主な概念を確認する
 
@@ -42,7 +42,7 @@ Microsoft Defender for Endpoint を有効にする前に、アーキテクチャ
 
 次の図は、Microsoft Defender for Endpoint アーキテクチャと統合を示しています。 
 
-![Defender 評価環境に Microsoft Defender Office追加する手順](../../media/defender/m365-defender-endpoint-architecture.png)
+![Defender 評価環境に Microsoft Defender を追加Office手順を実行します。](../../media/defender/m365-defender-endpoint-architecture.png)
 
 次の表に、図を示します。
 
@@ -65,7 +65,7 @@ Microsoft Defender for Endpoint を有効にする前に、アーキテクチャ
 エンドポイントの検出と応答 | エンドポイントの検出および応答機能は、ほぼリアルタイムでアクション可能な高度な攻撃検出を提供します。 | [エンドポイントの検出および応答機能の概要](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 動作のブロックと格納 | 動作のブロックと格納機能は、脅威の実行が開始された場合でも、その動作とプロセス ツリーに基づいて、脅威を特定して停止するのに役立ちます。 | [動作ブロックと封じ込め](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
 自動調査と対応 | 自動調査では、セキュリティ アナリストが使用するプロセスに基づいてさまざまな検査アルゴリズムを使用し、アラートを調べ、侵害を解決するために直ちに対応するように設計されています。 | [自動調査を使用して脅威を調査および修復する](/microsoft-365/security/defender-endpoint/automated-investigations)
-高度なハンティング | 高度な検索はクエリベースの脅威ハンティング ツールで、最大 30 日間の生データを調査して、ネットワーク内のイベントを積極的に検査して脅威インジケーターとエンティティを特定できます。 | [高度な検索の概要](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
+高度な追求 | 高度な検索はクエリベースの脅威ハンティング ツールで、最大 30 日間の生データを調査して、ネットワーク内のイベントを積極的に検査して脅威インジケーターとエンティティを特定できます。 | [高度な検索の概要](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
 脅威の分析 | 脅威分析は、最も関連性の高い脅威をカバーする Microsoft の専門家のセキュリティ研究者からの一連のレポートです。 | [新しい脅威を追跡して対応する](/microsoft-365/security/defender-endpoint/threat-analytics)
 
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 82931431b2c299a6ca367fa682218e5e3a461af7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 674067ab082c70b2c5ae0fa0551a93c2d4f9a030
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247151"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548680"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Microsoft Defender のアーキテクチャ要件Office 365主な概念について確認する
 
@@ -42,7 +42,7 @@ Defender for Office 365を有効にする前に、アーキテクチャを理解
 
 次の図は、サードパーティの SMTP ゲートウェイまたはオンプレミスの統合を含Office Microsoft Defender for microsoft Defender のベースライン アーキテクチャを示しています。 ハイブリッド共存シナリオ (実稼働メールボックスはオンプレミスとオンラインの両方) では、より複雑な構成が必要であり、この記事や評価ガイダンスでは説明しません。
 
-![Microsoft Defender for microsoft Defender for Office 365](../../media/defender/m365-defender-office-architecture.png)
+![Microsoft Defender for microsoft Defender for Office 365。](../../media/defender/m365-defender-office-architecture.png)
 
 次の表に、この図を示します。
 

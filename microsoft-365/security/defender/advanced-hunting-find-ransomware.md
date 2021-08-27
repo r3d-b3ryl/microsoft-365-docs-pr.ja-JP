@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4dac86ca9125359b07c4acfb7500b6920baa019bd2d4df2ca6eff32dde412735
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3c944ea79adc22f587e2a0e20e3d783f845d15f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867770"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548776"
 ---
 # <a name="hunt-for-ransomware"></a>ランサムウェアを探す
 
@@ -235,7 +235,7 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 - **TotalEvidenceCount**—観測された兆候の数
 - **UniqueEvidenceCount**—観測された兆候の種類の数
 
-![ランサムウェア アクティビティのクエリ結果のイメージ](../../media/advanced-hunting-ransomware-query.png)
+![ランサムウェア アクティビティのクエリ結果のイメージ。](../../media/advanced-hunting-ransomware-query.png)
 
 *影響を受けるデバイスを示すクエリ結果と、ランサムウェアアクティビティのさまざまな兆候の数*
 
@@ -245,7 +245,7 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 | where UniqueEvidenceCount > 2
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
