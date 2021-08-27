@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: コンテンツ コラボレーションの詳細 - ユーザーエクスペリエンスの生産性スコア。
-ms.openlocfilehash: 13bee74b901bef4a4d4086e5cbed97a1bdddbabb145acaee5e68af9f5fdac010
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa4e84f0cf454e28cd773292f2a4065cb1252acf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823293"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566930"
 ---
 # <a name="content-collaboration--people-experiences"></a>コンテンツのコラボレーション – ユーザー エクスペリエンス
 
@@ -110,7 +110,7 @@ Microsoft OneDriveおよびビジネス 向けSharePointは、ユーザーがデ
 
 ### <a name="creating-files-in-onedrive-or-sharepoint"></a>ファイルの作成は、OneDriveまたはSharePoint
 
-:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="ユーザーまたはユーザーにファイルを作成するユーザーの数OneDriveグラフSharePoint":::
+:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="ユーザーまたはユーザーにファイルを作成するユーザーの数OneDriveグラフSharePoint。":::
 
 1. **ヘッダー:** アプリケーション上でファイルを作成するMicrosoft 365 Officeでアクティブなユーザーの割合を強調表示OneDriveまたはSharePoint。
 2. **本文:** コンテンツの作成の値に関する情報を、OneDriveおよびSharePoint。

@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: キャンペーンや他のMicrosoft 365 Business Premiumの設定の概要
-ms.openlocfilehash: a31a0046bd37b7bb905f96d054ea5c9809e744fa
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 41d3f0829829233c70e091f27225f7756a0e4f46
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378015"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567122"
 ---
 # <a name="set-up-microsoft-365"></a>設定Microsoft 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "58378015"
 
 次の図は、管理者がシステム管理者をセットアップする方法Microsoft 365。
 
-![システムをセットアップするMicrosoft 365](../media/M365-democracy-SetUpProcess.png)
+![ユーザー設定の手順Microsoft 365。](../media/M365-democracy-SetUpProcess.png)
 
 特別価格の対象となるキャンペーンの場合は[、Microsoft](https://m365forcampaigns.microsoft.com/)からの招待を要求してから、キャンペーンのMicrosoft 365[を開始します](m365-campaigns-sign-up.md)。 セットアップを完了するには、 [セットアップ ウィザードを実行して](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) コア設定を構成します。
 
@@ -52,7 +52,7 @@ ms.locfileid: "58378015"
 
 ユーザーは、この環境で動作するデバイスをセットアップするために数分かかる必要があります。 主要なユーザー (ハッカーの最も価値の高いターゲットであるユーザー) の場合は、新しいデバイスを設定して事前構成できます。 これにより、ユーザーは自分の資格情報を使用してサインインするときにMicrosoft 365できます。
 
-![ユーザー デバイスのセットアップ プロセス](../media/m365-democracy-user-device-setup.png)
+![ユーザー デバイスのセットアップ プロセス。](../media/m365-democracy-user-device-setup.png)
   
 ユーザー デバイスを設定するには、次の方法を実行します。
 

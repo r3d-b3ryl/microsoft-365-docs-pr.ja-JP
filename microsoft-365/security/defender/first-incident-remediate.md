@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 787fd55e9ad17607cfa0fa5f787a279bb0e2d1839d2029b9a7ec6a4bb5f1b65a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 954fa4d9879e9654847f50ad15f8ff3c3a88caf4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838970"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573865"
 ---
-# <a name="step-2-remediate-your-first-incident"></a>手順 2. 最初のインシデントを修復する
+# <a name="step-2-remediate-your-first-incident"></a>手順 2。 最初のインシデントを修復する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -68,7 +68,7 @@ Microsoft 365 Defenderは、アナリストが手動で開始できるいくつ�
 7. Tor IP アドレスをブロックする Microsoft Defender for Endpoint でカスタム インジケーターを作成する
 8. 次の図に示Microsoft Cloud App Securityのような、この種類のアラートのガバナンス アクションを作成します。
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="ポータルでのガバナンス アクションMicrosoft Cloud App Security例"::: 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="ポータルでのガバナンス アクションMicrosoft Cloud App Securityします。"::: 
  
 修復アクションの多くを、このページで適用および追跡Microsoft 365 Defender。 
 
@@ -85,13 +85,13 @@ Playbooks は、Power Automateを使用して、特定の条件がトリガー�
 
 次に例を示します。
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="カスタムのロボット プロセスPower Automateフローの例"::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="カスタムのロボット プロセスPower Automateフローの例。"::: 
  
 また、インシデント後のレビュー中に[](first-incident-post.md)プレイブックを作成して、インシデントからの修復アクションを作成して、迅速な修復アクションを実行することもできます。 
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 3: インシデントのインシデント後レビューを実行する方法について学習する](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
+[![手順 3: インシデントのインシデント後のレビューを実行する方法について学習します。](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 
 インシデントのインシデント [後レビューを実行する方法について学習します](first-incident-post.md)。
 

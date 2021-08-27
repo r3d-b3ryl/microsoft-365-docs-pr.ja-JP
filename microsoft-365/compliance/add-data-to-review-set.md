@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: これらの検索結果の検索結果またはサンプルをケース レビュー セットにAdvanced eDiscoveryする方法について学習します。
-ms.openlocfilehash: dd3b04812f1284d8a95a158f1ef47317bc89c9f28b743a723fc8d21287116e48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aeb7942fc12089bd458236221dd7394a8018e780
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837055"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567086"
 ---
 # <a name="add-search-results-to-a-review-set"></a>検索結果をレビュー セットに追加する
 
@@ -43,7 +43,7 @@ ms.locfileid: "53837055"
 
 既存のレビュー セットに追加するか、新しいレビュー セットを作成できます。  新しいレビュー セットに追加する場合は、名前を指定し、[追加] をクリック **して** 、フライアウト ページを表示します。
 
-![レビュー セットを選択し、コレクション オプションを構成する](../media/AeD_AddToReviewSet.png)
+![レビュー セットを選択し、コレクション オプションを構成します。](../media/AeD_AddToReviewSet.png)
 
 レビューセットへのデータの追加は、時間のかかるプロセスです。 このプロセスには、Microsoft 365 の元のデータ ソース (メールボックスやサイトなど) からアイテムを収集し、Azure Storage の場所 (このコピー プロセスは取り込みとも呼ばれる) にコピーしてから、アイテムのインデックスを再作成します。 [ジョブ] タブまたは[検索] タブで進行状況を追跡するには、[データを確認するデータを確認する] 列の状態 **を監視** します。 レビュー セットの処理が完了したら、ケースの[レビュー セット] タブをクリックし、レビュー セットをクリックして、レビュー セット内のデータのフィルター処理、レビュー、タグ付け、エクスポートのプロセスを開始します。
 

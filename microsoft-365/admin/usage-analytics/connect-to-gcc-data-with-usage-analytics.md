@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Microsoft 365 Government Community Cloud (GCC) テナントの Microsoft 365 Usage Analytics テンプレート アプリを使用してデータに接続するPower BI。
-ms.openlocfilehash: e831cae78c90eeafae38117b6939d506f37632f30e3bd456ca9242b9d81c402c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a0ea6985b9f9d09498e4ad086bf89f529b24c17
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53907219"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567158"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Connect分析でMicrosoft 365 Government Community Cloud (GCC) データを取得する方法
 
@@ -50,7 +50,7 @@ ms.locfileid: "53907219"
 2. [利用状況 **レポート] ページ** の [使用状況分析Microsoft 365] セクションで、[はじめに]**を選択します**。 
 3. [**使用状況分析Power BIを有効** にする] で、[組織の利用状況データを Microsoft 利用状況分析で使用Power BI] を **選択し、[** 保存] を **選択します**。
 
-    ![テナント データを使用可能にする](../../media/usage-analytics/make-data-available.png) 
+    ![テナント データを使用可能にします。](../../media/usage-analytics/make-data-available.png) 
 
 
 
@@ -58,7 +58,7 @@ ms.locfileid: "53907219"
 
 4. 組織のデータの準備ができたら、ページを更新すると、データが利用可能であることを示すメッセージが表示され、テナント ID 番号 **も提供** されます。 テナント データに接続しようとすると、後の手順でテナント ID を使用する必要があります。 
  
-    ![テナント ID](../../media/usage-analytics/tenant-id-gcc.png) 
+    ![テナント ID。](../../media/usage-analytics/tenant-id-gcc.png) 
  
     > [!IMPORTANT]
     > データが使用可能な場合は、[移動] を選択 **Power BIし、** この場合は[マーケット プレース] Power BI表示されます。  テナントに必要なこのレポートGCCアプリは、Power BI Marketplace では使用できません。  
@@ -74,13 +74,13 @@ Microsoft 365 GCCユーザーは、利用状況分析レポート テンプレ�
 1. テンプレートをダウンロード[したらPower BIを](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)使用して開Power BI Desktop。 
 2. TenantID の入力を **求めるメッセージが表示** されたら、手順 1 でこのレポートの組織のデータを準備するときに受け取ったテナント ID を入力します。 次に、[読み込 **み] を選択します**。 データの読み込みには数分かかります。 
 
-    ![テナント ID の入力](../../media/usage-analytics/add-tenant-id.png) 
+    ![テナント ID を入力します。](../../media/usage-analytics/add-tenant-id.png) 
 
 
 
 3. 読み込みが完了すると、レポートが表示され、データのエグゼクティブ サマリーが表示されます。 
 
-    ![概要](../../media/usage-analytics/exec-summary.png) 
+    ![エグゼクティブの概要。](../../media/usage-analytics/exec-summary.png) 
  
 
 4. 変更をレポートに保存します。 

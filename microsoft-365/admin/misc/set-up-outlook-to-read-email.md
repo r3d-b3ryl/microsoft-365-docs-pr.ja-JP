@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Outlook と Mac の両方にメール アカウントをWindowsする方法と、Office アプリをインストールしてオンラインでメールにアクセスする方法について説明します。
-ms.openlocfilehash: 90335d30cd33807b0bfce044f6fc0f9d0a2ec4d10cafefa91b8de6bab8b7c461
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 71fd79d96135169f6a1a6fa3850a2fd6f73c5457
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823752"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566942"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Outlook でメールの閲覧を設定する
 
@@ -65,7 +65,7 @@ Microsoft 365 サブスクリプションには Web ベースの Outlook が付�
 
 ユーザーにサインインした後で、[Microsoft 365]**をOutlook。**
   
-![アプリMicrosoft 365強調表示されたOutlookホーム ページ](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![アプリMicrosoft 365強調表示されたOutlookホーム ページ。](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
 お探しのアプリが見つかりませんか? アプリ 起動ツールから [すべてのアプリ]**を** 選択すると、利用可能なアプリのアルファベットMicrosoft 365一覧が表示されます。 そこから、特定のアプリを検索できます。 
   

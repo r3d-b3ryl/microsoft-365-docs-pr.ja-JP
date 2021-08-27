@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4e3665e148cd08bfef2fd56e1d51595ed7626a57a82cc6c3b3577b8d157bb1a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b365be018fafb487fb689acb09749804f849ce3b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884582"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550060"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 
@@ -98,7 +98,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
     > [!NOTE]
     > すべての URL が Defender for Endpoint で指定されている場合は、許可されるデータ収集の一覧が文書化されています。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 評価ジョブを構成するには、次のユーザーアクセス許可オプションが必要です。セキュリティ センター **でセキュリティ設定を管理します**。 アクセス許可は、ロールにアクセスして **設定**  >  **できます**。 詳細については、「役割ベースの [アクセス制御の役割を作成および管理する」を参照してください](user-roles.md)。
 
@@ -110,7 +110,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 2. ネットワーク スキャナーをダウンロードし、指定された Defender for Endpoint 評価デバイスにインストールします。
 
     > [!div class="mx-imgBorder"]
-    > ![[スキャナーのダウンロード] ボタン](images/assessment-jobs-download-scanner.png)
+    > ![[スキャナーのダウンロード] ボタン。](images/assessment-jobs-download-scanner.png)
 
 ## <a name="network-scanner-installation--registration"></a>ネットワーク スキャナーのインストール&登録
 
@@ -134,7 +134,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 ネットワーク デバイス インベントリでデバイスの重複を防止するには、各 IP アドレスが複数の評価デバイスで 1 回だけ構成されていることを確認します。
 
 > [!div class="mx-imgBorder"]
-> ![[ネットワーク評価ジョブの追加] ボタン](images/assessment-jobs-add.png)
+> ![[ネットワーク評価ジョブの追加] ボタン。](images/assessment-jobs-add.png)
 
 ネットワーク評価ジョブステップの追加:
 
@@ -164,7 +164,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 新しく検出されたデバイスは、[デバイス インベントリ] ページの [新しい **ネットワーク** デバイス] タブ **に表示** されます。 デバイスが更新されるまで、評価ジョブを追加するまでに最大 2 時間かかる場合があります。
 
 > [!div class="mx-imgBorder"]
-> ![[デバイス インベントリ] の [ネットワーク デバイス] セクション](images/assessment-jobs-device-inventory.png)
+> ![[デバイス インベントリ] の [ネットワーク デバイス] セクション。](images/assessment-jobs-device-inventory.png)
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

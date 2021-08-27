@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 1 つ以上の配布リストを Outlook の Microsoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: 6e836ef0d80668a59e8dee6eb06c1d52af55a758c9df0b79c5d0e1422de07b3f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 298d349fcf0874dd4c2dbd85ff19101e40988aba
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824465"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566966"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook で配布リストを Microsoft 365 グループにアップグレードする
 
@@ -56,11 +56,11 @@ ms.locfileid: "53824465"
 
 1. クラシック 管理センターに<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchangeします</a>。
 
-2. クラシック 管理センターでExchange[受信者グループ **] に移動** \> **します**。<br/>配布リスト (配布グループとも呼 **ばれる)** が存在し、配布グループにアップグレードする資格があるという通知Microsoft 365表示されます。<br/> ![[スタート] ボタンを選択する](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. クラシック 管理センターでExchange[受信者グループ **] に移動** \> **します**。<br/>配布リスト (配布グループとも呼 **ばれる)** が存在し、配布グループにアップグレードする資格があるという通知Microsoft 365表示されます。<br/> ![[開始] ボタンを選択します。](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-3. [グループ] ページから 1 つ以上の配布リスト (配布 **グループ** とも呼ばれる) **を選択** します。<br/>![配布グループを選択する](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+3. [グループ] ページから 1 つ以上の配布リスト (配布 **グループ** とも呼ばれる) **を選択** します。<br/>![配布グループを選択します。](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. アップグレード アイコンを選択します。<br/>![[グループへのMicrosoft 365] アイコン](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. アップグレード アイコンを選択します。<br/>![[グループ] Microsoft 365にアップグレードします。](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 5. 情報ダイアログで、[はい] **を選択して** アップグレードを確認します。 プロセスがすぐに開始されます。 アップグレードする配布リストのサイズや数に応じて、処理には数分または数時間かかることがあります。<br/>配布リストをアップグレードできない場合は、それを示すダイアログが表示されます。 「 [アップグレードできない配布リスト」を参照してください](#which-distribution-lists-cant-be-upgraded)。
 

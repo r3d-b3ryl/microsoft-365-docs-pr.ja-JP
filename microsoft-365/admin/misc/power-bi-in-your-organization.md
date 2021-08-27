@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 組織のユーザー Power BIこのビジネス分析サービスを使用する方法について詳しくは、こちらをご覧ください。
-ms.openlocfilehash: d9e7aa90803dc87aece4246a369f9b4ae83bb7e867fae5790cb82ba615b8385b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5301d3cd6b10101543741637014455aa2b2a207a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823860"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566954"
 ---
 # <a name="power-bi-in-your-organization"></a>組織内の Power BI
 
@@ -101,7 +101,7 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
 
 4. 左上にあるアプリ起動ツールのアイコンを選択して、**[管理]** をクリックします。
 
-    ![管理アプリが強調表示されたアプリ起動ツール](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![管理アプリが強調表示されたアプリ 起動ツール。](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. [管理者になる] ページの **手順を** 読み、[はい] を選択 **します。管理者になる必要があります**。
 

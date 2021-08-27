@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: チームの共同作業スペースを作成し、Microsoft Teams。
-ms.openlocfilehash: 6ca87115a55a91d1e00534556c4fa6d3b3bf72f4682f9ab4f562b772286b3fe9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c787f2c493643dcba2bbd5985fa518210aa8a5c6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837538"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567146"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>グループで共同作業を行うチームをMicrosoft Teams
 
@@ -47,7 +47,7 @@ Microsoft Teamsは、どのデバイスからでも、スタッフが組織化�
 1. **個々のチーム:** 小規模なグループ向けチームをセットアップして、毎日の作業に関する共同作業を行います。
 1. **外部コミュニケーション チームまたはチーム:** ベンダー、パートナー、またはクライアントを機密にすることなく、ベンダー、パートナー、またはクライアントと調整します。 特定のグループに異なるチャネルを設定します。
 
-![3 つの独立したMicrosoft Teamsを使用して、ビジネス内での安全なコミュニケーションとコラボレーションを可能にするための、1 つのウィンドウの図](../media/m365-democracy-teams-business-collab.png)
+![3 つの独立したMicrosoft Teamsを備え、ビジネス内での安全なコミュニケーションとコラボレーションを可能にするための、1 つのウィンドウの図。](../media/m365-democracy-teams-business-collab.png)
 
 また、キャンペーンは、次のチームを作成して、安全にコミュニケーションと共同作業を行う可能性があります。
 
@@ -55,7 +55,7 @@ Microsoft Teamsは、どのデバイスからでも、スタッフが組織化�
 2. **一般的なキャンペーン チーム:** これは、誰もが毎日のコミュニケーションと作業に使用します。 個人、グループ、または委員会は、自分の作業を行うチャネルをこのチームに設定できます。 たとえば、イベント計画のユーザーは、キャンペーン イベントのチャットとロジスティクスの調整を行うチャネルを設定できます。
 3. **パートナー チーム:** ベンダー、パートナー、またはボランティアと調整し、機密性の高い情報に組み込む必要はありません。
 
-![3 つのMicrosoft Teamsを使用して、キャンペーン内の安全なコミュニケーションとコラボレーションを可能にするための、1 つのウィンドウの図](../media/m365-democracy-teams-collab.png)
+![3 つのMicrosoft Teamsを使用して、キャンペーン内の安全なコミュニケーションとコラボレーションを可能にするための、1 つのウィンドウの図。](../media/m365-democracy-teams-collab.png)
 
 チームを作成すると、他に作成される情報を次に示します。
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 33d86ff6b63bd8b21ba233ff8b28672a3688fd0c4b20565f69cb9f11b4959426
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 892dbcccfc8f224f80a538f9736405cb012b69ca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857953"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573693"
 ---
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
@@ -36,11 +36,11 @@ Microsoft Managed Devices では、既定でこれらの設定が自動的に構
 
 1. システムは、ユーザー OneDrive構成済みであり、ユーザーが自動的にユーザーにサインインOneDrive。
 
-:::image type="content" source="media/onedrive-sync.png" alt-text="通知の読み取りで、OneDrive同期中でファイルを編集OneDrive。ファイルを表示するには、ここをクリックしてください":::
+:::image type="content" source="media/onedrive-sync.png" alt-text="通知の読み取りで、OneDrive同期中でファイルを編集OneDrive。ファイルを表示するには、ここをクリックします。":::
 
 2. システムは、既知のフォルダー OneDriveが構成されていることをユーザーに伝えます。
 
-:::image type="content" source="media/onedrive-folders.png" alt-text="IT 部門が重要なフォルダーをバックアップしたという通知を読み取ります。これで、フォルダーがバックアップされ、OneDriveデバイスから利用できます":::
+:::image type="content" source="media/onedrive-folders.png" alt-text="IT 部門が重要なフォルダーをバックアップしたという通知を読み取ります。これで、フォルダーがバックアップされ、OneDriveデバイスから使用できます。":::
 
 3. デバイスがリセットまたは再イメージ化されている場合にデスクトップ上の重複するアイコンを防止するために、エクスプローラーのこのビューに示すように、Microsoft Edge アイコンと Microsoft Teams アイコンが自動的に OneDrive 同期 から削除されます。
 

@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Information Rights Management (IRM) を使用すると、リストまたはライブラリからダウンロードされるファイルを制御および保護できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e6390e20b19c291ea79417082d926e670d7b59a27572d58e25b888e8a18d023
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 84f0443cd31f26549dc1f5dc06be6e7bf52b05dc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887035"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573669"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>リストまたはライブラリに Information Rights Management (IRM) を適用する
 
@@ -48,13 +48,13 @@ Information Rights Management (IRM) を使用すると、リストまたはラ�
 ## <a name="apply-irm-to-a-list-or-library"></a>リストまたはライブラリに IRM を適用する
 <a name="__toc256598179"> </a>
 
-![Information Rights Management 設定](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
+![Information Rights Management 設定.](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
   
 1. IRM を構成するリストまたはライブラリに移動します。
 
 2. リボンで 、[ライブラリ] タブ **を選択** し、[ライブラリ]**を選択設定。** (リストで作業している場合は、[リスト] タブを選択し、[リスト] タブを選択 **設定)。**
     
-    ![SharePointリボン設定ライブラリ ボタン](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
+    ![SharePointリボン設定ライブラリ ボタンを使用します。](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
 3. [アクセス **許可と管理] で、[** 情報権限 **の管理] を選択します**。 [Information Rights Management] リンクが表示されない場合は、サイトで IRM が有効になっていない可能性があります。 サイトの IRM を有効にできる場合は、サーバー管理者に問い合わせてください。 ピクチャ **ライブラリの [Information Rights Management]** リンクは表示されません。
 

@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9a459c120e0bfb4da5c4b98ee576ff347052e358
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: df9bf273edd85fea08cd11838093a1287b0fff97
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400381"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550276"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft マネージド デスクトップライフサイクル
 
@@ -65,7 +65,7 @@ Microsoft マネージド デスクトップユーザーは、最高のパフォ
 
 製品ライフサイクルは、製造元が製品を一般にリリースすると開始されます。
 
-![リリースと評価期間を示すライフサイクル タイムライン](../../media/non-dark3-edits.PNG)
+![リリースと評価期間を示すライフサイクル タイムライン。](../../media/non-dark3-edits.PNG)
 
 この段階では、Microsoft マネージド デスクトップチームが製品の評価と認定を行います。 チームは、Windows の信頼性とパフォーマンス、ハードウェア ベースラインへの準拠、市場のセンチメント、インベントリとチャネルの準備などについて評価します。 通常、このプロセスには約 6 週間かかります。
   
@@ -78,7 +78,7 @@ Microsoft マネージド デスクトップは、可用性の最初の 6 か月
 
 この期間は、製品の可用性の中心です。
 
-![プライマリ可用性を示すライフサイクル タイムライン](../../media/non-dark4-edits.PNG)
+![プライマリ可用性を示すライフサイクル タイムライン。](../../media/non-dark4-edits.PNG)
 
 この期間中に登録されたデバイスは、(青いタイムラインに示すように) Microsoft マネージド デスクトップから 3 年間のサポートを受けます。 この期間は、一般提供日から 24 か月に設定された終了日まで続く。
 
@@ -91,7 +91,7 @@ Microsoft マネージド デスクトップは、可用性の最初の 6 か月
 Microsoft マネージド デスクトップ に登録する前に承認済みデバイスを最近購入した場合でも、登録できますが、3 年間の完全な管理を受け取る必要はありません。 代わりに、いつ登録したのかにかかわらず、退職日にコンプライアンスが満たされません。 これらのデバイスは、Microsoft マネージド デスクトップ空き時間の最終日に登録された場合と同様に処理されます。 この図では、登録の 1 年間の違いにもかかわらず、青と緑の両方のデバイスが同じ日に終了します。
 
 
-![猶予期間を示すライフサイクル タイムライン](../../media/non-dark2-edits.PNG)
+![ライフサイクル タイムラインに猶予期間が表示されます。](../../media/non-dark2-edits.PNG)
 
 前の表の Fabrikam Laptop の例は、次の状況を示しています。 
 

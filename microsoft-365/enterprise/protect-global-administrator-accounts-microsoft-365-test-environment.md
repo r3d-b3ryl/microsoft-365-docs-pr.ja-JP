@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 次の手順を使用して、エンタープライズ テスト環境用にMicrosoft 365管理者アカウントを保護します。
-ms.openlocfilehash: e7d49e82fd53e5383a86bbcafcbf8d8c750195ab
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: d9de3cb42a7473167c5e8c6dda5489aca2241909
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356350"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573705"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>エンタープライズ テスト環境用に、Microsoft 365管理者アカウントを保護する
 
@@ -34,7 +34,7 @@ ms.locfileid: "58356350"
 - [フェーズ 1: エンタープライズ テスト環境Microsoft 365を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [フェーズ 2: 条件付きアクセス ポリシーを構成する](#phase-2-configure-conditional-access-policies)
 
-![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft クラウドのテスト ラボ ガイド。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > エンタープライズ テスト ラボ ガイド スタックの Microsoft 365 内のすべての記事への視覚的なマップについては、「Microsoft 365 テスト ラボ ガイド スタック」[を参照してください](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
@@ -56,7 +56,7 @@ ms.locfileid: "58356350"
 2. [ユーザー **の**  >  **アクティブなユーザー]** を選択し、[ユーザー **の追加] を選択します**。
 3. [ユーザーの **追加] ウィンドウ** で、[名]、[表示名]、および [ユーザー名] ボックスに **「DedicatedAdmin」****と** 入力します。
 4. [ **パスワード] を** 選択 **し、[パスワードを作成する**] を選択し、強力なパスワードを入力します。 この新しいアカウントのパスワードを安全な場所に記録します。
-5. [**次へ**] を選択します。
+5. **[次へ]** を選択します。
 6. [製品ライセンス **の割り当て**] ウィンドウで、[ライセンスの割 **り当て] Microsoft 365 E5** し、[次へ] を **選択します**。
 7. [オプションの **設定] ウィンドウで**、[役割管理センター **アクセス**  >  **グローバル** 管理者  >  **次へ] を**  >  **選択します**。
 8. [ほぼ **完了] ウィンドウで、[** 追加の完了] を選択し、[閉じる] を **選択します**。

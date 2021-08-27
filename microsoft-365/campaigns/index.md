@@ -25,19 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 小さな企業、独立開業、政治キャンペーンなどを含む中小企業向けの Microsoft 365 Business Premium セキュリティと共同作業に関する推奨事項。
-ms.openlocfilehash: bf795b0e5a89532a0b0d30f1c9436eb73739b7cc0d28dbe227dcc52ef5c76c06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8e1da206a23a58d568d6e0e4a9efe04cef510a85
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861548"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573789"
 ---
 # <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>中小企業およびキャンペーン向けの Microsoft 365
 
 Microsoft 365 Business Premium を使用している場合、このライブラリのガイダンスは、セキュリティを設定して安全に共同作業を開始するための最も簡単な方法です。 現代の社会において、データと通信を安全に保つことは、とりわけ医療および法務実務、政治キャンペーン、および他の多くの小規模ビジネスの分野において重要な事項です。 このソリューションでは、お客様とお客様のデータを保護するための一連の推奨事項を提供しています。 このライブラリには、ビジネスの種類にかかわらず、推奨される環境をセットアップして使用するためのヘルプが用意されています。
 
 
-![Microsoft 365 Business Premium は、生産性ツール、共同作業ツール、ファイル ストレージ、メール、デバイス、ID を保護します](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
+![Microsoft 365 Business Premiumツール、コラボレーション ツール、ファイル ストレージ、メール、デバイス、ID を保護します。](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
 
 この構成には、ビジネスを保護するための生産性、共同作業、ファイル ストレージ、メール、デバイス、および ID に関する以下のガイダンスが含まれています。
 
@@ -83,15 +83,15 @@ Microsoft 365 Business Premium を使用している場合、このライブラ�
 
 | 共同作業のためのチームを作成する | オンライン会議を設定する |
 | ------------- | ------------- |
-| ![SharePoint​​ コミュニケーション サイト](../media/sm-m365-democracy-teams-collab.png) | ![オンライン会議](../media/m365-democracy-teams-meetings.png) |
+| ![コミュニケーション SharePointを作成します。](../media/sm-m365-democracy-teams-collab.png) | ![オンライン会議](../media/m365-democracy-teams-meetings.png) |
 | 主要なスタッフ、すべてのスタッフ、およびパートナーまたはベンダーのチームと協力します。<br>[チームを作成する](create-teams-for-collaboration.md) | Microsoft Teams でオーディオ、ビデオ、共有を使用して会議をスケジュールします。<br>[会議を設定する](set-up-meetings.md) |
 
 | 機密情報を暗号化またはラベル付けする | コミュニケーション サイトを作成する |
 | ------------- | ------------- |
-| ![暗号化され、ラベル付けされたメール](../media/sm-m365-campaign-email-encrypt.png) | ![SharePoint​​ コミュニケーションサイト](../media/sm-m365-democracy-comms-site.png) |
+| ![暗号化されたメールとラベル付きメール。](../media/sm-m365-campaign-email-encrypt.png) | ![SharePoint​​ コミュニケーションサイト](../media/sm-m365-democracy-comms-site.png) |
 | 機密情報や機密情報を含むメールを保護するには、暗号化と機密ラベルを使用します。<br>[暗号化された電子メールを送信する](send-encrypted-email.md) | SharePoint で作成した内部のコミュニケーションサイトで、イベント、メッセージ、画像などをチームと共有できます。<br>[サイトを作成する](create-communications-site.md) |
 
 | ファイルやビデオを共有する |
 | ------------- |
-| ![Microsoft Teams のファイルを共有](../media/m365-democracy-teams-sharefiles.png) |
+| ![ファイルを共有Microsoft Teams。](../media/m365-democracy-teams-sharefiles.png) |
 | ファイルとビデオをクラウドに保存して、 <br>適切なすべてのユーザーが利用できるようにします。<br>[共有の開始](share-files-and-videos.md) |

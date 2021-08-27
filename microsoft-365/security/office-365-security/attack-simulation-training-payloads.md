@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法をOffice 365。
 ms.technology: mdo
-ms.openlocfilehash: 9a597fd05c9b975c54518828ebbd2433bc47b835
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 72600b787f1570839b0d6ee3fefc7467af5ac08b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257437"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573837"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>攻撃シミュレーショントレーニングのカスタム ペイロードを作成する
 
@@ -45,7 +45,7 @@ Microsoft は、攻撃シミュレーション トレーニングと組み合わ
 
 リッチ テキスト エディターを使用してペイロードを作成できます。 事前に作成したメールをインポートできます。 電子メールの本文を作成する場合は、動的タグを利用して、メールをターゲットに合ってカスタマイズします。 [ **フィッシング] リンクをクリック** して、以前に選択したフィッシング URL をメッセージの本文に追加します。
 
-![Microsoft Defender のペイロードの作成で強調表示されているフィッシング リンクと動的Office 365](../../media/attack-sim-preview-payload-email-body.png)
+![Microsoft Defender のペイロード作成で強調表示されているフィッシング リンクと動的Office 365。](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > 時間を節約するには、電子メール メッセージ内のすべてのリンクをフィッシング リンクに置き換える **オプションをオンにします**。
@@ -58,7 +58,7 @@ Microsoft は、攻撃シミュレーション トレーニングと組み合わ
 
 ドロップダウン リストから使用するインジケーターを選択します。 このリストは、フィッシングメール メッセージに表示される最も一般的な手がかりを含むキュアリングされます。 選択したら、インジケーターの配置が [メールの本文から] に設定され、[テキストの選択] を **クリックします**。 このインジケーターが表示されるペイロードの部分を強調表示し、[選択] を **クリックします**。
 
-![攻撃シミュレーション トレーニングでインジケーターに追加するメッセージ本文の強調表示されたテキスト](../../media/attack-sim-preview-select-text.png)
+![攻撃シミュレーション トレーニングでインジケーターに追加するメッセージ本文の強調表示されたテキスト。](../../media/attack-sim-preview-select-text.png)
 
 インジケーターを説明するカスタムの説明を追加し、インジケーターのプレビュー フレーム内をクリックすると、インジケーターのプレビューが表示されます。 完了したら、[追加] を **クリックします**。 ペイロード内のすべてのインジケーターをカバーするまで、これらの手順を繰り返します。
 

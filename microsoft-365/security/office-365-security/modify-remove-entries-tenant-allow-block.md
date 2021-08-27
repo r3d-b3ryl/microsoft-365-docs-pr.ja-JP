@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧でエントリを変更および削除する方法について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 951468fb9b3245135356d956e488c55390e9c6f9
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: d2d5ce65836accd94dec497e5be0087a94742ca0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349790"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573813"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストのエントリを変更および削除する
 
@@ -46,7 +46,7 @@ ms.locfileid: "58349790"
    - **Files**
    - 「**スプーフィング**」
 
-3. 変更するエントリを選択し、[編集] アイコン [編集] ![ を ](../../media/m365-cc-sc-edit-icon.png) **クリックします**。 表示されるフライアウトで変更できる値は、前の手順で選択したタブによって異なっています。
+3. 変更するエントリを選択し、[編集] アイコン ![ をクリックします。](../../media/m365-cc-sc-edit-icon.png) **編集**。 表示されるフライアウトで変更できる値は、前の手順で選択したタブによって異なっています。
    - [**Senders (送信者)**]
      - **有効期限や有効期限** はありません。
      - **省略可能なメモ**
@@ -73,7 +73,7 @@ ms.locfileid: "58349790"
    - **Files**
    - 「**スプーフィング**」
 
-3. 削除するエントリを選択し、[削除] アイコン [削除] ![ を ](../../media/m365-cc-sc-delete-icon.png) **クリックします**。
+3. 削除するエントリを選択し、[削除] アイコン ![ をクリックします。](../../media/m365-cc-sc-delete-icon.png) **Delete**
 
 4. 表示される警告ダイアログで、[削除] を **クリックします**。
 

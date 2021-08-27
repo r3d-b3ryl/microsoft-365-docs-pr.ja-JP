@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: この記事では、監査ログ レコードのエクスポート、構成、およびMicrosoft 365について学習します。
-ms.openlocfilehash: cf35f1936cebf9d3d8ba89d39f18a4977835f954
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 33bcf3ee79a7ee27cc87825458d7d98cda590773
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507916"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567014"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
 
@@ -37,7 +37,7 @@ ms.locfileid: "58507916"
 
 2. [結果 **のエクスポート] をクリック** し、[すべての結果 **をダウンロードする] を選択します**。 
 
-   ![[すべての結果をダウンロードする] をクリックします。](../media/ExportAuditSearchResults.png)
+   ![[すべての結果をダウンロード] をクリックします。](../media/ExportAuditSearchResults.png)
 
    このオプションは、手順 1 で実行した監査ログ検索からすべての監査レコードをエクスポートし、未加工データを監査ログから CSV ファイルにダウンロードします。 
 
@@ -45,7 +45,7 @@ ms.locfileid: "58507916"
 
 3. [ **名前を>保存] をクリックし** 、CSV ファイルをローカル コンピューターに保存します。 多くの検索結果をダウンロードするには、しばらく時間が必要です。 これは通常、すべてのアクティビティまたは広い日付範囲を検索する場合に当てはまっています。 CSV ファイルのダウンロードが完了すると、ウィンドウの下部にメッセージが表示されます。
 
-   ![CSV ファイルのダウンロードが完了すると表示されるメッセージ](../media/ExportAuditSearchResultsFinish.png)
+   ![CSV ファイルのダウンロードが完了すると、メッセージが表示されます。](../media/ExportAuditSearchResultsFinish.png)
 
 > [!NOTE]
   > 1 回の監査ログ検索から最大 50,000 エントリを CSV ファイルにダウンロードできます。 CSV ファイルに 50,000 エントリがダウンロードされている場合は、検索条件を満たすイベントが 50,000 件を超える可能性があります。 この制限を超える値をエクスポートするには、日付範囲を使用して監査ログ レコードの数を減らしてみてください。 50,000 を超えるエントリをエクスポートするには、日付範囲が小さい複数の検索を実行する必要がある場合があります。
@@ -74,13 +74,13 @@ ms.locfileid: "58507916"
 
 6. **[AuditData]** 列の右上隅にある展開アイコンをクリックします。
 
-   ![[AuditData] 列で、[展開] アイコンをクリックします。](../media/JSONTransformExpandIcon.png)
+   ![[AuditData] 列で、展開アイコンをクリックします。](../media/JSONTransformExpandIcon.png)
 
    **AuditData** 列の JSON オブジェクトのプロパティの一部が表示されます。
 
 7. [ **詳細を読み込** む] をクリックして **、[AuditData]** 列の JSON オブジェクトのすべてのプロパティを表示します。
 
-   ![JSON オブジェクトのすべてのプロパティを表示するには、[その他の読み込み] をクリックします。](../media/JSONTransformLoadJSONProperties.png)
+   ![JSON オブジェクト内のすべてのプロパティを表示するには、[詳細を読み込む] をクリックします。](../media/JSONTransformLoadJSONProperties.png)
 
    含めたくないプロパティの横にあるチェック ボックスをオフにできます。 調査に役立てない列を削除すると、監査ログに表示されるデータ量を減らすのに役立ちます。 
 

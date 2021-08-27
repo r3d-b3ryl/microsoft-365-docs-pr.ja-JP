@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Microsoft Bookings の予定の前または後にバッファー時間を設定して、機器のクリーンアップまたはリセットに時間を割り当て。
-ms.openlocfilehash: 932dc842b5e81589c4120bf23e53c5d66709830053879a67e30468e72eb4e4b7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 21830b0cc1ec2f14bc845937387e700fb7a2ee72
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838117"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573681"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Microsoft Bookings でバッファー時間を設定する
 
@@ -28,7 +28,7 @@ ms.locfileid: "53838117"
 
 バッファー時間の設定は、[サービスの詳細] ページの **[既定の** 期間ピッカー] **の下にあります** 。 特定のサービスに対して設定する前に、バッファー時間トグルを選択してバッファー時間設定を有効にする必要があります。 これにより、次に **示** すように、予約の前と後に保持する既定の時間を選択するために使用される [Before] ドロップダウンと [After] ドロップダウンが表示されます。
 
-   ![バッファー時間が有効になっている予約のイメージ](../media/bookings-buffertime.png)
+   ![バッファー時間が有効になっている予約のイメージ。](../media/bookings-buffertime.png)
 
 ## <a name="buffer-time-and-appointment-timing"></a>バッファー時間と予定タイミング
 
@@ -36,7 +36,7 @@ ms.locfileid: "53838117"
 
 イベント自体 (下の図の左側) には、バッファー時間の明るい網かけと、実際の顧客予定の濃い網かけが表示されます。 予定の呼び出し (イベントを選択すると開きます) は、特に予定が Katie Jordan の午前 9:00 から午前 10:00 までであり、予定の前に 15 分のバッファー時間と予定の 0 分後に含まれると具体的に示しています。 スタッフへの確認とリマインダーは、同様に特定のバッファーと予定時間を参照しますが、顧客は午前 9:00 ~ 午前 10:00AM の予定時間を参照する確認とリマインダーのみを取得します。
 
-   ![バッファー時間を示す予約予定の呼び出しのイメージ](../media/bookings-buffertime-callout.png)
+   ![バッファー時間が表示された Bookings 予定の呼び出しのイメージ。](../media/bookings-buffertime-callout.png)
 
 ## <a name="buffer-time-and-availability"></a>バッファー時間と空き時間
 

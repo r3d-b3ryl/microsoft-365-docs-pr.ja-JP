@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 232cb81080a8d478b57b2f87a8b98752e51b0c20
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f5ef47fd03614c34e9cb459442e8c1f2a144f4b8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258408"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573885"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>マネージド セキュリティ サービス プロバイダー (MSSP) アクセスを提供する 
 
@@ -58,7 +58,7 @@ ms.locfileid: "58258408"
 
     カスタマー Microsoft 365 Defender ポータルで RBAC を有効にするには、グローバル管理者またはセキュリティ管理者権限を持つユーザー アカウントを使用して、> **Endpoints** の役割 & グループ > Roles にアクセスします。
 
-    ![MSSP アクセスのイメージ](../../media/mssp-access.png)
+    ![MSSP アクセスのイメージ。](../../media/mssp-access.png)
 
     次に、MSSP SOC Tier のニーズを満たす RBAC ロールを作成します。 [割り当てられたユーザー グループ] を使用して、作成されたユーザー グループにこれらの役割をリンクします。
 
@@ -86,7 +86,7 @@ ms.locfileid: "58258408"
 
     これを行うには、テナントの顧客AD、Identity Governance: Catalogs にアクセスし、新しいカタログ **を追加します**。 この例では **、MSSP Accesses を呼び出します**。
 
-    ![新しいカタログのイメージ](../../media/goverance-catalog.png)
+    ![新しいカタログのイメージ。](../../media/goverance-catalog.png)
 
     詳細については、「リソースのカタログ [を作成する」を参照してください](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
@@ -101,7 +101,7 @@ ms.locfileid: "58258408"
     - MSSP SOC テナント内のユーザーだけが要求できる
     - 365 日後に自動アクセスが期限切れになる
 
-    ![新しいアクセス パッケージのイメージ](../../media/new-access-package.png)
+    ![新しいアクセス パッケージのイメージ。](../../media/new-access-package.png)
 
     詳細については、「新しいアクセス [パッケージを作成する」を参照してください](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
@@ -109,7 +109,7 @@ ms.locfileid: "58258408"
 
     [マイ アクセス ポータル] リンクは、MSSP SOC アナリストが作成したアクセス パッケージを介してアクセスを要求するために使用されます。 リンクは永続的です。つまり、同じリンクが新しいアナリストのために時間の間に使用される可能性があります。 アナリスト要求は、MSSP アナリスト承認者による承認のためにキュー **に入ります**。
 
-    ![アクセス プロパティのイメージ](../../media/access-properties.png)
+    ![アクセス プロパティのイメージ。](../../media/access-properties.png)
 
     リンクは、各アクセス パッケージの概要ページに表示されます。
 

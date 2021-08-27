@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74bfa73ff9c647a0e6979eb18b06342fe2bea1ed
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 92d9a6dabc2d8f6251b46d58207170d0c460aa90
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532945"
+ms.locfileid: "58567182"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Microsoft Defender for Endpoint デバイスのタイムライン イベント フラグ
 
@@ -47,6 +47,8 @@ Defender for Endpoint デバイスのタイムラインは、デバイスで観�
 ## <a name="flag-an-event"></a>イベントにフラグを設定する
 
 1. フラグを設定するイベントを検索する
+2. [フラグ] 列のフラグ アイコンをクリックします。 
+![デバイスのタイムライン フラグのイメージ。](images/device-flags.png)
 2. [フラグ] 列のフラグ アイコンをクリックします。
 
    ![デバイスのタイムライン フラグのイメージ](images/device-flags.png)
@@ -54,6 +56,9 @@ Defender for Endpoint デバイスのタイムラインは、デバイスで観�
 ## <a name="view-flagged-events"></a>フラグが設定されたイベントを表示する
 
 1. [タイムライン のフィルター **] セクション** で、[フラグ付 **きイベント] を有効にします**。
+2. **[適用]** をクリックします。 フラグが設定されたイベントだけが表示されます。
+タイム バーをクリックすると、追加のフィルターを適用できます。 これにより、フラグが設定されたイベントより前のイベントだけが表示されます。  
+![フィルターがオンのデバイス タイムライン フラグのイメージ。](images/device-flag-filter.png)
 2. **[適用]** をクリックします。 フラグが設定されたイベントだけが表示されます。 タイム バーをクリックすると、追加のフィルターを適用できます。 これにより、フラグが設定されたイベントより前のイベントだけが表示されます。
 
    ![フィルターがオンのデバイス タイムライン フラグのイメージ](images/device-flag-filter.png)

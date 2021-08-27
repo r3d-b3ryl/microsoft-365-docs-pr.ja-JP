@@ -24,18 +24,18 @@ search.appverid:
 - MET150
 - MOE150
 description: ユーザーに対するこれらのセキュリティ推奨事項Microsoft 365 Business Premiumユーザーに与える影響とデータの保護について学習します。
-ms.openlocfilehash: 8e2ce13b694aa526c3c063bec7a4dc8c7699244f2c00f4dfee5d38bfe5208b1b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8f8ccbbb1f9edb6eb9b1f29078317727b5e9b6e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881690"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567134"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>これらのセキュリティ推奨事項がユーザーに与える影響
 
 このソリューションのセキュリティMicrosoft 365、ハッカーが環境にアクセスするのがはるかに困難になります。 トレードオフは、ユーザーが、このより安全な環境で作業する方法を認識する必要があるという点です。 少し余分な忍耐が必要な場合は理解していますが、組織を保護する価値があります。
 
-![iPhone、Android デバイス、Mac、mac、Windows 10、主要なスタッフの重要なポイントを以下から要約した図](../media/M365-democracy-Users_900px.png)
+![iPhone、Android デバイス、Mac、mac、Windows 10、主要なスタッフの主なポイントを以下から要約した図。](../media/M365-democracy-Users_900px.png)
 
 ## <a name="use-secure-email-practices"></a>セキュリティで保護された電子メールのプラクティスを使用する
 

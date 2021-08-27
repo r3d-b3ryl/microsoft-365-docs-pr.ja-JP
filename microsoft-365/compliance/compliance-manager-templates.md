@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定されたファイルを使用してテンプレートを作成Excelします。
-ms.openlocfilehash: fe6b8a946edb84fbeb5eb002eb33c4af2790b23b
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 9031d94bfe3c9fba0ba53e23c229a6b207d0e4b2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393366"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567062"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーでの評価テンプレートの操作
 
@@ -159,7 +159,7 @@ Microsoft 365ユニバーサル バージョンのテンプレートには共同
 
 - **actionScore**: この必須フィールドに、アクションの数値スコア値を指定します。 値は、1 ~ 99 の範囲の数値である必要があります。0、null、または空白にすることはできません。 数値が大きいほど、コンプライアンス態勢の向上に向けてその値が大きくなります。 次の図は、コンプライアンス マネージャーがコントロールをスコア付けする方法を示しています。
 
-  ![コンプライアンス マネージャーがポイント値を制御する](../media/compliance-score-action-scoring.png "コンプライアンス マネージャーがポイント値を制御する")
+  ![コンプライアンス マネージャーは、ポイント値を制御します。](../media/compliance-score-action-scoring.png "コンプライアンス マネージャーがポイント値を制御する")
 
 - **actionDescriptionTitle**: これは説明のタイトルであり、必須です。 この説明タイトルを使用すると、複数のテンプレートで同じアクションを実行し、各テンプレートで異なる説明を表示できます。  このフィールドは、説明が参照しているテンプレートを明確にするのに役立ちます。 ほとんどの場合、作成するテンプレートの名前をこのフィールドに入力できます。
 

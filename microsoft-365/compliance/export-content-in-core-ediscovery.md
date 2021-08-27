@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コア電子情報開示ケースからコンテンツをエクスポートおよびダウンロードする方法について説明します。Microsoft 365。
-ms.openlocfilehash: c74cf79ffc5defe495ed03ac45182dbd8e36582418879d6cf367242b96095eb9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 68535f8623b26aa4f2b30dc88362f4550c256162
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850822"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567026"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>コア電子情報開示ケースからコンテンツをエクスポートする
 
@@ -40,7 +40,7 @@ Core 電子情報開示ケースに関連付けられた検索が正常に実行
 
 5. [フライアウト **] ページ** の下部にある [操作] メニューで、[結果のエクスポート] **をクリックします**。
 
-   ![[操作] メニューの [結果のエクスポート] オプション](../media/ActionMenuExportResults.png)
+   ![[操作] メニューの [結果のエクスポート] オプション。](../media/ActionMenuExportResults.png)
 
    Core 電子情報開示ケースに関連付けられた検索の結果をエクスポートするワークフローは、[コンテンツ検索] ページで検索の検索結果をエクスポートする場合 **と同** じです。 詳細な手順については、「コンテンツ検索結果のエクスポート [」を参照してください](export-search-results.md)。
 
@@ -51,7 +51,7 @@ Core 電子情報開示ケースに関連付けられた検索が正常に実行
   
 6. ケースの **[エクスポート]** タブをクリックして、エクスポート ジョブの一覧を表示します。
   
-   ![コア電子情報開示ケースの [エクスポート] タブでジョブをエクスポートする](../media/CoreeDiscoveryExport.png)
+   ![コア電子情報開示ケースの [エクスポート] タブでジョブをエクスポートします。](../media/CoreeDiscoveryExport.png)
 
    [更新] を **クリックして** エクスポート ジョブの一覧を更新し、作成したエクスポート ジョブを表示する必要がある場合があります。 エクスポート ジョブの名前は、対応する検索と同じ名前で、_Export **に追加** されます。
 

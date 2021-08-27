@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: 組織外のユーザーとの共有に影響を与える可能性がある、Microsoft 365 で使用できるゲスト共有設定について説明します。
-ms.openlocfilehash: b8b8b8481dca5074d2db6c3022d65e160cdf7b04
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: 056152e44dbe2fc11265e64c548b1056fd72e517
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58418027"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573825"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -42,7 +42,7 @@ Azure Active Directory は、Microsoft 365 により使用されるディレク�
 
 **ナビゲーション:** [[Azure Active Directory 管理センター]](https://aad.portal.azure.com) > [Azure Active Directory] > [外部 ID] > [外部コラボレーションの設定]
 
-![Azure Active Directory における組織の関係の設定ページのスクリーンショット](../media/azure-ad-organizational-relationships-settings.png)
+![Azure Active Directory の [組織関係設定] ページのスクリーンショット](../media/azure-ad-organizational-relationships-settings.png)
 
 | 設定 | 既定値 | 説明 |
 |:-----|:-----|:-----|
@@ -177,7 +177,7 @@ SharePoint と OneDrive でファイルとフォルダーを共有すると、�
 
 **ナビゲーション:** [SharePoint 管理センター] > [共有]
 
-![SharePoint における組織レベルのファイルとフォルダー設定のスクリーンショット](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![SharePoint における組織レベルのファイルとフォルダー共有設定のスクリーンショット](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 | 設定 | 既定値 | 説明 |
 |:-----|:-----|:-----|

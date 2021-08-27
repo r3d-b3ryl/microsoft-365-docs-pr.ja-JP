@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3678101be4f519f621a5fa0dd6b85c3f68e6ef68
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 01f96874ce234d5f4e10923dda47d646eb1c1da5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347254"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567354"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Microsoft 脅威エキスパートの機能を構成および管理する
 
@@ -34,7 +34,7 @@ ms.locfileid: "58347254"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -53,15 +53,15 @@ Defender for Endpoint のお客様が既に存在する場合は、アプリケ�
 
 2. **[適用]** をクリックします。
 
-    ![ユーザー設定Microsoft 脅威エキスパートイメージ](images/mte-collaboratewithmte.png)
+    ![ユーザー設定Microsoft 脅威エキスパートイメージ。](images/mte-collaboratewithmte.png)
 
 3. 自分の名前とメール アドレスを入力して、Microsoft がアプリケーションに戻ってきます。
 
-    ![アプリケーションのMicrosoft 脅威エキスパート画像](images/mte-apply.png)
+    ![アプリケーションのMicrosoft 脅威エキスパートイメージ。](images/mte-apply.png)
 
 4. プライバシーに [関する声明を読み](https://privacy.microsoft.com/privacystatement)、完了 **したら [送信** ] をクリックします。 アプリケーションが承認されると、ウェルカム メールが届きます。
 
-    ![アプリケーションのMicrosoft 脅威エキスパートのイメージ](images/mte-applicationconfirmation.png)
+    ![アプリケーション確認Microsoft 脅威エキスパートのイメージ。](images/mte-applicationconfirmation.png)
 
 受け入れられると、ウェルカム メールが届き、[ **適用** ] ボタンが "オン" のトグルに変更されます。 ターゲット攻撃通知サービスから自分を取り出す場合は、トグルをスライド "off" にし、ページの下部にある [設定の保存] をクリックします。
 
@@ -106,15 +106,15 @@ Microsoft 脅威エキスパートから、以下の媒体を通じて、標的�
 
 2. 右上のメニューから 、 をクリックします **。** 選択します。 次に、[脅威 **の専門家に相談する] を選択します**。
 
-    ![メニューからMicrosoft 脅威エキスパートエキスパートオンデマンドのイメージ](images/mte-eod-menu.png)
+    ![メニューからMicrosoft 脅威エキスパートエキスパートオンデマンドのイメージ。](images/mte-eod-menu.png)
 
     フライアウト画面が開きます。 次の画面は、試用版サブスクリプションの場合に表示されます。
 
-    ![オンデマンド画面Microsoft 脅威エキスパートエキスパートの画像](images/mte-eod.png)
+    ![オンデマンド画面Microsoft 脅威エキスパートエキスパートの画像。](images/mte-eod.png)
 
     次の画面は、完全なサブスクリプションを使用している場合Microsoft 脅威エキスパートエキスパート オンデマンド サブスクリプションを表示します。
 
-    ![オンデマンドのMicrosoft 脅威エキスパートの完全なサブスクリプション画面の画像](images/mte-eod-fullsubscription.png)
+    ![オンデマンドのMicrosoft 脅威エキスパートの完全なサブスクリプション画面の画像。](images/mte-eod-fullsubscription.png)
 
     [ **問い合わせ** ] トピック フィールドには、調査要求の関連ページへのリンクが事前に入力されています。 たとえば、要求を行った時点で発生したインシデント、アラート、またはデバイスの詳細ページへのリンクです。
 

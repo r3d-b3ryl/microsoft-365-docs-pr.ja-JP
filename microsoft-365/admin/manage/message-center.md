@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: メッセージ センターの概要Microsoft 365、新機能や変更された機能、その他の重要なアナウンスを追跡する役割について説明します。
-ms.openlocfilehash: ec011330541e9b1c03ba5bb12f3e41645ace5abdecba4de357906e93f9cbfc37
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fec3b0e88f7f399fcde821d1cdc55baa99c477e9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825127"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567002"
 ---
 # <a name="message-center"></a>メッセージ センター
 
@@ -90,7 +90,7 @@ ms.locfileid: "53825127"
 
 [**サービス**] と [**タグ**] を除いた任意の列見出しをクリックすると、メッセージを昇順または降順で並べ替えることができます。
 
-:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="[管理者への影響] ごとに並べ替えられたメッセージ センター ビュー":::
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="管理者による影響で並べ替えたメッセージ センター ビュー。":::
 
 ::: moniker-end
 
@@ -100,7 +100,7 @@ ms.locfileid: "53825127"
 
 任意の列見出しをクリックすると、メッセージを昇順または降順で並べ替えることができます。 たとえば、このイラストのメッセージは、**[対応期限]** の日付に基づいて並べ替えられています。
 
-![[管理者への影響] タグごとに並べ替えられたメッセージ センター ビュー](../../media/message-center-filter-act-by.png)
+![管理影響タグで並べ替えたメッセージ センター ビュー。](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 

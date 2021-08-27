@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ec2057eefc5cb1e8ce59138a1f5a15b7ed0fdd01
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 1e04c9a817bfe799c15e3609e190980bfc4145e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508216"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550288"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>エンドポイント API 用 Microsoft Defender - Hello World
 
@@ -59,7 +59,7 @@ ms.locfileid: "58508216"
 
 2. [アプリの **登録Azure Active Directory** \> **新しい登録]** \> **に移動します**。
 
-   ![アプリケーション登録Microsoft Azureナビゲーションのイメージ](images/atp-azure-new-app2.png)
+   ![アプリケーションの登録Microsoft Azureナビゲーションのイメージ。](images/atp-azure-new-app2.png)
 
 3. 登録フォームで、アプリケーションの名前を選択し、[登録] を **クリックします**。
 
@@ -69,11 +69,11 @@ ms.locfileid: "58508216"
 
    - **注**: WindowsDefenderATP は元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
 
-   ![API アクセスと API 選択のイメージ1](images/add-permission.png)
+   ![API アクセスと API 選択のイメージ 1。](images/add-permission.png)
 
    - [ **アプリケーションのアクセス許可** \> **] Alert.Read.All >** [アクセス許可の追加 **] をクリックします。**
 
-   ![API アクセスと API 選択のイメージ2](images/application-permissions.png)
+   ![API アクセスと API 選択 2 のイメージ。](images/application-permissions.png)
 
    **重要な注意**: 関連するアクセス許可を選択する必要があります。 'すべてのアラートの読み取り' は、一例にすら限定されます。
 
@@ -87,7 +87,7 @@ ms.locfileid: "58508216"
 
    - **注**: アクセス許可を追加する度に、[新しい **アクセス許可を** 有効にするための同意の付与] をクリックする必要があります。
 
-   ![アクセス許可の付与のイメージ](images/grant-consent.png)
+   ![アクセス許可の付与のイメージ。](images/grant-consent.png)
 
 6. アプリケーションにシークレットを追加します。
 
@@ -95,13 +95,13 @@ ms.locfileid: "58508216"
 
     **重要**: [追加] をクリックした後 **、生成されたシークレット値をコピーします**。 退出後に取得できない!
 
-    ![アプリ キーの作成のイメージ](images/webapp-create-key2.png)
+    ![アプリ キーの作成のイメージ。](images/webapp-create-key2.png)
 
 7. アプリケーション ID とテナント ID を書き出します。
 
    - アプリケーション ページで、[概要] に移動 **し** 、次をコピーします。
 
-   ![作成されたアプリ ID のイメージ](images/app-and-tenant-ids.png)
+   ![作成されたアプリ ID のイメージ。](images/app-and-tenant-ids.png)
 
 完了! アプリケーションの登録に成功しました!
 
@@ -139,7 +139,7 @@ ms.locfileid: "58508216"
   - 上部ボックスに貼り付けます。
   - [役割] セクションを探します。 Alert.Read.All ロールを検索します。
 
-  ![イメージ jwt.ms](images/api-jwt-ms.png)
+  ![イメージ jwt.ms。](images/api-jwt-ms.png)
 
 ### <a name="lets-get-the-alerts"></a>アラートを取得できます。
 

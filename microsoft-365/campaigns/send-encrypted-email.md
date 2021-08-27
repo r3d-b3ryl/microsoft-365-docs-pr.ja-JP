@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 電子メールを使用して暗号化された電子メールを送信するOutlook。
-ms.openlocfilehash: c9ce78b744f903427b5e88bfb9fc1695279ebe30535ee97eca32a5fc3b6b35f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 789477557801f2c8b89fa2bb281d0b0f2faf993a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867008"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567110"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>機密情報を暗号化またはラベル付けする
 
@@ -43,7 +43,7 @@ ms.locfileid: "53867008"
 - **暗号化:** 電子メールを暗号化して、電子メール内の情報のプライバシーを保護できます。 電子メール メッセージを暗号化すると、読み取り可能なプレーン テキストからスクランブルされたサイファー テキストに変換されます。 メッセージの暗号化に使用される公開キーと一致するプライベート キーを持つ受信者だけが、メッセージを読み取り用に解読できます。 ただし、対応するプライベート キーのない受信者には、解読できないテキストが表示されます。 管理者は、特定の条件を満たすメッセージを自動的に暗号化するルールを定義できます。 たとえば、管理者は、組織外で送信されたメッセージまたは特定の単語や語句に言及しているすべてのメッセージを暗号化するルールを作成できます。 暗号化ルールは自動的に適用されます。
 - **感度ラベル:** また、キャンペーンでは、ファイルやメールに適用できる感度ラベルを設定して、キャンペーンの情報保護ポリシーに準拠することができます。 ラベルを設定すると、メッセージにヘッダーとして表示されるなど、送信された場合でも、ラベルはメールと一緒に保持されます。
 
-![ラベルと暗号化の吹き出しを含む電子メールの図](../media/m365-campaign-email-encrypt.png)
+![ラベルと暗号化の吹き出しを含む電子メールの図。](../media/m365-campaign-email-encrypt.png)
 
 ## <a name="set-it-up"></a>設定する
 

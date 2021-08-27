@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Normal
 description: ユーザー補助モードを使用してモデルをトレーニングする方法についてSharePoint Syntex。
-ms.openlocfilehash: 349c9ff2fee37e4f40185c4d61592eb379d83382d373961980bfb615db7040c3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 73a867c3157d3debc584995708a337c36b6b0028
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795460"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573753"
 ---
 # <a name="sharepoint-syntex-accessibility-mode"></a>SharePoint Syntex アクセシビリティ モード
 
@@ -23,13 +23,13 @@ ms.locfileid: "53795460"
 これにより、ユーザーはキーボードを使用してドキュメント ビューアー内のテキスト内を移動したり、選択した値だけでなく、アクション (選択したテキストからのラベル付けや削除など) のナレーションや、追加のサンプル ドキュメントを使用してモデルをトレーニングする場合の予測ラベル値を聞くことができます。 
 
 
-![アクセシビリティ モード](../media/content-understanding/accessibility-mode.png)
+![アクセシビリティ モード。](../media/content-understanding/accessibility-mode.png)
 
 ## <a name="requirements"></a>要件
 
 ナレーションの音声を聞く場合は、ナレーター アプリを[](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1)ナレーター設定でオンにWindows 10してください。
 
-![ナレーターを有効にする](../media/content-understanding/narrator-settings.png)
+![ナレーターを有効にする。](../media/content-understanding/narrator-settings.png)
 
 ## <a name="labeling-for-keyboard-users"></a>キーボード ユーザーのラベル付け
 

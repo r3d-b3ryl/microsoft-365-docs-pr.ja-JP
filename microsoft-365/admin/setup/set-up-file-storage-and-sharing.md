@@ -31,12 +31,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: ストレージとファイル共有をOneDrive共有するために、Microsoft 365サイトとチーム Microsoft 365する方法について学習します。
-ms.openlocfilehash: 8fac85da0b6416fe846bf5eb35ffb0761b26ad21
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 69ecb461396ef220258ce174d462ea7afda5aa8a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394734"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566894"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>ファイルストレージと共有を設定する方法は、Microsoft 365
 
@@ -56,7 +56,7 @@ ms.locfileid: "58394734"
 
 ユーザー OneDriveチーム サイトの両方が、ユーザーと従業員に任意の場所にアクセスできます。
   
-![製品がユーザーまたはチーム サイトMicrosoft 365する方法をOneDrive図](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![製品がユーザーまたはチーム サイトMicrosoft 365使用する方法OneDrive図。](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 サイトとチーム サイトを一緒に使用する場合に、各場所にOneDrive推奨事項を次に示します。<br/>
 
@@ -85,7 +85,7 @@ ms.locfileid: "58394734"
 
 3. このOneDrive、チーム メンバーは独自のビジネス関連のファイルを保存できます。 個々のファイルまたはフォルダー全体を共有できます。 ファイルまたはフォルダーを選択し、右クリックし、[共有] を **選択します**。
 
-    ![フォルダーの共有](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
+    ![フォルダーの共有。](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
 4. [リンクの **送信] ページ** で、既定の選択のままにします。リンクを持つユーザー **は、表示および編集できます**。
 
@@ -97,11 +97,11 @@ ms.locfileid: "58394734"
   
 5. 共有するユーザーの入力が完了したら、[送信] を **選択します**。 メールは、招待するユーザーに直ちに送信されます。
 
-    ![名前の一覧を表示するリンクを共有する](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
+    ![名前の一覧を表示するリンクを共有します。](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
 6. メールの外観を次に示します。 
 
-    ![メールにリンクを付け、OneDrive共有する](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
+    ![[メール] フォルダーを共有するOneDriveメール。](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
   
 ### <a name="upload-files-to-a-team-site-for-online-collaboration"></a>アップロードの共同作業のためにチーム サイトにファイルを保存する
 
@@ -142,15 +142,15 @@ ms.locfileid: "58394734"
   
 4. [セットアップ] ダイアログ が表示 **OneDrive、** 仕事用または学校用のアカウントでサインインします。
 
-    ![OneDriveセットアップ画面](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
+    ![OneDrive画面を開きます。](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
 5. まだ同期していない場合は、OneDriveフォルダー画面 **が表示OneDriveがあります**。 [自分のファイル] フォルダー **のOneDriveを確認します**。 別の **パスを使用** する場合は、[場所の変更] を選択し、[次へ] を **選択します**。
 
-    ![この画面でローカル フォルダーを変更する](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
+    ![この画面でローカル フォルダーを変更します。](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
 6. チーム サイト内のファイルは、組織の名前の下にあるエクスプローラーの左側のウィンドウに表示されます。 このファイルはOneDrive "OneDrive - " の下に表示 \<Name of Organization\> されます。
 
-    ![ローカル フォルダーで同期されている情報を確認する](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
+    ![ローカル フォルダーで同期されている情報を確認します。](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
 7. コンピューター上のチームのフォルダー内のファイルを開いて、同期をテストします。 変更を行い、[保存] を **選択します**。
 

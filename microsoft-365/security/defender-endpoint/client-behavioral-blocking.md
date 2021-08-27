@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 87e1532f126488e21d869d4f04a04d56c483f6b6
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 5afa8ec7fc6d4adeef5a099a18e335b7a9e68f5b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509859"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567366"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 
@@ -38,7 +38,7 @@ ms.locfileid: "58509859"
 
 クライアントの動作ブロックは、Defender [](behavioral-blocking-containment.md) for Endpoint の動作ブロックと格納機能のコンポーネントです。 デバイス (クライアントまたはエンドポイントとも呼ばれます) で疑わしい動作が検出されると、アーティファクト (ファイルやアプリケーションなど) が自動的にブロック、チェック、修復されます。
 
-:::image type="content" alt-text="クラウドとクライアントの保護" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
+:::image type="content" alt-text="クラウドとクライアントの保護。" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 ウイルス対策保護は、クラウド保護と組み合わせた場合に最適です。
 

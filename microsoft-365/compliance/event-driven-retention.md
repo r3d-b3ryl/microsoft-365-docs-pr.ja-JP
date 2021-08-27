@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: 9f5ca3c0941d2f7c72d72da34d1a840ecf42c68e
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e5be01ed75468d97c0cadf229512bce2f90efea5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531529"
+ms.locfileid: "58567050"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
@@ -82,7 +82,7 @@ ms.locfileid: "58531529"
 
 イベント ドリブンの保持のワークフロー概要:
   
-![イベント ベースの保持をセットアップするワークフローの図](../media/event-based-retention-process.png)
+![イベント ベースの保持をセットアップするワークフローの図。](../media/event-based-retention-process.png)
   
 > [!TIP]
 > SharePont の管理プロパティを使用して保持ラベルを自動適用し、イベント ドリブンの保持を実装する詳細なシナリオについては、[保持ラベルを使用して SharePoint ドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)を参照してください。
@@ -91,7 +91,7 @@ ms.locfileid: "58531529"
 
 保持ラベルを作成するには、[[保持ラベルの作成と構成](./create-apply-retention-labels.md#step-1-create-retention-labels)] の手順をご覧ください。 ただし、イベント ベースの保持に固有の [保持ラベルの作成] ウィザードの [**保持設定の定義**] ページで、**次の期間に基づいて保持期間を開始** した後、既定のイベントの種類の 1 つをドロップダウン リスト、または **新しいイベントの種類の作成** を選択して独自のリストを作成します。
 
-![保持ラベルの新しいイベントの種類を作成する](../media/SPRetention6.png)
+![保持ラベルの新しいイベントの種類を作成します。](../media/SPRetention6.png)
 
 イベントの種類とは、保持ラベルに関連付けるイベントの一般的な説明です。
 
@@ -135,13 +135,13 @@ ms.locfileid: "58531529"
     
 資産 ID は、SharePoint と OneDrive で利用できる別のドキュメント プロパティです。 組織では既に別のドキュメント プロパティや ID を使用してコンテンツを分類している可能性があります。 その場合、イベントの作成時にそれらのプロパティおよび値を使用することもできます (後述する手順 6 を参照してください)。 重要な点は、ドキュメント プロパティで *property:value* の組み合わせを使用して、そのアイテムをイベントの種類に関連付ける必要があるということです。
   
-![アセット ID を入力するテキスト ボックス](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
+![アセット ID を入力するテキスト ボックス。](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>手順 5: イベントを作成する
 
 製品の使用を終えるなど、イベントの種類に関する特定のインスタンスが発生するときは、Microsoft 365 コンプライアンス センターで **[レコード管理]** > **[イベント]** ページの順に移動して [**+ 作成**] を選択してイベントを作成します。 ここでは、イベントを作成し、トリガーします。
 
-![イベント ベースの保持ラベルの保持の開始をトリガーするイベントを作成する](../media/create-event-records-management.png)
+![イベント ベースの保持ラベルの保持の開始をトリガーするイベントを作成します。](../media/create-event-records-management.png)
 
 テナントごとに最大 100 万件のイベントがサポートされます。
 
@@ -149,7 +149,7 @@ ms.locfileid: "58531529"
 
 イベントを作成するときは、手順 2 の保持ラベル設定で指定したものと同じイベントの種類を選択します。 たとえば、ラベル設定のイベントの種類として [**製品の有効期間**] を選択した場合、イベントを作成するときに [**製品の有効期間**] を選択します。 そのイベントの種類が選択されたイベントに適用されている保持ラベルの付いたコンテンツのみが、トリガーされる保持期間を持ちます。
 
-![イベントの種類を選択するイベント設定のオプション](../media/choose-event-type-records-management.png)
+![イベントの種類を選択するイベント設定のオプション。](../media/choose-event-type-records-management.png)
 
 または、イベントの種類が異なる複数の保持ラベルのイベントを作成する必要がある場合は、[**既存のラベルの選択**] オプションを選択します。 次に、このイベントに関連付けるイベントの種類に構成されているラベルを選択します。
 
@@ -167,7 +167,7 @@ Exchange アイテムの場合、キーワードまたはキーワード クエ�
 
 最後に、イベントが発生した日付を選択します。この日付は保持期間の開始として使用されます。イベントを作成すると、そのイベントの日付は、そのイベントの種類の保持ラベル、アセット ID、キーワードまたはクエリを使用してすべてのコンテンツに同期されます。他の保持ラベルと同様に、この同期には最大 7 日かかる場合があります。
   
-![[イベントの設定] ページ](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
+![[イベントの設定] ページ。](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
 イベントを作成すると、既にラベル付けされてインデックスが作成されているコンテンツの保持設定が有効になります。 イベントが作成された後に保持ラベルが新しいコンテンツに追加された場合は、同じ詳細を使用して新しいイベントを作成する必要があります。
 
@@ -226,9 +226,9 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 
 Microsoft 365 REST API を使用してイベントを作成するフローを作成します
 
-![Power Automate を使用してイベントを作成する](../media/automate-event-driven-retention-flow-1.png)
+![フローを使用してイベントを作成します。](../media/automate-event-driven-retention-flow-1.png)
 
-![Power Automate を使用して REST API を呼び出す](../media/automate-event-driven-retention-flow-2.png)
+![フローを使用して REST API を呼び出します。](../media/automate-event-driven-retention-flow-2.png)
 
 #### <a name="create-an-event"></a>イベントを作成する
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理センターで検索機能を使用して、より良い結果と迅速な結果を得る方法について学習します。
-ms.openlocfilehash: 64a578f8b7ebf71fbfc162936e8efa09440834d362fcc2b359a18bb9d8c1469a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eca365ed7c25ac908fe5ea1679ceedb9765fb3c7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824771"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566990"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで検索する
 
@@ -63,7 +63,7 @@ ms.locfileid: "53824771"
 
 グループ名のスペルが正しいことを確認します。
 
-## <a name="actions"></a>操作
+## <a name="actions"></a>Actions
 
 [アクション] カテゴリには、M365 管理センターでよく使用されるアクションが含まれている検索が可能です。 アクションをシステム内の動詞と考える。 たとえば、任意のページから "パスワードのリセット" を検索し、ユーザーの 1 つ以上のパスワードをリセットすることもできます。 [ユーザーの削除] を検索し、[ユーザーの削除] ページからユーザーを削除できます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "53824771"
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="スクリーンショット: 管理センターのナビゲーション パスを示す検索結果":::
 
-## <a name="settings"></a>Settings
+## <a name="settings"></a>設定
 
 組織、サブスクライブするサービス、セキュリティとプライバシーの設定に関連するサポートされているアプリ レベルの設定を検索します。
 
@@ -85,7 +85,7 @@ ms.locfileid: "53824771"
 
 ドメインへのクイック リンクを見つけると、そのドメインの概要ページへのリンクが表示されます。
 
-:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="管理センターに所有されているドメインを示す検索結果":::
+:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="管理センターに所有されているドメインを示す検索結果。":::
 
 ## <a name="documentation"></a>ドキュメント
 

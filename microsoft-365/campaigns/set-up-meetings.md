@@ -25,18 +25,18 @@ search.appverid:
 - MET150
 - MOE150
 description: オンライン会議と会議をMicrosoft Teams。
-ms.openlocfilehash: a1b11429aaf43e913d9f2def902e73299e68c6e295a04bc19f7f995db1d5d823
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 40858f43794736a6b2a9696b84409ca376ed8706
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866974"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567098"
 ---
 # <a name="set-up-meetings"></a>会議をセットアップする
 
 会議にはMicrosoft Teams、ビデオ、共有が含まれます。 また、オンラインなので、スタッフが地理的に分散している場合やリモートで作業している場合でも、会議スペース (会議室やプロジェクターを必要とせず)が常に用意されます。 Microsoft Teams会議は、組織の内部と外部の両方でスタッフと一緒に参加するための最適な方法です。 組織のメンバーである必要や、会議に参加するアカウントを持っている必要はもうない。 オンライン会議のスケジュール設定と実行は、Microsoft Teams。 会議中に、画面の共有、ファイルの共有、タスクの割り当てなどできます。 政治キャンペーンには、会議にスタッフ、ボランティア、組織外のゲストが含まれる場合があります。 小規模企業やプラクティスは、スタッフと会う、または顧客やパートナーと一緒にMicrosoft Teams。
 
-[![会議の 2 人のユーザーの図](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![会議の 2 人のユーザーの図。](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 PDF または pdf または[](https://go.microsoft.com/fwlink/?linkid=2079515) [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2078712)でインフォグラフィックをダウンロードして、オンライン会議に参加またはホストする方法の概要を簡単にMicrosoft Teams。
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 50316659caf811410b9422151e47feb17fbead8055bec08a3e4e342d61f2d83b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1aa843bb1e9ca57d6264f34cbfc7c593f9590c2a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888856"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573897"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World for Microsoft 365 Defender REST API
 
@@ -48,7 +48,7 @@ ms.locfileid: "53888856"
 
 2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。
 
-   ![アプリケーション登録Microsoft Azureナビゲーションのイメージ](../../media/atp-azure-new-app2.png)
+   ![アプリケーションの登録Microsoft Azureナビゲーションのイメージ。](../../media/atp-azure-new-app2.png)
 
 3. 登録フォームで、アプリケーションの名前を選択し、[登録] を **選択します**。 リダイレクト URI の選択はオプションです。 この例を完了するために必要な情報は不要です。
 
@@ -56,26 +56,26 @@ ms.locfileid: "53888856"
 
    > [!TIP]
    > *Microsoft Threat Protection* は、元のMicrosoft 365 Defenderの名前であり、元のリストには表示されません。 テキスト ボックスに名前を書き込み始め、表示を確認する必要があります。
-   ![API アクセス許可の選択のイメージ](../../media/apis-in-my-org-tab.PNG)
+   ![API アクセス許可の選択のイメージ。](../../media/apis-in-my-org-tab.PNG)
 
    - [**アプリケーションのアクセス許可**  >  **インシデント.Read.All] を選択し、[** アクセス許可 **の追加] を選択します**。
 
-   ![API アクセスと API の選択のイメージ](../../media/request-api-permissions.PNG)
+   ![API アクセスと API の選択のイメージ。](../../media/request-api-permissions.PNG)
 
 5. [管理者 **の同意を付与する] を選択します**。 アクセス許可を追加する度に、[管理者の同意 **を付与** する] を選択して有効に設定する必要があります。
 
-    ![アクセス許可の付与のイメージ](../../media/grant-consent.PNG)
+    ![アクセス許可の付与のイメージ。](../../media/grant-consent.PNG)
 
 6. アプリケーションにシークレットを追加します。 [ **証明書とシークレット&選択** し、シークレットに説明を追加し、[追加] を **選択します**。
 
     > [!TIP]
     > [追加] を **選択した後**、生成 **されたシークレット値をコピーします**。 退出後にシークレット値を取得できない。
 
-    ![アプリ キーの作成のイメージ](../../media/webapp-create-key2.png)
+    ![アプリ キーの作成のイメージ。](../../media/webapp-create-key2.png)
 
 7. アプリケーション ID とテナント ID を安全な場所に記録します。 アプリケーション ページの [概要] **に** 一覧表示されます。
 
-   ![作成されたアプリ ID のイメージ](../../media/app-and-tenant-ids.png)
+   ![作成されたアプリ ID のイメージ。](../../media/app-and-tenant-ids.png)
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>アプリを使用してトークンを取得し、トークンを使用して API にアクセスする
 
@@ -117,7 +117,7 @@ ms.locfileid: "53888856"
 
     次の図では、アプリから取得したデコードトークンと、アクセス許可 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` を ```AdvancedHunting.Read.All``` 表示できます。
 
-    ![イメージ jwt.ms](../../media/api-jwt-ms.png)
+    ![イメージ jwt.ms。](../../media/api-jwt-ms.png)
 
 ### <a name="get-a-list-of-recent-incidents"></a>最近のインシデントの一覧を取得する
 

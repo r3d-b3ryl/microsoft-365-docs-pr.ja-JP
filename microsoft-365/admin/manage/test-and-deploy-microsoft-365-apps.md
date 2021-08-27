@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 組織内のユーザーおよびグループ向け Microsoft および Microsoft パートナー アプリを検索、テスト、展開するには、組織の統合アプリ ポータルMicrosoft 365 管理センター。
-ms.openlocfilehash: 5bcbdebbacf8d9e4710dd7f9168d3f6dbcb4af5a
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 13276923c55632145207b61032583a26e3553e06
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346126"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566978"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>統合アプリ ポータルMicrosoft 365 Appsパートナーによるテストと展開
 
@@ -165,17 +165,17 @@ Microsoft Exchangeは、組織のテナント内にアドイン マニフェス�
 
 次の例では、Sandra、Sheila、および Sales Department グループがアドインに割り当てられます。 「西海岸営業部門」は入れ子のグループのため、Bert と Fred はアドインに割り当てられていません。 
 
-![営業部門の図](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![営業部門の図。](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>グループにネストされたグループが含まれているかどうかを調べる
 
 グループにネストされたグループが含まれているかどうかを調べる最も簡単な方法は、Outlook 内のグループの連絡先カードを確認することです。 電子メールの **[To]** フィールドにグループ名を入力し、解決時にグループ名を選択すると、グループ名にユーザーまたは入れ子になったグループが含まれているか   が表示されます。 次の例では、テスト **** グループの連絡先カードの [メンバー] Outlook、ユーザーは表示され、サブ グループは   2 つのみです。 
 
-![連絡先カードの [Outlook] タブ](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![連絡先カードの [Outlook] タブ。](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 反対のクエリを実行するには、グループを解決して、グループが任意のグループのメンバーである場合を確認します。 次の例では、サブグループ 1 <b></b>がテスト グループのメンバー Outlook連絡先カードの [メンバーシップ] タブ   で確認できます。 
 
-![連絡先カードの [Outlook] タブ](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![連絡先カードの [Outlook] タブ。](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
 Azure Active Directory Graph API を使用してクエリを実行して、グループ内のグループの一覧を検索できます。 詳細については、「グループに対する [操作」を参照|GraphAPI リファレンス](/previous-versions/azure/ad/graph/api/groups-operations)。 
 
@@ -199,7 +199,7 @@ Azure Active Directory Graph API を使用してクエリを実行して、グ�
 
 4. [ **すべてのユーザー** **]、[特定のユーザー/グループ**]、または [自分だけ] を選択して、アドインの展開先 ****   を指定します。 [検索] ボックスを使用して、特定のユーザーまたはグループを検索します。 アドインをテストする場合は、[これはテスト展開です] **を選択します**。 
 
-5. [**次へ**] を選択します。 すべてのアプリの機能とアクセス許可は、アプリが認定を受け取った場合、認定情報と共に 1 つのウィンドウMicrosoft 365されます。 認定ロゴを選択すると、ユーザーは認定の詳細を確認できます。  
+5. **[次へ]** を選択します。 すべてのアプリの機能とアクセス許可は、アプリが認定を受け取った場合、認定情報と共に 1 つのウィンドウMicrosoft 365されます。 認定ロゴを選択すると、ユーザーは認定の詳細を確認できます。  
 
 6. [確認] をクリックし、[展開の完了 **] を選択します**。  
 
@@ -314,8 +314,8 @@ Office アドインの種類と機能の詳細については [、「Office](/
 
 ### <a name="is-integrated-apps-available-in-sovereign-cloud"></a>統合アプリはソブリン クラウドで利用できますか?
 
-いいえ。 統合アプリは、ソブリン クラウドのお客様が利用できません。
+その必要はありません。 統合アプリは、ソブリン クラウドのお客様が利用できません。
 
 ### <a name="is-integrated-apps-available-in-government-clouds"></a>統合アプリは政府機関のクラウドで利用できますか?
 
-いいえ。 統合アプリは、政府機関のクラウド顧客が利用できません。
+その必要はありません。 統合アプリは、政府機関のクラウド顧客が利用できません。

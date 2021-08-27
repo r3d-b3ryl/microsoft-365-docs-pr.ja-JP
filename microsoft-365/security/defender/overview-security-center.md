@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 58cc9548983d75593ae77af016ef894dc9f82547
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7f4df3c6903194b00a4469f52fb0e15e2f8748ad
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256321"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573873"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender概要
 
@@ -86,7 +86,7 @@ Microsoft 365 Defender、Microsoft Defender  for microsoft Defender for Office 3
 :::image type="content" source="../../media/converged-incident-info-3.png" alt-text="インシデントの概要ページの例Microsoft 365 Defender":::
 
 <!--
-![Example of the Summary page for an incident in Microsoft 365 Defender](../../media/converged-incident-info-3.png)
+![Example of the Summary page for an incident in Microsoft 365 Defender.](../../media/converged-incident-info-3.png)
 --> 
 
 インシデント ページの上部には、[概要] タブ、[通知] 、[**デバイス**] 、[**ユーザー**] 、[メールボックス] 、[調査]、および **[証拠**] タブが **表示** されます。 詳細については、次のタブを選択します。 たとえば、[ユーザー]タブには、統合ワークロード (Microsoft Defender for Endpoint、Microsoft Defender for Identity、および Microsoft Cloud App Security) のユーザーの情報と、オンプレミスの Active Directory ドメイン サービス (AD DS)、Azure Active Directory (Azure AD)、サードパーティ ID プロバイダーなどのさまざまなソースが表示されます。 詳細については、「ユーザーの調査 [」を参照してください](investigate-users.md)。
@@ -101,7 +101,7 @@ Microsoft 365 Defender、Microsoft Defender  for microsoft Defender for Office 3
 
 ### <a name="unified-settings"></a>統一された設定
 
-![[役割] をクリックして、[設定] ページを開きました。このページには、[全般設定]、[アクセス許可]、[API]、および [ルール] が含まれています。 [アクセス許可]、[役割] の順に開きます。 すべての役割を表示する](../../media/converged-add-role-9.png)
+![[役割] をクリックして、[設定] ページを開きました。このページには、[全般設定]、[アクセス許可]、[API]、および [ルール] が含まれています。 [アクセス許可]、[役割] の順に開きます。 すべての役割を表示します。](../../media/converged-add-role-9.png)
 
 ### <a name="permissions--roles"></a>アクセス許可と役割
 

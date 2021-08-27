@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: e301f58c3a194c6af8989f4081e733c50a4c104e
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 32e1098736a1284a37fc3f1af478debbad34c00f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400333"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573717"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Deutschland から新しいドイツのデータセンター地域Office 365サービスへの移行
 
@@ -63,7 +63,7 @@ Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 
 
 この図は、新しいドイツのデータセンターへの移行の 10 フェーズを示しています。
 
-:::image type="content" alt-text="新しいドイツのデータセンターへの移行の 10 フェーズ" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
+:::image type="content" alt-text="新しいドイツのデータセンターへの移行の 10 フェーズ。" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
 移行をオプトイン [すると、これらのフェーズが開始されます](./ms-cloud-germany-migration-opt-in.md)。 移行フェーズの大部分は、最小限の顧客とのやり取りが必要なバック エンド サービス操作として実行され、その後に 1 つのフェーズが実行されます。 追加の顧客主導のタスクと全体的な移行状態の開始は、移行プロセス中に、Microsoft 365 管理センターメッセージ センターを通じて伝達されます。 タスクの例としては、顧客が管理する DNS 更新プログラム、ハイブリッド顧客向けハイブリッド セットアップの再構成、Exchange Azure 移行などがあります。
 
@@ -335,7 +335,7 @@ For Business Skypeのすべてのユーザーは、ユーザーにMicrosoft Team
 
 [移行のオプトイン](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 はじめに:
 

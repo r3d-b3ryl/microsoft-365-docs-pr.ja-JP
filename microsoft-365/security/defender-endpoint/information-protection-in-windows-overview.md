@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b38cf9c56f3c518ed7dace01b174b21b280baa23a9e71edb290edd797283f40d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7c3fac607f470018b4c6c5a025b3b2ac09464cc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857492"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550228"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows における情報保護の概要
 
@@ -32,7 +32,7 @@ ms.locfileid: "53857492"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -56,7 +56,7 @@ Defender for Endpoint は、機密ラベルを持つファイルと機密情報�
 データ損失防止 (DLP) Office 365の機密情報の種類は、次の 2 つのカテゴリに分類されます。
 
 - 既定値
-- Custom
+- カスタム
 
 既定の機密情報の種類には、銀行口座番号、社会保障番号、国内の ID などの情報が含まれます。 詳細については、「機密情報の [種類の検索方法」を参照してください](/office365/securitycompliance/what-the-sensitive-information-types-look-for)。
 
@@ -66,7 +66,7 @@ Defender for Endpoint は、機密ラベルを持つファイルと機密情報�
 
 ラベルまたは情報の種類を使用して Defender for Endpoint によって機密情報を含むファイルが検出された場合、デバイスから Azure Information Protection に自動的に転送するように、Azure Information Protection 統合を有効にします。
 
-![Azure Information Protection を使用した設定ページのイメージ](images/atp-settings-aip.png)
+![Azure Information Protection を使用した設定ページのイメージ。](images/atp-settings-aip.png)
 
 報告された信号は、Azure Information Protection - データ検出ダッシュボードで表示できます。
 
@@ -74,7 +74,7 @@ Defender for Endpoint は、機密ラベルを持つファイルと機密情報�
 
 このダッシュボードには、Defender for Endpoint と Azure Information Protection の両方によって検出されたデータの要約された検出情報が表示されます。 Defender for Endpoint のデータは、場所の種類 - エンドポイントでマークされます。
 
-![Azure Information Protection のイメージ - データ検出](images/azure-data-discovery.png)
+![Azure Information Protection のイメージ - データ検出。](images/azure-data-discovery.png)
 
 右側の [デバイス リスク] 列に注意してください。このデバイス リスクは Defender for Endpoint から直接派生し、Defender for Endpoint によって検出されたアクティブなセキュリティ脅威に基づいて、ファイルが検出されたセキュリティ デバイスのリスク レベルを示します。
 
