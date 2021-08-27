@@ -15,12 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: dcf83a4f90c896ce56a3f5b2fd6430eeb9c939bf2b564a5081ae063d01898a79
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c079718ea7c8dab8c8c6423fcc5877e14a1dc078
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806921"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571810"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する
 
@@ -43,7 +43,7 @@ ms.locfileid: "53806921"
 
 有効Microsoft Defender ウイルス対策場合、通常のオプションが表示され、そのデバイスで構成されます。
 
-![Windows セキュリティオプション、設定、更新オプションなど、Microsoft Defender AV オプションを表示するアプリ](images/vtp-wdav.png)
+![Windows セキュリティオプション、設定、更新オプションなど、Microsoft Defender AV オプションを表示するアプリです。](images/vtp-wdav.png)
 
 別のウイルス対策製品がインストールされ、正しく動作している場合、Microsoft Defender ウイルス対策が無効になります。 アプリWindows セキュリティ[ウイルス対策&] セクションが変更され、AV 製品に関する状態が表示され、製品の構成オプションへのリンクが提供されます。
 

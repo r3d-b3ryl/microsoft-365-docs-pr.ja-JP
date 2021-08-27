@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 2 Advanced eDiscovery文字セットMicrosoft 365使用する中国語、日本語、韓国語 (CJK) 言語をサポートする方法について学習します。
-ms.openlocfilehash: 7301903effa11dbe090197f0445f572b754fb44ca267b39b8cdc18ed27459fb4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bcab34e8232a77cecf7d7331d75d140f73e4db37
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905885"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572037"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>CJK 言語サポートのAdvanced eDiscovery
 
@@ -41,7 +41,7 @@ CJK 文字は、キーワード[](building-search-queries.md#keyword-searches)�
 
 ブール演算子 AND  [](keyword-queries-and-search-conditions.md#search-operators) **、OR、NOT、NEAR** など、すべての検索演算子と検索条件に対して CJK サポートを **提供します**。 [](keyword-queries-and-search-conditions.md#search-conditions)
 
-コンテンツの場所またはアイテムに CJK 文字が含まれているが、検索で結果が返されない場合は、クエリ言語の国/地域アイコンをクリックします。 ![コンテンツ検索のクエリ言語 -国/地域アイコン](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) をクリックし、検索に対応する言語と国のカルチャ コードの値を選択します。 デフォルトの言語/地域はニュートラルです。
+コンテンツの場所またはアイテムに CJK 文字が含まれているが、検索で結果が返されない場合は、クエリ言語の国/地域アイコンをクリックします。 ![コンテンツ検索で言語と国/地域のアイコンを照会します。](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) をクリックし、検索に対応する言語と国のカルチャ コードの値を選択します。 デフォルトの言語/地域はニュートラルです。
 
 **複数の言語を一度に検索できますか?**
 

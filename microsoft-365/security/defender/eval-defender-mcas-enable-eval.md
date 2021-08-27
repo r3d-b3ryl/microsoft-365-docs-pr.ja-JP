@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: efb6bcde04411b3409d3076d09251423d436265c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1b5e664e6675b477ecb2507fd52588aa159bcc9b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58252149"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571797"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>ユーザーの評価環境を有効Microsoft Cloud App Security
 
@@ -47,7 +47,7 @@ ms.locfileid: "58252149"
 
 次の手順を使用して、Microsoft Cloud App Security。
 
-![Microsoft Defender 評価環境で Microsoft Microsoft Cloud App Securityを有効にする手順](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
+![Microsoft Defender 評価環境で Microsoft Microsoft Cloud App Securityを有効にする手順。](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
 
 - [手順 1.ConnectポータルにCloud App Securityする](#step-1-connect-to-the-cloud-app-security-portal)
 - [手順 2.エンドポイント向け Microsoft Defender との統合](#step-2-integrate-with-microsoft-defender-for-endpoint)

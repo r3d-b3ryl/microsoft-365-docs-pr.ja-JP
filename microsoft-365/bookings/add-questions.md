@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: オンラインで予定を予約するときに顧客に質問する必要がある場合は、予約ページにカスタムの質問と必要な質問を追加できます。
-ms.openlocfilehash: 7ee5710d20145dc1cb819c03c0a86336241ba829173f8abc3b4fdf2a96aa719e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 496d395677d272c436504bfe43b3c42833e3a73e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900894"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571605"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>予約ページにカスタムおよび必須の質問を追加する
 
@@ -41,7 +41,7 @@ ms.locfileid: "53900894"
 
    この例では、電話番号と顧客メモがオフになっていて、2 つの新しいカスタム質問を作成しました。
 
-   ![カスタム質問画面の画像](../media/bookings-questions-custom-fields.png)
+   ![カスタム質問画面のイメージ。](../media/bookings-questions-custom-fields.png)
 
 1. 質問を必須にする場合は、[必須] チェック **ボックスをオン** にします。 顧客が必要な質問に答えるまで、予約を完了できない。
 
@@ -55,7 +55,7 @@ ms.locfileid: "53900894"
 
 この例では、最初のサービスに追加された質問が、このサービスで利用できるのを確認できます。 このサービスに対して作成した質問は、すべてのサービスで利用できます。
 
-   ![複数のサービスに対して表示される質問のイメージ](../media/bookings-questions-services.png)
+   ![複数のサービスに対して表示される質問のイメージ。](../media/bookings-questions-services.png)
 
 予約ページが既に公開されている場合は、他に何もする必要はありません。 顧客は、次回一緒に予約する場合に質問を表示します。 予約ページがまだ公開されていない場合は、予約ページに移動し、[保存して発行] Outlook on the webを **選択します**。
 
@@ -66,10 +66,10 @@ ms.locfileid: "53900894"
 
 顧客が予定を予約すると、基本的な顧客情報の質問が [詳細の追加 **] セクションに表示** されます。 追加するカスタマイズされた質問は、[追加情報の提供 **] セクションに表示** されます。
 
-![質問が有効な場合に表示されるユーザーのイメージ](../media/bookings-questions-customer.png)
+![質問が有効な場合に表示されるユーザーのイメージ。](../media/bookings-questions-customer.png)
 
 ## <a name="staff-experience"></a>スタッフエクスペリエンス
 
 顧客が予定を予約すると、スタッフは予約カレンダーに質問と顧客の回答を表示します。 それを表示するには、[予約カレンダー] **に移動** \> **し** 、予定を開きます。
 
-![質問が有効な場合にスタッフに表示される画像](../media/bookings-questions-staff.png)
+![質問が有効な場合に表示されるスタッフのイメージ。](../media/bookings-questions-staff.png)

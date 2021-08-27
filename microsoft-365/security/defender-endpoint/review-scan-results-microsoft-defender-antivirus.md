@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: c7860c284d82ee2fbdb9f8e2eae6299f56f6387b45b8c6f3d88eb2733ee7cd72
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d23d2c7f0d6fc12a3365d1c4f50d37384f5ca349
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799780"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561268"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>スキャンMicrosoft Defender ウイルス対策確認する
 
@@ -47,7 +47,7 @@ ms.locfileid: "53799780"
 Get-MpThreatDetection
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="PowerShell コマンドレットと出力のスクリーンショット":::
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="PowerShell のコマンドレットと出力のスクリーンショット。":::
 
 特定の `-ThreatID` 脅威に対する検出のみを表示する出力を制限する場合に指定できます。
 
@@ -57,7 +57,7 @@ Get-MpThreatDetection
 Get-MpThreat
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell コード":::
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell コード。":::
 
 PowerShell[コマンドレットを](use-powershell-cmdlets-microsoft-defender-antivirus.md)構成して実行する方法の詳細については、「powerShell コマンドレットを使用して Microsoft Defender ウイルス対策 および[Defender](/powershell/module/defender/)コマンドレットを構成および実行する」を参照Microsoft Defender ウイルス対策。
 

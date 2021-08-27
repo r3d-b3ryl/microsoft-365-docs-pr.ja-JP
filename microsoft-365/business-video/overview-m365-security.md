@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネス向けサービスに含まれるセキュリティMicrosoft 365を確認します。
-ms.openlocfilehash: 3c5348eb268373ff11b7e926f39d385451a4b2760978029484a2116885c7e9ea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 686ced4c4612470d25ab3a39fdd824b576bbeab7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887778"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572109"
 ---
 # <a name="overview-of-security"></a>セキュリティの概要
 
@@ -34,7 +34,7 @@ ms.locfileid: "53887778"
 
 Microsoft 365 Business Premiumは、脅威保護、データ保護、デバイス管理機能を提供し、オンラインの脅威や不正アクセスから企業を保護し、携帯電話、タブレット、およびコンピューター上の企業データを保護および管理するのに役立ちます。
 
-|![脅威の保護](../media/m365-business-security-threat-protection.png)<br/>[脅威の保護](#threat-protection)|![クライアントとの共同作業](../media/m365-business-security-data-protection.png) <br/>[データ保護](#data-protection) | ![デバイスの管理](../media/m365-business-security-device-management.png) <br/>[デバイスの管理](#device-management) |
+|![脅威の保護。](../media/m365-business-security-threat-protection.png)<br/>[脅威保護](#threat-protection)|![クライアントとの共同作業](../media/m365-business-security-data-protection.png) <br/>[データ保護](#data-protection) | ![デバイスの管理](../media/m365-business-security-device-management.png) <br/>[デバイスの管理](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>脅威に対する保護

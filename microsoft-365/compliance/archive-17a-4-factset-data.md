@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 FactSet DataParser コネクタをセットアップして使用して、ファクトセット データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: 94ad3ffdc407770eeb7110004c9b77e0fc09ae09a8edad0170372d7c10953083
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cbc56b5ce3c2305238daabd78fed2f9794f96242
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836200"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563274"
 ---
 # <a name="set-up-a-connector-to-archive-factset-data"></a>FactSet データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ FactSet データをユーザー メールボックスに格納した後、訴�
 
 次の概要では、データ コネクタを使用してファクトセット データをアーカイブするプロセスについて説明Microsoft 365。
 
-![17a-4 からの FactSet データのアーカイブ ワークフロー](../media/FactSetDataParserConnectorWorkflow.png)
+![17a-4 の FactSet データのアーカイブ ワークフロー。](../media/FactSetDataParserConnectorWorkflow.png)
 
 1. 組織は 17a-4 を使用して FactSet DataParser を設定および構成します。
 

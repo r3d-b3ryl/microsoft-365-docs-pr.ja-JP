@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 03bae05ba35b8ee332fbbb1083aa4a5763fc1cf4
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: d1a0b8af6dbf725623986582f5ee8e0b3912f0b5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507724"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561292"
 ---
 # <a name="device-control-printer-protection"></a>デバイス制御のプリンター保護
 
@@ -88,7 +88,7 @@ Intune では、現在デバイスコントロール プリンター保護は OM
 
 CSP は、次の文字列をサポートします `<enabled/>` 。
 
-:::image type="content" source="../../media/customeditrow.png" alt-text="カスタム編集行":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="カスタム編集行。":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>シナリオ 2: Intune を使用して特定の承認済み USB プリンターを許可する
 
@@ -102,7 +102,7 @@ CSP は、次の文字列をサポートします `<enabled/>` 。
 
 CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認された USB プリンターを使用して文字列をサポートします。次の例を示します `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">` 。
 
-:::image type="content" source="../../media/editrow.png" alt-text="行の編集":::
+:::image type="content" source="../../media/editrow.png" alt-text="行の編集。":::
 
 ## <a name="deploy-policy-via-group-policy"></a>グループ ポリシーを使用してポリシーを展開する
 
@@ -118,7 +118,7 @@ CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認され�
 
   ユーザー構成 \> 管理用テンプレート \> コントロール パネル \> プリンター: デバイス コントロールの印刷制限を有効にする
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="デバイスの印刷制限を有効にする":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="デバイスの印刷制限を有効にします。":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>シナリオ 2: グループ ポリシーを使用して特定の承認済み USB プリンターを許可する
 
@@ -130,7 +130,7 @@ CSP は、'ApprovedUsbPrintDevices' プロパティを使用して承認され�
 
   ユーザー構成 \> 管理用テンプレート \> コントロール パネル プリンター: 承認済み USB 接続印刷 \> デバイスの一覧
 
-:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="承認済みの USB 接続印刷デバイスの一覧":::
+:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="承認された USB 接続印刷デバイスの一覧。":::
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Microsoft Defender for Endpoint ポータルでデバイスコントロールプリンター保護データを表示する
 
@@ -148,7 +148,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高度な狩猟":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高度な狩猟。":::
  
  PnP イベントを使用して、組織で使用されている USB プリンターを検索できます。
  

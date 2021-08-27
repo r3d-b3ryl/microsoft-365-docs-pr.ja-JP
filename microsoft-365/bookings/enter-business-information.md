@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Microsoft Bookings のビジネス名、住所、電話番号、Web サイトの URL、ロゴ、営業時間など、会社情報ページを作成するには、次の手順に従います。
-ms.openlocfilehash: fae790405d6691d35f5c0bfe806b6d7d46c3b555ecfd14660d3fb89b34b3efe8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fdf96347a080d24cfb06353c96622484ed54c683
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803850"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571569"
 ---
 # <a name="enter-your-business-information"></a>勤務先情報を入力する
 
@@ -22,7 +22,7 @@ Microsoft Bookings では、Web アプリ内の [ビジネス情報] ページ�
 
 ここで提供する情報は、顧客とクライアントが予約予約に使用するページ (予約ページと呼ばれる) と、Bookings によって送信されたメッセージとリマインダーに表示されます。 予約ページのこの情報の例を以下に示します。
 
-   ![Microsoft Bookings のビジネス情報ページの例のイメージ](../media/bookings-business-info.png)
+   ![Microsoft Bookings のビジネス情報ページの例のイメージ。](../media/bookings-business-info.png)
 
 > [!NOTE]
 > 開始するには [、「Microsoft Bookings へのアクセス権を取得する」を参照してください](get-access.md)。 予約をオンまたはオフにする方法については、「 [組織の予約を有効またはオフにする」を参照してください](turn-bookings-on-or-off.md)。
@@ -63,11 +63,11 @@ Microsoft Bookings では、Web アプリ内の [ビジネス情報] ページ�
 
 1. [ **+**] を選んで木曜日の新しい行を作成します。
 
-   ![営業時間 UI のイメージ](../media/bookings-split-shift.png)
+   ![営業時間 UI のイメージ。](../media/bookings-split-shift.png)
 
 1. 新しい行で開始時間に午後 2:30、終了時間に午後 6:00 を選びます。
 
-   ![営業時間を追加した営業時間 UI のイメージ](../media/bookings-split-shift-hours.png)
+   ![営業時間が追加された営業時間 UI のイメージ。](../media/bookings-split-shift-hours.png)
 
 1. [保存] を選択します。
 
@@ -81,6 +81,6 @@ Microsoft Bookings では、Web アプリ内の [ビジネス情報] ページ�
 
 1. [ **写真のアップロード**] を選びます。
 
-   ![[写真のアップロード] ボタンの画像](../media/bookings-upload-photo.png)
+   ![[写真のアップロード] ボタンの画像。](../media/bookings-upload-photo.png)
 
 1. **[保存]** を選択します。

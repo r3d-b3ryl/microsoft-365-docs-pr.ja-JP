@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: de33384b6292fecc502e958385c2286b255002b1
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 708ae221a020b8d6410b35a1db538d5ad50aba48
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533065"
+ms.locfileid: "58571869"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint での誤検出/検出漏れに対処する
 
@@ -39,7 +39,7 @@ ms.locfileid: "58533065"
 
 エンドポイント保護ソリューションでは、誤検知とは、ファイルやプロセスなどのエンティティであり、実際には脅威ではないにもかかわらず、悪意のあるエンティティとして検出され、識別されました。 偽陰性とは、実際には悪意があるにもかかわらず、脅威として検出されていないエンティティです。 False positives/negatives は、Microsoft Defender for Endpoint を含む脅威保護 [ソリューションで発生する可能性があります](microsoft-defender-endpoint.md)。
 
-![Defender for Endpoint での誤検知と負の定義](images/false-positives-overview.png)
+![Defender for Endpoint での誤検知と負の定義。](images/false-positives-overview.png)
 
 幸いなことに、これらの種類の問題に対処し、削減するための手順を実行できます。 [Microsoft 365 Defender](microsoft-defender-security-center.md) (以前は Microsoft Defender セキュリティ センター) で誤検知/負の値が表示される場合、セキュリティ操作は次のプロセスを使用して対処する手順を実行できます。
 
@@ -51,7 +51,7 @@ ms.locfileid: "58533065"
 
 この記事で説明するタスクを実行した後も、誤検知/負の問題がある場合は、ヘルプを受け取る必要があります。 「引 [き続きヘルプが必要か」を参照してください。](#still-need-help)
 
-![誤検知と負に対処する手順](images/false-positives-step-diagram.png)
+![誤検知と負に対処する手順。](images/false-positives-step-diagram.png)
 
 > [!NOTE]
 > この記事は、Microsoft Defender for Endpoint を使用しているセキュリティオペレーターおよびセキュリティ管理者向 [けガイダンスです](microsoft-defender-endpoint.md)。
@@ -166,7 +166,7 @@ ms.locfileid: "58533065"
 ### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>複数のデバイスで検疫からファイルを削除する
 
 > [!div class="mx-imgBorder"]
-> ![ファイルの検疫](images/autoir-quarantine-file-1.png)
+> ![検疫ファイル。](images/autoir-quarantine-file-1.png)
 
 1. ポータルの左側のナビゲーション ウィンドウで、[Microsoft 365 Defender]**をクリックします**。
 
@@ -260,7 +260,7 @@ Microsoft Defender for Endpoint の除外としてエンティティを指定す
 - [IP アドレス、URL、およびドメイン](#indicators-for-ip-addresses-urls-or-domains)
 - [アプリケーション証明書](#indicators-for-application-certificates)
 
-![インジケーターの種類の図](images/false-positives-indicators.png)
+![インジケーターの種類の図。](images/false-positives-indicators.png)
 
 #### <a name="indicators-for-files"></a>ファイルのインジケーター
 

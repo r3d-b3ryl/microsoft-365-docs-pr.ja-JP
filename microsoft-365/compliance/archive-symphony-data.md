@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas Symphony からデータをインポートおよびアーカイブするコネクタを設定して、Microsoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: 25c463d8afdf51aa3267a33aeb46008727b2096fd83f97510a92b28e04d99117
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4a02843315e6bd40bf650f5e5162c330519d4fbb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796531"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58562867"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>シンフォニー データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ ms.locfileid: "53796531"
 
 次の概要では、データ コネクタを使用してシンフォニー通信をアーカイブするプロセスについて説明Microsoft 365。
 
-![シンフォニー のアーカイブ ワークフロー](../media/SymphonyConnectorWorkflow.png)
+![シンフォニー のアーカイブ ワークフロー。](../media/SymphonyConnectorWorkflow.png)
 
 1. 組織は、シンフォニーと一緒にシンフォニー サイトを設定および構成します。
 

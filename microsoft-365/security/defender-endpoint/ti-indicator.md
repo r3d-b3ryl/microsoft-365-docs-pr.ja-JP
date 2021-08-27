@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7cfb066ec2eaf486a3cb3e708720436098bb01d0
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 158888fec2be8f310085836e1d34fbcbd8aa93df
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400237"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585656"
 ---
 # <a name="indicator-resource-type"></a>インジケーター リソースの種類
 
@@ -53,11 +53,12 @@ ms.locfileid: "58400237"
 :---|:---|:---
 id|String|Indicator エンティティ [の](ti-indicator.md) ID。
 indicatorValue|String|Indicator の [値](ti-indicator.md)です。
-indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"IpAddress"、"DomainName" および "Url" です。
+indicatorType|列挙|インジケーターの種類。 指定できる値は、"FileSha1"、"FileSha256"、"FileMd5"、"CertificateThumbprint"、"IpAddress"、"DomainName"、"Url" です。
 アプリケーション|String|インジケーターに関連付けられているアプリケーション。
-action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Alert"、"AlertAndBlock"、"Allowed" です。
+action|列挙|インジケーターが組織内で検出される場合に実行されるアクション。 指定できる値は、"Warn"、"Block"、"Audit"、"Alert"、"AlertAndBlock"、"BlockAndRemediate"、"Allowed" です。
+|externalID|String|カスタム相関関係の要求で顧客が送信できる ID。|
 sourceType|列挙|"User" (ポータルからなど) ユーザーが作成したインジケーターの場合、API を介して自動アプリケーションを使用して送信された場合は "AadApp"。
-source|string|インジケーターを送信したユーザー/アプリケーションの名前。
+createdBySource|string|インジケーターを送信したユーザー/アプリケーションの名前。
 createdBy|String|インジケーターを送信したユーザー/アプリケーションの一意の ID。
 lastUpdatedBy|String|インジケーターを最後に更新したユーザー/アプリケーションの ID。
 creationTimeDateTimeUtc|DateTimeOffset|インジケーターが作成された日時。
@@ -68,7 +69,7 @@ title|String|インジケーター のタイトル。
 説明|String|インジケーターの説明。
 recommendedActions|String|インジケーターの推奨アクション。
 rbacGroupNames|文字列の一覧|インジケーターが公開され、アクティブな RBAC デバイス グループ名。 すべてのデバイスに公開されている場合の空のリスト。
-
+rbacGroupIds|文字列の一覧|RBAC デバイス グループ ID は、インジケーターが公開され、アクティブな場所です。 すべてのデバイスに公開されている場合の空のリスト。
 ## <a name="public-preview-indicator-types"></a>パブリック プレビュー: インジケーターの種類
 
 > [!IMPORTANT]

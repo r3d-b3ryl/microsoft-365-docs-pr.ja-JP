@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8a016ab0e73af99ce47c30b598daade864e041eb
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: a7f85d20dfa59fbe21f811d8bef30a6c21a69125
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510027"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561400"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Microsoft Defender AV 診断データの収集
 
@@ -121,12 +121,13 @@ SupportLogLocation パラメーターを使用すると、次のようなフォ�
 
    ![ログ ファイルの定義パス設定のスクリーンショット](images/GPO2-SupportLogLocationGPPage.png)
 
+    ![ローカル グループ ポリシー エディターのスクリーンショット。](images/GPO1-SupportLogLocationDefender.png)  
+        
+     ![ログ ファイルの定義パス設定のスクリーンショット。](images/GPO2-SupportLogLocationGPPage.png)  
 3. ポリシー エディター内で、[有効] を **選択します**。
 
 4. サポート ログ ファイルをコピーするディレクトリ パスを [オプション] フィールドに **指定** します。
-
-   ![有効なディレクトリ パスのカスタム設定のスクリーンショット](images/GPO3-SupportLogLocationGPPageEnabledExample.png)
-
+     ![有効なディレクトリ パスのカスタム設定のスクリーンショット。](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
 5. **[OK] または [** 適用]**を選択します**。
 
 ## <a name="see-also"></a>関連項目

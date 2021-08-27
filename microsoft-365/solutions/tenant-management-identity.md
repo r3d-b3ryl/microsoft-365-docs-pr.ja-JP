@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: テナントに適切な ID モデルMicrosoft 365展開し、強力なユーザー サインインを適用します。
-ms.openlocfilehash: 01a69a326195514d0aa0a7eef1124bb820a211a508a1ed5cf79a520b82d0afa9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cd67db1c70c4f3aaa4ec9784e1de6992dd40300a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798642"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571617"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>手順 3. エンタープライズ テナントのMicrosoft 365 ID
 
@@ -40,13 +40,13 @@ ID モデルの 2 種類と、最適な適合と利点を次に示します。
 
 クラウド専用 ID の基本的なコンポーネントを次に示します。
 
-![クラウド専用 ID の基本的なコンポーネント](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![クラウド専用 ID の基本的なコンポーネント。](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 この図では、オンプレミスユーザーとリモート ユーザーは、自分のテナントの Azure ADテナントでアカウントMicrosoft 365します。
 
 ハイブリッド ID の基本的なコンポーネントを次に示します。
 
-![ハイブリッド ID の基本的なコンポーネント](../media/about-microsoft-365-identity/hybrid-identity.png)
+![ハイブリッド ID の基本的なコンポーネント。](../media/about-microsoft-365-identity/hybrid-identity.png)
 
 この図では、オンプレミスユーザーとリモート ユーザーは、オンプレミスの Microsoft 365 テナントからコピーされた Azure AD テナントのアカウントを使用して Microsoft 365 テナントにサインイン ADします。
 
@@ -91,7 +91,7 @@ ID モデルの 2 種類と、最適な適合と利点を次に示します。
 
 新しいハイブリッド ID 要素が強調表示されたテナントの例を次に示します。
 
-![テナントのハイブリッド ID の例](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
+![テナントのハイブリッド ID の例。](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
 
 この図では、テナントには次の機能があります。
 
@@ -108,6 +108,6 @@ ID モデルの 2 種類と、最適な適合と利点を次に示します。
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 4.オンプレミスのサーバーとデータOffice移行する](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
+[![手順 4.オンプレミスのサーバーとデータOffice移行します。](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
 
 移行を[続行して](tenant-management-migration.md)、オンプレミスのサーバーとそのOfficeデータを移行して、Microsoft 365。

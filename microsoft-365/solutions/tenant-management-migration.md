@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: テナント用Windowsデバイス、Office アプリ、Office サーバーを移行Microsoft 365します。
-ms.openlocfilehash: 9bef3b3128a43c75f5f465d22c82b0bc4431b53b7a86059dfc09ba982e4f94fd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9570a34c1c1884452ee9090ca0b7d280411e0016
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798557"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571581"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>手順 4. エンタープライズ テナントのMicrosoft 365移行
 
@@ -29,10 +29,10 @@ ms.locfileid: "53798557"
 
 エンタープライズ統合製品スイートMicrosoft 365のビジネス価値を最大化するには、次のリリースを移行するための戦略の計画と実装を開始します。
 
-| From | 宛先 |
+| From | へ |
 |:-------|:-----|
 | Windows 7 と Windows 8.1 | Windows 10 Enterprise |
-| Officeのデバイスにインストールされているクライアント製品を管理する | Microsoft 365 Apps for Enterprise |
+| Officeのデバイスにインストールされているクライアント製品を管理する | Microsoft 365 Apps for enterprise |
 | Officeサーバーにインストールされているサーバー製品を管理する | 同じクラウド ベースのサービスをMicrosoft 365 |
 |  |  |
 
@@ -50,7 +50,7 @@ Microsoft 365には、microsoft クラウドからインストールおよび更
 
 1. ユーザーのライセンスを取得Microsoft 365割り当てる。
 2. コンピューター Office 2013 または Office 2016 をアンインストールします。
-3. 個別Microsoft 365 Apps for enterpriseまたは IT ロールアウト中に、このファイルをインストールします。 詳細については、「展開ガイド[for Microsoft 365 Apps」 を参照してください](/deployoffice/deployment-guide-microsoft-365-apps)。
+3. 個別Microsoft 365 Apps for enterpriseまたは IT ロールアウト中に、このファイルをインストールします。 詳細については、「[Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
 
 Microsoft 365 Apps for enterprise更新プログラムと新しい機能更新プログラムの両方を自動的にインストールし、セキュリティと生産性を向上Microsoft 365クラウド ベースのサービスを利用できます。
 
@@ -82,7 +82,7 @@ Microsoft 365には、web ブラウザーや Outlook クライアントなど、
 
 オンプレミス サーバーの移行が完了したテナントの例を次に示します。
 
-![オンプレミス サーバーの移行が完了したテナントの例](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
+![オンプレミス サーバーの移行が完了したテナントの例。](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
 
 この図では、組織には次の機能があります。
 
@@ -98,6 +98,6 @@ Microsoft 365には、web ブラウザーや Outlook クライアントなど、
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 5.デバイスとアプリの管理を展開する](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
+[![手順 5.デバイスとアプリの管理を展開します。](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
 
 デバイスと [アプリの管理を続行して、](tenant-management-device-management.md) デバイスとアプリの管理を展開します。

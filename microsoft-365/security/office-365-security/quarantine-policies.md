@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 581b465ddc8197e2f029b149c57d5d83aacf7a15
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: b35a53973c64447fe01b3657969cc7289165538d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533473"
+ms.locfileid: "58561220"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -49,10 +49,10 @@ Exchange Online Protection (EOP) およびOffice 365 用 Microsoft Defender の�
 
 |アクセス許可|アクセスなし|制限付きアクセス|フル アクセス|
 |---|:---:|:---:|:---:|
-|**送信者のブロック** (_PermissionToBlockSender_)||![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|**Delete** (_PermissionToDelete_)||![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|**プレビュー** (_PermissionToPreview_)||![チェック マーク](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
-|**受信者に検疫からのメッセージの解放を許可** する (_PermissionToRelease_)|||![チェック マーク](../../media/checkmark.png)|
+|**送信者のブロック** (_PermissionToBlockSender_)||![チェック マークを付します。](../../media/checkmark.png)|![チェック マークを付します。](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![チェック マークを付します。](../../media/checkmark.png)|![チェック マークを付します。](../../media/checkmark.png)|
+|**プレビュー** (_PermissionToPreview_)||![チェック マークを付します。](../../media/checkmark.png)|![チェック マークを付します。](../../media/checkmark.png)|
+|**受信者に検疫からのメッセージの解放を許可** する (_PermissionToRelease_)|||![チェック マークを付します。](../../media/checkmark.png)|
 |**受信者がメッセージを検疫から** 解放する要求を許可する (_PermissionToRequestRelease_)||![チェック マーク](../../media/checkmark.png)||
 |
 
@@ -82,7 +82,7 @@ Microsoft 365 Defender ポータルまたは PowerShell で検疫ポリシーを
 
 1. [セキュリティ ポータルMicrosoft 365 Defenderに移動し、[電子メール &**の** 脅威ポリシー] セクションの [検疫ポリシー] に移動し、[検疫ポリシー \>  \>  \>  ]**を選択します**。
 
-2. [検疫ポリシー **] ページで** 、[カスタム ポリシーの追加] アイコン [カスタム ![ ](../../media/m365-cc-sc-create-icon.png) **ポリシーの追加] をクリックします**。
+2. [検疫ポリシー **] ページで** 、[カスタム ポリシーの ![ 追加] アイコンをクリックします。](../../media/m365-cc-sc-create-icon.png) **カスタム ポリシーを追加します**。
 
 3. 新 **しいポリシー ウィザード** が開きます。 [ポリシー名 **] ページで** 、[ポリシー名] ボックスに簡単な一意の **名前を入力** します。 今後の手順では、名前で検疫ポリシーを識別して選択する必要があります。 完了したら、**[次へ]** をクリックします。
 
@@ -253,7 +253,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
    **注**: 新しいポリシーを作成する場合、空の **[** 検疫ポリシーの選択] の値は、その評決の既定の検疫ポリシーが使用されます。 後でポリシーを編集すると、前の表で説明したように、空白の値が実際の既定の検疫ポリシー名に置き換えられる。
 
-   ![スパム対策ポリシーの検疫ポリシーの選択](../../media/quarantine-tags-in-anti-spam-policies.png)
+   ![スパム対策ポリシーの検疫ポリシーの選択。](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 スパム対策ポリシーを作成および変更する手順の詳細については、「EOP でのスパム対策ポリシーの構成」 [を参照してください](configure-your-spam-filter-policies.md)。
 
@@ -333,7 +333,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
    **注**: 新しいポリシーを作成する場合は、[検疫ポリシーの適用] の値が空白の場合、そのアクションの既定の検疫ポリシーが使用されます。 後でポリシーを編集すると、前の表で説明したように、空白の値が実際の既定の検疫ポリシー名に置き換えられる。
 
-   ![スパム対策ポリシーの検疫ポリシーの選択](../../media/quarantine-tags-in-anti-phishing-policies.png)
+   ![スパム対策ポリシーの検疫ポリシーの選択。](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
 フィッシング対策ポリシーを作成および変更するための完全な手順については、次のトピックを参照してください。
 
@@ -519,7 +519,7 @@ New-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      次のスクリーンショットは、エンド ユーザーのスパム通知でカスタマイズされた表示名を示しています。
 
-     ![エンド ユーザースパム通知のカスタマイズされた送信者の表示名](../../media/quarantine-tags-esn-customization-display-name.png)
+     ![エンド ユーザーのスパム通知でカスタマイズされた送信者の表示名。](../../media/quarantine-tags-esn-customization-display-name.png)
 
    - **免責** 事項 : エンドユーザーのスパム通知の下部にカスタム免責事項を追加します。 ローカライズされたテキスト、 **組織からの免責事項:** は常に最初に含まれていて、その後に指定したテキストが含まれます。
 
@@ -527,19 +527,19 @@ New-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      次のスクリーンショットは、エンド ユーザーのスパム通知でカスタマイズされた免責事項を示しています。
 
-     ![エンドユーザーのスパム通知の下部にあるカスタム免責事項](../../media/quarantine-tags-esn-customization-disclaimer.png)
+     ![エンドユーザーのスパム通知の下部にあるカスタム免責事項。](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
    - **[言語の選択**]: エンド ユーザーのスパム通知は、受信者の言語設定に基づいて既にローカライズされています。 表示名と免責事項の値には、異なる **言語でカスタマイズ** されたテキスト **を指定** できます。
 
      [最初の言語] ボックスから少なくとも 1 つの言語を選択し、[追加] を **クリックします**。 複数の言語を選択するには、[追加] をクリック **します** 。 セクションの言語ボックスには、選択した言語すべてが表示されます。
 
-     ![検疫ポリシーのグローバル検疫通知設定の [2 番目の言語] ボックスで選択した言語](../../media/quarantine-tags-esn-customization-selected-languages.png)
+     ![検疫ポリシーのグローバル検疫通知設定の [2 番目の言語] ボックスで選択した言語。](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
    - **[会社のロゴを使用** する]: エンド ユーザーのスパム通知の上部で使用される既定の Microsoft ロゴを置き換える場合は、このオプションを選択します。 これを行う前に、「カスタム ロゴをアップロードするには、組織Microsoft 365テーマをカスタマイズする」の[指示](../../admin/setup/customize-your-organization-theme.md)に従う必要があります。
 
      次のスクリーンショットは、エンドユーザーのスパム通知のカスタム ロゴを示しています。
 
-     ![エンドユーザースパム通知のカスタム ロゴ](../../media/quarantine-tags-esn-customization-logo.png)
+     ![エンドユーザーのスパム通知のカスタム ロゴ。](../../media/quarantine-tags-esn-customization-logo.png)
 
    - **[エンド ユーザーのスパム通知を** 1 日ごとに送信する] : エンド ユーザーの通知を送信する頻度を選択します。
 
@@ -583,7 +583,7 @@ PowerShell を使用して検疫ポリシーを表示する場合は、次の手
 
 2. [検疫 **ポリシー] ページで** 、名前をクリックしてポリシーを選択します。
 
-3. ポリシーを選択した後、[ポリシーの編集] アイコン ![ ](../../media/m365-cc-sc-edit-icon.png) **が表示される [ポリシーの編集** ] アイコンをクリックします。
+3. ポリシーを選択した後、[ポリシーの編集] ![ アイコンをクリックします。](../../media/m365-cc-sc-edit-icon.png) **表示されるポリシー** アイコンを編集します。
 
 4. 開 **くポリシーの** 編集ウィザードは、この記事の前の「Microsoft 365 Defender ポータルの検疫ポリシーの作成」で説明したように、新しいポリシー [ウィザードと](#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal)事実上同じです。
 
@@ -620,7 +620,7 @@ Set-QuarantineTag -Identity "<QuarantinePolicyName>" [Settings]
 
 2. [検疫 **ポリシー] ページ** で、名前をクリックして削除するカスタム検疫ポリシーを選択します。
 
-3. ポリシーを選択した後、[ポリシーの削除] ![ アイコン ](../../media/m365-cc-sc-delete-icon.png) が表示される [ **ポリシーの** 削除] アイコンをクリックします。
+3. ポリシーを選択した後、[ポリシーの削除] ![ アイコンをクリックします。](../../media/m365-cc-sc-delete-icon.png) **表示されるポリシー** アイコンを削除します。
 
 4. 表示 **される確認ダイアログで** [ポリシーの削除] をクリックします。
 
@@ -672,14 +672,14 @@ Remove-QuarantineTag -Identity "<QuarantinePolicyName>"
   - **検疫から削除**
   - **差出人をブロックする**
 
-  ![検疫ポリシーがユーザーに制限付きアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+  ![検疫ポリシーがユーザーに制限付きアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン。](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
 - **エンド ユーザーのスパム通知**: 次のボタンを使用できます。
   - **差出人をブロックする**
   - **リリースの要求**
   - **確認**
 
-  ![検疫ポリシーがユーザーに制限付きアクセス許可を与える場合、エンド ユーザーのスパム通知で使用可能なボタン](../../media/quarantine-tags-esn-limited-access.png)
+  ![検疫ポリシーがユーザーに制限付きアクセス許可を与える場合、エンド ユーザーのスパム通知で使用可能なボタン。](../../media/quarantine-tags-esn-limited-access.png)
 
 #### <a name="full-access"></a>フル アクセス
 
@@ -692,14 +692,14 @@ Remove-QuarantineTag -Identity "<QuarantinePolicyName>"
   - **検疫から削除**
   - **差出人をブロックする**
 
-  ![検疫ポリシーがユーザーにフル アクセスのアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+  ![検疫ポリシーがユーザーにフル アクセスのアクセス許可を与える場合、検疫済みメッセージの詳細で使用可能なボタン。](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
 - **エンド ユーザーのスパム通知**: 次のボタンを使用できます。
   - **差出人をブロックする**
   - **リリース**
   - **確認**
 
-  ![検疫ポリシーがユーザーにフル アクセスのアクセス許可を与える場合、エンド ユーザーのスパム通知で使用可能なボタン](../../media/quarantine-tags-esn-full-access.png)
+  ![検疫ポリシーがユーザーにフル アクセスのアクセス許可を与える場合、エンド ユーザーのスパム通知で使用可能なボタン。](../../media/quarantine-tags-esn-full-access.png)
 
 ### <a name="individual-permissions"></a>個々のアクセス許可
 

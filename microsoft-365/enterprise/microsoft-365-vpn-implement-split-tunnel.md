@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: 58c72fa0ede7b9f0fb75d1a8d8c26a4a18464aa4
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9d706de846b6206a6be8a1524da1222b1c49147b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533581"
+ms.locfileid: "58571977"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 
@@ -37,7 +37,7 @@ ms.locfileid: "58533581"
 
 分散およびパフォーマンスに敏感なクラウド アプリケーションに接続するための強制トンネリングされた VPN の使用は最適とは言え、セキュリティの観点から現状を維持するために、一部の企業ではその悪影響が受け入れられた可能性があります。 このシナリオの例となる図を次に示します。
 
-![スプリット トンネル VPN 構成](../media/vpn-split-tunneling/enterprise-network-traditional.png)
+![VPN Tunnel分割。](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 この問題は何年も前から増加し続け、多くのお客様がネットワーク トラフィック パターンの大幅な変化を報告しています。 オンプレミスに滞在するために使用されたトラフィックは、外部クラウド エンドポイントに接続されます。 Microsoft ユーザーの多くから、以前はネットワーク トラフィックの約 80 ％は内部ソース (上記の図の点線で示した部分) に送られるものだったという報告があります。 2020 年には、主要な作業領域をクラウドに移行したことにより、その割合は約 20 ％以下になりました。この傾向は他の企業でも珍しいことではありません。 クラウドへの移行の旅を進めていくほど、上記のモデルはますます扱いにくく、持続不可能になり、組織がすばやくクラウド ファーストの世界へ足を踏み入れることを妨げます。
 
@@ -63,31 +63,31 @@ Microsoft は、お客様や幅広い業界と長年にわたって緊密に連�
 
 これは、ほとんどの企業ユーザーにとっては最も一般的なスタート地点になります。 強制 VPN が使用されます。つまり、エンドポイントが企業ネットワーク内に存在するか存在しないかにかかわらず、トラフィックの 100% が企業ネットワークに送信されます。 外部 (インターネット) にバインドされたトラフィック (Office 365インターネットブラウズなど) は、プロキシなどのオンプレミスのセキュリティ機器からヘア ピン留めされます。 したがって、リモートで作業しているユーザーの 100% 近い現在の環境では、このモデルは VPN インフラストラクチャに大きな負荷を与え、すべての企業トラフィックのパフォーマンスを大幅に低下させる可能性が高く、企業が危機の時に効率的に運用する可能性があります。
 
-![VPN の強制トンネルモデル 1](../media/vpn-split-tunneling/vpn-model-1.png)
+![VPN 強制Tunnelモデル 1。](../media/vpn-split-tunneling/vpn-model-1.png)
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. 少数の認可された例外を含む VPN 強制トンネル
 
 このモデルは、VPN トンネルをバイパスし、この例の Office 365 サービスに直接移動するために非常に高い負荷と待機時間に敏感ないくつかの制御された定義されたエンドポイントを可能にし、企業が運用する方が大幅に効率的です。 これにより、オフロードされたサービスのパフォーマンスが大幅に向上し、VPN インフラストラクチャへの負荷も軽減され、リソースに対するより低いコンテンツで動作する必要がある要素も可能になります。 この記事では、単純で定義されたアクションを多数の肯定的な結果で迅速に実行できるので、移行の支援に集中しています。
 
-![スプリット トンネリング VPN モデル2](../media/vpn-split-tunneling/vpn-model-2.png)
+![VPN Tunnel 2 を分割します。](../media/vpn-split-tunneling/vpn-model-2.png)
 
 ### <a name="3-vpn-forced-tunnel-with-broad-exceptions"></a>3. 広範囲な例外を含む VPN 強制トンネリング
 
 3 番目のモデルは、定義されたエンドポイントの小さなグループを直接送信するのではなく、モデル 2 の範囲を広げ、Office 365 や SalesForce などの信頼できるサービスに直接すべてのトラフィックを送信します。 これにより、企業の VPN インフラストラクチャの負荷がさらに軽減され、決められたサービスのパフォーマンスが向上します。 このモデルは、実現可能性の評価と実装に時間がかかる可能性が高いから、モデル 2 が正常に実施されると、後日繰り返し実行できる手順になる可能性があります。
 
-![スプリット トンネリング VPN モデル3](../media/vpn-split-tunneling/vpn-model-3.png)
+![スプリット Tunnel VPN モデル 3.](../media/vpn-split-tunneling/vpn-model-3.png)
 
 ### <a name="4-vpn-selective-tunnel"></a>4. VPN 選択的トンネリング
 
 このモデルは、企業 IP アドレスを持つトラフィックのみが VPN トンネルに送信され、他の全ての既定のルートはインターネット パスになるため、3番目のモデルの逆になります。 このモデルでは、組織が[ゼロ トラスト](https://www.microsoft.com/security/zero-trust?rtc=1)への道を歩み、安全な実装ができる必要があります。 このモデルや、そこからの変化型は、企業ネットワークからクラウドに移行するサービスが増えるにつれて、既定のモデルとなることが求められてくるでしょう。 Microsoft では、このモデルを内部で使用しています。Microsoft の VPN スプリット トンネリングの実装の詳細については、「[VPN で実行: Microsoft がリモート ワークの従業員をどのように接続させているか](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)」をご覧ください。
 
-![スプリット トンネリング VPN モデル4](../media/vpn-split-tunneling/vpn-model-4.png)
+![VPN Tunnel 4 を分割します。](../media/vpn-split-tunneling/vpn-model-4.png)
 
 ### <a name="5-no-vpn"></a>5. VPN なし
 
 モデル番号 2 のより高度なバージョンで、内部サービスは Azure AD Proxy、MCAS、Zscaler ZPA などの最新のセキュリティ アプローチまたは SDWAN ソリューションを通じて公開されます。
 
-![スプリット トンネリング VPN モデル5](../media/vpn-split-tunneling/vpn-model-5.png)
+![VPN Tunnel 5 を分割します。](../media/vpn-split-tunneling/vpn-model-5.png)
 
 ## <a name="implement-vpn-split-tunneling"></a>スプリット トンネル VPN の実装
 
@@ -95,7 +95,7 @@ Microsoft は、お客様や幅広い業界と長年にわたって緊密に連�
 
 次の図は、推奨している VPN スプリット トンネリング ソリューションのしくみを示しています。
 
-![スプリット トンネリング VPN ソリューションの詳細](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![スプリット トンネル VPN ソリューションの詳細。](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. 最適化するエンドポイントを決める
 
@@ -172,7 +172,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 ルートを追加したら、コマンド プロンプトまたは PowerShell で「**印刷のルーティング**」を実行して、ルート テーブルが正しいことを確認できます。  出力には、追加したルートが含まれ、インターフェースのインデックス (この例では _22_) とそのインターフェースのゲートウェイ (この例では _192.168.1.1_) が表示されます。
 
-![印刷結果をルーティングする](../media/vpn-split-tunneling/vpn-route-print.png)
+![印刷出力をルーティングします。](../media/vpn-split-tunneling/vpn-route-print.png)
 
 「最適化」カテゴリにある _すべての_ 現在の IP アドレス範囲のルートを追加するには、次のスクリプトの型を使用して、現在の最適化 IPの一連のサブネットの [Office 365 IP および URL Web サービス](microsoft-365-ip-web-service.md)にクエリを実行し、それをルート テーブルに追加します。
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 SQL DataParser コネクタを設定して使用して、SQL データをインポートおよびアーカイブするMicrosoft 365。
-ms.openlocfilehash: 6820400d215f2ed94f9741e877bee54c11ab746ebb0f6933840f3d5e9b3792dc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 21a4c8a8a7d0c1a7e8dbf8cef7f1731e56d456ce
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872250"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563171"
 ---
 # <a name="set-up-a-connector-to-archive-sql-data"></a>データをアーカイブするコネクタをSQLする
 
@@ -29,7 +29,7 @@ ms.locfileid: "53872250"
 
 次の概要では、データ コネクタを使用してデータをアーカイブするプロセスSQL説明Microsoft 365。
 
-![17a-4 SQLデータのアーカイブ ワークフロー](../media/SQLDatabaseDataParserConnectorWorkflow.png)
+![17a-4 SQLデータのアーカイブ ワークフロー。](../media/SQLDatabaseDataParserConnectorWorkflow.png)
 
 1. 組織は 17a-4 を使用して、DataParser のSQL構成します。
 

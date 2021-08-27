@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d9d5f37d9085388963898267fcc9967da6223a73
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: ceb70f8aa415c978cb6ce8e8b6fc004c3585803d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58606979"
+ms.locfileid: "58572145"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender for Endpoint API を介したパートナー アクセス
 
@@ -39,10 +39,10 @@ ms.locfileid: "58606979"
 
 このページでは、顧客に代わって Microsoft Defender for Endpoint へのプログラムによるアクセスをAzure Active Directory (Azure AD) アプリケーションを作成する方法について説明します。
 
+
 Microsoft Defender for Endpoint は、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、Microsoft Defender for Endpoint の機能に基づいてワークフローを自動化し、革新するのに役立ちます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については[、「OAuth 2.0 Authorization Code Flow」 を参照してください](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般に、API を使用するには、次の手順を実行する必要があります。
-
 - マルチテナント **Azure AD** 作成します。
 - アプリケーションが必要とする Defender for Endpoint リソースにアクセスするために、お客様の管理者によって承認 (同意) を受け取る。
 - このアプリケーションを使用してアクセス トークンを取得します。
@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 1. グローバル管理者の役割 [を持つユーザーを](https://portal.azure.com) 使用して Azure **テナントにサインイン** します。
 
-2. [アプリの **登録Azure Active Directory** \> **新しい登録]** \> **に移動します**。
+2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。 
 
    ![アプリケーションの登録Microsoft Azureナビゲーションのイメージ。](images/atp-azure-new-app2.png)
 
@@ -68,34 +68,37 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
    ![パートナー アプリケーションMicrosoft Azureのイメージ。](images/atp-api-new-app-partner.png)
 
+
 4. アプリケーションが Microsoft Defender for Endpoint にアクセスし、統合を完了するために必要な最小限のアクセス許可セットで割り当て許可を付与します。
 
-   - アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API を選択します。組織で \>  \> WindowsDefenderATP >を使用し **、WindowsDefenderATP** で選択します。 
+   - アプリケーション ページで **、[API アクセス** 許可の追加] アクセス許可 API を選択します。組織で  >    >  WindowsDefenderATP >を使用し **、WindowsDefenderATP** で選択します。 
 
    - **注**: *WindowsDefenderATP* は元のリストには表示されません。 テキスト ボックスに名前を書き始め、表示を確認します。
 
-     ![アクセス許可を追加します。](images/add-permission.png)
+   ![アクセス許可を追加します。](images/add-permission.png)
+   
+   ### <a name="request-api-permissions"></a>API のアクセス許可を要求する
 
-### <a name="request-api-permissions"></a>API のアクセス許可を要求する
+   必要なアクセス許可を確認するには、呼び出す API の [アクセス許可] セクションを確認します。 例:
 
-必要なアクセス許可を確認するには、呼び出す API の [アクセス許可] セクションを確認します。 例:
+   - 高度 [なクエリを実行するには、[](run-advanced-query-api.md)高度なクエリの実行] アクセス許可を選択します。
+   
+   - デバイス [を分離するには、[](isolate-machine.md)コンピューターの分離] アクセス許可を選択します。
 
-- 高度 [なクエリを実行するには、[](run-advanced-query-api.md)高度なクエリの実行] アクセス許可を選択します。
-- デバイス [を分離するには、[](isolate-machine.md)コンピューターの分離] アクセス許可を選択します。
+   次の例では、[すべてのアラートの読み取 **り] アクセス許可を使用** します。
 
-次の例では、[すべてのアラートの読み取 **り] アクセス許可を使用** します。
-
-1. [ **アプリケーションのアクセス許可** \> **] Alert.Read.All >** アクセス許可 **の追加] で選択します。**
+   [**アプリケーションのアクセス許可**  >  **] Alert.Read.All >** アクセス許可 **の追加] で選択します。**
 
    ![アプリのアクセス許可。](images/application-permissions.png)
 
-2. [同意 **の付与] を選択します。**
+
+5. [同意 **の付与] を選択します。**
 
    - **注**: アクセス許可を追加する度に、新しいアクセス許可を有効にするための同意の付与で選択する必要があります。
 
    ![アクセス許可の付与のイメージ。](images/grant-consent.png)
 
-3. アプリケーションにシークレットを追加します。
+6. アプリケーションにシークレットを追加します。
 
    - [ **証明書とシークレット&選択し、** シークレットに説明を追加し、[追加] を **選択します**。
 
@@ -103,13 +106,13 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
     ![アプリ キーの作成のイメージ。](images/webapp-create-key2.png)
 
-4. アプリケーション ID を書き下ろします。
+7. アプリケーション ID を書き下ろします。
 
    - アプリケーション ページで、[概要] に移動 **し** 、次の情報をコピーします。
 
    ![作成されたアプリ ID のイメージ。](images/app-id.png)
 
-5. アプリケーションを顧客のテナントに追加します。
+8. アプリケーションを顧客のテナントに追加します。
 
    アプリケーションを使用する予定の各顧客テナントでアプリケーションを承認する必要があります。 これは、お客様の代わりにアプリケーションが Microsoft Defender for Endpoint アプリケーションとやり取りする場合です。
 
@@ -129,7 +132,8 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
    さらに、トークンを取得する際には、顧客にテナント ID を要求し、将来使用するために保存する必要があります。
 
-6. **完成です！** アプリケーションの登録に成功しました! トークンの取得と検証については、以下の例を参照してください。
+- **完成です！** アプリケーションの登録に成功しました!
+- トークンの取得と検証については、以下の例を参照してください。
 
 ## <a name="get-an-access-token-example"></a>アクセス トークンの例を取得する
 
@@ -178,7 +182,7 @@ return $token
     ```console
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
 
     const string authority = "https://login.microsoftonline.com";
     const string wdatpResourceId = "https://api.securitycenter.microsoft.com";

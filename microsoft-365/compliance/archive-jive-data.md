@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas から Jive データをインポートおよびアーカイブするコネクタを、Microsoft 365。 このコネクタを使用すると、Microsoft 365 でサード パーティデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: dee3f3b758d79c769a923330e07c20be168e03953f8904fd91d5fca222831dc4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b2842d3d9dff71292b5ff47e62b1915850106e42
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886932"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571509"
 ---
 # <a name="set-up-a-connector-to-archive-jive-data"></a>Jive データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ Jive データをユーザー メールボックスに格納した後、訴訟�
 
 次の概要では、コネクタを使用して Jive データをアーカイブするプロセスについて説明Microsoft 365。
 
-![Jive データのアーカイブ ワークフロー](../media/JiveConnectorWorkflow.png)
+![Jive データのアーカイブ ワークフロー。](../media/JiveConnectorWorkflow.png)
 
 1. 組織は Jive と一緒に Jive サイトをセットアップおよび構成します。
 

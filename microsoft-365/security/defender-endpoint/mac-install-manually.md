@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b7a3ae0c7dcf64792f61cb183e2bee5f34f2c1a6d7009b421ea767ef44aea06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 32da15254d011e67959c7ebeff42ab7024eb0895
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902890"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571833"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS での Microsoft Defender for Endpoint の手動展開
 
@@ -33,7 +33,7 @@ ms.locfileid: "53902890"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップします](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップします](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 このトピックでは、Microsoft Defender for Endpoint を macOS に手動で展開する方法について説明します。 展開が成功するには、次のすべての手順を完了する必要があります。
 
@@ -55,7 +55,7 @@ ms.locfileid: "53902890"
 3. ページのセクション 2 で、[インストール パッケージのダウンロード **] を選択します**。 wdav.pkg としてローカル ディレクトリに保存します。
 4. ページのセクション 2 で、[オンボーディング パッケージの **ダウンロード] を選択します**。 同じディレクトリWindowsDefenderATPOnboardingPackage.zipとして保存します。
 
-    ![Microsoft 365 Defenderポータルのスクリーンショット](images/portal-onboarding-macos.png)
+    ![Microsoft 365 Defenderのスクリーンショットを参照してください。](images/portal-onboarding-macos.png)
 
 5. コマンド プロンプトから、2 つのファイルが存在するように確認します。
 
@@ -65,20 +65,20 @@ ms.locfileid: "53902890"
 
 1. Finder でダウンロードした wdav.pkg に移動し、開きます。
 
-    ![アプリのインストールのスクリーンショット1](images/mdatp-28-appinstall.png)
+    ![アプリインストールのスクリーンショット 1.](images/mdatp-28-appinstall.png)
 
 2. [ **続行] を** 選択し、ライセンス条項に同意し、メッセージが表示されたらパスワードを入力します。
 
-    ![アプリのインストールのスクリーンショット2](images/mdatp-29-appinstalllogin.png)
+    ![アプリのインストールのスクリーンショット 2.](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
    > Microsoft のドライバーのインストールを許可するように求めるメッセージが表示されます ("System Extension Blocked" または "Installation is on hold" のいずれかまたは両方)。 ドライバーのインストールを許可する必要があります。
 
-   ![アプリのインストールのスクリーンショット3](images/mdatp-30-systemextension.png)
+   ![アプリインストールのスクリーンショット 3.](images/mdatp-30-systemextension.png)
 
 3. [ **セキュリティの基本設定を開く]** または [システム環境設定を開く **] >[セキュリティ] &選択します**。 [許可 **] を選択します**。
 
-    ![セキュリティとプライバシー ウィンドウのスクリーンショット](images/mdatp-31-securityprivacysettings.png)
+    ![セキュリティとプライバシー ウィンドウのスクリーンショット。](images/mdatp-31-securityprivacysettings.png)
 
    インストールが続行されます。
 
@@ -94,29 +94,29 @@ ms.locfileid: "53902890"
 
 1. Finder でダウンロードした wdav.pkg に移動し、開きます。
 
-    ![アプリのインストールのスクリーンショット4](images/big-sur-install-1.png)
+    ![アプリのインストールのスクリーンショット 4.](images/big-sur-install-1.png)
 
 2. [ **続行] を** 選択し、ライセンス条項に同意し、メッセージが表示されたらパスワードを入力します。
 
 3. インストール プロセスの最後に、製品で使用されるシステム拡張機能を承認するように昇格されます。 [Open **Security Preferences] を選択します**。
 
-    ![システム拡張機能の承認](images/big-sur-install-2.png)
+    ![システム拡張機能の承認。](images/big-sur-install-2.png)
 
 4. [セキュリティ] **ウィンドウの [&] ウィンドウで** 、[許可] を **選択します**。
 
-    ![システム拡張機能のセキュリティの基本設定1](images/big-sur-install-3.png)
+    ![システム拡張機能のセキュリティの基本設定 1.](images/big-sur-install-3.png)
 
 5. Microsoft Defender for Endpoint on Mac で配布&すべてのシステム拡張機能について、手順 3 から 4 を繰り返します。
 
 6. エンドポイント検出と応答機能の一環として、Microsoft Defender for Endpoint on Mac はソケット トラフィックを検査し、この情報をポータルMicrosoft 365 Defenderします。 ネットワーク トラフィックをフィルター処理するための Microsoft Defender for Endpoint アクセス許可の付与を求めるメッセージが表示されたら、[許可] を **選択します**。
 
-    ![システム拡張機能のセキュリティの基本設定2](images/big-sur-install-4.png)
+    ![システム拡張機能のセキュリティ設定 2.](images/big-sur-install-4.png)
 
 7. [System **Preferences** Security & プライバシー] を開き、[プライバシー] タブに移動します。Microsoft Defender ATP および Microsoft Defender ATP Endpoint Security Extension にフル ディスク アクセスのアクセス許可を  >  **付与します**。   
 
-    ![ディスクへのフル アクセス](images/big-sur-install-5.png)
+    ![ディスクへのフル アクセス。](images/big-sur-install-5.png)
 
-## <a name="client-configuration"></a>クライアント構成
+## <a name="client-configuration"></a>クライアントの構成
 
 1. wdav.pkg と MicrosoftDefenderATPOnboardingMacOs.py を macOS に Microsoft Defender for Endpoint を展開するデバイスにコピーします。
 
@@ -141,7 +141,7 @@ ms.locfileid: "53902890"
     インストール後、右上隅の macOS ステータス バーに Microsoft Defender アイコンが表示されます。
 
     > [!div class="mx-imgBorder"]
-    > ![ステータス バーのスクリーンショットの Microsoft Defender アイコン](images/mdatp-icon-bar.png)
+    > ![ステータス バーのスクリーンショットの Microsoft Defender アイコン。](images/mdatp-icon-bar.png)
 
 ## <a name="how-to-allow-full-disk-access"></a>フル ディスク アクセスを許可する方法
 
@@ -158,13 +158,13 @@ ms.locfileid: "53902890"
         mdatp health --field real_time_protection_enabled
         ```
 
-    1. ターミナル ウィンドウを開きます。 次のコマンドをコピーして実行します。
+    1. [ターミナル] ウィンドウを開きます。 次のコマンドをコピーして実行します。
 
         ```bash
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    1. このファイルは、Defender for Endpoint on Mac で検疫されている必要があります。 次のコマンドを使用して、検出された脅威の一覧を表示します。
+    1. このファイルは、Defender for Endpoint on Mac で検疫されている必要があります。 次のコマンドを使用して、検出されたすべての脅威を一覧表示します。
 
         ```bash
         mdatp threat list

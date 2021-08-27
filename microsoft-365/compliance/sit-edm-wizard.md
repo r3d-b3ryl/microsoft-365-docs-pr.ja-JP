@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全一致スキーマと機密情報の種類ウィザードrを使用する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 082bc5e9731a7abb0a8f1d9bd9b6f2e4e4a77dd07363dd475ec350c0c983b250
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dbba5e0e63f473d12b40c902001332c1689e4d12
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895352"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572169"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>完全一致スキーマと機密情報の種類ウィザードを使用する
 
@@ -47,7 +47,7 @@ ms.locfileid: "53895352"
 
 2. **EDM スキーマを作成** を選択して、スキーマ ウィザードの構成 ポップアップを開きます。
 
-![EDM スキーマ作成ウィザードの設定ポップアップ](../media/edm-schema-wizard-1.png)
+![EDM スキーマ作成ウィザード構成のフライアウト。](../media/edm-schema-wizard-1.png)
 
 3. 適切な **名前** と **説明** を入力します。
 

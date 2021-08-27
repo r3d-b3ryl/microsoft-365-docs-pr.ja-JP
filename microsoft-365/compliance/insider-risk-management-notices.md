@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: efb44f098bb18ee25bfc39b2b1c46faa057faa5e7996b24a22af89277e135742
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 786878e827fed6318a70501e400a719ad9181835
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860686"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561448"
 ---
 # <a name="insider-risk-management-notice-templates"></a>インサイダー リスク管理通知のテンプレート
 
@@ -29,7 +29,7 @@ Insider リスク管理通知テンプレートを使用すると、ユーザー
 
 **通知テンプレートダッシュボード** には、構成された通知テンプレートのリストが表示され、新しい通知テンプレートを作成できます。 通知テンプレートは、最新の通知テンプレートを最初に、日付の逆順でリストに表示されます。
 
-![Insider リスク管理通知テンプレート ダッシュボード](../media/insider-risk-notices-dashboard.png)
+![Insider リスク管理通知テンプレート ダッシュボード。](../media/insider-risk-notices-dashboard.png)
 
 ## <a name="html-for-notices"></a>通知の HTML
 

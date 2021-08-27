@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタをセットアップして、SMS および MMS データを O2 モバイル ネットワークからインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: afc8844358f7708cbb805231a4abca85055f1b1d5edadcf311c07325e0eaf772
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 01e47cbd3cafe049bd444a50f1ed39c2b79701a1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808589"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571473"
 ---
 # <a name="set-up-a-connector-to-archive-o2-network-data"></a>O2 ネットワーク データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ SMS メッセージと音声通話がユーザー メールボックスに保存
 
 次の概要では、コネクタを使用して O2 Network データをアーカイブするプロセスについて説明Microsoft 365。
 
-![O2 ネットワーク アーカイブ ワークフロー](../media/O2NetworkConnectorWorkflow.png)
+![O2 ネットワーク アーカイブ ワークフロー。](../media/O2NetworkConnectorWorkflow.png)
 
 1. 組織は、TeleMessage と O2 を使用して O2 ネットワーク コネクタをセットアップします。 詳細については [、「O2 Network Archiver」を参照してください](https://www.telemessage.com/office365-activation-for-o2-network-archiver)。
 

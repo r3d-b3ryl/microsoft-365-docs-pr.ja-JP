@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 07/22/2021
-ms.openlocfilehash: c2fafe62c5fecbc1e7ed9f7e622daf6a1b6c7faa
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 6063aed4fcbd215e4acfcc1e265df5775c3105b7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510047"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561388"
 ---
 # <a name="cloud-delivered-protection-antivirus-sample-submission"></a>クラウド配信の保護ウイルス対策サンプルの申請
 
@@ -95,15 +95,15 @@ Defender for Endpoint ウイルス対策およびクラウド保護は、次の�
 
 _図 1 - Microsoft Defender クラウド保護に送信されるメタデータの例_:
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="図 1.Microsoft Defender Cloud Protection に送信されるメタデータの例":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="図 1.Microsoft Defender Cloud Protection に送信されるメタデータの例。":::
 
 _図 2.クラウド配信の保護フロー_:
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="図 2.クラウド配信の保護フロー":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="図 2.クラウド配信の保護フロー。":::
 
 _図 3.クラウドによる保護と層化された機械学習_:
 
-:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="図 3.クラウドによる保護とレイヤー化された機械学習":::
+:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="図 3.クラウドによる保護とレイヤー化された機械学習。":::
 
 > [!NOTE]
 >

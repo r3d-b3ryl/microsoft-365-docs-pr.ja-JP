@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d25ef5c1d6696539162a1cec556bc3b1942fecdfe07c824e4779ad4d89ec467
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee5a8decb78d2f72b796fd3fb2ef15c1da3b0160
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889766"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585702"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint Devices リストのデバイスを調査する
 
@@ -34,7 +34,7 @@ ms.locfileid: "53889766"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Defender for Endpoint を体験してみませんか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 特定のデバイスで発生したアラートの詳細を調べて、アラートまたは侵害の潜在的な範囲に関連する可能性のある他の動作またはイベントを特定します。
 
@@ -57,7 +57,7 @@ ms.locfileid: "53889766"
 - タブ (概要、アラート、タイムライン、セキュリティ推奨事項、ソフトウェア インベントリ、検出された脆弱性、不足している KB)
 - カード (アクティブなアラート、ログオンしているユーザー、セキュリティ評価)
 
-![デバイス ビューのイメージ](images/specific-device.png)
+![デバイス ビューのイメージ。](images/specific-device.png)
 
 > [!NOTE]
 > 製品の制約により、デバイス プロファイルは 、(デバイス ページにも見られる) 'Last Seen' 時間枠を決定する際に、すべてのサイバー証拠を考慮する必要があります。
@@ -92,15 +92,16 @@ ms.locfileid: "53889766"
 タブには、デバイスに関連する関連するセキュリティと脅威防止情報が表示されます。 各タブで、列ヘッダーの上のバーから [列のカスタマイズ] を選択して、表示される列をカスタマイズできます。
 
 ### <a name="overview"></a>概要
+
 [ **概要]** タブには、アクティブ [なアラート](#cards) 、ログオンしているユーザー、およびセキュリティ評価のカードが表示されます。
 
-![デバイス ページの [概要] タブのイメージ](images/overview-device.png)
+![デバイス ページの [概要] タブのイメージ。](images/overview-device.png)
 
 ### <a name="alerts"></a>アラート
 
 [ **アラート]** タブには、デバイスに関連付けられているアラートの一覧が表示されます。 このリストは、アラート キューのフィルター[](alerts-queue.md)処理されたバージョンで、アラート、重大度 (高、中、低、情報)、キュー内の状態 (新規、進行中、解決済み)、分類 (設定されていない、誤ったアラート、真のアラート)、調査状態、アラートのカテゴリ、アラートに対処しているユーザー、および最後のアクティビティの短い説明を示します。 アラートをフィルター処理することもできます。
 
-![デバイスに関連するアラートのイメージ](images/alerts-device.png)
+![デバイスに関連するアラートのイメージ。](images/alerts-device.png)
 
 アラートの左側にある円のアイコンが選択されている場合は、フライアウトが表示されます。 このパネルでは、アラートを管理し、インシデント番号や関連デバイスなどの詳細を表示できます。 一度に複数のアラートを選択できます。
 
@@ -112,15 +113,16 @@ ms.locfileid: "53889766"
 
 タイムラインでは、特定の期間に発生したイベントを選択的にドリルダウンすることもできます。 選択した期間にデバイスで発生したイベントの一時的なシーケンスを表示できます。 ビューをさらに制御するには、イベント グループでフィルター処理するか、列をカスタマイズできます。
 
->[!NOTE]
+> [!NOTE]
 > ファイアウォール イベントを表示するには、監査ポリシーを有効にする必要があります。「Audit [Filtering Platform 接続」を参照してください](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)。
->ファイアウォールは、次のイベントをカバーします。
 >
->- [5025](/windows/security/threat-protection/auditing/event-5025) - ファイアウォール サービスが停止しました
->- [5031](/windows/security/threat-protection/auditing/event-5031) - アプリケーションがネットワーク上の受信接続を受け入れるのをブロックする
->- [5157](/windows/security/threat-protection/auditing/event-5157) - ブロックされた接続
+> ファイアウォールでは、次のイベントについて説明します。
+>
+> - [5025](/windows/security/threat-protection/auditing/event-5025) - ファイアウォール サービスが停止しました
+> - [5031](/windows/security/threat-protection/auditing/event-5031) - アプリケーションがネットワーク上の受信接続を受け入れるのをブロックする
+> - [5157](/windows/security/threat-protection/auditing/event-5157) - ブロックされた接続
 
-![イベントを含むデバイス タイムラインのイメージ](images/timeline-device.png)
+![イベントを含むデバイス タイムラインのイメージ。](images/timeline-device.png)
 
 一部の機能には、次の機能が含まれます。
 
@@ -132,7 +134,7 @@ ms.locfileid: "53889766"
 - デバイスの詳細なタイムライン イベントをエクスポートする
   - 現在の日付または指定した日付範囲のデバイス タイムラインを最大 7 日間エクスポートします。
 
-特定のイベントの詳細については、「追加情報」 **セクションを参照** してください。 これらの詳細は、次に示すイベントの種類によって異なります。 
+特定のイベントの詳細については、「追加情報」 **セクションを参照** してください。 これらの詳細は、次に示すイベントの種類によって異なります。
 
 - Application Guard に含まれる - Web ブラウザー イベントは、分離されたコンテナーによって制限されました
 - アクティブな脅威が検出されました - 脅威の実行中に脅威の検出が発生しました
@@ -143,34 +145,35 @@ ms.locfileid: "53889766"
 - アラート カテゴリ - イベントがアラートの生成につながった場合、アラート カテゴリ (たとえば"横方向の移動") が提供されます。
 
 #### <a name="event-details"></a>イベントの詳細
+
 イベントを選択して、そのイベントに関する関連する詳細を表示します。 一般的なイベント情報を表示するパネルが表示されます。 適用可能なデータが使用可能な場合は、関連するエンティティとその関係を示すグラフも表示されます。
 
 イベントと関連イベントをさらに調するには、[関連イベントのハント][](advanced-hunting-overview.md)を選択して高度な検索クエリ **をすばやく実行できます**。 クエリは、選択したイベントと、同じエンドポイントで同時に発生した他のイベントの一覧を返します。
 
-![イベントの詳細パネルのイメージ](images/event-details.png)
+![イベントの詳細パネルのイメージ。](images/event-details.png)
 
 ### <a name="security-recommendations"></a>セキュリティ上の推奨事項
 
 **セキュリティに関する推奨事項** は、Microsoft Defender for Endpoint の Threat & [管理機能から生成](tvm-dashboard-insights.md) されます。 推奨事項を選択すると、推奨事項の説明や、推奨事項の制定に関連する潜在的なリスクなどの関連する詳細を表示できるパネルが表示されます。 詳細については [、「セキュリティに関する推奨事項](tvm-security-recommendation.md) 」を参照してください。
 
-![[セキュリティの推奨事項] タブの画像](images/security-recommendations-device.png)
+![[セキュリティの推奨事項] タブのイメージ。](images/security-recommendations-device.png)
 
 ### <a name="software-inventory"></a>ソフトウェア インベントリ
 
 [ **ソフトウェア インベントリ]** タブでは、デバイス上のソフトウェアと、弱点や脅威を表示できます。 ソフトウェアの名前を選択すると、ソフトウェアの詳細ページに移動し、セキュリティの推奨事項、検出された脆弱性、インストールされているデバイス、およびバージョン配布を表示できます。 詳細については [、「ソフトウェア インベントリ」](tvm-software-inventory.md) を参照してください。
 
-![[ソフトウェア インベントリ] タブのイメージ](images/software-inventory-device.png)
+![[ソフトウェア インベントリ] タブのイメージ。](images/software-inventory-device.png)
 
 ### <a name="discovered-vulnerabilities"></a>検出された脆弱性
 
 [ **検出された脆弱性]** タブには、デバイスで検出された脆弱性の名前、重大度、および脅威の分析情報が表示されます。 特定の脆弱性を選択すると、説明と詳細が表示されます。
 
-![[検出された脆弱性] タブの画像](images/discovered-vulnerabilities-device.png)
+![[検出された脆弱性] タブの画像。](images/discovered-vulnerabilities-device.png)
 
 ### <a name="missing-kbs"></a>不足している KB
 [ **不足している KB]** タブには、デバイスの不足しているセキュリティ更新プログラムが一覧表示されます。
 
-![不足している kbs タブのイメージ](images/missing-kbs-device.png)
+![不足している kbs タブのイメージ。](images/missing-kbs-device.png)
 
 ## <a name="cards"></a>カード
 
@@ -178,26 +181,28 @@ ms.locfileid: "53889766"
 
 Microsoft Defender for Identity 機能を有効にし、アクティブなアラートがある場合、Azure Advanced **Threat Protection** カードには、デバイスとそのリスク レベルに関連するアラートの概要が表示されます。 詳細については、「アラート」ドリルダウンで確認できます。
 
-![アクティブなアラート カードのイメージ](images/risk-level-small.png)
+![アクティブなアラート カードのイメージ。](images/risk-level-small.png)
 
->[!NOTE]
->この機能を使用するには、Microsoft Defender for Identity と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。
+> [!NOTE]
+> この機能を使用するには、Microsoft Defender for Identity と Defender for Endpoint の両方で統合を有効にする必要があります。 Defender for Endpoint では、高度な機能でこの機能を有効にできます。 高度な機能を有効にする方法の詳細については、「高度な機能を有効 [にする」を参照してください](advanced-features.md)。
 
 ### <a name="logged-on-users"></a>ログオンしているユーザー
 
 [ **ログオンユーザー] カード** には、過去 30 日間にログオンしたユーザーの数と、最も頻度の少ないユーザーが表示されます。 [すべてのユーザーを表示する] リンクを選択すると、詳細ウィンドウが開き、ユーザーの種類、ログオンの種類、ユーザーが最初と最後に表示された時間などの情報が表示されます。 詳細については、「ユーザー エンティティの [調査」を参照してください](investigate-user.md)。
 
-![ユーザーの詳細ウィンドウのイメージ](images/logged-on-users.png)
+![ユーザーの詳細ウィンドウのイメージ。](images/logged-on-users.png)
+
 > [!NOTE]
-> 「最も頻繁に」ユーザー値は、対話的に正常にログオンしたユーザーの証拠にのみ基づいて計算されます。 ただし、[すべてのユーザー] サイド ウィンドウでは、すべての種類のユーザー ログオンが計算されます。そのため、ユーザーが対話型ではない可能性がある場合に、サイド ウィンドウでユーザーが頻繁に表示される可能性があります。
+> 「最も頻繁に」ユーザー値は、対話的に正常にログオンしたユーザーの証拠にのみ基づいて計算されます。
+> ただし、[すべてのユーザー] サイド ウィンドウでは、すべての種類のユーザー ログオンが計算されます。そのため、ユーザーが対話型ではない可能性がある場合に、サイド ウィンドウでユーザーが頻繁に表示される可能性があります。
 
 ### <a name="security-assessments"></a>セキュリティ評価
 
 セキュリティ **評価カードには** 、全体的な露出レベル、セキュリティ推奨事項、インストール済みソフトウェア、および検出された脆弱性が表示されます。 デバイスの露出レベルは、保留中のセキュリティ推奨事項の累積的な影響によって決まります。
 
-![セキュリティ評価カードのイメージ](images/security-assessments.png)
+![セキュリティ評価カードのイメージ。](images/security-assessments.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
 - [エンドポイント通知の Microsoft Defender の管理](manage-alerts.md)

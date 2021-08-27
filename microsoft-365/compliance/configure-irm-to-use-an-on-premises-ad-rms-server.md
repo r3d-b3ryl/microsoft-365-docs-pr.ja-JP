@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Active Directory Rights Management Service (EXCHANGE ONLINE RMS) サーバーを使用ADする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d2685994e35f88d92ab6b6854e88607cd84f153692a22f29c966e701f8d30f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 64d89d52b4e835c81ed1e2c8bbd54eaaae6f1823
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830835"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572061"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>IRM を設定して、オンプレミスの AD RMS サーバーを使用する
 
@@ -36,7 +36,7 @@ Exchange Online の IRM については、「[Information Rights Management in E
 
 - このタスクの予想所要時間:30 分
 
-- この手順を実行する前に、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可を確認するには、「メッセージング ポリシーとコンプライアンスのアクセス許可」の「Information Rights Management」 [エントリを参照](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions) してください。
+- この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可を確認するには、「メッセージング ポリシーとコンプライアンスのアクセス許可」の「Information Rights Management」 [エントリを参照](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions) してください。
 
 - AD RMS サーバーは、Windows Server 2008 以降を実行している必要があります。 RMS を展開する方法の詳細についてはAD RMS クラスターの [インストールAD参照してください](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11))。
 
@@ -168,4 +168,4 @@ TPD が正常にインポートされ、IRM が有効になったことを確認
 
 - IRM の機能をテストするには、**Test-IRMConfiguration** コマンドレットを使用します。 詳細については [、「Test-IRMConfiguration」の「例 1」を参照してください](/powershell/module/exchange/test-irmconfiguration)。
 
-- 拡張メニュー (その他のOutlook on the webアイコン) から [アクセス許可の設定] オプションを選択して、新しいメッセージを作成し、IRM-protect ![ します ](../media/ITPro-EAC-MoreOptionsIcon.gif) 。
+- 新しいメッセージを Outlook on the webで作成し、拡張メニュー ([その他のオプション] アイコン) から [アクセス許可の設定] オプションを選択して IRM-protect ![ します ](../media/ITPro-EAC-MoreOptionsIcon.gif) 。

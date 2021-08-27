@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 684585d38bd66e5a62df82e9c757a80775f4403e42d4f28c929d1f6e3fe3852f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d4f44b1e77771860ba36a77f257b34bf0cd10e2a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873372"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571785"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>ID およびデバイス アクセス ポリシーを実装するための前提条件作業
 
@@ -129,6 +129,6 @@ BYOD デバイスWindows、ユーザーは [仕事または学校の **アカウ
 
 ## <a name="next-step"></a>次の手順
 
-[![手順 2: 共通 ID を構成し、条件付きアクセス ポリシーにアクセスする](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![手順 2: 共通 ID を構成し、条件付きアクセス ポリシーにアクセスします。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 
 [共通 ID とデバイス アクセス ポリシーを構成する](identity-access-policies.md)

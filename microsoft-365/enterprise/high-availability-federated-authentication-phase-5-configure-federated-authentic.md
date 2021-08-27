@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: '概要: Azure AD Connectサーバーの高可用性フェデレーション認証用にMicrosoft 365構成Microsoft Azure。'
-ms.openlocfilehash: ecd5eac14279bb79c0e4bc574a9340314cc77574
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 8d8636c10947562037093991fa3a3cee5a867af3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356530"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561412"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>高可用性フェデレーション認証 フェーズ 5: サーバーのフェデレーション認証を構成Microsoft 365
 
@@ -65,7 +65,7 @@ Contoso 組織の例を、以下に示します。
   
 **Azure での高可用性フェデレーション認証インフラストラクチャの構成例**
 
-![Azure のフェデレーション認証インフラストラクチャMicrosoft 365構成例](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Azure のフェデレーション認証インフラストラクチャMicrosoft 365の構成例。](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Azure AD Connect を実行してフェデレーション認証を構成する
 
@@ -135,7 +135,7 @@ Azure AD Connect ツールは、FS AD、Web アプリケーション プロキ�
   
 **フェーズ 5:Azure での高可用性フェデレーション認証インフラストラクチャの最終構成**
 
-![Azure のフェデレーション認証インフラストラクチャMicrosoft 365の最終的な構成](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Azure のフェデレーション認証インフラストラクチャMicrosoft 365の最終的な構成。](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Azure 内のユーザーの高可用性フェデレーションMicrosoft 365インフラストラクチャが完了しました。
   

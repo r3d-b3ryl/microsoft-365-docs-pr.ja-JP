@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 5c208440287723367b875f3278fc69425a03b80d93a8f8b1ec4c574a31efb7ec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e6b8015cc8b6ac073c689bde3b15a411c859cada
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844322"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561280"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Defender for Identity VPN integration in Microsoft 365 Defender
 
@@ -58,11 +58,11 @@ RRAS サーバーで次の手順を実行します。
 1. サーバー名を右クリックし、[プロパティ] を **選択します**。
 1. [セキュリティ **] タブの** [アカウンティング プロバイダー **] で、[RADIUS** アカウンティング] を選択 **し、[** 構成] を **選択します**。
 
-    ![RADIUS セットアップ](../../media/defender-identity/radius-setup.png)
+    ![RADIUS セットアップ。](../../media/defender-identity/radius-setup.png)
 
 1. [RADIUS **サーバーの追加]** ウィンドウで、最も近いセンサー (ネットワーク接続を持つ) の [!INCLUDE [Product short](includes/product-short.md)] サーバー名を入力します。 高可用性を実現するには、RADIUS サーバーとして [!INCLUDE [Product short](includes/product-short.md)] 追加のセンサーを追加できます。 [ **ポート]** で、既定の 1813 が構成されていることを確認します。 [ **変更] を** 選択し、英数字の新しい共有シークレット文字列を入力します。 後で構成中に入力する必要がある場合は、新しい共有シークレット文字列に注意 [!INCLUDE [Product short](includes/product-short.md)] してください。 [RADIUS アカウント **の送信] および [アカウンティング** オフ メッセージの送信] ボックスをオンにし、[開いているすべてのダイアログ ボックスで **[OK]** を選択します。
 
-    ![VPN セットアップ](../../media/defender-identity/vpn-set-accounting.png)
+    ![VPN セットアップ。](../../media/defender-identity/vpn-set-accounting.png)
 
 ## <a name="configure-vpn-in-defender-for-identity"></a>Id の Defender で VPN を構成する
 
@@ -77,7 +77,7 @@ RRAS サーバーで次の手順を実行します。
 1. **[VPN] を選択します**。
 1. [**半径の会計を有効にする**]を選択し、RRAS VPN Server で以前に構成した共有シークレットを入力します。 その後、**[保存]** を選択します。
 
-    ![VPN 統合](../../media/defender-identity/vpn-integration.png)
+    ![VPN 統合。](../../media/defender-identity/vpn-integration.png)
 
 これを有効にすると、すべての Defender for Identity センサーがポート 1813 で RADIUS アカウンティング イベントをリッスンし、VPN のセットアップが完了します。
 

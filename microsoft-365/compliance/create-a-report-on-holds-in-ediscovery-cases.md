@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ケースに関連付けられているすべてのホールドに関する情報を含むレポートを生成する方法について説明します。
-ms.openlocfilehash: 2a169290743c21c947edbb600f00b64a68d8cee2
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 5ccb74960a7b0d051b0c7754710f35e81b3edae0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507616"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572049"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースの保留リストのレポートを作成する
 
@@ -160,9 +160,9 @@ ms.locfileid: "58507616"
 
    次に、スクリプトを実行する例をCaseHoldsReport.ps1します。
 
-   ![スクリプトの実行後のCaseHoldsReport.ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+   ![スクリプトを実行した後のCaseHoldsReport.ps1です。](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 このケースには、この記事のスクリプトを実行するときに作成されたレポートが保持されます。各保留に関する次の情報が含まれます。 前に説明したように、組織内のすべての保留に関する情報を返す電子情報開示管理者である必要があります。 ケースホールドの詳細については、「電子情報開示ケース [」を参照してください](./get-started-core-ediscovery.md)。
 

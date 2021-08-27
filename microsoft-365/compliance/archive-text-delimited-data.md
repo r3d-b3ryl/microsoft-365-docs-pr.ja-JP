@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Veritas からテキスト区切りデータをインポートおよびアーカイブするコネクタを設定して、Microsoft 365。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: fa4a3ed6e03f20c4fe63ceb9019620a76e943d963a583062193d5c1dc78c669f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e80454f3de77463e26936b9e49aaf2038dc2f8d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796315"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561460"
 ---
 # <a name="set-up-a-connector-to-archive-text-delimited-data"></a>テキスト区切りデータをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ ms.locfileid: "53796315"
 
 次の概要では、コネクタを使用してテキストで区切られたソース情報をアーカイブするプロセスについて説明Microsoft 365。
 
-![テキストで区切られたデータのアーカイブ ワークフロー](../media/TextDelimitedConnectorWorkflow.png)
+![テキストで区切られたデータのアーカイブ ワークフロー。](../media/TextDelimitedConnectorWorkflow.png)
 
 1. 組織は、テキストで区切られたソースを使用して、テキストで区切られたサイトを設定および構成します。
 

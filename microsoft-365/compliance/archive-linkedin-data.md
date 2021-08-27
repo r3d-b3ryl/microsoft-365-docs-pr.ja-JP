@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がネイティブ コネクタを&して LinkedIn Company Page からデータをインポートする方法について説明Microsoft 365。
-ms.openlocfilehash: 950647d1795e63763631c06a949cf05843420f34a2bc451886eacc88649ddb75
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2d34a424b11c9489d54a87bfb9f81de9a74ed5e6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861026"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571497"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>コネクタをセットアップして LinkedIn データをアーカイブする
 
@@ -48,13 +48,13 @@ LinkedIn Company ページ データをメールボックスに格納した後�
 
    LinkedIn サインイン ページが表示されます。
 
-   ![LinkedIn サインイン ページ](../media/LinkedInSigninPage.png)
+   ![LinkedIn サインイン ページ。](../media/LinkedInSigninPage.png)
 
 5. [LinkedIn サインイン] ページで、アーカイブする会社ページに関連付けられている LinkedIn アカウントの電子メール アドレス (または電話番号) とパスワードを入力し、[サインイン] をクリック **します**。
 
    サインインしたアカウントに関連付けられているすべての LinkedIn Company Pages の一覧がウィザード ページに表示されます。 コネクタを構成できるのは、1 つの会社ページのみです。 組織に複数の LinkedIn Company Pages がある場合は、それぞれのコネクタを作成する必要があります。
 
-   ![LinkedIn Company Pages のリストを含むページが表示されます](../media/LinkedInSelectCompanyPage.png)
+   ![LinkedIn Company Pages のリストを含むページが表示されます。](../media/LinkedInSelectCompanyPage.png)
 
 6. アイテムをアーカイブする会社ページを選択し、[次へ] を **クリックします**。
 
@@ -66,6 +66,6 @@ LinkedIn Company ページ データをメールボックスに格納した後�
 
 詳細を表示するには、[データ コネクタ] ページの一覧でコネクタを **選択して、** フライアウト ページを表示します。 [ **状態]** で、表示される日付範囲は、コネクタの作成時に選択された年齢フィルターを示します。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 LinkedIn アイテムは、ストレージ メールボックスの受信トレイにある LinkedIn サブフォルダーにインポートMicrosoft 365。 電子メール メッセージとして表示されます。

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、MS サーバーからデータをインポートおよびアーカイブするコネクタをSQL Database。 このコネクタを使用すると、サードパーティのデータ ソースからデータをアーカイブできます。Microsoft 365。 このデータをアーカイブした後、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サードパーティのデータを管理できます。
-ms.openlocfilehash: cf0e4d1bc9d5cf6db7538f5f75174488532871e8
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9bd83226973b0a51990382f02b17fba0da28d91b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533605"
+ms.locfileid: "58571485"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>MS サーバーからデータをアーカイブするコネクタをSQL Database
 
@@ -29,7 +29,7 @@ ms.locfileid: "58533605"
 
 次の概要では、コネクタを使用して MS データをアーカイブするプロセスSQL説明Microsoft 365。
 
-![MS データのアーカイブ ワークフロー SQLする](../media/MSSQLDatabaseConnectorWorkflow.png)
+![MS データのアーカイブ ワークフロー SQLします。](../media/MSSQLDatabaseConnectorWorkflow.png)
 
 1. 組織は、MS SQL DatabaseプロバイダーとSQL Databaseします。
 

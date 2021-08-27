@@ -23,12 +23,12 @@ f1.keywords:
 - NOCSH
 description: サポートが間もなく終了し、カスタム サポート契約が利用できないので、Office 2010 サーバーとクライアント アプリケーションからアップグレードの計画を開始します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15d70ba1a090af9c378f7a041313620703c2a667
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: f4f90a34bd4f6c4585cc8900b11808a11f4a2947
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354178"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571917"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバー/クライアントからのアップグレードに役立つリソース
 
@@ -46,7 +46,7 @@ SharePoint 2010 および Project Server 2010 は、**2021年4月13日** にサ�
 
 Office 2010 クライアントおよびサーバーおよび Windows 7 のアップグレード、移行、およびクラウドへの移行オプションの視覚的な概要については、サポート ポスターの末尾を[参照してください](../downloads/Office2010Windows7EndOfSupport.pdf)。
 
-[![2010 年のクライアントOfficeサーバーと 7 ポスターのWindows終了](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![2010 年のクライアントOfficeサーバーと 7 ポスターのWindows終了します。](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 この 1 ページのポスターは、Office 2010 クライアントおよびサーバー製品、および Windows 7 のサポート終了までを処理するために使用できるさまざまなパスを要約しています。 優先パスとオプションのサポートは、Microsoft 365 Enterprise強調表示されます。
 

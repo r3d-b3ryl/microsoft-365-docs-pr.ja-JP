@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 618ead20e8ce9fb3772fb86bb5f4687cd2026552342f8e8cdd975423cfda051d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3bf6d527092a4dc5ed340a2d9548fea41d875d31
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810455"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561256"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint から高度なハンティング クエリを移行する
 
@@ -94,7 +94,7 @@ ms.locfileid: "53810455"
 ## <a name="adjust-existing-microsoft-defender-for-endpoint-queries"></a>既存の Microsoft Defender for Endpoint クエリを調整する
 Microsoft Defender for Endpoint クエリは、テーブルを参照しない限り、現在通り動作 `DeviceAlertEvents` します。 これらのクエリを使用するには、次Microsoft 365 Defender変更を適用します。
 
-- に `DeviceAlertEvents` 置き換える `AlertInfo` 。
+- `DeviceAlertEvents` を`AlertInfo` に置き換えます。
 - テーブルとテーブル `AlertInfo` を `AlertEvidence` 結合して `AlertId` 同等のデータを取得します。
 
 ### <a name="original-query"></a>元のクエリ
@@ -141,7 +141,7 @@ Defender for Endpoint ルールを編集して、Microsoft 365 Defender での�
 - カスタム検出ルールに関する情報 
  
 > [!div class="mx-imgBorder"]
-> ![新しいアラート ページのイメージ](../../media/new-alert-page.png)
+> ![新しいアラート ページのイメージ。](../../media/new-alert-page.png)
 
 ## <a name="write-queries-without-devicealertevents"></a>DeviceAlertEvents を使用せずにクエリを書き込む
 

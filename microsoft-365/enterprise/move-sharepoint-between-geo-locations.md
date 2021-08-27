@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 複数地域の環境内SharePoint別の地域の場所にサイトを移動し、ユーザーに変更の期待を伝える方法について学習します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 97f19b0f4ae1e00eb1d81bb20052efa158bc55cf
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 9c7ad267dcb32e055038e5186595db5776999263
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400393"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571941"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -80,7 +80,7 @@ SharePoint サイトの地域移動は　サイトがあるジオ位置情報で
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint[オンライン管理シェル] ウィンドウに[Connect-SPOService]](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint[オンライン管理シェル] ウィンドウに、Connect-SPOService表示されます。](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>環境の検証
 
@@ -118,7 +118,7 @@ Microsoft 365 グループと関連付けられていないサイトは、`-Dest
 Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
 ```
 
-![Start-SPOSiteContentMove コマンドレットを示す PowerShell ウィンドウのスクリーン ショット](../media/multi-geo-sharepoint-site-move-powershell.png)
+![コマンドレットを示す PowerShell ウィンドウStart-SPOSiteContentMoveします。](../media/multi-geo-sharepoint-site-move-powershell.png)
 
 ### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Microsoft 365 グループが接続されているサイトへ SharePoint サイトの地域の移動を開始する
 

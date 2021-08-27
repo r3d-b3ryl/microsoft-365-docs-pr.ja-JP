@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、TeleMessage コネクタをセットアップして、シグナル通信データをインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: d6d129c69f2258457c2cdcc0dee28ac4e6738dff
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: be070c16c74375c2dad3fc09ebd549d2b9df359d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256627"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572229"
 ---
 # <a name="set-up-a-connector-to-archive-signal-communications-data"></a>シグナル通信データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ Signal Archiver コネクタ データをユーザー メールボックスに�
 
 次の概要では、コネクタを使用して信号通信データをアーカイブするプロセスについて説明Microsoft 365。
 
-![シグナル通信のアーカイブ ワークフロー](../media/SignalConnectorWorkflow.png)
+![シグナル通信のアーカイブ ワークフロー。](../media/SignalConnectorWorkflow.png)
 
 1. 組織は TeleMessage と一緒にシグナル アーカイブ コネクタをセットアップします。 詳細については[、「TeleMessage Signal Archiver for the TeleMessage Signal Archiver for Microsoft 365」 を参照してください](https://www.telemessage.com/microsoft-365-activation-for-signal-archiver/)。
 

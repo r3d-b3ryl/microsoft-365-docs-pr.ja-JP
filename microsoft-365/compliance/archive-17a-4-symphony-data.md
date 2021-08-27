@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 17a-4 Symphony DataParser コネクタをセットアップして使用して、シンフォニー データをインポートおよびアーカイブする方法についてMicrosoft 365。
-ms.openlocfilehash: 1302ae87900b765f0cdf3ed9e380c6c3361f0760678ef1f459827374a4be00e4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b8ea306ffd8dc5384519a4828c5f855b122891f4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900312"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571521"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-symphony"></a>シンフォニーからデータをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ ms.locfileid: "53900312"
 
 次の概要では、データ コネクタを使用してシンフォニー データをアーカイブするプロセスについて説明Microsoft 365。
 
-![17a-4 からのシンフォニー データのアーカイブ ワークフロー](../media/SymphonyDataParserConnectorWorkflow.png)
+![17a-4 からのシンフォニー データのアーカイブ ワークフロー。](../media/SymphonyDataParserConnectorWorkflow.png)
 
 1. 組織は 17a-4 を使用して、シンフォニー DataParser を設定および構成します。
 

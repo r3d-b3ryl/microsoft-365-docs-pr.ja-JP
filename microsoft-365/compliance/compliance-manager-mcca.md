@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
-ms.openlocfilehash: 7d7a711514e471a3d239918eaa576746a43dded02da81f8103f5c6213df20839
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9bf88a79de07accbf8487f09f642324efcbaf086
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872064"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572073"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
 
@@ -101,9 +101,9 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
     ```
   | Input |  国または地域 | 
   | :------------- | :------------: |
-  | 1 | アジア太平洋 |
-  | 2 | オーストラリア |
-  | 3 | カナダ |
+  | 1  | アジア太平洋 |
+  | 2  | オーストラリア |
+  | 3  | カナダ |
   | 4  | ヨーロッパ (フランスを除く) / 中東 / アフリカ |
   | 5  | フランス |
   | 6  | インド |
@@ -111,9 +111,9 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
   | 8  | 韓国 |
   | 9  | 北アメリカ (カナダを除く) |
   | 10  | 南アメリカ |
-  | 11 | 南アフリカ |
+  | 11  | 南アフリカ |
   | 12  | スイス |
-  | 13 | アラブ首長国連邦 |
+  | 13  | アラブ首長国連邦 |
   | 14  | 英国 |
 
 
@@ -126,7 +126,7 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
 
 次の表に、レポートのセクションにアクセスできる役割を示します。 組織内の他の役割 (下の表に記載されていない) は、ツールを実行できないか、ツールを実行し、最終レポートの情報へのアクセスが制限されている可能性があります。
 
-![MCCA - ロール](../media/compliance-manager-mcca-roles.png "MCCA の役割")
+![MCCA - 役割。](../media/compliance-manager-mcca-roles.png "MCCA の役割")
 
 例外:
 1. ユーザーは、[IRM を使用する] セクション以外の IP のレポートExchange Online表示されます。
@@ -139,7 +139,7 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
 
 レポート **の [ソリューションの** 概要] セクションには、コンプライアンス 体制の向上に役立つコンプライアンス マネージャーで組織が実行できる改善アクションの概要が示されています。
 
-![MCCA - ソリューションの概要](../media/compliance-manager-mcca-solutions.png "MCCA ソリューションの概要画面")
+![MCCA - ソリューションの概要。](../media/compliance-manager-mcca-solutions.png "MCCA ソリューションの概要画面")
 
 MCCA は、コンプライアンス マネージャーで推奨される改善アクションに対して現在の構成を評価します。 MCCA ツールで注意が必要と識別される改善アクションは、このセクションに一覧表示されます。
 

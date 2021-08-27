@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 50abaa4033f00225cb4b456949d57618741e8016
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 528e7ed0f7655cd873a42a5b953049d078d19803
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532801"
+ms.locfileid: "58571845"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Microsoft Defender for Endpoint 展開の計画
 
@@ -36,7 +36,7 @@ Microsoft Defender for Endpoint の展開を計画して、スイート内のセ
 
 このソリューションでは、環境アーキテクチャを特定する方法、ニーズに最も適した展開ツールの種類を選択する方法、および機能を構成する方法に関するガイダンスを提供します。
 
-![展開フローのイメージ](images/deployment-guide-plan.png)
+![展開フローのイメージ。](images/deployment-guide-plan.png)
 
 ## <a name="step-1-identify-architecture"></a>手順 1: アーキテクチャを識別する
 
@@ -46,9 +46,9 @@ Microsoft Defender for Endpoint の展開を計画して、スイート内のセ
 
 次の資料を使用して、組織に最適なエンドポイント向け Defender アーキテクチャを選択します。
 
-|アイテム|説明|
-|---|---|
-|[![Defender for Endpoint 展開戦略のサム イメージ](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) <br> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) \|[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)  |アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li>クラウド-ネイティブ</li><li>共同管理</li><li>オンプレミス</li><li>評価とローカル オンボード</li></ul>|
+| アイテム | 説明 |
+|:-----|:-----|
+|[![Defender for Endpoint 展開戦略のサム イメージ。](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li>
 
 ## <a name="step-2-select-deployment-method"></a>手順 2: 展開方法の選択
 

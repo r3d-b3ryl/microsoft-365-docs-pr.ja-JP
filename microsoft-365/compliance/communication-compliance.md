@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 517938951c6bf772097f15dca1a8d3b79c568ca1
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: a4ed6e53712ac3aa4b99e991d5fbbbb2bee31b80
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392053"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572205"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>通信コンプライアンスの詳細については、Microsoft 365
 
@@ -74,7 +74,7 @@ Microsoft 365 のコミュニケーション コンプライアンス ポリシ�
 - 柔軟な修復ワークフロー
 - 対応につながるインサイト
 
-![コミュニケーション コンプライアンス のホーム ページ](../media/communication-compliance-home.png)
+![コミュニケーション コンプライアンス のホーム ページ。](../media/communication-compliance-home.png)
 
 ### <a name="intelligent-customizable-templates"></a>インテリジェントなカスタマイズ可能テンプレート
 
@@ -126,9 +126,9 @@ Microsoft 365 のコミュニケーション コンプライアンス ポリシ�
 
 次のワークフローを使用して、Microsoft 365コンプライアンスに関するコンプライアンスの問題を特定および解決します。
 
-![コミュニケーション コンプライアンスのワークフロー](../media/communication-compliance-workflow.png)
+![コミュニケーション コンプライアンス ワークフロー。](../media/communication-compliance-workflow.png)
 
-### <a name="configure"></a>構成
+### <a name="configure"></a>Configure
 
 このワークフロー ステップでは、コンプライアンス要件を特定し、適用可能な通信コンプライアンス ポリシーを構成します。 ポリシー テンプレートは、新しいコンプライアンス ポリシーを迅速に構成するだけでなく、要件の変化に応じてポリシーをすばやく変更および更新するための最適な方法です。 たとえば、組織内のすべてのユーザーのポリシーを構成する前に、少人数のユーザー グループのコミュニケーションに関する攻撃的な言葉や嫌がらせのポリシーをすばやくテストしたい場合があります。
 

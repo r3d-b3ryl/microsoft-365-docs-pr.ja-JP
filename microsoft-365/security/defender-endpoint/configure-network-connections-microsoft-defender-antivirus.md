@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 989e392071de0ed90b2daa964307989f664cb53a
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e7631647d97abc7f67129c9d40887996cfc7eb0b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532957"
+ms.locfileid: "58572157"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 
@@ -99,11 +99,11 @@ ms.locfileid: "58532957"
 
 アプリを使用しているMicrosoft Edge、通知メッセージも表示されます。
 
-:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Edge でマルウェアが見つかったという通知のスクリーンショット":::
+:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Edge でマルウェアが見つかったという通知のスクリーンショット。":::
 
 次のようなメッセージが表示されます。次のコマンドを使用Internet Explorer。
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="マルウェアが見つかったという Microsoft Defender AV 通知":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="マルウェアが見つかったという Microsoft Defender AV 通知。":::
 
 また、次のアプリの [スキャン履歴] セクションの [検疫された脅威] の下に検出Windows セキュリティ表示されます。
 

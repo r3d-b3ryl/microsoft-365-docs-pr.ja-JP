@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0051b138d155ed4bdf41786f4a73439bba22c738ba7d2a73da44341437ba5c0c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4668ecc352b9e972dcef544e87c7f29b8287cafb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838573"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561208"
 ---
 # <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>SaaS Microsoft Cloud App Security推奨されるポリシー
 Microsoft Cloud App Security Azure AD 条件付きアクセス ポリシーを基にして、ダウンロード、アップロード、コピー、貼り付け、印刷のブロックなど、SaaS アプリによる詳細なアクションをリアルタイムで監視および制御できます。 この機能は、企業リソースが管理されていないデバイスやゲスト ユーザーからアクセスされる場合など、固有のリスクを伴うセッションにセキュリティを追加します。
@@ -46,11 +46,11 @@ SaaS アプリへのアクセス許可は、通常、アプリへのアクセス
 
 SaaS アプリのコレクション全体のデータを保護するために、次の図は、必要な Azure AD 条件付きアクセス ポリシーと、Cloud App Security で作成できる推奨ポリシーを示しています。 この例では、管理しているすべての SaaS アプリCloud App Securityポリシーが適用されます。 これらは、デバイスが管理されるかどうか、およびファイルに既に適用されている感度ラベルに基づいて適切なコントロールを適用するように設計されています。
 
-![アプリ内の SaaS アプリを管理するためのCloud App Security](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
+![SaaS アプリを管理するためのポリシーは、Cloud App Security。](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
 
 次の表に、Azure サーバーで作成する必要がある新しい条件付きアクセス AD。
 
-|保護レベル|ポリシー|詳細|
+|保護レベル|ポリシー|詳細情報|
 |---|---|---|
 |すべての保護レベル|[サーバーで条件付きアクセス アプリ制御を使用Cloud App Security](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|これにより、IdP (Azure AD) を構成して、Cloud App Security。|
 ||||
@@ -95,7 +95,7 @@ Cloud App Security規制に対する保護を構成するための貴重なツ�
 
 次の図と表に、一般データ保護規則 (GDPR) に準拠するように構成できるポリシーのいくつかの例を示します。 これらの例では、ポリシーは特定のデータを検索します。 データの感度に基づいて、各ポリシーは適切なアクションを実行するように構成されます。
 
-![データCloud App Security防止のポリシーの例](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
+![データ損失Cloud App Securityポリシーの例を示します。](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
 
 |保護レベル|ポリシーの例|
 |---|---|

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77d3968e0eb96d100149582f021da2f050c12262f26628beee2c60c097a435cd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9c61d870f15536ceadd000da5d9123e0dd918e5
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800476"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611273"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>ユーザーなしで Microsoft Defender for Endpoint にアクセスするアプリを作成する
 
@@ -52,22 +52,22 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
 
 1. グローバル管理者の [役割を](https://portal.azure.com) 持つユーザーを使用して **Azure にログオン** します。
 
-2. [アプリの **登録Azure Active Directory**  >  **新しい登録]**  >  **に移動します**。 
+2. [アプリの **登録Azure Active Directory** \> **新しい登録]** \> **に移動します**。 
 
-   ![アプリケーション登録Microsoft Azureナビゲーションのイメージ](images/atp-azure-new-app2.png)
+   ![アプリケーションの登録Microsoft Azureナビゲーションのイメージ。](images/atp-azure-new-app2.png)
 
 3. 登録フォームで、アプリケーションの名前を選択し、[登録] を **選択します**。
 
-4. アプリが Defender for Endpoint にアクセスし、[すべてのアラートの読み取り **]** アクセス許可を割り当てるには、アプリケーション ページで **、[API** アクセス許可の追加] アクセス許可 API を選択して、組織で > を使用し  >    >  **、「WindowsDefenderATP」と入力し、[WindowsDefenderATP]** を選択します。
+4. アプリが Defender for Endpoint にアクセスし、[すべてのアラートの読み取り **]** アクセス許可を割り当てるには、アプリケーション ページで **、[API** アクセス許可の追加] アクセス許可 API を選択して、組織で > を使用し \>  \> **、「WindowsDefenderATP」と入力し、[WindowsDefenderATP]** を選択します。
 
    > [!NOTE]
    > *WindowsDefenderATP* は元のリストには表示されません。 テキスト ボックスに名前を書き始め、表示を確認します。
 
-   ![アクセス許可の追加](images/add-permission.png)
+   ![アクセス許可を追加します。](images/add-permission.png)
 
-   - [**アプリケーションのアクセス許可**  >  **Alert.Read.All] を選択** し、[アクセス許可の **追加] を選択します**。
+   - [ **アプリケーションのアクセス許可** \> **Alert.Read.All] を選択** し、[アクセス許可の **追加] を選択します**。
 
-   ![アプリのアクセス許可](images/application-permissions.png)
+   ![アプリのアクセス許可。](images/application-permissions.png)
 
      関連するアクセス許可を選択する必要があります。 'すべてのアラートの読み取り' は、一例にすすみです。 例:
 
@@ -80,18 +80,18 @@ Microsoft Defender for Endpoint は、一連のプログラム API を通じて�
      > [!NOTE]
      > アクセス許可を追加する度に、[新しいアクセス許可 **を** 有効にするための同意の付与] を選択する必要があります。
 
-    ![アクセス許可を付与する](images/grant-consent.png)
+    ![アクセス許可を付与する。](images/grant-consent.png)
 
 6. アプリケーションにシークレットを追加するには、[証明書] &シークレットに説明を追加し、[追加] を選択 **します**。
 
     > [!NOTE]
     > [追加] を **選択した後**、生成 **されたシークレット値をコピーします**。 この値は、退出後に取得できない場合があります。
 
-    ![アプリ キーの作成のイメージ](images/webapp-create-key2.png)
+    ![アプリ キーの作成のイメージ。](images/webapp-create-key2.png)
 
 7. アプリケーション ID とテナント ID を書き出します。 アプリケーション ページで、[概要] に移動 **し** 、次をコピーします。
 
-   ![作成されたアプリ ID のイメージ](images/app-and-tenant-ids.png)
+   ![作成されたアプリ ID のイメージ。](images/app-and-tenant-ids.png)
 
 8. **エンドポイント パートナー向け Microsoft Defender の場合のみ**。 アプリをマルチテナントに設定します (同意後、すべてのテナントで利用できます)。 これは、 **サード パーティ** 製アプリ (たとえば、複数の顧客のテナントで実行することを意図したアプリを作成する場合) に必要です。 これは、 **テナント** でのみ実行するサービスを作成する場合は必須ではありません (たとえば、独自のデータのみを操作する独自の用途用のアプリケーションを作成する場合など)。 アプリをマルチテナントに設定するには、次の方法を実行します。
 
@@ -201,7 +201,7 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 1. 目的のアクセス許可を持つ 'roles' クレームを取得する方法を検証する
 1. 次の図では、エンドポイントのすべての Microsoft Defender の役割に対するアクセス許可を持つ、アプリから取得されたデコードされたトークンを確認できます。
 
-![トークン検証のイメージ](images/webapp-decoded-token.png)
+![トークン検証のイメージ。](images/webapp-decoded-token.png)
 
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>トークンを使用して Microsoft Defender for Endpoint API にアクセスする
 

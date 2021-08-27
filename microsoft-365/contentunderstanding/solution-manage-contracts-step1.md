@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: ソリューションを使用して、SharePoint Syntexファイルを識別し、データを抽出する方法についてMicrosoft 365します。
-ms.openlocfilehash: d26a11edfbfadfa9b8905e9cb7643cfefeef9b1e1f6e7e0516c50305fe974d71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f6097a7573037f8efc2467bb3a9f1037a12bf7ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859527"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561424"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>手順 1. 契約ファイルSharePoint Syntexデータの抽出に使用する方法
 
@@ -37,7 +37,7 @@ ms.locfileid: "53859527"
 
 4. モデルを正常に作成したら、そのモデルを[ドキュメント ライブラリSharePoint適用します](apply-a-model.md)。 ドキュメントをドキュメント ライブラリにアップロードすると、ドキュメント理解モデルが実行され、モデルで定義したコントラクト コンテンツ タイプに一致するファイルすべてが識別され、分類されます。 コントラクトとして分類されたファイルはすべて、カスタム ライブラリ ビューに表示されます。 ファイルには、抽出プログラムで定義した各コントラクトの値も表示されます。
 
-   ![ドキュメント ライブラリ内のコントラクト](../media/content-understanding/doc-lib-solution.png)
+   ![ドキュメント ライブラリ内のコントラクト。](../media/content-understanding/doc-lib-solution.png)
 
 5. 契約の保持要件またはセキュリティ要件がある場合は、モデルを使用して保持ラベルまたは感度ラベルを適用[](apply-a-retention-label-to-a-model.md)して、指定した[](apply-a-sensitivity-label-to-a-model.md)期間契約が削除されるのを防ぐか、契約にアクセスできるユーザーを制限することができます。
 
@@ -81,7 +81,7 @@ ms.locfileid: "53859527"
 
 3. 左側の **[ラベル付き例]** リストから、例として使用する他のファイルを選択し、ラベルを付ける。 
 
-    ![分類子ホームページ](../media/content-understanding/models-contract-classifier.png) 
+    ![分類子ホーム ページ。](../media/content-understanding/models-contract-classifier.png) 
 
 #### <a name="add-at-least-one-explanation-to-train-the-classifier"></a>分類子をトレーニングするために少なくとも 1 つの説明を追加する 
 
@@ -99,7 +99,7 @@ ms.locfileid: "53859527"
 
     c. [語句 **] リスト ボックス** に、文字列 ("AGREEMENT" など) を入力します。 文字列で大文字 **と小文字を** 区別する必要がある場合は、[大文字と小文字を区別する] を選択できます。
 
-    d. [保存 **してトレーニング] を選択します**。
+    d.  [保存 **してトレーニング] を選択します**。
 
     ![[説明の作成] パネルのスクリーンショット。](../media/content-understanding/contract-classifier-create-explanation.png) 
 
@@ -111,7 +111,7 @@ ms.locfileid: "53859527"
 
 2. [テスト **ファイル] ボックスの** 一覧で、サンプル ファイルが表示され、モデルで正または負の値が予測された場合に表示されます。 この情報を使用して、ドキュメントを特定するときの分類子の有効性を判断します。
 
-    ![[テキスト ファイル] リストのラベル付けされていないファイルのスクリーンショット](../media/content-understanding/test-on-files.png) 
+    ![[テキスト ファイル] リスト内のラベル付けされていないファイルのスクリーンショット。](../media/content-understanding/test-on-files.png) 
 
 3. 完了したら、[トレーニングの終了 **] を選択します**。
 

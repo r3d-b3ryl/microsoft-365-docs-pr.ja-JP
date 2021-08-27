@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: キャンペーンまたはビジネスのコミュニケーション サイトを作成します。
-ms.openlocfilehash: d34ab2f5360db1d756cb97a66bb87e443b86605f4864b1f8fdd827504c8829c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d40311a616e51ed665248dded45ef7d0432b6f94
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843464"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571557"
 ---
 # <a name="create-a-communications-site"></a>コミュニケーション サイトを作成する
 
@@ -44,13 +44,13 @@ ms.locfileid: "53843464"
 4. イベント Web パーツに **イベントを追加して、** 誰もが近日の予定を確認できます。
 5. ユーザーが使用または共有できる写真をイメージ ギャラリー **Web パーツに追加します**。
 
-![キャンペーンで必要SharePoint共通の要素を含む、コミュニケーション ページの図](../media/m365-democracy-comms-site.png)
+![キャンペーンで必要SharePoint共通の要素を含む、コミュニケーション ページの図。](../media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>Infographic: コミュニケーション サイトのインフォグラフィックを作成する
 
 次に示す PowerPoint PDF のリンクは、タブロイド形式 (台帳、11 x 17、または A3 とも呼ばれる) でダウンロードおよび印刷できます。
 
-[![コミュニケーション サイトのインフォグラフィックの画像](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+[![コミュニケーション サイトのインフォグラフィックの画像。](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](downloads/M365CampaignsCreateCommunicationSite.pdf)  | [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 

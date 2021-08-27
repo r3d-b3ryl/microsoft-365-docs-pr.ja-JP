@@ -28,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理センターで特定のタスクを実行できるよう、管理者の役割をビジネス内のユーザーまたは複数のユーザーに割り当てる方法について説明します。
-ms.openlocfilehash: 55eaf8f37a61e12ec57b386a509dfddf2ca05ff8
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 0eeafd8c91a9430db09713902fb55d9491dcac8d
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347002"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585668"
 ---
 # <a name="assign-admin-roles"></a>管理者ロールを割り当てる
 
@@ -47,7 +47,7 @@ Microsoft Business サブスクリプションを購入したユーザーは、�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](../../business-video/index.yml)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](../../business-video/index.yml)」をご覧ください。
 
 ## <a name="assign-admin-roles"></a>管理者ロールを割り当てる 
 
@@ -107,6 +107,6 @@ PowerShell を知っている場合は [、「PowerShell を使用して役割�
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365 管理者ロールについて](about-admin-roles.md) (記事)\
-[管理者ロールのアクセス許可](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)(Azure Active Directory)\
+[Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference) (記事)\
 [PowerShell を使用してユーザー アカウントに役割を割り当てる](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (記事)\
 [パートナー関係の承認または削除](../misc/add-partner.md) (記事)

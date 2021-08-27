@@ -20,12 +20,12 @@ description: 管理者は、管理者ポータルで使用できるレポート�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca1013e631c0a041d2fa4475081588a65c299129fc017e98235f57c95cba88f1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5cc6c39c9d18e1fcc206f1d8cb81451201541e61
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56809622"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614960"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>ポータルでレポートOffice 365 Defender をMicrosoft 365 Defenderする
 
@@ -37,7 +37,7 @@ ms.locfileid: "56809622"
 
 Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプション、Office 365 プラン 1 の Microsoft Defender、Office 365 プラン 2 アドオンの Microsoft Defender など) には、さまざまなセキュリティ関連レポートが含まれる。 必要な [アクセス許可を](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)持っている場合は、[レポートの電子メール] Microsoft 365 Defender コラボレーション レポートにアクセスして、Microsoft 365 Defender ポータルでこれらのレポート& \> **を** \> **表示&できます**。 [コラボレーション レポートの電子メール] **ページ&移動するには、** を開きます <https://security.microsoft.com/emailandcollabreport> 。
 
-![[&] ポータルの [コラボレーション レポート] ページMicrosoft 365 Defenderメール](../../media/email-collaboration-reports.png)
+![[&] ポータルの [コラボレーション レポート] ページにMicrosoft 365 Defenderメールを送信します。](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
@@ -63,7 +63,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 レポートを表示するには、Microsoft 365 Defender ポータル [を開き、[](https://security.microsoft.com)レポートの電子メール] & \> **グループ**& \> **に移動します**。 [電子メール **&コラボレーション レポート] ページ** で、[ **メール遅延レポート** ] を探し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/mailLatencyReport> 。
 
-![[メールの遅延レポート] ページの [メールの&レポート] ウィジェット](../../media/mail-latency-report-widget.png)
+![[メール の遅延レポート] ウィジェットが [メール &] ページに表示されます。](../../media/mail-latency-report-widget.png)
 
 [メール **の待機時間レポート] ページで** 、[メールの待機時間] レポート ページで次 **のタブを使用** できます。
 
@@ -78,7 +78,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 グラフのカテゴリにカーソルを合わせると、各カテゴリの待機時間の内訳を確認できます。
 
-![メール待機時間レポートの 50 パーセント表示](../../media/mail-latency-report-50th-percentile-view.png)
+![メール待機時間レポートの 50 パーセント表示。](../../media/mail-latency-report-50th-percentile-view.png)
 
 [フィルター] **をクリック** すると、グラフと詳細テーブルの両方を次の値でフィルター処理できます。
 
@@ -107,7 +107,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 レポートを表示するには、Microsoft 365 Defender ポータル [を開き、[](https://security.microsoft.com)レポートの電子メール] & \> **グループ**& \> **に移動します**。 [コラボレーション **レポートのメール&] ページ** で **、[URL 保護] ページ** を探し、[詳細の表示] **をクリックします**。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/URLProtectionActionReport> 。
 
-![[コラボレーション レポートの電子メール] ページ& URL 保護レポート ウィジェット](../../media/url-protection-report-widget.png)
+![[コラボレーション レポートの電子メール] ページ& URL 保護レポート ウィジェット。](../../media/url-protection-report-widget.png)
 
 [URL 脅威保護レポート] **ページで** 使用可能なビューについては、次のセクションで説明します。
 
@@ -116,7 +116,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 
 ### <a name="view-data-by-url-click-protection-action"></a>URL クリック保護アクションによるデータの表示
 
-![URL 脅威保護レポートの URL クリック保護アクション ビュー](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+![URL 脅威保護レポートの URL クリック保護アクション ビュー。](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 [URL **によるデータの表示] クリック保護アクション** ビューには、組織内のユーザーによる URL クリックの数と、クリックの結果が表示されます。
 
@@ -145,12 +145,12 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 - **クリック時間**
 - **ユーザー**
 - **URL**
-- **Action**
+- **操作**
 - **アプリ**
 
 ### <a name="view-data-by-url-click-by-application"></a>アプリケーション別の URL クリックによるデータの表示
 
-![URL 脅威保護レポートのアプリケーション ビューによる URL クリック](../../media/url-threat-protection-report-url-click-by-application-view.png)
+![URL 脅威保護レポートのアプリケーション ビューで URL をクリックします。](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
 [URL **によるデータの表示] アプリケーション** によるクリックビューには、リンクをサポートするアプリによる URL クリック数セーフ表示されます。
 
@@ -177,7 +177,7 @@ Office 365 組織向け Microsoft Defender (Microsoft 365 E5 サブスクリプ�
 - **クリック時間**
 - **ユーザー**
 - **URL**
-- **Action**
+- **操作**
 - **アプリ**
 
 ## <a name="additional-reports-to-view"></a>表示するその他のレポート
@@ -217,7 +217,7 @@ PowerShell レポートコマンドレット:
 
 - **組織の管理**
 - **セキュリティ管理者**
-- **セキュリティ リーダー**
+- **セキュリティ閲覧者**
 - **グローバル閲覧者**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
@@ -232,4 +232,4 @@ PowerShell レポートコマンドレット:
 
 [スマート レポートと分析情報 (Microsoft 365 Defenderポータル)](reports-and-insights-in-security-and-compliance.md)
 
-[役割のアクセス許可 (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[Azure AD組み込みロール](/azure/active-directory/roles/permissions-reference)

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、テレメッセージ コネクタをセットアップして、電話会社の TELUS ネットワークから SMS データをインポートおよびアーカイブMicrosoft 365。 これにより、Microsoft 365 のサード パーティデータ ソースからデータをアーカイブし、法的保持、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
-ms.openlocfilehash: 77900db9850a14c1590214c6e9042705eb0ce02e5fe6ba7420211ca4f54cd0fa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d0175abd68ba2795167054c930aefd28be12c039
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796387"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561484"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>TELUS ネットワーク データをアーカイブするコネクタをセットアップする
 
@@ -29,7 +29,7 @@ SMS メッセージがユーザー メールボックスに保存された後、
 
 次の概要では、コネクタを使用して TELUS Network データをアーカイブするプロセスについて説明Microsoft 365。
 
-![TELUS ネットワークのアーカイブ ワークフロー](../media/TelusNetworkConnectorWorkflow.png)
+![TELUS Network アーカイブ ワークフロー。](../media/TelusNetworkConnectorWorkflow.png)
 
 1. 組織は、TeleMessage と TELUS を使用して TELUS ネットワーク コネクタをセットアップします。 詳細については [、「TELUS Network Archiver」を参照してください](https://www.telemessage.com/office365-activation-for-telus-network-archiver/)。
 
